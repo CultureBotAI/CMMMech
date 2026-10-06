@@ -1,0 +1,165 @@
+id: https://github.com/CultureBotAI/CMMMech/schema
+name: cmmmech
+title: Critical minerals and microbial mechanisms
+description: Evidence-backed materials, dated criticality designations, and recovery mechanisms.
+license: BSD-3-Clause
+prefixes:
+  linkml: https://w3id.org/linkml/
+  cmmmech: https://github.com/CultureBotAI/CMMMech/records/
+default_prefix: cmmmech
+default_range: string
+imports:
+  - linkml:types
+types:
+  NonEmptyText:
+    typeof: string
+    pattern: '\S'
+  SourceKey:
+    typeof: string
+    pattern: '^[a-z][a-z0-9_-]*$'
+classes:
+  CriticalMineralRecord:
+    tree_root: true
+    attributes:
+      id:
+        identifier: true
+        required: true
+        pattern: '^cmmmech:[a-z][a-z0-9-]*$'
+      name:
+        range: NonEmptyText
+        required: true
+      material_kind:
+        range: MaterialKind
+        required: true
+      description:
+        range: NonEmptyText
+        required: true
+      identifiers:
+        range: NamedEntity
+        multivalued: true
+        inlined_as_list: true
+      sources:
+        range: Source
+        required: true
+        multivalued: true
+        minimum_cardinality: 1
+        inlined_as_list: true
+      criticality:
+        range: CriticalityDesignation
+        multivalued: true
+        inlined_as_list: true
+      mechanisms:
+        range: Mechanism
+        multivalued: true
+        inlined_as_list: true
+  NamedEntity:
+    attributes:
+      id:
+        required: true
+        pattern: '^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$'
+      label:
+        range: NonEmptyText
+        required: true
+  Source:
+    attributes:
+      id:
+        range: SourceKey
+        required: true
+      title:
+        range: NonEmptyText
+        required: true
+      url:
+        range: uri
+        required: true
+        pattern: '^https?://[^\s/]+(?:/[^\s]*)?$'
+      accessed_on:
+        range: date
+        required: true
+  CriticalityDesignation:
+    attributes:
+      jurisdiction:
+        range: NonEmptyText
+        required: true
+      list_name:
+        range: NonEmptyText
+        required: true
+      edition:
+        range: NonEmptyText
+        required: true
+      classification:
+        range: CriticalityClass
+        required: true
+      source_ref:
+        range: SourceKey
+        required: true
+  Mechanism:
+    attributes:
+      id:
+        range: SourceKey
+        required: true
+      name:
+        range: NonEmptyText
+        required: true
+      process:
+        range: ProcessType
+        required: true
+      description:
+        range: NonEmptyText
+        required: true
+      context:
+        range: NonEmptyText
+        required: true
+      microbial:
+        range: boolean
+        required: true
+      organisms:
+        range: NamedEntity
+        multivalued: true
+        inlined_as_list: true
+      evidence:
+        range: MechanismEvidence
+        required: true
+        multivalued: true
+        minimum_cardinality: 1
+        inlined_as_list: true
+  MechanismEvidence:
+    attributes:
+      source_ref:
+        range: SourceKey
+        required: true
+      supports:
+        range: SupportLevel
+        required: true
+      explanation:
+        range: NonEmptyText
+        required: true
+enums:
+  MaterialKind:
+    permissible_values:
+      element:
+      mineral:
+      mineral_group:
+      commodity:
+      secondary_resource:
+  CriticalityClass:
+    permissible_values:
+      critical:
+      strategic:
+      not_listed:
+      unknown:
+  ProcessType:
+    permissible_values:
+      bioleaching:
+      biosorption:
+      biomineralization:
+      redox_transformation:
+      separation:
+      recovery:
+      recycling:
+      other:
+  SupportLevel:
+    permissible_values:
+      support:
+      partial:
+      refute:
+      context_only:

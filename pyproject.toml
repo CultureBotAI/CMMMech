@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=77,<82"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cmmmech"
+version = "0.1.0"
+description = "Evidence-backed critical minerals and microbial extraction, transformation, and recovery mechanisms"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "BSD-3-Clause"
+license-files = ["LICENSE", "LICENSE-CODE", "LICENSE-DATA"]
+authors = [{name = "CMMMech Contributors"}]
+dependencies = ["linkml>=1.10", "jsonschema[format]>=4.26", "PyYAML>=6.0.3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff==0.16.3"]
+
+[project.scripts]
+cmmmech = "cmmmech.cli:main"
+
+[project.urls]
+Repository = "https://github.com/CultureBotAI/CMMMech"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+cmmmech = ["schema/*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
