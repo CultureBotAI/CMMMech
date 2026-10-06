@@ -139,3 +139,37 @@ native merge-queue configuration. External App/credential readiness is unknown.
    immutable governance release and consumer re-pinning. Follow with verified
    PR shepherd configuration and native queue plan/apply/check plus an actual
    reviewed merge-group execution. Do not hand-copy governed files or invent a pin.
+
+## Publication and adversarial PR review
+
+The user subsequently authorized committing, pushing, opening a PR, adversarial
+review, issue filing and resolution, merging, and branch deletion. Commit
+`2961df4540675b2d07aa7aa658776d779233d6c3` was pushed and
+[PR #1](https://github.com/CultureBotAI/CMMMech/pull/1) opened. The earlier
+handoff and integration audit remain historical snapshots of their stated times.
+
+A fresh independent [code/process review](../reviews/process/20261006T042058Z.md)
+accepted that commit with no actionable defects. It rechecked the actual empty
+corpus regression, strict record validation, review hashes and local links.
+
+Fresh independent scientific reviews accepted the unchanged
+[cobalt](../reviews/records/cobalt/20261006T042218Z.md),
+[neodymium](../reviews/records/neodymium/20261006T042218Z.md), and
+[palladium](../reviews/records/palladium/20261006T042218Z.md) records with their
+stated limitations and no blocking findings. The complete original EU
+regulation PDF became accessible; Annex II Section 1(h), printed page 57,
+independently confirms cobalt and closes that earlier acquisition gap.
+The cobalt ASV workbook remains unchecked after bounded retrieval attempts;
+post-adaptation community composition remains uncertain.
+
+[Issue #2](https://github.com/CultureBotAI/CMMMech/issues/2) tracks the baseline
+empty-corpus defect already fixed by this PR and is linked for closure on merge.
+[Issue #3](https://github.com/CultureBotAI/CMMMech/issues/3) tracks the separate
+CLAW-supported integration sequence; that future rollout is not claimed by this
+corpus change.
+
+The coordinating agent repeated `just check`: lint passed, **50 tests passed**
+(7.15 s), and **3 records, 0 failures**. Separate strict validation again passed.
+GitHub's Linux validation is tracked on the PR; merge must follow a successful
+check on the final pushed revision. Live PR status, merge evidence and final
+branch cleanup are recorded on GitHub rather than predicted by this document.
