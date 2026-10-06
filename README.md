@@ -4,9 +4,19 @@ An evidence-backed knowledge base for **critical minerals and materials**, with
 **microbial extraction, transformation, and recovery mechanisms** alongside
 their wider resource and material context.
 
-The initial release provides a LinkML schema, an offline strict validator,
-tests, CI, and a read-only issue-review skill. The curated corpus is deliberately
-empty. Synthetic test fixtures are not mineral records or scientific evidence.
+The knowledge base provides a LinkML schema, an offline strict validator,
+tests, CI, and three primary-literature pilot records. Each record has a
+timestamped scientific review; synthetic test fixtures remain separate.
+
+| Element record | Curated microbial mechanism | Evidence boundary |
+|---|---|---|
+| [Cobalt](data/records/cobalt.yaml) | Acidophilic consortium bioleaching of spent-battery black mass | Laboratory solubilization, not isolated cobalt product |
+| [Neodymium](data/records/neodymium.yaml) | Biosorption by dried *Chlorella vulgaris* biomass | Chemically pretreated magnet leachate; inactive biomass |
+| [Palladium](data/records/palladium.yaml) | Resting *Desulfovibrio desulfuricans* cells reduce Pd(II) | Defined soluble salt assay; hydrogenase causality remains inferred |
+
+These are element records. Experimental salts, alloys and secondary resources
+are specified in mechanism context, not equated with mineral species. See the
+[pilot assessment](docs/pilot-session.md) and [record reviews](reviews/records/).
 
 ## Scope
 
@@ -35,12 +45,17 @@ Without `just`, use `uv run python scripts/check.py`. The same command is used
 by CI. No research provider, model, credential, or network lookup is used by
 the checks after dependencies are installed.
 
-Each future record belongs in `data/records/<slug>.yaml`. See
+Each record belongs in `data/records/<slug>.yaml`. See
 [the record guide](docs/records.md) and the packaged
 [LinkML schema](src/cmmmech/schema/cmmmech.yaml). Validation rejects unknown
 fields, duplicate YAML keys, malformed references, dangling source references,
 and duplicate record identifiers. An empty corpus is reported explicitly;
-`--require-records` makes it an error.
+`--require-records` makes it an error. The shared local/CI gate now uses this
+flag so accidental loss of the whole corpus fails `just check`.
+
+Use the local [record-review skill](.claude/skills/review-record/SKILL.md) for
+new or changed scientific records. Review artifacts identify the reviewed
+commit and working changes, hash the record bytes, and retain unresolved limits.
 
 ## Sources
 
@@ -62,6 +77,8 @@ a vendored pin or silently copy a different Mech's capabilities.
 
 The included CI handles pull requests, pushes to `main`, and `merge_group`
 events, but a workflow alone does not enable a remote merge queue.
+The [dated integration audit](docs/integration-status.md) verifies the pending
+status and gives concrete follow-up work through CLAW's supported admission process.
 
 ## License
 

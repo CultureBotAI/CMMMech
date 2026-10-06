@@ -9,6 +9,9 @@ transformation, and recovery. Read README.md and docs/records.md first.
 - Mechanism evidence must support the stated organism, substrate, and conditions.
   Do not extrapolate a laboratory result to industrial performance.
 - Never fabricate citations, ontology labels, measurements, or deployment claims.
+- Review new or materially changed records with the local
+  `.claude/skills/review-record/SKILL.md`; retain a timestamped artifact for
+  each record and reviewed file state under `reviews/records/<slug>/`.
 - Use `rg --no-ignore --hidden` before making absence claims.
 - Preserve unrelated changes; never stash/reset or switch an active checkout.
 - Do not send issues, PRs, reviews, comments, or other shared-content mutations
