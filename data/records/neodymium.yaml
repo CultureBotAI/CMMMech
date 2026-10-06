@@ -1,0 +1,77 @@
+id: cmmmech:neodymium
+name: Neodymium
+material_kind: element
+description: >-
+  The element Nd. The identifier grounds the element, not an Nd(III) ion,
+  mineral species, magnet alloy, or discarded magnet. The US designation below
+  concerns the named neodymium mineral commodity in the 2022 list; it is a dated
+  designation, not a claim about every Nd-bearing resource or current policy.
+identifiers:
+  - id: CHEBI:33372
+    label: neodymium atom
+sources:
+  - id: kucuker2017
+    title: >-
+      Kucuker et al. (2017). Biosorption of neodymium on Chlorella vulgaris in
+      aqueous solution obtained from hard disk drive magnets. PLOS ONE 12(4):e0175255.
+    url: https://doi.org/10.1371/journal.pone.0175255
+    accessed_on: '2026-10-06'
+  - id: usgs2022
+    title: >-
+      USGS (2022). 2022 Final List of Critical Minerals. Federal Register
+      87:10381-10382, document 2022-04027.
+    url: https://www.govinfo.gov/content/pkg/FR-2022-02-24/pdf/2022-04027.pdf
+    accessed_on: '2026-10-06'
+  - id: chebi_neodymium
+    title: 'ChEBI CHEBI:33372 - neodymium atom'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:33372
+    accessed_on: '2026-10-06'
+  - id: ncbi_chlorella
+    title: 'NCBI Taxonomy 3077 - Chlorella vulgaris (species)'
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3077
+    accessed_on: '2026-10-06'
+  - id: sag21112
+    title: 'SAG culture catalogue - Chlorella vulgaris SAG 211-12'
+    url: https://sagdb.uni-goettingen.de/detailedList.php?str_number=211-12
+    accessed_on: '2026-10-06'
+criticality:
+  - jurisdiction: United States of America
+    list_name: USGS Final List of Critical Minerals
+    edition: '2022; Federal Register 87:10381-10382'
+    classification: critical
+    source_ref: usgs2022
+mechanisms:
+  - id: chlorella_dried_biomass_sorption
+    name: Nd biosorption by dried Chlorella vulgaris biomass
+    process: biosorption
+    microbial: true
+    organisms:
+      - id: NCBITaxon:3077
+        label: Chlorella vulgaris
+    description: >-
+      Inactive algal biomass removed dissolved Nd from chemically prepared
+      magnet leachate. This is biosorption, not demonstrated metabolic uptake
+      or microbial dissolution of magnets. Specific binding chemistry is inferred.
+    context: >-
+      Laboratory batch assays used SAG 211-12, dried at 90 degrees C for 24 h.
+      Magnets were roasted at 950 degrees C for 7 h then nitric-acid leached.
+      At pH 5, 35 degrees C, 250 mg Nd/L and 0.5 g dry biomass/L, experimental
+      uptake calculated from aqueous depletion was 157.40 mg/g; assays used
+      0.2 L, 300 rpm, 90 min and duplicates.
+      Taxonomy is species-level; the strain is specified here. No industrial
+      Nd recovery or purified product was demonstrated.
+    evidence:
+      - source_ref: kucuker2017
+        supports: support
+        explanation: >-
+          Methods and Fig. 2 support the scoped assay. The reported competing
+          metals were below detection after pretreatment, limiting selectivity
+          claims for untreated waste. Table 1's 188.68 mg/g is a fitted Langmuir
+          capacity, not measured uptake.
+      - source_ref: kucuker2017
+        supports: partial
+        explanation: >-
+          Results discuss possible precipitation at 50 degrees C despite other
+          statements about its absence. High-temperature removal is therefore
+          not assigned wholly to biosorption; model fits do not establish a
+          unique molecular mechanism.

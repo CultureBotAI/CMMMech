@@ -1,0 +1,64 @@
+id: cmmmech:cobalt
+name: Cobalt
+material_kind: element
+description: >-
+  Cobalt (Co), atomic number 27. This element-level record uses the ChEBI
+  cobalt-atom identifier for chemical identity. Cobalt-bearing cathodes and
+  mixed battery black mass are material forms and secondary resources,
+  respectively; neither is a mineral species or synonymous with the element.
+identifiers:
+  - id: CHEBI:27638
+    label: cobalt atom
+sources:
+  - id: chebi_cobalt
+    title: ChEBI CHEBI:27638 — cobalt atom
+    url: https://www.ebi.ac.uk/chebi/CHEBI:27638
+    accessed_on: '2026-10-06'
+  - id: eu_crma_2024
+    title: >-
+      Regulation (EU) 2024/1252, Annex II, Section 1 — List of critical raw materials
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1252
+    accessed_on: '2026-10-06'
+  - id: lalropuia_2024
+    title: >-
+      Lalropuia et al. (2024). Metal recovery from spent lithium-ion batteries
+      via two-step bioleaching using adapted chemolithotrophs from an acidic
+      mine pit lake. Frontiers in Microbiology 15:1347072.
+    url: https://doi.org/10.3389/fmicb.2024.1347072
+    accessed_on: '2026-10-06'
+criticality:
+  - jurisdiction: European Union
+    list_name: Regulation (EU) 2024/1252, Annex II, Section 1, List of critical raw materials
+    edition: '2024; original regulation published 3 May 2024; entry (h) cobalt'
+    classification: critical
+    source_ref: eu_crma_2024
+mechanisms:
+  - id: adapted_consortium_black_mass_bioleaching
+    name: Acidophilic consortium bioleaching of battery black mass
+    process: bioleaching
+    description: >-
+      An adapted Lake Hromnice acidophilic consortium mobilized cobalt from
+      pretreated spent nickel-manganese-cobalt lithium-ion battery black mass.
+      Sulfur oxidation supplied acidity; iron cycling may also contribute.
+      This is community-level laboratory evidence, not a pure-strain mechanism
+      or industrial deployment.
+    context: >-
+      Two-step flask assay: 10% (v/v) inoculum, 50 mL FeS medium (50 mM ferrous
+      sulfate; 1% w/v elemental sulfur; initial pH 2.0), seven-day preculture,
+      then 1% w/v black mass for seven days at 30 degrees C and 150 rpm.
+      Feed pretreatment included discharging, dismantling, thermal treatment,
+      crushing and sorting. The original enrichment was dominated by
+      Acidithiobacillus thiooxidans (95%); Alicyclobacillus comprised 3%.
+      Post-adaptation composition was not established here. Adaptation used
+      dissolved-metal mixtures in three 14-day stages; Table 2 doses do not
+      consistently match Table 1 black-mass equivalents, limiting reproducibility.
+    microbial: true
+    evidence:
+      - source_ref: lalropuia_2024
+        supports: support
+        explanation: >-
+          Sections 2.1-2.5 and 3.1-3.3; Figures 4-6: dissolved Co peaked by day 2
+          and was higher with adapted culture than non-adapted and sterile-medium
+          controls. ICP-OES measures mobilization, not isolated product recovery.
+          The abiotic control differed in pH and iron speciation, so it does not
+          isolate acidity from other microbial contributions.

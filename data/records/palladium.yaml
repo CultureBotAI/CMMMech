@@ -1,0 +1,91 @@
+id: cmmmech:palladium
+name: Palladium
+material_kind: element
+description: >-
+  Palladium (Pd), chemical element with atomic number 46. This record concerns
+  laboratory reduction of dissolved Pd(II) to cell-associated elemental Pd(0),
+  not extraction from a palladium mineral or an industrial recovery operation.
+identifiers:
+  - id: CHEBI:33363
+    label: palladium atom
+sources:
+  - id: lloyd_1998
+    title: >-
+      Lloyd, Yong and Macaskie (1998). Enzymatic Recovery of Elemental Palladium
+      by Using Sulfate-Reducing Bacteria. Applied and Environmental Microbiology
+      64(11), 4607-4609. DOI 10.1128/AEM.64.11.4607-4609.1998.
+    url: https://journals.asm.org/doi/10.1128/AEM.64.11.4607-4609.1998
+    accessed_on: '2026-10-06'
+  - id: mikheenko_2008
+    title: >-
+      Mikheenko et al. (2008). Bioaccumulation of Palladium by Desulfovibrio
+      fructosivorans Wild-Type and Hydrogenase-Deficient Strains.
+      Applied and Environmental Microbiology. DOI 10.1128/AEM.02538-07.
+    url: https://journals.asm.org/doi/10.1128/AEM.02538-07
+    accessed_on: '2026-10-06'
+  - id: usgs_2025
+    title: >-
+      U.S. Geological Survey (2025). Final 2025 List of Critical Minerals.
+      Federal Register 90 FR 50494-50497, November 7, 2025.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-06'
+  - id: chebi_palladium
+    title: 'ChEBI:33363 - palladium atom'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:33363
+    accessed_on: '2026-10-06'
+  - id: ncbi_desulfuricans
+    title: 'NCBI Taxonomy: Desulfovibrio desulfuricans (Taxonomy ID 876)'
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=876&mode=Info
+    accessed_on: '2026-10-06'
+criticality:
+  - jurisdiction: United States of America
+    list_name: U.S. Department of the Interior Final List of Critical Minerals
+    edition: '2025 (published November 7, 2025; 90 FR 50494-50497)'
+    classification: critical
+    source_ref: usgs_2025
+mechanisms:
+  - id: desulfuricans_pd_reduction
+    name: Resting-cell reduction of dissolved Pd(II) to elemental palladium
+    process: redox_transformation
+    description: >-
+      Desulfovibrio desulfuricans ATCC 29577 resting cells reduced soluble
+      Pd(II) to cell-associated Pd(0) with an electron donor. Hydrogenase
+      involvement was inferred, not established by a specific genetic test.
+    context: >-
+      Laboratory anaerobic batch assay using washed, nongrowing ATCC 29577
+      cells (0.5 g/L; 2.5 mL in sealed 12 mL serum bottles) in 20 mM
+      MOPS-NaOH, pH 7, at 30 degrees C. The substrate was
+      0.5 mM Pd(II) supplied as the palladium ammine chloride salt reported by
+      Lloyd et al.; hydrogen replaced nitrogen in the headspace. The reported 100%
+      dissolved-Pd(II) depletion after 24 h is an assay result, not a purified
+      metal yield. Pd(0) identity was supported by X-ray diffraction and
+      cell-associated deposits by electron microscopy and elemental analysis.
+      This experiment does not establish performance in mixed waste leachates,
+      ore extraction, or industrial deployment.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:876
+        label: Desulfovibrio desulfuricans
+    evidence:
+      - source_ref: lloyd_1998
+        supports: support
+        explanation: >-
+          Methods and results preceding Figure 1, and Figure 1A-C: the
+          reported outcome was absent in cell-free, heat-killed, and
+          electron-donor-free controls. These controls and solid-phase
+          characterization support microbial Pd(II) reduction under the stated
+          conditions in this strain.
+      - source_ref: lloyd_1998
+        supports: partial
+        explanation: >-
+          Hydrogen-supported reduction and inhibition following copper
+          pretreatment implicate hydrogenase activity, but do not identify
+          a unique enzyme or establish its necessity genetically.
+      - source_ref: mikheenko_2008
+        supports: context_only
+        explanation: >-
+          The introduction cautions that copper is not a specific hydrogenase
+          inhibitor. The mutant experiments concern D. fructosivorans, a
+          different species, and cannot establish enzyme necessity in ATCC
+          29577. This narrows the 1998 mechanistic inference without refuting
+          its observed Pd reduction.
