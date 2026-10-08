@@ -1,4 +1,4 @@
-"""Small read-only CLI for record validation."""
+"""Record validation and append-only curation history."""
 
 import argparse
 from pathlib import Path
@@ -11,10 +11,15 @@ from cmmmech.validation import read_record, record_validator, validate_record
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(prog="cmmmech")
     commands = parser.add_subparsers(dest="command", required=True)
+    from cmmmech.history import add_commands, validate_references
+
+    add_commands(commands)
     validate = commands.add_parser("validate", help="validate YAML records without modifying them")
     validate.add_argument("paths", nargs="*", type=Path)
     validate.add_argument("--require-records", action="store_true")
     args = parser.parse_args(argv)
+    if args.command != "validate":
+        return args.handler(args)
     record_validator()
     selected = args.paths or [Path("data/records")]
     paths = set()
@@ -36,6 +41,8 @@ def main(argv=None) -> int:
         try:
             record = read_record(path)
             errors = validate_record(record)
+            if not errors:
+                errors.extend(validate_references(record, path, Path.cwd()))
         except (OSError, UnicodeError, yaml.YAMLError) as exc:
             errors = [str(exc)]
         if not errors:

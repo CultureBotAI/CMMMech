@@ -12,3 +12,10 @@ lint:
 
 validate:
     uv run --locked cmmmech validate
+
+# Create a new immutable sidecar, then attach its printed path to the record.
+new-history *args:
+    uv run --locked cmmmech new-history {{args}}
+
+validate-history *args:
+    uv run --locked cmmmech validate-history {{args}}

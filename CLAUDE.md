@@ -20,8 +20,12 @@ transformation, and recovery. Read README.md and docs/records.md first.
 - Do not send issues, PRs, reviews, comments, or other shared-content mutations
   without approval of the exact destination and final content/action.
 - Fleet admission and governed artifacts are installed. Use CLAW's supported
-  synchronizer and the immutable pin; never hand-edit governed copies. Shared
-  schema resources and native inline events do not enable shared history
-  authoring commands, sidecar adapters, or other unverified fleet capabilities.
+  synchronizer and the immutable pin; never hand-edit governed copies.
+- Use `just new-history` for canonical sidecars and attach their printed paths
+  under `history_refs`; keep inline `curation_history` change events distinct.
+  Committed sidecars are immutable: add a new correction session. History paths
+  must not contain symlinks. `just check` compares against `HEAD` locally; CI
+  supplies the trusted event base through `CMMMECH_HISTORY_BASE`.
+- Installed history support does not enable other unverified fleet capabilities.
 - The repository's review-open-issues skill is read-only and does not authorize
   implementation, closure, or publication.

@@ -35,7 +35,8 @@ through 2099; malformed dates, missing fields, blank descriptions, and unknown
 event fields fail strict validation. Record actual work, never fabricated or
 retrospectively invented provenance. Inline events do not replace scientific
 reviews or claim adoption of CLAW's separate sidecar-history authoring contract.
-Shared history commands and adapters remain pending.
+The optional `history_refs` list separately links canonical sidecar sessions;
+it never changes the shape or meaning of inline `curation_history` events.
 
 ## Curation and review
 
@@ -60,6 +61,65 @@ review identifies the record, UTC time, HEAD plus working changes and record
 SHA-256, scope, checked evidence, severity-ranked findings, corrections,
 unresolved questions and verdict. Later substantive edits require a new round.
 These reviews are local scientific artifacts, not CLAW canonical history.
+
+## Append-only curation history
+
+The domain schema imports the governed `mech_shared.yaml` and `history.yaml`
+modules from `src/cmmmech/schema/`. Their bytes are managed by CLAW's supported
+governance release and synchronization process; do not edit the copies locally.
+
+Create a canonical `HistoryRecord` sidecar with `just new-history`:
+
+```sh
+just new-history --slug cobalt --actor-type ai_agent --actor-name codex \
+  --model '<actual-model>' --agent-tool codex --event EDIT --outcome changed \
+  --summary 'Describe the actual change' --details 'Evidence, checks, and limitations.' \
+  --issue 3
+```
+
+Supply the actual actor and model; the example's model placeholder must be
+replaced. The adapter stamps the current UTC time and creates a collision-safe
+file under `history/records/<slug>/`. It requires finished details and refuses
+to overwrite an existing session. It does **not** modify the scientific record.
+Append the printed repository-relative path to the record's `history_refs`
+list as a separate reviewed edit, then validate the record and the history:
+
+```sh
+just validate-history
+uv run --locked cmmmech validate data/records/cobalt.yaml
+```
+
+History presence is advisory; when present, every reference must resolve to a
+closed-schema-valid sidecar whose target path and slug identify the exact
+record. Sidecar validation also checks session filenames, real UTC timestamps,
+actor metadata, complete event details, and all nested fields. Do not backdate
+events or infer the actor of earlier work. A migration event describes the
+present migration and links earlier review snapshots without claiming to have
+performed those reviews.
+
+History files and every directory beneath `history/` must be real repository
+paths, without symlinks. Both reading and scaffolding reject aliases, including
+links to locations inside the same repository. Discovery rejects linked
+subdirectories instead of silently skipping their sessions. Otherwise Git's
+append-only comparison could inspect the unchanged link while the backing
+history bytes were modified elsewhere.
+
+History sessions are immutable after commit. Correct a previous session by
+creating another that identifies the original session and explains the correction.
+`just check` compares history with `HEAD` locally; CI sets
+`CMMMECH_HISTORY_BASE` to its PR, merge-group, or push base. The explicit
+`cmmmech validate-history --base <revision>` form verifies the same append-only
+rule against any available reviewed revision. Unknown or unfetched revisions
+fail the check. Standalone history validation with neither `--base` nor
+`CMMMECH_HISTORY_BASE` checks content and linkage layout, not Git immutability
+or whether a historical target still exists. With a base, every **new** sidecar
+must identify an existing target file; an imported session cannot silently
+introduce a nonexistent target.
+Already reviewed immutable sessions may outlive a removed or renamed target.
+This distinction preserves the historical audit trail without requiring edits
+to old sessions. Unattached sidecars are allowed during the documented
+scaffold-then-attach workflow; this does not make history coverage mandatory.
+
 
 Run individual validation during curation, then `just check` and
 `uv run --locked cmmmech validate --require-records` for the batch. `just check`
