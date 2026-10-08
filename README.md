@@ -59,6 +59,11 @@ commit and working changes, hash the record bytes, and retain unresolved limits.
 
 ## Sources
 
+Use the local [source-discovery skill](.claude/skills/cmmmech-discover-sources/SKILL.md)
+to investigate CMM data sources, reassess known sources, or identify coverage gaps.
+It produces a dated search log, source assessment and ranked curation handoff under
+`research/sources/`, keeping discovery leads separate from verified evidence.
+
 Criticality is a designation made by a named authority at a particular time.
 Useful discovery sources include the [USGS critical-minerals programme](https://www.usgs.gov/programs/mineral-resources-program/science/about-2025-list-critical-minerals)
 and the [EU critical raw materials overview](https://www.consilium.europa.eu/en/policies/the-critical-raw-materials-act/).

@@ -9,6 +9,8 @@ transformation, and recovery. Read README.md and docs/records.md first.
 - Mechanism evidence must support the stated organism, substrate, and conditions.
   Do not extrapolate a laboratory result to industrial performance.
 - Never fabricate citations, ontology labels, measurements, or deployment claims.
+- Use `.claude/skills/cmmmech-discover-sources/SKILL.md` for source investigations;
+  keep discovery reports separate from accepted scientific records.
 - Review new or materially changed records with the local
   `.claude/skills/review-record/SKILL.md`; retain a timestamped artifact for
   each record and reviewed file state under `reviews/records/<slug>/`.
