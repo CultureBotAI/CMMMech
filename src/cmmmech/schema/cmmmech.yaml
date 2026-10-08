@@ -10,6 +10,8 @@ default_prefix: cmmmech
 default_range: string
 imports:
   - linkml:types
+  - mech_shared
+  - history
 types:
   NonEmptyText:
     typeof: string
@@ -58,6 +60,14 @@ classes:
         multivalued: true
         inlined_as_list: true
         minimum_cardinality: 1
+      history_refs:
+        description: >-
+          Repository-relative paths to canonical HistoryRecord sidecars,
+          separate from native inline curation_history events. Presence is
+          advisory; supplied references must identify this record's history.
+          Create sessions with just new-history, then append the returned path.
+        multivalued: true
+        pattern: '^history/records/[a-z][a-z0-9-]*/[A-Za-z0-9_.-]+\.yaml$'
   CurationEvent:
     description: Who changed or reviewed a record, when, and what was done.
     attributes:

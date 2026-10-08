@@ -38,6 +38,15 @@ This skill does not authorize shared messages, issues, PRs, merging, or admissio
 - Preserve contradictory results, weak controls, unknowns and transfer limits.
   Use `partial`, `refute` or `context_only` for the particular claim explained;
   disagreement with an overbroad claim need not refute the narrower observation.
+- Check inline `curation_history` events and linked `history_refs` sidecars as
+  distinct provenance. Verify the actual actor, timestamp, target and change
+  described; adoption of history must not invent earlier authorship. Validate
+  sidecars against the reviewed Git base with `cmmmech validate-history --base
+  <revision>`. Committed sessions are immutable; corrections need new sessions.
+- For a provenance-only change, prove scientific bytes or field values are
+  unchanged from the reviewed baseline and identify the earlier scientific
+  review. State that literature was not reassessed; do not present a metadata
+  check as fresh scientific verification.
 
 ## Required artifact
 

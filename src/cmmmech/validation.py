@@ -26,16 +26,20 @@ class UniqueKeyLoader(yaml.SafeLoader):
         return result
 
 
-@lru_cache(maxsize=1)
-def record_validator():
-    resource = files("cmmmech").joinpath("schema/cmmmech.yaml")
+@lru_cache(maxsize=2)
+def schema_validator(filename: str, top_class: str):
+    resource = files("cmmmech").joinpath(f"schema/{filename}")
     with as_file(resource) as path:
         schema = json.loads(JsonSchemaGenerator(
-            str(path), top_class="CriticalMineralRecord", not_closed=False, include_null=False
+            str(path), top_class=top_class, not_closed=False, include_null=False
         ).serialize())
     validator = validator_for(schema)
     validator.check_schema(schema)
     return validator(schema, format_checker=FormatChecker())
+
+
+def record_validator():
+    return schema_validator("cmmmech.yaml", "CriticalMineralRecord")
 
 
 def validate_record(record) -> list[str]:
@@ -49,6 +53,9 @@ def validate_record(record) -> list[str]:
     for section in ("sources", "mechanisms"):
         counts = Counter(item["id"] for item in record.get(section, []))
         errors.extend(f"{section}: duplicate id {key}" for key, count in counts.items() if count > 1)
+    history = record.get("history_refs", [])
+    if len(set(history)) != len(history):
+        errors.append("history_refs: duplicate history reference")
     sources = {source["id"] for source in record["sources"]}
     references = [(f"criticality/{index}", item["source_ref"])
                   for index, item in enumerate(record.get("criticality", []))]

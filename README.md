@@ -85,19 +85,24 @@ governed artifacts are pinned in `scripts/.vendored_canon_ref`; CI verifies
 their bytes and file modes against that immutable public CLAW revision. Use
 CLAW's supported synchronizer for updates, never hand-edit governed copies.
 
-The native schema accepts optional inline `curation_history` events with strict
-timestamps and required curator, action, and summary fields. Existing records
-are unchanged; these events do not replace timestamped scientific reviews.
-Both canonical timestamp guards run unmodified. The canonical shared/history
-schemas are also present as governed resources, but shared history authoring
-commands and sidecar adapters remain unimplemented. Other unverified fleet
-adapters remain disabled. The
-vendored PR-shepherd and queue-admission workflows do not prove live shepherd
-execution, credentials, or remote merge-queue activation. No research provider
-is invoked by the native or canonical-byte validation gates.
+The native schema keeps inline `curation_history` events separate from
+`history_refs`, which link canonical sidecar sessions. `just new-history` creates
+a validated sidecar without rewriting a scientific record; attach its printed
+path in a reviewed edit. Both canonical timestamp guards remain unchanged.
+History paths reject symlinks, and CI compares committed sessions with the
+trusted event base to prevent rewriting or deleting earlier provenance. See
+[the history guide](docs/records.md#append-only-curation-history).
+
+The native merge queue is configured for `main` through CLAW's reviewed
+plan/apply/check process. Its [receipts and readiness evidence](reviews/integration/queue-20261008/)
+distinguish configuration, writer App token readiness, and actual queue execution.
+The PR shepherd remains manual and comment-only; its configuration and available
+secret names were checked without invoking its model. Other unverified fleet
+adapters remain disabled. No research provider is invoked by the native or
+canonical-byte validation gates.
 
 The included CI handles pull requests, pushes to `main`, and `merge_group`
-events, but a workflow alone does not enable a remote merge queue.
+events. Operational merge evidence is tracked in [issue #3](https://github.com/CultureBotAI/CMMMech/issues/3).
 The [dated integration audit](docs/integration-status.md) records the earlier
 pre-admission state, not the current deployment. Coordinated fleet convergence
 is tracked in [CLAW issue #580](https://github.com/CultureBotAI/culturebotai-claw/issues/580).
