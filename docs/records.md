@@ -28,8 +28,14 @@ growth or metabolism. State living/resting/dried biomass and strain in context.
 Mechanisms are not universal requirements for all minerals. A broad material
 record can exist before any microbial mechanism has been curated. Known labels
 and identifiers are checked structurally only. Human or agent evidence review
-is separate from validation; canonical curation history and fleet governance
-remain pending adoption work.
+is separate from validation. Optional `curation_history` is a nonempty list of
+inline events, each requiring `timestamp`, `curator`, `action`, and `summary`.
+Quote timestamps as timezone-bearing RFC 3339 strings with a year from 2000
+through 2099; malformed dates, missing fields, blank descriptions, and unknown
+event fields fail strict validation. Record actual work, never fabricated or
+retrospectively invented provenance. Inline events do not replace scientific
+reviews or claim adoption of CLAW's separate sidecar-history authoring contract.
+Shared history commands and adapters remain pending.
 
 ## Curation and review
 

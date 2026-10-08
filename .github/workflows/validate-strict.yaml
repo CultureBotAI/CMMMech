@@ -23,3 +23,5 @@ jobs:
         run: uv sync --locked --extra dev
       - name: Run the local gate
         run: uv run --no-sync python scripts/check.py
+      - name: Verify canonical governed artifacts
+        run: bash scripts/check_vendored_sync.sh

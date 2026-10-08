@@ -42,8 +42,13 @@ uv run cmmmech validate --require-records
 ```
 
 Without `just`, use `uv run python scripts/check.py`. The same command is used
-by CI. No research provider, model, credential, or network lookup is used by
-the checks after dependencies are installed.
+by CI. This local gate uses no research provider, model, credential, or network
+lookup after dependencies are installed. CI also runs the separate canonical
+artifact check, which reads the pinned public CLAW revision:
+
+```bash
+bash scripts/check_vendored_sync.sh
+```
 
 Each record belongs in `data/records/<slug>.yaml`. See
 [the record guide](docs/records.md) and the packaged
@@ -74,16 +79,28 @@ or industrial deployment.
 
 ## Integration Status
 
-CLAW fleet registration, canonical shared/history schemas and adapters,
-vendored governance, PR shepherd, and native merge-queue configuration are
-**pending**. Nothing in this bootstrap claims those are deployed. Admission
-requires a separate CLAW change and coordinated governing release; do not invent
-a vendored pin or silently copy a different Mech's capabilities.
+CLAW [fleet admission](https://github.com/CultureBotAI/culturebotai-claw/pull/581)
+registers CMMMech with its measured native capabilities. The 18 applicable
+governed artifacts are pinned in `scripts/.vendored_canon_ref`; CI verifies
+their bytes and file modes against that immutable public CLAW revision. Use
+CLAW's supported synchronizer for updates, never hand-edit governed copies.
+
+The native schema accepts optional inline `curation_history` events with strict
+timestamps and required curator, action, and summary fields. Existing records
+are unchanged; these events do not replace timestamped scientific reviews.
+Both canonical timestamp guards run unmodified. The canonical shared/history
+schemas are also present as governed resources, but shared history authoring
+commands and sidecar adapters remain unimplemented. Other unverified fleet
+adapters remain disabled. The
+vendored PR-shepherd and queue-admission workflows do not prove live shepherd
+execution, credentials, or remote merge-queue activation. No research provider
+is invoked by the native or canonical-byte validation gates.
 
 The included CI handles pull requests, pushes to `main`, and `merge_group`
 events, but a workflow alone does not enable a remote merge queue.
-The [dated integration audit](docs/integration-status.md) verifies the pending
-status and gives concrete follow-up work through CLAW's supported admission process.
+The [dated integration audit](docs/integration-status.md) records the earlier
+pre-admission state, not the current deployment. Coordinated fleet convergence
+is tracked in [CLAW issue #580](https://github.com/CultureBotAI/culturebotai-claw/issues/580).
 
 ## License
 

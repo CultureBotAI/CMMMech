@@ -52,6 +52,28 @@ classes:
         range: Mechanism
         multivalued: true
         inlined_as_list: true
+      curation_history:
+        description: Descriptive inline change events; not a substitute for scientific record reviews.
+        range: CurationEvent
+        multivalued: true
+        inlined_as_list: true
+        minimum_cardinality: 1
+  CurationEvent:
+    description: Who changed or reviewed a record, when, and what was done.
+    attributes:
+      timestamp:
+        range: datetime
+        required: true
+        pattern: '^20[0-9]{2}-'
+      curator:
+        range: NonEmptyText
+        required: true
+      action:
+        range: NonEmptyText
+        required: true
+      summary:
+        range: NonEmptyText
+        required: true
   NamedEntity:
     attributes:
       id:
