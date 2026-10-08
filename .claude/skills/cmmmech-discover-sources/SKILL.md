@@ -39,8 +39,13 @@ identities and explicitly scoped relationships.
 
 ## Search and acquire
 
-Use live web/repository searches for each investigation. Read the relevant
-routes and query examples in [the source guide](references/source-guide.md).
+Use live web/repository searches when allowed by the user's research bounds.
+For an explicitly local-only or offline investigation, inspect the supplied or
+previously acquired artifacts and state which live checks were omitted. Separate
+this pass's checks from prior reported verification; do not imply current remote
+versions, identifiers or unavailable evidence were verified offline.
+Read the relevant routes and query examples in
+[the source guide](references/source-guide.md).
 Select routes that answer the question; do not mechanically search every portal.
 
 Combine material names, symbols and verified synonyms with mechanism, organism,
