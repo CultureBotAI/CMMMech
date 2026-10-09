@@ -1,0 +1,114 @@
+id: cmmmech:uranium
+name: Uranium
+material_kind: element
+description: >-
+  Uranium (U), represented here as an element distinct from the dissolved
+  U(VI) feed and electrode-associated material in a laboratory
+  bioelectrochemical separation study. The United States 2025 designation
+  applies to the named uranium commodity; it does not identify a uranium
+  mineral species or establish the criticality of every uranium compound.
+identifiers:
+  - id: CHEBI:27214
+    label: uranium atom
+sources:
+  - id: kane_2026_bes
+    title: >-
+      Kane, Selvage, Ciechanowicz and Campbell (2026). Data acquired in
+      experiments on bioelectrochemical systems for critical mineral recovery.
+      U.S. Geological Survey data release, published September 15, 2026.
+      DOI 10.5066/P9ERLSM6.
+    url: https://doi.org/10.5066/P9ERLSM6
+    accessed_on: '2026-10-09'
+  - id: usgs_2025
+    title: >-
+      U.S. Geological Survey (2025). Final 2025 List of Critical Minerals.
+      Federal Register 90 FR 50494-50497, November 7, 2025.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-09'
+  - id: chebi_uranium
+    title: 'ChEBI:27214 - uranium atom'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:27214
+    accessed_on: '2026-10-09'
+  - id: ncbi_oneidensis_mr1
+    title: 'NCBI Taxonomy: Shewanella oneidensis MR-1 (Taxonomy ID 211586)'
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586
+    accessed_on: '2026-10-09'
+criticality:
+  - jurisdiction: United States of America
+    list_name: U.S. Department of the Interior Final List of Critical Minerals
+    edition: '2025 (published November 7, 2025; 90 FR 50494-50497)'
+    classification: critical
+    source_ref: usgs_2025
+mechanisms:
+  - id: oneidensis_bes_uranium_separation
+    name: Uranium separation in an MR-1-inoculated electrochemical system
+    process: separation
+    description: >-
+      A laboratory electrochemical system inoculated with Shewanella
+      oneidensis MR-1 showed aqueous uranium depletion and uranium associated
+      with the carbon-felt working electrode. Abiotic systems also removed
+      uranium. This supports separation in the combined biological and
+      electrical system, with partial evidence for a microbial mechanism;
+      microbial necessity, a specific electron-transfer pathway and a
+      purified uranium product are not established by this record.
+    context: >-
+      Defined electrolyte, not ore or industrial waste: 100 mL working and
+      counter chambers separated by Nafion 117, with carbon-felt electrodes.
+      The working solution contained 30 mM bicarbonate, 10 mM PIPES,
+      30 mM ammonium acetate, 40 mM NaCl, and Wolfe's vitamins and trace
+      metals. Dissolved U(VI) was prepared from U metal in HCl and hydrogen
+      peroxide. Chambers were purged with nitrogen containing 400 ppm CO2.
+      After equilibration and the second solution sample, the biotic system
+      was inoculated and the working electrode poised at -800 mV versus
+      saturated Ag/AgCl. The metadata specifies ambient-temperature
+      equilibration and experiments lasting 72-574 h, with a shorter abiotic
+      U repeat; it does not provide an exact controlled assay temperature or
+      inoculum density/preparation. The original biotic U series has recorded
+      pH values of 7.01-8.21 after inoculation, so this was not a constant-pH
+      assay. Filtered samples were measured by ICP-OES. Electrode material
+      underwent carbonate extraction followed by concentrated acid extraction.
+      Independent replicate counts and a statistical microbial-effect estimate
+      are not assigned here. Neither stable mineral identity nor industrial
+      deployment is claimed.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:211586
+        label: Shewanella oneidensis MR-1
+    evidence:
+      - source_ref: kane_2026_bes
+        supports: support
+        explanation: >-
+          FGDC process steps 1-4 and tables T1-T3 and T6 support the laboratory
+          separation observation. In T3, the original biotic series has
+          975 mg/kg U at BESU.8Vb_W.EQ and less than 0.1 mg/kg at
+          BESU.8Vb_W.END; the latter is encoded as -0.1, a detection limit,
+          not zero or a negative concentration. T6 reports uranium in the
+          subsequent electrode acid extract. These observations are not
+          a mass-balanced recovery percentage or product purity measurement.
+      - source_ref: kane_2026_bes
+        supports: partial
+        explanation: >-
+          Abiotic T3 samples also decrease, from 914 mg/kg at
+          BESU.8Va_W.t0 to 0.819 mg/kg at BESU.8Va_W.END. T2 shows different
+          pH histories, and the source reports pre-electrolysis sorption.
+          T6 original biotic and abiotic acid extracts use concentrated HCl
+          and HNO3 respectively, so their amounts are not a matched assay
+          of microbial enhancement. These controls limit attribution of
+          the observed separation specifically to MR-1 metabolism.
+      - source_ref: kane_2026_bes
+        supports: support
+        explanation: >-
+          T9_SEM.pdf pages 2-6 show deposits and U-labelled EDS signals on
+          both abiotic and biotic U electrodes, supporting electrode
+          association. T8_XRD.csv supplies diffraction counts for these
+          conditions and a carbon-felt blank, but this curation does not
+          assign a crystalline phase or oxidation state from those data.
+curation_history:
+  - timestamp: '2026-10-09T04:48:34Z'
+    curator: Codex (GPT-6; Codex)
+    action: create_record
+    summary: >-
+      Curated element identity, US 2025 designation and laboratory BES
+      separation observations with abiotic and analytical limitations.
+history_refs:
+  - history/records/uranium/2026-10-09T044834Z-codex-003092.yaml

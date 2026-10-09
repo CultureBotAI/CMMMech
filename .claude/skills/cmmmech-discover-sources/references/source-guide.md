@@ -14,6 +14,9 @@ does not establish that its underlying files have been acquired or reviewed.
 | EU criticality | [EUR-Lex Regulation 2024/1252](https://eur-lex.europa.eu/eli/reg/2024/1252/oj/eng) | Original Annex I strategic and Annex II critical materials; inspect amendments/consolidated versions as the task requires. Preserve material groups and grade qualifiers. A search snippet is not inspection of the complete annex. |
 | Element/chemical identity | [ChEBI](https://www.ebi.ac.uk/chebi/) | Resolve labels and the exact chemical entity. Atoms, ions and substances are distinct; an element identifier does not identify its ore or waste stream. |
 | Mineral identity and analytical data | [RRUFF](https://www.rruff.net/) | Mineral names/IMA information, specimen chemistry, spectra, diffraction and primary references. Keep mineral species, sample identifier and measured composition distinct. |
+| Versioned mineral nomenclature | [IMA-CNMNC master lists](https://cnmnc.units.it/index.php) | Follow a dated master list and inspect its field dictionary. An approval number, an original-description year and a specimen accession are different identifiers. |
+| Experimental mineral-recovery datasets | [USGS Mineral Resources data](https://www.usgs.gov/programs/mineral-resources-program/data) | Follow the particular release DOI to its files and dictionary; for example [bioelectrochemical recovery data](https://doi.org/10.5066/P9ERLSM6). Verify controls, censoring codes and denominators before inferring a microbial contribution or recovery yield. |
+| Mineral occurrences and resources | [USGS cobalt release example](https://doi.org/10.5066/P9V74HIU) | Check original release coverage, thresholds, feature/reference joins and versions. A government mirror may be a subset. Occurrences and resource estimates do not establish waste availability or microbial extractability. |
 | Primary mechanism literature | [PubMed](https://pubmed.ncbi.nlm.nih.gov/) and the primary publisher | Follow full text, associated datasets and supplements. PubMed has a life-sciences focus; also search materials, mining and hydrometallurgy literature through web/publisher searches. Indexing is not verification of experimental claims. |
 | Taxon/sample/genome context | [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/datasets/taxonomy/), [BioSample](https://www.ncbi.nlm.nih.gov/biosample/), [Datasets documentation](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/) | Inspect rank, sample provenance and accession-versioned genomes/linked sequence archives. These identify different objects; annotations or sequence similarity alone do not demonstrate recovery. |
 | Strain context | [BacDive](https://bacdive.dsmz.de/) and the cited culture collection | Follow strain identifiers and observation provenance. Separate measured, predicted and species-level properties; verify the exact experimental strain. |
@@ -32,6 +35,12 @@ and the EUR-Lex document identity were checked through official indexed results
 after timeout/JavaScript access limits. Their complete data/annex contents were
 not assessed in that check. Legacy `rruff.info/ima/` returned a redirect loop;
 use the current entry point and verify any redirected target.
+
+Additional route check: 2026-10-08 UTC. The dated IMA September 2026 PDF and
+RRUFF sample archive were acquired and inspected. The USGS bioelectrochemical
+release's dictionary, metadata and two assay CSVs were sampled. USMIN cobalt
+remained a metadata-level lead; original occurrence rows were not acquired.
+These are acquisition states for this check, not permanent availability claims.
 
 ## Build queries around claims
 

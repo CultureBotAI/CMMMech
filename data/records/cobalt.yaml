@@ -6,6 +6,8 @@ description: >-
   cobalt-atom identifier for chemical identity. Cobalt-bearing cathodes and
   mixed battery black mass are material forms and secondary resources,
   respectively; neither is a mineral species or synonymous with the element.
+  The dated US designation maps the listed cobalt commodity to this element
+  record; it does not designate every cobalt-bearing mineral or waste stream.
 identifiers:
   - id: CHEBI:27638
     label: cobalt atom
@@ -26,12 +28,23 @@ sources:
       mine pit lake. Frontiers in Microbiology 15:1347072.
     url: https://doi.org/10.3389/fmicb.2024.1347072
     accessed_on: '2026-10-06'
+  - id: usgs2025
+    title: >-
+      USGS (2025). Final 2025 List of Critical Minerals. Federal Register
+      90:50494-50497, document 2025-19813; cobalt in the final commodity table.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-09'
 criticality:
   - jurisdiction: European Union
     list_name: Regulation (EU) 2024/1252, Annex II, Section 1, List of critical raw materials
     edition: '2024; original regulation published 3 May 2024; entry (h) cobalt'
     classification: critical
     source_ref: eu_crma_2024
+  - jurisdiction: United States of America
+    list_name: USGS Final List of Critical Minerals
+    edition: '2025; Federal Register 90:50494-50497; published 7 November 2025'
+    classification: critical
+    source_ref: usgs2025
 mechanisms:
   - id: adapted_consortium_black_mass_bioleaching
     name: Acidophilic consortium bioleaching of battery black mass
@@ -70,5 +83,10 @@ curation_history:
   summary: Appended canonical history reference and this present adoption event. Earlier scientific
     review artifacts remain linked in the sidecar; scientific content is unchanged and was
     not reassessed.
+- timestamp: '2026-10-09T04:45:25Z'
+  curator: Codex (GPT-6; Codex)
+  action: criticality_addition
+  summary: Added the US 2025 cobalt commodity designation and its scoped mapping while preserving existing mechanism and EU evidence.
 history_refs:
 - history/records/cobalt/2026-10-08T023557Z-codex-7b6548.yaml
+- history/records/cobalt/2026-10-09T044525Z-codex-e4bfe4.yaml

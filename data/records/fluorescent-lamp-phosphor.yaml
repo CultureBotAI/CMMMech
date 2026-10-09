@@ -1,0 +1,91 @@
+id: cmmmech:fluorescent-lamp-phosphor
+name: Spent fluorescent-lamp phosphor powder
+material_kind: secondary_resource
+description: >-
+  A mixed secondary resource from spent fluorescent lamps. The curated assay
+  concerns retorted phosphor powder supplied by Idaho National Laboratory,
+  rather than untreated whole lamps, a single mineral species, an element, or
+  a purified rare-earth commodity. Its total rare-earth leaching outcome is not
+  assigned to any individual element. No criticality designation is inherited
+  from the elements present in this waste.
+sources:
+  - id: schmitz2021
+    title: >-
+      Schmitz et al. (2021). Generation of a Gluconobacter oxydans knockout
+      collection for improved extraction of rare earth elements.
+      Nature Communications 12:6693.
+    url: https://doi.org/10.1038/s41467-021-27047-4
+    accessed_on: '2026-10-09'
+  - id: ncbi_gluconobacter
+    title: 'NCBI Taxonomy 442 - Gluconobacter oxydans (species)'
+    url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=442&retmode=xml
+    accessed_on: '2026-10-09'
+mechanisms:
+  - id: gluconobacter_biolixiviant_ree_release
+    name: Rare-earth release from retorted phosphor by Gluconobacter biolixiviant
+    process: bioleaching
+    microbial: true
+    organisms:
+      - id: NCBITaxon:442
+        label: Gluconobacter oxydans
+    description: >-
+      Acidic biolixiviant produced by living Gluconobacter oxydans B58-derived
+      cultures solubilized rare-earth elements from retorted lamp phosphor.
+      Cultures were centrifuged before the clarified biolixiviant contacted
+      the solid. A pstC transposon disruption increased total rare-earth
+      extraction relative to proxy wild-type. The endpoint is dissolved
+      material in filtered leachate, not separation into purified products.
+    context: >-
+      Laboratory assays used 20 mg retorted phosphor powder per 500 microlitres
+      biolixiviant (4% w/v) in 1.7 mL tubes, shaken horizontally for 36 h at
+      room temperature. Biolixiviant production followed 48 h culture in
+      yeast-peptone-mannitol medium with kanamycin; cultures were normalized
+      to OD 1.9, diluted equally with 40% glucose to give 20% glucose, then
+      incubated two days at room temperature and 800 rpm. Acidity was measured
+      as an outcome, not held at one common pH. Cultures were centrifuged at
+      3200 x g for 10 min before supernatant transfer to powder. Following
+      leaching, solids were pelleted and supernatant filtered at 0.45 micrometres
+      for ICP-MS. Each disruption strain had five biological replicates;
+      the no-bacteria glucose control had five replicates, and proxy wild-type
+      had fifteen. The
+      species-level taxonomy identifier does not separately identify B58 or
+      the mutants. Retorting conditions and a batch-specific feed composition
+      are not established by the 2021 assay methods. No industrial bioleaching
+      deployment or product-purity endpoint is demonstrated.
+    evidence:
+      - source_ref: schmitz2021
+        supports: support
+        explanation: >-
+          Methods, Direct measurement of biolixiviant pH and Direct measurement
+          of REE bioleaching, and Fig. 4C support the clarified-lixiviant assay.
+          The Results report total extraction efficiencies of 5.5% for the
+          pstC disruption and 4.7% for proxy wild-type, described as an 18%
+          relative improvement. These rounded total-REE percentages are neither
+          an 18 percentage-point gain nor an Nd-specific yield. Fig. 4's
+          denominator uses previously published REE amounts in the phosphor;
+          it is not a newly verified batch-specific total digestion here.
+      - source_ref: schmitz2021
+        supports: partial
+        explanation: >-
+          Results, Disrupting the phosphate transport system increases
+          bioleaching, identifies pstC as the improved strain retaining
+          significance after multiple-comparison correction; the broader set
+          of six nominal improvements did not all retain significance after
+          that correction. A proposed phosphate
+          sensing and acid-production explanation remains a hypothesis.
+          Fig. 4D and the glucose-control assays show residual release from
+          poorly acidifying mgdh and pqqC disruption strains, so activity is
+          not attributed exclusively to one enzyme. The clarified preparation
+          was not reported as sterile-filtered before leaching, and these data
+          do not demonstrate direct cell-mineral contact as a requirement.
+curation_history:
+  - timestamp: '2026-10-09T04:47:54Z'
+    curator: Codex (GPT-6; Codex)
+    action: evidence_curation
+    summary: >-
+      Created a scoped secondary-resource record from the Schmitz et al. 2021
+      retorted-powder assay, keeping total-REE yields, controls, pretreatment
+      uncertainties and laboratory scale explicit. Independent scientific
+      review is recorded separately.
+history_refs:
+  - history/records/fluorescent-lamp-phosphor/2026-10-09T044754Z-codex-45750b.yaml

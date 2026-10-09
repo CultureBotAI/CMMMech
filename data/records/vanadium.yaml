@@ -1,0 +1,114 @@
+id: cmmmech:vanadium
+name: Vanadium
+material_kind: element
+description: >-
+  Vanadium (V), represented here as an element distinct from the dissolved
+  V(V) feed and electrode-associated material in a laboratory
+  bioelectrochemical separation study. The United States 2025 designation
+  applies to the named vanadium commodity; it does not identify a vanadium
+  mineral species or establish the criticality of every vanadium compound.
+identifiers:
+  - id: CHEBI:27698
+    label: vanadium atom
+sources:
+  - id: kane_2026_bes
+    title: >-
+      Kane, Selvage, Ciechanowicz and Campbell (2026). Data acquired in
+      experiments on bioelectrochemical systems for critical mineral recovery.
+      U.S. Geological Survey data release, published September 15, 2026.
+      DOI 10.5066/P9ERLSM6.
+    url: https://doi.org/10.5066/P9ERLSM6
+    accessed_on: '2026-10-09'
+  - id: usgs_2025
+    title: >-
+      U.S. Geological Survey (2025). Final 2025 List of Critical Minerals.
+      Federal Register 90 FR 50494-50497, November 7, 2025.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-09'
+  - id: chebi_vanadium
+    title: 'ChEBI:27698 - vanadium atom'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:27698
+    accessed_on: '2026-10-09'
+  - id: ncbi_oneidensis_mr1
+    title: 'NCBI Taxonomy: Shewanella oneidensis MR-1 (Taxonomy ID 211586)'
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586
+    accessed_on: '2026-10-09'
+criticality:
+  - jurisdiction: United States of America
+    list_name: U.S. Department of the Interior Final List of Critical Minerals
+    edition: '2025 (published November 7, 2025; 90 FR 50494-50497)'
+    classification: critical
+    source_ref: usgs_2025
+mechanisms:
+  - id: oneidensis_bes_vanadium_separation
+    name: Vanadium separation in an MR-1-inoculated electrochemical system
+    process: separation
+    description: >-
+      A laboratory electrochemical system inoculated with Shewanella
+      oneidensis MR-1 showed aqueous vanadium depletion and vanadium in
+      working-electrode acid extracts. Abiotic systems also removed vanadium.
+      This supports separation in the combined biological and electrical
+      system, with partial evidence for a microbial mechanism; microbial
+      necessity, improved recovery, and an isolated vanadium product are
+      not established by this record.
+    context: >-
+      Defined electrolyte, not ore or industrial waste: 100 mL working and
+      counter chambers separated by Nafion 117, with carbon-felt electrodes.
+      The working solution contained 30 mM bicarbonate, 10 mM PIPES,
+      30 mM ammonium acetate, 40 mM NaCl, and Wolfe's vitamins and trace
+      metals. The source describes the V(V) stock as Na3V2O8 in 1% HCl;
+      that reported reagent formula is retained without inferring a mineral
+      identity or independently resolved stoichiometry. Chambers were purged
+      with nitrogen. After equilibration and the second solution sample, the
+      biotic system was inoculated and the working electrode poised at
+      -800 mV versus saturated Ag/AgCl. The metadata specifies ambient
+      equilibration but no exact controlled assay temperature or inoculum
+      density/preparation. T2 records the biotic V run from May 21 to May 30,
+      2025, and abiotic V from May 15 to May 21; their starting concentrations,
+      durations and pH histories differ. The biotic series has recorded pH
+      7.31-7.70 from sample Vbrr_0 through BESV.brr_END. Filtered solution
+      was measured by ICP-OES; electrode-associated material was extracted
+      with dilute and concentrated nitric acid. Independent replicate counts,
+      a specific reduced V species and industrial deployment are not assigned.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:211586
+        label: Shewanella oneidensis MR-1
+    evidence:
+      - source_ref: kane_2026_bes
+        supports: support
+        explanation: >-
+          FGDC process steps 1-4, T2, T3 and T6 support the separation
+          observation. T3 reports 44.1 mg/kg V at Vbrr_0 and 34 mg/kg at
+          BESV.brr_END. T6 reports vanadium in working-electrode extracts
+          including Vbrr_WE. The concentrations are mg/kg, not an assumed
+          mg/L conversion. Aqueous depletion and extracted electrode-associated
+          amounts are not a mass-balanced recovery percentage or product purity.
+      - source_ref: kane_2026_bes
+        supports: partial
+        explanation: >-
+          T3 abiotic V decreases from 19.1 mg/kg at BESVarr_0 to
+          12.2 mg/kg at BESVarr_END. T2 gives different pH histories and
+          durations; the unequal starting concentrations also prevent treating
+          endpoint differences as a controlled microbial-effect estimate.
+          T6 separates working-electrode, holder and reference-frit extracts;
+          these must not be pooled into an unsupported microbial recovery yield.
+      - source_ref: kane_2026_bes
+        supports: context_only
+        explanation: >-
+          Process step 5 and T7_UV_Vis.csv describe qualitative solution
+          speciation work after 67 days of anaerobic storage for the biotic
+          sample and 76 days for the abiotic sample. No immediate endpoint
+          oxidation-state assignment is made here. T9_SEM.pdf page 7 is
+          labelled solids from V phosphate-buffered culturing medium, so it
+          does not establish the mineral identity of the V BES electrode product.
+curation_history:
+  - timestamp: '2026-10-09T04:48:39Z'
+    curator: Codex (GPT-6; Codex)
+    action: create_record
+    summary: >-
+      Curated element identity, US 2025 designation and laboratory BES
+      separation observations, preserving unequal controls and limits of
+      the delayed speciation and microscopy evidence.
+history_refs:
+  - history/records/vanadium/2026-10-09T044839Z-codex-edb7c6.yaml
