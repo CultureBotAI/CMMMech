@@ -102,6 +102,120 @@ mechanisms:
           oxidation-state assignment is made here. T9_SEM.pdf page 7 is
           labelled solids from V phosphate-buffered culturing medium, so it
           does not establish the mineral identity of the V BES electrode product.
+    observations:
+      - id: v_biotic_equilibrated
+        source_ref: kane_2026_bes
+        source_table: T3_AqueousICPOES.csv
+        source_sample_id: Vbrr_0
+        source_column: V_ppm
+        raw_value: '44.1'
+        analyte:
+          id: CHEBI:27698
+          label: vanadium atom
+        material_form: >-
+          Vanadium-bearing electrolyte. ICP-OES measures total elemental V;
+          the atom identifier grounds the element, not neutral atoms in solution
+          or an oxidation-state measurement.
+        sampled_fraction: >-
+          Working-chamber solution filtered at 0.22 micrometres before
+          preservation in 1% nitric acid.
+        study_arm: biotic
+        result_status: measured
+        value: 44.1
+        unit: mg/kg
+        analyzed_on: '2025-08-06'
+        sampled_on: '2025-05-21'
+        sampling_source_locator: 'T2_pH.csv; SampleID=Vbrr_0; Date column'
+        context: >-
+          Post-equilibration baseline of the run assigned to the biotic arm.
+          Metadata steps 1 and 3 place inoculation after the second solution
+          sample; study_arm therefore does not assert cells were present at
+          this baseline. The source sample ID differs from the BESV.brr prefix
+          of later samples; its exact T2 key is retained without renaming.
+      - id: v_biotic_endpoint
+        source_ref: kane_2026_bes
+        source_table: T3_AqueousICPOES.csv
+        source_sample_id: BESV.brr_END
+        source_column: V_ppm
+        raw_value: '34'
+        analyte:
+          id: CHEBI:27698
+          label: vanadium atom
+        material_form: >-
+          Vanadium-bearing electrolyte. ICP-OES measures total elemental V;
+          the atom identifier grounds the element, not neutral atoms in solution
+          or an oxidation-state measurement.
+        sampled_fraction: >-
+          Working-chamber solution filtered at 0.22 micrometres before
+          preservation in 1% nitric acid.
+        study_arm: biotic
+        result_status: measured
+        value: 34
+        unit: mg/kg
+        analyzed_on: '2025-06-12'
+        sampled_on: '2025-05-30'
+        sampling_source_locator: 'T2_pH.csv; SampleID=BESV.brr_END; Date column'
+        context: >-
+          Biotic-run endpoint concentration from T3. Its analysis date
+          precedes the separate analysis of the stored baseline sample;
+          sampling dates, not analysis order, identify the experiment sequence.
+          No recovery percentage, V oxidation state or microbial benefit is
+          calculated from the endpoint.
+      - id: v_abiotic_equilibrated
+        source_ref: kane_2026_bes
+        source_table: T3_AqueousICPOES.csv
+        source_sample_id: BESVarr_0
+        source_column: V_ppm
+        raw_value: '19.1'
+        analyte:
+          id: CHEBI:27698
+          label: vanadium atom
+        material_form: >-
+          Vanadium-bearing electrolyte. ICP-OES measures total elemental V;
+          the atom identifier grounds the element, not neutral atoms in solution
+          or an oxidation-state measurement.
+        sampled_fraction: >-
+          Working-chamber solution filtered at 0.22 micrometres before
+          preservation in 1% nitric acid.
+        study_arm: abiotic
+        result_status: measured
+        value: 19.1
+        unit: mg/kg
+        analyzed_on: '2025-07-03'
+        sampled_on: '2025-05-15'
+        sampling_source_locator: 'T2_pH.csv; SampleID=BESVarr_0; Date column'
+        context: >-
+          Post-equilibration baseline of the abiotic V run. The concentration
+          differs from the biotic run's baseline; these source cells do not
+          define a matched microbial-effect estimate.
+      - id: v_abiotic_endpoint
+        source_ref: kane_2026_bes
+        source_table: T3_AqueousICPOES.csv
+        source_sample_id: BESVarr_END
+        source_column: V_ppm
+        raw_value: '12.2'
+        analyte:
+          id: CHEBI:27698
+          label: vanadium atom
+        material_form: >-
+          Vanadium-bearing electrolyte. ICP-OES measures total elemental V;
+          the atom identifier grounds the element, not neutral atoms in solution
+          or an oxidation-state measurement.
+        sampled_fraction: >-
+          Working-chamber solution filtered at 0.22 micrometres before
+          preservation in 1% nitric acid.
+        study_arm: abiotic
+        result_status: measured
+        value: 12.2
+        unit: mg/kg
+        analyzed_on: '2025-07-03'
+        sampled_on: '2025-05-21'
+        sampling_source_locator: 'T2_pH.csv; SampleID=BESVarr_END; Date column'
+        context: >-
+          Abiotic-run endpoint. Its run duration and pH history differ from
+          the biotic run. This concentration cell preserves the abiotic
+          comparison without assigning statistical replication, normalized
+          recovery yield or a causal microbial effect.
 curation_history:
   - timestamp: '2026-10-09T04:48:39Z'
     curator: Codex (GPT-6; Codex)
@@ -110,5 +224,13 @@ curation_history:
       Curated element identity, US 2025 designation and laboratory BES
       separation observations, preserving unequal controls and limits of
       the delayed speciation and microscopy evidence.
+  - timestamp: '2026-10-09T05:50:05Z'
+    curator: Codex (GPT-6; Codex)
+    action: curate_source_observations
+    summary: >-
+      Added four exact T3 vanadium concentration cells with raw values and
+      separate analysis/sample provenance. Preserved unequal controls,
+      pre-inoculation baseline timing and all prior claims and histories.
 history_refs:
   - history/records/vanadium/2026-10-09T044839Z-codex-edb7c6.yaml
+  - history/records/vanadium/2026-10-09T055005Z-codex-5af8f0.yaml

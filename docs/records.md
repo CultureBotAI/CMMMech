@@ -129,3 +129,69 @@ an explicitly empty exploratory directory. Preserve synthetic tests separately.
 The small source in `tests/conftest.py` is entirely synthetic and uses
 `example.invalid`; it exercises the contract without introducing a scientific
 claim into the curated corpus.
+
+## Quantitative source observations
+
+An optional nonempty `observations` list under a mechanism preserves selected
+source concentration cells. Nesting binds each observation to that mechanism;
+it does not make the observation evidence of microbial causality. Abiotic
+controls may appear under a microbial mechanism. `study_arm` records the
+assigned `biotic` or `abiotic` run, not whether cells were already present at
+the sampling time; state pre-inoculation baselines in `context`.
+
+The current `ConcentrationObservation` contract is intentionally limited to
+mass-based elemental concentrations in `mg/kg` from numeric source tables.
+It does not represent recovery percentages, extracted amounts, rates, statistical
+effects or pooled replicates. Preserve the reported unit without assuming a
+density conversion to `mg/L`. `analyte` identifies the element; `material_form`
+and `sampled_fraction` describe what was analyzed. A neutral-atom ontology
+identifier does not assert that dissolved neutral atoms or a particular
+oxidation state were measured. For ICP-OES, state the total-element basis.
+
+Every observation needs a record-unique `id`, `source_ref`, exact `source_table`,
+`source_sample_id`, `source_column`, and quoted `raw_value`, plus an analysis
+date and the sample context. Its source must exist in the record and in the
+parent mechanism's evidence. The tuple `(source_ref, source_table,
+source_sample_id, source_column, analyzed_on)` identifies the source cell and
+must not be repeated under another ID or mechanism. Preserve original sample
+labels rather than guessing equivalence from similar spellings.
+
+There are two supported result states:
+
+- `measured` requires a finite nonnegative `value` equal to the numeric source
+  token and forbids `detection_limit`. A genuinely reported zero is valid;
+  a censored result must never be replaced with zero.
+- `below_detection` requires a finite positive `detection_limit` and forbids
+  `value`. For this numeric-table contract, `raw_value` must retain the source's
+  negative-limit encoding and its magnitude must equal `detection_limit`.
+  The curator must verify this encoding in the source dictionary. The validator
+  checks the declared interpretation; it does not decide that arbitrary
+  negative values in other datasets mean below detection.
+
+For example, this synthetic result represents less than 0.025 mg/kg, with no
+measured concentration assigned:
+
+```yaml
+raw_value: '-0.025'
+result_status: below_detection
+detection_limit: 0.025
+unit: mg/kg
+```
+
+Null/blank source cells and missing samples are not concentration observations
+in this first contract. Absence remains unrecorded. Do not turn `-9999` or a
+blank into a measurement merely to fill a record. The eight curated BES cells
+are deliberately a reviewed subset, not a complete table import.
+
+`analyzed_on` records the source analysis date. Optional `sampled_on` must be
+paired with `sampling_source_locator`, which identifies the date's exact
+table/sample/column within the same `source_ref`. Omit both if the sampling
+date is unresolved. The validator rejects a sampling date after its analysis
+date; contradictory source dates require investigation, not silent correction.
+Do not infer UTC timestamps from unzoned source times. Analyses may occur out
+of sampling order, and the analysis date must not be used to order a time course.
+
+Observation changes require new history sessions and a new independent record
+review covering exact final hashes, source cells, units, censoring and joins.
+Source-table interpretation and scientific comparability remain review duties;
+schema validation cannot establish a microbial effect or a recovery yield.

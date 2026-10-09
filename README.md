@@ -25,8 +25,13 @@ Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
 edition; none assert timeless status or industrial process deployment. See the
 [initial pilot assessment](docs/pilot-session.md),
-[ranked ingest queue](research/ingests/20261009-priorities.md), and
+[first ingest queue](research/ingests/20261009-priorities.md),
+[latest ingest results and priorities](research/ingests/20261009T054507Z-followup.md), and
 [record reviews](reviews/records/).
+
+The U/V mechanisms include eight reviewed, source-linked concentration cells.
+The [observation contract](docs/records.md#quantitative-source-observations)
+keeps measured values, detection limits, sample dates and analysis dates distinct.
 
 ## Scope
 

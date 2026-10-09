@@ -19,6 +19,10 @@ types:
   SourceKey:
     typeof: string
     pattern: '^[a-z][a-z0-9_-]*$'
+  NumericSourceValue:
+    description: Exact numeric source-cell text, before interpretation of detection-limit encoding.
+    typeof: string
+    pattern: '^[+-]?(?:[0-9]+(?:\.[0-9]*)?|\.[0-9]+)(?:[eE][+-]?[0-9]+)?$'
 classes:
   CriticalMineralRecord:
     tree_root: true
@@ -154,6 +158,15 @@ classes:
         multivalued: true
         minimum_cardinality: 1
         inlined_as_list: true
+      observations:
+        description: >-
+          Selected source concentration cells associated with this mechanism,
+          including abiotic controls. Presence does not establish microbial
+          causality or turn concentration change into a recovery yield.
+        range: ConcentrationObservation
+        multivalued: true
+        inlined_as_list: true
+        minimum_cardinality: 1
   MechanismEvidence:
     attributes:
       source_ref:
@@ -165,7 +178,85 @@ classes:
       explanation:
         range: NonEmptyText
         required: true
+  ConcentrationObservation:
+    description: >-
+      A reported mass-based elemental concentration or a below-detection limit,
+      with its source cell and sample context. The current contract preserves
+      numeric tables that encode below-detection limits with a negative sign.
+      It does not represent estimates, recovery percentages, or pooled samples.
+    attributes:
+      id:
+        range: SourceKey
+        required: true
+      source_ref:
+        range: SourceKey
+        required: true
+      source_table:
+        range: NonEmptyText
+        required: true
+      source_sample_id:
+        range: NonEmptyText
+        required: true
+      source_column:
+        range: NonEmptyText
+        required: true
+      raw_value:
+        range: NumericSourceValue
+        required: true
+      analyte:
+        range: NamedEntity
+        required: true
+        inlined: true
+      material_form:
+        range: NonEmptyText
+        required: true
+      sampled_fraction:
+        range: NonEmptyText
+        required: true
+      study_arm:
+        description: Assigned experiment arm, not proof that cells were present when sampled.
+        range: StudyArm
+        required: true
+      result_status:
+        range: ConcentrationResultStatus
+        required: true
+      value:
+        description: Finite nonnegative reported concentration; only present for measured results.
+        range: float
+        minimum_value: 0
+      detection_limit:
+        description: Finite positive upper boundary; only present for below-detection results.
+        range: float
+        minimum_value: 0
+      unit:
+        range: MassBasedConcentrationUnit
+        required: true
+      analyzed_on:
+        description: Source analysis date, never substituted for sample collection date.
+        range: date
+        required: true
+      sampled_on:
+        description: Independently sourced collection date; omit when unresolved.
+        range: date
+      sampling_source_locator:
+        description: Table, exact sample key and date column within source_ref supporting sampled_on.
+        range: NonEmptyText
+      context:
+        description: Analytical basis, sample timing and limits needed to interpret this cell.
+        range: NonEmptyText
+        required: true
 enums:
+  ConcentrationResultStatus:
+    permissible_values:
+      measured:
+      below_detection:
+  MassBasedConcentrationUnit:
+    permissible_values:
+      mg/kg:
+  StudyArm:
+    permissible_values:
+      biotic:
+      abiotic:
   MaterialKind:
     permissible_values:
       element:
