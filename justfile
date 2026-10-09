@@ -19,3 +19,7 @@ new-history *args:
 
 validate-history *args:
     uv run --locked cmmmech validate-history {{args}}
+
+# Validate immutable structured review observations; never curate records.
+review-check *args:
+    uv run python scripts/record_review.py check {{args}}

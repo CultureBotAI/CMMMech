@@ -1,6 +1,6 @@
 ---
 name: review-record
-description: Adversarially review CMMMech material records against primary evidence and identifiers, and save timestamped per-record Markdown review artifacts. Use for new or changed data/records YAML, not fleet admission or publication.
+description: Adversarially review CMMMech material records against primary evidence and identifiers, and save schema-validated timestamped per-record YAML/Markdown review bundles. Use for new or changed data/records YAML, not fleet admission or publication.
 ---
 
 # Review a CMMMech record
@@ -50,28 +50,36 @@ This skill does not authorize shared messages, issues, PRs, merging, or admissio
 
 ## Required artifact
 
-Save a separate UTF-8 file for **each** record and review round:
-`reviews/records/<record-slug>/<YYYYMMDDTHHMMSSZ>.md`.
-Read the UTC clock; never fabricate a timestamp. Do not overwrite a prior round.
-Use this consistent structure (additional scientific sections are welcome):
+Use the CLAW contract in `docs/record-reviews.md` and the local routing profile
+in `docs/record-review-profile.md`. Every record and review round requires its
+own schema-valid `kind: record` observation. Save through
+`uv run python scripts/record_review.py save --content <completed-review.yaml>`
+to `reviews/structured/<YYYYMMDDTHHMMSSZ>-<slug>/review.yaml` and its generated
+`review.md`. Do not hand-author a separate verdict or overwrite an older round.
 
-1. **Record ID/path** — stable ID and repository-relative YAML path; reviewer
-   role and independence from its curator.
-2. **UTC timestamp** — ISO 8601 UTC time.
-3. **Reviewed revision and working changes** — `git rev-parse HEAD`, branch,
-   tracked/untracked changes relevant to the review, and SHA-256 of reviewed
-   record bytes. If correcting in this round, give pre/post hashes. A review
-   of uncommitted content must not claim it is contained in the HEAD commit.
-4. **Scope** — included claims, exclusions and acquisition limits.
-5. **Evidence checked** — primary URLs/DOIs, section/table locators, authority
-   and identifier lookups, contradiction/correction searches and access date.
-6. **Findings by severity** — critical, major, minor, informational; explicitly
-   say when a severity has no findings. Link each finding to a field and source.
-7. **Corrections** — concrete edits and whether independently rechecked.
-8. **Unresolved questions** — scientific uncertainty and any blocking work.
-9. **Verdict** — `accept`, `accept with limitations`, or `revise`; no acceptance
-   with unresolved critical/major errors. Limitations retained accurately in the
-   record may remain. Include actual validation commands and results.
+Capture actual UTC start/finish, independence and its basis, exact target path,
+Git base and reviewed byte hashes with the shared `inspect` command before the
+assessment. Preserve uncommitted provenance honestly. Retain material form,
+criticality authority/jurisdiction/list/edition, biomass state, organism/strain,
+substrate, pretreatment, controls, outcome and deployment scope in evidence-linked
+assessment dimensions/details. Keep measurements and local metrics with their
+definitions, units and denominators. Link each finding to its evidence, affected
+field, maintained input and proposed acceptance checks.
+
+Map native `critical` to shared `blocker` with an explicit normalization reason;
+retain major/minor/informational and native rule labels as applicable. Shared
+verdicts are `pass`, `pass_with_limitations`, `needs_curation`, `blocked`,
+`seed_only`, or `not_assessed`; optional `native_verdict` retains accept/revise
+wording without becoming a second decision. No passing verdict with unresolved
+blocker/major errors. For provenance-only work use `scientific_review: false`
+and state literature was not reassessed.
+
+Once a target is resolved, unavailable required checks need an honest partial
+or blocked saved observation. If the saver itself is unavailable, report that
+persistence is blocked rather than claiming a session-only review was saved.
+Earlier `reviews/records/` Markdown stays historical; do not convert it by
+guessing findings or rewriting timestamps. A follow-up retains the issue key
+and exact previous occurrence links instead of silently closing old findings.
 
 Run the affected file validation, then `just check` and
 `uv run --locked cmmmech validate --require-records` for the completed batch.

@@ -14,7 +14,8 @@ transformation, and recovery. Read README.md and docs/records.md first.
   keep discovery reports separate from accepted scientific records.
 - Review new or materially changed records with the local
   `.claude/skills/review-record/SKILL.md`; retain a timestamped artifact for
-  each record and reviewed file state under `reviews/records/<slug>/`.
+  each record and reviewed file state through `docs/record-reviews.md` under
+  `reviews/structured/<timestamp>-<slug>/` (YAML plus generated Markdown).
 - Use `rg --no-ignore --hidden` before making absence claims.
 - Preserve unrelated changes; never stash/reset or switch an active checkout.
 - Do not send issues, PRs, reviews, comments, or other shared-content mutations
