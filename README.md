@@ -80,7 +80,7 @@ or industrial deployment.
 ## Integration Status
 
 CLAW [fleet admission](https://github.com/CultureBotAI/culturebotai-claw/pull/581)
-registers CMMMech with its measured native capabilities. The 18 applicable
+registers CMMMech with its measured native capabilities. The 22 applicable
 governed artifacts are pinned in `scripts/.vendored_canon_ref`; CI verifies
 their bytes and file modes against that immutable public CLAW revision. Use
 CLAW's supported synchronizer for updates, never hand-edit governed copies.
