@@ -1,0 +1,148 @@
+id: cmmmech:lithium
+name: Lithium
+material_kind: element
+description: >-
+  The element Li, distinct from dissolved lithium ions, Li-bearing mineral
+  species or groups, and battery materials. The US designation below concerns
+  the named lithium commodity in the 2025 list, not every Li-containing resource.
+identifiers:
+  - id: CHEBI:30145
+    label: lithium atom
+sources:
+  - id: kirk2024
+    title: >-
+      Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene, and
+      lepidolite using Acidiothiobacillus ferrooxidans. Frontiers in Microbiology
+      15:1467408. The genus spelling is retained from the published title.
+    url: https://doi.org/10.3389/fmicb.2024.1467408
+    accessed_on: '2026-10-09'
+  - id: chebi_lithium
+    title: 'ChEBI CHEBI:30145 - lithium atom'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:30145
+    accessed_on: '2026-10-09'
+  - id: ncbi_ferrooxidans
+    title: 'NCBI Taxonomy 920 - Acidithiobacillus ferrooxidans (species)'
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=info
+    accessed_on: '2026-10-09'
+  - id: usgs2025
+    title: >-
+      USGS (2025). Final 2025 List of Critical Minerals. Federal Register
+      90:50494-50497, document 2025-19813.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-09'
+  - id: eu2024
+    title: >-
+      Regulation (EU) 2024/1252 of 11 April 2024. Original Official Journal text,
+      3 May 2024; Annex II, Section 1(s), lithium, page 57 of 67.
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401252
+    accessed_on: '2026-10-09'
+  - id: kirk2024_data_v1
+    title: >-
+      Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene and
+      lepidolite using Acidiothiobacillus ferrooxidans. Mendeley Data, version 1,
+      published 14 November 2024; CC BY 4.0. Published genus spelling retained.
+    url: https://doi.org/10.17632/djkf7tkm8d.1
+    accessed_on: '2026-10-09'
+criticality:
+  - jurisdiction: United States of America
+    list_name: USGS Final List of Critical Minerals
+    edition: '2025; Federal Register 90:50494-50497'
+    classification: critical
+    source_ref: usgs2025
+  - jurisdiction: European Union
+    list_name: Regulation (EU) 2024/1252, Annex II, Section 1(s), lithium
+    edition: '2024 original act; OJ L 2024/1252, 3 May 2024'
+    classification: critical
+    source_ref: eu2024
+mechanisms:
+  - id: acidophile_jadarite_bearing_material_leaching
+    name: Transient microbial enhancement of Li release from jadarite-bearing material
+    process: bioleaching
+    microbial: true
+    organisms:
+      - id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+    description: >-
+      Inoculation accelerated Li solubilization from a jadarite-bearing sample
+      relative to uninoculated acidic medium during part of a laboratory time
+      course. The uninoculated control reached similar dissolved Li by day 30,
+      and sulfuric-acid-only leaching released more Li. Biofilm involvement was
+      suggested, without establishing a unique molecular cause.
+    context: >-
+      Live in-lab ore-derived culture was reported as At. ferrooxidans, without
+      a strain accession. The species identifier normalizes the reported name
+      to Acidithiobacillus ferrooxidans; the title and abstract spell the genus
+      Acidiothiobacillus. This mapping does not independently identify the culture.
+      Ground Jadar Valley material contained jadarite, dolomite and probertite,
+      with possible unidentified Li-bearing phases. Triplicate biotic flasks
+      ran statically at 23 degrees C for 30 days, targeting pH 1.8; addition of
+      jadarite raised pH immediately and required repeated sulfuric acid doses.
+      Acid additions differed between treatments, limiting attribution of the
+      observed difference solely to biology. Methods state 2 g powder,
+      190 mL basal medium and 10 mL inoculum but label this 2% w/v; those amounts
+      imply 1% w/v. The discrepancy is unresolved and no normalized yield is
+      curated. No purified Li product or industrial heap operation was demonstrated.
+    evidence:
+      - source_ref: kirk2024
+        supports: support
+        explanation: >-
+          Sections 2.1-2.3 and 3.1-3.2, Fig. 1 and Table 1 support the scoped
+          ICP-OES dissolved-Li comparison and mixed substrate identity.
+          Acid leaching contributed substantially in all treatments.
+      - source_ref: kirk2024
+        supports: partial
+        explanation: >-
+          Section 3.2 limits the advantage to a transient comparison: by day 30
+          the uninoculated control was similar, and acid-only leaching remained
+          higher. Sections 3.3-3.4 and Figs. 4-5 report no material microbial
+          enhancement for the tested spodumene- and lepidolite-bearing samples.
+          The lepidolite sample name is retained without treating it as a unique
+          mineral species. The result cannot be generalized to all Li ores.
+      - source_ref: kirk2024_data_v1
+        supports: partial
+        explanation: >-
+          The eight-file version 1 deposit was acquired and its issuing hashes
+          verified. Jadarite day-30 values are consistent with the reported
+          control convergence and higher acid-only result, but quantitative
+          verification remains limited. Bioleaching workbook headers use mg/kg
+          rather than the paper's mg/L; mineral-digestion units also require
+          reconciliation. In Jadarite bioleaching results from ICP-OES.xlsx,
+          Jadarite!F5 and F7 do not equal the arithmetic means of the labelled
+          replicate cells C:E. Standalone spodumene and lepidolite workbooks
+          contain identical Li replicate blocks at Sheet1!C3:E12, requiring
+          provenance clarification before independent comparison. These are
+          unresolved mappings and inconsistencies, not identified corrections
+          or specific refutations of the paper's qualitative comparisons.
+          The files provide no loading or per-flask acid-dose ledger to resolve
+          the published contradictions. No deposited number was corrected or
+          imported as a normalized yield or quantitative benchmark.
+curation_history:
+  - timestamp: '2026-10-09T04:47:22Z'
+    curator: Codex (GPT-6; Codex)
+    action: record_creation
+    summary: >-
+      Curated the lithium element identity, USGS 2025 designation and conditional
+      laboratory bioleaching evidence. Retained control convergence, null effects,
+      uncertain strain identity and loading/acid limitations; no normalized
+      yield was imported. Independent review remains a separate artifact.
+  - timestamp: '2026-10-09T05:49:13Z'
+    curator: Codex (GPT-6; Codex)
+    action: criticality_extension
+    summary: >-
+      Added the historical EU 2024 Annex II critical designation for lithium
+      from the authentic original act. Kept the battery-grade strategic listing
+      separate and preserved all existing scientific claims. Independent review
+      remains a separate artifact.
+  - timestamp: '2026-10-09T05:52:36Z'
+    curator: Codex (GPT-6; Codex)
+    action: evidence_extension
+    summary: >-
+      Added the acquired Mendeley version 1 source and partial evidence preserving
+      unresolved units, aggregate calculations, replicate provenance and loading
+      or acid-dose attribution. Retained paper-scoped qualitative claims and
+      existing designations without importing quantitative benchmarks. Independent
+      review remains a separate artifact.
+history_refs:
+  - history/records/lithium/2026-10-09T044722Z-codex-d41ec5.yaml
+  - history/records/lithium/2026-10-09T054913Z-codex-bca3b0.yaml
+  - history/records/lithium/2026-10-09T055236Z-codex-f9b211.yaml

@@ -5,18 +5,34 @@ An evidence-backed knowledge base for **critical minerals and materials**, with
 their wider resource and material context.
 
 The knowledge base provides a LinkML schema, an offline strict validator,
-tests, CI, and three primary-literature pilot records. Each record has a
+tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-| Element record | Curated microbial mechanism | Evidence boundary |
+| Material record | Curated evidence | Evidence boundary |
 |---|---|---|
 | [Cobalt](data/records/cobalt.yaml) | Acidophilic consortium bioleaching of spent-battery black mass | Laboratory solubilization, not isolated cobalt product |
-| [Neodymium](data/records/neodymium.yaml) | Biosorption by dried *Chlorella vulgaris* biomass | Chemically pretreated magnet leachate; inactive biomass |
+| [Neodymium](data/records/neodymium.yaml) | Algal biosorption and *Gluconobacter* biolixiviant bioleaching | Separate magnet-leachate and synthetic mixed-phosphate experiments |
 | [Palladium](data/records/palladium.yaml) | Resting *Desulfovibrio desulfuricans* cells reduce Pd(II) | Defined soluble salt assay; hydrogenase causality remains inferred |
+| [Manganese](data/records/manganese.yaml) | *Pseudomonas putida* GB-1 oxidation of Mn substrates | Laboratory oxide-equivalent assay, without crystalline phase identification |
+| [Lithium](data/records/lithium.yaml) | Conditional acidophile bioleaching of jadarite-bearing material | Transient advantage; controls converge and other feeds show null effects |
+| [Uranium](data/records/uranium.yaml) | Laboratory bioelectrochemical observations | Inoculated-cell observations do not isolate microbial enhancement |
+| [Vanadium](data/records/vanadium.yaml) | Laboratory bioelectrochemical observations | Inoculated-cell observations do not establish a purified product |
+| [Spent lamp phosphor](data/records/fluorescent-lamp-phosphor.yaml) | *Gluconobacter* biolixiviant bioleaching of a secondary resource | Retorted mixed powder; total-REE outcome, not an element-specific yield |
+| [Cobaltite](data/records/cobaltite.yaml) | IMA September 2026 mineral identity | Distinct from cobalt; no inherited criticality or microbial mechanism |
+| [Monazite-(Nd)](data/records/monazite-nd.yaml) | IMA September 2026 mineral identity | Distinct from neodymium and synthetic mixed experimental feeds |
 
-These are element records. Experimental salts, alloys and secondary resources
-are specified in mechanism context, not equated with mineral species. See the
-[pilot assessment](docs/pilot-session.md) and [record reviews](reviews/records/).
+Experimental salts, alloys, mineral species and secondary resources retain
+their distinct identities. Criticality entries identify a jurisdiction and
+edition; none assert timeless status or industrial process deployment. See the
+[initial pilot assessment](docs/pilot-session.md),
+[first ingest queue](research/ingests/20261009-priorities.md),
+[latest ingest results and priorities](research/ingests/20261009T054507Z-followup.md), and
+[current structured record reviews](reviews/structured/).
+Earlier [Markdown reviews](reviews/records/) remain historical evidence.
+
+The U/V mechanisms include eight reviewed, source-linked concentration cells.
+The [observation contract](docs/records.md#quantitative-source-observations)
+keeps measured values, detection limits, sample dates and analysis dates distinct.
 
 ## Scope
 
@@ -61,6 +77,9 @@ flag so accidental loss of the whole corpus fails `just check`.
 Use the local [record-review skill](.claude/skills/review-record/SKILL.md) for
 new or changed scientific records. Review artifacts identify the reviewed
 commit and working changes, hash the record bytes, and retain unresolved limits.
+New rounds use the [structured review contract](docs/record-reviews.md).
+Before publishing through the squash queue, preserve the inspected source
+revisions using the [publication procedure](docs/record-review-profile.md#publishing-through-the-squash-queue).
 
 ## Sources
 

@@ -36,6 +36,8 @@ study and explain whether a dataset adds independent observations or reuses them
 Repeat for each substantive candidate:
 
 - Bibliographic/owner identity, version/release and stable identifiers.
+- Distinguish publication, portal posting, metadata modification and file-version
+  dates when they differ; do not silently choose one as the dataset edition.
 - Proposed claim and exact supporting section/table/figure/rows.
 - Material form, organism resolution, assay conditions/controls and scale,
   when relevant; distinguish observation, fitted result and inference.

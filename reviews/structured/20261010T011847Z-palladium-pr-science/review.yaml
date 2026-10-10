@@ -1,0 +1,227 @@
+schema_version: 1.0.0
+review_id: 20261010T011847Z-palladium-pr-science
+kind: record
+repository: CultureBotAI/CMMMech
+title: Palladium source-led PR adversarial review
+started_at: '2026-10-10T01:15:17.365783Z'
+finished_at: '2026-10-10T01:18:47Z'
+reviewer:
+  identity: Codex /root/publish_other_records_20261009
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Fresh review agent distinct from the record curators and prior
+    reviewers; no record or curation-history edits performed.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: EU-2024 grouped designation is supported by the original Annex II and separately
+  sourced palladium membership. Existing reduction evidence is unchanged and not freshly
+  recertified.
+source:
+  git_revision: c0adc2c0763e1515ed07dc712b024974d98fb342
+  state: working_tree
+  inputs:
+  - path: data/records/palladium.yaml
+    sha256: 7f75405ad97e3a2c8cf45b995f58aba01a91771b3075fc7411d5049bf3389acb
+    role: target
+  - path: docs/records.md
+    sha256: 212cdbb723eb1ad9eb76ea1b7dad066914659b1f85eb2cdb51ee67466cfcc8ee
+    role: context
+  - path: history/records/palladium/2026-10-08T023612Z-codex-97c17b.yaml
+    sha256: c299713c970a89aace0cb3db79de9b6e26e23cb42455cc443a5a96232cebdfb2
+    role: context
+  - path: history/records/palladium/2026-10-09T055145Z-codex-bea22f.yaml
+    sha256: 0b05f2eaf97fc0d05d1dc1634bedad3b02cf9469fa83fde37c101d02f7c45a50
+    role: context
+  - path: reviews/records/palladium/20261006T042218Z.md
+    sha256: e907fa96902a5a9d66838f2f5b37680fc413e6052dd8d27c4fa8ece9b5011a73
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+scope:
+  description: New historical EU-2024 platinum-group criticality and explicit palladium
+    membership, preservation of prior identity/US entry/mechanism, and provenance.
+  selection: This named record is one of seven assigned PR targets; one record per
+    review bundle.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:palladium
+targets:
+- target_id: cmmmech:palladium
+  path: data/records/palladium.yaml
+  label: Palladium
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/palladium.yaml
+    role: maintained scientific record
+checks:
+- check_id: record-validation
+  name: Affected seven-record strict validation
+  status: passed
+  required: true
+  summary: Seven records checked; zero failures.
+  target_ids:
+  - cmmmech:palladium
+  command: .venv/bin/cmmmech validate data/records/cobalt.yaml data/records/neodymium.yaml
+    data/records/palladium.yaml data/records/manganese.yaml data/records/cobaltite.yaml
+    data/records/monazite-nd.yaml data/records/fluorescent-lamp-phosphor.yaml
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: history-validation
+  name: History linkage and append-only base check
+  status: passed
+  required: true
+  summary: 19 history sessions checked; zero errors. Base was origin/main at the available
+    admitted main revision.
+  target_ids:
+  - cmmmech:palladium
+  command: .venv/bin/cmmmech validate-history --base origin/main
+  exit_code: 0
+  expected_exit_code: 0
+evidence:
+- evidence_id: eu2024
+  kind: authority
+  reference: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401252
+  locator: Original OJ PDF pp. 57–58, Annex II Section 1(h),(r),(u),(aa)
+  accessed_at: '2026-10-10T01:18:41Z'
+  support: supports
+  summary: Retained official PDF and extracted Annex II checked. Critical entries
+    include cobalt, light rare earth elements, manganese and platinum group metals.
+    Original 2024 act is the asserted edition, not an undated latest-law claim. Fresh
+    web route redirected to OJ landing; retained original PDF was used.
+  snapshot_sha256: eb89f374a725ebde267c90f237898cd1d0bdfa65a1d4a118511e225bde60283e
+- evidence_id: ecgroups
+  kind: authority
+  reference: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52017DC0490
+  locator: COM(2017) 490 final, Annex 1 p.4, footnotes 12–13
+  accessed_at: '2026-10-10T01:18:41Z'
+  support: supports
+  summary: Read neodymium among light rare earths and palladium among platinum group
+    metals. Used solely for explicit group membership; 2024 designation derives separately
+    from Annex II.
+  snapshot_sha256: 9a3407b786c9cefb486a84e456b0411537593d5da14b35e18f0f1585ad04718d
+- evidence_id: us2025
+  kind: authority
+  reference: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  locator: Final table, printed pp. 50496–50497; notice publication 7 November 2025
+  accessed_at: '2026-10-10T01:18:41Z'
+  support: supports
+  summary: Read official title, edition and named commodity rows. Cobalt, neodymium,
+    manganese and palladium are explicitly listed. A commodity listing does not name
+    every bearing compound or waste.
+- evidence_id: record
+  kind: record_content
+  reference: data/records/palladium.yaml
+  locator: Entire current file, working diff against origin/main, inline history and
+    linked sidecars
+  accessed_at: '2026-10-10T01:18:41Z'
+  support: supports
+  summary: Read exact maintained YAML and provenance. History targets/actors/timestamps
+    agree with inline events; committed prior history is preserved.
+  snapshot_sha256: 7f75405ad97e3a2c8cf45b995f58aba01a91771b3075fc7411d5049bf3389acb
+- evidence_id: prior
+  kind: prior_review
+  reference: reviews/records/palladium/20261006T042218Z.md
+  locator: Scope, evidence and limitations
+  accessed_at: '2026-10-10T01:18:41Z'
+  support: context_only
+  summary: Read prior independent primary-evidence review. Retained scientific fields
+    were compared programmatically with origin/main; prior literature is not claimed
+    as newly inspected.
+  snapshot_sha256: e907fa96902a5a9d66838f2f5b37680fc413e6052dd8d27c4fa8ece9b5011a73
+- evidence_id: search
+  kind: search
+  reference: Web search and local scoped review
+  locator: First returned result set, no pagination
+  accessed_at: '2026-10-10T01:18:41Z'
+  support: context_only
+  summary: No directly affecting correction notice identified in this bounded search;
+    this is not an exhaustive claim. Retained known within-study contrary evidence
+    remains explicit.
+  search_scope: '"2025-19813" correction. Local file discovery included hidden/ignored
+    files with rg --no-ignore --hidden; no machine-wide absence claim. Source bodies
+    and relevant supplements were separately inspected as listed.'
+assessments:
+- assessment_id: scientific-scope
+  area: evidence
+  topic: Grouped criticality and preserved resting-cell assay
+  outcome: supported
+  summary: EU-2024 grouped designation is supported by the original Annex II and separately
+    sourced palladium membership. Existing reduction evidence is unchanged and not
+    freshly recertified.
+  target_ids:
+  - cmmmech:palladium
+  evidence_ids:
+  - eu2024
+  - ecgroups
+  - us2025
+  - record
+  details: Parsed-YAML comparison confirmed identity, identifiers and complete mechanism
+    equal origin/main. COM(2017) group membership is not silently used as a 2024 designation.
+    Historical review 20261006T042218Z retains the nonspecific copper-inhibition and
+    different-species mutant-evidence caveats.
+  dimensions:
+  - name: material_form
+    value: Element Pd; retained experiment used soluble Pd(II), not ore.
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - eu2024
+    - ecgroups
+    - us2025
+    - record
+  - name: criticality
+    value: EU; Regulation 2024/1252 Annex II(aa); 2024 original act; palladium membership
+      in COM(2017)490 footnote 13.
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - eu2024
+    - ecgroups
+    - us2025
+    - record
+  - name: biomass_state
+    value: Retained washed nongrowing Desulfovibrio desulfuricans ATCC 29577 cells.
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - eu2024
+    - ecgroups
+    - us2025
+    - record
+  - name: deployment_scope
+    value: Laboratory solution depletion and cell-associated Pd(0); no purified-product
+      yield or industrial operation.
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - eu2024
+    - ecgroups
+    - us2025
+    - record
+- assessment_id: provenance
+  area: provenance
+  topic: Maintained record and append-only history
+  outcome: supported
+  summary: Exact file hash captured by shared inspect before assessment; extra history
+    inputs captured before their assessment. New events describe actual scoped additions;
+    prior immutable sessions preserved.
+  target_ids:
+  - cmmmech:palladium
+  evidence_ids:
+  - record
+findings: []
+actions: []
+limitations:
+- The 1998/2008 microbial papers, ChEBI and taxon identifiers were retained by exact
+  field comparison and prior review; primary assays were not newly reanalyzed. Salt
+  speciation, exact enzyme necessity and scale-up remain outside this update.
+- Bounded correction searches are not an exhaustive retraction audit. Validation checks
+  the contract, not scientific truth. Root coordinator owns final just check and nonempty-corpus
+  PR gates.
+notes:
+- No record corrections were required or performed in this independent pass. Empty
+  findings is scoped to this target and the declared review, not a fleet-wide pass.
+- Reviewed Git revision includes the origin/main governance merge; source state is
+  working_tree as reported by inspect. Historical Markdown reviews remain unmodified.

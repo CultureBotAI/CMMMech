@@ -1,0 +1,184 @@
+schema_version: 1.0.0
+review_id: 20261010T011911Z-cobaltite-pr-science
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cobaltite source-led PR adversarial review
+started_at: '2026-10-10T01:15:21.826535Z'
+finished_at: '2026-10-10T01:19:11Z'
+reviewer:
+  identity: Codex /root/publish_other_records_20261009
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Fresh review agent distinct from the record curators and prior
+    reviewers; no record or curation-history edits performed.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass
+scientific_review: true
+summary: Cobaltite identity and status agree with the September 2026 IMA authority.
+  No mechanism or inherited criticality claim is added.
+source:
+  git_revision: c0adc2c0763e1515ed07dc712b024974d98fb342
+  state: working_tree
+  inputs:
+  - path: data/records/cobaltite.yaml
+    sha256: f19fa6105e65527f70525b08c5064a53d85e72cd8dd3823835d635babdb562d5
+    role: target
+  - path: docs/records.md
+    sha256: 212cdbb723eb1ad9eb76ea1b7dad066914659b1f85eb2cdb51ee67466cfcc8ee
+    role: context
+  - path: history/records/cobaltite/2026-10-09T044512Z-codex-b1a396.yaml
+    sha256: 6a4d8d616d0df02295a41813063326197fe98505370621b94fa11257ee63143a
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+scope:
+  description: New mineral identity only, dated IMA status and year/approval interpretation,
+    separation from element/commodity/experimental mixture, and provenance.
+  selection: This named record is one of seven assigned PR targets; one record per
+    review bundle.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:cobaltite
+targets:
+- target_id: cmmmech:cobaltite
+  path: data/records/cobaltite.yaml
+  label: Cobaltite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cobaltite.yaml
+    role: maintained scientific record
+checks:
+- check_id: record-validation
+  name: Affected seven-record strict validation
+  status: passed
+  required: true
+  summary: Seven records checked; zero failures.
+  target_ids:
+  - cmmmech:cobaltite
+  command: .venv/bin/cmmmech validate data/records/cobalt.yaml data/records/neodymium.yaml
+    data/records/palladium.yaml data/records/manganese.yaml data/records/cobaltite.yaml
+    data/records/monazite-nd.yaml data/records/fluorescent-lamp-phosphor.yaml
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: history-validation
+  name: History linkage and append-only base check
+  status: passed
+  required: true
+  summary: 19 history sessions checked; zero errors. Base was origin/main at the available
+    admitted main revision.
+  target_ids:
+  - cmmmech:cobaltite
+  command: .venv/bin/cmmmech validate-history --base origin/main
+  exit_code: 0
+  expected_exit_code: 0
+evidence:
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: PDF page 1 field definitions and page 48, Cobaltite row
+  accessed_at: '2026-10-10T01:18:41Z'
+  support: supports
+  summary: Live official PDF parsed row gives Cobaltite, CoAsS, grandfathered G; 1832
+    original-description year; field definitions distinguish grandfathered original-description
+    years from IMA approval numbers.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: record
+  kind: record_content
+  reference: data/records/cobaltite.yaml
+  locator: Entire current file, working diff against origin/main, inline history and
+    linked sidecars
+  accessed_at: '2026-10-10T01:18:41Z'
+  support: supports
+  summary: Read exact maintained YAML and provenance. History targets/actors/timestamps
+    agree with inline events; committed prior history is preserved.
+  snapshot_sha256: f19fa6105e65527f70525b08c5064a53d85e72cd8dd3823835d635babdb562d5
+- evidence_id: search
+  kind: search
+  reference: Web search and local scoped review
+  locator: First returned result set, no pagination
+  accessed_at: '2026-10-10T01:18:41Z'
+  support: context_only
+  summary: No directly affecting correction notice identified in this bounded search;
+    this is not an exhaustive claim. Retained known within-study contrary evidence
+    remains explicit.
+  search_scope: site.cnmnc.units.it "Cobaltite" correction discredited. Local file
+    discovery included hidden/ignored files with rg --no-ignore --hidden; no machine-wide
+    absence claim. Source bodies and relevant supplements were separately inspected
+    as listed.
+assessments:
+- assessment_id: scientific-scope
+  area: evidence
+  topic: Dated mineral species identity
+  outcome: supported
+  summary: Cobaltite identity and status agree with the September 2026 IMA authority.
+    No mechanism or inherited criticality claim is added.
+  target_ids:
+  - cmmmech:cobaltite
+  evidence_ids:
+  - ima
+  - record
+  details: The record asserts the named authority edition only. Cobaltite remains
+    conceptually separate from its constituent element and a mixed secondary resource.
+    No guessed external namespace, mineral-specific microbial result, or criticality
+    inheritance appears.
+  dimensions:
+  - name: material_form
+    value: Mineral species Cobaltite, CoAsS.
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - ima
+    - record
+  - name: authority_edition
+    value: IMA-CNMNC master list, September 2026.
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - ima
+    - record
+  - name: status
+    value: grandfathered G; 1832 original-description year
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - ima
+    - record
+  - name: criticality
+    value: Unassigned; absence is unrecorded criticality, not not-critical.
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - ima
+    - record
+  - name: mechanism_scope
+    value: None assigned; identity record only.
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - ima
+    - record
+- assessment_id: provenance
+  area: provenance
+  topic: Maintained record and append-only history
+  outcome: supported
+  summary: Exact file hash captured by shared inspect before assessment; extra history
+    inputs captured before their assessment. New events describe actual scoped additions;
+    prior immutable sessions preserved.
+  target_ids:
+  - cmmmech:cobaltite
+  evidence_ids:
+  - record
+findings: []
+actions: []
+limitations:
+- Original mineral description and structure publications were not independently reanalyzed;
+  the maintained claim is explicitly the dated authority identity. No mineral-specific
+  microbial assay is curated.
+- Bounded correction searches are not an exhaustive retraction audit. Validation checks
+  the contract, not scientific truth. Root coordinator owns final just check and nonempty-corpus
+  PR gates.
+notes:
+- No record corrections were required or performed in this independent pass. Empty
+  findings is scoped to this target and the declared review, not a fleet-wide pass.
+- Reviewed Git revision includes the origin/main governance merge; source state is
+  working_tree as reported by inspect. Historical Markdown reviews remain unmodified.

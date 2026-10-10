@@ -1,0 +1,106 @@
+id: cmmmech:manganese
+name: Manganese
+material_kind: element
+description: >-
+  The element Mn, distinct from its dissolved oxidation states, ligand complexes,
+  oxide minerals, and Mn-bearing commodities. The US designation below maps to
+  the explicitly named manganese commodity in the 2025 list; it does not assign
+  criticality to every Mn-bearing compound or resource.
+identifiers:
+  - id: CHEBI:18291
+    label: manganese atom
+sources:
+  - id: wright2018
+    title: >-
+      Wright et al. (2018). Oxidative Formation and Removal of Complexed Mn(III)
+      by Pseudomonas Species. Frontiers in Microbiology 9:560.
+    url: https://doi.org/10.3389/fmicb.2018.00560
+    accessed_on: '2026-10-09'
+  - id: chebi_manganese
+    title: 'ChEBI CHEBI:18291 - manganese atom'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:18291
+    accessed_on: '2026-10-09'
+  - id: ncbi_gb1
+    title: 'NCBI Taxonomy 76869 - Pseudomonas putida GB-1'
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=76869
+    accessed_on: '2026-10-09'
+  - id: usgs2025
+    title: >-
+      USGS (2025). Final 2025 List of Critical Minerals. Federal Register
+      90:50494-50497, document 2025-19813.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-09'
+  - id: eu2024
+    title: >-
+      Regulation (EU) 2024/1252 of 11 April 2024. Original Official Journal text,
+      3 May 2024; Annex II, Section 1(u), manganese, page 57 of 67.
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401252
+    accessed_on: '2026-10-09'
+criticality:
+  - jurisdiction: United States of America
+    list_name: USGS Final List of Critical Minerals
+    edition: '2025; Federal Register 90:50494-50497'
+    classification: critical
+    source_ref: usgs2025
+  - jurisdiction: European Union
+    list_name: Regulation (EU) 2024/1252, Annex II, Section 1(u), manganese
+    edition: '2024 original act; OJ L 2024/1252, 3 May 2024'
+    classification: critical
+    source_ref: eu2024
+mechanisms:
+  - id: gb1_manganese_oxidation
+    name: Mn(II) and complexed Mn(III) oxidation by Pseudomonas putida GB-1
+    process: redox_transformation
+    microbial: true
+    organisms:
+      - id: NCBITaxon:76869
+        label: Pseudomonas putida GB-1
+    description: >-
+      Growing GB-1 cultures converted defined soluble Mn substrates to
+      filter-retained oxidized Mn. Mn(III)-citrate and Mn(III)-desferrioxamine B
+      (DFOB) supported oxide accumulation, with lower and slower accumulation
+      from the strongly complexed DFOB substrate.
+    context: >-
+      Laboratory triplicates used 5 mL Minimal Media A with HEPES at pH 7.8,
+      30 degrees C, darkness, and 100 micromolar Mn supplied as MnCl2,
+      Mn(III)-citrate, or Mn(III)-DFOB. Sterile medium and a GB-1 triple Mn-oxidase
+      knockout were negative controls. Table 4 reports final GB-1 particulate
+      oxide concentrations of 79.8 +/- 2.0 micromolar after 96 h from Mn(II), and
+      54.3 +/- 2.9 micromolar after 168 h from Mn(III)-DFOB. The table does not
+      define the reported error statistic. These are LBB oxidizing
+      equivalents calculated assuming particulate MnO2, not identification of a
+      crystalline mineral or recovery of a purified product. No industrial
+      extraction or recovery operation was tested.
+    evidence:
+      - source_ref: wright2018
+        supports: support
+        explanation: >-
+          Culture conditions, Mn(III)-L oxidation methods, Fig. 1 and Table 4
+          support these assays. Mutants retaining MnxG or McoA oxidized Mn(III)
+          complexes; this is genetic support, not purified-enzyme evidence.
+      - source_ref: wright2018
+        supports: partial
+        explanation: >-
+          Fig. 3 and Discussion show abiotic Mn(III)-DFOB formation, so its
+          accumulation alone is not proof of microbial oxidation. MopA activity
+          was limited in darkness; the discussion reports stronger activity in
+          light in separate KG_mopA cell-free-extract experiments. These findings limit universal enzyme
+          and environmental extrapolation.
+curation_history:
+  - timestamp: '2026-10-09T04:47:22Z'
+    curator: Codex (GPT-6; Codex)
+    action: record_creation
+    summary: >-
+      Curated the manganese element identity, USGS 2025 designation and scoped
+      GB-1 laboratory oxidation evidence. Retained oxide-assay and abiotic/light
+      limits; independent review remains a separate artifact.
+  - timestamp: '2026-10-09T05:51:49Z'
+    curator: Codex (GPT-6; Codex)
+    action: criticality_extension
+    summary: >-
+      Added the historical EU 2024 Annex II designation through its named
+      manganese entry, with source and mapping scope documented.
+      Preserved existing scientific evidence; independent review is separate.
+history_refs:
+  - history/records/manganese/2026-10-09T044722Z-codex-94b8cc.yaml
+  - history/records/manganese/2026-10-09T055149Z-codex-dc3517.yaml

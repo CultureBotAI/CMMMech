@@ -63,6 +63,10 @@ accession and confirm title, authors/owner, version and material/organism scope.
 For a downloadable dataset, inspect its data dictionary and a relevant sample;
 report observed size separately from any advertised total. Identify stable keys,
 units, missingness, joins, download/API availability and update/version policy.
+Compare actual columns and value conventions with the dictionary: negative
+numbers may encode detection limits, and a proposed composite key may not be
+unique. Keep portal posting dates separate from cited publication dates and
+artifact revisions; a newer landing page does not establish a new data edition.
 
 Record acquisition failures explicitly. A snippet, abstract or metadata record
 can establish a lead but cannot verify unavailable methods or measurements.

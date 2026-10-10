@@ -1,0 +1,306 @@
+# Spent fluorescent-lamp phosphor powder source-led PR adversarial review
+
+- Review: 20261010T011906Z-fluorescent-lamp-phosphor-pr-science
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-10T01:15:27.364027Z
+- Finished UTC: 2026-10-10T01:19:06Z
+- Reviewer: Codex /root/publish_other_records_20261009 (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Retorted phosphor assay claims match the primary methods and results. Total-REE efficiencies and corrected significance are retained without assigning them to Nd or industrial recovery.
+
+## Scope And Provenance
+
+New mixed secondary-resource record: feed identity, clarified Gluconobacter biolixiviant assay, total-REE measurement and controls, mechanistic limits and provenance.
+
+Selection: This named record is one of seven assigned PR targets; one record per review bundle.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base c0adc2c0763e1515ed07dc712b024974d98fb342.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:fluorescent-lamp-phosphor | data/records/fluorescent-lamp-phosphor.yaml | maintained | Spent fluorescent-lamp phosphor powder |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Affected seven-record strict validation | passed | True | cmmmech:fluorescent-lamp-phosphor | Seven records checked; zero failures. |
+| History linkage and append-only base check | passed | True | cmmmech:fluorescent-lamp-phosphor | 19 history sessions checked; zero errors. Base was origin/main at the available admitted main revision. |
+
+## Scientific And Domain Assessments
+
+### Waste-feed and measurement scope versus biochemical inference
+
+evidence: supported. Targets: cmmmech:fluorescent-lamp-phosphor.
+
+Retorted phosphor assay claims match the primary methods and results. Total-REE efficiencies and corrected significance are retained without assigning them to Nd or industrial recovery.
+
+Living B58 derivatives produce lixiviant; the treatment uses clarified supernatant, with no claim of sterile prefiltration or required cell-mineral contact. The feed is retorted INL-supplied phosphor, not whole untreated lamps. Five biological replicates per disruption/control and 15 pWT comparisons agree with methods. Prior published feed REE content supplies the denominator, not a new batch digest.
+
+### Maintained record and append-only history
+
+provenance: supported. Targets: cmmmech:fluorescent-lamp-phosphor.
+
+Exact file hash captured by shared inspect before assessment; extra history inputs captured before their assessment. New events describe actual scoped additions; prior immutable sessions preserved.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| tax442 | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=442&amp;retmode=xml; Taxon 442, ScientificName and Rank | supports | Retained issuing-authority XML resolves Gluconobacter oxydans at species rank. Live web renderer was unavailable. This does not independently identify B58 or engineered derivatives. |
+| schmitz | https://doi.org/10.1038/s41467-021-27047-4; Results Disrupting the phosphate transport system increases bioleaching; Figure 4; Methods Direct measurement of biolixiviant pH and Direct measurement of REE bioleaching | supports | Read retained full text: centrifugation precedes leaching; 20 mg powder/500 microlitres, 36 h, room temperature, postleach 0.45 micrometre filtration and ICP-MS. Rounded 5.5% versus 4.7% total-REE extraction is an approximately 18% relative change; pstC retains multiple-comparison significance. |
+| record | data/records/fluorescent-lamp-phosphor.yaml; Entire current file, working diff against origin/main, inline history and linked sidecars | supports | Read exact maintained YAML and provenance. History targets/actors/timestamps agree with inline events; committed prior history is preserved. |
+| search | Web search and local scoped review; First returned result set, no pagination | context_only | No directly affecting correction notice identified in this bounded search; this is not an exhaustive claim. Retained known within-study contrary evidence remains explicit. |
+
+## Limits And Additional Notes
+
+- Retort conditions and batch-specific feed digestion are not established. Proposed phosphate sensing or one-enzyme causal exclusivity is not demonstrated. Raw Fig. 4 assay data were not reconstructed.
+- Bounded correction searches are not an exhaustive retraction audit. Validation checks the contract, not scientific truth. Root coordinator owns final just check and nonempty-corpus PR gates.
+- No record corrections were required or performed in this independent pass. Empty findings is scoped to this target and the declared review, not a fleet-wide pass.
+- Reviewed Git revision includes the origin/main governance merge; source state is working_tree as reported by inspect. Historical Markdown reviews remain unmodified.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261010T011906Z-fluorescent-lamp-phosphor-pr-science
+kind: record
+repository: CultureBotAI/CMMMech
+title: Spent fluorescent-lamp phosphor powder source-led PR adversarial review
+started_at: '2026-10-10T01:15:27.364027Z'
+finished_at: '2026-10-10T01:19:06Z'
+reviewer:
+  identity: Codex /root/publish_other_records_20261009
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Fresh review agent distinct from the record curators and prior
+    reviewers; no record or curation-history edits performed.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Retorted phosphor assay claims match the primary methods and results. Total-REE
+  efficiencies and corrected significance are retained without assigning them to Nd
+  or industrial recovery.
+source:
+  git_revision: c0adc2c0763e1515ed07dc712b024974d98fb342
+  state: working_tree
+  inputs:
+  - path: data/records/fluorescent-lamp-phosphor.yaml
+    sha256: 87d0ce6d366fcfd00bf12291f246ce00d1bc17ac1224bcde300265f4a55cc72c
+    role: target
+  - path: docs/records.md
+    sha256: 212cdbb723eb1ad9eb76ea1b7dad066914659b1f85eb2cdb51ee67466cfcc8ee
+    role: context
+  - path: history/records/fluorescent-lamp-phosphor/2026-10-09T044754Z-codex-45750b.yaml
+    sha256: 1619c1d50054698ca8a3e789d09cf4cc9fd779f17c250ae84f5ab3a00e060f07
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+scope:
+  description: 'New mixed secondary-resource record: feed identity, clarified Gluconobacter
+    biolixiviant assay, total-REE measurement and controls, mechanistic limits and
+    provenance.'
+  selection: This named record is one of seven assigned PR targets; one record per
+    review bundle.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:fluorescent-lamp-phosphor
+targets:
+- target_id: cmmmech:fluorescent-lamp-phosphor
+  path: data/records/fluorescent-lamp-phosphor.yaml
+  label: Spent fluorescent-lamp phosphor powder
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/fluorescent-lamp-phosphor.yaml
+    role: maintained scientific record
+checks:
+- check_id: record-validation
+  name: Affected seven-record strict validation
+  status: passed
+  required: true
+  summary: Seven records checked; zero failures.
+  target_ids:
+  - cmmmech:fluorescent-lamp-phosphor
+  command: .venv/bin/cmmmech validate data/records/cobalt.yaml data/records/neodymium.yaml
+    data/records/palladium.yaml data/records/manganese.yaml data/records/cobaltite.yaml
+    data/records/monazite-nd.yaml data/records/fluorescent-lamp-phosphor.yaml
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: history-validation
+  name: History linkage and append-only base check
+  status: passed
+  required: true
+  summary: 19 history sessions checked; zero errors. Base was origin/main at the available
+    admitted main revision.
+  target_ids:
+  - cmmmech:fluorescent-lamp-phosphor
+  command: .venv/bin/cmmmech validate-history --base origin/main
+  exit_code: 0
+  expected_exit_code: 0
+evidence:
+- evidence_id: tax442
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=442&retmode=xml
+  locator: Taxon 442, ScientificName and Rank
+  accessed_at: '2026-10-10T01:18:41Z'
+  support: supports
+  summary: Retained issuing-authority XML resolves Gluconobacter oxydans at species
+    rank. Live web renderer was unavailable. This does not independently identify
+    B58 or engineered derivatives.
+  snapshot_sha256: 89f99310d5d7c407ef81f67b1446286364362a850c9e49e3e1d4518822fb9c5f
+- evidence_id: schmitz
+  kind: primary_source
+  reference: https://doi.org/10.1038/s41467-021-27047-4
+  locator: Results Disrupting the phosphate transport system increases bioleaching;
+    Figure 4; Methods Direct measurement of biolixiviant pH and Direct measurement
+    of REE bioleaching
+  accessed_at: '2026-10-10T01:18:41Z'
+  support: supports
+  summary: 'Read retained full text: centrifugation precedes leaching; 20 mg powder/500
+    microlitres, 36 h, room temperature, postleach 0.45 micrometre filtration and
+    ICP-MS. Rounded 5.5% versus 4.7% total-REE extraction is an approximately 18%
+    relative change; pstC retains multiple-comparison significance.'
+  snapshot_sha256: c3b84ee60688329cf32d07ce957479081550f00b902180a346a3cf70bd9dd6a5
+- evidence_id: record
+  kind: record_content
+  reference: data/records/fluorescent-lamp-phosphor.yaml
+  locator: Entire current file, working diff against origin/main, inline history and
+    linked sidecars
+  accessed_at: '2026-10-10T01:18:41Z'
+  support: supports
+  summary: Read exact maintained YAML and provenance. History targets/actors/timestamps
+    agree with inline events; committed prior history is preserved.
+  snapshot_sha256: 87d0ce6d366fcfd00bf12291f246ce00d1bc17ac1224bcde300265f4a55cc72c
+- evidence_id: search
+  kind: search
+  reference: Web search and local scoped review
+  locator: First returned result set, no pagination
+  accessed_at: '2026-10-10T01:18:41Z'
+  support: context_only
+  summary: No directly affecting correction notice identified in this bounded search;
+    this is not an exhaustive claim. Retained known within-study contrary evidence
+    remains explicit.
+  search_scope: '"10.1038/s41467-021-27047-4" correction retraction. Local file discovery
+    included hidden/ignored files with rg --no-ignore --hidden; no machine-wide absence
+    claim. Source bodies and relevant supplements were separately inspected as listed.'
+assessments:
+- assessment_id: scientific-scope
+  area: evidence
+  topic: Waste-feed and measurement scope versus biochemical inference
+  outcome: supported
+  summary: Retorted phosphor assay claims match the primary methods and results. Total-REE
+    efficiencies and corrected significance are retained without assigning them to
+    Nd or industrial recovery.
+  target_ids:
+  - cmmmech:fluorescent-lamp-phosphor
+  evidence_ids:
+  - tax442
+  - schmitz
+  - record
+  details: Living B58 derivatives produce lixiviant; the treatment uses clarified
+    supernatant, with no claim of sterile prefiltration or required cell-mineral contact.
+    The feed is retorted INL-supplied phosphor, not whole untreated lamps. Five biological
+    replicates per disruption/control and 15 pWT comparisons agree with methods. Prior
+    published feed REE content supplies the denominator, not a new batch digest.
+  dimensions:
+  - name: material_form
+    value: Retorted spent-lamp phosphor; mixed secondary resource, not a mineral or
+      element.
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - tax442
+    - schmitz
+    - record
+  - name: criticality
+    value: No designation inherited from constituent elements.
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - tax442
+    - schmitz
+    - record
+  - name: organism
+    value: Gluconobacter oxydans species 442; B58-derived cultures and pstC disruption
+      described by source.
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - tax442
+    - schmitz
+    - record
+  - name: biomass_state
+    value: Living cultures produce lixiviant; clarified liquid applied to powder.
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - tax442
+    - schmitz
+    - record
+  - name: conditions_controls
+    value: 20 mg/500 microlitres, 36 h, room temperature; pWT and no-bacteria glucose
+      controls, measured acidity.
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - tax442
+    - schmitz
+    - record
+  - name: outcome
+    value: Total REE in filtered leachate; 5.5% versus 4.7% rounded efficiencies,
+      18% relative improvement.
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - tax442
+    - schmitz
+    - record
+  - name: deployment_scope
+    value: Laboratory assay only; no product separation or industrial deployment.
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - tax442
+    - schmitz
+    - record
+- assessment_id: provenance
+  area: provenance
+  topic: Maintained record and append-only history
+  outcome: supported
+  summary: Exact file hash captured by shared inspect before assessment; extra history
+    inputs captured before their assessment. New events describe actual scoped additions;
+    prior immutable sessions preserved.
+  target_ids:
+  - cmmmech:fluorescent-lamp-phosphor
+  evidence_ids:
+  - record
+findings: []
+actions: []
+limitations:
+- Retort conditions and batch-specific feed digestion are not established. Proposed
+  phosphate sensing or one-enzyme causal exclusivity is not demonstrated. Raw Fig.
+  4 assay data were not reconstructed.
+- Bounded correction searches are not an exhaustive retraction audit. Validation checks
+  the contract, not scientific truth. Root coordinator owns final just check and nonempty-corpus
+  PR gates.
+notes:
+- No record corrections were required or performed in this independent pass. Empty
+  findings is scoped to this target and the declared review, not a fleet-wide pass.
+- Reviewed Git revision includes the origin/main governance merge; source state is
+  working_tree as reported by inspect. Historical Markdown reviews remain unmodified.
+```
