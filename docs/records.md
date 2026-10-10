@@ -55,12 +55,16 @@ be retained as a second `partial` evidence entry explaining the narrower claim.
 Do not manufacture a `refute` entry merely to populate every evidence type.
 
 Apply [.claude/skills/review-record/SKILL.md](../.claude/skills/review-record/SKILL.md)
-to each new or materially changed record. Save separate timestamped Markdown
-rounds under `reviews/records/<slug>/`; never overwrite earlier rounds. Each
-review identifies the record, UTC time, HEAD plus working changes and record
-SHA-256, scope, checked evidence, severity-ranked findings, corrections,
-unresolved questions and verdict. Later substantive edits require a new round.
-These reviews are local scientific artifacts, not CLAW canonical history.
+to each new or materially changed record. New rounds use the shared schema and
+saver in [record-reviews.md](record-reviews.md), with native scientific rules
+retained by [record-review-profile.md](record-review-profile.md). Save one
+timestamped YAML/Markdown bundle per record and reviewed state under
+`reviews/structured/`; old `reviews/records/` artifacts remain historical.
+Record actual times, reviewer independence, Git base plus reviewed byte hashes,
+scope, inspected evidence, normalized findings and proposed acceptance checks.
+Later substantive edits require a new observation, not changes to a prior report.
+These reviews are scientific observations, not canonical curation history or
+proof that a proposed correction was performed.
 
 ## Append-only curation history
 
