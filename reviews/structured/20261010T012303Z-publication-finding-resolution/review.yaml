@@ -1,0 +1,490 @@
+schema_version: 1.0.0
+review_id: 20261010T012303Z-publication-finding-resolution
+kind: repository
+repository: CultureBotAI/CMMMech
+title: Independent resolution of current-review coverage and squash provenance findings
+started_at: '2026-10-10T01:20:25Z'
+finished_at: '2026-10-10T01:23:03Z'
+reviewer:
+  identity: codex /root/publish_code_20261009
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Same independent reviewer who recorded F1/F2; did not author
+    README/profile corrections, scientific reviews or the published tag. Independently
+    fetched the tag from GitHub, tested a squash-shaped clone and checked exact record
+    hashes.
+skill: docs/record-reviews.md; .claude/skills/review-record/SKILL.md output contract
+  for bounded repository follow-up
+completion: completed
+verdict: pass_with_limitations
+scientific_review: false
+summary: F1 and F2 are resolved within this pre-merge review scope. All ten scientific
+  records have current structured reviews with matching bytes; README routes current
+  and historical reviews separately. The exact annotated GitHub provenance tag restores
+  the required commit in a squash-shaped clone with no topic branch, and all eleven
+  predecessor/scientific bundles validate there and in the working checkout. Actual
+  remote merge and branch-deletion verification remains an explicit subsequent publishing
+  step.
+source:
+  git_revision: c0adc2c0763e1515ed07dc712b024974d98fb342
+  state: working_tree
+  inputs:
+  - path: .github/workflows/validate-strict.yaml
+    sha256: 3a00e7becf969a181f71bbc1b12875929400a6cedfdf56f287cdbfcf1c3ff134
+    role: context
+  - path: README.md
+    sha256: 5fdbb8d997592be65853584b7ac56945fe7f98e8d33aa248f1c3d115139bb1e3
+    role: target
+  - path: data/records/cobalt.yaml
+    sha256: c37b06ec07bc1e4af7289dc770f3711658ea05a948e22c91b12f6b00130f7037
+    role: context
+  - path: data/records/cobaltite.yaml
+    sha256: f19fa6105e65527f70525b08c5064a53d85e72cd8dd3823835d635babdb562d5
+    role: context
+  - path: data/records/fluorescent-lamp-phosphor.yaml
+    sha256: 87d0ce6d366fcfd00bf12291f246ce00d1bc17ac1224bcde300265f4a55cc72c
+    role: context
+  - path: data/records/lithium.yaml
+    sha256: c02c148a68ae6921e6dfeb5eed4d459212fb6496642a1d9808f6ab7de53405d9
+    role: context
+  - path: data/records/manganese.yaml
+    sha256: e4f1d82ea63679f0f3062e4606254326e1830a2b88e4ae84630d819fdc535634
+    role: context
+  - path: data/records/monazite-nd.yaml
+    sha256: 8da4ae4a6c4b41d742e1b5f283a0d2750b18d79c5fa84e836402e07886b9e7dd
+    role: context
+  - path: data/records/neodymium.yaml
+    sha256: 3740247c0a93c9af1e068719aa552b43ead2c62b015f3ae98071972b84d88268
+    role: context
+  - path: data/records/palladium.yaml
+    sha256: 7f75405ad97e3a2c8cf45b995f58aba01a91771b3075fc7411d5049bf3389acb
+    role: context
+  - path: data/records/uranium.yaml
+    sha256: ab487f64f4ea571ddb2560a7cd2d51ce8131c8a24ef9570ed0eb21c62d51b60f
+    role: context
+  - path: data/records/vanadium.yaml
+    sha256: c923fc61cee7c487e376a6b42d023bd7241a635aa8a837c6cd21db1f8fa919ce
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 93f65e8f516a9b7756afd89e4823c1b64e493a46ecbcb3ca5e54a5aa599b10f2
+    role: target
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: docs/records.md
+    sha256: 212cdbb723eb1ad9eb76ea1b7dad066914659b1f85eb2cdb51ee67466cfcc8ee
+    role: target
+  - path: reviews/publication/20261010-pr14/provenance-retained.json
+    sha256: bfb53eca904a45bc72b218f1888aeb3404ecf6e681c46d737fa38e0d7447f270
+    role: context
+  - path: reviews/publication/20261010-pr14/review-coverage-and-portability.json
+    sha256: 26dcc55183796e48af0f7fde061d68cc3e163e1427c5ed561013920904299dd5
+    role: context
+  - path: reviews/structured/20261010T011841Z-cobalt-pr-science/review.md
+    sha256: 1458d476fa2085f610521ed2f1e51f1df892a7a6ef65990d9c88db40997986d3
+    role: context
+  - path: reviews/structured/20261010T011841Z-cobalt-pr-science/review.yaml
+    sha256: 023456ef831111aa6811f3f31820c7c736dce2a6b2ca9cee6fc8e4cf478a9ba6
+    role: context
+  - path: reviews/structured/20261010T011847Z-palladium-pr-science/review.md
+    sha256: 7dc33f73ba23ddd2a2223929a0cdd794140fdb0bb13ff2673d8d8fb5e6ff24a0
+    role: context
+  - path: reviews/structured/20261010T011847Z-palladium-pr-science/review.yaml
+    sha256: 162cf49e474b2bed27b1e261dd65e6ad00963cea320e4fe7a8ff796c0c457c1e
+    role: context
+  - path: reviews/structured/20261010T011848Z-publication-code-review/review.md
+    sha256: 250cf72295b5ba0b7c4243a3b8d0ee6e456392887df36132ef88a82347b1c370
+    role: context
+  - path: reviews/structured/20261010T011848Z-publication-code-review/review.yaml
+    sha256: 65ed8ea87fc896c1d161b0f84f48019eebba12f968fc4d60b0590ae6958282e4
+    role: context
+  - path: reviews/structured/20261010T011852Z-neodymium-pr-science/review.md
+    sha256: d818ce74a824711972511d5001e33e75ae12154d01c17e5e3a546dc9b6fbfaf1
+    role: context
+  - path: reviews/structured/20261010T011852Z-neodymium-pr-science/review.yaml
+    sha256: 050e3110dec13ca63bcf07bd9e98e47b02a621591e8bbfbffc2f2e409e8236bc
+    role: context
+  - path: reviews/structured/20261010T011858Z-manganese-pr-science/review.md
+    sha256: 2a944cd9d43a146fde03d873da12f894353d6116864e07a2aae90ac46efcca5e
+    role: context
+  - path: reviews/structured/20261010T011858Z-manganese-pr-science/review.yaml
+    sha256: 79d01a798d663cf06e83fdf54c0cc83ee840b01013aa8c8673835247705f818e
+    role: context
+  - path: reviews/structured/20261010T011906Z-fluorescent-lamp-phosphor-pr-science/review.md
+    sha256: a8cf68d91a532d0489568e7900d73869c5d893f2a6a1e86bbfb568ca8fb7e535
+    role: context
+  - path: reviews/structured/20261010T011906Z-fluorescent-lamp-phosphor-pr-science/review.yaml
+    sha256: 1f2c98c471039e0b7892a9f9586d7f2c7eb9bf9d8d98a530427cd55adc60ab46
+    role: context
+  - path: reviews/structured/20261010T011911Z-cobaltite-pr-science/review.md
+    sha256: c9b1262b8b969a2bdbcdb96eff50acd9e50e868f837f7a235076cd26535409b9
+    role: context
+  - path: reviews/structured/20261010T011911Z-cobaltite-pr-science/review.yaml
+    sha256: 1ee85b811da9d6f411227f482319a4bdeefb92ca0df3b8328d7f066b59fed217
+    role: context
+  - path: reviews/structured/20261010T011916Z-monazite-nd-pr-science/review.md
+    sha256: 5e516a75d5537be0c15705c6277aeb2c6933b11802b90db84b367b68b2f41f8c
+    role: context
+  - path: reviews/structured/20261010T011916Z-monazite-nd-pr-science/review.yaml
+    sha256: 724dce82edd1c98caae5cc0ffa5ae31d65262744dbe3b1e67e6682276db05fa3
+    role: context
+  - path: reviews/structured/20261010T011959Z-lithium-pr-adversarial/review.md
+    sha256: 56c5b09c48f36fc971211b01e325f2250f8d9f177aa89700b79492bfe8a45527
+    role: context
+  - path: reviews/structured/20261010T011959Z-lithium-pr-adversarial/review.yaml
+    sha256: 30848b10296dad6bb87e635ff2633fe3204507585d0ff85fca34298fb1a25e35
+    role: context
+  - path: reviews/structured/20261010T011959Z-uranium-pr-adversarial/review.md
+    sha256: 59416b4a5497f4f5224ac7c831481cd1c114a94e36a16c8f98f7e89d3b2e2f83
+    role: context
+  - path: reviews/structured/20261010T011959Z-uranium-pr-adversarial/review.yaml
+    sha256: d8e50288ef6aff0491463957c12630831336494543986443037af80f8d564ecc
+    role: context
+  - path: reviews/structured/20261010T011959Z-vanadium-pr-adversarial/review.md
+    sha256: 71dc30ff1910db072570c805b2136c53c37a189c36ab984f72620bd4df48d9c4
+    role: context
+  - path: reviews/structured/20261010T011959Z-vanadium-pr-adversarial/review.yaml
+    sha256: 3d702dfcc378ca3c038dffeb575cd6b93b81acccd8aa3bc9e1351c55f3a5a8a7
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+scope:
+  description: Follow-up on the two publication findings from 20261010T011848Z-publication-code-review.
+    Three maintained documentation targets plus hashed scientific review bundles,
+    record bytes, canonical helper, CI checkout and portability receipt were inspected.
+  selection: All affected targets of F1 and F2 retained with their original target
+    IDs; add the native review profile that owns the retention/fetch procedure.
+  coverage: full
+  population_size: 3
+  reviewed_target_ids:
+  - readme
+  - record-contract
+  - review-profile
+  exclusions:
+  - target: Primary scientific sources and record claim validity
+    reason: This follow-up verifies review coverage/provenance, not another independent
+      literature reassessment.
+  - target: Actual future merge result and remote branch deletion
+    reason: Those operations have not happened in this review interval; publishing
+      owner must repeat in fresh remote main checkout afterward.
+targets:
+- target_id: readme
+  path: README.md
+  label: readme
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: README.md
+    role: Maintained publication guidance and review routing
+- target_id: record-contract
+  path: docs/records.md
+  label: record contract
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: docs/records.md
+    role: Maintained publication guidance and review routing
+- target_id: review-profile
+  path: docs/record-review-profile.md
+  label: review profile
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: docs/record-review-profile.md
+    role: Maintained publication guidance and review routing
+checks:
+- check_id: working-review-check
+  name: Current bundle validation against trusted main base
+  status: passed
+  required: true
+  summary: Eleven valid structured bundles; declared-scopes-only coverage reported
+    honestly.
+  target_ids:
+  - readme
+  - record-contract
+  - review-profile
+  command: .venv/bin/python scripts/record_review.py check --require-reviews --base
+    origin/main
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - coverage
+- check_id: squash-clone-check
+  name: Isolated squash-shaped clone validates saved reviews
+  status: passed
+  required: true
+  summary: Eleven valid reviews after explicit GitHub tag fetch, with no topic branch
+    reference.
+  target_ids:
+  - readme
+  - record-contract
+  - review-profile
+  command: 'In /private/tmp/cmm-review-main-only-ohniqgia/clone: /private/tmp/CMMMech-source-survey-20261008/.venv/bin/python
+    scripts/record_review.py check --require-reviews --base HEAD'
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - portability
+  - coverage
+- check_id: exact-coverage
+  name: Every material record has a current reviewed hash
+  status: passed
+  required: true
+  summary: 'Ten record files, ten distinct kind: record target paths, every SHA-256
+    matches current bytes; all eleven bundles use c0adc2c as their sole Git base.'
+  target_ids:
+  - readme
+  - record-contract
+  command: Python glob/yaml/hashlib inventory of data/records/*.yaml and reviews/structured/*/review.yaml;
+    assert exact target set, count 10, and each reviewed record SHA-256 matches
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - coverage
+- check_id: retention-tag
+  name: Exact annotated provenance tag fetched from GitHub
+  status: passed
+  required: true
+  summary: Tag object fc4040c3abcd28f0a9cc52467e308100144ad1fd peels to c0adc2c0763e1515ed07dc712b024974d98fb342;
+    canonical source_provenance now accepts working-tree attestation.
+  target_ids:
+  - review-profile
+  - record-contract
+  command: git fetch --no-tags https://github.com/CultureBotAI/CMMMech.git refs/tags/review-base/cmm-source-survey-20261009:refs/tags/review-base/cmm-source-survey-20261009;
+    inspect tag type, peeled target, and canonical source_provenance
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - portability
+- check_id: immutable-history
+  name: Historical review preservation
+  status: passed
+  required: true
+  summary: All 34 committed files under reviews/records and reviews/process remain
+    byte-identical to c0adc2c. The initial structured finding bundle remains unchanged
+    and is linked by exact predecessor identity.
+  target_ids:
+  - readme
+  - record-contract
+  command: Python byte comparison of git ls-tree c0adc2c reviews/records reviews/process
+    against git show c0adc2c:<path> for each of 34 paths
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - preservation
+- check_id: diff-check
+  name: Documentation diff whitespace
+  status: passed
+  required: true
+  summary: No whitespace errors; README/profile edits are narrowly scoped to coverage
+    navigation and retained review-base workflow.
+  target_ids:
+  - readme
+  - review-profile
+  command: git diff --check
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - docs
+- check_id: actual-post-merge
+  name: Fresh actual remote-main check after merge and branch deletion
+  status: not_applicable
+  required: false
+  summary: Pending publishing step after this pre-merge review; no actual merge/branch
+    deletion is claimed.
+  target_ids:
+  - readme
+  - record-contract
+  - review-profile
+evidence:
+- evidence_id: prior
+  kind: prior_review
+  reference: reviews/structured/20261010T011848Z-publication-code-review/review.yaml
+  locator: F1 and F2
+  accessed_at: '2026-10-10T01:23:03Z'
+  support: supports
+  summary: Initial independent review recorded minor publication-structured-review-coverage
+    and major squash-review-base-retention, with confirmed reproductions; this successor
+    explicitly disposes of both.
+- evidence_id: docs
+  kind: record_content
+  reference: README.md; docs/record-review-profile.md; docs/records.md
+  locator: Current structured review links; Publishing through the squash queue; Curation
+    and review
+  accessed_at: '2026-10-10T01:23:03Z'
+  support: supports
+  summary: README distinguishes current structured from historical Markdown. Native
+    profile requires enumerating every base, unique annotated provenance tags, remote
+    peeled-target verification, explicit fetch --tags, pre-merge synthetic squash
+    checks and a fresh post-deletion main check; it forbids moving tags or weakening
+    the governed checker.
+- evidence_id: coverage
+  kind: validation
+  reference: reviews/publication/20261010-pr14/review-coverage-and-portability.json
+  locator: record_count, reviewed_record_count, review_paths, review_bases, record_hashes_match
+    and both checker outputs
+  accessed_at: '2026-10-10T01:23:03Z'
+  support: supports
+  summary: 'All ten record byte hashes match fresh kind: record review targets. Eleven
+    total bundles validate in the worktree and isolated synthetic squash clone. Initial
+    isolated checker setup used a local filesystem origin and was rejected; replacing
+    that origin with the actual GitHub URL allowed the legitimate check. No helper
+    or record changes were needed.'
+- evidence_id: portability
+  kind: validation
+  reference: reviews/publication/20261010-pr14/provenance-retained.json
+  locator: 'fix_probe: exact fetch source, tag object/type, peeled_commit, branch_refs,
+    source_provenance'
+  accessed_at: '2026-10-10T01:23:03Z'
+  support: supports
+  summary: Independent fetch from actual GitHub restored c0adc2c through annotated
+    tag review-base/cmm-source-survey-20261009. The clone has only main branch refs.
+    Before fetch, identical scientific tree in a synthetic squash commit yielded unverified;
+    after fetch canonical provenance is working_tree_attestation. Retention preserves
+    the required base, not a claim that dirty bytes were committed at it.
+- evidence_id: ci
+  kind: record_content
+  reference: .github/workflows/validate-strict.yaml
+  locator: actions/checkout configuration lines 18-21
+  accessed_at: '2026-10-10T01:23:03Z'
+  support: supports
+  summary: 'Native review CI checks out with fetch-depth: 0. Profile additionally
+    requires explicit tag fetching for shallow or single-branch consumers, so those
+    consumers do not depend on automatic unrelated-tag fetching.'
+- evidence_id: preservation
+  kind: validation
+  reference: /private/tmp/cmm-publish-code-review/preservation.json; original structured
+    review bundle
+  locator: 34 committed historical Markdown review paths compared with c0adc2c
+  accessed_at: '2026-10-10T01:23:03Z'
+  support: supports
+  summary: All historical review/process files are unchanged from the committed base.
+    Original structured findings are retained as an immutable prior observation, rather
+    than overwritten with a passing verdict.
+assessments:
+- assessment_id: readme-routing
+  area: provenance
+  topic: Current and historical review navigation
+  outcome: supported
+  summary: The README now links the actual structured-review directory and contract,
+    preserves historical review links, and directs squash publication to the supported
+    native procedure.
+  target_ids:
+  - readme
+  evidence_ids:
+  - docs
+  - coverage
+- assessment_id: record-contract
+  area: provenance
+  topic: Fulfillment of this publication round review contract
+  outcome: supported
+  summary: All ten material records have exact current-byte structured reviews. The
+    nonempty gate is supplemented by explicit target/hash coverage; no past report
+    was retro-converted.
+  target_ids:
+  - record-contract
+  evidence_ids:
+  - prior
+  - coverage
+  - preservation
+- assessment_id: profile-portability
+  area: provenance
+  topic: Durable provenance under squash and branch cleanup
+  outcome: supported
+  summary: 'The scoped mitigation is independently verified: one distinct required
+    base, retained exact annotated tag on GitHub, explicit fetch, no topic branch
+    in the isolated clone, and successful canonical validation. Actual post-merge
+    validation remains a documented operational follow-up.'
+  target_ids:
+  - review-profile
+  - record-contract
+  - readme
+  evidence_ids:
+  - docs
+  - portability
+  - coverage
+  - ci
+findings:
+- finding_id: F1
+  issue_key: publication-structured-review-coverage
+  category: provenance
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Current structured publication reviews completed
+  description: Ten distinct record review bundles match all ten current material files,
+    canonical checks pass, and README routes current versus historical reviews explicitly.
+  target_ids:
+  - readme
+  - record-contract
+  evidence_ids:
+  - coverage
+  - docs
+  - preservation
+  ownership_note: Publisher owns reviewed local documentation, saved bundles and immutable
+    provenance references; governed helper remains unchanged.
+  disposition_reason: Ten distinct record review bundles match all ten current material
+    files, canonical checks pass, and README routes current versus historical reviews
+    explicitly.
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261010T011848Z-publication-code-review
+    finding_id: F1
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/15
+- finding_id: F2
+  issue_key: squash-review-base-retention
+  category: provenance
+  severity: major
+  status: resolved
+  certainty: confirmed
+  title: Reviewed Git base retained across prospective squash
+  description: Exact annotated GitHub tag preserves the sole required base. The no-topic-branch
+    synthetic squash clone can fetch it and validate all saved reviews; native guidance
+    makes retention/fetch and actual post-merge recheck explicit. The pre-merge portability
+    defect is fixed, while actual post-merge operational confirmation remains pending.
+  target_ids:
+  - readme
+  - record-contract
+  evidence_ids:
+  - portability
+  - coverage
+  - docs
+  - ci
+  ownership_note: Publisher owns reviewed local documentation, saved bundles and immutable
+    provenance references; governed helper remains unchanged.
+  disposition_reason: Exact annotated GitHub tag preserves the sole required base.
+    The no-topic-branch synthetic squash clone can fetch it and validate all saved
+    reviews; native guidance makes retention/fetch and actual post-merge recheck explicit.
+    The pre-merge portability defect is fixed, while actual post-merge operational
+    confirmation remains pending.
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261010T011848Z-publication-code-review
+    finding_id: F2
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/17
+actions: []
+limitations:
+- This is a pre-merge verification of the mitigation. Actual remote squash, deletion
+  and fresh-main validation have not occurred in this review interval and remain the
+  publisher’s next required operational check.
+- Working-tree attestations preserve reviewer input hashes; the provenance tag only
+  keeps the declared base commit available. It does not certify those hashes as blobs
+  committed at that base.
+- Scientific reviews are verified for target/hash coverage and canonical validity;
+  their primary literature conclusions are not independently repeated in this follow-up.
+- Full batch tests and history validation are owned by the publisher. No implementation
+  bytes changed after this reviewer’s earlier 104-test pass, so only affected documentation/provenance
+  checks were repeated.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261010T011848Z-publication-code-review
+  relationship: Explicit successor resolving both F1 and F2 while retaining their
+    targets and stable issue keys.
+tags:
+- publication
+- finding-resolution
+- provenance

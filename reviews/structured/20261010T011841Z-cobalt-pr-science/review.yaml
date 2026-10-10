@@ -1,0 +1,215 @@
+schema_version: 1.0.0
+review_id: 20261010T011841Z-cobalt-pr-science
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cobalt source-led PR adversarial review
+started_at: '2026-10-10T01:15:12.657705Z'
+finished_at: '2026-10-10T01:18:41Z'
+reviewer:
+  identity: Codex /root/publish_other_records_20261009
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Fresh review agent distinct from the record curators and prior
+    reviewers; no record or curation-history edits performed.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: US-2025 cobalt designation is supported and properly scoped. Existing consortium
+  mechanism is unchanged from origin/main and remains covered by the historical independent
+  review; it was not freshly researched here.
+source:
+  git_revision: c0adc2c0763e1515ed07dc712b024974d98fb342
+  state: working_tree
+  inputs:
+  - path: data/records/cobalt.yaml
+    sha256: c37b06ec07bc1e4af7289dc770f3711658ea05a948e22c91b12f6b00130f7037
+    role: target
+  - path: docs/records.md
+    sha256: 212cdbb723eb1ad9eb76ea1b7dad066914659b1f85eb2cdb51ee67466cfcc8ee
+    role: context
+  - path: history/records/cobalt/2026-10-08T023557Z-codex-7b6548.yaml
+    sha256: a7ce591674d5581325c7af3e7d7a1e6b80af29ca837c52b704c4c92e012a4345
+    role: context
+  - path: history/records/cobalt/2026-10-09T044525Z-codex-e4bfe4.yaml
+    sha256: 7310a6b83b3617e6737c7a81f8612b37a0e47d346c2e941be03654d99e07f4e1
+    role: context
+  - path: reviews/records/cobalt/20261006T042218Z.md
+    sha256: 8ce65f091ce0c14945e49119bf16f25e18e4fe97d9a45c6b22c3b88f8ee57321
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+scope:
+  description: New US-2025 criticality and commodity-to-element mapping, preservation
+    of existing identity/mechanism/EU entry, and provenance.
+  selection: This named record is one of seven assigned PR targets; one record per
+    review bundle.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:cobalt
+targets:
+- target_id: cmmmech:cobalt
+  path: data/records/cobalt.yaml
+  label: Cobalt
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cobalt.yaml
+    role: maintained scientific record
+checks:
+- check_id: record-validation
+  name: Affected seven-record strict validation
+  status: passed
+  required: true
+  summary: Seven records checked; zero failures.
+  target_ids:
+  - cmmmech:cobalt
+  command: .venv/bin/cmmmech validate data/records/cobalt.yaml data/records/neodymium.yaml
+    data/records/palladium.yaml data/records/manganese.yaml data/records/cobaltite.yaml
+    data/records/monazite-nd.yaml data/records/fluorescent-lamp-phosphor.yaml
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: history-validation
+  name: History linkage and append-only base check
+  status: passed
+  required: true
+  summary: 19 history sessions checked; zero errors. Base was origin/main at the available
+    admitted main revision.
+  target_ids:
+  - cmmmech:cobalt
+  command: .venv/bin/cmmmech validate-history --base origin/main
+  exit_code: 0
+  expected_exit_code: 0
+evidence:
+- evidence_id: us2025
+  kind: authority
+  reference: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  locator: Final table, printed pp. 50496–50497; notice publication 7 November 2025
+  accessed_at: '2026-10-10T01:18:41Z'
+  support: supports
+  summary: Read official title, edition and named commodity rows. Cobalt, neodymium,
+    manganese and palladium are explicitly listed. A commodity listing does not name
+    every bearing compound or waste.
+- evidence_id: eu2024
+  kind: authority
+  reference: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401252
+  locator: Original OJ PDF pp. 57–58, Annex II Section 1(h),(r),(u),(aa)
+  accessed_at: '2026-10-10T01:18:41Z'
+  support: supports
+  summary: Retained official PDF and extracted Annex II checked. Critical entries
+    include cobalt, light rare earth elements, manganese and platinum group metals.
+    Original 2024 act is the asserted edition, not an undated latest-law claim. Fresh
+    web route redirected to OJ landing; retained original PDF was used.
+  snapshot_sha256: eb89f374a725ebde267c90f237898cd1d0bdfa65a1d4a118511e225bde60283e
+- evidence_id: record
+  kind: record_content
+  reference: data/records/cobalt.yaml
+  locator: Entire current file, working diff against origin/main, inline history and
+    linked sidecars
+  accessed_at: '2026-10-10T01:18:41Z'
+  support: supports
+  summary: Read exact maintained YAML and provenance. History targets/actors/timestamps
+    agree with inline events; committed prior history is preserved.
+  snapshot_sha256: c37b06ec07bc1e4af7289dc770f3711658ea05a948e22c91b12f6b00130f7037
+- evidence_id: prior
+  kind: prior_review
+  reference: reviews/records/cobalt/20261006T042218Z.md
+  locator: Scope, evidence and limitations
+  accessed_at: '2026-10-10T01:18:41Z'
+  support: context_only
+  summary: Read prior independent primary-evidence review. Retained scientific fields
+    were compared programmatically with origin/main; prior literature is not claimed
+    as newly inspected.
+  snapshot_sha256: 8ce65f091ce0c14945e49119bf16f25e18e4fe97d9a45c6b22c3b88f8ee57321
+- evidence_id: search
+  kind: search
+  reference: Web search and local scoped review
+  locator: First returned result set, no pagination
+  accessed_at: '2026-10-10T01:18:41Z'
+  support: context_only
+  summary: No directly affecting correction notice identified in this bounded search;
+    this is not an exhaustive claim. Retained known within-study contrary evidence
+    remains explicit.
+  search_scope: '"2025-19813" correction. Local file discovery included hidden/ignored
+    files with rg --no-ignore --hidden; no machine-wide absence claim. Source bodies
+    and relevant supplements were separately inspected as listed.'
+assessments:
+- assessment_id: scientific-scope
+  area: evidence
+  topic: Dated commodity designation and retained community mechanism
+  outcome: supported
+  summary: US-2025 cobalt designation is supported and properly scoped. Existing consortium
+    mechanism is unchanged from origin/main and remains covered by the historical
+    independent review; it was not freshly researched here.
+  target_ids:
+  - cmmmech:cobalt
+  evidence_ids:
+  - us2025
+  - eu2024
+  - record
+  details: Parsed-YAML comparison confirmed exact equality of identity, identifiers
+    and complete mechanisms against origin/main. The new authority source and US entry
+    do not turn cobalt-bearing black mass into the cobalt element. Read historical
+    review 20261006T042218Z for retained adaptation-dose, community-resolution and
+    control-chemistry limits.
+  dimensions:
+  - name: material_form
+    value: Element Co; pretreated battery black mass appears only as the retained
+      experimental substrate.
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - us2025
+    - eu2024
+    - record
+  - name: criticality
+    value: United States; USGS final list; 2025 Federal Register 90:50494–50497. Original
+      EU 2024 entry retained.
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - us2025
+    - eu2024
+    - record
+  - name: biomass_state
+    value: Retained living adapted acidophilic consortium; no individual species causal
+      assignment.
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - us2025
+    - eu2024
+    - record
+  - name: deployment_scope
+    value: Retained laboratory mobilization only; no isolated product or industrial
+      deployment.
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - us2025
+    - eu2024
+    - record
+- assessment_id: provenance
+  area: provenance
+  topic: Maintained record and append-only history
+  outcome: supported
+  summary: Exact file hash captured by shared inspect before assessment; extra history
+    inputs captured before their assessment. New events describe actual scoped additions;
+    prior immutable sessions preserved.
+  target_ids:
+  - cmmmech:cobalt
+  evidence_ids:
+  - record
+findings: []
+actions: []
+limitations:
+- Existing cobalt primary experiment and ChEBI identity were checked for preservation,
+  not newly reassessed. Post-adaptation community composition, adaptation dosing and
+  separation of acidity from other contributions remain unresolved.
+- Bounded correction searches are not an exhaustive retraction audit. Validation checks
+  the contract, not scientific truth. Root coordinator owns final just check and nonempty-corpus
+  PR gates.
+notes:
+- No record corrections were required or performed in this independent pass. Empty
+  findings is scoped to this target and the declared review, not a fleet-wide pass.
+- Reviewed Git revision includes the origin/main governance merge; source state is
+  working_tree as reported by inspect. Historical Markdown reviews remain unmodified.

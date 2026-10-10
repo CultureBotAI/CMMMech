@@ -1,0 +1,466 @@
+# Lithium independent scientific PR review
+
+- Review: 20261010T011959Z-lithium-pr-adversarial
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-10T01:15:00Z
+- Finished UTC: 2026-10-10T01:19:59Z
+- Reviewer: /root/publish_uv_li_20261009 (Codex) (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Fresh bounded scientific assessment of the exact current record; no blocker, major or minor correction identified. Existing uncertainty remains a required part of acceptance.
+
+## Scope And Provenance
+
+Complete maintained record with identifier, dated authority, mechanism, exact selected observations where present, evidence caveats and history checks; not exhaustive literature review.
+
+Selection: One explicitly assigned record; all its curated claims assessed.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base c0adc2c0763e1515ed07dc712b024974d98fb342.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:lithium | data/records/lithium.yaml | maintained | Lithium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Affected scientific record validation | passed | True | cmmmech:lithium | Actual reviewer command checked 3 records, 0 failed. |
+| History structure and append-only base check | passed | True | cmmmech:lithium | Actual reviewer command checked 19 history records, 0 errors. |
+| Primary evidence and identity examination | passed | True | cmmmech:lithium | Manual evidence checks and exact cell calculations described in the evidence and assessments completed. |
+
+## Scientific And Domain Assessments
+
+### Element, experiment and organism resolution
+
+identity: supported. Targets: cmmmech:lithium.
+
+Material and organism identifiers have the stated label and scope, with substrate and culture limitations explicit.
+
+### Dated criticality authority
+
+grounding: supported. Targets: cmmmech:lithium.
+
+Criticality is attached to a named jurisdiction and historical list edition, with commodity scope preserved.
+
+### Mechanism, controls and deployment
+
+evidence: supported. Targets: cmmmech:lithium.
+
+The record accurately limits the paper-reported qualitative comparison and withholds quantitative benchmarking in light of deposited inconsistencies.
+
+### Source values and preserved uncertainty
+
+quantity: supported. Targets: cmmmech:lithium.
+
+Deposited inconsistencies are represented as partial evidence without importing numbers as a benchmark.
+
+### Distinct immutable curation history
+
+provenance: supported. Targets: cmmmech:lithium.
+
+Canonical sessions remain separately linked to inline events; the reviewer made no record correction or history event.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/lithium.yaml; All fields, histories, mechanisms and observations | supports | Current maintained record inspected at source hashes; no scientific record or history was changed by this independent reviewer. |
+| element | https://www.ebi.ac.uk/chebi/CHEBI:30145; CHEBI:30145; name, formula and neutral-atom scope | supports | Identifier denotes lithium atom. This grounds the element, not its aqueous ions, mineral substrate, commodity stream or recovered phase. |
+| organism | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920; Current name and rank | supports | Species-level Acidithiobacillus ferrooxidans identifier 920 matches normalization of the reported name; it does not identify the actual unaccessioned culture. |
+| us-criticality | https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm; Final 2025 list table, 90 FR 50494-50497; named Lithium commodity row | supports | The full final table contains the named commodity. Record correctly retains US jurisdiction and 2025 edition without universal criticality for all compounds. |
+| eu-criticality | https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401252; Original act Annex II Section 1(s), page 57; contrasted with Annex I(h), page 55 | supports | Original 2024 Annex II explicitly lists lithium; separate battery-grade strategic scope is not imported. |
+| paper | https://doi.org/10.3389/fmicb.2024.1467408; Sections 2.1-2.3, 3.1-3.4; Table 1; Figure 1 and captions | partial | Primary full text and Figure 1 support a transient paper-reported comparison, control convergence, mixed feed and laboratory conditions. Loading and unequal acid additions remain attribution limits. |
+| figure | https://www.frontiersin.org/files/Articles/1467408/xml-images/fmicb-15-1467408-g001.webp; Figure 1A; black inoculated, red uninoculated and green acid-only series | supports | Visual check confirms a temporary difference and endpoint convergence; no numerical digitization or uncertainty reanalysis performed. |
+| dataset | https://doi.org/10.17632/djkf7tkm8d.1; Version 1, public Bioleaching and Characterisation folders; five XLSX and three PNG files | partial | All eight retained bytes independently rehashed against issuing content_details.sha256_hash values; all match. Dataset landing verifies version, date and license. |
+| jadarite-cells | https://doi.org/10.17632/djkf7tkm8d.1; Jadarite bioleaching results from ICP-OES.xlsx; Jadarite!A3,C5:F5,C7:F7,F13:G13 | partial | mg/kg header differs from paper solution units; means recompute as 24.771415827672655 and 70.93388247007925, differing from stored F5/F7. Day30 stored aggregates converge. No value corrected. |
+| replicate-cells | https://doi.org/10.17632/djkf7tkm8d.1; Standalone Spodumene and Lepidolite bioleaching results from ICP-OES.xlsx; each Sheet1!C3:E12 | partial | All 30 numerical replicate cells are identical across these two material files. Provenance clarification is needed, without identifying which block is correct. |
+| digest-cells | https://doi.org/10.17632/djkf7tkm8d.1; ICP-OES analysis of mineral digestions.xlsx; Digestions!B2,C8:E8 | partial | Header is micrograms/g and Li cells are 230,120,80. Mapping to paper mass fractions remains unresolved; record makes no conversion. |
+| search | Primary publisher and repository pages; bounded web queries; Queries and boundaries retained here | context_only | No affecting notice was verified in these bounded results. This does not settle source inconsistencies or represent exhaustive integrity review. |
+| history | history/records/lithium/2026-10-09T044722Z-codex-d41ec5.yaml; history/records/lithium/2026-10-09T054913Z-codex-bca3b0.yaml; history/records/lithium/2026-10-09T055236Z-codex-f9b211.yaml; Canonical actor/session/target/event fields and inline curation_history | supports | Linked sidecars identify these records and describe separate creation/edits. Existing sessions are unchanged against origin/main base; this review does not invent or redate authorship. |
+
+## Limits And Additional Notes
+
+- Units, replicate provenance, stored means, loading and acid-dose attribution remain unresolved; accepted claim is qualitative and paper-scoped, not independent experimental replication.
+- This review did not acquire or reassess the article supplementary acid-dose figure; no complete per-flask dose ledger or statistical microbial-effect estimate is established.
+- Later 2026 lithium study is a deferred source lead, not accepted evidence for this record. Exhaustive literature or correction coverage is not claimed.
+- No corrections made; current record bytes equal prior accepted a9df4bc record bytes. This is a fresh review, not conversion of historical Markdown.
+- Root reported actual post-integration just check: 294 passed, 3 existing skips, 10 records valid and 19 histories valid; separate require-records passed. Those orchestrator-owned batch results are not represented as commands executed by this reviewer.
+- Final publication requires root gates and resolution of workflow issues; this artifact independently evaluates scientific scope only.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261010T011959Z-lithium-pr-adversarial
+kind: record
+repository: CultureBotAI/CMMMech
+title: Lithium independent scientific PR review
+started_at: '2026-10-10T01:15:00Z'
+finished_at: '2026-10-10T01:19:59Z'
+reviewer:
+  identity: /root/publish_uv_li_20261009 (Codex)
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Fresh review agent; did not curate these records, schema, sidecars
+    or prior reviews. Read primary evidence independently and made no scientific record
+    edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+native_verdict: Accept with explicit scientific limitations
+scientific_review: true
+summary: Fresh bounded scientific assessment of the exact current record; no blocker,
+  major or minor correction identified. Existing uncertainty remains a required part
+  of acceptance.
+source:
+  git_revision: c0adc2c0763e1515ed07dc712b024974d98fb342
+  state: working_tree
+  inputs:
+  - path: data/records/lithium.yaml
+    sha256: c02c148a68ae6921e6dfeb5eed4d459212fb6496642a1d9808f6ab7de53405d9
+    role: target
+  - path: docs/record-review-profile.md
+    sha256: 93f65e8f516a9b7756afd89e4823c1b64e493a46ecbcb3ca5e54a5aa599b10f2
+    role: context
+  - path: docs/records.md
+    sha256: 212cdbb723eb1ad9eb76ea1b7dad066914659b1f85eb2cdb51ee67466cfcc8ee
+    role: context
+  - path: history/records/lithium/2026-10-09T044722Z-codex-d41ec5.yaml
+    sha256: a6669d9d6b363635718a0834cc426f5b5a83ec9c1cf468b80d4c9e727ea6cdcf
+    role: context
+  - path: history/records/lithium/2026-10-09T054913Z-codex-bca3b0.yaml
+    sha256: bc6dac0ac669b6c69c02f21b9d4f4e60e93d2cb63799e03cac9a38c82a4fa457
+    role: context
+  - path: history/records/lithium/2026-10-09T055236Z-codex-f9b211.yaml
+    sha256: 2fc703ec31837a8a3088c24ef5e0e94149d70a1c573e98d86e45ef85f9921c3b
+    role: context
+  - path: research/ingests/mn-li-evidence.md
+    sha256: a5ad95338d5abb8628798cf0f329f0a7957fd81d52a7e7ab99e65fa2b8d52e2c
+    role: context
+  - path: research/sources/li-followup/20261009T054636Z-evidence.json
+    sha256: 9e3977f3a6a09422dab20ac79e9ff8110ac4d1c24b95dcbef0112c658235fe90
+    role: context
+  - path: research/sources/li-followup/20261009T054636Z.md
+    sha256: 625e15e8614cbc5af2f132dbdd400bee788f5ee46be758b6b7b3b713ea04a160
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+scope:
+  description: Complete maintained record with identifier, dated authority, mechanism,
+    exact selected observations where present, evidence caveats and history checks;
+    not exhaustive literature review.
+  selection: One explicitly assigned record; all its curated claims assessed.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:lithium
+  exclusions:
+  - target: Publication workflow and prospective merge/delete provenance availability
+    reason: Root owns PR-wide checks and corrective issue work; these do not change
+      the scientific record assessed here.
+targets:
+- target_id: cmmmech:lithium
+  path: data/records/lithium.yaml
+  label: Lithium
+  kind: maintained
+  record_class: CriticalMineralRecord
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lithium.yaml
+    role: maintained scientific record
+checks:
+- check_id: file-validation
+  name: Affected scientific record validation
+  status: passed
+  required: true
+  summary: Actual reviewer command checked 3 records, 0 failed.
+  target_ids:
+  - cmmmech:lithium
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate
+    data/records/uranium.yaml data/records/vanadium.yaml data/records/lithium.yaml
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: history-validation
+  name: History structure and append-only base check
+  status: passed
+  required: true
+  summary: Actual reviewer command checked 19 history records, 0 errors.
+  target_ids:
+  - cmmmech:lithium
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate-history
+    --base 193a5ab
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: source-check
+  name: Primary evidence and identity examination
+  status: passed
+  required: true
+  summary: Manual evidence checks and exact cell calculations described in the evidence
+    and assessments completed.
+  target_ids:
+  - cmmmech:lithium
+  evidence_ids:
+  - record
+  - element
+  - organism
+  - us-criticality
+  - eu-criticality
+  - paper
+  - figure
+  - dataset
+  - jadarite-cells
+  - replicate-cells
+  - digest-cells
+  - search
+  - history
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/lithium.yaml
+  locator: All fields, histories, mechanisms and observations
+  accessed_at: '2026-10-10T01:19:59Z'
+  support: supports
+  summary: Current maintained record inspected at source hashes; no scientific record
+    or history was changed by this independent reviewer.
+- evidence_id: element
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:30145
+  locator: CHEBI:30145; name, formula and neutral-atom scope
+  accessed_at: '2026-10-10T01:19:59Z'
+  support: supports
+  summary: Identifier denotes lithium atom. This grounds the element, not its aqueous
+    ions, mineral substrate, commodity stream or recovered phase.
+- evidence_id: organism
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920
+  locator: Current name and rank
+  accessed_at: '2026-10-10T01:19:59Z'
+  support: supports
+  summary: Species-level Acidithiobacillus ferrooxidans identifier 920 matches normalization
+    of the reported name; it does not identify the actual unaccessioned culture.
+- evidence_id: us-criticality
+  kind: authority
+  reference: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  locator: Final 2025 list table, 90 FR 50494-50497; named Lithium commodity row
+  accessed_at: '2026-10-10T01:19:59Z'
+  support: supports
+  summary: The full final table contains the named commodity. Record correctly retains
+    US jurisdiction and 2025 edition without universal criticality for all compounds.
+- evidence_id: eu-criticality
+  kind: authority
+  reference: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401252
+  locator: Original act Annex II Section 1(s), page 57; contrasted with Annex I(h),
+    page 55
+  accessed_at: '2026-10-10T01:19:59Z'
+  support: supports
+  summary: Original 2024 Annex II explicitly lists lithium; separate battery-grade
+    strategic scope is not imported.
+  snapshot_sha256: eb89f374a725ebde267c90f237898cd1d0bdfa65a1d4a118511e225bde60283e
+- evidence_id: paper
+  kind: primary_source
+  reference: https://doi.org/10.3389/fmicb.2024.1467408
+  locator: Sections 2.1-2.3, 3.1-3.4; Table 1; Figure 1 and captions
+  accessed_at: '2026-10-10T01:19:59Z'
+  support: partial
+  summary: Primary full text and Figure 1 support a transient paper-reported comparison,
+    control convergence, mixed feed and laboratory conditions. Loading and unequal
+    acid additions remain attribution limits.
+  snapshot_sha256: 0d846f6db4ea86d4e7ac9ad384e60fa802aa131559f89182b7789f4dab7469df
+- evidence_id: figure
+  kind: primary_source
+  reference: https://www.frontiersin.org/files/Articles/1467408/xml-images/fmicb-15-1467408-g001.webp
+  locator: Figure 1A; black inoculated, red uninoculated and green acid-only series
+  accessed_at: '2026-10-10T01:19:59Z'
+  support: supports
+  summary: Visual check confirms a temporary difference and endpoint convergence;
+    no numerical digitization or uncertainty reanalysis performed.
+  snapshot_sha256: c071f3c36d96237b1d81191a2c0982aa3cef28721909e7863a306eb55036c5df
+- evidence_id: dataset
+  kind: primary_source
+  reference: https://doi.org/10.17632/djkf7tkm8d.1
+  locator: Version 1, public Bioleaching and Characterisation folders; five XLSX and
+    three PNG files
+  accessed_at: '2026-10-10T01:19:59Z'
+  support: partial
+  summary: All eight retained bytes independently rehashed against issuing content_details.sha256_hash
+    values; all match. Dataset landing verifies version, date and license.
+- evidence_id: jadarite-cells
+  kind: primary_source
+  reference: https://doi.org/10.17632/djkf7tkm8d.1
+  locator: Jadarite bioleaching results from ICP-OES.xlsx; Jadarite!A3,C5:F5,C7:F7,F13:G13
+  accessed_at: '2026-10-10T01:19:59Z'
+  support: partial
+  summary: mg/kg header differs from paper solution units; means recompute as 24.771415827672655
+    and 70.93388247007925, differing from stored F5/F7. Day30 stored aggregates converge.
+    No value corrected.
+  snapshot_sha256: 881e2fdaf6fd03a7b853a54e63c80d4dd45ebc22466804e093078fdea744952a
+- evidence_id: replicate-cells
+  kind: primary_source
+  reference: https://doi.org/10.17632/djkf7tkm8d.1
+  locator: Standalone Spodumene and Lepidolite bioleaching results from ICP-OES.xlsx;
+    each Sheet1!C3:E12
+  accessed_at: '2026-10-10T01:19:59Z'
+  support: partial
+  summary: All 30 numerical replicate cells are identical across these two material
+    files. Provenance clarification is needed, without identifying which block is
+    correct.
+  snapshot_sha256: 0b90162bbd462f3dd16036b535dea4ce423ad4536a4da51ec59b0ca78b350490
+- evidence_id: digest-cells
+  kind: primary_source
+  reference: https://doi.org/10.17632/djkf7tkm8d.1
+  locator: ICP-OES analysis of mineral digestions.xlsx; Digestions!B2,C8:E8
+  accessed_at: '2026-10-10T01:19:59Z'
+  support: partial
+  summary: Header is micrograms/g and Li cells are 230,120,80. Mapping to paper mass
+    fractions remains unresolved; record makes no conversion.
+  snapshot_sha256: 11454e12854530a341eb2e16bebe4c8f94046ba008d96954eedb40a2b7a255e6
+- evidence_id: search
+  kind: search
+  reference: Primary publisher and repository pages; bounded web queries
+  locator: Queries and boundaries retained here
+  accessed_at: '2026-10-10T01:19:59Z'
+  support: context_only
+  summary: No affecting notice was verified in these bounded results. This does not
+    settle source inconsistencies or represent exhaustive integrity review.
+  search_scope: 'Web first returned sets: exact DOI 10.3389/fmicb.2024.1467408 plus
+    correction retraction; exact article title plus contradictory control. Inspected
+    original publisher, PMC and Mendeley results, not secondary summaries as mechanism
+    proof. Hidden/ignored-inclusive local data/records and research/reviews inventories
+    were searched. No exhaustive absence claim.'
+- evidence_id: history
+  kind: record_content
+  reference: history/records/lithium/2026-10-09T044722Z-codex-d41ec5.yaml; history/records/lithium/2026-10-09T054913Z-codex-bca3b0.yaml;
+    history/records/lithium/2026-10-09T055236Z-codex-f9b211.yaml
+  locator: Canonical actor/session/target/event fields and inline curation_history
+  accessed_at: '2026-10-10T01:19:59Z'
+  support: supports
+  summary: Linked sidecars identify these records and describe separate creation/edits.
+    Existing sessions are unchanged against origin/main base; this review does not
+    invent or redate authorship.
+assessments:
+- assessment_id: identity-scope
+  area: identity
+  topic: Element, experiment and organism resolution
+  outcome: supported
+  summary: Material and organism identifiers have the stated label and scope, with
+    substrate and culture limitations explicit.
+  target_ids:
+  - cmmmech:lithium
+  evidence_ids:
+  - record
+  - element
+  - organism
+- assessment_id: dated-criticality
+  area: grounding
+  topic: Dated criticality authority
+  outcome: supported
+  summary: Criticality is attached to a named jurisdiction and historical list edition,
+    with commodity scope preserved.
+  target_ids:
+  - cmmmech:lithium
+  evidence_ids:
+  - record
+  - us-criticality
+  - eu-criticality
+- assessment_id: mechanism-evidence
+  area: evidence
+  topic: Mechanism, controls and deployment
+  outcome: supported
+  summary: The record accurately limits the paper-reported qualitative comparison
+    and withholds quantitative benchmarking in light of deposited inconsistencies.
+  target_ids:
+  - cmmmech:lithium
+  evidence_ids:
+  - paper
+  - dataset
+  - figure
+  dimensions:
+  - name: material_form
+    value: Element Li; mixed jadarite-bearing feed, not a pure species
+    definition: Element record with experimental feed distinguished
+    evidence_ids:
+    - record
+  - name: organism_biomass
+    value: Live culture reported as Acidithiobacillus ferrooxidans; strain unresolved
+    definition: Species normalization is not independent culture authentication
+    evidence_ids:
+    - organism
+  - name: conditions_controls
+    value: Ground feed, static triplicate biotic flasks at 23 C; nominal pH 1.8 with
+      repeated unequal acid addition
+    definition: Experimental conditions and causal comparison limits
+    evidence_ids:
+    - paper
+  - name: outcome_deployment
+    value: Transient dissolved Li comparison; no normalized yield or isolated product;
+      laboratory only
+    definition: Scope of accepted mechanism outcome
+    evidence_ids:
+    - paper
+  - name: criticality
+    value: US final 2025 commodity list; EU original 2024 Annex II(s)
+    definition: Dated authority/jurisdiction/list scope
+    evidence_ids:
+    - us-criticality
+- assessment_id: quantity-limits
+  area: quantity
+  topic: Source values and preserved uncertainty
+  outcome: supported
+  summary: Deposited inconsistencies are represented as partial evidence without importing
+    numbers as a benchmark.
+  target_ids:
+  - cmmmech:lithium
+  evidence_ids:
+  - jadarite-cells
+  - replicate-cells
+  - digest-cells
+- assessment_id: provenance
+  area: provenance
+  topic: Distinct immutable curation history
+  outcome: supported
+  summary: Canonical sessions remain separately linked to inline events; the reviewer
+    made no record correction or history event.
+  target_ids:
+  - cmmmech:lithium
+  evidence_ids:
+  - history
+  - record
+findings: []
+actions: []
+limitations:
+- Units, replicate provenance, stored means, loading and acid-dose attribution remain
+  unresolved; accepted claim is qualitative and paper-scoped, not independent experimental
+  replication.
+- This review did not acquire or reassess the article supplementary acid-dose figure;
+  no complete per-flask dose ledger or statistical microbial-effect estimate is established.
+- Later 2026 lithium study is a deferred source lead, not accepted evidence for this
+  record. Exhaustive literature or correction coverage is not claimed.
+notes:
+- No corrections made; current record bytes equal prior accepted a9df4bc record bytes.
+  This is a fresh review, not conversion of historical Markdown.
+- 'Root reported actual post-integration just check: 294 passed, 3 existing skips,
+  10 records valid and 19 histories valid; separate require-records passed. Those
+  orchestrator-owned batch results are not represented as commands executed by this
+  reviewer.'
+- Final publication requires root gates and resolution of workflow issues; this artifact
+  independently evaluates scientific scope only.
+```

@@ -27,7 +27,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [initial pilot assessment](docs/pilot-session.md),
 [first ingest queue](research/ingests/20261009-priorities.md),
 [latest ingest results and priorities](research/ingests/20261009T054507Z-followup.md), and
-[record reviews](reviews/records/).
+[current structured record reviews](reviews/structured/).
+Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 
 The U/V mechanisms include eight reviewed, source-linked concentration cells.
 The [observation contract](docs/records.md#quantitative-source-observations)
@@ -76,6 +77,9 @@ flag so accidental loss of the whole corpus fails `just check`.
 Use the local [record-review skill](.claude/skills/review-record/SKILL.md) for
 new or changed scientific records. Review artifacts identify the reviewed
 commit and working changes, hash the record bytes, and retain unresolved limits.
+New rounds use the [structured review contract](docs/record-reviews.md).
+Before publishing through the squash queue, preserve the inspected source
+revisions using the [publication procedure](docs/record-review-profile.md#publishing-through-the-squash-queue).
 
 ## Sources
 

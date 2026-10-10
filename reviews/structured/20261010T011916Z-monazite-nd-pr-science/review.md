@@ -1,0 +1,265 @@
+# Monazite-(Nd) source-led PR adversarial review
+
+- Review: 20261010T011916Z-monazite-nd-pr-science
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-10T01:15:24.537404Z
+- Finished UTC: 2026-10-10T01:19:16Z
+- Reviewer: Codex /root/publish_other_records_20261009 (independent)
+- Completion: completed
+- Verdict: pass
+- Scientific review: true
+
+## Summary
+
+Monazite-(Nd) identity and status agree with the September 2026 IMA authority. No mechanism or inherited criticality claim is added.
+
+## Scope And Provenance
+
+New mineral identity only, dated IMA status and year/approval interpretation, separation from element/commodity/experimental mixture, and provenance.
+
+Selection: This named record is one of seven assigned PR targets; one record per review bundle.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base c0adc2c0763e1515ed07dc712b024974d98fb342.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:monazite-nd | data/records/monazite-nd.yaml | maintained | Monazite-(Nd) |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Affected seven-record strict validation | passed | True | cmmmech:monazite-nd | Seven records checked; zero failures. |
+| History linkage and append-only base check | passed | True | cmmmech:monazite-nd | 19 history sessions checked; zero errors. Base was origin/main at the available admitted main revision. |
+
+## Scientific And Domain Assessments
+
+### Dated mineral species identity
+
+evidence: supported. Targets: cmmmech:monazite-nd.
+
+Monazite-(Nd) identity and status agree with the September 2026 IMA authority. No mechanism or inherited criticality claim is added.
+
+The record asserts the named authority edition only. Monazite-(Nd) remains conceptually separate from its constituent element and a mixed secondary resource. No guessed external namespace, mineral-specific microbial result, or criticality inheritance appears.
+
+### Maintained record and append-only history
+
+provenance: supported. Targets: cmmmech:monazite-nd.
+
+Exact file hash captured by shared inspect before assessment; extra history inputs captured before their assessment. New events describe actual scoped additions; prior immutable sessions preserved.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; PDF page 1 field definitions and page 146, Monazite-(Nd) row | supports | Live official PDF parsed row gives Monazite-(Nd), Nd(PO4), approved A; IMA 1986-052; field definitions distinguish grandfathered original-description years from IMA approval numbers. |
+| record | data/records/monazite-nd.yaml; Entire current file, working diff against origin/main, inline history and linked sidecars | supports | Read exact maintained YAML and provenance. History targets/actors/timestamps agree with inline events; committed prior history is preserved. |
+| search | Web search and local scoped review; First returned result set, no pagination | context_only | No directly affecting correction notice identified in this bounded search; this is not an exhaustive claim. Retained known within-study contrary evidence remains explicit. |
+
+## Limits And Additional Notes
+
+- Original mineral description and structure publications were not independently reanalyzed; the maintained claim is explicitly the dated authority identity. No mineral-specific microbial assay is curated.
+- Bounded correction searches are not an exhaustive retraction audit. Validation checks the contract, not scientific truth. Root coordinator owns final just check and nonempty-corpus PR gates.
+- No record corrections were required or performed in this independent pass. Empty findings is scoped to this target and the declared review, not a fleet-wide pass.
+- Reviewed Git revision includes the origin/main governance merge; source state is working_tree as reported by inspect. Historical Markdown reviews remain unmodified.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261010T011916Z-monazite-nd-pr-science
+kind: record
+repository: CultureBotAI/CMMMech
+title: Monazite-(Nd) source-led PR adversarial review
+started_at: '2026-10-10T01:15:24.537404Z'
+finished_at: '2026-10-10T01:19:16Z'
+reviewer:
+  identity: Codex /root/publish_other_records_20261009
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Fresh review agent distinct from the record curators and prior
+    reviewers; no record or curation-history edits performed.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass
+scientific_review: true
+summary: Monazite-(Nd) identity and status agree with the September 2026 IMA authority.
+  No mechanism or inherited criticality claim is added.
+source:
+  git_revision: c0adc2c0763e1515ed07dc712b024974d98fb342
+  state: working_tree
+  inputs:
+  - path: data/records/monazite-nd.yaml
+    sha256: 8da4ae4a6c4b41d742e1b5f283a0d2750b18d79c5fa84e836402e07886b9e7dd
+    role: target
+  - path: docs/records.md
+    sha256: 212cdbb723eb1ad9eb76ea1b7dad066914659b1f85eb2cdb51ee67466cfcc8ee
+    role: context
+  - path: history/records/monazite-nd/2026-10-09T044522Z-codex-4c5e42.yaml
+    sha256: 71e38b2da081726a82d935d045bb23fb54dc358112222ae073ddd922e90eb23b
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+scope:
+  description: New mineral identity only, dated IMA status and year/approval interpretation,
+    separation from element/commodity/experimental mixture, and provenance.
+  selection: This named record is one of seven assigned PR targets; one record per
+    review bundle.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:monazite-nd
+targets:
+- target_id: cmmmech:monazite-nd
+  path: data/records/monazite-nd.yaml
+  label: Monazite-(Nd)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/monazite-nd.yaml
+    role: maintained scientific record
+checks:
+- check_id: record-validation
+  name: Affected seven-record strict validation
+  status: passed
+  required: true
+  summary: Seven records checked; zero failures.
+  target_ids:
+  - cmmmech:monazite-nd
+  command: .venv/bin/cmmmech validate data/records/cobalt.yaml data/records/neodymium.yaml
+    data/records/palladium.yaml data/records/manganese.yaml data/records/cobaltite.yaml
+    data/records/monazite-nd.yaml data/records/fluorescent-lamp-phosphor.yaml
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: history-validation
+  name: History linkage and append-only base check
+  status: passed
+  required: true
+  summary: 19 history sessions checked; zero errors. Base was origin/main at the available
+    admitted main revision.
+  target_ids:
+  - cmmmech:monazite-nd
+  command: .venv/bin/cmmmech validate-history --base origin/main
+  exit_code: 0
+  expected_exit_code: 0
+evidence:
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: PDF page 1 field definitions and page 146, Monazite-(Nd) row
+  accessed_at: '2026-10-10T01:18:41Z'
+  support: supports
+  summary: Live official PDF parsed row gives Monazite-(Nd), Nd(PO4), approved A;
+    IMA 1986-052; field definitions distinguish grandfathered original-description
+    years from IMA approval numbers.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: record
+  kind: record_content
+  reference: data/records/monazite-nd.yaml
+  locator: Entire current file, working diff against origin/main, inline history and
+    linked sidecars
+  accessed_at: '2026-10-10T01:18:41Z'
+  support: supports
+  summary: Read exact maintained YAML and provenance. History targets/actors/timestamps
+    agree with inline events; committed prior history is preserved.
+  snapshot_sha256: 8da4ae4a6c4b41d742e1b5f283a0d2750b18d79c5fa84e836402e07886b9e7dd
+- evidence_id: search
+  kind: search
+  reference: Web search and local scoped review
+  locator: First returned result set, no pagination
+  accessed_at: '2026-10-10T01:18:41Z'
+  support: context_only
+  summary: No directly affecting correction notice identified in this bounded search;
+    this is not an exhaustive claim. Retained known within-study contrary evidence
+    remains explicit.
+  search_scope: site.cnmnc.units.it "Monazite-(Nd)" correction discredited. Local
+    file discovery included hidden/ignored files with rg --no-ignore --hidden; no
+    machine-wide absence claim. Source bodies and relevant supplements were separately
+    inspected as listed.
+assessments:
+- assessment_id: scientific-scope
+  area: evidence
+  topic: Dated mineral species identity
+  outcome: supported
+  summary: Monazite-(Nd) identity and status agree with the September 2026 IMA authority.
+    No mechanism or inherited criticality claim is added.
+  target_ids:
+  - cmmmech:monazite-nd
+  evidence_ids:
+  - ima
+  - record
+  details: The record asserts the named authority edition only. Monazite-(Nd) remains
+    conceptually separate from its constituent element and a mixed secondary resource.
+    No guessed external namespace, mineral-specific microbial result, or criticality
+    inheritance appears.
+  dimensions:
+  - name: material_form
+    value: Mineral species Monazite-(Nd), Nd(PO4).
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - ima
+    - record
+  - name: authority_edition
+    value: IMA-CNMNC master list, September 2026.
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - ima
+    - record
+  - name: status
+    value: approved A; IMA 1986-052
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - ima
+    - record
+  - name: criticality
+    value: Unassigned; absence is unrecorded criticality, not not-critical.
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - ima
+    - record
+  - name: mechanism_scope
+    value: None assigned; identity record only.
+    definition: Reviewed domain scope; preserves representation and evidentiary limits.
+    evidence_ids:
+    - ima
+    - record
+- assessment_id: provenance
+  area: provenance
+  topic: Maintained record and append-only history
+  outcome: supported
+  summary: Exact file hash captured by shared inspect before assessment; extra history
+    inputs captured before their assessment. New events describe actual scoped additions;
+    prior immutable sessions preserved.
+  target_ids:
+  - cmmmech:monazite-nd
+  evidence_ids:
+  - record
+findings: []
+actions: []
+limitations:
+- Original mineral description and structure publications were not independently reanalyzed;
+  the maintained claim is explicitly the dated authority identity. No mineral-specific
+  microbial assay is curated.
+- Bounded correction searches are not an exhaustive retraction audit. Validation checks
+  the contract, not scientific truth. Root coordinator owns final just check and nonempty-corpus
+  PR gates.
+notes:
+- No record corrections were required or performed in this independent pass. Empty
+  findings is scoped to this target and the declared review, not a fleet-wide pass.
+- Reviewed Git revision includes the origin/main governance merge; source state is
+  working_tree as reported by inspect. Historical Markdown reviews remain unmodified.
+```
