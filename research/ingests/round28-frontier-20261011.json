@@ -1,0 +1,240 @@
+{
+  "recorded_at": "2026-10-11T17:14:19.518635+00:00",
+  "trusted_base": "9f37042ef36b8f20ebf44f8228f6a4b5d27e00c3",
+  "worktree": "/private/tmp/CMMMech-expansion-round28-20261011",
+  "branch": "curate/cmm-expansion-round28-20261011",
+  "records": [
+    {
+      "id": "cmmmech:metal-grinding-sludge",
+      "name": "Metal grinding sludge",
+      "path": "data/records/metal-grinding-sludge.yaml",
+      "sha256": "85d1e8e97a505acbe0bc7898ccd9e9de8ead904062d3042d8a766c54af5978cd",
+      "material_kind": "secondary_resource",
+      "change": "new",
+      "history_refs": [
+        "history/records/metal-grinding-sludge/2026-10-11T165828Z-codex-72fcb5.yaml"
+      ],
+      "reviews": [
+        {
+          "yaml": "reviews/structured/20261011T171324Z-metal-grinding-sludge-round28-independent/review.yaml",
+          "markdown": "reviews/structured/20261011T171324Z-metal-grinding-sludge-round28-independent/review.md",
+          "review_id": "20261011T171324Z-metal-grinding-sludge-round28-independent",
+          "sha256": "ace4b2517e3dabe9b1493429d442764c99fe6c4c461e1d6d1c8fd2f32a843445",
+          "verdict": "pass_with_limitations"
+        }
+      ]
+    },
+    {
+      "id": "cmmmech:metalliferous-black-shale",
+      "name": "Metalliferous black shale",
+      "path": "data/records/metalliferous-black-shale.yaml",
+      "sha256": "b8fd8aa9806b963cd1f803988fb27633658f597a10495fe667bb5c701367a7ef",
+      "material_kind": "primary_resource",
+      "change": "new",
+      "history_refs": [
+        "history/records/metalliferous-black-shale/2026-10-11T170016Z-codex-9fdc2e.yaml"
+      ],
+      "reviews": [
+        {
+          "yaml": "reviews/structured/20261011T171321Z-metalliferous-black-shale-round28-independent/review.yaml",
+          "markdown": "reviews/structured/20261011T171321Z-metalliferous-black-shale-round28-independent/review.md",
+          "review_id": "20261011T171321Z-metalliferous-black-shale-round28-independent",
+          "sha256": "c467fe873ba11eddc68ebbd32d44abea677d068e7ea7bc4be7b16f5ac3ee46b4",
+          "verdict": "pass_with_limitations"
+        }
+      ]
+    },
+    {
+      "id": "cmmmech:ground-waste-tire-rubber",
+      "name": "Ground waste tire rubber",
+      "path": "data/records/ground-waste-tire-rubber.yaml",
+      "sha256": "10ca9ca7bd494f12919f5a1d1a4220fee2685560b7dbc1222881c973564e1dd2",
+      "material_kind": "secondary_resource",
+      "change": "new",
+      "history_refs": [
+        "history/records/ground-waste-tire-rubber/2026-10-11T170536Z-codex-b238c9.yaml"
+      ],
+      "reviews": [
+        {
+          "yaml": "reviews/structured/20261011T171324Z-ground-waste-tire-rubber-round28-independent/review.yaml",
+          "markdown": "reviews/structured/20261011T171324Z-ground-waste-tire-rubber-round28-independent/review.md",
+          "review_id": "20261011T171324Z-ground-waste-tire-rubber-round28-independent",
+          "sha256": "79a0bf2b3fd2209cf00909cb1c823f8654f6f1a6b979b3753f344a90e29a95ad",
+          "verdict": "pass_with_limitations"
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "started_at": "2026-10-11T17:09:27.833660+00:00",
+    "base": "9f37042ef36b8f20ebf44f8228f6a4b5d27e00c3",
+    "records": {
+      "data/records/metal-grinding-sludge.yaml": "85d1e8e97a505acbe0bc7898ccd9e9de8ead904062d3042d8a766c54af5978cd",
+      "data/records/metalliferous-black-shale.yaml": "b8fd8aa9806b963cd1f803988fb27633658f597a10495fe667bb5c701367a7ef",
+      "data/records/ground-waste-tire-rubber.yaml": "10ca9ca7bd494f12919f5a1d1a4220fee2685560b7dbc1222881c973564e1dd2"
+    },
+    "commands": [
+      {
+        "command": [
+          "just",
+          "check"
+        ],
+        "log": "/private/tmp/cmm-round28-final-batch.log",
+        "exit_code": 0,
+        "started_at": "2026-10-11T17:09:27.836094+00:00",
+        "finished_at": "2026-10-11T17:12:20.031273+00:00",
+        "sha256": "c3e601c79f51de06f0c302f94ab0129c508f5a9b11a4bd467a5184fbcb846a8f"
+      },
+      {
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate",
+          "--require-records"
+        ],
+        "log": "/private/tmp/cmm-round28-final-nonempty.log",
+        "exit_code": 0,
+        "started_at": "2026-10-11T17:12:20.031541+00:00",
+        "finished_at": "2026-10-11T17:12:26.906601+00:00",
+        "sha256": "a49f4e60756e21cb0e12caf295e66081e008569fbc1fb34a3386dbe91c53be2d"
+      },
+      {
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate-history",
+          "--base",
+          "9f37042ef36b8f20ebf44f8228f6a4b5d27e00c3"
+        ],
+        "log": "/private/tmp/cmm-round28-final-history.log",
+        "exit_code": 0,
+        "started_at": "2026-10-11T17:12:26.906860+00:00",
+        "finished_at": "2026-10-11T17:12:31.187289+00:00",
+        "sha256": "647eb3a177357b7526b9a8420d470c4be22f5a80cf251857f4b00404ce63932d"
+      }
+    ],
+    "finished_at": "2026-10-11T17:12:31.187589+00:00",
+    "unchanged_records": true,
+    "passed": true
+  },
+  "baseline_reconciliation": {
+    "recorded_at": "2026-10-11T16:55:38.548711+00:00",
+    "previous_head": "bd93cd5e6b67cd89b061204f2d812ccadd5c0d6c",
+    "current_trusted_base": "9f37042ef36b8f20ebf44f8228f6a4b5d27e00c3",
+    "tree": "54f58c3e5058f0d24282661d8645eb4748176c93",
+    "replayed_commits": 0,
+    "working_changes": false,
+    "ignored_untracked_entries_preserved": 7208,
+    "baseline_local_receipt": "/private/tmp/cmm-round28-baseline-terminal.json",
+    "fresh_merged_main_baseline": "/private/tmp/cmm-round27-postmerge-20261011-published-pr100-terminal.json",
+    "fresh_baseline_sha256": "3c06e414f041840b45583ba6d371f319fd934775e68bb4160f4f1a4f5919db82",
+    "baseline_applicability": "Round28 baseline passed before curation; no file changed during base reconciliation. Independently completed full fresh-main gates cover this exact tree and the current merged base. No duplicate full test run is claimed.",
+    "new_review_git_base": "9f37042ef36b8f20ebf44f8228f6a4b5d27e00c3"
+  },
+  "structured_review_gate": {
+    "started_at": "2026-10-11T17:14:19.806681+00:00",
+    "finished_at": "2026-10-11T17:16:22.253158+00:00",
+    "command": [
+      "just",
+      "review-check",
+      "--base",
+      "9f37042ef36b8f20ebf44f8228f6a4b5d27e00c3",
+      "--require-reviews"
+    ],
+    "exit_code": 0,
+    "log": "/private/tmp/cmm-round28-review-check.log",
+    "sha256": "31df51e8e575621fb59e9e0dc2f23231da8d9e2eff73e5d5bfe7485910be5d9c",
+    "reviews": 202
+  },
+  "coverage": {
+    "record_count": 174,
+    "history_count": 198,
+    "structured_review_count": 202,
+    "review_base_count": 29,
+    "covered_records": 174,
+    "passed": true,
+    "receipt": "/private/tmp/cmm-round28-local-coverage.json",
+    "sha256": "839bed94d84db65748ff8af2cfe7a13d7d09b6248b203c56c68974602b34145d"
+  },
+  "source_assessments": [
+    {
+      "path": "research/sources/round28-black-shale/20261011T170152Z-source-investigation.json",
+      "sha256": "cfb8e952fe2dbf7b389fe1dad8fea75e79a791ff952d7c28881665b6faa1bb66"
+    },
+    {
+      "path": "research/sources/round28-black-shale/20261011T170152Z-source-investigation.md",
+      "sha256": "181649aeaab17b7ed0cbc206737b63525923fef0a155c6dbe4e8f86f7c7de49e"
+    },
+    {
+      "path": "research/sources/round28-goethite/20261011T163929Z-handoff.json",
+      "sha256": "330a49149939ddc7899bdf30790486b6e59effd628eb982d2807bbf41d39ce56"
+    },
+    {
+      "path": "research/sources/round28-goethite/20261011T163929Z-handoff.md",
+      "sha256": "c34c8e7e2b42682cc8f6e11fc448192a7ac6ccdb433a751234225acadeb31dee"
+    },
+    {
+      "path": "research/sources/round28-mineral-frontier/20261011T170545Z-handoff.json",
+      "sha256": "611724c250dce2612e8e8647e7ecd71ee46624bbea61baf25f03b7981257ca4f"
+    },
+    {
+      "path": "research/sources/round28-mineral-frontier/20261011T170545Z-handoff.md",
+      "sha256": "bac993dc12e22c5dd9618db261d9a297ad9535d34abcb80b6f36d014f9278c20"
+    },
+    {
+      "path": "research/sources/round28-tatra/20261011T165938Z-source-investigation.json",
+      "sha256": "d6432a7700859190b303697e62203903c9c421ec8f839f2ff4bfc59c3b29c33b"
+    },
+    {
+      "path": "research/sources/round28-tatra/20261011T165938Z-source-investigation.md",
+      "sha256": "547eb892f859544a2eb372f030a6172e1b845fe16819966196f8da5d392386f3"
+    },
+    {
+      "path": "research/sources/round28-tire/20261011T170800Z.json",
+      "sha256": "bc58febf58d004de57e324b615b5cb36af372bfa43e8c6faa2c2f137d7729be5"
+    },
+    {
+      "path": "research/sources/round28-tire/20261011T170800Z.md",
+      "sha256": "c187425871f3a31b3726cb282e3f4c9ab93dbab7c82d3bf986163f7978be2a81"
+    }
+  ],
+  "priorities": [
+    {
+      "rank": 1,
+      "candidate": "Oxidized-zinc ore / smithsonite context",
+      "source": "https://dergipark.org.tr/en/download/article-file/5079644",
+      "decision": "full PDF accessible; full experimental review, identifiers and identity deduplication remain"
+    },
+    {
+      "rank": 2,
+      "candidate": "Tungsten mining wastes",
+      "doi": "10.1016/j.jhazmat.2023.131490",
+      "decision": "full methods and figures not yet acquired"
+    },
+    {
+      "rank": 3,
+      "candidate": "Bastnaesite-bearing material",
+      "doi": "10.1016/j.chemgeo.2018.03.023",
+      "decision": "full methods/figures and mineral-family scope unresolved"
+    },
+    {
+      "rank": 4,
+      "candidate": "Ilmenite / tin-tailing study",
+      "source": "https://repository.li.mahidol.ac.th/entities/publication/345ec997-d350-4e3f-bce1-d9b8331bde35",
+      "decision": "publication identity and primary experiments unverified"
+    },
+    {
+      "rank": 5,
+      "candidate": "Industrial goethite byproduct",
+      "doi": "10.1016/j.chemosphere.2023.140244",
+      "decision": "original figures acquired; complete main methods, feed provenance and Table2 unavailable"
+    }
+  ],
+  "exhaustion_established": false,
+  "unchanged_prior_scientific_files": 1194,
+  "changed_prior_scientific_files": []
+}

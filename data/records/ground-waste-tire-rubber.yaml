@@ -1,0 +1,203 @@
+id: cmmmech:ground-waste-tire-rubber
+name: Ground waste tire rubber
+material_kind: secondary_resource
+description: >-
+  Ground rubber recovered from used tires, containing a crosslinked polymer
+  matrix, fillers and zinc-bearing additives. The selected study used
+  400-600 micrometre particles from an unnamed waste-tire recycling facility.
+  This secondary resource is distinct from elemental zinc, zinc mineral
+  species, tire combustion ash, pyrolysis char, rubber-manufacturing waste
+  and natural-rubber gloves. Chemical pretreatment does not create a separate
+  material identity, and the feed does not inherit a criticality designation
+  from a constituent element.
+sources:
+- id: shukla2026_tire
+  title: >-
+    Shukla, Roy and Bhand (2026). Deep eutectic solvent-assisted bacterial
+    devulcanization, detoxification, and degradation of waste tyre rubber.
+    RSC Advances 16(28):26205-26221. DOI 10.1039/d6ra01664b; published
+    18 May 2026; PMCID PMC13185686.1. Complete primary XML, Tables 1-4,
+    original Figures 1-11, and complete supplementary PDF Tables S1-S3
+    and Figures S1-S2 inspected through Europe PMC. The publisher's main
+    PDF was not acquired; the original supplementary images were also
+    extracted to inspect the overlapping layout on its page 3.
+  url: https://doi.org/10.1039/d6ra01664b
+  accessed_on: '2026-10-11'
+- id: dsmz_rpk1
+  title: >-
+    DSMZ catalogue DSM 103064, Rhodococcus rhodochrous, strain designation
+    RPK 1. Current collection identity independently matches the paper's
+    reported RPK1 culture; this is not authentication of the experimental stock.
+  url: https://www.dsmz.de/collection/catalogue/details/culture/DSM-103064
+  accessed_on: '2026-10-11'
+- id: ncbi_rhodochrous
+  title: >-
+    NCBI Taxonomy 1829, Rhodococcus rhodochrous, species-level taxonomic
+    context. The species identifier does not identify strain DSM 103064.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1829
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: culture_associated_rubber_transformation
+  name: Culture-associated rubber transformation without demonstrated zinc extraction
+  process: other
+  microbial: true
+  description: >-
+    Growing Rhodococcus rhodochrous RPK1 cultures were associated with
+    changes in ground-tire-rubber crosslink density, surface structure and
+    reactive-product assays. Chemical pretreatment preceded one culture arm.
+    These laboratory phenotypes provide partial evidence of microbial rubber
+    transformation, without establishing a specific enzyme pathway, complete
+    carbon mineralization or isolated metal recovery. Biological treatment
+    did not demonstrate zinc extraction from the rubber.
+  context: >-
+    Methods 2.1-2.6 identify RPK1 as DSM 103064 and compare untreated and
+    choline-chloride/urea-DES-pretreated GTR. The chemical preparation is
+    described separately below. The growing whole-cell inoculum was prepared
+    in nutrient broth; 10% v/v culture at OD600 0.8-1.0 was added to 1% w/v
+    GTR in 100 mL mineral salts medium in 250 mL flasks. Initial pH was
+    7.0 +/- 0.05, with incubation at 30 degrees C and 120 rpm for 28 days.
+    Inoculum washing is not described, so nutrient-broth carryover limits
+    the paper's sole-carbon-source interpretation. Controls include untreated
+    GTR without bacteria and bacteria in medium without GTR. DES-only
+    compositional and swelling data are available, but no DES-pretreated
+    abiotic 28-day arm is shown in the weight-loss or Schiff comparison.
+    Postculture biomass removal and gravimetric drying are not described
+    as clearly as the chemical preparation. This is a laboratory flask
+    study, without a demonstrated industrial rubber- or zinc-recovery process.
+  organisms:
+  - id: NCBITaxon:1829
+    label: Rhodococcus rhodochrous
+  evidence:
+  - source_ref: shukla2026_tire
+    supports: partial
+    explanation: >-
+      Methods 2.7.5, Table 2 and Figure 6 report swelling-derived crosslink
+      densities of 9.61 +/- 0.16 for untreated GTR, 8.09 +/- 0.29 after
+      bacterial treatment, 7.03 +/- 0.25 after DES alone and 5.44 +/- 0.12
+      after DES plus bacteria, all in units of 10^-5 mol/cm3, mean +/- SD,
+      n = 3. The source reports a 15.81% decrease with bacteria alone.
+      Acetone extraction for 24 h and n-hexane swelling at 25 degrees C for
+      72 h feed a Flory-Rehner model with assumed interaction parameter
+      0.45 and rubber density 1.15 g/cm3. Horikx curve interpretation is
+      model-dependent; the printed sol-fraction equation has problematic
+      parentheses. These results do not identify a causal enzyme or prove
+      that chemical pretreatment and biology have a synergistic interaction.
+  - source_ref: shukla2026_tire
+    supports: partial
+    explanation: >-
+      Figure 9a and supplementary Table S2 give initial mass 1.00 g and
+      final masses 0.967 g for the untreated abiotic control, 0.951 g for
+      bacteria/GTR and 0.841 g for bacteria/DES-pretreated GTR. Reported
+      gross losses are 3.30 +/- 2.36%, 4.93 +/- 1.15% and 15.84 +/- 8.78%,
+      respectively; the table/caption do not define the replicate count
+      or the plus/minus statistic. Results 3.10's 1.63% and 12.53% subtract
+      the same untreated abiotic loss, as percentage-point differences.
+      Rounded table values instead give 12.54 for the second difference.
+      These are not recovered-product yields or the biological increment
+      above a DES-pretreated abiotic control. The large uncertainties and
+      unresolved biomass/residue preparation constrain quantitative attribution.
+  - source_ref: shukla2026_tire
+    supports: partial
+    explanation: >-
+      Figure 9b-e shows pink Schiff staining in both rubber-plus-bacteria
+      cultures, absent from the photographed untreated-GTR abiotic and
+      bacteria/no-GTR controls. Figures 2-4 show spectral and qualitative
+      surface changes, while supplementary Table S1 gives altered carbon
+      and sulfur weight fractions. These observations support a limited
+      transformation phenotype, not a measured CO2 mineralization balance
+      or absolute sulfur-removal yield. Supplementary Table S3/Figure S2
+      provide tentative LC-MS assignments without a matched abiotic
+      chromatogram or standards-confirmed product identity. The first
+      listed C20H32O2 sodium adduct at m/z 307 is inconsistent with its
+      formula. Lcp, Dsz/4S and other enzyme-pathway explanations are not
+      causally established by the ABTS, total-protein or product assays.
+  - source_ref: shukla2026_tire
+    supports: partial
+    explanation: >-
+      Methods 2.7.3 and Results 3.5 report solid-residue ICP-OES Zn fractions
+      of 1.94 +/- 0.06 wt% untreated, 2.25 +/- 0.10 after bacteria,
+      1.30 +/- 0.17 after DES alone and 1.73 +/- 0.11 after DES plus
+      bacteria. Replicate count and the meaning of plus/minus are not
+      specified for this ICP result. A 0.1 g residue aliquot underwent
+      24 h room-temperature digestion in 5 mL 68.9% HNO3, dilution to
+      250 mL in 2% HNO3 and 0.2 micrometre filtration, followed by
+      externally calibrated ICP-OES at 213.857 nm. No aqueous Zn inventory
+      or isolated Zn product is reported. Increased bacterial residue
+      fractions do not demonstrate Zn extraction and also do not prove
+      the source's assertion of exactly unchanged absolute Zn. Surface
+      EDS Table 1 instead gives Zn fractions 3.36, 2.06, 0.80 and 1.06 wt%
+      in those treatment groups, means of two surface measurements.
+      Surface and digest measurements have different sampling bases;
+      neither is a whole-feed metal-recovery yield.
+  - source_ref: shukla2026_tire
+    supports: partial
+    explanation: >-
+      Source contradictions limit ancillary mechanistic interpretations.
+      Figure 1b places peak viable counts around 10^12 CFU/mL, whereas
+      Results 3.1 reports values around 10^9; exact counts are unresolved.
+      Figure 1a's pretreated OD trace continues increasing after day 14,
+      contrary to the prose's joint biomass/viability maximum. Figure 10
+      protein trajectories and its day-28 control differ from the prose,
+      and Figure 8's final char-residue ranking differs from its embedded
+      table. These values are not reconciled or imported as precise
+      mechanism measurements. Qualitative culture-associated changes
+      do not establish a universal or exclusively biological pathway.
+  - source_ref: dsmz_rpk1
+    supports: context_only
+    explanation: >-
+      The collection maps RPK 1 to DSM 103064 and R. rhodochrous, agreeing
+      with the main paper and supplementary Table S2. This supports
+      strain-name provenance, not independent verification of the
+      experimental culture or its causal pathway.
+  - source_ref: ncbi_rhodochrous
+    supports: context_only
+    explanation: >-
+      NCBI node 1829 supports the species label. Collection identity and
+      experimental strain provenance remain separate from this species CURIE.
+- id: chemical_des_pretreatment
+  name: Chemical DES pretreatment with reduced solid-residue zinc fraction
+  process: other
+  microbial: false
+  description: >-
+    Choline chloride/urea deep eutectic solvent treatment altered the rubber
+    network and lowered the measured Zn fraction of the remaining solid
+    before bacterial culture. This is a thermochemical preparation stage,
+    not microbial zinc extraction or a demonstrated isolated-metal recovery.
+  context: >-
+    Methods 2.3-2.4 describe choline chloride and urea at 1:2 molar ratio,
+    mixed at 70 degrees C. GTR was washed three times with 70% ethanol
+    and vacuum-dried at 45 degrees C to constant weight. Rubber and DES
+    at 1:40 w/w were left to swell for 24 h at room temperature, sonicated
+    at 37 kHz for 2 h and stirred at 180 degrees C for 45 min. Treated
+    particles were ethanol-washed, filtered and dried at 50 degrees C
+    to constant weight. This preparation is distinct from the separate
+    isothermal TGA, whose Methods 2.5 says a 60 min hold whereas Figure 7
+    marks 45 min. The study does not demonstrate an industrial solvent
+    cycle, recovered-Zn product, closed mass balance or lifecycle benefit.
+  evidence:
+  - source_ref: shukla2026_tire
+    supports: partial
+    explanation: >-
+      Results 3.5 assigns the fall from 1.94 +/- 0.06 to 1.30 +/- 0.17 wt%
+      solid Zn to DES alone and calls it 33% removal. This is a relative
+      residue-concentration decrease, not an independently measured fraction
+      of feed Zn recovered in a product. Subsequent bacterial culture raises
+      the residual fraction to 1.73 +/- 0.11 wt%, so the initial decrease
+      cannot be attributed to microbial action. Table 2's DES-only swelling
+      result and supplementary Table S1's carbon/sulfur fractions provide
+      chemical-treatment context; they do not resolve a DES-matched abiotic
+      incubation or validate the source's broad detoxification/mineralization
+      language. Disc diffusion and residual growth readings likewise do not
+      establish general solvent nontoxicity.
+history_refs:
+- history/records/ground-waste-tire-rubber/2026-10-11T170536Z-codex-b238c9.yaml
+curation_history:
+- timestamp: '2026-10-11T17:06:09.837914Z'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: >-
+    Curated a distinct ground waste tire rubber resource from complete primary
+    XML, original figures and supplement. Kept partial culture-associated
+    transformation separate from chemical DES pretreatment, with no demonstrated
+    microbial Zn extraction, residue-fraction and mass-loss basis limits,
+    unmatched controls and unresolved graphic/text discrepancies.

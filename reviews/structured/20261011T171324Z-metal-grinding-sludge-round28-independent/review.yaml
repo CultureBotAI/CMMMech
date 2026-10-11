@@ -1,0 +1,348 @@
+schema_version: 1.0.0
+review_id: 20261011T171324Z-metal-grinding-sludge-round28-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of the Tatra metal-grinding-sludge record
+started_at: '2026-10-11T17:00:01Z'
+finished_at: '2026-10-11T17:13:24.881428Z'
+reviewer:
+  identity: Codex /root/round27_eaf_slag
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The target and its CREATE history were authored by /root/round27_superalloy.
+    This reviewer authored neither and made no maintained-record or history edits.
+    The assessment independently read the complete original article, all original
+    tables and micrographs, the live taxon page, and fresh bounded searches. Primary
+    PDF acquisition and page rendering were shared curator artifacts; the curator
+    dossier was not the sole scientific evidence.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'The frozen record is scientifically supported within its explicit limits:
+  one sampled grinding-derived resource, conditional laboratory culture-associated
+  leaching, unverified strain identity and unresolved recovery accounting. No corrective
+  record finding was identified.'
+source:
+  git_revision: 9f37042ef36b8f20ebf44f8228f6a4b5d27e00c3
+  state: working_tree
+  inputs:
+  - path: data/records/metal-grinding-sludge.yaml
+    sha256: 85d1e8e97a505acbe0bc7898ccd9e9de8ead904062d3042d8a766c54af5978cd
+    role: target
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/metal-grinding-sludge/2026-10-11T165828Z-codex-72fcb5.yaml
+    sha256: fe054e70f7b2101f411d04c3cb15d59e7d9f5150268b7abb90f21c4cc1d524e6
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire new record and linked CREATE sidecar, including all material,
+    organism, method, outcome, uncertainty and deployment claims.
+  selection: Assigned independent review of the newly curated Tatra grinding-sludge
+    record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:metal-grinding-sludge
+  exclusions:
+  - target: Companion coal-cinder/slag feed
+    reason: Its article pages were inspected to verify the boundary, but its experiment
+      is not accepted as evidence for the grinding-sludge mechanism.
+  - target: Unacquired related symposium proceedings and adjacent studies
+    reason: Search leads are not full-primary corroboration or independent replication.
+targets:
+- target_id: cmmmech:metal-grinding-sludge
+  path: data/records/metal-grinding-sludge.yaml
+  label: Metal-grinding sludge
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/metal-grinding-sludge.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named-record validation
+  command: uv run --locked cmmmech validate data/records/metal-grinding-sludge.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Executed by this reviewer; terminal exit 0 and log reports 1 record checked,
+    0 failed.
+  target_ids:
+  - cmmmech:metal-grinding-sludge
+- check_id: batch
+  name: Coordinator final batch checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Actual coordinator receipt and log independently read and SHA-256 verified:
+    308 passed, 3 skipped; 174 records and 198 histories valid.'
+  target_ids:
+  - cmmmech:metal-grinding-sludge
+- check_id: nonempty
+  name: Coordinator final nonempty record validation
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Actual coordinator receipt and log independently read and SHA-256 verified:
+    174 records checked, 0 failed.'
+  target_ids:
+  - cmmmech:metal-grinding-sludge
+- check_id: history
+  name: Coordinator trusted-base history validation
+  command: uv run --locked cmmmech validate-history --base 9f37042ef36b8f20ebf44f8228f6a4b5d27e00c3
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Actual coordinator receipt and log independently read and SHA-256 verified:
+    198 history records checked, 0 errors, against the retained merged-main base.'
+  target_ids:
+  - cmmmech:metal-grinding-sludge
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/metal-grinding-sludge.yaml
+  locator: Entire frozen YAML and linked CREATE history sidecar
+  accessed_at: '2026-10-11T17:02:10.866977Z'
+  support: supports
+  summary: Canonical inspect captured the maintained bytes and stable merged-main
+    base. The CREATE session accurately describes this new local curation and does
+    not claim completed scientific review.
+  snapshot_sha256: 85d1e8e97a505acbe0bc7898ccd9e9de8ead904062d3042d8a766c54af5978cd
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.geology.sk/wp-content/uploads/documents/foto/MS/MS-1996-28-5.pdf
+  locator: Complete original article, printed pp. 388–390; issue PDF pages 82–84;
+    methods, results, conclusions and references
+  accessed_at: '2026-10-11T17:02:10.866977Z'
+  support: supports
+  summary: The primary identifies a grinding-fluid-trap waste, a named bacterial culture
+    and a laboratory incubation. Every article page was read as extracted text and
+    visually inspected as original page pixels.
+  snapshot_sha256: e8b3a8a85fe28c43ea19edd21d9c72c85ffdf8ebf70769423263155186d5ca1d
+- evidence_id: figures
+  kind: primary_source
+  reference: https://www.geology.sk/wp-content/uploads/documents/foto/MS/MS-1996-28-5.pdf
+  locator: Original Figures 1–7, Tables 1–4 and adjacent explanatory text, pp. 389–390
+  accessed_at: '2026-10-11T17:02:10.866977Z'
+  support: supports
+  summary: Figures 1–3 and Tables 1/3 concern grinding sludge. Figures 4–7 and Tables
+    2/4 concern coal cinder/slag. The record keeps these feeds separate and does not
+    transfer coal phases, tonnage or outcomes.
+  snapshot_sha256: e8b3a8a85fe28c43ea19edd21d9c72c85ffdf8ebf70769423263155186d5ca1d
+- evidence_id: limits
+  kind: primary_source
+  reference: https://www.geology.sk/wp-content/uploads/documents/foto/MS/MS-1996-28-5.pdf
+  locator: Methods p. 388, Table 1 p. 389, Table 3 and conclusions p. 390; complete
+    article checked for controls and definitions
+  accessed_at: '2026-10-11T17:02:10.866977Z'
+  support: context_only
+  summary: No matched abiotic arm, leaching-flask replication, specific Fe(II) assay,
+    residue-mass recovery equation or sampling correction is reported. Table 1 Pb/Mn/Fe
+    printed recoveries do not equal simple relative concentration depletion; neither
+    quantity establishes mass recovery. The record retains these limits.
+  snapshot_sha256: e8b3a8a85fe28c43ea19edd21d9c72c85ffdf8ebf70769423263155186d5ca1d
+- evidence_id: taxon
+  kind: primary_source
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
+  locator: Live identifier page, current name, rank and homotypic-synonym fields independently
+    opened
+  accessed_at: '2026-10-11T17:02:10.866977Z'
+  support: supports
+  summary: NCBI identifies taxon 920 at species rank as Acidithiobacillus ferrooxidans
+    and lists Thiobacillus ferrooxidans as a homotypic synonym. This verifies species-label
+    scope, not the Košice experimental stock.
+- evidence_id: search
+  kind: search
+  reference: https://www.geology.sk/wp-content/uploads/documents/foto/MS/MS-1996-28-5.pdf
+  locator: Independent web first-result sets plus hidden/ignored-inclusive local searches;
+    /private/tmp/cmm-round28-tatra-independent-review/dedup-paths.txt
+  accessed_at: '2026-10-11T17:02:10.866977Z'
+  support: context_only
+  summary: The returned exact-title/author/Tatra searches identified the official
+    article, publisher index, publisher bibliography, a potentially overlapping 1996
+    symposium citation and an adjacent 2011 study. No applicable correction or directly
+    matching controlled counterexperiment was identified in these returned sets. Local
+    matches are the new target/history and prior source leads, not another maintained
+    grinding-sludge root.
+  search_scope: 'Queries: "Bacterial leaching of waste materials" "Tatra" correction
+    OR erratum OR retraction; "Fečko" "Kučerová" "grinding sludge" leaching; "Tatra"
+    "grinding sludge" bioleaching abiotic control. No pagination or filters. rg --no-ignore
+    --hidden --follow searched records/history/research/reviews in the current and
+    original checkouts, plus referenced round28 Tatra and round27 superalloy raw directories
+    for grinding-sludge/Tatra/place/author spelling variants. Binary PDF contents
+    were assessed via the extracted original text and page pixels; unrelated filesystem
+    and literature were not exhaustively searched.'
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round28-final-terminal.json
+  locator: Actual coordinator terminal receipt and all three named logs; independent
+    named-record validation log
+  accessed_at: '2026-10-11T17:13:24.881428Z'
+  support: supports
+  summary: All required checks reached terminal exit 0. Log checksums and every canonical
+    target/context input were independently verified before saving.
+  snapshot_sha256: 59c24f18641d0787b153c9dccb7174419193fe718d81c903d07e735904edafa0
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Process-defined secondary resource and material boundary
+  outcome: supported
+  summary: The grinding-derived sludge is correctly distinguished from elemental iron,
+    an alloy grade, mineral species and the companion coal residue.
+  target_ids:
+  - cmmmech:metal-grinding-sludge
+  evidence_ids:
+  - record
+  - primary
+  - figures
+  - search
+  dimensions:
+  - name: material_kind
+    value: secondary_resource
+    definition: Heterogeneous grinding-fluid-trap waste represented by the sampled
+      Tatra feed.
+    evidence_ids:
+    - primary
+  - name: criticality
+    value: Not asserted
+    definition: No jurisdiction, list, edition or constituent-element designation
+      is inherited by the resource.
+    evidence_ids:
+    - record
+- assessment_id: organism
+  area: identity
+  topic: Historical species name without strain authentication
+  outcome: supported
+  summary: The current species CURIE maps the historical name correctly and is explicitly
+    separated from experimental stock identity.
+  target_ids:
+  - cmmmech:metal-grinding-sludge
+  evidence_ids:
+  - primary
+  - taxon
+  dimensions:
+  - name: organism_and_biomass
+    value: Source-described pure live Thiobacillus ferrooxidans culture; species mapping
+      NCBITaxon:920
+    definition: Košice institution provenance is reported, but no strain accession
+      or stock authentication is established.
+    evidence_ids:
+    - primary
+    - taxon
+- assessment_id: experiment
+  area: evidence
+  topic: Conditional laboratory culture-associated leaching
+  outcome: supported
+  summary: The record preserves the reported assay conditions and distinguishes culture-associated
+    changes from demonstrated microbial enhancement.
+  target_ids:
+  - cmmmech:metal-grinding-sludge
+  evidence_ids:
+  - primary
+  - figures
+  - limits
+  dimensions:
+  - name: substrate_and_pretreatment
+    value: 10 g grinding sludge in sterilized Erlenmeyer flasks
+    definition: Flask sterilization does not demonstrate sterile feed; no extra pretreatment
+      is inferred.
+    evidence_ids:
+    - primary
+  - name: conditions
+    value: 180 mL FeSO4-free 9K medium plus 20 mL inoculum; pH 1.8–2.0, 26–30 degrees
+      C, 28 days
+    definition: Agitation, pH-adjusting reagent/amount and inoculum carryover chemistry
+      remain unspecified.
+    evidence_ids:
+    - primary
+  - name: controls_and_replication
+    value: No matched abiotic leaching arm or flask replication reported
+    definition: Five MPN dilution arrays are analytical assay arrays, not five leaching
+      replicates.
+    evidence_ids:
+    - primary
+    - limits
+  - name: outcome_and_deployment
+    value: Changed residues, increasing reported aqueous Fe(II) and MPN estimates;
+      laboratory scale
+    definition: No isolated product, complete extraction, economic suitability or
+      industrial bioleaching deployment is established.
+    evidence_ids:
+    - primary
+    - figures
+    - limits
+- assessment_id: quantitation
+  area: evidence
+  topic: Recovery accounting and alternative explanations remain explicit
+  outcome: supported
+  summary: The record imports no numerical recovery yield or mechanistic necessity.
+    Persistent phases, inconsistent recovery bookkeeping and untested optimization
+    claims are appropriately limited.
+  target_ids:
+  - cmmmech:metal-grinding-sludge
+  evidence_ids:
+  - record
+  - figures
+  - limits
+  dimensions: []
+  details: Independent arithmetic check of Table 1 gives concentration-depletion values
+    of about 84.15% Pb, 14.56% Mn and 21.94% Fe, different from the printed 98.41%,
+    13.45% and 18.89%. These calculations diagnose disagreement; they are not replacement
+    mass-recovery estimates. Increased relative Ti/Al fractions need not mean net
+    uptake. The abstract and body differ in their highlighted element sets. Morphology,
+    MPN and Fe(II) trends do not identify an enzyme or establish microbial necessity.
+- assessment_id: provenance
+  area: provenance
+  topic: Actual curation and exact reviewed bytes
+  outcome: supported
+  summary: The inline CREATE event and canonical CREATE sidecar describe this new
+    curation without fabricating prior authorship. Independent review adds no record
+    history event.
+  target_ids:
+  - cmmmech:metal-grinding-sludge
+  evidence_ids:
+  - record
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- Evidence is one historical laboratory experiment on one process-specific feed; generalization
+  to all grinding sludge is unsupported.
+- The source lacks matched abiotic leaching controls, authenticated strain identity
+  and documented independent flask replication.
+- The recovery row and missing solid/liquid inventory information do not permit defensible
+  mass-based extraction yields. Fe(II) assay detail and analytical uncertainty are
+  not supplied.
+- Culture-associated dissolution is not demonstrated microbial necessity, direct attachment/enzyme
+  action, an isolated metal product or industrial deployment.
+- Correction and conflicting-evidence searches are bounded to the documented returned
+  sets. Related symposium and adjacent-study full primaries were not reassessed.
+- The original publisher PDF and curator-rendered page pixels were independently read;
+  this reviewer did not independently reacquire or rerender the PDF.
+notes:
+- Original-source preparation preceded canonical inspect; all frozen maintained claims
+  were assessed only after inspect captured their exact bytes.
+- All four tables and seven figures were inspected, including the companion feed,
+  to guard against cross-feed evidence transfer.
+- No record correction or corrective issue was warranted within this scope. Structural
+  validation does not establish scientific truth.
+- Final batch receipts were inspected after all three round28 records froze. This
+  target and its canonical context inputs remained byte-identical through the save
+  preparation.
+tags:
+- round28
+- independent
+- scientific-review
+- secondary-resource

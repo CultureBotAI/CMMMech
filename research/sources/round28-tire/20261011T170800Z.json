@@ -1,0 +1,532 @@
+{
+  "created_utc": "2026-10-11T17:08:00.740912Z",
+  "author": "Codex /root/round27_packaging",
+  "scope": "Source assessment and curator handoff for one locally curated record; independent scientific review is assigned separately and remains pending.",
+  "supersedes_assessment": [
+    "/private/tmp/cmm-round28-tire-research/20261011T164239Z.md",
+    "/private/tmp/cmm-round28-tire-research/20261011T170319Z.md"
+  ],
+  "repo_head_at_dedup": "9f37042ef36b8f20ebf44f8228f6a4b5d27e00c3",
+  "decision": {
+    "ready_for_narrow_record": true,
+    "status": "ready_for_manual_curation_with_partial_support_and_explicit_null_metal_outcome",
+    "not_ready_for": [
+      "positive microbialZnextraction",
+      "specificLcp/Dsz/4Senzyme mechanism",
+      "fullcarbonmineralization",
+      "DES×microbial synergy",
+      "industrialdeployment"
+    ],
+    "reason": "Complete primary text, tables, all eleven original figures and complete SI inspected; strain verified. Convergent phenotypic transformation observations support the narrow record with partial evidence and explicit failure to demonstrate microbial Zn extraction. Older journal full text is not prerequisite for this claim."
+  },
+  "primary": {
+    "doi": "10.1039/d6ra01664b",
+    "title": "Deep eutectic solvent-assisted bacterial devulcanization, detoxification, and degradation of waste tyre rubber",
+    "authors": [
+      "Pritish R. Shukla",
+      "Utpal Roy",
+      "Sunil Bhand"
+    ],
+    "journal": "RSC Advances",
+    "year": 2026,
+    "volume": 16,
+    "issue": 28,
+    "pages": "26205–26221",
+    "publication_date": "2026-05-18",
+    "pmcid": "PMC13185686.1",
+    "pmid": "42164597",
+    "license": "CC BY-NC3.0",
+    "fulltext_route": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13185686/fullTextXML",
+    "graphics_and_SI_route": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13185686/supplementaryFiles",
+    "publisher_main_pdf": "Not acquired. FullXMLbody+originalgraphicsandSI were acquired legitimately throughEuropePMC.",
+    "provenance": "XMLDOI/title/PMCID match Crossref;each11figuregraphic andSI mediahrefmatches ZIPmember;SI title/authors matcharticle.",
+    "correction_check": "ExactDOI+Correction andExactDOI+Erratum websearch2026-10-11 returnednoresults;inspectedCrossrefrelation/update fields empty. Boundedchecknotabsoluteabsence."
+  },
+  "contract": {
+    "identity": {
+      "proposed_record_id": "cmmmech:ground-waste-tire-rubber",
+      "proposed_slug": "ground-waste-tire-rubber",
+      "kind": "secondary_resource",
+      "name": "Ground waste tire rubber",
+      "source_feed": "Waste tire recycling facility, supplier/tire model not specified; ground material400–600 micrometres.",
+      "exclude": [
+        "elemental zinc",
+        "zinc oxide mineral species",
+        "tire combustion ash",
+        "tire pyrolysis char",
+        "rubber manufacturing waste",
+        "natural-rubber gloves",
+        "separate identity solely for DES-pretreated aliquot"
+      ],
+      "criticality": "No criticality assertion. Tire rubber does not inherit a jurisdiction/list/edition designation from zinc."
+    },
+    "organism": {
+      "paper": "Rhodococcus rhodochrous RPK1 (DSM103064)",
+      "verified_collection": "DSM 103064; RPK 1; DSMZ official catalogue",
+      "species_curie": "NCBITaxon:1829",
+      "curie_scope": "Species, not strain. Verified current NCBI tree node and corroborating BacDive.",
+      "biomass": "Growing whole-cell culture; nutrient-broth-grown inoculum. No killed-cell test, isolated enzyme or knockout established."
+    },
+    "pretreatment": {
+      "GTR_cleaning": "Three70%ethanol washes; vacuum dry45°C toconstantweight.",
+      "DES": "Choline chloride:urea1:2 molar, prepared70°C; rubber:DES1:40w/w.",
+      "sequence": "Room-temperature swelling24h; water-bath sonication37kHz2h;180°C withstirring45min;wash70%ethanol,filter,dry50°C toconstantweight.",
+      "attribution": "Chemical pretreatment. Zn fraction reduction in DES-only treatment must not be assigned to bacteria."
+    },
+    "culture": {
+      "medium": "Mineral salts medium pH7.0±0.05;100mL in250mL flasks",
+      "solids": "1%w/v untreated orDES-pretreatedGTR",
+      "inoculum": "10%v/v nutrient-broth-grown culture,OD6000.8–1.0",
+      "conditions": "30°C,120rpm,28days",
+      "controls": "Untreated-GTR abiotic control and biotic MSM/no-GTR control; DES-only compositional/swelling comparator. No DES-pretreated abiotic28-day comparator shown in weight-loss/Schiff data.",
+      "limits": "Inoculum washing is not described; nutrient-broth carryover limits sole-carbon-source inference. Recovery/washing/drying of postculture particles for gravimetry is not specified as clearly as chemical preparation; attached biomass/filler changes may affect residues."
+    },
+    "zinc": {
+      "assay": "Section2.7.3:0.1g residue digested5mL68.9%HNO3,24hroomtemperature;diluted250mL2%HNO3,0.2micrometreGF+PVDFfilter;ICP-OES213.857nm,externalmultielementcalibration.",
+      "units": "wt%Zn in solid residue, not aqueous recovery",
+      "reported": [
+        {
+          "treatment": "untreated",
+          "mean": 1.94,
+          "plus_minus": 0.06
+        },
+        {
+          "treatment": "bacteria",
+          "mean": 2.25,
+          "plus_minus": 0.1
+        },
+        {
+          "treatment": "DES only",
+          "mean": 1.3,
+          "plus_minus": 0.17
+        },
+        {
+          "treatment": "DES then bacteria",
+          "mean": 1.73,
+          "plus_minus": 0.11
+        }
+      ],
+      "replicates": "Not specified for ICP in inspected method/result; do not borrow EDS n=2 or crosslink n=3.",
+      "interpretation": "No demonstrated microbial Zn release/removal. DES-only lowered measured solid Zn fraction, described by authors as33%removal; no liquid Zn inventory, recovery product or closed balance is reported. Increased residue fractions do not prove zero absolute Zn loss, and source unchanged-absolute-Zn assertion is not quantitatively demonstrated.",
+      "surface_EDS": "Table1 Znwt%:untreated3.36,Bio2.06,DES0.80,DES+Bio1.06;n=2surface measurements. Local fraction decrease with Bio is distinct from digestICP increase; not interchangeable or a metal-recovery measurement."
+    },
+    "transformation": {
+      "evidence_level": "Partial phenotypic support for microbial rubber transformation; no enzyme-specific causal proof.",
+      "crosslink_density_units": "10^-5 mol/cm^3",
+      "crosslink_density": [
+        {
+          "treatment": "untreated",
+          "mean": 9.61,
+          "SD": 0.16
+        },
+        {
+          "treatment": "bacteria",
+          "mean": 8.09,
+          "SD": 0.29
+        },
+        {
+          "treatment": "DES only",
+          "mean": 7.03,
+          "SD": 0.25
+        },
+        {
+          "treatment": "DES then bacteria",
+          "mean": 5.44,
+          "SD": 0.12
+        }
+      ],
+      "crosslink_n": 3,
+      "crosslink_assay": "Acetone extraction24h then n-hexane swelling25°C72h;Flory-Rehner model,chi0.45,rubberdensity1.15g/cm^3.",
+      "crosslink_reported_reductions_percent": [
+        15.81,
+        26.84,
+        43.6
+      ],
+      "gravimetry": {
+        "locator": "SI TableS2;Fig9a;section3.10",
+        "initial_g": 1.0,
+        "rows": [
+          {
+            "treatment": "untreated-GTR abiotic",
+            "final_g": 0.967,
+            "gross_loss_percent": 3.3,
+            "plus_minus": 2.36
+          },
+          {
+            "treatment": "bacteria/GTR",
+            "final_g": 0.951,
+            "gross_loss_percent": 4.93,
+            "plus_minus": 1.15
+          },
+          {
+            "treatment": "bacteria/DES-pretreatedGTR",
+            "final_g": 0.841,
+            "gross_loss_percent": 15.84,
+            "plus_minus": 8.78
+          }
+        ],
+        "net_text_percent": [
+          1.63,
+          12.53
+        ],
+        "net_basis": "Authors subtract untreated abiotic loss. RoundedSI15.84−3.30=12.54 percentage points vs12.53 text;retainroundingdifference. It is not percentageofcontrolremainingmass, isolatedproductyield or DES-specificbioticincrement.",
+        "replicates_and_uncertainty": "SI does not define replicate count or ± statistic for this table; Fig9 has error bars without caption n/statistic. Do not relabel automatically asSD."
+      },
+      "CHNS_wtpercent": [
+        {
+          "treatment": "untreated",
+          "C": 88.66,
+          "S": 2.34
+        },
+        {
+          "treatment": "DES only",
+          "C": 84.9,
+          "S": 1.94
+        },
+        {
+          "treatment": "bacteria",
+          "C": 83.18,
+          "S": 1.95
+        },
+        {
+          "treatment": "DES then bacteria",
+          "C": 77.51,
+          "S": 1.84
+        }
+      ],
+      "product_assays": "Schiff qualitative positive relative to photographed controls;LC-MS assignments tentative. Neither demonstrates CO2 mineralization or purified product recovery.",
+      "mechanistic_boundary": "Use mechanism category other or recycling with a clear rubber-transformation description, not bioleaching/recovery. Label proposed Lcp/Dsz/4S pathways as untested literature interpretation or omit."
+    },
+    "scale": "Laboratory flask experiments only. No pilot or industrial demonstration, isolatedZnproduct,processmassbalanceorvalidatedLCA."
+  },
+  "graphics_review": [
+    {
+      "locator": "Figure 1",
+      "observation": "Both rubber cultures rise above the biotic no-rubber control. Viability peaks at day14; the OD trace of pretreated rubber keeps increasing through day28.",
+      "limit": "Figure1b axis places maxima around 10^12 CFU/mL, whereas section3.1 reports 1.92e9 and1.33e9. Do not curate exact growth counts or claim both growth measures peak day14."
+    },
+    {
+      "locator": "Figure 2",
+      "observation": "Treatment-associated FTIR spectral changes are visible.",
+      "limit": "No pretreatment-only trace. Bands are not enzyme-specific or a direct Zn balance; section3.2 explicitly calls some changes minimal/ambiguous."
+    },
+    {
+      "locator": "Figures 3–4",
+      "observation": "Cells and surface irregularities are visible in bacterial treatments; untreated material is relatively smooth.",
+      "limit": "Qualitative selected SEM fields do not directly prove carbon-carbon bond cleavage or rank degradation severity; source itself limits visual discrimination."
+    },
+    {
+      "locator": "Figure 5; SI Table S1",
+      "observation": "Carbon/sulfur weight fractions differ by treatment; source percentage-removal labels are relative fraction changes.",
+      "limit": "Not an elemental mass balance, carbon mineralization measurement or recovered sulfur product."
+    },
+    {
+      "locator": "Figure 6; Table 2",
+      "observation": "Swelling-derived crosslink density declines and sol fraction increases. Horikx points lie near selective-scission curve for Bio and between ideal curves for combination.",
+      "limit": "Model-dependent interpretation; printed sol-fraction equation brackets are problematic. No specific enzyme causality or isolated bond-cleavage product identity."
+    },
+    {
+      "locator": "Figure 7",
+      "observation": "Thermal loss occurs in DES and DES/GTR mixture at180°C; chart marks45-minute hold.",
+      "limit": "Methods2.5 says60-minute hold. Do not turn this into a microbial result or assert process sustainability."
+    },
+    {
+      "locator": "Figure 8",
+      "observation": "Three TGA curves shift with treatment.",
+      "limit": "Chart final blue char residue lies above orange while its embedded table assigns35.573% to Bio and34.898% to combination; avoid exact thermal ranking and kinetic mechanistic claims."
+    },
+    {
+      "locator": "Figure 9; SI Table S2",
+      "observation": "Gross weight losses and error bars agree with SI. Pink Schiff staining in both rubber-plus-bacteria groups; photographed biotic/no-GTR and abiotic/GTR controls lack that pink coloration.",
+      "limit": "Only untreated abiotic GTR row shown; no DES-pretreated abiotic weight-loss or Schiff comparator. Assay is qualitative and not a unique oligomer identity."
+    },
+    {
+      "locator": "Figure 10",
+      "observation": "Protein bars vary through time; combined treatment usually higher.",
+      "limit": "Prose all-increase and day28 control0.38 mg/mL conflict with declining/nonmonotonic plotted control, approximately0.31 atday28. Do not curate exact protein claim."
+    },
+    {
+      "locator": "Figure 11",
+      "observation": "ABTS oxidation activities labeled laccase/peroxidase rise through28days, especially after pretreatment.",
+      "limit": "Functional colorimetric assays and literature discussion do not establish particular protein/gene causality for rubber transformation or Zn extraction."
+    },
+    {
+      "locator": "SI pages1–4, Tables S1–S3, Figures S1–S2",
+      "observation": "All four pages rendered and inspected; page4 blank. S1 disc image is overlapped by S2 in page3 layout, so both original embedded JPEGs were extracted and inspected separately.",
+      "limit": "S1 is a qualitative plate photo without visible inhibition zones, not general nontoxicity. S2 is overlaid chromatographic traces without an abiotic blank and TableS3 gives tentative assignments, not standards-confirmed products."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "major claim boundary",
+      "key": "chemical-versus-microbial-zinc",
+      "finding": "Zn decline belongs to chemicalDES comparator; biological stages show increased residueZnfractions.",
+      "action": "Explicit null/negative extraction outcome; no positivebioZnrecovery."
+    },
+    {
+      "severity": "major claim boundary",
+      "key": "matched-controls",
+      "finding": "No DES-pretreated abiotic28-day gravimetry/Schiff comparator;brothcarryover andgravimetricbiomasshandling unclear.",
+      "action": "Partial transformation support only;no synergy, solecarbon, mineralization or precise netbioyield."
+    },
+    {
+      "severity": "major source conflict",
+      "key": "growth-figure-scale",
+      "finding": "MainFigure1b ~10^12 peak vsprose~10^9;Figure1a continuesODincrease afterday14.",
+      "action": "Preserve conflict and omit exactgrowthclaims."
+    },
+    {
+      "severity": "moderate source limitations",
+      "key": "mass-balance",
+      "finding": "AuthorassertsabsoluteZnunchanged but no pairedwhole-feedZn inventories.",
+      "action": "Do not claim experimentallyprovenzeroabsoluteZnloss. Priorhandoff1.63%net-lossconsistencycalculationis superseded:TableS2gross4.93% yieldsconservedZnprediction2.0406wt%,observed2.25. This conditionalcalculationonly flagsmissingbalance;notnewmeasurement."
+    },
+    {
+      "severity": "moderate source limitations",
+      "key": "assay-identities",
+      "finding": "Modelcrosslink/FTIR/ABTS/Schiff/LCMS do not isolateenzymeortracecarbon. TableS3 firstformulaC20H32O2[M+Na]+ would be about327nominalm/z, notlisted307.",
+      "action": "LCMSassignmentsremainputative;omitspecificoligomer/enzymecausality."
+    },
+    {
+      "severity": "minor source conflicts",
+      "key": "ancillary-figures",
+      "finding": "TGA60minmethodvs45minfigure;Fig8charresiduerankingdiffersfromembeddedtable;Fig10proteinprosevsplottedtrajectory.",
+      "action": "Preserve inhandoff;excludeunnecessaryexactthermal/proteinclaims."
+    },
+    {
+      "severity": "minor presentation/source uncertainty",
+      "key": "SI-layout-and-formula",
+      "finding": "SI Figure S1 partly overlaps Figure S2 in the PDF layout; extracted original images were inspected. The printed sol-fraction equation has problematic parentheses.",
+      "action": "Do not repair primarysilently;deriveonlyclearlydocumentedclaims."
+    }
+  ],
+  "dedup": {
+    "utc": "2026-10-11T17:00:34.412718+00:00",
+    "scopes": [
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history",
+      "/private/tmp/cmm-round27-packaging-raw",
+      "/private/tmp/cmm-round27-eaf-slag-raw",
+      "/private/tmp/cmm-round26-root-raw"
+    ],
+    "query": "(?i)(\\btires?\\b|\\btyres?\\b|\\brubber\\b|d6ra01664b|s11104-012-1303-7|s12649-021-01468-0|CP16316)",
+    "flags": [
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-l"
+    ],
+    "exit_code": 0,
+    "matching_paths": [
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records/polymetallic-nodules.yaml"
+    ],
+    "stderr": "",
+    "excluded": [
+      "other worktrees",
+      "unreferenced raw/download directories",
+      "this tire research directory"
+    ],
+    "head": "9f37042ef36b8f20ebf44f8228f6a4b5d27e00c3"
+  },
+  "acquisition_logs": [
+    "/private/tmp/cmm-round28-tire-research/raw/acquisition-1.json",
+    "/private/tmp/cmm-round28-tire-research/raw/acquisition-2.json",
+    "/private/tmp/cmm-round28-tire-research/raw/acquisition-3.json",
+    "/private/tmp/cmm-round28-tire-research/raw/acquisition-4.json",
+    "/private/tmp/cmm-round28-tire-research/raw/acquisition-5.json",
+    "/private/tmp/cmm-round28-tire-research/raw/acquisition-6.json",
+    "/private/tmp/cmm-round28-tire-research/raw/acquisition-7.json"
+  ],
+  "artifacts": [
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-pmc.xml",
+      "bytes": 167737,
+      "sha256": "4773650b133d943158045ccf396cda5caa540834eeec031057f90b25f7c469e2"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-primary.txt",
+      "bytes": 51998,
+      "sha256": "fa51556150cfdf7a2f5748882944c9f87ecb4de6584ee6a206424c756c6e85a1"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-crossref.json",
+      "bytes": 18064,
+      "sha256": "70649db1e90c158d231496b8fd91c5605cf82e0f75b3107f6354e48c07cdd2b2"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-supplementary.zip",
+      "bytes": 1264797,
+      "sha256": "b85696b3470f7d6aa465c82a2ffcab892031a364465d137fb3151cc841707a70"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-supplementary/RA-016-D6RA01664B-s001.pdf",
+      "bytes": 271117,
+      "sha256": "4fa49a807edcadd3d5d891962cd5ddffb90e8d0afe580b331171e40e7726de20"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-supplementary-extraction.json",
+      "bytes": 3793,
+      "sha256": "02d0a76e407f590683b19492a88e39cf48962da0df17b7280126eebe8259e0ff"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-provenance-crosscheck.json",
+      "bytes": 1717,
+      "sha256": "9339767a3929212c501c055cda2d4d02c3e584d7cf878091989e255b96131af6"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/dsm103064.html",
+      "bytes": 48045,
+      "sha256": "ba5941dde7ba39af82d881a059c58046adcdc065c209c936fefc46e4854a85d5"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/bacdive131917.html",
+      "bytes": 77946,
+      "sha256": "209704c54eeb9fcfbf1cb6941c60edc69f0d60d87fc50bb4457db266c23f0ea5"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/ncbitaxon1829.html",
+      "bytes": 21699,
+      "sha256": "695bba4ab3ff143cc5df74579888a03dae4c481b3c4ff833af32aef8d7c7abfc"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-supplementary/d6ra01664b-f1.jpg",
+      "bytes": 62010,
+      "sha256": "3b12d1ec9a0b9f8a777dde650dc6fe6f2019157ab9abe3073929307eab119122"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-supplementary/d6ra01664b-f2.jpg",
+      "bytes": 113998,
+      "sha256": "19a125f145995a8aa521a37bd4f83e40d16a6fa95a973df70e2fa014b20b9450"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-supplementary/d6ra01664b-f3.jpg",
+      "bytes": 206926,
+      "sha256": "07a7afed100abf3f5ec50f0090ff0890916e6ea0bab8d955d7bdbf49ee06878e"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-supplementary/d6ra01664b-f4.jpg",
+      "bytes": 204137,
+      "sha256": "a0f73a2c44fa6a730b22a5e24eda028fcf34e2f0021a1f61414349a55c704685"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-supplementary/d6ra01664b-f5.jpg",
+      "bytes": 51119,
+      "sha256": "6bb6adeca8d8761f2c77708cef41a63581c262cf5f372bff0e3e993a56328b55"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-supplementary/d6ra01664b-f6.jpg",
+      "bytes": 61937,
+      "sha256": "8cec11804542eb7efb07d8254bd7eadd96affc21b990e0e106a160da46ddeed2"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-supplementary/d6ra01664b-f7.jpg",
+      "bytes": 70147,
+      "sha256": "e804b46c28911df005bc97ea71d4d353100c6e178746e6a31e015d8e6f9b7069"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-supplementary/d6ra01664b-f8.jpg",
+      "bytes": 94822,
+      "sha256": "8804782afc3943f94cb70df2de80c5122fe2d97487b5b14a3259c4e03488c92d"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-supplementary/d6ra01664b-f9.jpg",
+      "bytes": 93297,
+      "sha256": "32b097df330a4fcdc46067c02c5a8456a9d16002b3cd38d61b91942d59996ab8"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-supplementary/d6ra01664b-f10.jpg",
+      "bytes": 70757,
+      "sha256": "7ed8ac01a990c6b5856d3710f0578e010630b08a1ecedc403d25ab6d61937a55"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-supplementary/d6ra01664b-f11.jpg",
+      "bytes": 61211,
+      "sha256": "428f00cb1a9cd9ec274d57b07f198570a73fc4a534f10462c8af12e952efd2a7"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-supplementary/supplement-page-1.png",
+      "bytes": 89095,
+      "sha256": "3a4ac4d2b88319257c04463de98e50bb99d3e2411595e7d95fc269cde5a04cb8"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-supplementary/supplement-page-2.png",
+      "bytes": 102063,
+      "sha256": "212aff6e0347c5e8e2f6ece36c57707639e233edc2e779d351ccd2da886ec095"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-supplementary/supplement-page-3.png",
+      "bytes": 253724,
+      "sha256": "d23f431c5feedc4eda618c9f5b73af051f8c6ed4ca14979c83190a3b27ea3881"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-supplementary/supplement-page-4.png",
+      "bytes": 8045,
+      "sha256": "2076d659beccc8ba41397bec82329b4ee44b4811f506df75dd9d1e420f2e82b4"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-supplementary/supplement-p3-image1.jpeg",
+      "bytes": 62731,
+      "sha256": "c92f34edef1e35dbcdc738620aae2eb53d2df28397e5998aed94a7bd21cf0b17"
+    },
+    {
+      "path": "/private/tmp/cmm-round28-tire-research/raw/des2026-supplementary/supplement-p3-image2.jpeg",
+      "bytes": 69241,
+      "sha256": "28851838ff9c45728e84101a20e2dd65626f1ace9b47293b0004130e50dfdbc6"
+    }
+  ],
+  "older_sources": "2012and2019remainfulltext-deferred;no repeated accessattempt thisfollowup.2011conferenceand2023chemicalpaper not usedtofill2026gaps.",
+  "next_steps": [
+    "Independent scientific review of exact frozen record and history",
+    "Parent final just check, nonempty corpus, append-only history and structured review gates",
+    "Address any supported findings through corrected record/history and successor reviews",
+    "Optional full-primary 2012/2019 soil-mobilization extension; no abstract-based imports"
+  ],
+  "correction_to_prior_handoff": "Independent draft cross-check identified an erroneous curator claim that SI Table S2 misspelled the organism. Reinspection of the original page and PDF text confirms rhodochrous in the heading and rows. Removed from record before its first freeze and corrected in this successor. No primary-source spelling error is asserted.",
+  "curation": {
+    "worktree": "/private/tmp/CMMMech-expansion-round28-20261011",
+    "base": "9f37042ef36b8f20ebf44f8228f6a4b5d27e00c3",
+    "branch": "curate/cmm-expansion-round28-20261011",
+    "record": "data/records/ground-waste-tire-rubber.yaml",
+    "record_sha256": "10ca9ca7bd494f12919f5a1d1a4220fee2685560b7dbc1222881c973564e1dd2",
+    "history": "history/records/ground-waste-tire-rubber/2026-10-11T170536Z-codex-b238c9.yaml",
+    "history_sha256": "091cbd953d648948997165804163e6630608c9a902880269b7bd78efbad7c926",
+    "validation": {
+      "command": "UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 uv run --locked cmmmech validate data/records/ground-waste-tire-rubber.yaml",
+      "terminal_exit_code": 0,
+      "records_checked": 1,
+      "failed": 0
+    },
+    "independent_review": "Assigned to /root/round27_eaf_slag; no positive review claimed yet",
+    "full_batch_gates": "Parent will run on all frozen round28 records."
+  },
+  "worktree_dedup_after_target_creation": {
+    "utc": "2026-10-11T17:08:00.740912+00:00",
+    "query": "(?i)(\\btires?\\b|\\btyres?\\b|\\brubber\\b|d6ra01664b|s11104-012-1303-7|s12649-021-01468-0|CP16316)",
+    "scopes": [
+      "/private/tmp/CMMMech-expansion-round28-20261011/data/records",
+      "/private/tmp/CMMMech-expansion-round28-20261011/research",
+      "/private/tmp/CMMMech-expansion-round28-20261011/reviews",
+      "/private/tmp/CMMMech-expansion-round28-20261011/history",
+      "/private/tmp/cmm-round27-packaging-raw",
+      "/private/tmp/cmm-round27-eaf-slag-raw",
+      "/private/tmp/cmm-round26-root-raw"
+    ],
+    "flags": [
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-l"
+    ],
+    "exit_code": 0,
+    "matches": [
+      "/private/tmp/CMMMech-expansion-round28-20261011/history/records/ground-waste-tire-rubber/2026-10-11T170536Z-codex-b238c9.yaml",
+      "/private/tmp/CMMMech-expansion-round28-20261011/data/records/ground-waste-tire-rubber.yaml",
+      "/private/tmp/CMMMech-expansion-round28-20261011/research/sources/round28-mineral-frontier/20261011T170545Z-handoff.md",
+      "/private/tmp/CMMMech-expansion-round28-20261011/data/records/polymetallic-nodules.yaml"
+    ],
+    "stderr": "",
+    "interpretation": "Expected new tire record/history plus irrelevant rubber-stopper mention in nodule record. Pre-creation original-checkout dedup is preserved separately; other worktrees and unreferenced raw directories excluded."
+  }
+}
