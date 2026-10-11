@@ -1,0 +1,1163 @@
+{
+  "timestamp_utc": "2026-10-11T17:48:24.998657+00:00",
+  "actor": {
+    "name": "codex",
+    "model": "GPT-6",
+    "role": "source investigator and record curator; not independent scientific reviewer"
+  },
+  "worktree": "/private/tmp/CMMMech-expansion-round29-20261011",
+  "base": "7629ab50846229c87987d7fa0ac12389212bb70f",
+  "record": {
+    "path": "data/records/bastnaesite.yaml",
+    "sha256": "719dafc38a258c140dafa5c718a651d19c7300c9aa0643fe293898d56f1b6448",
+    "id": "cmmmech:bastnaesite",
+    "kind": "mineral_group",
+    "history_path": "history/records/bastnaesite/2026-10-11T174551Z-codex-b64d41.yaml",
+    "history_sha256": "4b6f618c7e59982983f37a60a4ef3c95b40e1f9ea3c53073ba014c6b30b148a7"
+  },
+  "readiness": "Ready for independent scientific review of the narrowed 2025 experiment; named validation passed. This dossier is not acceptance or independent review.",
+  "identity": {
+    "scope": "F-dominant bastnaesite fluorocarbonate family REE(CO3)F; not entire broader structural group",
+    "species_authority": "IMA-CNMNC September2026 PDF p21: separately named Ce,La,Nd,Y species",
+    "mineral_identifier": null,
+    "organism": "NCBITaxon:1428 Bacillus thuringiensis",
+    "isolate": "Wild Renju deposit isolate called Bt; no accession or collection code supplied in inspected 2025 main/SI",
+    "species_assignment_limit": "Bulk mineral composition does not establish a formal endmember species; NCBI species resolution does not verify an isolate genome."
+  },
+  "accepted_source": {
+    "doi": "10.1016/j.gca.2025.02.027",
+    "authors": [
+      "Yilin He",
+      "Lingya Ma",
+      "Xurui Li",
+      "Xun Liu",
+      "Xiaoliang Liang",
+      "Jianxi Zhu",
+      "Hongping He"
+    ],
+    "edition": "Geochimica et Cosmochimica Acta 394,43-52; April 2025",
+    "access": "Complete39page GFZ institutional postprint; publisher main article not downloaded. All8mainfigures and2tables visually inspected; complete text read. Complete5page publisher supplement visually inspected.",
+    "main_pdf": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-primary.pdf",
+    "main_sha256": "9f9d2b33987fb6ec9eee22de866f743fdbd0402bf69c66aa6a510315f2995a81",
+    "main_figures_visually_inspected_pdf_pages": [
+      9,
+      14,
+      16,
+      18,
+      20,
+      22,
+      29
+    ],
+    "tables_page": 39,
+    "supplement": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-supplement-1.pdf",
+    "supplement_pages_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reuse": "GFZ metadata marks postprint PUBLIC greenOA; no explicit reuse license found in inspected metadata. Bulk article/SI retained outside Git."
+  },
+  "dataset": {
+    "doi": "10.17632/6n6d3fkkpc.1",
+    "version": 1,
+    "published": "2024-10-29",
+    "license": "CC BY4.0",
+    "file": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-ResearchData.xlsx",
+    "sha256": "fac8f9bbf5fe5c081ea0a1ce58c3d204e698b7848be350c459246fdc407f2654",
+    "deposit_hash_matches": true,
+    "status": "Complete sole deposited workbook acquired, all7sheets inspected; same-study supporting data, not independent replication.",
+    "sheets": {
+      "Data1": "XRD patterns",
+      "Data2": "pH mean and SD",
+      "Data3": "planktonic CFU mean and SD",
+      "Data4": "111 normalized metabolite annotations; no calibrated culture molarities",
+      "Data5": "aqueous REE mean and SD,3biotic mineral arms; no numeric sterile/no-mineral control data",
+      "Data6": "96hour chemical leaching mean and SD; blank cells missing, not zero",
+      "Data7": "SEM-EDX energy/intensity for6spots"
+    }
+  },
+  "assays": [
+    {
+      "arm": "Exp-Biow",
+      "organism": "living Bt wild isolate",
+      "feed": "48-74micrometre natural Maoniuping mineral separate;0.5g/100mL",
+      "medium": "MgSO4·7H2O1g/L,KCl0.2g/L,NH4Cl1g/L,glucose10g/L;initialpH6;noP reagent added",
+      "inoculum": "100microlitres suspension;approximately10^6CFU/mL initial",
+      "conditions": "250mLflask;roomtemperature not numericallyspecified;180rpm;30days;triplicate",
+      "endpoint": "approximately1698micrograms/L aqueous totalREE;La~643,Ce~805",
+      "fraction": "0.22micrometre filtrate diluted in2%HNO3;ICP-MS",
+      "day30_pH_mean": 3.75667
+    },
+    {
+      "arm": "Buffered-Biow",
+      "difference": "20mM MES, nominalpH6",
+      "endpoint": "approximately84micrograms/L aqueous totalREE",
+      "day30_pH_mean": 5.75667
+    },
+    {
+      "arm": "Exp-bags",
+      "difference": "mineral enclosed10kDaMWCO35mmdialysisbag;otherwiseunbuffered",
+      "endpoint": "approximately490micrograms/L aqueous totalREE",
+      "day30_pH_mean": 4.44,
+      "causal_limit": "pH,planktoniccellcount and transport confound direct-contact attribution"
+    },
+    {
+      "arm": "Exp-Sterile/Buffered-Sterile, called Exp-Control/Buffered-Control in Results; Exp-Bt/Buffered-Bt",
+      "role": "uninoculated mineral and mineral-free cell controls",
+      "endpoint": "reportednearICP-MS detectionlimits;numericDL and control values not given in inspected main/SI/workbook"
+    },
+    {
+      "arm": "chemical leaching",
+      "conditions": "0.1gmineral/20mL in50mLtubes;HClororganicacid1or0.02mM;initialpH3,5,6;roomtemperature;180rpm;96hours",
+      "outcomes": "AtpH6,20micromolar tartaric/gluconic acids yield~130.9/134.8micrograms/LtotalREE. Seven initial acids have lowvalues or blanks atpH6; not exactzero.",
+      "causal_limit": "different matrix and duration from30day culture; concentrations not established as culture metabolite levels."
+    }
+  ],
+  "contradictions_and_limits": [
+    "Semiquantitative XRD~3wt%quartz versus XRF0.635wt%SiO2; unreconciled methods estimates, not exact purity.",
+    "Text late unbufferedpH~3.5 versus Figure2,Figure8 and Data2 nearer3.7; buffered endpoint5.7567 versus nominal6.",
+    "Discussion growth<oneorder conflicts with Data3/Figure2 early1.23million to70millionCFU/mL.",
+    "pH3organicacid range1915-2180 in main prose omits Data6crotonic1793.76micrograms/L.",
+    "Main pH6nonmobilization language coexists with Data6lowmeans up to~2.8micrograms/L and blanks; do not infer numerical zero.",
+    "Dialysis pH and cell counts differ; direct-contact independent effect not isolated.",
+    "Metabolomics are relative annotations; specific ligand necessity and concentrations not proven.",
+    "EDS and SEM support REE-bearing fine surface material, not unique precipitate phase; SI XRD noobviousphasechange.",
+    "No separated sorbed/solid inventories,closedmassbalance,extractionyield,isolatedproduct or deployment demonstrated.",
+    "Clayretentioninnaturalprofiles is inference, not directly measured adsorption."
+  ],
+  "deferred_sources": [
+    {
+      "doi": "10.1016/j.chemgeo.2018.03.023",
+      "edition": "ChemicalGeology483:544-557,2018",
+      "status": "Complete main unavailable after bounded publisher/API/institutional searches;metadata and complete publisherSI acquired.",
+      "si": "raw/2018-supplement-1.docx",
+      "inspection": "AllSIcaptiontext read; onlyFigureS3/image3.tiff visually inspected. Four labelsFXJ1.172,FXJ5.006,R171,FXJ1.532 are not species assignments.",
+      "next": "Acquire full main legitimately; verify all4taxa,media,matchedpHcontrols,rockvsmineralassays and denominators before curation."
+    },
+    {
+      "doi": "10.1016/j.jre.2025.03.025",
+      "edition": "JournalofRareEarths44(1):290-298,January2026;DOI/onlinelead2025",
+      "status": "Metadata identity verified; complete publisherSI acquired, main full article unavailable.",
+      "si": "raw/2025-supplement-1.docx",
+      "inspection": "SItext/captions read; embeddedfigures notvisuallyreviewed. Indexedpublisherpreview is not fulltextaccess.",
+      "next": "Acquire full main/figures, verify proposedA.ferrooxidans accessionGQ984157,feed preparation/phaseidentity,pyrite and abioticcontrols before mechanism."
+    },
+    {
+      "doi": "10.1016/j.biortech.2025.132680",
+      "status": "Additional discovery lead only, not fullprimaryinspected or curated; distinct from JRE source."
+    }
+  ],
+  "dedup": {
+    "hidden_and_ignored_included": true,
+    "method": "rg --hidden --no-ignore --follow -i; material variants,normalizedDOIs,PIIs and strainlabels; read prior source handoffs.",
+    "repository_scope": [
+      "round29worktree:data/records,research,reviews,history",
+      "originalcheckout:data/records,research,reviews,history"
+    ],
+    "raw_scope": [
+      "/private/tmp/cmm-round13-mineral-raw",
+      "/private/tmp/cmm-round12-aluminium-boron-raw",
+      "/private/tmp/cmm-round4-mineral-hosts-20261011",
+      "/private/tmp/cmm-next-li",
+      "/private/tmp/cmm-source-li2024.html",
+      "/private/tmp/cmm-round28-mineral-frontier-search.json",
+      "/private/tmp/cmm-round28-mineral-frontier-existing-hits.txt"
+    ],
+    "patterns": [
+      "bastnaesite",
+      "bastnasite",
+      "bastnäsite",
+      "10.1016/j.chemgeo.2018.03.023",
+      "10.1016/j.jre.2025.03.025",
+      "10.1016/j.gca.2025.02.027",
+      "10.17632/6n6d3fkkpc.1",
+      "S0009254118301359",
+      "FXJ1.172"
+    ],
+    "result": "Before this record, only prior research/frontier leads within these searched boundaries; no accepted bastnaesite record or the accepted2025experiment found. This is not a machine-wide absence claim. Binary source figures were inspected as specified, not exhaustively text-searched.",
+    "receipts": [
+      "dedup-hits.txt",
+      "dedup-prefreeze.txt"
+    ]
+  },
+  "notice_search": {
+    "queries": [
+      "\"10.1016/j.gca.2025.02.027\" correction erratum retraction",
+      "site.mindat.org/min-563.html Bastnäsite group",
+      "\"10.1016/j.chemgeo.2018.03.023\" pdf",
+      "\"10.1016/j.jre.2025.03.025\" pdf"
+    ],
+    "pagination": "first provider result batch; no claim of exhaustive indexing",
+    "restrictions": "No date restriction. Mindat query site-restricted; other queries unrestricted. Technical conclusions use primary sources only.",
+    "outcome": "No correction/retraction notice located in this bounded search. Mindat own indexed profile 563 confirms family scope; direct HTML requests returned403. Results did not supply complete main articles for the 2018 or JRE studies.",
+    "recorded_at_utc": "2026-10-11T17:48:24.998657+00:00",
+    "execution_time_note": "Final search batch performed during this investigation before this dossier timestamp; exact provider execution timestamp was not retained."
+  },
+  "validation": {
+    "command": "UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 uv run --locked cmmmech validate data/records/bastnaesite.yaml",
+    "exit_code": 0,
+    "checked": 1,
+    "failed": 0,
+    "observed_at_utc": "2026-10-11T17:48:24.998657+00:00",
+    "record_sha256": "719dafc38a258c140dafa5c718a651d19c7300c9aa0643fe293898d56f1b6448",
+    "scope": "Named-record validation observed before dossier generation; parent owns final full-corpus and native review gates."
+  },
+  "baseline_receipt": "/private/tmp/cmm-round29-baseline-terminal.json",
+  "acquisition_logs": {
+    "acquisition-1-sandbox-dns-failures.json": [
+      {
+        "url": "https://api.crossref.org/works/10.1016/j.chemgeo.2018.03.023",
+        "started_at": "2026-10-11T17:35:52.189731+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-crossref.json",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      },
+      {
+        "url": "https://api.crossref.org/works/10.1016/j.jre.2025.03.025",
+        "started_at": "2026-10-11T17:35:52.190704+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-crossref.json",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      },
+      {
+        "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.chemgeo.2018.03.023",
+        "started_at": "2026-10-11T17:35:52.191001+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-openalex.json",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S0009254118301359",
+        "started_at": "2026-10-11T17:35:52.191235+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-publisher.html",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S1002072125001139",
+        "started_at": "2026-10-11T17:35:52.191465+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-publisher.html",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      },
+      {
+        "url": "https://api.elsevier.com/content/article/doi/10.1016/j.chemgeo.2018.03.023?httpAccept=text/xml",
+        "started_at": "2026-10-11T17:35:52.228524+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-elsevier.xml",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      },
+      {
+        "url": "https://api.elsevier.com/content/article/doi/10.1016/j.jre.2025.03.025?httpAccept=text/xml",
+        "started_at": "2026-10-11T17:35:52.228832+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-elsevier.xml",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      }
+    ],
+    "acquisition-1.json": [
+      {
+        "url": "https://api.crossref.org/works/10.1016/j.chemgeo.2018.03.023",
+        "started_at": "2026-10-11T17:36:07.808601+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-crossref.json",
+        "status": 200,
+        "final_url": "https://api.crossref.org/works/10.1016/j.chemgeo.2018.03.023",
+        "content_type": "application/json",
+        "bytes": 35473,
+        "sha256": "41315ae9d69a783947be354756246d5add1211621b1441997f3dd87b2abc1f8d"
+      },
+      {
+        "url": "https://api.crossref.org/works/10.1016/j.jre.2025.03.025",
+        "started_at": "2026-10-11T17:36:07.811634+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-crossref.json",
+        "status": 200,
+        "final_url": "https://api.crossref.org/works/10.1016/j.jre.2025.03.025",
+        "content_type": "application/json",
+        "bytes": 17652,
+        "sha256": "cb3f624b9e04fbed172e6fd3eb7e229ab6f5ba50f730fd3e353ec8a1eb39fb52"
+      },
+      {
+        "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.chemgeo.2018.03.023",
+        "started_at": "2026-10-11T17:36:07.812846+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-openalex.json",
+        "status": 200,
+        "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.chemgeo.2018.03.023",
+        "content_type": "application/json",
+        "bytes": 26227,
+        "sha256": "f7de9b6df8695e5d8fdb1615fda1232f11bd5674ed007bb3654adc7ada56ddab"
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S0009254118301359",
+        "started_at": "2026-10-11T17:36:07.816886+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-publisher.html",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S1002072125001139",
+        "started_at": "2026-10-11T17:36:07.820059+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-publisher.html",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://api.elsevier.com/content/article/doi/10.1016/j.chemgeo.2018.03.023?httpAccept=text/xml",
+        "started_at": "2026-10-11T17:36:07.983941+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-elsevier.xml",
+        "status": 200,
+        "final_url": "https://api.elsevier.com/content/article/doi/10.1016/j.chemgeo.2018.03.023?httpAccept=text/xml",
+        "content_type": "text/xml;charset=UTF-8",
+        "bytes": 1829,
+        "sha256": "a1db14123072dbc04b2736bfc45c0178fd55a50951c71f39e3c49e36ed1c99f6"
+      },
+      {
+        "url": "https://api.elsevier.com/content/article/doi/10.1016/j.jre.2025.03.025?httpAccept=text/xml",
+        "started_at": "2026-10-11T17:36:08.004010+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-elsevier.xml",
+        "status": 200,
+        "final_url": "https://api.elsevier.com/content/article/doi/10.1016/j.jre.2025.03.025?httpAccept=text/xml",
+        "content_type": "text/xml;charset=UTF-8",
+        "bytes": 1840,
+        "sha256": "8c938c6f3d8f3201484431394e121c29ecd1fa11cbf22dfd165ca32de88d06a6"
+      }
+    ],
+    "acquisition-2.json": [
+      {
+        "url": "https://gfzpublic.gfz.de/pubman/item/item_5034287_3/component/file_5034752/5034287.pdf",
+        "started_at": "2026-10-11T17:36:36.468494+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-primary.pdf",
+        "status": 200,
+        "final_url": "https://gfzpublic.gfz.de/rest/items/item_5034287_3/component/file_5034752/content",
+        "content_type": "application/pdf; charset=UTF-8",
+        "bytes": 1610935,
+        "sha256": "9f9d2b33987fb6ec9eee22de866f743fdbd0402bf69c66aa6a510315f2995a81"
+      },
+      {
+        "url": "https://gfzpublic.gfz.de/pubman/faces/ViewItemOverviewPage.jsp?itemId=item_5034287_2",
+        "started_at": "2026-10-11T17:36:36.469300+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-repository.html",
+        "status": 200,
+        "final_url": "https://gfzpublic.gfz.de/pubman/faces/ViewItemOverviewPage.jsp?itemId=item_5034287_2",
+        "content_type": "text/html;charset=UTF-8",
+        "bytes": 44759,
+        "sha256": "76d85c39217faac39871fe3b07481c549859c2d6709856408db03ff39bd101c6"
+      },
+      {
+        "url": "https://api.crossref.org/works/10.1016/j.gca.2025.02.027",
+        "started_at": "2026-10-11T17:36:36.469535+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-crossref.json",
+        "status": 200,
+        "final_url": "https://api.crossref.org/works/10.1016/j.gca.2025.02.027",
+        "content_type": "application/json",
+        "bytes": 30560,
+        "sha256": "80c7043eb2cb7be7a79aae3c397dad83433cf06ce449beff34423a0621de7ceb"
+      },
+      {
+        "url": "https://api.elsevier.com/content/article/PII:S0009254118301359?httpAccept=text/xml",
+        "started_at": "2026-10-11T17:36:36.469717+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-pii-elsevier.xml",
+        "error": "HTTP Error 429: Too Many Requests"
+      },
+      {
+        "url": "https://api.elsevier.com/content/article/PII:S1002072125001139?httpAccept=text/xml",
+        "started_at": "2026-10-11T17:36:36.469893+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-pii-elsevier.xml",
+        "status": 200,
+        "final_url": "https://api.elsevier.com/content/article/PII:S1002072125001139?httpAccept=text/xml",
+        "content_type": "text/xml;charset=UTF-8",
+        "bytes": 1840,
+        "sha256": "8c938c6f3d8f3201484431394e121c29ecd1fa11cbf22dfd165ca32de88d06a6"
+      },
+      {
+        "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.jre.2025.03.025",
+        "started_at": "2026-10-11T17:36:37.335667+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-openalex.json",
+        "status": 200,
+        "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.jre.2025.03.025",
+        "content_type": "application/json",
+        "bytes": 19331,
+        "sha256": "310d6245e291fde570195fba398e125626f663236c4ad513c6de990a22987513"
+      }
+    ],
+    "acquisition-3.json": [
+      {
+        "url": "https://gfzpublic.gfz.de/rest/items/item_5034287_3",
+        "started_at": "2026-10-11T17:37:57.566037+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-item.json",
+        "status": 200,
+        "final_url": "https://gfzpublic.gfz.de/rest/items/item_5034287_3",
+        "content_type": "application/json; charset=UTF-8",
+        "bytes": 8125,
+        "sha256": "2e7fce8041da0d789a0bcd6b5c12c9e2bba548a7c1e94a8f179c604bb93a0647"
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S001670372500105X",
+        "started_at": "2026-10-11T17:37:57.567154+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-publisher.html",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://ars.els-cdn.com/content/image/1-s2.0-S001670372500105X-mmc1.docx",
+        "started_at": "2026-10-11T17:37:57.567477+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-supplement-1.docx",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://ars.els-cdn.com/content/image/1-s2.0-S001670372500105X-mmc1.pdf",
+        "started_at": "2026-10-11T17:37:57.567743+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-supplement-1.pdf",
+        "status": 200,
+        "final_url": "https://ars.els-cdn.com/content/image/1-s2.0-S001670372500105X-mmc1.pdf",
+        "content_type": "application/pdf",
+        "bytes": 354612,
+        "sha256": "5ca2571afac44acd054c4f90568309e04c07902fb772fa2dfad5999569d7409e"
+      }
+    ],
+    "acquisition-4.json": [
+      {
+        "url": "https://data.mendeley.com/datasets/6n6d3fkkpc/1",
+        "started_at": "2026-10-11T17:38:52.474221+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-data.html",
+        "status": 200,
+        "final_url": "https://data.mendeley.com/datasets/6n6d3fkkpc/1",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 122874,
+        "sha256": "2f8afc2eabfb78c7623ca1a8339b2f010513f65e3dd4e2e39275c8dbe734d100"
+      },
+      {
+        "url": "https://data.mendeley.com/public-api/datasets/6n6d3fkkpc/versions/1",
+        "started_at": "2026-10-11T17:38:52.475102+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-data-api.json",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://data.mendeley.com/public-api/datasets/6n6d3fkkpc",
+        "started_at": "2026-10-11T17:38:52.475402+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-data-api-v2.json",
+        "status": 200,
+        "final_url": "https://data.mendeley.com/public-api/datasets/6n6d3fkkpc",
+        "content_type": "application/json; charset=utf-8",
+        "bytes": 4410,
+        "sha256": "f34cc61ec98959ed505f0ccd6f223befe39d55b3a7fc641a544e799fc1c35ad8"
+      },
+      {
+        "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0009254118301359-mmc1.docx",
+        "started_at": "2026-10-11T17:38:52.475665+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-supplement-1.docx",
+        "status": 200,
+        "final_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0009254118301359-mmc1.docx",
+        "content_type": "application/word",
+        "bytes": 9901192,
+        "sha256": "7e71c736f28c5aaad910f3952a4fd65c339d8959a35fcd304bf04101b3924566"
+      },
+      {
+        "url": "https://ars.els-cdn.com/content/image/1-s2.0-S1002072125001139-mmc1.docx",
+        "started_at": "2026-10-11T17:38:52.476023+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-supplement-1.docx",
+        "status": 200,
+        "final_url": "https://ars.els-cdn.com/content/image/1-s2.0-S1002072125001139-mmc1.docx",
+        "content_type": "application/word",
+        "bytes": 12691110,
+        "sha256": "0880fb216c734e5ab3172da902404a9277654b167dfcd2ce236d8a17d4e15dc9"
+      },
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1428",
+        "started_at": "2026-10-11T17:38:53.215133+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/ncbi1428.html",
+        "status": 200,
+        "final_url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1428",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 59225,
+        "sha256": "7ead193bcaf1811712a390bf20af41ffce11af6abcdb99786c82689eaf2010a1"
+      },
+      {
+        "url": "https://www.mindat.org/min-563.html",
+        "started_at": "2026-10-11T17:38:53.316088+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/mindat563.html",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "acquisition-5.json": [
+      {
+        "url": "https://data.mendeley.com/public-files/datasets/6n6d3fkkpc/files/ee352e0f-561f-48c9-ace8-5afee97ae2ff/file_downloaded",
+        "started_at": "2026-10-11T17:40:06.700888+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-ResearchData.xlsx",
+        "status": 200,
+        "final_url": "https://prod-dcd-datasets-public-files-eu-west-1.s3.eu-west-1.amazonaws.com/0d309bcb-1012-4ca2-938d-054f7d11471b",
+        "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "bytes": 512898,
+        "sha256": "fac8f9bbf5fe5c081ea0a1ce58c3d204e698b7848be350c459246fdc407f2654"
+      },
+      {
+        "url": "https://www.mindat.org/show.php?id=563",
+        "started_at": "2026-10-11T17:40:06.701712+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/mindat563-show.html",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://api.crossref.org/works/10.1016/j.gca.2025.02.027",
+        "started_at": "2026-10-11T17:40:06.701931+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-crossmark.json",
+        "status": 200,
+        "final_url": "https://api.crossref.org/works/10.1016/j.gca.2025.02.027",
+        "content_type": "application/json",
+        "bytes": 30560,
+        "sha256": "80c7043eb2cb7be7a79aae3c397dad83433cf06ce449beff34423a0621de7ceb"
+      }
+    ],
+    "acquisition-6.json": [
+      {
+        "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+        "started_at": "2026-10-11T17:41:04.402075+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/ima-2026-09.pdf",
+        "status": 200,
+        "final_url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+        "content_type": "application/pdf",
+        "bytes": 3129886,
+        "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+      },
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1428&mode=Info",
+        "started_at": "2026-10-11T17:41:04.402969+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/ncbi1428-info.html",
+        "status": 200,
+        "final_url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1428&mode=Info",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 40773,
+        "sha256": "b639c3f9a5c53468d35beb87bdb414bee0da68ab8e27e50aab5eefc0ba1f1645"
+      },
+      {
+        "url": "https://www.mindat.org/min-563.html?lang=en",
+        "started_at": "2026-10-11T17:41:04.403212+00:00",
+        "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/mindat563-authority.html",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ]
+  },
+  "artifact_manifest": [
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/acquire-2.py",
+      "bytes": 982,
+      "sha256": "4c4c9468a9bb5784c3383a94d4015305a9ee1e19239a04b2ef0385cdf48debbc"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/acquire-3.py",
+      "bytes": 731,
+      "sha256": "cb6f2c4e148c17ee21dd28c69c307d4847e700c976c0c96085c248ee91f5344e"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/acquire-4.py",
+      "bytes": 950,
+      "sha256": "50ee015f508eb42d84bca11abff7af0663ff98857997561089dbba6126cfcd30"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/acquire-5.py",
+      "bytes": 638,
+      "sha256": "33b54a59a566cd0a209e5fa72e8958836d533c1c0023737336a6f95eadc9165d"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/acquire-6.py",
+      "bytes": 611,
+      "sha256": "8945f68397b812c0ae156ac9f1014b264d6bd14af4cb59987c1b39fc3a0c9cbd"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/acquire.py",
+      "bytes": 1625,
+      "sha256": "12a98c678094f1d8c3a4050890ca46bfa1251829f5e692c2f05e3fe16e7686a6"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/acquisition-1-sandbox-dns-failures.json",
+      "bytes": 2249,
+      "sha256": "32dbdb1ec0b3e19ac15b9606e1a97751f029ed14b2a4f4c785675255ea1ebbef"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/acquisition-1.json",
+      "bytes": 3020,
+      "sha256": "b17ef3a2f2d2dcdb5bf7640ce449bb499e262b47106fc68287a94b6ff025aad5"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/acquisition-2.json",
+      "bytes": 2809,
+      "sha256": "940331f56be4bc6ab960c77e0fd9e9d8cacf1a38947005707a5432e421ae1d19"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/acquisition-3.json",
+      "bytes": 1506,
+      "sha256": "e65f49e014642bb195e05753a18ae1f2facebae090329c1f5df119f68f0131d9"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/acquisition-4.json",
+      "bytes": 2891,
+      "sha256": "1b3bb43c42db5d3c1d7765857c8e904c0c1f0fc835bbd26186a642bcaa5a6ece"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/acquisition-5.json",
+      "bytes": 1333,
+      "sha256": "a04e7e61afef9ae702452e3bbab19b50d6684f7699264a7ccdbfe8ef71e68dad"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/acquisition-6.json",
+      "bytes": 1225,
+      "sha256": "6e98f1fe68621099c9a2e02e80428c497c61a1379d4dbfdcb0fa823edb9f9e32"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/dedup-hits.txt",
+      "bytes": 1225,
+      "sha256": "0710016d726b6d57fcacf848894f17092bb6af077effc9f37e3c9b4bf83563de"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/dedup-prefreeze.txt",
+      "bytes": 4870,
+      "sha256": "d99aad3b928c4ddf740cd5339c09bdc376ed6d291e0c5e6574dad0e5d3ef68a3"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/final-search-assessment.json",
+      "bytes": 924,
+      "sha256": "66c4501626a838a4e323b357e9d89d60de53dc1fd5e0d51ed458bf10e874275e"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/named-validation-receipt.json",
+      "bytes": 460,
+      "sha256": "d2ca635f3abf24242172324d85fb5d5f11d6c25e74b0b47c3f78a2e25effe3a6"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-crossref.json",
+      "bytes": 35473,
+      "sha256": "41315ae9d69a783947be354756246d5add1211621b1441997f3dd87b2abc1f8d"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-elsevier.xml",
+      "bytes": 1829,
+      "sha256": "a1db14123072dbc04b2736bfc45c0178fd55a50951c71f39e3c49e36ed1c99f6"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-openalex.json",
+      "bytes": 26227,
+      "sha256": "f7de9b6df8695e5d8fdb1615fda1232f11bd5674ed007bb3654adc7ada56ddab"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-si-media/image1.tiff",
+      "bytes": 209424,
+      "sha256": "3281b42626903f3eb6938637080433f3831a4e84f02dafa038c4ba6b0c655f3b"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-si-media/image10.png",
+      "bytes": 1160231,
+      "sha256": "c87ccff3034cc7102ddbbce00b485d9b45dca7fa5ed8f2cfdc105f557f226080"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-si-media/image2.tiff",
+      "bytes": 2191020,
+      "sha256": "b867a677d66108fff661c1ed4b342b6d53f52e4ef3cf983e13022a6fe0cd7075"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-si-media/image3.tiff",
+      "bytes": 2853848,
+      "sha256": "c571c5dd1a35ecc8d7748efff84d1db41dac11f71811e4b3f6ec411fc33b4dac"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-si-media/image4.tiff",
+      "bytes": 447680,
+      "sha256": "dcede67345fa1bce1b63e1ef0cb99504fef51773f9cada870b89a528be7c4c97"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-si-media/image5.tiff",
+      "bytes": 176096,
+      "sha256": "71f420e11b2f60df5a3a32204175087a3fcf1d9e45caadbfb345f5f9e44a4a59"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-si-media/image6.tiff",
+      "bytes": 298736,
+      "sha256": "ef5854cbd38251f06ac1a99d7a66cd8fc4e836a6af6e11f0ce777b5439a6ae84"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-si-media/image7.tiff",
+      "bytes": 1918424,
+      "sha256": "fd745dd954124b3894f0381e8f57f5991de16bcf595de23b092c1259511d065c"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-si-media/image8.tiff",
+      "bytes": 388146,
+      "sha256": "16cfc7103ea77b53e570ec0d9d3b6a64b6fd1e5a5d4ac6d78c751af64e13bd16"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-si-media/image9.tiff",
+      "bytes": 232328,
+      "sha256": "de185f008475402fe58a8aa9d10d088227bd8f07b569ff023baf24747eed27e1"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-supplement-1.docx",
+      "bytes": 9901192,
+      "sha256": "7e71c736f28c5aaad910f3952a4fd65c339d8959a35fcd304bf04101b3924566"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2018-supplement-1.docx.txt",
+      "bytes": 3569,
+      "sha256": "9d4ae01d2820e192d380f1306af3b1e791fd1e7cba3f1fabe2492e6b9b5408e6"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-crossref.json",
+      "bytes": 17652,
+      "sha256": "cb3f624b9e04fbed172e6fd3eb7e229ab6f5ba50f730fd3e353ec8a1eb39fb52"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-elsevier.xml",
+      "bytes": 1840,
+      "sha256": "8c938c6f3d8f3201484431394e121c29ecd1fa11cbf22dfd165ca32de88d06a6"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-openalex.json",
+      "bytes": 19331,
+      "sha256": "310d6245e291fde570195fba398e125626f663236c4ad513c6de990a22987513"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-pii-elsevier.xml",
+      "bytes": 1840,
+      "sha256": "8c938c6f3d8f3201484431394e121c29ecd1fa11cbf22dfd165ca32de88d06a6"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image1.emf",
+      "bytes": 31658552,
+      "sha256": "f5e47ee78859db037d3c1159ec60adfc8148a72ffd668c1da87a130517327af5"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image10.png",
+      "bytes": 172686,
+      "sha256": "9fe35a1a45c452d6fa35e6592c3920771576659b88d2884d0345c8bb846f891f"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image11.png",
+      "bytes": 171232,
+      "sha256": "c5e99b1054cab6405f94001f04e2046462012222d46b190999833bc7dbeb68f2"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image12.png",
+      "bytes": 181639,
+      "sha256": "0134ec8d253b7af5c9f2475133e540d0adb11b28cea6eaf0234964485a378fb4"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image13.png",
+      "bytes": 172588,
+      "sha256": "50370685e0cc7080dcc79fd937744ea42627a7e88020d774a3370e208d1baabf"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image14.png",
+      "bytes": 176618,
+      "sha256": "abb8280eb22e80e91fac7084dbab93e66d44419e3ca869dfbabf2c059cbf0be2"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image15.png",
+      "bytes": 613029,
+      "sha256": "627cf6b0bd08bed4d620e333172f23d79ff9e009375b6c1770c5497397c7834a"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image16.png",
+      "bytes": 580146,
+      "sha256": "364f2e3afc43d3feb6cfb5ebdd3bce34d9b292050c7c64d9bb67bfbd9eb000ab"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image17.png",
+      "bytes": 769022,
+      "sha256": "cab7941d1d73ff5ff02e12aea0bfde6268cf7f817e93ecff1986bdbff8fd16b6"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image18.png",
+      "bytes": 616014,
+      "sha256": "4cecc7b40109656a5758c524bc665d9914c5bfd016574518183119d25f9ccbc0"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image19.emf",
+      "bytes": 3145976,
+      "sha256": "2030db4915f78435743c14fb76f7cca3a040b9f56fc3eb851cde7b03e061eaf6"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image2.png",
+      "bytes": 844313,
+      "sha256": "5681adccbb210ae281702df4b0768d2c9f83b07ed4cf502585dc4a12466869a6"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image20.emf",
+      "bytes": 3145976,
+      "sha256": "e65293e990974c9a0a894dd7685ffee4a6aa06b89d8ecda133198463c7a00c34"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image21.emf",
+      "bytes": 3145976,
+      "sha256": "a3caf6ad9df02b95dc91245b98afced252391906343f24ff02e3e6a60bbc0e01"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image22.emf",
+      "bytes": 3145976,
+      "sha256": "a5458674d001aab980cbde80240e9cdbced0627367dc0c1eb62d65153dc53578"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image23.png",
+      "bytes": 71991,
+      "sha256": "a1c83e9ecaa10591ed1041ad7a9752b02bf24f696e01da03aa03f4f301da440b"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image24.emf",
+      "bytes": 3145976,
+      "sha256": "323acbf8871b9817885910214e1a3b7f3bb34ef06ffa58148dc1177ef6d0fc3f"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image25.emf",
+      "bytes": 3145976,
+      "sha256": "149461c2d35ec16ce4f61a5da4d5f0e094bc1139b6a820f6b141139bc47a7dc2"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image26.emf",
+      "bytes": 31658552,
+      "sha256": "1ecfb4d37ad0c65295b99f1fe21388fff506d0ed3e83396e9f289c70d505057d"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image3.png",
+      "bytes": 164295,
+      "sha256": "4815169d7ef391e297e5c86d68478a3651e3659e17a8938145a34286ad17d180"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image4.png",
+      "bytes": 172972,
+      "sha256": "c17b137cebbebe2aa89dc6784eb55dced7f33a37c2ca6f3eb0588dd4ed247b38"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image5.png",
+      "bytes": 168912,
+      "sha256": "3a51317f75cd25b40cc5f4b59cd7ff98bc38e84fb3d1ebec67650f8a249bbb78"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image6.png",
+      "bytes": 176303,
+      "sha256": "941b7fa9bd0db96ae3cef4a31eef42dbcf47509255b51cef9ed173ef2c4c214e"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image7.png",
+      "bytes": 182460,
+      "sha256": "8147f3625f967cba44c4d4c1bb2d748d523ca7fdb0cc21a35376e461bb3b828b"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image8.png",
+      "bytes": 189125,
+      "sha256": "aec6c305cd6d7340a22b00a40ce2cb60b580d0506b9883abd587833d1f91fde0"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-si-media/image9.png",
+      "bytes": 167505,
+      "sha256": "9b1e28751d93111727f49cc0b1e81b619e8bceea8329e9a7c1690e5a584f4658"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-supplement-1.docx",
+      "bytes": 12691110,
+      "sha256": "0880fb216c734e5ab3172da902404a9277654b167dfcd2ce236d8a17d4e15dc9"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/2025-supplement-1.docx.txt",
+      "bytes": 4190,
+      "sha256": "b3e1df1a01750e5b12aeeca3e66d4cb6dbe5b37eec75fc12db24c74e68fc19fb"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-ResearchData-extracted.json",
+      "bytes": 2071451,
+      "sha256": "ec2f44ce6d2906693fe3565b0b7e424666bb6a33bb22ecc8519ad84e98b38600"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-ResearchData.xlsx",
+      "bytes": 512898,
+      "sha256": "fac8f9bbf5fe5c081ea0a1ce58c3d204e698b7848be350c459246fdc407f2654"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-crossmark.json",
+      "bytes": 30560,
+      "sha256": "80c7043eb2cb7be7a79aae3c397dad83433cf06ce449beff34423a0621de7ceb"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-crossref.json",
+      "bytes": 30560,
+      "sha256": "80c7043eb2cb7be7a79aae3c397dad83433cf06ce449beff34423a0621de7ceb"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-data-api-v2.json",
+      "bytes": 4410,
+      "sha256": "f34cc61ec98959ed505f0ccd6f223befe39d55b3a7fc641a544e799fc1c35ad8"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-data.html",
+      "bytes": 122874,
+      "sha256": "2f8afc2eabfb78c7623ca1a8339b2f010513f65e3dd4e2e39275c8dbe734d100"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-item.json",
+      "bytes": 8125,
+      "sha256": "2e7fce8041da0d789a0bcd6b5c12c9e2bba548a7c1e94a8f179c604bb93a0647"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-primary.pdf",
+      "bytes": 1610935,
+      "sha256": "9f9d2b33987fb6ec9eee22de866f743fdbd0402bf69c66aa6a510315f2995a81"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-1.png",
+      "bytes": 228265,
+      "sha256": "9a96132e0bf0bdb50dacf6d3b8d5a701c268a61380e3536fadc2e9f172da20bb"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-10.png",
+      "bytes": 360907,
+      "sha256": "5c561a971887c82d46dafd8a42c1466d088f11688a65299869979171c55c5b6b"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-11.png",
+      "bytes": 315076,
+      "sha256": "12190066c9fb0a4fd689a38f497978d3034c49733e3165edda51206bb78b6040"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-12.png",
+      "bytes": 344378,
+      "sha256": "529a9edf813878e65739a033ff5fb9d105d61414705858c65737d09aca0f2037"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-13.png",
+      "bytes": 308643,
+      "sha256": "915f03034da22068f708c3a473a2b4c8c7bf11d510ffb3b5cd0237583f6ac464"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-14.png",
+      "bytes": 420567,
+      "sha256": "df25856c325ae530f80ef9ae9100cf7b426416b72424862ea608d0a9caefefe4"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-15.png",
+      "bytes": 354548,
+      "sha256": "9200bd45a25a7df6bc4e985c8aff22a1976185948e86eac348380ab167fa69a3"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-16.png",
+      "bytes": 397801,
+      "sha256": "63759976b283af4c19f0976ec7ac77a1016f3d2fc477d52a68945dd5c4405e2d"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-17.png",
+      "bytes": 354612,
+      "sha256": "3a4bc4ef730d50afe3a694f173c9644c0a94f34c6130f1a4d38bc33c399df871"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-18.png",
+      "bytes": 371986,
+      "sha256": "2bbf97eea3f89908d9bccf601f1533131b73dda0b92cb3ad2410cbbef6ab4312"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-19.png",
+      "bytes": 347382,
+      "sha256": "f2c5f16e691dc01edeb71cafed902de84be86420d56c69a0f4cd79301a1a984a"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-2.png",
+      "bytes": 186189,
+      "sha256": "aa89e36b893d36acb4e24bad7a0dbcc14b0074da4995a07ef6a81576bd39f113"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-20.png",
+      "bytes": 371426,
+      "sha256": "eedba168d1e758f63e3623ceb95500943970addb31f9a5efe50445b9866e3b23"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-21.png",
+      "bytes": 365420,
+      "sha256": "c9814cb6a2256ca11f83fa0ab8e255158f87cdf517393f3f25760740e38191a4"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-22.png",
+      "bytes": 684913,
+      "sha256": "fe327049006c2559b3b6d110d28140b10add7501e5aeb53ab33586c1105efab8"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-23.png",
+      "bytes": 348453,
+      "sha256": "e7940a23b727f48059da2c799e6ec4671d996e0aa9c226a35a626cbdd23265ef"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-24.png",
+      "bytes": 372380,
+      "sha256": "ebcdd8abc5b4c5e8cbd1284dcdc16a195049b21fc5897669d407cd739feae659"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-25.png",
+      "bytes": 295183,
+      "sha256": "49c3f0ca1c6e2b083da9ea9eee86ba31a90f80672fe66ef287d6c85b5019bfa0"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-26.png",
+      "bytes": 358880,
+      "sha256": "2165c889bb23b3204d1ce954d70dcfb229298a1cb6aae1933e1257a3ec7fa8e9"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-27.png",
+      "bytes": 357019,
+      "sha256": "53fbbec95663a0c7410c9e368be3062b799e5dcda709cb3c29c391f4a1d4d3e2"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-28.png",
+      "bytes": 349513,
+      "sha256": "5921d18d49de3dcfdead0ea7df7f3073877dcbba3bf5165aafde770f1b77d479"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-29.png",
+      "bytes": 459872,
+      "sha256": "6b15f6a378974b74347df47a67a62573d2853def2285764ef7ac8b817eddd077"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-3.png",
+      "bytes": 315028,
+      "sha256": "409164fe4f41143dcde03708d7fb7e3431d9a8d8af813242162b34a4c6faa68b"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-30.png",
+      "bytes": 287771,
+      "sha256": "a0eb06ce6dc56e948d974462e844fa79b4ee6f0f0a8728ed6df347b1c8544501"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-31.png",
+      "bytes": 154848,
+      "sha256": "1b7ca6fe215a9a011f8af1a54635bd98f6325692a26b136bbac2f1725b0d702d"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-32.png",
+      "bytes": 335898,
+      "sha256": "8efb96117b4d8e808a64ee65593ae698001e7cb1f7e83a72a56a3c7f4debc555"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-33.png",
+      "bytes": 317872,
+      "sha256": "7e3e50912c13c79ef1d02c2d744e87b22e7708f0293a40581a27ddca02925500"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-34.png",
+      "bytes": 329166,
+      "sha256": "156502d633a66973669e6724882bf2a688411ed86a8f11eb95034f4e12ab7278"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-35.png",
+      "bytes": 315225,
+      "sha256": "726b78f83e4bad2d29ef3809c7581c021bdfb97c44e893b3be029f5d7071c074"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-36.png",
+      "bytes": 320456,
+      "sha256": "039c24b7dbec7f56e317e8e0f7f77a92b99b97ba787050b2dc31e4e96fa69ec5"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-37.png",
+      "bytes": 326278,
+      "sha256": "d982d467d6e9b701b905b2a82608c5763298a65424fffe38d6853d28d282a143"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-38.png",
+      "bytes": 243748,
+      "sha256": "0d316aaad0babc983d63f8cb760891c14cefce54aec179b8f9070c79da7c4128"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-39.png",
+      "bytes": 220082,
+      "sha256": "7930c74eb542e766177c7f028f86d068c4840288b23a95e7f43cbb5a0513378f"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-4.png",
+      "bytes": 118111,
+      "sha256": "fb514bbcf4801da202fd6a264cb2e66681b03898408ca99b0f58c25793592ea3"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-5.png",
+      "bytes": 355714,
+      "sha256": "4fbfcfb0069fc016fa678a775e0b1a44a41b846a87d29353048d8b79ff690ef3"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-6.png",
+      "bytes": 348104,
+      "sha256": "3d775d714a97074ae68924861afc395c9ed50fd5922ab0c1ad45d529408b6547"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-7.png",
+      "bytes": 328489,
+      "sha256": "292b13f1ad68c356aae2e003c24e4bf6ceb8f53def51404142366774aa4c9455"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-8.png",
+      "bytes": 278707,
+      "sha256": "e6a5eeff798c79e0b1b9a5446fcedf8e849cffe2b6465db763a6faaba564e5e7"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/page-9.png",
+      "bytes": 318185,
+      "sha256": "bbf92608ddef54f5f84ff27c8fd3d48708a5af45660cf1b17a96b1cd0414f754"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-render/text.txt",
+      "bytes": 66732,
+      "sha256": "bf7fda635dd51aef577e35e33064abf105dc626ca328d8dfe0206f4d5f32fabf"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-repository.html",
+      "bytes": 44759,
+      "sha256": "76d85c39217faac39871fe3b07481c549859c2d6709856408db03ff39bd101c6"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-supplement-1.pdf",
+      "bytes": 354612,
+      "sha256": "5ca2571afac44acd054c4f90568309e04c07902fb772fa2dfad5999569d7409e"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-supplement-render/page-1.png",
+      "bytes": 255443,
+      "sha256": "5193eb5c089223552e1facc83576bc1fb723afa1c9695f8a08c827254aa7608c"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-supplement-render/page-2.png",
+      "bytes": 316158,
+      "sha256": "0f85ffde173fee387d63cdf4295ba429caf2da42c2cfae8faed8d0dbeff1a7ac"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-supplement-render/page-3.png",
+      "bytes": 256371,
+      "sha256": "341b71d84df0690b4bf4a0880c8479e4cdfbdbd2e09a8a5cb683c6a7dcb077fe"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-supplement-render/page-4.png",
+      "bytes": 177701,
+      "sha256": "5fb8f061d256c421961d6b6394b1c25a774017ef49ee58a49b836eb3e878a2dd"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-supplement-render/page-5.png",
+      "bytes": 240512,
+      "sha256": "b40a4757a63539b4170e4767bde5ac7a08b9ed2549520cf2d03b2d3123c41a21"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/gca2025-supplement-render/text.txt",
+      "bytes": 5354,
+      "sha256": "fa6841aa01f695bce98149d3f4185d5abe72c14e9e38e26e5fc614255b48c5b1"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/ima-2026-09.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/ima2026-bastnaesite-excerpt.json",
+      "bytes": 3609,
+      "sha256": "b14326be296a64d59773f4f9e7e718144c22bf6e52bd629086ccaef00a25a044"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/ima2026-page-21.png",
+      "bytes": 252484,
+      "sha256": "ed8c6194cd52d4e73027fb4ffeb64f4a4d08286ef1e9a3cf92dc9d72840c2314"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/ncbi1428-info.html",
+      "bytes": 40773,
+      "sha256": "b639c3f9a5c53468d35beb87bdb414bee0da68ab8e27e50aab5eefc0ba1f1645"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/raw/ncbi1428.html",
+      "bytes": 59225,
+      "sha256": "7ead193bcaf1811712a390bf20af41ffce11af6abcdb99786c82689eaf2010a1"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-bastnaesite-research/render.swift",
+      "bytes": 1201,
+      "sha256": "0d6a229a88c6dc84ad616297623c8f27eed5ecbb734eea9a4c227ec46a256058"
+    }
+  ],
+  "publication_limits": "No commits or GitHub mutations by curator. Record bytes frozen for independent reviewer; parent owns full gates and cohort publication. No scientific acceptance inferred from this dossier."
+}

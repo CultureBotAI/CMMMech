@@ -1,0 +1,162 @@
+id: cmmmech:oxidized-zinc-ore
+name: Oxidized zinc ore
+material_kind: primary_resource
+description: >-
+  Natural oxidized zinc ore, represented here by a mixed, Fe-rich sample
+  from Kozan-Horzum, Adana, Türkiye. The study calls it smithsonite ore,
+  but its XRD pattern assigns smithsonite, hemimorphite and several gangue
+  phases. This heterogeneous geological feed is distinct from pure
+  smithsonite, sphalerite concentrate, elemental zinc, a specified traded
+  product and a processing waste. Its composition and experimental results
+  do not characterize all oxidized zinc ores. No constituent-element
+  criticality or mineral-species identifier is inherited.
+sources:
+  - id: demirci_2025
+    title: >-
+      Demirci S (2025). Bioleaching of Oxidized Zinc Ore Using
+      Acidithiobacillus Ferrooxidans with Taguchi Approach. Dicle University
+      Journal of Engineering 16(4):1067-1075. DOI 10.24012/dumf.1748240.
+      Complete official nine-page PDF; methods pp1068-1069, Tables 1-4,
+      Figures 1-7 and conclusions pp1072-1073 inspected. The printed
+      DOI prefix 0.24012 is erroneous; publisher and Crossref resolve 10.24012.
+    url: https://doi.org/10.24012/dumf.1748240
+    accessed_on: '2026-10-11'
+  - id: demirci_2025_registration
+    title: >-
+      Crossref registration for 10.24012/dumf.1748240, confirming title,
+      Seda Demirci authorship and publication date 30 December 2025.
+    url: https://api.crossref.org/works/10.24012/dumf.1748240
+    accessed_on: '2026-10-11'
+  - id: dsm583_catalogue
+    title: >-
+      DSMZ culture catalogue, DSM 583, displayed as Acidithiobacillus
+      ferrooxidans. Collection-to-name context, not authentication of the
+      experimental stock.
+    url: https://www.dsmz.de/collection/catalogue/details/culture/dsm-583
+    accessed_on: '2026-10-11'
+  - id: bacdive111
+    title: >-
+      BacDive strain 111, DSM 583. Front matter displays Acidithiobacillus
+      ferrooxidans while the linked genome GCA_018854535 is labeled
+      Acidithiobacillus ferridurans DSM 583.
+    url: https://bacdive.dsmz.de/strain/111
+    accessed_on: '2026-10-11'
+mechanisms:
+  - id: dsm583_culture_associated_dissolution
+    name: Culture-associated dissolution of zinc and iron from mixed ore
+    process: bioleaching
+    microbial: true
+    description: >-
+      Inoculated laboratory flasks were reported to release Zn and Fe into
+      acidic liquor. The culture is identified in the paper as
+      Acidithiobacillus ferrooxidans DSM 583. This is a source-reported
+      culture-associated dissolution result; the published controls do not
+      quantify the microbial contribution relative to chemical dissolution.
+      Proposed iron cycling and ferric attack are interpretations, not
+      demonstrated mineral-specific reactions or enzyme mechanisms.
+    context: >-
+      Methods pp1068-1069 describe oven drying, crushing below 1 cm,
+      ball milling and sieving below 75 micrometres. Table 1 lists XRF
+      oxide-composition entries without an explicit unit, so no elemental
+      concentration or pure-phase abundance is inferred from them.
+      The reported Fe-free 9K medium contained 0.4 g/L ammonium sulfate,
+      0.4 g/L magnesium sulfate heptahydrate, 0.2 g/L potassium dihydrogen
+      phosphate and 0.1 g/L potassium chloride. Sulfuric acid adjusted
+      initial pH to 1.8-2; the flask preparation specifies 15% dosing acid.
+      Each 250-mL flask had 100 mL working liquid, comprising 90 mL medium
+      and 10 mL starter culture, at 150 rpm and 25 +/- 5 degrees C.
+      Medium was autoclaved at 121 degrees C for 15 minutes; ore
+      sterilization is not specified. Culture activation, an energy donor
+      during preculture and starter-medium carryover are unresolved.
+      The nine reported design combinations used solid ratios of 10, 15
+      and 20% and times of 6, 12 and 18 days; the percentage basis is not
+      explicitly w/v or w/w and is not converted to g/L. Every six days,
+      5 mL was withdrawn and filtered at 0.2 micrometres for Zn, Fe and Pb
+      analysis by atomic absorption spectrometry. Cell counts used a
+      Petroff-Hausser slide. Methods says triplicate on p1068 but duplicate
+      on p1069; endpoint tables provide neither raw replicates nor standard
+      deviations. The paper and DSMZ catalogue use A. ferrooxidans, whereas
+      BacDive links a genome labeled A. ferridurans DSM 583. The accession
+      and naming conflict are retained without a definitive species CURIE.
+      These are laboratory assays, with no isolated metal product or
+      demonstrated pilot or industrial deployment.
+    evidence:
+      - source_ref: demirci_2025
+        supports: support
+        explanation: >-
+          Table 3 row 2 reports the highest tested solution-release
+          percentages, 54.70% Zn and 63.14% Fe, at the stated 10% solid
+          ratio and 12 days. At the same loading, row 3 reports lower
+          values at 18 days, 44.11% Zn and 51.45% Fe. These are the
+          author's reported aqueous dissolution metrics, not independently
+          reconciled yields or additional measurements from the fitted
+          contour plots. The p1070 discussion reports Pb was not solubilized,
+          but gives no Pb concentration or detection limit; no numerical
+          zero or confirmed PbSO4/PbCO3 product is asserted.
+      - source_ref: demirci_2025
+        supports: partial
+        explanation: >-
+          Figures 1-3 show pH, redox and cell-count trajectories; abiotic
+          controls are displayed for pH and redox. Although the text says
+          controls were run at every loading, it supplies no numerical
+          abiotic Zn/Fe dissolution series from which to calculate microbial
+          enhancement. The initial external acid, incompletely specified
+          inoculum conditioning and lack of a matched-pH dissolution
+          comparison limit causality. No direct Fe(II)/Fe(III) or sulfur
+          oxidation measurements establish the proposed iron cycle or the
+          source of energy in the nominally Fe-free medium. Cell counts
+          and bulk redox changes do not establish ferric attack on ZnCO3.
+      - source_ref: demirci_2025
+        supports: partial
+        explanation: >-
+          Equation 2 labels liquor volume in mL and dissolved concentration
+          in mg/L without displaying a volume conversion. Correction for
+          serial 5-mL withdrawals, replacement liquid and cumulative metal
+          inventories is not documented. The feed concentration denominator
+          cannot be reconstructed from the unit-unspecified XRF oxide table.
+          Reported percentages therefore remain qualified source values;
+          no repaired balance or exact concentration observations are added.
+          Table 4 is captioned as S/N-based ANOVA, but its sums of squares
+          approximately match calculations from Table 3's raw percentage
+          outcomes, not its printed S/N values. Replication and statistical
+          processing cannot be resolved from the paper. Figures 5-7 are
+          derived summaries and contour estimates, not independent
+          confirmation of an optimum, significance or general process yield.
+      - source_ref: demirci_2025
+        supports: partial
+        explanation: >-
+          Figure 4 labels multiple minerals in vertically offset pre/post
+          patterns, including both smithsonite and hemimorphite. It provides
+          no quantitative phase balance, specified post-leach treatment
+          condition or abiotic residue comparison. Reduced peak intensities
+          do not assign all dissolved Zn to smithsonite, and absence of new
+          diffraction peaks does not exclude amorphous or trace precipitates.
+          Proposed passivation, mass-transfer inhibition and lead-phase
+          precipitation are interpretations without direct tests here.
+          The conclusions call for pilot and industrial feasibility work;
+          environmental and economic advantages were not measured.
+      - source_ref: dsm583_catalogue
+        supports: context_only
+        explanation: >-
+          The current collection catalogue agrees with the paper's
+          A. ferrooxidans DSM 583 name. It does not independently genotype
+          or verify the culture used in the ore experiment.
+      - source_ref: bacdive111
+        supports: partial
+        explanation: >-
+          The strain entry's front matter and linked genome use different
+          species names. This limits a definitive species mapping for the
+          reported DSM 583 stock; neither a species identifier nor genome
+          identity is assigned to the experimental culture.
+curation_history:
+  - timestamp: '2026-10-11T17:43:43.212961+00:00'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Added a source-defined mixed oxidized-zinc ore identity and qualified
+      culture-associated aqueous Zn/Fe dissolution. Preserved strain-name
+      ambiguity, qualitative Pb non-solubilization, incomplete controls,
+      replication and unit conflicts, unresolved inventory accounting and
+      the distinction between reported endpoints and derived analyses.
+history_refs:
+  - history/records/oxidized-zinc-ore/2026-10-11T174319Z-codex-9eed32.yaml

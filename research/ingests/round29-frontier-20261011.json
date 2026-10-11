@@ -1,0 +1,434 @@
+{
+  "recorded_at": "2026-10-11T17:53:34.796724+00:00",
+  "trusted_base": "7629ab50846229c87987d7fa0ac12389212bb70f",
+  "worktree": "/private/tmp/CMMMech-expansion-round29-20261011",
+  "branch": "curate/cmm-expansion-round29-20261011",
+  "records": [
+    {
+      "id": "cmmmech:oxidized-zinc-ore",
+      "name": "Oxidized zinc ore",
+      "path": "data/records/oxidized-zinc-ore.yaml",
+      "sha256": "a7b4bca381fce99518963f2ea3d8228c0cf19a7923ec7fe438ca17ee7163fc22",
+      "material_kind": "primary_resource",
+      "change": "new",
+      "history_refs": [
+        "history/records/oxidized-zinc-ore/2026-10-11T174319Z-codex-9eed32.yaml"
+      ],
+      "reviews": [
+        {
+          "yaml": "reviews/structured/20261011T174859Z-oxidized-zinc-ore-round29-independent/review.yaml",
+          "markdown": "reviews/structured/20261011T174859Z-oxidized-zinc-ore-round29-independent/review.md",
+          "review_id": "20261011T174859Z-oxidized-zinc-ore-round29-independent",
+          "sha256": "d71581c15aab072f6b88422e12157e57a74833934d88d525fabb63c0de7867de",
+          "verdict": "pass_with_limitations"
+        }
+      ]
+    },
+    {
+      "id": "cmmmech:bastnaesite",
+      "name": "Bastnaesite fluorocarbonate family",
+      "path": "data/records/bastnaesite.yaml",
+      "sha256": "719dafc38a258c140dafa5c718a651d19c7300c9aa0643fe293898d56f1b6448",
+      "material_kind": "mineral_group",
+      "change": "new",
+      "history_refs": [
+        "history/records/bastnaesite/2026-10-11T174551Z-codex-b64d41.yaml"
+      ],
+      "reviews": [
+        {
+          "yaml": "reviews/structured/20261011T175221Z-bastnaesite-round29-independent/review.yaml",
+          "markdown": "reviews/structured/20261011T175221Z-bastnaesite-round29-independent/review.md",
+          "review_id": "20261011T175221Z-bastnaesite-round29-independent",
+          "sha256": "96fd1f7b4154b22783cee908738f33e9eae96fbd795c6af88b3638370b6ac9bd",
+          "verdict": "pass_with_limitations"
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "started_at": "2026-10-11T17:46:19.857716+00:00",
+    "base": "7629ab50846229c87987d7fa0ac12389212bb70f",
+    "records": {
+      "data/records/oxidized-zinc-ore.yaml": "a7b4bca381fce99518963f2ea3d8228c0cf19a7923ec7fe438ca17ee7163fc22",
+      "data/records/bastnaesite.yaml": "719dafc38a258c140dafa5c718a651d19c7300c9aa0643fe293898d56f1b6448"
+    },
+    "commands": [
+      {
+        "command": [
+          "just",
+          "check"
+        ],
+        "log": "/private/tmp/cmm-round29-final-batch.log",
+        "exit_code": 0,
+        "started_at": "2026-10-11T17:46:19.859167+00:00",
+        "finished_at": "2026-10-11T17:48:25.016440+00:00",
+        "sha256": "4d068f73df6cf96a86361f4545aafa3160fe927582897ed32f6079ec73fe3524"
+      },
+      {
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate",
+          "--require-records"
+        ],
+        "log": "/private/tmp/cmm-round29-final-nonempty.log",
+        "exit_code": 0,
+        "started_at": "2026-10-11T17:48:25.016735+00:00",
+        "finished_at": "2026-10-11T17:48:29.954429+00:00",
+        "sha256": "8e84e7b84cf9805a1269b968a41c6b48b5441359f5cfc1a3649869bd9f62c475"
+      },
+      {
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate-history",
+          "--base",
+          "7629ab50846229c87987d7fa0ac12389212bb70f"
+        ],
+        "log": "/private/tmp/cmm-round29-final-history.log",
+        "exit_code": 0,
+        "started_at": "2026-10-11T17:48:29.954889+00:00",
+        "finished_at": "2026-10-11T17:48:32.787148+00:00",
+        "sha256": "2a0eff3462c5e890f727ecd08826d92842cd199a2fc0d94de0f7553a667861f3"
+      }
+    ],
+    "finished_at": "2026-10-11T17:48:32.787564+00:00",
+    "unchanged_records": true,
+    "passed": true
+  },
+  "baseline": {
+    "started_at": "2026-10-11T17:35:24.005130+00:00",
+    "worktree": "/private/tmp/CMMMech-expansion-round29-20261011",
+    "trusted_base": "7629ab50846229c87987d7fa0ac12389212bb70f",
+    "commands": [
+      {
+        "command": [
+          "uv",
+          "sync",
+          "--locked",
+          "--extra",
+          "dev",
+          "--offline"
+        ],
+        "started_at": "2026-10-11T17:35:24.148509+00:00",
+        "finished_at": "2026-10-11T17:35:26.398213+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round29-baseline-sync.log",
+        "sha256": "b387103e861ba13e7f0d3373970f1f88d506d2843a0a7e96b1ebc8e0a3d0f1ce"
+      },
+      {
+        "command": [
+          "just",
+          "check"
+        ],
+        "started_at": "2026-10-11T17:35:26.398627+00:00",
+        "finished_at": "2026-10-11T17:37:42.752070+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round29-baseline-check.log",
+        "sha256": "5b24cd1df4b63ba022081497d8ae7efe02752e8bc71295c1c286c016b0114421"
+      }
+    ],
+    "tree": "4c548215ebe3627b18280ed98857413e647cb417",
+    "passed": true,
+    "finished_at": "2026-10-11T17:37:42.752336+00:00"
+  },
+  "structured_review_gate": {
+    "started_at": "2026-10-11T17:53:35.004185+00:00",
+    "finished_at": "2026-10-11T17:55:07.480999+00:00",
+    "command": [
+      "just",
+      "review-check",
+      "--base",
+      "7629ab50846229c87987d7fa0ac12389212bb70f",
+      "--require-reviews"
+    ],
+    "exit_code": 0,
+    "log": "/private/tmp/cmm-round29-review-check.log",
+    "sha256": "7816fbeb369ff6051a67fc5beeb10bb6c547bfe32115fef746f28b90d7e4728d"
+  },
+  "coverage": {
+    "record_count": 176,
+    "history_count": 200,
+    "structured_review_count": 204,
+    "review_base_count": 30,
+    "covered_records": 176,
+    "passed": true,
+    "receipt": "/private/tmp/cmm-round29-local-coverage.json",
+    "sha256": "192454a12b152c475a959d6756e892a87bc9766dd33c3ed79ef90e0b4ee7bd75"
+  },
+  "governance": {
+    "recorded_at": "2026-10-11T17:43:37.939269+00:00",
+    "command": [
+      "bash",
+      "scripts/check_vendored_sync.sh"
+    ],
+    "cwd": "/private/tmp/CMMMech-expansion-round29-20261011",
+    "exit_code": 0,
+    "observed_output": "OK: 22 governed artifacts match the pinned claw revision",
+    "pin": "a5d562962c75a2ad9efd8160b548df5944315422",
+    "exec_session": 49329
+  },
+  "source_assessments": [
+    {
+      "path": "research/sources/round29-bastnaesite/20261011T174824Z-source-investigation.json",
+      "sha256": "9fba2cf47fdbd7d45887fe58c64781f29b41c6645fb14bf3cd02bd0bf32ed2f2"
+    },
+    {
+      "path": "research/sources/round29-bastnaesite/20261011T174824Z-source-investigation.md",
+      "sha256": "d286bb99ebdbbc4c7a7f2a4fc0d9b15a9d4a77f8a353f4e2047dab83012cfcb3"
+    },
+    {
+      "path": "research/sources/round29-ilmenite/20261011T174122Z.json",
+      "sha256": "0630f03ef96bddb1b36fe23613ed7f6b50d47f68049a02f755e36c55890db817"
+    },
+    {
+      "path": "research/sources/round29-ilmenite/20261011T174122Z.md",
+      "sha256": "3fdd308875ab4499208ce1ebcdbd85db368cb93b52c35d6ed14e68f283852aff"
+    },
+    {
+      "path": "research/sources/round29-tungsten-waste/20261011T174244Z-source-investigation.json",
+      "sha256": "cbd3ff5a04a35d8ede9bfe68058f650f66e4f30ec2bcc7f455809b774e8d2596"
+    },
+    {
+      "path": "research/sources/round29-tungsten-waste/20261011T174244Z-source-investigation.md",
+      "sha256": "b78064f54d6af933a4c83bceef330854c79cc6d97e2018275829b545a789207c"
+    },
+    {
+      "path": "research/sources/round29-zinc-ore/20261011T174219Z-source-assessment.json",
+      "sha256": "0c7d66457ac91a4894fbaae43f283fd6fadb648c75ce1ad06598ad68cf0f4b12"
+    },
+    {
+      "path": "research/sources/round29-zinc-ore/20261011T174219Z-source-assessment.md",
+      "sha256": "0ce406bf7e30a1422b58a1cbf291fb4684abdc9a5fb28f87d3e0ec24fe6afd25"
+    }
+  ],
+  "prior_scientific_preservation": {
+    "recorded_at": "2026-10-11T17:46:42.254067+00:00",
+    "base": "7629ab50846229c87987d7fa0ac12389212bb70f",
+    "compared_tracked_prior_scientific_files": 1223,
+    "changed": [],
+    "passed": true
+  },
+  "source_follow_up_issues": [
+    {
+      "number": 103,
+      "title": "Acquire tungsten mining-waste methods before record admission",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/103",
+      "state": "OPEN",
+      "body_file": "/private/tmp/cmm-round29-issue-tungsten.md",
+      "body_sha256": "9bfb4aec30d7656b7f80a2ba505befbeb395bea850ec106899930f7c62b49657",
+      "disposition": "Open research follow-up; bounded acquisition and source-only deferral completed, missing full evidence unresolved."
+    },
+    {
+      "number": 104,
+      "title": "Acquire and reconcile full ilmenite bioleaching studies",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/104",
+      "state": "OPEN",
+      "body_file": "/private/tmp/cmm-round29-issue-ilmenite.md",
+      "body_sha256": "3c096fe4a4708247ed52b5ff551475fd4f1a08ee14ba538390b66e7f45197cc3",
+      "disposition": "Open research follow-up; bounded acquisition and source-only deferral completed, missing full evidence unresolved."
+    }
+  ],
+  "exhaustion_established": false,
+  "review_base_retention": {
+    "recorded_at": "2026-10-11T17:49:17.093840+00:00",
+    "trusted_base": "7629ab50846229c87987d7fa0ac12389212bb70f",
+    "base_count": 30,
+    "bases": [
+      {
+        "revision": "14ceff0da3e19d6d36426d33f4cf577b8e64760f",
+        "in_main_history": true,
+        "review_count": 8,
+        "retained_tag": null
+      },
+      {
+        "revision": "1e52585c9019a32d37f959e0dafa00ae431f28c4",
+        "in_main_history": true,
+        "review_count": 25,
+        "retained_tag": null
+      },
+      {
+        "revision": "268498d0a9748f3a18955e35f175f67115f88b97",
+        "in_main_history": true,
+        "review_count": 4,
+        "retained_tag": null
+      },
+      {
+        "revision": "26cb0688effb2f71e4a570c416f6f43ff858c5ab",
+        "in_main_history": true,
+        "review_count": 6,
+        "retained_tag": null
+      },
+      {
+        "revision": "3f1350b24b4f6248ed2e17caade936c15af9be93",
+        "in_main_history": true,
+        "review_count": 4,
+        "retained_tag": null
+      },
+      {
+        "revision": "4504ab1c5a005ea31e65318c3b3f206d6fbf44ed",
+        "in_main_history": true,
+        "review_count": 4,
+        "retained_tag": null
+      },
+      {
+        "revision": "55fd1947e80f67ec91dfe63e7bf15f72d822cefb",
+        "in_main_history": true,
+        "review_count": 4,
+        "retained_tag": null
+      },
+      {
+        "revision": "5892e9a0aca54ef3f45d2ce87a6dcfb80d1569da",
+        "in_main_history": true,
+        "review_count": 4,
+        "retained_tag": null
+      },
+      {
+        "revision": "58e7aef16a9643438cf621fa9fb402e9d325dc65",
+        "in_main_history": true,
+        "review_count": 6,
+        "retained_tag": null
+      },
+      {
+        "revision": "5b4a463f700bceb441f7b669f58a5e60823d2841",
+        "in_main_history": true,
+        "review_count": 7,
+        "retained_tag": null
+      },
+      {
+        "revision": "6ea63a8c98e22fd3c6794b17c77f7909c3b851a2",
+        "in_main_history": true,
+        "review_count": 8,
+        "retained_tag": null
+      },
+      {
+        "revision": "7629ab50846229c87987d7fa0ac12389212bb70f",
+        "in_main_history": true,
+        "review_count": 1,
+        "retained_tag": null
+      },
+      {
+        "revision": "76cd81d310a6ccb4cf7bdebcc61be050d0863222",
+        "in_main_history": true,
+        "review_count": 5,
+        "retained_tag": null
+      },
+      {
+        "revision": "80899a3d3ea5c0f7c5d54f1b3583e43768e92767",
+        "in_main_history": true,
+        "review_count": 5,
+        "retained_tag": null
+      },
+      {
+        "revision": "8f8abedfce68f932e4f6f333a5470ee5f3897ff4",
+        "in_main_history": true,
+        "review_count": 19,
+        "retained_tag": null
+      },
+      {
+        "revision": "9f37042ef36b8f20ebf44f8228f6a4b5d27e00c3",
+        "in_main_history": true,
+        "review_count": 3,
+        "retained_tag": null
+      },
+      {
+        "revision": "9fa187ff5a455f495cfa2635e60c413b6763370d",
+        "in_main_history": true,
+        "review_count": 7,
+        "retained_tag": null
+      },
+      {
+        "revision": "a1d46ce5ca9958ff4cbd8a3b6aaf83bc8710ae0c",
+        "in_main_history": true,
+        "review_count": 11,
+        "retained_tag": null
+      },
+      {
+        "revision": "a2e2c82f11d97982f0cc1ae6be452a42b24a0ff0",
+        "in_main_history": true,
+        "review_count": 5,
+        "retained_tag": null
+      },
+      {
+        "revision": "b19103bb393096e405bbecd2808a1aa0e01bb200",
+        "in_main_history": true,
+        "review_count": 4,
+        "retained_tag": null
+      },
+      {
+        "revision": "b714ce2bd8050d5e19ed9ca072460ba2b8154c3b",
+        "in_main_history": true,
+        "review_count": 6,
+        "retained_tag": null
+      },
+      {
+        "revision": "baedff25eafad1516270916a651af6754ffa5996",
+        "in_main_history": true,
+        "review_count": 7,
+        "retained_tag": null
+      },
+      {
+        "revision": "c081a749cd63feafcc25414f5ad006d1f78f1e36",
+        "in_main_history": true,
+        "review_count": 6,
+        "retained_tag": null
+      },
+      {
+        "revision": "c0adc2c0763e1515ed07dc712b024974d98fb342",
+        "in_main_history": false,
+        "review_count": 12,
+        "retained_tag": "review-base/cmm-source-survey-20261009"
+      },
+      {
+        "revision": "c4b2a6c21a2ff54d1fdd3965ac98a6d90effba7a",
+        "in_main_history": true,
+        "review_count": 8,
+        "retained_tag": null
+      },
+      {
+        "revision": "d09a5611767d94fd196393b31d44cb8cf6657f7f",
+        "in_main_history": true,
+        "review_count": 4,
+        "retained_tag": null
+      },
+      {
+        "revision": "d20fc229fe61a08e36a2889d89e0f4ce7c06c4a9",
+        "in_main_history": true,
+        "review_count": 5,
+        "retained_tag": null
+      },
+      {
+        "revision": "d7183efeb2e528d6d88f0b69da41323642b8fa85",
+        "in_main_history": true,
+        "review_count": 5,
+        "retained_tag": null
+      },
+      {
+        "revision": "e305dcc67e526e585349c60f849567f4c2bfc835",
+        "in_main_history": true,
+        "review_count": 6,
+        "retained_tag": null
+      },
+      {
+        "revision": "e98bdfaba62869faf5112ef281a9371d2a04d78e",
+        "in_main_history": true,
+        "review_count": 4,
+        "retained_tag": null
+      }
+    ],
+    "new_tag_needed": false,
+    "remote_tag_receipt": "/private/tmp/cmm-round29-publication-state.json",
+    "scope": "Working reviews saved so far; final coverage check re-enumerates all bases."
+  },
+  "documentation_links": {
+    "recorded_at": "2026-10-11T17:54:38.783995+00:00",
+    "local_links_checked": 247,
+    "broken": [],
+    "scope": "New Markdown plus changed README; relative local file existence only, not external access or fragment validation.",
+    "passed": true
+  }
+}
