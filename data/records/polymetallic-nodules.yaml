@@ -1,0 +1,98 @@
+id: cmmmech:polymetallic-nodules
+name: Polymetallic nodules
+material_kind: primary_resource
+description: Naturally occurring marine iron-manganese oxide and hydroxide concretions, commonly occurring
+  on abyssal sediments and containing variable nickel, copper, cobalt and other constituents. This resource
+  identity denotes the nodules, not a pure mineral species, constituent element, processing residue or
+  defined traded metal grade. It is distinguished from rock-surface ferromanganese crusts and the terrestrial
+  mixed manganese ore curated separately. Collection, drying and grinding do not make this geological
+  feed a secondary resource. No constituent criticality designation is inherited.
+mechanisms:
+- id: heterotrophic_enrichment_nodule_mobilization
+  name: Metal mobilization from nodules in heterotrophic enrichment cultures
+  process: bioleaching
+  microbial: true
+  description: A laboratory enrichment-culture experiment reported metal mobilization from ground Clarion-Clipperton
+    Zone nodules. It supports culture-associated leachate measurements under the reported conditions.
+    The design does not isolate a microbial increment over matched sterile chemical leaching, establish
+    a particular taxon or molecular cause, or demonstrate a commercially recovered product.
+  context: The approximately 2 kg source sample was collected by trawl in 2014 from the IOM H22 exploration
+    block, sample 3521-1-TR1, at 4265–4291 m depth. Nodules were dried at room temperature and bowl-milled
+    to 0.1–1 mm for leaching. Living mixed heterotrophic cultures were enriched from natural Fe/Mn-weathering
+    mud; collection sites were withheld as proprietary. The 16S amplicon profile describes the starting
+    mud, not experimentally isolated causal strains or a verified final enrichment composition, so no
+    taxon identifier is assigned. Methods 2.3 describes serial enrichment and an MD medium containing
+    4 g/L citric acid and sucrose, with enrichment variants at 10 or 20 g/L sucrose. Methods 2.4 uses
+    0.25, 2.5, 25 or 50 g nodules, 240 mL medium plus 10 mL inoculum (nominal 0.1, 1, 10 or 20% w/v),
+    sealed butyl-stoppered bottles, 38 +/- 0.5 degrees C and nominal pH 5.5 +/- 0.5; observed pH varies
+    outside this interval. Five leachate collections with 150 mL replacement are described. The exact
+    final carbon concentration and timing are not fully consistent across Methods, Results and diagrams.
+    Bottle 5 is a separately formulated tap-water/sucrose condition, not a demonstrated sterile control.
+    A bottle being sealed does not itself quantify dissolved oxygen. Analytical repeat measurements are
+    described, but independent biological replication and uncertainty for leachate series are not adequately
+    resolved.
+  evidence:
+  - source_ref: styriakova2022
+    supports: support
+    explanation: Methods 2.1, Tables 2 and 4, and Figure 1 establish the actual heterogeneous nodule substrate
+      and origin. The input sample has 26.75 wt% Mn, 4.95% Fe, 1.11% Ni, 1.28% Cu and 0.18% Co by portable
+      XRF. These are sample-specific concentrations, not universal grades or pure-mineral composition.
+  - source_ref: styriakova2022
+    supports: support
+    explanation: Results 3.3 and Figures 2A and 5 report 2120 mg/L Mn in the fourth leachate collection
+      of the nominal 10% w/v run (sample 3). This is a reported leachate concentration, not a recovery
+      percentage, isolated mass or demonstrated dissolved Mn(II) speciation. Methods 2.1 describes portable
+      XRF for solid and liquid analyses and ICP-OES confirmation of the solid sample-3 residue; it does
+      not establish ICP-MS or a filtered dissolved-ion assay for this leachate.
+  - source_ref: styriakova2022
+    supports: partial
+    explanation: Methods 2.2–2.4 and Results 3.1–3.3 do not provide a matched uninoculated or killed-cell
+      MD-medium comparator for the final leaching runs. Added citric acid and varying pH confound a microbial
+      increment. Proposed direct Mn reduction, attachment-driven organic-acid production, individual Lactobacillus
+      roles and selective adaptation are not separately demonstrated by the community profile or leachate
+      measurements.
+  - source_ref: styriakova2022
+    supports: partial
+    explanation: Figure 3 and Discussion 4 show lower fractional metal extraction at higher pulp density,
+      despite the larger sample-3 Mn concentration. Results 3.3 says all sample-3 metal recoveries fell
+      below 20%, whereas Figure 3 and Discussion 4 give approximately 22% Ni; no blanket below-20% claim
+      is adopted. The percentages derived from washed solid concentrations (Table 4) differ from leachate-based
+      extraction, and the paper also reports a 13.3% solid mass decrease. Concentration depletion and
+      changing residue mass are not interchangeable with a closed metal mass balance; those percentages
+      are not curated as verified recovery yields.
+  - source_ref: styriakova2022
+    supports: partial
+    explanation: Methods 2.4 describes five transfers/collections, and Figure 5 provides numerical leachate
+      values only for collections 1–5. Its combined box for collections 6–25 provides no measured concentration
+      series. The proposed approximately 25 medium changes for complete extraction therefore do not establish
+      an observed quantitative endpoint. The precipitation boxes in Figures 4–5 do not document isolated-product
+      mass, composition or purity.
+  - source_ref: styriakova2022
+    supports: partial
+    explanation: The experiment remains laboratory-scale. Discussion 4 explicitly calls for semi-operational
+      verification and economic assessment. The cited industrial BIOX pulp-density limit concerns a different
+      gold-ore process, and does not establish industrial operation of this nodule culture. Environmental
+      superiority is not demonstrated by these flask results.
+sources:
+- id: usgs2025
+  title: U.S. Geological Survey (2025). U.S. Geological Survey Global Seabed Mineral Resources. Fact Sheet
+    2025–3017, version 1.1, April 2025; page 2, Table 1 distinguishes nodules on abyssal sediments from
+    rock-surface ferromanganese crusts. Constituent asterisks refer to the U.S. 2022 list, not a criticality
+    designation for these resource identities.
+  url: https://pubs.usgs.gov/fs/2025/3017/fs20253017.pdf
+  accessed_on: '2026-10-11'
+- id: styriakova2022
+  title: Štyriaková, Štyriaková, Šuba, Baláž and Abramowski (2022). Bioleaching Test of Polymetallic Nodule
+    Samples from the IOM Exploration Area. Minerals 12(11):1373. DOI 10.3390/min12111373; full 14-page
+    primary paper inspected, especially Methods 2.1–2.4, Results 3.1–3.3, Discussion 4, Tables 2–4 and
+    Figures 2–5.
+  url: https://doi.org/10.3390/min12111373
+  accessed_on: '2026-10-11'
+curation_history:
+- timestamp: '2026-10-11T12:15:01.805194+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created marine nodule resource identity and qualified laboratory mixed-culture evidence, retaining
+    control, carbon-formulation, analytical, mass-balance and scale limitations.
+history_refs:
+- history/records/polymetallic-nodules/2026-10-11T121503Z-codex-8c4777.yaml

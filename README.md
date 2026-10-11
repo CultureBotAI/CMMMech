@@ -155,6 +155,10 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Spent vegetable-oil hydrogenation catalyst](data/records/spent-vegetable-oil-hydrogenation-catalyst.yaml) | Process-defined spent-catalyst identity | Identity only; full experimental methods remain inaccessible |
 | [Copper-flotation tailings](data/records/copper-flotation-tailings.yaml) | Indigenous-bacterial treatment for physical stabilization | Control activity and source inconsistencies retained; no metal recovery claimed |
 | [Chrysotile-asbestos tailings](data/records/chrysotile-asbestos-tailings.yaml) | Acidophile-assisted magnesium leaching from mill tailings | Existing carbonates and control limits; no measured net carbon storage or asbestos detoxification |
+| [Goethite](data/records/goethite.yaml) | Species-grounded acidophile iron-mobilization assays | Natural and synthetic feeds differ; acid confounding, null results and source contradictions retained |
+| [Nickel laterite ore](data/records/nickel-laterite-ore.yaml) | Aerobic and anaerobic acidophile leaching of characterized ores | Matched-pH nulls, loading inhibition and unlike chemical comparators limit microbial attribution |
+| [Polymetallic nodules](data/records/polymetallic-nodules.yaml) | Heterotrophic enrichment-associated metal mobilization | Added citrate, missing sterile controls and unresolved recovery accounting; five measured collections do not establish a 25-cycle endpoint |
+| [Boron-ore concentration tailings](data/records/boron-ore-concentration-tailings.yaml) | Fungal culture-associated alkali-metal leaching | Unresolved strain, absent abiotic series and kinetic/source-overlap limits; no isolated product |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -181,7 +185,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [seventeenth expansion reviews](research/ingests/round17-20261011-publication.md),
 [eighteenth expansion reviews](research/ingests/round18-20261011-publication.md),
 [nineteenth expansion reviews](research/ingests/round19-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round19-frontier-20261011.md), and
+[twentieth expansion reviews](research/ingests/round20-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round20-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

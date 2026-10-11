@@ -1,0 +1,26 @@
+history_version: 1
+target:
+  kind: record
+  slug: polymetallic-nodules
+  path: data/records/polymetallic-nodules.yaml
+session:
+  id: 2026-10-11T121503Z-codex-8c4777
+  timestamp: '2026-10-11T12:15:03Z'
+  actors:
+  - name: codex
+    type: ai_agent
+    model: GPT-6
+    agent_tool: codex
+events:
+- type: CREATE
+  outcome: changed
+  summary: Curate polymetallic nodules as a primary resource with qualified heterotrophic
+    leaching evidence.
+  details: Verified USGS 2025 v1.1 identity and full Styriakova2022 primary methods, figures
+    and tables. Preserve unresolved enrichment identity, missing matched sterile control,
+    added citrate, inconsistent yields and carbon formulation, five measured collections versus
+    proposed 25-cycle endpoint, and laboratory scale. No inherited criticality or unsupported
+    taxon IDs. Tracking issue 74.
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/74

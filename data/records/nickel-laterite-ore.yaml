@@ -1,0 +1,163 @@
+id: cmmmech:nickel-laterite-ore
+name: Nickel laterite ore
+material_kind: primary_resource
+description: >-
+  Naturally occurring heterogeneous nickel-bearing regolith formed by intense
+  weathering of ultramafic parent rocks, including oxide-rich limonitic,
+  clay-rich and hydrous magnesium-silicate-rich horizons. The USGS deposit model
+  grounds this geological resource identity; excavated or stockpiled unprocessed
+  ore remains within its scope. It is distinct from nickel metal, a mineral
+  species such as goethite, a product-grade commodity and processing-generated
+  laterite tailings. Individual ore samples differ in mineralogy and nickel,
+  cobalt and chromium distribution; their laboratory leaching outcomes do not
+  apply to every laterite or establish extraction from a pure host mineral.
+sources:
+  - id: usgs_laterite_model_2013
+    title: >-
+      Marsh EE, Anderson ED and Gray F (2013). Nickel-Cobalt Laterites—A Deposit
+      Model. USGS Scientific Investigations Report 2010-5070-H; official
+      publication summary on geological origin and mineralogical subtypes.
+      doi:10.3133/sir20105070H.
+    url: https://www.usgs.gov/publications/nickel-cobalt-laterites-a-deposit-model
+    accessed_on: '2026-10-11'
+  - id: hetz_schippers_2025
+    title: >-
+      Hetz SA and Schippers A (2025). Aerobic Bioleaching of Six Brazilian
+      Laterite Ores with Acidithiobacillus thiooxidans, Sulfobacillus species
+      and Archaea at Various Conditions. Journal of Sustainable Metallurgy
+      11:3732-3747. doi:10.1007/s40831-025-01139-7.
+    url: https://doi.org/10.1007/s40831-025-01139-7
+    accessed_on: '2026-10-11'
+  - id: santos_2022
+    title: >-
+      Santos AL, Dybowska A, Schofield PF, Herrington RJ, Cibin G and Johnson DB
+      (2022). Chromium (VI) Inhibition of Low pH Bioleaching of Limonitic
+      Nickel-Cobalt Ore. Frontiers in Microbiology 12:802991, published
+      11 January 2022 in volume 12 (2021). doi:10.3389/fmicb.2021.802991.
+    url: https://doi.org/10.3389/fmicb.2021.802991
+    accessed_on: '2026-10-11'
+  - id: ncbi_thiooxidans
+    title: NCBI Taxonomy 930 — Acidithiobacillus thiooxidans, species rank
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info
+    accessed_on: '2026-10-11'
+mechanisms:
+  - id: aerobic_sulfur_oxidizer_leaching
+    name: Ore-dependent aerobic bioleaching by a sulfur-oxidizing consortium
+    process: bioleaching
+    description: >-
+      A living six-strain Acidithiobacillus thiooxidans mixture supplied acidity
+      and increased nickel and cobalt mobilization from some Brazilian laterites
+      relative to uninoculated reactors following the same pH trajectories.
+      The contribution of reductive mineral dissolution is inferred from
+      solution chemistry; neither a specific molecular reduction route nor
+      universal enhancement across ore mineralogies is established.
+    context: >-
+      DSM 14887T, DSM 504, DSM 622, DSM 103717, DSM 9463 and BGR isolate RAM8
+      cultures were mixed in equal volumes. The species ID does not identify
+      the mixture or establish any individual strain's causal contribution.
+      Homogenized, sieved (<2 mm), unwashed ore from Barro Alto, Jacare and
+      Piaui was added at 10% w/v to 2-L stirred, air-supplied reactors with
+      1.5 L salts medium and 1% w/v elemental sulfur at 30 degrees C. Initial
+      pH was 3.0; 10% v/v inoculum grew for four days before ore addition.
+      Methods specify 3 mM ferrous iron in the medium and 3 mM ferrous sulfate
+      before ore addition; the cumulative dose is unresolved. Leaching pH
+      was maintained at 1.5 or allowed to change, with uninoculated controls
+      adjusted to the biotic pH trajectories. BaSt and 1P5 ran for 15 days,
+      BaC for 20, Jacare samples for 24 and Piaui for 15. Dissolved metals
+      were measured by ICP-OES after 0.2-micrometer filtration and acid
+      stabilization. These are laboratory ore assays, not isolated-metal
+      recovery or demonstrations of commercial deployment.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:930
+        label: Acidithiobacillus thiooxidans
+    evidence:
+      - source_ref: hetz_schippers_2025
+        supports: support
+        explanation: >-
+          Laterite Samples, Microorganisms, Bioleaching Experiments and Liquid
+          Analyses methods; Barro Alto Results and Figure 6A: BaSt stockpile
+          ore with pH not maintained gave reported nickel extraction of
+          83.0 +/- 5.7% after 15 days (mean +/- SD; four bioreactors), compared
+          with 33.6 +/- 0.1% in two uninoculated matched-pH reactors. Corresponding
+          cobalt values were 83.0 +/- 3.0% and 23.9 +/- 0.1%. Percentages refer
+          to mobilized feed metals and are not pure-product yields.
+      - source_ref: hetz_schippers_2025
+        supports: partial
+        explanation: >-
+          Figures 5-6 and 8-10, supplementary Figures S1-S3, and Discussion:
+          1P5 showed no enhancement over its chemical control, Piaui nickel
+          extraction was similar between biotic and chemical runs, and JacF
+          extraction was very low. Results describe some JacC enhancement
+          despite broader acid-only wording in the abstract. JacF replicate
+          counts differ between supplement S1 and S3; no uniform replicate
+          count is inferred. The paper also leaves the aerobic reduction route
+          unresolved. Whole-ore behavior does not establish pure-goethite
+          leaching or a universal advantage of this consortium.
+  - id: anoxic_limonite_loading_response
+    name: Loading-dependent anoxic leaching of Penamax limonite
+    process: bioleaching
+    description: >-
+      Living acidophilic sulfur-oxidizing, iron-reducing mixed cultures were
+      associated with reductive conditions and metal solubilization from
+      selected New Caledonian limonites when ore addition was staged. A
+      single high-loading NC1 addition inhibited iron reduction. Chromium(VI)
+      is implicated as an inhibitor, but chemical reductants also leach the
+      ore and other leachate toxicity remains unresolved.
+    context: >-
+      Santos et al. used Penamax NC1 and NC2 ores ground and screened to
+      <100 micrometers. NC1 experiments I and II used a mesophilic consortium
+      reported as type strains of Acidithiobacillus ferrooxidans,
+      'A. ferruginosus', A. ferriphilus, A. ferridurans and Sulfobacillus
+      thermosulfidooxidans from Bangor's Acidophile Culture Collection.
+      No single taxon or strain is assigned the consortium effect. In 2-L
+      working-volume stirred reactors at 150 rpm, 35 degrees C and maintained
+      pH 1.5, oxygen-free nitrogen removed dissolved oxygen. Starter cultures
+      used basal salts, trace elements, 100 micromolar ferrous sulfate and
+      5% w/v elemental sulfur; reactor inoculum volume and sulfur loading are
+      not independently specified in the reported setup. NC1 was added once
+      at 10% w/v (I, 30 days), or as 1%, 4%, 5% and 5% additions on days 0,
+      15, 29 and 43 (II, 15% final w/v; results through day 50). Ferrozine
+      assays tracked iron speciation and AAS measured other soluble metals.
+      These sequential experiments differ in loading and duration and do not
+      establish a matched treatment effect; replicate counts are not stated.
+    microbial: true
+    evidence:
+      - source_ref: santos_2022
+        supports: support
+        explanation: >-
+          Methods, Tables 1-3 and Figures 2-3: NC1 experiment I showed little
+          ferrous iron and no microscopically observed cells by day 30, with
+          reported nickel and cobalt extraction of 12% and 41%. Incremental
+          experiment II developed lower redox potentials and more ferrous
+          iron, with 31% nickel and 94% cobalt extraction by the reported
+          endpoint. Cells also declined in II and none were observed at its
+          end. These observations support a conditional consortium-associated
+          process, not sustained growth or an isolated recovered product.
+      - source_ref: santos_2022
+        supports: partial
+        explanation: >-
+          Methods and Table 3, Figures 5-6: NC2 experiment IV used a different
+          moderately thermophilic consortium at 50 degrees C, pH 1.5, 5 mM
+          initial ferrous sulfate and staged addition to 15% w/v, reporting
+          12% nickel and 72% cobalt extraction. Abiotic NC2 experiment V
+          gave 10% nickel and 70% cobalt with three 10 mM ferrous-sulfate
+          additions in four days at the same pH and temperature. V used
+          1-L working volume and all ore at day zero, so this is evidence
+          for chemical leachability, not a fully matched microbial comparison.
+          Table 4 and Discussion further show that ferrous-iron leachate
+          remained strongly biotoxic despite undetectable Cr(VI); the cause
+          was unresolved. XRD residues showed no major goethite-phase changes,
+          preventing a pure-goethite dissolution claim from these ore assays.
+curation_history:
+  - timestamp: '2026-10-11T12:13:06Z'
+    curator: Codex (GPT-6; codex)
+    action: record_creation
+    summary: >-
+      Created the geological primary-resource identity and two conditional
+      laboratory bioleaching mechanisms from independently grounded feed
+      context and primary methods, preserving null outcomes, chemical
+      comparators and unresolved dosing, toxicity and causal limitations.
+      Scientific acceptance is recorded separately by independent review.
+history_refs:
+  - history/records/nickel-laterite-ore/2026-10-11T121306Z-codex-4f14be.yaml
