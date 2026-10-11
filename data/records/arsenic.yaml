@@ -1,0 +1,112 @@
+id: cmmmech:arsenic
+name: Arsenic
+material_kind: element
+description: >-
+  Arsenic (As), grounded by the neutral-atom ChEBI identifier. Arsenate,
+  arsenite, gallium arsenide and metal hydroxide sludge are different
+  chemical or resource entities. The US designation maps the listed arsenic
+  commodity to this element without designating all arsenic-bearing wastes.
+  Arsenic was retained in the final 2025 list despite proposed removal in the
+  draft. The mechanism concerns co-mobilization from sludge in the same
+  experiment curated for gallium, not an independent replication or an
+  arsenic detoxification process.
+identifiers:
+  - id: CHEBI:27563
+    label: arsenic atom
+sources:
+  - id: chebi_arsenic
+    title: ChEBI CHEBI:27563 — arsenic atom
+    url: https://www.ebi.ac.uk/chebi/CHEBI:27563
+    accessed_on: '2026-10-11'
+  - id: usgs2025
+    title: >-
+      USGS (2025). Final 2025 List of Critical Minerals. Federal Register
+      90:50494-50497, document 2025-19813; arsenic in the final commodity table
+      and discussion of its retention following proposed draft removal.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: fritze2026
+    title: >-
+      Fritze MT, Haubrich F, Otto A, Schippers A and Hedrich S (2026).
+      Bioleaching of GaAs metal hydroxide sludge: a biohydrometallurgical
+      alternative to conventional acid leaching. Frontiers in Microbiology
+      17:1807986. doi:10.3389/fmicb.2026.1807986.
+    url: https://doi.org/10.3389/fmicb.2026.1807986
+    accessed_on: '2026-10-11'
+  - id: ncbi_thiooxidans
+    title: NCBI Taxonomy 930 — Acidithiobacillus thiooxidans, species rank
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States of America
+    list_name: USGS Final List of Critical Minerals
+    edition: '2025; Federal Register 90:50494-50497; published 7 November 2025'
+    classification: critical
+    source_ref: usgs2025
+mechanisms:
+  - id: thiooxidans_hydroxide_sludge_comobilization
+    name: Arsenic co-mobilization during hydroxide-sludge bioleaching
+    process: bioleaching
+    description: >-
+      Arsenic entered solution during acidic laboratory leaching of sludge
+      with living sulfur-oxidizing Acidithiobacillus thiooxidans cultures.
+      Similar final arsenic leaching in the acid-adjusted abiotic comparator
+      does not establish a microbial enhancement. The observed process is
+      co-mobilization, without a demonstrated arsenic redox reaction,
+      detoxification or recovered arsenic product.
+    context: >-
+      DSM 14887 type-strain cultures were adapted to 5% w/v sludge with
+      aluminum; the taxon identifier resolves the species, not the strain.
+      The GaAs-wafer-production hydroxide sludge was dried at 60 degrees C
+      for 48 hours and mortar-homogenized. Table 1 reports 1.34% As by
+      handheld XRF. Section 2.1 assumes arsenate associated with iron phases;
+      it does not measure arsenic oxidation state in this assay. The curated
+      3% w/v experiment used 50 mL shake-flask setups, HBS medium, 1% elemental
+      sulfur, initial pH 1.8, 30 degrees C and eight days. Table 2 gives
+      12.9 mM Al (molar Al:F 1.5:1) and 1 mL sulfuric acid initially.
+      Section 2.3 labels the 10% inoculum w/v, an unresolved unusual basis.
+      Biotic setups were triplicate; controls were uninoculated, either
+      initially pH 1.8 or acid-adjusted to follow the biotic pH. Dissolved
+      elements were measured by ICP-MS, without arsenic speciation. The
+      exact shaking speed and sample separation protocol for this assay
+      are not resolved in Section 2.3.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:930
+        label: Acidithiobacillus thiooxidans
+    evidence:
+      - source_ref: fritze2026
+        supports: support
+        explanation: >-
+          Section 3.2 and Figure 3 report 68% of feed arsenic in solution
+          after eight days in the 3% sludge biotic assay. The figure presents
+          biotic means and SD, without numeric SD transcribed here. The
+          authors associate arsenic release with dissolution of ferrihydrite;
+          this is a host-dissolution interpretation, not evidence for
+          microbial reduction of arsenate. Industrial feed provenance does
+          not establish industrial operation of this laboratory process.
+      - source_ref: fritze2026
+        supports: partial
+        explanation: >-
+          The same Section 3.2 reports 66% arsenic leaching in the
+          acid-adjusted abiotic comparator and describes simplified controls
+          requiring replicate confirmation. The small reported difference
+          therefore does not establish arsenic-specific microbial benefit.
+          Its statement placing initial 24% As at day 1 conflicts with
+          Figure 3, which places that point at day 0; no initial value or
+          derived arsenic rate is curated. Section 3.4 discusses subsequent
+          chemical arsenic removal prospectively, not a tested microbial
+          recovery or detoxification result. Methods and Table 2 specify
+          Al:F, whereas the abstract says Al:Fe; this record follows the
+          flask-specific Table 2 ratio.
+curation_history:
+  - timestamp: '2026-10-11T04:21:03Z'
+    curator: Codex (GPT-6; Codex)
+    action: record_creation
+    summary: >-
+      Created arsenic identity, dated final US 2025 criticality and sludge
+      co-mobilization evidence, retaining similar abiotic extraction, no
+      proven arsenic redox or recovery result and a source timing conflict.
+      Independent scientific review is a separate subsequent artifact.
+history_refs:
+  - history/records/arsenic/2026-10-11T042103Z-codex-36b267.yaml

@@ -1,0 +1,98 @@
+id: cmmmech:silver
+name: Silver
+material_kind: element
+description: >-
+  Silver (Ag). The element identity is distinct from the silver(I) salts and
+  precipitates used in the laboratory experiment below. The dated US
+  designation concerns the silver mineral commodity; it is mapped here to
+  its elemental identity, not inherited by every silver-bearing material.
+identifiers:
+  - id: CHEBI:30512
+    label: silver atom
+sources:
+  - id: chebi_silver
+    title: 'ChEBI:30512 - silver atom (Ag; net charge zero)'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:30512
+    accessed_on: '2026-10-11'
+  - id: usgs_2025
+    title: >-
+      U.S. Geological Survey (2025). Final 2025 List of Critical Minerals.
+      Federal Register 90 FR 50494-50497, November 7, 2025; silver commodity
+      entry on page 50497.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: wang_2010
+    title: >-
+      Wang et al. (2010). Impact of Silver(I) on the Metabolism of Shewanella
+      oneidensis. Journal of Bacteriology 192(4), 1143-1150.
+      DOI 10.1128/JB.01277-09; published online December 11, 2009.
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2812967/
+    accessed_on: '2026-10-11'
+  - id: ncbi_mr1
+    title: 'NCBI Taxonomy: Shewanella oneidensis MR-1 (Taxonomy ID 211586; no rank)'
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586&mode=Info
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States of America
+    list_name: U.S. Department of the Interior Final List of Critical Minerals
+    edition: '2025 (published November 7, 2025; 90 FR 50494-50497)'
+    classification: critical
+    source_ref: usgs_2025
+mechanisms:
+  - id: mr1_silver_reduction
+    name: Anaerobic culture-associated formation of elemental silver
+    process: redox_transformation
+    description: >-
+      Growing Shewanella oneidensis MR-1 cultures transformed Ag(I)-bearing
+      material to precipitates containing XRD-identified elemental Ag(0).
+      This laboratory observation does not establish an isolated-product
+      yield, complete conversion, or industrial recovery process.
+    context: >-
+      Defined chloride/phosphate-containing medium with 100 mM lactate and
+      20 mM fumarate, adjusted to pH 7.6 before sterilization; anaerobic
+      incubation at 30 degrees C in the dark. General exposure methods add
+      AgNO3 at nominal 1-400 micromolar Ag(I), with 10 mL inoculum added to
+      80 mL medium, and state six biological replicates. The separate XRD
+      protocol specifies 1 L medium with 100 micromolar AgCl, no agitation,
+      and 24 h incubation. This difference in stated starting salt is
+      retained, not resolved by treating all added Ag as dissolved AgNO3.
+      XRD samples were centrifuged, water-washed, and dried anaerobically.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:211586
+        label: Shewanella oneidensis MR-1
+    evidence:
+      - source_ref: wang_2010
+        supports: support
+        explanation: >-
+          Methods (XRD analysis), Results (Analysis of silver precipitates),
+          and Figure 3 compare AgCl/Ag3PO4-containing precipitates without
+          cells with Ag(0) diffraction after culture incubation. No-cell
+          media lacked the culture-associated color change. Figure 4 shows
+          cell-associated electron-dense particles after Ag exposure,
+          absent from the no-Ag control; microscopy alone does not assign
+          the oxidation state of each particle.
+      - source_ref: wang_2010
+        supports: partial
+        explanation: >-
+          Results and Figure 2 show dose-dependent limits: growth was
+          delayed at nominal 100 micromolar Ag(I) and absent at 400
+          micromolar. Abiotic precipitation means nominal added Ag(I)
+          differs from dissolved exposure. The abstract's statement that
+          100 micromolar reduced doubling time conflicts with the Results,
+          which report an increase from about 7.5 to 24 h. Proposed roles
+          for cytochromes or flavins in the Discussion were not tested
+          causally in this experiment; neither solution depletion nor
+          product mass balance was established for the inoculated cultures.
+curation_history:
+  - timestamp: '2026-10-11T04:20:51Z'
+    curator: Codex (GPT-6; Codex)
+    action: create
+    summary: >-
+      Created silver identity, dated US criticality and an MR-1 laboratory
+      transformation mechanism from verified authority pages and primary
+      methods, results and figures. Preserved starting-salt ambiguity,
+      abiotic precipitation, dose limitation and inferred molecular cause;
+      attached the separate canonical CREATE session before review.
+history_refs:
+  - history/records/silver/2026-10-11T042045Z-codex-c38021.yaml

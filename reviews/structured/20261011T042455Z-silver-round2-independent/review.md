@@ -1,0 +1,436 @@
+# Silver independent adversarial scientific review
+
+- Review: 20261011T042455Z-silver-round2-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T04:22:20Z
+- Finished UTC: 2026-10-11T04:24:55Z
+- Reviewer: /root/cmm2_zinc (Codex) (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Silver identity, dated criticality and bounded laboratory MR-1 transformation are supported. No actionable defect found. The record preserves starting-salt uncertainty, abiotic precipitation, dose-dependent inhibition and limits on mechanistic causality and recovered-product yield.
+
+## Scope And Provenance
+
+All fields of one newly curated silver record, attached CREATE history and evidence relevant to the stated mechanism.
+
+Selection: Assigned independent review of final history-attached silver bytes.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 268498d0a9748f3a18955e35f175f67115f88b97.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:silver | data/records/silver.yaml | maintained | Silver |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Single-record validation | passed | True | cmmmech:silver | 1 record checked; 0 failed. |
+| History linkage and append-only validation | passed | True | cmmmech:silver | 26 histories checked; 0 errors. Run directly by reviewer against trusted base. |
+| Batch local checks | passed | True | cmmmech:silver | Parent executed just check and reported exit 0; reviewer inspected /private/tmp/cmm-round2-check.log: 307 passed, 3 skipped, 17 records valid and 26 histories valid. Batch scope includes this unchanged target hash. |
+| Primary evidence and identity review | passed | True | cmmmech:silver | Authorities, relevant full text, Figures 2-4, source conflicts, and bounded search were checked independently as detailed below. |
+
+## Scientific And Domain Assessments
+
+### Element, salt and strain resolution
+
+identity: supported. Targets: cmmmech:silver.
+
+Element and experimentally exposed salts remain distinct; verified MR-1 identity is appropriately strain scoped.
+
+### Jurisdiction, list and edition
+
+grounding: supported. Targets: cmmmech:silver.
+
+Final US2025 designation is supported without timeless or mineral-wide extrapolation.
+
+### Material form, biomass, conditions, controls, outcome and scale
+
+evidence: supported. Targets: cmmmech:silver.
+
+The narrow culture-associated Ag(0) formation claim is supported; molecular causes and isolated-product yield are explicitly not established.
+
+### Source contradictions and quantitative boundaries
+
+consistency: supported. Targets: cmmmech:silver.
+
+The record explicitly preserves salt ambiguity and abstract/Results growth-direction conflict. Micromolar doses and doubling times remain qualified prose, not invalid mg/kg observations.
+
+### Creation history and current-byte attestation
+
+provenance: supported. Targets: cmmmech:silver.
+
+Inline history and canonical CREATE sidecar are separate and truthful; validation passes.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/silver.yaml; Entire inspected record and inline curation_history | supports | Exact final hash inspected before assessment; reviewer made no record changes. |
+| identity | https://www.ebi.ac.uk/chebi/CHEBI:30512; Current ChEBI label, formula and net charge | supports | Silver atom, Ag and charge zero resolve the element identity separately from Ag(I) salts. |
+| organism | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586&amp;mode=Info; Current name and rank | supports | Taxon 211586 resolves Shewanella oneidensis MR-1 at no-rank strain entry, not all S. oneidensis. |
+| criticality | https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm; Final 2025 notice, complete table and silver row on page 50497 | supports | Named US final edition includes silver; explicit commodity-to-element mapping does not propagate criticality to salts. |
+| paper | https://pmc.ncbi.nlm.nih.gov/articles/PMC2812967/; Retained wang2010-pmc.html and extracted text: Materials and Methods; Impact of silver on growth; Analysis of silver precipitates; Discussion | supports | Read primary Methods/results/Discussion from legitimate curator-acquired PMC HTML, not a search snippet. Verified culture, salts, controlled dark anaerobic conditions, qualitative phase outcome, dose limitation and source contradictions. Publisher reopen failed; no fresh article download is claimed. |
+| figures | https://pmc.ncbi.nlm.nih.gov/articles/PMC2812967/; Figures 2, 3 and 4 original JPEGs in /private/tmp/cmm-round2-silver-20261011 | supports | Visually inspected protein growth profiles, AgCl/Ag3PO4 versus Ag-labelled diffraction patterns, and no-Ag/exposed-cell TEM panels. No values digitized, phase purity inferred, or diffraction refitting performed. |
+| history | history/records/silver/2026-10-11T042045Z-codex-c38021.yaml; Target, current UTC session, actor metadata and CREATE event | supports | Sidecar is correctly linked to silver and distinct from later inline event; describes the present curation without invented older authorship. |
+| batch_log | /private/tmp/cmm-round2-check.log; Final output lines | supports | Read parent-run check log showing 307 tests passed, 3 skipped, 17 record validations and 26 history validations successful. |
+| search | 2026-10-11 live web and ignored-file-inclusive local searches; Returned first web result sets; worktree data/research/reviews/history and retained article HTML | context_only | No affecting correction or retraction appeared in inspected results. Different light/EPS and strain studies are scoped leads rather than direct refutation of the dark MR-1 experiment. Local matches are this new record and its provenance, not another silver root record. |
+
+## Limits And Additional Notes
+
+- Primary evidence is one laboratory study. Different-strain, light/EPS and alternative recovery experiments remain uncurated leads.
+- The original article remains internally ambiguous about AgNO3 versus AgCl in its XRD protocol and early-exponential versus late-log inoculum descriptions. The accepted record avoids silently reconciling them.
+- Figure 2 has no displayed variance bars and the general six-replicate statement does not establish XRD phase-fraction uncertainty; record states no quantified conversion, mass yield or phase purity.
+- No specific cytochrome/flavin necessity, energy-conserving silver respiration or per-particle oxidation state is demonstrated by the accepted experiment.
+- Primary full text and figures were already acquired by the curator; this reviewer independently inspected those bytes and reopened authority pages, but a fresh publisher full-text reopen failed.
+- Correction/counterevidence searches were bounded. Local hidden and ignored files were included; unrelated local paths and inaccessible original checkouts were excluded.
+- Publication, final current-hash coverage and post-merge verification are parent-owned gates; this review does not itself publish or alter the scientific record.
+- No finding issue is proposed because no actionable defect was identified in this declared scope. Existing scientific limitations are retained rather than manufactured as errors.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T042455Z-silver-round2-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Silver independent adversarial scientific review
+started_at: '2026-10-11T04:22:20Z'
+finished_at: '2026-10-11T04:24:55Z'
+reviewer:
+  identity: /root/cmm2_zinc (Codex)
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Did not author or edit silver record, sidecar or dossier. Independently
+    read retained primary full text and figure pixels, reopened authorities, and ran
+    scientific countersearches; raw files were acquired by the curator and provenance
+    was checked.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Silver identity, dated criticality and bounded laboratory MR-1 transformation
+  are supported. No actionable defect found. The record preserves starting-salt uncertainty,
+  abiotic precipitation, dose-dependent inhibition and limits on mechanistic causality
+  and recovered-product yield.
+source:
+  git_revision: 268498d0a9748f3a18955e35f175f67115f88b97
+  state: working_tree
+  inputs:
+  - path: data/records/silver.yaml
+    sha256: 61c5fde88f4f19b5c2bcd65b5ead39ead21fd315c208436052b29a1503b4536c
+    role: target
+  - path: history/records/silver/2026-10-11T042045Z-codex-c38021.yaml
+    sha256: e99b0263970af023f99332cbead1825f34a06d251e069a0ea485a19eca3d98ed
+    role: context
+  - path: research/ingests/round2-silver-20261011.md
+    sha256: 2a4a7c40b71a21b06a11b8aac50e83c34b0f9646527189b20014e13a7b36376e
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+scope:
+  description: All fields of one newly curated silver record, attached CREATE history
+    and evidence relevant to the stated mechanism.
+  selection: Assigned independent review of final history-attached silver bytes.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:silver
+  exclusions:
+  - target: Other silver experiments and industrial recovery
+    reason: Discovery leads are not accepted mechanistic evidence in this record;
+      no whole-literature review or deployment audit.
+targets:
+- target_id: cmmmech:silver
+  path: data/records/silver.yaml
+  label: Silver
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/silver.yaml
+    role: maintained_record
+checks:
+- check_id: record
+  name: Single-record validation
+  status: passed
+  required: true
+  summary: 1 record checked; 0 failed.
+  target_ids:
+  - cmmmech:silver
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate
+    data/records/silver.yaml
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: history
+  name: History linkage and append-only validation
+  status: passed
+  required: true
+  summary: 26 histories checked; 0 errors. Run directly by reviewer against trusted
+    base.
+  target_ids:
+  - cmmmech:silver
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate-history
+    --base 268498d0a9748f3a18955e35f175f67115f88b97
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: batch
+  name: Batch local checks
+  status: passed
+  required: true
+  summary: 'Parent executed just check and reported exit 0; reviewer inspected /private/tmp/cmm-round2-check.log:
+    307 passed, 3 skipped, 17 records valid and 26 histories valid. Batch scope includes
+    this unchanged target hash.'
+  target_ids:
+  - cmmmech:silver
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch_log
+- check_id: science
+  name: Primary evidence and identity review
+  status: passed
+  required: true
+  summary: Authorities, relevant full text, Figures 2-4, source conflicts, and bounded
+    search were checked independently as detailed below.
+  target_ids:
+  - cmmmech:silver
+  evidence_ids:
+  - identity
+  - organism
+  - criticality
+  - paper
+  - figures
+  - search
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/silver.yaml
+  locator: Entire inspected record and inline curation_history
+  accessed_at: '2026-10-11T04:24:55Z'
+  support: supports
+  summary: Exact final hash inspected before assessment; reviewer made no record changes.
+- evidence_id: identity
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:30512
+  locator: Current ChEBI label, formula and net charge
+  accessed_at: '2026-10-11T04:24:55Z'
+  support: supports
+  summary: Silver atom, Ag and charge zero resolve the element identity separately
+    from Ag(I) salts.
+- evidence_id: organism
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586&mode=Info
+  locator: Current name and rank
+  accessed_at: '2026-10-11T04:24:55Z'
+  support: supports
+  summary: Taxon 211586 resolves Shewanella oneidensis MR-1 at no-rank strain entry,
+    not all S. oneidensis.
+- evidence_id: criticality
+  kind: authority
+  reference: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  locator: Final 2025 notice, complete table and silver row on page 50497
+  accessed_at: '2026-10-11T04:24:55Z'
+  support: supports
+  summary: Named US final edition includes silver; explicit commodity-to-element mapping
+    does not propagate criticality to salts.
+- evidence_id: paper
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC2812967/
+  locator: 'Retained wang2010-pmc.html and extracted text: Materials and Methods;
+    Impact of silver on growth; Analysis of silver precipitates; Discussion'
+  accessed_at: '2026-10-11T04:24:55Z'
+  support: supports
+  summary: Read primary Methods/results/Discussion from legitimate curator-acquired
+    PMC HTML, not a search snippet. Verified culture, salts, controlled dark anaerobic
+    conditions, qualitative phase outcome, dose limitation and source contradictions.
+    Publisher reopen failed; no fresh article download is claimed.
+  snapshot_sha256: fb67df4bc9df6b2d396dbf296b13d58838aa215359e476f6892185feb372c9e8
+- evidence_id: figures
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC2812967/
+  locator: Figures 2, 3 and 4 original JPEGs in /private/tmp/cmm-round2-silver-20261011
+  accessed_at: '2026-10-11T04:24:55Z'
+  support: supports
+  summary: Visually inspected protein growth profiles, AgCl/Ag3PO4 versus Ag-labelled
+    diffraction patterns, and no-Ag/exposed-cell TEM panels. No values digitized,
+    phase purity inferred, or diffraction refitting performed.
+- evidence_id: history
+  kind: record_content
+  reference: history/records/silver/2026-10-11T042045Z-codex-c38021.yaml
+  locator: Target, current UTC session, actor metadata and CREATE event
+  accessed_at: '2026-10-11T04:24:55Z'
+  support: supports
+  summary: Sidecar is correctly linked to silver and distinct from later inline event;
+    describes the present curation without invented older authorship.
+- evidence_id: batch_log
+  kind: validation
+  reference: /private/tmp/cmm-round2-check.log
+  locator: Final output lines
+  accessed_at: '2026-10-11T04:24:55Z'
+  support: supports
+  summary: Read parent-run check log showing 307 tests passed, 3 skipped, 17 record
+    validations and 26 history validations successful.
+- evidence_id: search
+  kind: search
+  reference: 2026-10-11 live web and ignored-file-inclusive local searches
+  locator: Returned first web result sets; worktree data/research/reviews/history
+    and retained article HTML
+  accessed_at: '2026-10-11T04:24:55Z'
+  support: context_only
+  summary: No affecting correction or retraction appeared in inspected results. Different
+    light/EPS and strain studies are scoped leads rather than direct refutation of
+    the dark MR-1 experiment. Local matches are this new record and its provenance,
+    not another silver root record.
+  search_scope: 'Queries: "10.1128/JB.01277-09" correction retraction erratum; "Shewanella"
+    "silver" "Wang" "2010" "abiotic". First result sets only, no pagination. rg --no-ignore
+    --hidden across data, research, reviews, history for cmmmech:silver, CHEBI:30512,
+    JB.01277-09 and PMC2812967. Retained HTML supplement search found supplemented-media
+    prose, not a supplementary artifact. Scope is this worktree and cited local raw
+    files, not inaccessible original checkouts or global literature.'
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Element, salt and strain resolution
+  outcome: supported
+  summary: Element and experimentally exposed salts remain distinct; verified MR-1
+    identity is appropriately strain scoped.
+  target_ids:
+  - cmmmech:silver
+  evidence_ids:
+  - record
+  - identity
+  - organism
+- assessment_id: criticality
+  area: grounding
+  topic: Jurisdiction, list and edition
+  outcome: supported
+  summary: Final US2025 designation is supported without timeless or mineral-wide
+    extrapolation.
+  target_ids:
+  - cmmmech:silver
+  evidence_ids:
+  - record
+  - criticality
+  dimensions:
+  - name: criticality
+    value: United States; Department of the Interior/USGS Final List; 2025, 7 November
+      2025
+    definition: Historical dated commodity designation mapped to the element.
+    evidence_ids:
+    - criticality
+- assessment_id: mechanism
+  area: evidence
+  topic: Material form, biomass, conditions, controls, outcome and scale
+  outcome: supported
+  summary: The narrow culture-associated Ag(0) formation claim is supported; molecular
+    causes and isolated-product yield are explicitly not established.
+  target_ids:
+  - cmmmech:silver
+  evidence_ids:
+  - record
+  - paper
+  - figures
+  dimensions:
+  - name: organism_biomass
+    value: Living growing S. oneidensis MR-1
+    definition: Specified experimental culture; species-wide and purified-enzyme claims
+      excluded.
+    evidence_ids:
+    - paper
+    - organism
+  - name: substrate
+    value: AgNO3 general protocol; AgCl named in XRD protocol; abiotic AgCl/Ag3PO4
+      precipitation
+    definition: Unresolved starting-salt difference remains visible; nominal input
+      is not free dissolved Ag(I).
+    evidence_ids:
+    - paper
+    - record
+  - name: conditions
+    value: Defined chloride/phosphate medium; lactate 100 mM; fumarate 20 mM; pre-sterilization
+      pH 7.6; dark anaerobic 30 C
+    definition: XRD protocol separately 1 L, nominal 100 micromolar AgCl, 24 h, without
+      agitation.
+    evidence_ids:
+    - paper
+  - name: controls_outcome
+    value: No-cell and no-Ag comparisons; XRD Ag-labelled precipitate; dose-dependent
+      growth limitation
+    definition: No-cell precipitation and microscopy caveat constrain causality and
+      particle identity; no purified-product mass balance.
+    evidence_ids:
+    - paper
+    - figures
+  - name: scale
+    value: Laboratory transformation
+    definition: No industrial deployment or ore/waste recovery demonstrated.
+    evidence_ids:
+    - paper
+- assessment_id: uncertainty
+  area: consistency
+  topic: Source contradictions and quantitative boundaries
+  outcome: supported
+  summary: The record explicitly preserves salt ambiguity and abstract/Results growth-direction
+    conflict. Micromolar doses and doubling times remain qualified prose, not invalid
+    mg/kg observations.
+  target_ids:
+  - cmmmech:silver
+  evidence_ids:
+  - record
+  - paper
+  - figures
+- assessment_id: provenance
+  area: provenance
+  topic: Creation history and current-byte attestation
+  outcome: supported
+  summary: Inline history and canonical CREATE sidecar are separate and truthful;
+    validation passes.
+  target_ids:
+  - cmmmech:silver
+  evidence_ids:
+  - record
+  - history
+findings: []
+actions: []
+limitations:
+- Primary evidence is one laboratory study. Different-strain, light/EPS and alternative
+  recovery experiments remain uncurated leads.
+- The original article remains internally ambiguous about AgNO3 versus AgCl in its
+  XRD protocol and early-exponential versus late-log inoculum descriptions. The accepted
+  record avoids silently reconciling them.
+- Figure 2 has no displayed variance bars and the general six-replicate statement
+  does not establish XRD phase-fraction uncertainty; record states no quantified conversion,
+  mass yield or phase purity.
+- No specific cytochrome/flavin necessity, energy-conserving silver respiration or
+  per-particle oxidation state is demonstrated by the accepted experiment.
+- Primary full text and figures were already acquired by the curator; this reviewer
+  independently inspected those bytes and reopened authority pages, but a fresh publisher
+  full-text reopen failed.
+- Correction/counterevidence searches were bounded. Local hidden and ignored files
+  were included; unrelated local paths and inaccessible original checkouts were excluded.
+- Publication, final current-hash coverage and post-merge verification are parent-owned
+  gates; this review does not itself publish or alter the scientific record.
+notes:
+- No finding issue is proposed because no actionable defect was identified in this
+  declared scope. Existing scientific limitations are retained rather than manufactured
+  as errors.
+```
