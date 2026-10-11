@@ -1,0 +1,322 @@
+{
+  "created_at": "2026-10-11T06:00:22.603474+00:00",
+  "actor": {
+    "name": "codex",
+    "model": "GPT-6",
+    "tool": "codex"
+  },
+  "worktree": "/private/tmp/CMMMech-expansion-round7-20261011",
+  "branch": "curate/cmm-expansion-round7-20261011",
+  "trusted_base": "58e7aef16a9643438cf621fa9fb402e9d325dc65",
+  "scope": "Terbium element root with one strain-resolved individual-Tb screening experiment; primary lead already present in round5 and round6 handoffs.",
+  "baseline": "Parent reported terminal baseline pass before record writes: 307 passed, 3 skipped, 36 records and 46 histories valid.",
+  "dedup": {
+    "ignored_hidden_included": true,
+    "symlink_following": true,
+    "checkout_scopes": [
+      "data/records",
+      "research",
+      "reviews",
+      "history"
+    ],
+    "local_download_scopes": [
+      "/private/tmp/cmmmech-round5-ree-raw",
+      "/private/tmp/cmm-round4-phosphorus-cerium-evidence-20261011",
+      "/private/tmp/cmm-round7-terbium-raw"
+    ],
+    "queries": [
+      "terbium|1130939|PMC10011134|PMC12388864",
+      "cmmmech:terbium|CHEBI:33376|1130939|PMC10011134|PMC12388864"
+    ],
+    "result": "Authority/frontier candidates and the known deferred 2023 source lead were found. No pre-existing accepted terbium root or curated instance of this experiment was found in the named repository and readable-download scopes before creation; final dedup includes the newly written record. Compressed assets were inspected after extraction. No machine-wide absence claim."
+  },
+  "searches": [
+    {
+      "provider": "web search",
+      "date": "2026-10-11",
+      "queries": [
+        "\"terbium\" site:ebi.ac.uk/chebi CHEBI",
+        "\"2025 Final List of Critical Minerals\" \"terbium\"",
+        "\"10.3389/fbioe.2023.1130939\" correction retraction erratum",
+        "\"Rare earths stick\" \"Supplementary\"",
+        "\"Nostoc\" \"20.02\" \"OR\" Paper 2023",
+        "\"Nostoc sp. 20.02\" taxonomy",
+        "\"terbium\" cyanobacteria biosorption no adsorption control",
+        "site:ncbi.nlm.nih.gov/Taxonomy \"Synechococcus elongatus\" \"2973\"",
+        "site:ncbi.nlm.nih.gov/Taxonomy \"Nostoc sp. 20.02\"",
+        "\"Rare earths stick\" \"correction\" \"retraction\"",
+        "\"10.3389/fbioe.2023.1130939\" (correction OR corrigendum OR retraction OR erratum)",
+        "\"Synechococcus elongatus UTEX 2973\" terbium biosorption control"
+      ],
+      "filters": "No domain filters beyond literal query syntax; no date filter; first returned result sets only, no exhaustive pagination"
+    }
+  ],
+  "correction_search": "No actual correction, corrigendum or retraction notice surfaced for the selected DOI in the bounded searches or primary full text. A Frontiers category page contains a generic Correction filter, not a correction to this study. No proof of global absence is claimed.",
+  "source": {
+    "doi": "10.3389/fbioe.2023.1130939",
+    "pmcid": "PMC10011134",
+    "pmid": "36926689",
+    "title": "Rare earths stick to rare cyanobacteria: Future potential for bioremediation and recovery of rare earth elements",
+    "authors": "Paper, Koch, Jung, Lakatos, Nilges and Brück",
+    "publication": "Frontiers in Bioengineering and Biotechnology 11:1130939; published 28 February 2023",
+    "role": "Primary individual-element biosorption screen",
+    "inspected": [
+      "Full primary publisher HTML and EuropePMC XML methods/results/discussion/data statement",
+      "Table 1 strain provenance",
+      "Figure 2 original publisher WEBP visually inspected",
+      "All supplementary Table S1 and S2 DOCX cell text inspected",
+      "Figure 3-7 captions and matching methods/results inspected to verify Ce-only scope"
+    ],
+    "data_availability": "Article/supplement contain the contributions; further inquiries to corresponding author; 16S sequences have Figure 1 accessions. No per-replicate Tb dataset was provided in the acquired supplement; no author contact made."
+  },
+  "authority_checks": [
+    {
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:33376",
+      "result": "terbium atom, formula Tb, charge 0"
+    },
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1350461&retmode=xml",
+      "result": "Synechococcus elongatus UTEX 2973, no-rank strain-specific node; corroborated by NCBI Taxonomy browser"
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm",
+      "result": "USGS Final 2025 List, FR 90:50494-50497, 7 November 2025; Tb row page 50497. Byproduct/co-product Yes is not the criticality classification column."
+    }
+  ],
+  "accepted_claims": [
+    "Lyophilized UTEX 2973 biomass associated with solution-Tb decrease under 10 mM, pH 5 +/- 0.2, 10-20 mg dry biomass/2 mL, 3 h room-temperature screening conditions",
+    "Strain identity verified with NCBITaxon:1350461",
+    "Dated US2025 named commodity designation mapped explicitly to elemental root"
+  ],
+  "limits": [
+    "Exact Tb counter-ion, numerical sorption temperature and per-strain mass absent from the inspected methods",
+    "Triplicate stated without clear biological-versus-technical replicate structure",
+    "No matched biomass-free Tb blank reported in primary article or supplementary tables",
+    "No viability assay; lyophilization is not treated as proof of sterilization",
+    "Figure 2 Qmax is a screening endpoint, not fitted Tb maximum; no plotted measurement digitized",
+    "Abstract four-element range not imported as individual Tb capacity",
+    "Ce-only kinetics, pH, model fits, mixed-metal competition, released ions and FTIR not transferred to Tb",
+    "Water-only comparison in Ce/Al/Pb/Ni/Zn ion-release study is not Tb blank",
+    "Solution depletion alone cannot distinguish all sorption/precipitation losses or establish isolated recovery",
+    "No real-feed, Tb-selective, desorption/reuse, isolated-product or industrial outcome established"
+  ],
+  "deferred_leads": [
+    {
+      "doi": "10.3389/fbioe.2022.833122",
+      "pmcid": "PMC8866756",
+      "topic": "Calothrix-derived Tb-binding compounds",
+      "reason": "Primary citation discovered in selected source; not independently inspected for acceptance in this pass"
+    },
+    {
+      "pmcid": "PMC12388864",
+      "doi": "10.3390/microorganisms13081753",
+      "topic": "2025 Bacillus Tb biosorption",
+      "reason": "Search lead only; detailed phase, EDS and mechanism claims need independent full-text assessment before curation"
+    },
+    {
+      "pmcid": "PMC10574616",
+      "topic": "Arthrospira versus In2O3 Tb sorption",
+      "reason": "Search lead only; distinct biosorbent and model-fit denominators, not a refutation of UTEX assay"
+    },
+    {
+      "doi": "10.3390/microorganisms10112138",
+      "topic": "Galdieria ACUF427 Y/Eu/Ce/Tb biosorption",
+      "reason": "Search lead only; candidate for future individual-Y expansion with full-text review"
+    },
+    {
+      "doi": "10.1128/spectrum.00760-24",
+      "topic": "Tb enrichment by Bacillus DW015 and Sporosarcina pasteurii",
+      "reason": "Search lead only; not used to support the selected UTEX experiment"
+    }
+  ],
+  "acquisitions": [
+    {
+      "url": "https://www.frontiersin.org/files/Articles/1130939/xml-images/fbioe-11-1130939-g002.webp",
+      "retrieved_at": "2026-10-11T05:57:46.211615+00:00",
+      "content_type": "image/webp",
+      "final_url": "https://www.frontiersin.org/files/Articles/1130939/xml-images/fbioe-11-1130939-g002.webp",
+      "file": "/private/tmp/cmm-round7-terbium-raw/figure2.webp",
+      "bytes": 152624,
+      "sha256": "bb1c93bfc1f37eb1789c203ce9f2debe3fb817f524a43459e174351bcc7eddd1",
+      "terms": "CC BY 4.0",
+      "content_check": "Confirmed actual image, XML taxonomy, or HTML authority content; not challenge HTML"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:33376",
+      "retrieved_at": "2026-10-11T05:57:46.212416+00:00",
+      "content_type": "text/html;charset=utf-8",
+      "final_url": "https://www.ebi.ac.uk/chebi/CHEBI:33376",
+      "file": "/private/tmp/cmm-round7-terbium-raw/chebi.html",
+      "bytes": 823578,
+      "sha256": "bf450717d14386b1d0757e2669fb8cd09c0fa39b96a6c7ed09bc6053f1fc621b",
+      "terms": "Authority page; retained locally for verification, not redistributed; separate reuse terms not assessed",
+      "content_check": "Confirmed actual image, XML taxonomy, or HTML authority content; not challenge HTML"
+    },
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1350461&retmode=xml",
+      "retrieved_at": "2026-10-11T05:57:46.212736+00:00",
+      "content_type": "text/xml; charset=UTF-8",
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1350461&retmode=xml",
+      "file": "/private/tmp/cmm-round7-terbium-raw/taxonomy.xml",
+      "bytes": 2928,
+      "sha256": "ccc6510196c2df1474f1b04cbb2dff44c26d9a1405f5727c082a4fd4187e6527",
+      "terms": "Authority page; retained locally for verification, not redistributed; separate reuse terms not assessed",
+      "content_check": "Confirmed actual image, XML taxonomy, or HTML authority content; not challenge HTML"
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm",
+      "retrieved_at": "2026-10-11T05:57:46.212953+00:00",
+      "content_type": "text/html",
+      "final_url": "https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm",
+      "file": "/private/tmp/cmm-round7-terbium-raw/usgs2025.html",
+      "bytes": 21581,
+      "sha256": "31f7f1d2287f8e20dc37134a515ca22c284ef6dd53976ee0be7ac601bb7b8c82",
+      "terms": "Authority page; retained locally for verification, not redistributed; separate reuse terms not assessed",
+      "content_check": "Confirmed actual image, XML taxonomy, or HTML authority content; not challenge HTML"
+    },
+    {
+      "file": "/private/tmp/cmm-round7-terbium-raw/article.xml",
+      "sha256": "cd9e18823fbb8e79e6c73026132ac2cf9eea4874fd83e3d141f7f2c42bf6bdf0",
+      "bytes": 151181,
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10011134/fullTextXML",
+      "completed_at": "2026-10-11T05:56:12.329501+00:00",
+      "timestamp_basis": "Local completed-download file mtime; original request-start timestamp was not separately logged",
+      "content_check": "Full-text XML; parsed article title, DOI, PMID and license",
+      "terms": "CC BY 4.0 as given in article permissions"
+    },
+    {
+      "file": "/private/tmp/cmm-round7-terbium-raw/supplementary.zip",
+      "sha256": "f733df7b1be64b461842dd8c4ed9a116b9d63f9fb767793ad7dd418c5fa62276",
+      "bytes": 1243096,
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10011134/supplementaryFiles",
+      "completed_at": "2026-10-11T05:57:51.623732+00:00",
+      "timestamp_basis": "Local completed-download file mtime; original request-start timestamp was not separately logged",
+      "content_check": "ZIP; all 15 entries extracted, including figure assets and Table1.DOCX",
+      "terms": "CC BY 4.0 as given in article permissions"
+    }
+  ],
+  "derived_assets": [
+    {
+      "file": "/private/tmp/cmm-round7-terbium-raw/supp/Table1.DOCX",
+      "sha256": "26a2eba350e8dc3fc0ba267687accc50510f2df556b9f94cbadc956dc328bc50",
+      "bytes": 678492,
+      "derived_from": "supplementary.zip extraction; same primary experiment, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmm-round7-terbium-raw/supp/fbioe-11-1130939-g001.gif",
+      "sha256": "61856b6ab5e3b5907fd8046f07b03301671ea42f67b7e4a4399f157369b82736",
+      "bytes": 17355,
+      "derived_from": "supplementary.zip extraction; same primary experiment, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmm-round7-terbium-raw/supp/fbioe-11-1130939-g001.jpg",
+      "sha256": "468a339b59d0fcdad68ead9d2abeb4bd98cf6cd253bf22c674d1474272af2778",
+      "bytes": 206922,
+      "derived_from": "supplementary.zip extraction; same primary experiment, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmm-round7-terbium-raw/supp/fbioe-11-1130939-g002.gif",
+      "sha256": "2908957417e2318cd6b616e8cc5c2ec8ef9286c0d18f24fc913d5e9f3f00e63d",
+      "bytes": 12865,
+      "derived_from": "supplementary.zip extraction; same primary experiment, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmm-round7-terbium-raw/supp/fbioe-11-1130939-g002.jpg",
+      "sha256": "e067c81963f4cb8d1aa8cecf35cab21c8ec7fcabf540726170c557e4ed55550f",
+      "bytes": 90540,
+      "derived_from": "supplementary.zip extraction; same primary experiment, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmm-round7-terbium-raw/supp/fbioe-11-1130939-g003.gif",
+      "sha256": "0c78d76cd4117392b3fde91dc21cf05abdc5d2789494f240dfaeddd5480cb023",
+      "bytes": 12202,
+      "derived_from": "supplementary.zip extraction; same primary experiment, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmm-round7-terbium-raw/supp/fbioe-11-1130939-g003.jpg",
+      "sha256": "ed138a73ea3230cb314f92062e177807b726eff211554dd51dfa5cd1055bae1e",
+      "bytes": 72316,
+      "derived_from": "supplementary.zip extraction; same primary experiment, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmm-round7-terbium-raw/supp/fbioe-11-1130939-g004.gif",
+      "sha256": "a358b2418877d8bdd3056ededb46c2f8a3a5fb891fdbd9bc938c57793a091a7c",
+      "bytes": 10873,
+      "derived_from": "supplementary.zip extraction; same primary experiment, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmm-round7-terbium-raw/supp/fbioe-11-1130939-g004.jpg",
+      "sha256": "2a6cb56ae3dfa185fba22c4225e14d241f00b9b66cd5fd0e5ed414164dc798e7",
+      "bytes": 76746,
+      "derived_from": "supplementary.zip extraction; same primary experiment, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmm-round7-terbium-raw/supp/fbioe-11-1130939-g005.gif",
+      "sha256": "6d1a74fa8d6480d316e0747c7cd2ba5abe8a0b9442b7e577f72a615b1c9d7eb3",
+      "bytes": 12562,
+      "derived_from": "supplementary.zip extraction; same primary experiment, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmm-round7-terbium-raw/supp/fbioe-11-1130939-g005.jpg",
+      "sha256": "045b040237f1e34b579525a7926c061b45b2c3beac899f99d7b7ccad19155627",
+      "bytes": 75436,
+      "derived_from": "supplementary.zip extraction; same primary experiment, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmm-round7-terbium-raw/supp/fbioe-11-1130939-g006.gif",
+      "sha256": "ff3692676129b8c69680e88bd8ef5736e5fb9e8dd0467ae1e0c425d6bd117385",
+      "bytes": 14594,
+      "derived_from": "supplementary.zip extraction; same primary experiment, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmm-round7-terbium-raw/supp/fbioe-11-1130939-g006.jpg",
+      "sha256": "985b26e28bd7239ddd5464d603ec08fc9800514878f80d0ee46c671e4e082d5d",
+      "bytes": 146485,
+      "derived_from": "supplementary.zip extraction; same primary experiment, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmm-round7-terbium-raw/supp/fbioe-11-1130939-g007.gif",
+      "sha256": "2a2457ff9f9adbf37360ea6502f6144e16288df959d1b9cafe1950d8465e4d06",
+      "bytes": 15760,
+      "derived_from": "supplementary.zip extraction; same primary experiment, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmm-round7-terbium-raw/supp/fbioe-11-1130939-g007.jpg",
+      "sha256": "b65bd9b53744499f4ceb670e8a41ae0fd12616b525c91f3cbaf5a5f373a3939f",
+      "bytes": 187663,
+      "derived_from": "supplementary.zip extraction; same primary experiment, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmm-round7-terbium-raw/article.txt",
+      "sha256": "ace3f30834988ceea30edb16bd3f380b049db49aa5db5deeb35f3533e63e2252",
+      "bytes": 40280,
+      "derived_from": "XML/DOCX plain-text extraction"
+    },
+    {
+      "file": "/private/tmp/cmm-round7-terbium-raw/supplement.txt",
+      "sha256": "cd8b9693b7ab98851dda2c3222ecbd23c773aa1cc5d6c323d5c20498c70c7c79",
+      "bytes": 1949,
+      "derived_from": "XML/DOCX plain-text extraction"
+    }
+  ],
+  "access_failures": [
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10011134/fullTextXML",
+      "error": "Initial sandbox curl failed DNS resolution. Authorized escalated download succeeded."
+    },
+    {
+      "artifact": "supplementary.zip",
+      "error": "A ZIP-open attempt while download session 90324 was still live raised BadZipFile. The same handle completed successfully; complete ZIP then extracted and inspected. This was not treated as a terminal acquisition failure or restarted."
+    }
+  ],
+  "ready_records": [
+    {
+      "sha256": "c47181aa12c1c060c9e04e95c96c37552c4ec183032033dbf9f4500c71e40ffb",
+      "bytes": 5906,
+      "path": "data/records/terbium.yaml"
+    }
+  ],
+  "history": "history/records/terbium/2026-10-11T055851Z-codex-8457ec.yaml",
+  "validation": "Single-file cmmmech validate passed before dossier completion; parent runs final batch gates.",
+  "review_status": "Independent scientific review required; this dossier is curation provenance, not a self-review."
+}

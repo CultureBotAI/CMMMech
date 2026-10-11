@@ -1,0 +1,137 @@
+id: cmmmech:europium
+name: Europium
+material_kind: element
+description: The element Eu, distinct from Eu(III), europium nitrate, oxides, mineral species
+  and waste streams. The dated US designation concerns the named europium mineral commodity
+  and does not transfer criticality to every Eu-bearing material. Laboratory evidence below
+  concerns cyanobacterial culture-associated removal from synthetic solutions; it does not establish
+  selective extraction, a purified product or industrial deployment.
+identifiers:
+- id: CHEBI:32999
+  label: europium atom
+sources:
+- id: chebi_europium
+  title: ChEBI CHEBI:32999 - europium atom; formula Eu, net charge 0
+  url: https://www.ebi.ac.uk/chebi/CHEBI:32999
+  accessed_on: '2026-10-11'
+- id: usgs2025
+  title: USGS (2025). Final 2025 List of Critical Minerals. Federal Register 90:50494-50497,
+    document 2025-19813; europium row on page 50496.
+  url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  accessed_on: '2026-10-11'
+- id: fischer2019
+  title: Fischer et al. (2019). Cyanobacterial promoted enrichment of rare earth elements europium,
+    samarium and neodymium and intracellular europium particle formation. RSC Advances 9:32581-32593;
+    Experimental, Results, Discussion and Figures 1-9.
+  url: https://doi.org/10.1039/C9RA06570A
+  accessed_on: '2026-10-11'
+- id: fischer2019_esi
+  title: Fischer et al. (2019), electronic supplementary information, RA-009-C9RA06570A-s001.pdf;
+    pages S1-S5, Tables S1-S4 and Figures S1-S4. Complete PDF entry recovered with matching
+    CRC32 from the incomplete EuropePMC ZIP download.
+  url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9073238/supplementaryFiles
+  accessed_on: '2026-10-11'
+- id: sag_1282
+  title: SAG culture catalogue, strain 12.82, Anabaena spec.; presently non-axenic, with bacterial
+    and other contamination
+  url: https://sagdb.uni-goettingen.de/detailedList.php?str_number=12.82
+  accessed_on: '2026-10-11'
+- id: ncbi_sag1282
+  title: NCBI Taxonomy 1840102 - Anabaena sp. SAG 12.82; strain-named species-rank node
+  url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1840102&retmode=xml
+  accessed_on: '2026-10-11'
+- id: fritz2023
+  title: 'Fritz et al. (2023; published online 2022). Time-Dependent Size and Shape Evolution
+    of Gold and Europium Nanoparticles from a Bioproducing Microorganism, a Cyanobacterium:
+    A Digitally Supported High-Resolution Image Analysis. Nanomaterials 13:130; Sections 2-4,
+    reviewed for limits of oxidation-state claims.'
+  url: https://doi.org/10.3390/nano13010130
+  accessed_on: '2026-10-11'
+criticality:
+- jurisdiction: United States of America
+  list_name: USGS Final List of Critical Minerals
+  edition: 2025; Federal Register 90:50494-50497, 7 November 2025
+  classification: critical
+  source_ref: usgs2025
+mechanisms:
+- id: anabaena_culture_europium_sorption
+  name: Europium sorption associated with Anabaena sp. SAG 12.82 cultures
+  process: biosorption
+  microbial: true
+  organisms:
+  - id: NCBITaxon:1840102
+    label: Anabaena sp. SAG 12.82
+  description: Cultures exposed to europium nitrate showed reduced Eu in separated supernatants
+    and qualitative Eu signals in harvested biomass. Electron-dense intracellular deposits were
+    reported after Eu exposure, but their composition and oxidation state were not established
+    by particle-specific analysis. Neither a demonstrated Eu(III)-to-Eu(0) reduction nor an
+    exclusively metabolic uptake route is asserted.
+  context: Fischer et al. used SAG 12.82 cultures grown in 150 mL modified Bold's Basal Medium
+    in 250 mL flasks, with nitrate reduced to 50%, initial medium pH 6.8, reported culture pH
+    7.3, 22 degrees C, orbital shaking and a 12 h day/night cycle (4200 K light). Cultures were
+    divided into salt-exposed and untreated references. Separate assays used 0.111 mM initial
+    Eu in nutrient medium and 0.191 mM in a nutrient-starved culture. Initial biomass concentration,
+    biological replicate count and a matched biomass-free time course are not specified in the
+    inspected main article or supplement. The initial concentration reference was appropriately
+    diluted stock without biomass, not an incubated abiotic control. Samples of 2 mL were centrifuged
+    at 14000 rpm for 15 min; supernatants were filtered through 0.45 micrometre filters, acidified,
+    frozen and measured by ICP-MS. Sampling had stated temporal uncertainty of +/- 10 min. ICP-MS
+    measures elemental Eu rather than proving dissolved Eu(III) speciation. Washed, dried biomass
+    was examined by qualitative LIBS; these spectra cannot quantify biomass loading. Cultures
+    appeared viable by color and optical microscopy, without a quantitative viability or killed-cell
+    comparison. The current SAG catalogue lists this strain as non-axenic; the experimental
+    article does not verify culture purity, so associated microbes cannot be excluded. Dose
+    and nutritional state change together between the Eu arms. No recovery from real waste,
+    desorption yield or isolated Eu product was demonstrated.
+  evidence:
+  - source_ref: fischer2019_esi
+    supports: support
+    explanation: Table S1 and Figure S1 (page S2) give 0.111 mmol/L initially, 2.47E-3 mmol/L
+      at 57 min and 6.16E-4 mmol/L at 1692 min in the fed arm. These are about 97.8% and 99.4%
+      decreases, respectively, calculated from the reported initial reference; they are not
+      recovered-product yields. Table S4 and Figure S4 (page S5) give 0.191 mmol/L initially,
+      5.79E-2 at 40 min, 2.21E-2 at 65 min, 2.85E-2 at 185 min and 4.03E-2 mmol/L at 1490 min
+      in the starved arm. The later increase is retained. The supplement labels an error column
+      RSD in mmol/L without explaining its statistical basis or replicate count; no confidence
+      interval is inferred.
+  - source_ref: fischer2019
+    supports: partial
+    explanation: 'Experimental and Results, ICP-MS and LIBS, with Figures 1-3, support culture-associated
+      solution depletion and qualitative biomass enrichment. Main-text summaries conflict with
+      the supplement: a discussion claim of 99.4% removal after one hour does not match the
+      57 min Table S1 value, and near-total starved uptake at three hours does not match Table
+      S4. The paper''s visual absence of precipitation is not a matched abiotic precipitation
+      control. These data do not isolate the fraction caused by living cyanobacteria, passive
+      binding, extracellular precipitation or associated organisms, and the fed/starved comparison
+      does not establish metabolic causality.'
+  - source_ref: fischer2019
+    supports: partial
+    explanation: Results, TEM and XRD, Figure 8 captions, Discussion and Conclusion report electron-dense
+      deposits in heterocysts at 10 and 28 h, unlike the abstract's vegetative-cell wording.
+      This localization conflict is explicit; the Results account is retained as an attributed
+      observation, not independently remeasured microscopy. The authors report no Bragg reflections
+      at 6, 28 or 200 h and acknowledge missing oxidation-state measurements. Neither electron
+      density nor a negative bulk XRD result identifies a pure Eu phase or rules out all noncrystalline
+      Eu compounds. The proposed biomolecule-complexed Eu species remain a hypothesis.
+  - source_ref: sag_1282
+    supports: context_only
+    explanation: The live strain catalogue confirms Anabaena spec. SAG 12.82 and currently lists
+      bacterial and other contamination. This supports the culture-purity caveat, without proving
+      which associates were present in the 2019 experiment or their contributions.
+  - source_ref: fritz2023
+    supports: partial
+    explanation: The later primary article's Sections 2-4 describe further image analysis of
+      Eu-exposed SAG 12.82 heterocysts and call the Eu deposits amorphous. Its abstract also
+      uses bioreduction language, but the inspected methods provide no new Eu oxidation-state
+      assay. The record therefore does not upgrade the 2019 observation to Eu(0), enzyme causality
+      or recovered product. Detailed particle-size distributions from this later study are outside
+      this curated assay.
+curation_history:
+- timestamp: '2026-10-11T06:02:59Z'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Added verified elemental europium identity, dated US2025 designation and qualified
+    cyanobacterial sorption evidence; preserved primary-source inconsistencies, analytical limits
+    and laboratory scope. Scientific review is separate.
+history_refs:
+- history/records/europium/2026-10-11T060214Z-codex-7e06cb.yaml

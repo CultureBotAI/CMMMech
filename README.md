@@ -46,6 +46,12 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Indium](data/records/indium.yaml) | Prepared mixed microalgal biomass sorption from synthetic solutions | Iron competition, declining reuse and inaccessible supplementary controls remain explicit |
 | [Molybdenum](data/records/molybdenum.yaml) | DRY1 culture-associated molybdenum-blue formation | Optical response, unresolved product chemistry and inconsistent source protocols limit quantitative claims |
 | [Tungsten](data/records/tungsten.yaml) | Culture-enhanced release from impure scheelite concentrate | Abiotic release and unknown energy/phase mechanisms prevent a pure-product recovery claim |
+| [Europium](data/records/europium.yaml) | Culture-associated europium depletion and particle observations | Non-axenic strain, unlike assay arms and conflicting source values limit causal and product claims |
+| [Samarium](data/records/samarium.yaml) | Cyanobacterial culture-associated solution depletion | Unspecified abiotic controls and inconsistent percentage wording limit causal and quantitative claims |
+| [Terbium](data/records/terbium.yaml) | Screening with lyophilized *Synechococcus elongatus* UTEX 2973 | Cerium-only mechanistic follow-ups do not establish terbium kinetics or binding chemistry |
+| [Holmium](data/records/holmium.yaml) | Element measured in a harvested cyanobacterial fraction | Alkaline medium and unresolved abiotic retention prevent an intracellular-uptake claim |
+| [Erbium](data/records/erbium.yaml) | Element measured in a harvested cyanobacterial fraction | Earlier contrasting growth results and different protocols limit generalization |
+| [Gadolinium](data/records/gadolinium.yaml) | Element measured in a harvested cyanobacterial fraction | Source graph/text and biochemical discrepancies remain unresolved |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -59,7 +65,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [fourth expansion review and publication preparation](research/ingests/round4-20261011-publication.md),
 [fifth expansion reviews](research/ingests/round5-20261011-publication.md),
 [sixth expansion reviews](research/ingests/round6-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round6-frontier-20261011.md), and
+[seventh expansion reviews](research/ingests/round7-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round7-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

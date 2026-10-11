@@ -1,0 +1,984 @@
+{
+  "created_at": "2026-10-11T06:04:54Z",
+  "base_revision": "58e7aef16a9643438cf621fa9fb402e9d325dc65",
+  "worktree": "/private/tmp/CMMMech-expansion-round7-20261011",
+  "branch": "curate/cmm-expansion-round7-20261011",
+  "scope": "New elemental europium and samarium records from separate Fischer2019 cyanobacterial assays; later studies assessed only for specified limits.",
+  "records": [
+    {
+      "id": "cmmmech:europium",
+      "path": "data/records/europium.yaml",
+      "sha256": "2a0e8347906dd98a6fb00147db7f24976cb4ed86df21b65f9e3f2b2dc855d869",
+      "history_paths": [
+        "history/records/europium/2026-10-11T060214Z-codex-7e06cb.yaml"
+      ]
+    },
+    {
+      "id": "cmmmech:samarium",
+      "path": "data/records/samarium.yaml",
+      "sha256": "580b317ea1c31ef21c185f2e0c2b935a36de609adbba0a721ed2b756bba40a60",
+      "history_paths": [
+        "history/records/samarium/2026-10-11T060235Z-codex-f02c8c.yaml"
+      ]
+    }
+  ],
+  "search": {
+    "checked_on": "2026-10-11",
+    "provider": "web search tool",
+    "queries": [
+      "site:ebi.ac.uk/chebi \"samarium atom\"",
+      "\"C9RA06570A\" correction retraction",
+      "\"High-resolution particle size and shape analysis\" Samarium nanoparticles 2022 DOI",
+      "site:sagdb.uni-goettingen.de \"12.82\"",
+      "site:sagdb.uni-goettingen.de \"1403-2\"",
+      "\"10.1016/j.impact.2022.100398\" pdf",
+      "\"CHEBI:33374\" \"Net Charge\"",
+      "site:ebi.ac.uk/chebi/CHEBI samarium 33374",
+      "site:ncbi.nlm.nih.gov/Taxonomy/Browser \"Anabaena sp. SAG 12.82\"",
+      "site:ncbi.nlm.nih.gov/Taxonomy/Browser \"Anabaena cylindrica\"",
+      "\"c9ra06570a1.pdf\"",
+      "\"Cyanobacterial promoted enrichment\" pdf",
+      "\"C9RA06570A\" \"supplementary\""
+    ],
+    "filters": "Default first returned result sets; no date restrictions or extra pagination. Official domains specified explicitly only in the query text.",
+    "local": "rg --no-ignore --hidden across data/records, research, reviews and history, with Eu/Sm names, root IDs, ChEBI IDs, DOI and PMC accession; relevant round6 handoff and current task raw directory.",
+    "bounds": "Hidden and ignored files included within these surfaces. No machine-wide absence claim; unrelated home/temp trees excluded.",
+    "outcome": "Prior candidate/handoff mentions, no pre-existing Eu/Sm corpus root or accepted Fischer2019 assay found in the searched repository surfaces; no correction/retraction identified in the bounded results."
+  },
+  "acquisitions": [
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/main.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9073238/fullTextXML",
+      "acquired_at": "2026-10-11T05:56:13.937949+00:00",
+      "status": 200,
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9073238/fullTextXML",
+      "sha256": "6ad2ff7a2c931279c8cdb42a184088b6279f43e495e3d27d9b12cc7995078a25",
+      "bytes": 111322,
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition.json",
+      "accepted_artifact": true,
+      "content_check": "Content inspected for expected identifier, article or catalogue information; XML/JSON parsed where applicable."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/supp.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9073238/supplementaryFiles",
+      "acquired_at": "2026-10-11T05:56:15.259794+00:00",
+      "error": "The read operation timed out",
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition.json",
+      "accepted_artifact": false,
+      "content_check": "Unsuccessful acquisition or incomplete stream; partial ZIP entries assessed individually below."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/main.pdf",
+      "url": "https://pubs.rsc.org/en/content/articlepdf/2019/ra/c9ra06570a",
+      "acquired_at": "2026-10-11T05:58:46.150970+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition.json",
+      "accepted_artifact": false,
+      "content_check": "Unsuccessful acquisition or incomplete stream; partial ZIP entries assessed individually below."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/supp-rsc.pdf",
+      "url": "https://www.rsc.org/suppdata/c9/ra/c9ra06570a/c9ra06570a1.pdf",
+      "acquired_at": "2026-10-11T05:57:58.634745+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition2.json",
+      "accepted_artifact": false,
+      "content_check": "Unsuccessful acquisition or incomplete stream; partial ZIP entries assessed individually below."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/chebi-sm.html",
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:33374",
+      "acquired_at": "2026-10-11T05:57:58.635547+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/chebi/CHEBI:33374",
+      "content_type": "text/html;charset=utf-8",
+      "bytes": 823594,
+      "sha256": "22dbd144497e6cc87a7975534db4710664bf506b575fa600ffed8a3fb238f1fd",
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition2.json",
+      "accepted_artifact": true,
+      "content_check": "Content inspected for expected identifier, article or catalogue information; XML/JSON parsed where applicable."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/eu-tax.xml",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KT290322&rettype=gb&retmode=xml",
+      "acquired_at": "2026-10-11T05:57:58.636077+00:00",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KT290322&rettype=gb&retmode=xml",
+      "content_type": "text/xml",
+      "bytes": 6305,
+      "sha256": "e0b37917109a423418f8f9ec2947d5df524c9c2c74b3551861330a59c480411d",
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition2.json",
+      "accepted_artifact": true,
+      "content_check": "Content inspected for expected identifier, article or catalogue information; XML/JSON parsed where applicable."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/sm-tax.xml",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=272123&retmode=xml",
+      "acquired_at": "2026-10-11T05:57:58.636380+00:00",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=272123&retmode=xml",
+      "content_type": "text/xml; charset=UTF-8",
+      "bytes": 4053,
+      "sha256": "18ad14462612d0c18bfc13971392eb5cf9b98936d4bd9ff8642e068fdc61ae27",
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition2.json",
+      "accepted_artifact": true,
+      "content_check": "Content inspected for expected identifier, article or catalogue information; XML/JSON parsed where applicable."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/later-eu.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9824745/fullTextXML",
+      "acquired_at": "2026-10-11T05:57:58.636677+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9824745/fullTextXML",
+      "content_type": "application/xml",
+      "bytes": 114039,
+      "sha256": "d2456e576f50df0b25f55418c3be9d38d46dd3c0b0ddbcb668dfefdae3854b0a",
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition2.json",
+      "accepted_artifact": true,
+      "content_check": "Content inspected for expected identifier, article or catalogue information; XML/JSON parsed where applicable."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/later-sm-crossref.json",
+      "url": "https://api.crossref.org/works/10.1016/j.impact.2022.100398",
+      "acquired_at": "2026-10-11T05:57:58.636955+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1016/j.impact.2022.100398",
+      "content_type": "application/json",
+      "bytes": 18757,
+      "sha256": "2d680d0ac3e92086056c95af2ccd28f36c2a236af8c4e38099f2c5711a6f908f",
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition2.json",
+      "accepted_artifact": true,
+      "content_check": "Content inspected for expected identifier, article or catalogue information; XML/JSON parsed where applicable."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/later-sm-epmc.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:35560296&format=json",
+      "acquired_at": "2026-10-11T05:57:58.637236+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:35560296&format=json",
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 987,
+      "sha256": "05a6882e27f7f2651c384940ee9a8e8396d463ec2d51876405764e26087df37b",
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition2.json",
+      "accepted_artifact": true,
+      "content_check": "Content inspected for expected identifier, article or catalogue information; XML/JSON parsed where applicable."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/main-rsc.pdf",
+      "url": "https://pubs.rsc.org/en/content/articlepdf/2019/ra/c9ra06570a",
+      "acquired_at": "2026-10-11T05:58:48.245078+00:00",
+      "exit_code": 0,
+      "response": "403|text/html; charset=UTF-8|https://pubs.rsc.org/en/content/articlepdf/2019/ra/c9ra06570a",
+      "error": "",
+      "sha256": "2add3a966193abbb1824d505517a05a972d1d3d6bb798a7dba8815f9771a407e",
+      "bytes": 5502,
+      "magic": "b'<!DOCTYPE html><html lang'",
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition3.json",
+      "accepted_artifact": false,
+      "content_check": "Unsuccessful acquisition or incomplete stream; partial ZIP entries assessed individually below."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/supp-pmc.pdf",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/9073238/bin/RA-009-C9RA06570A-s001.pdf",
+      "acquired_at": "2026-10-11T05:58:48.246013+00:00",
+      "exit_code": 0,
+      "response": "200|text/html; charset=utf-8|https://pmc.ncbi.nlm.nih.gov/articles/instance/9073238/bin/RA-009-C9RA06570A-s001.pdf",
+      "error": "",
+      "sha256": "d6c87f2bcec07ba728ba84defd1690119614f1d8a30e0ad571b575c7ffa7728d",
+      "bytes": 1817,
+      "magic": "b'\\n\\n\\n\\n<html>\\n  <head>\\n    <'",
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition3.json",
+      "accepted_artifact": false,
+      "content_check": "HTML challenge/error document despite requested image/PDF name; not used as scientific content."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/fig1.jpg",
+      "url": "https://pubs.rsc.org/image/article/2019/RA/c9ra06570a/c9ra06570a-f1.gif",
+      "acquired_at": "2026-10-11T05:58:48.246403+00:00",
+      "exit_code": 0,
+      "response": "403|text/html; charset=UTF-8|https://pubs.rsc.org/image/article/2019/RA/c9ra06570a/c9ra06570a-f1.gif",
+      "error": "",
+      "sha256": "eaa1994cd4a78640344a54d7e879ffacfec1f3fc9489d73486f0b46c0ce83cb5",
+      "bytes": 5553,
+      "magic": "b'<!DOCTYPE html><html lang'",
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition3.json",
+      "accepted_artifact": false,
+      "content_check": "Unsuccessful acquisition or incomplete stream; partial ZIP entries assessed individually below."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/fig8.jpg",
+      "url": "https://pubs.rsc.org/image/article/2019/RA/c9ra06570a/c9ra06570a-f8.gif",
+      "acquired_at": "2026-10-11T05:58:48.250155+00:00",
+      "exit_code": 0,
+      "response": "403|text/html; charset=UTF-8|https://pubs.rsc.org/image/article/2019/RA/c9ra06570a/c9ra06570a-f8.gif",
+      "error": "",
+      "sha256": "3f6b77db6cf7b45a60ae558b338bb904138343220ef82f6a50b1dc2e15f70009",
+      "bytes": 5553,
+      "magic": "b'<!DOCTYPE html><html lang'",
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition3.json",
+      "accepted_artifact": false,
+      "content_check": "Unsuccessful acquisition or incomplete stream; partial ZIP entries assessed individually below."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/later-sm.xml",
+      "url": "https://api.elsevier.com/content/article/PII:S2452074822000209?httpAccept=text/xml",
+      "acquired_at": "2026-10-11T05:58:48.250983+00:00",
+      "exit_code": 0,
+      "response": "429|application/json|https://api.elsevier.com/content/article/PII:S2452074822000209?httpAccept=text/xml",
+      "error": "",
+      "sha256": "02f6d1d49ded4e0b0898231f5939ef4ad814352d39372ed5e91b8f5b69bf0d8c",
+      "bytes": 180,
+      "magic": "b'{\"error-response\":{\"error'",
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition3.json",
+      "accepted_artifact": false,
+      "content_check": "Unsuccessful acquisition or incomplete stream; partial ZIP entries assessed individually below."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/eu-tax-authority.xml",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1840102&retmode=xml",
+      "acquired_at": "2026-10-11T05:58:48.258401+00:00",
+      "exit_code": 0,
+      "response": "200|text/xml; charset=UTF-8|https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1840102&retmode=xml",
+      "error": "",
+      "sha256": "f4c84a424605d6c29996c7b4f735a0161e86bdf4f3e520dd0dd96313de3a9ebe",
+      "bytes": 2732,
+      "magic": "b'<?xml version=\"1.0\" ?>\\n<!'",
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition3.json",
+      "accepted_artifact": true,
+      "content_check": "Content inspected for expected identifier, article or catalogue information; XML/JSON parsed where applicable."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/supp-retry.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9073238/supplementaryFiles",
+      "acquired_at": "2026-10-11T05:59:19.954351+00:00",
+      "exit_code": 28,
+      "response": "200|application/zip|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9073238/supplementaryFiles",
+      "error": "curl: (28) Operation timed out after 50002 milliseconds with 752540 bytes received\n",
+      "sha256": "89872e6ae44b983dcdbafc2f5d3dae3d22b63a3a2984348d0b290a26817763af",
+      "bytes": 752540,
+      "magic": "b'PK\\x03\\x04\\x14\\x00\\x08\\x08\\x08\\x00j7K]\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition4.json",
+      "accepted_artifact": false,
+      "content_check": "Unsuccessful acquisition or incomplete stream; partial ZIP entries assessed individually below."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/supp-europepmc.pdf",
+      "url": "https://europepmc.org/articles/PMC9073238/bin/RA-009-C9RA06570A-s001.pdf",
+      "acquired_at": "2026-10-11T05:59:19.957976+00:00",
+      "exit_code": 0,
+      "response": "403|text/html; charset=UTF-8|https://europepmc.org/articles/PMC9073238/bin/RA-009-C9RA06570A-s001.pdf",
+      "error": "",
+      "sha256": "3628cc1bbb9b9be06cd7b90767b0b9710dfce649cd9fe91b471cca177a2840c8",
+      "bytes": 5597,
+      "magic": "b'<!DOCTYPE html><html lang'",
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition4.json",
+      "accepted_artifact": false,
+      "content_check": "Unsuccessful acquisition or incomplete stream; partial ZIP entries assessed individually below."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/oa.xml",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC9073238",
+      "acquired_at": "2026-10-11T05:59:19.962271+00:00",
+      "exit_code": 0,
+      "response": "404|text/html; charset=ISO-8859-1|https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC9073238",
+      "error": "",
+      "sha256": "0223e521d3f8739903351bbbaa8c49c78205bf3d666f8a6ea690de46c2c1cbfe",
+      "bytes": 1584,
+      "magic": "b'<!DOCTYPE html PUBLIC \"-/'",
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition4.json",
+      "accepted_artifact": false,
+      "content_check": "Unsuccessful acquisition or incomplete stream; partial ZIP entries assessed individually below."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/later-eu-supp.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9824745/supplementaryFiles",
+      "acquired_at": "2026-10-11T05:59:19.966057+00:00",
+      "exit_code": 28,
+      "response": "200|application/zip|https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9824745/supplementaryFiles",
+      "error": "curl: (28) Operation timed out after 50001 milliseconds with 359708 bytes received\n",
+      "sha256": "a66541eb3d1ece58afab5e8f67e1ac89456b1b97ee51a4b8047ffa1fdf1edf26",
+      "bytes": 359708,
+      "magic": "b'PK\\x03\\x04\\x14\\x00\\x08\\x08\\x08\\x00j7K]\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00'",
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition4.json",
+      "accepted_artifact": false,
+      "content_check": "Unsuccessful acquisition or incomplete stream; partial ZIP entries assessed individually below."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/utils/oa/oa.fcgi?id=PMC9073238",
+      "acquired_at": "2026-10-11T05:59:45.123649+00:00",
+      "error": "HTTP Error 404: Not Found",
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition5.json",
+      "accepted_artifact": false,
+      "content_check": "Unsuccessful acquisition or incomplete stream; partial ZIP entries assessed individually below."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/official-us2025.html",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm",
+      "acquired_at": "2026-10-11T06:02:38.094062+00:00",
+      "exit_code": 0,
+      "response": "200|text/html|https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm",
+      "error": "",
+      "sha256": "58647883c816082fc2648740b564305bd37b85ac42d74b45694459843e035014",
+      "bytes": 21581,
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition6.json",
+      "accepted_artifact": true,
+      "content_check": "Content inspected for expected identifier, article or catalogue information; XML/JSON parsed where applicable."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/official-eu-chebi.html",
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:32999",
+      "acquired_at": "2026-10-11T06:02:38.094814+00:00",
+      "exit_code": 0,
+      "response": "200|text/html;charset=utf-8|https://www.ebi.ac.uk/chebi/CHEBI:32999",
+      "error": "",
+      "sha256": "812922b4e2bd8a6d6dab73b80bcf11ccf9b64eab3f15056888536101590473ad",
+      "bytes": 823760,
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition6.json",
+      "accepted_artifact": true,
+      "content_check": "Content inspected for expected identifier, article or catalogue information; XML/JSON parsed where applicable."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/official-sag12.html",
+      "url": "https://sagdb.uni-goettingen.de/detailedList.php?str_number=12.82",
+      "acquired_at": "2026-10-11T06:02:38.097735+00:00",
+      "exit_code": 0,
+      "response": "200|text/html; charset=UTF-8|https://sagdb.uni-goettingen.de/detailedList.php?str_number=12.82",
+      "error": "",
+      "sha256": "6546d62e0287a123699fa3a6afa3e044b57be3845596a2bc85b361646e9df272",
+      "bytes": 6108,
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition6.json",
+      "accepted_artifact": true,
+      "content_check": "Content inspected for expected identifier, article or catalogue information; XML/JSON parsed where applicable."
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/official-sag1403.html",
+      "url": "https://sagdb.uni-goettingen.de/detailedList.php?str_number=1403-2",
+      "acquired_at": "2026-10-11T06:02:38.098564+00:00",
+      "exit_code": 0,
+      "response": "200|text/html; charset=UTF-8|https://sagdb.uni-goettingen.de/detailedList.php?str_number=1403-2",
+      "error": "",
+      "sha256": "1c9130a609a7082c87933570be9264100b2049b72da27aed7c8171f9c83aedf2",
+      "bytes": 10840,
+      "receipt_file": "/private/tmp/cmm-round7-eu-sm/acquisition6.json",
+      "accepted_artifact": true,
+      "content_check": "Content inspected for expected identifier, article or catalogue information; XML/JSON parsed where applicable."
+    }
+  ],
+  "recovered_entries": [
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-supp-retry/c9ra06570a-f6.gif",
+      "source_archive": "/private/tmp/cmm-round7-eu-sm/supp-retry.zip",
+      "entry": "c9ra06570a-f6.gif",
+      "crc32": "654c657c",
+      "sha256": "2778870242a52bcc48fd399ad0748e0b4c9ef8bac2c3b9b6646b0c36c10cdea0",
+      "bytes": 20032,
+      "integrity": "complete deflate entry with matching ZIP data-descriptor CRC32 and compressed/uncompressed lengths; enclosing archive is incomplete",
+      "accepted_artifact": true
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-supp-retry/c9ra06570a-f7.gif",
+      "source_archive": "/private/tmp/cmm-round7-eu-sm/supp-retry.zip",
+      "entry": "c9ra06570a-f7.gif",
+      "crc32": "1503e667",
+      "sha256": "7d57a7cba1198980122efa56aafb208fa9e6daa2d435019f0502e7f9bb755c56",
+      "bytes": 27534,
+      "integrity": "complete deflate entry with matching ZIP data-descriptor CRC32 and compressed/uncompressed lengths; enclosing archive is incomplete",
+      "accepted_artifact": true
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-supp-retry/c9ra06570a-f9.gif",
+      "source_archive": "/private/tmp/cmm-round7-eu-sm/supp-retry.zip",
+      "entry": "c9ra06570a-f9.gif",
+      "crc32": "814ffd00",
+      "sha256": "ce3ab478de16c93b3b8e50083563b567f961326e07604d0bb83af674e6ca2a1d",
+      "bytes": 10634,
+      "integrity": "complete deflate entry with matching ZIP data-descriptor CRC32 and compressed/uncompressed lengths; enclosing archive is incomplete",
+      "accepted_artifact": true
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-supp-retry/c9ra06570a-f5.jpg",
+      "source_archive": "/private/tmp/cmm-round7-eu-sm/supp-retry.zip",
+      "entry": "c9ra06570a-f5.jpg",
+      "crc32": "3a6a5e4d",
+      "sha256": "34296600e8437f35f4a3a2e3346645897350cc76f1cc2fd46e32973768962c39",
+      "bytes": 196165,
+      "integrity": "complete deflate entry with matching ZIP data-descriptor CRC32 and compressed/uncompressed lengths; enclosing archive is incomplete",
+      "accepted_artifact": true
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-supp-retry/RA-009-C9RA06570A-s001.pdf",
+      "source_archive": "/private/tmp/cmm-round7-eu-sm/supp-retry.zip",
+      "entry": "RA-009-C9RA06570A-s001.pdf",
+      "crc32": "873cb15c",
+      "sha256": "b8c15455505ac49222ae60eb5297d3ac4564833d29d22ccceb7b0918491e459b",
+      "bytes": 470633,
+      "integrity": "complete deflate entry with matching ZIP data-descriptor CRC32 and compressed/uncompressed lengths; enclosing archive is incomplete",
+      "accepted_artifact": true
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-supp-retry/c9ra06570a-f1.gif",
+      "source_archive": "/private/tmp/cmm-round7-eu-sm/supp-retry.zip",
+      "entry": "c9ra06570a-f1.gif",
+      "crc32": "bf384002",
+      "sha256": "40e640aa414b5edab141e017b44a540637670006150762eb0ea847c061e403ec",
+      "bytes": 12507,
+      "integrity": "complete deflate entry with matching ZIP data-descriptor CRC32 and compressed/uncompressed lengths; enclosing archive is incomplete",
+      "accepted_artifact": true
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-supp-retry/c9ra06570a-f3.jpg",
+      "source_archive": "/private/tmp/cmm-round7-eu-sm/supp-retry.zip",
+      "entry": "c9ra06570a-f3.jpg",
+      "crc32": "f036b0ed",
+      "sha256": "53b4a864219843cbca6784b9db3189b951eba33c1d2dbf13584390465ee6abb8",
+      "bytes": 150202,
+      "integrity": "complete deflate entry with matching ZIP data-descriptor CRC32 and compressed/uncompressed lengths; enclosing archive is incomplete",
+      "accepted_artifact": true
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-supp-retry/c9ra06570a-f5.gif",
+      "source_archive": "/private/tmp/cmm-round7-eu-sm/supp-retry.zip",
+      "entry": "c9ra06570a-f5.gif",
+      "crc32": "776076c4",
+      "sha256": "7fda9451cdd815a9693df456aab0bf8fda7f35dd3e2a42cb3d45c4f7088a2658",
+      "bytes": 19074,
+      "integrity": "complete deflate entry with matching ZIP data-descriptor CRC32 and compressed/uncompressed lengths; enclosing archive is incomplete",
+      "accepted_artifact": true
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-later-eu-supp/nanomaterials-13-00130-g004.gif",
+      "source_archive": "/private/tmp/cmm-round7-eu-sm/later-eu-supp.zip",
+      "entry": "nanomaterials-13-00130-g004.gif",
+      "crc32": "d774d823",
+      "sha256": "62373570a162eb06930f2eabb8880dddf3f9e8ab7ffb13bea96192fd251163d9",
+      "bytes": 8286,
+      "integrity": "complete deflate entry with matching ZIP data-descriptor CRC32 and compressed/uncompressed lengths; enclosing archive is incomplete",
+      "accepted_artifact": true
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-later-eu-supp/nanomaterials-13-00130-g001.gif",
+      "source_archive": "/private/tmp/cmm-round7-eu-sm/later-eu-supp.zip",
+      "entry": "nanomaterials-13-00130-g001.gif",
+      "crc32": "2be7998b",
+      "sha256": "f1ce3e083f8589cd35e9ab463741ff6a8d54b53a5e131f7e9055b2e0eb93c36a",
+      "bytes": 11667,
+      "integrity": "complete deflate entry with matching ZIP data-descriptor CRC32 and compressed/uncompressed lengths; enclosing archive is incomplete",
+      "accepted_artifact": true
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-later-eu-supp/nanomaterials-13-00130-g005.gif",
+      "source_archive": "/private/tmp/cmm-round7-eu-sm/later-eu-supp.zip",
+      "entry": "nanomaterials-13-00130-g005.gif",
+      "crc32": "6bbef0ff",
+      "sha256": "bb238a2eaf4f379a7b25488c3ea099d3b8f6af2839bde5b30af4adc0ecb6b455",
+      "bytes": 8355,
+      "integrity": "complete deflate entry with matching ZIP data-descriptor CRC32 and compressed/uncompressed lengths; enclosing archive is incomplete",
+      "accepted_artifact": true
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-later-eu-supp/nanomaterials-13-00130-g003.gif",
+      "source_archive": "/private/tmp/cmm-round7-eu-sm/later-eu-supp.zip",
+      "entry": "nanomaterials-13-00130-g003.gif",
+      "crc32": "04c4ebc5",
+      "sha256": "d7829944f22a1e97bb4119ad930d75576de2ee952dd52bfb4517f3c197fa0935",
+      "bytes": 8656,
+      "integrity": "complete deflate entry with matching ZIP data-descriptor CRC32 and compressed/uncompressed lengths; enclosing archive is incomplete",
+      "accepted_artifact": true
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-later-eu-supp/nanomaterials-13-00130-g005.jpg",
+      "source_archive": "/private/tmp/cmm-round7-eu-sm/later-eu-supp.zip",
+      "entry": "nanomaterials-13-00130-g005.jpg",
+      "crc32": "0e8468da",
+      "sha256": "f7c5352b9b1b97e47ea81f272b1579e2767c067609920f0e99561377cf26ea85",
+      "bytes": 173166,
+      "integrity": "complete deflate entry with matching ZIP data-descriptor CRC32 and compressed/uncompressed lengths; enclosing archive is incomplete",
+      "accepted_artifact": true
+    }
+  ],
+  "recovery_method": {
+    "method": "Sequential parsing of ZIP local file headers; raw DEFLATE decompression with zlib; accept only eof=True and following PK\\x07\\x08 descriptor with CRC32, compressed size and uncompressed size matching the actual complete member. Stop on truncated member. Central directory absent; whole archives remain incomplete.",
+    "derived_from": [
+      "/private/tmp/cmm-round7-eu-sm/supp-retry.zip",
+      "/private/tmp/cmm-round7-eu-sm/later-eu-supp.zip"
+    ],
+    "complete_primary_supplement": "/private/tmp/cmm-round7-eu-sm/recovered-supp-retry/RA-009-C9RA06570A-s001.pdf",
+    "pdf_check": "Opened with PyMuPDF 1.28.2; 5 pages; extracted all text and rendered pages. S2/S4/S5 tables and plots visually inspected.",
+    "not_claimed": "Neither a complete original ZIP nor full figure coverage."
+  },
+  "inspected_evidence": [
+    {
+      "source": "10.1039/C9RA06570A",
+      "role": "Primary mechanism experiment",
+      "locators": [
+        "Experimental",
+        "Results ICP-MS/LIBS/TEM/XRD",
+        "Discussion",
+        "Conclusion",
+        "Figures 1-9 captions",
+        "ESI Tables S1/S3/S4, Figures S1/S3/S4"
+      ],
+      "actual_pixels_viewed": [
+        "supp-page-2.png",
+        "supp-page-4.png",
+        "supp-page-5.png",
+        "recovered-supp-retry/c9ra06570a-f1.gif (thumbnail only)",
+        "recovered-supp-retry/c9ra06570a-f3.jpg"
+      ],
+      "limits": "Main Figure8 pixels unavailable; localization is an attributed result/caption account. No direct chemical analysis inferred from microscopy."
+    },
+    {
+      "source": "10.3390/nano13010130",
+      "role": "Primary follow-up inspected for oxidation-state inference boundary",
+      "locators": [
+        "Sections 2-4 main XML",
+        "Figure1 caption and available low-resolution thumbnail"
+      ],
+      "limits": "Detailed particle distributions not curated. Full supplementary dataset/high-resolution Figure1 not acquired. Main methods do not report a new Eu oxidation-state assay despite abstract bioreduction language."
+    },
+    {
+      "source": "10.1016/j.impact.2022.100398",
+      "role": "Deferred primary Sm nanoparticle extension",
+      "locators": [
+        "Publisher indexed abstract/metadata",
+        "Crossref metadata",
+        "EuropePMC indexed metadata"
+      ],
+      "limits": "Full methods, particle chemistry/speciation evidence and images unavailable. No Sm(0) or product claim accepted."
+    }
+  ],
+  "source_cells": [
+    {
+      "table": "S1",
+      "page": "S2",
+      "analyte": "Eu",
+      "unit": "mmol/L",
+      "initial_reference": "0.111",
+      "zero_time_role": "appropriately diluted stock without biomass; not an incubated abiotic control",
+      "native_observation_import": false,
+      "reason": "Native schema mg/kg contract does not cover mmol/L values.",
+      "rows": [
+        {
+          "time_min": 0,
+          "raw_concentration": "0.111",
+          "raw_rsd": "2.21E-2"
+        },
+        {
+          "time_min": 57,
+          "raw_concentration": "2.47E-3",
+          "raw_rsd": "4.53E-5"
+        },
+        {
+          "time_min": 152,
+          "raw_concentration": "8.93E-4",
+          "raw_rsd": "1.40E-5"
+        },
+        {
+          "time_min": 197,
+          "raw_concentration": "9.70E-4",
+          "raw_rsd": "2.63E-5"
+        },
+        {
+          "time_min": 272,
+          "raw_concentration": "6.51E-4",
+          "raw_rsd": "3.79E-5"
+        },
+        {
+          "time_min": 592,
+          "raw_concentration": "4.02E-4",
+          "raw_rsd": "2.08E-5"
+        },
+        {
+          "time_min": 1692,
+          "raw_concentration": "6.16E-4",
+          "raw_rsd": "8.09E-5"
+        }
+      ]
+    },
+    {
+      "table": "S3",
+      "page": "S4",
+      "analyte": "Sm",
+      "unit": "mmol/L",
+      "initial_reference": "0.139",
+      "zero_time_role": "appropriately diluted stock without biomass; not an incubated abiotic control",
+      "native_observation_import": false,
+      "reason": "Native schema mg/kg contract does not cover mmol/L values.",
+      "rows": [
+        {
+          "time_min": 0,
+          "raw_concentration": "0.139",
+          "raw_rsd": "2.79E-2"
+        },
+        {
+          "time_min": 18,
+          "raw_concentration": "1.52E-3",
+          "raw_rsd": "9.02E-5"
+        },
+        {
+          "time_min": 53,
+          "raw_concentration": "6.95E-4",
+          "raw_rsd": "2.40E-5"
+        },
+        {
+          "time_min": 88,
+          "raw_concentration": "5.01E-4",
+          "raw_rsd": "3.45E-5"
+        },
+        {
+          "time_min": 118,
+          "raw_concentration": "3.84E-4",
+          "raw_rsd": "3.86E-5"
+        },
+        {
+          "time_min": 708,
+          "raw_concentration": "9.42E-5",
+          "raw_rsd": "9.09E-6"
+        },
+        {
+          "time_min": 1488,
+          "raw_concentration": "1.06E-4",
+          "raw_rsd": "2.31E-5"
+        }
+      ]
+    },
+    {
+      "table": "S4",
+      "page": "S5",
+      "analyte": "Eu",
+      "unit": "mmol/L",
+      "initial_reference": "0.191",
+      "zero_time_role": "appropriately diluted stock without biomass; not an incubated abiotic control",
+      "native_observation_import": false,
+      "reason": "Native schema mg/kg contract does not cover mmol/L values.",
+      "rows": [
+        {
+          "time_min": 0,
+          "raw_concentration": "0.191",
+          "raw_rsd": "3.83E-2"
+        },
+        {
+          "time_min": 40,
+          "raw_concentration": "5.79E-2",
+          "raw_rsd": "1.47E-3"
+        },
+        {
+          "time_min": 65,
+          "raw_concentration": "2.21E-2",
+          "raw_rsd": "2.81E-3"
+        },
+        {
+          "time_min": 95,
+          "raw_concentration": "2.37 E-2",
+          "raw_rsd": "5.86E-4"
+        },
+        {
+          "time_min": 185,
+          "raw_concentration": "2.85E-2",
+          "raw_rsd": "9.73E-4"
+        },
+        {
+          "time_min": 395,
+          "raw_concentration": "2.87E-2",
+          "raw_rsd": "1.21 E-3"
+        },
+        {
+          "time_min": 1490,
+          "raw_concentration": "4.03 E-2",
+          "raw_rsd": "1.68 E-3"
+        }
+      ]
+    }
+  ],
+  "criticality": {
+    "authority": "USGS",
+    "jurisdiction": "United States of America",
+    "list": "Final 2025 List of Critical Minerals",
+    "edition": "2025; Federal Register 90:50494-50497, 7 November 2025",
+    "scope": "Named europium and samarium mineral commodities mapped to elemental records; no inheritance to salts, minerals or wastes.",
+    "source": "https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm",
+    "locators": {
+      "europium": "page 50496",
+      "samarium": "page 50497"
+    }
+  },
+  "terms": {
+    "2019_article": "CC BY-NC 3.0 Unported per publisher indexed landing-page license; XML has RSC copyright statement.",
+    "2019_supplement": "RSC copyright shown; not redistributed.",
+    "2023_article": "CC BY 4.0 explicitly in acquired XML.",
+    "2022_sm_article": "No open full-text license established; Crossref TDM policy links are not treated as a general redistribution grant.",
+    "authority_snapshots": "Terms not separately audited for redistribution; retained only outside Git.",
+    "repository_contents": "Project-authored summaries, exact limited source cells and provenance only; raw full text/images outside Git."
+  },
+  "checks": [
+    {
+      "command": "uv run --locked cmmmech validate data/records/europium.yaml data/records/samarium.yaml",
+      "environment": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache",
+      "exit_code": 0,
+      "result": "Checked 2 records; 0 failed after inline/history refs attached."
+    },
+    {
+      "command": "uv run --locked cmmmech validate-history --base 58e7aef16a9643438cf621fa9fb402e9d325dc65",
+      "environment": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache",
+      "exit_code": 0,
+      "result": "Checked 52 histories; 0 errors at this curation checkpoint."
+    }
+  ],
+  "raw_and_derived_files": [
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/acquisition.json",
+      "bytes": 948,
+      "sha256": "042ce286da4fb443220319b9fb5b87072006fee9f80ba89f7be4f6648a72cdcf"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/acquisition2.json",
+      "bytes": 3083,
+      "sha256": "5a08b00d8a709fb59b55f628bedaab06a95154d2ea122a3865c1ae6439caa1db"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/acquisition3.json",
+      "bytes": 3143,
+      "sha256": "2ec66a833a29ad6f0b52b56a85baa511a0a2f2c5bc441f4d9fee6d49ac66e5b0"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/acquisition4.json",
+      "bytes": 2377,
+      "sha256": "889a1a0663eab6bccf8438620983fb621b912d25c7bdcef1182505b15a7a5a69"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/acquisition5.json",
+      "bytes": 181,
+      "sha256": "509722a1453010dab885fb6990186f657e246b0c65f9595f51755619162aaf3a"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/acquisition6.json",
+      "bytes": 1794,
+      "sha256": "e84b1c08504ed3ccdb09826a80c34991e7118e0dfbe263a0718acf5f208bc8fc"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/chebi-sm.html",
+      "bytes": 823594,
+      "sha256": "22dbd144497e6cc87a7975534db4710664bf506b575fa600ffed8a3fb238f1fd"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/eu-tax-authority.xml",
+      "bytes": 2732,
+      "sha256": "f4c84a424605d6c29996c7b4f735a0161e86bdf4f3e520dd0dd96313de3a9ebe"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/eu-tax.xml",
+      "bytes": 6305,
+      "sha256": "e0b37917109a423418f8f9ec2947d5df524c9c2c74b3551861330a59c480411d"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/fig1.jpg",
+      "bytes": 5553,
+      "sha256": "eaa1994cd4a78640344a54d7e879ffacfec1f3fc9489d73486f0b46c0ce83cb5"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/fig8.jpg",
+      "bytes": 5553,
+      "sha256": "3f6b77db6cf7b45a60ae558b338bb904138343220ef82f6a50b1dc2e15f70009"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/later-eu-extracted.txt",
+      "bytes": 41429,
+      "sha256": "855d871118454d817cb316e1d0c35289285d93d6282b18a76b866fd5144b97b7"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/later-eu-supp.zip",
+      "bytes": 359708,
+      "sha256": "a66541eb3d1ece58afab5e8f67e1ac89456b1b97ee51a4b8047ffa1fdf1edf26"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/later-eu.xml",
+      "bytes": 114039,
+      "sha256": "d2456e576f50df0b25f55418c3be9d38d46dd3c0b0ddbcb668dfefdae3854b0a"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/later-sm-crossref.json",
+      "bytes": 18757,
+      "sha256": "2d680d0ac3e92086056c95af2ccd28f36c2a236af8c4e38099f2c5711a6f908f"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/later-sm-epmc.json",
+      "bytes": 987,
+      "sha256": "05a6882e27f7f2651c384940ee9a8e8396d463ec2d51876405764e26087df37b"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/later-sm.xml",
+      "bytes": 180,
+      "sha256": "02f6d1d49ded4e0b0898231f5939ef4ad814352d39372ed5e91b8f5b69bf0d8c"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/main-extracted.txt",
+      "bytes": 57916,
+      "sha256": "8cd864e9f06ac841c61be79a5dfca737df0e36e6f69736b15a53816868d3ab22"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/main-rsc.pdf",
+      "bytes": 5502,
+      "sha256": "2add3a966193abbb1824d505517a05a972d1d3d6bb798a7dba8815f9771a407e"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/main.xml",
+      "bytes": 111322,
+      "sha256": "6ad2ff7a2c931279c8cdb42a184088b6279f43e495e3d27d9b12cc7995078a25"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/oa.xml",
+      "bytes": 1584,
+      "sha256": "0223e521d3f8739903351bbbaa8c49c78205bf3d666f8a6ea690de46c2c1cbfe"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/official-eu-chebi.html",
+      "bytes": 823760,
+      "sha256": "812922b4e2bd8a6d6dab73b80bcf11ccf9b64eab3f15056888536101590473ad"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/official-sag12.html",
+      "bytes": 6108,
+      "sha256": "6546d62e0287a123699fa3a6afa3e044b57be3845596a2bc85b361646e9df272"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/official-sag1403.html",
+      "bytes": 10840,
+      "sha256": "1c9130a609a7082c87933570be9264100b2049b72da27aed7c8171f9c83aedf2"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/official-us2025.html",
+      "bytes": 21581,
+      "sha256": "58647883c816082fc2648740b564305bd37b85ac42d74b45694459843e035014"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-entries.json",
+      "bytes": 6366,
+      "sha256": "57b8791664b7a6a8289e88ba1ecace33ee41578820f568bc7a07a7a617e94a7f"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-later-eu-supp/nanomaterials-13-00130-g001.gif",
+      "bytes": 11667,
+      "sha256": "f1ce3e083f8589cd35e9ab463741ff6a8d54b53a5e131f7e9055b2e0eb93c36a"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-later-eu-supp/nanomaterials-13-00130-g003.gif",
+      "bytes": 8656,
+      "sha256": "d7829944f22a1e97bb4119ad930d75576de2ee952dd52bfb4517f3c197fa0935"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-later-eu-supp/nanomaterials-13-00130-g004.gif",
+      "bytes": 8286,
+      "sha256": "62373570a162eb06930f2eabb8880dddf3f9e8ab7ffb13bea96192fd251163d9"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-later-eu-supp/nanomaterials-13-00130-g005.gif",
+      "bytes": 8355,
+      "sha256": "bb238a2eaf4f379a7b25488c3ea099d3b8f6af2839bde5b30af4adc0ecb6b455"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-later-eu-supp/nanomaterials-13-00130-g005.jpg",
+      "bytes": 173166,
+      "sha256": "f7c5352b9b1b97e47ea81f272b1579e2767c067609920f0e99561377cf26ea85"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-supp-retry/RA-009-C9RA06570A-s001.pdf",
+      "bytes": 470633,
+      "sha256": "b8c15455505ac49222ae60eb5297d3ac4564833d29d22ccceb7b0918491e459b"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-supp-retry/c9ra06570a-f1.gif",
+      "bytes": 12507,
+      "sha256": "40e640aa414b5edab141e017b44a540637670006150762eb0ea847c061e403ec"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-supp-retry/c9ra06570a-f3.jpg",
+      "bytes": 150202,
+      "sha256": "53b4a864219843cbca6784b9db3189b951eba33c1d2dbf13584390465ee6abb8"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-supp-retry/c9ra06570a-f5.gif",
+      "bytes": 19074,
+      "sha256": "7fda9451cdd815a9693df456aab0bf8fda7f35dd3e2a42cb3d45c4f7088a2658"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-supp-retry/c9ra06570a-f5.jpg",
+      "bytes": 196165,
+      "sha256": "34296600e8437f35f4a3a2e3346645897350cc76f1cc2fd46e32973768962c39"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-supp-retry/c9ra06570a-f6.gif",
+      "bytes": 20032,
+      "sha256": "2778870242a52bcc48fd399ad0748e0b4c9ef8bac2c3b9b6646b0c36c10cdea0"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-supp-retry/c9ra06570a-f7.gif",
+      "bytes": 27534,
+      "sha256": "7d57a7cba1198980122efa56aafb208fa9e6daa2d435019f0502e7f9bb755c56"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/recovered-supp-retry/c9ra06570a-f9.gif",
+      "bytes": 10634,
+      "sha256": "ce3ab478de16c93b3b8e50083563b567f961326e07604d0bb83af674e6ca2a1d"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/sm-tax.xml",
+      "bytes": 4053,
+      "sha256": "18ad14462612d0c18bfc13971392eb5cf9b98936d4bd9ff8642e068fdc61ae27"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/supp-europepmc.pdf",
+      "bytes": 5597,
+      "sha256": "3628cc1bbb9b9be06cd7b90767b0b9710dfce649cd9fe91b471cca177a2840c8"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/supp-extracted.txt",
+      "bytes": 5814,
+      "sha256": "ec243d0ba86f732aac24b7b6568ce260a3c927fbaed67815edcd0e630822e52c"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/supp-page-1.png",
+      "bytes": 195862,
+      "sha256": "8564a56ad6935e9d4582e3f2c29c26ddbba334490803f40f90dfe456a896e193"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/supp-page-2.png",
+      "bytes": 139251,
+      "sha256": "4e475bc080e3785c018992ca2642f79f3f728c77a9f631a4ac2ff37d9b061092"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/supp-page-3.png",
+      "bytes": 135199,
+      "sha256": "52508df1527327427db98e4f0914ee6cbc730b062e540ba8f480595cf2c4564f"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/supp-page-4.png",
+      "bytes": 143812,
+      "sha256": "c97db0b847678ebd16b4ab812baa57ebf5c14d6fa182e3aa311ece9f7ffc8a02"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/supp-page-5.png",
+      "bytes": 155669,
+      "sha256": "ab513751dcfae33668ccffc36bd22027e40954da5708fffd3f63207d577403cd"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/supp-pmc.pdf",
+      "bytes": 1817,
+      "sha256": "d6c87f2bcec07ba728ba84defd1690119614f1d8a30e0ad571b575c7ffa7728d"
+    },
+    {
+      "path": "/private/tmp/cmm-round7-eu-sm/supp-retry.zip",
+      "bytes": 752540,
+      "sha256": "89872e6ae44b983dcdbafc2f5d3dae3d22b63a3a2984348d0b290a26817763af"
+    }
+  ],
+  "review_status": "Records frozen for independent review; parent owns completed batch gates and publication.",
+  "remaining_questions": [
+    "Incubated matched abiotic/killed-cell controls and actual culture purity.",
+    "Initial biomass loading and biological replication/error-column interpretation.",
+    "Direct particle-specific Eu/Sm phase and oxidation-state evidence.",
+    "Legitimate full text of Sm2022 follow-up before curation.",
+    "Measured selective separation, harvesting, desorption/reuse or isolated-product yields."
+  ],
+  "exhaustion_claim": false
+}

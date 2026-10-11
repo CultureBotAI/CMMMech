@@ -1,0 +1,114 @@
+id: cmmmech:samarium
+name: Samarium
+material_kind: element
+description: The element Sm, distinct from Sm(III), samarium nitrate, mineral species, alloys
+  and waste streams. The dated US designation concerns the named samarium mineral commodity,
+  without assigning that designation to every Sm-bearing material. The mechanism concerns laboratory
+  culture-associated depletion from a synthetic solution and qualitative biomass enrichment,
+  not a purified samarium product or industrial process.
+identifiers:
+- id: CHEBI:33374
+  label: samarium atom
+sources:
+- id: chebi_samarium
+  title: ChEBI CHEBI:33374 - samarium atom; formula Sm, net charge 0
+  url: https://www.ebi.ac.uk/chebi/CHEBI:33374
+  accessed_on: '2026-10-11'
+- id: usgs2025
+  title: USGS (2025). Final 2025 List of Critical Minerals. Federal Register 90:50494-50497,
+    document 2025-19813; samarium row on page 50497.
+  url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  accessed_on: '2026-10-11'
+- id: fischer2019
+  title: Fischer et al. (2019). Cyanobacterial promoted enrichment of rare earth elements europium,
+    samarium and neodymium and intracellular europium particle formation. RSC Advances 9:32581-32593;
+    Experimental, Results, Discussion and Figures 1-9.
+  url: https://doi.org/10.1039/C9RA06570A
+  accessed_on: '2026-10-11'
+- id: fischer2019_esi
+  title: Fischer et al. (2019), electronic supplementary information, RA-009-C9RA06570A-s001.pdf;
+    pages S1-S5, Tables S1-S4 and Figures S1-S4. Complete PDF entry recovered with matching
+    CRC32 from the incomplete EuropePMC ZIP download.
+  url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9073238/supplementaryFiles
+  accessed_on: '2026-10-11'
+- id: sag_1403_2
+  title: SAG culture catalogue, strain 1403-2, Anabaena cylindrica; strain relatives and culture
+    identity
+  url: https://sagdb.uni-goettingen.de/detailedList.php?str_number=1403-2
+  accessed_on: '2026-10-11'
+- id: ncbi_cylindrica
+  title: NCBI Taxonomy 272123 - Anabaena cylindrica PCC 7122; no-rank node explicitly listing
+    SAG 1403-2 as a co-identical strain
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=272123
+  accessed_on: '2026-10-11'
+criticality:
+- jurisdiction: United States of America
+  list_name: USGS Final List of Critical Minerals
+  edition: 2025; Federal Register 90:50494-50497, 7 November 2025
+  classification: critical
+  source_ref: usgs2025
+mechanisms:
+- id: anabaena_cylindrica_samarium_sorption
+  name: Samarium sorption associated with Anabaena cylindrica SAG 1403-2 cultures
+  process: biosorption
+  microbial: true
+  organisms:
+  - id: NCBITaxon:272123
+    label: Anabaena cylindrica PCC 7122
+  description: Anabaena cylindrica cultures exposed to samarium nitrate showed a decrease in
+    supernatant Sm and characteristic Sm signals in washed biomass. This supports a biosorption
+    interpretation under the assay conditions. It does not resolve passive surface binding versus
+    intracellular uptake, demonstrate Sm(III) reduction, establish selectivity among mixed rare
+    earths or quantify a recovered product.
+  context: The article names SAG 1403.2, represented by the SAG catalogue as SAG 1403-2. NCBI
+    taxon 272123 uses the preferred name A. cylindrica PCC 7122 and explicitly includes SAG
+    1403-2 as a co-identical strain; this does not mean a separately obtained PCC culture was
+    assayed. The catalogue currently lists an axenic culture, but the article does not report
+    a contemporaneous axenity test. Cultures grew in 150 mL modified Bold's Basal Medium in
+    250 mL flasks, nitrate reduced to 50%, initial medium pH 6.8, reported culture pH 7.3, 22
+    degrees C, orbital shaking and a 12 h day/night cycle (4200 K light). A nutrient-medium
+    assay used 0.139 mM Sm supplied as Sm(NO3)3·6H2O; an untreated culture half served as a
+    biomass reference. Initial biomass concentration, biological replicate count and a matched
+    incubated biomass-free control are not specified in the inspected main article or supplement.
+    The initial concentration reference was diluted stock without biomass. Two-mL samples were
+    centrifuged at 14000 rpm for 15 min, with stated timing uncertainty of +/- 10 min. Supernatants
+    were filtered through 0.45 micrometre filters, acidified, frozen and measured by ICP-MS;
+    this gives elemental Sm, not an independent oxidation-state measurement. Washed biomass
+    was dried for qualitative LIBS. Color and optical microscopy were used to judge viability;
+    no quantitative viable count or killed-cell comparison was reported. No real-waste extraction,
+    isolated-product yield or industrial deployment was demonstrated.
+  evidence:
+  - source_ref: fischer2019_esi
+    supports: support
+    explanation: Table S3 and Figure S3 (page S4) report an initial 0.139 mmol/L Sm reference,
+      1.52E-3 mmol/L at 18 min, 6.95E-4 at 53 min, 9.42E-5 at 708 min and 1.06E-4 mmol/L at
+      1488 min. The first decrease is about 98.9%, calculated from the reported initial reference.
+      The main Results describes this approximately as 20 min and less than 1% remaining, but
+      the tabulated values imply about 1.09% remaining; the exact table values are retained.
+      Later very low values are not zero, and their small increase does not establish significant
+      release without a defined statistical analysis. The error column is labelled RSD in mmol/L
+      without its statistical basis or replicate count being explained.
+  - source_ref: fischer2019
+    supports: support
+    explanation: Experimental, Results, ICP-MS and LIBS, Figure 1 and Figure 4 describe Sm depletion
+      and characteristic Sm emission peaks in biomass after 200 h compared with samarium nitrate
+      and untreated-biomass references. LIBS was explicitly qualitative, so peak intensity does
+      not provide an absolute or relative Sm loading or a mass balance. The reported enrichment
+      concerns this separate Sm assay with A. cylindrica, not the Eu experiment with SAG 12.82.
+  - source_ref: fischer2019
+    supports: partial
+    explanation: Discussion states that Sm particle formation was not proven in the 2019 series.
+      No exact Sm product phase, reduction mechanism or intracellular localization is assigned
+      here. That study-specific limitation is not a claim that later studies cannot observe
+      Sm particles. Visual absence of bulk precipitation and apparently viable cultures do not
+      replace an incubated abiotic control or establish an exclusively active transport mechanism.
+      Subsequent Sm harvesting and selective separation remain unmeasured in this assay.
+curation_history:
+- timestamp: '2026-10-11T06:02:59Z'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Added verified elemental samarium identity, dated US2025 designation and qualified
+    cyanobacterial sorption evidence; preserved primary-source inconsistencies, analytical limits
+    and laboratory scope. Scientific review is separate.
+history_refs:
+- history/records/samarium/2026-10-11T060235Z-codex-f02c8c.yaml
