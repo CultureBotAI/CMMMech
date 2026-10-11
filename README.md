@@ -103,6 +103,14 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Heavy rare-earth commodities, EU assessment convention](data/records/heavy-rare-earth-elements.yaml) | Heavy rare-earth commodity grouping under the named EU convention | Membership conventions differ; no group-wide microbial mechanism |
 | [Light rare-earth commodities, EU assessment convention](data/records/light-rare-earth-elements.yaml) | Light rare-earth commodity grouping under the named EU convention | Distinct from individual elements, host minerals and other REE groupings |
 | [Rare-earth materials for permanent magnets, EU list scope](data/records/rare-earth-permanent-magnet-materials.yaml) | Seven-element end-use grouping in original EU 2024 Annex I | Raw materials for permanent magnets; no finished-magnet or grade-qualified recovery claim |
+| [Pentlandite](data/records/pentlandite.yaml) | Culture-associated nickel release under controlled pH | Mixed mineral feed; different-duration runs are not replicated common endpoints |
+| [Jadarite](data/records/jadarite.yaml) | Transient lithium release from jadarite-bearing material | Mixed phases, unmatched acid additions and eventual control convergence |
+| [Spodumene](data/records/spodumene.yaml) | Negative acidophile result in a spodumene-bearing feed | No general impossibility claim; source data and loading ambiguities remain |
+| [Colemanite](data/records/colemanite.yaml) | Fungal leaching of a colemanite-bearing ore | Reported composition does not close; no verified recovery denominator |
+| [Spent lithium-ion battery black mass](data/records/battery-black-mass.yaml) | Adapted acidophile leaching of mixed NMC battery powder | Unmatched chemistry and inconsistent source inventories prevent a complete-recovery claim |
+| [Bauxite residue (red mud)](data/records/bauxite-residue.yaml) | Fungal aluminium mobilization from an Ajka residue | Chemical controls use different conditions; aluminium host phases remain unresolved |
+| [Phosphogypsum](data/records/phosphogypsum.yaml) | Separate synthetic-feed and actual-residue Gluconobacter assays | Model powders do not establish industrial-feed yields; actual-residue source quantities conflict |
+| [Metallurgical coal commodity family](data/records/metallurgical-coal.yaml) | Source-defined coking, blending and injection-coal family | Explicit overlap with coking coal; authority definitions differ |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -122,7 +130,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [tenth expansion reviews](research/ingests/round10-20261011-publication.md),
 [eleventh expansion reviews](research/ingests/round11-20261011-publication.md),
 [twelfth expansion reviews](research/ingests/round12-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round12-frontier-20261011.md), and
+[thirteenth expansion reviews](research/ingests/round13-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round13-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

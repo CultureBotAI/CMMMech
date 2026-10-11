@@ -1,0 +1,46 @@
+id: cmmmech:metallurgical-coal
+name: Metallurgical coal commodity family
+material_kind: commodity
+description: >-
+  Coal products used in steelmaking, scoped here to the broader commodity family
+  recognized by the EIA glossary and the IEA Coal 2020 report. EIA includes
+  coking coal and pulverized coal consumed in steelmaking; IEA includes coking,
+  semi-soft blending coal and pulverised coal injection (PCI) coal. This family
+  explicitly overlaps cmmmech:coking-coal as a narrower coke-making subset;
+  it is not a second disjoint coking-coal identity. IEA excludes anthracite from
+  its metallurgical category even when used in metallurgy. In contrast, USGS
+  Fact Sheet 2026-3061 uses metallurgical coal and coking coal interchangeably
+  within its coke-production scope. These source-dependent boundaries are
+  retained rather than asserted to be a universal coal classification. The
+  record denotes an end-use commodity, not elemental carbon, a mineral species,
+  manufactured coke or every coal burned industrially. No numerical grade
+  threshold, criticality designation or microbial mechanism is generalized
+  across this family.
+sources:
+  - id: eia-metallurgical-coal
+    title: US Energy Information Administration glossary, Metallurgical coal entry
+    url: https://www.eia.gov/tools/glossary/index.php?id=Metallurgical+coal
+    accessed_on: '2026-10-11'
+  - id: iea-coal2020
+    title: >-
+      International Energy Agency, Coal 2020, Annex, Glossary: Coking coal,
+      Semi-soft coal, Pulverised coal injection (PCI), and Metallurgical coal
+      entries; report-specific commodity classification
+    url: https://www.iea.org/reports/coal-2020/annex
+    accessed_on: '2026-10-11'
+  - id: usgs-coal2026
+    title: >-
+      US Geological Survey, Metallurgical Coal: Deposits, Production, Resources,
+      Market Dynamics, and Supply Chain Risks. Fact Sheet 2026-3061,
+      version 1.1, August 2026, pp. 1-2: narrower coke-making usage
+    url: https://pubs.usgs.gov/fs/2026/3061/fs20263061.pdf
+    accessed_on: '2026-10-11'
+curation_history:
+  - timestamp: '2026-10-11T09:00:48Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Created the source-scoped metallurgical-coal commodity family, preserving
+      its overlap with coking coal and differing authority usage.
+history_refs:
+  - history/records/metallurgical-coal/2026-10-11T090113Z-codex-5e05f9.yaml

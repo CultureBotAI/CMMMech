@@ -1,0 +1,78 @@
+id: cmmmech:pentlandite
+name: Pentlandite
+material_kind: mineral
+description: Pentlandite is the (Ni,Fe)9S8 mineral species in the September 2026 IMA list.
+  Status G denotes grandfathering and 1856 is an original-description year, not a sequential
+  approval identifier. The species is distinct from elemental nickel, the nickel commodity,
+  and impure sulfide ore or concentrate. The experiment below concerns an enriched pentlandite
+  feed rather than an ideal single-phase solid. No constituent-element criticality is inherited.
+sources:
+  - id: ima_2026_09
+    title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 168, Pentlandite
+      row; page 1, column definitions; page 2, distribution terms.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-11'
+  - id: sun2020
+    title: 'Sun, Wen, Wu and Chen (2020). Mechanism for the Bio-Oxidation and Decomposition
+      of Pentlandite: Implication for Nickel Bioleaching at Elevated pH. Minerals 10:289.
+      DOI 10.3390/min10030289. Sections 2.1-2.3, 3.2-3.3, 4.2-4.4; Figures 9 and 12-17.'
+    url: https://doi.org/10.3390/min10030289
+    accessed_on: '2026-10-11'
+mechanisms:
+  - id: mixed-acidophile-pentlandite-leaching
+    name: Culture-associated nickel mobilization from enriched pentlandite at controlled pH
+    process: bioleaching
+    description: A living mixed acidophile culture enhanced nickel release from enriched pentlandite
+      feed relative to uninoculated proton-leaching experiments in a laboratory pH-stat system.
+      Inoculated nickel-release curves were similar at maintained pH 2 and 3, while dissolved
+      iron was much lower at pH 3. Surface and solution analyses support coupled biological
+      and chemical alteration; they do not demonstrate a unique enzyme pathway, member-specific
+      causality, complete mineral conversion or a purified nickel product.
+    context: Sun et al. used Jinchuan material enriched by flotation and magnetic separation,
+      reagent-cleaned, dried and ground below 0.074 mm. The feed contained 27.43 wt% Ni, 35.13
+      wt% Fe and 30.79 wt% S, with reported Cu, Mg, Co and Si impurities; it is not assumed
+      to be pure pentlandite. A mixed culture from the National Engineering Laboratory of
+      Biohydrometallurgy, Beijing, was reported initially dominated by Acidithiobacillus ferrooxidans,
+      Ferrimicrobium acidiphilum and Leptospirillum ferrooxidans. No strain identifiers or
+      member-specific activity tests were provided, so no taxon identifiers are assigned to
+      the mixture. Cells grown in ferrous 9K medium were centrifuged in logarithmic growth
+      to limit ionic carryover. The pH-stat assays used 8 g feed in 400 mL sterilized water
+      in 500 mL vessels, 1.5 x 10^6 cells/mL, 33 degrees C and 250 rpm. Sulfuric acid and
+      potassium bicarbonate maintained pH 2.00 or 3.00 within +/-0.05. The paper calls bioleaching
+      tests duplicate but specifies one 8-day and one 16-day run, leaving independent 16-day
+      replication and plotted error-bar meaning unresolved. Samples were taken every two days,
+      filtered at 0.22 micrometre and analyzed by ICP-OES for Ni and total Fe, with Fe(II)
+      titration, XRD, SEM and XPS of residues. Separately, ferric-ion experiments used 3 g
+      feed per 100 mL, initial pH 1, 150 rpm and added kanamycin; those arms are not identical
+      pH-stat microbial controls.
+    microbial: true
+    evidence:
+      - source_ref: sun2020
+        supports: support
+        explanation: Sections 2.2-2.3 and 3.2-3.3, Figures 9 and 12 show greater nickel release
+          in the inoculated pH-stat experiments than in the abiotic proton-leaching series
+          at the same pH setpoints, and similar inoculated nickel curves at pH 2 and 3. Figures
+          13-16 identify jarosite and sulfur-bearing residues and different surface species
+          under the two pH conditions. These observations support conditional mineral-feed
+          bioleaching; no values were digitized from graphs or represented as isolated recovery
+          yields.
+      - source_ref: sun2020
+        supports: partial
+        explanation: The community profiles in Figure 17 are associations with residues, not
+          proof of each named taxon's causal contribution. Figures 18-19 and Section 4 present
+          a conceptual model; sulfur intermediates not detected by the assays and exact reaction
+          equations are not independently established. pH control does not equal matched redox
+          potential or ferric concentrations, and total acid/base addition or sample-volume
+          correction is not reported. The 8-day/16-day design and undefined error bars limit
+          quantitative reproducibility. Jarosite/sulfur accumulation and continuing nickel
+          release do not prove that surface layers never inhibit leaching in other systems.
+          Discussion of commercial heaps and possible magnesium selectivity is background
+          or proposed application, not deployment or an industrial mass balance for this experiment.
+curation_history:
+  - timestamp: '2026-10-11T09:02:00.252070+00:00'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: Created IMA-grounded pentlandite identity and qualified mixed-acidophile pH-stat
+      bioleaching evidence.
+history_refs:
+  - history/records/pentlandite/2026-10-11T090158Z-codex-ddb743.yaml

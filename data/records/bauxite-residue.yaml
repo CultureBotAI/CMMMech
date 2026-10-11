@@ -1,0 +1,91 @@
+id: cmmmech:bauxite-residue
+name: Bauxite residue (red mud)
+material_kind: secondary_resource
+description: >-
+  The heterogeneous residue from alkaline Bayer processing of bauxite for
+  alumina production, commonly called red mud. It is distinct from bauxite
+  ore, alumina commodity, aluminium element and any single mineral species.
+  The curated assay used material collected from the Ajka spill site; its
+  composition and treatment response do not define every bauxite residue.
+  No criticality designation is inherited from constituent elements.
+sources:
+  - id: urik2015
+    title: >-
+      Urik, Bujdos, Milova-Ziakova, Mikusova, Slovak and Matus (2015).
+      Aluminium leaching from red mud by filamentous fungi.
+      Journal of Inorganic Biochemistry 152:154-159.
+      DOI 10.1016/j.jinorgbio.2015.08.022; Sections 2.1-2.5, 3.1 and 3.3-3.5,
+      Table 1 and Figures 3, 7-8.
+    url: https://doi.org/10.1016/j.jinorgbio.2015.08.022
+    accessed_on: '2026-10-11'
+  - id: urik2017_copy
+    title: >-
+      Urik (2017). Interactions of toxic metals and metalloids with fungi,
+      habilitation thesis; official Brno University of Technology copy,
+      Attachment E, PDF pages 80-85 reproducing the 2015 article,
+      journal pages 154-159. Same experiment, not independent replication.
+    url: https://www.vut.cz/uredni-deska/habilitace?action=priloha&priloha=226417
+    accessed_on: '2026-10-11'
+  - id: ncbi_aspergillus
+    title: 'NCBI Taxonomy 5061 - Aspergillus niger; species'
+    url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5061&retmode=xml
+    accessed_on: '2026-10-11'
+mechanisms:
+  - id: fungal_leaching_ajka_residue
+    name: Aspergillus-associated aluminium mobilization from Ajka bauxite residue
+    process: bioleaching
+    microbial: true
+    organisms:
+      - id: NCBITaxon:5061
+        label: Aspergillus niger
+    description: >-
+      Growing isolate G-10 mobilized aluminium from an Ajka red-mud sample
+      while acidifying the medium and accumulating organic acids. Synthetic
+      acid mixtures also leached aluminium, supporting extracellular chemical
+      contributions without demonstrating a requirement for living-cell
+      contact, a specific enzyme, or a mineral-specific dissolution pathway.
+    context: >-
+      Material collected in October 2010 was air-dried, disaggregated and
+      sieved below 0.2 mm. The selected assay used 0.2 g dry residue in 45 mL
+      Sabouraud dextrose broth plus 5 mL suspension of approximately
+      10^6 spores/mL in 250 mL flasks, cultured statically in darkness at
+      25 degrees C for seven days. Medium was autoclaved before inoculation.
+      Each condition had triplicate parallel experiments. Isolate G-10 was
+      assigned to Aspergillus niger by morphology and a 612-bp ITS sequence
+      with 99% similarity; the species identifier does not authenticate the
+      isolate independently. Table 1 reports 6.97% Al in the dry feed.
+      XRD identified hematite, calcite and quartz; Al-host phases remained
+      unresolved. The experiment does not establish recovery of alumina or
+      aluminium metal, nor industrial deployment.
+    evidence:
+      - source_ref: urik2015
+        supports: support
+        explanation: >-
+          Sections 2.3, 2.5 and 3.3 with Figure 3 report approximately
+          141 mg/L Al in 0.45-micrometre filtrate after seven days with G-10.
+          ICP-OES measures filter-passing total Al, not free-ion speciation.
+          No-fungus controls were reported undetected or below detection,
+          without a numerical Al detection limit. Section 3.4 and Figure 7a
+          report final pH 2.3 and oxalic/citric acid concentrations of
+          16.0/28.6 mmol/L. These are release and culture-chemistry outcomes,
+          not a purified-product yield.
+      - source_ref: urik2015
+        supports: partial
+        explanation: >-
+          Sections 2.4 and 3.4 with Figure 8: synthetic mixture B, representing
+          the day-five organic-acid profile, produced approximately 142 mg/L
+          Al. These mixtures used sodium salts, HCl-adjusted pH, 0.2 g residue
+          in 50 mL and two days at 25 degrees C. The differing media and
+          incubation times prevent a matched kinetic comparison with growing
+          fungi. Proton effects, complexation and other metabolites were not
+          independently isolated. Section 3.1 reports calcite loss but warns
+          that XRD does not resolve minor or amorphous phases; no particular
+          Al-bearing mineral is assigned as the dissolved substrate.
+curation_history:
+  - timestamp: '2026-10-11T09:02:35.258572+00:00'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Created bauxite-residue identity and source-specific fungal leaching evidence, retaining phase and chemical-control limitations.
+history_refs:
+  - history/records/bauxite-residue/2026-10-11T090223Z-codex-5e1966.yaml

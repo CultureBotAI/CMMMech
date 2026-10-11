@@ -1,0 +1,526 @@
+# Pentlandite independent primary-evidence review
+
+- Review: 20261011T091034Z-pentlandite-round13-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T09:03:14.142155Z
+- Finished UTC: 2026-10-11T09:10:34Z
+- Reviewer: /root/round13_grade_boundaries (codex; agent_tool codex) (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Pentlandite identity and the narrowly stated mixed-culture pH-stat nickel-mobilization observation are supported. Mixed feed, control differences and mechanistic/quantitative uncertainties are explicit.
+
+## Scope And Provenance
+
+All fields, cited identity and experimental evidence and linked history of this one mineral record; full record-level claim audit.
+
+Selection: One of four assigned, frozen round13 mineral records, assessed in a separate observation.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 14ceff0da3e19d6d36426d33f4cf577b8e64760f.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:pentlandite | data/records/pentlandite.yaml | maintained | Pentlandite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Named record validation | passed | True | cmmmech:pentlandite | Reviewer executed: 4 named mineral records checked, 0 failed. |
+| Named history validation | passed | True | cmmmech:pentlandite | Reviewer executed: 4 linked mineral history records checked against the trusted base, 0 errors. |
+| Independent primary-source and identity audit | passed | True | cmmmech:pentlandite | Pentlandite identity and the narrowly stated mixed-culture pH-stat nickel-mobilization observation are supported. Mixed feed, control differences and mechanistic/quantitative uncertainties are explicit. |
+| Final batch checks | passed | True | cmmmech:pentlandite | Root executed; reviewer read complete final log: all checks passed, 307 tests passed and 3 skipped in 76.91 seconds, 101 records valid and 116 histories valid. |
+| Nonempty corpus validation | passed | True | cmmmech:pentlandite | Root executed; reviewer read complete final log: 101 records checked, 0 failed. |
+| Batch history validation | passed | True | cmmmech:pentlandite | Root executed; reviewer read complete final log: 116 history records checked against trusted base, 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Mineral species, material boundary and criticality
+
+identity: supported. Targets: cmmmech:pentlandite.
+
+(Ni,Fe)9S8 mineral species; G grandfathered and 1856 original-description year. Distinct from nickel element, nickel commodity and impure experimental sulfide feed.
+
+### Organism, substrate, controls, outcome and deployment
+
+evidence: supported. Targets: cmmmech:pentlandite.
+
+Pentlandite identity and the narrowly stated mixed-culture pH-stat nickel-mobilization observation are supported. Mixed feed, control differences and mechanistic/quantitative uncertainties are explicit.
+
+### Inline creation and immutable canonical history
+
+provenance: supported. Targets: cmmmech:pentlandite.
+
+Separate inline CREATE and linked canonical sidecar accurately describe current mineral creation, actor and target. Acceptance issue 54 is linked. History validation against trusted base passed; reviewer made no target edits.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/pentlandite.yaml; All fields, inline CREATE and history/records/pentlandite/2026-10-11T090158Z-codex-ddb743.yaml | supports | Exact target inspected before assessment, read again and compared with the frozen final-gate hash. Canonical sidecar and separate inline event accurately name the new record, codex / GPT-6 / codex actor and actual creation; issue 54 links the acceptance work. No mineral record or history was authored or changed by this reviewer. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; PDF page 168, Pentlandite row; page 1 definitions of G and original-description year; page 2 distribution terms | supports | (Ni,Fe)9S8 mineral species; G grandfathered and 1856 original-description year. Distinct from nickel element, nickel commodity and impure experimental sulfide feed. Retained official September 2026 PDF independently rehashed and the relevant entry and column definitions read. |
+| study | https://doi.org/10.3390/min10030289; Sun et al. (2020), Sections 2.1–2.3, 3.2–3.3 and 4.2–4.4; Figures 9 and 12 visually inspected on PDF pages 10 and 12; text/captions for Figures 13–19 | supports | Read primary methods and results/discussion, independently rehashed retained PDF and visually compared matched-pH abiotic Figure 9 and inoculated Figure 12. Nickel-release curves in inoculated arms are similar at pH 2 and 3 and higher than abiotic proton-leaching arms. Low dissolved Fe at pH 3 is not a nickel-recovery mass balance. Jarosite and sulfur observations and conceptual pathways do not prove universally absent passivation or member-specific causality. |
+| dedup | /private/tmp/cmm-round13-grade-raw/mineral-dedup.txt; 754 matching lines across declared maintained/research/history/review and retained raw roots | context_only | Ignored/hidden and symlink-following search found earlier lithium/borates study overlap and the newly scoped mineral records. Existing element/commodity boundaries and explicit non-independent-replication wording were checked. No duplicate mineral identity established in this bounded scope. |
+| search | /private/tmp/cmm-round13-grade-raw/mineral-review-web.json; Web result sets and live publisher/NCBI access; retained Crossref metadata title/DOI/update-to and relations fields | context_only | Exact DOI correction/retraction searches returned no matching notice in these result sets. Crossref snapshots have no update-to relations; this is not an exhaustive correction audit. Publisher/DOI retrieval limits were distinguished from retained full-text access. Pentlandite passivation searches returned different-condition primary leads, not an observed contradiction to the narrow Sun claim. |
+| named_record | /private/tmp/cmm-round13-grade-raw/mineral-named-record.log; Terminal receipt /private/tmp/cmm-round13-grade-raw/mineral-named-validation.json; finished 2026-10-11T09:08:26.755559+00:00 | supports | Reviewer executed: 4 named mineral records checked, 0 failed. |
+| named_history | /private/tmp/cmm-round13-grade-raw/mineral-named-history.log; Terminal receipt /private/tmp/cmm-round13-grade-raw/mineral-named-validation.json; finished 2026-10-11T09:08:29.903466+00:00 | supports | Reviewer executed: 4 linked mineral history records checked against the trusted base, 0 errors. |
+| gate_check | /private/tmp/cmm-round13-check.log; Complete terminal log; receipt /private/tmp/cmm-round13-gate-receipts.json; finished 2026-10-11T09:04:41.499814+00:00 | supports | Root executed; reviewer read complete final log: all checks passed, 307 tests passed and 3 skipped in 76.91 seconds, 101 records valid and 116 histories valid. |
+| gate_require | /private/tmp/cmm-round13-require.log; Complete terminal log; receipt /private/tmp/cmm-round13-gate-receipts.json; finished 2026-10-11T09:04:46.212924+00:00 | supports | Root executed; reviewer read complete final log: 101 records checked, 0 failed. |
+| gate_history | /private/tmp/cmm-round13-history.log; Complete terminal log; receipt /private/tmp/cmm-round13-gate-receipts.json; finished 2026-10-11T09:04:49.622736+00:00 | supports | Root executed; reviewer read complete final log: 116 history records checked against trusted base, 0 errors. |
+| gated_hash | /private/tmp/cmm-round13-gated-record-hashes.json; data/records/pentlandite.yaml | supports | Current and inspected SHA256 f7fbef9a034e1f8f1add573a03c5e3d717055b3cf9c3321dd1bd7bba1e7f768f equals frozen batch hash; all 101 record hashes independently rechecked before saving. |
+
+## Limits And Additional Notes
+
+- No consortium member was independently authenticated or assigned causal activity. Quantitative replication, acid/base consumption and volume corrections are unresolved in the paper.
+- Only the primary paper’s stated conditions are assessed; newer pentlandite studies and different microbial treatments were search leads, not fully reviewed or imported.
+- Full record coverage is not exhaustive literature coverage or a new independent laboratory replication. Raw PDFs and workbook receipts remain outside Git at the documented temporary paths.
+- Dated IMA edition is the identity authority used here; no timeless criticality or ideal-purity identity is inferred. Root owns shared batch validation; receipt reuse does not imply this reviewer executed it.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T091034Z-pentlandite-round13-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Pentlandite independent primary-evidence review
+started_at: '2026-10-11T09:03:14.142155Z'
+finished_at: '2026-10-11T09:10:34Z'
+reviewer:
+  identity: /root/round13_grade_boundaries (codex; agent_tool codex)
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from mineral curator; authored none of these
+    four mineral targets or histories. Independently read exact records, primary sources,
+    identifiers and retained data. Shared model family and workspace; curator dossier
+    was a lead rather than proof. Reviewer curated the separate metallurgical-coal
+    record, outside this target.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Pentlandite identity and the narrowly stated mixed-culture pH-stat nickel-mobilization
+  observation are supported. Mixed feed, control differences and mechanistic/quantitative
+  uncertainties are explicit.
+source:
+  git_revision: 14ceff0da3e19d6d36426d33f4cf577b8e64760f
+  state: working_tree
+  inputs:
+  - path: .claude/skills/review-record/SKILL.md
+    sha256: abe8f0aebf9540aaaf5d2e2c2b43a4b17b7d5963d04e084b65e1ada19f4eb6be
+    role: context
+  - path: data/records/pentlandite.yaml
+    sha256: f7fbef9a034e1f8f1add573a03c5e3d717055b3cf9c3321dd1bd7bba1e7f768f
+    role: target
+  - path: docs/record-review-profile.md
+    sha256: 93f65e8f516a9b7756afd89e4823c1b64e493a46ecbcb3ca5e54a5aa599b10f2
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: docs/records.md
+    sha256: 212cdbb723eb1ad9eb76ea1b7dad066914659b1f85eb2cdb51ee67466cfcc8ee
+    role: context
+  - path: history/records/pentlandite/2026-10-11T090158Z-codex-ddb743.yaml
+    sha256: b949f06916a1bb6b6b742c033722f06f9018ec26b00bb1e38ee937db04395a11
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+scope:
+  description: All fields, cited identity and experimental evidence and linked history
+    of this one mineral record; full record-level claim audit.
+  selection: One of four assigned, frozen round13 mineral records, assessed in a separate
+    observation.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:pentlandite
+  exclusions:
+  - target: Other records and complete mineral-specific literature
+    reason: Other assigned targets have separate reports; bounded source and correction
+      searches do not establish global literature completeness.
+targets:
+- target_id: cmmmech:pentlandite
+  path: data/records/pentlandite.yaml
+  label: Pentlandite
+  kind: maintained
+  record_class: mineral
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/pentlandite.yaml
+    role: maintained_record
+checks:
+- check_id: named_record
+  name: Named record validation
+  status: passed
+  required: true
+  target_ids:
+  - cmmmech:pentlandite
+  summary: 'Reviewer executed: 4 named mineral records checked, 0 failed.'
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/pentlandite.yaml data/records/jadarite.yaml data/records/spodumene.yaml
+    data/records/colemanite.yaml
+  exit_code: 0
+  evidence_ids:
+  - named_record
+- check_id: named_history
+  name: Named history validation
+  status: passed
+  required: true
+  target_ids:
+  - cmmmech:pentlandite
+  summary: 'Reviewer executed: 4 linked mineral history records checked against the
+    trusted base, 0 errors.'
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate-history --base 14ceff0da3e19d6d36426d33f4cf577b8e64760f history/records/pentlandite
+    history/records/jadarite history/records/spodumene history/records/colemanite
+  exit_code: 0
+  evidence_ids:
+  - named_history
+- check_id: science
+  name: Independent primary-source and identity audit
+  status: passed
+  required: true
+  target_ids:
+  - cmmmech:pentlandite
+  summary: Pentlandite identity and the narrowly stated mixed-culture pH-stat nickel-mobilization
+    observation are supported. Mixed feed, control differences and mechanistic/quantitative
+    uncertainties are explicit.
+  evidence_ids:
+  - record
+  - ima
+  - study
+  - dedup
+  - search
+- check_id: gate_check
+  name: Final batch checks
+  status: passed
+  required: true
+  target_ids:
+  - cmmmech:pentlandite
+  summary: 'Root executed; reviewer read complete final log: all checks passed, 307
+    tests passed and 3 skipped in 76.91 seconds, 101 records valid and 116 histories
+    valid.'
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - gate_check
+  scope_note: Executed by root, not rerun by reviewer. Reviewer independently read
+    terminal receipt and complete log and verified this target equals the exact gated
+    hash.
+- check_id: gate_require
+  name: Nonempty corpus validation
+  status: passed
+  required: true
+  target_ids:
+  - cmmmech:pentlandite
+  summary: 'Root executed; reviewer read complete final log: 101 records checked,
+    0 failed.'
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - gate_require
+  scope_note: Executed by root, not rerun by reviewer. Reviewer independently read
+    terminal receipt and complete log and verified this target equals the exact gated
+    hash.
+- check_id: gate_history
+  name: Batch history validation
+  status: passed
+  required: true
+  target_ids:
+  - cmmmech:pentlandite
+  summary: 'Root executed; reviewer read complete final log: 116 history records checked
+    against trusted base, 0 errors.'
+  command: uv run --locked cmmmech validate-history --base 14ceff0da3e19d6d36426d33f4cf577b8e64760f
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - gate_history
+  scope_note: Executed by root, not rerun by reviewer. Reviewer independently read
+    terminal receipt and complete log and verified this target equals the exact gated
+    hash.
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/pentlandite.yaml
+  locator: All fields, inline CREATE and history/records/pentlandite/2026-10-11T090158Z-codex-ddb743.yaml
+  accessed_at: '2026-10-11T09:10:34Z'
+  support: supports
+  summary: Exact target inspected before assessment, read again and compared with
+    the frozen final-gate hash. Canonical sidecar and separate inline event accurately
+    name the new record, codex / GPT-6 / codex actor and actual creation; issue 54
+    links the acceptance work. No mineral record or history was authored or changed
+    by this reviewer.
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: PDF page 168, Pentlandite row; page 1 definitions of G and original-description
+    year; page 2 distribution terms
+  accessed_at: '2026-10-11T09:10:34Z'
+  support: supports
+  summary: (Ni,Fe)9S8 mineral species; G grandfathered and 1856 original-description
+    year. Distinct from nickel element, nickel commodity and impure experimental sulfide
+    feed. Retained official September 2026 PDF independently rehashed and the relevant
+    entry and column definitions read.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: study
+  kind: primary_source
+  reference: https://doi.org/10.3390/min10030289
+  locator: Sun et al. (2020), Sections 2.1–2.3, 3.2–3.3 and 4.2–4.4; Figures 9 and
+    12 visually inspected on PDF pages 10 and 12; text/captions for Figures 13–19
+  accessed_at: '2026-10-11T09:10:34Z'
+  support: supports
+  summary: Read primary methods and results/discussion, independently rehashed retained
+    PDF and visually compared matched-pH abiotic Figure 9 and inoculated Figure 12.
+    Nickel-release curves in inoculated arms are similar at pH 2 and 3 and higher
+    than abiotic proton-leaching arms. Low dissolved Fe at pH 3 is not a nickel-recovery
+    mass balance. Jarosite and sulfur observations and conceptual pathways do not
+    prove universally absent passivation or member-specific causality.
+  snapshot_sha256: 6924a82fb8c016c43f5b2cd558d621ef7a98fdd7aebeb69a80ca80d0aefba7a4
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round13-grade-raw/mineral-dedup.txt
+  locator: 754 matching lines across declared maintained/research/history/review and
+    retained raw roots
+  accessed_at: '2026-10-11T09:10:34Z'
+  support: context_only
+  summary: Ignored/hidden and symlink-following search found earlier lithium/borates
+    study overlap and the newly scoped mineral records. Existing element/commodity
+    boundaries and explicit non-independent-replication wording were checked. No duplicate
+    mineral identity established in this bounded scope.
+  snapshot_sha256: 8eab7abf5f2e6b30e77d2afd196d5ee4ed558f3c68a22c3a3e73f82919dabe0a
+  search_scope: rg --no-ignore --hidden -L -n -i 'pentlandite|jadarite|spodumene|colemanite|10\.3390/min10030289|10\.3389/fmicb\.2024\.1467408|10\.2225/vol14-issue3-fulltext-7'
+    data research reviews history /private/tmp/cmm-round13-mineral-raw /private/tmp/cmm-next-li
+    /private/tmp/cmm-round12-aluminium-boron-raw. Not a machine-wide or complete literature
+    search.
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round13-grade-raw/mineral-review-web.json
+  locator: Web result sets and live publisher/NCBI access; retained Crossref metadata
+    title/DOI/update-to and relations fields
+  accessed_at: '2026-10-11T09:10:34Z'
+  support: context_only
+  summary: Exact DOI correction/retraction searches returned no matching notice in
+    these result sets. Crossref snapshots have no update-to relations; this is not
+    an exhaustive correction audit. Publisher/DOI retrieval limits were distinguished
+    from retained full-text access. Pentlandite passivation searches returned different-condition
+    primary leads, not an observed contradiction to the narrow Sun claim.
+  snapshot_sha256: dc78e5def6094d2225c2fe69bb7651dbd9bc7c22360f0d61a2d4ee03cea3c38f
+  search_scope: 'Four first-page result sets, no pagination: "10.3390/min10030289"
+    correction retraction; "10.3389/fmicb.2024.1467408" correction retraction; "10.2225/vol14-issue3-fulltext-7"
+    correction retraction; "pentlandite" bioleaching "passivation" pH. Supplement
+    follow-up: "1467408" "Data_Sheet_1" and "fmicb.2024.1467408" supplementary docx;
+    first sets only. No global absence inference.'
+- evidence_id: named_record
+  kind: validation
+  reference: /private/tmp/cmm-round13-grade-raw/mineral-named-record.log
+  locator: Terminal receipt /private/tmp/cmm-round13-grade-raw/mineral-named-validation.json;
+    finished 2026-10-11T09:08:26.755559+00:00
+  accessed_at: '2026-10-11T09:10:34Z'
+  support: supports
+  summary: 'Reviewer executed: 4 named mineral records checked, 0 failed.'
+  snapshot_sha256: 1bab77715cefb79661780491c798115408563f1c045277c7642d1e7db5858cf8
+- evidence_id: named_history
+  kind: validation
+  reference: /private/tmp/cmm-round13-grade-raw/mineral-named-history.log
+  locator: Terminal receipt /private/tmp/cmm-round13-grade-raw/mineral-named-validation.json;
+    finished 2026-10-11T09:08:29.903466+00:00
+  accessed_at: '2026-10-11T09:10:34Z'
+  support: supports
+  summary: 'Reviewer executed: 4 linked mineral history records checked against the
+    trusted base, 0 errors.'
+  snapshot_sha256: 53fac724a85c4bf9ec662e4c08665fe3f8380649c141db1fdc8a5f6b5ea68371
+- evidence_id: gate_check
+  kind: validation
+  reference: /private/tmp/cmm-round13-check.log
+  locator: Complete terminal log; receipt /private/tmp/cmm-round13-gate-receipts.json;
+    finished 2026-10-11T09:04:41.499814+00:00
+  accessed_at: '2026-10-11T09:10:34Z'
+  support: supports
+  summary: 'Root executed; reviewer read complete final log: all checks passed, 307
+    tests passed and 3 skipped in 76.91 seconds, 101 records valid and 116 histories
+    valid.'
+  snapshot_sha256: aa523a816f80a6528dbb0e85cb2faf0be3658cf2515d62c1c028a801d1cc2d75
+- evidence_id: gate_require
+  kind: validation
+  reference: /private/tmp/cmm-round13-require.log
+  locator: Complete terminal log; receipt /private/tmp/cmm-round13-gate-receipts.json;
+    finished 2026-10-11T09:04:46.212924+00:00
+  accessed_at: '2026-10-11T09:10:34Z'
+  support: supports
+  summary: 'Root executed; reviewer read complete final log: 101 records checked,
+    0 failed.'
+  snapshot_sha256: 53bbd0235b05d9042e33a80701d52089d83b9e8ac9a8a9dccb1e2ad7db4544cb
+- evidence_id: gate_history
+  kind: validation
+  reference: /private/tmp/cmm-round13-history.log
+  locator: Complete terminal log; receipt /private/tmp/cmm-round13-gate-receipts.json;
+    finished 2026-10-11T09:04:49.622736+00:00
+  accessed_at: '2026-10-11T09:10:34Z'
+  support: supports
+  summary: 'Root executed; reviewer read complete final log: 116 history records checked
+    against trusted base, 0 errors.'
+  snapshot_sha256: 6ff1225d1b7a22af07d0f0c1f55199e1cc562f6a3f1231e607b991fad6c8e1ca
+- evidence_id: gated_hash
+  kind: validation
+  reference: /private/tmp/cmm-round13-gated-record-hashes.json
+  locator: data/records/pentlandite.yaml
+  accessed_at: '2026-10-11T09:10:34Z'
+  support: supports
+  summary: Current and inspected SHA256 f7fbef9a034e1f8f1add573a03c5e3d717055b3cf9c3321dd1bd7bba1e7f768f
+    equals frozen batch hash; all 101 record hashes independently rechecked before
+    saving.
+  snapshot_sha256: bb625a8def41b84e86013ee58a298068c74394a9947866bdb8f670efdc73adc1
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral species, material boundary and criticality
+  outcome: supported
+  summary: (Ni,Fe)9S8 mineral species; G grandfathered and 1856 original-description
+    year. Distinct from nickel element, nickel commodity and impure experimental sulfide
+    feed.
+  target_ids:
+  - cmmmech:pentlandite
+  evidence_ids:
+  - record
+  - ima
+  - dedup
+  dimensions:
+  - name: material_form
+    value: mineral species
+    definition: IMA species distinct from element, commodity and actual mixed experimental
+      feed.
+    evidence_ids:
+    - record
+    - ima
+  - name: criticality
+    value: No criticality assertion
+    definition: No authority/jurisdiction/list/edition or constituent designation
+      is transferred to the species.
+    evidence_ids:
+    - record
+  - name: identifiers
+    value: No external material CURIE asserted; IMA dated entry and notation checked
+    definition: Approval number, grandfathering and original-description year are
+      not interchangeable identifiers.
+    evidence_ids:
+    - ima
+    - record
+- assessment_id: mechanism
+  area: evidence
+  topic: Organism, substrate, controls, outcome and deployment
+  outcome: supported
+  summary: Pentlandite identity and the narrowly stated mixed-culture pH-stat nickel-mobilization
+    observation are supported. Mixed feed, control differences and mechanistic/quantitative
+    uncertainties are explicit.
+  target_ids:
+  - cmmmech:pentlandite
+  evidence_ids:
+  - record
+  - ima
+  - study
+  - dedup
+  - search
+  dimensions:
+  - name: biomass_organism
+    value: Living mixed acidophile culture, initially reported dominated by Acidithiobacillus
+      ferrooxidans, Ferrimicrobium acidiphilum and Leptospirillum ferrooxidans. No
+      strain or member-specific causal identifier asserted.
+    definition: Reported microbial state and taxonomy; species mapping is not strain
+      authentication.
+    evidence_ids:
+    - record
+    - study
+  - name: substrate_pretreatment
+    value: Jinchuan enriched pentlandite, flotation/magnetic separation, reagent cleaning,
+      drying and grinding below 0.074 mm; measured impurities mean this is not an
+      ideal pure mineral.
+    definition: Actual experimental material, not assumed ideal species.
+    evidence_ids:
+    - record
+    - study
+  - name: conditions
+    value: 8 g in 400 mL sterilized water, 500 mL vessels, 1.5 × 10^6 cells/mL, 33
+      °C, 250 rpm, controlled pH 2.00 or 3.00 ±0.05; assays described as duplicates
+      comprise an 8-day and a 16-day run.
+    definition: Reported assay settings and explicit contradictions.
+    evidence_ids:
+    - record
+    - study
+  - name: controls
+    value: Uninoculated proton-leaching comparisons at corresponding pH setpoints;
+      pH matching does not equal redox or ferric matching. Separate ferric-ion runs
+      use different loading/pH/stirring and kanamycin and are not interchangeable
+      controls.
+    definition: Comparison scope and attribution limits.
+    evidence_ids:
+    - record
+    - study
+  - name: outcome
+    value: Conditional culture-associated nickel solubilization; ICP-OES/Fe(II) and
+      surface measurements, no graph-digitized extraction percentage or isolated nickel
+      product. Quantitative replication/error-bar and acid-dose uncertainty remain
+      explicit.
+    definition: Measured/inferred endpoint and quantitative bounds.
+    evidence_ids:
+    - record
+    - study
+  - name: scale
+    value: Laboratory only; no isolated product or industrial deployment asserted
+    definition: Industrial origin or applications in discussion are not mechanism
+      deployment.
+    evidence_ids:
+    - record
+    - study
+- assessment_id: provenance
+  area: provenance
+  topic: Inline creation and immutable canonical history
+  outcome: supported
+  summary: Separate inline CREATE and linked canonical sidecar accurately describe
+    current mineral creation, actor and target. Acceptance issue 54 is linked. History
+    validation against trusted base passed; reviewer made no target edits.
+  target_ids:
+  - cmmmech:pentlandite
+  evidence_ids:
+  - record
+  - named_history
+  - gate_history
+findings: []
+actions: []
+limitations:
+- No consortium member was independently authenticated or assigned causal activity.
+  Quantitative replication, acid/base consumption and volume corrections are unresolved
+  in the paper.
+- Only the primary paper’s stated conditions are assessed; newer pentlandite studies
+  and different microbial treatments were search leads, not fully reviewed or imported.
+- Full record coverage is not exhaustive literature coverage or a new independent
+  laboratory replication. Raw PDFs and workbook receipts remain outside Git at the
+  documented temporary paths.
+- Dated IMA edition is the identity authority used here; no timeless criticality or
+  ideal-purity identity is inferred. Root owns shared batch validation; receipt reuse
+  does not imply this reviewer executed it.
+tags:
+- round13
+- independent
+- mineral
+- primary-evidence
+```

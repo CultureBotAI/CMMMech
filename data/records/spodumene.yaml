@@ -1,0 +1,84 @@
+id: cmmmech:spodumene
+name: Spodumene
+material_kind: mineral
+description: Spodumene is the LiAlSi2O6 mineral species in the September 2026 IMA list. Status
+  A denotes approval; the entry 1962 s.p. denotes a special-procedure action, not a sequential
+  approval identifier or the mineral's original discovery year. This mineral is distinct from
+  elemental lithium and a mixed spodumene-bearing ore. The study below, already cited by cmmmech:lithium,
+  tests one such feed and reports no material lithium-leaching enhancement under its conditions.
+  No lithium commodity designation is inherited.
+sources:
+  - id: ima_2026_09
+    title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 203, Spodumene
+      row; page 1, column definitions; page 2, distribution terms.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-11'
+  - id: kirk2024
+    title: Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene, and lepidolite
+      using Acidiothiobacillus ferrooxidans. Frontiers in Microbiology 15:1467408. The genus
+      spelling is retained from the published title.
+    url: https://doi.org/10.3389/fmicb.2024.1467408
+    accessed_on: '2026-10-11'
+  - id: kirk2024_data_v1
+    title: Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene and lepidolite
+      using Acidiothiobacillus ferrooxidans. Mendeley Data, version 1, published 14 November
+      2024; CC BY 4.0. Published genus spelling retained.
+    url: https://doi.org/10.17632/djkf7tkm8d.1
+    accessed_on: '2026-10-11'
+  - id: ncbi_ferrooxidans
+    title: NCBI Taxonomy 920 - Acidithiobacillus ferrooxidans (species)
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=info
+    accessed_on: '2026-10-11'
+mechanisms:
+  - id: acidophile-spodumene-leaching-limit
+    name: No material lithium-leaching enhancement from the tested spodumene-bearing feed
+    process: bioleaching
+    description: Living culture reported as Acidithiobacillus ferrooxidans did not materially
+      improve the rate or extent of lithium release from a spodumene-bearing sample relative
+      to uninoculated acidic medium in the reported laboratory comparison. This is a condition-specific
+      unsuccessful enhancement test, not evidence that every microbial process on spodumene
+      is ineffective. More solution iron in the inoculated arm does not demonstrate greater
+      lithium extraction, and no purified lithium product was recovered.
+    context: Kirk et al. used Bikita, Zimbabwe material containing alpha-spodumene and quartz
+      by XRD. The ore-derived in-lab culture was reported without a strain accession; the
+      species identifier normalizes the name, not independently authenticating the culture.
+      Stock cultures contained ferrous sulfate, and the paper acknowledges growth-medium iron
+      carryover. Powdered feed was prepared by grinding to approximately 0.5 micrometre. Methods
+      specify 2 g powder in 190 mL basal medium plus 10 mL inoculum, but call this 2% w/v;
+      the amounts instead imply 1% w/v. Biotic treatments were triplicate, static at 23 degrees
+      C for 30 days, initially pH 1.8, with uninoculated basal-medium and sulfuric-acid-only
+      comparisons. Spodumene pH reportedly remained at 1.8 without later acid additions. ICP-OES
+      measured the centrifuged supernatant, not an isolated product. Figure captions describe
+      2500 microlitres of sulfuric acid for chemical leaching, while Methods specify 0.29
+      mL of 5.5 M acid for initial 200 mL treatments; the inconsistency prevents assuming
+      an unambiguous acid-matched comparison.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+    evidence:
+      - source_ref: kirk2024
+        supports: refute
+        explanation: Sections 2.1-2.3, 3.1 and 3.3 and Figure 4 refute a material microbial
+          enhancement of lithium release for this specific feed and protocol. The inoculated
+          and uninoculated lithium curves were similar, despite larger solution-iron values
+          in the inoculated arm. Section 2.5 states that post-leach spodumene residues were
+          not examined by XRD; no measured extent of spodumene-phase destruction is claimed.
+          This result does not refute distinct fungal or other microbial treatments.
+      - source_ref: kirk2024_data_v1
+        supports: partial
+        explanation: The version 1 Mendeley deposit was inspected separately from the article.
+          The standalone spodumene and lepidolite bioleaching workbooks have identical thirty
+          Li replicate values at Sheet1!C3:E12. Their headers use mg/kg while the paper reports
+          mg/L, and they lack a loading or acid-dose ledger. These provenance and unit gaps
+          prevent independent quantitative confirmation, normalized yield calculation or treating
+          the two workbook blocks as independent observations. No deposited values are silently
+          corrected or adopted here.
+curation_history:
+  - timestamp: '2026-10-11T09:02:12.208012+00:00'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: Created IMA-grounded spodumene identity with a condition-specific null microbial
+      enhancement result and source-data limits.
+history_refs:
+  - history/records/spodumene/2026-10-11T090210Z-codex-51f93e.yaml
