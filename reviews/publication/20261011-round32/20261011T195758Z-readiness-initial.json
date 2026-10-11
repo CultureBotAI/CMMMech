@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-10-11T19:57:58.447099Z",
+  "reviewer": "Codex /root/round27_packaging (GPT-6)",
+  "scope": "Independent publication/documentation and read-only helper assessment; reviewer authored arsenopyrite and does not independently certify its science. Molybdenite independently reviewed separately.",
+  "working_revision": "09c15cbfb7699e40ae4648b6b414784a00b488db",
+  "working_changes": "Three new mineral records, one tailings extension, histories/source reports/reviews and publication documentation; uncommitted.",
+  "verdict": "needs_documentation_correction_and_final_receipts",
+  "findings": [
+    {
+      "id": "D1",
+      "severity": "minor",
+      "status": "open",
+      "owner": "README.md",
+      "title": "Restore three omitted existing record rows",
+      "description": "Current README has184 distinct record links for187 corpus records. Existing kaolin, kaolin-mine-waste and stibnite rows are missing. Base README had180 links for184 records; this is inherited completeness debt, not current deletion.",
+      "missing_paths": [
+        "data/records/kaolin-mine-waste.yaml",
+        "data/records/kaolin.yaml",
+        "data/records/stibnite.yaml"
+      ],
+      "acceptance": "Add accurate bounded rows for the three existing records; require187 unique live links covering187 files, no duplicates or broken paths."
+    }
+  ],
+  "checks": {
+    "readme_record_links": 184,
+    "record_files": 187,
+    "base_readme_links": 180,
+    "draft_local_links": "All current README and two round32 docs local Markdown links resolve.",
+    "integration": "All five receipt/log hashes in integration-check.json match and exit0;22 governed artifacts match pin. Admission PR581 merged; convergence580closed; active main ruleset24692449 has no bypass actors and requires validate-strict plus SQUASH/ALLGREEN queue.",
+    "helper_scope": "Read-only inspected seven helpers. Exact base/branch/count assumptions187/215/219/33 retained. Fresh single-main clone fetches durable tags and excludes topic object; archive extraction/removal confined to new clone. Postmerge requires branch absence/exact tree/parent. Push/PR/COMMENT binds committed head and bodies; enqueue checks required CI/current queue; cleanup lease-deletes only exact owned ref and requires112closed/103104open. Main sync requires clean base, successful postmerge receipt, preserved7187 main hidden/ignored entries and8 bounded unrelated skill entries, and final skill HEAD/branch/status checks.",
+    "pending": "Final batch/review/coverage, manifest, existing-content proof, committed head/tree, final package/body hashes, actual remote CI/queue/merge/cleanup/postmerge/main-sync receipts remain unassessed or not yet available. Draft placeholders are explicit and not mistaken for successful results."
+  },
+  "input_hashes": {
+    "/private/tmp/CMMMech-expansion-round32-20261011/README.md": "6cde92cb95ce750bf1f9de63114832a6062fc999cb38a418fe3e859b483d6b6b",
+    "/private/tmp/CMMMech-expansion-round32-20261011/research/ingests/round32-frontier-20261011.md": "76fe4b8fd5e9f4107a18eaea8e68b0cc40e662b1c55eab7c39babd6a9231e445",
+    "/private/tmp/CMMMech-expansion-round32-20261011/research/ingests/round32-20261011-publication.md": "77935e844a5a8cc72ee3d97a15827f1e59e50a83f07ebcc27416d6d6353f79a4",
+    "/private/tmp/cmm-round32-isolated-verification.py": "44f4833ceb286ff87b08e81f0ca2d0575dd4d0dc8a28ee684ada4af949505ece",
+    "/private/tmp/cmm-round32-isolated-coverage.py": "6409b6fcc2205cc75e407891afe170e2a8b8ee66496b8c56ade39f5309af5bc9",
+    "/private/tmp/cmm-round32-publish.py": "51359b68068752bffc5d9d5d2f56c8623c46f1250807a70a5300121ed92bc46f",
+    "/private/tmp/cmm-round32-enqueue.py": "b237e6882aed4692c69265cf0c3ddc09fd3bd8520103de25db1bbb765504f64f",
+    "/private/tmp/cmm-round32-cleanup.py": "7ac8de2bd23d50c741ec18e21e3640e3eb3070ee7cbb6b935d4b2513994f07a3",
+    "/private/tmp/cmm-round32-sync-main.py": "6b2ffaa67304f4d9f61116933eeefdb5614b531282342e3074c5f87edfaf776e",
+    "/private/tmp/cmm-round32-preserve.py": "ef07a9814af302a1352da0fbc0a77b04bea2d9a972079ada4e90f5122ac966c5",
+    "/private/tmp/cmm-round32-integration-check.json": "6ac6d25f4106de401233ba08b8344e0fac86b08ce2dfc8b8e1bccfd5645ffc44",
+    "/private/tmp/cmm-round32-preservation-before.json": "80a21505999b3c01e0fa674e61e8b6bd7c3cdd0da74b02f98315dbbd6387280e"
+  }
+}

@@ -1,0 +1,176 @@
+id: cmmmech:bornite
+name: Bornite
+material_kind: mineral
+description: >-
+  Bornite is the Cu5FeS4 mineral species listed as approved, with the notation
+  1962 s.p., in the September 2026 IMA list. It is distinct from copper metal,
+  chalcocite, chalcopyrite, mixed copper ores and processing residues. The natural
+  specimens below contain other phases; their solution measurements cannot be
+  treated as selective conversion of pure endmember bornite. No criticality
+  designation is inherited from copper or iron.
+sources:
+  - id: ima_2026_09
+    title: >-
+      IMA-CNMNC. The New IMA List of Minerals, September 2026. Bornite row on
+      PDF page 29; column definitions on page 1 and distribution terms on page 2.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-11'
+  - id: zhang2019
+    title: >-
+      Zhang et al. (2019). Interactions between marmatite and bornite during the
+      oxidative dissolution process in abiotic and biotic systems. RSC Advances
+      9, 26609-26618. Sections 2-3, Figures 1-5 and original supplementary Table
+      S1 and Figure S1; author-name correction cited separately.
+    url: https://doi.org/10.1039/C9RA03658J
+    accessed_on: '2026-10-11'
+  - id: zhang2019_correction
+    title: >-
+      Zhang et al. (2019). Correction to Interactions between marmatite and
+      bornite during the oxidative dissolution process in abiotic and biotic
+      systems. RSC Advances 9, 33428. Corrects Hussnain Ahmed Janjua's name;
+      the notice does not revise experimental results.
+    url: https://doi.org/10.1039/C9RA90072A
+    accessed_on: '2026-10-11'
+  - id: bobadilla2021
+    title: >-
+      Bobadilla-Fazzini and Poblete-Castro (2021). Biofilm Formation Is Crucial
+      for Efficient Copper Bioleaching From Bornite Under Mesophilic Conditions:
+      Unveiling the Lifestyle and Catalytic Role of Sulfur-Oxidizing Bacteria.
+      Frontiers in Microbiology 12, 761997. Methods and Figures 1-6, especially
+      bornite Figures 3-5 and the proposed mechanism in Figure 6.
+    url: https://doi.org/10.3389/fmicb.2021.761997
+    accessed_on: '2026-10-11'
+  - id: ncbi_ferrooxidans
+    title: >-
+      NCBI Taxonomy 920. Acidithiobacillus ferrooxidans, species rank. Identifier
+      and current name verified through the Taxonomy Browser and Datasets API;
+      this does not identify the unaccessioned experimental stock.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
+    accessed_on: '2026-10-11'
+mechanisms:
+  - id: ferrooxidans_associated_copper_release
+    name: Culture-associated copper mobilization from a natural bornite specimen
+    process: bioleaching
+    microbial: true
+    organisms:
+      - id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+    description: >-
+      In the source's shaken acidic assays, the source-labelled A. ferrooxidans
+      culture was associated with greater aqueous copper release from the
+      bornite specimen than the uninoculated system. Iron oxidation and
+      ferric-mediated mineral attack are the authors' interpretation; the study
+      does not isolate direct enzymatic attack on bornite. Adding iron-bearing
+      sphalerite called marmatite also accelerated early copper release, and
+      this addition had a stronger effect without bacteria than with them.
+    context: >-
+      Laboratory experiment using a Guangxi geological-museum specimen, ground
+      below 0.074 mm and UV treated for 20 minutes. Table S1 reports 62.301 wt%
+      Cu, 9.982 wt% Fe and 24.222 wt% S. The claimed greater-than-90% purity is
+      based on elemental XRF, not an independently quantified phase fraction.
+      The unaccessioned culture came from Central South University and was
+      pre-grown with ferrous sulfate, collected and rinsed; its species ID does
+      not establish stock identity or exclude residual inoculum iron. Assays
+      used 250 mL flasks, 99 mL sterile 9K basal medium plus 1 mL inoculum,
+      30 degrees C, 170 rpm and 14 days. Sulfuric acid maintained pH 1.70-1.80.
+      This external pH control does not demonstrate microbial acid production.
+      Pure-bornite and mixed-mineral arms are separately plotted; the methods
+      call their labels mass ratios while Figure 4 labels them in grams, so
+      equal total solid loadings across ratios are not assumed. Sampling losses
+      were replaced with water; cumulative copper accounting and the meaning
+      of plotted error bars are not specified. Three microscope counts are
+      described, but independent leaching-flask replication is not established.
+      Copper was measured by ICP-AES. No isolated copper product or industrial
+      operation was demonstrated.
+    evidence:
+      - source_ref: zhang2019
+        supports: support
+        explanation: >-
+          Sections 2.1-2.3 and Figure 1b,d support the culture-associated
+          solution-copper difference under externally controlled acidity.
+          Figure 4d reports ferric iron; Figure 3 shows different residual
+          phases by SR-XRD and Raman. These observations support a bounded
+          specimen-level leaching association, not complete selective bornite
+          conversion or a demonstrated molecular pathway.
+      - source_ref: zhang2019
+        supports: partial
+        explanation: >-
+          Section 3.1.1 calls final biotic copper extractions greater than 90%,
+          but original Figure 1d peaks near day 12 and ends below 90% at day 14.
+          The discrepancy and decline are unresolved; no single final yield is
+          adopted here. The plotted biomass unit in Figure 4c also differs from
+          the cell-per-mL statement in the discussion and is not converted into
+          a curated biomass measurement. The absence of strong galvanic current
+          in Figure 2 concerns separate graphite/paraffin electrodes, not a
+          measurement of all interparticle currents in the culture. Figure 5 is
+          an interpretive schematic, not evidence of heap deployment.
+      - source_ref: zhang2019_correction
+        supports: context_only
+        explanation: >-
+          The inspected publisher correction changes an author-name spelling.
+          It does not reconcile the copper endpoint or biomass-unit conflicts.
+  - id: consortium_biofilm_associated_leaching
+    name: Biofilm-associated copper mobilization in a laminar-flow assay
+    process: bioleaching
+    microbial: true
+    description: >-
+      A Chilean ore-derived enrichment containing Leptospirillum spp. and
+      Acidithiobacillus thiooxidans was associated with copper release and
+      attached biofilm on a mixed bornite specimen in a laminar-flow chamber.
+      The authors propose complementary planktonic iron oxidation and attached
+      sulfur oxidation. FISH supports Acidithiobacillus at genus resolution in
+      the biofilm; it does not alone establish a species-specific catalytic role.
+      Unidentified organisms, possibly native to the specimen, also appeared in
+      these nonsterile assays.
+    context: >-
+      Natural hand-picked material from the Universidad de Chile, sieved below
+      0.044 mm and deliberately not acid-cleaned or autoclaved. Optical
+      mineralogy reports 74.91% bornite and 15.89% source-labelled Cc, plus other
+      phases; QEMSCAN instead detects about 32% bornite with a large unclassified
+      fraction. These estimates are not reconciled into a pure-mineral loading.
+      Mineral was fixed to tape over approximately 1.5 by 1.5 cm. Flow cells
+      recirculated 100-200 mL modified 9K medium at 30 degrees C, with reported
+      velocity 0.02 cm/s and Reynolds number below 10; inoculation was 10^6
+      cells/g mineral, approximately 3:1 Leptospirillum to the source-labelled
+      sulfur oxidizer. Methods specify 0.7 g/L Fe(II), whereas the screening
+      schematic labels 0.5 g/L; that discrepancy is retained. Screening wells
+      used 8 mL, 150 rpm and ferrous or ferric additions. Flow-cell conditions
+      were triplicated; screening had three to five replicates per condition
+      and time. Although screening methods mention uninoculated conditions,
+      bornite control time courses are not separately displayed. Apparatus,
+      volume, specimen orientation and hydrodynamics differ together; the
+      comparison does not isolate biofilm as the sole cause of a rate change.
+    evidence:
+      - source_ref: bobadilla2021
+        supports: support
+        explanation: >-
+          Methods and Figures 3-5 show copper in solution, ferric-iron profiles,
+          surface-associated material and microbial signals. The authors report
+          about 54% of feed copper released by day 32 in the laminar assay,
+          versus about 30% by day 48 in ferrous-fed screening wells; ferric-fed
+          wells reached about 40% by day 10. These are source-reported feed-level
+          values measured using atomic absorption, not bornite-specific yields
+          or recovered metal products. Figure 3C ends at day 46 while the prose
+          mentions day 48; day 32 is the supported comparison point retained here.
+      - source_ref: bobadilla2021
+        supports: partial
+        explanation: >-
+          FISH probes are genus-level and native organisms are unresolved.
+          QEMSCAN relative abundances are affected by surface coverage and
+          unclassified material, so loss of a bornite signal is not a mineral
+          mass balance. The proposed idaite pathway, acid production and
+          precipitation control are interpretations without a selective
+          biofilm-removal or species-removal test. Exact solid masses, raw
+          copper denominators and sampling mass corrections are not supplied
+          for independent reconstruction. A laboratory flow-cell analogy to
+          heaps establishes neither pilot nor industrial deployment.
+curation_history:
+  - timestamp: '2026-10-11T19:48:13.137407+00:00'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Created bornite mineral identity and qualified culture- and biofilm-associated
+      leaching observations, preserving source corrections, conflicting values,
+      specimen mixtures, uncertain causality and laboratory scale.
+history_refs:
+  - history/records/bornite/2026-10-11T194734Z-codex-824206.yaml

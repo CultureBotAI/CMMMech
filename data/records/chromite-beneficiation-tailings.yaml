@@ -3,7 +3,7 @@ name: Chromite beneficiation tailings
 material_kind: secondary_resource
 description: >-
   Mixed residual mineral solids from physical beneficiation of chromite-bearing
-  ore. The curated case is fresh superficial tailings collected in May 2017 at
+  ore. The curated 2018 case is fresh superficial tailings collected in May 2017 at
   a beneficiation plant in Sukinda valley, Odisha, India, with a separate
   stockpiled-tailings core used for chemical extraction comparisons. The
   source describes comminution, desliming and gravity concentration, rather
@@ -13,8 +13,11 @@ description: >-
   phases include chromite, goethite, hematite, gibbsite and chlorite; Cr also
   occurs in nonchromite phases. Table 1 reports 56.7 wt% Fe2O3 and 18.1 wt%
   Cr2O3 on an XRF oxide-equivalent basis, not quantitative mineral fractions.
-  Neither chromium criticality nor industrial microbial processing is
-  inferred from this feed's composition or industrial origin.
+  A separate 2025 fungal study uses two Eti Krom enrichment-tailings feeds
+  labelled olivine and serpentine; both are mixed mineral materials, distinct
+  from the Odisha samples and from pure olivine or serpentine minerals.
+  Neither constituent criticality nor industrial microbial processing is
+  inferred from these feeds' compositions or industrial origins.
 sources:
   - id: bolanos2018
     title: >-
@@ -52,6 +55,22 @@ sources:
       NCBI marks the name effectively but not validly published. This resolves
       the source's WCS 358 label without asserting stock authentication.
     url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1495066
+    accessed_on: '2026-10-11'
+  - id: acar2025
+    title: >-
+      Acar, Gulmez, Baris and Basman (2025). Sustainable Nickel Extraction
+      from Low-Grade Ores via Trametes versicolor: A Bioleaching Case Study
+      on Olivine and Serpentine. Journal of Sustainable Metallurgy
+      11:2527-2540; published online 4 June 2025.
+      DOI 10.1007/s40831-025-01123-1. Complete 14-page publisher PDF;
+      Experimental, Results and Discussion, Tables 1-3 and Figures 1-8.
+    url: https://doi.org/10.1007/s40831-025-01123-1
+    accessed_on: '2026-10-11'
+  - id: ncbi_versicolor
+    title: >-
+      NCBI Taxonomy 5325, Trametes versicolor, species-level entry.
+      This mapping does not independently authenticate isolate OG2.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5325&mode=Info
     accessed_on: '2026-10-11'
 mechanisms:
   - id: thiooxidans_acid_associated_leaching
@@ -202,6 +221,83 @@ mechanisms:
           precipitate. Proposed biosorption, sulfur-mediated reduction,
           ferrous-iron reduction and enzymatic processes are not resolved
           quantitatively. No recovered-metal mass balance was demonstrated.
+  - id: versicolor_og2_tailings_leaching_association
+    name: Metal release during OG2 fungal treatment of mixed silicate-rich tailings
+    process: bioleaching
+    microbial: true
+    organisms:
+      - id: NCBITaxon:5325
+        label: Trametes versicolor
+    description: >-
+      Nickel, iron, magnesium and silicon were reported in leachates during
+      laboratory treatment with source-labelled living T. versicolor OG2.
+      Organic-acid-mediated release is proposed; oxalic acid was detected
+      in one treated filtrate. Absent uninoculated leaching controls prevent
+      assigning an incremental microbial effect. Neither selective chromite
+      dissolution nor isolated nickel recovery is demonstrated, and the
+      source's percentage calculation is not accepted as a verified yield.
+    context: >-
+      Eti Krom supplied final chromite-enrichment tailings called olivine
+      and serpentine. XRD identifies multiple silicates and spinels in both;
+      Table 1 reports 2.91 and 29.91 wt% Cr2O3 equivalents, respectively,
+      not chromite phase fractions. Table 2 reports solid-feed Ni at
+      3246.61 and 1457.18 ppm. The as-received feeds were not ground;
+      Figure 1 documents different size distributions. Ataturk University
+      supplied OG2. The paper states ITS identification and assigned
+      GenBank accessions but prints no accession value, so strain identity
+      remains source-reported. Cultures were reactivated on potato dextrose
+      agar at 30 degrees C for 5-11 days, then washed with pH-7.2 PBS and
+      0.01% Tween 80. Each 20 g solid suspension in 500 mL water was
+      autoclaved at 121 degrees C for 15 min, received 80 mL medium
+      prepared with 2 g/L glucose, 0.5 g/L peptone and 0.5 g/L yeast
+      extract plus 1 mL spore suspension, and was brought to 1000 mL.
+      These medium concentrations are for the prepared aliquot; final
+      nutrient concentrations are not assumed. Treatments used initial
+      pH 4.5, 5.0, 5.5 or 6.3, 20 degrees C and 3 or 7 days. The
+      methods conflict between 150 and 200 rpm and give spore density
+      approximately 10^7 without a unit. They call loading 2% by weight;
+      the explicit mass and volume correspond to 20 g/L. Solids were
+      separated at 6000 rpm, dried at 60 degrees C for two days, and
+      supernatants stored at 4 degrees C for ICP-MS analysis. No leach
+      replicate number, uncertainty, final pH trajectory, uninoculated
+      control, matched-acid control or recovered-product mass balance is
+      reported. The control in Table 3 belongs to a separate fungal
+      growth-tolerance plate assay and does not control the leaching.
+    evidence:
+      - source_ref: acar2025
+        supports: support
+        explanation: >-
+          Experimental and Results, pages 2528-2536, support feed identity,
+          inoculated treatment and detected metal release. Figures 5 and 7
+          label their highest Ni dissolution indices as 41.82% and 30.97%
+          at initial pH 5 after seven days for the olivine-labelled and
+          serpentine-labelled feeds. These are author-reported indices,
+          retained only to identify the experimental observations. Equation 1
+          divides solution ppm by solid-sample ppm without an explicit
+          solid-mass/liquid-volume conversion. Under the stated 20 g/L
+          loading this expression alone does not establish a feed-mass
+          extraction fraction. Original solution values and normalization
+          calculations are not supplied, so no corrected yield is inferred.
+          Figures 6 and 8 use ratios of these dissolution indices for
+          selectivity, not product purity or isolated-metal yield.
+      - source_ref: acar2025
+        supports: partial
+        explanation: >-
+          Figure 4 and pages 2530-2534 report oxalic acid at 9.562 mg/L
+          in the seven-day olivine-treatment filtrate chromatogram. The
+          methods describe a 100-fold dilution without clarifying the
+          reported concentration's back-correction; it is not converted
+          here. Citric acid, laccase-driven release, specific metal-organic
+          complexes and ferric/ferrous reaction pathways are discussed
+          rather than measured in this experiment. No abiotic filtrate
+          comparison establishes the increment attributable to fungal
+          acid production. The proposed Cr(VI)-toxicity explanation for
+          differences between feeds lacks a leaching-stage Cr(VI) assay;
+          chromite abundance is not evidence that hexavalent chromium was
+          present. Different mineralogy and particle size also confound
+          feed comparisons. The graphical nickel-product depiction and
+          proposed downstream separation are not demonstrated recovery
+          operations or industrial deployment.
 curation_history:
   - timestamp: '2026-10-11T19:07:31.421425+00:00'
     curator: codex (GPT-6; codex)
@@ -211,5 +307,14 @@ curation_history:
       qualified culture-associated laboratory observations, verified organism
       mappings and explicit phosphate, control, speciation, unit and
       mass-accounting limits.
+  - timestamp: '2026-10-11T19:47:38.292106+00:00'
+    curator: codex (GPT-6; codex)
+    action: EDIT
+    summary: >-
+      Added a separately scoped 2025 OG2 fungal-treatment observation for
+      two Eti Krom chromite-enrichment tailings, with control, strain,
+      recipe, mass-normalization and mechanism limits. Retained the
+      preceding 2018 observations and their provenance.
 history_refs:
   - history/records/chromite-beneficiation-tailings/2026-10-11T190716Z-codex-68d22b.yaml
+  - history/records/chromite-beneficiation-tailings/2026-10-11T194722Z-codex-669074.yaml
