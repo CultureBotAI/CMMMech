@@ -1,0 +1,507 @@
+# Independent scientific review of moolooite culture-associated formation
+
+- Review: 20261011T223107Z-moolooite-round36-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T22:25:52.919608Z
+- Finished UTC: 2026-10-11T22:31:07.718341Z
+- Reviewer: Codex /root/round27_packaging (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Whole frozen moolooite record is defensible with explicit hydration, mixed-substrate, causal-control and recovery limits. Zero corrective findings. Independent named validation and parent final cohort gates pass on exact reviewed bytes.
+
+## Scope And Provenance
+
+All fields of the one moolooite record, its culture-associated mechanism, separate field context, source identifiers and provenance.
+
+Selection: Parent-assigned independent review of a different curator record.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1ef6fdde620a4053fbfff99c51065082dce32d39.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:moolooite | data/records/moolooite.yaml | maintained | Moolooite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named-record validation | passed | True | cmmmech:moolooite | Reviewer executed:1 record,0 failed. Log /private/tmp/cmm-round36-moolooite-review-named.log; SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e. |
+| Final cohort batch | passed | True | cmmmech:moolooite | Parent executed; reviewer independently read and verified /private/tmp/cmm-round36-final-batch.log, SHA256 cac731be567d421580f78dafc063be4b2ca406ca450d98bb15c72eab76e37b57. uv run --locked --extra dev python scripts/check.py<br>All checks passed!<br>........................................................................ [ 23%]<br>........................................................................ [ 46%]<br>........................................................................ [ 69%]<br>....................................................sss................. [ 92%]<br>.......................                                                  [100%]<br>308 passed, 3 skipped in 134.59s (0:02:14)<br>Checked 200 record(s); 0 failed.<br>Checked 231 history record(s); 0 error(s). |
+| Final cohort nonempty | passed | True | cmmmech:moolooite | Parent executed; reviewer independently read and verified /private/tmp/cmm-round36-final-nonempty.log, SHA256 0ed97773d44e6b06c1b7964ea58e27e8370bf048dd0a7c0384cf9f7681603b10. Checked 200 record(s); 0 failed. |
+| Final cohort history | passed | True | cmmmech:moolooite | Parent executed; reviewer independently read and verified /private/tmp/cmm-round36-final-history.log, SHA256 75168340cd2362ddc1a2cc07d98f1a645893ffaa1d3d3f678ad3141c78cf40c4. Checked 231 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Mineral species, variable hydration and organism identifiers
+
+identity: supported. Targets: cmmmech:moolooite.
+
+IMA approval, species composition and exact strain/sequence evidence support the owner. Record appropriately distinguishes species, commodity, mixed feed and neighboring oxalates; no inherited criticality.
+
+### Culture-associated formation with causal limits
+
+evidence: supported. Targets: cmmmech:moolooite.
+
+Displayed phase patterns support moolooite formation associated with the inoculated culture. Oxalate excretion and iron inhibition remain proposed causes; missing matched controls, pH trajectory and biomass quantification are explicit.
+
+### Phase mixtures, field context and outcome boundaries
+
+evidence: supported. Targets: cmmmech:moolooite.
+
+Original phase figures, SI and record agree: hydration unresolved, wheatleyite transient, substrate peaks remain and field lichen separate. No quantitative purity, copper recovery or industrial deployment inflation.
+
+### Independent full target assessment and terminal validation
+
+provenance: supported. Targets: cmmmech:moolooite.
+
+Native inspect preceded judgment; reviewer authored autunite-family research only, not moolooite. Exact frozen record and sidecar match, named/final cohort checks pass. Source limitations are retained, not manufactured defects.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/moolooite.yaml; All fields; native inspection captured before judgment | supports | Whole target, CREATE sidecar and schema remain at original captured hashes. Reviewer did not curate or edit this record. |
+| primary | https://doi.org/10.1038/s41598-021-03600-5; Complete nine-page publisher article; Methods on pages2–3; Results and Discussion on pages3–7; original Figures1–6 | supports | Independently read full article and inspected all six original publisher figures. Ch4/07 conidia from ten-day culture inoculated approximately 5 by 5 mm weathered Cu-bearing surface fragments in15 mL Czapek-Dox; initial pH 5.5,20–25 degrees C,5–6 days, triplicates. Exact medium recipe agrees. No numerical pH trajectory, inoculum count, fragment sterilization or matched sterile/killed/filtrate series is supplied. |
+| phase | https://doi.org/10.1038/s41598-021-03600-5; Original Figure5 panelsa–d and captions; Figure6 panelsa–f | supports | PXRD patterns5b–c identify culture-associated moolooite in malachite-bearing substrate, with wheatleyite at 5 days not assigned at 6 days. Substrate peaks remain. Figure5d Raman and5a PXRD belong to field lichen material; not transferred to every laboratory specimen. OriginalFigure6 separates field crystals from different inoculated substrates. No phase mass balance, product purity or isolated recovery yield. |
+| substrate | https://doi.org/10.1038/s41598-021-03600-5; Original Figures1–4,6 and Results substrate/field sections | supports | Figures1–3 show heterogeneous weathered ore and secondary carbonate/ferruginous surfaces; not pure chalcopyrite. Figures4 and6a–b show source-identified Lecidea inops-associated occurrence. Twenty-five field fragments sampled July 2019 remain separate from inoculated experiment. Iron inhibition and field washing/supersaturation effects are interpretations without controlled concentration or kinetic series. |
+| supplement | https://doi.org/10.1038/s41598-021-03600-5; Original supplementary DOCX, every cell of Tables S1–S3 and references | supports | Independently extracted/read original Word XML, including five physical table elements that comprise Tables S1–S3 and footnote; no embedded media. Tables S1–S2 use variable hydration nH2O, while main uses H2O. Table S3 has four lichen names despite five in main; record adopts no disputed count or causal role for listed associated fungi. Earlier literature in tables remains context, not silently pooled experiments. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September2026 compilation; introductory definitions and original page147 row, visually inspected | supports | Moolooite is approved IMA 1980-082, Cu(C2O4).nH2O. Original description 1986 is not the approval date; variable hydration and exact species distinguished from copper and other oxalates. Existing official PDF reused, not a fresh download. |
+| ncbi | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061&amp;mode=Info; Live official species page plus retained same-day HTML | supports | NCBITaxon5061 identifies Aspergillus niger at species rank. It does not establish a strain-specific identifier or mineral phenotype. |
+| sequence | https://www.ncbi.nlm.nih.gov/nuccore/KF768341.1; Official GenBank flatfile, LOCUS/VERSION/source qualifiers and featurecoordinates | supports | Retained 598 bp sequence explicitly labels Ch4/07, Aspergillus niger, source grecian marble and taxon 5061. Sequence is partial rRNA plus ITS, not complete genome. Reviewer read retained official flatfile and acquisition receipt; independent nuccore/sviewer web attempts returned internal errors, so no successful second live retrieval claimed. |
+| history | history/records/moolooite/2026-10-11T222034Z-codex-1ba2ba.yaml; Whole canonical CREATE and separate inline event | supports | Actual codex/GPT-6/codex attribution, 22:20:34Z sidecar and22:20:35Z inline event agree with new target and curated scope. No fabricated earlier event. |
+| search | /private/tmp/cmm-round36-moolooite-review-searches.json; Exact-DOI notice search; bounded heat-killed fungal comparator query; metadata and accessboundary | supports | No affecting notice surfaced in first result set or retained Crossref relation/update metadata. Glukhova 2018 DOI 10.1007/s00248-018-1186-0 is a separate useful inactive-biomass lead; full study/figures/SI not reviewed here and no measurements imported. The current record already avoids universal live-cell necessity. Publisher/GenBank web error boundaries are explicit. |
+| dedup | /private/tmp/cmm-round36-moolooite-review-dedup.txt; Hidden/ignored/followed exact name/DOI/sequence scan | supports | One maintained moolooite target and its current handoff/provenance resolve uniquely. Nearby copper mineral records and literature mentions do not identify the same mineral or its experiment. |
+| gates | /private/tmp/cmm-round36-final-terminal.json; Final terminal receipt and all three hashed logs | supports | Parent actual full check: 308 passed,3 skipped in134.59 seconds;200 records,0 failed;231 histories,0 errors; explicit nonempty/history checks passed. Reviewer independently read and hash-verified logs; frozen target matches before/after. |
+
+## Limits And Additional Notes
+
+- The accepted study does not isolate live cell metabolism from chemical substrate reactions or extracellular metabolites with matched sterile/killed/filtrate controls.
+- No reported inoculum density, fragment sterilization, numerical pH trajectory, direct oxalate assay or quantitative phase/Cu massbalance.
+- Main monohydrate notation differs from variable hydration in SI and IMA; no specimen-specific water content measured.
+- Field lichen occurrence andRaman remain separate from laboratory fungal PXRD, and mixed remaining phases preclude purity or product yield claims.
+- Bounded notice/counterevidence searches are not exhaustive. Glukhova 2018 inactive-biomass lead is deferred, not added by review.
+- Independent live nuccore/publisher web opening had internal errors; retained same-day official GenBank and complete publisher PDF/HTML were independently read and their acquisition checksums verified.
+- All six original publisher figures and every cell of SupplementaryTables S1–S3 were inspected; no original source graphics missing for accepted record.
+- Meta-autunite source-only deferral/issue 120 is separate and does not constitute a defect in this accepted target. Reviewer made no maintained record/history change.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T223107Z-moolooite-round36-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of moolooite culture-associated formation
+started_at: '2026-10-11T22:25:52.919608Z'
+finished_at: '2026-10-11T22:31:07.718341Z'
+reviewer:
+  identity: Codex /root/round27_packaging
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Moolooite was curated by /root/round27_superalloy. Reviewer
+    researched autunite-family sources only and did not edit this record, sidecar
+    or dossier. Shared worktree and curator-acquired original artifacts disclosed;
+    all accepted primary evidence independently inspected.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Whole frozen moolooite record is defensible with explicit hydration, mixed-substrate,
+  causal-control and recovery limits. Zero corrective findings. Independent named
+  validation and parent final cohort gates pass on exact reviewed bytes.
+source:
+  git_revision: 1ef6fdde620a4053fbfff99c51065082dce32d39
+  state: working_tree
+  inputs:
+  - path: data/records/moolooite.yaml
+    sha256: 72144841927e02ab54655961f051db7b7d013a36dec5ca4274602bc7e0c03777
+    role: target
+  - path: history/records/moolooite/2026-10-11T222034Z-codex-1ba2ba.yaml
+    sha256: 48cd5d3518374edb4a8a13899e5b6e68c835daa3cc3d372d01918e5801602df5
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: All fields of the one moolooite record, its culture-associated mechanism,
+    separate field context, source identifiers and provenance.
+  selection: Parent-assigned independent review of a different curator record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:moolooite
+  exclusions:
+  - target: Glukhova 2018 and other unadopted copper-oxalate experiments
+    reason: Bounded contradiction search identifies future leads; no full original/SI
+      review or new record claims from those studies.
+targets:
+- target_id: cmmmech:moolooite
+  path: data/records/moolooite.yaml
+  label: Moolooite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/moolooite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named-record validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 uv run --locked
+    cmmmech validate data/records/moolooite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Reviewer executed:1 record,0 failed. Log /private/tmp/cmm-round36-moolooite-review-named.log;
+    SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e.
+  target_ids:
+  - cmmmech:moolooite
+- check_id: batch
+  name: Final cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed; reviewer independently read and verified /private/tmp/cmm-round36-final-batch.log,
+    SHA256 cac731be567d421580f78dafc063be4b2ca406ca450d98bb15c72eab76e37b57. uv run
+    --locked --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 134.59s (0:02:14)
+
+    Checked 200 record(s); 0 failed.
+
+    Checked 231 history record(s); 0 error(s).'
+  target_ids:
+  - cmmmech:moolooite
+- check_id: nonempty
+  name: Final cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Parent executed; reviewer independently read and verified /private/tmp/cmm-round36-final-nonempty.log,
+    SHA256 0ed97773d44e6b06c1b7964ea58e27e8370bf048dd0a7c0384cf9f7681603b10. Checked
+    200 record(s); 0 failed.
+  target_ids:
+  - cmmmech:moolooite
+- check_id: history
+  name: Final cohort history
+  command: uv run --locked cmmmech validate-history --base 1ef6fdde620a4053fbfff99c51065082dce32d39
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Parent executed; reviewer independently read and verified /private/tmp/cmm-round36-final-history.log,
+    SHA256 75168340cd2362ddc1a2cc07d98f1a645893ffaa1d3d3f678ad3141c78cf40c4. Checked
+    231 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:moolooite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/moolooite.yaml
+  locator: All fields; native inspection captured before judgment
+  accessed_at: '2026-10-11T22:31:07.718341Z'
+  support: supports
+  summary: Whole target, CREATE sidecar and schema remain at original captured hashes.
+    Reviewer did not curate or edit this record.
+  snapshot_sha256: 72144841927e02ab54655961f051db7b7d013a36dec5ca4274602bc7e0c03777
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1038/s41598-021-03600-5
+  locator: Complete nine-page publisher article; Methods on pages2–3; Results and
+    Discussion on pages3–7; original Figures1–6
+  accessed_at: '2026-10-11T22:31:07.718341Z'
+  support: supports
+  summary: Independently read full article and inspected all six original publisher
+    figures. Ch4/07 conidia from ten-day culture inoculated approximately 5 by 5 mm
+    weathered Cu-bearing surface fragments in15 mL Czapek-Dox; initial pH 5.5,20–25
+    degrees C,5–6 days, triplicates. Exact medium recipe agrees. No numerical pH trajectory,
+    inoculum count, fragment sterilization or matched sterile/killed/filtrate series
+    is supplied.
+  snapshot_sha256: ca8936b3f1d1b7a86033c1ff65fe393475c569d5ef16ce1ef6fe245e4855b299
+- evidence_id: phase
+  kind: primary_source
+  reference: https://doi.org/10.1038/s41598-021-03600-5
+  locator: Original Figure5 panelsa–d and captions; Figure6 panelsa–f
+  accessed_at: '2026-10-11T22:31:07.718341Z'
+  support: supports
+  summary: PXRD patterns5b–c identify culture-associated moolooite in malachite-bearing
+    substrate, with wheatleyite at 5 days not assigned at 6 days. Substrate peaks
+    remain. Figure5d Raman and5a PXRD belong to field lichen material; not transferred
+    to every laboratory specimen. OriginalFigure6 separates field crystals from different
+    inoculated substrates. No phase mass balance, product purity or isolated recovery
+    yield.
+  snapshot_sha256: 1b6a14e99d130d6d8afab667bd5985f1730bbb53ff7f82a701f107ca9bbd8937
+- evidence_id: substrate
+  kind: primary_source
+  reference: https://doi.org/10.1038/s41598-021-03600-5
+  locator: Original Figures1–4,6 and Results substrate/field sections
+  accessed_at: '2026-10-11T22:31:07.718341Z'
+  support: supports
+  summary: Figures1–3 show heterogeneous weathered ore and secondary carbonate/ferruginous
+    surfaces; not pure chalcopyrite. Figures4 and6a–b show source-identified Lecidea
+    inops-associated occurrence. Twenty-five field fragments sampled July 2019 remain
+    separate from inoculated experiment. Iron inhibition and field washing/supersaturation
+    effects are interpretations without controlled concentration or kinetic series.
+  snapshot_sha256: 3388d701ddfda24e261f92f2d599e4c8faa54e566313bed6346d985b8ca30c1a
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://doi.org/10.1038/s41598-021-03600-5
+  locator: Original supplementary DOCX, every cell of Tables S1–S3 and references
+  accessed_at: '2026-10-11T22:31:07.718341Z'
+  support: supports
+  summary: Independently extracted/read original Word XML, including five physical
+    table elements that comprise Tables S1–S3 and footnote; no embedded media. Tables
+    S1–S2 use variable hydration nH2O, while main uses H2O. Table S3 has four lichen
+    names despite five in main; record adopts no disputed count or causal role for
+    listed associated fungi. Earlier literature in tables remains context, not silently
+    pooled experiments.
+  snapshot_sha256: 8b3ad390aecd14a34d28f0fea90899736b53555ce177d56dc3f05edd77d5629d
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September2026 compilation; introductory definitions and original page147
+    row, visually inspected
+  accessed_at: '2026-10-11T22:31:07.718341Z'
+  support: supports
+  summary: Moolooite is approved IMA 1980-082, Cu(C2O4).nH2O. Original description
+    1986 is not the approval date; variable hydration and exact species distinguished
+    from copper and other oxalates. Existing official PDF reused, not a fresh download.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: ncbi
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061&mode=Info
+  locator: Live official species page plus retained same-day HTML
+  accessed_at: '2026-10-11T22:31:07.718341Z'
+  support: supports
+  summary: NCBITaxon5061 identifies Aspergillus niger at species rank. It does not
+    establish a strain-specific identifier or mineral phenotype.
+  snapshot_sha256: 0824ee919f6db65fda7e74f4dd87782203f761df3b7fea530055e6b55a473c92
+- evidence_id: sequence
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/KF768341.1
+  locator: Official GenBank flatfile, LOCUS/VERSION/source qualifiers and featurecoordinates
+  accessed_at: '2026-10-11T22:31:07.718341Z'
+  support: supports
+  summary: Retained 598 bp sequence explicitly labels Ch4/07, Aspergillus niger, source
+    grecian marble and taxon 5061. Sequence is partial rRNA plus ITS, not complete
+    genome. Reviewer read retained official flatfile and acquisition receipt; independent
+    nuccore/sviewer web attempts returned internal errors, so no successful second
+    live retrieval claimed.
+  snapshot_sha256: 925e0dcf7e8571abe9668ff2d22775b2d4b3d80e7ee04bf303b86ab2d404f757
+- evidence_id: history
+  kind: record_content
+  reference: history/records/moolooite/2026-10-11T222034Z-codex-1ba2ba.yaml
+  locator: Whole canonical CREATE and separate inline event
+  accessed_at: '2026-10-11T22:31:07.718341Z'
+  support: supports
+  summary: Actual codex/GPT-6/codex attribution, 22:20:34Z sidecar and22:20:35Z inline
+    event agree with new target and curated scope. No fabricated earlier event.
+  snapshot_sha256: 48cd5d3518374edb4a8a13899e5b6e68c835daa3cc3d372d01918e5801602df5
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round36-moolooite-review-searches.json
+  locator: Exact-DOI notice search; bounded heat-killed fungal comparator query; metadata
+    and accessboundary
+  accessed_at: '2026-10-11T22:31:07.718341Z'
+  support: supports
+  summary: No affecting notice surfaced in first result set or retained Crossref relation/update
+    metadata. Glukhova 2018 DOI 10.1007/s00248-018-1186-0 is a separate useful inactive-biomass
+    lead; full study/figures/SI not reviewed here and no measurements imported. The
+    current record already avoids universal live-cell necessity. Publisher/GenBank
+    web error boundaries are explicit.
+  snapshot_sha256: e5b7e46e65b72a1a08128f90fd871acb50374ce3a53015ec5417b7572a4a49a7
+  search_scope: First returned web results, no exhaustive citation crawl. Complete
+    current primary examined independently. Relevant contrasting study is follow-up
+    lead, not accepted evidence.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round36-moolooite-review-dedup.txt
+  locator: Hidden/ignored/followed exact name/DOI/sequence scan
+  accessed_at: '2026-10-11T22:31:07.718341Z'
+  support: supports
+  summary: One maintained moolooite target and its current handoff/provenance resolve
+    uniquely. Nearby copper mineral records and literature mentions do not identify
+    the same mineral or its experiment.
+  snapshot_sha256: ed90e13f052f09502837f671ca104941d46ef24f6f71969b729150d866fda1af
+  search_scope: rg --hidden --no-ignore --follow over data/records,research,reviews,history
+    in round36; exact moolooite, DOI and KF768341. This review search is bounded,
+    not machine-wide absence.
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round36-final-terminal.json
+  locator: Final terminal receipt and all three hashed logs
+  accessed_at: '2026-10-11T22:31:07.718341Z'
+  support: supports
+  summary: 'Parent actual full check: 308 passed,3 skipped in134.59 seconds;200 records,0
+    failed;231 histories,0 errors; explicit nonempty/history checks passed. Reviewer
+    independently read and hash-verified logs; frozen target matches before/after.'
+  snapshot_sha256: 61fef8e7b1a9008a67336d55620a637b393552bb701869ed2b91deaa1627fd93
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral species, variable hydration and organism identifiers
+  outcome: supported
+  summary: IMA approval, species composition and exact strain/sequence evidence support
+    the owner. Record appropriately distinguishes species, commodity, mixed feed and
+    neighboring oxalates; no inherited criticality.
+  target_ids:
+  - cmmmech:moolooite
+  evidence_ids:
+  - record
+  - ima
+  - ncbi
+  - sequence
+  - dedup
+  dimensions:
+  - name: material_form
+    value: Mineral species; culture-associated precipitate on mixed weathered ore
+    definition: Moolooite phase identity does not make feed pure or product isolated.
+    evidence_ids:
+    - primary
+    - phase
+    - ima
+  - name: criticality
+    value: Not asserted
+    definition: No jurisdiction/list/edition inherited from copper.
+    evidence_ids:
+    - record
+  - name: organism
+    value: Aspergillus niger Ch4/07; species 5061 and ribosomal/ITS KF768341.1
+    definition: Sequence provenance is distinct from authenticated experimental stock
+      or complete genome.
+    evidence_ids:
+    - ncbi
+    - sequence
+    - primary
+- assessment_id: mechanism
+  area: evidence
+  topic: Culture-associated formation with causal limits
+  outcome: supported
+  summary: Displayed phase patterns support moolooite formation associated with the
+    inoculated culture. Oxalate excretion and iron inhibition remain proposed causes;
+    missing matched controls, pH trajectory and biomass quantification are explicit.
+  target_ids:
+  - cmmmech:moolooite
+  evidence_ids:
+  - record
+  - primary
+  - phase
+  - substrate
+  dimensions:
+  - name: biomass
+    value: Conidia from ten-day fungal culture; inoculum density unreported
+    definition: Inoculated culture is not independently measured live metabolic contribution.
+    evidence_ids:
+    - primary
+  - name: conditions
+    value: 15 mL,approximately 5 by 5 mm secondary surfaces, initial pH5.5,20–25 degrees
+      C,5–6 days,triplicates
+    definition: Exact medium recipe includes 30 g/L glucose; not monitored endpoint
+      pH.
+    evidence_ids:
+    - primary
+  - name: controls
+    value: No matched sterile/killed/cell-free comparison for accepted assay
+    definition: Culture association is retained without exclusive live-cell necessity.
+    evidence_ids:
+    - primary
+- assessment_id: scope
+  area: evidence
+  topic: Phase mixtures, field context and outcome boundaries
+  outcome: supported
+  summary: 'Original phase figures, SI and record agree: hydration unresolved, wheatleyite
+    transient, substrate peaks remain and field lichen separate. No quantitative purity,
+    copper recovery or industrial deployment inflation.'
+  target_ids:
+  - cmmmech:moolooite
+  evidence_ids:
+  - phase
+  - supplement
+  - substrate
+  - record
+  dimensions:
+  - name: measurements
+    value: Qualitative phase assignment and microscopy; no accepted recovery percentage
+    definition: No measured isolated mass/product yield or closed Cu balance.
+    evidence_ids:
+    - phase
+    - record
+  - name: deployment
+    value: Laboratory cultures and separate field occurrence
+    definition: Field lichen occurrence and literaturetable wording do not establish
+      deployment.
+    evidence_ids:
+    - primary
+    - substrate
+- assessment_id: provenance
+  area: provenance
+  topic: Independent full target assessment and terminal validation
+  outcome: supported
+  summary: Native inspect preceded judgment; reviewer authored autunite-family research
+    only, not moolooite. Exact frozen record and sidecar match, named/final cohort
+    checks pass. Source limitations are retained, not manufactured defects.
+  target_ids:
+  - cmmmech:moolooite
+  evidence_ids:
+  - record
+  - history
+  - gates
+  - search
+findings: []
+actions: []
+limitations:
+- The accepted study does not isolate live cell metabolism from chemical substrate
+  reactions or extracellular metabolites with matched sterile/killed/filtrate controls.
+- No reported inoculum density, fragment sterilization, numerical pH trajectory, direct
+  oxalate assay or quantitative phase/Cu massbalance.
+- Main monohydrate notation differs from variable hydration in SI and IMA; no specimen-specific
+  water content measured.
+- Field lichen occurrence andRaman remain separate from laboratory fungal PXRD, and
+  mixed remaining phases preclude purity or product yield claims.
+- Bounded notice/counterevidence searches are not exhaustive. Glukhova 2018 inactive-biomass
+  lead is deferred, not added by review.
+- Independent live nuccore/publisher web opening had internal errors; retained same-day
+  official GenBank and complete publisher PDF/HTML were independently read and their
+  acquisition checksums verified.
+notes:
+- All six original publisher figures and every cell of SupplementaryTables S1–S3 were
+  inspected; no original source graphics missing for accepted record.
+- Meta-autunite source-only deferral/issue 120 is separate and does not constitute
+  a defect in this accepted target. Reviewer made no maintained record/history change.
+links:
+- https://doi.org/10.1038/s41598-021-03600-5
+- https://www.ncbi.nlm.nih.gov/nuccore/KF768341.1
+```

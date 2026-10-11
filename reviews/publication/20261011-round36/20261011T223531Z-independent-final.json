@@ -1,0 +1,1412 @@
+{
+  "timestamp_utc": "2026-10-11T22:35:31.224234+00:00",
+  "reviewer": "Codex /root/round27_eaf_slag; GPT-6; codex",
+  "verdict": "pass",
+  "findings": [
+    {
+      "id": "F1",
+      "issue_key": "CMMMech.round36.closeout-receipt-binding",
+      "severity": "minor",
+      "status": "resolved",
+      "github_issue": "https://github.com/CultureBotAI/CMMMech/issues/121",
+      "github_state_at_review": "OPEN; intended PR closure after verified merge",
+      "predecessor": "reviews/publication/20261011-round36/20261011T223038Z-closeout-initial.json",
+      "predecessor_sha256": "04b44d3cf93936b17384362e27d13aba048ef4b950b93f518022a3115ce56509",
+      "old_helper_sha256": "94bebb5f64937c6c3696f2cafa6124087c6c58129313853a684c75d21b9339f8",
+      "corrected_helper_sha256": "cfb840adece6dd3569b71b3f88c25c8f467bf73671950b75dd12d4f35634e67f",
+      "pure_guard_sha256": "4e2d19e83aa714fa69a652bd10a0034eb50f4de9f988aa477ea06722dfd577da",
+      "tests": {
+        "receipt": "/private/tmp/cmm-round36-closeout-guard-tests.json",
+        "sha256": "31565151c16de396adf6f0bf2336aaf94fda52f34fad92b02af3f5caae75f4d6",
+        "cases": 26,
+        "basis": "One actual prior-success fixture and 25 adverse mutations; code and receipt independently inspected, all pinned files rehashed. No POST or test rerun by this audit."
+      },
+      "correction": "The future closeout now verifies exact topic/base/tree/merge bindings, every printed cleanup/preservation flag and inventory count, successful command identity and the SHA-bound actual just-check log section before posting. Test counts are derived from the actual log. Scientific records were unchanged."
+    }
+  ],
+  "unresolved_findings": [],
+  "trusted_base": "1ef6fdde620a4053fbfff99c51065082dce32d39",
+  "worktree": "/private/tmp/CMMMech-expansion-round36-20261011",
+  "authorship": "Authored uramphite record/history/dossier. Root independently reviewed uramphite science. This audit checks publication accounting and does not masquerade as an independent scientific review of that record.",
+  "scope": "Final local uncommitted publication state, exact record/history/dossier/review hashes, current scientific coverage and durable bases, actual gate receipts, documentation claims/links and fifteen publication/support scripts, including the corrected closeout guard and its regression tests.",
+  "counts": {
+    "record_count": 200,
+    "history_count": 231,
+    "structured_review_count": 235,
+    "review_base_count": 37,
+    "covered_records": 200
+  },
+  "tests": {
+    "passed": 308,
+    "skipped": 3,
+    "seconds": "134.59"
+  },
+  "record_reviews": [
+    {
+      "record": "data/records/moolooite.yaml",
+      "sha256": "72144841927e02ab54655961f051db7b7d013a36dec5ca4274602bc7e0c03777",
+      "review": "reviews/structured/20261011T223107Z-moolooite-round36-independent/review.yaml",
+      "reviewer": {
+        "identity": "Codex /root/round27_packaging",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Moolooite was curated by /root/round27_superalloy. Reviewer researched autunite-family sources only and did not edit this record, sidecar or dossier. Shared worktree and curator-acquired original artifacts disclosed; all accepted primary evidence independently inspected."
+      },
+      "verdict": "pass_with_limitations"
+    },
+    {
+      "record": "data/records/uramphite.yaml",
+      "sha256": "9a75ded70935425b4d938cb62081a28b767a9df66b7c22a8734df54912a014eb",
+      "review": "reviews/structured/20261011T222903Z-uramphite-round36-independent/review.yaml",
+      "reviewer": {
+        "identity": "Codex /root",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Authored by /root/round27_eaf_slag; root did not author/edit uramphite. Native input capture preceded judgment. Shared acquired originals and prior work with the same Khijniak2005 study for ningyoite are disclosed; full primary and original figures independently reread for this distinct starting-phase target."
+      },
+      "verdict": "pass_with_limitations"
+    }
+  ],
+  "bases": [
+    {
+      "revision": "075c1ca032b68162eb8350b7e8d9bfe9530ca143",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "09c15cbfb7699e40ae4648b6b414784a00b488db",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "14ceff0da3e19d6d36426d33f4cf577b8e64760f",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "1e52585c9019a32d37f959e0dafa00ae431f28c4",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "1ef6fdde620a4053fbfff99c51065082dce32d39",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "268498d0a9748f3a18955e35f175f67115f88b97",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "26cb0688effb2f71e4a570c416f6f43ff858c5ab",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "38cef46aabbcb2b49536ed8c265c63646ff1da3d",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "3f1350b24b4f6248ed2e17caade936c15af9be93",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "4504ab1c5a005ea31e65318c3b3f206d6fbf44ed",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "55fd1947e80f67ec91dfe63e7bf15f72d822cefb",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "5892e9a0aca54ef3f45d2ce87a6dcfb80d1569da",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "58e7aef16a9643438cf621fa9fb402e9d325dc65",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "5b4a463f700bceb441f7b669f58a5e60823d2841",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "6ea63a8c98e22fd3c6794b17c77f7909c3b851a2",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "7629ab50846229c87987d7fa0ac12389212bb70f",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "76cd81d310a6ccb4cf7bdebcc61be050d0863222",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "80899a3d3ea5c0f7c5d54f1b3583e43768e92767",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "8f8abedfce68f932e4f6f333a5470ee5f3897ff4",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "930ce995269f0ded5df009eb5916162971eb1f58",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "9f37042ef36b8f20ebf44f8228f6a4b5d27e00c3",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "9fa187ff5a455f495cfa2635e60c413b6763370d",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "a1d46ce5ca9958ff4cbd8a3b6aaf83bc8710ae0c",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "a2e2c82f11d97982f0cc1ae6be452a42b24a0ff0",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "b19103bb393096e405bbecd2808a1aa0e01bb200",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "b714ce2bd8050d5e19ed9ca072460ba2b8154c3b",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "baedff25eafad1516270916a651af6754ffa5996",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "bee4f42bb622ae0a0999f8f3e3dac31f14282278",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "c081a749cd63feafcc25414f5ad006d1f78f1e36",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "c0adc2c0763e1515ed07dc712b024974d98fb342",
+      "main_ancestor": false,
+      "retained_tag": "refs/tags/review-base/cmm-source-survey-20261009"
+    },
+    {
+      "revision": "c4b2a6c21a2ff54d1fdd3965ac98a6d90effba7a",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "d09a5611767d94fd196393b31d44cb8cf6657f7f",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "d20fc229fe61a08e36a2889d89e0f4ce7c06c4a9",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "d7183efeb2e528d6d88f0b69da41323642b8fa85",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "e305dcc67e526e585349c60f849567f4c2bfc835",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "e98bdfaba62869faf5112ef281a9371d2a04d78e",
+      "main_ancestor": true,
+      "retained_tag": null
+    },
+    {
+      "revision": "f83cf867a38c470b4347f721d9ea9370c3019eaf",
+      "main_ancestor": true,
+      "retained_tag": null
+    }
+  ],
+  "source_artifact_checks": [
+    {
+      "path": "research/sources/round36-meta-autunite/20261011T222742Z-source-deferral.json",
+      "sha256": "d6b69a5c2ab6b6f641c70c74b6c23c76d41ee0b36adf47e36d3645fc3c9531c5",
+      "artifact_entries_verified": 32
+    },
+    {
+      "path": "research/sources/round36-moolooite/20261011T222217Z-source-investigation.json",
+      "sha256": "6d6d61980c40a1ce2de47feae7ba42012e32df0aeb3e5d03a229f6b48693fb8b",
+      "artifact_entries_verified": 39
+    },
+    {
+      "path": "research/sources/round36-uramphite/20261011T222303Z-source-investigation.json",
+      "sha256": "f16635417f3adcf729010719f30fb787af6be446c0645f7e10537d8b0887952c",
+      "artifact_entries_verified": 28
+    }
+  ],
+  "source_artifact_entry_total": 99,
+  "helper_sha256": {
+    "/private/tmp/cmm-round36-commit.py": "eda56f64df5c0bb7a817c5ec7b0f9f09b86cc56096ac303e6403d15401f6efd3",
+    "/private/tmp/cmm-round36-build-report.py": "e27040e87dc559c532c55e0b29ffd085b8eeabefcf992ac9eac27fcab004b4f4",
+    "/private/tmp/cmm-round36-build-package.py": "efe146c8779925e8dd01ed46343289fd7ae847f47864b45d989c9d525abbd1a9",
+    "/private/tmp/cmm-round36-publish.py": "7d3ea845d6bd0b14d5645399585f8b598e5f6ffd3000335774259e41a8d1d467",
+    "/private/tmp/cmm-round36-enqueue.py": "c4faadc6ff242616685c6799f4c1d151f9e90307d74e194834d0c8826e96c89f",
+    "/private/tmp/cmm-round36-cleanup.py": "1918d847a9dab254b42020f0338ce77d200a7680bb96513dd444d8564a0737c5",
+    "/private/tmp/cmm-round36-sync-main.py": "23fb72778e5e70e78010b4c9a22ddd08966d40374216adc3409350222f3907dc",
+    "/private/tmp/cmm-round36-isolated-verification.py": "e70b9c942ada86a81c9345be8550282b15b47dc7bd8012987b5b9a2ee5bf5e69",
+    "/private/tmp/cmm-round36-isolated-coverage.py": "ad4fe514246ad7acfbe546710d7244801eaf85208ca6cbf3af98bf2cac5aeef4",
+    "/private/tmp/cmm-round36-hosted-audit.py": "1d22b9a03f82fd05f2d12221410d288d3bf2aabbb5a089d1bc585e30fe57a24f",
+    "/private/tmp/cmm-round36-final-gates.py": "720a0c07908c9da628434279acef9308249ca292a267e093f9189ed5a11fc3ec",
+    "/private/tmp/cmm-round36-review-check.py": "8a961204ee19b6409f0e7b2744d002d742f2daeae54013e3ca9c219b29016afc",
+    "/private/tmp/cmm-round36-closeout.py": "cfb840adece6dd3569b71b3f88c25c8f467bf73671950b75dd12d4f35634e67f",
+    "/private/tmp/cmm-round36-closeout-guards.py": "4e2d19e83aa714fa69a652bd10a0034eb50f4de9f988aa477ea06722dfd577da",
+    "/private/tmp/cmm-round36-test-closeout-guards.py": "1d7940fe0dcac073fcaac48feadd92d19bb02d80676bbb19ef2e45d4dc6eab05"
+  },
+  "receipt_sha256": {
+    "/private/tmp/cmm-round36-final-terminal.json": "61fef8e7b1a9008a67336d55620a637b393552bb701869ed2b91deaa1627fd93",
+    "/private/tmp/cmm-round36-review-check-terminal.json": "bcdf71047e6ccb3af688731e4b7ee860c895a9c954225bc33818c02472ed156b",
+    "/private/tmp/cmm-round36-local-coverage.json": "a1208b413b8bdb104f4dff39cb3c4017f5e3c78072e22145d915bf0cb4093665",
+    "/private/tmp/cmm-round36-preservation-before.json": "0fc8fb78cb582ad13e5c7f459382f1651d2d45c71a4262c469a5c48bf129f0a0",
+    "/private/tmp/cmm-round36-baseline-reuse.json": "a53124eaab73d0704aec7e97385a11479d804d8f2695fe3aa987b659feabe462",
+    "/private/tmp/cmm-round36-governance-live.json": "9a10ea710640c1ca7fef2a455557ac5b99a3c4a0eead6f7fa994c082aacdb0ce",
+    "/private/tmp/cmm-round36-helper-config.json": "dd1e6f0acfdf1bcd2f9d0a4375fd4acfaf2fdd36f0f71f3497044151ece71ffc",
+    "/private/tmp/cmm-round36-remote-start.json": "bd6e5e3df7d24d817a342662c6424d350bda1e97a95733f9f03faf41976bb582",
+    "/private/tmp/cmm-round36-source-issue.json": "78765a32c1a5e370dcdf83c0b0943e7cad223279d46cc1f51fde89c34f011093",
+    "/private/tmp/cmm-round36-closeout-guard-issue.json": "466aa30bc763950608ffb374564c0099ba61cd2d3d62b7636338b291bd473164",
+    "/private/tmp/cmm-round36-closeout-guard-tests.json": "31565151c16de396adf6f0bf2336aaf94fda52f34fad92b02af3f5caae75f4d6"
+  },
+  "reviewed_document_sha256": {
+    "README.md": "d8590c36f6a66414c4abc551de4b6477595ee453a3222940041013592f80ab1f",
+    "research/ingests/round36-20261011-publication.md": "7c11fd8aa286abeb40db880c1991b2d35dcbb254c307dd1c128cd6c384e85072",
+    "research/ingests/round36-frontier-20261011.md": "f7e55246b4f1a87e55f5fff1f569b9ef7616195c5bff02326971a1724df9ea73",
+    "research/ingests/round36-frontier-20261011.json": "5a5f58974abbbc68f08b94701b69fdd6a53c82cc47b7aae6af043ba01ba7625e"
+  },
+  "local_links": [
+    {
+      "from": "README.md",
+      "target": "data/records/cobalt.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/neodymium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/palladium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/manganese.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/lithium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/uranium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/vanadium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/copper.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/nickel.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/tellurium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/zinc.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/silver.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/gallium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/arsenic.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/cadmium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/chromium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/platinum.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/selenium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/fluorescent-lamp-phosphor.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/cobaltite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/monazite-nd.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/antimony.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/phosphorus.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/cerium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/chalcopyrite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/sphalerite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/gaas-production-hydroxide-sludge.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/iron.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/germanium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/lanthanum.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/dysprosium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/magnesium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/aluminium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/indium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/molybdenum.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/tungsten.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/europium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/samarium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/terbium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/holmium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/erbium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/gadolinium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/yttrium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/ytterbium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/scandium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/praseodymium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/lead.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/bismuth.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/cesium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/strontium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/ruthenium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/rhodium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/silicon.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/tin.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/boron.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/fluorine.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/niobium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/tantalum.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/titanium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/zirconium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/natural-graphite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/beryllium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/hafnium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/helium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/iridium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/lutetium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/osmium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/promethium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/rhenium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/rubidium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/thulium.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/alumina.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/bauxite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/high-purity-alumina.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/high-purity-iron-ore.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/borates.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/baryte.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/fluorspar.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/feldspar.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/magnesite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/phosphate-rock.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/potash.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/sodium-compounds.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/magnesium-metal.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/silicon-metal.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/titanium-metal.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/coking-coal.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/graphite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/platinum-group-commodities.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/rare-earth-element-commodities.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/heavy-rare-earth-elements.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/light-rare-earth-elements.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/rare-earth-permanent-magnet-materials.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/pentlandite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/jadarite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/spodumene.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/colemanite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/battery-black-mass.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/bauxite-residue.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/phosphogypsum.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/metallurgical-coal.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/scheelite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/pyromorphite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/struvite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/ferrihydrite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/magnetite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/pyrolusite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/lithium-carbonate.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/lithium-hydroxide-monohydrate.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/nickel-sulfate-hexahydrate.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/manganese-sulfate-monohydrate.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/ferroboron.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/graphite-anode-material.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/spent-fluid-catalytic-cracking-catalyst.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/coal-fly-ash.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/municipal-waste-incineration-ash.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/sewage-sludge-incineration-ash.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/spent-hydrocracking-catalyst.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/spent-ndfeb-magnets.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/dittmarite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/glushinskite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/lithium-bearing-geothermal-brine.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/forsterite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/talc.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/lizardite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/vivianite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/siderite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/oil-and-gas-produced-water.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/enstatite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/olivine-group.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/biotite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/reverse-osmosis-concentrate.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/dunite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/hematite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/potassium-feldspar.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/spent-hydrodesulfurization-catalyst.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/electrolytic-manganese-metal.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/electrolytic-manganese-dioxide.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/manganese-ore.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/iron-ore-tailings.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/electrolytic-manganese-residue.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/automotive-wastewater-treatment-sludge.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/spent-vegetable-oil-hydrogenation-catalyst.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/copper-flotation-tailings.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/chrysotile-asbestos-tailings.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/goethite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/nickel-laterite-ore.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/polymetallic-nodules.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/waste-printed-circuit-boards.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/cobalt-rich-ferromanganese-crusts.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/rare-earth-rich-deep-sea-mud.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/boron-ore-concentration-tailings.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/seafloor-massive-sulfides.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/end-of-life-crystalline-silicon-photovoltaic-modules.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/waste-liquid-crystal-display-panels.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/spent-automotive-three-way-catalyst.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/spent-sulfuric-acid-production-catalyst.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/copper-smelter-slag.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/coal-mine-drainage-treatment-solids.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/spent-nickel-metal-hydride-batteries.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/blast-furnace-cast-house-dust.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/heavy-fuel-oil-combustion-ash.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/discarded-led-lamps.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/biogas-desulfurization-sulfur-residue.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/spent-zinc-manganese-button-cell-batteries.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/electric-arc-furnace-dust.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/basic-oxygen-furnace-steel-slag.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/pharmaceutical-blister-packaging-waste.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/beverage-carton-hydropulping-reject.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/basic-oxygen-furnace-steelmaking-dust.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/electroformed-copper-silver-manufacturing-scrap.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/metal-grinding-sludge.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/metalliferous-black-shale.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/ground-waste-tire-rubber.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/oxidized-zinc-ore.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/bastnaesite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/basalt.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/chromite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/pyrrhotite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/tungsten-skarn-tailings.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/kaolin.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/kaolin-mine-waste.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/stibnite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/bornite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/arsenopyrite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/molybdenite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/chromite-beneficiation-tailings.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/pyrite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/chalcocite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/covellite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/galena.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/greigite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/mackinawite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/uraninite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/anglesite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/jarosite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/ningyoite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/schwertmannite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/uramphite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "data/records/moolooite.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/pilot-session.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/20261009-priorities.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/20261009T054507Z-followup.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/sources/expansion-authorities/20261011T040103Z.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round2-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round3-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round4-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round5-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round6-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round7-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round8-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round9-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round10-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round11-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round12-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round13-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round14-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round15-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round16-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round17-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round18-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round19-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round20-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round21-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round22-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round23-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round24-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round25-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round26-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round27-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round28-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round29-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round30-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round31-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round32-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round33-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round34-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round35-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round36-20261011-publication.md"
+    },
+    {
+      "from": "README.md",
+      "target": "research/ingests/round36-frontier-20261011.md"
+    },
+    {
+      "from": "README.md",
+      "target": "reviews/structured/"
+    },
+    {
+      "from": "README.md",
+      "target": "reviews/records/"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/records.md#quantitative-source-observations"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/records.md"
+    },
+    {
+      "from": "README.md",
+      "target": "src/cmmmech/schema/cmmmech.yaml"
+    },
+    {
+      "from": "README.md",
+      "target": ".claude/skills/cmmmech-add-record/SKILL.md"
+    },
+    {
+      "from": "README.md",
+      "target": ".claude/skills/review-record/SKILL.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/record-reviews.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/record-review-profile.md#publishing-through-the-squash-queue"
+    },
+    {
+      "from": "README.md",
+      "target": ".claude/skills/cmmmech-discover-sources/SKILL.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/records.md#append-only-curation-history"
+    },
+    {
+      "from": "README.md",
+      "target": "reviews/integration/queue-20261008/"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/integration-status.md"
+    },
+    {
+      "from": "README.md",
+      "target": "LICENSE"
+    },
+    {
+      "from": "README.md",
+      "target": "LICENSE-CODE"
+    },
+    {
+      "from": "README.md",
+      "target": "LICENSE-DATA"
+    },
+    {
+      "from": "research/ingests/round36-20261011-publication.md",
+      "target": "../../data/records/moolooite.yaml"
+    },
+    {
+      "from": "research/ingests/round36-20261011-publication.md",
+      "target": "../../reviews/structured/20261011T223107Z-moolooite-round36-independent/review.md"
+    },
+    {
+      "from": "research/ingests/round36-20261011-publication.md",
+      "target": "../../reviews/structured/20261011T223107Z-moolooite-round36-independent/review.yaml"
+    },
+    {
+      "from": "research/ingests/round36-20261011-publication.md",
+      "target": "../../data/records/uramphite.yaml"
+    },
+    {
+      "from": "research/ingests/round36-20261011-publication.md",
+      "target": "../../reviews/structured/20261011T222903Z-uramphite-round36-independent/review.md"
+    },
+    {
+      "from": "research/ingests/round36-20261011-publication.md",
+      "target": "../../reviews/structured/20261011T222903Z-uramphite-round36-independent/review.yaml"
+    },
+    {
+      "from": "research/ingests/round36-20261011-publication.md",
+      "target": "round36-frontier-20261011.json"
+    },
+    {
+      "from": "research/ingests/round36-20261011-publication.md",
+      "target": "round36-frontier-20261011.md"
+    },
+    {
+      "from": "research/ingests/round36-frontier-20261011.md",
+      "target": "../sources/round36-meta-autunite/20261011T222742Z-source-deferral.md"
+    },
+    {
+      "from": "research/ingests/round36-frontier-20261011.md",
+      "target": "round35-frontier-20261011.md"
+    }
+  ],
+  "preservation_inventory_baseline": {
+    "main": 7187,
+    "skill": 8
+  },
+  "governance_receipt": {
+    "timestamp_utc": "2026-10-11T22:22:36.149422+00:00",
+    "ruleset_url": "https://github.com/CultureBotAI/CMMMech/rules/24692449",
+    "ruleset_api": "https://api.github.com/repos/CultureBotAI/CMMMech/rulesets/24692449",
+    "effective_main_api": "https://api.github.com/repos/CultureBotAI/CMMMech/rules/branches/main",
+    "enforcement": "active",
+    "merge_method": "SQUASH",
+    "grouping_strategy": "ALLGREEN",
+    "required_context": "validate-strict",
+    "bypass_actors": [],
+    "retained_tag_remote_receipt": {
+      "command": [
+        "git",
+        "ls-remote",
+        "origin",
+        "refs/tags/review-base/cmm-source-survey-20261009",
+        "refs/tags/review-base/cmm-source-survey-20261009^{}"
+      ],
+      "exit_code": 0,
+      "result": "fc4040c3abcd28f0a9cc52467e308100144ad1fd\trefs/tags/review-base/cmm-source-survey-20261009\nc0adc2c0763e1515ed07dc712b024974d98fb342\trefs/tags/review-base/cmm-source-survey-20261009^{}\n"
+    }
+  },
+  "limitations": [
+    "Commit, exact committed-tree preflight, PR, hosted checks, native queue merge, branch deletion and fresh postmerge validation are future runtime operations; this audit claims none completed.",
+    "Minor operational finding F1/#121 is corrected and independently verified; its issue remains open pending PR merge. No corrective scientific-record finding was identified. Source issues 103/104/120 remain unresolved acquisition/reconciliation work; new issue120 tracks the source-only meta-autunite figure gap.",
+    "Raw artifact entries include reused evidence, metadata, rendered media and checks, not independent studies.",
+    "Governance live check verifies the recorded queue/tag state, not credentials or the entire fleet. Installed admission/history/vendored/shepherd claims refer to preserved repository integration evidence.",
+    "This publication assessment is not a new scientific review of every historical record or a fresh reanalysis of every raw figure."
+  ]
+}

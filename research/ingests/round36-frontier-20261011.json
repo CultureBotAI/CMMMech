@@ -1,0 +1,173 @@
+{
+  "recorded_at": "2026-10-11T22:34:28.136274+00:00",
+  "base": "1ef6fdde620a4053fbfff99c51065082dce32d39",
+  "branch": "curate/cmm-expansion-round36-20261011",
+  "counts": {
+    "record_count": 200,
+    "history_count": 231,
+    "structured_review_count": 235,
+    "review_base_count": 37,
+    "covered_records": 200
+  },
+  "records": [
+    {
+      "slug": "moolooite",
+      "record": "data/records/moolooite.yaml",
+      "record_sha256": "72144841927e02ab54655961f051db7b7d013a36dec5ca4274602bc7e0c03777",
+      "histories": [
+        {
+          "path": "history/records/moolooite/2026-10-11T222034Z-codex-1ba2ba.yaml",
+          "sha256": "48cd5d3518374edb4a8a13899e5b6e68c835daa3cc3d372d01918e5801602df5"
+        }
+      ],
+      "review": "reviews/structured/20261011T223107Z-moolooite-round36-independent/review.yaml",
+      "review_md": "reviews/structured/20261011T223107Z-moolooite-round36-independent/review.md",
+      "review_sha256": "ce79d75d4f9c7e76f074453f9f5a1544afeb637002ab00917b92e9dde298953f",
+      "review_md_sha256": "07f43f974b12f754fdecae129c07ecbb4d9c8180aad8b05be933a72f5cb17002",
+      "reviewer": {
+        "identity": "Codex /root/round27_packaging",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Moolooite was curated by /root/round27_superalloy. Reviewer researched autunite-family sources only and did not edit this record, sidecar or dossier. Shared worktree and curator-acquired original artifacts disclosed; all accepted primary evidence independently inspected."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [],
+      "dossiers": [
+        {
+          "path": "research/sources/round36-moolooite/20261011T222217Z-source-investigation.json",
+          "sha256": "6d6d61980c40a1ce2de47feae7ba42012e32df0aeb3e5d03a229f6b48693fb8b"
+        },
+        {
+          "path": "research/sources/round36-moolooite/20261011T222217Z-source-investigation.md",
+          "sha256": "8ea9f53af1ba9dab96ea01283ef76d832369835c1c4244e7d7fba8d56f7afc6e"
+        }
+      ]
+    },
+    {
+      "slug": "uramphite",
+      "record": "data/records/uramphite.yaml",
+      "record_sha256": "9a75ded70935425b4d938cb62081a28b767a9df66b7c22a8734df54912a014eb",
+      "histories": [
+        {
+          "path": "history/records/uramphite/2026-10-11T221946Z-codex-45fbfb.yaml",
+          "sha256": "7cd7271813793147abfbf3a59b8737ba7e3975302392e028ae652528e842edbd"
+        }
+      ],
+      "review": "reviews/structured/20261011T222903Z-uramphite-round36-independent/review.yaml",
+      "review_md": "reviews/structured/20261011T222903Z-uramphite-round36-independent/review.md",
+      "review_sha256": "d7dcb38031a4c8b8f1daae2650c87fe4d1c93a762bcb67aa7387a02d78ef9242",
+      "review_md_sha256": "e4aab4b83e583a5f0d873c318bfac7fd6064d09f257ce7c9ec0f561ed3ea8e3d",
+      "reviewer": {
+        "identity": "Codex /root",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Authored by /root/round27_eaf_slag; root did not author/edit uramphite. Native input capture preceded judgment. Shared acquired originals and prior work with the same Khijniak2005 study for ningyoite are disclosed; full primary and original figures independently reread for this distinct starting-phase target."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [],
+      "dossiers": [
+        {
+          "path": "research/sources/round36-uramphite/20261011T222303Z-source-investigation.json",
+          "sha256": "f16635417f3adcf729010719f30fb787af6be446c0645f7e10537d8b0887952c"
+        },
+        {
+          "path": "research/sources/round36-uramphite/20261011T222303Z-source-investigation.md",
+          "sha256": "cc8dc47f0a03446aabfd2edae56d6086d0af93b8740c11f06246dbf6e9d0759f"
+        }
+      ]
+    }
+  ],
+  "gate_receipts": {
+    "started_at": "2026-10-11T22:26:17.666494+00:00",
+    "base": "1ef6fdde620a4053fbfff99c51065082dce32d39",
+    "commands": [
+      {
+        "name": "batch",
+        "command": [
+          "just",
+          "check"
+        ],
+        "started_at": "2026-10-11T22:26:17.666977+00:00",
+        "finished_at": "2026-10-11T22:28:44.153711+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round36-final-batch.log",
+        "sha256": "cac731be567d421580f78dafc063be4b2ca406ca450d98bb15c72eab76e37b57"
+      },
+      {
+        "name": "nonempty",
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate",
+          "--require-records"
+        ],
+        "started_at": "2026-10-11T22:28:44.154403+00:00",
+        "finished_at": "2026-10-11T22:28:49.539380+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round36-final-nonempty.log",
+        "sha256": "0ed97773d44e6b06c1b7964ea58e27e8370bf048dd0a7c0384cf9f7681603b10"
+      },
+      {
+        "name": "history",
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate-history",
+          "--base",
+          "1ef6fdde620a4053fbfff99c51065082dce32d39"
+        ],
+        "started_at": "2026-10-11T22:28:49.540098+00:00",
+        "finished_at": "2026-10-11T22:28:53.684747+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round36-final-history.log",
+        "sha256": "75168340cd2362ddc1a2cc07d98f1a645893ffaa1d3d3f678ad3141c78cf40c4"
+      }
+    ],
+    "exit_code": 0,
+    "finished_at": "2026-10-11T22:28:53.685136+00:00"
+  },
+  "review_check": {
+    "command": [
+      "just",
+      "review-check",
+      "--base",
+      "1ef6fdde620a4053fbfff99c51065082dce32d39",
+      "--require-reviews"
+    ],
+    "started_at": "2026-10-11T22:32:03.489527+00:00",
+    "finished_at": "2026-10-11T22:34:12.530989+00:00",
+    "exit_code": 0,
+    "log": "/private/tmp/cmm-round36-review-check.log",
+    "sha256": "a6e9265442b2025832b0465a748ef9986c61c96e257cba1214d7fe272df46ee0"
+  },
+  "baseline_reuse": {
+    "path": "/private/tmp/cmm-round36-baseline-reuse.json",
+    "sha256": "a53124eaab73d0704aec7e97385a11479d804d8f2695fe3aa987b659feabe462",
+    "statement": "Same unchanged base/tree freshly tested after round35; no new baseline execution claimed."
+  },
+  "corrected_review_issues": [
+    121
+  ],
+  "limitations": "Laboratory observations and source-specific phase/causal/measurement limits remain in each record. Source frontier is not exhausted.",
+  "deferred_sources": [
+    {
+      "path": "research/sources/round36-meta-autunite/20261011T222742Z-source-deferral.json",
+      "sha256": "d6b69a5c2ab6b6f641c70c74b6c23c76d41ee0b36adf47e36d3645fc3c9531c5"
+    },
+    {
+      "path": "research/sources/round36-meta-autunite/20261011T222742Z-source-deferral.md",
+      "sha256": "42913e2460f62d4342d46144e00e49d4e9eddf0ca411d99c809cce273deb3ada"
+    }
+  ],
+  "open_source_issues": [
+    103,
+    104,
+    120
+  ]
+}
