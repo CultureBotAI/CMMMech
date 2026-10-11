@@ -1,0 +1,57 @@
+{
+  "scope": "Pre-merge validation of PR #19 skill instructions; no scientific records changed",
+  "base": "6a974c54d2c6e834d3514a9ada6272edc6a2aa74",
+  "checked_files": {
+    ".claude/skills/cmmmech-add-record/SKILL.md": "c9b05bae67a8d30fe27f1f501f4240a36c599d14cfefac0175e79d71ef0ac889",
+    ".claude/skills/cmmmech-add-record/agents/openai.yaml": "7825374cafeda8e12eb45593ac942945192caa517c19ed981a9589c4e074d5cc",
+    ".claude/skills/cmmmech-discover-sources/SKILL.md": "f05618c116fb1e58f7ea01d65a8bfd53306d35569240f1b8fe54504d4dcfb549",
+    "CLAUDE.md": "5a947ff9de7e825362e1e0f8a8c70470db09cfd8a98bbc7a200aeef8ec427d7f",
+    "README.md": "6c3b4d65b6b8aa38011b767e76fc4e7b278b3c409fc3bbd04e8c384e2ef703f2"
+  },
+  "checks": [
+    {
+      "command": "just check",
+      "result": "passed",
+      "tests_passed": 298,
+      "tests_skipped": 3,
+      "records_valid": 10,
+      "history_valid": 19,
+      "scope": "Original skill revision f868565; only no-op wording and review receipts added afterward"
+    },
+    {
+      "command": "uv run --locked cmmmech validate --require-records",
+      "result": "passed",
+      "records_valid": 10
+    },
+    {
+      "command": "just review-check --base 6a974c54d2c6e834d3514a9ada6272edc6a2aa74 --require-reviews",
+      "result": "passed",
+      "reviews_valid": 12
+    },
+    {
+      "command": "bash scripts/check_vendored_sync.sh",
+      "result": "passed",
+      "governed_artifacts": 22
+    },
+    {
+      "command": "uv run --locked --extra dev pytest -q tests/test_skill_frontmatter.py",
+      "result": "passed",
+      "tests_passed": 30,
+      "tests_skipped": 3,
+      "scope": "Final no-op wording"
+    },
+    {
+      "command": "quick_validate.py .claude/skills/cmmmech-add-record",
+      "result": "passed",
+      "scope": "Final no-op wording"
+    },
+    {
+      "command": "git diff --check",
+      "result": "passed"
+    }
+  ],
+  "limitations": [
+    "No fresh scientific review of unchanged corpus was performed.",
+    "Publication began in an independent clone because the original checkout Git metadata returned Operation not permitted. The original draft was preserved."
+  ]
+}

@@ -140,6 +140,7 @@ Default writes are the local assessment and requested research artifacts. Do not
 silently change records, implement importers, contact authors, publish issues or
 PRs, or alter fleet/governance configuration. Follow the user's existing task
 authorization if it explicitly includes those actions; this skill adds none.
-If curation is also requested, use `docs/records.md` and the repository's
-`.claude/skills/review-record/SKILL.md` for validation and independent timestamped
-record reviews. A discovery report cannot substitute for that acceptance review.
+If curation is also requested, use the repository's
+`.claude/skills/cmmmech-add-record/SKILL.md` to curate the handoff, following
+`docs/records.md` and independent timestamped record reviews. A discovery report
+cannot substitute for that acceptance review.

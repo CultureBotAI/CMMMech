@@ -1,0 +1,64 @@
+[
+  {
+    "case": "identity only without criticality or mechanisms",
+    "expected_valid": true,
+    "errors": []
+  },
+  {
+    "case": "ion rejected as a root schema kind",
+    "expected_valid": false,
+    "errors": [
+      "material_kind: 'ion' is not one of ['element', 'mineral', 'mineral_group', 'commodity', 'secondary_resource']"
+    ]
+  },
+  {
+    "case": "inactive biomass can use microbial true",
+    "expected_valid": true,
+    "errors": []
+  },
+  {
+    "case": "organisms rejected without microbial true",
+    "expected_valid": false,
+    "errors": [
+      "mechanisms/0: organisms require microbial: true"
+    ]
+  },
+  {
+    "case": "negative source limit with abiotic arm under microbial mechanism",
+    "expected_valid": true,
+    "errors": []
+  },
+  {
+    "case": "censored value cannot also be a zero measurement",
+    "expected_valid": false,
+    "errors": [
+      "mechanisms/0/observations/0: below_detection forbids value"
+    ]
+  },
+  {
+    "case": "mg/L needs another contract and is rejected",
+    "expected_valid": false,
+    "errors": [
+      "mechanisms/0/observations/0/unit: 'mg/L' is not one of ['mg/kg']"
+    ]
+  },
+  {
+    "case": "duplicate source cell rejected despite distinct observation ID",
+    "expected_valid": false,
+    "errors": [
+      "mechanisms/0/observations/1: duplicate source concentration cell"
+    ]
+  },
+  {
+    "case": "sample date cannot follow analysis date",
+    "expected_valid": false,
+    "errors": [
+      "mechanisms/0/observations/0/sampled_on: cannot be after analyzed_on"
+    ]
+  },
+  {
+    "case": "full corpus catches duplicate record IDs",
+    "exit_code": 1,
+    "output": "ERROR /private/var/folders/lm/hg0p5znd1hd5yc5lml35j6lh0000gn/T/cmmmech-boundary-gsio0f2w/b.yaml: duplicate record id cmmmech:boundary-fixture; also in /private/var/folders/lm/hg0p5znd1hd5yc5lml35j6lh0000gn/T/cmmmech-boundary-gsio0f2w/a.yaml\nChecked 2 record(s); 1 failed.\n"
+  }
+]
