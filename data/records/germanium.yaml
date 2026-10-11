@@ -1,0 +1,131 @@
+id: cmmmech:germanium
+name: Germanium
+material_kind: element
+description: >-
+  Germanium (Ge), grounded by the neutral-atom ChEBI identifier. This element
+  is distinct from the GeO2 reagent and dissolved germanium species used in
+  the experiments, germanium-bearing minerals and coal wastes. The US 2025
+  list names the germanium commodity; its designation is mapped to this
+  element without extending it to every germanium-bearing material.
+identifiers:
+  - id: CHEBI:30441
+    label: germanium atom
+sources:
+  - id: chebi_germanium
+    title: ChEBI CHEBI:30441 — germanium atom; Ge, net charge zero
+    url: https://www.ebi.ac.uk/chebi/CHEBI:30441
+    accessed_on: '2026-10-11'
+  - id: usgs2025
+    title: >-
+      USGS (2025). Final 2025 List of Critical Minerals. Federal Register
+      90:50494-50497, document 2025-19813; Germanium row in final table.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: ncbi_putida
+    title: NCBI Taxonomy 303 — Pseudomonas putida, species rank
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=303&mode=Info
+    accessed_on: '2026-10-11'
+  - id: chmielowski1986
+    title: >-
+      Chmielowski J and Kłapcińska B (1986). Bioaccumulation of Germanium by
+      Pseudomonas putida in the Presence of Two Selected Substrates.
+      Applied and Environmental Microbiology 51:1099-1103.
+      doi:10.1128/aem.51.5.1099-1103.1986; methods and Figures 1-4.
+    url: https://doi.org/10.1128/aem.51.5.1099-1103.1986
+    accessed_on: '2026-10-11'
+  - id: klapcinska1986
+    title: >-
+      Kłapcińska B and Chmielowski J (1986). Binding of Germanium to
+      Pseudomonas putida Cells. Applied and Environmental Microbiology
+      51:1144-1147. doi:10.1128/aem.51.5.1144-1147.1986;
+      methods, Table 1 and Figures 1-3.
+    url: https://doi.org/10.1128/aem.51.5.1144-1147.1986
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States of America
+    list_name: USGS Final List of Critical Minerals
+    edition: '2025; Federal Register 90:50494-50497; published 7 November 2025'
+    classification: critical
+    source_ref: usgs2025
+mechanisms:
+  - id: putida_catechol_associated_accumulation
+    name: Catechol-associated germanium accumulation by Pseudomonas putida
+    process: other
+    description: >-
+      Living ATCC 33015 cells accumulated germanium from GeO2-supplemented
+      laboratory media. Catechol-associated accumulation included an
+      intracellular component alongside envelope binding. An inducible
+      catechol-transport explanation remains proposed. The two papers are
+      companion studies from the same laboratory, not independent replication.
+      Bioaccumulation is represented as other rather than isolated-product recovery.
+    context: >-
+      NCBITaxon:303 identifies the species, not ATCC 33015. The kinetic study
+      used acetate-grown inocula, aerated mineral medium at pH 7.3, 2 mM GeO2,
+      and 4 mM catechol or 5/10 mM acetate; cultivation used 30 degrees C and
+      reciprocating shaking. Washed, sonicated pellets were measured by
+      71Ge scintillation, normalized to dry cell mass, over approximately
+      15 hours. The separate localization/fractionation study used 10 mM
+      GeO2, 4 mM catechol or 10 mM acetate, and 30 degrees C shaking;
+      its fractionation assay used 300 mL with about 0.15 g initial dry
+      cells and 12 hours. Cells were washed with distilled water before
+      sonication, differential centrifugation and radiometric fraction analysis.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:303
+        label: Pseudomonas putida
+    evidence:
+      - source_ref: chmielowski1986
+        supports: support
+        explanation: >-
+          Pages 1100-1103 and Figures 1-4 report approximately 22 micromol
+          Ge/g dry cells with catechol versus an approximately 10 micromol/g
+          acetate plateau. Mixed substrates delayed the second accumulation
+          phase. Medium germanium decreased only about 5%, despite catechol
+          consumption; this is not efficient solution depletion or a recovery yield.
+      - source_ref: chmielowski1986
+        supports: partial
+        explanation: >-
+          The kinetic association supports substrate-dependent uptake but
+          does not identify a transporter experimentally. The methods report
+          two separate 4 mL aliquots of each sonicated suspension for
+          scintillation counting; biological-replicate counts, statistical
+          uncertainty and matched killed-cell or cell-free controls are not
+          reported. Surface binding also contributes to the pellet signal.
+      - source_ref: klapcinska1986
+        supports: support
+        explanation: >-
+          Table 1 reports 2.46 versus 0.81 mg Ge/g dry cells with catechol
+          versus acetate, respectively, and 83.4% versus 58.0% of accumulated
+          Ge in the soluble fraction. Figures 1-3 compare Ge-free controls
+          with loaded cells: envelope contrast and catechol-associated
+          cytoplasmic deposits support localization. The 10 mM assay is
+          distinct from the companion 2 mM kinetic experiment.
+      - source_ref: klapcinska1986
+        supports: partial
+        explanation: >-
+          Fractionation and microscopy support intracellular accumulation,
+          but electron contrast does not identify a germanium mineral phase
+          or oxidation state. Replication and uncertainty are not reported.
+          Neither study establishes transporter causality, selective product
+          isolation, a full mass balance or industrial deployment.
+curation_history:
+  - timestamp: '2026-10-11T05:18:03Z'
+    curator: Codex (GPT-6; Codex)
+    action: record_creation
+    summary: >-
+      Created the germanium element record with verified identity, dated US
+      criticality and two companion microbial accumulation experiments.
+      Preserved different assay concentrations, weak controls, low solution
+      depletion and provisional transport interpretation. Independent
+      scientific review is a separate subsequent artifact.
+  - timestamp: '2026-10-11T05:22:59Z'
+    curator: Codex (GPT-6; Codex)
+    action: evidence_clarification
+    summary: >-
+      Corrected independent review finding F1 in
+      20261011T052122Z-germanium-round5-independent, issue 30, by preserving
+      the reported duplicate scintillation aliquots and specifying that
+      biological-replicate counts and statistical uncertainty are unreported.
+history_refs:
+  - history/records/germanium/2026-10-11T051803Z-codex-f9b5f3.yaml
+  - history/records/germanium/2026-10-11T052259Z-codex-64cadc.yaml

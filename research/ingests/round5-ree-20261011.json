@@ -1,0 +1,525 @@
+{
+  "created_at": "2026-10-11T05:19:54.696816+00:00",
+  "actor": {
+    "name": "codex",
+    "model": "GPT-6",
+    "tool": "codex"
+  },
+  "worktree": "/private/tmp/CMMMech-expansion-round5-20261011",
+  "branch": "curate/cmm-expansion-round5-20261011",
+  "trusted_base": "e305dcc67e526e585349c60f849567f4c2bfc835",
+  "scope": "Round5 individual REE element roots, lanthanum and dysprosium; one per-element primary experiment each; no total-REE inheritance",
+  "baseline": "Parent reported terminal just-check pass before record writes: 307 passed, 3 skipped, 27 records, 36 histories.",
+  "dedup": {
+    "ignored_hidden_included": true,
+    "symlink_following": true,
+    "checkout_scopes": [
+      "data/records",
+      "research",
+      "reviews"
+    ],
+    "excluded": [
+      ".git",
+      ".venv"
+    ],
+    "local_download_scopes": [
+      "/private/tmp/cmm-round4-phosphorus-cerium-evidence-20261011",
+      "/private/tmp/cmmmech-round5-ree-raw"
+    ],
+    "queries": [
+      "lanthanum|yttrium|dysprosium|lanmodulin",
+      "9489-0|6373195|10458459|Dysprosium-Containing|lanthanum.yaml|dysprosium.yaml",
+      "9489-0|6373195|11082009|10458459"
+    ],
+    "result": "La and Dy present in authority/frontier candidate inventories, but no accepted element root or prior curated DOI/experiment found within these boundaries before writes. This is not a machine-wide search."
+  },
+  "searches": [
+    {
+      "provider": "web search",
+      "date": "2026-10-11",
+      "queries": [
+        "lanthanum fungal biomass biosorption full text Kang 2019 lanthanum compounds transformation",
+        "cyanobacteria rare earth biosorption lanthanum dysprosium yttrium 2023 full text"
+      ],
+      "filters": "None; first returned result set only; bounded discovery, no exhaustive pagination"
+    },
+    {
+      "provider": "web search",
+      "date": "2026-10-11",
+      "queries": [
+        "site.ebi.ac.uk/chebi \"lanthanum atom\"",
+        "site.ebi.ac.uk/chebi \"dysprosium atom\"",
+        "\"Dysprosium Absorption of Aluminum Tolerant\" yeast full text",
+        "\"Euglena\" \"dysprosium\" \"Lewis\" Guéguen full text"
+      ],
+      "filters": "None; first returned result set only; bounded discovery, no exhaustive pagination"
+    },
+    {
+      "provider": "web search",
+      "date": "2026-10-11",
+      "queries": [
+        "\"10.1007/s00253-018-9489-0\" correction retraction",
+        "\"10.3390/microorganisms11082009\" correction retraction"
+      ],
+      "filters": "None; first returned result set only; bounded discovery, no exhaustive pagination"
+    }
+  ],
+  "correction_search": "No correction/retraction notice surfaced in these bounded searches; this is not proof of absence. Full-text internal contradictions are retained.",
+  "web_authority_checks": [
+    {
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:33336",
+      "result": "CHEBI:33336 lanthanum atom; formula La; charge0"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:33377",
+      "result": "Web tool failed; direct HTML succeeded and confirmed CHEBI:33377 dysprosium atom; formula Dy; charge0"
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=380704",
+      "result": "Aspergillus niger ATCC1015, no-rank strain node; NCBI browser opened live"
+    },
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=4932&retmode=xml",
+      "result": "Saccharomyces cerevisiae species; live XML"
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm",
+      "result": "Final2025 list, FR90:50494-50497, both named commodity rows p50496; byproduct Yes is not a criticality classification column"
+    }
+  ],
+  "sources": [
+    {
+      "doi": "10.1007/s00253-018-9489-0",
+      "pmcid": "PMC6373195",
+      "title": "Biotransformation of lanthanum by Aspergillus niger",
+      "publication": "Online2018-11-15; issue2019, Applied Microbiology and Biotechnology103:981-993",
+      "role": "Primary lanthanum precipitation experiment",
+      "inspected": [
+        "Full-text XML methods/results/discussion",
+        "Table1 growth/tolerance context",
+        "Figure4 EDX",
+        "Figure5 XRD oxalate/abiotic heated oxide",
+        "Figure7 all four quantified supernatant/chemical comparator panels",
+        "Figure8 morphology",
+        "Figure9 mixed phase XRD"
+      ],
+      "supplements": "No supplementary-material node or separately described data supplement in full-text XML; EuropePMC package comprises figure and equation assets, not an independent experiment.",
+      "limits": [
+        "Biomass filtration63um not sterilization",
+        "Fungal oxalate concentration not directly measured; model uses25mM from earlier study",
+        "Chemical oxalate comparator not pH- or measured dose-matched",
+        "Aqueous100% removal source-reported without residual detection-limit proof",
+        "Higher-La phosphorus phase has text La7P3O8 versus figure La7P3O18 formula inconsistency",
+        "Chemical control removed-La amount is mislabeled mg dry wt in prose; Figure7 axis is micromol; no such control amount copied",
+        "No real feed, REE-selective separation or industrial performance"
+      ]
+    },
+    {
+      "doi": "10.3390/microorganisms11082009",
+      "pmcid": "PMC10458459",
+      "title": "The Remediation of Dysprosium-Containing Effluents Using Cyanobacteria Spirulina platensis and Yeast Saccharomyces cerevisiae",
+      "publication": "Microorganisms11:2009,2023-08-04",
+      "role": "Primary individual-Dy biosorption experiment",
+      "inspected": [
+        "Full-text XML sections2-4",
+        "All four numeric tables",
+        "Figure1 pH/time/concentration/temperature panels",
+        "Figure2 measured points versus isotherm fits",
+        "Figure4 biomass FTIR",
+        "SupplementFigureS1 lnKd versus1/T rendered from packaged PDF"
+      ],
+      "limits": [
+        "No yeast strain accession; species-level mapping only",
+        "Dried105C24h inactive biomass",
+        "Methods pH3 versus results pH4; do not merge pH-screen68% with kinetics85%",
+        "Dy nitrate formula printed Dy(NO3)2·6H2O inconsistent with DyIII description",
+        "NAA described for biomass; final aqueous assay unspecified",
+        "No matched biomass-free solution-control result reported",
+        "5.84mg/g is fitted capacity;3.85mg/g maximum tested yeast uptake",
+        "No Dy-selective separation, desorption/reuse, purified product or industrial demonstration"
+      ]
+    }
+  ],
+  "deferred_leads": [
+    {
+      "candidate": "yttrium",
+      "reason": "Not pursued after selecting two experimentally supported individual roots; no evidence claim"
+    },
+    {
+      "candidate": "terbium/lanthanum cyanobacterial screen",
+      "doi": "10.3389/fbioe.2023.1130939",
+      "reason": "Primary lead identified; not independently assessed for curation in this pass"
+    },
+    {
+      "candidate": "dysprosium alternative yeast study",
+      "doi": "10.3390/app12094352",
+      "reason": "Lead only; not full-text audited; not included as evidence"
+    },
+    {
+      "candidate": "lanmodulin separation",
+      "reason": "Not pursued; recombinant protein/source-organism scope not inferred"
+    }
+  ],
+  "acquisitions": [
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6373195/fullTextXML",
+      "retrieved_at": "2026-10-11T05:14:10.618183+00:00",
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195.xml",
+      "sha256": "cc34de8084e11c33383e611691909af9b0f1f69773c5c9541ee73be415eb9d85",
+      "bytes": 124046,
+      "content_type": "application/xml",
+      "terms": "CC BY 4.0; primary article license applies to its figure/supplement package"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10458459/fullTextXML",
+      "retrieved_at": "2026-10-11T05:14:12.468096+00:00",
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC10458459.xml",
+      "sha256": "025e1d350a828e544079fa0101593cdc01faacc6bf668496295a5c1498b4944c",
+      "bytes": 132724,
+      "content_type": "application/xml",
+      "terms": "CC BY 4.0; primary article license applies to its figure/supplement package"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6373195/supplementaryFiles",
+      "retrieved_at": "2026-10-11T05:17:47.953743+00:00",
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195-supp.zip",
+      "sha256": "0e72e0f0394e5f14a05aa09edf005a2ead5a9502f3144ef29b71d36b3debe2a8",
+      "bytes": 832488,
+      "content_type": "application/zip",
+      "terms": "CC BY 4.0; primary article license applies to its figure/supplement package"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10458459/supplementaryFiles",
+      "retrieved_at": "2026-10-11T05:16:40.331369+00:00",
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC10458459-supp.zip",
+      "sha256": "8f4276265b9743915f36259989993ec31b17ee707c17bcaaac82f4424f80d3f4",
+      "bytes": 325964,
+      "content_type": "application/zip",
+      "terms": "CC BY 4.0; primary article license applies to its figure/supplement package"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:33377",
+      "retrieved_at": "2026-10-11T05:15:34.183385+00:00",
+      "file": "/private/tmp/cmmmech-round5-ree-raw/chebi33377.html",
+      "sha256": "57af4012adb455f2d0c7fe0d5aa3b18ba7b33fa17d8115d8adc6c0d896138703",
+      "bytes": 823626,
+      "content_type": "text/html;charset=utf-8",
+      "terms": "Authority data; exact reuse terms not separately assessed; raw bytes retained outside Git only"
+    },
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5061&retmode=xml",
+      "retrieved_at": "2026-10-11T05:15:34.396311+00:00",
+      "file": "/private/tmp/cmmmech-round5-ree-raw/ncbi5061.xml",
+      "sha256": "d668c305ba04f31ca50a1582a5a9c85d6547109cbc132a097d5d2185a8c34ff8",
+      "bytes": 4988,
+      "content_type": "text/xml; charset=UTF-8",
+      "terms": "Authority data; exact reuse terms not separately assessed; raw bytes retained outside Git only"
+    },
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=4932&retmode=xml",
+      "retrieved_at": "2026-10-11T05:15:34.748170+00:00",
+      "file": "/private/tmp/cmmmech-round5-ree-raw/ncbi4932.xml",
+      "sha256": "da089959ea98b54a0b26b43b88037705e7aed37e969e5c789267f92803002124",
+      "bytes": 6147,
+      "content_type": "text/xml; charset=UTF-8",
+      "terms": "Authority data; exact reuse terms not separately assessed; raw bytes retained outside Git only"
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm",
+      "retrieved_at": "2026-10-11T05:15:34.891402+00:00",
+      "file": "/private/tmp/cmmmech-round5-ree-raw/usgs2025.html",
+      "sha256": "dd7f5d67314566dca3de452d057851c1c3b3db27827ad4384443d4997941f20f",
+      "bytes": 21581,
+      "content_type": "text/html",
+      "terms": "Authority data; exact reuse terms not separately assessed; raw bytes retained outside Git only"
+    },
+    {
+      "url": "https://discovery.dundee.ac.uk/ws/files/29144920/Kang2018_Article_BiotransformationOfLanthanumBy.pdf",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.mdpi.com/microorganisms/microorganisms-11-02009/article_deploy/html/images/microorganisms-11-02009-g001.png",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.mdpi.com/microorganisms/microorganisms-11-02009/article_deploy/html/images/microorganisms-11-02009-g004.png",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://d-nb.info/1173538941/34",
+      "file": "/private/tmp/cmmmech-round5-ree-raw/kang2019.pdf",
+      "retrieved_at": "2026-10-11T05:17:05.958543+00:00",
+      "sha256": "97c1bd60490b69f04b50d7e125d6a1b1581741d385b49886963082f44ac1accf",
+      "bytes": 1713198,
+      "content_type": "application/pdf;charset=base64",
+      "terms": "CC BY 4.0; primary article license applies to its figure/supplement package"
+    },
+    {
+      "url": "https://mdpi-res.com/d_attachment/microorganisms/microorganisms-11-02009/article_deploy/microorganisms-11-02009.pdf",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://mdpi-res.com/d_attachment/microorganisms/microorganisms-11-02009/article_deploy/microorganisms-11-02009-s001.zip",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "derived_assets": [
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Article_Equ1.gif",
+      "sha256": "783ff86a7fc95490643f7ab8ceec575ae9890902a7f032dcf327d58104905a75",
+      "bytes": 954,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Article_Equ2.gif",
+      "sha256": "a536d790138dcb26ca5ca6f69f88e03d951aec4a0322b050594f8ffa4ea7d089",
+      "bytes": 974,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Article_Equ3.gif",
+      "sha256": "35470b270f9146b0d68e2fea72293a3d468f445079e01498de2d2967f45bd68a",
+      "bytes": 984,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Article_Equ4.gif",
+      "sha256": "0337e1397e773254b1b522036fa7b4594d9ebbe8da9e992bbdfd59de392cca7e",
+      "bytes": 940,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Article_Equ5.gif",
+      "sha256": "9b5cbe062f0554f2ff28f171818ac973a3a3a3d8121eddb2ed7ae686e381b1ee",
+      "bytes": 1546,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Article_Equ6.gif",
+      "sha256": "8b9a627d7862f1d0bb169f6c66569ec6f4cf842de748933e1b32bbfd6ab217c9",
+      "bytes": 819,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Article_Equ7.gif",
+      "sha256": "de5d08a8501112da297923716e3e0f9269d962dd8816717f119a6878bac632f4",
+      "bytes": 725,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Fig10_HTML.gif",
+      "sha256": "42bd8239fa90e505d14e12bb3a82c4c746a117e0d0b0b27f0a516a0defbeedf6",
+      "bytes": 9879,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Fig10_HTML.jpg",
+      "sha256": "c8947b1bec073dc8cc23b0d726e84d19ffd0a153d12d11b6a35c9e422056700a",
+      "bytes": 55506,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Fig1_HTML.gif",
+      "sha256": "16e9edb18b0d550489c97147070ddaf8c350b821908ffce259d9bf8540d89d42",
+      "bytes": 10411,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Fig1_HTML.jpg",
+      "sha256": "a8c8bf5e0cafa4b8d9b4331afd36c95ffcb639c052318e46c9fb3d683d0ce87b",
+      "bytes": 65021,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Fig2_HTML.gif",
+      "sha256": "cb00559d020cd086e83469dad3a7272d992b37ac392c79aff9f60806da59907d",
+      "bytes": 15476,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Fig2_HTML.jpg",
+      "sha256": "7c0f9abe70207b380b62201fa145ff200ab7db613e9bb708f32e6fc03757145d",
+      "bytes": 103861,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Fig3_HTML.gif",
+      "sha256": "f68b25ae2075c852bfa91c083c290c9f89aa9c010f1c0f6cf7d2413d4ebd69e6",
+      "bytes": 17706,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Fig3_HTML.jpg",
+      "sha256": "4541425d2b182af0613c878cb968ad16b135dab79b85adcaadec545297d8c366",
+      "bytes": 162522,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Fig4_HTML.gif",
+      "sha256": "8a13865b3940d165e1e3f93ca7834c23f5ba7dd5b4399c368d26382e07e6b73a",
+      "bytes": 9787,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Fig4_HTML.jpg",
+      "sha256": "b458f3576840b9b02d01d584007dff68da7da5c998ce011de1d592da8dab4326",
+      "bytes": 92253,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Fig5_HTML.gif",
+      "sha256": "91b9c7a6ada63e72b549265a55745f153a1a8247b1544f39d15834cb0f5af8db",
+      "bytes": 9629,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Fig5_HTML.jpg",
+      "sha256": "66a4c042508520dd29b4735b30a23b7401179c7de9cea3471770eb8e229037fb",
+      "bytes": 60806,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Fig6_HTML.gif",
+      "sha256": "26b8d0088a3b6193d24f56ccfe011c436d6ceeeeefafc45a1fdc91365c0638c5",
+      "bytes": 10865,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Fig6_HTML.jpg",
+      "sha256": "fe5632a2785a65019703d17fa7b9eb3b6324b2a352dbb8e3324e015ce5fab994",
+      "bytes": 70458,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Fig7_HTML.gif",
+      "sha256": "fb9e71152d05ab8ad4fd87f40523c2b92ae19a422dd74245fd7b920522ef6f65",
+      "bytes": 11991,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Fig7_HTML.jpg",
+      "sha256": "9449928a376ec43903bafd4da5491c255c7af52235c9ab4ab8e0c60293386d87",
+      "bytes": 80449,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Fig8_HTML.gif",
+      "sha256": "f87aa4f45758853dd11d1aa19f81a210c08deaca127f531589804d94b37814ca",
+      "bytes": 18008,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Fig8_HTML.jpg",
+      "sha256": "d2a23519912e99dc5af275b1b316dd7805ce1c46f3e72924e3f456a481642650",
+      "bytes": 163458,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Fig9_HTML.gif",
+      "sha256": "3d06dfc462fbd03e17e18aa8a30f2aa971687e1a3e132606ca82bd666a4a1416",
+      "bytes": 9847,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC6373195/253_2018_9489_Fig9_HTML.jpg",
+      "sha256": "4a0645604c5292a3b2dff11d251264283e273e64f88362a5ecabfcc3d61a33cf",
+      "bytes": 56158,
+      "derived_from": "PMC6373195 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC10458459/microorganisms-11-02009-g001.gif",
+      "sha256": "f2ab9978454eb5ba2e916afdf948df37deb7bd5c8ec4811471679bc587c84f89",
+      "bytes": 5378,
+      "derived_from": "PMC10458459 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC10458459/microorganisms-11-02009-g001.jpg",
+      "sha256": "6ae94327d60acdf7c4a1729f93c732ca4e4bba1f30519e7dd715a980d2309078",
+      "bytes": 59113,
+      "derived_from": "PMC10458459 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC10458459/microorganisms-11-02009-g002.gif",
+      "sha256": "4b8e7944d7f67b21c76526d7c598ca1decb531db392e2a9ba8df6bc35e1986cf",
+      "bytes": 6469,
+      "derived_from": "PMC10458459 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC10458459/microorganisms-11-02009-g002.jpg",
+      "sha256": "c7fac9875891144a58895d8c66f9abd4e68e13673a4e8f7ac7f082916c0f06a8",
+      "bytes": 39197,
+      "derived_from": "PMC10458459 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC10458459/microorganisms-11-02009-g003.gif",
+      "sha256": "7567e84af368c05e1a21e56253f321bc1ec5920a5174e92b26d75323c0d34ece",
+      "bytes": 6301,
+      "derived_from": "PMC10458459 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC10458459/microorganisms-11-02009-g003.jpg",
+      "sha256": "4f1e4aaec51dd5dbe0bc385b624ad75fbecf3f18b74ae0bdbd64075032860d0c",
+      "bytes": 36688,
+      "derived_from": "PMC10458459 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC10458459/microorganisms-11-02009-g004.gif",
+      "sha256": "bcbaba55652da15d0db2f1ee29ef6369b0330ebe8763575c82a732db1c5a7e74",
+      "bytes": 7491,
+      "derived_from": "PMC10458459 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC10458459/microorganisms-11-02009-g004.jpg",
+      "sha256": "658dafb03ea77750b07ead4c8cea16fe8ade854816b14c2def2909ad14e192ae",
+      "bytes": 45818,
+      "derived_from": "PMC10458459 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC10458459/microorganisms-11-02009-g005.gif",
+      "sha256": "f22a09487747e2ff313f35877f91ac7da9b83d7ef007b344587a8d573e2348b3",
+      "bytes": 7027,
+      "derived_from": "PMC10458459 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC10458459/microorganisms-11-02009-g005.jpg",
+      "sha256": "b236494bdb16913240d06e16af54c0c412c3c535d4aeddf2d6920fd64e1045bd",
+      "bytes": 43329,
+      "derived_from": "PMC10458459 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/PMC10458459/microorganisms-11-02009-s001.zip",
+      "sha256": "46899429fdde56acbacbe681df46386a6b23022e8c12614b6cb9e55272f55428",
+      "bytes": 90554,
+      "derived_from": "PMC10458459 package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/dy-supp/figure-s1.png",
+      "sha256": "ccb3d3a5df3bdb3109814ecdb7b72c7971c0ae1ffe86e04a1fee09d30b35c7a8",
+      "bytes": 25688,
+      "derived_from": "dy-supp package; extraction/render, not a separate remote acquisition"
+    },
+    {
+      "file": "/private/tmp/cmmmech-round5-ree-raw/dy-supp/microorganisms-2534396-supplementary.pdf",
+      "sha256": "ce7fe663fa3f757e936ed863f94ead0f6e86a66407560ba3dd94897d9cf32747",
+      "bytes": 98993,
+      "derived_from": "dy-supp package; extraction/render, not a separate remote acquisition"
+    }
+  ],
+  "access_limits": [
+    "PMC web pages returned browser challenge; EuropePMC fullTextXML and supplementaryFiles succeeded",
+    "Dundee PDF and MDPI direct asset attempts403; d-nb primary-PDF mirror succeeded for La",
+    "pdftoppm unavailable; original figure assets inspected directly; supplementary PDF first page rendered with macOS sips",
+    "Search no paging; no author contact; primary raw data on request for Dy not acquired; no hypothetical missing measurements created"
+  ],
+  "ready_records": [
+    {
+      "path": "data/records/lanthanum.yaml",
+      "sha256": "29704195a47edf4fdd6dde6b6285bc1a45959675decad1b60b3e5f8368f5d7b6"
+    },
+    {
+      "path": "data/records/dysprosium.yaml",
+      "sha256": "1a35259d03d043ad627d975c90a19d849141a9f8301167d5ca2eadf8efb42799"
+    }
+  ],
+  "review_status": "Independent review required; this is source assessment/curation provenance, not self-review."
+}

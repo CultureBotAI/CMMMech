@@ -1,0 +1,307 @@
+schema_version: 1.0.0
+review_id: 20261011T052250Z-iron-round5-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of the iron expansion record
+started_at: '2026-10-11T05:19:53Z'
+finished_at: '2026-10-11T05:22:50Z'
+reviewer:
+  identity: Codex /root/cmm5_germanium
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer curated germanium but neither authored nor edited iron;
+    captured exact iron bytes before independently checking authorities, primary full
+    text, figures and supplement.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The iron element, dated UK designation and conditional Ax17 ferrihydrite
+  transformation are supported. Mixed-product and extraction-assay limitations are
+  preserved. No actionable findings in the exact reviewed state.
+source:
+  git_revision: e305dcc67e526e585349c60f849567f4c2bfc835
+  state: working_tree
+  inputs:
+  - path: data/records/iron.yaml
+    sha256: b297d055775eab9fa48f0afe048f4a0ef1e40dd9fe917850a040220da4979383
+    role: target
+  - path: history/records/iron/2026-10-11T051820Z-codex-3d12e5.yaml
+    sha256: 895fa4cfd7d75c981d0392142b298540b037102b7b936ca3ffc56ad0af64326c
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+targets:
+- target_id: cmmmech:iron
+  path: data/records/iron.yaml
+  label: Iron
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/iron.yaml
+    role: maintained scientific record
+scope:
+  description: All scientific fields and current CREATE provenance of the named iron
+    record.
+  selection: Assigned named record; complete single-record review.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:iron
+checks:
+- check_id: record
+  name: Strict record validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/iron.yaml
+  status: passed
+  required: true
+  summary: 1 record checked; zero failures.
+  target_ids:
+  - cmmmech:iron
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: history
+  name: Append-only history against trusted base
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate-history --base e305dcc67e526e585349c60f849567f4c2bfc835
+  status: passed
+  required: true
+  summary: 41 histories checked; zero errors.
+  target_ids:
+  - cmmmech:iron
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: batch
+  name: Native batch gate
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    just check
+  status: passed
+  required: true
+  summary: 307 passed, 3 skipped; lint passed; 32 records and 41 history sessions
+    valid. Terminal exit 0; log /private/tmp/cmm-round5-iron-review-check.log.
+  target_ids:
+  - cmmmech:iron
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: nonempty
+  name: Nonempty corpus gate
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: 32 records checked; zero failures.
+  target_ids:
+  - cmmmech:iron
+  exit_code: 0
+  expected_exit_code: 0
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/iron.yaml
+  locator: Entire inspected record and linked CREATE sidecar
+  accessed_at: '2026-10-11T05:22:50Z'
+  support: supports
+  summary: Exact record, organism/material scope and distinct history event linkage
+    inspected; reviewer made no iron edits.
+  snapshot_sha256: b297d055775eab9fa48f0afe048f4a0ef1e40dd9fe917850a040220da4979383
+- evidence_id: identity
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:18248
+  locator: ID, label, definition, formula, charge
+  accessed_at: '2026-10-11T05:22:50Z'
+  support: supports
+  summary: Live authority resolves iron atom, atomic number 26, Fe, charge zero.
+- evidence_id: taxon
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2831190
+  locator: 'Curator-acquired ncbi2831190.html: Taxonomy ID, current name, rank and
+    type-strain links'
+  accessed_at: '2026-10-11T05:22:50Z'
+  support: supports
+  summary: Independently inspected actual authority HTML downloaded 2026-10-11T05:17:24Z;
+    species Desulfovulcanus ferrireducens with Ax17/DSM111878 type-strain links. Reviewer
+    live web fetch failed.
+  snapshot_sha256: b81790b3e68bd34b2f9eff752ec8edd0fc048a9b1cc53da413e88c76cffbffba
+- evidence_id: strain
+  kind: database
+  reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-111878
+  locator: Name, DSM number, strain designation, strain history
+  accessed_at: '2026-10-11T05:22:50Z'
+  support: supports
+  summary: Live culture authority independently confirms DSM111878 is type strain
+    Ax17; general catalog cultivation conditions are not substituted for the primary
+    assay.
+- evidence_id: criticality
+  kind: authority
+  reference: https://www.gov.uk/government/publications/uk-critical-minerals-strategy/critical-minerals-technical-annex
+  locator: Update date and Annex 1, Complete list of UK critical minerals
+  accessed_at: '2026-10-11T05:22:50Z'
+  support: supports
+  summary: Live UK Department for Business and Trade page updated 23 January 2026
+    explicitly lists iron under its CMIC2024-sourced critical list; scoped mapping
+    is supported.
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3389/fmicb.2023.1272245
+  locator: Materials and methods; Cell growth on ferrihydrite; Discussion; Figures1-4
+    captions; complete XML and live publisher full text
+  accessed_at: '2026-10-11T05:22:50Z'
+  support: supports
+  summary: Independent reading supports the stated conditions, matched abiotic comparators,
+    extraction-based Fe(II) values and provisional mixed mineral interpretation.
+  snapshot_sha256: 17dd49089580015c98d705a1f6ceb239da3377ce85c2e5369a52cd0a4dd7f4c9
+- evidence_id: figures
+  kind: primary_source
+  reference: https://doi.org/10.3389/fmicb.2023.1272245
+  locator: Curator-retained figure1.webp, figure3.webp, figure4.webp; independently
+    visually inspected
+  accessed_at: '2026-10-11T05:22:50Z'
+  support: supports
+  summary: Bottle images, low-temperature spectra and microscopy/diffraction retain
+    differences between arms and support the stated purity/phase-identification limits.
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10622975/supplementaryFiles
+  locator: Data_Sheet_1.PDF, independently rendered pages6-9, Figures S2-S5; TablesS1-S2
+    text
+  accessed_at: '2026-10-11T05:22:50Z'
+  support: supports
+  summary: Inspected the original supplement from the curator-acquired ZIP. Spectral
+    fits and XRD comparisons support a mixed mineral product; model predictions are
+    not measured yields.
+  snapshot_sha256: f4d4514592189e6c68ecf0466c858919e946208c2ec71a6fb4c2834793b43455
+- evidence_id: search
+  kind: search
+  reference: Live web search and local rg
+  locator: Default result pages and named local roots
+  accessed_at: '2026-10-11T05:22:50Z'
+  support: context_only
+  summary: No relevant correction/retraction notice surfaced; local matches identify
+    the new iron record/history/dossier, with no second matching root in the searched
+    material.
+  search_scope: 'Queries: "10.3389/fmicb.2023.1272245" correction retraction erratum;
+    "Desulfovulcanus ferrireducens" ferrihydrite abiotic magnetite. No pagination
+    or date filters. rg --no-ignore --hidden -l searched data, research, reviews,
+    history for CHEBI:18248|cmmmech:iron|1272245|2831190. Hidden and ignored files
+    included; unrelated home/temp excluded. Relevant primary study counterevidence
+    inspected; not an exhaustive literature or machine-wide absence claim.'
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Element, taxon and dated authority scope
+  outcome: supported
+  summary: Identifiers and the dated designation denote the intended entities without
+    inheritance to host minerals or ore grades.
+  target_ids:
+  - cmmmech:iron
+  evidence_ids:
+  - record
+  - identity
+  - taxon
+  - strain
+  - criticality
+  dimensions:
+  - name: material
+    value: Element Fe; dissolved species, ferrihydrite and high-purity iron ore remain
+      distinct.
+    definition: Evidence-bounded scope of the curated claim.
+    evidence_ids:
+    - identity
+    - record
+  - name: designation
+    value: United Kingdom; DBT technical annex, Annex1; 23January2026 update based
+      on CMIC2024.
+    definition: Evidence-bounded scope of the curated claim.
+    evidence_ids:
+    - criticality
+  - name: organism
+    value: Desulfovulcanus ferrireducens species; experimental living strain Ax17/DSM111878.
+    definition: Evidence-bounded scope of the curated claim.
+    evidence_ids:
+    - taxon
+    - strain
+    - primary
+- assessment_id: mechanism
+  area: evidence
+  topic: Conditional laboratory Fe transformation and product identity
+  outcome: supported
+  summary: Primary methods/results and inspected images support this scoped biomineralization
+    claim; mixed phases and possible abiotic transformation are retained.
+  target_ids:
+  - cmmmech:iron
+  evidence_ids:
+  - primary
+  - figures
+  - supplement
+  - record
+  dimensions:
+  - name: substrate
+    value: Synthetic two-line nanophase ferrihydrite in modified DSM981; no natural-ore
+      extraction demonstrated.
+    definition: Evidence-bounded scope of the curated claim.
+    evidence_ids:
+    - primary
+  - name: conditions
+    value: Triplicate 50mL cultures at55 degreesC, about5days, H2/CO2, pH6.80; cysteine
+      and added Fe(II).
+    definition: Evidence-bounded scope of the curated claim.
+    evidence_ids:
+    - primary
+  - name: controls
+    value: Composition-matched uninoculated heated and room-temperature controls;
+      controls retain chemical mineral changes.
+    definition: Evidence-bounded scope of the curated claim.
+    evidence_ids:
+    - primary
+    - figures
+  - name: measurement
+    value: Oxalate-extracted Fe(II), not dissolved-only concentration or isolated
+      recovery yield.
+    definition: Evidence-bounded scope of the curated claim.
+    evidence_ids:
+    - primary
+  - name: outcome
+    value: Magnetite-rich mixed solid; neither pure stoichiometric magnetite nor elemental
+      iron; phase proportions not independently fitted.
+    definition: Evidence-bounded scope of the curated claim.
+    evidence_ids:
+    - primary
+    - supplement
+  - name: scale
+    value: Laboratory only; no pilot or industrial operation.
+    definition: Evidence-bounded scope of the curated claim.
+    evidence_ids:
+    - record
+    - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Exact working bytes and append-only curation
+  outcome: supported
+  summary: Inspected hashes remain stable; CREATE metadata and separate inline event
+    describe this current curation. All executed structural gates passed.
+  target_ids:
+  - cmmmech:iron
+  evidence_ids:
+  - record
+findings: []
+actions: []
+limitations:
+- The primary product is a mixture; this review did not refit spectra, quantify phase
+  proportions, reconstruct uncertainty or infer isolated-product yield.
+- NCBI live reviewer fetch failed; the curator-acquired authority HTML was independently
+  read and its receipt/checksum verified. Other identity and criticality authorities
+  were opened live.
+- Figures and supplement were acquired by the curator and independently inspected;
+  no new raw files were committed. Only source-relevant supplement pages6-9 were visually
+  examined; other pages were read only where relevant.
+- The primary paper has a phosphate amount inconsistency between Methods and Discussion;
+  no phosphate loading or inferred phosphate mechanism is curated, so it does not
+  undermine this narrower record.
+- Correction/retraction and duplicate searches are bounded; empty findings is not
+  a corpus-wide or exhaustive-literature pass.
+notes:
+- Iron record hash was rechecked unchanged at review completion. Batch checks describe
+  the contemporaneous32-record/41-history working state and do not replace parent
+  final-batch validation after later edits.

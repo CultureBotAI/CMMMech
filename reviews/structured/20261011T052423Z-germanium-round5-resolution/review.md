@@ -1,0 +1,402 @@
+# Germanium independent correction review
+
+- Review: 20261011T052423Z-germanium-round5-resolution
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T05:23:40Z
+- Finished UTC: 2026-10-11T05:24:23Z
+- Reviewer: /root (Codex) (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+F1 resolved: technical duplicate aliquots are now explicit, while biological replicate counts and uncertainty remain unreported. Final history-attached record remains supported within the same laboratory and causality limits.
+
+## Scope And Provenance
+
+Final complete germanium record after targeted evidence correction and appended history, with focused source recheck of F1.
+
+Selection: Single new element record; all assertions checked against the two cited primary studies and identity authorities.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base e305dcc67e526e585349c60f849567f4c2bfc835.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:germanium | data/records/germanium.yaml | maintained | Germanium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| named-record | passed | True | cmmmech:germanium | 1 checked, 0 failed. |
+| history | passed | True | cmmmech:germanium | 42 histories;0 errors. |
+| Nonempty final corpus validation | passed | True | cmmmech:germanium | 32 records;0 failed. |
+| Completed batch test gate before prose correction | passed | True | cmmmech:germanium | Root executed full gate before F1 wording/EDIT history correction:307passed3skipped57.39s;32records41histories. Final named/corpus/history checks above repeated after correction. Code/schema unchanged. |
+
+## Scientific And Domain Assessments
+
+### Element, commodity and species/strain scope
+
+identity: supported. Targets: cmmmech:germanium.
+
+Element identity and dated named commodity mapping supported; species CURIE does not purport to denote the strain.
+
+### Organism, substrate, conditions and outcome
+
+evidence: supported. Targets: cmmmech:germanium.
+
+Source supports laboratory catechol-associated accumulation; separate2mM kinetics and10mM fractionation assays are not pooled. Low solution depletion, surface binding and lack of isolated product are explicit.
+
+### Biological versus analytical replication
+
+consistency: supported. Targets: cmmmech:germanium.
+
+Reported technical duplicate aliquots are preserved; missing biological replicate count/statistical uncertainty are scoped accurately.
+
+### Actual history and source access
+
+provenance: supported. Targets: cmmmech:germanium.
+
+CREATE and inline event describe actual work; retained artifacts rehashed; blocked raw-PDF route disclosed.
+
+## Findings
+
+### F1: Separate biological replication from duplicate analytical aliquots
+
+minor / resolved / confirmed; issue key: germanium-analytical-replication-scope.
+
+The chmielowski1986 partial evidence says replication is not reported. Page1100 describes two separate4-mL aliquots of each sonicated suspension for scintillation counting. The broad absence claim is inaccurate even though biological replicate count and statistical uncertainty remain unspecified.
+
+Disposition: Final evidence explanation explicitly distinguishes reported analytical duplicates from unreported biological-replicate counts and uncertainty; source p1100 independently rechecked. Correction history attached and final named/corpus/history gates pass.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/germanium.yaml; Complete inspected target and linked CREATE history | supports | Exact final hash captured before assessment; real actor metadata and separate inline event. |
+| kinetics | https://journals.asm.org/doi/epdf/10.1128/aem.51.5.1099-1103.1986; pp1099-1103; full publisher PDF text, retained PMC scans pp1100-1102 including Figures1-4 | supports | Independently checked methods, defined carbon substrates, assay and bounded endpoints. Page1100 explicitly describes two separate4-mL aliquots; biological replicate counts and uncertainty not identified. |
+| localization | https://doi.org/10.1128/aem.51.5.1144-1147.1986; All four retained PMC239027 scan pages; Table1 and Figures1-3 | supports | Independently read/viewed methods, table and microscopy. Distinct10mM/12h fractionation assay and qualitative localization support narrower uptake claim without mineral identity or transporter proof. |
+| identity | https://www.ebi.ac.uk/chebi/CHEBI:30441; Retained live-acquired chebi30441.html; label, formula and charge | supports | Germanium atom, Ge, charge0. Direct reviewer web open failed; retained authority independently inspected and rehashed. |
+| taxon | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=303&amp;mode=Info; Live name and rank | supports | Resolves Pseudomonas putida species; record explicitly distinguishes ATCC33015. |
+| criticality | https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm; Final2025 table Germanium row; official notice date/pages | supports | Explicit named commodity supports scoped element mapping; no host/resource inheritance. |
+| search | 2026-10-11 bounded independent searches; Web first returned sets; scoped hidden/ignored-inclusive local search | context_only | Exact DOI correction/retraction and Binding of Germanium control/uptake searches found no affecting notice in returned sets. Local record/research/history/review matches are this new record and dossier. Not exhaustive. |
+| receipts | research/ingests/round5-germanium-20261011.json; 13 retained raw-artifact SHA256 checks | supports | All13 hashes matched. Failed .pdf is retained HTML and explicitly marked not accepted primary PDF, not relied upon for science. |
+| prior | reviews/structured/20261011T052122Z-germanium-round5-independent/review.yaml; F1 and complete original primary-source review | supports | Immutable independent finding and primary evidence retained. |
+| correction | data/records/germanium.yaml; chmielowski1986 partial evidence, inline correction and second history_ref | supports | Explicit two4mL aliquots agree with independently reread source p1100. EDIT sidecar references F1 and issue30; CREATE remains unchanged. |
+
+## Limits And Additional Notes
+
+- No new experiments, statistical reanalysis, transporter validation, phase or industrial recovery claim.
+- Retained scan figures independently viewed, not digitally quantified. Primary PDF text accessed by web; direct raw PDF unavailable.
+- Biological replicate count and statistical uncertainty remain unavailable; analytical duplicate aliquots do not solve that gap.
+- Correction/counterevidence and local duplicate searches bounded; not exhaustive.
+- Batch full tests passed before wording correction; affected record/corpus/history gates repeated after it. Structured review and publication/squash gates remain separate.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T052423Z-germanium-round5-resolution
+kind: record
+repository: CultureBotAI/CMMMech
+title: Germanium independent correction review
+started_at: '2026-10-11T05:23:40Z'
+finished_at: '2026-10-11T05:24:23Z'
+reviewer:
+  identity: /root (Codex)
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer did not author the record or correction. Re-read final
+    record, primary p1100 scan and appended EDIT history; independently assessed original
+    full primary texts/figures earlier this session as documented in the linked predecessor.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'F1 resolved: technical duplicate aliquots are now explicit, while biological
+  replicate counts and uncertainty remain unreported. Final history-attached record
+  remains supported within the same laboratory and causality limits.'
+source:
+  git_revision: e305dcc67e526e585349c60f849567f4c2bfc835
+  state: working_tree
+  inputs:
+  - path: data/records/germanium.yaml
+    sha256: ab9184e4e7eed9507d67309937e872c7218a5b534acbb7e09eff8036a8e10c05
+    role: target
+  - path: history/records/germanium/2026-10-11T051803Z-codex-f9b5f3.yaml
+    sha256: 993001f076d41de57b39d290c15af4f522a368d5c3a823e552f384f72cd5a11b
+    role: context
+  - path: history/records/germanium/2026-10-11T052259Z-codex-64cadc.yaml
+    sha256: cc0ddcc8f25af7f1cb1f3316e291b0008abd0a198e7e6a9cc02d37d3c5126998
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+targets:
+- kind: maintained
+  label: Germanium
+  owner_paths:
+  - path: data/records/germanium.yaml
+    repository: CultureBotAI/CMMMech
+    role: maintained_record
+  path: data/records/germanium.yaml
+  target_id: cmmmech:germanium
+scope:
+  description: Final complete germanium record after targeted evidence correction
+    and appended history, with focused source recheck of F1.
+  selection: Single new element record; all assertions checked against the two cited
+    primary studies and identity authorities.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:germanium
+  exclusions:
+  - target: Other strains, other Ge feeds, follow-up 1989/coal studies
+    reason: Not asserted by this record; not a comprehensive Ge literature review.
+checks:
+- check_id: named-record
+  name: named-record
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/germanium.yaml
+  status: passed
+  required: true
+  summary: 1 checked, 0 failed.
+  target_ids:
+  - cmmmech:germanium
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: history
+  name: history
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate-history --base e305dcc67e526e585349c60f849567f4c2bfc835
+  status: passed
+  required: true
+  summary: 42 histories;0 errors.
+  target_ids:
+  - cmmmech:germanium
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: corpus
+  name: Nonempty final corpus validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: 32 records;0 failed.
+  target_ids:
+  - cmmmech:germanium
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: batch
+  name: Completed batch test gate before prose correction
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  status: passed
+  required: true
+  summary: Root executed full gate before F1 wording/EDIT history correction:307passed3skipped57.39s;32records41histories.
+    Final named/corpus/history checks above repeated after correction. Code/schema
+    unchanged.
+  target_ids:
+  - cmmmech:germanium
+  exit_code: 0
+  expected_exit_code: 0
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/germanium.yaml
+  locator: Complete inspected target and linked CREATE history
+  accessed_at: '2026-10-11T05:21:22Z'
+  support: supports
+  summary: Exact final hash captured before assessment; real actor metadata and separate
+    inline event.
+- evidence_id: kinetics
+  kind: primary_source
+  reference: https://journals.asm.org/doi/epdf/10.1128/aem.51.5.1099-1103.1986
+  locator: pp1099-1103; full publisher PDF text, retained PMC scans pp1100-1102 including
+    Figures1-4
+  accessed_at: '2026-10-11T05:21:22Z'
+  support: supports
+  summary: Independently checked methods, defined carbon substrates, assay and bounded
+    endpoints. Page1100 explicitly describes two separate4-mL aliquots; biological
+    replicate counts and uncertainty not identified.
+- evidence_id: localization
+  kind: primary_source
+  reference: https://doi.org/10.1128/aem.51.5.1144-1147.1986
+  locator: All four retained PMC239027 scan pages; Table1 and Figures1-3
+  accessed_at: '2026-10-11T05:21:22Z'
+  support: supports
+  summary: Independently read/viewed methods, table and microscopy. Distinct10mM/12h
+    fractionation assay and qualitative localization support narrower uptake claim
+    without mineral identity or transporter proof.
+- evidence_id: identity
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:30441
+  locator: Retained live-acquired chebi30441.html; label, formula and charge
+  accessed_at: '2026-10-11T05:21:22Z'
+  support: supports
+  summary: Germanium atom, Ge, charge0. Direct reviewer web open failed; retained
+    authority independently inspected and rehashed.
+- evidence_id: taxon
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=303&mode=Info
+  locator: Live name and rank
+  accessed_at: '2026-10-11T05:21:22Z'
+  support: supports
+  summary: Resolves Pseudomonas putida species; record explicitly distinguishes ATCC33015.
+- evidence_id: criticality
+  kind: authority
+  reference: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  locator: Final2025 table Germanium row; official notice date/pages
+  accessed_at: '2026-10-11T05:21:22Z'
+  support: supports
+  summary: Explicit named commodity supports scoped element mapping; no host/resource
+    inheritance.
+- evidence_id: search
+  kind: search
+  reference: 2026-10-11 bounded independent searches
+  locator: Web first returned sets; scoped hidden/ignored-inclusive local search
+  accessed_at: '2026-10-11T05:21:22Z'
+  support: context_only
+  summary: Exact DOI correction/retraction and Binding of Germanium control/uptake
+    searches found no affecting notice in returned sets. Local record/research/history/review
+    matches are this new record and dossier. Not exhaustive.
+  search_scope: 'Web queries: exact DOI correction retraction; Binding of Germanium
+    Pseudomonas control uptake; first sets, no pagination/date filters. Local rg --no-ignore
+    --hidden for exact ID/DOI across data/research/history/reviews and rehashed cited
+    raw paths; no unrelated home/temp search.'
+- evidence_id: receipts
+  kind: record_content
+  reference: research/ingests/round5-germanium-20261011.json
+  locator: 13 retained raw-artifact SHA256 checks
+  accessed_at: '2026-10-11T05:21:22Z'
+  support: supports
+  summary: All13 hashes matched. Failed .pdf is retained HTML and explicitly marked
+    not accepted primary PDF, not relied upon for science.
+- evidence_id: prior
+  kind: prior_review
+  reference: reviews/structured/20261011T052122Z-germanium-round5-independent/review.yaml
+  locator: F1 and complete original primary-source review
+  accessed_at: '2026-10-11T05:24:23Z'
+  support: supports
+  summary: Immutable independent finding and primary evidence retained.
+- evidence_id: correction
+  kind: record_content
+  reference: data/records/germanium.yaml
+  locator: chmielowski1986 partial evidence, inline correction and second history_ref
+  accessed_at: '2026-10-11T05:24:23Z'
+  support: supports
+  summary: Explicit two4mL aliquots agree with independently reread source p1100.
+    EDIT sidecar references F1 and issue30; CREATE remains unchanged.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Element, commodity and species/strain scope
+  outcome: supported
+  summary: Element identity and dated named commodity mapping supported; species CURIE
+    does not purport to denote the strain.
+  target_ids:
+  - cmmmech:germanium
+  evidence_ids:
+  - record
+  - identity
+  - taxon
+  - criticality
+- assessment_id: mechanism
+  area: evidence
+  topic: Organism, substrate, conditions and outcome
+  outcome: supported
+  summary: Source supports laboratory catechol-associated accumulation; separate2mM
+    kinetics and10mM fractionation assays are not pooled. Low solution depletion,
+    surface binding and lack of isolated product are explicit.
+  target_ids:
+  - cmmmech:germanium
+  evidence_ids:
+  - record
+  - kinetics
+  - localization
+- assessment_id: replication
+  area: consistency
+  topic: Biological versus analytical replication
+  outcome: supported
+  summary: Reported technical duplicate aliquots are preserved; missing biological
+    replicate count/statistical uncertainty are scoped accurately.
+  target_ids:
+  - cmmmech:germanium
+  evidence_ids:
+  - record
+  - kinetics
+  - prior
+  - correction
+- assessment_id: provenance
+  area: provenance
+  topic: Actual history and source access
+  outcome: supported
+  summary: CREATE and inline event describe actual work; retained artifacts rehashed;
+    blocked raw-PDF route disclosed.
+  target_ids:
+  - cmmmech:germanium
+  evidence_ids:
+  - record
+  - receipts
+findings:
+- finding_id: F1
+  issue_key: germanium-analytical-replication-scope
+  category: consistency
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Separate biological replication from duplicate analytical aliquots
+  description: The chmielowski1986 partial evidence says replication is not reported.
+    Page1100 describes two separate4-mL aliquots of each sonicated suspension for
+    scintillation counting. The broad absence claim is inaccurate even though biological
+    replicate count and statistical uncertainty remain unspecified.
+  target_ids:
+  - cmmmech:germanium
+  field_paths:
+  - mechanisms[0].evidence[1].explanation
+  evidence_ids:
+  - kinetics
+  - prior
+  - correction
+  owner_paths:
+  - path: data/records/germanium.yaml
+    repository: CultureBotAI/CMMMech
+    role: maintained_record
+  normalization_reason: Bounded wording defect; identity and main observed outcome
+    remain supported.
+  disposition_reason: Final evidence explanation explicitly distinguishes reported
+    analytical duplicates from unreported biological-replicate counts and uncertainty;
+    source p1100 independently rechecked. Correction history attached and final named/corpus/history
+    gates pass.
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261011T052122Z-germanium-round5-independent
+    finding_id: F1
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/30
+actions: []
+limitations:
+- No new experiments, statistical reanalysis, transporter validation, phase or industrial
+  recovery claim.
+- Retained scan figures independently viewed, not digitally quantified. Primary PDF
+  text accessed by web; direct raw PDF unavailable.
+- Biological replicate count and statistical uncertainty remain unavailable; analytical
+  duplicate aliquots do not solve that gap.
+- Correction/counterevidence and local duplicate searches bounded; not exhaustive.
+- Batch full tests passed before wording correction; affected record/corpus/history
+  gates repeated after it. Structured review and publication/squash gates remain separate.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261011T052122Z-germanium-round5-independent
+  relationship: Resolves exact F1 occurrence after curator correction; preserves initial
+    scientific audit.
+```
