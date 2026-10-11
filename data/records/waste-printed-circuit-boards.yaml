@@ -1,0 +1,132 @@
+id: cmmmech:waste-printed-circuit-boards
+name: Waste printed circuit boards
+material_kind: secondary_resource
+description: Waste printed circuit boards are end-of-life conductive circuit layers on insulating substrates,
+  often retaining mounted electronic components and solders. They are a heterogeneous secondary feed generated
+  by equipment use and disposal, distinct from whole electronic waste, individual removed tantalum capacitors,
+  elemental copper and a mineral species. The two curated studies concern a waste-computer board feed
+  and mixed boards supplied by a recycler; their compositions and outcomes do not define every board type.
+  No criticality designation is inherited from constituent metals.
+mechanisms:
+- id: inoculated_computer_board_leaching
+  name: Culture-associated copper mobilization from waste-computer boards
+  process: bioleaching
+  microbial: true
+  description: An Acidithiobacillus ferrooxidans inoculum was associated with greater seven-day filtered
+    copper concentration than uninoculated acidic medium in a laboratory board-fragment assay. Ferric-mediated
+    oxidation and differences in copper precipitation are plausible contributors. The experiment does
+    not isolate their relative contributions, establish a board-wide extraction percentage or produce
+    isolated copper metal.
+  context: 'An (2021), Methods 2.1–2.2, used A. ferrooxidans reported as KCTC4516, precultured for seven
+    days in iron-containing 9K medium. Waste-computer boards were crushed to pieces below 1 cm2, washed with deionized
+    water and oven-dried. Each treatment used 5 g fragments and a reported 50 mL liquid in a 50 mL conical
+    tube: deionized water, iron-free 0K medium, or 0K with 1 mL culture concentrate. The estimated inoculated
+    density was 1.4 × 10^6 cells/mL. Treatments ran in triplicate for seven days at 30 degrees C in a
+    shaking incubator; 180 rpm is specified for preculture but not separately for board incubation. Section
+    3.2 describes 0K adjusted to pH 2, without a board-assay pH time course. Samples passed a 0.2 micrometre
+    membrane before ICP-OES of Fe, Cu, Ni and Pb; retained solids underwent XRD and SEM-EDS. The reported
+    filled volume leaves headspace and oxygen transfer unclear. Culture washing, residual preculture iron
+    and an equivalent sterile spent-culture addition are not specified, so the board cannot be established
+    as the sole iron input. The paper supplies no measured initial bulk copper inventory for an extraction
+    denominator.'
+  evidence:
+  - source_ref: an2021
+    supports: support
+    explanation: Section 3.2 and Figure 2a report filtered Cu of 1047 mg/L in the inoculated arm and 413
+      mg/L in 0K alone at day seven; the day-one values were 18 and 41 mg/L respectively. These are source-reported
+      liquid concentrations, not fitted optima or isolated-product yields. Figure 2 has standard deviations
+      for three runs. Acidic medium also releases metals without inoculation.
+  - source_ref: an2021
+    supports: partial
+    explanation: Figure 1 demonstrates growth, Fe(II) loss and increased redox potential in the separate
+      iron-rich preculture. These observations do not directly measure iron redox cycling in the PCB incubation.
+      Section 3.2 describes an increase in filtrate Fe with inoculation, whereas Figure 2b generally places
+      the inoculated series below the uninoculated 0K series; that disagreement prevents a quantitative
+      Fe-enhancement claim. Figure 2c and the text show substantial Ni release in both acidic arms, with
+      somewhat different plotted concentrations rather than proof of identical outcomes or exclusive microbial
+      Ni leaching.
+  - source_ref: an2021
+    supports: partial
+    explanation: Figure 3 assigns libethenite peaks to the uninoculated 0K filter residue but does not
+      assign that phase in the inoculated residue. This supports a precipitation-related qualification
+      of filtered Cu, not absence of all Cu-containing solids. Figures 2d and 4 show lower late-stage
+      filtrate Pb and Pb-bearing inoculated residue; SEM-EDS does not establish a unique Pb compound or
+      iron-oxide phase. Section 3.3 misidentifies several Figure 4 panel letters, so the displayed panel
+      labels and caption were checked directly. Neither bacterial Pb tolerance nor universal precipitation
+      suppression is established by these observations.
+- id: separate_ferric_regeneration_column
+  name: Bioreactor regeneration of ferric lixiviant for a separate PCB column
+  process: bioleaching
+  microbial: true
+  description: An immobilized living acidophilic community regenerated oxidizing leach liquor in a flooded
+    packed-bed bioreactor connected to a column of waste boards. The combined laboratory system maintained
+    high redox potential after startup and mobilized copper. Its higher extraction than a separate unconnected-column
+    run is confounded by different ferric concentration, feed and liquid inventory, so the difference
+    cannot be assigned solely to microbial regeneration.
+  context: Iglesias-Gonzalez et al. (2022), Methods 2.1–2.4, used recycler-supplied boards from RECILEC
+    in Seville, cut to a mean area of 4.4 cm2 without pulverization or coating-removal pretreatment. A
+    consortium originally from Rio Tinto mine drainage, described as mainly Acidithiobacillus ferrooxidans
+    and Leptospirillum ferrooxidans with Acidiphilium-related heterotrophs, was immobilized on 6–8 mm
+    siliceous support particles. Individual strains and member-specific contributions are unresolved.
+    The connected run used 100 g boards, 736 mL total liquid, initial 20 g/L Fe(III), approximately 0.8
+    L/h circulation and 750 mL/h air supplied to the bioreactor. Whole-system loading was 13.6% solid/liquid;
+    the reported 65.4% refers to the packed column, not the whole liquid inventory. The unconnected run
+    specifies room temperature; no numerical connected-system temperature is supplied. Medium and replacement
+    solutions were adjusted to pH 1.25 and sulfuric acid was added during operation. Section 3.2 says
+    pH was kept below 2, but Figure 5 includes values above 2; a constant below-2 condition is not assumed.
+    Four liquor purges/replacements and acidified evaporation replacement occurred. Dissolved metals were
+    measured by atomic absorption, Fe(II) by dichromate titration, and final solid Cu by aqua-regia digestion
+    after acid washing. The initial Cu inventory was reconstructed from dissolved, wash and residual fractions
+    rather than an independent starting-feed measurement. Replicated column runs and uncertainty estimates
+    are not specified.
+  evidence:
+  - source_ref: iglesias2022
+    supports: support
+    explanation: Sections 3.2–4 and Figures 5–6 report 90% copper dissolution after 25 days in the connected
+      100 g run, using a reconstructed initial Cu grade of approximately 30%. Figure 5 shows the bioreactor
+      outlet approaching about 700 mV versus Ag/AgCl after an initial drop and rise, not constant potential
+      from time zero. The result concerns solubilization into circulating and purged liquors, not a recovered
+      copper-metal product. Fraction accounting and the changing solution inventory matter to its denominator.
+  - source_ref: iglesias2022
+    supports: partial
+    explanation: The unconnected comparison used 124 g boards, 2 L liquor, three successive stored biogenic-ferric
+      batches initially 12.7, 13.1 and 13.8 g/L, and approximately 25% reconstructed Cu grade; it reached
+      62.2% Cu dissolution after 25 days. It is not a matched sterile control for the connected 100 g,
+      736 mL, 20 g/L Fe(III) run. Both systems used biologically produced lixiviant and sterilization
+      of the stored liquor is not demonstrated. Sections 2.2 and 3.1 describe no observed metal solubilization
+      in preliminary acid-only tests at pH 1.25, but supply no quantitative detection limits or equivalent
+      long-term column control.
+  - source_ref: iglesias2022
+    supports: partial
+    explanation: Figures 5–6 support sustained operation under this particular feed and culture regime;
+      they do not prove universal resistance to PCB toxicity, complete separation of all cells from boards,
+      or which community member regenerated iron. Constant outlet potential is an operational proxy rather
+      than a species-specific activity assay. The slower Cu-release interval coincided with higher dissolved
+      Cu, and changing liquor also changed chemistry. Claims of zero reagent consumption are not adopted
+      because acid, fresh ferric liquor and liquid replacements were used. Solvent extraction and electrowinning
+      are proposed downstream operations, not demonstrated isolated-product recovery or industrial deployment
+      in this study.
+sources:
+- id: an2021
+  title: An, J. (2021). Characteristics of Metals Leached from Waste Printed Circuit Boards Using Acidithiobacillus
+    ferrooxidans. Minerals 11(2):224. DOI 10.3390/min11020224; published 22 February 2021. Full eight-page
+    article, Methods 2.1–2.2, Results 3.1–3.3 and Figures 1–4 inspected.
+  url: https://doi.org/10.3390/min11020224
+  accessed_on: '2026-10-11'
+- id: iglesias2022
+  title: Iglesias-Gonzalez, Ramirez, Lorenzo-Tallafigo, Romero-García, Mazuelos, Romero and Carranza (2022).
+    Copper recovery from unground printed circuit board by biogenic ferric at high solid/liquid ratio.
+    Minerals Engineering 180:107471. DOI 10.1016/j.mineng.2022.107471; April issue, article states available
+    online 4 March 2022. Full eight-page primary article, Methods 2.1–2.4, Results 3.1–3.2, discussion
+    and Figures 1–6 inspected.
+  url: https://doi.org/10.1016/j.mineng.2022.107471
+  accessed_on: '2026-10-11'
+curation_history:
+- timestamp: '2026-10-11T12:40:45.202303+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created process-defined waste-board identity and two separately scoped primary laboratory leaching
+    mechanisms, preserving contrasting controls, source discrepancies, analytical denominators and scale
+    limitations.
+history_refs:
+- history/records/waste-printed-circuit-boards/2026-10-11T124047Z-codex-fd23ae.yaml
