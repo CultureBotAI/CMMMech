@@ -170,6 +170,11 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Copper-smelter slag](data/records/copper-smelter-slag.yaml) | Sulfur-oxidizer-associated copper mobilization | Slag-dependent outcomes, acidity and loading conflicts; no isolated product |
 | [Coal-mine-drainage treatment solids](data/records/coal-mine-drainage-treatment-solids.yaml) | Isolate-associated REE mobilization | Site-specific sterile release, below-control outcomes and unresolved mass accounting |
 | [Spent nickel-metal-hydride batteries](data/records/spent-nickel-metal-hydride-batteries.yaml) | Heterotrophic culture-metabolite leaching | Null treatments, different media and source yield/timing conflicts; no isolated product |
+| [Blast-furnace cast-house dust](data/records/blast-furnace-cast-house-dust.yaml) | Sulfur-oxidizer-associated zinc mobilization in repeated reactor cycles | Carryover, unmatched controls and a supplementary value conflict limit cycle-specific yields |
+| [Heavy-fuel-oil combustion ash](data/records/heavy-fuel-oil-combustion-ash.yaml) | Fungal spent-medium leaching | Undefined metal assay and unmatched controls; culture reactor scale differs from leaching scale |
+| [Discarded LED lamps](data/records/discarded-led-lamps.yaml) | Biogenic-acid leaching of prepared lamp powder | Chemical comparator superiority for Nd and source normalization conflicts remain explicit |
+| [Biogas-desulfurization sulfur residue](data/records/biogas-desulfurization-sulfur-residue.yaml) | Mixed-culture acid production from a sulfur-rich residue | Conflicting culture accession and incomplete sulfur balance; battery leaching is a separate downstream use |
+| [Spent zinc-manganese button-cell batteries](data/records/spent-zinc-manganese-button-cell-batteries.yaml) | Culture-associated leaching after thermal pretreatment | Inhibited treatments, uncertain strain identity and unmatched chemistry limit generalization |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -201,7 +206,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [twenty-second expansion reviews](research/ingests/round22-20261011-publication.md),
 [twenty-third expansion reviews](research/ingests/round23-20261011-publication.md),
 [twenty-fourth expansion reviews](research/ingests/round24-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round24-frontier-20261011.md), and
+[twenty-fifth expansion reviews](research/ingests/round25-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round25-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

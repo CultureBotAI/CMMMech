@@ -1,0 +1,209 @@
+{
+  "created_at": "2026-10-11T14:57:34.674533+00:00",
+  "researcher": "Codex (GPT-6; Codex)",
+  "base": "baedff25eafad1516270916a651af6754ffa5996",
+  "worktree": "/private/tmp/CMMMech-expansion-round25-20261011",
+  "scope": "Heavy-fuel-oil combustion residue identity and microbial leaching; no dated criticality-list claim; primary 2015-2016 leads with current bounded access/correction checks.",
+  "record_path": "data/records/heavy-fuel-oil-combustion-ash.yaml",
+  "record_sha256": "bba70873e33a58d1834885cb4f9a42651a50d6c37c3386a5795becee07bb4b96",
+  "search": {
+    "provider": "web search/open and local ripgrep",
+    "date": "2026-10-11",
+    "queries": [
+      "\"10.1039/C5RA00128E\"",
+      "\"10.1016/j.wasman.2016.04.004\"",
+      "\"10.1039/C5RA24870A\"",
+      "\"heavy fuel oil\" \"bioleaching\" vanadium nickel",
+      "\"C5RA24870A\" filetype:pdf",
+      "\"C5RA00128E\" \"full\" pdf",
+      "\"2016.04.004\" pdf Rasoulnia",
+      "\"10.1039/C5RA24870A\" correction OR retraction",
+      "\"10.18178/ijcea.2016.7.6.606\" correction retraction",
+      "\"PTCC 5210\" Aspergillus niger IROST",
+      "\"Bioleaching of Precious Metals from an Oil-Fired Ash\" IJCEA",
+      "site.ptcc.ir \"5210\"",
+      "site.irost.org \"5210\" \"niger\"",
+      "\"10.18178/ijcea.2016.7.6.606\" supplementary",
+      "\"oil-fired ash\" \"Rasoulnia\" control",
+      "\"Maximization of organic acids production\" \"pdf\"",
+      "\"V and Ni recovery\" \"C5RA24870A\" \"pdf\"",
+      "\"PTCC 5210\" culture collection",
+      "\"Bioleaching of Precious Metals from an Oil-Fired Ash\" correction erratum"
+    ],
+    "filters": "No date/domain filters except explicit query operators; first returned result sets only, no pagination. Some broad terms returned unrelated results; no completeness claim."
+  },
+  "dedup": {
+    "options": "rg --no-ignore --hidden --follow",
+    "boundaries": [
+      "data/records",
+      "research",
+      "reviews",
+      "history",
+      "/private/tmp/cmm-round24-frontier-raw",
+      "/private/tmp/cmm-round25-oil-ash-raw"
+    ],
+    "patterns": [
+      "C5RA00128E|C5RA24870A|2016\\.04\\.004|oil.fly.ash|oil.fired|heavy.fuel.oil|2014\\.09\\.089",
+      "ijcea.2016.7.6.606|606-G0007|oil.fired.ash|power.plant.residual.ash"
+    ],
+    "receipts": [
+      "/private/tmp/cmm-round25-oil-ash-dedup.txt",
+      "/private/tmp/cmm-round25-oil-ash-dedup-expanded.txt"
+    ],
+    "result": "Known round24 oil-ash and EAF-slag frontier leads, not newly discovered literature. No oil-combustion-ash resource root in the searched pre-curation corpus. Existing coal, municipal-waste and sewage-sludge incineration ashes and refinery catalyst roots differ. The initially guessed round24-amd-solids-raw directory did not exist; the dossier named round24-frontier-raw was subsequently inspected. No machine-wide search claimed."
+  },
+  "acquisition": [
+    {
+      "requested_url": "https://pubs.rsc.org/en/content/getauthorversionpdf/C5RA00128E",
+      "retrieved_at": "2026-10-11T14:51:09.640907+00:00",
+      "path": "/private/tmp/cmm-round25-oil-ash-raw/rastegar2015-author.pdf",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "requested_url": "https://pubs.rsc.org/en/content/getauthorversionpdf/C5RA24870A",
+      "retrieved_at": "2026-10-11T14:51:09.642771+00:00",
+      "path": "/private/tmp/cmm-round25-oil-ash-raw/rasoulnia2016-author.pdf",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "requested_url": "https://pubs.rsc.org/en/content/articlelanding/2015/ra/c5ra00128e",
+      "retrieved_at": "2026-10-11T14:51:09.643438+00:00",
+      "path": "/private/tmp/cmm-round25-oil-ash-raw/rastegar2015-landing.html",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "requested_url": "https://pubs.rsc.org/en/content/articlelanding/2016/ra/c5ra24870a",
+      "retrieved_at": "2026-10-11T14:51:09.644132+00:00",
+      "path": "/private/tmp/cmm-round25-oil-ash-raw/rasoulnia2016-landing.html",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "requested_url": "https://doi.org/10.1016/j.wasman.2016.04.004",
+      "retrieved_at": "2026-10-11T14:51:09.645909+00:00",
+      "path": "/private/tmp/cmm-round25-oil-ash-raw/rasoulnia2016-wasman.html",
+      "status": 200,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0956053X16301672",
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 2786,
+      "sha256": "e7b873ab2ef0152ce979162af6e4c409a9e4c24fbc1b8fc16d785bd76fb5236b",
+      "pdf_magic": false
+    },
+    {
+      "requested_url": "https://www.ijcea.org/vol7/606-G0007.pdf",
+      "retrieved_at": "2026-10-11T14:52:03.569040+00:00",
+      "status": 200,
+      "final_url": "https://www.ijcea.org/vol7/606-G0007.pdf",
+      "content_type": "application/pdf",
+      "bytes": 1671010,
+      "sha256": "2d93472f2b7fdc1f056c4be031ee3b9bb187ed1f9e29193ad7b67d44cb15f269",
+      "pdf_magic": true,
+      "path": "/private/tmp/cmm-round25-oil-ash-raw/rasoulnia2016-ijcea.pdf"
+    }
+  ],
+  "web_access": [
+    {
+      "url": "https://pubs.rsc.org/en/content/getauthorversionpdf/C5RA24870A",
+      "state": "Initial web PDF opening reported 35 pages and exposed introduction and early Methods through printed page 6. Continuation and screenshot requests then failed with 403/Internal Error; direct download also HTTP 403. Not a complete primary or figure audit."
+    },
+    {
+      "url": "https://pubs.rsc.org/en/content/getauthorversionpdf/c5ra24870a",
+      "state": "Lowercase public author-version route failed in web reader."
+    },
+    {
+      "url": "https://pubs.rsc.org/en/content/articlepdf/2016/ra/c5ra24870a",
+      "state": "Public publisher PDF route failed in web reader."
+    },
+    {
+      "url": "https://pubs.rsc.org/en/content/articlehtml/2016/ra/c5ra24870a",
+      "state": "Redirected to unauthenticated landing; subsequent landing open failed with HTTP 403."
+    },
+    {
+      "url": "https://pubs.rsc.org/en/content/getauthorversionpdf/C5RA00128E",
+      "state": "Web reader inaccessible and direct download returned HTTP 403; primary landing metadata/abstract read."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27095291/",
+      "state": "Browser-check page, not full primary text."
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0960852416307738",
+      "state": "Indexed primary title and limited description seen; direct open403. No complete methods or figures."
+    }
+  ],
+  "accepted_source": {
+    "doi": "10.18178/ijcea.2016.7.6.606",
+    "authors": [
+      "Payam Rasoulnia",
+      "Seyyed Mohammad Mousavi"
+    ],
+    "year": 2016,
+    "journal": "International Journal of Chemical Engineering and Applications",
+    "volume": "7(6)",
+    "pages": "365-368",
+    "version": "Complete publisher PDF, four pages; received April 18 and revised August 15, 2016; December issue. Recent crawler timestamps are not publication dates.",
+    "url": "https://www.ijcea.org/vol7/606-G0007.pdf",
+    "landing": "https://www.ijcea.org/index.php?a=show&c=index&catid=81&id=981&m=content",
+    "inspection": "All four PDF pages, complete Sections II-IV and references read; all four figures visually checked using local rendered pages. There are no tabulated data in this paper. No supplementary artifact is linked by the inspected publisher landing or cited in the complete PDF; bounded DOI supplementary search did not find one.",
+    "format": "PDF narrative, plotted results, XRD and FE-SEM; no original liquid-assay dataset, dictionary or deposited measurement series inspected.",
+    "role": [
+      "material_identity",
+      "primary_mechanism_observation"
+    ],
+    "reuse": "Current journal Copyright and Licensing page states CC BY4.0 generally, with possible exceptions. The 2016 PDF itself does not print an individual license; no blanket claim about retrospective exception-free licensing is made. Raw paper and rendered figures remain outside Git.",
+    "terms_url": "https://www.ijcea.org/list-135-1.html"
+  },
+  "identity": {
+    "material_kind": "secondary_resource",
+    "chosen_name": "Heavy-fuel-oil combustion ash",
+    "rationale": "The selected paper connects oil-fired residue to heavy-fuel-oil combustion but does not report the sample collection fraction needed to call this feed specifically fly ash. Its Tehran plant is unnamed; Neka provenance from a different incompletely inspected RSC source is not borrowed.",
+    "organism": "Source-reported Aspergillus niger PTCC 5210 purchased from IROST. Current PTCC accession authority not independently resolved; no strain CURIE invented.",
+    "taxon": {
+      "id": "NCBITaxon:5061",
+      "label": "Aspergillus niger",
+      "rank": "species",
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061&mode=Info",
+      "checked_on": "2026-10-11"
+    },
+    "criticality": "Not asserted; constituent elements and resource are distinct."
+  },
+  "claims_and_limits": [
+    "Actual ash milled and screened below 75 micrometres; study provenance is a Tehran thermal power plant, not an authenticated Neka sample.",
+    "PTCC 5210 culture, 100 g/L sucrose medium ; 14-day flask growth at 30 degrees C / 130 rpm versus 7-day 1-L bubble-column growth at 30 degrees C / 760 mL/min. Source inoculum count 10^7 has no stated volume denominator or final inoculum fraction.",
+    "Biomass removal stated but method and residual-cell test absent; subsequent ash contact at 3% w/v, 60 degrees C, 7 days. Culture working volume is not leaching-vessel volume.",
+    "Figure 2 and Results report 97% V / 50% Ni for flask spent medium and 100% V / 33% Ni for reactor spent medium. These are source-reported extraction values, not independently reconstructed or isolated-product yields.",
+    "No liquid-metal assay, sampling fraction, yield equation, replication count or Figure 2 uncertainty is described. Figure 1 agar-growth error bars are undefined and do not constitute an ash-leaching control.",
+    "No matched sterile-medium, pure-acid or pH-controlled leach comparison. Acid-rich culture fluids and reported leaching support an association; unique acid causality and microbial enhancement are not established.",
+    "Proposed nickel oxalate is not identified in Figure 3, which labels NiO in treated ash. Text emphasizes an iron sulfate residue but the plotted treated assignments include other phases. No complete V removal, single-phase residue, quantified porosity, safe reuse, product recovery or industrial deployment is inferred.",
+    "Biomass accumulation caused aeration difficulty for longer reactor cultivation. Unequal culture times/media histories preclude a general scale-superiority claim."
+  ],
+  "related_studies": [
+    {
+      "doi": "10.1039/C5RA00128E",
+      "decision": "Deferred extension, not accepted mechanism or product evidence",
+      "checked": "Primary RSC landing title, authors, bibliographic metadata and abstract; full methods/figures inaccessible after bounded public attempts.",
+      "next": "Obtain complete primary and supplementary evidence; assess Acidithiobacillus iron/acid controls, optimization verification, precipitation/calcination yields and whole-process mass balance."
+    },
+    {
+      "doi": "10.1039/C5RA24870A",
+      "decision": "Deferred extension; partial accepted-manuscript methods only",
+      "checked": "Initial indexed/reader title, introduction and early Methods; later text/figures failed.",
+      "next": "Acquire complete accessible version, reconcile its Neka feed provenance with the different IJCEA wording, assess model-versus-measured outcomes, chemical controls and TCLP scope. Matching authors and 97% / 50% result mean this must not automatically count as independent replication."
+    },
+    {
+      "doi": "10.1016/j.wasman.2016.04.004",
+      "decision": "Deferred extension",
+      "checked": "Metadata/title and request-only author page. DOI downloaded a 2786-byte Elsevier linking page, not a paper; PubMed browser check.",
+      "next": "Acquire full thermal-pretreatment methods, one-/two-step/spent-medium controls, measured results and all figures before adopting extraction values."
+    },
+    {
+      "doi": "10.1016/j.biortech.2016.05.114",
+      "decision": "New follow-up lead requiring full source verification",
+      "checked": "Primary indexed title/limited description at PII S0960852416307738 and DOI traced in review bibliography; direct primary open returned HTTP 403.",
+      "next": "Inspect original bubble-column optimization and quantify overlap with the accepted IJCEA report; no values imported."
+    }
+  ],
+  "corrections_and_counterevidence": "Bounded exact DOI/title correction/retraction/erratum queries, relevant publisher landing and full accepted PDF yielded no affecting notice in inspected results; not exhaustive. Mixed Ni versus V response, aeration limits and missing matched controls are retained. Related papers are not independent proof or full counterevidence until acquired.",
+  "native_mapping": "Existing secondary_resource, bioleaching, microbial:true and support/partial evidence fields suffice. No yields converted into native concentration observations or invented sampling dates. No schema change needed.",
+  "history_path": "history/records/heavy-fuel-oil-combustion-ash/2026-10-11T145457Z-codex-1000af.yaml",
+  "report_path": "research/sources/round25-oil-ash/20261011T145734Z-source-investigation.md"
+}
