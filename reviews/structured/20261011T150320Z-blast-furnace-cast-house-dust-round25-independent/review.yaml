@@ -1,0 +1,410 @@
+schema_version: 1.0.0
+review_id: 20261011T150320Z-blast-furnace-cast-house-dust-round25-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of blast-furnace cast-house dust
+started_at: '2026-10-11T15:01:05.550323Z'
+finished_at: '2026-10-11T15:03:20.135443Z'
+reviewer:
+  identity: Codex /root/round24_identity_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Agent /root/round24_copper_slag authored this target. Agent
+    /root/round24_identity_frontier independently inspected exact record/provenance,
+    full primary main/SI evidence and the asserted contextual evidence after canonical
+    inspect, and made no target edits. Shared worktree, curator-acquired sources and
+    root-run final batch are disclosed.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The frozen record supports a distinct secondary-resource identity and conditional
+  culture-associated Zn mobilization in serial laboratory cycles. It preserves source-table
+  conflict, retained-solid accounting and unmatched-control limitations. No actionable
+  curation finding remains.
+source:
+  git_revision: baedff25eafad1516270916a651af6754ffa5996
+  state: working_tree
+  inputs:
+  - path: data/records/blast-furnace-cast-house-dust.yaml
+    sha256: cec7e9f080709db56d14c65cb9700ff812d6ae48db8a0653612cd166a14559b2
+    role: target
+  - path: history/records/blast-furnace-cast-house-dust/2026-10-11T145820Z-codex-f1ffa6.yaml
+    sha256: 26a2fcb26b69684abeda15a9ebf60bf572bae7b74a1cf4ddd54e815520149a7b
+    role: context
+  - path: research/ingests/round25-bf-dust-sources-20261011.json
+    sha256: 3d8f15d3ac589a8a1aee87034b2cc5e475d671602637eb76ed2c2dcde0bfa7db
+    role: context
+  - path: research/ingests/round25-bf-dust-sources-20261011.md
+    sha256: a21bfe220375a74e35c160c1fd296d3d9575388143f8c46c4724c7275b5b28bd
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: All maintained fields, sources and actual history; full 2025 primary
+    experiment and supplement plus asserted 2024 feed/chemical context.
+  selection: One assigned new round25 record, reviewed independently of its curator.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:blast-furnace-cast-house-dust
+  exclusions:
+  - target: Uncurated 2024 A. ferrooxidans mechanism outcomes, original raw inventories
+      and industrial feasibility
+    reason: The earlier biological outcome is not asserted in this record; no raw
+      inventories or industrial demonstration are available for independent verification.
+targets:
+- target_id: cmmmech:blast-furnace-cast-house-dust
+  path: data/records/blast-furnace-cast-house-dust.yaml
+  label: Blast-furnace cast-house dust
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/blast-furnace-cast-house-dust.yaml
+    role: maintained scientific record
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/blast-furnace-cast-house-dust.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Reviewer independently executed named validation; terminal session 85886
+    exit 0, one record checked and zero failures.
+  target_ids:
+  - cmmmech:blast-furnace-cast-house-dust
+- check_id: batch
+  name: Completed batch checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Coordinating root executed the final batch, terminal 0: 308 tests passed,
+    3 skipped in 98.72 seconds; 165 records and 186 histories valid. Reviewer read
+    the actual logs and terminal receipt; this was not rerun by reviewer.'
+  target_ids:
+  - cmmmech:blast-furnace-cast-house-dust
+- check_id: nonempty
+  name: Required-record validation
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Coordinating root terminal 0; actual final-require.log reports 165 records
+    checked and zero failures. Reviewed hash matches the gated record hash.
+  target_ids:
+  - cmmmech:blast-furnace-cast-house-dust
+- check_id: history
+  name: Append-only history validation
+  command: uv run --locked cmmmech validate-history --base baedff25eafad1516270916a651af6754ffa5996
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Coordinating root terminal 0; 186 history records and zero errors at trusted
+    base baedff25eafad1516270916a651af6754ffa5996. Actual final-history.log inspected.
+  target_ids:
+  - cmmmech:blast-furnace-cast-house-dust
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/blast-furnace-cast-house-dust.yaml
+  locator: All maintained fields, source links, evidence and history_refs
+  accessed_at: '2026-10-11T15:03:20.135443Z'
+  support: supports
+  summary: Exact frozen record read after canonical inspect. Process-defined secondary-resource
+    identity, absence of inherited criticality, qualified serial-culture outcome and
+    uncommitted provenance are accurately retained.
+  snapshot_sha256: cec7e9f080709db56d14c65cb9700ff812d6ae48db8a0653612cd166a14559b2
+- evidence_id: main
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.bej.2025.109859
+  locator: Full Methods 2.1–2.7, Results 3.1–3.5 and conclusions; all Figures 1–11
+    and Tables 1–3 visually inspected on PDF pages 3–8
+  accessed_at: '2026-10-11T15:03:20.135443Z'
+  support: supports
+  summary: Independent full main-text and visual audit confirms actual cast-house
+    feed, sulfur-containing culture, 3 L serial cycles at 30 degrees C and 160 rpm,
+    staged loading, liquid filtration and source-defined apparent Zn/Fe percentages.
+    Equation 3 subtracts retained liquid but does not resolve older residual-solid
+    dissolution. Uninoculated medium batches lack the reactor preacidification and
+    history. Fitted oxygen-transfer parameters, local residue concentrations and proposed
+    tonnage/reuse do not establish isolated products, balanced recovery or industrial
+    deployment.
+  snapshot_sha256: 569ccc49d1455b33e335e32623a88f8ab2fa5c42cde446efaa7ba12f395e2d25
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S1369703X25002335-mmc1.docx
+  locator: Complete native table text and both tables on the one-page LibreOffice
+    render; first table 0.42 vvm/Day 7/Zn and second table pooled Day 7/Zn
+  accessed_at: '2026-10-11T15:03:20.135443Z'
+  support: supports
+  summary: The first table repeats 75.22526 with SD 3.01688 for the 0.42-vvm day-7
+    and day-14 Zn rows, whereas Figure 6 shows a lower day-7 group and the second
+    table gives pooled day-7 mean 68.05669. Source contradiction is preserved without
+    replacement values or independently validated significance. Serial cycles and
+    repeated timepoints do not establish independent reactor replication. Cached caption
+    numbers differ after field recalculation, so record row-based locators are appropriate.
+  snapshot_sha256: 7408b3f16635d2f5c2cd1c05ba4dba5bf30515b261ceeb304ee9a2be89f7e00a
+- evidence_id: context
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.mineng.2023.108535
+  locator: Introduction; Methods 2.1–2.3 and Results 3.1/3.3; Table 1 and Figures
+    2–4 visually inspected on PDF pages 4–5
+  accessed_at: '2026-10-11T15:03:20.135443Z'
+  support: context_only
+  summary: The earlier primary paper supplies tapping/casting origin, Fe-rich mixed
+    mineralogy with zincite and Zn-bearing spinels, and a separate 0.5 M sulfuric-acid
+    assay showing chemical Zn mobilization. Its A. ferrooxidans culture results are
+    not imported as later-culture evidence or independent replication. Some plotted
+    chemical percentages exceed 100%; record avoids numerical transfer.
+  snapshot_sha256: 98e90728bb1113e94885eb9203c1040a317f15e4f0e93f2c9d42f946a9897169
+- evidence_id: taxon
+  kind: primary_source
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info
+  locator: Live official Taxonomy ID, current name and rank fields, independently
+    opened 2026-10-11
+  accessed_at: '2026-10-11T15:03:20.135443Z'
+  support: supports
+  summary: NCBITaxon:930 resolves Acidithiobacillus thiooxidans at species rank. No
+    collection identifier or experimental-stock authentication is supplied in the
+    selected main paper/supplement; no strain or genotype is invented.
+- evidence_id: search
+  kind: search
+  reference: https://doi.org/10.1016/j.bej.2025.109859
+  locator: Independent 2026-10-11 web searches and local hidden/ignored/follow resource
+    search
+  accessed_at: '2026-10-11T15:03:20.135443Z'
+  support: context_only
+  summary: Exact queries "10.1016/j.bej.2025.109859" correction retraction and "10.1016/j.mineng.2023.108535"
+    correction retraction returned no affecting notice in inspected first result sets.
+    Local cast-house/109859/108535 search found the new resource and previous frontier/context
+    mentions, not a second record within the inspected corpus.
+  search_scope: Web first returned result sets, no filters/pagination. rg --no-ignore
+    --hidden --follow across data/records, research, reviews, history and /private/tmp/cmm-round25-bf-dust-raw;
+    receipt /private/tmp/cmm-round25-bf-review-dedup.txt. Not a machine-wide or exhaustive
+    literature search.
+- evidence_id: history
+  kind: record_content
+  reference: history/records/blast-furnace-cast-house-dust/2026-10-11T145820Z-codex-f1ffa6.yaml
+  locator: Complete CREATE sidecar and separate inline event
+  accessed_at: '2026-10-11T15:03:20.135443Z'
+  support: supports
+  summary: Actual codex/GPT-6/codex actor, record target, issue 90 and UTC creation
+    event agree with scope. Inline event precedes sidecar and does not impersonate
+    historical curation. Trusted-base history check passes.
+  snapshot_sha256: 26a2fcb26b69684abeda15a9ebf60bf572bae7b74a1cf4ddd54e815520149a7b
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round25-final-batch-terminal.json
+  locator: Actual terminal receipt and all three logs, compared with canonical inspect/current
+    SHA
+  accessed_at: '2026-10-11T15:03:20.135443Z'
+  support: supports
+  summary: Full batch, required-record and trusted-base history checks completed successfully.
+    All record/input hashes remain unchanged from inspect; current target matches
+    gated bytes. Required checks are not inferred from a running session.
+  snapshot_sha256: 1a824b26e98d09ece2c6ff116385fdc5651f4d2de7245d3f3a20c15ac3cc32ce
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Distinct secondary resource and criticality boundary
+  outcome: supported
+  summary: Cast-house tapping/casting dust is a defensible process-defined resource.
+    The record separates flue-gas dust, EAF dust, slag and elemental/mineral constituents
+    without fragmenting by supplier.
+  target_ids:
+  - cmmmech:blast-furnace-cast-house-dust
+  evidence_ids:
+  - record
+  - main
+  - context
+  dimensions:
+  - name: material_kind
+    value: secondary_resource
+    definition: Actual Austrian steelmaker feed exemplifies a process class, not a
+      universal composition.
+    evidence_ids:
+    - record
+    - main
+    - context
+  - name: criticality
+    value: Not asserted
+    definition: No jurisdiction, list or edition is assigned to this mixed resource;
+      no inherited constituent designation.
+    evidence_ids:
+    - record
+- assessment_id: organism
+  area: evidence
+  topic: Reported culture and biomass state
+  outcome: supported
+  summary: The living culture assignment is adequately scoped to source report and
+    species identity; no inferred collection strain or stock provenance.
+  target_ids:
+  - cmmmech:blast-furnace-cast-house-dust
+  evidence_ids:
+  - record
+  - main
+  - taxon
+  dimensions:
+  - name: biomass_state
+    value: Living sulfur-fed acidophile culture
+    definition: Cultivated cells are present during reactor operation; metabolic activity
+      is inferred from culture-associated acid/sulfate behavior, not directly counted.
+    evidence_ids:
+    - main
+  - name: organism
+    value: Acidithiobacillus thiooxidans; NCBITaxon:930
+    definition: Species-level identifier only; no strain accession or independent
+      stock authentication.
+    evidence_ids:
+    - main
+    - taxon
+- assessment_id: design
+  area: evidence
+  topic: Actual feed, operation and controls
+  outcome: supported
+  summary: Substrate characterization, repeated retention/replacement and control
+    mismatch are disclosed. Biological association is conditional on the tested acidic
+    culture system.
+  target_ids:
+  - cmmmech:blast-furnace-cast-house-dust
+  evidence_ids:
+  - record
+  - main
+  - supplement
+  dimensions:
+  - name: feed_and_pretreatment
+    value: Cast-house dust; 99.9% reported dry mass
+    definition: 105-degree characterization drying does not establish bulk thermal
+      treatment or sterile dust.
+    evidence_ids:
+    - main
+  - name: conditions
+    value: 3 L, 30 degrees C, 160 rpm; 14-day serial cycles; 50–125 g/L staged dust
+    definition: Two-thirds withdrawal retains 1 L with culture, liquid and residual
+      solid; three 125-g/L cycles at each of 0.42 and 0.50 vvm are serial observations.
+    evidence_ids:
+    - main
+  - name: controls
+    value: Uninoculated 100-mL medium batches
+    definition: No matched reactor geometry, preacidification or pH trajectory; direct
+      cell effect cannot be separated from chemical history.
+    evidence_ids:
+    - main
+- assessment_id: accounting
+  area: evidence
+  topic: Measured outcomes, carryover and source conflict
+  outcome: supported
+  summary: Reported filtered-liquid Zn/Fe observations are source-qualified apparent
+    cycle percentages. The unresolved supplement row is retained and no corrected
+    yield/significance is fabricated.
+  target_ids:
+  - cmmmech:blast-furnace-cast-house-dust
+  evidence_ids:
+  - record
+  - main
+  - supplement
+  dimensions:
+  - name: outcome
+    value: Day 7 Zn 68.1 ± 2.1%, Fe 5.1 ± 2.1%; day 14 Zn 75.2 ± 5.5%, Fe 9.0 ± 1.5%
+    definition: Paper pooled means and reported SDs across six serial cycles; Equation
+      3 liquid-carryover subtraction/new-dust denominator does not close older-solid,
+      sampling or process inventories.
+    evidence_ids:
+    - main
+    - supplement
+  - name: initial_sample
+    value: 30 minutes after dust addition
+    definition: Day 0 is already reacted liquid, not the initial unreacted feed state.
+    evidence_ids:
+    - main
+  - name: source_conflict
+    value: First supplementary table day-7 Zn at 0.42 vvm conflicts with Figure 6
+      and pooled table
+    definition: Duplicated day-14 value is not silently repaired; raw cycle inventories
+      are unavailable.
+    evidence_ids:
+    - main
+    - supplement
+- assessment_id: scope
+  area: evidence
+  topic: Mechanistic and deployment limits
+  outcome: supported
+  summary: Record avoids a unique cellular mechanism, universal oxygen conclusion,
+    isolated-product claim and industrial reuse extrapolation.
+  target_ids:
+  - cmmmech:blast-furnace-cast-house-dust
+  evidence_ids:
+  - record
+  - main
+  - context
+  dimensions:
+  - name: causal_scope
+    value: Culture-associated acidic mobilization
+    definition: Sulfate and ORP are non-specific proxies; medium/carryover sulfate
+      contributes. Earlier acid leaching demonstrates a chemical route under different
+      conditions.
+    evidence_ids:
+    - main
+    - context
+  - name: scale_and_product
+    value: Laboratory 3-L reactor; filtered-liquid mobilization
+    definition: Fitted transfer coefficients, selected residue concentration changes
+      and projected regional tonnage are not recovered Zn products, validated steelmaking
+      reuse or industrial biological operation.
+    evidence_ids:
+    - main
+- assessment_id: provenance
+  area: provenance
+  topic: Frozen state and independent review
+  outcome: supported
+  summary: Author and reviewer are different agents. Exact record, history and dossiers
+    match inspect; required checks match final bytes. Reviewer made no target or dossier
+    edits.
+  target_ids:
+  - cmmmech:blast-furnace-cast-house-dust
+  evidence_ids:
+  - record
+  - history
+  - gates
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- Experimental strain/stock provenance is unresolved despite correct species-level
+  identity.
+- Six serial reactor cycles share retained liquor and solids; they do not establish
+  six independent reactors or an independently valid significance test.
+- The supplement day-7 Zn value conflicts with its pooled table and main figure. No
+  raw data or corrected value is available.
+- Equation 3 carryover subtraction does not isolate fresh-feed dissolution from retained
+  solids or close sampling/residue inventories; percentages remain source-reported
+  apparent cycle values.
+- Uninoculated medium controls differ in geometry, acidity and culture history. No
+  unique cellular adhesion, enzyme, EPS or oxygen-limitation mechanism is demonstrated.
+- Selected solid concentrations and SEM distributions do not yield a full element
+  balance, isolated Zn product or validated residue reuse. Scale is laboratory, despite
+  industrial feed origin.
+- Correction and duplicate searches were bounded. Reviewer used curator-acquired primary
+  files and root-executed terminal batch checks, and independently executed named
+  validation.
+notes:
+- Record and dossier orientation preceded canonical inspect; detailed scientific assessment
+  followed exact-state capture.
+- All main Figures 1–11 and Tables 1–3 were visually checked, as were both complete
+  SI tables. Context paper Table 1 and Figures 2–4 were visually checked; unrelated
+  biological outcomes were not audited for import.
+- No corrective finding or issue is invented for source limitations that the record
+  already preserves. A final whole-bundle review check will follow saving by the coordinating
+  agent.
+tags:
+- round25
+- independent
+- scientific-review
+- secondary-resource

@@ -1,0 +1,108 @@
+{
+  "recorded_at": "2026-10-11T14:55:59.780709+00:00",
+  "researcher": "Codex (GPT-6; Codex), root curator",
+  "git_base": "baedff25eafad1516270916a651af6754ffa5996",
+  "branch": "curate/cmm-expansion-round25-20261011",
+  "issue": 90,
+  "search": {
+    "provider": "web search, first returned results per query; no pagination or date filters",
+    "date": "2026-10-11",
+    "exact_queries": [
+      "\"S0304386X18309113\"",
+      "\"alkaline button\" bioleaching bacteria fungi",
+      "\"10.1016/j.hydromet.2019.06.003\" pdf",
+      "\"Using bacterial culture supernatant\" filetype:pdf",
+      "Sadeghabad Mousavi 2019 button-cell batteries 81 91 pdf",
+      "\"Thermal pretreatment of spent button cell batteries\"",
+      "\"Thermal pretreatment of spent button cell batteries\" correction retraction",
+      "\"10.1016/j.hydromet.2019.06.003\" \"pdf\" batteries",
+      "\"button cell\" bioleaching \"control\" Acidithiobacillus",
+      "\"PTCC 1664\" site:irost.ir",
+      "\"s11814-022-1160-x\" correction OR retraction OR supplementary",
+      "\"PTCC1664\" ferrooxidans",
+      "\"PTCC 1664\" Acidithiobacillus collection",
+      "\"Thermal pretreatment of spent button cell batteries\" \"supplementary\"",
+      "Acidithiobacillus ferrooxidans PTCC IROST culture collection",
+      "\"1664\" site:ptcc.irost.org",
+      "\"1664\" \"Pseudomonas\" site:irost.org",
+      "\"Thermal pretreatment\" \"1664\"",
+      "\"brake pad\" \"bioleaching\" \"629\" 2019",
+      "\"Extraction of silver from spent silver oxide-zinc button cells\" DOI"
+    ],
+    "dedup": "rg --no-ignore --hidden --follow; data, research, reviews, history, round24 frontier/NiMH raw directories and round25 button raw directory. Binary PDFs/images and HTML excluded from text grep; selected primary PDF separately fully inspected. Not a machine-wide search.",
+    "dedup_hits": [
+      "/private/tmp/cmm-round24-nimh-raw/heidarinejad2026.txt:1314:Pourhossein F. Sadeghi M. Mousavi S. M. Thermal pretreatment of spent button cell batteries (BCBs) for efficient bioleaching. Korean J. Chem. Eng. 2022;39:2444–2454. doi: 10.1007/s11814-022-1160-x.",
+      "/private/tmp/cmm-round24-nimh-raw/heidarinejad2026.txt:1336:Pourhossein F. Sadeghi M. Mousavi S. M. Thermal pretreatment of spent button cell batteries (BCBs) for efficient bioleaching. Korean J. Chem. Eng. 2022;39:2444–2454. doi: 10.1007/s11814-022-1160-x.",
+      "/private/tmp/cmm-round24-nimh-raw/heidarinejad2026.txt:1619:Sadeghabad M. S. Bahaloo-Horeh N. Mousavi S. M. Using bacterial culture supernatant for extraction of manganese and zinc from waste alkaline button-cell batteries. Hydrometallurgy. 2019;188:81–91. doi: 10.1016/j.hydromet.2019.06.003.",
+      "/private/tmp/cmm-round24-frontier-raw/frueholz2025.txt:832:and manganese from spent Zn-Mn batteries and mechanism exploration, Bioresour. ",
+      "research/ingests/round24-frontier-20261011.md:15:| 7 | Alkaline button-cell batteries and discarded LED lamps | [Battery primary lead](https://www.sciencedirect.com/science/article/abs/pii/S0304386X18309113), [LED primary lead](https://pmc.ncbi.nlm.nih.gov/articles/PMC12216006/): full primary evidence and identity comparison | Candidate resources; distinguish NiMH/LIB, fluorescent phosphors and LCD panels |",
+      "research/ingests/round24-nimh-sources-20261011.json:152:      \"decision\": \"Candidate spent alkaline button-cell battery resource; primary lead only, full methods and material identity audit needed.\"",
+      "research/ingests/round24-nimh-sources-20261011.md:27:- Alkaline button-cell batteries and discarded LED lamps are additional feed-identity leads, not accepted records. Their full primary evidence and overlap with existing resources require assessment."
+    ]
+  },
+  "sources": [
+    {
+      "doi": "10.1007/s11814-022-1160-x",
+      "role": [
+        "secondary-resource identity",
+        "primary mechanism experiment"
+      ],
+      "state": "Full eleven-page publisher PDF text and Table 1/Figures 1-6 inspected; all figure pages rendered and viewed.",
+      "acquisition": {
+        "url": "https://www.kiche.or.kr/journal/kjche/fulltext/39/9/2444/47643892",
+        "final_url": "https://www.kiche.or.kr/journal/kjche/fulltext/39/9/2444/47643892",
+        "content_type": "application/octet-stream",
+        "status": 200,
+        "acquired_at": "2026-10-11T14:51:22.726551+00:00",
+        "sha256": "683278a4eb68599f096eec35869fdabd51248507127991e44bda53e4558bf350",
+        "bytes": 3485854
+      },
+      "local_path": "/private/tmp/cmm-round25-button-raw/pourhossein2022.pdf",
+      "version": "Version of record 2022-06-25; issue September 2022; verified on Springer landing page.",
+      "terms": "KIChE landing page says CC BY-NC 3.0, while PDF says copyright KIChE and Springer offers restricted access; raw remains outside Git. No blanket redistribution assertion.",
+      "decision": "Curate source-qualified culture-associated laboratory leaching with limited causal and quantitative interpretation."
+    },
+    {
+      "doi": "10.1016/j.hydromet.2019.06.003",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0304386X18309113",
+      "state": "Indexed primary abstract/preview only; direct page/DOI access failed (403/internal errors); legitimate exact-title/DOI searches found no acquired full methods.",
+      "decision": "Deferred mechanism extension; do not import abstract yields, control advantage or detoxification claim."
+    }
+  ],
+  "identity_checks": {
+    "NCBITaxon:920": "Official NCBI page resolves Acidithiobacillus ferrooxidans; species identity does not verify the experimental stock. No CURIE inserted.",
+    "PTCC 1664": "2022 paper reports A. ferrooxidans. Exact-number searches also surface 2006 primary-paper indexed text calling Pseudomonas putida PTCC 1664. PDF full-text request failed403; this is a conflicting lead, not verified reassignment. Official https://irost.org/ptcc/ opened; its linked micro-oraganism-databases endpoint returned404. Preserve unresolved accession."
+  },
+  "corrections_search": "Exact-title/DOI correction/retraction/supplement queries inspected first result sets; no applicable correction notice or separate supplement located in that bounded coverage. This does not establish universal absence.",
+  "scientific_limits": [
+    "No collection-verified experimental strain or genomic authentication",
+    "Mixed collected cells lack per-cell chemistry authentication",
+    "Different media, ferric pools, pH trajectories and residual-cell uncertainty in comparators",
+    "ICP-OES/ICP-MS naming conflict and unknown filtration pore size",
+    "Sampling corrections, exact yield denominator and complete whole-battery thermal mass balance not documented",
+    "Source endpoint/improvement arithmetic and chemical Mn bar conflict",
+    "Proposed EPS/siderophore/Mn-reductase mechanisms not specifically tested; unbalanced source equations not adopted",
+    "No isolated product, industrial deployment or demonstrated final hazard elimination"
+  ],
+  "new_leads": [
+    {
+      "title": "Extraction of silver from spent silver oxide-zinc button cells by using Acidithiobacillus ferrooxidans culture supernatant",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0959652612006282",
+      "state": "Primary indexed publisher abstract verifies title/authors/DOI and silver-oxide/zinc cell scope; full methods/figures unassessed.",
+      "doi": "10.1016/j.jclepro.2012.11.035"
+    },
+    {
+      "doi": "10.3390/pr13072157",
+      "title": "Strategies for Nickel and Cobalt Mobilisation from Ni-Based Superalloy Residue Powders Using a Sustainable and Cost-Effective Bioleaching Method",
+      "state": "Metadata lead; direct MDPI page returned error. Primary full text unassessed."
+    },
+    {
+      "reference": "Zhang et al., Waste Management87:629 (2019), cited as reference25 in Pourhossein2022",
+      "material": "Brake-pad waste",
+      "state": "Primary PubMed abstract and metadata read; methods/figures unassessed.",
+      "doi": "10.1016/j.wasman.2019.02.047",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31109564/"
+    }
+  ],
+  "followup_checked_at": "2026-10-11T14:58:09.031058+00:00"
+}

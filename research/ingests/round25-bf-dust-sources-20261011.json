@@ -1,0 +1,507 @@
+{
+  "created_at": "2026-10-11T15:00:15.871229+00:00",
+  "researcher": "Codex (GPT-6; round24_copper_slag)",
+  "base": "baedff25eafad1516270916a651af6754ffa5996",
+  "worktree": "/private/tmp/CMMMech-expansion-round25-20261011",
+  "branch": "curate/cmm-expansion-round25-20261011",
+  "issue": 90,
+  "queries": [
+    {
+      "provider": "web search",
+      "query": "\"10.1016/j.bej.2025.109859\"",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; no pagination or explicit date/domain filter, apart from any site term in the query."
+    },
+    {
+      "provider": "web search",
+      "query": "\"10.1016/j.bej.2025.109859\" correction OR retraction OR erratum",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; no pagination or explicit date/domain filter, apart from any site term in the query."
+    },
+    {
+      "provider": "web search",
+      "query": "\"Zinc extraction from cast-house dust\" supplementary",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; no pagination or explicit date/domain filter, apart from any site term in the query."
+    },
+    {
+      "provider": "web search",
+      "query": "\"10.1016/j.mineng.2023.108535\" pdf",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; no pagination or explicit date/domain filter, apart from any site term in the query."
+    },
+    {
+      "provider": "web search",
+      "query": "\"10.1016/j.bej.2025.109859\" \"mmc1\"",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; no pagination or explicit date/domain filter, apart from any site term in the query."
+    },
+    {
+      "provider": "web search",
+      "query": "site.k1-met.com \"108535\" pdf",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; no pagination or explicit date/domain filter, apart from any site term in the query."
+    },
+    {
+      "provider": "web search",
+      "query": "\"S1369703X25002335\" \"supplement\"",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; no pagination or explicit date/domain filter, apart from any site term in the query."
+    },
+    {
+      "provider": "web search",
+      "query": "\"109859\" \"mmc1\" \"bej\"",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; no pagination or explicit date/domain filter, apart from any site term in the query."
+    },
+    {
+      "provider": "web search",
+      "query": "\"Zinc removal from metallurgical dusts\" filetype:pdf",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; no pagination or explicit date/domain filter, apart from any site term in the query."
+    },
+    {
+      "provider": "web search",
+      "query": "site.k1-met.com \"Zinc removal\" \"Frueholz\"",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; no pagination or explicit date/domain filter, apart from any site term in the query."
+    },
+    {
+      "provider": "web search",
+      "query": "\"Zinc extraction from cast-house dust\" \"strain\"",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; no pagination or explicit date/domain filter, apart from any site term in the query."
+    },
+    {
+      "provider": "web search",
+      "query": "\"10.1016/j.bej.2025.109859\" \"supplementary materials\"",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; no pagination or explicit date/domain filter, apart from any site term in the query."
+    },
+    {
+      "provider": "web search",
+      "query": "\"Zinc extraction from cast-house dust\" correction OR erratum OR retraction",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; no pagination or explicit date/domain filter, apart from any site term in the query."
+    },
+    {
+      "provider": "web search",
+      "query": "\"10.1016/j.mineng.2023.108535\" correction OR retraction",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; no pagination or explicit date/domain filter, apart from any site term in the query."
+    },
+    {
+      "provider": "web search",
+      "query": "\"cast-house dust\" \"Acidithiobacillus thiooxidans\" \"DSM\"",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; no pagination or explicit date/domain filter, apart from any site term in the query."
+    },
+    {
+      "provider": "web search",
+      "query": "\"Zinc extraction from cast-house dust\" \"supplementary\" \"75.22526\"",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; no pagination or explicit date/domain filter, apart from any site term in the query."
+    }
+  ],
+  "deduplication": {
+    "included_hidden_and_ignored": true,
+    "followed_symlinks": true,
+    "commands": [
+      "rg --no-ignore --hidden --follow -n -i 109859|Frueholz|Frühholz|cast.house|blast.furnace.*dust|BF.dust data/records research reviews history",
+      "rg --no-ignore --hidden --follow -n -i 108535|min13081007|200278|cast.?house|casthouse data/records research reviews history /private/tmp/cmm-round24-frontier-raw /private/tmp/cmm-round25-bf-dust-raw"
+    ],
+    "receipts": [
+      "/private/tmp/cmm-round25-bf-dust-dedup.txt",
+      "/private/tmp/cmm-round25-bf-dust-expanded-dedup.txt"
+    ],
+    "result": "Round 24 frontier leads, but no pre-existing cast-house-dust root within these boundaries. Existing zinc mechanisms concern sphalerite, not this process-defined dust. Unrelated home/temp trees were not searched; no machine-wide absence claim."
+  },
+  "acquisition": [
+    {
+      "name": "frueholz2024.pdf",
+      "url": "https://www.k1-met.com/fileadmin/user_upload/Publications/Journal_articles_open_access/Frueholz_et_al__2024__Minerals_Eng._206_paper_108535.pdf",
+      "requested_at": "2026-10-11T14:51:17.386368+00:00",
+      "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))"
+    },
+    {
+      "name": "main-crossref.json",
+      "url": "https://api.crossref.org/works/10.1016/j.bej.2025.109859",
+      "requested_at": "2026-10-11T14:51:17.388287+00:00",
+      "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))"
+    },
+    {
+      "name": "ref9-crossref.json",
+      "url": "https://api.crossref.org/works/10.1016/j.mineng.2023.108535",
+      "requested_at": "2026-10-11T14:51:17.389434+00:00",
+      "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))"
+    },
+    {
+      "name": "main-publisher.html",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1369703X25002335",
+      "requested_at": "2026-10-11T14:51:17.389896+00:00",
+      "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))"
+    },
+    {
+      "name": "main-mmc1.docx",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S1369703X25002335-mmc1.docx",
+      "requested_at": "2026-10-11T14:51:17.439933+00:00",
+      "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))"
+    },
+    {
+      "name": "main-mmc1.pdf",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S1369703X25002335-mmc1.pdf",
+      "requested_at": "2026-10-11T14:51:17.440170+00:00",
+      "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))"
+    },
+    {
+      "name": "main-mmc1.xlsx",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S1369703X25002335-mmc1.xlsx",
+      "requested_at": "2026-10-11T14:51:17.440390+00:00",
+      "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))"
+    },
+    {
+      "name": "ncbi930.html",
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info",
+      "requested_at": "2026-10-11T14:51:17.440712+00:00",
+      "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))"
+    },
+    {
+      "name": "frueholz2024.pdf",
+      "url": "https://www.k1-met.com/fileadmin/user_upload/Publications/Journal_articles_open_access/Frueholz_et_al__2024__Minerals_Eng._206_paper_108535.pdf",
+      "requested_at": "2026-10-11T14:51:30.107617+00:00",
+      "status": 200,
+      "final_url": "https://www.k1-met.com/fileadmin/user_upload/Publications/Journal_articles_open_access/Frueholz_et_al__2024__Minerals_Eng._206_paper_108535.pdf",
+      "content_type": "application/pdf",
+      "bytes": 1699340,
+      "sha256": "98e90728bb1113e94885eb9203c1040a317f15e4f0e93f2c9d42f946a9897169",
+      "magic": "b'%PDF-1.7\\r%\\x80\\x84\\x88\\x8c\\x90\\x94'"
+    },
+    {
+      "name": "main-crossref.json",
+      "url": "https://api.crossref.org/works/10.1016/j.bej.2025.109859",
+      "requested_at": "2026-10-11T14:51:30.108450+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1016/j.bej.2025.109859",
+      "content_type": "application/json",
+      "bytes": 21871,
+      "sha256": "dbfbfd673c2d918af15e266f5b1c4ee21ce232dcf9fd703fc6a731bd723481ce",
+      "magic": "b'{\"status\":\"ok\",\"'"
+    },
+    {
+      "name": "ref9-crossref.json",
+      "url": "https://api.crossref.org/works/10.1016/j.mineng.2023.108535",
+      "requested_at": "2026-10-11T14:51:30.108755+00:00",
+      "error": "<HTTPError 429: 'Too Many Requests'>"
+    },
+    {
+      "name": "main-publisher.html",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1369703X25002335",
+      "requested_at": "2026-10-11T14:51:30.108991+00:00",
+      "error": "<HTTPError 403: 'Forbidden'>"
+    },
+    {
+      "name": "main-mmc1.docx",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S1369703X25002335-mmc1.docx",
+      "requested_at": "2026-10-11T14:51:30.273694+00:00",
+      "status": 200,
+      "final_url": "https://ars.els-cdn.com/content/image/1-s2.0-S1369703X25002335-mmc1.docx",
+      "content_type": "application/word",
+      "bytes": 18035,
+      "sha256": "7408b3f16635d2f5c2cd1c05ba4dba5bf30515b261ceeb304ee9a2be89f7e00a",
+      "magic": "b'PK\\x03\\x04\\x14\\x00\\x06\\x00\\x08\\x00\\x00\\x00!\\x00\\xdf\\xa4'"
+    },
+    {
+      "name": "main-mmc1.pdf",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S1369703X25002335-mmc1.pdf",
+      "requested_at": "2026-10-11T14:51:30.454879+00:00",
+      "error": "<HTTPError 404: 'Not Found'>"
+    },
+    {
+      "name": "main-mmc1.xlsx",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S1369703X25002335-mmc1.xlsx",
+      "requested_at": "2026-10-11T14:51:30.587417+00:00",
+      "error": "<HTTPError 404: 'Not Found'>"
+    },
+    {
+      "name": "ncbi930.html",
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info",
+      "requested_at": "2026-10-11T14:51:30.662952+00:00",
+      "status": 200,
+      "final_url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 35336,
+      "sha256": "d578a501d163e4c06ddaba48d34a46811d97e5a368373a488f13414bca1cef8f",
+      "magic": "b'<!doctype html>\\r'"
+    }
+  ],
+  "primary_reuse": {
+    "checked_at": "2026-10-11T14:51:32.597315+00:00",
+    "source_local_path": "/private/tmp/cmm-round24-frontier-raw/frueholz2025.pdf",
+    "copied_local_path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2025.pdf",
+    "sha256": "569ccc49d1455b33e335e32623a88f8ab2fa5c42cde446efaa7ba12f395e2d25",
+    "bytes": 2962264,
+    "original_acquisition": "2026-10-11T14:17:01.583116+00:00",
+    "original_manifest": "/private/tmp/cmm-round24-frontier-raw/acquisition.json",
+    "fresh_download": false
+  },
+  "primary_selected": {
+    "doi": "10.1016/j.bej.2025.109859",
+    "title": "Zinc extraction from cast-house dust using the chemolithotrophic microorganism Acidithiobacillus thiooxidans",
+    "authors": [
+      "R. Frueholz",
+      "C. Habermaier",
+      "S. Spiess",
+      "L. Birklbauer",
+      "G. M. Guebitz",
+      "M. Haberbauer"
+    ],
+    "year": 2025,
+    "version": "10-page journal PDF, online 8 July 2025, volume 222 October 2025. Crossref license start is not substituted for publication date.",
+    "origin_url": "https://www.k1-met.com/fileadmin/user_upload/Publications/Journal_articles_open_access/Frueholz_et_al__2025__Bioleaching_BF_casthouse_dust_BiochemEngJ_paper_109859.pdf",
+    "sha256": "569ccc49d1455b33e335e32623a88f8ab2fa5c42cde446efaa7ba12f395e2d25",
+    "locators": "Methods 2.1-2.7; Results 3.1-3.5; Tables 1-3; Figures 1-11; conclusion and data statement.",
+    "visual_pages": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "inspection": "All primary methods/results and relevant conclusions read; all 11 figures and three tables visually inspected.",
+    "license": "CC BY-NC 4.0, printed in article; raw PDF and images remain outside Git."
+  },
+  "supplement": {
+    "url": "https://ars.els-cdn.com/content/image/1-s2.0-S1369703X25002335-mmc1.docx",
+    "sha256": "7408b3f16635d2f5c2cd1c05ba4dba5bf30515b261ceeb304ee9a2be89f7e00a",
+    "inspection": "Read all native DOCX XML paragraphs and both statistical tables, checked ZIP contents (11 parts; no embedded media/charts), and visually inspected the complete one-page LibreOffice PDF render.",
+    "rendering": "LibreOffice headless with an isolated temporary profile, followed by PyMuPDF rendering. Cached DOCX captions are Table 4/Table 5; recalculated SEQ fields render Table 1/Table 2. Numeric cells match, so locators use first/second supplementary table and exact row labels.",
+    "contradiction": "First table .42 vvm; Day 7; Zn = 75.22526 with SD 3.01688, duplicating its day-14 entry. Figure 6 and second-table pooled day 7 Zn 68.05669 disagree. No replacement subgroup mean or recomputed test assigned.",
+    "license": "No separate supplement license observed; primary article has CC BY-NC 4.0. Original DOCX/render retained outside Git."
+  },
+  "context_primary": {
+    "doi": "10.1016/j.mineng.2023.108535",
+    "title": "Zinc removal from metallurgical dusts with iron- and sulfur-oxidizing bacteria",
+    "version": "Minerals Engineering 206 (2024)108535; online 19 December 2023. DOI/title checked in full primary PDF and indexed publisher metadata; live Crossref request returned 429.",
+    "inspection": "Full methods/results/conclusion text read; only pages 4/5 visually inspected, covering Table 1 and Figures 2-4. No assertion that every figure was visually reviewed.",
+    "scope": "Same feed characterization cited by 2025; actual cast-house origin, Fe-rich mineralogy and separate 0.5-M H2SO4 chemical assays. A. ferrooxidans DSM 583/CCM 4253 yields are not imported.",
+    "license": "CC BY-NC-ND 4.0, printed in article; raw outside Git.",
+    "limitation": "Some 50-g/L,50-degree chemical-curve points exceed 100%; not imported or silently repaired. Distinct methods and assay histories are not matched controls or independent replication of 2025."
+  },
+  "identifier_checks": [
+    {
+      "authority": "NCBI Taxonomy",
+      "id": "NCBITaxon:930",
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info",
+      "result": "Species Acidithiobacillus thiooxidans confirmed live. No experimental strain accession, collection origin or stock authentication reported in selected 2025 main/SI; identifiers from older papers are not transferred."
+    }
+  ],
+  "corrections_and_access": {
+    "notice_search": "No matching correction/retraction notice identified in the bounded exact-DOI/title first result sets. Main Crossref has no update-to and empty relation, which does not prove universal absence.",
+    "limits": "Direct main publisher HTML 403; reference 9 Crossref 429. Publisher-CDN DOCX succeeded, while PDF/XLSX extension attempts 404; these attempts do not inventory every possible supplement. Initial sandbox DNS failures retained in acquisition log.",
+    "data_statement": "The main paper states no data was used for the research described; this incongruous statement is not evidence that no experiments occurred. Inspected supplement supplies statistical summaries, not per-cycle raw inventories. No complete raw-data deposit identified within these inspected routes."
+  },
+  "accepted": {
+    "path": "data/records/blast-furnace-cast-house-dust.yaml",
+    "sha256": "cec7e9f080709db56d14c65cb9700ff812d6ae48db8a0653612cd166a14559b2",
+    "history": "history/records/blast-furnace-cast-house-dust/2026-10-11T145820Z-codex-f1ffa6.yaml",
+    "scope": "One process-defined secondary resource and conditional laboratory culture-associated Zn mobilization; no inherited criticality, strain accession, isolated-product recovery, industrial biological deployment or native concentration observations."
+  },
+  "deferred": [
+    {
+      "doi": "10.3390/min13081007",
+      "role": "Existing-root extension",
+      "title": "Bioleaching of Zinc from Blast Furnace Cast House Dust",
+      "status": "Discovery/indexed primary lead; complete methods, figures, controls and strain provenance not inspected for this curation.",
+      "next_step": "Acquire and independently assess the 2023 mixed-culture experiment before extending this root; do not transfer DSM 504 into the 2025 study."
+    },
+    {
+      "doi": "10.1016/j.mineng.2023.108535",
+      "role": "Existing-root mechanism extension",
+      "status": "Full primary acquired, relevant text and limited figures read; only feed and chemical-acid context currently used.",
+      "next_step": "Inspect all biological figures, strain authorities, cycle accounting and controls before adding its A. ferrooxidans outcomes."
+    },
+    {
+      "doi": "10.1016/j.rcradv.2025.200278",
+      "title": "Zn recovery from steel mill EAF dusts: A two-step biotechnological approach",
+      "role": "Potential distinct secondary-resource root",
+      "status": "Metadata/citing-primary lead only; full main methods/figures not inspected here.",
+      "next_step": "Acquire full paper and SI, establish actual electric-arc-furnace dust origin versus slag, and audit two-step inventories, culture provenance, controls and isolated-product claims."
+    },
+    {
+      "doi": "10.1007/s00253-026-13866-2",
+      "title": "Optimization of biological sulfuric acid generation by Acidithiobacillus thiooxidans in a stirred-tank reactor system",
+      "role": "Possible acid-generator process context",
+      "status": "Citing-primary discovery lead, not independently assessed assay evidence.",
+      "next_step": "Determine whether it demonstrates treatment of an actual resource before treating it as a new material mechanism."
+    }
+  ],
+  "checks": {
+    "named_validation": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate data/records/blast-furnace-cast-house-dust.yaml; session 6636 terminal 0 after history attachment; Checked 1 record(s); 0 failed.",
+    "named_log": "/private/tmp/cmm-round25-bf-dust-validate.log",
+    "parent_baseline": "Root reports 308 passed, 3 skipped in 118.77 s; 160 records and 181 histories at trusted base.",
+    "scope": "Independent scientific review and final batch/history/review gates are coordinated separately. This source dossier is not an acceptance review."
+  },
+  "raw_manifest": [
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/20261011T145117Z-acquisition.json",
+      "bytes": 2188,
+      "sha256": "bf9ae315137828ffcaec08663297d73b6c935ca1bfc01fef27a5dd1fba126e31"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/20261011T145132Z-acquisition.json",
+      "bytes": 2998,
+      "sha256": "0bd3a3e020e7093c7c0b90dea557ef54746289cbc4863c6b66a0446c90649c47"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2024-p1.png",
+      "bytes": 302006,
+      "sha256": "a0d6017da78b1542b4f560ed10ba99a20ea365bc9036fd38fc63b8fac9dbe32a"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2024-p2.png",
+      "bytes": 400446,
+      "sha256": "ff1f92bb9cb7c0f724759466d69d3ca28d5d1aa530dab536a4306c9cb334b474"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2024-p3.png",
+      "bytes": 328606,
+      "sha256": "3685a9be446d4ee1e353c86d7fcaead27c6480acf74573dbe14fda00f768e9d4"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2024-p4.png",
+      "bytes": 169142,
+      "sha256": "d8158a28200af4c213979c318b1d61f4d1bc76d6e6fdd776a8e7a292dbd0f2c5"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2024-p5.png",
+      "bytes": 224489,
+      "sha256": "4b69c402bf0a0c29e116fe6655d7634b88e5c0675f6ccea45aa0485eef94aa3d"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2024-p6.png",
+      "bytes": 253258,
+      "sha256": "01b592ba6593c2b219708620e96ea46cb0bec98accf0ccb1a4f2398433232100"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2024-p7.png",
+      "bytes": 225288,
+      "sha256": "aed1065e9e02e39025c33dd36d83a9c5f64c4b29c6c25c6aec4ad6c04009c05a"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2024-p8.png",
+      "bytes": 242783,
+      "sha256": "62cc5b8131be32070db9a619f9dcffc4b0a4c4274fe204b2cc228afc7841ab1f"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2024-p9.png",
+      "bytes": 453429,
+      "sha256": "e9602bac32fafeb33d0eaa745e108a3e8ddc6c94202efbe7e3c26798b1764389"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2024.pdf",
+      "bytes": 1699340,
+      "sha256": "98e90728bb1113e94885eb9203c1040a317f15e4f0e93f2c9d42f946a9897169"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2024.txt",
+      "bytes": 46778,
+      "sha256": "aa8b73f0e856306893bf3cfba67e0401ef2f5e4d4f71900090bcb43310fd7672"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2025-p1.png",
+      "bytes": 292427,
+      "sha256": "fa81bde981cd7656853a8c2482bd58d7db0c2852c155519548c10291e8ac04f3"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2025-p10.png",
+      "bytes": 146538,
+      "sha256": "b142dc731fe1adb3bd6fab080e4de0b446c2f0c782d0a5fcacb1dc8e4cd13362"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2025-p2.png",
+      "bytes": 389807,
+      "sha256": "b6e7c02629768f7d6b0c1e168b1de4adf0028faf85442243d8f3294f7d6eaf38"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2025-p3.png",
+      "bytes": 306034,
+      "sha256": "18c6bc9e39a469763677bd96de8b9c09d4d4e4069c42cef4afa866d76cd0e9c7"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2025-p4.png",
+      "bytes": 265012,
+      "sha256": "2d446929c4648295da7bcb76465fec05ce26765253f5e7c3499e187de2126741"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2025-p5.png",
+      "bytes": 139107,
+      "sha256": "92958ec19c46a5aa658395551ab8a9943cf9f31226b3114c29809fbd58a231f3"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2025-p6.png",
+      "bytes": 388652,
+      "sha256": "fe653ecf3601e4bb9f64cbcc22ddb6b01150508bac158073c9c82cb93722af2f"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2025-p7.png",
+      "bytes": 217136,
+      "sha256": "3e044be99389de7eb5cf9da59f6b9550e71bcc9b5cfc62c758a79373bdf9121c"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2025-p8.png",
+      "bytes": 297305,
+      "sha256": "2f58c2c685009f8c5ad91f0cc4e0a7745c84b1573adfbea82d14b9cb041e92c8"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2025-p9.png",
+      "bytes": 431816,
+      "sha256": "d6e6c16c46fa3c28d44ad8990c49eca76007fa32d2b04b00d3c593d55dd3eaea"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2025.pdf",
+      "bytes": 2962264,
+      "sha256": "569ccc49d1455b33e335e32623a88f8ab2fa5c42cde446efaa7ba12f395e2d25"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/frueholz2025.txt",
+      "bytes": 52600,
+      "sha256": "cbf6efbd82b8ba8b8d45dc845a2e347597428ac8d763ac1fee26622a90cd64f8"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/main-crossref.json",
+      "bytes": 21871,
+      "sha256": "dbfbfd673c2d918af15e266f5b1c4ee21ce232dcf9fd703fc6a731bd723481ce"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/main-mmc1.docx",
+      "bytes": 18035,
+      "sha256": "7408b3f16635d2f5c2cd1c05ba4dba5bf30515b261ceeb304ee9a2be89f7e00a"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/main-mmc1.txt",
+      "bytes": 1517,
+      "sha256": "156a203e16cf839d4946919f4767188aa21317eaf1bdf6371adb5bd27a7a91e6"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/ncbi930.html",
+      "bytes": 35336,
+      "sha256": "d578a501d163e4c06ddaba48d34a46811d97e5a368373a488f13414bca1cef8f"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/primary-reuse.json",
+      "bytes": 486,
+      "sha256": "36b60a8d8a17f5349463dfc7a6978383e493fc9159d7feccf28da44baf0ef35e"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/supp-p1.png",
+      "bytes": 175088,
+      "sha256": "a9d31a3e71074de2b9878f410b69df4f2aacb6df18011412702eaa1c0cdaffdb"
+    },
+    {
+      "path": "/private/tmp/cmm-round25-bf-dust-raw/supp-render/main-mmc1.pdf",
+      "bytes": 36471,
+      "sha256": "2bea88cd1fabcc19c6354192d20fd43f2a0bd05c9ab0803e7b66805c1a9c006e"
+    }
+  ]
+}

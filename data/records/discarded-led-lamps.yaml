@@ -1,0 +1,115 @@
+id: cmmmech:discarded-led-lamps
+name: Discarded light-emitting-diode lamps
+material_kind: secondary_resource
+description: >-
+  Discarded LED lighting assemblies and their prepared mixed powder, represented
+  here by lamps collected from electrical stores. This manufactured waste
+  resource is distinct from fluorescent-lamp phosphor, LCD panels, an isolated
+  LED semiconductor or its constituent elements. The selected study does not
+  establish a universal lamp composition or which components were removed
+  before milling. No constituent-element criticality designation is inherited.
+sources:
+- id: nadi2025
+  title: >-
+    Nadi, Pourhossein and Mousavi (2025). Sustainable bio-extraction of rare
+    earth elements from discarded LED lamps. Scientific Reports 15:21655.
+    DOI 10.1038/s41598-025-04937-x, published 1 July 2025; Materials and methods,
+    Results and discussion, Tables 1-6 and Figures 1-9; full publisher PDF.
+  url: https://doi.org/10.1038/s41598-025-04937-x
+  accessed_on: '2026-10-11'
+- id: ncbi_thiooxidans
+  title: >-
+    NCBI Taxonomy 930: Acidithiobacillus thiooxidans, species. This identifier
+    does not identify or authenticate the study's PTCC 1717 stock.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: culture_supernatant_ree_mobilization
+  name: Rare-earth mobilization by acidogenic culture supernatant
+  process: bioleaching
+  microbial: true
+  description: >-
+    Acidic supernatant produced by living Acidithiobacillus thiooxidans cultures
+    was used to leach prepared discarded-lamp powder after centrifugation.
+    The laboratory study reports praseodymium and neodymium mobilization, with
+    lower source-reported extraction percentages at higher powder loadings.
+    It does not establish direct cell contact, a unique enzyme or EPS pathway,
+    a general advantage over reagent acid, or isolated rare-earth products.
+  context: >-
+    Store-collected discarded lamps were ground manually and mechanically and
+    sieved at 75 micrometres. Lamp models, component selection and complete
+    pretreatment history are not supplied. Table 1 reports Pr 137 and Nd
+    73 mg/kg by feed digestion and ICP-OES, with Fe 321000 mg/kg; these are
+    batch measurements, not a purified phosphor or semiconductor composition.
+    The authors identify the culture as PTCC 1717 supplied by IROST; a current
+    collection entry was not independently resolved. Acid generation used
+    100 mL modified 9K medium in 250 mL flasks, 5 g/L elemental sulfur,
+    30 degrees C and 140 rpm for up to 30 days, comparing 2, 5 and 10% v/v
+    inocula. The selected 5% preparation was centrifuged at 6000 rpm for
+    30 minutes; sterility of the supernatant was not demonstrated. Leaching
+    tested 10, 30 and 50 g/L powder at 30 degrees C and 140 rpm, with a
+    72-hour comparison and time courses to 14 days. The authors report
+    triplicate bioleaching experiments and mean plus/minus standard error
+    for the chemical comparison. Leaching working volume, liquid sample
+    separation and a complete analytical recovery balance are not specified.
+    Reagent sulfuric acid was described as 0.1 M at 10 g/L under the same
+    nominal temperature, agitation and 72-hour duration. Actual initial pH
+    differed: 1.2 for chemical acid and 0.8 for the culture supernatant.
+  organisms:
+  - id: NCBITaxon:930
+    label: Acidithiobacillus thiooxidans
+  evidence:
+  - source_ref: nadi2025
+    supports: support
+    explanation: >-
+      Materials and methods, Figures 2 and 5 and Table 5 support a conditional
+      culture-derived lixiviant observation. At 10 g/L and three days,
+      Table 5 reports extraction efficiencies of 43 +/- 0.86% Pr and
+      28 +/- 0.56% Nd for bioleaching. These are source-reported percentages,
+      not independently reconstructed yields: Equation 1 defines its
+      concentration denominator as residual powder and its numerator as
+      initial solution, while calling a mass in kg pulp density. The intended
+      inventory normalization is unresolved. No purified product or complete
+      metal mass balance was measured.
+  - source_ref: nadi2025
+    supports: partial
+    explanation: >-
+      Table 5 gives reagent-acid results of 0.0% Pr and 80 +/- 1.6% Nd, so
+      the chemical comparator performs better for Nd. The 0.0% Pr token is
+      not a verified analytical detection limit. Figure 9 shows unequal pH
+      trajectories; its chemical-acid day-one pH near 3.1 also differs from
+      the prose value 2.5. These comparisons do not isolate an EPS or enzymatic
+      contribution from acidity and medium composition. A no-inoculum acid
+      production control appears in Figure 1, but that is not a pH-matched
+      control for the later lamp leaching.
+  - source_ref: nadi2025
+    supports: partial
+    explanation: >-
+      Quantitative inconsistencies remain: Table 6 instead labels the
+      three-day result as Pr 46.76% and Nd 28.59%; the conclusion misnames
+      its loading-response elements as Co and Pr, unlike Figure 2's Pr and
+      Nd. Figure 5 shows later Nd decline and a small later Pr maximum, so
+      three days is not an uncontested optimum for every endpoint. Abstract
+      wording that 5% inoculum produces the most acid differs from Figure 1
+      and the Results, which show slightly higher sulfate at 10%. Reported
+      sulfate includes medium background and is not a corrected sulfur yield.
+  - source_ref: nadi2025
+    supports: partial
+    explanation: >-
+      Figures 4 and 6-8 characterize changing residual material; FTIR, XRD
+      and selected SEM-EDX regions do not independently prove that an iron
+      layer caused declining Nd release, quantify bulk removal, or identify
+      an enzyme, EPS complex or dissolved REE species. Nutrient inhibition,
+      agglomeration, hydroxide precipitation and tetrad-effect explanations
+      are interpretations, not separately isolated causes. The Scale up
+      section discusses future options; it reports no larger LED trial,
+      industrial deployment or techno-economic validation.
+history_refs:
+- history/records/discarded-led-lamps/2026-10-11T145518Z-codex-154cbe.yaml
+curation_history:
+- timestamp: '2026-10-11T14:55:14.811850Z'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Created the distinct discarded LED lamp resource with centrifuged culture-acid
+    leaching evidence, retaining chemical-comparator superiority for Nd, mismatched pH and
+    unresolved source normalization and numerical inconsistencies.

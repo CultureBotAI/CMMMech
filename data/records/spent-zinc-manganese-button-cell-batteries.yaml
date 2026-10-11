@@ -1,0 +1,131 @@
+id: cmmmech:spent-zinc-manganese-button-cell-batteries
+name: Spent zinc-manganese button-cell batteries
+material_kind: secondary_resource
+description: >-
+  End-of-life zinc-manganese button cells, represented by mixed powder from
+  discarded watch batteries. This secondary resource is distinct from NiMH
+  and lithium-ion batteries, silver-oxide button cells, pure electrode phases
+  and the constituent elements. The selected study identifies its mixed feed
+  as Zn-Mn button cells but does not independently document the chemistry of
+  every collected cell. No constituent-element criticality is inherited.
+sources:
+- id: pourhossein_2022
+  title: >-
+    Pourhossein, Sadeghi and Mousavi (2022). Thermal pretreatment of spent
+    button cell batteries (BCBs) for efficient bioleaching. Korean Journal
+    of Chemical Engineering 39:2444-2454. DOI 10.1007/s11814-022-1160-x;
+    Methods 1-8, Results 1-4, Table 1 and Figures 1-6.
+  url: https://doi.org/10.1007/s11814-022-1160-x
+  accessed_on: '2026-10-11'
+- id: pourhossein_2022_publisher_pdf
+  title: >-
+    KIChE publisher PDF of Pourhossein et al. (2022), eleven pages,
+    2444-2454; full text, Table 1 and all six figures inspected.
+  url: https://www.kiche.or.kr/journal/kjche/fulltext/39/9/2444/47643892
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: adapted_culture_leaching_of_thermally_treated_powder
+  name: Culture-associated zinc and manganese mobilization after thermal pretreatment
+  process: bioleaching
+  microbial: true
+  description: >-
+    An adapted iron-oxidizing culture, reported as Acidithiobacillus
+    ferrooxidans, was associated with zinc and manganese solubilization from
+    thermally pretreated spent button-cell powder. Live-culture treatment
+    gave higher source-reported extraction than the tested spent-medium and
+    chemical-ferric treatments, which had different solution histories.
+    This is a laboratory combined thermal and biological treatment, not
+    demonstrated isolated-metal recovery or industrial deployment. The
+    reported PTCC 1664 strain identifier remains unverified; no organism
+    CURIE is assigned to this uncertain experimental stock.
+  context: >-
+    Almost 1 kg of spent button cells of different sizes and manufacturers
+    was collected from watch stores in Tehran, Iran. The cells were manually
+    dismantled and their powder dried at 100 degrees C, crushed, mixed and
+    sieved through a reported number-200 mesh to a stated size below
+    70 micrometres. These two size descriptions are retained without treating
+    the mesh designation as an independently measured particle distribution.
+    Furnace pretreatment used 200 or 600 degrees C for four hours; the
+    furnace atmosphere was not specified, although the separate TGA used air.
+    The paper reports culture purchase from IROST as PTCC 1664 without
+    sequence authentication. Serial adaptation tested 1-25 g/L of the
+    600-degree-treated powder. The one-step experiment added 20 g/L powder
+    to 90 mL of the paper's 9K medium containing 44.48 g/L FeSO4.7H2O,
+    adjusted the initial pH to 2 with sulfuric acid, and inoculated with
+    10% v/v adapted culture. Incubation was 30 degrees C, 140 rpm and
+    21 days. The spent-medium arm used culture grown for five days, then
+    centrifuged at 12000 g for fifteen minutes at 4 degrees C before adding
+    20 g/L powder; absence of residual viable cells was not demonstrated.
+    Its ferric concentration is described as 6 g/L in Methods and about
+    6.7 g/L in Results. The chemical arm used 24.39 g/L ferric sulfate,
+    reported as 6.83 g/L ferric iron, in distilled water at the same powder
+    loading, temperature, shaking and duration. These comparators did not
+    match the medium composition or evolving acid and iron chemistry, and
+    no matched sterile 9K trajectory was reported. Experiments were stated
+    to be triplicate with means reported, but plotted error bars were not
+    defined. Five-mL aliquots were centrifuged at 3000 g for two minutes
+    and filtered with unspecified pore size before elemental analysis.
+    Evaporation was compensated with water; a complete sampling and
+    metal-inventory correction was not documented. The source alternates
+    ICP-OES and ICP-MS labels for the Vista-pro analysis, leaving the
+    instrumental description inconsistent.
+  evidence:
+  - source_ref: pourhossein_2022
+    supports: support
+    explanation: >-
+      Results 2-3 and Figures 3(d), 4(a) and 5 report 95% Zn and 91% Mn
+      extraction with adapted culture and 600-degree-treated powder at
+      20 g/L after 21 days. These are the authors' aqueous extraction
+      percentages relative to their treated-feed assay, not independently
+      recalculated whole-battery or isolated-product yields. The unheated
+      powder comparison reports only 21% Zn and 16% Mn extraction.
+      Figure 3(b-c) shows declining cell counts and little iron oxidation
+      with untreated and 200-degree-treated powder at 1 g/L, in contrast
+      to the 600-degree-treated feed. These are separate loading assays,
+      not interchangeable controls for the 20 g/L extraction endpoint.
+  - source_ref: pourhossein_2022
+    supports: partial
+    explanation: >-
+      Figure 4 shows lower extraction in spent-medium and chemical-ferric
+      arms, but their unlike pH and iron trajectories do not isolate a
+      cell-specific dissolution mechanism. Results give chemical extraction
+      of 65% Zn and 55% Mn; the Mn bar in Figure 4(a) is visually nearer
+      60%. The abstract's pretreatment improvement percentages and the
+      conclusion's 33% Zn and 31% Mn improvement statements do not
+      transparently reconcile with the reported endpoints. These numerical
+      inconsistencies remain unresolved; no derived improvement or
+      significance estimate is adopted.
+  - source_ref: pourhossein_2022
+    supports: refute
+    explanation: >-
+      Results 2 and Figure 3(a-c) contradict a claim that the culture grows
+      readily on all powder treatments or loadings: untreated and
+      200-degree-treated feeds inhibited the reported culture at 1 g/L,
+      and growth was not obtained at 25 g/L of the 600-degree-treated
+      powder. This limits the selected process, not all microorganisms or
+      all button-cell compositions. Carbon toxicity, altered proteins and
+      membrane damage are proposed explanations without direct causal tests.
+  - source_ref: pourhossein_2022_publisher_pdf
+    supports: partial
+    explanation: >-
+      Table 1 and Figures 1-2 establish a mixed, compositionally altered
+      experimental feed rather than a pure Zn-Mn mineral. A sentence in
+      Results reverses the original Zn/Mn percentages relative to Table 1;
+      no absolute feed inventory is imported. Figure 6 supports a residual
+      solid interpreted as jarosite-bearing with remaining ZnMn2O4, not a
+      purified recovered metal product. Proposed EPS action, siderophore
+      activity and direct Mn-reductase respiration were not specifically
+      assayed. Several printed reaction equations have charge or atom
+      balance problems, so they are not curated as demonstrated pathways.
+      Neither complete removal of toxicity nor a closed thermal/leaching
+      mass balance was established by these measurements.
+curation_history:
+- timestamp: '2026-10-11T14:55:59.780709+00:00'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: >-
+    Curated laboratory button-cell powder leaching from complete primary evidence,
+    retaining uncertain culture identity, inhibited treatments, unlike controls,
+    source contradictions and unverified whole-feed recovery.
+history_refs:
+- history/records/spent-zinc-manganese-button-cell-batteries/2026-10-11T145450Z-codex-de2004.yaml
