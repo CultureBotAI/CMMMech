@@ -1,0 +1,329 @@
+schema_version: 1.0.0
+review_id: 20261011T042353Z-arsenic-round2-science
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent adversarial review of arsenic round-two record
+started_at: '2026-10-11T04:21:57Z'
+finished_at: '2026-10-11T04:23:53Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The cmm2_gallium_arsenic agent authored the record/history.
+    This reviewer did not edit them and separately opened authority/identifier pages,
+    read primary methods/results and visually inspected Figure 3.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The bounded element identity, dated designation and laboratory observation
+  are supported. Source limitations remain explicit; no actionable record defect was
+  found.
+source:
+  git_revision: 268498d0a9748f3a18955e35f175f67115f88b97
+  state: working_tree
+  inputs:
+  - path: data/records/arsenic.yaml
+    sha256: 35f59860a1d1611086ccbc5b105476cde4fddb80ec78866f7d94b8299b13e2ae
+    role: target
+  - path: docs/records.md
+    sha256: 212cdbb723eb1ad9eb76ea1b7dad066914659b1f85eb2cdb51ee67466cfcc8ee
+    role: context
+  - path: history/records/arsenic/2026-10-11T042103Z-codex-36b267.yaml
+    sha256: 577a70f46894ede083d1a557d6c838268ff0a63e16e2d572a68b6d00d2c719d7
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+scope:
+  description: All fields and linked new curation history of the named record.
+  selection: Named new record after curator froze final bytes.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:arsenic
+  exclusions:
+  - target: Supplementary figures, raw replicates and separate reactor-assay curation
+    reason: Supplement retrieval failed; no supplement-only claim is asserted. No
+      raw-data reanalysis or new reactor mechanism is claimed.
+targets:
+- target_id: cmmmech:arsenic
+  path: data/records/arsenic.yaml
+  label: Arsenic
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/arsenic.yaml
+    role: maintained scientific record
+checks:
+- check_id: record-validation
+  name: Named record validation
+  status: passed
+  required: true
+  summary: Both named records checked; zero failures.
+  target_ids:
+  - cmmmech:arsenic
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate
+    data/records/gallium.yaml data/records/arsenic.yaml
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: history-validation
+  name: Canonical history and append-only base
+  status: passed
+  required: true
+  summary: 26 histories checked; zero errors.
+  target_ids:
+  - cmmmech:arsenic
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate-history
+    --base 268498d0a9748f3a18955e35f175f67115f88b97
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: nonempty-corpus
+  name: Nonempty corpus
+  status: passed
+  required: true
+  summary: 17 records checked; zero failures.
+  target_ids:
+  - cmmmech:arsenic
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate
+    --require-records
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: batch-check
+  name: Batch check
+  status: passed
+  required: true
+  summary: 307 tests passed, 3 skipped in 42.24s; lint passed; 17 records and 26 histories
+    valid.
+  target_ids:
+  - cmmmech:arsenic
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  exit_code: 0
+  expected_exit_code: 0
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/arsenic.yaml
+  locator: Whole record and linked CREATE session
+  accessed_at: '2026-10-11T04:23:53Z'
+  support: supports
+  summary: Inspected final working-tree fields and separate inline event plus history/records/arsenic/2026-10-11T042103Z-codex-36b267.yaml.
+    Actor and time describe actual new curation; this review does not modify them.
+  snapshot_sha256: 35f59860a1d1611086ccbc5b105476cde4fddb80ec78866f7d94b8299b13e2ae
+- evidence_id: identity
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:27563
+  locator: Entry name, formula and net charge
+  accessed_at: '2026-10-11T04:23:53Z'
+  support: supports
+  summary: Live ChEBI resolves arsenic atom with neutral elemental identity; neither
+    ionic species nor semiconductor waste is assigned this identifier.
+- evidence_id: criticality
+  kind: authority
+  reference: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  locator: Final list notice heading, inclusion table, and final arsenic-retention
+    discussion
+  accessed_at: '2026-10-11T04:23:53Z'
+  support: supports
+  summary: US Interior/USGS final notice of 7 November 2025, 90 FR 50494-50497, includes
+    gallium and arsenic. Commodity scope and edition are retained. Arsenic draft removal
+    did not survive the final notice.
+- evidence_id: organism
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info
+  locator: Scientific name, rank and type material
+  accessed_at: '2026-10-11T04:23:53Z'
+  support: supports
+  summary: Species Acidithiobacillus thiooxidans includes DSM 14887 among type-strain
+    collection labels; the record retains experimental strain identity separately.
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3389/fmicb.2026.1807986
+  locator: Sections 2.1-2.3, Tables 1-2, Section 3.2, Figure 3 and Section 3.4
+  accessed_at: '2026-10-11T04:23:53Z'
+  support: supports
+  summary: Read publisher Methods/Results and corresponding Europe PMC XML. The 3%
+    flask assay is distinct from optimization and reactor arms. Its ICP-MS outcome
+    measures reported leaching; chemical downstream work and process proposals are
+    not isolated microbial product recovery.
+  snapshot_sha256: 5539ad586a3306ac710d7bde06825c379c872514784850b036948de8cd52014f
+- evidence_id: figure
+  kind: primary_source
+  reference: https://www.frontiersin.org/files/Articles/1807986/xml-images/fmicb-17-1807986-g003.webp
+  locator: Figure 3 trajectories, error bars, legend and caption
+  accessed_at: '2026-10-11T04:23:53Z'
+  support: supports
+  summary: Visually inspected the original image, not only alt text. Endpoint trajectories
+    agree with the reported prose values without pixel digitization or new SD estimates.
+    Initial arsenic point is day 0 in the figure, unlike day 1 in the prose.
+  snapshot_sha256: 5fb6c43794554b0c54c275b1ae859fa99e46ec454156d8210921ac08667c3335
+- evidence_id: limits
+  kind: primary_source
+  reference: https://doi.org/10.3389/fmicb.2026.1807986
+  locator: Abstract versus Table 2; Section 2.3; Section 3.2 control limitations;
+    Section 3.4
+  accessed_at: '2026-10-11T04:23:53Z'
+  support: partial
+  summary: Source Al:Fe wording conflicts with Al:F methods; the record uses the flask-specific
+    1.5:1 ratio. The source explicitly requests replicate confirmation of simplified
+    abiotic comparisons. Main-assay shaking speed, separation protocol and unusual
+    w/v inoculum remain unresolved.
+- evidence_id: search
+  kind: search
+  reference: Web search; data/research/reviews/history
+  locator: Bounded correction/conflict searches and hidden/ignored-inclusive local
+    identity/DOI search
+  accessed_at: '2026-10-11T04:23:53Z'
+  support: context_only
+  summary: Returned search sets did not identify an affecting correction; no exhaustive
+    claim is made. Local matches are current records/dossiers and earlier inventory/leads,
+    not a second maintained element record.
+  search_scope: '2026-10-11 web queries: "10.3389/fmicb.2026.1807986" correction retraction;
+    "Acidithiobacillus thiooxidans" "gallium" "abiotic". First returned sets, no pagination.
+    Local: rg --no-ignore --hidden -n -i cmmmech:(gallium|arsenic)|CHEBI:(49631|27563)|1807986
+    data research reviews history. Hidden and ignored files included within these
+    roots; no whole-machine claim.'
+assessments:
+- assessment_id: identity-scope
+  area: identity
+  topic: Root identity and dated criticality
+  outcome: supported
+  summary: The element is distinct from salts, presumed host association and mixed
+    sludge; the dated commodity designation does not propagate to those entities.
+  target_ids:
+  - cmmmech:arsenic
+  evidence_ids:
+  - record
+  - identity
+  - criticality
+  dimensions:
+  - name: criticality
+    value: United States; Interior/USGS Final 2025 List; published 7 November 2025
+    definition: Explicit jurisdiction, issuer, list and edition.
+    evidence_ids:
+    - criticality
+- assessment_id: experimental-scope
+  area: grounding
+  topic: Organism, biomass and selected assay
+  outcome: supported
+  summary: Living adapted type-strain cultures and the specified main flask conditions
+    are correctly scoped. No parameters are borrowed from the distinct optimization
+    experiment.
+  target_ids:
+  - cmmmech:arsenic
+  evidence_ids:
+  - record
+  - organism
+  - primary
+  dimensions:
+  - name: organism
+    value: A. thiooxidans DSM 14887; species anchor NCBITaxon:930
+    definition: Source strain and database rank are separate.
+    evidence_ids:
+    - organism
+    - primary
+  - name: biomass
+    value: Living cultures adapted to 5% sludge with aluminum
+    definition: State and conditioning of microbial inoculum.
+    evidence_ids:
+    - primary
+  - name: substrate
+    value: GaAs-production neutralization hydroxide sludge; dried 60 C for 48 h, mortar-homogenized
+    definition: Heterogeneous experimental resource, not an elemental feed or identified
+      pure mineral.
+    evidence_ids:
+    - primary
+  - name: conditions
+    value: 3% w/v sludge, 50 mL, HBS, 1% sulfur, pH initially 1.8, 30 C, 8 days; 12.9
+      mM Al, Al:F 1.5:1
+    definition: Main leaching flask arm; unresolved inoculum basis remains explicit.
+    evidence_ids:
+    - primary
+  - name: controls
+    value: Triplicate biotic setups; uninoculated initial-pH and acid-adjusted controls
+    definition: The source does not establish equivalent independent replication of
+      every comparator.
+    evidence_ids:
+    - primary
+    - limits
+- assessment_id: outcomes
+  area: evidence
+  topic: Measured outcome and causal/deployment boundaries
+  outcome: supported
+  summary: 68% final arsenic leaching versus 66% in the acid-adjusted comparator.
+    The small endpoint difference does not establish an arsenic-specific microbial
+    benefit. As(V) association is assumed, not speciated; the text/figure initial-time
+    discrepancy is explicitly retained.
+  target_ids:
+  - cmmmech:arsenic
+  evidence_ids:
+  - record
+  - primary
+  - figure
+  - limits
+  dimensions:
+  - name: assay
+    value: Dissolved-element ICP-MS as described by the source
+    definition: Separation details are unresolved; no inferred arsenic speciation.
+    evidence_ids:
+    - primary
+  - name: scale
+    value: Laboratory flasks
+    definition: Industrial feed provenance is not industrial microbial deployment;
+      no purified-product yield.
+    evidence_ids:
+    - record
+    - primary
+- assessment_id: uncertainty
+  area: scope
+  topic: Preserved source inconsistency and missing evidence
+  outcome: supported
+  summary: The record retains the relevant contradictions, weak-control warning, unknown
+    protocol details and limited causal interpretation. No supplement-only measurement
+    has been accepted.
+  target_ids:
+  - cmmmech:arsenic
+  evidence_ids:
+  - record
+  - limits
+  - figure
+  - search
+- assessment_id: provenance
+  area: provenance
+  topic: Reviewed revision, working changes and curation history
+  outcome: supported
+  summary: The inspected base is an existing main-history commit; record and history
+    hashes cover new uncommitted bytes. Separate canonical and inline CREATE provenance
+    agree in scope and actual authorship.
+  target_ids:
+  - cmmmech:arsenic
+  evidence_ids:
+  - record
+findings: []
+actions: []
+limitations:
+- The small endpoint difference does not establish an arsenic-specific microbial benefit.
+  As(V) association is assumed, not speciated; the text/figure initial-time discrepancy
+  is explicitly retained.
+- 'Supplementary_file_1.docx was not inspected: archive download timed out and the
+  direct PMC route returned challenge HTML. Curated claims are supported independently
+  by main text and Figure 3.'
+- Raw ICP-MS measurements and replicate statistics were not reanalyzed; no numerical
+  SD or significance is inferred from image pixels.
+- Specific molecular causality, product isolation and industrial performance remain
+  unestablished.
+notes:
+- 'Findings by severity: zero blocker, major, minor or informational record defects.
+  Corrections: none required. Source uncertainties are limitations, not fabricated
+  defects.'
+- Access timestamps mark completion of the review verification interval; discovery
+  opens before the captured review start were rechecked against the final record and
+  retained primary XML.
+links:
+- research/ingests/round2-gallium-arsenic-20261011.md
+- research/ingests/round2-gallium-arsenic-20261011-acquisition.json
+tags:
+- arsenic
+- independent-scientific-review
+- round2

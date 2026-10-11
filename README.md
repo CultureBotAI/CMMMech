@@ -20,6 +20,10 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Copper](data/records/copper.yaml) | Defined acidophile cultures leach chalcopyrite concentrate | Consortium-dependent release assay includes dissolved and precipitated copper |
 | [Nickel](data/records/nickel.yaml) | *Acidithiobacillus thiooxidans* mixture leaches selected laterites | Matched-pH controls and ore-dependent null outcomes limit generalization |
 | [Tellurium](data/records/tellurium.yaml) | Resting *Rhodococcus aetherivorans* BCP1 transforms tellurite to nanorods | Partial high-dose depletion and phase evidence do not establish isolated yield |
+| [Zinc](data/records/zinc.yaml) | Controlled *Acidithiobacillus ferrooxidans* FC1 sphalerite leaching | Matched-chemistry null results and source figure/text tension limit generalization |
+| [Silver](data/records/silver.yaml) | *Shewanella oneidensis* MR-1 forms XRD-identified Ag(0) | Abiotic salt precipitation, feed ambiguity and toxicity constrain the laboratory result |
+| [Gallium](data/records/gallium.yaml) | *Acidithiobacillus thiooxidans* sludge leaching | Acid dissolution dominates; microbial enhancement remains provisional |
+| [Arsenic](data/records/arsenic.yaml) | Co-mobilization in the same gallium-sludge experiment | Similar abiotic leaching; no demonstrated arsenic redox reaction or microbial advantage |
 | [Spent lamp phosphor](data/records/fluorescent-lamp-phosphor.yaml) | *Gluconobacter* biolixiviant bioleaching of a secondary resource | Retorted mixed powder; total-REE outcome, not an element-specific yield |
 | [Cobaltite](data/records/cobaltite.yaml) | IMA September 2026 mineral identity | Distinct from cobalt; no inherited criticality or microbial mechanism |
 | [Monazite-(Nd)](data/records/monazite-nd.yaml) | IMA September 2026 mineral identity | Distinct from neodymium and synthetic mixed experimental feeds |
@@ -30,7 +34,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [initial pilot assessment](docs/pilot-session.md),
 [first ingest queue](research/ingests/20261009-priorities.md),
 [earlier ingest results](research/ingests/20261009T054507Z-followup.md),
-[expansion inventory and priorities](research/sources/expansion-authorities/20261011T040103Z.md), and
+[expansion inventory and priorities](research/sources/expansion-authorities/20261011T040103Z.md),
+[second expansion review and remaining priorities](research/ingests/round2-20261011-publication.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

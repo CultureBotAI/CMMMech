@@ -1,0 +1,108 @@
+id: cmmmech:gallium
+name: Gallium
+material_kind: element
+description: >-
+  Gallium (Ga), grounded by the neutral-atom ChEBI identifier. This element
+  record is distinct from gallium ions, gallium arsenide semiconductor material
+  and the heterogeneous hydroxide sludge used in the experiment. The US 2025
+  designation maps its gallium commodity to this element; it does not designate
+  every gallium-bearing waste. The arsenic record describes co-mobilization in
+  the same experiment, not an independent replication.
+identifiers:
+  - id: CHEBI:49631
+    label: gallium atom
+sources:
+  - id: chebi_gallium
+    title: ChEBI CHEBI:49631 — gallium atom
+    url: https://www.ebi.ac.uk/chebi/CHEBI:49631
+    accessed_on: '2026-10-11'
+  - id: usgs2025
+    title: >-
+      USGS (2025). Final 2025 List of Critical Minerals. Federal Register
+      90:50494-50497, document 2025-19813; gallium in the final commodity table.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: fritze2026
+    title: >-
+      Fritze MT, Haubrich F, Otto A, Schippers A and Hedrich S (2026).
+      Bioleaching of GaAs metal hydroxide sludge: a biohydrometallurgical
+      alternative to conventional acid leaching. Frontiers in Microbiology
+      17:1807986. doi:10.3389/fmicb.2026.1807986.
+    url: https://doi.org/10.3389/fmicb.2026.1807986
+    accessed_on: '2026-10-11'
+  - id: ncbi_thiooxidans
+    title: NCBI Taxonomy 930 — Acidithiobacillus thiooxidans, species rank
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States of America
+    list_name: USGS Final List of Critical Minerals
+    edition: '2025; Federal Register 90:50494-50497; published 7 November 2025'
+    classification: critical
+    source_ref: usgs2025
+mechanisms:
+  - id: thiooxidans_hydroxide_sludge_leaching
+    name: Gallium mobilization during sulfur-oxidizing sludge bioleaching
+    process: bioleaching
+    description: >-
+      Living Acidithiobacillus thiooxidans cultures supplied acidity during
+      laboratory leaching of hydroxide sludge from GaAs wafer manufacture.
+      Gallium entered the leachate largely because of acidic conditions;
+      the culture-associated increment over acid-adjusted controls remains
+      provisional. Ferric-iron reduction was observed, but a specific microbial
+      gallium redox reaction or purified gallium product was not demonstrated.
+    context: >-
+      The type strain DSM 14887 was adapted to 5% w/v sludge with aluminum;
+      NCBITaxon:930 identifies the species, not the strain. The feed was dried
+      at 60 degrees C for 48 hours and mortar-homogenized; Table 1 reports
+      1.21% Ga by handheld XRF and Section 2.1 expects association with the
+      iron phase rather than establishing a gallium mineral species. The
+      curated 3% w/v sludge assay used 50 mL shake-flask setups, HBS medium,
+      1% elemental sulfur, initial pH 1.8, 30 degrees C and eight days.
+      Table 2 specifies 12.9 mM Al (molar Al:F 1.5:1) and 1 mL sulfuric acid
+      for initial acidification. Section 2.3 reports 10% inoculum as w/v;
+      that unusual basis is retained rather than silently changed to v/v.
+      Biotic setups were triplicate. Uninoculated controls included an
+      initial-pH negative control and an acid-adjusted comparator following
+      the biotic pH. Dissolved elements were assayed by ICP-MS. The exact
+      shaking speed and sample separation protocol for this assay are not
+      resolved in Section 2.3.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:930
+        label: Acidithiobacillus thiooxidans
+    evidence:
+      - source_ref: fritze2026
+        supports: support
+        explanation: >-
+          Sections 2.1-2.3, Table 2, Section 3.2 and Figure 3 report 94% of
+          feed gallium in solution at the end of the 3% sludge assay, versus
+          77% in its acid-adjusted abiotic comparator. Figure 3 presents
+          biotic means and SD; exact numeric SD is not transcribed here.
+          These are leaching fractions, not an isolated-product recovery
+          yield. The experiment remains laboratory scale despite the
+          industrial origin of the sludge.
+      - source_ref: fritze2026
+        supports: partial
+        explanation: >-
+          Section 3.2 reports 86% gallium leached within the first day and
+          attributes rapid dissolution chiefly to low pH. It calls the
+          abiotic controls simplified and explicitly requests replicate
+          confirmation of microbial facilitation. Section 3.4 reports
+          faster chemical processing at higher solids loading and discusses
+          downstream precipitation prospectively; neither selective gallium
+          recovery nor industrial bioleaching deployment follows from these
+          data. The abstract's Al:Fe ratio conflicts with Al:F in the methods
+          and results; the curated flask dose follows Table 2, not the
+          abstract's 1.4:1 reactor/optimization value.
+curation_history:
+  - timestamp: '2026-10-11T04:20:54Z'
+    curator: Codex (GPT-6; Codex)
+    action: record_creation
+    summary: >-
+      Created a source-verified element record with final US 2025 criticality
+      and laboratory sludge leaching evidence, retaining acid-only controls,
+      provisional microbial enhancement and source-method uncertainties.
+      Independent scientific review is a separate subsequent artifact.
+history_refs:
+  - history/records/gallium/2026-10-11T042054Z-codex-19549c.yaml

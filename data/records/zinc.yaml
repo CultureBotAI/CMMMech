@@ -1,0 +1,117 @@
+id: cmmmech:zinc
+name: Zinc
+material_kind: element
+description: >-
+  Zinc (Zn), atomic number 30. The zinc-atom identifier grounds this element
+  record, not dissolved Zn(II), zinc sulfide, sphalerite, or a zinc concentrate.
+  The United States designation maps the listed zinc commodity to this element;
+  it does not designate every zinc-bearing mineral or waste. The curated
+  experiments concern laboratory dissolution of a sphalerite concentrate.
+identifiers:
+  - id: CHEBI:27363
+    label: zinc atom
+sources:
+  - id: chebi_zinc
+    title: ChEBI CHEBI:27363 — zinc atom
+    url: https://www.ebi.ac.uk/chebi/CHEBI:27363
+    accessed_on: '2026-10-11'
+  - id: usgs_2025
+    title: >-
+      USGS (2025). Final 2025 List of Critical Minerals. Federal Register
+      90:50494-50497, document 2025-19813; zinc commodity row.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: fowler_crundwell_1999
+    title: >-
+      Fowler TA and Crundwell FK (1999). Leaching of Zinc Sulfide by
+      Thiobacillus ferrooxidans: Bacterial Oxidation of the Sulfur Product Layer
+      Increases the Rate of Zinc Sulfide Dissolution at High Concentrations of
+      Ferrous Ions. Applied and Environmental Microbiology 65:5285-5292.
+      doi:10.1128/AEM.65.12.5285-5292.1999. Methods; Figures 2-6; Discussion.
+    url: https://doi.org/10.1128/AEM.65.12.5285-5292.1999
+    accessed_on: '2026-10-11'
+  - id: fowler_crundwell_1998
+    title: >-
+      Fowler TA and Crundwell FK (1998). Leaching of Zinc Sulfide by
+      Thiobacillus ferrooxidans: Experiments with a Controlled Redox Potential
+      Indicate No Direct Bacterial Mechanism. Applied and Environmental
+      Microbiology 64:3570-3575. doi:10.1128/AEM.64.10.3570-3575.1998.
+      Methods; Figures 4-6; Results and Discussion.
+    url: https://doi.org/10.1128/AEM.64.10.3570-3575.1998
+    accessed_on: '2026-10-11'
+  - id: taxonomy_ferrooxidans
+    title: >-
+      NCBI Taxonomy 920 — Acidithiobacillus ferrooxidans, species rank;
+      Thiobacillus ferrooxidans basionym.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States of America
+    list_name: USGS Final List of Critical Minerals
+    edition: '2025; Federal Register 90:50494-50497; published 7 November 2025'
+    classification: critical
+    source_ref: usgs_2025
+mechanisms:
+  - id: ferrooxidans_sphalerite_dissolution
+    name: Conditional enhancement of sphalerite-concentrate dissolution
+    process: bioleaching
+    description: >-
+      Living Thiobacillus ferrooxidans FC1, using the paper's historical name,
+      increased zinc dissolution relative to matched chemical controls at
+      elevated ferrous concentrations after an initial period without an
+      advantage. Surface analyses and kinetic modeling support sulfur-layer
+      removal as the explanation; they do not establish a specific enzyme or
+      direct biological oxidation of the ZnS lattice.
+    context: >-
+      Gamsberg concentrate, reported as 98% sphalerite by XRD and 53.3% Zn,
+      was milled to 45-53 micrometres and washed with 0.5 M sodium sulfide.
+      The aerated, stirred laboratory electrolysis cell had a 2 L working
+      volume, 5 g concentrate/L, 10% v/v inoculum, pH 1.6, 35 degrees C and
+      dissolved oxygen 5.9 mg/L. Redox control maintained dissolved iron
+      conditions; 1999 experiments held Fe(III) at 1 g/L while varying Fe(II).
+      Zinc was assayed in 0.45-micrometre filtrate by atomic spectrophotometry.
+      This is dissolution, not isolated zinc-product recovery or deployment.
+      Analytical repeatability replicates do not establish biological
+      replication. NCBITaxon:920 maps the published species name, not a
+      verified strain accession or modern genomic reassignment of FC1.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+    evidence:
+      - source_ref: fowler_crundwell_1999
+        supports: support
+        explanation: >-
+          Methods and Figures 2-6 compare inoculated and microscopy-checked
+          sterile runs. Dissolution diverged after approximately 8-12 h;
+          surface comparisons at Fe(II) 4 g/L after 100 h and 8 g/L after 69 h
+          support the authors' sulfur-removal interpretation. No recovery
+          percentage is inferred from the plots.
+      - source_ref: fowler_crundwell_1999
+        supports: partial
+        explanation: >-
+          Figures 2-3 include a 1 g/L Fe(II) series whose paired data
+          appear inconsistent with the Discussion's sharp low-ferrous null
+          boundary. A universal 1 g/L threshold is therefore not curated.
+          Shrinking-core fits and SEM/EDAX are mechanistic support, not enzyme
+          assays, sulfur mass balance, or independent process replication.
+      - source_ref: fowler_crundwell_1998
+        supports: partial
+        explanation: >-
+          Methods and Figures 4-6 report similar zinc dissolution with FC1 and
+          sterile controls when Fe(II) was held at 1 g/L and Fe(III) varied,
+          at pH 1.6, 35 degrees C and 5 g concentrate/L. Bacterial iron
+          oxidation and surface attachment occurred, but no additional
+          dissolution was demonstrated under those conditions. This bounds
+          the later enhancement claim; neither study justifies a universal
+          direct bacterial leaching mechanism.
+curation_history:
+  - timestamp: '2026-10-11T04:20:59Z'
+    curator: codex (GPT-6)
+    action: CREATE
+    summary: >-
+      Added zinc identity and dated US criticality with controlled FC1
+      sphalerite-leaching evidence, the primary low-ferrous null result,
+      figure/prose uncertainty, and explicit laboratory recovery limits.
+history_refs:
+  - history/records/zinc/2026-10-11T042052Z-codex-227643.yaml
