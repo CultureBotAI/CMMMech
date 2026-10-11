@@ -1,0 +1,169 @@
+id: cmmmech:greigite
+name: Greigite
+material_kind: mineral
+description: Greigite is the mixed-valence iron sulfide mineral Fe2+Fe3+2S4,
+  conventionally written Fe3S4, approved as IMA 1963-007 in the September 2026
+  IMA list. It is distinct from elemental iron, mackinawite, pyrite, magnetite,
+  and an undifferentiated iron-sulfide precipitate. The observations below concern
+  extracellular greigite formed in mixed laboratory mineral assemblages, not
+  extracted natural ore or a purified recovered product. No criticality status
+  is inferred from a constituent element.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 86,
+    Greigite row; page 1 column definitions and page 2 distribution terms.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-11'
+- id: gorlas2018
+  title: Gorlas et al. (2018). Greigite nanocrystals produced by hyperthermophilic
+    archaea of Thermococcales order. PLOS ONE 13(8), e0201549. Complete article,
+    Figures 1-5 and original supplementary CHESS reports S1-S2.
+  url: https://doi.org/10.1371/journal.pone.0201549
+  accessed_on: '2026-10-11'
+- id: gorlas2022
+  title: Gorlas et al. (2022). Precipitation of greigite and pyrite induced by
+    Thermococcales - an advantage to live in Fe- and S-rich environments?
+    Environmental Microbiology 24(2), 626-642. Complete archived article,
+    Figures 1-6, Table 1, supplementary Figures S1-S8 and Appendix S1.
+  url: https://doi.org/10.1111/1462-2920.15915
+  accessed_on: '2026-10-11'
+- id: ncbi_prieurii
+  title: NCBI Taxonomy 1128108. Thermococcus prieurii, species-level identity;
+    the 2018 assay methods do not provide an authenticated strain accession.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1128108
+  accessed_on: '2026-10-11'
+- id: ncbi_kod1
+  title: NCBI Taxonomy 69014. Thermococcus kodakarensis KOD1, the strain named
+    in the 2022 experimental methods as KOD1 (JCM 12380).
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=69014
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: prieurii_extracellular_greigite
+  name: Culture-associated extracellular greigite biomineralization
+  process: biomineralization
+  microbial: true
+  organisms:
+  - id: NCBITaxon:1128108
+    label: Thermococcus prieurii
+  description: Thermococcus prieurii cultures produced extracellular greigite
+    nanocrystals among pyrite-mineralized cells or vesicles and iron-phosphate-bearing
+    organic material. Electron diffraction and high-resolution imaging support
+    the Fe3S4 assignment. The authors propose nucleation on phosphate-loaded cell
+    material; a unique molecular pathway, direct enzymatic Fe oxidation and an
+    obligatory living-cell requirement are not established.
+  context: Early-stationary-phase cells, reported at 5 x 10^7 cells/mL, were
+    incubated in anoxic mineralization medium containing 5 mM FeSO4 at 85 degrees C
+    with shaking, sampled through 192 hours. Growth used modified Ravot medium
+    adjusted to pH 7 before autoclaving, 1 g/L elemental sulfur, dinitrogen and
+    0.05% w/v Na2S.9H2O reductant. Phosphate was added to the growth medium, while
+    the discussion calls some mineralization experiments nominally phosphate-free;
+    transfer composition and phosphate carryover are not resolved. No measured
+    mineralization pH trajectory, agitation speed or biological replicate count
+    is provided. These are laboratory batch observations, not an in situ
+    hydrothermal-vent demonstration or industrial recovery process.
+  evidence:
+  - source_ref: gorlas2018
+    supports: support
+    explanation: Figures 1-2 and Results describe greigite appearing after
+      96 hours in T. prieurii incubations and becoming more abundant by 192 hours.
+      More than 30 powder or single-crystal electron diffraction patterns were
+      indexed as greigite rather than mackinawite, pyrrhotite or pyrite; Figure 2D
+      shows a diffraction pattern and Figure 2E the lattice image. EDX Fe/S near
+      0.75 is complementary semiquantitative evidence, not sufficient phase
+      identification alone. Particle and diffraction counts are not biological
+      replicates. No greigite mass yield or iron-recovery fraction is measured.
+  - source_ref: gorlas2018
+    supports: partial
+    explanation: The paper reports that greigite was not observed in medium
+      without cells. It does not provide a matched control phase-abundance time
+      series or isolate effects of sulfide chemistry, cell debris and active
+      metabolism. Figures 1 and 4 show a mixed assemblage containing separate
+      pyrite spherules, greigite nanocrystals and organic material. The authors'
+      description of locally pure greigite nanocrystals does not establish bulk
+      phase purity. Close proximity to cells or vesicles is not intracellular
+      magnetosome formation or demonstrated magnetic recovery.
+  - source_ref: gorlas2018
+    supports: partial
+    explanation: Figures 3-4 associate early amorphous iron-phosphate material
+      with cells and extracellular material, followed by nearby greigite. This
+      supports a proposed precursor association but does not prove an exclusive
+      phosphate-to-greigite pathway. The Fe/P ratio alone does not measure Fe
+      oxidation state, and the oxidant responsible for partial Fe(II) oxidation
+      remains unresolved. S1-S2 are equilibrium model reports; the greigite model
+      suppresses pyrite precipitation and is not an experimental control or
+      evidence that greigite formation universally requires microorganisms.
+- id: kod1_sulfur_source_comparison
+  name: Sulfur-source-dependent greigite formation in KOD1 cultures
+  process: biomineralization
+  microbial: true
+  organisms:
+  - id: NCBITaxon:69014
+    label: Thermococcus kodakarensis KOD1
+  description: In a separate study from the same research group, extracellular
+    greigite was identified in Thermococcus kodakarensis KOD1 cultures grown with
+    elemental sulfur or L-cystine and subsequently exposed to FeSO4. Elemental
+    sulfur cultures developed a bulk greigite-pyrite assemblage, whereas L-cystine
+    cultures contained sparse greigite nanocrystals in predominantly poorly
+    ordered FeS. The two analytical scales and the distinct sulfur-source arms
+    are retained; neither represents a purified greigite product.
+  context: KOD1 (JCM 12380) was grown to early stationary phase at a reported
+    5 x 10^7 cells/mL in modified Ravot medium containing yeast extract and
+    tryptone, with either 1 g/L elemental sulfur or 1 g/L L-cystine. The medium
+    was adjusted to pH 7 before autoclaving, supplemented with phosphate and
+    0.05% w/v Na2S.9H2O, and made anoxic using vacuum and dinitrogen. Addition
+    of FeSO4 to a final 5 mM created the mineralization medium; cultures and
+    cell-free controls were incubated at 85 degrees C with shaking. Main phase
+    comparisons use microscopy at 144 hours and Fe K-edge XANES at 24 and
+    160 hours. Growth kinetics were in triplicate; the number of independent
+    mineralization flasks or XANES biological replicates is not explicitly
+    supplied. The methods give no agitation speed or mineralization pH trajectory.
+  evidence:
+  - source_ref: gorlas2022
+    supports: support
+    explanation: Figure 3D-F identifies extracellular L-cystine-arm nanocrystals
+      as greigite by electron diffraction and high-resolution TEM at 144 hours.
+      Figure 2 and Table 1 do not resolve greigite in the 160-hour bulk XANES
+      fit for this arm, which is dominated by poorly ordered FeS and iron
+      phosphates. The authors attribute the non-detection to low abundance,
+      citing an approximate 5% XANES detection limit. Microscopic detection and
+      bulk non-detection are not converted into contradictory presence claims
+      or a quantified greigite yield. Pyrite was not observed in this arm.
+  - source_ref: gorlas2022
+    supports: support
+    explanation: For the elemental-sulfur arm, Figure 2D and Table 1 fit the
+      160-hour bulk Fe K-edge spectrum with greigite 41%, pyrite 49% and FeS 11%.
+      These are fitted relative Fe-species contributions, sum to 101% as printed,
+      and are not recovered masses, percentages of total culture solids or
+      conversion of added iron. Supplementary Figures S2-S3 distinguish
+      extracellular nanocrystals from pyrite-containing spherules. The article's
+      Table 1 labels uncertainty intervals as 98% confidence, while the methods
+      specify 99.7% (three sigma); the confidence convention is unresolved.
+  - source_ref: gorlas2022
+    supports: partial
+    explanation: Cell-free controls in both sulfur-source media are reported
+      to contain amorphous FeS without observed greigite or pyrite. Supplementary
+      Figure S6 directly illustrates a 70-hour elemental-sulfur control with
+      SEM and EDX, not a complete phase-quantified control series matched to the
+      144-160-hour culture measurements. The comparisons support culture-associated
+      formation under these conditions but do not isolate active metabolism
+      from cell-derived substrates, templating and altered sulfur chemistry.
+  - source_ref: gorlas2022
+    supports: partial
+    explanation: Cell damage, iron-phosphate-rich debris and later greigite
+      motivate the proposed precursor pathway. Dissolved phosphate release was
+      explicitly not measured. ATP and cell-division observations in Figures
+      4-6 concern population response to mineralization and do not demonstrate
+      that greigite alone causes survival or growth. Appendix S1 documents
+      chemically synthesized XANES reference compounds, including greigite;
+      these standards are distinct from the microbial assay products. No
+      industrial deployment, isolated-product yield or universal biological
+      origin of natural greigite is established.
+curation_history:
+- timestamp: '2026-10-11T21:09:26.932628+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created greigite identity and two bounded culture-associated
+    biomineralization observations with mixed-phase, control, detection and
+    laboratory-scale limitations; no recovery yield or criticality inferred.
+history_refs:
+- history/records/greigite/2026-10-11T210905Z-codex-c1e0b6.yaml

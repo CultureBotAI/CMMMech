@@ -200,6 +200,10 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Pyrite](data/records/pyrite.yaml) | Methanogen growth on a natural specimen with separate synthetic-phase reduction assays | Mineral-access dependence does not resolve electron transfer, uptake or recovered-product yield |
 | [Chalcocite](data/records/chalcocite.yaml) | Culture-associated leaching observations in mineral separates and mixtures | Feed composition, controls and an inconsistent extraction equation limit causal and yield claims |
 | [Covellite](data/records/covellite.yaml) | Phase formation from mine drainage using biogenic sulfide | Separate chemical precipitation; inconsistent composition values cannot establish purity or recovery yield |
+| [Galena](data/records/galena.yaml) | Culture-associated transformation of a galena-rich concentrate | Sulfate precipitation and source accounting limits prevent a dissolved-lead recovery claim |
+| [Greigite](data/records/greigite.yaml) | Extracellular phase formation in two Thermococcales studies | Mixed assemblages, bulk detection limits and incomplete controls constrain causal and yield claims |
+| [Mackinawite](data/records/mackinawite.yaml) | Sulfate-reducing cultures and inactive biomass influence crystal growth | Abiotic formation, unequal pretreatment and fitted domain sizes do not establish recovery yield |
+| [Uraninite](data/records/uraninite.yaml) | MR-1 forms diffraction-identified UO2 nanoparticles | Genetic comparator limits and medium-dependent non-uraninite products prevent universal phase or field claims |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -240,7 +244,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [thirty-first expansion reviews](research/ingests/round31-20261011-publication.md),
 [thirty-second expansion reviews](research/ingests/round32-20261011-publication.md),
 [thirty-third expansion reviews](research/ingests/round33-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round33-frontier-20261011.md), and
+[thirty-fourth expansion reviews](research/ingests/round34-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round34-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

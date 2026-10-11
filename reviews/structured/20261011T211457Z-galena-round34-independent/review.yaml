@@ -1,0 +1,277 @@
+schema_version: 1.0.0
+review_id: 20261011T211457Z-galena-round34-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent adversarial review of galena transformation evidence
+started_at: '2026-10-11T21:07:43.913946Z'
+finished_at: '2026-10-11T21:14:57.606793Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The record/history were authored by /root/round27_eaf_slag.
+    Root captured exact inputs before judging and independently read the primary text,
+    all figures/tables and authorities. Shared curator-acquired originals and prior
+    routing are disclosed; root did not author or edit the record.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Phase-supported culture-associated transformation is defensible within the
+  retained experimental limits. No corrective record defect was identified.
+source:
+  git_revision: 38cef46aabbcb2b49536ed8c265c63646ff1da3d
+  state: working_tree
+  inputs:
+  - path: data/records/galena.yaml
+    sha256: b852030fb39e070936bab937991ef590d116307856ab532b7e6f31a330bdf78d
+    role: target
+  - path: history/records/galena/2026-10-11T210433Z-codex-a62b7d.yaml
+    sha256: 4d39b4e58e58f08f035b058edb4596dc336ec2cffb15a2148cc23c29e03ca939
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: All fields of one new mineral record and CREATE history.
+  selection: Independent review of a round34 record authored by another agent.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:galena
+  exclusions:
+  - target: Deferred galena studies and anglesite candidate
+    reason: Not accepted mechanisms in this record; require their own full primary
+      assessment.
+targets:
+- target_id: cmmmech:galena
+  path: data/records/galena.yaml
+  label: Galena
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/galena.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/galena.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Executed by root; one record checked, zero failed. Log /private/tmp/cmm-round34-galena-root-review/named.log
+  target_ids:
+  - cmmmech:galena
+- check_id: batch
+  name: Final batch batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'uv run --locked --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 195.87s (0:03:15)
+
+    Checked 194 record(s); 0 failed.
+
+    Checked 224 history record(s); 0 error(s).; log SHA256 84e966930d55b1bbc3527e149d252fd1dfe7f3ec0454f71b71aaceb517ebf5c8'
+  target_ids:
+  - cmmmech:galena
+- check_id: nonempty
+  name: Final batch nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Checked 194 record(s); 0 failed.; log SHA256 9a1c693b6ef6256da07b28e732785b92b62fc090e964b3303620f782db991cd9
+  target_ids:
+  - cmmmech:galena
+- check_id: history
+  name: Final batch history
+  command: uv run --locked cmmmech validate-history --base 38cef46aabbcb2b49536ed8c265c63646ff1da3d
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Checked 224 history record(s); 0 error(s).; log SHA256 70d4c90358c71eeb843da5b2f1b671d7ee9275ecd4d3c4dcb3330d4db4ed3d6f
+  target_ids:
+  - cmmmech:galena
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/galena.yaml
+  locator: All frozen fields
+  accessed_at: '2026-10-11T21:14:57.606793Z'
+  support: supports
+  summary: All record fields inspected after native hash capture.
+  snapshot_sha256: b852030fb39e070936bab937991ef590d116307856ab532b7e6f31a330bdf78d
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.journalssystem.com/ppmp/Bioleaching-of-galena-flotation-concentrate,79494,0,2.html
+  locator: Complete primary scientific text pp. 281-290; all three tables and Figures
+    1-3 visually checked
+  accessed_at: '2026-10-11T21:14:57.606793Z'
+  support: supports
+  summary: Shared curator-acquired original read independently. Natural concentrate,
+    source-labelled F3-02, distinct synthetic comparator, nominal and measured conditions,
+    XRD phases, SEM preparation, low dissolved Pb and residue ratios match the qualified
+    record.
+  snapshot_sha256: 9a0a9d6a4df1e2c42cc369aa8e17d7d35c47f2da29b5b0dc674901725eae4925
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Page 79 Galena row; pages 1-2 definitions/terms
+  accessed_at: '2026-10-11T21:14:57.606793Z'
+  support: supports
+  summary: PbS, grandfathered G, unresolved original-description year. Dated original
+    rechecked; no elemental criticality or approval identifier inherited.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: taxon
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=info
+  locator: Fresh browser authority page, scientific name and rank
+  accessed_at: '2026-10-11T21:14:57.606793Z'
+  support: supports
+  summary: Authority identifies Acidithiobacillus ferrooxidans at species rank; this
+    does not authenticate F3-02 or identify it as the type strain.
+- evidence_id: history
+  kind: record_content
+  reference: history/records/galena/2026-10-11T210433Z-codex-a62b7d.yaml
+  locator: Entire CREATE sidecar and distinct inline event
+  accessed_at: '2026-10-11T21:14:57.606793Z'
+  support: supports
+  summary: Actual Codex/GPT-6 provenance, target and scope are consistent; independent
+    review was correctly pending when authored.
+  snapshot_sha256: 4d39b4e58e58f08f035b058edb4596dc336ec2cffb15a2148cc23c29e03ca939
+- evidence_id: search
+  kind: search
+  reference: Independent web search 2026-10-11
+  locator: Returned results for exact-title notice and supplementary queries
+  accessed_at: '2026-10-11T21:14:57.606793Z'
+  support: supports
+  summary: No specific correction or retraction was identified in returned results.
+    The Indonesian concentrate study is a different experiment requiring a separate
+    assessment; it does not invalidate this sulfate-medium observation.
+  search_scope: 'Queries: "Bioleaching of galena flotation concentrate" correction
+    erratum retraction; "Pacholewska" "galena" "2004" supplement. Returned result
+    sets only, no exhaustive notice clearance. Curator dedup covered hidden/ignored
+    records, research, reviews, history and cited downloads; root does not claim an
+    independent machine-wide novelty search.'
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral, feed and authority
+  outcome: supported
+  summary: The mineral owner is distinct from lead, the mixed flotation concentrate
+    and anglesite product. No criticality claim or unverified external mineral identifier
+    is invented.
+  target_ids:
+  - cmmmech:galena
+  evidence_ids:
+  - record
+  - ima
+  - primary
+- assessment_id: experiment
+  area: evidence
+  topic: Culture and experimental conditions
+  outcome: supported
+  summary: Nominal 5% w/v, 100 mL plus 10 mL culture, 25 degrees C, 130 rpm and 384
+    h context matches pp. 282-284. Denominator, replicate, inoculum and sterilization
+    limits remain explicit. The control chemistry diverges; a direct cellular mechanism
+    is not claimed.
+  target_ids:
+  - cmmmech:galena
+  evidence_ids:
+  - record
+  - primary
+  - taxon
+  dimensions:
+  - name: organism
+    value: Source-labelled living Acidithiobacillus ferrooxidans F3-02
+    definition: Species authority verified; strain authentication unresolved.
+    evidence_ids:
+    - primary
+    - taxon
+  - name: scale
+    value: Laboratory shake flasks
+    definition: Natural industrial-source concentrate does not establish industrial
+      deployment.
+    evidence_ids:
+    - primary
+    - record
+- assessment_id: phases
+  area: evidence
+  topic: Transformation and recovery boundaries
+  outcome: supported
+  summary: XRD identifies less galena and more anglesite in the inoculated residue,
+    with anglesite also in the control. Approximate residue phase proportions are
+    not whole-feed mass conversion. SEM morphology does not authenticate the strain
+    or isolate enzymatic attack.
+  target_ids:
+  - cmmmech:galena
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: accounting
+  area: evidence
+  topic: Dissolved Pb and sulfur denominator
+  outcome: supported
+  summary: Table 2 gives 288 h Pb 0.0021 g/L inoculated versus 0.0022 control and
+    384 h 0.0019 versus 0.0021. Table 3 ratios agree with sulfate-S divided by residual
+    sulfide-S for 288 h; early control row inconsistencies and sulfate-rich medium
+    prevent an original-galena conversion claim. The record preserves rather than
+    repairs those source numbers.
+  target_ids:
+  - cmmmech:galena
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: History and bounded source coverage
+  outcome: supported
+  summary: Named and batch structural gates passed. Exact source bytes, dated authority
+    and history are retained; raw PDFs remain outside Git. No new corrective finding
+    was manufactured from already disclosed source limitations.
+  target_ids:
+  - cmmmech:galena
+  evidence_ids:
+  - record
+  - history
+  - search
+findings: []
+actions: []
+limitations:
+- Replicate number, measurement uncertainty, inoculum density and detailed control
+  sterility are unknown.
+- Control pH/redox and synthetic PbS chemistry differ; microbial necessity and a unique
+  molecular mechanism are unresolved.
+- Residue phase percentages and sulfate/sulfide ratios cannot establish starting-feed
+  conversion or recovered lead yield.
+- No isolated-product recovery or industrial deployment is demonstrated.
+- Bounded notice search is not exhaustive; no raw XRD reanalysis or independent experiment
+  was performed.
+notes:
+- Final batch receipts apply to the same frozen record/history bytes. No maintained
+  correction was needed.
+tags:
+- round34
+- galena
+- independent
+- scientific
