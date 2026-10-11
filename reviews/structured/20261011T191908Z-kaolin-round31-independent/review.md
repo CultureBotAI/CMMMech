@@ -1,0 +1,626 @@
+# Independent scientific review of fungal iron removal from natural kaolin
+
+- Review: 20261011T191908Z-kaolin-round31-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T19:11:56.808499Z
+- Finished UTC: 2026-10-11T19:19:08.033675Z
+- Reviewer: Codex /root/round27_eaf_slag (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The natural mixed-kaolin resource and conditional fungal iron-mobilization assay are supported by the complete primary. The record accurately distinguishes oxide-equivalent feed chemistry, unaccessioned fungus, unmatched-pH controls, nonmonotonic sucrose response and unequal culture/mineral-contact times. No actionable corrective finding was identified; reported percentages do not establish a closed mass balance, particular iron phase, isolated recovered product or industrial deployment.
+
+## Scope And Provenance
+
+Every maintained kaolin field, citation and adopted quantitative comparison; complete accepted primary, taxon scope and separate inline/canonical CREATE provenance.
+
+Selection: One frozen new round31 record authored by a different agent.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 075c1ca032b68162eb8350b7e8d9bfe9530ca143.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:kaolin | data/records/kaolin.yaml | maintained | Kaolin |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named-record validation | passed | True | cmmmech:kaolin | Reviewer executed named validation; terminal0, one record and zero failures. Retained log /private/tmp/cmm-round31-kaolin-named-review-validation.log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e. A second explicit terminal invocation returned the same result. |
+| Full batch before sibling prose correction | passed | True | cmmmech:kaolin | Root executed before the separate kaolin-mine-waste prose correction; reviewer independently read and SHA256-verified complete terminal log /private/tmp/cmm-round31-final-batch.log (c42464b59af6a3aac67f79d03121e06de34f98a4ed6048683c370ac90c3cf639). Exact reviewed record hash remained unchanged. These deterministic gates do not prove scientific truth. |
+| Nonempty validation before sibling correction | passed | True | cmmmech:kaolin | Root executed before the separate kaolin-mine-waste prose correction; reviewer independently read and SHA256-verified complete terminal log /private/tmp/cmm-round31-final-nonempty.log (28173453e8d0bf2d4fc8bf1a392f98d24e15c5c4998de9cb6b4813c91f243899). Exact reviewed record hash remained unchanged. These deterministic gates do not prove scientific truth. |
+| Trusted-base history before sibling correction | passed | True | cmmmech:kaolin | Root executed before the separate kaolin-mine-waste prose correction; reviewer independently read and SHA256-verified complete terminal log /private/tmp/cmm-round31-final-history.log (e5d1e7a4f33f2e4e4cacc7cf1250be42d30c91e582bb145f3fe2218069e9ff5c). Exact reviewed record hash remained unchanged. These deterministic gates do not prove scientific truth. |
+| Affected corrected-cohort nonempty | passed | True | cmmmech:kaolin | After the sibling kaolin-mine-waste wording correction, root reran the affected corpus/history gates:184records/210histories. Reviewer read and hash-verified /private/tmp/cmm-round31-corrected-nonempty.log (28173453e8d0bf2d4fc8bf1a392f98d24e15c5c4998de9cb6b4813c91f243899). Kaolin scientific/history inputs are unchanged. Schema/test code was unchanged; full308pass/3skip test receipt is the preceding run. |
+| Affected corrected-cohort history | passed | True | cmmmech:kaolin | After the sibling kaolin-mine-waste wording correction, root reran the affected corpus/history gates:184records/210histories. Reviewer read and hash-verified /private/tmp/cmm-round31-corrected-history.log (230525627011be86c95ae540fadb75444fc0ff0a4e135c46f2fbaf2c448fcb36). Kaolin scientific/history inputs are unchanged. Schema/test code was unchanged; full308pass/3skip test receipt is the preceding run. |
+
+## Scientific And Domain Assessments
+
+### Mixed natural resource and species-only taxon mapping
+
+identity: supported. Targets: cmmmech:kaolin.
+
+Resource identity,major mineral assemblage and taxon rank are supported without pure-mineral,stock-authentication or constituent-criticality inheritance.
+
+### Living culture,conditions and comparators
+
+evidence: supported. Targets: cmmmech:kaolin.
+
+The retained conditions and no-fungus controls match Methods; confounded pH and unreported mass/uncertainty accounting are explicit.
+
+### Author-reported Fe2O3 equivalents and unequal durations
+
+quantity: supported. Targets: cmmmech:kaolin.
+
+Every adopted numerical result matches original prose/figures and remains source-reported rather than reconstructed product yield. Delayed exposure and culture age are explicitly distinguished.
+
+### Mechanism inference,product and deployment
+
+scope: supported. Targets: cmmmech:kaolin.
+
+Measured Fe,pH andbiomass justify conditional culture-associated mobilization. Particular acids,causal growth inhibition,Fe redox,phase-specific dissolution and industrial recovery are appropriately withheld.
+
+### Primary citation,immutable history and exact review inputs
+
+provenance: supported. Targets: cmmmech:kaolin.
+
+Verified metadata,source URLs and separate CREATE histories are appropriate. Required actual checks passed and exact inspect inputs remain unchanged.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/kaolin.yaml; Entire frozen YAML and all claim-bearing evidence entries | supports | The maintained material is a natural primary resource, distinct from kaolinite species, aluminium, refined product or discarded mine waste. Criticality is not inherited and no deployment or recovered-product claim is made. |
+| primary_identity | https://doi.org/10.35354/tbed.592519; Kale and Ciftci2020, complete original seven pages16–22; Sections2.1–2.3,Table1,Figure3 | supports | Original PDF and all seven renders independently inspected. Approximately40kg Bilecik-Sogut mixed ore was crushed and alumina-ball-milled below106um,d80=65um,d50=25um; XRD identifies kaolinite,quartz,microcline. Bulk XRF reports0.82wt%Fe2O3,21.79Al2O3,66.83SiO2 oxide equivalents. Supplied pure A.niger lacks strain/accession. Growing cultures were tested in500mLflasks with247.5mLmedium+2.5mLinoculum,30C125rpm; sampled5mLevery3days,centrifuged4100rpm10min and analyzed byAAS/ICP-OES. |
+| primary_controls | https://doi.org/10.35354/tbed.592519; Sections3.1–3.2 and original Figures4–9,printed19–20 | supports | At1%solids/10%sucrose, source reports52.47%Fe2O3removal at336h versus6.22%no-fungus control;10%solids yields18.51%. Figure5 and prose supportpH3.75vs5.88 at1%solid, with no pHmatching. At5%solids,10%sucrose gives34.66%at336h and exceeds5/15/20%sucrose, so the abstract monotonic-sugar statement is not generalized. Figure9growth peaks15%sucrose; biomass/acidity/removal are not equivalent outcomes. Figures show no uncertainty bars. |
+| primary_timing | https://doi.org/10.35354/tbed.592519; Section3.3 and Figures10–13,printed20–21; conclusion | supports | Original Figure10endpoint61.09% occurs at504h total culture, ore introduced at240h:264h/11days ore exposure after10days growth. Initial-addition52.47% is a336h/14day ore-exposure result. Controls terminate near336h, not504h. These different timings cannot establish matched-time superiority. Figures12–13show an ore-addition pHresponse; acids, specific mineral phases, Fe valence and isolated products were not measured. |
+| primary_limits | https://doi.org/10.35354/tbed.592519; Entire accepted article; Figure1industry-use pie,Figure2generic flowsheet,methods/results/discussion/reference list | supports | General processing/industrial context is not commercial deployment of this experiment. No explicit yield equation, withdrawal correction, replicate number, statistical testing, complete mass balance or standardized final whiteness result was found in the complete inspected primary. Proposed acid identities and growth inhibition mechanisms are background/inference rather than measured molecular causation. |
+| taxon | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061&amp;mode=Info; Fresh official name/rank fields opened independently during this review | supports | TaxonomyID5061,current nameAspergillus niger,rank species agree with the record. Neotype culture references in the database do not identify this experiment's unspecified culture. |
+| metadata | https://api.crossref.org/works/10.35354%2Ftbed.592519; Full retained Crossref work and fresh official Dergipark page | supports | DOI,authors,title,volume10,pages16–22 and20February2020 match. Official/Crossref issue1 conflicts with English PDF issue2, while Turkish PDF saysissue1; record omits issue. Returned relation is empty and update fields absent, not an exhaustive clearance. |
+| dedup | /private/tmp/cmm-round31-kaolin-review-dedup.json; Exact command,root list,54returned matching lines and boundary receipt | supports | Independent hidden/ignored search found the frozen new natural-kaolin record and separate mine-waste record, plus their current provenance/raw sources and an ilmenite research reference. No duplicate accepted natural-kaolin target or accepted Kale2020experiment was identified inside the declared search boundary. |
+| notices | /private/tmp/cmm-round31-kaolin-review-web.json; First returned exact DOI/title correction/retraction query results and independent counterevidence queries | context_only | No affecting notice was identified within returned official metadata and bounded search results. Other A.niger/kaolin papers use different feeds,strains andconditions; their indexed content is not imported. Publisher indexed content now exposes a potential legitimate route for the2019temperature study despite earlier direct403, but complete visual verification was not undertaken and it remains a future lead. |
+| history | history/records/kaolin/2026-10-11T191022Z-codex-29176a.yaml; Whole canonical CREATE sidecar and distinct inline event | supports | Both identify actual Codex/GPT6/codex curation on11October2026 and the exact new resource. Inline19:10:21.186278Z and canonical19:10:22Z are separate author events. No retrospective scientific-review claim or previous authorship is invented. |
+| gates | /private/tmp/cmm-round31-final-terminal.json; Actual terminal receipts,all three complete logs and reviewed hashes | supports | Full justcheck passed308tests/3skips in108.69s before a separate sibling prose-only correction (184records/209histories then). Corrected-cohort affected nonempty/history checks passed184/210, with unchanged kaolin inputs. Reviewer read all logs and verified hashes, then recaptured canonical inputs. Independent named validation passed. |
+| corrected_gates | /private/tmp/cmm-round31-corrected-terminal.json; Actual affected corrected-cohort terminal receipt and complete nonempty/history logs | supports | All three commands, including the corrected sibling named check, reached terminal0. Nonempty184records and210historysidecars are current. The sibling prose correction did not change kaolin or test/schema code. |
+
+## Limits And Additional Notes
+
+- The supplied Aspergillus niger culture has no accession, strain name or molecular authentication; the NCBI species ID resolves the name only.
+- Removal values are author-reported Fe2O3 equivalents. The paper supplies no explicit yield equation, complete balance, serial-sampling correction, replication number, uncertainty bars or statistical tests.
+- No matched-pH control, measured organic acids, Fe oxidation-state assay or molecular perturbation separates acidification from other culture effects.
+- The 61.09% endpoint follows 504 h total culture and 264 h ore contact; it cannot be pooled with the 336 h initial-addition result or interpreted as a matched-time superiority experiment.
+- One ore batch and unaccessioned fungal culture do not establish universal kaolin behavior, standardized final whiteness, isolated iron recovery, industrial deployment or environmental/economic benefit.
+- Dedup and notice searches include declared hidden/ignored text roots and relevant symlinks, but exclude global binary extraction and inaccessible literature. Other primary leads were not admitted from search snippets.
+- No maintained record, history or source dossier was edited by this reviewer. No corrective issue was manufactured for source limitations already represented accurately.
+- Primary Turkish text was interpreted directly alongside its English abstract; no separate human translation is claimed. Preparatory primary reading occurred before target inspection; all target judgments followed canonical inspect.
+- iModulonDB is not applicable: this record asserts no gene, regulator, expression module or transcriptomic dataset.
+- Publication metadata have an original English/Turkish issue-number conflict; the record deliberately omits issue number while retaining verified DOI, year and pages.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T191908Z-kaolin-round31-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of fungal iron removal from natural kaolin
+started_at: '2026-10-11T19:11:56.808499Z'
+finished_at: '2026-10-11T19:19:08.033675Z'
+reviewer:
+  identity: Codex /root/round27_eaf_slag
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored the kaolin record, CREATE history and dossier.
+    This reviewer authored none of those and independently read the complete seven-page
+    primary, visually inspected all seven original pages including thirteen figures
+    and Table1, verified identifiers and notices, and captured exact inputs before
+    assessing the target. The reviewer separately curated chromite-beneficiation-tailings
+    in this shared worktree. Curator-acquired raw sources and root-executed final
+    batch checks are disclosed; the dossier was not the sole scientific evidence.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The natural mixed-kaolin resource and conditional fungal iron-mobilization
+  assay are supported by the complete primary. The record accurately distinguishes
+  oxide-equivalent feed chemistry, unaccessioned fungus, unmatched-pH controls, nonmonotonic
+  sucrose response and unequal culture/mineral-contact times. No actionable corrective
+  finding was identified; reported percentages do not establish a closed mass balance,
+  particular iron phase, isolated recovered product or industrial deployment.
+source:
+  git_revision: 075c1ca032b68162eb8350b7e8d9bfe9530ca143
+  state: working_tree
+  inputs:
+  - path: data/records/kaolin.yaml
+    sha256: aac0908e114c4262920224a1575ff15c6d67fe4155a24d25e159cd779d3e5cc9
+    role: target
+  - path: docs/record-review-profile.md
+    sha256: 93f65e8f516a9b7756afd89e4823c1b64e493a46ecbcb3ca5e54a5aa599b10f2
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/kaolin/2026-10-11T191022Z-codex-29176a.yaml
+    sha256: 87899589df3eae6795e83a16f3f475f989c63209c224aa857e23a732e89edaef
+    role: context
+  - path: research/sources/round31-kaolin/20261011T191021Z-source-investigation.json
+    sha256: 0986b3619f99e7970dceaee3ed73e6b93e97ed239bf50f95ee2d2ac3c096c58b
+    role: context
+  - path: research/sources/round31-kaolin/20261011T191021Z-source-investigation.md
+    sha256: 45951507c9127a1a16d981b5ab8a8d4e36dd4c4787e7c0622e27690f6bd23c92
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Every maintained kaolin field, citation and adopted quantitative comparison;
+    complete accepted primary, taxon scope and separate inline/canonical CREATE provenance.
+  selection: One frozen new round31 record authored by a different agent.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:kaolin
+  exclusions:
+  - target: Uncurated bacterial and other fungal kaolin experiments and raw instrument
+      reanalysis
+    reason: Research-only extensions are not evidence for the accepted Turkish ore
+      experiment; no exhaustive kaolin literature review or new mechanism is claimed.
+targets:
+- target_id: cmmmech:kaolin
+  path: data/records/kaolin.yaml
+  label: Kaolin
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/kaolin.yaml
+    role: maintained
+checks:
+- check_id: named
+  name: Independent named-record validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate
+    data/records/kaolin.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Reviewer executed named validation; terminal0, one record and zero failures.
+    Retained log /private/tmp/cmm-round31-kaolin-named-review-validation.log SHA256
+    6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e. A second explicit
+    terminal invocation returned the same result.
+  target_ids:
+  - cmmmech:kaolin
+- check_id: batch
+  name: Full batch before sibling prose correction
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root executed before the separate kaolin-mine-waste prose correction; reviewer
+    independently read and SHA256-verified complete terminal log /private/tmp/cmm-round31-final-batch.log
+    (c42464b59af6a3aac67f79d03121e06de34f98a4ed6048683c370ac90c3cf639). Exact reviewed
+    record hash remained unchanged. These deterministic gates do not prove scientific
+    truth.
+  target_ids:
+  - cmmmech:kaolin
+- check_id: nonempty
+  name: Nonempty validation before sibling correction
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root executed before the separate kaolin-mine-waste prose correction; reviewer
+    independently read and SHA256-verified complete terminal log /private/tmp/cmm-round31-final-nonempty.log
+    (28173453e8d0bf2d4fc8bf1a392f98d24e15c5c4998de9cb6b4813c91f243899). Exact reviewed
+    record hash remained unchanged. These deterministic gates do not prove scientific
+    truth.
+  target_ids:
+  - cmmmech:kaolin
+- check_id: history
+  name: Trusted-base history before sibling correction
+  command: uv run --locked cmmmech validate-history --base 075c1ca032b68162eb8350b7e8d9bfe9530ca143
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root executed before the separate kaolin-mine-waste prose correction; reviewer
+    independently read and SHA256-verified complete terminal log /private/tmp/cmm-round31-final-history.log
+    (e5d1e7a4f33f2e4e4cacc7cf1250be42d30c91e582bb145f3fe2218069e9ff5c). Exact reviewed
+    record hash remained unchanged. These deterministic gates do not prove scientific
+    truth.
+  target_ids:
+  - cmmmech:kaolin
+- check_id: corrected_nonempty
+  name: Affected corrected-cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: After the sibling kaolin-mine-waste wording correction, root reran the
+    affected corpus/history gates:184records/210histories. Reviewer read and hash-verified
+    /private/tmp/cmm-round31-corrected-nonempty.log (28173453e8d0bf2d4fc8bf1a392f98d24e15c5c4998de9cb6b4813c91f243899).
+    Kaolin scientific/history inputs are unchanged. Schema/test code was unchanged;
+    full308pass/3skip test receipt is the preceding run.
+  target_ids:
+  - cmmmech:kaolin
+- check_id: corrected_history
+  name: Affected corrected-cohort history
+  command: uv run --locked cmmmech validate-history --base 075c1ca032b68162eb8350b7e8d9bfe9530ca143
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: After the sibling kaolin-mine-waste wording correction, root reran the
+    affected corpus/history gates:184records/210histories. Reviewer read and hash-verified
+    /private/tmp/cmm-round31-corrected-history.log (230525627011be86c95ae540fadb75444fc0ff0a4e135c46f2fbaf2c448fcb36).
+    Kaolin scientific/history inputs are unchanged. Schema/test code was unchanged;
+    full308pass/3skip test receipt is the preceding run.
+  target_ids:
+  - cmmmech:kaolin
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/kaolin.yaml
+  locator: Entire frozen YAML and all claim-bearing evidence entries
+  accessed_at: '2026-10-11T19:19:08.033675Z'
+  support: supports
+  summary: The maintained material is a natural primary resource, distinct from kaolinite
+    species, aluminium, refined product or discarded mine waste. Criticality is not
+    inherited and no deployment or recovered-product claim is made.
+  snapshot_sha256: aac0908e114c4262920224a1575ff15c6d67fe4155a24d25e159cd779d3e5cc9
+- evidence_id: primary_identity
+  kind: primary_source
+  reference: https://doi.org/10.35354/tbed.592519
+  locator: Kale and Ciftci2020, complete original seven pages16–22; Sections2.1–2.3,Table1,Figure3
+  accessed_at: '2026-10-11T19:19:08.033675Z'
+  support: supports
+  summary: Original PDF and all seven renders independently inspected. Approximately40kg
+    Bilecik-Sogut mixed ore was crushed and alumina-ball-milled below106um,d80=65um,d50=25um;
+    XRD identifies kaolinite,quartz,microcline. Bulk XRF reports0.82wt%Fe2O3,21.79Al2O3,66.83SiO2
+    oxide equivalents. Supplied pure A.niger lacks strain/accession. Growing cultures
+    were tested in500mLflasks with247.5mLmedium+2.5mLinoculum,30C125rpm; sampled5mLevery3days,centrifuged4100rpm10min
+    and analyzed byAAS/ICP-OES.
+  snapshot_sha256: d4d0e551751439933a171f759ba785f634628908ef0701aa9efbf2ebac09107a
+- evidence_id: primary_controls
+  kind: primary_source
+  reference: https://doi.org/10.35354/tbed.592519
+  locator: Sections3.1–3.2 and original Figures4–9,printed19–20
+  accessed_at: '2026-10-11T19:19:08.033675Z'
+  support: supports
+  summary: At1%solids/10%sucrose, source reports52.47%Fe2O3removal at336h versus6.22%no-fungus
+    control;10%solids yields18.51%. Figure5 and prose supportpH3.75vs5.88 at1%solid,
+    with no pHmatching. At5%solids,10%sucrose gives34.66%at336h and exceeds5/15/20%sucrose,
+    so the abstract monotonic-sugar statement is not generalized. Figure9growth peaks15%sucrose;
+    biomass/acidity/removal are not equivalent outcomes. Figures show no uncertainty
+    bars.
+  snapshot_sha256: d4d0e551751439933a171f759ba785f634628908ef0701aa9efbf2ebac09107a
+- evidence_id: primary_timing
+  kind: primary_source
+  reference: https://doi.org/10.35354/tbed.592519
+  locator: Section3.3 and Figures10–13,printed20–21; conclusion
+  accessed_at: '2026-10-11T19:19:08.033675Z'
+  support: supports
+  summary: Original Figure10endpoint61.09% occurs at504h total culture, ore introduced
+    at240h:264h/11days ore exposure after10days growth. Initial-addition52.47% is
+    a336h/14day ore-exposure result. Controls terminate near336h, not504h. These different
+    timings cannot establish matched-time superiority. Figures12–13show an ore-addition
+    pHresponse; acids, specific mineral phases, Fe valence and isolated products were
+    not measured.
+  snapshot_sha256: d4d0e551751439933a171f759ba785f634628908ef0701aa9efbf2ebac09107a
+- evidence_id: primary_limits
+  kind: primary_source
+  reference: https://doi.org/10.35354/tbed.592519
+  locator: Entire accepted article; Figure1industry-use pie,Figure2generic flowsheet,methods/results/discussion/reference
+    list
+  accessed_at: '2026-10-11T19:19:08.033675Z'
+  support: supports
+  summary: General processing/industrial context is not commercial deployment of this
+    experiment. No explicit yield equation, withdrawal correction, replicate number,
+    statistical testing, complete mass balance or standardized final whiteness result
+    was found in the complete inspected primary. Proposed acid identities and growth
+    inhibition mechanisms are background/inference rather than measured molecular
+    causation.
+  snapshot_sha256: d4d0e551751439933a171f759ba785f634628908ef0701aa9efbf2ebac09107a
+- evidence_id: taxon
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061&mode=Info
+  locator: Fresh official name/rank fields opened independently during this review
+  accessed_at: '2026-10-11T19:19:08.033675Z'
+  support: supports
+  summary: TaxonomyID5061,current nameAspergillus niger,rank species agree with the
+    record. Neotype culture references in the database do not identify this experiment's
+    unspecified culture.
+  snapshot_sha256: 0824ee919f6db65fda7e74f4dd87782203f761df3b7fea530055e6b55a473c92
+- evidence_id: metadata
+  kind: database
+  reference: https://api.crossref.org/works/10.35354%2Ftbed.592519
+  locator: Full retained Crossref work and fresh official Dergipark page
+  accessed_at: '2026-10-11T19:19:08.033675Z'
+  support: supports
+  summary: DOI,authors,title,volume10,pages16–22 and20February2020 match. Official/Crossref
+    issue1 conflicts with English PDF issue2, while Turkish PDF saysissue1; record
+    omits issue. Returned relation is empty and update fields absent, not an exhaustive
+    clearance.
+  snapshot_sha256: 65c94ede7c967ecdcde4be956335736f66fc381f147cdf283a6865c3540ae141
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round31-kaolin-review-dedup.json
+  locator: Exact command,root list,54returned matching lines and boundary receipt
+  accessed_at: '2026-10-11T19:19:08.033675Z'
+  support: supports
+  summary: Independent hidden/ignored search found the frozen new natural-kaolin record
+    and separate mine-waste record, plus their current provenance/raw sources and
+    an ilmenite research reference. No duplicate accepted natural-kaolin target or
+    accepted Kale2020experiment was identified inside the declared search boundary.
+  search_scope: rg --no-ignore --hidden --follow -n -i for cmmmech:kaolin|tbed\.592519|natural.kaolin|Kaolen
+    Cevherinden across both round31worktree and original checkout data/records,research,reviews,history
+    plus currentkaolinraw and referenced round12aluminium-boron,expansionauthorities,next-EU
+    roots. Binary files not globally extracted. Adopted original primary separately
+    read; not machine-wide absence.
+  snapshot_sha256: 91f829ed92176b8fe640ec5e2765c924164165233cbd2a5a832b00cb57233d78
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round31-kaolin-review-web.json
+  locator: First returned exact DOI/title correction/retraction query results and
+    independent counterevidence queries
+  accessed_at: '2026-10-11T19:19:08.033675Z'
+  support: context_only
+  summary: No affecting notice was identified within returned official metadata and
+    bounded search results. Other A.niger/kaolin papers use different feeds,strains
+    andconditions; their indexed content is not imported. Publisher indexed content
+    now exposes a potential legitimate route for the2019temperature study despite
+    earlier direct403, but complete visual verification was not undertaken and it
+    remains a future lead.
+  search_scope: 'Queries: "10.35354/tbed.592519" correction retraction erratum; "Kaolen
+    Cevherinden Demirin" "Aspergillus"; "kaolin" "Aspergillus niger" "bioleaching"
+    "control" contradictory; "kaolin" "Aspergillus niger" "iron" "no" removal control.
+    First returned results only; no pagination or comprehensive notice registry. Fresh
+    official Dergipark andNCBIopens inspected; retained current-day Crossref parsed.'
+  snapshot_sha256: 7a34aaa7920948773e7cba27b532002f2112950ace3dfc58f2155e12f0f9c1c3
+- evidence_id: history
+  kind: record_content
+  reference: history/records/kaolin/2026-10-11T191022Z-codex-29176a.yaml
+  locator: Whole canonical CREATE sidecar and distinct inline event
+  accessed_at: '2026-10-11T19:19:08.033675Z'
+  support: supports
+  summary: Both identify actual Codex/GPT6/codex curation on11October2026 and the
+    exact new resource. Inline19:10:21.186278Z and canonical19:10:22Z are separate
+    author events. No retrospective scientific-review claim or previous authorship
+    is invented.
+  snapshot_sha256: 87899589df3eae6795e83a16f3f475f989c63209c224aa857e23a732e89edaef
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round31-final-terminal.json
+  locator: Actual terminal receipts,all three complete logs and reviewed hashes
+  accessed_at: '2026-10-11T19:19:08.033675Z'
+  support: supports
+  summary: Full justcheck passed308tests/3skips in108.69s before a separate sibling
+    prose-only correction (184records/209histories then). Corrected-cohort affected
+    nonempty/history checks passed184/210, with unchanged kaolin inputs. Reviewer
+    read all logs and verified hashes, then recaptured canonical inputs. Independent
+    named validation passed.
+  snapshot_sha256: 9d4815c2db4e472b64ce0de48a7e7cb10146a656e46814ddfd532329810aa9ad
+- evidence_id: corrected_gates
+  kind: validation
+  reference: /private/tmp/cmm-round31-corrected-terminal.json
+  locator: Actual affected corrected-cohort terminal receipt and complete nonempty/history
+    logs
+  accessed_at: '2026-10-11T19:19:08.033675Z'
+  support: supports
+  summary: All three commands, including the corrected sibling named check, reached
+    terminal0. Nonempty184records and210historysidecars are current. The sibling prose
+    correction did not change kaolin or test/schema code.
+  snapshot_sha256: 6e03ae753ee8da8038f61210ed78cf58998a758899df189af680dfe96652f418
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mixed natural resource and species-only taxon mapping
+  outcome: supported
+  summary: Resource identity,major mineral assemblage and taxon rank are supported
+    without pure-mineral,stock-authentication or constituent-criticality inheritance.
+  target_ids:
+  - cmmmech:kaolin
+  evidence_ids:
+  - record
+  - primary_identity
+  - taxon
+  - dedup
+  dimensions:
+  - name: material_form
+    value: Natural mixed kaolin ore; primary_resource
+    definition: Kaolinite,quartz andmicrocline are XRD phases; oxide assay fractions
+      do not identify iron phases.
+    evidence_ids:
+    - primary_identity
+  - name: criticality
+    value: No claim
+    definition: No authority,jurisdiction,list or edition inferred from aluminium
+      or iron.
+    evidence_ids:
+    - record
+  - name: organism
+    value: Aspergillus niger; NCBITaxon:5061 species
+    definition: Unaccessioned supplied pure culture, not identified to strain or genome.
+    evidence_ids:
+    - primary_identity
+    - taxon
+- assessment_id: methods
+  area: evidence
+  topic: Living culture,conditions and comparators
+  outcome: supported
+  summary: The retained conditions and no-fungus controls match Methods; confounded
+    pH and unreported mass/uncertainty accounting are explicit.
+  target_ids:
+  - cmmmech:kaolin
+  evidence_ids:
+  - primary_identity
+  - primary_controls
+  - primary_limits
+  - record
+  dimensions:
+  - name: biomass
+    value: Growing living fungal culture
+    definition: Not purified acids or cell-free spent-medium-only assay.
+    evidence_ids:
+    - primary_identity
+  - name: conditions
+    value: 30C,125rpm,250mL in500mLflask;1–10%w/vsolids and5–20%w/vsucrose in distinct
+      arms
+    definition: Separate experiments are not pooled into a single optimum or standardized
+      process.
+    evidence_ids:
+    - primary_identity
+    - primary_controls
+  - name: controls
+    value: Medium without fungus; no matched-pH condition
+    definition: Quantitative removal contrast supports culture association, not isolation
+      of proton versus other culture effect.
+    evidence_ids:
+    - primary_controls
+- assessment_id: quantity
+  area: quantity
+  topic: Author-reported Fe2O3 equivalents and unequal durations
+  outcome: supported
+  summary: Every adopted numerical result matches original prose/figures and remains
+    source-reported rather than reconstructed product yield. Delayed exposure and
+    culture age are explicitly distinguished.
+  target_ids:
+  - cmmmech:kaolin
+  evidence_ids:
+  - primary_controls
+  - primary_timing
+  - primary_limits
+  - record
+  dimensions:
+  - name: initial_addition
+    value: 52.47% vs6.22% at336h;1%solids,10%sucrose
+    definition: Author-reported Fe2O3removal; operational metal assay lacks explicit
+      closed balance.
+    evidence_ids:
+    - primary_controls
+  - name: delayed_addition
+    value: 61.09% at504h culture;240hadd;264horecontact
+    definition: No matched504hcontrol displayed; not a14-day simultaneous-inoculation
+      result.
+    evidence_ids:
+    - primary_timing
+  - name: sucrose
+    value: Nonmonotonic response at5%solids;10%sucrose34.66%at336h
+    definition: The initial1%solids comparison has a differentloading; broadabstractsugarinhibition
+      is not generalized.
+    evidence_ids:
+    - primary_controls
+- assessment_id: scope
+  area: scope
+  topic: Mechanism inference,product and deployment
+  outcome: supported
+  summary: Measured Fe,pH andbiomass justify conditional culture-associated mobilization.
+    Particular acids,causal growth inhibition,Fe redox,phase-specific dissolution
+    and industrial recovery are appropriately withheld.
+  target_ids:
+  - cmmmech:kaolin
+  evidence_ids:
+  - primary_limits
+  - primary_timing
+  - record
+  dimensions:
+  - name: mechanism_resolution
+    value: Culture association; acid mediation proposed
+    definition: No molecular/acid assay or perturbation establishes a unique pathway.
+    evidence_ids:
+    - primary_controls
+    - primary_limits
+  - name: outcome_scale
+    value: Laboratory iron mobilization only
+    definition: No isolated iron product,standardized finalwhiteness or demonstrated
+      industrial fungalprocess.
+    evidence_ids:
+    - primary_limits
+    - record
+- assessment_id: provenance
+  area: provenance
+  topic: Primary citation,immutable history and exact review inputs
+  outcome: supported
+  summary: Verified metadata,source URLs and separate CREATE histories are appropriate.
+    Required actual checks passed and exact inspect inputs remain unchanged.
+  target_ids:
+  - cmmmech:kaolin
+  evidence_ids:
+  - metadata
+  - history
+  - gates
+  - corrected_gates
+  - record
+  dimensions:
+  - name: working_state
+    value: Uncommitted exact bytes at durable base075c1ca032b68162eb8350b7e8d9bfe9530ca143
+    definition: The review is a working-tree attestation, not a claim of publication.
+    evidence_ids:
+    - record
+    - history
+    - gates
+  - name: notice_scope
+    value: Bounded first-result searches and current official metadata
+    definition: No affecting notice found inside declared coverage; no exhaustive
+      absence assertion.
+    evidence_ids:
+    - notices
+    - metadata
+findings: []
+actions: []
+limitations:
+- The supplied Aspergillus niger culture has no accession, strain name or molecular
+  authentication; the NCBI species ID resolves the name only.
+- Removal values are author-reported Fe2O3 equivalents. The paper supplies no explicit
+  yield equation, complete balance, serial-sampling correction, replication number,
+  uncertainty bars or statistical tests.
+- No matched-pH control, measured organic acids, Fe oxidation-state assay or molecular
+  perturbation separates acidification from other culture effects.
+- The 61.09% endpoint follows 504 h total culture and 264 h ore contact; it cannot
+  be pooled with the 336 h initial-addition result or interpreted as a matched-time
+  superiority experiment.
+- One ore batch and unaccessioned fungal culture do not establish universal kaolin
+  behavior, standardized final whiteness, isolated iron recovery, industrial deployment
+  or environmental/economic benefit.
+- Dedup and notice searches include declared hidden/ignored text roots and relevant
+  symlinks, but exclude global binary extraction and inaccessible literature. Other
+  primary leads were not admitted from search snippets.
+notes:
+- No maintained record, history or source dossier was edited by this reviewer. No
+  corrective issue was manufactured for source limitations already represented accurately.
+- Primary Turkish text was interpreted directly alongside its English abstract; no
+  separate human translation is claimed. Preparatory primary reading occurred before
+  target inspection; all target judgments followed canonical inspect.
+- 'iModulonDB is not applicable: this record asserts no gene, regulator, expression
+  module or transcriptomic dataset.'
+- Publication metadata have an original English/Turkish issue-number conflict; the
+  record deliberately omits issue number while retaining verified DOI, year and pages.
+links:
+- research/sources/round31-kaolin/20261011T191021Z-source-investigation.md
+- https://doi.org/10.35354/tbed.592519
+tags:
+- round31
+- kaolin
+- independent
+- scientific
+```

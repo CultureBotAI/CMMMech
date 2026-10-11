@@ -227,7 +227,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [twenty-eighth expansion reviews](research/ingests/round28-20261011-publication.md),
 [twenty-ninth expansion reviews](research/ingests/round29-20261011-publication.md),
 [thirtieth expansion reviews](research/ingests/round30-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round30-frontier-20261011.md), and
+[thirty-first expansion reviews](research/ingests/round31-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round31-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 
