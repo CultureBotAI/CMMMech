@@ -1,0 +1,138 @@
+id: cmmmech:molybdenum
+name: Molybdenum
+material_kind: element
+description: >-
+  The element Mo, distinct from molybdate ions, experimental sodium molybdate,
+  molybdenum-blue products, molybdenite and other Mo-bearing resources. The
+  Canadian designation is the named molybdenum material in its 2024 list;
+  it does not assign criticality to every compound or ore. A laboratory
+  DRY1 culture study supports molybdenum-blue formation consistent with
+  molybdate transformation, without an isolated-metal recovery yield or a
+  chemically resolved product phase.
+identifiers:
+  - id: CHEBI:28685
+    label: molybdenum atom
+sources:
+  - id: chebi_molybdenum
+    title: 'ChEBI CHEBI:28685 - molybdenum atom; formula Mo, net charge 0'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:28685
+    accessed_on: '2026-10-11'
+  - id: canada2024
+    title: >-
+      Natural Resources Canada. Critical minerals: an opportunity for Canada;
+      complete 34-material list, 2024 update, molybdenum entry.
+    url: https://www.canada.ca/en/campaign/critical-minerals-in-canada/critical-minerals-an-opportunity-for-canada.html
+    accessed_on: '2026-10-11'
+  - id: canada2024_release
+    title: >-
+      Natural Resources Canada (10 June 2024). Government of Canada Releases
+      Updated Critical Minerals List; release date and 34-material scope.
+    url: https://www.canada.ca/en/natural-resources-canada/news/2024/06/government-of-canada-releases-updated-critical-minerals-list.html
+    accessed_on: '2026-10-11'
+  - id: ahmad2013
+    title: >-
+      Ahmad et al. (2013). Molybdate Reduction to Molybdenum Blue by an
+      Antarctic Bacterium. BioMed Research International 2013:871941;
+      Sections 2-4, Figures 2-8 and Tables 1-3.
+    url: https://doi.org/10.1155/2013/871941
+    accessed_on: '2026-10-11'
+  - id: ncbi_dry1
+    title: 'NCBI Taxonomy 351651 - gamma proteobacterium DR.Y1'
+    url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=351651&retmode=xml
+    accessed_on: '2026-10-11'
+  - id: genbank_dry1
+    title: >-
+      GenBank DQ226202.1 - gamma proteobacterium DR.Y1 isolate DR.Y1,
+      partial 16S ribosomal RNA gene; 1452 bases, taxon 351651.
+    url: https://www.ncbi.nlm.nih.gov/nuccore/DQ226202.1
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: Canada
+    list_name: Canada's Critical Minerals List
+    edition: '2024 update; released 10 June 2024; 34 materials'
+    classification: critical
+    source_ref: canada2024
+mechanisms:
+  - id: dry1_molybdate_to_molybdenum_blue
+    name: DRY1 culture-associated molybdenum-blue formation
+    process: redox_transformation
+    microbial: true
+    organisms:
+      - id: NCBITaxon:351651
+        label: gamma proteobacterium DR.Y1
+    description: >-
+      Living DRY1 cultures produced a blue optical signal from a sodium
+      molybdate medium, consistent with conversion to reduced
+      phosphomolybdate-like material. The product spectrum and activity
+      retained in partially purified cell extracts support a biological
+      contribution, but neither identify a homogeneous reductase nor directly
+      establish the product's oxidation-state distribution or crystalline
+      phase. This is a laboratory transformation assay, not quantified
+      removal of total Mo or production of purified molybdenum.
+    context: >-
+      DRY1 was isolated from Antarctic soil collected near Jubany Station
+      during 2002-2003. The paper tentatively assigns it to Pseudomonas using
+      partial 16S phylogeny and Biolog tests, explicitly without species-level
+      resolution. Its deposited sequence DQ226202.1 currently identifies
+      gamma proteobacterium DR.Y1 with taxon 351651; that accession-linked
+      label is retained rather than promoting the tentative genus assignment
+      to an established species. Section 2.1 describes 50 mL cultures held
+      statically at 10 degrees C for 72 h in pH 7 low-phosphate medium containing
+      0.242% w/v sodium molybdate dihydrate, 1% glucose, 0.3% ammonium sulfate,
+      0.05% yeast extract and 2.8 mM phosphate. Centrifuged supernatant was
+      scanned at 400-980 nm with fresh medium as the optical baseline.
+      Figure 8 separately shows spectra after 28-72 h at 20 degrees C.
+      The optimization methods specify 48 h, whereas Figures 2-7 specify
+      72 h; these arms are not merged into a single optimum protocol.
+      The study describes cells coprecipitating with blue material, but does
+      not provide a total-Mo mass balance, recovered-solid yield or a matched
+      incubated uninoculated/heat-killed culture comparison. Fresh medium
+      used for baseline correction is not that incubation control.
+    evidence:
+      - source_ref: ahmad2013
+        supports: support
+        explanation: >-
+          Sections 2.1-2.2 and 3.2-3.6, with Figures 2-8, support the
+          culture-associated blue response and its dependence on culture
+          conditions. The spectrum peaks at 865 nm with a shoulder at 710 nm;
+          Figure 8 records increasing blue intensity over incubation.
+          These optical results support the narrowly described transformation
+          but are not an elemental concentration assay or recovery percentage.
+          Section 3.5 and Figure 7 also report strong inhibition at high
+          phosphate, limiting transfer to other medium compositions.
+      - source_ref: ahmad2013
+        supports: partial
+        explanation: >-
+          Sections 2.5-2.7 and 3.8-3.9 and Table 1 report Mo-blue-forming
+          activity in cell-extract fractions assayed with NADH and
+          12-molybdophosphate, a different acceptor from free molybdate in
+          the culture medium. Purification reached about fivefold enrichment
+          with multiple native-PAGE bands and low final yield. This supports
+          a cell-derived catalytic contribution without establishing a single
+          enzyme identity or excluding chemical reduction in the assay.
+          The dialysis experiment in Sections 2.9 and 3.7 favors blue material
+          on the cell-containing side, but the reported 95%/5% division does
+          not agree arithmetically with its 13.775/1.225 micromole values;
+          no exact partition or conversion efficiency is accepted here.
+      - source_ref: ahmad2013
+        supports: partial
+        explanation: >-
+          Table 2 reports little inhibition by the tested respiratory
+          inhibitors, while Section 2.8 and Table 2 assign conflicting doses
+          to individual inhibitors. The negative inhibitor responses do not
+          establish a unique electron-transfer pathway. Section 4 proposes
+          a phosphomolybdate intermediate from spectral similarity and
+          explicitly calls for structural identification. No direct Mo-valence
+          spectroscopy or crystalline-phase identification is reported;
+          molybdenum-blue absorbance must not be equated with quantitative
+          Mo(VI) detoxification, an identified metal phase or efficient recovery.
+curation_history:
+  - timestamp: '2026-10-11T05:40:13Z'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Added verified elemental identity, dated Canadian criticality and DRY1
+      molybdenum-blue evidence, retaining accession-linked taxonomy, source
+      inconsistencies and limits on product identity and recovery claims.
+history_refs:
+  - history/records/molybdenum/2026-10-11T053939Z-codex-0e6e44.yaml

@@ -1,0 +1,121 @@
+id: cmmmech:indium
+name: Indium
+material_kind: element
+description: >-
+  The element In, distinct from indium ions, salts, indium tin oxide and
+  indium-bearing minerals or waste streams. The dated US designation concerns
+  the named indium mineral commodity. The mechanism describes laboratory
+  biosorption from synthetic solutions by prepared mixed microalgal biomass;
+  it does not establish treatment of an actual indium waste stream or recovery
+  of an isolated indium product.
+identifiers:
+  - id: CHEBI:30430
+    label: indium atom
+sources:
+  - id: chebi_indium
+    title: 'ChEBI CHEBI:30430 - indium atom; formula In, net charge 0'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:30430
+    accessed_on: '2026-10-11'
+  - id: usgs2025
+    title: >-
+      USGS (2025). Final 2025 List of Critical Minerals. Federal Register
+      90:50494-50497, document 2025-19813; indium row on page 50496.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: nicomel2020
+    title: >-
+      Nicomel et al. (2020). Microalgae: a sustainable adsorbent with high
+      potential for upconcentration of indium(III) from liquid process and
+      waste streams. Green Chemistry 22:1985-1995, DOI 10.1039/C9GC03073E;
+      accepted manuscript, Sections 2-3, Figures 2-9 and Table 2.
+    url: https://upcommons.upc.edu/server/api/core/bitstreams/e2c160fc-f3c7-4279-8931-d298426d9b78/content
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States of America
+    list_name: USGS Final List of Critical Minerals
+    edition: '2025; Federal Register 90:50494-50497, 7 November 2025'
+    classification: critical
+    source_ref: usgs2025
+mechanisms:
+  - id: prepared_microalgal_indium_biosorption
+    name: Indium biosorption by prepared mixed microalgal biomass
+    process: biosorption
+    microbial: true
+    description: >-
+      Washed, freeze-dried and subsequently oven-dried mixed microalgal
+      biomass removed indium from synthetic aqueous InCl3 solutions under
+      acidic conditions. This is sorption by prepared inactive microbial
+      biomass, not demonstrated metabolism. Surface-group titration and
+      marginal FTIR changes are consistent with binding but do not resolve
+      one molecular mechanism or the contribution of any community member.
+    context: >-
+      Biomass was harvested in June 2017 from a 0.5 m3 outdoor pilot algal
+      pond treating municipal wastewater at Universitat Politecnica de
+      Catalunya. The authors report Chlorella sp. and diatoms, mostly
+      Nitzschia sp. and Navicula sp., with ciliate and flagellate grazers;
+      this mixed biomass has no resolved strain or single-organism attribution.
+      It was thickened at 4 degrees C for 24 h, centrifuged, frozen at
+      -80 degrees C overnight, lyophilized for 24 h, repeatedly washed with
+      ultrapure water, dried at 50 degrees C for 24 h and ground below 1 mm.
+      Duplicate laboratory batch assays used 100 mg biomass in 10 mL
+      synthetic solution in polypropylene tubes at room temperature and
+      115 rpm. The pH experiment used 0.15 mM initial In, initial pH 1-2 and
+      24 h contact; initial pH 2 was selected for subsequent assays, with
+      final pH around 2.4. Initial and final concentrations, the latter after
+      0.45 micrometre filtration and ICP-MS, define removal and uptake per
+      biomass mass. Section 2.6 reports precipitation-control experiments
+      placing In(OH)3 precipitation onset near pH 2.7, but the cited
+      supplementary Figure S2 was not accessible during this curation, so
+      its control protocol and values were not independently inspected.
+      Biomass production at pilot scale does not make these sorption assays
+      pilot-scale indium recovery; only synthetic indium feeds were tested.
+    evidence:
+      - source_ref: nicomel2020
+        supports: support
+        explanation: >-
+          Sections 2.1-2.2, 2.6-2.8 and 3.4-3.5 (accepted manuscript pages
+          5-9 and 13-16) and Figures 2-3 support the preparation, assay and
+          pH-dependent indium depletion. At 0.15 mM initial In, 100 mL/g
+          liquid/solid ratio and room temperature, the pH series reports
+          94.7% removal after 24 h at initial pH 2; the separate kinetics
+          series reports about 80% after 30 min. These are aqueous-phase
+          removal percentages relative to initial In, not isolated-product
+          yields. The elemental root does not identify the InCl3 feed.
+      - source_ref: nicomel2020
+        supports: partial
+        explanation: >-
+          Section 3.6 and Table 2 identify 0.14 mmol/g as a fitted Langmuir
+          maximum from the 0.05-10 mM concentration series; the Freundlich
+          model fits better, so this is not an observed maximum uptake.
+          Sections 2.9 and 3.7 and Figure 5 show a substantial selectivity
+          limit: with 1 mM initial In and 10 mM competing Fe(III), initial
+          pH 2, 100 mL/g and 24 h contact, In removal fell from 67% without
+          a competing ion to 5%. The reported Sn(II) removal in a separate
+          binary solution was predominantly precipitation. Uninspected
+          supplementary controls and the mixed biomass limit attribution
+          of all solution loss to a specific microbial surface interaction.
+      - source_ref: nicomel2020
+        supports: partial
+        explanation: >-
+          Sections 2.10 and 3.8-3.9 and Figures 6-9 distinguish desorption
+          from recovery of a product. In the desorbent screen, 0.1 M HCl
+          released about 80% of previously adsorbed In at 100 mL/g after
+          24 h. The reuse protocol instead used 0.1 M HCl at 60 mL/g for
+          30 min, with washing and drying between cycles. Over five cycles
+          adsorption removal fell from 91.3% to 60.7%; these percentages
+          refer to initial In in each adsorption step. Regeneration did
+          not maintain initial performance. The reported concentration
+          ratio was only about 1.5, and burning loaded biomass to obtain
+          In-rich ash was proposed, not demonstrated. No isolated metal
+          yield or industrial deployment follows from these assays.
+curation_history:
+  - timestamp: '2026-10-11T05:39:22Z'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Added verified elemental identity, dated US designation and bounded
+      mixed-microalgal biosorption evidence, preserving analytical basis,
+      control-access limits, Fe competition and declining reuse performance;
+      scientific review is separate.
+history_refs:
+  - history/records/indium/2026-10-11T053922Z-codex-ce07d4.yaml
