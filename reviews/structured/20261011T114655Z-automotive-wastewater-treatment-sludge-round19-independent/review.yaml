@@ -1,0 +1,292 @@
+schema_version: 1.0.0
+review_id: 20261011T114655Z-automotive-wastewater-treatment-sludge-round19-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Automotive wastewater-treatment sludge
+started_at: '2026-10-11T11:42:58.074529Z'
+finished_at: '2026-10-11T11:46:55Z'
+reviewer:
+  identity: Codex /root/round19_manganese_residue
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Separate agent /root/round19_hydrogenation_catalyst authored
+    this record and history. Reviewer independently inspected primary source text/figures
+    and official identifiers after canonical target inspection. Shared worktree/raw
+    artifacts and curator dossier access are disclosed; reviewer made no scientific-record
+    edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The accepted resource identity and deliberately bounded evidence claims are
+  supported. No actionable defect was found in the inspected bytes; source-access
+  and experimental limitations remain explicit.
+source:
+  git_revision: c4b2a6c21a2ff54d1fdd3965ac98a6d90effba7a
+  state: working_tree
+  inputs:
+  - path: data/records/automotive-wastewater-treatment-sludge.yaml
+    sha256: e26dec67a01c947e377d5a54e2c787b0f7d1474518a417ccb1a116942e4f5ac6
+    role: target
+  - path: history/records/automotive-wastewater-treatment-sludge/2026-10-11T114051Z-codex-5e4461.yaml
+    sha256: 678c96c5c322463e1f1f2dff14e56b85a82ae18d2349ee6ec03347855717dd8a
+    role: context
+  - path: research/ingests/round19-hydrogenation-catalyst-sources-20261011.json
+    sha256: 6c976afa6be2bc42054b11a8c92dc223edc27731025d578c825b67167b2aa810
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: All fields and linked CREATE history of one frozen maintained record,
+    assessed against actual primary/authority evidence.
+  selection: One of two assigned catalyst/sludge lane records; a separate per-record
+    observation is saved.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:automotive-wastewater-treatment-sludge
+  exclusions:
+  - target: Other corpus records and unavailable complete Bosio experiments
+    reason: No scientific verdict for other records or uninspected measurements.
+targets:
+- target_id: cmmmech:automotive-wastewater-treatment-sludge
+  path: data/records/automotive-wastewater-treatment-sludge.yaml
+  label: Automotive wastewater-treatment sludge
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/automotive-wastewater-treatment-sludge.yaml
+    role: maintained_input
+checks:
+- check_id: named
+  name: Independent named-record validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/spent-vegetable-oil-hydrogenation-catalyst.yaml
+    data/records/automotive-wastewater-treatment-sludge.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Reviewer executed and observed terminal exit0: Checked 2 record(s); 0
+    failed.'
+  target_ids:
+  - cmmmech:automotive-wastewater-treatment-sludge
+- check_id: batch
+  name: Native full checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed gates; reviewer independently read the terminal receipt
+    and complete logs. /private/tmp/cmm-round19-final-batch.log: uv run --locked --extra
+    dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 122.38s (0:02:02)
+
+    Checked 145 record(s); 0 failed.
+
+    Checked 161 history record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:automotive-wastewater-treatment-sludge
+- check_id: require
+  name: Required corpus
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed gates; reviewer independently read the terminal receipt
+    and complete logs. /private/tmp/cmm-round19-final-require.log: Checked 145 record(s);
+    0 failed.
+
+    '
+  target_ids:
+  - cmmmech:automotive-wastewater-treatment-sludge
+- check_id: history
+  name: Trusted-base history
+  command: uv run --locked cmmmech validate-history --base c4b2a6c21a2ff54d1fdd3965ac98a6d90effba7a
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed gates; reviewer independently read the terminal receipt
+    and complete logs. /private/tmp/cmm-round19-final-history.log: Checked 161 history
+    record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:automotive-wastewater-treatment-sludge
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/automotive-wastewater-treatment-sludge.yaml
+  locator: Complete frozen YAML and linked CREATE sidecar
+  accessed_at: '2026-10-11T11:46:55Z'
+  support: supports
+  summary: Exact reviewed scientific bytes and separate inline/canonical CREATE events.
+    No inherited criticality designation.
+  snapshot_sha256: e26dec67a01c947e377d5a54e2c787b0f7d1474518a417ccb1a116942e4f5ac6
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round19-catalyst-review-receipt.json
+  locator: Three exact correction/abiotic queries and dedup command/result
+  accessed_at: '2026-10-11T11:46:55Z'
+  support: context_only
+  summary: No affecting correction notice surfaced in the first result sets. Local
+    adjacent resource identities were checked without treating shared constituents
+    as duplicates.
+  search_scope: Hidden and ignored files with relevant symlinks followed across data,
+    research, reviews, history and named round19 catalyst raw directory. Binary sources
+    independently read. Bounded search, no machine-wide or exhaustive-literature claim.
+  snapshot_sha256: 6ea1820c08f90c455609f4ee9c154740c45a314b2874f1807e50e6c4fef8f3c8
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round19-gate-receipts.json
+  locator: All three terminal command results and full associated logs
+  accessed_at: '2026-10-11T11:46:55Z'
+  support: supports
+  summary: Native checks, required-records and trusted-base history validation all
+    passed; exact target and history hashes remained unchanged.
+  snapshot_sha256: 73640a84a624b3375df302586a36481457dbdc3e045f50101b67fe811860b6db
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.4028/www.scientific.net/AMR.71-73.649
+  locator: Entire original four-page article pp649-652 plus repository appendix; Figures1-3
+    visually checked on PDF2-3
+  accessed_at: '2026-10-11T11:46:55Z'
+  support: supports
+  summary: Upstream DSM11478 sulfur cultures generated acid; a separate prepared-sludge
+    column mobilized liquid Ni/Zn. Loading/pH design and declining pH2 performance
+    match the record. No sterile/commercial-acid controls, cell-removal step or explicit
+    leach endpoint were found in the complete article; Figure3 error bars and percentage
+    denominator are undefined. Sulfur54/50% and dilution0.21/0.22h-1 wording conflicts
+    remain qualified.
+  snapshot_sha256: 8dfc6109fe0b0058bbdb84691085e06435095dfeea8ada5842a61a016ec0cd6b
+- evidence_id: authority
+  kind: authority
+  reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-11478
+  locator: Live species name, strain Tth04, Brazil mine-drainage origin and Donati
+    deposit history; NCBI930 species checked independently
+  accessed_at: '2026-10-11T11:46:55Z'
+  support: supports
+  summary: Catalogue identity confirms DSM11478=Tth04, while NCBITaxon930 is Acidithiobacillus
+    thiooxidans at species rank. Neither catalogue identity nor species CURIE establishes
+    untested sludge causality.
+  snapshot_sha256: d309c9d3c6d3948049bc063539fa08492024232363ad1523649cf06d57761325
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Material boundary and source identity
+  outcome: supported
+  summary: The maintained target denotes a distinct process-defined secondary resource
+    with source-specific composition and no inherited criticality.
+  target_ids:
+  - cmmmech:automotive-wastewater-treatment-sludge
+  evidence_ids:
+  - record
+  - primary
+  - authority
+  - search
+  dimensions:
+  - name: material_identity
+    value: Automotive-factory wastewater-treatment sludge, source-specific Ni/Zn feed
+    definition: Distinct from wastewater itself, municipal sewage sludge and spent
+      automotive catalysts; individual contributing processes and host phases unresolved.
+    evidence_ids:
+    - primary
+    - record
+  - name: organism_and_biomass
+    value: Living Acidithiobacillus thiooxidans DSM11478/Tth04 upstream on sulfur
+    definition: NCBITaxon930 is species-level. No cell-removal step is reported between
+      acid production and sludge leaching; biofilm is inferred.
+    evidence_ids:
+    - primary
+    - authority
+    - record
+  - name: conditions_and_controls
+    value: Prepared 100-200 mesh sludge; pH1/1.5/2 acid, 1/2/4% solids; duplicate
+      laboratory assays
+    definition: 360mL and15mL/h are reported; they do not create a reported24h endpoint.
+      No sterile or commercial-acid comparator.
+    evidence_ids:
+    - primary
+    - record
+  - name: outcome
+    value: Solution-phase Ni/Zn by AAS, reduced mobilization at higher loading with
+      pH2 acid
+    definition: No isolated-product balance, quantitative observations or deployment
+      inferred.
+    evidence_ids:
+    - primary
+    - record
+  - name: criticality
+    value: Not asserted
+    definition: Neither process residue inherits a constituent-element jurisdiction/list/edition
+      designation.
+    evidence_ids:
+    - record
+- assessment_id: mechanism
+  area: evidence
+  topic: Claim scope and experimental limits
+  outcome: supported
+  summary: A narrowly scoped two-stage culture-generated-acid leaching observation
+    is supported, with control, carryover and endpoint limitations retained. There
+    is no isolated-product or industrial microbial recovery claim.
+  target_ids:
+  - cmmmech:automotive-wastewater-treatment-sludge
+  evidence_ids:
+  - record
+  - primary
+  - authority
+- assessment_id: provenance
+  area: provenance
+  topic: Exact bytes and actual CREATE history
+  outcome: supported
+  summary: Canonical inspect preceded scientific target assessment. Final inspection
+    additionally captured sidecar bytes, and every input remained unchanged. Named
+    and batch/history validations completed successfully.
+  target_ids:
+  - cmmmech:automotive-wastewater-treatment-sludge
+  evidence_ids:
+  - record
+  - gates
+findings: []
+actions: []
+limitations:
+- The factory and contributing production processes are not identified; no electroplating-specific
+  identity or mineral phase is invented.
+- No sterile or acid-only control is reported; microbial superiority over matched
+  chemical acid is not established. Biofilm attachment was inferred, and cell-free
+  lixiviant preparation is unreported.
+- Figure3 graph percentages are not accepted exact product yields or numeric-table
+  observations. Undefined error bars, missing endpoint/temperature, acid-unit ambiguity
+  and sulfur/dilution wording conflicts limit quantitative transfer.
+- Single-feed laboratory mobilization does not establish isolated recovery, cost advantage,
+  industrial deployment or universal automotive-sludge behavior.
+- Correction/conflict searches and supplement checks are bounded; absence of further
+  evidence is not proved.
+tags:
+- round19
+- independent
+- scientific-review
+- secondary-resource
+notes:
+- No curation event is created merely for scientific review. Full text remains outside
+  Git; review sources preserve evidence locators and hashes.

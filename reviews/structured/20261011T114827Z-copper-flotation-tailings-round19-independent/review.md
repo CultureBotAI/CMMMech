@@ -1,0 +1,397 @@
+# Independent scientific review of Copper flotation tailings
+
+- Review: 20261011T114827Z-copper-flotation-tailings-round19-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T11:43:19Z
+- Finished UTC: 2026-10-11T11:48:27Z
+- Reviewer: Codex /root/round19_hydrogenation_catalyst (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The process-defined resource identity and bounded laboratory claims are supported. No actionable defect was identified in these inspected bytes; source contradictions, incomplete controls and deployment limits remain explicit.
+
+## Scope And Provenance
+
+Every field and linked CREATE sidecar of the assigned frozen record, including identity, criticality, organisms, conditions, controls, outcomes and limitations.
+
+Selection: One assigned new round19 maintained record, independent of reviewer authorship.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base c4b2a6c21a2ff54d1fdd3965ac98a6d90effba7a.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:copper-flotation-tailings | data/records/copper-flotation-tailings.yaml | maintained | Copper flotation tailings |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named-record validation | passed | True | cmmmech:copper-flotation-tailings | Reviewer observed terminal exit 0: Checked 3 record(s); 0 failed. |
+| Native full checks | passed | True | cmmmech:copper-flotation-tailings | Parent executed and confirmed terminal completion; reviewer independently read the completed receipt and corresponding log. /private/tmp/cmm-round19-final-batch.log: uv run --locked --extra dev python scripts/check.py<br>All checks passed!<br>........................................................................ [ 23%]<br>........................................................................ [ 46%]<br>........................................................................ [ 69%]<br>....................................................sss................. [ 92%]<br>.......................                                                  [100%]<br>308 passed, 3 skipped in 122.38s (0:02:02)<br>Checked 145 record(s); 0 failed.<br>Checked 161 history record(s); 0 error(s).<br> |
+| Required corpus | passed | True | cmmmech:copper-flotation-tailings | Parent executed and confirmed terminal completion; reviewer independently read the completed receipt and corresponding log. /private/tmp/cmm-round19-final-require.log: Checked 145 record(s); 0 failed.<br> |
+| Trusted-base history | passed | True | cmmmech:copper-flotation-tailings | Parent executed and confirmed terminal completion; reviewer independently read the completed receipt and corresponding log. /private/tmp/cmm-round19-final-history.log: Checked 161 history record(s); 0 error(s).<br> |
+
+## Scientific And Domain Assessments
+
+### Resource and criticality boundaries
+
+identity: supported. Targets: cmmmech:copper-flotation-tailings.
+
+The Las Luces T1 wall sample is a heterogeneous copper-flotation residue, distinct from ore, concentrate, smelter slag and heap-leach residues. The operator identifies sulfide-ore flotation and a separate oxide-leach plant.
+
+### Source-specific organisms, assay, controls and outcome
+
+evidence: supported. Targets: cmmmech:copper-flotation-tailings.
+
+The study supports urease-positive isolates and laboratory biocementation associated with less wind erosion. T130-1 and T130-13 improve compression; T130-14 has no significant compression difference. Calcite and biofilm contributions are not independently isolated.
+
+### Frozen reviewed inputs and real CREATE provenance
+
+provenance: supported. Targets: cmmmech:copper-flotation-tailings.
+
+Canonical inspect captured target, history and schema before assessment; final hashes still agree. Actual Codex/GPT-6 author session and matching resource target are retained, with inline and sidecar provenance distinct. Named validation and required batch/history checks passed.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/copper-flotation-tailings.yaml; Complete frozen YAML and linked CREATE history | supports | Resource boundaries, source-limited mechanisms and provenance inspected; no constituent criticality is inherited. |
+| search | /private/tmp/cmm-round19-cross-review/search.json; Exact DOI correction/retraction queries and bounded local dedup search | context_only | No affecting notice surfaced in the searched first-result sets; bounded results do not prove absence of conflicting literature. |
+| primary | https://doi.org/10.3389/fbioe.2024.1393334; Complete 17-page publisher article; Methods 2.1-2.9, Results 3.1-3.4, Discussion 4.3-4.4, Tables 2-5; Figures 2-8 visually checked on actual PDF pages 8-13. | supports | The study supports urease-positive isolates and laboratory biocementation associated with less wind erosion. T130-1 and T130-13 improve compression; T130-14 has no significant compression difference. Calcite and biofilm contributions are not independently isolated. |
+| gates | /private/tmp/cmm-round19-gate-receipts.json; Completed native batch, require-records and trusted-base history receipts; all three logs independently read | supports | Parent observed terminal exit 0; 308 passed, 3 skipped, 145 records and 161 histories. Reviewer independently read receipts/logs and rechecked frozen input hashes. |
+| origin | https://www.cenizas.cl/faenas_oficinas/faena-taltal/; Live Planta Concentradora Las Luces section, separate Planta de Oxidos section, and saved operator HTML | supports | Operator identifies sulfide-ore flotation, seawater use and tailings thickening. Current facility capacity is not used as a historical sample property. |
+
+## Limits And Additional Notes
+
+- Source timing and preculture-urea wording remain unresolved; inoculum density, replicate counts and matched control additions are incompletely specified.
+- Nonsterile controls prevent a sterile-versus-live interpretation; calcite-associated cementation and biofilm adhesion are not causally separated.
+- Initial BMA and XRD calcite estimates differ, and high amorphous fractions limit phase quantification; named new silicate peaks are not evidence for microbial synthesis of every phase.
+- No purified product, measured metal mass-balance immobilization, or field deployment is established.
+- Bounded correction/retraction and local duplicate searches do not establish literature exhaustion.
+- The actual UTC review-start boundary is the filesystem timestamp of the canonical inspect output written before assessment; finish is captured when authoring this immutable review. All inspected input hashes were rechecked before save.
+- No scientific edit or additional curation-history event was introduced by this review. No blocker, major or minor finding was identified; limitations are scientific scope, not unaddressed record errors.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T114827Z-copper-flotation-tailings-round19-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Copper flotation tailings
+started_at: '2026-10-11T11:43:19Z'
+finished_at: '2026-10-11T11:48:27Z'
+reviewer:
+  identity: Codex /root/round19_hydrogenation_catalyst
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Separate agent /root/round19_tailings authored the record and
+    its CREATE history. Reviewer independently inspected primary methods, results,
+    figures and authorities after canonical byte inspection, with shared worktree/raw-source
+    access disclosed. No target edits made.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The process-defined resource identity and bounded laboratory claims are supported.
+  No actionable defect was identified in these inspected bytes; source contradictions,
+  incomplete controls and deployment limits remain explicit.
+source:
+  git_revision: c4b2a6c21a2ff54d1fdd3965ac98a6d90effba7a
+  state: working_tree
+  inputs:
+  - path: data/records/copper-flotation-tailings.yaml
+    sha256: f0b1e1e1ef7608409d07381a29588802f7712793541e6545b811eaa2accefd7a
+    role: target
+  - path: history/records/copper-flotation-tailings/2026-10-11T114200Z-codex-932301.yaml
+    sha256: f876b3a3cc91046ce9e6a54dc1921f909383f4ecf638540ee56231ba107784d5
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Every field and linked CREATE sidecar of the assigned frozen record,
+    including identity, criticality, organisms, conditions, controls, outcomes and
+    limitations.
+  selection: One assigned new round19 maintained record, independent of reviewer authorship.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:copper-flotation-tailings
+  exclusions:
+  - target: Other corpus records, raw instrument recalibration and experimental replication
+    reason: Contextual companion arms and related sources do not receive a separate
+      record verdict; no experimental replication is asserted.
+targets:
+- target_id: cmmmech:copper-flotation-tailings
+  path: data/records/copper-flotation-tailings.yaml
+  label: Copper flotation tailings
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/copper-flotation-tailings.yaml
+    role: maintained scientific record
+checks:
+- check_id: named
+  name: Independent named-record validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/electrolytic-manganese-residue.yaml data/records/chrysotile-asbestos-tailings.yaml
+    data/records/copper-flotation-tailings.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Reviewer observed terminal exit 0: Checked 3 record(s); 0 failed.'
+  target_ids:
+  - cmmmech:copper-flotation-tailings
+- check_id: batch
+  name: Native full checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed and confirmed terminal completion; reviewer independently
+    read the completed receipt and corresponding log. /private/tmp/cmm-round19-final-batch.log:
+    uv run --locked --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 122.38s (0:02:02)
+
+    Checked 145 record(s); 0 failed.
+
+    Checked 161 history record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:copper-flotation-tailings
+- check_id: require
+  name: Required corpus
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed and confirmed terminal completion; reviewer independently
+    read the completed receipt and corresponding log. /private/tmp/cmm-round19-final-require.log:
+    Checked 145 record(s); 0 failed.
+
+    '
+  target_ids:
+  - cmmmech:copper-flotation-tailings
+- check_id: history
+  name: Trusted-base history
+  command: uv run --locked cmmmech validate-history --base c4b2a6c21a2ff54d1fdd3965ac98a6d90effba7a
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed and confirmed terminal completion; reviewer independently
+    read the completed receipt and corresponding log. /private/tmp/cmm-round19-final-history.log:
+    Checked 161 history record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:copper-flotation-tailings
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/copper-flotation-tailings.yaml
+  locator: Complete frozen YAML and linked CREATE history
+  accessed_at: '2026-10-11T11:48:27Z'
+  support: supports
+  summary: Resource boundaries, source-limited mechanisms and provenance inspected;
+    no constituent criticality is inherited.
+  snapshot_sha256: f0b1e1e1ef7608409d07381a29588802f7712793541e6545b811eaa2accefd7a
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round19-cross-review/search.json
+  locator: Exact DOI correction/retraction queries and bounded local dedup search
+  accessed_at: '2026-10-11T11:48:27Z'
+  support: context_only
+  summary: No affecting notice surfaced in the searched first-result sets; bounded
+    results do not prove absence of conflicting literature.
+  snapshot_sha256: a774bd3b4cad74636b71e2af5f24e741ee93d2ee4062cdd686c9eb876c4d52c2
+  search_scope: Hidden and ignored files included, relevant symlinks followed, named
+    raw directories searched; binary scientific artifacts inspected separately. Related
+    prior mentions are not duplicate records or independent experiments by themselves.
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3389/fbioe.2024.1393334
+  locator: Complete 17-page publisher article; Methods 2.1-2.9, Results 3.1-3.4, Discussion
+    4.3-4.4, Tables 2-5; Figures 2-8 visually checked on actual PDF pages 8-13.
+  accessed_at: '2026-10-11T11:48:27Z'
+  support: supports
+  summary: The study supports urease-positive isolates and laboratory biocementation
+    associated with less wind erosion. T130-1 and T130-13 improve compression; T130-14
+    has no significant compression difference. Calcite and biofilm contributions are
+    not independently isolated.
+  snapshot_sha256: 509485ad184d3df35d2d68fe24b304a3bf131b6eb3a1073cce6259d8813b7f01
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round19-gate-receipts.json
+  locator: Completed native batch, require-records and trusted-base history receipts;
+    all three logs independently read
+  accessed_at: '2026-10-11T11:48:27Z'
+  support: supports
+  summary: Parent observed terminal exit 0; 308 passed, 3 skipped, 145 records and
+    161 histories. Reviewer independently read receipts/logs and rechecked frozen
+    input hashes.
+  snapshot_sha256: 73640a84a624b3375df302586a36481457dbdc3e045f50101b67fe811860b6db
+- evidence_id: origin
+  kind: authority
+  reference: https://www.cenizas.cl/faenas_oficinas/faena-taltal/
+  locator: Live Planta Concentradora Las Luces section, separate Planta de Oxidos
+    section, and saved operator HTML
+  accessed_at: '2026-10-11T11:48:27Z'
+  support: supports
+  summary: Operator identifies sulfide-ore flotation, seawater use and tailings thickening.
+    Current facility capacity is not used as a historical sample property.
+  snapshot_sha256: f05201bef0735ef3923d046a24e3750deee7c8bb3ffb03cf6b747f47b58327fe
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Resource and criticality boundaries
+  outcome: supported
+  summary: The Las Luces T1 wall sample is a heterogeneous copper-flotation residue,
+    distinct from ore, concentrate, smelter slag and heap-leach residues. The operator
+    identifies sulfide-ore flotation and a separate oxide-leach plant.
+  target_ids:
+  - cmmmech:copper-flotation-tailings
+  evidence_ids:
+  - record
+  - primary
+  - origin
+  dimensions:
+  - name: material_kind
+    value: secondary_resource
+    definition: Process-defined mixed material, distinct from an element, ion, pure
+      mineral and commodity.
+    evidence_ids:
+    - record
+    - primary
+  - name: criticality
+    value: Not asserted
+    definition: No authority, jurisdiction, list or edition designation is inherited
+      from constituent elements.
+    evidence_ids:
+    - record
+- assessment_id: mechanism
+  area: evidence
+  topic: Source-specific organisms, assay, controls and outcome
+  outcome: supported
+  summary: The study supports urease-positive isolates and laboratory biocementation
+    associated with less wind erosion. T130-1 and T130-13 improve compression; T130-14
+    has no significant compression difference. Calcite and biofilm contributions are
+    not independently isolated.
+  target_ids:
+  - cmmmech:copper-flotation-tailings
+  evidence_ids:
+  - record
+  - primary
+  - origin
+  dimensions:
+  - name: organism_and_biomass
+    value: Paper-assigned Priestia megaterium T130-1, Paenibacillus sp. T130-13 and
+      Staphylococcus sp. T130-14 are retained as source names. Table 4 closest-BLAST
+      accessions are not exact isolate accessions. S. pasteurii and B. subtilis LN8B
+      are reference inocula.
+    definition: Organism and biomass state are limited to the actual source-level
+      identification; taxonomy does not establish strain or causal exclusivity.
+    evidence_ids:
+    - primary
+  - name: substrate_and_conditions
+    value: Below-2-mm T1 tailings heated at 60 degrees C for 72 h, 150 g plus 50 mL
+      bacterial suspension in seawater Luria broth. Section 4.4 identifies 1 M CaCl2:0.8
+      M urea as shape-retaining; other tested formulations failed. Methods say 30
+      degrees C for 20 days versus Figure 8 caption 30 days; preculture 40% w/v urea
+      remains unresolved.
+    definition: Preparation, assay duration, loading and culture temperature remain
+      arm-specific; source discrepancies are preserved.
+    evidence_ids:
+    - primary
+  - name: controls_and_fraction
+    value: No-added-strain controls retain ureolytic colonies, and low-temperature
+      heating is not sterilization. Full matching of additions, replication and inoculum
+      density are unclear. Wind assay is 26 km/h for 45 min. Substantial amorphous
+      content limits XRD quantification; elemental microscopy maps are not pure-phase
+      identification.
+    definition: Measured analytical fractions and abiotic/null comparisons constrain
+      the causal interpretation.
+    evidence_ids:
+    - primary
+  - name: outcome_and_scale
+    value: Laboratory physical stabilization with lower wind erosion and isolate-dependent
+      compression effects. Neither isolated mineral/metal recovery nor metal-immobilization
+      mass balance nor field deployment was demonstrated.
+    definition: Aqueous mobilization or laboratory physical stabilization is not equivalent
+      to isolated product recovery or industrial deployment.
+    evidence_ids:
+    - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Frozen reviewed inputs and real CREATE provenance
+  outcome: supported
+  summary: Canonical inspect captured target, history and schema before assessment;
+    final hashes still agree. Actual Codex/GPT-6 author session and matching resource
+    target are retained, with inline and sidecar provenance distinct. Named validation
+    and required batch/history checks passed.
+  target_ids:
+  - cmmmech:copper-flotation-tailings
+  evidence_ids:
+  - record
+  - gates
+findings: []
+actions: []
+limitations:
+- Source timing and preculture-urea wording remain unresolved; inoculum density, replicate
+  counts and matched control additions are incompletely specified.
+- Nonsterile controls prevent a sterile-versus-live interpretation; calcite-associated
+  cementation and biofilm adhesion are not causally separated.
+- Initial BMA and XRD calcite estimates differ, and high amorphous fractions limit
+  phase quantification; named new silicate peaks are not evidence for microbial synthesis
+  of every phase.
+- No purified product, measured metal mass-balance immobilization, or field deployment
+  is established.
+- Bounded correction/retraction and local duplicate searches do not establish literature
+  exhaustion.
+tags:
+- round19
+- independent
+- scientific-review
+- resource
+notes:
+- The actual UTC review-start boundary is the filesystem timestamp of the canonical
+  inspect output written before assessment; finish is captured when authoring this
+  immutable review. All inspected input hashes were rechecked before save.
+- No scientific edit or additional curation-history event was introduced by this review.
+  No blocker, major or minor finding was identified; limitations are scientific scope,
+  not unaddressed record errors.
+```

@@ -1,0 +1,87 @@
+id: cmmmech:copper-flotation-tailings
+name: Copper flotation tailings
+material_kind: secondary_resource
+description: >-
+  Residual solids from flotation concentration of copper-bearing ores, distinct
+  from unprocessed ore, copper concentrate, smelter slag and heap-leach residues.
+  The curated feed is the inactive Las Luces T1 tailings wall near Taltal,
+  Chile. The operator describes sulfide-ore flotation and tailings thickening
+  at the Las Luces concentrator; the experiment characterizes a heterogeneous,
+  silicate-rich sample containing residual copper and other elements. Its
+  composition does not define all copper flotation tailings. No constituent's
+  criticality designation is inherited.
+sources:
+  - id: maureira2024
+    title: >-
+      Maureira et al. (2024). MICP mediated by indigenous bacteria isolated
+      from tailings for biocementation for reduction of wind erosion.
+      Frontiers in Bioengineering and Biotechnology 12:1393334.
+      DOI 10.3389/fbioe.2024.1393334; Sections 2.1-2.9, 3.3-3.4 and 4.4,
+      Tables 2-5 and Figures 2-8.
+    url: https://doi.org/10.3389/fbioe.2024.1393334
+    accessed_on: '2026-10-11'
+  - id: cenizas_las_luces
+    title: >-
+      Grupo Minero Las Cenizas. Faena Taltal, Planta Concentradora Las Luces
+      section; operator description of sulfide-ore flotation, seawater use
+      and tailings thickening, distinct from its Planta de Oxidos section.
+      Undated page inspected 2026-10-11.
+    url: https://www.cenizas.cl/faenas_oficinas/faena-taltal/
+    accessed_on: '2026-10-11'
+mechanisms:
+  - id: ureolytic_biocementation_las_luces
+    name: Ureolytic bacterial treatment associated with tailings biocementation
+    process: biomineralization
+    microbial: true
+    description: >-
+      Tailings-derived isolates reported as Priestia megaterium T130-1,
+      Paenibacillus sp. T130-13 and Staphylococcus sp. T130-14 showed urease
+      activity and formed laboratory biocement cores with added calcium and
+      urea. Treated cores resisted wind erosion better than uninoculated
+      controls. Calcite-associated cementation and biofilm adhesion are
+      supported interpretations; their separate causal contributions were
+      not isolated.
+    context: >-
+      T1 material was sieved below 2 mm and heated at 60 degrees C for 72 h
+      to reduce indigenous microorganisms, not demonstrated sterile. Cores
+      contained 150 g tailings and 50 mL bacterial suspension in seawater
+      Luria broth. Section 4.4 identifies 1 M calcium chloride to 0.8 M urea
+      as the shape-retaining formulation; three other formulations failed
+      to retain shape. Methods specify 30 degrees C for 20 days, whereas
+      the CFU Figure 8 caption states 30 days. Section 2.6 prints 40% w/v
+      urea for preculture; this unresolved formulation is not silently
+      corrected. Wind tests used 26 km/h for 45 minutes. Replicate counts,
+      inoculum density and full matching of control additions are unclear.
+      Organism names retain the paper's isolate-level assignments without
+      treating closest BLAST matches as strain accessions. Laboratory
+      stabilization does not establish metal recovery or field deployment.
+    evidence:
+      - source_ref: maureira2024
+        supports: support
+        explanation: >-
+          Sections 3.3-3.4, Table 5 and Figures 2-7 show urease activity,
+          calcite-bearing mixed solids, particle-associated biofilms and lower
+          wind erosion in inoculated cores. Figure 4B supports increased
+          compression resistance for T130-1 and T130-13; Section 4.4 reports
+          the T130-14 compression difference as not statistically significant.
+          Sporosarcina pasteurii and Bacillus subtilis LN8B are reference
+          inocula, not additional indigenous isolates.
+      - source_ref: maureira2024
+        supports: partial
+        explanation: >-
+          Figure 8 and Section 3.4 report ureolytic colonies in the negative
+          control, so this is not a sterile-versus-live comparison. Table 3
+          BMA and Table 5 XRD give different initial calcite estimates;
+          Section 3.3 cautions that substantial amorphous material limits
+          phase quantification. Microscopy elemental maps do not identify
+          pure carbonate, and new XRD phase assignments do not establish
+          microbial synthesis of each named silicate. Neither a purified
+          mineral product nor metal immobilization mass balance was measured.
+curation_history:
+  - timestamp: '2026-10-11T11:42:25.168873+00:00'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Created a process-specific secondary-resource record with source-scoped biocementation and explicit control, phase, timing and deployment limitations.
+history_refs:
+  - history/records/copper-flotation-tailings/2026-10-11T114200Z-codex-932301.yaml
