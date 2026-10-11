@@ -213,6 +213,9 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Humboldtine](data/records/humboldtine.yaml) | Fungal culture-associated iron oxalate formation on siderite- and altered pyrrhotite-bearing rocks | Organism-specific nulls, method-dependent phase assignments and control gaps limit causal and recovery claims |
 | [Lindbergite](data/records/lindbergite.yaml) | Fungal formation of a source-assigned manganese oxalate dihydrate from mixed natural nodules | Mixed phases, hydration and polymorph uncertainty, and assay discrepancies prevent a pure-product yield claim |
 | [Falottaite](data/records/falottaite.yaml) | Fungal culture-associated manganese oxalate trihydrate assignment in a hausmannite/arsenate assay | Unresolved onset, mixed phases and absent matched abiotic controls prevent phase-specific recovery or arsenic-capacity claims |
+| [Mimetite](data/records/mimetite.yaml) | Fungal transformation of an impure natural mimetite feed with lead oxalate precipitation | Qualitative phase evidence does not establish feed conversion, arsenic fate or recovered-metal yield |
+| [Katsarosite](data/records/katsarosite.yaml) | Zinc-dominant monoclinic oxalate formation during source-identified A. niger culture | Mixed phases, conflicting source conditions and a companion-strain accession mismatch remain explicit |
+| [Hausmannite](data/records/hausmannite.yaml) | Culture-associated manganese mobilization from synthetic hausmannite with and without selenate | Endpoint measurements, conflicting source units and unmatched abiotic controls limit causal and recovery claims |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -257,7 +260,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [thirty-fifth expansion reviews](research/ingests/round35-20261011-publication.md),
 [thirty-sixth expansion reviews](research/ingests/round36-20261011-publication.md),
 [thirty-seventh expansion reviews](research/ingests/round37-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round37-frontier-20261011.md), and
+[thirty-eighth expansion reviews](research/ingests/round38-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round38-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

@@ -1,0 +1,688 @@
+{
+  "timestamp_utc": "2026-10-11T23:39:15.390966+00:00",
+  "actor": {
+    "name": "codex",
+    "model": "GPT-6",
+    "tool": "codex",
+    "agent": "/root/round27_superalloy"
+  },
+  "status": "source_only_deferral_original_visuals_unavailable",
+  "curator_ready": false,
+  "record_written": false,
+  "scope": "Source-only repository dossier after baseline; no vanadinite record/history. Raw originals remain outsideGit. Prior handoff and acquisition times retained.",
+  "repository_heads_at_handoff": {
+    "/private/tmp/CMMMech-expansion-round37-20261011": "f3d674806df8f5fd7925e46f1dcfec70cace706a",
+    "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech": "f3d674806df8f5fd7925e46f1dcfec70cace706a"
+  },
+  "candidate_owner": "mineral species vanadinite; synthetic hydroxyvanadinite comparator only",
+  "primary": {
+    "doi": "10.1111/1462-2920.12612",
+    "pmid": "25181352",
+    "title": "Transformation of vanadinite [Pb5(VO4)3Cl] by fungi",
+    "year": 2015,
+    "journal": "Environmental Microbiology",
+    "volume": "17",
+    "issue": "6",
+    "pages": "2018\u20132034",
+    "public_author_pdf_url": "https://www.researchgate.net/profile/Anna-Persiani/publication/265296984_Transformation_of_vanadinite_Pb5VO43Cl_by_fungi/links/578f6b8708ae35e97c427333/Transformation-of-vanadinite-Pb5VO43Cl-by-fungi.pdf",
+    "local_pdf_acquired": false,
+    "webtext_coverage": {
+      "numbered_lines": 1423,
+      "first": 0,
+      "last": 1422,
+      "missing": [],
+      "pages": 17
+    },
+    "visual_coverage": "No main original figures/tables visually inspected. First screenshotpage3 timedout; secondpage6 returnedURLonly/noimage accessible toagent. Do not claim screenshotinspection."
+  },
+  "identity_checks": {
+    "mineral": {
+      "name": "Vanadinite",
+      "formula": "Pb5(VO4)3Cl",
+      "ima_status": "G",
+      "ima_number_year": "1838",
+      "authority_edition": "September 2026",
+      "page_one_based": 226,
+      "authority_original_retained_path": "/private/tmp/cmm-round33-pyrite-research/raw/ima2026.pdf",
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "check": "Current CNMNC homepage still links September2026; copied original PDF row visually inspected; no new PDF download claimed."
+    },
+    "organism": {
+      "name": "Aspergillus niger",
+      "id": "NCBITaxon:5061",
+      "strain": "ATCC201373",
+      "strain_authority": "https://www.atcc.org/products/201373",
+      "limits": "ATCC lists A.niger, soil, Dundee and depositor GMGadd. NCBI species identifier is not a strain identifier. Other study fungi not independently resolved in this bounded pass."
+    }
+  },
+  "dedup": {
+    "started_at": "2026-10-11T23:21:30.109369+00:00",
+    "finished_at": "2026-10-11T23:21:32.624009+00:00",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-n",
+      "-i",
+      "--max-columns",
+      "1500",
+      "--max-columns-preview",
+      "-g",
+      "!*.pdf",
+      "-g",
+      "!*.png",
+      "-g",
+      "!*.jpg",
+      "-g",
+      "!*.jpeg",
+      "-g",
+      "!*.tif",
+      "-g",
+      "!*.tiff",
+      "-g",
+      "!*.xlsx",
+      "-g",
+      "!*.docx",
+      "-g",
+      "!*.zip",
+      "vanadinite|12612|25181352|Transformation of vanadinite",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/private/tmp/CMMMech-expansion-round37-20261011/data/records",
+      "/private/tmp/CMMMech-expansion-round37-20261011/history",
+      "/private/tmp/CMMMech-expansion-round37-20261011/research",
+      "/private/tmp/CMMMech-expansion-round37-20261011/reviews",
+      "/private/tmp/cmm-round10-b-f-raw",
+      "/private/tmp/cmm-round10-graphite-raw",
+      "/private/tmp/cmm-round10-nb-ta-raw",
+      "/private/tmp/cmm-round10-ti-zr-raw",
+      "/private/tmp/cmm-round11-be-rb-re-raw",
+      "/private/tmp/cmm-round11-he-raw",
+      "/private/tmp/cmm-round11-ir-os-hf-raw",
+      "/private/tmp/cmm-round11-lu-tm-pm-raw",
+      "/private/tmp/cmm-round12-aluminium-boron-raw",
+      "/private/tmp/cmm-round12-carbon-metals-raw",
+      "/private/tmp/cmm-round12-groups-raw",
+      "/private/tmp/cmm-round12-industrial-minerals-raw",
+      "/private/tmp/cmm-round13-grade-raw",
+      "/private/tmp/cmm-round13-mineral-raw",
+      "/private/tmp/cmm-round13-secondary-raw",
+      "/private/tmp/cmm-round14-magnet-raw",
+      "/private/tmp/cmm-round14-mineral-raw",
+      "/private/tmp/cmm-round14-product-raw",
+      "/private/tmp/cmm-round14-secondary-raw",
+      "/private/tmp/cmm-round15-brine-raw",
+      "/private/tmp/cmm-round15-mineral-raw",
+      "/private/tmp/cmm-round16-produced-water-raw",
+      "/private/tmp/cmm-round16-silicate-raw",
+      "/private/tmp/cmm-round16-vivianite-raw",
+      "/private/tmp/cmm-round17-biotite-raw",
+      "/private/tmp/cmm-round17-enstatite-raw",
+      "/private/tmp/cmm-round17-saline-raw",
+      "/private/tmp/cmm-round18-catalyst-raw",
+      "/private/tmp/cmm-round18-dunite-raw",
+      "/private/tmp/cmm-round18-mineral-feeds-raw",
+      "/private/tmp/cmm-round18-products-raw",
+      "/private/tmp/cmm-round19-hydrogenation-catalyst-raw",
+      "/private/tmp/cmm-round19-iron-manganese-raw",
+      "/private/tmp/cmm-round19-manganese-residue-raw",
+      "/private/tmp/cmm-round19-tailings-raw",
+      "/private/tmp/cmm-round20-goethite-raw",
+      "/private/tmp/cmm-round20-laterite-raw",
+      "/private/tmp/cmm-round20-mafic-tailings-raw",
+      "/private/tmp/cmm-round20-nodule-raw",
+      "/private/tmp/cmm-round21-crusts-raw",
+      "/private/tmp/cmm-round21-pcb-raw",
+      "/private/tmp/cmm-round21-ree-mud-raw",
+      "/private/tmp/cmm-round22-concretions-raw",
+      "/private/tmp/cmm-round22-pcb-raw",
+      "/private/tmp/cmm-round22-pv-raw",
+      "/private/tmp/cmm-round22-sulfides-raw",
+      "/private/tmp/cmm-round23-crusts-raw",
+      "/private/tmp/cmm-round23-ghiorse-raw",
+      "/private/tmp/cmm-round23-identity-gaps-raw",
+      "/private/tmp/cmm-round23-lcd-raw",
+      "/private/tmp/cmm-round23-rey-mud-raw",
+      "/private/tmp/cmm-round24-copper-slag-raw",
+      "/private/tmp/cmm-round24-frontier-raw",
+      "/private/tmp/cmm-round24-nimh-raw",
+      "/private/tmp/cmm-round24-sulfuric-raw",
+      "/private/tmp/cmm-round25-bf-dust-raw",
+      "/private/tmp/cmm-round25-button-raw",
+      "/private/tmp/cmm-round25-frontier-raw",
+      "/private/tmp/cmm-round25-oil-ash-raw",
+      "/private/tmp/cmm-round26-eaf-dust-raw",
+      "/private/tmp/cmm-round26-packaging-raw",
+      "/private/tmp/cmm-round26-root-raw",
+      "/private/tmp/cmm-round26-superalloy-raw",
+      "/private/tmp/cmm-round27-eaf-slag-raw",
+      "/private/tmp/cmm-round27-goethite-raw",
+      "/private/tmp/cmm-round27-packaging-raw",
+      "/private/tmp/cmm-round27-root-raw",
+      "/private/tmp/cmm-round27-superalloy-raw",
+      "/private/tmp/cmm-round28-black-shale-research",
+      "/private/tmp/cmm-round28-goethite-research",
+      "/private/tmp/cmm-round28-tatra-research",
+      "/private/tmp/cmm-round28-tire-research",
+      "/private/tmp/cmm-round29-bastnaesite-research",
+      "/private/tmp/cmm-round29-ilmenite-research",
+      "/private/tmp/cmm-round29-tungsten-waste-research",
+      "/private/tmp/cmm-round29-zinc-ore-research",
+      "/private/tmp/cmm-round30-basalt-research",
+      "/private/tmp/cmm-round30-chromite-research",
+      "/private/tmp/cmm-round30-pyrrhotite-research",
+      "/private/tmp/cmm-round30-tungsten-research",
+      "/private/tmp/cmm-round31-chromite-tailings-research",
+      "/private/tmp/cmm-round31-ilmenite-research",
+      "/private/tmp/cmm-round31-kaolin-research",
+      "/private/tmp/cmm-round31-kaolin-waste-research",
+      "/private/tmp/cmm-round31-stibnite-research",
+      "/private/tmp/cmm-round31-tungsten-research",
+      "/private/tmp/cmm-round32-arsenopyrite-research",
+      "/private/tmp/cmm-round32-bornite-research",
+      "/private/tmp/cmm-round32-chromitite-research",
+      "/private/tmp/cmm-round32-molybdenite-research",
+      "/private/tmp/cmm-round33-chalcocite-research",
+      "/private/tmp/cmm-round33-covellite-research",
+      "/private/tmp/cmm-round33-molybdenite-research",
+      "/private/tmp/cmm-round33-pyrite-research",
+      "/private/tmp/cmm-round34-galena-research",
+      "/private/tmp/cmm-round34-greigite-research",
+      "/private/tmp/cmm-round34-mackinawite-research",
+      "/private/tmp/cmm-round34-uraninite-research",
+      "/private/tmp/cmm-round35-anglesite-research",
+      "/private/tmp/cmm-round35-jarosite-research",
+      "/private/tmp/cmm-round35-ningyoite-research",
+      "/private/tmp/cmm-round35-schwertmannite-research",
+      "/private/tmp/cmm-round36-autunite-research",
+      "/private/tmp/cmm-round36-moolooite-research",
+      "/private/tmp/cmm-round36-uramphite-research",
+      "/private/tmp/cmm-round37-falottaite-research",
+      "/private/tmp/cmm-round37-humboldtine-research",
+      "/private/tmp/cmm-round37-lindbergite-research",
+      "/private/tmp/cmm-round37-rhabdophane-research",
+      "/private/tmp/cmm-round38-vanadinite-research/raw",
+      "/private/tmp/cmm-round7-ho-er-gd-raw",
+      "/private/tmp/cmm-round7-terbium-raw",
+      "/private/tmp/cmm-round8-sc-pr-raw",
+      "/private/tmp/cmm-round9-cs-sr-raw",
+      "/private/tmp/cmm-round9-ru-rh-raw",
+      "/private/tmp/cmm-round9-si-sn-raw"
+    ],
+    "root_count": 124,
+    "roots": [
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/private/tmp/CMMMech-expansion-round37-20261011/data/records",
+      "/private/tmp/CMMMech-expansion-round37-20261011/history",
+      "/private/tmp/CMMMech-expansion-round37-20261011/research",
+      "/private/tmp/CMMMech-expansion-round37-20261011/reviews",
+      "/private/tmp/cmm-round10-b-f-raw",
+      "/private/tmp/cmm-round10-graphite-raw",
+      "/private/tmp/cmm-round10-nb-ta-raw",
+      "/private/tmp/cmm-round10-ti-zr-raw",
+      "/private/tmp/cmm-round11-be-rb-re-raw",
+      "/private/tmp/cmm-round11-he-raw",
+      "/private/tmp/cmm-round11-ir-os-hf-raw",
+      "/private/tmp/cmm-round11-lu-tm-pm-raw",
+      "/private/tmp/cmm-round12-aluminium-boron-raw",
+      "/private/tmp/cmm-round12-carbon-metals-raw",
+      "/private/tmp/cmm-round12-groups-raw",
+      "/private/tmp/cmm-round12-industrial-minerals-raw",
+      "/private/tmp/cmm-round13-grade-raw",
+      "/private/tmp/cmm-round13-mineral-raw",
+      "/private/tmp/cmm-round13-secondary-raw",
+      "/private/tmp/cmm-round14-magnet-raw",
+      "/private/tmp/cmm-round14-mineral-raw",
+      "/private/tmp/cmm-round14-product-raw",
+      "/private/tmp/cmm-round14-secondary-raw",
+      "/private/tmp/cmm-round15-brine-raw",
+      "/private/tmp/cmm-round15-mineral-raw",
+      "/private/tmp/cmm-round16-produced-water-raw",
+      "/private/tmp/cmm-round16-silicate-raw",
+      "/private/tmp/cmm-round16-vivianite-raw",
+      "/private/tmp/cmm-round17-biotite-raw",
+      "/private/tmp/cmm-round17-enstatite-raw",
+      "/private/tmp/cmm-round17-saline-raw",
+      "/private/tmp/cmm-round18-catalyst-raw",
+      "/private/tmp/cmm-round18-dunite-raw",
+      "/private/tmp/cmm-round18-mineral-feeds-raw",
+      "/private/tmp/cmm-round18-products-raw",
+      "/private/tmp/cmm-round19-hydrogenation-catalyst-raw",
+      "/private/tmp/cmm-round19-iron-manganese-raw",
+      "/private/tmp/cmm-round19-manganese-residue-raw",
+      "/private/tmp/cmm-round19-tailings-raw",
+      "/private/tmp/cmm-round20-goethite-raw",
+      "/private/tmp/cmm-round20-laterite-raw",
+      "/private/tmp/cmm-round20-mafic-tailings-raw",
+      "/private/tmp/cmm-round20-nodule-raw",
+      "/private/tmp/cmm-round21-crusts-raw",
+      "/private/tmp/cmm-round21-pcb-raw",
+      "/private/tmp/cmm-round21-ree-mud-raw",
+      "/private/tmp/cmm-round22-concretions-raw",
+      "/private/tmp/cmm-round22-pcb-raw",
+      "/private/tmp/cmm-round22-pv-raw",
+      "/private/tmp/cmm-round22-sulfides-raw",
+      "/private/tmp/cmm-round23-crusts-raw",
+      "/private/tmp/cmm-round23-ghiorse-raw",
+      "/private/tmp/cmm-round23-identity-gaps-raw",
+      "/private/tmp/cmm-round23-lcd-raw",
+      "/private/tmp/cmm-round23-rey-mud-raw",
+      "/private/tmp/cmm-round24-copper-slag-raw",
+      "/private/tmp/cmm-round24-frontier-raw",
+      "/private/tmp/cmm-round24-nimh-raw",
+      "/private/tmp/cmm-round24-sulfuric-raw",
+      "/private/tmp/cmm-round25-bf-dust-raw",
+      "/private/tmp/cmm-round25-button-raw",
+      "/private/tmp/cmm-round25-frontier-raw",
+      "/private/tmp/cmm-round25-oil-ash-raw",
+      "/private/tmp/cmm-round26-eaf-dust-raw",
+      "/private/tmp/cmm-round26-packaging-raw",
+      "/private/tmp/cmm-round26-root-raw",
+      "/private/tmp/cmm-round26-superalloy-raw",
+      "/private/tmp/cmm-round27-eaf-slag-raw",
+      "/private/tmp/cmm-round27-goethite-raw",
+      "/private/tmp/cmm-round27-packaging-raw",
+      "/private/tmp/cmm-round27-root-raw",
+      "/private/tmp/cmm-round27-superalloy-raw",
+      "/private/tmp/cmm-round28-black-shale-research",
+      "/private/tmp/cmm-round28-goethite-research",
+      "/private/tmp/cmm-round28-tatra-research",
+      "/private/tmp/cmm-round28-tire-research",
+      "/private/tmp/cmm-round29-bastnaesite-research",
+      "/private/tmp/cmm-round29-ilmenite-research",
+      "/private/tmp/cmm-round29-tungsten-waste-research",
+      "/private/tmp/cmm-round29-zinc-ore-research",
+      "/private/tmp/cmm-round30-basalt-research",
+      "/private/tmp/cmm-round30-chromite-research",
+      "/private/tmp/cmm-round30-pyrrhotite-research",
+      "/private/tmp/cmm-round30-tungsten-research",
+      "/private/tmp/cmm-round31-chromite-tailings-research",
+      "/private/tmp/cmm-round31-ilmenite-research",
+      "/private/tmp/cmm-round31-kaolin-research",
+      "/private/tmp/cmm-round31-kaolin-waste-research",
+      "/private/tmp/cmm-round31-stibnite-research",
+      "/private/tmp/cmm-round31-tungsten-research",
+      "/private/tmp/cmm-round32-arsenopyrite-research",
+      "/private/tmp/cmm-round32-bornite-research",
+      "/private/tmp/cmm-round32-chromitite-research",
+      "/private/tmp/cmm-round32-molybdenite-research",
+      "/private/tmp/cmm-round33-chalcocite-research",
+      "/private/tmp/cmm-round33-covellite-research",
+      "/private/tmp/cmm-round33-molybdenite-research",
+      "/private/tmp/cmm-round33-pyrite-research",
+      "/private/tmp/cmm-round34-galena-research",
+      "/private/tmp/cmm-round34-greigite-research",
+      "/private/tmp/cmm-round34-mackinawite-research",
+      "/private/tmp/cmm-round34-uraninite-research",
+      "/private/tmp/cmm-round35-anglesite-research",
+      "/private/tmp/cmm-round35-jarosite-research",
+      "/private/tmp/cmm-round35-ningyoite-research",
+      "/private/tmp/cmm-round35-schwertmannite-research",
+      "/private/tmp/cmm-round36-autunite-research",
+      "/private/tmp/cmm-round36-moolooite-research",
+      "/private/tmp/cmm-round36-uramphite-research",
+      "/private/tmp/cmm-round37-falottaite-research",
+      "/private/tmp/cmm-round37-humboldtine-research",
+      "/private/tmp/cmm-round37-lindbergite-research",
+      "/private/tmp/cmm-round37-rhabdophane-research",
+      "/private/tmp/cmm-round38-vanadinite-research/raw",
+      "/private/tmp/cmm-round7-ho-er-gd-raw",
+      "/private/tmp/cmm-round7-terbium-raw",
+      "/private/tmp/cmm-round8-sc-pr-raw",
+      "/private/tmp/cmm-round9-cs-sr-raw",
+      "/private/tmp/cmm-round9-ru-rh-raw",
+      "/private/tmp/cmm-round9-si-sn-raw"
+    ],
+    "exit_code": 0,
+    "hits_lines": 144,
+    "stderr": "",
+    "boundaries": "Current worktree and original checkout record/research/review/history directories plus existing absolute cmm-*-research/raw directory roots referenced by their text. Hidden/ignored included; relevant symlinks followed. Binary PDF/image/Office/ZIP excluded from text scan; retained extracted texts and metadata searched. Not machine-wide. Own raw contains new primary and is distinguished from prior coverage.",
+    "hits_sha256": "46721fa5db99ace52e901b0f9569e06b8f9a4ba6b2971043818b8ace458df844"
+  },
+  "exact_maintained_checks": [
+    {
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-n",
+        "-i",
+        "vanadinite|1462-2920[.]12612|25181352",
+        "/private/tmp/CMMMech-expansion-round37-20261011/data/records",
+        "/private/tmp/CMMMech-expansion-round37-20261011/history",
+        "/private/tmp/CMMMech-expansion-round37-20261011/reviews"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "dedup_interpretation": "No current maintained record/history/review textual match within declared hiddenignoredfollow scope. DOI already cited in prior monazite-xenotime2023 and Ferrier2019 raw primaries; vanadinite also in IMA lists/pyromorphite background and currentfrontier. No global source novelty claim. Binary PDFs/images/Office/ZIP excluded from textscan; extractedtext searched; unextractedbinary inventory not exhaustive.",
+  "evidence_notes_provisional_until_visual_review": [
+    {
+      "locator": "Methods pp2029\u20132030; Figure5 caption p2023",
+      "finding": "Natural Mibladen, Morocco sample includes ankerite/barite. Approximately1mm3 fragments and ground powder are separate assay preparations. Synthetic hydroxyl analogue Pb5(VO4)3OH includes litharge and Pb8V2O13. Do not treat either feed as pure stoichiometric vanadinite, or import synthetic extraction claims to natural chloride species."
+    },
+    {
+      "locator": "Methods pp2029\u20132030",
+      "finding": "A.niger ATCC201373; study also lists A.ustus FBL420, C.rosea FBL422, P.lilacinus FBL423, and P.javanicus without accession. At least triplicate,25C,dark,Czapek-Dox agar,pH adjusted5.5. Powder feeds0.2%(w/v),25cm3 agar/90mm plate. Different figure/caption endpoints12days,15days,2months; natural fragment observations2weeks\u20131month, and bulk XRD null reported at3months."
+    },
+    {
+      "locator": "Results pp2019\u20132023; Figures1\u20135 (caption/text only)",
+      "finding": "Natural powder arm reports lead oxalate and whewellite by XRPD after2months. Larger natural crystals show Pb/C/O surface spectra and author-assigned lead oxalate, yet bulk XRPD did not detect lead oxalate even after3months; preserve analytical-scale limit. A.ustus new tiny crystals unresolved; P.javanicus penetration without observed solubilization."
+    },
+    {
+      "locator": "Tables1\u20133 pp2024\u20132025; Methods p2030",
+      "finding": "Tables1/2 are fungal extension/biomass relative to unamended controls, not vanadium extraction or mineral yield. Table3 natural- and synthetic-mineral uninoculated pH entries are dashes/notcarriedout; final fungal means3.96\u00b10.55 and3.04\u00b10.14 do not support paired measured pH shifts from matched mineral controls. Visual table verification remains pending."
+    },
+    {
+      "locator": "Abiotic experiments pp2024/2030; Figures1D/5E/7C captions",
+      "finding": "Oxalic acid reproduces lead-oxalate precipitation in distinct chemical assays; citric acid negative under tested conditions. Separate slide0.05mM acid, agar-well0.1\u20130.75M oxalic/0.5\u20131M citric, and aqueous50/100mM acid conditions. Chemical concentration series is not a quantitative live-culture mechanism isolation."
+    },
+    {
+      "locator": "Results pp2024\u20132026; Discussion pp2027\u20132028; model methods p2031",
+      "finding": "Organic-acid measurements are preliminary data notshown. Geochemical model is not measured vanadium species or massbalance. Figure8 caption assumes100mM oxalate, Figure9/methods25mM, requiring panel-specific attribution. Yellow-to-blue chemical assay observation supports only authors interpretation of redox change, not directly measured microbial V reduction."
+    },
+    {
+      "locator": "Whole primary text; access boundary",
+      "finding": "No mineral extraction/recovery percentage, massbalance or industrial deployment is demonstrated by this reading. No SI section/link occurs in complete maintext and EuropePMC sayshasSupplN, but blocked publisher fullpage prevents universal absence claim. Ten numbered figures/four tables identified; original visuals remain uninspected."
+    }
+  ],
+  "acquisition_attempts": [
+    {
+      "name": "ceci2015.pdf",
+      "url": "https://www.researchgate.net/profile/Anna-Persiani/publication/265296984_Transformation_of_vanadinite_Pb5VO43Cl_by_fungi/links/578f6b8708ae35e97c427333/Transformation-of-vanadinite-Pb5VO43Cl-by-fungi.pdf",
+      "started_at": "2026-10-11T23:21:49.072474+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "finished_at": "2026-10-11T23:21:49.193491+00:00"
+    },
+    {
+      "name": "dundee.html",
+      "url": "https://discovery.dundee.ac.uk/en/publications/transformation-of-vanadinite-pb5-vo4-3-cl-by-fungi/",
+      "started_at": "2026-10-11T23:21:49.073633+00:00",
+      "status": 200,
+      "final_url": "https://discovery.dundee.ac.uk/en/publications/transformation-of-vanadinite-pb5-vo4-3-cl-by-fungi/",
+      "bytes": 105403,
+      "content_type": "text/html;charset=UTF-8",
+      "sha256": "4457022dd74e8aac1db8a1014d3f2feb86a005cab5c61c53d035a8e6c12492c3",
+      "finished_at": "2026-10-11T23:21:49.563198+00:00"
+    },
+    {
+      "name": "openalex.json",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1111/1462-2920.12612",
+      "started_at": "2026-10-11T23:21:49.074161+00:00",
+      "status": 200,
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1111/1462-2920.12612",
+      "bytes": 35364,
+      "content_type": "application/json",
+      "sha256": "1a8b55a635c610d872dddd7388cd363f3c0e79ae210a3a1b83b97eee0af4d0ea",
+      "finished_at": "2026-10-11T23:21:49.458948+00:00"
+    },
+    {
+      "name": "crossref.json",
+      "url": "https://api.crossref.org/works/10.1111%2F1462-2920.12612",
+      "started_at": "2026-10-11T23:21:49.074511+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1111%2F1462-2920.12612",
+      "bytes": 23007,
+      "content_type": "application/json",
+      "sha256": "4963990258256ff3c7b3d9cbad0b46feb8b42e5c28e471bf658b52a8f3cd8a67",
+      "finished_at": "2026-10-11T23:21:49.555322+00:00"
+    },
+    {
+      "name": "pubmed.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:25181352%20AND%20SRC:MED&format=json",
+      "started_at": "2026-10-11T23:21:49.074833+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:25181352%20AND%20SRC:MED&format=json",
+      "bytes": 981,
+      "content_type": "application/json;charset=UTF-8",
+      "sha256": "352758121b9345c0eadb7c413c2856736b17e08b9a8f7bc3ecd7dbcde81ba98b",
+      "finished_at": "2026-10-11T23:21:49.746747+00:00"
+    },
+    {
+      "name": "rome.html",
+      "url": "https://iris.uniroma1.it/handle/11573/530555",
+      "started_at": "2026-10-11T23:22:57.547335+00:00",
+      "status": 200,
+      "final_url": "https://iris.uniroma1.it/handle/11573/530555",
+      "bytes": 55578,
+      "content_type": "text/html;charset=utf-8",
+      "sha256": "74316300c8bbaf6016313ffc1c6b80403f210ce3e1764a6169e080e653ae7651",
+      "finished_at": "2026-10-11T23:22:58.895534+00:00"
+    },
+    {
+      "name": "wiley-primary.pdf",
+      "url": "https://sfamjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/1462-2920.12612",
+      "started_at": "2026-10-11T23:22:57.548170+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "finished_at": "2026-10-11T23:22:57.727037+00:00"
+    },
+    {
+      "name": "researchgate-figure2.html",
+      "url": "https://www.researchgate.net/figure/Scanning-electron-microscopy-of-vanadinite-minerals-extracted-from-Czapek-Dox-agar-medium_fig1_265296984",
+      "started_at": "2026-10-11T23:22:57.548498+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "finished_at": "2026-10-11T23:22:57.735685+00:00"
+    },
+    {
+      "name": "wiley-full.html",
+      "url": "https://sfamjournals.onlinelibrary.wiley.com/doi/full/10.1111/1462-2920.12612",
+      "started_at": "2026-10-11T23:22:57.548709+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "finished_at": "2026-10-11T23:22:57.725128+00:00"
+    },
+    {
+      "name": "atcc201373.html",
+      "url": "https://www.atcc.org/products/201373",
+      "started_at": "2026-10-11T23:24:52.978338+00:00",
+      "status": 200,
+      "final_url": "https://www.atcc.org/products/201373",
+      "bytes": 322934,
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "af0b3a48c77ae5f3faa8dd15b6bab9f3470c90ae963b185391860f24462e7b1e",
+      "finished_at": "2026-10-11T23:24:58.374042+00:00"
+    },
+    {
+      "name": "ncbi5061.html",
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=5061",
+      "started_at": "2026-10-11T23:24:52.979149+00:00",
+      "status": 200,
+      "final_url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=5061",
+      "bytes": 32594,
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "0824ee919f6db65fda7e74f4dd87782203f761df3b7fea530055e6b55a473c92",
+      "finished_at": "2026-10-11T23:24:53.573509+00:00"
+    },
+    {
+      "name": "ima-current.html",
+      "url": "https://cnmnc.units.it/ima-master-list",
+      "started_at": "2026-10-11T23:24:52.979935+00:00",
+      "error": "HTTP Error 404: Not Found",
+      "finished_at": "2026-10-11T23:24:53.580141+00:00"
+    },
+    {
+      "name": "epmc-notices.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1111%2F1462-2920.12612&format=json&resultType=core",
+      "started_at": "2026-10-11T23:24:52.980134+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1111%2F1462-2920.12612&format=json&resultType=core",
+      "bytes": 8829,
+      "content_type": "application/json;charset=UTF-8",
+      "sha256": "1aec3e0437036ce211181a2e47c536eb020bf2b378bfc8bb7e7dceca18774800",
+      "finished_at": "2026-10-11T23:24:53.968528+00:00"
+    }
+  ],
+  "additional_web_attempts": [
+    {
+      "route": "RG linkedPDF viawebreader",
+      "result": "Full17page1423line text retained, no PDFbytes."
+    },
+    {
+      "route": "RGpdf page3 screenshot",
+      "result": "TimeoutError"
+    },
+    {
+      "route": "RGpdf page6 screenshot",
+      "result": "URL/referenceonly; no actualimage accessible toagent"
+    },
+    {
+      "route": "RG figure2 link",
+      "result": "InternalError/imageinaccessible; direct403 retained"
+    },
+    {
+      "route": "Dundee/Hutton public repository",
+      "result": "DOIonly; nopublicfile link observed."
+    },
+    {
+      "route": "Rome IRIS11573/530555",
+      "result": "PDFmarkedarchive-managersonly; didnotrequestprivatefile/contactauthor."
+    },
+    {
+      "route": "new Wiley enviromicro journal full/epdf viaweb",
+      "result": "Notaccessible; no unchangeddirectdeniedendpointretried."
+    }
+  ],
+  "notices": {
+    "queries": [
+      "exact DOI + retraction erratum correction",
+      "exact title + supplementary/supporting information",
+      "exact title + fullPDF"
+    ],
+    "finding": "No linked correction/retraction in retrievedCrossref/EuropePMCmetadata; boundedqueries didnotidentifyprimary-specificnotice. A2026ChemicalGeologysolubilitycorrection returned is a differentpaper, DOI10.1016/j.chemgeo.2026.123399, not a notice for Ceci2015."
+  },
+  "acceptance_needs": [
+    "Obtain inspectable original figure/table images (especiallyFigure5phaseassignments andTables1\u20133) by legitimate newroute; do not merely retry403PDF.",
+    "Check publisherSIavailability and retainanydeclaredSI; noSI absenceclaimfromabstract.",
+    "Aftervisualinspection, curate naturalvanadinite narrowobservations withsyntheticcomparator isolated and analytical/null/assay-time limits preserved.",
+    "Ifincludingadditionalfungalmechanisms, independently resolve moderntaxon names andstrainmapping; current liveauthorityverifiedA.niger only.",
+    "Rerun current-corpusdedup and nativeindependentreview/validation in coordinatednewworktree before acceptance."
+  ],
+  "raw_manifest": [
+    {
+      "path": "raw/acquisition1.json",
+      "bytes": 2453,
+      "sha256": "e3b1a8b3a4f74f10c8fb2f60f6cabc4c13216f0b2cd268871dd5c4f3b819de29"
+    },
+    {
+      "path": "raw/acquisition2.json",
+      "bytes": 1357,
+      "sha256": "8bb4a5dcb3ee76523ca8d5fe86ff1bed7f111accdb5f9d3bc2511f7d5e09d828"
+    },
+    {
+      "path": "raw/acquisition3.json",
+      "bytes": 1770,
+      "sha256": "ecef4d537866c49d10c0514c5c29db3ebe0d417f884623da42c94a3a3d4108f9"
+    },
+    {
+      "path": "raw/atcc201373.html",
+      "bytes": 322934,
+      "sha256": "af0b3a48c77ae5f3faa8dd15b6bab9f3470c90ae963b185391860f24462e7b1e"
+    },
+    {
+      "path": "raw/crossref.json",
+      "bytes": 23007,
+      "sha256": "4963990258256ff3c7b3d9cbad0b46feb8b42e5c28e471bf658b52a8f3cd8a67"
+    },
+    {
+      "path": "raw/dedup-errors.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "raw/dedup-exact-context.txt",
+      "bytes": 17028,
+      "sha256": "56991b0c58480673c368033d298d8a2fa3bed26ad85f15e5ca232895df4688c2"
+    },
+    {
+      "path": "raw/dedup-hits.txt",
+      "bytes": 146757,
+      "sha256": "46721fa5db99ace52e901b0f9569e06b8f9a4ba6b2971043818b8ace458df844"
+    },
+    {
+      "path": "raw/dedup.json",
+      "bytes": 13326,
+      "sha256": "8de170461a8a19fba5dad449badd2d35de0c794b7a17ebe0bc7a47b1f6276177"
+    },
+    {
+      "path": "raw/dundee.html",
+      "bytes": 105403,
+      "sha256": "4457022dd74e8aac1db8a1014d3f2feb86a005cab5c61c53d035a8e6c12492c3"
+    },
+    {
+      "path": "raw/epmc-notices.json",
+      "bytes": 8829,
+      "sha256": "1aec3e0437036ce211181a2e47c536eb020bf2b378bfc8bb7e7dceca18774800"
+    },
+    {
+      "path": "raw/ima-current-web.json",
+      "bytes": 7396,
+      "sha256": "c0a232dab7247c269d77d39f5f68280d9819b863bfa75f7e8040f7f37f1fe0e1"
+    },
+    {
+      "path": "raw/ima-page-226.png",
+      "bytes": 240106,
+      "sha256": "db02a47ac5380c7a662e1d790e353386e8df15e6b2726406b81a08639f81e00f"
+    },
+    {
+      "path": "raw/ima-vanadinite-page.txt",
+      "bytes": 3074,
+      "sha256": "4951721eb9219e6ba7b4f556b590d604c0a8e63bdde3677cad01d110abd99b86"
+    },
+    {
+      "path": "raw/ima2026-09.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+    },
+    {
+      "path": "raw/ncbi5061.html",
+      "bytes": 32594,
+      "sha256": "0824ee919f6db65fda7e74f4dd87782203f761df3b7fea530055e6b55a473c92"
+    },
+    {
+      "path": "raw/openalex.json",
+      "bytes": 35364,
+      "sha256": "1a8b55a635c610d872dddd7388cd363f3c0e79ae210a3a1b83b97eee0af4d0ea"
+    },
+    {
+      "path": "raw/primary-web-reader-chunks.json",
+      "bytes": 194140,
+      "sha256": "615376c2a64cb1dda6abdf0da12ac4676f5bb645140dfca034fdb13ae70dd54b"
+    },
+    {
+      "path": "raw/primary-webtext.txt",
+      "bytes": 94044,
+      "sha256": "5223c90dbfb5567935b80a3cd5eb10533ddd334f030d16df999dbc1cb5bd476b"
+    },
+    {
+      "path": "raw/pubmed.xml",
+      "bytes": 981,
+      "sha256": "352758121b9345c0eadb7c413c2856736b17e08b9a8f7bc3ecd7dbcde81ba98b"
+    },
+    {
+      "path": "raw/rome.html",
+      "bytes": 55578,
+      "sha256": "74316300c8bbaf6016313ffc1c6b80403f210ce3e1764a6169e080e653ae7651"
+    }
+  ],
+  "source_handoff_timestamp_utc": "2026-10-11T23:26:28.460941+00:00",
+  "raw_root": "/private/tmp/cmm-round38-vanadinite-research",
+  "source_handoff": {
+    "timestamp_utc": "2026-10-11T23:26:28.460941+00:00",
+    "json": "/private/tmp/cmm-round38-vanadinite-research/20261011T232628Z-source-handoff.json",
+    "json_sha256": "4a46ffd8c711cac05063c6165ced9a4396e9ee95cd56d1a8c01cc585bff3fa54",
+    "markdown": "/private/tmp/cmm-round38-vanadinite-research/20261011T232628Z-source-handoff.md",
+    "markdown_sha256": "e723e7212d9f318c0b8b8de03012b752a0daee9ee2276bf9d44fb417e7c00afc",
+    "raw_artifact_count": 21,
+    "status": "source_only_deferral_original_visuals_unavailable"
+  },
+  "current_curation_base": "f3d674806df8f5fd7925e46f1dcfec70cace706a",
+  "baseline_receipt": "/private/tmp/cmm-round38-baseline-terminal.json"
+}

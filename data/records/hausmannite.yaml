@@ -1,0 +1,153 @@
+id: cmmmech:hausmannite
+name: Hausmannite
+material_kind: mineral
+description: >-
+  Hausmannite is the grandfathered tetragonal manganese oxide mineral
+  Mn2+Mn3+2O4, commonly written Mn3O4; the IMA September 2026 list gives
+  1828 as its historical entry. It is distinct from elemental manganese,
+  other manganese oxides, manganese oxalate products and mixed natural
+  manganese ores. The curated laboratory experiment used a synthesized
+  oxide preparation identified by the authors as hausmannite, not a
+  natural mineral specimen. No criticality designation is inherited from
+  manganese.
+sources:
+- id: ima_2026_09
+  title: >-
+    IMA-CNMNC. The New IMA List of Minerals, September 2026. Hausmannite
+    row, PDF page 90; formula, grandfathered status and historical year.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-11'
+- id: hausmannite_handbook
+  title: >-
+    Mineralogical Society of America, Handbook of Mineralogy. Hausmannite,
+    one-page entry, Mineral Data Publishing version 1 (2001-2005).
+    Formula and tetragonal crystal data.
+  url: https://handbookofmineralogy.org/pdfs/hausmannite.pdf
+  accessed_on: '2026-10-11'
+- id: farkas2021
+  title: >-
+    Farkas et al. (2021). Fungal Mobilization of Selenium in the Presence
+    of Hausmannite and Ferric Oxyhydroxides. Journal of Fungi 7(10):810.
+    Complete ten-page article, Sections 2-4 and Figures 1-5;
+    publisher PDF/XML and PMC8539610 full text.
+  url: https://doi.org/10.3390/jof7100810
+  accessed_on: '2026-10-11'
+- id: ncbi_niger
+  title: NCBI Taxonomy 5061. Aspergillus niger, current species node.
+  url: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/5061/dataset_report
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: niger_associated_selenium_conditioned_manganese_mobilization
+  name: Selenium-conditioned manganese mobilization during fungal culture with synthetic hausmannite
+  process: bioleaching
+  microbial: true
+  organisms:
+  - id: NCBITaxon:5061
+    label: Aspergillus niger
+  description: >-
+    In laboratory cultures of Aspergillus niger with a synthesized oxide
+    assigned to hausmannite, selenate addition was associated with a lower
+    final culture pH and a higher manganese concentration in the filtered
+    spent medium than in selenium-free fungal cultures. This supports a
+    condition-dependent culture-associated mobilization observation.
+    It does not isolate a fungal contribution relative to a time-matched
+    sterile system, identify a particular acid or enzyme, demonstrate
+    manganese redox speciation, or establish an isolated product yield or
+    industrial deployment.
+  context: >-
+    Section 2 identifies the inoculum as spores from a seven-day colony
+    of A. niger CBS 140837, originally isolated from mercury-contaminated
+    soil. The species TaxID does not resolve that strain; inoculum
+    concentration and volume are not reported. The manganese oxide was
+    prepared by alkaline precipitation of manganese sulfate, heated under
+    reflux for five hours, filtered, washed, dried at 80 degrees C and
+    oven-heated at 95 degrees C for one hour before use. The paper cites
+    earlier X-ray diffraction characterization for its hausmannite
+    assignment; it does not show a fresh diffraction pattern or quantified
+    phase purity for the tested batch. Flasks contained 45 mL of autoclaved
+    Sabouraud Dextrose Broth and 0.11 g of oxide; selenate treatments
+    received 5 mL of solution providing a final total selenium
+    concentration of 50 mg/L. The stated final oxide loading was 2.2 g/L.
+    Suspensions were stirred at 130 rpm for 24 hours before sampling and
+    inoculation, then incubated statically for three weeks at 25 degrees C
+    in the dark. Treatments were in triplicate. Initial medium pH is not
+    reported. Fungal biomass was separated, washed and dried; spent medium
+    was filtered at 0.45 micrometres, and residual solids were collected
+    separately. The ferric oxyhydroxide arm was a different feed.
+  evidence:
+  - source_ref: farkas2021
+    supports: support
+    explanation: >-
+      Sections 3.1 and 3.3 and original Figures 1a and 2a show lower final
+      pH and greater filtrate manganese in selenate-containing fungal
+      cultures with the hausmannite preparation than in selenium-free
+      fungal cultures with that preparation. The authors report final
+      average pH values of 3.2 and 4.4, respectively. Figure 2a presents a
+      three-week endpoint, not a time-resolved dissolution rate.
+      Section 2.4 measures total manganese by flame atomic absorption
+      spectrometry; the operationally filtered fraction is not a
+      measurement of free manganese ions or their oxidation state.
+  - source_ref: farkas2021
+    supports: partial
+    explanation: >-
+      Section 2.3 and figure captions define the plotted control as
+      fungal culture without the added inorganic solid. Selenium-free
+      cultures are additional comparisons. The 24-hour pre-inoculation
+      measurements in Figure 3 precede the three-week inoculated endpoint;
+      they are not a time-matched sterile control. No three-week
+      uninoculated manganese-release series, matched-pH chemical control
+      or killed-biomass comparator is reported. Consequently these data
+      do not quantify the fungal enhancement over abiotic dissolution,
+      nor isolate selenate's direct chemical contribution.
+  - source_ref: farkas2021
+    supports: partial
+    explanation: >-
+      Section 3.3 and Figure 2a use g/L for manganese in the medium,
+      whereas Section 4 proposes a protective-cell threshold of
+      0.25-1.4 mg/L while citing that figure. This three-order unit
+      discrepancy is unresolved; the proposed numerical threshold is
+      not adopted. Section 4's acid, redox-active metabolite, enzyme and
+      manganese-transport explanations are hypotheses supported by
+      literature comparisons, not direct measurements of those causal
+      steps in this experiment. No post-culture manganese mineral
+      identification or manganese recovery percentage is provided.
+  - source_ref: farkas2021
+    supports: partial
+    explanation: >-
+      Original Figure 1b supports reduced biomass in the selenate-treated
+      oxide cultures, but Section 3.2 assigns the 86% and 65% inhibition
+      figures to ferric and manganese matrices, respectively, whereas
+      the last paragraph of Section 4 assigns an 86% decrease to the
+      manganese treatment. The graph's selenium-free manganese bar is
+      above 100% despite its label referring to selenium-free treatment,
+      leaving the normalization basis insufficiently clear for resolving
+      the prose by recalculation. No precise inhibition percentage is
+      adopted. The article does not specify the statistical test or
+      define the error bars for its significance claims.
+  - source_ref: farkas2021
+    supports: context_only
+    explanation: >-
+      Sections 3.3-3.4 and Figures 3-5 describe selenium redistribution
+      and concentrations in washed biomass alongside the manganese
+      observation. The initial selenium sorption to the hausmannite
+      preparation was small; selenium remained distributed among medium,
+      residual solid and biomass after cultivation. Biomass selenium
+      concentration was higher with hausmannite than in the no-solid
+      culture, while biomass manganese concentration was lower in the
+      selenate-containing than selenium-free hausmannite culture.
+      These are compartment and dry-biomass concentration comparisons,
+      not proof of intracellular localization, measured selenium
+      reduction, total uptake mass or purified selenium recovery.
+      Ferric-oxyhydroxide desorption results cannot be transferred to
+      hausmannite, and no oxalate-product assignment is imported from
+      the separate 2020 arsenic experiment cited in this paper.
+curation_history:
+- timestamp: '2026-10-11T23:42:16.318801Z'
+  curator: codex
+  action: CREATE
+  summary: >-
+    Added hausmannite identity and a qualified 2021 selenium-conditioned
+    fungal mobilization observation, preserving controls, phase, unit and
+    biomass-normalization limits without a recovery or industrial claim.
+history_refs:
+- history/records/hausmannite/2026-10-11T234142Z-codex-45f4d6.yaml

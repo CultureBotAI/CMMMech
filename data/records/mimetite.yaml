@@ -1,0 +1,147 @@
+id: cmmmech:mimetite
+name: Mimetite
+material_kind: mineral
+description: >-
+  Mimetite is the Pb5(AsO4)3Cl mineral species, grandfathered in the
+  September 2026 IMA list with original-description year 1832. It is
+  distinct from elemental lead or arsenic, dissolved arsenate, the
+  phosphate mineral pyromorphite and an unspecified lead-bearing ore.
+  The curated experiment used a characterized but impure natural
+  mimetite specimen. No constituent-element criticality is inherited.
+sources:
+- id: ima_2026_09
+  title: >-
+    IMA-CNMNC. The New IMA List of Minerals, September 2026.
+    Mimetite row, PDF page 144; page 1 column definitions and page 2
+    distribution terms.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-11'
+- id: mimetite_handbook
+  title: >-
+    Mineralogical Society of America, Handbook of Mineralogy.
+    Mimetite, one-page mineral description; formula and crystal data.
+  url: https://handbookofmineralogy.org/pdfs/mimetite.pdf
+  accessed_on: '2026-10-11'
+- id: ceci2015
+  title: >-
+    Ceci, Kierans, Hillier, Persiani and Gadd (2015). Fungal Bioweathering
+    of Mimetite and a General Geomycological Model for Lead Apatite
+    Mineral Biotransformations. Applied and Environmental Microbiology
+    81(15):4955-4964. DOI 10.1128/AEM.00726-15; PMID 25979898;
+    PMC4495193. Complete publisher HTML, Figures 1-3 and Tables 1-2.
+  url: https://doi.org/10.1128/AEM.00726-15
+  accessed_on: '2026-10-11'
+- id: ncbi_niger
+  title: NCBI Taxonomy 5061. Aspergillus niger, current species node.
+  url: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/5061/dataset_report
+  accessed_on: '2026-10-11'
+- id: atcc201373
+  title: ATCC 201373. Aspergillus niger van Tieghem culture catalogue entry.
+  url: https://www.atcc.org/products/201373
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: niger_associated_mimetite_transformation
+  name: Fungal transformation of natural mimetite with lead oxalate precipitation
+  process: bioleaching
+  microbial: true
+  organisms:
+  - id: NCBITaxon:5061
+    label: Aspergillus niger
+  description: >-
+    Laboratory cultures of Aspergillus niger ATCC 201373 grown above
+    mimetite-containing agar produced crystals identified as lead
+    oxalate by powder X-ray diffraction and elemental microanalysis.
+    Mobilization followed by oxalate precipitation is the proposed
+    interpretation of the solid-phase transformation; a dissolved-lead
+    time course and a unique metabolic cause were not demonstrated.
+    This observation does not establish a metal recovery yield,
+    complete feed conversion, arsenic detoxification or industrial use.
+  context: >-
+    The natural yellow specimen came from Ojuela mine, Mapimi, Durango,
+    Mexico. Powder between 100 and 150 micrometres was oven-dried at
+    105 degrees C for 48 hours and added at 0.2% (w/v) to autoclaved
+    Czapek-Dox agar at approximately 50 degrees C before pouring.
+    Experiments used 25 mL agar in 90 mm dishes, sterile 84 mm cellophane
+    membranes and 5 mm mycelial discs from actively growing margins
+    of seven-day cultures. Tests were conducted at least in triplicate
+    at 25 degrees C in the dark; the analyzed endpoint was 12 days.
+    The membrane separated mycelium from agar while allowing nutrient
+    and metabolite passage. The medium contained glucose, nitrate,
+    phosphate and mineral salts, and was adjusted to pH 5.5 before
+    autoclaving; Table 2 gives different uninoculated surface pH values
+    after preparation. Uninoculated mineral-containing medium and
+    mineral-free fungal growth were controls. The species identifier
+    does not itself identify ATCC 201373 at strain level.
+  evidence:
+  - source_ref: ceci2015
+    supports: support
+    explanation: >-
+      Results, growth on natural mimetite, and Figure 1A-H: control
+      crystals showed mimetite morphology and the feed diffraction
+      matched mimetite, whereas
+      crystals recovered below growing colonies had a diffraction
+      pattern assigned to PbC2O4 using ICDD PDF-14-803. The product's
+      EDXA spectrum showed Pb, C and O without the As and Cl peaks
+      seen in feed crystals. Figure 1 presents typical observations
+      from several determinations, reported as similar. This supports
+      phase transformation and precipitation, not a quantified
+      whole-feed elemental balance or proof that arsenic disappeared
+      from the complete culture.
+  - source_ref: ceci2015
+    supports: partial
+    explanation: >-
+      Methods call the starting specimen pure, but Table 1 reports
+      XRF oxide-equivalent impurities including 6.40% Al2O3 by mass
+      and a reported total of 96.07%, averaged over two determinations.
+      Results identify mimetite as the main XRD component and qualify
+      nondetection of other minerals by detection limits. Table 1's
+      As2O3 reporting convention does not establish arsenic oxidation
+      state. The Methods formula omits the arsenate subscript 3;
+      the record identity follows IMA and the paper's complete formula
+      elsewhere, without adopting the defective expression.
+  - source_ref: ceci2015
+    supports: partial
+    explanation: >-
+      Crystal purification used water at 80 degrees C followed by
+      vacuum-desiccator drying; diffraction characterizes the recovered
+      preparation. No quantitative mineral phase fraction, isolated
+      product yield, Pb or As mass balance, or measured arsenic fate
+      is reported. No acid-matched, killed-biomass or cell-free-metabolite
+      series separates the proposed causes. Table 2 supports
+      growth-associated acidification, not an exclusive oxalate
+      mechanism; its errors are described as relative standard
+      deviations from more than six measurements across plates,
+      not identified as independent biological replicates.
+  - source_ref: ceci2015
+    supports: partial
+    explanation: >-
+      Results, growth and toxicity assessment: the reported biomass
+      tolerance index of 97% compares treated and control mycelial dry
+      weights and is not a mineral extraction percentage. The authors
+      report no significant growth or dry-weight difference at this
+      loading. Methods name one-way ANOVA on means, while Results
+      name Kruskal-Wallis analysis on ranks and Dunn comparisons;
+      the procedural distinction is unresolved, and extension data
+      are not shown.
+  - source_ref: ceci2015
+    supports: context_only
+    explanation: >-
+      Geochemical-model methods, Figure 2 and Figure 3 support an
+      explanatory model rather than additional microbial assays.
+      The 25 mM oxalic-acid input refers to preliminary measurements
+      whose results are not shown. Model activities have inconsistent
+      M versus mM reporting between the figure caption and discussion;
+      Figure 2D depicts calcium phases although its caption names lead
+      oxalate. No modeled fraction, stability boundary, arsenic redox
+      pathway or transformation of another mineral is imported as
+      a measured mimetite-culture outcome.
+curation_history:
+- timestamp: '2026-10-11T23:32:07.515Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: >-
+    Curated mimetite mineral identity and qualitative fungal-associated
+    transformation from inspected original primary evidence, retaining
+    feed impurities, source conflicts, controls and unmeasured outcomes.
+history_refs:
+- history/records/mimetite/2026-10-11T233210Z-codex-16866e.yaml
