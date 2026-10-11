@@ -1,0 +1,540 @@
+# Independent scientific review of the tantalum round10 record
+
+- Review: 20261011T073221Z-tantalum-round10-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T07:27:20Z
+- Finished UTC: 2026-10-11T07:32:21Z
+- Reviewer: Codex /root/cmm10_b_f (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The element identity, dated US criticality and assay-specific Ta nondetection are supported. The record preserves undefined supplemental u codes, no numeric detection threshold, unresolved strains and final iron concentration, HF/non-HF denominator differences and the absence of a recovered Ta product. It does not generalize this null to all microbial processing.
+
+## Scope And Provenance
+
+All scientific and provenance fields of the frozen tantalum record, with primary-assay and dated-authority grounding.
+
+Selection: Assigned named record; no sampling. Companion element and deferred leads are context only.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6ea63a8c98e22fd3c6794b17c77f7909c3b851a2.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:tantalum | data/records/tantalum.yaml | maintained | Tantalum |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Reviewer-executed named validation | passed | True | cmmmech:tantalum | Session 24661 terminal exit 0; 2 records checked, 0 failed. |
+| Parent-run full native batch gate | passed | True | cmmmech:tantalum | Parent session 84281 terminal exit 0. Reviewer independently read complete log: lint passed; 307 passed, 3 skipped in 64.75 seconds; 61 records and 72 histories passed. |
+| Parent-run nonempty corpus validation | passed | True | cmmmech:tantalum | Parent session 20894 terminal exit 0. Reviewer read complete log: 61 records checked, 0 failed. |
+| Parent-run append-only history gate | passed | True | cmmmech:tantalum | Parent session 33751 terminal exit 0. Reviewer read complete log: 72 history records checked, 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Element identity and dated commodity criticality
+
+identity: supported. Targets: cmmmech:tantalum.
+
+The record keeps the element separate from experimental feed, ions, minerals and recovered products. Named jurisdiction, authority, list and edition are explicit.
+
+### Assay-specific unsuccessful acidophile mobilization
+
+evidence: supported. Targets: cmmmech:tantalum.
+
+The record accurately describes the tested living consortium and uses refute for efficient Ta solubilization under these conditions, not for every possible microbial process.
+
+### Nondetection is not quantified zero recovery
+
+quantity: supported. Targets: cmmmech:tantalum.
+
+No measured zero concentration, quantified Ta recovery, enrichment factor or detection threshold is invented.
+
+### Limits of null interpretation and contradictory lead
+
+consistency: supported. Targets: cmmmech:tantalum.
+
+The 2022 null is confined to its feed and protocol. The unresolved 2023 lead does not negate that observation, and the record explicitly excludes universal impossibility.
+
+Base-metal mobilization is not itself an assayed Ta enrichment/purity or product mass balance. Figure 12 and S6 directly concern capacitor scrap; Table 3 concerns PCBs and is not used to supply its Ta outcome. The fungal ten/twenty-day discrepancy belongs to a separate assay and is not silently assigned to the ten-day bacterial protocol.
+
+### Laboratory non-detection versus recovered tantalum
+
+scope: supported. Targets: cmmmech:tantalum.
+
+The paper discussion of upscaling is kept separate from demonstrated deployment or isolated Ta product.
+
+### Actual CREATE history and reviewed bytes
+
+provenance: supported. Targets: cmmmech:tantalum.
+
+Canonical CREATE sidecar actor codex/GPT-6/codex, target, actual timestamp and issue42 link agree with the separate inline event. Structural gates passed. The reviewer made no record/history/dossier changes.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/tantalum.yaml; Entire frozen record; canonical CREATE sidecar; round10-nb-ta MD and JSON dossier; schema | supports | Inputs were captured before judgment with inspect and hashes rechecked before saving. I authored only the separate B/F pair, not the Nb/Ta records, histories or dossiers. |
+| identity | https://www.ebi.ac.uk/chebi/CHEBI:33348; Official ChEBI name, formula, charge and synonym fields | supports | Live official page independently resolved CHEBI:33348 as tantalum atom, formula Ta, net charge 0. Retained official HTML and acquisition hash also agree. Element identity is distinct from ions, host minerals and mixed secondary feed. |
+| criticality | https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm; Final 2025 List of Critical Minerals; title/date; commodity table Tantalum row; page 50497 | supports | Live GovInfo notice independently checked against the retained HTML. US Department of the Interior/USGS, final 2025 edition published 7 November 2025, 90 FR 50494–50497, lists Tantalum. The Yes/No column is byproduct status, not the criticality designation; waste feeds do not automatically inherit element criticality. |
+| validation | /private/tmp/cmm-round10-batch-check.log; Complete parent batch, nonempty and history logs, plus reviewer named-validation.log | supports | Reviewer executed named validation (2 checked, 0 failed; session 24661 terminal 0). Parent executed the batch gates, whose complete logs and terminal receipts were read before this review was saved. The exact outcomes are in checks; structural validity does not establish scientific truth. |
+| search | Bounded web result sets and local science/provenance trees; First response sets for DOI correction, retraction, erratum and relevant conflicting-evidence queries; hidden/ignored-inclusive deduplication | context_only | No corresponding correction/retraction/erratum notice was returned in the inspected first result sets. Local exact identifiers and primary DOIs matched the two new maintained records and their histories/dossiers. This is not an exhaustive absence claim. |
+| primary | https://doi.org/10.3390/ijerph191610006; Sikander et al. 2022; PMC9408593.1 full JATS and primary PDF; Methods 2.1–2.3.2, Results, Discussion 4.3; Table 1 and Figures 12–14 visually | supports | Primary methods and results were independently read. The acidophile capacitor assay is a ten-day, triplicate 2% w/v experiment. Section 4.3 explicitly reports Ta nondetection and Figure 12 supplies no Ta mobilization bar. Method details, analytical denominator and limits in the record agree. Live PMC HTML was challenged; retained full JATS/PDF were successfully inspected with matching receipts. |
+| supplement | https://www.mdpi.com/article/10.3390/ijerph191610006/s1; Complete extracted ijerph-1818908-supplementary.pdf; all data-bearing pages 2–5 visually; Tables S1–S7 | supports | The two capacitor rows of S6 have Ta concentration u and percentage 0. No legend defines u or numeric detection limit. S1 is composition without HF rather than a calibration/LOD validation. S7 fungal experiments are separate contextual nulls; the reviewed record admits only the acidophile assay. Both source ZIP archives passed CRC verification. |
+| counterlead | https://doi.org/10.1007/s11356-023-26592-3; UWS institutional abstract; https://research-portal.uws.ac.uk/en/publications/hybrid-leaching-of-tantalum-and-other-valuable-metals-from-tantal/ | context_only | Independent abstract reading confirms a reported nonsterile positive Ta arm and a proposed hybrid process, so a universal impossibility claim would be unjustified. The accepted-manuscript route returned HTTP 503 on the reviewer retry. Full 2023 methods, controls, results, figures and product-purity claim were not verified, and no new measurement/mechanism was imported. |
+
+## Limits And Additional Notes
+
+- No numeric Ta detection limit, definition of supplemental u, raw ICP-OES calibration or closed Ta mass balance is available in the inspected full article/supplement.
+- Exact strains, relative consortium abundance, final capacitor-assay ferrous concentration, feed sterility and residual Ta chemical form remain unresolved.
+- The 2023 positive nonsterile/hybrid lead was reviewed at institutional abstract level only; the reviewer manuscript retry returned 503. Its full controls, purity and process execution require future primary review.
+- Live PMC HTML was challenged. Complete retained JATS and primary PDF were independently inspected and their acquisition hashes verified.
+- Correction/retraction and conflicting-evidence queries covered first result sets only, with no complete citation graph, proprietary database or author-contact audit. The verdict applies to the exact frozen target hash.
+- No record, history or dossier edits were made by this independent reviewer. No corrective issue is invented where no actionable defect is established.
+- Fifteen acquisition hashes matched the curator receipts; both complete Ta asset/supplement ZIP archives passed CRC. Raw literature remains outside Git; challenge/failed downloads are not treated as full text.
+- Parent ran the shared batch/nonempty/history gates; this reviewer independently read their complete logs and terminal receipts. Named Nb/Ta validation was executed by this reviewer.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T073221Z-tantalum-round10-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of the tantalum round10 record
+started_at: '2026-10-11T07:27:20Z'
+finished_at: '2026-10-11T07:32:21Z'
+reviewer:
+  identity: Codex /root/cmm10_b_f
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: This reviewer authored only the separate boron/fluorine pair.
+    It did not author or edit Nb/Ta records, histories or dossiers. inspect captured
+    frozen inputs before judgment; primary methods, results, numerical tables and
+    relevant figures/supplement were read independently, authorities resolved and
+    hashes verified.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The element identity, dated US criticality and assay-specific Ta nondetection
+  are supported. The record preserves undefined supplemental u codes, no numeric detection
+  threshold, unresolved strains and final iron concentration, HF/non-HF denominator
+  differences and the absence of a recovered Ta product. It does not generalize this
+  null to all microbial processing.
+source:
+  git_revision: 6ea63a8c98e22fd3c6794b17c77f7909c3b851a2
+  state: working_tree
+  inputs:
+  - path: data/records/tantalum.yaml
+    sha256: 85c5bca4825c683ebbf4744bd899753c7dbd60808aaae47551645ab77a442383
+    role: target
+  - path: history/records/tantalum/2026-10-11T072423Z-codex-c5c953.yaml
+    sha256: da9fc4efed2b19678e0609bb400ffa3fe2185ea71a68c47773e4d546f4c8128e
+    role: context
+  - path: research/ingests/round10-nb-ta-20261011.json
+    sha256: 56533c9017431f4367d034c1d92f133f1b63ad075043a561a154304dc7926525
+    role: context
+  - path: research/ingests/round10-nb-ta-20261011.md
+    sha256: 3f694826f74209e573c5bf3abca553243f6f8a6e0d21964347d90fb62ee3bc2f
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+targets:
+- target_id: cmmmech:tantalum
+  path: data/records/tantalum.yaml
+  label: Tantalum
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/tantalum.yaml
+    role: maintained_record
+scope:
+  description: All scientific and provenance fields of the frozen tantalum record,
+    with primary-assay and dated-authority grounding.
+  selection: Assigned named record; no sampling. Companion element and deferred leads
+    are context only.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:tantalum
+checks:
+- check_id: record
+  name: Reviewer-executed named validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/niobium.yaml data/records/tantalum.yaml
+  status: passed
+  required: true
+  summary: Session 24661 terminal exit 0; 2 records checked, 0 failed.
+  scope_note: Reviewer execution; /private/tmp/cmm-round10-b-f-review/named-validation.log.
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+  target_ids:
+  - cmmmech:tantalum
+- check_id: batch
+  name: Parent-run full native batch gate
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  status: passed
+  required: true
+  summary: 'Parent session 84281 terminal exit 0. Reviewer independently read complete
+    log: lint passed; 307 passed, 3 skipped in 64.75 seconds; 61 records and 72 histories
+    passed.'
+  scope_note: Parent execution; /private/tmp/cmm-round10-batch-check.log.
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+  target_ids:
+  - cmmmech:tantalum
+- check_id: nonempty
+  name: Parent-run nonempty corpus validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: 'Parent session 20894 terminal exit 0. Reviewer read complete log: 61 records
+    checked, 0 failed.'
+  scope_note: Parent execution; /private/tmp/cmm-round10-batch-validation.log.
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+  target_ids:
+  - cmmmech:tantalum
+- check_id: history
+  name: Parent-run append-only history gate
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate-history --base 6ea63a8c98e22fd3c6794b17c77f7909c3b851a2
+  status: passed
+  required: true
+  summary: 'Parent session 33751 terminal exit 0. Reviewer read complete log: 72 history
+    records checked, 0 errors.'
+  scope_note: Parent execution; /private/tmp/cmm-round10-batch-history.log. Reviewer
+    independently checked named sidecar and inline-event provenance.
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+  target_ids:
+  - cmmmech:tantalum
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/tantalum.yaml
+  locator: Entire frozen record; canonical CREATE sidecar; round10-nb-ta MD and JSON
+    dossier; schema
+  accessed_at: '2026-10-11T07:32:21Z'
+  support: supports
+  summary: Inputs were captured before judgment with inspect and hashes rechecked
+    before saving. I authored only the separate B/F pair, not the Nb/Ta records, histories
+    or dossiers.
+  snapshot_sha256: 85c5bca4825c683ebbf4744bd899753c7dbd60808aaae47551645ab77a442383
+- evidence_id: identity
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:33348
+  locator: Official ChEBI name, formula, charge and synonym fields
+  accessed_at: '2026-10-11T07:32:21Z'
+  support: supports
+  summary: Live official page independently resolved CHEBI:33348 as tantalum atom,
+    formula Ta, net charge 0. Retained official HTML and acquisition hash also agree.
+    Element identity is distinct from ions, host minerals and mixed secondary feed.
+  snapshot_sha256: f949782100edb0f00d40e3587629a348a3e8fdc94b59d135e3e2a73c038c51d7
+- evidence_id: criticality
+  kind: authority
+  reference: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  locator: Final 2025 List of Critical Minerals; title/date; commodity table Tantalum
+    row; page 50497
+  accessed_at: '2026-10-11T07:32:21Z'
+  support: supports
+  summary: Live GovInfo notice independently checked against the retained HTML. US
+    Department of the Interior/USGS, final 2025 edition published 7 November 2025,
+    90 FR 50494–50497, lists Tantalum. The Yes/No column is byproduct status, not
+    the criticality designation; waste feeds do not automatically inherit element
+    criticality.
+  snapshot_sha256: 28f0e44fc0ae7af963cb532fc6f545641fcda533f604a1aeeeab308f40be0182
+- evidence_id: validation
+  kind: validation
+  reference: /private/tmp/cmm-round10-batch-check.log
+  locator: Complete parent batch, nonempty and history logs, plus reviewer named-validation.log
+  accessed_at: '2026-10-11T07:32:21Z'
+  support: supports
+  summary: Reviewer executed named validation (2 checked, 0 failed; session 24661
+    terminal 0). Parent executed the batch gates, whose complete logs and terminal
+    receipts were read before this review was saved. The exact outcomes are in checks;
+    structural validity does not establish scientific truth.
+  snapshot_sha256: c970037f4ae6a74f535aa2fa7d12ba6896a6cea372c7818e79dc11144cc58aed
+- evidence_id: search
+  kind: search
+  reference: Bounded web result sets and local science/provenance trees
+  locator: First response sets for DOI correction, retraction, erratum and relevant
+    conflicting-evidence queries; hidden/ignored-inclusive deduplication
+  accessed_at: '2026-10-11T07:32:21Z'
+  support: context_only
+  summary: No corresponding correction/retraction/erratum notice was returned in the
+    inspected first result sets. Local exact identifiers and primary DOIs matched
+    the two new maintained records and their histories/dossiers. This is not an exhaustive
+    absence claim.
+  search_scope: 'Executed 11 October 2026 with web.run, no filters or pagination:
+    "10.24425/aep.2019.128643" correction retraction; "10.3390/ijerph191610006" correction
+    retraction; both exact DOIs with erratum; niobium activated sludge ash bioleaching
+    2019 conflicting release control; "10.1007/s11356-023-26592-3" tantalum. Official
+    publisher and institutional pages were distinguished from aggregator leads. Local
+    rg --no-ignore --hidden --follow searched exact CMM IDs, ChEBI IDs and DOIs in
+    data/records, research, reviews, history, /private/tmp/cmm-round10-nb-ta-raw,
+    /private/tmp/cmm-next-eu and /private/tmp/cmm-expansion-authorities-20261011;
+    ignored files included. find found no symlinks in those repository science/provenance
+    trees. Binary PDF completeness is not inferred from regex; accepted figures/text
+    were inspected directly.'
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/ijerph191610006
+  locator: Sikander et al. 2022; PMC9408593.1 full JATS and primary PDF; Methods 2.1–2.3.2,
+    Results, Discussion 4.3; Table 1 and Figures 12–14 visually
+  accessed_at: '2026-10-11T07:32:21Z'
+  support: supports
+  summary: Primary methods and results were independently read. The acidophile capacitor
+    assay is a ten-day, triplicate 2% w/v experiment. Section 4.3 explicitly reports
+    Ta nondetection and Figure 12 supplies no Ta mobilization bar. Method details,
+    analytical denominator and limits in the record agree. Live PMC HTML was challenged;
+    retained full JATS/PDF were successfully inspected with matching receipts.
+  snapshot_sha256: da71afd6f5be7e68edd2855945ae5e4902c31ddd8a265bcaa28c025fd7f0a66c
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://www.mdpi.com/article/10.3390/ijerph191610006/s1
+  locator: Complete extracted ijerph-1818908-supplementary.pdf; all data-bearing pages
+    2–5 visually; Tables S1–S7
+  accessed_at: '2026-10-11T07:32:21Z'
+  support: supports
+  summary: The two capacitor rows of S6 have Ta concentration u and percentage 0.
+    No legend defines u or numeric detection limit. S1 is composition without HF rather
+    than a calibration/LOD validation. S7 fungal experiments are separate contextual
+    nulls; the reviewed record admits only the acidophile assay. Both source ZIP archives
+    passed CRC verification.
+  snapshot_sha256: f097061d64f2fc5718e0bca3171f112082a4ca3dbf6cc0d1b1345becff36b2b9
+- evidence_id: counterlead
+  kind: primary_source
+  reference: https://doi.org/10.1007/s11356-023-26592-3
+  locator: UWS institutional abstract; https://research-portal.uws.ac.uk/en/publications/hybrid-leaching-of-tantalum-and-other-valuable-metals-from-tantal/
+  accessed_at: '2026-10-11T07:32:21Z'
+  support: context_only
+  summary: Independent abstract reading confirms a reported nonsterile positive Ta
+    arm and a proposed hybrid process, so a universal impossibility claim would be
+    unjustified. The accepted-manuscript route returned HTTP 503 on the reviewer retry.
+    Full 2023 methods, controls, results, figures and product-purity claim were not
+    verified, and no new measurement/mechanism was imported.
+assessments:
+- assessment_id: identity-grounding
+  area: identity
+  topic: Element identity and dated commodity criticality
+  outcome: supported
+  summary: The record keeps the element separate from experimental feed, ions, minerals
+    and recovered products. Named jurisdiction, authority, list and edition are explicit.
+  target_ids:
+  - cmmmech:tantalum
+  evidence_ids:
+  - record
+  - identity
+  - criticality
+  dimensions:
+  - name: material-form
+    value: Element Tantalum; CHEBI:33348
+    definition: Neutral atom authority grounds element identity, not the assay oxidation
+      state or phase.
+    evidence_ids:
+    - identity
+    - record
+  - name: criticality
+    value: United States; DOI/USGS Final 2025 List; 7 November 2025; 90 FR 50494–50497
+    definition: Edition-scoped commodity inclusion; Tantalum row on page 50497.
+    evidence_ids:
+    - criticality
+- assessment_id: assay
+  area: evidence
+  topic: Assay-specific unsuccessful acidophile mobilization
+  outcome: supported
+  summary: The record accurately describes the tested living consortium and uses refute
+    for efficient Ta solubilization under these conditions, not for every possible
+    microbial process.
+  target_ids:
+  - cmmmech:tantalum
+  evidence_ids:
+  - record
+  - primary
+  - supplement
+  dimensions:
+  - name: organism
+    value: Mixed Acidithiobacillus ferrooxidans, Leptospirillum ferrooxidans and Acidithiobacillus
+      thiooxidans
+    definition: Primary paper names species but supplies no strain accessions, relative
+      composition or causal member tests; no consortium taxon CURIE is assigned.
+    evidence_ids:
+    - primary
+  - name: biomass-state
+    value: Actively growing, preactivated mixed acidophile culture
+    definition: Distinct from A. niger cell-free filtrate and spore assays also in
+      the paper.
+    evidence_ids:
+    - primary
+  - name: feed
+    value: Visually identified surface-mounted capacitor scrap from spent phones;
+      ground 0.5/0.75 mm fractions
+    definition: Secondary resource is not a tantalum mineral; bulk HF digest has 292.5
+      g Ta/kg (SD 2.32), not a phase identity.
+    evidence_ids:
+    - primary
+  - name: pretreatment
+    value: Manual removal and cutting-mill grinding; active culture grown in modified
+      9K with sulfur/ferrous sulfate
+    definition: Feed sterility and final capacitor-assay iron concentration remain
+      unresolved; record preserves ambiguous sterilization sentence.
+    evidence_ids:
+    - primary
+  - name: conditions
+    value: 250 mL flasks; 100 mL culture; 2% w/v feed; 30 C,150 rpm,10 days; pH maintained
+      at 1.8 with 10% v/v H2SO4
+    definition: Liquor sampled every second day through 0.45 micrometre syringe filter;
+      sampling/evaporation replaced with sterile water.
+    evidence_ids:
+    - primary
+  - name: controls
+    value: Triplicate flask experiments and non-inoculated medium controls
+    definition: Acid maintenance and iron supplementation do not isolate each species
+      or an enzymatic cause.
+    evidence_ids:
+    - primary
+- assessment_id: quantity
+  area: quantity
+  topic: Nondetection is not quantified zero recovery
+  outcome: supported
+  summary: No measured zero concentration, quantified Ta recovery, enrichment factor
+    or detection threshold is invented.
+  target_ids:
+  - cmmmech:tantalum
+  evidence_ids:
+  - record
+  - primary
+  - supplement
+  dimensions:
+  - name: outcome
+    value: 'Section 4.3: Ta not detected; Figure 12 has no Ta bar; Table S6: u concentration
+      and 0 percentage for both capacitor fractions'
+    definition: Source reporting is preserved, but u is undefined and numerical limit
+      missing; lack of a plotted bar does not prove absolute absence.
+    evidence_ids:
+    - primary
+    - supplement
+  - name: denominator
+    value: Table 1 Ta 292.5 g/kg with HF-containing microwave digestion; S1 non-HF
+      composition
+    definition: Different digestions cannot supply interchangeable total-Ta denominators.
+      S1 provides no numerical LOD/calibration study despite the Methods citation.
+    evidence_ids:
+    - primary
+    - supplement
+- assessment_id: limits
+  area: consistency
+  topic: Limits of null interpretation and contradictory lead
+  outcome: supported
+  summary: The 2022 null is confined to its feed and protocol. The unresolved 2023
+    lead does not negate that observation, and the record explicitly excludes universal
+    impossibility.
+  target_ids:
+  - cmmmech:tantalum
+  evidence_ids:
+  - record
+  - primary
+  - supplement
+  - counterlead
+  details: Base-metal mobilization is not itself an assayed Ta enrichment/purity or
+    product mass balance. Figure 12 and S6 directly concern capacitor scrap; Table
+    3 concerns PCBs and is not used to supply its Ta outcome. The fungal ten/twenty-day
+    discrepancy belongs to a separate assay and is not silently assigned to the ten-day
+    bacterial protocol.
+- assessment_id: scope
+  area: scope
+  topic: Laboratory non-detection versus recovered tantalum
+  outcome: supported
+  summary: The paper discussion of upscaling is kept separate from demonstrated deployment
+    or isolated Ta product.
+  target_ids:
+  - cmmmech:tantalum
+  evidence_ids:
+  - record
+  - primary
+  dimensions:
+  - name: deployment
+    value: Laboratory flask assay only
+    definition: Remaining solids were not characterized as a purified Ta product in
+      the admitted assay.
+    evidence_ids:
+    - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Actual CREATE history and reviewed bytes
+  outcome: supported
+  summary: Canonical CREATE sidecar actor codex/GPT-6/codex, target, actual timestamp
+    and issue42 link agree with the separate inline event. Structural gates passed.
+    The reviewer made no record/history/dossier changes.
+  target_ids:
+  - cmmmech:tantalum
+  evidence_ids:
+  - record
+  - validation
+  dimensions:
+  - name: reviewed-state
+    value: Working tree against trusted base 6ea63a8c98e22fd3c6794b17c77f7909c3b851a2
+    definition: Uncommitted bytes are bound by exact inspected SHA-256 values, not
+      claimed as already committed.
+    evidence_ids:
+    - record
+  - name: history
+    value: history/records/tantalum/2026-10-11T072423Z-codex-c5c953.yaml
+    definition: Actual CREATE sidecar; later inline event is distinct; review does
+      not append/backdate curation.
+    evidence_ids:
+    - record
+findings: []
+actions: []
+limitations:
+- No numeric Ta detection limit, definition of supplemental u, raw ICP-OES calibration
+  or closed Ta mass balance is available in the inspected full article/supplement.
+- Exact strains, relative consortium abundance, final capacitor-assay ferrous concentration,
+  feed sterility and residual Ta chemical form remain unresolved.
+- The 2023 positive nonsterile/hybrid lead was reviewed at institutional abstract
+  level only; the reviewer manuscript retry returned 503. Its full controls, purity
+  and process execution require future primary review.
+- Live PMC HTML was challenged. Complete retained JATS and primary PDF were independently
+  inspected and their acquisition hashes verified.
+- Correction/retraction and conflicting-evidence queries covered first result sets
+  only, with no complete citation graph, proprietary database or author-contact audit.
+  The verdict applies to the exact frozen target hash.
+notes:
+- No record, history or dossier edits were made by this independent reviewer. No corrective
+  issue is invented where no actionable defect is established.
+- Fifteen acquisition hashes matched the curator receipts; both complete Ta asset/supplement
+  ZIP archives passed CRC. Raw literature remains outside Git; challenge/failed downloads
+  are not treated as full text.
+- Parent ran the shared batch/nonempty/history gates; this reviewer independently
+  read their complete logs and terminal receipts. Named Nb/Ta validation was executed
+  by this reviewer.
+```

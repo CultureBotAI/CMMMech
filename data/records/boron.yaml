@@ -1,0 +1,120 @@
+id: cmmmech:boron
+name: Boron
+material_kind: element
+description: >-
+  The element B, distinct from boric acid, borate ions, borate mineral species
+  and commercial borates. The unqualified boron entry in Annex II of the
+  original EU 2024 critical-raw-materials regulation is mapped to this element;
+  the separately metallurgy-qualified strategic entry is not broadened here.
+identifiers:
+  - id: CHEBI:27560
+    label: boron atom
+sources:
+  - id: chebi_boron
+    title: 'ChEBI:27560 - boron atom; formula B, charge 0'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:27560
+    accessed_on: '2026-10-11'
+  - id: eu_2024_original
+    title: >-
+      European Parliament and Council, Regulation (EU) 2024/1252 of
+      11 April 2024, original Official Journal text published 3 May 2024;
+      Annex II section 1(g), boron; contrasted with Annex I section 1(c),
+      boron - metallurgy grade.
+    url: https://eur-lex.europa.eu/eli/reg/2024/1252/oj
+    accessed_on: '2026-10-11'
+  - id: moraga_2017
+    title: >-
+      Moraga, Irazusta, Amoroso and Rajal (2017). Bio-precipitates produced
+      by two autochthonous boron tolerant Streptomyces strains.
+      Journal of Environmental Chemical Engineering 5:3373-3383.
+      DOI 10.1016/j.jece.2017.06.044; PMC5828252 author manuscript.
+      Sections 2.1-2.5 and 3.1-3.3, Figures 1-9 and Tables 1-2.
+    url: https://doi.org/10.1016/j.jece.2017.06.044
+    accessed_on: '2026-10-11'
+  - id: ncbi_streptomyces
+    title: 'NCBI Taxonomy 1883 - Streptomyces; genus, not a strain identifier'
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1883&mode=Info
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: European Union
+    list_name: Regulation (EU) 2024/1252, Annex II, critical raw materials
+    edition: 'Original OJ text of 3 May 2024; Annex II section 1(g)'
+    classification: critical
+    source_ref: eu_2024_original
+mechanisms:
+  - id: streptomyces_boron_accretions
+    name: Culture-associated boron-bearing accretions in Streptomyces cultures
+    process: other
+    description: >-
+      Cultures reported as Streptomyces sp. 053 and Streptomyces sp. 128
+      contained extracellular accretions with boron and oxygen signals after
+      growth with boric acid. This supports an association of boron-bearing
+      solids with the prepared culture material. Biologically induced
+      precipitation is a proposed interpretation; a specific mineral phase,
+      metabolic necessity and recovery of elemental boron are not established.
+    context: >-
+      Laboratory isolates from boron-containing soils in Salta, Argentina;
+      strain labels are retained without assigning a species or strain-level
+      taxonomy ID. For microscopy, living cultures were grown for 72 h at
+      30 degrees C and 250 rpm in minimal medium with nominal 20 or 40 mM
+      boric acid. Medium contained glucose 10 g/L, L-asparagine 0.5 g/L,
+      K2HPO4 0.5 g/L, MgSO4.7H2O 0.20 g/L and FeSO4.7H2O 0.01 g/L.
+      Boric acid was sterilized separately; the reported post-addition pH
+      values were 5.58 and 5.44. Culture methods used 650 microliters of
+      pregrown inoculum added to 20 mL medium in 100 mL flasks. Pellets were
+      fixed with glutaraldehyde, dehydrated through ethanol, critical-point
+      dried and gold/palladium coated before SEM-EDS. Controls contained
+      growing cells without added boric acid. A matched uninoculated
+      boric-acid medium taken through the same preparation was not described.
+      This is a liquid-culture observation, not a demonstrated soil treatment
+      or industrial deployment.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:1883
+        label: Streptomyces
+    evidence:
+      - source_ref: moraga_2017
+        supports: support
+        explanation: >-
+          Section 3.2 and Figure 3 show accretions in boric-acid cultures of
+          both strains compared with no-boric-acid culture controls. Figure 4
+          and Table 2 report B and O in selected accretions: strain 053 at
+          nominal 20 mM and strain 128 at nominal 40 mM. These observations
+          support the narrow culture-associated solid-material claim; they
+          do not localize intracellular uptake or measure an isolated yield.
+      - source_ref: moraga_2017
+        supports: partial
+        explanation: >-
+          Table 2 calls its composition atomic percentage while its column
+          is labeled Weight (%), and expresses a calculated composition as
+          oxides including B2O3. No diffraction-based phase determination is
+          reported. The oxide calculation is not evidence of pure boron
+          oxide, and morphology plus EDS cannot distinguish all possible
+          borate phases or preparation-associated deposits. Raw solid boric
+          acid compared in Figures 6-7 is not a processed abiotic-medium
+          control. The protein bands in Figures 8-9 were not identified and
+          do not demonstrate a transporter or causal precipitation pathway.
+      - source_ref: moraga_2017
+        supports: partial
+        explanation: >-
+          Solution depletion in Section 3.1 and Table 1 was estimated using
+          azomethine-H colorimetry of 0.45-micrometer filtrates. The Figure 1 caption
+          labels nominal 20 and 40 mM boric acid as 1.22 and 2.78 mg/L,
+          inconsistent with those molar concentrations; the plotted axis instead
+          carries a factor of 10^3. The specified stock
+          additions and final volume also do not reproduce the nominal doses
+          exactly; the 0.25-2 mg/L calibration description does not document
+          the sample dilution needed to reconcile the scales. Accordingly,
+          no removal percentage or capacity is adopted here. Duplicate
+          culture sampling and duplicate analyses are described, but no
+          quantitative solid-phase mass balance connects solution loss to
+          the selected accretions. Nominal doses and source discrepancies
+          remain explicit rather than being silently corrected.
+curation_history:
+  - timestamp: '2026-10-11T07:25:31Z'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Created elemental boron identity, original EU2024 criticality and qualitative culture-associated B-bearing solids evidence; preserved dosing, calibration, phase and abiotic-control limitations.
+history_refs:
+  - history/records/boron/2026-10-11T072436Z-codex-b9ef43.yaml

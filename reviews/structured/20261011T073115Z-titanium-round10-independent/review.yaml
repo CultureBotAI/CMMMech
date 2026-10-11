@@ -1,0 +1,339 @@
+schema_version: 1.0.0
+review_id: 20261011T073115Z-titanium-round10-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of titanium
+started_at: '2026-10-11T07:26:21Z'
+finished_at: '2026-10-11T07:31:15Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root curated natural graphite only in this batch. A different
+    agent authored the Ti/Zr records, histories and dossier. Root captured exact working-tree
+    hashes before judgment and independently inspected primary text, relevant figures/supplement
+    and authorities.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The element identity, dated designation and laboratory oxide-film transformation
+  are supported. The record preserves separate assay arms, fitted-current outcomes,
+  missing protocol parameters and spectral/control uncertainty; no actionable defect
+  was found.
+source:
+  git_revision: 6ea63a8c98e22fd3c6794b17c77f7909c3b851a2
+  state: working_tree
+  inputs:
+  - path: data/records/titanium.yaml
+    sha256: 4705897961d928c731f7b5abda41660c46fdba14aebc9ada2d4738d61ba6413a
+    role: target
+  - path: history/records/titanium/2026-10-11T072403Z-codex-e6ce1c.yaml
+    sha256: 807b06930f8f93e17fb6168c7af94b1393a001952a9aaac5962cb6429a7c9221
+    role: context
+  - path: research/ingests/round10-ti-zr-20261011.json
+    sha256: 84d082084c8a9f4c66d27edd13a5523591ceec6b17f6598a7804ddd79afba0ab
+    role: context
+  - path: research/ingests/round10-ti-zr-20261011.md
+    sha256: c799965fea07a05529db787592dcfe31e383d86549634f7b0a7c1b3845abe6b0
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+targets:
+- target_id: cmmmech:titanium
+  path: data/records/titanium.yaml
+  label: Titanium
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/titanium.yaml
+    role: maintained_record
+scope:
+  description: All scientific and provenance fields of the named frozen record.
+  selection: Assigned named record, no sampling. Other studies are bounded context
+    only.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:titanium
+checks:
+- check_id: record
+  name: Record validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/titanium.yaml data/records/zirconium.yaml
+  status: passed
+  required: true
+  summary: Reviewer/root executed; terminal exit0. 2 records; 0 failed
+  scope_note: /private/tmp/cmm-round10-tizr-review/named-validation.log
+  target_ids:
+  - cmmmech:titanium
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: batch
+  name: Batch validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  status: passed
+  required: true
+  summary: Reviewer/root executed; terminal exit0. 307 passed, 3 skipped; 61 records
+    and 72 histories valid
+  scope_note: /private/tmp/cmm-round10-batch-check.log
+  target_ids:
+  - cmmmech:titanium
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: nonempty
+  name: Nonempty validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Reviewer/root executed; terminal exit0. 61 records; 0 failed
+  scope_note: /private/tmp/cmm-round10-batch-validation.log
+  target_ids:
+  - cmmmech:titanium
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: history
+  name: History validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate-history --base 6ea63a8c98e22fd3c6794b17c77f7909c3b851a2
+  status: passed
+  required: true
+  summary: Reviewer/root executed; terminal exit0. 72 history records; 0 errors
+  scope_note: /private/tmp/cmm-round10-batch-history.log
+  target_ids:
+  - cmmmech:titanium
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/titanium.yaml
+  locator: Entire frozen record, its actual CREATE sidecar, schema and both round10
+    Ti/Zr dossiers
+  accessed_at: '2026-10-11T07:31:15Z'
+  support: supports
+  summary: All five input hashes captured before assessment still match. Root authored
+    the separate natural-graphite record and did not author or alter either reviewed
+    element record or its dossier.
+  snapshot_sha256: 4705897961d928c731f7b5abda41660c46fdba14aebc9ada2d4738d61ba6413a
+- evidence_id: identity
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:33341
+  locator: Official identifier, label, formula and net charge
+  accessed_at: '2026-10-11T07:31:15Z'
+  support: supports
+  summary: Live authority and retained HTML resolve titanium atom, neutral element
+    identity; not its ion, oxide, mineral or metal commodity.
+  snapshot_sha256: 27d6a2da4df501b711ccbfaaceae9644a0c19f81f9123fbdf7ee1f007cd678ce
+- evidence_id: criticality
+  kind: authority
+  reference: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  locator: Title/date and final 2025 table, page 50497
+  accessed_at: '2026-10-11T07:31:15Z'
+  support: supports
+  summary: Live official notice and retained HTML list Titanium in the United States
+    Department of the Interior Final 2025 List of Critical Minerals, published 7 November
+    2025. Byproduct status in a separate column is not the criticality class. Element
+    mapping does not designate all compounds.
+  snapshot_sha256: aaf9c016b4ba145a98c54f20b37afe9aa5389e6a23ba49a791943d3a3a325dcc
+- evidence_id: validation
+  kind: validation
+  reference: /private/tmp/cmm-round10-batch-check.log
+  locator: Complete batch, nonempty, history and reviewer named-validation logs
+  accessed_at: '2026-10-11T07:31:15Z'
+  support: supports
+  summary: 'Root executed all four checks and consumed terminal exit-0 receipts before
+    saving. Full gate: 307 passed, 3 skipped; 61 records and 72 histories. Separate
+    nonempty 61/0, trusted-base history 72/0, named Ti/Zr 2/0. Structural validity
+    is not scientific proof.'
+  snapshot_sha256: c970037f4ae6a74f535aa2fa7d12ba6896a6cea372c7818e79dc11144cc58aed
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round10-tizr-review/counter.json
+  locator: Exact DOI/title correction, retraction and mechanism counterevidence queries;
+    bounded local search
+  accessed_at: '2026-10-11T07:31:15Z'
+  support: context_only
+  summary: No matching correction/retraction notice surfaced in the inspected first
+    result sets. Ordinary OUP corrected-and-typeset metadata is not treated as a formal
+    correction notice. Relevant results were read at their appropriate scope.
+  search_scope: Web first-result sets for both exact DOIs with correction/retraction,
+    Microbially reduced flavins title, Shewanella algae titanium inhibition corrosion
+    and Streptomyces HC1 zirconium controls. Local rg --no-ignore --hidden --follow
+    for record IDs, ChEBI IDs and DOIs over data/records, research, reviews, history
+    and .claude; 37 lines inspected. Task raw directory inventoried including hidden/ignored
+    files. No machine-wide absence or exhaustive citation-network claim.
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1093/nsr/nwag426
+  locator: Li et al. 2026, full main PDF; Figures 1, 2 and 5 independently viewed;
+    Methods and Results
+  accessed_at: '2026-10-11T07:31:15Z'
+  support: supports
+  summary: Independently read the full experimental text and inspected film-thickness
+    locations, three-replicate electrochemical results, riboflavin perturbations,
+    reused abiotic XPS control and 84.2 versus 80.6 percent TiO2 labels. DFT predictions,
+    abiotic flavin chemistry and living-culture assays are distinct.
+  snapshot_sha256: 556eb3d6d0493270e5a009de4ee97f21a6ab46480ba3696064b297a267a79bdc
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://doi.org/10.1093/nsr/nwag426
+  locator: Complete 14-page supplement text; visually inspected S1, S2, S7 and S9;
+    methods pages 12–14
+  accessed_at: '2026-10-11T07:31:15Z'
+  support: supports
+  summary: Supplement confirms changing pH, comparative XPS protocol and acknowledged
+    fitting/charging/sputter uncertainties, abiotic reduced-flavin assay and anaerobic
+    electrochemical curves. CRISPRi construction is described without a corresponding
+    outcome. No incubation temperature, starting density, lactate dose or riboflavin
+    amendment dose is specified in the inspected full main/supplement.
+  snapshot_sha256: c240a3bd9e9a9c6f3291a1dc5bfc6b1ceb28cb99687b39a3f008203a2fe9a00c
+- evidence_id: taxon
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=38313&mode=Info
+  locator: Official species node
+  accessed_at: '2026-10-11T07:31:15Z'
+  support: supports
+  summary: Live NCBI taxonomy identifies Shewanella algae at species rank. It does
+    not resolve MCC 1A11468 as a separate strain node.
+  snapshot_sha256: f81a042bd7cbfee745eb007c8fa1be21814f5bffeb6e8981caaaa96c5c7e46be
+- evidence_id: context
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.corsci.2024.112400
+  locator: Related primary study metadata and abstract
+  accessed_at: '2026-10-11T07:31:15Z'
+  support: context_only
+  summary: Oxygen-dependent titanium corrosion is relevant conditional context, not
+    a matched replication or refutation of the 2026 locally anoxic biofilm experiment.
+    No 2024 temperature/inoculum settings are transferred to the 2026 record. Root
+    did not independently audit all 2024 figures or supplements.
+assessments:
+- assessment_id: science
+  area: evidence
+  topic: Material identity, evidence boundaries and experimental interpretation
+  outcome: supported
+  summary: The element identity, dated designation and laboratory oxide-film transformation
+    are supported. The record preserves separate assay arms, fitted-current outcomes,
+    missing protocol parameters and spectral/control uncertainty; no actionable defect
+    was found.
+  target_ids:
+  - cmmmech:titanium
+  evidence_ids:
+  - record
+  - identity
+  - criticality
+  - validation
+  - search
+  - primary
+  - supplement
+  - taxon
+  - context
+  dimensions:
+  - name: material-form
+    value: Element titanium; CHEBI:33341
+    definition: Neutral element record, separately from experimental feeds, products
+      and commodities
+    evidence_ids:
+    - identity
+    - record
+  - name: criticality
+    value: United States; Department of the Interior Final List of Critical Minerals;
+      2025 final edition, published 7 November 2025
+    definition: Named jurisdiction, list and edition, page 50497
+    evidence_ids:
+    - criticality
+  - name: organism
+    value: S. algae MCC 1A11468, as spelled by the source; NCBITaxon:38313 is species
+      only
+    definition: MR-1 supplied riboflavin genes for the RF construct, not a second
+      tested organism
+    evidence_ids:
+    - primary
+    - taxon
+  - name: biomass-state
+    value: Living cultured biofilms; wild type and riboflavin-overproducing RF
+    definition: Abiotic reduced-flavin experiment is a separate chemical assay
+    evidence_ids:
+    - primary
+    - supplement
+  - name: substrate-pretreatment
+    value: Commercially pure Ti, 10 mm by 3 mm; 0.785 cm2 exposed; 1000-grit finish,
+      ethanol/water cleaning, 30-minute UV
+    definition: Pre-existing passive oxide on laboratory coupons
+    evidence_ids:
+    - primary
+  - name: conditions
+    value: 2216E initially pH 7.2 +/- 0.2; aerobic-bulk assays up to 21 days; separate
+      anaerobic lactate/seawater Fig.5 arm, nitrogen at least 30 minutes
+    definition: Temperature, starting density and amendment concentrations remain
+      unspecified; pH changes
+    evidence_ids:
+    - primary
+    - supplement
+  - name: controls
+    value: Uninoculated Ti controls, WT/RF/riboflavin perturbations; Fig.5g reuses
+      S2 abiotic XPS
+    definition: Not all molecular causes or separately matched anaerobic spectral
+      controls are established
+    evidence_ids:
+    - primary
+    - supplement
+  - name: outcome
+    value: 8.0 +/- 0.7 versus 5.9 +/- 0.5 nm film thickness at ten image locations;
+      roughly sixfold fitted corrosion-current increase at day21, n=3 independent
+      electrochemical replicates
+    definition: Location sampling is not ten independent cultures; cathodic Tafel
+      result is not dissolved Ti or recovered product yield
+    evidence_ids:
+    - primary
+  - name: deployment
+    value: Laboratory coupon oxide transformation and corrosion
+    definition: No isolated titanium product or industrial deployment demonstrated
+    evidence_ids:
+    - primary
+  details: Figure 1h labels abiotic TiO2 84.2% at 3 nm while Figure 5g labels 80.6%
+    despite referring to S2. The record retains the discrepancy. Abiotic riboflavin
+    control means differ graphically despite the textual no-effect claim. These are
+    preserved source limitations, not silently normalized measurements.
+- assessment_id: provenance
+  area: provenance
+  topic: Exact reviewed bytes and actual curation history
+  outcome: supported
+  summary: Actual codex/GPT-6/codex CREATE sidecar and later inline event agree with
+    the target and changed scope. Input hashes remain current; no history or scientific
+    bytes were altered by this reviewer.
+  target_ids:
+  - cmmmech:titanium
+  evidence_ids:
+  - record
+  - validation
+findings: []
+actions: []
+limitations:
+- Spectral refitting and raw-data calibration were not independently reproduced. Charging/sputter
+  artifacts, reused control and inconsistent TiO2 fractions remain explicit; exact
+  conversion yield is unsupported.
+- Temperature, initial density, lactate and riboflavin amendment doses are missing
+  from the inspected source; MtrCAB necessity is not demonstrated by construction
+  methods alone.
+- Related 2024 oxygen-dependence paper was only contextual in this review; no complete
+  figure/supplement reassessment or transfer of conditions.
+- Searches cover returned first result sets and stated local roots, including hidden
+  and ignored files. No full citation-network, proprietary database, author contact
+  or global absence claim.
+notes:
+- 'No corrective issue was manufactured: no actionable defect was established in these
+  exact bytes. Scientific limitations are retained in the record.'
+- All 31 hashed local acquisition/render references in the shared dossier match their
+  retained files. Raw literature remains outside Git.
