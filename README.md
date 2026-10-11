@@ -42,6 +42,10 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Lanthanum](data/records/lanthanum.yaml) | Lanthanum oxalate precipitation using fungal culture supernatant | Cell-free reaction and subsequent thermal processing are separate stages |
 | [Dysprosium](data/records/dysprosium.yaml) | Dried brewer's yeast biosorption in a defined solution | Inactive biomass, source condition inconsistencies and limited analytical detail constrain the claim |
 | [Magnesium](data/records/magnesium.yaml) | Fungal formation of magnesium oxalate from phosphate feeds | Struvite and synthetic dittmarite stay distinct; identified crystals are not an isolated metal yield |
+| [Aluminium](data/records/aluminium.yaml) | Fungal mobilization from a characterized red-mud feed | Acid-only leaching under different conditions and unresolved host phases limit microbial attribution |
+| [Indium](data/records/indium.yaml) | Prepared mixed microalgal biomass sorption from synthetic solutions | Iron competition, declining reuse and inaccessible supplementary controls remain explicit |
+| [Molybdenum](data/records/molybdenum.yaml) | DRY1 culture-associated molybdenum-blue formation | Optical response, unresolved product chemistry and inconsistent source protocols limit quantitative claims |
+| [Tungsten](data/records/tungsten.yaml) | Culture-enhanced release from impure scheelite concentrate | Abiotic release and unknown energy/phase mechanisms prevent a pure-product recovery claim |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -54,7 +58,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [third expansion reviews](research/ingests/round3-20261011-publication.md),
 [fourth expansion review and publication preparation](research/ingests/round4-20261011-publication.md),
 [fifth expansion reviews](research/ingests/round5-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round5-frontier-20261011.md), and
+[sixth expansion reviews](research/ingests/round6-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round6-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

@@ -1,0 +1,125 @@
+id: cmmmech:tungsten
+name: Tungsten
+material_kind: element
+description: >-
+  The element W, distinct from tungstate ions, scheelite and wolframite,
+  tungsten carbides, experimental concentrates and mining wastes. The dated
+  US designation concerns the named tungsten mineral commodity rather than
+  every W-bearing material. A laboratory study supports enhanced tungsten
+  release from an impure scheelite concentrate in Metallosphaera sedula
+  cultures; it does not establish an isolated tungsten product, a specific
+  tungsten redox pathway or industrial recovery.
+identifiers:
+  - id: CHEBI:27998
+    label: tungsten atom
+sources:
+  - id: chebi_tungsten
+    title: 'ChEBI CHEBI:27998 - tungsten atom; formula W, net charge 0'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:27998
+    accessed_on: '2026-10-11'
+  - id: usgs2025
+    title: >-
+      USGS (2025). Final 2025 List of Critical Minerals. Federal Register
+      90:50494-50497, document 2025-19813; tungsten row on page 50497.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: blazevic2019
+    title: >-
+      Blazevic et al. (2019). Biotransformation of Scheelite CaWO4 by the
+      Extreme Thermoacidophile Metallosphaera sedula: Tungsten-Microbial
+      Interface. Frontiers in Microbiology 10:1492; Materials and Methods,
+      Results and Discussion, Figures 1-7 and Table 1.
+    url: https://doi.org/10.3389/fmicb.2019.01492
+    accessed_on: '2026-10-11'
+  - id: ncbi_metallosphaera
+    title: >-
+      NCBI Taxonomy 43687 - Metallosphaera sedula; species, with DSM5348
+      listed among type-strain designations.
+    url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=43687&retmode=xml
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States of America
+    list_name: USGS Final List of Critical Minerals
+    edition: '2025; Federal Register 90:50494-50497, 7 November 2025'
+    classification: critical
+    source_ref: usgs2025
+mechanisms:
+  - id: metallosphaera_scheelite_tungsten_release
+    name: Culture-enhanced tungsten release from scheelite concentrate
+    process: bioleaching
+    microbial: true
+    organisms:
+      - id: NCBITaxon:43687
+        label: Metallosphaera sedula
+    description: >-
+      Aerobic M. sedula cultures released more tungsten into clarified,
+      filtered medium than corresponding uninoculated controls during
+      incubation with an impure scheelite concentrate. This supports a
+      microbial contribution to W mobilization in this system. The actual
+      growth-supporting energy source and the relative contributions of
+      direct mineral contact, microbially altered chemistry and abiotic acid
+      dissolution remain unresolved. No enzyme-specific or tungsten-oxidation
+      mechanism is established.
+    context: >-
+      The study used M. sedula DSM5348, represented here by a species-level
+      identifier, in DSMZ88 Sulfolobus medium initially adjusted to pH 2.0
+      with sulfuric acid and not further adjusted. Aerobic cultures at
+      73 degrees C received CO2 and 10 g/L scheelite concentrate of average
+      particle size 1 mm from the Serido Scheelite Province, Brazil.
+      The feed was heated at 180 degrees C for at least 24 h and autoclaved
+      at 121 degrees C for 20 min. It was not pure CaWO4: methods report
+      Fe- and Mn-oxide impurities, while Table 1 reports multiple elements.
+      The methods' 19.0% Fe-oxide statement and Table 1's 22.6 wt% Fe value
+      are not reconciled; no pure-mineral or feed-normalized yield is inferred.
+      Uninoculated medium with identically sterilized concentrate supplied
+      the abiotic comparison. During the 21-day experiment, centrifuged
+      supernatants were filtered at 0.44 micrometres and analyzed by ICP-OES.
+      Figure 3 reports three biological replicates with standard-deviation
+      error bars. This operational filtrate measurement does not identify
+      aqueous W species or count W retained in cells and solids. No isolated
+      product yield or complete tungsten mass balance is reported.
+    evidence:
+      - source_ref: blazevic2019
+        supports: support
+        explanation: >-
+          Materials and Methods (Strain, Media Composition and Cultivation
+          Setup; Metal Analysis), the first Results subsection and Figure 3A
+          support a higher W signal in inoculated cultures than corresponding
+          abiotic controls, with appreciable abiotic release also present.
+          Figure 1 supports growth and mineral attachment in the tested
+          impure concentrate. Figure 3's plotted x-axis is in days although
+          its caption says hours; the y-axis describes log10 soluble metals
+          with mg/L units. No exact concentration, fold change or recovery
+          percentage is extracted from this ambiguously labeled graph.
+      - source_ref: blazevic2019
+        supports: partial
+        explanation: >-
+          The intracellular Mn/Fe discussion explicitly states that the
+          actual energy source and an oxidizable-substrate balance sufficient
+          to explain growth could not be confirmed. The proposed Fe/Mn
+          oxidation-driven mineral disruption is therefore a hypothesis;
+          the Conclusion also allows indirect chemistry and acid dissolution.
+          These limits prevent treating growth on the concentrate as proof
+          of energy conservation from tungsten or pure scheelite.
+      - source_ref: blazevic2019
+        supports: partial
+        explanation: >-
+          Figures 4-7 and the tungsten-deposit discussion support W-bearing
+          surface encrustation in processed cells, so filtrate W alone is
+          not total mobilized W. The microscopy preparation included 30 days
+          of oxic dehydration after 21 days of culture and focused-ion-beam
+          preparation. The authors describe the deposits as carbide-like
+          and call for further W-environment spectroscopy; no pure WC phase,
+          resolved W redox route, in-vivo product stoichiometry or useful
+          material yield is accepted here. This associated observation does
+          not convert the bioleaching result into demonstrated recovery.
+curation_history:
+  - timestamp: '2026-10-11T05:42:49Z'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Added verified elemental identity, dated US criticality and controlled
+      laboratory tungsten-release evidence from scheelite concentrate,
+      preserving feed, mechanism, analytical and recovery limitations.
+history_refs:
+  - history/records/tungsten/2026-10-11T054211Z-codex-657b0a.yaml

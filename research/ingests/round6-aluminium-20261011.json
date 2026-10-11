@@ -1,0 +1,179 @@
+{
+  "record": "data/records/aluminium.yaml",
+  "prepared_at_utc": "2026-10-11T05:38:38.702883+00:00",
+  "base": "d09a5611767d94fd196393b31d44cb8cf6657f7f",
+  "branch": "curate/cmm-expansion-round6-20261011",
+  "curator": {
+    "actor": "codex",
+    "model": "GPT-6",
+    "tool": "codex"
+  },
+  "search": {
+    "provider": "web search",
+    "date": "2026-10-11",
+    "queries": [
+      "aluminum biosorption yeast fungus aluminium bioleaching red mud Aspergillus full text experimental control",
+      "aluminium biosorption microbial biomass 2020 open access experiment",
+      "\"Biosorption of aluminum through the use\" pdf",
+      "\"Aluminium leaching from red mud by filamentous fungi\" pdf",
+      "\"Removal of aluminium from aqueous solution by four\" pdf",
+      "\"10.1016/j.jinorgbio.2015.08.022\" correction retraction",
+      "\"Aluminium leaching from red mud\" organic acids control fungi"
+    ],
+    "filters": "None",
+    "coverage": "First returned results only, no pagination; targeted primary-paper and correction searches, not exhaustive literature or Crossmark audit."
+  },
+  "local_deduplication": {
+    "method": "rg --no-ignore --hidden, plus specified cited download directories; symlink-aware boundaries inspected",
+    "paths": [
+      "data/records",
+      "research",
+      "reviews",
+      "history",
+      "/private/tmp/cmm-source-authority-acquisition",
+      "/private/tmp/cmm-source-datasets-downloads",
+      "/private/tmp/cmm-source-discovery-downloads",
+      "/private/tmp/cmm-next-eu",
+      "/private/tmp/cmm-expansion-authorities-20261011",
+      "/private/tmp/cmmmech-source-skill-trial"
+    ],
+    "terms": [
+      "aluminium",
+      "aluminum",
+      "bauxite",
+      "red mud",
+      "CHEBI:28984",
+      "10.1016/j.jinorgbio.2015.08.022"
+    ],
+    "result": "Aluminium appears as frontier/list candidate and as reagent in gallium-sludge records. No existing aluminium element record or selected Urik2015 experiment reference found, including ignored and hidden files in the stated boundary. No machine-wide absence claim."
+  },
+  "acquisitions": [
+    {
+      "path": "/private/tmp/cmm-round6-aluminium-evidence/urik-habilitation.pdf",
+      "url": "https://www.vut.cz/uredni-deska/habilitace?action=priloha&priloha=226417",
+      "accessed_on": "2026-10-11",
+      "retained_mtime_utc": "2026-10-11T05:36:34.259183+00:00",
+      "status": "curl exit 0; payload inspected",
+      "bytes": 15760716,
+      "sha256": "1ad163bac045935f00a43d67208749ea3b2091d6fb4d0d3efedabf831f637d84",
+      "terms": "Article: copyright 2015 Elsevier Inc., all rights reserved; reading copy in author thesis, no redistribution license established. Crossref lists TDM terms only."
+    },
+    {
+      "path": "/private/tmp/cmm-round6-aluminium-evidence/chebi-aluminium.html",
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:28984",
+      "accessed_on": "2026-10-11",
+      "retained_mtime_utc": "2026-10-11T05:37:28.393073+00:00",
+      "status": "curl exit 0; payload inspected",
+      "bytes": 826808,
+      "sha256": "226574ac9bfb03e16c8cb83ae8aba71a219ae634627f2753eda3e106ebf1991b",
+      "terms": "Authority metadata retained outside Git; redistribution terms not reassessed; record stores identifiers, citations and factual summaries only."
+    },
+    {
+      "path": "/private/tmp/cmm-round6-aluminium-evidence/ncbi-aspergillus.xml",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5061&retmode=xml",
+      "accessed_on": "2026-10-11",
+      "retained_mtime_utc": "2026-10-11T05:37:25.436389+00:00",
+      "status": "curl exit 0; payload inspected",
+      "bytes": 4988,
+      "sha256": "d668c305ba04f31ca50a1582a5a9c85d6547109cbc132a097d5d2185a8c34ff8",
+      "terms": "Authority metadata retained outside Git; redistribution terms not reassessed; record stores identifiers, citations and factual summaries only."
+    },
+    {
+      "path": "/private/tmp/cmm-round6-aluminium-evidence/us-2025.html",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm",
+      "accessed_on": "2026-10-11",
+      "retained_mtime_utc": "2026-10-11T05:37:25.372079+00:00",
+      "status": "curl exit 0; payload inspected",
+      "bytes": 21581,
+      "sha256": "0f56f0c2a87ab8ba92b46bcf407adc6f8d9a2d32f9383189c9c5e4092c2a99d1",
+      "terms": "Authority metadata retained outside Git; redistribution terms not reassessed; record stores identifiers, citations and factual summaries only."
+    },
+    {
+      "path": "/private/tmp/cmm-round6-aluminium-evidence/crossref-urik.json",
+      "url": "https://api.crossref.org/works/10.1016/j.jinorgbio.2015.08.022",
+      "accessed_on": "2026-10-11",
+      "retained_mtime_utc": "2026-10-11T05:37:25.635665+00:00",
+      "status": "curl exit 0; payload inspected",
+      "bytes": 19707,
+      "sha256": "06a9bce5d982cd315158bc9b11816483a35e473d2f979d2a762d0d5ceec64411",
+      "terms": "Authority metadata retained outside Git; redistribution terms not reassessed; record stores identifiers, citations and factual summaries only."
+    }
+  ],
+  "failed_attempts": [
+    {
+      "url": "https://www.vut.cz/uredni-deska/habilitace?action=priloha&priloha=226417",
+      "provider": "web open",
+      "result": "400 response: content length too large (15760716); curl subsequently acquired actual 186-page PDF"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:28984",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "attempted_at": "2026-10-11T05:37:20.102680+00:00"
+    },
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5061&retmode=xml",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "attempted_at": "2026-10-11T05:37:20.102100+00:00"
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "attempted_at": "2026-10-11T05:37:20.102795+00:00"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1016/j.jinorgbio.2015.08.022",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "attempted_at": "2026-10-11T05:37:20.102571+00:00"
+    }
+  ],
+  "identity_checks": {
+    "CHEBI:28984": "Official title aluminium atom; Al, net charge 0. Element record, not Al3+, alumina or red mud.",
+    "NCBITaxon:5061": "Official XML ScientificName Aspergillus niger, Rank species; source assignment of G-10, not independent strain identification.",
+    "criticality": "GovInfo Final2025 list, Aluminum row; US designation dated 7 November2025, no latest-list claim."
+  },
+  "selected_primary": {
+    "doi": "10.1016/j.jinorgbio.2015.08.022",
+    "fulltext_pdf_pages": [
+      80,
+      81,
+      82,
+      83,
+      84,
+      85
+    ],
+    "journal_pages": "154-159",
+    "read": "Complete six-page embedded primary paper; extracted text plus visual Figures3,5-9 on PDF83-84",
+    "scale": "Triplicate 250mL flasks, 50mL working volume; static25C, seven days",
+    "chosen_assay": "0.2g Ajka red mud, living G-10; ~141mg/L Al in 0.45um filtrate by ICP-OES",
+    "controls": "No fungus: undetected/below detection, numerical AlLOD missing. Synthetic acid mixtureB: ~142mg/L in two-day chemical treatment; no exact rate comparison.",
+    "limitations": [
+      "No isolated Al product",
+      "No Al species assay or definite Al-host mineral",
+      "ITS species assignment, not independently verified G-10 strain",
+      "Proton versus ligand effects not isolated",
+      "Figure5a/6 high-loading label40 versus Methods/Figure5b50g/L; higher-loading experiments excluded from record",
+      "Crossref no update-to and empty relation; targeted search found no correction/retraction, not definitive absence"
+    ]
+  },
+  "deferred_leads": [
+    {
+      "doi": "10.1007/s42770-020-00342-w",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7688833/",
+      "status": "Fulltext inspected for candidate selection; not curated. Mixed1%/5% loading descriptions and reported high recovery need separate audit."
+    },
+    {
+      "doi": "10.1016/j.jbiotec.2016.07.026",
+      "status": "Publisher abstract/section snippets only in this pass; full methods not acquired, no values curated."
+    },
+    {
+      "pmid": "30406393",
+      "status": "Index abstract only; no assay values curated."
+    }
+  ],
+  "validation": {
+    "named_record": "uv run --locked cmmmech validate data/records/aluminium.yaml: exit0,1 checked,0 failed (UV_OFFLINE=1; UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache)",
+    "independent_review": "not self-reviewed; parent assigns another curator"
+  },
+  "record_sha256": "a749a1f2d5283f0839bd99ef7be43bde6d9e43d576efd488e6db1505369ed6f4",
+  "history_ref": "history/records/aluminium/2026-10-11T053805Z-codex-7b51f9.yaml"
+}

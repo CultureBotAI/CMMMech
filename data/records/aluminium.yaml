@@ -1,0 +1,112 @@
+id: cmmmech:aluminium
+name: Aluminium
+material_kind: element
+description: >-
+  Aluminium (Al), the chemical element, distinct from its ions, alumina,
+  bauxite ores and red-mud wastes. The dated US designation maps the named
+  aluminum commodity to this element without assigning criticality to every
+  Al-bearing material. The curated mechanism concerns laboratory aluminium
+  mobilization from a mixed red-mud sample, not production of aluminium metal.
+identifiers:
+  - id: CHEBI:28984
+    label: aluminium atom
+sources:
+  - id: chebi_aluminium
+    title: 'ChEBI CHEBI:28984 - aluminium atom; formula Al, net charge 0'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:28984
+    accessed_on: '2026-10-11'
+  - id: usgs2025
+    title: >-
+      US Department of the Interior, US Geological Survey (2025). Final 2025
+      List of Critical Minerals. Federal Register 90:50494-50497,
+      7 November 2025, document 2025-19813; Aluminum row.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: urik2015
+    title: >-
+      Urik, Bujdos, Milova-Ziakova, Mikusova, Slovak and Matus (2015).
+      Aluminium leaching from red mud by filamentous fungi.
+      Journal of Inorganic Biochemistry 152:154-159.
+      DOI 10.1016/j.jinorgbio.2015.08.022; Sections 2.1-2.5, 3.1, 3.3-3.5,
+      Table 1 and Figures 3, 7-8.
+    url: https://doi.org/10.1016/j.jinorgbio.2015.08.022
+    accessed_on: '2026-10-11'
+  - id: urik2017_fulltext
+    title: >-
+      Urik (2017). Interactions of toxic metals and metalloids with fungi,
+      habilitation thesis, Comenius University in Bratislava. Official Brno
+      University of Technology copy, Attachment E, PDF pages 80-85 reproduce
+      Urik et al. (2015), journal pages 154-159; same experiment, not new evidence.
+    url: https://www.vut.cz/uredni-deska/habilitace?action=priloha&priloha=226417
+    accessed_on: '2026-10-11'
+  - id: ncbi_aspergillus
+    title: 'NCBI Taxonomy 5061 - Aspergillus niger; species'
+    url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5061&retmode=xml
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States of America
+    list_name: USGS Final List of Critical Minerals
+    edition: '2025; Federal Register 90:50494-50497, 7 November 2025'
+    classification: critical
+    source_ref: usgs2025
+mechanisms:
+  - id: fungal_aluminium_mobilization_red_mud
+    name: Aspergillus-associated aluminium leaching from red mud
+    process: bioleaching
+    microbial: true
+    organisms:
+      - id: NCBITaxon:5061
+        label: Aspergillus niger
+    description: >-
+      Growing fungal isolate G-10 mobilized aluminium from red mud while
+      acidifying the medium and accumulating organic acids. Synthetic acid
+      mixtures also leached aluminium, supporting a contribution from
+      extracellular chemistry without demonstrating that live fungal contact
+      is required or resolving a specific enzyme mechanism.
+    context: >-
+      G-10 was assigned to Aspergillus niger using morphology and a 612-bp
+      ITS sequence with 99% similarity; the species identifier does not
+      independently authenticate the strain. Red mud collected at the Ajka
+      spill site in October 2010 was air-dried, disaggregated and sieved below
+      0.2 mm. The selected laboratory assay used 0.2 g red mud in 45 mL
+      Sabouraud dextrose broth plus 5 mL suspension of approximately
+      10^6 spores/mL, in 250-mL flasks. Medium was autoclaved before
+      inoculation; growing cultures were incubated statically in darkness
+      at 25 degrees C for seven days, in triplicate. Aluminium was measured
+      by ICP-OES in 0.45-micrometre filtrate; this is a filter-passing total-Al
+      measurement, not a free Al3+ speciation assay. Table 1 reports 6.97%
+      total Al in the dry feed. Its Al-host phases were unresolved by XRD,
+      so no particular aluminium mineral is assigned to the experiment.
+    evidence:
+      - source_ref: urik2015
+        supports: support
+        explanation: >-
+          Sections 2.3, 2.5 and 3.3 with Figure 3 report approximately
+          141 mg/L Al after seven days for G-10 at the selected loading.
+          No-fungus controls gave undetected or below-detection Al; a numerical
+          Al detection limit is not supplied. Section 3.4 and Figure 7a report
+          final pH 2.3 with oxalic and citric acids at 16.0 and 28.6 mmol/L.
+          These results establish mobilization into the filtrate, without
+          demonstrating an isolated aluminium product or industrial operation.
+      - source_ref: urik2015
+        supports: partial
+        explanation: >-
+          Sections 2.4 and 3.4 with Figure 8 report approximately 142 mg/L
+          Al for synthetic mixture B, formulated from the day-five fungal
+          acid profile. Mixtures used sodium salts and HCl-adjusted pH,
+          0.2 g red mud in 50 mL and two days at 25 degrees C. This chemically
+          mediated result is comparable in concentration to fungal leaching,
+          but unequal incubation periods and media prevent a matched
+          kinetic comparison. Acidification alone does not identify its
+          physiological cause, and these experiments do not isolate
+          proton effects from ligand complexation or other metabolites.
+curation_history:
+  - timestamp: '2026-10-11T05:38:07Z'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Added verified aluminium identity and dated US designation with a
+      bounded fungal red-mud leaching experiment, preserving analytical,
+      taxonomic and chemical-control limits; independent review is separate.
+history_refs:
+  - history/records/aluminium/2026-10-11T053805Z-codex-7b51f9.yaml

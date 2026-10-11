@@ -1,0 +1,340 @@
+schema_version: 1.0.0
+review_id: 20261011T054452Z-molybdenum-round6-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of the molybdenum expansion record
+started_at: '2026-10-11T05:41:16Z'
+finished_at: '2026-10-11T05:44:52Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/cmm6_molybdenum_tungsten.
+    Root independently read primary methods/results, original figure pixels and authority
+    evidence; captured target/history/schema hashes before formal assessment. Root
+    made no scientific or history edits to this record.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The exact record supports a narrowly described culture-associated molybdenum-blue
+  signal and partial cell-extract catalytic evidence. Identity and Canadian2024 criticality
+  are verified; assay conflicts, missing incubation controls and unresolved product
+  chemistry remain explicit.
+source:
+  git_revision: d09a5611767d94fd196393b31d44cb8cf6657f7f
+  state: working_tree
+  inputs:
+  - path: data/records/molybdenum.yaml
+    sha256: 8b6b2790848a967492ed00d204d6f64835cd8ebd2a437a4753715f4e2567d39d
+    role: target
+  - path: history/records/molybdenum/2026-10-11T053939Z-codex-0e6e44.yaml
+    sha256: 7e88223439fc527189c2123a415f9a5b3ff8ca8f989668954e95d3f8529e08c4
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+scope:
+  description: All scientific fields, criticality, identifiers and CREATE provenance
+    in the exact maintained target.
+  selection: Named single-record assignment; all target fields assessed.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:molybdenum
+targets:
+- target_id: cmmmech:molybdenum
+  path: data/records/molybdenum.yaml
+  label: Molybdenum
+  kind: maintained
+  record_class: CriticalMineralRecord
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/molybdenum.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Affected records
+  status: passed
+  required: true
+  summary: Reviewer executed; two records, zero failures, terminal exit 0.
+  target_ids:
+  - cmmmech:molybdenum
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/molybdenum.yaml data/records/tungsten.yaml
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: history
+  name: Trusted-base append-only history
+  status: passed
+  required: true
+  summary: Reviewer executed; 46 histories, zero errors, terminal exit 0.
+  target_ids:
+  - cmmmech:molybdenum
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate-history --base d09a5611767d94fd196393b31d44cb8cf6657f7f
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: nonempty
+  name: Nonempty corpus
+  status: passed
+  required: true
+  summary: Reviewer executed; 36 records, zero failures, terminal exit 0.
+  target_ids:
+  - cmmmech:molybdenum
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: batch
+  name: Complete batch gate
+  status: passed
+  required: true
+  summary: Root executed and read /private/tmp/cmm-round6-check.log; 307 passed, 3
+    skipped, lint passed, 36 records and 46 histories valid; terminal exit 0.
+  target_ids:
+  - cmmmech:molybdenum
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  exit_code: 0
+  expected_exit_code: 0
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/molybdenum.yaml
+  locator: Whole record and linked canonical CREATE history
+  accessed_at: '2026-10-11T05:44:52Z'
+  support: supports
+  summary: Exact target/schema/history hashes are the inspect snapshot; no reviewer
+    edits.
+- evidence_id: identity
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:28685
+  locator: Live ChEBI identity page
+  accessed_at: '2026-10-11T05:44:52Z'
+  support: supports
+  summary: CHEBI:28685 resolves to molybdenum atom; neutral element Mo, not a molybdate
+    ion.
+  snapshot_sha256: 56dc3d3c2be9d0b5079b08e358c3342b777eb7b3d4670e3a09f66f917605057e
+- evidence_id: criticality
+  kind: authority
+  reference: https://www.canada.ca/en/campaign/critical-minerals-in-canada/critical-minerals-an-opportunity-for-canada.html
+  locator: Full 34-material text list; corroborating official news release 10 June
+    2024
+  accessed_at: '2026-10-11T05:44:52Z'
+  support: supports
+  summary: Live primary list explicitly includes molybdenum and identifies its 2024
+    update. Official release confirms 34-material edition and release date; current
+    portal modification date is not a new list edition.
+- evidence_id: taxon
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/DQ226202.1
+  locator: Retained dated original GenBank DQ226202.1 and NCBI351651 XML
+  accessed_at: '2026-10-11T05:44:52Z'
+  support: supports
+  summary: Independent reading verifies 1452-base partial16S sequence, isolate DR.Y1,
+    taxon351651 and primary paper citation. NCBI label gamma proteobacterium DR.Y1
+    is a species-rank placeholder; paper tentative Pseudomonas assignment is not established
+    species identity. Reviewer live browser routes failed; curator-acquired authority
+    files were independently inspected.
+  snapshot_sha256: c8d739b9d4cf26d29d0f89e31c222fc863e5ce608f7f8158f3437740dd432fcc
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1155/2013/871941
+  locator: PMC3870105 full XML; Sections2.1-2.10,3.1-3.10,4 and original institutional
+    PDF
+  accessed_at: '2026-10-11T05:44:52Z'
+  support: supports
+  summary: Independent complete methods/results reading verifies culture versus extract
+    assays, optical response, enzyme-enrichment limits, absence of matched incubation
+    control, conflicting incubation times, dialysis arithmetic and inhibitor-dose
+    mapping. XML has no supplementary-material or related-article node; no separate
+    raw dataset was available.
+  snapshot_sha256: 827722af739f712ed2e6825ab70db41d79e046fe34a0fb6a1536488205e970b6
+- evidence_id: figures
+  kind: primary_source
+  reference: https://doi.org/10.1155/2013/871941
+  locator: Original PDF page6 rendered as mo_original_p6.png; Figures7-8,Tables1-2
+  accessed_at: '2026-10-11T05:44:52Z'
+  support: supports
+  summary: 'Original pixels independently inspected: phosphate inhibition, time-dependent
+    optical peak/shoulder,5.06-fold enrichment/low yield and inhibitor table support
+    the qualified record. Absorbance is not a total-Mo elemental assay.'
+  snapshot_sha256: af1baa4fe7efe82c25d81d13785eef8d9087f235bc0ca65ad489769d15cf5fac
+- evidence_id: search
+  kind: search
+  reference: Review-session web searches and local ignored-inclusive search
+  locator: 2026-10-11, first returned result sets, no pagination
+  accessed_at: '2026-10-11T05:44:52Z'
+  support: context_only
+  summary: No direct correction, retraction or contradictory replication of this exact
+    assay surfaced in the bounded search. Related Burkholderia studies/reviews were
+    discovery context, not direct replication. Primary internal contradictions are
+    retained.
+  search_scope: 'Exact queries: "10.1155/2013/871941" correction retraction; "Molybdate
+    Reduction to Molybdenum Blue by an Antarctic Bacterium" erratum; "DRY1" molybdenum
+    abiotic reduction control; "Pseudomonas" "DRY1" "molybdenum" correction. An initial
+    query mistyped the DOI as371941 and was repeated with the verified871941. rg --no-ignore
+    --hidden searched data/records,research,reviews,history and /private/tmp/cmmmech-round6-mo-w-raw
+    for root IDs and exactDOIs; matches were current additions/receipts/frontier,
+    with no separate prior maintained Mo root in that scope. Unrelated temp/home trees
+    and all literature are outside the absence claim.'
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Material and taxonomic grounding
+  outcome: supported
+  summary: Element identity stays distinct from dissolved reagent, product phases
+    and resource feed; organism scope matches the authority and primary evidence.
+  target_ids:
+  - cmmmech:molybdenum
+  evidence_ids:
+  - record
+  - identity
+  - taxon
+- assessment_id: criticality
+  area: evidence
+  topic: Named jurisdiction/list/edition
+  outcome: supported
+  summary: Designation is tied to the named authority and edition; it is not inherited
+    by every element-bearing compound or resource.
+  target_ids:
+  - cmmmech:molybdenum
+  evidence_ids:
+  - record
+  - criticality
+- assessment_id: mechanism
+  area: evidence
+  topic: Experimental assay and its causal boundary
+  outcome: supported
+  summary: The exact record supports a narrowly described culture-associated molybdenum-blue
+    signal and partial cell-extract catalytic evidence. Identity and Canadian2024
+    criticality are verified; assay conflicts, missing incubation controls and unresolved
+    product chemistry remain explicit.
+  target_ids:
+  - cmmmech:molybdenum
+  evidence_ids:
+  - record
+  - primary
+  - figures
+  dimensions:
+  - name: substrate
+    value: Synthetic sodium molybdate dihydrate culture feed; separate12-molybdophosphate/NADH
+      extract assay.
+    definition: Culture and enzyme-stage acceptors must not be conflated.
+    evidence_ids:
+    - primary
+    - record
+  - name: organism
+    value: Antarctic isolate DRY1, current accession-linked gamma proteobacterium
+      DR.Y1; tentative published Pseudomonas assignment.
+    definition: Authority label does not establish resolved Pseudomonas species.
+    evidence_ids:
+    - primary
+    - record
+  - name: biomass_state
+    value: Living static cultures; distinct sonicated/centrifuged partially purified
+      extracts.
+    definition: Cellular and cell-free results are separate evidence.
+    evidence_ids:
+    - primary
+    - record
+  - name: conditions
+    value: Section2.1:50mL,10C,72h,pH7,0.242%w/v sodium molybdate dihydrate,1%glucose,0.3%ammonium
+      sulfate,0.05%yeast extract,2.8mMphosphate. Figure8 separately20C. Optimization
+      methods48h versus captions72h.
+    definition: Fixed isolation assay is separate from inconsistent optimization protocols.
+    evidence_ids:
+    - primary
+    - record
+  - name: controls
+    value: Fresh medium optical baseline; inhibitor assay controls; no reported matched
+      incubated uninoculated/killed-cell culture comparator.
+    definition: Analytical baseline does not isolate biological causality over incubation.
+    evidence_ids:
+    - primary
+    - record
+  - name: outcome
+    value: 865nm peak and710nm shoulder; condition-dependent blue signal; about5-fold
+      activity enrichment without homogeneous protein.
+    definition: Optical proxy is consistent with reduced phosphomolybdate-like material,
+      not directly measured Mo-valence/phase or total-Mo depletion.
+    evidence_ids:
+    - primary
+    - record
+  - name: uncertainty
+    value: Conflicting incubation durations,inhibitor dose assignment and dialysis
+      percentages versus quantities.
+    definition: No invented reconciled optimum or quantitative partition is curated.
+    evidence_ids:
+    - primary
+    - record
+  - name: deployment
+    value: Laboratory synthetic medium; no product recovery yield or field treatment
+      demonstration.
+    definition: Antarctic isolate origin does not establish remediation deployment.
+    evidence_ids:
+    - primary
+    - record
+- assessment_id: uncertainty
+  area: quantity
+  topic: Contradictions, analytical denominator and deployment limits
+  outcome: supported
+  summary: Published inconsistencies and weak causal controls remain explicit; assay
+    response is not converted into pure-metal yield or industrial performance.
+  target_ids:
+  - cmmmech:molybdenum
+  evidence_ids:
+  - record
+  - primary
+  - figures
+- assessment_id: provenance
+  area: provenance
+  topic: Inline event and canonical CREATE session
+  outcome: supported
+  summary: Record and actual codex/GPT-6/codex sidecar name the same target and work;
+    append-only validation used the trusted pre-curation base.
+  target_ids:
+  - cmmmech:molybdenum
+  evidence_ids:
+  - record
+- assessment_id: coverage
+  area: completeness
+  topic: Bounded adversarial searches
+  outcome: supported
+  summary: Hidden and ignored records, research, reviews, history and task downloads
+    were searched; returned correction/counterevidence results do not establish exhaustive
+    literature clearance.
+  target_ids:
+  - cmmmech:molybdenum
+  evidence_ids:
+  - search
+findings: []
+actions: []
+limitations:
+- No matched incubated cell-free/killed-cell culture comparison, total-Mo mass balance,
+  isolated product yield or direct product-valence/phase determination is reported.
+- The source has conflicting optimization durations,inhibitor-dose mapping and dialysis
+  arithmetic; record does not merge these into a single quantitative protocol.
+- Partially purified extract activity does not identify a unique enzyme or exclude
+  chemical contributions; the blue signal alone is not detoxification efficiency.
+- Reviewer direct NCBI web routes failed; independently inspected dated original GenBank/taxonomy
+  files support accession scope. Bounded searches do not prove exhaustive absence
+  of corrections or counterevidence.
+notes:
+- Primary-source reading began as preparation before the inspect snapshot; formal
+  target assessment started after inspect. All target bytes remained unchanged through
+  save.
+- Source state is working_tree at a retained main ancestor; this is not a claim that
+  target bytes were committed at that base.
+- Scientific limits already preserved in the record are not manufactured curation
+  defects.
+links:
+- research/ingests/round6-mo-w-20261011.md
+- research/ingests/round6-mo-w-20261011.json
+- https://github.com/CultureBotAI/CMMMech/issues/32
+tags:
+- round6
+- independent-review
+- molybdenum
+- primary-literature
