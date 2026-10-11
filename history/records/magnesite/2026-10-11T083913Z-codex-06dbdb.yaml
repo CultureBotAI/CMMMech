@@ -1,0 +1,27 @@
+history_version: 1
+target:
+  kind: record
+  slug: magnesite
+  path: data/records/magnesite.yaml
+session:
+  id: 2026-10-11T083913Z-codex-06dbdb
+  timestamp: '2026-10-11T08:39:13Z'
+  actors:
+  - name: codex
+    type: ai_agent
+    model: GPT-6
+    agent_tool: codex
+events:
+- type: EDIT
+  outcome: changed
+  summary: Corrected the magnesite USGS supporting chapter locator.
+  details: Resolved issue 50 finding magnesite-usgs-chapter-locator from independent review
+    20261011T083659Z-magnesite-round12-independent F1. Re-read and rendered USGS MCS2026 Magnesium
+    Compounds printed pages 120-121, PDF pages 124-125; the former printed 118-119/PDF 122-123
+    locator identifies Lithium. Corrected only the citation locator and added actual edit
+    provenance; commodity identity and dated BGS designation are unchanged. Preserved the
+    initial record hash in the cohort dossier. Named-record and new history validation follow;
+    independent successor review and final batch gates remain root-coordinated.
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/50

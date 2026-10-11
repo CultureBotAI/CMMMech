@@ -1,0 +1,23 @@
+history_version: 1
+target:
+  kind: record
+  slug: alumina
+  path: data/records/alumina.yaml
+session:
+  id: 2026-10-11T083005Z-codex-1e7975
+  timestamp: '2026-10-11T08:30:05Z'
+  actors:
+  - name: codex
+    type: ai_agent
+    model: GPT-6
+    agent_tool: codex
+events:
+- type: CREATE
+  outcome: changed
+  summary: Created an alumina commodity record with explicit EU value-chain designations.
+  details: Verified commercial aluminium oxide identity using USGS Mineral Commodity Summaries
+    2025 and original EU Regulation 2024/1252. Kept hydroxide, metal, ore and high-purity
+    grade distinct. Did not adopt mixed-catalyst total-Al leaching as an alumina-phase mechanism.
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/48
