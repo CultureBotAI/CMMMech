@@ -1,0 +1,78 @@
+id: cmmmech:chromite
+name: Chromite
+material_kind: mineral
+description: Chromite is the Fe(II)Cr2O4 mineral species, grandfathered in the September
+  2026 IMA list with original-description year 1845. It is distinct from elemental
+  chromium, chromate, chromium-bearing spinels of unspecified composition, mixed
+  chromite ores and processing tailings. The natural specimen called chromite in the
+  experiment below was not compositionally or crystallographically characterized in
+  that paper. Its measured Fe(II) change is a specimen-associated observation, not
+  proof of conversion of pure endmember chromite. No criticality designation is
+  inherited from chromium.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 45,
+    Chromite row; page 1 column definitions and page 2 distribution terms.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-11'
+- id: chaudhuri2001
+  title: Chaudhuri, Lack and Coates (2001). Biogenic Magnetite Formation through
+    Anaerobic Biooxidation of Fe(II). Applied and Environmental Microbiology 67(6),
+    2844-2848. Table 1 and associated paragraph on page 2847; Figures 1-4 distinguish
+    soluble-iron, product and almandine experiments from the chromite assay.
+  url: https://doi.org/10.1128/AEM.67.6.2844-2848.2001
+  accessed_on: '2026-10-11'
+- id: ncbi_ps
+  title: NCBI Taxonomy 640081. Current label Azospira oryzae PS; Dechlorosoma
+    suillum PS is a listed heterotypic synonym; no-rank strain entry.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=640081
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: ps_chromite_associated_feii_oxidation
+  name: Anoxic cell-associated oxidation of assay-accessible Fe(II)
+  process: redox_transformation
+  microbial: true
+  organisms:
+  - id: NCBITaxon:640081
+    label: Azospira oryzae PS
+  description: The source reports Fe(II) oxidation in natural source-labelled chromite
+    incubated with anoxic washed whole-cell suspensions of Dechlorosoma suillum
+    strain PS, coupled to nitrate reduction. The organism identifier uses NCBI's
+    current strain label; it does not imply genomic authentication of the experimental
+    stock. Neither chromium oxidation state nor chromium release was measured in
+    this assay.
+  context: Laboratory mineral-screening assay. Table 1 reports 9.42 mmol Fe(II)
+    oxidized per kg mineral and 95.00% of the starting Fe(II). The footnote defines
+    Fe(II) determination by ferrozine after 6 N HCl treatment over 24 h; these are
+    operational extraction-based quantities, not a chromite dissolution percentage,
+    total chromium conversion or recovery yield. Specimen origin, purity, grain
+    size, mineral and cell loadings, nitrate concentration, pH, temperature,
+    incubation time and replicate/error information for the chromite arm are not
+    reported. Conditions from the separate FeCl2 and almandine experiments are not
+    assigned to chromite. The study does not demonstrate an extraction process,
+    isolated recovery product or industrial deployment.
+  evidence:
+  - source_ref: chaudhuri2001
+    supports: support
+    explanation: Table 1 on page 2847 supplies the chromite-specific assay values,
+      nitrate coupling, washed-cell state and acid/ferrozine analytical method. Its
+      associated paragraph reports no Fe(II) oxidation in abiotic controls or without
+      a suitable electron acceptor, but supplies no chromite-specific control values
+      or time course.
+  - source_ref: chaudhuri2001
+    supports: partial
+    explanation: The Fe(II) assay does not resolve lattice iron from accessory or
+      surface-associated iron and does not quantify chromium. Direct enzymatic attack
+      on chromite and the relative contribution of secondary chemical reactions are
+      unresolved. Figure 4 follows almandine, not chromite. The magnetite-containing
+      mixed product in Figure 3 was formed in separate FeCl2 experiments; the paper
+      also allows an abiotic green-rust/nitrate step there. No chromite-to-magnetite
+      product is established.
+curation_history:
+- timestamp: '2026-10-11T18:25:10.652259+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created chromite species identity with a qualified specimen-associated Fe(II)
+    oxidation observation and explicit analytical, control and mineral-specific limits.
+history_refs:
+- history/records/chromite/2026-10-11T182447Z-codex-8c1177.yaml

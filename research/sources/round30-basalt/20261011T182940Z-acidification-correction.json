@@ -1,0 +1,56 @@
+{
+  "timestamp_utc": "2026-10-11T18:29:40.928688+00:00",
+  "author": "codex (GPT-6; codex), original basalt curator; not independent reviewer",
+  "base": "930ce995269f0ded5df009eb5916162971eb1f58",
+  "issue": "https://github.com/CultureBotAI/CMMMech/issues/107",
+  "independent_finding": {
+    "review_id": "20261011T182728Z-basalt-round30-independent-initial",
+    "finding_id": "acid-concentration",
+    "issue_key": "cmmmech-basalt-acidification-concentration",
+    "path": "reviews/structured/20261011T182728Z-basalt-round30-independent-initial/review.yaml",
+    "sha256": "b5df09e804df0795ce9f84d62379966652dbfdc8e19d9a301c9b1caaefaba381"
+  },
+  "source": {
+    "doi": "10.3389/fmicb.2018.01252",
+    "path": "/private/tmp/cmm-round30-basalt-research/raw/primary.pdf",
+    "sha256": "cf5067359aaf42d8696ab61fe6b50f3d3000774cdc62dd250cc48cbff6ab9b2f",
+    "locator": "PDF p6, Chemical Analysis, 4.5 mL filtered solutions acidified with 0.3 M HNO3"
+  },
+  "correction": "The 0.3 M value specifies the HNO3 reagent. Added acid volume and final sample acid concentration are not reported. Earlier wording to 0.3 M in the original record and source dossier was an unsupported inference; it is superseded by this explicit correction.",
+  "unchanged_historical_artifacts": [
+    {
+      "path": "research/sources/round30-basalt/20261011T182352Z-source-investigation.md",
+      "sha256": "671545f0ab519d1960e8357d62f2f771113b4015d68bb327f7249e49042ec57b"
+    },
+    {
+      "path": "research/sources/round30-basalt/20261011T182352Z-source-investigation.json",
+      "sha256": "f0b47c1c49f7e59e4407f0e790463aff57ae9b1d4a8b9a69db2dfb6b289cede0"
+    }
+  ],
+  "record": {
+    "path": "data/records/basalt.yaml",
+    "sha256": "e7f999badce7c3ebca3fe28a56827f602d4162b5b6e4b00729b06b019001e1e5"
+  },
+  "edit_history": {
+    "path": "history/records/basalt/2026-10-11T182847Z-codex-c03537.yaml",
+    "sha256": "07ae8c7a21f53c93de4e4363d68980ffdcdf14c36b83d16da62adb000305808d"
+  },
+  "validation": {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "cmmmech",
+      "validate",
+      "data/records/basalt.yaml"
+    ],
+    "started_at": "2026-10-11T18:29:13.325879+00:00",
+    "finished_at": "2026-10-11T18:29:15.785689+00:00",
+    "exit_code": 0,
+    "stdout": "Checked 1 record(s); 0 failed.\n",
+    "stderr": "",
+    "record_sha256": "e7f999badce7c3ebca3fe28a56827f602d4162b5b6e4b00729b06b019001e1e5",
+    "edit_history_sha256": "07ae8c7a21f53c93de4e4363d68980ffdcdf14c36b83d16da62adb000305808d"
+  },
+  "status": "Correction implemented and named-valid; independent successor review and final batch gates pending. Other scientific scope remains unchanged."
+}
