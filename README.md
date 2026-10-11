@@ -111,6 +111,24 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Bauxite residue (red mud)](data/records/bauxite-residue.yaml) | Fungal aluminium mobilization from an Ajka residue | Chemical controls use different conditions; aluminium host phases remain unresolved |
 | [Phosphogypsum](data/records/phosphogypsum.yaml) | Separate synthetic-feed and actual-residue Gluconobacter assays | Model powders do not establish industrial-feed yields; actual-residue source quantities conflict |
 | [Metallurgical coal commodity family](data/records/metallurgical-coal.yaml) | Source-defined coking, blending and injection-coal family | Explicit overlap with coking coal; authority definitions differ |
+| [Scheelite](data/records/scheelite.yaml) | Culture-associated W release from scheelite concentrate | Mixed feed and unresolved energy source; not pure-mineral yield |
+| [Pyromorphite](data/records/pyromorphite.yaml) | Pseudomonas-associated Pb remobilization from synthetic pyromorphite | Phosphate conditions matter; no unique pathway or field-recovery claim |
+| [Struvite](data/records/struvite.yaml) | Fungal acidification and phosphate mobilization | Mixed water-treatment feed; oxalate-specific causality unresolved |
+| [Ferrihydrite](data/records/ferrihydrite.yaml) | Ax17 reduction of synthetic two-line ferrihydrite | Assay analogue is not proof of ideal mineral formula or purity |
+| [Magnetite](data/records/magnetite.yaml) | Magnetite-rich product from Ax17 ferrihydrite reduction | Mixed, probably cation-deficient product; same study as ferrihydrite and iron |
+| [Pyrolusite](data/records/pyrolusite.yaml) | Abiotic Fe(II)-driven beta-MnO2 transformation | Explicitly nonmicrobial chemical alternative; microbial ore lead deferred |
+| [Lithium carbonate commodity](data/records/lithium-carbonate.yaml) | Manufactured Li2CO3 product family | Supplier grades do not define a universal battery qualification |
+| [Lithium hydroxide monohydrate commodity](data/records/lithium-hydroxide-monohydrate.yaml) | Manufactured LiOH.H2O product family | LiOH assay basis differs from monohydrate purity |
+| [Nickel sulfate hexahydrate commodity](data/records/nickel-sulfate-hexahydrate.yaml) | Manufactured NiSO4.6H2O product family | Supplier nickel-content limits and uses remain product-specific |
+| [Manganese sulfate monohydrate commodity](data/records/manganese-sulfate-monohydrate.yaml) | Manufactured MnSO4.H2O product family | Agricultural and battery-related uses do not establish universal grade |
+| [Ferroboron commodity](data/records/ferroboron.yaml) | Iron-boron master-alloy commodity family | Variable grades; not elemental boron or one FeB stoichiometry |
+| [Graphite anode material for lithium-ion batteries](data/records/graphite-anode-material.yaml) | Graphite products for lithium-ion negative electrodes | End-use subset of graphite; not all battery-grade graphite or complete electrodes |
+| [Spent fluid catalytic cracking catalyst](data/records/spent-fluid-catalytic-cracking-catalyst.yaml) | Gluconobacter supernatant leaching of one FCC feed | Total-REE inventory endpoint; unequal culture temperatures and acidity constrain comparisons |
+| [Coal fly ash](data/records/coal-fly-ash.yaml) | Yeast-supernatant treatment of coal fly ash | Residual-solid inventory loss, not measured recovered-liquid yield |
+| [Municipal-waste incineration ash](data/records/municipal-waste-incineration-ash.yaml) | Sludge-culture-associated metal release from ash A | Undefined controls and analytical fraction; no universal recovery yield |
+| [Sewage-sludge incineration ash](data/records/sewage-sludge-incineration-ash.yaml) | Condition-dependent metal release from ash B | Lower Nb and control-near In outcomes remain distinct from ash A |
+| [Spent hydrocracking catalyst](data/records/spent-hydrocracking-catalyst.yaml) | Pretreated fungal-filtrate metal mobilization | Source pH, loading and control contradictions remain unresolved |
+| [Spent NdFeB permanent magnets](data/records/spent-ndfeb-magnets.yaml) | Inactive algal biosorption from prepared magnet leachate | Roasting and acid leaching precede sorption; measured uptake differs from fitted capacity |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -131,7 +149,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [eleventh expansion reviews](research/ingests/round11-20261011-publication.md),
 [twelfth expansion reviews](research/ingests/round12-20261011-publication.md),
 [thirteenth expansion reviews](research/ingests/round13-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round13-frontier-20261011.md), and
+[fourteenth expansion reviews](research/ingests/round14-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round14-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

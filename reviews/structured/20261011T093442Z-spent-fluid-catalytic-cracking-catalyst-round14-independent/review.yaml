@@ -1,0 +1,280 @@
+schema_version: 1.0.0
+review_id: 20261011T093442Z-spent-fluid-catalytic-cracking-catalyst-round14-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: 'Independent scientific review: spent-fluid-catalytic-cracking-catalyst'
+started_at: '2026-10-11T09:28:57.274265Z'
+finished_at: '2026-10-11T09:34:42Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Separate resource agent authored this target. Root independently
+    inspected original full text, methods, tables and rendered figures, original taxonomy
+    exports and record/history bytes. Root authored only a different magnet record.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: One bounded comparison wording defect requires correction.
+source:
+  git_revision: 8f8abedfce68f932e4f6f333a5470ee5f3897ff4
+  state: working_tree
+  inputs:
+  - path: data/records/spent-fluid-catalytic-cracking-catalyst.yaml
+    sha256: 23ed53470c230be961596ebcc0cfe57d04e8974436f1381e79caaad325e5ee4a
+    role: target
+  - path: docs/records.md
+    sha256: 212cdbb723eb1ad9eb76ea1b7dad066914659b1f85eb2cdb51ee67466cfcc8ee
+    role: context
+  - path: history/records/spent-fluid-catalytic-cracking-catalyst/2026-10-11T092615Z-codex-078bef.yaml
+    sha256: 10c1b96c67b338a19f8bc068e679a527febb20e7d87d0cae04fc95b4ea9c94a3
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+scope:
+  description: All scientific and provenance fields of one new resource record.
+  selection: New round14 resource assigned independently; all fields reviewed.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:spent-fluid-catalytic-cracking-catalyst
+  exclusions:
+  - target: Other corpus records and uncurated literature
+    reason: Checked only for duplicate/scope context; no corpus-wide scientific clearance.
+targets:
+- target_id: cmmmech:spent-fluid-catalytic-cracking-catalyst
+  path: data/records/spent-fluid-catalytic-cracking-catalyst.yaml
+  label: Spent fluid catalytic cracking catalyst
+  kind: maintained
+  ownership_note: Maintained native CMMMech YAML; future corrections belong to this
+    record, not saved reviews.
+checks:
+- check_id: named
+  name: Five reviewed-resource validation
+  command: uv run --locked cmmmech validate data/records/spent-fluid-catalytic-cracking-catalyst.yaml
+    data/records/coal-fly-ash.yaml data/records/municipal-waste-incineration-ash.yaml
+    data/records/sewage-sludge-incineration-ash.yaml data/records/spent-hydrocracking-catalyst.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:spent-fluid-catalytic-cracking-catalyst
+  summary: Root executed and observed terminal0:5 records,0failed. /private/tmp/cmm-round14-root-review/named-validation.log
+- check_id: history
+  name: Trusted-base canonical history
+  command: uv run --locked cmmmech validate-history --base 8f8abedfce68f932e4f6f333a5470ee5f3897ff4
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root observed terminal0:134history records,0errors. /private/tmp/cmm-round14-history.log
+  target_ids:
+  - cmmmech:spent-fluid-catalytic-cracking-catalyst
+- check_id: records
+  name: Required corpus validation
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root observed terminal0:119records,0failed. /private/tmp/cmm-round14-require.log
+  target_ids:
+  - cmmmech:spent-fluid-catalytic-cracking-catalyst
+evidence:
+- evidence_id: target
+  kind: record_content
+  reference: data/records/spent-fluid-catalytic-cracking-catalyst.yaml
+  locator: All fields and linked CREATE sidecar
+  accessed_at: '2026-10-11T09:34:42Z'
+  support: supports
+  summary: Exact working bytes captured before assessment; native schema and docs
+    checked; actual GPT-6/codex CREATE targets this record and issue56, with separate
+    inline event.
+  snapshot_sha256: 23ed53470c230be961596ebcc0cfe57d04e8974436f1381e79caaad325e5ee4a
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.hydromet.2016.08.006
+  locator: Sections 2.1-2.7,3.2-3.6; Tables1-3; Figures3,5; accepted PDF pages6-22
+  accessed_at: '2026-10-11T09:34:42Z'
+  support: supports
+  summary: Independently read retained original primary PDF acquired by curator this
+    round. Valero alumina/silica-rich spent FCC feed, distinct from other catalyst
+    processes. Four-day Pkm culture30C; sterile-filtered supernatant;1.5%w/v FCC,24h30C150rpm,n3.
+    Approximately49% acid-digestible total REE inventory in filtered liquor; not element-specific
+    or isolated-product yield. Unmatched acid controls, unverified proposed diketogluconate,
+    and Pkm/PkmT growth-temperature confounding. Phosphor biosorption outcomes cannot
+    be transferred to FCC.
+  snapshot_sha256: 47e5f4f45d0c01647a1f1cfbf55d6cc5802d9444798f0d38f9afe1e05626d645
+- evidence_id: search
+  kind: search
+  reference: Local corpus and four exact DOI queries
+  locator: data/records,history,research,reviews plus first web result page
+  accessed_at: '2026-10-11T09:34:42Z'
+  support: context_only
+  summary: Ignored-inclusive followed local search establishes bounded identity overlap
+    and repeated-study context. Four DOI correction/retraction queries returned original
+    publications and related leads; no applicable notice in that result window. No
+    exhaustive clearance.
+  snapshot_sha256: db9cb5c3009827426a8eeac8ba9a3e3d7a5ce7f1a61204484aac61e7a32dc15b
+  search_scope: rg --no-ignore --hidden --follow matching four DOIs and five resource
+    slugs across data/records history research reviews. Web queries exact quoted DOI
+    for each cited paper plus correction retraction; no domain/date filters or pagination.
+    Sources were independently read, not inferred from snippets.
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/taxonomy
+  locator: NCBI XML ScientificName/Rank/OtherNames; RefSeq NR_111412.1 LOCUS,DEFINITION,source
+    features when applicable
+  accessed_at: '2026-10-11T09:34:42Z'
+  support: supports
+  summary: Independently parsed retained NCBI original XML;442=G.oxydans,5053=A.aculeatus,75736=S.bombicola
+    at species rank. Candida synonym and ATCC22214 type-material scope checked; RefSeq
+    CBS172.66 is not experimental Thai isolate. No species identifier establishes
+    strain provenance.
+  snapshot_sha256: e02f85740e0fc7ea43e95ff6615aa1e26f942c57954cd03a3307fb8e09a16aac
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Secondary-resource boundaries
+  outcome: supported
+  summary: Valero alumina/silica-rich spent FCC feed, distinct from other catalyst
+    processes. No constituent-element criticality is inherited. No unverified resource/mineral
+    identifier or designation is invented.
+  target_ids:
+  - cmmmech:spent-fluid-catalytic-cracking-catalyst
+  evidence_ids:
+  - target
+  - primary
+  dimensions:
+  - name: material_form
+    value: secondary_resource
+    definition: Industrial waste/feed class, not elemental or mineral identity.
+    evidence_ids:
+    - primary
+    - target
+  - name: criticality
+    value: No designation asserted
+    definition: No jurisdiction/list/edition transferred from constituents.
+    evidence_ids:
+    - primary
+    - target
+- assessment_id: mechanism
+  area: evidence
+  topic: Organism,pretreatment,controls and outcome
+  outcome: supported
+  summary: Gluconobacter oxydans NRRL B58; NCBITaxon:442 species only. Four-day Pkm
+    culture30C; sterile-filtered supernatant;1.5%w/v FCC,24h30C150rpm,n3. Approximately49%
+    acid-digestible total REE inventory in filtered liquor; not element-specific or
+    isolated-product yield. Unmatched acid controls, unverified proposed diketogluconate,
+    and Pkm/PkmT growth-temperature confounding. Phosphor biosorption outcomes cannot
+    be transferred to FCC.
+  target_ids:
+  - cmmmech:spent-fluid-catalytic-cracking-catalyst
+  evidence_ids:
+  - target
+  - primary
+  dimensions:
+  - name: organism
+    value: Gluconobacter oxydans NRRL B58; NCBITaxon:442 species only
+    definition: Taxon,experimentalstrain or mixedcommunity scope.
+    evidence_ids:
+    - primary
+    - target
+  - name: conditions
+    value: Four-day Pkm culture30C; sterile-filtered supernatant;1.5%w/v FCC,24h30C150rpm,n3
+    definition: Selected laboratory assay and prior preparation.
+    evidence_ids:
+    - primary
+    - target
+  - name: outcome
+    value: Approximately49% acid-digestible total REE inventory in filtered liquor;
+      not element-specific or isolated-product yield
+    definition: Measured source endpoint and denominator, not isolated product.
+    evidence_ids:
+    - primary
+    - target
+  - name: deployment
+    value: Laboratory only
+    definition: Supplier industrial origin is not industrial biological deployment.
+    evidence_ids:
+    - primary
+    - target
+- assessment_id: provenance
+  area: provenance
+  topic: Immutable history and exact working state
+  outcome: supported
+  summary: Independent root reviewer did not author this record; inspected target,
+    native contract and actual CREATE sidecar before judging. Reused studies remain
+    linked views, not independent replicates.
+  target_ids:
+  - cmmmech:spent-fluid-catalytic-cracking-catalyst
+  evidence_ids:
+  - target
+  - search
+- assessment_id: comparison
+  area: consistency
+  topic: Pkm/PkmT temperature confound
+  outcome: concern
+  summary: Section3.2 grows Pkm at30C and PkmT at20C. The record attributes the comparison
+    to tryptone without giving unmatched growth temperature, although both leaches
+    occur at30C. Narrow observed comparison is valid; wording needs qualification.
+  target_ids:
+  - cmmmech:spent-fluid-catalytic-cracking-catalyst
+  evidence_ids:
+  - target
+  - primary
+findings:
+- finding_id: fcc-growth-temperature-confound
+  issue_key: round14-fcc-pkmt-growth-temperature
+  category: consistency
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Qualify Pkm/PkmT comparison by different culture-growth temperatures
+  description: The approximately33% PkmT versus49% Pkm comparison is followed by "so
+    tryptone supplementation did not improve this assay". Sections2.3/3.2 specify
+    Pkm30C and PkmT20C growth; both leached at30C. Omitting that confound makes this
+    read as an isolated supplementation comparison. Retain measured endpoints, disclose
+    unequal culture temperatures and say the comparison cannot isolate tryptone effect.
+  target_ids:
+  - cmmmech:spent-fluid-catalytic-cracking-catalyst
+  field_paths:
+  - mechanisms[0].evidence[0].explanation
+  evidence_ids:
+  - primary
+  - target
+  ownership_note: Correct maintained record and add actual EDIT sidecar; preserve
+    CREATE and initial review.
+  rule_id: mechanism-conditions-controls
+actions:
+- action_id: qualify-growth-comparison
+  description: State Pkm30C versus PkmT20C culture growth and common30C leaching;
+    remove isolated attribution to supplementation. Append real EDIT provenance and
+    fresh independent successor.
+  finding_ids:
+  - fcc-growth-temperature-confound
+  target_ids:
+  - cmmmech:spent-fluid-catalytic-cracking-catalyst
+  ownership_note: Maintained native YAML and new canonical history sidecar.
+  acceptance_checks:
+  - Primary Sections2.3/3.2 and Figures3/5 agree with wording.
+  - Named record validation,just check,require-records,trusted-base history pass.
+  - Successor cites exact previous occurrence and final target hash.
+limitations:
+- Unmatched acid controls, unverified proposed diketogluconate, and Pkm/PkmT growth-temperature
+  confounding. Phosphor biosorption outcomes cannot be transferred to FCC.
+- 'Primary artifacts freshly acquired by curator were independently read by root;
+  not claimed as independent root downloads. Visual checks: ReedPDF18/22;ParkPDF5/8;ashPDF2-5;hydroPDF6/8-11,
+  with other relevant methods/results read as PDF text.'
+- Correction searches covered only listed exact-DOI queries and first returned results.
+  Source weaknesses retained explicitly are not fabricated review issues.
+- Full final batch checks and corrected-state review remain pending; this initial
+  scientific finding does not authorize acceptance.
+tags:
+- round14
+- independent
+- scientific-review

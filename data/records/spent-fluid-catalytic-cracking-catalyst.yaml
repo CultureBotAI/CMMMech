@@ -1,0 +1,80 @@
+id: cmmmech:spent-fluid-catalytic-cracking-catalyst
+name: Spent fluid catalytic cracking catalyst
+material_kind: secondary_resource
+description: Used petroleum-refinery fluid catalytic cracking (FCC) catalyst, a heterogeneous
+  alumina/silica-rich secondary resource that may contain rare earths and accumulated metals.
+  It is distinct from fresh catalyst, spent hydrocracking or hydrotreating catalyst, automotive
+  catalyst, constituent elements and mineral species. The selected evidence concerns one Valero
+  FCC feed and filtered microbial culture supernatant; it does not confer criticality on all
+  FCC wastes.
+sources:
+- id: reed_2016
+  title: Reed et al. (2016). Bioleaching of rare earth elements from waste phosphors and cracking
+    catalysts. Hydrometallurgy 166:34-40. DOI 10.1016/j.hydromet.2016.08.006; accepted manuscript
+    INL/JOU-16-37735, Sections 2.1-2.7, 3.2-3.6, Table 1 and Figures 3,5 (PDF pp.6-10,15-22).
+  url: https://www.osti.gov/servlets/purl/1357607
+  accessed_on: '2026-10-11'
+- id: ncbi_gluconobacter
+  title: 'NCBI Taxonomy 442: Gluconobacter oxydans, species; this identifier does not authenticate
+    NRRL B58 strain provenance.'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=442
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: b58_supernatant_leaching
+  name: Rare-earth leaching with Gluconobacter oxydans spent medium
+  process: bioleaching
+  description: Cell-free spent medium from Gluconobacter oxydans NRRL B58 released a reported
+    approximately 49% of the total acid-digestible rare-earth inventory from one spent FCC feed.
+    The observation supports laboratory biolixiviant leaching; it is neither an element-specific
+    yield nor isolated rare-earth product recovery.
+  context: Reed et al. obtained spent FCC catalyst from Valero, Houston, with average particle
+    size 80-90 micrometres and reported 55-60% Al2O3 and 35-40% SiO2. Table 1 shows a lanthanum-dominated
+    REE inventory, determined by repeated HCl/HNO3 digestion at 125 degrees C and ICP-MS. B58
+    obtained from USDA NRRL was grown for four days in modified Pikovskaya medium (Pkm), 30
+    degrees C, 150 rpm. Comparator PkmT cultures contained added tryptone and were grown at
+    20 degrees C, so this comparison changes both medium composition and growth temperature.
+    The supernatant was centrifuged at 10000 x g for 20 minutes and sterilized through a 0.22-micrometre
+    filter. Triply autoclaved FCC feed at 1.5% w/v was leached in 50 mL tubes for 24 hours at
+    30 degrees C and 150 rpm, in triplicate. Leachates were filtered through 0.22-micrometre
+    filters and analyzed by ICP-MS. Sterile medium and 10, 30 and 90 mM gluconic acid in medium
+    were comparators. This is a laboratory tube experiment using industrially sourced waste.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:442
+    label: Gluconobacter oxydans
+  evidence:
+  - source_ref: reed_2016
+    supports: support
+    explanation: Sections 2.5, 2.7, 3.2 and 3.4, Figures 3 and 5 report approximately 49% total REE
+      leaching with B58 Pkm supernatant, versus near-baseline sterile-medium controls. Figure
+      5 reports roughly 24%, 36% and 45% with 10, 30 and 90 mM abiotic gluconic acid. Bars describe
+      total-REE percentages relative to the characterized feed, with standard deviations from
+      triplicate experiments; they are not lanthanum or cerium yields. The PkmT treatment in
+      Figure 3 is about 33% for B58 versus about 49% in Pkm. PkmT and Pkm cultures were grown
+      at 20 and 30 degrees C, respectively, before both supernatants were used for leaching
+      at 30 degrees C. The lower PkmT value cannot isolate a tryptone effect because medium
+      and preculture temperature changed together.
+  - source_ref: reed_2016
+    supports: partial
+    explanation: Section 3.6 gives initial pH 2.3 for the B58 supernatant containing 12.5 mM
+      gluconic acid, versus 3.2, 2.9 and 2.5 for the three chemical controls. Their unmatched
+      acidity prevents assigning the difference to a unique microbial ligand effect. Gluconic
+      and 2-ketogluconic acids were measured, but the proposed 2,5-diketogluconic acid was not
+      verified because its standard was unavailable. No specific enzyme mechanism is established.
+      FCC assays used bacterial supernatants only; whole-cell/fungal and biosorption findings
+      from phosphor experiments must not be transferred to FCC. No purified product, complete
+      mass balance, economic feasibility or industrial deployment was demonstrated.
+curation_history:
+- timestamp: '2026-10-11T09:26:04.458978+00:00'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Created the distinct secondary-resource identity and source-scoped laboratory evidence,
+    preserving control, measurement, scale and source-consistency limitations.
+- timestamp: '2026-10-11T09:35:34.405602+00:00'
+  curator: Codex (GPT-6; Codex)
+  action: EDIT
+  summary: 'Address independent review: expose the Pkm 30-degree-C versus PkmT 20-degree-C preculture-temperature
+    confound, distinguishing their common 30-degree-C leach from microbial growth conditions.'
+history_refs:
+- history/records/spent-fluid-catalytic-cracking-catalyst/2026-10-11T092615Z-codex-078bef.yaml
+- history/records/spent-fluid-catalytic-cracking-catalyst/2026-10-11T093536Z-codex-5dee7e.yaml

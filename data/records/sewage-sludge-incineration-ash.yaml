@@ -1,0 +1,71 @@
+id: cmmmech:sewage-sludge-incineration-ash
+name: Sewage-sludge incineration ash
+material_kind: secondary_resource
+description: Ash from thermal treatment of sewage sludge, distinct from unburned sludge, municipal-solid-waste
+  incineration ash and coal fly ash. It is a heterogeneous secondary resource rather than a
+  phosphate mineral species or individual critical element. The selected ash-B feed has unresolved
+  fly/bottom fraction and host phases. Its source also supplies the separate municipal-waste
+  ash and niobium records; those are linked views of one study, not additional experiments.
+sources:
+- id: andrzejewska_gorecka_2019
+  title: Andrzejewska-Gorecka et al. (2019). Release of critical metals from furnace wastes
+    using the process of bioleaching in various variants. Archives of Environmental Protection
+    45(3):72-78. DOI 10.24425/aep.2019.128643; research methods pp.73-74, Tables 1-4, Figures
+    1-9.
+  url: https://doi.org/10.24425/aep.2019.128643
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: sludge_culture_ash_b_release
+  name: Limited and condition-dependent metal release from sewage-sludge ash
+  process: bioleaching
+  description: The sludge-derived culture assay reports modest niobium release in all three
+    conditions and a higher indium release only in the aerated 24 degrees C condition. These
+    source-level observations remain qualified by undefined controls and analytical fractions;
+    they are not a demonstrated recovery process for every sewage-sludge ash.
+  context: 'A living mixed culture derived from municipal activated sludge was adapted at 24
+    degrees C and 120 rpm in sludge:distilled water 1:1 with 1% powdered sulfur (percentage
+    basis unspecified), until pH below 3 and reported sulfur-oxidizer index 10^-6. Each 300
+    mL flask contained 150 mL culture and 10 g ash for five days. Taxa, strains, treatment-plant
+    identity, ash mineralogy, particle size, sterilization and detailed provenance are unresolved.
+    Table 2 defines three variants: 24 degrees C/120 rpm without compressed air; 24 degrees
+    C with air providing mixing; and 37 degrees C/50 rpm without compressed air. Three corresponding
+    controls were averaged because their results were reportedly similar. ICP-OES measured metal
+    content. This is a laboratory flask assay. Initial ash-B contents were 15.3 mg/kg Nb, 120.0
+    mg/kg In and 43.3 mg/kg Rh. Starting pH below 3 rose to 9, 8 and 9 in variants 1-3.'
+  microbial: true
+  evidence:
+  - source_ref: andrzejewska_gorecka_2019
+    supports: support
+    explanation: Figures 6-8 report ash-B Nb release of 14.6%, 14.5% and 14.7% versus 5.9% averaged
+      control; In release 10.2%, 53.1% and 3.5% versus 3.4% control; and Rh release 20.3%, 10.6%
+      and 8.3% versus 4.1% control. The formula on p.74 normalizes leaching-culture metal concentration
+      times volume to measured initial ash inventory. These reported percentages are not purified-product
+      yields. The 37 degrees C indium result is numerically near the averaged control without
+      a statistical test of equivalence.
+  - source_ref: andrzejewska_gorecka_2019
+    supports: partial
+    explanation: Methods do not define control composition, inoculum exclusion, sterilization
+      or matched acidity. Filtration/centrifugation, leach-sample digestion, culture-background
+      subtraction and detection limits are unspecified, so dissolved metal cannot be distinguished
+      confidently from colloidal/particulate material or sludge contributions. Three instrument
+      exposures are not evidence of independent biological triplicates; replicate counts, error
+      bars and statistical tests are absent. Table 4 calls variant 3 120 rpm while Table 2 and
+      figures say 50 rpm. Its caption ambiguously mentions culture while running text defines
+      released amount per kg waste. No phase-specific dissolution, isolated product purity,
+      closed mass balance or industrial deployment was shown.
+  - source_ref: andrzejewska_gorecka_2019
+    supports: partial
+    explanation: Table 4 labels the ash-B rhodium row Rd, which is not a valid element symbol;
+      Figures 6 and running text use rhodium, and the inconsistency is retained rather than
+      adopting an Rd identity. Ash-B niobium remains far below the ash-A shaken result despite
+      the common culture preparation, so ash-A complete-release wording cannot be transferred.
+      Table 1 dashes for Cd and Cr do not establish analytically proven absence or zero concentration.
+      Alkalinity and unspecified mineral hosts constrain chemical interpretation.
+curation_history:
+- timestamp: '2026-10-11T09:26:04.474425+00:00'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Created the distinct secondary-resource identity and source-scoped laboratory evidence,
+    preserving control, measurement, scale and source-consistency limitations.
+history_refs:
+- history/records/sewage-sludge-incineration-ash/2026-10-11T092622Z-codex-0a1911.yaml
