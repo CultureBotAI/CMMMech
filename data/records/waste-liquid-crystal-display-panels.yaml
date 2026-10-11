@@ -1,0 +1,112 @@
+id: cmmmech:waste-liquid-crystal-display-panels
+name: Waste liquid-crystal display panels
+material_kind: secondary_resource
+description: >-
+  Discarded liquid-crystal display (LCD) panels, a manufactured composite
+  resource containing glass and indium-tin-oxide-bearing layers. The curated
+  experiment used dismantled panels from spent mobile phones, not whole
+  devices, pure indium tin oxide, a single mineral or all display technologies.
+  Its prepared powder is a study-specific fraction of this resource. No
+  criticality designation is inherited from indium or tin.
+sources:
+  - id: willner2018
+    title: >-
+      Willner, Fornalczyk, Gajda and Saternus (2018). Bioleaching of indium
+      and tin from used LCD panels. Physicochemical Problems of Mineral
+      Processing 54(3):639-645, DOI 10.5277/ppmp1878; Sections 2-4,
+      Figures 1-4 and Tables 1-2. Institutional copy of published article.
+    url: https://dbc.wroc.pl/Content/43709/PDF/PPoMP_2018_54_3_639_645.pdf
+    accessed_on: '2026-10-11'
+  - id: ncbi_ferrooxidans
+    title: 'NCBI Taxonomy 920: Acidithiobacillus ferrooxidans; species, not experimental isolate'
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=info
+    accessed_on: '2026-10-11'
+  - id: ncbi_thiooxidans
+    title: 'NCBI Taxonomy 930: Acidithiobacillus thiooxidans; species, not experimental isolate'
+    url: https://www.ncbi.nlm.nih.gov/taxonomy/930
+    accessed_on: '2026-10-11'
+mechanisms:
+  - id: adapted_acidophile_lcd_leaching
+    name: Culture-associated indium mobilization from prepared waste LCD powder
+    process: bioleaching
+    microbial: true
+    organisms:
+      - id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+      - id: NCBITaxon:930
+        label: Acidithiobacillus thiooxidans
+    description: >-
+      An adapted mixed acidophile culture increased indium in filtered leachate
+      relative to sterile controls in the tested laboratory systems. Tin also
+      entered solution, but the iron-containing sterile control performed
+      comparably or better for tin. Changing acidity, iron chemistry and
+      precipitation prevent assignment of the observed contrast to one
+      organism or a demonstrated direct biological oxidation of the oxide feed.
+    context: >-
+      Panels from different mobile-phone models were manually dismantled;
+      glass bearing ITO was crushed and sieved below 1.0 mm. Material still
+      adhering to plastic was milled below 0.5 mm, and its recovered fraction
+      was combined and homogenized with the first fraction. Section 2 reports
+      0.1% In and 0.025% Sn by MP-AES, without a complete digestion protocol.
+      The A. ferrooxidans isolate originated from Polish ferruginous mineral
+      water and A. thiooxidans from Smolnik mine water; no strain accession or
+      mixture ratio is supplied. Species identifiers do not identify these
+      isolates. Living cultures were serially transferred in modified 9K
+      medium and adapted for four weeks with LCD additions every three days.
+      Laboratory flasks at 30 degrees C used 2.5% w/v prepared powder,
+      10 mL mixed inoculum, nominal initial pH 1.9 and either modified 9K
+      containing ferrous sulfate or sulfuric-acid solution, both with 2 g
+      elemental sulfur. The stated modified 9K recipe includes 44.2 g/L
+      FeSO4.7H2O and 10 g/L sulfur; the relationship to the separate 2 g
+      addition is not fully specified. Sterile controls ran in parallel for
+      35 days. Regular 5 mL samples were filtered and measured by MP-AES.
+      The paper describes two experimental series but does not establish
+      independent replicate numbers, error bars, assay working volume,
+      sampling replacement or a complete metal mass balance. Controls do
+      not match the changing pH and redox trajectories of inoculated flasks.
+    evidence:
+      - source_ref: willner2018
+        supports: support
+        explanation: >-
+          Section 2 and Figure 1 establish the actual waste-panel feed.
+          Section 3.2, Figure 4A and Table 2 support increased indium in
+          the inoculated 9K filtrate: day-35 concentrations are 13.90 versus
+          0.82 mg/dm3 in the sterile control. The authors report 55.6%
+          extraction in the inoculated system relative to the feed inventory;
+          this is a reported solution-based endpoint, not isolated indium
+          yield or recovery from whole phones. Figure 2 shows different
+          chemical trajectories, limiting causal interpretation of the contrast.
+      - source_ref: willner2018
+        supports: partial
+        explanation: >-
+          Figure 4B and Table 2 limit any general microbial advantage: at
+          day 35 the 9K inoculated and sterile filtrates contain 3.15 and
+          4.59 mg/dm3 Sn, respectively. The author-reported maxima of 90.2%
+          and 93.4% occur on different days, 14 and 21. Concentrations then
+          decline. The text's peak tin concentration and percentage do not
+          exactly agree with the nominal feed inventory, and its common
+          3.4% indium-control statement does not reconcile both control
+          concentrations in Table 2. These are unresolved source quantities,
+          not a basis for corrected or pooled yields.
+      - source_ref: willner2018
+        supports: partial
+        explanation: >-
+          Sections 3.1-3.2, Figure 3 and Table 1 provide SEM-EDS and
+          solution measurements, not definitive crystalline jarosite or tin
+          precipitate identification, metal-valence measurements or proof
+          of an exclusive Fe-mediated pathway. Proposed reprecipitation,
+          indium oxidation and separation remain interpretations. The EDS
+          spectrum is labelled pt1 whereas Table 1 names pt2. Neither
+          isolated metal product, closed mass balance nor industrial
+          deployment was demonstrated.
+curation_history:
+  - timestamp: '2026-10-11T13:46:10Z'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Added the waste LCD panel resource and primary mixed-culture leaching
+      evidence, preserving sterile tin comparisons, source discrepancies,
+      uncertain phase and causal interpretations, and laboratory scale.
+      Independent scientific review is separate.
+history_refs:
+  - history/records/waste-liquid-crystal-display-panels/2026-10-11T134610Z-codex-b0f4f2.yaml

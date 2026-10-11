@@ -1,0 +1,532 @@
+# Cobalt-rich ferromanganese crusts round23 independent scientific review
+
+- Review: 20261011T135718Z-cobalt-rich-ferromanganese-crusts-round23-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T13:51:38Z
+- Finished UTC: 2026-10-11T13:57:18Z
+- Reviewer: Codex /root/round23_identity_gaps (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Conditional community-associated aqueous metal redistribution is defensible at the stated laboratory scope. Azide chemistry, stronger abiotic nickel sorption, internal statistical tensions, indirect endpoints and access limitations are retained. Unchanged geological identity is explicitly carried forward from its prior independent review. No actionable findings for these frozen bytes.
+
+## Scope And Provenance
+
+Entire changed record, linked histories and round23 dossiers. Fresh primary-science assessment covers the new mechanism and companion control context. Unchanged identity statements are compared with base and prior review without claiming a fresh mineralogical literature audit.
+
+Selection: One assigned maintained record; no corpus sampling.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 80899a3d3ea5c0f7c5d54f1b3583e43768e92767.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:cobalt-rich-ferromanganese-crusts | data/records/cobalt-rich-ferromanganese-crusts.yaml | maintained | Cobalt-rich ferromanganese crusts |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Canonical target and context inspection | passed | True | cmmmech:cobalt-rich-ferromanganese-crusts | Final context-extension inspect exited 0; original pre-assessment target and context bytes remain unchanged. |
+| Strict named-record validation | passed | True | cmmmech:cobalt-rich-ferromanganese-crusts | Executed by reviewer: terminal session 51748 exit 0; Checked 1 record(s); 0 failed. |
+| Native full checks | passed | True | cmmmech:cobalt-rich-ferromanganese-crusts | Executed by coordinating root; reviewer read actual log and receipt and verified exact target hash. /private/tmp/cmm-round23-final-batch.log: uv run --locked --extra dev python scripts/check.py<br>All checks passed!<br>........................................................................ [ 23%]<br>........................................................................ [ 46%]<br>........................................................................ [ 69%]<br>....................................................sss................. [ 92%]<br>.......................                                                  [100%]<br>308 passed, 3 skipped in 93.20s (0:01:33)<br>Checked 156 record(s); 0 failed.<br>Checked 177 history record(s); 0 error(s).<br> |
+| Required corpus | passed | True | cmmmech:cobalt-rich-ferromanganese-crusts | Executed by coordinating root; reviewer read actual log and receipt and verified exact target hash. /private/tmp/cmm-round23-final-require.log: Checked 156 record(s); 0 failed.<br> |
+| Trusted-base history | passed | True | cmmmech:cobalt-rich-ferromanganese-crusts | Executed by coordinating root; reviewer read actual log and receipt and verified exact target hash. /private/tmp/cmm-round23-final-history.log: Checked 177 history record(s); 0 error(s).<br> |
+
+## Scientific And Domain Assessments
+
+### Preserved resource and criticality boundaries
+
+identity: supported. Targets: cmmmech:cobalt-rich-ferromanganese-crusts.
+
+One heterogeneous primary_resource is retained, distinct from nodules, pure minerals and constituents. Prior identity support is explicitly carried forward after comparison.
+
+### Experimental scope and conditional community association
+
+evidence: supported. Targets: cmmmech:cobalt-rich-ferromanganese-crusts.
+
+The narrow observation is supported with unresolved sorption versus precipitation and no exclusive biological causation. The control caveat is reinforced by a separately scoped primary companion study.
+
+### Adverse controls and source contradictions
+
+consistency: supported. Targets: cmmmech:cobalt-rich-ferromanganese-crusts.
+
+The record avoids a universal microbial enrichment claim by retaining contrary Ni behavior and the source statistical/endpoint problems. Missing raw data and figure access are explicit and do not support extra numerical or phase claims.
+
+### Exact bytes and append-only present curation
+
+provenance: supported. Targets: cmmmech:cobalt-rich-ferromanganese-crusts.
+
+Original provenance remains unchanged. The new inline EDIT and distinct sidecar name the actual actor/model and new scope, while requiring independent review. Current bytes match inspected and validated target.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| focal | https://www.researchgate.net/profile/Sujith-Pp/publication/314489316_Microbial_activity_promotes_the_enrichment_of_cobalt_over_nickel_on_hydrogenetic_ferromanganese_crusts/links/5a099c43458515afc7afbe29/Microbial-activity-promotes-the-enrichment-of-cobalt-over-nickel-on-hydrogenetic-ferromanganese-crusts.pdf; DOI 10.1080/1064119X.2017.1298169: cover, Methods pp.1159–1160, Results pp.1161–1163, Tables 1–3, Discussion pp.1163–1165. Author HTML independently opened as well. | partial | Tables support treatment-specific observations, including stronger Ni sorption in unamended poisoned controls. Endpoint equation, Results statement and temperature discussion contain the retained tensions. Table 1 lists triplicates and blanks but not their complete raw outputs. |
+| companion | https://www.academia.edu/31609668/Bacterial_activity_in_hydrogenetic_ferromanganese_crust_from_the_Indian_Ocean_a_combined_geochemical_experimental_and_pyrosequencing_study; DOI 10.1007/s12665-017-6495-y; Methods pp.2,4–5; publisher article page also independently opened. | context_only | Different 1987 m sampling and pressure bags distinguish this study. Authors explicitly add autoclaved controls because azide may chemically affect crust metals. No controls, taxon roles or performance are transferred into the focal experiment. |
+| prior_identity | reviews/structured/20261011T124733Z-cobalt-rich-ferromanganese-crusts-round21-independent/review.yaml; Entire earlier independent review, especially identity assessment, evidence hashes and identity-only scope. | supports | Earlier independent review accepted the primary-resource boundary with official USGS and primary Maciąg characterization. Current identity fields and description prefix, original sources, inline CREATE and sidecar are preserved. This is carryforward, not fresh mineralogical verification. |
+| record | data/records/cobalt-rich-ferromanganese-crusts.yaml; Entire record, linked CREATE/EDIT histories, working diff and frozen round23 source dossiers. | supports | The record preserves unresolved community and pathway, no external taxon ID, no inherited criticality and no isolated product or industrial claim. |
+| preservation | /private/tmp/cmm-round23-crust-review-preservation.json; Programmatic comparison against 80899a3d3ea5c0f7c5d54f1b3583e43768e92767; old sidecar byte comparison. | supports | Identity fields and description prefix, old sources, inline history and history reference are unchanged. Committed CREATE sidecar is byte-identical; new EDIT describes actual GPT-6/codex curation. Current target equals gated hash. |
+| search | Live web search and /private/tmp/cmm-round23-crust-review-dedup.json; First returned results; no date/domain filters or pagination. | context_only | Returned searches did not expose an affecting correction notice. Local matches include this target and contextual records/research/reviews; no competing crust root was identified in the bounded paths. |
+| gates | /private/tmp/cmm-round23-gate-receipts.json; Actual final-batch, final-require and final-history logs read, and gated-record-hashes JSON checked. | supports | 308 passed, 3 skipped; 156 records, 177 histories valid. Required-record and trusted-base history checks exited 0; separate reviewer named validation passed. |
+
+## Limits And Additional Notes
+
+- Focal author PDF opened as 11 pages, but reviewer screenshot requests for pages 5 and 6 returned text placeholders; no figure pixels were visually inspected. Methods and Tables 1–3 were readable in primary PDF text and author HTML. No figure values or microscopic phase identification are imported.
+- Supplemental Tables S1–S4, raw replicates and complete blank-correction outputs were unavailable. Quantitative cobalt amounts were not independently reconstructed.
+- Chemically active azide limits causal attribution; autoclaved controls from the separate pressure study are not matched controls for the focal experiment.
+- Unchanged identity is carried forward from the cited earlier independent review after parsed-field comparison. No fresh visual inspection of USGS or Maciąg sources is claimed.
+- Correction and contrary-source searches cover first returned results only, not exhaustive literature or proof that no corrections exist.
+- Initial inspect session 49261 completed before assessment. Final inspect session 25010 added the already-read prior identity review and preserved CREATE sidecar; all original six input hashes remained unchanged.
+- Root gates finished 2026-10-11T13:52:13.596367+00:00. Reviewer read actual logs and matched inspected/current/gated record hashes.
+- No corrections made by this reviewer. No isolated product, exact receiving phase or deployment is established by this qualified pass.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T135718Z-cobalt-rich-ferromanganese-crusts-round23-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cobalt-rich ferromanganese crusts round23 independent scientific review
+started_at: '2026-10-11T13:51:38Z'
+finished_at: '2026-10-11T13:57:18Z'
+reviewer:
+  identity: Codex /root/round23_identity_gaps
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer curated the separate automotive catalyst record; did
+    not author or edit this crust target, history or dossier. Canonical inspect preceded
+    assessment. Primary methods, Tables 1–3 and companion full text were independently
+    reopened.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Conditional community-associated aqueous metal redistribution is defensible
+  at the stated laboratory scope. Azide chemistry, stronger abiotic nickel sorption,
+  internal statistical tensions, indirect endpoints and access limitations are retained.
+  Unchanged geological identity is explicitly carried forward from its prior independent
+  review. No actionable findings for these frozen bytes.
+source:
+  git_revision: 80899a3d3ea5c0f7c5d54f1b3583e43768e92767
+  state: working_tree
+  inputs:
+  - path: data/records/cobalt-rich-ferromanganese-crusts.yaml
+    sha256: 3747a06280bd81f0e1ee93ed4aa27991ccb18ff47b074cbed12b19f3dfdcacaf
+    role: target
+  - path: history/records/cobalt-rich-ferromanganese-crusts/2026-10-11T124018Z-codex-131327.yaml
+    sha256: 3d0ff311e75d1da63e8a186adc9e49241331d848d7ac19f23a5b30242da34eb6
+    role: context
+  - path: history/records/cobalt-rich-ferromanganese-crusts/2026-10-11T134811Z-codex-cb3d65.yaml
+    sha256: d2f9dd32447e445516761234fc35e6cb81efa8811c0945e55c0471abc1ca563f
+    role: context
+  - path: research/ingests/round23-crusts-sources-20261011.json
+    sha256: df45af1840ecfba22f29a9f20dd7250556b18bab5687a65427cf863dbc576021
+    role: context
+  - path: research/ingests/round23-crusts-sources-20261011.md
+    sha256: e7f9e157a06507bc96fd05281335baab9d2a6d25709ac5d1849130d858eaad2a
+    role: context
+  - path: research/sources/round23-crusts/20261011T135041Z-source-investigation.md
+    sha256: accdeda57bf6d2a22756701de5dae5a3960d315771be35c4989b4a7d5a61719e
+    role: context
+  - path: reviews/structured/20261011T124733Z-cobalt-rich-ferromanganese-crusts-round21-independent/review.yaml
+    sha256: 3d956b0618f2bb85ed0bb3ed44e5ce0dec8e35a501218bbca26da44ff00650a0
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:cobalt-rich-ferromanganese-crusts
+  path: data/records/cobalt-rich-ferromanganese-crusts.yaml
+  label: Cobalt-rich ferromanganese crusts
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cobalt-rich-ferromanganese-crusts.yaml
+    role: maintained_record
+scope:
+  description: Entire changed record, linked histories and round23 dossiers. Fresh
+    primary-science assessment covers the new mechanism and companion control context.
+    Unchanged identity statements are compared with base and prior review without
+    claiming a fresh mineralogical literature audit.
+  selection: One assigned maintained record; no corpus sampling.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:cobalt-rich-ferromanganese-crusts
+checks:
+- check_id: inspect
+  name: Canonical target and context inspection
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    python scripts/record_review.py inspect --targets /private/tmp/cmm-round23-crusts-review-targets.yaml
+    --input history/records/cobalt-rich-ferromanganese-crusts/2026-10-11T124018Z-codex-131327.yaml
+    --input history/records/cobalt-rich-ferromanganese-crusts/2026-10-11T134811Z-codex-cb3d65.yaml
+    --input research/ingests/round23-crusts-sources-20261011.json --input research/ingests/round23-crusts-sources-20261011.md
+    --input research/sources/round23-crusts/20261011T135041Z-source-investigation.md
+    --input reviews/structured/20261011T124733Z-cobalt-rich-ferromanganese-crusts-round21-independent/review.yaml
+    --input src/cmmmech/schema/cmmmech.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Final context-extension inspect exited 0; original pre-assessment target
+    and context bytes remain unchanged.
+  target_ids:
+  - cmmmech:cobalt-rich-ferromanganese-crusts
+- check_id: record
+  name: Strict named-record validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/cobalt-rich-ferromanganese-crusts.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Executed by reviewer: terminal session 51748 exit 0; Checked 1 record(s);
+    0 failed.'
+  target_ids:
+  - cmmmech:cobalt-rich-ferromanganese-crusts
+- check_id: batch
+  name: Native full checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Executed by coordinating root; reviewer read actual log and receipt and
+    verified exact target hash. /private/tmp/cmm-round23-final-batch.log: uv run --locked
+    --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 93.20s (0:01:33)
+
+    Checked 156 record(s); 0 failed.
+
+    Checked 177 history record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:cobalt-rich-ferromanganese-crusts
+- check_id: require
+  name: Required corpus
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Executed by coordinating root; reviewer read actual log and receipt and
+    verified exact target hash. /private/tmp/cmm-round23-final-require.log: Checked
+    156 record(s); 0 failed.
+
+    '
+  target_ids:
+  - cmmmech:cobalt-rich-ferromanganese-crusts
+- check_id: history
+  name: Trusted-base history
+  command: uv run --locked cmmmech validate-history --base 80899a3d3ea5c0f7c5d54f1b3583e43768e92767
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Executed by coordinating root; reviewer read actual log and receipt and
+    verified exact target hash. /private/tmp/cmm-round23-final-history.log: Checked
+    177 history record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:cobalt-rich-ferromanganese-crusts
+evidence:
+- evidence_id: focal
+  kind: primary_source
+  reference: https://www.researchgate.net/profile/Sujith-Pp/publication/314489316_Microbial_activity_promotes_the_enrichment_of_cobalt_over_nickel_on_hydrogenetic_ferromanganese_crusts/links/5a099c43458515afc7afbe29/Microbial-activity-promotes-the-enrichment-of-cobalt-over-nickel-on-hydrogenetic-ferromanganese-crusts.pdf
+  locator: 'DOI 10.1080/1064119X.2017.1298169: cover, Methods pp.1159–1160, Results
+    pp.1161–1163, Tables 1–3, Discussion pp.1163–1165. Author HTML independently opened
+    as well.'
+  accessed_at: '2026-10-11T13:57:18Z'
+  support: partial
+  summary: Tables support treatment-specific observations, including stronger Ni sorption
+    in unamended poisoned controls. Endpoint equation, Results statement and temperature
+    discussion contain the retained tensions. Table 1 lists triplicates and blanks
+    but not their complete raw outputs.
+- evidence_id: companion
+  kind: primary_source
+  reference: https://www.academia.edu/31609668/Bacterial_activity_in_hydrogenetic_ferromanganese_crust_from_the_Indian_Ocean_a_combined_geochemical_experimental_and_pyrosequencing_study
+  locator: DOI 10.1007/s12665-017-6495-y; Methods pp.2,4–5; publisher article page
+    also independently opened.
+  accessed_at: '2026-10-11T13:57:18Z'
+  support: context_only
+  summary: Different 1987 m sampling and pressure bags distinguish this study. Authors
+    explicitly add autoclaved controls because azide may chemically affect crust metals.
+    No controls, taxon roles or performance are transferred into the focal experiment.
+- evidence_id: prior_identity
+  kind: prior_review
+  reference: reviews/structured/20261011T124733Z-cobalt-rich-ferromanganese-crusts-round21-independent/review.yaml
+  locator: Entire earlier independent review, especially identity assessment, evidence
+    hashes and identity-only scope.
+  accessed_at: '2026-10-11T13:57:18Z'
+  support: supports
+  summary: Earlier independent review accepted the primary-resource boundary with
+    official USGS and primary Maciąg characterization. Current identity fields and
+    description prefix, original sources, inline CREATE and sidecar are preserved.
+    This is carryforward, not fresh mineralogical verification.
+  snapshot_sha256: 3d956b0618f2bb85ed0bb3ed44e5ce0dec8e35a501218bbca26da44ff00650a0
+- evidence_id: record
+  kind: record_content
+  reference: data/records/cobalt-rich-ferromanganese-crusts.yaml
+  locator: Entire record, linked CREATE/EDIT histories, working diff and frozen round23
+    source dossiers.
+  accessed_at: '2026-10-11T13:57:18Z'
+  support: supports
+  summary: The record preserves unresolved community and pathway, no external taxon
+    ID, no inherited criticality and no isolated product or industrial claim.
+  snapshot_sha256: 3747a06280bd81f0e1ee93ed4aa27991ccb18ff47b074cbed12b19f3dfdcacaf
+- evidence_id: preservation
+  kind: record_content
+  reference: /private/tmp/cmm-round23-crust-review-preservation.json
+  locator: Programmatic comparison against 80899a3d3ea5c0f7c5d54f1b3583e43768e92767;
+    old sidecar byte comparison.
+  accessed_at: '2026-10-11T13:57:18Z'
+  support: supports
+  summary: Identity fields and description prefix, old sources, inline history and
+    history reference are unchanged. Committed CREATE sidecar is byte-identical; new
+    EDIT describes actual GPT-6/codex curation. Current target equals gated hash.
+  snapshot_sha256: a6c5966489ca82db76aee9578cab78f02f62630b2cfa8617b0a30896071d7d9f
+- evidence_id: search
+  kind: search
+  reference: Live web search and /private/tmp/cmm-round23-crust-review-dedup.json
+  locator: First returned results; no date/domain filters or pagination.
+  accessed_at: '2026-10-11T13:57:18Z'
+  support: context_only
+  summary: Returned searches did not expose an affecting correction notice. Local
+    matches include this target and contextual records/research/reviews; no competing
+    crust root was identified in the bounded paths.
+  search_scope: 'Queries: "10.1080/1064119X.2017.1298169" correction retraction; "hydrogenetic
+    ferromanganese crusts" "sodium azide" "nickel". Local rg --no-ignore --hidden
+    --follow -l -i for cobalt.rich.ferromanganese.crust|10.1080/1064119X.2017.1298169|s12665-017-6495-y
+    over data/records, research, history, reviews and /private/tmp/cmm-round23-crusts-raw:
+    exit 0, 32 file matches, empty stderr. Hidden and ignored included; symlinks followed;
+    not machine-wide absence.'
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round23-gate-receipts.json
+  locator: Actual final-batch, final-require and final-history logs read, and gated-record-hashes
+    JSON checked.
+  accessed_at: '2026-10-11T13:57:18Z'
+  support: supports
+  summary: 308 passed, 3 skipped; 156 records, 177 histories valid. Required-record
+    and trusted-base history checks exited 0; separate reviewer named validation passed.
+  snapshot_sha256: 1642db5c291aad5a85764aef2e8ad13b1c4511bc3cfd60c25123461f5dbd0096
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Preserved resource and criticality boundaries
+  outcome: supported
+  summary: One heterogeneous primary_resource is retained, distinct from nodules,
+    pure minerals and constituents. Prior identity support is explicitly carried forward
+    after comparison.
+  target_ids:
+  - cmmmech:cobalt-rich-ferromanganese-crusts
+  evidence_ids:
+  - record
+  - prior_identity
+  - preservation
+  - search
+  dimensions:
+  - name: material_form
+    value: Natural whole predominantly hydrogenetic crust; not a locality-created
+      secondary resource.
+    definition: Scope retained in the reviewed record and linked evidence; no extension
+      beyond this claim.
+    evidence_ids:
+    - record
+    - prior_identity
+    - preservation
+    - search
+  - name: criticality
+    value: No authority, jurisdiction, list or edition designation asserted or inherited.
+    definition: Scope retained in the reviewed record and linked evidence; no extension
+      beyond this claim.
+    evidence_ids:
+    - record
+    - prior_identity
+    - preservation
+    - search
+  - name: identifiers
+    value: No taxon, mineral or element CURIE assigned to the unresolved community
+      or heterogeneous resource.
+    definition: Scope retained in the reviewed record and linked evidence; no extension
+      beyond this claim.
+    evidence_ids:
+    - record
+    - prior_identity
+    - preservation
+    - search
+- assessment_id: mechanism
+  area: evidence
+  topic: Experimental scope and conditional community association
+  outcome: supported
+  summary: The narrow observation is supported with unresolved sorption versus precipitation
+    and no exclusive biological causation. The control caveat is reinforced by a separately
+    scoped primary companion study.
+  target_ids:
+  - cmmmech:cobalt-rich-ferromanganese-crusts
+  evidence_ids:
+  - focal
+  - companion
+  - record
+  dimensions:
+  - name: organism
+    value: Unresolved resident community, no species/strain/gene causality.
+    definition: Scope retained in the reviewed record and linked evidence; no extension
+      beyond this claim.
+    evidence_ids:
+    - focal
+    - companion
+    - record
+  - name: biomass
+    value: Unpoisoned natural community; total counts are not viability-specific.
+    definition: Scope retained in the reviewed record and linked evidence; no extension
+      beyond this claim.
+    evidence_ids:
+    - focal
+    - companion
+    - record
+  - name: substrate
+    value: Hammered/rinsed natural ANS crust at 2204 m, stored in filtered/autoclaved
+      water.
+    definition: Scope retained in the reviewed record and linked evidence; no extension
+      beyond this claim.
+    evidence_ids:
+    - focal
+    - companion
+    - record
+  - name: conditions_controls
+    value: Approximately 1 g/10 mL, dark 30/50-day tubes, 0 or 0.1% glucose, 4°C or
+      nominal 28°C; triplicates, blanks and 15 mM azide. Temperature tolerance inconsistency
+      preserved.
+    definition: Scope retained in the reviewed record and linked evidence; no extension
+      beyond this claim.
+    evidence_ids:
+    - focal
+    - companion
+    - record
+  - name: endpoint
+    value: Interval-specific aqueous concentration difference, not directly quantified
+      solid accumulation or isolated yield.
+    definition: Scope retained in the reviewed record and linked evidence; no extension
+      beyond this claim.
+    evidence_ids:
+    - focal
+    - companion
+    - record
+  - name: deployment
+    value: Laboratory only, no industrial recovery claim.
+    definition: Scope retained in the reviewed record and linked evidence; no extension
+      beyond this claim.
+    evidence_ids:
+    - focal
+    - companion
+    - record
+- assessment_id: counterevidence
+  area: consistency
+  topic: Adverse controls and source contradictions
+  outcome: supported
+  summary: The record avoids a universal microbial enrichment claim by retaining contrary
+    Ni behavior and the source statistical/endpoint problems. Missing raw data and
+    figure access are explicit and do not support extra numerical or phase claims.
+  target_ids:
+  - cmmmech:cobalt-rich-ferromanganese-crusts
+  evidence_ids:
+  - focal
+  - record
+  dimensions:
+  - name: nickel
+    value: 'Reported Table 2 sorption at 4°C without glucose: biotic 1.89 versus azide
+      20.96 µg/g dry crust; amended arms release Ni.'
+    definition: Scope retained in the reviewed record and linked evidence; no extension
+      beyond this claim.
+    evidence_ids:
+    - focal
+    - record
+  - name: source_tension
+    value: Ni-only-biotic sentence conflicts with Table 2; glucose-amended Co temperature
+      P=0.736 conflicts with Discussion; initial-minus-final equation wording differs
+      from final interval interpretation.
+    definition: Scope retained in the reviewed record and linked evidence; no extension
+      beyond this claim.
+    evidence_ids:
+    - focal
+    - record
+  - name: uncertainty
+    value: No quantitative Co amount, direct receiving-phase identification or recovery
+      percentage adopted.
+    definition: Scope retained in the reviewed record and linked evidence; no extension
+      beyond this claim.
+    evidence_ids:
+    - focal
+    - record
+- assessment_id: provenance
+  area: provenance
+  topic: Exact bytes and append-only present curation
+  outcome: supported
+  summary: Original provenance remains unchanged. The new inline EDIT and distinct
+    sidecar name the actual actor/model and new scope, while requiring independent
+    review. Current bytes match inspected and validated target.
+  target_ids:
+  - cmmmech:cobalt-rich-ferromanganese-crusts
+  evidence_ids:
+  - record
+  - preservation
+  - gates
+findings: []
+actions: []
+limitations:
+- Focal author PDF opened as 11 pages, but reviewer screenshot requests for pages
+  5 and 6 returned text placeholders; no figure pixels were visually inspected. Methods
+  and Tables 1–3 were readable in primary PDF text and author HTML. No figure values
+  or microscopic phase identification are imported.
+- Supplemental Tables S1–S4, raw replicates and complete blank-correction outputs
+  were unavailable. Quantitative cobalt amounts were not independently reconstructed.
+- Chemically active azide limits causal attribution; autoclaved controls from the
+  separate pressure study are not matched controls for the focal experiment.
+- Unchanged identity is carried forward from the cited earlier independent review
+  after parsed-field comparison. No fresh visual inspection of USGS or Maciąg sources
+  is claimed.
+- Correction and contrary-source searches cover first returned results only, not exhaustive
+  literature or proof that no corrections exist.
+notes:
+- Initial inspect session 49261 completed before assessment. Final inspect session
+  25010 added the already-read prior identity review and preserved CREATE sidecar;
+  all original six input hashes remained unchanged.
+- Root gates finished 2026-10-11T13:52:13.596367+00:00. Reviewer read actual logs
+  and matched inspected/current/gated record hashes.
+- No corrections made by this reviewer. No isolated product, exact receiving phase
+  or deployment is established by this qualified pass.
+```

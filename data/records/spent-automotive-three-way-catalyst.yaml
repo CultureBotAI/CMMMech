@@ -1,0 +1,99 @@
+id: cmmmech:spent-automotive-three-way-catalyst
+name: Spent automotive three-way catalyst
+material_kind: secondary_resource
+description: Used automotive three-way catalytic-converter material, represented here by a real vehicle-treatment-centre
+  catalyst containing a ceramic support and metal-bearing coating. This use-defined secondary resource
+  is distinct from its constituent platinum-group elements, fresh catalyst, refinery hydrocracking or
+  hydrodesulfurization catalysts, and automotive wastewater-treatment sludge. The selected cryomilled
+  feed does not define every converter formulation. No constituent criticality designation is inherited.
+sources:
+- id: compagnone_2023
+  title: Compagnone, González-Cortés, Yeste, Cantero and Ramírez (2023). Bioleaching of the α-alumina
+    layer of spent three-way catalysts as a pretreatment for the recovery of platinum group metals. Journal
+    of Environmental Management 345:118825. DOI 10.1016/j.jenvman.2023.118825; Methods 2.1-2.6, Results
+    3.2-3.5, Figures 2-6. Full primary repository PDF inspected; supplementary files and underlying dataset
+    contents unavailable in this assessment.
+  url: https://doi.org/10.1016/j.jenvman.2023.118825
+  accessed_on: '2026-10-11'
+- id: dsm11478
+  title: 'DSMZ catalogue: Acidithiobacillus thiooxidans DSM 11478, strain designation Tth04. Confirms
+    collection strain identity; does not independently verify the experimental stock.'
+  url: https://www.dsmz.de/collection/catalogue/details/culture/DSM-11478
+  accessed_on: '2026-10-11'
+- id: ncbi_thiooxidans
+  title: 'NCBI Taxonomy 930: Acidithiobacillus thiooxidans, species. The species identifier is distinct
+    from DSM 11478 strain provenance.'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: dsm11478_biogenic_acid_pretreatment
+  name: Biogenic-acid pretreatment of spent three-way catalyst
+  process: bioleaching
+  microbial: true
+  description: Acidithiobacillus thiooxidans DSM 11478 cultures produced acidic media subsequently applied
+    to pulverized spent automotive catalyst. Culture-containing and bacteria-depleted media mobilized
+    aluminium, with a condition-dependent comparison against commercial sulfuric acid. The experiment
+    demonstrates a laboratory pretreatment observation, not phase-specific alumina removal, validated
+    platinum-group enrichment, isolated metal recovery or industrial deployment.
+  context: Compagnone et al. obtained a real spent three-way catalyst from the El Caimán authorized vehicle-treatment
+    centre in Cádiz and cryomilled it. The main text reports XRF feed aluminium and platinum; complete
+    composition is assigned to unavailable Table S1. Acid preparation used 180 mL 0K medium, 20 mL exponential-phase
+    inoculum and 2 g biogenic sulfur, at 30 degrees C and 150 rpm. The sulfur came from a separate anoxic
+    biogas-desulfurization process. Day-4 exponential and day-14 stationary cultures provided initially
+    pH 1 and pH 0.7 lixiviants; sulfur-removal filtration retained cells. Day-20 culture was centrifuged
+    at 1610 x g for 10 minutes to make the source-labelled bacteria-free pH 0.55 lixiviant; complete cell
+    removal was not independently demonstrated. Commercial sulfuric acid at pH 0.55 was the chemical comparator.
+    Each lixiviant treated 5, 30 or 60% w/v catalyst for 14 days at 30 degrees C and 150 rpm. These are
+    unlike culture ages and starting chemistries, not matched-pH microbial-versus-sterile pairs. Samples
+    were centrifuged at 1610 x g for 10 minutes, with recovered liquid analyzed by an aluminium photometric
+    assay and endpoint ICP-AES. The paper does not clearly report independent replicate counts for the
+    catalyst-leaching arms; triplication stated for the separate sulfur/pH experiment and local EDX measurements
+    must not be transferred to these arms.
+  organisms:
+  - id: NCBITaxon:930
+    label: Acidithiobacillus thiooxidans
+  evidence:
+  - source_ref: compagnone_2023
+    supports: support
+    explanation: Methods 2.1-2.5 and Figure 4 identify the feed and leaching comparison. At 5% w/v catalyst,
+      the day-14 stationary-culture acid gave higher reported liquid aluminium release than the bacteria-depleted,
+      exponential-culture and commercial-acid arms. Figure 4 gives 54.5%, 23.4%, 21.7% and 24.7%, respectively,
+      on the source's feed-normalized aluminium-leaching basis. These are reported leaching percentages,
+      not isolated-product recovery. The lower-loading advantage does not establish a universal advantage
+      of living cells or a specific gene or enzyme mechanism.
+  - source_ref: compagnone_2023
+    supports: partial
+    explanation: Figure 4 is narrower than Results 3.4 prose. At 30% w/v, the plotted bacteria-free value
+      of 5.9% exceeds the stationary-culture value of 5.1%; at 60% w/v, the plotted stationary-culture
+      2.5% slightly exceeds bacteria-free 2.4%. The text instead calls bacteria-free acid highest at both
+      high loadings and quotes 5.9% collectively. No significance assessment establishes that the 60%
+      difference is meaningful. The economic discussion separately uses 57.1% aluminium extraction where
+      the abstract, main result and Figure 4 use 54.5%. These discrepancies remain unresolved; neither
+      high-loading superiority nor a reconciled optimum is asserted.
+  - source_ref: compagnone_2023
+    supports: partial
+    explanation: Total-element aluminium in the recovered liquid cannot assign dissolution uniquely to
+      the alumina coating instead of the aluminium-bearing ceramic support. Initial sulfuric-acid concentration
+      was estimated rather than measured, and the differing ages, residual chemistry and pH trajectories
+      limit attribution to live cells. The main text's cell-count trends and microscopy suggest activity
+      and association, but they do not demonstrate sulfur-residue consumption, an EPS-specific causal
+      pathway or necessity of direct cell contact.
+  - source_ref: compagnone_2023
+    supports: partial
+    explanation: Results 3.4 calculates platinum-group enrichment from assumed retained platinum and aluminium
+      mass loss; it does not measure a recovered PGM product. That section reports non-detection of Pt
+      in post-treatment liquid and solid analyses, without a detection limit, while Results 3.5 reports
+      Pt in selected EDX-analyzed biological globules. Figures 5-6 show selected surfaces and aggregates,
+      not a bulk mass balance or proof of intracellular uptake. Local EDX composition is not a percentage
+      of feed platinum recovered. Source percentage bases also switch between w/w and w/v in discussing
+      feed composition. Unknown analytical detection limits, unresolved heterogeneous fractions and unavailable
+      supplementary composition prevent stronger recovery or purity claims.
+curation_history:
+- timestamp: '2026-10-11T13:46:54.274021+00:00'
+  curator: Codex (GPT-6; Codex; round23_identity_gaps)
+  action: CREATE
+  summary: Created a distinct spent automotive three-way-catalyst resource from rechecked primary evidence
+    and authority-verified organism identity; retained acid-comparator, figure/text, phase-assignment
+    and platinum-recovery limits.
+history_refs:
+- history/records/spent-automotive-three-way-catalyst/2026-10-11T134655Z-codex-971fce.yaml

@@ -1,0 +1,382 @@
+schema_version: 1.0.0
+review_id: 20261011T135255Z-lcd-panels-round23-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of waste liquid-crystal display panels
+started_at: '2026-10-11T13:49:16.086785Z'
+finished_at: '2026-10-11T13:52:55.571261Z'
+reviewer:
+  identity: Codex /root/round23_rey_mud
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored LCD record, history and source dossier; this separate
+    agent authored only the unrelated REY-mud update. Reviewer did not edit any LCD
+    input, independently read curator-acquired complete primary text and figure pixels,
+    checked live publisher and NCBI authority pages, and ran named validation. Parent-run
+    batch gates are disclosed.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The complete frozen LCD resource record is supported within its stated laboratory
+  and mixed-culture scope. Strong sterile tin extraction, unmatched chemistry, ambiguous
+  phase assignments, source numerical conflicts and missing full mass balance are
+  preserved. No actionable record defect found.
+source:
+  git_revision: 80899a3d3ea5c0f7c5d54f1b3583e43768e92767
+  state: working_tree
+  inputs:
+  - path: data/records/waste-liquid-crystal-display-panels.yaml
+    sha256: bb26f752ec661d485a75482e9733d66e3d8ea83aa9cf137bd109ffd93f841095
+    role: target
+  - path: history/records/waste-liquid-crystal-display-panels/2026-10-11T134610Z-codex-b0f4f2.yaml
+    sha256: b173d70cbab59ea955f7de9dcd29011e8893481221f3f935897dc82271845662
+    role: context
+  - path: research/ingests/round23-lcd-sources-20261011.json
+    sha256: 796a4c79d9a97819bf91f8f517c134c08d64396f6a593f5a0b41b50b722e2f00
+    role: context
+  - path: research/ingests/round23-lcd-sources-20261011.md
+    sha256: 7b7464edf6bf785c575eda6e04a7d0d9de8835be2cf5d772c4ac1a8fd5b36a66
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Complete new waste-LCD panel record, source dossier and actual CREATE
+    session; independent evidence assessment of Willner2018.
+  selection: One assigned new maintained record; canonical inspect preceded scientific
+    judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:waste-liquid-crystal-display-panels
+  exclusions:
+  - target: Other records, deferred 2022 follow-up and unpublished instrument data
+    reason: These are not accepted scientific claims in this record. No new experiment,
+      source-cell import or laboratory reanalysis was performed.
+targets:
+- target_id: cmmmech:waste-liquid-crystal-display-panels
+  path: data/records/waste-liquid-crystal-display-panels.yaml
+  label: Waste liquid-crystal display panels
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/waste-liquid-crystal-display-panels.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named-record validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/waste-liquid-crystal-display-panels.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Reviewer executed to terminal exit 0. Checked 1 record(s); 0 failed.
+  target_ids:
+  - cmmmech:waste-liquid-crystal-display-panels
+- check_id: batch
+  name: Native full checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed; reviewer read actual completed receipt and log. /private/tmp/cmm-round23-final-batch.log:
+    uv run --locked --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 93.20s (0:01:33)
+
+    Checked 156 record(s); 0 failed.
+
+    Checked 177 history record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:waste-liquid-crystal-display-panels
+- check_id: require
+  name: Required corpus
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed; reviewer read actual completed receipt and log. /private/tmp/cmm-round23-final-require.log:
+    Checked 156 record(s); 0 failed.
+
+    '
+  target_ids:
+  - cmmmech:waste-liquid-crystal-display-panels
+- check_id: history
+  name: Trusted-base history
+  command: uv run --locked cmmmech validate-history --base 80899a3d3ea5c0f7c5d54f1b3583e43768e92767
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed; reviewer read actual completed receipt and log. /private/tmp/cmm-round23-final-history.log:
+    Checked 177 history record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:waste-liquid-crystal-display-panels
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/waste-liquid-crystal-display-panels.yaml
+  locator: Complete YAML, linked CREATE history, source dossier and native schema
+  accessed_at: '2026-10-11T13:52:55.571261Z'
+  support: supports
+  summary: Exact target identity, claims, source links, units and history read after
+    inspect. Material is discarded composite panels; no material external ID or criticality
+    inheritance. Actual actor GPT-6/codex, CREATE timestamp and distinct inline event
+    agree.
+  snapshot_sha256: bb26f752ec661d485a75482e9733d66e3d8ea83aa9cf137bd109ffd93f841095
+- evidence_id: methods
+  kind: primary_source
+  reference: https://doi.org/10.5277/ppmp1878
+  locator: Institutional published PDF, Section 2 pp.640–641; Figure 1 visually inspected
+  accessed_at: '2026-10-11T13:52:55.571261Z'
+  support: supports
+  summary: Complete seven-page text independently read from curator-retained PDF whose
+    hash matches acquisition receipt. Real mobile-phone panels were dismantled, milled
+    into two fractions and homogenized. Named species have stated source environments
+    without verified strain accessions. Four-week adaptation, modified 9K versus sulfuric
+    acid, 2.5% w/v powder, 10 mL inoculum, 30 degrees C, sulfur additions, 35 days
+    and filtered 5 mL MP-AES samples match the record. Working volume, biological
+    replicate count and complete sample-removal balance are not established by the
+    paper.
+  snapshot_sha256: 95c92c21d2090aa6c23748dc68c71ea77ae4452d35cb98847b1872e4b607d20f
+- evidence_id: outcomes
+  kind: primary_source
+  reference: https://doi.org/10.5277/ppmp1878
+  locator: Sections 3.1–4 pp.641–644; Figures 2–4 and Tables 1–2 visually inspected
+  accessed_at: '2026-10-11T13:52:55.571261Z'
+  support: supports
+  summary: Figure 4 and Table 2 support higher indium concentration in inoculated
+    9K filtrate and comparable or greater tin in sterile 9K. Day 35 indium 13.90 versus
+    0.82 mg/dm3 and tin 3.15 versus 4.59 mg/dm3 were checked directly in table pixels.
+    The 55.6% indium endpoint is author-reported solution extraction, not isolated
+    recovery. Tin maxima occur on distinct days and subsequent solution decline is
+    visible. Figures 2–3 support unmatched pH/ORP histories and local elemental residue
+    analysis, not necessary biological oxidation or unique crystalline phases. Record
+    preserves nominal-feed arithmetic conflicts and pt1/pt2 mismatch.
+  snapshot_sha256: 95c92c21d2090aa6c23748dc68c71ea77ae4452d35cb98847b1872e4b607d20f
+- evidence_id: publisher
+  kind: primary_source
+  reference: https://www.journalssystem.com/ppmp/Bioleaching-of-indium-and-tin-from-used-LCD-panels,84923,0,2.html
+  locator: Live publisher landing page, bibliography and displayed article links
+  accessed_at: '2026-10-11T13:52:55.571261Z'
+  support: supports
+  summary: Verified title, four authors, DOI, 2018 volume 54 issue 3 pages 639–645
+    against the institutional PDF. Initial DOI-open route failed; direct publisher
+    page succeeded. Inspected landing page shows article PDF and related 2022 study,
+    not a supplementary dataset link. This limited link inspection is not an exhaustive
+    absence claim.
+- evidence_id: taxa920
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=info
+  locator: Live NCBI Taxonomy 920 current name and rank
+  accessed_at: '2026-10-11T13:52:55.571261Z'
+  support: supports
+  summary: Current name Acidithiobacillus ferrooxidans, rank species, verified at
+    NCBI. Type-strain references on this page do not identify the experimental Polish
+    mineral-water isolate.
+- evidence_id: taxa930
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/taxonomy/930
+  locator: Live NCBI Taxonomy 930 name and species rank
+  accessed_at: '2026-10-11T13:52:55.571261Z'
+  support: supports
+  summary: Acidithiobacillus thiooxidans resolves as a species. Record correctly separates
+    this species identifier from the Smolnik mine-water isolate and makes no strain
+    accession claim.
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round23-lcd-review-dedup.json
+  locator: Reviewer hidden/ignored/followed local search and live exact-DOI notice
+    query
+  accessed_at: '2026-10-11T13:52:55.571261Z'
+  support: context_only
+  summary: rg --no-ignore --hidden --follow returned 91 matching lines with exit 0
+    and no stderr across records, research, reviews, history, current LCD raw and
+    cited round6-indium/round9-si-sn raw directories. Existing element and other waste-feed
+    records do not duplicate the LCD panel resource. Live query "10.5277/ppmp1878"
+    correction retraction inspected first result set without filters or pagination;
+    no matching notice identified in those results. Direct sterile tin comparison
+    is the main counterevidence to a generic microbial advantage.
+  search_scope: Named repository directories and /private/tmp/cmm-round23-lcd-raw,
+    /private/tmp/cmm-round6-indium-evidence-20261011, /private/tmp/cmm-round9-si-sn-raw;
+    hidden/ignored files and relevant symlinks included. No machine-wide or exhaustive
+    literature claim.
+  snapshot_sha256: 4e483d76700eb6214ec1b21a51c31bf56e91373b68c98f8a36addc1ce3057a91
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round23-gate-receipts.json
+  locator: Completed parent native, require-records and trusted-base-history logs;
+    independent named validation
+  accessed_at: '2026-10-11T13:52:55.571261Z'
+  support: supports
+  summary: Reviewer independently read terminal receipts/logs and matched exact target
+    to gated hash. All captured local input bytes still match inspect. Structural/provenance
+    validation is not evidence of biological mechanism.
+  snapshot_sha256: 1642db5c291aad5a85764aef2e8ad13b1c4511bc3cfd60c25123461f5dbd0096
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Secondary composite resource and resolved species identifiers
+  outcome: supported
+  summary: Discarded LCD panels are distinct from ITO as a pure substance, indium/tin
+    elements, whole phones, PCBs and photovoltaic modules. No constituent criticality
+    is assigned. Both organism CURIE labels/ranks resolve at NCBI and are explicitly
+    not strain identities.
+  target_ids:
+  - cmmmech:waste-liquid-crystal-display-panels
+  evidence_ids:
+  - record
+  - methods
+  - publisher
+  - taxa920
+  - taxa930
+  - search
+  dimensions:
+  - name: material_kind
+    value: secondary_resource
+    definition: End-of-use manufactured composite panels; prepared powder is study-specific
+      fraction.
+    evidence_ids:
+    - record
+    - methods
+  - name: criticality
+    value: Not asserted
+    definition: No inherited jurisdiction/list/edition designation; latest-list audit
+      inapplicable.
+    evidence_ids:
+    - record
+  - name: organism_resolution
+    value: A. ferrooxidans and A. thiooxidans species
+    definition: Experimental origins reported by source; mixture proportion, strain
+      accession and causal member unresolved.
+    evidence_ids:
+    - methods
+    - taxa920
+    - taxa930
+- assessment_id: mechanism
+  area: evidence
+  topic: Living adapted mixed culture and chemically unmatched laboratory comparisons
+  outcome: supported
+  summary: Supported claim is culture-associated indium mobilization in tested media;
+    it does not establish direct biological oxidation of ITO or a universal microbial
+    advantage. Source isolate provenance, feed preparation and control limitations
+    are adequately represented.
+  target_ids:
+  - cmmmech:waste-liquid-crystal-display-panels
+  evidence_ids:
+  - record
+  - methods
+  - outcomes
+  dimensions:
+  - name: biomass
+    value: Living adapted mixed acidophile culture
+    definition: Serial transfers and four-week LCD adaptation; no claim of a defined
+      pure strain assay.
+    evidence_ids:
+    - methods
+  - name: conditions
+    value: 30 degrees C, 2.5% w/v powder, nominal pH 1.9, 35-day flasks
+    definition: Modified 9K/sulfur or sulfuric-acid/sulfur media; uncertain total
+      sulfur accounting and working volume are retained.
+    evidence_ids:
+    - methods
+    - outcomes
+  - name: controls
+    value: Parallel sterile controls with differing chemical trajectories
+    definition: pH/ORP histories diverge; there is no matched-acidity mechanistic
+      attribution.
+    evidence_ids:
+    - outcomes
+- assessment_id: limits
+  area: evidence
+  topic: Reported filtrate endpoints, tin counterevidence and precipitation uncertainty
+  outcome: supported
+  summary: Indium endpoint and sterile tin comparisons match source table/figures.
+    Analytical concentrations and author percentages retain their units and denominators.
+    EDS and inferred tin loss do not establish isolated crystalline products, closed
+    metal balance or industrial recovery. Numerical contradictions are identified
+    without silently correcting the source.
+  target_ids:
+  - cmmmech:waste-liquid-crystal-display-panels
+  evidence_ids:
+  - record
+  - outcomes
+  dimensions:
+  - name: outcome
+    value: Higher filtered indium under selected inoculated conditions
+    definition: Solution-based author endpoint, not recovered metal product or whole-phone
+      yield.
+    evidence_ids:
+    - outcomes
+  - name: counterevidence
+    value: Sterile 9K tin leaching comparable or greater
+    definition: Distinct peak dates and late-time declines prevent pooling maxima
+      or claiming universal advantage.
+    evidence_ids:
+    - outcomes
+  - name: deployment
+    value: Laboratory only
+    definition: Industrial implementation and isolated-product mass balance not demonstrated.
+    evidence_ids:
+    - methods
+    - outcomes
+- assessment_id: provenance
+  area: provenance
+  topic: Actual current CREATE event and exact final review state
+  outcome: supported
+  summary: New canonical session and inline event describe present curation and verified
+    target. Trusted base retained, parent batch gates verified, no earlier history
+    invented.
+  target_ids:
+  - cmmmech:waste-liquid-crystal-display-panels
+  evidence_ids:
+  - record
+  - gates
+findings: []
+actions: []
+limitations:
+- Controls do not isolate ferric chemistry from acidity or identify a necessary organism;
+  conclusions remain culture-associated.
+- Missing working volume, exact sulfur accounting, sample replacement, independent
+  replicate counts and raw analytical uncertainty preclude a fully closed/reproduced
+  metal balance.
+- Source percentages and concentrations are not entirely consistent; graph curves
+  were visually assessed, not digitized into invented precision.
+- SEM-EDS does not uniquely identify crystalline jarosite or a particular tin precipitate;
+  no isolated recovered metal product established.
+- Live correction/duplicate searches were bounded; curator-acquired PDF and parent-executed
+  batch checks are disclosed. Deferred 2022 evidence is not accepted or independently
+  fully reviewed here.
+notes:
+- Scientific assessment began after canonical inspect captured exact uncommitted inputs.
+  This reviewer made no LCD source, history or record edits.
+- No issue was manufactured because no actionable record finding was observed. The
+  source-paper limitations are already explicitly represented.
+- Structured review gate is performed after saving this immutable bundle; this review
+  does not predeclare that later publication gate.
+tags:
+- round23
+- independent
+- scientific-review
+- secondary-resource

@@ -1,0 +1,196 @@
+{
+  "created_at": "2026-10-11T13:47:40.172600+00:00",
+  "researcher": "Codex (GPT-6; Codex)",
+  "base": "80899a3d3ea5c0f7c5d54f1b3583e43768e92767",
+  "worktree": "/private/tmp/CMMMech-expansion-round23-20261011",
+  "branch": "curate/cmm-expansion-round23-20261011",
+  "source_role": "resource identity and primary laboratory mechanism",
+  "queries": [
+    {
+      "provider": "web search",
+      "query": "\"10.5277/ppmp1878\"",
+      "date": "2026-10-11",
+      "coverage": "first returned result set; no date filters or pagination"
+    },
+    {
+      "provider": "web search",
+      "query": "\"Willner\" \"2018\" \"LCD\" bioleaching",
+      "date": "2026-10-11",
+      "coverage": "first returned result set; no date filters or pagination"
+    },
+    {
+      "provider": "web search",
+      "query": "\"10.5277/ppmp1878\" correction OR retraction OR supplementary",
+      "date": "2026-10-11",
+      "coverage": "first returned result set; no date filters or pagination"
+    },
+    {
+      "provider": "web search",
+      "query": "\"Bioleaching of indium and tin from used LCD panels\" correction",
+      "date": "2026-10-11",
+      "coverage": "first returned result set; no date filters or pagination"
+    },
+    {
+      "provider": "web search",
+      "query": "\"Acidithiobacillus ferrooxidans\" NCBI taxonomy 920",
+      "date": "2026-10-11",
+      "coverage": "first returned result set; no date filters or pagination"
+    },
+    {
+      "provider": "web search",
+      "query": "\"Acidithiobacillus thiooxidans\" NCBI taxonomy 930",
+      "date": "2026-10-11",
+      "coverage": "first returned result set; no date filters or pagination"
+    }
+  ],
+  "deduplication": {
+    "command": "rg --no-ignore --hidden --follow -l 'ppmp1878|LCD|liquid.crystal' /private/tmp/cmm-round9-si-sn-raw /private/tmp/cmm-round6-indium-evidence-20261011 data research reviews history",
+    "included_ignored": true,
+    "followed_links": true,
+    "matches": [
+      "/private/tmp/cmm-round6-indium-evidence-20261011/nicomel2020.txt",
+      "research/ingests/round6-indium-20261011.json",
+      "research/ingests/round9-si-sn-20261011.md",
+      "research/ingests/round6-indium-20261011.md",
+      "research/ingests/round9-si-sn-20261011.json",
+      "research/ingests/round9-frontier-20261011.md"
+    ],
+    "boundary": "Named repository directories and cited raw downloads, not unrelated home/temp trees",
+    "result": "Known source lead from rounds6/9; no existing LCD resource root in this scope before curation"
+  },
+  "acquisition": [
+    {
+      "url": "https://dbc.wroc.pl/Content/43709/PDF/PPoMP_2018_54_3_639_645.pdf",
+      "attempted_at": "2026-10-11T13:43:25.890770+00:00",
+      "status": 200,
+      "content_type": "application/pdf",
+      "final_url": "https://dbc.wroc.pl/Content/43709/PDF/PPoMP_2018_54_3_639_645.pdf",
+      "path": "/private/tmp/cmm-round23-lcd-raw/willner2018-dbc.pdf",
+      "size": 414457,
+      "sha256": "95c92c21d2090aa6c23748dc68c71ea77ae4452d35cb98847b1872e4b607d20f",
+      "is_pdf": true,
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "url": "https://www.journalssystem.com/ppmp/pdf-84923-24560?filename=Bioleaching-of-indium-and.pdf",
+      "attempted_at": "2026-10-11T13:43:27.767278+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.journalssystem.com/ppmp/pdf-143580-71458?filename=LCD-panels-bioleaching-wi.pdf",
+      "attempted_at": "2026-10-11T13:43:27.913657+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "derived_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round23-lcd-raw/willner2018-dbc.txt",
+      "sha256": "59b3b17e2250b2befbbabcc72e7610223bb165ad9663a7e308da83ec90669ecf",
+      "size": 23476
+    },
+    {
+      "path": "/private/tmp/cmm-round23-lcd-raw/willner2018-page-1.png",
+      "sha256": "275d4c44bf8331e0c48887ab3b139e351e049827987ad8fb5c911e3d9ea8e680",
+      "size": 330324
+    },
+    {
+      "path": "/private/tmp/cmm-round23-lcd-raw/willner2018-page-2.png",
+      "sha256": "d80b60a932ddab3ef1f828e338934dadb36f9f654a91419f69a3bd6d1dc34636",
+      "size": 401431
+    },
+    {
+      "path": "/private/tmp/cmm-round23-lcd-raw/willner2018-page-3.png",
+      "sha256": "f3d3e35c185e395170ec2126422a9e0a84353c019c103460ccdf2356cf72f815",
+      "size": 407167
+    },
+    {
+      "path": "/private/tmp/cmm-round23-lcd-raw/willner2018-page-4.png",
+      "sha256": "915b8d3f2892e0c4e6372bad9c8e86afedf2b44e8e9f2ccc0ae6a6f949e1f90d",
+      "size": 244190
+    },
+    {
+      "path": "/private/tmp/cmm-round23-lcd-raw/willner2018-page-5.png",
+      "sha256": "9596806640ecf9a7f360a3c784298f347e91a4e24f7b38666b2fb8e5e8d92944",
+      "size": 246194
+    },
+    {
+      "path": "/private/tmp/cmm-round23-lcd-raw/willner2018-page-6.png",
+      "sha256": "39b312b7816e943eeb58c4bc427cb2236dc24153ce5e79498d9499979af31c98",
+      "size": 313919
+    },
+    {
+      "path": "/private/tmp/cmm-round23-lcd-raw/willner2018-page-7.png",
+      "sha256": "d094a7985159ca16a298b2683ab7380ee3168c49ab6284255a2b91bf308931c6",
+      "size": 255351
+    }
+  ],
+  "visual_inspection": {
+    "pages": [
+      641,
+      642,
+      643,
+      644
+    ],
+    "figures": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "tables": [
+      1,
+      2
+    ],
+    "route": "Locally rendered institutional PDF using cached isolated PyMuPDF; read with view_image",
+    "web_screenshot_limit": "Web screenshot calls emitted text-only placeholders and are not counted as inspection"
+  },
+  "authority_checks": [
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=info",
+      "result": "920 is species Acidithiobacillus ferrooxidans; not an isolate ID"
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/taxonomy/930",
+      "result": "930 resolves species Acidithiobacillus thiooxidans; browser-mode route was inaccessible"
+    },
+    {
+      "url": "https://www.journalssystem.com/ppmp/Bioleaching-of-indium-and-tin-from-used-LCD-panels,84923,0,2.html",
+      "result": "Authors/title/DOI/volume/pages verified; no supplemental data link exposed in inspected article/landing page"
+    }
+  ],
+  "reuse": {
+    "copyright": "Published PDF states Wroclaw University of Science and Technology copyright; no redistribution permission inferred",
+    "raw_committed": false
+  },
+  "candidate_handoff": [
+    {
+      "doi": "10.5277/ppmp1878",
+      "decision": "curate",
+      "record": "data/records/waste-liquid-crystal-display-panels.yaml",
+      "claim": "Prepared real-panel powder with conditional indium leaching and stronger sterile tin outcomes",
+      "limitations": [
+        "Chemical trajectories unmatched",
+        "Replication and working volume unclear",
+        "Unresolved numerical and SEM-EDS locator conflicts",
+        "No isolated product or industrial deployment"
+      ]
+    },
+    {
+      "doi": "10.37190/ppmp/143580",
+      "decision": "defer further mechanism extension",
+      "evidence_inspected": "Publisher PDF text through Methods and early Results; no figure pixels or complete quantitative audit",
+      "reason": "Different preparation/strains/adaptation/loading; cannot import higher percentages as equivalent 2018 replication"
+    }
+  ],
+  "curated_record": {
+    "path": "/private/tmp/CMMMech-expansion-round23-20261011/data/records/waste-liquid-crystal-display-panels.yaml",
+    "sha256": "bb26f752ec661d485a75482e9733d66e3d8ea83aa9cf137bd109ffd93f841095",
+    "size": 6408
+  },
+  "history": {
+    "path": "/private/tmp/CMMMech-expansion-round23-20261011/history/records/waste-liquid-crystal-display-panels/2026-10-11T134610Z-codex-b0f4f2.yaml",
+    "sha256": "b173d70cbab59ea955f7de9dcd29011e8893481221f3f935897dc82271845662",
+    "size": 819
+  },
+  "review_status": "Independent record review and final batch gates pending at preparation"
+}
