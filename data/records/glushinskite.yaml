@@ -1,0 +1,71 @@
+id: cmmmech:glushinskite
+name: Glushinskite
+material_kind: mineral
+description: Glushinskite is the magnesium oxalate dihydrate mineral species, Mg(C2O4)(H2O)2, listed
+  as redefined by the IMA in a 1987 special procedure in its September 2026 list. That date is not
+  an approval-number identifier. It is distinct from elemental magnesium, magnesium oxalate without
+  a specified hydration state, and the phosphate mineral feeds in the experiment. This record reuses
+  the Suyamud 2020 experiment represented under magnesium and dittmarite; these are separate material
+  identities, not independent experiments. No constituent-element criticality is inherited.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 84, Glushinskite row;
+    page 1 column definitions and page 2 distribution terms.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-11'
+- id: suyamud_2020
+  title: 'Suyamud, Ferrier, Csetenyi, Inthorn and Gadd (2020). Biotransformation of struvite by
+    Aspergillus niger: phosphate release and magnesium biomineralization as glushinskite. Environmental
+    Microbiology 22(4):1588-1602. DOI 10.1111/1462-2920.14949; Table 2, Figures 1 and 3-5, Experimental
+    procedures: organisms, struvite preparation, solid-medium solubilization, crystal purification
+    and XRD.'
+  url: https://doi.org/10.1111/1462-2920.14949
+  accessed_on: '2026-10-11'
+- id: ncbi_atcc1015
+  title: NCBI Taxonomy 380704 - Aspergillus niger ATCC 1015; exact strain entry verified by taxonomy
+    XML on 11 October 2026.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=380704&mode=Info
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: fungal_glushinskite_formation
+  name: Glushinskite formation during fungal phosphate-mineral transformation
+  process: biomineralization
+  description: Glushinskite was identified among crystals collected after growth of Aspergillus
+    niger ATCC 1015 on agar containing natural struvite or a synthetic feed identified as dittmarite.
+    The organism grew during this laboratory assay; this is microbial mineral formation rather than
+    an elemental-magnesium recovery process.
+  context: Malt extract agar contained 1% w/v natural struvite from a Veolia wastewater-treatment
+    site in Exeter, UK, or synthetic magnesium ammonium phosphate identified by XRD as dittmarite
+    despite the paper's synthetic-struvite terminology. A 5-mm plug from an actively growing colony
+    inoculated each plate over cellophane. Crystals were collected after seven days at 25 degrees
+    C in darkness, extracted from agar with water at 80 degrees C, washed at least three times and
+    dried in a vacuum desiccator before SEM, EDXA and XRD. The selected solid-medium experiment
+    is separate from the paper's liquid-culture assays.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:380704
+    label: Aspergillus niger ATCC 1015
+  evidence:
+  - source_ref: suyamud_2020
+    supports: support
+    explanation: Figures 3-5 compare the feed materials with post-growth crystals. XRD traces A
+      and B in Figure 5 are assigned to magnesium oxalate dihydrate against the glushinskite reference
+      pattern, while C and D are struvite and dittmarite feed controls. Figure 4 detects Mg, C and
+      O in the analyzed product crystals; Figure 3 shows their morphology. Figure 5 presents representative
+      patterns from at least three determinations. Table 2 documents acidification in both mineral-fed
+      and mineral-free fungal cultures.
+  - source_ref: suyamud_2020
+    supports: partial
+    explanation: Feed diffraction controls and mineral-free fungal growth do not provide a chemistry-matched
+      abiotic comparison that isolates oxalate production from acidification or proves microbial
+      necessity under all conditions. The Results also describe amorphous debris. The phase assignment
+      is the authors' published identification, not a quantified pure-phase fraction or an isolated
+      recovery yield. Neither magnesium-metal production nor industrial deployment is demonstrated.
+curation_history:
+- timestamp: '2026-10-11T09:57:28.075910+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created glushinskite mineral identity with bounded fungal solid-medium phase-formation
+    evidence.
+history_refs:
+- history/records/glushinskite/2026-10-11T095727Z-codex-e44619.yaml

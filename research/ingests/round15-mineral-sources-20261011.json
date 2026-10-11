@@ -1,0 +1,171 @@
+{
+  "created_at": "2026-10-11T09:58:47.071914+00:00",
+  "curator": "codex / GPT-6 / codex; agent /root/round15_minerals",
+  "base_revision": "a2e2c82f11d97982f0cc1ae6be452a42b24a0ff0",
+  "branch": "curate/cmm-expansion-round15-20261011",
+  "working_state": "Uncommitted new glushinskite and dittmarite records, their genuine CREATE histories and this source/ingest dossier; concurrent batch work is separately owned.",
+  "scope": "Two mineral species already named in Suyamud2020. Current official mineral identity plus bounded solid-medium fungal transformation, without inherited criticality or independent-experiment double counting.",
+  "acquisitions": [
+    {
+      "url": "https://discovery.dundee.ac.uk/ws/files/48409012/1462_2920.14949.pdf",
+      "acquired_at": "2026-10-11T09:55:12.675024+00:00",
+      "path": "/private/tmp/cmm-round15-mineral-raw/suyamud2020.pdf",
+      "status": 200,
+      "resolved_url": "https://discovery.dundee.ac.uk/ws/files/48409012/1462_2920.14949.pdf",
+      "bytes": 2837068,
+      "sha256": "13f7d2deb8340715bec8748d53a77d61885ebe05b903c55f6273fb82a61298b7",
+      "content_type": "application/pdf"
+    },
+    {
+      "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "acquired_at": "2026-10-11T09:55:13.568411+00:00",
+      "path": "/private/tmp/cmm-round15-mineral-raw/ima2026-09.pdf",
+      "status": 200,
+      "resolved_url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "content_type": "application/pdf"
+    },
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=380704&retmode=xml",
+      "acquired_at": "2026-10-11T09:55:15.744148+00:00",
+      "path": "/private/tmp/cmm-round15-mineral-raw/ncbi380704.xml",
+      "status": 200,
+      "resolved_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=380704&retmode=xml",
+      "bytes": 3645,
+      "sha256": "93bd7f58b9967dd080c971d4980128b3bdb35f9e4aa9c86ef3d1065fc404a500",
+      "content_type": "text/xml; charset=UTF-8"
+    }
+  ],
+  "queries": [
+    {
+      "provider": "web search",
+      "query": "\"10.1111/1462-2920.14949\" correction retraction supplementary",
+      "date": "2026-10-11",
+      "coverage": "first returned result set; no date/domain filter or pagination"
+    },
+    {
+      "provider": "web search",
+      "query": "\"glushinskite\" \"dittmarite\" \"Aspergillus\" control",
+      "date": "2026-10-11",
+      "coverage": "first returned result set; no date/domain filter or pagination"
+    },
+    {
+      "provider": "web search",
+      "query": "\"Glushinskite\" \"IMA\" \"Dittmarite\"",
+      "date": "2026-10-11",
+      "coverage": "first returned result set; no date/domain filter or pagination"
+    }
+  ],
+  "additional_live_checks": [
+    {
+      "url": "https://enviromicro-journals.onlinelibrary.wiley.com/doi/full/10.1111/1462-2920.14949",
+      "role": "Primary publisher full-text and metadata",
+      "inspected": "Title, DOI, authors, 22(4):1588-1602, first-published date 20 February 2020; Methods/Results; parser find for Supporting and correction returned none. This does not establish the absence of every supplementary or correction artifact."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32079035/",
+      "role": "Bibliographic cross-check",
+      "inspected": "Title/DOI and April 2020 journal issue; Epub listed as 7 March 2020 differs from publisher first-publication date. No day-level publication-date claim curated."
+    }
+  ],
+  "license_and_reuse": {
+    "primary": "CC BY, stated on repository cover and article first page; version number not stated there. Raw full text retained outside Git.",
+    "ima": "CC BY-SA 3.0 Unported, PDF page 2; dated September 2026 identity rows are cited rather than redistributing the master list.",
+    "taxonomy": "NCBI public taxonomy XML; no distinct license statement in the downloaded XML, reuse terms not independently assessed; only exact strain ID and label asserted."
+  },
+  "identity_rows": {
+    "dittmarite": {
+      "locator": "IMA September 2026 PDF page 58; page 1 definitions",
+      "formula": "(NH4)Mg(PO4)(H2O)",
+      "status": "G (grandfathered)",
+      "year": "1887 original description, not approval ID"
+    },
+    "glushinskite": {
+      "locator": "IMA September 2026 PDF page 84; page 1 definitions",
+      "formula": "Mg(C2O4)(H2O)2",
+      "status": "Rd (redefined)",
+      "year": "1987 s.p., special procedure, not an approval-number CURIE"
+    }
+  },
+  "primary_evidence": {
+    "doi": "10.1111/1462-2920.14949",
+    "version": "Publisher PDF / version of record per University of Dundee cover, 16 PDF pages including cover; internal article pagination 1-15.",
+    "locators": "PDF page 4: Figure 1, Table 2 and transformation Results; PDF page 6: Figures 3-4; PDF page 7: Figure 5; PDF pages 12-14: Experimental procedures; Discussion PDF pages 9-12.",
+    "visual_checks": "Rendered and inspected Figures 1 and 3-5 and Table 2, IMA pages 58/84. Figure 5 displays product patterns A/B versus feed C/D and glushinskite/struvite/dittmarite reference sticks. Figure 4 gives Mg/C/O product peaks and phosphate-containing feed spectra. Not independent raw diffraction refitting or quantitative phase analysis.",
+    "conditions": "ATCC 1015 living growth; 1% w/v synthetic dittmarite or natural struvite in malt extract agar, 5-mm mycelial plugs over cellophane, seven days at 25 C in dark. Figure 1C clearing image is three days, not seven. Crystal extraction in 80 C water, >=3 washes, vacuum desiccation; 105 C feed oven-sterilization and 105 rpm shaking belong to liquid-arm methods and are not imported into solid-arm records.",
+    "controls": "Feed XRD patterns and mineral-free fungal growth; no matched abiotic acid/oxalate experiment isolating oxalate contribution.",
+    "outcome": "Qualitative clearing, acidification and authors' XRD identification of glushinskite after growth. Dittmarite record preserves Table 2 pH for 1% synthetic treatment: 7.06 +/- 0.01 to 4.09 +/- 0.45, means +/- SD of three independent replicates. No invented mass balance, isolated yield, purity or industrial performance.",
+    "counterevidence_and_inconsistencies": "Amorphous debris accompanies crystals. Source calls XRD-identified dittmarite synthetic struvite. No exclusive oxalate mechanism is inferred. Discussion magnesium/oxalate reaction expression is not adopted. Liquid-medium methods give 105 rpm while Figure 9 caption says 125 rpm; liquid numerical endpoints and morphology claims are outside accepted records. Reported equimolar synthesis wording is not independently established from reagent amounts and is not repeated as a curated stoichiometric ratio.",
+    "supplement_scope": "No supporting-information section or separate supplement identified in inspected full PDF/publisher parser and first-result searches; no exhaustive absence claim or raw diffraction dataset inspection."
+  },
+  "deduplication": {
+    "repo_paths": [
+      "data",
+      "research",
+      "reviews",
+      "history",
+      ".claude"
+    ],
+    "command": "rg --no-ignore --hidden -L with glushinskite, dittmarite, exact cmmmech IDs and DOI; file inventory includes hidden and ignored paths, excluding .git/.venv. Relevant directories contained no symlinks in checked inventory.",
+    "raw_paths": [
+      "/private/tmp/cmm-round5-magnesium-evidence-20261011",
+      "/private/tmp/cmm-round14-mineral-raw",
+      "/private/tmp/cmm-round15-mineral-raw"
+    ],
+    "coverage": "Inspected named reports and all text/json/md/yaml matches in these referenced raw directories. Binary PDFs were inventoried and relevant selected PDFs extracted/read; not a machine-wide search.",
+    "known_study": "Suyamud2020 already curated in magnesium; names occur in phosphorus/cerium/struvite context and prior frontiers/reviews. No existing root identity cmmmech:glushinskite or cmmmech:dittmarite was found in these repository bounds before creation.",
+    "correction": "An initial guessed legacy directory /private/tmp/cmm-round5-magnesium-raw did not exist; corrected using the actual round5 dossier path and reran the ignored/hidden-inclusive inventory."
+  },
+  "candidates": [
+    {
+      "slug": "glushinskite",
+      "kind": "mineral",
+      "decision": "Curated locally; independent scientific review pending",
+      "record": "data/records/glushinskite.yaml",
+      "history": "history/records/glushinskite/2026-10-11T095727Z-codex-e44619.yaml",
+      "new_experiment": false
+    },
+    {
+      "slug": "dittmarite",
+      "kind": "mineral",
+      "decision": "Curated locally; independent scientific review pending",
+      "record": "data/records/dittmarite.yaml",
+      "history": "history/records/dittmarite/2026-10-11T095732Z-codex-93ecbd.yaml",
+      "new_experiment": false
+    }
+  ],
+  "baseline": "Root reported actual terminal baseline just check success:307 passed,3 skipped,89.24 seconds;119 records,135 histories, before these record writes. Individual checks below were executed by this author.",
+  "validation": [
+    {
+      "slug": "glushinskite",
+      "history": "history/records/glushinskite/2026-10-11T095727Z-codex-e44619.yaml",
+      "command": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate data/records/glushinskite.yaml",
+      "exit_code": 0,
+      "stdout": "Checked 1 record(s); 0 failed.\n",
+      "stderr": "",
+      "finished_at": "2026-10-11T09:57:30.733927+00:00"
+    },
+    {
+      "slug": "dittmarite",
+      "history": "history/records/dittmarite/2026-10-11T095732Z-codex-93ecbd.yaml",
+      "command": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate data/records/dittmarite.yaml",
+      "exit_code": 0,
+      "stdout": "Checked 1 record(s); 0 failed.\n",
+      "stderr": "",
+      "finished_at": "2026-10-11T09:57:34.964065+00:00"
+    }
+  ],
+  "limits": [
+    "No criticality assertion is curated; omission is not not_listed.",
+    "Only the solid-medium arm is accepted here; liquid results and numerical Mg/P balances remain separate leads.",
+    "Species names are distinct material roots; these mineral additions required no schema/validator changes. The separate brine pilot led root to add primary_resource.",
+    "No actionable contradiction or correction was found in bounded returned search sets; this is not exhaustive evidence of absence.",
+    "Independent review and final batch checks are still required."
+  ],
+  "priorities": [
+    "Independent scientific review of both final records against IMA identity and Figures 1/3-5 before acceptance.",
+    "Future source-level reassessment can reconcile liquid-arm shaking/stoichiometry inconsistencies and request or find raw phase data; no author contact performed.",
+    "Future microbial studies of natural dittmarite and glushinskite product recovery need their own evidence; no generalization from synthetic agar feeds."
+  ]
+}

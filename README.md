@@ -129,6 +129,9 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Sewage-sludge incineration ash](data/records/sewage-sludge-incineration-ash.yaml) | Condition-dependent metal release from ash B | Lower Nb and control-near In outcomes remain distinct from ash A |
 | [Spent hydrocracking catalyst](data/records/spent-hydrocracking-catalyst.yaml) | Pretreated fungal-filtrate metal mobilization | Source pH, loading and control contradictions remain unresolved |
 | [Spent NdFeB permanent magnets](data/records/spent-ndfeb-magnets.yaml) | Inactive algal biosorption from prepared magnet leachate | Roasting and acid leaching precede sorption; measured uptake differs from fitted capacity |
+| [Dittmarite](data/records/dittmarite.yaml) | Fungal transformation of an XRD-identified synthetic phosphate feed | Source calls the feed struvite; monohydrate identity and no recovery yield remain explicit |
+| [Glushinskite](data/records/glushinskite.yaml) | Fungal magnesium oxalate dihydrate formation | Same experiment as dittmarite and magnesium; mixed product is not a pure-phase yield |
+| [Lithium-bearing geothermal brine](data/records/lithium-bearing-geothermal-brine.yaml) | Ureolytic carbonate precipitation during brine pretreatment | Natural primary resource; aqueous lithium retention is not isolated lithium recovery |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -150,7 +153,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [twelfth expansion reviews](research/ingests/round12-20261011-publication.md),
 [thirteenth expansion reviews](research/ingests/round13-20261011-publication.md),
 [fourteenth expansion reviews](research/ingests/round14-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round14-frontier-20261011.md), and
+[fifteenth expansion reviews](research/ingests/round15-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round15-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 
@@ -161,7 +165,7 @@ keeps measured values, detection limits, sample dates and analysis dates distinc
 ## Scope
 
 - Distinguish elements, mineral species, mineral groups, commodities, and
-  secondary resources rather than treating those as synonyms.
+  primary and secondary resources rather than treating those as synonyms.
 - Record criticality by jurisdiction, list name, and edition, with a source.
   There is no universal or timeless `is_critical` flag.
 - Represent mechanisms such as bioleaching, biosorption, biomineralization,
