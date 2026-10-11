@@ -1,0 +1,487 @@
+{
+  "recorded_at": "2026-10-11T15:35:50.368557+00:00",
+  "trusted_base": "d20fc229fe61a08e36a2889d89e0f4ce7c06c4a9",
+  "scope": "Root BOF candidate plus bounded pickling/brake-pad/steel-slag frontier. Discovery supports handoff, not independent acceptance.",
+  "query_log": [
+    "\"10.1016/j.chemosphere.2022.134213\"",
+    "\"10.1016/j.wasman.2019.02.047\" full text",
+    "\"Bioremediation of stainless steel pickling sludge\" pdf",
+    "\"Improved bioleaching\" \"brake\" pdf",
+    "\"10.1016/j.wasman.2019.02.047\" retraction correction",
+    "\"10.1016/j.chemosphere.2022.134213\" retraction correction",
+    "\"Sequential bioleaching of copper from brake pads residues using encapsulated bacteria\"",
+    "\"Bioremediation of stainless steel pickling sludge\" site:ir.rcees.ac.cn",
+    "\"brake pad waste\" \"2019\" filetype:pdf bioleaching",
+    "\"134213\" \"Zhang\" \"pdf\" pickling",
+    "\"10.1016/j.mineng.2016.11.010\" pdf",
+    "\"pickling sludge\" \"MICP\" pdf bacteria",
+    "\"stainless steel pickling sludge\" \"Su\" \"2022\" filetype:pdf",
+    "\"steel slag\" \"microbially induced\" \"Zhang\" 2022 full text",
+    "\"Environmental investigation of bio-modification of steel slag\" pdf",
+    "\"Microbial-induced mineral carbonation\" \"2025\" \"Huang\"",
+    "\"10.1016/j.jes.2020.08.023\" pdf",
+    "\"Environmental investigation\" \"steel slag\" site:jes.ac.cn",
+    "\"Recovery of Al, Cr and V from steel slag by bioleaching\"",
+    "\"10.1016/j.jenvman.2018.05.056\" correction retraction erratum",
+    "\"Recovery of Al, Cr and V from steel slag\" contradictory leaching recovery"
+  ],
+  "dedup": {
+    "command": "rg --no-ignore --hidden -L -n -i",
+    "repo_scope": [
+      "data/records",
+      "research",
+      "reviews",
+      "history"
+    ],
+    "exact_pattern": "jenvman.2018.05.056|basic.?oxygen|BOF.?slag",
+    "receipts": [
+      "/private/tmp/cmm-round26-root-dedup.txt",
+      "/private/tmp/cmm-round26-steel-slag-dedup.txt",
+      "/private/tmp/cmm-round26-bof-dedup.txt",
+      "/private/tmp/cmm-round26-bof-prior-raw-dedup.txt"
+    ],
+    "raw_scope": [
+      "/private/tmp/cmm-round25-button-raw",
+      "/private/tmp/cmm-round25-frontier-raw",
+      "/private/tmp/cmm-round26-root-raw"
+    ],
+    "finding": "No pre-existing BOF material root or exact study in repository scoped exact search before creation; prior raw frontier search has a broad BOF-slag mention inside aggregated results. This is novelty of a curated record, not a claim the lead was never mentioned. Unrelated machine paths were not searched."
+  },
+  "acquisition": [
+    {
+      "key": "pickling-crossref",
+      "requested_url": "https://api.crossref.org/works/10.1016%2Fj.chemosphere.2022.134213",
+      "started_at": "2026-10-11T15:26:50.393452+00:00",
+      "status": 200,
+      "url": "https://api.crossref.org/works/10.1016%2Fj.chemosphere.2022.134213",
+      "content_type": "application/json",
+      "bytes": 18500,
+      "sha256": "19cff505ca7200b5eb5adb5d94fbb435a5c8b487d52f5c3e8016a4c1fda0386e",
+      "path": "/private/tmp/cmm-round26-root-raw/pickling-crossref.json",
+      "pdf_magic": false,
+      "finished_at": "2026-10-11T15:26:50.928713+00:00"
+    },
+    {
+      "key": "brake2019-crossref",
+      "requested_url": "https://api.crossref.org/works/10.1016%2Fj.wasman.2019.02.047",
+      "started_at": "2026-10-11T15:26:50.394560+00:00",
+      "status": 429,
+      "url": "https://api.crossref.org/works/10.1016%2Fj.wasman.2019.02.047",
+      "content_type": null,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "/private/tmp/cmm-round26-root-raw/brake2019-crossref.html",
+      "pdf_magic": false,
+      "finished_at": "2026-10-11T15:26:50.832796+00:00"
+    },
+    {
+      "key": "brake2017-crossref",
+      "requested_url": "https://api.crossref.org/works/10.1016%2Fj.mineng.2016.11.010",
+      "started_at": "2026-10-11T15:26:50.394850+00:00",
+      "status": 200,
+      "url": "https://api.crossref.org/works/10.1016%2Fj.mineng.2016.11.010",
+      "content_type": "application/json",
+      "bytes": 15006,
+      "sha256": "3a90ec18590b926c3dea352900b6357c066ab1c840b26dcc5c442ccaad028353",
+      "path": "/private/tmp/cmm-round26-root-raw/brake2017-crossref.json",
+      "pdf_magic": false,
+      "finished_at": "2026-10-11T15:26:50.928875+00:00"
+    },
+    {
+      "key": "pickling-openalex",
+      "requested_url": "https://api.openalex.org/works/W4220945483",
+      "started_at": "2026-10-11T15:26:50.395105+00:00",
+      "status": 200,
+      "url": "https://api.openalex.org/works/W4220945483",
+      "content_type": "application/json",
+      "bytes": 22156,
+      "sha256": "53b5fb114d0f206fd7aa218a28229f07465adb95beeac8c8756dcabf500a386f",
+      "path": "/private/tmp/cmm-round26-root-raw/pickling-openalex.json",
+      "pdf_magic": false,
+      "finished_at": "2026-10-11T15:26:50.742205+00:00"
+    },
+    {
+      "key": "brake2019-openalex",
+      "requested_url": "https://api.openalex.org/works/W2919577709",
+      "started_at": "2026-10-11T15:26:50.395361+00:00",
+      "status": 200,
+      "url": "https://api.openalex.org/works/W2919577709",
+      "content_type": "application/json",
+      "bytes": 20055,
+      "sha256": "7ab0c13569ce52af44f8a356388383aba6bee0d03ceef14b2d9b78e2614824f6",
+      "path": "/private/tmp/cmm-round26-root-raw/brake2019-openalex.json",
+      "pdf_magic": false,
+      "finished_at": "2026-10-11T15:26:50.742750+00:00"
+    },
+    {
+      "key": "slag2025-polyu",
+      "requested_url": "https://ira.lib.polyu.edu.hk/bitstream/10397/112738/1/1-s2.0-S2666165925000158-main.pdf",
+      "started_at": "2026-10-11T15:26:50.742261+00:00",
+      "status": 200,
+      "url": "https://ira.lib.polyu.edu.hk/bitstream/10397/112738/1/1-s2.0-S2666165925000158-main.pdf",
+      "content_type": "application/pdf",
+      "bytes": 4890574,
+      "sha256": "98ecc5863499e4fc930926cf00eb1e4a4a04299c893545af5f3c41c2c9a20de1",
+      "path": "/private/tmp/cmm-round26-root-raw/slag2025-polyu.pdf",
+      "pdf_magic": true,
+      "finished_at": "2026-10-11T15:27:00.238483+00:00"
+    },
+    {
+      "key": "pickling-publisher",
+      "requested_url": "https://www.sciencedirect.com/science/article/abs/pii/S0045653522007068",
+      "started_at": "2026-10-11T15:26:50.742795+00:00",
+      "status": 403,
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0045653522007068",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 832806,
+      "sha256": "65e556d3bb40ceb68e17fd8eafe26c9dba0b3ffafc786c0e7c54318f54b89eb7",
+      "path": "/private/tmp/cmm-round26-root-raw/pickling-publisher.html",
+      "pdf_magic": false,
+      "finished_at": "2026-10-11T15:26:50.845038+00:00"
+    },
+    {
+      "key": "brake2019-publisher",
+      "requested_url": "https://www.sciencedirect.com/science/article/abs/pii/S0956053X19301187",
+      "started_at": "2026-10-11T15:26:50.832831+00:00",
+      "status": 403,
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0956053X19301187",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 832806,
+      "sha256": "74dec1712d9bf7a402dcfbca946e2e7a074104e6e0876a1aff4489689bf92d87",
+      "path": "/private/tmp/cmm-round26-root-raw/brake2019-publisher.html",
+      "pdf_magic": false,
+      "finished_at": "2026-10-11T15:26:50.993342+00:00"
+    },
+    {
+      "key": "brake2017-publisher",
+      "requested_url": "https://www.sciencedirect.com/science/article/abs/pii/S0892687516303922",
+      "started_at": "2026-10-11T15:26:50.845068+00:00",
+      "status": 403,
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0892687516303922",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 832806,
+      "sha256": "598a97b3fbec96f60ab65905f16ba69486740f233b31ae18d2d947e497189788",
+      "path": "/private/tmp/cmm-round26-root-raw/brake2017-publisher.html",
+      "pdf_magic": false,
+      "finished_at": "2026-10-11T15:26:51.006890+00:00"
+    },
+    {
+      "key": "bof2018-primary",
+      "requested_url": "https://researchportal.northumbria.ac.uk/ws/portalfiles/portal/33037200/1_s2.0_S0301479718305875_main.pdf",
+      "started_at": "2026-10-11T15:27:46.241554+00:00",
+      "status": 200,
+      "url": "https://researchportal.northumbria.ac.uk/ws/portalfiles/portal/33037200/1_s2.0_S0301479718305875_main.pdf",
+      "content_type": "application/pdf",
+      "bytes": 733753,
+      "sha256": "e17a1a49ad53c878924bd967847f2823af3126ef59bcb6b9e45d1e078c22a40b",
+      "path": "/private/tmp/cmm-round26-root-raw/bof2018-primary.pdf",
+      "pdf_magic": true,
+      "finished_at": "2026-10-11T15:27:46.722603+00:00"
+    },
+    {
+      "key": "bof2018-supplement",
+      "requested_url": "https://nottingham-repository.worktribe.com/index.php/OutputFile/950017",
+      "started_at": "2026-10-11T15:27:46.242454+00:00",
+      "status": 403,
+      "url": "https://nottingham-repository.worktribe.com/index.php/OutputFile/950017",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 5571,
+      "sha256": "49eb11121b2e5b7fc959549f1d57b29052e289a8baac8968550df90cc756beb1",
+      "path": "/private/tmp/cmm-round26-root-raw/bof2018-supplement.html",
+      "pdf_magic": false,
+      "finished_at": "2026-10-11T15:27:46.367341+00:00"
+    },
+    {
+      "key": "bof2018-crossref",
+      "requested_url": "https://api.crossref.org/works/10.1016%2Fj.jenvman.2018.05.056",
+      "started_at": "2026-10-11T15:27:46.242681+00:00",
+      "status": 200,
+      "url": "https://api.crossref.org/works/10.1016%2Fj.jenvman.2018.05.056",
+      "content_type": "application/json",
+      "bytes": 18583,
+      "sha256": "a2569ab62e6c2b52963e9ee211bc08fe47a092895051d9c480c044c8a5e302b2",
+      "path": "/private/tmp/cmm-round26-root-raw/bof2018-crossref.json",
+      "pdf_magic": false,
+      "finished_at": "2026-10-11T15:27:46.642523+00:00"
+    },
+    {
+      "key": "pickling-tdm",
+      "requested_url": "https://api.elsevier.com/content/article/PII:S0045653522007068?httpAccept=text/xml",
+      "started_at": "2026-10-11T15:27:46.367369+00:00",
+      "status": 200,
+      "url": "https://api.elsevier.com/content/article/PII:S0045653522007068?httpAccept=text/xml",
+      "content_type": "text/xml;charset=UTF-8",
+      "bytes": 1847,
+      "sha256": "ce816d483db4273565d7a908cd5ee9426e02ab8f60aede6b80b7216e0c06807e",
+      "path": "/private/tmp/cmm-round26-root-raw/pickling-tdm.html",
+      "pdf_magic": false,
+      "finished_at": "2026-10-11T15:27:46.737655+00:00"
+    },
+    {
+      "key": "brake2017-tdm",
+      "requested_url": "https://api.elsevier.com/content/article/PII:S0892687516303922?httpAccept=text/xml",
+      "started_at": "2026-10-11T15:27:46.642570+00:00",
+      "status": 200,
+      "url": "https://api.elsevier.com/content/article/PII:S0892687516303922?httpAccept=text/xml",
+      "content_type": "text/xml;charset=UTF-8",
+      "bytes": 1832,
+      "sha256": "3ee5475a74066361000a93e1c03bdac6b343a41efefb3e0d1c267135026603e7",
+      "path": "/private/tmp/cmm-round26-root-raw/brake2017-tdm.html",
+      "pdf_magic": false,
+      "finished_at": "2026-10-11T15:27:46.977718+00:00"
+    },
+    {
+      "key": "bof2018-supplement-canonical",
+      "requested_url": "https://nottingham-repository.worktribe.com/OutputFile/950017",
+      "started_at": "2026-10-11T15:29:33.225444+00:00",
+      "status": 403,
+      "url": "https://nottingham-repository.worktribe.com/OutputFile/950017",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 5541,
+      "sha256": "8ec3e507b94d13e74201573b1a24964dc40bd72d2df5ed9e95b0b50528fa0530",
+      "path": "/private/tmp/cmm-round26-root-raw/bof2018-supplement-canonical.html",
+      "pdf_magic": false,
+      "finished_at": "2026-10-11T15:29:33.310564+00:00"
+    },
+    {
+      "key": "bof2018-supplement-cdn-pdf",
+      "requested_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0301479718305875-mmc1.pdf",
+      "started_at": "2026-10-11T15:29:33.226529+00:00",
+      "status": 404,
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0301479718305875-mmc1.pdf",
+      "content_type": "text/xml",
+      "bytes": 189,
+      "sha256": "83cf0fd7cf2740129f2ddedb484cf2f65c2f831820454bbd6fa35dad094a4d8d",
+      "path": "/private/tmp/cmm-round26-root-raw/bof2018-supplement-cdn-pdf.html",
+      "pdf_magic": false,
+      "finished_at": "2026-10-11T15:29:33.650419+00:00"
+    },
+    {
+      "key": "bof2018-supplement-cdn-docx",
+      "requested_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0301479718305875-mmc1.docx",
+      "started_at": "2026-10-11T15:29:33.226829+00:00",
+      "status": 200,
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0301479718305875-mmc1.docx",
+      "content_type": "application/word",
+      "bytes": 184898,
+      "sha256": "0259b69187a29d2ca45796689ca3a4e1c5ffeea0d357ff24dffca1621ac24659",
+      "path": "/private/tmp/cmm-round26-root-raw/bof2018-supplement-cdn-docx.html",
+      "pdf_magic": false,
+      "finished_at": "2026-10-11T15:29:33.635763+00:00"
+    },
+    {
+      "key": "bof2018-crossmark",
+      "requested_url": "https://crossmark.crossref.org/dialog/?doi=10.1016/j.jenvman.2018.05.056&domain=pdf",
+      "started_at": "2026-10-11T15:29:33.310618+00:00",
+      "status": 200,
+      "url": "https://crossmark.crossref.org/dialog/?doi=10.1016/j.jenvman.2018.05.056&domain=pdf",
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 1005,
+      "sha256": "911e62bf0fd866e6b7ae4b2127dd24285c5204171301a414a7afe062edc63583",
+      "path": "/private/tmp/cmm-round26-root-raw/bof2018-crossmark.html",
+      "pdf_magic": false,
+      "finished_at": "2026-10-11T15:29:33.634463+00:00"
+    }
+  ],
+  "primary": {
+    "doi": "10.1016/j.jenvman.2018.05.056",
+    "title": "Recovery of Al, Cr and V from steel slag by bioleaching: Batch and column experiments",
+    "citation": "Gomes, Funari, Mayes, Rogerson and Prior 2018; Journal of Environmental Management 222:30-36. Printed online date 23 May 2018; September issue.",
+    "url": "https://researchportal.northumbria.ac.uk/ws/portalfiles/portal/33037200/1_s2.0_S0301479718305875_main.pdf",
+    "sha256": "e17a1a49ad53c878924bd967847f2823af3126ef59bcb6b9e45d1e078c22a40b",
+    "inspection": "All seven pages read as text; pages 3-6 visually checked for every main Table 1-2/Figure 1-3. Primary original PDF confirmed, not an abstract-only claim.",
+    "license": "CC BY 4.0 printed in publisher PDF and version-of-record Crossref license. Raw PDF and renderings retained outside Git."
+  },
+  "supplement": {
+    "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0301479718305875-mmc1.docx",
+    "sha256": "0259b69187a29d2ca45796689ca3a4e1c5ffeea0d357ff24dffca1621ac24659",
+    "inspection": "DOCX title/authors/figure captions and complete Table S1 read from original XML; both embedded XRD figures visually inspected as bof-si-image1.png and bof-si-image2.png. LibreOffice conversion failed exit 134; no claim of a successful full-page render. Original ZIP bytes and merged table-cell XML retained.",
+    "access_note": "Initial Nottingham URL was a candidate author manuscript route, misleadingly named supplement by downloader; it returned 403. Guessed CDN PDF returned 404; actual DOCX returned 200 with matched title and authors. Original downloaded .html suffix reflects content-type handling, not HTML bytes; copied unchanged to .docx.",
+    "license": "No separate supplementary license identified inside DOCX; retain raw outside Git without redistribution."
+  },
+  "conflicts": [
+    {
+      "locator": "Methods 2.1-2.4; Supplement Table S1",
+      "finding": "Unresolved natural mixed community; preliminary T-RFLP assigned species and blank peak fields do not authenticate strains or isolate causal members. Reagent H2SO4 during conditioning and adaptation prevents treating all acidity as biologically generated."
+    },
+    {
+      "locator": "Methods 2.4 and Figure 3a",
+      "finding": "A/B initially below pH 1 and fresh-medium control at higher pH; independent column replication unspecified. Non-significant A versus B does not demonstrate equivalence; acid-matched causality is unavailable."
+    },
+    {
+      "locator": "Table 1, Methods 2.3, Figures 1-2",
+      "finding": "The stated 1 g/100 mL loading and feed Al 0.4 wt%, Cr 100 mg/kg, V 40 mg/kg do not reproduce the reported concentration/percentage pairings. Approximate figure readings illustrate conflict, not digitized source observations. No curator-corrected yield."
+    },
+    {
+      "locator": "Table 1 and Figure 3b-d; Results 3.3",
+      "finding": "Text Al 95/109%, Cr 84/64% and V 8/8% are A/B source-reported extractions, not validated yields. Table 1 inventory and Figure 3 cumulative Cr/V disagree. Nonzero day-zero pools, sampling corrections and total-feed digestion completeness are unresolved. Abstract Al 100% is not a substitute for 109%."
+    },
+    {
+      "locator": "Table 1 and Results 3.1",
+      "finding": "Mg 29.4 wt% cannot fall inside the cited typical 0.3-2.4% range as the prose claims; retain source-defined BOF identity without asserting typical chemistry."
+    },
+    {
+      "locator": "Methods 2.1/2.4",
+      "finding": "The coarse size is printed as 4 < size > 10 mm, not a valid bounded interval. No silent reversal."
+    },
+    {
+      "locator": "Table 2; Results 3.3; Supplement Figures S1-S2",
+      "finding": "Kinetic fits cannot distinguish reactive-core versus secondary-crust diffusion. XRD supports mixed gypsum/jarosite assignments, not pure saleable products or exclusively microbial precipitation. Modeled oxidation states are not direct speciation."
+    },
+    {
+      "locator": "Methods 2.5 and Results 3.4",
+      "finding": "Resin removal and NaOH elution are separate chemical stages. Al removal B 13% exceeds A 9%, contrary to generic A-best prose. Error definitions/elution denominators and particles >22 micrometres versus 0.22-micrometre filtration remain unresolved; no full-process yield."
+    }
+  ],
+  "notice_and_counterevidence_check": {
+    "queries": [
+      "\"10.1016/j.jenvman.2018.05.056\" correction retraction erratum",
+      "\"Recovery of Al, Cr and V from steel slag\" contradictory leaching recovery"
+    ],
+    "crossref": "relation empty and no update-to entry in fetched response; this metadata is not exhaustive notice certification.",
+    "crossmark": "Outer HTML only; inner dialog-content failed via web tool. No Crossmark up-to-date claim.",
+    "result": "No matching correction, erratum or retraction identified in bounded exact-DOI/title returned results. Retrieved comparators concern unlike EAF/steel slags, thermal processes or environmental leaching; not direct replications or refutations of this exact experiment.",
+    "context_primary_leads": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC8003827/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC11219386/"
+    ],
+    "limit": "Comparator abstracts/search excerpts inspected only; no comparator numerical results imported."
+  },
+  "secondary_discovery": {
+    "title": "Microbial-induced mineral carbonation: A promising approach for improving Carbon sequestration and performance of steel slag for its engineering utilization",
+    "citation": "Li, Hou, Zhang and Zhang; Developments in the Built Environment 21 (2025) 100615.",
+    "url": "https://ira.lib.polyu.edu.hk/bitstream/10397/112738/1/1-s2.0-S2666165925000158-main.pdf",
+    "role": "Public 19-page review used to follow references; title/abstract and selected lead sections checked, not a primary experiment or comprehensive review audit.",
+    "license": "CC BY 4.0 printed; raw outside Git."
+  },
+  "deferred": [
+    {
+      "doi": "10.1016/j.chemosphere.2022.134213",
+      "candidate": "Stainless-steel pickling sludge",
+      "status": "deferred",
+      "checked": "Crossref, PubMed primary abstract and indexed publisher preview; direct publisher 403. Public Elsevier TDM HTTP 200 contains metadata rather than full experimental text. OpenAlex metadata alone does not verify methods or a clean publication status.",
+      "gap": "Acquire primary methods, mineral and bacterial identity, figures, controls and quantitative definitions. MICP immobilization is not extraction; separate lysate and intact-cell arms.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35283154/"
+    },
+    {
+      "doi": "10.1016/j.wasman.2019.02.047",
+      "candidate": "Brake-pad manufacturing residues",
+      "status": "deferred",
+      "checked": "Crossref, primary PubMed abstract/publisher preview; direct ScienceDirect full route 403. Source thermal/bioleaching results remain abstract-level only.",
+      "gap": "Acquire full pretreatment and feed identity, culture and calculation details; distinguish pre-consumer powder from spent friction pads. An unrelated aggregator retraction label was not corroborated by a publisher notice in bounded searches and is not accepted as status evidence.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31109564/"
+    },
+    {
+      "doi": "10.1016/j.mineng.2016.11.010",
+      "candidate": "Encapsulated-bacteria brake-pad residue bioleaching",
+      "status": "deferred",
+      "checked": "Publisher preview, Crossref and author-institution bibliography. Public TDM HTTP 200 returns metadata only; no full article acquired.",
+      "gap": "Obtain full Vermeulen and Nicolay 2017 primary, verify DSM stocks and compare encapsulated/planktonic runs without importing an ambiguous 150% enhancement claim.",
+      "url": "https://doi.org/10.1016/j.mineng.2016.11.010"
+    },
+    {
+      "doi": "10.1016/j.jes.2020.08.023",
+      "candidate": "Steel-slag microbial carbonate modification",
+      "status": "deferred",
+      "checked": "Primary title/abstract and citations in a public 2025 review; slag route remains unresolved.",
+      "gap": "Acquire full primary; resolve BOF/EAF feed, treatment controls and MICP/mineral evidence before selecting a new root or extending BOF.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33334523/"
+    },
+    {
+      "doi": "10.1016/j.jclepro.2023.136982",
+      "candidate": "Steel-slag MICP mechanical/sulfate follow-up",
+      "status": "unassessed full-text lead",
+      "checked": "Indexed primary title/abstract only.",
+      "gap": "Acquire full primary and resolve process-defined feed identity and relevant mineral transformation.",
+      "url": "https://doi.org/10.1016/j.jclepro.2023.136982"
+    },
+    {
+      "doi": "10.1016/j.chemosphere.2014.09.089",
+      "candidate": "EAF slag culture-supernatant leaching",
+      "status": "deferred previous-frontier lead",
+      "checked": "Cited in full BOF primary and earlier frontier; distinct from EAF dust.",
+      "gap": "Acquire and independently audit full primary before importing methods or creating an EAF-slag root.",
+      "url": "https://doi.org/10.1016/j.chemosphere.2014.09.089"
+    }
+  ],
+  "handoff": {
+    "record": "data/records/basic-oxygen-furnace-steel-slag.yaml",
+    "sha256": "6917cd8d71f3fad7cc25c0717e956c5d4fcf3ae6135765774f951ebdb50afb5c",
+    "status": "Curated pending independent scientific review; named strict validation passed 1 record, zero failed.",
+    "history": "history/records/basic-oxygen-furnace-steel-slag/2026-10-11T153415Z-codex-f742c3.yaml",
+    "omissions": "No organism CURIE, inherited criticality, phase-purity claim, numeric source observations without analysis dates, normalized yield, industrial deployment or schema change."
+  },
+  "raw_manifest": [
+    {
+      "path": "/private/tmp/cmm-round26-root-raw/acquisition-1.json",
+      "bytes": 5179,
+      "sha256": "2966dbb8db4a5351a0dc446bbb14158fa1a1ffe48cba7c6cb618d341eec2dce4"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-root-raw/acquisition-2.json",
+      "bytes": 3030,
+      "sha256": "24c63118e0cced27f30ba0a78429e8e64caa32df429b9b323c5ef57a2f424557"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-root-raw/acquisition-3.json",
+      "bytes": 2425,
+      "sha256": "7a64b678082ae843d16685b500de1b1e7236ec42c12178b9ddf4a24495b80f9b"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-root-raw/bof2018-crossref.json",
+      "bytes": 18583,
+      "sha256": "a2569ab62e6c2b52963e9ee211bc08fe47a092895051d9c480c044c8a5e302b2"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-root-raw/bof2018-primary.pdf",
+      "bytes": 733753,
+      "sha256": "e17a1a49ad53c878924bd967847f2823af3126ef59bcb6b9e45d1e078c22a40b"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-root-raw/bof2018-primary.txt",
+      "bytes": 45037,
+      "sha256": "a058a74b8983fc2d78ac707201a54a9599b91df8ed0d56a273d289e90a286b7b"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-root-raw/bof2018-supplement.docx",
+      "bytes": 184898,
+      "sha256": "0259b69187a29d2ca45796689ca3a4e1c5ffeea0d357ff24dffca1621ac24659"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-root-raw/bof2018-supplement.txt",
+      "bytes": 2398,
+      "sha256": "5229fb28f68caf6cbae764bc6c0d522ca1f9dc5e6e5d6ad297daf418b701ba6e"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-root-raw/brake2017-crossref.json",
+      "bytes": 15006,
+      "sha256": "3a90ec18590b926c3dea352900b6357c066ab1c840b26dcc5c442ccaad028353"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-root-raw/brake2019-openalex.json",
+      "bytes": 20055,
+      "sha256": "7ab0c13569ce52af44f8a356388383aba6bee0d03ceef14b2d9b78e2614824f6"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-root-raw/pickling-crossref.json",
+      "bytes": 18500,
+      "sha256": "19cff505ca7200b5eb5adb5d94fbb435a5c8b487d52f5c3e8016a4c1fda0386e"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-root-raw/pickling-openalex.json",
+      "bytes": 22156,
+      "sha256": "53b5fb114d0f206fd7aa218a28229f07465adb95beeac8c8756dcabf500a386f"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-root-raw/slag2025-polyu.pdf",
+      "bytes": 4890574,
+      "sha256": "98ecc5863499e4fc930926cf00eb1e4a4a04299c893545af5f3c41c2c9a20de1"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-root-raw/slag2025-polyu.txt",
+      "bytes": 125970,
+      "sha256": "ee46efbbbd2703aa7e718eec5b62b8e6ac54eed3eb80bf86eccf8ae7b4eb0c73"
+    }
+  ],
+  "exhaustion_established": false
+}

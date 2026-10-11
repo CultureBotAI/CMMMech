@@ -175,6 +175,10 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Discarded LED lamps](data/records/discarded-led-lamps.yaml) | Biogenic-acid leaching of prepared lamp powder | Chemical comparator superiority for Nd and source normalization conflicts remain explicit |
 | [Biogas-desulfurization sulfur residue](data/records/biogas-desulfurization-sulfur-residue.yaml) | Mixed-culture acid production from a sulfur-rich residue | Conflicting culture accession and incomplete sulfur balance; battery leaching is a separate downstream use |
 | [Spent zinc-manganese button-cell batteries](data/records/spent-zinc-manganese-button-cell-batteries.yaml) | Culture-associated leaching after thermal pretreatment | Inhibited treatments, uncertain strain identity and unmatched chemistry limit generalization |
+| [Electric-arc-furnace dust](data/records/electric-arc-furnace-dust.yaml) | Filtered culture-acid leaching followed by microbial electrolysis | Stage-specific depletion and deposit composition do not establish whole-feed recovery |
+| [Basic-oxygen-furnace steel slag](data/records/basic-oxygen-furnace-steel-slag.yaml) | Mixed-culture and supernatant leaching followed by chemical resin tests | Unmatched acidity, inconsistent feed inventories and poor elution limit recovery claims |
+| [Pharmaceutical blister packaging waste](data/records/pharmaceutical-blister-packaging-waste.yaml) | Culture-derived acid leaching of actual hospital waste | High-temperature null comparison, poor silver-fraction release and lower 1 L results retained |
+| [Beverage-carton hydropulping reject](data/records/beverage-carton-hydropulping-reject.yaml) | Separate enzymatic pretreatment, culture-acid leaching and chemical precipitation | Comparable reagent acid, direct-culture limitations and unverified product purity remain explicit |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and

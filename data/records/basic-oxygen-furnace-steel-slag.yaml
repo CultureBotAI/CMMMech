@@ -1,0 +1,164 @@
+id: cmmmech:basic-oxygen-furnace-steel-slag
+name: Basic-oxygen-furnace steel slag
+material_kind: secondary_resource
+description: >-
+  Steelmaking slag identified by the primary study as basic-oxygen-furnace
+  (BOF) slag, represented by a December 2016 sample from Yarborough,
+  Scunthorpe, UK. This process-defined secondary resource is distinct from
+  electric-arc-furnace slag or dust, blast-furnace residues, copper smelter
+  slag, constituent elements and individual mineral species. One heterogeneous
+  sample does not define all BOF slags. No inherited elemental identifier or
+  criticality designation is assigned.
+sources:
+- id: gomes_2018
+  title: >-
+    Gomes, Funari, Mayes, Rogerson and Prior (2018). Recovery of Al, Cr and V
+    from steel slag by bioleaching: Batch and column experiments. Journal of
+    Environmental Management 222:30-36. DOI 10.1016/j.jenvman.2018.05.056;
+    published version, available online 23 May 2018. Methods 2.1-2.7,
+    Results 3.1-3.4, Tables 1-2 and Figures 1-3 inspected.
+  url: https://doi.org/10.1016/j.jenvman.2018.05.056
+  accessed_on: '2026-10-11'
+- id: gomes_2018_supplement
+  title: >-
+    Gomes et al. (2018), Supplementary information to DOI
+    10.1016/j.jenvman.2018.05.056. Publisher DOCX: X-ray diffraction
+    Figures S1-S2 and preliminary community T-RFLP Table S1.
+  url: https://ars.els-cdn.com/content/image/1-s2.0-S0301479718305875-mmc1.docx
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: mixed_culture_conditioned_acid_leaching
+  name: Metal mobilization using an acidophilic culture and its supernatant
+  process: bioleaching
+  microbial: true
+  description: >-
+    An adapted, unresolved acidophilic community and its filter-sterilized
+    supernatant were associated with higher aqueous Al, Cr and V release
+    than fresh-medium controls in laboratory slag assays. Acid-conditioned
+    liquid can therefore mobilize these metals without retained live cells
+    in the leaching stage. The study does not isolate a particular organism,
+    gene, enzymatic pathway or advantage over a chemistry-matched acid control.
+    Reported extraction percentages do not establish a closed feed-to-product
+    mass balance.
+  context: >-
+    The inoculum combined water, minerals and biomass from sediment-water
+    interfaces in Libiola Fe-Cu mine ponds and overflows, Italy, initially
+    pH 1-3. Modified 9K medium contained 22.5 g/L FeSO4.7H2O and 10 g/L
+    elemental sulfur; initial pH 2 and adaptation pH below 2.5 were adjusted
+    with reagent H2SO4. Culture conditioning used 30 degrees C, 150 rpm,
+    10% inoculum and serial slag additions reported as 1, 2 and 5% (w/v).
+    Slag was autoclaved at 135 degrees C for 30 minutes before adaptation.
+    Activity was inferred from pH and redox potential, without direct
+    cell-growth measurements establishing activity during alkaline leaching.
+    Triplicate batch assays used 1 g of ground slag below 75 micrometres
+    or below 2 mm, 90 mL medium and 10 mL inoculum, at 30 degrees C and
+    150 rpm for 3 or 6 days, with uninoculated controls. Batch pH rose
+    from 3.3 +/- 0.6 to 9.4 +/- 0.1. Separate 22-day columns used 100 g
+    coarse slag, a 1 L recirculating liquid inventory and 5 mL/min flow
+    at 28 +/- 1 degrees C. The printed coarse-size inequality is internally
+    inconsistent (4 < size > 10 mm); an exact interval is not asserted.
+    Column A received 0.22-micrometre-filtered culture supernatant, B the
+    adapted culture and C sterile fresh medium. Independent column
+    replication is unspecified; repeated samples are not independent columns.
+    Aqueous ICP-OES samples were filtered at 0.45 micrometres. These are
+    laboratory experiments, not industrial deployment or isolated-metal yields.
+  evidence:
+  - source_ref: gomes_2018
+    supports: support
+    explanation: >-
+      Methods 2.1-2.7 and Results 3.2-3.3/Figures 1-3 support the conditional
+      aqueous-mobilization observation. Three versus six days did not
+      significantly change the batch result; smaller particles enhanced Al
+      and Cr release but not V. Column culture and supernatant results were
+      not statistically distinguishable in the authors' tests, whereas both
+      differed from fresh medium. These null comparisons are retained;
+      statistical nonsignificance does not establish equivalent performance.
+  - source_ref: gomes_2018
+    supports: partial
+    explanation: >-
+      Column A and B began below pH 1, unlike the higher-pH fresh-medium
+      control. Adaptation also added reagent acid. Unequal initial chemistry,
+      unresolved column replication and activity proxies prevent attributing
+      an incremental live-cell effect or a unique polysulfide mechanism.
+      Kinetic fits in Table 2 do not distinguish a shrinking reactive core
+      from a secondary crust controlling diffusion; neither proves enzyme
+      causality. PHREEQC oxidation-state predictions are models, not direct
+      measurements of aqueous Al, Cr or V speciation.
+  - source_ref: gomes_2018
+    supports: partial
+    explanation: >-
+      Quantitative source inconsistencies remain unresolved. Table 1 gives
+      nitric-acid-digest Al 0.4 +/- 0.07 wt%, Cr 100 +/- 20 mg/kg and
+      V 40 +/- 10 mg/kg. Together with the reported batch loading these do
+      not reconcile Figure 1 concentrations with Figure 2 percentages.
+      Column Figure 3 cumulative Cr and V masses likewise fail to reproduce
+      the text's reported percentages using Table 1 and 100 g feed. The
+      column text gives Al 95% and 109% for A and B, whereas the abstract
+      generalizes to 100%; these are not validated recoveries. Nonzero day-0
+      inventories, incomplete specification of cumulative sampling corrections
+      and an unproven total-feed digestion denominator preclude repair by
+      simple renormalization. Table 1 Mg 29.4 wt% is also inconsistent with
+      the prose claim that it falls within the cited 0.3-2.4% typical range.
+      No universal composition, reconciled yield or exact concentration
+      observations are imported.
+  - source_ref: gomes_2018_supplement
+    supports: partial
+    explanation: >-
+      Table S1 is preliminary T-RFLP community profiling, with assigned
+      Acidithiobacillus species labels and unresolved members. It does not
+      authenticate pure strains or isolate a member's causal role, despite
+      stronger dominant-strain wording in the main paper. No taxon identifier
+      is assigned to this mixed community. Figures S1-S2 support gypsum and
+      jarosite diffraction assignments in A/B and gypsum as the principal
+      crystalline control product; fitted jarosite composition and mixed
+      solids do not establish a pure saleable product or uniquely microbial
+      mineral precipitation.
+- id: downstream_anion_exchange_and_elution
+  name: Post-leaching anion exchange with limited alkaline elution
+  process: separation
+  microbial: false
+  description: >-
+    A commercial anion-exchange resin removed portions of dissolved Al, Cr
+    and V from the column leachates, followed by poor recovery in a separate
+    alkaline elution. This downstream chemical experiment distinguishes
+    aqueous removal from recovered eluate and from an isolated final product.
+  context: >-
+    Methods 2.5 used 1 g hydrated Amberlite IRA-400 in hydroxide form with
+    20 mL final column leachate at 150 rpm for 30 minutes. After decanting,
+    the resin contacted 20 mL of 2 M NaOH for another 30 minutes. Both liquids
+    were analyzed by ICP-OES. The resin step itself is nonmicrobial, even
+    though its upstream liquor was culture-conditioned. Replicate numbers,
+    error-statistic definition and the elution-percentage denominator are
+    insufficiently specified for a whole-process yield calculation.
+  evidence:
+  - source_ref: gomes_2018
+    supports: support
+    explanation: >-
+      Results 3.4 reports removal for A/B leachates respectively of Al
+      9 +/- 1%/13 +/- 1%, Cr 67 +/- 5%/44 +/- 1%, and V
+      43 +/- 3%/20 +/- 1%. NaOH elution recovery is reported as below 1%
+      for Al and Cr and V 4 +/- 1%/5 +/- 0.4%. These are the source's
+      separate stage metrics, not multiplied slag-to-product yields; no
+      purified metal or certified reusable product was isolated.
+  - source_ref: gomes_2018
+    supports: partial
+    explanation: >-
+      The general claim of highest removal for supernatant A conflicts with
+      Al removal being higher for B. Proposed sulfate/phosphate competition,
+      biomass interference and modeled cationic speciation were not isolated
+      in matched factorial controls. The discussion's particle cutoff above
+      22 micrometres differs from the 0.22-micrometre supernatant filtration
+      in Methods; it is not silently corrected. Better performance of other
+      resins, alkaline drainage or selective precipitation remains future or
+      external context, not a result for these bioleachates.
+curation_history:
+- timestamp: '2026-10-11T15:34:12.345362+00:00'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: >-
+    Curated source-defined BOF steel slag with separate culture-conditioned
+    leaching and chemical resin stages, preserving preliminary community
+    identity, null comparisons, unmatched chemistry, contradictory numerical
+    inventories and laboratory scope.
+history_refs:
+- history/records/basic-oxygen-furnace-steel-slag/2026-10-11T153415Z-codex-f742c3.yaml

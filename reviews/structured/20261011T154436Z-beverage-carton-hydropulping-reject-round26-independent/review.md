@@ -1,0 +1,479 @@
+# Independent scientific review of beverage-carton hydropulping reject
+
+- Review: 20261011T154436Z-beverage-carton-hydropulping-reject-round26-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T15:34:59.372168Z
+- Finished UTC: 2026-10-11T15:44:36.504312Z
+- Reviewer: Codex /root/round24_copper_slag (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The process-defined hydropulping reject and conditional laboratory acid-leaching observation are supported. The record preserves comparable reagent-acid performance, poorer direct-culture results, the DSM 583 nomenclature conflict, precipitation-assay uncertainty and separate enzyme/polymer operations. No actionable record finding remains in this scope.
+
+## Scope And Provenance
+
+Entire new secondary-resource record, every mechanism/evidence paragraph, identifiers, actual CREATE provenance and corrected source handoff.
+
+Selection: Assigned independent full review of one newly curated packaging resource.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base d20fc229fe61a08e36a2889d89e0f4ce7c06c4a9.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:beverage-carton-hydropulping-reject | data/records/beverage-carton-hydropulping-reject.yaml | maintained | beverage-carton-hydropulping-reject |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named validation | passed | True | cmmmech:beverage-carton-hydropulping-reject | Reviewer executed validation against the final target hash: Checked 1 record(s); 0 failed. Receipt /private/tmp/cmm-round26-carton-review-validation.log |
+| Corrected final batch batch gate | passed | True | cmmmech:beverage-carton-hydropulping-reject | Executed by coordinator; reviewer read terminal receipt and actual log and independently compared the final target hash. 308 passed, 3 skipped in 126.15s; 169 records and 191 histories valid. Log: /private/tmp/cmm-round26-corrected-final-batch.log |
+| Corrected final batch require gate | passed | True | cmmmech:beverage-carton-hydropulping-reject | Executed by coordinator; reviewer read terminal receipt and actual log and independently compared the final target hash. Checked 169 record(s); 0 failed. Log: /private/tmp/cmm-round26-corrected-final-require.log |
+| Corrected final batch history gate | passed | True | cmmmech:beverage-carton-hydropulping-reject | Executed by coordinator; reviewer read terminal receipt and actual log and independently compared the final target hash. Checked 191 history record(s); 0 error(s). Log: /private/tmp/cmm-round26-corrected-final-history.log |
+
+## Scientific And Domain Assessments
+
+### Secondary-resource identity and criticality
+
+identity: supported. Targets: cmmmech:beverage-carton-hydropulping-reject.
+
+Industrial hydropulping reject is a process-defined mixed secondary resource. Batch composition is approximate; no elemental or mineral identity and no jurisdiction/list/edition criticality claim are inherited.
+
+### Culture-acid leaching versus direct culture and abiotic operations
+
+evidence: supported. Targets: cmmmech:beverage-carton-hydropulping-reject.
+
+The qualified microbial role is upstream acid production; commercial enzyme pretreatment, downstream NaOH precipitation and polymer processing remain separate. Comparable reagent-acid response and nonzero direct-culture controls limit any extra biological benefit.
+
+### Measured release, precipitation denominator and deployment
+
+consistency: supported. Targets: cmmmech:beverage-carton-hydropulping-reject.
+
+Source-reported near-complete dissolution is approximate across Figure 4a loading-dependent responses. Precipitation follows solution non-detection without stated detection limit or complete product balance. Composition, pH and vessel-wording conflicts remain explicit, as do poorer direct-culture high-loading outcomes and polymer impurities.
+
+### Independent review, preserved inputs and actual gates
+
+provenance: supported. Targets: cmmmech:beverage-carton-hydropulping-reject.
+
+Native inspection captures final record, actual CREATE history and corrected handoff; final target equals the terminal-gate hash. Shared raw acquisition is disclosed and independent scientific assessment is distinct from author curation. No scientific correction was needed.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/beverage-carton-hydropulping-reject.yaml; Entire frozen YAML and actual CREATE sidecar | supports | Read the final maintained record and sidecar. It distinguishes hydropulping reject from intact cartons, aluminium, other packaging and purified PE, and keeps chemical precipitation separate from microbial acid production. |
+| primary | https://doi.org/10.1016/j.resconrec.2022.106444; Methods 2.1-2.8; Results 3.1-3.4; Figures 1-6 and Conclusions; full ten-page published PDF text | supports | Independently read the full relevant primary text and visually inspected main pages 1-8 including all six figures. Actual 25-kg recycler reject, cap removal, 60-degree drying, below-11-mm shredding, separate Cellic CTec3 pretreatment and acid-leaching stages, triplicate flasks, Al assay and the 1-L integrated bottle experiment match the qualified record. Reference pages 9-10 were not separately visually audited. |
+| controls | https://doi.org/10.1016/j.resconrec.2022.106444; Methods 2.5; Results 3.3; Figure 4a-b and Figure 4g | supports | Reagent 1.4-M acid comparator applies at the highest loading only and performs similarly to spent acid. The separate DSM 583 iron-medium arm reaches source-reported maximum about 88% at 10 g/L after 14 days but about 20% at 25 g/L, with nonzero chemical blank, discoloration and altered polymer spectra. Different medium histories and proposed persulfate/Fenton explanations do not establish a pathway-specific microbial benefit. |
+| supplement | https://ars.els-cdn.com/content/image/1-s2.0-S0921344922002877-mmc1.pdf; Complete five-page supplement text; Table S1, acid-production methods, Figures S1-S2 pixels | supports | Read all supplement text and visually inspected Table S1, acid methods and both figures. Mixed DSM 504/9466 culture, 2-L vessel/1.8-L working volume, 6% sulfur, 30 degrees C, 250 rpm, 60 L/h air, medium replacement and centrifuged acid supernatant are supported. Acidity is estimated from pH and sulfate, not measured reagent purity. Supplemental microscopy/spectra support fibre removal and oxidation-associated polymer changes, not a unique molecular pathway. |
+| recovery | https://doi.org/10.1016/j.resconrec.2022.106444; Abstract versus Methods 2.6 and 2.8; Results 3.4; Figures 2, 5 and 6 | supports | Verified 6.4 abstract versus 6.5 methods precipitation pH, abstract stirred-tank wording versus shaken-bottle methods, 79/11/11 starting component labels summing to 101, and residual polymer impurities. Al non-detection after NaOH does not establish a zero residual, crystalline product phase, purity or whole-feed isolated yield. The record preserves these inconsistencies and laboratory limits. |
+| authority | https://www.dsmz.de/collection/catalogue/details/culture/DSM-583; Live DSMZ 583, 504 and 9466; NCBI species 930 and 33059 | supports | Independently opened live authorities. DSM 583 remains A. ferrooxidans at DSMZ, conflicting with the paper calling it newly A. ferridurans; record preserves this without assigning that stock a species CURIE. Upstream DSM 504 is A. thiooxidans and DSM 9466 is A. caldus C-SH12; NCBI species identifiers 930/33059 identify taxa, not verified stocks or individual mixed-culture contributions. |
+| search | https://doi.org/10.1016/j.resconrec.2022.106444; Bounded live amendment queries and local duplicate searches | context_only | Exact DOI plus correction OR retraction OR erratum queries for the carton and blister studies returned no matching notice in first result sets; no pagination or filters and no global absence claim. Repository rg --no-ignore --hidden --follow covered data/records, research, history and reviews. The named round26 packaging raw directory was inventoried, and adjacent material identities were distinguished; unrelated home/temp locations were excluded. |
+| gates | /private/tmp/cmm-round26-corrected-final-gates.json; Three corrected terminal command logs plus independent named-validation log | supports | Read actual terminal receipt/logs and compared current target hash. Independent named validation passed; corrected just check passed 308 tests with 3 skips, 169 records and 191 histories valid. Separate nonempty validation and trusted-base history validation returned zero. |
+| context | research/ingests/round26-packaging-sources-20261011.md; Corrected source MD/report and unchanged paired JSON; issue 95 receipt | context_only | Freshly inspected corrected EAF-dust wording for the intermediate 166-record inventory, consistent with the actual extra record. JSON remained unchanged. Handoff acknowledges dated pending independent review and does not serve as acceptance; source evidence and record are assessed independently here. |
+
+## Limits And Additional Notes
+
+- One published laboratory feed and protocol do not define all carton rejects or demonstrate industrial viability.
+- Mixed-culture contribution and disputed DSM 583 genomic identity remain unresolved; catalogue names do not authenticate stocks.
+- Nominal acid strength, loading-dependent leaching, approximate feed composition and non-detection-based precipitation lack a complete isolated-product balance.
+- Commercial enzyme source strain, enzyme-free glucose baseline and a pathway-specific oxidation intervention are not established.
+- Shared author-acquired primary and supplement files were independently inspected; no raw experimental data or author communication was obtained.
+- All six main figures and relevant supplement methods/table/figure pixels were inspected; reference-page image verification is not claimed.
+- The paired author source report is a dated handoff. Its corrected inventory statement is context, while this canonical record review is the independent scientific verdict.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T154436Z-beverage-carton-hydropulping-reject-round26-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of beverage-carton hydropulping reject
+started_at: '2026-10-11T15:34:59.372168Z'
+finished_at: '2026-10-11T15:44:36.504312Z'
+reviewer:
+  identity: Codex /root/round24_copper_slag
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Agent /root/round24_identity_frontier authored this target.
+    This reviewer independently read the published primary PDF and supplement, inspected
+    every main figure and relevant supplement table/figure pixels, and opened live
+    DSMZ/NCBI authorities. Shared author acquisitions and worktree are disclosed;
+    reviewer made no target edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: d20fc229fe61a08e36a2889d89e0f4ce7c06c4a9
+  state: working_tree
+  inputs:
+  - path: data/records/beverage-carton-hydropulping-reject.yaml
+    sha256: b9393bac4dc9c3ecd9da2e7704058508338e7a01ca307bc4bfcf66d9c2b66976
+    role: target
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/beverage-carton-hydropulping-reject/2026-10-11T153437Z-codex-99d4bc.yaml
+    sha256: 8f1b65b08f99e4380a5672808730d9ec4183d8a369ccefd8f31b2df9ac9a4bae
+    role: context
+  - path: research/ingests/round26-packaging-sources-20261011.json
+    sha256: 3da6baea08feb54825edafcfd0b62a4cec69dbb075dcb858ba6b787452cedeec
+    role: context
+  - path: research/ingests/round26-packaging-sources-20261011.md
+    sha256: 7d73345085a5748ed49c360c2b5499f2d221e7c8ec5bf41749b3c2a7375cdc00
+    role: context
+  - path: research/sources/round26-packaging/20261011T153542Z-source-investigation.md
+    sha256: 7592d83e6ecfab08d57d0aca2ee628828affd47df783d077032ebdb2f23c0741
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:beverage-carton-hydropulping-reject
+  path: data/records/beverage-carton-hydropulping-reject.yaml
+  label: beverage-carton-hydropulping-reject
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/beverage-carton-hydropulping-reject.yaml
+    role: maintained scientific record
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/beverage-carton-hydropulping-reject.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Reviewer executed validation against the final target hash: Checked 1
+    record(s); 0 failed. Receipt /private/tmp/cmm-round26-carton-review-validation.log'
+  target_ids:
+  - cmmmech:beverage-carton-hydropulping-reject
+- check_id: batch
+  name: Corrected final batch batch gate
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Executed by coordinator; reviewer read terminal receipt and actual log
+    and independently compared the final target hash. 308 passed, 3 skipped in 126.15s;
+    169 records and 191 histories valid. Log: /private/tmp/cmm-round26-corrected-final-batch.log'
+  target_ids:
+  - cmmmech:beverage-carton-hydropulping-reject
+- check_id: require
+  name: Corrected final batch require gate
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Executed by coordinator; reviewer read terminal receipt and actual log
+    and independently compared the final target hash. Checked 169 record(s); 0 failed.
+    Log: /private/tmp/cmm-round26-corrected-final-require.log'
+  target_ids:
+  - cmmmech:beverage-carton-hydropulping-reject
+- check_id: history
+  name: Corrected final batch history gate
+  command: uv run --locked cmmmech validate-history --base d20fc229fe61a08e36a2889d89e0f4ce7c06c4a9
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Executed by coordinator; reviewer read terminal receipt and actual log
+    and independently compared the final target hash. Checked 191 history record(s);
+    0 error(s). Log: /private/tmp/cmm-round26-corrected-final-history.log'
+  target_ids:
+  - cmmmech:beverage-carton-hydropulping-reject
+actions: []
+tags:
+- round26
+- independent
+- scientific-review
+links:
+- https://github.com/CultureBotAI/CMMMech/issues/93
+- https://github.com/CultureBotAI/CMMMech/issues/95
+summary: The process-defined hydropulping reject and conditional laboratory acid-leaching
+  observation are supported. The record preserves comparable reagent-acid performance,
+  poorer direct-culture results, the DSM 583 nomenclature conflict, precipitation-assay
+  uncertainty and separate enzyme/polymer operations. No actionable record finding
+  remains in this scope.
+scope:
+  description: Entire new secondary-resource record, every mechanism/evidence paragraph,
+    identifiers, actual CREATE provenance and corrected source handoff.
+  selection: Assigned independent full review of one newly curated packaging resource.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:beverage-carton-hydropulping-reject
+  exclusions:
+  - target: Unpublished raw replicates, authenticated culture stocks and industrial
+      process performance
+    reason: The published experiment and catalogue identity cannot establish unreported
+      raw balances, genomic stock identity or commercial deployment.
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/beverage-carton-hydropulping-reject.yaml
+  locator: Entire frozen YAML and actual CREATE sidecar
+  accessed_at: '2026-10-11T15:44:36.504312Z'
+  support: supports
+  summary: Read the final maintained record and sidecar. It distinguishes hydropulping
+    reject from intact cartons, aluminium, other packaging and purified PE, and keeps
+    chemical precipitation separate from microbial acid production.
+  snapshot_sha256: b9393bac4dc9c3ecd9da2e7704058508338e7a01ca307bc4bfcf66d9c2b66976
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.resconrec.2022.106444
+  locator: Methods 2.1-2.8; Results 3.1-3.4; Figures 1-6 and Conclusions; full ten-page
+    published PDF text
+  accessed_at: '2026-10-11T15:44:36.504312Z'
+  support: supports
+  summary: Independently read the full relevant primary text and visually inspected
+    main pages 1-8 including all six figures. Actual 25-kg recycler reject, cap removal,
+    60-degree drying, below-11-mm shredding, separate Cellic CTec3 pretreatment and
+    acid-leaching stages, triplicate flasks, Al assay and the 1-L integrated bottle
+    experiment match the qualified record. Reference pages 9-10 were not separately
+    visually audited.
+  snapshot_sha256: 4e3188469721ed6f2074e99378df742e2ded0fa357427554a4b2a4b598ce98c9
+- evidence_id: controls
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.resconrec.2022.106444
+  locator: Methods 2.5; Results 3.3; Figure 4a-b and Figure 4g
+  accessed_at: '2026-10-11T15:44:36.504312Z'
+  support: supports
+  summary: Reagent 1.4-M acid comparator applies at the highest loading only and performs
+    similarly to spent acid. The separate DSM 583 iron-medium arm reaches source-reported
+    maximum about 88% at 10 g/L after 14 days but about 20% at 25 g/L, with nonzero
+    chemical blank, discoloration and altered polymer spectra. Different medium histories
+    and proposed persulfate/Fenton explanations do not establish a pathway-specific
+    microbial benefit.
+  snapshot_sha256: 4e3188469721ed6f2074e99378df742e2ded0fa357427554a4b2a4b598ce98c9
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S0921344922002877-mmc1.pdf
+  locator: Complete five-page supplement text; Table S1, acid-production methods,
+    Figures S1-S2 pixels
+  accessed_at: '2026-10-11T15:44:36.504312Z'
+  support: supports
+  summary: Read all supplement text and visually inspected Table S1, acid methods
+    and both figures. Mixed DSM 504/9466 culture, 2-L vessel/1.8-L working volume,
+    6% sulfur, 30 degrees C, 250 rpm, 60 L/h air, medium replacement and centrifuged
+    acid supernatant are supported. Acidity is estimated from pH and sulfate, not
+    measured reagent purity. Supplemental microscopy/spectra support fibre removal
+    and oxidation-associated polymer changes, not a unique molecular pathway.
+  snapshot_sha256: de4c17a5d30c8fd2bee8aaa5f9a6003e275cf1ba4b3ec8f6a812e250cfcc3d63
+- evidence_id: recovery
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.resconrec.2022.106444
+  locator: Abstract versus Methods 2.6 and 2.8; Results 3.4; Figures 2, 5 and 6
+  accessed_at: '2026-10-11T15:44:36.504312Z'
+  support: supports
+  summary: Verified 6.4 abstract versus 6.5 methods precipitation pH, abstract stirred-tank
+    wording versus shaken-bottle methods, 79/11/11 starting component labels summing
+    to 101, and residual polymer impurities. Al non-detection after NaOH does not
+    establish a zero residual, crystalline product phase, purity or whole-feed isolated
+    yield. The record preserves these inconsistencies and laboratory limits.
+  snapshot_sha256: 4e3188469721ed6f2074e99378df742e2ded0fa357427554a4b2a4b598ce98c9
+- evidence_id: authority
+  kind: authority
+  reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-583
+  locator: Live DSMZ 583, 504 and 9466; NCBI species 930 and 33059
+  accessed_at: '2026-10-11T15:44:36.504312Z'
+  support: supports
+  summary: Independently opened live authorities. DSM 583 remains A. ferrooxidans
+    at DSMZ, conflicting with the paper calling it newly A. ferridurans; record preserves
+    this without assigning that stock a species CURIE. Upstream DSM 504 is A. thiooxidans
+    and DSM 9466 is A. caldus C-SH12; NCBI species identifiers 930/33059 identify
+    taxa, not verified stocks or individual mixed-culture contributions.
+- evidence_id: search
+  kind: search
+  reference: https://doi.org/10.1016/j.resconrec.2022.106444
+  locator: Bounded live amendment queries and local duplicate searches
+  accessed_at: '2026-10-11T15:44:36.504312Z'
+  support: context_only
+  summary: Exact DOI plus correction OR retraction OR erratum queries for the carton
+    and blister studies returned no matching notice in first result sets; no pagination
+    or filters and no global absence claim. Repository rg --no-ignore --hidden --follow
+    covered data/records, research, history and reviews. The named round26 packaging
+    raw directory was inventoried, and adjacent material identities were distinguished;
+    unrelated home/temp locations were excluded.
+  search_scope: Exact DOI plus correction OR retraction OR erratum queries for the
+    carton and blister studies returned no matching notice in first result sets; no
+    pagination or filters and no global absence claim. Repository rg --no-ignore --hidden
+    --follow covered data/records, research, history and reviews. The named round26
+    packaging raw directory was inventoried, and adjacent material identities were
+    distinguished; unrelated home/temp locations were excluded.
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round26-corrected-final-gates.json
+  locator: Three corrected terminal command logs plus independent named-validation
+    log
+  accessed_at: '2026-10-11T15:44:36.504312Z'
+  support: supports
+  summary: Read actual terminal receipt/logs and compared current target hash. Independent
+    named validation passed; corrected just check passed 308 tests with 3 skips, 169
+    records and 191 histories valid. Separate nonempty validation and trusted-base
+    history validation returned zero.
+  snapshot_sha256: 5302ec634ebadd954374a24fdad96d0a4944ae36fc7838fb4171e0d1ac1db9a3
+- evidence_id: context
+  kind: record_content
+  reference: research/ingests/round26-packaging-sources-20261011.md
+  locator: Corrected source MD/report and unchanged paired JSON; issue 95 receipt
+  accessed_at: '2026-10-11T15:44:36.504312Z'
+  support: context_only
+  summary: Freshly inspected corrected EAF-dust wording for the intermediate 166-record
+    inventory, consistent with the actual extra record. JSON remained unchanged. Handoff
+    acknowledges dated pending independent review and does not serve as acceptance;
+    source evidence and record are assessed independently here.
+  snapshot_sha256: 7d73345085a5748ed49c360c2b5499f2d221e7c8ec5bf41749b3c2a7375cdc00
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Secondary-resource identity and criticality
+  outcome: supported
+  summary: Industrial hydropulping reject is a process-defined mixed secondary resource.
+    Batch composition is approximate; no elemental or mineral identity and no jurisdiction/list/edition
+    criticality claim are inherited.
+  target_ids:
+  - cmmmech:beverage-carton-hydropulping-reject
+  evidence_ids:
+  - record
+  - primary
+  - recovery
+  dimensions:
+  - name: material_form
+    value: Prepared Al/polymer/fibre reject after paper recovery
+    definition: Distinct from intact beverage cartons, cans, elemental aluminium and
+      isolated PE.
+    evidence_ids:
+    - record
+    - primary
+  - name: criticality
+    value: No claim asserted
+    definition: Resource importance does not establish a named jurisdictional list
+      or edition.
+    evidence_ids:
+    - record
+- assessment_id: mechanism
+  area: evidence
+  topic: Culture-acid leaching versus direct culture and abiotic operations
+  outcome: supported
+  summary: The qualified microbial role is upstream acid production; commercial enzyme
+    pretreatment, downstream NaOH precipitation and polymer processing remain separate.
+    Comparable reagent-acid response and nonzero direct-culture controls limit any
+    extra biological benefit.
+  target_ids:
+  - cmmmech:beverage-carton-hydropulping-reject
+  evidence_ids:
+  - primary
+  - controls
+  - supplement
+  - authority
+  dimensions:
+  - name: organism_and_biomass
+    value: Mixed upstream A. thiooxidans DSM 504 and A. caldus DSM 9466; centrifuged
+      spent acid
+    definition: Species CURIEs do not authenticate stocks; direct DSM 583 nomenclature
+      remains unresolved.
+    evidence_ids:
+    - supplement
+    - authority
+  - name: substrate_and_pretreatment
+    value: Cap-sorted, dried, shredded and homogenized hydropulping reject; distinct
+      enzyme pretreatment
+    definition: Commercial Cellic CTec3 is not a live culture and no producing strain
+      is assigned.
+    evidence_ids:
+    - primary
+  - name: conditions
+    value: 100 mL in 250-mL flasks; 1.0/2.5/5.0% w/v, room temperature, 150 rpm, triplicates
+    definition: Integrated shaken-bottle trial has distinct 50-g/L, enzyme and 1-L
+      acid stages.
+    evidence_ids:
+    - primary
+  - name: controls
+    value: Highest-loading reagent-acid equivalence; separate iron-medium direct-culture
+      blank nonzero
+    definition: Comparisons neither isolate individual metabolites nor prove microbial
+      necessity during leaching.
+    evidence_ids:
+    - controls
+- assessment_id: outcome
+  area: consistency
+  topic: Measured release, precipitation denominator and deployment
+  outcome: supported
+  summary: Source-reported near-complete dissolution is approximate across Figure
+    4a loading-dependent responses. Precipitation follows solution non-detection without
+    stated detection limit or complete product balance. Composition, pH and vessel-wording
+    conflicts remain explicit, as do poorer direct-culture high-loading outcomes and
+    polymer impurities.
+  target_ids:
+  - cmmmech:beverage-carton-hydropulping-reject
+  evidence_ids:
+  - primary
+  - controls
+  - recovery
+  dimensions:
+  - name: outcome_definition
+    value: Dissolved Al assay and subsequent residual-solution non-detection
+    definition: No inferred isolated-metal purity, quantitative phase identification
+      or whole-feed yield.
+    evidence_ids:
+    - recovery
+  - name: deployment
+    value: Laboratory flask and 1-L treatment
+    definition: An industrial waste supplier does not establish industrial recovery
+      deployment.
+    evidence_ids:
+    - primary
+    - recovery
+- assessment_id: provenance
+  area: provenance
+  topic: Independent review, preserved inputs and actual gates
+  outcome: supported
+  summary: Native inspection captures final record, actual CREATE history and corrected
+    handoff; final target equals the terminal-gate hash. Shared raw acquisition is
+    disclosed and independent scientific assessment is distinct from author curation.
+    No scientific correction was needed.
+  target_ids:
+  - cmmmech:beverage-carton-hydropulping-reject
+  evidence_ids:
+  - record
+  - gates
+  - context
+findings: []
+limitations:
+- One published laboratory feed and protocol do not define all carton rejects or demonstrate
+  industrial viability.
+- Mixed-culture contribution and disputed DSM 583 genomic identity remain unresolved;
+  catalogue names do not authenticate stocks.
+- Nominal acid strength, loading-dependent leaching, approximate feed composition
+  and non-detection-based precipitation lack a complete isolated-product balance.
+- Commercial enzyme source strain, enzyme-free glucose baseline and a pathway-specific
+  oxidation intervention are not established.
+- Shared author-acquired primary and supplement files were independently inspected;
+  no raw experimental data or author communication was obtained.
+notes:
+- All six main figures and relevant supplement methods/table/figure pixels were inspected;
+  reference-page image verification is not claimed.
+- The paired author source report is a dated handoff. Its corrected inventory statement
+  is context, while this canonical record review is the independent scientific verdict.
+```

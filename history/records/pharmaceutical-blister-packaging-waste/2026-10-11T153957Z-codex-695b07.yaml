@@ -1,0 +1,25 @@
+history_version: 1
+target:
+  kind: record
+  slug: pharmaceutical-blister-packaging-waste
+  path: data/records/pharmaceutical-blister-packaging-waste.yaml
+session:
+  id: 2026-10-11T153957Z-codex-695b07
+  timestamp: '2026-10-11T15:39:57Z'
+  actors:
+  - name: codex
+    type: ai_agent
+    model: GPT-6
+    agent_tool: codex
+events:
+- type: EDIT
+  outcome: changed
+  summary: Correct the direction of the blister acid comparison after independent review
+  details: Issue 94 identified that mechanisms[0].description incorrectly implied a reagent-acid
+    advantage. Corrected it to the conditional biogenic-acid advantage at 22 degrees C that
+    disappears at 50 degrees C, supported by Kremser 2023 Sections 3.3.1-3.3.2 and Figures
+    2-3. Preserved CREATE history and initial needs_curation review 20261011T153818Z-pharmaceutical-blister-packaging-waste-round26-independent-initial;
+    independent successor and repeated final gates follow.
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/94

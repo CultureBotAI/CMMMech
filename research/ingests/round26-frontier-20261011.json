@@ -1,0 +1,154 @@
+{
+  "recorded_at": "2026-10-11T15:47:13.972443+00:00",
+  "trusted_base": "d20fc229fe61a08e36a2889d89e0f4ce7c06c4a9",
+  "worktree": "/private/tmp/CMMMech-expansion-round26-20261011",
+  "branch": "curate/cmm-expansion-round26-20261011",
+  "issue": 93,
+  "records": [
+    {
+      "id": "cmmmech:electric-arc-furnace-dust",
+      "name": "Electric-arc-furnace dust",
+      "path": "data/records/electric-arc-furnace-dust.yaml",
+      "sha256": "528841c1923db4f091500d3de5d57d5a13274f8886f9f0a610eafd05e89217b7",
+      "material_kind": "secondary_resource",
+      "history_refs": [
+        "history/records/electric-arc-furnace-dust/2026-10-11T153000Z-codex-86367d.yaml"
+      ],
+      "reviews": [
+        {
+          "yaml": "reviews/structured/20261011T154251Z-electric-arc-furnace-dust-round26-independent/review.yaml",
+          "markdown": "reviews/structured/20261011T154251Z-electric-arc-furnace-dust-round26-independent/review.md",
+          "review_id": "20261011T154251Z-electric-arc-furnace-dust-round26-independent"
+        }
+      ]
+    },
+    {
+      "id": "cmmmech:basic-oxygen-furnace-steel-slag",
+      "name": "Basic-oxygen-furnace steel slag",
+      "path": "data/records/basic-oxygen-furnace-steel-slag.yaml",
+      "sha256": "6917cd8d71f3fad7cc25c0717e956c5d4fcf3ae6135765774f951ebdb50afb5c",
+      "material_kind": "secondary_resource",
+      "history_refs": [
+        "history/records/basic-oxygen-furnace-steel-slag/2026-10-11T153415Z-codex-f742c3.yaml"
+      ],
+      "reviews": [
+        {
+          "yaml": "reviews/structured/20261011T154039Z-basic-oxygen-furnace-steel-slag-round26-independent/review.yaml",
+          "markdown": "reviews/structured/20261011T154039Z-basic-oxygen-furnace-steel-slag-round26-independent/review.md",
+          "review_id": "20261011T154039Z-basic-oxygen-furnace-steel-slag-round26-independent"
+        }
+      ]
+    },
+    {
+      "id": "cmmmech:pharmaceutical-blister-packaging-waste",
+      "name": "Pharmaceutical blister packaging waste",
+      "path": "data/records/pharmaceutical-blister-packaging-waste.yaml",
+      "sha256": "e9f85cb32101e615dbc862fa51c3e3d89d081c630139cb567dcde38208834c2d",
+      "material_kind": "secondary_resource",
+      "history_refs": [
+        "history/records/pharmaceutical-blister-packaging-waste/2026-10-11T153436Z-codex-48133c.yaml",
+        "history/records/pharmaceutical-blister-packaging-waste/2026-10-11T153957Z-codex-695b07.yaml"
+      ],
+      "reviews": [
+        {
+          "yaml": "reviews/structured/20261011T154432Z-pharmaceutical-blister-packaging-waste-round26-independent-resolution/review.yaml",
+          "markdown": "reviews/structured/20261011T154432Z-pharmaceutical-blister-packaging-waste-round26-independent-resolution/review.md",
+          "review_id": "20261011T154432Z-pharmaceutical-blister-packaging-waste-round26-independent-resolution"
+        }
+      ]
+    },
+    {
+      "id": "cmmmech:beverage-carton-hydropulping-reject",
+      "name": "Beverage-carton hydropulping reject",
+      "path": "data/records/beverage-carton-hydropulping-reject.yaml",
+      "sha256": "b9393bac4dc9c3ecd9da2e7704058508338e7a01ca307bc4bfcf66d9c2b66976",
+      "material_kind": "secondary_resource",
+      "history_refs": [
+        "history/records/beverage-carton-hydropulping-reject/2026-10-11T153437Z-codex-99d4bc.yaml"
+      ],
+      "reviews": [
+        {
+          "yaml": "reviews/structured/20261011T154436Z-beverage-carton-hydropulping-reject-round26-independent/review.yaml",
+          "markdown": "reviews/structured/20261011T154436Z-beverage-carton-hydropulping-reject-round26-independent/review.md",
+          "review_id": "20261011T154436Z-beverage-carton-hydropulping-reject-round26-independent"
+        }
+      ]
+    }
+  ],
+  "unchanged_prior_scientific_files": 1124,
+  "checks": {
+    "started_at": "2026-10-11T15:40:06.825416+00:00",
+    "base": "d20fc229fe61a08e36a2889d89e0f4ce7c06c4a9",
+    "records": {
+      "data/records/electric-arc-furnace-dust.yaml": "528841c1923db4f091500d3de5d57d5a13274f8886f9f0a610eafd05e89217b7",
+      "data/records/basic-oxygen-furnace-steel-slag.yaml": "6917cd8d71f3fad7cc25c0717e956c5d4fcf3ae6135765774f951ebdb50afb5c",
+      "data/records/pharmaceutical-blister-packaging-waste.yaml": "e9f85cb32101e615dbc862fa51c3e3d89d081c630139cb567dcde38208834c2d",
+      "data/records/beverage-carton-hydropulping-reject.yaml": "b9393bac4dc9c3ecd9da2e7704058508338e7a01ca307bc4bfcf66d9c2b66976"
+    },
+    "commands": [
+      {
+        "cmd": [
+          "just",
+          "check"
+        ],
+        "log": "/private/tmp/cmm-round26-corrected-final-batch.log",
+        "exit_code": 0
+      },
+      {
+        "cmd": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate",
+          "--require-records"
+        ],
+        "log": "/private/tmp/cmm-round26-corrected-final-require.log",
+        "exit_code": 0
+      },
+      {
+        "cmd": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate-history",
+          "--base",
+          "d20fc229fe61a08e36a2889d89e0f4ce7c06c4a9"
+        ],
+        "log": "/private/tmp/cmm-round26-corrected-final-history.log",
+        "exit_code": 0
+      }
+    ],
+    "records_unchanged": true,
+    "exit_code": 0,
+    "finished_at": "2026-10-11T15:42:34.627289+00:00"
+  },
+  "review_issues": [
+    {
+      "number": 94,
+      "scope": "Corrected reversed blister acid-comparison direction; retained initial native finding, appended EDIT history and saved explicit completed scientific successor."
+    },
+    {
+      "number": 95,
+      "scope": "Corrected steel-slag to EAF-dust in source inventory description in both packaging reports; record/history content unchanged by this prose correction. Final reviews capture corrected context."
+    }
+  ],
+  "evidence_scope_review_issue": {
+    "number": 96,
+    "scope": "Qualified the frontier primary-evidence synopsis to preserve the documented unavailable blister equation layout; no record/history changes."
+  },
+  "current_scientific_review_coverage": {
+    "records": 169,
+    "covered": 169,
+    "missing": 0
+  },
+  "counts": {
+    "record_count": 169,
+    "history_count": 191,
+    "structured_review_count": 195,
+    "review_base_count": 27
+  },
+  "remaining_priorities": "research/ingests/round26-frontier-20261011.md",
+  "exhaustion_established": false
+}
