@@ -1,0 +1,391 @@
+schema_version: 1.0.0
+review_id: 20261011T073221Z-niobium-round10-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of the niobium round10 record
+started_at: '2026-10-11T07:27:20Z'
+finished_at: '2026-10-11T07:32:21Z'
+reviewer:
+  identity: Codex /root/cmm10_b_f
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: This reviewer authored only the separate boron/fluorine pair.
+    It did not author or edit Nb/Ta records, histories or dossiers. inspect captured
+    frozen inputs before judgment; primary methods, results, numerical tables and
+    relevant figures/supplement were read independently, authorities resolved and
+    hashes verified.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The element identity, dated US criticality and condition-dependent Nb release
+  observations are supported. The record preserves unspecified controls, analytical
+  fraction and replication, alkaline final pH, contrasting ash/aeration results and
+  source mixing-speed disagreement. It does not assert a resolved molecular pathway
+  or purified-metal recovery.
+source:
+  git_revision: 6ea63a8c98e22fd3c6794b17c77f7909c3b851a2
+  state: working_tree
+  inputs:
+  - path: data/records/niobium.yaml
+    sha256: 7ff7be01282e1e08c418d81e358ec4459c2890f735476dda52a4950e7f0fe159
+    role: target
+  - path: history/records/niobium/2026-10-11T072410Z-codex-3d9cae.yaml
+    sha256: d2c7f4900337a921eeaeff06801b359165e9e767271f6e793843929dd731a763
+    role: context
+  - path: research/ingests/round10-nb-ta-20261011.json
+    sha256: 56533c9017431f4367d034c1d92f133f1b63ad075043a561a154304dc7926525
+    role: context
+  - path: research/ingests/round10-nb-ta-20261011.md
+    sha256: 3f694826f74209e573c5bf3abca553243f6f8a6e0d21964347d90fb62ee3bc2f
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+targets:
+- target_id: cmmmech:niobium
+  path: data/records/niobium.yaml
+  label: Niobium
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/niobium.yaml
+    role: maintained_record
+scope:
+  description: All scientific and provenance fields of the frozen niobium record,
+    with primary-assay and dated-authority grounding.
+  selection: Assigned named record; no sampling. Companion element and deferred leads
+    are context only.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:niobium
+checks:
+- check_id: record
+  name: Reviewer-executed named validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/niobium.yaml data/records/tantalum.yaml
+  status: passed
+  required: true
+  summary: Session 24661 terminal exit 0; 2 records checked, 0 failed.
+  scope_note: Reviewer execution; /private/tmp/cmm-round10-b-f-review/named-validation.log.
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+  target_ids:
+  - cmmmech:niobium
+- check_id: batch
+  name: Parent-run full native batch gate
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  status: passed
+  required: true
+  summary: 'Parent session 84281 terminal exit 0. Reviewer independently read complete
+    log: lint passed; 307 passed, 3 skipped in 64.75 seconds; 61 records and 72 histories
+    passed.'
+  scope_note: Parent execution; /private/tmp/cmm-round10-batch-check.log.
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+  target_ids:
+  - cmmmech:niobium
+- check_id: nonempty
+  name: Parent-run nonempty corpus validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: 'Parent session 20894 terminal exit 0. Reviewer read complete log: 61 records
+    checked, 0 failed.'
+  scope_note: Parent execution; /private/tmp/cmm-round10-batch-validation.log.
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+  target_ids:
+  - cmmmech:niobium
+- check_id: history
+  name: Parent-run append-only history gate
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate-history --base 6ea63a8c98e22fd3c6794b17c77f7909c3b851a2
+  status: passed
+  required: true
+  summary: 'Parent session 33751 terminal exit 0. Reviewer read complete log: 72 history
+    records checked, 0 errors.'
+  scope_note: Parent execution; /private/tmp/cmm-round10-batch-history.log. Reviewer
+    independently checked named sidecar and inline-event provenance.
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+  target_ids:
+  - cmmmech:niobium
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/niobium.yaml
+  locator: Entire frozen record; canonical CREATE sidecar; round10-nb-ta MD and JSON
+    dossier; schema
+  accessed_at: '2026-10-11T07:32:21Z'
+  support: supports
+  summary: Inputs were captured before judgment with inspect and hashes rechecked
+    before saving. I authored only the separate B/F pair, not the Nb/Ta records, histories
+    or dossiers.
+  snapshot_sha256: 7ff7be01282e1e08c418d81e358ec4459c2890f735476dda52a4950e7f0fe159
+- evidence_id: identity
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:33344
+  locator: Official ChEBI name, formula, charge and synonym fields
+  accessed_at: '2026-10-11T07:32:21Z'
+  support: supports
+  summary: Live official page independently resolved CHEBI:33344 as niobium atom,
+    formula Nb, net charge 0. Retained official HTML and acquisition hash also agree.
+    Element identity is distinct from ions, host minerals and mixed secondary feed.
+  snapshot_sha256: 92f2d1770733ed085a3c05a1a81993cf92c225e25616da4fe3bf38f5173bbe5c
+- evidence_id: criticality
+  kind: authority
+  reference: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  locator: Final 2025 List of Critical Minerals; title/date; commodity table Niobium
+    row; page 50496
+  accessed_at: '2026-10-11T07:32:21Z'
+  support: supports
+  summary: Live GovInfo notice independently checked against the retained HTML. US
+    Department of the Interior/USGS, final 2025 edition published 7 November 2025,
+    90 FR 50494–50497, lists Niobium. The Yes/No column is byproduct status, not the
+    criticality designation; waste feeds do not automatically inherit element criticality.
+  snapshot_sha256: 28f0e44fc0ae7af963cb532fc6f545641fcda533f604a1aeeeab308f40be0182
+- evidence_id: validation
+  kind: validation
+  reference: /private/tmp/cmm-round10-batch-check.log
+  locator: Complete parent batch, nonempty and history logs, plus reviewer named-validation.log
+  accessed_at: '2026-10-11T07:32:21Z'
+  support: supports
+  summary: Reviewer executed named validation (2 checked, 0 failed; session 24661
+    terminal 0). Parent executed the batch gates, whose complete logs and terminal
+    receipts were read before this review was saved. The exact outcomes are in checks;
+    structural validity does not establish scientific truth.
+  snapshot_sha256: c970037f4ae6a74f535aa2fa7d12ba6896a6cea372c7818e79dc11144cc58aed
+- evidence_id: search
+  kind: search
+  reference: Bounded web result sets and local science/provenance trees
+  locator: First response sets for DOI correction, retraction, erratum and relevant
+    conflicting-evidence queries; hidden/ignored-inclusive deduplication
+  accessed_at: '2026-10-11T07:32:21Z'
+  support: context_only
+  summary: No corresponding correction/retraction/erratum notice was returned in the
+    inspected first result sets. Local exact identifiers and primary DOIs matched
+    the two new maintained records and their histories/dossiers. This is not an exhaustive
+    absence claim.
+  search_scope: 'Executed 11 October 2026 with web.run, no filters or pagination:
+    "10.24425/aep.2019.128643" correction retraction; "10.3390/ijerph191610006" correction
+    retraction; both exact DOIs with erratum; niobium activated sludge ash bioleaching
+    2019 conflicting release control; "10.1007/s11356-023-26592-3" tantalum. Official
+    publisher and institutional pages were distinguished from aggregator leads. Local
+    rg --no-ignore --hidden --follow searched exact CMM IDs, ChEBI IDs and DOIs in
+    data/records, research, reviews, history, /private/tmp/cmm-round10-nb-ta-raw,
+    /private/tmp/cmm-next-eu and /private/tmp/cmm-expansion-authorities-20261011;
+    ignored files included. find found no symlinks in those repository science/provenance
+    trees. Binary PDF completeness is not inferred from regex; accepted figures/text
+    were inspected directly.'
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.24425/aep.2019.128643
+  locator: Andrzejewska-Gorecka et al. 2019; full 7-page PDF text; printed pp.73–76
+    visually, Tables 1–4 and Figures 1–9, especially 3/7/9
+  accessed_at: '2026-10-11T07:32:21Z'
+  support: supports
+  summary: The official primary PDF supplies the mixed-sludge adaptation and assay,
+    reported Nb outcomes, initial ash compositions and culture pH. Figure 3 and Figure
+    7 values and the p.74 formula were independently checked visually. Table 4 speed
+    conflicts with Table 2/figures/text. No separate supplement was relied on.
+  snapshot_sha256: 9f7ac95ce6f552b2473aa1c42ee5d7000fa4eec60ac1e6e0c5116aba91bb31f0
+assessments:
+- assessment_id: identity-grounding
+  area: identity
+  topic: Element identity and dated commodity criticality
+  outcome: supported
+  summary: The record keeps the element separate from experimental feed, ions, minerals
+    and recovered products. Named jurisdiction, authority, list and edition are explicit.
+  target_ids:
+  - cmmmech:niobium
+  evidence_ids:
+  - record
+  - identity
+  - criticality
+  dimensions:
+  - name: material-form
+    value: Element Niobium; CHEBI:33344
+    definition: Neutral atom authority grounds element identity, not the assay oxidation
+      state or phase.
+    evidence_ids:
+    - identity
+    - record
+  - name: criticality
+    value: United States; DOI/USGS Final 2025 List; 7 November 2025; 90 FR 50494–50497
+    definition: Edition-scoped commodity inclusion; Niobium row on page 50496.
+    evidence_ids:
+    - criticality
+- assessment_id: assay
+  area: evidence
+  topic: Condition-dependent ash release in a living mixed culture
+  outcome: supported
+  summary: The narrow observation is supported, with no species-specific, acid-mediated
+    or enzymatic causal claim.
+  target_ids:
+  - cmmmech:niobium
+  evidence_ids:
+  - record
+  - primary
+  dimensions:
+  - name: organism
+    value: Activated-sludge-derived mixed community; taxa and strains unresolved
+    definition: No taxon identifier or consortium-member causal assignment is inferred.
+    evidence_ids:
+    - primary
+  - name: biomass-state
+    value: Living adapted sludge community with colony counts before/after incubation
+    definition: This is a mixed culture rather than purified protein or isolated dead
+      biomass.
+    evidence_ids:
+    - primary
+  - name: feed
+    value: Ash A from municipal-waste thermal processing; ash B from sewage sludge;
+      Nb 33.6 and 15.3 mg/kg initial waste
+    definition: Feed provenance, host phase, particle size and sterilization remain
+      unspecified.
+    evidence_ids:
+    - primary
+  - name: pretreatment
+    value: Sludge:distilled water 1:1, 1% powdered sulfur; 24 C/120 rpm until pH <3
+      and reported oxidizer index 10^-6
+    definition: Percent sulfur basis and adaptation duration are unresolved.
+    evidence_ids:
+    - primary
+  - name: conditions
+    value: 300 mL flasks; 150 mL culture +10 g ash; 5 days; 24 C/120 rpm, 24 C/compressed-air
+      mixing or 37 C/50 rpm
+    definition: Table 4 instead labels variant 3 at 120 rpm; record retains discrepancy.
+      Final A pH 10/6/10 and B pH 9/8/9.
+    evidence_ids:
+    - primary
+  - name: controls
+    value: Three corresponding controls reported similar and averaged; compositions
+      and inoculum exclusion unspecified
+    definition: Controls cannot isolate sludge chemistry, metabolism or matching pH.
+      Instrument exposures are not biological replicates.
+    evidence_ids:
+    - primary
+- assessment_id: quantity
+  area: quantity
+  topic: Reported release denominator and assay contrasts
+  outcome: supported
+  summary: The numerical claims accurately preserve source values while avoiding a
+    closed mass balance, purified recovery yield or proven analytical zero.
+  target_ids:
+  - cmmmech:niobium
+  evidence_ids:
+  - record
+  - primary
+  dimensions:
+  - name: outcome
+    value: Ash A 100.0%, 0.0%, 6.7% versus control 2.3%; ash B 14.6%, 14.5%, 14.7%
+      versus control 5.9%
+    definition: 'Source formula: culture Nb concentration × culture volume divided
+      by ash mass × initial ash Nb content, multiplied by 100. No uncertainty intervals/biological
+      replicate counts are supplied.'
+    evidence_ids:
+    - primary
+  - name: absolute-release
+    value: Ash A 33.6, 0.0, 2.3 mg Nb/kg initial ash
+    definition: Table 4 mass normalized to initial ash, not concentration in liquid
+      or purified product.
+    evidence_ids:
+    - primary
+- assessment_id: limits
+  area: consistency
+  topic: Analytical and mechanistic uncertainty
+  outcome: supported
+  summary: The record states that unspecified filtration, digestion and blank correction
+    prevent assigning all ICP-OES Nb to a dissolved fraction, and that sulfate response
+    does not demonstrate the cause of Nb release.
+  target_ids:
+  - cmmmech:niobium
+  evidence_ids:
+  - record
+  - primary
+  details: Highest ash-A Nb release coincides with final pH 10 without compressed-air
+    aeration. Sulfate and sulfur-oxidizer increase occurs in the aerated arm reporting
+    0.0% Nb. Ash B stays near 15%; thus neither sulfur oxidation as the unique cause
+    nor universal full extraction is inferred. The internal 50/120 rpm disagreement
+    remains explicit.
+- assessment_id: scope
+  area: scope
+  topic: Laboratory assay versus recovery/deployment
+  outcome: supported
+  summary: No purified Nb, mineral phase assignment, isolated product or industrial
+    deployment is established.
+  target_ids:
+  - cmmmech:niobium
+  evidence_ids:
+  - record
+  - primary
+  dimensions:
+  - name: deployment
+    value: Small laboratory flask assay
+    definition: Industrial origin of waste is distinct from industrial deployment
+      of a microbial extraction process.
+    evidence_ids:
+    - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Actual CREATE history and reviewed bytes
+  outcome: supported
+  summary: Canonical CREATE sidecar actor codex/GPT-6/codex, target, actual timestamp
+    and issue42 link agree with the separate inline event. Structural gates passed.
+    The reviewer made no record/history/dossier changes.
+  target_ids:
+  - cmmmech:niobium
+  evidence_ids:
+  - record
+  - validation
+  dimensions:
+  - name: reviewed-state
+    value: Working tree against trusted base 6ea63a8c98e22fd3c6794b17c77f7909c3b851a2
+    definition: Uncommitted bytes are bound by exact inspected SHA-256 values, not
+      claimed as already committed.
+    evidence_ids:
+    - record
+  - name: history
+    value: history/records/niobium/2026-10-11T072410Z-codex-3d9cae.yaml
+    definition: Actual CREATE sidecar; later inline event is distinct; review does
+      not append/backdate curation.
+    evidence_ids:
+    - record
+findings: []
+actions: []
+limitations:
+- Control composition, sample analytical preparation, dissolved/particulate distinction,
+  Nb detection threshold and independent replication remain unresolved in the inspected
+  primary source.
+- No raw ICP-OES data, calibration reconstruction, culture-background correction or
+  closed Nb mass balance was available for independent recalculation.
+- No resolved microbial taxon, causal enzyme, Nb oxidation state, host mineral or
+  isolated product is demonstrated; this is a qualified culture-associated release
+  record.
+- No separate primary supplement was relied upon. Bounded DOI/title and publisher
+  searches do not establish that no additional source materials or later corrections
+  exist.
+- Correction/retraction and conflicting-evidence queries covered first result sets
+  only, with no complete citation graph, proprietary database or author-contact audit.
+  The verdict applies to the exact frozen target hash.
+notes:
+- No record, history or dossier edits were made by this independent reviewer. No corrective
+  issue is invented where no actionable defect is established.
+- Fifteen acquisition hashes matched the curator receipts; both complete Ta asset/supplement
+  ZIP archives passed CRC. Raw literature remains outside Git; challenge/failed downloads
+  are not treated as full text.
+- Parent ran the shared batch/nonempty/history gates; this reviewer independently
+  read their complete logs and terminal receipts. Named Nb/Ta validation was executed
+  by this reviewer.

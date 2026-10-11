@@ -1,0 +1,108 @@
+id: cmmmech:tantalum
+name: Tantalum
+material_kind: element
+description: >-
+  The element Ta, distinct from tantalum ions, oxides, mineral species,
+  capacitor components and mixed electronic scrap. The United States 2025
+  list's Tantalum entry is mapped to this element; that designation is not
+  inherited by every capacitor or waste feed. The curated primary study
+  documents an unsuccessful acidophile leaching attempt for Ta under specified
+  conditions, preserving a useful limitation rather than asserting recovery.
+identifiers:
+  - id: CHEBI:33348
+    label: tantalum atom
+sources:
+  - id: chebi_tantalum
+    title: 'ChEBI:33348 - tantalum atom; formula Ta, net charge 0'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:33348
+    accessed_on: '2026-10-11'
+  - id: us_2025
+    title: >-
+      US Department of the Interior, Geological Survey. Final 2025 List of
+      Critical Minerals, 7 November 2025, Federal Register 90:50494-50497,
+      document 2025-19813; Tantalum row on page 50497.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: sikander_2022
+    title: >-
+      Sikander et al. (2022). Chemical and Microbial Leaching of Valuable Metals
+      from PCBs and Tantalum Capacitors of Spent Mobile Phones. International
+      Journal of Environmental Research and Public Health 19:10006.
+      DOI 10.3390/ijerph191610006; PMC9408593. Sections 2.1-2.3.2 and 4.3,
+      Table 1, Figure 12 and supplementary Table S6.
+    url: https://doi.org/10.3390/ijerph191610006
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States
+    list_name: Department of the Interior Final List of Critical Minerals
+    edition: '2025 final list, published 7 November 2025'
+    classification: critical
+    source_ref: us_2025
+mechanisms:
+  - id: acidophile_capacitor_leaching_limit
+    name: No detected tantalum mobilization in an acidophile capacitor-scrap assay
+    process: bioleaching
+    description: >-
+      A living mixed iron- and sulfur-oxidizing acidophile culture mobilized
+      several base metals from tantalum capacitor scrap, but Ta was not detected
+      in the reported leachate. This experiment limits claims that the tested
+      culture directly solubilizes Ta from this feed. It does not demonstrate
+      that all microbial Ta leaching is impossible or establish a recovered
+      tantalum product from the remaining solids.
+    context: >-
+      The paper names Acidithiobacillus ferrooxidans, Leptospirillum ferrooxidans
+      and Acidithiobacillus thiooxidans in the mixed culture, without strain
+      accessions, relative abundance or member-specific activity tests. No
+      organism identifiers are assigned to this unresolved experimental mixture.
+      Visually identified surface-mount capacitors from spent mobile phones
+      were manually removed and ground to 0.5 and 0.75 mm fractions. Table 1
+      reports Ta at 292.5 g/kg (SD 2.32) after HF-containing microwave digestion
+      for both fractions; this is bulk elemental composition, not a Ta phase
+      determination. Laboratory trials used 250 mL Erlenmeyer flasks, 100 mL
+      actively growing modified 9K culture, 2% w/v scrap, 30 degrees C and
+      150 rpm for 10 days, with pH maintained at 1.8 using 10% v/v sulfuric
+      acid. Activation medium contained elemental sulfur and ferrous sulfate.
+      The study varied initial iron in its PCB assays, but does not unambiguously
+      specify the final ferrous concentration for the capacitor comparison.
+      Medium sterilization is described at 121 degrees C for 30 min, with
+      ferrous sulfate excluded. The sentence concerning sterilization of
+      the samples is grammatically ambiguous, so feed sterility is not
+      assumed. Experiments were triplicate with non-inoculated medium
+      controls; 0.45 micrometre-filtered liquor was sampled every second day,
+      with sterile water replacing sampling and evaporation losses.
+    microbial: true
+    evidence:
+      - source_ref: sikander_2022
+        supports: refute
+        explanation: >-
+          Refutes efficient direct Ta solubilization by this specific acidophile
+          treatment, not all microbial Ta processing. Section 4.3 states that
+          Ta was not detected in the leachate. Figure 12 shows no Ta mobilization
+          bar for either capacitor particle fraction; supplementary Table S6
+          records Ta concentration as u and leached percentage as 0 for both
+          Ta.Cap rows. The supplement does not define u or provide a numeric
+          Ta detection limit. Those entries are therefore not curated as
+          measured zero concentrations or a quantified recovery percentage.
+      - source_ref: sikander_2022
+        supports: partial
+        explanation: >-
+          The microorganism-containing experiment and uninoculated controls
+          test this laboratory protocol, but maintained acidity and added iron
+          do not isolate each consortium member or prove an enzymatic mechanism.
+          Removal of other metals is not itself a measured Ta enrichment factor,
+          recovered mass, purity or mass balance. Supporting Table S1 is a
+          composition table for digestion without HF, despite the Methods'
+          reference to it as ICP-OES validation; it supplies no calibration
+          or Ta detection-limit study. Table 1's HF digest and S1's non-HF
+          digest cannot be treated as interchangeable estimates of total Ta.
+          The study's broader upscaling discussion does not show industrial
+          deployment, and the native insolubility or chemical form of the
+          residual Ta was not resolved in this assay.
+curation_history:
+  - timestamp: '2026-10-11T07:24:30.325571+00:00'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Created element identity, US 2025 criticality and a condition-specific unsuccessful acidophile leaching observation; preserved non-detection limits without claiming zero Ta or a recovered product.
+history_refs:
+  - history/records/tantalum/2026-10-11T072423Z-codex-c5c953.yaml

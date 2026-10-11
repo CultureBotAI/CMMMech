@@ -1,0 +1,364 @@
+{
+  "created_at": "2026-10-11T07:23:52.495554+00:00",
+  "actor": {
+    "name": "codex",
+    "model": "GPT-6",
+    "tool": "codex"
+  },
+  "trusted_base": "6ea63a8c98e22fd3c6794b17c77f7909c3b851a2",
+  "record": "data/records/natural-graphite.yaml",
+  "record_sha256": "e6d403add676fb3ae70b64fffcd698328165f4a98a0500442daa851f8c6828b8",
+  "history_ref": "history/records/natural-graphite/2026-10-11T072058Z-codex-03825a.yaml",
+  "base_material_kind_counts": {
+    "element": 48,
+    "mineral": 4,
+    "secondary_resource": 2
+  },
+  "source_decisions": [
+    {
+      "source": "USGS MCS2026",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026.pdf",
+      "acquisition": "retained round9 PDF, hashes verified; live landing web fetch403",
+      "inspected": "printed pp92-93, PDF96-97, text and both page images",
+      "accepted": "natural-origin commodity boundary and commercial forms; no market measurements imported",
+      "terms": "US government publication; raw retained outside Git"
+    },
+    {
+      "source": "BGS UK2024 OR/24/059",
+      "url": "https://nora.nerc.ac.uk/id/eprint/539735/1/OR24059.pdf",
+      "acquisition": "fresh PDF and landing pages",
+      "inspected": "cover; bibliographical page; Table1 printedvii/PDF11 and Table11 printed44/PDF48, text and rendered table images",
+      "accepted": "named2024 assessment natural-graphite designation; explicit not-government-policy limit",
+      "version_conflicts": "Older OR24047 landing describes supersession to OR24057 but destination landing and PDF are OR24059; PDF313pages vs internal citation235pp. Preserve exact inspected report number.",
+      "terms": "UKRI copyright; no primary PDF redistributed"
+    },
+    {
+      "source": "EU Regulation2024/1252 original act",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1252/oj",
+      "acquisition": "live web text and retained raw HTML",
+      "inspected": "Article3(3), AnnexI(k), AnnexII(v)",
+      "accepted": "boundary evidence only; no EU designation added to natural-origin record; not a consolidated-amendment audit",
+      "terms": "official legal text; raw outside Git"
+    },
+    {
+      "source": "Langwaldt and Kalapudas2007",
+      "url": "https://www.journalssystem.com/ppmp/pdf-79310-15375?filename=Bio-beneficiation-of-mult.pdf",
+      "acquisition": "retained primary PDF with prior provenance and current hash",
+      "inspected": "full extracted methods/results/conclusions; Figure2 and Table6 visually rechecked",
+      "accepted": "context in dossier only: target sulfides and graphite-containing mixture; no natural-graphite purification mechanism",
+      "terms": "redistribution terms not established; raw outside Git"
+    },
+    {
+      "source": "Roy etal2023",
+      "doi": "10.1021/acssuschemeng.2c07262",
+      "url": "https://pubs.acs.org/doi/10.1021/acssuschemeng.2c07262",
+      "acquisition": "publisher web metadata/abstract, directHTTP403; bounded institutional/title queries",
+      "inspected": "metadata, abstract, supplement listing only",
+      "decision": "defer; need full methods, supplement, controls, feed origin and downstream process attribution; no measurements curated",
+      "terms": "ACS copyrighted publisher article; reading access is not redistribution permission"
+    },
+    {
+      "source": "Roy etal2026",
+      "doi": "10.1016/j.cej.2026.181229",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1385894726086912",
+      "acquisition": "publisher search metadata/abstract; directHTTP403",
+      "inspected": "metadata/abstract only",
+      "decision": "defer; issue date2026-11-01 later than reviewdate, online timing unresolved; need primaryfullmethods and feedorigin",
+      "terms": "publisher terms not established; no fulltext redistributed"
+    }
+  ],
+  "boundaries": [
+    {
+      "candidate_key": "natural-graphite",
+      "action": "retain",
+      "kind": "commodity",
+      "record": "data/records/natural-graphite.yaml",
+      "rationale": "origin-defined commodity verified by USGS and exact UK assessment"
+    },
+    {
+      "candidate_key": "graphite",
+      "action": "defer",
+      "rationale": "broader natural/synthetic scope; not represented by a natural-only root, not asserted synonymous"
+    },
+    {
+      "candidate_key": "graphite-battery-grade",
+      "action": "defer",
+      "rationale": "product qualification intersects origin; no universal purity cutoff invented"
+    }
+  ],
+  "boundary_relation": "overlapping scopes; retain/defer, not a disjoint split",
+  "web_search": {
+    "provider": "web.run",
+    "date": "2026-10-11",
+    "queries": [
+      "natural graphite microbial purification bioleaching bacteria primary study",
+      "graphite purification bioleaching Aspergillus niger Acidithiobacillus",
+      "\"graphite\" \"bio-beneficiation\" bacteria purification",
+      "\"A closed-loop circular economy approach\" \"181229\" correction retraction",
+      "\"natural graphite\" \"bioleaching\" purification bacteria -lithium -copper",
+      "\"graphite\" \"biopurification\"",
+      "\"Closed-Loop Graphite Recycling from Spent Lithium-Ion Batteries through Bioleaching\" DOI",
+      "\"UK 2024 criticality assessment\" \"OR/24/059\" graphite",
+      "\"2c07262\" site:dr.ntu.edu.sg",
+      "\"181229\" \"Roy\" graphite pdf",
+      "\"Closed-Loop Graphite Recycling\" correction retraction",
+      "\"Closed-Loop Graphite Recycling\" \"ntu.edu.sg\"",
+      "\"Closed-Loop Graphite Recycling\" pdf Roy Tang",
+      "\"UK 2024\" \"OR/24/059\" correction"
+    ],
+    "coverage": "Default returned result pages only; no pagination. Per-query wall-clock timestamps not separately retained.",
+    "integrity_result": "No matching correction/retraction notice identified in returned title-specific searches; not exhaustive."
+  },
+  "rejected_route": {
+    "url": "https://pubs.acs.org/doi/10.1021/acssuschemeng.3c00604",
+    "result": "initial unverified URL inaccessible; not a citation or accepted identifier; exact-title search subsequently resolved correct2c07262"
+  },
+  "local_search": {
+    "command": "rg --no-ignore --hidden --follow -n -i 'graphite|79310|181229|min10010079' data/records research reviews history .claude",
+    "hidden_and_ignored_included": true,
+    "symlink_inventory": [],
+    "matching_lines_read": 118,
+    "output_path": "/private/tmp/cmm-round10-graphite-local-search.txt",
+    "output_sha256": "1243c8efde2138a845c65c32c3b037af8cd417951ca4462bc3e3767665ca24e5",
+    "raw_scope": [
+      "/private/tmp/cmm-round9-graphite-evidence",
+      "/private/tmp/cmm-round10-graphite-raw"
+    ],
+    "raw_symlinks": [],
+    "limits": "No machine-wide search or global literature absence claim"
+  },
+  "acquisition_receipts": [
+    {
+      "url": "https://nora.nerc.ac.uk/id/eprint/539735/1/OR24059.pdf",
+      "attempt_started_at": "2026-10-11T07:19:31.514058+00:00",
+      "status": 200,
+      "final_url": "https://nora.nerc.ac.uk/id/eprint/539735/1/OR24059.pdf",
+      "content_type": "application/pdf",
+      "path": "/private/tmp/cmm-round10-graphite-raw/uk2024-or24059.pdf",
+      "bytes": 29325722,
+      "sha256": "e5708ffb1080c874cc57f0e20aad8f99aea746977971280434a1cfbb37f28c9e",
+      "result": "acquired; content inspection pending",
+      "finished_at": "2026-10-11T07:19:36.844938+00:00"
+    },
+    {
+      "url": "https://nora.nerc.ac.uk/id/eprint/538471/",
+      "attempt_started_at": "2026-10-11T07:19:31.515211+00:00",
+      "status": 200,
+      "final_url": "https://nora.nerc.ac.uk/id/eprint/538471/",
+      "content_type": "text/html; charset=utf-8",
+      "path": "/private/tmp/cmm-round10-graphite-raw/uk-old-landing.html",
+      "bytes": 55791,
+      "sha256": "3c247d7ad675e453d00e4a8ba3b86809f164a2c7237ab50173a76e33ba4c85eb",
+      "result": "acquired; content inspection pending",
+      "finished_at": "2026-10-11T07:19:32.645430+00:00"
+    },
+    {
+      "url": "https://nora.nerc.ac.uk/id/eprint/539735/",
+      "attempt_started_at": "2026-10-11T07:19:31.515554+00:00",
+      "status": 200,
+      "final_url": "https://nora.nerc.ac.uk/id/eprint/539735/",
+      "content_type": "text/html; charset=utf-8",
+      "path": "/private/tmp/cmm-round10-graphite-raw/uk-current-landing.html",
+      "bytes": 55323,
+      "sha256": "037d0ae4b6d92ce6a4fe421dd3fab1db4b7f06e777b2a3a1fc590e767faef4e0",
+      "result": "acquired; content inspection pending",
+      "finished_at": "2026-10-11T07:19:32.644599+00:00"
+    },
+    {
+      "url": "https://pubs.acs.org/doi/10.1021/acssuschemeng.2c07262",
+      "attempt_started_at": "2026-10-11T07:19:31.515826+00:00",
+      "result": "acquisition failed",
+      "error": "HTTP Error 403: Forbidden",
+      "finished_at": "2026-10-11T07:19:31.654210+00:00"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S1385894726086912",
+      "attempt_started_at": "2026-10-11T07:19:31.516097+00:00",
+      "result": "acquisition failed",
+      "error": "HTTP Error 403: Forbidden",
+      "finished_at": "2026-10-11T07:19:31.659786+00:00"
+    }
+  ],
+  "retained_inputs": [
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/acquisition.json",
+      "sha256": "07f11dea8781abc83bab639e6e8282e9a289485f804195675a2c95a39f8f8c8b",
+      "rechecked_at": "2026-10-11T07:23:52.495554+00:00",
+      "original_provenance": "research/ingests/round9-graphite-handoff-20261011.json"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/eu2024-1252.html",
+      "sha256": "4b09770aa8d3abb936cdd360993149c644d2f91cf890e24ceb1998beef4650c6",
+      "rechecked_at": "2026-10-11T07:23:52.495554+00:00",
+      "original_provenance": "research/ingests/round9-graphite-handoff-20261011.json"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/landwaldt2007-p3.png",
+      "sha256": "0ab1a8f549f38b4b7db5e3fc913d49fa4e5c5dfc5f927bc289b720879eba5030",
+      "rechecked_at": "2026-10-11T07:23:52.495554+00:00",
+      "original_provenance": "research/ingests/round9-graphite-handoff-20261011.json"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/landwaldt2007-p7.png",
+      "sha256": "614d006d4af3adc84fe4b7f5e07bc9f4052d1999f7dc04b0e0943bdde45e1a4d",
+      "rechecked_at": "2026-10-11T07:23:52.495554+00:00",
+      "original_provenance": "research/ingests/round9-graphite-handoff-20261011.json"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/landwaldt2007-p8.png",
+      "sha256": "db7f8440b95a719a41f6a157073ba75621be496d587a1425bf4cd4bcb1113351",
+      "rechecked_at": "2026-10-11T07:23:52.495554+00:00",
+      "original_provenance": "research/ingests/round9-graphite-handoff-20261011.json"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/landwaldt2007-selected.txt",
+      "sha256": "966a06ce28eb5797028c76c5bec8a09c327623b96568a71e89f8012dba913d47",
+      "rechecked_at": "2026-10-11T07:23:52.495554+00:00",
+      "original_provenance": "research/ingests/round9-graphite-handoff-20261011.json"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/landwaldt2007.pdf",
+      "sha256": "55a8c03cb5999c2d7e4c42bac13f8d9d8c7d007b829a86cd3989949e756d9769",
+      "rechecked_at": "2026-10-11T07:23:52.495554+00:00",
+      "original_provenance": "research/ingests/round9-graphite-handoff-20261011.json"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/uk2024-or24047-p11.png",
+      "sha256": "728420889271ecbd5253f3efb51aaa55fa23beb44c5c32cdbd5b4db2f50d2998",
+      "rechecked_at": "2026-10-11T07:23:52.495554+00:00",
+      "original_provenance": "research/ingests/round9-graphite-handoff-20261011.json"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/uk2024-or24047-p48.png",
+      "sha256": "eb9545ff43a10fa1206e61b5d8d44133d89c402aebfb22a4cafcdb375dd92496",
+      "rechecked_at": "2026-10-11T07:23:52.495554+00:00",
+      "original_provenance": "research/ingests/round9-graphite-handoff-20261011.json"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/uk2024-or24047-selected.txt",
+      "sha256": "1f4fe814f1c7d253b361d14ef9669d822fe50bbdfd0cd220010c714f676953c9",
+      "rechecked_at": "2026-10-11T07:23:52.495554+00:00",
+      "original_provenance": "research/ingests/round9-graphite-handoff-20261011.json"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/uk2024-or24047.pdf",
+      "sha256": "1a72206ff4e1b8d6cbc2a350e28338f192e264a3ba6c31a5d8dbb28262e35dc5",
+      "rechecked_at": "2026-10-11T07:23:52.495554+00:00",
+      "original_provenance": "research/ingests/round9-graphite-handoff-20261011.json"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/usgs-mcs2026-graphite.txt",
+      "sha256": "e054fb4a0619eeac7a529bc859230968887b1e413a1e6d5719ee3a0b4f03dbdb",
+      "rechecked_at": "2026-10-11T07:23:52.495554+00:00",
+      "original_provenance": "research/ingests/round9-graphite-handoff-20261011.json"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/usgs-mcs2026-p96.png",
+      "sha256": "e7aa4adca567088d2f67d9a4f830affe9c2276bd193b715201f5cf290e263a8c",
+      "rechecked_at": "2026-10-11T07:23:52.495554+00:00",
+      "original_provenance": "research/ingests/round9-graphite-handoff-20261011.json"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/usgs-mcs2026-p97.png",
+      "sha256": "6f1b6e3623fbfd3f2a22329a689f9a96e9be5b5cd2c340c6b24783033e15d1ea",
+      "rechecked_at": "2026-10-11T07:23:52.495554+00:00",
+      "original_provenance": "research/ingests/round9-graphite-handoff-20261011.json"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/usgs-mcs2026-selected.txt",
+      "sha256": "b38150c5c33b4f5f8fbb4e3e15a42cbd04243a24c11408f65530b8d2874e6389",
+      "rechecked_at": "2026-10-11T07:23:52.495554+00:00",
+      "original_provenance": "research/ingests/round9-graphite-handoff-20261011.json"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/usgs-mcs2026.pdf",
+      "sha256": "595e6e66674236dea40125a03eb1ea6b347f331c0bcf3411a1e77eba53c0d391",
+      "rechecked_at": "2026-10-11T07:23:52.495554+00:00",
+      "original_provenance": "research/ingests/round9-graphite-handoff-20261011.json"
+    }
+  ],
+  "new_raw_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/acquisition.json",
+      "sha256": "e35dd3def3eb8aa3d67a29cae571159cca5dfbcaeeae59f83721168e531493f5",
+      "bytes": 2200
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/round10_graphite_official.json",
+      "sha256": "75b9fbf32e736103ea8138dd159a40e7f085aea9fd9b3b617ddb5465d13d3f38",
+      "bytes": 14335
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/round10_graphite_search1.json",
+      "sha256": "872ba7cf6d18572234dbec0502b0f4e493ff3eaa7ba8b9d6a8b42130d8672cfd",
+      "bytes": 33889
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/round10_graphite_search2.json",
+      "sha256": "fc6dc14c4f20bbe241c852d228ed8cabc62eadc209668da1f855b297b0ac51cf",
+      "bytes": 16966
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/round10_graphite_search5.json",
+      "sha256": "c03925084292ccaabb7580044968310f972036046c8fea720f5bb8b4bc7ae815",
+      "bytes": 14205
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/round10_graphite_search6.json",
+      "sha256": "48a4cdff57d909d02c49739e63322c15a3650c6fffbc43fd1ab100cc6d94e868",
+      "bytes": 16565
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/round10_graphite_source3.json",
+      "sha256": "64939d5e4f13ca824555e1a9586d03217c4f440e302140728be037286e67d99a",
+      "bytes": 5987
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/round10_graphite_source4.json",
+      "sha256": "92875399a2ae55933958be182259707b1c7e234f1f7756844101cbff02213e8d",
+      "bytes": 15677
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/uk-current-landing.html",
+      "sha256": "037d0ae4b6d92ce6a4fe421dd3fab1db4b7f06e777b2a3a1fc590e767faef4e0",
+      "bytes": 55323
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/uk-old-landing.html",
+      "sha256": "3c247d7ad675e453d00e4a8ba3b86809f164a2c7237ab50173a76e33ba4c85eb",
+      "bytes": 55791
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/uk-or24059-p11.png",
+      "sha256": "70f9a276a7609c6d60754635fef2d347719047aeca03ce9e3e6f17003c264a32",
+      "bytes": 130577
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/uk-or24059-p48.png",
+      "sha256": "eb9545ff43a10fa1206e61b5d8d44133d89c402aebfb22a4cafcdb375dd92496",
+      "bytes": 119986
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/uk-or24059-selected.txt",
+      "sha256": "c87f7bb0a27f0f9d17e4a00d725bec41eec0f8cc501cd037c11566ba014dd267",
+      "bytes": 13174
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/uk2024-or24059.pdf",
+      "sha256": "e5708ffb1080c874cc57f0e20aad8f99aea746977971280434a1cfbb37f28c9e",
+      "bytes": 29325722
+    }
+  ],
+  "validation": {
+    "command": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate data/records/natural-graphite.yaml",
+    "exit_code": 0,
+    "result": "Checked1record;0failed",
+    "log_path": "/private/tmp/cmm-round10-natural-graphite-validation.log"
+  },
+  "limitations": [
+    "No accepted microbial mechanism or external commodity identifier.",
+    "No broad-graphite or battery-grade accepted root in this batch.",
+    "Independent record and category reviews and final batch/publication gates are separate artifacts.",
+    "No exhaustion claim."
+  ]
+}

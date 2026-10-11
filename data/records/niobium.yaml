@@ -1,0 +1,113 @@
+id: cmmmech:niobium
+name: Niobium
+material_kind: element
+description: >-
+  The element Nb, also called columbium, distinct from niobium ions, oxides,
+  host minerals, alloys and niobium-bearing furnace wastes. The United States
+  2025 list's Niobium entry is mapped to this element; it does not automatically
+  designate a waste feed as critical. The curated experiment reports
+  condition-dependent niobium release in an activated-sludge-derived culture,
+  with unresolved controls and analytical preparation limiting causal inference.
+identifiers:
+  - id: CHEBI:33344
+    label: niobium atom
+sources:
+  - id: chebi_niobium
+    title: 'ChEBI:33344 - niobium atom; formula Nb, net charge 0'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:33344
+    accessed_on: '2026-10-11'
+  - id: us_2025
+    title: >-
+      US Department of the Interior, Geological Survey. Final 2025 List of
+      Critical Minerals, 7 November 2025, Federal Register 90:50494-50497,
+      document 2025-19813; Niobium row on page 50496.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: andrzejewska_gorecka_2019
+    title: >-
+      Andrzejewska-Gorecka et al. (2019). Release of critical metals from furnace
+      wastes using the process of bioleaching in various variants. Archives of
+      Environmental Protection 45(3):72-78. DOI 10.24425/aep.2019.128643.
+      Research methods pp.73-74, Tables 1-4, Figures 3 and 7, Results pp.75-76.
+    url: https://doi.org/10.24425/aep.2019.128643
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States
+    list_name: Department of the Interior Final List of Critical Minerals
+    edition: '2025 final list, published 7 November 2025'
+    classification: critical
+    source_ref: us_2025
+mechanisms:
+  - id: sludge_culture_ash_release
+    name: Condition-dependent niobium release in sludge-derived leaching cultures
+    process: bioleaching
+    description: >-
+      An adapted, living mixed culture derived from municipal activated sludge
+      was associated with greater reported niobium release from municipal-waste
+      incineration ash in a shaken 24 degrees C assay than in the paper's
+      averaged control. Compressed-air aeration instead gave a reported null
+      niobium result in that ash, and sewage-sludge ash responded much less.
+      These are assay-specific release observations, not demonstrated niobium
+      redox chemistry, a resolved microbial pathway or isolated-metal recovery.
+    context: >-
+      The community's taxa, strains and source treatment plant are not resolved.
+      Activated sludge and distilled water were mixed 1:1 with 1% powdered
+      sulfur; the percent basis was not specified. Adaptation at 24 degrees C,
+      120 rpm continued until pH below 3 and the reported sulfur-oxidizer index
+      reached 10^-6. Each 300 mL flask then held 150 mL culture and 10 g ash
+      for five days. Ash A came from municipal-waste thermal processing and
+      ash B from sewage-sludge thermal processing; their reported initial Nb
+      contents were 33.6 and 15.3 mg/kg waste. Feed mineralogy, particle size,
+      sterilization and detailed provenance were not reported. Table 2's variants
+      were 24 degrees C/120 rpm without compressed air, 24 degrees C with
+      compressed-air mixing, and 37 degrees C/50 rpm without compressed air.
+      Starting culture pH was below 3; final A pH was 10, 6 and 10, respectively,
+      and B pH was 9, 8 and 9. This is a small laboratory flask experiment.
+    microbial: true
+    evidence:
+      - source_ref: andrzejewska_gorecka_2019
+        supports: support
+        explanation: >-
+          Figure 3 reports ash-A Nb release of 100.0%, 0.0% and 6.7% in variants
+          1-3, versus 2.3% for the averaged control; Table 4 reports 33.6, 0.0
+          and 2.3 mg Nb released per kg initial ash. Figure 7 reports ash-B
+          values of 14.6%, 14.5% and 14.7%, versus 5.9% control. These are the
+          authors' values, without uncertainty intervals. The p.74 formula
+          divides metal concentration in leaching culture times culture volume
+          by initial ash mass times initial metal content. A reported 100%
+          release is therefore relative to the measured initial ash inventory,
+          not a purified Nb product yield or an independently closed mass balance.
+      - source_ref: andrzejewska_gorecka_2019
+        supports: partial
+        explanation: >-
+          Methods state that three corresponding control variants gave similar
+          results and were averaged, but do not specify their composition,
+          sterilization, inoculum exclusion or matched pH. ICP-OES is named,
+          but filtration/centrifugation, digestion of the leaching sample,
+          culture-background subtraction and Nb detection limits are not
+          specified. Thus dissolved Nb cannot be separated confidently from
+          colloidal or particulate Nb, and sludge chemistry or abiotic effects
+          are not isolated. Three instrument exposures do not establish
+          biological replication; independent replicate counts and statistical
+          tests are not supplied. The reported 0.0% is retained as source
+          wording, without interpreting it as an analytically proven zero.
+      - source_ref: andrzejewska_gorecka_2019
+        supports: partial
+        explanation: >-
+          Tables 2 and 4 disagree on variant-3 speed: 50 versus 120 rpm.
+          Figures and running text agree with Table 2's 50 rpm, but the
+          discrepancy remains unresolved. Increased sulfate and sulfur-oxidizer
+          counts occurred under aeration, whereas ash-A Nb release was highest
+          without that aeration and at final pH 10. This does not demonstrate
+          sulfur oxidation or acid production as the cause of Nb release.
+          The contrasting ash-B results prevent a general claim of complete
+          Nb extraction from furnace wastes. No phase-specific dissolution,
+          metal separation, product purity or industrial deployment was tested.
+curation_history:
+  - timestamp: '2026-10-11T07:24:30.324752+00:00'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Created element identity, US 2025 criticality and condition-dependent sludge-culture ash release, retaining nulls and unresolved controls, analytical fractions, replication and source discrepancies.
+history_refs:
+  - history/records/niobium/2026-10-11T072410Z-codex-3d9cae.yaml

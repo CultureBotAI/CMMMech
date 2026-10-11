@@ -1,0 +1,112 @@
+id: cmmmech:zirconium
+name: Zirconium
+material_kind: element
+description: >-
+  The element Zr, distinct from zirconium salts, zirconia phases, zircon
+  mineral and zirconium-metal commodities. The United States 2025
+  Zirconium designation is mapped to this element without extending it
+  to every host mineral or compound. The curated laboratory preparation
+  combines microbial culture with subsequent thermal processing and
+  does not establish isolated zirconium-metal recovery.
+identifiers:
+  - id: CHEBI:33342
+    label: zirconium atom
+sources:
+  - id: chebi_zirconium
+    title: 'ChEBI:33342 - zirconium atom; formula Zr and net charge 0'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:33342
+    accessed_on: '2026-10-11'
+  - id: us_2025
+    title: >-
+      US Department of the Interior, Geological Survey. Final 2025 List of
+      Critical Minerals, 7 November 2025, Federal Register 90:50494-50497,
+      document 2025-19813; Zirconium row on page 50497.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: agceli_2023
+    title: >-
+      Koşarsoy Ağçeli, Hammamchi, Cihangir and Aksu (2023).
+      Biosynthesis of Zirconium dioxide Nanoparticles by Streptomyces sp.
+      HC1: Characterization and Bioactivity. Erzincan University Journal
+      of Science and Technology 16(1):224-238.
+      DOI 10.18185/erzifbed.1174027; Sections 2.1-2.3 and 3.1,
+      Figures 1-6 and Conclusion.
+    url: https://doi.org/10.18185/erzifbed.1174027
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States
+    list_name: Department of the Interior Final List of Critical Minerals
+    edition: '2025 final list, published 7 November 2025'
+    classification: critical
+    source_ref: us_2025
+mechanisms:
+  - id: hc1_culture_thermal_preparation
+    name: HC1 culture-associated preparation followed by zirconia calcination
+    process: other
+    description: >-
+      A preparation containing Streptomyces sp. HC1 culture and potassium
+      hexafluorozirconate yielded a collected solid that was dried and
+      calcined before characterization as zirconia-containing material.
+      Microbial participation in the preparation is reported, but its
+      necessity and the identity of a biologically formed precursor remain
+      unresolved. The oxide product does not establish reduction of Zr(IV)
+      to metallic zirconium or an enzymatic zirconium redox pathway.
+    context: >-
+      HC1 was supplied by Hacettepe University's Biotechnology Department;
+      no sequence accession or culture-collection identifier is supplied
+      in the inspected paper. Section 2.2 describes mycelium or spores in
+      100 mL LB in a 250 mL flask, grown at 25 degrees C, pH 9 and 200 rpm
+      for 72 h. Culture was mixed with 100 mL of 1 mM K2ZrF6 at pH 3.6
+      and shaken at 200 rpm for 24 h; this stock concentration is not a
+      demonstrated final mixture concentration. Reaction temperature is
+      not separately specified. Centrifugation at 10000 rpm for 10 min,
+      drying at 40 degrees C for 24 h and calcination at 450 degrees C
+      for 3 h preceded product characterization. The Results instead
+      describe Nutrient Broth and a 25 mL inoculum into 75 mL broth,
+      followed by adjusted reaction pH values; the medium/protocol
+      discrepancy is unresolved. Laboratory particle preparation is
+      distinct from ore extraction, purified-element recovery and
+      industrial deployment.
+    microbial: true
+    evidence:
+      - source_ref: agceli_2023
+        supports: support
+        explanation: >-
+          Sections 2.2-2.3 and 3.1 identify the culture-containing
+          preparation and mandatory thermal steps. Figure 5 shows an
+          aggregated particulate material and an EDX spectrum labelled
+          Zr and O; Figure 4 supplies XRD data. These support a
+          zirconium-containing processed solid, without an isolated
+          product mass, zirconium mass balance or recovery percentage.
+      - source_ref: agceli_2023
+        supports: partial
+        explanation: >-
+          Section 2.2 states that uninoculated medium plus K2ZrF6 controls
+          were performed, but no matched synthesis-control outcome is
+          reported in the inspected full text or figures. The pre-calcination
+          solid is not separately phase-characterized. Figure 4 includes
+          reference patterns labelled synthetic Tazheranite ZrO2 and
+          Sylvite KCl, while the prose discusses tetragonal and monoclinic
+          zirconia. This does not establish a pure single zirconia phase.
+          The proposed NADH/reductase explanation was not experimentally
+          tested, and Zr remains formally +4 in both feed and ZrO2.
+      - source_ref: agceli_2023
+        supports: partial
+        explanation: >-
+          Figures 1-2 report number-weighted and volume-weighted size
+          distributions respectively, so their axes are not interchangeable.
+          The Results list reaction pH 5-7, whereas Figure 1 also plots
+          pH 8 and 9. Figure 5's micrometre-scale aggregates and the
+          text's 12.07 +/- 4.19 nm particle claim do not supply a transparent
+          common measurement basis or sampling count. No validated size
+          optimum is adopted here. Antimicrobial assays in Sections 3.2-3.3
+          concern the prepared particles and do not prove microbial
+          causality in their synthesis.
+curation_history:
+  - timestamp: '2026-10-11T07:24:26Z'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Created zirconium identity and dated US criticality with culture-associated preparation followed by thermal processing; retained unresolved control, medium, phase and size interpretations without claiming elemental recovery.
+history_refs:
+  - history/records/zirconium/2026-10-11T072415Z-codex-3a9fcd.yaml

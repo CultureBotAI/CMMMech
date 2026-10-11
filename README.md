@@ -64,6 +64,13 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Rhodium](data/records/rhodium.yaml) | Resting *Geobacter sulfurreducens* forms Rh-bearing nanoparticles | Single-metal and Pd/Rh experiments have different controls; depletion is not purified-metal yield |
 | [Silicon](data/records/silicon.yaml) | Joint SIT1/SIT2 knockdown conditionally changes diatom silicon utilization | Uptake and silica-tracer assays differ; no metallic-silicon recovery is shown |
 | [Tin](data/records/tin.yaml) | C22-inoculated sediment shows organotin debutylation | Unresolved taxonomy, pooled sampling and calibration limits constrain causal and quantitative claims |
+| [Boron](data/records/boron.yaml) | Boron-bearing accretions associated with two *Streptomyces* cultures | Missing matched precipitation controls and uncertain phase/measurement interpretation limit attribution |
+| [Fluorine](data/records/fluorine.yaml) | Engineered *Pseudomonas putida* transforms selected fluorinated model acids | Enantiomer specificity leaves a substantial residual fraction; no universal PFAS treatment or fluorine recovery claim |
+| [Niobium](data/records/niobium.yaml) | Laboratory leaching of niobium-bearing waste-incineration ashes | Substrate and loading effects, null results and incomplete controls limit microbial attribution |
+| [Tantalum](data/records/tantalum.yaml) | Condition-specific unsuccessful acidophile leaching of capacitor material | Tantalum non-detection is preserved without treating it as a measured zero or universal impossibility |
+| [Titanium](data/records/titanium.yaml) | *Shewanella algae* alters the titanium oxide passive film | Spectral and protocol limits remain explicit; corrosion is distinct from recovered titanium product |
+| [Zirconium](data/records/zirconium.yaml) | HC1 culture-associated preparation followed by calcination | Missing control outcomes and mixed phase evidence prevent claims of microbial necessity or pure zirconia |
+| [Natural graphite](data/records/natural-graphite.yaml) | Commodity identity and BGS/CMIC 2024 assessment designation | Natural origin does not establish battery grade; no microbial mechanism is asserted |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -80,7 +87,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [seventh expansion reviews](research/ingests/round7-20261011-publication.md),
 [eighth expansion reviews](research/ingests/round8-20261011-publication.md),
 [ninth expansion reviews](research/ingests/round9-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round9-frontier-20261011.md), and
+[tenth expansion reviews](research/ingests/round10-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round10-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

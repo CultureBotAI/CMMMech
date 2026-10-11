@@ -1,0 +1,133 @@
+id: cmmmech:fluorine
+name: Fluorine
+material_kind: element
+description: >-
+  The element F, distinct from fluoride anion, molecular fluorine, individual
+  organofluorine compounds, fluorite mineral and the fluorspar commodity.
+  Australia's explicitly named Fluorine entry is mapped to the element;
+  its comparative footnote about US and EU fluorspar does not establish
+  elemental-fluorine criticality in those jurisdictions.
+identifiers:
+  - id: CHEBI:24061
+    label: fluorine atom
+sources:
+  - id: chebi_fluorine
+    title: 'ChEBI:24061 - fluorine atom; formula F, charge 0'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:24061
+    accessed_on: '2026-10-11'
+  - id: australia_2024
+    title: >-
+      Australian Department of Industry, Science and Resources.
+      Australia's Critical Minerals List and Strategic Materials List,
+      update of 20 February 2024; Table 1, Fluorine row and footnote 13.
+    url: https://www.industry.gov.au/publications/australias-critical-minerals-list-and-strategic-materials-list
+    accessed_on: '2026-10-11'
+  - id: dodge_2024
+    title: >-
+      Dodge, Thoma, O'Connor and Wackett. Recombinant Pseudomonas growing on
+      non-natural fluorinated substrates shows stress but overall tolerance
+      to cytoplasmically released fluoride anion. mBio 15(1):e02785-23,
+      2024 issue; online 8 December 2023. DOI 10.1128/mbio.02785-23;
+      PMC10790756. Methods, Results, Tables 1-2, Figures 2-3 and
+      accompanying supplemental DOCX, Figures S1-S7 and Tables S1-S2.
+    url: https://doi.org/10.1128/mbio.02785-23
+    accessed_on: '2026-10-11'
+  - id: ncbi_putida
+    title: 'NCBI Taxonomy 303 - Pseudomonas putida; species-level entry'
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=303&mode=Info
+    accessed_on: '2026-10-11'
+  - id: atcc_12633
+    title: 'ATCC 12633 - Pseudomonas putida culture catalog entry'
+    url: https://www.atcc.org/products/12633
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: Australia
+    list_name: Department of Industry, Science and Resources Critical Minerals List
+    edition: '20 February 2024 update; Table 1'
+    classification: critical
+    source_ref: australia_2024
+mechanisms:
+  - id: recombinant_putida_defluorination
+    name: Enantioselective hydrolytic defluorination by recombinant Pseudomonas
+    process: other
+    description: >-
+      Pseudomonas putida ATCC 12633 engineered to constitutively express a
+      Delftia acidovorans strain B defluorinase grew on two model fluorinated
+      acids while releasing inorganic fluoride. Approximately half of the
+      fluorine in each racemic substrate was released, consistent with
+      preferential conversion of its S enantiomer. This is hydrolytic C-F
+      bond cleavage, not fluorine reduction, universal PFAS degradation or
+      isolation of a usable fluorine product.
+    context: >-
+      Laboratory recombinant culture grown with 20 mM racemic
+      alpha-fluorophenylacetic acid or 2-fluoropropionic acid as sole carbon
+      source in mineral salts basal medium. The medium had 40 mM
+      sodium/potassium phosphate buffer at pH 6.8, ammonium chloride 1 g/L,
+      trace metals and vitamins, and 50 micrograms/mL kanamycin for the
+      recombinant strain. General flask methods specify 20 mL in 125 mL
+      baffled flasks, 200 rpm, initial OD600 0.05-0.1 and growth at 28 or
+      30 degrees C; the main methods do not assign one of those two
+      temperatures unambiguously to each flask result. The separate
+      96-well lag assay specifies 30 degrees C. Inocula were washed once
+      and pregrown on mandelic acid or D-lactic acid, respectively. Fluoride
+      was measured with an ion-selective electrode calibrated with NaF;
+      OD600 and colony counts assessed growth and viability. Species
+      taxonomy is grounded separately from the ATCC strain and its
+      laboratory expression construct. The introduction's isolated 12663
+      spelling conflicts with 12633 in Methods, Results and the culture
+      authority; this record follows the latter. No fluorine-containing
+      mineral, mixed environmental waste or industrial process was tested
+      in the curated assays.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:303
+        label: Pseudomonas putida
+    evidence:
+      - source_ref: dodge_2024
+        supports: support
+        explanation: >-
+          Figure 2 and Table 2 show growth-associated fluoride release.
+          Table 2 reports 9.9 +/- 0.1 mM fluoride from 20 mM racemic
+          alpha-fluorophenylacetic acid and 9.9 +/- 0.2 mM from 20 mM
+          racemic 2-fluoropropionic acid, with times to maximal OD600 of
+          29 and 78 h, respectively. Values are means and standard
+          deviations of three biological replicates; the authors report
+          similar results in one independent repetition. The denominator
+          is total racemic substrate: this is about half of its fluorine,
+          not complete conversion or a recovered-product yield. Wild-type
+          ATCC 12633 did not grow on these test acids in the stated tests.
+      - source_ref: dodge_2024
+        supports: support
+        explanation: >-
+          Purified-enzyme assays include substrate solutions without enzyme
+          as spontaneous-release controls. Figure 3 and stereochemistry
+          methods distinguish two experiments: polarimetry of residual
+          alpha-fluorophenylacetic acid from a growing culture supported
+          retention of the R enantiomer, whereas stereospecific lactate
+          dehydrogenases identified D-lactate after purified-enzyme treatment
+          of racemic 2-fluoropropionic acid. These observations support
+          selective hydrolysis. The modeled active-site attack is an
+          interpretation, not a new crystal structure or mutational proof.
+      - source_ref: dodge_2024
+        supports: partial
+        explanation: >-
+          Table 1 reports activities below 0.01 micromole/min/mg for tested
+          difluorinated substrates and a fluoroolefin under its enzyme-assay
+          conditions; these limits are not zero or proof about all PFAS.
+          Table 2 shows lower final OD600 on fluorinated substrates than
+          on the corresponding nonfluorinated products, and Figure 2F
+          shows an initial colony-count decline before recovery. CrcB
+          involvement is inferred from genomic comparison and other-strain
+          literature, not a transporter knockout in this recombinant
+          strain. Wild-type nongrowth is not itself a quantitative abiotic
+          fluoride-release control for the flask cultures. Intracellular
+          fluoride concentrations and an isolated fluoride product were
+          not measured in these assays.
+curation_history:
+  - timestamp: '2026-10-11T07:25:31Z'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Created elemental fluorine identity, Australian2024 criticality and enantioselective recombinant-culture defluorination evidence; retained total-racemate denominator, stress and mechanistic limits.
+history_refs:
+  - history/records/fluorine/2026-10-11T072439Z-codex-95b027.yaml

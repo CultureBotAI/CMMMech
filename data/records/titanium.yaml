@@ -1,0 +1,125 @@
+id: cmmmech:titanium
+name: Titanium
+material_kind: element
+description: >-
+  The element Ti, distinct from titanium dioxide phases, titanium-bearing
+  mineral species, alloy formulations and the titanium-metal commodity.
+  The United States 2025 Titanium designation is mapped to this element;
+  it does not designate every titanium compound or establish microbial
+  recovery of metallic titanium. The curated experiment concerns alteration
+  of an oxide film on commercially pure titanium laboratory specimens.
+identifiers:
+  - id: CHEBI:33341
+    label: titanium atom
+sources:
+  - id: chebi_titanium
+    title: 'ChEBI:33341 - titanium atom; formula Ti and net charge 0'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:33341
+    accessed_on: '2026-10-11'
+  - id: us_2025
+    title: >-
+      US Department of the Interior, Geological Survey. Final 2025 List of
+      Critical Minerals, 7 November 2025, Federal Register 90:50494-50497,
+      document 2025-19813; Titanium row on page 50497.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: li_2026
+    title: >-
+      Li et al. (2026). Microbially reduced flavins destabilize the TiO2
+      passive film of titanium under bulk aerobic conditions.
+      National Science Review 13(16):nwag426. DOI 10.1093/nsr/nwag426;
+      Figures 1-6, Methods and Supplementary Materials, especially
+      Figures S1, S2, S7, S9 and pages 12-14.
+    url: https://doi.org/10.1093/nsr/nwag426
+    accessed_on: '2026-10-11'
+  - id: ncbi_shewanella_algae
+    title: 'NCBI Taxonomy 38313 - Shewanella algae; species, not the experimental strain'
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=38313&mode=Info
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States
+    list_name: Department of the Interior Final List of Critical Minerals
+    edition: '2025 final list, published 7 November 2025'
+    classification: critical
+    source_ref: us_2025
+mechanisms:
+  - id: shewanella_passive_film_reduction
+    name: Shewanella-associated reduction of the titanium oxide passive film
+    process: redox_transformation
+    description: >-
+      Shewanella algae biofilms were associated with oxygen depletion near
+      the titanium surface, a thinner oxide film, increased lower-valence
+      titanium spectral components and enhanced corrosion relative to
+      uninoculated controls. Riboflavin addition and overproduction support
+      an electron-shuttle contribution. Reduction of the pre-existing oxide
+      film and subsequent corrosion of underlying Ti are distinct processes;
+      these experiments do not demonstrate recovery of a titanium product.
+    context: >-
+      The reported strain is S. algae MCC 1A11468 from the Marine Culture
+      Collection of China; the linked taxonomy ID resolves the species only.
+      Commercially pure Ti cylinders were 10 mm in diameter and 3 mm high,
+      with a 0.785 cm2 exposed electrochemical surface, ground to 1000 grit,
+      ethanol-cleaned, water-rinsed and UV-sterilized for 30 min. The
+      culture medium was 2216E at initial pH 7.2 +/- 0.2; Figure S1 shows
+      changing pH rather than a constant-pH experiment. Main film and
+      electrochemical comparisons run to 21 days in bulk aerobic medium.
+      The separate Figure 5 mechanistic incubations were anaerobic, using
+      lactate as donor and simulated seawater deoxygenated with filtered
+      nitrogen for at least 30 min. The inspected main article and full
+      supplement do not specify incubation temperature, starting cell
+      density, lactate concentration or riboflavin amendment concentration.
+      The RF construct overexpressed S. oneidensis MR-1 riboflavin genes
+      in S. algae; it is not a second organism independently tested here.
+      These are laboratory coupon experiments, not an industrial extraction
+      or recovery process.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:38313
+        label: Shewanella algae
+    evidence:
+      - source_ref: li_2026
+        supports: support
+        explanation: >-
+          Figure 1 and its Results report passive-film thickness of
+          8.0 +/- 0.7 nm in the abiotic control and 5.9 +/- 0.5 nm beneath
+          biofilms after 21 days. Figure 1f samples ten image locations;
+          these are not ten independent culture replicates. FIB-TEM,
+          TOF-SIMS and XPS comparisons jointly support film alteration.
+          Figure 2 reports a roughly sixfold higher corrosion current
+          density after 21 days, derived by cathodic Tafel extrapolation,
+          with mean and SD of three independent replicates. This fitted
+          electrochemical outcome is not a measured dissolved-Ti yield.
+      - source_ref: li_2026
+        supports: support
+        explanation: >-
+          Figure 5d-e compares wild type, riboflavin-overproducing RF and
+          riboflavin-amended wild type. Greater extracellular riboflavin
+          accompanies higher corrosion currents despite broadly similar
+          biofilm biomass. The authors report no riboflavin effect in the
+          abiotic medium, although the two plotted control means are not
+          identical. Figure S7 is an abiotic reduced-riboflavin fluorescence
+          assay with TiO2, while Figure 5a-c is a DFT calculation. These
+          different observations support the shuttle model without proving
+          that every Ti transformation requires living cells.
+      - source_ref: li_2026
+        supports: partial
+        explanation: >-
+          Supplementary pages 12-13 acknowledge XPS fitting, charging and
+          sputtering-induced reduction uncertainties; matching analytical
+          settings support comparisons but do not eliminate artifacts.
+          Figure 5g reuses the abiotic XPS data from Figure S2 rather than
+          documenting a separate matched anaerobic control, and labels
+          its abiotic TiO2 fraction 80.6%, whereas Figure 1h gives 84.2%
+          at 3 nm. This unresolved difference prevents treating these
+          spectral fractions as exact conversion yields. Supplementary
+          methods describe CRISPRi of mtrA/mtrB/mtrC, but the inspected
+          article and supplement present no corresponding repression
+          outcome; a demonstrated requirement for MtrCAB is not curated.
+curation_history:
+  - timestamp: '2026-10-11T07:24:26Z'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Created titanium identity and dated US criticality with controlled laboratory passive-film transformation evidence, distinct assay arms and preserved protocol, spectral and causal limits.
+history_refs:
+  - history/records/titanium/2026-10-11T072403Z-codex-e6ce1c.yaml
