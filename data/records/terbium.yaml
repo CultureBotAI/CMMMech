@@ -1,0 +1,112 @@
+id: cmmmech:terbium
+name: Terbium
+material_kind: element
+description: >-
+  The element Tb, distinct from its dissolved ions, salts, host minerals,
+  phosphors and waste streams. The dated US designation concerns the named
+  terbium mineral commodity; it does not assign criticality to every
+  Tb-bearing material. The curated mechanism is a laboratory screening
+  observation using lyophilized cyanobacterial biomass and a synthetic
+  terbium solution, without demonstrated isolated-product recovery.
+identifiers:
+  - id: CHEBI:33376
+    label: terbium atom
+sources:
+  - id: chebi_terbium
+    title: 'ChEBI CHEBI:33376 - terbium atom; formula Tb, net charge 0'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:33376
+    accessed_on: '2026-10-11'
+  - id: usgs2025
+    title: >-
+      USGS (2025). Final 2025 List of Critical Minerals. Federal Register
+      90:50494-50497, document 2025-19813; terbium row on page 50497.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: paper2023
+    title: >-
+      Paper et al. (2023). Rare earths stick to rare cyanobacteria: Future
+      potential for bioremediation and recovery of rare earth elements.
+      Frontiers in Bioengineering and Biotechnology 11:1130939; Sections
+      2.1-2.5, 3.2 and 4.2, Table 1, Figure 2 and Supplementary Tables S1-S2.
+    url: https://doi.org/10.3389/fbioe.2023.1130939
+    accessed_on: '2026-10-11'
+  - id: ncbi_utex2973
+    title: >-
+      NCBI Taxonomy 1350461 - Synechococcus elongatus UTEX 2973;
+      strain-specific no-rank node.
+    url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1350461&retmode=xml
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States of America
+    list_name: USGS Final List of Critical Minerals
+    edition: '2025; Federal Register 90:50494-50497, 7 November 2025'
+    classification: critical
+    source_ref: usgs2025
+mechanisms:
+  - id: lyophilized_utex2973_terbium_sorption
+    name: Terbium biosorption with lyophilized Synechococcus elongatus UTEX 2973
+    process: biosorption
+    microbial: true
+    organisms:
+      - id: NCBITaxon:1350461
+        label: Synechococcus elongatus UTEX 2973
+    description: >-
+      A decrease in solution terbium after contact with prepared cyanobacterial
+      biomass supports a biosorption interpretation. The assay used lyophilized
+      biomass and does not demonstrate growth-dependent uptake, terbium redox
+      transformation or a particular molecular binding mechanism. Apparent
+      uptake was calculated from the aqueous concentration difference per
+      dry biomass mass, rather than measured as a purified terbium product.
+    context: >-
+      Paper et al. identified UTEX 2973 in their 12-strain screen. This strain
+      was cultivated in BG11 medium in a 3.7 L photobioreactor at 37 degrees C
+      with constant illumination at 300 micromol photons per square metre
+      per second and pH 8 maintained by CO2 addition, then harvested by
+      centrifugation in stationary phase. Before sorption, biomass was washed
+      three times in demineralized water, frozen at -80 degrees C and
+      lyophilized. The separate laboratory sorption assay used 10-20 mg dry
+      biomass in 2 mL single-metal solution, initially 10 mM and pH 5 +/- 0.2,
+      shaken for 3 h at room temperature. The exact terbium salt counter-ion,
+      numerical sorption temperature and strain-specific mass within that
+      range are not reported. Experiments were performed in triplicate,
+      without a stated distinction between independent biomass preparations
+      and technical replicates. After centrifugation at 10,000 rcf for 5 min,
+      supernatant concentrations were analyzed by ICP-OES with multielement
+      calibration standards. Biomass viability was not assessed. No matched
+      biomass-free terbium solution-control result is reported in the main
+      article or its two supplementary tables, so alternative solution-loss
+      processes are not fully excluded.
+    evidence:
+      - source_ref: paper2023
+        supports: support
+        explanation: >-
+          Table 1, Sections 2.1-2.5 and 3.2, and Figure 2 support the strain,
+          preparation, assay and positive terbium uptake plotted for UTEX
+          2973. Figure 2 expresses this screening endpoint as mg REE per g
+          dry biomass and labels it Qmax, but it derives from a single
+          10 mM screening condition; it is not a terbium Langmuir-fit capacity
+          or a recovery percentage. No numerical value has been reconstructed
+          from the graph or from the abstract's range across four elements.
+      - source_ref: paper2023
+        supports: partial
+        explanation: >-
+          Sections 2.6-2.10 and 3.3-3.7, Figures 3-7 and Supplementary Tables
+          S1-S2 concern cerium: their pH response, rapid kinetics, fitted
+          isotherms, competing-metal response, ion release and FTIR changes
+          do not establish those properties for terbium. The water-only
+          comparison for released Na, K, Mg and Ca in Section 3.6 belongs
+          to the Ce/Al/Pb/Ni/Zn experiment and is not a biomass-free terbium
+          blank. Section 4.2 recommends experiments on other REEs and discusses
+          desorption and recovery as follow-up processes. This study does
+          not demonstrate terbium-selective separation, regeneration,
+          purified-product yield or industrial deployment.
+curation_history:
+  - timestamp: '2026-10-11T05:59:03Z'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Added elemental identity, the dated US2025 designation and an individual
+      terbium cyanobacterial screening endpoint, with assay, control and
+      cross-element inference limits; scientific review is separate.
+history_refs:
+  - history/records/terbium/2026-10-11T055851Z-codex-8457ec.yaml

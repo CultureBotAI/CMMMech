@@ -1,0 +1,121 @@
+id: cmmmech:holmium
+name: Holmium
+material_kind: element
+description: >-
+  The element Ho, distinct from its dissolved ions, experimental nitrate salt, host minerals
+  and manufactured materials. The dated US designation concerns the named holmium mineral
+  commodity, without transferring criticality to every Ho-bearing substance. The curated laboratory
+  experiment documents element in harvested cyanobacterial biomass, not a resolved uptake
+  pathway, purified metal recovery or industrial deployment.
+identifiers:
+- id: CHEBI:49648
+  label: holmium atom
+sources:
+- id: chebi_holmium
+  title: ChEBI CHEBI:49648 - holmium atom; formula Ho, net charge 0
+  url: https://www.ebi.ac.uk/chebi/CHEBI:49648
+  accessed_on: '2026-10-11'
+- id: usgs2025
+  title: >-
+    USGS (2025). Final 2025 List of Critical Minerals. Federal Register 90:50494-50497, document
+    2025-19813; holmium row on page 50496.
+  url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  accessed_on: '2026-10-11'
+- id: zinicovscaia2024
+  title: >-
+    Zinicovscaia et al. (2024). Evaluation of Holmium(III), Erbium(III), and Gadolinium(III)
+    Accumulation by Cyanobacteria Arthrospira platensis Using Neutron Activation Analysis
+    and Elements’ Effects on Biomass Quantity and Biochemical Composition. Microorganisms
+    12:122; Sections 2-4 and Figures 1-5.
+  url: https://doi.org/10.3390/microorganisms12010122
+  accessed_on: '2026-10-11'
+- id: ncbi_limnospira
+  title: >-
+    NCBI Taxonomy 118562 - Limnospira platensis; species; Arthrospira platensis and Spirulina
+    platensis synonyms
+  url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=118562&retmode=xml
+  accessed_on: '2026-10-11'
+- id: cnmn_cb02
+  title: >-
+    National Collection of Nonpathogenic Microorganisms, Moldova: Spirulina platensis CNMN
+    CB-02; catalogue entry 21
+  url: https://cnmn.utm.md/collection_page/21
+  accessed_on: '2026-10-11'
+criticality:
+- jurisdiction: United States of America
+  list_name: USGS Final List of Critical Minerals
+  edition: 2025; Federal Register 90:50494-50497, 7 November 2025
+  classification: critical
+  source_ref: usgs2025
+mechanisms:
+- id: cyanobacterial_holmium_association
+  name: Holmium association with harvested cyanobacterial biomass
+  process: other
+  microbial: true
+  organisms:
+  - id: NCBITaxon:118562
+    label: Limnospira platensis
+  description: >-
+    Cultures reported as Arthrospira platensis CNMN-CB-02 yielded harvested dried fractions
+    containing Ho after growth in synthetic Ho(III)-supplemented medium. Increasing nominal
+    exposure was associated with increasing element concentration in this fraction. Total-element
+    analysis does not distinguish intracellular bioaccumulation from surface association or
+    nonbiological material retained with the biomass.
+  context: >-
+    The study reports Arthrospira platensis CNMN-CB-02 from the Institute of Microbiology
+    and Biotechnology, Technical University of Moldova. The official collection lists CB-02
+    as Spirulina platensis. NCBI maps both species names to Limnospira platensis; the species
+    identifier does not verify a strain genome or a strain-specific NCBI node. Living cultures
+    were exposed to Ho(III), supplied as Ho(NO3)3·5H2O, in separate single-element treatment
+    series at 10, 20 and 30 mg/L elemental concentration. These are not mixed-REE selectivity
+    assays. Supplementation occurred on day 1 with 0.4 g/L inoculum, followed by five more
+    days of cultivation. Flasks held 500 mL of nutrient medium, including 8 g/L bicarbonate
+    and 0.08 g/L EDTA, at pH 10.0 and 30 degrees C. Illumination was reported as 55 µM photons/m2/s;
+    the paper uses this nonstandard printed unit, retained without silently converting it.
+    Cultures were shaken at 100 rpm for 45 min twice daily, 12 h apart. Controls were cultures
+    grown without added REEs. Experiments were reported in triplicate, with Student t-tests
+    against controls. Biomass was retained on 5-8 µm filters and part was dried for instrumental
+    neutron activation analysis (NAA); reference materials supported analytical quality control.
+    The methods do not describe a post-filtration wash, a biomass-free exposure control or
+    cell-surface versus intracellular fractionation. NAA measures total element in the harvested
+    dried fraction, not free-ion speciation or aqueous depletion. Initial solution concentrations
+    were checked by ICP-OES, but no final dissolved-element balance is reported for this experiment.
+    No desorption, isolated product or industrial demonstration was tested.
+  evidence:
+  - source_ref: zinicovscaia2024
+    supports: support
+    explanation: >-
+      Sections 2.1-2.3 and Section 3/Figure 1 report Ho in the dried biomass fraction increasing
+      with the nominal Ho concentration; the text gives 4780-25,780 mg Ho/kg of that fraction.
+      This is a source-reported concentration range, not an isolated-product yield. The article’s
+      overall Gd > Ho > Er ranking does not hold at every dose: Figure 1 shows Ho below Er
+      at 10 mg/L. No universal interelement selectivity ranking is assigned.
+  - source_ref: zinicovscaia2024
+    supports: partial
+    explanation: >-
+      The harvested-fraction result supports biomass-associated Ho accumulation only. Without
+      a reported wash, abiotic exposure control, aqueous mass balance or localization assay,
+      surface binding, intracellular uptake, retained medium and co-retained precipitate are
+      not separated. Alkaline bicarbonate-containing medium further makes unmeasured chemical
+      partitioning relevant; precipitation is a possible alternative, not a demonstrated phase.
+      The record therefore uses process other rather than asserting biosorption, biomineralization
+      or metabolic transport as a resolved cause.
+  - source_ref: zinicovscaia2024
+    supports: partial
+    explanation: >-
+      Section 3 and Figures 2-4 show a cost to biomass growth and altered biochemical composition
+      under Ho exposure, including reduced phycobiliproteins and increased MDA. The text singles
+      out a 13.7% biomass decline at 10 mg/L, whereas the 30 mg/L bars in Figure 2 visually
+      suggest a larger proportional decline relative to their control. Exact inhibition percentages
+      are not treated as reconciled measurements. These laboratory responses do not establish
+      harmless long-term remediation.
+curation_history:
+- timestamp: '2026-10-11T06:01:10Z'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: >-
+    Added verified elemental identity and dated US2025 criticality with primary
+    evidence for element association with harvested cyanobacterial biomass;
+    retained assay, causal and source-consistency limits for independent review.
+history_refs:
+- history/records/holmium/2026-10-11T060018Z-codex-7c7d08.yaml
