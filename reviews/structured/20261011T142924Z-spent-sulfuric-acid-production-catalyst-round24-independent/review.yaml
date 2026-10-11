@@ -1,0 +1,428 @@
+schema_version: 1.0.0
+review_id: 20261011T142924Z-spent-sulfuric-acid-production-catalyst-round24-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of spent sulfuric-acid-production catalyst
+started_at: '2026-10-11T14:24:22.585673Z'
+finished_at: '2026-10-11T14:29:24.419499Z'
+reviewer:
+  identity: Codex /root/round24_identity_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Agent /root/round24_sulfuric_catalyst authored the target. Agent
+    /root/round24_identity_frontier independently assessed its full primary evidence,
+    figures, identifiers and provenance after canonical inspect and made no target
+    edits. Shared worktree, curator-downloaded source files and root-executed batch
+    gates are disclosed.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The frozen record faithfully represents conditional laboratory culture-associated
+  V mobilization from a distinct secondary resource, preserving contrary controls,
+  source contradictions and recovery limits. No actionable corrective finding remains.
+source:
+  git_revision: d7183efeb2e528d6d88f0b69da41323642b8fa85
+  state: working_tree
+  inputs:
+  - path: data/records/spent-sulfuric-acid-production-catalyst.yaml
+    sha256: 00fa3e42e1ef54f6d074a813235ea049a28eed42d93b395e7486697e72f253bc
+    role: target
+  - path: history/records/spent-sulfuric-acid-production-catalyst/2026-10-11T141934Z-codex-62c311.yaml
+    sha256: 230638cd1112289eeba1cd4c9add4a2517e49d975fd7916e1f1bb5be8d5b2332
+    role: context
+  - path: research/ingests/round24-sulfuric-sources-20261011.json
+    sha256: 1224f593fad17404dcbd37e3c01bbcf571223ea0c901becebd5f78b3c5a401ae
+    role: context
+  - path: research/ingests/round24-sulfuric-sources-20261011.md
+    sha256: 89fb8b0b6c766f355217c07791ae4d754e56837036d1ac1675d3f6910a8ebf2e
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: All maintained record fields and actual provenance; full primary scientific
+    assessment of the main study, its supplement and the companion residue evidence
+    used.
+  selection: One assigned new round24 record, including both paired dossiers as context.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:spent-sulfuric-acid-production-catalyst
+  exclusions:
+  - target: Raw experimental data, uncurated BCR risk indices and current legal classification
+    reason: No independent raw-data deposit was acquired and these measurements/classifications
+      are not asserted. Companion risk-index contradictions remain in the dossier
+      rather than being imported.
+targets:
+- target_id: cmmmech:spent-sulfuric-acid-production-catalyst
+  path: data/records/spent-sulfuric-acid-production-catalyst.yaml
+  label: Spent sulfuric-acid-production catalyst
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/spent-sulfuric-acid-production-catalyst.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/spent-sulfuric-acid-production-catalyst.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: One record checked; zero failures. Independently executed by reviewing
+    agent, terminal session 48854.
+  target_ids:
+  - cmmmech:spent-sulfuric-acid-production-catalyst
+- check_id: batch
+  name: Native full checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: '/private/tmp/cmm-round24-final-batch.log: uv run --locked --extra dev
+    python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 89.10s (0:01:29)
+
+    Checked 160 record(s); 0 failed.
+
+    Checked 181 history record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:spent-sulfuric-acid-production-catalyst
+- check_id: require
+  name: Required corpus
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: '/private/tmp/cmm-round24-final-require.log: Checked 160 record(s); 0 failed.
+
+    '
+  target_ids:
+  - cmmmech:spent-sulfuric-acid-production-catalyst
+- check_id: history
+  name: Trusted-base history
+  command: uv run --locked cmmmech validate-history --base d7183efeb2e528d6d88f0b69da41323642b8fa85
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: '/private/tmp/cmm-round24-final-history.log: Checked 181 history record(s);
+    0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:spent-sulfuric-acid-production-catalyst
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/spent-sulfuric-acid-production-catalyst.yaml
+  locator: All maintained fields, inline CREATE event and linked history
+  accessed_at: '2026-10-11T14:29:24.419499Z'
+  support: supports
+  summary: Exact frozen record and provenance independently read after canonical inspect.
+    No criticality claim is assigned to the process-defined mixed resource.
+  snapshot_sha256: 00fa3e42e1ef54f6d074a813235ea049a28eed42d93b395e7486697e72f253bc
+- evidence_id: main
+  kind: primary_source
+  reference: https://doi.org/10.1007/s43452-020-00136-9
+  locator: Methods 2.1–2.5, Results 3.1–3.3, conclusions; Tables 1–3 and Figures 1–9
+    on visually inspected PDF pages 4–11
+  accessed_at: '2026-10-11T14:29:24.419499Z'
+  support: supports
+  summary: Independent full-text and figure audit confirms conditional low-loading
+    culture-associated liquid V mobilization and contrary high-loading controls. Day-21
+    body/Figure 7 values are 93% at 1% PD and 85.5% at 2%, whereas abstract/conclusions
+    assign 93% to 2%. Both day-28 prose values are labeled 1%; the figure separates
+    arms. Lower liquid V later is not monotonic cumulative extraction. Working volume
+    and pulp-density basis remain ambiguous. ICP-MS measures total V, not oxidation
+    state. Selected incomplete kinetic datasets and missing residue mass cannot establish
+    unique rate control or complete mass recovery.
+  snapshot_sha256: 2b952b67cfae6fcf7804a0f45dbf1b8ac44dd4cd23f4e0d603437176f2359533
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs43452-020-00136-9/MediaObjects/43452_2020_136_MOESM1_ESM.docx
+  locator: All captions and visually inspected embedded Figures S1–S3
+  accessed_at: '2026-10-11T14:29:24.419499Z'
+  support: supports
+  summary: The source supplement documents preparation, sulfur-settling transfer tubes
+    and color change. S1 says 250 micrometres, conflicting with main 100/200-micrometre
+    sieves. These images neither quantify survival nor directly measure V valence.
+  snapshot_sha256: bb70db9cf478b90a78790c1a5684388a115963768975c546c7da0c381b120501
+- evidence_id: companion
+  kind: primary_source
+  reference: https://doi.org/10.1007/s11356-020-11349-z
+  locator: Methods through conclusions; Figures 1–3 and Tables 1–4; Figures 1–3 and
+    Tables 2–4 visually checked on PDF pages 3,5,6,7
+  accessed_at: '2026-10-11T14:29:24.419499Z'
+  support: context_only
+  summary: Same-group residue paper explicitly repeats conditions selected from the
+    earlier study and reproduces oxide compositions. Its 2%-PD/93% statement does
+    not independently settle the earlier conflict. Table 3 confirms bioleached residue
+    SPLP V 6.4 and Al 4.8 mg/L after 1 g/20 mL, pH 4.2, 18-hour treatment. No universally
+    safe residue or concrete deployment follows. Nonimported BCR concentration and
+    raw-V fraction/RAC inconsistencies are acknowledged in the source dossier.
+  snapshot_sha256: 1da029bea43542907836ce24ef9d445e42d623010bd72f794423fddb22d336b3
+- evidence_id: dsm
+  kind: primary_source
+  reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-9463
+  locator: Live catalogue name, strain designation, isolation source and country fields
+  accessed_at: '2026-10-11T14:29:24.419499Z'
+  support: supports
+  summary: DSMZ independently resolves DSM 9463 to Acidithiobacillus thiooxidans B-S2
+    from a bioleaching reactor in Australia. Collection identity does not authenticate
+    the paper stock.
+- evidence_id: taxon
+  kind: primary_source
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info
+  locator: Live Taxonomy ID, current name and rank fields
+  accessed_at: '2026-10-11T14:29:24.419499Z'
+  support: supports
+  summary: NCBI Taxonomy 930 resolves to Acidithiobacillus thiooxidans at species
+    rank. The record does not use the species CURIE as a strain/genome identifier.
+- evidence_id: search
+  kind: search
+  reference: https://link.springer.com/article/10.1007/s43452-020-00136-9
+  locator: 2026-10-11 first returned result sets for two exact-DOI correction/retraction
+    queries and primary pages
+  accessed_at: '2026-10-11T14:29:24.419499Z'
+  support: context_only
+  summary: Reviewer independently searched "10.1007/s43452-020-00136-9" correction
+    retraction and "10.1007/s11356-020-11349-z" correction retraction. No affecting
+    notice was identified in those sets; no exhaustive absence claim. Curator bounded
+    material/control searches, access receipts and hidden/ignored/following dedup
+    scope are disclosed in the paired dossier.
+  search_scope: Two reviewer web queries, no filters or pagination, exact query time
+    not retained. Curator dedup searched data/records,research,reviews,history and
+    named prior raw handoff with hidden/ignored files and relevant symlinks included.
+    Unrelated directories were not exhaustively searched.
+- evidence_id: history
+  kind: record_content
+  reference: history/records/spent-sulfuric-acid-production-catalyst/2026-10-11T141934Z-codex-62c311.yaml
+  locator: Actual CREATE sidecar and separately timestamped inline event
+  accessed_at: '2026-10-11T14:29:24.419499Z'
+  support: supports
+  summary: Sidecar has actual codex/GPT-6/codex actor, correct target and creation
+    scope. UTC inline event 14:19:32.351097 precedes sidecar 14:19:34; this is distinct
+    provenance, not an invented historical event. Trusted-base history check passes.
+  snapshot_sha256: 230638cd1112289eeba1cd4c9add4a2517e49d975fd7916e1f1bb5be8d5b2332
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round24-gate-receipts.json
+  locator: Terminal named, batch, nonempty and trusted-base history receipts plus
+    gated hash
+  accessed_at: '2026-10-11T14:29:24.419499Z'
+  support: supports
+  summary: 'Reviewer independently ran named validation and read coordinating-agent
+    terminal batch logs: 308 tests passed, 3 skipped; 160 records and 181 histories
+    pass. Inspect, current and batch-gated record hashes agree. Full batch was executed
+    by root, not by this reviewer.'
+  snapshot_sha256: 78d51f2509b4419f72d1833d47d0d3b26bb21a56e3cad6bd806665d10ca026bb
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Process-defined secondary resource and criticality boundary
+  outcome: supported
+  summary: Acid-production catalyst after use is a distinct mixed secondary resource.
+    Copper-smelter origin does not make it copper slag or petroleum HDS catalyst.
+    No mineral-species identity or constituent criticality is inherited.
+  target_ids:
+  - cmmmech:spent-sulfuric-acid-production-catalyst
+  evidence_ids:
+  - record
+  - main
+  - supplement
+  dimensions:
+  - name: material_kind
+    value: secondary_resource
+    definition: Spent SO2-oxidation catalyst from a sulfuric-acid unit; silica-rich
+      mixed feed, not pure V2O5.
+    evidence_ids:
+    - record
+    - main
+  - name: criticality
+    value: Not asserted
+    definition: No jurisdiction, list or edition is assigned to this resource; no
+      list verification is needed for an absent claim.
+    evidence_ids:
+    - record
+- assessment_id: biology
+  area: evidence
+  topic: Organism and biomass-state scope
+  outcome: supported
+  summary: Study reports living DSM 9463 inoculum; taxon and collection labels resolve
+    at their separate scopes. Qualitative transfer activity does not quantify survival
+    or direct V-reduction activity.
+  target_ids:
+  - cmmmech:spent-sulfuric-acid-production-catalyst
+  evidence_ids:
+  - record
+  - main
+  - supplement
+  - dsm
+  - taxon
+  dimensions:
+  - name: organism_and_biomass
+    value: Living Acidithiobacillus thiooxidans DSM 9463 culture
+    definition: NCBITaxon:930 is species-level; B-S2 is catalogue strain designation.
+      Neither independently verifies experimental purity/genotype.
+    evidence_ids:
+    - main
+    - dsm
+    - taxon
+- assessment_id: design
+  area: evidence
+  topic: Substrate, pretreatment, conditions and controls
+  outcome: supported
+  summary: Conditions are anchored to the main assay without importing companion volume
+    or a silently assigned sieve fraction. Low-pH uninoculated controls demonstrate
+    a conditional culture association; an acid-trajectory-matched comparator was not
+    reported.
+  target_ids:
+  - cmmmech:spent-sulfuric-acid-production-catalyst
+  evidence_ids:
+  - record
+  - main
+  - supplement
+  dimensions:
+  - name: substrate_pretreatment
+    value: Comminuted used catalyst; autoclaved materials
+    definition: Main 100/200-micrometre sieve description conflicts with SI250; fraction
+      per bioleach arm unresolved. Oxide wt% describes one feed.
+    evidence_ids:
+    - main
+    - supplement
+  - name: conditions
+    value: 28 degrees C,100 rpm,2% v/v inoculum,2% w/v sulfur,initial pH2.5,days1–28
+    definition: At least duplicates;50-cm3 flask size is not working liquid volume;PD1–20%
+      remains source labels with unstated basis.
+    evidence_ids:
+    - main
+  - name: controls
+    value: Uninoculated counterparts at each loading
+    definition: Initial recipe is matched but evolving solution chemistry is not independently
+      isolated from cell effects.
+    evidence_ids:
+    - main
+- assessment_id: outcome
+  area: evidence
+  topic: Normalized liquid V release and source contradictions
+  outcome: supported
+  summary: Record accurately confines percentages to filtered liquid normalized against
+    feed inventory; low-loading association and high-loading contrary results coexist.
+    Published arm/day-28 labeling conflicts are retained, not resolved by invented
+    measurements.
+  target_ids:
+  - cmmmech:spent-sulfuric-acid-production-catalyst
+  evidence_ids:
+  - record
+  - main
+  - companion
+  dimensions:
+  - name: outcome_denominator
+    value: Filtered-liquid total V as percentage of initial feed V
+    definition: 0.22-micrometre filtration and ICP-MS total element analysis; not
+      oxidation-state assay, isolated product yield or complete mass balance.
+    evidence_ids:
+    - main
+  - name: causal_limits
+    value: Acidification/sulfate association
+    definition: Color, Eh/pH, sulfur settling and fitted kinetics do not prove direct
+      enzymatic reduction, unique rate control, sulfur source, precipitation cause
+      or oxygen limitation.
+    evidence_ids:
+    - main
+    - supplement
+- assessment_id: residue
+  area: evidence
+  topic: Independent assay compartment and deployment limits
+  outcome: supported
+  summary: Related companion evidence supports residual leachability and does not
+    supply independent process replication or regulatory clearance. No deployment,
+    isolated recovered metal or validated material reuse is asserted.
+  target_ids:
+  - cmmmech:spent-sulfuric-acid-production-catalyst
+  evidence_ids:
+  - record
+  - main
+  - companion
+  dimensions:
+  - name: residual_assay
+    value: SPLP V6.4 and Al4.8 mg/L
+    definition: Separate1 g/20 mL, pH4.2,18-hour extraction of treated solid; neither
+      original process liquor nor removal percentage.
+    evidence_ids:
+    - companion
+  - name: deployment
+    value: Laboratory flasks and laboratory residue tests
+    definition: Industrial origin of the spent feed is not industrial deployment of
+      the microbial process.
+    evidence_ids:
+    - main
+    - companion
+- assessment_id: provenance
+  area: provenance
+  topic: Exact reviewed state and independent assessment
+  outcome: supported
+  summary: Author and reviewer are different agents. Current record, history and dossiers
+    match canonical inspect hashes; gated record hash agrees. No target corrections
+    were needed or made by reviewer.
+  target_ids:
+  - cmmmech:spent-sulfuric-acid-production-catalyst
+  evidence_ids:
+  - record
+  - history
+  - gates
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- The original study conflicts on the93% pulp-density arm, both day-28 labels and
+  sieve preparation; unresolved source inconsistencies remain explicit.
+- Main working liquid volume and percentage loading basis are unclear; companion conditions
+  do not retroactively resolve them.
+- No pH-trajectory-matched sterile comparison, direct V speciation, quantified survival
+  or isolated causal test establishes a specific enzyme/reduction mechanism.
+- Residue masses and complete V balances are unavailable; liquid percentages and residue
+  concentrations are different measurements, and no isolated product or industrial
+  deployment is demonstrated.
+- Companion residue evidence is related same-group work, not independently verified
+  replication; residual SPLP V/Al remain and no safety or regulatory determination
+  is made.
+- Correction searches cover declared first-returned sets only. Primary files were
+  curator-downloaded and independently inspected; no raw-data reanalysis was performed.
+notes:
+- Target and source-dossier orientation preceded canonical inspect; detailed scientific
+  assessment followed exact-state capture.
+- All relevant primary main figures/tables and all three supplement image panels were
+  visually inspected. Companion Table1 was text-inspected, while Figures1–3 and Tables2–4
+  were also visually inspected.
+- No review defect was found, so no corrective record edit or review issue is proposed.
+  Existing evidence limitations are not converted into invented curation errors.
+- 'First save rejected a target-kind metadata value: record was corrected to shared
+  maintained. Target/input hashes and scientific assessment were unchanged; no review
+  artifact was saved by the rejected attempt.'
+tags:
+- round24
+- independent
+- scientific-review
+- secondary-resource

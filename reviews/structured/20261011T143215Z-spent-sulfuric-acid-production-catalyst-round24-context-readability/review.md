@@ -1,0 +1,363 @@
+# Formatting-only successor for sulfuric catalyst source-context correction
+
+- Review: 20261011T143215Z-spent-sulfuric-acid-production-catalyst-round24-context-readability
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T14:30:49.550624Z
+- Finished UTC: 2026-10-11T14:32:15.655323Z
+- Reviewer: Codex /root/round24_identity_frontier (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: false
+
+## Summary
+
+Verified the issue #88 spacing-only source-context correction with fresh hashes. Record/history and scientific text remain unchanged; the exact prior independent scientific review is retained. This is a provenance and formatting check, not a fresh scientific assessment.
+
+## Scope And Provenance
+
+Fresh inspection of corrected source-context Markdown and unchanged maintained sulfuric catalyst record, history and original review. Literature support was not reassessed.
+
+Selection: One maintained record whose two dossier Markdown copies received three spacing-only replacements.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base d7183efeb2e528d6d88f0b69da41323642b8fa85.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:spent-sulfuric-acid-production-catalyst | data/records/spent-sulfuric-acid-production-catalyst.yaml | maintained | Spent sulfuric-acid-production catalyst |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent exact-change and provenance verification | passed | True | cmmmech:spent-sulfuric-acid-production-catalyst | Three spacing corrections verified in each Markdown copy. Reconstructing the exact prior bytes reproduces their prior SHA256; removing whitespace leaves identical bytes. Record, sidecar, JSON dossier, schema and original scientific review are unchanged. |
+| Independent named validation | passed | True | cmmmech:spent-sulfuric-acid-production-catalyst | Carried forward from 20261011T142924Z-spent-sulfuric-acid-production-catalyst-round24-independent; not rerun for this formatting-only observation. The scientific target and history are byte-identical. One record checked; zero failures. Independently executed by reviewing agent, terminal session 48854. |
+| Native full checks | passed | True | cmmmech:spent-sulfuric-acid-production-catalyst | Carried forward from 20261011T142924Z-spent-sulfuric-acid-production-catalyst-round24-independent; not rerun for this formatting-only observation. The scientific target and history are byte-identical. /private/tmp/cmm-round24-final-batch.log: uv run --locked --extra dev python scripts/check.py<br>All checks passed!<br>........................................................................ [ 23%]<br>........................................................................ [ 46%]<br>........................................................................ [ 69%]<br>....................................................sss................. [ 92%]<br>.......................                                                  [100%]<br>308 passed, 3 skipped in 89.10s (0:01:29)<br>Checked 160 record(s); 0 failed.<br>Checked 181 history record(s); 0 error(s).<br> |
+| Required corpus | passed | True | cmmmech:spent-sulfuric-acid-production-catalyst | Carried forward from 20261011T142924Z-spent-sulfuric-acid-production-catalyst-round24-independent; not rerun for this formatting-only observation. The scientific target and history are byte-identical. /private/tmp/cmm-round24-final-require.log: Checked 160 record(s); 0 failed.<br> |
+| Trusted-base history | passed | True | cmmmech:spent-sulfuric-acid-production-catalyst | Carried forward from 20261011T142924Z-spent-sulfuric-acid-production-catalyst-round24-independent; not rerun for this formatting-only observation. The scientific target and history are byte-identical. /private/tmp/cmm-round24-final-history.log: Checked 181 history record(s); 0 error(s).<br> |
+
+## Scientific And Domain Assessments
+
+### Issue88 source-context readability correction
+
+provenance: supported. Targets: cmmmech:spent-sulfuric-acid-production-catalyst.
+
+The three corrected spacing defects in both copies are resolved in the reviewed bytes. Exact reconstruction matches prior hashes and proves no non-whitespace source text changed. This is a new observation of the publication fix, not retirement of an invented prior structured finding.
+
+### Preserved exact-target scientific coverage
+
+provenance: supported. Targets: cmmmech:spent-sulfuric-acid-production-catalyst.
+
+Maintained record and history bytes match the original independent scientific review. The prior observation is preserved and linked; only context Markdown hashes need this successor. Scientific coverage and its limitations are carried forward, without claiming a new literature check.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| prior_science | reviews/structured/20261011T142924Z-spent-sulfuric-acid-production-catalyst-round24-independent/review.yaml; Exact prior independent scientific observation and its input hashes | supports | Prior scientific review remains unchanged and covers the unchanged record SHA256 00fa3e42e1ef54f6d074a813235ea049a28eed42d93b395e7486697e72f253bc. Its pass_with_limitations verdict and original literature assessment remain the scientific coverage; no literature was reassessed now. |
+| comparison | /private/tmp/cmm-round24-sulfuric-readability-independent-check.json; Fresh independent exact-byte reconstruction and whitespace comparison | supports | Both maintained source Markdown copies changed only three spacing sequences: double space after 93% to one, atday 21 to at day 21, and byday 28 to by day 28, preserving the existing spaces before the numeric days. Reconstructed old bytes match known prior SHA256; all non-whitespace bytes are identical. Record/history and all other prior inputs are byte-identical. |
+| ingest_md | research/ingests/round24-sulfuric-sources-20261011.md; Conditions, controls and outcome paragraph, line 50 | supports | Current paragraph has readable 93% and, at day 21 and by day 28 wording, with actual spaces between day and number. Scientific values and all non-whitespace text are unchanged. |
+| report_md | research/sources/round24-sulfuric/20261011T142053Z-source-investigation.md; Corresponding paragraph, line 50 | supports | Second maintained Markdown copy is byte-identical to the corrected ingest dossier and has the same three spacing-only repairs. |
+| publication_issue | https://github.com/CultureBotAI/CMMMech/issues/88; Publication-audit issue supplied by coordinating agent | supports | Root reported and corrected the publication readability defect under issue #88. This observation independently verifies the supplied exact change. The original scientific review had no structured finding for this subsequently identified defect; no historical finding or previous-occurrence identity is invented. |
+
+## Limits And Additional Notes
+
+- This review is limited to formatting and provenance. Primary literature, identifier resolution, control adequacy, mechanistic support and deployment limits were not freshly reassessed.
+- The earlier pass_with_limitations scientific verdict and all its unresolved source limitations continue to apply.
+- Native scientific and history checks are transparently carried forward from the prior review after proving unchanged record/history bytes; the new check addresses the changed Markdown context only.
+- Issue88 was identified after the original scientific review. No structured finding existed in that review, so this successor does not invent an old issue key or previous_occurrences chain.
+- The original YAML/Markdown review pair is retained; no saved review was edited. The source-document formatting changes were made by root.
+- Fresh canonical inspect completed before judging corrected bytes; independent reconstruction verified the exact previous hashes and spacing-only delta.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T143215Z-spent-sulfuric-acid-production-catalyst-round24-context-readability
+kind: record
+repository: CultureBotAI/CMMMech
+title: Formatting-only successor for sulfuric catalyst source-context correction
+started_at: '2026-10-11T14:30:49.550624Z'
+finished_at: '2026-10-11T14:32:15.655323Z'
+reviewer:
+  identity: Codex /root/round24_identity_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: 'Root corrected the two source Markdown copies for issue #88.
+    This agent independently checked the exact changes and input provenance and made
+    no target or source-document edits. The earlier scientific assessment was performed
+    by this same reviewing agent, independently of record author /root/round24_sulfuric_catalyst.'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: false
+summary: 'Verified the issue #88 spacing-only source-context correction with fresh
+  hashes. Record/history and scientific text remain unchanged; the exact prior independent
+  scientific review is retained. This is a provenance and formatting check, not a
+  fresh scientific assessment.'
+source:
+  git_revision: d7183efeb2e528d6d88f0b69da41323642b8fa85
+  state: working_tree
+  inputs:
+  - path: data/records/spent-sulfuric-acid-production-catalyst.yaml
+    sha256: 00fa3e42e1ef54f6d074a813235ea049a28eed42d93b395e7486697e72f253bc
+    role: target
+  - path: history/records/spent-sulfuric-acid-production-catalyst/2026-10-11T141934Z-codex-62c311.yaml
+    sha256: 230638cd1112289eeba1cd4c9add4a2517e49d975fd7916e1f1bb5be8d5b2332
+    role: context
+  - path: research/ingests/round24-sulfuric-sources-20261011.json
+    sha256: 1224f593fad17404dcbd37e3c01bbcf571223ea0c901becebd5f78b3c5a401ae
+    role: context
+  - path: research/ingests/round24-sulfuric-sources-20261011.md
+    sha256: 0b1cf57236e680fad4b4ebd38d27fa158781cdeb42e7a82888598b556bca11c3
+    role: context
+  - path: research/sources/round24-sulfuric/20261011T142053Z-source-investigation.md
+    sha256: 0b1cf57236e680fad4b4ebd38d27fa158781cdeb42e7a82888598b556bca11c3
+    role: context
+  - path: reviews/structured/20261011T142924Z-spent-sulfuric-acid-production-catalyst-round24-independent/review.yaml
+    sha256: fdf9391b56117d01754a5877625d804a8bcf03e3851d17c9b8e88f6ce9f9890d
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Fresh inspection of corrected source-context Markdown and unchanged
+    maintained sulfuric catalyst record, history and original review. Literature support
+    was not reassessed.
+  selection: One maintained record whose two dossier Markdown copies received three
+    spacing-only replacements.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:spent-sulfuric-acid-production-catalyst
+  exclusions:
+  - target: Primary literature, identifiers and scientific truth of the unchanged
+      record
+    reason: Not freshly reassessed; exact prior independent scientific review retains
+      that coverage and its limitations.
+targets:
+- target_id: cmmmech:spent-sulfuric-acid-production-catalyst
+  path: data/records/spent-sulfuric-acid-production-catalyst.yaml
+  label: Spent sulfuric-acid-production catalyst
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/spent-sulfuric-acid-production-catalyst.yaml
+    role: maintained_record
+checks:
+- check_id: formatting
+  name: Independent exact-change and provenance verification
+  command: .venv/bin/python /private/tmp/cmm-round24-check-sulfuric-readability.py
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Three spacing corrections verified in each Markdown copy. Reconstructing
+    the exact prior bytes reproduces their prior SHA256; removing whitespace leaves
+    identical bytes. Record, sidecar, JSON dossier, schema and original scientific
+    review are unchanged.
+  target_ids:
+  - cmmmech:spent-sulfuric-acid-production-catalyst
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/spent-sulfuric-acid-production-catalyst.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Carried forward from 20261011T142924Z-spent-sulfuric-acid-production-catalyst-round24-independent;
+    not rerun for this formatting-only observation. The scientific target and history
+    are byte-identical. One record checked; zero failures. Independently executed
+    by reviewing agent, terminal session 48854.
+  target_ids:
+  - cmmmech:spent-sulfuric-acid-production-catalyst
+- check_id: batch
+  name: Native full checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Carried forward from 20261011T142924Z-spent-sulfuric-acid-production-catalyst-round24-independent;
+    not rerun for this formatting-only observation. The scientific target and history
+    are byte-identical. /private/tmp/cmm-round24-final-batch.log: uv run --locked
+    --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 89.10s (0:01:29)
+
+    Checked 160 record(s); 0 failed.
+
+    Checked 181 history record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:spent-sulfuric-acid-production-catalyst
+- check_id: require
+  name: Required corpus
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Carried forward from 20261011T142924Z-spent-sulfuric-acid-production-catalyst-round24-independent;
+    not rerun for this formatting-only observation. The scientific target and history
+    are byte-identical. /private/tmp/cmm-round24-final-require.log: Checked 160 record(s);
+    0 failed.
+
+    '
+  target_ids:
+  - cmmmech:spent-sulfuric-acid-production-catalyst
+- check_id: history
+  name: Trusted-base history
+  command: uv run --locked cmmmech validate-history --base d7183efeb2e528d6d88f0b69da41323642b8fa85
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Carried forward from 20261011T142924Z-spent-sulfuric-acid-production-catalyst-round24-independent;
+    not rerun for this formatting-only observation. The scientific target and history
+    are byte-identical. /private/tmp/cmm-round24-final-history.log: Checked 181 history
+    record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:spent-sulfuric-acid-production-catalyst
+evidence:
+- evidence_id: prior_science
+  kind: record_content
+  reference: reviews/structured/20261011T142924Z-spent-sulfuric-acid-production-catalyst-round24-independent/review.yaml
+  locator: Exact prior independent scientific observation and its input hashes
+  accessed_at: '2026-10-11T14:32:15.655323Z'
+  support: supports
+  summary: Prior scientific review remains unchanged and covers the unchanged record
+    SHA256 00fa3e42e1ef54f6d074a813235ea049a28eed42d93b395e7486697e72f253bc. Its pass_with_limitations
+    verdict and original literature assessment remain the scientific coverage; no
+    literature was reassessed now.
+  snapshot_sha256: fdf9391b56117d01754a5877625d804a8bcf03e3851d17c9b8e88f6ce9f9890d
+- evidence_id: comparison
+  kind: validation
+  reference: /private/tmp/cmm-round24-sulfuric-readability-independent-check.json
+  locator: Fresh independent exact-byte reconstruction and whitespace comparison
+  accessed_at: '2026-10-11T14:32:15.655323Z'
+  support: supports
+  summary: 'Both maintained source Markdown copies changed only three spacing sequences:
+    double space after 93% to one, atday 21 to at day 21, and byday 28 to by day 28,
+    preserving the existing spaces before the numeric days. Reconstructed old bytes
+    match known prior SHA256; all non-whitespace bytes are identical. Record/history
+    and all other prior inputs are byte-identical.'
+  snapshot_sha256: 7868f901644b824365b4eedcc979895af93ef93695bb0be97dc26d6a5d0c5847
+- evidence_id: ingest_md
+  kind: record_content
+  reference: research/ingests/round24-sulfuric-sources-20261011.md
+  locator: Conditions, controls and outcome paragraph, line 50
+  accessed_at: '2026-10-11T14:32:15.655323Z'
+  support: supports
+  summary: Current paragraph has readable 93% and, at day 21 and by day 28 wording,
+    with actual spaces between day and number. Scientific values and all non-whitespace
+    text are unchanged.
+  snapshot_sha256: 0b1cf57236e680fad4b4ebd38d27fa158781cdeb42e7a82888598b556bca11c3
+- evidence_id: report_md
+  kind: record_content
+  reference: research/sources/round24-sulfuric/20261011T142053Z-source-investigation.md
+  locator: Corresponding paragraph, line 50
+  accessed_at: '2026-10-11T14:32:15.655323Z'
+  support: supports
+  summary: Second maintained Markdown copy is byte-identical to the corrected ingest
+    dossier and has the same three spacing-only repairs.
+  snapshot_sha256: 0b1cf57236e680fad4b4ebd38d27fa158781cdeb42e7a82888598b556bca11c3
+- evidence_id: publication_issue
+  kind: record_content
+  reference: https://github.com/CultureBotAI/CMMMech/issues/88
+  locator: Publication-audit issue supplied by coordinating agent
+  accessed_at: '2026-10-11T14:32:15.655323Z'
+  support: supports
+  summary: 'Root reported and corrected the publication readability defect under issue
+    #88. This observation independently verifies the supplied exact change. The original
+    scientific review had no structured finding for this subsequently identified defect;
+    no historical finding or previous-occurrence identity is invented.'
+assessments:
+- assessment_id: formatting
+  area: provenance
+  topic: Issue88 source-context readability correction
+  outcome: supported
+  summary: The three corrected spacing defects in both copies are resolved in the
+    reviewed bytes. Exact reconstruction matches prior hashes and proves no non-whitespace
+    source text changed. This is a new observation of the publication fix, not retirement
+    of an invented prior structured finding.
+  target_ids:
+  - cmmmech:spent-sulfuric-acid-production-catalyst
+  evidence_ids:
+  - comparison
+  - ingest_md
+  - report_md
+  - publication_issue
+- assessment_id: coverage
+  area: provenance
+  topic: Preserved exact-target scientific coverage
+  outcome: supported
+  summary: Maintained record and history bytes match the original independent scientific
+    review. The prior observation is preserved and linked; only context Markdown hashes
+    need this successor. Scientific coverage and its limitations are carried forward,
+    without claiming a new literature check.
+  target_ids:
+  - cmmmech:spent-sulfuric-acid-production-catalyst
+  evidence_ids:
+  - prior_science
+  - comparison
+findings: []
+actions: []
+limitations:
+- This review is limited to formatting and provenance. Primary literature, identifier
+  resolution, control adequacy, mechanistic support and deployment limits were not
+  freshly reassessed.
+- The earlier pass_with_limitations scientific verdict and all its unresolved source
+  limitations continue to apply.
+- Native scientific and history checks are transparently carried forward from the
+  prior review after proving unchanged record/history bytes; the new check addresses
+  the changed Markdown context only.
+notes:
+- Issue88 was identified after the original scientific review. No structured finding
+  existed in that review, so this successor does not invent an old issue key or previous_occurrences
+  chain.
+- The original YAML/Markdown review pair is retained; no saved review was edited.
+  The source-document formatting changes were made by root.
+- Fresh canonical inspect completed before judging corrected bytes; independent reconstruction
+  verified the exact previous hashes and spacing-only delta.
+tags:
+- round24
+- independent
+- formatting-only
+- provenance-only
+links:
+- https://github.com/CultureBotAI/CMMMech/issues/88
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261011T142924Z-spent-sulfuric-acid-production-catalyst-round24-independent
+  relationship: Formatting/provenance-only successor after source-context Markdown
+    corrections; unchanged record retains the exact prior independent scientific coverage.
+    Original review remains immutable.
+```

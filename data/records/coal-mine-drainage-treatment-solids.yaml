@@ -1,0 +1,130 @@
+id: cmmmech:coal-mine-drainage-treatment-solids
+name: Coal-mine-drainage treatment solids
+material_kind: secondary_resource
+description: >-
+  Heterogeneous solids accumulated during treatment of drainage from coal mines,
+  including metal-rich precipitates and coatings in passive remediation systems.
+  Their processing origin distinguishes this secondary resource from untreated
+  mine water, natural ore, coal combustion ash and an individual oxide mineral.
+  The curated experiment used material from five Pennsylvania passive systems
+  containing different proportions of manganese, iron, aluminium and rare-earth
+  elements. Neither a universal composition nor a constituent's criticality
+  designation is assigned to the resource. Laboratory culture-associated metal
+  mobilization is documented; a purified recovered product, economic recovery
+  yield and industrial deployment are not established.
+sources:
+- id: vietmeier2026
+  title: >-
+    Vietmeier, Beebe, Flett, Trun and Gulliver (2026). Bioleaching Rare Earth
+    Elements from Abandoned Coal Mine Drainage as an Unconventional Feedstock
+    for Biomining. Minerals 16(9):930, published 11 September 2026.
+    DOI 10.3390/min16090930; Methods 2.1-2.5, Results 3.1-3.6, Figures 1-7
+    and Discussion. Real treatment solids, laboratory assays and qualified
+    physiological interpretations.
+  url: https://doi.org/10.3390/min16090930
+  accessed_on: '2026-10-11'
+- id: vietmeier2026supp
+  title: >-
+    Supplementary Materials for Vietmeier et al. (2026), Minerals 16(9):930.
+    Publisher ZIP contains minerals-4280163-supplementary.pdf, four pages:
+    Figures S1-S2 and Tables S1-S2. Table S1 provides 29 sample rows in ppb,
+    including sterile controls and censored individual analytes; this is the
+    same experiment as the main article, not independent replication.
+  url: https://mdpi-res.com/d_attachment/minerals/minerals-16-00930/article_deploy/minerals-16-00930-s001.zip
+  accessed_on: '2026-10-11'
+- id: ncbi_mycoides
+  title: NCBI Taxonomy, Bacillus mycoides, species Taxonomy ID 1405; not a JR07 strain identifier.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1405&mode=info
+  accessed_on: '2026-10-11'
+- id: ncbi_pseudomycoides
+  title: NCBI Taxonomy, Bacillus pseudomycoides, species Taxonomy ID 64104; not a KB7 strain identifier.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=64104&lin=f&lvl=3&mode=Info
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: acidogenic_culture_associated_ree_mobilization
+  name: Acidogenic-culture-associated rare-earth mobilization from treatment solids
+  process: bioleaching
+  microbial: true
+  organisms:
+  - id: NCBITaxon:1405
+    label: Bacillus mycoides
+  - id: NCBITaxon:64104
+    label: Bacillus pseudomycoides
+  description: >-
+    Separately inoculated living cultures reported as Bacillus mycoides JR07 and
+    Bacillus pseudomycoides KB7 were associated with increased total rare-earth
+    concentrations in decanted supernatants from several prepared coal-mine-drainage
+    treatment solids. Effects depended on the feed and isolate; JR07 did not
+    exceed the sterile control for Wingfield Pines. Acid production, biofilm
+    assays and surface association make acidogenesis plausible but do not
+    demonstrate a unique lactate pathway, gene requirement or phase-specific
+    rare-earth dissolution mechanism.
+  context: >-
+    Methods 2.3 used solids from Glasgow, Scootac, Kentucky Hollow, Sterrett and
+    Wingfield Pines passive remediation systems. Coatings were washed from
+    limestone rocks with sterile water, dried at 60 degrees C for approximately
+    24-48 h, ground and autoclaved at 121 degrees C for 30 min. Prepared solids
+    at 1% w/v were incubated with individual isolates for three days at 30 degrees C
+    in modified manganese-reduction medium (3 g peptone, 2.5 g glucose and
+    0.010 g FePO4 per litre; recipe pH 7.6 adjusted with NaOH). Corresponding
+    sterile-medium/solid samples appear in Figure 3 and Table S1. ICP-MS/ICP-OES
+    analyzed decanted supernatant; filtration and digestion of this metal-assay
+    fraction, working volume, inoculum dose and replicate number are not specified
+    for this experiment. Its final pH and oxygen conditions are not reported.
+    The stationary, unaerated 10% solid-loading Mn(II) assay in Methods 2.2 and
+    the 10% inoculum/2 mL SEM preparation in Methods 2.5 are separate assays.
+    Species IDs map the authors' species names, not independently verified JR07
+    or KB7 genome accessions. These laboratory tests do not demonstrate metal
+    recovery in the field systems that supplied the feed.
+  evidence:
+  - source_ref: vietmeier2026supp
+    supports: support
+    explanation: >-
+      Table S1 TREE column reports JR07, KB7 and sterile sample concentrations,
+      respectively, of 92.29, 36.37 and 7.27 ppb for Glasgow (GJ/GK/GS);
+      260.42, 136.58 and 3.36 ppb for Scootac (SJ/SK/SS); 466.11, 400.80 and
+      228.08 ppb for Kentucky Hollow (KJ/KK/KS); and 317.65, 302.82 and
+      3.97 ppb for Sterrett (StJ/StK/StS). These are source-reported supernatant
+      totals, not isolated-product yields or independently estimated effect
+      sizes. The high Kentucky Hollow sterile value is retained; the main
+      article's approximately 40-fold comparison is to other isolates, not
+      this sterile control, and varies with the chosen comparator.
+  - source_ref: vietmeier2026supp
+    supports: partial
+    explanation: >-
+      Table S1 Wingfield Pines TREE values are 0.82 ppb for JR07 (WJ), 4.30 ppb
+      for KB7 (WK) and 1.59 ppb for sterile WS. Several individual analytes are
+      BDL; they are not treated as zeros. AV20 and AV21 Kentucky Hollow totals
+      are below the sterile total. AV22 and AV24 rows are absent for Kentucky
+      Hollow, Sterrett and Wingfield Pines, so no complete six-isolate-by-five-feed
+      design or unreported negative result is inferred. No uncertainty is given
+      for the TREE values. Table S1 names promethium in its TREE definition but
+      has no Pm column; the totals are retained as reported without inventing
+      a promethium measurement or assigning a censoring convention to the sum.
+  - source_ref: vietmeier2026
+    supports: partial
+    explanation: >-
+      Methods 2.4 and Figures 4-6 associate JR07/KB7 with lactate production,
+      annotated fermentation genes, crystal-violet staining and contact with
+      Glasgow solids. Neither matched-pH abiotic acid controls nor interventions
+      establish that lactate, a particular gene or biofilm is necessary for REE
+      release. The approximately pH 4 statement refers to prior Mn experiments;
+      it is not a measured pH trajectory for every REE treatment. SEM-EDS
+      elemental association does not uniquely identify MnO2 or a REE host phase.
+      Figure 3 uses column-normalized heat-map values, not directly comparable
+      concentrations across elements. Discussion's less-than-1% statement lacks
+      an explicit mass-balance calculation and is not adopted as a verified
+      extraction yield; the 1% w/v loading, Figure 2 feed values and Table S1
+      solution units require reconciliation. No recovered solid REE product
+      or independently demonstrated process economics is reported.
+curation_history:
+- timestamp: '2026-10-11T14:19:40Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: >-
+    Created a treatment-origin secondary-resource record from the complete
+    primary article and supplement; retained sterile-control and feed-dependent
+    counterevidence, analytical and mass-balance limits, and species-versus-strain
+    identity distinctions without assigning criticality or industrial recovery.
+history_refs:
+- history/records/coal-mine-drainage-treatment-solids/2026-10-11T142246Z-codex-f53e30.yaml
