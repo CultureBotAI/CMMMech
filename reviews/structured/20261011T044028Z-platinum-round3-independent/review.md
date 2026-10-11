@@ -1,0 +1,413 @@
+# Platinum independent adversarial scientific review
+
+- Review: 20261011T044028Z-platinum-round3-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T04:38:27Z
+- Finished UTC: 2026-10-11T04:40:28Z
+- Reviewer: /root (Codex) (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Platinum identity, dated designation and bounded CH34-associated transformation are supported. No actionable defect found. The record explicitly preserves chemical-control equivalence, viability loss, unreplicated screening, source spectroscopy discrepancies and unavailable detailed analytical preparation.
+
+## Scope And Provenance
+
+All fields of one newly curated platinum record and its attached CREATE history.
+
+Selection: Independent review of the final history-attached file state.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 5892e9a0aca54ef3f45d2ce87a6dcfb80d1569da.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:platinum | data/records/platinum.yaml | maintained | Platinum |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Single-record validation | passed | True | cmmmech:platinum | 1record checked;0failed. |
+| History integrity | passed | True | cmmmech:platinum | 30histories checked;0errors. |
+| Batch local gate | passed | True | cmmmech:platinum | 307passed3skipped;21records and30histories valid; terminal exit0. |
+| Primary evidence and authority review | passed | True | cmmmech:platinum | Independently inspected source text, images, controls, identifiers, dated list and bounded countersearches. |
+
+## Scientific And Domain Assessments
+
+### Element and strain resolution
+
+identity: supported. Targets: cmmmech:platinum.
+
+Verified neutral element and CH34 strain identifiers; salts and host resources remain distinct.
+
+### Dated commodity designation
+
+grounding: supported. Targets: cmmmech:platinum.
+
+US final2025 edition and explicit commodity mapping are supported.
+
+### Biomass, substrate, controls, outcome and scale
+
+evidence: supported. Targets: cmmmech:platinum.
+
+The biomass-associated transformation claim is bounded by the chemical control; microbial necessity or purified yield is not asserted.
+
+### Contradictions and unavailable methods
+
+consistency: supported. Targets: cmmmech:platinum.
+
+Source XAS edge/energy inconsistency, missing earlier ICP preparation, null complexes and viability assay limits remain explicit; no invalid mg/kg observations added.
+
+### Actual curation history and checks
+
+provenance: supported. Targets: cmmmech:platinum.
+
+History is correctly attached, separate from inline event, and valid against trusted main base.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/platinum.yaml; Complete final history-attached bytes | supports | Inspected hash before assessment; reviewer did not author or modify this record. |
+| identity | https://www.ebi.ac.uk/chebi/CHEBI:33364; ChEBI name, formula and charge | supports | Live entry confirms platinum atom, Pt, charge zero. Element identity is separate from the experimental complexes. |
+| organism | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=266264&amp;mode=Info; Current name, no-rank entry and strain synonyms | supports | Live entry confirms Cupriavidus metallidurans CH34; matches named SCK-CEN culture. |
+| criticality | https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm; Final 2025 notice and platinum row | supports | Live notice names platinum individually. Its byproduct column is not a criticality flag; the row belongs to the critical-minerals table. |
+| paper | https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0169093; Retained PMC5207411.xml: all Methods; Results/Discussion including speciation, particle morphology and membrane integrity; Table 1; supplement captions | supports | Independently read full relevant sections and checked source identity. CH34 cultivation, washed biomass, acidic anaerobic H2 exposure, chemical and no-donor controls, n=1 removal screen, qualitative product interpretation and viability limits match the record. |
+| images | https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0169093; Figures 1/3/5, Table 1, Supplementary Figure S1 and Table S1, retained curator-acquired images | supports | Visually inspected all six images independently; verified original acquisition hashes. Figure1 and S1 spectra support the attributed qualitative interpretation; no refitting. Figure5 reaches the assay floor by27h. Table1 confirms99% H2 chemical control and CH34 endpoint,24% CH34 no-donor,3% carboplatin and0 tetraamine. |
+| history | history/records/platinum/2026-10-11T043609Z-codex-1cf1ab.yaml; Target, actual actor/time, CREATE event | supports | Attached canonical history matches this record and present curation; inline event remains distinct. |
+| batch | /private/tmp/cmm-round3-check.log; Complete terminal output; parent process exit0 | supports | Executed and inspected final just check:307 passed,3 skipped in56.44s;21records valid;30histories valid. |
+| search | 2026-10-11 live web and local searches; First returned result sets; data/research/reviews/history; cited evidence directory | context_only | No actionable correction or counterclaim appeared in these inspected results. Other organism/electrode studies remain leads, not direct replications. Hidden/ignored-file-inclusive matches are the new record and its provenance, not a second platinum root. |
+
+## Limits And Additional Notes
+
+- One selected laboratory experiment; other organisms, donor arms and Pt complexes cannot inherit its product assignment.
+- Table1 screening is n=1; no statistical superiority inferred. Chemical H2 control prevents asserting microbial necessity.
+- Authors report qualitative XANES/EXAFS interpretation; absolute-edge labels conflict internally. No raw-array fitting, complete oxidation-fraction measurement or isolated product yield was verified.
+- Detailed ICP preparation is cited to an earlier paper and remains unavailable in this review. Percentages are preserved as reported operational endpoints, not a fully defined dissolved/colloidal mass balance.
+- Original full text and figure files were acquired by the curator; reviewer independently inspected those bytes and verified hashes, without claiming fresh downloads.
+- Searches were bounded; hidden and ignored files included within stated local scope. No claim of exhaustive corrections or remaining-material coverage.
+- Final publication coverage, squash provenance and post-deletion main checks are separate parent-owned gates.
+- No defect issue proposed in this review; existing source limitations are not fabricated into record errors.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T044028Z-platinum-round3-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Platinum independent adversarial scientific review
+started_at: '2026-10-11T04:38:27Z'
+finished_at: '2026-10-11T04:40:28Z'
+reviewer:
+  identity: /root (Codex)
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Did not author or edit the platinum record, history or dossier.
+    Independently inspected primary text and figures acquired by the curator, verified
+    hashes, reopened authorities and ran countersearches.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Platinum identity, dated designation and bounded CH34-associated transformation
+  are supported. No actionable defect found. The record explicitly preserves chemical-control
+  equivalence, viability loss, unreplicated screening, source spectroscopy discrepancies
+  and unavailable detailed analytical preparation.
+source:
+  git_revision: 5892e9a0aca54ef3f45d2ce87a6dcfb80d1569da
+  state: working_tree
+  inputs:
+  - path: data/records/platinum.yaml
+    sha256: 9e53cee8682c7ebaa2c3fe995ffc4c96a034f161a1f35f2be273756d1aed5260
+    role: target
+  - path: history/records/platinum/2026-10-11T043609Z-codex-1cf1ab.yaml
+    sha256: d5f6865b74be34c6728838dea707cc0cf0d479653f537dadb6cc979832a412e1
+    role: context
+  - path: research/ingests/round3-platinum-20261011.md
+    sha256: b49705c57ba195556f52fb4e44a0d6c089d4b6a871bd2069ede39887cf92e7c0
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+scope:
+  description: All fields of one newly curated platinum record and its attached CREATE
+    history.
+  selection: Independent review of the final history-attached file state.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:platinum
+  exclusions:
+  - target: Other platinum mechanisms and industrial applications
+    reason: Not part of the selected CH34/H2 experiment; additional sources remain
+      discovery leads.
+targets:
+- target_id: cmmmech:platinum
+  path: data/records/platinum.yaml
+  label: Platinum
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/platinum.yaml
+    role: maintained_record
+checks:
+- check_id: record
+  name: Single-record validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate
+    data/records/platinum.yaml
+  status: passed
+  required: true
+  summary: 1record checked;0failed.
+  target_ids:
+  - cmmmech:platinum
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: history
+  name: History integrity
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate-history
+    --base 5892e9a0aca54ef3f45d2ce87a6dcfb80d1569da
+  status: passed
+  required: true
+  summary: 30histories checked;0errors.
+  target_ids:
+  - cmmmech:platinum
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: batch
+  name: Batch local gate
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  status: passed
+  required: true
+  summary: 307passed3skipped;21records and30histories valid; terminal exit0.
+  target_ids:
+  - cmmmech:platinum
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: science
+  name: Primary evidence and authority review
+  status: passed
+  required: true
+  summary: Independently inspected source text, images, controls, identifiers, dated
+    list and bounded countersearches.
+  target_ids:
+  - cmmmech:platinum
+  evidence_ids:
+  - identity
+  - organism
+  - criticality
+  - paper
+  - images
+  - search
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/platinum.yaml
+  locator: Complete final history-attached bytes
+  accessed_at: '2026-10-11T04:40:28Z'
+  support: supports
+  summary: Inspected hash before assessment; reviewer did not author or modify this
+    record.
+- evidence_id: identity
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:33364
+  locator: ChEBI name, formula and charge
+  accessed_at: '2026-10-11T04:40:28Z'
+  support: supports
+  summary: Live entry confirms platinum atom, Pt, charge zero. Element identity is
+    separate from the experimental complexes.
+- evidence_id: organism
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=266264&mode=Info
+  locator: Current name, no-rank entry and strain synonyms
+  accessed_at: '2026-10-11T04:40:28Z'
+  support: supports
+  summary: Live entry confirms Cupriavidus metallidurans CH34; matches named SCK-CEN
+    culture.
+- evidence_id: criticality
+  kind: authority
+  reference: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  locator: Final 2025 notice and platinum row
+  accessed_at: '2026-10-11T04:40:28Z'
+  support: supports
+  summary: Live notice names platinum individually. Its byproduct column is not a
+    criticality flag; the row belongs to the critical-minerals table.
+- evidence_id: paper
+  kind: primary_source
+  reference: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0169093
+  locator: 'Retained PMC5207411.xml: all Methods; Results/Discussion including speciation,
+    particle morphology and membrane integrity; Table 1; supplement captions'
+  accessed_at: '2026-10-11T04:40:28Z'
+  support: supports
+  summary: Independently read full relevant sections and checked source identity.
+    CH34 cultivation, washed biomass, acidic anaerobic H2 exposure, chemical and no-donor
+    controls, n=1 removal screen, qualitative product interpretation and viability
+    limits match the record.
+  snapshot_sha256: 55d65ecf528d703d455ee8406be4d517fa3ff80da55bb9762ed712cdcca151d4
+- evidence_id: images
+  kind: primary_source
+  reference: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0169093
+  locator: Figures 1/3/5, Table 1, Supplementary Figure S1 and Table S1, retained
+    curator-acquired images
+  accessed_at: '2026-10-11T04:40:28Z'
+  support: supports
+  summary: Visually inspected all six images independently; verified original acquisition
+    hashes. Figure1 and S1 spectra support the attributed qualitative interpretation;
+    no refitting. Figure5 reaches the assay floor by27h. Table1 confirms99% H2 chemical
+    control and CH34 endpoint,24% CH34 no-donor,3% carboplatin and0 tetraamine.
+- evidence_id: history
+  kind: record_content
+  reference: history/records/platinum/2026-10-11T043609Z-codex-1cf1ab.yaml
+  locator: Target, actual actor/time, CREATE event
+  accessed_at: '2026-10-11T04:40:28Z'
+  support: supports
+  summary: Attached canonical history matches this record and present curation; inline
+    event remains distinct.
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round3-check.log
+  locator: Complete terminal output; parent process exit0
+  accessed_at: '2026-10-11T04:40:28Z'
+  support: supports
+  summary: Executed and inspected final just check:307 passed,3 skipped in56.44s;21records
+    valid;30histories valid.
+- evidence_id: search
+  kind: search
+  reference: 2026-10-11 live web and local searches
+  locator: First returned result sets; data/research/reviews/history; cited evidence
+    directory
+  accessed_at: '2026-10-11T04:40:28Z'
+  support: context_only
+  summary: No actionable correction or counterclaim appeared in these inspected results.
+    Other organism/electrode studies remain leads, not direct replications. Hidden/ignored-file-inclusive
+    matches are the new record and its provenance, not a second platinum root.
+  search_scope: 'Queries: "10.1371/journal.pone.0169093" correction retraction; "Cupriavidus"
+    "platinum" "Maes" "hydrogen" abiotic. First result sets only, no pagination. rg
+    --no-ignore --hidden for cmmmech:platinum, CHEBI:33364 and DOI across data/research/reviews/history.
+    Retained XML/HTML and acquisition hashes checked. Not a machine-wide or exhaustive
+    literature search.'
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Element and strain resolution
+  outcome: supported
+  summary: Verified neutral element and CH34 strain identifiers; salts and host resources
+    remain distinct.
+  target_ids:
+  - cmmmech:platinum
+  evidence_ids:
+  - record
+  - identity
+  - organism
+- assessment_id: criticality
+  area: grounding
+  topic: Dated commodity designation
+  outcome: supported
+  summary: US final2025 edition and explicit commodity mapping are supported.
+  target_ids:
+  - cmmmech:platinum
+  evidence_ids:
+  - record
+  - criticality
+  dimensions:
+  - name: criticality
+    value: United States; DOI/USGS Final List;2025,7November2025
+    definition: Edition-specific designation; no salt or waste inheritance.
+    evidence_ids:
+    - criticality
+- assessment_id: mechanism
+  area: evidence
+  topic: Biomass, substrate, controls, outcome and scale
+  outcome: supported
+  summary: The biomass-associated transformation claim is bounded by the chemical
+    control; microbial necessity or purified yield is not asserted.
+  target_ids:
+  - cmmmech:platinum
+  evidence_ids:
+  - record
+  - paper
+  - images
+  dimensions:
+  - name: organism_biomass
+    value: C.metallidurans CH34; aerobically grown then washed
+    definition: Cultivation atmosphere differs from anaerobic transformation; integrity
+      declines.
+    evidence_ids:
+    - organism
+    - paper
+    - images
+  - name: substrate_conditions
+    value: K2PtCl4;100mg/L Pt;OD6101;50mL in120mL bottle;pH1.8-2.2;28C;100rpm;H2 headspace
+    definition: Selected synthetic-salt laboratory exposure, not industrial recovery.
+    evidence_ids:
+    - paper
+  - name: controls_outcome
+    value: 99% CH34/H2 and chemical/H2;24% CH34/no-donor;n=1;48h
+    definition: Source operational removal is distinct from Pt0 fraction and isolated
+      mass yield.
+    evidence_ids:
+    - paper
+    - images
+- assessment_id: limits
+  area: consistency
+  topic: Contradictions and unavailable methods
+  outcome: supported
+  summary: Source XAS edge/energy inconsistency, missing earlier ICP preparation,
+    null complexes and viability assay limits remain explicit; no invalid mg/kg observations
+    added.
+  target_ids:
+  - cmmmech:platinum
+  evidence_ids:
+  - record
+  - paper
+  - images
+- assessment_id: provenance
+  area: provenance
+  topic: Actual curation history and checks
+  outcome: supported
+  summary: History is correctly attached, separate from inline event, and valid against
+    trusted main base.
+  target_ids:
+  - cmmmech:platinum
+  evidence_ids:
+  - record
+  - history
+  - batch
+findings: []
+actions: []
+limitations:
+- One selected laboratory experiment; other organisms, donor arms and Pt complexes
+  cannot inherit its product assignment.
+- Table1 screening is n=1; no statistical superiority inferred. Chemical H2 control
+  prevents asserting microbial necessity.
+- Authors report qualitative XANES/EXAFS interpretation; absolute-edge labels conflict
+  internally. No raw-array fitting, complete oxidation-fraction measurement or isolated
+  product yield was verified.
+- Detailed ICP preparation is cited to an earlier paper and remains unavailable in
+  this review. Percentages are preserved as reported operational endpoints, not a
+  fully defined dissolved/colloidal mass balance.
+- Original full text and figure files were acquired by the curator; reviewer independently
+  inspected those bytes and verified hashes, without claiming fresh downloads.
+- Searches were bounded; hidden and ignored files included within stated local scope.
+  No claim of exhaustive corrections or remaining-material coverage.
+- Final publication coverage, squash provenance and post-deletion main checks are
+  separate parent-owned gates.
+notes:
+- No defect issue proposed in this review; existing source limitations are not fabricated
+  into record errors.
+```
