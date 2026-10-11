@@ -1,0 +1,594 @@
+# Independent scientific review of chromite-associated Fe(II) oxidation
+
+- Review: 20261011T183417Z-chromite-round30-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T18:27:53.455864Z
+- Finished UTC: 2026-10-11T18:34:17.543386Z
+- Reviewer: Codex /root/round27_superalloy (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The frozen record supports chromite species identity and a narrowly scoped culture-associated Fe(II) oxidation observation in source-labelled natural material. The original Table1 values and operational acid-extraction denominator are accurately retained. Unreported chromite conditions, generic controls, unresolved specimen composition and chemical contributions preclude stronger lattice, chromium, product or industrial conclusions, and the record explicitly preserves those limits. No actionable scientific defect was identified; named and all required final batch/history gates passed with unchanged inspected inputs.
+
+## Scope And Provenance
+
+Every maintained field of the frozen chromite record and linked CREATE sidecar, all adopted quantities, mineral/taxon mapping, biomass state, conditions, controls, analytical denominator, causal and deployment limits.
+
+Selection: One assigned round30 record curated by another agent.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 930ce995269f0ded5df009eb5916162971eb1f58.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:chromite | data/records/chromite.yaml | maintained | Chromite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named-record validation | passed | True | cmmmech:chromite | Reviewer executed; terminal exit 0, Checked 1 record(s); 0 failed. Log /private/tmp/cmm-round30-chromite-independent/named-validation.log; SHA-256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e. |
+| Final batch checks | passed | True | cmmmech:chromite | Root executed; reviewer independently read and hash-verified terminal log /private/tmp/cmm-round30-final-batch.log; SHA-256 d3eccc5bb7b83772b345dfe70cd61d452edd1b2fc3f06fcbb6cd32812596bf58. All checks passed; 308 passed, 3 skipped; 180 records and 205 histories valid. |
+| Final nonempty corpus validation | passed | True | cmmmech:chromite | Root executed; reviewer independently read and hash-verified terminal log /private/tmp/cmm-round30-final-nonempty.log; SHA-256 5366d1f00f851d05c0a2a41a08357df128b2bdeadae0aeed671a08cefbddea1d. 180 records; zero failures. |
+| Final trusted-base history validation | passed | True | cmmmech:chromite | Root executed; reviewer independently read and hash-verified terminal log /private/tmp/cmm-round30-final-history.log; SHA-256 cd4f0d779f93389620c1a765b3f0da6b93b0e8b88d4105b76b0ef64569f13ec9. 205 history records; zero errors. |
+
+## Scientific And Domain Assessments
+
+### Mineral species, specimen boundary and taxon mapping
+
+identity: supported. Targets: cmmmech:chromite.
+
+IMA supports the species definition, while uncharacterized source-labelled material is explicitly a natural specimen. Current NCBI nomenclature is mapped without implying experimental authentication. Dedup distinguishes the existing chromium element record.
+
+### Biomass state, conditions and controls
+
+evidence: supported. Targets: cmmmech:chromite.
+
+The retained source-specific information is accurate and missing chromite metadata remains explicit. Neither the separate FeCl2/almandine conditions nor the 2002 sediment follow-up are imported.
+
+### Assay-defined Fe(II) outcome and denominator
+
+quantity: supported. Targets: cmmmech:chromite.
+
+Maintained quantities match original Table1 and retain its operational acid/ferrozine measurement. The 95% value is never represented as mineral dissolution or chromium recovery.
+
+### Culture association, chemical contributions and deployment
+
+scope: supported. Targets: cmmmech:chromite.
+
+The mechanism is conservatively culture-associated. Neither mineral-lattice attack, exclusive direct enzymatic oxidation, a particular secondary product nor industrial application is inferred from the narrow assay.
+
+### Citations, actual authorship, reviewed hashes and required checks
+
+provenance: supported. Targets: cmmmech:chromite.
+
+Citations match the actual originals. Separate inline and canonical CREATE provenance are accurate. Exact source hashes remain stable and actual required checks passed; no record/history/dossier edits were made by this reviewer.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/chromite.yaml; Every maintained field in exact frozen working-tree record | supports | A mineral species and a narrowly qualified natural-specimen observation are separated from elemental chromium, unspecified spinels, mixed ores and tailings. The record makes no inherited criticality claim, Cr release or recovery claim, or deployment claim. |
+| main | https://doi.org/10.1128/AEM.67.6.2844-2848.2001; Complete original five-page article, printed pp2844–2848; all four figures and Table 1 visually inspected | supports | Table 1 on p2847 reports chromite FeCr2O4 with 9.42 mmol Fe(II) oxidized/kg mineral and 95.00% of starting Fe(II). Footnote defines ferrozine determination after 6 N HCl treatment over 24 h. The adjacent natural-mineral paragraph states washed anaerobic whole cells of D. suillum PS, nitrate coupling and no oxidation in abiotic or no-suitable-acceptor controls. Chromite-specific characterization, conditions, controls and uncertainties are not supplied. Figures 1–3 concern distinct soluble-Fe/product experiments; Figure 4 is almandine. The full text permits an abiotic green-rust/nitrate step; its mixed magnetite-containing product cannot be assigned to chromite. University-hosted publisher PDF acquired by curator at 18:17:01Z has original title, year, DOI and all five pages; its remote filename says 2000 but the actual printed article is June 2001. |
+| counterprimary | https://doi.org/10.1007/s00248-001-1061-1; Lack et al. 2002, complete eight original pages, Microbial Ecology43:424–431; all figures and full methods visually inspected | context_only | This follow-up is conditional countercontext, not an independent chromite assay. Fe(II) oxidation need not support growth; electron-acceptor response depends on growth conditions. Oxygen-associated Fe(II) loss in one washed-cell comparison matches heat-killed/uninoculated controls, while nitrate responses differ. Rapid washed-cell oxidation produces amorphous ferrihydrite, distinct from slow green-rust/magnetite conditions. Soluble FeCl2 and natural sediment conditions cannot backfill the 2001 chromite arm. All original page images were inspected because text extraction was corrupted. No new maintained mechanism is inferred from this follow-up. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September2026 master list, original PDFp45 row and p1 column definitions; p2 license | supports | Chromite is listed with Fe2+Cr2O4, G and 1845. The header defines G as grandfathered and its year as original description, matching the maintained wording. The same-day official acquisition was copied unchanged from round29; its original receipt records 17:41:04Z. Reviewer inspected the original row image and independently extracted pp1,2,45. A fresh web open during this review returned an internal error; this assessment relies on the retained explicitly dated edition, not an unsupported latest-edition claim. |
+| taxon | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=640081&amp;mode=Info; Live official current-name, rank and synonym fields independently opened 11October2026 | supports | NCBITaxon:640081 resolves to Azospira oryzae PS at no rank, with Dechlorosoma suillum PS a listed heterotypic synonym. This supports the name mapping, not genomic authentication of the experimental stock. The primary retains its historical strain label. |
+| metadata | https://api.crossref.org/works/10.1128%2FAEM.67.6.2844-2848.2001; Curator-acquired full Crossref works payload inspected independently | supports | DOI, authors Chaudhuri/Lack/Coates, title, AEM67(6),2844–2848 and June2001 match the original. The retained payload has empty relation and no update-to field; this is not an exhaustive notice registry. |
+| dedup | /private/tmp/cmm-round30-chromite-independent/dedup.json; Independent exact command, UTC interval, 469 path arguments and 416 matching lines | supports | Search found the new chromite record and the existing distinct chromium element record among maintained record paths. The chromium record explicitly excludes chromite and uses a different organism/experiment. Other corpus hits concern discovery, history, review or mineral-list context. No duplicate accepted chromite record or adopted 2001 experiment was identified within the declared text-search boundary. Initial non-UTF8 decode failure was corrected with explicitly counted replacement characters; no replaced text establishes the scientific claims. |
+| notices | Independent web search11October2026; First returned results for exact DOI/notice query and two direct counterevidence queries | supports | No affecting formal notice was identified in the bounded results or inspected Crossref fields. An ASM issue-level Errata heading is not a notice against this article. Results led to the fully inspected 2002 primary follow-up and later abiotic/biotic discussion; neither secondary snippets nor a different DOE workshop experiment establish a chromite outcome. |
+| history | history/records/chromite/2026-10-11T182447Z-codex-8c1177.yaml; Complete CREATE sidecar and separately checked inline event | supports | Canonical CREATE session18:24:47Z names Codex/GPT-6/codex, the exact new target and a qualified Fe(II) assay observation. Inline event18:25:10.652259+00:00 is a distinct author event. Neither claims this later independent review, invents previous history, nor generalizes to Cr recovery. Trusted-base final history validation passed. |
+| gates | /private/tmp/cmm-round30-final-terminal.json; Actual terminal receipt and all three complete logs independently read and SHA-256 verified | supports | Required batch, nonempty and trusted-base history gates passed against the frozen hashes. Reviewer also executed named validation, then recaptured exact canonical input hashes. These checks establish structural/provenance validity, not experimental truth. |
+
+## Limits And Additional Notes
+
+- The 2001 chromite specimen is not characterized by phase composition, provenance or grain size; measured Fe(II) cannot be localized to chromite lattice versus accessory/surface iron.
+- Chromite-specific loading, nitrate concentration, pH, temperature, duration, replication/error and quantitative negative-control data are unreported. Other-substrate or later-study conditions cannot supply them.
+- Ferrozine after6N HCl over24h defines an operational Fe(II) pool. The observation does not establish total-mineral dissolution, Cr oxidation/release, isolated product or industrial recovery.
+- Direct enzymatic mineral oxidation versus secondary chemical contributions remains unresolved. Separate soluble-Fe magnetite and almandine experiments are not chromite product or kinetic evidence.
+- The same-day retained IMA edition was verified; a fresh official PDF open returned an internal error. NCBI current nomenclature does not authenticate the historic experimental stock.
+- Dedup and notice searches have explicit boundaries; the independent text search excludes binary source bytes, while accepted originals were inspected separately. Broader curator binary search retains13 parse/time limits, so no inaccessible-artifact or global absence is asserted.
+- No corrections were necessary and no maintained files were edited. Source limitations are not converted into fabricated review issues.
+- The review target routing was normalized to native kind maintained and repository CultureBotAI/CMMMech in scratch metadata; maintained record/history/dossier/schema bytes remained unchanged.
+- Raw copyrighted primary PDFs and independent scratch receipts remain outsideGit; only this structured review pair is saved.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T183417Z-chromite-round30-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of chromite-associated Fe(II) oxidation
+started_at: '2026-10-11T18:27:53.455864Z'
+finished_at: '2026-10-11T18:34:17.543386Z'
+reviewer:
+  identity: Codex /root/round27_superalloy
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: A different agent authored the chromite record, CREATE history
+    and dossier. This reviewer authored the separate round30 tungsten-tailings record
+    only. Reviewer captured native inputs before assessment, independently read the
+    complete five-page2001 primary and eight-page2002 countercontext, visually inspected
+    every original page and relevant figures/tables, verified IMA and live NCBI identity,
+    searched bounded notices and hidden/ignored source boundaries, and made no maintained
+    chromite/history/dossier edits. Shared worktree and curator-acquired artifacts
+    are disclosed. Root ran final batch gates; reviewer independently read and hash-verified
+    receipts and recaptured exact inputs.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The frozen record supports chromite species identity and a narrowly scoped
+  culture-associated Fe(II) oxidation observation in source-labelled natural material.
+  The original Table1 values and operational acid-extraction denominator are accurately
+  retained. Unreported chromite conditions, generic controls, unresolved specimen
+  composition and chemical contributions preclude stronger lattice, chromium, product
+  or industrial conclusions, and the record explicitly preserves those limits. No
+  actionable scientific defect was identified; named and all required final batch/history
+  gates passed with unchanged inspected inputs.
+source:
+  git_revision: 930ce995269f0ded5df009eb5916162971eb1f58
+  state: working_tree
+  inputs:
+  - path: data/records/chromite.yaml
+    sha256: 23fcf34515df26468045f4fe7ce56001be293f89da2dc02b45a0bceb11923898
+    role: target
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/chromite/2026-10-11T182447Z-codex-8c1177.yaml
+    sha256: e525c40297f1d87d262e218106be00e051f70ff200c1b6b69e6513ac4200fd74
+    role: context
+  - path: research/sources/round30-chromite/20261011T182650Z-source-investigation.json
+    sha256: 262b41db2af983ba725ad41eca1bb5b965df09a636dcff75f60a8b709e328338
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Every maintained field of the frozen chromite record and linked CREATE
+    sidecar, all adopted quantities, mineral/taxon mapping, biomass state, conditions,
+    controls, analytical denominator, causal and deployment limits.
+  selection: One assigned round30 record curated by another agent.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:chromite
+  exclusions:
+  - target: Uncurated chromite remediation/tailings candidates and new assays
+    reason: The maintained mechanism uses the complete2001 primary only; the2002 follow-up
+      is reviewed as condition-dependent countercontext. No additional mechanism or
+      raw-instrument reprocessing is undertaken.
+targets:
+- target_id: cmmmech:chromite
+  path: data/records/chromite.yaml
+  label: Chromite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/chromite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named-record validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate
+    data/records/chromite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Reviewer executed; terminal exit 0, Checked 1 record(s); 0 failed. Log
+    /private/tmp/cmm-round30-chromite-independent/named-validation.log; SHA-256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e.
+  target_ids:
+  - cmmmech:chromite
+- check_id: final_batch
+  name: Final batch checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root executed; reviewer independently read and hash-verified terminal log
+    /private/tmp/cmm-round30-final-batch.log; SHA-256 d3eccc5bb7b83772b345dfe70cd61d452edd1b2fc3f06fcbb6cd32812596bf58.
+    All checks passed; 308 passed, 3 skipped; 180 records and 205 histories valid.
+  target_ids:
+  - cmmmech:chromite
+- check_id: final_nonempty
+  name: Final nonempty corpus validation
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root executed; reviewer independently read and hash-verified terminal log
+    /private/tmp/cmm-round30-final-nonempty.log; SHA-256 5366d1f00f851d05c0a2a41a08357df128b2bdeadae0aeed671a08cefbddea1d.
+    180 records; zero failures.
+  target_ids:
+  - cmmmech:chromite
+- check_id: final_history
+  name: Final trusted-base history validation
+  command: uv run --locked cmmmech validate-history --base 930ce995269f0ded5df009eb5916162971eb1f58
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root executed; reviewer independently read and hash-verified terminal log
+    /private/tmp/cmm-round30-final-history.log; SHA-256 cd4f0d779f93389620c1a765b3f0da6b93b0e8b88d4105b76b0ef64569f13ec9.
+    205 history records; zero errors.
+  target_ids:
+  - cmmmech:chromite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/chromite.yaml
+  locator: Every maintained field in exact frozen working-tree record
+  accessed_at: '2026-10-11T18:34:17.543386Z'
+  support: supports
+  summary: A mineral species and a narrowly qualified natural-specimen observation
+    are separated from elemental chromium, unspecified spinels, mixed ores and tailings.
+    The record makes no inherited criticality claim, Cr release or recovery claim,
+    or deployment claim.
+  snapshot_sha256: 23fcf34515df26468045f4fe7ce56001be293f89da2dc02b45a0bceb11923898
+- evidence_id: main
+  kind: primary_source
+  reference: https://doi.org/10.1128/AEM.67.6.2844-2848.2001
+  locator: Complete original five-page article, printed pp2844–2848; all four figures
+    and Table 1 visually inspected
+  accessed_at: '2026-10-11T18:34:17.543386Z'
+  support: supports
+  summary: Table 1 on p2847 reports chromite FeCr2O4 with 9.42 mmol Fe(II) oxidized/kg
+    mineral and 95.00% of starting Fe(II). Footnote defines ferrozine determination
+    after 6 N HCl treatment over 24 h. The adjacent natural-mineral paragraph states
+    washed anaerobic whole cells of D. suillum PS, nitrate coupling and no oxidation
+    in abiotic or no-suitable-acceptor controls. Chromite-specific characterization,
+    conditions, controls and uncertainties are not supplied. Figures 1–3 concern distinct
+    soluble-Fe/product experiments; Figure 4 is almandine. The full text permits an
+    abiotic green-rust/nitrate step; its mixed magnetite-containing product cannot
+    be assigned to chromite. University-hosted publisher PDF acquired by curator at
+    18:17:01Z has original title, year, DOI and all five pages; its remote filename
+    says 2000 but the actual printed article is June 2001.
+  snapshot_sha256: 46d1b58ef7317ab515a07f3e00805bcf77d167fa6b571af8683296008071c6ad
+- evidence_id: counterprimary
+  kind: primary_source
+  reference: https://doi.org/10.1007/s00248-001-1061-1
+  locator: Lack et al. 2002, complete eight original pages, Microbial Ecology43:424–431;
+    all figures and full methods visually inspected
+  accessed_at: '2026-10-11T18:34:17.543386Z'
+  support: context_only
+  summary: This follow-up is conditional countercontext, not an independent chromite
+    assay. Fe(II) oxidation need not support growth; electron-acceptor response depends
+    on growth conditions. Oxygen-associated Fe(II) loss in one washed-cell comparison
+    matches heat-killed/uninoculated controls, while nitrate responses differ. Rapid
+    washed-cell oxidation produces amorphous ferrihydrite, distinct from slow green-rust/magnetite
+    conditions. Soluble FeCl2 and natural sediment conditions cannot backfill the
+    2001 chromite arm. All original page images were inspected because text extraction
+    was corrupted. No new maintained mechanism is inferred from this follow-up.
+  snapshot_sha256: fef2d034b1afc80365865212cadbd2f9f1fd4e2575b9800a5d8272b1183d656f
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September2026 master list, original PDFp45 row and p1 column definitions;
+    p2 license
+  accessed_at: '2026-10-11T18:34:17.543386Z'
+  support: supports
+  summary: Chromite is listed with Fe2+Cr2O4, G and 1845. The header defines G as
+    grandfathered and its year as original description, matching the maintained wording.
+    The same-day official acquisition was copied unchanged from round29; its original
+    receipt records 17:41:04Z. Reviewer inspected the original row image and independently
+    extracted pp1,2,45. A fresh web open during this review returned an internal error;
+    this assessment relies on the retained explicitly dated edition, not an unsupported
+    latest-edition claim.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: taxon
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=640081&mode=Info
+  locator: Live official current-name, rank and synonym fields independently opened
+    11October2026
+  accessed_at: '2026-10-11T18:34:17.543386Z'
+  support: supports
+  summary: NCBITaxon:640081 resolves to Azospira oryzae PS at no rank, with Dechlorosoma
+    suillum PS a listed heterotypic synonym. This supports the name mapping, not genomic
+    authentication of the experimental stock. The primary retains its historical strain
+    label.
+  snapshot_sha256: 3f8e297f8e0fa2b3a1972928bcb63a65f52116f8b6b4bffae3665373b257d98a
+- evidence_id: metadata
+  kind: database
+  reference: https://api.crossref.org/works/10.1128%2FAEM.67.6.2844-2848.2001
+  locator: Curator-acquired full Crossref works payload inspected independently
+  accessed_at: '2026-10-11T18:34:17.543386Z'
+  support: supports
+  summary: DOI, authors Chaudhuri/Lack/Coates, title, AEM67(6),2844–2848 and June2001
+    match the original. The retained payload has empty relation and no update-to field;
+    this is not an exhaustive notice registry.
+  snapshot_sha256: 257635bf39e117640280c0ffad0b0bc0c36ebec5738ccc386fa73d18ea1558df
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round30-chromite-independent/dedup.json
+  locator: Independent exact command, UTC interval, 469 path arguments and 416 matching
+    lines
+  accessed_at: '2026-10-11T18:34:17.543386Z'
+  support: supports
+  summary: Search found the new chromite record and the existing distinct chromium
+    element record among maintained record paths. The chromium record explicitly excludes
+    chromite and uses a different organism/experiment. Other corpus hits concern discovery,
+    history, review or mineral-list context. No duplicate accepted chromite record
+    or adopted 2001 experiment was identified within the declared text-search boundary.
+    Initial non-UTF8 decode failure was corrected with explicitly counted replacement
+    characters; no replaced text establishes the scientific claims.
+  snapshot_sha256: 17b327c5b7512938e4c2f2839a5d0509f1330ebec052c264b6e5dec0a688ebd5
+  search_scope: 'rg --no-ignore --hidden --follow -n -i across current and original
+    data/records,research,reviews,history plus existing non-cache raw locations explicitly
+    referenced by the curator and current primary raw; 469 existing path arguments.
+    Exact pattern: chromite|chromitite|10\.1128/AEM\.67\.6\.2844-2848\.2001|Biogenic
+    Magnetite Formation through Anaerobic|NCBITaxon:640081. Git/dependency internals
+    and binary PDF/image/workbook/zip bytes excluded; adopted original PDFs/figures
+    independently read. Curator broader binary parsing has 13 explicitly recorded
+    errors/timeouts, not treated as searched negatives.'
+- evidence_id: notices
+  kind: search
+  reference: Independent web search11October2026
+  locator: First returned results for exact DOI/notice query and two direct counterevidence
+    queries
+  accessed_at: '2026-10-11T18:34:17.543386Z'
+  support: supports
+  summary: No affecting formal notice was identified in the bounded results or inspected
+    Crossref fields. An ASM issue-level Errata heading is not a notice against this
+    article. Results led to the fully inspected 2002 primary follow-up and later abiotic/biotic
+    discussion; neither secondary snippets nor a different DOE workshop experiment
+    establish a chromite outcome.
+  search_scope: 'Queries: "10.1128/AEM.67.6.2844-2848.2001" correction OR erratum
+    OR retraction; "Chaudhuri" "chromite" "Fe(II)" oxidation; "Dechlorosoma suillum"
+    "2002" "abiotic" oxidation. First returned sets only, no date filter or pagination.
+    No exhaustive absence claim.'
+- evidence_id: history
+  kind: record_content
+  reference: history/records/chromite/2026-10-11T182447Z-codex-8c1177.yaml
+  locator: Complete CREATE sidecar and separately checked inline event
+  accessed_at: '2026-10-11T18:34:17.543386Z'
+  support: supports
+  summary: Canonical CREATE session18:24:47Z names Codex/GPT-6/codex, the exact new
+    target and a qualified Fe(II) assay observation. Inline event18:25:10.652259+00:00
+    is a distinct author event. Neither claims this later independent review, invents
+    previous history, nor generalizes to Cr recovery. Trusted-base final history validation
+    passed.
+  snapshot_sha256: e525c40297f1d87d262e218106be00e051f70ff200c1b6b69e6513ac4200fd74
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round30-final-terminal.json
+  locator: Actual terminal receipt and all three complete logs independently read
+    and SHA-256 verified
+  accessed_at: '2026-10-11T18:34:17.543386Z'
+  support: supports
+  summary: Required batch, nonempty and trusted-base history gates passed against
+    the frozen hashes. Reviewer also executed named validation, then recaptured exact
+    canonical input hashes. These checks establish structural/provenance validity,
+    not experimental truth.
+  snapshot_sha256: b46301002d15b5c1db30dec987e120e489b29327df466a7c1809734603e8b098
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral species, specimen boundary and taxon mapping
+  outcome: supported
+  summary: IMA supports the species definition, while uncharacterized source-labelled
+    material is explicitly a natural specimen. Current NCBI nomenclature is mapped
+    without implying experimental authentication. Dedup distinguishes the existing
+    chromium element record.
+  target_ids:
+  - cmmmech:chromite
+  evidence_ids:
+  - record
+  - ima
+  - taxon
+  - dedup
+  dimensions:
+  - name: material_form
+    value: Mineral species Fe(II)Cr2O4; experimentally source-labelled natural chromite
+    definition: The ideal species is not proof that the uncharacterized experimental
+      specimen is a pure stoichiometric endmember.
+    evidence_ids:
+    - record
+    - ima
+    - main
+  - name: criticality
+    value: Not asserted
+    definition: No jurisdiction, list or edition is inherited from chromium; omission
+      does not claim noncriticality.
+    evidence_ids:
+    - record
+  - name: organism
+    value: Dechlorosoma suillum PS; current NCBITaxon:640081 Azospira oryzae PS
+    definition: No-rank database mapping authenticates the name connection, not a
+      genome or experimental culture stock.
+    evidence_ids:
+    - main
+    - taxon
+- assessment_id: methods
+  area: evidence
+  topic: Biomass state, conditions and controls
+  outcome: supported
+  summary: The retained source-specific information is accurate and missing chromite
+    metadata remains explicit. Neither the separate FeCl2/almandine conditions nor
+    the 2002 sediment follow-up are imported.
+  target_ids:
+  - cmmmech:chromite
+  evidence_ids:
+  - record
+  - main
+  - counterprimary
+  dimensions:
+  - name: biomass
+    value: Anaerobic washed whole-cell suspension
+    definition: Natural-mineral paragraph specifies source strain PS; no chromite
+      growth or biomass-yield claim.
+    evidence_ids:
+    - main
+  - name: conditions
+    value: Nitrate-associated anoxic laboratory mineral screen
+    definition: Specimen origin, purity, grain size, loadings, nitrate concentration,
+      pH, temperature, duration and replicate/error information are not supplied for
+      the chromite arm.
+    evidence_ids:
+    - main
+    - record
+  - name: controls
+    value: Generic abiotic and no-suitable-electron-acceptor negative statements
+    definition: The source does not provide chromite-specific control values or a
+      chromite time course; Figure4 is almandine.
+    evidence_ids:
+    - main
+    - record
+- assessment_id: quantity
+  area: quantity
+  topic: Assay-defined Fe(II) outcome and denominator
+  outcome: supported
+  summary: Maintained quantities match original Table1 and retain its operational
+    acid/ferrozine measurement. The 95% value is never represented as mineral dissolution
+    or chromium recovery.
+  target_ids:
+  - cmmmech:chromite
+  evidence_ids:
+  - record
+  - main
+  dimensions:
+  - name: reported_amount
+    value: 9.42 mmol Fe(II) oxidized per kg mineral
+    definition: Source Table1 mass-normalized iron quantity, not moles of chromium
+      or recovered mineral.
+    evidence_ids:
+    - main
+  - name: reported_percentage
+    value: 95.00% of starting Fe(II)
+    definition: Source assay uses ferrozine after 6 N HCl over24h; no complete endmember
+      dissolution or bulk total-Fe denominator is established.
+    evidence_ids:
+    - main
+    - record
+  - name: unmeasured_outcomes
+    value: Chromium concentration, chromium valence and recovered product
+    definition: Iron-state assay alone does not quantify Cr release, redox state,
+      mineral conversion or product recovery.
+    evidence_ids:
+    - main
+    - record
+- assessment_id: causation
+  area: scope
+  topic: Culture association, chemical contributions and deployment
+  outcome: supported
+  summary: The mechanism is conservatively culture-associated. Neither mineral-lattice
+    attack, exclusive direct enzymatic oxidation, a particular secondary product nor
+    industrial application is inferred from the narrow assay.
+  target_ids:
+  - cmmmech:chromite
+  evidence_ids:
+  - record
+  - main
+  - counterprimary
+  dimensions:
+  - name: iron_origin
+    value: Lattice versus accessory or surface-associated Fe unresolved
+    definition: The specimen lacks mineralogical characterization and the assay cannot
+      localize the Fe pool.
+    evidence_ids:
+    - record
+    - main
+  - name: causal_resolution
+    value: Direct enzymatic contribution versus secondary chemistry unresolved
+    definition: The primary permits a chemical green-rust/nitrate pathway in a different
+      experiment; later primary contrasts show strong condition and product dependence.
+      These observations do not negate the bounded chromite-associated Fe(II) loss.
+    evidence_ids:
+    - main
+    - counterprimary
+  - name: product_and_scale
+    value: Laboratory observation only; no chromite-to-magnetite or extraction/recovery
+      process
+    definition: Figure3 is a mixed product from separate FeCl2 conditions; no isolated
+      Cr or chromite-derived product, full mass balance or industrial deployment was
+      measured.
+    evidence_ids:
+    - main
+    - record
+- assessment_id: provenance
+  area: provenance
+  topic: Citations, actual authorship, reviewed hashes and required checks
+  outcome: supported
+  summary: Citations match the actual originals. Separate inline and canonical CREATE
+    provenance are accurate. Exact source hashes remain stable and actual required
+    checks passed; no record/history/dossier edits were made by this reviewer.
+  target_ids:
+  - cmmmech:chromite
+  evidence_ids:
+  - record
+  - history
+  - metadata
+  - gates
+  dimensions:
+  - name: review_state
+    value: Uncommitted working-tree bytes at durable merged base930ce995269f0ded5df009eb5916162971eb1f58
+    definition: Before-assessment native inspect and final recapture bind this observation
+      to exact record/history/dossier/schema inputs.
+    evidence_ids:
+    - record
+    - history
+    - gates
+  - name: notice_coverage
+    value: Bounded official metadata and first-result search
+    definition: No affecting notice found in this scope; no exhaustive absence assertion.
+    evidence_ids:
+    - metadata
+    - notices
+findings: []
+actions: []
+limitations:
+- The 2001 chromite specimen is not characterized by phase composition, provenance
+  or grain size; measured Fe(II) cannot be localized to chromite lattice versus accessory/surface
+  iron.
+- Chromite-specific loading, nitrate concentration, pH, temperature, duration, replication/error
+  and quantitative negative-control data are unreported. Other-substrate or later-study
+  conditions cannot supply them.
+- Ferrozine after6N HCl over24h defines an operational Fe(II) pool. The observation
+  does not establish total-mineral dissolution, Cr oxidation/release, isolated product
+  or industrial recovery.
+- Direct enzymatic mineral oxidation versus secondary chemical contributions remains
+  unresolved. Separate soluble-Fe magnetite and almandine experiments are not chromite
+  product or kinetic evidence.
+- The same-day retained IMA edition was verified; a fresh official PDF open returned
+  an internal error. NCBI current nomenclature does not authenticate the historic
+  experimental stock.
+- Dedup and notice searches have explicit boundaries; the independent text search
+  excludes binary source bytes, while accepted originals were inspected separately.
+  Broader curator binary search retains13 parse/time limits, so no inaccessible-artifact
+  or global absence is asserted.
+notes:
+- No corrections were necessary and no maintained files were edited. Source limitations
+  are not converted into fabricated review issues.
+- The review target routing was normalized to native kind maintained and repository
+  CultureBotAI/CMMMech in scratch metadata; maintained record/history/dossier/schema
+  bytes remained unchanged.
+- Raw copyrighted primary PDFs and independent scratch receipts remain outsideGit;
+  only this structured review pair is saved.
+links:
+- research/sources/round30-chromite/20261011T182650Z-source-investigation.md
+- https://doi.org/10.1128/AEM.67.6.2844-2848.2001
+- https://doi.org/10.1007/s00248-001-1061-1
+tags:
+- round30
+- chromite
+- independent
+- scientific
+```

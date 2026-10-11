@@ -1,0 +1,646 @@
+{
+  "timestamp_utc": "2026-10-11T18:23:52.034889+00:00",
+  "researcher": "codex (GPT-6; codex), round27_packaging subagent; author, not independent scientific reviewer",
+  "base": "930ce995269f0ded5df009eb5916162971eb1f58",
+  "branch": "curate/cmm-expansion-round30-20261011",
+  "worktree": "/private/tmp/CMMMech-expansion-round30-20261011",
+  "scope": "One distinct basaltic geological primary_resource; six natural HSDP2 specimens. Manufactured BAS1-BAS3 glasses remain context only. No criticality list assertion or mineral-species assignment.",
+  "record": {
+    "path": "data/records/basalt.yaml",
+    "sha256": "7a8bf06d203f0bb20d467d458f954d7fc90887ade382895ffdbaf9fdb8e583ac"
+  },
+  "history": {
+    "path": "history/records/basalt/2026-10-11T182152Z-codex-1ab4c7.yaml",
+    "sha256": "97ce55ecd6437d4dabc080398362ac224c787cf8f85423094b4751ec2776ceeb"
+  },
+  "readiness": "Ready for independent scientific review of narrow colonization and conditional/negative aqueous redistribution evidence. Not a curator acceptance decision.",
+  "search": {
+    "provider": "web search tool, first returned result set for each exact query, 2026-10-11; no date/domain filters and no subsequent pages",
+    "queries": [
+      "\"10.3389/fmicb.2018.01252\"",
+      "\"Burkholderia fungorum\" \"ATCC BAA-463\" DSM",
+      "\"10.3389/fmicb.2018.01252\" correction erratum retraction",
+      "\"Paraburkholderia fungorum\" taxonomy 134537",
+      "\"Experimental Microbial Alteration\" \"Image_1\"",
+      "\"10.3389/fmicb.2018.01252\" figshare"
+    ],
+    "figshare_public_api": {
+      "endpoints": [
+        "https://api.figshare.com/v2/collections/search",
+        "https://api.figshare.com/v2/articles/search"
+      ],
+      "json_body": {
+        "search_for": "10.3389/fmicb.2018.01252",
+        "limit": 10
+      },
+      "results": "one matching collection, three same-study supplementary image articles; each version 1"
+    }
+  },
+  "dedup": {
+    "mode": "rg --hidden --no-ignore --follow, case-insensitive",
+    "repositories": [
+      "/private/tmp/CMMMech-expansion-round30-20261011",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech"
+    ],
+    "subtrees": [
+      "data/records",
+      "research",
+      "reviews",
+      "history"
+    ],
+    "patterns": "basalt|10\\.3389/fmicb\\.2018\\.01252|PMC6010528|Stranghoener",
+    "repository_hits": "/private/tmp/cmm-round30-basalt-research/dedup-repository-hits.txt",
+    "raw_receipt": {
+      "command": [
+        "rg",
+        "--hidden",
+        "--no-ignore",
+        "--follow",
+        "-n",
+        "-i",
+        "10\\.3389/fmicb\\.2018\\.01252|PMC6010528|Stranghoener|HSDP2|BAA-463",
+        "/private/tmp/cmm-round29-ilmenite-research",
+        "/private/tmp/cmm-round28-mineral-frontier-search.json",
+        "/private/tmp/cmm-round21-crusts-raw",
+        "/private/tmp/cmm-round23-crusts-raw",
+        "/private/tmp/cmm-round20-nodule-raw"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "matching_lines": 1
+    },
+    "raw_hits": "/private/tmp/cmm-round30-basalt-research/dedup-referenced-raw-hits.txt",
+    "result": "No existing basalt root record or adopted HSDP2 experiment found within this bounded hidden/ignored-inclusive scope. Existing cobalt-rich-ferromanganese-crusts describes crust-basalt interfaces; biogas-desulfurization-sulfur-residue only mentions a source-labelled basalt salt medium. Round29 frontier is the uncurated lead. A different Carlsberg Ridge Mn-coated basalt study is only a prior source lead/context.",
+    "exclusions": "No machine-wide absence claim; unrelated home/temp trees and inaccessible unrelated tooling paths are outside source-dedup scope."
+  },
+  "primary": {
+    "doi": "10.3389/fmicb.2018.01252",
+    "pmid": "29963022",
+    "pmcid": "PMC6010528",
+    "publication_date": "2018-06-14",
+    "inspection": "Full 17-page PDF and JATS; all eight figures and Table 1, PDF page images 3-5 and 7-12 viewed. Supplement S1-S3 original JPEG files individually viewed.",
+    "license": "Main text CC BY; Crossref license URL CC BY 4.0. All three Figshare version-1 image metadata specify CC BY 4.0. Raw bulk retained outside Git.",
+    "notice_check": "Exact DOI correction/erratum/retraction search yielded no correction noticed in bounded returned results; retrieved Crossref relation empty and update-to/updated-by absent. This is not an independent Crossmark status check or exhaustive notice assurance."
+  },
+  "organism": {
+    "current_species": "Paraburkholderia fungorum",
+    "ncbi_taxon": "134537",
+    "source_name": "Burkholderia fungorum",
+    "strain": "ATCC BAA-463, DSMZ catalogue equivalent DSM 17061",
+    "provenance": "Collection strain originally associated with Phanerochaete chrysosporium, not an isolate from these Hawaiian cores. Species taxonomy does not sequence-verify the experimental stock."
+  },
+  "observations": [
+    {
+      "locator": "Methods pp3-6; Figures 1-2",
+      "claim": "Natural heterogeneous basaltic flows, hyaloclastites and pillow basalts; 0.5 g washed size-fractionated feed/50 mL, triplicate biotic and abiotic, 8 or 30 C, 125 rpm, 41 d. Rock autoclaved three times at 105 C and washed; HNO3 treatment belongs to flasks."
+    },
+    {
+      "locator": "Figure 3",
+      "claim": "Cell growth and glucose depletion; cell counts only one parallel. Specimen-specific pH paths; no matched-pH controls."
+    },
+    {
+      "locator": "Figure 4, Results pp6-7",
+      "claim": "Natural-rock aqueous patterns differ by specimen and element; Fe/Al are not uniformly increased. Figure reports means/SD three parallels; sampling correction Equation 1 is initial-volume normalization of aqueous withdrawn-plus-remaining amounts, not extraction yield."
+    },
+    {
+      "locator": "Figure S1",
+      "claim": "8 C element curves partly differ from generalized same-trend prose, including cultured BF1/HC1 Al above controls at some times; BF2 endpoint Fe/Al error bars overlap."
+    },
+    {
+      "locator": "Figure 5, Results p9, Discussion p12",
+      "claim": "Natural-rock SEM shows colonization, particularly glass/rough regions, but no major culture/control morphological difference apart from cells. Authors state no clear active natural-rock dissolution proof because autoclaving released secondary-phase nutrients."
+    },
+    {
+      "locator": "Figures 6-8, Table 1, Figures S2-S3",
+      "claim": "Manufactured glass experiment has 2 biotic and 1 abiotic flask, elemental concentration from one parallel only, endpoint-only pH, unmeasured residual stress. Not natural-feed quantitative evidence; S3 is source-labelled surface imagery, not asserted to be SEM."
+    }
+  ],
+  "source_discrepancies": [
+    "Methods nominally no Ca versus detectable initial Ca in Results.",
+    "Discussion calls HC2/PB1/PB2 SSA >30 m2/g but Methods give PB1 20.23.",
+    "Generalized same-trend 8 C assertion does not cover every Fe/Al curve.",
+    "Natural-rock active dissolution caveat in Discussion limits broader abstract/conclusion inference.",
+    "Figure S2 dashed lines link two measured endpoints and are not an intermediate time series."
+  ],
+  "resolved_precuration_check": "A provisional concern that Discussion mmol/L P conflicted with Figure 4 micromol/L units was rejected on actual inspection: broken-axis upper ticks reach tens of thousands of micromol/L. Do not invent a 1000-fold unit error. Those large values are not adopted as an extraction yield or independently closed mass balance.",
+  "limits": [
+    "No numerical underlying assay spreadsheet or complete raw concentration table was located in the bounded linked supplement inventory; original image data only.",
+    "No criticality search/list claim needed for this geological identity.",
+    "No new mineral/element identifier invented; no taxonomy ID inferred from strain catalogue code.",
+    "No matched-pH, chelator knockout, isotope-tracer, closed Fe redox/mass balance or product isolation result established.",
+    "Separate older literature including Wu 2007 and Sujith 2014 remains uncurated here; cited literature is not read as independent full-text validation."
+  ],
+  "next_actions": [
+    "Independent complete-record scientific review using retained primary and SI artifacts.",
+    "Parent full batch gates and publication audit; curator named validation passed.",
+    "Future direct natural-rock dissolution work would need preparation controls, matched pH and closed elemental/biomass/solid balances; not a condition for storing this explicit negative evidence."
+  ],
+  "validation": {
+    "checked_at": "2026-10-11T18:23:52.034889+00:00",
+    "command": "UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 uv run --locked cmmmech validate data/records/basalt.yaml",
+    "exit_code": 0,
+    "output": "Checked 1 record(s); 0 failed.",
+    "record_sha256": "7a8bf06d203f0bb20d467d458f954d7fc90887ade382895ffdbaf9fdb8e583ac",
+    "history_sha256": "97ce55ecd6437d4dabc080398362ac224c787cf8f85423094b4751ec2776ceeb"
+  },
+  "acquisitions": [
+    {
+      "url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2018.01252/pdf",
+      "started_at": "2026-10-11T18:14:58.375900+00:00",
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary.pdf",
+      "status": 200,
+      "final_url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2018.01252/pdf",
+      "content_type": "application/pdf",
+      "bytes": 6054288,
+      "sha256": "cf5067359aaf42d8696ab61fe6b50f3d3000774cdc62dd250cc48cbff6ab9b2f"
+    },
+    {
+      "url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2018.01252/full",
+      "started_at": "2026-10-11T18:14:58.376977+00:00",
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary.html",
+      "status": 200,
+      "final_url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2018.01252/full",
+      "content_type": "text/html;charset=utf-8",
+      "bytes": 1079720,
+      "sha256": "a4b85b1ae50cb1200e5bca15a341b08142a1c566cd747d07a81c2340e2f8a238"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6010528/fullTextXML",
+      "started_at": "2026-10-11T18:14:58.377506+00:00",
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary.xml",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6010528/fullTextXML",
+      "content_type": "application/xml",
+      "bytes": 165753,
+      "sha256": "acb752d545fdc2e818b7c140d0ed8b72c84f8ecc8a04f4d5fbb5f65945f3e9f6"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.3389/fmicb.2018.01252",
+      "started_at": "2026-10-11T18:14:58.377808+00:00",
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/crossref.json",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.3389/fmicb.2018.01252",
+      "content_type": "application/json",
+      "bytes": 25859,
+      "sha256": "57d01432d76726c078716001bc798a7ca253c51cc986eaca10a53b10b6b08fd4"
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC6010528",
+      "started_at": "2026-10-11T18:14:58.378078+00:00",
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/pmc-oa.xml",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6010528/fullTextSupplementaryFiles",
+      "started_at": "2026-10-11T18:18:57.304414+00:00",
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/supplementary.zip",
+      "error": "HTTP Error 404: "
+    },
+    {
+      "url": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-17061",
+      "started_at": "2026-10-11T18:18:57.305207+00:00",
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/dsmz17061.html",
+      "status": 200,
+      "final_url": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-17061",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 48362,
+      "sha256": "ae608df95314c0f450fcf1e910d3d410911130bb74f0c9b02a5d5f29ca679466"
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=134537&mode=Info",
+      "started_at": "2026-10-11T18:18:57.305475+00:00",
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/ncbi134537.html",
+      "status": 200,
+      "final_url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=134537&mode=Info",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 38976,
+      "sha256": "9a09d98417457b7da3ba9cd359442dae7eadb48cc32879a0691bc030901cc068"
+    },
+    {
+      "url": "https://www.atcc.org/products/baa-463",
+      "started_at": "2026-10-11T18:18:57.305684+00:00",
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/atcc-baa463.html",
+      "status": 200,
+      "final_url": "https://www.atcc.org/products/baa-463",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 308467,
+      "sha256": "a8a1ea59174cef1dfefb5fe59dafb6226933829dc43ddabf1969d1239f873b31"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/utils/oa/oa.fcgi?id=PMC6010528",
+      "started_at": "2026-10-11T18:18:57.305938+00:00",
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/pmc-oa-correct.xml",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/6010528/bin/Image_1.jpg",
+      "started_at": "2026-10-11T18:19:26.474617+00:00",
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/pmc-Image_1.bin",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/6010528/bin/Image_1.jpg",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 1817,
+      "sha256": "3dc81ae2ce577a673d3b23dbf12237d11dbea6863377612e013c842f73a954a6"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/6010528/bin/Image_2.jpg",
+      "started_at": "2026-10-11T18:19:26.475657+00:00",
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/pmc-Image_2.bin",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/6010528/bin/Image_2.jpg",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 1816,
+      "sha256": "e4c8b0f729ed8f0caa05f203343499ac33483b0439b6821258cbb55d97232508"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/6010528/bin/Image_3.jpg",
+      "started_at": "2026-10-11T18:19:26.475971+00:00",
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/pmc-Image_3.bin",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/6010528/bin/Image_3.jpg",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 1817,
+      "sha256": "1954d38f9e0c2946a5350af953a1672d0b424c1dd20e5041497c4636edc0015c"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6010528/",
+      "started_at": "2026-10-11T18:19:26.476290+00:00",
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/pmc-index.html",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6010528/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 263127,
+      "sha256": "1ce05c542b86877518063c34abb67eec36e15790fdcc5def9e58f20f9fd136a9"
+    },
+    {
+      "url": "https://api.figshare.com/v2/collections/search",
+      "request": {
+        "search_for": "10.3389/fmicb.2018.01252",
+        "limit": 10
+      },
+      "utc": "2026-10-11T18:19:43.682678+00:00",
+      "status": 200,
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/figshare-collections-search.json",
+      "sha256": "416eed4544ef61f1d88aeb89743076ee48496b4c79fe8fe949fab7bfa0e9e6c4",
+      "response": [
+        {
+          "id": 4133297,
+          "title": "Experimental Microbial Alteration and Fe Mobilization From Basaltic Rocks of the ICDP HSDP2 Drill Core, Hilo, Hawaii",
+          "doi": "10.3389/fmicb.2018.01252",
+          "handle": "",
+          "url": "https://api.figshare.com/v2/collections/4133297",
+          "published_date": "2018-06-14T04:10:33Z",
+          "timeline": {
+            "posted": "2018-06-14T04:10:33"
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://api.figshare.com/v2/articles/search",
+      "request": {
+        "search_for": "10.3389/fmicb.2018.01252",
+        "limit": 10
+      },
+      "utc": "2026-10-11T18:19:44.464061+00:00",
+      "status": 200,
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/figshare-articles-search.json",
+      "sha256": "4e60e1adcdeb731feca67237fe556803f8b8ceee9de8f2c9e71531f63344d638",
+      "response": [
+        {
+          "project_id": null,
+          "id": 6529457,
+          "title": "Image_3_Experimental Microbial Alteration and Fe Mobilization From Basaltic Rocks of the ICDP HSDP2 Drill Core, Hilo, Hawaii.jpg",
+          "doi": "10.3389/fmicb.2018.01252.s003",
+          "handle": "",
+          "url": "https://api.figshare.com/v2/articles/6529457",
+          "published_date": "2018-06-14T04:10:32Z",
+          "thumb": "https://s3-eu-west-1.amazonaws.com/ppreviews-frontiersin-8483929402184328/11997785/thumb.png",
+          "defined_type": 1,
+          "defined_type_name": "figure",
+          "group_id": 11818,
+          "url_private_api": "https://api.figshare.com/v2/account/articles/6529457",
+          "url_public_api": "https://api.figshare.com/v2/articles/6529457",
+          "url_private_html": "https://figshare.com/account/articles/6529457",
+          "url_public_html": "https://frontiersin.figshare.com/articles/figure/Image_3_Experimental_Microbial_Alteration_and_Fe_Mobilization_From_Basaltic_Rocks_of_the_ICDP_HSDP2_Drill_Core_Hilo_Hawaii_jpg/6529457",
+          "timeline": {
+            "posted": "2018-06-14T04:10:32",
+            "firstOnline": "2018-06-14"
+          },
+          "resource_title": "Experimental Microbial Alteration and Fe Mobilization From Basaltic Rocks of the ICDP HSDP2 Drill Core, Hilo, Hawaii",
+          "resource_doi": "10.3389/fmicb.2018.01252",
+          "created_date": "2018-06-14T04:10:32Z",
+          "modified_date": "2023-06-19T13:39:21Z"
+        },
+        {
+          "project_id": null,
+          "id": 6529445,
+          "title": "Image_1_Experimental Microbial Alteration and Fe Mobilization From Basaltic Rocks of the ICDP HSDP2 Drill Core, Hilo, Hawaii.jpg",
+          "doi": "10.3389/fmicb.2018.01252.s001",
+          "handle": "",
+          "url": "https://api.figshare.com/v2/articles/6529445",
+          "published_date": "2018-06-14T04:10:31Z",
+          "thumb": "https://s3-eu-west-1.amazonaws.com/ppreviews-frontiersin-8483929402184328/11997773/thumb.png",
+          "defined_type": 1,
+          "defined_type_name": "figure",
+          "group_id": 11818,
+          "url_private_api": "https://api.figshare.com/v2/account/articles/6529445",
+          "url_public_api": "https://api.figshare.com/v2/articles/6529445",
+          "url_private_html": "https://figshare.com/account/articles/6529445",
+          "url_public_html": "https://frontiersin.figshare.com/articles/figure/Image_1_Experimental_Microbial_Alteration_and_Fe_Mobilization_From_Basaltic_Rocks_of_the_ICDP_HSDP2_Drill_Core_Hilo_Hawaii_jpg/6529445",
+          "timeline": {
+            "posted": "2018-06-14T04:10:31",
+            "firstOnline": "2018-06-14"
+          },
+          "resource_title": "Experimental Microbial Alteration and Fe Mobilization From Basaltic Rocks of the ICDP HSDP2 Drill Core, Hilo, Hawaii",
+          "resource_doi": "10.3389/fmicb.2018.01252",
+          "created_date": "2018-06-14T04:10:31Z",
+          "modified_date": "2023-06-19T06:15:48Z"
+        },
+        {
+          "project_id": null,
+          "id": 6529451,
+          "title": "Image_2_Experimental Microbial Alteration and Fe Mobilization From Basaltic Rocks of the ICDP HSDP2 Drill Core, Hilo, Hawaii.jpg",
+          "doi": "10.3389/fmicb.2018.01252.s002",
+          "handle": "",
+          "url": "https://api.figshare.com/v2/articles/6529451",
+          "published_date": "2018-06-14T04:10:31Z",
+          "thumb": "https://s3-eu-west-1.amazonaws.com/ppreviews-frontiersin-8483929402184328/11997779/thumb.png",
+          "defined_type": 1,
+          "defined_type_name": "figure",
+          "group_id": 11818,
+          "url_private_api": "https://api.figshare.com/v2/account/articles/6529451",
+          "url_public_api": "https://api.figshare.com/v2/articles/6529451",
+          "url_private_html": "https://figshare.com/account/articles/6529451",
+          "url_public_html": "https://frontiersin.figshare.com/articles/figure/Image_2_Experimental_Microbial_Alteration_and_Fe_Mobilization_From_Basaltic_Rocks_of_the_ICDP_HSDP2_Drill_Core_Hilo_Hawaii_jpg/6529451",
+          "timeline": {
+            "posted": "2018-06-14T04:10:31",
+            "firstOnline": "2018-06-14"
+          },
+          "resource_title": "Experimental Microbial Alteration and Fe Mobilization From Basaltic Rocks of the ICDP HSDP2 Drill Core, Hilo, Hawaii",
+          "resource_doi": "10.3389/fmicb.2018.01252",
+          "created_date": "2018-06-14T04:10:31Z",
+          "modified_date": "2023-06-19T13:49:02Z"
+        }
+      ]
+    },
+    {
+      "url": "https://api.figshare.com/v2/articles/6529457",
+      "utc": "2026-10-11T18:20:04.109572+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/figshare-6529457.json",
+      "sha256": "4e42a5676e1ec1b0da2059692de6425d409e1150f0a376f15c92c5a9f6819780"
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/11997785",
+      "utc": "2026-10-11T18:20:05.177602+00:00",
+      "api_filename": "Image_3_Experimental Microbial Alteration and Fe Mobilization From Basaltic Rocks of the ICDP HSDP2 Drill Core, Hilo, Hawaii.jpg",
+      "api_md5": "1cbfdced8bada82930ba7a1435d4c40b",
+      "status": 200,
+      "content_type": "binary/octet-stream",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pstorage-frontiersin-54389059089340853/11997785/Image_3_ExperimentalMicrobialAlterationandFeMobilizationFromBasalticRocksoftheICDPHSDP2DrillCoreHiloHawaii.jpg",
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/supplement-3.jpg",
+      "bytes": 5092897,
+      "sha256": "20333e4da2cb6ccdcda46c10fd3f5e9b4ad98738265267c43e7c25f773f3cdef",
+      "md5": "1cbfdced8bada82930ba7a1435d4c40b",
+      "ephemeral_redirect_query_omitted": true
+    },
+    {
+      "url": "https://api.figshare.com/v2/articles/6529445",
+      "utc": "2026-10-11T18:20:04.110213+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/figshare-6529445.json",
+      "sha256": "88fc6467675fc74dd29fb40b215f0565e907b5c5733e53c4e6821f5a72da8bba"
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/11997773",
+      "utc": "2026-10-11T18:20:05.179847+00:00",
+      "api_filename": "Image_1_Experimental Microbial Alteration and Fe Mobilization From Basaltic Rocks of the ICDP HSDP2 Drill Core, Hilo, Hawaii.jpg",
+      "api_md5": "24618b6a84c6302dc1dbca2274a57b55",
+      "status": 200,
+      "content_type": "binary/octet-stream",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pstorage-frontiersin-54389059089340853/11997773/Image_1_ExperimentalMicrobialAlterationandFeMobilizationFromBasalticRocksoftheICDPHSDP2DrillCoreHiloHawaii.jpg",
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/supplement-1.jpg",
+      "bytes": 4198094,
+      "sha256": "768a11f525bcaf03151373ac41ba800ae1636390c8115aa7ceba2044488c6b88",
+      "md5": "24618b6a84c6302dc1dbca2274a57b55",
+      "ephemeral_redirect_query_omitted": true
+    },
+    {
+      "url": "https://api.figshare.com/v2/articles/6529451",
+      "utc": "2026-10-11T18:20:04.110436+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/figshare-6529451.json",
+      "sha256": "ae5f23ab94c370f1d6fd7a84b417e1b00f9ee2a4b03882daafc67cfe112d00e5"
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/11997779",
+      "utc": "2026-10-11T18:20:05.185019+00:00",
+      "api_filename": "Image_2_Experimental Microbial Alteration and Fe Mobilization From Basaltic Rocks of the ICDP HSDP2 Drill Core, Hilo, Hawaii.jpg",
+      "api_md5": "997353d78e089e0b07951186e8f03cd8",
+      "status": 200,
+      "content_type": "binary/octet-stream",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pstorage-frontiersin-54389059089340853/11997779/Image_2_ExperimentalMicrobialAlterationandFeMobilizationFromBasalticRocksoftheICDPHSDP2DrillCoreHiloHawaii.jpg",
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/supplement-2.jpg",
+      "bytes": 2221244,
+      "sha256": "28d32b85e419223293b26798cc265bd676b5ef9a50e9148c6ed2dbb6c96eb443",
+      "md5": "997353d78e089e0b07951186e8f03cd8",
+      "ephemeral_redirect_query_omitted": true
+    }
+  ],
+  "raw_files": [
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/atcc-baa463.html",
+      "bytes": 308467,
+      "sha256": "a8a1ea59174cef1dfefb5fe59dafb6226933829dc43ddabf1969d1239f873b31"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/crossref.json",
+      "bytes": 25859,
+      "sha256": "57d01432d76726c078716001bc798a7ca253c51cc986eaca10a53b10b6b08fd4"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/dsmz17061.html",
+      "bytes": 48362,
+      "sha256": "ae608df95314c0f450fcf1e910d3d410911130bb74f0c9b02a5d5f29ca679466"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/figshare-6529445.json",
+      "bytes": 27037,
+      "sha256": "88fc6467675fc74dd29fb40b215f0565e907b5c5733e53c4e6821f5a72da8bba"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/figshare-6529451.json",
+      "bytes": 27037,
+      "sha256": "ae5f23ab94c370f1d6fd7a84b417e1b00f9ee2a4b03882daafc67cfe112d00e5"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/figshare-6529457.json",
+      "bytes": 27037,
+      "sha256": "4e42a5676e1ec1b0da2059692de6425d409e1150f0a376f15c92c5a9f6819780"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/figshare-articles-search.json",
+      "bytes": 3774,
+      "sha256": "4e60e1adcdeb731feca67237fe556803f8b8ceee9de8f2c9e71531f63344d638"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/figshare-collections-search.json",
+      "bytes": 342,
+      "sha256": "416eed4544ef61f1d88aeb89743076ee48496b4c79fe8fe949fab7bfa0e9e6c4"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/ncbi134537.html",
+      "bytes": 38976,
+      "sha256": "9a09d98417457b7da3ba9cd359442dae7eadb48cc32879a0691bc030901cc068"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/pmc-Image_1.bin",
+      "bytes": 1817,
+      "sha256": "3dc81ae2ce577a673d3b23dbf12237d11dbea6863377612e013c842f73a954a6"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/pmc-Image_2.bin",
+      "bytes": 1816,
+      "sha256": "e4c8b0f729ed8f0caa05f203343499ac33483b0439b6821258cbb55d97232508"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/pmc-Image_3.bin",
+      "bytes": 1817,
+      "sha256": "1954d38f9e0c2946a5350af953a1672d0b424c1dd20e5041497c4636edc0015c"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/pmc-index.html",
+      "bytes": 263127,
+      "sha256": "1ce05c542b86877518063c34abb67eec36e15790fdcc5def9e58f20f9fd136a9"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary-page-1.png",
+      "bytes": 240493,
+      "sha256": "4ccb34d80bf8a5c8b10557915010bfd358c21921c2c6d575a4c63c5eb724ed2d"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary-page-10.png",
+      "bytes": 357335,
+      "sha256": "b62bad17bfa72a672e06ff2600d59a8ac1269cbdf40e069dc590711d66d60a53"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary-page-11.png",
+      "bytes": 627480,
+      "sha256": "d073d066b4678ad388b05f7a3e324195b4ec03bf89a793ccf15c559cf9c45961"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary-page-12.png",
+      "bytes": 459279,
+      "sha256": "1e0e36c544f5b6160dd8e96440ba036428f359ebf8d4ec344630a508927e27cb"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary-page-13.png",
+      "bytes": 368094,
+      "sha256": "5e197600885d8d6243772863e58029c84982bf5e0826b81b3fcde85096f93b11"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary-page-14.png",
+      "bytes": 378077,
+      "sha256": "2e2fa7cf8d9f260d67c2f11b19c4f265034fc3a4617bbcc0e3f12a3145af36de"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary-page-15.png",
+      "bytes": 318280,
+      "sha256": "806a30ea3a7e790c4b9809ac01203d8f47a0125b7cc2919283ec6b08a6419df0"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary-page-16.png",
+      "bytes": 394817,
+      "sha256": "e367268289d7e8eae992ba585f6a9524c2f810d3d397d8dae2a0e40317222692"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary-page-17.png",
+      "bytes": 363946,
+      "sha256": "6f8c5ef884e3ece7132a8a7bd744150d982d2240f78b1313a1d179ccf86ae6e1"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary-page-2.png",
+      "bytes": 386012,
+      "sha256": "7763a0b9d346bf8476344de5d86e9751848d9c69139de1d7a885f02651da74af"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary-page-3.png",
+      "bytes": 340171,
+      "sha256": "426202a56c06023379a3a9fb9aaaa0831abec253ed7e7b57ddc5106a68ae3817"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary-page-4.png",
+      "bytes": 666776,
+      "sha256": "02ad311e8367d235915db1410d86cc71a4f7e6c4accb4e6b84d56b73f1393ad1"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary-page-5.png",
+      "bytes": 348925,
+      "sha256": "40a4d64b962a4965a36c53704cc9308a40050d59346d2f0111956da46e0dd60e"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary-page-6.png",
+      "bytes": 351469,
+      "sha256": "2e1da267da22033e34782b8ee664729f162de450604991cbf974b6c413d3d225"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary-page-7.png",
+      "bytes": 388601,
+      "sha256": "8d19d5363194df2b43bf55a411d60ec2dcaa4818c8689467493674cc7f39de26"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary-page-8.png",
+      "bytes": 282818,
+      "sha256": "e0b7d5e2162fcebec08da63a36971f7590ce261ae93a93cc85251f20054d7eff"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary-page-9.png",
+      "bytes": 677853,
+      "sha256": "915334b3f07e75a6a12b67dd9a6d4852fe4230b500cd0181d79c70bf694e90e9"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary.html",
+      "bytes": 1079720,
+      "sha256": "a4b85b1ae50cb1200e5bca15a341b08142a1c566cd747d07a81c2340e2f8a238"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary.pdf",
+      "bytes": 6054288,
+      "sha256": "cf5067359aaf42d8696ab61fe6b50f3d3000774cdc62dd250cc48cbff6ab9b2f"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary.txt",
+      "bytes": 87625,
+      "sha256": "d803da799400afd072ba7f74a860c677fd65664b8335503659a37b8b5afe18a3"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/primary.xml",
+      "bytes": 165753,
+      "sha256": "acb752d545fdc2e818b7c140d0ed8b72c84f8ecc8a04f4d5fbb5f65945f3e9f6"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/source-components.json",
+      "bytes": 6508,
+      "sha256": "51af968743a073d82b5b263e68fdad74b3158e76f924197f0370bf967cd3475c"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/supplement-1.jpg",
+      "bytes": 4198094,
+      "sha256": "768a11f525bcaf03151373ac41ba800ae1636390c8115aa7ceba2044488c6b88"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/supplement-2.jpg",
+      "bytes": 2221244,
+      "sha256": "28d32b85e419223293b26798cc265bd676b5ef9a50e9148c6ed2dbb6c96eb443"
+    },
+    {
+      "path": "/private/tmp/cmm-round30-basalt-research/raw/supplement-3.jpg",
+      "bytes": 5092897,
+      "sha256": "20333e4da2cb6ccdcda46c10fd3f5e9b4ad98738265267c43e7c25f773f3cdef"
+    }
+  ]
+}

@@ -186,6 +186,10 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Ground waste tire rubber](data/records/ground-waste-tire-rubber.yaml) | Partial microbial rubber transformation | Chemical pretreatment is separate; no demonstrated microbial zinc extraction |
 | [Oxidized-zinc ore](data/records/oxidized-zinc-ore.yaml) | Culture-associated dissolution of a natural mixed ore | Missing numerical abiotic metal results, strain-name conflict and unreconciled yield accounting remain explicit |
 | [Bastnaesite mineral family](data/records/bastnaesite.yaml) | Bacterial dissolution of a characterized natural mineral separate | Species identity is unresolved; contact effects, source-data conflicts and product recovery remain qualified |
+| [Basaltic rock](data/records/basalt.yaml) | Culture-associated colonization and aqueous redistribution in six natural core specimens | Sterilization, uptake and varying conditions prevent a universal active-dissolution claim |
+| [Chromite](data/records/chromite.yaml) | Nitrate-dependent oxidation of operationally acid-extractable Fe(II) | The reported percentage is not chromite conversion or chromium recovery |
+| [Pyrrhotite](data/records/pyrrhotite.yaml) | Culture-associated oxidative weathering and secondary iron minerals | Normalized diffraction depletion is not a dissolved-iron or recovered-product yield |
+| [Tungsten skarn tailings](data/records/tungsten-skarn-tailings.yaml) | Nonmicrobial laboratory physical separation and field-weathering context | Prepared-feed tungsten distributions are distinct from concentrate purity and microbial recovery |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -222,7 +226,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [twenty-seventh expansion reviews](research/ingests/round27-20261011-publication.md),
 [twenty-eighth expansion reviews](research/ingests/round28-20261011-publication.md),
 [twenty-ninth expansion reviews](research/ingests/round29-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round29-frontier-20261011.md), and
+[thirtieth expansion reviews](research/ingests/round30-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round30-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

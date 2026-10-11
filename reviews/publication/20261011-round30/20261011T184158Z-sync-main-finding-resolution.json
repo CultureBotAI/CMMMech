@@ -1,0 +1,61 @@
+{
+  "recorded_at": "2026-10-11T18:41:58.545121+00:00",
+  "reviewer": {
+    "identity": "Codex /root/round27_packaging",
+    "independence": "Helper authored and corrected by root coordinator; reviewer did not edit it. Reviewer authored the separate basalt record, whose science is outside this helper audit."
+  },
+  "kind": "publication_helper_finding_resolution",
+  "source": {
+    "working_revision": "930ce995269f0ded5df009eb5916162971eb1f58",
+    "branch": "curate/cmm-expansion-round30-20261011",
+    "state": "working_tree",
+    "helper_path": "/private/tmp/cmm-round30-sync-main.py",
+    "before_sha256": "8eeda71f5208782f5a39571cc16ab6e828f91eb077947968872312db87fba867",
+    "after_sha256": "d028675b640050cb9927dcd6f93798268c90c1d954c87f9c32e11c2ea6e4c301",
+    "initial_audit_path": "/private/tmp/cmm-round30-sync-main-audit.md",
+    "initial_audit_sha256": "c4456365909819a15d595f089ff7af3fa39b07beec3fb3e6a4ba30a6b0b613bf",
+    "issue_body_path": "/private/tmp/cmm-round30-sync-review-issue.md",
+    "issue_body_sha256": "1c9cfd34ea772a5df3321c7b9c452406fc3cffef96c50cb1b84fea4e0bd1363c"
+  },
+  "scope": "Read-only adversarial source inspection of the one-line final skill-branch postcondition addition. No helper or Git/GitHub mutation executed. No scientific record/review change.",
+  "finding": {
+    "id": "F1",
+    "issue_key": "cmmmech-round30-sync-skill-branch-postcondition",
+    "severity": "minor",
+    "issue_number": 108,
+    "issue_url": "https://github.com/CultureBotAI/CMMMech/issues/108",
+    "before": "Before synchronization the helper checked skill HEAD,branch,status; afterward it checked HEAD and status only before emitting full unchanged Git state. Equal HEAD/status do not determine branch identity.",
+    "correction": "assert git(skill,'branch','--show-current')==initial['repositories']['skill']['branch']",
+    "disposition": "resolved_in_code",
+    "evidence": "Exactly one assertion added after main fast-forward and final file-preservation/skill-HEAD checks, before final skill-status check and success receipt. Reconstructing the predecessor by removing this last assertion yields the exact original reviewed helper SHA-256."
+  },
+  "checks": [
+    {
+      "name": "Python AST syntax parse",
+      "result": "passed",
+      "execution": "ast.parse only; no helper execution"
+    },
+    {
+      "name": "Exact single-line delta",
+      "result": "passed",
+      "before_sha256": "8eeda71f5208782f5a39571cc16ab6e828f91eb077947968872312db87fba867",
+      "after_sha256": "d028675b640050cb9927dcd6f93798268c90c1d954c87f9c32e11c2ea6e4c301"
+    },
+    {
+      "name": "Final branch guard after fast-forward and before success receipt",
+      "result": "passed"
+    },
+    {
+      "name": "Initial audit immutability",
+      "result": "passed",
+      "sha256": "c4456365909819a15d595f089ff7af3fa39b07beec3fb3e6a4ba30a6b0b613bf"
+    }
+  ],
+  "limitations": [
+    "Actual queue merge,fresh postmerge checks and guarded main synchronization have not been performed at this review timestamp.",
+    "The eventual synchronization receipt must still verify preservation before operational completion can be claimed.",
+    "This artifact resolves the implementation finding, not the pending runtime acceptance step or remote issue state.",
+    "The temporary helper lives outside Git; its full reviewed source is pinned by SHA-256 here."
+  ],
+  "verdict": "Code finding resolved; required postmerge execution evidence remains pending."
+}

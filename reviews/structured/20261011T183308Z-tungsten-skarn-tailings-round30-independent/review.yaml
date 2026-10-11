@@ -1,0 +1,409 @@
+schema_version: 1.0.0
+review_id: 20261011T183308Z-tungsten-skarn-tailings-round30-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of tungsten skarn-processing tailings
+started_at: '2026-10-11T18:25:18.189399Z'
+finished_at: '2026-10-11T18:33:08.479853Z'
+reviewer:
+  identity: Codex /root/round27_packaging
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Record/history/dossier authored by round27_superalloy, not this
+    reviewer. Reviewer authored the separate basalt record and is not certifying that
+    record here. Shared worktree and curator-acquired raw files are disclosed. Reviewer
+    captured native inspect before assessment, independently inspected the primary
+    methods and original tables/figures,checked source metadata and notices,executed
+    named validation,and verified parent-executed batch/history terminal receipts.
+    No tungsten record/history edit was made.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The frozen record faithfully represents a distinct processing-derived secondary
+  resource and source-specific,nonmicrobial laboratory beneficiation. Original tables
+  corroborate operating conditions and W distributions,while maintained caveats prevent
+  treating mixed concentrates as pure recovered tungsten,serial cycles as replication,or
+  field weathering as microbial causation. Feed-size shorthand,selectivity limits
+  and field-study boundaries are explicit. No actionable record defect was found;
+  required named and final batch/history checks passed.
+source:
+  git_revision: 930ce995269f0ded5df009eb5916162971eb1f58
+  state: working_tree
+  inputs:
+  - path: data/records/tungsten-skarn-tailings.yaml
+    sha256: 76f7605b69902eacc1b1e36ecd3e953ed0acef1ba62ba30b67d9742ab596576c
+    role: target
+  - path: history/records/tungsten-skarn-tailings/2026-10-11T182401Z-codex-4ba0b0.yaml
+    sha256: 8c576f62009f056265251da4d6ee880d1dd9b051171bc170216c9f9a77b3fd4a
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Every field of the new frozen tungsten-skarn-tailings record and canonical
+    CREATE sidecar,including identity,both cited primary studies,all adopted numerical
+    conditions/distributions,nonmicrobial mechanism,field context and deployment limits.
+  selection: One assigned new round30 record authored by a different curator agent.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:tungsten-skarn-tailings
+  exclusions:
+  - target: Han2023 inaccessible full-methods lead,downloaded Mulenshi thesis and
+      unadopted cited literature
+    reason: Not evidence for the maintained mechanism. Full unrelated source acquisition,raw
+      instrumental reprocessing and a complete global literature review are outside
+      this exact-record review.
+targets:
+- target_id: cmmmech:tungsten-skarn-tailings
+  path: data/records/tungsten-skarn-tailings.yaml
+  label: Tungsten skarn-processing tailings
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/tungsten-skarn-tailings.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named-record validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 uv run --locked
+    cmmmech validate data/records/tungsten-skarn-tailings.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Reviewer executed; Checked 1 record(s); 0 failed. Receipt /private/tmp/cmm-round30-tungsten-independent/named-validation.json,
+    SHA-256 bebfe753162835096997edac47440850462cbb8535f792a83f17fcdd4a9f9159.
+  target_ids:
+  - cmmmech:tungsten-skarn-tailings
+- check_id: final_batch
+  name: Final batch checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root executed; reviewer independently read the terminal log and verified
+    SHA-256 d3eccc5bb7b83772b345dfe70cd61d452edd1b2fc3f06fcbb6cd32812596bf58. Log
+    /private/tmp/cmm-round30-final-batch.log. Receipt /private/tmp/cmm-round30-final-terminal.json,
+    SHA-256 b46301002d15b5c1db30dec987e120e489b29327df466a7c1809734603e8b098. Frozen
+    tungsten record unchanged.
+  target_ids:
+  - cmmmech:tungsten-skarn-tailings
+- check_id: final_nonempty
+  name: Final nonempty corpus validation
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root executed; reviewer independently read the terminal log and verified
+    SHA-256 5366d1f00f851d05c0a2a41a08357df128b2bdeadae0aeed671a08cefbddea1d. Log
+    /private/tmp/cmm-round30-final-nonempty.log. Receipt /private/tmp/cmm-round30-final-terminal.json,
+    SHA-256 b46301002d15b5c1db30dec987e120e489b29327df466a7c1809734603e8b098. Frozen
+    tungsten record unchanged.
+  target_ids:
+  - cmmmech:tungsten-skarn-tailings
+- check_id: final_history
+  name: Final trusted-base history validation
+  command: uv run --locked cmmmech validate-history --base 930ce995269f0ded5df009eb5916162971eb1f58
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root executed; reviewer independently read the terminal log and verified
+    SHA-256 cd4f0d779f93389620c1a765b3f0da6b93b0e8b88d4105b76b0ef64569f13ec9. Log
+    /private/tmp/cmm-round30-final-history.log. Receipt /private/tmp/cmm-round30-final-terminal.json,
+    SHA-256 b46301002d15b5c1db30dec987e120e489b29327df466a7c1809734603e8b098. Frozen
+    tungsten record unchanged.
+  target_ids:
+  - cmmmech:tungsten-skarn-tailings
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/tungsten-skarn-tailings.yaml
+  locator: Every field of exact frozen working-tree record
+  accessed_at: '2026-10-11T18:33:08.479853Z'
+  support: supports
+  summary: The resource is processing-derived mixed mineral tailings; the single mechanism
+    is explicitly nonmicrobial physical separation. Experimental layer feeds, concentration
+    versus W distribution, limitations and field context are separated.
+  snapshot_sha256: 76f7605b69902eacc1b1e36ecd3e953ed0acef1ba62ba30b67d9742ab596576c
+- evidence_id: mulenshi
+  kind: primary_source
+  reference: https://doi.org/10.3390/pr7120895
+  locator: Complete 19-page publisher PDF; Methods 2.1-2.4, Tables 1-6, Figures 1-2
+    and 13-19, Results 3.1-3.3, Conclusions and Future Work
+  accessed_at: '2026-10-11T18:33:08.479853Z'
+  support: supports
+  summary: Reviewer independently read primary methods/results/discussion and visually
+    inspected original source pages 3-4,6-7,11-17. Visible tables resolve the duplicate
+    invisible draft layer in extracted PDF text. Table 3 specifies 1500 rpm,60 G,3.5
+    L/min,2 kPa; Table 6 actual feeds521.42/499.64 g give first-concentrate W distributions60.6/47.1%.
+    Methods and Results specify minus600/plus38 micrometres while the table omits
+    the lower cutoff. Table5 calculated magnetic feeds are not gravity-feed assays.
+    Figure13 supports incomplete liberation; Figures14-17 show mixed product selectivity.
+    Section5 says quantitative product mineralogy and flowsheet optimization remain
+    future work. No microorganism is involved in the described separation.
+  snapshot_sha256: 606160c22358c53cbb5f9426b6d13d39a0096f541f29d9bb924af4317d1e2725
+- evidence_id: hallstrom
+  kind: primary_source
+  reference: https://doi.org/10.1007/s11356-019-07305-1
+  locator: Complete 13-page repository PDF and PMC7044260 XML; Study area, field and
+    analytical methods, Table 1, Figures 1-7 and Discussion
+  accessed_at: '2026-10-11T18:33:08.479853Z'
+  support: supports
+  summary: Reviewer independently inspected source text and all seven original figures,
+    with Table1 and its bracketed potentially contaminated W values. P4 field core
+    is distinct from 1_2 physical-test feeds. Monthly May-October2018 sampling includes
+    dissolved and particulate fractions, analytical duplicates/blanks, and separate
+    Smaltjärnen/Morkulltjärnen water contributions. Figure6 explicitly labels the
+    carbonate-associated process a hypothesis; Discussion acknowledges unconfirmed
+    mineralogical exchange and incomplete sequential-extraction balance. These do
+    not establish biological causation, remedy efficacy or a recovered-metal yield.
+    Field equations, exact rim depth and threshold/harmlessness conclusions are not
+    imported.
+  snapshot_sha256: 246371f98e0694d3ac89cc304c91ef748cc8a10b0424fc44fe96afd7fcd05482
+- evidence_id: hallstrom_metadata
+  kind: primary_source
+  reference: https://link.springer.com/article/10.1007/s11356-019-07305-1
+  locator: Official publisher page independently opened on11October2026; author/title/DOI,
+    publication date and issue metadata
+  accessed_at: '2026-10-11T18:33:08.479853Z'
+  support: supports
+  summary: Publisher confirms online21December2019, volume27 pages6180-6192 in2020,
+    Hällström/Alakangas/Martinsson and the same DOI. PMC XML and PubMed31865574 independently
+    connect PMC7044260 to the primary article. No formal organism or resource external
+    identifier is asserted by the record.
+- evidence_id: metadata
+  kind: database
+  reference: /private/tmp/cmm-round30-tungsten-research/raw/primary-metadata-assessment.json
+  locator: Original retrieved Crossref works payloads independently read, not an independent
+    Crossmark service response
+  accessed_at: '2026-10-11T18:33:08.479853Z'
+  support: supports
+  summary: Both primary author/title/DOI/date mappings are consistent. Each retrieved
+    Crossref payload has empty relation and no update-to/updated-by field. Both main
+    sources state CC BY4.0. No linked supplementary-material element occurs in the
+    complete Hällström JATS; the Mulenshi main PDF has no supplementary-material declaration
+    observed. No unattested supplement or unpublished dataset is claimed inspected.
+- evidence_id: notices
+  kind: search
+  reference: Independent web search on2026-10-11
+  locator: First returned exact-DOI correction/retraction/erratum result sets; publisher
+    metadata
+  accessed_at: '2026-10-11T18:33:08.479853Z'
+  support: context_only
+  summary: No affecting formal correction or retraction was identified in this bounded
+    result set. Indexed MDPI version notes describe original2019 PDF and later HTML
+    updates, including2026; direct opening returned429. This does not establish a
+    new experimental edition or exhaustive absence of corrections. Springer official
+    page opened successfully.
+  search_scope: 'Queries: "10.3390/pr7120895" correction retraction erratum; "10.1007/s11356-019-07305-1"
+    correction retraction erratum. No date/domain filters or later pages. Crossref
+    metadata inspected separately; no independent Crossmark verification.'
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round30-tungsten-independent/dedup-receipt.json
+  locator: Independent hidden/ignored-inclusive current-worktree corpus/research/reviews/history
+    search
+  accessed_at: '2026-10-11T18:33:08.479853Z'
+  support: supports
+  summary: The exact resource/source query found the newly added target and CREATE
+    history at inspection time; the subsequently supplied curator dossier identifies
+    predecessor discovery references and distinguishes existing tungsten/scheelite
+    records. The target is a processing-derived resource, not a duplicate of those
+    element/mineral roots. This review does not make a machine-wide absence claim.
+  snapshot_sha256: 4782e0ab06feb06b4626a343f6a5de82457e5214e58612ce0a34bff1bd802079
+  search_scope: rg --hidden --no-ignore --follow -n -i over data/records,research,reviews,history;
+    pattern tungsten.skarn|Yxsj|Smaltj|10\.3390/pr7120895|10\.1007/s11356-019-07305-1.
+    Exit0,15 matching lines,stderr empty. Curator additionally searched original checkout
+    and named referenced raw holdings; those scope/receipt claims were read as curator
+    provenance, not rerun as this reviewer's search.
+- evidence_id: history
+  kind: record_content
+  reference: history/records/tungsten-skarn-tailings/2026-10-11T182401Z-codex-4ba0b0.yaml
+  locator: Complete canonical CREATE sidecar and distinct inline CREATE event
+  accessed_at: '2026-10-11T18:33:08.479853Z'
+  support: supports
+  summary: Canonical actor codex/GPT-6/codex, UTC18:24:01Z, exact target/slug and
+    complete physical-separation curation scope agree. Inline event18:23:59Z is separately
+    recorded; neither asserts this independent approval. Han2023 remains deferred
+    and does not become a mechanism. Base comparison is supplied by the final successful
+    trusted-base history gate.
+  snapshot_sha256: 8c576f62009f056265251da4d6ee880d1dd9b051171bc170216c9f9a77b3fd4a
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Secondary-resource scope and bibliographic identifiers
+  outcome: supported
+  summary: The geological origin does not erase the processing-derived identity. Mixed
+    skarn-processing tailings and the Smaltjärnen case are defensibly distinguished
+    from ore, waste rock, scheelite, tungsten and concentrates. Both adopted bibliographic
+    identifiers resolve; criticality is not inherited.
+  target_ids:
+  - cmmmech:tungsten-skarn-tailings
+  evidence_ids:
+  - record
+  - mulenshi
+  - hallstrom
+  - hallstrom_metadata
+  - dedup
+  dimensions:
+  - name: material_form
+    value: secondary_resource; historical tungsten skarn-processing tailings
+    definition: Processing plant gravity,magnetic and flotation residues deposited
+      at Smaltjärnen; one sampled core does not characterize all tungsten tailings.
+    evidence_ids:
+    - record
+    - mulenshi
+  - name: criticality
+    value: Not asserted
+    definition: No authority/jurisdiction/list/edition claim is made; omission is
+      not a noncriticality claim.
+    evidence_ids:
+    - record
+  - name: biomass_and_organism
+    value: Not applicable to adopted separation; microbial:false
+    definition: No living/dead biomass, inoculum or organism identifier belongs to
+      these engineering separation tests. Field weathering alone does not change that.
+    evidence_ids:
+    - record
+    - mulenshi
+    - hallstrom
+- assessment_id: methods
+  area: evidence
+  topic: Preparation, feed sizes, apparatus and controls
+  outcome: supported
+  summary: All adopted preparation and operating conditions agree with original methods
+    and tables. Distinct layers and serial separation cycles are not independent replicates
+    or matched biological controls. The record preserves the Methods/Table6 lower-cutoff
+    omission rather than inventing unsieved-feed comparability.
+  target_ids:
+  - cmmmech:tungsten-skarn-tailings
+  evidence_ids:
+  - record
+  - mulenshi
+  dimensions:
+  - name: pretreatment
+    value: 105 C,48 h drying and splitting; gravity minus600/plus38 micrometres; magnetic
+      plus75 micrometres
+    definition: Actual gravity feed masses521.42g and499.64g; Table6 labels only minus600;
+      the lower cutoff is supplied by Methods/Results with the discrepancy disclosed.
+    evidence_ids:
+    - mulenshi
+  - name: operation
+    value: 58 mL Knelson,1500rpm,60G,3.5L/min,2kPa; two serial cycles
+    definition: Layers1_2-1 and1_2-8 tested separately; magnetic feeds1_2-4 and1_2-8
+      are separate tests.
+    evidence_ids:
+    - mulenshi
+  - name: controls_and_replication
+    value: No independently replicated separation outcomes or statistical uncertainty
+      supplied
+    definition: Two cycles are product sequences and two layers have different feed
+      properties; they are not replicate experiments.
+    evidence_ids:
+    - mulenshi
+- assessment_id: quantity
+  area: quantity
+  topic: W distributions, concentrate composition and selectivity
+  outcome: supported
+  summary: Table6 values60.6% and47.1% mean tungsten distributed to first concentrates
+    from the respective prepared feeds. Approximately75% combines first-feed concentrates60.6+14.2=74.8%,
+    not concentrate W purity. Original assays and mass columns corroborate enrichment,
+    while magnetic W retention and co-concentration of other elements limit selectivity.
+    No dated mg/kg observation object or whole-repository yield is invented.
+  target_ids:
+  - cmmmech:tungsten-skarn-tailings
+  evidence_ids:
+  - record
+  - mulenshi
+  dimensions:
+  - name: quantity_basis
+    value: Percent of prepared-feed W in a specified solid product
+    definition: Table6 W distribution column, distinct from product mass fraction,assay
+      mg/kg and W content g; first-feed60.6% and second-feed47.1%.
+    evidence_ids:
+    - mulenshi
+  - name: negative_outcomes
+    value: Most W remains paramagnetic in magnetic tests; residual W remains in gravity
+      tailings
+    definition: Table5 andFigures14-15 show failed desired nonmagnetic recovery; Table6/Figures16-17
+      show incomplete capture/selectivity.
+    evidence_ids:
+    - mulenshi
+- assessment_id: causality
+  area: evidence
+  topic: Mechanism and deployment limits
+  outcome: supported
+  summary: The physical separation mechanism is directly evidenced and explicitly
+    nonmicrobial. Mineral locking,entrainment and surface alteration remain potential
+    causes of selectivity limits. The field paper supports geochemical context, not
+    biological mechanism or replication. Neither study validates the proposed complete
+    industrial flowsheet or an isolated W product.
+  target_ids:
+  - cmmmech:tungsten-skarn-tailings
+  evidence_ids:
+  - record
+  - mulenshi
+  - hallstrom
+  dimensions:
+  - name: field_context
+    value: P4 core and2018 water campaign; separate catchments and analytical fractions
+    definition: Carbonate exchange and HFO adsorption/coprecipitation are hypotheses
+      constrained by field mineralogy; no inoculated/sterile biological test.
+    evidence_ids:
+    - hallstrom
+  - name: scale
+    value: Laboratory beneficiation; observational field weathering
+    definition: Historical industrial processing generated the resource, but industrial
+      reprocessing deployment is not demonstrated.
+    evidence_ids:
+    - record
+    - mulenshi
+    - hallstrom
+- assessment_id: provenance
+  area: provenance
+  topic: Exact reviewed state and distinct curation history
+  outcome: supported
+  summary: Native inspect was captured before assessment. Frozen record,canonical
+    CREATE and schema hashes remain unchanged. Inline CREATE and canonical sidecar
+    agree in actor/scope without conflating their timestamps; named and final batch/history
+    gates passed. Historical reviews and records were not edited by this reviewer.
+  target_ids:
+  - cmmmech:tungsten-skarn-tailings
+  evidence_ids:
+  - record
+  - history
+  - metadata
+  - notices
+findings: []
+actions: []
+limitations:
+- No replicated beneficiation outcomes,uncertainty estimates or quantitative product
+  mineralogy establish general recovery performance; the record states those limits.
+- The gravity-feed lower cutoff is explicit in Methods/Results but omitted from Table6
+  shorthand; it is not silently assumed that unsieved repository material shares the
+  quoted W distributions.
+- Physical engineering results and geochemical field correlations do not demonstrate
+  any microbial mechanism. No organism identifier or inherited criticality is asserted.
+- Field sequential extraction has incomplete W mass closure and carbonate exchange
+  lacks direct mineralogical confirmation. Those field values and exact chemical equations
+  are not adopted as quantitative recovery evidence.
+- Notice search is bounded; MDPI version-note direct opening returned429 although
+  an indexed original-version listing was available. No exhaustive absence of notices
+  or machine-wide duplicates is claimed.
+notes:
+- No correction or GitHub issue is invented for a source limitation already accurately
+  preserved. Findings are empty only for this exact reviewed target/state.
+- Primary bulk files remain outside Git; source SHA-256 values are retained in evidence.
+  Review Markdown is generated exclusively by the native saver.
+tags:
+- round30
+- independent
+- scientific-review
+- secondary-resource
+- nonmicrobial
