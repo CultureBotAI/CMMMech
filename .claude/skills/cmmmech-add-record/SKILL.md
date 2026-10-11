@@ -30,8 +30,12 @@ Search records, research, reviews, and referenced local downloads with
 Deduplicate by material identity and verified IDs, and studies by DOI/accession
 and experiment, not just filename or title. If the same material already has a
 record, update that record within the requested curation scope instead of adding
-a duplicate. Keep a deferred candidate in research when evidence cannot support
-an accepted record; do not place speculative drafts or fixtures in the corpus.
+a duplicate. If all supported handoff claims are already represented, report
+that no change is needed, link the existing record and review, and identify any
+remaining evidence gap. Do not invent a record edit or CREATE/EDIT history event
+for an unchanged outcome. Keep a deferred candidate in research when evidence
+cannot support an accepted record; do not place speculative drafts or fixtures
+in the corpus.
 
 Ground the concept before choosing a slug or identifier. Elements, ions, mineral
 species/groups, commodities, alloys and secondary resources differ. Use only
