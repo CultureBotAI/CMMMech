@@ -159,11 +159,13 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Nickel laterite ore](data/records/nickel-laterite-ore.yaml) | Aerobic and anaerobic acidophile leaching of characterized ores | Matched-pH nulls, loading inhibition and unlike chemical comparators limit microbial attribution |
 | [Polymetallic nodules](data/records/polymetallic-nodules.yaml) | Enrichment leaching and Baltic microcosm growth/partitioning | Citrate and azide controls, local growth and distinct receiving fractions limit causal and recovery claims |
 | [Waste printed circuit boards](data/records/waste-printed-circuit-boards.yaml) | Copper mobilization and separate biogenic ferric regeneration | Synthetic electrowinning, acid-washed residue and unlike controls prevent an actual-board closed-process yield |
-| [Cobalt-rich ferromanganese crusts](data/records/cobalt-rich-ferromanganese-crusts.yaml) | Natural marine crust resource identity | Distinct from nodules; no accepted microbial mechanism or inherited criticality |
-| [Rare-earth-rich deep-sea mud](data/records/rare-earth-rich-deep-sea-mud.yaml) | Natural sediment resource identity | Host grains and community associations do not establish microbial recovery |
+| [Cobalt-rich ferromanganese crusts](data/records/cobalt-rich-ferromanganese-crusts.yaml) | Community-associated metal redistribution | Azide chemistry, solution partitioning and differing companion experiments limit causal and recovery claims |
+| [Rare-earth-rich deep-sea mud](data/records/rare-earth-rich-deep-sea-mud.yaml) | Inferred microbial contribution to natural diagenesis | Modeled contribution and community associations do not establish extraction or taxon-specific causality |
 | [Boron-ore concentration tailings](data/records/boron-ore-concentration-tailings.yaml) | Fungal culture-associated alkali-metal leaching | Unresolved strain, absent abiotic series and kinetic/source-overlap limits; no isolated product |
 | [Seafloor massive sulfides](data/records/seafloor-massive-sulfides.yaml) | Thermophilic culture-associated Cu/Zn leaching of natural ore | Sterile comparisons, source inventory/unit conflicts and laboratory scale remain explicit |
 | [End-of-life crystalline-silicon photovoltaic modules](data/records/end-of-life-crystalline-silicon-photovoltaic-modules.yaml) | Bioanode-powered silver-bearing cathode deposition from prepared module leachate | Chemical pretreatment, abiotic cathode, missing matched controls and ambiguous blank XRD limit recovery claims |
+| [Waste liquid-crystal-display panels](data/records/waste-liquid-crystal-display-panels.yaml) | Mixed acidophile-associated indium/tin mobilization | Unlike pH trajectories, ambiguous replication and source percentage conflicts; no isolated product |
+| [Spent automotive three-way catalyst](data/records/spent-automotive-three-way-catalyst.yaml) | Biogenic-acid aluminium-leaching pretreatment | Unlike media and unresolved Pt accounting prevent a measured PGM-recovery claim |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -193,7 +195,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [twentieth expansion reviews](research/ingests/round20-20261011-publication.md),
 [twenty-first expansion reviews](research/ingests/round21-20261011-publication.md),
 [twenty-second expansion reviews](research/ingests/round22-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round22-frontier-20261011.md), and
+[twenty-third expansion reviews](research/ingests/round23-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round23-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

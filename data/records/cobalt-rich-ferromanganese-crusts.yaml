@@ -8,9 +8,9 @@ description: Naturally occurring layered iron-manganese oxide and oxyhydroxide d
   or manganese elements, a pure mineral species, and a processing residue. Maciąg et al. characterize
   crusts and their altered basalt interfaces from Dirck Hartog Ridge; their sample-specific mineral mixtures
   are not a universal formula or grade. Collection and physical preparation do not make this geological
-  resource secondary. This identity-only record inherits no constituent criticality and makes no microbial
-  extraction, metal-recovery yield or industrial-deployment claim. Experimental microbial leads remain
-  in the source dossier pending complete assay and control review.
+  resource secondary. The laboratory mechanism below records conditional redistribution of cobalt and
+  nickel in whole-crust microcosms; it does not establish a specific receiving phase, a purified metal
+  product or industrial deployment. The resource inherits no constituent criticality.
 sources:
 - id: usgs2025
   title: U.S. Geological Survey (2025). U.S. Geological Survey Global Seabed Mineral Resources. Fact Sheet
@@ -26,6 +26,22 @@ sources:
     geological substrate and heterogeneous material identity; no microbial assay is inferred.
   url: https://doi.org/10.3390/min9020084
   accessed_on: '2026-10-11'
+- id: sujith2017cobalt
+  title: Sujith, Ramanan, Gonsalves and LokaBharathi (2017). Microbial activity promotes the enrichment
+    of cobalt over nickel on hydrogenetic ferromanganese crusts. Marine Georesources & Geotechnology 35(8):1158–1167.
+    DOI 10.1080/1064119X.2017.1298169. Author-posted full text and PDF text, Methods pp.1159–1160, Results
+    pp.1161–1163 and Tables 1–3 inspected. Figure captions were read, but visual plots and supplemental
+    Tables S1–S4 were unavailable to this curation; no figure-derived values are imported.
+  url: https://doi.org/10.1080/1064119X.2017.1298169
+  accessed_on: '2026-10-11'
+- id: sujith2017pressure
+  title: 'Sujith, Gonsalves, Bhonsle, Shaikh and LokaBharathi (2017). Bacterial activity in hydrogenetic
+    ferromanganese crust from the Indian Ocean: a combined geochemical, experimental and pyrosequencing
+    study. Environmental Earth Sciences 76:191. DOI 10.1007/s12665-017-6495-y. Publisher identity and
+    author-posted Methods pp.2,4–5 inspected for sample/experiment separation and explicit sodium-azide
+    interference caution; pressure-study performance and taxon functions are not imported.'
+  url: https://doi.org/10.1007/s12665-017-6495-y
+  accessed_on: '2026-10-11'
 curation_history:
 - timestamp: '2026-10-11T12:40:14.873373+00:00'
   curator: codex (GPT-6; codex)
@@ -33,5 +49,72 @@ curation_history:
   summary: Created the distinct natural marine crust resource identity from official USGS guidance and
     primary mineralogical characterization; deferred incompletely reviewed microbial mechanisms and inherited
     criticality.
+- timestamp: '2026-10-11T13:48:09.902989+00:00'
+  curator: codex (GPT-6; codex)
+  action: EDIT
+  summary: Added a qualified whole-crust community-associated cobalt redistribution observation from Sujith
+    et al. 2017, retaining nickel counterevidence, azide confounding, indirect endpoints and source/access
+    limitations; preserved material identity and prior provenance.
 history_refs:
 - history/records/cobalt-rich-ferromanganese-crusts/2026-10-11T124018Z-codex-131327.yaml
+- history/records/cobalt-rich-ferromanganese-crusts/2026-10-11T134811Z-codex-cb3d65.yaml
+mechanisms:
+- id: crust-community-cobalt-redistribution
+  name: Community-associated cobalt redistribution in natural crust microcosms
+  process: other
+  microbial: true
+  description: Unpoisoned whole-crust microcosms containing indigenous microbial communities showed a
+    decline in aqueous cobalt between days 30 and 50, with treatment-dependent nickel behavior. The paper
+    interprets the decline as sorption, but it is calculated indirectly from the solution difference.
+    This entry uses process other because the experiment does not separately identify adsorption to cells
+    or minerals, cellular absorption, or precipitation. The sodium-azide comparison and cell observations
+    support a community association, while altered control chemistry prevents assigning the entire difference
+    to microbial activity. Neither cobalt oxidation nor nickel reduction, a specific product mineral,
+    or isolated-metal recovery is established.
+  context: Natural hydrogenetic Fe–Mn crust fragments from Afanasiy–Nikitin Seamount, collected in 2009
+    at 2204 m, were broken by hammering, gently rinsed in bottom water and stored at 4°C in filtered/autoclaved
+    ambient water. Approximately 1 g of crust with its unresolved resident community was incubated in
+    10 mL sterile seawater in 15-mL screw-capped tubes, with or without 0.1% glucose. Table 1 specifies
+    triplicate tubes, four crust-free blank formulations and two 15 mM sodium-azide crust controls. Incubations
+    were dark, at 4±1°C and nominally 28°C, for 30 and 50 days; Methods gives 28±1°C whereas Table 1,
+    abstract and Results give 28±2°C. No pressure-controlled incubation is reported for this experiment.
+    Co and Ni in the supernatant after 5009 g centrifugation for 10 min at 4°C were measured by adsorptive
+    stripping voltammetry with ammonia buffer and dimethylglyoxime, then normalized to dry crust mass.
+    Total cell counts after sonication are not a viability-specific assay. The separate 20 MPa study used
+    a different collection site/depth, 0.01% glucose and additional autoclaved-crust controls; its controls,
+    taxa and performance cannot be transferred to these tubes.
+  evidence:
+  - source_ref: sujith2017cobalt
+    supports: support
+    explanation: 'Methods pp.1159–1160 and Tables 1–2 support the narrow laboratory observation: day-30-to-day-50
+      aqueous Co depletion was reported for the unpoisoned crust arms; glucose-amended poisoned controls
+      instead released Co over that interval. Unamended poisoned controls also showed Co depletion, so
+      retention is not exclusively biological. This is an indirect interval-specific solution endpoint,
+      not a measured increase in total solid cobalt or a recovery percentage.'
+  - source_ref: sujith2017cobalt
+    supports: partial
+    explanation: 'Table 2 retains counterevidence to blanket microbial metal enrichment: at 4°C without
+      glucose, reported Ni sorption was 1.89 µg/g dry crust in the biotic arm versus 20.96 µg/g in the
+      azide arm; at 28°C the unamended biotic arm released Ni while the azide arm sorbed it. Glucose-amended
+      biotic and poisoned arms both released Ni. The Results sentence claiming Ni sorption only in biotic
+      incubations conflicts with Table 2 and the Discussion. Table 3 gives a nonsignificant temperature
+      term for glucose-amended Co (P=0.736), despite discussion wording about temperature dependence.
+      These source inconsistencies prevent a universal microbial advantage or temperature-response claim.'
+  - source_ref: sujith2017cobalt
+    supports: partial
+    explanation: Results p.1161 defines final sorption from the difference between days 30 and 50, while
+      the preceding equation labels initial-minus-final aqueous concentration as metal released. This
+      sign/endpoint wording and unavailable underlying supplemental data prevent independent reconstruction
+      of reported amounts. Blank formulations are listed, but their complete outcomes and the blank-correction
+      procedure were not established. Figures 2–4 were not visually inspected; captions describing cell-like,
+      EPS-like and secondary-mineral-like structures cannot identify a receiving metal phase or enzyme.
+      Direct chemical effects of azide, mineral sorption and precipitation remain competing explanations.
+      No quantitative Co amount, mineral-specific yield or industrial application is adopted.
+  - source_ref: sujith2017pressure
+    supports: context_only
+    explanation: Methods pp.2,4–5 locate this companion experiment at 1987 m and explicitly add autoclaved-crust
+      controls because sodium azide may chemically interfere with crust metals. Its 20 MPa pressure bags,
+      0.01% glucose and 24–82-day schedule differ from the focal tube study. The papers share a research
+      program and thesis background, but their reported sample provenance and protocols differ; they are
+      not pooled as independent replications of the same assay. The companion study supplies an explicit
+      control caveat, not missing matched controls for the focal study.

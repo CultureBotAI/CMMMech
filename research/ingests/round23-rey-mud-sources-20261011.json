@@ -1,0 +1,404 @@
+{
+  "schema": "CMMMech source assessment, project-authored JSON companion, not a native record or review schema",
+  "created_utc": "2026-10-11T13:48:50.788661+00:00",
+  "researcher": {
+    "actor": "codex",
+    "model": "GPT-6",
+    "tool": "codex",
+    "agent": "round23_rey_mud"
+  },
+  "worktree": "/private/tmp/CMMMech-expansion-round23-20261011",
+  "branch": "curate/cmm-expansion-round23-20261011",
+  "trusted_base": "80899a3d3ea5c0f7c5d54f1b3583e43768e92767",
+  "target": "data/records/rare-earth-rich-deep-sea-mud.yaml",
+  "target_sha256": "d075fbb4b7b7c9d2d1732068cebf41c128e8eb2dc5bde326a5d9644a3a0ae0a8",
+  "history_ref": "history/records/rare-earth-rich-deep-sea-mud/2026-10-11T134655Z-codex-c872bc.yaml",
+  "scope": "Reassess round22 frontier priority 2 against Wang2026 primary study, full SI, linked v4 workbook and selected peer-review evidence; preserve geological versus experimental causal scope. No new criticality or external organism identifiers.",
+  "prior_context": [
+    "research/ingests/round21-ree-mud-sources-20261011.md",
+    "research/sources/round21-ree-mud/20261011T124334Z.md",
+    "reviews/structured/20261011T124626Z-rare-earth-rich-deep-sea-mud-round21-independent/review.yaml",
+    "research/ingests/round22-frontier-20261011.md"
+  ],
+  "dedup": {
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-n",
+      "s43247-025-03100|17684759|rare-earth-rich-deep-sea-mud",
+      "data/records",
+      "research",
+      "reviews",
+      "history",
+      "/private/tmp/cmm-round21-ree-mud-raw",
+      "/private/tmp/cmm-round23-rey-mud-raw"
+    ],
+    "result": "Exit 0, no stderr; existing record and known source frontier found. Current pass update appears in final search.",
+    "boundaries": "Relevant repository directories, cited prior raw directory and current raw; hidden and ignored files and relevant symlinks included. No machine-wide absence or source novelty claim.",
+    "receipt": "/private/tmp/cmm-round23-rey-mud-raw/dedup-complete.json"
+  },
+  "search_log": [
+    {
+      "provider": "web search",
+      "query": "\"s43247-025-03100-8\" correction retraction",
+      "utc_date": "2026-10-11",
+      "coverage": "First returned result set; English queries, no date/domain filters, no pagination. Exact query times not retained."
+    },
+    {
+      "provider": "web search",
+      "query": "\"Microbial iron cycling illuminates\" correction retraction critique",
+      "utc_date": "2026-10-11",
+      "coverage": "First returned result set; English queries, no date/domain filters, no pagination. Exact query times not retained."
+    },
+    {
+      "provider": "web search",
+      "query": "\"REY-rich\" microbial magnetite abiotic diagenesis Wang",
+      "utc_date": "2026-10-11",
+      "coverage": "First returned result set; English queries, no date/domain filters, no pagination. Exact query times not retained."
+    },
+    {
+      "provider": "web search",
+      "query": "\"rare earth\" \"deep-sea mud\" bioleaching microbial extraction",
+      "utc_date": "2026-10-11",
+      "coverage": "First returned result set; English queries, no date/domain filters, no pagination. Exact query times not retained."
+    }
+  ],
+  "acquisitions": [
+    {
+      "name": "wang2026.html",
+      "url": "https://www.nature.com/articles/s43247-025-03100-8",
+      "started_utc": "2026-10-11T13:42:15.410035+00:00",
+      "status": 200,
+      "final_url": "https://www.nature.com/articles/s43247-025-03100-8?error=cookies_not_supported&code=9bfeb8ec-94f3-4c1e-9dba-d2315d0bf910",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 624027,
+      "sha256": "739f260d135178d9c85949f83b03ca28bfa7a6ea2709294afd6bcb16dd7c5cc2",
+      "path": "/private/tmp/cmm-round23-rey-mud-raw/wang2026.html",
+      "magic": "b'\\n\\n<!DOCTYPE html'",
+      "ended_utc": "2026-10-11T13:42:17.637869+00:00"
+    },
+    {
+      "name": "wang2026-crossref.json",
+      "url": "https://api.crossref.org/works/10.1038/s43247-025-03100-8",
+      "started_utc": "2026-10-11T13:42:15.411101+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1038/s43247-025-03100-8",
+      "content_type": "application/json",
+      "bytes": 36602,
+      "sha256": "11dc1873946d929a035463db21fe634e49135173109129151e1ca1f8438ec61a",
+      "path": "/private/tmp/cmm-round23-rey-mud-raw/wang2026-crossref.json",
+      "magic": "b'{\"status\":\"ok\",\"'",
+      "ended_utc": "2026-10-11T13:42:16.050391+00:00"
+    },
+    {
+      "name": "zenodo17684759.json",
+      "url": "https://zenodo.org/api/records/17684759",
+      "started_utc": "2026-10-11T13:42:15.411422+00:00",
+      "status": 200,
+      "final_url": "https://zenodo.org/api/records/17684759",
+      "content_type": "application/json",
+      "bytes": 4764,
+      "sha256": "391c0d2301057a3e4d5167b358f4ba453e49407da8929e362b4e2782e8faccd6",
+      "path": "/private/tmp/cmm-round23-rey-mud-raw/zenodo17684759.json",
+      "magic": "b'{\"created\": \"202'",
+      "ended_utc": "2026-10-11T13:42:16.361333+00:00"
+    },
+    {
+      "name": "wang2026-epmc.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1038/s43247-025-03100-8&format=json",
+      "started_utc": "2026-10-11T13:42:15.411702+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1038/s43247-025-03100-8&format=json",
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 193,
+      "sha256": "0813e2653adb968759bf1f72e59064be40c617fc7d5db2817173137ac332de14",
+      "path": "/private/tmp/cmm-round23-rey-mud-raw/wang2026-epmc.json",
+      "magic": "b'{\"version\":\"6.9\"'",
+      "ended_utc": "2026-10-11T13:42:16.749146+00:00"
+    },
+    {
+      "name": "wang2026-supp.pdf",
+      "url": "https://static-content.springer-cdn.com/esm/art%3A10.1038%2Fs43247-025-03100-8/MediaObjects/43247_2025_3100_MOESM1_ESM.pdf",
+      "started_utc": "2026-10-11T13:42:15.412072+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "ended_utc": "2026-10-11T13:42:15.579956+00:00"
+    },
+    {
+      "name": "wang2026-supp.pdf",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs43247-025-03100-8/MediaObjects/43247_2025_3100_MOESM1_ESM.pdf",
+      "started_utc": "2026-10-11T13:42:59.656550+00:00",
+      "status": 200,
+      "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs43247-025-03100-8/MediaObjects/43247_2025_3100_MOESM1_ESM.pdf",
+      "content_type": "application/pdf",
+      "bytes": 713123,
+      "sha256": "57fe6c0d4d12a44337ece91d5d9105e49290d866b8d0826f255a89ebad87f546",
+      "path": "/private/tmp/cmm-round23-rey-mud-raw/wang2026-supp.pdf",
+      "magic": "b'%PDF-1.5\\r\\n%\\xb5\\xb5\\xb5\\xb5\\r'",
+      "ended_utc": "2026-10-11T13:43:00.272553+00:00"
+    },
+    {
+      "name": "wang2026-reporting.pdf",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs43247-025-03100-8/MediaObjects/43247_2025_3100_MOESM2_ESM.pdf",
+      "started_utc": "2026-10-11T13:42:59.657848+00:00",
+      "status": 200,
+      "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs43247-025-03100-8/MediaObjects/43247_2025_3100_MOESM2_ESM.pdf",
+      "content_type": "application/pdf",
+      "bytes": 2260341,
+      "sha256": "37e549d728580e8139e50e869312e7fdcc8ac0e5d818b2e4d0ebfe7a069bb98f",
+      "path": "/private/tmp/cmm-round23-rey-mud-raw/wang2026-reporting.pdf",
+      "magic": "b'%PDF-1.5\\n%\\xa6\\xe9\\xcf\\xc4\\r\\n'",
+      "ended_utc": "2026-10-11T13:43:00.300229+00:00"
+    },
+    {
+      "name": "wang2026-peerreview.pdf",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs43247-025-03100-8/MediaObjects/43247_2025_3100_MOESM3_ESM.pdf",
+      "started_utc": "2026-10-11T13:42:59.658225+00:00",
+      "status": 200,
+      "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs43247-025-03100-8/MediaObjects/43247_2025_3100_MOESM3_ESM.pdf",
+      "content_type": "application/pdf",
+      "bytes": 3200818,
+      "sha256": "31ecc59503903ba73932a52a180cbaf04036c6ecbe684c4b134c46aa49647688",
+      "path": "/private/tmp/cmm-round23-rey-mud-raw/wang2026-peerreview.pdf",
+      "magic": "b'%PDF-1.6\\r%\\xa6\\xe9\\xcf\\xc4\\r\\n'",
+      "ended_utc": "2026-10-11T13:43:00.479031+00:00"
+    },
+    {
+      "name": "zenodo17684759-Data.xlsx",
+      "url": "https://zenodo.org/api/records/17684759/files/Data.xlsx/content",
+      "started_utc": "2026-10-11T13:42:59.658538+00:00",
+      "status": 200,
+      "final_url": "https://zenodo.org/api/records/17684759/files/Data.xlsx/content",
+      "content_type": "application/octet-stream",
+      "bytes": 37501,
+      "sha256": "b8a5bdf5ae7a779e920519cf6b33f356c11ee28487e6e2dc5f09f0c84b103496",
+      "path": "/private/tmp/cmm-round23-rey-mud-raw/zenodo17684759-Data.xlsx",
+      "magic": "b'PK\\x03\\x04\\x14\\x00\\x06\\x00\\x08\\x00\\x00\\x00!\\x00\\x89\\xc2'",
+      "ended_utc": "2026-10-11T13:43:03.279143+00:00"
+    },
+    {
+      "name": "zenodo17684759.html",
+      "url": "https://zenodo.org/records/17684759",
+      "started_utc": "2026-10-11T13:42:59.658841+00:00",
+      "status": 200,
+      "final_url": "https://zenodo.org/records/17684759",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 67635,
+      "sha256": "e2253d8574a76cdc59bedf2defbfad4e0c71a3c49c03eb69e79ada5601d14bd1",
+      "path": "/private/tmp/cmm-round23-rey-mud-raw/zenodo17684759.html",
+      "magic": "b'\\n\\n\\n<!DOCTYPE htm'",
+      "ended_utc": "2026-10-11T13:43:01.515674+00:00"
+    }
+  ],
+  "previous_acquisitions_rechecked": [
+    {
+      "name": "wang2026.pdf",
+      "url": "https://www.nature.com/articles/s43247-025-03100-8.pdf",
+      "started_utc": "2026-10-11T12:39:34.085521+00:00",
+      "status": 200,
+      "final_url": "https://www.nature.com/articles/s43247-025-03100-8.pdf?error=cookies_not_supported&code=faab8612-bf2d-4ad6-b86f-49b1f53ed5e4",
+      "content_type": "application/pdf",
+      "bytes": 5506786,
+      "sha256": "60a1d86fe4555a0a0caad5dfa5d8f7dbe6e87176f416b3277b0c6869f24c41d4",
+      "path": "/private/tmp/cmm-round21-ree-mud-raw/wang2026.pdf",
+      "magic": "%PDF-1.4\n%����\n1",
+      "ended_utc": "2026-10-11T12:39:37.158264+00:00",
+      "inspection_utc": "2026-10-11T13:48:50.788661+00:00",
+      "acquisition_state": "Previously acquired in round21; checksum and relevant full-text content rechecked this round, not freshly downloaded."
+    }
+  ],
+  "workbook_audit": {
+    "workbook_sha256": "b8a5bdf5ae7a779e920519cf6b33f356c11ee28487e6e2dc5f09f0c84b103496",
+    "md5_matches_advertised": true,
+    "sheets": [
+      {
+        "sheet": "Major and trace elements",
+        "max_row": 53,
+        "max_column": 21,
+        "nonempty_cells": 1075,
+        "formula_cells": []
+      },
+      {
+        "sheet": "Iron isotopes",
+        "max_row": 27,
+        "max_column": 3,
+        "nonempty_cells": 79,
+        "formula_cells": []
+      },
+      {
+        "sheet": "Iron species distribution in RE",
+        "max_row": 15,
+        "max_column": 4,
+        "nonempty_cells": 41,
+        "formula_cells": []
+      },
+      {
+        "sheet": "Magnetic profile",
+        "max_row": 52,
+        "max_column": 5,
+        "nonempty_cells": 256,
+        "formula_cells": []
+      },
+      {
+        "sheet": "ZFC and FC",
+        "max_row": 63,
+        "max_column": 4,
+        "nonempty_cells": 247,
+        "formula_cells": []
+      },
+      {
+        "sheet": "κ-T",
+        "max_row": 289,
+        "max_column": 3,
+        "nonempty_cells": 713,
+        "formula_cells": []
+      },
+      {
+        "sheet": "Mass percentage of fish teeth",
+        "max_row": 28,
+        "max_column": 5,
+        "nonempty_cells": 136,
+        "formula_cells": []
+      }
+    ],
+    "total_nonempty_cells": 2547,
+    "chemistry_rows": 50,
+    "chemistry_depth_unique": true,
+    "chemistry_depth_range_cm": [
+      0,
+      735
+    ],
+    "chemistry_Fe2O3_range_wt_percent": [
+      6.08,
+      9.42
+    ],
+    "chemistry_max_total_REY_mg_kg": 2321,
+    "isotope_rows": 25,
+    "isotope_depth_unique": true,
+    "isotope_raw_value_range_per_mille": [
+      -0.07,
+      0.07
+    ],
+    "magnetic_profile_rows": 50,
+    "magnetic_depth_unique": true,
+    "arithmetic_scope": "Curator arithmetic audit of displayed means only; not uncertainty propagation or model replication.",
+    "operational_magnetite_fraction_of_extracted_Fe_percent": 22.25563909774436,
+    "operational_magnetite_fraction_excluding_weak_crystalline_percent": 25.34246575342466,
+    "multiplied_IRM_fraction_percent": 19.184246575342467,
+    "multiplied_retention_fraction_percent": 17.64950684931507,
+    "native_observation_import": false
+  },
+  "source_conflicts_and_limits": [
+    {
+      "locator": "Main Figure 3f; Supplementary Figure 1m–o, PDF page 13",
+      "observation": "Biomagnetic fitted IRM fractions: 78.2% at 45 cm background; 75.7% at 225 cm labelled enriched; 76.4% at 525 cm background. Fraction is not selectively higher in enriched sample. Absolute magnetic intensities and operational phase inventories are different quantities.",
+      "handling": "Explicit in record; do not equate a fitted magnetic component with microbial biomass or REY fraction."
+    },
+    {
+      "locator": "Main Discussion page 8, Figure 5; Supplementary Table 3 page 7",
+      "observation": "Isotope mixing (0–2% endmember contribution) and multiplicative estimate (17.6% of REY enrichment) have different denominators. The latter uses 22.3% operational extracted iron, 25.3% after excluding the weakly crystalline pool, 75.7% fitted IRM signal and >92% modeled retention. Initial poorly crystalline inventory and signal-to-mass conversion are not measured in this study.",
+      "handling": "Retain hypothesis; neither measured microbial fraction nor independently verified minimum claim imported."
+    },
+    {
+      "locator": "Main Results page 2; Supplementary Table 1 pages 3–5; Data.xlsx Major and trace elements B4:B53",
+      "observation": "Narrative Fe2O3 range 6.94–8.72 wt.% differs from tabulated/workbook range 6.08–9.42 wt.%.",
+      "handling": "No quantitative grade/range imported."
+    },
+    {
+      "locator": "Main Results page 2; Supplementary Table 2 page 6; Data.xlsx Iron isotopes B3:B27",
+      "observation": "Narrative minimum δ56Fe −0.08 per mille differs from minimum −0.07 in the inspected table/workbook; header says 56Fe/54Fe (per mille), while methods define delta relative to IRMM-14.",
+      "handling": "No exact isotope observation imported or silently relabelled."
+    },
+    {
+      "locator": "Main Discussion page 8; Supplementary Table 6 page 11",
+      "observation": "Main depositional interval 11.8–13 Ma versus supplemental GC112 age 13.0–11.5 Ma; chronology is correlated from GC18.",
+      "handling": "Exact age and causal climate linkage withheld; record retains conflict."
+    },
+    {
+      "locator": "Supplementary Figure 1 page 13 versus Results and Supplementary Table 3",
+      "observation": "Detailed enriched magnetic sample is 225 cm, whereas the main central interval and iron-fraction cohort are described as 240–390 cm. Figure 2 uses a separate >700 mg/kg threshold, which also includes some background-labelled samples.",
+      "handling": "Retain exact sample labels; do not imply all magnetic and sequential-extraction measurements are paired aliquots from one horizon."
+    },
+    {
+      "locator": "Data.xlsx κ-T A2 and Figure 3a / Supplementary Figure 1a–c",
+      "observation": "Workbook labels temperature K; published κ-T axes are degrees Celsius and data start near 28.8. ZFC/FC genuinely use K and are distinct tests.",
+      "handling": "No unit conversion or native time/temperature series imported."
+    },
+    {
+      "locator": "Zenodo metadata description versus publisher supplementary tables",
+      "observation": "Zenodo list S5/S6 are ZFC/FC and κ-T, S7 fish teeth; final publisher S5 fish teeth, S6 age compilation, S7 extraction reagents. Workbook has Sr, while final S1 has TOC and analytical standards.",
+      "handling": "Join by actual sheet/column and study, not table number. Same dataset/paper family, not independent evidence."
+    }
+  ],
+  "candidate_inventory": [
+    {
+      "doi": "10.1038/s43247-025-03100-8",
+      "role": "Primary natural-diagenesis proxy study",
+      "decision": "Curate narrowly into existing record with partial evidence; no new identity."
+    },
+    {
+      "doi": "10.5281/zenodo.17684759",
+      "version": "v4",
+      "role": "Paired workbook",
+      "decision": "Context and audit only; no automatic import."
+    },
+    {
+      "doi": "10.1016/j.chemgeo.2025.122951",
+      "role": "Earlier related primary study, identified by peer review and web result",
+      "decision": "Defer full study/core overlap and biological-scope assessment; not a new experiment by assertion."
+    },
+    {
+      "doi": "10.1029/2025GL119177",
+      "role": "Eastern Pacific magnetic-proxy primary lead",
+      "decision": "Defer full methods, SI and core/data overlap assessment; metadata/abstract discovery only."
+    },
+    {
+      "doi": "10.1016/j.oregeorev.2021.104269",
+      "role": "Indian Ocean diagenesis primary lead",
+      "decision": "Defer full evidence; indexed abstract only."
+    },
+    {
+      "doi": "10.1016/j.seppur.2023.124013",
+      "role": "Chemical extraction comparator",
+      "decision": "Abstract-level discovery only; chemical acid/solvent process does not establish microbial extraction."
+    },
+    {
+      "doi": "10.24425/amm.2026.157780",
+      "role": "Chemical acid-leaching primary lead",
+      "decision": "Abstract-level discovery only; nonmicrobial comparator, no quantities adopted."
+    }
+  ],
+  "inspected": {
+    "main": "Full text pages 1–10 plus cited reference context; Figures 2–6 visually inspected in PDF pages 4–6, 8–9. Figure 1 caption/geographic text read; graphic not visually assessed.",
+    "supplement": "All 14 pages text extracted/read; Tables 3, 6, 7 and Figure 1 visually inspected on pages 7, 11–13. Remaining tables inspected as text with selected workbook cross-checks; not every cell visually audited.",
+    "workbook": "All seven sheets structurally parsed, 2547 nonempty cells; selected chemistry, depth, isotope, iron-fraction and magnetic comparisons. Not a full model reproduction.",
+    "peer_review": "82 pages extracted; selected Version 0 critiques, relevant author replies and final reviewer comments pages 80–82 read; not a claim that all 82 pages were fully reviewed.",
+    "reporting_summary": "Pages 1–2 visually inspected after PDF extraction yielded no body text; page 3 not scientifically assessed."
+  },
+  "licenses": {
+    "paper_and_supplements": "Publisher states CC BY-NC-ND 4.0; third-party content retains separate terms. Raw paper, supplements and extracted/rendered evidence stay outside Git.",
+    "dataset": "Zenodo metadata CC BY 4.0; workbook retained outside Git, only project-authored assessment and small factual audit retained."
+  },
+  "validation": {
+    "baseline": "Parent reports terminal0 /private/tmp/cmm-round23-baseline.log: 308 passed, 3 skipped;154 records;173 histories.",
+    "named": "Executed uv run --locked cmmmech validate data/records/rare-earth-rich-deep-sea-mud.yaml, terminal0: Checked 1 record(s); 0 failed.",
+    "independent_review": "Pending; source dossier does not certify acceptance.",
+    "batch_gates": "Parent-owned final gates pending."
+  },
+  "limits": [
+    "No controlled microbial mud experiment, matched sterile assay, identified causal organism, in-situ rate or recovered REY product established by this study.",
+    "No analysis dates or experimental biotic/abiotic arms established for native concentration observations.",
+    "No quantitative microbial contribution or universal host chemistry adopted.",
+    "Exact DOI/title correction/retraction web queries and live Crossref metadata found no correction notice in this bounded pass; no exhaustive absence claim.",
+    "Browser Nature request failed with redirect; Zenodo browser request429. Direct legitimate public HTTP retrieval succeeded. Static Springer host DNS failed; publisher-linked media.springernature.com succeeded.",
+    "Initial pdftotext unavailable and Swift cache write failed; successful PDFKit rerun used dedicated temporary caches. Extraction/render warnings retained; images inspected explicitly as listed."
+  ],
+  "next_actions": [
+    "Independent final record review against exact SHA and preserved old identity review.",
+    "Review earlier Chemical Geology study and Eastern Pacific source with full methods, SI and core overlap; no automatic pooling.",
+    "Obtain independent phase-specific isotope/source-sink constraints and IRM-to-mass calibration before adopting modeled microbial fractions.",
+    "Resolve table/unit/range and chronology conflicts before any quantitative data ingest.",
+    "Continue controlled microbial extraction literature search beyond this bounded English-language pass."
+  ]
+}

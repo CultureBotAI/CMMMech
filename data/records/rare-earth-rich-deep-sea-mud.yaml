@@ -8,8 +8,10 @@ description: Naturally occurring deep-ocean sediment enriched in rare-earth elem
   mineral, phosphorite, ferromanganese nodules and rock-surface ferromanganese crusts. Host phases and
   composition vary among deposits; no single mineral formula or universal grade defines this resource.
   Collection or physical concentration alone does not make the natural feed a secondary resource. No constituent
-  criticality designation is inherited. This identity-only record does not assert a microbial extraction,
-  transformation or recovery mechanism, a recovered-metal yield, economic reserves or industrial deployment.
+  criticality designation is inherited. A field-proxy study provides qualified evidence for an inferred
+  microbial contribution to natural diagenetic iron transformations and REY redistribution; it does not
+  demonstrate a controlled microbial extraction process, a recovered-metal yield, economic reserves or
+  industrial deployment.
 sources:
 - id: usgs2025
   title: U.S. Geological Survey (2025). U.S. Geological Survey Global Seabed Mineral Resources. Fact Sheet
@@ -32,6 +34,29 @@ sources:
     or organism-specific causal mechanism.
   url: https://doi.org/10.1371/journal.pone.0208230
   accessed_on: '2026-10-11'
+- id: wang2026
+  title: Wang et al. (2026). Microbial iron cycling illuminates the biological contribution and potential
+    climate drivers of deep-sea rare earth element enrichment. Communications Earth & Environment 7:79.
+    DOI 10.1038/s43247-025-03100-8; published online 17 December 2025, version of record 27 January 2026.
+    Results, Discussion, Methods, Figures 2–6; Supplementary Tables 1–7 and Figure 1. Natural sediment
+    proxies and model interpretation, not a controlled microbial leaching experiment.
+  url: https://doi.org/10.1038/s43247-025-03100-8
+  accessed_on: '2026-10-11'
+- id: wang2026data
+  title: Wang, Pengcong (2025). Microbial iron cycling illuminates the biological contribution and potential
+    climate drivers of deep-sea rare earth element enrichment. Zenodo record 17684759, displayed version
+    v4, published 23 November 2025, DOI 10.5281/zenodo.17684759; Data.xlsx. Seven inspected sheets are
+    paired data for Wang et al., not independent experiments; table numbering differs from the final publisher
+    supplement.
+  url: https://doi.org/10.5281/zenodo.17684759
+  accessed_on: '2026-10-11'
+- id: wang2026peerreview
+  title: Wang et al. Communications Earth & Environment 7:79, transparent peer-review file. Version 1
+    and reviewer 1 final comments, especially PDF pages 80–82, retain limits on present activity, pelagic
+    versus sediment timing and gene-based inference; earlier reports and author responses record the evolving
+    interpretation, not separate experiments.
+  url: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs43247-025-03100-8/MediaObjects/43247_2025_3100_MOESM3_ESM.pdf
+  accessed_on: '2026-10-11'
 curation_history:
 - timestamp: '2026-10-11T12:40:18.352025+00:00'
   curator: codex (GPT-6; codex)
@@ -39,5 +64,66 @@ curation_history:
   summary: Created an identity-only REY-rich deep-sea sediment resource record from official and primary
     sources; distinguished host grains, physical processing and microbial community context from demonstrated
     microbial recovery.
+- timestamp: '2026-10-11T13:46:54.208734+00:00'
+  curator: codex (GPT-6; codex)
+  action: EDIT
+  summary: Added a qualified field-proxy interpretation of natural diagenetic microbial iron cycling from
+    Wang et al. and paired evidence; preserved background magnetic signals, model and source inconsistencies,
+    and the absence of demonstrated microbial extraction or recovery.
 history_refs:
 - history/records/rare-earth-rich-deep-sea-mud/2026-10-11T124020Z-codex-a75004.yaml
+- history/records/rare-earth-rich-deep-sea-mud/2026-10-11T134655Z-codex-c872bc.yaml
+mechanisms:
+- id: inferred_microbe_associated_diagenetic_iron_cycling
+  name: Inferred microbial iron cycling associated with natural REY redistribution
+  process: redox_transformation
+  microbial: true
+  description: Wang et al. interpret magnetic, microscopic and geochemical signatures in natural REY-rich
+    sediment as consistent with past microbial iron reduction and magnetite formation. They propose that
+    transformation of poorly crystalline iron-bearing particles contributes to REY release into porewater
+    and subsequent phosphate-associated retention. Microbial involvement describes this qualified interpretation;
+    it is not experimentally isolated causation, demonstrated present activity, or a claim that REY themselves
+    undergo iron-like redox cycling.
+  context: Field-derived gravity core GC112, Pigafetta Basin, northwestern Pacific, approximately 5700
+    m water depth; heterogeneous carbonate-free pelagic clay. Analyses used freeze-dried, homogenized
+    sediment, chemical digestion/sequential extraction and magnetically separated particles, not inoculated
+    mud. The authors compare enriched and background horizons and infer suboxic depositional/early-diagenetic
+    conditions, without an organism-resolved culture, matched sterile treatment, measured in-situ microbial
+    rate, or controlled pH/temperature time course. Magnetotactic and dissimilatory iron-reducing bacteria
+    are proposed functional groups, not identified causal taxa. Pelagic, sediment-interface and later
+    burial processes are not uniquely separated. No recovered product, microbial REY recovery percentage
+    or industrial operation is established.
+  evidence:
+  - source_ref: wang2026
+    supports: partial
+    explanation: Results and Figures 2–4 associate REY-rich horizons with phosphate hosts, magnetic signatures
+      and magnetite-like particles; Discussion and Figure 6 interpret them through microbial iron cycling.
+      These observations support a formation hypothesis rather than a directly measured organism-to-REY
+      transfer. Supplementary Figure 1 also fits substantial biomagnetic IRM components in background
+      samples (78.2% at 45 cm and 76.4% at 525 cm), compared with 75.7% at the labelled enriched 225 cm
+      sample. These are fitted magnetic-signal fractions, not measured microbial biomass or REY fractions,
+      and do not by themselves show selective microbial enrichment.
+  - source_ref: wang2026
+    supports: partial
+    explanation: Figure 5 and Discussion use endmember-dependent bulk-iron isotope mixing; a separate
+      calculation combines operational iron fractions, IRM unmixing and modeled sediment retention to
+      estimate a microbial contribution. The reported 17.6% is not adopted as a measured or independently
+      established minimum fraction of REY enrichment. Initial iron inventories, phase-specific isotope
+      values, conversion from IRM signal to mineral mass, and a direct microbial REY mass balance remain
+      unconstrained. Chemical extraction recovery in Supplementary Table 3 is analytical iron accounting,
+      not biological metal recovery. The main text and Supplementary Table 6 disagree on the younger bound
+      of the inferred depositional age; climate causation and an exact age are not assigned here.
+  - source_ref: wang2026data
+    supports: context_only
+    explanation: Data.xlsx was parsed across all seven sheets, with selected chemistry/depth, isotope,
+      iron-fraction and magnetic-profile comparisons against the publisher supplement. These are the same
+      study observations, not replication. Blanks, BDL labels, isotope-header ambiguity, differing table
+      numbers and the workbook κ-T temperature-unit conflict with Figure 3a prevent unqualified cell imports.
+      No native quantitative observations or microbial study arms are inferred from these geological samples.
+  - source_ref: wang2026peerreview
+    supports: context_only
+    explanation: Final reviewer comments on PDF pages 80–82 distinguish past signatures from ongoing activity,
+      question whether magnetotactic signatures locate sediment porewater processes, and caution that
+      metagenomic predictions do not establish activity. These limits qualify the final paper without
+      treating criticism of an earlier manuscript as an unresolved rejection of its revised qualitative
+      observations.
