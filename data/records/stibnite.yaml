@@ -1,0 +1,119 @@
+id: cmmmech:stibnite
+name: Stibnite
+material_kind: mineral
+description: Stibnite is the Sb2S3 mineral species, grandfathered in the September
+  2026 IMA list with original-description year 1832. It is distinct from elemental
+  antimony, dissolved antimony species, mixed antimony ores and mine wastes. The
+  experiment below used commercial stibnite containing quartz, separately from
+  the study's natural ore samples. No criticality designation is inherited from
+  antimony.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 206,
+    Stibnite row; page 148, Mopungite row; page 1 column definitions and page 2
+    distribution terms.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-11'
+- id: loni2020
+  title: Loni et al. (2020). Mechanism of microbial dissolution and oxidation of
+    antimony in stibnite under ambient conditions. Journal of Hazardous Materials
+    385, 121561. Complete university-hosted article-in-press version inspected;
+    sections 2.2-2.4 and 3.2-3.4, Table 1, Figures 1 and 4-7.
+  url: https://doi.org/10.1016/j.jhazmat.2019.121561
+  accessed_on: '2026-10-11'
+- id: loni2020_supplement
+  title: Loni et al. Supplementary materials for DOI 10.1016/j.jhazmat.2019.121561.
+    Original publisher-hosted DOCX; Table S3 and Figures S4-S5 distinguish loadings,
+    growth observations and abiotic mineral phases.
+  url: https://ars.els-cdn.com/content/image/1-s2.0-S0304389419315158-mmc1.docx
+  accessed_on: '2026-10-11'
+- id: ncbi_versutus
+  title: NCBI Taxonomy 34007. Paracoccus versutus, species-level entry;
+    this identifier does not identify the experimental isolate XT0.6.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=34007&mode=Info
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: xt06_aerobic_stibnite_transformation
+  name: Aerobic culture-associated antimony mobilization and oxidation
+  process: redox_transformation
+  microbial: true
+  organisms:
+  - id: NCBITaxon:34007
+    label: Paracoccus versutus
+  description: In aerobic laboratory incubations, the source's mine-tailings isolate
+    XT0.6 was associated with release of antimony from commercial stibnite and
+    appearance of dissolved Sb(V). The authors identified XT0.6 as Paracoccus
+    versutus using a phylogeny of single-copy orthologous genes. The species
+    identifier is not a strain or genome accession. Residual-solid XRD was
+    interpreted as formation of the secondary Sb(V) mineral mopungite, NaSb(OH)6.
+    This is a culture-associated transformation observation; the experiment does
+    not isolate a direct enzymatic mineral-attack mechanism.
+  context: The commercial starting solid was fitted as 97.19 wt% stibnite and
+    2.81 wt% quartz and ground to 200 mesh. Main-text section 2.3.3 specifies
+    0.1 g in 100 mL chemically defined medium, sterilized at 120 degrees C for
+    20 minutes and inoculated after cooling with 1% v/v culture previously grown
+    without Sb(III). It does not specify a washed inoculum or its cell density for
+    this mineral experiment. Incubation was aerobic, at 30 degrees C and 150 rpm
+    in the dark, in duplicate, with a 13-day time course. Culture pH rose from
+    7.2 toward 9.3; uninoculated controls started at pH 7.2, 8.2 or 9.3. The
+    supplement instead labels the solids loading 1% w/v; this unresolved tenfold
+    conflict precludes a mass-normalized yield. The medium refers to a prior
+    recipe without reproducing its full composition. These are laboratory assays,
+    not industrial deployment or recovery of an isolated antimony product.
+  evidence:
+  - source_ref: loni2020
+    supports: support
+    explanation: Sections 2.3.3, 2.4 and 3.2 and Figure 4A specify the commercial
+      stibnite experiment. The text reports a dissolved Sb(V) peak of 68 mg/L on
+      day 4 followed by a decline to about 20 mg/L by day 13. Sb(III) was reported
+      below detection after day 1; no numerical detection limit is supplied, so
+      this is not an exact zero. Speciation was measured by HPLC coupled to hydride
+      generation atomic fluorescence spectroscopy after centrifugation and
+      filtration; the filter pore size is unspecified. These are concentrations
+      in sampled liquid, not total antimony recovered. Figure error bars are
+      standard deviations of duplicate experiments.
+  - source_ref: loni2020
+    supports: partial
+    explanation: Sections 3.2-3.3 and Figures 4A and 5E show different pH
+      trajectories in inoculated and uninoculated conditions. Alkaline abiotic
+      controls also released and oxidized antimony, with substantial dissolved
+      antimony that could exceed the culture's peak. Initial-pH controls do not
+      match the evolving culture pH. The relative contributions of pH-mediated
+      chemistry, other culture products and cell activity therefore remain
+      unresolved; faster or greater dissolution than every abiotic control is
+      not established. Separate soluble-Sb kinetic and anaerobic assays do not
+      establish anaerobic stibnite transformation or supply missing mineral-assay
+      inoculum metadata.
+  - source_ref: loni2020_supplement
+    supports: partial
+    explanation: Table S3 labels solid additions as 1% w/v, whereas main-text
+      section 2.3.3 specifies 0.1 g per 100 mL, equivalent to 0.1% w/v. The record
+      retains both statements without choosing an unverified correction. The
+      alkaline-control summary is not used to compute a recovery percentage.
+  - source_ref: loni2020
+    supports: support
+    explanation: Section 2.4, section 3.4, Table 1 and Figure 6A report a
+      least-squares XRD phase assignment of mopungite in the biotic commercial
+      stibnite residue, with a fitted relative phase fraction of 8.25 wt%.
+      This is neither an isolated-product yield nor an antimony mass balance.
+      Changes in normalized stibnite and quartz fractions do not quantify the
+      absolute mass of stibnite dissolved. Biotic residues were treated with
+      10% SDS before freeze drying, while abiotic residues were freeze dried
+      without that treatment. Figure 7 surface morphology and elemental
+      composition do not independently identify a molecular oxidation pathway.
+  - source_ref: loni2020_supplement
+    supports: partial
+    explanation: Figure S5 supplies XRD patterns for the additional alkaline
+      abiotic controls; the authors do not assign mopungite in those patterns.
+      Lack of an assigned phase is bounded by that measurement, not proof that
+      no secondary solid formed. Natural ore arms 5M, 25M and 27M have different
+      compositions and are not pooled with the commercial stibnite result.
+curation_history:
+- timestamp: '2026-10-11T19:11:41.233853+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created mineral identity and an aerobic culture-associated antimony
+    transformation observation, preserving the source loading conflict, alkaline
+    abiotic chemistry and relative-phase rather than recovery interpretation.
+history_refs:
+- history/records/stibnite/2026-10-11T191131Z-codex-afa2f3.yaml

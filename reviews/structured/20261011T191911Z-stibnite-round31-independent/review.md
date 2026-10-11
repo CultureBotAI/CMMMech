@@ -1,0 +1,457 @@
+# Independent scientific review of stibnite aerobic transformation
+
+- Review: 20261011T191911Z-stibnite-round31-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T19:14:09.012654Z
+- Finished UTC: 2026-10-11T19:19:11.744080Z
+- Reviewer: Codex /root/round27_packaging (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The exact frozen record accurately represents a mineral species and a bounded aerobic culture-associated antimony transformation. Independent original-source assessment found no actionable record defect. Loading ambiguity, evolving-pH chemical controls, organism scope, relative XRD fractions, non-detection limits and lack of isolated recovery are retained. Required named and cohort gates passed; source limitations remain scientific priorities rather than silently corrected data.
+
+## Scope And Provenance
+
+Every field of the new stibnite record and its canonical CREATE sidecar, primary and supplementary evidence, numerical claims, material/organism identities and deployment boundaries.
+
+Selection: One assigned new round31 record curated by another agent.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 075c1ca032b68162eb8350b7e8d9bfe9530ca143.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:stibnite | data/records/stibnite.yaml | maintained | Stibnite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named-record validation | passed | True | cmmmech:stibnite | Reviewer executed; terminal0, Checked1record(s);0failed. Exact target hash unchanged. |
+| Parent-executed batch gate | passed | True | cmmmech:stibnite | Reviewer read terminal log and verified its SHA256 c42464b59af6a3aac67f79d03121e06de34f98a4ed6048683c370ac90c3cf639. Receipt /private/tmp/cmm-round31-final-terminal.json SHA256 9d4815c2db4e472b64ce0de48a7e7cb10146a656e46814ddfd532329810aa9ad. Log /private/tmp/cmm-round31-final-batch.log. This is receipt verification, not a redundant independent test execution. |
+| Parent-executed nonempty gate | passed | True | cmmmech:stibnite | Reviewer read terminal log and verified its SHA256 28173453e8d0bf2d4fc8bf1a392f98d24e15c5c4998de9cb6b4813c91f243899. Receipt /private/tmp/cmm-round31-final-terminal.json SHA256 9d4815c2db4e472b64ce0de48a7e7cb10146a656e46814ddfd532329810aa9ad. Log /private/tmp/cmm-round31-final-nonempty.log. This is receipt verification, not a redundant independent test execution. |
+| Parent-executed history gate | passed | True | cmmmech:stibnite | Reviewer read terminal log and verified its SHA256 e5d1e7a4f33f2e4e4cacc7cf1250be42d30c91e582bb145f3fe2218069e9ff5c. Receipt /private/tmp/cmm-round31-final-terminal.json SHA256 9d4815c2db4e472b64ce0de48a7e7cb10146a656e46814ddfd532329810aa9ad. Log /private/tmp/cmm-round31-final-history.log. This is receipt verification, not a redundant independent test execution. |
+| Parent-executed nonempty gate | passed | True | cmmmech:stibnite | Reviewer read terminal log and verified its SHA256 28173453e8d0bf2d4fc8bf1a392f98d24e15c5c4998de9cb6b4813c91f243899. Receipt /private/tmp/cmm-round31-corrected-terminal.json SHA256 6e03ae753ee8da8038f61210ed78cf58998a758899df189af680dfe96652f418. Log /private/tmp/cmm-round31-corrected-nonempty.log. This is receipt verification, not a redundant independent test execution. |
+| Parent-executed history gate | passed | True | cmmmech:stibnite | Reviewer read terminal log and verified its SHA256 230525627011be86c95ae540fadb75444fc0ff0a4e135c46f2fbaf2c448fcb36. Receipt /private/tmp/cmm-round31-corrected-terminal.json SHA256 6e03ae753ee8da8038f61210ed78cf58998a758899df189af680dfe96652f418. Log /private/tmp/cmm-round31-corrected-history.log. This is receipt verification, not a redundant independent test execution. |
+
+## Scientific And Domain Assessments
+
+### Mineral species and experimental material identity
+
+identity: supported. Targets: cmmmech:stibnite.
+
+Species identity, commercial quartz-containing stibnite substrate and source-specific secondary mineral assignment are grounded separately from antimony element, natural mixed ores and waste.
+
+Criticality is omitted, not declared noncritical. No mineral resource identifier is borrowed from the element. Species-level organism mapping is explicitly distinguished from isolate authentication.
+
+### Living biomass, mineral experiment and causal boundaries
+
+evidence: supported. Targets: cmmmech:stibnite.
+
+The narrow aerobic culture-associated transformation is supported without claiming direct enzymatic mineral attack, universal enhancement or anaerobic mineral activity.
+
+Observed pH-mediated chemistry, unmatched control trajectories, unreported full medium recipe and no specified washed inoculum or initial cell density are explicit. Numeric conditions are taken from mineral section2.3.3 rather than separate soluble-Sb assays.
+
+### Concentration, loading discrepancy and phase fraction
+
+quantity: supported. Targets: cmmmech:stibnite.
+
+The record preserves exact adopted source concentrations and the tenfold solids-loading conflict without deriving a feed-normalized yield; XRD8.25wt% mopungite remains a relative fitted fraction.
+
+Figure4A day4 peak and day13 endpoint are preserved; below-detection is not exactzero. Figure5E/TableS3 alkaline totals are not adopted as exact recovery numbers. Normalized phase shifts and SEM/EDS do not supply an isolated product or closed Sb balance. Duplicate errorbars are sourceSDs.
+
+### Complete source inspection and honest access limits
+
+provenance: supported. Targets: cmmmech:stibnite.
+
+Source identity, acquired article-in-press status, complete supplemental access and current immutable CREATE provenance are accurately stated.
+
+Native inspect preceded judgment; a successor inspection corrected target metadata from invalid kind record to maintained and owner repository to CultureBotAI/CMMMech, with target/source bytes unchanged. Initial inspection is retained outsideGit. Review does not approve the reviewer-authored kaolin mine-waste record.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| primary | https://doi.org/10.1016/j.jhazmat.2019.121561; Complete 10-page university-hosted article-in-press; sections 2.1-2.4,3.1-3.5, all eight figures and Table 1. | supports | Independently read complete text and visually inspected all ten original page renders. Main 2.3.3 supports commercial 200-mesh stibnite, 0.1 g/100 mL CDM, 120-degree-C/20-minute sterilization, 1% v/v culture grown without Sb, aerobic 30-degree-C/150-rpm dark duplicate incubations. Fig4A supports 68 mg/L Sb(V) day4 and about20 mg/L day13, with Sb(III) below detection afterday1; no numerical detection limit. Separate soluble-Sb washed-cell kinetics and anaerobic assays are not mineral conditions. Fig5 shows substantial alkaline abiotic release and unmatched evolving pH. Table1 identifies normalized relative phases, not absolute mass loss. SDS preparation differed between biotic and abiotic residues. Fig6A phase assignment and Fig7 morphology support bounded culture-associated transformation, not a demonstrated enzyme or isolated metal yield. |
+| supplement | https://ars.els-cdn.com/content/image/1-s2.0-S0304389419315158-mmc1.docx; Complete original DOCX OOXML text, Tables S1-S3 and five original embedded images, individually viewed; original print pagination not rendered. | supports | S3 explicitly labels solids1% w/v, tenfold different from main0.1g/100mL; the record preserves this. S4 shows mineral-assay growth curves, not initial inoculum cell density. S5 shows additional abiotic XRD with no author-assigned mopungite; nondetection is not absolute absence. S1/S2 and FiguresS1-S3 concern soluble-antimony contexts, not evidence for anaerobic stibnite transformation. S3 natural5M percentages53.04+56.96 sum110; not adopted. Source pH9.3 stibnite total88mg/L is not transparently reconciled with Figure5E component curves; the record appropriately uses only qualitative alkaline comparison. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September2026 authority PDF, page1 column definitions, page2 terms, original page148 Mopungite and206 Stibnite images. | supports | Stibnite row has Sb2S3, G and1832; headers define G as grandfathered and year as original-description year. Mopungite row gives NaSb5+(OH)6, approved1982-020. Same-day authority PDF was reused from earlier official acquisition, not independently refetched during this review; retained source receipt is explicit. Neither mineral implies an elemental criticality claim. |
+| ncbi | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=34007&amp;mode=Info; Live NCBI species information page independently opened during review; curator retained HTML also read. | supports | NCBITaxon34007 resolves Paracoccus versutus at species rank. It is not XT0.6 strain/genome identity. Primary Fig1 places experimental isolate with the species using1749single-copy orthologs; comparison DSM582 is not the experimental strain designation. |
+| metadata | /private/tmp/cmm-round31-stibnite-research/raw/main-crossref.json; Retained Crossref works response inspected independently. | supports | DOI/title/journal match; volume385 article121561 in2020. The acquired PDF remains labeled article-in-press, accurately disclosed by record. No update-to entry; relation empty, not an independent Crossmark clearance. |
+| notices | Independent web search on 11 October 2026; Exact original DOI correction/retraction query and stibnite XT0.6 anaerobic inhibition2025 query; first returned result sets. | context_only | No affecting correction or retraction identified in checked results. PubMed41313856 abstract of2025 DOI10.1016/j.jhazmat.2025.140532 reports oxygen-dependent opposite dissolution effects; publisher2024 DOI10.1016/j.jhazmat.2024.133731 abstract says direct contact was not required. These strengthen the maintained aerobic and non-enzymatic boundaries. Their complete methods/figures were not independently inspected and no new numeric claim is imported. Third-party indexed2025 fulltext snippets were not treated as complete primary access. |
+| dedup | /private/tmp/cmm-round31-stibnite-review-dedup.json; Independent current-worktree records/research/reviews/history and current stibnite raw directory; hidden/ignored included and symlinks followed. | supports | Exact material/DOI search found only the assigned stibnite scientific target among data/records. Elemental antimony is conceptually separate; natural ore arms are not separate species measurements or pooled evidence. Curator original-checkout/referenced-raw search receipt was read as provenance, not relabeled as this reviewer repeating it. No global binary/OCR absence claim. |
+| history | history/records/stibnite/2026-10-11T191131Z-codex-afa2f3.yaml; Complete canonical CREATE sidecar and distinct inline event. | supports | Actor/model/tool and current timestamp describe actual new record, source inspection and scope limits. CREATE and inline event are separate from this independent review. No earlier history overwritten. |
+
+## Limits And Additional Notes
+
+- Primary evidence is the complete university-hosted article-in-press version, not a newly acquired final publisher PDF.
+- The original0.1g/100mL versus1%w/v solids-loading conflict prevents a verified mass-normalized recovery yield.
+- Initial-pH controls do not isolate all effects of the evolving culture pH; direct mineral-attack enzymes and industrial recovery are not demonstrated.
+- Later oxygen-dependent contradictory scope is known from primary abstracts; complete later methods/figures remain deferred.
+- Review is an exact working-tree byte attestation with preserved base, not proof that these bytes were committed.
+- Full just check completed before the separate kaolin-mine-waste wording correction:308passed,3skipped in108.69s;184records and209histories. The subsequent prose/history-only correction affected no stibnite bytes or code. Parent reran affected named/nonempty/history checks to184records and210histories, all successful; reviewer independently read and hash-verified both terminal receipts and logs.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T191911Z-stibnite-round31-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of stibnite aerobic transformation
+started_at: '2026-10-11T19:14:09.012654Z'
+finished_at: '2026-10-11T19:19:11.744080Z'
+reviewer:
+  identity: Codex /root/round27_packaging
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Record/history/dossier authored by round27_superalloy, not this
+    reviewer. Reviewer authored the separate kaolin-mine-waste record, which is excluded
+    from this scientific verdict. Shared raw acquisitions are disclosed; primary text
+    and original graphics/tables, authority identities and retained controls were
+    inspected independently after native inspect. No stibnite record edit was made.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The exact frozen record accurately represents a mineral species and a bounded
+  aerobic culture-associated antimony transformation. Independent original-source
+  assessment found no actionable record defect. Loading ambiguity, evolving-pH chemical
+  controls, organism scope, relative XRD fractions, non-detection limits and lack
+  of isolated recovery are retained. Required named and cohort gates passed; source
+  limitations remain scientific priorities rather than silently corrected data.
+source:
+  git_revision: 075c1ca032b68162eb8350b7e8d9bfe9530ca143
+  state: working_tree
+  inputs:
+  - path: data/records/stibnite.yaml
+    sha256: 436111a89c641f24b52e1c42881f554b19598701fc946b20fea75ee9a73d5e97
+    role: target
+  - path: history/records/stibnite/2026-10-11T191131Z-codex-afa2f3.yaml
+    sha256: 110c0c125526e955f64629db15081a2558634de06593c61233d1611a2e379064
+    role: context
+  - path: research/sources/round31-stibnite/20261011T191308Z-source-investigation.md
+    sha256: 24e918d6ca507473e5cca2382c8351c1a9cafbe586b8d820df34ec5fb6361c46
+    role: context
+scope:
+  description: Every field of the new stibnite record and its canonical CREATE sidecar,
+    primary and supplementary evidence, numerical claims, material/organism identities
+    and deployment boundaries.
+  selection: One assigned new round31 record curated by another agent.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:stibnite
+  exclusions:
+  - target: Other cohort records and later2024/2025 stibnite studies
+    reason: No independent approval of own kaolin waste science; later studies checked
+      at primary abstract/metadata level only and not curated as new mechanisms. No
+      raw instrumental reanalysis or exhaustive global literature survey.
+targets:
+- target_id: cmmmech:stibnite
+  path: data/records/stibnite.yaml
+  label: Stibnite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/stibnite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named-record validation
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:stibnite
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 uv run --locked
+    cmmmech validate data/records/stibnite.yaml
+  summary: Reviewer executed; terminal0, Checked1record(s);0failed. Exact target hash
+    unchanged.
+- check_id: gate_1
+  name: Parent-executed batch gate
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:stibnite
+  command: just check
+  summary: Reviewer read terminal log and verified its SHA256 c42464b59af6a3aac67f79d03121e06de34f98a4ed6048683c370ac90c3cf639.
+    Receipt /private/tmp/cmm-round31-final-terminal.json SHA256 9d4815c2db4e472b64ce0de48a7e7cb10146a656e46814ddfd532329810aa9ad.
+    Log /private/tmp/cmm-round31-final-batch.log. This is receipt verification, not
+    a redundant independent test execution.
+- check_id: gate_2
+  name: Parent-executed nonempty gate
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:stibnite
+  command: uv run --locked cmmmech validate --require-records
+  summary: Reviewer read terminal log and verified its SHA256 28173453e8d0bf2d4fc8bf1a392f98d24e15c5c4998de9cb6b4813c91f243899.
+    Receipt /private/tmp/cmm-round31-final-terminal.json SHA256 9d4815c2db4e472b64ce0de48a7e7cb10146a656e46814ddfd532329810aa9ad.
+    Log /private/tmp/cmm-round31-final-nonempty.log. This is receipt verification,
+    not a redundant independent test execution.
+- check_id: gate_3
+  name: Parent-executed history gate
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:stibnite
+  command: uv run --locked cmmmech validate-history --base 075c1ca032b68162eb8350b7e8d9bfe9530ca143
+  summary: Reviewer read terminal log and verified its SHA256 e5d1e7a4f33f2e4e4cacc7cf1250be42d30c91e582bb145f3fe2218069e9ff5c.
+    Receipt /private/tmp/cmm-round31-final-terminal.json SHA256 9d4815c2db4e472b64ce0de48a7e7cb10146a656e46814ddfd532329810aa9ad.
+    Log /private/tmp/cmm-round31-final-history.log. This is receipt verification,
+    not a redundant independent test execution.
+- check_id: gate_4
+  name: Parent-executed nonempty gate
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:stibnite
+  command: uv run --locked cmmmech validate --require-records
+  summary: Reviewer read terminal log and verified its SHA256 28173453e8d0bf2d4fc8bf1a392f98d24e15c5c4998de9cb6b4813c91f243899.
+    Receipt /private/tmp/cmm-round31-corrected-terminal.json SHA256 6e03ae753ee8da8038f61210ed78cf58998a758899df189af680dfe96652f418.
+    Log /private/tmp/cmm-round31-corrected-nonempty.log. This is receipt verification,
+    not a redundant independent test execution.
+- check_id: gate_5
+  name: Parent-executed history gate
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:stibnite
+  command: uv run --locked cmmmech validate-history --base 075c1ca032b68162eb8350b7e8d9bfe9530ca143
+  summary: Reviewer read terminal log and verified its SHA256 230525627011be86c95ae540fadb75444fc0ff0a4e135c46f2fbaf2c448fcb36.
+    Receipt /private/tmp/cmm-round31-corrected-terminal.json SHA256 6e03ae753ee8da8038f61210ed78cf58998a758899df189af680dfe96652f418.
+    Log /private/tmp/cmm-round31-corrected-history.log. This is receipt verification,
+    not a redundant independent test execution.
+evidence:
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.jhazmat.2019.121561
+  locator: Complete 10-page university-hosted article-in-press; sections 2.1-2.4,3.1-3.5,
+    all eight figures and Table 1.
+  accessed_at: '2026-10-11T19:19:11.744080Z'
+  support: supports
+  summary: Independently read complete text and visually inspected all ten original
+    page renders. Main 2.3.3 supports commercial 200-mesh stibnite, 0.1 g/100 mL CDM,
+    120-degree-C/20-minute sterilization, 1% v/v culture grown without Sb, aerobic
+    30-degree-C/150-rpm dark duplicate incubations. Fig4A supports 68 mg/L Sb(V) day4
+    and about20 mg/L day13, with Sb(III) below detection afterday1; no numerical detection
+    limit. Separate soluble-Sb washed-cell kinetics and anaerobic assays are not mineral
+    conditions. Fig5 shows substantial alkaline abiotic release and unmatched evolving
+    pH. Table1 identifies normalized relative phases, not absolute mass loss. SDS
+    preparation differed between biotic and abiotic residues. Fig6A phase assignment
+    and Fig7 morphology support bounded culture-associated transformation, not a demonstrated
+    enzyme or isolated metal yield.
+  snapshot_sha256: 2c214467f21b59ee316395aabdea64cefca209adca45dc0fc191b76621ea0451
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S0304389419315158-mmc1.docx
+  locator: Complete original DOCX OOXML text, Tables S1-S3 and five original embedded
+    images, individually viewed; original print pagination not rendered.
+  accessed_at: '2026-10-11T19:19:11.744080Z'
+  support: supports
+  summary: S3 explicitly labels solids1% w/v, tenfold different from main0.1g/100mL;
+    the record preserves this. S4 shows mineral-assay growth curves, not initial inoculum
+    cell density. S5 shows additional abiotic XRD with no author-assigned mopungite;
+    nondetection is not absolute absence. S1/S2 and FiguresS1-S3 concern soluble-antimony
+    contexts, not evidence for anaerobic stibnite transformation. S3 natural5M percentages53.04+56.96
+    sum110; not adopted. Source pH9.3 stibnite total88mg/L is not transparently reconciled
+    with Figure5E component curves; the record appropriately uses only qualitative
+    alkaline comparison.
+  snapshot_sha256: 96e815d8c5f72afa4d70c34623725ec579309db21f62dc02e03cb54defe307d8
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September2026 authority PDF, page1 column definitions, page2 terms, original
+    page148 Mopungite and206 Stibnite images.
+  accessed_at: '2026-10-11T19:19:11.744080Z'
+  support: supports
+  summary: Stibnite row has Sb2S3, G and1832; headers define G as grandfathered and
+    year as original-description year. Mopungite row gives NaSb5+(OH)6, approved1982-020.
+    Same-day authority PDF was reused from earlier official acquisition, not independently
+    refetched during this review; retained source receipt is explicit. Neither mineral
+    implies an elemental criticality claim.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: ncbi
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=34007&mode=Info
+  locator: Live NCBI species information page independently opened during review;
+    curator retained HTML also read.
+  accessed_at: '2026-10-11T19:19:11.744080Z'
+  support: supports
+  summary: NCBITaxon34007 resolves Paracoccus versutus at species rank. It is not
+    XT0.6 strain/genome identity. Primary Fig1 places experimental isolate with the
+    species using1749single-copy orthologs; comparison DSM582 is not the experimental
+    strain designation.
+  snapshot_sha256: 359377ecbd8aa9177fcfdf85234842807df5381e3bd3aa3fb47993f33605bfd8
+- evidence_id: metadata
+  kind: database
+  reference: /private/tmp/cmm-round31-stibnite-research/raw/main-crossref.json
+  locator: Retained Crossref works response inspected independently.
+  accessed_at: '2026-10-11T19:19:11.744080Z'
+  support: supports
+  summary: DOI/title/journal match; volume385 article121561 in2020. The acquired PDF
+    remains labeled article-in-press, accurately disclosed by record. No update-to
+    entry; relation empty, not an independent Crossmark clearance.
+  snapshot_sha256: 86ec305d696649ede301aa7e637ad9f2f3e1e93281359d2e83161d53f8838fe1
+- evidence_id: notices
+  kind: search
+  reference: Independent web search on 11 October 2026
+  locator: Exact original DOI correction/retraction query and stibnite XT0.6 anaerobic
+    inhibition2025 query; first returned result sets.
+  accessed_at: '2026-10-11T19:19:11.744080Z'
+  support: context_only
+  summary: No affecting correction or retraction identified in checked results. PubMed41313856
+    abstract of2025 DOI10.1016/j.jhazmat.2025.140532 reports oxygen-dependent opposite
+    dissolution effects; publisher2024 DOI10.1016/j.jhazmat.2024.133731 abstract says
+    direct contact was not required. These strengthen the maintained aerobic and non-enzymatic
+    boundaries. Their complete methods/figures were not independently inspected and
+    no new numeric claim is imported. Third-party indexed2025 fulltext snippets were
+    not treated as complete primary access.
+  search_scope: 'Queries: "10.1016/j.jhazmat.2019.121561" correction retraction; "stibnite"
+    "XT0.6" anaerobic inhibition 2025. No later result pages; primary metadata and
+    original article independently checked.'
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round31-stibnite-review-dedup.json
+  locator: Independent current-worktree records/research/reviews/history and current
+    stibnite raw directory; hidden/ignored included and symlinks followed.
+  accessed_at: '2026-10-11T19:19:11.744080Z'
+  support: supports
+  summary: Exact material/DOI search found only the assigned stibnite scientific target
+    among data/records. Elemental antimony is conceptually separate; natural ore arms
+    are not separate species measurements or pooled evidence. Curator original-checkout/referenced-raw
+    search receipt was read as provenance, not relabeled as this reviewer repeating
+    it. No global binary/OCR absence claim.
+  snapshot_sha256: edf00ba415837b2d499a15a982025bbc051a1cec85c6932b8e385df0e28b964f
+  search_scope: rg --hidden --no-ignore --follow -l -i stibnite|jhazmat.2019.121561
+    over four current maintained trees and stibnite raw root; exit0,25 paths,stderr
+    empty.
+- evidence_id: history
+  kind: record_content
+  reference: history/records/stibnite/2026-10-11T191131Z-codex-afa2f3.yaml
+  locator: Complete canonical CREATE sidecar and distinct inline event.
+  accessed_at: '2026-10-11T19:19:11.744080Z'
+  support: supports
+  summary: Actor/model/tool and current timestamp describe actual new record, source
+    inspection and scope limits. CREATE and inline event are separate from this independent
+    review. No earlier history overwritten.
+  snapshot_sha256: 110c0c125526e955f64629db15081a2558634de06593c61233d1611a2e379064
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral species and experimental material identity
+  outcome: supported
+  summary: Species identity, commercial quartz-containing stibnite substrate and source-specific
+    secondary mineral assignment are grounded separately from antimony element, natural
+    mixed ores and waste.
+  target_ids:
+  - cmmmech:stibnite
+  evidence_ids:
+  - ima
+  - primary
+  - dedup
+  details: Criticality is omitted, not declared noncritical. No mineral resource identifier
+    is borrowed from the element. Species-level organism mapping is explicitly distinguished
+    from isolate authentication.
+- assessment_id: mechanism
+  area: evidence
+  topic: Living biomass, mineral experiment and causal boundaries
+  outcome: supported
+  summary: The narrow aerobic culture-associated transformation is supported without
+    claiming direct enzymatic mineral attack, universal enhancement or anaerobic mineral
+    activity.
+  target_ids:
+  - cmmmech:stibnite
+  evidence_ids:
+  - primary
+  - supplement
+  - ncbi
+  - notices
+  details: Observed pH-mediated chemistry, unmatched control trajectories, unreported
+    full medium recipe and no specified washed inoculum or initial cell density are
+    explicit. Numeric conditions are taken from mineral section2.3.3 rather than separate
+    soluble-Sb assays.
+- assessment_id: quantity
+  area: quantity
+  topic: Concentration, loading discrepancy and phase fraction
+  outcome: supported
+  summary: The record preserves exact adopted source concentrations and the tenfold
+    solids-loading conflict without deriving a feed-normalized yield; XRD8.25wt% mopungite
+    remains a relative fitted fraction.
+  target_ids:
+  - cmmmech:stibnite
+  evidence_ids:
+  - primary
+  - supplement
+  details: Figure4A day4 peak and day13 endpoint are preserved; below-detection is
+    not exactzero. Figure5E/TableS3 alkaline totals are not adopted as exact recovery
+    numbers. Normalized phase shifts and SEM/EDS do not supply an isolated product
+    or closed Sb balance. Duplicate errorbars are sourceSDs.
+- assessment_id: provenance
+  area: provenance
+  topic: Complete source inspection and honest access limits
+  outcome: supported
+  summary: Source identity, acquired article-in-press status, complete supplemental
+    access and current immutable CREATE provenance are accurately stated.
+  target_ids:
+  - cmmmech:stibnite
+  evidence_ids:
+  - metadata
+  - history
+  - primary
+  - supplement
+  details: Native inspect preceded judgment; a successor inspection corrected target
+    metadata from invalid kind record to maintained and owner repository to CultureBotAI/CMMMech,
+    with target/source bytes unchanged. Initial inspection is retained outsideGit.
+    Review does not approve the reviewer-authored kaolin mine-waste record.
+findings: []
+actions: []
+limitations:
+- Primary evidence is the complete university-hosted article-in-press version, not
+  a newly acquired final publisher PDF.
+- The original0.1g/100mL versus1%w/v solids-loading conflict prevents a verified mass-normalized
+  recovery yield.
+- Initial-pH controls do not isolate all effects of the evolving culture pH; direct
+  mineral-attack enzymes and industrial recovery are not demonstrated.
+- Later oxygen-dependent contradictory scope is known from primary abstracts; complete
+  later methods/figures remain deferred.
+- Review is an exact working-tree byte attestation with preserved base, not proof
+  that these bytes were committed.
+tags:
+- round31
+- independent
+- stibnite
+- primary-evidence
+notes:
+- Full just check completed before the separate kaolin-mine-waste wording correction:308passed,3skipped
+  in108.69s;184records and209histories. The subsequent prose/history-only correction
+  affected no stibnite bytes or code. Parent reran affected named/nonempty/history
+  checks to184records and210histories, all successful; reviewer independently read
+  and hash-verified both terminal receipts and logs.
+```
