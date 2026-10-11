@@ -142,6 +142,12 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Olivine group](data/records/olivine-group.yaml) | Bacterial culture and filtered-biolixiviant comparisons | Natural group feeds remain distinct from pure forsterite; mixed solids and denominator conflicts constrain yields |
 | [Biotite mica series](data/records/biotite.yaml) | C4-10 culture-associated iron and silicon mobilization | Unresolved member species, unmatched acidity and expression correlations limit causal claims |
 | [Reverse osmosis concentrate](data/records/reverse-osmosis-concentrate.yaml) | Sludge-associated precipitation in river-derived concentrate | Control limitations and tentative solid phases; downstream recovery is a separate process |
+| [Dunite](data/records/dunite.yaml) | Bacterial biolixiviant leaching of variably altered rock feeds | Acid-matched and cell-free nulls; modeled carbon demand is not measured net sequestration |
+| [Hematite](data/records/hematite.yaml) | Priestia culture assays with a hematite-labelled feed | Bulk oxide composition does not establish phase purity or a pure-mineral release yield |
+| [Potassium feldspar](data/records/potassium-feldspar.yaml) | Priestia culture assays with a potassium-feldspar-labelled feed | Informal mineral family; no particular member species or causal gene mechanism assigned |
+| [Spent hydrodesulfurization catalyst](data/records/spent-hydrodesulfurization-catalyst.yaml) | Acidophile leaching of raw spent diesel-HDS catalyst | Chemical controls limit microbial advantage; dissolved metals are not isolated products |
+| [Electrolytic manganese metal](data/records/electrolytic-manganese-metal.yaml) | Manufactured commodity identity and producer process descriptions | Conflicting grade specifications; no universal battery qualification or microbial production claim |
+| [Electrolytic manganese dioxide](data/records/electrolytic-manganese-dioxide.yaml) | Manufactured commodity identity and application-specific product context | Distinct from natural mineral species; no inherited criticality or microbial production claim |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -166,7 +172,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [fifteenth expansion reviews](research/ingests/round15-20261011-publication.md),
 [sixteenth expansion reviews](research/ingests/round16-20261011-publication.md),
 [seventeenth expansion reviews](research/ingests/round17-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round17-frontier-20261011.md), and
+[eighteenth expansion reviews](research/ingests/round18-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round18-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

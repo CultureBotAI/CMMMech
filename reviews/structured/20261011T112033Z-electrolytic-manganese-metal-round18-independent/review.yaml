@@ -1,0 +1,338 @@
+schema_version: 1.0.0
+review_id: 20261011T112033Z-electrolytic-manganese-metal-round18-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Electrolytic manganese metal commodity
+started_at: '2026-10-11T11:17:49.121121Z'
+finished_at: '2026-10-11T11:20:33.470984Z'
+reviewer:
+  identity: Codex /root/round18_dunite
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root agent authored the product record and history. This separate
+    reviewer captured canonical targets before judgment, independently read primary
+    manufacturer documents and USGS pages, checked image/table evidence and exact
+    hashes, and made no target edits. Shared worktree and curator acquisition reuse
+    are disclosed.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The manufactured product identity and explicit limits are evidence-backed.
+  No actionable blocker, major, minor or informational finding was identified in this
+  scoped review; unresolved grade/source limits are already represented.
+source:
+  git_revision: 26cb0688effb2f71e4a570c416f6f43ff858c5ab
+  state: working_tree
+  inputs:
+  - path: data/records/electrolytic-manganese-metal.yaml
+    sha256: 93983902a44daf4ec939bc6603ff6761a3b8954500c2903b40f5983577ab151e
+    role: target
+  - path: history/records/electrolytic-manganese-metal/2026-10-11T111712Z-codex-da1950.yaml
+    sha256: 5e9fe5e7c0da28f342e99c9bf45cc55bc32ba50bb426e8a740249eba2099d2eb
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Every scientific, identity, source and history field of one new commodity-only
+    maintained record.
+  selection: Assigned final frozen product record within round18; direct evidence
+    review, not a sample of all manganese materials.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:electrolytic-manganese-metal
+  exclusions:
+  - target: Other manganese records, production audits and microbial mechanism discovery
+    reason: Nearby materials contextualize identity only. No new microbial mechanism,
+      current producer certification or universal grade acceptance is assessed.
+targets:
+- target_id: cmmmech:electrolytic-manganese-metal
+  path: data/records/electrolytic-manganese-metal.yaml
+  label: electrolytic-manganese-metal
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/electrolytic-manganese-metal.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named-record validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/electrolytic-manganese-metal.yaml data/records/electrolytic-manganese-dioxide.yaml
+  status: passed
+  required: true
+  target_ids:
+  - cmmmech:electrolytic-manganese-metal
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Reviewer execution completed with Checked 2 records; 0 failed. Actual terminal
+    result and named-validation.log inspected.
+  evidence_ids:
+  - gates
+- check_id: batch
+  name: Native full checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed; reviewer read completed receipt and actual log. /private/tmp/cmm-round
+    18-final-batch.log: uv run --locked --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 86.49s (0:01:26)
+
+    Checked 138 record(s); 0 failed.
+
+    Checked 154 history record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:electrolytic-manganese-metal
+  evidence_ids:
+  - gates
+- check_id: require
+  name: Required corpus
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed; reviewer read completed receipt and actual log. /private/tmp/cmm-round
+    18-final-require.log: Checked 138 record(s); 0 failed.
+
+    '
+  target_ids:
+  - cmmmech:electrolytic-manganese-metal
+  evidence_ids:
+  - gates
+- check_id: history
+  name: Trusted-base history
+  command: uv run --locked cmmmech validate-history --base 26cb0688effb2f71e4a570c416f6f43ff858c5ab
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed; reviewer read completed receipt and actual log. /private/tmp/cmm-round
+    18-final-history.log: Checked 154 history record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:electrolytic-manganese-metal
+  evidence_ids:
+  - gates
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/electrolytic-manganese-metal.yaml
+  locator: Complete record and linked CREATE sidecar
+  accessed_at: '2026-10-11T11:20:33.470984Z'
+  support: supports
+  summary: All fields and actor/timestamp/target linkage read independently; canonical
+    inspection precedes judgment, and current record/schema/history bytes match captured
+    hashes. Maintained product scope has no asserted external material/taxon CURIE,
+    criticality designation, or microbial mechanism.
+  snapshot_sha256: 93983902a44daf4ec939bc6603ff6761a3b8954500c2903b40f5983577ab151e
+- evidence_id: process
+  kind: primary_source
+  reference: https://www.mmc.co.za/what-we-do/electrolytic-manganese-metal-emm-refinery
+  locator: Refining process steps 4-8 and product-preparation text
+  accessed_at: '2026-10-11T11:20:33.470984Z'
+  support: supports
+  summary: Independently read complete retained manufacturer HTML. Purification precedes
+    electrolytic cells, cathode deposition, stripping, washing/drying/degassing and
+    optional powder preparation. The live web tool open failed; the curator-acquired
+    complete HTML was independently parsed and its recorded hash verified. No microbial
+    step is inferred.
+  snapshot_sha256: 63a02ccc1d3c32fd025c5ba0a0e976340a650f7c08ca0e2891b91595e41d34d7
+- evidence_id: products
+  kind: primary_source
+  reference: https://www.mmc.co.za/products/electrolytic-manganese-metal-emm
+  locator: Low Hydrogen Flake; Low Oxygen Flake; Stabilised/Unstabilised Powder; Mn-Al
+    Briquettes
+  accessed_at: '2026-10-11T11:20:33.470984Z'
+  support: supports
+  summary: Separate supplied flake/powder products and mixed Mn-Al briquettes support
+    the chosen family boundary. The LO page states oxygen no more than 0.1%; current
+    certification is not inferred from a dated link.
+  snapshot_sha256: 7ee2989e9b54714e35e23c20c9196e86c47bebc19ad6a33e95fdb78d815e0054
+- evidence_id: grade
+  kind: primary_source
+  reference: https://www.mmc.co.za/images/downloads/electrolytic_manganese_metal_low_oxygen_flake_specification.pdf
+  locator: One-page Grade ID 40, revision 000; Mn/Mn(Met) footnotes, oxygen row and
+    21 August 2017 date
+  accessed_at: '2026-10-11T11:20:33.470984Z'
+  support: supports
+  summary: Visually inspected original PDF rendering and read text. Total manganese
+    and metallic-manganese calculation have different bases; oxygen maximum 0.15%
+    differs from webpage 0.1%. The record explicitly retains source/version uncertainty
+    rather than inventing universal grade qualification.
+  snapshot_sha256: 0f57d0aa51ab5d79262bc9e4f5281f9554a8902312012aa04ed0eefc027d77a4
+- evidence_id: tosoh
+  kind: primary_source
+  reference: https://www.tosoh.co.jp/product/functionality/mangan_electrolytic_metal.html
+  locator: Japanese Features and Applications sections
+  accessed_at: '2026-10-11T11:20:33.470984Z'
+  support: supports
+  summary: Independently read Japanese manufacturer text. The stated manganese product
+    and stainless-steel/aluminium-alloy additive/deoxidation/desulfurization uses
+    support product context, without turning a producer 99.9% statement into a universal
+    threshold.
+  snapshot_sha256: 754b9d455d37a1111a3240abacdea6ff6836e360c9f3fc382c0a1f932a30289c
+- evidence_id: usgs
+  kind: authority
+  reference: https://pubs.usgs.gov/myb/vol1/2020/myb1-2020-manga.pdf
+  locator: Cover; printed 47.1 and 47.6 Table 3, corresponding PDF 2/PDF 7
+  accessed_at: '2026-10-11T11:20:33.470984Z'
+  support: supports
+  summary: Cover dates the 2020 Minerals Yearbook advance release to September 2024.
+    Visually inspected printed 47.1 historical electrolytic-metal context and Table
+    3 distinction between chemically and electrolytically manufactured synthetic MnO2.
+    Historical statistics are not presented as current market totals.
+  snapshot_sha256: aea1a9012b644f05c73ada993032ffb8f576e8b007a885d799492bbe22cae438
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round18-products-review/search.json
+  locator: Independent exact queries, live page outcomes, dedup.log and nearby Mn/pyrolusite/sulfate
+    reads
+  accessed_at: '2026-10-11T11:20:33.470984Z'
+  support: context_only
+  summary: Bounded searches and direct producer-document comparison support identity
+    distinctions and expose the already-retained LO oxygen difference. No affecting
+    identity correction surfaced in these checks; no exhaustive source-change or literature
+    claim is made.
+  snapshot_sha256: 58d4adc9bbc79d696346ab169495001d134f541ab4ab9289ece982166e48af13
+  search_scope: Hidden and ignored files included with followed links across data/research/reviews/history/.claude
+    and named products raw directory. First web result sets only. Nearby records and
+    prior product proposals checked; no machine-wide or global exhaustion claim.
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round18-gate-receipts.json
+  locator: Terminal finished_at receipt and final-batch/final-require/final-history
+    logs; independent named-validation.log
+  accessed_at: '2026-10-11T11:20:33.470984Z'
+  support: supports
+  summary: Reviewer ran named validation to terminal exit 0 for both products. Parent
+    ran final native suite, nonempty corpus and trusted-base history to terminal exit
+    0; reviewer independently inspected completed receipt/logs.308 passed, 3 skipped;
+    138 records and 154 histories. Current targets still match canonical inspected
+    hashes.
+  snapshot_sha256: f77f5decb184fd5e6544b9d89c9699a95621e2a83749524526f6283fb5be2f66
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Manufactured commodity and material-form distinction
+  outcome: supported
+  summary: Electrolytically deposited metal supplied as a manufactured flake/powder
+    family; distinct from elemental Mn abstraction, ores, sulfate, MnO2 and mixed
+    Mn-Al briquettes.
+  target_ids:
+  - cmmmech:electrolytic-manganese-metal
+  evidence_ids:
+  - record
+  - process
+  - products
+  - grade
+  - tosoh
+  - usgs
+  dimensions:
+  - name: material_kind
+    value: commodity
+    definition: A manufactured product family defined by electrolysis and material
+      form, not the element or a natural mineral species.
+    evidence_ids:
+    - record
+    - process
+    - products
+    - grade
+    - tosoh
+    - usgs
+- assessment_id: evidence_scope
+  area: scope
+  topic: Grade, criticality, microbial and deployment boundaries
+  outcome: supported
+  summary: The record supports identity and stated uses without inheriting elemental
+    criticality, microbial production, universal grade limits or deployment claims.
+    Producer-specific specifications remain contextual.
+  target_ids:
+  - cmmmech:electrolytic-manganese-metal
+  evidence_ids:
+  - record
+  - process
+  - products
+  - grade
+  - tosoh
+  - usgs
+  dimensions:
+  - name: criticality_scope
+    value: No designation asserted
+    definition: Jurisdiction/list/edition fields are omitted rather than inferred
+      from manganese element or battery use.
+    evidence_ids:
+    - record
+  - name: mechanism_scope
+    value: No microbial mechanism asserted
+    definition: Organism, biomass, assay and recovery fields are intentionally absent
+      because these sources establish product identity and ordinary manufacturing
+      context.
+    evidence_ids:
+    - record
+- assessment_id: uncertainty
+  area: quantity
+  topic: Source assays, versions and numerical qualification
+  outcome: supported
+  summary: The undated producer webpage and dated 2017 LO sheet disagree on oxygen
+    limits. This review accepts product identity, not universal numerical purity,
+    grade qualification, present certification, or production-performance auditing.
+  target_ids:
+  - cmmmech:electrolytic-manganese-metal
+  evidence_ids:
+  - process
+  - products
+  - grade
+  - tosoh
+  - usgs
+- assessment_id: history
+  area: provenance
+  topic: Exact reviewed revision, working state and canonical CREATE
+  outcome: supported
+  summary: Native inline CREATE event and linked genuine GPT-6/codex sidecar identify
+    the maintained record. Review source is the trusted main base with exact working-tree
+    hashes; structural, corpus and append-only history checks passed.
+  target_ids:
+  - cmmmech:electrolytic-manganese-metal
+  evidence_ids:
+  - record
+  - gates
+findings: []
+actions: []
+limitations:
+- The undated producer webpage and dated 2017 LO sheet disagree on oxygen limits.
+  This review accepts product identity, not universal numerical purity, grade qualification,
+  present certification, or production-performance auditing.
+- Manufacturer statements and historical USGS context establish identity/use scope,
+  not independent product-batch certification or exhaustive market coverage.
+- Offline validators establish structural integrity rather than scientific truth;
+  no newly discovered mechanism was curated in this review.
+notes:
+- No record edits or curation-history sessions were created by the reviewer. No earlier
+  saved finding was silently retired.
+tags:
+- round18
+- independent
+- commodity
+- identity-only

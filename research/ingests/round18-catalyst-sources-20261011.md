@@ -1,0 +1,72 @@
+# Round 18 catalyst evidence and curation handoff
+
+## Scope and provenance
+
+- UTC: 2026-10-11T11:15:06.054414+00:00; curator Codex (GPT-6; codex).
+- Worktree `/private/tmp/CMMMech-expansion-round18-20261011`, branch `curate/cmm-expansion-round18-20261011`, trusted base `26cb0688effb2f71e4a570c416f6f43ff858c5ab`.
+- Continued the actual unresolved round 17 catalyst frontier. No jurisdiction or criticality designation is asserted for the waste feed. Species identity is distinct from strain provenance; catalyst processes and constituent metals remain distinct.
+- Read the add-record/discover-sources skills, source guide/template, working guide, README, record contract, schema, validator, validation tests, the two existing catalyst records and prior catalyst/frontier reports.
+- Prewrite bounded dedup used `rg --no-ignore --hidden --follow` through `data`, `research`, `reviews`, `.claude` and referenced raw directories `/private/tmp/cmm-round14-secondary-raw` and this round's raw directory. Hidden and ignored files were included, relevant links followed. Existing FCC/hydrocracking records and the known uncurated DOI leads were found; no HDS root was found within that boundary. The proposed `/private/tmp/cmm-round17-catalyst-raw` did not exist at inspection (explicit path check); no machine-wide absence is claimed. No unrelated home/temp directories were searched.
+- Root reported baseline terminal exit 0 before author clearance: 308 passed, 3 skipped, 101.63 s; 132 records and 148 histories. New record authoring began only after that clearance. This dossier is research/curation provenance, not the independent record review.
+
+## Selection and accepted record
+
+[data/records/spent-hydrodesulfurization-catalyst.yaml](../../data/records/spent-hydrodesulfurization-catalyst.yaml) adds **spent hydrodesulfurization catalyst**, grounded in an actual Brazilian diesel-treatment feed. A full open primary paper gives process origin, preparation, culture and leach arms, methods, controls and analytical fractions. It strengthens corpus coverage by representing raw HDS catalyst and chemical-control counterevidence, rather than inheriting FCC or decoked hydrocracking behavior. No resource-level external ID was forced onto the record.
+
+Ferreira et al. (2017), [DOI 10.1590/0104-6632.20170341s20150208](https://doi.org/10.1590/0104-6632.20170341s20150208), is the main experiment. The complete eleven-page [SciELO PDF](https://www.scielo.br/j/bjce/a/7jZNt7YwBH5jfYhS5V9YTbg/?format=pdf&lang=en) was downloaded and read. Tables 1-4 and Figures 1-4 were inspected; Figures 1-4 and Tables 2-4 were also viewed in rendered page images. The [full HTML](https://new.scielo.br/j/bjce/a/7jZNt7YwBH5jfYhS5V9YTbg/?ilang=pt_BR&lang=en) provided publication history and its CC BY 4.0 license link. Submission April 2015 and acceptance October 2015 do not change publication in the January-March 2017 issue. The DOI resolves to that title/author set. No supplementary artifact was linked in the inspected article; a targeted supplement/data search found no separate inspected data deposit. That is a bounded access result, not proof that author data do not exist.
+
+### Evidence actually checked
+
+- Methods pp. 120-122: 200 kg raw spent catalyst from a diesel-treatment unit at a Brazilian heavy-oil refinery; subsampling, no leach-feed grinding/solvent wash/decoking. Analytical acid digestion, organic extraction, and microscopy drying/coating are distinct characterization operations.
+- FG-01 provenance: a uranium-mine isolate from Paraná, supplied by the State University of São Paulo. [NCBI Taxonomy 930](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info) was opened and identifies *Acidithiobacillus thiooxidans* at species rank. No experimentally verified FG-01 accession is supplied by this paper; the species identifier is not a strain identifier.
+- Culture/assay distinctions: four-day preculture at 30 ±1°C, 150 rpm; 100 mL medium in 500 mL flasks; nominal starting 10^5 cells/mL; starting pH 2; general leach temperature 29 ±1°C. Direct 5 g/L catalyst culture arms differed in sulfur addition; Table 2 labels 30°C and reports days 1/3/7. Two-stage culture preceded catalyst addition; medium was diluted after acidity reached about 40 g/L sulfuric-acid equivalent. The 2017 method never says cells were removed before this second stage. The 0.22 µm filtration applies to sampled analytical aliquots.
+- Outcome: filtered-liquid AAS and source-defined feed-normalized percentages; no purified metal recovery. At least three replicate sacrificial flasks were used. Autoclaved medium controls and commercial-acid controls are different comparators. Table 3 gives neither an explicit endpoint time nor final acid concentration; neither is invented.
+- Table 2 counterevidence: at day 7, Mo chemical-acid release 65 ±5% exceeds MCC 39 ±4% and MCSC 37 ±3%. The text's general equivalence statement cannot erase that difference.
+- Table 3: 5 g/L Mo biological 55 ±6%, chemical 54 ±4%; 50 g/L 39 ±3% versus 41 ±4%. Corresponding Tukey letters indicate no detected difference. Al and V comparisons also do not establish a microbial advantage. Co/Cu/Ni remain low. No biosurfactant measurement or enzyme intervention supports a unique molecular cause.
+- Unresolved inconsistencies: Table 3 50 g/L Al 24 ±2% versus abstract26%; conclusion Ni below5% versus Table2 5 ±2%; Figure2 narrative calls 3.1×10^6 cells/mL nearly unchanged despite caption start10^5, while Figure3 begins nearer10^6. The p.126 mass-recovery sentence has impossible g/L values relative to feed metal loading and repeats Mo. Do not repair those values silently, pool them, or call 50 g/L a verified optimum.
+- SEM/EDS Figure4/Table4 are surface observations. Oxygen enrichment alone does not identify organic deposition or a specific product, and local EDS is not a bulk metal balance. Feed origin is industrial; the experiments are laboratory scale. Proposed sustainability/cost benefits were not measured deployment.
+- No structured `observations` are created: percentages and undated concentration tables do not meet the current exact-cell/date contract.
+
+## Related evidence, duplicates and deferred candidates
+
+| Candidate | Access this round | Decision and concrete next step |
+|---|---|---|
+| Ferreira et al., issue2015, DOI10.5419/bjpg2015-0014 | Publisher metadata/abstract; complete author-uploaded text and figure captions through ResearchGate; publisher direct download failed DNS, web timeout; ResearchGate direct download403 and figure links failed | `context_only` in new HDS record. Source reports 27.5 g/L, 20 g/L acid and four-day contact, distinct from2017 arms. Abstract Al/Mo percentages disagree with body; filtered-broth preparation conflicts with attached-cell SEM interpretation. Obtain original full-resolution figures and clarify discrepancies before accepting additional yields. Shared strain/feed composition is not independent replication. |
+| Pathak, Srichandan and Kim2015, DOI10.2320/matertrans.M2015104 | Complete nine-page publisher PDF read, Figures3/4 viewed | Keep research-only pending exact process origin. Raw South Korean refinery catalyst is specified, but hydrodesulfurization or another precise unit is not identified in its methods. Do not misassign its outcomes to the HDS/FCC/hydrocracking roots. |
+| Gholami et al.2011, DOI10.1016/j.hydromet.2010.11.011 | Fresh search and primary publisher excerpts only | Main-text gap remains. Publisher methods excerpt now explicitly says Iranian naphtha hydrotreating unit and UOP S-12 Co/Mo/Al2O3. This is useful process evidence, but full controls/figures still required before microbial curation. Do not import abstract yields. |
+| Das et al.2019, DOI10.1016/j.btre.2019.e00349, PMC6551381 | Previously acquired round14 XML inventory/title/IDs/hash rechecked, not a fresh download or complete scientific re-review | Existing FCC identity; independent fungal Al mechanism remains an extension candidate, not a new resource. Read full XML/methods/control arms and figures before an EDIT and successor review. |
+| Bosio, Viera and Donati2008, DOI10.1016/j.jhazmat.2007.10.095, PMID18079054 | Primary publisher abstract/excerpts and PubMed metadata | Newly followed lead for spent vegetable-oil hydrogenation nickel catalyst, potentially distinct from refinery waste. Acquire complete leaching and sulfide-precipitation methods, biomass/provenance, phase analysis and balances. Publisher/RG routes are not a full-text copy; targeted repository search found related papers/thesis, not a verified copy of this paper. No mechanism accepted. |
+
+### Pathak2015 detail
+
+[Publisher landing](https://www.jstage.jst.go.jp/article/matertrans/56/8/56_M2015104/_article/-char/en) lists August2015 issue, July25 release and no supplements. Its [PDF](https://www.jstage.jst.go.jp/article/matertrans/56/8/56_M2015104/_pdf) identifies raw oily granules, 2000-5000 µm, not a process-specific catalyst identity. Pure *A. ferrooxidans* and *A. thiooxidans* came from KRIBB without strain accessions. Two-step leach media retained cells after sulfur removal; cultures are not cell-free filtrates. Three reactor arms used 1%w/v catalyst, 1L volume in2.5L baffled vessels, initial pH1.1±0.05, 35°C,280rpm, air1L/min,168h. Fe/S-supplemented IEM and sulfur 0K microbial media differ from acidified-water control beyond initialpH. Whatman42 filtrate ICP-OES and aqua-regia feed digestion establish operational fractions. Paper reports very similar chemical and biological leaching; BCR partition/risk indices do not prove safe landfill disposal. No explicit replicated-reactor count or figure uncertainty was located in the full paper. This usable evidence remains deferred at identity mapping, not lost behind an access claim.
+
+## Search and acquisition log
+
+All queries used the live web search tool on2026-10-11UTC, first returned result set only, no pagination and no year/domain restriction except the explicit NCBI query. These are bounded searches; no broad corpus exhaustion claim is made.
+
+- `"10.5419/bjpg2015-0014" pdf`
+- `"10.2320/matertrans.M2015104" correction retraction`
+- `"10.5419/bjpg2015-0014" correction retraction`
+- `"Bioleaching of Metals From a Diesel Hydrodesulfurization" pdf`
+- `site:ncbi.nlm.nih.gov/Taxonomy "Acidithiobacillus thiooxidans" "930"`
+- `"10.1590/0104-6632.20170341s20150208" correction retraction erratum`
+- `"FG-01" "thiooxidans" accession culture`
+- `"10.1016/j.hydromet.2010.11.011" full text`
+- `"spent nickel catalyst" "Bosio" 2008 bioleaching`
+- `"10.1590/0104-6632.20170341s20150208" supplementary dataset`
+- `"Integrated bacterial process" "pdf"`
+- `"10.1016/j.jhazmat.2007.10.095" repository OR sedici OR conicet`
+
+Exact direct acquisition attempts, timestamps, response types, final URLs and checksums are in the paired JSON. Successful PDF files were content-checked and rendered outside Git at `/private/tmp/cmm-round18-catalyst-raw`. Both PDFs remain reading copies outside the committed repository. Pathak carries ©2015 Japan Institute of Metals and Materials, with free access but no established reuse license; Ferreira2017 has an explicit SciELO Creative Commons Attribution4.0 link. Ferreira2015 author-hosted page says copyright may apply. No raw copyrighted paper is redistributed here.
+
+Correction/retraction searches used all three inspected paper DOIs with the literal terms above and publisher pages. No correction/retraction notice was found in that bounded returned set or on the inspected landing pages; neither a systematic registry audit nor a guarantee of absence is claimed. Counterevidence within the primary papers was inspected directly rather than relying on review summaries.
+
+## Handoff, checks and unresolved work
+
+1. Independently review the new HDS record against the complete2017 PDF, recorded2015 context, taxon authority and source discrepancies. Current exact source file hashes are in JSON. Acceptance needs that scientific review plus root's full batch gates.
+2. Resolve Pathak's exact refinery unit/material identity before mapping its reactor evidence; a generic overlapping record is not created merely to increase count.
+3. Acquire Gholami full text and Bosio2008 full text; assess whether each feed is a distinct root or evidence within HDS/hydrotreating/hydrogenation scopes.
+4. Re-review Das2019 full evidence for an existing FCC update. Full-resolution Ferreira2015 figures and possible original assay records would clarify conflicts, but current limited context remains honest without them.
+
+Canonical CREATE: `history/records/spent-hydrodesulfurization-catalyst/2026-10-11T111316Z-codex-824afe.yaml`. The sidecar records actual GPT-6/codex work; no committed history was rewritten. Native inline CREATE is separate. Individual command `UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate data/records/spent-hydrodesulfurization-catalyst.yaml` returned **exit0, 1 record checked, 0 failed** at11:13UTC. No tests/schema/validator/governance changes. The parent owns independent reviews, batch gates, publication and queue processing; this source dossier does not claim those are complete.
