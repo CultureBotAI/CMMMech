@@ -4,8 +4,8 @@ material_kind: secondary_resource
 description: Waste printed circuit boards are end-of-life conductive circuit layers on insulating substrates,
   often retaining mounted electronic components and solders. They are a heterogeneous secondary feed generated
   by equipment use and disposal, distinct from whole electronic waste, individual removed tantalum capacitors,
-  elemental copper and a mineral species. The two curated studies concern a waste-computer board feed
-  and mixed boards supplied by a recycler; their compositions and outcomes do not define every board type.
+  elemental copper and a mineral species. The curated studies concern waste-computer boards, recycler-supplied mixed boards and ground
+  mobile-phone board material; their compositions and outcomes do not define every board type.
   No criticality designation is inherited from constituent metals.
 mechanisms:
 - id: inoculated_computer_board_leaching
@@ -106,6 +106,76 @@ mechanisms:
       because acid, fresh ferric liquor and liquid replacements were used. Solvent extraction and electrowinning
       are proposed downstream operations, not demonstrated isolated-product recovery or industrial deployment
       in this study.
+- id: staged_mobile_phone_ferric_regeneration
+  name: Ferric regeneration with mobile-phone PCB leach liquor in separate laboratory stages
+  process: bioleaching
+  microbial: true
+  description: A living acidophilic community regenerated ferric lixiviant from liquor produced by chemical
+    ferric leaching of ground end-of-life mobile-phone board material. Leaching, biooxidation and solvent-extraction
+    stages were tested, but downstream electrowinning used a synthetic solution. The work supports stage-specific
+    laboratory feasibility rather than a demonstrated continuously closed loop or copper-metal recovery
+    from the actual boards.
+  context: Iglesias-González et al. (2024), Methods 2.1–2.2, used end-of-life mobile phones after removing
+    casing and battery, milled to a stated target of 800–2000 micrometres and subsampled with a rotary
+    divider. The paired dataset README instead says 2–7 mm, leaving particle-size provenance unresolved.
+    Nine starting-feed Cu assays averaged 35.71 wt% with standard deviation 4.16 percentage points. Continuous
+    chemical leaching ran for 96 hours at 60 degrees C and 800 rpm, with reported six-hour hydraulic retention
+    time, approximately 135 mL/h liquid feed, 40 g/L biogenic Fe(III), pH 1 and 5 g/L Cu added as commercial
+    copper sulfate to simulate recycle. Effluent was collected for subsequent filtration and biooxidation.
+    The flooded packed-bed bioreactor contained a living Riotinto-mine community reported mainly as Acidithiobacillus
+    ferrooxidans and Leptospirillum ferrooxidans; strains and member-specific roles were not resolved.
+    Reported inoculum density was 9 × 10^7 cells/mL; 7 mm siliceous support, 0.55 L working volume, 31
+    degrees C, 100 mL/h liquid and 750 mL/min air were used, with liquid flow reduced to 37 mL/h at the
+    last reported endpoint. Metals were analyzed by atomic absorption; the dataset README describes dichromate
+    titration for Fe(II) in batch leaching. Matched sterile biooxidation columns and replicated process
+    runs are not reported. No community CURIE, industrial operation or isolated actual-board copper product
+    is asserted.
+  evidence:
+  - source_ref: iglesias2024
+    supports: support
+    explanation: Results 3.3 and Table 6 report inlet Fe(II) near 4.6–4.8 g/L with 6.8 g/L Cu and outlet
+      Fe(II) of 0, 0.04 and 0.05 g/L at 24, 45 and 67 hours. At 95 hours, inlet Fe(II) 9.29 g/L and Cu
+      10.45 g/L accompanied outlet Fe(II) 2.37 g/L; outlet Fe(II) was reported as zero at 168 hours only
+      after reducing liquid flow to 37 mL/h. These source-reported assay values support conditional operation
+      of the living column, not absence of inhibition at every loading or exclusive causal activity of
+      either named species.
+  - source_ref: iglesias2024
+    supports: partial
+    explanation: Results 3.2, Figure 4 and Table 5 report high Cu extraction during ferric leaching and
+      an overall estimate of 99% based on feed and residual-solid assays. Table 5 gives 135.01 g feed
+      at 35.71% Cu, 21.93 g filtered solid at 0.66% Cu and 53 g retained solid at 0.31% Cu. The dataset
+      identifies acid washing of the retained solid before analysis, so the reported estimate is not adopted
+      as an independently closed reactor-only Cu mass balance. Added inlet copper, feed heterogeneity,
+      sampled fractions and possible wash losses matter. Ferric dissolution in the 60-degree reactor is
+      chemical; microbial involvement is regeneration in the separate 31-degree column.
+  - source_ref: iglesias2024dataset
+    supports: partial
+    explanation: Data.xlsx, composition B21 and D23:D24, records 1.5% HCl washing of retained reactor
+      solid and a mass change from 62.03 to 53 g. The README particle-size range differs from Methods
+      2.1. Batch C2 labels 1.2 L whereas the paper describes a 1 L batch; model settings are not treated
+      as observed operating conditions. The biooxidation sheet labels liquid flow in g/h while the paper
+      uses mL/h, and its 2023 dates include a 16/02/24 row despite a README collection date in 2022. These
+      unresolved discrepancies preclude density conversion, invented analysis dates and automatic native
+      concentration imports.
+  - source_ref: iglesias2024
+    supports: partial
+    explanation: Results 3.4 and Figure 5 describe actual biooxidized liquor contacted with 15 vol% LIX
+      973 NS-LV in kerosene at 20 degrees C; the reported 91.4% Cu transfer at equal phase volumes refers
+      to solvent extraction, with organic concentrations calculated from aqueous analyses. Methods 2.2
+      and Results 3.5 explicitly identify electrowinning feed as synthetic 15 g/L Cu plus 155 g/L sulfuric
+      acid, despite Table 4 labeling its origin AP SX and listing 150 g/L acid. Figures 7–8 therefore
+      concern a separate synthetic-feed deposit. Reported 99.2% current efficiency is not product purity
+      or whole-board yield; local SEM-EDS Cu peaks do not establish certified bulk purity. Simulated stripping
+      electrolytes and the synthetic electrowinning test do not demonstrate the proposed closed circuit
+      or zero reagent and effluent claims.
+  - source_ref: iglesias2024dataset
+    supports: partial
+    explanation: The six-sheet workbook belongs to this same experiment, not an independent replication.
+      EW C16 contains 1.02 under CE (%) whereas the paper reports 99.2%; conversion or reconciliation
+      is not assumed. EW contains an additional 50-degree series whose correspondence to the selected
+      manuscript experiment is unresolved. Batch normalization and fitted trajectories remain distinct
+      from independent feed-denominator measurements. Only contextual prose with locators is curated;
+      no workbook-wide import or reproduced process mass balance is claimed.
 sources:
 - id: an2021
   title: An, J. (2021). Characteristics of Metals Leached from Waste Printed Circuit Boards Using Acidithiobacillus
@@ -121,6 +191,21 @@ sources:
     and Figures 1–6 inspected.
   url: https://doi.org/10.1016/j.mineng.2022.107471
   accessed_on: '2026-10-11'
+- id: iglesias2024
+  title: Iglesias-González, N., Dorado, A.D., Ramírez, P. and Mazuelos, A. (2024). A high productivity
+    bioprocess for obtaining metallic copper from printed circuit boards (PCBs). Minerals Engineering
+    205:108459. DOI 10.1016/j.mineng.2023.108459. Accepted manuscript, Methods 2.1–2.2, Results 3.1–3.5,
+    Tables 2–6 and Figures 2–8 inspected; repository cover year 2003 conflicts with verified 2024 journal
+    metadata.
+  url: https://doi.org/10.1016/j.mineng.2023.108459
+  accessed_on: '2026-10-11'
+- id: iglesias2024dataset
+  title: Iglesias-González, N., Dorado, A.D., Ramírez, P. and Mazuelos, A. (2024). Experimental dataset
+    of a high productivity bioprocess for obtaining metallic copper from printed circuit boards. DOI 10.12795/11441/161670;
+    deposited 25 July 2024. README and six-sheet Data.xlsx acquired; XML cells and formulas parsed, with
+    focused checks of claim-related cells. Paired data for the same experiment.
+  url: https://doi.org/10.12795/11441/161670
+  accessed_on: '2026-10-11'
 curation_history:
 - timestamp: '2026-10-11T12:40:45.202303+00:00'
   curator: codex (GPT-6; codex)
@@ -128,5 +213,12 @@ curation_history:
   summary: Created process-defined waste-board identity and two separately scoped primary laboratory leaching
     mechanisms, preserving contrasting controls, source discrepancies, analytical denominators and scale
     limitations.
+- timestamp: '2026-10-11T13:16:41.074639+00:00'
+  curator: codex (GPT-6; codex)
+  action: EDIT
+  summary: Added 2024 stage-specific ferric-regeneration evidence and paired dataset, preserving synthetic
+    electrowinning scope, acid-wash accounting and source discrepancies; earlier mechanisms and provenance
+    unchanged.
 history_refs:
 - history/records/waste-printed-circuit-boards/2026-10-11T124047Z-codex-fd23ae.yaml
+- history/records/waste-printed-circuit-boards/2026-10-11T131557Z-codex-cd46c3.yaml
