@@ -1,0 +1,126 @@
+id: cmmmech:lithium-bearing-geothermal-brine
+name: Lithium-bearing geothermal brine
+material_kind: primary_resource
+description: >-
+  Naturally occurring geothermal saline water containing dissolved lithium,
+  considered as a geological extraction feed. The resource is a variable aqueous
+  mixture, distinct from elemental lithium, a mineral species, manufactured
+  lithium carbonate and waste-derived secondary resources. The curated experiment
+  used one unsterilized brine from an unnamed Cornish geothermal project; its
+  composition and laboratory response do not define all geothermal brines.
+  No criticality designation or external material identifier is inferred from
+  the lithium constituent.
+sources:
+  - id: rehmanji2025
+    title: >-
+      Rehmanji, Skeffington, Hudson-Edwards and Newsome (2025). Circular economy
+      approaches to microbially-induced carbonate precipitation for bioprocessing
+      of geothermal brine for lithium recovery. RSC Advances 15:43263-43274;
+      DOI 10.1039/d5ra06824j, published 6 November 2025. Sections 2.1-2.2 and
+      4.1-4.7, Figure 1 and supplementary Tables S1-S2/S7, Figures S5/S7.
+    url: https://doi.org/10.1039/d5ra06824j
+    accessed_on: '2026-10-11'
+  - id: rehmanji2025_si
+    title: >-
+      Rehmanji et al. (2025), supporting information to DOI 10.1039/d5ra06824j;
+      27-page RA-015-D5RA06824J-s001.pdf acquired in the EuropePMC
+      supplementaryFiles archive. Tables S1-S2/S7 and Figures S5/S7.
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12590475/supplementaryFiles
+    accessed_on: '2026-10-11'
+  - id: dsm33
+    title: >-
+      DSMZ catalogue, Sporosarcina pasteurii DSM 33, type strain, strain 22/Gibson 22;
+      catalogue identity checked 2026-10-11.
+    url: https://www.dsmz.de/collection/catalogue/details/culture/DSM-33
+    accessed_on: '2026-10-11'
+  - id: ncbi1474
+    title: >-
+      NCBI Taxonomy 1474, Sporosarcina pasteurii, species; includes DSM 33 among
+      type-strain collections.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1474&mode=info
+    accessed_on: '2026-10-11'
+mechanisms:
+  - id: ureolytic_brine_cation_pretreatment
+    name: Ureolytic carbonate precipitation during lithium-brine pretreatment
+    process: biomineralization
+    microbial: true
+    organisms:
+      - id: NCBITaxon:1474
+        label: Sporosarcina pasteurii
+    description: >-
+      Prepared S. pasteurii DSM 33 biomass with added urea raised pH and produced
+      carbonate-bearing solids while measured Ca, Mg, Mn and Sr concentrations
+      declined in one natural geothermal brine. Lithium largely remained in the
+      measured solution. This is a laboratory impurity-removal pretreatment
+      observation, not isolated lithium recovery or demonstrated improvement in
+      downstream direct lithium extraction. The authors assigned calcite, vaterite
+      and magnesite in mixed solids by XRD; phase-specific Sr/Mn incorporation and
+      a uniquely cellular precipitation pathway were not established.
+    context: >-
+      Cells grown in tryptone soy broth with 500 mM urea at 28 degrees C and
+      180 rpm were harvested in mid-log phase and washed with phosphate-buffered
+      saline. The natural brine was not sterilized and was treated under reported
+      non-growth conditions with 500 mM urea, initial OD600 values 0.05-0.4,
+      100 mL in 250 mL flasks, 28 degrees C, static incubation for 24 h, in
+      triplicate. Figure 1 is the main comparison; supporting figures show higher
+      inocula and a separate no-added-cell control. The reported Bacillus subtilis
+      ATCC-2385 comparator and brine-plus-urea control are retained as source
+      descriptions, without independently resolving that comparator strain
+      accession. No matched-pH chemical or killed-biomass comparison was reported,
+      and unsterilized brine is not an axenic system. ICP-OES measured elemental
+      concentrations, but the main methods do not clearly specify solid/liquid
+      separation for every metal time-point aliquot; supplementary Table S2 omits
+      the lithium wavelength. Only qualitative treatment comparisons are curated.
+      The paper does not demonstrate an integrated industrial process, a lithium
+      carbonate product, or a lithium mass-balance recovery yield.
+    evidence:
+      - source_ref: rehmanji2025
+        supports: support
+        explanation: >-
+          Sections 4.1-4.2 identify the natural Cornish geothermal feed, DSM 33
+          preparation and flask conditions. Sections 2.1-2.2 and Figure 1 show
+          culture-associated cation depletion with lithium retained; Figure 2
+          and Section 4.6 support characterization of mixed carbonate-bearing
+          solids. The claim concerns this brine and prepared biomass under the
+          reported conditions.
+      - source_ref: rehmanji2025_si
+        supports: support
+        explanation: >-
+          Table S1 characterizes the experimental brine, including lithium
+          75.2 +/- 1.8 mg/L (mean +/- SEM, n = 3); this is not a universal resource
+          specification or an mg/kg observation. Figure S5 (pp. 21-22) compares
+          inoculated brine with brine plus urea and no added cells. Figure S7
+          (p. 24), rather than the main text's misreferenced Figure S6, contains
+          the authors' XRD assignment to calcite, vaterite and magnesite.
+      - source_ref: rehmanji2025
+        supports: partial
+        explanation: >-
+          Section 2.1 says initial 10 minutes whereas Figure 1 axes and
+          Section 4.2 sampling schedule use hours. Published Mg/Mn removal
+          percentages do not consistently match the plotted Figure 1 series;
+          its B. subtilis Mn control also declines despite the text's broad
+          no-precipitation statement. No percentage or 10-minute rate is accepted
+          here. Lithium retention does not establish extraction into a separate
+          product; the cow-urine experiment used synthetic CaCl2 solution,
+          distinct from the natural-brine assay.
+      - source_ref: rehmanji2025_si
+        supports: partial
+        explanation: >-
+          The inoculated Mn/Sr trajectories in Figure S5 differ from Figure 1
+          and are not pooled as one replicated series. Table S9 labels retained
+          lithium as recovery; this record treats it as aqueous retention.
+          Table S7 reports negative magnesite saturation indices, unlike
+          positive values stated in Section 2.2; model output is not accepted
+          as independent confirmation of phase formation. Mixed-solid XRD
+          identification remains an author assignment without purified phase yields.
+curation_history:
+  - timestamp: '2026-10-11T09:58:32Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Created the natural geothermal-brine resource identity and a qualified
+      laboratory microbial pretreatment mechanism from the full primary paper
+      and supplement. Preserved source timing, control, percentage and
+      mineral-model conflicts without inventing lithium product recovery.
+history_refs:
+  - history/records/lithium-bearing-geothermal-brine/2026-10-11T095832Z-codex-9ee06e.yaml

@@ -1,0 +1,507 @@
+# Independent scientific review of lithium-bearing geothermal brine
+
+- Review: 20261011T100226Z-lithium-bearing-geothermal-brine-round15-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T09:59:19.656184Z
+- Finished UTC: 2026-10-11T10:02:26.352720Z
+- Reviewer: Codex /root/round15_minerals (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Natural geological-resource identity, DSM 33 organism context and a bounded laboratory cation-removal pretreatment observation are supported. The record preserves timing, percentage, control, assay-fraction and mineral-model inconsistencies and does not turn retained aqueous lithium into isolated recovery. No actionable record defect was identified within this scope.
+
+## Scope And Provenance
+
+All fields and linked CREATE session of one frozen working-tree primary_resource record; independent literature/identity/control assessment, including the new material-kind mapping.
+
+Selection: Assigned independent review of the round15 brine addition after source-led curation.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base a2e2c82f11d97982f0cc1ae6be452a42b24a0ff0.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:lithium-bearing-geothermal-brine | data/records/lithium-bearing-geothermal-brine.yaml | maintained | Lithium-bearing geothermal brine |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Reviewer named record validation | passed | True | cmmmech:lithium-bearing-geothermal-brine | Checked 1 record(s); 0 failed. Actual terminal session 65147 exit 0; durable /private/tmp/cmm-round15-brine-review-checks.json; completed 2026-10-11T10:00:36.236335+00:00 |
+| Reviewer nonempty-corpus validation | passed | True | cmmmech:lithium-bearing-geothermal-brine | Checked 122 record(s); 0 failed. Actual terminal session 65147 exit 0; durable /private/tmp/cmm-round15-brine-review-checks.json; completed 2026-10-11T10:00:41.655079+00:00 |
+| Reviewer trusted-base history validation | passed | True | cmmmech:lithium-bearing-geothermal-brine | Checked 138 history record(s); 0 error(s). Actual terminal session 65147 exit 0; durable /private/tmp/cmm-round15-brine-review-checks.json; completed 2026-10-11T10:00:45.444738+00:00 |
+| Native full batch checks | passed | True | cmmmech:lithium-bearing-geothermal-brine | Root actual terminal session 53914 exit 0, independently read completed receipt/log:308 passed, 3 skipped in 99.07 s;122 records, 0 failed; 138 histories, 0 errors. /private/tmp/cmm-round15-final-batch.log and gate-receipts.json; unchanged target/schema hashes match inspection. |
+
+## Scientific And Domain Assessments
+
+### Natural resource and organism identity
+
+identity: supported. Targets: cmmmech:lithium-bearing-geothermal-brine.
+
+The record denotes a natural geothermal brine, a variable geological feed. Species-level NCBI identity and independently verified DSM33 strain context are properly separated.
+
+### Laboratory ureolytic brine pretreatment
+
+evidence: supported. Targets: cmmmech:lithium-bearing-geothermal-brine.
+
+The primary methods and measured comparisons support cation depletion and carbonate-bearing solid formation under prepared-cell ureolysis with Li largely retained, without isolated Li recovery.
+
+### Contradictions preserved at claim level
+
+scope: supported. Targets: cmmmech:lithium-bearing-geothermal-brine.
+
+The record qualifies all material timing,percentage,control and phase-model tensions identified in this review. No unsupported positive rate,yield,exclusive pathway or purity claim remains.
+
+Published phase assignment is retained as such; independent XRD refitting is outside scope. The source's optimistic industrial,circularity and quantitative recovery rhetoric is not inherited. This supports pass_with_limitations rather than unqualified pass.
+
+### Exact bytes, actual history and validation
+
+provenance: supported. Targets: cmmmech:lithium-bearing-geothermal-brine.
+
+Record and schema hashes stayed unchanged from initial inspect to final recheck; linked CREATE history correctly records actual author work. Completed root and reviewer structural gates support acceptance of these bytes.
+
+Working-tree review at trusted main base a2e2c82f11d97982f0cc1ae6be452a42b24a0ff0, not a claim these bytes were already committed. Root fullcheck terminal receipt read after completion; saving will enforce hashes again.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/lithium-bearing-geothermal-brine.yaml; Entire YAML and linked CREATE history | supports | Read all identity, mechanism, conditions, source limitations, current inline event and actual codex/GPT-6 CREATE sidecar. No edits by reviewer. |
+| primary | https://doi.org/10.1039/d5ra06824j; Full paper Sections2.1-2.2 and4.1-4.7; Figure 1 pixels in paper PDF page3; Figure 2 discussion; original PDF and EuropePMC XML | supports | Methods support the natural Cornish brine, DSM33 cultivation, mid-log PBS-washed preparation,500 mM urea, OD600 = 0.05-0.4,100 mL in a 250 mL flask,28 C static for 24 h triplicates. Figure 1 shows measured cation declines and Li retention. The primary source supports laboratory pretreatment, not a separated Li product. |
+| si | https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12590475/supplementaryFiles; 27-page RA-015-D5RA06824J-s001.pdf; Table S1p2,Table S2p3,Table S7p8,Table S9pp12-13,FigS5pp21-22,FigS7p24; relevant pages/figures inspected as pixels | supports | Table S1 Li 75.2 +/- 1.8 mg/L is mean +/- SEM, n = 3; source-specific feed characterization. Figure S5 is no-added-cell brine+urea comparison; Figure S7 labels vaterite,calcite,magnesite. Table S2 omits Li wavelength, Table S7 has negative magnesite SIs and Table S9 calls retained Li recovery. Curated record preserves these limitations. |
+| source-conflicts | https://doi.org/10.1039/d5ra06824j; Section 2.1 versus Figure 1 and Methods4.2; Figure 1 versus SI Figure S5; Section 2.2 versus Table S7 and Figure S7 | partial | Text10-minute result conflicts with hourly sampling/axes. Figure 1 Mg and Mn endpoints do not reproduce textual removal percentages, and B.subtilis Mn declines. Figure S5 inoculated Mn/Sr trajectories differ. The text misreferences S6 for XRD while actual XRD is S7; magnesite model signs conflict. These do not negate the narrower observed cation declines and qualified phase assignment but prevent stronger kinetic/yield/causal inference. |
+| strain | https://www.dsmz.de/collection/catalogue/details/culture/DSM-33; Live catalogue Name, DSMNo, Type strain, Strain designation and other collection numbers | supports | DSM33 is Sporosarcina pasteurii, type strain,22/Gibson22, linked to ATCC11859. Identity matches the experimental main organism; catalogue culture conditions are not substituted for paper conditions. |
+| taxonomy | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1474&amp;mode=info; Live species name/ID/rank and type-strain collections | supports | NCBITaxon1474 identifies S.pasteurii at species rank. Record organism label stays species-level and context separately states DSM33. Type-strain listing includes DSM33; no strain-level interpretation of speciesID. |
+| schema | src/cmmmech/schema/cmmmech.yaml; MaterialKind.primary_resource and docs/records.md resource boundary | supports | New enum accurately represents a natural geological aqueous extraction feed without forcing it into commodity, mineral or secondary_resource. Read regression fixture in tests/test_validation.py and no inherited element-criticality field. |
+| search | Reviewer live web and gitignore-independent local search; Searches11October2026; current publisher/PMC, DSMZ/NCBI checks; local data/research/reviews/history | context_only | No affecting correction/retraction appeared in bounded returned sets. DOI known as a prior lead, prior lithium record uses another experiment. One new exact geothermal-brine root within checked repository bounds; neither distinct mirrors nor SI are separate experiments. |
+| gates | /private/tmp/cmm-round15-gate-receipts.json; Actual completed root subprocess receipts and batch log; target gated hashes | supports | All full batch and required structural/history commands exited0;308 passed, 3 skipped, 122 records and 138 histories. Reviewer independently executed named/nonempty/history checks. These gates validate format/consistency, not scientific causality. |
+
+## Limits And Additional Notes
+
+- The brine was unsterilized, the comparative B. subtilis ATCC-2385 accession is unresolved, and no pH-matched chemical or killed-cell control establishes a uniquely cellular pathway.
+- Reported timing and removal percentages conflict with figures; Mg/Mn percentages and a 10-minute rate are not adopted. S5 and Figure 1 inoculated trajectories differ and are not pooled.
+- The ICP-OES methods do not resolve every metal aliquot fraction, and supplementary Table S2 lacks the Li wavelength. Qualitative solution-retention wording does not establish an analytically closed lithium mass balance.
+- XRD is a published mixed-solid phase assignment without independent raw diffraction refitting; negative magnesite saturation indices in Table S7 conflict with positive values in the text.
+- One natural Cornish feed and laboratory flasks do not demonstrate industrial deployment, downstream DLE improvement or isolated lithium carbonate.
+- Correction/retraction/conflicting-control searches used bounded first result sets, no filters or exhaustive pagination. Direct publisher full HTML returned 403 in this reviewer pass and PMC HTML challenged; full primary PDF/XML and complete SI were instead inspected from retained legitimate repository artifacts.
+- Review input capture preceded scientific assessment. A second inspect added the already-read linked CREATE sidecar; original record and schema hashes were unchanged and rechecked before saving.
+- No criticality field is present; omission means unrecorded, not not-listed. No element identifier is repurposed to identify the brine.
+- Zero blocker, major, minor or informational record defects in the declared scope; source shortcomings already bounded in the record are retained as limitations rather than fabricated review issues.
+- Raw PDFs and figures remain outside Git. The full paper states CC BY 3.0; this review adds no bulk dataset redistribution.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T100226Z-lithium-bearing-geothermal-brine-round15-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of lithium-bearing geothermal brine
+started_at: '2026-10-11T09:59:19.656184Z'
+finished_at: '2026-10-11T10:02:26.352720Z'
+reviewer:
+  identity: Codex /root/round15_minerals
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent /root/round15_brine authored this record and
+    its CREATE history; root authored primary_resource schema support. This reviewer
+    authored the separate dittmarite/glushinskite records, independently inspected
+    the brine record, primary evidence and figures, and made no brine-record or history
+    edits. Independence means author/reviewer separation within the same workflow,
+    not organizational independence.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Natural geological-resource identity, DSM 33 organism context and a bounded
+  laboratory cation-removal pretreatment observation are supported. The record preserves
+  timing, percentage, control, assay-fraction and mineral-model inconsistencies and
+  does not turn retained aqueous lithium into isolated recovery. No actionable record
+  defect was identified within this scope.
+source:
+  git_revision: a2e2c82f11d97982f0cc1ae6be452a42b24a0ff0
+  state: working_tree
+  inputs:
+  - path: data/records/lithium-bearing-geothermal-brine.yaml
+    sha256: e82a067575e5ea6c26e43962f9478f34fa5c330d0a64e6869bb35e43dcf0b0cf
+    role: target
+  - path: history/records/lithium-bearing-geothermal-brine/2026-10-11T095832Z-codex-9ee06e.yaml
+    sha256: 083f55470af7b2d293b9e57062746f09c5ce8d4dd9c64d1691d61e254885c433
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:lithium-bearing-geothermal-brine
+  path: data/records/lithium-bearing-geothermal-brine.yaml
+  kind: maintained
+  label: Lithium-bearing geothermal brine
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lithium-bearing-geothermal-brine.yaml
+    role: maintained scientific record
+scope:
+  description: All fields and linked CREATE session of one frozen working-tree primary_resource
+    record; independent literature/identity/control assessment, including the new
+    material-kind mapping.
+  selection: Assigned independent review of the round15 brine addition after source-led
+    curation.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:lithium-bearing-geothermal-brine
+  exclusions:
+  - target: Other records, uncurated experimental arms and raw-data reanalysis
+    reason: No corpus-wide scientific recertification, patent/legal assessment, quantitative
+      phase refit or acceptance of the separate cow-urine/soil results.
+checks:
+- check_id: named
+  name: Reviewer named record validation
+  status: passed
+  required: true
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/lithium-bearing-geothermal-brine.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Checked 1 record(s); 0 failed. Actual terminal session 65147 exit 0; durable
+    /private/tmp/cmm-round15-brine-review-checks.json; completed 2026-10-11T10:00:36.236335+00:00
+  target_ids:
+  - cmmmech:lithium-bearing-geothermal-brine
+- check_id: require
+  name: Reviewer nonempty-corpus validation
+  status: passed
+  required: true
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Checked 122 record(s); 0 failed. Actual terminal session 65147 exit 0;
+    durable /private/tmp/cmm-round15-brine-review-checks.json; completed 2026-10-11T10:00:41.655079+00:00
+  target_ids:
+  - cmmmech:lithium-bearing-geothermal-brine
+- check_id: history
+  name: Reviewer trusted-base history validation
+  status: passed
+  required: true
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate-history --base a2e2c82f11d97982f0cc1ae6be452a42b24a0ff0
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Checked 138 history record(s); 0 error(s). Actual terminal session 65147
+    exit 0; durable /private/tmp/cmm-round15-brine-review-checks.json; completed 2026-10-11T10:00:45.444738+00:00
+  target_ids:
+  - cmmmech:lithium-bearing-geothermal-brine
+- check_id: root-batch
+  name: Native full batch checks
+  status: passed
+  required: true
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root actual terminal session 53914 exit 0, independently read completed
+    receipt/log:308 passed, 3 skipped in 99.07 s;122 records, 0 failed; 138 histories,
+    0 errors. /private/tmp/cmm-round15-final-batch.log and gate-receipts.json; unchanged
+    target/schema hashes match inspection.
+  target_ids:
+  - cmmmech:lithium-bearing-geothermal-brine
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/lithium-bearing-geothermal-brine.yaml
+  locator: Entire YAML and linked CREATE history
+  accessed_at: '2026-10-11T10:02:26.352720Z'
+  support: supports
+  summary: Read all identity, mechanism, conditions, source limitations, current inline
+    event and actual codex/GPT-6 CREATE sidecar. No edits by reviewer.
+  snapshot_sha256: e82a067575e5ea6c26e43962f9478f34fa5c330d0a64e6869bb35e43dcf0b0cf
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1039/d5ra06824j
+  locator: Full paper Sections2.1-2.2 and4.1-4.7; Figure 1 pixels in paper PDF page3;
+    Figure 2 discussion; original PDF and EuropePMC XML
+  accessed_at: '2026-10-11T10:02:26.352720Z'
+  support: supports
+  summary: Methods support the natural Cornish brine, DSM33 cultivation, mid-log PBS-washed
+    preparation,500 mM urea, OD600 = 0.05-0.4,100 mL in a 250 mL flask,28 C static
+    for 24 h triplicates. Figure 1 shows measured cation declines and Li retention.
+    The primary source supports laboratory pretreatment, not a separated Li product.
+  snapshot_sha256: 3b1dd238e4fb9652d82846dcdb3d304edc667ff918977566d7da05522c6e6af8
+- evidence_id: si
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12590475/supplementaryFiles
+  locator: 27-page RA-015-D5RA06824J-s001.pdf; Table S1p2,Table S2p3,Table S7p8,Table
+    S9pp12-13,FigS5pp21-22,FigS7p24; relevant pages/figures inspected as pixels
+  accessed_at: '2026-10-11T10:02:26.352720Z'
+  support: supports
+  summary: Table S1 Li 75.2 +/- 1.8 mg/L is mean +/- SEM, n = 3; source-specific feed
+    characterization. Figure S5 is no-added-cell brine+urea comparison; Figure S7
+    labels vaterite,calcite,magnesite. Table S2 omits Li wavelength, Table S7 has
+    negative magnesite SIs and Table S9 calls retained Li recovery. Curated record
+    preserves these limitations.
+  snapshot_sha256: d484e7bdfde39ed1e262a0095308a562c7ae971c724de2bc8a0c8564a2beff19
+- evidence_id: source-conflicts
+  kind: primary_source
+  reference: https://doi.org/10.1039/d5ra06824j
+  locator: Section 2.1 versus Figure 1 and Methods4.2; Figure 1 versus SI Figure S5;
+    Section 2.2 versus Table S7 and Figure S7
+  accessed_at: '2026-10-11T10:02:26.352720Z'
+  support: partial
+  summary: Text10-minute result conflicts with hourly sampling/axes. Figure 1 Mg and
+    Mn endpoints do not reproduce textual removal percentages, and B.subtilis Mn declines.
+    Figure S5 inoculated Mn/Sr trajectories differ. The text misreferences S6 for
+    XRD while actual XRD is S7; magnesite model signs conflict. These do not negate
+    the narrower observed cation declines and qualified phase assignment but prevent
+    stronger kinetic/yield/causal inference.
+- evidence_id: strain
+  kind: database
+  reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-33
+  locator: Live catalogue Name, DSMNo, Type strain, Strain designation and other collection
+    numbers
+  accessed_at: '2026-10-11T10:02:26.352720Z'
+  support: supports
+  summary: DSM33 is Sporosarcina pasteurii, type strain,22/Gibson22, linked to ATCC11859.
+    Identity matches the experimental main organism; catalogue culture conditions
+    are not substituted for paper conditions.
+- evidence_id: taxonomy
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1474&mode=info
+  locator: Live species name/ID/rank and type-strain collections
+  accessed_at: '2026-10-11T10:02:26.352720Z'
+  support: supports
+  summary: NCBITaxon1474 identifies S.pasteurii at species rank. Record organism label
+    stays species-level and context separately states DSM33. Type-strain listing includes
+    DSM33; no strain-level interpretation of speciesID.
+- evidence_id: schema
+  kind: record_content
+  reference: src/cmmmech/schema/cmmmech.yaml
+  locator: MaterialKind.primary_resource and docs/records.md resource boundary
+  accessed_at: '2026-10-11T10:02:26.352720Z'
+  support: supports
+  summary: New enum accurately represents a natural geological aqueous extraction
+    feed without forcing it into commodity, mineral or secondary_resource. Read regression
+    fixture in tests/test_validation.py and no inherited element-criticality field.
+  snapshot_sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+- evidence_id: search
+  kind: search
+  reference: Reviewer live web and gitignore-independent local search
+  locator: Searches11October2026; current publisher/PMC, DSMZ/NCBI checks; local data/research/reviews/history
+  accessed_at: '2026-10-11T10:02:26.352720Z'
+  support: context_only
+  summary: No affecting correction/retraction appeared in bounded returned sets. DOI
+    known as a prior lead, prior lithium record uses another experiment. One new exact
+    geothermal-brine root within checked repository bounds; neither distinct mirrors
+    nor SI are separate experiments.
+  search_scope: 'Web exact queries: "10.1039/d5ra06824j" correction retraction; "microbially-induced
+    carbonate precipitation" "geothermal brine" control lithium. First returned result
+    sets only, no filters/pagination. Local rg --no-ignore --hidden -L for exact record
+    ID and DOI across data,research,reviews,history, excluding.git/.venv; read named
+    raw /private/tmp/cmm-round15-brine-raw. No machine-wide or exhaustive literature
+    absence claim.'
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round15-gate-receipts.json
+  locator: Actual completed root subprocess receipts and batch log; target gated hashes
+  accessed_at: '2026-10-11T10:02:26.352720Z'
+  support: supports
+  summary: All full batch and required structural/history commands exited0;308 passed,
+    3 skipped, 122 records and 138 histories. Reviewer independently executed named/nonempty/history
+    checks. These gates validate format/consistency, not scientific causality.
+  snapshot_sha256: 6305164a252d489178c974d78093f646c5e73ccc6862e7b8d6d4afd267cdbd71
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Natural resource and organism identity
+  outcome: supported
+  summary: The record denotes a natural geothermal brine, a variable geological feed.
+    Species-level NCBI identity and independently verified DSM33 strain context are
+    properly separated.
+  target_ids:
+  - cmmmech:lithium-bearing-geothermal-brine
+  evidence_ids:
+  - record
+  - primary
+  - strain
+  - taxonomy
+  - schema
+  dimensions:
+  - name: material
+    value: 'primary_resource: natural lithium-bearing geothermal brine'
+    definition: Not an element, mineral species, fixed commercial product or waste-origin
+      feed.
+    evidence_ids:
+    - record
+    - primary
+    - schema
+  - name: criticality
+    value: Unrecorded
+    definition: No constituent-derived designation or not_listed claim.
+    evidence_ids:
+    - record
+  - name: organism
+    value: Sporosarcina pasteurii DSM33; NCBITaxon1474 species
+    definition: Main strain verified by DSMZ, species identity by NCBI; comparator
+      accession remains explicitly unresolved.
+    evidence_ids:
+    - strain
+    - taxonomy
+    - primary
+    - record
+- assessment_id: mechanism
+  area: evidence
+  topic: Laboratory ureolytic brine pretreatment
+  outcome: supported
+  summary: The primary methods and measured comparisons support cation depletion and
+    carbonate-bearing solid formation under prepared-cell ureolysis with Li largely
+    retained, without isolated Li recovery.
+  target_ids:
+  - cmmmech:lithium-bearing-geothermal-brine
+  evidence_ids:
+  - primary
+  - si
+  - record
+  dimensions:
+  - name: biomass
+    value: Prepared mid-log cells under reported non-growth conditions
+    definition: PBS-washed S.pasteurii introduced into unsterilized brine; absence
+      of growth conditions is not proof of an axenic assay or inactive biomass.
+    evidence_ids:
+    - primary
+    - record
+  - name: substrate
+    value: One unsterilized Cornish natural geothermal brine;500 mM urea
+    definition: Site unnamed; feed composition is Table S1, not a universal resource
+      specification; cow-urine CaCl2 arm remains distinct.
+    evidence_ids:
+    - primary
+    - si
+    - record
+  - name: conditions
+    value: OD600 = 0.05-0.4;100 mL in 250 mL flasks; 28 C static for 24 h; triplicates
+    definition: Cultivation at 180 rpm differs from static treatment; hours not10-minute
+      rate.
+    evidence_ids:
+    - primary
+    - record
+  - name: controls
+    value: B.subtilis comparator and no-added-cell brine+urea
+    definition: No matched-pH chemical or killed-biomass control; nonsterile feed
+      limits exclusive attribution.
+    evidence_ids:
+    - primary
+    - si
+    - source-conflicts
+    - record
+  - name: measurement
+    value: Table S1 Li 75.2 +/- 1.8 mg/L, mean +/- SEM, n = 3;qualitative treatment
+      comparisons
+    definition: Feed characterization is not mg/kg observation or product yield; assay-fraction
+      and missing wavelength limits retained.
+    evidence_ids:
+    - si
+    - record
+  - name: outcome
+    value: Cation concentration decline,Li aqueous retention,mixed carbonate phase
+      assignment
+    definition: Not purified product,phase-specificSr/Mn incorporation or full mass
+      balance.
+    evidence_ids:
+    - primary
+    - si
+    - record
+  - name: deployment
+    value: Laboratory flask study
+    definition: Natural industrial-origin feed does not establish integrated industrial
+      treatment or DLE benefit.
+    evidence_ids:
+    - primary
+    - record
+- assessment_id: limits
+  area: scope
+  topic: Contradictions preserved at claim level
+  outcome: supported
+  summary: The record qualifies all material timing,percentage,control and phase-model
+    tensions identified in this review. No unsupported positive rate,yield,exclusive
+    pathway or purity claim remains.
+  target_ids:
+  - cmmmech:lithium-bearing-geothermal-brine
+  evidence_ids:
+  - record
+  - primary
+  - si
+  - source-conflicts
+  details: Published phase assignment is retained as such; independent XRD refitting
+    is outside scope. The source's optimistic industrial,circularity and quantitative
+    recovery rhetoric is not inherited. This supports pass_with_limitations rather
+    than unqualified pass.
+- assessment_id: provenance
+  area: provenance
+  topic: Exact bytes, actual history and validation
+  outcome: supported
+  summary: Record and schema hashes stayed unchanged from initial inspect to final
+    recheck; linked CREATE history correctly records actual author work. Completed
+    root and reviewer structural gates support acceptance of these bytes.
+  target_ids:
+  - cmmmech:lithium-bearing-geothermal-brine
+  evidence_ids:
+  - record
+  - schema
+  - gates
+  details: Working-tree review at trusted main base a2e2c82f11d97982f0cc1ae6be452a42b24a0ff0,
+    not a claim these bytes were already committed. Root fullcheck terminal receipt
+    read after completion; saving will enforce hashes again.
+findings: []
+actions: []
+limitations:
+- The brine was unsterilized, the comparative B. subtilis ATCC-2385 accession is unresolved,
+  and no pH-matched chemical or killed-cell control establishes a uniquely cellular
+  pathway.
+- Reported timing and removal percentages conflict with figures; Mg/Mn percentages
+  and a 10-minute rate are not adopted. S5 and Figure 1 inoculated trajectories differ
+  and are not pooled.
+- The ICP-OES methods do not resolve every metal aliquot fraction, and supplementary
+  Table S2 lacks the Li wavelength. Qualitative solution-retention wording does not
+  establish an analytically closed lithium mass balance.
+- XRD is a published mixed-solid phase assignment without independent raw diffraction
+  refitting; negative magnesite saturation indices in Table S7 conflict with positive
+  values in the text.
+- One natural Cornish feed and laboratory flasks do not demonstrate industrial deployment,
+  downstream DLE improvement or isolated lithium carbonate.
+- Correction/retraction/conflicting-control searches used bounded first result sets,
+  no filters or exhaustive pagination. Direct publisher full HTML returned 403 in
+  this reviewer pass and PMC HTML challenged; full primary PDF/XML and complete SI
+  were instead inspected from retained legitimate repository artifacts.
+notes:
+- Review input capture preceded scientific assessment. A second inspect added the
+  already-read linked CREATE sidecar; original record and schema hashes were unchanged
+  and rechecked before saving.
+- No criticality field is present; omission means unrecorded, not not-listed. No element
+  identifier is repurposed to identify the brine.
+- Zero blocker, major, minor or informational record defects in the declared scope;
+  source shortcomings already bounded in the record are retained as limitations rather
+  than fabricated review issues.
+- Raw PDFs and figures remain outside Git. The full paper states CC BY 3.0; this review
+  adds no bulk dataset redistribution.
+links:
+- research/ingests/round15-brine-sources-20261011.md
+- research/ingests/round15-brine-sources-20261011.json
+tags:
+- round15
+- independent-scientific-review
+- primary-resource
+- lithium-bearing-geothermal-brine
+```

@@ -16,6 +16,26 @@ def test_material_does_not_require_microbes(record):
     assert validate_record(record) == []
 
 
+def test_primary_resource_supports_microbial_separation_without_criticality(record):
+    record.update(
+        id="cmmmech:synthetic-geothermal-brine",
+        name="Synthetic geothermal brine fixture",
+        material_kind="primary_resource",
+        description="A synthetic example of a natural geological fluid feed.",
+    )
+    record.pop("criticality")
+    record["mechanisms"][0].update(
+        process="separation",
+        description="Synthetic impurity removal, without isolated lithium recovery.",
+        context="Hypothetical laboratory assay; this fixture is not scientific evidence.",
+    )
+    assert validate_record(record) == []
+    record.pop("mechanisms")
+    assert validate_record(record) == []
+    record["material_kind"] = "primary-resource"
+    assert any("material_kind" in error for error in validate_record(record))
+
+
 def test_nonmicrobial_recovery_is_supported(record):
     mechanism = record["mechanisms"][0]
     mechanism["microbial"] = False

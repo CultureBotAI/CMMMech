@@ -38,13 +38,15 @@ cannot support an accepted record; do not place speculative drafts or fixtures
 in the corpus.
 
 Ground the concept before choosing a slug or identifier. Elements, ions, mineral
-species/groups, commodities, alloys and secondary resources differ. Use only
+species/groups, commodities, alloys and primary/secondary resources differ. Use only
 current schema kinds (`element`, `mineral`, `mineral_group`, `commodity`,
-`secondary_resource`); describe experimental salts, ions or alloys in context
-without pretending their identifiers identify an element or mineral. Resolve
+`primary_resource`, `secondary_resource`); describe experimental salts, ions or
+alloys in context without pretending their identifiers identify an element or mineral. Resolve
 every asserted external ID and label at its authority. Leave unsupported IDs
 absent. Do not inherit criticality or mechanisms from a constituent element into
 its host mineral or waste feed.
+Natural geological feeds such as geothermal brine can be `primary_resource`;
+extraction alone does not make them secondary resources or traded commodities.
 
 ## Establish evidence for each claim
 
