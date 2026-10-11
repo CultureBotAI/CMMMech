@@ -74,6 +74,10 @@ and duplicate record identifiers. An empty corpus is reported explicitly;
 `--require-records` makes it an error. The shared local/CI gate now uses this
 flag so accidental loss of the whole corpus fails `just check`.
 
+Use [cmmmech-add-record](.claude/skills/cmmmech-add-record/SKILL.md) to turn
+primary evidence or a source-discovery handoff into curated records, curation
+history and saved scientific reviews.
+
 Use the local [record-review skill](.claude/skills/review-record/SKILL.md) for
 new or changed scientific records. Review artifacts identify the reviewed
 commit and working changes, hash the record bytes, and retain unresolved limits.
