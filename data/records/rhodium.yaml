@@ -1,0 +1,175 @@
+id: cmmmech:rhodium
+name: Rhodium
+material_kind: element
+description: >-
+  Rhodium (Rh). The element is distinct from the Rh(III) chloride hydrate
+  used as experimental feed, monometallic biomass-supported particles and
+  mixed PdRh nanoparticles. The US 2025 list names the rhodium commodity
+  individually; that designation is mapped to the element without extending
+  it to every Rh-bearing compound, mineral or secondary resource. Curated
+  evidence concerns laboratory transformation in synthetic solutions, not
+  extraction from ore, purified-metal recovery or industrial deployment.
+identifiers:
+  - id: CHEBI:33359
+    label: rhodium atom
+sources:
+  - id: chebi_rhodium
+    title: 'ChEBI:33359 - rhodium atom; Rh, charge 0, atomic number 45'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:33359
+    accessed_on: '2026-10-11'
+  - id: usgs_2025
+    title: >-
+      U.S. Geological Survey (2025). Final 2025 List of Critical Minerals.
+      Federal Register 90 FR 50494-50497, November 7, 2025; final commodity
+      table, Rhodium row on page 50497.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: xie_2026
+    title: >-
+      Xie et al. Microbial synthesis of bimetallic Pd-Rh and Pd-Pt nanoparticle
+      catalysts. Nanoscale Advances 8, 961-972 (2026); first published online
+      December 16, 2025. DOI 10.1039/D5NA00861A. PMC12713794.2; Methods 2.1-2.4,
+      Results 3.1-3.6, Figures 1-6, Tables 1-2 and supplementary Table S1.
+    url: https://doi.org/10.1039/D5NA00861A
+    accessed_on: '2026-10-11'
+  - id: ncbi_geobacter
+    title: 'NCBI Taxonomy 35554 - Geobacter sulfurreducens; species, not a strain'
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=35554&mode=Info
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States of America
+    list_name: U.S. Department of the Interior Final List of Critical Minerals
+    edition: '2025 (published November 7, 2025; 90 FR 50494-50497)'
+    classification: critical
+    source_ref: usgs_2025
+mechanisms:
+  - id: geobacter_monometallic_rh_transformation
+    name: Resting-cell transformation of soluble Rh(III) to Rh(0)-bearing particles
+    process: redox_transformation
+    description: >-
+      Washed resting Geobacter sulfurreducens cells supplied with acetate
+      removed Rh from a synthetic single-metal solution and formed
+      cell-associated particles identified as metallic Rh by XRD and selected
+      area electron diffraction. Cell-free controls did not show comparable
+      Rh removal. The observation supports cell-associated reduction under
+      these conditions, without establishing complete conversion to Rh(0),
+      a specific cytochrome requirement or an isolated-metal recovery yield.
+    context: >-
+      Laboratory 10 mL batches in serum bottles contained 200 micromolar Rh
+      supplied from a 50 mM RhCl3.xH2O stock in deionized water, 10 mM sodium
+      acetate and 30 mM sodium bicarbonate. Bottles were flushed for at least
+      30 minutes with 80:20 nitrogen/carbon dioxide, pH 6.8-7.0, then received
+      resting cells at OD600 0.4 and were incubated at 30 degrees C for up to
+      24 h. Biomass had been grown anaerobically at 30 degrees C with 20 mM
+      acetate and 40 mM fumarate to late log phase, harvested at 4920 g and
+      4 degrees C for 20 minutes, and washed twice in 30 mM bicarbonate pH 7.
+      The paper does not provide a culture-collection or strain accession;
+      the species identifier does not resolve that omission. Rh remaining
+      in solution was quantified by ICP-MS after 14800 g centrifugation for
+      20 minutes and nitric-acid dilution of the supernatant. Results 3.1.1
+      reports greater than 95% aqueous Rh removal within 1 h, whereas no-cell
+      Rh controls retained the dissolved pool. This is centrifuged-supernatant
+      depletion, not a quantitative Rh(0) fraction. Washed 24 h solids were
+      assessed by XRD and TEM/SAED; the inferred crystallite size and image
+      particle size have different measurement bases.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:35554
+        label: Geobacter sulfurreducens
+    evidence:
+      - source_ref: xie_2026
+        supports: support
+        explanation: >-
+          Methods 2.1-2.3, Results 3.1.1 and Figure 1a distinguish the
+          cell-containing and no-cell monometallic Rh assays. Results 3.2,
+          Figure 2, Table 2 and Figure 4c identify Rh(0)-consistent diffraction
+          in harvested material and particle agglomerates associated with
+          cells. The phase claim relies on diffraction, not the black color
+          or aqueous removal alone.
+      - source_ref: xie_2026
+        supports: partial
+        explanation: >-
+          Results 3.3, Figure 3 and Table 1 report no discernible monometallic
+          Rh XPS signal, so the monometallic surface Rh(0)/Rh(III) proportions
+          are unresolved. XRD is dominated by one broad reflection; SAED
+          supplies additional indexed planes, but neither quantifies all
+          amorphous or dissolved Rh. The record does not transfer the
+          bimetallic Rh XPS percentages to this preparation.
+      - source_ref: xie_2026
+        supports: partial
+        explanation: >-
+          Methods 2.2 says controls without electron donor were prepared,
+          but Rh-specific donor-free outcomes are not shown in Figure 1 or
+          tabulated in the inspected article or supplementary Table S1.
+          Replicate counts and definitions of Figure 1 error bars are not
+          specified. A matched killed-cell comparison and direct genetic
+          or protein-level demonstration of Rh-reducing cytochromes are not
+          reported; acetate dependence, viability and a unique enzyme pathway
+          therefore remain unestablished.
+  - id: geobacter_pdrh_cotransformation
+    name: Rh transformation during simultaneous Pd/Rh exposure of resting cells
+    process: redox_transformation
+    description: >-
+      A separate simultaneous exposure of resting Geobacter sulfurreducens
+      to Pd(II) and Rh(III) generated cell-supported mixed nanoparticles.
+      The authors' combined XRD, atomic-resolution imaging and elemental
+      mapping support a PdRh alloy interpretation, with mixed surface
+      oxidation states. This preparation is distinct from monometallic Rh
+      particles and from sequential Pd-seeding protocols.
+    context: >-
+      Methods 2.2 repeats the 10 mL, OD600 0.4, 10 mM acetate, 30 mM
+      bicarbonate, pH 6.8-7.0, 30 degrees C anaerobic assay with 100 micromolar
+      Pd plus 100 micromolar Rh added together, supplied from Na2PdCl4 and
+      RhCl3.xH2O stocks. Results 3.1.2 reports 97% aqueous Rh removal within
+      1 h with cells; the cell-free mixture also lost approximately 20% Rh
+      by the later endpoint, unlike the single-metal no-cell Rh control.
+      The authors propose co-removal during Pd hydrolysis as an explanation.
+      Characterized solids were collected after 24 h. No purified alloy
+      product yield, full Rh mass balance, real waste-feed trial or deployment
+      is established by this synthetic-feed experiment.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:35554
+        label: Geobacter sulfurreducens
+    evidence:
+      - source_ref: xie_2026
+        supports: support
+        explanation: >-
+          Figure 1d and Results 3.1.2 support faster and greater Rh depletion
+          in the cell-containing mixture than in its no-cell control.
+          Figures 2 and 5b and Results 3.5.2 combine an intermediate lattice
+          spacing and Pd/Rh co-localization to support the authors' alloy
+          assignment. The XRD/Vegard-law estimate of Pd71/Rh29 and EDS
+          estimates near Pd60/Rh40 are method-dependent estimates, not one
+          exact uniform particle composition; Figure 5 labels field averages.
+      - source_ref: xie_2026
+        supports: partial
+        explanation: >-
+          Figure 3 and Table 1 fit the bimetallic surface Rh signal as 81%
+          Rh(0) and 19% Rh(III). These are fitted surface proportions, not
+          whole-feed reduction yields. The partial abiotic Rh removal and
+          unknown donor-free outcomes preclude assigning all Rh depletion
+          to metabolism. Proposed changes in complex speciation, reduction
+          potential and cytochrome mediation were not directly resolved in
+          this assay; no specific microbial enzyme is established.
+      - source_ref: xie_2026
+        supports: context_only
+        explanation: >-
+          Methods 2.4, Results 3.6, Figure 6 and supplementary Table S1 concern
+          subsequent NaBH4-driven 4-nitrophenol catalysis at room temperature,
+          normalized to 4 mol% total metal relative to the initial organic
+          substrate. Bio-PdRh performed better than monometallic bio-Rh in
+          this benchmark, while bio-Pd had the fastest initial rate. These
+          catalyst results are not Rh recovery percentages or demonstrations
+          of microbial metabolism during the catalytic test.
+curation_history:
+  - timestamp: '2026-10-11T06:51:17Z'
+    curator: Codex (GPT-6; Codex)
+    action: create
+    summary: >-
+      Created the rhodium element record from verified identity, dated US
+      criticality and primary laboratory evidence. Preserved assay boundaries,
+      controls, phase uncertainties and deployment limits; attached canonical
+      CREATE history. Independent scientific review is separate.
+history_refs:
+  - history/records/rhodium/2026-10-11T065056Z-codex-dc19af.yaml

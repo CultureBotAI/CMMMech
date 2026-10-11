@@ -1,0 +1,429 @@
+# Independent scientific review of Silicon
+
+- Review: 20261011T065917Z-silicon-round9-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T06:54:47Z
+- Finished UTC: 2026-10-11T06:59:17Z
+- Reviewer: codex /root/cmm9_ru_rh (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The silicon record defensibly scopes conditional joint SIT perturbation, net dissolved silicon depletion and silica incorporation in CCMP1335. It retains the high-supply null result, proxy/replication limits and untested sensing alternatives. No actionable curation defect found.
+
+## Scope And Provenance
+
+All fields of the named frozen maintained record, its history and cited evidence; shared dossier context.
+
+Selection: Assigned named record; no sampling.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9fa187ff5a455f495cfa2635e60c413b6763370d.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:silicon | data/records/silicon.yaml | maintained | Silicon |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Named-record validation | passed | True | cmmmech:silicon | Reviewer executed and read /private/tmp/cmm-round9-si-sn-independent/validate.log: 2 records, 0 failed; terminal exit 0. |
+| Full batch gate | passed | True | cmmmech:silicon | Parent executed; reviewer read /private/tmp/cmm-round9-batch-check.log: 307 passed, 3 skipped in 48.82 s; 54 records, 64 histories valid; parent confirmed terminal exit 0. |
+| Nonempty corpus | passed | True | cmmmech:silicon | Parent executed; reviewer read /private/tmp/cmm-round9-validation.log: 54 records, 0 failed; parent confirmed terminal exit 0. |
+| Trusted-base history | passed | True | cmmmech:silicon | Parent executed; reviewer read /private/tmp/cmm-round9-history.log: 64 histories, 0 errors; parent confirmed terminal exit 0. |
+
+## Scientific And Domain Assessments
+
+### Element and organism identity
+
+identity: supported. Targets: cmmmech:silicon.
+
+Atomic identity, substrate forms and the explicitly scoped organism assignment are defensible.
+
+### Jurisdiction, list and edition
+
+evidence: supported. Targets: cmmmech:silicon.
+
+Dated USGS 2025 designation supports the record's scoped material mapping.
+
+### Conditions, controls and organism-specific outcome
+
+evidence: supported. Targets: cmmmech:silicon.
+
+The silicon record defensibly scopes conditional joint SIT perturbation, net dissolved silicon depletion and silica incorporation in CCMP1335. It retains the high-supply null result, proxy/replication limits and untested sensing alternatives. No actionable curation defect found.
+
+### Actual events and frozen working inputs
+
+provenance: supported. Targets: cmmmech:silicon.
+
+The inspected CREATE sidecar names the actual actor codex/GPT-6/codex and issue 39; distinct inline timestamp and linked history are coherent. All successful acquisition receipt hashes were rechecked: 31 receipt rows, no mismatches among rows carrying hashes.
+
+### Bounded contrary-evidence and duplication search
+
+completeness: supported. Targets: cmmmech:silicon.
+
+Primary internal limitations were retained; scoped searches are not proof of exhaustive literature completeness.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/silicon.yaml; All fields, linked CREATE sidecar, shared dossier and schema | supports | Inspected frozen bytes before assessment; checked working-tree hashes and actual CREATE/inline event provenance. Reviewer made no changes to these inputs. |
+| identity | https://www.ebi.ac.uk/chebi/CHEBI:27573; Element atom entry, formula and charge | supports | Retained official HTML independently read and receipt hash verified: silicon atom, Si, charge 0; distinct from silicic acid and biosilica. |
+| organism | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=296543&amp;mode=Info; Exact strain label/rank | supports | Official retained taxonomy HTML identifies Thalassiosira pseudonana CCMP1335 at no-rank NCBI296543. |
+| criticality | https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm; Final 2025 notice, p 50497, Silicon row | supports | United States, Department of the Interior/USGS Final List of Critical Minerals, edition published 7 November 2025, individually names Silicon. The record scopes the commodity-to-element mapping without inheriting critical status to every compound or feed. |
+| primary | https://doi.org/10.1128/EC.00209-14; Methods, results, discussion and figure captions | supports | Read culture conditions, silicon uptake/silica incorporation methods, joint SIT knockdown results and Figures 6–8. Uptake is net medium disappearance; incorporation is PDMPO fluorescence. Joint SIT1/SIT2 knockdown and broad SIT antiserum cannot establish an individual transporter or sensing causality. |
+| figures | https://doi.org/10.1128/EC.00209-14; Figures 6, 7 and 8, original image pixels | supports | Visually inspected Figures 7/8; independently acquired and viewed Figure 6. Joint knockdowns reduce measured protein; R14 RNA/protein differ. At 20 µM uptake/incorporation delays occur; Figure 8C at 200 µM reports a null incorporation result, not direct uptake. Error bars n=3 SD do not define biological replication. |
+| search | Independent review-session web searches and local source inventory; Exact DOI correction/retraction and hidden/ignored matching | context_only | No matching correction/retraction notice appeared in the inspected first result sets. This bounded search does not establish literature-wide absence. Primary internal counterevidence and untested alternatives were explicitly checked. |
+
+## Limits And Additional Notes
+
+- Silicon supplementary constructs/alignments/predictions could not be retrieved through the attempted curator routes; relevant main-text/figure claims were checked, but no unviewed supplement detail is accepted.
+- Main methods and figure starvation wording differ; measured pH, abiotic depletion blanks and genetic rescue are not established.
+- PDMPO fluorescence and medium depletion are proxies, and n=3 error bars do not specify biological independence.
+- High-supply Figure 8C reports an incorporation null without proving the source's stronger sensing hypothesis.
+- Correction/retraction searches are bounded first result sets, not exhaustive registries. Live review-session database opens failed; the curator's retained authority responses were independently read and hash checked.
+- No native quantitative observations were manufactured: these values lack the exact mg/kg source cells and analysis dates required by the observation contract.
+- Working changes comprise new round9 records/histories/dossiers and independently saved reviews on the trusted base; this observation is not a committed-source review.
+- Curator raw evidence is outside Git at /private/tmp/cmm-round9-si-sn-raw; reviewer derived text and additional silicon Figure 6 acquisition/receipt are at /private/tmp/cmm-round9-si-sn-independent.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T065917Z-silicon-round9-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Silicon
+started_at: '2026-10-11T06:54:47Z'
+finished_at: '2026-10-11T06:59:17Z'
+reviewer:
+  identity: codex /root/cmm9_ru_rh
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer curated Ru/Rh, not Si/Sn; after their curator froze
+    inputs and root assigned this review, inspected exact hashes before assessment,
+    independently read primary methods/results and original figure pixels, and made
+    no target/history/dossier edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The silicon record defensibly scopes conditional joint SIT perturbation,
+  net dissolved silicon depletion and silica incorporation in CCMP1335. It retains
+  the high-supply null result, proxy/replication limits and untested sensing alternatives.
+  No actionable curation defect found.
+source:
+  git_revision: 9fa187ff5a455f495cfa2635e60c413b6763370d
+  state: working_tree
+  inputs:
+  - path: data/records/silicon.yaml
+    sha256: 06e4b6706bcdf39ee6c08c9f37b8ef27bb00389ade065dd17599887a6aeac305
+    role: target
+  - path: history/records/silicon/2026-10-11T065000Z-codex-0bbe5d.yaml
+    sha256: 0878e4ebeff0fa264f7e4d4d0d1b1313792fe9ae6849e10b439390110aba30fa
+    role: context
+  - path: research/ingests/round9-si-sn-20261011.json
+    sha256: dec1708b9a4b7f5b45c922e2cb545c1423ad1c19d8dc6793d5cce90a6ae4b4c6
+    role: context
+  - path: research/ingests/round9-si-sn-20261011.md
+    sha256: 7e075a697b136f9fb23cb1e426e71850770e6026fb11551383e93b80f59aef99
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+scope:
+  description: All fields of the named frozen maintained record, its history and cited
+    evidence; shared dossier context.
+  selection: Assigned named record; no sampling.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:silicon
+targets:
+- target_id: cmmmech:silicon
+  path: data/records/silicon.yaml
+  label: Silicon
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/silicon.yaml
+    role: maintained
+checks:
+- check_id: named
+  name: Named-record validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/silicon.yaml data/records/tin.yaml
+  status: passed
+  required: true
+  summary: 'Reviewer executed and read /private/tmp/cmm-round9-si-sn-independent/validate.log:
+    2 records, 0 failed; terminal exit 0.'
+  target_ids:
+  - cmmmech:silicon
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: batch
+  name: Full batch gate
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  status: passed
+  required: true
+  summary: 'Parent executed; reviewer read /private/tmp/cmm-round9-batch-check.log:
+    307 passed, 3 skipped in 48.82 s; 54 records, 64 histories valid; parent confirmed
+    terminal exit 0.'
+  target_ids:
+  - cmmmech:silicon
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: nonempty
+  name: Nonempty corpus
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: 'Parent executed; reviewer read /private/tmp/cmm-round9-validation.log:
+    54 records, 0 failed; parent confirmed terminal exit 0.'
+  target_ids:
+  - cmmmech:silicon
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: history
+  name: Trusted-base history
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate-history --base 9fa187ff5a455f495cfa2635e60c413b6763370d
+  status: passed
+  required: true
+  summary: 'Parent executed; reviewer read /private/tmp/cmm-round9-history.log: 64
+    histories, 0 errors; parent confirmed terminal exit 0.'
+  target_ids:
+  - cmmmech:silicon
+  exit_code: 0
+  expected_exit_code: 0
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/silicon.yaml
+  locator: All fields, linked CREATE sidecar, shared dossier and schema
+  accessed_at: '2026-10-11T06:59:17Z'
+  support: supports
+  summary: Inspected frozen bytes before assessment; checked working-tree hashes and
+    actual CREATE/inline event provenance. Reviewer made no changes to these inputs.
+  snapshot_sha256: 06e4b6706bcdf39ee6c08c9f37b8ef27bb00389ade065dd17599887a6aeac305
+- evidence_id: identity
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:27573
+  locator: Element atom entry, formula and charge
+  accessed_at: '2026-10-11T06:59:17Z'
+  support: supports
+  summary: 'Retained official HTML independently read and receipt hash verified: silicon
+    atom, Si, charge 0; distinct from silicic acid and biosilica.'
+  snapshot_sha256: db54393d1f9180721589c411a940cf3d4cd1fc822ce30edcd8d1456b8753482c
+- evidence_id: organism
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=296543&mode=Info
+  locator: Exact strain label/rank
+  accessed_at: '2026-10-11T06:59:17Z'
+  support: supports
+  summary: Official retained taxonomy HTML identifies Thalassiosira pseudonana CCMP1335
+    at no-rank NCBI296543.
+  snapshot_sha256: c56f06d798137f113b7fad2236a0370c5d389fc9848141c1769fc6eb2fb8d1ee
+- evidence_id: criticality
+  kind: authority
+  reference: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  locator: Final 2025 notice, p 50497, Silicon row
+  accessed_at: '2026-10-11T06:59:17Z'
+  support: supports
+  summary: United States, Department of the Interior/USGS Final List of Critical Minerals,
+    edition published 7 November 2025, individually names Silicon. The record scopes
+    the commodity-to-element mapping without inheriting critical status to every compound
+    or feed.
+  snapshot_sha256: 9a1b55e3279774da456d08f1c941d59745dfee1f1a29cc9460d49f71e173e0b7
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1128/EC.00209-14
+  locator: Methods, results, discussion and figure captions
+  accessed_at: '2026-10-11T06:59:17Z'
+  support: supports
+  summary: Read culture conditions, silicon uptake/silica incorporation methods, joint
+    SIT knockdown results and Figures 6–8. Uptake is net medium disappearance; incorporation
+    is PDMPO fluorescence. Joint SIT1/SIT2 knockdown and broad SIT antiserum cannot
+    establish an individual transporter or sensing causality.
+  snapshot_sha256: 72dc7db463e613f5c9b01a1e1ca51bb76ac1c2a7fcf9f5d0d417ddab03111f45
+- evidence_id: figures
+  kind: primary_source
+  reference: https://doi.org/10.1128/EC.00209-14
+  locator: Figures 6, 7 and 8, original image pixels
+  accessed_at: '2026-10-11T06:59:17Z'
+  support: supports
+  summary: Visually inspected Figures 7/8; independently acquired and viewed Figure
+    6. Joint knockdowns reduce measured protein; R14 RNA/protein differ. At 20 µM
+    uptake/incorporation delays occur; Figure 8C at 200 µM reports a null incorporation
+    result, not direct uptake. Error bars n=3 SD do not define biological replication.
+  snapshot_sha256: 72dc7db463e613f5c9b01a1e1ca51bb76ac1c2a7fcf9f5d0d417ddab03111f45
+- evidence_id: search
+  kind: search
+  reference: Independent review-session web searches and local source inventory
+  locator: Exact DOI correction/retraction and hidden/ignored matching
+  accessed_at: '2026-10-11T06:59:17Z'
+  support: context_only
+  summary: No matching correction/retraction notice appeared in the inspected first
+    result sets. This bounded search does not establish literature-wide absence. Primary
+    internal counterevidence and untested alternatives were explicitly checked.
+  search_scope: 'Queries: "10.1128/EC.00209-14" correction OR retraction; "10.3390/molecules23030627"
+    correction OR retraction. First returned result sets only; original articles and
+    related papers returned. rg --no-ignore --hidden searched data, research and reviews
+    for cmmmech:silicon, cmmmech:tin, exact DOIs and ChEBI IDs; target/dossier/frontier
+    references checked, not a home-directory-wide inventory. Provided raw primary
+    files and receipts were separately read and hashed. Live review-session official
+    ChEBI/NCBI web opens returned internal errors; current-session curator-acquired
+    authority HTML/GenBank were independently inspected instead.'
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Element and organism identity
+  outcome: supported
+  summary: Atomic identity, substrate forms and the explicitly scoped organism assignment
+    are defensible.
+  target_ids:
+  - cmmmech:silicon
+  evidence_ids:
+  - record
+  - identity
+  - organism
+- assessment_id: criticality
+  area: evidence
+  topic: Jurisdiction, list and edition
+  outcome: supported
+  summary: Dated USGS 2025 designation supports the record's scoped material mapping.
+  target_ids:
+  - cmmmech:silicon
+  evidence_ids:
+  - record
+  - criticality
+- assessment_id: mechanism
+  area: evidence
+  topic: Conditions, controls and organism-specific outcome
+  outcome: supported
+  summary: The silicon record defensibly scopes conditional joint SIT perturbation,
+    net dissolved silicon depletion and silica incorporation in CCMP1335. It retains
+    the high-supply null result, proxy/replication limits and untested sensing alternatives.
+    No actionable curation defect found.
+  target_ids:
+  - cmmmech:silicon
+  evidence_ids:
+  - record
+  - primary
+  - figures
+  dimensions:
+  - name: material_form
+    value: Si(OH)4 supplied in culture; silica incorporation proxy; silicon element
+      root.
+    definition: No elemental silicon production or mineral/commodity equivalence.
+    evidence_ids:
+    - record
+    - primary
+    - figures
+  - name: microbial_role
+    value: Living Thalassiosira pseudonana CCMP1335, joint SIT1/SIT2 knockdowns compared
+      with WT.
+    definition: Genetic perturbation is not isolated individual-gene causality or
+      proof of sensing.
+    evidence_ids:
+    - record
+    - primary
+    - figures
+  - name: conditions
+    value: 18 °C continuous light cultures; starvation, 20 µM pulse; 200 µM incorporation
+      comparator.
+    definition: Methods specify 24 h starvation while Figure 7 says overnight; record
+      preserves difference.
+    evidence_ids:
+    - record
+    - primary
+    - figures
+  - name: controls
+    value: WT comparator and higher silicon condition; no main-text abiotic depletion
+      blank or genetic rescue.
+    definition: Net disappearance and PDMPO fluorescence remain distinct proxies.
+    evidence_ids:
+    - record
+    - primary
+    - figures
+  - name: quantity
+    value: Figure 7 delayed net medium depletion; Figure 8 lower incorporation at
+      20 µM, reported null at 200 µM.
+    definition: n=3 SD, biological versus technical scope undefined; no isolated product
+      yield.
+    evidence_ids:
+    - record
+    - primary
+    - figures
+  - name: deployment
+    value: Laboratory mechanistic perturbation.
+    definition: No industrial operation or recovery process demonstrated.
+    evidence_ids:
+    - record
+    - primary
+    - figures
+- assessment_id: provenance
+  area: provenance
+  topic: Actual events and frozen working inputs
+  outcome: supported
+  summary: 'The inspected CREATE sidecar names the actual actor codex/GPT-6/codex
+    and issue 39; distinct inline timestamp and linked history are coherent. All successful
+    acquisition receipt hashes were rechecked: 31 receipt rows, no mismatches among
+    rows carrying hashes.'
+  target_ids:
+  - cmmmech:silicon
+  evidence_ids:
+  - record
+- assessment_id: search
+  area: completeness
+  topic: Bounded contrary-evidence and duplication search
+  outcome: supported
+  summary: Primary internal limitations were retained; scoped searches are not proof
+    of exhaustive literature completeness.
+  target_ids:
+  - cmmmech:silicon
+  evidence_ids:
+  - search
+  - primary
+findings: []
+actions: []
+limitations:
+- Silicon supplementary constructs/alignments/predictions could not be retrieved through
+  the attempted curator routes; relevant main-text/figure claims were checked, but
+  no unviewed supplement detail is accepted.
+- Main methods and figure starvation wording differ; measured pH, abiotic depletion
+  blanks and genetic rescue are not established.
+- PDMPO fluorescence and medium depletion are proxies, and n=3 error bars do not specify
+  biological independence.
+- High-supply Figure 8C reports an incorporation null without proving the source's
+  stronger sensing hypothesis.
+- Correction/retraction searches are bounded first result sets, not exhaustive registries.
+  Live review-session database opens failed; the curator's retained authority responses
+  were independently read and hash checked.
+- 'No native quantitative observations were manufactured: these values lack the exact
+  mg/kg source cells and analysis dates required by the observation contract.'
+notes:
+- Working changes comprise new round9 records/histories/dossiers and independently
+  saved reviews on the trusted base; this observation is not a committed-source review.
+- Curator raw evidence is outside Git at /private/tmp/cmm-round9-si-sn-raw; reviewer
+  derived text and additional silicon Figure 6 acquisition/receipt are at /private/tmp/cmm-round9-si-sn-independent.
+links:
+- https://github.com/CultureBotAI/CMMMech/issues/39
+```
