@@ -184,6 +184,8 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Metal grinding sludge](data/records/metal-grinding-sludge.yaml) | Culture-associated acid leaching of metalworking residue | Missing matched abiotic controls and residue mass prevent verified recovery yields |
 | [Metalliferous black shale](data/records/metalliferous-black-shale.yaml) | Three separate culture-associated leaching studies | Pretreated-feed denominators, null comparisons and source figure/dose conflicts remain explicit |
 | [Ground waste tire rubber](data/records/ground-waste-tire-rubber.yaml) | Partial microbial rubber transformation | Chemical pretreatment is separate; no demonstrated microbial zinc extraction |
+| [Oxidized-zinc ore](data/records/oxidized-zinc-ore.yaml) | Culture-associated dissolution of a natural mixed ore | Missing numerical abiotic metal results, strain-name conflict and unreconciled yield accounting remain explicit |
+| [Bastnaesite mineral family](data/records/bastnaesite.yaml) | Bacterial dissolution of a characterized natural mineral separate | Species identity is unresolved; contact effects, source-data conflicts and product recovery remain qualified |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -219,7 +221,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [twenty-sixth expansion reviews](research/ingests/round26-20261011-publication.md),
 [twenty-seventh expansion reviews](research/ingests/round27-20261011-publication.md),
 [twenty-eighth expansion reviews](research/ingests/round28-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round28-frontier-20261011.md), and
+[twenty-ninth expansion reviews](research/ingests/round29-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round29-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

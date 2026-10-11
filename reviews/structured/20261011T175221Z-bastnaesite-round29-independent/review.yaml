@@ -1,0 +1,510 @@
+schema_version: 1.0.0
+review_id: 20261011T175221Z-bastnaesite-round29-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of bastnaesite fluorocarbonate family
+started_at: '2026-10-11T17:46:34.780293Z'
+finished_at: '2026-10-11T17:52:21.529437Z'
+reviewer:
+  identity: Codex /root/round27_superalloy
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: A different packaging agent authored the record, CREATE sidecar
+    and source dossier. This reviewer authored only the separate round29 tungsten
+    source deferral. Reviewer captured exact inputs before assessment, independently
+    read the complete accepted primary postprint and supplement, visually inspected
+    all eight main figures, both main tables and all five supplement pages, parsed
+    the actual workbook XML independently, checked live authority/database identifiers
+    and bounded literature notices, and made no target/history/dossier edits. Shared
+    worktree and curator-acquired primary artifacts are disclosed. Root executed final
+    batch gates; reviewer independently read and hash-verified their terminal receipts
+    and recaptured canonical inputs afterward.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The exact frozen record supports a narrowly bounded mineral family and source-specific
+  laboratory culture-associated REE mobilization. Primary methods, figures and deposited
+  workbook agree with maintained concentrations, conditions and controls. The record
+  accurately preserves internal pH, growth, composition and chemical-leaching discrepancies
+  without asserting metabolite necessity, a separately quantified contact effect,
+  isolated recovery or industrial deployment. No actionable scientific defect was
+  identified. Named validation and all required final batch/history gates passed with
+  unchanged inspected hashes.
+source:
+  git_revision: 7629ab50846229c87987d7fa0ac12389212bb70f
+  state: working_tree
+  inputs:
+  - path: data/records/bastnaesite.yaml
+    sha256: 719dafc38a258c140dafa5c718a651d19c7300c9aa0643fe293898d56f1b6448
+    role: target
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/bastnaesite/2026-10-11T174551Z-codex-b64d41.yaml
+    sha256: 4b6f618c7e59982983f37a60a4ef3c95b40e1f9ea3c53073ba014c6b30b148a7
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Every maintained field of the frozen bastnaesite record and linked
+    CREATE sidecar, including all adopted quantitative claims, identity, species/isolate
+    limits, primary source provenance, conditions, controls, causal limits and deployment
+    scope.
+  selection: One assigned new round29 record curated by a different agent.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:bastnaesite
+  exclusions:
+  - target: Uncurated 2018 actinobacterial and later Acidithiobacillus studies, raw
+      instrument-data reprocessing and author isolation study
+    reason: The accepted mechanism is fully supported by the separate GCA 2025 primary
+      study. Other studies and isolate authentication require their own complete source
+      review; no such claims are imported. Workbook values are independently checked,
+      but raw mass-spectrometry or diffraction processing is not rerun.
+targets:
+- target_id: cmmmech:bastnaesite
+  path: data/records/bastnaesite.yaml
+  label: Bastnaesite fluorocarbonate family
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/bastnaesite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named-record validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate
+    data/records/bastnaesite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Reviewer executed; terminal exit 0, Checked 1 record(s); 0 failed. Log
+    /private/tmp/cmm-round29-bastnaesite-independent/named-validation.log; SHA-256
+    6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e.
+  target_ids:
+  - cmmmech:bastnaesite
+- check_id: final_batch
+  name: Final batch checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root executed; terminal exit 0. All checks passed; 308 passed, 3 skipped
+    in 114.50 s; 176 records and 200 histories valid. Reviewer independently read
+    the complete log and verified its checksum. Log /private/tmp/cmm-round29-final-batch.log;
+    SHA-256 4d068f73df6cf96a86361f4545aafa3160fe927582897ed32f6079ec73fe3524.
+  target_ids:
+  - cmmmech:bastnaesite
+- check_id: final_nonempty
+  name: Final nonempty corpus validation
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root executed; terminal exit 0. 176 records; zero failures. Reviewer independently
+    read the complete log and verified its checksum. Log /private/tmp/cmm-round29-final-nonempty.log;
+    SHA-256 8e84e7b84cf9805a1269b968a41c6b48b5441359f5cfc1a3649869bd9f62c475.
+  target_ids:
+  - cmmmech:bastnaesite
+- check_id: final_history
+  name: Final trusted-base history validation
+  command: uv run --locked cmmmech validate-history --base 7629ab50846229c87987d7fa0ac12389212bb70f
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root executed; terminal exit 0. 200 history records; zero errors. Reviewer
+    independently read the complete log and verified its checksum. Log /private/tmp/cmm-round29-final-history.log;
+    SHA-256 2a0eff3462c5e890f727ecd08826d92842cd199a2fc0d94de0f7553a667861f3.
+  target_ids:
+  - cmmmech:bastnaesite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/bastnaesite.yaml
+  locator: Every field of exact frozen working-tree record
+  accessed_at: '2026-10-11T17:52:21.529437Z'
+  support: supports
+  summary: Family-level mineral_group, natural Ce/La-rich separate and laboratory
+    mechanism are clearly distinct from a formal member species, whole ore, REE elements
+    or recovered commodity. No criticality claim is inherited.
+  snapshot_sha256: 719dafc38a258c140dafa5c718a651d19c7300c9aa0643fe293898d56f1b6448
+- evidence_id: main
+  kind: primary_source
+  reference: https://gfzpublic.gfz.de/pubman/item/item_5034287_3/component/file_5034752/5034287.pdf
+  locator: Complete 39-page institutional postprint; methods pp8–13, Figures 1–8 and
+    Tables 1–2 p39; discussion pp18–30
+  accessed_at: '2026-10-11T17:52:21.529437Z'
+  support: supports
+  summary: Complete primary text read and all original figures/tables visually inspected.
+    Methods support the Renju Bt isolate label, Maoniuping separate, 48–74 micrometre
+    preparation, 0.5 g/100 mL triplicate cultures, medium, 30 days at room temperature/180
+    rpm and distinct controls. Fig5 supports concentration outcomes. Figures2 and8
+    contradict late-pH and growth generalizations in prose; Fig6 shows the lower crotonic
+    pH3 point. Fig7 EDS does not uniquely identify a secondary phase. Discussion acknowledges
+    unsplit sorption/precipitation and hypothetical clay preservation. The source
+    is the GFZ postprint, not an acquired publisher main PDF.
+  snapshot_sha256: 9f9d2b33987fb6ec9eee22de866f743fdbd0402bf69c66aa6a510315f2995a81
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S001670372500105X-mmc1.pdf
+  locator: Complete 5-page original publisher supplement, Texts S1–S2, Table S1 and
+    Figures S1–S2
+  accessed_at: '2026-10-11T17:52:21.529437Z'
+  support: supports
+  summary: All five original pages inspected. TextS1 describes MS2 database annotations,
+    missing-value half-minimum imputation and internal-standard normalization rather
+    than calibrated metabolite molarities. TextS2 uses semiquantitative reference-intensity-ratio
+    XRD. TableS1 distinguishes the eight screened acids and two additional acids.
+    FigureS2 supports no obvious bulk phase change; FigureS1 ratios are normalized
+    to feed and are not extraction percentages.
+  snapshot_sha256: 5ca2571afac44acd054c4f90568309e04c07902fb772fa2dfad5999569d7409e
+- evidence_id: workbook
+  kind: primary_source
+  reference: https://data.mendeley.com/datasets/6n6d3fkkpc/1
+  locator: ResearchData.xlsx, all seven sheet identities and actual OOXML values;
+    Data2, Data3, Data5 and Data6 all quantitative rows
+  accessed_at: '2026-10-11T17:52:21.529437Z'
+  support: supports
+  summary: Reviewer independently parsed the original workbook rather than relying
+    on curator-extracted JSON. Depositor SHA-256 matches bytes. Data5 day30 sums are
+    1698.11040, 84.39547 and 489.56986 micrograms/L, with La642.91882 and Ce805.11228
+    in Exp-Biow. Data2 final means are 3.75667,5.75667,4.44 for the three arms; Data3
+    first-day unbuffered mean is70,000,000 versus1,233,333.33333 CFU/mL initially.
+    Data6 gives tartaric130.89232/gluconic134.80931 at20micromolar, initialpH6, and
+    crotonic1793.7623 atpH3. pH6 initial seven-acid cells include low values up to2.82426
+    and blanks; no blank is recoded as zero. Workbook Data5 contains three inoculated
+    mineral arms only, not numerical sterile/no-mineral controls. Data4 is normalized
+    annotated metabolomics; Data1 and7 contain XRD/SEM-EDX supporting arrays, not
+    independent replication.
+  snapshot_sha256: fac8f9bbf5fe5c081ea0a1ce58c3d204e698b7848be350c459246fdc407f2654
+- evidence_id: dataset_metadata
+  kind: database
+  reference: https://data.mendeley.com/datasets/6n6d3fkkpc/1
+  locator: Live official landing page; curator-acquired v2 dataset API and depositor
+    file checksum
+  accessed_at: '2026-10-11T17:52:21.529437Z'
+  support: supports
+  summary: Independently opened landing page confirms version1,29October2024,DOI10.17632/6n6d3fkkpc.1
+    andCCBY4.0. Author list/title and publisher Data availability connect this same-study
+    data to the GCA paper; the dataset predates final article publication without
+    constituting a separate experiment.
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September2026 IMA-CNMNC master list, original PDFp21; official PDF independently
+    opened live
+  accessed_at: '2026-10-11T17:52:21.529437Z'
+  support: supports
+  summary: Original table confirms separately named bastnäsite-(Ce),-(La),-(Nd),-(Y)
+    entries and ideal fluorocarbonate formulas. The record explicitly defines its
+    family boundary and does not claim all members of the broader structural group
+    or identify the feed as one formal member.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: taxon
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1428&mode=Info
+  locator: Live official current name,TaxonomyID and species rank independently opened11October2026
+  accessed_at: '2026-10-11T17:52:21.529437Z'
+  support: supports
+  summary: NCBITaxon:1428 resolves to Bacillus thuringiensis at species rank. It authenticates
+    the name mapping, not the unnamed experimental isolate or a type-strain accession.
+    The main paper refers to an earlier isolation study; the maintained record preserves
+    that boundary.
+- evidence_id: metadata
+  kind: primary_source
+  reference: https://www.sciencedirect.com/science/article/pii/S001670372500105X
+  locator: Live publisher title/authors/DOI, volume394 pp43–52 and data-availability
+    link; curator-acquired Crossref payload
+  accessed_at: '2026-10-11T17:52:21.529437Z'
+  support: supports
+  summary: Publisher metadata agrees with He,Ma,Li,Liu,Liang,Zhu,He(2025),GCA394:43–52
+    andDOI10.1016/j.gca.2025.02.027. Crossref payload contains no update-to entry
+    and empty relation. The local filename gca2025-crossmark.json is the same Crossref
+    works payload as gca2025-crossref.json and is not treated as an independent Crossmark
+    status response.
+  snapshot_sha256: 80c7043eb2cb7be7a79aae3c397dad83433cf06ce449beff34423a0621de7ceb
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round29-bastnaesite-independent/dedup.json
+  locator: Exact command,bounds,timestamp,exit0 and421 matching lines; dedup.txt
+  accessed_at: '2026-10-11T17:52:21.529437Z'
+  support: supports
+  summary: Independent hidden/ignored-inclusive and symlink-following search of current/original
+    records,research,reviews,history, accepted-source raw and explicitly referenced
+    preceding raw paths found the new target as the only matching accepted record
+    in scope. Other hits are discovery, primary text or provenance context. No machine-wide
+    absence is claimed.
+  snapshot_sha256: 6f650c1a87372c7375d2ead4c7de7bebadfc927d68986356f130bfdafd9164ef
+  search_scope: rg --no-ignore --hidden --follow -n -i; variants bastnaesite/bastnasite/bastnäsite,
+    DOI10.1016/j.gca.2025.02.027,6n6d3fkkpc,Maoniuping,PIIS001670372500105X. Exact16
+    path arguments in receipt; all exist. Git/dependency internals and unrelated home/tmp
+    excluded. Binary source images inspected separately.
+- evidence_id: notices
+  kind: search
+  reference: Independent web search11October2026
+  locator: First returned sets for DOI/title plus correction,retraction,erratum or
+    criticism
+  accessed_at: '2026-10-11T17:52:21.529437Z'
+  support: supports
+  summary: No affecting correction/retraction notice was identified in the bounded
+    returned results, publisher page or inspected Crossref relations. This does not
+    establish exhaustive absence of notices.
+  search_scope: 'Exact queries: "10.1016/j.gca.2025.02.027" correction retraction;
+    "Microbial-mediated bastnaesite dissolution" criticism correction; "10.1016/j.gca.2025.02.027"
+    erratum. First returned sets only; no pagination/date restriction. DOI direct
+    open returned internal error; publisher indexed page and GFZ full primary were
+    available.'
+- evidence_id: counterevidence
+  kind: search
+  reference: Independent web search11October2026
+  locator: Bastnaesite culture/abiotic/counterevidence query and internal full-primary
+    contrasts
+  accessed_at: '2026-10-11T17:52:21.529437Z'
+  support: context_only
+  summary: The first returned set was mostly the accepted study and unrelated Bacillus
+    literature, with no independently verified direct contrary replication. No external
+    study is treated as a refutation from an abstract. Adversarial weight comes from
+    fully inspected within-study controls, unmatched acid assays, dialysis pH/biomass
+    confounding and source-internal discrepancies accurately retained by the record.
+  search_scope: 'Exact query: bastnaesite Bacillus thuringiensis dissolution abiotic
+    contrary ligand control. First returned set only; no exhaustive literature claim.'
+- evidence_id: history
+  kind: record_content
+  reference: history/records/bastnaesite/2026-10-11T174551Z-codex-b64d41.yaml
+  locator: Complete linked CREATE session and distinct inline curation_history event
+  accessed_at: '2026-10-11T17:52:21.529437Z'
+  support: supports
+  summary: Sidecar identifies actual Codex/GPT-6/codex actor, UTC17:45:51Z, target
+    path/slug and source-specific curation. Inline event17:45:52+00:00 is a distinct
+    provenance event. Neither asserts this independent approval or invents earlier
+    authorship. Both accurately limit accepted studies and defer unacquired main articles.
+  snapshot_sha256: 4b6f618c7e59982983f37a60a4ef3c95b40e1f9ea3c53073ba014c6b30b148a7
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Family boundary, feed identity and external identifiers
+  outcome: supported
+  summary: The named fluorocarbonate family is a defensible root for a natural separate
+    without unsupported formal member assignment. IMA species boundaries, species-only
+    NCBI mapping and absent inherited criticality are explicit. Corpus search supplies
+    bounded dedup support.
+  target_ids:
+  - cmmmech:bastnaesite
+  evidence_ids:
+  - record
+  - ima
+  - taxon
+  - dedup
+  dimensions:
+  - name: material_form
+    value: mineral_group; natural Ce/La-rich bastnaesite separate
+    definition: Four named fluorocarbonate species delimit the record; broader hydroxyl-bearing
+      group and whole bastnaesite-bearing rock are excluded.
+    evidence_ids:
+    - record
+    - ima
+    - main
+  - name: criticality
+    value: Not asserted
+    definition: No jurisdiction/list/edition is claimed or inherited from constituent
+      REE; omission is not a noncriticality claim.
+    evidence_ids:
+    - record
+  - name: organism
+    value: Bacillus thuringiensis,NCBITaxon:1428; unnamed Renju wild isolate
+    definition: Species mapping does not authenticate a strain,collection stock or
+      genome.
+    evidence_ids:
+    - main
+    - taxon
+- assessment_id: experiment
+  area: evidence
+  topic: Biomass, pretreatment, flask conditions and controls
+  outcome: supported
+  summary: All maintained methods match the primary. Cells are living washed exponential-phase
+    inoculum; controls include uninoculated mineral and mineral-free culture arms
+    in both media. Record reconciles the source-control naming and maintains room
+    temperature as unspecified.
+  target_ids:
+  - cmmmech:bastnaesite
+  evidence_ids:
+  - record
+  - main
+  dimensions:
+  - name: pretreatment
+    value: 48–74 micrometre mineral; >10washes;freeze-dried
+    definition: Maoniuping mineral grains crushed in agate, not a generic pure chemical
+      endmember.
+    evidence_ids:
+    - main
+  - name: conditions
+    value: 0.5g/100mL in250mL flask;approximately10^6CFU/mL;30d;180rpm;room temperature
+    definition: Triplicate reactors; specified glucose/salt medium initiallypH6,with
+      or without20mMMES.
+    evidence_ids:
+    - main
+  - name: controls
+    value: Uninoculated mineral,mineral-free cells,buffered/unbuffered,and10kDaMWCO
+      bags
+    definition: Bags inhibit cell-mineral contact but differ in pH and cell trajectories;
+      not a fully matched causal contact contrast.
+    evidence_ids:
+    - main
+    - workbook
+- assessment_id: outcomes
+  area: quantity
+  topic: Aqueous measurements, missing values and source discrepancies
+  outcome: supported
+  summary: Actual workbook and original figure values match maintained rounded concentrations.
+    Filtration/ICP-MS defines an operational solution fraction; no extraction-percent
+    denominator is invented. Source pH,growth,crotonic and XRD/XRF discrepancies are
+    accurately retained.
+  target_ids:
+  - cmmmech:bastnaesite
+  evidence_ids:
+  - record
+  - main
+  - workbook
+  - supplement
+  dimensions:
+  - name: measurement
+    value: 0.22micrometre filtrate ICP-MS;micrograms/L
+    definition: Aqueous elemental concentration after2%HNO3 dilution,not total recovered
+      mineral fraction or isolated product.
+    evidence_ids:
+    - main
+  - name: day30
+    value: Approximately1698unbuffered,84buffered,490bags micrograms/L totalREE
+    definition: Sum ofLa,Ce,Pr,Nd andotherREE means in Data5. Controls only qualitatively
+      near ICP-MS detection limits in primary; numerical detection limits absent.
+    evidence_ids:
+    - main
+    - workbook
+  - name: contradictions
+    value: pH3.5 versus~3.7;buffered drift;earlygrowth>10fold;crotonic range;quartz
+      estimate
+    definition: Source-internal inconsistencies are not silently resolved, and low
+      chemical means/blanks do not establish exact zero.
+    evidence_ids:
+    - main
+    - workbook
+    - supplement
+- assessment_id: causation
+  area: evidence
+  topic: Organic acids, contact, phases and deployment limits
+  outcome: supported
+  summary: Culture-associated release is supported; acidification and chemical assays
+    support plausibility. The record correctly refuses metabolite necessity or quantitative
+    independent contact attribution. Relative metabolomics, unmatched96h chemistry,
+    nonunique surface EDS and unsplit cellular sorption/reprecipitation constrain
+    stronger mechanisms and recovery.
+  target_ids:
+  - cmmmech:bastnaesite
+  evidence_ids:
+  - record
+  - main
+  - supplement
+  - workbook
+  dimensions:
+  - name: metabolites
+    value: Relative normalized MS annotations
+    definition: Missing-value processing and database annotation do not give calibrated
+      culture molarities; exogenous20micromolar assays show capability rather than
+      endogenous causal share.
+    evidence_ids:
+    - supplement
+    - workbook
+  - name: causal_controls
+    value: 96h chemical versus30d culture; dialysis with differing pH/biomass
+    definition: No metabolite-deletion or equalized-contact test isolates necessary
+      acid or direct-contact effects.
+    evidence_ids:
+    - main
+    - workbook
+  - name: deployment
+    value: Laboratory only; clay retention remains inference
+    definition: Neither a direct clay adsorption assay,natural weathering budget,closedREE
+      mass balance nor isolated industrial product is established.
+    evidence_ids:
+    - main
+    - record
+- assessment_id: provenance
+  area: provenance
+  topic: Source verification, curation history and frozen review state
+  outcome: supported
+  summary: Primary and data identifiers resolve to the stated study and separate same-study
+    data version. Actual actor/timestamps and linked CREATE scope agree. Canonical
+    pre/postgate inputs match exactly and all required checks passed.
+  target_ids:
+  - cmmmech:bastnaesite
+  evidence_ids:
+  - record
+  - metadata
+  - dataset_metadata
+  - history
+  - notices
+  dimensions:
+  - name: revision
+    value: 7629ab50846229c87987d7fa0ac12389212bb70f
+    definition: Working-tree review at durable base with exact frozen target and context
+      hashes; no committed-byte attestation inferred.
+    evidence_ids:
+    - record
+    - history
+  - name: source_access
+    value: Complete39page institutional postprint,5page publisherSI andoriginal7sheet
+      workbook
+    definition: The curator dossier is a handoff; independent judgement used primary
+      text,pixels and actual workbook values.
+    evidence_ids:
+    - main
+    - supplement
+    - workbook
+findings: []
+actions: []
+limitations:
+- Unnamed wild-isolate authentication remains outside the inspected main/SI; NCBI
+  species identity is not a strain certificate.
+- Control concentrations are reported only as near detection limits; numeric detection
+  limits and control rows are not supplied in the supporting workbook. Main figures
+  and workbook summarize means/SD rather than underlying raw biological replicates.
+- Metabolomic annotations are relative, normalized and partly imputed. Added-acid
+  activity does not quantitatively assign endogenous concentrations or establish acid
+  necessity.
+- Dialysis changes pH,planktonic counts and potentially transport. No isolated direct-contact
+  effect,cell sorption share or secondary precipitate mass balance is measured.
+- Semiquantitative97/3phase estimate and0.635wt%SiO2 are unresolved; no formal mineral-member
+  assignment is established by bulk oxides. BufferedpH drift,late-pH prose,growth
+  andcrotonic-range discrepancies remain in the source and are retained.
+- The accepted primary is the complete institutional postprint; the publisher main
+  PDF was not independently acquired. Other uncurated sources and the earlier isolation
+  study remain outside this scientific review.
+- Natural clay retention and weathering budgets are inferred,not direct assays or
+  industrial demonstrations. Bounded notice/counterevidence and filesystem searches
+  are not exhaustive.
+notes:
+- Preassessment canonical inspect and final postgate inspect are byte-for-byte identical.
+  All four inspected input hashes were independently recomputed; maintained record,history
+  andsource dossier were not edited.
+- No correction or follow-up defect is invented for scientific limitations already
+  accurately represented. Empty findings applies only to this frozen target and declared
+  scope.
+- Independent workbook extraction and bounded-search receipts remain outside Git under
+  /private/tmp/cmm-round29-bastnaesite-independent. Raw originals remain under /private/tmp/cmm-round29-bastnaesite-research/raw
+  with acquisition/manifest in the curator dossier.
+- Root-executed required batch receipts at /private/tmp/cmm-round29-final-terminal.json
+  were independently read and each of their three log hashes verified. Review coverage/provenance
+  validation follows saving both independent round29 bundles.
+tags:
+- round29
+- independent
+- scientific-review
+- mineral-group

@@ -1,0 +1,137 @@
+{
+  "review_id": "20261011T180127Z-staging-correction",
+  "utc_timestamp": "2026-10-11T18:01:27.899296+00:00",
+  "reviewer": "Codex /root/round27_eaf_slag (GPT-6)",
+  "reviewed_revision": "7629ab50846229c87987d7fa0ac12389212bb70f",
+  "reviewed_state": "corrected_working_tree_compared_with_old_index",
+  "worktree": "/private/tmp/CMMMech-expansion-round29-20261011",
+  "predecessor": "reviews/publication/20261011-round29/20261011T175703Z-readiness-final.json",
+  "authorship_disclosure": "Reviewer curated zinc but authored neither the original bastnaesite dossier nor this packaging correction. This successor independently assesses only the narrow documentation/hash correction and preservation, not a new scientific review of zinc.",
+  "scope": "Issue105 staging whitespace defect, exact old/new dossier and manifest bytes, prior final-audit inputs and trusted-base scientific/research/review/history preservation. Earlier timestamped audits are left untouched.",
+  "inputs": [
+    {
+      "path": "reviews/publication/20261011-round29/20261011T175703Z-readiness-final.md",
+      "sha256": "1a8f5758090db899e0e4dd5844252af59e6fce177c2813a972a2c9519e572430"
+    },
+    {
+      "path": "reviews/publication/20261011-round29/20261011T175703Z-readiness-final.json",
+      "sha256": "a8c6c6b6bcb1f16f52663e3bcdca60dbfdd9fe8872abe118dee4bf4b7a334771"
+    },
+    {
+      "path": "research/sources/round29-bastnaesite/20261011T174824Z-source-investigation.md",
+      "sha256": "d286bb99ebdbbc4c7a7f2a4fc0d9b15a9d4a77f8a353f4e2047dab83012cfcb3"
+    },
+    {
+      "path": "research/ingests/round29-frontier-20261011.json",
+      "sha256": "740b7cce8d662a53ec6c2bd5c674107d892b019a866894306fb83dc783e39c03"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-staging-correction-verification.json",
+      "sha256": "10696c8ad6dca694641ba50f674bfdf608b1a066aaff7354d0562f46a0c616ab"
+    },
+    {
+      "path": "/private/tmp/cmm-round29-issue-whitespace.md",
+      "sha256": "f40fda87f4dd88b74bfb573e8deaf04f45536559eb7fb59038da9c1fb3692cda"
+    }
+  ],
+  "changes": [
+    {
+      "path": "research/sources/round29-bastnaesite/20261011T174824Z-source-investigation.md",
+      "staged_sha256": "a263f334fe5805905121127107c685ad50f7bcf21ad47ea9a653d803c7f53a52",
+      "working_sha256": "d286bb99ebdbbc4c7a7f2a4fc0d9b15a9d4a77f8a353f4e2047dab83012cfcb3",
+      "staged_bytes": 11530,
+      "working_bytes": 11524,
+      "changed_lines": [
+        3,
+        4,
+        5
+      ],
+      "removed_ascii_spaces": 6
+    },
+    {
+      "path": "research/ingests/round29-frontier-20261011.json",
+      "staged_sha256": "2c5c7ee760efe624644e4337bbdc7035c00fc9228b5c0420f51dd7b9abf4bde8",
+      "working_sha256": "740b7cce8d662a53ec6c2bd5c674107d892b019a866894306fb83dc783e39c03",
+      "staged_bytes": 14850,
+      "working_bytes": 14850,
+      "only_source_hash_changed": true
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "round29-staging-whitespace",
+      "severity": "minor",
+      "issue": "https://github.com/CultureBotAI/CMMMech/issues/105",
+      "location": "research/sources/round29-bastnaesite/20261011T174824Z-source-investigation.md:3-5",
+      "initial_observation": "The staged dossier used Markdown hard-break trailing spaces on three metadata lines. git diff --cached --check returns exit2 for those lines, violating the publication whitespace gate.",
+      "scientific_effect": "None. The six removed ASCII spaces carry formatting only; no scientific text, source conclusion, record, history or native scientific review changed.",
+      "correction": "Remove the two trailing spaces from each of lines3,4,5; replace only the matching dossier SHA256 in the cohort manifest.",
+      "status": "resolved_in_working_tree",
+      "resolution_evidence": "Exact byte comparisons and parsed-manifest equality after normalizing the one source hash; corrected worktree whitespace checks exit0. The index deliberately still held the old snapshot when inspected.",
+      "remaining_gate": "Parent must restage corrected files and this successor, then obtain git diff --cached --check exit0 before commit. Issue105 closure is intended through the PR; no completed closure is claimed."
+    }
+  ],
+  "findings_by_severity": {
+    "blocker": 0,
+    "major": 0,
+    "minor": 1
+  },
+  "unresolved_corrective_content_findings": 0,
+  "checks": [
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "HEAD",
+        "--",
+        "research/sources/round29-bastnaesite/20261011T174824Z-source-investigation.md",
+        "research/ingests/round29-frontier-20261011.json"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_code": 2,
+      "stdout": "research/sources/round29-bastnaesite/20261011T174824Z-source-investigation.md:3: trailing whitespace.\n+UTC: 2026-10-11T17:48:24.998657+00:00  \nresearch/sources/round29-bastnaesite/20261011T174824Z-source-investigation.md:4: trailing whitespace.\n+Curator: codex (GPT-6), author of the new record; this is **not** its independent scientific review.  \nresearch/sources/round29-bastnaesite/20261011T174824Z-source-investigation.md:5: trailing whitespace.\n+Worktree: `/private/tmp/CMMMech-expansion-round29-20261011`  \n",
+      "stderr": ""
+    }
+  ],
+  "preservation": {
+    "all_other_prior_audit_inputs_unchanged": true,
+    "new_records_histories_native_reviews_unchanged": true,
+    "prior_tracked_files_checked": 1223,
+    "prior_tracked_file_differences": [],
+    "scientific_validation_receipts_remain_applicable": true,
+    "full_tests_repeated": false
+  },
+  "corrections": [
+    "Three Markdown hard-break space pairs removed.",
+    "Single source SHA256 refreshed in the manifest.",
+    "Timestamped successor records the original minor finding and exact correction without modifying earlier reviews."
+  ],
+  "unresolved_questions": [
+    "Staged gate still needs the corrected bytes restaged by the parent; old-index failure is expected and explicitly recorded.",
+    "Issue105 remains subject to PR closure. Source evidence issues103and104 remain open and unrelated."
+  ],
+  "verdict": "pass_with_limitations",
+  "verdict_scope": "Narrow correction is resolved and independently verified in the working tree; commit requires the normal restaged whitespace gate.",
+  "publication_complete": false
+}
