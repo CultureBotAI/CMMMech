@@ -31,6 +31,13 @@ sources:
     this identifier does not identify the experimental isolate LR.
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
   accessed_on: '2026-10-11'
+- id: lu2026_concentrate
+  title: Lu et al. (2026). Influence and Mechanism of Vanadium, Nickel, and
+    Molybdenum Bioleaching from Black Shale by Energy Substrates. Minerals 16(2),
+    197. Separate molybdenite-concentrate experiment, Table 2, Sections 2.2-2.4
+    and 3.3, Figure 4; Figures 7, 12 and 17 concern black shale instead.
+  url: https://doi.org/10.3390/min16020197
+  accessed_on: '2026-10-11'
 mechanisms:
 - id: lr_mixed_specimen_leaching_limit
   name: Molybdenite persistence during culture-associated companion-sulfide leaching
@@ -114,6 +121,43 @@ mechanisms:
       addition basis ambiguous. The result is confined to this heterogeneous
       feed and assay; it does not establish universal resistance of molybdenite
       to microbial or chemical leaching under other conditions.
+  - source_ref: lu2026_concentrate
+    supports: context_only
+    explanation: A separate laboratory comparison in Sections 2.3 and 3.3 uses
+      the Mo-adapted consortium WZ-Q, not LR, with a mineral-processed molybdenite
+      concentrate containing reported Mo 12.40% and S 14.25% in Table 2. Its mine
+      origin, processing route and complete phase composition are unspecified.
+      The 30-day assay used 250 mL flasks, 10% w/v pulp, 10% v/v inoculum and 9K
+      medium with nominal initial pH 1.4; samples from one flask were collected
+      every five days for filtered-residue analysis. No matched uninoculated
+      concentrate series or flask replication is reported. The temperature,
+      agitation and working volume are not explicitly assigned to this assay;
+      the adjacent black-shale conditions and triplication are not transferred.
+      WZ-Q is an unresolved community, and no isolate or taxon identifier is
+      inferred for it. This is not a replication of the 2007 mixed-specimen assay.
+  - source_ref: lu2026_concentrate
+    supports: context_only
+    explanation: Figure 4b labels Mo and S as percentages in leaching residue,
+      showing a small Mo-content decline and a larger S-content decline.
+      Section 3.3 instead describes monitoring aqueous concentrations, leaving
+      the fraction assignment inconsistent. Section 2.4 reports residue digestion
+      and ICP-OES. Relative residue composition without residual-solid mass,
+      a Mo mass balance or concentrate-specific phase/speciation evidence does
+      not demonstrate Mo extraction or the authors' proposed sulfide-to-oxide
+      conversion. No extraction percentage or recovered product is assigned
+      to this concentrate. The 29.7% Mo result in Figure 7 and the SEM/XPS results
+      in Figures 12 and 17 concern separate black-shale arms and cannot supply
+      the missing concentrate evidence.
+  - source_ref: lu2026_concentrate
+    supports: context_only
+    explanation: Figure 4a begins near pH 1.7 despite the methods' initial pH
+      1.4, and the reference electrode for its potential values is unspecified.
+      The report calls WZ-Q moderately thermophilic in the concentrate methods
+      but does not give that assay's temperature. These method and accounting
+      limits prevent attributing the concentrate's compositional changes to
+      microbial activity or treating them as a refutation of the bounded LR
+      observation. Neither study establishes industrial deployment or universal
+      molybdenite resistance to leaching under other conditions.
 curation_history:
 - timestamp: '2026-10-11T19:48:23.814621+00:00'
   curator: codex (GPT-6; codex)
@@ -127,6 +171,14 @@ curation_history:
   summary: Addressed independent review F1 and issue 112 by retaining the source's
     temporal ambiguity instead of asserting a definite contradiction; all assay
     evidence remains unchanged.
+- timestamp: '2026-10-11T20:32:16.966796+00:00'
+  curator: codex (GPT-6; codex)
+  action: EDIT
+  summary: Added the separate WZ-Q concentrate assay as context only, retaining
+    residue-versus-solution ambiguity, missing controls and conditions, and the
+    distinction from black-shale extraction results; existing LR science remains
+    unchanged.
 history_refs:
 - history/records/molybdenite/2026-10-11T194752Z-codex-f27d24.yaml
 - history/records/molybdenite/2026-10-11T195350Z-codex-d5cc3c.yaml
+- history/records/molybdenite/2026-10-11T203155Z-codex-0ca7e2.yaml

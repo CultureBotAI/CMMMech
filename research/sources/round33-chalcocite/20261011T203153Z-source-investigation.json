@@ -1,0 +1,725 @@
+{
+  "recorded_at": "2026-10-11T20:31:53.117800+00:00",
+  "role": "curator source investigation, not independent review",
+  "worktree": "/private/tmp/CMMMech-expansion-round33-20261011",
+  "branch": "curate/cmm-expansion-round33-20261011",
+  "trusted_base": "bee4f42bb622ae0a0999f8f3e3dac31f14282278",
+  "baseline": "Parent reuse of immediately preceding successful same-base fresh-main checks; not rerun here.",
+  "decision": "One mineral record with explicitly source-reported mixed-separate leaching-index/potential observation; no verified extraction percentage, molecular causation or industrial deployment.",
+  "record": {
+    "path": "data/records/chalcocite.yaml",
+    "sha256": "1b6d4f56c629f2c029f8856734aee1317744f90b468891c27103d40c2496fc0e"
+  },
+  "history": {
+    "path": "history/records/chalcocite/2026-10-11T202953Z-codex-610893.yaml",
+    "sha256": "cb24167fbb02c475ca4bb777a69139f708bcf0852fbd103a295dcbdbefcc2139"
+  },
+  "queries": [
+    "chalcocite bioleaching pure mineral Acidithiobacillus full text study microbial dissolution",
+    "chalcocite bioleaching bacteria natural mineral PMC",
+    "\"10.1021/acsomega.9b02294\" PMC",
+    "\"Microbial\" \"chalcocite\" \"e70261\"",
+    "\"10.1021/acsomega.9b02294\" correction retraction",
+    "\"Semiconductor-Microbial Mechanism\" correction erratum retraction",
+    "\"chalcocite\" \"without bacteria\" \"Ruan\" 2010"
+  ],
+  "provider": "web search, first returned result sets; no pagination or date filters",
+  "dedup": {
+    "recorded_at": "2026-10-11T20:28:45.135599+00:00",
+    "pattern": "chalcocite|Cu2S|9b02294|6844112|1758-2229\\.70261|555796|s11771-021-4751-5|s12598-010-0167-3",
+    "commands": [
+      {
+        "root": "/private/tmp/CMMMech-expansion-round33-20261011",
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "--text",
+          "-n",
+          "-i",
+          "chalcocite|Cu2S|9b02294|6844112|1758-2229\\.70261|555796|s11771-021-4751-5|s12598-010-0167-3",
+          "data/records",
+          "research",
+          "reviews",
+          "history"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "output": "/private/tmp/cmm-round33-chalcocite-research/worktree-dedup.txt",
+        "sha256": "e4b47d6349a7bdaaee0f14c5e3d70f6729991f804e72251ca02495a389ecd573"
+      },
+      {
+        "root": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech",
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "--text",
+          "-n",
+          "-i",
+          "chalcocite|Cu2S|9b02294|6844112|1758-2229\\.70261|555796|s11771-021-4751-5|s12598-010-0167-3",
+          "data/records",
+          "research",
+          "reviews",
+          "history"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "output": "/private/tmp/cmm-round33-chalcocite-research/original-dedup.txt",
+        "sha256": "66b811890a387c897fad3a3dcfc98b41d32c758880296294d59292c7369832f9"
+      }
+    ],
+    "raw_roots": [
+      "/private/tmp/cmm-round4-mineral-hosts-20261011",
+      "/private/tmp/cmm-expansion-copper-20261011",
+      "/private/tmp/cmm-round2-zinc-20261011",
+      "/private/tmp/cmm-round32-bornite-research"
+    ],
+    "raw_scanned_count": 38,
+    "raw_scanned_paths": [
+      "/private/tmp/cmm-round4-mineral-hosts-20261011/ima-home.html",
+      "/private/tmp/cmm-round4-mineral-hosts-20261011/acquisition.json",
+      "/private/tmp/cmm-round4-mineral-hosts-20261011/ima-master-2026-09.pdf",
+      "/private/tmp/cmm-round4-mineral-hosts-20261011/christel2018.xml",
+      "/private/tmp/cmm-expansion-copper-20261011/acquisition.json",
+      "/private/tmp/cmm-expansion-copper-20261011/review-publisher.html",
+      "/private/tmp/cmm-expansion-copper-20261011/christel2018.xml",
+      "/private/tmp/cmm-expansion-copper-20261011/copper-chebi.html",
+      "/private/tmp/cmm-expansion-copper-20261011/us2025.html",
+      "/private/tmp/cmm-round2-zinc-20261011/local-download-search.txt",
+      "/private/tmp/cmm-round2-zinc-20261011/acquisition.json",
+      "/private/tmp/cmm-round2-zinc-20261011/fowler1999-pmc.html",
+      "/private/tmp/cmm-round2-zinc-20261011/chebi-zinc.html",
+      "/private/tmp/cmm-round2-zinc-20261011/taxonomy-ferrooxidans.html",
+      "/private/tmp/cmm-round2-zinc-20261011/us2025.html",
+      "/private/tmp/cmm-round32-bornite-research/acquisition-1.json",
+      "/private/tmp/cmm-round32-bornite-research/rsc-si-extracted.txt",
+      "/private/tmp/cmm-round32-bornite-research/ima-extracted.txt",
+      "/private/tmp/cmm-round32-bornite-research/acquisition-4.json",
+      "/private/tmp/cmm-round32-bornite-research/rsc2019-body.txt",
+      "/private/tmp/cmm-round32-bornite-research/acquisition-3.json",
+      "/private/tmp/cmm-round32-bornite-research/acquisition-2.json",
+      "/private/tmp/cmm-round32-bornite-research/dedup-receipt.json",
+      "/private/tmp/cmm-round32-bornite-research/frontiers-extracted.txt",
+      "/private/tmp/cmm-round32-bornite-research/frontiers2021-body.txt",
+      "/private/tmp/cmm-round32-bornite-research/raw/rsc2019.html",
+      "/private/tmp/cmm-round32-bornite-research/raw/ncbi920-node.html",
+      "/private/tmp/cmm-round32-bornite-research/raw/rsc2019.xml",
+      "/private/tmp/cmm-round32-bornite-research/raw/ncbi920-api.json",
+      "/private/tmp/cmm-round32-bornite-research/raw/crossref-frontiers.json",
+      "/private/tmp/cmm-round32-bornite-research/raw/rsc2019-correction.xml",
+      "/private/tmp/cmm-round32-bornite-research/raw/rsc2019-oa.xml",
+      "/private/tmp/cmm-round32-bornite-research/raw/ima2026.pdf",
+      "/private/tmp/cmm-round32-bornite-research/raw/ncbi920.html",
+      "/private/tmp/cmm-round32-bornite-research/raw/crossref-rsc.json",
+      "/private/tmp/cmm-round32-bornite-research/raw/frontiers2021.pdf",
+      "/private/tmp/cmm-round32-bornite-research/raw/frontiers2021.xml",
+      "/private/tmp/cmm-round32-bornite-research/raw/rsc-supplement/RA-009-C9RA03658J-s001.pdf"
+    ],
+    "raw_matches": [
+      {
+        "path": "/private/tmp/cmm-round4-mineral-hosts-20261011/ima-master-2026-09.pdf",
+        "lines": [
+          "Cu2Se",
+          "Chalcocite",
+          "Cu2S",
+          "Na2CaCu2Si8O20(H2O)",
+          "CaCu2S2",
+          "Ca2Cu2Si3O10(H2O)2",
+          "Cu2SnS3",
+          "Cu2SnSe3",
+          "BaCu2Si2O7",
+          "Pb10Cu2Sb16S35",
+          "Cu2S"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round4-mineral-hosts-20261011/christel2018.xml",
+        "lines": [
+          "<?xml version=\"1.0\" encoding=\"UTF-8\"?><article xml:lang=\"en\" article-type=\"research-article\"><front><journal-meta><journal-id journal-id-type=\"pmc-domain-id\">1526</journal-id><journal-id journal-id-type=\"pmc-domain\">frontmicrobio</journal-id><journal-title-group><journal-title>Frontiers in Microbiology</journal-title><abbrev-journal-title>Front Microbiol</abbrev-journal-title></journal-title-group><publisher><publisher-name>Frontiers Media SA</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type=\"pmcid\">PMC6315122</article-id><article-id pub-id-type=\"pmcaid\">6315122<",
+          "<bold>(B)</bold>, and total released copper and iron (<bold>C,D</bold>, respectively). Data points represent means ± SD (<italic>n</italic> = 4). Abbreviations in the legend denote: A, <italic>A. caldus</italic>, L; <italic>L. ferriphilum</italic>; and S, <italic>S. thermosulfidooxidans</italic>.</p></caption><alternatives><graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" content-type=\"image\" xlink:href=\"fmicb-09-03059-g001.jpg\"><?cloudpmc-path blobs/616e/6315122/1bb02fdeed58/fmicb-09-03059-g001.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 2352?><?origi",
+          "</named-content><ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"doi\" xlink:href=\"10.1038/nmeth.1923\"/><ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"pmcid\" xlink:href=\"PMC3322381\"/><ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"pmid\" xlink:href=\"22388286\"/><ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"google-scholar\" xlink:href=\"journal=Nat. Methods&amp;title=Fast gapped-read alignment with bowtie 2.&amp;author=B. Langmead&amp;author=S. L. Salzberg&amp;volume=9&amp;publication_year=2012&amp;pages=357-359&amp;pm",
+          "24–41. 10.1016/j.hydromet.2006.07.004</named-content><ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"doi\" xlink:href=\"10.1016/j.hydromet.2006.07.004\"/><ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"google-scholar\" xlink:href=\"journal=Hydrometallurgy&amp;title=A model for heap bioleaching of chalcocite with heat balance: mesophiles and moderate thermophiles.&amp;author=M. J. Leahy&amp;author=M. R. Davidson&amp;author=M. P. Schwarz&amp;volume=85&amp;publication_year=2007&amp;pages=24-41&amp;doi=10.1016/j.hydromet.2006.07.004&amp;\"/></mixed-citation></ref>"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-expansion-copper-20261011/review-publisher.html",
+        "lines": [
+          "<script id=\"unhead:payload\" type=\"application/json\">{\"title\":\"Frontiers | Articles\"}</script></head><body  class=\"body--v4\"><div id=\"__nuxt\"><!--[--><!----><!--[--><nav class=\"Ibar Ibar--journal\"><div class=\"Ibar__main\"><div class=\"Ibar__wrapper\"><button class=\"Ibar__burger\" aria-label=\"Open Menu\" data-event=\"iBar-btn-openMenu\"></button><div class=\"Ibar__logo\"><a href=\"//www.frontiersin.org/\" aria-label=\"Frontiershome\" data-event=\"iBar-a-home\" class=\"Ibar__logo__link\"><svg class=\"Ibar__logo__svg\" viewBox=\"0 0 2811 590\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path class=\"Ibar__logo__tex",
+          "          </iframe></noscript><!--]--></div><div id=\"teleports\"></div><script type=\"application/json\" id=\"__NUXT_DATA__\" data-ssr=\"true\">[[\"ShallowReactive\",1],{\"data\":2,\"state\":4,\"once\":10,\"_errors\":11,\"serverRendered\":13,\"path\":14,\"pinia\":15},[\"ShallowReactive\",3],{},[\"Reactive\",5],{\"$ssite-config\":6},{\"env\":7,\"name\":8,\"url\":9},\"production\",\"Frontiers articles\",\"https://article-pages-2024.frontiersin.org/\",[\"Set\"],[\"ShallowReactive\",12],{},true,\"/journals/microbiology/articles/10.3389/fmicb.2018.03059/full\",[\"Reactive\",16],{\"main\":17,\"user\":504,\"article\":505,\"articleHub\":19768,\"mainHeader\":1"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-expansion-copper-20261011/christel2018.xml",
+        "lines": [
+          "<?xml version=\"1.0\" encoding=\"UTF-8\"?><article xml:lang=\"en\" article-type=\"research-article\"><front><journal-meta><journal-id journal-id-type=\"pmc-domain-id\">1526</journal-id><journal-id journal-id-type=\"pmc-domain\">frontmicrobio</journal-id><journal-title-group><journal-title>Frontiers in Microbiology</journal-title><abbrev-journal-title>Front Microbiol</abbrev-journal-title></journal-title-group><publisher><publisher-name>Frontiers Media SA</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type=\"pmcid\">PMC6315122</article-id><article-id pub-id-type=\"pmcaid\">6315122<",
+          "<bold>(B)</bold>, and total released copper and iron (<bold>C,D</bold>, respectively). Data points represent means ± SD (<italic>n</italic> = 4). Abbreviations in the legend denote: A, <italic>A. caldus</italic>, L; <italic>L. ferriphilum</italic>; and S, <italic>S. thermosulfidooxidans</italic>.</p></caption><alternatives><graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" content-type=\"image\" xlink:href=\"fmicb-09-03059-g001.jpg\"><?cloudpmc-path blobs/616e/6315122/1bb02fdeed58/fmicb-09-03059-g001.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 2352?><?origi",
+          "</named-content><ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"doi\" xlink:href=\"10.1038/nmeth.1923\"/><ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"pmcid\" xlink:href=\"PMC3322381\"/><ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"pmid\" xlink:href=\"22388286\"/><ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"google-scholar\" xlink:href=\"journal=Nat. Methods&amp;title=Fast gapped-read alignment with bowtie 2.&amp;author=B. Langmead&amp;author=S. L. Salzberg&amp;volume=9&amp;publication_year=2012&amp;pages=357-359&amp;pm",
+          "24–41. 10.1016/j.hydromet.2006.07.004</named-content><ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"doi\" xlink:href=\"10.1016/j.hydromet.2006.07.004\"/><ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"google-scholar\" xlink:href=\"journal=Hydrometallurgy&amp;title=A model for heap bioleaching of chalcocite with heat balance: mesophiles and moderate thermophiles.&amp;author=M. J. Leahy&amp;author=M. R. Davidson&amp;author=M. P. Schwarz&amp;volume=85&amp;publication_year=2007&amp;pages=24-41&amp;doi=10.1016/j.hydromet.2006.07.004&amp;\"/></mixed-citation></ref>"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/rsc-si-extracted.txt",
+        "lines": [
+          " Cu2S",
+          "Fig. S1 Standard Raman spectrum peak: (a) S, (b) CuS, (c) Bornite (Cu5FeS4S), (d) Cu2S, (e) "
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/ima-extracted.txt",
+        "lines": [
+          "Cu2Se",
+          "Chalcocite",
+          "Cu2S",
+          "Na2CaCu2Si8O20(H2O)",
+          "CaCu2S2",
+          "Ca2Cu2Si3O10(H2O)2",
+          "Cu2SnS3",
+          "Cu2SnSe3",
+          "BaCu2Si2O7",
+          "Pb10Cu2Sb16S35",
+          "Cu2S"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/rsc2019-body.txt",
+        "lines": [
+          "1.IntroductionAcid mine drainage (AMD) is primarily derived from mining tailings, rock pile-ups, and oxidation of pyrite and other sulfide minerals.1–3 It has caused serious environmental problems. AMD has extremely low pH values, which lead to the dissolution of some minerals and the release of metal ions such as cupric, ferric, zinc, and nickel ions into the solution. Heavy metal ions and the acidity of the solution contaminate the surrounding groundwater layer. Its production, release, movement and attenuation are conducted in accordance with complex physical, chemical and biological factor",
+          "Fig. 2d indicates the oxidation and reduction reactions for the samples with different mass ratios of marmatite and bornite. The cyclic voltammetry curves of the mixed ores and single minerals were similar; they showed four anodic peaks (1–4) and two cathodic peaks 5 and 6). Therefore, the electrochemical interactions did not change the redox reactions of bornite and/or marmatite but did change the reaction kinetics. The dissolution reactions for marmatite and bornite can be summarized as follows in eqn (1)–(3):16,421Zn(1−x)FexS + 2H+ + 1/2O2 → (1 − x)Zn2+yFe2+ + (x − y)FeS + (1 − x + y)S + H2"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/dedup-receipt.json",
+        "lines": [
+          "    \"stdout\": \"/private/tmp/cmm-round4-mineral-hosts-20261011/christel2018.xml:1:<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?><article xml:lang=\\\"en\\\" article-type=\\\"research-article\\\"><front><journal-meta><journal-id journal-id-type=\\\"pmc-domain-id\\\">1526</journal-id><journal-id journal-id-type=\\\"pmc-domain\\\">frontmicrobio</journal-id><journal-title-group><journal-title>Frontiers in Microbiology</journal-title><abbrev-journal-title>Front Microbiol</abbrev-journal-title></journal-title-group><publisher><publisher-name>Frontiers Media SA</publisher-name></publisher></journal-meta><article-meta><ar"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/raw/rsc2019.xml",
+        "lines": [
+          "<?xml version=\"1.0\" encoding=\"UTF-8\"?><article xml:lang=\"en\" article-type=\"research-article\"><front><journal-meta><journal-id journal-id-type=\"pmc-domain-id\">4079</journal-id><journal-id journal-id-type=\"pmc-domain\">rscadv</journal-id><journal-title-group><journal-title>RSC Advances</journal-title><abbrev-journal-title>RSC Adv</abbrev-journal-title></journal-title-group><publisher><publisher-name>Royal Society of Chemistry</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type=\"pmcid\">PMC9070442</article-id><article-id pub-id-type=\"pmcaid\">9070442</article-id><article",
+          "<xref rid=\"fig2\" ref-type=\"fig\">Fig. 2d</xref> indicates the oxidation and reduction reactions for the samples with different mass ratios of marmatite and bornite. The cyclic voltammetry curves of the mixed ores and single minerals were similar; they showed four anodic peaks (1–4) and two cathodic peaks 5 and 6). Therefore, the electrochemical interactions did not change the redox reactions of bornite and/or marmatite but did change the reaction kinetics. The dissolution reactions for marmatite and bornite can be summarized as follows in <xref rid=\"eqn1\" ref-type=\"disp-formula\">eqn (1)–(3)</xr"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/raw/ima2026.pdf",
+        "lines": [
+          "Cu2Se",
+          "Chalcocite",
+          "Cu2S",
+          "Na2CaCu2Si8O20(H2O)",
+          "CaCu2S2",
+          "Ca2Cu2Si3O10(H2O)2",
+          "Cu2SnS3",
+          "Cu2SnSe3",
+          "BaCu2Si2O7",
+          "Pb10Cu2Sb16S35",
+          "Cu2S"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/raw/rsc-supplement/RA-009-C9RA03658J-s001.pdf",
+        "lines": [
+          " Cu2S",
+          "Fig. S1 Standard Raman spectrum peak: (a) S, (b) CuS, (c) Bornite (Cu5FeS4S), (d) Cu2S, (e) "
+        ]
+      }
+    ],
+    "raw_errors": [
+      {
+        "path": "/private/tmp/cmm-expansion-copper-20261011/review-supplement.pdf",
+        "error": "Non-PDF response at PDF-named path; excluded from absence interpretation"
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/raw/rsc2019.pdf",
+        "error": "Non-PDF response at PDF-named path; excluded from absence interpretation"
+      }
+    ],
+    "symlinks": [],
+    "scope": "Hidden and ignored files included; relevant symlinks followed with directory-cycle prevention. Available text/metadata and valid PDF text extracted; raster images and Office/archive binary contents not generally deduplicated. Selected new original XML/media are one source family and are separately inspected. Not a machine-wide novelty claim."
+  },
+  "acquisitions": [
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/acquisition-1.json",
+      "sha256": "c15642f86cd5833c23544c7ec6fcc3c6e5467483beef25683a5b35b21c626ecd",
+      "entries": [
+        {
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6844112/fullTextXML",
+          "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-main.xml",
+          "started_at": "2026-10-11T20:26:23.587626+00:00",
+          "status": 200,
+          "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6844112/fullTextXML",
+          "content_type": "application/xml",
+          "bytes": 109699,
+          "sha256": "c6ed400e8ae576250d5c2b31ceea4092b585a896e191b692bc47aee368276bb7",
+          "finished_at": "2026-10-11T20:26:27.091463+00:00"
+        },
+        {
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6844112/supplementaryFiles",
+          "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-supplementary.zip",
+          "started_at": "2026-10-11T20:26:23.588595+00:00",
+          "status": 200,
+          "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6844112/supplementaryFiles",
+          "content_type": "application/zip",
+          "bytes": 1058738,
+          "sha256": "d9b9b8147de5724ac98a94bf795a2b260761de119f993571e474fb5b14e8f9d4",
+          "finished_at": "2026-10-11T20:26:36.566835+00:00"
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1021%2Facsomega.9b02294",
+          "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-crossref.json",
+          "started_at": "2026-10-11T20:26:23.588936+00:00",
+          "status": 429,
+          "error": "HTTP Error 429: Too Many Requests",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "finished_at": "2026-10-11T20:26:23.909288+00:00"
+        },
+        {
+          "url": "https://discovery.ucl.ac.uk/id/eprint/10219005/1/Environ%20Microbiol%20Rep%20-%202025%20-%20Lane%20-%20Bioleaching%20Microbial%20Community%20Metabolism%20and%20Composition%20Driven%20by%20Copper%20Sulphide.pdf",
+          "path": "/private/tmp/cmm-round33-chalcocite-research/raw/lane2025-main.pdf",
+          "started_at": "2026-10-11T20:26:23.589254+00:00",
+          "status": 200,
+          "final_url": "https://discovery.ucl.ac.uk/id/eprint/10219005/1/Environ%20Microbiol%20Rep%20-%202025%20-%20Lane%20-%20Bioleaching%20Microbial%20Community%20Metabolism%20and%20Composition%20Driven%20by%20Copper%20Sulphide.pdf",
+          "content_type": "application/pdf",
+          "bytes": 1790801,
+          "sha256": "418390c07516867a592a8e1ebf6c8c95ad648bd0cfd16a5853819a9b5e16afed",
+          "finished_at": "2026-10-11T20:26:28.572599+00:00"
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1111%2F1758-2229.70261",
+          "path": "/private/tmp/cmm-round33-chalcocite-research/raw/lane2025-crossref.json",
+          "started_at": "2026-10-11T20:26:23.589694+00:00",
+          "status": 429,
+          "error": "HTTP Error 429: Too Many Requests",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "finished_at": "2026-10-11T20:26:23.911712+00:00"
+        }
+      ]
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/acquisition-2.json",
+      "sha256": "6fd4c8920a8c5d98f1a8550c36d03ad1a4dc4fda2d1d09508e890dea39a37c14",
+      "entries": [
+        {
+          "url": "https://europepmc.org/articles/PMC6844112?pdf=render",
+          "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-main.pdf",
+          "started_at": "2026-10-11T20:28:14.647869+00:00",
+          "status": 200,
+          "final_url": "https://europepmc.org/api/getPdf?pmcid=PMC6844112",
+          "content_type": "application/pdf",
+          "bytes": 3846286,
+          "sha256": "52003e64693bce72bcc0999c21434c8a9718f779e84868022e729d6e647b0cc6",
+          "finished_at": "2026-10-11T20:28:19.210798+00:00"
+        },
+        {
+          "url": "https://pubs.acs.org/doi/10.1021/acsomega.9b02294",
+          "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-publisher.html",
+          "started_at": "2026-10-11T20:28:14.648767+00:00",
+          "status": 403,
+          "error": "HTTP Error 403: Forbidden",
+          "bytes": 5508,
+          "sha256": "d08752f4b2c91e144f7bfad5f7929a46f4a524a319dcd9220dc2375a6e1b6b01",
+          "finished_at": "2026-10-11T20:28:14.819247+00:00"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA555796",
+          "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-project.html",
+          "started_at": "2026-10-11T20:28:14.648972+00:00",
+          "status": 500,
+          "error": "HTTP Error 500: Internal Server Error",
+          "bytes": 133389,
+          "sha256": "e477eebcc5d59df8773f4cbfb9a4ff69ae3ca99a971b41f3af927c91ddd69941",
+          "finished_at": "2026-10-11T20:28:35.309234+00:00"
+        }
+      ]
+    }
+  ],
+  "ima_reuse": {
+    "source": "/private/tmp/cmm-round32-bornite-research/raw/ima2026.pdf",
+    "rechecked_at": "2026-10-11T20:27:09.428488+00:00",
+    "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+    "prior_receipt_path": "/private/tmp/cmm-round32-bornite-research/acquisition-2.json",
+    "prior_receipt": [
+      {
+        "name": "ima2026.pdf",
+        "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+        "final_url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+        "requested_at": "2026-10-11T19:42:50.418867+00:00",
+        "status": 200,
+        "content_type": "application/pdf",
+        "size": 3129886,
+        "path": "/private/tmp/cmm-round32-bornite-research/raw/ima2026.pdf",
+        "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+      }
+    ]
+  },
+  "inspection": {
+    "wu2019": "Complete10pageprimaryPDF/JATS,13originalfigures,5originaltables,2equations andgraphicalabstract;allpagesvisuallyinspected. No externalSIidentified in source structure.",
+    "lane2025": "FullPDFacquired;abstract and selectedMethods/identity textscreened only;figures/SI not assessed.",
+    "ima": "Originalpages1,2,40 visuallyinspected;retainedsame-daycopy rechecked."
+  },
+  "source_gaps": [
+    "Wu Equation2 accounting direction and unreported units/raw denominators",
+    "Unverified BioProject due HTTP500",
+    "Crossref rate-limited429; no notice-clearance inference",
+    "Unreviewed Lane figures/SI/substrateprovenance and other fullprimaryleads"
+  ],
+  "raw_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/acquisition-1.json",
+      "bytes": 2797,
+      "sha256": "c15642f86cd5833c23544c7ec6fcc3c6e5467483beef25683a5b35b21c626ecd"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/acquisition-2.json",
+      "bytes": 1371,
+      "sha256": "6fd4c8920a8c5d98f1a8550c36d03ad1a4dc4fda2d1d09508e890dea39a37c14"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/ima-p1.png",
+      "bytes": 228854,
+      "sha256": "82dcc70cd6a634dbce05f17d72a63b31e44e89d4f240f1f439805b998ced7e43"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/ima-p2.png",
+      "bytes": 78398,
+      "sha256": "26663900a1939a8ea198f539eb36458a346a4d661cffbf5ecc50b01fc631f6e4"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/ima-p40.png",
+      "bytes": 244944,
+      "sha256": "181470264dc56aa9e9181427298fa1184f9ad0f77c28744571678901b5321b93"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/ima-reuse.json",
+      "bytes": 836,
+      "sha256": "9b7ccc480e20443a28369f4d05fe499ada79679dc92562ee1fd6a639654cc7d2"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/ima2026-reused.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/lane2025-crossref.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/lane2025-main.pdf",
+      "bytes": 1790801,
+      "sha256": "418390c07516867a592a8e1ebf6c8c95ad648bd0cfd16a5853819a9b5e16afed"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/lane2025-main.txt",
+      "bytes": 79361,
+      "sha256": "aa08091ff95e3a54e04b676e645e782fd03ae287f85136e28e2ba370efdb3b01"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/r33chalcocite_open1.json",
+      "bytes": 1086,
+      "sha256": "d1141aee3eea556915a1e66cc40f6f478aa39f1c8aa3105b4de574b7ae01fdd1"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/r33chalcocite_search1.json",
+      "bytes": 28266,
+      "sha256": "6cb2204a6a58c44644fd05fda974128aa8ac88012bc371c7f46886a34a6e1e1b"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/r33chalcocite_search2.json",
+      "bytes": 28105,
+      "sha256": "4da050c9291e194d8b8950afed11c3b690e8a2d5576a8a2935d7187e26d1d93e"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-body.txt",
+      "bytes": 46715,
+      "sha256": "c656cd13264b326ca851920a776f45da48e0f01ac331cc4eb548beb14070a655"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-crossref.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-main.pdf",
+      "bytes": 3846286,
+      "sha256": "52003e64693bce72bcc0999c21434c8a9718f779e84868022e729d6e647b0cc6"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-main.xml",
+      "bytes": 109699,
+      "sha256": "c6ed400e8ae576250d5c2b31ceea4092b585a896e191b692bc47aee368276bb7"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0001.gif",
+      "bytes": 3033,
+      "sha256": "b3dc59418121d687be3ffc6a536fa04dd5cb52b2582995a8c9ced91b9722aaf4"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0001.jpg",
+      "bytes": 65474,
+      "sha256": "1e9e353b2068ce5b4d8f9353d8f6005f97379df9673822f49512e7ea0ad2779f"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0002.gif",
+      "bytes": 1666,
+      "sha256": "6fb5d0df8789d098d2bb84a83a4452a94722df1099014a78bad8fc6fd370d7bc"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0002.jpg",
+      "bytes": 41313,
+      "sha256": "6766f338964140a4fdcabd184aafcca501f871ccdb323492beea5863010a6ffd"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0003.gif",
+      "bytes": 1687,
+      "sha256": "cb1bc3f802aed3f54420debd63f4753b4534d12c555aec23d9ebc18253adfaa8"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0003.jpg",
+      "bytes": 43601,
+      "sha256": "c5490b3723b66af06da3ee4b815edcb539955425539b69adaa330ba9d95ae37e"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0004.gif",
+      "bytes": 2517,
+      "sha256": "ceda44b56554c04ce8431a5a90fb5f4b9d79466dbf85bbc301a788bbd771d2be"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0004.jpg",
+      "bytes": 56438,
+      "sha256": "28f4b0e3f68974276b455aaa4a9badb940d903ffe8633a20f94ddb355c1a410b"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0005.gif",
+      "bytes": 1763,
+      "sha256": "4689f27e2201bc15cb932fe41399c7c0ec0d0c46778826da504e1950a7c213cb"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0005.jpg",
+      "bytes": 43820,
+      "sha256": "b056e923f26b9f63f2e1b9a691be0906c85ddeedde42438d10549ea1807858f6"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0006.gif",
+      "bytes": 3430,
+      "sha256": "97e5d91faaf2dce60e2b810f5bb8cdde89e98ce9e4332e3946063bb3c76cca97"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0006.jpg",
+      "bytes": 62817,
+      "sha256": "33f33f2ecb7f697aedf21a56812852d2f4fdeee9faeb7d620b806126b19f9c83"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0007.gif",
+      "bytes": 2196,
+      "sha256": "d3e551b08b9ba49b477650935a357ae32a6a16a12a7366149b899c0b7e87ec40"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0007.jpg",
+      "bytes": 45964,
+      "sha256": "e1081b86cea3993b9e7b326e9e34e32e5bb5f517ed676a7d075221d60a96e7e4"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0008.gif",
+      "bytes": 4369,
+      "sha256": "5d0b55909742d101260622c14a086a0774bf425a09cc07560639f4338c41af29"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0008.jpg",
+      "bytes": 76477,
+      "sha256": "ae2c4edfcfcc5fa25d9f9a623c3936bdfab9a0371bf8b7b3d488fe7c419cc07c"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0009.gif",
+      "bytes": 30800,
+      "sha256": "579996af5b0cd321c470d6facb4cb75f0c665c55d5a5536d591c8674029225ff"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0009.jpg",
+      "bytes": 326813,
+      "sha256": "24f8ccedfe7296c1e6da0ed804cbca93a817a474fd78c49b41240f0cef1e4590"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0010.gif",
+      "bytes": 3394,
+      "sha256": "d9a642dbf0c364d7e0a71518b97584e6c114494ff2b4e8b10e021d06b6cb97d9"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0010.jpg",
+      "bytes": 75378,
+      "sha256": "d8a7f7b0becf90869856836c905d3903ec4331c27459998d20fe2d1853ecaad8"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0011.gif",
+      "bytes": 3299,
+      "sha256": "904ac8f480d2816ca5364116f56c80d716031018c7bf320212ff46138296ceb3"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0011.jpg",
+      "bytes": 70109,
+      "sha256": "5e8623e41eca52c83627ba0521f006529c87d71b3678d755510b0f0820174d08"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0012.gif",
+      "bytes": 3369,
+      "sha256": "965876acaf0ece956ec26467de7ce163a6c91be3f6eee0b29a80bec86607f8a0"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0012.jpg",
+      "bytes": 70214,
+      "sha256": "9a924abc29dcb0a096d591b09d8457563de49a79fc346cdfbdeccd3f194b75e1"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0013.gif",
+      "bytes": 5384,
+      "sha256": "bbf0f1d597316a6e5d0be8751e99e74f39d09c38f3908b2c5fc89895cb363db5"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0013.jpg",
+      "bytes": 53882,
+      "sha256": "09ac4b6f530d132f986a5b3b72127658e4727eaaa6092761b3bdba53209069f6"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0014.gif",
+      "bytes": 14819,
+      "sha256": "f5b9c38e182eaefdbd0cb8d4d92edab36b5d08a032e9a74a38208b59f615c715"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_0014.jpg",
+      "bytes": 72432,
+      "sha256": "c9fa79b893831ac590e2a1c6763ceb1713b80480591b4ebf44a64919879e1476"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_m001.gif",
+      "bytes": 568,
+      "sha256": "da91265d65cf8debdaa47b50fcb70ccee2fce792c781b6c8b6d579665dbf3766"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_m001.jpg",
+      "bytes": 1550,
+      "sha256": "c29f2ac1765e18cc75ab3e3de6ac024a6064796d81542ac988becbd6e5e91e8a"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_m002.gif",
+      "bytes": 806,
+      "sha256": "3e0b6a3b32b2d637858a5689e580b1ae1777493144ebe34509befbdb4099540d"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-media/ao9b02294_m002.jpg",
+      "bytes": 2320,
+      "sha256": "83d5857973227134b0ed8c77105263016ada2b445dbc67e602e1740688bb847d"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-pages/page-01.png",
+      "bytes": 334299,
+      "sha256": "eb5b57047e66bb5db9528ecc413b4a0212d2216b7e9c5c2a2e837fc15b4a9b22"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-pages/page-02.png",
+      "bytes": 339804,
+      "sha256": "d141a28d2928923c0d91c50eeebe0a7a28eb06433529040fd856435f5d645fd8"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-pages/page-03.png",
+      "bytes": 245700,
+      "sha256": "0796c7162462d23a4e44fc6a0180929247d5cee2938093f458354be3c04252ae"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-pages/page-04.png",
+      "bytes": 314433,
+      "sha256": "96feaed2d35aa2ea0e2c1b38f886b09bc2b4a8819a3f472f9dc8491e0672953e"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-pages/page-05.png",
+      "bytes": 520001,
+      "sha256": "e8d233a9576deed218e9c78bd06387bda83d5d788ffe6ab021a669ee0bdef933"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-pages/page-06.png",
+      "bytes": 339014,
+      "sha256": "e8243bef40d4f3ccf8032718e8a818a5fbb950fbda6eea433752d33acae77705"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-pages/page-07.png",
+      "bytes": 373362,
+      "sha256": "e38608793bd8dde1277c1b55185ec276db93b83ea4c2a3e1879bbc8d79f5d84c"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-pages/page-08.png",
+      "bytes": 375416,
+      "sha256": "7006b1878c235fb54a0c8d2a3b551803f5a34d7fcc25d88a4401c81492ac0f4c"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-pages/page-09.png",
+      "bytes": 414954,
+      "sha256": "fbd3915f13bfc3029066694a1cf2eafb6c64a99da0b952f6940e509af053f6c0"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-pages/page-10.png",
+      "bytes": 118240,
+      "sha256": "18e47104d3cb05fd75ec3652d3ba318b7d32260b78a55431494620ac33d2edab"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-pdf.txt",
+      "bytes": 49473,
+      "sha256": "c449f7086222cd7e892a487f9f95bdefbdab55e61ee0bc2870e7c49a41ae9e28"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-project.html",
+      "bytes": 133389,
+      "sha256": "e477eebcc5d59df8773f4cbfb9a4ff69ae3ca99a971b41f3af927c91ddd69941"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-publisher.html",
+      "bytes": 5508,
+      "sha256": "d08752f4b2c91e144f7bfad5f7929a46f4a524a319dcd9220dc2375a6e1b6b01"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-supplementary.zip",
+      "bytes": 1058738,
+      "sha256": "d9b9b8147de5724ac98a94bf795a2b260761de119f993571e474fb5b14e8f9d4"
+    }
+  ],
+  "receipts": [
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/dedup.json",
+      "sha256": "21960eab0880ba6e1230245dd0569e5e3626f5ffce21948d040b25169d0cac13"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/validation-receipt.json",
+      "sha256": "a828a8d5f2c520af3bf7aec91d807cadcf109346d16cf50c2dcff53495237a1a"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/named-validation.log",
+      "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/worktree-dedup.txt",
+      "sha256": "e4b47d6349a7bdaaee0f14c5e3d70f6729991f804e72251ca02495a389ecd573"
+    },
+    {
+      "path": "/private/tmp/cmm-round33-chalcocite-research/original-dedup.txt",
+      "sha256": "66b811890a387c897fad3a3dcfc98b41d32c758880296294d59292c7369832f9"
+    }
+  ],
+  "validation": {
+    "recorded_at": "2026-10-11T20:31:53.117800+00:00",
+    "command": "UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 uv run --locked cmmmech validate data/records/chalcocite.yaml",
+    "exit_code": 0,
+    "checked": 1,
+    "failed": 0,
+    "log": "/private/tmp/cmm-round33-chalcocite-research/named-validation.log",
+    "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e",
+    "scope": "Named record only; parent owns final cohort gates and independent scientific review."
+  },
+  "independent_review_status": "pending parent-assigned review",
+  "maintained_report": {
+    "path": "research/sources/round33-chalcocite/20261011T203153Z-source-investigation.md",
+    "sha256": "e4e94dd7eeecde30196f9a43543c5bff556fbe3192927db6cd0f51b33989efb6"
+  }
+}

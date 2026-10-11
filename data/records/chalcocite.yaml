@@ -1,0 +1,116 @@
+id: cmmmech:chalcocite
+name: Chalcocite
+material_kind: mineral
+description: >-
+  Chalcocite is the Cu2S mineral species listed as grandfathered, with original
+  description year 1751, in the September 2026 IMA list. It is distinct from
+  copper element, covellite, digenite, bornite, mixed copper ore and manufactured
+  copper-sulfide reagents. The natural mineral separate used below is not
+  established as a pure endmember. No criticality designation is inherited
+  from copper.
+sources:
+  - id: ima_2026_09
+    title: >-
+      IMA-CNMNC. The New IMA List of Minerals, September 2026. Chalcocite row on
+      PDF page 40; status and year definitions on page 1, distribution terms
+      on page 2. Same-day retained original rechecked rather than downloaded anew.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-11'
+  - id: wu2019
+    title: >-
+      Wu, Yang, Wen and Wang (2019). Semiconductor-Microbial Mechanism of
+      Selective Dissolution of Chalcocite in Bioleaching. ACS Omega 4(19),
+      18279-18288. Complete original main, especially Sections 2.1-2.3 and
+      4.1-4.5, Tables 1-2, Figures 1-8 and printed Equation 2; model context
+      in Section 2.4, Figures 9-12 and Tables 3-5.
+    url: https://doi.org/10.1021/acsomega.9b02294
+    accessed_on: '2026-10-11'
+mechanisms:
+  - id: community_associated_leaching_index
+    name: Reported community-associated leaching of a natural chalcocite separate
+    process: bioleaching
+    microbial: true
+    description: >-
+      The study reports higher copper leaching indices after inoculating a
+      1:2 mass mixture of chalcocite and pyrite separates with a mine-derived
+      community, alongside a higher solution potential. The uninoculated arm
+      also shows substantial reported copper leaching, and inoculation raises
+      the reported iron leaching index as well. Ferric-mediated attack,
+      sulfur oxidation and galvanic interactions are the authors'
+      interpretations, not isolated organism-specific or molecular mechanisms.
+      The source's percentage equation is inconsistent with its stated
+      solution-concentration definition, so no verified extraction fraction
+      or product-recovery yield is adopted here.
+    context: >-
+      Laboratory experiment using natural material from Zijinshan Copper Mine,
+      Fujian, China. Chalcocite and pyrite separates were prepared by hand
+      sorting, gravity separation and flotation, then ground below 0.074 mm.
+      Table 2 gives the chalcocite separate 68.42 wt% Cu, 2.53 wt% Fe,
+      23.98 wt% S and 0.11 wt% SiO2, with a source-labelled purity of 92.40%.
+      This elemental table does not establish a quantitatively verified
+      endmember phase fraction; other copper-bearing phases are not excluded.
+      Living community inoculum came from the mine's heap sump, followed by
+      four to five days of laboratory cultivation/adaptation on 9K medium.
+      Source genus profiles include Leptospirillum, Acidithiobacillus and
+      Sulfobacillus; no authenticated strain or species-specific causal role
+      is assigned. The mixed-separate assay used 30 degrees C, 14 days,
+      initial pH 1.8 and inoculum-to-pulp volume ratio 1:10. Methods describe
+      initial pH adjustment with 20% v/v sulfuric acid and an initial inoculated
+      cell density of 2 x 10^7 cells/mL, without resolving its basis across
+      the different inoculum ratios. Flask working volume, solid mass,
+      agitation, exact 9K recipe, inoculum washing and subsequent pH-control
+      details are not supplied. No mineral sterilization or verification of
+      sterility in the uninoculated comparator is described. Copper and total
+      iron in supernatant were measured by ICP-OES; potential was measured
+      against Ag/AgCl and reported on the hydrogen scale. The paper states
+      at least three repetitions with means and standard-deviation error bars.
+      Sampling replacement and cumulative mass correction are not specified.
+      A separate raw-ore stirred-reactor arm uses different conditions; its
+      5% pulp loading and 120 rpm are not assigned to these flask assays.
+    evidence:
+      - source_ref: wu2019
+        supports: support
+        explanation: >-
+          Section 2.2 and original Figures 4-5 show the inoculated and
+          uninoculated mixed-separate arms. Reported copper indices are similar
+          at day 2, then higher with inoculation; the reported iron index also
+          rises with inoculation. Figure 5 shows higher later solution
+          potential in the inoculated arm. These support the reported
+          community-associated assay observation, conditional on the unresolved
+          quantitative normalization, rather than exclusive microbial
+          dissolution or a copper-only selective recovery process.
+      - source_ref: wu2019
+        supports: partial
+        explanation: >-
+          Printed Equation 2 on page 18286 subtracts a concentration-volume
+          term from 1, although its surrounding text defines C as solution
+          metal concentration. Its direction is inconsistent with interpreting
+          increasing dissolved metal as increasing extraction; the units and
+          molecular-weight convention are not specified. Original solution
+          concentrations, masses and volumes are unavailable for reconstruction.
+          Plotted leaching percentages are therefore source-reported indices,
+          not independently verified feed-mass yields or chalcocite conversion.
+      - source_ref: wu2019
+        supports: partial
+        explanation: >-
+          Figure 6 gives genus-level relative sequence abundances from separate
+          mineral assays; it does not measure the contributions of individual
+          taxa to the mixed-separate outcome. Sections 2.3.1-2.3.2 describe
+          attached material while Figure 6 and the DNA methods describe
+          solution samples, so attachment-specific attribution is unresolved.
+          No matched dynamic-potential or pH control isolates an effect beyond
+          community-associated changes in solution chemistry. The calculated
+          electronic structures, vacancies and proposed two-stage separation
+          scheme are interpretations, not measured enzymatic activity,
+          demonstrated phase-selective conversion or industrial deployment.
+curation_history:
+  - timestamp: '2026-10-11T20:29:59Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Created the chalcocite mineral record and a qualified natural-specimen
+      community-associated leaching observation, retaining ambiguous percentage
+      accounting, uninoculated release, incomplete specimen purity and
+      unresolved causal and deployment claims.
+history_refs:
+  - history/records/chalcocite/2026-10-11T202953Z-codex-610893.yaml
