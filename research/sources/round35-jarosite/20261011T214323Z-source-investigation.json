@@ -1,0 +1,642 @@
+{
+  "timestamp_utc": "2026-10-11T21:43:23.749652+00:00",
+  "task": "round35 jarosite",
+  "trusted_base": "f83cf867a38c470b4347f721d9ea9370c3019eaf",
+  "worktree": "/private/tmp/CMMMech-expansion-round35-20261011",
+  "baseline": {
+    "receipt": "/private/tmp/cmm-round35-baseline-reuse.json",
+    "mode": "Explicit exact-tested-base reuse; no new baseline execution claim"
+  },
+  "decision": "Curated narrowly with limitations; independent review required",
+  "record": {
+    "path": "data/records/jarosite.yaml",
+    "sha256": "5642b5560b9d351f581fab9725486c440b4a3a0e6e4978c78478898e172b011b"
+  },
+  "history": {
+    "path": "history/records/jarosite/2026-10-11T214126Z-codex-bd6b8a.yaml",
+    "sha256": "a9c21ce2f60f66f3e5f25d2be7be21062b31ec7bdacc2fcc48a90c8890e5ef95"
+  },
+  "sources": [
+    {
+      "doi": "10.1016/j.hydromet.2022.105908",
+      "authors": "Chen et al.",
+      "role": "Primary mineral feed characterization and controlled microbial experiment",
+      "state": "Complete accepted manuscript downloaded from official Coventry repository; 28pages includes22manuscriptpages,cover,SI cover and4SIfigures",
+      "url": "https://pure.coventry.ac.uk/ws/files/65409385/Post_Print.pdf",
+      "license": "Repository cover: CC BY-NC-ND4.0; reading copy only; fulltext outsideGit",
+      "primary_pdf": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-main.pdf",
+      "sha256": "f458a0d2e86fd8a19c41575aa78029006783e844ec52a0c662c9b510598a2ce2",
+      "coverage": "All text methods/results/discussion/references read; Table1 and original Figures1\u20138 on PDFpages9,10,13\u201317,19 visually inspected; S1\u2013S4 on pages25\u201328 visually inspected. All28pages rendered. Equations1\u20136 read; no unavailableSIgap.",
+      "version_limit": "Accepted version may differ from version ofrecord, per repository cover. DOIpublisherpreview checked, fullpublisherPDF not acquired."
+    },
+    {
+      "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "role": "Mineral identity authority",
+      "state": "Exact retained datedauthorityPDF reused from round34, no freshdownload claim; current CNMNC landing page separately checked",
+      "coverage": "Originalpage104Jarosite row visually inspected; formulaKFe3+3(SO4)2(OH)6,Rd1987s.p.; originaldescription1852 differs from redefinitionyear. Definitionschecked in retainedmasterlist; no invented IMA approval CURIE.",
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930",
+      "role": "Species identity",
+      "state": "Live HTML200 retained and inspected",
+      "identity": "NCBITaxon:930 Acidithiobacillus thiooxidans; species not strain."
+    },
+    {
+      "url": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-504",
+      "role": "Strain authority",
+      "state": "Live catalogue200 retained and inspected",
+      "identity": "DSM504 Acidithiobacillus thiooxidans; ATCC8085/NCIMB9112 equivalences confirmed. No genomeaccession or strainTaxID imported; authorityidentity does not authenticate particularexperimental vial."
+    }
+  ],
+  "search": {
+    "provider": "web search tool",
+    "date": "2026-10-11",
+    "queries": [
+      "\"10.1016/j.hydromet.2022.105908\" correction retraction",
+      "\"10.1016/j.gca.2013.09.020\" jarosite",
+      "\"10.1016/j.hydromet.2022.105908\" supplementary",
+      "\"Reductive dissolution of jarosite\" \"105908\" supporting",
+      "\"10.1016/j.cejgas.2026.100108\"",
+      "site.ncbi.nlm.nih.gov Taxonomy Acidithiobacillus thiooxidans DSM 504",
+      "site.dsmz.de DSM 504 Acidithiobacillus thiooxidans",
+      "site.cnmnc.units.it jarosite \"2026\"",
+      "\"Reductive dissolution of jarosite by inorganic sulfur compounds\" correction retraction corrigendum",
+      "\"Acidithiobacillus thiooxidans\" \"iron reduction\" indirect chemical sulfur anaerobic",
+      "\"jarosite\" \"thiooxidans\" \"105908\" corrigendum",
+      "\"10.1016/j.hydromet.2022.105908\" retraction correction notice"
+    ],
+    "filters": "None",
+    "pagination": "First returned result sets only; bounded, not exhaustive"
+  },
+  "dedup": {
+    "started_at": "2026-10-11T21:39:48.811933+00:00",
+    "finished_at": "2026-10-11T21:39:51.567889+00:00",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-n",
+      "-i",
+      "--max-columns",
+      "1500",
+      "--max-columns-preview",
+      "-g",
+      "!*.pdf",
+      "-g",
+      "!*.png",
+      "-g",
+      "!*.jpg",
+      "-g",
+      "!*.jpeg",
+      "-g",
+      "!*.tif",
+      "-g",
+      "!*.tiff",
+      "-g",
+      "!*.xlsx",
+      "-g",
+      "!*.docx",
+      "-g",
+      "!*.zip",
+      "jarosite|105908|10\\.1016/j\\.gca\\.2013\\.09\\.020|10\\.1016/j\\.cejgas\\.2026\\.100108",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/private/tmp/CMMMech-expansion-round35-20261011/data/records",
+      "/private/tmp/CMMMech-expansion-round35-20261011/history",
+      "/private/tmp/CMMMech-expansion-round35-20261011/research",
+      "/private/tmp/CMMMech-expansion-round35-20261011/reviews",
+      "/private/tmp/cmm-round10-b-f-raw",
+      "/private/tmp/cmm-round10-graphite-raw",
+      "/private/tmp/cmm-round10-nb-ta-raw",
+      "/private/tmp/cmm-round10-ti-zr-raw",
+      "/private/tmp/cmm-round11-be-rb-re-raw",
+      "/private/tmp/cmm-round11-he-raw",
+      "/private/tmp/cmm-round11-ir-os-hf-raw",
+      "/private/tmp/cmm-round11-lu-tm-pm-raw",
+      "/private/tmp/cmm-round12-aluminium-boron-raw",
+      "/private/tmp/cmm-round12-carbon-metals-raw",
+      "/private/tmp/cmm-round12-groups-raw",
+      "/private/tmp/cmm-round12-industrial-minerals-raw",
+      "/private/tmp/cmm-round13-grade-raw",
+      "/private/tmp/cmm-round13-mineral-raw",
+      "/private/tmp/cmm-round13-secondary-raw",
+      "/private/tmp/cmm-round14-magnet-raw",
+      "/private/tmp/cmm-round14-mineral-raw",
+      "/private/tmp/cmm-round14-product-raw",
+      "/private/tmp/cmm-round14-secondary-raw",
+      "/private/tmp/cmm-round15-brine-raw",
+      "/private/tmp/cmm-round15-mineral-raw",
+      "/private/tmp/cmm-round16-produced-water-raw",
+      "/private/tmp/cmm-round16-silicate-raw",
+      "/private/tmp/cmm-round16-vivianite-raw",
+      "/private/tmp/cmm-round17-biotite-raw",
+      "/private/tmp/cmm-round17-enstatite-raw",
+      "/private/tmp/cmm-round17-saline-raw",
+      "/private/tmp/cmm-round18-catalyst-raw",
+      "/private/tmp/cmm-round18-dunite-raw",
+      "/private/tmp/cmm-round18-mineral-feeds-raw",
+      "/private/tmp/cmm-round18-products-raw",
+      "/private/tmp/cmm-round19-hydrogenation-catalyst-raw",
+      "/private/tmp/cmm-round19-iron-manganese-raw",
+      "/private/tmp/cmm-round19-manganese-residue-raw",
+      "/private/tmp/cmm-round19-tailings-raw",
+      "/private/tmp/cmm-round20-goethite-raw",
+      "/private/tmp/cmm-round20-laterite-raw",
+      "/private/tmp/cmm-round20-mafic-tailings-raw",
+      "/private/tmp/cmm-round20-nodule-raw",
+      "/private/tmp/cmm-round21-crusts-raw",
+      "/private/tmp/cmm-round21-pcb-raw",
+      "/private/tmp/cmm-round21-ree-mud-raw",
+      "/private/tmp/cmm-round22-concretions-raw",
+      "/private/tmp/cmm-round22-pcb-raw",
+      "/private/tmp/cmm-round22-pv-raw",
+      "/private/tmp/cmm-round22-sulfides-raw",
+      "/private/tmp/cmm-round23-crusts-raw",
+      "/private/tmp/cmm-round23-ghiorse-raw",
+      "/private/tmp/cmm-round23-identity-gaps-raw",
+      "/private/tmp/cmm-round23-lcd-raw",
+      "/private/tmp/cmm-round23-rey-mud-raw",
+      "/private/tmp/cmm-round24-copper-slag-raw",
+      "/private/tmp/cmm-round24-frontier-raw",
+      "/private/tmp/cmm-round24-nimh-raw",
+      "/private/tmp/cmm-round24-sulfuric-raw",
+      "/private/tmp/cmm-round25-bf-dust-raw",
+      "/private/tmp/cmm-round25-button-raw",
+      "/private/tmp/cmm-round25-frontier-raw",
+      "/private/tmp/cmm-round25-oil-ash-raw",
+      "/private/tmp/cmm-round26-eaf-dust-raw",
+      "/private/tmp/cmm-round26-packaging-raw",
+      "/private/tmp/cmm-round26-root-raw",
+      "/private/tmp/cmm-round26-superalloy-raw",
+      "/private/tmp/cmm-round27-eaf-slag-raw",
+      "/private/tmp/cmm-round27-goethite-raw",
+      "/private/tmp/cmm-round27-packaging-raw",
+      "/private/tmp/cmm-round27-root-raw",
+      "/private/tmp/cmm-round27-superalloy-raw",
+      "/private/tmp/cmm-round28-black-shale-research",
+      "/private/tmp/cmm-round28-goethite-research",
+      "/private/tmp/cmm-round28-tatra-research",
+      "/private/tmp/cmm-round28-tire-research",
+      "/private/tmp/cmm-round29-bastnaesite-research",
+      "/private/tmp/cmm-round29-ilmenite-research",
+      "/private/tmp/cmm-round29-tungsten-waste-research",
+      "/private/tmp/cmm-round29-zinc-ore-research",
+      "/private/tmp/cmm-round30-basalt-research",
+      "/private/tmp/cmm-round30-chromite-research",
+      "/private/tmp/cmm-round30-pyrrhotite-research",
+      "/private/tmp/cmm-round30-tungsten-research",
+      "/private/tmp/cmm-round31-chromite-tailings-research",
+      "/private/tmp/cmm-round31-ilmenite-research",
+      "/private/tmp/cmm-round31-kaolin-research",
+      "/private/tmp/cmm-round31-kaolin-waste-research",
+      "/private/tmp/cmm-round31-stibnite-research",
+      "/private/tmp/cmm-round31-tungsten-research",
+      "/private/tmp/cmm-round32-arsenopyrite-research",
+      "/private/tmp/cmm-round32-bornite-research",
+      "/private/tmp/cmm-round32-chromitite-research",
+      "/private/tmp/cmm-round32-molybdenite-research",
+      "/private/tmp/cmm-round33-chalcocite-research",
+      "/private/tmp/cmm-round33-covellite-research",
+      "/private/tmp/cmm-round33-molybdenite-research",
+      "/private/tmp/cmm-round33-pyrite-research",
+      "/private/tmp/cmm-round34-galena-research",
+      "/private/tmp/cmm-round34-greigite-research",
+      "/private/tmp/cmm-round34-mackinawite-research",
+      "/private/tmp/cmm-round34-uraninite-research",
+      "/private/tmp/cmm-round35-jarosite-research/raw",
+      "/private/tmp/cmm-round7-ho-er-gd-raw",
+      "/private/tmp/cmm-round7-terbium-raw",
+      "/private/tmp/cmm-round8-sc-pr-raw",
+      "/private/tmp/cmm-round9-cs-sr-raw",
+      "/private/tmp/cmm-round9-ru-rh-raw",
+      "/private/tmp/cmm-round9-si-sn-raw"
+    ],
+    "root_count": 113,
+    "roots": [
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/private/tmp/CMMMech-expansion-round35-20261011/data/records",
+      "/private/tmp/CMMMech-expansion-round35-20261011/history",
+      "/private/tmp/CMMMech-expansion-round35-20261011/research",
+      "/private/tmp/CMMMech-expansion-round35-20261011/reviews",
+      "/private/tmp/cmm-round10-b-f-raw",
+      "/private/tmp/cmm-round10-graphite-raw",
+      "/private/tmp/cmm-round10-nb-ta-raw",
+      "/private/tmp/cmm-round10-ti-zr-raw",
+      "/private/tmp/cmm-round11-be-rb-re-raw",
+      "/private/tmp/cmm-round11-he-raw",
+      "/private/tmp/cmm-round11-ir-os-hf-raw",
+      "/private/tmp/cmm-round11-lu-tm-pm-raw",
+      "/private/tmp/cmm-round12-aluminium-boron-raw",
+      "/private/tmp/cmm-round12-carbon-metals-raw",
+      "/private/tmp/cmm-round12-groups-raw",
+      "/private/tmp/cmm-round12-industrial-minerals-raw",
+      "/private/tmp/cmm-round13-grade-raw",
+      "/private/tmp/cmm-round13-mineral-raw",
+      "/private/tmp/cmm-round13-secondary-raw",
+      "/private/tmp/cmm-round14-magnet-raw",
+      "/private/tmp/cmm-round14-mineral-raw",
+      "/private/tmp/cmm-round14-product-raw",
+      "/private/tmp/cmm-round14-secondary-raw",
+      "/private/tmp/cmm-round15-brine-raw",
+      "/private/tmp/cmm-round15-mineral-raw",
+      "/private/tmp/cmm-round16-produced-water-raw",
+      "/private/tmp/cmm-round16-silicate-raw",
+      "/private/tmp/cmm-round16-vivianite-raw",
+      "/private/tmp/cmm-round17-biotite-raw",
+      "/private/tmp/cmm-round17-enstatite-raw",
+      "/private/tmp/cmm-round17-saline-raw",
+      "/private/tmp/cmm-round18-catalyst-raw",
+      "/private/tmp/cmm-round18-dunite-raw",
+      "/private/tmp/cmm-round18-mineral-feeds-raw",
+      "/private/tmp/cmm-round18-products-raw",
+      "/private/tmp/cmm-round19-hydrogenation-catalyst-raw",
+      "/private/tmp/cmm-round19-iron-manganese-raw",
+      "/private/tmp/cmm-round19-manganese-residue-raw",
+      "/private/tmp/cmm-round19-tailings-raw",
+      "/private/tmp/cmm-round20-goethite-raw",
+      "/private/tmp/cmm-round20-laterite-raw",
+      "/private/tmp/cmm-round20-mafic-tailings-raw",
+      "/private/tmp/cmm-round20-nodule-raw",
+      "/private/tmp/cmm-round21-crusts-raw",
+      "/private/tmp/cmm-round21-pcb-raw",
+      "/private/tmp/cmm-round21-ree-mud-raw",
+      "/private/tmp/cmm-round22-concretions-raw",
+      "/private/tmp/cmm-round22-pcb-raw",
+      "/private/tmp/cmm-round22-pv-raw",
+      "/private/tmp/cmm-round22-sulfides-raw",
+      "/private/tmp/cmm-round23-crusts-raw",
+      "/private/tmp/cmm-round23-ghiorse-raw",
+      "/private/tmp/cmm-round23-identity-gaps-raw",
+      "/private/tmp/cmm-round23-lcd-raw",
+      "/private/tmp/cmm-round23-rey-mud-raw",
+      "/private/tmp/cmm-round24-copper-slag-raw",
+      "/private/tmp/cmm-round24-frontier-raw",
+      "/private/tmp/cmm-round24-nimh-raw",
+      "/private/tmp/cmm-round24-sulfuric-raw",
+      "/private/tmp/cmm-round25-bf-dust-raw",
+      "/private/tmp/cmm-round25-button-raw",
+      "/private/tmp/cmm-round25-frontier-raw",
+      "/private/tmp/cmm-round25-oil-ash-raw",
+      "/private/tmp/cmm-round26-eaf-dust-raw",
+      "/private/tmp/cmm-round26-packaging-raw",
+      "/private/tmp/cmm-round26-root-raw",
+      "/private/tmp/cmm-round26-superalloy-raw",
+      "/private/tmp/cmm-round27-eaf-slag-raw",
+      "/private/tmp/cmm-round27-goethite-raw",
+      "/private/tmp/cmm-round27-packaging-raw",
+      "/private/tmp/cmm-round27-root-raw",
+      "/private/tmp/cmm-round27-superalloy-raw",
+      "/private/tmp/cmm-round28-black-shale-research",
+      "/private/tmp/cmm-round28-goethite-research",
+      "/private/tmp/cmm-round28-tatra-research",
+      "/private/tmp/cmm-round28-tire-research",
+      "/private/tmp/cmm-round29-bastnaesite-research",
+      "/private/tmp/cmm-round29-ilmenite-research",
+      "/private/tmp/cmm-round29-tungsten-waste-research",
+      "/private/tmp/cmm-round29-zinc-ore-research",
+      "/private/tmp/cmm-round30-basalt-research",
+      "/private/tmp/cmm-round30-chromite-research",
+      "/private/tmp/cmm-round30-pyrrhotite-research",
+      "/private/tmp/cmm-round30-tungsten-research",
+      "/private/tmp/cmm-round31-chromite-tailings-research",
+      "/private/tmp/cmm-round31-ilmenite-research",
+      "/private/tmp/cmm-round31-kaolin-research",
+      "/private/tmp/cmm-round31-kaolin-waste-research",
+      "/private/tmp/cmm-round31-stibnite-research",
+      "/private/tmp/cmm-round31-tungsten-research",
+      "/private/tmp/cmm-round32-arsenopyrite-research",
+      "/private/tmp/cmm-round32-bornite-research",
+      "/private/tmp/cmm-round32-chromitite-research",
+      "/private/tmp/cmm-round32-molybdenite-research",
+      "/private/tmp/cmm-round33-chalcocite-research",
+      "/private/tmp/cmm-round33-covellite-research",
+      "/private/tmp/cmm-round33-molybdenite-research",
+      "/private/tmp/cmm-round33-pyrite-research",
+      "/private/tmp/cmm-round34-galena-research",
+      "/private/tmp/cmm-round34-greigite-research",
+      "/private/tmp/cmm-round34-mackinawite-research",
+      "/private/tmp/cmm-round34-uraninite-research",
+      "/private/tmp/cmm-round35-jarosite-research/raw",
+      "/private/tmp/cmm-round7-ho-er-gd-raw",
+      "/private/tmp/cmm-round7-terbium-raw",
+      "/private/tmp/cmm-round8-sc-pr-raw",
+      "/private/tmp/cmm-round9-cs-sr-raw",
+      "/private/tmp/cmm-round9-ru-rh-raw",
+      "/private/tmp/cmm-round9-si-sn-raw"
+    ],
+    "exit_code": 0,
+    "hits_lines": 626,
+    "stderr": "",
+    "boundaries": "Current worktree and original checkout record/research/review/history directories plus existing absolute cmm-*-research/raw directory roots referenced by their text. Hidden/ignored included; relevant symlinks followed. Binary PDF/image/Office/ZIP excluded from text scan; retained extracted texts and metadata searched. Not machine-wide. Own raw contains new primary and is distinguished from prior coverage.",
+    "hits_sha256": "d48844422c1615278a29a57560d2ab6b87246aef87cd8a28e19ac736029165d7"
+  },
+  "dedup_assessment": "No preexisting jarosite-root record or curated Chen2022 experiment in declared113roots. Seven existingmaterialrecords have contextualjarosite phases, and newlyconcurrentanglesite contains contextualmention. Priorcopper-slag/zinc-ore extractedtexts citeChen2022 but do not duplicate the experiment as acceptedclaim. Fulltext, mirror, supplements and DOImetadata are one experiment/sourcefamily, not independentreplications.",
+  "conflicts_and_limits": [
+    "96.4% final sulfite leaching in Results manuscript line246 versus98.4% in abstract/conclusion; no accepted exact endpoint recovery imported.",
+    "SupplementS2 day34 controls1.3/6.3/8.5% differ from across-time maxima1.5/6.3/8.7%; abiotic dissolution is not zero.",
+    "SupplementS4 thiosulfate-control pH rises toward2.8, contrary to blanket prose of no significant abiotic pH/redox change; donor effects are not isolated from pH chemistry.",
+    "SupplementS4 includes Na2SO4 control without complete corresponding main dissolution protocol; not imported as an equivalently specified fourth donor.",
+    "Table1 Fe31.23,K5.33,S12.11% differs from ideal33.45,7.78,12.81%; nearidealFe/S ratio plus XRD supports K-jarosite assignment but does not establish pure ideal-endmember stoichiometry.",
+    "Complete dissolution language exceeds unquantified phase detection limits and residual Fe(II)-bearing solids; no whole-feed mass balance or isolated product.",
+    "Fe(II) calculated from total minus ferric iron rather than independent assay; Figure2b declines at some times and Figure7 solid Fe(II) indicate possible repartitioning.",
+    "Nominally anaerobic flushing is documented, but dissolvedoxygen trajectory, killedcells/filtrate controls and respiratory/molecular tests are absent from inspected complete methods.",
+    "Largest sulfite dissolution occurs without significant planktoniccount increase; culture-associated redox effect is not proof of growth by ferric respiration.",
+    "Main line216 cites Figure8 for Fe(II) solid evidence, whereas actual Fe L-edge spectra are Figure7; record uses correct originalfigure.",
+    "Main line300 says four sulfurcompounds while Figure4 shows three donors; maintain explicit three well-described assay arms.",
+    "Authors propose a special role for direct DIRSO; broader primary studies found indirect redox chemistry in different strains/conditions. Such comparisons are not a direct replication or refutation of DSM504 jarosite assay."
+  ],
+  "notice_check": {
+    "crossref": "Live original DOI record relation empty; no update-to or updated-by entry. Metadata alone cannot exclude notices elsewhere.",
+    "web": "Exact DOI/title plus correction/retraction/corrigendum queries returned no specificnotice in inspectedresults; no claim ofexhaustive absence.",
+    "publisher": "DOI directwebopen failed atElsevier redirect500 while searchprovider retrievedpublisherpreview; separate2026publisherpage403. No bypass/retry loops."
+  },
+  "deferred_and_ranked_next_actions": [
+    {
+      "rank": 1,
+      "action": "Independentnative review frozenjarosite record against completeprimaryandSI, then parentcohortgates.",
+      "reason": "Supportedidentity/controloutcome already adequate; preserve exact source conflicts."
+    },
+    {
+      "rank": 2,
+      "doi": "10.1016/j.gca.2013.09.020",
+      "title": "Reduction of jarosite by Shewanella oneidensis MR-1 and secondary mineralization",
+      "status": "Primarypublisherpreview and Crossrefmetadata inspected; full18pageprimary/SI not acquired thisround. No measurementsimported.",
+      "reason": "Potential distinctcircumneutral reductivetransformation comparison; require complete methods/figures/SI, K-jarositeidentity, exactconditions and experimentoverlap before extension."
+    },
+    {
+      "rank": 3,
+      "doi": "10.1016/j.cejgas.2026.100108",
+      "title": "Effect of microbial-mineral interaction on jarosite precipitate during bioleaching of sulfide mineral",
+      "status": "OApublishersearchpreview andCrossrefmetadata acquired; directwebpublisheropen403. Fullprimary not obtained; no formationmechanism imported.",
+      "reason": "Potential formation/abioticmatchedchemistry comparator; resolve species versus group composition and actualfulltext before accepting."
+    },
+    {
+      "rank": 4,
+      "doi": "10.1016/j.resmic.2023.104110",
+      "title": "Rates of iron(III) reduction coupled to elemental sulfur or tetrathionate oxidation by acidophilic microorganisms and detection of sulfur intermediates",
+      "status": "Primarypublisherabstract/searchexcerpt only; no fullmethods/figures acquired.",
+      "reason": "Relevant indirectchemistry counterevidence lead, differentstrains/conditions; cannot transfer rate or infer contradiction withjarositeDSM504."
+    },
+    {
+      "rank": 5,
+      "doi": "10.3389/fmicb.2017.00211",
+      "title": "Indirect Redox Transformations of Iron, Copper, and Chromium Catalyzed by Extremely Acidophilic Bacteria",
+      "status": "PMC primarysearch excerpt including methods/results considered as mechanismqualification lead; figures andfullprimary not inspected inthispass. No studymeasurements imported.",
+      "reason": "Different aerobicchemistry supports investigating indirectmechanism; needs separately completeassessment before recordextension."
+    }
+  ],
+  "checks": {
+    "recorded_at": "2026-10-11T21:43:23.749652+00:00",
+    "command": "UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate data/records/jarosite.yaml",
+    "exit_code": 0,
+    "stdout": "Checked 1 record(s); 0 failed.",
+    "record_sha256": "5642b5560b9d351f581fab9725486c440b4a3a0e6e4978c78478898e172b011b",
+    "scope": "Actual completed named-file validation, terminal tool session8861; recorded after completion. Full cohort and independent review remain parent-owned."
+  },
+  "schema_assessment": "Existing mineral/redox_transformation/support/partial fields express all accepted claims; no schema/validator/test change needed. Percentages are explanatorysourceprose, not schema concentrationcells.",
+  "scope_exclusions": "No criticalitylistclaim; no industrialresidue resourceowner; no separateAcidianusbiomineralizationmechanism because no matchedsynthesiscontrol; no bornite/chalcocite/etc recordedit. No externalmessages/publication/Git mutations.",
+  "raw_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/acquisition1.json",
+      "bytes": 1043,
+      "sha256": "bce2a49cfec612e1e95196e31920f74e60ba4a3ac2aea86e5b3a192c9975daf3"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/acquisition2.json",
+      "bytes": 2733,
+      "sha256": "cd64b493ceee5cc707acb95b1a17da831729f18781ef523d4d3fd7a2f8d446dc"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-crossref.json",
+      "bytes": 26005,
+      "sha256": "ba342832c599d21362653a6434114c744ed080960ad511514564d5b9b2b2eaf0"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-landing.html",
+      "bytes": 65674,
+      "sha256": "d8fd54a80f85056efce126545d7d4a136dee1d9312ff017faaf57c8cf1c4a183"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-main.pdf",
+      "bytes": 1653854,
+      "sha256": "f458a0d2e86fd8a19c41575aa78029006783e844ec52a0c662c9b510598a2ce2"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-main.txt",
+      "bytes": 69927,
+      "sha256": "991bac2447e8699bf02614e42e073124c172dcb965d558e7079d07b4123e9c49"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-01.png",
+      "bytes": 124915,
+      "sha256": "25a258a4d0f105e173514fbe9cc515cbd2b0667c77d99b14d9db802b2b39f36c"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-02.png",
+      "bytes": 70032,
+      "sha256": "74d4b0c4e8474f2364573d80c95a4a79eb6f063e1e7aa867adef82cf93939ae9"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-03.png",
+      "bytes": 150541,
+      "sha256": "90635131594f33480714cfd76717b04c51eaa59f5676ff086f31dba9f84501d6"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-04.png",
+      "bytes": 159305,
+      "sha256": "40d9bb3a9c22040d89970e42fce9293d684123ad7d53c71268a2a94852563c4d"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-05.png",
+      "bytes": 165720,
+      "sha256": "8bd03b4bfa2290c65e64b8bcc67f8fdf8e55e1ce2faa22cf015a07516c56dd64"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-06.png",
+      "bytes": 164858,
+      "sha256": "a7820cd50ee4c30fe16f39b38ebc3cd0474e0748acddcd1f60d9b0021625831f"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-07.png",
+      "bytes": 160759,
+      "sha256": "08833571c570f965b272ee85b0b6c1bf70d02d26945a0a32a91731fa53c41144"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-08.png",
+      "bytes": 159654,
+      "sha256": "25b1094ab7403b42b3a635227681af56593eae7c9f0960b49820cfd7abb7b7c4"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-09.png",
+      "bytes": 204390,
+      "sha256": "e197e181c0af00d5e12d0e8d7925fd0a5184295fc0ea2d4327ecc9c9c1d0f98f"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-10.png",
+      "bytes": 133534,
+      "sha256": "ffcb0a4fd3e5a7f833015f5f213cb1f9b869ef6381fcda7f6ff230ff689d3ad1"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-11.png",
+      "bytes": 169044,
+      "sha256": "4d28609044ccbceadfc3c6a9107d4e4062c80eebbf6c59b913334d452be98ba2"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-12.png",
+      "bytes": 164199,
+      "sha256": "2996d6c49e97d67022f1fa475421c59d66bc1bb7d784bde6df289d70d1bb4a99"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-13.png",
+      "bytes": 122476,
+      "sha256": "b4c6ce8dfe3643847c1c9d39edbd94a9653d2307fba306a5d1b22c43a54e05bb"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-14.png",
+      "bytes": 320831,
+      "sha256": "5f7cd4d3cb9d7515417166d1cce5f65c4a3dc3d1562517f431dfd420cfaf4c07"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-15.png",
+      "bytes": 235697,
+      "sha256": "f3a3f2304aece694b207f6731e3ae25a783d6a14781f4f3a573df161b7903cb4"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-16.png",
+      "bytes": 147967,
+      "sha256": "a7fc92b9dee70aacd91bf70eb0708ed648eb8c2e0516e592eba25fc1f8389555"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-17.png",
+      "bytes": 244193,
+      "sha256": "d3746822e87c2abace157c25d7bf5b1b456eda06e7f40d957e8dab657e9cb337"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-18.png",
+      "bytes": 146915,
+      "sha256": "4551e56bac7713929b7bb736e877e52155fa627d4bafc255de94b2b80eb786cb"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-19.png",
+      "bytes": 151378,
+      "sha256": "b1d4d24e86b43df5c21a0008f41fcbe13b94bb44e77d09cd8f1f576516458fbc"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-20.png",
+      "bytes": 192108,
+      "sha256": "f8783ea264b81ebcf1de5a78253a492266f7d17b2f1189a3948d469795d32053"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-21.png",
+      "bytes": 203950,
+      "sha256": "b15c82519cb7b4a29104de8260e87172980ae2a12dfebb3bbd4d17757cbdb13b"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-22.png",
+      "bytes": 194971,
+      "sha256": "284253768404d0cd7fe1e0c031ee5472dfa76b90ac5fa27dcafcf659fe929a68"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-23.png",
+      "bytes": 99900,
+      "sha256": "fc82848c2441606c9524be2599dff5f56330ee2cca3c1711c18077138f960771"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-24.png",
+      "bytes": 70883,
+      "sha256": "d9d372d7f75c172649e131870db972ace82d0453cbf8c82c4e9f7a52ea5410f5"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-25.png",
+      "bytes": 112339,
+      "sha256": "8f4a8bf149b67a148c7f6f1d6b9346c2b4df45ecbcf78b5ffbf8b7a590c626f7"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-26.png",
+      "bytes": 42686,
+      "sha256": "0bef90c5885df942fa17e4509eb7799954724764d0aac8d8a5078ca573483f8c"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-27.png",
+      "bytes": 34474,
+      "sha256": "7ecf951abe916c40a0c8af0abe7b8f6721c0f8b53be6ce8af1816de18fe976c6"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/chen2022-pages/page-28.png",
+      "bytes": 52088,
+      "sha256": "b279197c195b54360808f74d188efa2ce4d1980c4a8730b00989ef7c86a7ae54"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/comparison2026-crossref.json",
+      "bytes": 38891,
+      "sha256": "29c197c65b3833c59f7528cc3384373045401ad5e3013013eecbd6f10f5847a6"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/dedup-errors.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/dedup-hits.txt",
+      "bytes": 410604,
+      "sha256": "d48844422c1615278a29a57560d2ab6b87246aef87cd8a28e19ac736029165d7"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/dedup.json",
+      "bytes": 12214,
+      "sha256": "07fa88f4a2349b844798f93976520340b205032f8a101380833ec7d58c7919db"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/dsm504.html",
+      "bytes": 48468,
+      "sha256": "5ec0de034b3c0b34a660dc47904a866be2e11d566a979f2bf3f2609455ce1099"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/filename-correction.json",
+      "bytes": 1369,
+      "sha256": "13a388336c38796318d9b1183ce51dccdf964a6aee79d4c8d1e0228a020df339"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/ima-jarosite-page104.png",
+      "bytes": 306813,
+      "sha256": "7699b78766b4d63450c76719395bd6f4829fb9a009a589231ef8d41b89fc5986"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/ima-jarosite-page104.txt",
+      "bytes": 8953,
+      "sha256": "f8c1badc66014c40d5602910c6dfedee4bfbc949a9f3a369e3a51a774ec7018a"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/ima-reuse.json",
+      "bytes": 407,
+      "sha256": "b5ec6c869091ec7c3963eaf3d90e18f56163278219319d24617e6f98dbba8737"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/ima2026-reused.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/named-validation.json",
+      "bytes": 490,
+      "sha256": "7d91634a323b497e68df5f01c54dfa2634b6a92287012cb96b33fc2e3efd5323"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/ncbi930.html",
+      "bytes": 19941,
+      "sha256": "ccb7193588d181feb9d728dd1949805f36d04fc448e89a2a798552b2572c79c9"
+    },
+    {
+      "path": "/private/tmp/cmm-round35-jarosite-research/raw/ouyang2014-crossref.json",
+      "bytes": 34617,
+      "sha256": "4d647222e6538ace7da909baedd2eb3233a41bea6437907c0bfaaf698bc43d48"
+    }
+  ]
+}

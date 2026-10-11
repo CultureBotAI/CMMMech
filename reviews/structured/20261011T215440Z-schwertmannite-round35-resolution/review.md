@@ -1,0 +1,590 @@
+# Independent schwertmannite successor: denominator correction verified
+
+- Review: 20261011T215440Z-schwertmannite-round35-resolution
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T21:52:45.426534Z
+- Finished UTC: 2026-10-11T21:54:40.430467Z
+- Reviewer: Codex /root/round27_superalloy (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+F1 is resolved by the source-supported denominator correction and append-only provenance. Complete original primary assessment remains applicable: reverse reconstruction proves all other original record bytes unchanged. Corrected named validation and all corrected-state cohort gates pass. No other actionable scientific defect was identified.
+
+## Scope And Provenance
+
+All fields of the corrected mineral record, two distinct experimental mechanisms, original CREATE and appended EDIT/inline provenance; full primary assessment retained from this reviewer’s initial observation and the source equation re-inspected.
+
+Selection: Parent-assigned independent review of another curator record.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base f83cf867a38c470b4347f721d9ea9370c3019eaf.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:schwertmannite | data/records/schwertmannite.yaml | maintained | Schwertmannite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent corrected named validation | passed | True | cmmmech:schwertmannite | Executed by reviewer; terminal session20166 exit0. Checked 1 record; 0 failed. Log /private/tmp/cmm-round35-schwertmannite-independent/named-validation-corrected.log; SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e. |
+| Corrected-state required batch gate | passed | True | cmmmech:schwertmannite | Parent executed; reviewer independently read complete receipt and logs, verified log SHA256 and terminal success. All checks passed; 308 passed, 3 skipped in119.23s; 198 records and229 histories valid. Finished 2026-10-11T21:53:21.601680+00:00. Log /private/tmp/cmm-round35-corrected-final-batch.log; SHA256 9801e41c5e7f39c58f9711c4b6a36747750740f6e2ccc7ea055ebc0db408af91. |
+| Corrected-state required nonempty gate | passed | True | cmmmech:schwertmannite | Parent executed; reviewer independently read complete receipt and logs, verified log SHA256 and terminal success. Checked198 records; 0 failed. Finished 2026-10-11T21:53:27.672936+00:00. Log /private/tmp/cmm-round35-corrected-final-nonempty.log; SHA256 1a7af2b5ea572ea7e356525122eadd4bbd64b3ce247bc0c1a7b3eb3b71865ae1. |
+| Corrected-state required history gate | passed | True | cmmmech:schwertmannite | Parent executed; reviewer independently read complete receipt and logs, verified log SHA256 and terminal success. Checked229 history records; 0 errors against the trusted base. Finished 2026-10-11T21:53:31.472945+00:00. Log /private/tmp/cmm-round35-corrected-final-history.log; SHA256 6a35723bdc6888001561b265c4859a17d59b55bb8c460f13518e2b9d72d87b64. |
+
+## Scientific And Domain Assessments
+
+### Material, organism and criticality boundaries
+
+identity: supported. Targets: cmmmech:schwertmannite.
+
+Ferric oxyhydroxysulfate mineral identity and species-level taxonomy are supported. The laboratory precipitate remains distinct from elementaliron, natural ore, jarosite or industrial resource. No criticality is inherited.
+
+### Formation and distinct EPS-removal comparison
+
+evidence: supported. Targets: cmmmech:schwertmannite.
+
+Full methods substantiate loadings, volume, 28°C/180rpm, initialpH3, cell preparation, H2O2 dosing and separate72hour harvest. Average oxidation matching is imperfect; pH/oxidant, supernatant constituents and handling confound exclusive molecular attribution.
+
+### Diffraction and collected material
+
+evidence: supported. Targets: cmmmech:schwertmannite.
+
+OriginalFigures2–3 show broad schwertmannite-assigned diffraction features and contrasting aggregate morphology. Record correctly avoids equating no detected additional peaks with absolute phase purity.
+
+### Numerator and denominator of total-Fe precipitation
+
+quantity: supported. Targets: cmmmech:schwertmannite.
+
+Corrected denominator wording matches original Section2.3. The35.0/47.9% values, 60hour observation and biological-lower-than-chemical direction remain unchanged, and no mineral-mass or elemental-metal recovery yield is inferred.
+
+### Mass, BET and downstream adsorption
+
+quantity: supported. Targets: cmmmech:schwertmannite.
+
+Dry masses0.89/0.96/1.29g and BET68.23/56.76/86.43m2/g retain treatment order and are not purity-corrected yields.117/87mg/g are author-reported downstream uptake, with totalAs versus speciation limitation. Methods0–30mg/L are accurately attributed; Figure4caption0–40mg/L is an additional source inconsistency, not an imported protocol claim.
+
+### Source inconsistencies and deployment
+
+scope: supported. Targets: cmmmech:schwertmannite.
+
+60/72hour distinction, EPS mg/L versus mg/mL, and inconsistent hydroxyl coefficients are disclosed. Table1 stoichiometry is not used as identity proof. No natural-ore extraction or industrial recovery is claimed.
+
+### Independent review, append-only correction and completed gates
+
+provenance: supported. Targets: cmmmech:schwertmannite.
+
+Fresh native inspect captured corrected target, both canonical histories and schema before reassessment. Reviewer made no maintained edits. Exact reverse reconstruction confines changes to sentence and appended provenance; corrected named validation and all required final batch gates pass.
+
+## Findings
+
+### F1: Use initial dissolved total Fe as the precipitation denominator
+
+minor / resolved / confirmed; issue key: CMMMech.schwertmannite.precipitation-denominator.
+
+The initial record called dissolved-total-Fe loss the denominator. Source Section2.3 defines that loss as the numerator divided by initial totalFe. The corrected explanation now quantifies dissolved total-Fe loss relative to initial dissolved totalFe and retains all original values and interpretation boundaries.
+
+Disposition: Original page4 equation re-inspected; corrected explanation matches it. Exact reverse reconstruction proves only that sentence and appended provenance changed. Original CREATE/dossier/review are retained, correction dossier supersedes the imprecise handoff wording, and corrected named/full/nonempty/history gates pass.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/schwertmannite.yaml; All fields of frozen record | supports | All corrected fields read. Formation, distinct EPS treatment and downstream adsorption retain supported narrow scope; the corrected percentage sentence now matches the source equation. |
+| primary | https://doi.org/10.3390/ma11091739; Complete original 13-page PDF, Sections2–3, all seven figures and Table1; original figures/table visually inspected on pages5,7–10 | supports | Primary supports resting LX5, defined salts, chemical comparator, lower biological precipitation, separate EPS treatment, mass/BET observations and qualified downstream uptake. No supplementary-material nodes occur in retained complete XML; no missing-SI-dependent claim imported. |
+| denominator | https://doi.org/10.3390/ma11091739; Original PDFpage4, Section2.3, total Fe precipitation equation; independently visually inspected | supports | Original page4 equation visually re-inspected: 100 times (initial totalFe minus time-t totalFe) divided by initial totalFe. Corrected text now expresses dissolved total-Fe loss relative to initial dissolved totalFe; source35.0/47.9% values are unchanged. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Original page195 schwertmannite row, independently visually inspected | supports | Approved A,1990-006 and ferric oxyhydroxysulfate identity match the record. Reused dated authority PDF; no fresh download claimed. |
+| taxon | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&amp;mode=Info; Curator-acquired live HTML independently read at species node; reviewer web-open failed | supports | NCBITaxon920 labels Acidithiobacillus ferrooxidans at species rank. Source-reported LX5/CGMCC0727 is not silently treated as an authenticated strain TaxID. |
+| history | history/records/schwertmannite/2026-10-11T214621Z-codex-af894f.yaml; Complete canonical CREATE and distinct inline event | supports | Original CREATE remains byte-identical. Appended EDIT and distinct inline event describe the actual correction, actor/model/tool and issue118; no original history was rewritten. |
+| dedup | /private/tmp/cmm-round35-schwertmannite-independent/dedup.json; Independent bounded search including current/original records, research, reviews, history and cited raw roots | supports | 452 matching lines, exit0 and no stderr. Existing iron-mineral context does not duplicate the distinct schwertmannite mineral owner; no machine-wide absence claim. |
+| notices | Independent web search2026-10-11; First result sets for exactDOI notice and source-specific contradiction searches | supports | No affecting notice surfaced in bounded results. Related2021 morphology study and broader review are leads, not independently accepted replications or refutations. Original paper already demonstrates chemical formation and lower biological precipitation. |
+| delta | /private/tmp/cmm-round35-schwertmannite-independent/correction-delta-proof.json; Independent reverse-byte reconstruction receipt | supports | Reversing exactly one sentence replacement and removing the appended inline EDIT and history reference reconstructs original SHA256 d4fb683c9253e73339d001453c808d6ea5aab0dc108cf2ea0788ce23fe5b7978. All other record bytes are unchanged; initial review and CREATE hashes match. |
+| edit | history/records/schwertmannite/2026-10-11T215042Z-codex-fd5c52.yaml; Complete appended EDIT sidecar | supports | Canonical EDIT links exact initial review F1 and issue118, preserving original session. |
+| correction_dossier | research/sources/round35-schwertmannite/20261011T215129Z-denominator-correction.md; Complete correction note; original investigation remains unchanged | supports | New correction note explicitly supersedes original handoff denominator wording and retains the original dossier. Source formula, corrected sentence and exact hashes match independent checks. |
+| gates | /private/tmp/cmm-round35-corrected-final-terminal.json; Corrected-state terminal receipt and three referenced logs | supports | All three corrected-state commands returned0; complete logs read and their recorded SHA256 values independently verified. Full tests were rerun after correction, not inferred from the earlier receipt. |
+| initial | reviews/structured/20261011T214956Z-schwertmannite-round35-initial/review.yaml; Initial F1, source hash and full scientific assessment | supports | Immutable initial observation preserves full independent primary assessment and the exact open minor finding. This successor explicitly resolves its occurrence without erasing it. |
+
+## Limits And Additional Notes
+
+- Chemical comparator and EPS handling do not isolate an exclusive molecular cause; phase purity is not quantitatively established.
+- Source60/72hour, EPSunit and calculatedformula inconsistencies remain; downstream totalAs assay does not resolve arsenic redox.
+- Bounded search and retained authority acquisition are disclosed; reviewer direct NCBI/MDPI web openings failed.
+- Figure4 caption gives0–40mg/L whereas the adopted methods text says0–30mg/L; this additional primary discrepancy does not alter the accurately attributed record protocol.
+- Working-tree review does not assert committed or merged bytes. Local scientific resolution of issue118 does not claim its GitHub closure.
+- No maintained scientific edits by reviewer.
+- The requested fix concerns the record explanation, not rewriting the primary publication.
+- Original source assessments retain their actual initial access timestamps; the original equation, corrected record, delta and corrected-state gates were rechecked for this successor.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T215440Z-schwertmannite-round35-resolution
+kind: record
+repository: CultureBotAI/CMMMech
+title: 'Independent schwertmannite successor: denominator correction verified'
+started_at: '2026-10-11T21:52:45.426534Z'
+finished_at: '2026-10-11T21:54:40.430467Z'
+reviewer:
+  identity: Codex /root/round27_superalloy
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Record/history/dossier authored by /root/round27_packaging.
+    Reviewer authored only jarosite in this cohort and made no maintained schwertmannite
+    edits. Primary source was read independently, all original figures/Table1 and
+    authority row inspected. Shared worktree and curator-acquired artifacts disclosed.
+    Native input capture preceded target judgment. The curator, not this reviewer,
+    applied the supported correction. Fresh native inspect captured corrected bytes
+    before reassessment.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'F1 is resolved by the source-supported denominator correction and append-only
+  provenance. Complete original primary assessment remains applicable: reverse reconstruction
+  proves all other original record bytes unchanged. Corrected named validation and
+  all corrected-state cohort gates pass. No other actionable scientific defect was
+  identified.'
+source:
+  git_revision: f83cf867a38c470b4347f721d9ea9370c3019eaf
+  state: working_tree
+  inputs:
+  - path: data/records/schwertmannite.yaml
+    sha256: 8b99fc546f4743e648c83f3d6bd5214c0b2de64b1e0d6365eb233af632d650b5
+    role: target
+  - path: history/records/schwertmannite/2026-10-11T214621Z-codex-af894f.yaml
+    sha256: 8e34ba46322ac995d502f3adbea241d3dd885d8ecabbdd59fe8693b2cc2235df
+    role: context
+  - path: history/records/schwertmannite/2026-10-11T215042Z-codex-fd5c52.yaml
+    sha256: 40baed69529b7ee618118d5b4e486ce55ab5ca08791b9c61efcdfb4d18bf3d1b
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: All fields of the corrected mineral record, two distinct experimental
+    mechanisms, original CREATE and appended EDIT/inline provenance; full primary
+    assessment retained from this reviewer’s initial observation and the source equation
+    re-inspected.
+  selection: Parent-assigned independent review of another curator record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:schwertmannite
+  exclusions:
+  - target: New mechanisms and instrument reprocessing
+    reason: No raw diffraction fitting, numerical digitization or source-only2024extension
+      accepted.
+targets:
+- target_id: cmmmech:schwertmannite
+  path: data/records/schwertmannite.yaml
+  label: Schwertmannite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/schwertmannite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent corrected named validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate
+    data/records/schwertmannite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Executed by reviewer; terminal session20166 exit0. Checked 1 record; 0
+    failed. Log /private/tmp/cmm-round35-schwertmannite-independent/named-validation-corrected.log;
+    SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e.
+  target_ids:
+  - cmmmech:schwertmannite
+- check_id: batch
+  name: Corrected-state required batch gate
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Parent executed; reviewer independently read complete receipt and logs,
+    verified log SHA256 and terminal success. All checks passed; 308 passed, 3 skipped
+    in119.23s; 198 records and229 histories valid. Finished 2026-10-11T21:53:21.601680+00:00.
+    Log /private/tmp/cmm-round35-corrected-final-batch.log; SHA256 9801e41c5e7f39c58f9711c4b6a36747750740f6e2ccc7ea055ebc0db408af91.
+  target_ids:
+  - cmmmech:schwertmannite
+- check_id: nonempty
+  name: Corrected-state required nonempty gate
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Parent executed; reviewer independently read complete receipt and logs,
+    verified log SHA256 and terminal success. Checked198 records; 0 failed. Finished
+    2026-10-11T21:53:27.672936+00:00. Log /private/tmp/cmm-round35-corrected-final-nonempty.log;
+    SHA256 1a7af2b5ea572ea7e356525122eadd4bbd64b3ce247bc0c1a7b3eb3b71865ae1.
+  target_ids:
+  - cmmmech:schwertmannite
+- check_id: history
+  name: Corrected-state required history gate
+  command: uv run --locked cmmmech validate-history --base f83cf867a38c470b4347f721d9ea9370c3019eaf
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Parent executed; reviewer independently read complete receipt and logs,
+    verified log SHA256 and terminal success. Checked229 history records; 0 errors
+    against the trusted base. Finished 2026-10-11T21:53:31.472945+00:00. Log /private/tmp/cmm-round35-corrected-final-history.log;
+    SHA256 6a35723bdc6888001561b265c4859a17d59b55bb8c460f13518e2b9d72d87b64.
+  target_ids:
+  - cmmmech:schwertmannite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/schwertmannite.yaml
+  locator: All fields of frozen record
+  accessed_at: '2026-10-11T21:54:40.430467Z'
+  support: supports
+  summary: All corrected fields read. Formation, distinct EPS treatment and downstream
+    adsorption retain supported narrow scope; the corrected percentage sentence now
+    matches the source equation.
+  snapshot_sha256: 8b99fc546f4743e648c83f3d6bd5214c0b2de64b1e0d6365eb233af632d650b5
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/ma11091739
+  locator: Complete original 13-page PDF, Sections2–3, all seven figures and Table1;
+    original figures/table visually inspected on pages5,7–10
+  accessed_at: '2026-10-11T21:49:56.176233Z'
+  support: supports
+  summary: Primary supports resting LX5, defined salts, chemical comparator, lower
+    biological precipitation, separate EPS treatment, mass/BET observations and qualified
+    downstream uptake. No supplementary-material nodes occur in retained complete
+    XML; no missing-SI-dependent claim imported.
+  snapshot_sha256: da3cecd649c839531ad9e8816370017f4cf85c6c66a16954894dad40aaa3c9a9
+- evidence_id: denominator
+  kind: primary_source
+  reference: https://doi.org/10.3390/ma11091739
+  locator: Original PDFpage4, Section2.3, total Fe precipitation equation; independently
+    visually inspected
+  accessed_at: '2026-10-11T21:54:40.430467Z'
+  support: supports
+  summary: 'Original page4 equation visually re-inspected: 100 times (initial totalFe
+    minus time-t totalFe) divided by initial totalFe. Corrected text now expresses
+    dissolved total-Fe loss relative to initial dissolved totalFe; source35.0/47.9%
+    values are unchanged.'
+  snapshot_sha256: 95e0952762adc75f56f57b1efabccab4cea02d023995336d438c0de7f517a809
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Original page195 schwertmannite row, independently visually inspected
+  accessed_at: '2026-10-11T21:49:56.176233Z'
+  support: supports
+  summary: Approved A,1990-006 and ferric oxyhydroxysulfate identity match the record.
+    Reused dated authority PDF; no fresh download claimed.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: taxon
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
+  locator: Curator-acquired live HTML independently read at species node; reviewer
+    web-open failed
+  accessed_at: '2026-10-11T21:49:56.176233Z'
+  support: supports
+  summary: NCBITaxon920 labels Acidithiobacillus ferrooxidans at species rank. Source-reported
+    LX5/CGMCC0727 is not silently treated as an authenticated strain TaxID.
+  snapshot_sha256: cab22a4e9bc8dce1649fd53a7f40b6dd25313d46a1fe532ab766fc05c0974876
+- evidence_id: history
+  kind: record_content
+  reference: history/records/schwertmannite/2026-10-11T214621Z-codex-af894f.yaml
+  locator: Complete canonical CREATE and distinct inline event
+  accessed_at: '2026-10-11T21:54:40.430467Z'
+  support: supports
+  summary: Original CREATE remains byte-identical. Appended EDIT and distinct inline
+    event describe the actual correction, actor/model/tool and issue118; no original
+    history was rewritten.
+  snapshot_sha256: 8e34ba46322ac995d502f3adbea241d3dd885d8ecabbdd59fe8693b2cc2235df
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round35-schwertmannite-independent/dedup.json
+  locator: Independent bounded search including current/original records, research,
+    reviews, history and cited raw roots
+  accessed_at: '2026-10-11T21:49:56.176233Z'
+  support: supports
+  summary: 452 matching lines, exit0 and no stderr. Existing iron-mineral context
+    does not duplicate the distinct schwertmannite mineral owner; no machine-wide
+    absence claim.
+  search_scope: rg --no-ignore --hidden --follow over declared114roots, query schwertmannite|ma11091739.
+    Binary PDFs/images/Office/ZIP excluded from textmatching; adopted original PDF
+    independently read and figures/table inspected.
+  snapshot_sha256: c4fa7db69253a60617fa367517d1424aeeaf74be9d1c3914325534d7bc3158d1
+- evidence_id: notices
+  kind: search
+  reference: Independent web search2026-10-11
+  locator: First result sets for exactDOI notice and source-specific contradiction
+    searches
+  accessed_at: '2026-10-11T21:49:56.176233Z'
+  support: supports
+  summary: No affecting notice surfaced in bounded results. Related2021 morphology
+    study and broader review are leads, not independently accepted replications or
+    refutations. Original paper already demonstrates chemical formation and lower
+    biological precipitation.
+  search_scope: 'Queries: "10.3390/ma11091739" correction retraction corrigendum;
+    "schwertmannite" "Song" "2018" extracellular polymers inhibition contradictory.
+    No date filters or pagination. MDPI and NCBI direct web open returned internal
+    errors; original retained PDF/HTML used.'
+- evidence_id: delta
+  kind: record_content
+  reference: /private/tmp/cmm-round35-schwertmannite-independent/correction-delta-proof.json
+  locator: Independent reverse-byte reconstruction receipt
+  accessed_at: '2026-10-11T21:54:40.430467Z'
+  support: supports
+  summary: Reversing exactly one sentence replacement and removing the appended inline
+    EDIT and history reference reconstructs original SHA256 d4fb683c9253e73339d001453c808d6ea5aab0dc108cf2ea0788ce23fe5b7978.
+    All other record bytes are unchanged; initial review and CREATE hashes match.
+  snapshot_sha256: c0127eb97402418b5f6fe709596ce7a4a412819f7f1efb6172322fcf7d317424
+- evidence_id: edit
+  kind: record_content
+  reference: history/records/schwertmannite/2026-10-11T215042Z-codex-fd5c52.yaml
+  locator: Complete appended EDIT sidecar
+  accessed_at: '2026-10-11T21:54:40.430467Z'
+  support: supports
+  summary: Canonical EDIT links exact initial review F1 and issue118, preserving original
+    session.
+  snapshot_sha256: 40baed69529b7ee618118d5b4e486ce55ab5ca08791b9c61efcdfb4d18bf3d1b
+- evidence_id: correction_dossier
+  kind: record_content
+  reference: research/sources/round35-schwertmannite/20261011T215129Z-denominator-correction.md
+  locator: Complete correction note; original investigation remains unchanged
+  accessed_at: '2026-10-11T21:54:40.430467Z'
+  support: supports
+  summary: New correction note explicitly supersedes original handoff denominator
+    wording and retains the original dossier. Source formula, corrected sentence and
+    exact hashes match independent checks.
+  snapshot_sha256: aded81a026e149f8ea078f64c84ad9745cddd21b0ad94c697515863500244bae
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round35-corrected-final-terminal.json
+  locator: Corrected-state terminal receipt and three referenced logs
+  accessed_at: '2026-10-11T21:54:40.430467Z'
+  support: supports
+  summary: All three corrected-state commands returned0; complete logs read and their
+    recorded SHA256 values independently verified. Full tests were rerun after correction,
+    not inferred from the earlier receipt.
+  snapshot_sha256: 3cebf17ce0815a56ce35c4e7c9485ce4ec9f574b670b40f37e458b69616bf3e4
+- evidence_id: initial
+  kind: record_content
+  reference: reviews/structured/20261011T214956Z-schwertmannite-round35-initial/review.yaml
+  locator: Initial F1, source hash and full scientific assessment
+  accessed_at: '2026-10-11T21:54:40.430467Z'
+  support: supports
+  summary: Immutable initial observation preserves full independent primary assessment
+    and the exact open minor finding. This successor explicitly resolves its occurrence
+    without erasing it.
+  snapshot_sha256: 3a4d467c6fe179f49372fc5678e88ac52b4eb1272b3bd0affe008ef6a1d6607c
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Material, organism and criticality boundaries
+  outcome: supported
+  summary: Ferric oxyhydroxysulfate mineral identity and species-level taxonomy are
+    supported. The laboratory precipitate remains distinct from elementaliron, natural
+    ore, jarosite or industrial resource. No criticality is inherited.
+  target_ids:
+  - cmmmech:schwertmannite
+  evidence_ids:
+  - record
+  - primary
+  - ima
+  - taxon
+  - dedup
+  dimensions:
+  - name: material_form
+    value: Laboratory reagent-derived schwertmannite-assigned precipitate
+    definition: IMA mineral root; powderXRD supports phase assignment without absolute
+      purity.
+    evidence_ids:
+    - primary
+    - ima
+  - name: biomass
+    value: Washed source-reported LX5 resting cells
+    definition: Species-level NCBI mapping only; cell preparation and strain labels
+      are preserved.
+    evidence_ids:
+    - primary
+    - taxon
+  - name: criticality
+    value: Not asserted
+    definition: No list, jurisdiction or edition transferred from constituent iron.
+    evidence_ids:
+    - record
+- assessment_id: methods
+  area: evidence
+  topic: Formation and distinct EPS-removal comparison
+  outcome: supported
+  summary: Full methods substantiate loadings, volume, 28°C/180rpm, initialpH3, cell
+    preparation, H2O2 dosing and separate72hour harvest. Average oxidation matching
+    is imperfect; pH/oxidant, supernatant constituents and handling confound exclusive
+    molecular attribution.
+  target_ids:
+  - cmmmech:schwertmannite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: phase
+  area: evidence
+  topic: Diffraction and collected material
+  outcome: supported
+  summary: OriginalFigures2–3 show broad schwertmannite-assigned diffraction features
+    and contrasting aggregate morphology. Record correctly avoids equating no detected
+    additional peaks with absolute phase purity.
+  target_ids:
+  - cmmmech:schwertmannite
+  evidence_ids:
+  - record
+  - primary
+  - ima
+- assessment_id: quantity
+  area: quantity
+  topic: Numerator and denominator of total-Fe precipitation
+  outcome: supported
+  summary: Corrected denominator wording matches original Section2.3. The35.0/47.9%
+    values, 60hour observation and biological-lower-than-chemical direction remain
+    unchanged, and no mineral-mass or elemental-metal recovery yield is inferred.
+  target_ids:
+  - cmmmech:schwertmannite
+  evidence_ids:
+  - record
+  - primary
+  - denominator
+  - delta
+- assessment_id: other_metrics
+  area: quantity
+  topic: Mass, BET and downstream adsorption
+  outcome: supported
+  summary: Dry masses0.89/0.96/1.29g and BET68.23/56.76/86.43m2/g retain treatment
+    order and are not purity-corrected yields.117/87mg/g are author-reported downstream
+    uptake, with totalAs versus speciation limitation. Methods0–30mg/L are accurately
+    attributed; Figure4caption0–40mg/L is an additional source inconsistency, not
+    an imported protocol claim.
+  target_ids:
+  - cmmmech:schwertmannite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: limits
+  area: scope
+  topic: Source inconsistencies and deployment
+  outcome: supported
+  summary: 60/72hour distinction, EPS mg/L versus mg/mL, and inconsistent hydroxyl
+    coefficients are disclosed. Table1 stoichiometry is not used as identity proof.
+    No natural-ore extraction or industrial recovery is claimed.
+  target_ids:
+  - cmmmech:schwertmannite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Independent review, append-only correction and completed gates
+  outcome: supported
+  summary: Fresh native inspect captured corrected target, both canonical histories
+    and schema before reassessment. Reviewer made no maintained edits. Exact reverse
+    reconstruction confines changes to sentence and appended provenance; corrected
+    named validation and all required final batch gates pass.
+  target_ids:
+  - cmmmech:schwertmannite
+  evidence_ids:
+  - record
+  - history
+  - dedup
+  - notices
+  - delta
+  - edit
+  - correction_dossier
+  - gates
+  - initial
+findings:
+- finding_id: F1
+  issue_key: CMMMech.schwertmannite.precipitation-denominator
+  category: quantity
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Use initial dissolved total Fe as the precipitation denominator
+  description: The initial record called dissolved-total-Fe loss the denominator.
+    Source Section2.3 defines that loss as the numerator divided by initial totalFe.
+    The corrected explanation now quantifies dissolved total-Fe loss relative to initial
+    dissolved totalFe and retains all original values and interpretation boundaries.
+  target_ids:
+  - cmmmech:schwertmannite
+  field_paths:
+  - mechanisms[id=lx5_ferrous_oxidation_and_schwertmannite_precipitation].evidence[1].explanation
+  evidence_ids:
+  - record
+  - denominator
+  - primary
+  - delta
+  - edit
+  - correction_dossier
+  - gates
+  - initial
+  rule_id: preserve-quantity-denominator
+  native_severity: minor
+  normalization_reason: A bounded explanatory wording defect; source percentages,
+    comparative direction, material identity and non-recovery boundary remain correct.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/schwertmannite.yaml
+    role: maintained_record
+  disposition_reason: Original page4 equation re-inspected; corrected explanation
+    matches it. Exact reverse reconstruction proves only that sentence and appended
+    provenance changed. Original CREATE/dossier/review are retained, correction dossier
+    supersedes the imprecise handoff wording, and corrected named/full/nonempty/history
+    gates pass.
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261011T214956Z-schwertmannite-round35-initial
+    finding_id: F1
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/118
+actions: []
+limitations:
+- Chemical comparator and EPS handling do not isolate an exclusive molecular cause;
+  phase purity is not quantitatively established.
+- Source60/72hour, EPSunit and calculatedformula inconsistencies remain; downstream
+  totalAs assay does not resolve arsenic redox.
+- Bounded search and retained authority acquisition are disclosed; reviewer direct
+  NCBI/MDPI web openings failed.
+- Figure4 caption gives0–40mg/L whereas the adopted methods text says0–30mg/L; this
+  additional primary discrepancy does not alter the accurately attributed record protocol.
+- Working-tree review does not assert committed or merged bytes. Local scientific
+  resolution of issue118 does not claim its GitHub closure.
+notes:
+- No maintained scientific edits by reviewer.
+- The requested fix concerns the record explanation, not rewriting the primary publication.
+- Original source assessments retain their actual initial access timestamps; the original
+  equation, corrected record, delta and corrected-state gates were rechecked for this
+  successor.
+links:
+- https://doi.org/10.3390/ma11091739
+- https://github.com/CultureBotAI/CMMMech/issues/118
+tags:
+- round35
+- independent
+- scientific
+- schwertmannite
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261011T214956Z-schwertmannite-round35-initial
+  relationship: Resolves F1 on the corrected target, preserving the immutable initial
+    observation and its complete independent primary assessment.
+```
