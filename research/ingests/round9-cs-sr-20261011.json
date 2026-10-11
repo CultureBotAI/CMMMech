@@ -1,0 +1,552 @@
+{
+  "created_utc": "2026-10-11T06:52:42Z",
+  "operation": "Primary-evidence curation of cesium and strontium element records; independent review is separate and pending at dossier freeze.",
+  "actor": {
+    "name": "codex",
+    "model": "GPT-6",
+    "tool": "codex"
+  },
+  "trusted_base": "9fa187ff5a455f495cfa2635e60c413b6763370d",
+  "branch": "curate/cmm-expansion-round9-20261011",
+  "acceptance_issue": "https://github.com/CultureBotAI/CMMMech/issues/39",
+  "records": [
+    {
+      "id": "cmmmech:cesium",
+      "path": "data/records/cesium.yaml",
+      "sha256": "d4e1a06183ea4b843f0083eb93c4fca315a1f1a3b2bca5048e06403d6922f345",
+      "history_refs": [
+        "history/records/cesium/2026-10-11T065053Z-codex-6510dc.yaml"
+      ],
+      "history_hashes": {
+        "history/records/cesium/2026-10-11T065053Z-codex-6510dc.yaml": "6faeb484820419058c193a71e2ba063a61f2832d6d0f3385f7c3622849ae8b03"
+      }
+    },
+    {
+      "id": "cmmmech:strontium",
+      "path": "data/records/strontium.yaml",
+      "sha256": "90870721149f726d56520b6fe6aa12d407b3d9e98535dc353c33af2be24b05aa",
+      "history_refs": [
+        "history/records/strontium/2026-10-11T065059Z-codex-390f8d.yaml"
+      ],
+      "history_hashes": {
+        "history/records/strontium/2026-10-11T065059Z-codex-390f8d.yaml": "857bf592d8b546f8e2976c99d497a637609bd8e61b7cb069606a32ac3bae211f"
+      }
+    }
+  ],
+  "search_scope": {
+    "date": "2026-10-11",
+    "provider": "Web search plus primary PMC/Europe PMC/publisher, ChEBI, NCBI, JCM, GovInfo and EUR-Lex endpoints",
+    "queries": [
+      "\"Removal of Soluble Strontium\" \"TK2d\"",
+      "\"Simultaneous removal of caesium and strontium\" probiotic",
+      "site:ebi.ac.uk/chebi \"caesium atom\"",
+      "site:ebi.ac.uk/chebi \"strontium atom\"",
+      "site:ebi.ac.uk/chebi \"caesium\" \"CHEBI\"",
+      "\"Bifidobacterium adolescentis\" \"JCM 1275\" NCBI",
+      "\"Bacillus\" \"TK2d\" taxonomy",
+      "\"caesium atom\" ChEBI",
+      "\"strontium atom\" CHEBI:33324",
+      "\"10.1128/AEM.00855-17\" correction retraction",
+      "\"10.1038/s41598-024-57678-8\" correction retraction",
+      "\"Bacillus\" \"TK2d\" strontium limitation abiotic",
+      "\"Bifidobacterium adolescentis\" caesium accumulation polyphosphate control",
+      "\"10.1038/s41598-024-57678-8\" \"correction\"",
+      "\"10.1128/AEM.00855-17\" \"correction\"",
+      "\"10.1038/s41598-024-57678-8\" \"retraction\"",
+      "\"10.1128/AEM.00855-17\" \"retraction\""
+    ],
+    "coverage": "First result sets, no pagination or exhaustive citation graph. Exact DOI correction/retraction queries did not identify a relevant notice in inspected results. Generic unrelated hits are not evidence of a notice.",
+    "dedup": "rg --no-ignore --hidden --follow across data, research, reviews and .claude; relevant cited authority downloads in /private/tmp/cmm-expansion-authorities-20261011 and /private/tmp/cmm-next-eu; this task raw directory. Names occur in the authority inventory/frontiers; no prior cesium/strontium root, matching ChEBI ID or selected DOI in repository scientific trees before writes. Scoped repository trees contained no symlinks. This is not a machine-wide absence claim."
+  },
+  "acquisitions": [
+    {
+      "key": "sr-supp",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5627000/bin/AEM.00855-17_zam999118105s1.pdf",
+      "acquired_at": "2026-10-11T06:48:06.733296+00:00",
+      "content_type": "text/html; charset=utf-8",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/sr-supp.raw",
+      "bytes": 1817,
+      "sha256": "93c807ecf07b5b8e606dd9c8c58ae27056eaffb35c3d32adea4d73f779e5ca1e",
+      "prefix": "\n\n\n\n<html>\n  <head>\n    <meta name=\"view",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-assets.json",
+      "verified_sha256": "93c807ecf07b5b8e606dd9c8c58ae27056eaffb35c3d32adea4d73f779e5ca1e",
+      "content_check": "HTML browser challenge, not acquired PDF; do not treat as source evidence.",
+      "terms": "Horiike2017: copyright 2017 ASM, all rights reserved. Supplement rights retained by authors. Readable article/assets do not confer redistribution rights; all raw material retained outside Git."
+    },
+    {
+      "key": "sr-pdf",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5627000/pdf/e00855-17.pdf",
+      "acquired_at": "2026-10-11T06:48:06.733920+00:00",
+      "content_type": "text/html; charset=utf-8",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/sr-pdf.raw",
+      "bytes": 1817,
+      "sha256": "342a0a50a930a20143334a1189c5c92ad78d630397bfeec5ecf487a479bcdf61",
+      "prefix": "\n\n\n\n<html>\n  <head>\n    <meta name=\"view",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-assets.json",
+      "verified_sha256": "342a0a50a930a20143334a1189c5c92ad78d630397bfeec5ecf487a479bcdf61",
+      "content_check": "HTML browser challenge, not acquired PDF; do not treat as source evidence.",
+      "terms": "Horiike2017: copyright 2017 ASM, all rights reserved. Supplement rights retained by authors. Readable article/assets do not confer redistribution rights; all raw material retained outside Git."
+    },
+    {
+      "key": "cs-html",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10984957/",
+      "acquired_at": "2026-10-11T06:48:06.734081+00:00",
+      "content_type": "text/html; charset=utf-8",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/cs-html.raw",
+      "bytes": 159284,
+      "sha256": "210f12711fa6659962503054fa96640709e1c0ae2ca433c8a48b3066e7709ee8",
+      "prefix": "\n<!DOCTYPE html>\n<html lang=\"en\" >\n    <",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-assets.json",
+      "verified_sha256": "210f12711fa6659962503054fa96640709e1c0ae2ca433c8a48b3066e7709ee8",
+      "content_check": "HTML publication or official authority content inspected, not a challenge.",
+      "terms": "Primary XML states CC BY 4.0. Raw articles and figures retained outside Git; no third-party bulk text/images committed."
+    },
+    {
+      "key": "taxon1630002",
+      "url": "https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/1630002/dataset_report",
+      "acquired_at": "2026-10-11T06:48:06.734220+00:00",
+      "content_type": "application/json",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/taxon1630002.raw",
+      "bytes": 709,
+      "sha256": "83a83d3ae0b99a031df3b80f8faa497fdfe0f621879a39d03ad13bc09a628462",
+      "prefix": "{\"reports\":[{\"taxonomy\":{\"tax_id\":163000",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-assets.json",
+      "verified_sha256": "83a83d3ae0b99a031df3b80f8faa497fdfe0f621879a39d03ad13bc09a628462",
+      "content_check": "JSON resolved taxon label and rank.",
+      "terms": "Public authority endpoint; no third-party bulk data redistributed and reuse terms not independently audited."
+    },
+    {
+      "key": "sr-figure1",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/ab73/5627000/8f6956177971/zam9991181050001.jpg",
+      "acquired_at": "2026-10-11T06:48:06.734520+00:00",
+      "content_type": "image/jpeg",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/sr-figure1.jpg",
+      "bytes": 37701,
+      "sha256": "40f72437ea53ac8bc42bece3e6a3293f62595c65b8f5912a5d656e811f2d9109",
+      "prefix": "����\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0002X\u0002X\u0000\u0000��\u0000C\u0000\u0003\u0002\u0002\u0002\u0002\u0002\u0003\u0002\u0002\u0002\u0003\u0003\u0003\u0003\u0004",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-assets.json",
+      "verified_sha256": "40f72437ea53ac8bc42bece3e6a3293f62595c65b8f5912a5d656e811f2d9109",
+      "content_check": "JPEG magic; image visually inspected.",
+      "terms": "Horiike2017: copyright 2017 ASM, all rights reserved. Supplement rights retained by authors. Readable article/assets do not confer redistribution rights; all raw material retained outside Git."
+    },
+    {
+      "key": "sr-figure2",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/ab73/5627000/0482fe5e73a9/zam9991181050002.jpg",
+      "acquired_at": "2026-10-11T06:48:06.734688+00:00",
+      "content_type": "image/jpeg",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/sr-figure2.jpg",
+      "bytes": 38333,
+      "sha256": "3815744477cef45f392cc1c836da032ae6af64fb5d0542a275e5d2f26a27195c",
+      "prefix": "����\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0001�\u0001�\u0000\u0000��\u0000C\u0000\u0003\u0002\u0002\u0002\u0002\u0002\u0003\u0002\u0002\u0002\u0003\u0003\u0003\u0003\u0004",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-assets.json",
+      "verified_sha256": "3815744477cef45f392cc1c836da032ae6af64fb5d0542a275e5d2f26a27195c",
+      "content_check": "JPEG magic; image visually inspected.",
+      "terms": "Horiike2017: copyright 2017 ASM, all rights reserved. Supplement rights retained by authors. Readable article/assets do not confer redistribution rights; all raw material retained outside Git."
+    },
+    {
+      "key": "sr-figure3",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/ab73/5627000/bbe334bb08bd/zam9991181050003.jpg",
+      "acquired_at": "2026-10-11T06:48:06.968764+00:00",
+      "content_type": "image/jpeg",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/sr-figure3.jpg",
+      "bytes": 32439,
+      "sha256": "6238cd90239076f90cda657c1dece949f92fd054b65de5d12faf786b56c5b523",
+      "prefix": "����\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0001,\u0001,\u0000\u0000��\u0000C\u0000\u0003\u0002\u0002\u0002\u0002\u0002\u0003\u0002\u0002\u0002\u0003\u0003\u0003\u0003\u0004",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-assets.json",
+      "verified_sha256": "6238cd90239076f90cda657c1dece949f92fd054b65de5d12faf786b56c5b523",
+      "content_check": "JPEG magic; image visually inspected.",
+      "terms": "Horiike2017: copyright 2017 ASM, all rights reserved. Supplement rights retained by authors. Readable article/assets do not confer redistribution rights; all raw material retained outside Git."
+    },
+    {
+      "key": "sr-figure4",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/ab73/5627000/08abb1bc7af5/zam9991181050004.jpg",
+      "acquired_at": "2026-10-11T06:48:06.968999+00:00",
+      "content_type": "image/jpeg",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/sr-figure4.jpg",
+      "bytes": 93832,
+      "sha256": "04663e50c186dea8cac804a7fa2183ecb3ff42d023a064deabb0543783da92a8",
+      "prefix": "����\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0001,\u0001,\u0000\u0000��\u0000C\u0000\u0003\u0002\u0002\u0002\u0002\u0002\u0003\u0002\u0002\u0002\u0003\u0003\u0003\u0003\u0004",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-assets.json",
+      "verified_sha256": "04663e50c186dea8cac804a7fa2183ecb3ff42d023a064deabb0543783da92a8",
+      "content_check": "JPEG magic; image visually inspected.",
+      "terms": "Horiike2017: copyright 2017 ASM, all rights reserved. Supplement rights retained by authors. Readable article/assets do not confer redistribution rights; all raw material retained outside Git."
+    },
+    {
+      "key": "sr-figure5",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/ab73/5627000/ee13407403ac/zam9991181050005.jpg",
+      "acquired_at": "2026-10-11T06:48:06.996686+00:00",
+      "content_type": "image/jpeg",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/sr-figure5.jpg",
+      "bytes": 93784,
+      "sha256": "93b81335def8b1c941ba955a87765f66aaa711960d5681ec28218ecd4dbd1d3d",
+      "prefix": "����\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0002X\u0002X\u0000\u0000��\u0000C\u0000\u0003\u0002\u0002\u0002\u0002\u0002\u0003\u0002\u0002\u0002\u0003\u0003\u0003\u0003\u0004",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-assets.json",
+      "verified_sha256": "93b81335def8b1c941ba955a87765f66aaa711960d5681ec28218ecd4dbd1d3d",
+      "content_check": "JPEG magic; image visually inspected.",
+      "terms": "Horiike2017: copyright 2017 ASM, all rights reserved. Supplement rights retained by authors. Readable article/assets do not confer redistribution rights; all raw material retained outside Git."
+    },
+    {
+      "key": "sr-figure6",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/ab73/5627000/57a333066175/zam9991181050006.jpg",
+      "acquired_at": "2026-10-11T06:48:07.062485+00:00",
+      "content_type": "image/jpeg",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/sr-figure6.jpg",
+      "bytes": 49213,
+      "sha256": "2f26df6198c437949d1caedba75cc02ce48918b13c1ff8714b4ffe788f33d826",
+      "prefix": "����\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0001,\u0001,\u0000\u0000��\u0000C\u0000\u0003\u0002\u0002\u0002\u0002\u0002\u0003\u0002\u0002\u0002\u0003\u0003\u0003\u0003\u0004",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-assets.json",
+      "verified_sha256": "2f26df6198c437949d1caedba75cc02ce48918b13c1ff8714b4ffe788f33d826",
+      "content_check": "JPEG magic; image visually inspected.",
+      "terms": "Horiike2017: copyright 2017 ASM, all rights reserved. Supplement rights retained by authors. Readable article/assets do not confer redistribution rights; all raw material retained outside Git."
+    },
+    {
+      "key": "sr-supp-asm",
+      "url": "https://journals.asm.org/doi/suppl/10.1128/AEM.00855-17/suppl_file/zam999118105s1.pdf",
+      "acquired_at": "2026-10-11T06:48:36.769860+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-assets2.json",
+      "terms": "Horiike2017: copyright 2017 ASM, all rights reserved. Supplement rights retained by authors. Readable article/assets do not confer redistribution rights; all raw material retained outside Git."
+    },
+    {
+      "key": "sr-assets-epmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5627000/supplementaryFiles",
+      "acquired_at": "2026-10-11T06:48:36.770486+00:00",
+      "content_type": "application/xml",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/sr-assets-epmc.raw",
+      "bytes": 296,
+      "sha256": "910500fe74465c9507a28d6739c166f84f440c0a24c6bc801f7a04af015196c9",
+      "prefix": "<?xml version=\"1.0\" encoding=\"UTF-8\" sta",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-assets2.json",
+      "verified_sha256": "910500fe74465c9507a28d6739c166f84f440c0a24c6bc801f7a04af015196c9",
+      "content_check": "XML error explicitly says this article is not open access; not a supplement.",
+      "terms": "Horiike2017: copyright 2017 ASM, all rights reserved. Supplement rights retained by authors. Readable article/assets do not confer redistribution rights; all raw material retained outside Git."
+    },
+    {
+      "key": "cs-assets-epmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10984957/supplementaryFiles",
+      "acquired_at": "2026-10-11T06:48:36.770753+00:00",
+      "content_type": "application/zip",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/cs-assets-epmc.zip",
+      "bytes": 485930,
+      "sha256": "76ce09a694e811d35c2e8e6f32410cb71d3a500233691e83402fdbfcdc7a32cb",
+      "prefix": "PK\u0003\u0004\u0014\u0000\b\b\b\u0000\u0012>K]\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u001e\u0000\u0000\u000041598_2024",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-assets2.json",
+      "verified_sha256": "76ce09a694e811d35c2e8e6f32410cb71d3a500233691e83402fdbfcdc7a32cb",
+      "content_check": "Complete ZIP; all member CRCs pass. Contains four main figures as JPEG/GIF; no additional experiment dataset.",
+      "members": [
+        "41598_2024_57678_Fig2_HTML.gif",
+        "41598_2024_57678_Fig3_HTML.gif",
+        "41598_2024_57678_Fig4_HTML.jpg",
+        "41598_2024_57678_Fig2_HTML.jpg",
+        "41598_2024_57678_Fig1_HTML.jpg",
+        "41598_2024_57678_Fig1_HTML.gif",
+        "41598_2024_57678_Fig3_HTML.jpg",
+        "41598_2024_57678_Fig4_HTML.gif"
+      ],
+      "terms": "Primary XML states CC BY 4.0. Raw articles and figures retained outside Git; no third-party bulk text/images committed."
+    },
+    {
+      "key": "cs-figure1",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/3f82/10984957/635176157dd0/41598_2024_57678_Fig1_HTML.jpg",
+      "acquired_at": "2026-10-11T06:48:36.770977+00:00",
+      "content_type": "image/jpeg",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/cs-figure1.jpg",
+      "bytes": 176808,
+      "sha256": "140f0ec09779382fa8370ff4eba8c71168c4cb86b1d68b03cc59b08e111b9433",
+      "prefix": "����\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0000`\u0000`\u0000\u0000�� �Photoshop 3.0\u00008B",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-assets2.json",
+      "verified_sha256": "140f0ec09779382fa8370ff4eba8c71168c4cb86b1d68b03cc59b08e111b9433",
+      "content_check": "JPEG magic; image visually inspected.",
+      "terms": "Primary XML states CC BY 4.0. Raw articles and figures retained outside Git; no third-party bulk text/images committed."
+    },
+    {
+      "key": "cs-figure2",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/3f82/10984957/8d730d1937d7/41598_2024_57678_Fig2_HTML.jpg",
+      "acquired_at": "2026-10-11T06:48:36.771360+00:00",
+      "content_type": "image/jpeg",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/cs-figure2.jpg",
+      "bytes": 127273,
+      "sha256": "91d02f6a1d9c90b7f69e1bb61395d13d68f97dd538c6a315c6480abca9380efd",
+      "prefix": "����\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0000`\u0000`\u0000\u0000��(\nPhotoshop 3.0\u00008B",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-assets2.json",
+      "verified_sha256": "91d02f6a1d9c90b7f69e1bb61395d13d68f97dd538c6a315c6480abca9380efd",
+      "content_check": "JPEG magic; image visually inspected.",
+      "terms": "Primary XML states CC BY 4.0. Raw articles and figures retained outside Git; no third-party bulk text/images committed."
+    },
+    {
+      "key": "cs-figure3",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/3f82/10984957/8874ef4e8203/41598_2024_57678_Fig3_HTML.jpg",
+      "acquired_at": "2026-10-11T06:48:36.771586+00:00",
+      "content_type": "image/jpeg",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/cs-figure3.jpg",
+      "bytes": 61602,
+      "sha256": "56f15e964b34e7867ba3f0c0bf0ed4756abf9efa5fa674db2d15e724c6b17d14",
+      "prefix": "����\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0000`\u0000`\u0000\u0000��\u0018�Photoshop 3.0\u00008B",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-assets2.json",
+      "verified_sha256": "56f15e964b34e7867ba3f0c0bf0ed4756abf9efa5fa674db2d15e724c6b17d14",
+      "content_check": "JPEG magic; image visually inspected.",
+      "terms": "Primary XML states CC BY 4.0. Raw articles and figures retained outside Git; no third-party bulk text/images committed."
+    },
+    {
+      "key": "cs-figure4",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/3f82/10984957/b1cca598c22c/41598_2024_57678_Fig4_HTML.jpg",
+      "acquired_at": "2026-10-11T06:48:36.845881+00:00",
+      "content_type": "image/jpeg",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/cs-figure4.jpg",
+      "bytes": 96356,
+      "sha256": "2fefafd4319267e0871e7fdcc18f79230a1b0f4f07dbb0a730f5c51ac2d7e332",
+      "prefix": "����\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0000`\u0000`\u0000\u0000��\u001afPhotoshop 3.0\u00008B",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-assets2.json",
+      "verified_sha256": "2fefafd4319267e0871e7fdcc18f79230a1b0f4f07dbb0a730f5c51ac2d7e332",
+      "content_check": "JPEG magic; image visually inspected.",
+      "terms": "Primary XML states CC BY 4.0. Raw articles and figures retained outside Git; no third-party bulk text/images committed."
+    },
+    {
+      "key": "sr-asm",
+      "url": "https://journals.asm.org/doi/full/10.1128/aem.00855-17",
+      "acquired_at": "2026-10-11T06:47:20.510404+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-authorities.json",
+      "terms": "Horiike2017: copyright 2017 ASM, all rights reserved. Supplement rights retained by authors. Readable article/assets do not confer redistribution rights; all raw material retained outside Git."
+    },
+    {
+      "key": "sr-pmc",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5627000/",
+      "acquired_at": "2026-10-11T06:47:20.511027+00:00",
+      "content_type": "text/html; charset=utf-8",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/sr-pmc.raw",
+      "bytes": 180551,
+      "sha256": "52f54205df2aa237eda3c8b6f075ca9a9e1c8d646a37a4255fdf7add9ab9bb93",
+      "prefix": "\n<!DOCTYPE html>\n<html lang=\"en\" >\n    <head >\n\n        <meta charset=\"UTF-8\" />",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-authorities.json",
+      "verified_sha256": "52f54205df2aa237eda3c8b6f075ca9a9e1c8d646a37a4255fdf7add9ab9bb93",
+      "content_check": "HTML publication or official authority content inspected, not a challenge.",
+      "terms": "Horiike2017: copyright 2017 ASM, all rights reserved. Supplement rights retained by authors. Readable article/assets do not confer redistribution rights; all raw material retained outside Git."
+    },
+    {
+      "key": "chebi-cs",
+      "url": "https://www.ebi.ac.uk/chebi/backend/api/public/compound/30514/",
+      "acquired_at": "2026-10-11T06:47:20.511281+00:00",
+      "content_type": "application/json",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/chebi-cs.raw",
+      "bytes": 2605,
+      "sha256": "995f28529290f890cd9e231ff78a2e79a73721cd9f8cadc92e7a5cdf7863b1a6",
+      "prefix": "{\"id\":30514,\"chebi_accession\":\"CHEBI:30514\",\"name\":\"caesium atom\",\"stars\":3,\"def",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-authorities.json",
+      "verified_sha256": "995f28529290f890cd9e231ff78a2e79a73721cd9f8cadc92e7a5cdf7863b1a6",
+      "content_check": "JSON resolved expected atom label, elemental formula and zero charge.",
+      "terms": "Public authority endpoint; no third-party bulk data redistributed and reuse terms not independently audited."
+    },
+    {
+      "key": "chebi-sr",
+      "url": "https://www.ebi.ac.uk/chebi/backend/api/public/compound/33324/",
+      "acquired_at": "2026-10-11T06:47:20.511449+00:00",
+      "content_type": "application/json",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/chebi-sr.raw",
+      "bytes": 3327,
+      "sha256": "93380cc8667af3aa2ba87a8c484485eaae3732fb79c705a7aab48d0ef30ef7b5",
+      "prefix": "{\"id\":33324,\"chebi_accession\":\"CHEBI:33324\",\"name\":\"strontium atom\",\"stars\":3,\"d",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-authorities.json",
+      "verified_sha256": "93380cc8667af3aa2ba87a8c484485eaae3732fb79c705a7aab48d0ef30ef7b5",
+      "content_check": "JSON resolved expected atom label, elemental formula and zero charge.",
+      "terms": "Public authority endpoint; no third-party bulk data redistributed and reuse terms not independently audited."
+    },
+    {
+      "key": "us-2025",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm",
+      "acquired_at": "2026-10-11T06:47:20.511725+00:00",
+      "content_type": "text/html",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/us-2025.raw",
+      "bytes": 21581,
+      "sha256": "e13ee3cb37efbea401f4a7e9e3c761a9653d6aab258ff6c4cd6ba4a0076dd615",
+      "prefix": "<html>\n<head>\n<title>Federal Register, Volume 90 Issue 214 (Friday, November 7, ",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-authorities.json",
+      "verified_sha256": "e13ee3cb37efbea401f4a7e9e3c761a9653d6aab258ff6c4cd6ba4a0076dd615",
+      "content_check": "HTML publication or official authority content inspected, not a challenge.",
+      "terms": "Public authority endpoint; no third-party bulk data redistributed and reuse terms not independently audited."
+    },
+    {
+      "key": "eu-2024",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1252/oj/eng",
+      "acquired_at": "2026-10-11T06:47:20.511938+00:00",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/eu-2024.raw",
+      "bytes": 1054404,
+      "sha256": "7673f3e779fb4bcfc3d27d8ea83294f5f59394644bb78dc2f77902e295026688",
+      "prefix": "  \n \n \n \n \n \n \n \n \n \n \n \n \n \n        <!DOCTYPE html>\n        <html lang=\"en\" cla",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-authorities.json",
+      "verified_sha256": "7673f3e779fb4bcfc3d27d8ea83294f5f59394644bb78dc2f77902e295026688",
+      "content_check": "HTML publication or official authority content inspected, not a challenge.",
+      "terms": "Public authority endpoint; no third-party bulk data redistributed and reuse terms not independently audited."
+    },
+    {
+      "key": "tk2d-sequence",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=LC034238.2&rettype=gb&retmode=text",
+      "acquired_at": "2026-10-11T06:47:20.817263+00:00",
+      "content_type": "text/plain",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/tk2d-sequence.raw",
+      "bytes": 3660,
+      "sha256": "2360fe415ba0f6c496d77339c728c3ce08779537855a881a073670132e9c7515",
+      "prefix": "LOCUS       LC034238                1463 bp    DNA     linear   BCT 22-MAY-2018\n",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-authorities.json",
+      "verified_sha256": "2360fe415ba0f6c496d77339c728c3ce08779537855a881a073670132e9c7515",
+      "content_check": "GenBank LC034238.2, 1463 bp, TK2d strain and taxon:1630002; primary DOI cross-link.",
+      "terms": "Public authority endpoint; no third-party bulk data redistributed and reuse terms not independently audited."
+    },
+    {
+      "key": "jcm1275",
+      "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_number?JCM=1275",
+      "acquired_at": "2026-10-11T06:47:20.890862+00:00",
+      "content_type": "text/html; charset=utf-8",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/jcm1275.raw",
+      "bytes": 21514,
+      "sha256": "87fc870a0df9e431e47e4da9a3052e354fc5e5e74cd02a9b5a8d9e61425282b2",
+      "prefix": "<!DOCTYPE html\n\tPUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\n\t \"http://www.w3",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-authorities.json",
+      "verified_sha256": "87fc870a0df9e431e47e4da9a3052e354fc5e5e74cd02a9b5a8d9e61425282b2",
+      "content_check": "HTML publication or official authority content inspected, not a challenge.",
+      "terms": "Public authority endpoint; no third-party bulk data redistributed and reuse terms not independently audited."
+    },
+    {
+      "key": "taxon1680",
+      "url": "https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/1680/dataset_report",
+      "acquired_at": "2026-10-11T06:47:21.042924+00:00",
+      "content_type": "application/json",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/taxon1680.raw",
+      "bytes": 1412,
+      "sha256": "4d821af4a662dfb21de8309f3ab600c998f63a68358fb372cb875b832fbbe4d6",
+      "prefix": "{\"reports\":[{\"taxonomy\":{\"tax_id\":1680,\"rank\":\"SPECIES\",\"current_scientific_name",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-authorities.json",
+      "verified_sha256": "4d821af4a662dfb21de8309f3ab600c998f63a68358fb372cb875b832fbbe4d6",
+      "content_check": "JSON resolved taxon label and rank.",
+      "terms": "Public authority endpoint; no third-party bulk data redistributed and reuse terms not independently audited."
+    },
+    {
+      "key": "PMC5627000",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5627000/fullTextXML",
+      "acquired_at": "2026-10-11T06:46:12.006020+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-initial.json",
+      "terms": "Horiike2017: copyright 2017 ASM, all rights reserved. Supplement rights retained by authors. Readable article/assets do not confer redistribution rights; all raw material retained outside Git."
+    },
+    {
+      "key": "PMC10984957",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10984957/fullTextXML",
+      "acquired_at": "2026-10-11T06:46:12.006638+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-initial.json",
+      "terms": "Primary XML states CC BY 4.0. Raw articles and figures retained outside Git; no third-party bulk text/images committed."
+    },
+    {
+      "key": "PMC5020004",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5020004/fullTextXML",
+      "acquired_at": "2026-10-11T06:46:12.006920+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-initial.json",
+      "terms": "Primary XML states CC BY 4.0. Raw articles and figures retained outside Git; no third-party bulk text/images committed."
+    },
+    {
+      "key": "PMC8780871",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8780871/fullTextXML",
+      "acquired_at": "2026-10-11T06:46:12.007153+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-initial.json",
+      "terms": "Primary XML states CC BY 4.0. Raw articles and figures retained outside Git; no third-party bulk text/images committed."
+    },
+    {
+      "key": "PMC5627000",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5627000/fullTextXML",
+      "acquired_at": "2026-10-11T06:46:36.705873+00:00",
+      "error": "HTTP Error 500: ",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-xml.json",
+      "terms": "Horiike2017: copyright 2017 ASM, all rights reserved. Supplement rights retained by authors. Readable article/assets do not confer redistribution rights; all raw material retained outside Git."
+    },
+    {
+      "key": "PMC10984957",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10984957/fullTextXML",
+      "acquired_at": "2026-10-11T06:46:36.706684+00:00",
+      "content_type": "application/xml",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/PMC10984957.xml",
+      "bytes": 66865,
+      "sha256": "6fdbce5bf05ff9a1483966a8bf72b2d2570d070c0a016edeb817607e8417c4cb",
+      "prefix": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><article xml:lang=\"en\" article-type=\"resea",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-xml.json",
+      "verified_sha256": "6fdbce5bf05ff9a1483966a8bf72b2d2570d070c0a016edeb817607e8417c4cb",
+      "content_check": "Well-formed article XML with expected DOI and PMC identity.",
+      "terms": "Primary XML states CC BY 4.0. Raw articles and figures retained outside Git; no third-party bulk text/images committed."
+    },
+    {
+      "key": "PMC5020004",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5020004/fullTextXML",
+      "acquired_at": "2026-10-11T06:46:36.707000+00:00",
+      "content_type": "application/xml",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/PMC5020004.xml",
+      "bytes": 105752,
+      "sha256": "446d352a28cda6b55e246fc5433ec19086149fd7e3a53e403952414ac8f3e850",
+      "prefix": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><article xml:lang=\"en\" article-type=\"resea",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-xml.json",
+      "verified_sha256": "446d352a28cda6b55e246fc5433ec19086149fd7e3a53e403952414ac8f3e850",
+      "content_check": "Well-formed article XML with expected DOI and PMC identity.",
+      "terms": "Primary XML states CC BY 4.0. Raw articles and figures retained outside Git; no third-party bulk text/images committed."
+    },
+    {
+      "key": "PMC8780871",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8780871/fullTextXML",
+      "acquired_at": "2026-10-11T06:46:36.707319+00:00",
+      "content_type": "application/xml",
+      "path": "/private/tmp/cmm-round9-cs-sr-raw/PMC8780871.xml",
+      "bytes": 124882,
+      "sha256": "f01e3dd2b6b8217be100ccad58739bb3159590eab3b6299e567a3ff3f39ffbd6",
+      "prefix": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><article xml:lang=\"en\" article-type=\"resea",
+      "receipt_file": "/private/tmp/cmm-round9-cs-sr-raw/receipts-xml.json",
+      "verified_sha256": "f01e3dd2b6b8217be100ccad58739bb3159590eab3b6299e567a3ff3f39ffbd6",
+      "content_check": "Well-formed article XML with expected DOI and PMC identity.",
+      "terms": "Primary XML states CC BY 4.0. Raw articles and figures retained outside Git; no third-party bulk text/images committed."
+    }
+  ],
+  "candidates": [
+    {
+      "doi": "10.1038/s41598-024-57678-8",
+      "pmcid": "PMC10984957",
+      "decision": "curated",
+      "scope": "JCM 1275 Cs biomass retention; sequential Sr challenge contextualizes reversibility. No proven polyphosphate mechanism or in vivo efficacy."
+    },
+    {
+      "doi": "10.1128/AEM.00855-17",
+      "pmcid": "PMC5627000",
+      "decision": "curated_with_access_limit",
+      "scope": "TK2d Sr removal and carbonate-associated precipitates; main Table 1 and Figures 1-6 inspected, supplement unavailable."
+    },
+    {
+      "doi": "10.1186/s13568-016-0247-3",
+      "pmcid": "PMC5020004",
+      "decision": "deferred_additional_mechanism",
+      "scope": "Full main XML and supplement descriptions read, not full figure/supplement audit. Very high biomass-normalized capacities need calibrated supernatant/biomass mass-balance review; they do not violate the nominal supplied-metal budget by arithmetic alone."
+    },
+    {
+      "doi": "10.3390/microorganisms10010079",
+      "pmcid": "PMC8780871",
+      "decision": "deferred_additional_mechanism",
+      "scope": "Full main XML inspected. Isolate-to-crystal assignment and struvite/substitution identity require Table S4 and spectra audit; Sr phase inference is weaker than the abstract suggests."
+    },
+    {
+      "doi": "10.1038/s41598-019-46586-x",
+      "pmcid": "PMC6626050",
+      "decision": "future_lead",
+      "scope": "Referenced by Endo2024; microalgal radiocesium and magnetic separation study. Not acquired or accepted in this pair."
+    }
+  ],
+  "validation": {
+    "named_command": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate data/records/cesium.yaml data/records/strontium.yaml",
+    "initial_result": "2 records; 0 failed, exit 0 before history attachment.",
+    "final_result": "2 records; 0 failed, exit 0 after final history attachment.",
+    "batch": "Root coordinates full batch, history and review gates; not claimed here."
+  },
+  "limits": [
+    "Horiike supplement inaccessible through three legitimate routes; no claim of visual inspection of supplementary panels.",
+    "Cs experiment lacks a matched post-loading Sr-free transfer comparison, a chemical polyphosphate identification and a complete feed balance.",
+    "Sr lacks chemistry/pH-matched abiotic precipitation comparison and direct urease perturbation.",
+    "No new native observations: reported units and source date availability do not meet exact mg/kg source-cell contract.",
+    "No industrial or clinical deployment; named official historical criticality editions only."
+  ]
+}

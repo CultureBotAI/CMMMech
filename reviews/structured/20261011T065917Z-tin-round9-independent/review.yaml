@@ -1,0 +1,409 @@
+schema_version: 1.0.0
+review_id: 20261011T065917Z-tin-round9-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Tin
+started_at: '2026-10-11T06:54:47Z'
+finished_at: '2026-10-11T06:59:17Z'
+reviewer:
+  identity: codex /root/cmm9_ru_rh
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer curated Ru/Rh, not Si/Sn; after their curator froze
+    inputs and root assigned this review, inspected exact hashes before assessment,
+    independently read primary methods/results and original figure pixels, and made
+    no target/history/dossier edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'The tin record defensibly describes partial culture-associated organotin
+  debutylation with unresolved C22 taxonomy and control/replication limits. One minor
+  wording defect overstates the absence of higher-range analytical validation: spike-recovery
+  accuracy was tested to 60 ng/g, although linear calibration stopped at 50 ng/g.'
+source:
+  git_revision: 9fa187ff5a455f495cfa2635e60c413b6763370d
+  state: working_tree
+  inputs:
+  - path: data/records/tin.yaml
+    sha256: 9736bd7a9ac15cc8bc963fa4a8fb15031f02f3cf1d97b735a252e95dffe9a66e
+    role: target
+  - path: history/records/tin/2026-10-11T065147Z-codex-9c1b8e.yaml
+    sha256: 3aae3d78efe6c8d8a270755af91260eeb81d0ccf072448a5fdfde73c0d6fb1e9
+    role: context
+  - path: research/ingests/round9-si-sn-20261011.json
+    sha256: dec1708b9a4b7f5b45c922e2cb545c1423ad1c19d8dc6793d5cce90a6ae4b4c6
+    role: context
+  - path: research/ingests/round9-si-sn-20261011.md
+    sha256: 7e075a697b136f9fb23cb1e426e71850770e6026fb11551383e93b80f59aef99
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+scope:
+  description: All fields of the named frozen maintained record, its history and cited
+    evidence; shared dossier context.
+  selection: Assigned named record; no sampling.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:tin
+targets:
+- target_id: cmmmech:tin
+  path: data/records/tin.yaml
+  label: Tin
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/tin.yaml
+    role: maintained
+checks:
+- check_id: named
+  name: Named-record validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/silicon.yaml data/records/tin.yaml
+  status: passed
+  required: true
+  summary: 'Reviewer executed and read /private/tmp/cmm-round9-si-sn-independent/validate.log:
+    2 records, 0 failed; terminal exit 0.'
+  target_ids:
+  - cmmmech:tin
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: batch
+  name: Full batch gate
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  status: passed
+  required: true
+  summary: 'Parent executed; reviewer read /private/tmp/cmm-round9-batch-check.log:
+    307 passed, 3 skipped in 48.82 s; 54 records, 64 histories valid; parent confirmed
+    terminal exit 0.'
+  target_ids:
+  - cmmmech:tin
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: nonempty
+  name: Nonempty corpus
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: 'Parent executed; reviewer read /private/tmp/cmm-round9-validation.log:
+    54 records, 0 failed; parent confirmed terminal exit 0.'
+  target_ids:
+  - cmmmech:tin
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: history
+  name: Trusted-base history
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate-history --base 9fa187ff5a455f495cfa2635e60c413b6763370d
+  status: passed
+  required: true
+  summary: 'Parent executed; reviewer read /private/tmp/cmm-round9-history.log: 64
+    histories, 0 errors; parent confirmed terminal exit 0.'
+  target_ids:
+  - cmmmech:tin
+  exit_code: 0
+  expected_exit_code: 0
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/tin.yaml
+  locator: All fields, linked CREATE sidecar, shared dossier and schema
+  accessed_at: '2026-10-11T06:59:17Z'
+  support: supports
+  summary: Inspected frozen bytes before assessment; checked working-tree hashes and
+    actual CREATE/inline event provenance. Reviewer made no changes to these inputs.
+  snapshot_sha256: 9736bd7a9ac15cc8bc963fa4a8fb15031f02f3cf1d97b735a252e95dffe9a66e
+- evidence_id: identity
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:27007
+  locator: Element atom entry, formula and charge
+  accessed_at: '2026-10-11T06:59:17Z'
+  support: supports
+  summary: 'Retained official HTML independently read and receipt hash verified: tin
+    atom, Sn, charge 0; distinct from TBT, DBT, MBT, dissolved inorganic Sn, ITO and
+    sediment.'
+  snapshot_sha256: 8f7ccf3a2d538d6d30773d85715c07c0ff62a855c5fd55ef99f24245ff1fdbfb
+- evidence_id: organism
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/KX881904.1
+  locator: GenBank source strain qualifier and partial 16S sequence accession
+  accessed_at: '2026-10-11T06:59:17Z'
+  support: supports
+  summary: Definitive six-entry GenBank response maps C22 to KX881904.1, source organism
+    bacterium. Initial misleadingly named tin-c22.gb is actually C21/KX881909 and
+    is not accepted as C22 evidence. No species taxonomy or activity is inferred from
+    the sequence.
+  snapshot_sha256: 8ac62c8a1f2cfa1668d1e60d0dc6b64eff2939d5e939d06ebdb8aee010494a90
+- evidence_id: criticality
+  kind: authority
+  reference: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  locator: Final 2025 notice, p 50497, Tin row
+  accessed_at: '2026-10-11T06:59:17Z'
+  support: supports
+  summary: United States, Department of the Interior/USGS Final List of Critical Minerals,
+    edition published 7 November 2025, individually names Tin. The record scopes the
+    commodity-to-element mapping without inheriting critical status to every compound
+    or feed.
+  snapshot_sha256: 9a1b55e3279774da456d08f1c941d59745dfee1f1a29cc9460d49f71e173e0b7
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/molecules23030627
+  locator: Methods, results, discussion and figure captions
+  accessed_at: '2026-10-11T06:59:17Z'
+  support: supports
+  summary: Read §§2.1, 2.3.1–2.4, 3.1–3.6 and Figures 3–4. Living C22 culture addition
+    is associated with TBT decline and DBT/MBT analytical signals in prepared sediment.
+    Selected-ion/retention-time assignments after ethylation support derivative identification,
+    not additional environmental products.
+  snapshot_sha256: 25bf4377a510e84528942124955560c3420434c5b3548887b586412976c870da
+- evidence_id: figures
+  kind: primary_source
+  reference: https://doi.org/10.3390/molecules23030627
+  locator: Figures 3 and 4, original image pixels
+  accessed_at: '2026-10-11T06:59:17Z'
+  support: supports
+  summary: Visually inspected original Figures 3/4. C22 TBT falls relative to a near-stable
+    uninoculated control; DBT appears and MBT peaks by day 90 then falls. Derivatized
+    chromatographic products are analytical species. Exact authors' final concentrations
+    are not independently digitized or converted into metal yields.
+  snapshot_sha256: 25bf4377a510e84528942124955560c3420434c5b3548887b586412976c870da
+- evidence_id: search
+  kind: search
+  reference: Independent review-session web searches and local source inventory
+  locator: Exact DOI correction/retraction and hidden/ignored matching
+  accessed_at: '2026-10-11T06:59:17Z'
+  support: context_only
+  summary: No matching correction/retraction notice appeared in the inspected first
+    result sets. This bounded search does not establish literature-wide absence. Primary
+    internal counterevidence and untested alternatives were explicitly checked.
+  search_scope: 'Queries: "10.1128/EC.00209-14" correction OR retraction; "10.3390/molecules23030627"
+    correction OR retraction. First returned result sets only; original articles and
+    related papers returned. rg --no-ignore --hidden searched data, research and reviews
+    for cmmmech:silicon, cmmmech:tin, exact DOIs and ChEBI IDs; target/dossier/frontier
+    references checked, not a home-directory-wide inventory. Provided raw primary
+    files and receipts were separately read and hashed. Live review-session official
+    ChEBI/NCBI web opens returned internal errors; current-session curator-acquired
+    authority HTML/GenBank were independently inspected instead.'
+- evidence_id: calibration
+  kind: primary_source
+  reference: https://doi.org/10.3390/molecules23030627
+  locator: §2.3.1 Method Linearity and §2.3.2 Method Validation
+  accessed_at: '2026-10-11T06:59:17Z'
+  support: partial
+  summary: Linear calibration curves stop at 50 ng/g. Separately, accuracy was tested
+    on sediment spiked at 5–60 ng/g (n=3), with 94–103% recovery and RSD below 10%.
+    These are distinct validation dimensions; the latter contradicts a blanket absence
+    of higher-range validation.
+  snapshot_sha256: 25bf4377a510e84528942124955560c3420434c5b3548887b586412976c870da
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Element and organism identity
+  outcome: supported
+  summary: Atomic identity, substrate forms and the explicitly scoped organism assignment
+    are defensible.
+  target_ids:
+  - cmmmech:tin
+  evidence_ids:
+  - record
+  - identity
+  - organism
+- assessment_id: criticality
+  area: evidence
+  topic: Jurisdiction, list and edition
+  outcome: supported
+  summary: Dated USGS 2025 designation supports the record's scoped material mapping.
+  target_ids:
+  - cmmmech:tin
+  evidence_ids:
+  - record
+  - criticality
+- assessment_id: mechanism
+  area: evidence
+  topic: Conditions, controls and organism-specific outcome
+  outcome: supported
+  summary: 'The tin record defensibly describes partial culture-associated organotin
+    debutylation with unresolved C22 taxonomy and control/replication limits. One
+    minor wording defect overstates the absence of higher-range analytical validation:
+    spike-recovery accuracy was tested to 60 ng/g, although linear calibration stopped
+    at 50 ng/g.'
+  target_ids:
+  - cmmmech:tin
+  evidence_ids:
+  - record
+  - primary
+  - figures
+  dimensions:
+  - name: material_form
+    value: TBT chloride-spiked prepared sediment; TBT/DBT/MBT derivatives analyzed.
+    definition: Butyl-group loss is not tin redox, destruction of the element or metal
+      recovery.
+    evidence_ids:
+    - record
+    - primary
+    - figures
+  - name: microbial_role
+    value: Living bacterial isolate C22, 10 mL overnight nutrient broth culture.
+    definition: KX881904.1 does not resolve a species; no enzyme, gene or viability
+      causal assay.
+    evidence_ids:
+    - record
+    - primary
+    - figures
+  - name: conditions
+    value: Autoclaved Courtown sediment, 1 mm sieve, nominal 100 ng/g spike; 200 g
+      microcosm, 2 cm water column, dark room temperature to 120 days.
+    definition: Pretreatment and synthetic spike limit transfer to natural sediment;
+      exact pH, salinity and cell density not reported.
+    evidence_ids:
+    - record
+    - primary
+    - figures
+  - name: controls
+    value: Uninoculated condition without documented matched sterile broth or killed-cell
+      arm.
+    definition: Inoculum chemistry, transformation and sorption are not completely
+      separated.
+    evidence_ids:
+    - record
+    - primary
+    - figures
+  - name: quantity
+    value: Author-reported day-120 C22 TBT 52.73, DBT 28.5 and MBT 13.8 ng/g wet sediment.
+    definition: Not elemental Sn balance; apparent replicate pooling limits biological
+      inference; minor calibration/recovery wording needs correction.
+    evidence_ids:
+    - record
+    - primary
+    - figures
+  - name: deployment
+    value: Laboratory prepared sediment assay.
+    definition: No isolated product, toxicity endpoint, field remediation or industrial
+      deployment.
+    evidence_ids:
+    - record
+    - primary
+    - figures
+- assessment_id: provenance
+  area: provenance
+  topic: Actual events and frozen working inputs
+  outcome: supported
+  summary: 'The inspected CREATE sidecar names the actual actor codex/GPT-6/codex
+    and issue 39; distinct inline timestamp and linked history are coherent. All successful
+    acquisition receipt hashes were rechecked: 31 receipt rows, no mismatches among
+    rows carrying hashes.'
+  target_ids:
+  - cmmmech:tin
+  evidence_ids:
+  - record
+- assessment_id: search
+  area: completeness
+  topic: Bounded contrary-evidence and duplication search
+  outcome: supported
+  summary: Primary internal limitations were retained; scoped searches are not proof
+    of exhaustive literature completeness.
+  target_ids:
+  - cmmmech:tin
+  evidence_ids:
+  - search
+  - primary
+- assessment_id: calibration
+  area: quantity
+  topic: Calibration and recovery validation are distinct
+  outcome: concern
+  summary: The record/dossier caveat correctly flags limited linear calibration but
+    incorrectly says higher validation above 50 ng/g is undescribed. Preserve uncertainty
+    about dilution/linearity above 50 and especially to the nominal 100, while acknowledging
+    the 5–60 ng/g spike-recovery test.
+  target_ids:
+  - cmmmech:tin
+  evidence_ids:
+  - record
+  - calibration
+findings:
+- finding_id: tin-recovery-validation-scope
+  issue_key: tin-calibration-recovery-validation
+  category: quantity
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Distinguish 50 ng/g calibration limit from 5–60 ng/g recovery testing
+  description: The record says dilution or higher-range validation for TBT is not
+    described, and the two dossiers repeat that broader absence claim. Primary §2.3.2
+    explicitly reports recovery accuracy over 5–60 ng/g, 94–103% recovery and RSD
+    <10%. This does not prove linear calibration above 50 ng/g or validate the nominal
+    100 ng/g range, but it makes the unqualified absence claim incorrect. The qualitative
+    debutylation interpretation remains defensible.
+  target_ids:
+  - cmmmech:tin
+  field_paths:
+  - mechanisms[0].evidence[1].explanation
+  - 'research/ingests/round9-si-sn-20261011.md: Tin quantitative limitation'
+  - 'research/ingests/round9-si-sn-20261011.json: sources[1].limits[2]'
+  evidence_ids:
+  - record
+  - calibration
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/tin.yaml
+    role: maintained
+  - repository: CultureBotAI/CMMMech
+    path: research/ingests/round9-si-sn-20261011.md
+    role: maintained
+  - repository: CultureBotAI/CMMMech
+    path: research/ingests/round9-si-sn-20261011.json
+    role: maintained
+  disposition_reason: Saved before correction; route a genuine minor review issue
+    to the curator, then reinspect changed bytes and save a successor disposition.
+actions:
+- action_id: correct-calibration-scope
+  description: Correct record and both dossiers to separate linear calibration to
+    50 ng/g from spike-recovery validation over 5–60 ng/g. Preserve unresolved dilution/linearity
+    above 50 and the unvalidated 100 ng/g upper experiment range. Add truthful EDIT
+    provenance.
+  finding_ids:
+  - tin-recovery-validation-scope
+  target_ids:
+  - cmmmech:tin
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/tin.yaml
+    role: maintained
+  - repository: CultureBotAI/CMMMech
+    path: research/ingests/round9-si-sn-20261011.md
+    role: maintained
+  - repository: CultureBotAI/CMMMech
+    path: research/ingests/round9-si-sn-20261011.json
+    role: maintained
+  acceptance_checks:
+  - Read primary §§2.3.1–2.3.2 against the revised wording in all three maintained
+    owners.
+  - Run affected record and trusted-base history validation.
+  - Reinspect changed hashes and save a new immutable review with the same issue key
+    and exact previous occurrence.
+limitations:
+- The initial review preserves an open minor analytical-validation wording finding;
+  no maintained scientific input was edited by this reviewer.
+- C22 species identity, independent biological replication after apparent pooling,
+  matched broth/killed controls and longitudinal viability are unresolved.
+- Compound-specific ng/g results are not a tin mass balance, isolated recovery or
+  toxicity endpoint; final exact percentages remain uncertain without documented dilution
+  or linear range beyond 50 ng/g.
+- No supplement declaration was found in the inspected main XML; a supplementary API
+  timeout is not evidence of universal absence.
+- Correction/retraction searches are bounded first result sets, not exhaustive registries.
+  Live review-session database opens failed; the curator's retained authority responses
+  were independently read and hash checked.
+- 'No native quantitative observations were manufactured: these values lack the exact
+  mg/kg source cells and analysis dates required by the observation contract.'
+notes:
+- Working changes comprise new round9 records/histories/dossiers and independently
+  saved reviews on the trusted base; this observation is not a committed-source review.
+- Curator raw evidence is outside Git at /private/tmp/cmm-round9-si-sn-raw; reviewer
+  derived text and additional silicon Figure 6 acquisition/receipt are at /private/tmp/cmm-round9-si-sn-independent.
+links:
+- https://github.com/CultureBotAI/CMMMech/issues/39

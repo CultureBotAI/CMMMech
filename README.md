@@ -58,6 +58,12 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Praseodymium](data/records/praseodymium.yaml) | Immobilized Melba-LanM separates Pr from La in a binary feed | Fraction-based yield and lower repeat performance limit the best single-run result |
 | [Lead](data/records/lead.yaml) | *Pseudomonas putida* enhances Pb release from synthetic pyromorphite | Nutrient and pH conditions affect remobilization; no isolated-metal recovery is shown |
 | [Bismuth](data/records/bismuth.yaml) | *Fusarium* BI accumulates Bi in phosphorus-rich granules | Soluble-pool depletion does not establish whole-feed recovery, mineral identity or Bi reduction |
+| [Cesium](data/records/cesium.yaml) | Cs retained by washed *Bifidobacterium adolescentis* JCM 1275 biomass | Sequential Sr exposure reduces retention; binding chemistry and practical recovery remain unresolved |
+| [Strontium](data/records/strontium.yaml) | TK2d culture-associated Sr removal into carbonate-rich material | Salinity dependence, mixed spectral fits and unmatched chemical controls limit generalization |
+| [Ruthenium](data/records/ruthenium.yaml) | Oxidized Ru deposits associated with *Bacillus* NCIMB 12555 biomass | Spectral disagreements and missing matched controls prevent claims of Ru(0) or microbial necessity |
+| [Rhodium](data/records/rhodium.yaml) | Resting *Geobacter sulfurreducens* forms Rh-bearing nanoparticles | Single-metal and Pd/Rh experiments have different controls; depletion is not purified-metal yield |
+| [Silicon](data/records/silicon.yaml) | Joint SIT1/SIT2 knockdown conditionally changes diatom silicon utilization | Uptake and silica-tracer assays differ; no metallic-silicon recovery is shown |
+| [Tin](data/records/tin.yaml) | C22-inoculated sediment shows organotin debutylation | Unresolved taxonomy, pooled sampling and calibration limits constrain causal and quantitative claims |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -73,7 +79,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [sixth expansion reviews](research/ingests/round6-20261011-publication.md),
 [seventh expansion reviews](research/ingests/round7-20261011-publication.md),
 [eighth expansion reviews](research/ingests/round8-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round8-frontier-20261011.md), and
+[ninth expansion reviews](research/ingests/round9-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round9-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

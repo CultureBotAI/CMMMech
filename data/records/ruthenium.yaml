@@ -1,0 +1,167 @@
+id: cmmmech:ruthenium
+name: Ruthenium
+material_kind: element
+description: >-
+  Ruthenium (Ru). This element record is distinct from the dissolved Ru(III)
+  chloride feed, cell-associated oxidized ruthenium material, and Pd/Ru catalyst
+  preparations in the curated laboratory study. The US 2025 list names the
+  ruthenium commodity individually; this maps to the element without extending
+  criticality to every ruthenium compound, mineral or waste. The evidence supports
+  biomass-associated deposition, without demonstrating elemental Ru recovery,
+  a microbial enzyme requirement or industrial operation.
+identifiers:
+  - id: CHEBI:30682
+    label: ruthenium atom
+sources:
+  - id: chebi_ruthenium
+    title: 'ChEBI:30682 - ruthenium atom; Ru, charge 0'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:30682
+    accessed_on: '2026-10-11'
+  - id: usgs_2025
+    title: >-
+      U.S. Geological Survey (2025). Final 2025 List of Critical Minerals.
+      Federal Register 90 FR 50494-50497, November 7, 2025; final commodity
+      table, Ruthenium row on page 50497.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: omajali_2019
+    title: >-
+      Omajali et al. (2019). Novel catalytically active Pd/Ru bimetallic
+      nanoparticles synthesized by Bacillus benzeovorans. Scientific Reports
+      9, 4715; published March 18, 2019. DOI 10.1038/s41598-019-40312-3.
+      Methods, Tables 1-3, Figures 1-4 and supplementary Figures S3-S11.
+    url: https://www.nature.com/articles/s41598-019-40312-3
+    accessed_on: '2026-10-11'
+  - id: gomez_bolivar_2019
+    title: >-
+      Gomez-Bolivar et al. (2019). Synthesis of Pd/Ru Bimetallic Nanoparticles
+      by Escherichia coli and Potential as a Catalyst for Upgrading
+      5-Hydroxymethyl Furfural Into Liquid Fuel Precursors. Frontiers in
+      Microbiology 10, 1276. DOI 10.3389/fmicb.2019.01276; XANES and EXAFS
+      Results, Table 3. Used as organism-specific interpretive context.
+    url: https://doi.org/10.3389/fmicb.2019.01276
+    accessed_on: '2026-10-11'
+  - id: ncbi_benzoevorans
+    title: >-
+      NCBI Taxonomy 1456, Bacillus benzoevorans, species; NCIMB 12555 is listed
+      among its type-strain collection identifiers. The paper spells the
+      organism Bacillus benzeovorans.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1456&mode=info
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States of America
+    list_name: U.S. Department of the Interior Final List of Critical Minerals
+    edition: '2025 (published November 7, 2025; 90 FR 50494-50497)'
+    classification: critical
+    source_ref: usgs_2025
+mechanisms:
+  - id: benzoevorans_oxidized_ru_deposition
+    name: Biomass-associated deposition of oxidized ruthenium from a chloride feed
+    process: other
+    description: >-
+      Washed Bacillus benzoevorans NCIMB 12555 biomass, reported as
+      B. benzeovorans, acquired Ru-containing deposits after exposure to a
+      synthetic Ru(III) chloride solution under hydrogen, with or without
+      prior Pd deposition. Microscopy and spectroscopy support association
+      with oxidized Ru material. The study does not demonstrate Ru(0), a
+      Pd-Ru metallic alloy or a necessary metabolic contribution. Microbial
+      involvement denotes the biomass scaffold; sustained cell viability
+      during acidic exposure and subsequent processing was not established.
+    context: >-
+      Laboratory batches used biomass grown aerobically at 30 degrees C and
+      180 rpm in beef extract, yeast extract, peptone and 15 g/L NaCl medium
+      at pH 7.3; harvested at OD600 0.7-1.0, washed three times in 20 mM
+      MOPS-NaOH pH 7 and stored concentrated overnight at 4 degrees C.
+      The Ru-only preparation used 2 mM Ru(III), supplied as RuCl3.2H2O at
+      pH 2, for 30 minutes at 30 degrees C, then hydrogen bubbling for about
+      1 h and 96 h in sealed hydrogen-saturated bottles at 30 degrees C and
+      180 rpm. The separate sequential Pd/Ru preparation first deposited Pd
+      from 2 mM Pd(II) under hydrogen for 30 minutes, washed the biomass twice
+      with water, and then added a 1 mM Ru(III) solution for a 96 h hydrogen
+      stage; its final mixed-suspension pH and exact liquid volumes are not
+      specified. Nominal metal loadings are relative to cell dry weight.
+      Table 1 reports inferred actual Ru loadings of 14.2 wt% for nominal
+      20 wt% Ru-only material, 6.0 wt% Ru with 9.7 wt% Pd for nominal 10/10
+      wt% Pd/Ru, and 2.0 wt% Ru with 2.4 wt% Pd for nominal 2.5/2.5 wt%
+      Pd/Ru. These are calculated by solution difference using a stannous
+      chloride colorimetric assay, not direct solid-element recovery yields.
+      The text reports incomplete removal, with about 40% Ru remaining after
+      about 96 h; this approximate statement is not identical to every Table 1
+      loading ratio. Collected catalyst preparations were washed three times
+      with water and once with acetone, air-dried and ground before analysis.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:1456
+        label: Bacillus benzoevorans
+    evidence:
+      - source_ref: omajali_2019
+        supports: support
+        explanation: >-
+          Results on deposition, Figure 1 and supplementary Figures S3-S5
+          support Ru association with the cell surface in Ru-only material
+          and Pd/Ru co-localization in some intracellular deposits after Pd
+          seeding. Cells without added metal lack the comparable electron-dense
+          deposits. This is a no-metal imaging comparison, not a cell-free
+          Ru precipitation control or evidence of a defined uptake pathway.
+      - source_ref: omajali_2019
+        supports: support
+        explanation: >-
+          Figure 2 lattice imaging, Figure 3 XPS, Figure 4 EXAFS and
+          supplementary Figure S11 XANES support oxidized rather than metallic
+          Ru in the analyzed preparations. The authors assign RuO2-like lattice
+          fringes in Pd/Ru particles and Ru-O coordination in EXAFS. The record
+          retains that qualitative interpretation without claiming a single
+          pure phase, complete Ru mass balance or independent spectral refitting.
+      - source_ref: omajali_2019
+        supports: partial
+        explanation: >-
+          Surface XPS is interpreted in the text and Table 2 as Ru(III)/Ru(VI),
+          whereas bulk XANES is interpreted as Ru(III)/Ru(IV); samples were not
+          protected from air. Figure 3 and supplementary Figure S8 also label
+          RuCl3 and Ru(OH)3 components. The differing assignments and analysis
+          depths preclude one definitive whole-sample valence distribution.
+          The EXAFS text claims absence of Ru-Ru peaks immediately after
+          describing a Ru-Ru shell that is also fitted in Table 3. That internal
+          tension prevents repeating the stronger claim of exclusively
+          atomically dispersed Ru; it does not establish metallic Ru.
+      - source_ref: omajali_2019
+        supports: partial
+        explanation: >-
+          The inspected study and supplement do not report matched cell-free,
+          killed-cell or hydrogen-free Ru deposition outcomes, nor a replication
+          count for the Ru-removal assay. Cell scaffolding, sorption, hydrolysis,
+          air oxidation and Pd-assisted chemistry are not experimentally
+          separated. Supplementary Figure S6 is interpreted as no Pd-lattice
+          shift or alloying, but its high-loading curve is labelled 20% Ru/5% Pd,
+          unlike Table 1's nominal 10% Pd/10% Ru material; precise sample
+          matching remains unresolved. No particular microbial enzyme is assigned.
+      - source_ref: omajali_2019
+        supports: context_only
+        explanation: >-
+          The later 5-hydroxymethylfurfural catalytic tests use dried catalyst,
+          260 degrees C, 50 bar hydrogen and a 2 h reaction. Their conversion
+          and dimethylfuran yields concern organic-substrate catalysis, not
+          Ru extraction or recovered-metal yield, and do not demonstrate
+          living-cell catalysis or industrial deployment.
+      - source_ref: gomez_bolivar_2019
+        supports: context_only
+        explanation: >-
+          A related study with Escherichia coli MC4100 describes predominantly
+          oxidized Ru but allows a low metallic-Ru contribution in bulk
+          XANES/EXAFS interpretations. Its organism, Pd/Ru loadings and sample
+          preparation differ, so this is neither proof of Ru(0) in NCIMB 12555
+          nor a direct refutation of the narrower Bacillus observation.
+          It prevents generalizing the Bacillus phase interpretation to all
+          microbial Ru preparations; it is not an independent replication
+          of the same assay.
+curation_history:
+  - timestamp: '2026-10-11T06:51:17Z'
+    curator: Codex (GPT-6; Codex)
+    action: create
+    summary: >-
+      Created the ruthenium element record from verified identity, dated US
+      criticality and primary laboratory evidence. Preserved assay boundaries,
+      controls, phase uncertainties and deployment limits; attached canonical
+      CREATE history. Independent scientific review is separate.
+history_refs:
+  - history/records/ruthenium/2026-10-11T065054Z-codex-52117e.yaml

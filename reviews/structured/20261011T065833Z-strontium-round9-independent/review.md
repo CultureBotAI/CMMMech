@@ -1,0 +1,575 @@
+# Independent scientific review of the strontium expansion record
+
+- Review: 20261011T065833Z-strontium-round9-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T06:54:49Z
+- Finished UTC: 2026-10-11T06:58:33Z
+- Reviewer: Codex /root/cmm9_si_sn (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The inspected strontium record supports culture-associated soluble-Sr depletion and Sr/Ca-bearing carbonate-rich solids in TK2d laboratory cultures. It correctly separates different sample times, aragonite-like diffraction, model-dependent Sr local environments and measured solution concentrations. Missing matched controls, salinity limits, the Mg text/plot discrepancy and unavailable supplement are retained. No actionable curation defect was found in this scope.
+
+## Scope And Provenance
+
+All scientific, criticality, identity and provenance fields of the named final record.
+
+Selection: Named single-record assignment; all fields assessed, no sampling.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9fa187ff5a455f495cfa2635e60c413b6763370d.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:strontium | data/records/strontium.yaml | maintained | Strontium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Named-record validation | passed | True | cmmmech:strontium | Reviewer executed; terminal exit 0, 2 records, zero failures. |
+| Trusted-base history | passed | True | cmmmech:strontium | Reviewer executed; terminal exit 0, 64 history records, zero errors. |
+| Completed-batch gate | passed | True | cmmmech:strontium | Root executed; reviewer read /private/tmp/cmm-round9-batch-check.log. Terminal exit 0: lint passed; 307 tests passed, 3 skipped; 54 records and 64 histories valid. |
+| Nonempty corpus | passed | True | cmmmech:strontium | Root executed; reviewer read /private/tmp/cmm-round9-validation.log. Terminal exit 0: 54 records, zero failures. |
+
+## Scientific And Domain Assessments
+
+### Material and organism boundaries
+
+identity: supported. Targets: cmmmech:strontium.
+
+ChEBI:33324 denotes strontium atom, formula Sr and charge zero; the experimental Sr(II) salt, carbonate-rich solids, strontianite mineral and commodity remain distinct. NCBI 1630002 resolves Bacillus sp. TK2d at species rank but does not supply a formally named species. LC034238.2 is the 1463-bp partial 16S rRNA record for TK2d, links taxon 1630002 and the primary paper, and supports strain provenance rather than the experimental mechanism.
+
+### Authority and dated commodity designation
+
+evidence: supported. Targets: cmmmech:strontium.
+
+European Parliament and Council Regulation (EU) 2024/1252, original 2024 Official Journal edition, names strontium as a critical raw material at Annex II Section 1(ad). This is not a claim that all Sr salts, minerals or wastes inherit the designation or that strontium is an Annex I strategic item.
+
+### Experimental support and causal boundaries
+
+evidence: supported. Targets: cmmmech:strontium.
+
+The inspected strontium record supports culture-associated soluble-Sr depletion and Sr/Ca-bearing carbonate-rich solids in TK2d laboratory cultures. It correctly separates different sample times, aragonite-like diffraction, model-dependent Sr local environments and measured solution concentrations. Missing matched controls, salinity limits, the Mg text/plot discrepancy and unavailable supplement are retained. No actionable curation defect was found in this scope.
+
+### Units, denominators and endpoint interpretation
+
+quantity: supported. Targets: cmmmech:strontium.
+
+Reported 1.0 mM starting Sr falls to 0.13 mM at day 2 and below 1.0e-7 mol/L after day 4; the bound is not zero or an exact 100% yield. Table 1 fits for 1 mM starting Sr give 52% SrCO3-like at day 5 and 87% at day 10, with complementary SrCl2-like fractions. Those are two-standard spectral fractions, not phase purities or total-feed recovery.
+
+### Actual curation events
+
+provenance: supported. Targets: cmmmech:strontium.
+
+Separate actual inline and CREATE sidecar timestamps, actor/model/tool and issue39 linkage are present. Trusted-base history validation passed. The reviewer did not append a curation event for review alone.
+
+### Bounded adversarial checks
+
+completeness: supported. Targets: cmmmech:strontium.
+
+Scoped correction, contrary-evidence and ignored-inclusive duplicate searches are explicit; source access limitations remain visible.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/strontium.yaml; All frozen fields, schema and linked CREATE sidecar | supports | Inspected exact working-tree bytes before formal assessment; no edits to this record or history. |
+| identity | https://www.ebi.ac.uk/chebi/CHEBI:33324; Authority compound entry, formula and charge; acquired official API payload | supports | ChEBI:33324 denotes strontium atom, formula Sr and charge zero; the experimental Sr(II) salt, carbonate-rich solids, strontianite mineral and commodity remain distinct. |
+| taxon | https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/1630002/dataset_report; Official NCBI taxonomy payload and strain authority | supports | NCBI 1630002 resolves Bacillus sp. TK2d at species rank but does not supply a formally named species. LC034238.2 is the 1463-bp partial 16S rRNA record for TK2d, links taxon 1630002 and the primary paper, and supports strain provenance rather than the experimental mechanism. |
+| criticality | https://eur-lex.europa.eu/eli/reg/2024/1252/oj/eng; Original Official Journal text, published May 3 2024; Annex II, Section 1, point (ad) | supports | European Parliament and Council Regulation (EU) 2024/1252, original 2024 Official Journal edition, names strontium as a critical raw material at Annex II Section 1(ad). This is not a claim that all Sr salts, minerals or wastes inherit the designation or that strontium is an Annex I strategic item. |
+| primary | https://doi.org/10.1128/AEM.00855-17; Medium and cultivation conditions; Sr removal test; ICP-AES; SEM/TEM/XANES methods; Results and Discussion; Figures 1-6 and Table 1 | supports | The inspected strontium record supports culture-associated soluble-Sr depletion and Sr/Ca-bearing carbonate-rich solids in TK2d laboratory cultures. It correctly separates different sample times, aragonite-like diffraction, model-dependent Sr local environments and measured solution concentrations. Missing matched controls, salinity limits, the Mg text/plot discrepancy and unavailable supplement are retained. No actionable curation defect was found in this scope. Reported 1.0 mM starting Sr falls to 0.13 mM at day 2 and below 1.0e-7 mol/L after day 4; the bound is not zero or an exact 100% yield. Table 1 fits for 1 mM starting Sr give 52% SrCO3-like at day 5 and 87% at day 10, with complementary SrCl2-like fractions. Those are two-standard spectral fractions, not phase purities or total-feed recovery. |
+| strain | https://www.ncbi.nlm.nih.gov/nuccore/LC034238.2; GenBank accession, source features, strain, taxon cross-reference and linked publication | supports | NCBI 1630002 resolves Bacillus sp. TK2d at species rank but does not supply a formally named species. LC034238.2 is the 1463-bp partial 16S rRNA record for TK2d, links taxon 1630002 and the primary paper, and supports strain provenance rather than the experimental mechanism. |
+| figure1 | https://doi.org/10.1128/AEM.00855-17; Main Figure 1, original acquired JPEG inspected visually | supports | Independent pixel inspection of the original figure alongside its caption, legend and methods. No unreported numerical value was digitized or reconstructed. |
+| figure2 | https://doi.org/10.1128/AEM.00855-17; Main Figure 2, original acquired JPEG inspected visually | supports | Independent pixel inspection of the original figure alongside its caption, legend and methods. No unreported numerical value was digitized or reconstructed. |
+| figure3 | https://doi.org/10.1128/AEM.00855-17; Main Figure 3, original acquired JPEG inspected visually | supports | Independent pixel inspection of the original figure alongside its caption, legend and methods. No unreported numerical value was digitized or reconstructed. |
+| figure4 | https://doi.org/10.1128/AEM.00855-17; Main Figure 4, original acquired JPEG inspected visually | supports | Independent pixel inspection of the original figure alongside its caption, legend and methods. No unreported numerical value was digitized or reconstructed. |
+| figure5 | https://doi.org/10.1128/AEM.00855-17; Main Figure 5, original acquired JPEG inspected visually | supports | Independent pixel inspection of the original figure alongside its caption, legend and methods. No unreported numerical value was digitized or reconstructed. |
+| figure6 | https://doi.org/10.1128/AEM.00855-17; Main Figure 6, original acquired JPEG inspected visually | supports | Independent pixel inspection of the original figure alongside its caption, legend and methods. No unreported numerical value was digitized or reconstructed. |
+| search | Reviewer web searches and bounded local inventory; 2026-10-11 first returned web result sets; hidden/ignored-inclusive local search | context_only | No direct correction, retraction or contrary replication surfaced in the bounded result sets inspected. Related patents and secondary summaries do not establish a direct contradiction to the qualified recorded endpoints. This is not an exhaustive absence claim. |
+
+## Limits And Additional Notes
+
+- Ureolysis and cell-surface association are supported contributors but no urease knockout/inhibition or pH-matched abiotic control establishes an obligatory molecular pathway.
+- The abiotic Na2CO3/CaCl2/SrCl2 recipe differs from culture chemistry; carbonate can form without cells under that comparison.
+- Solids sampled at different culture times and model-dependent two-standard XANES fits do not establish a homogeneous, pure strontianite product.
+- The Mg plot shows a modest change despite the Results wording, and selected-area EDS nondetection at approximately 0.1% w/w does not prove zero Mg in all solids.
+- The linked supplement was not acquired despite curator PMC/publisher/Europe PMC attempts; this reviewer inspected main text, Table 1 and all six main figures but did not reassess supplementary figures or chemical-control curves.
+- Actual contaminated seawater, 90Sr, long-term leaching stability, isolated-metal yield and deployment remain untested.
+- Correction/counterevidence and duplicate searches are bounded, not literature-wide or machine-wide absence proofs.
+- Working-tree input hashes attest these uncommitted bytes against the durable trusted main ancestor, not their presence in that ancestor.
+- Source limitations already stated in the record are not manufactured as corrective findings.
+- Fresh web resolution succeeded for Cs ChEBI, JCM and both designation authorities. Browser retrieval of Sr ChEBI and the NCBI JSON API failed; independently inspected the curator-acquired official API payloads with recorded URLs, actual acquisition times and hashes instead.
+- Reviewer verified root batch gate logs; no claim is made to have personally rerun the full suite.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T065833Z-strontium-round9-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of the strontium expansion record
+started_at: '2026-10-11T06:54:49Z'
+finished_at: '2026-10-11T06:58:33Z'
+reviewer:
+  identity: Codex /root/cmm9_si_sn
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different from the Cs/Sr curator; authored only the Si/Sn records
+    in this batch. Independently inspected Cs/Sr primary methods/results, original
+    figure pixels, authority entries and exact frozen inputs; made no Cs/Sr record
+    or history edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The inspected strontium record supports culture-associated soluble-Sr depletion
+  and Sr/Ca-bearing carbonate-rich solids in TK2d laboratory cultures. It correctly
+  separates different sample times, aragonite-like diffraction, model-dependent Sr
+  local environments and measured solution concentrations. Missing matched controls,
+  salinity limits, the Mg text/plot discrepancy and unavailable supplement are retained.
+  No actionable curation defect was found in this scope.
+source:
+  git_revision: 9fa187ff5a455f495cfa2635e60c413b6763370d
+  state: working_tree
+  inputs:
+  - path: data/records/strontium.yaml
+    sha256: 90870721149f726d56520b6fe6aa12d407b3d9e98535dc353c33af2be24b05aa
+    role: target
+  - path: history/records/strontium/2026-10-11T065059Z-codex-390f8d.yaml
+    sha256: 857bf592d8b546f8e2976c99d497a637609bd8e61b7cb069606a32ac3bae211f
+    role: context
+  - path: research/ingests/round9-cs-sr-20261011.json
+    sha256: 2197455050fb7f15189bc8f75f6e5b6054d94b0af843c6c719ea6e023898be5e
+    role: context
+  - path: research/ingests/round9-cs-sr-20261011.md
+    sha256: e3b306a61ac17a071ec5a5a4e1e1736741e3a81470206d33632f0a152fdcb757
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+scope:
+  description: All scientific, criticality, identity and provenance fields of the
+    named final record.
+  selection: Named single-record assignment; all fields assessed, no sampling.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:strontium
+targets:
+- target_id: cmmmech:strontium
+  path: data/records/strontium.yaml
+  label: Strontium
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/strontium.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Named-record validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/cesium.yaml data/records/strontium.yaml
+  status: passed
+  required: true
+  summary: Reviewer executed; terminal exit 0, 2 records, zero failures.
+  target_ids:
+  - cmmmech:strontium
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: history
+  name: Trusted-base history
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate-history --base 9fa187ff5a455f495cfa2635e60c413b6763370d
+  status: passed
+  required: true
+  summary: Reviewer executed; terminal exit 0, 64 history records, zero errors.
+  target_ids:
+  - cmmmech:strontium
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: batch
+  name: Completed-batch gate
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  status: passed
+  required: true
+  summary: 'Root executed; reviewer read /private/tmp/cmm-round9-batch-check.log.
+    Terminal exit 0: lint passed; 307 tests passed, 3 skipped; 54 records and 64 histories
+    valid.'
+  target_ids:
+  - cmmmech:strontium
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: nonempty
+  name: Nonempty corpus
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: 'Root executed; reviewer read /private/tmp/cmm-round9-validation.log. Terminal
+    exit 0: 54 records, zero failures.'
+  target_ids:
+  - cmmmech:strontium
+  exit_code: 0
+  expected_exit_code: 0
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/strontium.yaml
+  locator: All frozen fields, schema and linked CREATE sidecar
+  accessed_at: '2026-10-11T06:58:33Z'
+  support: supports
+  summary: Inspected exact working-tree bytes before formal assessment; no edits to
+    this record or history.
+- evidence_id: identity
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:33324
+  locator: Authority compound entry, formula and charge; acquired official API payload
+  accessed_at: '2026-10-11T06:58:33Z'
+  support: supports
+  summary: ChEBI:33324 denotes strontium atom, formula Sr and charge zero; the experimental
+    Sr(II) salt, carbonate-rich solids, strontianite mineral and commodity remain
+    distinct.
+  snapshot_sha256: 93380cc8667af3aa2ba87a8c484485eaae3732fb79c705a7aab48d0ef30ef7b5
+- evidence_id: taxon
+  kind: database
+  reference: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/1630002/dataset_report
+  locator: Official NCBI taxonomy payload and strain authority
+  accessed_at: '2026-10-11T06:58:33Z'
+  support: supports
+  summary: NCBI 1630002 resolves Bacillus sp. TK2d at species rank but does not supply
+    a formally named species. LC034238.2 is the 1463-bp partial 16S rRNA record for
+    TK2d, links taxon 1630002 and the primary paper, and supports strain provenance
+    rather than the experimental mechanism.
+  snapshot_sha256: 83a83d3ae0b99a031df3b80f8faa497fdfe0f621879a39d03ad13bc09a628462
+- evidence_id: criticality
+  kind: authority
+  reference: https://eur-lex.europa.eu/eli/reg/2024/1252/oj/eng
+  locator: Original Official Journal text, published May 3 2024; Annex II, Section
+    1, point (ad)
+  accessed_at: '2026-10-11T06:58:33Z'
+  support: supports
+  summary: European Parliament and Council Regulation (EU) 2024/1252, original 2024
+    Official Journal edition, names strontium as a critical raw material at Annex
+    II Section 1(ad). This is not a claim that all Sr salts, minerals or wastes inherit
+    the designation or that strontium is an Annex I strategic item.
+  snapshot_sha256: 7673f3e779fb4bcfc3d27d8ea83294f5f59394644bb78dc2f77902e295026688
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1128/AEM.00855-17
+  locator: Medium and cultivation conditions; Sr removal test; ICP-AES; SEM/TEM/XANES
+    methods; Results and Discussion; Figures 1-6 and Table 1
+  accessed_at: '2026-10-11T06:58:33Z'
+  support: supports
+  summary: The inspected strontium record supports culture-associated soluble-Sr depletion
+    and Sr/Ca-bearing carbonate-rich solids in TK2d laboratory cultures. It correctly
+    separates different sample times, aragonite-like diffraction, model-dependent
+    Sr local environments and measured solution concentrations. Missing matched controls,
+    salinity limits, the Mg text/plot discrepancy and unavailable supplement are retained.
+    No actionable curation defect was found in this scope. Reported 1.0 mM starting
+    Sr falls to 0.13 mM at day 2 and below 1.0e-7 mol/L after day 4; the bound is
+    not zero or an exact 100% yield. Table 1 fits for 1 mM starting Sr give 52% SrCO3-like
+    at day 5 and 87% at day 10, with complementary SrCl2-like fractions. Those are
+    two-standard spectral fractions, not phase purities or total-feed recovery.
+  snapshot_sha256: 52f54205df2aa237eda3c8b6f075ca9a9e1c8d646a37a4255fdf7add9ab9bb93
+- evidence_id: strain
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/LC034238.2
+  locator: GenBank accession, source features, strain, taxon cross-reference and linked
+    publication
+  accessed_at: '2026-10-11T06:58:33Z'
+  support: supports
+  summary: NCBI 1630002 resolves Bacillus sp. TK2d at species rank but does not supply
+    a formally named species. LC034238.2 is the 1463-bp partial 16S rRNA record for
+    TK2d, links taxon 1630002 and the primary paper, and supports strain provenance
+    rather than the experimental mechanism.
+  snapshot_sha256: 2360fe415ba0f6c496d77339c728c3ce08779537855a881a073670132e9c7515
+- evidence_id: figure1
+  kind: primary_source
+  reference: https://doi.org/10.1128/AEM.00855-17
+  locator: Main Figure 1, original acquired JPEG inspected visually
+  accessed_at: '2026-10-11T06:58:33Z'
+  support: supports
+  summary: Independent pixel inspection of the original figure alongside its caption,
+    legend and methods. No unreported numerical value was digitized or reconstructed.
+  snapshot_sha256: 40f72437ea53ac8bc42bece3e6a3293f62595c65b8f5912a5d656e811f2d9109
+- evidence_id: figure2
+  kind: primary_source
+  reference: https://doi.org/10.1128/AEM.00855-17
+  locator: Main Figure 2, original acquired JPEG inspected visually
+  accessed_at: '2026-10-11T06:58:33Z'
+  support: supports
+  summary: Independent pixel inspection of the original figure alongside its caption,
+    legend and methods. No unreported numerical value was digitized or reconstructed.
+  snapshot_sha256: 3815744477cef45f392cc1c836da032ae6af64fb5d0542a275e5d2f26a27195c
+- evidence_id: figure3
+  kind: primary_source
+  reference: https://doi.org/10.1128/AEM.00855-17
+  locator: Main Figure 3, original acquired JPEG inspected visually
+  accessed_at: '2026-10-11T06:58:33Z'
+  support: supports
+  summary: Independent pixel inspection of the original figure alongside its caption,
+    legend and methods. No unreported numerical value was digitized or reconstructed.
+  snapshot_sha256: 6238cd90239076f90cda657c1dece949f92fd054b65de5d12faf786b56c5b523
+- evidence_id: figure4
+  kind: primary_source
+  reference: https://doi.org/10.1128/AEM.00855-17
+  locator: Main Figure 4, original acquired JPEG inspected visually
+  accessed_at: '2026-10-11T06:58:33Z'
+  support: supports
+  summary: Independent pixel inspection of the original figure alongside its caption,
+    legend and methods. No unreported numerical value was digitized or reconstructed.
+  snapshot_sha256: 04663e50c186dea8cac804a7fa2183ecb3ff42d023a064deabb0543783da92a8
+- evidence_id: figure5
+  kind: primary_source
+  reference: https://doi.org/10.1128/AEM.00855-17
+  locator: Main Figure 5, original acquired JPEG inspected visually
+  accessed_at: '2026-10-11T06:58:33Z'
+  support: supports
+  summary: Independent pixel inspection of the original figure alongside its caption,
+    legend and methods. No unreported numerical value was digitized or reconstructed.
+  snapshot_sha256: 93b81335def8b1c941ba955a87765f66aaa711960d5681ec28218ecd4dbd1d3d
+- evidence_id: figure6
+  kind: primary_source
+  reference: https://doi.org/10.1128/AEM.00855-17
+  locator: Main Figure 6, original acquired JPEG inspected visually
+  accessed_at: '2026-10-11T06:58:33Z'
+  support: supports
+  summary: Independent pixel inspection of the original figure alongside its caption,
+    legend and methods. No unreported numerical value was digitized or reconstructed.
+  snapshot_sha256: 2f26df6198c437949d1caedba75cc02ce48918b13c1ff8714b4ffe788f33d826
+- evidence_id: search
+  kind: search
+  reference: Reviewer web searches and bounded local inventory
+  locator: 2026-10-11 first returned web result sets; hidden/ignored-inclusive local
+    search
+  accessed_at: '2026-10-11T06:58:33Z'
+  support: context_only
+  summary: No direct correction, retraction or contrary replication surfaced in the
+    bounded result sets inspected. Related patents and secondary summaries do not
+    establish a direct contradiction to the qualified recorded endpoints. This is
+    not an exhaustive absence claim.
+  search_scope: 'Web queries: "10.1038/s41598-024-57678-8" correction retraction;
+    "10.1128/AEM.00855-17" correction retraction; "Bifidobacterium adolescentis" "cesium"
+    "polyphosphate"; "Bacillus" "TK2d" strontium abiotic control. First returned sets
+    only, no exhaustive pagination. rg --hidden --no-ignore -L searched data/records,
+    history, research, reviews and /private/tmp/cmm-round9-cs-sr-raw for both exact
+    record IDs and both DOIs, including ignored files and following relevant symlinks.
+    Matches include each intended record, shared dossier/frontier and cited primary/raw
+    files; no second maintained record was identified within this bounded inventory.'
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Material and organism boundaries
+  outcome: supported
+  summary: ChEBI:33324 denotes strontium atom, formula Sr and charge zero; the experimental
+    Sr(II) salt, carbonate-rich solids, strontianite mineral and commodity remain
+    distinct. NCBI 1630002 resolves Bacillus sp. TK2d at species rank but does not
+    supply a formally named species. LC034238.2 is the 1463-bp partial 16S rRNA record
+    for TK2d, links taxon 1630002 and the primary paper, and supports strain provenance
+    rather than the experimental mechanism.
+  target_ids:
+  - cmmmech:strontium
+  evidence_ids:
+  - record
+  - identity
+  - taxon
+  - strain
+- assessment_id: criticality
+  area: evidence
+  topic: Authority and dated commodity designation
+  outcome: supported
+  summary: European Parliament and Council Regulation (EU) 2024/1252, original 2024
+    Official Journal edition, names strontium as a critical raw material at Annex
+    II Section 1(ad). This is not a claim that all Sr salts, minerals or wastes inherit
+    the designation or that strontium is an Annex I strategic item.
+  target_ids:
+  - cmmmech:strontium
+  evidence_ids:
+  - record
+  - criticality
+  dimensions:
+  - name: designation
+    value: European Parliament and Council Regulation (EU) 2024/1252, original 2024
+      Official Journal edition, names strontium as a critical raw material at Annex
+      II Section 1(ad). This is not a claim that all Sr salts, minerals or wastes
+      inherit the designation or that strontium is an Annex I strategic item.
+    definition: Authority, jurisdiction, named list and exact edition define the criticality
+      claim; no undated universal status.
+    evidence_ids:
+    - criticality
+- assessment_id: mechanism
+  area: evidence
+  topic: Experimental support and causal boundaries
+  outcome: supported
+  summary: The inspected strontium record supports culture-associated soluble-Sr depletion
+    and Sr/Ca-bearing carbonate-rich solids in TK2d laboratory cultures. It correctly
+    separates different sample times, aragonite-like diffraction, model-dependent
+    Sr local environments and measured solution concentrations. Missing matched controls,
+    salinity limits, the Mg text/plot discrepancy and unavailable supplement are retained.
+    No actionable curation defect was found in this scope.
+  target_ids:
+  - cmmmech:strontium
+  evidence_ids:
+  - record
+  - primary
+  - figure1
+  - figure2
+  - figure3
+  - figure4
+  - figure5
+  - figure6
+  dimensions:
+  - name: organism
+    value: Bacillus sp. TK2d, NCBITaxon:1630002, LC034238.2.
+    definition: Unresolved Bacillus isolate rather than an inferred formally named
+      species.
+    evidence_ids:
+    - record
+    - primary
+  - name: biomass
+    value: Growing cultures inoculated from preculture; collected cells/solids examined
+      at different times.
+    definition: Living-culture association is not a proof that every precipitation
+      step requires viable cells.
+    evidence_ids:
+    - record
+    - primary
+  - name: substrate
+    value: Defined marine-broth-derived saline medium with 1.0 mM Sr supplied as SrCl2
+      and 20 g/L urea.
+    definition: Reagent Sr and saline culture medium are not radioactive wastewater
+      or actual contaminated seawater.
+    evidence_ids:
+    - record
+    - primary
+  - name: conditions
+    value: 3.74 g/L marine broth 2216, final NaCl 30 g/L, autoclaved/0.45 micrometre-filtered;
+      0.5 mL OD600 0.1 preculture into 50 mL, 30 C and 120 rpm, triplicate.
+    definition: Isolation-plate pH 7.6 is not silently transferred to an unreported
+      broth pH time course.
+    evidence_ids:
+    - record
+    - primary
+  - name: controls
+    value: Uninoculated Sr medium, ineffective urease-positive isolates, salinity
+      variants, unmatched chemical carbonate precipitation.
+    definition: These comparisons bound causality and transfer; no pH-matched necessity
+      test is claimed.
+    evidence_ids:
+    - record
+    - primary
+  - name: solution_endpoint
+    value: Centrifuged and 0.2 micrometre-filtered liquid analyzed by ICP-AES with
+      triplicate analytical readings.
+    definition: Methods give 4 C and 20 C centrifugation descriptions; unresolved
+      relation remains explicit.
+    evidence_ids:
+    - record
+    - primary
+  - name: solid_endpoint
+    value: SEM/TEM/EDS and electron diffraction plus Sr XANES at distinct sample times;
+      aragonite-like material and mixed Sr environments.
+    definition: Model fractions are not mineral purity, total initial Sr recovery
+      or exact recovered mass.
+    evidence_ids:
+    - record
+    - primary
+  - name: deployment
+    value: Laboratory reagent-salt cultures; salinity-dependent performance and future
+      contaminated-seawater/90Sr work.
+    definition: No industrial recovery or radionuclide field-treatment claim is supported.
+    evidence_ids:
+    - record
+    - primary
+- assessment_id: quantity
+  area: quantity
+  topic: Units, denominators and endpoint interpretation
+  outcome: supported
+  summary: Reported 1.0 mM starting Sr falls to 0.13 mM at day 2 and below 1.0e-7
+    mol/L after day 4; the bound is not zero or an exact 100% yield. Table 1 fits
+    for 1 mM starting Sr give 52% SrCO3-like at day 5 and 87% at day 10, with complementary
+    SrCl2-like fractions. Those are two-standard spectral fractions, not phase purities
+    or total-feed recovery.
+  target_ids:
+  - cmmmech:strontium
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Actual curation events
+  outcome: supported
+  summary: Separate actual inline and CREATE sidecar timestamps, actor/model/tool
+    and issue39 linkage are present. Trusted-base history validation passed. The reviewer
+    did not append a curation event for review alone.
+  target_ids:
+  - cmmmech:strontium
+  evidence_ids:
+  - record
+- assessment_id: search
+  area: completeness
+  topic: Bounded adversarial checks
+  outcome: supported
+  summary: Scoped correction, contrary-evidence and ignored-inclusive duplicate searches
+    are explicit; source access limitations remain visible.
+  target_ids:
+  - cmmmech:strontium
+  evidence_ids:
+  - search
+findings: []
+actions: []
+limitations:
+- Ureolysis and cell-surface association are supported contributors but no urease
+  knockout/inhibition or pH-matched abiotic control establishes an obligatory molecular
+  pathway.
+- The abiotic Na2CO3/CaCl2/SrCl2 recipe differs from culture chemistry; carbonate
+  can form without cells under that comparison.
+- Solids sampled at different culture times and model-dependent two-standard XANES
+  fits do not establish a homogeneous, pure strontianite product.
+- The Mg plot shows a modest change despite the Results wording, and selected-area
+  EDS nondetection at approximately 0.1% w/w does not prove zero Mg in all solids.
+- The linked supplement was not acquired despite curator PMC/publisher/Europe PMC
+  attempts; this reviewer inspected main text, Table 1 and all six main figures but
+  did not reassess supplementary figures or chemical-control curves.
+- Actual contaminated seawater, 90Sr, long-term leaching stability, isolated-metal
+  yield and deployment remain untested.
+- Correction/counterevidence and duplicate searches are bounded, not literature-wide
+  or machine-wide absence proofs.
+notes:
+- Working-tree input hashes attest these uncommitted bytes against the durable trusted
+  main ancestor, not their presence in that ancestor.
+- Source limitations already stated in the record are not manufactured as corrective
+  findings.
+- Fresh web resolution succeeded for Cs ChEBI, JCM and both designation authorities.
+  Browser retrieval of Sr ChEBI and the NCBI JSON API failed; independently inspected
+  the curator-acquired official API payloads with recorded URLs, actual acquisition
+  times and hashes instead.
+- Reviewer verified root batch gate logs; no claim is made to have personally rerun
+  the full suite.
+links:
+- research/ingests/round9-cs-sr-20261011.md
+- research/ingests/round9-cs-sr-20261011.json
+- https://github.com/CultureBotAI/CMMMech/issues/39
+tags:
+- round9
+- strontium
+- independent-review
+- primary-literature
+```

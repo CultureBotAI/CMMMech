@@ -1,0 +1,554 @@
+{
+  "assessment_id": "round9-ru-rh-20261011",
+  "created_at": "2026-10-11T06:52:08Z",
+  "actor": {
+    "name": "codex",
+    "model": "GPT-6",
+    "tool": "codex"
+  },
+  "repository_revision": "9fa187ff5a455f495cfa2635e60c413b6763370d",
+  "branch": "curate/cmm-expansion-round9-20261011",
+  "working_state": "New records, canonical CREATE histories and this dossier are uncommitted; other agents own separate round9 candidates. Root handles publication and independent review.",
+  "records": [
+    {
+      "id": "cmmmech:ruthenium",
+      "path": "data/records/ruthenium.yaml",
+      "sha256": "f9a164e5b56444aa80eec3a76868f3fe45ccdee8f3f25ed29e2c79dc28fc1fb1",
+      "history_refs": [
+        "history/records/ruthenium/2026-10-11T065054Z-codex-52117e.yaml"
+      ],
+      "history_artifacts": [
+        {
+          "path": "history/records/ruthenium/2026-10-11T065054Z-codex-52117e.yaml",
+          "sha256": "36569d5a6e2a38e5af11022d2649670782ac09a1c3eadfc63189ae8c23235537"
+        }
+      ]
+    },
+    {
+      "id": "cmmmech:rhodium",
+      "path": "data/records/rhodium.yaml",
+      "sha256": "497569b61f2be991668d4ef65358d459a4487569f3e5ad6a2e67f44af596f9bb",
+      "history_refs": [
+        "history/records/rhodium/2026-10-11T065056Z-codex-dc19af.yaml"
+      ],
+      "history_artifacts": [
+        {
+          "path": "history/records/rhodium/2026-10-11T065056Z-codex-dc19af.yaml",
+          "sha256": "9f6717195cab005e1965e3bc5b56c31aaa5c1b8ffcdc5e694f2bba683fa51e2b"
+        }
+      ]
+    }
+  ],
+  "search_scope": {
+    "date": "2026-10-11",
+    "providers": [
+      "web search first result page per query",
+      "official ChEBI/NCBI/GovInfo",
+      "publisher",
+      "Europe PMC fullTextXML and supplementaryFiles"
+    ],
+    "queries": [
+      "site:ebi.ac.uk/chebi \"ruthenium atom\"",
+      "site:ebi.ac.uk/chebi \"rhodium atom\"",
+      "\"Microbial synthesis of bimetallic Pd–Rh\" \"2025\"",
+      "\"Novel catalytically active Pd/Ru\" correction retraction",
+      "site:ebi.ac.uk/chebi ruthenium atom 30682",
+      "site:ncbi.nlm.nih.gov/Taxonomy \"Bacillus benzeovorans\"",
+      "site:ncbi.nlm.nih.gov/Taxonomy \"Geobacter sulfurreducens\"",
+      "\"10.1039/D5NA00861A\" correction retraction",
+      "\"ruthenium atom\" \"CHEBI\"",
+      "\"Bacillus benzeovorans\" \"Taxonomy ID\"",
+      "\"rhodium\" \"Shewanella algae\" \"reduction\"",
+      "\"Bacillus benzeovorans\" NCBI taxonomy",
+      "\"NCIMB 12555\" Bacillus taxonomy",
+      "\"10.1039/d5na00861a\" \"correction\"",
+      "\"10.1038/s41598-019-40312-3\" \"correction\"",
+      "\"10.1038/s41598-019-40312-3\" retraction erratum",
+      "\"10.1039/d5na00861a\" retraction erratum",
+      "\"Bacillus benzeovorans\" ruthenium abiotic control",
+      "\"Geobacter sulfurreducens\" rhodium acetate control",
+      "\"Microbial synthesis of bimetallic Pd–Rh\" supplementary d5na00861a1",
+      "\"Novel catalytically active Pd/Ru\" supplementary 40312 pdf",
+      "\"Synthesis of Pd/Ru Bimetallic Nanoparticles\" \"Ru(0)\""
+    ],
+    "dedup": "rg --no-ignore --hidden across data, research and reviews, then cited raw directories /private/tmp/cmm-next-eu and /private/tmp/cmm-expansion-authorities-20261011 and this task raw directory. Scoped find found no symlinks beneath data/research/reviews. Name/DOI/PMC/ChEBI searches before writes found authority/frontier proposals but no matching accepted element record or cited study in those scientific trees. Ignored files included; not machine-wide. Binary authority PDFs were not regex searched; their associated text/HTML and manifest were inspected.",
+    "limits": "Bounded web result pages, no complete citation graph, proprietary database access or author contact. No correction/retraction notice for the curated DOI was identified in the inspected results; unrelated retracted citing papers are not retractions of these studies."
+  },
+  "acquisitions": [
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/ru.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6423089/fullTextXML",
+      "acquired_at": "2026-10-11T06:46:33.052933+00:00",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6423089/fullTextXML",
+      "content_type": "application/xml",
+      "status": 200,
+      "bytes": 111786,
+      "sha256": "5852c4a0e5228b26b9f9b121469eaba2a982eb1bc0d0b6a84e1da0ac2e26b9e0",
+      "magic": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><article xml:lang=\"en\" article-type=\"resea",
+      "acquired_at_semantics": "Request start UTC; completion was observed in the tool receipt, not separately timestamped.",
+      "receipt_path": "/private/tmp/cmm-round9-ru-rh-raw/receipts1.json",
+      "verified_sha256": "5852c4a0e5228b26b9f9b121469eaba2a982eb1bc0d0b6a84e1da0ac2e26b9e0",
+      "content_validation": "Parsed successfully as JATS XML; title, DOI, article identifiers and license inspected.",
+      "terms": "Omajali main article and supplement: CC BY 4.0 in article; Gomez-Bolivar full text: CC BY stated in JATS. Downloaded full text/images retained outside Git."
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/ru-alt.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6595500/fullTextXML",
+      "acquired_at": "2026-10-11T06:46:33.055648+00:00",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6595500/fullTextXML",
+      "content_type": "application/xml",
+      "status": 200,
+      "bytes": 183919,
+      "sha256": "0b22152fbcf3c315af0b5f633fef58200341f396dc452145772812b4b53e9ac9",
+      "magic": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><article xml:lang=\"en\" article-type=\"resea",
+      "acquired_at_semantics": "Request start UTC; completion was observed in the tool receipt, not separately timestamped.",
+      "receipt_path": "/private/tmp/cmm-round9-ru-rh-raw/receipts1.json",
+      "verified_sha256": "0b22152fbcf3c315af0b5f633fef58200341f396dc452145772812b4b53e9ac9",
+      "content_validation": "Parsed successfully as JATS XML; title, DOI, article identifiers and license inspected.",
+      "terms": "Omajali main article and supplement: CC BY 4.0 in article; Gomez-Bolivar full text: CC BY stated in JATS. Downloaded full text/images retained outside Git."
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/rh.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12713794/fullTextXML",
+      "acquired_at": "2026-10-11T06:46:33.056313+00:00",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12713794/fullTextXML",
+      "content_type": "application/xml",
+      "status": 200,
+      "bytes": 145456,
+      "sha256": "2900b910dbac8d5bf66a27842427550006d3a90a0de5cd577d54f0fa10f19e9c",
+      "magic": "\n<!DOCTYPE article\n  PUBLIC \"-//NLM//DTD JATS (Z39.96) Journal Archiving and Int",
+      "acquired_at_semantics": "Request start UTC; completion was observed in the tool receipt, not separately timestamped.",
+      "receipt_path": "/private/tmp/cmm-round9-ru-rh-raw/receipts1.json",
+      "verified_sha256": "2900b910dbac8d5bf66a27842427550006d3a90a0de5cd577d54f0fa10f19e9c",
+      "content_validation": "Parsed successfully as JATS XML; title, DOI, article identifiers and license inspected.",
+      "terms": "Xie article states Creative Commons Attribution 3.0 Unported; associated supplement from the same article. Retained outside Git."
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/rh.pdf",
+      "url": "https://pubs.rsc.org/en/content/articlepdf/2025/na/d5na00861a",
+      "acquired_at": "2026-10-11T06:46:33.056751+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "acquired_at_semantics": "Request start UTC; completion was observed in the tool receipt, not separately timestamped.",
+      "receipt_path": "/private/tmp/cmm-round9-ru-rh-raw/receipts1.json",
+      "terms": "Xie article states Creative Commons Attribution 3.0 Unported; associated supplement from the same article. Retained outside Git."
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/us2025.html",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm",
+      "acquired_at": "2026-10-11T06:46:33.057286+00:00",
+      "final_url": "https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm",
+      "content_type": "text/html",
+      "status": 200,
+      "bytes": 21581,
+      "sha256": "9f03042f7a020f2b67cae0a51dd386397309704fbde1d83a09e85b7011140276",
+      "magic": "<html>\n<head>\n<title>Federal Register, Volume 90 Issue 214 (Friday, November 7, ",
+      "acquired_at_semantics": "Request start UTC; completion was observed in the tool receipt, not separately timestamped.",
+      "receipt_path": "/private/tmp/cmm-round9-ru-rh-raw/receipts1.json",
+      "verified_sha256": "9f03042f7a020f2b67cae0a51dd386397309704fbde1d83a09e85b7011140276",
+      "content_validation": "HTML content inspected for expected authority identity/list, not accepted solely on HTTP status.",
+      "terms": "Official authority HTML; source-specific reuse terms not audited. Only authored claim summaries and provenance committed."
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/chebi-rh.html",
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:33359",
+      "acquired_at": "2026-10-11T06:46:33.057905+00:00",
+      "final_url": "https://www.ebi.ac.uk/chebi/CHEBI:33359",
+      "content_type": "text/html;charset=utf-8",
+      "status": 200,
+      "bytes": 826260,
+      "sha256": "91648cf1b1421cef1d4ab850e298626670eeb02d63f8284e7f32d40f93a196a3",
+      "magic": "<!DOCTYPE html>\n<html >\n<head><meta charset=\"utf-8\">\n<meta name=\"viewport\" conte",
+      "acquired_at_semantics": "Request start UTC; completion was observed in the tool receipt, not separately timestamped.",
+      "receipt_path": "/private/tmp/cmm-round9-ru-rh-raw/receipts1.json",
+      "verified_sha256": "91648cf1b1421cef1d4ab850e298626670eeb02d63f8284e7f32d40f93a196a3",
+      "content_validation": "HTML content inspected for expected authority identity/list, not accepted solely on HTTP status.",
+      "terms": "Official authority HTML; source-specific reuse terms not audited. Only authored claim summaries and provenance committed."
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/ru-supp.pdf",
+      "url": "https://static-content.springer-cdn.com/esm/art%3A10.1038%2Fs41598-019-40312-3/MediaObjects/41598_2019_40312_MOESM1_ESM.pdf",
+      "acquired_at": "2026-10-11T06:47:11.572346+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "acquired_at_semantics": "Request start UTC; completion was observed in the tool receipt, not separately timestamped.",
+      "receipt_path": "/private/tmp/cmm-round9-ru-rh-raw/receipts2.json",
+      "terms": "Omajali main article and supplement: CC BY 4.0 in article; Gomez-Bolivar full text: CC BY stated in JATS. Downloaded full text/images retained outside Git."
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/ru.pdf",
+      "url": "https://www.nature.com/articles/s41598-019-40312-3.pdf",
+      "acquired_at": "2026-10-11T06:47:11.573339+00:00",
+      "final_url": "https://www.nature.com/articles/s41598-019-40312-3.pdf?error=cookies_not_supported&code=c02def19-cc43-41ce-8f4b-85608d39af98",
+      "content_type": "application/pdf",
+      "status": 200,
+      "bytes": 3463742,
+      "sha256": "b215cd8db101557d7f38f7eb0de546c097b4e7425258053d79810134bd11e715",
+      "magic": "%PDF-1.4\n%����\n1 0 obj\n<</Producer(iText� 5.3.5 �2000-2012 1T3XT BVBA \\(AGPL-ver",
+      "acquired_at_semantics": "Request start UTC; completion was observed in the tool receipt, not separately timestamped.",
+      "receipt_path": "/private/tmp/cmm-round9-ru-rh-raw/receipts2.json",
+      "verified_sha256": "b215cd8db101557d7f38f7eb0de546c097b4e7425258053d79810134bd11e715",
+      "content_validation": "PDF magic and all 12 pages parsed successfully; relevant pages rendered and inspected.",
+      "terms": "Omajali main article and supplement: CC BY 4.0 in article; Gomez-Bolivar full text: CC BY stated in JATS. Downloaded full text/images retained outside Git."
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/rh-supp.pdf",
+      "url": "https://www.rsc.org/suppdata/d5/na/d5na00861a/d5na00861a1.pdf",
+      "acquired_at": "2026-10-11T06:47:11.573902+00:00",
+      "error": "HTTP Error 404: Not Found",
+      "acquired_at_semantics": "Request start UTC; completion was observed in the tool receipt, not separately timestamped.",
+      "receipt_path": "/private/tmp/cmm-round9-ru-rh-raw/receipts2.json",
+      "terms": "Xie article states Creative Commons Attribution 3.0 Unported; associated supplement from the same article. Retained outside Git."
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12713794/supplementaryFiles",
+      "acquired_at": "2026-10-11T06:47:11.574233+00:00",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12713794/supplementaryFiles",
+      "content_type": "application/zip",
+      "status": 200,
+      "bytes": 963669,
+      "sha256": "9dd2efb5b1ec14692d06d83dbc40eb214173417708b7f2adf463d8d7fd8ed6da",
+      "magic": "PK\u0003\u0004\u0014\u0000\b\b\b\u0000�=K]\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0011\u0000\u0000\u0000d5na00861a-ga.jpg�w\\S��\u0000��*]��H�\"\u0016ZB�\"]\u0004�K�\u0012 \u0002\t\u0010B",
+      "acquired_at_semantics": "Request start UTC; completion was observed in the tool receipt, not separately timestamped.",
+      "receipt_path": "/private/tmp/cmm-round9-ru-rh-raw/receipts2.json",
+      "verified_sha256": "9dd2efb5b1ec14692d06d83dbc40eb214173417708b7f2adf463d8d7fd8ed6da",
+      "content_validation": "Complete ZIP; zipfile.testzip returned None, every member read with CRC validation.",
+      "terms": "Xie article states Creative Commons Attribution 3.0 Unported; associated supplement from the same article. Retained outside Git."
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/ru-assets.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6423089/supplementaryFiles",
+      "acquired_at": "2026-10-11T06:47:11.574612+00:00",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6423089/supplementaryFiles",
+      "content_type": "application/zip",
+      "status": 200,
+      "bytes": 2348179,
+      "sha256": "1ec083369ed622e79a4cb94342b14213b07a85595f8aa04ccbb5c81bf28b9bcf",
+      "magic": "PK\u0003\u0004\u0014\u0000\b\b\b\u0000�=K]\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u001e\u0000\u0000\u000041598_2019_40312_Fig2_HTML.jpg��\u0005T\\��-x��\t.\t�\u0014\u0012H �",
+      "acquired_at_semantics": "Request start UTC; completion was observed in the tool receipt, not separately timestamped.",
+      "receipt_path": "/private/tmp/cmm-round9-ru-rh-raw/receipts2.json",
+      "verified_sha256": "1ec083369ed622e79a4cb94342b14213b07a85595f8aa04ccbb5c81bf28b9bcf",
+      "content_validation": "Complete ZIP; zipfile.testzip returned None, every member read with CRC validation.",
+      "terms": "Omajali main article and supplement: CC BY 4.0 in article; Gomez-Bolivar full text: CC BY stated in JATS. Downloaded full text/images retained outside Git."
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/chebi-ru.html",
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:30682",
+      "acquired_at": "2026-10-11T06:47:11.574911+00:00",
+      "final_url": "https://www.ebi.ac.uk/chebi/CHEBI:30682",
+      "content_type": "text/html;charset=utf-8",
+      "status": 200,
+      "bytes": 823660,
+      "sha256": "9d9e3e9018b025b417e7fee4cd42475e4c7b81f5d8f385fc9392e37dd381934a",
+      "magic": "<!DOCTYPE html>\n<html >\n<head><meta charset=\"utf-8\">\n<meta name=\"viewport\" conte",
+      "acquired_at_semantics": "Request start UTC; completion was observed in the tool receipt, not separately timestamped.",
+      "receipt_path": "/private/tmp/cmm-round9-ru-rh-raw/receipts2.json",
+      "verified_sha256": "9d9e3e9018b025b417e7fee4cd42475e4c7b81f5d8f385fc9392e37dd381934a",
+      "content_validation": "HTML content inspected for expected authority identity/list, not accepted solely on HTTP status.",
+      "terms": "Official authority HTML; source-specific reuse terms not audited. Only authored claim summaries and provenance committed."
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/ncbi-geobacter.html",
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=35554&mode=Info",
+      "acquired_at": "2026-10-11T06:47:11.575186+00:00",
+      "final_url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=35554&mode=Info",
+      "content_type": "text/html; charset=utf-8",
+      "status": 200,
+      "bytes": 29719,
+      "sha256": "b1d0f8d3cc8e9a1f559799f6769567001ea8a525e3be4e788f038b3c07bbc40b",
+      "magic": "<!doctype html>\r\n<html>\r\n\r\n<!--\r\n    inputData = {\r\n        srchTerm: ,\r\n       ",
+      "acquired_at_semantics": "Request start UTC; completion was observed in the tool receipt, not separately timestamped.",
+      "receipt_path": "/private/tmp/cmm-round9-ru-rh-raw/receipts2.json",
+      "verified_sha256": "b1d0f8d3cc8e9a1f559799f6769567001ea8a525e3be4e788f038b3c07bbc40b",
+      "content_validation": "HTML content inspected for expected authority identity/list, not accepted solely on HTTP status.",
+      "terms": "Official authority HTML; source-specific reuse terms not audited. Only authored claim summaries and provenance committed."
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/ncbi-bacillus.html",
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1456&mode=info",
+      "acquired_at": "2026-10-11T06:48:32.909655+00:00",
+      "final_url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1456&mode=info",
+      "content_type": "text/html; charset=utf-8",
+      "status": 200,
+      "bytes": 28937,
+      "sha256": "3219e6271797ed85aebce47ab0d93455edc7d8a2672b57632fab294430e4d3fc",
+      "magic": "<!doctype html>\r\n<html>\r\n\r\n<!--\r\n    inputData = {\r\n        srchTerm: ,\r\n       ",
+      "acquired_at_semantics": "Request start UTC; completion was observed in the tool receipt, not separately timestamped.",
+      "receipt_path": "/private/tmp/cmm-round9-ru-rh-raw/receipts3.json",
+      "verified_sha256": "3219e6271797ed85aebce47ab0d93455edc7d8a2672b57632fab294430e4d3fc",
+      "content_validation": "HTML content inspected for expected authority identity/list, not accepted solely on HTTP status.",
+      "terms": "Official authority HTML; source-specific reuse terms not audited. Only authored claim summaries and provenance committed."
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/rh2026.pdf",
+      "url": "https://pubs.rsc.org/en/content/articlepdf/2026/na/d5na00861a",
+      "acquired_at": "2026-10-11T06:48:32.910867+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "acquired_at_semantics": "Request start UTC; completion was observed in the tool receipt, not separately timestamped.",
+      "receipt_path": "/private/tmp/cmm-round9-ru-rh-raw/receipts3.json",
+      "terms": "Xie article states Creative Commons Attribution 3.0 Unported; associated supplement from the same article. Retained outside Git."
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/rh-supp-rsc.pdf",
+      "url": "https://pubs.rsc.org/en/content/getauthorversionpdf/d5na00861a",
+      "acquired_at": "2026-10-11T06:48:32.911363+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "acquired_at_semantics": "Request start UTC; completion was observed in the tool receipt, not separately timestamped.",
+      "receipt_path": "/private/tmp/cmm-round9-ru-rh-raw/receipts3.json",
+      "terms": "Xie article states Creative Commons Attribution 3.0 Unported; associated supplement from the same article. Retained outside Git."
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/ru-supp-mirror.pdf",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/6423089/bin/41598_2019_40312_MOESM1_ESM.pdf",
+      "acquired_at": "2026-10-11T06:48:32.911696+00:00",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/6423089/bin/41598_2019_40312_MOESM1_ESM.pdf",
+      "content_type": "text/html; charset=utf-8",
+      "status": 200,
+      "bytes": 1817,
+      "sha256": "2c1037f0e965fa772025e6e06ced08778184d128b7cb73ec709ba55b36b16c00",
+      "magic": "\n\n\n\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"width=device-width, initi",
+      "acquired_at_semantics": "Request start UTC; completion was observed in the tool receipt, not separately timestamped.",
+      "receipt_path": "/private/tmp/cmm-round9-ru-rh-raw/receipts3.json",
+      "verified_sha256": "2c1037f0e965fa772025e6e06ced08778184d128b7cb73ec709ba55b36b16c00",
+      "content_validation": "Rejected: HTTP 200 response is challenge HTML, not PDF.",
+      "terms": "Omajali main article and supplement: CC BY 4.0 in article; Gomez-Bolivar full text: CC BY stated in JATS. Downloaded full text/images retained outside Git."
+    }
+  ],
+  "extracted_members": [
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/ru-assets/41598_2019_40312_Fig2_HTML.jpg",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/ru-assets.zip",
+      "bytes": 529958,
+      "sha256": "772861dfe2b91fb2375c21740007c10bc2a9c2b49ae6d4bbefd0c911d089f041",
+      "crc32": "dc553b71"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/ru-assets/41598_2019_40312_Fig1_HTML.gif",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/ru-assets.zip",
+      "bytes": 11737,
+      "sha256": "0b58900695882d4fc49a6cd23c3e77a73348fde0f47de29d63d9bb88ebbbc324",
+      "crc32": "5dcbbe82"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/ru-assets/41598_2019_40312_Fig4_HTML.jpg",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/ru-assets.zip",
+      "bytes": 140677,
+      "sha256": "3c871918b17a7ddd04120350b444cabf17b5cd9e6e46b1979f8ad64e167d542c",
+      "crc32": "814250f5"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/ru-assets/41598_2019_40312_MOESM1_ESM.pdf",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/ru-assets.zip",
+      "bytes": 1432617,
+      "sha256": "f9e61c93adeaf20a4c2be3ffe17aea86564d19851d873de5f6d571c1a464fd0a",
+      "crc32": "53664a24"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/ru-assets/41598_2019_40312_Fig4_HTML.gif",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/ru-assets.zip",
+      "bytes": 9731,
+      "sha256": "db7343917c58b34b5c292dd3c2f9358160dfe2fd7dc59315ab43491bf030e7bb",
+      "crc32": "38337dfb"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/ru-assets/41598_2019_40312_Fig1_HTML.jpg",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/ru-assets.zip",
+      "bytes": 153633,
+      "sha256": "2ba66080e4c5f232b72e05fa1a3cef13876459a0683a5be77ea445095d8b81d4",
+      "crc32": "ae4148ac"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/ru-assets/41598_2019_40312_Fig2_HTML.gif",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/ru-assets.zip",
+      "bytes": 27431,
+      "sha256": "5b3ef4d02c5f70efeb2fa7ed11cb91f28d38b7357ee0ef37c8481fa699346f5a",
+      "crc32": "4948ee57"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/ru-assets/41598_2019_40312_Fig3_HTML.gif",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/ru-assets.zip",
+      "bytes": 10203,
+      "sha256": "54ee82b4c531831babc6b33470d396d1f11fa36abf627ad0aae2a117873fb715",
+      "crc32": "74db05a7"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/ru-assets/41598_2019_40312_Fig3_HTML.jpg",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/ru-assets.zip",
+      "bytes": 193565,
+      "sha256": "302943d775d0678fa54475cfbe10b9aa18d30892139fceea9ad519b564ca3c5f",
+      "crc32": "67ae3ba5"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets/d5na00861a-ga.jpg",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets.zip",
+      "bytes": 67775,
+      "sha256": "c56879ea170534966af91af60b7e9416527fa0b187c4d2169ec538b1a5e60f32",
+      "crc32": "e5f3a2db"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets/d5na00861a-f6.jpg",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets.zip",
+      "bytes": 60596,
+      "sha256": "8fdad87950650fc6cf71a048a03d287ce441558a384c14153a0bc128c6bc2494",
+      "crc32": "f6d70d81"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets/d5na00861a-f3.jpg",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets.zip",
+      "bytes": 128013,
+      "sha256": "d31a43e448795a733664027fd6f1ffbd4a8a1b991545749ba3c1ce4e39467118",
+      "crc32": "e32cdd2f"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets/d5na00861a-f4.jpg",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets.zip",
+      "bytes": 150816,
+      "sha256": "cf2c0466bdfa7d502769f8d496f3876d5591505b503c6f165cfb2e0f30573946",
+      "crc32": "d73644e6"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets/d5na00861a-f6.gif",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets.zip",
+      "bytes": 9496,
+      "sha256": "4cc7065646183eac2c3bb1c748ee26383cd8b3eb24ca1173b8a3d4097318354e",
+      "crc32": "fff0fd39"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets/d5na00861a-s1.jpg",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets.zip",
+      "bytes": 60531,
+      "sha256": "3193a5d99426df137ea787c2f868a724b87a9aac0d8f10881e8bfad493f094d4",
+      "crc32": "3cf8a0ad"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets/d5na00861a-f1.jpg",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets.zip",
+      "bytes": 120084,
+      "sha256": "df3eddf88fe7ea06e45e1054073c46adbf8b30010e9f14d4b64927b965cae077",
+      "crc32": "90a69017"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets/d5na00861a-f5.gif",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets.zip",
+      "bytes": 17941,
+      "sha256": "2661a648708eef9f479f0f36476832235f2358a83ca78fc76f2382de4ee4734d",
+      "crc32": "f9b5bfcc"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets/NA-008-D5NA00861A-s001.pdf",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets.zip",
+      "bytes": 121845,
+      "sha256": "43545f03952886d51c2b68a6ead2bcea48eae2e1e98004e534206def4b098261",
+      "crc32": "e7b853b7"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets/d5na00861a-f2.gif",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets.zip",
+      "bytes": 12010,
+      "sha256": "ff21cdc98168ba33a55338e2c8b342d9bbec43729f74af18c51d13d40551acd8",
+      "crc32": "e1d37dc5"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets/d5na00861a-f1.gif",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets.zip",
+      "bytes": 12342,
+      "sha256": "b2cadfb4df8aa58342937e69d311d8ae2bb2bc3e4588e323431ae3aac1822f54",
+      "crc32": "6f978619"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets/d5na00861a-f2.jpg",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets.zip",
+      "bytes": 112334,
+      "sha256": "d9acf9871a4765a6a6717721de94a4fe27f43e9d8eade134cdc381c7c4fdcdcc",
+      "crc32": "5bf56bb0"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets/d5na00861a-f3.gif",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets.zip",
+      "bytes": 13205,
+      "sha256": "f59b82343421ec6d9b53ed21ac8faebfb19140515b23ac7bdffb4e5ab2870bfb",
+      "crc32": "088ecbe5"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets/d5na00861a-f4.gif",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets.zip",
+      "bytes": 15152,
+      "sha256": "017003ef3d0e60ec9c2be1b8cfc09c5fc7fa8d7c79d2ca99ca97f148212d89d6",
+      "crc32": "b78fa754"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets/d5na00861a-s1.gif",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets.zip",
+      "bytes": 10822,
+      "sha256": "b241b004fa9d2a605145302eff9cf607e585b106734a50f5f3d4d56c463f7329",
+      "crc32": "9be0d205"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets/d5na00861a-f5.jpg",
+      "parent": "/private/tmp/cmm-round9-ru-rh-raw/rh-assets.zip",
+      "bytes": 229813,
+      "sha256": "a45d5aa9f412e88d63df9fb3917e62238deffeec82d8db09ae8d6494432c43df",
+      "crc32": "74fcb185"
+    }
+  ],
+  "primary_assessments": [
+    {
+      "doi": "10.1038/s41598-019-40312-3",
+      "pmcid": "PMC6423089",
+      "decision": "curate scoped oxidized Ru deposition",
+      "inspected": "Full JATS XML and publisher PDF; Tables 1-3, Figures 1-4; full 12-page supplement text and relevant pixels S3,S4,S6-S9,S11. PDF12 is blank. Main and supplement are one study, not independent experiments.",
+      "material": "Element root distinct from RuCl3.2H2O feed, oxide/hydroxide mixtures, Pd-seeded catalyst and biomass.",
+      "organism": "Paper Bacillus benzeovorans NCIMB 12555 maps via exact collection identifier to NCBI 1456 Bacillus benzoevorans species. No strain-level taxon falsely asserted.",
+      "interpretation": "Other process denotes observed deposition on microbial biomass without resolved causal pathway. No Ru(0) or metallic PdRu alloy; XPS III/VI versus XANES III/IV and air handling prevent uniform valence. Table 3 fitted Ru-Ru shell conflicts with prose absence claim; S6 high-loading label differs from Table 1.",
+      "controls": "No-metal microscopy baseline; matched no-cell/killed-cell/hydrogen-free Ru outcomes and assay replication unspecified. Acidic exposure and dry processing preclude assuming sustained viability.",
+      "quantitation": "Loadings inferred from solution difference, not isolated yield; ~40% residual prose not exact for every Table 1 ratio. No native concentration observations imported."
+    },
+    {
+      "doi": "10.1039/D5NA00861A",
+      "pmcid": "PMC12713794.2",
+      "decision": "curate distinct monometallic and simultaneous mixed-feed Rh assays",
+      "identity": "Electronic publication 2025-12-16; collection 2026-02-03, journal volume8 pages961-972. Current XML identifies PMC version .2; issue metadata is not a new experiment or evidence of a formal correction.",
+      "inspected": "Full JATS XML; original Figure 1-6 JPEGs inspected; Tables1-2; complete two-page supplementaryTableS1 PDF parsed and table page rendered. Publisher PDF attempts403; complete evidence available via open EuropePMC archive.",
+      "material": "RhCl3.xH2O stock; 200 micromolar single feed versus 100 micromolar Rh plus 100 micromolar Pd simultaneous feed. No sequential seeding or real waste stream.",
+      "organism": "Geobacter sulfurreducens species 35554; strain accession not stated and not inferred from type strain or cited media.",
+      "controls": "Single-metal cell-free Rh shows no comparable depletion; mixed no-cell system loses about 20% Rh. Methods donor-free control mentioned without Rh-specific outcomes. Figure 1 error bars and replicate count undefined. No viability/killed-cell/enzyme causality established.",
+      "interpretation": "Rh0 phase in monometallic harvested material supported by XRD/SAED, without resolved Rh XPS or complete reduced fraction. Mixed PdRh alloy interpretation integrates XRD/HRTEM/EDS; method-specific composition estimates differ.81/19 XPS percentages are fitted surface proportions.",
+      "quantitation": "Centrifuged-supernatant ICPMS depletion versus isolated metal yield; catalytic 4-NP conversion is separate. No exact mg/kg cells with source dates; no native observations imported."
+    }
+  ],
+  "alternative_leads": [
+    {
+      "doi": "10.3389/fmicb.2019.01276",
+      "pmcid": "PMC6595500",
+      "decision": "context_only in Ru record; separate mechanism deferred",
+      "inspected": "Full JATS XML and methods/speciation tables/text; figure pixels/supplement not acquired in this bounded pass.",
+      "reason": "Escherichia coli MC4100 differs from Bacillus. Bulk EXAFS/XANES allows low metallic Ru contribution despite oxidized Ru dominance; supports preserving organism-specific transfer limits. A second full mechanism needs figure/supplement review."
+    },
+    {
+      "doi": "10.1016/j.hydromet.2013.06.019",
+      "decision": "defer mechanism extension",
+      "inspected": "Publisher abstract and section snippets only",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0304386X13001424",
+      "reason": "Shewanella algae ATCC51181 lead reports mixed 48% Rh(0)/52% Rh(III) by XANES in snippets, cautioning against complete-reduction claims. Full methods/figures not acquired; no measurements imported."
+    },
+    {
+      "url": "https://www.mdpi.com/2076-2607/14/8/1726",
+      "decision": "discovery only",
+      "reason": "Review points to Pseudomonas aeruginosa extracellularRu/Rh and sulfate-reducing consortium leads. Not treated as primary assay evidence; exact cited primary DOI/full methods remain to resolve."
+    }
+  ],
+  "validation": {
+    "named_record_command": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate data/records/ruthenium.yaml data/records/rhodium.yaml",
+    "named_record_result": "Terminal exit 0; Checked 2 record(s);0 failed after histories attached.",
+    "baseline": "Root reported terminal just check: 307 passed, 3 skipped in 57.24 s; 48 records, 58 histories; vendored check: 22 passed. Not independently rerun by this agent.",
+    "independent_review": "Pending independent assigned reviewer; this dossier is curation evidence, not self-review.",
+    "history_command": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate-history --base 9fa187ff5a455f495cfa2635e60c413b6763370d",
+    "history_result": "Terminal exit 0; Checked 63 history record(s); 0 error(s)."
+  },
+  "unresolved_questions": [
+    "Exact Ru phase fractions, fate of residual soluble Ru and matched abiotic/viability controls.",
+    "Reconcile Ru-Ru shell text/table and S6 loading label before more specific structural claims.",
+    "Resolve Geobacter strain, donor-free outcomes, replicate/error-bar definitions and total Rh mass balance.",
+    "Review additional organism mechanisms and real secondary-resource feeds without transferring synthetic assay results."
+  ],
+  "priority_handoff": "Independent review of both final record bytes, then root batch gates and publication. Existing palladium/platinum records unchanged; the new mixed-metal study may support future explicitly scoped amendments."
+}

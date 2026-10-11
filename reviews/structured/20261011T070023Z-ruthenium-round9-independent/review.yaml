@@ -1,0 +1,432 @@
+schema_version: 1.0.0
+review_id: 20261011T070023Z-ruthenium-round9-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of the ruthenium round9 record
+started_at: '2026-10-11T06:54:40Z'
+finished_at: '2026-10-11T07:00:23Z'
+reviewer:
+  identity: Codex /root/cmm9_cs_sr
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: This agent authored only the separate cesium and strontium pair.
+    It did not author or edit the Ru/Rh records, histories or dossiers. Frozen targets
+    were inspected before judgment; primary methods, results, figures and relevant
+    complete supplements were independently read, authorities checked and hashes verified.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The ruthenium element identity, dated criticality and biomass-associated
+  oxidized-Ru deposition claim are supported. The record preserves weak causal controls,
+  nominal/actual loadings and internal spectral/sample-label contradictions. No actionable
+  record defect was identified in this frozen state.
+source:
+  git_revision: 9fa187ff5a455f495cfa2635e60c413b6763370d
+  state: working_tree
+  inputs:
+  - path: data/records/ruthenium.yaml
+    sha256: f9a164e5b56444aa80eec3a76868f3fe45ccdee8f3f25ed29e2c79dc28fc1fb1
+    role: target
+  - path: history/records/ruthenium/2026-10-11T065054Z-codex-52117e.yaml
+    sha256: 36569d5a6e2a38e5af11022d2649670782ac09a1c3eadfc63189ae8c23235537
+    role: context
+  - path: research/ingests/round9-ru-rh-20261011.json
+    sha256: 9e958d60cd523a82694ffeca1b1c4d3c35de73e946f626f4926bb131a1c7b022
+    role: context
+  - path: research/ingests/round9-ru-rh-20261011.md
+    sha256: 89a8bb91d9f2b3e93d19f538886d2f5c08072afe62a23f1f33c28da9896c134e
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+targets:
+- target_id: cmmmech:ruthenium
+  path: data/records/ruthenium.yaml
+  label: Ruthenium
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/ruthenium.yaml
+    role: maintained_record
+scope:
+  description: All scientific and provenance fields of the frozen ruthenium record,
+    with primary assay and authority grounding.
+  selection: Assigned named record; no sampling. Companion metal experiments are context,
+    not additional reviewed targets.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:ruthenium
+checks:
+- check_id: record
+  name: Independent named-record validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/ruthenium.yaml data/records/rhodium.yaml
+  status: passed
+  required: true
+  summary: Reviewer executed; session 88070 terminal exit 0. Named validation log
+    reports 2 records checked, 0 failed.
+  scope_note: Exact frozen Ru/Rh inputs; log /private/tmp/cmm-round9-cs-sr-review/named-validation.log.
+  target_ids:
+  - cmmmech:ruthenium
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: batch
+  name: Parent-run full native batch gate
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  status: passed
+  required: true
+  summary: 'Parent reported session 75849 terminal exit 0. Reviewer independently
+    read the complete log: lint passed; 307 tests passed and 3 skipped in 48.82 seconds;
+    54 records and 64 histories passed.'
+  scope_note: Parent executed the shared six-record batch. Reviewer read /private/tmp/cmm-round9-batch-check.log;
+    this is not claimed as reviewer execution.
+  target_ids:
+  - cmmmech:ruthenium
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: nonempty
+  name: Parent-run nonempty corpus validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: 'Parent reported session 80858 terminal exit 0; reviewer read the separate
+    validation log: 54 records, 0 failed.'
+  scope_note: Parent execution; /private/tmp/cmm-round9-validation.log.
+  target_ids:
+  - cmmmech:ruthenium
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: history
+  name: Parent-run append-only canonical history validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate-history --base 9fa187ff5a455f495cfa2635e60c413b6763370d
+  status: passed
+  required: true
+  summary: 'Parent reported session 80858 terminal exit 0; reviewer read the separate
+    history log: 64 histories, 0 errors.'
+  scope_note: Parent execution; /private/tmp/cmm-round9-history.log. Reviewer independently
+    read this record sidecar and inline event; inspected hashes remain current.
+  target_ids:
+  - cmmmech:ruthenium
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/ruthenium.yaml
+  locator: Entire frozen record; linked sidecar history/records/ruthenium/2026-10-11T065054Z-codex-52117e.yaml;
+    both round9-ru-rh dossiers
+  accessed_at: '2026-10-11T07:00:23Z'
+  support: supports
+  summary: Maintained record, schema, dossier and sidecar hashes were inspected before
+    assessment and rechecked before saving. The reviewer authored the separate Cs/Sr
+    pair, not this record or its dossier.
+  snapshot_sha256: f9a164e5b56444aa80eec3a76868f3fe45ccdee8f3f25ed29e2c79dc28fc1fb1
+- evidence_id: identity
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:30682
+  locator: Official ChEBI identity, formula and net charge
+  accessed_at: '2026-10-11T07:00:23Z'
+  support: supports
+  summary: 'Retained full official HTML independently parsed: CHEBI:30682 denotes
+    ruthenium atom, formula Ru, net charge 0. Live web opens and a direct API retry
+    failed; the curator-acquired official snapshot hash and acquisition receipt were
+    rechecked. No inference from a search snippet.'
+  snapshot_sha256: 9d9e3e9018b025b417e7fee4cd42475e4c7b81f5d8f385fc9392e37dd381934a
+- evidence_id: criticality
+  kind: authority
+  reference: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  locator: Final 2025 commodity table, Ruthenium row, page 50497; notice title, issue
+    date and pagination
+  accessed_at: '2026-10-11T07:00:23Z'
+  support: supports
+  summary: Live GovInfo notice and retained HTML inspected. USGS Final 2025 List of
+    Critical Minerals, United States, 7 November 2025, 90 FR 50494-50497, explicitly
+    lists Ruthenium. The table byproduct column is not itself the criticality classification.
+    Element mapping does not designate every compound or resource.
+  snapshot_sha256: 9f03042f7a020f2b67cae0a51dd386397309704fbde1d83a09e85b7011140276
+- evidence_id: taxon
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1456&mode=Info
+  locator: Official NCBI species node, nomenclature and type-strain information
+  accessed_at: '2026-10-11T07:00:23Z'
+  support: supports
+  summary: 'Independently opened NCBI Taxonomy 1456: Bacillus benzoevorans, species;
+    NCIMB 12555 is a listed type-strain collection identifier. The paper spelling
+    benzeovorans is preserved as source nomenclature, not treated as a different species.'
+- evidence_id: validation
+  kind: validation
+  reference: /private/tmp/cmm-round9-batch-check.log
+  locator: Complete parent batch, nonempty and history logs plus reviewer named-validation
+    log
+  accessed_at: '2026-10-11T07:00:23Z'
+  support: supports
+  summary: 'All four declared commands have actual terminal exit-0 receipts. Parent
+    full gate: 307 passed, 3 skipped, 54 records, 64 histories. Separate nonempty
+    54/0 and history 64/0. Reviewer named validation 2/0. Validation establishes structural
+    validity, not scientific truth.'
+  snapshot_sha256: 4e81f0ab9d4b285b29437aff750ba5418454582376ccecb25f27df3185016d4d
+- evidence_id: search
+  kind: search
+  reference: Bounded web search result sets and local scientific trees
+  locator: Bounded exact-DOI correction/retraction searches, mechanism counterevidence
+    queries, and local hidden/ignored-inclusive deduplication
+  accessed_at: '2026-10-11T07:00:23Z'
+  support: context_only
+  summary: No relevant correction or retraction notice surfaced in the inspected first
+    result sets. Local matching authority/frontier/dossier references were distinguished
+    from the two new maintained element records. This is not an exhaustive literature
+    or retraction audit.
+  search_scope: 'Web first-result sets: exact DOI 10.1038/s41598-019-40312-3 with
+    correction/retraction; exact DOI 10.1039/D5NA00861A with correction/retraction;
+    ruthenium Bacillus benzeovorans abiotic oxide; Geobacter sulfurreducens rhodium
+    donor control cytochrome. Independently read primary context rather than attributing
+    unrelated Geobacter cytochrome studies to Rh. rg --no-ignore --hidden --follow
+    for IDs, ChEBI IDs and DOI strings across data, research, reviews and history;
+    find for relevant symlinks returned none in those trees. Bounded matching search
+    also covered /private/tmp/cmm-round9-ru-rh-raw, /private/tmp/cmm-next-eu and /private/tmp/cmm-expansion-authorities-20261011,
+    including ignored files and extracted text/HTML. No machine-wide scan or full
+    citation graph; binary PDFs interpreted through the retained text/figures, not
+    regex completeness.'
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1038/s41598-019-40312-3
+  locator: Omajali et al. 2019, Scientific Reports 9:4715; full JATS/PDF; Methods;
+    Tables 1-3; visually inspected Figures 1-4
+  accessed_at: '2026-10-11T07:00:23Z'
+  support: supports
+  summary: Independently checked culture and acidic chloride/H2 preparation, nominal
+    versus solution-difference loadings, no-metal microscopy comparison, Ru/Pd localization,
+    and XPS/XANES/EXAFS interpretations. Published 18 March 2019, PMC6423089. Full
+    source and provenance hash match acquisition dossier.
+  snapshot_sha256: 5852c4a0e5228b26b9f9b121469eaba2a982eb1bc0d0b6a84e1da0ac2e26b9e0
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6423089/supplementaryFiles
+  locator: Complete CRC-verified assets archive; 41598_2019_40312_MOESM1_ESM.pdf;
+    full extracted text, visually inspected pages 3-11 (Figures S3-S11)
+  accessed_at: '2026-10-11T07:00:23Z'
+  support: supports
+  summary: Supplement supports the no-metal imaging comparison, Pd/Ru co-localization,
+    absence of a Pd-lattice shift, and surface/bulk spectral context. Figure S6 high-loading
+    label is 20% Ru/5% Pd, distinct from Table 1 nominal 10/10. Figure S8 labels RuCl3/Ru(OH)3.
+    Figures S1-S2 text supplies prior-system/Pd background, not a Ru metabolic control.
+    Complete archive CRC passed; no donor-free, killed-cell or cell-free Ru removal
+    outcomes were found in this bounded article/supplement inspection.
+  snapshot_sha256: f9e61c93adeaf20a4c2be3ffe17aea86564d19851d873de5f6d571c1a464fd0a
+- evidence_id: context
+  kind: primary_source
+  reference: https://doi.org/10.3389/fmicb.2019.01276
+  locator: Gomez-Bolivar et al. 2019; retained full JATS; Methods, XANES results and
+    EXAFS Table 3
+  accessed_at: '2026-10-11T07:00:23Z'
+  support: context_only
+  summary: Independently read E. coli MC4100 preparation and bulk fits. The paper
+    allows 6-10% metallic Ru in its XANES linear-combination interpretation and reports
+    predominantly oxidized material, with distinct loadings and sample chemistry.
+    This supports the record contextual limit against generalizing Bacillus results
+    to every microbial Ru preparation; it does not demonstrate Ru(0) in NCIMB 12555.
+    Context reading did not re-fit spectra or independently audit every E. coli supplementary
+    image.
+  snapshot_sha256: 0b22152fbcf3c315af0b5f633fef58200341f396dc452145772812b4b53e9ac9
+assessments:
+- assessment_id: identity-grounding
+  area: identity
+  topic: Element identity and dated commodity criticality
+  outcome: supported
+  summary: The record denotes the neutral element and retains the exact dated US authority
+    claim, separately from ions, deposited oxides and bimetallic preparations.
+  target_ids:
+  - cmmmech:ruthenium
+  evidence_ids:
+  - record
+  - identity
+  - criticality
+  dimensions:
+  - name: material-form
+    value: element Ru; CHEBI:30682, ruthenium atom
+    definition: Record identity; assay feeds and products are contextual material
+      forms, not synonyms.
+    evidence_ids:
+    - identity
+    - record
+  - name: criticality
+    value: United States; USGS/Department of Interior Final 2025 List; published 7
+      November 2025, 90 FR 50494-50497
+    definition: Named jurisdiction, authority, list and edition; Ruthenium row page
+      50497.
+    evidence_ids:
+    - criticality
+- assessment_id: assay
+  area: evidence
+  topic: Biomass-associated deposition under the reported preparation
+  outcome: supported
+  summary: Ru association with Bacillus biomass is supported; the record assigns neither
+    Ru(0) recovery nor a necessary metabolic pathway.
+  target_ids:
+  - cmmmech:ruthenium
+  evidence_ids:
+  - record
+  - primary
+  - supplement
+  - taxon
+  dimensions:
+  - name: organism
+    value: Bacillus benzoevorans NCIMB 12555; paper spelling B. benzeovorans; NCBITaxon:1456
+      species
+    definition: Paper isolate linked to the authority species and type collection
+      identity.
+    evidence_ids:
+    - taxon
+    - primary
+  - name: biomass-state
+    value: Aerobically grown, harvested and washed biomass; overnight 4 C storage;
+      later acidic exposure, acetone wash and air drying
+    definition: Sustained cell viability during deposition/processing was not demonstrated.
+    evidence_ids:
+    - primary
+  - name: feed
+    value: Synthetic RuCl3.2H2O; Ru-only 2 mM at pH 2; sequential Pd 2 mM then Ru
+      solution 1 mM
+    definition: Reagent-solution assay, not ore or actual secondary-resource processing.
+    evidence_ids:
+    - primary
+  - name: conditions
+    value: 30 C; Ru exposure 30 min then H2 bubbling about 1 h; H2-saturated sealed
+      96 h, 180 rpm
+    definition: Reported preparation conditions; final sequential mixture pH and exact
+      added volumes remain unspecified.
+    evidence_ids:
+    - primary
+  - name: controls
+    value: No-metal imaging comparison; no matched cell-free, killed-cell or H2-free
+      Ru-deposition outcome reported
+    definition: Imaging negative control supports association but cannot isolate metabolism
+      from sorption/hydrolysis/Pd chemistry.
+    evidence_ids:
+    - primary
+    - supplement
+- assessment_id: quantity
+  area: quantity
+  topic: Inferred loadings and incomplete aqueous removal
+  outcome: supported
+  summary: Table 1 nominal/actual distinctions and dry-biomass denominator are preserved.
+    Solution-difference assay estimates are not presented as direct solid analyses
+    or pure-metal yields.
+  target_ids:
+  - cmmmech:ruthenium
+  evidence_ids:
+  - record
+  - primary
+  dimensions:
+  - name: outcome
+    value: 'Nominal 20 wt% Ru: inferred 14.2 wt% Ru; nominal Pd/Ru 10/10: 9.7/6.0
+      wt%; nominal 2.5/2.5: 2.4/2.0 wt%'
+    definition: Table 1 percentages relative to cell dry weight, estimated by residual-solution
+      stannous-chloride colorimetry. Approximate 40% residual-Ru prose is not identical
+      to all table ratios.
+    evidence_ids:
+    - primary
+- assessment_id: phase
+  area: consistency
+  topic: Oxidized-Ru evidence and internal contradictions
+  outcome: supported
+  summary: The record appropriately restricts the phase claim. Surface/bulk valence
+    disagreements, Ru-Ru-shell textual contradiction and high-loading sample-label
+    mismatch remain explicit.
+  target_ids:
+  - cmmmech:ruthenium
+  evidence_ids:
+  - record
+  - primary
+  - supplement
+  - context
+  details: Figure 2 supports authors' RuO2-like lattice assignment. Figure 3/Table
+    2 text assigns Ru(III)/Ru(VI), while bulk XANES assigns Ru(III)/Ru(IV), and labels
+    include RuCl3/Ru(OH)3. Air exposure prevents assigning a unique original oxidation
+    pathway. EXAFS Table 3 and paragraph 25 include a Ru-Ru shell; paragraph 26 then
+    asserts its absence. The record does not repeat exclusively atomically dispersed
+    Ru or claim a Pd-Ru metallic alloy. E. coli context has a different preparation
+    and is not a replicate.
+- assessment_id: scope
+  area: scope
+  topic: Laboratory deposition versus downstream organic catalysis
+  outcome: supported
+  summary: Laboratory synthetic-feed material preparation is kept distinct from later
+    dried-catalyst 5-HMF hydrogenation and from industrial deployment.
+  target_ids:
+  - cmmmech:ruthenium
+  evidence_ids:
+  - record
+  - primary
+  dimensions:
+  - name: deployment
+    value: Laboratory reagent solution and material characterization only
+    definition: The organic-catalyst experiment at 260 C, 50 bar H2 and 2 h is not
+      microbial Ru extraction or Ru recovery yield.
+    evidence_ids:
+    - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Actual CREATE history and reproducible reviewed state
+  outcome: supported
+  summary: The actual codex/GPT-6/codex CREATE sidecar, issue39 link, later inline
+    event and maintained ownership agree. The separate scientific review does not
+    append or backdate curation history. Structural gates passed on the frozen bytes.
+  target_ids:
+  - cmmmech:ruthenium
+  evidence_ids:
+  - record
+  - validation
+  dimensions:
+  - name: reviewed-state
+    value: Working tree against trusted base 9fa187ff5a455f495cfa2635e60c413b6763370d
+    definition: Input SHA-256 values captured before judgment; no claim that uncommitted
+      bytes were already in the base.
+    evidence_ids:
+    - record
+  - name: history
+    value: history/records/ruthenium/2026-10-11T065054Z-codex-52117e.yaml
+    definition: Canonical CREATE sidecar with actual actor and UTC event; inline curation
+      event is distinct.
+    evidence_ids:
+    - record
+findings: []
+actions: []
+limitations:
+- No spectral refitting, raw analytical calibration audit or full Ru mass balance;
+  evidence supports the authors' bounded phase interpretation, not an independently
+  proven unique Ru phase.
+- Cell-free/killed-cell/H2-free Ru deposition outcomes, replication count, sustained
+  viability and a necessary microbial enzyme remain unestablished in the inspected
+  article and complete supplement.
+- ChEBI live fetch/API retries failed. Identity was independently verified from the
+  complete official retained HTML with matching acquisition hash; this is not claimed
+  as successful live resolution.
+- E. coli context was checked against full-text methods and bulk spectral results/Table
+  3; its entire supplementary-image corpus was not re-reviewed and no new E. coli
+  mechanism is admitted.
+- Correction/retraction and conflicting-evidence searches were bounded first-result
+  sets; no complete citation-network, proprietary database or author-contact audit.
+  A clean result applies only to this frozen target state.
+notes:
+- No record, history or dossier changes were made by this independent reviewer. No
+  corrective issue is fabricated where no actionable defect was established.
+- Twelve retained acquisition hashes matched; both complete article asset archives
+  passed ZIP CRC checks. Raw literature remains outside Git; source access failures
+  are distinguished from successfully inspected retained artifacts.
+- Parent executed the shared batch/history/nonempty gates. Reviewer read their complete
+  logs and received terminal exit codes before saving; named Ru/Rh validation was
+  reviewer-executed.

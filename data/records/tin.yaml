@@ -1,0 +1,144 @@
+id: cmmmech:tin
+name: Tin
+material_kind: element
+description: >-
+  The element Sn, distinct from organotin compounds, dissolved inorganic tin,
+  tin minerals, indium tin oxide and tin-bearing waste resources. The United
+  States 2025 list's Tin designation is mapped to this element; it does not
+  automatically designate tributyltin or contaminated sediment as critical.
+  The curated microbial experiment concerns organotin ligand transformation,
+  not destruction of the tin element or production of metallic tin.
+identifiers:
+  - id: CHEBI:27007
+    label: tin atom
+sources:
+  - id: chebi_tin
+    title: 'ChEBI:27007 - tin atom; formula Sn and net charge 0'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:27007
+    accessed_on: '2026-10-11'
+  - id: us_2025
+    title: >-
+      US Department of the Interior, Geological Survey. Final 2025 List of
+      Critical Minerals, 7 November 2025, Federal Register 90:50494-50497,
+      document 2025-19813; Tin row on page 50497.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: finnegan_2018
+    title: >-
+      Finnegan et al. (2018). Microbes a Tool for the Remediation of Organotin
+      Pollution Determined by Static Headspace Gas Chromatography-Mass
+      Spectrometry. Molecules 23:627. DOI 10.3390/molecules23030627;
+      PMC6017036. Sections 2.1, 2.3-2.4, 3.1-3.6 and Figures 3-4.
+    url: https://doi.org/10.3390/molecules23030627
+    accessed_on: '2026-10-11'
+  - id: genbank_c22
+    title: >-
+      GenBank KX881904.1 - Bacterium strain C22 16S ribosomal RNA gene,
+      partial sequence; source organism is bacterium, strain qualifier C22.
+      This sequence record does not resolve a species identity.
+    url: https://www.ncbi.nlm.nih.gov/nuccore/KX881904.1
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States
+    list_name: Department of the Interior Final List of Critical Minerals
+    edition: '2025 final list, published 7 November 2025'
+    classification: critical
+    source_ref: us_2025
+mechanisms:
+  - id: c22_tributyltin_transformation
+    name: C22-inoculated sediment microcosm organotin debutylation
+    process: other
+    description: >-
+      Sediment microcosms inoculated with living bacterial isolate C22 showed
+      declining tributyltin (TBT) and appearance of dibutyltin (DBT) and
+      monobutyltin (MBT) analytical signals. This supports culture-associated
+      loss of butyl groups from organotin, with partial transformation and
+      residual TBT. The experiment does not measure a change in tin oxidation
+      state, complete mineralization, isolated tin recovery or detoxification
+      in a biological toxicity assay.
+    context: >-
+      C22 was isolated from Cork Harbour sediment; species identity is
+      unresolved here. Laboratory Courtown Beach sediment was autoclaved
+      at 121 degrees C for 40 min, sieved to 1 mm, spiked with tributyltin
+      chloride in methanol at a nominal 100 ng/g, air-dried for one week
+      and mixed twice daily. Each sealed microcosm held 200 g sediment and
+      a 2 cm water column; the inoculated arm received 10 mL overnight
+      culture in nutrient broth. Triplicate microcosms, including an
+      uninoculated control condition, were incubated in darkness at room
+      temperature. Exact temperature, culture cell density, sediment pH,
+      salinity and water composition were not reported. Samples were taken
+      on days 0, 30, 60, 90 and 120. Methods describe taking 5 g from each replicate to a 15 g total,
+      followed by 1 g analytical subsamples. This appears to pool the
+      biological replicates; the repeated analytical assays therefore do
+      not establish independent biological replication of the reported means.
+    microbial: true
+    evidence:
+      - source_ref: finnegan_2018
+        supports: support
+        explanation: >-
+          Figure 3's C22 panel shows a sustained lower TBT signal than the
+          nearly stable uninoculated control, with DBT and MBT appearing.
+          Figure 4 independently displays the C22 time-course chromatograms.
+          Sections 2.1 and 3.4-3.5 describe retention-time and selected-ion
+          identification after sodium-tetraethylborate derivatization,
+          followed by static-headspace GC-MS. The ethylated structures
+          labelled in Figure 4 are analytical derivatives, not additional
+          environmental products. No gene or enzyme was tested, and no
+          viable-cell or sterility time course was provided.
+      - source_ref: finnegan_2018
+        supports: partial
+        explanation: >-
+          Section 2.4 reports day-120 C22 values of 52.73, 28.5 and
+          13.8 ng/g wet sediment for TBT, DBT and MBT, respectively.
+          These are the authors' compound-specific results, not elemental
+          tin mass balance or metal yield. Section 2.3.1 reports linear
+          calibration ranges only up to 50 ng/g. Separately, Section 2.3.2
+          reports sediment spike-recovery accuracy testing over 5-60 ng/g wet
+          weight (n=3), with 94-103% recovery and relative standard deviations
+          below 10% across the tested organotins. This is analytical recovery,
+          not microbial extraction yield. Dilution or extension of the linear
+          calibration above 50 ng/g is not described; the recovery tests do
+          not extend to the nominal 100 ng/g starting spike. Exact TBT
+          percentages therefore remain quantitatively uncertain. Figure 3
+          also shows C22 MBT
+          declining from day 90 to day 120, without measuring its further
+          products. Complete degradation cannot be inferred.
+      - source_ref: finnegan_2018
+        supports: partial
+        explanation: >-
+          The uninoculated comparator is useful, but Methods do not specify
+          a matched sterile nutrient-broth addition or a killed-cell arm.
+          Sediment adsorption, extraction efficiency, inoculum chemistry
+          and biological transformation are not completely separated.
+          Method validation uses spiked sediment; certified reference
+          material validation is proposed rather than performed. The
+          source's general removal and toxicity language does not establish
+          a purified product, biological safety endpoint or field deployment.
+      - source_ref: genbank_c22
+        supports: context_only
+        explanation: >-
+          The authority record explicitly links KX881904.1 to strain C22
+          but identifies the organism only as bacterium. The paper's
+          Enterobacteriales wording does not establish a genus or species.
+          No species-level or strain-specific taxonomy identifier is
+          asserted, and the sequence does not itself demonstrate activity.
+curation_history:
+  - timestamp: '2026-10-11T06:52:09Z'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Created tin identity and dated US criticality with C22 organotin
+      transformation evidence, retaining unresolved taxonomy, analytical
+      calibration and control limits, and separating debutylation from
+      tin redox, mineralization, detoxification and recovered-metal yield.
+  - timestamp: '2026-10-11T07:01:08.100051Z'
+    curator: Codex (GPT-6; Codex)
+    action: edit_record
+    summary: >-
+      Addressed issue 40 by separating linear calibration through 50 ng/g
+      from sediment spike-recovery accuracy at 5-60 ng/g; preserved narrower
+      dilution/calibration-extension uncertainty and analytical-versus-biological
+      recovery distinctions after rereading primary Sections 2.3.1-2.3.2.
+history_refs:
+  - history/records/tin/2026-10-11T065147Z-codex-9c1b8e.yaml
+  - history/records/tin/2026-10-11T070055Z-codex-fdb5e2.yaml

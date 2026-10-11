@@ -1,0 +1,27 @@
+history_version: 1
+target:
+  kind: record
+  slug: tin
+  path: data/records/tin.yaml
+session:
+  id: 2026-10-11T070055Z-codex-fdb5e2
+  timestamp: '2026-10-11T07:00:55Z'
+  actors:
+  - name: codex
+    type: ai_agent
+    model: GPT-6
+    agent_tool: codex
+events:
+- type: EDIT
+  outcome: changed
+  summary: Distinguished tin calibration linearity from spike-recovery accuracy
+  details: Addressed issue 40 and immutable review finding tin-calibration-recovery-validation
+    by rereading Finnegan et al. 2018 sections 2.3.1 and 2.3.2. Corrected the tin record and
+    shared dossier to acknowledge 5-60 ng/g spike-recovery accuracy, 94-103 percent recovery
+    and RSD below 10 percent while preserving the narrower 50 ng/g linear-calibration ceiling,
+    unspecified dilution or extension and nominal 100 ng/g starting-spike limitation. Analytical
+    recovery is not microbial extraction yield. Preserved CREATE history, silicon bytes and
+    initial reviews; affected validation and independent successor review follow.
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/40
