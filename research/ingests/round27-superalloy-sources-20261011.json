@@ -1,0 +1,168 @@
+{
+  "created_at": "2026-10-11T16:09:54.669745+00:00",
+  "researcher": "Codex (GPT-6; round27_superalloy)",
+  "base": "3f1350b24b4f6248ed2e17caade936c15af9be93",
+  "branch": "curate/cmm-expansion-round27-20261011",
+  "decision": "defer",
+  "candidate_doi": "10.3390/pr13072157",
+  "report_path": "research/sources/round27-superalloy/20261011T160954Z-source-investigation.md",
+  "prior_handoff": "research/ingests/round26-superalloy-sources-20261011.json",
+  "queries": [
+    {
+      "provider": "web search",
+      "query": "\"pr13072157\" \"pdf\"",
+      "date": "2026-10-11",
+      "coverage": "First returned results; no pagination/date filter except explicit query syntax."
+    },
+    {
+      "provider": "web search",
+      "query": "\"Strategies for Nickel and Cobalt Mobilisation\" -site:mdpi.com -site:researchgate.net -site:pureportal.coventry.ac.uk",
+      "date": "2026-10-11",
+      "coverage": "First returned results; no pagination/date filter except explicit query syntax."
+    },
+    {
+      "provider": "web search",
+      "query": "\"pr13072157\" correction erratum retraction supplementary",
+      "date": "2026-10-11",
+      "coverage": "First returned results; no pagination/date filter except explicit query syntax."
+    },
+    {
+      "provider": "web search",
+      "query": "\"processes-13-02157\" \"xml\"",
+      "date": "2026-10-11",
+      "coverage": "First returned results; no pagination/date filter except explicit query syntax."
+    },
+    {
+      "provider": "web search",
+      "query": "\"superalloy residue\" bioleaching \"dataset\"",
+      "date": "2026-10-11",
+      "coverage": "First returned results; no pagination/date filter except explicit query syntax."
+    },
+    {
+      "provider": "web search",
+      "query": "bioleaching \"tungsten carbide\" sludge bacteria",
+      "date": "2026-10-11",
+      "coverage": "First returned results; no pagination/date filter except explicit query syntax."
+    },
+    {
+      "provider": "web search",
+      "query": "bioleaching \"superalloy\" filetype:pdf",
+      "date": "2026-10-11",
+      "coverage": "First returned results; no pagination/date filter except explicit query syntax."
+    },
+    {
+      "provider": "web search",
+      "query": "\"Bioleaching\" \"grinding sludge\"",
+      "date": "2026-10-11",
+      "coverage": "First returned results; no pagination/date filter except explicit query syntax."
+    }
+  ],
+  "acquisition": [
+    {
+      "url": "https://pureportal.coventry.ac.uk/files/116283497/Constantin2025VoR.pdf",
+      "requested_at": "2026-10-11T16:08:27.340474+00:00",
+      "path": "/private/tmp/cmm-round27-superalloy-raw/coventry.pdf",
+      "execution": "network-enabled",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.mdpi.com/2227-9717/13/7/2157/xml",
+      "requested_at": "2026-10-11T16:08:27.341646+00:00",
+      "path": "/private/tmp/cmm-round27-superalloy-raw/mdpi.xml",
+      "execution": "network-enabled",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.3390/pr13072157",
+      "requested_at": "2026-10-11T16:08:27.342079+00:00",
+      "path": "/private/tmp/cmm-round27-superalloy-raw/crossref.json",
+      "execution": "network-enabled",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.3390/pr13072157",
+      "content_type": "application/json",
+      "bytes": 15905,
+      "sha256": "3fdbdb41b910c3d98d85051230ed0a17aff37915bb73f3b730782ceba7e7c992",
+      "pdf_magic": false
+    },
+    {
+      "url": "https://mdpi-res.com/d_attachment/processes/processes-13-02157/article_deploy/processes-13-02157-g003.png",
+      "requested_at": "2026-10-11T16:08:27.342437+00:00",
+      "path": "/private/tmp/cmm-round27-superalloy-raw/mdpi-fig3.png",
+      "execution": "network-enabled",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "deduplication": {
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-n",
+      "-i",
+      "pr13072157|super.?alloy|\\b30167\\b|\\b30168\\b|\\b32083\\b|nickel.*alloy.*residue|cobalt.*alloy.*residue",
+      "data/records",
+      "research",
+      "reviews",
+      "history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/private/tmp/cmm-round25-button-raw",
+      "/private/tmp/cmm-round25-frontier-raw",
+      "/private/tmp/cmm-round25-bf-dust-raw",
+      "/private/tmp/cmm-round26-superalloy-raw"
+    ],
+    "status": 0,
+    "stderr": "",
+    "exclusions": "Unrelated home/temp trees and downloads. No machine-wide absence claim."
+  },
+  "accepted_records": [],
+  "new_lead": {
+    "title": "Bacterial leaching of waste materials at the Tatra joint stock company, Kop\u0159ivnice",
+    "authors": [
+      "P. Fe\u010dko",
+      "R. Ku\u010derov\u00e1"
+    ],
+    "journal": "Mineralia Slovaca",
+    "year": 1996,
+    "issue": "5",
+    "start_page": 388,
+    "url": "https://www.geology.sk/mineralia-slovaca-5-1996/",
+    "acquisition": "Publisher-index search result only; direct page timed out. Not accepted evidence.",
+    "scope": "Grinding sludge, coal cinder and slag; Thiobacillus ferrooxidans according to publisher keywords. Exact substrates/controls/outcomes unverified."
+  },
+  "limits": [
+    "No complete original primary PDF/figure pixels acquired.",
+    "Prior round26 partial-primary method findings are inherited handoff, not freshly full-text verified.",
+    "Original covariance, acid-matched controls, feed-origin mapping, and digestion denominator remain unresolved.",
+    "No new record or history created."
+  ],
+  "raw_manifest": [
+    {
+      "path": "/private/tmp/cmm-round27-superalloy-raw/acquisition-network.json",
+      "bytes": 1382,
+      "sha256": "4de82a2354fe4e42a3f980eca55e860956ce722e2321c99abef60aaa0abb7317"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-superalloy-raw/acquisition.json",
+      "bytes": 1205,
+      "sha256": "f462de59260c66bfb82bbb34c50bf7b55666577646a842c47e9cd8dfdc91116b"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-superalloy-raw/crossref.json",
+      "bytes": 15905,
+      "sha256": "3fdbdb41b910c3d98d85051230ed0a17aff37915bb73f3b730782ceba7e7c992"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-superalloy-raw/dedup-receipt.json",
+      "bytes": 846,
+      "sha256": "040b2d46313b67d6065dc6be0228e6c5bbbaa23b52fa88f3ed092655453adf93"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-superalloy-raw/dedup.txt",
+      "bytes": 90349,
+      "sha256": "6ef59e63f79356b2bd431ebb4e7692b50f37452ced2f09c91a9712505caf6815"
+    }
+  ]
+}

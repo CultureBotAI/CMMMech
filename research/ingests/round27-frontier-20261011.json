@@ -1,0 +1,181 @@
+{
+  "recorded_at": "2026-10-11T16:26:53.910370+00:00",
+  "trusted_base": "3f1350b24b4f6248ed2e17caade936c15af9be93",
+  "worktree": "/private/tmp/CMMMech-expansion-round27-20261011",
+  "branch": "curate/cmm-expansion-round27-20261011",
+  "records": [
+    {
+      "id": "cmmmech:basic-oxygen-furnace-steelmaking-dust",
+      "name": "Basic oxygen furnace steelmaking dust",
+      "path": "data/records/basic-oxygen-furnace-steelmaking-dust.yaml",
+      "sha256": "79c2f6499166f317766618a25684e1f639499e919fbcfc291c1c0f27b92b702f",
+      "material_kind": "secondary_resource",
+      "change": "new",
+      "history_refs": [
+        "history/records/basic-oxygen-furnace-steelmaking-dust/2026-10-11T161104Z-codex-bb3a9d.yaml"
+      ],
+      "reviews": [
+        {
+          "yaml": "reviews/structured/20261011T162622Z-basic-oxygen-furnace-steelmaking-dust-round27-independent/review.yaml",
+          "markdown": "reviews/structured/20261011T162622Z-basic-oxygen-furnace-steelmaking-dust-round27-independent/review.md",
+          "review_id": "20261011T162622Z-basic-oxygen-furnace-steelmaking-dust-round27-independent",
+          "sha256": "5b050059b1748c71aefb1934371ab2b217120188726656da09376c360f55e4c0",
+          "verdict": "pass_with_limitations"
+        }
+      ]
+    },
+    {
+      "id": "cmmmech:basic-oxygen-furnace-steel-slag",
+      "name": "Basic-oxygen-furnace steel slag",
+      "path": "data/records/basic-oxygen-furnace-steel-slag.yaml",
+      "sha256": "88e0d8b3c9ce06a1d70cf1ab5a34059259c28eac1904cf9589a9dd9364575ea4",
+      "material_kind": "secondary_resource",
+      "change": "extension",
+      "history_refs": [
+        "history/records/basic-oxygen-furnace-steel-slag/2026-10-11T153415Z-codex-f742c3.yaml",
+        "history/records/basic-oxygen-furnace-steel-slag/2026-10-11T161312Z-codex-27b6e0.yaml"
+      ],
+      "reviews": [
+        {
+          "yaml": "reviews/structured/20261011T162604Z-basic-oxygen-furnace-steel-slag-round27-independent/review.yaml",
+          "markdown": "reviews/structured/20261011T162604Z-basic-oxygen-furnace-steel-slag-round27-independent/review.md",
+          "review_id": "20261011T162604Z-basic-oxygen-furnace-steel-slag-round27-independent",
+          "sha256": "35615fb3520ed15bfc5e1ea9dd123560ebcc685d3227bdc2d3df990b72257e7a",
+          "verdict": "pass_with_limitations"
+        }
+      ]
+    },
+    {
+      "id": "cmmmech:electroformed-copper-silver-manufacturing-scrap",
+      "name": "Electroformed copper-silver manufacturing scrap",
+      "path": "data/records/electroformed-copper-silver-manufacturing-scrap.yaml",
+      "sha256": "cd4c7e284b4ad47079d0c609db007795f1aeeb28dcdf7cf359d2a32b52b1ea62",
+      "material_kind": "secondary_resource",
+      "change": "new",
+      "history_refs": [
+        "history/records/electroformed-copper-silver-manufacturing-scrap/2026-10-11T161330Z-codex-865469.yaml",
+        "history/records/electroformed-copper-silver-manufacturing-scrap/2026-10-11T162139Z-codex-98721d.yaml"
+      ],
+      "reviews": [
+        {
+          "yaml": "reviews/structured/20261011T162619Z-electroformed-copper-silver-manufacturing-scrap-round27-independent-resolution/review.yaml",
+          "markdown": "reviews/structured/20261011T162619Z-electroformed-copper-silver-manufacturing-scrap-round27-independent-resolution/review.md",
+          "review_id": "20261011T162619Z-electroformed-copper-silver-manufacturing-scrap-round27-independent-resolution",
+          "sha256": "b38941677cd33a885814dadc873a9665d44bbe99936545b982920f945e17e4be",
+          "verdict": "pass_with_limitations"
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "started_at": "2026-10-11T16:22:40.093847+00:00",
+    "base": "3f1350b24b4f6248ed2e17caade936c15af9be93",
+    "records": {
+      "data/records/basic-oxygen-furnace-steelmaking-dust.yaml": "79c2f6499166f317766618a25684e1f639499e919fbcfc291c1c0f27b92b702f",
+      "data/records/basic-oxygen-furnace-steel-slag.yaml": "88e0d8b3c9ce06a1d70cf1ab5a34059259c28eac1904cf9589a9dd9364575ea4",
+      "data/records/electroformed-copper-silver-manufacturing-scrap.yaml": "cd4c7e284b4ad47079d0c609db007795f1aeeb28dcdf7cf359d2a32b52b1ea62"
+    },
+    "commands": [
+      {
+        "command": [
+          "just",
+          "check"
+        ],
+        "log": "/private/tmp/cmm-round27-final-batch.log",
+        "exit_code": 0,
+        "started_at": "2026-10-11T16:22:40.095342+00:00",
+        "finished_at": "2026-10-11T16:25:11.514659+00:00",
+        "sha256": "b3fa9df851fccafcdfbf10b779dbd696dc6b6d2f854749274eb4278eebde0c87"
+      },
+      {
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate",
+          "--require-records"
+        ],
+        "log": "/private/tmp/cmm-round27-final-nonempty.log",
+        "exit_code": 0,
+        "started_at": "2026-10-11T16:25:11.514942+00:00",
+        "finished_at": "2026-10-11T16:25:16.723981+00:00",
+        "sha256": "d19c2a1730391ae1c8c5514c6c913de943734bcd4ae158c6d7896b44785ab647"
+      },
+      {
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate-history",
+          "--base",
+          "3f1350b24b4f6248ed2e17caade936c15af9be93"
+        ],
+        "log": "/private/tmp/cmm-round27-final-history.log",
+        "exit_code": 0,
+        "started_at": "2026-10-11T16:25:16.724348+00:00",
+        "finished_at": "2026-10-11T16:25:20.104585+00:00",
+        "sha256": "36bf9bc9a48eef8b31f754370c7605b2632dfdacc4d6847751f59d3c1971ce00"
+      }
+    ],
+    "finished_at": "2026-10-11T16:25:20.104803+00:00",
+    "unchanged_records": true,
+    "passed": true
+  },
+  "structured_review_gate": {
+    "recorded_at": "2026-10-11T16:28:14.513638+00:00",
+    "command": "just review-check --base 3f1350b24b4f6248ed2e17caade936c15af9be93 --require-reviews",
+    "exit_code": 0,
+    "log": "/private/tmp/cmm-round27-review-check.log",
+    "sha256": "f4edce7edb514d4b6dd30f412d7e32da744878ea379a698d393c8e9648111c31",
+    "reviews": 199
+  },
+  "coverage": {
+    "record_count": 171,
+    "history_count": 195,
+    "structured_review_count": 199,
+    "review_base_count": 28,
+    "covered_records": 171,
+    "passed": true,
+    "receipt": "/private/tmp/cmm-round27-local-coverage.json",
+    "sha256": "625b223b7182daaa936f33dce648a7128baf84ae0d2aab9fdeb928c45c74c3ca"
+  },
+  "priorities": [
+    {
+      "rank": 1,
+      "candidate": "Industrial goethite byproduct",
+      "doi": "10.1016/j.chemosphere.2023.140244",
+      "decision": "deferred; main paper, process identity and controls incomplete"
+    },
+    {
+      "rank": 2,
+      "candidate": "EAF steel slag",
+      "doi": "10.1016/j.chemosphere.2014.09.089",
+      "decision": "deferred; original figures unavailable"
+    },
+    {
+      "rank": 3,
+      "candidate": "Iron-manganese furnace dust and aluminium-anodizing sludge",
+      "doi": "10.1016/S0956-053X(01)00052-6",
+      "decision": "deferred; distinct abstract identities, full methods unavailable"
+    },
+    {
+      "rank": 4,
+      "candidate": "Ni-based superalloy residue powders",
+      "doi": "10.3390/pr13072157",
+      "decision": "deferred; original figures and assay conflicts unresolved"
+    },
+    {
+      "rank": 5,
+      "candidate": "Beverage cans",
+      "doi": "10.1016/j.wasman.2020.11.012",
+      "decision": "deferred; full methods unavailable"
+    }
+  ],
+  "exhaustion_established": false,
+  "unchanged_prior_scientific_files": 1158,
+  "changed_prior_scientific_files": [
+    "data/records/basic-oxygen-furnace-steel-slag.yaml"
+  ]
+}

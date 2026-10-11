@@ -1,0 +1,451 @@
+{
+  "investigated_at": "2026-10-11T16:15:07.492579Z",
+  "researcher": {
+    "actor": "codex",
+    "model": "GPT-6"
+  },
+  "base": "3f1350b24b4f6248ed2e17caade936c15af9be93",
+  "worktree": "/private/tmp/CMMMech-expansion-round27-20261011",
+  "branch": "curate/cmm-expansion-round27-20261011",
+  "search": {
+    "queries": [
+      "\"10.1016/j.wasman.2020.11.012\" pdf",
+      "\"Kremser\" \"beverage cans\" thesis",
+      "\"A new bioleaching strategy\" filetype:pdf",
+      "\"Klemens Kremser\" thesis recycling",
+      "\"A new bioleaching strategy\" repository",
+      "\"A new bioleaching strategy\" \"Supplementary\"",
+      "\"A new bioleaching strategy\" \"unige\"",
+      "\"beverage cans\" \"bioleaching\" \"pdf\" -site:researchgate.net -site:sciencedirect.com -site:mdpi.com -site:semanticscholar.org -site:scispace.com",
+      "\"10.3390/su151914068\" pdf",
+      "\"A Bioleaching Process for Sustainable Recycling\" full",
+      "\"su151914068\" correction OR retraction OR corrigendum",
+      "\"sustainability-15-14068-s001\"",
+      "\"14068\" \"Figure S4\" bioleaching",
+      "\"Acidithiobacillus\" \"CF3\" \"ferruginosus\"",
+      "\"electroformed\" \"bioleaching\" \"control\"",
+      "\"10.3390/su151914068\" correction retraction corrigendum"
+    ],
+    "provider": "available web search; public publisher/repository and NCBI HTTP routes",
+    "pagination": "first returned result pages only; no exhaustive citation traversal",
+    "hidden_and_ignored_included": true,
+    "local_scope": [
+      "current records/history/research/reviews",
+      "original checkout records/history/research/reviews",
+      "/private/tmp/cmm-round26-packaging-raw"
+    ],
+    "exclusions": "other worktrees and unrelated home/temp downloads",
+    "hit_path_receipt": "/private/tmp/cmm-round27-packaging-dedup-paths.txt"
+  },
+  "candidates": [
+    {
+      "doi": "10.1016/j.wasman.2020.11.012",
+      "decision": "defer_full_primary_access",
+      "evidence": "prior abstract and dossier; current closed Genoa repository status and metadata-only Elsevier API",
+      "missing": [
+        "full methods",
+        "controls",
+        "figures",
+        "supplement"
+      ]
+    },
+    {
+      "doi": "10.3390/su151914068",
+      "decision": "curated_independently_reviewed_with_limitations",
+      "record": "data/records/electroformed-copper-silver-manufacturing-scrap.yaml",
+      "record_sha256": "cd4c7e284b4ad47079d0c609db007795f1aeeb28dcdf7cf359d2a32b52b1ea62",
+      "history": "history/records/electroformed-copper-silver-manufacturing-scrap/2026-10-11T161330Z-codex-865469.yaml",
+      "history_sha256": "94898c2aca03f9e368c1b1c75a9ea146d34fa4f397c6d34cda5aa6c62243084b",
+      "main_evidence": "complete published PDF text, Table1, main figures1-8 and equations inspected",
+      "missing": "Supplementary Figures S1-S4 not acquired or visually inspected; captions only",
+      "license": "CC BY4.0 main published article; no separate supplement terms inspected",
+      "boundaries": [
+        "source nomenclature and number/condition conflicts retained",
+        "no independent biological replication or matched reactor/ferric control asserted",
+        "6-19% copper loss before electrowinning retained",
+        "local EDS not bulk purity or whole-feed product yield",
+        "laboratory demonstration only"
+      ],
+      "initial_record_sha256": "5f2c0602ef2d7d079d467e130cbc8c43e6b38a882b2071c6a69ac4306ac2c239",
+      "edit_history": "history/records/electroformed-copper-silver-manufacturing-scrap/2026-10-11T162139Z-codex-98721d.yaml",
+      "edit_history_sha256": "e5c93ba48d4e7a110cb5801083eeee5fc37c7462025379dd11301754bb16725f"
+    }
+  ],
+  "acquisition_attempts": [
+    {
+      "name": "electroform.html",
+      "requested_url": "https://www.mdpi.com/2071-1050/15/19/14068",
+      "acquired_at": "2026-10-11T16:08:41.757616+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "name": "electroform.pdf",
+      "requested_url": "https://mdpi-res.com/d_attachment/sustainability/sustainability-15-14068/article_deploy/sustainability-15-14068.pdf",
+      "acquired_at": "2026-10-11T16:08:41.797352+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "name": "electroform.xml",
+      "requested_url": "https://www.mdpi.com/2071-1050/15/19/14068/xml",
+      "acquired_at": "2026-10-11T16:08:41.798571+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "name": "cans-genoa.html",
+      "requested_url": "https://iris.unige.it/handle/11567/1062365",
+      "acquired_at": "2026-10-11T16:08:41.799592+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "name": "cans-api.xml",
+      "requested_url": "https://api.elsevier.com/content/article/pii/S0956053X20306280?httpAccept=text/xml",
+      "acquired_at": "2026-10-11T16:08:41.800738+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "name": "electroform-coventry.pdf",
+      "requested_url": "https://pureportal.coventry.ac.uk/files/78142199/Binder4.pdf",
+      "acquired_at": "2026-10-11T16:09:16.592002+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "electroform.xml",
+      "requested_url": "https://www.mdpi.com/2071-1050/15/19/14068/xml",
+      "acquired_at": "2026-10-11T16:09:16.758567+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "electroform.html",
+      "requested_url": "https://www.mdpi.com/2071-1050/15/19/14068",
+      "acquired_at": "2026-10-11T16:09:16.838845+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "electroform.pdf",
+      "requested_url": "https://mdpi-res.com/d_attachment/sustainability/sustainability-15-14068/article_deploy/sustainability-15-14068.pdf",
+      "acquired_at": "2026-10-11T16:09:16.902208+00:00",
+      "status": 200,
+      "final_url": "https://mdpi-res.com/d_attachment/sustainability/sustainability-15-14068/article_deploy/sustainability-15-14068.pdf",
+      "content_type": "application/pdf",
+      "bytes": 10875623,
+      "sha256": "26ad9598cd228c7b83dda78d77452af0a77610c5559ffe4b570ff01043085264",
+      "pdf_magic": true
+    },
+    {
+      "name": "cans-genoa.html",
+      "requested_url": "https://unige.iris.cineca.it/handle/11567/1062365",
+      "acquired_at": "2026-10-11T16:09:17.430811+00:00",
+      "status": 200,
+      "final_url": "https://unige.iris.cineca.it/handle/11567/1062365",
+      "content_type": "text/html;charset=utf-8",
+      "bytes": 49262,
+      "sha256": "2eebf128e4eb7aec7f96a0f5ed66673b3f8f9159e538fd67b11921578c3ff5e1",
+      "pdf_magic": false
+    },
+    {
+      "name": "cans-api.xml",
+      "requested_url": "https://api.elsevier.com/content/article/pii/S0956053X20306280?httpAccept=text/xml",
+      "acquired_at": "2026-10-11T16:09:18.520059+00:00",
+      "status": 200,
+      "final_url": "https://api.elsevier.com/content/article/pii/S0956053X20306280?httpAccept=text/xml",
+      "content_type": "text/xml;charset=UTF-8",
+      "bytes": 1843,
+      "sha256": "7a77255829652bd3feb6c2d4dac11a64e87d9c574a513459f83c4fed9f368d9a",
+      "pdf_magic": false
+    },
+    {
+      "name": "electroform-s1.pdf",
+      "url": "https://mdpi-res.com/d_attachment/sustainability/sustainability-15-14068/article_deploy/sustainability-15-14068-s001.pdf",
+      "acquired_at": "2026-10-11T16:10:34.304830+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "electroform-s1.zip",
+      "url": "https://mdpi-res.com/d_attachment/sustainability/sustainability-15-14068/article_deploy/sustainability-15-14068-s001.zip",
+      "acquired_at": "2026-10-11T16:10:34.385619+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "electroform-crossref.json",
+      "url": "https://api.crossref.org/works/10.3390/su151914068",
+      "acquired_at": "2026-10-11T16:10:34.439512+00:00",
+      "status": 200,
+      "bytes": 28431,
+      "sha256": "dad8515231308cc261af11a6d53113c573d9585219ee440ab237e6b4d3ffb8be",
+      "content_type": "application/json"
+    },
+    {
+      "name": "electroform-s1.docx",
+      "url": "https://mdpi-res.com/d_attachment/sustainability/sustainability-15-14068/article_deploy/sustainability-15-14068-s001.docx",
+      "acquired_at": "2026-10-11T16:11:10.463502+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "electroform-s1-page.html",
+      "url": "https://www.mdpi.com/article/10.3390/su151914068/s1",
+      "acquired_at": "2026-10-11T16:11:10.840961+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "cf3-taxonomy.html",
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3063951&mode=Info",
+      "acquired_at": "2026-10-11T16:11:10.913586+00:00",
+      "status": 200,
+      "bytes": 25056,
+      "sha256": "32e29c2d1e16bfe23da4fbc8ed1e0bc1dd5505c3a005ad2e001f3f8f766c6c5c",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "name": "cf3-biosample.html",
+      "url": "https://www.ncbi.nlm.nih.gov/biosample/SAMN14556242",
+      "acquired_at": "2026-10-11T16:11:11.382304+00:00",
+      "status": 200,
+      "bytes": 54788,
+      "sha256": "ae7fd1a172771020ff1f701907c3af09095e3238e1ab335843151ffcb1e0e28e",
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "name": "electroform-s1.pdf",
+      "url": "https://mdpi-res.com/d_attachment/sustainability/sustainability-15-14068/article_deploy/supplementary-materials/sustainability-15-14068-s001.pdf",
+      "acquired_at": "2026-10-11T16:11:35.662183+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "electroform-s1.zip",
+      "url": "https://mdpi-res.com/d_attachment/sustainability/sustainability-15-14068/article_deploy/supplementary-materials/sustainability-15-14068-s001.zip",
+      "acquired_at": "2026-10-11T16:11:35.745769+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "electroform-s1.docx",
+      "url": "https://mdpi-res.com/d_attachment/sustainability/sustainability-15-14068/article_deploy/supplementary-materials/sustainability-15-14068-s001.docx",
+      "acquired_at": "2026-10-11T16:11:35.775394+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "electroform-cdn.xml",
+      "url": "https://mdpi-res.com/d_attachment/sustainability/sustainability-15-14068/article_deploy/sustainability-15-14068.xml",
+      "acquired_at": "2026-10-11T16:11:35.889253+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "electroform-supplement.zip",
+      "url": "https://mdpi-res.com/d_attachment/sustainability/sustainability-15-14068/article_deploy/sustainability-15-14068-supplementary.zip",
+      "acquired_at": "2026-10-11T16:12:05.614685+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "electroform-supplement.docx",
+      "url": "https://mdpi-res.com/d_attachment/sustainability/sustainability-15-14068/article_deploy/sustainability-15-14068-supplementary.docx",
+      "acquired_at": "2026-10-11T16:12:05.690596+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "retained_files": [
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/access1.json",
+      "bytes": 1357,
+      "sha256": "6772bc5c0bfdd55b4f6bced391fc9b4b7c23ef1f32202bd1a45be3ac7124acc5"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/access2.json",
+      "bytes": 2120,
+      "sha256": "b4295953cad46061d7ae80057dce758d6bfcc747171aaf2a6c3001ff4bf38515"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/access3.json",
+      "bytes": 880,
+      "sha256": "8ed6f392d7501af52be8a3ec5e85dd3409c56233dbcb9dfe8b2681875985f545"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/access4.json",
+      "bytes": 1178,
+      "sha256": "a65a28c905ec1459184fd1b02aebcb1884d589034a7d00cbcd49a6315b5fe0e5"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/access5.json",
+      "bytes": 1168,
+      "sha256": "1f33a66d8beecfa97e82ebcc9b19c3f9d5d84c5d242205ac9b5b3785a5815b7a"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/access6.json",
+      "bytes": 586,
+      "sha256": "3eb6cef7f2d71dfb64391070970003fff1dbc7648735417ec59d73841cbfccc7"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/cans-api.xml",
+      "bytes": 1843,
+      "sha256": "7a77255829652bd3feb6c2d4dac11a64e87d9c574a513459f83c4fed9f368d9a"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/cans-genoa.html",
+      "bytes": 49262,
+      "sha256": "2eebf128e4eb7aec7f96a0f5ed66673b3f8f9159e538fd67b11921578c3ff5e1"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/cf3-biosample.html",
+      "bytes": 54788,
+      "sha256": "ae7fd1a172771020ff1f701907c3af09095e3238e1ab335843151ffcb1e0e28e"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/cf3-biosample.txt",
+      "bytes": 16398,
+      "sha256": "355825ef9a581f4aaf745c43f323061a84d721a572c8a9e339bbd1ba8368a5fb"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/cf3-taxonomy.html",
+      "bytes": 25056,
+      "sha256": "32e29c2d1e16bfe23da4fbc8ed1e0bc1dd5505c3a005ad2e001f3f8f766c6c5c"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/cf3-taxonomy.txt",
+      "bytes": 10831,
+      "sha256": "640d19bafe00781260a680f62da6866e72dfb6da96dc6288767fba162648e53d"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/electroform-crossref.json",
+      "bytes": 28431,
+      "sha256": "dad8515231308cc261af11a6d53113c573d9585219ee440ab237e6b4d3ffb8be"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/electroform-page-01.png",
+      "bytes": 254755,
+      "sha256": "1049b426477bbce3d8c543a948db8390d5a4d049221abdf9c1eec07b5be4f617"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/electroform-page-02.png",
+      "bytes": 279826,
+      "sha256": "e07c295165e1ddf59906399f47e349a3f3dfa1a429b22600ee88969c5a3ea527"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/electroform-page-03.png",
+      "bytes": 299449,
+      "sha256": "8a0f4e350cd352ea075e94fe09226fe3441f81d76646adc63d1512d4b30888dc"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/electroform-page-04.png",
+      "bytes": 218277,
+      "sha256": "0c282781851d564ea02624d5c1cefb2924adbcc3ca4c3d60424b9443f642b48b"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/electroform-page-05.png",
+      "bytes": 261696,
+      "sha256": "907276a0b492236361a8f653216a5627667b4ff939b18b15316971956bd4069f"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/electroform-page-06.png",
+      "bytes": 244310,
+      "sha256": "d484836ebb2a5e5ba3f7d905b08c0c87dd5c6dd1e49441327c83f0e9572c24ec"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/electroform-page-07.png",
+      "bytes": 227391,
+      "sha256": "81690848daf4451940c1d7bfe96d683bcc2b82f6125c80a5900ec4887093fdc7"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/electroform-page-08.png",
+      "bytes": 218714,
+      "sha256": "8592ec06f0e7b18b4c2258c464da18f6bc69fe87b30b5c4a5d95fd6fe5a27da5"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/electroform-page-09.png",
+      "bytes": 154496,
+      "sha256": "cfee9dd4d23b6511da52535521b1b9e53cf874e05ff955110e2a067efbb3670b"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/electroform-page-10.png",
+      "bytes": 352039,
+      "sha256": "61741362991ca19b3b0deb082fd20062e2ecd29ab544134c40d0fd1c72bce9a6"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/electroform-page-11.png",
+      "bytes": 260116,
+      "sha256": "bc7c4fcb6477a74bd8f164d8cf25de06df2c8a01dd6043bfab32617aeea2b1a7"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/electroform-page-12.png",
+      "bytes": 269660,
+      "sha256": "abaa16a2ce241dc37b4bb490b9679dd7e7eaa7971cedfa68805b7edd1572ae55"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/electroform-page-13.png",
+      "bytes": 269110,
+      "sha256": "9be1991d3c1c958a35827bec0010d6bfc5cc4b6dbb5a120a9889d2b4403c6f16"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/electroform-page-14.png",
+      "bytes": 266099,
+      "sha256": "eab3fe877a0e8ae24a6a61e59a84baaaec171a11dacfccb94e8687631932f58f"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/electroform-page-15.png",
+      "bytes": 282865,
+      "sha256": "8cee799799a6b832c1ba8f9688ae0ae73539e723721f5d6ba88a270c6ae66d2d"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/electroform-page-16.png",
+      "bytes": 352094,
+      "sha256": "b2dcc34f93cc4b787b379bbb7868256e167452dca3651c3c2d1713fcfb2b7ff4"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/electroform.pdf",
+      "bytes": 10875623,
+      "sha256": "26ad9598cd228c7b83dda78d77452af0a77610c5559ffe4b570ff01043085264"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-packaging-raw/electroform.txt",
+      "bytes": 68316,
+      "sha256": "ae130c02d415299fb229bc6aa611841f87474131fa116370ea379a70ff92c4ea"
+    }
+  ],
+  "validation": {
+    "named_record": {
+      "command": "UV_CACHE_DIR=/private/tmp/cmm-round27-packaging-uv-cache uv run --locked cmmmech validate data/records/electroformed-copper-silver-manufacturing-scrap.yaml",
+      "exit_code": 0,
+      "result": "Corrected version: Checked 1 record; 0 failed"
+    },
+    "history": {
+      "command": "UV_CACHE_DIR=/private/tmp/cmm-round27-packaging-uv-cache uv run --locked cmmmech validate-history --base 3f1350b24b4f6248ed2e17caade936c15af9be93",
+      "exit_code": 0,
+      "result": "Corrected version: Checked 195 history records; 0 errors"
+    },
+    "independent_review": {
+      "path": "reviews/structured/20261011T162619Z-electroformed-copper-silver-manufacturing-scrap-round27-independent-resolution/review.yaml",
+      "verdict": "pass_with_limitations",
+      "finding_F1": "resolved",
+      "record_sha256": "cd4c7e284b4ad47079d0c609db007795f1aeeb28dcdf7cf359d2a32b52b1ea62"
+    },
+    "batch": {
+      "receipt": "/private/tmp/cmm-round27-final-terminal.json",
+      "receipt_sha256": "73af58ed64cc2e18adb618642cabb5cd813a78a141630ea0c73fb636d219167c",
+      "just_check": {
+        "exit_code": 0,
+        "tests_passed": 308,
+        "tests_skipped": 3,
+        "seconds": 140.18,
+        "records": 171,
+        "histories": 195
+      },
+      "nonempty": {
+        "exit_code": 0,
+        "checked": 171,
+        "failed": 0
+      },
+      "trusted_base_history": {
+        "exit_code": 0,
+        "checked": 195,
+        "errors": 0
+      },
+      "frozen_record_sha256": "cd4c7e284b4ad47079d0c609db007795f1aeeb28dcdf7cf359d2a32b52b1ea62"
+    }
+  },
+  "exhaustion_established": false,
+  "review_correction": {
+    "timestamp": "2026-10-11T16:22:11.028471Z",
+    "initial_review": "reviews/structured/20261011T161956Z-electroformed-copper-silver-manufacturing-scrap-round27-independent-initial/review.yaml",
+    "finding": "F1",
+    "issue_key": "CMMMech.electroformed-scrap-leptospirillum-figure-direction",
+    "correction": "Removed erroneous claim that Figure 5 agrees with Results 50.0%; retained abstract 59% versus Results 50.0% discrepancy without extracting an exact independent graph percentage.",
+    "successor_review": "reviews/structured/20261011T162619Z-electroformed-copper-silver-manufacturing-scrap-round27-independent-resolution/review.yaml"
+  }
+}

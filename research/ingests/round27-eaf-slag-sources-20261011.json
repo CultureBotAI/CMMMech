@@ -1,0 +1,488 @@
+{
+  "timestamp_utc": "2026-10-11T16:15:48.133747+00:00",
+  "researcher": "codex / GPT-6 / round27_eaf_slag",
+  "base_revision": "3f1350b24b4f6248ed2e17caade936c15af9be93",
+  "branch": "curate/cmm-expansion-round27-20261011",
+  "report": "research/sources/round27-eaf-slag/20261011T161548Z-source-investigation.md",
+  "record_path": "data/records/basic-oxygen-furnace-steel-slag.yaml",
+  "history_path": "history/records/basic-oxygen-furnace-steel-slag/2026-10-11T161312Z-codex-27b6e0.yaml",
+  "coverage": {
+    "repository": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech",
+    "search_command": "rg --no-ignore --hidden --follow -l -i <DOIs and resource phrases> . <referenced raw directories>",
+    "hidden": true,
+    "ignored": true,
+    "follow_symlinks": true,
+    "referenced_raw_directories": [
+      "/private/tmp/cmm-round24-frontier-raw",
+      "/private/tmp/cmm-round26-root-raw",
+      "/private/tmp/cmm-round26-eaf-dust-raw"
+    ],
+    "result_manifest": "/private/tmp/cmm-round27-eaf-slag-raw/local-novelty-matches.txt",
+    "limit": "No unrelated home or temporary-tree search. The original repository was at merged round26; a separate current worktree is used for writes. Text matching is not binary PDF OCR.",
+    "prior_reports": [
+      "research/ingests/round24-amd-solids-sources-20261011.json",
+      "research/ingests/round26-bof-sources-20261011.json",
+      "research/ingests/round26-frontier-20261011.md"
+    ],
+    "web": "First returned web.run result sets; exact queries below; no date filters or pagination. Broader suffix-only results often included unrelated DOI matches; those were not treated as evidence.",
+    "queries": [
+      "\"10.1016/j.chemosphere.2014.09.089\" pdf",
+      "\"Bioleaching of metals from steel slag\" Hocheng full text",
+      "\"Hocheng\" \"2014\" \"slag\" \"supernatant\"",
+      "\"Bioleaching of metals from steel slag\" pdf -researchgate",
+      "\"2014.09.089\" Hocheng nthu",
+      "\"Bioleaching of metals from steel slag\" \"download\"",
+      "\"Bioleaching of metals\" \"Hocheng\" \"nthu\"",
+      "\"Bioleaching of metals from steel slag\" filetype:pdf",
+      "\"S0045653514011667\"",
+      "\"Bioleaching of metals from steel slag\" site:nthu.edu.tw",
+      "\"S0045653514011667\" pdf full",
+      "\"Bioleaching of metals from steel slag\" correction retraction erratum",
+      "\"Electric arc furnace slag\" \"microbial\" \"bricks\"",
+      "\"Bioleaching of metals from steel slag\" \"control\" contradictory",
+      "\"Bioleaching\" \"EAF sludge\" \"Solisio\" 2002 pdf",
+      "\"Improvement in mechanical properties and microstructure of electric arc furnace slag\" pdf",
+      "\"21650373.2022.2153283\" pdf",
+      "\"Solisio\" \"2002\" \"sludge\" \"bioleaching\"",
+      "\"21650373.2022.2153283\"",
+      "\"Bioleaching of zinc and aluminium from industrial waste sludges\" pdf",
+      "\"Bioleaching and Selective Precipitation\" \"576\"",
+      "\"Bioleaching of zinc and aluminium from industrial waste sludges\" full text",
+      "\"S0956053X01000526\" pdf",
+      "\"Bioleaching of zinc and aluminium\" site:unige.it",
+      "\"Bioleaching of zinc and aluminium\" filetype:pdf",
+      "\"Bioleaching of zinc and aluminium\" \"Solisio\" repository",
+      "\"Bioleaching of zinc and aluminium\" \"2002\" pdf -site:researchgate.net -review",
+      "\"00052-6\" Solisio fulltext",
+      "\"Bioleaching of zinc and aluminium\" site:iris.unige.it",
+      "\"Bioleaching of zinc and aluminium\" site:doczz.net",
+      "\"10.3390/pr10030576\" supplementary correction retraction",
+      "\"Acidithiobacillus ferridurans\" \"DSM 583\"",
+      "\"10.3390/pr10030576\" \"supplementary\"",
+      "\"Bioleaching and Selective Precipitation for Metal Recovery from Basic Oxygen Furnace Slag\" correction retraction erratum",
+      "\"processes-10-00576\" \"s001\""
+    ]
+  },
+  "selected_source": {
+    "doi": "10.3390/pr10030576",
+    "title": "Bioleaching and Selective Precipitation for Metal Recovery from Basic Oxygen Furnace Slag",
+    "authors": "Kremser et al.",
+    "published_on": "2022-03-15",
+    "version": "Publisher version 2, as indicated by its embedded check_update link; institution mirror PDF",
+    "license": "CC BY 4.0",
+    "url": "https://doi.org/10.3390/pr10030576",
+    "pdf_url": "https://www.k1-met.com/fileadmin/user_upload/Publications/Journal_articles_open_access/Kremser_et_al._2022__BOF_slag_bioleaching.pdf",
+    "primary_pdf_sha256": "ec418401549a081e8771f54a94fbb715b96efa71981b83b7cadf285c432a5ba1",
+    "scope": "Existing BOF resource, separately sampled Austrian feed. Source distinct from existing 2018 UK experiment."
+  },
+  "inspection": [
+    "Entire 12-page main PDF extracted and read: Methods 2.1-2.8, Results 3.1-3.4, conclusion, data statement and references",
+    "Rendered pages 3-9 visually inspected: displayed extraction equation, reactor diagram, all five figures and both tables",
+    "Live DSM 504 and DSM 583 catalogue pages: accession names checked, experimental stocks not authenticated",
+    "Published peer-review comments read as context, not substituted for this assessment or the primary record"
+  ],
+  "scientific_findings": [
+    {
+      "locator": "Methods 2.1; Table 1",
+      "finding": "The Austrian BOF slag was dried at 22 degrees C and sieved to 0.25-0.5 mm; it is distinct from the 2018 UK experimental feed. The mg/g table describes this sample, not global BOF composition."
+    },
+    {
+      "locator": "Methods 2.2 and DSMZ DSM 583 catalogue",
+      "finding": "The paper labels DSM 583 as ferridurans; the catalogue displays ferrooxidans. The source-specific culture name and accession are retained without a definitive species CURIE."
+    },
+    {
+      "locator": "Methods 2.3 and Figure 3",
+      "finding": "Biological duplicate flasks have uninoculated-medium controls but substantially different endpoint pH. DSM 504 Al is negligible; DSM 583 V is near the abiotic control. Media and initial acidity differ between cultures."
+    },
+    {
+      "locator": "Methods 2.4; Figure 4; Table 2",
+      "finding": "One reactor is described per organism; repeated samples are not independent reactor replicates. Two-thirds suspension replacement leaves carryover. Higher DSM 504 acid consumption and higher-loading DSM 583 V below the chemical control prevent universal-advantage claims. Figure 4 bars do not support blanket Al >80% and Mn >50% prose."
+    },
+    {
+      "locator": "Methods 2.3 displayed equation, Methods 2.4 and Table 2",
+      "finding": "The printed background correction was inspected; raw medium/inoculum concentrations and cycle carryover/volume accounting are unavailable. Table 2 uses an 18 M acid reporting basis versus 2 M dosing in Methods; conversion details are unreported. Yields were not recalculated."
+    },
+    {
+      "locator": "Methods 2.7-2.8; Figure 5",
+      "finding": "Downstream assays use synthetic SMS-AT/AF, not real bioleachates. Assigned Fe valence and salt matrices differ. Filtrate depletion after 45 hours does not establish product purity or actual-effluent recovery."
+    },
+    {
+      "locator": "Page 10 data statement",
+      "finding": "ESI is mentioned but no artifact was inspected; bounded main, s1 and status publisher routes returned HTTP 403 or were inaccessible. Complete supporting-data availability is not claimed."
+    }
+  ],
+  "notice_checks": {
+    "queries": [
+      "\"Bioleaching of metals from steel slag\" correction retraction erratum",
+      "\"10.3390/pr10030576\" supplementary correction retraction",
+      "\"Bioleaching and Selective Precipitation for Metal Recovery from Basic Oxygen Furnace Slag\" correction retraction erratum"
+    ],
+    "crossref": "All three fetched Crossref records have empty relation and no update-to/updated-by keys. This is not exhaustive notice certification.",
+    "publisher_update": "Linked BOF version2 check_update URL403/inaccessible; cannot certify latestversion.",
+    "result": "No corresponding correction or retraction notice was identified in bounded exact-title/DOI returned sets. Publisher peer-review comments concern limitations in drafts and are not a retraction."
+  },
+  "deferred": [
+    {
+      "identity": "electric-arc-furnace steel slag",
+      "doi": "10.1016/j.chemosphere.2014.09.089",
+      "decision": "defer mechanism; no new record",
+      "access": "Publisher/PubMed abstract verified; indexed Doczz transcription supplied Methods 2.1-2.3 and Results 3.1-3.3, but only captions for the six figures. Direct publisher HTTP 403; public TDM metadata only; public Doczz viewer-linked PDF HTTP 500; no open deposit reported by OpenAlex.",
+      "limits": "Original table layout, figures, replication and previously cited supernatant-collection method were not verified. Transcription identifies reagent-acid additions in the ferrooxidans arm, water washing, cyclic Ni/Mo null results and an uncertain low composition denominator. Exact measurements were not imported.",
+      "next": "Obtain a readable legitimate original PDF and linked prior method; inspect all six figures and the table; resolve denominators and controls before mechanism curation."
+    },
+    {
+      "identity": "iron-manganese-alloy electric-furnace dust",
+      "doi": "10.1016/S0956-053X(01)00052-6",
+      "decision": "distinct candidate; defer pending fullprimary",
+      "access": "PubMed original abstract, Crossref and metadata-only TDM; IRIS 11697/17964 explicitly has no files; OpenAlex reports closed; ResearchGate offers Request PDF only.",
+      "limits": "The 2014 EAF-slag introduction and later reviews misclassify original Solisio 2002 wastes as EAF sludge/slag. The original abstract describes iron-manganese-alloy electric-furnace dust separately from aluminium-anodizing treatment sludge.",
+      "next": "Acquire the full primary study before accepting organism, controls and yields; distinguish ferroalloy dust from existing steelmaking EAF dust."
+    },
+    {
+      "identity": "aluminium-anodic-oxidation treatment sludge",
+      "doi": "10.1016/S0956-053X(01)00052-6",
+      "decision": "distinct candidate; defer pending fullprimary",
+      "access": "Same paper as the preceding candidate; not an independent publication. A separate feed is described in the original abstract.",
+      "next": "Inspect plant feed, microbial stock, kinetics, controls and mass balance. Keep separate from ferroalloy dust, generic mixed electroplating sludge and the aluminium element."
+    },
+    {
+      "identity": "EAFslag bricks microbial carbonation",
+      "doi": "10.1080/21650373.2022.2153283",
+      "decision": "defer fullprimary; same EAFresource rather than automatically newbrickroot",
+      "access": "Primary author DTU abstract/metadata and OpenAlex locations inspected; no full experimental article obtained.",
+      "next": "Acquire methods, organism/enzyme causality, abiotic carbonation controls, product phases and metal-leaching tests before accepting transformation claims."
+    }
+  ],
+  "acquisition": [
+    {
+      "name": "eaf2014-doczz.html",
+      "url": "https://doczz.net/doc/8164782/bioleaching-of-metals-from-steel-slag-by-acidithiobacillus",
+      "utc": "2026-10-11T16:07:54.268906+00:00",
+      "error": "<HTTPError 403: 'Forbidden'>"
+    },
+    {
+      "name": "eaf2014-crossref.json",
+      "url": "https://api.crossref.org/works/10.1016/j.chemosphere.2014.09.089",
+      "utc": "2026-10-11T16:07:54.270016+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1016/j.chemosphere.2014.09.089",
+      "content_type": "application/json",
+      "bytes": 9196,
+      "sha256": "6a55eaa680ff45a971e9f8a70a6359979d3d4b4d1e4f089b69e3e445556a1017",
+      "prefix": "b'{\"status\":\"ok\",\"mess'"
+    },
+    {
+      "name": "eaf2014-openalex.json",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.chemosphere.2014.09.089",
+      "utc": "2026-10-11T16:07:54.270333+00:00",
+      "status": 200,
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.chemosphere.2014.09.089",
+      "content_type": "application/json",
+      "bytes": 18703,
+      "sha256": "d19dba8b21ed1f0a9f413a887123872c37f4ac880df0f3778d9b5ac22c951209",
+      "prefix": "b'{\"id\":\"https://opena'"
+    },
+    {
+      "name": "eaf2014-elsevier.xml",
+      "url": "https://api.elsevier.com/content/article/PII:S0045653514011667?httpAccept=text/xml",
+      "utc": "2026-10-11T16:07:54.270604+00:00",
+      "status": 200,
+      "final_url": "https://api.elsevier.com/content/article/PII:S0045653514011667?httpAccept=text/xml",
+      "content_type": "text/xml;charset=UTF-8",
+      "bytes": 1840,
+      "sha256": "1b65858680214063c263cd2500efe5fead14ade617ba38781f782ca567d09f49",
+      "prefix": "b'<full-text-retrieval'"
+    },
+    {
+      "name": "eaf2014-primary.html",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0045653514011667",
+      "utc": "2026-10-11T16:07:54.270954+00:00",
+      "error": "<HTTPError 403: 'Forbidden'>"
+    },
+    {
+      "url": "https://s1p.doczz.net/store/data/008164782.pdf?k=AwAAAaEruCWaAAACWAmBLbhbgUq_WGBD3JNah8LiNdkx",
+      "utc": "2026-10-11T16:08:38.406266+00:00",
+      "name": "eaf2014-primary.pdf",
+      "route": "PDF URL exposed by public Doczz viewer iframe",
+      "error": "<HTTPError 500: 'Internal Server Error'>"
+    },
+    {
+      "name": "bof2022-primary.pdf",
+      "url": "https://www.k1-met.com/fileadmin/user_upload/Publications/Journal_articles_open_access/Kremser_et_al._2022__BOF_slag_bioleaching.pdf",
+      "utc": "2026-10-11T16:09:34.289691+00:00",
+      "status": 200,
+      "final_url": "https://www.k1-met.com/fileadmin/user_upload/Publications/Journal_articles_open_access/Kremser_et_al._2022__BOF_slag_bioleaching.pdf",
+      "content_type": "application/pdf",
+      "bytes": 17204010,
+      "sha256": "ec418401549a081e8771f54a94fbb715b96efa71981b83b7cadf285c432a5ba1",
+      "prefix": "b'%PDF-1.7\\n%\\xe2\\xe3\\xcf\\xd3\\n6 0 o'"
+    },
+    {
+      "name": "bof2022-crossref.json",
+      "url": "https://api.crossref.org/works/10.3390/pr10030576",
+      "utc": "2026-10-11T16:09:34.290698+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.3390/pr10030576",
+      "content_type": "application/json",
+      "bytes": 18149,
+      "sha256": "90e0a23cae442e5287d0e6956e557dc938cd3a717a16826087667e44d86d1c8a",
+      "prefix": "b'{\"status\":\"ok\",\"mess'"
+    },
+    {
+      "name": "eaf2023-openalex.json",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1080/21650373.2022.2153283",
+      "utc": "2026-10-11T16:09:34.291000+00:00",
+      "status": 200,
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1080/21650373.2022.2153283",
+      "content_type": "application/json",
+      "bytes": 18773,
+      "sha256": "0bc2e2b6f716703bd207fb5f7ff62d298bb3293644b27846171bc24b50469acb",
+      "prefix": "b'{\"id\":\"https://opena'"
+    },
+    {
+      "name": "solisio2002-openalex.json",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/S0956-053X(01)00052-6",
+      "utc": "2026-10-11T16:09:34.291280+00:00",
+      "status": 200,
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/S0956-053X(01)00052-6",
+      "content_type": "application/json",
+      "bytes": 18659,
+      "sha256": "08e0396e65b236533dde96089145417d4768cc5b1052024c91085b6f36fe02e8",
+      "prefix": "b'{\"id\":\"https://opena'"
+    },
+    {
+      "name": "solisio2002-crossref.json",
+      "url": "https://api.crossref.org/works/10.1016/S0956-053X(01)00052-6",
+      "utc": "2026-10-11T16:10:43.007733+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1016/S0956-053X(01)00052-6",
+      "content_type": "application/json",
+      "bytes": 6461,
+      "sha256": "5b0d37f1d6daf9b7bdd72e27afaed307f34c5d3862dfbf28f8558a60fd037d77",
+      "prefix": "b'{\"status\":\"ok\",\"mess'"
+    },
+    {
+      "name": "solisio2002-elsevier.xml",
+      "url": "https://api.elsevier.com/content/article/PII:S0956053X01000526?httpAccept=text/xml",
+      "utc": "2026-10-11T16:10:43.008985+00:00",
+      "status": 200,
+      "final_url": "https://api.elsevier.com/content/article/PII:S0956053X01000526?httpAccept=text/xml",
+      "content_type": "text/xml;charset=UTF-8",
+      "bytes": 1860,
+      "sha256": "3a3403938e1232bc9d3577c32aa1d07f075ca35f48a70392274a9ff33d2b78a6",
+      "prefix": "b'<full-text-retrieval'"
+    },
+    {
+      "name": "solisio2002-repository.html",
+      "url": "https://ricerca.univaq.it/handle/11697/17964",
+      "utc": "2026-10-11T16:10:43.009332+00:00",
+      "status": 200,
+      "final_url": "https://ricerca.univaq.it/handle/11697/17964",
+      "content_type": "text/html;charset=utf-8",
+      "bytes": 45377,
+      "sha256": "063b52fcbfc3c1e9ac0afdbe6a218af7e8d30111a24053d5b2e516f4bb55fb9c",
+      "prefix": "b'<!DOCTYPE html>\\n<htm'"
+    },
+    {
+      "name": "bof2022-publisher.html",
+      "url": "https://www.mdpi.com/2227-9717/10/3/576",
+      "utc": "2026-10-11T16:13:26.195870+00:00",
+      "error": "<HTTPError 403: 'Forbidden'>"
+    },
+    {
+      "name": "bof2022-supplement-route.html",
+      "url": "https://www.mdpi.com/article/10.3390/pr10030576/s1",
+      "utc": "2026-10-11T16:13:26.196637+00:00",
+      "error": "<HTTPError 403: 'Forbidden'>"
+    },
+    {
+      "name": "bof2022-update.html",
+      "url": "https://www.mdpi.com/article/10.3390/pr10030576?type=check_update&version=2",
+      "utc": "2026-10-11T16:13:26.196860+00:00",
+      "error": "<HTTPError 403: 'Forbidden'>"
+    },
+    {
+      "name": "dsm504.html",
+      "url": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-504",
+      "utc": "2026-10-11T16:13:26.197072+00:00",
+      "status": 200,
+      "final_url": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-504",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 48468,
+      "sha256": "5ec0de034b3c0b34a660dc47904a866be2e11d566a979f2bf3f2609455ce1099",
+      "prefix": "b'<!DOCTYPE html>\\n<htm'"
+    },
+    {
+      "name": "dsm583.html",
+      "url": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-583",
+      "utc": "2026-10-11T16:13:26.197260+00:00",
+      "status": 200,
+      "final_url": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-583",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 48904,
+      "sha256": "9b179fbe52c92a21328938f76bf676a676e257cf342f5d7a6f3f84193ebabba1",
+      "prefix": "b'<!DOCTYPE html>\\n<htm'"
+    }
+  ],
+  "raw_manifest": [
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/acquisition-1.json",
+      "bytes": 1910,
+      "sha256": "3982b7466cbaf34dc6e8d133684c418e81e04a00066cb7904affd3071025d31e"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/acquisition-2.json",
+      "bytes": 301,
+      "sha256": "3519d3e1147b2e8f67497bb30dc7de0fb7f33a1771acdefe6bc0153d82d2ac0d"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/acquisition-3.json",
+      "bytes": 2023,
+      "sha256": "fe07c3c425c227725c02c36f3a6e21848f306308c9fa0d317b3fb01cd323de9c"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/acquisition-4.json",
+      "bytes": 1395,
+      "sha256": "1d174e7842878881101be86c18a954718c902c10fa01a2fdf8bdf62ccfc61717"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/acquisition-5.json",
+      "bytes": 1545,
+      "sha256": "25736c2e4086d7e894eee5796d82001709e9348d0d951a81d9a18238039dcd53"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/bof2022-crossref.json",
+      "bytes": 18149,
+      "sha256": "90e0a23cae442e5287d0e6956e557dc938cd3a717a16826087667e44d86d1c8a"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/bof2022-page-10.png",
+      "bytes": 243155,
+      "sha256": "764f6a80ddcb7c5dbc446edeea29723e702474ea6a0360d4b71aa68ca1105532"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/bof2022-page-11.png",
+      "bytes": 326580,
+      "sha256": "c7c75b345c4664f616227c318116173ae21374e28f1c0ce4e2df48cb02421342"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/bof2022-page-12.png",
+      "bytes": 114685,
+      "sha256": "a22e2e75e6730e91f85d83f1c71a381e83e8a4baf5580eee07ba52c44d14c2eb"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/bof2022-page-2.png",
+      "bytes": 278303,
+      "sha256": "79af75accd02efa4d567e382f11c7698b61c3789068e047a2e06af1558812d81"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/bof2022-page-3.png",
+      "bytes": 252170,
+      "sha256": "19a69bac44fe1fdff00527d010cde284c8cea4161add8e1627d0c589030ce341"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/bof2022-page-4.png",
+      "bytes": 205328,
+      "sha256": "a6ca0c81ff78105596dbd3ae288825b7d07e94b6291880cc02e923888795b8b5"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/bof2022-page-5.png",
+      "bytes": 217597,
+      "sha256": "e599f992bc850178dd21845bacce92d763b79539c0eb575cfe48577eafe2f349"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/bof2022-page-6.png",
+      "bytes": 277889,
+      "sha256": "0249e6e88085398785e2ffee0a8c3cefa7cb6346f6dcdf254e33373d1a73eec6"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/bof2022-page-7.png",
+      "bytes": 206485,
+      "sha256": "c912e0b92ae5ff3c45dc7b96ec45409b1ead54a2d382ed9419059b8b68f09c0d"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/bof2022-page-8.png",
+      "bytes": 227610,
+      "sha256": "ef4c36053a837c1cda88e375fbfefccafcfdccdb206dad7f4bf4a492c1652ec8"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/bof2022-page-9.png",
+      "bytes": 267777,
+      "sha256": "7845d6c53dadef6983c54d2374b2ead8810de581e857b32363cef911d47560fb"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/bof2022-primary.pdf",
+      "bytes": 17204010,
+      "sha256": "ec418401549a081e8771f54a94fbb715b96efa71981b83b7cadf285c432a5ba1"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/bof2022-primary.txt",
+      "bytes": 40517,
+      "sha256": "654c9143114e859ac5db49014b52a1eb61e92ed3a6118cb892b96b55343281a8"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/dsm504.html",
+      "bytes": 48468,
+      "sha256": "5ec0de034b3c0b34a660dc47904a866be2e11d566a979f2bf3f2609455ce1099"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/dsm583.html",
+      "bytes": 48904,
+      "sha256": "9b179fbe52c92a21328938f76bf676a676e257cf342f5d7a6f3f84193ebabba1"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/eaf2014-crossref.json",
+      "bytes": 9196,
+      "sha256": "6a55eaa680ff45a971e9f8a70a6359979d3d4b4d1e4f089b69e3e445556a1017"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/eaf2014-elsevier.xml",
+      "bytes": 1840,
+      "sha256": "1b65858680214063c263cd2500efe5fead14ade617ba38781f782ca567d09f49"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/eaf2014-openalex.json",
+      "bytes": 18703,
+      "sha256": "d19dba8b21ed1f0a9f413a887123872c37f4ac880df0f3778d9b5ac22c951209"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/eaf2023-openalex.json",
+      "bytes": 18773,
+      "sha256": "0bc2e2b6f716703bd207fb5f7ff62d298bb3293644b27846171bc24b50469acb"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/local-novelty-matches.txt",
+      "bytes": 910,
+      "sha256": "aa2a456310426cc30a3a28079ed746cdcc9f4452bf0671dd0b9186ee5c00dbd1"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/solisio2002-crossref.json",
+      "bytes": 6461,
+      "sha256": "5b0d37f1d6daf9b7bdd72e27afaed307f34c5d3862dfbf28f8558a60fd037d77"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/solisio2002-elsevier.xml",
+      "bytes": 1860,
+      "sha256": "3a3403938e1232bc9d3577c32aa1d07f075ca35f48a70392274a9ff33d2b78a6"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/solisio2002-openalex.json",
+      "bytes": 18659,
+      "sha256": "08e0396e65b236533dde96089145417d4768cc5b1052024c91085b6f36fe02e8"
+    },
+    {
+      "path": "/private/tmp/cmm-round27-eaf-slag-raw/solisio2002-repository.html",
+      "bytes": 45377,
+      "sha256": "063b52fcbfc3c1e9ac0afdbe6a218af7e8d30111a24053d5b2e516f4bb55fb9c"
+    }
+  ],
+  "handoff": {
+    "record": "data/records/basic-oxygen-furnace-steel-slag.yaml",
+    "sha256": "88e0d8b3c9ce06a1d70cf1ab5a34059259c28eac1904cf9589a9dd9364575ea4",
+    "history": "history/records/basic-oxygen-furnace-steel-slag/2026-10-11T161312Z-codex-27b6e0.yaml",
+    "status": "Curated existing-record extension; independent scientific review pending.",
+    "validation": "uv run --locked cmmmech validate data/records/basic-oxygen-furnace-steel-slag.yaml: Checked 1 record(s); 0 failed; exit 0.",
+    "no_changes": "No new root, schema, validator, governance or prior immutable reviews/history modified.",
+    "preservation": "Both 2018 mechanism blocks are byte-identical to HEAD; verified by exact string comparison before the new 2022 mechanisms."
+  }
+}
