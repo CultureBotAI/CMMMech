@@ -1,0 +1,835 @@
+{
+  "timestamp_utc": "2026-10-11T22:22:17.903955+00:00",
+  "repository": "CultureBotAI/CMMMech",
+  "git_base": "1ef6fdde620a4053fbfff99c51065082dce32d39",
+  "state": "working_tree",
+  "author": {
+    "name": "codex",
+    "model": "GPT-6",
+    "agent_tool": "codex"
+  },
+  "scope": "One new mineral owner, moolooite, with a narrow source-specific fungal precipitation observation. No criticality or other mineral records added. This is author research, not independent acceptance.",
+  "baseline": "/private/tmp/cmm-round36-baseline-reuse.json reuses actual fresh postmerge checks on this identical base; no new baseline execution claimed.",
+  "searches": [
+    {
+      "provider": "web search",
+      "date_utc": "2026-10-11",
+      "query": "moolooite fungal copper oxalate biomineralization full text Gadd",
+      "coverage": "First returned result set; no date filters or pagination"
+    },
+    {
+      "provider": "web search",
+      "date_utc": "2026-10-11",
+      "query": "moolooite fungus copper oxalate dead biomass mineral formation",
+      "coverage": "First returned result set; no date filters or pagination"
+    },
+    {
+      "provider": "web search",
+      "date_utc": "2026-10-11",
+      "query": "\"10.1038/s41598-021-03600-5\" correction retraction corrigendum",
+      "coverage": "First returned result set; no date filters or pagination"
+    },
+    {
+      "provider": "web search",
+      "date_utc": "2026-10-11",
+      "query": "moolooite fungal formation sterile control inhibition oxalate \"Frank\"",
+      "coverage": "First returned result set; no date filters or pagination"
+    },
+    {
+      "provider": "web search",
+      "date_utc": "2026-10-11",
+      "query": "site:cnmnc.units.it \"September 2026\" minerals",
+      "coverage": "First returned result set; no date filters or pagination"
+    }
+  ],
+  "dedup": {
+    "started_at": "2026-10-11T22:17:59.395406+00:00",
+    "finished_at": "2026-10-11T22:18:01.475648+00:00",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-n",
+      "-i",
+      "--max-columns",
+      "1500",
+      "--max-columns-preview",
+      "-g",
+      "!*.pdf",
+      "-g",
+      "!*.png",
+      "-g",
+      "!*.jpg",
+      "-g",
+      "!*.jpeg",
+      "-g",
+      "!*.tif",
+      "-g",
+      "!*.tiff",
+      "-g",
+      "!*.xlsx",
+      "-g",
+      "!*.docx",
+      "-g",
+      "!*.zip",
+      "moolooite|copper.?oxalate|s41598-021-03600-5|PMC8688476|crystal chemistry.*oxalate",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/private/tmp/CMMMech-expansion-round36-20261011/data/records",
+      "/private/tmp/CMMMech-expansion-round36-20261011/history",
+      "/private/tmp/CMMMech-expansion-round36-20261011/research",
+      "/private/tmp/CMMMech-expansion-round36-20261011/reviews",
+      "/private/tmp/cmm-round10-b-f-raw",
+      "/private/tmp/cmm-round10-graphite-raw",
+      "/private/tmp/cmm-round10-nb-ta-raw",
+      "/private/tmp/cmm-round10-ti-zr-raw",
+      "/private/tmp/cmm-round11-be-rb-re-raw",
+      "/private/tmp/cmm-round11-he-raw",
+      "/private/tmp/cmm-round11-ir-os-hf-raw",
+      "/private/tmp/cmm-round11-lu-tm-pm-raw",
+      "/private/tmp/cmm-round12-aluminium-boron-raw",
+      "/private/tmp/cmm-round12-carbon-metals-raw",
+      "/private/tmp/cmm-round12-groups-raw",
+      "/private/tmp/cmm-round12-industrial-minerals-raw",
+      "/private/tmp/cmm-round13-grade-raw",
+      "/private/tmp/cmm-round13-mineral-raw",
+      "/private/tmp/cmm-round13-secondary-raw",
+      "/private/tmp/cmm-round14-magnet-raw",
+      "/private/tmp/cmm-round14-mineral-raw",
+      "/private/tmp/cmm-round14-product-raw",
+      "/private/tmp/cmm-round14-secondary-raw",
+      "/private/tmp/cmm-round15-brine-raw",
+      "/private/tmp/cmm-round15-mineral-raw",
+      "/private/tmp/cmm-round16-produced-water-raw",
+      "/private/tmp/cmm-round16-silicate-raw",
+      "/private/tmp/cmm-round16-vivianite-raw",
+      "/private/tmp/cmm-round17-biotite-raw",
+      "/private/tmp/cmm-round17-enstatite-raw",
+      "/private/tmp/cmm-round17-saline-raw",
+      "/private/tmp/cmm-round18-catalyst-raw",
+      "/private/tmp/cmm-round18-dunite-raw",
+      "/private/tmp/cmm-round18-mineral-feeds-raw",
+      "/private/tmp/cmm-round18-products-raw",
+      "/private/tmp/cmm-round19-hydrogenation-catalyst-raw",
+      "/private/tmp/cmm-round19-iron-manganese-raw",
+      "/private/tmp/cmm-round19-manganese-residue-raw",
+      "/private/tmp/cmm-round19-tailings-raw",
+      "/private/tmp/cmm-round20-goethite-raw",
+      "/private/tmp/cmm-round20-laterite-raw",
+      "/private/tmp/cmm-round20-mafic-tailings-raw",
+      "/private/tmp/cmm-round20-nodule-raw",
+      "/private/tmp/cmm-round21-crusts-raw",
+      "/private/tmp/cmm-round21-pcb-raw",
+      "/private/tmp/cmm-round21-ree-mud-raw",
+      "/private/tmp/cmm-round22-concretions-raw",
+      "/private/tmp/cmm-round22-pcb-raw",
+      "/private/tmp/cmm-round22-pv-raw",
+      "/private/tmp/cmm-round22-sulfides-raw",
+      "/private/tmp/cmm-round23-crusts-raw",
+      "/private/tmp/cmm-round23-ghiorse-raw",
+      "/private/tmp/cmm-round23-identity-gaps-raw",
+      "/private/tmp/cmm-round23-lcd-raw",
+      "/private/tmp/cmm-round23-rey-mud-raw",
+      "/private/tmp/cmm-round24-copper-slag-raw",
+      "/private/tmp/cmm-round24-frontier-raw",
+      "/private/tmp/cmm-round24-nimh-raw",
+      "/private/tmp/cmm-round24-sulfuric-raw",
+      "/private/tmp/cmm-round25-bf-dust-raw",
+      "/private/tmp/cmm-round25-button-raw",
+      "/private/tmp/cmm-round25-frontier-raw",
+      "/private/tmp/cmm-round25-oil-ash-raw",
+      "/private/tmp/cmm-round26-eaf-dust-raw",
+      "/private/tmp/cmm-round26-packaging-raw",
+      "/private/tmp/cmm-round26-root-raw",
+      "/private/tmp/cmm-round26-superalloy-raw",
+      "/private/tmp/cmm-round27-eaf-slag-raw",
+      "/private/tmp/cmm-round27-goethite-raw",
+      "/private/tmp/cmm-round27-packaging-raw",
+      "/private/tmp/cmm-round27-root-raw",
+      "/private/tmp/cmm-round27-superalloy-raw",
+      "/private/tmp/cmm-round28-black-shale-research",
+      "/private/tmp/cmm-round28-goethite-research",
+      "/private/tmp/cmm-round28-tatra-research",
+      "/private/tmp/cmm-round28-tire-research",
+      "/private/tmp/cmm-round29-bastnaesite-research",
+      "/private/tmp/cmm-round29-ilmenite-research",
+      "/private/tmp/cmm-round29-tungsten-waste-research",
+      "/private/tmp/cmm-round29-zinc-ore-research",
+      "/private/tmp/cmm-round30-basalt-research",
+      "/private/tmp/cmm-round30-chromite-research",
+      "/private/tmp/cmm-round30-pyrrhotite-research",
+      "/private/tmp/cmm-round30-tungsten-research",
+      "/private/tmp/cmm-round31-chromite-tailings-research",
+      "/private/tmp/cmm-round31-ilmenite-research",
+      "/private/tmp/cmm-round31-kaolin-research",
+      "/private/tmp/cmm-round31-kaolin-waste-research",
+      "/private/tmp/cmm-round31-stibnite-research",
+      "/private/tmp/cmm-round31-tungsten-research",
+      "/private/tmp/cmm-round32-arsenopyrite-research",
+      "/private/tmp/cmm-round32-bornite-research",
+      "/private/tmp/cmm-round32-chromitite-research",
+      "/private/tmp/cmm-round32-molybdenite-research",
+      "/private/tmp/cmm-round33-chalcocite-research",
+      "/private/tmp/cmm-round33-covellite-research",
+      "/private/tmp/cmm-round33-molybdenite-research",
+      "/private/tmp/cmm-round33-pyrite-research",
+      "/private/tmp/cmm-round34-galena-research",
+      "/private/tmp/cmm-round34-greigite-research",
+      "/private/tmp/cmm-round34-mackinawite-research",
+      "/private/tmp/cmm-round34-uraninite-research",
+      "/private/tmp/cmm-round35-anglesite-research",
+      "/private/tmp/cmm-round35-jarosite-research",
+      "/private/tmp/cmm-round35-ningyoite-research",
+      "/private/tmp/cmm-round35-schwertmannite-research",
+      "/private/tmp/cmm-round36-moolooite-research/raw",
+      "/private/tmp/cmm-round7-ho-er-gd-raw",
+      "/private/tmp/cmm-round7-terbium-raw",
+      "/private/tmp/cmm-round8-sc-pr-raw",
+      "/private/tmp/cmm-round9-cs-sr-raw",
+      "/private/tmp/cmm-round9-ru-rh-raw",
+      "/private/tmp/cmm-round9-si-sn-raw"
+    ],
+    "root_count": 117,
+    "roots": [
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/private/tmp/CMMMech-expansion-round36-20261011/data/records",
+      "/private/tmp/CMMMech-expansion-round36-20261011/history",
+      "/private/tmp/CMMMech-expansion-round36-20261011/research",
+      "/private/tmp/CMMMech-expansion-round36-20261011/reviews",
+      "/private/tmp/cmm-round10-b-f-raw",
+      "/private/tmp/cmm-round10-graphite-raw",
+      "/private/tmp/cmm-round10-nb-ta-raw",
+      "/private/tmp/cmm-round10-ti-zr-raw",
+      "/private/tmp/cmm-round11-be-rb-re-raw",
+      "/private/tmp/cmm-round11-he-raw",
+      "/private/tmp/cmm-round11-ir-os-hf-raw",
+      "/private/tmp/cmm-round11-lu-tm-pm-raw",
+      "/private/tmp/cmm-round12-aluminium-boron-raw",
+      "/private/tmp/cmm-round12-carbon-metals-raw",
+      "/private/tmp/cmm-round12-groups-raw",
+      "/private/tmp/cmm-round12-industrial-minerals-raw",
+      "/private/tmp/cmm-round13-grade-raw",
+      "/private/tmp/cmm-round13-mineral-raw",
+      "/private/tmp/cmm-round13-secondary-raw",
+      "/private/tmp/cmm-round14-magnet-raw",
+      "/private/tmp/cmm-round14-mineral-raw",
+      "/private/tmp/cmm-round14-product-raw",
+      "/private/tmp/cmm-round14-secondary-raw",
+      "/private/tmp/cmm-round15-brine-raw",
+      "/private/tmp/cmm-round15-mineral-raw",
+      "/private/tmp/cmm-round16-produced-water-raw",
+      "/private/tmp/cmm-round16-silicate-raw",
+      "/private/tmp/cmm-round16-vivianite-raw",
+      "/private/tmp/cmm-round17-biotite-raw",
+      "/private/tmp/cmm-round17-enstatite-raw",
+      "/private/tmp/cmm-round17-saline-raw",
+      "/private/tmp/cmm-round18-catalyst-raw",
+      "/private/tmp/cmm-round18-dunite-raw",
+      "/private/tmp/cmm-round18-mineral-feeds-raw",
+      "/private/tmp/cmm-round18-products-raw",
+      "/private/tmp/cmm-round19-hydrogenation-catalyst-raw",
+      "/private/tmp/cmm-round19-iron-manganese-raw",
+      "/private/tmp/cmm-round19-manganese-residue-raw",
+      "/private/tmp/cmm-round19-tailings-raw",
+      "/private/tmp/cmm-round20-goethite-raw",
+      "/private/tmp/cmm-round20-laterite-raw",
+      "/private/tmp/cmm-round20-mafic-tailings-raw",
+      "/private/tmp/cmm-round20-nodule-raw",
+      "/private/tmp/cmm-round21-crusts-raw",
+      "/private/tmp/cmm-round21-pcb-raw",
+      "/private/tmp/cmm-round21-ree-mud-raw",
+      "/private/tmp/cmm-round22-concretions-raw",
+      "/private/tmp/cmm-round22-pcb-raw",
+      "/private/tmp/cmm-round22-pv-raw",
+      "/private/tmp/cmm-round22-sulfides-raw",
+      "/private/tmp/cmm-round23-crusts-raw",
+      "/private/tmp/cmm-round23-ghiorse-raw",
+      "/private/tmp/cmm-round23-identity-gaps-raw",
+      "/private/tmp/cmm-round23-lcd-raw",
+      "/private/tmp/cmm-round23-rey-mud-raw",
+      "/private/tmp/cmm-round24-copper-slag-raw",
+      "/private/tmp/cmm-round24-frontier-raw",
+      "/private/tmp/cmm-round24-nimh-raw",
+      "/private/tmp/cmm-round24-sulfuric-raw",
+      "/private/tmp/cmm-round25-bf-dust-raw",
+      "/private/tmp/cmm-round25-button-raw",
+      "/private/tmp/cmm-round25-frontier-raw",
+      "/private/tmp/cmm-round25-oil-ash-raw",
+      "/private/tmp/cmm-round26-eaf-dust-raw",
+      "/private/tmp/cmm-round26-packaging-raw",
+      "/private/tmp/cmm-round26-root-raw",
+      "/private/tmp/cmm-round26-superalloy-raw",
+      "/private/tmp/cmm-round27-eaf-slag-raw",
+      "/private/tmp/cmm-round27-goethite-raw",
+      "/private/tmp/cmm-round27-packaging-raw",
+      "/private/tmp/cmm-round27-root-raw",
+      "/private/tmp/cmm-round27-superalloy-raw",
+      "/private/tmp/cmm-round28-black-shale-research",
+      "/private/tmp/cmm-round28-goethite-research",
+      "/private/tmp/cmm-round28-tatra-research",
+      "/private/tmp/cmm-round28-tire-research",
+      "/private/tmp/cmm-round29-bastnaesite-research",
+      "/private/tmp/cmm-round29-ilmenite-research",
+      "/private/tmp/cmm-round29-tungsten-waste-research",
+      "/private/tmp/cmm-round29-zinc-ore-research",
+      "/private/tmp/cmm-round30-basalt-research",
+      "/private/tmp/cmm-round30-chromite-research",
+      "/private/tmp/cmm-round30-pyrrhotite-research",
+      "/private/tmp/cmm-round30-tungsten-research",
+      "/private/tmp/cmm-round31-chromite-tailings-research",
+      "/private/tmp/cmm-round31-ilmenite-research",
+      "/private/tmp/cmm-round31-kaolin-research",
+      "/private/tmp/cmm-round31-kaolin-waste-research",
+      "/private/tmp/cmm-round31-stibnite-research",
+      "/private/tmp/cmm-round31-tungsten-research",
+      "/private/tmp/cmm-round32-arsenopyrite-research",
+      "/private/tmp/cmm-round32-bornite-research",
+      "/private/tmp/cmm-round32-chromitite-research",
+      "/private/tmp/cmm-round32-molybdenite-research",
+      "/private/tmp/cmm-round33-chalcocite-research",
+      "/private/tmp/cmm-round33-covellite-research",
+      "/private/tmp/cmm-round33-molybdenite-research",
+      "/private/tmp/cmm-round33-pyrite-research",
+      "/private/tmp/cmm-round34-galena-research",
+      "/private/tmp/cmm-round34-greigite-research",
+      "/private/tmp/cmm-round34-mackinawite-research",
+      "/private/tmp/cmm-round34-uraninite-research",
+      "/private/tmp/cmm-round35-anglesite-research",
+      "/private/tmp/cmm-round35-jarosite-research",
+      "/private/tmp/cmm-round35-ningyoite-research",
+      "/private/tmp/cmm-round35-schwertmannite-research",
+      "/private/tmp/cmm-round36-moolooite-research/raw",
+      "/private/tmp/cmm-round7-ho-er-gd-raw",
+      "/private/tmp/cmm-round7-terbium-raw",
+      "/private/tmp/cmm-round8-sc-pr-raw",
+      "/private/tmp/cmm-round9-cs-sr-raw",
+      "/private/tmp/cmm-round9-ru-rh-raw",
+      "/private/tmp/cmm-round9-si-sn-raw"
+    ],
+    "exit_code": 0,
+    "hits_lines": 228,
+    "stderr": "",
+    "boundaries": "Current worktree and original checkout record/research/review/history directories plus existing absolute cmm-*-research/raw directory roots referenced by their text. Hidden/ignored included; relevant symlinks followed. Binary PDF/image/Office/ZIP excluded from text scan; retained extracted texts and metadata searched. Not machine-wide. Own raw contains new primary and is distinguished from prior coverage.",
+    "hits_sha256": "782a4e3398ef89e7977067635afcc3af32ca410f52075ae4dc31628256057289"
+  },
+  "dedup_assessment": "No existing moolooite owner or selected2021 experiment found in the current/original maintained corpus, history, research or reviews in the declared boundary. Prior raw hits are IMA rows and a Suyamud2020 reference to abiotic copper oxalate. Newly acquired2021/2023 material is not prior coverage. Text search includes hidden/ignored entries and follows symlinks; unextracted binary contents were excluded, so this is not a universal prior-download absence claim.",
+  "adopted_source": {
+    "doi": "10.1038/s41598-021-03600-5",
+    "title": "Copper oxalate formation by lichens and fungi",
+    "first_author": "Olga V. Frank-Kamenetskaya",
+    "year": 2021,
+    "journal": "Scientific Reports",
+    "volume": "11",
+    "article": "24239",
+    "version": "Complete nine-page publisher PDF; original complete JATS and publisher HTML; six original publisher figures; original DOCX Supplementary Tables S1–S3.",
+    "license": "CC BY4.0 stated on original page9; all raw full text remains outside Git.",
+    "inspection": "Entire main text including references read; original Figures1–6 visually inspected on pages2,4,5,6. Original DOCX XML table cells for TablesS1–S3 read completely; no embedded media. Main has no tables. DOI metadata/title/authors match Crossref.",
+    "material": "Weathered chalcopyrite-bearing ore fragments with malachite, azurite, goethite and Cu/Fe-rich X-ray-amorphous material. Laboratory precipitation on secondary surface phases is distinct from natural moolooite occurrence, copper element and pure chalcopyrite.",
+    "organism": "Conidia from ten-day Aspergillus niger Ch4/07 culture, source-isolated from damaged marble. Live NCBI5061 verifies species; KF768341.1 is598-base ribosomal/ITS sequence explicitly naming Ch4/07, marble source and taxon5061, not strainTaxID or genome.",
+    "conditions": "Approximately5x5mm surface-phase fragments submerged in15mL Czapek-Dox in Petri dishes, glucose30g/L and specified mineral salts, initialpH5.5, room20–25C, five-to-six days, triplicate. No exact inoculum density or pH trajectory reported; no fragment sterilization, matched uninoculated/killed/filtrate control described.",
+    "phase_basis": "Figure5b/c laboratory PXRD assigns moolooite; day5 also wheatleyite, day6 assigned wheatleyite absent. Residual substrate peaks remain. Figure5d Raman is field-lichen material and must not be silently transferred to all lab specimens. Figure6 c–f microscopy compares surfaces.",
+    "outcome": "Qualitative culture-associated phase formation, with no measured recovery denominator, isolated copper-product yield or demonstrated industrial deployment.",
+    "inference_boundary": "Oxalate-mediated precipitation is proposed; no direct oxalate assay or control comparison establishes necessity of live metabolism. Morphology differences and measured Fe in some crystals do not constitute an independently varied Fe inhibition series, rate measurement, or crystallographic proof of substitution."
+  },
+  "identity": {
+    "ima_release": "September2026",
+    "page": 147,
+    "name": "Moolooite",
+    "approved_formula": "Cu(C2O4)·nH2O",
+    "status": "A",
+    "approval": "1980-082",
+    "authority_pdf_reuse": {
+      "checked_at": "2026-10-11T22:18:05.176503+00:00",
+      "original_path": "/private/tmp/cmm-round33-pyrite-research/raw/ima2026.pdf",
+      "retained_path": "/private/tmp/cmm-round36-moolooite-research/raw/ima2026.pdf",
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "fresh_download": false,
+      "source": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf"
+    },
+    "live_landing": "https://cnmnc.units.it/ links September2026 at inspection; initial /ima-master-list route404 preserved. Authority introduction defines status/approval versus original description1986.",
+    "hydration": "Main2021 monohydrate notation conflicts with variable nH2O in its own Supplementary TablesS1–S2 and IMA. No exact water occupancy adopted."
+  },
+  "source_limits": [
+    "Field25fragment survey in July2019 is environmental occurrence, not a lichen inoculation experiment or industrial recovery. Associated TableS3 fungi are not experimentally assigned causal organisms.",
+    "Maintext says five lichen species; TableS3 lists four lichen names. No lichen-count claim adopted. The18 listed micromycetes do not resolve producer identity.",
+    "Field Raman and lab PXRD are explicitly different specimens; morphology/EDX alone does not establish phase purity.",
+    "Iron inhibition and field wetting/drying dissolution are author explanations from different surfaces/morphologies; no controlled iron-dose or field kinetic series.",
+    "The wording industrial sources before TableS2 does not turn its literature feed inventory into evidence for deployment of this experiment.",
+    "No affecting correction/retraction surfaced in bounded query results or publisher metadata; Crossref relation is empty and update-to absent. This is not exhaustive proof that no notice exists."
+  ],
+  "candidate_inventory": [
+    {
+      "key": "frank2021",
+      "doi": "10.1038/s41598-021-03600-5",
+      "decision": "Curated narrow phase-formation observation; independent review still required",
+      "access": "Complete main/figures/SI and authority checked"
+    },
+    {
+      "key": "synthetic_crystal2023",
+      "doi": "10.3390/ijms24076786",
+      "decision": "Deferred source-only structure lead; no experimental claims imported",
+      "access": "Complete JATS acquired and body extracted; not all13 original figures, tables and ZIP crystallographic supplement independently inspected. A synthetic analogue is not a new fungal experiment. IMA plus2021 own SI already suffice to avoid fixed-hydrate assertion."
+    },
+    {
+      "key": "glukhova2018",
+      "url": "https://eprints.gla.ac.uk/160983/13/160983.pdf",
+      "decision": "Prioritize follow-up for inactive-biomass versus culture controls; no claim imported",
+      "access": "Primary institutional indexed excerpts only; entire main/SI not acquired this round. Excerpt reports a heat-killed Cu-oxalate arm; useful challenge to universal metabolic-necessity claims."
+    },
+    {
+      "key": "fomina2005",
+      "doi": "10.1128/AEM.71.1.371-381.2005",
+      "decision": "Deferred independent source family",
+      "access": "Discovery abstract and2021 references only; no new measurements imported."
+    },
+    {
+      "key": "brown_rot2023",
+      "doi": "10.3390/cryst13030432",
+      "decision": "Deferred culture/substrate comparison; root owns other oxalate scope",
+      "access": "Primary indexed results only; complete figures/methods not adopted."
+    },
+    {
+      "key": "zhao2020",
+      "doi": "10.1016/j.ibiod.2020.105081",
+      "decision": "Deferred metal-sheet substrate extension",
+      "access": "Institutional source link and2021SI citation only, not full experiment reviewed."
+    }
+  ],
+  "raw_acquisitions": [
+    [
+      {
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8688476/fullTextXML",
+        "requested_at": "2026-10-11T22:17:33.742061+00:00",
+        "path": "/private/tmp/cmm-round36-moolooite-research/raw/zelenskaya2021.xml",
+        "status": 200,
+        "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8688476/fullTextXML",
+        "content_type": "application/xml",
+        "bytes": 68632,
+        "sha256": "3b06169cc69ac27caf8b43e3b3d8618fb4b776a59dbbe28ac3ee0e77ee8a993d",
+        "finished_at": "2026-10-11T22:17:35.224108+00:00"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41598-021-03600-5",
+        "requested_at": "2026-10-11T22:17:33.742883+00:00",
+        "path": "/private/tmp/cmm-round36-moolooite-research/raw/zelenskaya2021.html",
+        "status": 200,
+        "final_url": "https://www.nature.com/articles/s41598-021-03600-5?error=cookies_not_supported&code=d561bd7c-99af-44c8-977b-ccde1ab0bf0e",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 350383,
+        "sha256": "c14c9f975fd7df973c834c3eff2af372cf2cb3d44bd0f31b21eeb8914a8c5c92",
+        "finished_at": "2026-10-11T22:17:35.724133+00:00"
+      },
+      {
+        "url": "https://www.nature.com/articles/s41598-021-03600-5.pdf",
+        "requested_at": "2026-10-11T22:17:33.743250+00:00",
+        "path": "/private/tmp/cmm-round36-moolooite-research/raw/zelenskaya2021.pdf",
+        "status": 200,
+        "final_url": "https://www.nature.com/articles/s41598-021-03600-5.pdf?error=cookies_not_supported&code=b23b2af9-ff32-45bb-8aca-2f0ebb300054",
+        "content_type": "application/pdf",
+        "bytes": 3416781,
+        "sha256": "ca8936b3f1d1b7a86033c1ff65fe393475c569d5ef16ce1ef6fe245e4855b299",
+        "finished_at": "2026-10-11T22:17:36.761360+00:00"
+      },
+      {
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10094873/fullTextXML",
+        "requested_at": "2026-10-11T22:17:33.743507+00:00",
+        "path": "/private/tmp/cmm-round36-moolooite-research/raw/moolooite2023.xml",
+        "status": 200,
+        "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10094873/fullTextXML",
+        "content_type": "application/xml",
+        "bytes": 174727,
+        "sha256": "429a20a1eba675a9e25548780cbf2e4153555b52078e47d256d0bdda98a35d48",
+        "finished_at": "2026-10-11T22:17:34.993185+00:00"
+      },
+      {
+        "url": "https://api.crossref.org/works/10.1038/s41598-021-03600-5",
+        "requested_at": "2026-10-11T22:17:34.993235+00:00",
+        "path": "/private/tmp/cmm-round36-moolooite-research/raw/crossref2021.json",
+        "status": 200,
+        "final_url": "https://api.crossref.org/works/10.1038/s41598-021-03600-5",
+        "content_type": "application/json",
+        "bytes": 18199,
+        "sha256": "0e014a4324513270ba99f727f41b5507db014af6e852cf1fbc293aaa7e799176",
+        "finished_at": "2026-10-11T22:17:35.306955+00:00"
+      },
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061&mode=Info",
+        "requested_at": "2026-10-11T22:17:35.224147+00:00",
+        "path": "/private/tmp/cmm-round36-moolooite-research/raw/ncbi5061.html",
+        "status": 200,
+        "final_url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061&mode=Info",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 32594,
+        "sha256": "0824ee919f6db65fda7e74f4dd87782203f761df3b7fea530055e6b55a473c92",
+        "finished_at": "2026-10-11T22:17:35.653021+00:00"
+      },
+      {
+        "url": "https://cnmnc.units.it/ima-master-list",
+        "requested_at": "2026-10-11T22:17:35.306985+00:00",
+        "path": "/private/tmp/cmm-round36-moolooite-research/raw/ima-current.html",
+        "error": "<HTTPError 404: 'Not Found'>",
+        "finished_at": "2026-10-11T22:17:36.279045+00:00"
+      }
+    ],
+    [
+      {
+        "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41598-021-03600-5/MediaObjects/41598_2021_3600_MOESM1_ESM.docx",
+        "requested_at": "2026-10-11T22:18:56.173714+00:00",
+        "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-supplement.docx",
+        "status": 200,
+        "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41598-021-03600-5/MediaObjects/41598_2021_3600_MOESM1_ESM.docx",
+        "content_type": "application/octet-stream",
+        "bytes": 42239,
+        "sha256": "8b3ad390aecd14a34d28f0fea90899736b53555ce177d56dc3f05edd77d5629d",
+        "finished_at": "2026-10-11T22:19:02.898819+00:00"
+      },
+      {
+        "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KF768341&rettype=gb&retmode=text",
+        "requested_at": "2026-10-11T22:18:56.174952+00:00",
+        "path": "/private/tmp/cmm-round36-moolooite-research/raw/ncbi-KF768341.gb",
+        "status": 200,
+        "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KF768341&rettype=gb&retmode=text",
+        "content_type": "text/plain",
+        "bytes": 2709,
+        "sha256": "925e0dcf7e8571abe9668ff2d22775b2d4b3d80e7ee04bf303b86ab2d404f757",
+        "finished_at": "2026-10-11T22:18:56.733478+00:00"
+      },
+      {
+        "url": "https://cnmnc.units.it/",
+        "requested_at": "2026-10-11T22:18:56.175318+00:00",
+        "path": "/private/tmp/cmm-round36-moolooite-research/raw/ima-home.html",
+        "status": 200,
+        "final_url": "https://cnmnc.units.it/",
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 26639,
+        "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9",
+        "finished_at": "2026-10-11T22:18:56.953546+00:00"
+      },
+      {
+        "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-021-03600-5/MediaObjects/41598_2021_3600_Fig1_HTML.jpg",
+        "requested_at": "2026-10-11T22:18:56.175676+00:00",
+        "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-fig1.jpg",
+        "status": 200,
+        "final_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-021-03600-5/MediaObjects/41598_2021_3600_Fig1_HTML.jpg",
+        "content_type": "image/jpeg",
+        "bytes": 940734,
+        "sha256": "c330cb9895f7fa6421b1b7fd2432c3aa00da1511975ef59c22e5637c4a41741a",
+        "finished_at": "2026-10-11T22:18:56.445411+00:00"
+      },
+      {
+        "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-021-03600-5/MediaObjects/41598_2021_3600_Fig2_HTML.png",
+        "requested_at": "2026-10-11T22:18:56.445481+00:00",
+        "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-fig2.png",
+        "status": 200,
+        "final_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-021-03600-5/MediaObjects/41598_2021_3600_Fig2_HTML.png",
+        "content_type": "image/png",
+        "bytes": 701010,
+        "sha256": "20c3c75b11ad588a62c09d1e387d73cca8c0db666b85cc2c189068b91920bf63",
+        "finished_at": "2026-10-11T22:19:03.593266+00:00"
+      },
+      {
+        "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-021-03600-5/MediaObjects/41598_2021_3600_Fig3_HTML.jpg",
+        "requested_at": "2026-10-11T22:18:56.733526+00:00",
+        "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-fig3.jpg",
+        "status": 200,
+        "final_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-021-03600-5/MediaObjects/41598_2021_3600_Fig3_HTML.jpg",
+        "content_type": "image/jpeg",
+        "bytes": 875144,
+        "sha256": "da934f22abc0c2f4d4e42f2105ec1ee7ed6b9d2af5cd836ca0727664253431ea",
+        "finished_at": "2026-10-11T22:19:21.278834+00:00"
+      },
+      {
+        "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-021-03600-5/MediaObjects/41598_2021_3600_Fig4_HTML.jpg",
+        "requested_at": "2026-10-11T22:18:56.953577+00:00",
+        "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-fig4.jpg",
+        "status": 200,
+        "final_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-021-03600-5/MediaObjects/41598_2021_3600_Fig4_HTML.jpg",
+        "content_type": "image/jpeg",
+        "bytes": 466164,
+        "sha256": "b60bd24471ca61f95882fd91f189c72a2e036ae6ee3521b9e3083d4fbdbdefce",
+        "finished_at": "2026-10-11T22:18:57.451205+00:00"
+      },
+      {
+        "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-021-03600-5/MediaObjects/41598_2021_3600_Fig5_HTML.png",
+        "requested_at": "2026-10-11T22:18:57.451242+00:00",
+        "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-fig5.png",
+        "status": 200,
+        "final_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-021-03600-5/MediaObjects/41598_2021_3600_Fig5_HTML.png",
+        "content_type": "image/png",
+        "bytes": 384977,
+        "sha256": "1b6a14e99d130d6d8afab667bd5985f1730bbb53ff7f82a701f107ca9bbd8937",
+        "finished_at": "2026-10-11T22:19:22.453280+00:00"
+      },
+      {
+        "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-021-03600-5/MediaObjects/41598_2021_3600_Fig6_HTML.jpg",
+        "requested_at": "2026-10-11T22:19:02.898874+00:00",
+        "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-fig6.jpg",
+        "status": 200,
+        "final_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-021-03600-5/MediaObjects/41598_2021_3600_Fig6_HTML.jpg",
+        "content_type": "image/jpeg",
+        "bytes": 731934,
+        "sha256": "3388d701ddfda24e261f92f2d599e4c8faa54e566313bed6346d985b8ca30c1a",
+        "finished_at": "2026-10-11T22:19:03.592645+00:00"
+      }
+    ]
+  ],
+  "filename_mapping": {
+    "timestamp_utc": "2026-10-11T22:19:44.792249+00:00",
+    "reason": "Early filename shorthand used second-author surname. Verified first author is Olga V. Frank-Kamenetskaya; canonical bibliography always follows primary/Crossref. Historical acquisition receipts retain original filenames; content unchanged.",
+    "mappings": [
+      {
+        "old": "/private/tmp/cmm-round36-moolooite-research/raw/zelenskaya2021-body.txt",
+        "new": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-body.txt",
+        "sha256": "426229285ca149ffb517fb95b3bb81a913d0633f0d5dbe952bef3291794877ed"
+      },
+      {
+        "old": "/private/tmp/cmm-round36-moolooite-research/raw/zelenskaya2021-pages",
+        "new": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-pages"
+      },
+      {
+        "old": "/private/tmp/cmm-round36-moolooite-research/raw/zelenskaya2021.html",
+        "new": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021.html",
+        "sha256": "c14c9f975fd7df973c834c3eff2af372cf2cb3d44bd0f31b21eeb8914a8c5c92"
+      },
+      {
+        "old": "/private/tmp/cmm-round36-moolooite-research/raw/zelenskaya2021.pdf",
+        "new": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021.pdf",
+        "sha256": "ca8936b3f1d1b7a86033c1ff65fe393475c569d5ef16ce1ef6fe245e4855b299"
+      },
+      {
+        "old": "/private/tmp/cmm-round36-moolooite-research/raw/zelenskaya2021.txt",
+        "new": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021.txt",
+        "sha256": "7f3aa05995145cb17fd844471b93e5e0097742c91a848eb7353c5c7ab6056f30"
+      },
+      {
+        "old": "/private/tmp/cmm-round36-moolooite-research/raw/zelenskaya2021.xml",
+        "new": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021.xml",
+        "sha256": "3b06169cc69ac27caf8b43e3b3d8618fb4b776a59dbbe28ac3ee0e77ee8a993d"
+      }
+    ]
+  },
+  "record": {
+    "path": "data/records/moolooite.yaml",
+    "sha256": "72144841927e02ab54655961f051db7b7d013a36dec5ca4274602bc7e0c03777"
+  },
+  "history": {
+    "path": "history/records/moolooite/2026-10-11T222034Z-codex-1ba2ba.yaml",
+    "sha256": "48cd5d3518374edb4a8a13899e5b6e68c835daa3cc3d372d01918e5801602df5"
+  },
+  "validation": {
+    "command": "UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate data/records/moolooite.yaml",
+    "exit_code": 0,
+    "result": "Checked 1 record(s); 0 failed.",
+    "log_sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e",
+    "batch_and_reviews": "Parent-coordinated, pending at author handoff; no independent verdict claimed."
+  },
+  "next_actions": [
+    "Independent native scientific review of exact frozen record/history using original full primary and artifacts.",
+    "Run corrected/final cohort validation and review coverage through parent.",
+    "For future extension inspect complete Glukhova2018 primary/SI and organism resolution before adding an inactive-biomass comparison; do not transfer its result to Ch4/07.",
+    "For exact water occupancy or synthetic structure claims independently inspect2023 original figures/tables/CIF, retaining current mineral authority scope."
+  ],
+  "raw_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/acquisition1.json",
+      "bytes": 3595,
+      "sha256": "f6cd703eee67ff6fa98b75848b80c69b536e5159f39595ded432e552fd2f2c73"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/acquisition2.json",
+      "bytes": 5742,
+      "sha256": "d068ca84359cc5d1c3f80f847f40f71e08086570a69355ff5972035315852cee"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/crossref2021.json",
+      "bytes": 18199,
+      "sha256": "0e014a4324513270ba99f727f41b5507db014af6e852cf1fbc293aaa7e799176"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/dedup-errors.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/dedup-hits.txt",
+      "bytes": 100755,
+      "sha256": "782a4e3398ef89e7977067635afcc3af32ca410f52075ae4dc31628256057289"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/dedup.json",
+      "bytes": 12626,
+      "sha256": "8eaa9e09b3c49e788c7cd3af461236beb217f61da405d589637da22b179cd951"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/filename-correction.json",
+      "bytes": 1807,
+      "sha256": "57d95f44c7635f4a6755622f7518e8ae11e7fc7936cfe265a63f72339e8b64b9"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-body.txt",
+      "bytes": 22319,
+      "sha256": "426229285ca149ffb517fb95b3bb81a913d0633f0d5dbe952bef3291794877ed"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-fig1.jpg",
+      "bytes": 940734,
+      "sha256": "c330cb9895f7fa6421b1b7fd2432c3aa00da1511975ef59c22e5637c4a41741a"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-fig2.png",
+      "bytes": 701010,
+      "sha256": "20c3c75b11ad588a62c09d1e387d73cca8c0db666b85cc2c189068b91920bf63"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-fig3.jpg",
+      "bytes": 875144,
+      "sha256": "da934f22abc0c2f4d4e42f2105ec1ee7ed6b9d2af5cd836ca0727664253431ea"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-fig4.jpg",
+      "bytes": 466164,
+      "sha256": "b60bd24471ca61f95882fd91f189c72a2e036ae6ee3521b9e3083d4fbdbdefce"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-fig5.png",
+      "bytes": 384977,
+      "sha256": "1b6a14e99d130d6d8afab667bd5985f1730bbb53ff7f82a701f107ca9bbd8937"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-fig6.jpg",
+      "bytes": 731934,
+      "sha256": "3388d701ddfda24e261f92f2d599e4c8faa54e566313bed6346d985b8ca30c1a"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-pages/page-01.png",
+      "bytes": 260036,
+      "sha256": "7a1af614754b18963f61df17f01502e6ffa2c480bb665cea4ac9cddd6f30019a"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-pages/page-02.png",
+      "bytes": 808026,
+      "sha256": "64c204bfffbfae70f7933263f8ecdfac43471c8bae06923bf87db5b38ec9c135"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-pages/page-03.png",
+      "bytes": 321738,
+      "sha256": "3833245e01630376146df4caa46b61bfe83ca66afb13e722e7e556a696a31711"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-pages/page-04.png",
+      "bytes": 697976,
+      "sha256": "f6ba88ff7d1acd28a8bdddad742836f77c6188daacf28f8715dbd1b46a166cd8"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-pages/page-05.png",
+      "bytes": 673203,
+      "sha256": "35f7f4fb1e9afece50af116abd92d320868d23390e3dd6f98b7ca95e21e6cd04"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-pages/page-06.png",
+      "bytes": 574648,
+      "sha256": "7dcbaec8f9e3c11c2daad0cae497a94e71fc8eb92845d7c3a22b551a7fd80443"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-pages/page-07.png",
+      "bytes": 303722,
+      "sha256": "78e9345beee78ac4456936dd5e6e78231a0c9bf30986cd7fb103df5c41d7fd69"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-pages/page-08.png",
+      "bytes": 286399,
+      "sha256": "40079a198c166fa446a187c4a08af093eecfc6bb575a878d036048c89fca0d12"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-pages/page-09.png",
+      "bytes": 64372,
+      "sha256": "e1cb127180783e59a5ec784dc8a5bd90780cc8d64e37569982059781ef712fc3"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-supplement.docx",
+      "bytes": 42239,
+      "sha256": "8b3ad390aecd14a34d28f0fea90899736b53555ce177d56dc3f05edd77d5629d"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021-supplement.txt",
+      "bytes": 9301,
+      "sha256": "12276d5fb1ddc9d3838e02dd2b8486ea6fdbc367519b07566345dbcb4bd70019"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021.html",
+      "bytes": 350383,
+      "sha256": "c14c9f975fd7df973c834c3eff2af372cf2cb3d44bd0f31b21eeb8914a8c5c92"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021.pdf",
+      "bytes": 3416781,
+      "sha256": "ca8936b3f1d1b7a86033c1ff65fe393475c569d5ef16ce1ef6fe245e4855b299"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021.txt",
+      "bytes": 36095,
+      "sha256": "7f3aa05995145cb17fd844471b93e5e0097742c91a848eb7353c5c7ab6056f30"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/frank2021.xml",
+      "bytes": 68632,
+      "sha256": "3b06169cc69ac27caf8b43e3b3d8618fb4b776a59dbbe28ac3ee0e77ee8a993d"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/ima-home.html",
+      "bytes": 26639,
+      "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/ima-intro.txt",
+      "bytes": 7763,
+      "sha256": "b48b86fbfd4e8b86a8ce8f16bae8622518cebba252a4e349e3c96ff27262d581"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/ima-moolooite.txt",
+      "bytes": 3442,
+      "sha256": "986568ad2fe1c9d5ac27e965f836d96e9e8fb0482222e77b570523d04d175bde"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/ima-page-147.png",
+      "bytes": 261419,
+      "sha256": "373c49493dffed07bf0e63be469af51cf83c87c2b4e81a675be5a2f8d372680e"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/ima-reuse.json",
+      "bytes": 403,
+      "sha256": "a8bfc238640c35b1392f1f3ad125a6046e36e09c3cbd08193d3008d397d8f173"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/ima2026.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/moolooite2023-body.txt",
+      "bytes": 49284,
+      "sha256": "1dfad11222aa859cacf56eaf5cb68c04b8d07b3348fc2dc63fe694c86c013deb"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/moolooite2023.xml",
+      "bytes": 174727,
+      "sha256": "429a20a1eba675a9e25548780cbf2e4153555b52078e47d256d0bdda98a35d48"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/ncbi-KF768341.gb",
+      "bytes": 2709,
+      "sha256": "925e0dcf7e8571abe9668ff2d22775b2d4b3d80e7ee04bf303b86ab2d404f757"
+    },
+    {
+      "path": "/private/tmp/cmm-round36-moolooite-research/raw/ncbi5061.html",
+      "bytes": 32594,
+      "sha256": "0824ee919f6db65fda7e74f4dd87782203f761df3b7fea530055e6b55a473c92"
+    }
+  ]
+}

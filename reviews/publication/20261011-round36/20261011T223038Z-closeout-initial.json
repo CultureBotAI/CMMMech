@@ -1,0 +1,25 @@
+{
+  "timestamp_utc": "2026-10-11T22:30:38.068045+00:00",
+  "reviewer": "Codex /root/round27_eaf_slag; GPT-6; codex",
+  "trusted_base": "1ef6fdde620a4053fbfff99c51065082dce32d39",
+  "verdict": "needs_curation",
+  "scope": "Read-only review of newly supplied future closeout helper; no helper execution, publication or scientific assessment",
+  "authorship": "Reviewer authored uramphite. Root independently reviews that record; this finding concerns root-authored operational helper only.",
+  "findings": [
+    {
+      "id": "F1",
+      "issue_key": "CMMMech.round36.closeout-receipt-binding",
+      "severity": "minor",
+      "status": "open",
+      "helper": "/private/tmp/cmm-round36-closeout.py",
+      "helper_sha256": "94bebb5f64937c6c3696f2cafa6124087c6c58129313853a684c75d21b9339f8",
+      "snapshot": "/private/tmp/cmm-round36-publication-audit/20261011T223038Z-closeout-initial.py",
+      "locators": "Receipt assertions before def run, and hard-coded just-check/preservation/retained-worktree claims in body before the POST.",
+      "observation": "The helper hard-codes 308 passed/3 skipped without reading actual postmerge log. It does not assert postmerge topic_head or hosted topic/base against commit receipt, nor cleanup head/tree identity, clean_detached_worktree, main_clean, exact7187/8 preserved counts or unchanged skill Git-state flags before printing those facts in an external comment.",
+      "scope_limit": "This is a missing final-message guard; no evidence that an actual false comment was posted or that scientific records are wrong. Existing underlying verification/sync helpers produce the required facts.",
+      "correction": "Before writing/POSTing the final comment, bind each receipt to exact reviewed head/tree/base/merge, read and check the actual postmerge just-check command/log section, assert every printed cleanup/preservation flag and inventory count, and report actual hosted run links.",
+      "acceptance_checks": "Read the corrected helper and verify these assertions precede external POST; later runtime execution must use successful actual postmerge/preservation/hosted receipts. No corpus test rerun is needed for an outside-Git operational wrapper."
+    }
+  ],
+  "unresolved": "Coordinator notified; correction and any tracking issue pending at this observation."
+}

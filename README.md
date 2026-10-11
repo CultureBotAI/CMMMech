@@ -208,6 +208,8 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Jarosite](data/records/jarosite.yaml) | Sulfur-oxidizing cultures promote reduction and dissolution of K-jarosite | Sulfur substrates, pH and nonzero abiotic controls limit causal and quantitative comparisons |
 | [Ningyoite](data/records/ningyoite.yaml) | U(IV)-phosphate formation in thermophilic cultures and a spore preparation | Species versus strain scope, mixed products and minority-phase detection remain explicit |
 | [Schwertmannite](data/records/schwertmannite.yaml) | Resting iron-oxidizing cells form an iron oxyhydroxysulfate material | Matched oxidation controls and biomass perturbations constrain formation and adsorption claims |
+| [Uramphite](data/records/uramphite.yaml) | Thermophilic culture transforms a precipitated ammonium uranyl-phosphate analogue | High-loading nulls, dissolved-pathway uncertainty and source discrepancies limit the reduction claim |
+| [Moolooite](data/records/moolooite.yaml) | Fungal culture-associated copper oxalate formation on weathered ore surfaces | Variable hydration, mixed phases and missing matched controls prevent pure-product or exclusive biological claims |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -250,7 +252,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [thirty-third expansion reviews](research/ingests/round33-20261011-publication.md),
 [thirty-fourth expansion reviews](research/ingests/round34-20261011-publication.md),
 [thirty-fifth expansion reviews](research/ingests/round35-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round35-frontier-20261011.md), and
+[thirty-sixth expansion reviews](research/ingests/round36-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round36-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

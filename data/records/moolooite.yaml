@@ -1,0 +1,136 @@
+id: cmmmech:moolooite
+name: Moolooite
+material_kind: mineral
+description: >-
+  Moolooite is an approved copper oxalate mineral, IMA 1980-082, listed as
+  Cu(C2O4).nH2O in the September 2026 IMA compilation. The variable hydration
+  is retained rather than treating every specimen as a measured monohydrate.
+  It is distinct from elemental copper, other copper oxalates such as
+  wheatleyite, and the heterogeneous ore used in the experiment below.
+  No criticality designation is inherited from copper.
+sources:
+- id: ima_2026_09
+  title: >-
+    IMA-CNMNC. The New IMA List of Minerals, September 2026. Moolooite row,
+    PDF page 147; introductory column definitions and distribution terms.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-11'
+- id: frank_kamenetskaya2021
+  title: >-
+    Frank-Kamenetskaya et al. (2021). Copper oxalate formation by lichens and
+    fungi. Scientific Reports 11:24239. Complete nine-page article, Materials
+    and methods, Results, Discussion, Figures 1-6 and Supplementary Tables S1-S3.
+  url: https://doi.org/10.1038/s41598-021-03600-5
+  accessed_on: '2026-10-11'
+- id: ncbi_niger
+  title: NCBI Taxonomy 5061. Aspergillus niger, species node.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061&mode=Info
+  accessed_on: '2026-10-11'
+- id: genbank_ch407
+  title: >-
+    GenBank KF768341.1. Aspergillus niger strain Ch 4/07 ribosomal RNA and
+    internal transcribed spacer sequence, 598 bases; source qualifiers and taxonomy.
+  url: https://www.ncbi.nlm.nih.gov/nuccore/KF768341.1
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: niger_associated_copper_oxalate_precipitation
+  name: Moolooite-assigned precipitation during fungal culture on weathered copper ore
+  process: biomineralization
+  microbial: true
+  organisms:
+  - id: NCBITaxon:5061
+    label: Aspergillus niger
+  description: >-
+    Moolooite-assigned crystals appeared during laboratory culture inoculated
+    with Aspergillus niger Ch4/07 on secondary copper-bearing phases coating
+    weathered chalcopyrite-bearing ore. Powder diffraction and microscopy
+    support mineral formation associated with the culture. Reaction of fungal
+    oxalate with copper released from the substrate is the proposed explanation;
+    the study does not isolate live-cell activity from extracellular metabolites
+    or establish an exclusive enzymatic mechanism. It reports neither an
+    isolated copper product yield nor industrial deployment.
+  context: >-
+    The source reports Ch4/07 isolated from damaged Proconesos marble at
+    Chersonesos, Crimea, with identification based on ITS sequence KF768341.
+    The verified sequence record KF768341.1 labels strain Ch 4/07 and maps
+    to species NCBITaxon:5061; it is not a genome or a strain-specific TaxID.
+    Approximately 5 by 5 mm fragments of secondary copper-bearing surface
+    phases from Voronov Bor ore were immersed in 15 mL liquid Czapek-Dox
+    medium in Petri dishes. The medium contained, in g/L, NaNO3 2.0,
+    KH2PO4 1.0, MgSO4.7H2O 0.5, KCl 0.5, FeSO4.7H2O 0.01 and glucose 30.0.
+    Initial pH was 5.5. Conidia from a ten-day culture on solid Czapek-Dox
+    medium were inoculated; cultivation lasted five to six days at room
+    temperature, reported as 20-25 degrees C, in triplicate. The authors
+    monitored pH but do not report its numerical trajectory or endpoint.
+    Inoculum density, fragment sterilization and matched uninoculated,
+    killed-biomass or cell-free-metabolite controls are not specified for
+    this assay. The natural feed included malachite, azurite and ferruginous
+    material with goethite and a copper/iron-rich X-ray-amorphous component;
+    it was not pure chalcopyrite or a single synthetic copper salt.
+  evidence:
+  - source_ref: frank_kamenetskaya2021
+    supports: support
+    explanation: >-
+      Results on in-vitro formation and Figures 5b-c and 6c-f identify
+      moolooite after five days on the secondary copper-bearing surfaces.
+      The displayed laboratory powder patterns are from malachite-bearing
+      material; morphology and microanalysis provide additional substrate
+      comparisons. Phase identification used powder X-ray diffraction with
+      the ICDD PDF-2 2016 database. Figure 5c also identifies wheatleyite
+      at day five, whereas Figure 5b at day six no longer shows that assigned
+      phase. Other substrate peaks remain, so these patterns do not establish
+      pure moolooite, complete substrate conversion or a phase mass balance.
+  - source_ref: frank_kamenetskaya2021
+    supports: partial
+    explanation: >-
+      The original main text writes Cu(C2O4).H2O, while its Supplementary
+      Tables S1-S2 use Cu(C2O4).nH2O. This experiment does not determine
+      specimen-specific water content. Figure 5d Raman data concern the
+      field lichen specimen, not a separate Raman confirmation of every
+      laboratory precipitate. Culture association and phase assignment are
+      supported, but no matched control series or direct oxalate assay
+      isolates the necessity or magnitude of fungal metabolism in this run.
+  - source_ref: frank_kamenetskaya2021
+    supports: partial
+    explanation: >-
+      Figure 6 compares crystal morphology on copper-carbonate surfaces
+      with that on ferruginous material. The authors infer inhibition of
+      crystallization by iron from the different shapes and report iron in
+      some crystals by EDX/WDX. Substrate composition varies simultaneously;
+      there is no independently varied iron-dose series or measured formation
+      rate. Iron substitution, surface adsorption and the proposed inhibition
+      therefore remain interpretations rather than demonstrated causal steps.
+  - source_ref: frank_kamenetskaya2021
+    supports: context_only
+    explanation: >-
+      The separate field survey collected 25 weathered ore fragments from
+      mine dumps in July 2019. Figures 4, 5a,d and 6a-b locate moolooite in
+      source-identified Lecidea inops thalli and apothecia, with powder
+      diffraction, Raman and microscopy evidence. This is environmental
+      occurrence, not an inoculated lichen experiment or deployment of a
+      recovery process. Other fungi listed in Table S3 do not become
+      experimentally verified causal organisms. Weather-driven dissolution
+      and different supersaturation in field biofilms are proposed explanations
+      of morphology, without a measured field kinetic series.
+  - source_ref: ncbi_niger
+    supports: context_only
+    explanation: >-
+      The authority verifies the current species name and taxon identifier;
+      species membership alone does not demonstrate the mineral-forming trait.
+  - source_ref: genbank_ch407
+    supports: context_only
+    explanation: >-
+      The deposited ribosomal/ITS sequence labels Ch 4/07 and a marble
+      isolation source, supporting the source's organism provenance. This
+      accession does not independently authenticate the experimental culture
+      or establish a molecular mechanism.
+curation_history:
+- timestamp: '2026-10-11T22:20:35Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: >-
+    Added moolooite identity and narrowly scoped fungal culture-associated
+    phase formation, retaining variable hydration, mixed substrates, control
+    gaps and separate environmental occurrence context.
+history_refs:
+- history/records/moolooite/2026-10-11T222034Z-codex-1ba2ba.yaml
