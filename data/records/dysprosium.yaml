@@ -1,0 +1,108 @@
+id: cmmmech:dysprosium
+name: Dysprosium
+material_kind: element
+description: >-
+  The element Dy, distinct from its dissolved ions, salts, magnets, minerals
+  and waste streams. The dated US designation concerns the named dysprosium
+  mineral commodity, without assigning criticality to every Dy-bearing
+  material. The mechanism records a laboratory study of dried brewing-yeast
+  biomass with synthetic Dy solutions; it does not establish recovery from
+  actual industrial effluent or a purified dysprosium product.
+identifiers:
+  - id: CHEBI:33377
+    label: dysprosium atom
+sources:
+  - id: chebi_dysprosium
+    title: 'ChEBI CHEBI:33377 - dysprosium atom; formula Dy, net charge 0'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:33377
+    accessed_on: '2026-10-11'
+  - id: usgs2025
+    title: >-
+      USGS (2025). Final 2025 List of Critical Minerals. Federal Register
+      90:50494-50497, document 2025-19813; dysprosium row on page 50496.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: zinicovscaia2023
+    title: >-
+      Zinicovscaia et al. (2023). The Remediation of Dysprosium-Containing
+      Effluents Using Cyanobacteria Spirulina platensis and Yeast Saccharomyces
+      cerevisiae. Microorganisms 11:2009; Sections 2-3, Figures 1-4 and Table 1.
+    url: https://doi.org/10.3390/microorganisms11082009
+    accessed_on: '2026-10-11'
+  - id: ncbi_saccharomyces
+    title: 'NCBI Taxonomy 4932 - Saccharomyces cerevisiae; species'
+    url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=4932&retmode=xml
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States of America
+    list_name: USGS Final List of Critical Minerals
+    edition: '2025; Federal Register 90:50494-50497, 7 November 2025'
+    classification: critical
+    source_ref: usgs2025
+mechanisms:
+  - id: dried_brewing_yeast_dysprosium_sorption
+    name: Dysprosium biosorption with dried Saccharomyces cerevisiae biomass
+    process: biosorption
+    microbial: true
+    organisms:
+      - id: NCBITaxon:4932
+        label: Saccharomyces cerevisiae
+    description: >-
+      Dried brewing-yeast biomass was associated with Dy uptake from synthetic
+      nitrate solutions. This is biosorption by inactive microbial biomass,
+      not metabolic uptake by growing yeast. Biomass elemental changes and
+      FTIR spectra are consistent with surface interactions, but do not
+      establish one exclusive molecular binding or ion-exchange mechanism.
+    context: >-
+      Biomass identified by the authors as S. cerevisiae came from a brewing
+      company in Chisinau, Moldova; no strain accession was supplied, so the
+      identifier establishes species-level scope only. Biomass was dried at
+      105 degrees C for 24 h and homogenized at 600 rpm for 10 min. Laboratory
+      triplicate batch assays used 0.5 g biomass in 50 mL solution, stirred
+      at 200 rpm, varying pH 2-6, contact time 5-120 min, initial Dy 10-100 mg/L
+      and temperature 20-50 degrees C. The pH-screening result below is
+      attributed to the reported one-hour experiment. Methods specify pH 3,
+      20 degrees C and 10 mg/L for kinetics, but the results text subsequently
+      says further experiments used pH 4; the exact common conditions across
+      experimental arms cannot therefore be reconstructed unambiguously.
+      The reagent is called dysprosium nitrate but its printed formula is
+      Dy(NO3)2·6H2O, inconsistent with the paper's Dy(III) framing; no precise
+      salt identifier is assigned here. Neutron activation analysis was
+      described for dried biomass before and after exposure, with certified
+      reference materials. A removal equation uses initial and final aqueous
+      Dy concentrations, but an assay method for the final aqueous concentration
+      is not specified. No matched biomass-free solution-control result,
+      desorption/reuse experiment, isolated product or scale-up was reported.
+    evidence:
+      - source_ref: zinicovscaia2023
+        supports: support
+        explanation: >-
+          Sections 2.2-2.4, Section 3.1 and Figure 1a support the dried-yeast
+          assay and its reported pH response: removal peaked at 68% at pH 3
+          and fell to about 21% at pH 6. The 68% figure is the pH-screening
+          result, not a universal maximum: Figure 1b and its text separately
+          report approximately 85% after 60 min in the kinetics series.
+          The conflicting pH descriptions and different arm outcomes are
+          retained rather than averaged or combined into one optimum protocol.
+      - source_ref: zinicovscaia2023
+        supports: partial
+        explanation: >-
+          Table 1's 5.84 +/- 0.68 mg/g is a fitted Langmuir capacity, not
+          measured experimental uptake. Section 3.1 and Figure 1c instead
+          report a highest tested yeast uptake of 3.85 mg/g at 100 mg/L
+          initial Dy. Section 3.3 and Figure 4b compare biomass elemental
+          composition and FTIR spectra; these support a binding interpretation
+          without an abiotic loss control or an ion-exchange mass balance.
+          These limitations, together with incomplete analytical reporting,
+          preclude assigning all apparent solution removal to a resolved
+          microbial surface mechanism or claiming selective Dy recovery.
+curation_history:
+  - timestamp: '2026-10-11T05:19:12Z'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Added verified elemental identity, dated US2025 designation and narrowly
+      scoped dried-yeast biosorption evidence, preserving source inconsistencies
+      and analytical/control limitations; scientific review is separate.
+history_refs:
+  - history/records/dysprosium/2026-10-11T051910Z-codex-da17fe.yaml

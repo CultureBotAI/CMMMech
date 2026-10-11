@@ -1,0 +1,340 @@
+schema_version: 1.0.0
+review_id: 20261011T052640Z-dysprosium-round5-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of dysprosium expansion record
+started_at: '2026-10-11T05:21:45Z'
+finished_at: '2026-10-11T05:26:40Z'
+reviewer:
+  identity: Codex /root/cmm5_iron
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/cmm5_ree; captured exact
+    target and context hashes before primary scientific assessment, independently
+    read source methods/results and images, and made no edits to either reviewed record.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The dysprosium element identity, dated US designation and deliberately bounded
+  laboratory mechanism are supported by the inspected sources. Source limitations
+  are retained in the record; no actionable findings in the exact reviewed state.
+source:
+  git_revision: e305dcc67e526e585349c60f849567f4c2bfc835
+  state: working_tree
+  inputs:
+  - path: data/records/dysprosium.yaml
+    sha256: 1a35259d03d043ad627d975c90a19d849141a9f8301167d5ca2eadf8efb42799
+    role: target
+  - path: history/records/dysprosium/2026-10-11T051910Z-codex-da17fe.yaml
+    sha256: 83e0f364b4944672679e944f00e6c755924f9eb668c571ecffe6f0b25fac2cd0
+    role: context
+  - path: research/ingests/round5-ree-20261011.json
+    sha256: a2d1b930e718198cfa16e414a6456f0cb3df3a9629105ed7cb23fe474df70bfd
+    role: context
+  - path: research/ingests/round5-ree-20261011.md
+    sha256: 9d797b46d7dadda24447aed1871361ada77c7dda559186bfa22a851045580445
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+scope:
+  description: All scientific fields and current CREATE provenance of this maintained
+    record.
+  selection: Assigned named record; complete single-record assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:dysprosium
+targets:
+- target_id: cmmmech:dysprosium
+  path: data/records/dysprosium.yaml
+  label: Dysprosium
+  kind: maintained
+  record_class: CriticalMineralRecord
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/dysprosium.yaml
+    role: maintained_record
+checks:
+- check_id: records
+  name: Affected record validation
+  status: passed
+  required: true
+  summary: Reviewer executed; 2 records checked, zero failures, terminal exit 0.
+  target_ids:
+  - cmmmech:dysprosium
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/lanthanum.yaml data/records/dysprosium.yaml
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: history
+  name: Append-only history against trusted base
+  status: passed
+  required: true
+  summary: Reviewer executed; 42 history records checked, zero errors, terminal exit
+    0.
+  target_ids:
+  - cmmmech:dysprosium
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate-history --base e305dcc67e526e585349c60f849567f4c2bfc835
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: nonempty
+  name: Nonempty corpus validation
+  status: passed
+  required: true
+  summary: Reviewer executed; 32 records checked, zero failures, terminal exit 0.
+  target_ids:
+  - cmmmech:dysprosium
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: batch
+  name: Complete batch gate
+  status: passed
+  required: true
+  summary: 'Parent executed and reported terminal exit 0; reviewer inspected /private/tmp/cmm-round5-check.log:
+    307 passed, 3 skipped, lint passed, 32 records and 41 histories valid. This gate
+    preceded a subsequent germanium-only wording/history edit; La/Dy bytes stayed
+    unchanged. The reviewer reran affected, corpus and 42-session history gates afterward.'
+  target_ids:
+  - cmmmech:dysprosium
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    just check
+  exit_code: 0
+  expected_exit_code: 0
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/dysprosium.yaml
+  locator: Entire inspected record; distinct inline CREATE and linked canonical CREATE
+    sidecar
+  accessed_at: '2026-10-11T05:26:40Z'
+  support: supports
+  summary: Exact scientific and provenance bytes inspected; actor codex/GPT-6/codex
+    and target agree. Inline event and canonical session are separate actual events.
+  snapshot_sha256: 1a35259d03d043ad627d975c90a19d849141a9f8301167d5ca2eadf8efb42799
+- evidence_id: criticality
+  kind: authority
+  reference: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  locator: Final 2025 list; Federal Register 90:50494-50497, individual row on page
+    50496
+  accessed_at: '2026-10-11T05:26:40Z'
+  support: supports
+  summary: Live official edition explicitly names dysprosium; this is a named commodity
+    mapping to the elemental record, not a designation for every compound or resource
+    containing it.
+- evidence_id: search
+  kind: search
+  reference: Review-session web search and local corpus inspection
+  locator: Exact DOI searches with correction/retraction; relevant controls queries;
+    hidden and ignored local search
+  accessed_at: '2026-10-11T05:26:40Z'
+  support: context_only
+  summary: The bounded returned sets did not identify a direct correction, retraction
+    or contradictory replication of the curated assay. Original studies supply material
+    counterevidence and unresolved reporting gaps. This is not exhaustive literature
+    clearance.
+  search_scope: '2026-10-11 first returned sets for both exact DOIs plus correction/retraction,
+    followed by publisher/PubMed domain-limited queries; controls queries: Biotransformation
+    of lanthanum oxalic acid control supernatant; dysprosium Saccharomyces abiotic
+    biosorption 2023. Search inspected original publisher/PubMed identities; unrelated
+    aggregated correction results were not used as scientific evidence. rg --no-ignore
+    --hidden covered data, history, research, reviews and /private/tmp/cmmmech-round5-ree-raw
+    for root IDs and exact DOIs. No separate pre-existing maintained root duplicate
+    found in that scope.'
+- evidence_id: identity
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:33377
+  locator: Curator-acquired current authority HTML; __NUXT_DATA__ compound-33377 chemical_data
+    and name
+  accessed_at: '2026-10-11T05:26:40Z'
+  support: supports
+  summary: 'Reviewer independently decoded the original authority payload: dysprosium
+    atom, Dy, net charge 0. Live reviewer web retrieval failed twice; retained authority
+    artifact and its dated receipt were used.'
+  snapshot_sha256: 57af4012adb455f2d0c7fe0d5aa3b18ba7b33fa17d8115d8adc6c0d896138703
+- evidence_id: taxon
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=4932
+  locator: Live ID, current name and Rank; retained NCBI XML independently read
+  accessed_at: '2026-10-11T05:26:40Z'
+  support: supports
+  summary: NCBITaxon:4932 resolves to Saccharomyces cerevisiae at species rank; it
+    cannot identify the unaccessioned brewery biomass strain.
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/microorganisms11082009
+  locator: PMC10458459 full XML, Sections 2.1-2.4, 3.1-3.3, conclusions, Tables 1-4
+    and captions
+  accessed_at: '2026-10-11T05:26:40Z'
+  support: supports
+  summary: Independent methods/results reading supports the deliberately narrow inactive-biomass
+    assay. Methods pH3 conflicts with subsequent-results pH4; the stated nitrate formula
+    conflicts with Dy(III); biomass NAA is described but the final aqueous assay is
+    not specified.
+  snapshot_sha256: 025e1d350a828e544079fa0101593cdc01faacc6bf668496295a5c1498b4944c
+- evidence_id: figures
+  kind: primary_source
+  reference: https://doi.org/10.3390/microorganisms11082009
+  locator: Independent visual inspection of original Figure1 and Figure4 JPGs under
+    /private/tmp/cmmmech-round5-ree-raw/PMC10458459
+  accessed_at: '2026-10-11T05:26:40Z'
+  support: partial
+  summary: Figure1 yeast panels support the separate pH maximum around68%, kinetic
+    result around85%, and highest tested3.85 mg/g at100 mg/L. Figure4b has intensity
+    differences without resolved exclusive molecular binding evidence.
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://www.mdpi.com/article/10.3390/microorganisms11082009/s1
+  locator: Supplement Figure S1 rendered PNG; original PDF retained in dy-supp
+  accessed_at: '2026-10-11T05:26:40Z'
+  support: context_only
+  summary: Independent visual inspection confirms thermodynamic lnKd versus1/T plots
+    only; these do not repair final-aqueous assay reporting or supply a biomass-free
+    control. Thermodynamic claims are not imported.
+  snapshot_sha256: ce7fe663fa3f757e936ed863f94ead0f6e86a66407560ba3dd94897d9cf32747
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Material, species and criticality grounding
+  outcome: supported
+  summary: Element, species-level biomass scope and dated named-commodity criticality
+    are appropriately distinguished.
+  target_ids:
+  - cmmmech:dysprosium
+  evidence_ids:
+  - record
+  - identity
+  - taxon
+  - criticality
+- assessment_id: mechanism
+  area: evidence
+  topic: Dried-biomass sorption observation
+  outcome: supported
+  summary: Narrow association with biomass is supported; source mechanisms and missing
+    controls are explicitly qualified.
+  target_ids:
+  - cmmmech:dysprosium
+  evidence_ids:
+  - primary
+  - figures
+  - supplement
+  - record
+  dimensions:
+  - name: material
+    value: Synthetic dysprosium nitrate solution; exact printed salt formula is inconsistent
+      and has no assigned salt ID.
+    definition: Experimental dissolved species are separate from neutral-element identity.
+    evidence_ids:
+    - primary
+    - identity
+    - record
+  - name: organism
+    value: S. cerevisiae brewery residue, Chisinau; species4932 only, no strain accession.
+    definition: Taxonomic scope supported by source, without invented strain resolution.
+    evidence_ids:
+    - primary
+    - taxon
+  - name: biomass_state
+    value: Dried105 C for24 h; homogenized600 rpm10 min.
+    definition: Inactive microbial biomass; assay is not growing-cell accumulation.
+    evidence_ids:
+    - primary
+  - name: conditions
+    value: 0.5 g in50 mL,200 rpm,triplicate; pH2-6,time5-120 min,initialDy10-100 mg/L,T20-50
+      C. Methods kinetics pH3,20 C,10 mg/L conflicts with results subsequent pH4.
+    definition: Source experimental arms and unresolved common conditions are retained.
+    evidence_ids:
+    - primary
+  - name: controls
+    value: Unexposed biomass for NAA/FTIR; certified analytical reference materials;
+      no matched biomass-free solution-control result reported.
+    definition: Material and analytical comparators do not quantify abiotic solution
+      loss.
+    evidence_ids:
+    - primary
+    - figures
+  - name: outcome
+    value: pH-screen68% atpH3 and~21% atpH6; separate kinetic~85% at60 min; highest
+      tested3.85 mg/g at100 mg/L; fitted Langmuir5.84 +/-0.68 mg/g.
+    definition: Distinct experimental endpoints and model capacity; no mg/kg observation
+      created by inappropriate unit conversion.
+    evidence_ids:
+    - primary
+    - figures
+  - name: deployment
+    value: Laboratory synthetic feed with inactive brewery biomass.
+    definition: Biomass industrial origin is not industrial treatment; no isolated
+      product, desorption/reuse or selective recovery.
+    evidence_ids:
+    - primary
+    - record
+- assessment_id: uncertainty
+  area: quantity
+  topic: Measured versus fitted and internally inconsistent evidence
+  outcome: supported
+  summary: The record keeps separate experimental arms, pH and reagent conflicts,
+    unspecified aqueous assay and absent solution control visible. It does not turn
+    fitted capacity or FTIR intensity changes into resolved causal or recovery claims.
+  target_ids:
+  - cmmmech:dysprosium
+  evidence_ids:
+  - primary
+  - figures
+  - record
+- assessment_id: provenance
+  area: provenance
+  topic: Distinct inline and canonical CREATE events
+  outcome: supported
+  summary: Actual actor, times, target paths and changes are consistent; canonical
+    sidecars validate against the trusted base. Reviewer did not alter scientific
+    or provenance bytes.
+  target_ids:
+  - cmmmech:dysprosium
+  evidence_ids:
+  - record
+- assessment_id: coverage
+  area: completeness
+  topic: Bounded adversarial coverage
+  outcome: supported
+  summary: Full record scope was tested against direct primary methods/results, relevant
+    figures, authorities and bounded correction/counterevidence search; absence claims
+    remain scoped.
+  target_ids:
+  - cmmmech:dysprosium
+  evidence_ids:
+  - search
+  - record
+findings: []
+actions: []
+limitations:
+- Unaccessioned brewery material permits species-level annotation only.
+- The primary source has conflicting pH descriptions, a chemically inconsistent printed
+  nitrate formula, and no explicit method for the final aqueous concentration in its
+  removal equation.
+- No matched biomass-free solution-control result or ion-exchange mass balance was
+  found in the full methods/results or relevant supplement; all apparent removal cannot
+  be assigned uniquely to a resolved binding mechanism.
+- Measured and fitted capacities are separate, and no selective recovery, regeneration,
+  purified product or industrial operation is demonstrated.
+- Reviewer live ChEBI retrieval failed; the dated retained original authority HTML
+  was independently decoded and hashed. No raw replicate dataset was available; published
+  values and figures were assessed.
+notes:
+- Assessment started after the inspect snapshot. Source state remains working_tree
+  at the preserved e305 base; this does not attest committed target bytes.
+- No record edits were made by reviewer. Source-identified shortcomings are scientific
+  limits already retained, not unresolved curation findings.
+links:
+- research/ingests/round5-ree-20261011.md
+- research/ingests/round5-ree-20261011.json
+tags:
+- round5
+- independent-review
+- dysprosium
+- primary-literature
+- bounded-evidence

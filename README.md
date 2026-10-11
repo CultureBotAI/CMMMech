@@ -37,6 +37,11 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Chalcopyrite](data/records/chalcopyrite.yaml) | Acidophile leaching of a chalcopyrite concentrate | Mineral species remains distinct from the impure experimental feed and copper element |
 | [Sphalerite](data/records/sphalerite.yaml) | Controlled leaching of iron-bearing sphalerite | Chemistry-matched null results limit claims of universal microbial enhancement |
 | [GaAs-production hydroxide sludge](data/records/gaas-production-hydroxide-sludge.yaml) | Acidophile leaching of a characterized secondary resource | Acid dissolution dominates; higher-loading arsenic counterevidence remains explicit |
+| [Iron](data/records/iron.yaml) | Thermophilic Ax17 reduction of ferrihydrite to magnetite-rich material | Mixed phases and minor abiotic magnetite prevent an exclusive microbial product claim |
+| [Germanium](data/records/germanium.yaml) | Catechol-associated accumulation by *Pseudomonas putida* ATCC 33015 | Low solution depletion and provisional transport interpretation; companion assays remain distinct |
+| [Lanthanum](data/records/lanthanum.yaml) | Lanthanum oxalate precipitation using fungal culture supernatant | Cell-free reaction and subsequent thermal processing are separate stages |
+| [Dysprosium](data/records/dysprosium.yaml) | Dried brewer's yeast biosorption in a defined solution | Inactive biomass, source condition inconsistencies and limited analytical detail constrain the claim |
+| [Magnesium](data/records/magnesium.yaml) | Fungal formation of magnesium oxalate from phosphate feeds | Struvite and synthetic dittmarite stay distinct; identified crystals are not an isolated metal yield |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -48,7 +53,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [second expansion review](research/ingests/round2-20261011-publication.md),
 [third expansion reviews](research/ingests/round3-20261011-publication.md),
 [fourth expansion review and publication preparation](research/ingests/round4-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round4-frontier-20261011.md), and
+[fifth expansion reviews](research/ingests/round5-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round5-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

@@ -1,0 +1,85 @@
+id: cmmmech:magnesium
+name: Magnesium
+material_kind: element
+description: >-
+  Magnesium (Mg), the chemical element. The named magnesium commodity in
+  the US 2025 list is mapped to this element; its designation is not inherited
+  by every magnesium mineral. The experiment concerns magnesium-containing
+  mineral transformation, not production of elemental magnesium metal.
+identifiers:
+  - id: CHEBI:25107
+    label: magnesium atom
+sources:
+  - id: chebi_magnesium
+    title: 'ChEBI:25107 - magnesium atom; formula Mg, net charge zero'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:25107
+    accessed_on: '2026-10-11'
+  - id: us_2025
+    title: >-
+      US Department of the Interior, US Geological Survey. Final 2025 List of
+      Critical Minerals, Federal Register 90 FR 50494-50497, 7 November 2025,
+      document 2025-19813; Magnesium row.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: suyamud_2020
+    title: >-
+      Suyamud, Ferrier, Csetenyi, Inthorn and Gadd (2020). Biotransformation of
+      struvite by Aspergillus niger: phosphate release and magnesium
+      biomineralization as glushinskite. Environmental Microbiology
+      22(4):1588-1602. DOI 10.1111/1462-2920.14949; Figures 3-5,
+      Table 2 and Experimental procedures, solid-medium experiment.
+    url: https://doi.org/10.1111/1462-2920.14949
+    accessed_on: '2026-10-11'
+  - id: ncbi_atcc1015
+    title: 'NCBI Taxonomy 380704 - Aspergillus niger ATCC 1015, strain entry'
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=380704&mode=Info
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States
+    list_name: US Geological Survey Final List of Critical Minerals
+    edition: '2025 final, published 7 November 2025'
+    classification: critical
+    source_ref: us_2025
+mechanisms:
+  - id: fungal_magnesium_oxalate_formation
+    name: Magnesium oxalate formation during fungal mineral transformation
+    process: biomineralization
+    description: >-
+      Aspergillus niger ATCC 1015 formed magnesium oxalate dihydrate
+      (glushinskite) during growth with magnesium ammonium phosphate feeds.
+    context: >-
+      Laboratory malt extract agar contained 1% w/v natural struvite from
+      a Veolia wastewater site in Exeter, UK, or synthetic feed identified
+      by XRD as dittmarite (MgNH4PO4.H2O), despite the paper's synthetic
+      struvite terminology. Colonies grew from 5-mm mycelial plugs over
+      cellophane for seven days at 25 degrees C in darkness. Crystals were
+      extracted from agar with hot water, washed and dried before analysis.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:380704
+        label: Aspergillus niger ATCC 1015
+    evidence:
+      - source_ref: suyamud_2020
+        supports: support
+        explanation: >-
+          Figures 3-5 show crystals beneath colonies, Mg/C/O by EDXA,
+          and XRD patterns assigned to magnesium oxalate dihydrate in both
+          feed treatments, compared with struvite and dittmarite controls.
+          Figure 5 reports representative patterns from at least three
+          determinations. Table 2 documents accompanying acidification.
+      - source_ref: suyamud_2020
+        supports: partial
+        explanation: >-
+          Mineral-free fungal and feed controls do not isolate oxalate's
+          causal contribution from acidification with a chemistry-matched
+          comparison. Phase identification establishes formation, not an
+          isolated magnesium recovery yield or industrial deployment.
+curation_history:
+  - timestamp: '2026-10-11T05:16:51Z'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Curated verified element and list identity with a phase-resolved,
+      bounded fungal magnesium oxalate experiment.
+history_refs:
+  - history/records/magnesium/2026-10-11T051632Z-codex-2acf05.yaml
