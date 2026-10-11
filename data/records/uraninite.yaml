@@ -1,0 +1,143 @@
+id: cmmmech:uraninite
+name: Uraninite
+material_kind: mineral
+description: >-
+  Uraninite is the UO2 mineral species listed with grandfathered status G
+  and original-description year 1845 in the September 2026 IMA compilation.
+  It is distinct from elemental uranium, uranyl salts, biomass-bound U(IV)
+  complexes and uranium-bearing ores. The observation below concerns
+  laboratory-formed nanocrystalline UO2 identified as uraninite, not a
+  natural ore feed. No criticality designation is inherited from uranium.
+sources:
+  - id: ima_2026_09
+    title: >-
+      IMA-CNMNC. The New IMA List of Minerals, September 2026. Uraninite
+      row on PDF page 224; column definitions and terms on pages 1-2.
+      Retained original rechecked on the access date.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-11'
+  - id: marshall2006
+    title: >-
+      Marshall et al. (2006). c-Type Cytochrome-Dependent Formation of
+      U(IV) Nanoparticles by Shewanella oneidensis. PLOS Biology, e268.
+      DOI 10.1371/journal.pbio.0040268. Methods, Results, Figures 1-6;
+      original Figures S1-S6, Protocol S1 and Tables S1-S3.
+    url: https://doi.org/10.1371/journal.pbio.0040268
+    accessed_on: '2026-10-11'
+  - id: bernier_latmani2010
+    title: >-
+      Bernier-Latmani et al. (2010). Non-uraninite Products of Microbial
+      U(VI) Reduction. Environmental Science & Technology 44, 9456-9462.
+      DOI 10.1021/es101675a. Methods, Tables 1-2, Figures 1-2;
+      Supporting Information section SI-1, Tables SI-1/SI-2,
+      Figures SI-1/SI-2 and sample B in Figure SI-4.
+    url: https://doi.org/10.1021/es101675a
+    accessed_on: '2026-10-11'
+  - id: ncbi_mr1
+    title: NCBI Taxonomy 211586, Shewanella oneidensis MR-1, strain node.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586
+    accessed_on: '2026-10-11'
+mechanisms:
+  - id: mr1_cytochrome_associated_uraninite_formation
+    name: Cytochrome-associated formation of nanocrystalline uraninite by MR-1
+    process: redox_transformation
+    microbial: true
+    organisms:
+      - id: NCBITaxon:211586
+        label: Shewanella oneidensis MR-1
+    description: >-
+      Living resting MR-1 cells reduce dissolved U(VI) and form U-bearing
+      nanoparticles with diffraction consistent with uraninite. A
+      cytochrome-maturation-deficient comparator fails to show comparable
+      U(VI) reduction, while MtrC and OmcA deletion comparators retain
+      slower activity. MtrC contributes to extracellular reduction and
+      particle localization; it is not demonstrated to be the sole
+      reductase. Extracellular polymeric material is associated with
+      many particles, but its complete composition and causal function
+      remain unresolved. This is a laboratory transformation observation,
+      not a recovered-product yield or industrial deployment.
+    context: >-
+      Marshall et al. used washed cells from a 16 h, 30 degrees C
+      tryptic-soy-broth-minus-dextrose culture. Resting-cell assays used
+      250 micromolar U(VI) added as uranyl acetate, 10 mM sodium lactate,
+      30 mM sodium bicarbonate buffer initially pH 7.0 and a final density
+      of 2 x 10^8 cells/mL. The anoxic N2/CO2 80:20 assay was incubated
+      at 30 degrees C with 25 rpm shaking; kinetic measurements extended
+      to 48 h, and standard localization samples were collected at 24 h.
+      Soluble U(VI) in less-than-0.2-micrometre filtrates was measured by
+      kinetic phosphorescence. TEM, selected-area diffraction and elemental
+      analysis provided separate evidence about particles. Figure 1 shows
+      means from representative experiments without a stated replicate
+      count or uncertainty bars. No matched no-cell or killed-cell
+      reduction time course is reported in that figure. The CcmC-deficient
+      strain is a genetic comparator, not an abiotic blank. Heme and immune
+      localization used a separate 100 micromolar U(VI) condition; other
+      EPS characterization used fumarate in place of uranium. These
+      preparations are not pooled as one quantitatively equivalent assay.
+    evidence:
+      - source_ref: marshall2006
+        supports: support
+        explanation: >-
+          Figure 1 and Results show falling aqueous U(VI) in wild-type
+          and slower MtrC/OmcA deletion cultures, with little change in
+          the CcmC-deficient comparator. Figure 2I and Figure S4 combine
+          lattice imaging, selected-area diffraction and U elemental
+          signals, supporting nanocrystalline UO2 rather than inferring
+          a mineral solely from solution loss. Reported 1-5 nm particles
+          occur extracellularly and in the periplasm, with altered
+          localization in the MtrC deletion comparators. Table S1
+          identifies the MR-1 derivatives and Figure S1 tests protein
+          loss; these comparators do not prove that one cytochrome is
+          the exclusive pathway.
+      - source_ref: marshall2006
+        supports: partial
+        explanation: >-
+          Results and Figure S2 show electron transfer from purified
+          reduced MtrC to uranyl citrate in a separate cell-free assay;
+          OmcA shows no detectable corresponding activity under those
+          conditions despite its whole-cell deletion phenotype. This
+          ligand and preparation differ from the carbonate-buffered
+          cellular experiment. Figures 3-6 support EPS association, not
+          a demonstrated long-term immobilization benefit. The authors
+          report partial particle oxidation during heme staining and
+          leave EPS genesis and environmental stability unresolved.
+          Figure 1 still shows residual aqueous U(VI) at 24 h despite
+          the narrative describing complete reduction within 24 h;
+          no exact complete-conversion endpoint or mineral yield is
+          adopted here.
+      - source_ref: bernier_latmani2010
+        supports: partial
+        explanation: >-
+          The separate MR-1 medium comparison limits extrapolation from
+          U(VI) reduction to uraninite formation. Table 1, Figures 1-2
+          and SI Figures SI-1/SI-2 compare hydrogen-amended bicarbonate/
+          PIPES medium with fresh or spent Widdel low-phosphate medium.
+          Sample A in the simple medium has diffraction-identified
+          uraninite, whereas WLP samples are dominated by biomass-bound
+          non-uraninite U(IV) interpretations. Figure 2B nevertheless
+          allows a small amount of very small uraninite from broad
+          diffraction rings, so the prose saying no uraninite is not
+          treated as absolute phase absence. Main Table 2 and SI-1 allow
+          P or C neighbors in the EXAFS fits; exclusive phosphate
+          coordination is unproven. The main methods' generic 500
+          micromolar addition conflicts with Table 1's 400 or 100
+          micromolar WLP entries. This is contextual evidence for
+          medium-dependent products, not a matched replication of the
+          2006 lactate assay or a refutation of its observed particles.
+      - source_ref: ncbi_mr1
+        supports: context_only
+        explanation: >-
+          NCBI resolves 211586 at strain rank as Shewanella oneidensis
+          MR-1. This identifies the wild-type strain; the experimental
+          deletion derivatives are described by the primary paper and
+          are not assigned invented separate taxonomy identifiers.
+curation_history:
+  - timestamp: '2026-10-11T21:07:17Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Added uraninite identity and phase-supported MR-1 nanoparticle formation,
+      retaining mutant and ligand limits, medium-dependent alternative products
+      and source contradictions without assigning complete conversion or recovery.
+history_refs:
+  - history/records/uraninite/2026-10-11T210704Z-codex-2b5341.yaml

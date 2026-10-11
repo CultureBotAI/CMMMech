@@ -1,0 +1,138 @@
+id: cmmmech:galena
+name: Galena
+material_kind: mineral
+description: >-
+  Galena is the PbS mineral species listed as grandfathered in the September
+  2026 IMA list; its original-description year is unresolved there. It is
+  distinct from elemental lead, anglesite, manufactured PbS reagents and
+  mixed lead ores or flotation concentrates. The experiment below concerns
+  galena within a natural mixed concentrate, not a pure natural endmember.
+  No criticality designation is inherited from lead.
+sources:
+  - id: ima_2026_09
+    title: >-
+      IMA-CNMNC. The New IMA List of Minerals, September 2026. Galena row on
+      PDF page 79; status and year definitions on page 1 and distribution
+      terms on page 2. Same-day retained original rechecked, not downloaded anew.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-11'
+  - id: pacholewska2004
+    title: >-
+      Pacholewska, M. (2004). Bioleaching of galena flotation concentrate.
+      Physicochemical Problems of Mineral Processing 38, 281-290. Complete
+      original main: Methods pp. 282-284, Tables 1-3, Figures 1-3 and
+      results pp. 284-290. Publisher landing supplies issue 1; no verified
+      DOI is assigned here.
+    url: https://www.journalssystem.com/ppmp/Bioleaching-of-galena-flotation-concentrate,79494,0,2.html
+    accessed_on: '2026-10-11'
+  - id: ncbi_ferrooxidans
+    title: >-
+      NCBI Taxonomy 920. Acidithiobacillus ferrooxidans, species rank and
+      current name. Species identifier only; not an authentication of F3-02.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=info
+    accessed_on: '2026-10-11'
+mechanisms:
+  - id: culture_associated_sulfate_transformation
+    name: Culture-associated galena transformation with lead sulfate precipitation
+    process: redox_transformation
+    microbial: true
+    organisms:
+      - id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+    description: >-
+      Inoculation with the source-labelled A. ferrooxidans F3-02 culture
+      accompanies faster ferrous-iron depletion, higher redox potential and
+      a residue with less galena and more anglesite than the sterile-labelled
+      comparator. The observations support a conditional culture-associated
+      transformation in a mixed concentrate. Ferric attack and oxidation of
+      reduced sulfur are proposed contributions, not separately isolated
+      pathways. Lead sulfate precipitation also occurs without inoculation,
+      and low dissolved lead shows no inoculated advantage. This is not
+      demonstrated lead extraction into solution or isolated-product recovery.
+    context: >-
+      Laboratory shake-flask assay using flotation concentrate from ZGH
+      Boleslaw S.A., Poland. The source estimates approximately 80% PbS by
+      XRD, with hydrocerussite, marcasite, sphalerite, pyrite and minor gypsum
+      and quartz; these approximate starting phase percentages do not close
+      exactly to 100%. Table 1 gives 69.3% Pb and 18.4% total S. Particle-size
+      distribution and washing or other pre-assay solid treatment are not
+      specified. F3-02 was isolated from ferruginous mineral water at
+      Piwniczna-Lomnica, cultivated in modified 2K medium and not initially
+      adapted to lead compounds. No sequence or authenticated collection
+      accession is supplied for that strain. The medium contains, in g/L,
+      (NH4)2SO4 3.0, KCl 0.1, MgSO4.7H2O 0.5, Ca(NO3)2 0.01,
+      K2HPO4 0.5 and FeSO4.7H2O 9.84, nominally 2.0 g/L Fe(II),
+      with sulfuric acid adjustment to nominal pH 2. The paper specifies
+      5% w/v concentrate, 100 mL solution and 10 mL culture in 300 mL
+      Erlenmeyer flasks, 25 degrees C and 130 rpm; whether the inoculum
+      is included in the 100 mL and loading denominator is unresolved.
+      Table 2 starts at pH 2.2 and 2.159 g/L Fe(II), differing from the
+      nominal medium values. Sampling extends to 384 h. Replicate number,
+      uncertainty, inoculum cell density, inoculum washing, sterilization
+      method and verification of control sterility are unreported. The
+      comparator is described as sterile, but its pH and redox trajectories
+      differ from the inoculated treatment; no dynamic chemistry-matched
+      control isolates a direct cell effect. Pb and Zn were measured by
+      atomic absorption, Fe(II) by manganometry, residue sulfur fractions
+      gravimetrically and phases by XRD; residues were air-dried on filters
+      for SEM. Residue masses and a closed Pb/S balance are not supplied.
+    evidence:
+      - source_ref: pacholewska2004
+        supports: support
+        explanation: >-
+          Methods and Table 2 report the culture and comparator. At 288 h,
+          inoculated Fe(II) is reported as 0.00 g/L versus 1.113 g/L in the
+          control, with potentials 560.8 versus 286.5 mV against Ag/AgCl.
+          These printed zeros have no supplied detection limit. Page 286
+          and Figure 1 identify galena and anglesite in both residues:
+          the source estimates approximately 43% galena and 40% anglesite
+          in the inoculated residue versus 62% and 25% in the control.
+          These are residue phase estimates with unreported quantitative
+          uncertainty, not feed-mass conversion or recovery fractions.
+          Figures 2-3 show altered grain surfaces and cell-like structures
+          assigned to the inoculated culture; microscopy alone does not
+          authenticate the strain or establish a direct enzymatic attack.
+      - source_ref: pacholewska2004
+        supports: partial
+        explanation: >-
+          Table 2 reports dissolved Pb of 0.0021 g/L with culture versus
+          0.0022 g/L in the control at 288 h, and 0.0019 versus 0.0021 g/L
+          at 384 h. Thus greater sulfate-bearing residue formation is not
+          a demonstrated dissolved-Pb advantage. By 384 h both natural-feed
+          arms report Fe(II) as 0.00 g/L. Surface precipitation/passivation
+          is the author's explanation for slowing transformation, not an
+          independently varied coating experiment. The separate synthetic
+          PbS comparator reaches pH 5.4, retains 0.555 g/L Fe(II) and lacks
+          observed bacterial colonies at 384 h; it does not demonstrate
+          equivalent activity on pure PbS under maintained acidic conditions.
+      - source_ref: pacholewska2004
+        supports: partial
+        explanation: >-
+          Table 3 labels S_SO4/(S_total - S_SO4) as sulfur conversion and
+          prints 47.99% with culture versus 27.25% in the control at 288 h.
+          Those entries are consistent with 100 times residue sulfate-S
+          divided by residue sulfide-S, not the fraction of starting sulfide
+          converted. The sulfate-containing medium and other sulfide phases
+          prevent assigning that ratio specifically to oxidized galena sulfur.
+          The early control rows also contain ratio/value inconsistencies.
+          The abstract's twofold wording is only approximate; 47.99/27.25
+          is about 1.76. The 384 h inoculated ratio is 49.78%, despite prose
+          describing no further change. No verified PbS conversion percentage,
+          recoverable lead yield or industrial deployment is inferred.
+      - source_ref: ncbi_ferrooxidans
+        supports: context_only
+        explanation: >-
+          The authority resolves the reported species name to NCBI Taxonomy
+          920. It does not establish that F3-02 is the type strain or verify
+          the original isolate identification.
+curation_history:
+  - timestamp: '2026-10-11T21:04:40Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Created the galena mineral record and qualified natural-concentrate
+      transformation observation, preserving the sterile comparator,
+      synthetic-PbS limitation, low dissolved lead and non-mass-balanced
+      sulfur ratio rather than assigning a lead recovery yield.
+history_refs:
+  - history/records/galena/2026-10-11T210433Z-codex-a62b7d.yaml
