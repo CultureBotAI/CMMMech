@@ -190,6 +190,13 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Chromite](data/records/chromite.yaml) | Nitrate-dependent oxidation of operationally acid-extractable Fe(II) | The reported percentage is not chromite conversion or chromium recovery |
 | [Pyrrhotite](data/records/pyrrhotite.yaml) | Culture-associated oxidative weathering and secondary iron minerals | Normalized diffraction depletion is not a dissolved-iron or recovered-product yield |
 | [Tungsten skarn tailings](data/records/tungsten-skarn-tailings.yaml) | Nonmicrobial laboratory physical separation and field-weathering context | Prepared-feed tungsten distributions are distinct from concentrate purity and microbial recovery |
+| [Natural kaolin feed](data/records/kaolin.yaml) | Fungal culture-associated iron removal from mixed natural kaolin | Unlike control pH and incomplete mass accounting limit attribution and verified yield |
+| [Kaolin mine waste](data/records/kaolin-mine-waste.yaml) | Limited bacterial iron leaching in EDTA-containing medium | Medium-only leaching and poor removal constrain biological and beneficiation claims |
+| [Stibnite](data/records/stibnite.yaml) | Aerobic culture-associated antimony mobilization and oxidation | Loading conflict, abiotic chemistry and relative phases limit causal and recovery claims |
+| [Bornite](data/records/bornite.yaml) | Culture-associated copper leaching and biofilm observations | Mixed specimens, source conflicts and apparatus differences limit mineral-specific yield and causality |
+| [Arsenopyrite](data/records/arsenopyrite.yaml) | Culture-associated arsenic release and secondary-solid formation | Missing matched controls and incomplete mass accounting limit passivation and recovery claims |
+| [Molybdenite](data/records/molybdenite.yaml) | Controlled limited-leaching observation in a mixed natural specimen | Mo below 2 mg/L and qualitative residual phases do not establish zero dissolution or recovery |
+| [Chromite beneficiation tailings](data/records/chromite-beneficiation-tailings.yaml) | Separate bacterial and fungal treatment studies of mixed residues | Source unit conflicts, absent controls and incomplete percentage normalization remain explicit |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -228,7 +235,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [twenty-ninth expansion reviews](research/ingests/round29-20261011-publication.md),
 [thirtieth expansion reviews](research/ingests/round30-20261011-publication.md),
 [thirty-first expansion reviews](research/ingests/round31-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round31-frontier-20261011.md), and
+[thirty-second expansion reviews](research/ingests/round32-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round32-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

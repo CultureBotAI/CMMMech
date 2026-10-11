@@ -1,0 +1,1443 @@
+{
+  "timestamp_utc": "2026-10-11T19:50:00.143682+00:00",
+  "researcher": "codex (GPT-6; codex)",
+  "worktree": "/private/tmp/CMMMech-expansion-round32-20261011",
+  "branch": "curate/cmm-expansion-round32-20261011",
+  "trusted_base": "09c15cbfb7699e40ae4648b6b414784a00b488db",
+  "working_changes": "New molybdenite record, canonical CREATE history and this source dossier; other agents own their concurrent records.",
+  "record": "data/records/molybdenite.yaml",
+  "history": "history/records/molybdenite/2026-10-11T194752Z-codex-f27d24.yaml",
+  "validation": {
+    "started_at": "2026-10-11T19:48:23.815500+00:00",
+    "finished_at": "2026-10-11T19:48:26.324559+00:00",
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "cmmmech",
+      "validate",
+      "data/records/molybdenite.yaml"
+    ],
+    "exit_code": 0,
+    "log_sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e",
+    "record_sha256": "1fcf52ffb9a97856e1cb92358755f86801d9741dd2493a9c3a8e499a94884a3a",
+    "history_sha256": "83c28c85d96658de53ea2b1bffffe8f98a92199716b68e12bc844cdcdac9b180"
+  },
+  "search": {
+    "provider": "web search tool; publisher and university/authority routes",
+    "utc_date": "2026-10-11",
+    "queries": [
+      "molybdenite microbial bioleaching MoS2 bacteria primary full text",
+      "molybdenite bioleaching Acidithiobacillus controls molybdenum rhenium",
+      "\"molybdenite\" \"bioleaching\" \"Romano\" pdf",
+      "\"molybdenite-leaching\" Brierley 1974 pdf",
+      "\"molybdenite\" \"LR\" \"ferrooxidans\"",
+      "\"Estudo da dissolução oxidativa microbiológica\" \"doi\"",
+      "\"Molybdenite-leaching\" \"237\" \"247\" pdf Brierley",
+      "\"Comparative study\" \"molybdenite\" \"pdf\" Romano CSIC",
+      "\"10.1590/S0100-40422007000500008\"",
+      "\"07-AR06093\" \"suplementar\"",
+      "\"1095\" \"molibdenita\" \"suplementar\"",
+      "\"10.1590/S0100-40422007000500008\" correction retraction",
+      "\"molybdenite\" \"Nasernejad\" \"93\" bioleaching",
+      "\"molybdenite\" \"IMA\" \"1807\""
+    ],
+    "coverage": "First result sets, no date filter or pagination; bounded literature survey, not exhaustive"
+  },
+  "dedup": {
+    "started_at": "2026-10-11T19:46:53.257827+00:00",
+    "finished_at": "2026-10-11T19:46:53.584841+00:00",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-n",
+      "-i",
+      "--glob",
+      "!*.pdf",
+      "--glob",
+      "!*.png",
+      "--glob",
+      "!*.jpg",
+      "--glob",
+      "!*.jpeg",
+      "--glob",
+      "!*.docx",
+      "--glob",
+      "!*.xlsx",
+      "--glob",
+      "!*.zip",
+      "molybdenite|molibdenita|molybdenum disulfide|MoS2|S0100-40422007000500008|S0100-40422009000600022|tb10543|hydromet[.]2008[.]02[.]013|S0032-9592",
+      "/private/tmp/CMMMech-expansion-round32-20261011/data/records",
+      "/private/tmp/CMMMech-expansion-round32-20261011/research",
+      "/private/tmp/CMMMech-expansion-round32-20261011/reviews",
+      "/private/tmp/CMMMech-expansion-round32-20261011/history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history",
+      "/private/tmp/cmm-bes-ingest",
+      "/private/tmp/cmm-expansion-authorities-20261011",
+      "/private/tmp/cmm-expansion-copper-20261011",
+      "/private/tmp/cmm-ingest-manganese-chebi.html",
+      "/private/tmp/cmm-just-review-20261011",
+      "/private/tmp/cmm-next-eu",
+      "/private/tmp/cmm-next-li",
+      "/private/tmp/cmm-publish-code-review",
+      "/private/tmp/cmm-r12-industrial-review",
+      "/private/tmp/cmm-ree-ingest",
+      "/private/tmp/cmm-review-main-only-ohniqgia",
+      "/private/tmp/cmm-round10-b-f-independent",
+      "/private/tmp/cmm-round10-b-f-raw",
+      "/private/tmp/cmm-round10-b-f-review",
+      "/private/tmp/cmm-round10-batch-check.log",
+      "/private/tmp/cmm-round10-batch-history.log",
+      "/private/tmp/cmm-round10-batch-validation.log",
+      "/private/tmp/cmm-round10-graphite-local-search.txt",
+      "/private/tmp/cmm-round10-graphite-raw",
+      "/private/tmp/cmm-round10-graphite-review-history.log",
+      "/private/tmp/cmm-round10-graphite-review-validate.log",
+      "/private/tmp/cmm-round10-integration-receipt.json",
+      "/private/tmp/cmm-round10-natural-graphite-validation.log",
+      "/private/tmp/cmm-round10-nb-ta-raw",
+      "/private/tmp/cmm-round10-pr-independent-audit.json",
+      "/private/tmp/cmm-round10-ti-zr-raw",
+      "/private/tmp/cmm-round10-tizr-review",
+      "/private/tmp/cmm-round11-adversary-governance.log",
+      "/private/tmp/cmm-round11-adversary-review-check.log",
+      "/private/tmp/cmm-round11-baseline.log",
+      "/private/tmp/cmm-round11-batch-check.log",
+      "/private/tmp/cmm-round11-batch-history.log",
+      "/private/tmp/cmm-round11-batch-validation.log",
+      "/private/tmp/cmm-round11-be-independent-validation.log",
+      "/private/tmp/cmm-round11-be-rb-re-existing.txt",
+      "/private/tmp/cmm-round11-be-rb-re-posthistory.log",
+      "/private/tmp/cmm-round11-be-rb-re-prehistory.log",
+      "/private/tmp/cmm-round11-be-rb-re-raw",
+      "/private/tmp/cmm-round11-final-batch-receipts.json",
+      "/private/tmp/cmm-round11-final-check.log",
+      "/private/tmp/cmm-round11-final-history.log",
+      "/private/tmp/cmm-round11-final-independent-lu-tm-pm-validation.log",
+      "/private/tmp/cmm-round11-final-validation.log",
+      "/private/tmp/cmm-round11-he-local-search.txt",
+      "/private/tmp/cmm-round11-he-raw",
+      "/private/tmp/cmm-round11-independent-lu-tm-pm-validate.log",
+      "/private/tmp/cmm-round11-independent-publication-audit.json",
+      "/private/tmp/cmm-round11-independent-publication-audit.py",
+      "/private/tmp/cmm-round11-ir-os-hf-raw",
+      "/private/tmp/cmm-round11-ir-os-hf-review-validation.log",
+      "/private/tmp/cmm-round11-ir-os-hf-review-web.json",
+      "/private/tmp/cmm-round11-lu-tm-pm-prior-search.txt",
+      "/private/tmp/cmm-round11-lu-tm-pm-raw",
+      "/private/tmp/cmm-round11-lu-tm-pm-validation-after.log",
+      "/private/tmp/cmm-round11-lu-tm-validation-before.log",
+      "/private/tmp/cmm-round11-pm-validation-before.log",
+      "/private/tmp/cmm-round11-pre-correction-inputs",
+      "/private/tmp/cmm-round11-thulium-correction-after-history.log",
+      "/private/tmp/cmm-round11-thulium-correction-before-history.log",
+      "/private/tmp/cmm-round12-aluminium-boron-raw",
+      "/private/tmp/cmm-round12-carbon-metals-raw",
+      "/private/tmp/cmm-round12-carbonmetal-review-dedup.txt",
+      "/private/tmp/cmm-round12-carbonmetal-review-hashes.json",
+      "/private/tmp/cmm-round12-check.log",
+      "/private/tmp/cmm-round12-gate-receipts.json",
+      "/private/tmp/cmm-round12-gated-record-hashes.json",
+      "/private/tmp/cmm-round12-groups-raw",
+      "/private/tmp/cmm-round12-history.log",
+      "/private/tmp/cmm-round12-industrial-minerals-raw",
+      "/private/tmp/cmm-round12-require.log",
+      "/private/tmp/cmm-round13-adversary-package-manifest.json",
+      "/private/tmp/cmm-round13-check.log",
+      "/private/tmp/cmm-round13-gate-receipts.json",
+      "/private/tmp/cmm-round13-gated-record-hashes.json",
+      "/private/tmp/cmm-round13-grade-local-hits.txt",
+      "/private/tmp/cmm-round13-grade-raw",
+      "/private/tmp/cmm-round13-history.log",
+      "/private/tmp/cmm-round13-mineral-raw",
+      "/private/tmp/cmm-round13-require.log",
+      "/private/tmp/cmm-round13-review-dedup.txt",
+      "/private/tmp/cmm-round13-secondary-raw",
+      "/private/tmp/cmm-round14-check.log",
+      "/private/tmp/cmm-round14-final-check.log",
+      "/private/tmp/cmm-round14-final-history.log",
+      "/private/tmp/cmm-round14-final-require.log",
+      "/private/tmp/cmm-round14-gate-receipts-initial.json",
+      "/private/tmp/cmm-round14-gate-receipts.json",
+      "/private/tmp/cmm-round14-history.log",
+      "/private/tmp/cmm-round14-magnet-raw",
+      "/private/tmp/cmm-round14-magnet-review",
+      "/private/tmp/cmm-round14-magnets-dedup.txt",
+      "/private/tmp/cmm-round14-mineral-dedup.txt",
+      "/private/tmp/cmm-round14-mineral-raw",
+      "/private/tmp/cmm-round14-mineral-review",
+      "/private/tmp/cmm-round14-package-terminal-receipt.json",
+      "/private/tmp/cmm-round14-product-raw",
+      "/private/tmp/cmm-round14-product-review",
+      "/private/tmp/cmm-round14-publication-adversary-checks.json",
+      "/private/tmp/cmm-round14-require.log",
+      "/private/tmp/cmm-round14-root-review",
+      "/private/tmp/cmm-round14-secondary-raw",
+      "/private/tmp/cmm-round15-brine-raw",
+      "/private/tmp/cmm-round15-brine-review-checks.json",
+      "/private/tmp/cmm-round15-final-batch.log",
+      "/private/tmp/cmm-round15-gate-receipts.json",
+      "/private/tmp/cmm-round15-mineral-raw",
+      "/private/tmp/cmm-round15-mineral-review",
+      "/private/tmp/cmm-round15-native-terminal-receipt.json",
+      "/private/tmp/cmm-round15-package-terminal-receipt.json",
+      "/private/tmp/cmm-round15-publication-adversary-checks.json",
+      "/private/tmp/cmm-round16-adversary-inspection.json",
+      "/private/tmp/cmm-round16-coverage-audit.json",
+      "/private/tmp/cmm-round16-final-batch.log",
+      "/private/tmp/cmm-round16-final-history.log",
+      "/private/tmp/cmm-round16-final-require.log",
+      "/private/tmp/cmm-round16-gate-receipts.json",
+      "/private/tmp/cmm-round16-package-terminal-receipt.json",
+      "/private/tmp/cmm-round16-produced-water-raw",
+      "/private/tmp/cmm-round16-produced-water-review",
+      "/private/tmp/cmm-round16-silicate-independent",
+      "/private/tmp/cmm-round16-silicate-raw",
+      "/private/tmp/cmm-round16-vivianite-raw",
+      "/private/tmp/cmm-round16-vivianite-review",
+      "/private/tmp/cmm-round17-biotite-raw",
+      "/private/tmp/cmm-round17-biotite-review",
+      "/private/tmp/cmm-round17-enstatite-raw",
+      "/private/tmp/cmm-round17-final-batch.log",
+      "/private/tmp/cmm-round17-final-history.log",
+      "/private/tmp/cmm-round17-final-require.log",
+      "/private/tmp/cmm-round17-gate-receipts.json",
+      "/private/tmp/cmm-round17-independent-links-sources-final.json",
+      "/private/tmp/cmm-round17-independent-package-snapshot.json",
+      "/private/tmp/cmm-round17-independent-publication-check.json",
+      "/private/tmp/cmm-round17-ro-review-dedup.txt",
+      "/private/tmp/cmm-round17-saline-raw",
+      "/private/tmp/cmm-round17-silicate-review",
+      "/private/tmp/cmm-round18-catalyst-independent",
+      "/private/tmp/cmm-round18-catalyst-raw",
+      "/private/tmp/cmm-round18-cross-review",
+      "/private/tmp/cmm-round18-dunite-raw",
+      "/private/tmp/cmm-round18-final-batch.log",
+      "/private/tmp/cmm-round18-final-history.log",
+      "/private/tmp/cmm-round18-final-require.log",
+      "/private/tmp/cmm-round18-gate-receipts.json",
+      "/private/tmp/cmm-round18-independent-publication-check.json",
+      "/private/tmp/cmm-round18-independent-source-link-check.json",
+      "/private/tmp/cmm-round18-mineral-feeds-raw",
+      "/private/tmp/cmm-round18-products-raw",
+      "/private/tmp/cmm-round18-products-review",
+      "/private/tmp/cmm-round18-publication-audit-inputs.json",
+      "/private/tmp/cmm-round19-catalyst-dedup.txt",
+      "/private/tmp/cmm-round19-catalyst-review-receipt.json",
+      "/private/tmp/cmm-round19-cross-review",
+      "/private/tmp/cmm-round19-final-batch.log",
+      "/private/tmp/cmm-round19-final-history.log",
+      "/private/tmp/cmm-round19-final-require.log",
+      "/private/tmp/cmm-round19-gate-receipts.json",
+      "/private/tmp/cmm-round19-hydrogenation-catalyst-raw",
+      "/private/tmp/cmm-round19-independent-publication-check.json",
+      "/private/tmp/cmm-round19-independent-source-link-check.json",
+      "/private/tmp/cmm-round19-iron-manganese-independent",
+      "/private/tmp/cmm-round19-iron-manganese-raw",
+      "/private/tmp/cmm-round19-manganese-residue-raw",
+      "/private/tmp/cmm-round19-publication-audit-inputs.json",
+      "/private/tmp/cmm-round19-publication-freeze.json",
+      "/private/tmp/cmm-round19-readme-table-audit.json",
+      "/private/tmp/cmm-round19-sludge-dedup.txt",
+      "/private/tmp/cmm-round19-tailings-raw",
+      "/private/tmp/cmm-round2-check.log",
+      "/private/tmp/cmm-round2-selenium-evidence-20261011",
+      "/private/tmp/cmm-round2-silver-20261011",
+      "/private/tmp/cmm-round2-zinc-20261011",
+      "/private/tmp/cmm-round20-boron-independent-search.json",
+      "/private/tmp/cmm-round20-final-batch.log",
+      "/private/tmp/cmm-round20-final-history.log",
+      "/private/tmp/cmm-round20-final-require.log",
+      "/private/tmp/cmm-round20-gate-receipts.json",
+      "/private/tmp/cmm-round20-goethite-raw",
+      "/private/tmp/cmm-round20-independent-publication-check.json",
+      "/private/tmp/cmm-round20-independent-remote-refs.txt",
+      "/private/tmp/cmm-round20-independent-ruleset.json",
+      "/private/tmp/cmm-round20-independent-source-link-check.json",
+      "/private/tmp/cmm-round20-laterite-raw",
+      "/private/tmp/cmm-round20-mafic-tailings-raw",
+      "/private/tmp/cmm-round20-nodule-independent",
+      "/private/tmp/cmm-round20-nodule-raw",
+      "/private/tmp/cmm-round20-publication-audit-inputs.json",
+      "/private/tmp/cmm-round20-publication-freeze.json",
+      "/private/tmp/cmm-round20-readme-table-audit.json",
+      "/private/tmp/cmm-round21-crust-review-dedup.json",
+      "/private/tmp/cmm-round21-crust-review-targets.yaml",
+      "/private/tmp/cmm-round21-crusts-raw",
+      "/private/tmp/cmm-round21-final-batch.log",
+      "/private/tmp/cmm-round21-final-history.log",
+      "/private/tmp/cmm-round21-final-require.log",
+      "/private/tmp/cmm-round21-gate-receipts.json",
+      "/private/tmp/cmm-round21-independent-package-check.json",
+      "/private/tmp/cmm-round21-independent-remote-refs.txt",
+      "/private/tmp/cmm-round21-independent-ruleset.json",
+      "/private/tmp/cmm-round21-independent-scientific-inventory.json",
+      "/private/tmp/cmm-round21-independent-table-bases.json",
+      "/private/tmp/cmm-round21-mud-review",
+      "/private/tmp/cmm-round21-pcb-independent",
+      "/private/tmp/cmm-round21-pcb-raw",
+      "/private/tmp/cmm-round21-publication-audit-inputs.json",
+      "/private/tmp/cmm-round21-publication-freeze.json",
+      "/private/tmp/cmm-round21-ree-mud-raw",
+      "/private/tmp/cmm-round22-concretions-raw",
+      "/private/tmp/cmm-round22-final-batch.log",
+      "/private/tmp/cmm-round22-final-history.log",
+      "/private/tmp/cmm-round22-final-require.log",
+      "/private/tmp/cmm-round22-gate-receipts.json",
+      "/private/tmp/cmm-round22-pcb-final-dedup.txt",
+      "/private/tmp/cmm-round22-pcb-independent",
+      "/private/tmp/cmm-round22-pcb-raw",
+      "/private/tmp/cmm-round22-publication-freeze.json",
+      "/private/tmp/cmm-round22-pv-independent",
+      "/private/tmp/cmm-round22-pv-raw",
+      "/private/tmp/cmm-round22-sulfides-raw",
+      "/private/tmp/cmm-round23-baseline.log",
+      "/private/tmp/cmm-round23-crust-review-dedup.json",
+      "/private/tmp/cmm-round23-crust-review-preservation.json",
+      "/private/tmp/cmm-round23-crusts-raw",
+      "/private/tmp/cmm-round23-crusts-review-targets.yaml",
+      "/private/tmp/cmm-round23-final-batch.log",
+      "/private/tmp/cmm-round23-final-history.log",
+      "/private/tmp/cmm-round23-final-require.log",
+      "/private/tmp/cmm-round23-gate-receipts.json",
+      "/private/tmp/cmm-round23-ghiorse-raw",
+      "/private/tmp/cmm-round23-identity-gaps-raw",
+      "/private/tmp/cmm-round23-lcd-raw",
+      "/private/tmp/cmm-round23-lcd-review-dedup.json",
+      "/private/tmp/cmm-round23-publication-freeze.json",
+      "/private/tmp/cmm-round23-rey-independent-dedup.json",
+      "/private/tmp/cmm-round23-rey-independent-preservation.json",
+      "/private/tmp/cmm-round23-rey-independent-web-search.json",
+      "/private/tmp/cmm-round23-rey-independent-workbook.json",
+      "/private/tmp/cmm-round23-rey-mud-raw",
+      "/private/tmp/cmm-round24-amd-solids-validate.log",
+      "/private/tmp/cmm-round24-baseline.log",
+      "/private/tmp/cmm-round24-battery-dedup.txt",
+      "/private/tmp/cmm-round24-check-sulfuric-readability.py",
+      "/private/tmp/cmm-round24-copper-slag-raw",
+      "/private/tmp/cmm-round24-coverage-audit.json",
+      "/private/tmp/cmm-round24-final-batch.log",
+      "/private/tmp/cmm-round24-final-history.log",
+      "/private/tmp/cmm-round24-final-require.log",
+      "/private/tmp/cmm-round24-frontier-raw",
+      "/private/tmp/cmm-round24-gate-receipts.json",
+      "/private/tmp/cmm-round24-independent-local-audit.json",
+      "/private/tmp/cmm-round24-independent-source-hash-audit.json",
+      "/private/tmp/cmm-round24-nimh-dedup-expanded.txt",
+      "/private/tmp/cmm-round24-nimh-raw",
+      "/private/tmp/cmm-round24-package-terminal-receipt.json",
+      "/private/tmp/cmm-round24-publication-freeze.json",
+      "/private/tmp/cmm-round24-sulfuric-raw",
+      "/private/tmp/cmm-round24-sulfuric-readability-independent-check.json",
+      "/private/tmp/cmm-round24-unrelated-skill-before.json",
+      "/private/tmp/cmm-round25-bf-dust-dedup.txt",
+      "/private/tmp/cmm-round25-bf-dust-expanded-dedup.txt",
+      "/private/tmp/cmm-round25-bf-dust-raw",
+      "/private/tmp/cmm-round25-bf-dust-validate.log",
+      "/private/tmp/cmm-round25-bf-review-dedup.txt",
+      "/private/tmp/cmm-round25-button-raw",
+      "/private/tmp/cmm-round25-check-led-sulfur-context.py",
+      "/private/tmp/cmm-round25-final-batch-terminal.json",
+      "/private/tmp/cmm-round25-final-batch.log",
+      "/private/tmp/cmm-round25-final-history.log",
+      "/private/tmp/cmm-round25-final-require.log",
+      "/private/tmp/cmm-round25-final-review-check.log",
+      "/private/tmp/cmm-round25-frontier-dedup.txt",
+      "/private/tmp/cmm-round25-frontier-new-leads-dedup.txt",
+      "/private/tmp/cmm-round25-frontier-raw",
+      "/private/tmp/cmm-round25-frontier-secondary-dedup.txt",
+      "/private/tmp/cmm-round25-frontier-spacing-receipt.json",
+      "/private/tmp/cmm-round25-independent-package-audit.json",
+      "/private/tmp/cmm-round25-independent-preservation.json",
+      "/private/tmp/cmm-round25-led-review-validation.log",
+      "/private/tmp/cmm-round25-led-sulfur-context-independent-check.json",
+      "/private/tmp/cmm-round25-led-sulfur-review-dedup.txt",
+      "/private/tmp/cmm-round25-oil-ash-dedup-expanded.txt",
+      "/private/tmp/cmm-round25-oil-ash-dedup.txt",
+      "/private/tmp/cmm-round25-oil-ash-raw",
+      "/private/tmp/cmm-round25-ruleset.json",
+      "/private/tmp/cmm-round25-sulfur-review-validation.log",
+      "/private/tmp/cmm-round25-vendored.log",
+      "/private/tmp/cmm-round26-blister-final-review-validation.log",
+      "/private/tmp/cmm-round26-blister-review-validation.log",
+      "/private/tmp/cmm-round26-bof-dedup.txt",
+      "/private/tmp/cmm-round26-bof-prior-raw-dedup.txt",
+      "/private/tmp/cmm-round26-carton-review-validation.log",
+      "/private/tmp/cmm-round26-corrected-final-batch.log",
+      "/private/tmp/cmm-round26-corrected-final-gates.json",
+      "/private/tmp/cmm-round26-corrected-final-history.log",
+      "/private/tmp/cmm-round26-corrected-final-require.log",
+      "/private/tmp/cmm-round26-eaf-dust-dedup-raw.txt",
+      "/private/tmp/cmm-round26-eaf-dust-dedup.txt",
+      "/private/tmp/cmm-round26-eaf-dust-raw",
+      "/private/tmp/cmm-round26-eaf-dust-validate.log",
+      "/private/tmp/cmm-round26-eaf-review-dedup.txt",
+      "/private/tmp/cmm-round26-eaf-review-validate.log",
+      "/private/tmp/cmm-round26-eaf-review-web.txt",
+      "/private/tmp/cmm-round26-final-gates.json",
+      "/private/tmp/cmm-round26-final-history.log",
+      "/private/tmp/cmm-round26-final-require.log",
+      "/private/tmp/cmm-round26-final-review-check.log",
+      "/private/tmp/cmm-round26-governance-sync.log",
+      "/private/tmp/cmm-round26-independent-final-contexts.json",
+      "/private/tmp/cmm-round26-independent-package-audit.json",
+      "/private/tmp/cmm-round26-independent-review-bases.json",
+      "/private/tmp/cmm-round26-issue95-correction.json",
+      "/private/tmp/cmm-round26-issue96-correction.json",
+      "/private/tmp/cmm-round26-packaging-raw",
+      "/private/tmp/cmm-round26-packaging-record-inventory.json",
+      "/private/tmp/cmm-round26-packaging-repo-hit-paths.txt",
+      "/private/tmp/cmm-round26-packaging-validate.log",
+      "/private/tmp/cmm-round26-prepublication-preservation.json",
+      "/private/tmp/cmm-round26-root-dedup.txt",
+      "/private/tmp/cmm-round26-root-raw",
+      "/private/tmp/cmm-round26-ruleset.json",
+      "/private/tmp/cmm-round26-steel-slag-dedup.txt",
+      "/private/tmp/cmm-round26-superalloy-raw",
+      "/private/tmp/cmm-round27-baseline-network.log",
+      "/private/tmp/cmm-round27-bof-dust-dedup.txt",
+      "/private/tmp/cmm-round27-bof-dust-independent",
+      "/private/tmp/cmm-round27-bof-review-dedup.txt",
+      "/private/tmp/cmm-round27-cuag-independent-dedup.txt",
+      "/private/tmp/cmm-round27-eaf-slag-raw",
+      "/private/tmp/cmm-round27-final-batch.log",
+      "/private/tmp/cmm-round27-final-history.log",
+      "/private/tmp/cmm-round27-final-nonempty.log",
+      "/private/tmp/cmm-round27-final-terminal.json",
+      "/private/tmp/cmm-round27-goethite-raw",
+      "/private/tmp/cmm-round27-independent-publication-audit-20261011T162952Z.json",
+      "/private/tmp/cmm-round27-local-coverage.json",
+      "/private/tmp/cmm-round27-packaging-dedup-paths.txt",
+      "/private/tmp/cmm-round27-packaging-raw",
+      "/private/tmp/cmm-round27-postmerge-20261011-published-pr100-terminal.json",
+      "/private/tmp/cmm-round27-review-check-terminal.json",
+      "/private/tmp/cmm-round27-review-check.log",
+      "/private/tmp/cmm-round27-root-raw",
+      "/private/tmp/cmm-round27-superalloy-raw",
+      "/private/tmp/cmm-round28-base-reconciliation.json",
+      "/private/tmp/cmm-round28-baseline-terminal.json",
+      "/private/tmp/cmm-round28-baseline.log",
+      "/private/tmp/cmm-round28-black-shale-independent",
+      "/private/tmp/cmm-round28-black-shale-research",
+      "/private/tmp/cmm-round28-doc-audit",
+      "/private/tmp/cmm-round28-final-batch.log",
+      "/private/tmp/cmm-round28-final-history.log",
+      "/private/tmp/cmm-round28-final-nonempty.log",
+      "/private/tmp/cmm-round28-final-terminal.json",
+      "/private/tmp/cmm-round28-goethite-research",
+      "/private/tmp/cmm-round28-local-coverage.json",
+      "/private/tmp/cmm-round28-mineral-frontier-existing-hits.txt",
+      "/private/tmp/cmm-round28-mineral-frontier-search.json",
+      "/private/tmp/cmm-round28-review-check.log",
+      "/private/tmp/cmm-round28-tatra-independent-review",
+      "/private/tmp/cmm-round28-tatra-research",
+      "/private/tmp/cmm-round28-tire-independent-review",
+      "/private/tmp/cmm-round28-tire-research",
+      "/private/tmp/cmm-round29-baseline-check.log",
+      "/private/tmp/cmm-round29-baseline-sync.log",
+      "/private/tmp/cmm-round29-baseline-terminal.json",
+      "/private/tmp/cmm-round29-bastnaesite-independent",
+      "/private/tmp/cmm-round29-bastnaesite-research",
+      "/private/tmp/cmm-round29-final-batch.log",
+      "/private/tmp/cmm-round29-final-history.log",
+      "/private/tmp/cmm-round29-final-nonempty.log",
+      "/private/tmp/cmm-round29-final-terminal.json",
+      "/private/tmp/cmm-round29-governance-check.json",
+      "/private/tmp/cmm-round29-ilmenite-research",
+      "/private/tmp/cmm-round29-issue-ilmenite.md",
+      "/private/tmp/cmm-round29-issue-tungsten.md",
+      "/private/tmp/cmm-round29-issue-whitespace.md",
+      "/private/tmp/cmm-round29-local-coverage.json",
+      "/private/tmp/cmm-round29-prior-science-preservation.json",
+      "/private/tmp/cmm-round29-publication-state.json",
+      "/private/tmp/cmm-round29-readiness-verification.json",
+      "/private/tmp/cmm-round29-review-base-retention.json",
+      "/private/tmp/cmm-round29-review-check-terminal.json",
+      "/private/tmp/cmm-round29-review-check.log",
+      "/private/tmp/cmm-round29-source-issues.json",
+      "/private/tmp/cmm-round29-staging-correction-verification.json",
+      "/private/tmp/cmm-round29-tungsten-waste-research",
+      "/private/tmp/cmm-round29-zinc-independent-review",
+      "/private/tmp/cmm-round29-zinc-ore-research",
+      "/private/tmp/cmm-round3-cadmium-evidence-20261011",
+      "/private/tmp/cmm-round3-check.log",
+      "/private/tmp/cmm-round3-chromium-evidence-20261011",
+      "/private/tmp/cmm-round3-platinum-evidence-20261011",
+      "/private/tmp/cmm-round3-selenium-evidence-20261011",
+      "/private/tmp/cmm-round30-basalt-research",
+      "/private/tmp/cmm-round30-baseline-receipt.json",
+      "/private/tmp/cmm-round30-pyrrhotite-research",
+      "/private/tmp/cmm-round4-antimony-evidence-20261011",
+      "/private/tmp/cmm-round4-antimony-independent",
+      "/private/tmp/cmm-round4-check.log",
+      "/private/tmp/cmm-round4-mineral-hosts-20261011",
+      "/private/tmp/cmm-round4-pce-independent",
+      "/private/tmp/cmm-round4-phosphorus-cerium-evidence-20261011",
+      "/private/tmp/cmm-round5-check.log",
+      "/private/tmp/cmm-round5-germanium-20261011",
+      "/private/tmp/cmm-round5-iron-evidence-20261011",
+      "/private/tmp/cmm-round5-iron-review-check.log",
+      "/private/tmp/cmm-round5-magnesium-evidence-20261011",
+      "/private/tmp/cmm-round6-aluminium-evidence",
+      "/private/tmp/cmm-round6-check.log",
+      "/private/tmp/cmm-round6-indium-evidence-20261011",
+      "/private/tmp/cmm-round7-check.log",
+      "/private/tmp/cmm-round7-eu-sm",
+      "/private/tmp/cmm-round7-eu-sm-independent",
+      "/private/tmp/cmm-round7-ho-er-gd-raw",
+      "/private/tmp/cmm-round7-terbium-raw",
+      "/private/tmp/cmm-round8-batch.log",
+      "/private/tmp/cmm-round8-corpus.log",
+      "/private/tmp/cmm-round8-history.log",
+      "/private/tmp/cmm-round8-pb-bi-evidence",
+      "/private/tmp/cmm-round8-sc-pr-raw",
+      "/private/tmp/cmm-round8-sc-pr-review",
+      "/private/tmp/cmm-round8-y-yb-evidence",
+      "/private/tmp/cmm-round8-y-yb-review",
+      "/private/tmp/cmm-round9-batch-check.log",
+      "/private/tmp/cmm-round9-cs-sr-raw",
+      "/private/tmp/cmm-round9-cs-sr-review",
+      "/private/tmp/cmm-round9-final-check.log",
+      "/private/tmp/cmm-round9-final-history.log",
+      "/private/tmp/cmm-round9-final-validation.log",
+      "/private/tmp/cmm-round9-graphite-evidence",
+      "/private/tmp/cmm-round9-history.log",
+      "/private/tmp/cmm-round9-pre-correction-inputs",
+      "/private/tmp/cmm-round9-ru-rh-raw",
+      "/private/tmp/cmm-round9-si-sn-independent",
+      "/private/tmp/cmm-round9-si-sn-raw",
+      "/private/tmp/cmm-round9-validation.log",
+      "/private/tmp/cmm-source-authority-acquisition",
+      "/private/tmp/cmm-source-datasets-downloads",
+      "/private/tmp/cmm-source-discovery-downloads",
+      "/private/tmp/cmm-source-gluco2021.html",
+      "/private/tmp/cmm-source-gluco2025-code.zip",
+      "/private/tmp/cmm-source-gluco2025-descriptions.docx",
+      "/private/tmp/cmm-source-gluco2025-supp4.xlsx",
+      "/private/tmp/cmm-source-gluco2025.html",
+      "/private/tmp/cmm-source-li2024.html",
+      "/private/tmp/cmm-source-li2024.txt",
+      "/private/tmp/cmm-source-mn2018.html",
+      "/private/tmp/cmm-source-mn2018.txt",
+      "/private/tmp/cmmmech-add-skill-evaluation",
+      "/private/tmp/cmmmech-gallium-arsenic-20261011",
+      "/private/tmp/cmmmech-history-independent-review-20261008",
+      "/private/tmp/cmmmech-history-independent-review-fixed-20261008",
+      "/private/tmp/cmmmech-history-issue10-mutation-results.json",
+      "/private/tmp/cmmmech-integration-evidence",
+      "/private/tmp/cmmmech-nickel-evidence-20261011",
+      "/private/tmp/cmmmech-round4-gaas-sludge-20261011",
+      "/private/tmp/cmmmech-round5-ree-raw",
+      "/private/tmp/cmmmech-round6-mo-w-raw",
+      "/private/tmp/cmmmech-skill-pr-review",
+      "/private/tmp/cmmmech-source-skill-trial",
+      "/private/tmp/cmmmech-tellurium-evidence-20261011",
+      "/private/tmp/cmm-round31-stibnite-research/raw",
+      "/private/tmp/cmm-round31-chromite-tailings-research",
+      "/private/tmp/cmm-round31-kaolin-waste-research",
+      "/private/tmp/cmm-round31-ilmenite-research",
+      "/private/tmp/cmm-round31-kaolin-research",
+      "/private/tmp/cmm-round31-tungsten-research",
+      "/private/tmp/cmm-round31-stibnite-research",
+      "/private/tmp/cmm-round32-molybdenite-research/raw"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "lines": 322,
+    "distinct_paths": [
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records/metalliferous-black-shale.yaml",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records/molybdenum.yaml",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/sources/round28-black-shale/20261011T170152Z-source-investigation.md",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews/structured/20261011T171321Z-metalliferous-black-shale-round28-independent/review.md",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews/structured/20261011T171321Z-metalliferous-black-shale-round28-independent/review.yaml",
+      "/private/tmp/CMMMech-expansion-round32-20261011/data/records/metalliferous-black-shale.yaml",
+      "/private/tmp/CMMMech-expansion-round32-20261011/data/records/molybdenum.yaml",
+      "/private/tmp/CMMMech-expansion-round32-20261011/research/sources/round28-black-shale/20261011T170152Z-source-investigation.md",
+      "/private/tmp/CMMMech-expansion-round32-20261011/reviews/structured/20261011T171321Z-metalliferous-black-shale-round28-independent/review.md",
+      "/private/tmp/CMMMech-expansion-round32-20261011/reviews/structured/20261011T171321Z-metalliferous-black-shale-round28-independent/review.yaml",
+      "/private/tmp/cmm-expansion-authorities-20261011/uk-assessment-2024.txt",
+      "/private/tmp/cmm-round11-be-rb-re-raw/re2009-thesis-pdf.txt",
+      "/private/tmp/cmm-round12-aluminium-boron-raw/alumina-crossref.json",
+      "/private/tmp/cmm-round12-aluminium-boron-raw/alumina2023.txt",
+      "/private/tmp/cmm-round12-aluminium-boron-raw/ga-hpa.html",
+      "/private/tmp/cmm-round12-aluminium-boron-raw/uk2024.txt",
+      "/private/tmp/cmm-round12-industrial-minerals-raw/uk2024-or24059.txt",
+      "/private/tmp/cmm-round12-industrial-minerals-raw/usgs-mcs2026.txt",
+      "/private/tmp/cmm-round13-grade-raw/jrc-production-methods-2023.pdf.txt",
+      "/private/tmp/cmm-round13-grade-raw/mineral-dedup.txt",
+      "/private/tmp/cmm-round13-mineral-raw/kirk-crossref.json",
+      "/private/tmp/cmm-round13-mineral-raw/kirk2024-retained-extraction.txt",
+      "/private/tmp/cmm-round14-mineral-raw/dedup-raw.txt",
+      "/private/tmp/cmm-round14-mineral-raw/ima.txt",
+      "/private/tmp/cmm-round14-mineral-review/dedup.txt",
+      "/private/tmp/cmm-round14-product-raw/prior-matches.txt",
+      "/private/tmp/cmm-round14-product-review/dedup.txt",
+      "/private/tmp/cmm-round15-brine-raw/dedup.txt",
+      "/private/tmp/cmm-round15-mineral-raw/ima2026-09.txt",
+      "/private/tmp/cmm-round16-silicate-raw/ima2026-09.txt",
+      "/private/tmp/cmm-round16-vivianite-raw/ima2026-09.txt",
+      "/private/tmp/cmm-round17-biotite-raw/ima-booklet-2019.txt",
+      "/private/tmp/cmm-round17-enstatite-raw/ima-booklet.txt",
+      "/private/tmp/cmm-round17-enstatite-raw/ima2026-09.txt",
+      "/private/tmp/cmm-round18-catalyst-raw/ferreira2017.txt",
+      "/private/tmp/cmm-round18-catalyst-raw/pathak2015.txt",
+      "/private/tmp/cmm-round18-products-raw/jrc-production-methods.pdf.txt",
+      "/private/tmp/cmm-round20-mafic-tailings-raw/ertan2025.html",
+      "/private/tmp/cmm-round20-nodule-raw/becci-thesis.txt",
+      "/private/tmp/cmm-round21-crusts-raw/konishi2008.txt",
+      "/private/tmp/cmm-round22-sulfides-raw/dedup-corrected.txt",
+      "/private/tmp/cmm-round22-sulfides-raw/dedup-final.txt",
+      "/private/tmp/cmm-round22-sulfides-raw/dong2025-crossref.json",
+      "/private/tmp/cmm-round22-sulfides-raw/dong2025.txt",
+      "/private/tmp/cmm-round22-sulfides-raw/dong2025.xml",
+      "/private/tmp/cmm-round23-identity-gaps-raw/alumina2023.txt",
+      "/private/tmp/cmm-round23-identity-gaps-raw/crossref.json",
+      "/private/tmp/cmm-round23-identity-gaps-raw/prior-raw-dedup.txt",
+      "/private/tmp/cmm-round23-identity-gaps-raw/sulfuric-catalyst-dedup.txt",
+      "/private/tmp/cmm-round25-frontier-raw/led2025.html",
+      "/private/tmp/cmm-round25-frontier-raw/led2025.txt",
+      "/private/tmp/cmm-round27-packaging-raw/electroform-crossref.json",
+      "/private/tmp/cmm-round28-black-shale-independent/build_review.py",
+      "/private/tmp/cmm-round28-black-shale-independent/dedup.txt",
+      "/private/tmp/cmm-round28-black-shale-independent/review-draft.yaml",
+      "/private/tmp/cmm-round28-black-shale-independent/review-final.yaml",
+      "/private/tmp/cmm-round28-black-shale-research/dedup-variants.txt",
+      "/private/tmp/cmm-round28-black-shale-research/raw/zhao2026-crossref.json",
+      "/private/tmp/cmm-round28-black-shale-research/raw/zhao2026.txt",
+      "/private/tmp/cmm-round29-tungsten-waste-research/dedup-raw.txt",
+      "/private/tmp/cmm-round29-tungsten-waste-research/raw/crossref.json",
+      "/private/tmp/cmm-round29-zinc-ore-research/raw/web-captures.json",
+      "/private/tmp/cmm-round30-pyrrhotite-research/ima-2026-09.txt",
+      "/private/tmp/cmm-round30-pyrrhotite-research/primary-crossref.json",
+      "/private/tmp/cmm-round30-pyrrhotite-research/primary.txt",
+      "/private/tmp/cmm-round31-chromite-tailings-research/dedup-referenced-raw.txt",
+      "/private/tmp/cmm-round31-tungsten-research/dedup.txt",
+      "/private/tmp/cmm-round32-molybdenite-research/raw/acquisition-1-network.json",
+      "/private/tmp/cmm-round32-molybdenite-research/raw/acquisition-1-sandbox.json",
+      "/private/tmp/cmm-round32-molybdenite-research/raw/acquisition-2.json",
+      "/private/tmp/cmm-round32-molybdenite-research/raw/ima-selected.txt",
+      "/private/tmp/cmm-round32-molybdenite-research/raw/ima-text.txt",
+      "/private/tmp/cmm-round32-molybdenite-research/raw/publisher-issue60.html",
+      "/private/tmp/cmm-round32-molybdenite-research/raw/quimicanova-pages/text.txt",
+      "/private/tmp/cmm-round32-molybdenite-research/raw/quimicanova2007-crossref.json",
+      "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/text.txt",
+      "/private/tmp/cmm-round32-molybdenite-research/raw/with-si-pages/text.txt",
+      "/private/tmp/cmm-round7-terbium-raw/article.xml",
+      "/private/tmp/cmm-round9-graphite-evidence/usgs-mcs2026-graphite.txt",
+      "/private/tmp/cmm-round9-graphite-evidence/usgs-mcs2026-selected.txt",
+      "/private/tmp/cmm-source-authority-acquisition/MCS2026_Commodities_Data.csv",
+      "/private/tmp/cmm-source-li2024.html",
+      "/private/tmp/cmm-source-li2024.txt",
+      "/private/tmp/cmmmech-round6-mo-w-raw/w_crossref.json"
+    ],
+    "record_hits": [
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records/molybdenum.yaml:6:  molybdenum-blue products, molybdenite and other Mo-bearing resources. The",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records/metalliferous-black-shale.yaml:166:      is reported. Separate molybdenite-concentrate assays are not this feed.",
+      "/private/tmp/CMMMech-expansion-round32-20261011/data/records/molybdenum.yaml:6:  molybdenum-blue products, molybdenite and other Mo-bearing resources. The",
+      "/private/tmp/CMMMech-expansion-round32-20261011/data/records/metalliferous-black-shale.yaml:166:      is reported. Separate molybdenite-concentrate assays are not this feed."
+    ],
+    "output_sha256": "8c79cd8e6f122733bebf3972510e7f6ea77a18217eb7cc4f4dfd82fbcd7d8470",
+    "boundary": "Current and original records/research/reviews/history; available non-cache roots inherited from round31 referenced-raw inventory plus all round31 research roots and current raw. Hidden and ignored included, relevant symlinks followed. PDF/image/Office/archive bytes excluded; available extracted text and metadata searched. Accepted original PDF pages independently inspected; no OCR or global-binary absence assertion."
+  },
+  "acquisitions": [
+    [
+      {
+        "file": "brierley-bureau-report.pdf",
+        "url": "https://stacks.cdc.gov/view/cdc/234441/cdc_234441_DS1.pdf",
+        "started_at": "2026-10-11T19:42:07.334950+00:00",
+        "error": "HTTP Error 403: Forbidden",
+        "finished_at": "2026-10-11T19:42:07.645311+00:00"
+      },
+      {
+        "file": "quimicanova2007.pdf",
+        "url": "https://quimicanova.sbq.org.br/Content/pdf/Vol30No5_1095_07-AR06093.pdf",
+        "started_at": "2026-10-11T19:42:07.336048+00:00",
+        "status": 200,
+        "final_url": "https://quimicanova.sbq.org.br/Content/pdf/Vol30No5_1095_07-AR06093.pdf",
+        "content_type": "application/pdf",
+        "bytes": 182013,
+        "sha256": "a457841e8795cc456dd09b3fb9c66dde7f083ed8ae9b7bb63c120fcc17050823",
+        "pdf_magic": true,
+        "finished_at": "2026-10-11T19:42:09.084435+00:00"
+      },
+      {
+        "file": "unesp-molybdenite-thesis.pdf",
+        "url": "https://repositorio.unesp.br/bitstreams/4d64f58e-f5f3-401d-ad4f-09ea41c6543d/download",
+        "started_at": "2026-10-11T19:42:07.336360+00:00",
+        "status": 200,
+        "final_url": "https://repositorio.unesp.br/server/api/core/bitstreams/4d64f58e-f5f3-401d-ad4f-09ea41c6543d/content",
+        "content_type": "application/pdf;charset=UTF-8",
+        "bytes": 572574,
+        "sha256": "b03c239a3f19cd432d1a5e9771c87f061b4f5e4033332ea59fd9fbfaa8a36f89",
+        "pdf_magic": true,
+        "finished_at": "2026-10-11T19:42:13.098846+00:00"
+      },
+      {
+        "file": "romano2001.pdf",
+        "url": "https://academic.oup.com/femsle/article-pdf/196/1/71/19107774/196-1-71.pdf",
+        "started_at": "2026-10-11T19:42:07.336606+00:00",
+        "error": "HTTP Error 403: Forbidden",
+        "finished_at": "2026-10-11T19:42:07.506388+00:00"
+      }
+    ],
+    [
+      {
+        "file": "brierley-bureau-report.pdf",
+        "url": "https://stacks.cdc.gov/view/cdc/234441/cdc_234441_DS1.pdf",
+        "started_at": "2026-10-11T19:41:55.627716+00:00",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+        "finished_at": "2026-10-11T19:41:55.679607+00:00"
+      },
+      {
+        "file": "quimicanova2007.pdf",
+        "url": "https://quimicanova.sbq.org.br/Content/pdf/Vol30No5_1095_07-AR06093.pdf",
+        "started_at": "2026-10-11T19:41:55.628605+00:00",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+        "finished_at": "2026-10-11T19:41:55.679704+00:00"
+      },
+      {
+        "file": "unesp-molybdenite-thesis.pdf",
+        "url": "https://repositorio.unesp.br/bitstreams/4d64f58e-f5f3-401d-ad4f-09ea41c6543d/download",
+        "started_at": "2026-10-11T19:41:55.628830+00:00",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+        "finished_at": "2026-10-11T19:41:55.679493+00:00"
+      },
+      {
+        "file": "romano2001.pdf",
+        "url": "https://academic.oup.com/femsle/article-pdf/196/1/71/19107774/196-1-71.pdf",
+        "started_at": "2026-10-11T19:41:55.629072+00:00",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+        "finished_at": "2026-10-11T19:41:55.679793+00:00"
+      }
+    ],
+    [
+      {
+        "file": "quimicanova2007-with-si.pdf",
+        "url": "https://repositorio.unesp.br/server/api/core/bitstreams/4a0fec08-6d23-49aa-b365-0eff66bd691f/content",
+        "started_at": "2026-10-11T19:44:06.263316+00:00",
+        "status": 200,
+        "final_url": "https://repositorio.unesp.br/server/api/core/bitstreams/4a0fec08-6d23-49aa-b365-0eff66bd691f/content",
+        "content_type": "application/pdf;charset=UTF-8",
+        "bytes": 261981,
+        "sha256": "dbab73ee9ceaaf8648c94e79fe5b8007d79d1b5acf394c5917113cb16a6655db",
+        "finished_at": "2026-10-11T19:44:07.729401+00:00"
+      },
+      {
+        "file": "quimicanova2007-crossref.json",
+        "url": "https://api.crossref.org/works/10.1590%2FS0100-40422007000500008",
+        "started_at": "2026-10-11T19:44:06.264175+00:00",
+        "status": 200,
+        "final_url": "https://api.crossref.org/works/10.1590%2FS0100-40422007000500008",
+        "content_type": "application/json",
+        "bytes": 2151,
+        "sha256": "f9256fff2959570fe7ec4b1930f508ec5db775484ff483a75ac0e568e36e5323",
+        "finished_at": "2026-10-11T19:44:06.658672+00:00"
+      },
+      {
+        "file": "ncbi920.html",
+        "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info",
+        "started_at": "2026-10-11T19:44:06.264362+00:00",
+        "status": 200,
+        "final_url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 32373,
+        "sha256": "c6d264e2f6ed730350be86773d9564c7427f7f089b57ed566d6494e3bd21a4ac",
+        "finished_at": "2026-10-11T19:44:06.797481+00:00"
+      },
+      {
+        "file": "publisher-issue60.html",
+        "url": "https://quimicanova.sbq.org.br/default_periodicidade.asp?ed=60",
+        "started_at": "2026-10-11T19:44:06.264518+00:00",
+        "status": 200,
+        "final_url": "https://quimicanova.sbq.org.br/default_periodicidade.asp?ed=60",
+        "content_type": "text/html",
+        "bytes": 114178,
+        "sha256": "b074e9ad25bb149356670bee1dadffbb26d49a587ec7418f4e76b4a838a42147",
+        "finished_at": "2026-10-11T19:44:13.478440+00:00"
+      }
+    ]
+  ],
+  "ima_reuse": {
+    "copied_at": "2026-10-11T19:46:33.785484+00:00",
+    "source": "/private/tmp/cmm-round31-stibnite-research/raw/ima-2026-09.pdf",
+    "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+    "original_authority": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+    "original_fetched_at": "2026-10-11T17:41:04.402075+00:00",
+    "provenance_receipt": "/private/tmp/cmm-round30-chromite-research/raw/ima-reuse-receipt.json",
+    "boundary": "Same-day retained dated edition, copied unchanged; not a fresh retrieval.",
+    "previous_copy_receipt": "/private/tmp/cmm-round31-stibnite-research/raw/ima-reuse.json"
+  },
+  "inspection": {
+    "primary": "All 5 publisher pages and original Figures 1-6 visually inspected; all primary methods/results read. No main tables.",
+    "supplement": "University 6-page PDF contains identical extracted text for the first 5 publisher pages and original S1 as page 6. Figures 1S and 2S visually inspected, captions read.",
+    "authorities": "IMA page 146 original row and page 1 definitions; NCBI 920 current name/rank.",
+    "thesis": "96-page original PDF acquired and rendered; title, contents and relevant keyword sections inspected only. Explicitly synthetic MoS2/CuS; not fully assessed or adopted.",
+    "older_concentrates": "Primary abstract/metadata only or blocked; not methods-verified.",
+    "lu2026": "Previously retained primary sections 2.3 and 3.3 and Table 2/Figure 4 textual context inspected as a follow-up lead. Separate concentrate arm remains uncurated; no new Mo assay values adopted."
+  },
+  "primary_claims": {
+    "identity": "Molybdenite MoS2, IMA G, original-description year1796, no IMA approval accession invented.",
+    "organism": "Acidithiobacillus ferrooxidans LR, species NCBITaxon:920; no authenticated LR strain accession.",
+    "feed": "Natural commercial ore-grade mixed specimen; 0.8 wt%Mo,34.0 wt%Fe,23.0 wt%S, less than0.2mm; not pureMoS2.",
+    "claim": "Molybdenite persistence with censored liquid Mo during culture-associated companion-iron-sulfide removal.",
+    "limits": [
+      "Mo below2mg/L, not zero or extraction fraction",
+      "43-day biotic XRD reported but not shown; SI final patterns are abiotic only",
+      "22-day no-mineralogical-change sentence conflicts with adjacent interpretation and figures",
+      "FeIII control caption30mmol/LFeIII versus methods30mmol/Lferric sulfate leaves addition basis ambiguous",
+      "Flask initialpH,replication,inoculum washing/count,complete medium,acid doses unspecified",
+      "Resting-cell triplicate respiration does not establish MoS2-specific oxidation or flask replication",
+      "Galvanic protection and rest-potential explanation not directly measured",
+      "No product recovery, concentrate upgrade, industrial deployment or criticality claim"
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/acquisition-1-network.json",
+      "bytes": 1648,
+      "sha256": "ac8ab42bac8559f1e18c9a0d7cdba8c525cac22816f6e97b8fdfea0f27ef6acc"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/acquisition-1-sandbox.json",
+      "bytes": 1317,
+      "sha256": "2733b67b493022cd221bca5b6a7f36a86f7eb2e877bb9330a3cdfb52b63f3098"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/acquisition-2.json",
+      "bytes": 2026,
+      "sha256": "e6f7534e2b5ec156852e464cd73058226287d5c2ce844ad7e4d147b10e591af5"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/ima-2026-09.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/ima-page-1.png",
+      "bytes": 306450,
+      "sha256": "766eef7bc4be0b1adae4d14d800746f8c94be3c973d49687c1d1f95f51346ea1"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/ima-page-146.png",
+      "bytes": 347301,
+      "sha256": "557c9a93c94b97098aaf3180e1e6f64a5ea048ad822cd655c3491d1ed344d6ae"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/ima-page-2.png",
+      "bytes": 119732,
+      "sha256": "12fcce0b2b2ae9336da05e9efb0748bf6ddbf48da724effd5ee8a773c4953f9a"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/ima-reuse.json",
+      "bytes": 646,
+      "sha256": "74073c544fe73081d5d56f2e82b847965edbeac26ea531794c77091a838d486d"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/ima-selected.txt",
+      "bytes": 7742,
+      "sha256": "da7f83371b3c04638953e692c5bd68aac491b247b20099e78398740323797342"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/ima-text.txt",
+      "bytes": 804767,
+      "sha256": "13db045a2a857c6bbe037f38375b44758c6cccd5cf5925a111f0bed75fde1743"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/ncbi920.html",
+      "bytes": 32373,
+      "sha256": "c6d264e2f6ed730350be86773d9564c7427f7f089b57ed566d6494e3bd21a4ac"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/publisher-issue60.html",
+      "bytes": 114178,
+      "sha256": "b074e9ad25bb149356670bee1dadffbb26d49a587ec7418f4e76b4a838a42147"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/quimicanova-pages/page-1.png",
+      "bytes": 414837,
+      "sha256": "129c10c5df4af554ce27a6071244709d8cf8774e637de8b3a583288e11341207"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/quimicanova-pages/page-2.png",
+      "bytes": 480059,
+      "sha256": "a5b83ce8a5d4a7251e4c03d17f68fae5fe7e1046fe1ba9728ffd72aa94e3835b"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/quimicanova-pages/page-3.png",
+      "bytes": 441381,
+      "sha256": "aef2bb43ba4c3950cdc4aa516c94c2570dbee3e9f53fdb401a1f32c550149c38"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/quimicanova-pages/page-4.png",
+      "bytes": 454319,
+      "sha256": "19945aadc24aaf0dd517df71e7fdb7ac2529ac0523ecea0aea10be7fdf7925c8"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/quimicanova-pages/page-5.png",
+      "bytes": 527138,
+      "sha256": "cfcfe550efdb0dc82ef25a7ceeb3310483f11279d07173d441c0f2a99b87cf7e"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/quimicanova-pages/text.txt",
+      "bytes": 29099,
+      "sha256": "9220ce2747891684b63f1389dfae81e8a8fa488bdb505dcef346c0fd2a265531"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/quimicanova2007-crossref.json",
+      "bytes": 2151,
+      "sha256": "f9256fff2959570fe7ec4b1930f508ec5db775484ff483a75ac0e568e36e5323"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/quimicanova2007-with-si.pdf",
+      "bytes": 261981,
+      "sha256": "dbab73ee9ceaaf8648c94e79fe5b8007d79d1b5acf394c5917113cb16a6655db"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/quimicanova2007.pdf",
+      "bytes": 182013,
+      "sha256": "a457841e8795cc456dd09b3fb9c66dde7f083ed8ae9b7bb63c120fcc17050823"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-1.png",
+      "bytes": 188110,
+      "sha256": "db501000e0790442b1246c0bff2597ecc8cdab9e6575ce85e7381abf247cfce1"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-10.png",
+      "bytes": 66686,
+      "sha256": "448bbd057c0788d3c3f7c3e86e3a1f99cf8c2e422ef29097300a1a2e70e723be"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-11.png",
+      "bytes": 67358,
+      "sha256": "9a196ca9dd4ff48a926ae82bb8f8aa0490bf6191896820539ee73079a1593369"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-12.png",
+      "bytes": 59754,
+      "sha256": "9534fe5bd055a5adc21c2c0a30d3f67d6c7eb7c687a0f0dde16c3e38ef0cc3a2"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-13.png",
+      "bytes": 169819,
+      "sha256": "fc550d8bac33ef9d468c8852b647dc76765b37db5c75ce954d4c9a65af8207cb"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-14.png",
+      "bytes": 186030,
+      "sha256": "f5963c2e024c82e391704879c8b3f945786d7e6eb81ab61ccca766fbf6da6d49"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-15.png",
+      "bytes": 164779,
+      "sha256": "b2f0c22907682343014e734fbcf601383a056a44bea29d145a6a1b1b29843d09"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-16.png",
+      "bytes": 230486,
+      "sha256": "8d020b93aa2bfde9788abfeb218e833373488096c68320d6758ae520e912f987"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-17.png",
+      "bytes": 150109,
+      "sha256": "5e1677af906320776ccece60e4a873a19bc1c65b7381404e382c4e14eb86961a"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-18.png",
+      "bytes": 127462,
+      "sha256": "39a64927a107814255427759b7beab79e1b8b770efc9a66437a1c2642a8a4847"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-19.png",
+      "bytes": 99542,
+      "sha256": "6f897b3bf10fc78ce17de48133d402468387d42cfba957b466f520878955ffc4"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-2.png",
+      "bytes": 104632,
+      "sha256": "3a0567ff363f11070b7ca20de5c4cd068afd2ec1de4c771cb6aa7ba4cf724d29"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-20.png",
+      "bytes": 67059,
+      "sha256": "82b03cc76a238b9dcd59e8dd0077aa34a17c8d592d757f2315f2cbafa3e1aaad"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-21.png",
+      "bytes": 143286,
+      "sha256": "ef8e58ace1b9359d0b99a255854996e1b754bb8d5462318cb17879aeca0a6347"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-22.png",
+      "bytes": 163044,
+      "sha256": "466382b1ce651393ab9275a18db7ba91448f681f3f2a32504967d81504c53864"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-23.png",
+      "bytes": 158085,
+      "sha256": "4912769c62909f8f2f35e3abf300823b47e104307640f1ca3236f33adb63aff7"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-24.png",
+      "bytes": 157975,
+      "sha256": "754508335a33714bd26cfaec9ac16a73a4f45aa1bc270b82b88f739ed7b4c0be"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-25.png",
+      "bytes": 87075,
+      "sha256": "f035caa9a2c0cb5e424a561095cc4ee7154cab0a6134e80ad603fee868596004"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-26.png",
+      "bytes": 198289,
+      "sha256": "3bd5c87c199bdffd1ad580de93170bd557e896d82cb9e42fd9ef63ba43696bca"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-27.png",
+      "bytes": 107854,
+      "sha256": "6e7f98e1d2c7c5a7629a75d1e70ca5d384611d9373af218d0c9730c805c373dc"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-28.png",
+      "bytes": 193460,
+      "sha256": "d37c4cdfd4baa097860b667a584e358c265d88b37ce05fd6bb4c492a5b65f4c3"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-29.png",
+      "bytes": 89231,
+      "sha256": "c44e0296a7d03f1e8dfce2d338d5017b49c22fb55fc060d6dac1098463cd046f"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-3.png",
+      "bytes": 104360,
+      "sha256": "d5ee2564e1660cd5da67d763f1b32aa09aca503477a0d65148561d05a8514d15"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-30.png",
+      "bytes": 198785,
+      "sha256": "a472460bec788fcb12bcbc3e765a9002ac9b228fb094df80a326a648e4cbe3a2"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-31.png",
+      "bytes": 216891,
+      "sha256": "714a9291fa71b022ae5eb9499f4832191e80cc7072e223926415f0cf3b44b2df"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-32.png",
+      "bytes": 164202,
+      "sha256": "a61f26da4272f6c345eafce46c88a59d5daeeb6907f26c8740e0d02cd738bd49"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-33.png",
+      "bytes": 188331,
+      "sha256": "1238e6f05b4b0862254767025f0ad4336aa2475abe1df747d2a2dd2b2d06ad61"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-34.png",
+      "bytes": 210877,
+      "sha256": "4951b5f696813068e804be237f7952ee457e89cb19e89e796a689881e8bdd8b7"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-35.png",
+      "bytes": 431748,
+      "sha256": "d68724daa9c7879c59101df3efb5e2ddd65bf500155897f2400ed90c6faec655"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-36.png",
+      "bytes": 190782,
+      "sha256": "6f4418be0cadb17cb46104a2c9a1163d5465842ad531738f04dc51905630f12f"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-37.png",
+      "bytes": 212609,
+      "sha256": "c25d3960ede9e156f393ab1b740f5f033e96a5c3388ce4ed0c86c41fdfb67a1b"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-38.png",
+      "bytes": 221095,
+      "sha256": "1541b031d17688638aaba4bb10937254260ce2022455ea1a8e23aede23ebcdb5"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-39.png",
+      "bytes": 226297,
+      "sha256": "a15f597e8b2e4d76945972449e1edc6c280f632e6448c300892fdaf9fb901c94"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-4.png",
+      "bytes": 100952,
+      "sha256": "5a57da70a5258c55a93a5177665eb6725198caaebbf73521044e312bec501d3c"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-40.png",
+      "bytes": 207388,
+      "sha256": "0396babf253fd5e71b9733519a855252cc41c73f71c296b1782c66b3089eef4e"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-41.png",
+      "bytes": 291213,
+      "sha256": "44d87bc23072d85dca982eff3a990d1b2f6c00fcc4035baec5653e2df93d33f5"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-42.png",
+      "bytes": 137425,
+      "sha256": "ce0c3fb510c114f530d450c14ba58e7f1231481f3203105013c55726c8a7d9f4"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-43.png",
+      "bytes": 189546,
+      "sha256": "593a5b0c2d7b82e454e2acc037bb831cb9916aebbfc7dadfb30c960ff4172709"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-44.png",
+      "bytes": 211667,
+      "sha256": "9125a02267958bfb9d533c732fa00dcb47e8f83654bf567027fe141e42bfac10"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-45.png",
+      "bytes": 207409,
+      "sha256": "40463ec903094b444e1d149dbc07e3cb35e29e0ced5e2b43db1d379be35c84ee"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-46.png",
+      "bytes": 208519,
+      "sha256": "b85c7a9bb36f2a64b66ce90efb5a77d96718483d1e3f6693a761e470982503cf"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-47.png",
+      "bytes": 203765,
+      "sha256": "9738e53a3b4240fdcb18b66910a51c5d2a474a0aa32f54caec616a7a84b2a384"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-48.png",
+      "bytes": 222724,
+      "sha256": "ed9cde06582b311b8536b99065428619dd5c15041342e979d0f0a06214c0165e"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-49.png",
+      "bytes": 180142,
+      "sha256": "96538ca32c9d352c1aa3ce331631ab49aa67d9137139444caa2f191f76f7669c"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-5.png",
+      "bytes": 155331,
+      "sha256": "a42ef0d14e7aa88ebbdb979552fa5d96e32f2a2bbb8f4be3c178bb639da0fa4d"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-50.png",
+      "bytes": 104083,
+      "sha256": "45d2aeae2dfb3a18b1b75caaa66324f46d329af87ecfcc55c5ff1dc686c803b4"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-51.png",
+      "bytes": 147617,
+      "sha256": "3b4003d7328ad36b2eb34c838a8621c4b73e56d0aee8d29b118259c45090a454"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-52.png",
+      "bytes": 121749,
+      "sha256": "8362804f58e126a42fafdaed4db2d02a4fccf784d7f3998e5312d53843b884a1"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-53.png",
+      "bytes": 210747,
+      "sha256": "a48b9c1a1aba206624fc28e5aa47262a85feead08291fd91580767c1057bab6d"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-54.png",
+      "bytes": 130609,
+      "sha256": "b0a3c2acada3bf088899d75c020030c6a79873da090aec00543cb206985a6872"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-55.png",
+      "bytes": 187801,
+      "sha256": "5cdc516326e458e2cc6c23ca633b621c7e3ccc111332eadd171a2d01782b6499"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-56.png",
+      "bytes": 173508,
+      "sha256": "625dba297fb735ea280d950fe294806b9e0a96bb7f99587cec2713e224282f39"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-57.png",
+      "bytes": 345170,
+      "sha256": "89f8301aac13c7cce88acf7e39461d534a1a28a152652db8468ea04035d59773"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-58.png",
+      "bytes": 182675,
+      "sha256": "abd72f7d48f100253560e19baa8850e02baed75cd58c4b8c22095784ec997789"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-59.png",
+      "bytes": 56676,
+      "sha256": "cdfa235cd4f98beead7792de702709c430fa325921cb75b0276ed851ebb2a031"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-6.png",
+      "bytes": 205786,
+      "sha256": "a438addcca7b17043264e9588a153b1094057f512f6010c45c1ebac788534125"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-60.png",
+      "bytes": 183193,
+      "sha256": "7d774bc3625b3778f6420146929ad9ff76420d4e76a77b981fbd508b36ea2037"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-61.png",
+      "bytes": 77786,
+      "sha256": "4287f66b2521400fd29672ba9d33b1d42cc518ef9ced2f7e8dbe741513abaa64"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-62.png",
+      "bytes": 100768,
+      "sha256": "79971450f75b7f009146035b086dbdcfd08df7f23ee111ea6114242e2a94bf13"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-63.png",
+      "bytes": 128767,
+      "sha256": "ba7a65a7c7eab215824ef7e08bf0369b60aa81a278417b0b5ab4b07bf53b7b73"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-64.png",
+      "bytes": 206194,
+      "sha256": "f07117fa0d5ce7dce88439c4a5d7705940ed0fcd52c8a3209cdfe0733c0fa09f"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-65.png",
+      "bytes": 124094,
+      "sha256": "d8c07b2a88b39efd51153a316603524c93b7929afea41e3748c9c5923ae5eaf1"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-66.png",
+      "bytes": 109785,
+      "sha256": "63207566fa54ddc82b1dcb4531370432f6453bb8856a4e15c921178638043632"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-67.png",
+      "bytes": 136687,
+      "sha256": "947ae90687769d4301cbdb11f9e793066351a2393b4a44cba3b40992c962e9bf"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-68.png",
+      "bytes": 131715,
+      "sha256": "20953fb1b298f7a53cf980dd115ff1ab02c86fc8348f0a752db398ed67281dd0"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-69.png",
+      "bytes": 181518,
+      "sha256": "b563e86fe5d46b55a79ab0bf9d457b0f0f500b9e11919453fb1eda152f593eff"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-7.png",
+      "bytes": 221339,
+      "sha256": "33ce153abea912f35e3ca32bb3fb3aff3f6357e06e3b0453215d8f9c4cd4ac35"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-70.png",
+      "bytes": 198269,
+      "sha256": "b3c78f8e38ad974ae25151613aea4df95a7a35ca21042e0edddb78135d3f2dc7"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-71.png",
+      "bytes": 108690,
+      "sha256": "529a2ef1ef3aaf0a7ed65af8b4acc7cb7dcfd74d7aa8c5f75d447aeefed826e3"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-72.png",
+      "bytes": 108056,
+      "sha256": "03ff11f43f8c7edccacd25774a3a7b13182dbca07c4770a5ee5304219b6195e0"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-73.png",
+      "bytes": 199219,
+      "sha256": "22c8816bf4b41fc78dc012e365caa62c977221a2e8885fb1aadd9af4a2295b78"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-74.png",
+      "bytes": 112566,
+      "sha256": "719f12f943e64ce60201a8e3e5fa2caba75bd10560c72c2cc3042a18b9584c55"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-75.png",
+      "bytes": 168780,
+      "sha256": "74738b2691765c7118cc67dcb5d7cdfb271d73bf07af80d30462dda7949d178a"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-76.png",
+      "bytes": 173354,
+      "sha256": "acbb589bb88e09e8b6009fea86f0530b7dc9327a1b5b5b7872e3d9b43840af4d"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-77.png",
+      "bytes": 218631,
+      "sha256": "8b6123c1b89c9f26142a9620e7e23e831459c12575d235d956b8f3e412a10422"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-78.png",
+      "bytes": 181162,
+      "sha256": "087c5c6310b4b4994c86a2c11ee07e553c8f7a895438cfa801e7743af7181c0e"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-79.png",
+      "bytes": 64646,
+      "sha256": "c0ed5052227236bde7446615b94bdebd4dc1b37453f59032a7039dca1e5f28b2"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-8.png",
+      "bytes": 216150,
+      "sha256": "b4db8693f3e897cb04a126d0b0516fa6c5daa3d1b9ea87611d691c78f5aada67"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-80.png",
+      "bytes": 174331,
+      "sha256": "c6729d74ffd16b32b73321993c814e7397613718b4f543f6575a7bba3aa4ee73"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-81.png",
+      "bytes": 106000,
+      "sha256": "957fbb745f8dc74434e93329aa07f9216ab8b4ee025f1763d98a6ce6438b26b8"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-82.png",
+      "bytes": 232427,
+      "sha256": "7e74770514e181e849b0f7094e6c350d5f2aca1bc405c9b1cd708598738b306c"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-83.png",
+      "bytes": 107315,
+      "sha256": "5fa81efbac83e38950408a480e6cf43f1315c3975055f922891d258b3025954f"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-84.png",
+      "bytes": 100663,
+      "sha256": "03187dcee0ed503e6e83f454ce1a07917fab05b9a32fc3f05da393c28627535e"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-85.png",
+      "bytes": 82348,
+      "sha256": "3f8b376a9fded77501c94f9bc6ba3fefb25f77e12c1f52e808455823a67472fc"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-86.png",
+      "bytes": 86694,
+      "sha256": "5183a2d7a1529664f621851335ebc67e62ac32036bd1ecf5bb2be34ceb3f665c"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-87.png",
+      "bytes": 89223,
+      "sha256": "9dfc67ad64b189547ff67d7714d32618b68561a7f2f84e95df21877b6dc40cfc"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-88.png",
+      "bytes": 199716,
+      "sha256": "23221d56cfad17c432bb80c5d7be69be0ac95d65847cdea93904cf63f167b924"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-89.png",
+      "bytes": 110525,
+      "sha256": "2864087758e7fcf3dd0927033bda904c3b5fb0bf1bdf4bd6a1fb583fa7986d43"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-9.png",
+      "bytes": 49939,
+      "sha256": "25e6d7c88650dc5887600f2bca71e8fd429aa0375811a3e72fe0f547b07a179e"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-90.png",
+      "bytes": 178390,
+      "sha256": "b9e96426c4025805fca41a8abee335a78c53bb8f1b7a14497def7adf964ed4e5"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-91.png",
+      "bytes": 190539,
+      "sha256": "e164d3c0bf4a458a29102e24f17393b744dcaf4c78702ea6f3fd3b1df672ab83"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-92.png",
+      "bytes": 307094,
+      "sha256": "585cac3931dfe635ff055867a77a2491217a74b4bf4559fa0004fef4e005f730"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-93.png",
+      "bytes": 296825,
+      "sha256": "47f870ff696b203a7619654f324b7b2fab11b66c6e872ea63c549698b5545552"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-94.png",
+      "bytes": 297552,
+      "sha256": "7c8bc3c9691aff567fcbc4de7cde10826a5f3478d536394cff70224f1e5ad19e"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-95.png",
+      "bytes": 291479,
+      "sha256": "2677b4e8efa2ba748acfee2ab12087884b25280c9deb1f6949e7d26d7b4b0e01"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/page-96.png",
+      "bytes": 195145,
+      "sha256": "7bb6e4b64cd4d1e41ea27a16ca728dfe62551a8bfdf7a90e33657f4bc678e80f"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/thesis-pages/text.txt",
+      "bytes": 117744,
+      "sha256": "cc88bf6c7c2f35ca05b713ddd9fb88127c7e58315ca0708cd154c6a8b91ae5b9"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/unesp-molybdenite-thesis.pdf",
+      "bytes": 572574,
+      "sha256": "b03c239a3f19cd432d1a5e9771c87f061b4f5e4033332ea59fd9fbfaa8a36f89"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/with-si-pages/page-1.png",
+      "bytes": 414837,
+      "sha256": "129c10c5df4af554ce27a6071244709d8cf8774e637de8b3a583288e11341207"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/with-si-pages/page-2.png",
+      "bytes": 480059,
+      "sha256": "a5b83ce8a5d4a7251e4c03d17f68fae5fe7e1046fe1ba9728ffd72aa94e3835b"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/with-si-pages/page-3.png",
+      "bytes": 441381,
+      "sha256": "aef2bb43ba4c3950cdc4aa516c94c2570dbee3e9f53fdb401a1f32c550149c38"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/with-si-pages/page-4.png",
+      "bytes": 454319,
+      "sha256": "19945aadc24aaf0dd517df71e7fdb7ac2529ac0523ecea0aea10be7fdf7925c8"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/with-si-pages/page-5.png",
+      "bytes": 527138,
+      "sha256": "cfcfe550efdb0dc82ef25a7ceeb3310483f11279d07173d441c0f2a99b87cf7e"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/with-si-pages/page-6.png",
+      "bytes": 228350,
+      "sha256": "bca24b91d5ccc227e893b4a875ad67f1be344af34ccd2f20323ca0a72a4e5b70"
+    },
+    {
+      "path": "/private/tmp/cmm-round32-molybdenite-research/raw/with-si-pages/text.txt",
+      "bytes": 30200,
+      "sha256": "9a814ce4bb2c4985b701613bc2509876deeb96f73d4d1b2605f2f7988302f89c"
+    }
+  ],
+  "notice_check": "Exact DOI correction/retraction web query, publisher issue/PDF and Crossref relation/update metadata inspected; no affecting notice identified within these bounded routes, not an exhaustive negative claim.",
+  "licenses": {
+    "ima": "CC BY-SA3.0 per original page2; raw remains outsideGit",
+    "primary_and_thesis": "Redistribution terms not verified; public legitimate reading access does not establish redistribution permission; all complete originals outsideGit",
+    "metadata": "NCBI/Crossref terms not reassessed; raw retained outsideGit"
+  },
+  "priorities": [
+    "Independent scientific review of frozen molybdenite record and parent batch gates.",
+    "Assess separate Lu2026 concentrate arm from existing full primary, preserving residue versus solution basis and lack of matched sterile controls.",
+    "Acquire Romano2001 and Olson/Clark2008 full methods for distinct concentrate conditions; assess Nasernejad1999 primary to verify high-release counterexample, not its abstract alone.",
+    "Synthetic2006thesis/2009article can support manufactured-substrate context only after full assessment, not natural-mineral transfer."
+  ]
+}
