@@ -1,0 +1,102 @@
+id: cmmmech:ytterbium
+name: Ytterbium
+material_kind: element
+description: >-
+  The element Yb, distinct from its dissolved ions, experimental chloride salt,
+  phosphate phases, ores and manufactured materials. The dated US designation
+  concerns the named ytterbium mineral commodity. The curated laboratory assay
+  documents culture-associated aqueous depletion; it does not establish a
+  particular mineral phase, purified product or industrial recovery process.
+identifiers:
+- id: CHEBI:33381
+  label: ytterbium atom
+sources:
+- id: chebi_ytterbium
+  title: ChEBI CHEBI:33381 - ytterbium atom; formula Yb and net charge 0
+  url: https://www.ebi.ac.uk/chebi/CHEBI:33381
+  accessed_on: '2026-10-11'
+- id: usgs2025
+  title: >-
+    USGS (2025). Final 2025 List of Critical Minerals. Federal Register
+    90:50494-50497, document 2025-19813; named ytterbium row.
+  url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  accessed_on: '2026-10-11'
+- id: horiike2015
+  title: >-
+    Horiike T and Yamashita M (2015). A New Fungal Isolate, Penidiella sp.
+    Strain T9, Accumulates the Rare Earth Element Dysprosium. Applied and
+    Environmental Microbiology 81:3062-3068; specificity methods and
+    REE-specific bioaccumulation results include the separate ytterbium assay.
+  url: https://doi.org/10.1128/AEM.00300-15
+  accessed_on: '2026-10-11'
+- id: ncbi_penidiella_t9
+  title: >-
+    NCBI Taxonomy 1391704 - Penidiella sp. T9; species-ranked node with
+    unpublished name Teratosphaeriaceae sp. T9
+  url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1391704&retmode=xml
+  accessed_on: '2026-10-11'
+criticality:
+- jurisdiction: United States of America
+  list_name: USGS Final List of Critical Minerals
+  edition: 2025; Federal Register 90:50494-50497, 7 November 2025
+  classification: critical
+  source_ref: usgs2025
+mechanisms:
+- id: penidiella_yb_depletion
+  name: Ytterbium depletion from solution during Penidiella sp. T9 cultivation
+  process: other
+  microbial: true
+  organisms:
+  - id: NCBITaxon:1391704
+    label: Penidiella sp. T9
+  description: >-
+    Cultivation of the acidophilic fungal isolate T9 was associated with reduced
+    dissolved ytterbium in a synthetic single-element chloride treatment. A
+    no-T9 comparison supports a culture-associated effect, but the Yb assay
+    does not establish whether sorption, uptake or precipitation caused it.
+  context: >-
+    T9 was isolated from an abandoned-mine sample in Japan and identified by
+    morphology and ribosomal sequence comparison as Penidiella sp. T9.
+    The NCBI node names this isolate; it does not establish a formally named
+    species or a complete genome. The specificity test supplied separate REE
+    chloride salts at nominal 100 mg/L elemental concentration. Yb was a
+    single-element treatment, separate from the Dy/Nd mixture experiment.
+    The methods refer to the cultivation assay in basal salt medium at pH 2.5,
+    with 20 mM potassium hydrogen phthalate-HCl buffer, at 30 degrees C and
+    120 rpm. Medium contained 2 g/L glucose, 0.1 g/L yeast extract and 0.05 g/L
+    each of KH2PO4 and K2HPO4, among other salts. Removal was calculated from
+    initial and day-3 dissolved concentrations. The analytical subsection is
+    explicitly titled Measurement of Dy by ICP-AES and describes centrifugation,
+    0.2-micrometre supernatant filtration and technical triplicate readings;
+    separate Yb calibration, raw replicates and uncertainty are not given.
+    The REE-specific results describe almost no accumulation without T9, but
+    do not publish numerical Yb control concentrations. No Yb biomass loading,
+    intracellular localization, speciation, desorption or isolated-product
+    mass balance is reported. Laboratory synthetic solutions are not mine
+    drainage treatment or industrial deployment.
+  evidence:
+  - source_ref: horiike2015
+    supports: support
+    explanation: >-
+      The Specificity of metal bioaccumulation methods and REE-specific
+      bioaccumulation results report 45% Yb removal after three days and almost
+      no accumulation in the absence of T9. The denominator is the initial
+      dissolved Yb concentration. This supports partial aqueous depletion
+      associated with cultivation, not complete removal or purified recovery.
+  - source_ref: horiike2015
+    supports: partial
+    explanation: >-
+      The detailed biomass-content assay, three-experiment time course in
+      Figure 4 and SEM-EDX localization in Figure 5 concern Dy, not Yb. They
+      cannot establish a Yb uptake pathway, Yb phosphate formation, a Yb
+      capacity per dry mass or Yb biological replicate precision. The paper's
+      proposed phosphate mechanism remains untested for the Yb-specific arm;
+      process other retains that uncertainty. More than half the starting
+      dissolved Yb remained at the reported endpoint.
+curation_history:
+- timestamp: '2026-10-11T06:24:47Z'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Added verified elemental identity and dated US criticality with the individual Penidiella T9 ytterbium depletion assay; retained analytical limits and excluded dysprosium-only mechanisms.
+history_refs:
+- history/records/ytterbium/2026-10-11T062417Z-codex-a7602a.yaml

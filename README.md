@@ -52,6 +52,12 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Holmium](data/records/holmium.yaml) | Element measured in a harvested cyanobacterial fraction | Alkaline medium and unresolved abiotic retention prevent an intracellular-uptake claim |
 | [Erbium](data/records/erbium.yaml) | Element measured in a harvested cyanobacterial fraction | Earlier contrasting growth results and different protocols limit generalization |
 | [Gadolinium](data/records/gadolinium.yaml) | Element measured in a harvested cyanobacterial fraction | Source graph/text and biochemical discrepancies remain unresolved |
+| [Yttrium](data/records/yttrium.yaml) | Yttrium associated with washed ACUF 427 algal biomass | Taxonomic revision, mixture effects and unresolved localization constrain the interpretation |
+| [Ytterbium](data/records/ytterbium.yaml) | Culture-associated solution depletion with *Penidiella* T9 | Dysprosium-specific microscopy and capacity do not establish the ytterbium mechanism |
+| [Scandium](data/records/scandium.yaml) | Immobilized bacterial lanmodulin capture and malonate elution | Cell-free synthetic-feed separation; source feed discrepancies and limited replication remain explicit |
+| [Praseodymium](data/records/praseodymium.yaml) | Immobilized Melba-LanM separates Pr from La in a binary feed | Fraction-based yield and lower repeat performance limit the best single-run result |
+| [Lead](data/records/lead.yaml) | *Pseudomonas putida* enhances Pb release from synthetic pyromorphite | Nutrient and pH conditions affect remobilization; no isolated-metal recovery is shown |
+| [Bismuth](data/records/bismuth.yaml) | *Fusarium* BI accumulates Bi in phosphorus-rich granules | Soluble-pool depletion does not establish whole-feed recovery, mineral identity or Bi reduction |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -66,7 +72,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [fifth expansion reviews](research/ingests/round5-20261011-publication.md),
 [sixth expansion reviews](research/ingests/round6-20261011-publication.md),
 [seventh expansion reviews](research/ingests/round7-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round7-frontier-20261011.md), and
+[eighth expansion reviews](research/ingests/round8-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round8-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

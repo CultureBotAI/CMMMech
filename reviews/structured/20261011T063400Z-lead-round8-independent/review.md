@@ -1,0 +1,465 @@
+# Independent scientific review of the lead expansion record
+
+- Review: 20261011T063400Z-lead-round8-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T06:29:01Z
+- Finished UTC: 2026-10-11T06:34:00Z
+- Reviewer: Codex /root/cmm8_sc_pr (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The elemental identity, dated US designation and controlled culture-enhanced Pb release from synthetic pyromorphite are supported. The record preserves dissolved versus cell-associated denominators, unequal pH, strain-resolution limits and contrasting deposition context. No actionable defect in the inspected state.
+
+## Scope And Provenance
+
+All scientific and provenance fields of the frozen lead record, with dated criticality, primary methods/controls, figures, numerical denominators, identity and uncertainty.
+
+Selection: Assigned named record, no sampling. Companion record is context only.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 5b4a463f700bceb441f7b669f58a5e60823d2841.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:lead | data/records/lead.yaml | maintained | Lead |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Reviewer-executed named-record validation | passed | True | cmmmech:lead | Terminal session 23819 exited 0: 2 records checked, 0 failed. |
+| Parent-executed full native batch gate | passed | True | cmmmech:lead | Parent supplied terminal exit 0. Reviewer read /private/tmp/cmm-round8-batch.log in full: lint passed, 307 tests passed, 3 skipped in 46.87 seconds; 48 records valid and 58 histories valid. |
+| Parent-executed nonempty corpus validation | passed | True | cmmmech:lead | Parent supplied separate terminal exit 0; reviewer read /private/tmp/cmm-round8-corpus.log: 48 records checked, 0 failed. |
+| Parent-executed trusted-base history validation | passed | True | cmmmech:lead | Parent supplied separate terminal exit 0; reviewer read /private/tmp/cmm-round8-history.log: 58 histories checked, 0 errors. Reviewer also read the actual linked sidecar and distinct inline event. |
+
+## Scientific And Domain Assessments
+
+### Element, dated commodity and strain scope
+
+identity: supported. Targets: cmmmech:lead.
+
+Correct element and dated list membership; mineral feed and species/strain scopes remain distinct.
+
+### Batch dissolution, controls and causal alternatives
+
+evidence: supported. Targets: cmmmech:lead.
+
+Culture-enhanced filtered Pb is observed; proposed metabolite, P-scavenging and binding contributions are not a resolved unique molecular pathway.
+
+### Solution concentration, cell association and contextual counterevidence
+
+quantity: supported. Targets: cmmmech:lead.
+
+The numeric transcription and denominators match the source; conflicting deposition results are correctly separated by strain, substrate and conditions.
+
+### Canonical CREATE and exact reviewed bytes
+
+provenance: supported. Targets: cmmmech:lead.
+
+The actual codex/GPT-6/codex CREATE sidecar and distinct inline event correctly describe this new record. Frozen input hashes still match and trusted-base history validation passed.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/lead.yaml; Entire frozen record; linked CREATE history; frozen Markdown/JSON dossier | supports | Exact record, target ownership, source inputs and distinct inline/canonical provenance inspected; no edits by this reviewer. |
+| identity | https://www.ebi.ac.uk/chebi/CHEBI:25016; Live official ChEBI ID, name, formula and charge | supports | Neutral Pb atom identifier is correct; it is not a mineral, ion, compound or secondary-resource identifier. |
+| criticality | https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm; Final 2025 List, Lead row and table heading; FR 90:50494-50497 | supports | Live authority and retained HTML independently checked. United States, U.S. Department of the Interior/USGS, 2025 final list published 7 November 2025 explicitly names the commodity. The neighboring Yes/No denotes byproduct/co-product occurrence, not criticality. |
+| validation | /private/tmp/cmm-round8-batch.log; Entire batch log plus separate nonempty-corpus and trusted-base history receipts | supports | Parent-executed gates passed; reviewer read all three full logs and independently validated the two named records. Every inspected maintained input still matches its captured hash. |
+| search | Live web search and rg --no-ignore --hidden; First web result sets; specified scientific repository trees and retained raw directory | context_only | No actionable correction/retraction or duplicate accepted element root surfaced in this bounded review search. This is not exhaustive literature coverage. |
+| taxon | https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/303/dataset_report; Retained NCBI Datasets taxonomy JSON: tax_id, rank, scientific name; primary strain methods | supports | NCBITaxon:303 is species Pseudomonas putida. The study reports IBPRS KKP 1136, identified by earlier numerical taxonomy; the identifier does not independently authenticate that strain. Browser/API attempts were limited; retained official response was read and hash checked. |
+| primary | https://doi.org/10.1007/s11356-013-1968-3; Complete primary PDF methods/results/discussion; Tables 2-3; Figures 2-5; live PMC article | supports | Independent reading confirms triplicate 305 h flasks, synthetic pyromorphite, phosphate-rich/deficient arms and abiotic controls. Table 3 gives MP- 13.5 +/- 0.37 versus 1.47 +/- 0.16 micromolar Pb and MP+ 3.66 +/- 0.31 versus 1.15 +/- 0.07. A separate 100 h cell-digest result is not a mineral extraction percentage. |
+| figures | https://doi.org/10.1007/s11356-013-1968-3; Rendered PDF page 6, Figures 3-4 and adjoining Results; Table 3 text | supports | Visually checked distinct biotic pH increase and greater filtered Pb, especially MP-. The curves do not establish equal-pH causality, acidification or an isolated product yield. |
+| contrast | https://doi.org/10.3390/ijms23052483; Full primary XML Results 2.3/2.6 and Discussion; Figures 6-7 original JPGs visually inspected; live PMC metadata | context_only | Different isolate KKY-29 with lead acetate deposits pyromorphite/hydrocerussite. Results 2.6, Figure 11 condition ordering and Discussion disagree about phosphate/phase assignment; biomass/phosphate units are inconsistent. The record retains this as contextual contrast without transferring its percentages, assignments or causal gene claims. |
+
+## Limits And Additional Notes
+
+- The experiment does not isolate a unique dissolution mechanism; unequal pH, metabolites, nutrient uptake and reversible binding remain contributors.
+- Strain identification is source-reported numerical taxonomy, not independently resolved by the species taxid.
+- The source reports unusual FeEDTA concentration and does not demonstrate field transfer or persistent sequestration.
+- The Kato comparison contains conflicting phase/condition assignments and units; it is context, not a direct replication or a quantitative ingestion.
+- Correction/counterevidence and duplicate searches are bounded by the stated scope; no exhaustive absence claim or guarantee about all literature is made.
+- Initial two-target inspect was captured at 2026-10-11T06:29:01Z before scientific judgment; subsequent per-record inspect added its linked history. Failed preliminary per-record calls used a list instead of the required targets mapping, were corrected, and both actual inspections then exited 0.
+- No record, history or dossier edits were made by this independent reviewer. Successful raw acquisition hashes (25 files) and derived artifacts (9) match the dossier; three explicit failed requests are correctly recorded as failures, not acquired evidence.
+- Primary literature remains outside Git. Parent executed shared batch gates; the reviewer independently read complete receipts and ran affected named validation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T063400Z-lead-round8-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of the lead expansion record
+started_at: '2026-10-11T06:29:01Z'
+finished_at: '2026-10-11T06:34:00Z'
+reviewer:
+  identity: Codex /root/cmm8_sc_pr
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: This reviewer authored Sc/Pr, not the Pb/Bi records, histories
+    or dossiers. The frozen targets were inspected before judgment; primary methods/results
+    and figure pixels, authority identifiers and counterevidence were checked independently.
+    Curator-acquired files were read directly and their successful acquisition/derived
+    hashes verified.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The elemental identity, dated US designation and controlled culture-enhanced
+  Pb release from synthetic pyromorphite are supported. The record preserves dissolved
+  versus cell-associated denominators, unequal pH, strain-resolution limits and contrasting
+  deposition context. No actionable defect in the inspected state.
+source:
+  git_revision: 5b4a463f700bceb441f7b669f58a5e60823d2841
+  state: working_tree
+  inputs:
+  - path: data/records/lead.yaml
+    sha256: f88ea8069eac92b1f21e0923d4c8ffd1ca9931ad7571e1bd20c482e7ce3cade1
+    role: target
+  - path: history/records/lead/2026-10-11T062445Z-codex-f6ac41.yaml
+    sha256: 5848ae7498af26b540a14ee0e606f81d9bc6c7250bc07a7a4112c2fdefc32007
+    role: context
+  - path: research/ingests/round8-pb-bi-20261011.json
+    sha256: 881f45c216d6b2956d2d1103f4fd80ce80b8a9c79996d3cbf028095d00c139e6
+    role: context
+  - path: research/ingests/round8-pb-bi-20261011.md
+    sha256: fb5e7151feee06771cb3c216e4fe792ec6ca918cdf8f654d64919282e1c97b1a
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+targets:
+- target_id: cmmmech:lead
+  path: data/records/lead.yaml
+  label: Lead
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lead.yaml
+    role: maintained_record
+scope:
+  description: All scientific and provenance fields of the frozen lead record, with
+    dated criticality, primary methods/controls, figures, numerical denominators,
+    identity and uncertainty.
+  selection: Assigned named record, no sampling. Companion record is context only.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:lead
+checks:
+- check_id: record
+  name: Reviewer-executed named-record validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/lead.yaml data/records/bismuth.yaml
+  status: passed
+  required: true
+  summary: 'Terminal session 23819 exited 0: 2 records checked, 0 failed.'
+  target_ids:
+  - cmmmech:lead
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: batch
+  name: Parent-executed full native batch gate
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  status: passed
+  required: true
+  summary: 'Parent supplied terminal exit 0. Reviewer read /private/tmp/cmm-round8-batch.log
+    in full: lint passed, 307 tests passed, 3 skipped in 46.87 seconds; 48 records
+    valid and 58 histories valid.'
+  target_ids:
+  - cmmmech:lead
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: nonempty
+  name: Parent-executed nonempty corpus validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: 'Parent supplied separate terminal exit 0; reviewer read /private/tmp/cmm-round8-corpus.log:
+    48 records checked, 0 failed.'
+  target_ids:
+  - cmmmech:lead
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: history
+  name: Parent-executed trusted-base history validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate-history --base 5b4a463f700bceb441f7b669f58a5e60823d2841
+  status: passed
+  required: true
+  summary: 'Parent supplied separate terminal exit 0; reviewer read /private/tmp/cmm-round8-history.log:
+    58 histories checked, 0 errors. Reviewer also read the actual linked sidecar and
+    distinct inline event.'
+  target_ids:
+  - cmmmech:lead
+  exit_code: 0
+  expected_exit_code: 0
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/lead.yaml
+  locator: Entire frozen record; linked CREATE history; frozen Markdown/JSON dossier
+  accessed_at: '2026-10-11T06:34:00Z'
+  support: supports
+  summary: Exact record, target ownership, source inputs and distinct inline/canonical
+    provenance inspected; no edits by this reviewer.
+  snapshot_sha256: f88ea8069eac92b1f21e0923d4c8ffd1ca9931ad7571e1bd20c482e7ce3cade1
+- evidence_id: identity
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:25016
+  locator: Live official ChEBI ID, name, formula and charge
+  accessed_at: '2026-10-11T06:34:00Z'
+  support: supports
+  summary: Neutral Pb atom identifier is correct; it is not a mineral, ion, compound
+    or secondary-resource identifier.
+- evidence_id: criticality
+  kind: authority
+  reference: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  locator: Final 2025 List, Lead row and table heading; FR 90:50494-50497
+  accessed_at: '2026-10-11T06:34:00Z'
+  support: supports
+  summary: Live authority and retained HTML independently checked. United States,
+    U.S. Department of the Interior/USGS, 2025 final list published 7 November 2025
+    explicitly names the commodity. The neighboring Yes/No denotes byproduct/co-product
+    occurrence, not criticality.
+  snapshot_sha256: 0d3527a735c3fa04765a98d3b9140af0c221e5fd7706b96329b5c7d900591f7e
+- evidence_id: validation
+  kind: validation
+  reference: /private/tmp/cmm-round8-batch.log
+  locator: Entire batch log plus separate nonempty-corpus and trusted-base history
+    receipts
+  accessed_at: '2026-10-11T06:34:00Z'
+  support: supports
+  summary: Parent-executed gates passed; reviewer read all three full logs and independently
+    validated the two named records. Every inspected maintained input still matches
+    its captured hash.
+  snapshot_sha256: a143a8808e0b322d1a9d95769a824de04bd1f8721483d97d6d69efc07bba081b
+- evidence_id: search
+  kind: search
+  reference: Live web search and rg --no-ignore --hidden
+  locator: First web result sets; specified scientific repository trees and retained
+    raw directory
+  accessed_at: '2026-10-11T06:34:00Z'
+  support: context_only
+  summary: No actionable correction/retraction or duplicate accepted element root
+    surfaced in this bounded review search. This is not exhaustive literature coverage.
+  search_scope: 'Queries: "10.1007/s11356-013-1968-3" correction OR retraction OR
+    corrigendum; "10.1128/AEM.71.2.876-882.2005" correction OR retraction OR polyphosphate;
+    Fusarium BI bismuth intracellular accumulation polyphosphate mechanism contradictory.
+    No date/domain filters and no pagination. Hidden/ignored-inclusive rg over data,
+    research, history, reviews, .claude, docs, tests and src searched root IDs and
+    DOI tokens; retained raw TXT/XML/HTML/JSON files searched DOI, accession and ChEBI
+    tokens. An initial .codex operand was unavailable; repeated search used the listed
+    existing trees. No machine-wide absence claim.'
+- evidence_id: taxon
+  kind: database
+  reference: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/303/dataset_report
+  locator: 'Retained NCBI Datasets taxonomy JSON: tax_id, rank, scientific name; primary
+    strain methods'
+  accessed_at: '2026-10-11T06:34:00Z'
+  support: supports
+  summary: NCBITaxon:303 is species Pseudomonas putida. The study reports IBPRS KKP
+    1136, identified by earlier numerical taxonomy; the identifier does not independently
+    authenticate that strain. Browser/API attempts were limited; retained official
+    response was read and hash checked.
+  snapshot_sha256: 959919d518a376f4f38177098421e01238459af6c28696f555e7821df153ec5b
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1007/s11356-013-1968-3
+  locator: Complete primary PDF methods/results/discussion; Tables 2-3; Figures 2-5;
+    live PMC article
+  accessed_at: '2026-10-11T06:34:00Z'
+  support: supports
+  summary: Independent reading confirms triplicate 305 h flasks, synthetic pyromorphite,
+    phosphate-rich/deficient arms and abiotic controls. Table 3 gives MP- 13.5 +/-
+    0.37 versus 1.47 +/- 0.16 micromolar Pb and MP+ 3.66 +/- 0.31 versus 1.15 +/-
+    0.07. A separate 100 h cell-digest result is not a mineral extraction percentage.
+  snapshot_sha256: 55b797252af9733875bb8402772756c32d6e67e0fc42699db9bc5532d1b8eb1c
+- evidence_id: figures
+  kind: primary_source
+  reference: https://doi.org/10.1007/s11356-013-1968-3
+  locator: Rendered PDF page 6, Figures 3-4 and adjoining Results; Table 3 text
+  accessed_at: '2026-10-11T06:34:00Z'
+  support: supports
+  summary: Visually checked distinct biotic pH increase and greater filtered Pb, especially
+    MP-. The curves do not establish equal-pH causality, acidification or an isolated
+    product yield.
+- evidence_id: contrast
+  kind: primary_source
+  reference: https://doi.org/10.3390/ijms23052483
+  locator: Full primary XML Results 2.3/2.6 and Discussion; Figures 6-7 original JPGs
+    visually inspected; live PMC metadata
+  accessed_at: '2026-10-11T06:34:00Z'
+  support: context_only
+  summary: Different isolate KKY-29 with lead acetate deposits pyromorphite/hydrocerussite.
+    Results 2.6, Figure 11 condition ordering and Discussion disagree about phosphate/phase
+    assignment; biomass/phosphate units are inconsistent. The record retains this
+    as contextual contrast without transferring its percentages, assignments or causal
+    gene claims.
+  snapshot_sha256: 2739a8c13f82541cd677f82e162468f5513e43bac73e03146c0872da71d75778
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Element, dated commodity and strain scope
+  outcome: supported
+  summary: Correct element and dated list membership; mineral feed and species/strain
+    scopes remain distinct.
+  target_ids:
+  - cmmmech:lead
+  evidence_ids:
+  - record
+  - identity
+  - criticality
+  - taxon
+  dimensions:
+  - name: material
+    value: Element Pb; synthetic pyromorphite Pb5(PO4)3Cl is a distinct feed, not
+      a waste/ore commodity.
+    definition: Evidence-bounded scope and analytical interpretation of this record.
+    evidence_ids:
+    - record
+    - primary
+  - name: criticality
+    value: United States; U.S. Department of the Interior Final List of Critical Minerals;
+      final 2025 edition published 7 November 2025.
+    definition: Evidence-bounded scope and analytical interpretation of this record.
+    evidence_ids:
+    - criticality
+  - name: organism
+    value: Reported Pseudomonas putida IBPRS KKP 1136; NCBITaxon:303 is species-level
+      only.
+    definition: Evidence-bounded scope and analytical interpretation of this record.
+    evidence_ids:
+    - primary
+    - taxon
+- assessment_id: mechanism
+  area: evidence
+  topic: Batch dissolution, controls and causal alternatives
+  outcome: supported
+  summary: Culture-enhanced filtered Pb is observed; proposed metabolite, P-scavenging
+    and binding contributions are not a resolved unique molecular pathway.
+  target_ids:
+  - cmmmech:lead
+  evidence_ids:
+  - record
+  - primary
+  - figures
+  dimensions:
+  - name: biomass
+    value: Growing mid-log cells, OD600 0.8 before pelleting/resuspension, 1:100 inoculation.
+    definition: Evidence-bounded scope and analytical interpretation of this record.
+    evidence_ids:
+    - primary
+  - name: substrate_pretreatment
+    value: 0.05 g XRD/SEM-EDS characterized synthetic pyromorphite; measured composition
+      Pb5.09(PO4)2.96Cl; heated 180 C for 3 h.
+    definition: Evidence-bounded scope and analytical interpretation of this record.
+    evidence_ids:
+    - primary
+  - name: conditions
+    value: 100 mL in 500 mL flask, 21 +/- 1 C, 100 rpm, 305 h; MP+ 0.5 g/L K2HPO4
+      versus MP- omission; source FeEDTA 30 mM retained as unusual.
+    definition: Evidence-bounded scope and analytical interpretation of this record.
+    evidence_ids:
+    - primary
+  - name: controls
+    value: Abiotic mineral controls, growth without mineral and chlorapatite comparisons;
+      pH about 7.3 rising toward 9 only in biotic arms.
+    definition: Evidence-bounded scope and analytical interpretation of this record.
+    evidence_ids:
+    - primary
+    - figures
+  - name: deployment
+    value: Laboratory synthetic-mineral remobilization; no isolated-metal recovery
+      or demonstrated field/industrial process.
+    definition: Evidence-bounded scope and analytical interpretation of this record.
+    evidence_ids:
+    - record
+    - primary
+- assessment_id: outcomes
+  area: quantity
+  topic: Solution concentration, cell association and contextual counterevidence
+  outcome: supported
+  summary: The numeric transcription and denominators match the source; conflicting
+    deposition results are correctly separated by strain, substrate and conditions.
+  target_ids:
+  - cmmmech:lead
+  evidence_ids:
+  - primary
+  - figures
+  - contrast
+  - record
+  dimensions:
+  - name: analytical_denominator
+    value: ICP-MS after centrifugation/0.2 micrometre filtration; Table 3 micromolar
+      Pb at 305 h, SD of triplicates, not percent extraction.
+    definition: Evidence-bounded scope and analytical interpretation of this record.
+    evidence_ids:
+    - primary
+  - name: cell_bound_fraction
+    value: At 100 h in MP+, 13.6 +/- 0.4 micromolar cell-associated Pb is source-reported
+      as 94% of released Pb; 6 samples, two from each replicate, not 94% mineral recovery.
+    definition: Evidence-bounded scope and analytical interpretation of this record.
+    evidence_ids:
+    - primary
+  - name: counterevidence
+    value: KKY-29 deposition from acetate is a different system. Source phase/condition
+      inconsistencies are preserved without choosing a causal phosphate assignment.
+    definition: Evidence-bounded scope and analytical interpretation of this record.
+    evidence_ids:
+    - contrast
+    - record
+- assessment_id: provenance
+  area: provenance
+  topic: Canonical CREATE and exact reviewed bytes
+  outcome: supported
+  summary: The actual codex/GPT-6/codex CREATE sidecar and distinct inline event correctly
+    describe this new record. Frozen input hashes still match and trusted-base history
+    validation passed.
+  target_ids:
+  - cmmmech:lead
+  evidence_ids:
+  - record
+  - validation
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- The experiment does not isolate a unique dissolution mechanism; unequal pH, metabolites,
+  nutrient uptake and reversible binding remain contributors.
+- Strain identification is source-reported numerical taxonomy, not independently resolved
+  by the species taxid.
+- The source reports unusual FeEDTA concentration and does not demonstrate field transfer
+  or persistent sequestration.
+- The Kato comparison contains conflicting phase/condition assignments and units;
+  it is context, not a direct replication or a quantitative ingestion.
+- Correction/counterevidence and duplicate searches are bounded by the stated scope;
+  no exhaustive absence claim or guarantee about all literature is made.
+notes:
+- Initial two-target inspect was captured at 2026-10-11T06:29:01Z before scientific
+  judgment; subsequent per-record inspect added its linked history. Failed preliminary
+  per-record calls used a list instead of the required targets mapping, were corrected,
+  and both actual inspections then exited 0.
+- No record, history or dossier edits were made by this independent reviewer. Successful
+  raw acquisition hashes (25 files) and derived artifacts (9) match the dossier; three
+  explicit failed requests are correctly recorded as failures, not acquired evidence.
+- Primary literature remains outside Git. Parent executed shared batch gates; the
+  reviewer independently read complete receipts and ran affected named validation.
+```
