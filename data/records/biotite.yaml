@@ -1,0 +1,87 @@
+id: cmmmech:biotite
+name: Biotite mica series
+material_kind: mineral_group
+description: Biotite denotes a compositional series of trioctahedral micas in or near the field between
+  the annite-phlogopite and siderophyllite-eastonite joins in the IMA-approved mica nomenclature of Rieder
+  et al. (1998). It is represented here as a mineral group, not an individual mineral species. The IMA's
+  2019 compendium reproduces Whitney and Evans (2010), which labels biotite as GROUP. No constituent criticality
+  designation is inherited. The experimental feed below is author-designated biotite; its bulk oxide composition
+  does not establish a particular member species or quantitative phase purity.
+sources:
+- id: rieder_1998
+  title: Rieder et al. (1998). Nomenclature of the Micas. Clays and Clay Minerals 46(5):586-595. DOI 10.1346/CCMN.1998.0460513;
+    p586 Commission approval, p589 Table 4 and Series Names and Lists of Invalid Names.
+  url: https://doi.org/10.1346/CCMN.1998.0460513
+  accessed_on: '2026-10-11'
+- id: ima_compendium_2019
+  title: Schertl, Mills and Maresch, editors (2019 copyright). A Compendium of IMA-Approved Mineral Nomenclature,
+    prepared for IMA2018. PDF pp33-35 reproduce Whitney and Evans (2010), Abbreviations for names of rock-forming
+    minerals, DOI 10.2138/am.2010.3371; Table 1 biotite GROUP row on PDF p34 and GROUP definition on PDF
+    p35. Historical nomenclature source, not a 2019 revision of the 2010 table.
+  url: https://cnmnc.units.it/ima_reports/2%20IMA-Nomenclature-e-Booklet-2019-1.pdf
+  accessed_on: '2026-10-11'
+- id: sheng_2026
+  title: Sheng, Zheng, Yang, Dong, He and Sheng (2026). Silicate minerals enhance the expression of genes
+    related to mineral dissolution by Priestia aryabhattai strain C4-10. Applied and Environmental Microbiology
+    92(2):e02554-25. DOI 10.1128/aem.02554-25; Figure 1, dissolution and transcriptome methods, Discussion,
+    and supplementary methods pp1-2.
+  url: https://doi.org/10.1128/aem.02554-25
+  accessed_on: '2026-10-11'
+- id: ncbi_priestia
+  title: NCBI Taxonomy 412384, Priestia aryabhattai, species; live browser and retained taxonomy XML inspected
+    11 October 2026.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=412384&mode=Info
+  accessed_on: '2026-10-11'
+- id: ncbi_c4_10
+  title: NCBI assembly GCA_039631325.1, Priestia aryabhattai strain C4-10, with linked soil BioSample
+    SAMN41260351; dataset report acquired in round16 and reinspected 11 October 2026.
+  url: https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_039631325.1/
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: c4_10_biotite_dissolution
+  name: C4-10 culture-associated dissolution of a biotite feed
+  process: bioleaching
+  description: Priestia aryabhattai C4-10 cultures increased measured Fe and Si in biotite-containing
+    medium relative to uninoculated feed controls. Acidification, organic-acid production and mineral-associated
+    cells accompany the dissolution phenotype; their individual causal contributions and the necessity
+    of particular genes are unresolved.
+  context: C4-10 is a living soil isolate grown in LB at 37 degrees C and 180 rpm for 16 hours, harvested,
+    washed and resuspended in sterile distilled water at 10^8 cells/mL. Triplicate laboratory dissolution
+    flasks contained 60 mL sterilized BHm, 0.6 g biotite and 1.5 mL suspension, incubated at 37 degrees
+    C and 180 rpm and sampled at 4, 8, 12, 16, 20, 24, 36 and 48 hours. BHm was prepared at pH 7.0 with
+    2 g/L glucose; the biotite particles were 75-150 micrometres and reported to contain 39.90% SiO2,
+    14.75% Fe2O3 and 13.69% MgO. Mineral cleaning refers to an earlier protocol without restating its
+    steps. Fe and Si were measured by ICP-OES and described as dissolved, but separation of these elemental
+    aliquots is not specified in the inspected main and supplemental methods. The separate transcriptome
+    experiment used 0.5 mL inoculum and an 8-hour endpoint; it is not the same assay as the dissolution
+    time course. Lizardite substitution and its MgSO4-free medium are covered by the separate lizardite
+    record.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:412384
+    label: Priestia aryabhattai
+  evidence:
+  - source_ref: sheng_2026
+    supports: support
+    explanation: Results and Figure 1A show the Fe increase over the 4-48-hour biotite time course and
+      elevated Si relative to uninoculated controls from 12 to 48 hours. Figure 1B shows culture acidification
+      relative to controls, and Figure 1E shows stained mineral-associated cells after 24 hours. Figure
+      1 reports n=3 with one-standard-deviation error bars. These support the conditional culture-associated
+      mobilization claim, without establishing a recovered product.
+  - source_ref: sheng_2026
+    supports: partial
+    explanation: No pH-matched abiotic assay separates acid dissolution from other cellular effects. Figure
+      1D and the main text call the early 1.7-7.6% CAS siderophore-unit values detectable, whereas supplementary
+      p2 classifies values below 10% as negative; later biotite time points are reported as nondetections.
+      A positive siderophore mechanism is therefore not assigned. Gene-expression correlations are not
+      functional tests, as the Discussion acknowledges. Cell-associated Fe digestion and surface fluorescence
+      do not demonstrate intracellular uptake. Feed member-species identity, phase purity, fraction-specific
+      mass balance, isolated-metal recovery and industrial deployment remain unestablished.
+curation_history:
+- timestamp: '2026-10-11T10:49:53.712870+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created biotite mica-series mineral-group record with primary culture-associated dissolution
+    evidence and explicit source limitations.
+history_refs:
+- history/records/biotite/2026-10-11T104944Z-codex-f8837c.yaml

@@ -1,0 +1,123 @@
+id: cmmmech:reverse-osmosis-concentrate
+name: Reverse osmosis concentrate
+material_kind: secondary_resource
+description: >-
+  Concentrated aqueous reject stream generated during reverse-osmosis water
+  treatment, considered here as a secondary feed for constituent separation and
+  recovery. Its salts, nutrients, contaminants and treatment additives depend on
+  the source water and process. The curated experiment used concentrate produced
+  in the laboratory from Arkansas River water, not natural geothermal brine or
+  oil-and-gas produced water. This process-generated mixture is distinct from
+  its dissolved elements, precipitated mineral phases and traded products.
+  No criticality designation is inherited from a constituent.
+sources:
+  - id: usbr20092
+    title: >-
+      Scarim, Bernardino-McCloud and Arias-Paic. Biological and Ion Exchange Mining
+      of Reverse Osmosis Concentrate: Enhancing Water and Mineral Extraction from
+      a Salinity Impaired Surface Water. Bureau of Reclamation Final Report
+      ST-2024-20092, December 2025 cover and signatures; documentation page dated
+      7 November 2025. Appendix A contains the accepted manuscript associated
+      with DOI 10.1061/JOEEDU.EEENG-8371, Journal of Environmental Engineering
+      152(1), 04025092 (2026), and its supplements. Sections 2.1-2.8 and 3.2-3.3,
+      Tables 1-3/S3-S4 and Figures 1-6/S2-S3; PDF pages 21-30 and 41-53.
+    url: https://data.usbr.gov/rise/content-rise-public/rise/catalog-item/binary/S%26T%20Final%20Report%2020092%20Signed.pdf
+    accessed_on: '2026-10-11'
+mechanisms:
+  - id: sludge_associated_concentrate_precipitation
+    name: Activated-sludge-associated precipitation during concentrate treatment
+    process: biomineralization
+    microbial: true
+    description: >-
+      Aerated concentrate amended with activated-sludge biomass and glycerin
+      produced more suspended solids and lower filtered calcium and sulfate
+      concentrations than the reported unamended controls over 18 hours.
+      Soluble total phosphorus declined as a surrogate for the added
+      phosphonate-containing antiscalant. Microbial antiscalant assimilation and
+      carbon-phosphorus bond cleavage are proposed explanations, not demonstrated
+      enzyme activity. SEM/EDS and modeling suggested gypsum and calcite in mixed
+      solids, but did not independently establish crystalline phase identity or
+      pure-product recovery. The supported outcome is a laboratory treatment
+      association in one river-derived concentrate.
+    context: >-
+      Arkansas River water collected near Garden City, Kansas on 27 March 2024
+      was ultrafiltered and processed by batch reverse osmosis at 85% water
+      recovery on 22-23 April 2024, with 3.0 mg/L proprietary polymer- and
+      phosphonate-based antiscalant dosed into the feed. Three-liter concentrate
+      batches in 4-liter jars received particulate biomass retained from 100 mL
+      of Boulder wastewater-treatment activated sludge on a 0.7-micrometer
+      filter and resuspended in the concentrate, plus 325 mg/L glycerin.
+      The mixed, aerated treatment ran for 18 hours in triplicate, with initial
+      volatile suspended solids approximately 0.50 g/L. Table S3 reports treatment
+      temperatures around 21-22 degrees C and pH changing from 8.07 to 8.23;
+      these are observed batch conditions, not prescribed optima. The stagnant
+      control had two replicates and the mixed/aerated control one; both lacked
+      added sludge and glycerin. They were not demonstrated sterile controls,
+      and no glycerin-only, killed-biomass or matched-pH control was reported.
+      Analytical water samples were filtered through 0.45-micrometer nylon
+      filters. Community sequencing does not identify which organism caused the
+      change; no isolate or causal taxon identifier is assigned. Downstream
+      cation exchange and modeled membrane steps are separate processes, not
+      microbial lithium, magnesium or rubidium product recovery.
+    evidence:
+      - source_ref: usbr20092
+        supports: support
+        explanation: >-
+          Appendix A Sections 2.1-2.4, Table 2 and Table S3 establish feed origin,
+          living mixed-sludge preparation, glycerin addition, replication and
+          conditions. Sections 3.2.1 and 3.2.4 and Figures 3-5 report total
+          suspended solids of 1.05 g/L in the treatment, versus 0.0089 and
+          0.14 g/L in stagnant and aerated controls, respectively, and average
+          filtered calcium/sulfate reductions of 41%/10% from initial concentrate.
+          Controls also showed calcium reductions (12% and 5%) and sulfate
+          reductions (4% each). These are source-reported solution comparisons
+          and mixed-solids measurements, not phase-specific recovery yields.
+      - source_ref: usbr20092
+        supports: partial
+        explanation: >-
+          Sections 3.2.1-3.2.3 and Figure 4 report an 88% decrease in soluble total
+          phosphorus used as an antiscalant surrogate. Assimilation, carbon-
+          phosphorus cleavage and organism-specific contributions were inferred;
+          enzyme activity and gene necessity were not tested. Controls lack both
+          inoculum and glycerin, so the design does not isolate their separate
+          effects. Aeration-induced carbonic-acid stripping, pH variability,
+          endogenous organisms and biomass-associated sorption can contribute.
+          Section 3.2.1 also reports limited precipitation in another drainage
+          concentrate with more orthophosphate, with data not shown; performance
+          is not generalized to all concentrates.
+      - source_ref: usbr20092
+        supports: partial
+        explanation: >-
+          Sections 3.2.4-3.2.6 explicitly request additional solids analysis to
+          confirm SEM/EDS and modeled phase assignments. The reported 64% gypsum
+          purity assumes CaSO4.2H2O; neither it nor modeled pH control establishes
+          an isolated pure gypsum product. Proposed gypsum yield per million
+          liters, subsequent water-recovery percentages and brucite purity are
+          scale-normalized or modeled projections. Figure 1's million-liter
+          basis does not change the 3-liter reactor scale in Table 2. Section 3.3
+          reports uranium was not precipitated; its 0.422 mg/L value differs
+          from 0.444 mg/L in Table S4, so no uranium removal efficiency is curated.
+          Section 2.7 assigns sequencing to batch 2 while Figure S2 labels batch 1;
+          the discrepancy prevents an exact batch-specific community claim.
+      - source_ref: usbr20092
+        supports: context_only
+        explanation: >-
+          Sections 2.5 and 3.3 and Figures 7-8 describe subsequent nonmicrobial
+          cation-exchange loading and regeneration. The authors acknowledge
+          co-elution and lack of high-purity constituent recovery. Table S4
+          labels later RO/NF results as modeled data and some ion-exchange
+          values as assumed conserved; nondetects are not zero. These process
+          proposals explain resource interest but do not demonstrate microbial
+          recovery of individual critical elements or industrial deployment.
+curation_history:
+  - timestamp: '2026-10-11T10:50:18Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Created a process-defined secondary-resource record and scoped laboratory
+      precipitation mechanism from the complete USBR report and supplements.
+      Preserved controls, unproven antiscalant and phase assignments, source
+      inconsistencies, and the distinction between measured treatment and
+      projected downstream recovery.
+history_refs:
+  - history/records/reverse-osmosis-concentrate/2026-10-11T105020Z-codex-b323dc.yaml

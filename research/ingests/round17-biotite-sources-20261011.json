@@ -1,0 +1,262 @@
+{
+  "prepared_at": "2026-10-11T10:50:50.243690+00:00",
+  "author": "codex (GPT-6; codex), /root/round17_biotite",
+  "base": "4504ab1c5a005ea31e65318c3b3f206d6fbf44ed",
+  "branch": "curate/cmm-expansion-round17-20261011",
+  "scope": "Biotite mica series, represented as mineral_group; primary culture-associated dissolution and explicit identity/causality limits. No criticality claim.",
+  "search": {
+    "provider": "web search",
+    "date": "2026-10-11",
+    "filters": "query-specific domains only when written in query; otherwise none",
+    "pagination": "first returned results; unpaginated, bounded",
+    "queries": [
+      "site.cnmnc.units.it \"biotite\" \"series\"",
+      "\"Nomenclature of the Micas\" \"biotite\" 1998 pdf",
+      "\"10.1128/aem.02554-25\" correction OR retraction OR erratum",
+      "site.cambridge.org \"Nomenclature of the Micas\" Rieder",
+      "site.cnmnc.units.it mica nomenclature Rieder",
+      "\"biotite\" \"1998\" \"ima-mineralogy.org\"",
+      "\"Priestia aryabhattai\" \"biotite\" \"control\"",
+      "\"biotite\" \"Sheng\" \"02554-25\" siderophore",
+      "\"biotite\" \"Rieder\" nomenclature revised CNMNC 2026"
+    ],
+    "result": "No applicable correction or retraction surfaced for the exact Sheng DOI; the returned AEM.02554-13 retraction is a different article. A newly surfaced citing Dong2026 experiment remains a handoff."
+  },
+  "dedup": {
+    "command": "rg --no-ignore --hidden --follow -l -i biotite|02554-25 across named boundaries; full hidden/ignored/followed data/records file inventory",
+    "boundaries": [
+      "data",
+      "research",
+      "reviews",
+      "history",
+      ".claude",
+      "/private/tmp/cmm-round16-silicate-raw",
+      "/private/tmp/cmm-round17-biotite-raw"
+    ],
+    "excluded_formats_from_text_match": [
+      "pdf",
+      "png",
+      "jpg",
+      "gif",
+      "zip"
+    ],
+    "binary_coverage": "Named relevant PDFs/images inspected separately; text derivatives searched. Record inventory includes hidden/ignored entries. No machine-wide absence claim.",
+    "result": "No biotite root record in the checked pre-creation record corpus; lizardite and round16 dossiers/reviews already cite the same Sheng experiment. These are distinct substrates in one publication, not independent replication."
+  },
+  "acquisitions": [
+    {
+      "filename": "mica-nomenclature-1998.pdf",
+      "url": "https://www.minsocam.org/msa/ima/ima98%2810%29.pdf",
+      "acquired_at": "2026-10-11T10:47:21.277133+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "filename": "ima-booklet-2019.pdf",
+      "url": "https://cnmnc.units.it/ima_reports/2%20IMA-Nomenclature-e-Booklet-2019-1.pdf",
+      "acquired_at": "2026-10-11T10:47:21.305441+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "filename": "mica-nomenclature-1998.pdf",
+      "url": "https://www.minsocam.org/msa/ima/ima98%2810%29.pdf",
+      "acquired_at": "2026-10-11T10:47:34.160943+00:00",
+      "error": "<urlopen error [Errno 61] Connection refused>"
+    },
+    {
+      "filename": "ima-booklet-2019.pdf",
+      "url": "https://cnmnc.units.it/ima_reports/2%20IMA-Nomenclature-e-Booklet-2019-1.pdf",
+      "acquired_at": "2026-10-11T10:47:34.370421+00:00",
+      "status": 200,
+      "content_type": "application/pdf",
+      "final_url": "https://cnmnc.units.it/ima_reports/2%20IMA-Nomenclature-e-Booklet-2019-1.pdf",
+      "bytes": 30242508,
+      "sha256": "aa78fca8983aa876dd2657e1874aa8f012a3e0236ad6717b675b76d86f8868c5"
+    },
+    {
+      "filename": "mica-nomenclature-1998.pdf",
+      "url": "https://kristallov.net/assets/files/Rieder%20et%20al%201998%20nomenclature%20of%20the%20micas_Clays.pdf",
+      "acquired_at": "2026-10-11T10:48:08.859467+00:00",
+      "status": 200,
+      "content_type": "application/pdf",
+      "final_url": "https://kristallov.net/assets/files/Rieder%20et%20al%201998%20nomenclature%20of%20the%20micas_Clays.pdf",
+      "bytes": 656136,
+      "sha256": "8661dd8e830f3cab69ee6659ce05b3295df72afd8db6d8b21974da4f454058a3"
+    }
+  ],
+  "reinspected_prior_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round16-silicate-raw/priestia2026.xml",
+      "reinspected_at": "2026-10-11T10:48:49.857290+00:00",
+      "sha256": "964dca1e8190032f5d1241c843ee052b642bd949ddc917e7245569975a64a344",
+      "bytes": 158121,
+      "original_provenance": "research/ingests/round16-silicate-sources-20261011.json; retained original acquisition, not downloaded again"
+    },
+    {
+      "path": "/private/tmp/cmm-round16-silicate-raw/priestia2026.txt",
+      "reinspected_at": "2026-10-11T10:48:49.858031+00:00",
+      "sha256": "673e51fee6dbe17df86d4ac7bbff5903bdc064affdc090f6de2511f17771244a",
+      "bytes": 58542,
+      "original_provenance": "research/ingests/round16-silicate-sources-20261011.json; retained original acquisition, not downloaded again"
+    },
+    {
+      "path": "/private/tmp/cmm-round16-silicate-raw/priestia-supp.txt",
+      "reinspected_at": "2026-10-11T10:48:49.858307+00:00",
+      "sha256": "f19c7a58e7ce81324cb5ab5864b4fba476978951761dc877d5d827137ea69a88",
+      "bytes": 17443,
+      "original_provenance": "research/ingests/round16-silicate-sources-20261011.json; retained original acquisition, not downloaded again"
+    },
+    {
+      "path": "/private/tmp/cmm-round16-silicate-raw/ncbi412384.xml",
+      "reinspected_at": "2026-10-11T10:48:49.858466+00:00",
+      "sha256": "c3c917398c10d2297855f7089aafa1c05d09a25973c69c0f5c43340717d8156b",
+      "bytes": 3842,
+      "original_provenance": "research/ingests/round16-silicate-sources-20261011.json; retained original acquisition, not downloaded again"
+    },
+    {
+      "path": "/private/tmp/cmm-round16-silicate-raw/c4-10-assembly.json",
+      "reinspected_at": "2026-10-11T10:48:49.858585+00:00",
+      "sha256": "6b6e65532705eb84c7b608f2c3c48e5a91c08f051f128d228a32941226f68602",
+      "bytes": 3704,
+      "original_provenance": "research/ingests/round16-silicate-sources-20261011.json; retained original acquisition, not downloaded again"
+    },
+    {
+      "path": "/private/tmp/cmm-round16-silicate-raw/priestia-supp/aem.02554-25-s0001.pdf",
+      "reinspected_at": "2026-10-11T10:48:49.858702+00:00",
+      "sha256": "f48212f02220c34f9900690484231823cca2f11c2475566713a35bc465ba1465",
+      "bytes": 808185,
+      "original_provenance": "research/ingests/round16-silicate-sources-20261011.json; retained original acquisition, not downloaded again"
+    },
+    {
+      "path": "/private/tmp/cmm-round16-silicate-raw/priestia-supp/aem.02554-25.f001.jpg",
+      "reinspected_at": "2026-10-11T10:48:49.861926+00:00",
+      "sha256": "10cb2275c34c4b19086b0fdd0c57122ad28b51e325226d866c02a59b9e05c6f7",
+      "bytes": 173495,
+      "original_provenance": "research/ingests/round16-silicate-sources-20261011.json; retained original acquisition, not downloaded again"
+    }
+  ],
+  "live_web_checks": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12915317/",
+      "result": "Full primary text and CC-BY4.0 notice opened."
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/clays-and-clay-minerals/article/abs/nomenclature-of-the-micas/A8A27049E9ECC6E17A38197873798035",
+      "result": "Publisher metadata resolves October1998 original, DOI10.1346/CCMN.1998.0460513; February2024 is online posting date."
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=412384&mode=Info",
+      "result": "Species rank/current Priestia aryabhattai label verified; page notes conflicting historical taxonomic opinions."
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_039631325.1/",
+      "result": "Browser tool could not open; retained official dataset report inspected instead, no fresh download claimed."
+    },
+    {
+      "url": "https://rruff.info/uploads/CM36_905.pdf",
+      "result": "Web tool404; not used as fulltext evidence."
+    },
+    {
+      "url": "https://doi.org/10.1346/CCMN.1998.0460513",
+      "result": "Direct web opening failed; publisher metadata and public primary PDF mirror inspected."
+    },
+    {
+      "url": "https://journals.asm.org/doi/full/10.1128/aem.01201-26",
+      "result": "New citing Dong2026 primary fulltext accessible; abstract and material methods/other-mineral Results inspected for lead triage only. Supplement and complete experimental review pending."
+    }
+  ],
+  "licenses": {
+    "Sheng2026_main": "CC BY4.0 per PMC article; supplemental notice requests corresponding-author contact for reuse. Raw remains outsideGit.",
+    "Rieder1998": "Clay Minerals Society copyright per publisher; redistribution permission not established. Raw remains outsideGit.",
+    "IMA2019_compendium": "Copyright2019 IMA and E.Schweizerbart; all rights reserved. Raw remains outsideGit.",
+    "NCBI": "Public authority context; no bulk database redistributed."
+  },
+  "accepted_record": {
+    "record": "data/records/biotite.yaml",
+    "sha256": "52c2162343ba439ef35da695d6aed7cdf03c6e91fb43bfa9c9d706de24a5cbe8",
+    "validation": {
+      "command": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate data/records/biotite.yaml",
+      "exit_code": 0,
+      "output": "Checked 1 record(s); 0 failed.",
+      "finished_at": "2026-10-11T10:50:01.193785+00:00"
+    },
+    "history": "history/records/biotite/2026-10-11T104944Z-codex-f8837c.yaml"
+  },
+  "deferred": [
+    {
+      "doi": "10.1128/aem.01201-26",
+      "title": "Genomic traits, transcriptional responses, and metabolic activities determine functional divergence in mineral dissolution between Priestia megaterium PMA2-2 and Priestia flexa PMD1-1",
+      "reason": "Citing source surfaced during bounded counterevidence search. Full supplemental TablesS6/S7, material identity, controls, fractions and strain accessions require review; methods repeats CM125967.1 for two named strains, so do not silently resolve either by that citation. Root retained as frontier, olivine group owned by separate enstatite lane."
+    },
+    {
+      "doi": "10.1139/W08-089",
+      "reason": "Sheng2026 reference39 supplies mineral-cleaning method; full predecessor protocol not acquired in this bounded pass. Record explicitly preserves missing preparation detail."
+    }
+  ],
+  "retained_files": [
+    {
+      "path": "/private/tmp/cmm-round17-biotite-raw/acquisitions.json",
+      "bytes": 1747,
+      "sha256": "fa3a4780ebc1203f43d9db4495c08edbd8dc9164725f8182e768ef0750525bcf"
+    },
+    {
+      "path": "/private/tmp/cmm-round17-biotite-raw/author-validation.json",
+      "bytes": 479,
+      "sha256": "0bb9a6283808f83d681c2bb4adbe9a591cd8f5f5f711e003c25e5b63667d7e8b"
+    },
+    {
+      "path": "/private/tmp/cmm-round17-biotite-raw/dedup-references.txt",
+      "bytes": 942,
+      "sha256": "769706b4fa3001abb33815217dc2c93e80f61eedadccff3e0c86f9c96abcc4df"
+    },
+    {
+      "path": "/private/tmp/cmm-round17-biotite-raw/ima-booklet-2019.pdf",
+      "bytes": 30242508,
+      "sha256": "aa78fca8983aa876dd2657e1874aa8f012a3e0236ad6717b675b76d86f8868c5"
+    },
+    {
+      "path": "/private/tmp/cmm-round17-biotite-raw/ima-booklet-2019.txt",
+      "bytes": 1586471,
+      "sha256": "a8b453dcd09861888eab34c00400f4e3ff0e5358b1acb50c431947a07569d568"
+    },
+    {
+      "path": "/private/tmp/cmm-round17-biotite-raw/ima-booklet-page1.png",
+      "bytes": 107451,
+      "sha256": "1fe5e783040842e3909c2b57f794761145502bceb700cecedcb6a37148863be5"
+    },
+    {
+      "path": "/private/tmp/cmm-round17-biotite-raw/ima-booklet-page34.png",
+      "bytes": 110848,
+      "sha256": "f780eb9736a81eefc7a5c4a283cbb8fe71e12779b537486da163db7b09db8e52"
+    },
+    {
+      "path": "/private/tmp/cmm-round17-biotite-raw/mica-nomenclature-1998.pdf",
+      "bytes": 656136,
+      "sha256": "8661dd8e830f3cab69ee6659ce05b3295df72afd8db6d8b21974da4f454058a3"
+    },
+    {
+      "path": "/private/tmp/cmm-round17-biotite-raw/mica-nomenclature-1998.txt",
+      "bytes": 34955,
+      "sha256": "1b129abbab8acb403a7b994e0cb264ad95e63c98f15dfb41453559999bcaa10f"
+    },
+    {
+      "path": "/private/tmp/cmm-round17-biotite-raw/mica1998-page1.png",
+      "bytes": 258237,
+      "sha256": "692a96e940a2d8d245bef70910c321647eeb25652cfde863e844b88efa42b9c4"
+    },
+    {
+      "path": "/private/tmp/cmm-round17-biotite-raw/mica1998-page4.png",
+      "bytes": 273677,
+      "sha256": "049001d3070801270b606ccecdca9ca4c7d958870b4ee13fc0a4fe45790682da"
+    },
+    {
+      "path": "/private/tmp/cmm-round17-biotite-raw/record-inventory.txt",
+      "bytes": 3960,
+      "sha256": "80fd57fb791b66311631ad93fcc51f22290cde578851e4159e704a8bb6acaeba"
+    },
+    {
+      "path": "/private/tmp/cmm-round17-biotite-raw/reinspection.json",
+      "bytes": 2684,
+      "sha256": "1fd492bc7b5178c465b49e2e65f179834e53f24868de54df4dbaf09400142dda"
+    }
+  ]
+}
