@@ -1,0 +1,724 @@
+{
+  "investigated_at": "2026-10-11T15:35:42Z",
+  "researcher": {
+    "actor": "codex",
+    "model": "GPT-6"
+  },
+  "trusted_base": "d20fc229fe61a08e36a2889d89e0f4ce7c06c4a9",
+  "worktree": "/private/tmp/CMMMech-expansion-round26-20261011",
+  "scope": "Packaging secondary-resource identities and evidence. No criticality designation is asserted.",
+  "search": {
+    "provider": "Live web search via available web service; Crossref, OpenAlex, DSMZ, NCBI and primary repositories",
+    "date_utc": "2026-10-11",
+    "queries": [
+      "\"Pharmaceutical blister waste recycling\" pdf",
+      "\"A new bioleaching strategy\" \"beverage\" filetype:pdf",
+      "\"10.1016/j.hydromet.2023.106124\"",
+      "\"10.1016/j.wasman.2020.11.012\" pdf",
+      "\"4401507\" download",
+      "\"Pharmaceutical blister waste recycling\" Kremser full text",
+      "\"Kremser\" \"beverage cans\" pdf -semanticscholar -mdpi -scispace",
+      "\"Pharmaceutical blister waste\" \"pdf\" Kremser -wisdomlib -researchgate -mdpi",
+      "\"S0956053X20306280\" pdf",
+      "\"S0304386X23001068\" pdf",
+      "\"A new bioleaching strategy\" \"pdf\" ResearchGate",
+      "\"1062365\" \"Kremser\" pdf",
+      "\"Pharmaceutical blister waste recycling\" filetype:pdf",
+      "\"106124\" \"Kremser\" -site:researchgate.net -site:sciencedirect.com",
+      "\"blister\" site:upliftproject.eu/wp-content/uploads/ \"Kremser\"",
+      "\"372588282\" \"pdf\" \"links\"",
+      "\"10.1016/j.hydromet.2023.106124\" correction OR corrigendum OR retraction",
+      "\"10.1016/j.resconrec.2022.106444\" correction OR corrigendum OR retraction",
+      "\"10.1016/j.wasman.2020.11.012\" correction OR corrigendum OR retraction",
+      "\"Leaching of aluminium from post-consumer beverage packaging residual PolyAl\""
+    ],
+    "filters_and_pagination": "Only filters encoded in exact queries; first returned result pages, no exhaustive pagination.",
+    "local_command": "rg --no-ignore --hidden --follow -l -i <exact DOI and packaging terms> data/records history research reviews; prior raw directory searched separately",
+    "local_scope": [
+      "data/records",
+      "history",
+      "research",
+      "reviews",
+      "/private/tmp/cmm-round25-frontier-raw",
+      "/private/tmp/cmm-round26-packaging-raw"
+    ],
+    "exclusions": "Unrelated home/temp directories and other worktrees. An interrupted overbroad search was not relied on.",
+    "inventory": "/private/tmp/cmm-round26-packaging-record-inventory.json",
+    "hit_path_receipt": "/private/tmp/cmm-round26-packaging-repo-hit-paths.txt",
+    "limits": "No global exhaustion or absence of all corrections is claimed."
+  },
+  "candidates": [
+    {
+      "key": "pharmaceutical-blister-packaging-waste",
+      "doi": "10.1016/j.hydromet.2023.106124",
+      "version": "Published journal version; SSRN preprint not substituted",
+      "decision": "curate_pending_independent_review",
+      "role": "resource_identity_and_primary_mechanism",
+      "record": "data/records/pharmaceutical-blister-packaging-waste.yaml",
+      "evidence_scope": "All 759 numbered lines of the nine-page PDF text, five main publisher figure JPEGs, native DOCX supplement text and four extracted images. Equation layout has a text-rendition uncertainty; all figure pixels were inspected.",
+      "boundaries": [
+        "Separate upstream sulfur comparison from the applied blister liquor.",
+        "Preserve 50-degree chemical equivalence, poor silver-fraction release and lower 1 L results.",
+        "Do not infer an identified biosurfactant mechanism, pure aluminium product or industrial deployment."
+      ]
+    },
+    {
+      "key": "beverage-carton-hydropulping-reject",
+      "doi": "10.1016/j.resconrec.2022.106444",
+      "version": "Published journal PDF and associated five-page publisher supplement",
+      "decision": "curate_pending_independent_review",
+      "role": "resource_identity_and_primary_mechanism",
+      "record": "data/records/beverage-carton-hydropulping-reject.yaml",
+      "evidence_scope": "Full ten-page PDF, six main figures, supplementary methods, Table S1 and Figures S1-S2, all figure/table pixels inspected.",
+      "boundaries": [
+        "Keep enzyme treatment, culture acid production, leaching, chemical precipitation and polymer processing separate.",
+        "Chemical acid performs comparably; direct culture performs worse at higher loading.",
+        "DSM 583 species labels conflict, while upstream DSM 504 and DSM 9466 labels resolve.",
+        "Non-detection is not zero or a pure-product yield."
+      ]
+    },
+    {
+      "key": "multilayer-beverage-cans",
+      "doi": "10.1016/j.wasman.2020.11.012",
+      "version": "2021 issue, online December 2020",
+      "decision": "defer_full_primary_access",
+      "role": "distinct_resource_lead",
+      "evidence_scope": "Abstract, Crossref/OpenAlex metadata, BOKU and Genoa repository pages. Genoa lists a closed 1.91 MB publisher PDF.",
+      "missing": [
+        "Full methods and feed preparation",
+        "Controls, replication and numerical denominator",
+        "Figures, tables and supplementary evidence"
+      ]
+    },
+    {
+      "key": "acid-production-method-context",
+      "doi": "10.1016/j.wasman.2022.03.025",
+      "decision": "context_only",
+      "evidence_scope": "Author-uploaded published text, Methods 2.2-2.4; no independent full incineration-study review or imported incineration yields."
+    },
+    {
+      "key": "polyal-organic-acids-2025",
+      "doi": "10.1016/j.wasman.2025.114913",
+      "decision": "defer_full_primary_access_same_resource",
+      "evidence_scope": "Primary abstract only. Resolve biological production versus purchased organic acids before mechanism curation.",
+      "identity_assessment": "Potential extension of carton hydropulping reject, not a new identity based solely on a different lixiviant."
+    },
+    {
+      "key": "designed-blister-adhesive-2026",
+      "doi": "10.1039/D6GC00733C",
+      "decision": "context_lead_unreviewed",
+      "evidence_scope": "Primary search/abstract description only; designed adhesive must not be attributed to existing hospital waste."
+    }
+  ],
+  "acquisitions": [
+    {
+      "name": "blister-openalex.json",
+      "requested_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.hydromet.2023.106124",
+      "acquired_at": "2026-10-11T15:26:17.157592+00:00",
+      "status": 200,
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.hydromet.2023.106124",
+      "content_type": "application/json",
+      "bytes": 25330,
+      "sha256": "4bec62ea961146968fc20c37c698cff76ba4e088549dc1dc7a6763bdb2ccdee8",
+      "pdf_magic": false
+    },
+    {
+      "name": "cans-openalex.json",
+      "requested_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.wasman.2020.11.012",
+      "acquired_at": "2026-10-11T15:26:17.158621+00:00",
+      "status": 200,
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.wasman.2020.11.012",
+      "content_type": "application/json",
+      "bytes": 19321,
+      "sha256": "01997a219980dca47596394941e2d91bfb517fa97a3c2084ca922d0cd113c813",
+      "pdf_magic": false
+    },
+    {
+      "name": "blister-crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.1016/j.hydromet.2023.106124",
+      "acquired_at": "2026-10-11T15:26:17.158931+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1016/j.hydromet.2023.106124",
+      "content_type": "application/json",
+      "bytes": 16022,
+      "sha256": "b71de8b007241120a79f4dacd528b0f04931a4165336a4fdd237af215bed5c92",
+      "pdf_magic": false
+    },
+    {
+      "name": "cans-crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.1016/j.wasman.2020.11.012",
+      "acquired_at": "2026-10-11T15:26:17.159191+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1016/j.wasman.2020.11.012",
+      "content_type": "application/json",
+      "bytes": 14705,
+      "sha256": "2af0d3fd5e0e6fc00efca7ce22d656241616fcfea19b37ae70695a07c2272a1c",
+      "pdf_magic": false
+    },
+    {
+      "name": "blister-ssrn.html",
+      "requested_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4401507",
+      "acquired_at": "2026-10-11T15:26:17.433617+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "blister-publisher.pdf",
+      "requested_url": "https://www.sciencedirect.com/science/article/pii/S0304386X23001068/pdfft?isDTMRedir=true&download=true",
+      "acquired_at": "2026-10-11T15:26:17.496633+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "cans-publisher.pdf",
+      "requested_url": "https://www.sciencedirect.com/science/article/pii/S0956053X20306280/pdfft?isDTMRedir=true&download=true",
+      "acquired_at": "2026-10-11T15:26:17.511012+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "blister-researchgate.html",
+      "requested_url": "https://www.researchgate.net/publication/372588282_Pharmaceutical_blister_waste_recycling_using_biogenic_sulfuric_acid_Effect_of_sulfur_source_and_blister_material_on_bioleaching_efficiency",
+      "acquired_at": "2026-10-11T15:28:06.731948+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "cans-unige.html",
+      "requested_url": "https://iris.unige.it/handle/11567/1062365",
+      "acquired_at": "2026-10-11T15:28:06.732912+00:00",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032)>"
+    },
+    {
+      "name": "cartons2022.pdf",
+      "requested_url": "https://upliftproject.eu/wp-content/uploads/2022/06/bioleaching-based-recycling-aluminuim-polyethylene-beverage-cartons-packaging-waste.pdf",
+      "acquired_at": "2026-10-11T15:28:06.733221+00:00",
+      "status": 200,
+      "final_url": "https://upliftproject.eu/wp-content/uploads/2022/06/bioleaching-based-recycling-aluminuim-polyethylene-beverage-cartons-packaging-waste.pdf",
+      "content_type": "application/pdf",
+      "bytes": 599002,
+      "sha256": "4e3188469721ed6f2074e99378df742e2ded0fa357427554a4b2a4b598ce98c9",
+      "pdf_magic": true
+    },
+    {
+      "name": "blister-elsevier.xml",
+      "requested_url": "https://api.elsevier.com/content/article/PII:S0304386X23001068?httpAccept=text/xml",
+      "acquired_at": "2026-10-11T15:28:06.733479+00:00",
+      "status": 200,
+      "final_url": "https://api.elsevier.com/content/article/PII:S0304386X23001068?httpAccept=text/xml",
+      "content_type": "text/xml;charset=UTF-8",
+      "bytes": 2068,
+      "sha256": "de90cc3be2d118dbbe723d17c25fbbbeaae38d81a674d69c32ce6adcb4a97ce8",
+      "pdf_magic": false
+    },
+    {
+      "name": "blister-rg.pdf",
+      "requested_url": "https://www.researchgate.net/profile/Klemens-Kremser/publication/372588282_Pharmaceutical_blister_waste_recycling_using_biogenic_sulfuric_acid_Effect_of_sulfur_source_and_blister_material_on_bioleaching_efficiency/links/64bf6093c41fb852dd990d55/Pharmaceutical-blister-waste-recycling-using-biogenic-sulfuric-acid-Effect-of-sulfur-source-and-blister-material-on-bioleaching-efficiency.pdf",
+      "acquired_at": "2026-10-11T15:29:07.884483+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "blister-api-pdf.pdf",
+      "requested_url": "https://api.elsevier.com/content/article/pii/S0304386X23001068?httpAccept=application/pdf",
+      "acquired_at": "2026-10-11T15:29:07.885830+00:00",
+      "error": "HTTP Error 406: Not Acceptable"
+    },
+    {
+      "name": "uplift-search.json",
+      "requested_url": "https://upliftproject.eu/wp-json/wp/v2/search?search=blister&per_page=20",
+      "acquired_at": "2026-10-11T15:29:07.886207+00:00",
+      "status": 200,
+      "final_url": "https://upliftproject.eu/wp-json/wp/v2/search?search=blister&per_page=20",
+      "content_type": "application/json; charset=UTF-8",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "pdf_magic": false
+    },
+    {
+      "name": "blister-rgstatic.pdf",
+      "requested_url": "https://i1.rgstatic.net/publication/372588282_Pharmaceutical_blister_waste_recycling_using_biogenic_sulfuric_acid_Effect_of_sulfur_source_and_blister_material_on_bioleaching_efficiency/links/64bf6093c41fb852dd990d55/Pharmaceutical-blister-waste-recycling-using-biogenic-sulfuric-acid-Effect-of-sulfur-source-and-blister-material-on-bioleaching-efficiency.pdf",
+      "acquired_at": "2026-10-11T15:29:48.497492+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "blister-mmc1.docx",
+      "requested_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0304386X23001068-mmc1.docx",
+      "acquired_at": "2026-10-11T15:29:48.498558+00:00",
+      "status": 200,
+      "final_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0304386X23001068-mmc1.docx",
+      "content_type": "application/word",
+      "bytes": 762671,
+      "sha256": "15e6f24cefe8dcf4de0cfce3562ed519a0e19fc753fcd7c900946d386b7408da",
+      "pdf_magic": false
+    },
+    {
+      "name": "cartons-crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.1016/j.resconrec.2022.106444",
+      "acquired_at": "2026-10-11T15:29:48.498883+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1016/j.resconrec.2022.106444",
+      "content_type": "application/json",
+      "bytes": 22612,
+      "sha256": "13d4d8ebea43fdfbbbfa41597a7ca4a5c2e8b52c86f4e803f12e298e4892bb00",
+      "pdf_magic": false
+    },
+    {
+      "name": "uplift-media.json",
+      "requested_url": "https://upliftproject.eu/wp-json/wp/v2/media?search=blister&per_page=20",
+      "acquired_at": "2026-10-11T15:29:48.499148+00:00",
+      "status": 200,
+      "final_url": "https://upliftproject.eu/wp-json/wp/v2/media?search=blister&per_page=20",
+      "content_type": "application/json; charset=UTF-8",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "pdf_magic": false
+    },
+    {
+      "name": "blister-fig1.jpg",
+      "requested_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0304386X23001068-gr1_lrg.jpg",
+      "acquired_at": "2026-10-11T15:30:25.579175+00:00",
+      "status": 200,
+      "final_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0304386X23001068-gr1_lrg.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 705160,
+      "sha256": "113917f4fbbe8cf6860588e987fca5e1cf8de83b6cf07ca3c1628247a8a030f4",
+      "pdf_magic": false
+    },
+    {
+      "name": "blister-fig2.jpg",
+      "requested_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0304386X23001068-gr2_lrg.jpg",
+      "acquired_at": "2026-10-11T15:30:25.580006+00:00",
+      "status": 200,
+      "final_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0304386X23001068-gr2_lrg.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 226568,
+      "sha256": "9e31d800e72582e61f3332c8487ca8ddc8432f92aacac3eb643a34fb267356c1",
+      "pdf_magic": false
+    },
+    {
+      "name": "blister-fig3.jpg",
+      "requested_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0304386X23001068-gr3_lrg.jpg",
+      "acquired_at": "2026-10-11T15:30:25.580317+00:00",
+      "status": 200,
+      "final_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0304386X23001068-gr3_lrg.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 275315,
+      "sha256": "2d378cb278a260c8f1182af33be00e2ce4baabb664dd2f8053b734e09e133ec8",
+      "pdf_magic": false
+    },
+    {
+      "name": "blister-fig4.jpg",
+      "requested_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0304386X23001068-gr4_lrg.jpg",
+      "acquired_at": "2026-10-11T15:30:25.580577+00:00",
+      "status": 200,
+      "final_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0304386X23001068-gr4_lrg.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 446060,
+      "sha256": "02f15558e106986d20a11449a3bc99926b97b4de57623b68db005bd01a61db4a",
+      "pdf_magic": false
+    },
+    {
+      "name": "blister-fig5.jpg",
+      "requested_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0304386X23001068-gr5_lrg.jpg",
+      "acquired_at": "2026-10-11T15:30:25.980297+00:00",
+      "status": 200,
+      "final_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0304386X23001068-gr5_lrg.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 489436,
+      "sha256": "6cd27fbc9af605908e3eeb49a47c842d08c218d6ce712fb1c3947e0d688118d9",
+      "pdf_magic": false
+    },
+    {
+      "name": "cartons-mmc1.docx",
+      "requested_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0921344922002877-mmc1.docx",
+      "acquired_at": "2026-10-11T15:30:26.019401+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "cartons-mmc1.doc",
+      "requested_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0921344922002877-mmc1.doc",
+      "acquired_at": "2026-10-11T15:30:56.299271+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "cartons-mmc1.pdf",
+      "requested_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0921344922002877-mmc1.pdf",
+      "acquired_at": "2026-10-11T15:30:56.300044+00:00",
+      "status": 200,
+      "final_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0921344922002877-mmc1.pdf",
+      "content_type": "application/pdf",
+      "bytes": 439380,
+      "sha256": "de4c17a5d30c8fd2bee8aaa5f9a6003e275cf1ba4b3ec8f6a812e250cfcc3d63",
+      "pdf_magic": true
+    },
+    {
+      "name": "dsm504.html",
+      "requested_url": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-504",
+      "acquired_at": "2026-10-11T15:30:56.300349+00:00",
+      "status": 200,
+      "final_url": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-504",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 48468,
+      "sha256": "5ec0de034b3c0b34a660dc47904a866be2e11d566a979f2bf3f2609455ce1099",
+      "pdf_magic": false
+    },
+    {
+      "name": "dsm9466.html",
+      "requested_url": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-9466",
+      "acquired_at": "2026-10-11T15:30:56.300648+00:00",
+      "status": 200,
+      "final_url": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-9466",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 48448,
+      "sha256": "9f4c44590599722c27dc909de6a7aafa99cf6e1757a01c28da47391258159545",
+      "pdf_magic": false
+    },
+    {
+      "name": "dsm583.html",
+      "requested_url": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-583",
+      "acquired_at": "2026-10-11T15:30:56.670166+00:00",
+      "status": 200,
+      "final_url": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-583",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 48904,
+      "sha256": "9b179fbe52c92a21328938f76bf676a676e257cf342f5d7a6f3f84193ebabba1",
+      "pdf_magic": false
+    }
+  ],
+  "raw_integrity": [
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/20261011T152617Z-acquisition.json",
+      "bytes": 2624,
+      "sha256": "2e2bc870c96dc9359480e9371b6204267c029ef0bd2680a7ed811c7b230b68e3"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/20261011T152809Z-acquisition.json",
+      "bytes": 1755,
+      "sha256": "004ba3e34199afadf6ad8049c67d0b22b1206d357ce65db7606eaf5a48ea52ef"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/20261011T152909Z-acquisition.json",
+      "bytes": 1292,
+      "sha256": "cffd1b3095aed583e0851f11c7d5a60dd9d67888fdbfdc394dac9b4244727251"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/20261011T152950Z-acquisition.json",
+      "bytes": 1934,
+      "sha256": "24ff0d02029deb445d43b82cfe856c8c325bc8db5542747de749c4968de4d39e"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/20261011T153026Z-acquisition.json",
+      "bytes": 2583,
+      "sha256": "b1780038186d83a9cf8b188bf60c6bc8ff41beea129355bad2107b973f89f09b"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/20261011T153059Z-acquisition.json",
+      "bytes": 2077,
+      "sha256": "d58ea7c40b5d8ea77d67790c87c07f254b2721906becc952f5c8266a54966b24"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/blister-crossref.json",
+      "bytes": 16022,
+      "sha256": "b71de8b007241120a79f4dacd528b0f04931a4165336a4fdd237af215bed5c92"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/blister-elsevier.xml",
+      "bytes": 2068,
+      "sha256": "de90cc3be2d118dbbe723d17c25fbbbeaae38d81a674d69c32ce6adcb4a97ce8"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/blister-fig1.jpg",
+      "bytes": 705160,
+      "sha256": "113917f4fbbe8cf6860588e987fca5e1cf8de83b6cf07ca3c1628247a8a030f4"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/blister-fig2.jpg",
+      "bytes": 226568,
+      "sha256": "9e31d800e72582e61f3332c8487ca8ddc8432f92aacac3eb643a34fb267356c1"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/blister-fig3.jpg",
+      "bytes": 275315,
+      "sha256": "2d378cb278a260c8f1182af33be00e2ce4baabb664dd2f8053b734e09e133ec8"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/blister-fig4.jpg",
+      "bytes": 446060,
+      "sha256": "02f15558e106986d20a11449a3bc99926b97b4de57623b68db005bd01a61db4a"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/blister-fig5.jpg",
+      "bytes": 489436,
+      "sha256": "6cd27fbc9af605908e3eeb49a47c842d08c218d6ce712fb1c3947e0d688118d9"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/blister-mmc1.docx",
+      "bytes": 762671,
+      "sha256": "15e6f24cefe8dcf4de0cfce3562ed519a0e19fc753fcd7c900946d386b7408da"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/blister-mmc1.txt",
+      "bytes": 1820,
+      "sha256": "9c5320db4f2ddc9c1c605d70457d3deea77cde7366efba57e8dcb507484640f9"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/blister-openalex.json",
+      "bytes": 25330,
+      "sha256": "4bec62ea961146968fc20c37c698cff76ba4e088549dc1dc7a6763bdb2ccdee8"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/blister-si-image1.jpeg",
+      "bytes": 441161,
+      "sha256": "df2cb9d3d7cc95fc17a9ed20395ab5c89c6a3240becd10136e7ff804690c6577"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/blister-si-image2.jpeg",
+      "bytes": 206487,
+      "sha256": "401e2984de771f640782e8cd7118c8c79d3acf767c1ba2f0a9ad44e2ba6cad85"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/blister-si-image3.jpeg",
+      "bytes": 82038,
+      "sha256": "979e7580a4f7b44e1c30ce2186ed2046d25b5b4046493a305e5676c4f4b56676"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/blister-si-image4.png",
+      "bytes": 13686,
+      "sha256": "b333d1b1876fb4a1c121cad38051effcb031c53862be560c75e3451579b2079c"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/blister2023-web-pdf-text.txt",
+      "bytes": 62809,
+      "sha256": "914d7f7cebc130494cdb4591939a30d4c4f605792a2360a5539dd3ddd5c0d7d0"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/cans-crossref.json",
+      "bytes": 14705,
+      "sha256": "2af0d3fd5e0e6fc00efca7ce22d656241616fcfea19b37ae70695a07c2272a1c"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/cans-openalex.json",
+      "bytes": 19321,
+      "sha256": "01997a219980dca47596394941e2d91bfb517fa97a3c2084ca922d0cd113c813"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/cartons-crossref.json",
+      "bytes": 22612,
+      "sha256": "13d4d8ebea43fdfbbbfa41597a7ca4a5c2e8b52c86f4e803f12e298e4892bb00"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/cartons-mmc1.pdf",
+      "bytes": 439380,
+      "sha256": "de4c17a5d30c8fd2bee8aaa5f9a6003e275cf1ba4b3ec8f6a812e250cfcc3d63"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/cartons-mmc1.txt",
+      "bytes": 4800,
+      "sha256": "de7d150dd962cef5f8e73196a043798617a8505452d81fad0695ba87758f2bce"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/cartons-si-p1.png",
+      "bytes": 93610,
+      "sha256": "8192fd40b1ce5b1f6afcfb6b6da35e822467dab2892ead8a7f77c29da29b1064"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/cartons-si-p2.png",
+      "bytes": 57781,
+      "sha256": "706e1b31a129b10a63a079bebcf2565643d08158f94aadda8e380ac69f6fb14d"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/cartons-si-p3.png",
+      "bytes": 162136,
+      "sha256": "fa587e8843b1b09b576cdf7565326c9ef508b91d0f15c8facb2871725f31c6a8"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/cartons-si-p4.png",
+      "bytes": 125022,
+      "sha256": "b4600f8858cb1e484a9f79ec18d487bd80903e17e8af9d0f516bc70d4727d2ed"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/cartons-si-p5.png",
+      "bytes": 741795,
+      "sha256": "a99e13789299cdc9d64bbefade334a857f48eeb046e711a449c0451d494f1265"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/cartons2022-p1.png",
+      "bytes": 321533,
+      "sha256": "c7d28d716c12f452ed4029224c8d8060b3c1bbe9d7e80a8af9976b283354a971"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/cartons2022-p10.png",
+      "bytes": 34017,
+      "sha256": "a2a3a340a26bd17cd35ea6bdeb5bac78d1ca4cd04cad014bb950b5e2ae825b8d"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/cartons2022-p2.png",
+      "bytes": 402171,
+      "sha256": "72ea728d97f223813a8e6fd7697b3160746df365143803b97a2f9b1961f058cc"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/cartons2022-p3.png",
+      "bytes": 385362,
+      "sha256": "c397e9395e8b71edf2b57928baa9eae039bb09915f80c8ac561c0d49db9d7018"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/cartons2022-p4.png",
+      "bytes": 382356,
+      "sha256": "3889b89312dd94ab78b917f700b87451dbe0d96548c4a7e660ab033a6fc666d3"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/cartons2022-p5.png",
+      "bytes": 684040,
+      "sha256": "6d45549be4ef87c42b3e307d894420be6810008a8cbb9ff654ecf9a02fda1dbf"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/cartons2022-p6.png",
+      "bytes": 423984,
+      "sha256": "3111184d7e2754c906391f775b010e305cff2abda4b0e967e86c3945ff4a03b0"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/cartons2022-p7.png",
+      "bytes": 778833,
+      "sha256": "a309a33cf7952882b3b5326174bd8eb5d80f8f457862711b8eab01de81842395"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/cartons2022-p8.png",
+      "bytes": 421258,
+      "sha256": "5bfa49317ea8fe5a02926a152eb645673c6cbb505e2d66800bd8bf59879c1f2d"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/cartons2022-p9.png",
+      "bytes": 464672,
+      "sha256": "1b5b19a062485368061403a9950d192c4502ea0fa4c14b52adfd6fdd487ad916"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/cartons2022.pdf",
+      "bytes": 599002,
+      "sha256": "4e3188469721ed6f2074e99378df742e2ded0fa357427554a4b2a4b598ce98c9"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/cartons2022.txt",
+      "bytes": 56829,
+      "sha256": "59f9cf056f4faf463be3d2f83fef7b355838f570d96a3c029849d409a9d9d82b"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/dsm504.html",
+      "bytes": 48468,
+      "sha256": "5ec0de034b3c0b34a660dc47904a866be2e11d566a979f2bf3f2609455ce1099"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/dsm583.html",
+      "bytes": 48904,
+      "sha256": "9b179fbe52c92a21328938f76bf676a676e257cf342f5d7a6f3f84193ebabba1"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/dsm9466.html",
+      "bytes": 48448,
+      "sha256": "9f4c44590599722c27dc909de6a7aafa99cf6e1757a01c28da47391258159545"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/round26_blister_full_methods.txt",
+      "bytes": 27737,
+      "sha256": "c8285e618189cacbdf0e1c5202da8ca40de94c9ae926c8e949c30cddff1f0852"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/round26_blister_gap300.txt",
+      "bytes": 27481,
+      "sha256": "86bd42178649e356561deb75021a7e80612eaa3a684cf0b75bc4399da34da6fb"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/round26_blister_gap412.txt",
+      "bytes": 28390,
+      "sha256": "b21f331ce9786b10710c16b9671043394ddbd62030ebaf26eddfb4a092af3188"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/round26_blister_gap580.txt",
+      "bytes": 25580,
+      "sha256": "fcf61d3e6c4ea76b4a31fd5bb2c76798020195d818cef563cc3e7d215175f9ac"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/round26_blister_production_methods.txt",
+      "bytes": 11950,
+      "sha256": "c52b5eb89bb1488b563db95603409eac6b3c82224cd0e8ad0e5e5217919a5b46"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/round26_blister_remaining.txt",
+      "bytes": 26470,
+      "sha256": "515168f47ee4b34ac08b463d99374f0b888a2779f3b44e60ead227f9b79f0389"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/round26_packaging_access2.txt",
+      "bytes": 3574,
+      "sha256": "2eef190f735461ba70eff2a64829094e6bd70269bc7c75052e39926ba3b8fc08"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/round26_packaging_access4.txt",
+      "bytes": 27334,
+      "sha256": "6fd3fafa976d8eb127ec02278e8e28943df7f5aeae1aa5e76f13e1d07ce8b660"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/round26_packaging_access5.txt",
+      "bytes": 32676,
+      "sha256": "07cc596eb62b8fac6e729f47e1480a865f6635db54c3b8d87531563e892d0304"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/round26_packaging_access7.txt",
+      "bytes": 33797,
+      "sha256": "536ca4f557ce33dfe145b3ab83fc7d48c09470ee1f58210771f270026041848b"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/round26_packaging_access8.txt",
+      "bytes": 14415,
+      "sha256": "96480f38273be85e12e8082f8cc6658e2f4f6f54240b53c4fe753696ab50de5b"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/round26_packaging_crosschecks.txt",
+      "bytes": 31036,
+      "sha256": "199e1515298a8e67d390a3f1a05753bc101dbc39124b247958e0a40e905d0b53"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/round26_packaging_ncbi.txt",
+      "bytes": 10699,
+      "sha256": "b1f018bde946cd47ec60bd3aea2b6e06bfec20d182947d034d417e43d9b0b968"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/round26_packaging_search1.txt",
+      "bytes": 32133,
+      "sha256": "635dc20bb9abe417165e43af9a8fb35fd0a895660d67b9fd6592d43c9051a6ff"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/round26_packaging_search3.txt",
+      "bytes": 31538,
+      "sha256": "5b7c01b051df0bcfad368d77a2db70e4f958a92cc2eb656918408cd38c83b304"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/round26_packaging_search6.txt",
+      "bytes": 31259,
+      "sha256": "a104136dac2d791df5206376eaea0a20d4b3c2c993212d082ee4945c446e4d7e"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/round26_packaging_taxon_production.txt",
+      "bytes": 28294,
+      "sha256": "1c4f4079048d83a0ba1f0919282db53915e91c8e90c5106b97a57be5af05fed4"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/uplift-media.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "/private/tmp/cmm-round26-packaging-raw/uplift-search.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  ],
+  "rights": {
+    "main_curated_articles": "CC BY 4.0 as stated in both published main articles.",
+    "supplements": "Associated publication files; no distinct supplement-specific license observed.",
+    "raw_policy": "Retained outside Git; web text and derived figures/renders are distinguished from downloaded PDFs."
+  },
+  "validation": {
+    "named_records": "Passed for both records, final log /private/tmp/cmm-round26-packaging-validate.log.",
+    "scientific_acceptance": "Independent review pending; a minor wording finding is being preserved before correction.",
+    "batch_checks": "Managed by root separately; no outcome claimed here."
+  },
+  "schema_assessment": "Existing secondary_resource, mechanisms, evidence and prose contexts suffice. No quantitative observations imported because selected claims are not exact mg/kg source cells.",
+  "branch": "curate/cmm-expansion-round26-20261011",
+  "working_changes": "Two packaging records and CREATE histories, with concurrent steel-resource author work."
+}

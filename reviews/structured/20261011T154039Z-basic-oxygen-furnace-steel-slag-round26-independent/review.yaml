@@ -1,0 +1,383 @@
+schema_version: 1.0.0
+review_id: 20261011T154039Z-basic-oxygen-furnace-steel-slag-round26-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of basic-oxygen-furnace steel slag
+started_at: '2026-10-11T15:34:48.292717Z'
+finished_at: '2026-10-11T15:40:39.373799Z'
+reviewer:
+  identity: Codex /root/round24_sulfuric_catalyst
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Coordinating agent /root authored the record. This reviewer
+    independently read the complete primary text, visual figures/tables, original
+    supplement images/table structure and live metadata/search results, and did not
+    edit the target. The shared worktree and author-acquired raw sources are disclosed.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The frozen BOF-slag record supports conditional laboratory culture-conditioned
+  metal mobilization and a separate nonmicrobial resin stage. It explicitly retains
+  source inventory conflicts, uncertain community identity, unmatched controls, null
+  comparisons and poor elution. No corrective record finding is warranted.
+source:
+  git_revision: d20fc229fe61a08e36a2889d89e0f4ce7c06c4a9
+  state: working_tree
+  inputs:
+  - path: data/records/basic-oxygen-furnace-steel-slag.yaml
+    sha256: 6917cd8d71f3fad7cc25c0717e956c5d4fcf3ae6135765774f951ebdb50afb5c
+    role: target
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/basic-oxygen-furnace-steel-slag/2026-10-11T153415Z-codex-f742c3.yaml
+    sha256: f753a98da2f0cc7a71fa4d6c1a28ec97b707c4738fa3e0427404faa12a8d6e7f
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire frozen maintained record, including source identity, material
+    scope, microbial and chemical stages, conditions/controls, quantitative limitations,
+    history and provenance.
+  selection: Assigned root-authored new BOF steel-slag record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:basic-oxygen-furnace-steel-slag
+  exclusions:
+  - target: Other EAF/LD slag studies cited by Gomes et al. and later review literature
+    reason: Not separately curated or accepted as additional primary mechanism evidence
+      in this record.
+targets:
+- target_id: cmmmech:basic-oxygen-furnace-steel-slag
+  path: data/records/basic-oxygen-furnace-steel-slag.yaml
+  label: Basic oxygen furnace steel slag
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/basic-oxygen-furnace-steel-slag.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named-record validation
+  command: uv run --locked cmmmech validate data/records/basic-oxygen-furnace-steel-slag.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Independently executed: Checked 1 record(s); 0 failed.'
+  target_ids:
+  - cmmmech:basic-oxygen-furnace-steel-slag
+- check_id: batch
+  name: Coordinator batch checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Coordinator terminal receipt and actual log independently read. 308 passed,
+    3 skipped in 145.97 s; 169 records and 190 histories valid. The BOF target and
+    history match inspected bytes. These are structural, not scientific, checks.
+  target_ids:
+  - cmmmech:basic-oxygen-furnace-steel-slag
+- check_id: nonempty
+  name: Coordinator nonempty corpus validation
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Coordinator terminal receipt and actual log independently read. Checked
+    169 record(s); 0 failed. The BOF target and history match inspected bytes. These
+    are structural, not scientific, checks.
+  target_ids:
+  - cmmmech:basic-oxygen-furnace-steel-slag
+- check_id: history
+  name: Coordinator trusted-base history validation
+  command: uv run --locked cmmmech validate-history --base d20fc229fe61a08e36a2889d89e0f4ce7c06c4a9
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Coordinator terminal receipt and actual log independently read. Checked
+    190 history record(s); 0 error(s). The BOF target and history match inspected
+    bytes. These are structural, not scientific, checks.
+  target_ids:
+  - cmmmech:basic-oxygen-furnace-steel-slag
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/basic-oxygen-furnace-steel-slag.yaml
+  locator: Entire frozen YAML and linked CREATE sidecar, read after canonical inspect
+  accessed_at: '2026-10-11T15:37:02.965992Z'
+  support: supports
+  summary: Source-defined Yarborough BOF slag is a secondary resource. The record
+    separates culture-conditioned aqueous mobilization from nonmicrobial resin removal/elution,
+    makes no criticality assertion, and retains all important source conflicts.
+  snapshot_sha256: 6917cd8d71f3fad7cc25c0717e956c5d4fcf3ae6135765774f951ebdb50afb5c
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.jenvman.2018.05.056
+  locator: Full seven-page published article; Methods 2.1–2.7, Results 3.1–3.4, conclusion/references;
+    original Figures 1–3 and Tables 1–2 visually inspected on PDF pages 3–6
+  accessed_at: '2026-10-11T15:37:02.965992Z'
+  support: supports
+  summary: A laboratory mixed acidophilic culture and its filtered supernatant mobilized
+    Al, Cr and V from BOF slag. The fresh-medium comparator, unequal acidity, adaptation
+    with reagent acid, independent-column replication uncertainty and lack of a matched
+    chemical comparator limit causal attribution. DOI, title, author order and 2018
+    publication provenance agree with Crossref and primary PDF.
+  snapshot_sha256: e17a1a49ad53c878924bd967847f2823af3126ef59bcb6b9e45d1e078c22a40b
+- evidence_id: inventory
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.jenvman.2018.05.056
+  locator: Methods 2.3–2.4 and 2.6; Table 1; Figures 1–3; Results 3.1–3.3
+  accessed_at: '2026-10-11T15:37:02.965992Z'
+  support: context_only
+  summary: The stated batch loading, nitric-acid-digest feed concentrations and Figure
+    1 liquid concentrations do not reproduce Figure 2 percentages. Column Cr/V cumulative
+    masses also fail to reproduce the stated percentages with Table 1 and 100 g feed.
+    Figure 3 has nonzero starting masses; correction/inventory bookkeeping is insufficient
+    to repair these inconsistencies. The source reports 109% Al in one column and
+    Mg 29.4 wt% while claiming a typical 0.3–2.4% range. The record explicitly preserves
+    these defects and imports no normalized concentration observations.
+  snapshot_sha256: e17a1a49ad53c878924bd967847f2823af3126ef59bcb6b9e45d1e078c22a40b
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S0301479718305875-mmc1.docx
+  locator: Original DOCX text and XML table structure; both embedded XRD image pixels
+    independently extracted and viewed; Figures S1–S2 and Table S1
+  accessed_at: '2026-10-11T15:37:02.965992Z'
+  support: supports
+  summary: Preliminary T-RFLP labels, including assigned Acidithiobacillus species,
+    do not authenticate pure strains or their causal roles. XRD patterns are consistent
+    with the source gypsum/jarosite assignments, but fitted jarosite composition,
+    mixed phases and gypsum in the control do not establish uniquely microbial mineral
+    precipitation or saleable purity. No full rendered DOCX-page inspection is claimed.
+  snapshot_sha256: 0259b69187a29d2ca45796689ca3a4e1c5ffeea0d357ff24dffca1621ac24659
+- evidence_id: downstream
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.jenvman.2018.05.056
+  locator: Methods 2.5; Results 3.4, original PDF page 6
+  accessed_at: '2026-10-11T15:37:02.965992Z'
+  support: supports
+  summary: IRA-400 removal and NaOH elution are distinct chemical stages. Reported
+    A/B removal values are preserved separately, including greater Al removal for
+    B despite the text generalizing higher A removal. Poor elution, uncertain percentage
+    denominator/error-statistic/replicate definition, speculative ionic interference,
+    modeled speciation and the 22 versus 0.22 micrometre wording mismatch remain explicit.
+  snapshot_sha256: e17a1a49ad53c878924bd967847f2823af3126ef59bcb6b9e45d1e078c22a40b
+- evidence_id: metadata
+  kind: primary_source
+  reference: https://api.crossref.org/works/10.1016%2Fj.jenvman.2018.05.056
+  locator: Full author-acquired Crossref JSON independently read; local primary front
+    matter and independent institutional metadata search
+  accessed_at: '2026-10-11T15:37:02.965992Z'
+  support: supports
+  summary: Crossref confirms the DOI, title, authors, journal and CC BY version-of-record
+    license. Online publication on 23 May 2018 is distinct from the later journal
+    issue and metadata dates. The supplement is part of the same experiment, not independent
+    replication.
+  snapshot_sha256: a2569ab62e6c2b52963e9ee211bc08fe47a092895051d9c480c044c8a5e302b2
+- evidence_id: bounded_search
+  kind: search
+  reference: https://doi.org/10.1016/j.jenvman.2018.05.056
+  locator: Independent exact-DOI correction query, title/supplement/109-percent queries,
+    and hidden/ignored material identity search
+  accessed_at: '2026-10-11T15:37:02.965992Z'
+  support: context_only
+  summary: No applicable correction was identified in the returned search sets; Crossref
+    update-to is absent and relation empty. The Crossmark dialog shell contains an
+    iframe whose content was inaccessible, so it does not establish current correction
+    status. Existing literature mentions and similar slag/dust categories do not duplicate
+    the source-defined new BOF record in the bounded corpus search.
+  search_scope: 'Web queries: exact DOI plus correction OR corrigendum OR erratum
+    OR retraction; exact title plus supplementary; exact title plus 109%. First returned
+    sets only. rg --no-ignore --hidden --follow searched data/records, research, reviews,
+    history and /private/tmp/cmm-round26-root-raw for DOI, basic-oxygen/BOF, Yarborough
+    and Scunthorpe. No whole-machine or universal literature-absence claim.'
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round26-final-gates.json
+  locator: Actual terminal receipt, three referenced logs and independently executed
+    named validation; exact target hash compared to receipt
+  accessed_at: '2026-10-11T15:40:39.373799Z'
+  support: supports
+  summary: All required structural checks completed with exit 0. The review concerns
+    the unchanged frozen BOF record and history, independent of later packaging correction
+    work.
+  snapshot_sha256: cc38dc4ba880acadda0ace39440d83a1939fa131abad0177eeef959da39e2f7e
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Process-defined BOF steel slag identity and criticality scope
+  outcome: supported
+  summary: The sample is not conflated with EAF slag/dust, blast-furnace residue,
+    copper-smelter slag, elements or individual mineral species. One sampled slag
+    does not define all BOF slags.
+  target_ids:
+  - cmmmech:basic-oxygen-furnace-steel-slag
+  evidence_ids:
+  - record
+  - primary
+  dimensions:
+  - name: material_kind
+    value: secondary_resource
+    definition: December 2016 Yarborough/Scunthorpe BOF steel slag sample; no independent
+      alloy/mineral identity inferred.
+    evidence_ids:
+    - primary
+  - name: criticality
+    value: Not asserted
+    definition: No authority/jurisdiction/list/edition claim is made for the mixed
+      residue; constituent criticality is not inherited.
+    evidence_ids:
+    - record
+- assessment_id: leaching
+  area: evidence
+  topic: Conditional culture-conditioned laboratory mobilization
+  outcome: supported
+  summary: The positive qualitative mobilization claim is supported while organism-specific
+    causality, exact yield and industrial generalization are withheld.
+  target_ids:
+  - cmmmech:basic-oxygen-furnace-steel-slag
+  evidence_ids:
+  - record
+  - primary
+  - supplement
+  - inventory
+  dimensions:
+  - name: organism_resolution
+    value: Unresolved acidophilic mine-water/mineral/biomass community
+    definition: Libiola Fe-Cu mine sediment-water-interface material; preliminary
+      T-RFLP assignments do not justify pure-strain or member-causality claims. No
+      organism CURIE asserted.
+    evidence_ids:
+    - primary
+    - supplement
+  - name: biomass_state
+    value: Adapted live culture and separately 0.22-micrometre-filtered supernatant
+    definition: Source calls the liquid filter-sterilized. Filtered treatment supports
+      liquid-mediated dissolution without retaining the live culture; no independent
+      residual-viability assay is implied.
+    evidence_ids:
+    - primary
+  - name: pretreatment
+    value: Ground/sieved slag, with autoclaving specified for adaptation
+    definition: Batch fractions below 75 micrometres or below 2 mm; malformed coarse-column
+      inequality is disclosed instead of silently repaired. Adaptation uses 135 degrees
+      C for 30 minutes; no unsupported batch/column sterilization is inferred.
+    evidence_ids:
+    - primary
+  - name: conditions
+    value: 'Batch: 1 g in 100 mL, 30 degrees C, 150 rpm, 3/6 days; columns: 100 g,
+      1 L recirculating, 5 mL/min, 28 +/- 1 degrees C, 22 days'
+    definition: Triplicate batch assays are specified. Independent column replication
+      is not established by the paper; temporal samples are not separate columns.
+    evidence_ids:
+    - primary
+  - name: controls
+    value: Uninoculated batch and sterile-medium column controls
+    definition: A/B columns start below pH 1 versus higher-pH fresh medium. Reagent
+      sulfuric acid was used during culture conditioning. Controls therefore do not
+      isolate the effect of live cells or prove benefit over chemistry-matched acid.
+    evidence_ids:
+    - primary
+  - name: outcomes
+    value: Conditional higher liquid Al/Cr/V release; culture-versus-supernatant null
+      comparison preserved
+    definition: The reported nonsignificant A/B comparison is not treated as statistical
+      equivalence. Smaller batch grain size increases Al/Cr but not V; 3 versus 6
+      days is a retained null result.
+    evidence_ids:
+    - primary
+  - name: deployment
+    value: Laboratory batch and recirculating-column experiments
+    definition: No industrial treatment deployment, bulk detoxification, isolated
+      final product or global slag-recovery prediction accepted.
+    evidence_ids:
+    - record
+    - primary
+- assessment_id: uncertainty
+  area: evidence
+  topic: Source numerical and mechanistic contradictions are retained
+  outcome: supported
+  summary: The record handles quantitative inconsistency by preserving the source
+    conflicts and avoiding artificial reconciliation. It does not promote kinetic
+    fits, PHREEQC speciation, fitted mineral composition or source-proposed pathways
+    into measured causes.
+  target_ids:
+  - cmmmech:basic-oxygen-furnace-steel-slag
+  evidence_ids:
+  - record
+  - primary
+  - inventory
+  - supplement
+  dimensions: []
+- assessment_id: resin
+  area: evidence
+  topic: Removal versus eluate recovery and isolated product
+  outcome: supported
+  summary: The resin mechanism is correctly marked nonmicrobial and its separate poor
+    elution is explicit. Source stage percentages are not multiplied into whole-process
+    recovery.
+  target_ids:
+  - cmmmech:basic-oxygen-furnace-steel-slag
+  evidence_ids:
+  - record
+  - downstream
+  dimensions:
+  - name: resin_stage
+    value: 1 g hydrated hydroxide-form IRA-400, 20 mL final leachate, 150 rpm, 30
+      minutes; then 20 mL 2 M NaOH for 30 minutes
+    definition: The record preserves source A/B percentages, unspecified error/replicate
+      details and elution denominator; no recovered-metal purity is asserted.
+    evidence_ids:
+    - downstream
+- assessment_id: provenance
+  area: provenance
+  topic: Frozen input and history provenance
+  outcome: supported
+  summary: Canonical inspect preceded record judgment; actual new CREATE history and
+    inline event are linked without asserting prior authorship. Inputs are rehashed
+    before saving.
+  target_ids:
+  - cmmmech:basic-oxygen-furnace-steel-slag
+  evidence_ids:
+  - record
+  - metadata
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- Community profiling is preliminary and no species/strain-specific causal role is
+  established.
+- Source loading, feed analysis, plotted masses and reported percentages are inconsistent;
+  no reconciled mass balance or whole-feed recovery can be claimed.
+- Reagent acid and unequal initial chemistry confound culture-versus-medium comparisons;
+  independent column replication is unspecified.
+- The supplement was read through original XML/text and original embedded image pixels,
+  not a successfully rendered full DOCX page.
+- Kinetic fits and aqueous-speciation calculations are model evidence, not uniquely
+  demonstrated pathways or directly measured oxidation states.
+- Resin removal and alkaline elution are separate stage metrics with incompletely
+  specified denominators, errors and replication; no isolated final product is demonstrated.
+- Correction and duplicate searches were bounded; the Crossmark content frame was
+  inaccessible and no universal absence is claimed.
+notes:
+- Canonical inspect preceded record judgment. Exact uncommitted working-tree inputs
+  remain based on trusted d20fc229; this is not a fabricated committed-byte attestation.
+- No record edit, new corrective issue or altered history was needed; the coordinator
+  was informed before saving.
+- The deferred superalloy dossier was authored by this reviewer but is scientifically
+  distinct and is not accepted-record evidence for this target.
+- Final batch receipt was read before saving. A separately tracked packaging correction
+  may add history and trigger later batch checks; it does not change this BOF target.
+tags:
+- round26
+- independent
+- scientific-review
+- secondary-resource

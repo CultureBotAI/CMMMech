@@ -1,0 +1,450 @@
+# Independent initial scientific review of pharmaceutical blister packaging waste
+
+- Review: 20261011T153818Z-pharmaceutical-blister-packaging-waste-round26-independent-initial
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T15:34:59.372168Z
+- Finished UTC: 2026-10-11T15:38:18.215388Z
+- Reviewer: Codex /root/round24_copper_slag (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+One minor directional wording finding requires a precise correction; the otherwise qualified material and leaching claims are supported. Final batch results are pending, so this is an initial observation rather than completed acceptance.
+
+## Scope And Provenance
+
+Entire new resource record, claim-level primary evidence and actual CREATE provenance.
+
+Selection: Assigned independent review of one newly curated packaging resource.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base d20fc229fe61a08e36a2889d89e0f4ce7c06c4a9.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:pharmaceutical-blister-packaging-waste | data/records/pharmaceutical-blister-packaging-waste.yaml | maintained | pharmaceutical-blister-packaging-waste |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named validation | passed | True | cmmmech:pharmaceutical-blister-packaging-waste | Reviewer executed the command: Checked 1 record(s); 0 failed. |
+| Final batch gate pending | unavailable | True | cmmmech:pharmaceutical-blister-packaging-waste | Root is running the current batch. No terminal result is yet used in this observation. This initial finding is saved before correction; a completed successor requires final terminal checks. Intended gate: just check |
+| Final batch gate pending | unavailable | True | cmmmech:pharmaceutical-blister-packaging-waste | Root is running the current batch. No terminal result is yet used in this observation. This initial finding is saved before correction; a completed successor requires final terminal checks. Intended gate: uv run --locked cmmmech validate --require-records |
+| Final batch gate pending | unavailable | True | cmmmech:pharmaceutical-blister-packaging-waste | Root is running the current batch. No terminal result is yet used in this observation. This initial finding is saved before correction; a completed successor requires final terminal checks. Intended gate: uv run --locked cmmmech validate-history --base d20fc229fe61a08e36a2889d89e0f4ce7c06c4a9 |
+
+## Scientific And Domain Assessments
+
+### Material identity and criticality
+
+identity: supported. Targets: cmmmech:pharmaceutical-blister-packaging-waste.
+
+Hospital-collected multilayer blister waste is a distinct secondary resource. No elemental ID or jurisdiction/list/edition claim is inherited.
+
+### Conditional acid leaching, measured outcomes and causal limits
+
+evidence: supported. Targets: cmmmech:pharmaceutical-blister-packaging-waste.
+
+Qualified spent-medium acid leaching is supported. The record preserves lower silver-fraction response, ambiguous percentage equation, bars above 100%, lower stirred-vessel outcome, unproven foam/metabolite cause and absence of an isolated blister Al yield.
+
+### Comparator direction in description
+
+consistency: concern. Targets: cmmmech:pharmaceutical-blister-packaging-waste.
+
+The phrase reagent-acid advantage ambiguously attributes the benefit to the comparator, contradicting the correctly scoped evidence paragraphs and source.
+
+### Independent reviewer and gated completion
+
+provenance: supported. Targets: cmmmech:pharmaceutical-blister-packaging-waste.
+
+Different author/reviewer agents; native inspect captures frozen d1432f record and actual CREATE history. Reviewer did not edit either. Named validation passes; final batch results remain pending in this initial observation.
+
+## Findings
+
+### F1: Clarify which acid has the temperature-dependent advantage
+
+minor / open / confirmed; issue key: CMMMech.blister-acid-comparator-direction.
+
+Mechanism description says with a reagent-acid advantage absent at higher temperature. Read literally, this attributes the advantage to reagent acid. The observed advantage is for biogenic acid over reagent acid at 22 degrees C and disappears at 50 degrees C. Replace the phrase with explicit source-supported direction; the later evidence paragraphs are already correctly bounded.
+
+## Recommended Actions And Acceptance Checks
+
+### A1
+
+Clarify the biogenic-acid versus reagent-acid direction, append truthful EDIT history, revalidate and save an exact successor disposition.
+
+- Description explicitly assigns the conditional advantage to biogenic acid over reagent acid at 22 degrees C and states its absence at 50 degrees C.
+- Preserve source uncertainties, final record/history hashes and prior immutable observation.
+- Pass named and final batch/history gates before completed successor acceptance.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/pharmaceutical-blister-packaging-waste.yaml; Entire frozen record and CREATE sidecar | partial | Most scientific claims are carefully bounded, but the description names the wrong side of the acid comparison as advantaged. |
+| primary | https://doi.org/10.1016/j.hydromet.2023.106124; Methods 2.1-2.7; Results 3.1-3.3 and Section 4; full accessible nine-page published PDF text | supports | Independently read the complete relevant primary text and all main Figures 1-5 as downloaded publisher JPEGs. Actual hospital waste, three fractions, 150-mL triplicate flasks at 22 degrees C/150 rpm, distinct upstream acid source, xylenol-orange liquid Al assay and 1-L follow-up match the record. Equation 2 text displays solid inventory over liquid inventory; because its equation pixels were not available, the record correctly calls this the accessible rendition and retains calculation uncertainty. |
+| comparison | https://doi.org/10.1016/j.hydromet.2023.106124; Results 3.3.1 and Figure 2; Results 3.3.2 and Figure 3a-b | refutes | At 22 degrees C biogenic acid generally outperforms reagent acid in the tested fractions, while at 50 degrees C Figure 3a-b and the results show similar performance. The phrase reagent-acid advantage reverses or obscures this direction. This is a bounded description error; later evidence paragraphs already describe the comparison correctly. |
+| supplement | https://ars.els-cdn.com/content/image/1-s2.0-S0304386X23001068-mmc1.docx; Entire supplement text and native images for Figures S1-S4 | supports | Independently inspected packaging photographs, FTIR panels, sulfur-generation curves and TGA. These support feed variability and upstream-process context, not a lot-level link between the sulfur comparison and blister lixiviant, identified biosurfactant causality or industrial deployment. |
+| acid_context | https://doi.org/10.1016/j.wasman.2022.03.025; Author-uploaded published text, Methods 2.2-2.4 only | context_only | Read the limited cited method directly from the accessible author-uploaded text captured in this batch: DSM 504/9466, mixed-culture sulfur oxidation, reactor operation and 0.2-micrometre filtration of withdrawn acid. No full PDF or incineration experiment audit is claimed, and no incineration outcomes are transferred. |
+| authority | https://www.dsmz.de/collection/catalogue/details/culture/DSM-9466; Live DSMZ 504/9466 and NCBI species 930/33059 checks | supports | Catalogue and taxonomy identities independently checked; DSM 9466 is A. caldus C-SH12 and DSM 504 is A. thiooxidans. Species CURIEs do not identify experimental stocks or individual contributions. |
+| search | https://doi.org/10.1016/j.hydromet.2023.106124; Independent correction/erratum/retraction and bounded repository searches | context_only | Exact DOI plus correction OR retraction OR erratum queries for this study and the carton study returned no matching notice in first result sets; no pagination or filters. Repository rg --no-ignore --hidden --follow covered data/records, research, history and reviews; named raw directory was fully inventoried. Shared author acquisitions are disclosed. Screenshot calls returned text-only placeholders; actual figure pixels came from publisher JPEGs, not screenshot success. |
+| named | /private/tmp/cmm-round26-blister-review-validation.log; Reviewer-run validation after frozen record/history capture | supports | Checked one record, zero failures. Final batch terminal is pending; no completion or acceptance claim is made. |
+
+## Limits And Additional Notes
+
+- Equation 2 accessible text is unresolved; percentage estimates and above-100% bars are not reconstructed or repaired.
+- No compound-specific intervention proves biosurfactant causality, no complete isolated-Al balance is supplied, and industrial/economic/environmental benefit is not demonstrated.
+- Full blister text and actual main/SI figure pixels were read, but no local full-PDF binary or equation screenshot pixels were acquired. Cited 2022 study is method context only.
+- Final root batch terminal is pending; required final gate results are unavailable in this initial artifact.
+- Root owns the supported correction and EDIT history after this finding is saved. No record corrections were made by the reviewer.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T153818Z-pharmaceutical-blister-packaging-waste-round26-independent-initial
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent initial scientific review of pharmaceutical blister packaging waste
+started_at: '2026-10-11T15:34:59.372168Z'
+finished_at: '2026-10-11T15:38:18.215388Z'
+reviewer:
+  identity: Codex /root/round24_copper_slag
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Agent /root/round24_identity_frontier authored the target. This
+    reviewer independently inspected primary methods, results, main and supplementary
+    figure pixels and live authorities. Shared raw acquisitions and source text are
+    disclosed; reviewer has not edited the target.
+skill: .claude/skills/review-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: One minor directional wording finding requires a precise correction; the
+  otherwise qualified material and leaching claims are supported. Final batch results
+  are pending, so this is an initial observation rather than completed acceptance.
+source:
+  git_revision: d20fc229fe61a08e36a2889d89e0f4ce7c06c4a9
+  state: working_tree
+  inputs:
+  - path: data/records/pharmaceutical-blister-packaging-waste.yaml
+    sha256: d1432fb1a86558e371e749ae5150ca0e6496afcfca124cb8052b90ab54d02875
+    role: target
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/pharmaceutical-blister-packaging-waste/2026-10-11T153436Z-codex-48133c.yaml
+    sha256: 0d021ce0fcadc6c4be43f04a3f45184613ff2bf5a28964397bb2f63f8ab896db
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire new resource record, claim-level primary evidence and actual
+    CREATE provenance.
+  selection: Assigned independent review of one newly curated packaging resource.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:pharmaceutical-blister-packaging-waste
+  exclusions:
+  - target: Unavailable full PDF binary/equation pixels and unpublished raw balances
+    reason: Complete blister text and actual figure pixels are available, but direct
+      full-PDF download and screenshot image access were unavailable; no unobserved
+      equation rendering or raw dataset is claimed.
+targets:
+- target_id: cmmmech:pharmaceutical-blister-packaging-waste
+  path: data/records/pharmaceutical-blister-packaging-waste.yaml
+  label: pharmaceutical-blister-packaging-waste
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/pharmaceutical-blister-packaging-waste.yaml
+    role: maintained scientific record
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/pharmaceutical-blister-packaging-waste.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Reviewer executed the command: Checked 1 record(s); 0 failed.'
+  target_ids:
+  - cmmmech:pharmaceutical-blister-packaging-waste
+- check_id: batch
+  name: Final batch gate pending
+  status: unavailable
+  required: true
+  summary: 'Root is running the current batch. No terminal result is yet used in this
+    observation. This initial finding is saved before correction; a completed successor
+    requires final terminal checks. Intended gate: just check'
+  target_ids:
+  - cmmmech:pharmaceutical-blister-packaging-waste
+- check_id: require
+  name: Final batch gate pending
+  status: unavailable
+  required: true
+  summary: 'Root is running the current batch. No terminal result is yet used in this
+    observation. This initial finding is saved before correction; a completed successor
+    requires final terminal checks. Intended gate: uv run --locked cmmmech validate
+    --require-records'
+  target_ids:
+  - cmmmech:pharmaceutical-blister-packaging-waste
+- check_id: history
+  name: Final batch gate pending
+  status: unavailable
+  required: true
+  summary: 'Root is running the current batch. No terminal result is yet used in this
+    observation. This initial finding is saved before correction; a completed successor
+    requires final terminal checks. Intended gate: uv run --locked cmmmech validate-history
+    --base d20fc229fe61a08e36a2889d89e0f4ce7c06c4a9'
+  target_ids:
+  - cmmmech:pharmaceutical-blister-packaging-waste
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/pharmaceutical-blister-packaging-waste.yaml
+  locator: Entire frozen record and CREATE sidecar
+  accessed_at: '2026-10-11T15:38:18.215388Z'
+  support: partial
+  summary: Most scientific claims are carefully bounded, but the description names
+    the wrong side of the acid comparison as advantaged.
+  snapshot_sha256: d1432fb1a86558e371e749ae5150ca0e6496afcfca124cb8052b90ab54d02875
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.hydromet.2023.106124
+  locator: Methods 2.1-2.7; Results 3.1-3.3 and Section 4; full accessible nine-page
+    published PDF text
+  accessed_at: '2026-10-11T15:38:18.215388Z'
+  support: supports
+  summary: Independently read the complete relevant primary text and all main Figures
+    1-5 as downloaded publisher JPEGs. Actual hospital waste, three fractions, 150-mL
+    triplicate flasks at 22 degrees C/150 rpm, distinct upstream acid source, xylenol-orange
+    liquid Al assay and 1-L follow-up match the record. Equation 2 text displays solid
+    inventory over liquid inventory; because its equation pixels were not available,
+    the record correctly calls this the accessible rendition and retains calculation
+    uncertainty.
+  snapshot_sha256: 914d7f7cebc130494cdb4591939a30d4c4f605792a2360a5539dd3ddd5c0d7d0
+- evidence_id: comparison
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.hydromet.2023.106124
+  locator: Results 3.3.1 and Figure 2; Results 3.3.2 and Figure 3a-b
+  accessed_at: '2026-10-11T15:38:18.215388Z'
+  support: refutes
+  summary: At 22 degrees C biogenic acid generally outperforms reagent acid in the
+    tested fractions, while at 50 degrees C Figure 3a-b and the results show similar
+    performance. The phrase reagent-acid advantage reverses or obscures this direction.
+    This is a bounded description error; later evidence paragraphs already describe
+    the comparison correctly.
+  snapshot_sha256: 2d378cb278a260c8f1182af33be00e2ce4baabb664dd2f8053b734e09e133ec8
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S0304386X23001068-mmc1.docx
+  locator: Entire supplement text and native images for Figures S1-S4
+  accessed_at: '2026-10-11T15:38:18.215388Z'
+  support: supports
+  summary: Independently inspected packaging photographs, FTIR panels, sulfur-generation
+    curves and TGA. These support feed variability and upstream-process context, not
+    a lot-level link between the sulfur comparison and blister lixiviant, identified
+    biosurfactant causality or industrial deployment.
+  snapshot_sha256: 15e6f24cefe8dcf4de0cfce3562ed519a0e19fc753fcd7c900946d386b7408da
+- evidence_id: acid_context
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.wasman.2022.03.025
+  locator: Author-uploaded published text, Methods 2.2-2.4 only
+  accessed_at: '2026-10-11T15:38:18.215388Z'
+  support: context_only
+  summary: 'Read the limited cited method directly from the accessible author-uploaded
+    text captured in this batch: DSM 504/9466, mixed-culture sulfur oxidation, reactor
+    operation and 0.2-micrometre filtration of withdrawn acid. No full PDF or incineration
+    experiment audit is claimed, and no incineration outcomes are transferred.'
+  snapshot_sha256: c52b5eb89bb1488b563db95603409eac6b3c82224cd0e8ad0e5e5217919a5b46
+- evidence_id: authority
+  kind: authority
+  reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-9466
+  locator: Live DSMZ 504/9466 and NCBI species 930/33059 checks
+  accessed_at: '2026-10-11T15:38:18.215388Z'
+  support: supports
+  summary: Catalogue and taxonomy identities independently checked; DSM 9466 is A.
+    caldus C-SH12 and DSM 504 is A. thiooxidans. Species CURIEs do not identify experimental
+    stocks or individual contributions.
+- evidence_id: search
+  kind: search
+  reference: https://doi.org/10.1016/j.hydromet.2023.106124
+  locator: Independent correction/erratum/retraction and bounded repository searches
+  accessed_at: '2026-10-11T15:38:18.215388Z'
+  support: context_only
+  summary: Exact DOI plus correction OR retraction OR erratum queries for this study
+    and the carton study returned no matching notice in first result sets; no pagination
+    or filters. Repository rg --no-ignore --hidden --follow covered data/records,
+    research, history and reviews; named raw directory was fully inventoried. Shared
+    author acquisitions are disclosed. Screenshot calls returned text-only placeholders;
+    actual figure pixels came from publisher JPEGs, not screenshot success.
+  search_scope: Exact DOI plus correction OR retraction OR erratum queries for this
+    study and the carton study returned no matching notice in first result sets; no
+    pagination or filters. Repository rg --no-ignore --hidden --follow covered data/records,
+    research, history and reviews; named raw directory was fully inventoried. Shared
+    author acquisitions are disclosed. Screenshot calls returned text-only placeholders;
+    actual figure pixels came from publisher JPEGs, not screenshot success.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round26-blister-review-validation.log
+  locator: Reviewer-run validation after frozen record/history capture
+  accessed_at: '2026-10-11T15:38:18.215388Z'
+  support: supports
+  summary: Checked one record, zero failures. Final batch terminal is pending; no
+    completion or acceptance claim is made.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Material identity and criticality
+  outcome: supported
+  summary: Hospital-collected multilayer blister waste is a distinct secondary resource.
+    No elemental ID or jurisdiction/list/edition claim is inherited.
+  target_ids:
+  - cmmmech:pharmaceutical-blister-packaging-waste
+  evidence_ids:
+  - record
+  - primary
+  - supplement
+- assessment_id: mechanism
+  area: evidence
+  topic: Conditional acid leaching, measured outcomes and causal limits
+  outcome: supported
+  summary: Qualified spent-medium acid leaching is supported. The record preserves
+    lower silver-fraction response, ambiguous percentage equation, bars above 100%,
+    lower stirred-vessel outcome, unproven foam/metabolite cause and absence of an
+    isolated blister Al yield.
+  target_ids:
+  - cmmmech:pharmaceutical-blister-packaging-waste
+  evidence_ids:
+  - primary
+  - supplement
+  - acid_context
+  - authority
+  dimensions:
+  - name: organism_and_biomass
+    value: A. thiooxidans DSM 504 and A. caldus DSM 9466 upstream; applied acid liquor
+      is not authenticated sterile
+    definition: Culture labels and acid-production role are distinct from live-cell
+      contact during leaching.
+    evidence_ids:
+    - primary
+    - acid_context
+    - authority
+  - name: controls
+    value: Nominally 0.86-M commercial acid; advantage disappears at 50 degrees C
+    definition: Comparator direction is conditional on temperature; medium components
+      are not individually matched.
+    evidence_ids:
+    - primary
+    - comparison
+  - name: outcome_and_scale
+    value: Laboratory dissolved-Al and polymer-processing observations
+    definition: Source percentage estimates, not a reconstructed total process yield,
+      certified product or industrial operation.
+    evidence_ids:
+    - primary
+    - supplement
+- assessment_id: direction
+  area: consistency
+  topic: Comparator direction in description
+  outcome: concern
+  summary: The phrase reagent-acid advantage ambiguously attributes the benefit to
+    the comparator, contradicting the correctly scoped evidence paragraphs and source.
+  target_ids:
+  - cmmmech:pharmaceutical-blister-packaging-waste
+  evidence_ids:
+  - record
+  - comparison
+- assessment_id: provenance
+  area: provenance
+  topic: Independent reviewer and gated completion
+  outcome: supported
+  summary: Different author/reviewer agents; native inspect captures frozen d1432f
+    record and actual CREATE history. Reviewer did not edit either. Named validation
+    passes; final batch results remain pending in this initial observation.
+  target_ids:
+  - cmmmech:pharmaceutical-blister-packaging-waste
+  evidence_ids:
+  - record
+  - named
+findings:
+- finding_id: F1
+  issue_key: CMMMech.blister-acid-comparator-direction
+  category: consistency
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Clarify which acid has the temperature-dependent advantage
+  description: Mechanism description says with a reagent-acid advantage absent at
+    higher temperature. Read literally, this attributes the advantage to reagent acid.
+    The observed advantage is for biogenic acid over reagent acid at 22 degrees C
+    and disappears at 50 degrees C. Replace the phrase with explicit source-supported
+    direction; the later evidence paragraphs are already correctly bounded.
+  target_ids:
+  - cmmmech:pharmaceutical-blister-packaging-waste
+  field_paths:
+  - mechanisms[0].description
+  evidence_ids:
+  - record
+  - comparison
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/pharmaceutical-blister-packaging-waste.yaml
+    role: maintained scientific record
+  rule_id: claim-level comparator direction
+  native_severity: minor
+  normalization_reason: 'Native minor maps directly to shared minor: bounded wording
+    error, not wrong material identity or broad mechanism fabrication.'
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/94
+actions:
+- action_id: A1
+  description: Clarify the biogenic-acid versus reagent-acid direction, append truthful
+    EDIT history, revalidate and save an exact successor disposition.
+  finding_ids:
+  - F1
+  target_ids:
+  - cmmmech:pharmaceutical-blister-packaging-waste
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/pharmaceutical-blister-packaging-waste.yaml
+    role: maintained scientific record
+  acceptance_checks:
+  - Description explicitly assigns the conditional advantage to biogenic acid over
+    reagent acid at 22 degrees C and states its absence at 50 degrees C.
+  - Preserve source uncertainties, final record/history hashes and prior immutable
+    observation.
+  - Pass named and final batch/history gates before completed successor acceptance.
+limitations:
+- Equation 2 accessible text is unresolved; percentage estimates and above-100% bars
+  are not reconstructed or repaired.
+- No compound-specific intervention proves biosurfactant causality, no complete isolated-Al
+  balance is supplied, and industrial/economic/environmental benefit is not demonstrated.
+- Full blister text and actual main/SI figure pixels were read, but no local full-PDF
+  binary or equation screenshot pixels were acquired. Cited 2022 study is method context
+  only.
+- Final root batch terminal is pending; required final gate results are unavailable
+  in this initial artifact.
+notes:
+- Root owns the supported correction and EDIT history after this finding is saved.
+  No record corrections were made by the reviewer.
+links:
+- https://github.com/CultureBotAI/CMMMech/issues/93
+- https://github.com/CultureBotAI/CMMMech/issues/94
+tags:
+- round26
+- independent
+- scientific-review
+- initial-finding
+```
