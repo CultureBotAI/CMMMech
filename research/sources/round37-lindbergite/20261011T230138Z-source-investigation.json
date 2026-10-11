@@ -1,0 +1,1172 @@
+{
+  "timestamp_utc": "2026-10-11T23:01:38.260866+00:00",
+  "researcher": "Codex /root/round27_eaf_slag; GPT-6; codex",
+  "worktree": "/private/tmp/CMMMech-expansion-round37-20261011",
+  "branch": "curate/cmm-expansion-round37-20261011",
+  "trusted_base": "dcfbedb78bfd682ad06f2ff4517241f490e4f401",
+  "outcome": "one lindbergite record authored; independent review and final cohort gates pending",
+  "record": {
+    "path": "data/records/lindbergite.yaml",
+    "sha256": "55f488f8f6fd8da4a7f7c63183b93d23540c6e7d19ec20424950f6afa87ac2ba"
+  },
+  "history": {
+    "path": "history/records/lindbergite/2026-10-11T225957Z-codex-f222f6.yaml",
+    "sha256": "c76f5fc967279b20ae35314f2c2f535a1f29ec459f93df64a55252f1bfd5cb0b"
+  },
+  "baseline": {
+    "path": "/private/tmp/cmm-round37-baseline-terminal.json",
+    "sha256": "c70edc3168a9a9aa1a619a684585aa102598be7bbcef535828b5b63f6b03015e",
+    "receipt": {
+      "started_at": "2026-10-11T22:53:04.101789+00:00",
+      "base": "dcfbedb78bfd682ad06f2ff4517241f490e4f401",
+      "commands": [
+        {
+          "name": "batch",
+          "command": [
+            "just",
+            "check"
+          ],
+          "started_at": "2026-10-11T22:53:04.102582+00:00",
+          "finished_at": "2026-10-11T22:56:05.937647+00:00",
+          "exit_code": 0,
+          "log": "/private/tmp/cmm-round37-baseline-batch.log",
+          "sha256": "9df6f28954e16298a50956fc50cbe85af01b1c6b7867d47e1451109ba054404f"
+        }
+      ],
+      "exit_code": 0,
+      "finished_at": "2026-10-11T22:56:05.938241+00:00"
+    },
+    "interpretation": "Fresh parent-run just check passed before record edits; 308 passed, 3 skipped, 200 records and 231 histories. This is not a final new-record gate."
+  },
+  "named_validation": {
+    "started_at": "2026-10-11T23:00:09.110547+00:00",
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "cmmmech",
+      "validate",
+      "data/records/lindbergite.yaml"
+    ],
+    "finished_at": "2026-10-11T23:00:12.304709+00:00",
+    "exit_code": 0,
+    "log": "/private/tmp/cmm-round37-lindbergite-research/named-validation.log",
+    "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e",
+    "record_sha256": "55f488f8f6fd8da4a7f7c63183b93d23540c6e7d19ec20424950f6afa87ac2ba"
+  },
+  "queries": {
+    "provider": "web.run search/open",
+    "date_utc": "2026-10-11",
+    "exact_queries": [
+      "PMC6849720 lindbergite manganese nodules fungi",
+      "PMC7711977 lindbergite correction retraction",
+      "\"lindbergite\" \"IMA\" 2003",
+      "\"Aspergillus niger\" \"CBS 140837\" taxonomy",
+      "\"10.1111/1462-2920.14591\" correction OR retraction OR erratum",
+      "\"10.3390/jof6040270\" correction OR retraction OR erratum",
+      "\"Aspergillus niger\" \"ATCC 1015\" site:atcc.org",
+      "\"lindbergite\" monoclinic \"orthorhombic\" 2004",
+      "\"10.2138/am-2004-0721\" pdf",
+      "\"10.1111/1462-2920.14591\" supplementary",
+      "\"10.3390/jof6040270\" supplementary"
+    ],
+    "bounds": "First returned result sets; no pagination/date filter or exhaustive review claimed. Official primary URLs were then acquired independently with per-request UTC receipts.",
+    "notice_result": "No relevant correction/retraction identified in the bounded exact-DOI queries; fetched Crossref update-to/relation fields empty or absent. This does not prove universal notice absence."
+  },
+  "dedup": {
+    "timestamp_utc": "2026-10-11T22:56:17.077456+00:00",
+    "pattern": "lindbergite|falottaite|6849720|7711977|1462-2920\\.14591|jof6040270|2003-029|COG_MN35|COG_MN12",
+    "hidden_ignored_included": true,
+    "symlinks_followed": true,
+    "corpus_files_in_reference_scan": 2948,
+    "corpus_symlinks": [],
+    "boundaries": {
+      "corpus": {
+        "roots": [
+          "/private/tmp/CMMMech-expansion-round37-20261011/data",
+          "/private/tmp/CMMMech-expansion-round37-20261011/research",
+          "/private/tmp/CMMMech-expansion-round37-20261011/reviews",
+          "/private/tmp/CMMMech-expansion-round37-20261011/history",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history"
+        ],
+        "exit_code": 0,
+        "output": "/private/tmp/cmm-round37-lindbergite-research/corpus-dedup.txt",
+        "sha256": "b7b949e0f325cd1ef7e5ac390492718d59a40e1b6f191e35b1edb15232088290",
+        "match_lines": 10,
+        "stderr": ""
+      },
+      "referenced_raw": {
+        "roots": [
+          "/private/tmp/cmm-round10-b-f-raw",
+          "/private/tmp/cmm-round10-graphite-raw",
+          "/private/tmp/cmm-round10-nb-ta-raw",
+          "/private/tmp/cmm-round10-ti-zr-raw",
+          "/private/tmp/cmm-round11-be-rb-re-raw",
+          "/private/tmp/cmm-round11-he-raw",
+          "/private/tmp/cmm-round11-ir-os-hf-raw",
+          "/private/tmp/cmm-round11-lu-tm-pm-raw",
+          "/private/tmp/cmm-round12-aluminium-boron-raw",
+          "/private/tmp/cmm-round12-carbon-metals-raw",
+          "/private/tmp/cmm-round12-groups-raw",
+          "/private/tmp/cmm-round12-industrial-minerals-raw",
+          "/private/tmp/cmm-round13-grade-raw",
+          "/private/tmp/cmm-round13-mineral-raw",
+          "/private/tmp/cmm-round13-secondary-raw",
+          "/private/tmp/cmm-round14-magnet-raw",
+          "/private/tmp/cmm-round14-mineral-raw",
+          "/private/tmp/cmm-round14-product-raw",
+          "/private/tmp/cmm-round14-secondary-raw",
+          "/private/tmp/cmm-round15-brine-raw",
+          "/private/tmp/cmm-round15-mineral-raw",
+          "/private/tmp/cmm-round16-produced-water-raw",
+          "/private/tmp/cmm-round16-silicate-raw",
+          "/private/tmp/cmm-round16-vivianite-raw",
+          "/private/tmp/cmm-round17-biotite-raw",
+          "/private/tmp/cmm-round17-enstatite-raw",
+          "/private/tmp/cmm-round17-saline-raw",
+          "/private/tmp/cmm-round18-catalyst-raw",
+          "/private/tmp/cmm-round18-dunite-raw",
+          "/private/tmp/cmm-round18-mineral-feeds-raw",
+          "/private/tmp/cmm-round18-products-raw",
+          "/private/tmp/cmm-round19-hydrogenation-catalyst-raw",
+          "/private/tmp/cmm-round19-iron-manganese-raw",
+          "/private/tmp/cmm-round19-manganese-residue-raw",
+          "/private/tmp/cmm-round19-tailings-raw",
+          "/private/tmp/cmm-round20-goethite-raw",
+          "/private/tmp/cmm-round20-laterite-raw",
+          "/private/tmp/cmm-round20-mafic-tailings-raw",
+          "/private/tmp/cmm-round20-nodule-raw",
+          "/private/tmp/cmm-round21-crusts-raw",
+          "/private/tmp/cmm-round21-pcb-raw",
+          "/private/tmp/cmm-round21-ree-mud-raw",
+          "/private/tmp/cmm-round22-concretions-raw",
+          "/private/tmp/cmm-round22-pcb-raw",
+          "/private/tmp/cmm-round22-pv-raw",
+          "/private/tmp/cmm-round22-sulfides-raw",
+          "/private/tmp/cmm-round23-crusts-raw",
+          "/private/tmp/cmm-round23-ghiorse-raw",
+          "/private/tmp/cmm-round23-identity-gaps-raw",
+          "/private/tmp/cmm-round23-lcd-raw",
+          "/private/tmp/cmm-round23-rey-mud-raw",
+          "/private/tmp/cmm-round24-copper-slag-raw",
+          "/private/tmp/cmm-round24-frontier-raw",
+          "/private/tmp/cmm-round24-nimh-raw",
+          "/private/tmp/cmm-round24-sulfuric-raw",
+          "/private/tmp/cmm-round25-bf-dust-raw",
+          "/private/tmp/cmm-round25-button-raw",
+          "/private/tmp/cmm-round25-frontier-raw",
+          "/private/tmp/cmm-round25-oil-ash-raw",
+          "/private/tmp/cmm-round26-eaf-dust-raw",
+          "/private/tmp/cmm-round26-packaging-raw",
+          "/private/tmp/cmm-round26-root-raw",
+          "/private/tmp/cmm-round26-superalloy-raw",
+          "/private/tmp/cmm-round27-eaf-slag-raw",
+          "/private/tmp/cmm-round27-goethite-raw",
+          "/private/tmp/cmm-round27-packaging-raw",
+          "/private/tmp/cmm-round27-root-raw",
+          "/private/tmp/cmm-round27-superalloy-raw",
+          "/private/tmp/cmm-round28-black-shale-research",
+          "/private/tmp/cmm-round28-goethite-research",
+          "/private/tmp/cmm-round28-tatra-research",
+          "/private/tmp/cmm-round28-tire-research",
+          "/private/tmp/cmm-round29-bastnaesite-research",
+          "/private/tmp/cmm-round29-ilmenite-research",
+          "/private/tmp/cmm-round29-tungsten-waste-research",
+          "/private/tmp/cmm-round29-zinc-ore-research",
+          "/private/tmp/cmm-round30-basalt-research",
+          "/private/tmp/cmm-round30-chromite-research",
+          "/private/tmp/cmm-round30-pyrrhotite-research",
+          "/private/tmp/cmm-round30-tungsten-research",
+          "/private/tmp/cmm-round31-chromite-tailings-research",
+          "/private/tmp/cmm-round31-ilmenite-research",
+          "/private/tmp/cmm-round31-kaolin-research",
+          "/private/tmp/cmm-round31-kaolin-waste-research",
+          "/private/tmp/cmm-round31-stibnite-research",
+          "/private/tmp/cmm-round31-tungsten-research",
+          "/private/tmp/cmm-round32-arsenopyrite-research",
+          "/private/tmp/cmm-round32-bornite-research",
+          "/private/tmp/cmm-round32-chromitite-research",
+          "/private/tmp/cmm-round32-molybdenite-research",
+          "/private/tmp/cmm-round33-chalcocite-research",
+          "/private/tmp/cmm-round33-covellite-research",
+          "/private/tmp/cmm-round33-molybdenite-research",
+          "/private/tmp/cmm-round33-pyrite-research",
+          "/private/tmp/cmm-round34-galena-research",
+          "/private/tmp/cmm-round34-greigite-research",
+          "/private/tmp/cmm-round34-mackinawite-research",
+          "/private/tmp/cmm-round34-uraninite-research",
+          "/private/tmp/cmm-round35-anglesite-research",
+          "/private/tmp/cmm-round35-jarosite-research",
+          "/private/tmp/cmm-round35-ningyoite-research",
+          "/private/tmp/cmm-round35-schwertmannite-research",
+          "/private/tmp/cmm-round36-autunite-research/raw",
+          "/private/tmp/cmm-round36-moolooite-research/raw",
+          "/private/tmp/cmm-round36-uramphite-research",
+          "/private/tmp/cmm-round7-ho-er-gd-raw",
+          "/private/tmp/cmm-round7-terbium-raw",
+          "/private/tmp/cmm-round8-sc-pr-raw",
+          "/private/tmp/cmm-round9-cs-sr-raw",
+          "/private/tmp/cmm-round9-ru-rh-raw",
+          "/private/tmp/cmm-round9-si-sn-raw"
+        ],
+        "exit_code": 0,
+        "output": "/private/tmp/cmm-round37-lindbergite-research/referenced_raw-dedup.txt",
+        "sha256": "cf3e9fc2dd74ae34b7a7c5e2a171c78eab8351694973a7a4168ef08d924fb499",
+        "match_lines": 37,
+        "stderr": ""
+      }
+    },
+    "limits": "Text search includes all hidden/ignored files and follows symlinks. Prior raw text/XML/HTML/metadata are searched; compressed binary PDF/image content is not universally decoded. Current two complete main PDFs and their XML/figures are independently read. No machine-wide source absence is asserted."
+  },
+  "dedup_interpretation": "10 corpus lines were frontier leads, not an existing maintained lindbergite owner or accepted Ferrier/Farkas mechanism. 37 prior raw lines included IMA identity and related moolooite synthetic context. Search includes hidden/ignored files, follows relevant symlinks, and explicitly limits unextracted binary content.",
+  "assessment": {
+    "accepted_source": "Ferrier et al. 2019 DOI 10.1111/1462-2920.14591; one study with solid and liquid COG_MN35 powder arms.",
+    "accepted_claim": "Source-assigned lindbergite formation in A. niger ATCC 1015 cultures on mixed natural manganese nodule powder; not pure feed, quantified mineral yield or industrial recovery.",
+    "identity": "IMA 2003-029, September 2026 row PDF p126; handbook monoclinic C2/c MnC2O4.2H2O. Distinct from orthorhombic Mn oxalate dihydrate and falottaite trihydrate.",
+    "not_accepted_as_replication": "Farkas et al. 2020 DOI 10.3390/jof6040270 uses CBS 140837 and synthetic hausmannite. Table 2 calls an orthorhombic cell lindbergite; identity conflict prevents accepting that exact mineral formation as independent lindbergite replication.",
+    "shared_study": "The parent is independently curating falottaite from Farkas 2020. Shared study references across distinct phases do not add experimental replication.",
+    "criticality": "No criticality designation asserted or inherited.",
+    "quantitation": "No schema quantitative observation added: percent pulp loading and unquantified phase assignments are not source concentration cells in mg/kg.",
+    "controls": "Solid matched uninoculated pattern displayed; liquid uninoculated flask and no-mineral fungal pellets displayed. No killed-cell, cell-free or acid-matched formation series. No direct oxalate assay, phase mass fraction or Mn mass balance.",
+    "primary_limits": [
+      "Liquid inoculum methods final 10^4 spores/mL versus Figure 6 10^6 spores/mL.",
+      "Solid recovery methods state 125 rpm despite plate protocol; preserve ambiguity.",
+      "Approximately 70 C extraction/washing and week-long drying precede solid XRPD; live hydration unmeasured.",
+      "Figure 8 names calcium oxalate monohydrate while corresponding results name dihydrate.",
+      "ICDD-based phase assignment lacks specimen-specific cell refinement or water-content assay.",
+      "AP1 contains Ca and trace Mn, with no provenance tracer.",
+      "At least three determinations does not specify biological versus analytical replication."
+    ],
+    "farkas_context_limits": [
+      "Table 2 orthorhombic versus authoritative monoclinic lindbergite identity.",
+      "Section 3.5 says falottaite identified day 20; Discussion first detected after day 15 and misreferences Figure 5a.",
+      "Figure 6 has an additional unlabelled lower curve; do not assign its time.",
+      "Methods scan 20-80 degrees but displayed Figure 6 starts at 10 degrees.",
+      "No uninoculated or pH-matched formation control series.",
+      "Mn/As partitions include mineral associated with biomass; not phase-specific yield or intracellular uptake.",
+      "Section 2.4 analytical-method ordering differs from explicit Section 2.5 assignments."
+    ],
+    "future_work": [
+      "Resolve experimental Mn oxalate polymorph by accessible raw diffraction/refinement and hydration evidence; no contact attempted.",
+      "Consider cited Wei 2012 birnessite transformation as a separately acquired primary, not as evidence already inspected.",
+      "Do not promote 2022 synthetic polymorph context into a microbial mechanism."
+    ]
+  },
+  "inspection": {
+    "ferrier2019": "All 13 PDF pages including repository cover, 12 article pages, Figures 1-8 and Table 1 visually inspected; full JATS and methods read.",
+    "farkas2020": "All 12 main PDF pages, Figures 1-8 and Tables 1-2 visually inspected; full JATS and methods read.",
+    "ima2026": "Original pages 1,2,67,126 visually inspected (definitions, licence, falottaite and lindbergite).",
+    "handbook": "Entire original one-page mineral entry visually inspected.",
+    "synthesis2022": "PMC9738142 full JATS acquired, identity/polymorph passages read; NOT all figures or SI assessed, context only.",
+    "supplements": "Both complete JATS files contain zero supplementary-material nodes; media archives each contain eight main JPG figures plus eight GIF thumbnails. No separate SI identified in these artifacts/full PDFs/bounded search; no global absence assertion.",
+    "taxonomy": "NCBI API current species 5061 and official ATCC 1015 page independently read; strain identity not inferred from species TaxID."
+  },
+  "access_and_rights": {
+    "ferrier": "Dundee cover labels publisher version, CC BY; actual embedded article carries early pagination 1-12, while Crossref/JATS final journal citation is 21(5):1821-1832. Online-date differences are not resolved; no exact online day asserted.",
+    "farkas": "Original MDPI PDF and Europe PMC full JATS, CC BY 4.0.",
+    "ima": "Official September 2026 list; page2 CC BY-SA 3.0.",
+    "handbook": "MSA mineral authority entry; not redistributing original PDF in Git.",
+    "failed_routes": "Initial sandbox DNS failures retained in acquisition-1; subsequent permitted source acquisitions succeeded. RRUFF original Atencio 2004 PDF route failed with connection refused; original mineral-description paper not claimed read.",
+    "policy": "Raw full text, figure images and bulk authority PDF remain outside Git. The maintained dossier contains original assessment and artifact provenance."
+  },
+  "acquisitions": [
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6849720/fullTextXML",
+      "attempted_at": "2026-10-11T22:53:10.154408+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://discovery.dundee.ac.uk/ws/files/32735632/Final_Published_Version.pdf",
+      "attempted_at": "2026-10-11T22:53:10.173329+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7711977/fullTextXML",
+      "attempted_at": "2026-10-11T22:53:10.174064+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "attempted_at": "2026-10-11T22:53:10.175477+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/5061/dataset_report",
+      "attempted_at": "2026-10-11T22:53:10.181696+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6849720/fullTextXML",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6849720/fullTextXML",
+      "retrieved_at": "2026-10-11T22:53:23.525263+00:00",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 114385,
+      "sha256": "581fec7c7d054b6c9886aad30ee07ef61fd5e3ffb8381ed236253c05464dfc33",
+      "signature": "b'<?xml version=\"1.0\" encoding=\"UTF-8'"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019.pdf",
+      "url": "https://discovery.dundee.ac.uk/ws/files/32735632/Final_Published_Version.pdf",
+      "resolved_url": "https://discovery.dundee.ac.uk/ws/files/32735632/Final_Published_Version.pdf",
+      "retrieved_at": "2026-10-11T22:53:23.524115+00:00",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 2605192,
+      "sha256": "0a8d7051ce9acafdbe64730677f6a145522cbd2124af5f231d9c923f6f4f6424",
+      "signature": "b'%PDF-1.5\\n%\\xe2\\xe3\\xcf\\xd3\\n5 0 obj\\n<</A<</S/URI'"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7711977/fullTextXML",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7711977/fullTextXML",
+      "retrieved_at": "2026-10-11T22:53:23.525992+00:00",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 77570,
+      "sha256": "96020cfeb3620207d0516edcaea6f9dcb3b1aa23d81d4fa385b76aa2d45a5eee",
+      "signature": "b'<?xml version=\"1.0\" encoding=\"UTF-8'"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ima2026.pdf",
+      "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "resolved_url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "retrieved_at": "2026-10-11T22:53:23.526828+00:00",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "signature": "b'%PDF-1.7\\r%\\xe2\\xe3\\xcf\\xd3\\r\\n854 0 obj\\r<</Linear'"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ncbi5061.json",
+      "url": "https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/5061/dataset_report",
+      "resolved_url": "https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/5061/dataset_report",
+      "retrieved_at": "2026-10-11T22:53:23.527267+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 1317,
+      "sha256": "6d2d9b2a4b031de6fd14225ddc52dec2a240dadb51d83f12a549e035575e9126",
+      "signature": "b'{\"reports\":[{\"taxonomy\":{\"tax_id\":5'"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020.pdf",
+      "url": "https://mdpi-res.com/d_attachment/jof/jof-06-00270/article_deploy/jof-06-00270.pdf",
+      "resolved_url": "https://mdpi-res.com/d_attachment/jof/jof-06-00270/article_deploy/jof-06-00270.pdf",
+      "retrieved_at": "2026-10-11T22:54:00.499344+00:00",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 2820046,
+      "sha256": "c9bc5ba8f8bd642eb995e81abe2303aae8672ea106ba60528203cd08a149d041",
+      "signature": "b'%PDF-1.5\\n%\\xd0\\xd4\\xc5\\xd8\\n85 0 obj\\n<<\\n/Length '"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6849720/supplementaryFiles",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6849720/supplementaryFiles",
+      "retrieved_at": "2026-10-11T22:54:00.500427+00:00",
+      "status": 200,
+      "content_type": "application/zip",
+      "bytes": 822270,
+      "sha256": "d227a32cf1a495393bf9183c0c37b7460692c7a7d62cec8ed385d1e24378773f",
+      "signature": "b'PK\\x03\\x04\\x14\\x00\\x08\\x08\\x08\\x00\\xc0\\xbeK]\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x14\\x00\\x00\\x00EMI-2'"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7711977/supplementaryFiles",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7711977/supplementaryFiles",
+      "retrieved_at": "2026-10-11T22:54:00.500834+00:00",
+      "status": 200,
+      "content_type": "application/zip",
+      "bytes": 612366,
+      "sha256": "517ce175591b045bba652c96fa9317fb5ec68bd3bfd83b5c3f8692e8bcb09558",
+      "signature": "b'PK\\x03\\x04\\x14\\x00\\x08\\x08\\x08\\x00\\xc0\\xbeK]\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x15\\x00\\x00\\x00jof-0'"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/crossref2019.json",
+      "url": "https://api.crossref.org/works/10.1111/1462-2920.14591",
+      "resolved_url": "https://api.crossref.org/works/10.1111/1462-2920.14591",
+      "retrieved_at": "2026-10-11T22:54:00.501233+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 12490,
+      "sha256": "49447a65f922e28571c750edb37ba10d5503f9ea8cea3477f863d4e008ec22b5",
+      "signature": "b'{\"status\":\"ok\",\"message-type\":\"work'"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/crossref2020.json",
+      "url": "https://api.crossref.org/works/10.3390/jof6040270",
+      "resolved_url": "https://api.crossref.org/works/10.3390/jof6040270",
+      "retrieved_at": "2026-10-11T22:54:00.501673+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 16452,
+      "sha256": "d813140a423760c477ea05cd51b35a212d3968c4ce148440eeb0a478044dcba1",
+      "signature": "b'{\"status\":\"ok\",\"message-type\":\"work'"
+    },
+    {
+      "url": "https://rruff.info/doclib/am/vol89/AM89_1087.pdf",
+      "attempted_at": "2026-10-11T22:55:40.368842+00:00",
+      "error": "<urlopen error [Errno 61] Connection refused>"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/lindbergite-handbook.pdf",
+      "url": "https://www.handbookofmineralogy.org/pdfs/Lindbergite.pdf",
+      "resolved_url": "https://www.handbookofmineralogy.org/pdfs/Lindbergite.pdf",
+      "retrieved_at": "2026-10-11T22:55:40.370174+00:00",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 113868,
+      "sha256": "27f1d14550498638367b512616910c87039f06aaf7a5b2f41490678feea623f0",
+      "signature": "b'%PDF-1.7\\r%\\xe2\\xe3\\xcf\\xd3\\r\\n51 0 obj\\r<</Lineari'"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/synthesis2022.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9738142/fullTextXML",
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9738142/fullTextXML",
+      "retrieved_at": "2026-10-11T22:55:40.370597+00:00",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 155440,
+      "sha256": "b1bb138e4ad8ac1cfa8f90139859111e08006bcba19ad6769f64686d3b3634f0",
+      "signature": "b'\\n<!DOCTYPE article\\n  PUBLIC \"-//NLM'"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/atcc1015.html",
+      "url": "https://www.atcc.org/products/1015",
+      "resolved_url": "https://www.atcc.org/products/1015",
+      "retrieved_at": "2026-10-11T22:55:40.370749+00:00",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 347107,
+      "sha256": "14bfb4fa7191fecdad62e7dd09d6d4a1e647ca985d7fa6d30ee9720d1101111f",
+      "signature": "b'\\r\\n\\r\\n\\r\\n\\r\\n<!DOCTYPE html>\\r\\n<html lang'"
+    }
+  ],
+  "raw_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/acquisition-1.json",
+      "bytes": 1191,
+      "sha256": "2005b26337153428f6e8c933ba244d1d25d58d5678b996a989f961523415dc5f",
+      "role": "derived text, acquisition receipt or media inventory; filename specifies source"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/acquisition-2.json",
+      "bytes": 2790,
+      "sha256": "a1fced1fb9239c18c630dab030b11421c5f7f4e5037e890644be537345bb0265",
+      "role": "derived text, acquisition receipt or media inventory; filename specifies source"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/acquisition-3.json",
+      "bytes": 2966,
+      "sha256": "3a783c9fb8b54d9424ea350bfcdc8cb66ce7ee4c13d490bb8ca647254b98c00f",
+      "role": "derived text, acquisition receipt or media inventory; filename specifies source"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/acquisition-4.json",
+      "bytes": 1795,
+      "sha256": "a591b169b2ceb94c13f084766d8a472fd589398f6ed67672489ed3ca1f7d1d49",
+      "role": "derived text, acquisition receipt or media inventory; filename specifies source"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/atcc1015.html",
+      "bytes": 347107,
+      "sha256": "14bfb4fa7191fecdad62e7dd09d6d4a1e647ca985d7fa6d30ee9720d1101111f",
+      "acquisition": {
+        "path": "/private/tmp/cmm-round37-lindbergite-research/raw/atcc1015.html",
+        "url": "https://www.atcc.org/products/1015",
+        "resolved_url": "https://www.atcc.org/products/1015",
+        "retrieved_at": "2026-10-11T22:55:40.370749+00:00",
+        "status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 347107,
+        "sha256": "14bfb4fa7191fecdad62e7dd09d6d4a1e647ca985d7fa6d30ee9720d1101111f",
+        "signature": "b'\\r\\n\\r\\n\\r\\n\\r\\n<!DOCTYPE html>\\r\\n<html lang'"
+      }
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/crossref2019.json",
+      "bytes": 12490,
+      "sha256": "49447a65f922e28571c750edb37ba10d5503f9ea8cea3477f863d4e008ec22b5",
+      "acquisition": {
+        "path": "/private/tmp/cmm-round37-lindbergite-research/raw/crossref2019.json",
+        "url": "https://api.crossref.org/works/10.1111/1462-2920.14591",
+        "resolved_url": "https://api.crossref.org/works/10.1111/1462-2920.14591",
+        "retrieved_at": "2026-10-11T22:54:00.501233+00:00",
+        "status": 200,
+        "content_type": "application/json",
+        "bytes": 12490,
+        "sha256": "49447a65f922e28571c750edb37ba10d5503f9ea8cea3477f863d4e008ec22b5",
+        "signature": "b'{\"status\":\"ok\",\"message-type\":\"work'"
+      }
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/crossref2020.json",
+      "bytes": 16452,
+      "sha256": "d813140a423760c477ea05cd51b35a212d3968c4ce148440eeb0a478044dcba1",
+      "acquisition": {
+        "path": "/private/tmp/cmm-round37-lindbergite-research/raw/crossref2020.json",
+        "url": "https://api.crossref.org/works/10.3390/jof6040270",
+        "resolved_url": "https://api.crossref.org/works/10.3390/jof6040270",
+        "retrieved_at": "2026-10-11T22:54:00.501673+00:00",
+        "status": 200,
+        "content_type": "application/json",
+        "bytes": 16452,
+        "sha256": "d813140a423760c477ea05cd51b35a212d3968c4ce148440eeb0a478044dcba1",
+        "signature": "b'{\"status\":\"ok\",\"message-type\":\"work'"
+      }
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020/page-001.png",
+      "bytes": 305988,
+      "sha256": "429b78d3abf82856564c8a79be324455f3e31d6e7b28b11c6b7869b4a4054023",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020/page-002.png",
+      "bytes": 334964,
+      "sha256": "62722256848189b6df13391ee2f825a705e677fd0d3bfdcc9044663f9abfdead",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020/page-003.png",
+      "bytes": 359310,
+      "sha256": "f4b3ee4f5b3caec29ec2fda4c6020544ee3cd906cf2579b439c08daa6cfaca8d",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020/page-004.png",
+      "bytes": 345581,
+      "sha256": "220ffeaef298e170c77e4c553256c5099f69139a8c9987faa0032b26187249fc",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020/page-005.png",
+      "bytes": 202946,
+      "sha256": "2d2dd3b4a94e745ea7440f2428e344bc6c5319123291a38d8cd963171805a9d4",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020/page-006.png",
+      "bytes": 224854,
+      "sha256": "3f8d973f32836a6f3a08d854b4ce5a0eba24e718a75dbe183eccf9aa5616668a",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020/page-007.png",
+      "bytes": 232511,
+      "sha256": "4b4b6056d795e7889d4b1ead8c85c58df38e9a8775314998124d00ca5d1744dd",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020/page-008.png",
+      "bytes": 406388,
+      "sha256": "613acfc44a203e7907e9103f2becc7bd6d70d105e1c4e467a4aaf9872bd5fd02",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020/page-009.png",
+      "bytes": 486695,
+      "sha256": "dd03a90626450a5c27036f4678c046d096dcccba3a47bee3d362d9efc9bc06f4",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020/page-010.png",
+      "bytes": 341793,
+      "sha256": "1f5dd19ecca47432bae0abaa404e96a9a3b1c144b5220ea7ab4a9f6c4429bfcd",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020/page-011.png",
+      "bytes": 357808,
+      "sha256": "09a21019d8221b254c34c04a11037d3d0d31aabbeccca5ac2b741a5438675b9d",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020/page-012.png",
+      "bytes": 131988,
+      "sha256": "577a881fd8be86d981aa288afa7488f2baabae748a5f8ca22f8ad5e09306e408",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media/jof-06-00270-g001.gif",
+      "bytes": 9488,
+      "sha256": "44698db477b70daa722260403cc1aff565394a11243007bf9de3f74733f6db3d",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media/jof-06-00270-g001.jpg",
+      "bytes": 125239,
+      "sha256": "2f3ebaf944924083d90401c36c90c3b0f88dadce8b99fca0a2fa73cf6d4d3314",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media/jof-06-00270-g002.gif",
+      "bytes": 3979,
+      "sha256": "40b3fc81c3dea338ed717f6a0b79440aac77fe29181264ac5c0d789d0cf86d9d",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media/jof-06-00270-g002.jpg",
+      "bytes": 41415,
+      "sha256": "68c835c7d2bf643d23f987fa36f3e01bbb86b7aaf138cf0c9827ac922d8cc7e0",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media/jof-06-00270-g003.gif",
+      "bytes": 2614,
+      "sha256": "2a6cd6ef9b12ce8506870d5ecefbe94e46f808bd87b5b04deaa99ced578f6897",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media/jof-06-00270-g003.jpg",
+      "bytes": 44279,
+      "sha256": "5f8329dc17ed615261351ade08d3b7b21b07bbe146b24ebe339fbfb3101fa7ea",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media/jof-06-00270-g004.gif",
+      "bytes": 4348,
+      "sha256": "813063fcd109fbceb995dcbb62b4464d35730b3c321eba4d652dcfbdcae5d903",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media/jof-06-00270-g004.jpg",
+      "bytes": 43722,
+      "sha256": "f5dc80c9be0d338a52b9d12f5328cbf4cd86bb0aa6956a04a3e6b15c5ff14254",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media/jof-06-00270-g005.gif",
+      "bytes": 4274,
+      "sha256": "062566724274cb489dab1015d1b22c342ec48e8ba60ceddb0af57bed330264d9",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media/jof-06-00270-g005.jpg",
+      "bytes": 43897,
+      "sha256": "d9a9e5237a18311128e878413cdcca3c5dce739f200c99100bcdb151508cdacc",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media/jof-06-00270-g006.gif",
+      "bytes": 8475,
+      "sha256": "a7858359bb898015d850dfcc3c9e13590d85ba18708deaf85bc92756e790982e",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media/jof-06-00270-g006.jpg",
+      "bytes": 97743,
+      "sha256": "3631bcdd93274ae338b4b89ae787a3e3565c31881ab70d1d8283abf14a2d0fdb",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media/jof-06-00270-g007.gif",
+      "bytes": 10589,
+      "sha256": "7413e045c0e47da48189e80b233ea501a133029243d5da7f8e5492382c361079",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media/jof-06-00270-g007.jpg",
+      "bytes": 88116,
+      "sha256": "3e582e9e7396681c47dd0b49326801753da2bfb55cc6f6dde8c4aa0b945aa3b1",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media/jof-06-00270-g008.gif",
+      "bytes": 7925,
+      "sha256": "261633d384775a6f0666b5b79af2ffe224ee9804bdb457fdca915b0418d8f903",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media/jof-06-00270-g008.jpg",
+      "bytes": 102894,
+      "sha256": "ca457e5babe2095c36cc7559e773553c15e63a733ed6e55bad89bf8fc22d8dd2",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media.zip",
+      "bytes": 612366,
+      "sha256": "517ce175591b045bba652c96fa9317fb5ec68bd3bfd83b5c3f8692e8bcb09558",
+      "acquisition": {
+        "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-media.zip",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7711977/supplementaryFiles",
+        "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7711977/supplementaryFiles",
+        "retrieved_at": "2026-10-11T22:54:00.500834+00:00",
+        "status": 200,
+        "content_type": "application/zip",
+        "bytes": 612366,
+        "sha256": "517ce175591b045bba652c96fa9317fb5ec68bd3bfd83b5c3f8692e8bcb09558",
+        "signature": "b'PK\\x03\\x04\\x14\\x00\\x08\\x08\\x08\\x00\\xc0\\xbeK]\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x15\\x00\\x00\\x00jof-0'"
+      }
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020-pdf.txt",
+      "bytes": 36643,
+      "sha256": "0f9e0fcfb69f216447f20acc9c5c7f2c5838c9b50ddab77cd3d7cb3aa925e035",
+      "role": "derived text, acquisition receipt or media inventory; filename specifies source"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020.pdf",
+      "bytes": 2820046,
+      "sha256": "c9bc5ba8f8bd642eb995e81abe2303aae8672ea106ba60528203cd08a149d041",
+      "acquisition": {
+        "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020.pdf",
+        "url": "https://mdpi-res.com/d_attachment/jof/jof-06-00270/article_deploy/jof-06-00270.pdf",
+        "resolved_url": "https://mdpi-res.com/d_attachment/jof/jof-06-00270/article_deploy/jof-06-00270.pdf",
+        "retrieved_at": "2026-10-11T22:54:00.499344+00:00",
+        "status": 200,
+        "content_type": "application/pdf",
+        "bytes": 2820046,
+        "sha256": "c9bc5ba8f8bd642eb995e81abe2303aae8672ea106ba60528203cd08a149d041",
+        "signature": "b'%PDF-1.5\\n%\\xd0\\xd4\\xc5\\xd8\\n85 0 obj\\n<<\\n/Length '"
+      }
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020.txt",
+      "bytes": 30008,
+      "sha256": "2a1eef8b9d12045527d63e856ec7b1ff3496a17c4895edf77dde698f7b011435",
+      "role": "derived text, acquisition receipt or media inventory; filename specifies source"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020.xml",
+      "bytes": 77570,
+      "sha256": "96020cfeb3620207d0516edcaea6f9dcb3b1aa23d81d4fa385b76aa2d45a5eee",
+      "acquisition": {
+        "path": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020.xml",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7711977/fullTextXML",
+        "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7711977/fullTextXML",
+        "retrieved_at": "2026-10-11T22:53:23.525992+00:00",
+        "status": 200,
+        "content_type": "application/xml",
+        "bytes": 77570,
+        "sha256": "96020cfeb3620207d0516edcaea6f9dcb3b1aa23d81d4fa385b76aa2d45a5eee",
+        "signature": "b'<?xml version=\"1.0\" encoding=\"UTF-8'"
+      }
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019/page-001.png",
+      "bytes": 139491,
+      "sha256": "144e7b806b665de99d12ebe5965083ffe809dd39a2eca85afeaf95acd23bc365",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019/page-002.png",
+      "bytes": 381976,
+      "sha256": "a6145b2381275136483d76fcf200c5f1cd88662a1b6850989d56cc01017a6bdb",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019/page-003.png",
+      "bytes": 424157,
+      "sha256": "1d67cd73614167f8292b548e316ad598ba8d9e840e14582a222c757d4e5bc205",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019/page-004.png",
+      "bytes": 697520,
+      "sha256": "c75ea8033479b58177f9bfb3f58c895221cdb13b2fe5f83eea15ccabdbd1cd1f",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019/page-005.png",
+      "bytes": 754941,
+      "sha256": "a7b5d186a3c6c2a7de7e32887c66e2a577c10b620e7a2e8fe22b88d641911bf2",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019/page-006.png",
+      "bytes": 197728,
+      "sha256": "c9c26bd990cc416a0be4bd18738d7321e4e2a60a2db9915ada73abb4bbda33d2",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019/page-007.png",
+      "bytes": 553756,
+      "sha256": "d51e30c93ca216859867316bd5e9283e4b0af3c0ab7d8e5f530d4fb5eceda4ca",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019/page-008.png",
+      "bytes": 1169476,
+      "sha256": "3e180735f432f9e58b18e2d9e21427f0e938a1b44f7b2d067dd053cf9b2d8b4b",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019/page-009.png",
+      "bytes": 355723,
+      "sha256": "5e6c3d623010c02de81433ba87df93904ea3fbad332fcde50c3063b4b2a3268c",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019/page-010.png",
+      "bytes": 402737,
+      "sha256": "2c125b5e3f8c05536887a3c3ff5a2d82d37d45626e44d9d06639ff423e4eeacf",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019/page-011.png",
+      "bytes": 402420,
+      "sha256": "f984e5505f2632b0e3c54f7cdf1641e6d78ba5523c8263d31365f97209d474f4",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019/page-012.png",
+      "bytes": 449602,
+      "sha256": "a1d1347e895cb6c66738b09e8d6175a0f8c7197a6b46438c05c33f498e17c31f",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019/page-013.png",
+      "bytes": 461564,
+      "sha256": "bad650dec10dabbd7e8de4c8819611d42ee14514df68dc58ce7c66d799b56a58",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media/EMI-21-1821-g001.gif",
+      "bytes": 8181,
+      "sha256": "e63613e6ea9d3fd42b9fac933b20734e81ba3fb2f4fd3bbf69f143ff7d1370b8",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media/EMI-21-1821-g001.jpg",
+      "bytes": 179683,
+      "sha256": "6297a72cc5e4c1a3f74a28c53e1ffce7cf959217b1e73f1fd689724756b73f2c",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media/EMI-21-1821-g002.gif",
+      "bytes": 9610,
+      "sha256": "966234ed7f88709bb1157a3e7f084871f626c236102629dd4591fb3bf6adbbfc",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media/EMI-21-1821-g002.jpg",
+      "bytes": 212324,
+      "sha256": "139f2fbc1e04323e28438bf4655aaedd668bcb50ae1d3daec76919642405bc3e",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media/EMI-21-1821-g003.gif",
+      "bytes": 3562,
+      "sha256": "99a65bf317a7bbc72260f6b7420ed4c7d8954fa2acd0f68ac03ae3563e934355",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media/EMI-21-1821-g003.jpg",
+      "bytes": 66976,
+      "sha256": "f6cd332f7a4e121a20386b86cb50c7faa2a95f29c3ff5301892c1f2f5909fc0a",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media/EMI-21-1821-g004.gif",
+      "bytes": 6088,
+      "sha256": "c6fe415a4954ea92aa6a6ac90e69322dac69769bbb619b985910d2f60456011a",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media/EMI-21-1821-g004.jpg",
+      "bytes": 105759,
+      "sha256": "72c31be5892241a68def93dfd57c5c8576051b11908664a000c43a9a569d63ea",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media/EMI-21-1821-g005.gif",
+      "bytes": 3635,
+      "sha256": "81fb52ecdaec36296553e18b45fac9386aeab5c9511ec344491eb2dbdeec4c66",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media/EMI-21-1821-g005.jpg",
+      "bytes": 40006,
+      "sha256": "e79b8ef05a9ecd9b9c30589ccaeb07f74095d9330558b64ce8ef1fa7fef865ae",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media/EMI-21-1821-g006.gif",
+      "bytes": 12115,
+      "sha256": "105a2d6534ccd703b724428cdd5a35a2df0aa85f606694cc2a55865b330231e8",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media/EMI-21-1821-g006.jpg",
+      "bytes": 49756,
+      "sha256": "c704c70e23621984d21c1641e82166ac38af101f8ab79eac4c46c9d0ce4edf2c",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media/EMI-21-1821-g007.gif",
+      "bytes": 7742,
+      "sha256": "8757c73616456bf6344d52a2d157fed32c0d952736d6d8dcc21de93c075b4978",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media/EMI-21-1821-g007.jpg",
+      "bytes": 95309,
+      "sha256": "980b5b51c3ebcf0ae5c7f442777745c752a19a702037ab44ca7ecd69f62e102a",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media/EMI-21-1821-g008.gif",
+      "bytes": 3206,
+      "sha256": "25a42fd29695288672fa4b645af906f32d007c75fda3796fa021769529975b52",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media/EMI-21-1821-g008.jpg",
+      "bytes": 28080,
+      "sha256": "141feb58df4e0ec1d484ee3200b2d1ca146a1b29417d57e327a785e778c508c6",
+      "role": "archive-extracted main-figure image or thumbnail",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media.zip"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media.zip",
+      "bytes": 822270,
+      "sha256": "d227a32cf1a495393bf9183c0c37b7460692c7a7d62cec8ed385d1e24378773f",
+      "acquisition": {
+        "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-media.zip",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6849720/supplementaryFiles",
+        "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6849720/supplementaryFiles",
+        "retrieved_at": "2026-10-11T22:54:00.500427+00:00",
+        "status": 200,
+        "content_type": "application/zip",
+        "bytes": 822270,
+        "sha256": "d227a32cf1a495393bf9183c0c37b7460692c7a7d62cec8ed385d1e24378773f",
+        "signature": "b'PK\\x03\\x04\\x14\\x00\\x08\\x08\\x08\\x00\\xc0\\xbeK]\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x14\\x00\\x00\\x00EMI-2'"
+      }
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019-pdf.txt",
+      "bytes": 51466,
+      "sha256": "d44f4d22e1cce8dc770bb65fe6dc2f4e42daf74670e87eaa98a948dc88ee9cbb",
+      "role": "derived text, acquisition receipt or media inventory; filename specifies source"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019.pdf",
+      "bytes": 2605192,
+      "sha256": "0a8d7051ce9acafdbe64730677f6a145522cbd2124af5f231d9c923f6f4f6424",
+      "acquisition": {
+        "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019.pdf",
+        "url": "https://discovery.dundee.ac.uk/ws/files/32735632/Final_Published_Version.pdf",
+        "resolved_url": "https://discovery.dundee.ac.uk/ws/files/32735632/Final_Published_Version.pdf",
+        "retrieved_at": "2026-10-11T22:53:23.524115+00:00",
+        "status": 200,
+        "content_type": "application/pdf",
+        "bytes": 2605192,
+        "sha256": "0a8d7051ce9acafdbe64730677f6a145522cbd2124af5f231d9c923f6f4f6424",
+        "signature": "b'%PDF-1.5\\n%\\xe2\\xe3\\xcf\\xd3\\n5 0 obj\\n<</A<</S/URI'"
+      }
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019.txt",
+      "bytes": 43003,
+      "sha256": "ae4c10f92b10974bc920db5b31a114461abcfc3cbeddadd839b0fb9f3f520620",
+      "role": "derived text, acquisition receipt or media inventory; filename specifies source"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019.xml",
+      "bytes": 114385,
+      "sha256": "581fec7c7d054b6c9886aad30ee07ef61fd5e3ffb8381ed236253c05464dfc33",
+      "acquisition": {
+        "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ferrier2019.xml",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6849720/fullTextXML",
+        "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6849720/fullTextXML",
+        "retrieved_at": "2026-10-11T22:53:23.525263+00:00",
+        "status": 200,
+        "content_type": "application/xml",
+        "bytes": 114385,
+        "sha256": "581fec7c7d054b6c9886aad30ee07ef61fd5e3ffb8381ed236253c05464dfc33",
+        "signature": "b'<?xml version=\"1.0\" encoding=\"UTF-8'"
+      }
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ima2026/page-001.png",
+      "bytes": 290856,
+      "sha256": "4d1e251347835dffaaebf67d0ec62d9dd0d5d0bcd2ecae6364f83470b57dd1cb",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ima2026.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ima2026/page-002.png",
+      "bytes": 98452,
+      "sha256": "1ab00cf8b694f4c701e9ebc337c81c6c483d22170ecd8131aa4d0504718a41ad",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ima2026.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ima2026/page-067.png",
+      "bytes": 328966,
+      "sha256": "554cc6e2c8ca4507f6d8c2ba82b1c4caf9dd250738ba91e96af5e2824a47335e",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ima2026.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ima2026/page-126.png",
+      "bytes": 344474,
+      "sha256": "72625dda79931517c3429b7cf3ddabf2c92bd290baf9820ec7aee9e088cbffc8",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/ima2026.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ima2026-pdf.txt",
+      "bytes": 813080,
+      "sha256": "d52e6f60c916f1b6e0093c546c4221cafc5b030b7facc2bb62f8ccd7513adcb3",
+      "role": "derived text, acquisition receipt or media inventory; filename specifies source"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ima2026.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "acquisition": {
+        "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ima2026.pdf",
+        "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+        "resolved_url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+        "retrieved_at": "2026-10-11T22:53:23.526828+00:00",
+        "status": 200,
+        "content_type": "application/pdf",
+        "bytes": 3129886,
+        "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+        "signature": "b'%PDF-1.7\\r%\\xe2\\xe3\\xcf\\xd3\\r\\n854 0 obj\\r<</Linear'"
+      }
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/lindbergite-handbook.pdf",
+      "bytes": 113868,
+      "sha256": "27f1d14550498638367b512616910c87039f06aaf7a5b2f41490678feea623f0",
+      "acquisition": {
+        "path": "/private/tmp/cmm-round37-lindbergite-research/raw/lindbergite-handbook.pdf",
+        "url": "https://www.handbookofmineralogy.org/pdfs/Lindbergite.pdf",
+        "resolved_url": "https://www.handbookofmineralogy.org/pdfs/Lindbergite.pdf",
+        "retrieved_at": "2026-10-11T22:55:40.370174+00:00",
+        "status": 200,
+        "content_type": "application/pdf",
+        "bytes": 113868,
+        "sha256": "27f1d14550498638367b512616910c87039f06aaf7a5b2f41490678feea623f0",
+        "signature": "b'%PDF-1.7\\r%\\xe2\\xe3\\xcf\\xd3\\r\\n51 0 obj\\r<</Lineari'"
+      }
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/lindbergite-handbook.png",
+      "bytes": 274223,
+      "sha256": "9bae55ce4a42eaeae3ea3f8870337640295e49a1003cb0fe081e9f456a6faea1",
+      "role": "derived page render inspected visually",
+      "derived_from": "/private/tmp/cmm-round37-lindbergite-research/raw/lindbergite-handbook.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/lindbergite-handbook.txt",
+      "bytes": 3009,
+      "sha256": "04be2308f6ff4d742a42b9283cf97e794578aeda04c3e6de08504370c2b5ae48",
+      "role": "derived text, acquisition receipt or media inventory; filename specifies source"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/media-inventory.json",
+      "bytes": 3575,
+      "sha256": "72bf7b511e09eb961e2133882f83d2927ff7be783ca872e656ba50ad0107dcba",
+      "role": "derived text, acquisition receipt or media inventory; filename specifies source"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ncbi5061.json",
+      "bytes": 1317,
+      "sha256": "6d2d9b2a4b031de6fd14225ddc52dec2a240dadb51d83f12a549e035575e9126",
+      "acquisition": {
+        "path": "/private/tmp/cmm-round37-lindbergite-research/raw/ncbi5061.json",
+        "url": "https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/5061/dataset_report",
+        "resolved_url": "https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/5061/dataset_report",
+        "retrieved_at": "2026-10-11T22:53:23.527267+00:00",
+        "status": 200,
+        "content_type": "application/json",
+        "bytes": 1317,
+        "sha256": "6d2d9b2a4b031de6fd14225ddc52dec2a240dadb51d83f12a549e035575e9126",
+        "signature": "b'{\"reports\":[{\"taxonomy\":{\"tax_id\":5'"
+      }
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/render-receipt.json",
+      "bytes": 8135,
+      "sha256": "fc7ff6cf9cf51e600a3e1ec166c85afd3b8287f1cf5506c7c059a79e2bd50d78",
+      "role": "derived text, acquisition receipt or media inventory; filename specifies source"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/synthesis2022.txt",
+      "bytes": 45707,
+      "sha256": "5dfc55380076d832936dd178d8784f18e2e609e0442e01f4c7b9a16155e33712",
+      "role": "derived text, acquisition receipt or media inventory; filename specifies source"
+    },
+    {
+      "path": "/private/tmp/cmm-round37-lindbergite-research/raw/synthesis2022.xml",
+      "bytes": 155440,
+      "sha256": "b1bb138e4ad8ac1cfa8f90139859111e08006bcba19ad6769f64686d3b3634f0",
+      "acquisition": {
+        "path": "/private/tmp/cmm-round37-lindbergite-research/raw/synthesis2022.xml",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9738142/fullTextXML",
+        "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9738142/fullTextXML",
+        "retrieved_at": "2026-10-11T22:55:40.370597+00:00",
+        "status": 200,
+        "content_type": "application/xml",
+        "bytes": 155440,
+        "sha256": "b1bb138e4ad8ac1cfa8f90139859111e08006bcba19ad6769f64686d3b3634f0",
+        "signature": "b'\\n<!DOCTYPE article\\n  PUBLIC \"-//NLM'"
+      }
+    }
+  ]
+}

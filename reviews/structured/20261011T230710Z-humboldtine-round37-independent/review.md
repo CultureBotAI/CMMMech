@@ -1,0 +1,682 @@
+# Independent scientific review of humboldtine fungal formation and comparator limits
+
+- Review: 20261011T230710Z-humboldtine-round37-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T23:02:43.550613Z
+- Finished UTC: 2026-10-11T23:07:10.038355Z
+- Reviewer: Codex /root/round27_eaf_slag (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The mineral identity and two bounded laboratory formation studies are supported. The record accurately distinguishes altered mixed-rock feeds, phase-specific versus microscopy-only assignments, unreported and negative comparator outcomes, medium iron, unequal protocols and proposed molecular causes. No actionable corrective finding was identified. Phase presence does not establish product purity, conversion yield, iron-source mass balance or industrial deployment.
+
+## Scope And Provenance
+
+Entire frozen humboldtine record, all claim-bearing source references and organisms, experimental conditions, numerical pH/time values, controls, nulls, field context and separate canonical/inline CREATE provenance.
+
+Selection: One newly authored round37 mineral record assigned to a reviewer distinct from its curator.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base dcfbedb78bfd682ad06f2ff4517241f490e4f401.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:humboldtine | data/records/humboldtine.yaml | maintained | Humboldtine |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named record validation | passed | True | cmmmech:humboldtine | Executed by this reviewer with UV_CACHE_DIR and UV_OFFLINE set; one record checked, zero failed. Log /private/tmp/cmm-round37-humboldtine-independent/named-validation.log SHA-256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e. |
+| Full final cohort checks | passed | True | cmmmech:humboldtine | Parent executed final frozen-cohort gate; reviewer read its complete terminal log and independently verified SHA-256 66cd8ce7b2befd361157ae7ca4451bc53e7af52ad8b471ef3e6c8de404f7ce76 at /private/tmp/cmm-round37-final-batch.log. Final cohort: 308 passed, 3 skipped in 169.92s; 203 records and 234 histories valid. Exact reviewed inputs remained unchanged. Structural validation does not prove scientific truth. |
+| Explicit nonempty corpus validation | passed | True | cmmmech:humboldtine | Parent executed final frozen-cohort gate; reviewer read its complete terminal log and independently verified SHA-256 fb8749bf338f8365b7257600e0f9027811928450edb84261927b6c183f100968 at /private/tmp/cmm-round37-final-nonempty.log. Final cohort: 308 passed, 3 skipped in 169.92s; 203 records and 234 histories valid. Exact reviewed inputs remained unchanged. Structural validation does not prove scientific truth. |
+| Trusted-base append-only history validation | passed | True | cmmmech:humboldtine | Parent executed final frozen-cohort gate; reviewer read its complete terminal log and independently verified SHA-256 32939b2f20f8cf7bff98cb0d67e9dd288f58f0b9e3cbe88ad81ace21c1b8ccdc at /private/tmp/cmm-round37-final-history.log. Final cohort: 308 passed, 3 skipped in 169.92s; 203 records and 234 histories valid. Exact reviewed inputs remained unchanged. Structural validation does not prove scientific truth. |
+
+## Scientific And Domain Assessments
+
+### Mineral versus feed and verified organism labels
+
+identity: supported. Targets: cmmmech:humboldtine.
+
+The exact mineral identity and source-linked species/strain labels are defensible without treating feed, element or species identifier as interchangeable.
+
+### Culture, mixed feed, conditions and control boundaries
+
+evidence: supported. Targets: cmmmech:humboldtine.
+
+Both mechanisms preserve the actual assays, uncertainty and control limits, including different media, volumes and durations.
+
+### Phase identity strength, pH and nulls
+
+quantity: supported. Targets: cmmmech:humboldtine.
+
+Every adopted phase, pH and temporal comparison matches the originals; weaker assignments and dashes remain explicit rather than becoming fabricated measurements.
+
+### Inference, counterevidence and deployment
+
+scope: supported. Targets: cmmmech:humboldtine.
+
+The narrower formation associations survive the represented control and field limits; broad comparative, redox and deployment claims are appropriately withheld.
+
+### Source identity, history and exact validated inputs
+
+provenance: supported. Targets: cmmmech:humboldtine.
+
+Metadata, authority scopes and separate CREATE provenance match. Required actual checks passed for unchanged exact record bytes.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/humboldtine.yaml; Entire frozen record and all source/evidence entries | supports | Exact material is the Fe(II) oxalate dihydrate mineral. Mixed iron-bearing experimental feeds and constituent iron are distinguished; no criticality or deployment claim is inherited. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Original page 97 Humboldtine row; introductory pages 1-2 | supports | Official formula Fe2+(C2O4)(H2O)2, status G, original-description year 1821. Definitions distinguish grandfathered species from modern IMA approvals. Row visually inspected; introduction read and its original page renders inspected earlier in this round. The curator reused the same official list bytes that this reviewer also freshly acquired for lindbergite; no false fresh download is attributed to the curator. |
+| primary2021_methods | https://doi.org/10.3390/cryst11121591; Complete original 11-page PDF, Sections 2.1-2.2 and 3.1; all five original figures visually inspected | supports | Ch 4/07 on autoclaved mixed siderite- and strongly altered pyrrhotite-bearing rocks, about 1 by 0.5 by 0.5 cm, 15 mL Czapek-Dox, initial pH 5.5, room temperature, triplicates, observations days 3/5/7/10/14/18. Medium contains FeSO4.7H2O 0.015 g/L; no iron-source mass balance. Controls without fungus are specified; no no-rock, killed-cell, cell-free or matched-pH comparison is described. |
+| primary2021_outcomes | https://doi.org/10.3390/cryst11121591; Figure 1a-d, Figures 2-4 and Section 3.2 | supports | Day-five siderite and day-seven altered-pyrrhotite diffraction support humboldtine at reported pH 3.5 plus or minus 0.5. Substrate reflections remain. Day-three pyrrhotite evidence is preliminary morphology/EDX, not an independently confirmed earlier PXRD phase. Figure 4 and text support the no-crystal uninoculated outcome without a labelled control sampling day. Later pH returns to 3.5 plus or minus 0.5, called initial in results despite methods initial 5.5; record preserves this. |
+| primary2021_context | https://doi.org/10.3390/cryst11121591; Sections 1 and 4, original Figure 5, conclusion and full references | supports | Earlier lichen Fe-oxalate assignments are disputed in the source and not adopted. The separate Kola/Karelia biofilm search reports no iron oxalates and goethite instead; this does not refute the laboratory assignment. Suggested redox, impurity and rate explanations lack independent quantitative perturbation or causal time courses. No isolated yield or deployed process appears. |
+| primary2023_methods | https://doi.org/10.3390/cryst13030432; Complete original 16-page PDF, Tables 1-3, Section 2 and all seven figures/five tables visually inspected | supports | Four accession-linked brown-rot fungal strains, heterogeneous Dalnegorsk and Pyrrhotite Gorge feeds, about 1 by 0.5 by 0.5 cm, 20 mL GPL, initial pH 5.5, room temperature, 30 days and triplicates. Ten-day agar cultures provide mycelial fragments. The agar recipe lists FeSO4.7H2O 0.005 g/L; separate liquid formula, inoculum density and substrate sterilization are not specified. Uninoculated controls are described but no separate iron-arm control outcomes are displayed. |
+| primary2023_matrix | https://doi.org/10.3390/cryst13030432; Original landscape Table 4, Figure 3f, Figures 6b-c and 7b; Section 3.2.2 | supports | S. himantioides: humboldtine by both methods on siderite pH 3 and pyrrhotite pH 2.5. C. puteana: siderite pH 5.5 microscopy/EDX only with PXRD dash; pyrrhotite pH 2 both methods plus calcium oxalates. A. xantha: siderite pH 2 humboldtine, but pyrrhotite pH 4 whewellite. S. lacrymans: dashes for both iron-feed arms including pH. Figure 7b also names whewellite on A. xantha/siderite, unlike the table. These distinctions match the record; no numeric zero or recovery fraction is invented. |
+| primary2023_scope | https://doi.org/10.3390/cryst13030432; Figures 1-2, Table 5, Sections 4-5 and references 35-40 | supports | Field figures concern calcium oxalates, not field humboldtine. Brown-rot versus A. niger discussion relies on prior studies, including 2021, rather than a same-medium matched iron-feed control arm. The record declines unsupported comparative rates, yields or safety/deployment claims. Same feed type/locality does not prove identical individual specimens across studies. |
+| taxonomy | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=5061,80602,80637,85982,1333629&amp;retmode=xml; All five top-level Taxon elements, names, ranks and OtherNames; current-day acquisition receipt | supports | All five species IDs and labels agree with the record. XML gives Amyloporia xantha and lists Antrodia xantha as synonym. Independently inspected live browser search rendering gives Amyloporia heading but Antrodia current-name field; the record expressly preserves this discrepancy. |
+| sequence_kf768341 | https://www.ncbi.nlm.nih.gov/nuccore/KF768341.1; Complete deposited record; definition, version and source qualifiers | supports | A. niger Ch 4/07, species 5061; marble isolation source. These ribosomal/ITS sequences are not genomes or strain-specific TaxIDs and do not independently authenticate culture stocks. |
+| sequence_ky352492 | https://www.ncbi.nlm.nih.gov/nuccore/KY352492.1; Complete deposited record; definition, version and source qualifiers | supports | S. himantioides LE-BIN 1368, species 80602. These ribosomal/ITS sequences are not genomes or strain-specific TaxIDs and do not independently authenticate culture stocks. |
+| sequence_ky433978 | https://www.ncbi.nlm.nih.gov/nuccore/KY433978.1; Complete deposited record; definition, version and source qualifiers | supports | C. puteana LE-BIN 1370, species 80637. These ribosomal/ITS sequences are not genomes or strain-specific TaxIDs and do not independently authenticate culture stocks. |
+| sequence_ky433983 | https://www.ncbi.nlm.nih.gov/nuccore/KY433983.1; Complete deposited record; definition, version and source qualifiers | supports | Amyloporia xantha LE-BIN 1029, species 1333629. These ribosomal/ITS sequences are not genomes or strain-specific TaxIDs and do not independently authenticate culture stocks. |
+| sequence_ky352493 | https://www.ncbi.nlm.nih.gov/nuccore/KY352493.1; Complete deposited record; definition, version and source qualifiers | supports | S. lacrymans LE-BIN 1192, species 85982. These ribosomal/ITS sequences are not genomes or strain-specific TaxIDs and do not independently authenticate culture stocks. |
+| metadata2021 | https://api.crossref.org/works/10.3390/cryst11121591; Full current-day official work metadata and original publisher header | supports | DOI, title, authors, year and article number match; relation is empty and update-to absent/null. Original PDF and XML identify CC BY 4.0. No supplementary-material node is declared. |
+| metadata2023 | https://api.crossref.org/works/10.3390/cryst13030432; Full current-day official work metadata and original publisher header | supports | DOI, title, authors, year and article number match; relation is empty and update-to absent/null. Original PDF and XML identify CC BY 4.0. No supplementary-material node is declared. |
+| notices | /private/tmp/cmm-round37-humboldtine-independent/web.json; Independent exact DOI correction/retraction searches, counterevidence query and current NCBI browser result | context_only | No affecting notice was identified in these returned results. Abiotic humboldtine/hematite-oxalate studies surfaced as further research; only their metadata/abstracts were seen, so no new measurements or causal refutation were admitted. Direct browser open returned internal error, but the current indexed official page and current-day authority XML were read. |
+| dedup | /private/tmp/cmm-round37-humboldtine-independent/dedup.json; Independent command/roots, full result file and unique matching-file inventory | supports | No other maintained humboldtine owner or accepted target experiment was identified in the declared text boundary. Prior hits include frontier/deferred leads, official IMA entries and bibliography citations, not duplicated accepted mechanisms. Current record/history/dossier and its sources are expected matches. |
+| history | history/records/humboldtine/2026-10-11T225911Z-codex-2e6da1.yaml; Whole canonical CREATE sidecar and separate inline event | supports | Canonical time 22:59:11Z and distinct inline 22:59:12Z, actor codex/GPT-6/codex and exact new target agree with actual author curation. Pending-review wording describes the authoring time, not current gate failure. Trusted-base append-only validation passed. |
+| gates | /private/tmp/cmm-round37-final-terminal.json; Terminal receipt and all three complete SHA-256-verified command logs; independently run named validation | supports | Final exact cohort passed 308 tests with 3 skipped in 169.92s, 203 records and 234 history sidecars. The reviewer verified all actual terminal receipts/log hashes, then recaptured unchanged target/history/schema inputs. Named validation independently passed 1/0. |
+
+## Limits And Additional Notes
+
+- PXRD supports source-assigned humboldtine occurrence, not quantitative phase fraction, purity or a closed iron/oxalate balance. No instrument-level reindexing was performed.
+- The 2021 early pyrrhotite day-three assignment is SEM/EDX, while diffraction confirmation is at day seven. The record retains the distinction and the pH wording conflict.
+- The 2023 Coniophora/siderite cell has only SEM/EDX support; Serpula lacrymans iron-feed dashes are not zero yields or universal biological incapacity.
+- Uninoculated controls are described in both studies, but only the 2021 paper displays the relevant no-crystal control outcome. Neither study supplies the matched chemical controls needed to isolate an exclusive biochemical pathway.
+- Mixed natural rocks, iron-containing medium and different protocols preclude attributing every product atom to a particular mineral or calculating comparative fungal recovery efficiencies.
+- Species taxonomy and deposited ITS sequences verify labels and provenance, not independent authentication of laboratory stocks. The Amyloporia/Antrodia presentation discrepancy remains explicit.
+- Searches include the declared hidden/ignored corpus and referenced text roots but are bounded; prior binary files were not universally decoded, and other surfaced primaries were not admitted from abstracts.
+- The reviewer did not edit the maintained scientific record, history or source dossier. A source limitation already represented accurately was not converted into a fabricated corrective issue.
+- The current observation attests working-tree bytes at the durable trusted base, not a claim that the new record has already been committed or published.
+- Both source XML files contain zero declared supplementary-material elements, consistent with complete inspected PDFs. This is not a guarantee that no additional unpublished data exist.
+- Other mineral owners may use distinct arms of the same papers. Multiple phases or source formats do not add independent experimental replication.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T230710Z-humboldtine-round37-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of humboldtine fungal formation and comparator
+  limits
+started_at: '2026-10-11T23:02:43.550613Z'
+finished_at: '2026-10-11T23:07:10.038355Z'
+reviewer:
+  identity: Codex /root/round27_eaf_slag
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The target record, history and source dossier were authored
+    by /root/round27_superalloy. This reviewer authored none of them, captured canonical
+    inputs before judgment and independently inspected the complete original 2021
+    and 2023 articles, all original figures and tables, authority records and source
+    conflicts. This reviewer authored the separate lindbergite record in the same
+    worktree. Curator-acquired original sources and parent-executed batch gates are
+    disclosed; the source dossier was routing rather than the sole evidence.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The mineral identity and two bounded laboratory formation studies are supported.
+  The record accurately distinguishes altered mixed-rock feeds, phase-specific versus
+  microscopy-only assignments, unreported and negative comparator outcomes, medium
+  iron, unequal protocols and proposed molecular causes. No actionable corrective
+  finding was identified. Phase presence does not establish product purity, conversion
+  yield, iron-source mass balance or industrial deployment.
+source:
+  git_revision: dcfbedb78bfd682ad06f2ff4517241f490e4f401
+  state: working_tree
+  inputs:
+  - path: data/records/humboldtine.yaml
+    sha256: 537b5a65c0bc55bd9d59da264df9d22a2651cb759fc68331ec69bb2e339e86a7
+    role: target
+  - path: history/records/humboldtine/2026-10-11T225911Z-codex-2e6da1.yaml
+    sha256: 44474d03e0728e4b4a73eb39a2ee6106735b17564ea714e67b077b8b778a334d
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire frozen humboldtine record, all claim-bearing source references
+    and organisms, experimental conditions, numerical pH/time values, controls, nulls,
+    field context and separate canonical/inline CREATE provenance.
+  selection: One newly authored round37 mineral record assigned to a reviewer distinct
+    from its curator.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:humboldtine
+  exclusions:
+  - target: Other mineral products in the same 2023 experiment; uncurated abiotic
+      and field studies
+    reason: Other phases were inspected to prevent scope errors but not independently
+      curated or approved here. No exhaustive literature synthesis, instrument-data
+      reanalysis or assessment of sibling lindbergite/falottaite records is claimed.
+targets:
+- target_id: cmmmech:humboldtine
+  path: data/records/humboldtine.yaml
+  label: Humboldtine
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/humboldtine.yaml
+    role: maintained scientific record
+checks:
+- check_id: named
+  name: Independent named record validation
+  command: uv run --locked cmmmech validate data/records/humboldtine.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Executed by this reviewer with UV_CACHE_DIR and UV_OFFLINE set; one record
+    checked, zero failed. Log /private/tmp/cmm-round37-humboldtine-independent/named-validation.log
+    SHA-256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e.
+  target_ids:
+  - cmmmech:humboldtine
+- check_id: batch
+  name: Full final cohort checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed final frozen-cohort gate; reviewer read its complete terminal
+    log and independently verified SHA-256 66cd8ce7b2befd361157ae7ca4451bc53e7af52ad8b471ef3e6c8de404f7ce76
+    at /private/tmp/cmm-round37-final-batch.log. Final cohort: 308 passed, 3 skipped
+    in 169.92s; 203 records and 234 histories valid. Exact reviewed inputs remained
+    unchanged. Structural validation does not prove scientific truth.'
+  target_ids:
+  - cmmmech:humboldtine
+- check_id: nonempty
+  name: Explicit nonempty corpus validation
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed final frozen-cohort gate; reviewer read its complete terminal
+    log and independently verified SHA-256 fb8749bf338f8365b7257600e0f9027811928450edb84261927b6c183f100968
+    at /private/tmp/cmm-round37-final-nonempty.log. Final cohort: 308 passed, 3 skipped
+    in 169.92s; 203 records and 234 histories valid. Exact reviewed inputs remained
+    unchanged. Structural validation does not prove scientific truth.'
+  target_ids:
+  - cmmmech:humboldtine
+- check_id: history
+  name: Trusted-base append-only history validation
+  command: uv run --locked cmmmech validate-history --base dcfbedb78bfd682ad06f2ff4517241f490e4f401
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed final frozen-cohort gate; reviewer read its complete terminal
+    log and independently verified SHA-256 32939b2f20f8cf7bff98cb0d67e9dd288f58f0b9e3cbe88ad81ace21c1b8ccdc
+    at /private/tmp/cmm-round37-final-history.log. Final cohort: 308 passed, 3 skipped
+    in 169.92s; 203 records and 234 histories valid. Exact reviewed inputs remained
+    unchanged. Structural validation does not prove scientific truth.'
+  target_ids:
+  - cmmmech:humboldtine
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/humboldtine.yaml
+  locator: Entire frozen record and all source/evidence entries
+  accessed_at: '2026-10-11T23:07:10.038355Z'
+  support: supports
+  summary: Exact material is the Fe(II) oxalate dihydrate mineral. Mixed iron-bearing
+    experimental feeds and constituent iron are distinguished; no criticality or deployment
+    claim is inherited.
+  snapshot_sha256: 537b5a65c0bc55bd9d59da264df9d22a2651cb759fc68331ec69bb2e339e86a7
+- evidence_id: ima
+  kind: primary_source
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Original page 97 Humboldtine row; introductory pages 1-2
+  accessed_at: '2026-10-11T23:07:10.038355Z'
+  support: supports
+  summary: Official formula Fe2+(C2O4)(H2O)2, status G, original-description year
+    1821. Definitions distinguish grandfathered species from modern IMA approvals.
+    Row visually inspected; introduction read and its original page renders inspected
+    earlier in this round. The curator reused the same official list bytes that this
+    reviewer also freshly acquired for lindbergite; no false fresh download is attributed
+    to the curator.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: primary2021_methods
+  kind: primary_source
+  reference: https://doi.org/10.3390/cryst11121591
+  locator: Complete original 11-page PDF, Sections 2.1-2.2 and 3.1; all five original
+    figures visually inspected
+  accessed_at: '2026-10-11T23:07:10.038355Z'
+  support: supports
+  summary: Ch 4/07 on autoclaved mixed siderite- and strongly altered pyrrhotite-bearing
+    rocks, about 1 by 0.5 by 0.5 cm, 15 mL Czapek-Dox, initial pH 5.5, room temperature,
+    triplicates, observations days 3/5/7/10/14/18. Medium contains FeSO4.7H2O 0.015
+    g/L; no iron-source mass balance. Controls without fungus are specified; no no-rock,
+    killed-cell, cell-free or matched-pH comparison is described.
+  snapshot_sha256: 725d13f5c24bf8f17036b33a51364c5b5ee5907a1e57867167a91800f6cfac04
+- evidence_id: primary2021_outcomes
+  kind: primary_source
+  reference: https://doi.org/10.3390/cryst11121591
+  locator: Figure 1a-d, Figures 2-4 and Section 3.2
+  accessed_at: '2026-10-11T23:07:10.038355Z'
+  support: supports
+  summary: Day-five siderite and day-seven altered-pyrrhotite diffraction support
+    humboldtine at reported pH 3.5 plus or minus 0.5. Substrate reflections remain.
+    Day-three pyrrhotite evidence is preliminary morphology/EDX, not an independently
+    confirmed earlier PXRD phase. Figure 4 and text support the no-crystal uninoculated
+    outcome without a labelled control sampling day. Later pH returns to 3.5 plus
+    or minus 0.5, called initial in results despite methods initial 5.5; record preserves
+    this.
+  snapshot_sha256: 725d13f5c24bf8f17036b33a51364c5b5ee5907a1e57867167a91800f6cfac04
+- evidence_id: primary2021_context
+  kind: primary_source
+  reference: https://doi.org/10.3390/cryst11121591
+  locator: Sections 1 and 4, original Figure 5, conclusion and full references
+  accessed_at: '2026-10-11T23:07:10.038355Z'
+  support: supports
+  summary: Earlier lichen Fe-oxalate assignments are disputed in the source and not
+    adopted. The separate Kola/Karelia biofilm search reports no iron oxalates and
+    goethite instead; this does not refute the laboratory assignment. Suggested redox,
+    impurity and rate explanations lack independent quantitative perturbation or causal
+    time courses. No isolated yield or deployed process appears.
+  snapshot_sha256: 725d13f5c24bf8f17036b33a51364c5b5ee5907a1e57867167a91800f6cfac04
+- evidence_id: primary2023_methods
+  kind: primary_source
+  reference: https://doi.org/10.3390/cryst13030432
+  locator: Complete original 16-page PDF, Tables 1-3, Section 2 and all seven figures/five
+    tables visually inspected
+  accessed_at: '2026-10-11T23:07:10.038355Z'
+  support: supports
+  summary: Four accession-linked brown-rot fungal strains, heterogeneous Dalnegorsk
+    and Pyrrhotite Gorge feeds, about 1 by 0.5 by 0.5 cm, 20 mL GPL, initial pH 5.5,
+    room temperature, 30 days and triplicates. Ten-day agar cultures provide mycelial
+    fragments. The agar recipe lists FeSO4.7H2O 0.005 g/L; separate liquid formula,
+    inoculum density and substrate sterilization are not specified. Uninoculated controls
+    are described but no separate iron-arm control outcomes are displayed.
+  snapshot_sha256: 8ec8ad39e4a927059ba0f31ead1fc4e0f7b0ef14dfb995758a3f067e3c0a48da
+- evidence_id: primary2023_matrix
+  kind: primary_source
+  reference: https://doi.org/10.3390/cryst13030432
+  locator: Original landscape Table 4, Figure 3f, Figures 6b-c and 7b; Section 3.2.2
+  accessed_at: '2026-10-11T23:07:10.038355Z'
+  support: supports
+  summary: 'S. himantioides: humboldtine by both methods on siderite pH 3 and pyrrhotite
+    pH 2.5. C. puteana: siderite pH 5.5 microscopy/EDX only with PXRD dash; pyrrhotite
+    pH 2 both methods plus calcium oxalates. A. xantha: siderite pH 2 humboldtine,
+    but pyrrhotite pH 4 whewellite. S. lacrymans: dashes for both iron-feed arms including
+    pH. Figure 7b also names whewellite on A. xantha/siderite, unlike the table. These
+    distinctions match the record; no numeric zero or recovery fraction is invented.'
+  snapshot_sha256: 8ec8ad39e4a927059ba0f31ead1fc4e0f7b0ef14dfb995758a3f067e3c0a48da
+- evidence_id: primary2023_scope
+  kind: primary_source
+  reference: https://doi.org/10.3390/cryst13030432
+  locator: Figures 1-2, Table 5, Sections 4-5 and references 35-40
+  accessed_at: '2026-10-11T23:07:10.038355Z'
+  support: supports
+  summary: Field figures concern calcium oxalates, not field humboldtine. Brown-rot
+    versus A. niger discussion relies on prior studies, including 2021, rather than
+    a same-medium matched iron-feed control arm. The record declines unsupported comparative
+    rates, yields or safety/deployment claims. Same feed type/locality does not prove
+    identical individual specimens across studies.
+  snapshot_sha256: 8ec8ad39e4a927059ba0f31ead1fc4e0f7b0ef14dfb995758a3f067e3c0a48da
+- evidence_id: taxonomy
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5061,80602,80637,85982,1333629&retmode=xml
+  locator: All five top-level Taxon elements, names, ranks and OtherNames; current-day
+    acquisition receipt
+  accessed_at: '2026-10-11T23:07:10.038355Z'
+  support: supports
+  summary: All five species IDs and labels agree with the record. XML gives Amyloporia
+    xantha and lists Antrodia xantha as synonym. Independently inspected live browser
+    search rendering gives Amyloporia heading but Antrodia current-name field; the
+    record expressly preserves this discrepancy.
+  snapshot_sha256: bef75cdf75513da04d7c60e400e8bc36ed9662ad0b199dbcec393c9167c0c37f
+- evidence_id: sequence_kf768341
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/KF768341.1
+  locator: Complete deposited record; definition, version and source qualifiers
+  accessed_at: '2026-10-11T23:07:10.038355Z'
+  support: supports
+  summary: A. niger Ch 4/07, species 5061; marble isolation source. These ribosomal/ITS
+    sequences are not genomes or strain-specific TaxIDs and do not independently authenticate
+    culture stocks.
+  snapshot_sha256: 925e0dcf7e8571abe9668ff2d22775b2d4b3d80e7ee04bf303b86ab2d404f757
+- evidence_id: sequence_ky352492
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/KY352492.1
+  locator: Complete deposited record; definition, version and source qualifiers
+  accessed_at: '2026-10-11T23:07:10.038355Z'
+  support: supports
+  summary: S. himantioides LE-BIN 1368, species 80602. These ribosomal/ITS sequences
+    are not genomes or strain-specific TaxIDs and do not independently authenticate
+    culture stocks.
+  snapshot_sha256: 7b1ce8b7656fa1a1a01045f8c64788f0db00e4b2cbe808894fe1d7925131bd71
+- evidence_id: sequence_ky433978
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/KY433978.1
+  locator: Complete deposited record; definition, version and source qualifiers
+  accessed_at: '2026-10-11T23:07:10.038355Z'
+  support: supports
+  summary: C. puteana LE-BIN 1370, species 80637. These ribosomal/ITS sequences are
+    not genomes or strain-specific TaxIDs and do not independently authenticate culture
+    stocks.
+  snapshot_sha256: 9ebc247dcb16feb201add224df5d024b902008c04af0a4d9e485e0b604d3526f
+- evidence_id: sequence_ky433983
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/KY433983.1
+  locator: Complete deposited record; definition, version and source qualifiers
+  accessed_at: '2026-10-11T23:07:10.038355Z'
+  support: supports
+  summary: Amyloporia xantha LE-BIN 1029, species 1333629. These ribosomal/ITS sequences
+    are not genomes or strain-specific TaxIDs and do not independently authenticate
+    culture stocks.
+  snapshot_sha256: 9e8471187035e6dfe971b378f1820b24a1eac43dfc77f32e29e877567a2f8c9d
+- evidence_id: sequence_ky352493
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/KY352493.1
+  locator: Complete deposited record; definition, version and source qualifiers
+  accessed_at: '2026-10-11T23:07:10.038355Z'
+  support: supports
+  summary: S. lacrymans LE-BIN 1192, species 85982. These ribosomal/ITS sequences
+    are not genomes or strain-specific TaxIDs and do not independently authenticate
+    culture stocks.
+  snapshot_sha256: 491b7ce784ba6b4df372d8d2129a9179b10ffca69d2e3e53c2d11450d7dfba8e
+- evidence_id: metadata2021
+  kind: database
+  reference: https://api.crossref.org/works/10.3390/cryst11121591
+  locator: Full current-day official work metadata and original publisher header
+  accessed_at: '2026-10-11T23:07:10.038355Z'
+  support: supports
+  summary: DOI, title, authors, year and article number match; relation is empty and
+    update-to absent/null. Original PDF and XML identify CC BY 4.0. No supplementary-material
+    node is declared.
+  snapshot_sha256: fc700cb1b741acd0cbb7ec25b3ad55ee4801496f8383f03ab9b2ad0e5064b275
+- evidence_id: metadata2023
+  kind: database
+  reference: https://api.crossref.org/works/10.3390/cryst13030432
+  locator: Full current-day official work metadata and original publisher header
+  accessed_at: '2026-10-11T23:07:10.038355Z'
+  support: supports
+  summary: DOI, title, authors, year and article number match; relation is empty and
+    update-to absent/null. Original PDF and XML identify CC BY 4.0. No supplementary-material
+    node is declared.
+  snapshot_sha256: 0023f67098a318e67825ea1d145184a297cf434c84f1fd1d03bc5de2cccd94fb
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round37-humboldtine-independent/web.json
+  locator: Independent exact DOI correction/retraction searches, counterevidence query
+    and current NCBI browser result
+  accessed_at: '2026-10-11T23:07:10.038355Z'
+  support: context_only
+  summary: No affecting notice was identified in these returned results. Abiotic humboldtine/hematite-oxalate
+    studies surfaced as further research; only their metadata/abstracts were seen,
+    so no new measurements or causal refutation were admitted. Direct browser open
+    returned internal error, but the current indexed official page and current-day
+    authority XML were read.
+  search_scope: First returned results on 2026-10-11 for exact DOI 10.3390/cryst11121591
+    and 10.3390/cryst13030432 with correction retraction erratum; humboldtine fungal
+    biomineralization abiotic oxalate control; site:ncbi.nlm.nih.gov 1333629 Amyloporia.
+    No exhaustive notice registry or complete literature search claimed.
+  snapshot_sha256: a108d87f347c4c8a28abbea5e39e73714102f5c21042e11f3035894193929dd9
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round37-humboldtine-independent/dedup.json
+  locator: Independent command/roots, full result file and unique matching-file inventory
+  accessed_at: '2026-10-11T23:07:10.038355Z'
+  support: supports
+  summary: No other maintained humboldtine owner or accepted target experiment was
+    identified in the declared text boundary. Prior hits include frontier/deferred
+    leads, official IMA entries and bibliography citations, not duplicated accepted
+    mechanisms. Current record/history/dossier and its sources are expected matches.
+  search_scope: rg --no-ignore --hidden --follow over current and original checkout
+    data/research/reviews/history, 111 existing referenced raw roots and the current
+    humboldtine raw root; 313 matching lines, no stderr. Binary content not universally
+    decoded. Selected complete originals were separately inspected; no machine-wide
+    absence claim.
+  snapshot_sha256: c862371e6749db71fde294d435a5f9bc9040a687b31d0531e4f070f29ee52496
+- evidence_id: history
+  kind: record_content
+  reference: history/records/humboldtine/2026-10-11T225911Z-codex-2e6da1.yaml
+  locator: Whole canonical CREATE sidecar and separate inline event
+  accessed_at: '2026-10-11T23:07:10.038355Z'
+  support: supports
+  summary: Canonical time 22:59:11Z and distinct inline 22:59:12Z, actor codex/GPT-6/codex
+    and exact new target agree with actual author curation. Pending-review wording
+    describes the authoring time, not current gate failure. Trusted-base append-only
+    validation passed.
+  snapshot_sha256: 44474d03e0728e4b4a73eb39a2ee6106735b17564ea714e67b077b8b778a334d
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round37-final-terminal.json
+  locator: Terminal receipt and all three complete SHA-256-verified command logs;
+    independently run named validation
+  accessed_at: '2026-10-11T23:07:10.038355Z'
+  support: supports
+  summary: Final exact cohort passed 308 tests with 3 skipped in 169.92s, 203 records
+    and 234 history sidecars. The reviewer verified all actual terminal receipts/log
+    hashes, then recaptured unchanged target/history/schema inputs. Named validation
+    independently passed 1/0.
+  snapshot_sha256: 823cb34ae09a21ab5e4334ae3c279d1f7f820568504908075c8213b0b8cd49e9
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral versus feed and verified organism labels
+  outcome: supported
+  summary: The exact mineral identity and source-linked species/strain labels are
+    defensible without treating feed, element or species identifier as interchangeable.
+  target_ids:
+  - cmmmech:humboldtine
+  evidence_ids:
+  - ima
+  - record
+  - taxonomy
+  - dedup
+  dimensions:
+  - name: material
+    value: Humboldtine; mineral; Fe(II) oxalate dihydrate
+    definition: IMA grandfathered species, original-description year 1821; no criticality
+      inherited.
+    evidence_ids:
+    - ima
+    - record
+  - name: organisms
+    value: A. niger and four brown-rot species with retained strain accessions
+    definition: Species IDs and sequence labels do not independently authenticate
+      stocks; S. lacrymans is a negative comparator.
+    evidence_ids:
+    - taxonomy
+    - primary2023_matrix
+- assessment_id: methods
+  area: evidence
+  topic: Culture, mixed feed, conditions and control boundaries
+  outcome: supported
+  summary: Both mechanisms preserve the actual assays, uncertainty and control limits,
+    including different media, volumes and durations.
+  target_ids:
+  - cmmmech:humboldtine
+  evidence_ids:
+  - primary2021_methods
+  - primary2023_methods
+  - record
+  dimensions:
+  - name: biomass
+    value: Living fungal cultures
+    definition: No cell-free or purified-enzyme assay claimed.
+    evidence_ids:
+    - primary2021_methods
+    - primary2023_methods
+  - name: substrates
+    value: Heterogeneous siderite and largely altered pyrrhotite rocks
+    definition: Not pure mineral reagents; medium iron contribution is not excluded.
+    evidence_ids:
+    - primary2021_methods
+    - primary2023_methods
+  - name: controls
+    value: Uninoculated specified in both studies; relevant no-crystal outcome displayed
+      in 2021
+    definition: No matched-pH/killed-cell/cell-free causal separation or complete
+      iron balance.
+    evidence_ids:
+    - primary2021_outcomes
+    - primary2023_methods
+- assessment_id: phase
+  area: quantity
+  topic: Phase identity strength, pH and nulls
+  outcome: supported
+  summary: Every adopted phase, pH and temporal comparison matches the originals;
+    weaker assignments and dashes remain explicit rather than becoming fabricated
+    measurements.
+  target_ids:
+  - cmmmech:humboldtine
+  evidence_ids:
+  - primary2021_outcomes
+  - primary2023_matrix
+  - record
+  dimensions:
+  - name: 2021_onset
+    value: 'PXRD: siderite day 5, altered pyrrhotite day 7'
+    definition: Day-three pyrrhotite microscopy is not a diffraction-confirmed earlier
+      onset.
+    evidence_ids:
+    - primary2021_outcomes
+  - name: 2023_caveats
+    value: Coniophora/siderite microscopy only; A. xantha/pyrrhotite whewellite; S.
+      lacrymans iron arms dash
+    definition: No phase-specific recovery percentage or permanent species incapacity
+      inferred.
+    evidence_ids:
+    - primary2023_matrix
+  - name: product
+    value: Source-assigned mixed crystalline product
+    definition: Substrate peaks and co-products remain; no quantitative purity, mass
+      yield or complete conversion.
+    evidence_ids:
+    - primary2021_outcomes
+    - primary2023_matrix
+- assessment_id: scope
+  area: scope
+  topic: Inference, counterevidence and deployment
+  outcome: supported
+  summary: The narrower formation associations survive the represented control and
+    field limits; broad comparative, redox and deployment claims are appropriately
+    withheld.
+  target_ids:
+  - cmmmech:humboldtine
+  evidence_ids:
+  - primary2021_context
+  - primary2023_scope
+  - notices
+  - record
+  dimensions:
+  - name: mechanistic_resolution
+    value: Organic-acid dissolution/precipitation proposed
+    definition: No isolated enzyme, direct iron-redox time course or quantified oxalate
+      pathway.
+    evidence_ids:
+    - primary2021_context
+    - primary2023_scope
+  - name: scale
+    value: Laboratory assays; separate bounded field context
+    definition: No industrial operation or recovered-product efficiency.
+    evidence_ids:
+    - record
+    - primary2021_context
+    - primary2023_scope
+- assessment_id: provenance
+  area: provenance
+  topic: Source identity, history and exact validated inputs
+  outcome: supported
+  summary: Metadata, authority scopes and separate CREATE provenance match. Required
+    actual checks passed for unchanged exact record bytes.
+  target_ids:
+  - cmmmech:humboldtine
+  evidence_ids:
+  - metadata2021
+  - metadata2023
+  - history
+  - gates
+  - record
+  dimensions:
+  - name: state
+    value: Working tree at dcfbedb78bfd682ad06f2ff4517241f490e4f401
+    definition: Canonical inspect before judgment, recaptured after actual final gates;
+      no publication attestation.
+    evidence_ids:
+    - record
+    - history
+    - gates
+  - name: notice_coverage
+    value: Bounded independent searches plus official metadata
+    definition: No affecting notice found inside stated coverage; not universal clearance.
+    evidence_ids:
+    - notices
+    - metadata2021
+    - metadata2023
+findings: []
+actions: []
+limitations:
+- PXRD supports source-assigned humboldtine occurrence, not quantitative phase fraction,
+  purity or a closed iron/oxalate balance. No instrument-level reindexing was performed.
+- The 2021 early pyrrhotite day-three assignment is SEM/EDX, while diffraction confirmation
+  is at day seven. The record retains the distinction and the pH wording conflict.
+- The 2023 Coniophora/siderite cell has only SEM/EDX support; Serpula lacrymans iron-feed
+  dashes are not zero yields or universal biological incapacity.
+- Uninoculated controls are described in both studies, but only the 2021 paper displays
+  the relevant no-crystal control outcome. Neither study supplies the matched chemical
+  controls needed to isolate an exclusive biochemical pathway.
+- Mixed natural rocks, iron-containing medium and different protocols preclude attributing
+  every product atom to a particular mineral or calculating comparative fungal recovery
+  efficiencies.
+- Species taxonomy and deposited ITS sequences verify labels and provenance, not independent
+  authentication of laboratory stocks. The Amyloporia/Antrodia presentation discrepancy
+  remains explicit.
+- Searches include the declared hidden/ignored corpus and referenced text roots but
+  are bounded; prior binary files were not universally decoded, and other surfaced
+  primaries were not admitted from abstracts.
+notes:
+- The reviewer did not edit the maintained scientific record, history or source dossier.
+  A source limitation already represented accurately was not converted into a fabricated
+  corrective issue.
+- The current observation attests working-tree bytes at the durable trusted base,
+  not a claim that the new record has already been committed or published.
+- Both source XML files contain zero declared supplementary-material elements, consistent
+  with complete inspected PDFs. This is not a guarantee that no additional unpublished
+  data exist.
+- Other mineral owners may use distinct arms of the same papers. Multiple phases or
+  source formats do not add independent experimental replication.
+links:
+- research/sources/round37-humboldtine/20261011T230102Z-source-investigation.md
+- https://doi.org/10.3390/cryst11121591
+- https://doi.org/10.3390/cryst13030432
+tags:
+- round37
+- humboldtine
+- independent
+- scientific
+```

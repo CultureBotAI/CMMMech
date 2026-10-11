@@ -1,0 +1,331 @@
+schema_version: 1.0.0
+review_id: 20261011T230525Z-lindbergite-round37-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent adversarial review of source-assigned lindbergite formation
+started_at: '2026-10-11T23:00:18.527040Z'
+finished_at: '2026-10-11T23:05:25.654462Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Authored by /root/round27_eaf_slag; root did not author or edit
+    lindbergite. Root supplied advisory primary-source discrepancy observations before
+    the frozen review capture. Shared acquired originals were independently read and
+    their figures/tables inspected. Root authored sibling falottaite using the same
+    Farkas study, disclosed here; Ferrier is the accepted lindbergite experiment.
+    Native inspect preceded final target assessment.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The narrow laboratory culture-associated phase claim is supported, with crystallographic,
+  protocol, control and recovery limits preserved. No corrective record defect identified.
+source:
+  git_revision: dcfbedb78bfd682ad06f2ff4517241f490e4f401
+  state: working_tree
+  inputs:
+  - path: data/records/lindbergite.yaml
+    sha256: 55f488f8f6fd8da4a7f7c63183b93d23540c6e7d19ec20424950f6afa87ac2ba
+    role: target
+  - path: history/records/lindbergite/2026-10-11T225957Z-codex-f222f6.yaml
+    sha256: c76f5fc967279b20ae35314f2c2f535a1f29ec459f93df64a55252f1bfd5cb0b
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: One new lindbergite record, all fields, canonical CREATE history and
+    claim-specific primary evidence.
+  selection: Independent review of another agent’s round37 record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:lindbergite
+  exclusions:
+  - target: Independent re-indexing of original diffraction data or new phase experiments
+    reason: Raw diffraction/refinement and culture material unavailable; record explicitly
+      retains source-assigned phase identity.
+targets:
+- target_id: cmmmech:lindbergite
+  path: data/records/lindbergite.yaml
+  label: Lindbergite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lindbergite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/lindbergite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Checked 1 record(s); 0 failed.
+  target_ids:
+  - cmmmech:lindbergite
+- check_id: batch
+  name: Final batch batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'uv run --locked --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 169.92s (0:02:49)
+
+    Checked 203 record(s); 0 failed.
+
+    Checked 234 history record(s); 0 error(s).; log SHA256 66cd8ce7b2befd361157ae7ca4451bc53e7af52ad8b471ef3e6c8de404f7ce76'
+  target_ids:
+  - cmmmech:lindbergite
+- check_id: nonempty
+  name: Final batch nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Checked 203 record(s); 0 failed.; log SHA256 fb8749bf338f8365b7257600e0f9027811928450edb84261927b6c183f100968
+  target_ids:
+  - cmmmech:lindbergite
+- check_id: history
+  name: Final batch history
+  command: uv run --locked cmmmech validate-history --base dcfbedb78bfd682ad06f2ff4517241f490e4f401
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Checked 234 history record(s); 0 error(s).; log SHA256 32939b2f20f8cf7bff98cb0d67e9dd288f58f0b9e3cbe88ad81ace21c1b8ccdc
+  target_ids:
+  - cmmmech:lindbergite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/lindbergite.yaml
+  locator: All frozen fields
+  accessed_at: '2026-10-11T23:05:25.654462Z'
+  support: supports
+  summary: Reviewed exact working bytes following native capture.
+  snapshot_sha256: 55f488f8f6fd8da4a7f7c63183b93d23540c6e7d19ec20424950f6afa87ac2ba
+- evidence_id: ferrier
+  kind: primary_source
+  reference: https://doi.org/10.1111/1462-2920.14591
+  locator: Complete JATS; original article Figures 1–8, Table 1, Experimental procedures
+    and discussion
+  accessed_at: '2026-10-11T23:05:25.654462Z'
+  support: supports
+  summary: Independently read full scientific text and original rendered figures/table
+    in the Dundee publisher-version PDF. Powder solid/liquid arms support source-assigned
+    lindbergite in mixed dried products. Distinct fragment and mutant arms do not
+    establish this phase or an exclusive pathway.
+  snapshot_sha256: 0a8d7051ce9acafdbe64730677f6a145522cbd2124af5f231d9c923f6f4f6424
+- evidence_id: farkas
+  kind: primary_source
+  reference: https://doi.org/10.3390/jof6040270
+  locator: Complete JATS; original Figures 1–8, Tables 1–2, especially Table 2 crystal
+    data
+  accessed_at: '2026-10-11T23:05:25.654462Z'
+  support: supports
+  summary: Independent full scientific read and visual inspection confirms the related
+    synthetic-hausmannite experiment assigns an orthorhombic dihydrate. It cannot
+    independently authenticate monoclinic lindbergite; it is correctly context only
+    here.
+  snapshot_sha256: c9bc5ba8f8bd642eb995e81abe2303aae8672ea106ba60528203cd08a149d041
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Original page 126 Lindbergite row and page 1 definitions
+  accessed_at: '2026-10-11T23:05:25.654462Z'
+  support: supports
+  summary: 'Original authority row/definitions visually inspected: approved mineral
+    Mn(C2O4)(H2O)2, IMA 2003-029. No constituent criticality is transferred.'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/Lindbergite.pdf
+  locator: Entire one-page mineral entry, crystal data and formula
+  accessed_at: '2026-10-11T23:05:25.654462Z'
+  support: supports
+  summary: 'Root fetched current authority through browser and independently read/viewed
+    the retained original: monoclinic C2/c dihydrate, distinct from orthorhombic polymorph
+    and trihydrate falottaite.'
+  snapshot_sha256: 27f1d14550498638367b512616910c87039f06aaf7a5b2f41490678feea623f0
+- evidence_id: taxon
+  kind: authority
+  reference: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/5061/dataset_report
+  locator: Current species node and retained curator-acquired JSON
+  accessed_at: '2026-10-11T23:05:25.654462Z'
+  support: supports
+  summary: Root opened live NCBI authority and independently read fresh shared JSON.
+    Species Aspergillus niger maps to 5061; this is not a strain identifier.
+  snapshot_sha256: 6d2d9b2a4b031de6fd14225ddc52dec2a240dadb51d83f12a549e035575e9126
+- evidence_id: strain
+  kind: authority
+  reference: https://www.atcc.org/products/1015
+  locator: Fresh curator-acquired catalogue HTML product name and visible heading
+  accessed_at: '2026-10-11T23:05:25.654462Z'
+  support: supports
+  summary: Independent parsing verifies Aspergillus niger 1015. Root live fetch returned
+    500; the acquired current full catalogue was inspected instead. Catalogue identity
+    does not authenticate the study culture.
+  snapshot_sha256: 14bfb4fa7191fecdad62e7dd09d6d4a1e647ca985d7fa6d30ee9720d1101111f
+- evidence_id: history
+  kind: record_content
+  reference: history/records/lindbergite/2026-10-11T225957Z-codex-f222f6.yaml
+  locator: Whole canonical CREATE sidecar and separate inline event
+  accessed_at: '2026-10-11T23:05:25.654462Z'
+  support: supports
+  summary: Actor/model/tool, target, actual timestamps and scope agree with the added
+    record.
+  snapshot_sha256: c76f5fc967279b20ae35314f2c2f535a1f29ec459f93df64a55252f1bfd5cb0b
+- evidence_id: search
+  kind: search
+  reference: Independent web.run and local rg on 2026-10-11
+  locator: Bounded correction, identity and duplicate checks
+  accessed_at: '2026-10-11T23:05:25.654462Z'
+  support: supports
+  summary: Returned exact-DOI correction/retraction and phase-context results did
+    not identify a specific notice. Related Farkas phase conflict is retained explicitly.
+    Current corpus search includes new record/history and curator dossier; it does
+    not imply independent replication.
+  search_scope: 'Queries: "10.1111/1462-2920.14591" correction retraction; "lindbergite"
+    "orthorhombic" fungi ferrier; prior Farkas DOI notice and crystal-context queries.
+    Returned sets only. Root rg --no-ignore --hidden --follow searched lindbergite|2003-029|1462-2920.14591|PMC6849720
+    in data/records,research,reviews,history; curator bounded historical raw-reference
+    search and root independently inspected shared current originals. Not machine-wide
+    or exhaustive literature absence.'
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral and polymorph identity
+  outcome: supported
+  summary: The maintained owner is approved monoclinic lindbergite; elemental Mn,
+    mixed nodule feed, orthorhombic dihydrate and falottaite remain distinct. No external
+    mineral CURIE or inherited criticality is invented.
+  target_ids:
+  - cmmmech:lindbergite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  - farkas
+- assessment_id: conditions
+  area: evidence
+  topic: Organism, substrate and assay arms
+  outcome: supported
+  summary: A. niger ATCC 1015, COG_MN35 powder, heat/particle treatments, MEA and
+    AP1 concentrations, 14-day conditions and controls agree with Ferrier. Solid-method
+    125 rpm and liquid 10^4 versus image-caption 10^6 spores/mL conflicts are retained
+    rather than repaired by inference. AP1 background Mn/Ca prevents source-exclusive
+    elemental attribution.
+  target_ids:
+  - cmmmech:lindbergite
+  evidence_ids:
+  - record
+  - ferrier
+  - taxon
+  - strain
+  dimensions:
+  - name: biomass
+    value: Living fungal culture
+    definition: Species grounding plus catalogue strain designation; no independent
+      culture authentication.
+    evidence_ids:
+    - ferrier
+    - taxon
+    - strain
+  - name: scale
+    value: Laboratory culture with mixed natural nodule powder
+    definition: Industrial source relevance does not establish deployment or recovery
+      yield.
+    evidence_ids:
+    - record
+    - ferrier
+- assessment_id: phase
+  area: evidence
+  topic: Diffraction assignment and sample treatment
+  outcome: supported
+  summary: Original Figures 5 and 8 support source-assigned lindbergite in mixed dried
+    solids, not a new unit-cell determination, in-culture water stoichiometry, quantitative
+    phase fraction or Mn mass balance. At least three determinations does not specify
+    biological replication. Hot-water extraction and drying are disclosed.
+  target_ids:
+  - cmmmech:lindbergite
+  evidence_ids:
+  - record
+  - ferrier
+  - handbook
+- assessment_id: mechanism
+  area: evidence
+  topic: Causal strength, controls and outcome
+  outcome: supported
+  summary: Culture-associated formation with an inferred oxalate route is defensible.
+    Absence of matched acid/killed/cell-free formation series and direct oxalate measurement
+    prevents exclusive metabolic attribution. Pellet capture and clearing are not
+    isolated mineral recovery; fragment/mutant arms are excluded from direct phase
+    confirmation.
+  target_ids:
+  - cmmmech:lindbergite
+  evidence_ids:
+  - record
+  - ferrier
+- assessment_id: conflicts
+  area: evidence
+  topic: Contradictory phase and protocol evidence
+  outcome: supported
+  summary: Ferrier Figure 8 monohydrate versus text dihydrate calcium co-product conflict
+    remains unresolved. Farkas orthorhombic assignment is correctly context only,
+    with no second verified lindbergite mechanism or transferred Mn/As yield.
+  target_ids:
+  - cmmmech:lindbergite
+  evidence_ids:
+  - record
+  - ferrier
+  - farkas
+  - handbook
+- assessment_id: provenance
+  area: provenance
+  topic: History, study reuse and independence
+  outcome: supported
+  summary: Canonical CREATE and inline history match the working record. Solid/liquid
+    arms are one study; sibling falottaite source reuse is explicit. Root did not
+    author/edit lindbergite; advisory source discrepancy messages and shared acquisition
+    are disclosed.
+  target_ids:
+  - cmmmech:lindbergite
+  evidence_ids:
+  - record
+  - history
+  - ferrier
+  - farkas
+  - search
+findings: []
+limitations:
+- Source-derived phase purity, living-culture hydration, protocol discrepancies, independent
+  replication and exclusive metabolic pathway remain unresolved. No phase-specific
+  recovery yield or industrial deployment is established.
+- Notice/context searches are bounded. Original mineral-description paper was not
+  acquired; official IMA and the complete authoritative handbook establish identity.
+  Primary PDFs and taxonomy/catalogue snapshots were shared fresh acquisition artifacts,
+  independently inspected; root’s direct ATCC fetch failed.
+- No separate supplementary-material node was identified in complete JATS or relevant
+  original PDFs/bounded searches; this is not an exhaustive assertion that no external
+  material exists.
+actions: []
