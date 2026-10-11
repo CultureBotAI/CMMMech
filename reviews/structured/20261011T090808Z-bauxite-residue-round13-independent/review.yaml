@@ -1,0 +1,260 @@
+schema_version: 1.0.0
+review_id: 20261011T090808Z-bauxite-residue-round13-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Bauxite residue (red mud)
+started_at: '2026-10-11T08:59:23Z'
+finished_at: '2026-10-11T09:08:08Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Separate agents authored these records and histories. Root independently
+    inspected primary text/figures/authorities and exact target bytes; communicated
+    source limitations before curation but did not author or edit the records. Root
+    also owns batch validation and publication documentation; independence is record-author
+    separation, not organizational separation.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Supported material identity and bounded evidence; no actionable findings.
+  Source-specific uncertainty is preserved and no unsupported criticality or industrial-recovery
+  claim is introduced.
+source:
+  git_revision: 14ceff0da3e19d6d36426d33f4cf577b8e64760f
+  state: working_tree
+  inputs:
+  - path: data/records/bauxite-residue.yaml
+    sha256: a060d01875d691e1cb59b08698639915b0db9b1a99a02b65231d0526e0ce8773
+    role: target
+  - path: docs/records.md
+    sha256: 212cdbb723eb1ad9eb76ea1b7dad066914659b1f85eb2cdb51ee67466cfcc8ee
+    role: context
+  - path: history/records/bauxite-residue/2026-10-11T090223Z-codex-5e1966.yaml
+    sha256: 95d1136ed61c1bc24722602089600667eb0d0dece286d094ec44ce08be55ae3a
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+scope:
+  description: All fields, source claims and linked history of one exact working-tree
+    record.
+  selection: Assigned new resource/commodity target; complete per-record review, not
+    a corpus-wide literature census.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:bauxite-residue
+  exclusions:
+  - target: Uncurated literature and unrelated records
+    reason: Existing records checked only for identity and shared experiment boundaries;
+      no claim of fresh comprehensive re-review.
+targets:
+- target_id: cmmmech:bauxite-residue
+  path: data/records/bauxite-residue.yaml
+  label: Bauxite residue (red mud)
+  kind: maintained
+  record_class: secondary_resource
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/bauxite-residue.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Named record validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/battery-black-mass.yaml data/records/bauxite-residue.yaml
+    data/records/phosphogypsum.yaml data/records/metallurgical-coal.yaml
+  status: passed
+  required: true
+  summary: 'Reviewer executed: 4 records, 0 failed; terminal 0; target included.'
+  target_ids:
+  - cmmmech:bauxite-residue
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: check
+  name: check final batch gate
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  status: passed
+  required: true
+  summary: 'Root reviewer executed and read actual terminal receipt/log /private/tmp/cmm-round13-check.log;
+    101 records / 116 histories; just check: 307 passed, 3 skipped.'
+  target_ids:
+  - cmmmech:bauxite-residue
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: require
+  name: require final batch gate
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: 'Root reviewer executed and read actual terminal receipt/log /private/tmp/cmm-round13-require.log;
+    101 records / 116 histories; just check: 307 passed, 3 skipped.'
+  target_ids:
+  - cmmmech:bauxite-residue
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: history
+  name: history final batch gate
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate-history --base 14ceff0da3e19d6d36426d33f4cf577b8e64760f
+  status: passed
+  required: true
+  summary: 'Root reviewer executed and read actual terminal receipt/log /private/tmp/cmm-round13-history.log;
+    101 records / 116 histories; just check: 307 passed, 3 skipped.'
+  target_ids:
+  - cmmmech:bauxite-residue
+  exit_code: 0
+  expected_exit_code: 0
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/bauxite-residue.yaml
+  locator: Complete target and linked CREATE sidecars, exact inspect capture before
+    assessment
+  accessed_at: '2026-10-11T09:08:08Z'
+  support: supports
+  summary: 'Independently read frozen target and linked history: actual GPT-6/codex
+    attribution, matching target and separate inline event. Current bytes match inspected
+    and gated SHA. No authoring or record edits by reviewer.'
+  snapshot_sha256: a060d01875d691e1cb59b08698639915b0db9b1a99a02b65231d0526e0ce8773
+- evidence_id: paper
+  kind: primary_source
+  reference: https://www.vut.cz/uredni-deska/habilitace?action=priloha&priloha=226417
+  locator: Embedded Urik2015 article, PDF80–85/journal154–159; Methods 2.1–2.5, Results
+    3.1/3.3–3.5, Table1, Figures 3/5–9
+  accessed_at: '2026-10-11T09:08:08Z'
+  support: supports
+  summary: Rehashed and read the prior official author-thesis PDF; it is not a new
+    acquisition or experiment. Independently rendered and viewed PDF83–84. Ajka residue0.2
+    g in50 mL, seven-day static25 C fungal assay, n=3 and filter-passing total Al
+    are correctly distinguished from pure phases and products. The two-day sodium-salt/HCl
+    acid mixture control prevents a matched kinetic claim. Al LOD and Al-host phases
+    remain unresolved. Selected low-loading assay avoids the separate40/50 g/L inconsistency.
+  snapshot_sha256: 1ad163bac045935f00a43d67208749ea3b2091d6fb4d0d3efedabf831f637d84
+- evidence_id: taxonomy
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5061&retmode=xml
+  locator: TaxId 5061, ScientificName, Rank
+  accessed_at: '2026-10-11T09:08:08Z'
+  support: supports
+  summary: Fresh NCBI XML identifies Aspergillus niger at species rank. It does not
+    authenticate reported G-10 or assign a unique molecular cause.
+  snapshot_sha256: d668c305ba04f31ca50a1582a5a9c85d6547109cbc132a097d5d2185a8c34ff8
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round13-review-dedup.txt
+  locator: 572 matching lines; local corpus and named raw roots plus first web query
+    windows
+  accessed_at: '2026-10-11T09:08:08Z'
+  support: context_only
+  summary: Ignored-inclusive search locates existing element records and source dossiers;
+    new roots are distinct feeds or a broader explicitly overlapping commodity. Battery/red-mud
+    sources reuse existing element experiments, not independent replications. Exact
+    DOI correction/retraction queries surfaced no applicable notice in first returned
+    results; this is bounded, not exhaustive.
+  search_scope: rg --no-ignore --hidden --follow -n -i battery.black.mass|bauxite.residue|red.mud|phosphogypsum|metallurgical.coal|jct.2018.12.034|molecules30030674|fmicb.2024.1347072|jinorgbio.2015.08.022
+    across data/records,research,reviews,history and /private/tmp/cmm-round13-{secondary-raw,grade-raw,root-review}.
+    Exact DOI web queries with correction/retraction for Lalropuia, Urik, Zhang; Antonick
+    DOI and full OSTI manuscript checked. No pagination or complete Crossmark audit.
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round13-gate-receipts.json
+  locator: All three terminal-zero commands;check/require/history logs and gated hash
+    manifest
+  accessed_at: '2026-10-11T09:08:08Z'
+  support: supports
+  summary: Root executed 307 passed, 3 skipped in 76.91 s; 101 records, 0 failed;
+    116 histories, 0 errors. Exact target bytes unchanged since gates. These offline
+    checks do not prove source accuracy.
+  snapshot_sha256: fbebdd5faf0dd81c8ea05bc8abec1b9ce90d96b7c91372195285c690416fcc8a
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Material boundary, identifiers and criticality omission
+  outcome: supported
+  summary: The heterogeneous residue from alkaline Bayer processing of bauxite for
+    alumina production, commonly called red mud. It is distinct from bauxite ore,
+    alumina commodity, aluminium element and any single mineral species. The curated
+    assay used material collected from the Ajka spill site; its composition and treatment
+    response do not define every bauxite residue. No criticality designation is inherited
+    from constituent elements.
+  target_ids:
+  - cmmmech:bauxite-residue
+  evidence_ids:
+  - record
+  - search
+  - paper
+  - taxonomy
+  dimensions:
+  - name: material_form
+    value: Ajka mixed Bayer-process residue
+    definition: Distinct from bauxite, alumina,Al atom and pure mineral.
+    evidence_ids:
+    - record
+    - paper
+    - taxonomy
+  - name: biomass
+    value: Growing reported Aspergillus niger G-10
+    definition: Source ITS assignment; species identifier not strain authentication.
+    evidence_ids:
+    - record
+    - paper
+    - taxonomy
+  - name: conditions
+    value: 0.2 g/50 mL;25 C static, dark;7 days;triplicate
+    definition: Source-selected low-loading assay.
+    evidence_ids:
+    - record
+    - paper
+    - taxonomy
+  - name: controls_outcome
+    value: No-fungus undetected without LOD; ~141 mg/L filter-passing Al
+    definition: Synthetic acid mixture B ~142 mg/L uses 2 days and different chemistry;
+      no product yield.
+    evidence_ids:
+    - record
+    - paper
+    - taxonomy
+- assessment_id: science
+  area: evidence
+  topic: Primary claim verification and inference limits
+  outcome: supported
+  summary: The stated evidence supports the deliberately bounded record. Reported
+    species assignment does not independently authenticate G-10. Chemical controls
+    differ in media and duration; proton/ligand contributions and Al host phases unresolved.
+    No numerical controlLOD, isolated Al/alumina product or industrial scale.
+  target_ids:
+  - cmmmech:bauxite-residue
+  evidence_ids:
+  - paper
+  - taxonomy
+  - record
+- assessment_id: provenance
+  area: provenance
+  topic: Actual changes and retained source base
+  outcome: supported
+  summary: New CREATE sidecar and distinct inline event describe present curation.
+    Trusted base is merged main 14ceff0; no prior records/history/reviews edited.
+    Exact current target hash verified.
+  target_ids:
+  - cmmmech:bauxite-residue
+  evidence_ids:
+  - record
+  - gates
+findings: []
+actions: []
+limitations:
+- Reported species assignment does not independently authenticate G-10.
+- Chemical controls differ in media and duration; proton/ligand contributions and
+  Al host phases unresolved.
+- No numerical controlLOD, isolated Al/alumina product or industrial scale.
+- Full-text access limits and bounded source/correction search are explicit; no global
+  absence or exhaustiveness claim.
+tags:
+- round13
+- independent
+- scientific-review

@@ -1,0 +1,100 @@
+id: cmmmech:jadarite
+name: Jadarite
+material_kind: mineral
+description: Jadarite is the LiNaB3SiO7(OH) mineral species in the September 2026 IMA list,
+  with approved status and approval number 2006-036. It is distinct from the lithium and boron
+  elements, their commodity designations, and mixed Jadar Valley sediment. The experiment
+  below is also represented in cmmmech:lithium; this mineral-level representation is not an
+  independent replication. No constituent-element criticality is inherited.
+sources:
+  - id: ima_2026_09
+    title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 103, Jadarite
+      row; page 1, column definitions; page 2, distribution terms.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-11'
+  - id: kirk2024
+    title: Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene, and lepidolite
+      using Acidiothiobacillus ferrooxidans. Frontiers in Microbiology 15:1467408. The genus
+      spelling is retained from the published title.
+    url: https://doi.org/10.3389/fmicb.2024.1467408
+    accessed_on: '2026-10-11'
+  - id: kirk2024_data_v1
+    title: Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene and lepidolite
+      using Acidiothiobacillus ferrooxidans. Mendeley Data, version 1, published 14 November
+      2024; CC BY 4.0. Published genus spelling retained.
+    url: https://doi.org/10.17632/djkf7tkm8d.1
+    accessed_on: '2026-10-11'
+  - id: ncbi_ferrooxidans
+    title: NCBI Taxonomy 920 - Acidithiobacillus ferrooxidans (species)
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=info
+    accessed_on: '2026-10-11'
+mechanisms:
+  - id: acidophile_jadarite_bearing_material_leaching
+    name: Transient microbial enhancement of Li release from jadarite-bearing material
+    process: bioleaching
+    microbial: true
+    organisms:
+      - id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+    description: Inoculated jadarite-bearing material released lithium faster than uninoculated
+      acidic medium during part of a laboratory time course. The uninoculated control reached
+      similar dissolved Li by day 30, and sulfuric-acid-only leaching released more Li. Post-treatment
+      XRD showed loss of jadarite-associated peaks, but other unidentified Li-bearing phases
+      prevent attributing all dissolved lithium to this mineral species. Biofilm involvement
+      was suggested without establishing an exclusive molecular cause.
+    context: Live in-lab ore-derived culture was reported as At. ferrooxidans, without a strain
+      accession. The species identifier normalizes the reported name to Acidithiobacillus
+      ferrooxidans; the title and abstract spell the genus Acidiothiobacillus. This mapping
+      does not independently identify the culture. Ground Jadar Valley material contained
+      jadarite, dolomite and probertite, with possible unidentified Li-bearing phases. Triplicate
+      biotic flasks ran statically at 23 degrees C for 30 days, targeting pH 1.8; addition
+      of jadarite raised pH immediately and required repeated sulfuric acid doses. Acid additions
+      differed between treatments, limiting attribution of the observed difference solely
+      to biology. Methods state 2 g powder, 190 mL basal medium and 10 mL inoculum but label
+      this 2% w/v; those amounts imply 1% w/v. The discrepancy is unresolved and no normalized
+      yield is curated. No purified Li product or industrial heap operation was demonstrated.
+    evidence:
+      - source_ref: kirk2024
+        supports: support
+        explanation: Sections 2.1-2.3 and 3.1-3.2, Fig. 1 and Table 1 support the scoped ICP-OES
+          dissolved-Li comparison and mixed substrate identity. Acid leaching contributed
+          substantially in all treatments.
+      - source_ref: kirk2024
+        supports: partial
+        explanation: 'Section 3.2 limits the advantage to a transient comparison: by day 30
+          the uninoculated control was similar, and acid-only leaching remained higher. Sections
+          3.3-3.4 and Figs. 4-5 report no material microbial enhancement for the tested spodumene-
+          and lepidolite-bearing samples. The lepidolite sample name is retained without treating
+          it as a unique mineral species. The result cannot be generalized to all Li ores.'
+      - source_ref: kirk2024_data_v1
+        supports: partial
+        explanation: The eight-file version 1 deposit was acquired and its issuing hashes
+          verified. Jadarite day-30 values are consistent with the reported control convergence
+          and higher acid-only result, but quantitative verification remains limited. Bioleaching
+          workbook headers use mg/kg rather than the paper's mg/L; mineral-digestion units
+          also require reconciliation. In Jadarite bioleaching results from ICP-OES.xlsx,
+          Jadarite!F5 and F7 do not equal the arithmetic means of the labelled replicate cells
+          C:E. Standalone spodumene and lepidolite workbooks contain identical Li replicate
+          blocks at Sheet1!C3:E12, requiring provenance clarification before independent comparison.
+          These are unresolved mappings and inconsistencies, not identified corrections or
+          specific refutations of the paper's qualitative comparisons. The files provide no
+          loading or per-flask acid-dose ledger to resolve the published contradictions. No
+          deposited number was corrected or imported as a normalized yield or quantitative
+          benchmark.
+      - source_ref: kirk2024
+        supports: partial
+        explanation: Sections 2.4-2.5 and 3.2, Figures 2-3 associate inoculation with biofilm-like
+          material and loss of jadarite, dolomite and probertite peaks. Some lower-intensity
+          jadarite peaks remained in the uninoculated control. A new peak near 2-theta 27.9
+          degrees occurred in both conditions; the authors' boric-acid interpretation is not
+          treated as an unambiguous phase identification or a recovered-product measurement.
+          Table 1 omits the hydroxyl group from its jadarite formula; mineral identity here
+          follows the IMA formula, not that incomplete experimental table notation.
+curation_history:
+  - timestamp: '2026-10-11T09:02:06.347855+00:00'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: Created IMA-grounded jadarite identity with mixed-feed leaching, transient comparison
+      and source-data limitations.
+history_refs:
+  - history/records/jadarite/2026-10-11T090204Z-codex-7d2601.yaml

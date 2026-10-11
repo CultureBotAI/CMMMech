@@ -1,0 +1,360 @@
+# Independent scientific review of Metallurgical coal commodity family
+
+- Review: 20261011T090808Z-metallurgical-coal-round13-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T08:59:23Z
+- Finished UTC: 2026-10-11T09:08:08Z
+- Reviewer: Codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Supported material identity and bounded evidence; no actionable findings. Source-specific uncertainty is preserved and no unsupported criticality or industrial-recovery claim is introduced.
+
+## Scope And Provenance
+
+All fields, source claims and linked history of one exact working-tree record.
+
+Selection: Assigned new resource/commodity target; complete per-record review, not a corpus-wide literature census.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 14ceff0da3e19d6d36426d33f4cf577b8e64760f.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:metallurgical-coal | data/records/metallurgical-coal.yaml | maintained | Metallurgical coal |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Named record validation | passed | True | cmmmech:metallurgical-coal | Reviewer executed: 4 records, 0 failed; terminal 0; target included. |
+| check final batch gate | passed | True | cmmmech:metallurgical-coal | Root reviewer executed and read actual terminal receipt/log /private/tmp/cmm-round13-check.log; 101 records / 116 histories; just check: 307 passed, 3 skipped. |
+| require final batch gate | passed | True | cmmmech:metallurgical-coal | Root reviewer executed and read actual terminal receipt/log /private/tmp/cmm-round13-require.log; 101 records / 116 histories; just check: 307 passed, 3 skipped. |
+| history final batch gate | passed | True | cmmmech:metallurgical-coal | Root reviewer executed and read actual terminal receipt/log /private/tmp/cmm-round13-history.log; 101 records / 116 histories; just check: 307 passed, 3 skipped. |
+
+## Scientific And Domain Assessments
+
+### Material boundary, identifiers and criticality omission
+
+identity: supported. Targets: cmmmech:metallurgical-coal.
+
+Coal products used in steelmaking, scoped here to the broader commodity family recognized by the EIA glossary and the IEA Coal 2020 report. EIA includes coking coal and pulverized coal consumed in steelmaking; IEA includes coking, semi-soft blending coal and pulverised coal injection (PCI) coal. This family explicitly overlaps cmmmech:coking-coal as a narrower coke-making subset; it is not a second disjoint coking-coal identity. IEA excludes anthracite from its metallurgical category even when used in metallurgy. In contrast, USGS Fact Sheet 2026-3061 uses metallurgical coal and coking coal interchangeably within its coke-production scope. These source-dependent boundaries are retained rather than asserted to be a universal coal classification. The record denotes an end-use commodity, not elemental carbon, a mineral species, manufactured coke or every coal burned industrially. No numerical grade threshold, criticality designation or microbial mechanism is generalized across this family.
+
+### Primary claim verification and inference limits
+
+scope: supported. Targets: cmmmech:metallurgical-coal.
+
+The stated evidence supports the deliberately bounded record. Report-specific economic family overlaps the existing coke-making subset; it is not a disjoint-material count. No universal grade, criticality designation or microbial mechanism is asserted; omitted claims are not scientific absence findings.
+
+### Actual changes and retained source base
+
+provenance: supported. Targets: cmmmech:metallurgical-coal.
+
+New CREATE sidecar and distinct inline event describe present curation. Trusted base is merged main 14ceff0; no prior records/history/reviews edited. Exact current target hash verified.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/metallurgical-coal.yaml; Complete target and linked CREATE sidecars, exact inspect capture before assessment | supports | Independently read frozen target and linked history: actual GPT-6/codex attribution, matching target and separate inline event. Current bytes match inspected and gated SHA. No authoring or record edits by reviewer. |
+| eia | https://www.eia.gov/tools/glossary/index.php?id=Metallurgical+coal; Metallurgical coal entry | supports | Fresh official web entry includes coking and pulverized steelmaking coal, supporting the broader industrial family. It does not define one universal composition or criticality mapping. |
+| iea | https://www.iea.org/reports/coal-2020/annex; Definitions: Coking coal; Semi-soft coal; PCI; Metallurgical coal | supports | Fresh official web definitions explicitly group coking, semi-soft and PCI, assigning metallurgical anthracite to thermal in that report. Record preserves source-specific membership and coking-coal overlap. |
+| usgs | https://pubs.usgs.gov/fs/2026/3061/fs20263061.pdf; Fact Sheet 2026-3061, version 1.1 August 2026, pp1–2 | supports | Fresh web PDF failed; retained official PDF independently rehashed/read. It uses metallurgical/coking synonymously for coke production; this narrower usage is preserved, not forced into universal equality. |
+| search | /private/tmp/cmm-round13-review-dedup.txt; 572 matching lines; local corpus and named raw roots plus first web query windows | context_only | Ignored-inclusive search locates existing element records and source dossiers; new roots are distinct feeds or a broader explicitly overlapping commodity. Battery/red-mud sources reuse existing element experiments, not independent replications. Exact DOI correction/retraction queries surfaced no applicable notice in first returned results; this is bounded, not exhaustive. |
+| gates | /private/tmp/cmm-round13-gate-receipts.json; All three terminal-zero commands;check/require/history logs and gated hash manifest | supports | Root executed 307 passed, 3 skipped in 76.91 s; 101 records, 0 failed; 116 histories, 0 errors. Exact target bytes unchanged since gates. These offline checks do not prove source accuracy. |
+
+## Limits And Additional Notes
+
+- Report-specific economic family overlaps the existing coke-making subset; it is not a disjoint-material count.
+- No universal grade, criticality designation or microbial mechanism is asserted; omitted claims are not scientific absence findings.
+- Full-text access limits and bounded source/correction search are explicit; no global absence or exhaustiveness claim.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T090808Z-metallurgical-coal-round13-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Metallurgical coal commodity family
+started_at: '2026-10-11T08:59:23Z'
+finished_at: '2026-10-11T09:08:08Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Separate agents authored these records and histories. Root independently
+    inspected primary text/figures/authorities and exact target bytes; communicated
+    source limitations before curation but did not author or edit the records. Root
+    also owns batch validation and publication documentation; independence is record-author
+    separation, not organizational separation.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Supported material identity and bounded evidence; no actionable findings.
+  Source-specific uncertainty is preserved and no unsupported criticality or industrial-recovery
+  claim is introduced.
+source:
+  git_revision: 14ceff0da3e19d6d36426d33f4cf577b8e64760f
+  state: working_tree
+  inputs:
+  - path: data/records/metallurgical-coal.yaml
+    sha256: 0e29f90b88c69ece7febeccc3ad8c58d4336b4e6457610633bac25a3365b8f2a
+    role: target
+  - path: docs/records.md
+    sha256: 212cdbb723eb1ad9eb76ea1b7dad066914659b1f85eb2cdb51ee67466cfcc8ee
+    role: context
+  - path: history/records/metallurgical-coal/2026-10-11T090113Z-codex-5e05f9.yaml
+    sha256: 86bffc448d6320ffc295c9d7999029404577be330b9e32199b07587c4b623399
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+scope:
+  description: All fields, source claims and linked history of one exact working-tree
+    record.
+  selection: Assigned new resource/commodity target; complete per-record review, not
+    a corpus-wide literature census.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:metallurgical-coal
+  exclusions:
+  - target: Uncurated literature and unrelated records
+    reason: Existing records checked only for identity and shared experiment boundaries;
+      no claim of fresh comprehensive re-review.
+targets:
+- target_id: cmmmech:metallurgical-coal
+  path: data/records/metallurgical-coal.yaml
+  label: Metallurgical coal
+  kind: maintained
+  record_class: commodity
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/metallurgical-coal.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Named record validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/battery-black-mass.yaml data/records/bauxite-residue.yaml
+    data/records/phosphogypsum.yaml data/records/metallurgical-coal.yaml
+  status: passed
+  required: true
+  summary: 'Reviewer executed: 4 records, 0 failed; terminal 0; target included.'
+  target_ids:
+  - cmmmech:metallurgical-coal
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: check
+  name: check final batch gate
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  status: passed
+  required: true
+  summary: 'Root reviewer executed and read actual terminal receipt/log /private/tmp/cmm-round13-check.log;
+    101 records / 116 histories; just check: 307 passed, 3 skipped.'
+  target_ids:
+  - cmmmech:metallurgical-coal
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: require
+  name: require final batch gate
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: 'Root reviewer executed and read actual terminal receipt/log /private/tmp/cmm-round13-require.log;
+    101 records / 116 histories; just check: 307 passed, 3 skipped.'
+  target_ids:
+  - cmmmech:metallurgical-coal
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: history
+  name: history final batch gate
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate-history --base 14ceff0da3e19d6d36426d33f4cf577b8e64760f
+  status: passed
+  required: true
+  summary: 'Root reviewer executed and read actual terminal receipt/log /private/tmp/cmm-round13-history.log;
+    101 records / 116 histories; just check: 307 passed, 3 skipped.'
+  target_ids:
+  - cmmmech:metallurgical-coal
+  exit_code: 0
+  expected_exit_code: 0
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/metallurgical-coal.yaml
+  locator: Complete target and linked CREATE sidecars, exact inspect capture before
+    assessment
+  accessed_at: '2026-10-11T09:08:08Z'
+  support: supports
+  summary: 'Independently read frozen target and linked history: actual GPT-6/codex
+    attribution, matching target and separate inline event. Current bytes match inspected
+    and gated SHA. No authoring or record edits by reviewer.'
+  snapshot_sha256: 0e29f90b88c69ece7febeccc3ad8c58d4336b4e6457610633bac25a3365b8f2a
+- evidence_id: eia
+  kind: authority
+  reference: https://www.eia.gov/tools/glossary/index.php?id=Metallurgical+coal
+  locator: Metallurgical coal entry
+  accessed_at: '2026-10-11T09:08:08Z'
+  support: supports
+  summary: Fresh official web entry includes coking and pulverized steelmaking coal,
+    supporting the broader industrial family. It does not define one universal composition
+    or criticality mapping.
+  snapshot_sha256: aef54d5a8222d07f1c00f8aa7b04b3f999bb17ba80ec322b63f1d20816aa9f8e
+- evidence_id: iea
+  kind: authority
+  reference: https://www.iea.org/reports/coal-2020/annex
+  locator: 'Definitions: Coking coal; Semi-soft coal; PCI; Metallurgical coal'
+  accessed_at: '2026-10-11T09:08:08Z'
+  support: supports
+  summary: Fresh official web definitions explicitly group coking, semi-soft and PCI,
+    assigning metallurgical anthracite to thermal in that report. Record preserves
+    source-specific membership and coking-coal overlap.
+  snapshot_sha256: 1acd77a5ffb7b21d2b60ec4bfd3d94366125f67dfc3fa2978bff889401de84b0
+- evidence_id: usgs
+  kind: authority
+  reference: https://pubs.usgs.gov/fs/2026/3061/fs20263061.pdf
+  locator: Fact Sheet 2026-3061, version 1.1 August 2026, pp1–2
+  accessed_at: '2026-10-11T09:08:08Z'
+  support: supports
+  summary: Fresh web PDF failed; retained official PDF independently rehashed/read.
+    It uses metallurgical/coking synonymously for coke production; this narrower usage
+    is preserved, not forced into universal equality.
+  snapshot_sha256: 033f9d3ff40d243893a762050584f80d03edf7565010549d1e5ec5b3d9e22f8b
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round13-review-dedup.txt
+  locator: 572 matching lines; local corpus and named raw roots plus first web query
+    windows
+  accessed_at: '2026-10-11T09:08:08Z'
+  support: context_only
+  summary: Ignored-inclusive search locates existing element records and source dossiers;
+    new roots are distinct feeds or a broader explicitly overlapping commodity. Battery/red-mud
+    sources reuse existing element experiments, not independent replications. Exact
+    DOI correction/retraction queries surfaced no applicable notice in first returned
+    results; this is bounded, not exhaustive.
+  search_scope: rg --no-ignore --hidden --follow -n -i battery.black.mass|bauxite.residue|red.mud|phosphogypsum|metallurgical.coal|jct.2018.12.034|molecules30030674|fmicb.2024.1347072|jinorgbio.2015.08.022
+    across data/records,research,reviews,history and /private/tmp/cmm-round13-{secondary-raw,grade-raw,root-review}.
+    Exact DOI web queries with correction/retraction for Lalropuia, Urik, Zhang; Antonick
+    DOI and full OSTI manuscript checked. No pagination or complete Crossmark audit.
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round13-gate-receipts.json
+  locator: All three terminal-zero commands;check/require/history logs and gated hash
+    manifest
+  accessed_at: '2026-10-11T09:08:08Z'
+  support: supports
+  summary: Root executed 307 passed, 3 skipped in 76.91 s; 101 records, 0 failed;
+    116 histories, 0 errors. Exact target bytes unchanged since gates. These offline
+    checks do not prove source accuracy.
+  snapshot_sha256: fbebdd5faf0dd81c8ea05bc8abec1b9ce90d96b7c91372195285c690416fcc8a
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Material boundary, identifiers and criticality omission
+  outcome: supported
+  summary: Coal products used in steelmaking, scoped here to the broader commodity
+    family recognized by the EIA glossary and the IEA Coal 2020 report. EIA includes
+    coking coal and pulverized coal consumed in steelmaking; IEA includes coking,
+    semi-soft blending coal and pulverised coal injection (PCI) coal. This family
+    explicitly overlaps cmmmech:coking-coal as a narrower coke-making subset; it is
+    not a second disjoint coking-coal identity. IEA excludes anthracite from its metallurgical
+    category even when used in metallurgy. In contrast, USGS Fact Sheet 2026-3061
+    uses metallurgical coal and coking coal interchangeably within its coke-production
+    scope. These source-dependent boundaries are retained rather than asserted to
+    be a universal coal classification. The record denotes an end-use commodity, not
+    elemental carbon, a mineral species, manufactured coke or every coal burned industrially.
+    No numerical grade threshold, criticality designation or microbial mechanism is
+    generalized across this family.
+  target_ids:
+  - cmmmech:metallurgical-coal
+  evidence_ids:
+  - record
+  - search
+  - eia
+  - iea
+  - usgs
+  dimensions:
+  - name: material_form
+    value: Source-scoped steelmaking commodity family
+    definition: EIA/IEA broader scope; USGS coke-makingusage retained.
+    evidence_ids:
+    - record
+    - eia
+    - iea
+    - usgs
+  - name: overlap
+    value: coking-coal is an explicitly narrower related record
+    definition: No duplicate synonym or disjoint partition claim.
+    evidence_ids:
+    - record
+    - eia
+    - iea
+    - usgs
+  - name: criticality_mechanism
+    value: Not asserted
+    definition: No inheritance from coking coal or constituent elements.
+    evidence_ids:
+    - record
+    - eia
+    - iea
+    - usgs
+- assessment_id: science
+  area: scope
+  topic: Primary claim verification and inference limits
+  outcome: supported
+  summary: The stated evidence supports the deliberately bounded record. Report-specific
+    economic family overlaps the existing coke-making subset; it is not a disjoint-material
+    count. No universal grade, criticality designation or microbial mechanism is asserted;
+    omitted claims are not scientific absence findings.
+  target_ids:
+  - cmmmech:metallurgical-coal
+  evidence_ids:
+  - eia
+  - iea
+  - usgs
+  - record
+- assessment_id: provenance
+  area: provenance
+  topic: Actual changes and retained source base
+  outcome: supported
+  summary: New CREATE sidecar and distinct inline event describe present curation.
+    Trusted base is merged main 14ceff0; no prior records/history/reviews edited.
+    Exact current target hash verified.
+  target_ids:
+  - cmmmech:metallurgical-coal
+  evidence_ids:
+  - record
+  - gates
+findings: []
+actions: []
+limitations:
+- Report-specific economic family overlaps the existing coke-making subset; it is
+  not a disjoint-material count.
+- No universal grade, criticality designation or microbial mechanism is asserted;
+  omitted claims are not scientific absence findings.
+- Full-text access limits and bounded source/correction search are explicit; no global
+  absence or exhaustiveness claim.
+tags:
+- round13
+- independent
+- scientific-review
+```

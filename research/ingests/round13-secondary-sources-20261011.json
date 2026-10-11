@@ -1,0 +1,444 @@
+{
+  "prepared_at_utc": "2026-10-11T09:03:53.347674+00:00",
+  "base_revision": "14ceff0da3e19d6d36426d33f4cf577b8e64760f",
+  "branch": "curate/cmm-expansion-round13-20261011",
+  "scope": "Bounded source investigation and curation of three secondary-resource roots; not an exhaustive inventory of all CMMs or waste feedstocks.",
+  "curator": {
+    "actor": "codex",
+    "model": "GPT-6",
+    "tool": "codex",
+    "agent": "round13_secondary_sources"
+  },
+  "records": {
+    "battery-black-mass": {
+      "path": "data/records/battery-black-mass.yaml",
+      "sha256": "0e0e045b59f2728e9cdfd2aabcec3848bad611d60dc18599cccf3a824f687a28",
+      "history_refs": [
+        "history/records/battery-black-mass/2026-10-11T090220Z-codex-601df7.yaml"
+      ],
+      "status": "curated; named validation passed; independent review assigned to parent agent"
+    },
+    "bauxite-residue": {
+      "path": "data/records/bauxite-residue.yaml",
+      "sha256": "a060d01875d691e1cb59b08698639915b0db9b1a99a02b65231d0526e0ce8773",
+      "history_refs": [
+        "history/records/bauxite-residue/2026-10-11T090223Z-codex-5e1966.yaml"
+      ],
+      "status": "curated; named validation passed; independent review assigned to parent agent"
+    },
+    "phosphogypsum": {
+      "path": "data/records/phosphogypsum.yaml",
+      "sha256": "afaac7e9ed5ea71c34502d76a3dab5209b1f008dc69217be4888ed3901ffa779",
+      "history_refs": [
+        "history/records/phosphogypsum/2026-10-11T090227Z-codex-e9e1cd.yaml"
+      ],
+      "status": "curated; named validation passed; independent review assigned to parent agent"
+    }
+  },
+  "local_deduplication": {
+    "method": "rg --no-ignore --hidden; known relevant symlinks checked with find; actual selected PDFs separately extracted and visually inspected",
+    "roots": [
+      "data/records",
+      "research",
+      "reviews",
+      "history",
+      "/private/tmp/cmm-round13-secondary-raw",
+      "/private/tmp/cmm-round6-aluminium-evidence",
+      "/private/tmp/cmm-round5-germanium-20261011",
+      "/private/tmp/cmm-source-authority-acquisition",
+      "/private/tmp/cmm-source-discovery-downloads"
+    ],
+    "terms": "phosphogypsum|refinery catalyst|hydroprocessing|coal.fly.ash|black.mass|red.mud|1347072|2015.08.022|2018.12.034|30030674",
+    "result": "Before curation, two secondary-resource roots existed: fluorescent-lamp-phosphor and gaas-production-hydroxide-sludge. Battery/red-mud experiments already occurred under cobalt/aluminium element records; these are shared experiments, not new independent replications. New resource roots are distinct identities. No prior phosphogypsum record found in the searched record roots including ignored/hidden files. Coal-fly-ash and catalyst leads overlap earlier research proposals.",
+    "exclusions": "Unrelated home/temp trees excluded; binary absence not inferred from text search. No machine-wide or literature-wide absence claim."
+  },
+  "search": {
+    "provider": "web.run search_query/open plus public primary-source downloads using urllib",
+    "date": "2026-10-11",
+    "queries": [
+      "spent refinery hydroprocessing catalyst bioleaching Acidithiobacillus primary study full text controls nickel molybdenum",
+      "phosphogypsum Gluconobacter bioleaching rare earth elements primary study 2019 2016 full text",
+      "Metal recovery from spent lithium-ion batteries Lalropuia 2024 1347072",
+      "Aluminium leaching from red mud filamentous fungi Urik 2015",
+      "\"Study on the Extraction\" \"Phosphogypsum\" \"Culture Solution\" 2025 doi",
+      "\"spent catalyst\" bioleaching \"pmc.ncbi\"",
+      "\"phosphogypsum\" Gluconobacter 2019 2025 bioleaching comparison acid",
+      "\"10.3389/fmicb.2024.1347072\" correction retraction",
+      "\"10.1016/j.jinorgbio.2015.08.022\" correction retraction",
+      "\"10.3390/molecules30030674\" correction retraction",
+      "\"Bio- and mineral acid leaching\" \"osti.gov\"",
+      "Gluconobacter oxydans NCBI taxonomy 442 2026",
+      "\"Bio- and mineral acid leaching\" pdf Antonick",
+      "\"spent refinery catalyst\" \"full\" \"2010\" Beolchini Fonti",
+      "\"10.1016/j.jct.2018.12.034\" correction retraction",
+      "\"phosphogypsum\" \"Gluconobacter\" \"24.67\" correction",
+      "\"Spent-medium leaching\" \"germanium\" \"coal fly ash\"",
+      "Reed Fujita Daubaras Jiao Thompson \"Bioleaching of rare earth elements\" 2016 166 34"
+    ],
+    "filters": "No domain/date filters; default first returned search results only, no pagination",
+    "correction_status": "No applicable correction/retraction notice found in targeted result sets; four current Crossref records have no update-to and empty relation. This is not exhaustive retraction clearance. MDPI notes lists updated PDF/XML on 7 February 2025 and HTML update 24 June 2025; update details not specified.",
+    "failures": [
+      "Initial default-sandbox urllib PMC lookup failed DNS; authorized network retry succeeded.",
+      "PMC web.open returned challenge for PMC11820893; actual 200850-byte article HTML acquired and inspected via urllib.",
+      "MDPI PDF and notes direct requests returned403; notes visible via indexed web page; figures available from PMC CDN.",
+      "Frontiers article references Table_1.XLSX; tested standard article image_m route returned404. Supplement workbook not inspected; no ASV-level or post-adaptation claims based on it."
+    ]
+  },
+  "acquisitions": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11820893/",
+      "path": "/private/tmp/cmm-round13-secondary-raw/phosphogypsum.html",
+      "accessed_at": "2026-10-11T08:58:52.074082+00:00",
+      "status": 200,
+      "bytes": 200850,
+      "sha256": "266532539ee7f137cdaacf42630d1d5f3ec52f428961f092abc82ec42126557c",
+      "content_type": "text/html; charset=utf-8",
+      "terms": "Article CC BY 4.0, PMC license statement inspected; retained outside Git."
+    },
+    {
+      "url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2024.1347072/full",
+      "path": "/private/tmp/cmm-round13-secondary-raw/lalropuia2024.html",
+      "accessed_at": "2026-10-11T08:58:52.074783+00:00",
+      "status": 200,
+      "bytes": 898831,
+      "sha256": "f1865876cfd586000908f4ba1ef7986347fe8d7272a9ed7432b50a343e93ef9f",
+      "content_type": "text/html;charset=utf-8",
+      "terms": "Article CC BY, publisher copyright statement inspected; retained outside Git."
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1016/j.jinorgbio.2015.08.022",
+      "path": "/private/tmp/cmm-round13-secondary-raw/urik-crossref.json",
+      "accessed_at": "2026-10-11T08:58:52.075034+00:00",
+      "status": 200,
+      "bytes": 19707,
+      "sha256": "06a9bce5d982cd315158bc9b11816483a35e473d2f979d2a762d0d5ceec64411",
+      "content_type": "application/json",
+      "terms": "Reading copy retained outside Git; no raw full-text redistribution."
+    },
+    {
+      "url": "https://api.crossref.org/works/10.3389/fmicb.2024.1347072",
+      "path": "/private/tmp/cmm-round13-secondary-raw/lalropuia-crossref.json",
+      "accessed_at": "2026-10-11T08:58:52.075285+00:00",
+      "status": 200,
+      "bytes": 22166,
+      "sha256": "b1fcfeba2b2ea87dfedbde7dcef2e9df02785e79b5ea2feddd032cf914517ea9",
+      "content_type": "application/json",
+      "terms": "Article CC BY, publisher copyright statement inspected; retained outside Git."
+    },
+    {
+      "url": "https://api.crossref.org/works/10.3390/molecules30030674",
+      "path": "/private/tmp/cmm-round13-secondary-raw/phosphogypsum-crossref.json",
+      "accessed_at": "2026-10-11T08:59:55.937575+00:00",
+      "status": 200,
+      "bytes": 20814,
+      "sha256": "eba3cc2ec2fed52add3bab603558d4872d8014c8cb3fe38b22a59a1d1a92bdc8",
+      "content_type": "application/json",
+      "terms": "Reading copy retained outside Git; no raw full-text redistribution."
+    },
+    {
+      "url": "https://www.mdpi.com/1420-3049/30/3/674/notes",
+      "path": "/private/tmp/cmm-round13-secondary-raw/phosphogypsum-notes.html",
+      "accessed_at": "2026-10-11T08:59:55.938346+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "terms": "Reading copy retained outside Git; no raw full-text redistribution."
+    },
+    {
+      "url": "https://mdpi-res.com/d_attachment/molecules/molecules-30-00674/article_deploy/molecules-30-00674.pdf",
+      "path": "/private/tmp/cmm-round13-secondary-raw/phosphogypsum.pdf",
+      "accessed_at": "2026-10-11T08:59:55.938608+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "terms": "Reading copy retained outside Git; no raw full-text redistribution."
+    },
+    {
+      "url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2024.1347072/pdf",
+      "path": "/private/tmp/cmm-round13-secondary-raw/lalropuia2024.pdf",
+      "accessed_at": "2026-10-11T08:59:55.938844+00:00",
+      "status": 200,
+      "bytes": 1658132,
+      "sha256": "1a6a5228bcd5bae34565a14a8f35fea0c207368c202769a838f8de64d377306a",
+      "content_type": "application/pdf",
+      "terms": "Article CC BY, publisher copyright statement inspected; retained outside Git."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10861312/",
+      "path": "/private/tmp/cmm-round13-secondary-raw/lalropuia-pmc.html",
+      "accessed_at": "2026-10-11T08:59:55.939085+00:00",
+      "status": 200,
+      "bytes": 217088,
+      "sha256": "23aa288e6a3de7695e87d234cbc1084cd843bb0052f892d71cf4d9d30c6a2dbf",
+      "content_type": "text/html; charset=utf-8",
+      "terms": "Article CC BY, publisher copyright statement inspected; retained outside Git."
+    },
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5061&retmode=xml",
+      "path": "/private/tmp/cmm-round13-secondary-raw/ncbi-aspergillus.xml",
+      "accessed_at": "2026-10-11T08:59:55.939322+00:00",
+      "status": 200,
+      "bytes": 4988,
+      "sha256": "d668c305ba04f31ca50a1582a5a9c85d6547109cbc132a097d5d2185a8c34ff8",
+      "content_type": "text/xml; charset=UTF-8",
+      "terms": "Reading copy retained outside Git; no raw full-text redistribution."
+    },
+    {
+      "url": "https://www.osti.gov/servlets/purl/1862749",
+      "path": "/private/tmp/cmm-round13-secondary-raw/antonick2019.pdf",
+      "accessed_at": "2026-10-11T09:00:12.161628+00:00",
+      "status": 200,
+      "bytes": 1462995,
+      "sha256": "fbbb2dc774fa1b3ff4d228421f4c621b76753255023bd1dbf663043751960472",
+      "content_type": "application/pdf",
+      "terms": "Reading copy retained outside Git; no raw full-text redistribution."
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1016/j.jct.2018.12.034",
+      "path": "/private/tmp/cmm-round13-secondary-raw/antonick-crossref.json",
+      "accessed_at": "2026-10-11T09:00:12.162465+00:00",
+      "status": 200,
+      "bytes": 11055,
+      "sha256": "1dc6715c76462a8839b4d5d96e46c7e30c7ffd9892c2ce7778c5cb47209b992b",
+      "content_type": "application/json",
+      "terms": "Reading copy retained outside Git; no raw full-text redistribution."
+    },
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=442&retmode=xml",
+      "path": "/private/tmp/cmm-round13-secondary-raw/ncbi-gluconobacter.xml",
+      "accessed_at": "2026-10-11T09:00:12.162740+00:00",
+      "status": 200,
+      "bytes": 20760,
+      "sha256": "89f99310d5d7c407ef81f67b1446286364362a850c9e49e3e1d4518822fb9c5f",
+      "content_type": "text/xml; charset=UTF-8",
+      "terms": "Reading copy retained outside Git; no raw full-text redistribution."
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/2ea4/11820893/5b6b647ae886/molecules-30-00674-g007.jpg",
+      "path": "/private/tmp/cmm-round13-secondary-raw/phosphogypsum-fig7.jpg",
+      "accessed_at": "2026-10-11T09:00:12.162979+00:00",
+      "status": 200,
+      "bytes": 59276,
+      "sha256": "71b8d2f30da27b2b1726ed9a9e81819a243d5d2d3e33008b8ffe43b828d38e59",
+      "content_type": "image/jpeg",
+      "terms": "Reading copy retained outside Git; no raw full-text redistribution."
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/2ea4/11820893/14fbb744a4a6/molecules-30-00674-g008.jpg",
+      "path": "/private/tmp/cmm-round13-secondary-raw/phosphogypsum-fig8.jpg",
+      "accessed_at": "2026-10-11T09:00:12.163263+00:00",
+      "status": 200,
+      "bytes": 69248,
+      "sha256": "7add4af1ef7fecd82842d48cd2ac7a58ced0c19e931bc66c4dc6b0415f02257c",
+      "content_type": "image/jpeg",
+      "terms": "Reading copy retained outside Git; no raw full-text redistribution."
+    },
+    {
+      "url": "https://www.frontiersin.org/files/Articles/1347072/fmicb-15-1347072-HTML/image_m/Table_1.XLSX",
+      "path": "/private/tmp/cmm-round13-secondary-raw/lalropuia-supp.xlsx",
+      "accessed_at": "2026-10-11T09:03:13.020926+00:00",
+      "url_basis": "Source HTML lists Table_1.XLSX; tested standard Frontiers article-file route",
+      "error": "HTTP Error 404: Not Found",
+      "terms": "Article CC BY, publisher copyright statement inspected; retained outside Git."
+    },
+    {
+      "url": "https://www.vut.cz/uredni-deska/habilitace?action=priloha&priloha=226417",
+      "path": "/private/tmp/cmm-round6-aluminium-evidence/urik-habilitation.pdf",
+      "sha256": "1ad163bac045935f00a43d67208749ea3b2091d6fb4d0d3efedabf831f637d84",
+      "bytes": 15760716,
+      "status": "previously acquired at 2026-10-11T05:36:34Z; independently rehashed and full selected article re-read this pass, not freshly downloaded",
+      "terms": "Copyright 2015 Elsevier, all rights reserved; official author thesis copy; no redistribution license established."
+    }
+  ],
+  "derived_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round13-secondary-raw/antonick2019-p3.png",
+      "bytes": 244508,
+      "sha256": "110a7ead70306fef3c3e9150cbf5f90826aae8519c9eb529b69d6dc4063561de",
+      "basis": "local text extraction, PDF rendering, downloaded source image, or deduplication receipt; not independent evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-secondary-raw/antonick2019-p4.png",
+      "bytes": 262355,
+      "sha256": "34c86e11fea2d5a6e093b65e91c8d4e6a93d6e50dc77e7d1d1430a205ad6c895",
+      "basis": "local text extraction, PDF rendering, downloaded source image, or deduplication receipt; not independent evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-secondary-raw/antonick2019-p5.png",
+      "bytes": 155398,
+      "sha256": "b5ae99b97e05bfcab2c4584ce0721ca8c8b86aa0d5d10a9c2dc76fd717f3f669",
+      "basis": "local text extraction, PDF rendering, downloaded source image, or deduplication receipt; not independent evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-secondary-raw/antonick2019.txt",
+      "bytes": 27789,
+      "sha256": "5a8bcf2e2f4ff9181d9d739b86fd553269f15d53dd9564cbc87c5bed5907f3b9",
+      "basis": "local text extraction, PDF rendering, downloaded source image, or deduplication receipt; not independent evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-secondary-raw/battery-p8.png",
+      "bytes": 182667,
+      "sha256": "86f61be36eaa63d247884f5d08ea7d82884c0ea0f13ac9833d9129e07f9425e9",
+      "basis": "local text extraction, PDF rendering, downloaded source image, or deduplication receipt; not independent evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-secondary-raw/battery-p9.png",
+      "bytes": 233683,
+      "sha256": "04b56854e1d4d3650942d19a00203a75b3069a61ee6d1930ecb7a10554c5840b",
+      "basis": "local text extraction, PDF rendering, downloaded source image, or deduplication receipt; not independent evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-secondary-raw/lalropuia2024-p6.png",
+      "bytes": 279346,
+      "sha256": "ec2e123058bdd99026a78c4da0d7f33ff7e182cf4a4d313a1b8fbed4ee8f48e1",
+      "basis": "local text extraction, PDF rendering, downloaded source image, or deduplication receipt; not independent evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-secondary-raw/lalropuia2024-p7.png",
+      "bytes": 286066,
+      "sha256": "40072a53709a3cf057e62511a6a24901ca54223cc3367b8dd2a085f6ba58dcb5",
+      "basis": "local text extraction, PDF rendering, downloaded source image, or deduplication receipt; not independent evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-secondary-raw/lalropuia2024.txt",
+      "bytes": 63463,
+      "sha256": "7f387ca0a8b9c6049c8cfb3c81077e9f0093c5a4a1a704aa4c4e8c92d5cb1491",
+      "basis": "local text extraction, PDF rendering, downloaded source image, or deduplication receipt; not independent evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-secondary-raw/local-dedup-paths.txt",
+      "bytes": 1262,
+      "sha256": "80845bc830b9f80fade2547d81f22aa47f9bd23e60bab80acf928abafe679c9f",
+      "basis": "local text extraction, PDF rendering, downloaded source image, or deduplication receipt; not independent evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-secondary-raw/phosphogypsum-fig7.jpg",
+      "bytes": 59276,
+      "sha256": "71b8d2f30da27b2b1726ed9a9e81819a243d5d2d3e33008b8ffe43b828d38e59",
+      "basis": "local text extraction, PDF rendering, downloaded source image, or deduplication receipt; not independent evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-secondary-raw/phosphogypsum-fig8.jpg",
+      "bytes": 69248,
+      "sha256": "7add4af1ef7fecd82842d48cd2ac7a58ced0c19e931bc66c4dc6b0415f02257c",
+      "basis": "local text extraction, PDF rendering, downloaded source image, or deduplication receipt; not independent evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-secondary-raw/phosphogypsum.txt",
+      "bytes": 50263,
+      "sha256": "d99954cccf8e579c14bf57dc86d97345bfeb9c94e959c2f3397e58df23ea9734",
+      "basis": "local text extraction, PDF rendering, downloaded source image, or deduplication receipt; not independent evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-secondary-raw/raw-dedup-paths.txt",
+      "bytes": 1279,
+      "sha256": "fe8fd7a47b231f5d5acccc1b5271fcf724c7faffe57b76a820dcf3254c76e3a0",
+      "basis": "local text extraction, PDF rendering, downloaded source image, or deduplication receipt; not independent evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-secondary-raw/urik-p83.png",
+      "bytes": 217188,
+      "sha256": "ef6cd8f0ddcb1a08fba01b8c4bb97d67e9bf3d6143f09ed549b0595fb2ecf287",
+      "basis": "local text extraction, PDF rendering, downloaded source image, or deduplication receipt; not independent evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-secondary-raw/urik-p84.png",
+      "bytes": 260464,
+      "sha256": "ab30a978533645375e91890c9d2542ce0e102b894478b57e71ce4f5cdf7376ec",
+      "basis": "local text extraction, PDF rendering, downloaded source image, or deduplication receipt; not independent evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-secondary-raw/urik2015.txt",
+      "bytes": 34840,
+      "sha256": "2e1a4e4fcac78ec523a8f5b138b184bf52a9aea30b33d8140f6cdcd2844940f2",
+      "basis": "local text extraction, PDF rendering, downloaded source image, or deduplication receipt; not independent evidence"
+    }
+  ],
+  "primary_inspection": [
+    {
+      "doi": "10.3389/fmicb.2024.1347072",
+      "identity": "Lalropuia et al.,2024,Frontiers in Microbiology15:1347072; publisher HTML/PDF and Crossref match",
+      "read": "Full methods2.1-2.7,results3.1-3.3,Tables1-2; PDF Figures4-6 checked visually.",
+      "key_limits": [
+        "Original enrichment taxonomy does not establish post-adaptation community.",
+        "Sterile-medium pH and iron chemistry differ.",
+        "Source filter preparation0.45 vs0.2 micrometres not explicit.",
+        "Table2 adaptation doses disagree with Table1 equivalents.",
+        "Figure5 Co near2g/L exceeds nominal1.45g/L feed inventory implied by145g/kg\u00d710g/L; day-zero subtraction described, discrepancy unresolved.",
+        "No claimed complete recovery or pure isolated product."
+      ]
+    },
+    {
+      "doi": "10.1016/j.jinorgbio.2015.08.022",
+      "identity": "Urik et al.,2015,J Inorg Biochem152:154-159; official thesis reproduction matches Crossref",
+      "read": "Complete six-page paper, thesis PDF80-85; Figures3,5-9 rendered and visually inspected.",
+      "key_limits": [
+        "Al host phases unresolved by XRD.",
+        "No-fungus control no numerical detection limit.",
+        "Synthetic mixtureB result~142mg/L vs fungal~141mg/L uses2d vs7d and different media.",
+        "High-loading figure40 versus methods50g/L disagreement excluded by selecting0.2g assay."
+      ]
+    },
+    {
+      "doi": "10.1016/j.jct.2018.12.034",
+      "identity": "Antonick et al.,2019,J Chem Thermodynamics132:491-496; OSTI LLNL-JRNL-820031 copy cover2021 is repository timing, not newstudy",
+      "read": "Complete six-page manuscript PDF3-8; Table2 and Figures1-3 visually inspected or read.",
+      "key_limits": [
+        "Synthetic singly doped powders approximately1wt%REE, not industrial mixed residue.",
+        "Spent-medium cell-removal details not explicit.",
+        "Printed0.22mm filter unit unresolved; no silent micrometre conversion.",
+        "Ce rows have different concentration/percent ordering between organic lixiviants; no uniformly significant superiority assertion.",
+        "Y exception, overlapping95%CI, and sulfuric-acid superiority at equalmolarity retained.",
+        "No-detect mineralacid atpH2.1 andwater lacksnumericLOD."
+      ]
+    },
+    {
+      "doi": "10.3390/molecules30030674",
+      "identity": "Zhang et al.,2025,Molecules30(3):674; fullPMC HTML,figures,Crossref match",
+      "read": "Full article; methods3.1-3.3,Tables1-2/4,Figures5-8; Figure7 directly inspected.",
+      "key_limits": [
+        "Supplier-labelled culture, no strainidentifier.",
+        "Figure7axis micrograms/kg versus prose micrograms/L; peakaroundday24 vs conclusion~21day.",
+        "Reported24.67% and55.67%Nd not accepted due unresolved denominator/protocol.",
+        "100+50mL supplementation andL/Sbasis unclear.",
+        "No matchedacidified no-cellcontrol; errorbarndefinition unreported.",
+        "Organicacid identities/concentrations not measured."
+      ]
+    }
+  ],
+  "identity_resolution": {
+    "root_external_ids": "No verified external identifiers asserted for heterogeneous waste roots.",
+    "organisms": {
+      "NCBITaxon:5061": "Current NCBI XML species Aspergillus niger; does not authenticate G-10",
+      "NCBITaxon:442": "Current NCBI XML species Gluconobacter oxydans; does not authenticate B58 or unspecified Zhang culture"
+    },
+    "criticality": "Absent for all three roots; no inheritance from elements or commodities."
+  },
+  "deferred": [
+    {
+      "candidate": "Spent hydroprocessing refinery catalyst",
+      "doi": "10.1016/j.hydromet.2010.11.011",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0304386X10003051",
+      "status": "Primary publisher abstract/sections inspected; complete methods/controls not obtained in this bounded pass. No record or quantitative measurement imported.",
+      "next_step": "Acquire fulltext and supplements legitimately; reconcile catalyst type, pretreatment, strain and abiotic controls before mechanism curation."
+    },
+    {
+      "candidate": "Coal fly ash",
+      "doi": "10.1016/j.hydromet.2023.106038",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0304386X23000208",
+      "status": "Existing round5 lead, publisher abstract/sections rechecked; full methods not acquired. It is a salt-roasted feed/spent-medium sequential process, distinct from municipal-incineration ash currently under niobium.",
+      "next_step": "Acquire full methods and compare chemically matched controls and roasting-only contribution before curation."
+    },
+    {
+      "candidate": "Spent fluid catalytic cracking catalyst",
+      "status": "Verified publisher title/DOI/pages via live search and found legitimate OSTI manuscript1357607; full methods not yet read. Distinct FCC waste identity warrants next bounded curation pass.",
+      "next_step": "Read full OSTI manuscript methods, catalyst preparation and matched controls, then curate FCC secondary-resource root if supported; do not merge it with hydroprocessing/automotive catalysts.",
+      "doi": "10.1016/j.hydromet.2016.08.006",
+      "title": "Bioleaching of rare earth elements from waste phosphors and cracking catalysts",
+      "url": "https://www.osti.gov/servlets/purl/1357607"
+    }
+  ],
+  "validation": {
+    "command": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate data/records/battery-black-mass.yaml data/records/bauxite-residue.yaml data/records/phosphogypsum.yaml",
+    "exit_code": 0,
+    "result": "Checked3records;0failed",
+    "batch_gate": "Owned by parent agent; not yet asserted by this dossier.",
+    "independent_review": "Parent agent assigned; this dossier is not a scientific review artifact."
+  }
+}

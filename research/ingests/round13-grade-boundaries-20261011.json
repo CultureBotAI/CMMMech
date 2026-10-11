@@ -1,0 +1,439 @@
+{
+  "schema_version": "research-dossier-1",
+  "prepared_at": "2026-10-11T09:03:11.274709+00:00",
+  "author": {
+    "actor": "codex",
+    "model": "GPT-6",
+    "tool": "codex",
+    "agent": "round13_grade_boundaries"
+  },
+  "worktree": "/private/tmp/CMMMech-expansion-round13-20261011",
+  "git_base": "14ceff0da3e19d6d36426d33f4cf577b8e64760f",
+  "scope": "Six deferred round-12 commodity proposals; authoritative product boundaries and source-scoped coal record. Not a global CMM or mechanism search.",
+  "queries": [
+    "site.eur-lex.europa.eu \"2024/1252\" \"battery grade\" \"specifications\"",
+    "site.rmis.jrc.ec.europa.eu \"boron\" \"metallurgy\" \"ferroboron\"",
+    "site.usgs.gov \"metallurgical coal\" \"pulverized\"",
+    "site.energy.gov \"battery grade\" \"lithium carbonate\" \"99.5\"",
+    "\"2024/1252\" \"grade\" \"delegated\" specifications",
+    "\"boron\" \"metallurgy grade\" definition",
+    "\"battery grade\" \"manganese\" site.rmis.jrc.ec.europa.eu",
+    "\"graphite\" \"battery grade\" specification site.energy.gov",
+    "\"2024/1252\" \"battery grade\" \"definition\"",
+    "\"2024/1252\" \"boron\" \"delegated regulation\"",
+    "\"metallurgical coal\" site.eia.gov/tools/glossary",
+    "\"metallurgical coal\" \"PCI\" site.ga.gov.au",
+    "\"ferroboron\" site:astm.org",
+    "\"manganese sulphate\" site:iso.org",
+    "\"nickel sulphate\" site:standards.iteh.ai battery",
+    "\"battery grade\" \"graphite\" site:iso.org",
+    "\"battery grade\" \"lithium\" site:std.samr.gov.cn",
+    "\"硫酸锰\" \"电池\" site:std.samr.gov.cn",
+    "\"硫酸镍\" \"电池\" site:std.samr.gov.cn",
+    "\"石墨\" \"负极\" site:std.samr.gov.cn",
+    "\"电池级碳酸锂\" site:std.samr.gov.cn",
+    "\"硼铁\" site:std.samr.gov.cn",
+    "\"2024/1252\" \"delegated\" \"2026\" site:eur-lex.europa.eu",
+    "\"2024/1252\" \"implementing\" \"grade\" site:eur-lex.europa.eu",
+    "\"GB/T 26008-2020\" site:std.samr.gov.cn/gb/search/gbDetailed",
+    "\"boron\" \"metallurgy grade\" site:single-market-economy.ec.europa.eu",
+    "\"Critical Raw Materials Act\" \"battery grade\" specifications delegated 2026",
+    "\"nickel sulphate\" \"battery\" specification site:lme.com",
+    "\"manganese sulphate\" \"battery grade\" site:iso.org"
+  ],
+  "query_count": 29,
+  "query_provider": "web.run",
+  "search_limit": "First returned result sets and linked follow-ups, no pagination or exhaustive legislation-register audit.",
+  "local_search": {
+    "hidden_and_ignored_included": true,
+    "symlinks_followed": true,
+    "roots": [
+      "data/records",
+      "research",
+      "reviews",
+      "history"
+    ],
+    "raw_roots": [
+      "/private/tmp/cmm-round12-carbon-metals-raw",
+      "/private/tmp/cmm-round12-aluminium-boron-raw"
+    ],
+    "bounded_inventory_count": 764,
+    "duplicate_result": "Prior proposal/source references retained; no exact metallurgical-coal record ID before creation. YS/T 582-2023 already mentioned in a round-12 raw search; issuing registry verified this round. Binary PDFs separately read.",
+    "receipts": [
+      "/private/tmp/cmm-round13-grade-raw/bounded-path-inventory.json",
+      "/private/tmp/cmm-round13-grade-raw/exact-dedup.txt",
+      "/private/tmp/cmm-round13-grade-local-hits.txt"
+    ]
+  },
+  "decisions": [
+    {
+      "candidate": "metallurgical-coal",
+      "decision": "create_source_scoped_family",
+      "path": "data/records/metallurgical-coal.yaml",
+      "basis": "EIA broader steelmaking definition independently corroborated by IEA Coal 2020; explicitly overlaps existing coking-coal. USGS 2026 narrower coke-making usage retained.",
+      "sha256": "0e29f90b88c69ece7febeccc3ad8c58d4336b4e6457610633bac25a3365b8f2a",
+      "history_path": "history/records/metallurgical-coal/2026-10-11T090113Z-codex-5e05f9.yaml",
+      "history_sha256": "86bffc448d6320ffc295c9d7999029404577be330b9e32199b07587c4b623399",
+      "criticality": "omitted; no scope transfer",
+      "mechanisms": "omitted; no inherited experiment"
+    },
+    {
+      "candidate": "boron-metallurgy-grade",
+      "decision": "defer",
+      "preferred_forms": [
+        "ferroboron",
+        "boric oxide",
+        "boric acid",
+        "refined borates"
+      ],
+      "reason": "EU qualifier lacks product composition in inspected original act/factsheet; ferroboron is a separate alloy, not the entire qualifier."
+    },
+    {
+      "candidate": "graphite-battery-grade",
+      "decision": "defer",
+      "preferred_forms": [
+        "graphite negative-electrode materials",
+        "purified spherical natural graphite",
+        "synthetic graphite anode products"
+      ],
+      "reason": "Current SAMR product-standard metadata verified; complete criteria/qualification and EU mapping not acquired."
+    },
+    {
+      "candidate": "lithium-battery-grade",
+      "decision": "defer",
+      "preferred_forms": [
+        "lithium carbonate",
+        "lithium hydroxide monohydrate",
+        "anhydrous lithium hydroxide"
+      ],
+      "reason": "Distinct product standards and hydration states; no universal purity threshold or automatic grade mapping."
+    },
+    {
+      "candidate": "manganese-battery-grade",
+      "decision": "defer",
+      "preferred_forms": [
+        "battery-use manganese sulfate",
+        "electrolytic manganese metal",
+        "electrolytic manganese dioxide"
+      ],
+      "reason": "JRC battery-grade capacity includes three product types; sulfate-only treatment would narrow the umbrella without justification."
+    },
+    {
+      "candidate": "nickel-battery-grade",
+      "decision": "defer",
+      "preferred_forms": [
+        "battery-use nickel sulfate"
+      ],
+      "reason": "Specific salt product distinct from Class I nickel and upstream metallurgy intermediates; full specification unavailable."
+    }
+  ],
+  "acquisitions": [
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/iea-coal-2020-annex.html",
+      "url": "https://www.iea.org/reports/coal-2020/annex",
+      "retrieved_at": "2026-10-11T08:59:55.559349+00:00",
+      "status": 200,
+      "final_url": "https://www.iea.org/reports/coal-2020/annex",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 428772,
+      "sha256": "1acd77a5ffb7b21d2b60ec4bfd3d94366125f67dfc3fa2978bff889401de84b0"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/eia-metallurgical-coal.html",
+      "url": "https://www.eia.gov/tools/glossary/index.php?id=Metallurgical+coal",
+      "retrieved_at": "2026-10-11T08:59:55.560440+00:00",
+      "status": 200,
+      "final_url": "https://www.eia.gov/tools/glossary/index.php?id=Metallurgical+coal",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 46893,
+      "sha256": "aef54d5a8222d07f1c00f8aa7b04b3f999bb17ba80ec322b63f1d20816aa9f8e"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/eu-crma-original.html",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1252/oj/eng",
+      "retrieved_at": "2026-10-11T08:59:55.560834+00:00",
+      "status": 200,
+      "final_url": "https://eur-lex.europa.eu/eli/reg/2024/1252/oj/eng",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 1054960,
+      "sha256": "6492c32cfd5d89910e2c167174db801dfefd7713a4a63a5a5d299f479d0fc574"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/eu-2026-1116.html",
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2026/1116/oj/eng",
+      "retrieved_at": "2026-10-11T08:59:55.561135+00:00",
+      "status": 200,
+      "final_url": "https://eur-lex.europa.eu/eli/reg_impl/2026/1116/oj/eng",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 300877,
+      "sha256": "85cc4659d2a29acf8d9eee45641b7b520db2dae9ea9b6db98ad62d0fab7c3291"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/doe-battery-workshop-2022.pdf",
+      "url": "https://www.energy.gov/sites/default/files/2022-01/Battery%20Critical%20Materials%20Workshop%20Report%20-%20FINAL.pdf",
+      "retrieved_at": "2026-10-11T08:59:55.561419+00:00",
+      "status": 200,
+      "final_url": "https://www.energy.gov/sites/default/files/2022-01/Battery%20Critical%20Materials%20Workshop%20Report%20-%20FINAL.pdf",
+      "content_type": "application/pdf",
+      "bytes": 877741,
+      "sha256": "c0679364c2f8da85fed8a303b560df1db85f9602e080720871814e9e4a2c4bf8"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/jrc-production-methods-2023.pdf",
+      "url": "https://rmis.jrc.ec.europa.eu/uploads/rmprofiles/info-production.pdf",
+      "retrieved_at": "2026-10-11T08:59:55.561709+00:00",
+      "status": 200,
+      "final_url": "https://rmis.jrc.ec.europa.eu/uploads/rmprofiles/info-production.pdf",
+      "content_type": "application/pdf",
+      "bytes": 1921813,
+      "sha256": "330adb9892238b355818baab15706be96696c821dc8d8d5d111c2a4556f9af09"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/boron-eu-2025.pdf",
+      "url": "https://single-market-economy.ec.europa.eu/document/download/d6fb1296-b08c-4f80-b735-0f9f1fc36603_en?filename=RMSP_Boron_Factsheet_V2.pdf",
+      "retrieved_at": "2026-10-11T08:59:55.919810+00:00",
+      "status": 200,
+      "final_url": "https://webgate.ec.europa.eu/circabc-ewpp/d/d/workspace/SpacesStore/5d5ed160-eb06-4e09-99c4-c20ea05ee8c8/download",
+      "content_type": "application/pdf; charset=UTF-8",
+      "bytes": 366177,
+      "sha256": "06f5a5c32e08a872f118b74c44aef0005b778c6474fb690670725ec7101f3582"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/samr-graphite.html",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=8531C702DBA16551E05397BE0A0ACD16",
+      "retrieved_at": "2026-10-11T08:59:56.404828+00:00",
+      "status": 200,
+      "final_url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=8531C702DBA16551E05397BE0A0ACD16",
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 77440,
+      "sha256": "7a1c76133fd06759f9ae5d37e385c717da5e2983ade72dd8a65729023e24c2ab"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/samr-lithium-carbonate.html",
+      "url": "https://std.samr.gov.cn/hb/search/stdHBDetailed?id=1C51E7879EF6D54EE06397BE0A0A1DC6",
+      "retrieved_at": "2026-10-11T08:59:56.766076+00:00",
+      "status": 200,
+      "final_url": "https://std.samr.gov.cn/hb/search/stdHBDetailed?id=1C51E7879EF6D54EE06397BE0A0A1DC6",
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 61647,
+      "sha256": "a456103c795411cc111382622c1e6b6bbc4c47de1b00f1e751f2ad9ef0af9755"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/samr-manganese-sulfate.html",
+      "url": "https://std.samr.gov.cn/hb/search/stdHBDetailedCNF?id=037FCC3702C04EF6E06397BE0A0A09CA",
+      "retrieved_at": "2026-10-11T08:59:56.936083+00:00",
+      "status": 200,
+      "final_url": "https://std.samr.gov.cn/hb/search/stdHBDetailedCNF?id=037FCC3702C04EF6E06397BE0A0A09CA",
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 24688,
+      "sha256": "1dc3a129fee270e35aa9f72996c05b047efebf2e7fa35e2ea9b645a782fcd9dd"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/samr-nickel-sulfate.html",
+      "url": "https://std.samr.gov.cn/hb/search/stdHBDetailedCNF?id=D7B6988FD9BCAABEE05397BE0A0A1B36",
+      "retrieved_at": "2026-10-11T08:59:57.668126+00:00",
+      "status": 200,
+      "final_url": "https://std.samr.gov.cn/hb/search/stdHBDetailedCNF?id=D7B6988FD9BCAABEE05397BE0A0A1B36",
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 26088,
+      "sha256": "2dc9af6d884ba24d5956610406a12817d1a882ecb2e43ec9b3991c8aca3eb5cf"
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/samr-ferroboron.html",
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D80975D3A7E05397BE0A0AB82A",
+      "retrieved_at": "2026-10-11T08:59:58.201173+00:00",
+      "status": 200,
+      "final_url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D80975D3A7E05397BE0A0AB82A",
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 68338,
+      "sha256": "a8554503f616cb74e853f3e35a0374dbd8ec48d68ce27214c41a37af53fff8e0"
+    }
+  ],
+  "reused_sources": [
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/usgs-coal2026.pdf",
+      "sha256": "033f9d3ff40d243893a762050584f80d03edf7565010549d1e5ec5b3d9e22f8b",
+      "state": "reused round-12 download; rehashed and selected relevant pages re-read; not freshly downloaded"
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/jrc-foresight2023.pdf",
+      "sha256": "6c3496280b3068500705dbf96f139b700fe26a939b4ce6754b37ab91b2dede1e",
+      "state": "reused round-12 download; rehashed and selected relevant pages re-read; not freshly downloaded"
+    }
+  ],
+  "additional_sources_web_only": [
+    {
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=A73D6262FE9172E3E05397BE0A0A6CEB",
+      "scope": "GB/T26008-2020 identity, publication/effective dates and replaced2010edition; full technical text not read"
+    },
+    {
+      "url": "https://www.fastmarkets.com/methodology/lithium-methodology-faqs/",
+      "scope": "September2026 buyer-qualification methodology for two distinct lithium-salt benchmarks; no universal standard"
+    },
+    {
+      "url": "https://store.astm.org/a0323-05r25.html",
+      "scope": "ASTM A323-05(2025) public catalogue scope; complete grade tables not read"
+    },
+    {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=A4CB5DFFF730E0F4EB3183C5A58A1F49",
+      "scope": "Ferroboron preview/download entry; full content unavailable through textual route"
+    },
+    {
+      "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=FE0090588E0DF360928A9927A9A724A1",
+      "scope": "Graphite product preview/download entry; full content unavailable through textual route"
+    }
+  ],
+  "rights": {
+    "raw_materials": "Not committed. IEA Coal2020 cites CC BY4.0; boron factsheet CC BY4.0 with third-party caveat; government documents retained locally; SAMR/ASTM standards rights reserved; other reuse not established."
+  },
+  "validation": [
+    {
+      "command": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate data/records/metallurgical-coal.yaml",
+      "exit_code": 0,
+      "result": "Checked1record;0failed"
+    },
+    {
+      "command": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate-history history/records/metallurgical-coal/2026-10-11T090113Z-codex-5e05f9.yaml --base 14ceff0da3e19d6d36426d33f4cf577b8e64760f",
+      "exit_code": 0,
+      "result": "Checked1history;0errors"
+    }
+  ],
+  "limitations": [
+    "Five qualified umbrella proposals remain deferred; no absence-of-standards claim.",
+    "Only original EU2024designations checked; no complete amendment graph available.",
+    "No microbial experiment or chemical external identifier newly asserted.",
+    "Independent review and finalbatch gates root-owned; do not infer completion from this dossier."
+  ],
+  "raw_receipts": [
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/acquire.py",
+      "sha256": "9d693cbc30c97fced0e286ef21716c262027f94a023db574cae9297ed8bf2955",
+      "bytes": 854
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/acquisitions.json",
+      "sha256": "c44a12b38502987cf85d75e034395e7848f50c4b93c66b21cb6f8a51eb53522b",
+      "bytes": 5993
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/boron-eu-2025.pdf",
+      "sha256": "06f5a5c32e08a872f118b74c44aef0005b778c6474fb690670725ec7101f3582",
+      "bytes": 366177
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/boron-eu-2025.pdf-page1.png",
+      "sha256": "70bfe246203f4adb0561c4c32138df8460700f1e9dff7c9d31a1be50a58abe28",
+      "bytes": 496942
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/boron-eu-2025.pdf.txt",
+      "sha256": "c54c88499d7bb5a282ecbe99e7438fbb1db9299189195868bbe2dba570545946",
+      "bytes": 1707
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/bounded-path-inventory.json",
+      "sha256": "82e965dcc79bf665f4a5c978b8fa84dc07babb3ce6a24d777f60c4bdf4168c14",
+      "bytes": 79387
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/doe-battery-workshop-2022.pdf",
+      "sha256": "c0679364c2f8da85fed8a303b560df1db85f9602e080720871814e9e4a2c4bf8",
+      "bytes": 877741
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/doe-battery-workshop-2022.pdf-page23.png",
+      "sha256": "0af3acfa91ecd95704b6b084c3f1811d490d86e08ff0f1331e1e735398d545cc",
+      "bytes": 337225
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/doe-battery-workshop-2022.pdf-page35.png",
+      "sha256": "213d3176fd3df7f635de3af8bb237447ca3e03295f8ac7adac1131a1a89a3d91",
+      "bytes": 225621
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/doe-battery-workshop-2022.pdf.txt",
+      "sha256": "ead2302aff1a730f3b7f1a8e82b65a118bd74b6b39ae76d61e1b2318980ecaf5",
+      "bytes": 141743
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/download-plan.json",
+      "sha256": "d18a5e967bcf791a1abd4d018fe201f76e445211ff578fc26a5c63021e7fe6c0",
+      "bytes": 1355
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/eia-metallurgical-coal.html",
+      "sha256": "aef54d5a8222d07f1c00f8aa7b04b3f999bb17ba80ec322b63f1d20816aa9f8e",
+      "bytes": 46893
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/eu-2026-1116.html",
+      "sha256": "85cc4659d2a29acf8d9eee45641b7b520db2dae9ea9b6db98ad62d0fab7c3291",
+      "bytes": 300877
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/eu-crma-original.html",
+      "sha256": "6492c32cfd5d89910e2c167174db801dfefd7713a4a63a5a5d299f479d0fc574",
+      "bytes": 1054960
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/exact-dedup.txt",
+      "sha256": "fe180c8bb2011a092077181003c1917968601a4bc9bf153f51cc566785ce19d0",
+      "bytes": 36271
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/iea-coal-2020-annex.html",
+      "sha256": "1acd77a5ffb7b21d2b60ec4bfd3d94366125f67dfc3fa2978bff889401de84b0",
+      "bytes": 428772
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/jrc-production-methods-2023.pdf",
+      "sha256": "330adb9892238b355818baab15706be96696c821dc8d8d5d111c2a4556f9af09",
+      "bytes": 1921813
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/jrc-production-methods-2023.pdf-page143.png",
+      "sha256": "5b000d63c3e97ffe7713136370e004aefe284183a55079ac08c22786fffe7622",
+      "bytes": 111105
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/jrc-production-methods-2023.pdf.txt",
+      "sha256": "826cb2fe5d2578523b11df011c917bd1cdc0060ba64a3dba2412d43edc7d57ba",
+      "bytes": 704080
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/samr-ferroboron.html",
+      "sha256": "a8554503f616cb74e853f3e35a0374dbd8ec48d68ce27214c41a37af53fff8e0",
+      "bytes": 68338
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/samr-graphite.html",
+      "sha256": "7a1c76133fd06759f9ae5d37e385c717da5e2983ade72dd8a65729023e24c2ab",
+      "bytes": 77440
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/samr-lithium-carbonate.html",
+      "sha256": "a456103c795411cc111382622c1e6b6bbc4c47de1b00f1e751f2ad9ef0af9755",
+      "bytes": 61647
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/samr-manganese-sulfate.html",
+      "sha256": "1dc3a129fee270e35aa9f72996c05b047efebf2e7fa35e2ea9b645a782fcd9dd",
+      "bytes": 24688
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/samr-nickel-sulfate.html",
+      "sha256": "2dc9af6d884ba24d5956610406a12817d1a882ecb2e43ec9b3991c8aca3eb5cf",
+      "bytes": 26088
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/web-receipts-1.json",
+      "sha256": "a44ecd90f0453c4da6cdae664eabec55d9edaf2d51ab526c7e19cc3266756f49",
+      "bytes": 262555
+    },
+    {
+      "path": "/private/tmp/cmm-round13-grade-raw/web-receipts-2.json",
+      "sha256": "fba668bd844d32317bfdb714056f4cc1e649314f22a89a33e877662538595b1f",
+      "bytes": 39128
+    }
+  ]
+}

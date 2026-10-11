@@ -1,0 +1,83 @@
+id: cmmmech:battery-black-mass
+name: Spent lithium-ion battery black mass
+material_kind: secondary_resource
+description: >-
+  A heterogeneous powder stream produced by pretreatment of spent lithium-ion
+  batteries. Composition depends on battery chemistry and processing; the
+  curated experiment used nickel-manganese-cobalt battery material after
+  discharging, dismantling, thermal treatment, crushing and sorting. This
+  secondary resource is distinct from whole batteries, an individual cathode
+  compound, cobalt or lithium elements, and recovered battery-grade products.
+  Constituent-element criticality is not inherited by this mixed feed.
+sources:
+  - id: lalropuia2024
+    title: >-
+      Lalropuia et al. (2024). Metal recovery from spent lithium-ion batteries
+      via two-step bioleaching using adapted chemolithotrophs from an acidic
+      mine pit lake. Frontiers in Microbiology 15:1347072.
+      DOI 10.3389/fmicb.2024.1347072; Sections 2.1-2.7 and 3.1-3.3,
+      Tables 1-2 and Figures 4-6.
+    url: https://doi.org/10.3389/fmicb.2024.1347072
+    accessed_on: '2026-10-11'
+mechanisms:
+  - id: adapted_acidophile_black_mass_leaching
+    name: Adapted acidophile consortium leaching of NMC battery black mass
+    process: bioleaching
+    microbial: true
+    description: >-
+      A living acidophilic enrichment from Lake Hromnice sediment mobilized
+      metals from a pretreated NMC battery black mass. Culture-associated
+      acidification and iron cycling accompanied release; the experiment does
+      not separate acid chemistry from a direct cellular contribution or
+      establish which community member caused the effect. Adaptation to
+      dissolved-metal mixtures improved several measured leachate outcomes.
+    context: >-
+      Laboratory flasks contained 50 mL FeS medium with 50 mM ferrous sulfate,
+      1% w/v elemental sulfur and initial pH 2.0, inoculated at 10% v/v.
+      Seven days of preculture preceded addition of 1% w/v black mass, followed
+      by seven days at 30 degrees C and 150 rpm. The tested powder had d10,
+      d50 and d90 of 4.4, 17.2 and 55.0 micrometres; thermal pretreatment
+      temperature and time were not specified. Original FeS enrichment was
+      dominated by Acidithiobacillus thiooxidans, with Alicyclobacillus also
+      detected; the post-adaptation community was not established. No pure
+      strain or causal organism identifier is assigned. Adaptation consisted
+      of three 14-day exposures to synthetic mixtures of Li, Co, Ni, Mn and Cu
+      salts. Abiotic sterile FeS medium and non-adapted culture were tested
+      alongside adapted culture. Figure captions report n=3 and standard
+      deviations. This is laboratory solubilization, not industrial operation.
+    evidence:
+      - source_ref: lalropuia2024
+        supports: support
+        explanation: >-
+          Sections 2.5-2.6 and 3.3, Figures 4-6: adapted cultures produced
+          higher day-two leachate concentrations of the monitored metals
+          except Cu than non-adapted cultures and abiotic controls, according
+          to the reported comparisons. Concentrations generally peaked by
+          day two. ICP-OES measured filtered, acid-treated leachate and
+          day-zero metal backgrounds were subtracted; this establishes
+          mobilization rather than isolation of pure products. Section 2.5
+          describes 0.45-micrometre filtration, while Section 2.6 specifies
+          a 0.2-micrometre analytical sample filter; the precise relationship
+          of these preparation steps is not explicit.
+      - source_ref: lalropuia2024
+        supports: partial
+        explanation: >-
+          Figure 4 shows different pH and iron speciation in sterile and
+          inoculated arms, preventing attribution of the difference uniquely
+          to direct cell contact. Iron-mediated reduction, sulfur oxidation
+          and copper catalysis are proposed explanations, not separately
+          demonstrated molecular pathways. Table 2 adaptation doses do not
+          consistently equal Table 1 composition multiplied by the stated
+          black-mass equivalents. Figure 5 adapted-Co concentrations near
+          2 g/L also exceed the 1.45 g/L inventory implied by Table 1's
+          145 g Co/kg and the stated 1% w/v feed loading. These unresolved
+          source quantities prevent acceptance of a closed mass balance or
+          the abstract's complete-recovery claim; no corrected yield is inferred.
+curation_history:
+  - timestamp: '2026-10-11T09:02:35.257931+00:00'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Created mixed battery black-mass identity and qualified acidophile leaching evidence, preserving source mass-balance and matched-control limitations.
+history_refs:
+  - history/records/battery-black-mass/2026-10-11T090220Z-codex-601df7.yaml
