@@ -1,0 +1,15 @@
+# Remaining evidence priorities after round 35
+
+This bounded investigation adds anglesite, jarosite, ningyoite and schwertmannite as distinct mineral owners. These additions reuse some experiments already represented from a different material perspective; they are not four independent replications. No exhaustive source or material coverage is claimed.
+
+| Priority | Material or existing owner | Next evidence task |
+|---|---|---|
+| 1 | Uramphite candidate | Verify current IMA identity, then assess the precipitated feed in the inspected Khijniak2005 experiment, DOI [10.1128/AEM.71.10.6423-6426.2005](https://doi.org/10.1128/AEM.71.10.6423-6426.2005). Do not turn source reuse into independent replication or equate a formula with confirmed mineral identity. |
+| 2 | Existing ningyoite | Obtain complete original methods, phase figures and supplements for [Newsome2015](https://doi.org/10.1021/acs.est.5b02042), then assess crystalline versus molecular U(IV), stability and remobilization evidence. The dossier includes author-repository leads, not accepted new measurements. |
+| 3 | Existing anglesite and galena | Acquire full [Weijma2002](https://doi.org/10.1021/bp025523k) and sulfate-reduction comparators. Resolve synthetic mineral versus battery-paste feed, sulfur donor, community, mixed product phases and recovery denominator. Abstracts are insufficient. |
+| 4 | Existing schwertmannite | Recover the missing DataSheet1.docx for [Li2024](https://doi.org/10.3389/fenvs.2024.1482113) through a legitimate public route; reconcile adsorption values and pH assignments against original methods before extending the accepted 2018 formation observation. |
+| 5 | Existing jarosite | Assess additional full primary reduction/formation studies and distinguish K-jarosite from hydronium/sodium variants and industrial mixed residues. Retain changing pH, abiotic sulfur reactions and contradictory numerical reporting. |
+| Carry forward | Existing galena, greigite, mackinawite and uraninite | The [round34 frontier](round34-frontier-20261011.md) retains unreviewed mineral-specific studies and field-speciation leads. None is automatically admitted by association. |
+| Access queue | Tungsten mining waste and ilmenite | [#103](https://github.com/CultureBotAI/CMMMech/issues/103) and [#104](https://github.com/CultureBotAI/CMMMech/issues/104) remain open. Acquire complete methods, figures and supplements and reconcile identities/contradictions before admission. |
+
+The four timestamped source dossiers under `research/sources/round35-*` preserve search coverage, raw-file hashes, primary locators and access limits. Raw copyrighted papers and figures remain outside Git. Before another addition, repeat hidden/ignored-inclusive deduplication across records, research, reviews, history and referenced downloads, following relevant symlinks. Use the add-record and independent review skills; preserve conditions, controls, null results and distinctions between solution changes, mineral phases and recovered product.

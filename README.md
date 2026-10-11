@@ -204,6 +204,10 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Greigite](data/records/greigite.yaml) | Extracellular phase formation in two Thermococcales studies | Mixed assemblages, bulk detection limits and incomplete controls constrain causal and yield claims |
 | [Mackinawite](data/records/mackinawite.yaml) | Sulfate-reducing cultures and inactive biomass influence crystal growth | Abiotic formation, unequal pretreatment and fitted domain sizes do not establish recovery yield |
 | [Uraninite](data/records/uraninite.yaml) | MR-1 forms diffraction-identified UO2 nanoparticles | Genetic comparator limits and medium-dependent non-uraninite products prevent universal phase or field claims |
+| [Anglesite](data/records/anglesite.yaml) | Culture-associated formation in a galena-concentrate residue | Anglesite also forms in the control; relative phase proportions are not recovery yields |
+| [Jarosite](data/records/jarosite.yaml) | Sulfur-oxidizing cultures promote reduction and dissolution of K-jarosite | Sulfur substrates, pH and nonzero abiotic controls limit causal and quantitative comparisons |
+| [Ningyoite](data/records/ningyoite.yaml) | U(IV)-phosphate formation in thermophilic cultures and a spore preparation | Species versus strain scope, mixed products and minority-phase detection remain explicit |
+| [Schwertmannite](data/records/schwertmannite.yaml) | Resting iron-oxidizing cells form an iron oxyhydroxysulfate material | Matched oxidation controls and biomass perturbations constrain formation and adsorption claims |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -245,7 +249,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [thirty-second expansion reviews](research/ingests/round32-20261011-publication.md),
 [thirty-third expansion reviews](research/ingests/round33-20261011-publication.md),
 [thirty-fourth expansion reviews](research/ingests/round34-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round34-frontier-20261011.md), and
+[thirty-fifth expansion reviews](research/ingests/round35-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round35-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 
