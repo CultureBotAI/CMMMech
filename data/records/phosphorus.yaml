@@ -1,0 +1,99 @@
+id: cmmmech:phosphorus
+name: Phosphorus
+material_kind: element
+description: >-
+  Phosphorus (P), the chemical element. Canada's named phosphorus material
+  designation is mapped to this element; it is not a designation of every
+  phosphate salt or mineral. The experiment concerns phosphate mobilization
+  from a mixed struvite/dittmarite feed, not elemental phosphorus production.
+identifiers:
+  - id: CHEBI:28659
+    label: phosphorus atom
+sources:
+  - id: chebi_phosphorus
+    title: 'ChEBI:28659 - phosphorus atom; formula P, net charge zero'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:28659
+    accessed_on: '2026-10-11'
+  - id: canada_2024
+    title: >-
+      Natural Resources Canada. Critical minerals: an opportunity for Canada.
+      Canada's 34-entry Critical Minerals List, 2024 update, Phosphorus row.
+    url: https://www.canada.ca/en/campaign/critical-minerals-in-canada/critical-minerals-an-opportunity-for-canada.html
+    accessed_on: '2026-10-11'
+  - id: canada_2024_announcement
+    title: >-
+      Natural Resources Canada (10 June 2024). Government of Canada Releases
+      Updated Critical Minerals List; edition and phosphorus addition.
+    url: https://www.canada.ca/en/natural-resources-canada/news/2024/06/government-of-canada-releases-updated-critical-minerals-list.html
+    accessed_on: '2026-10-11'
+  - id: kang_2022
+    title: >-
+      Kang, Csetenyi, Gao and Gadd (2022). Solubilization of struvite and
+      biorecovery of cerium by Aspergillus niger. Applied Microbiology and
+      Biotechnology 106:821-833. DOI 10.1007/s00253-021-11721-0;
+      PMC8763747; Methods, Figures 1-2, Table 1 and Discussion.
+    url: https://doi.org/10.1007/s00253-021-11721-0
+    accessed_on: '2026-10-11'
+  - id: ncbi_atcc1015
+    title: 'NCBI Taxonomy 380704 - Aspergillus niger ATCC 1015, no-rank strain entry'
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=380704&mode=Info
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: Canada
+    list_name: Natural Resources Canada Critical Minerals List
+    edition: '2024 update, announced 10 June 2024'
+    classification: critical
+    source_ref: canada_2024
+mechanisms:
+  - id: fungal_struvite_phosphate_mobilization
+    name: Phosphate mobilization during fungal growth on struvite-bearing material
+    process: bioleaching
+    description: >-
+      Aspergillus niger ATCC 1015 growth was associated with acidification,
+      oxalic acid production and increased soluble inorganic phosphate in
+      struvite-containing medium. Acid-mediated dissolution is supported;
+      oxalate's exclusive causal contribution is not isolated by this experiment.
+    context: >-
+      Laboratory natural struvite fragments from a Veolia Water Outsourcing
+      site in Exeter, UK, were pulverized and oven-treated at 105 degrees C
+      for 48 h. XRD identified struvite plus dittmarite in the feed. Flasks
+      contained 1% w/v feed in 200 mL modified Czapek-Dox medium, inoculated
+      with 1 x 10^6 spores/mL and incubated for 14 days at 25 degrees C,
+      125 rpm, in darkness. Medium pH was adjusted to 5.5 before autoclaving;
+      this is not a measured post-feed starting pH. The medium already
+      contained 1 g/L Na2HPO4, so struvite was not the sole phosphorus source.
+      These are laboratory mobilization results without an isolated
+      phosphorus product yield or demonstrated industrial deployment.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:380704
+        label: Aspergillus niger ATCC 1015
+    evidence:
+      - source_ref: kang_2022
+        supports: support
+        explanation: >-
+          Results and Figure 2B report final soluble Pi of 51.37 +/- 0.59 mM
+          in the struvite-containing fungal culture; Figure 2 specifies means
+          and standard errors from at least three replicates. Final pH was
+          2.46 +/- 0.11 and oxalic acid 26.49 +/- 3.43 mM. These are solution
+          endpoints, not a mineral-specific mass balance or a recovery yield.
+      - source_ref: kang_2022
+        supports: partial
+        explanation: >-
+          Methods name uninoculated flasks, but Figure 2 compares inoculated
+          cultures with versus without struvite. It does not provide an
+          acid-matched abiotic contrast. Background medium phosphate and the
+          mixed mineral feed limit attribution of every measured Pi molecule
+          to struvite. The inspected full text does not specify the Pi assay
+          procedure, although it describes oxalic acid HPLC. The source's
+          complete-solubilization wording is not adopted as a quantified
+          mineral dissolution fraction.
+curation_history:
+  - timestamp: '2026-10-11T04:55:52Z'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Created verified element identity and dated criticality with bounded
+      Kang 2022 laboratory evidence, preserving feed, control and assay limits.
+history_refs:
+  - history/records/phosphorus/2026-10-11T045542Z-codex-dd8113.yaml

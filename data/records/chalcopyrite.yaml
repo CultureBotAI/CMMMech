@@ -1,0 +1,123 @@
+id: cmmmech:chalcopyrite
+name: Chalcopyrite
+material_kind: mineral
+description: >-
+  Chalcopyrite is the mineral species with IMA-approved formula CuFeS2.
+  The September 2026 IMA list records status G (grandfathered) and the
+  uncertain original-description year 1725 ?. That year is not an IMA
+  approval number. This mineral species is distinct from elemental copper,
+  the copper commodity, and an impure flotation concentrate. The curated
+  bioleaching experiment concerns an Aitik concentrate; its copper-element
+  representation in cmmmech:copper is the same experiment, not an independent
+  replication. No constituent-element criticality is inherited.
+sources:
+  - id: ima_2026_09
+    title: >-
+      IMA-CNMNC. The New IMA List of Minerals, September 2026.
+      PDF page 40, Chalcopyrite row; page 1, column definitions;
+      page 2, distribution terms.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-11'
+  - id: christel_2018
+    title: >-
+      Christel et al. (2018). Weak Iron Oxidation by Sulfobacillus
+      thermosulfidooxidans Maintains a Favorable Redox Potential for
+      Chalcopyrite Bioleaching. Frontiers in Microbiology 9:3059.
+      DOI 10.3389/fmicb.2018.03059. Mineral and Bioleaching Experiments
+      Methods; Bioleaching of Chalcopyrite Concentrate results; Figures 1-2.
+    url: https://doi.org/10.3389/fmicb.2018.03059
+    accessed_on: '2026-10-11'
+  - id: taxonomy_caldus
+    title: >-
+      NCBI Taxonomy 33059, Acidithiobacillus caldus, species;
+      DSM 8584 listed as type strain.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33059&mode=Info
+    accessed_on: '2026-10-11'
+  - id: taxonomy_thermosulfidooxidans
+    title: >-
+      NCBI Taxonomy 28034, Sulfobacillus thermosulfidooxidans, species;
+      DSM 9293 listed as type strain.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=28034&mode=Info
+    accessed_on: '2026-10-11'
+  - id: taxonomy_ferriphilum
+    title: >-
+      NCBI Taxonomy 178606, Leptospirillum ferriphilum, species;
+      DSM 14647 listed as type strain.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=178606&mode=Info
+    accessed_on: '2026-10-11'
+mechanisms:
+  - id: acidophile_concentrate_bioleaching
+    name: Culture-dependent leaching of chalcopyrite concentrate
+    process: bioleaching
+    description: >-
+      Living defined acidophile cultures promoted copper release from
+      chalcopyrite concentrate in laboratory flasks. The initial
+      Acidithiobacillus caldus plus Sulfobacillus thermosulfidooxidans pair
+      gave the largest reported released-copper concentration. Cultures
+      containing the stronger iron oxidizer Leptospirillum ferriphilum
+      reached higher redox potentials, without maximizing copper release.
+      This supports conditional bioleaching of a mineral-bearing feed;
+      it does not establish a purified copper yield, quantitative
+      chalcopyrite-phase conversion, or deployment of the defined consortium.
+    context: >-
+      Aitik-mine flotation concentrate contained 29.5% Cu. The authors
+      report greater than 98% purity from aqua-regia digestion and elemental
+      analysis, and note that bornite accompanies chalcopyrite at the deposit.
+      Elemental analysis does not independently establish single-phase
+      purity. The 50-100 micrometre fraction was washed with 0.1 M EDTA in
+      0.4 M NaOH, washed three times with acetone, dried overnight at
+      60 degrees C and heated for 10 h at 120 degrees C under nitrogen.
+      Living A. caldus DSM 8584, S. thermosulfidooxidans DSM 9293 and
+      L. ferriphilum DSM 14647 from separate axenic continuous cultures
+      were tested singly and in every pair and three-species combination,
+      alongside uninoculated controls. Four flasks per treatment contained
+      100 mL MAC medium initially at pH 1.8 and 2% w/v concentrate in
+      250 mL flasks, at 38 +/- 2 degrees C and 120 rpm. Inoculation was
+      10^7 cells/mL per species, so total cell loading differed among
+      mixtures. Inoculated endpoints were 14 days after redox potential
+      exceeded 400 mV versus Ag/AgCl, totaling 14-20 elapsed days.
+      The heated HCl slurry-digest/AAS assay counted released copper in
+      dissolved and precipitated fractions. Species identifiers below
+      do not replace the experimental strain designations.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:33059
+        label: Acidithiobacillus caldus
+      - id: NCBITaxon:28034
+        label: Sulfobacillus thermosulfidooxidans
+      - id: NCBITaxon:178606
+        label: Leptospirillum ferriphilum
+    evidence:
+      - source_ref: christel_2018
+        supports: support
+        explanation: >-
+          Bioleaching results and Figure 1C report 14.2 +/- 0.3 mM
+          total released Cu for the initial A. caldus/S. thermosulfidooxidans
+          pair, versus 2.4 +/- 0.3 mM for uninoculated controls at 15 days;
+          Figure 1 reports means +/- SD, n=4. Every binary mixture
+          outperformed the three-species mixture in that experiment.
+          Different elapsed endpoints preclude treating this comparison
+          as a common-time leaching rate.
+      - source_ref: christel_2018
+        supports: partial
+        explanation: >-
+          Marginal leaching and late iron oxidation in A. caldus-only
+          flasks were attributed to possible surviving environmental
+          contaminants. Figure 2 and the repeated pair experiments
+          reached 593 +/- 15 mV, so the lower initial redox values do not
+          establish a universal 550 mV ceiling. Proposed passivation,
+          attachment, transient chalcocite formation and candidate
+          iron-oxidation genes are not demonstrated molecular causes
+          or phase-specific mass balances. Large-scale testing remains
+          future work in the source.
+curation_history:
+  - timestamp: '2026-10-11T04:56:10Z'
+    curator: codex (GPT-6)
+    action: CREATE
+    summary: >-
+      Added IMA-grounded chalcopyrite identity and primary concentrate
+      bioleaching evidence with assay, purity, timing, controls and scale
+      limits. Distinguished the mineral from copper and identified shared
+      experimental evidence without double-counting replication.
+history_refs:
+  - history/records/chalcopyrite/2026-10-11T045602Z-codex-d13bc9.yaml

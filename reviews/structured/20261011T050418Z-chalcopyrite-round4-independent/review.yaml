@@ -1,0 +1,294 @@
+schema_version: 1.0.0
+review_id: 20261011T050418Z-chalcopyrite-round4-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of chalcopyrite mineral record
+started_at: '2026-10-11T04:59:52Z'
+finished_at: '2026-10-11T05:04:18Z'
+reviewer:
+  identity: Codex /root/cmm3_platinum
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer curated antimony in this batch and did not author or
+    modify either mineral record, history or dossier. Captured target/context hashes
+    before assessment; independently opened authorities and primary text, visually
+    checked source figures and rehashed acquired assets.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Official mineral identity and laboratory concentrate bioleaching are supported.
+  The record distinguishes mineral species from elemental copper and imperfect feed,
+  preserves unequal endpoints and redox counterexamples, and does not count this existing
+  experiment as replication. No actionable defect identified.
+source:
+  git_revision: c081a749cd63feafcc25414f5ad006d1f78f1e36
+  state: working_tree
+  inputs:
+  - path: data/records/chalcopyrite.yaml
+    sha256: 33feadacbc2b3a2a309c2165419f4af6bdded7c902a45dec55cc2312bed10ec0
+    role: target
+  - path: docs/records.md
+    sha256: 212cdbb723eb1ad9eb76ea1b7dad066914659b1f85eb2cdb51ee67466cfcc8ee
+    role: context
+  - path: history/records/chalcopyrite/2026-10-11T045602Z-codex-d13bc9.yaml
+    sha256: 293b50bdbe0405bce0c89a11f3253c9cd8c3c2d95d2b79bfd5b194539bc59273
+    role: context
+  - path: research/ingests/round4-mineral-hosts-20261011.json
+    sha256: 136490355bee879209a4a1380516bae9ff5a4441aca85438e13d956a1d55635d
+    role: context
+  - path: research/ingests/round4-mineral-hosts-20261011.md
+    sha256: 964fb6e18e5325b98a826e2d3c4a7cad51da9177319097f380763ad7380f54f4
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+targets:
+- target_id: cmmmech:chalcopyrite
+  path: data/records/chalcopyrite.yaml
+  label: Chalcopyrite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/chalcopyrite.yaml
+    role: maintained_record
+scope:
+  description: Whole new chalcopyrite record, identifiers, evidence links, limits
+    and CREATE provenance.
+  selection: Assigned named record; all fields reviewed, not a corpus sample.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:chalcopyrite
+checks:
+- check_id: record
+  name: Strict mineral record validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate
+    data/records/chalcopyrite.yaml data/records/sphalerite.yaml
+  status: passed
+  required: true
+  summary: 2 records checked; 0 failed.
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:chalcopyrite
+- check_id: history
+  name: History validation at trusted base
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate-history
+    --base c081a749cd63feafcc25414f5ad006d1f78f1e36
+  status: passed
+  required: true
+  summary: 36 history records checked; 0 errors.
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:chalcopyrite
+- check_id: nonempty
+  name: Nonempty corpus validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate
+    --require-records
+  status: passed
+  required: true
+  summary: 27 records checked; 0 failed.
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:chalcopyrite
+- check_id: batch
+  name: Completed batch gate
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  status: passed
+  required: true
+  summary: 307 tests passed, 3 skipped in 47.17s; 27 records and 36 histories valid.
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Parent executed the terminal-success batch gate. Reviewer independently
+    read /private/tmp/cmm-round4-check.log and reverified unchanged target/context
+    hashes; not a second execution.
+  target_ids:
+  - cmmmech:chalcopyrite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/chalcopyrite.yaml
+  locator: Entire record, actual CREATE sidecar and distinct inline event
+  accessed_at: '2026-10-11T05:04:18Z'
+  support: supports
+  summary: Target and context hashes captured before assessment remain unchanged.
+    Correct current actor, target and linked sidecar; no fabricated historical authorship.
+  snapshot_sha256: 33feadacbc2b3a2a309c2165419f4af6bdded7c902a45dec55cc2312bed10ec0
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September 2026 edition; dictionary page 1, terms page 2; chalcopyrite row
+    page 40
+  accessed_at: '2026-10-11T05:04:18Z'
+  support: supports
+  summary: CuFeS2, G grandfathered, 1725 ? uncertain original-description year. This
+    is not an approval identifier. Mineral identity does not inherit elemental commodity
+    criticality. Official PDF text independently opened; local PDF receipt rehashed.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: taxa
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33059&mode=Info
+  locator: NCBITaxon 33059, 28034 and 178606; current names, species ranks and type-strain
+    labels
+  accessed_at: '2026-10-11T05:04:18Z'
+  support: supports
+  summary: Live NCBI entries resolve A. caldus DSM 8584, S. thermosulfidooxidans DSM
+    9293 and L. ferriphilum DSM 14647; the CURIEs are species scoped, not strain identifiers.
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3389/fmicb.2018.03059
+  locator: Mineral; Bacterial Strains and Growth Conditions; Bioleaching Experiments;
+    Bioleaching of Chalcopyrite Concentrate
+  accessed_at: '2026-10-11T05:04:18Z'
+  support: supports
+  summary: Publisher full text and local Europe PMC XML support the feed, cultures,
+    four-flask comparisons and HCl-slurry/AAS release assay. Unequal inoculum totals
+    and stopping times constrain comparisons. Contamination and the repeat AS redox
+    exception are retained.
+- evidence_id: figures
+  kind: primary_source
+  reference: https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2018.03059/full
+  locator: Figures 1 and 2; local review-fig1.webp and christel2018-fig2.webp listed
+    in dossier
+  accessed_at: '2026-10-11T05:04:18Z'
+  support: partial
+  summary: Independently viewed rehashed images. Initial AS released most copper;
+    pairs exceeded the triple culture. Repeat AS exceeded 550 mV. No curves digitized,
+    causal phase assignment or universal redox threshold inferred.
+- evidence_id: receipts
+  kind: validation
+  reference: research/ingests/round4-mineral-hosts-20261011.json
+  locator: Fresh acquisition receipts and reused_artifacts
+  accessed_at: '2026-10-11T05:04:18Z'
+  support: supports
+  summary: Reviewer recalculated byte lengths and SHA256 for all 12 successful local
+    assets; all matched. Raw articles/images remain outside Git. Source access limits
+    and terms are explicit; curator acquisition is not misrepresented as reviewer
+    acquisition.
+- evidence_id: search
+  kind: search
+  reference: Live web search and scoped local rg
+  locator: Returned first search results; existing records, dossiers, histories and
+    review artifacts
+  accessed_at: '2026-10-11T05:04:18Z'
+  support: context_only
+  summary: No target-specific correction identified among returned exact-DOI results
+    and opened primary pages. Broader results provide conditional-mechanism leads
+    not fully assessed here. Hidden/ignored-inclusive local results confirm distinct
+    mineral identities and shared evidence with copper/zinc, not new independent experiments.
+  search_scope: '"10.3389/fmicb.2018.03059" correction retraction erratum; "chalcopyrite"
+    "Sulfobacillus" "Leptospirillum" contrary redox; no date filters or pagination.
+    rg --no-ignore --hidden -n -g *.yaml -g *.md -g *.json for cmmmech:(chalcopyrite|sphalerite),
+    03059, 3570-3575 and 5285-5292 across data/research/reviews/history. Hidden and
+    ignored included; bounded, not an exhaustive literature or machine-wide search.'
+assessments:
+- assessment_id: science
+  area: evidence
+  topic: Mineral identity, experimental scope and conflicting evidence
+  outcome: supported
+  summary: Official mineral identity and laboratory concentrate bioleaching are supported.
+    The record distinguishes mineral species from elemental copper and imperfect feed,
+    preserves unequal endpoints and redox counterexamples, and does not count this
+    existing experiment as replication. No actionable defect identified.
+  target_ids:
+  - cmmmech:chalcopyrite
+  evidence_ids:
+  - record
+  - ima
+  - taxa
+  - primary
+  - figures
+  - receipts
+  - search
+  dimensions:
+  - name: material
+    value: Mineral CuFeS2; Aitik concentrate with 29.5% Cu and author-reported >98%
+      purity inferred from elemental digestion, not independent phase quantitation.
+    definition: Bounded to the inspected record and evidence; no extrapolation to
+      other feeds, strains, conditions or deployment.
+    evidence_ids:
+    - ima
+    - primary
+  - name: criticality
+    value: No mineral-specific designation asserted; copper commodity designations
+      are not inherited.
+    definition: Bounded to the inspected record and evidence; no extrapolation to
+      other feeds, strains, conditions or deployment.
+    evidence_ids:
+    - record
+    - ima
+  - name: organism
+    value: Three named DSM strains; separate axenic precultures, living inocula; late
+      A. caldus-only iron oxidation possibly contaminated.
+    definition: Bounded to the inspected record and evidence; no extrapolation to
+      other feeds, strains, conditions or deployment.
+    evidence_ids:
+    - primary
+    - taxa
+  - name: conditions
+    value: 100 mL, 2% concentrate, pH 1.8, 38 +/- 2 C, 120 rpm; 10^7 cells/mL/species;
+      14 days after an ORP trigger.
+    definition: Bounded to the inspected record and evidence; no extrapolation to
+      other feeds, strains, conditions or deployment.
+    evidence_ids:
+    - primary
+  - name: controls
+    value: Uninoculated, single, pair and triple conditions; four flasks each; total
+      cell densities and elapsed endpoints differ.
+    definition: Bounded to the inspected record and evidence; no extrapolation to
+      other feeds, strains, conditions or deployment.
+    evidence_ids:
+    - primary
+    - figures
+  - name: outcome
+    value: HCl-slurry released Cu includes dissolved and precipitated fractions. Initial
+      AS 14.2 +/- 0.3 mM versus control 2.4 +/- 0.3 mM; no isolated-product yield.
+    definition: Bounded to the inspected record and evidence; no extrapolation to
+      other feeds, strains, conditions or deployment.
+    evidence_ids:
+    - primary
+    - figures
+  - name: deployment
+    value: Laboratory flasks only; same Christel experiment represented in copper.yaml,
+      not another replication.
+    definition: Bounded to the inspected record and evidence; no extrapolation to
+      other feeds, strains, conditions or deployment.
+    evidence_ids:
+    - record
+    - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Exact working state, history and acquisition provenance
+  outcome: supported
+  summary: Current target and all inspection-context hashes match. Actual CREATE sidecar
+    remains distinct from inline event, and base-aware history validation passes.
+  target_ids:
+  - cmmmech:chalcopyrite
+  evidence_ids:
+  - record
+  - receipts
+findings: []
+actions: []
+limitations:
+- Concentrate purity is author-reported from elemental digestion and does not establish
+  phase-pure chalcopyrite. No new mineral-phase analysis was performed.
+- Christel supplement acquisition remained unavailable in the curator dossier. Reviewer
+  used main methods/results, captions, full XML and Figures 1–2; no supplement-only
+  measurement or transcriptome-derived causal claim accepted.
+- Inoculum totals, variable endpoints, possible contamination and the repeated AS
+  redox result prevent universal rate or ORP claims. No recovered metal product, raw-curve
+  recalculation or industrial deployment established.
+- This mineral record and copper.yaml reuse one experimental study. This review covers
+  the new mineral record, not a new scientific review of the copper record.
+- Source/correction search is bounded. Newer studies remain unverified extension leads;
+  this review does not claim the literature contains no contrary result.
+notes:
+- No record corrections required; empty findings applies only to this exact reviewed
+  file state.
+- Review started with target inspection at 04:59:52 UTC and finished after evidence,
+  source-asset hashes and validation checks. Maintains uncommitted working-tree provenance
+  at base c081a749cd63feafcc25414f5ad006d1f78f1e36.

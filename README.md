@@ -31,6 +31,12 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Spent lamp phosphor](data/records/fluorescent-lamp-phosphor.yaml) | *Gluconobacter* biolixiviant bioleaching of a secondary resource | Retorted mixed powder; total-REE outcome, not an element-specific yield |
 | [Cobaltite](data/records/cobaltite.yaml) | IMA September 2026 mineral identity | Distinct from cobalt; no inherited criticality or microbial mechanism |
 | [Monazite-(Nd)](data/records/monazite-nd.yaml) | IMA September 2026 mineral identity | Distinct from neodymium and synthetic mixed experimental feeds |
+| [Antimony](data/records/antimony.yaml) | Sulfate-reducing sediment-community transformation | Strong abiotic sorption and indirect sulfide chemistry limit microbial and phase attribution |
+| [Phosphorus](data/records/phosphorus.yaml) | Fungal phosphate mobilization from struvite-bearing feed | Mixed mineral feed and background medium phosphate prevent a mineral-specific recovery yield |
+| [Cerium](data/records/cerium.yaml) | Precipitation using pretreated fungal culture filtrate | Cell-free Ce stage requires resin and pH treatment; solution removal is not pure-metal yield |
+| [Chalcopyrite](data/records/chalcopyrite.yaml) | Acidophile leaching of a chalcopyrite concentrate | Mineral species remains distinct from the impure experimental feed and copper element |
+| [Sphalerite](data/records/sphalerite.yaml) | Controlled leaching of iron-bearing sphalerite | Chemistry-matched null results limit claims of universal microbial enhancement |
+| [GaAs-production hydroxide sludge](data/records/gaas-production-hydroxide-sludge.yaml) | Acidophile leaching of a characterized secondary resource | Acid dissolution dominates; higher-loading arsenic counterevidence remains explicit |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -40,7 +46,9 @@ edition; none assert timeless status or industrial process deployment. See the
 [earlier ingest results](research/ingests/20261009T054507Z-followup.md),
 [expansion inventory and priorities](research/sources/expansion-authorities/20261011T040103Z.md),
 [second expansion review](research/ingests/round2-20261011-publication.md),
-[third expansion reviews and remaining priorities](research/ingests/round3-20261011-publication.md), and
+[third expansion reviews](research/ingests/round3-20261011-publication.md),
+[fourth expansion review and publication preparation](research/ingests/round4-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round4-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 
