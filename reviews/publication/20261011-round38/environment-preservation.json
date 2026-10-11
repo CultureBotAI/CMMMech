@@ -1,0 +1,64 @@
+{
+  "recorded_at": "2026-10-11T23:36:03.842140+00:00",
+  "issue": 124,
+  "scope": "Original-checkout generated environment preservation during source rendering. No scientific data defect.",
+  "incident": "A delegated PDF renderer used uv run --with pymupdf with the original checkout as cwd. uv rebuilt its editable package, changing six generated files. No tracked changes or added/missing nontracked paths were found.",
+  "correction": "The maintained add-record skill now requires explicit isolated-worktree cwd and standalone --no-project source tools outside checkouts. All six files were restored only after candidate bytes matched pre-incident SHA256.",
+  "restored_files": [
+    {
+      "path": ".venv/lib/python3.13/site-packages/cmmmech-0.1.0.dist-info/METADATA",
+      "sha256": "23a1d13db6e704b63fe26bc122992d93d26ab916aa8d86e7c00ec8a90047cc3a"
+    },
+    {
+      "path": ".venv/lib/python3.13/site-packages/cmmmech-0.1.0.dist-info/RECORD",
+      "sha256": "314133a10a93e6832818789a39bd4eb58927de629935a9bf777f59405db55724"
+    },
+    {
+      "path": ".venv/lib/python3.13/site-packages/cmmmech-0.1.0.dist-info/uv_cache.json",
+      "sha256": "2027afb3123d99c48c41a85e28562d2d11573f276480c8375e937062404db92e"
+    },
+    {
+      "path": "src/cmmmech.egg-info/PKG-INFO",
+      "sha256": "23a1d13db6e704b63fe26bc122992d93d26ab916aa8d86e7c00ec8a90047cc3a"
+    },
+    {
+      "path": "src/cmmmech.egg-info/SOURCES.txt",
+      "sha256": "871fb9de4a77a7f7af0a240ac9a19ba22e1d51c8664eefee02e6edf603d57b9d"
+    },
+    {
+      "path": "src/cmmmech.egg-info/requires.txt",
+      "sha256": "e42e7d4ed765e36ec5a80675f19a161e844d5bd71613021e5f6e06dfe9f2c5de"
+    }
+  ],
+  "restoration_method": "Exact pre-incident SHA256 required for every replacement. METADATA/PKG-INFO from retained uv archive; requires from unchanged skill worktree; SOURCES reconstructed by initial tracked path membership; uv_cache serialized from retained main editable revision; RECORD old hash/size cells restored. All six candidates matched original snapshot before writes. Full originalmain hidden/ignored nontracked inventory and bounded unrelated skill bytes/Git state compared after repair.",
+  "preserved_entry_counts": {
+    "main": 7187,
+    "skill": 8
+  },
+  "baseline_replaced": false,
+  "evidence_receipts": [
+    {
+      "path": "/private/tmp/cmm-round38-preservation-before.json",
+      "sha256": "eeee0617169c0216686043ead1d6a801dea8db340f66d131cf4c9665ee966a86"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-preservation-incident-audit.json",
+      "sha256": "b7459772f4df0fa4add693b1acf2ccf942ef7d8fbd526f388fa05d0c795751e4"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-preservation-restored.json",
+      "sha256": "3bdfc7189594ff3eb12b893eda2c1ec0436ffe008fd33894f773ae6a21521de2"
+    }
+  ],
+  "incident_command_receipt": {
+    "path": "/private/tmp/cmm-round38-katsarosite-research/render-incident-receipt.json",
+    "sha256": "6e16f2aaff3bd763e710eced09d6237649a65554c9553037b21b33ab9ea8d055"
+  },
+  "remaining_environment_damage": null,
+  "limits": "This records byte equality for the actual snapshot scope, not file access times or a machine-wide environment audit. It does not erase the accidental rebuild.",
+  "independent_verification": {
+    "path": "/private/tmp/cmm-round38-independent-preservation.json",
+    "sha256": "7755f04143225f5621d98bb44d8254ebf932cba9ce90f40f2afbbe172028e2e1",
+    "statement": "An independent reviewing agent re-enumerated current main hidden/ignored entries and bounded unrelated skill-worktree files and Git states against the unchanged original snapshot."
+  }
+}

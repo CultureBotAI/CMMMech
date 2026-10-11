@@ -21,6 +21,16 @@ without switching, stashing, or resetting another session's checkout. Retain an
 available trusted base revision for append-only history and review checks. Run
 `just check` before changes and distinguish pre-existing failures from new ones.
 
+Set the working directory explicitly to the isolated worktree for every project
+command; creating a worktree does not change the tool's default directory.
+`uv run --with` can synchronize and rebuild the current project's editable
+environment even when its script only reads PDFs. For standalone source tools,
+use an existing analysis environment or run `uv run --no-project --with ...`
+from a temporary directory outside every checkout. Set
+`PYTHONDONTWRITEBYTECODE=1` when reading another checkout's Python modules.
+Include generated environment files in preservation checks; restore accidental
+changes only from verified original bytes, and report any unrecovered changes.
+
 Use the user's material and evidence scope. When selecting from a discovery
 handoff, inspect the assessment and rank candidates by primary evidence quality,
 identity clarity and useful coverage; briefly explain the selection. Read the

@@ -1,0 +1,71 @@
+{
+  "recorded_at": "2026-10-11T23:39:49.550442+00:00",
+  "reviewer": "Codex /root/round27_eaf_slag",
+  "base": "f3d674806df8f5fd7925e46f1dcfec70cace706a",
+  "authorship": "Reviewer authored mimetite and independently reviews katsarosite. Parent authored the publication helpers, skill correction and restoration. This artifact assesses operational corrections, not the reviewer-authored mineral science.",
+  "scope": "Two supported workflow findings, actual corrections and independent bounded checks before publication. No Git or GitHub mutations.",
+  "verdict": "resolved_for_local_preparation",
+  "findings": [
+    {
+      "key": "CMMMech.round38.environment-isolation",
+      "issue": 124,
+      "severity": "medium",
+      "status": "resolved",
+      "initial": "Standalone uv run --with pymupdf ran in the original checkout and rebuilt its editable package, changing six generated files. The original preserved checkout was not continuously untouched.",
+      "correction": "All six candidate replacements first matched pre-incident hashes; current snapshot comparison verifies 7187 main hidden/ignored nontracked entries and eight bounded unrelated skill files plus both Git states. The local add-record skill now requires explicit isolated cwd and no-project standalone tooling, plus Python bytecode precautions.",
+      "verification": "Independent current-file comparison terminal0; exact receipt pinned below. No baseline was replaced."
+    },
+    {
+      "key": "CMMMech.round38.hosted-reviewer-attribution",
+      "issue": 125,
+      "severity": "minor",
+      "status": "resolved",
+      "initial": "The copied hosted-peer helper hardcoded Codex /root/round27_packaging and an authorship statement about authoring rhabdophane and reviewing falottaite, with Round37 labels. Those were stale for its proposed Round38 execution.",
+      "initial_wording": "Reviewer authored the rhabdophane source-only investigation and independently reviewed falottaite; neither commit/package bodies nor publication helpers were authored by this reviewer. Exact hosted-byte/receipt assurance is separate from science approval of any authored source dossier.",
+      "old_helper_sha256": null,
+      "old_hash_limit": "Old wording was independently observed in tool output before correction. The parent replaced the helper before an old-file hash was captured; no historical byte hash is fabricated.",
+      "correction": "Required --reviewer and --authorship arguments feed the receipt fields; labels are Round38.",
+      "verification": "Missing arguments exit2 during argparse before any receipt or remote access; --help exits0. AST and source inspection confirm direct receipt bindings and removal of the stale mineral/batch labels. Actual execution must supply the performing reviewer identity and truthful authorship."
+    }
+  ],
+  "unresolved_findings": [],
+  "checks": [
+    {
+      "name": "Current original-main/skill preservation",
+      "exit_code": 0,
+      "receipt": "/private/tmp/cmm-round38-independent-preservation.json"
+    },
+    {
+      "name": "Missing mandatory reviewer/authorship arguments",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "log": "/private/tmp/cmm-round38-peer-required-args.log"
+    },
+    {
+      "name": "CLI help",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "log": "/private/tmp/cmm-round38-peer-help.log"
+    },
+    {
+      "name": "Python syntax and data-flow inspection",
+      "result": "pass"
+    }
+  ],
+  "sha256": {
+    "/private/tmp/cmm-round38-independent-preservation.json": "7755f04143225f5621d98bb44d8254ebf932cba9ce90f40f2afbbe172028e2e1",
+    "/private/tmp/cmm-round38-preservation-before.json": "eeee0617169c0216686043ead1d6a801dea8db340f66d131cf4c9665ee966a86",
+    "/private/tmp/cmm-round38-preservation-incident-audit.json": "b7459772f4df0fa4add693b1acf2ccf942ef7d8fbd526f388fa05d0c795751e4",
+    "/private/tmp/cmm-round38-preservation-restored.json": "3bdfc7189594ff3eb12b893eda2c1ec0436ffe008fd33894f773ae6a21521de2",
+    "/private/tmp/cmm-round38-hosted-peer-readonly.py": "39f00431468fc7b589c457ff4346c8ec7d306fbeae7dab2cdc04b86ccd16eb9a",
+    "/private/tmp/cmm-round38-peer-required-args.log": "b1bc1946dc0a60d14e3ec1307135af1434073358289b943cbdbede6020bc4136",
+    "/private/tmp/cmm-round38-peer-help.log": "a04482c6fdb29c57ce176fc5d5fa51b3b06d4d1e58059837f50e38d277da240b",
+    "/private/tmp/CMMMech-expansion-round38-20261011/.claude/skills/cmmmech-add-record/SKILL.md": "e9010b21dd687721db681496333f5f1a46c2c075240cf12cb3677d180eb84977",
+    "/private/tmp/CMMMech-expansion-round38-20261011/reviews/publication/20261011-round38/environment-preservation.json": "6f60d0a5a2c2c9ae1d34c98ba7289aee0877f267959eb76a803b9b141702485e"
+  },
+  "limits": [
+    "This is not the final scientific coverage or publication audit; cohort gates and hosted execution remain subsequent checks.",
+    "Preservation scope is the declared snapshot, not access times or every unrelated checkout. The accidental rebuild remains part of the provenance.",
+    "The skill edit is guidance, not a technical guarantee against all future tool misuse."
+  ]
+}

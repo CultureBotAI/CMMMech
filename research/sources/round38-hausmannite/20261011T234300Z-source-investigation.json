@@ -1,0 +1,553 @@
+{
+  "timestamp_utc": "2026-10-11T23:43:00.344744+00:00",
+  "actor": {
+    "name": "codex",
+    "model": "GPT-6",
+    "tool": "codex",
+    "agent": "/root/round27_superalloy"
+  },
+  "scope": "Accepted source handoff for one new hausmannite record, pending independent scientific review and parent cohort gates; no shared or original-main edits by this author.",
+  "trusted_base": "f3d674806df8f5fd7925e46f1dcfec70cace706a",
+  "baseline_receipt": "/private/tmp/cmm-round38-baseline-terminal.json",
+  "record": {
+    "path": "data/records/hausmannite.yaml",
+    "sha256": "3f319c603aa92069f7c1e04c4c34e4bd11820b8697f1e3396eac26a3a01e5d3e"
+  },
+  "history": {
+    "path": "history/records/hausmannite/2026-10-11T234142Z-codex-45f4d6.yaml",
+    "sha256": "124d3cb3152ec9db4ece2ba644d32701a87b601df6cbd59dcfaaaa43f7572133"
+  },
+  "primary": {
+    "doi": "10.3390/jof7100810",
+    "title": "Fungal Mobilization of Selenium in the Presence of Hausmannite and Ferric Oxyhydroxides",
+    "authors": "Farkas etal.",
+    "year": 2021,
+    "journal": "JournalofFungi7(10):810",
+    "pdf": "/private/tmp/cmm-round38-hausmannite-research/raw/farkas2021.pdf",
+    "xml": "/private/tmp/cmm-round38-hausmannite-research/raw/farkas2021.xml",
+    "publisher_xml": "/private/tmp/cmm-round38-hausmannite-research/raw/publisher.xml",
+    "license": "CCBY4.0; mainpublisherPDF page1",
+    "acquisition": "Parent fresh acquired23:28UTC; author recheckedretainedbytes, readfullarticletext andrenderedoriginalfigures; separatelyacquiredpublisherXML23:40UTC. No duplicatedindependentexperiment count."
+  },
+  "inspection": {
+    "main_pages": 10,
+    "full_text_read": true,
+    "original_figures_visually_inspected": [
+      "Figure1a/b p4",
+      "Figure2a/b p5",
+      "Figure3a/b p5",
+      "Figure4 p6",
+      "Figure5a/b p6"
+    ],
+    "tables": 0,
+    "supplements": "Both completepublisherXML andPMCJATS havezerosupplementary-materialnodes; mainDataAvailability saysdatawithinarticle. No separateSIdeclared/used. Publisherlandingwebopenfailed; publisherXML/PDFwere200.",
+    "identity_visuals": [
+      "IMASeptember2026page90",
+      "Handbookonepage"
+    ]
+  },
+  "identity": {
+    "IMA_pdf_original_reused": "/private/tmp/cmm-round37-lindbergite-research/raw/ima2026.pdf",
+    "IMA_sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+    "IMA_current_page_rechecked_in_vanadinite_investigation": "/private/tmp/cmm-round38-vanadinite-research/raw/ima-current-web.json",
+    "organism_authority": "NCBITaxon:5061; parentliveNCBIdatasetreceipt retained",
+    "strain": "CBS140837 source designation only; no independentcollectionmapping claimed"
+  },
+  "evidence_boundaries": [
+    {
+      "locator": "IMA September2026 p90; Handbook version1",
+      "scope": "Hausmannite Mn2+Mn3+2O4=Mn3O4, tetragonal; G1828. No mineralCURIE invented from historic year; no constituent criticality transfer."
+    },
+    {
+      "locator": "2021 Sections2.1\u20132.3",
+      "scope": "CBS140837 reported strain; speciesNCBI5061 independently resolved, no strainTaxID assumed. Syntheticfeed phase reported from XRDelsewhere refs22/23, not independently characterized2021 batch in thispaper. InitialpH/inoculumdensity and volume unreported."
+    },
+    {
+      "locator": "Sections2.3\u20132.4,3.1,3.3; Figures1a,2a",
+      "scope": "Matched fungal selenium-versus-no-selenium arms support lowerendpointpH and higher0.45umfiltrate totalMn measuredF-AAS; endpoints notdissolutionrates/freeMn2+speciation. Initial24hstage at130rpm then21dstatic25Cdark; alltriplicate. Se50mg/L nominaloxide2.2g/L; no inferred recovery."
+    },
+    {
+      "locator": "Section2.3 and Figure3",
+      "scope": "No-solid fungal control andselenium-free fungal controls;24hpre-inoculationbaseline not21dsterile. No matchedpH/killedbiomass controls or quantitative netfungalcontribution."
+    },
+    {
+      "locator": "Section3.3/Figure2a versusSection4",
+      "scope": "g/L Mn axis/results versusproposed0.25\u20131.4mg/L protectionthreshold conflict. Thresholdnotadopted; namedtransportmechanism unmeasured."
+    },
+    {
+      "locator": "Section3.2/Figure1b versusSection4lastparagraph",
+      "scope": "86%/65% assignedFe/Mn inResults,86%toMn inDiscussion; graphMnseleniumfree~128% withlabelseleniumfree-normalized ambiguity. No preciseinhibitionpercent recalculated. Significancetest/errorbars notdefined."
+    },
+    {
+      "locator": "Figures3\u20135 andDiscussion",
+      "scope": "Secompartmentredistribution/washedbiomassconcentration notintracellularlocalization/totalmassproduct/speciation. NewSeorMnspecies,acid/enzyme concentrations andredox steps notmeasured. Ferricfeed separate.2020As/oxalate productexperimentnotimported."
+    }
+  ],
+  "dedup": {
+    "started_at": "2026-10-11T23:39:40.966586+00:00",
+    "finished_at": "2026-10-11T23:39:43.462866+00:00",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-n",
+      "-i",
+      "--max-columns",
+      "1500",
+      "--max-columns-preview",
+      "-g",
+      "!*.pdf",
+      "-g",
+      "!*.png",
+      "-g",
+      "!*.jpg",
+      "-g",
+      "!*.jpeg",
+      "-g",
+      "!*.tif",
+      "-g",
+      "!*.tiff",
+      "-g",
+      "!*.xlsx",
+      "-g",
+      "!*.docx",
+      "-g",
+      "!*.zip",
+      "hausmannite|jof7100810|8539610|Fungal Mobilization of Selenium",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/private/tmp/CMMMech-expansion-round38-20261011/data/records",
+      "/private/tmp/CMMMech-expansion-round38-20261011/history",
+      "/private/tmp/CMMMech-expansion-round38-20261011/research",
+      "/private/tmp/CMMMech-expansion-round38-20261011/reviews",
+      "/private/tmp/cmm-round10-b-f-raw",
+      "/private/tmp/cmm-round10-graphite-raw",
+      "/private/tmp/cmm-round10-nb-ta-raw",
+      "/private/tmp/cmm-round10-ti-zr-raw",
+      "/private/tmp/cmm-round11-be-rb-re-raw",
+      "/private/tmp/cmm-round11-he-raw",
+      "/private/tmp/cmm-round11-ir-os-hf-raw",
+      "/private/tmp/cmm-round11-lu-tm-pm-raw",
+      "/private/tmp/cmm-round12-aluminium-boron-raw",
+      "/private/tmp/cmm-round12-carbon-metals-raw",
+      "/private/tmp/cmm-round12-groups-raw",
+      "/private/tmp/cmm-round12-industrial-minerals-raw",
+      "/private/tmp/cmm-round13-grade-raw",
+      "/private/tmp/cmm-round13-mineral-raw",
+      "/private/tmp/cmm-round13-secondary-raw",
+      "/private/tmp/cmm-round14-magnet-raw",
+      "/private/tmp/cmm-round14-mineral-raw",
+      "/private/tmp/cmm-round14-product-raw",
+      "/private/tmp/cmm-round14-secondary-raw",
+      "/private/tmp/cmm-round15-brine-raw",
+      "/private/tmp/cmm-round15-mineral-raw",
+      "/private/tmp/cmm-round16-produced-water-raw",
+      "/private/tmp/cmm-round16-silicate-raw",
+      "/private/tmp/cmm-round16-vivianite-raw",
+      "/private/tmp/cmm-round17-biotite-raw",
+      "/private/tmp/cmm-round17-enstatite-raw",
+      "/private/tmp/cmm-round17-saline-raw",
+      "/private/tmp/cmm-round18-catalyst-raw",
+      "/private/tmp/cmm-round18-dunite-raw",
+      "/private/tmp/cmm-round18-mineral-feeds-raw",
+      "/private/tmp/cmm-round18-products-raw",
+      "/private/tmp/cmm-round19-hydrogenation-catalyst-raw",
+      "/private/tmp/cmm-round19-iron-manganese-raw",
+      "/private/tmp/cmm-round19-manganese-residue-raw",
+      "/private/tmp/cmm-round19-tailings-raw",
+      "/private/tmp/cmm-round20-goethite-raw",
+      "/private/tmp/cmm-round20-laterite-raw",
+      "/private/tmp/cmm-round20-mafic-tailings-raw",
+      "/private/tmp/cmm-round20-nodule-raw",
+      "/private/tmp/cmm-round21-crusts-raw",
+      "/private/tmp/cmm-round21-pcb-raw",
+      "/private/tmp/cmm-round21-ree-mud-raw",
+      "/private/tmp/cmm-round22-concretions-raw",
+      "/private/tmp/cmm-round22-pcb-raw",
+      "/private/tmp/cmm-round22-pv-raw",
+      "/private/tmp/cmm-round22-sulfides-raw",
+      "/private/tmp/cmm-round23-crusts-raw",
+      "/private/tmp/cmm-round23-ghiorse-raw",
+      "/private/tmp/cmm-round23-identity-gaps-raw",
+      "/private/tmp/cmm-round23-lcd-raw",
+      "/private/tmp/cmm-round23-rey-mud-raw",
+      "/private/tmp/cmm-round24-copper-slag-raw",
+      "/private/tmp/cmm-round24-frontier-raw",
+      "/private/tmp/cmm-round24-nimh-raw",
+      "/private/tmp/cmm-round24-sulfuric-raw",
+      "/private/tmp/cmm-round25-bf-dust-raw",
+      "/private/tmp/cmm-round25-button-raw",
+      "/private/tmp/cmm-round25-frontier-raw",
+      "/private/tmp/cmm-round25-oil-ash-raw",
+      "/private/tmp/cmm-round26-eaf-dust-raw",
+      "/private/tmp/cmm-round26-packaging-raw",
+      "/private/tmp/cmm-round26-root-raw",
+      "/private/tmp/cmm-round26-superalloy-raw",
+      "/private/tmp/cmm-round27-eaf-slag-raw",
+      "/private/tmp/cmm-round27-goethite-raw",
+      "/private/tmp/cmm-round27-packaging-raw",
+      "/private/tmp/cmm-round27-root-raw",
+      "/private/tmp/cmm-round27-superalloy-raw",
+      "/private/tmp/cmm-round28-black-shale-research",
+      "/private/tmp/cmm-round28-goethite-research",
+      "/private/tmp/cmm-round28-tatra-research",
+      "/private/tmp/cmm-round28-tire-research",
+      "/private/tmp/cmm-round29-bastnaesite-research",
+      "/private/tmp/cmm-round29-ilmenite-research",
+      "/private/tmp/cmm-round29-tungsten-waste-research",
+      "/private/tmp/cmm-round29-zinc-ore-research",
+      "/private/tmp/cmm-round30-basalt-research",
+      "/private/tmp/cmm-round30-chromite-research",
+      "/private/tmp/cmm-round30-pyrrhotite-research",
+      "/private/tmp/cmm-round30-tungsten-research",
+      "/private/tmp/cmm-round31-chromite-tailings-research",
+      "/private/tmp/cmm-round31-ilmenite-research",
+      "/private/tmp/cmm-round31-kaolin-research",
+      "/private/tmp/cmm-round31-kaolin-waste-research",
+      "/private/tmp/cmm-round31-stibnite-research",
+      "/private/tmp/cmm-round31-tungsten-research",
+      "/private/tmp/cmm-round32-arsenopyrite-research",
+      "/private/tmp/cmm-round32-bornite-research",
+      "/private/tmp/cmm-round32-chromitite-research",
+      "/private/tmp/cmm-round32-molybdenite-research",
+      "/private/tmp/cmm-round33-chalcocite-research",
+      "/private/tmp/cmm-round33-covellite-research",
+      "/private/tmp/cmm-round33-molybdenite-research",
+      "/private/tmp/cmm-round33-pyrite-research",
+      "/private/tmp/cmm-round34-galena-research",
+      "/private/tmp/cmm-round34-greigite-research",
+      "/private/tmp/cmm-round34-mackinawite-research",
+      "/private/tmp/cmm-round34-uraninite-research",
+      "/private/tmp/cmm-round35-anglesite-research",
+      "/private/tmp/cmm-round35-jarosite-research",
+      "/private/tmp/cmm-round35-ningyoite-research",
+      "/private/tmp/cmm-round35-schwertmannite-research",
+      "/private/tmp/cmm-round36-autunite-research",
+      "/private/tmp/cmm-round36-moolooite-research",
+      "/private/tmp/cmm-round36-uramphite-research",
+      "/private/tmp/cmm-round37-falottaite-research",
+      "/private/tmp/cmm-round37-humboldtine-research",
+      "/private/tmp/cmm-round37-lindbergite-research",
+      "/private/tmp/cmm-round37-rhabdophane-research",
+      "/private/tmp/cmm-round38-hausmannite-research/raw",
+      "/private/tmp/cmm-round38-katsarosite-research",
+      "/private/tmp/cmm-round38-mimetite-research",
+      "/private/tmp/cmm-round38-vanadinite-research",
+      "/private/tmp/cmm-round7-ho-er-gd-raw",
+      "/private/tmp/cmm-round7-terbium-raw",
+      "/private/tmp/cmm-round8-sc-pr-raw",
+      "/private/tmp/cmm-round9-cs-sr-raw",
+      "/private/tmp/cmm-round9-ru-rh-raw",
+      "/private/tmp/cmm-round9-si-sn-raw"
+    ],
+    "root_count": 127,
+    "roots": [
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/private/tmp/CMMMech-expansion-round38-20261011/data/records",
+      "/private/tmp/CMMMech-expansion-round38-20261011/history",
+      "/private/tmp/CMMMech-expansion-round38-20261011/research",
+      "/private/tmp/CMMMech-expansion-round38-20261011/reviews",
+      "/private/tmp/cmm-round10-b-f-raw",
+      "/private/tmp/cmm-round10-graphite-raw",
+      "/private/tmp/cmm-round10-nb-ta-raw",
+      "/private/tmp/cmm-round10-ti-zr-raw",
+      "/private/tmp/cmm-round11-be-rb-re-raw",
+      "/private/tmp/cmm-round11-he-raw",
+      "/private/tmp/cmm-round11-ir-os-hf-raw",
+      "/private/tmp/cmm-round11-lu-tm-pm-raw",
+      "/private/tmp/cmm-round12-aluminium-boron-raw",
+      "/private/tmp/cmm-round12-carbon-metals-raw",
+      "/private/tmp/cmm-round12-groups-raw",
+      "/private/tmp/cmm-round12-industrial-minerals-raw",
+      "/private/tmp/cmm-round13-grade-raw",
+      "/private/tmp/cmm-round13-mineral-raw",
+      "/private/tmp/cmm-round13-secondary-raw",
+      "/private/tmp/cmm-round14-magnet-raw",
+      "/private/tmp/cmm-round14-mineral-raw",
+      "/private/tmp/cmm-round14-product-raw",
+      "/private/tmp/cmm-round14-secondary-raw",
+      "/private/tmp/cmm-round15-brine-raw",
+      "/private/tmp/cmm-round15-mineral-raw",
+      "/private/tmp/cmm-round16-produced-water-raw",
+      "/private/tmp/cmm-round16-silicate-raw",
+      "/private/tmp/cmm-round16-vivianite-raw",
+      "/private/tmp/cmm-round17-biotite-raw",
+      "/private/tmp/cmm-round17-enstatite-raw",
+      "/private/tmp/cmm-round17-saline-raw",
+      "/private/tmp/cmm-round18-catalyst-raw",
+      "/private/tmp/cmm-round18-dunite-raw",
+      "/private/tmp/cmm-round18-mineral-feeds-raw",
+      "/private/tmp/cmm-round18-products-raw",
+      "/private/tmp/cmm-round19-hydrogenation-catalyst-raw",
+      "/private/tmp/cmm-round19-iron-manganese-raw",
+      "/private/tmp/cmm-round19-manganese-residue-raw",
+      "/private/tmp/cmm-round19-tailings-raw",
+      "/private/tmp/cmm-round20-goethite-raw",
+      "/private/tmp/cmm-round20-laterite-raw",
+      "/private/tmp/cmm-round20-mafic-tailings-raw",
+      "/private/tmp/cmm-round20-nodule-raw",
+      "/private/tmp/cmm-round21-crusts-raw",
+      "/private/tmp/cmm-round21-pcb-raw",
+      "/private/tmp/cmm-round21-ree-mud-raw",
+      "/private/tmp/cmm-round22-concretions-raw",
+      "/private/tmp/cmm-round22-pcb-raw",
+      "/private/tmp/cmm-round22-pv-raw",
+      "/private/tmp/cmm-round22-sulfides-raw",
+      "/private/tmp/cmm-round23-crusts-raw",
+      "/private/tmp/cmm-round23-ghiorse-raw",
+      "/private/tmp/cmm-round23-identity-gaps-raw",
+      "/private/tmp/cmm-round23-lcd-raw",
+      "/private/tmp/cmm-round23-rey-mud-raw",
+      "/private/tmp/cmm-round24-copper-slag-raw",
+      "/private/tmp/cmm-round24-frontier-raw",
+      "/private/tmp/cmm-round24-nimh-raw",
+      "/private/tmp/cmm-round24-sulfuric-raw",
+      "/private/tmp/cmm-round25-bf-dust-raw",
+      "/private/tmp/cmm-round25-button-raw",
+      "/private/tmp/cmm-round25-frontier-raw",
+      "/private/tmp/cmm-round25-oil-ash-raw",
+      "/private/tmp/cmm-round26-eaf-dust-raw",
+      "/private/tmp/cmm-round26-packaging-raw",
+      "/private/tmp/cmm-round26-root-raw",
+      "/private/tmp/cmm-round26-superalloy-raw",
+      "/private/tmp/cmm-round27-eaf-slag-raw",
+      "/private/tmp/cmm-round27-goethite-raw",
+      "/private/tmp/cmm-round27-packaging-raw",
+      "/private/tmp/cmm-round27-root-raw",
+      "/private/tmp/cmm-round27-superalloy-raw",
+      "/private/tmp/cmm-round28-black-shale-research",
+      "/private/tmp/cmm-round28-goethite-research",
+      "/private/tmp/cmm-round28-tatra-research",
+      "/private/tmp/cmm-round28-tire-research",
+      "/private/tmp/cmm-round29-bastnaesite-research",
+      "/private/tmp/cmm-round29-ilmenite-research",
+      "/private/tmp/cmm-round29-tungsten-waste-research",
+      "/private/tmp/cmm-round29-zinc-ore-research",
+      "/private/tmp/cmm-round30-basalt-research",
+      "/private/tmp/cmm-round30-chromite-research",
+      "/private/tmp/cmm-round30-pyrrhotite-research",
+      "/private/tmp/cmm-round30-tungsten-research",
+      "/private/tmp/cmm-round31-chromite-tailings-research",
+      "/private/tmp/cmm-round31-ilmenite-research",
+      "/private/tmp/cmm-round31-kaolin-research",
+      "/private/tmp/cmm-round31-kaolin-waste-research",
+      "/private/tmp/cmm-round31-stibnite-research",
+      "/private/tmp/cmm-round31-tungsten-research",
+      "/private/tmp/cmm-round32-arsenopyrite-research",
+      "/private/tmp/cmm-round32-bornite-research",
+      "/private/tmp/cmm-round32-chromitite-research",
+      "/private/tmp/cmm-round32-molybdenite-research",
+      "/private/tmp/cmm-round33-chalcocite-research",
+      "/private/tmp/cmm-round33-covellite-research",
+      "/private/tmp/cmm-round33-molybdenite-research",
+      "/private/tmp/cmm-round33-pyrite-research",
+      "/private/tmp/cmm-round34-galena-research",
+      "/private/tmp/cmm-round34-greigite-research",
+      "/private/tmp/cmm-round34-mackinawite-research",
+      "/private/tmp/cmm-round34-uraninite-research",
+      "/private/tmp/cmm-round35-anglesite-research",
+      "/private/tmp/cmm-round35-jarosite-research",
+      "/private/tmp/cmm-round35-ningyoite-research",
+      "/private/tmp/cmm-round35-schwertmannite-research",
+      "/private/tmp/cmm-round36-autunite-research",
+      "/private/tmp/cmm-round36-moolooite-research",
+      "/private/tmp/cmm-round36-uramphite-research",
+      "/private/tmp/cmm-round37-falottaite-research",
+      "/private/tmp/cmm-round37-humboldtine-research",
+      "/private/tmp/cmm-round37-lindbergite-research",
+      "/private/tmp/cmm-round37-rhabdophane-research",
+      "/private/tmp/cmm-round38-hausmannite-research/raw",
+      "/private/tmp/cmm-round38-katsarosite-research",
+      "/private/tmp/cmm-round38-mimetite-research",
+      "/private/tmp/cmm-round38-vanadinite-research",
+      "/private/tmp/cmm-round7-ho-er-gd-raw",
+      "/private/tmp/cmm-round7-terbium-raw",
+      "/private/tmp/cmm-round8-sc-pr-raw",
+      "/private/tmp/cmm-round9-cs-sr-raw",
+      "/private/tmp/cmm-round9-ru-rh-raw",
+      "/private/tmp/cmm-round9-si-sn-raw"
+    ],
+    "exit_code": 0,
+    "hits_lines": 235,
+    "stderr": "",
+    "boundaries": "Current worktree and original checkout record/research/review/history directories plus existing absolute cmm-*-research/raw directory roots referenced by their text. Hidden/ignored included; relevant symlinks followed. Binary PDF/image/Office/ZIP excluded from text scan; retained extracted texts and metadata searched. Not machine-wide. Own raw contains new primary and is distinguished from prior coverage.",
+    "hits_sha256": "6bb436e602b185403b51d6849f2595314d02ca6523618ac27e5b3a32c6042c7c"
+  },
+  "dedup_interpretation": "127roots hiddenignoredfollow, noerrors. Existing falottaite/lindbergite mention hausmannite as2020feed; distinct productowners anddistinctAs experiment. Currentfrontiermentions2021lead. No existinghausmanniteidentityowner identifiedwithinthisscope. Rawincludesexisting2020paper; not claimednewliterature. BinaryPDForOfficecontents excludedfromtextscan, extractedtextssearched; no machinewideabsence.",
+  "other_primary_boundary": {
+    "doi": "10.3390/jof6040270",
+    "raw": "/private/tmp/cmm-round37-lindbergite-research/raw/farkas2020.{pdf,xml}",
+    "status": "Existing2020As/oxalateexperiment deduplicated againstfalottaite/lindbergite; notaddedasnewarm, productassignmentorrecoveryevidence."
+  },
+  "notice_search": {
+    "date": "2026-10-11",
+    "provider": "web search plusCrossref/EuropePMC",
+    "queries": [
+      "\"10.3390/jof7100810\" correction retraction erratum",
+      "\"hausmannite\" \"Aspergillus niger\" selenium abiotic control"
+    ],
+    "result": "No affectingprimarycorrection/retraction foundinreturnedsets;Crossrefupdate-to absent,relationempty. Boundedquery,notexhaustiveproof. Existing2016antimonyand2020arsenicstudies aredifferentconditions,notreplicatesof2021selenium."
+  },
+  "acquisition_receipts": [
+    "/private/tmp/cmm-round38-hausmannite-research/raw/acquisition-1.json",
+    "/private/tmp/cmm-round38-hausmannite-research/raw/acquisition2.json"
+  ],
+  "followups": [
+    "Resolve2021Mnunits andbiomassnormalization fromauthorrawdata ifeveravailable; do not silentlycorrectsource.",
+    "A matched21dsterile/pHcontrol, pathwayassays andbatchdiffraction would strengthenmechanistic/purityclaim; currentrecorddoesnotassumethem.",
+    "Independent exacthashreview andparentcohortvalidation required beforepublication."
+  ],
+  "raw_manifest": [
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/acquisition-1.json",
+      "bytes": 2778,
+      "sha256": "f678ab7d022c4a2b00ddf683e2afb5b337e97ba31744d4a701ed201f468b1135"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/acquisition2.json",
+      "bytes": 1568,
+      "sha256": "b607f79ceaef8989d688d1c16984bce722de8fd599edbc650f3d6e1c215b4700"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/crossref2021.json",
+      "bytes": 24014,
+      "sha256": "b9e5e0bc18715799fc8ad781c6eca4ea86f1b8704a773108d49d95b62e32cede"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/dedup-errors.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/dedup-hits.txt",
+      "bytes": 101997,
+      "sha256": "6bb436e602b185403b51d6849f2595314d02ca6523618ac27e5b3a32c6042c7c"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/dedup.json",
+      "bytes": 13646,
+      "sha256": "d7306d6c682d3d4adaad78dc727d85cbcb34da9b855251cf50635dbf5a446bae"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/epmc-notices2021.json",
+      "bytes": 9518,
+      "sha256": "225e214930c3f02efaaf24b99f59fd1a7b2cdd84a1a767545e6af473073b32da"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/farkas2021-pdf.txt",
+      "bytes": 40831,
+      "sha256": "2a69d8b2dba77ed7c0789e4bc60f511d8d6119bdc964b01742425559ed0b481e"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/farkas2021-text.txt",
+      "bytes": 31937,
+      "sha256": "9380bb20d87b28e4807066fa55714c7ddee79f91d832b41480dc01711dd220ef"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/farkas2021.pdf",
+      "bytes": 1115141,
+      "sha256": "4f3b5501bc0c8a1ccdf98665f24db7a4cb72b965a0abb47d19fe59a0134f6fff"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/farkas2021.xml",
+      "bytes": 96239,
+      "sha256": "672f7a59eaeb653fa12928c67eb8b5982ef1ad76cf636750270b4fee678d1207"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/hausmannite-handbook.pdf",
+      "bytes": 55835,
+      "sha256": "7bd979678380ff90ecd8583053b61321f04c26816abbe63c1634e6fa57e1bca8"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/hausmannite-handbook.png",
+      "bytes": 227570,
+      "sha256": "7d90abddbbdc126bad953c04d4b269b48fbea5ff298a2df97b0daf9db3f72413"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/hausmannite-handbook.txt",
+      "bytes": 3614,
+      "sha256": "83b06eac4f995ae1bf3d32b95d7e6ed1a12f0ae40b3f513733fd04e4e5f3d6d7"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/ima-hausmannite-page.txt",
+      "bytes": 3358,
+      "sha256": "974bfe7419899e335d8196d6156d76720708418c66105134a6f52ada0c58835a"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/ima-page-90.png",
+      "bytes": 253120,
+      "sha256": "96677c0aa815c893db84f73a32edb97a1bb1c61a99e1a67773f86522b641f5ab"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/ima2026-09.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/ncbi5061.json",
+      "bytes": 1317,
+      "sha256": "6d2d9b2a4b031de6fd14225ddc52dec2a240dadb51d83f12a549e035575e9126"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/pages/page-01.png",
+      "bytes": 260059,
+      "sha256": "2d21bd9a3abc08efa8d23e7361e6f5afc99893ab3d2da9e58667f882a216da07"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/pages/page-02.png",
+      "bytes": 246179,
+      "sha256": "e46dfd101defd4e7f0e7d6432fda2a76a529da58b07252facf07d551e2f5d26d"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/pages/page-03.png",
+      "bytes": 253654,
+      "sha256": "7b2c582e06011ba4740791fc6dc5819daea3062d1cdefcc7c0a629bb9cc5184d"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/pages/page-04.png",
+      "bytes": 138844,
+      "sha256": "8468fbe71eff7e17daa8dd78c2df825b5a5274fe928e99c187b6fb5b16f48a8c"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/pages/page-05.png",
+      "bytes": 143112,
+      "sha256": "40355689434f3478e46041428639d031091abfb2d9106cfffc6a3c73d58542c9"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/pages/page-06.png",
+      "bytes": 145814,
+      "sha256": "549d6ac9691ab1242943ad0e39ee973b1cbbaa6ea12f1b0d901c8b3660a3c141"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/pages/page-07.png",
+      "bytes": 275517,
+      "sha256": "40afd2df39ff0ee34e68b11b315b6f3b4ceb1aa609add7e6efb868bd97012970"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/pages/page-08.png",
+      "bytes": 257742,
+      "sha256": "9574ccc9e2cec006346e4025495bd0db1e6b1a413a9852b3830c023480ec9bba"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/pages/page-09.png",
+      "bytes": 299144,
+      "sha256": "29e225c1cacff0290cbef9a669ac3d76f0f11220668bd28e960bd7824ba1b96d"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/pages/page-10.png",
+      "bytes": 339074,
+      "sha256": "7fafa04e3935de8d4a29cf89ec83e758fc7cd7c034900701d46f7eea857bad9b"
+    },
+    {
+      "path": "/private/tmp/cmm-round38-hausmannite-research/raw/publisher.xml",
+      "bytes": 107286,
+      "sha256": "08371f05d5c4bbdd77297c5aaedee78c1dfbfffab5694a88a3c10844b886bc7f"
+    }
+  ]
+}
