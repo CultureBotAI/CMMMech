@@ -1,0 +1,631 @@
+{
+  "assessment_id": "round12-aluminium-boron-20261011",
+  "created_at": "2026-10-11T08:32:19.756297+00:00",
+  "author": {
+    "actor": "codex",
+    "model": "GPT-6",
+    "tool": "codex"
+  },
+  "base_revision": "1e52585c9019a32d37f959e0dafa00ae431f28c4",
+  "worktree": "/private/tmp/CMMMech-expansion-round12-20261011",
+  "issue": 48,
+  "input_frontier": {
+    "path": "research/ingests/round11-frontier-20261011.json",
+    "sha256": "67e6b231d99f47e1de815486358f17c0a86cf61d4cec545660c9402759eb4282"
+  },
+  "phase": "Assessment followed by explicitly assigned curation of five commodities; independent scientific review is separate.",
+  "search": {
+    "provider": "web.run",
+    "date": "2026-10-11",
+    "queries": [
+      "site.industry.gov.au critical minerals list high purity alumina 99.99 2023",
+      "site.canada.ca critical minerals high-purity iron ore 2024 definition 67",
+      "site.usgs.gov bauxite alumina boron mineral commodity summaries 2025",
+      "bauxite bioleaching Bacillus polymyxa primary study silica removal",
+      "borate ore bioleaching colemanite ulexite bacteria fungi study",
+      "\"high purity iron ore\" \"definition\" site:canada.ca",
+      "\"high purity alumina\" \"99.99\" site:ga.gov.au",
+      "\"high-purity iron ore\" site:natural-resources.canada.ca \"67\"",
+      "\"boron\" \"metallurgy grade\" definition",
+      "\"alumina\" \"bioleaching\" bacteria fungi aluminum oxide primary",
+      "\"high-purity iron ore\" bioleaching microbial",
+      "\"high purity iron ore\" site:canada.ca iron content",
+      "\"high-purity iron ore\" site:natural-resources.canada.ca direct reduction",
+      "\"boron\" \"metallurgy\" site:rmis.jrc.ec.europa.eu",
+      "\"Bioleaching of the α-alumina layer\"",
+      "\"high-purity iron ore\" Canada definition grade",
+      "\"boron metallurgy grade\" site:europa.eu",
+      "\"alumina\" \"high-purity\" \"bioleaching\"",
+      "\"high purity iron\" bioleaching phosphorus removal",
+      "\"10.1007/s11707-010-0021-9\" correction OR retraction OR erratum",
+      "\"10.2225/vol14-issue3-fulltext-7\" correction OR retraction OR erratum",
+      "\"10.1016/j.jenvman.2023.118825\" correction OR retraction OR supplement",
+      "\"Data for: Bioleaching\" \"alumina\"",
+      "bauxite Paenibacillus polymyxa dialysis \"no\" \"2010\"",
+      "\"high-purity iron ore\" \"67%\" government",
+      "\"boron metallurgy grade\" purity definition European Commission",
+      "\"Bacillus polymyxa\" \"bauxite\" \"Anand\" 1996 pdf",
+      "\"Roles of adhered\" \"Paenibacillus\" filetype:pdf",
+      "\"Bio-chemical leaching of kaolinite-hematite-boehmite\" pdf",
+      "\"Bio-chemical leaching of kaolinite-hematite-boehmite\" correction retraction",
+      "\"Biobeneficiation of bauxite using Bacillus polymyxa\" site:eprints.iisc.ac.in",
+      "\"Some recent advances in the bioprocessing of bauxite\" pdf",
+      "\"boron\" \"metallurgy grade\" \"purity\" site:ec.europa.eu",
+      "\"high-purity iron ore\" \"bioleaching\" OR \"biobeneficiation\"",
+      "\"borates\" \"bioleaching\" \"control\""
+    ],
+    "coverage": "First returned result sets and linked primary/authority pages only; no pagination or date filter. Domain restrictions were query text where shown. No exhaustive literature, current-law or latest-list claim.",
+    "local_hidden_ignored_followed": true,
+    "repository_roots": [
+      "data/records",
+      "research",
+      "reviews",
+      "history"
+    ],
+    "local_commands": [
+      "rg -n -uu -L -i bauxite|alumina|high-purity.iron|borate|boron.metallurg data research reviews history",
+      "rg -n -uu -L -i cmmmech:(bauxite|alumina|high-purity-alumina|high-purity-iron-ore|borates|boron-metallurgy-grade) data/records research reviews history",
+      "rg -n -uu -L -i s11707-010-0021-9|vol14-issue3-fulltext-7|118825|33526|c96gpb6zpm data/records research reviews history"
+    ],
+    "prior_raw_roots": [
+      "/private/tmp/cmm-expansion-authorities-20261011",
+      "/private/tmp/cmm-next-eu",
+      "/private/tmp/cmm-round6-aluminium-evidence",
+      "/private/tmp/cmm-round10-b-f-raw",
+      "/private/tmp/cmm-round9-graphite-evidence",
+      "/private/tmp/cmm-round10-graphite-raw"
+    ],
+    "local_result": "Before new records, exact-root and selected-study searches returned zero text matches across the four repository roots with ignored/hidden files included and relevant symlinks followed. Broad searches found existing element records, research proposals and authority versions; existing aluminium red-mud and boron-boric-acid experiments are not commodity synonyms. No symlinks were found by find in the named repository/raw boundaries. Prior raw text includes authority discussions, not novel source provenance. Binary PDFs are not assumed searchable; relevant selected PDFs were separately extracted and read. No machine-wide absence claim."
+  },
+  "decisions": [
+    {
+      "candidate": "bauxite",
+      "decision": "create",
+      "kind": "commodity",
+      "identity": "Heterogeneous ore commodity, not mineral species, aluminium element, refined alumina or red mud.",
+      "designation": "EU original 2024/1252 Annex I 1(a), strategic, and Annex II 1(c), critical; recital 8 explicitly names the ore in the combined value chain.",
+      "mechanism": "none accepted; study access/interpretation limits below"
+    },
+    {
+      "candidate": "alumina",
+      "decision": "create",
+      "kind": "commodity",
+      "identity": "Refined aluminium oxide commodity; no specific crystalline phase or HPA grade imposed.",
+      "designation": "Same original EU combined designation as explicitly named intermediate product.",
+      "mechanism": "none accepted; total Al from mixed catalyst is not phase-specific alumina evidence"
+    },
+    {
+      "candidate": "high-purity-alumina",
+      "decision": "create",
+      "kind": "commodity",
+      "identity": "Purity-defined refined Al2O3 product; GA describes white crystalline powder and 99.99% purity. This is not kaolin or raw HPA feedstock.",
+      "designation": "Australian Critical Minerals List, exact 20 February 2024 update, Table 1.",
+      "mechanism": "No primary grade-achieving microbial product result accepted within checked coverage."
+    },
+    {
+      "candidate": "high-purity-iron-ore",
+      "decision": "create",
+      "kind": "commodity",
+      "identity": "Canadian ore/concentrate category for green steel, distinct from elemental or high-purity metallic iron. No universal numeric cutoff asserted.",
+      "designation": "Canadian list updated 2024, dated announcement 10 June 2024.",
+      "mechanism": "No grade-specific microbial evidence accepted within checked coverage."
+    },
+    {
+      "candidate": "borates",
+      "decision": "create",
+      "kind": "commodity",
+      "identity": "Commercial borate raw materials including ores and refined borates, with boric acid as distinct associated product.",
+      "designation": "BGS/CMIC UK 2024 Criticality Assessment OR/24/059 Table 11, not government policy. Superseded inventory OR/24/047 remains historical.",
+      "mechanism": "Narrow Bayat2011 colemanite-bearing ore fungal leaching; no percentage recovery, kinetic constant, pure product or broad-borate extrapolation."
+    },
+    {
+      "candidate": "boron-metallurgy-grade",
+      "decision": "defer",
+      "kind": "commodity",
+      "identity": "Explicit EU qualified designation, not an alias for boron element or all borates.",
+      "designation": "EU original Annex I 1(c) verified. Recital 8 covers preceding stages toward specified grade.",
+      "missing": "A sufficient material/product specification or official scope definition distinguishing metallurgy-grade boron from broad boron/borates. Annex label alone does not supply composition, impurity or acceptance specification. Official 2025 factsheet link returned 429 on two direct attempts and web internal error. No invented threshold or elemental identifier."
+    }
+  ],
+  "primary_studies": [
+    {
+      "id": "zhou2010",
+      "doi": "10.1007/s11707-010-0021-9",
+      "title": "Roles of adhered Paenibacillus polymyxa in the dissolution and flotation of bauxite: a dialytic investigation",
+      "status": "deferred: abstract and metadata only",
+      "access": "Publisher HTML acquired; linked PDF HTTP 200 actually 21-byte permission denial. Academic publisher alternate returned 403. No unavailable methods or numbers accepted.",
+      "prospect": "Contact-versus-dialysis design could resolve attached-cell contribution, if complete primary PDF becomes legitimately available."
+    },
+    {
+      "id": "gurevich2015",
+      "url": "https://nopr.niscpr.res.in/handle/123456789/33526",
+      "title": "Bio-chemical leaching of kaolinite-hematite-boehmite type bauxite ore",
+      "status": "full PDF read; mechanism not accepted",
+      "locators": "Experimental pp.248-249; Table1-2 p250; Figure2 and Table3 p251; conclusion pp251-252. Table2 visually checked.",
+      "reason": "Mixes selected consortia with purified Bacillus aryabhattai identification without unambiguous experiment assignment. No clear uninoculated control or total microbial exposure duration/replication. Table2 uses assumed nonleached reference constituents, including reported zeros that are assumptions rather than measurements; headline approximately50% Al2O3 extraction is not reproduced by the displayed table. Chemical-acid comparison differs in temperature. No yield or causal mechanism transferred.",
+      "supplement": "No supplementary item referenced in inspected PDF; no exhaustive repository assertion."
+    },
+    {
+      "id": "bayat2011",
+      "doi": "10.2225/vol14-issue3-fulltext-7",
+      "title": "Use of Aspergillus niger in the bioleaching of colemanite for the production of boric acid",
+      "status": "full PDF plus HTML read; narrow mechanism accepted",
+      "locators": "Methods pp3-4, Table1 p3; Figure1 p5, Figures2-3 p6, Table3 p7, Figure4 p8; all these assay plots/tables visually inspected.",
+      "supports": "Growing reported ATCC11414 culture with mixed colemanite ore; 0.45um filtrate volumetry for boric acid and HPLC acids. Culture acidification differs from no-organism control and soluble boron was reported.",
+      "limits": [
+        "No abiotic boron-release series in Table3, so microbial incremental dissolution unresolved.",
+        "Methods30±2C versus abstract/optimum25±2C; initial pH5.5 versus7/7.06; 5% endpoint Table3pH4.50 vs text4.10 and optimum4.60.",
+        "Figure4 line y=0.111x-0.030 but text k=0.030/day, which conflicts with slope interpretation. No fitted constant accepted.",
+        "No isolated product assay; solution release is not recovery of purified boric acid.",
+        "No numerical extraction accepted; calculated90.18% and12.95g/L B2O3 do not directly agree with50g/L feed times28.05% B2O3 without further explanation.",
+        "Organic-acid cause plausible, not exclusive demonstrated molecular route. Chemical comparator80C90min differs from culture assay.",
+        "At least duplicate, claimed reproducibility within5%; no raw replicates supplied."
+      ],
+      "supplement": "No separately linked supplement observed in inspected primary PDF/HTML."
+    },
+    {
+      "id": "compagnone2023",
+      "doi": "10.1016/j.jenvman.2023.118825",
+      "title": "Bioleaching of the α-alumina layer of spent three-way catalysts as a pretreatment for the recovery of platinum group metals",
+      "status": "Full primary PDF read; no alumina mechanism accepted",
+      "locators": "Methods2.1-2.6 pp2-3; Results3.4 pp5-7; Fig4 p6 visually checked; AppendixA supplement reference p10.",
+      "scope": "Cryomilled spent automotive catalyst, A.thiooxidans DSM11478, 14day assays30C150rpm; acid mixtures from different culture ages/pH compared to commercial acid. Total-element Al measurement in mixed cordierite/alumina feed does not isolate Al2O3 dissolution or produce alumina.",
+      "counterevidence": "Stationary-phase advantage only at5% loading; at30/60% bacteria-free medium highest Al release. InitialpH differences confound attribution. Main text54.5% versus economic discussion57.1%; no economic/product claim accepted.",
+      "supplement": "Publisher access403; appendix supplementary files not acquired. Public Mendeley DOI10.17632/c96gpb6zpm.1 (23January2024, CC BY4.0) metadata checked. HTML initial file list empty/loading; attempted public file endpoint404. Raw data and supplement remain unverified, not inferred absent."
+    }
+  ],
+  "correction_retraction_search": {
+    "coverage": "Exact DOI/title web queries above found no relevant notice in first returned sets; Crossref metadata for Zhou2010, Bayat2011 and Compagnone2023 has no update-to and empty relation. This is not a complete Crossmark/retraction audit. BGS supersession was material and OR/24/059 is used.",
+    "source_internal_conflicts_preserved": true
+  },
+  "acquisitions": [
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/bauxite2010.html",
+      "url": "https://journal.hep.com.cn/fesci/EN/10.1007/s11707-010-0021-9",
+      "started_at": "2026-10-11T08:25:19.726871+00:00",
+      "finished_at": "2026-10-11T08:25:21.730352+00:00",
+      "exit_code": 0,
+      "http": "200\ttext/html;charset=UTF-8\thttps://journal.hep.com.cn/fesci/EN/10.1007/s11707-010-0021-9",
+      "error": "",
+      "bytes": 207514,
+      "sha256": "2f1e66eeb959c1d9120d9c68d0bd83997c5afaba54393a9bd36028df96fc52e4",
+      "first_bytes": "b' <!-- \\xe5\\x8a\\xa0\\xe8\\xbd\\xbd\\xe7\\xab\\x99\\xe7\\x82\\xb9\\xe9\\x85\\x8d\\xe7\\xbd\\xae\\xe4\\xbf\\xa1\\xe6\\x81\\xaf'",
+      "status": "acquired"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/colemanite2011.pdf",
+      "url": "https://www.scielo.cl/pdf/ejb/v14n3/a07.pdf",
+      "started_at": "2026-10-11T08:25:19.729850+00:00",
+      "finished_at": "2026-10-11T08:25:20.592730+00:00",
+      "exit_code": 0,
+      "http": "200\tapplication/pdf\thttps://www.scielo.cl/pdf/ejb/v14n3/a07.pdf",
+      "error": "",
+      "bytes": 179004,
+      "sha256": "6c33798eb0611fa397328aa6d3ec1ca3ac9e1be1d948363ed9b257e3623f831b",
+      "first_bytes": "b'%PDF-1.5\\r%\\xe2\\xe3\\xcf\\xd3\\r\\n788 0 obj\\r<</L'",
+      "status": "acquired"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/ga-hpa.html",
+      "url": "https://www.ga.gov.au/scientific-topics/minerals/critical-minerals/critical-minerals-and-their-uses",
+      "started_at": "2026-10-11T08:25:19.732171+00:00",
+      "finished_at": "2026-10-11T08:25:21.107151+00:00",
+      "exit_code": 0,
+      "http": "200\ttext/html; charset=utf-8\thttps://www.ga.gov.au/scientific-topics/minerals/critical-minerals/critical-minerals-and-their-uses",
+      "error": "",
+      "bytes": 58210,
+      "sha256": "4689219fe6f311b3a9629b601971826c8159b6a7973b0bc0880c3328d4b6f6bd",
+      "first_bytes": "b'<!DOCTYPE html>\\n<html lang=\"en'",
+      "status": "acquired"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/eu2024.html",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1252/oj/eng",
+      "started_at": "2026-10-11T08:25:19.733153+00:00",
+      "finished_at": "2026-10-11T08:25:20.748187+00:00",
+      "exit_code": 0,
+      "http": "200\ttext/html; charset=UTF-8\thttps://eur-lex.europa.eu/eli/reg/2024/1252/oj/eng",
+      "error": "",
+      "bytes": 1054443,
+      "sha256": "52fbb3a1298aa7731d4bc965530062a8946e7572eda5a55b48ea3fde52ab8dd3",
+      "first_bytes": "b'  \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n '",
+      "status": "acquired"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/au2024.html",
+      "url": "https://www.industry.gov.au/publications/australias-critical-minerals-list-and-strategic-materials-list",
+      "started_at": "2026-10-11T08:25:19.740408+00:00",
+      "finished_at": "2026-10-11T08:25:19.876550+00:00",
+      "exit_code": 92,
+      "http": "000\t\thttps://www.industry.gov.au/publications/australias-critical-minerals-list-and-strategic-materials-list",
+      "error": "curl: (92) HTTP/2 stream 1 was not closed cleanly: INTERNAL_ERROR (err 2)\n",
+      "status": "unavailable_or_wrong_content"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/ca2024.html",
+      "url": "https://www.canada.ca/en/campaign/critical-minerals-in-canada/critical-minerals-an-opportunity-for-canada.html",
+      "started_at": "2026-10-11T08:25:19.876710+00:00",
+      "finished_at": "2026-10-11T08:25:20.992420+00:00",
+      "exit_code": 0,
+      "http": "200\ttext/html;charset=utf-8\thttps://www.canada.ca/en/campaign/critical-minerals-in-canada/critical-minerals-an-opportunity-for-canada.html",
+      "error": "",
+      "bytes": 27807,
+      "sha256": "7caa5860552bc859115dfbdcfdcba987a5c90f96ad30947c68c13c6c5f313dba",
+      "first_bytes": "b'<!doctype html>\\r\\n\\r\\n\\r\\n<html cla'",
+      "status": "acquired"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/uk2024.pdf",
+      "url": "https://nora.nerc.ac.uk/id/eprint/538471/1/OR24047_report.pdf",
+      "started_at": "2026-10-11T08:25:20.594053+00:00",
+      "finished_at": "2026-10-11T08:25:24.396051+00:00",
+      "exit_code": 0,
+      "http": "200\tapplication/pdf\thttps://nora.nerc.ac.uk/id/eprint/538471/1/OR24047_report.pdf",
+      "error": "",
+      "bytes": 26610997,
+      "sha256": "1a72206ff4e1b8d6cbc2a350e28338f192e264a3ba6c31a5d8dbb28262e35dc5",
+      "first_bytes": "b'%PDF-1.6\\r%\\xe2\\xe3\\xcf\\xd3\\r\\n32387 0 obj\\r<<'",
+      "status": "acquired"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/usgs-bauxite2025.pdf",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-bauxite-alumina.pdf",
+      "started_at": "2026-10-11T08:25:20.752716+00:00",
+      "finished_at": "2026-10-11T08:25:21.940119+00:00",
+      "exit_code": 0,
+      "http": "200\tapplication/pdf\thttps://pubs.usgs.gov/periodicals/mcs2025/mcs2025-bauxite-alumina.pdf",
+      "error": "",
+      "bytes": 747597,
+      "sha256": "f37ce33c9b54976deb3ed22571fd2dfaa1f7c19dff174ff62b73105b0d81f189",
+      "first_bytes": "b'%PDF-1.7\\r%\\xe2\\xe3\\xcf\\xd3\\r\\n1 0 obj\\r<</Acr'",
+      "status": "acquired"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/usgs-boron2025.pdf",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-boron.pdf",
+      "started_at": "2026-10-11T08:25:20.992935+00:00",
+      "finished_at": "2026-10-11T08:25:21.924097+00:00",
+      "exit_code": 0,
+      "http": "200\tapplication/pdf\thttps://pubs.usgs.gov/periodicals/mcs2025/mcs2025-boron.pdf",
+      "error": "",
+      "bytes": 695557,
+      "sha256": "3f0385c87f3ff7be8f53df7461a1841baf91305458421f26c71db6201f2de920",
+      "first_bytes": "b'%PDF-1.7\\r%\\xe2\\xe3\\xcf\\xd3\\r\\n1 0 obj\\r<</Acr'",
+      "status": "acquired"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/bauxite2010.pdf",
+      "url": "https://journal.hep.com.cn/fesci/EN/PDF/10.1007/s11707-010-0021-9",
+      "started_at": "2026-10-11T08:25:56.872976+00:00",
+      "finished_at": "2026-10-11T08:25:57.842744+00:00",
+      "exit_code": 0,
+      "http": "200\tapplication/json;charset=UTF-8\thttps://journal.hep.com.cn/fesci/EN/PDF/10.1007/s11707-010-0021-9",
+      "error": "",
+      "bytes": 21,
+      "sha256": "1ee6b30ff95cbaf24c2603a5bcd3c97f718150f5a3be523d99c5fd2e4d0a3691",
+      "first_bytes": "b'\\xe6\\x82\\xa8\\xe6\\xb2\\xa1\\xe6\\x9c\\x89\\xe4\\xb8\\x8b\\xe8\\xbd\\xbd\\xe6\\x9d\\x83\\xe9\\x99\\x90'",
+      "content_verification": "Not a PDF: 21-byte Chinese permission-denial response. Excluded from full-text inspection.",
+      "status": "unavailable_or_wrong_content"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/alumina2023.pdf",
+      "url": "https://rodin.uca.es/bitstream/handle/10498/30253/S0301479723016134.pdf?isAllowed=y&sequence=1",
+      "started_at": "2026-10-11T08:25:56.873618+00:00",
+      "finished_at": "2026-10-11T08:25:59.841101+00:00",
+      "exit_code": 0,
+      "http": "200\tapplication/pdf\thttps://rodin.uca.es/bitstream/handle/10498/30253/S0301479723016134.pdf?isAllowed=y&sequence=1",
+      "error": "",
+      "bytes": 6360832,
+      "sha256": "a32ef09a4ad14394dc7f01bb74c731a0434fcdb408ec6f411606b29cec8c4838",
+      "first_bytes": "b'%PDF-1.7\\r\\n%\\xa1\\xb3\\xc5\\xd7\\r\\n1 0 obj\\r\\n<</P'",
+      "status": "acquired"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/colemanite-crossref.json",
+      "url": "https://api.crossref.org/works/10.2225/vol14-issue3-fulltext-7",
+      "started_at": "2026-10-11T08:25:56.877034+00:00",
+      "finished_at": "2026-10-11T08:25:57.174760+00:00",
+      "exit_code": 56,
+      "http": "429\t\thttps://api.crossref.org/works/10.2225/vol14-issue3-fulltext-7",
+      "error": "curl: (56) The requested URL returned error: 429\n",
+      "status": "unavailable_or_wrong_content"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/bauxite-crossref.json",
+      "url": "https://api.crossref.org/works/10.1007/s11707-010-0021-9",
+      "started_at": "2026-10-11T08:25:56.878631+00:00",
+      "finished_at": "2026-10-11T08:25:57.339439+00:00",
+      "exit_code": 0,
+      "http": "200\tapplication/json\thttps://api.crossref.org/works/10.1007/s11707-010-0021-9",
+      "error": "",
+      "bytes": 13863,
+      "sha256": "9eb8990e2fe0be022d95b26c384cdf9eb2eed89980e7f1b93f05da720421e109",
+      "first_bytes": "b'{\"status\":\"ok\",\"message-type\":'",
+      "status": "acquired"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/alumina-crossref.json",
+      "url": "https://api.crossref.org/works/10.1016/j.jenvman.2023.118825",
+      "started_at": "2026-10-11T08:25:56.884257+00:00",
+      "finished_at": "2026-10-11T08:25:57.313526+00:00",
+      "exit_code": 0,
+      "http": "200\tapplication/json\thttps://api.crossref.org/works/10.1016/j.jenvman.2023.118825",
+      "error": "",
+      "bytes": 39196,
+      "sha256": "d4e5c4d410278e5e544a4c01680b808ef82220687cfdfb63fc37ae6fdc91a1fd",
+      "first_bytes": "b'{\"status\":\"ok\",\"message-type\":'",
+      "status": "acquired"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/hpi-canada-announcement.html",
+      "url": "https://www.canada.ca/en/natural-resources-canada/news/2024/06/government-of-canada-releases-updated-critical-minerals-list.html",
+      "started_at": "2026-10-11T08:25:57.174924+00:00",
+      "finished_at": "2026-10-11T08:26:00.262976+00:00",
+      "exit_code": 0,
+      "http": "200\ttext/html;charset=utf-8\thttps://www.canada.ca/en/natural-resources-canada/news/2024/06/government-of-canada-releases-updated-critical-minerals-list.html",
+      "error": "",
+      "bytes": 35943,
+      "sha256": "43390ac782487a380b3ee14b900c9d08e0567f881fc9e7eb5b2163a4998f4848",
+      "first_bytes": "b'<!doctype html>\\r\\n\\r\\n<!--[if lt '",
+      "status": "acquired"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/hpi-newfoundland.pdf",
+      "url": "https://www.gov.nl.ca/iet/files/2024_JulienneLake_InvestmentBrochure.pdf",
+      "started_at": "2026-10-11T08:25:57.313947+00:00",
+      "finished_at": "2026-10-11T08:25:58.827402+00:00",
+      "exit_code": 0,
+      "http": "200\tapplication/pdf\thttps://www.gov.nl.ca/em/files/2024_JulienneLake_InvestmentBrochure.pdf",
+      "error": "",
+      "bytes": 1758071,
+      "sha256": "6ebc223e2e8f5b2b1dbd97ddbe63465d67c9654f8135466445f700142ccfcefe",
+      "first_bytes": "b'%PDF-1.4\\r%\\xe2\\xe3\\xcf\\xd3\\r\\n173 0 obj\\r<</L'",
+      "status": "acquired"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/bauxite2015.pdf",
+      "url": "https://nopr.niscpr.res.in/bitstream/123456789/33526/1/IJCT%2022%285%29%20248-252.pdf",
+      "started_at": "2026-10-11T08:26:41.031690+00:00",
+      "finished_at": "2026-10-11T08:26:43.739508+00:00",
+      "exit_code": 0,
+      "http": "200\tapplication/pdf\thttps://nopr.niscpr.res.in/bitstream/123456789/33526/1/IJCT%2022%285%29%20248-252.pdf",
+      "error": "",
+      "bytes": 150345,
+      "sha256": "309a27d0aed154c92c907ed80a006f3d0f8d5f0f71f27366a50e33fa9e1616be",
+      "first_bytes": "b'%PDF-1.6\\r%\\xe2\\xe3\\xcf\\xd3\\r\\n39 0 obj\\r<</Li'",
+      "status": "acquired"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/boron-eu2025.pdf",
+      "url": "https://single-market-economy.ec.europa.eu/document/download/d6fb1296-b08c-4f80-b735-0f9f1fc36603_en?filename=RMSP_Boron_Factsheet_V2.pdf",
+      "started_at": "2026-10-11T08:26:41.032601+00:00",
+      "finished_at": "2026-10-11T08:26:41.308040+00:00",
+      "exit_code": 56,
+      "http": "429\t\thttps://single-market-economy.ec.europa.eu/document/download/d6fb1296-b08c-4f80-b735-0f9f1fc36603_en?filename=RMSP_Boron_Factsheet_V2.pdf",
+      "error": "curl: (56) The requested URL returned error: 429\n",
+      "status": "unavailable_or_wrong_content"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/alumina-dataset.html",
+      "url": "https://data.mendeley.com/datasets/c96gpb6zpm/1",
+      "started_at": "2026-10-11T08:26:41.035264+00:00",
+      "finished_at": "2026-10-11T08:26:42.361735+00:00",
+      "exit_code": 0,
+      "http": "200\ttext/html; charset=utf-8\thttps://data.mendeley.com/datasets/c96gpb6zpm/1",
+      "error": "",
+      "bytes": 132370,
+      "sha256": "b3f61876bd7d289c1c91c17490b27080da92b8ec38d40e8f42a1a701e3cd0ec4",
+      "first_bytes": "b'<!doctype html><html lang=\"en\"'",
+      "status": "acquired"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/bauxite2010-academic.html",
+      "url": "https://academic.hep.com.cn/fesci/EN/10.1007/s11707-010-0021-9",
+      "started_at": "2026-10-11T08:26:41.040600+00:00",
+      "finished_at": "2026-10-11T08:26:46.577594+00:00",
+      "exit_code": 56,
+      "http": "403\ttext/html\thttps://academic.hep.com.cn/fesci/EN/10.1007/s11707-010-0021-9",
+      "error": "curl: (56) The requested URL returned error: 403\n",
+      "status": "unavailable_or_wrong_content"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/colemanite-crossref.json",
+      "url": "https://api.crossref.org/works/10.2225/vol14-issue3-fulltext-7",
+      "started_at": "2026-10-11T08:26:41.041277+00:00",
+      "finished_at": "2026-10-11T08:26:41.350202+00:00",
+      "exit_code": 0,
+      "http": "200\tapplication/json\thttps://api.crossref.org/works/10.2225/vol14-issue3-fulltext-7",
+      "error": "",
+      "bytes": 2120,
+      "sha256": "f7e4ad738ccb9a09c448d23c9bbfc5753137ffd017e796bbfc549c8aacc230db",
+      "first_bytes": "b'{\"status\":\"ok\",\"message-type\":'",
+      "status": "acquired"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/alumina-dataset-files.json",
+      "url": "https://data.mendeley.com/public-api/datasets/c96gpb6zpm/versions/1/files",
+      "started_at": "2026-10-11T08:27:33.582609+00:00",
+      "finished_at": "2026-10-11T08:27:34.279516+00:00",
+      "exit_code": 56,
+      "http": "404\ttext/html; charset=utf-8\thttps://data.mendeley.com/public-api/datasets/c96gpb6zpm/versions/1/files",
+      "error": "curl: (56) The requested URL returned error: 404\n",
+      "status": "unavailable_or_wrong_content"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/alumina-publisher.html",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0301479723016134",
+      "started_at": "2026-10-11T08:27:33.583444+00:00",
+      "finished_at": "2026-10-11T08:27:33.658513+00:00",
+      "exit_code": 56,
+      "http": "403\ttext/html; charset=UTF-8\thttps://www.sciencedirect.com/science/article/pii/S0301479723016134",
+      "error": "curl: (56) The requested URL returned error: 403\n",
+      "status": "unavailable_or_wrong_content"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/usgs-bauxite-identity.html",
+      "url": "https://www.usgs.gov/centers/national-minerals-information-center/bauxite-and-alumina-statistics-and-information",
+      "started_at": "2026-10-11T08:27:33.589205+00:00",
+      "finished_at": "2026-10-11T08:27:33.676293+00:00",
+      "exit_code": 22,
+      "http": "403\ttext/html\thttps://www.usgs.gov/centers/national-minerals-information-center/bauxite-and-alumina-statistics-and-information",
+      "error": "curl: (22) The requested URL returned error: 403\n",
+      "status": "unavailable_or_wrong_content"
+    },
+    {
+      "file": "/private/tmp/cmm-round12-aluminium-boron-raw/boron-eu2025-retry.pdf",
+      "url": "https://single-market-economy.ec.europa.eu/document/download/d6fb1296-b08c-4f80-b735-0f9f1fc36603_en?filename=RMSP_Boron_Factsheet_V2.pdf",
+      "started_at": "2026-10-11T08:27:33.590653+00:00",
+      "finished_at": "2026-10-11T08:27:34.117923+00:00",
+      "exit_code": 56,
+      "http": "429\t\thttps://single-market-economy.ec.europa.eu/document/download/d6fb1296-b08c-4f80-b735-0f9f1fc36603_en?filename=RMSP_Boron_Factsheet_V2.pdf",
+      "error": "curl: (56) The requested URL returned error: 429\n",
+      "status": "unavailable_or_wrong_content"
+    }
+  ],
+  "reused_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/uk2024-or24059.pdf",
+      "url": "https://nora.nerc.ac.uk/id/eprint/539735/1/OR24059.pdf",
+      "sha256": "e5708ffb1080c874cc57f0e20aad8f99aea746977971280434a1cfbb37f28c9e",
+      "bytes": 29325722,
+      "rechecked_at": "2026-10-11T08:28:07.234645+00:00",
+      "status": "prior round10 acquisition reused, not freshly downloaded; live open failed tool size limit"
+    }
+  ],
+  "provider_only_access": [
+    {
+      "url": "https://www.industry.gov.au/publications/australias-critical-minerals-list-and-strategic-materials-list",
+      "status": "Full web text with update date and Table1 inspected; direct HTTP2 failure; no raw HTML hash claimed."
+    },
+    {
+      "url": "https://www.usgs.gov/centers/national-minerals-information-center/bauxite-and-alumina-statistics-and-information",
+      "status": "Full web text Overview inspected; direct403; no raw HTML hash claimed."
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061",
+      "status": "Live taxonomy browser read, species label; ATCC11414 catalog timed out, so no independent strain authentication."
+    }
+  ],
+  "license_and_reuse": {
+    "raw_storage": "/private/tmp/cmm-round12-aluminium-boron-raw",
+    "committed_full_text": false,
+    "primary_raw_rights": {
+      "bayat2011": "Copyright2011 Pontificia Universidad Catolica de Valparaiso; blanket redistribution permission not established in this pass",
+      "zhou2010": "Publisher copyright; raw full text inaccessible",
+      "gurevich2015": "Public repository reading access; redistribution license not established",
+      "compagnone2023": "PDF and repository state CC BY-NC4.0",
+      "mendeley_c96gpb6zpm_v1": "Metadata states CC BY4.0; data files not acquired"
+    },
+    "official_sources": "Public official documents; source-specific terms not used to justify raw redistribution; only provenance and paraphrased claim records committed."
+  },
+  "validation": {
+    "baseline": "Parent reported terminal0 before edits:307 passed,3 skipped;71records and83histories valid. Not independently rerun by this agent.",
+    "scope": "Only five named record validations; parent owns batch/history/review gates.",
+    "independent_review": "pending parent assignment at dossier creation"
+  },
+  "curation_receipts": [
+    {
+      "slug": "bauxite",
+      "history": "history/records/bauxite/2026-10-11T083001Z-codex-40769d.yaml",
+      "inline_timestamp": "2026-10-11T08:30:01Z",
+      "validation_command": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate data/records/bauxite.yaml",
+      "validation_exit": 0,
+      "validation_stdout": "Checked 1 record(s); 0 failed.\n",
+      "validation_stderr": ""
+    },
+    {
+      "slug": "alumina",
+      "history": "history/records/alumina/2026-10-11T083005Z-codex-1e7975.yaml",
+      "inline_timestamp": "2026-10-11T08:30:05Z",
+      "validation_command": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate data/records/alumina.yaml",
+      "validation_exit": 0,
+      "validation_stdout": "Checked 1 record(s); 0 failed.\n",
+      "validation_stderr": ""
+    },
+    {
+      "slug": "high-purity-alumina",
+      "history": "history/records/high-purity-alumina/2026-10-11T083009Z-codex-d1801a.yaml",
+      "inline_timestamp": "2026-10-11T08:30:09Z",
+      "validation_command": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate data/records/high-purity-alumina.yaml",
+      "validation_exit": 0,
+      "validation_stdout": "Checked 1 record(s); 0 failed.\n",
+      "validation_stderr": ""
+    },
+    {
+      "slug": "high-purity-iron-ore",
+      "history": "history/records/high-purity-iron-ore/2026-10-11T083013Z-codex-00413d.yaml",
+      "inline_timestamp": "2026-10-11T08:30:14Z",
+      "validation_command": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate data/records/high-purity-iron-ore.yaml",
+      "validation_exit": 0,
+      "validation_stdout": "Checked 1 record(s); 0 failed.\n",
+      "validation_stderr": ""
+    },
+    {
+      "slug": "borates",
+      "history": "history/records/borates/2026-10-11T083018Z-codex-7e7166.yaml",
+      "inline_timestamp": "2026-10-11T08:30:19Z",
+      "validation_command": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate data/records/borates.yaml",
+      "validation_exit": 0,
+      "validation_stdout": "Checked 1 record(s); 0 failed.\n",
+      "validation_stderr": ""
+    }
+  ],
+  "record_hashes": [
+    {
+      "path": "data/records/bauxite.yaml",
+      "sha256": "b3c9fba4b8c46b4ac803dfa076887d49743b0e433804c54f3161788dcd887f7d"
+    },
+    {
+      "path": "data/records/alumina.yaml",
+      "sha256": "491bc7dee86b538d037f8d230167cc4c351aeb98e302202b4556b6a0cdae565c"
+    },
+    {
+      "path": "data/records/high-purity-alumina.yaml",
+      "sha256": "236a531d0c33808e429b9d26b90f5e86802dbbbd2af42e558500a510d0005501"
+    },
+    {
+      "path": "data/records/high-purity-iron-ore.yaml",
+      "sha256": "3d9cacdea15ce942e4d2f341544e4bbb1621ca71e62c2bb9bafb05e6f00ff77b"
+    },
+    {
+      "path": "data/records/borates.yaml",
+      "sha256": "697069a6fe66a825ec54081ead08f77109c57a6cdf3917a45b624b12abf6478c"
+    }
+  ],
+  "record_hashes_before_review_correction": [
+    {
+      "path": "data/records/bauxite.yaml",
+      "sha256": "b3c9fba4b8c46b4ac803dfa076887d49743b0e433804c54f3161788dcd887f7d"
+    },
+    {
+      "path": "data/records/alumina.yaml",
+      "sha256": "491bc7dee86b538d037f8d230167cc4c351aeb98e302202b4556b6a0cdae565c"
+    },
+    {
+      "path": "data/records/high-purity-alumina.yaml",
+      "sha256": "236a531d0c33808e429b9d26b90f5e86802dbbbd2af42e558500a510d0005501"
+    },
+    {
+      "path": "data/records/high-purity-iron-ore.yaml",
+      "sha256": "3d9cacdea15ce942e4d2f341544e4bbb1621ca71e62c2bb9bafb05e6f00ff77b"
+    },
+    {
+      "path": "data/records/borates.yaml",
+      "sha256": "8ada117c96a66f38b372418e3a0297f2e2a7ee720b5eb73180eb58babfc49c35"
+    }
+  ],
+  "review_corrections": [
+    {
+      "issue": 49,
+      "review_id": "20261011T083609Z-borates-round12-independent",
+      "finding_id": "F1",
+      "issue_key": "borates-source-composition-nonclosure",
+      "timestamp": "2026-10-11T08:37:48Z",
+      "previous_record_sha256": "8ada117c96a66f38b372418e3a0297f2e2a7ee720b5eb73180eb58babfc49c35",
+      "corrected_record_sha256": "697069a6fe66a825ec54081ead08f77109c57a6cdf3917a45b624b12abf6478c",
+      "history": "history/records/borates/2026-10-11T083733Z-codex-3ef868.yaml",
+      "details": "Table1 twelve oxide cells sum126.8wt%; reported28.05wt%B2O3 cell retained only with explicit attribution; no normalization or validated recovery denominator.",
+      "validation": "Namedrecord1checked0failed; namedhistory2records0errors against base1e52585c9019a32d37f959e0dafa00ae431f28c4."
+    }
+  ]
+}

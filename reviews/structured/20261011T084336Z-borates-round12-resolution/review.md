@@ -1,0 +1,363 @@
+# Independent round12 scientific review of Borates
+
+- Review: 20261011T084336Z-borates-round12-resolution
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T08:34:19Z
+- Finished UTC: 2026-10-11T08:43:36Z
+- Reviewer: Codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Corrected commodity record and dated designation are supported. The exact predecessor finding is resolved; source limitations remain explicit.
+
+## Scope And Provenance
+
+Entire one-record scientific and provenance state.
+
+Selection: Named independently assigned record, not a sample.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1e52585c9019a32d37f959e0dafa00ae431f28c4.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:borates | data/records/borates.yaml | maintained | Borates |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Named strict record validation | passed | True | cmmmech:borates | Checked 1 record(s); 0 failed. |
+| Completed batch check | passed | True | cmmmech:borates | 307 tests passed, 3 skipped; 93 records and 108 histories valid. |
+| Nonempty corpus validation | passed | True | cmmmech:borates | 93 records checked; 0 failed. |
+| Trusted-base append-only history validation | passed | True | cmmmech:borates | 108 history records checked; 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Material boundary and edition-specific designation
+
+identity: supported. Targets: cmmmech:borates.
+
+Commercial natural/refined borate category; one colemanite-bearing feed experiment is scoped separately.
+
+### Actual curation and immutable working-state capture
+
+provenance: supported. Targets: cmmmech:borates.
+
+CREATE sidecar target and actor agree with the new record; inline descriptive event is distinct. No prior committed history was modified.
+
+### Laboratory fungal leaching and composition conflict
+
+evidence: supported. Targets: cmmmech:borates.
+
+Corrected record attributes28.05wt% to source and preserves126.8% table total without normalization or yield calculation. Other control, protocol and scale limitations remain explicit.
+
+## Findings
+
+### F1: Qualify the nonclosing source ore composition
+
+minor / resolved / confirmed; issue key: borates-source-composition-nonclosure.
+
+The record states28.05wt%B2O3-equivalent as feed composition without noting Table1 totals126.8wt%. Preserve it only as reported and explicitly flag the unresolved total; do not normalize source cells or use them as a verified extraction denominator. Narrow qualitative leaching remains supported.
+
+Disposition: Corrected record explicitly attributes 28.05 wt% as reported, retains the 126.8% table total and forbids normalization or treating it as a validated recovery denominator. Independent review of corrected bytes, source Table1 and the actual issue49 EDIT history confirms the correction.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/borates.yaml; Entire exact inspected record, attached CREATE history, schema and cohort dossier | supports | New commodity identity has its own root and actual codex/GPT-6/codex history. Root reviewer did not author these scientific bytes or histories. |
+| authority | https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-boron.pdf; https://nora.nerc.ac.uk/id/eprint/539735/1/OR24059.pdf; USGS2025 Boron pp48–49; BGS/CMIC OR/24/059 cover,Tables1/11; Bayat2011 Methodspp3–4,Tables1/3,Figures1–4. | supports | Replacement BGS assessment and non-policy disclaimer checked; NORA identity and NCBI5061 opened live. Full primary PDF text and renderedTables1/3/Figures1–4 independently checked. Culture-associated acids/pH and filtrate-boron observations support a limited association, not microbial increment, exclusive causation or pure-product yield. |
+| search | Local bounded identity search and live authority checks; data/records research reviews history; issuing pages | context_only | Search found current proposed roots and historical candidates, not grounds to equate commodities with element/mineral roots. Scientific absence beyond these boundaries is not asserted. |
+| primary | https://www.scielo.cl/pdf/ejb/v14n3/a07.pdf; Table1,p3; Methodspp3–4; Table3,p7; Figures1–4,pp5–8; conclusionp9 | partial | Table1 labels twelve oxide cells wt%:28.05,6.91,0.79,32.48,3.41,4.56,12.31,1.59,32.95,1.61,0.40,1.74. Their arithmetic total is126.8%, conflicting with a closed bulk composition. Figures show pH/acid differences, but no matched abiotic B-release series; source pH/temperature/kinetic inconsistencies are retained. Species5061 does not authenticate ATCC11414. |
+| corrections | Live web search and SciELO primary landing page; First result sets on2026-10-11 | context_only | No affecting correction notice identified in returned DOI-specific results. Results also surface2008colemanite-tailings and2012stirred/column studies; these are unreviewed extension leads, not independent confirmations. |
+
+## Limits And Additional Notes
+
+- Review covers this exact commodity record only. Identity-only entries make no claim that microbial mechanisms do not exist.
+- Raw artifacts acquired by curator were independently read; authority pages were also opened live. No independent laboratory replication or product-standard certification.
+- No matched abiotic boron-release time series, isolated-product purity or mass balance. A.niger species verified; strain accession not independently authenticated.
+- Source temperature,initial/endpH and kinetic reporting conflicts; nonclosing composition prevents a validated feed denominator.
+- Original review and its reviewed working state remain immutable. This successor assesses the corrected record and new actual EDIT history.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T084336Z-borates-round12-resolution
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent round12 scientific review of Borates
+started_at: '2026-10-11T08:34:19Z'
+finished_at: '2026-10-11T08:43:36Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Curated by separate /root/cmm12_aluminium_boron agent; root
+    captured exact state before assessment and independently checked primary content/figures
+    and official sources; no scientific record editing before this observation.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Corrected commodity record and dated designation are supported. The exact
+  predecessor finding is resolved; source limitations remain explicit.
+source:
+  git_revision: 1e52585c9019a32d37f959e0dafa00ae431f28c4
+  state: working_tree
+  inputs:
+  - path: data/records/borates.yaml
+    sha256: 697069a6fe66a825ec54081ead08f77109c57a6cdf3917a45b624b12abf6478c
+    role: target
+  - path: docs/records.md
+    sha256: 212cdbb723eb1ad9eb76ea1b7dad066914659b1f85eb2cdb51ee67466cfcc8ee
+    role: context
+  - path: history/records/borates/2026-10-11T083018Z-codex-7e7166.yaml
+    sha256: 6be3b334cab3e52a294b74b1c3f0c8c62de6e5f11f2b4d5e591570d0f82e9b10
+    role: context
+  - path: history/records/borates/2026-10-11T083733Z-codex-3ef868.yaml
+    sha256: 46c7cc5d94e0e52858b52328af9f38d17bb146d7b983b36b29e5f711191183ca
+    role: context
+  - path: research/ingests/round12-aluminium-boron-20261011.json
+    sha256: 3b71e99149dbc5b38a3b0b206e7a7709fcb08a3aad1db867f3be8903ded581a4
+    role: context
+  - path: research/ingests/round12-aluminium-boron-20261011.md
+    sha256: f8190fbe7ec647b556a01df53ab2755237d79c3563e370036dbe55124f103fce
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+targets:
+- target_id: cmmmech:borates
+  path: data/records/borates.yaml
+  label: Borates
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/borates.yaml
+    role: maintained_record
+scope:
+  description: Entire one-record scientific and provenance state.
+  selection: Named independently assigned record, not a sample.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:borates
+checks:
+- check_id: record
+  name: Named strict record validation
+  command: uv run --locked cmmmech validate data/records/borates.yaml
+  status: passed
+  required: true
+  summary: Checked 1 record(s); 0 failed.
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:borates
+- check_id: check
+  name: Completed batch check
+  command: just check
+  status: passed
+  required: true
+  summary: 307 tests passed, 3 skipped; 93 records and 108 histories valid.
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:borates
+  scope_note: Root executed this gate and read its terminal log /private/tmp/cmm-round12-check.log;
+    record hashes remained fixed throughout. Not a separate execution per review.
+- check_id: require
+  name: Nonempty corpus validation
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: 93 records checked; 0 failed.
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:borates
+  scope_note: Root executed this gate and read its terminal log /private/tmp/cmm-round12-require.log;
+    record hashes remained fixed throughout. Not a separate execution per review.
+- check_id: history
+  name: Trusted-base append-only history validation
+  command: uv run --locked cmmmech validate-history --base 1e52585c9019a32d37f959e0dafa00ae431f28c4
+  status: passed
+  required: true
+  summary: 108 history records checked; 0 errors.
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:borates
+  scope_note: Root executed this gate and read its terminal log /private/tmp/cmm-round12-history.log;
+    record hashes remained fixed throughout. Not a separate execution per review.
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/borates.yaml
+  locator: Entire exact inspected record, attached CREATE history, schema and cohort
+    dossier
+  accessed_at: '2026-10-11T08:43:36Z'
+  support: supports
+  summary: New commodity identity has its own root and actual codex/GPT-6/codex history.
+    Root reviewer did not author these scientific bytes or histories.
+- evidence_id: authority
+  kind: authority
+  reference: https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-boron.pdf; https://nora.nerc.ac.uk/id/eprint/539735/1/OR24059.pdf
+  locator: USGS2025 Boron pp48–49; BGS/CMIC OR/24/059 cover,Tables1/11; Bayat2011
+    Methodspp3–4,Tables1/3,Figures1–4.
+  accessed_at: '2026-10-11T08:43:36Z'
+  support: supports
+  summary: Replacement BGS assessment and non-policy disclaimer checked; NORA identity
+    and NCBI5061 opened live. Full primary PDF text and renderedTables1/3/Figures1–4
+    independently checked. Culture-associated acids/pH and filtrate-boron observations
+    support a limited association, not microbial increment, exclusive causation or
+    pure-product yield.
+- evidence_id: search
+  kind: search
+  reference: Local bounded identity search and live authority checks
+  locator: data/records research reviews history; issuing pages
+  accessed_at: '2026-10-11T08:43:36Z'
+  support: context_only
+  summary: Search found current proposed roots and historical candidates, not grounds
+    to equate commodities with element/mineral roots. Scientific absence beyond these
+    boundaries is not asserted.
+  search_scope: rg --no-ignore --hidden --follow for five exact roots and vol14-issue3-fulltext-7
+    across data/records,research,reviews,history; ignored files included. Primary
+    paper/source PDFs read separately, not assumed text-searchable.
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.scielo.cl/pdf/ejb/v14n3/a07.pdf
+  locator: Table1,p3; Methodspp3–4; Table3,p7; Figures1–4,pp5–8; conclusionp9
+  accessed_at: '2026-10-11T08:43:36Z'
+  support: partial
+  summary: Table1 labels twelve oxide cells wt%:28.05,6.91,0.79,32.48,3.41,4.56,12.31,1.59,32.95,1.61,0.40,1.74.
+    Their arithmetic total is126.8%, conflicting with a closed bulk composition. Figures
+    show pH/acid differences, but no matched abiotic B-release series; source pH/temperature/kinetic
+    inconsistencies are retained. Species5061 does not authenticate ATCC11414.
+- evidence_id: corrections
+  kind: search
+  reference: Live web search and SciELO primary landing page
+  locator: First result sets on2026-10-11
+  accessed_at: '2026-10-11T08:43:36Z'
+  support: context_only
+  summary: No affecting correction notice identified in returned DOI-specific results.
+    Results also surface2008colemanite-tailings and2012stirred/column studies; these
+    are unreviewed extension leads, not independent confirmations.
+  search_scope: 'Queries: "10.2225/vol14-issue3-fulltext-7" correction retraction;
+    "Aspergillus niger" "colemanite" control bioleaching. No filters or pagination;
+    not exhaustive.'
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Material boundary and edition-specific designation
+  outcome: supported
+  summary: Commercial natural/refined borate category; one colemanite-bearing feed
+    experiment is scoped separately.
+  target_ids:
+  - cmmmech:borates
+  evidence_ids:
+  - record
+  - authority
+  dimensions:
+  - name: criticality
+    value: United Kingdom / British Geological Survey / CMIC UK 2024 Criticality Assessment,
+      Table 11 / 2024; Open Report OR/24/059 / critical
+    definition: Exact adopted issuing assessment and edition, not timeless global
+      status.
+    evidence_ids:
+    - authority
+- assessment_id: provenance
+  area: provenance
+  topic: Actual curation and immutable working-state capture
+  outcome: supported
+  summary: CREATE sidecar target and actor agree with the new record; inline descriptive
+    event is distinct. No prior committed history was modified.
+  target_ids:
+  - cmmmech:borates
+  evidence_ids:
+  - record
+- assessment_id: mechanism
+  area: evidence
+  topic: Laboratory fungal leaching and composition conflict
+  outcome: supported
+  summary: Corrected record attributes28.05wt% to source and preserves126.8% table
+    total without normalization or yield calculation. Other control, protocol and
+    scale limitations remain explicit.
+  target_ids:
+  - cmmmech:borates
+  evidence_ids:
+  - primary
+  - record
+  dimensions:
+  - name: experimental_scope
+    value: Growing A.niger reportedATCC11414; mixedKütahya-Emetore; autoclaved sucrose
+      medium; Methods30±2C,150rpm,150mL,1–10%w/v,21days; conflicting25±2C/initialpH
+      retained.
+    definition: Assay-specific reported conditions; no unambiguous optimum or industrial
+      deployment.
+    evidence_ids:
+    - primary
+findings:
+- finding_id: F1
+  issue_key: borates-source-composition-nonclosure
+  category: quantity
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Qualify the nonclosing source ore composition
+  description: The record states28.05wt%B2O3-equivalent as feed composition without
+    noting Table1 totals126.8wt%. Preserve it only as reported and explicitly flag
+    the unresolved total; do not normalize source cells or use them as a verified
+    extraction denominator. Narrow qualitative leaching remains supported.
+  target_ids:
+  - cmmmech:borates
+  field_paths:
+  - mechanisms[0].context
+  - mechanisms[0].evidence
+  evidence_ids:
+  - primary
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/borates.yaml
+    role: maintained_record
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261011T083609Z-borates-round12-independent
+    finding_id: F1
+  disposition_reason: Corrected record explicitly attributes 28.05 wt% as reported,
+    retains the 126.8% table total and forbids normalization or treating it as a validated
+    recovery denominator. Independent review of corrected bytes, source Table1 and
+    the actual issue49 EDIT history confirms the correction.
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/49
+actions: []
+limitations:
+- Review covers this exact commodity record only. Identity-only entries make no claim
+  that microbial mechanisms do not exist.
+- Raw artifacts acquired by curator were independently read; authority pages were
+  also opened live. No independent laboratory replication or product-standard certification.
+- No matched abiotic boron-release time series, isolated-product purity or mass balance.
+  A.niger species verified; strain accession not independently authenticated.
+- Source temperature,initial/endpH and kinetic reporting conflicts; nonclosing composition
+  prevents a validated feed denominator.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261011T083609Z-borates-round12-independent
+  relationship: Resolves exact predecessor F1 after scientific curation and final
+    batch validation.
+notes:
+- Original review and its reviewed working state remain immutable. This successor
+  assesses the corrected record and new actual EDIT history.
+```

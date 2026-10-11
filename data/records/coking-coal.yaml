@@ -1,0 +1,129 @@
+id: cmmmech:coking-coal
+name: Coking coal
+material_kind: commodity
+description: >-
+  Coal suitable for making coke, treated as an end-use commodity rather than a
+  mineral species, the carbon element, coke itself or all coal. The EIA glossary
+  defines coking coal as suitable bituminous coal. Its separate metallurgical-coal
+  definition includes both coking coal and pulverized coal consumed in steelmaking,
+  whereas the USGS 2026 fact sheet uses coking and metallurgical coal interchangeably
+  in its coke-production scope. This record follows the narrower coke-making
+  identity and records the original EU 2024 coking-coal designation without
+  silently equating all metallurgical-coal uses. The experiment concerns
+  beneficiation of selected Tabas feeds described by the authors as suitable for
+  coking; retained coke-making performance after treatment was not demonstrated.
+sources:
+  - id: eia-coking-coal
+    title: US Energy Information Administration glossary, Coking coal entry
+    url: https://www.eia.gov/tools/glossary/index.php?id=Coking+coal
+    accessed_on: '2026-10-11'
+  - id: eia-metallurgical-coal
+    title: US Energy Information Administration glossary, Metallurgical coal entry
+    url: https://www.eia.gov/tools/glossary/index.php?id=Metallurgical+coal
+    accessed_on: '2026-10-11'
+  - id: usgs-coal2026
+    title: >-
+      US Geological Survey, Metallurgical Coal: Deposits, Production, Resources,
+      Market Dynamics, and Supply Chain Risks. Fact Sheet 2026-3061,
+      version 1.1, August 2026, pp. 1-2: coke-making scope and specifications
+    url: https://pubs.usgs.gov/fs/2026/3061/fs20263061.pdf
+    accessed_on: '2026-10-11'
+  - id: eu2024-original
+    title: >-
+      Regulation (EU) 2024/1252 of 11 April 2024, original OJ text published
+      3 May 2024: Annex II, Section 1(i), coking coal
+    url: https://eur-lex.europa.eu/eli/reg/2024/1252/oj/eng
+    accessed_on: '2026-10-11'
+  - id: shahbazi2024
+    title: >-
+      Shahbazi et al. (2024), Bioflotation and Bioleaching as an Alternative
+      Method for Desulphurization and Ash Reduction in Tabas Coal.
+      Journal of Mining and Environment 15(2):581-595, online 7 October 2023.
+      DOI 10.22044/jme.2023.13127.2387; Sections 2.1-2.4, 3.3-3.4,
+      Tables 1 and 3-5, Figures 4-5
+    url: https://doi.org/10.22044/jme.2023.13127.2387
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: European Union
+    list_name: Regulation (EU) 2024/1252, Annex II, Section 1, critical raw materials
+    edition: 'Original act of 11 April 2024, published 3 May 2024'
+    classification: critical
+    source_ref: eu2024-original
+mechanisms:
+  - id: tabas_culture_associated_desulfurization
+    name: Culture-associated sulfur-content reduction in Tabas coking-coal feed
+    process: bioleaching
+    description: >-
+      Prepared acidophilic mixed cultures were associated with lower residual
+      sulfur content in selected Tabas coal feeds than thymol-containing
+      uninoculated comparisons. The source proposes iron and sulfur oxidation
+      associated with pyrite removal. Acid chemistry also removes sulfur, and
+      the final hydrochloric-acid wash is part of the measured treatment sequence.
+      This is laboratory impurity removal from coal, not microbial synthesis of
+      coal, carbon recovery, an isolated sulfur product or demonstrated industrial
+      coke production.
+    context: >-
+      Section 2.2 describes cultures obtained from the Sarcheshme Copper Complex
+      R&D Center, reported to contain Acidithiobacillus ferrooxidans,
+      Acidithiobacillus thiooxidans and Leptospirillum ferrooxidans. Section 2.4
+      specifies a 1:1:1 mixture without strain accessions or member-specific
+      controls. Eastern Parvadeh PE primary feed was crushed to a reported
+      +180/-350 micrometre fraction. The B4C1 and B4B2 preparations include
+      flotation and heavy-liquid concentrates; their protocol is not silently
+      equated to raw PE. The culture was grown for 14 days before exposure,
+      without coal adaptation, using iron- and sulfur-supplemented medium.
+      Sections 2.2 and 2.4 call the medium 9K and K9 and describe the iron
+      amendment differently, so no unique iron concentration is inferred.
+      Coal incubations used 100 mL liquid in 250 mL flasks at 34 degrees C,
+      150 rpm, initial pH 1.7, 5-10% w/v coal and 10-20% v/v inoculum for
+      10-20 days. Uninoculated comparisons contained medium, coal and 3% w/w
+      thymol. Evaporation was compensated with water acidified to pH 1.7.
+      Residues were filtered, washed with 10% v/v HCl and dried at 60-70
+      degrees C for 5-6 hours before analysis. The authors report ASTM-D3177
+      sulfur and ASTM-D3174 ash analyses; exact sulfur-speciation implementation
+      is not documented. Replicate numbers and the meaning of figure error bars
+      were not specified in the inspected full text.
+    microbial: true
+    evidence:
+      - source_ref: shahbazi2024
+        supports: support
+        explanation: >-
+          Table 1, printed p. 583, gives PE initial total sulfur of 1.85%.
+          Table 3, p. 589, gives 0.51% after 20 days with 20% inoculum at
+          5% pulp density; Table 4, p. 590, gives 1.25% in the corresponding
+          uninoculated condition. Reported reductions of 72.43% and 32.43%
+          are consistent with those concentration changes. They are not a
+          whole-feed sulfur mass balance, coal yield or recovered-product yield.
+          Figure 4 shows evolving pH and ORP in the PE culture, consistent with
+          the proposed acidophile chemistry but insufficient to identify a
+          unique enzymatic or member-specific causal pathway.
+      - source_ref: shahbazi2024
+        supports: partial
+        explanation: >-
+          Sections 2.4 and 3.3 establish chemical-treatment contributions:
+          uninoculated acidic controls retain substantial sulfur removal,
+          thymol makes their composition different from inoculated treatments,
+          and final HCl washing can alter residue composition. The authors
+          attribute organic-sulfur changes to acidic conditions rather than
+          direct microbial attack. No chemistry-matched cell-free culture
+          control or isolated contribution of the wash is reported.
+      - source_ref: shahbazi2024
+        supports: partial
+        explanation: >-
+          Quantitative inconsistencies prevent generalizing the PE comparison.
+          Table 3 assigns PE 68.98% ash reduction to bioleaching, whereas
+          Section 3.4 and Figure 5 assign a similar value to bioflotation;
+          Figure 5 also disagrees with several non-PE table values. Some
+          non-PE initial and final sulfur entries do not reproduce the reported
+          reduction percentages. No cross-method superiority, pooled result
+          or exact ash-removal mechanism is accepted. Section 4 acknowledges
+          unresolved scale and product-quality effects, and the inspected study
+          reports no post-treatment coking-strength or plasticity test.
+curation_history:
+  - timestamp: '2026-10-11T08:30:16Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Created a coking-coal commodity record with EU 2024 designation and qualified Tabas desulfurization evidence.
+history_refs:
+  - history/records/coking-coal/2026-10-11T083015Z-codex-d535fa.yaml

@@ -81,6 +81,28 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Rhenium](data/records/rhenium.yaml) | Dried brewer's yeast retains Re from synthetic perrhenate feeds | Fraction-specific analysis and source inconsistencies limit mass-balance and redox claims |
 | [Rubidium](data/records/rubidium.yaml) | Conditional light-dependent tracer uptake by prepared phototrophic cells | Buffer, ionophore and no-uptake comparisons limit native-transport and recovery claims |
 | [Thulium](data/records/thulium.yaml) | Prepared Bacillus powders adsorb Tm with a conditional LTA-mutant comparison | Residual mutant adsorption and limited elution reporting prevent exclusive-mechanism or whole-feed-yield claims |
+| [Alumina](data/records/alumina.yaml) | Commodity identity and explicitly dated designation | Distinct material form; no microbial mechanism is asserted |
+| [Bauxite](data/records/bauxite.yaml) | Commodity identity and explicitly dated designation | Distinct material form; no microbial mechanism is asserted |
+| [High-purity alumina](data/records/high-purity-alumina.yaml) | Commodity identity and explicitly dated designation | Distinct material form; no microbial mechanism is asserted |
+| [High-purity iron ore](data/records/high-purity-iron-ore.yaml) | Commodity identity and explicitly dated designation | Distinct material form; no microbial mechanism is asserted |
+| [Borates](data/records/borates.yaml) | Colemanite-bearing ore leaching during fungal culture | Source composition and protocol conflicts, missing abiotic boron series and no isolated-product yield |
+| [Baryte commodity](data/records/baryte.yaml) | Commodity identity and explicitly dated designation | Distinct material form; no microbial mechanism is asserted |
+| [Fluorspar](data/records/fluorspar.yaml) | Commodity identity and explicitly dated designation | Distinct material form; no microbial mechanism is asserted |
+| [Feldspar commodity](data/records/feldspar.yaml) | Commodity identity and explicitly dated designation | Distinct material form; no microbial mechanism is asserted |
+| [Magnesite commodity](data/records/magnesite.yaml) | Commodity identity and explicitly dated designation | Distinct material form; no microbial mechanism is asserted |
+| [Phosphate rock](data/records/phosphate-rock.yaml) | Fungal solubilization of Araxá phosphate rock with fluoride inhibition | Culture arms and missing acid-matched comparisons constrain causal attribution |
+| [Potash](data/records/potash.yaml) | Commodity identity and explicitly dated designation | Distinct material form; no microbial mechanism is asserted |
+| [Sodium compounds](data/records/sodium-compounds.yaml) | Commodity identity and explicitly dated designation | Distinct material form; no microbial mechanism is asserted |
+| [Magnesium metal](data/records/magnesium-metal.yaml) | Commodity identity and explicitly dated designation | Distinct material form; no microbial mechanism is asserted |
+| [Silicon metal](data/records/silicon-metal.yaml) | Commodity identity and explicitly dated designation | Distinct material form; no microbial mechanism is asserted |
+| [Titanium metal](data/records/titanium-metal.yaml) | Commodity identity and explicitly dated designation | Distinct material form; no microbial mechanism is asserted |
+| [Coking coal](data/records/coking-coal.yaml) | Mixed acidophile treatment of a coking-coal feed | Sterile controls and final acid washing complicate sulfur attribution; coking performance untested |
+| [Graphite commodity family](data/records/graphite.yaml) | Natural and synthetic graphite commodity family | Distinct from the narrower natural-graphite record and from a certified battery grade |
+| [Platinum-group commodities](data/records/platinum-group-commodities.yaml) | Six-member commodity family and Australian 2024 designation | No group-wide microbial mechanism or uniform product specification |
+| [Rare-earth-element commodities, Australian list scope](data/records/rare-earth-element-commodities.yaml) | Engineered bacterial lanmodulin separates synthetic Nd/Dy ions | Cell-free pair separation; reported yield uses tabulated eluate, not a verified whole-feed mass balance |
+| [Heavy rare-earth commodities, EU assessment convention](data/records/heavy-rare-earth-elements.yaml) | Heavy rare-earth commodity grouping under the named EU convention | Membership conventions differ; no group-wide microbial mechanism |
+| [Light rare-earth commodities, EU assessment convention](data/records/light-rare-earth-elements.yaml) | Light rare-earth commodity grouping under the named EU convention | Distinct from individual elements, host minerals and other REE groupings |
+| [Rare-earth materials for permanent magnets, EU list scope](data/records/rare-earth-permanent-magnet-materials.yaml) | Seven-element end-use grouping in original EU 2024 Annex I | Raw materials for permanent magnets; no finished-magnet or grade-qualified recovery claim |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -99,7 +121,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [ninth expansion reviews](research/ingests/round9-20261011-publication.md),
 [tenth expansion reviews](research/ingests/round10-20261011-publication.md),
 [eleventh expansion reviews](research/ingests/round11-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round11-frontier-20261011.md), and
+[twelfth expansion reviews](research/ingests/round12-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round12-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

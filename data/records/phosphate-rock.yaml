@@ -1,0 +1,98 @@
+id: cmmmech:phosphate-rock
+name: Phosphate rock
+material_kind: commodity
+description: Phosphate-bearing rock considered as a mined and beneficiated industrial raw material
+  for phosphorus products, including phosphoric acid and fertilizers. The USGS marketable-product
+  definition concerns beneficiated phosphate rock suitable for acid or elemental-phosphorus production;
+  it does not identify one apatite species or a pure phosphate ion. The original EU 2024 list
+  names phosphate rock separately from phosphorus. The US 2025 list names phosphate; its mapping
+  here follows the USGS 2026 phosphate-rock chapter, which explicitly describes phosphate rock
+  as the addition to that list. This mapping does not equate all chemical phosphates with phosphate
+  rock. The microbial evidence concerns one characterized Araxa rock feed and does not establish
+  a commodity-wide extraction yield.
+sources:
+- id: usgs-mcs2026
+  title: 'USGS Mineral Commodity Summaries 2026, Phosphate Rock, printed pp. 142-143 (PDF pp.
+    146-147): marketable-product definition and explicit mapping of the US 2025 phosphate designation'
+  url: https://pubs.usgs.gov/periodicals/mcs2026/mcs2026.pdf
+  accessed_on: '2026-10-11'
+- id: eu2024-original
+  title: 'Regulation (EU) 2024/1252, original act of 11 April 2024, OJ 3 May 2024: recital 8 and
+    Annex II, Section 1'
+  url: https://eur-lex.europa.eu/eli/reg/2024/1252/oj/eng
+  accessed_on: '2026-10-11'
+- id: us2025-final
+  title: 'US Department of the Interior / USGS, Final 2025 List of Critical Minerals, 7 November
+    2025, 90 FR 50494-50497: Summary and final list'
+  url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  accessed_on: '2026-10-11'
+- id: mendes2013
+  title: Mendes et al. (2013), Inhibition of Aspergillus niger Phosphate Solubilization by Fluoride
+    Released from Rock Phosphate, Applied and Environmental Microbiology 79:4906-4913; DOI 10.1128/AEM.01487-13;
+    Materials and Methods, Tables 1-2, Figures 1 and 4
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3754696/
+  accessed_on: '2026-10-11'
+- id: mendes2013-doi
+  title: Mendes et al. (2013), publisher DOI identity for the same experiment; not an independent
+    replication
+  url: https://doi.org/10.1128/AEM.01487-13
+  accessed_on: '2026-10-11'
+criticality:
+- jurisdiction: European Union
+  list_name: Regulation (EU) 2024/1252, Annex II critical raw materials
+  edition: Original act, 11 April 2024; OJ 3 May 2024
+  classification: critical
+  source_ref: eu2024-original
+- jurisdiction: United States
+  list_name: Department of the Interior Final List of Critical Minerals
+  edition: 2025 final; 7 November 2025
+  classification: critical
+  source_ref: us2025-final
+mechanisms:
+- id: fungal_araxa_phosphate_mobilization
+  name: Fungal mobilization of phosphate from Araxa rock phosphate with fluoride inhibition
+  process: bioleaching
+  description: Growth of the source-designated Aspergillus niger FS1 culture was associated with
+    medium acidification and soluble phosphorus release from a characterized Araxa rock-phosphate
+    feed. Added-fluoride experiments showed decreasing phosphate solubilization under the tested
+    conditions. These observations support a bounded fungal mobilization process, without isolating
+    an exclusive acid pathway or establishing isolated-product recovery.
+  context: Laboratory 125 mL flasks contained 50 mL NBRIP medium and 3 g/L Araxa rock phosphate
+    from Brazil, with reported particle size below 75 micrometres. The paper describes the feed
+    as mainly fluorapatite with some hydroxyapatite from XRD and chemical analysis, with 13.97%
+    P. Flasks received 1 x 10^6 conidia and were incubated at 32 degrees C and 160 rpm. Medium
+    pH was adjusted to 7 before adding the P source; the kinetic plot starts around pH 5.5, so
+    these values are not interchangeable. The 10-day kinetics used three sampled flasks per time
+    point, 0.45-micrometre filtrates, and uninoculated flasks at the beginning and end for dissolved-element
+    determinations. Separate 60-hour fluoride-dose assays used either rock phosphate or soluble
+    K2HPO4; their biomass and organic-acid results must not be treated as measurements from the
+    rock-fed arm. No strain-level identifier or commercial-product specification is inferred.
+  microbial: true
+  evidence:
+  - source_ref: mendes2013
+    supports: support
+    explanation: Materials and Methods, rock characterization, kinetics, Table 2 footnote and
+      Figure 1 support the stated feed, assay conditions and solution-phase phosphorus increase.
+      Figure 1 and Results show approximately 80 mg/L soluble P at 60 h, followed by non-monotonic
+      concentrations during continued incubation; the figure gives three-replicate means and standard
+      deviations. This is mobilized phosphorus in filtrate, not recovered phosphorus mass or complete
+      dissolution of the feed.
+  - source_ref: mendes2013
+    supports: partial
+    explanation: The uninoculated comparison is described only at the beginning and end, and Figure
+      1 does not display a time-matched abiotic trajectory or acid-matched comparison. In Figure
+      4a, adding NaF over 0-50 mg F/L lowered soluble P after 60 h; the dose design used three
+      replicates at the 25 mg/L central point rather than declaring every dose triplicated. Methods
+      place biomass and organic-acid determinations in the soluble-K2HPO4 arm. Consequently the
+      data do not establish the same organic-acid or growth response directly in rock-fed cultures.
+      Reprecipitation discussed for the fluctuating dissolved P remains a proposed explanation.
+      Supplementary numerical tables were not acquired as usable full text, and no values are
+      imported from them.
+curation_history:
+- timestamp: '2026-10-11T08:29:04Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created the phosphate rock record with verified industrial scope and dated criticality;
+    retained controlled laboratory Araxa phosphate mobilization and fluoride-inhibition limits.
+history_refs:
+- history/records/phosphate-rock/2026-10-11T082913Z-codex-2f7e23.yaml

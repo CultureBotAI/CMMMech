@@ -1,0 +1,283 @@
+# Independent round12 review of Platinum-group commodities
+
+- Review: 20261011T084341Z-platinum-group-commodities-round12-resolution
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T08:39:07Z
+- Finished UTC: 2026-10-11T08:43:41Z
+- Reviewer: Codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Corrected commodity record and dated designation are supported. The exact predecessor finding is resolved; source limitations remain explicit.
+
+## Scope And Provenance
+
+Entire named commodity-group record and evidence boundary.
+
+Selection: All fields of one named record, not a corpus sample.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1e52585c9019a32d37f959e0dafa00ae431f28c4.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:platinum-group-commodities | data/records/platinum-group-commodities.yaml | maintained | Platinum-group commodities |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Named strict record validation | passed | True | cmmmech:platinum-group-commodities | Checked 1 record(s); 0 failed. |
+| Completed batch check | passed | True | cmmmech:platinum-group-commodities | 307 tests passed, 3 skipped; 93 records and 108 histories valid. |
+| Nonempty corpus validation | passed | True | cmmmech:platinum-group-commodities | 93 records checked; 0 failed. |
+| Trusted-base append-only history validation | passed | True | cmmmech:platinum-group-commodities | 108 history records checked; 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Group boundary, overlap and dated designation
+
+identity: supported. Targets: cmmmech:platinum-group-commodities.
+
+The Australian list explicitly enumerates all six named metals. Unverified EU coverage was removed without inferring osmium exclusion; commodity identity remains supported.
+
+## Findings
+
+### F1: Qualify the unverified all-six EU designation mapping
+
+minor / resolved / confirmed; issue key: pgm-eu-six-member-mapping.
+
+Record asserts EU2024designations map to all six PGM. The originalact gives an unenumerated group, while EC2020factsheetp399 distinguishes six chemicalPGM from five assessed metals, excluding Os from quantitative assessment. Preserve this uncertainty; do not state a verified all-six mapping or infer Os is notlisted. Australiaexplicitlysupportsthewholegroup. RemoveEUentriespendingmembershipverification or providepreciseevidenceandqualification.
+
+Disposition: Corrected record removes unverified EU membership mapping and both EU designations while retaining the explicitly enumerated Australian six-member designation. Source and actual issue51 EDIT history were checked; no osmium not-listed claim is made.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/platinum-group-commodities.yaml; Entire exact record and attached actual curation histories | supports | Commodity family is explicitly distinguished from member elements, fixed mixtures and host minerals. Working-tree bytes captured before this assessment. |
+| authority | https://www.industry.gov.au/publications/australias-critical-minerals-list-and-strategic-materials-list ; https://eur-lex.europa.eu/eli/reg/2024/1252/oj/eng ; https://rmis.jrc.ec.europa.eu/uploads/CRM_2020_Factsheets_critical_Final.pdf; Australia20Feb2024Table1footnotes16/17; originalEU2024AnnexI1(n),II1(q)/(r); EC2020factsheetp547 andPGMp399 | supports | Australian list explicitly enumerates sixPGM and sixteenREE includingPm/excludingSc. EC2020 economicREE split namesLREE5/HREE10 excludingSc/Pm. EU2024magnetentry explicitlynamesNdPrTbDyGdSmCe. EU2024PGM entry does not enumerate sixmembers; EC2020 assessment separates sixchemicalPGM from fiveassessed metals. |
+
+## Limits And Additional Notes
+
+- Root reviewer supplied early source-acquisition research before a separate agent authored the final YAML. Independence means distinct record curator and reviewer, not separate laboratory evidence or blind research.
+- Issuing definitions are convention-dependent. Economic groups are commodity families, not homogeneous materials. No worldwide literature or list exhaustion claim.
+- Original review and its reviewed working state remain immutable. This successor assesses the corrected record and new actual EDIT history.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T084341Z-platinum-group-commodities-round12-resolution
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent round12 review of Platinum-group commodities
+started_at: '2026-10-11T08:39:07Z'
+finished_at: '2026-10-11T08:43:41Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Separate /root/cmm12_carbon_metals agent authored records/history;
+    root captured exact record before judging and independently checked final claims.
+    Root contributed earlier source discovery, disclosed as a limit.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Corrected commodity record and dated designation are supported. The exact
+  predecessor finding is resolved; source limitations remain explicit.
+source:
+  git_revision: 1e52585c9019a32d37f959e0dafa00ae431f28c4
+  state: working_tree
+  inputs:
+  - path: data/records/platinum-group-commodities.yaml
+    sha256: c66ea35815e9f41eaeeaae450ee3af000ef463b706c5e9f7290e958e699b03d9
+    role: target
+  - path: docs/records.md
+    sha256: 212cdbb723eb1ad9eb76ea1b7dad066914659b1f85eb2cdb51ee67466cfcc8ee
+    role: context
+  - path: history/records/platinum-group-commodities/2026-10-11T083754Z-codex-04fa3f.yaml
+    sha256: 75d93942ddf62ce2efd7ea647b6002b2ae29f4184d51e56111c95767ad7d5d83
+    role: context
+  - path: history/records/platinum-group-commodities/2026-10-11T084108Z-codex-8cbb66.yaml
+    sha256: b5ee96542ccef27af4b595442d5129f4a4e303f8273730a5313c2d3f6143dc4c
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+targets:
+- target_id: cmmmech:platinum-group-commodities
+  path: data/records/platinum-group-commodities.yaml
+  label: Platinum-group commodities
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/platinum-group-commodities.yaml
+    role: maintained_record
+scope:
+  description: Entire named commodity-group record and evidence boundary.
+  selection: All fields of one named record, not a corpus sample.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:platinum-group-commodities
+checks:
+- check_id: record
+  name: Named strict record validation
+  command: uv run --locked cmmmech validate data/records/platinum-group-commodities.yaml
+  status: passed
+  required: true
+  summary: Checked 1 record(s); 0 failed.
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:platinum-group-commodities
+- check_id: check
+  name: Completed batch check
+  command: just check
+  status: passed
+  required: true
+  summary: 307 tests passed, 3 skipped; 93 records and 108 histories valid.
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:platinum-group-commodities
+  scope_note: Root executed this gate and read its terminal log /private/tmp/cmm-round12-check.log;
+    record hashes remained fixed throughout. Not a separate execution per review.
+- check_id: require
+  name: Nonempty corpus validation
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: 93 records checked; 0 failed.
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:platinum-group-commodities
+  scope_note: Root executed this gate and read its terminal log /private/tmp/cmm-round12-require.log;
+    record hashes remained fixed throughout. Not a separate execution per review.
+- check_id: history
+  name: Trusted-base append-only history validation
+  command: uv run --locked cmmmech validate-history --base 1e52585c9019a32d37f959e0dafa00ae431f28c4
+  status: passed
+  required: true
+  summary: 108 history records checked; 0 errors.
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:platinum-group-commodities
+  scope_note: Root executed this gate and read its terminal log /private/tmp/cmm-round12-history.log;
+    record hashes remained fixed throughout. Not a separate execution per review.
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/platinum-group-commodities.yaml
+  locator: Entire exact record and attached actual curation histories
+  accessed_at: '2026-10-11T08:43:41Z'
+  support: supports
+  summary: Commodity family is explicitly distinguished from member elements, fixed
+    mixtures and host minerals. Working-tree bytes captured before this assessment.
+- evidence_id: authority
+  kind: authority
+  reference: https://www.industry.gov.au/publications/australias-critical-minerals-list-and-strategic-materials-list
+    ; https://eur-lex.europa.eu/eli/reg/2024/1252/oj/eng ; https://rmis.jrc.ec.europa.eu/uploads/CRM_2020_Factsheets_critical_Final.pdf
+  locator: Australia20Feb2024Table1footnotes16/17; originalEU2024AnnexI1(n),II1(q)/(r);
+    EC2020factsheetp547 andPGMp399
+  accessed_at: '2026-10-11T08:43:41Z'
+  support: supports
+  summary: Australian list explicitly enumerates sixPGM and sixteenREE includingPm/excludingSc.
+    EC2020 economicREE split namesLREE5/HREE10 excludingSc/Pm. EU2024magnetentry explicitlynamesNdPrTbDyGdSmCe.
+    EU2024PGM entry does not enumerate sixmembers; EC2020 assessment separates sixchemicalPGM
+    from fiveassessed metals.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Group boundary, overlap and dated designation
+  outcome: supported
+  summary: The Australian list explicitly enumerates all six named metals. Unverified
+    EU coverage was removed without inferring osmium exclusion; commodity identity
+    remains supported.
+  target_ids:
+  - cmmmech:platinum-group-commodities
+  evidence_ids:
+  - record
+  - authority
+  dimensions:
+  - name: material_scope
+    value: This collective commodity family comprises ruthenium, rhodium, palladium,
+      osmium, iridium and platinum. The USGS platinum-group-elements category identifies
+      these six related metals; Australia's 20 February 2024 Critical Minerals List
+      explicitly includes the same six in its platinum-group-elements entry. This
+      is a grouped commodity scope, overlapping the individual element records, rather
+      than a single element, mineral species, fixed-composition alloy or waste feedstock.
+      The dated designation below applies to Australia's explicitly enumerated six-member
+      group. Identity and designation are curated here; no shared microbial recovery
+      performance is asserted for all six metals.
+    definition: Named convention and actual adopted group; overlap does not imply
+      equivalent identities or collective microbial performance.
+    evidence_ids:
+    - record
+    - authority
+findings:
+- finding_id: F1
+  issue_key: pgm-eu-six-member-mapping
+  category: scope
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Qualify the unverified all-six EU designation mapping
+  description: Record asserts EU2024designations map to all six PGM. The originalact
+    gives an unenumerated group, while EC2020factsheetp399 distinguishes six chemicalPGM
+    from five assessed metals, excluding Os from quantitative assessment. Preserve
+    this uncertainty; do not state a verified all-six mapping or infer Os is notlisted.
+    Australiaexplicitlysupportsthewholegroup. RemoveEUentriespendingmembershipverification
+    or providepreciseevidenceandqualification.
+  target_ids:
+  - cmmmech:platinum-group-commodities
+  field_paths:
+  - description
+  - criticality
+  evidence_ids:
+  - authority
+  - record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/platinum-group-commodities.yaml
+    role: maintained_record
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261011T084025Z-platinum-group-commodities-round12-independent
+    finding_id: F1
+  disposition_reason: Corrected record removes unverified EU membership mapping and
+    both EU designations while retaining the explicitly enumerated Australian six-member
+    designation. Source and actual issue51 EDIT history were checked; no osmium not-listed
+    claim is made.
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/51
+actions: []
+limitations:
+- Root reviewer supplied early source-acquisition research before a separate agent
+  authored the final YAML. Independence means distinct record curator and reviewer,
+  not separate laboratory evidence or blind research.
+- Issuing definitions are convention-dependent. Economic groups are commodity families,
+  not homogeneous materials. No worldwide literature or list exhaustion claim.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261011T084025Z-platinum-group-commodities-round12-independent
+  relationship: Resolves exact predecessor F1 after scientific curation and final
+    batch validation.
+notes:
+- Original review and its reviewed working state remain immutable. This successor
+  assesses the corrected record and new actual EDIT history.
+```

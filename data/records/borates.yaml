@@ -1,0 +1,103 @@
+id: cmmmech:borates
+name: Borates
+material_kind: commodity
+description: >-
+  Commercial borate raw materials, encompassing borate ores and refined borate
+  products rather than a single ion or mineral species. USGS distinguishes
+  natural borates such as colemanite and ulexite from refined borax and the
+  associated boric-acid product stream. The commodity is distinct from elemental
+  boron and from the separately qualified metallurgy-grade boron designation.
+  The criticality entry records the named BGS/CMIC assessment, whose cover states
+  that it does not constitute government policy. The microbial experiment below
+  concerns one colemanite-bearing ore, not every borate or a purified product.
+sources:
+  - id: usgs-mcs2025-boron
+    title: >-
+      US Geological Survey, Mineral Commodity Summaries 2025, Boron, printed
+      pp. 48-49: natural and refined borate commodities and boric-acid production
+    url: https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-boron.pdf
+    accessed_on: '2026-10-11'
+  - id: bgs-uk2024-or24059
+    title: >-
+      Mudd et al., UK 2024 Criticality Assessment, BGS/CMIC Open Report OR/24/059:
+      cover disclaimer; Table 1, printed p. vii; Table 11, printed p. 44
+    url: https://nora.nerc.ac.uk/id/eprint/539735/1/OR24059.pdf
+    accessed_on: '2026-10-11'
+  - id: bayat2011-colemanite
+    title: >-
+      Bayat, Arslan and Bayat (2011), Use of Aspergillus niger in the bioleaching
+      of colemanite for the production of boric acid, Electronic Journal of
+      Biotechnology 14(3), DOI 10.2225/vol14-issue3-fulltext-7: Methods pp. 3-4,
+      Tables 1 and 3, Figures 1-4
+    url: https://www.scielo.cl/pdf/ejb/v14n3/a07.pdf
+    accessed_on: '2026-10-11'
+  - id: ncbi-aspergillus-niger
+    title: NCBI Taxonomy 5061, Aspergillus niger; species context, not strain authentication
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United Kingdom
+    list_name: British Geological Survey / CMIC UK 2024 Criticality Assessment, Table 11
+    edition: '2024; Open Report OR/24/059'
+    classification: critical
+    source_ref: bgs-uk2024-or24059
+mechanisms:
+  - id: fungal-colemanite-leaching
+    name: Fungal leaching of a colemanite-bearing borate ore
+    process: bioleaching
+    description: >-
+      Aspergillus niger cultures released soluble boron from a colemanite-bearing
+      ore while producing organic acids. This laboratory observation supports
+      fermentation-associated leaching; it does not establish an exclusive
+      molecular cause, an isolated boric-acid product or industrial performance.
+    context: >-
+      Bayat et al. used growing A. niger, reported as ATCC 11414, and mixed
+      Kütahya-Emet ore reported as 28.05 wt% B2O3-equivalent. Nominal
+      particle size was below 0.075 mm. Methods specify autoclaved ore and
+      sucrose medium, 150 mL in 250-mL flasks, 1 mL of a 3 x 10^7 spores/mL
+      suspension, 150 rpm and 30 +/- 2 C; 1-10% w/v pulp densities were followed
+      for 21 days. Abstract/optimum-condition text instead gives 25 +/- 2 C,
+      and initial pH is inconsistently stated as 5.5 or about 7. Boron was
+      assayed volumetrically in filtrate and acids by HPLC. Replication was at
+      least duplicate. These reporting conflicts prevent treating the protocol
+      as an unambiguous optimum.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:5061
+        label: Aspergillus niger
+    evidence:
+      - source_ref: bayat2011-colemanite
+        supports: support
+        explanation: >-
+          Methods pp. 3-4, Table 3 and Figures 1-3 support soluble-boron release
+          during culture, acid production and culture-associated acidification
+          relative to the stated no-microorganism control. The species identifier
+          does not independently authenticate the reported strain.
+      - source_ref: bayat2011-colemanite
+        supports: partial
+        explanation: >-
+          Table 1 reports twelve oxide wt% cells that sum to 126.8%, leaving
+          the bulk composition unresolved. The reported 28.05 wt% B2O3 cell
+          is not normalized or treated as a validated recovery denominator.
+          Table 3 gives no corresponding abiotic boron-release series, so the
+          microbial increment in dissolution is unresolved. Its 5% endpoint pH
+          differs from the Results and optimum-condition text. Figure 4's fitted
+          slope differs from the kinetic coefficient reported in the text.
+          Extraction percentages and kinetic constants are not adopted. The
+          chemical comparison used a different temperature and duration; no
+          isolated-product purity or recovery mass balance was demonstrated.
+curation_history:
+  - timestamp: '2026-10-11T08:30:19Z'
+    curator: codex (GPT-6; codex)
+    action: create
+    summary: >-
+      Created a borates commodity record with a narrowly qualified colemanite bioleaching experiment.
+  - timestamp: '2026-10-11T08:37:48Z'
+    curator: codex (GPT-6; codex)
+    action: EDIT
+    summary: >-
+      Qualified the reported ore composition and retained the unresolved 126.8 wt%
+      source total without normalization or a validated recovery denominator.
+history_refs:
+  - history/records/borates/2026-10-11T083018Z-codex-7e7166.yaml
+  - history/records/borates/2026-10-11T083733Z-codex-3ef868.yaml

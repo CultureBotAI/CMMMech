@@ -1,0 +1,1115 @@
+{
+  "created_at": "2026-10-11T08:31:42.167720+00:00",
+  "actor": {
+    "name": "codex",
+    "model": "GPT-6",
+    "tool": "codex"
+  },
+  "trusted_base": "1e52585c9019a32d37f959e0dafa00ae431f28c4",
+  "issue": 48,
+  "phase": "curated; awaiting independent review",
+  "input_frontier": {
+    "path": "research/ingests/round11-frontier-20261011.json",
+    "sha256": "67e6b231d99f47e1de815486358f17c0a86cf61d4cec545660c9402759eb4282"
+  },
+  "proposals": [
+    {
+      "candidate_key": "magnesium-metal",
+      "decision": "curated_identity_designation_only",
+      "record": "data/records/magnesium-metal.yaml",
+      "identity": "Metal commodity; not element, ions, compounds, minerals or every Mg-bearing alloy/scrap. No universal purity threshold.",
+      "exact_criticality": "EU original 2024/1252 Annex I Section 1(i): strategic. Broader Annex II magnesium is not mechanically copied.",
+      "evidence_locators": [
+        "USGS MCS2026 printed pp122-123 / PDF126-127",
+        "USGS SIR2025-5021 Magnesium Metal section"
+      ],
+      "microbial_decision": "No mechanism accepted. Robinson2010 doi:10.1016/j.actbio.2009.10.007 studies corrosion in sterile broth and antibacterial effects; this is not demonstration of microbial Mg-metal recovery. PMC8953398 tests inorganic metabolites on AZ31B/AZ63B alloys, not a cultured pure-metal production assay."
+    },
+    {
+      "candidate_key": "silicon-metal",
+      "decision": "curated_identity_designation_only",
+      "record": "data/records/silicon-metal.yaml",
+      "identity": "Commercial silicon metal distinct from element, silica, silicates, ferrosilicon and silicones; further purification produces semiconductor/solar grades.",
+      "exact_criticality": "EU original 2024/1252 Annex I Section 1(o): strategic; Annex II Section 1(ac): critical. Canada2024 inventory designation not newly verified or curated.",
+      "evidence_locators": [
+        "USGS MCS2026 printed pp170-171 / PDF174-175",
+        "USGS Silicon2019 printed p67.1 / PDF2, contextual identity cross-check"
+      ],
+      "microbial_decision": "No mechanism accepted. Search leads concern impurities in quartz/silica and planned battery-waste separation; neither proves microbial metal production. Existing diatom-silica mechanism belongs to silicon element context."
+    },
+    {
+      "candidate_key": "titanium-metal",
+      "decision": "curated_identity_designation_only",
+      "record": "data/records/titanium-metal.yaml",
+      "identity": "Metal commodity including sponge and downstream forms, not titanium element, oxide pigment, mineral concentrates or a specific alloy/waste.",
+      "exact_criticality": "EU original 2024/1252 Annex I Section 1(p): strategic; Annex II Section 1(af): critical.",
+      "evidence_locators": [
+        "USGS MCS2026 printed pp196-197 / PDF200-201",
+        "USGS SIR2025-5021 Titanium Sponge Metal section contextual cross-check"
+      ],
+      "microbial_decision": "Known DOI 10.1093/nsr/nwag426 is already curated in titanium.yaml. Its passive-film experiment is not copied as recovered metal or metal-production evidence. This pass inspected the existing record/dossier, not a new independent re-review of its full experiment."
+    },
+    {
+      "candidate_key": "coking-coal",
+      "decision": "curated_with_qualified_mechanism",
+      "record": "data/records/coking-coal.yaml",
+      "identity": "Coke-making commodity following EIA suitable bituminous-coal definition. Coal is not coke, carbon element or a mineral species. Official uses of metallurgical coal differ.",
+      "exact_criticality": "EU original 2024/1252 Annex II Section 1(i): critical. US2025 metallurgical-coal designation is not silently copied.",
+      "evidence_locators": [
+        "EIA Coking coal and Metallurgical coal glossary entries",
+        "USGS FS2026-3061 version1.1 August2026 pp1-2",
+        "Shahbazi2024 DOI10.22044/jme.2023.13127.2387 full15-page publisher PDF: Methods2.1-2.4 pp583-584; Table1 p583; Tables3-5 pp589-590; Figures4-5 pp590,592; Section3.4 p591 and Section4 p593"
+      ],
+      "microbial_decision": "Accept narrow PE culture-associated sulfur-content comparison after complete treatment including HCl wash. No isolated sulfur yield, coal mass yield, member-specific mechanism, cross-method ranking, retained coking performance or industrial deployment. Preserve thymol/acid controls and figure/table inconsistencies.",
+      "verified_measurement_scope": "PE total sulfur 1.85% initially (Table1), 0.51% after20d/20%inoculum/5%pulp (Table3), 1.25% uninoculated (Table4). Reported72.43%/32.43% are concentration changes, not sulfur mass balances.",
+      "controls_limits": "3%w/w thymol only in uninoculated comparisons; acidified makeup water; final10%v/v HCl wash; no chemistry-matched cell-free culture control; replicate count/error-bar definition not found in fulltext; 9K/K9 and iron amendment wording inconsistent; non-PE calculations and ash comparisons conflict."
+    },
+    {
+      "candidate_key": "graphite",
+      "decision": "curated_broader_overlapping_commodity_family",
+      "record": "data/records/graphite.yaml",
+      "identity": "Natural-plus-synthetic commercial graphite family directly grounded in USGS combined commodity treatment. Overlaps existing natural-graphite subset; neither synonym nor disjoint partition. Not mineral-species identity or carbon element.",
+      "exact_criticality": "EU original 2024/1252 Annex II Section1(v): critical. Article3(3) explicitly discusses synthetic graphite in strategic-list review, while AnnexI(k) retains battery-grade qualifier. Other inventory jurisdictions not newly mapped.",
+      "evidence_locators": [
+        "USGS Graphite2021 yearbook advance release December2024 pp32.1-32.2 / PDF2-3, text and page images",
+        "EU original Article3(3), AnnexI(k), AnnexII(v)"
+      ],
+      "microbial_decision": "No mechanism. Existing Langwaldt2007 mixed-sulfide lead is not graphite purification. Roy2023 DOI10.1021/acssuschemeng.2c07262 remains method/control/product-specification deferred as documented in round10. No new fulltext acquisition for Roy2023 claimed. New Recycling2026 11(8):142 lead explicitly says battery-grade graphite was not assessed; publisher direct403 prevents full verification."
+    },
+    {
+      "candidate_key": "graphite-battery-grade",
+      "decision": "deferred_product_specification",
+      "record": null,
+      "identity": "End-use-qualified products from natural and synthetic graphite; overlaps origin-based scopes without being equivalent.",
+      "exact_criticality": "EU original AnnexI Section1(k): strategic. No accepted separate root in this round.",
+      "evidence_locators": [
+        "JRC2023 foresight Table16 printed p243 / PDF246",
+        "USGS Graphite2021 p32.1 mentions99.95%C for natural-graphite battery applications; this is not a universal multi-product qualification test."
+      ],
+      "missing": "Explicit accepted product/form scope, impurity and morphology/performance specifications, and primary controlled purification/reuse evidence meeting those specifications. Natural origin, high C percentage alone, or metal removal from spent anodes is insufficient."
+    },
+    {
+      "candidate_key": "lithium-battery-grade",
+      "decision": "deferred_product_specification",
+      "record": null,
+      "identity": "JRC maps refined battery lithium to carbonate and hydroxide products and separately to electrolyte salts; not lithium atom or any Li-bearing solution.",
+      "exact_criticality": "EU original AnnexI Section1(h): strategic. Broader AnnexII(s) lithium does not establish product grade.",
+      "evidence_locators": [
+        "JRC2023 foresight Table16 printed p243 / PDF246",
+        "EC2025 lithium one-page strategic-material factsheet, read in full; no product impurity specification."
+      ],
+      "missing": "Choose product/form and verify grade-specific impurities/qualification from a primary specification; acquire full controlled recovery and final-product analysis. Existing jadarite leaching establishes dissolved Li only, not battery-grade product."
+    },
+    {
+      "candidate_key": "manganese-battery-grade",
+      "decision": "deferred_product_specification",
+      "record": null,
+      "identity": "JRC includes high-purity manganese sulphate and high-purity electrolytic manganese as battery precursors/intermediates, distinct from any Mn ion or oxide.",
+      "exact_criticality": "EU original AnnexI Section1(j): strategic. Broader AnnexII(u) manganese does not establish product grade.",
+      "evidence_locators": [
+        "JRC2023 foresight Table16 printed p243 / PDF246; Section2.1 printed p21 / PDF24",
+        "EC2025 manganese one-page strategic-material factsheet, read in full; no numeric purity standard."
+      ],
+      "missing": "Resolve sulfate/electrolytic or other product scope and impurity specification. Primary bioleaching dissolution or Mn-oxide formation is not accepted as a qualified battery precursor."
+    },
+    {
+      "candidate_key": "nickel-battery-grade",
+      "decision": "deferred_product_specification",
+      "record": null,
+      "identity": "JRC distinguishes nickel sulphate precursor from ClassI nickel or metallurgical intermediate; different feedstock and product categories cannot be equated.",
+      "exact_criticality": "EU original AnnexI Section1(l): strategic and AnnexII Section1(w): critical, both expressly battery grade.",
+      "evidence_locators": [
+        "JRC2023 foresight Table16 printed p243 / PDF246"
+      ],
+      "missing": "Resolve qualified product form and specification, rather than assigning battery grade to all high-Ni metal or nickel leachate. ENICON/CORDIS project reporting and battery-LCA leads do not replace controlled finished-product evidence."
+    },
+    {
+      "candidate_key": "metallurgical-coal",
+      "decision": "deferred_scope_conflict",
+      "record": null,
+      "identity": "EIA includes coking coal plus pulverized coal consumed in making steel; USGS FS2026-3061 uses met/coking synonymy in coke-oven scope.",
+      "exact_criticality": "US Final2025 List of Critical Minerals, 7November2025, Federal Register90:50494-50497, metallurgical-coal row on50497 inspected.",
+      "evidence_locators": [
+        "EIA Metallurgical coal glossary",
+        "USGS FS2026-3061 version1.1 pp1-2",
+        "GovInfo2025-19813 table p50497"
+      ],
+      "missing": "Authority-specific reconciliation of whether the US designation includes pulverized-injection/non-coking coal and a stable scope distinct from coking-coal. Do not mark synonymy, disjointness or coverage of all US coal."
+    }
+  ],
+  "records": [
+    {
+      "path": "data/records/magnesium-metal.yaml",
+      "sha256": "c7da69e741115329d4a5e260d19929767ab0af11e38c497f92d737b358b4fe45",
+      "bytes": 2370
+    },
+    {
+      "path": "data/records/silicon-metal.yaml",
+      "sha256": "dcb0c82db6b3d98b5585b4d740ac10ed5cf2711467ebafadf76d85f7f2e87ced",
+      "bytes": 2300
+    },
+    {
+      "path": "data/records/titanium-metal.yaml",
+      "sha256": "e86a914461e5f8acbd2c5a97cadc440ca250abc6e794974af7fa60a96fffd454",
+      "bytes": 2288
+    },
+    {
+      "path": "data/records/coking-coal.yaml",
+      "sha256": "c6a10946b8617678052512de77c670f6648caa34b11186e056d92312ddccb2a2",
+      "bytes": 7396
+    },
+    {
+      "path": "data/records/graphite.yaml",
+      "sha256": "a31f18565b3b15c366d1587b88f1f70f047f865bf73591a3bd618a05d37f9a80",
+      "bytes": 2196
+    }
+  ],
+  "history_paths": {
+    "magnesium-metal": "history/records/magnesium-metal/2026-10-11T082948Z-codex-8a9266.yaml",
+    "silicon-metal": "history/records/silicon-metal/2026-10-11T083009Z-codex-101d06.yaml",
+    "titanium-metal": "history/records/titanium-metal/2026-10-11T083011Z-codex-5e59d0.yaml",
+    "graphite": "history/records/graphite/2026-10-11T083013Z-codex-0dda78.yaml",
+    "coking-coal": "history/records/coking-coal/2026-10-11T083015Z-codex-d535fa.yaml"
+  },
+  "local_dedup": {
+    "hidden_and_ignored_included": true,
+    "follow_symlinks": true,
+    "roots": [
+      "data/records",
+      "research",
+      "reviews",
+      "history",
+      "/private/tmp/cmm-round9-graphite-evidence",
+      "/private/tmp/cmm-round10-graphite-raw",
+      "/private/tmp/cmm-round10-ti-zr-raw"
+    ],
+    "symlinks": [],
+    "enumerated_paths": 586,
+    "scope": "Task-worktree records/research/reviews/history plus cited graphite and titanium raw directories. No unrelated home/temp scan; binary PDFs are not assumed searchable without extraction. New-source exact-DOI/title search before record writes returned zero matching prior text references, including ignored/hidden files.",
+    "initial_command": "rg --no-ignore --hidden --follow -n -i 'graphite|coking.coal|metallurgical.coal|battery.grade|magnesium.metal|silicon.metal|titanium.metal|2c07262|nwag426' data/records research reviews history",
+    "new_source_command": "rg --no-ignore --hidden --follow -n -i '13127\\.2387|shahbazi|\\bTabas\\b|fs20263061|myb1-2021-graphite|actbio\\.2009\\.10\\.007|PMC8953398' <roots>",
+    "new_source_matches": 0
+  },
+  "web_search": {
+    "provider": "web.run",
+    "date": "2026-10-11",
+    "queries": [
+      "site.eur-lex.europa.eu 2024 1252 Annex I battery grade magnesium metal coking coal",
+      "site.usgs.gov magnesium metal commodity silicon metal titanium sponge purity",
+      "site.usgs.gov metallurgical coal coking coal definition 2025 critical minerals",
+      "site.rmis.jrc.ec.europa.eu battery grade lithium manganese nickel graphite definition",
+      "\"coking coal\" \"bioleaching\" desulfurization bacteria",
+      "\"metallurgical coal\" \"microbial\" desulfurization",
+      "\"magnesium metal\" microbial corrosion pure magnesium bacteria",
+      "\"silicon metal\" bacteria bioleaching microbial purification",
+      "\"Bioflotation and Bioleaching\" \"Tabas\" Shahbazi",
+      "\"silicon metal\" \"bioleaching\"",
+      "\"battery grade\" \"bioleaching\" lithium nickel manganese graphite",
+      "\"coking coal\" \"bioleaching\" \"control\"",
+      "site.jme.shahroodut.ac.ir \"Bioflotation\" \"Tabas\"",
+      "site.rmis.jrc.ec.europa.eu \"battery grade\" \"99.5\" lithium manganese nickel",
+      "site.usgs.gov \"silicon metal\" \"99.9%\"",
+      "site.usgs.gov \"magnesium metal\" \"unalloyed\"",
+      "\"Bioflotation and Bioleaching as an Alternative Method\" doi",
+      "\"Bioflotation\" \"581-595\"",
+      "\"coking coal\" \"Bacillus\" desulfurization",
+      "\"coking coal\" \"bioleaching\" correction retraction",
+      "\"Bioflotation\" \"Tabas\" \"2024\" \"10.\"",
+      "\"graphite\" \"natural and synthetic\" site.usgs.gov",
+      "\"manganese\" \"battery grade\" site.publications.jrc.ec.europa.eu",
+      "\"nickel\" \"battery grade\" \"sulfate\" site.rmis.jrc.ec.europa.eu",
+      "site.op.europa.eu \"Strategic raw materials\" \"lithium\" \"Battery\"",
+      "site.op.europa.eu \"Strategic raw materials\" \"nickel\" \"Battery\"",
+      "\"Closed-Loop Graphite Recycling\" \"correction\" OR \"retraction\"",
+      "\"battery grade\" bioleaching \"control\" lithium nickel manganese",
+      "\"Microbially reduced flavins\" correction retraction",
+      "\"magnesium metal\" bioleaching recovery \"abiotic\"",
+      "\"silicon metal\" bioleaching bacteria \"no effect\"",
+      "\"Bioflotation and bioleaching\" Tabas \"correction\" OR \"retraction\""
+    ],
+    "coverage": "Default returned search-result pages only; no date filters or pagination. Followed relevant official/publisher pages and resolved primary DOI. Per-query times were not separately retained. Crossref title search rows=3 did not resolve the Tabas paper; DOI came from author-uploaded copy and was then confirmed on publisher page.",
+    "integrity_result": "No matching correction or retraction notice identified in returned exact-title searches for Shahbazi2024, Roy2023 or Li2026. Null/abiotic and product-grade queries inform limits; this is not exhaustive or a Crossmark audit."
+  },
+  "source_inspection": {
+    "eu2024-original.html": "Full original AnnexI/II lists, Article3(3), Recital8; exact historical designations. No amendment/current-law completeness claim.",
+    "usgs-mcs2026.pdf": "Reused PDF from round9; hash rechecked. Printed pp122-123,170-171,196-197 text inspected; pp122/170/196 rendered images inspected. No market estimates imported.",
+    "usgs-graphite2021.pdf": "Cover edition, pp32.1-32.2 text and images inspected; establishes joint natural/synthetic commodity family.",
+    "usgs-coal2026.pdf": "Cover version1.1 August2026, pp1-2 text and images; EIA conflict preserved.",
+    "coal-shahbazi2024.pdf": "All English full text read; Methods2.1-2.4, Table1 and3-5, Figures4-5 inspected; pages4,9,10,12 rendered and viewed. Publisher version confirmed15pages. No separate supplement link on inspected landing.",
+    "jrc-foresight2023.pdf": "Table16 continuation printed243/PDF246; selected chemistry/source-stage statements on printed21/PDF24; not full-report audit.",
+    "jrc-battery2025.pdf": "REJECTED ARTIFACT: HTTP200 text/html Request Rejected page (245bytes), not PDF. No fulltext claim.",
+    "rmis-battery.html": "Direct HTML only shell/navigation; indexed text used as discovery lead, not verified full dynamically loaded article.",
+    "ec-lithium2025.pdf": "Single-page factsheet read; product specification absent; placeholder ISBN/DOI visible, not invented.",
+    "ec-manganese2025.pdf": "Single-page factsheet read; product specification absent; placeholder ISBN/DOI visible, not invented."
+  },
+  "acquisition_receipts": [
+    {
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1252/oj/eng",
+      "started_at": "2026-10-11T08:25:03.778361+00:00",
+      "result": "failed",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "finished_at": "2026-10-11T08:25:03.852211+00:00"
+    },
+    {
+      "url": "https://www.eia.gov/tools/glossary/index.php?id=Metallurgical+coal",
+      "started_at": "2026-10-11T08:25:03.779453+00:00",
+      "result": "failed",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "finished_at": "2026-10-11T08:25:03.852830+00:00"
+    },
+    {
+      "url": "https://www.eia.gov/tools/glossary/index.php?id=Coking+coal",
+      "started_at": "2026-10-11T08:25:03.780090+00:00",
+      "result": "failed",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "finished_at": "2026-10-11T08:25:03.853960+00:00"
+    },
+    {
+      "url": "https://pubs.usgs.gov/fs/2026/3061/fs20263061.pdf",
+      "started_at": "2026-10-11T08:25:03.780498+00:00",
+      "result": "failed",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "finished_at": "2026-10-11T08:25:03.852546+00:00"
+    },
+    {
+      "url": "https://pubs.usgs.gov/myb/vol1/2019/myb1-2019-silicon.pdf",
+      "started_at": "2026-10-11T08:25:03.780833+00:00",
+      "result": "failed",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "finished_at": "2026-10-11T08:25:03.853407+00:00"
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm",
+      "started_at": "2026-10-11T08:25:03.852272+00:00",
+      "result": "failed",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "finished_at": "2026-10-11T08:25:03.854311+00:00"
+    },
+    {
+      "url": "https://pubs.usgs.gov/publication/sir20255021/full",
+      "started_at": "2026-10-11T08:25:03.852578+00:00",
+      "result": "failed",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "finished_at": "2026-10-11T08:25:03.854403+00:00"
+    },
+    {
+      "url": "https://rmis.jrc.ec.europa.eu/bvc/",
+      "started_at": "2026-10-11T08:25:03.852995+00:00",
+      "result": "failed",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "finished_at": "2026-10-11T08:25:03.854616+00:00"
+    },
+    {
+      "url": "https://www.mdpi.com/2313-4321/11/8/142",
+      "started_at": "2026-10-11T08:25:03.853530+00:00",
+      "result": "failed",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "finished_at": "2026-10-11T08:25:03.854750+00:00"
+    },
+    {
+      "url": "https://api.crossref.org/works?query.title=Bioflotation%20and%20Bioleaching%20as%20an%20Alternative%20Method%20for%20Desulphurization%20and%20Ash%20Reduction%20in%20Tabas%20Coal&rows=3",
+      "started_at": "2026-10-11T08:25:03.854001+00:00",
+      "result": "failed",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "finished_at": "2026-10-11T08:25:03.855133+00:00"
+    },
+    {
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1252/oj/eng",
+      "started_at": "2026-10-11T08:25:40.921145+00:00",
+      "retry_reason": "sandbox DNS denied first attempt; authorized public evidence acquisition",
+      "status": 200,
+      "final_url": "https://eur-lex.europa.eu/eli/reg/2024/1252/oj/eng",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/eu2024-original.html",
+      "bytes": 1054922,
+      "sha256": "e596f0ade92a8d267236304d072866f74fdb2c38955abb8da563c13c9f6d9213",
+      "result": "acquired; inspect content separately",
+      "finished_at": "2026-10-11T08:25:42.222377+00:00"
+    },
+    {
+      "url": "https://www.eia.gov/tools/glossary/index.php?id=Metallurgical+coal",
+      "started_at": "2026-10-11T08:25:40.922584+00:00",
+      "retry_reason": "sandbox DNS denied first attempt; authorized public evidence acquisition",
+      "status": 200,
+      "final_url": "https://www.eia.gov/tools/glossary/index.php?id=Metallurgical+coal",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/eia-metallurgical-coal.html",
+      "bytes": 46893,
+      "sha256": "aef54d5a8222d07f1c00f8aa7b04b3f999bb17ba80ec322b63f1d20816aa9f8e",
+      "result": "acquired; inspect content separately",
+      "finished_at": "2026-10-11T08:25:50.213617+00:00"
+    },
+    {
+      "url": "https://www.eia.gov/tools/glossary/index.php?id=Coking+coal",
+      "started_at": "2026-10-11T08:25:40.923213+00:00",
+      "retry_reason": "sandbox DNS denied first attempt; authorized public evidence acquisition",
+      "status": 200,
+      "final_url": "https://www.eia.gov/tools/glossary/index.php?id=Coking+coal",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/eia-coking-coal.html",
+      "bytes": 47936,
+      "sha256": "4cb52b42c611daa177e84acaec2d9b55012d446d1d55a402304030493107292e",
+      "result": "acquired; inspect content separately",
+      "finished_at": "2026-10-11T08:25:50.213714+00:00"
+    },
+    {
+      "url": "https://pubs.usgs.gov/fs/2026/3061/fs20263061.pdf",
+      "started_at": "2026-10-11T08:25:40.923582+00:00",
+      "retry_reason": "sandbox DNS denied first attempt; authorized public evidence acquisition",
+      "status": 200,
+      "final_url": "https://pubs.usgs.gov/fs/2026/3061/fs20263061.pdf",
+      "content_type": "application/pdf",
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/usgs-coal2026.pdf",
+      "bytes": 4308053,
+      "sha256": "033f9d3ff40d243893a762050584f80d03edf7565010549d1e5ec5b3d9e22f8b",
+      "result": "acquired; inspect content separately",
+      "finished_at": "2026-10-11T08:25:42.462083+00:00"
+    },
+    {
+      "url": "https://pubs.usgs.gov/myb/vol1/2019/myb1-2019-silicon.pdf",
+      "started_at": "2026-10-11T08:25:40.923942+00:00",
+      "retry_reason": "sandbox DNS denied first attempt; authorized public evidence acquisition",
+      "status": 200,
+      "final_url": "https://pubs.usgs.gov/myb/vol1/2019/myb1-2019-silicon.pdf",
+      "content_type": "application/pdf",
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/usgs-silicon2019.pdf",
+      "bytes": 331618,
+      "sha256": "f0460b2685ffc70de94bc50966019247ff99222eb5c45b3ba0b6a3338ed33809",
+      "result": "acquired; inspect content separately",
+      "finished_at": "2026-10-11T08:25:42.124270+00:00"
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm",
+      "started_at": "2026-10-11T08:25:42.124331+00:00",
+      "retry_reason": "sandbox DNS denied first attempt; authorized public evidence acquisition",
+      "status": 200,
+      "final_url": "https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm",
+      "content_type": "text/html",
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/us2025-final.html",
+      "bytes": 21581,
+      "sha256": "51044290c5a0ffe7b82f0848a8f8243aae8d81f092402b391649453478bca012",
+      "result": "acquired; inspect content separately",
+      "finished_at": "2026-10-11T08:25:42.350531+00:00"
+    },
+    {
+      "url": "https://pubs.usgs.gov/publication/sir20255021/full",
+      "started_at": "2026-10-11T08:25:42.222452+00:00",
+      "retry_reason": "sandbox DNS denied first attempt; authorized public evidence acquisition",
+      "status": 200,
+      "final_url": "https://pubs.usgs.gov/publication/sir20255021/full",
+      "content_type": "text/html; charset=utf-8",
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/usgs-metal-outlook2025.html",
+      "bytes": 170821,
+      "sha256": "182eb41bb20ef6231f0ae6365ed5a63eb6f5e9eee33ef13695173148818c9175",
+      "result": "acquired; inspect content separately",
+      "finished_at": "2026-10-11T08:25:44.452649+00:00"
+    },
+    {
+      "url": "https://rmis.jrc.ec.europa.eu/bvc/",
+      "started_at": "2026-10-11T08:25:42.350577+00:00",
+      "retry_reason": "sandbox DNS denied first attempt; authorized public evidence acquisition",
+      "status": 200,
+      "final_url": "https://rmis.jrc.ec.europa.eu/bvc/",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/rmis-battery.html",
+      "bytes": 18804,
+      "sha256": "2d9c5bd25efca069172911bac8b333ebd1ccfce688e0d02660d7996c9e67d5ca",
+      "result": "acquired; inspect content separately",
+      "finished_at": "2026-10-11T08:25:43.064334+00:00"
+    },
+    {
+      "url": "https://www.mdpi.com/2313-4321/11/8/142",
+      "started_at": "2026-10-11T08:25:42.462643+00:00",
+      "retry_reason": "sandbox DNS denied first attempt; authorized public evidence acquisition",
+      "result": "failed",
+      "error": "HTTP Error 403: Forbidden",
+      "finished_at": "2026-10-11T08:25:42.544501+00:00"
+    },
+    {
+      "url": "https://api.crossref.org/works?query.title=Bioflotation%20and%20Bioleaching%20as%20an%20Alternative%20Method%20for%20Desulphurization%20and%20Ash%20Reduction%20in%20Tabas%20Coal&rows=3",
+      "started_at": "2026-10-11T08:25:42.544541+00:00",
+      "retry_reason": "sandbox DNS denied first attempt; authorized public evidence acquisition",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works?query.title=Bioflotation%20and%20Bioleaching%20as%20an%20Alternative%20Method%20for%20Desulphurization%20and%20Ash%20Reduction%20in%20Tabas%20Coal&rows=3",
+      "content_type": "application/json",
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/coal-crossref.json",
+      "bytes": 21235,
+      "sha256": "82facdc070b5fcd899d6e067a27a796dfaf8a7894b5bb2400615f622b844ccb3",
+      "result": "acquired; inspect content separately",
+      "finished_at": "2026-10-11T08:25:43.468444+00:00"
+    },
+    {
+      "url": "https://pubs.usgs.gov/myb/vol1/2021/myb1-2021-graphite.pdf",
+      "started_at": "2026-10-11T08:25:43.064399+00:00",
+      "retry_reason": "sandbox DNS denied first attempt; authorized public evidence acquisition",
+      "status": 200,
+      "final_url": "https://pubs.usgs.gov/myb/vol1/2021/myb1-2021-graphite.pdf",
+      "content_type": "application/pdf",
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/usgs-graphite2021.pdf",
+      "bytes": 390547,
+      "sha256": "4f9f98fca68e8f58c4a297f6734d3ecead402fc3f4ea8337b89637bdeab098bc",
+      "result": "acquired; inspect content separately",
+      "finished_at": "2026-10-11T08:25:43.968099+00:00"
+    },
+    {
+      "url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC141715/JRC141715_01.pdf",
+      "started_at": "2026-10-11T08:25:43.468503+00:00",
+      "retry_reason": "sandbox DNS denied first attempt; authorized public evidence acquisition",
+      "status": 200,
+      "final_url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC141715/JRC141715_01.pdf",
+      "content_type": "text/html",
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/jrc-battery2025.pdf",
+      "bytes": 245,
+      "sha256": "58aa66d099bef3af7003dcac6545f8c1c195623a5149875888da87a34fe083e1",
+      "result": "acquired; inspect content separately",
+      "finished_at": "2026-10-11T08:25:44.481084+00:00"
+    },
+    {
+      "url": "https://jme.shahroodut.ac.ir/article_2938_a74d4738828f0d9563f0d2a76b2ad833.pdf",
+      "started_at": "2026-10-11T08:27:20.073053+00:00",
+      "status": 200,
+      "final_url": "https://jme.shahroodut.ac.ir/article_2938_a74d4738828f0d9563f0d2a76b2ad833.pdf",
+      "content_type": "application/pdf",
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/coal-shahbazi2024.pdf",
+      "bytes": 4950262,
+      "sha256": "1a7557e0cd453854b062c87651614b7ad20b0484ae3e65a9a59e57a48eed1af9",
+      "result": "acquired; inspect content separately",
+      "finished_at": "2026-10-11T08:27:24.081274+00:00"
+    },
+    {
+      "url": "https://jme.shahroodut.ac.ir/article_2938.html",
+      "started_at": "2026-10-11T08:27:20.074225+00:00",
+      "status": 200,
+      "final_url": "https://jme.shahroodut.ac.ir/article_2938.html",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/coal-shahbazi2024.html",
+      "bytes": 77790,
+      "sha256": "047fd93b91c2c4e14a504fa6a711baefc102115f094b4e53440d7b1d5651c34d",
+      "result": "acquired; inspect content separately",
+      "finished_at": "2026-10-11T08:27:22.345801+00:00"
+    },
+    {
+      "url": "https://rmis.jrc.ec.europa.eu/uploads/CRMs_for_Strategic_Technologies_and_Sectors_in_the_EU_2023.pdf",
+      "started_at": "2026-10-11T08:27:20.074761+00:00",
+      "status": 200,
+      "final_url": "https://rmis.jrc.ec.europa.eu/uploads/CRMs_for_Strategic_Technologies_and_Sectors_in_the_EU_2023.pdf",
+      "content_type": "application/pdf",
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/jrc-foresight2023.pdf",
+      "bytes": 23435465,
+      "sha256": "6c3496280b3068500705dbf96f139b700fe26a939b4ce6754b37ab91b2dede1e",
+      "result": "acquired; inspect content separately",
+      "finished_at": "2026-10-11T08:29:29.286049+00:00"
+    },
+    {
+      "url": "https://webgate.ec.europa.eu/circabc-ewpp/d/d/workspace/SpacesStore/760da134-e3de-4421-a3d4-751cbea62e9a/download",
+      "started_at": "2026-10-11T08:27:20.074993+00:00",
+      "status": 200,
+      "final_url": "https://webgate.ec.europa.eu/circabc-ewpp/d/d/workspace/SpacesStore/760da134-e3de-4421-a3d4-751cbea62e9a/download",
+      "content_type": "application/pdf; charset=UTF-8",
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/ec-lithium2025.pdf",
+      "bytes": 389478,
+      "sha256": "1a86aaffbf659cb3c10669147698d508da4e7f66fc8f568b1593c6df7184f67a",
+      "result": "acquired; inspect content separately",
+      "finished_at": "2026-10-11T08:27:22.874358+00:00"
+    },
+    {
+      "url": "https://webgate.ec.europa.eu/circabc-ewpp/d/d/workspace/SpacesStore/41471143-52cd-429f-9c76-c6359286d3aa/download",
+      "started_at": "2026-10-11T08:27:20.075207+00:00",
+      "status": 200,
+      "final_url": "https://webgate.ec.europa.eu/circabc-ewpp/d/d/workspace/SpacesStore/41471143-52cd-429f-9c76-c6359286d3aa/download",
+      "content_type": "application/pdf; charset=UTF-8",
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/ec-manganese2025.pdf",
+      "bytes": 405400,
+      "sha256": "7b0370e6b374acb89c40712748e51b9457da1c5a531b89d48953758797db2c3c",
+      "result": "acquired; inspect content separately",
+      "finished_at": "2026-10-11T08:27:22.874216+00:00"
+    }
+  ],
+  "retained_inputs": [
+    {
+      "path": "/private/tmp/cmm-round10-graphite-local-search.txt",
+      "sha256": "1243c8efde2138a845c65c32c3b037af8cd417951ca4462bc3e3767665ca24e5",
+      "bytes": 15286,
+      "provenance_report": "research/ingests/round10-graphite-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:14.684967+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/uk2024-or24059.pdf",
+      "sha256": "e5708ffb1080c874cc57f0e20aad8f99aea746977971280434a1cfbb37f28c9e",
+      "bytes": 29325722,
+      "provenance_report": "research/ingests/round10-graphite-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:15.052001+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/uk-old-landing.html",
+      "sha256": "3c247d7ad675e453d00e4a8ba3b86809f164a2c7237ab50173a76e33ba4c85eb",
+      "bytes": 55791,
+      "provenance_report": "research/ingests/round10-graphite-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:14.952188+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/uk-current-landing.html",
+      "sha256": "037d0ae4b6d92ce6a4fe421dd3fab1db4b7f06e777b2a3a1fc590e767faef4e0",
+      "bytes": 55323,
+      "provenance_report": "research/ingests/round10-graphite-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:14.951834+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/acquisition.json",
+      "sha256": "07f11dea8781abc83bab639e6e8282e9a289485f804195675a2c95a39f8f8c8b",
+      "bytes": 2328,
+      "provenance_report": "research/ingests/round9-graphite-handoff-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:15.199373+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/eu2024-1252.html",
+      "sha256": "4b09770aa8d3abb936cdd360993149c644d2f91cf890e24ceb1998beef4650c6",
+      "bytes": 1053851,
+      "provenance_report": "research/ingests/round9-graphite-handoff-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:15.204066+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/landwaldt2007-p3.png",
+      "sha256": "0ab1a8f549f38b4b7db5e3fc913d49fa4e5c5dfc5f927bc289b720879eba5030",
+      "bytes": 122432,
+      "provenance_report": "research/ingests/round9-graphite-handoff-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:15.205045+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/landwaldt2007-p7.png",
+      "sha256": "614d006d4af3adc84fe4b7f5e07bc9f4052d1999f7dc04b0e0943bdde45e1a4d",
+      "bytes": 101185,
+      "provenance_report": "research/ingests/round9-graphite-handoff-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:15.205736+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/landwaldt2007-p8.png",
+      "sha256": "db7f8440b95a719a41f6a157073ba75621be496d587a1425bf4cd4bcb1113351",
+      "bytes": 154334,
+      "provenance_report": "research/ingests/round9-graphite-handoff-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:15.206627+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/landwaldt2007-selected.txt",
+      "sha256": "966a06ce28eb5797028c76c5bec8a09c327623b96568a71e89f8012dba913d47",
+      "bytes": 18738,
+      "provenance_report": "research/ingests/round9-graphite-handoff-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:15.206920+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/landwaldt2007.pdf",
+      "sha256": "55a8c03cb5999c2d7e4c42bac13f8d9d8c7d007b829a86cd3989949e756d9769",
+      "bytes": 149259,
+      "provenance_report": "research/ingests/round9-graphite-handoff-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:15.207766+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/uk2024-or24047-p11.png",
+      "sha256": "728420889271ecbd5253f3efb51aaa55fa23beb44c5c32cdbd5b4db2f50d2998",
+      "bytes": 130261,
+      "provenance_report": "research/ingests/round9-graphite-handoff-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:15.208417+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/uk2024-or24047-p48.png",
+      "sha256": "eb9545ff43a10fa1206e61b5d8d44133d89c402aebfb22a4cafcdb375dd92496",
+      "bytes": 119986,
+      "provenance_report": "research/ingests/round9-graphite-handoff-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:15.209057+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/uk2024-or24047-selected.txt",
+      "sha256": "1f4fe814f1c7d253b361d14ef9669d822fe50bbdfd0cd220010c714f676953c9",
+      "bytes": 3818,
+      "provenance_report": "research/ingests/round9-graphite-handoff-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:15.209302+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/uk2024-or24047.pdf",
+      "sha256": "1a72206ff4e1b8d6cbc2a350e28338f192e264a3ba6c31a5d8dbb28262e35dc5",
+      "bytes": 26610997,
+      "provenance_report": "research/ingests/round9-graphite-handoff-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:15.292166+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/usgs-mcs2026-graphite.txt",
+      "sha256": "e054fb4a0619eeac7a529bc859230968887b1e413a1e6d5719ee3a0b4f03dbdb",
+      "bytes": 8269,
+      "provenance_report": "research/ingests/round9-graphite-handoff-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:15.292444+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/usgs-mcs2026-p96.png",
+      "sha256": "e7aa4adca567088d2f67d9a4f830affe9c2276bd193b715201f5cf290e263a8c",
+      "bytes": 230387,
+      "provenance_report": "research/ingests/round9-graphite-handoff-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:15.293512+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/usgs-mcs2026-p97.png",
+      "sha256": "6f1b6e3623fbfd3f2a22329a689f9a96e9be5b5cd2c340c6b24783033e15d1ea",
+      "bytes": 192731,
+      "provenance_report": "research/ingests/round9-graphite-handoff-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:15.294308+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/usgs-mcs2026-selected.txt",
+      "sha256": "b38150c5c33b4f5f8fbb4e3e15a42cbd04243a24c11408f65530b8d2874e6389",
+      "bytes": 3813,
+      "provenance_report": "research/ingests/round9-graphite-handoff-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:15.294530+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round9-graphite-evidence/usgs-mcs2026.pdf",
+      "sha256": "595e6e66674236dea40125a03eb1ea6b347f331c0bcf3411a1e77eba53c0d391",
+      "bytes": 17646709,
+      "provenance_report": "research/ingests/round9-graphite-handoff-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:15.349449+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/acquisition.json",
+      "sha256": "e35dd3def3eb8aa3d67a29cae571159cca5dfbcaeeae59f83721168e531493f5",
+      "bytes": 2200,
+      "provenance_report": "research/ingests/round10-graphite-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:14.949589+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/round10_graphite_official.json",
+      "sha256": "75b9fbf32e736103ea8138dd159a40e7f085aea9fd9b3b617ddb5465d13d3f38",
+      "bytes": 14335,
+      "provenance_report": "research/ingests/round10-graphite-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:14.949831+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/round10_graphite_search1.json",
+      "sha256": "872ba7cf6d18572234dbec0502b0f4e493ff3eaa7ba8b9d6a8b42130d8672cfd",
+      "bytes": 33889,
+      "provenance_report": "research/ingests/round10-graphite-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:14.950298+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/round10_graphite_search2.json",
+      "sha256": "fc6dc14c4f20bbe241c852d228ed8cabc62eadc209668da1f855b297b0ac51cf",
+      "bytes": 16966,
+      "provenance_report": "research/ingests/round10-graphite-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:14.950578+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/round10_graphite_search5.json",
+      "sha256": "c03925084292ccaabb7580044968310f972036046c8fea720f5bb8b4bc7ae815",
+      "bytes": 14205,
+      "provenance_report": "research/ingests/round10-graphite-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:14.950823+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/round10_graphite_search6.json",
+      "sha256": "48a4cdff57d909d02c49739e63322c15a3650c6fffbc43fd1ab100cc6d94e868",
+      "bytes": 16565,
+      "provenance_report": "research/ingests/round10-graphite-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:14.951116+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/round10_graphite_source3.json",
+      "sha256": "64939d5e4f13ca824555e1a9586d03217c4f440e302140728be037286e67d99a",
+      "bytes": 5987,
+      "provenance_report": "research/ingests/round10-graphite-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:14.951318+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/round10_graphite_source4.json",
+      "sha256": "92875399a2ae55933958be182259707b1c7e234f1f7756844101cbff02213e8d",
+      "bytes": 15677,
+      "provenance_report": "research/ingests/round10-graphite-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:14.951550+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/uk-or24059-p11.png",
+      "sha256": "70f9a276a7609c6d60754635fef2d347719047aeca03ce9e3e6f17003c264a32",
+      "bytes": 130577,
+      "provenance_report": "research/ingests/round10-graphite-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:14.953344+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/uk-or24059-p48.png",
+      "sha256": "eb9545ff43a10fa1206e61b5d8d44133d89c402aebfb22a4cafcdb375dd92496",
+      "bytes": 119986,
+      "provenance_report": "research/ingests/round10-graphite-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:14.954300+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round10-graphite-raw/uk-or24059-selected.txt",
+      "sha256": "c87f7bb0a27f0f9d17e4a00d725bec41eec0f8cc501cd037c11566ba014dd267",
+      "bytes": 13174,
+      "provenance_report": "research/ingests/round10-graphite-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:14.954510+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round10-natural-graphite-validation.log",
+      "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e",
+      "bytes": 31,
+      "provenance_report": "research/ingests/round10-graphite-20261011.json",
+      "rechecked_at": "2026-10-11T08:24:15.052635+00:00"
+    }
+  ],
+  "raw_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/acquisition-followup.json",
+      "sha256": "0253e30410ff515391f49e31c06b2a77781b662e5f346c4112a4bc2c4e9f0d55",
+      "bytes": 3181
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/acquisition-retry.json",
+      "sha256": "f1b158bdf54c2603693e3cb10d8dbac1415f33c2080ae4fa10f0aed47164c5f5",
+      "bytes": 7862
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/acquisition.json",
+      "sha256": "4ab1815e3c511d5ead7ccf2ba1810e271687c1bb8999cff2f2436ae6b2e2537f",
+      "bytes": 3090
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/cmcoalpdf.json",
+      "sha256": "d67eae2f387a126f8f9a5e1149c9f343b2b8786dac88aadf9be22b8cb1ff40e1",
+      "bytes": 259
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/cmcoalpublisher.json",
+      "sha256": "c021d71e4b13f50bf29c5d56ed1ecb956cb3f9fc0d5b410610eb5bc9b4341044",
+      "bytes": 15484
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/cmsearch1.json",
+      "sha256": "41a3fdfd5f4f1e8e8af7e1c871264c37ee43fd868fb4773509fa3b043b6fb786",
+      "bytes": 33613
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/cmsearch2.json",
+      "sha256": "4038950ca06827a9131176e337ab2885e4434adeada12915f1737d4bdbf42f51",
+      "bytes": 34978
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/cmsearch3.json",
+      "sha256": "7dd2ceafd00804c37935fcbb01d03dfa79fdc8c3f2c8c6ddc137c9c15d79525d",
+      "bytes": 34668
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/cmsearch4.json",
+      "sha256": "8033ac4e577fb0fc23c4100b6c7c3df04019b5832e0fc58867f03683732f7106",
+      "bytes": 31317
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/cmsearch5.json",
+      "sha256": "6e8081e40b482a85282215f1f8d5e33c8abf4ce06fc07712c2f3a856fafcec39",
+      "bytes": 33322
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/cmsearch6.json",
+      "sha256": "72287cce9e6ce1aa7562df25ba93c878a5c66d8e2f9182b9ae30075b56de5dcb",
+      "bytes": 31910
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/cmsearch7.json",
+      "sha256": "8cb3cbaadaf5282ce77648cd06a364910e8cfac2fda6e1458560448d920f6319",
+      "bytes": 36211
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/cmsearch8.json",
+      "sha256": "05fc5e18e58e7b3b0f6ffba87c86fdd4385230afa1843e42e1f797ba5afa59fc",
+      "bytes": 27609
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/cmsource1.json",
+      "sha256": "bf0bc9989fe86a529c7e3ea1110ac4bb2fac8588077e8a92a605ab382075cafe",
+      "bytes": 35645
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/cmsource2.json",
+      "sha256": "d8443e8a3f71929b29a53915bab6e737778ec6fdd9ecea5800a28f7dd1fb3b53",
+      "bytes": 24200
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/coal-crossref.json",
+      "sha256": "82facdc070b5fcd899d6e067a27a796dfaf8a7894b5bb2400615f622b844ccb3",
+      "bytes": 21235
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/coal-shahbazi2024.html",
+      "sha256": "047fd93b91c2c4e14a504fa6a711baefc102115f094b4e53440d7b1d5651c34d",
+      "bytes": 77790
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/coal-shahbazi2024.pdf",
+      "sha256": "1a7557e0cd453854b062c87651614b7ad20b0484ae3e65a9a59e57a48eed1af9",
+      "bytes": 4950262
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/coal-shahbazi2024.txt",
+      "sha256": "1bac5545abc4a174c4ac67199567fdd877e459fb8cb2b78dbaa6a621ff1764bb",
+      "bytes": 55830
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/coal2024-page1.png",
+      "sha256": "419f8f1a71ad3ea0a17d0d113fe613b6c99b01e800733acf3f41d770a3ef7e59",
+      "bytes": 157883
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/coal2024-page10.png",
+      "sha256": "57954d9d78811da1a3b6d93eb420638d0977da72248e94936ff42148eebb1f28",
+      "bytes": 113611
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/coal2024-page11.png",
+      "sha256": "a46df6dfc2cc0793224df9a1abb3f196022d3e24e6f6d76770f0176962e70234",
+      "bytes": 153695
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/coal2024-page12.png",
+      "sha256": "aa2cfd587663c58e4d35868cae24c851db9f7f1a66a6f810e9497a8b9a411cfb",
+      "bytes": 72282
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/coal2024-page2.png",
+      "sha256": "6791e45ccba28c06b09c7c6da4bde6744019f8699f00b9ca144f590566c17d70",
+      "bytes": 183933
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/coal2024-page3.png",
+      "sha256": "76066e47b5c922f9d9b5ae43fe58c6125ba430ddd8dfd1d3a5a4d2185e5968f5",
+      "bytes": 172874
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/coal2024-page4.png",
+      "sha256": "005ebe150bc99d0d477fd952cdb032cf9a5ab097d9cccbc7ae44460307bd66e6",
+      "bytes": 183364
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/coal2024-page9.png",
+      "sha256": "e96eef57382cc8b258befe5921bfc987e600b7f378b300e2bbd062139c4a84ff",
+      "bytes": 117306
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/ec-lithium2025.pdf",
+      "sha256": "1a86aaffbf659cb3c10669147698d508da4e7f66fc8f568b1593c6df7184f67a",
+      "bytes": 389478
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/ec-lithium2025.txt",
+      "sha256": "ce3c25b2c676e65a088ac7c8ad26fdeb6e2617073de5a51bb588680e460c017c",
+      "bytes": 1717
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/ec-manganese2025.pdf",
+      "sha256": "7b0370e6b374acb89c40712748e51b9457da1c5a531b89d48953758797db2c3c",
+      "bytes": 405400
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/ec-manganese2025.txt",
+      "sha256": "8cc97b31dbe691ee00b388ece354d53b3e5575fa5846f3afd50ff89bc5f8f0ad",
+      "bytes": 1818
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/eia-coking-coal.html",
+      "sha256": "4cb52b42c611daa177e84acaec2d9b55012d446d1d55a402304030493107292e",
+      "bytes": 47936
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/eia-coking-coal.txt",
+      "sha256": "ae61dcf36d210a384bd2b03018b96a49df3d1e9bf554bccef5a0e0b623029372",
+      "bytes": 4478
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/eia-metallurgical-coal.html",
+      "sha256": "aef54d5a8222d07f1c00f8aa7b04b3f999bb17ba80ec322b63f1d20816aa9f8e",
+      "bytes": 46893
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/eia-metallurgical-coal.txt",
+      "sha256": "2dfb8e81fd7ba69888270053d435fe466e41147356383b28c96d64b8246c0d8e",
+      "bytes": 4490
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/enumerated-paths.txt",
+      "sha256": "641b4e5c4f092f55465fbc9cf8776eaa4c4a0fc4613f4b1e44768816c3dab66c",
+      "bytes": 33042
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/eu2024-original.html",
+      "sha256": "e596f0ade92a8d267236304d072866f74fdb2c38955abb8da563c13c9f6d9213",
+      "bytes": 1054922
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/eu2024-original.txt",
+      "sha256": "a58a3928ea8d5a57747e34031a0b5ec0cd6e4293586c630cc7ab166edad8f578",
+      "bytes": 266481
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/history-paths.json",
+      "sha256": "0dc7cb29e2508a1a4c15c270e238d26e4783866c6b8a73e34a57684cf3c0e0d4",
+      "bytes": 440
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/jrc-battery2025.pdf",
+      "sha256": "58aa66d099bef3af7003dcac6545f8c1c195623a5149875888da87a34fe083e1",
+      "bytes": 245
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/jrc-foresight2023-selected.txt",
+      "sha256": "b1086b7805081d34d143d6918d54ccd888620ee37f74b0b7fee567ac9c720ca7",
+      "bytes": 12170
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/jrc-foresight2023.pdf",
+      "sha256": "6c3496280b3068500705dbf96f139b700fe26a939b4ce6754b37ab91b2dede1e",
+      "bytes": 23435465
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/local-search.txt",
+      "sha256": "4cd173d55c44cbdbc40466c8fb812d8878ab31c183e6a654a1f5129877a2d608",
+      "bytes": 137582
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/mcs2026-metal-selected.txt",
+      "sha256": "9adfed7909c956c88272cd4443159d89ab77ba1c3ca717d7b7661a69446f5c0e",
+      "bytes": 22652
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/mcs2026-page126.png",
+      "sha256": "8c6ddbce89323588208ef3cfe8ccc929809f39930f3a43ccc006f79949c67b03",
+      "bytes": 155008
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/mcs2026-page127.png",
+      "sha256": "71f6d77ace224054b782647ba8ab1556bfa6f6be4dc6b0cf7e679e5b265f12bc",
+      "bytes": 147062
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/mcs2026-page174.png",
+      "sha256": "6d6ef3353f2a68fcad86439e4cb99ac5e445e909bb526adf168d28392d6d1a17",
+      "bytes": 141740
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/mcs2026-page175.png",
+      "sha256": "e7a05ecb646804bfd25ce97b57abc1805babd36caa772f1aae27b392e7d8ff64",
+      "bytes": 144739
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/mcs2026-page200.png",
+      "sha256": "ab4737a9afeba216a0d73d1142ba2f2539acef2626672a7ec811878bb7a879f4",
+      "bytes": 146557
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/mcs2026-page201.png",
+      "sha256": "d17263001e93ef20ff1d95c7979a0bbc9906ed45027106cbfd4de7e8cca42360",
+      "bytes": 146535
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/new-source-dedup.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/retained-inputs.json",
+      "sha256": "20c76bc8947fedbc239805fb0767781655a02cd812ed33030e3e46023ea7564e",
+      "bytes": 10362
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/rmis-battery.html",
+      "sha256": "2d9c5bd25efca069172911bac8b333ebd1ccfce688e0d02660d7996c9e67d5ca",
+      "bytes": 18804
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/rmis-battery.txt",
+      "sha256": "6010b477364c7cd3032714c5de1d694571260571c2081dd57fab8ebb901eb153",
+      "bytes": 740
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/symlinks.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/us2025-final.html",
+      "sha256": "51044290c5a0ffe7b82f0848a8f8243aae8d81f092402b391649453478bca012",
+      "bytes": 21581
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/usgs-coal2026-page1.png",
+      "sha256": "8878dd74809874600fafad8d0b5d3ed3eff3ac3195867d41ccd6ad3c795386f0",
+      "bytes": 385920
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/usgs-coal2026-page2.png",
+      "sha256": "e7683a3e836f884be3668dff1bed8ab4f94a211ed985c1effb74e32abb23c6d3",
+      "bytes": 215041
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/usgs-coal2026.pdf",
+      "sha256": "033f9d3ff40d243893a762050584f80d03edf7565010549d1e5ec5b3d9e22f8b",
+      "bytes": 4308053
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/usgs-coal2026.txt",
+      "sha256": "8b8bb3d6ae5bf6a356c4f53ae3e46270f8dbd3d14e97ae43405b28268f67d207",
+      "bytes": 43962
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/usgs-graphite2021-page2.png",
+      "sha256": "0d249cdcde44fcf97a092a05fc608171b37681b9a4f3056565f178b08158f985",
+      "bytes": 190255
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/usgs-graphite2021-page3.png",
+      "sha256": "cd52efd2c2914007a2711dbbfafe5ea5d7c1680a6772df6766704d378a44ab8a",
+      "bytes": 223267
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/usgs-graphite2021.pdf",
+      "sha256": "4f9f98fca68e8f58c4a297f6734d3ecead402fc3f4ea8337b89637bdeab098bc",
+      "bytes": 390547
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/usgs-graphite2021.txt",
+      "sha256": "a6890acf09ee601ad237b4b339bcc9dbfa3aa53efaa96e918f623b23ed592adf",
+      "bytes": 78288
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/usgs-metal-outlook2025.html",
+      "sha256": "182eb41bb20ef6231f0ae6365ed5a63eb6f5e9eee33ef13695173148818c9175",
+      "bytes": 170821
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/usgs-metal-outlook2025.txt",
+      "sha256": "38be62be15992b0725e38ffda440423c4b94dc0bed5f92e36fe91a500bf2889e",
+      "bytes": 59049
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/usgs-silicon2019.pdf",
+      "sha256": "f0460b2685ffc70de94bc50966019247ff99222eb5c45b3ba0b6a3338ed33809",
+      "bytes": 331618
+    },
+    {
+      "path": "/private/tmp/cmm-round12-carbon-metals-raw/usgs-silicon2019.txt",
+      "sha256": "1ed715f841102c34b2058d9d480c2c8cec6e139b6fed06e99c3e128023e2c7bc",
+      "bytes": 39696
+    }
+  ],
+  "validation": {
+    "command": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate data/records/magnesium-metal.yaml data/records/silicon-metal.yaml data/records/titanium-metal.yaml data/records/graphite.yaml data/records/coking-coal.yaml",
+    "exit_code": 0,
+    "result": "Checked5record(s);0failed.",
+    "batch_gates": "Root-owned; not repeated."
+  },
+  "reuse_and_access": {
+    "usgs_eia": "Official US government material; retained raw outside Git.",
+    "eu": "Official EU/Commission material; original legal text and reports have differing reuse contexts. EC factsheets expressly CC BY4.0 with third-party caveat.",
+    "shahbazi": "Journal landing explicitly CC BY4.0. Raw publisher PDF retained outside Git, not committed.",
+    "other_literature": "Metadata/snippet leads are not full-method verification. Reading access is not redistribution permission. MDPI2026 direct403; JRC2025 false PDF; Roy2023 prior403 retained as prior limitation, not a new fetch."
+  },
+  "limitations": [
+    "No exhausted-literature claim.",
+    "No commodity external identifiers asserted.",
+    "Five deferred proposals remain unaccepted, not presumed represented by element records.",
+    "Natural graphite remains unchanged and intentionally overlaps the new broader family.",
+    "Independent structured reviews and full batch/publication checks are separate root-managed work."
+  ]
+}
