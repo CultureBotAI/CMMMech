@@ -1,0 +1,115 @@
+id: cmmmech:osmium
+name: Osmium
+material_kind: element
+description: >-
+  Osmium (Os), distinct from osmium chlorides, oxides, coordination complexes
+  and platinum-group ores or commodities. Australia's 20 February 2024
+  critical-minerals list includes osmium through its explicitly enumerated
+  platinum-group-elements entry; this grouped designation is not a separate
+  unqualified listing of every osmium-bearing material. Curated microbial
+  evidence is a historical cell-extract experiment with qualified product
+  assignments, not a demonstrated industrial recovery process.
+identifiers:
+  - id: CHEBI:30687
+    label: osmium atom
+sources:
+  - id: chebi_osmium
+    title: 'ChEBI:30687 - osmium atom; Os, charge 0'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:30687
+    accessed_on: '2026-10-11'
+  - id: australia_2024
+    title: >-
+      Australian Department of Industry, Science and Resources. Australia's
+      Critical Minerals List and Strategic Materials List, updated 20 February
+      2024; Table 1 platinum-group-elements entry and footnote 16 explicitly
+      enumerate osmium among the six group members.
+    url: https://www.industry.gov.au/publications/australias-critical-minerals-list-and-strategic-materials-list
+    accessed_on: '2026-10-11'
+  - id: woolfolk_whiteley_1962
+    title: >-
+      Woolfolk and Whiteley. Reduction of inorganic compounds with molecular
+      hydrogen by Micrococcus lactilyticus. I. Stoichiometry with compounds
+      of arsenic, selenium, tellurium, transition and other elements.
+      Journal of Bacteriology 84, 647-658 (1962).
+      DOI 10.1128/jb.84.4.647-658.1962; Methods pages 648-649, Table 4
+      and osmium discussion pages 651-652, Table 5 and Discussion pages 654-656.
+    url: https://doi.org/10.1128/jb.84.4.647-658.1962
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: Australia
+    list_name: >-
+      Department of Industry, Science and Resources Critical Minerals List
+      (platinum-group-elements entry, including osmium by footnote 16)
+    edition: '2024 (updated 20 February 2024)'
+    classification: critical
+    source_ref: australia_2024
+mechanisms:
+  - id: lactilyticus_extract_osmium_reduction
+    name: Hydrogen-coupled osmium transformation in bacterial crude extracts
+    process: redox_transformation
+    description: >-
+      Crude cell-free extracts reported as Micrococcus lactilyticus consumed
+      molecular hydrogen in separate assays with OsO4, OsO2 or Os(III)
+      chloride. The authors interpreted the products as osmate from OsO4
+      and elemental osmium from OsO2 or Os(III) chloride. The stoichiometry
+      supports redox transformation under the assay conditions, but the
+      product identities and biological necessity remain less well resolved
+      than an independently characterized phase or purified-enzyme result.
+    context: >-
+      The paper uses the historical organism name Micrococcus lactilyticus
+      and notes classification as Veillonella alcalescens; no strain or
+      culture accession is provided. No modern strain identifier is inferred.
+      Cells grown in a cited complex lactate medium were harvested, washed
+      with water, sonicated for 20-45 min and centrifuged cold at 25000 g for
+      20 min; the supernatant was the crude extract. Warburg assays were
+      run at 30 degrees C under oxygen-scrubbed hydrogen, routinely in
+      2.2 mL with 150 micromol Tris buffer pH 7.0 and 1 mL extract containing
+      approximately 30 mg protein. Stoichiometry endpoints were taken after
+      hydrogen uptake ceased; Os-specific elapsed times are not supplied.
+      Table 4 reports 15.6 micromol OsO4 with 12.0 micromol H2 uptake,
+      12.7 micromol OsO2 with 25.0 micromol H2 uptake, and 7.3 micromol
+      Os(III) chloride with 10.7 micromol H2 uptake. These are source
+      substrate and gas-uptake amounts, not isolated osmium yields. OsO2
+      was added as a suspension; other relevant substrates were commercial.
+      Os(III) solution titration assumed oxidation to OsO4.
+    microbial: true
+    evidence:
+      - source_ref: woolfolk_whiteley_1962
+        supports: support
+        explanation: >-
+          Table 4 and pages 651-652 establish substrate-associated H2 uptake
+          with bacterial extract. The approximate two-H2-per-OsO2 and
+          one-and-a-half-H2-per-Os(III) stoichiometries are consistent with
+          the authors' Os(0) assignment. Table 5 separately summarizes
+          OsO2-to-Os and OsO4-to-osmate reactions. The OsO4 endpoint must
+          not be rewritten as complete reduction to metal.
+      - source_ref: woolfolk_whiteley_1962
+        supports: partial
+        explanation: >-
+          Osmate was inferred from H2 uptake and the absence of the black
+          appearance attributed to OsO2; the OsO4 uptake is below the stated
+          one-H2-per-substrate stoichiometry. The inspected paper gives no
+          Os-specific diffraction, spectroscopy, isolated-product assay,
+          numerical uncertainty or replicate count. It also does not report
+          an Os-specific no-extract, heat-inactivated-extract or no-H2
+          comparison. Thus quantitative product conversion, exclusive
+          enzymatic causality and complete recovery are not established.
+      - source_ref: woolfolk_whiteley_1962
+        supports: context_only
+        explanation: >-
+          Discussion on pages 655-656 explicitly considers nonspecific
+          reactions of enzymes or electron carriers with other physiological
+          functions. The Os assay does not identify a particular protein,
+          gene or purified hydrogenase as necessary, and it does not show
+          growth using osmium as an electron acceptor. Whole-cell respiration,
+          natural-environment prevalence and industrial deployment remain
+          outside this experiment's demonstrated scope.
+curation_history:
+  - timestamp: '2026-10-11T07:57:17Z'
+    curator: Codex (GPT-6; Codex)
+    action: create
+    summary: >-
+      Verified element identity, explicit Australian grouped designation and historical crude-extract osmium transformation; preserved uncertain products and missing matched controls.
+      Attached canonical CREATE history; independent scientific review is separate.
+history_refs:
+  - history/records/osmium/2026-10-11T075422Z-codex-a98024.yaml

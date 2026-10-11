@@ -71,6 +71,16 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Titanium](data/records/titanium.yaml) | *Shewanella algae* alters the titanium oxide passive film | Spectral and protocol limits remain explicit; corrosion is distinct from recovered titanium product |
 | [Zirconium](data/records/zirconium.yaml) | HC1 culture-associated preparation followed by calcination | Missing control outcomes and mixed phase evidence prevent claims of microbial necessity or pure zirconia |
 | [Natural graphite](data/records/natural-graphite.yaml) | Commodity identity and BGS/CMIC 2024 assessment designation | Natural origin does not establish battery grade; no microbial mechanism is asserted |
+| [Beryllium](data/records/beryllium.yaml) | Element identity and US 2025 designation | Primary removal leads remain deferred until full methods and controls are verified |
+| [Hafnium](data/records/hafnium.yaml) | Purified bacterial ferric binding protein retains Hf(IV) clusters | Cell-free binding and crystallography do not establish whole-cell uptake or elemental-metal recovery |
+| [Helium](data/records/helium.yaml) | Element identity and original EU 2024 designation | Tracer, plasma and analytical use do not establish microbial helium recovery |
+| [Iridium](data/records/iridium.yaml) | Lyophilized algal biomass adsorption and acid desorption | Current strain taxonomy, assay differences and source inconsistencies constrain interpretation |
+| [Lutetium](data/records/lutetium.yaml) | Washed Bacillus subtilis ATCC 7003 biomass depletes Lu from a mixed solution | Control-relative depletion does not resolve localization or recovered product mass balance |
+| [Osmium](data/records/osmium.yaml) | Historical bacterial cell extracts couple hydrogen consumption to Os substrates | Stoichiometrically inferred products lack Os-specific phase and matched-control confirmation |
+| [Promethium](data/records/promethium.yaml) | Element identity and explicit Australian 2024 rare-earth group mapping | Historical radiotracer evidence remains deferred pending carrier, background and figure checks |
+| [Rhenium](data/records/rhenium.yaml) | Dried brewer's yeast retains Re from synthetic perrhenate feeds | Fraction-specific analysis and source inconsistencies limit mass-balance and redox claims |
+| [Rubidium](data/records/rubidium.yaml) | Conditional light-dependent tracer uptake by prepared phototrophic cells | Buffer, ionophore and no-uptake comparisons limit native-transport and recovery claims |
+| [Thulium](data/records/thulium.yaml) | Prepared Bacillus powders adsorb Tm with a conditional LTA-mutant comparison | Residual mutant adsorption and limited elution reporting prevent exclusive-mechanism or whole-feed-yield claims |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -88,7 +98,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [eighth expansion reviews](research/ingests/round8-20261011-publication.md),
 [ninth expansion reviews](research/ingests/round9-20261011-publication.md),
 [tenth expansion reviews](research/ingests/round10-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round10-frontier-20261011.md), and
+[eleventh expansion reviews](research/ingests/round11-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round11-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

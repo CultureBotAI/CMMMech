@@ -1,0 +1,118 @@
+id: cmmmech:rhenium
+name: Rhenium
+material_kind: element
+description: Rhenium (Re), represented as an element distinct from its ions, compounds, isotopes, host
+  minerals, alloys and commodity streams. The US 2025 designation names the rhenium commodity and does
+  not designate every compound or host material. A laboratory batch study tested inactive brewer's yeast
+  biomass for rhenium association from synthetic perrhenate solutions. This biosorption record does not
+  assert microbial rhenium reduction or isolated-metal recovery.
+identifiers:
+- id: CHEBI:49882
+  label: rhenium atom
+sources:
+- id: chebi_rhenium
+  title: ChEBI:49882 - rhenium atom; elemental symbol Re, net charge zero.
+  url: https://www.ebi.ac.uk/chebi/CHEBI:49882
+  accessed_on: '2026-10-11'
+- id: usgs_2025
+  title: U.S. Geological Survey (2025). Final 2025 List of Critical Minerals. Federal Register 90 FR 50494-50497,
+    November 7, 2025; Rhenium row in the final commodity table. The adjacent Yes/No column describes byproduct/co-product
+    occurrence, not criticality.
+  url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  accessed_on: '2026-10-11'
+- id: primary
+  title: Zinicovscaia, Yushin, Grozdov, Vergel, Nekhoroshkov and Rodlovskaya (2021). Treatment of Rhenium-Containing
+    Effluents Using Environmentally Friendly Sorbent, Saccharomyces cerevisiae Biomass. Materials 14(16):4763.
+    DOI 10.3390/ma14164763; PMID 34443283; PMC8400443. Sections 2.1-2.5, 3.2-3.6, Tables 2-4, Figures
+    2-9 and supplementary Figures S1-S2.
+  url: https://doi.org/10.3390/ma14164763
+  accessed_on: '2026-10-11'
+- id: ncbi_cerevisiae
+  title: NCBI Taxonomy 4932 - Saccharomyces cerevisiae, species. The source identifies brewer's yeast
+    but supplies no strain accession or axenicity characterization.
+  url: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/4932/dataset_report
+  accessed_on: '2026-10-11'
+criticality:
+- jurisdiction: United States of America
+  list_name: U.S. Department of the Interior Final List of Critical Minerals
+  edition: 2025 (published November 7, 2025; 90 FR 50494-50497)
+  classification: critical
+  source_ref: usgs_2025
+mechanisms:
+- id: dried_brewers_yeast_re_biosorption
+  name: Rhenium association with dried brewer's yeast from synthetic perrhenate solutions
+  process: biosorption
+  microbial: true
+  organisms:
+  - id: NCBITaxon:4932
+    label: Saccharomyces cerevisiae
+  description: Prepared inactive brewer's yeast biomass retained rhenium in laboratory batches containing
+    sodium perrhenate, either alone or with copper and/or molybdenum. Uptake depended strongly on acidity
+    and solution composition. Biomass association and FTIR changes support biosorption, while the exact
+    binding chemistry remains unresolved. The treatment used microbial-origin biomass dried at 105 degrees
+    Celsius; microbial true does not imply living-cell metabolism. No Re oxidation-state conversion or
+    purified recovered product was demonstrated.
+  context: 'Zinicovscaia et al., Sections 2.1-2.5: biomass was obtained from brewing residues in Chisinau,
+    Moldova, dried at 105 degrees Celsius and homogenized; no strain accession was provided. Each batch
+    mixed 500 mg dried biomass with 50 mL deionized-water-based synthetic solution and shook at 200 rpm.
+    Standard feeds contained 10 mg/L Re supplied as NaReO4, with 5 mg/L Cu and/or Mo supplied as CuSO4
+    and Na2MoO4 in the mixed systems. Separate studies varied pH 2-6, contact time 5-120 min, initial
+    Re 10-100 mg/L or temperature 20-50 degrees Celsius. The pH series contacted biomass for 1 h and used
+    NaOH/HNO3 adjustment; the article does not explicitly give all fixed conditions for each parameter
+    series. After filtration the biomass was dried again at 105 degrees Celsius and weighed for neutron
+    activation analysis of Re and Mo; Cu was assayed in solution by atomic absorption. No post-contact
+    biomass wash is described. Experiments were duplicated, but biological versus technical replication
+    and the meaning of graph error bars are not specified. Supplementary Figure S1 confirms the analytical
+    split, not a whole-feed mass balance. This study''s feeds were synthetic; brewery origin of the sorbent
+    does not make them industrial wastewater.'
+  evidence:
+  - source_ref: primary
+    supports: support
+    explanation: 'Section 3.2 and Figure 2 report the strongest Re association at pH 2: reported removal
+      efficiencies were 84% for Re alone, 76% with Cu, 80% with Mo and 75% with both. At pH 6 the reported
+      efficiencies were about 5%. These are source-reported batch removal estimates, not independently
+      verified solution-depletion measurements or isolated-product yields; the methods explicitly assay
+      Re in the filtered biomass.'
+  - source_ref: primary
+    supports: partial
+    explanation: Section 2.4 defines removal/capacity using initial and final solution concentrations,
+      while Sections 2.3 and 2.5 describe Re measurement by neutron activation of filtered, dried biomass
+      and reserve direct solution analysis for Cu. No direct Re filtrate assay, no-biomass vessel/filter
+      control, post-contact wash or complete recovery of all Re fractions is documented in the inspected
+      article or two-page supplement. Entrained solution and other non-specific retention are not resolved.
+      FTIR control biomass in Figure 9 is a spectral comparison, not an abiotic batch-removal control.
+  - source_ref: primary
+    supports: partial
+    explanation: Table 2 reports an experimental Re-only capacity of 0.74 mg/g for the kinetic series;
+      Figure 4 distinguishes experimental points from fitted curves. In contrast, Table 3's Langmuir qm
+      values of 13, 20, 33 and 7.7 mg/g for Re, Re-Cu, Re-Mo and Re-Mo-Cu are fitted extrapolations, explicitly
+      higher than measured capacities in Section 3.5. Figure 8 uses a generic concentration axis labelled
+      C, despite equilibrium-model definitions using Ce, leaving the fitting concentration basis insufficiently
+      documented. The Conclusion prints 7.7-33 mg/kg, conflicting with Tables 3-4 and the abstract in
+      mg/g. These source inconsistencies are preserved rather than silently converted or treated as measured
+      maximum capacity.
+  - source_ref: primary
+    supports: partial
+    explanation: Section 3.6 and Figure 9 show FTIR differences between untreated and metal-loaded biomass
+      consistent with altered functional-group environments. This does not uniquely identify Re coordination,
+      prove a single electrostatic or chemisorption mechanism, or determine Re oxidation state. The article
+      alternately invokes physical and chemical sorption from empirical fits; neither the fitted model
+      preference nor the thermodynamic estimates establish molecular causality. Supplementary Figure S2
+      also has an anomalous scale in its three-metal panel, so its thermodynamic claims are not adopted
+      here.
+  - source_ref: primary
+    supports: partial
+    explanation: The main article contains no tested Re desorption cycle, isolated product purity or industrial
+      process demonstration. Literature comparisons with other organisms and real industrial effluents
+      in Table 4 and the Introduction are separate studies. Positive or null Re reduction results from
+      other bacteria would concern different mechanisms and conditions and do not validate a redox interpretation
+      of this dried-yeast assay.
+history_refs:
+- history/records/rhenium/2026-10-11T075235Z-codex-7de104.yaml
+curation_history:
+- timestamp: '2026-10-11T07:53:00Z'
+  curator: codex (GPT-6)
+  action: CREATE
+  summary: Curated dried brewer yeast association with synthetic perrhenate, preserving analytical, control
+    and fitted-capacity limitations and excluding redox/product claims; attached the actual canonical
+    CREATE sidecar.

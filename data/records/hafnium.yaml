@@ -1,0 +1,126 @@
+id: cmmmech:hafnium
+name: Hafnium
+material_kind: element
+description: >-
+  Hafnium (Hf), distinct from its Hf(IV) complexes, hafnium oxide phases,
+  zirconium-bearing minerals and commercial alloy or waste streams. The US
+  2025 critical-mineral list names hafnium individually; the designation is
+  mapped to this element without extending it to every Hf-bearing material.
+  Curated evidence concerns cell-free binding of Hf(IV) clusters by a purified
+  bacterial protein, not microbial ore extraction or industrial metal recovery.
+identifiers:
+  - id: CHEBI:33343
+    label: hafnium atom
+sources:
+  - id: chebi_hafnium
+    title: 'ChEBI:33343 - hafnium atom; Hf, charge 0'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:33343
+    accessed_on: '2026-10-11'
+  - id: usgs_2025
+    title: >-
+      U.S. Geological Survey (2025). Final 2025 List of Critical Minerals.
+      Federal Register 90 FR 50494-50497, November 7, 2025; final commodity
+      table, Hafnium row on page 50496. The Yes column concerns byproduct
+      production, not a separate criticality classification.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: alexeev_2003
+    title: >-
+      Alexeev et al. A novel protein-mineral interface. Nature Structural
+      Biology 10, 297-302 (2003). DOI 10.1038/nsb903; Tables 1-2, Figures
+      1-3 and Methods. The publisher's correction concerns author affiliations.
+    url: https://doi.org/10.1038/nsb903
+    accessed_on: '2026-10-11'
+  - id: pdb_1o7t
+    title: >-
+      RCSB PDB 1O7T, metal nanoclusters bound to ferric binding protein from
+      Neisseria gonorrhoeae; released 2003-02-27, version 2.0 dated 2026-09-16
+      with metalloprotein remediation recorded in the mmCIF revision history.
+    url: https://www.rcsb.org/structure/1O7T
+    accessed_on: '2026-10-11'
+  - id: ncbi_neisseria
+    title: 'NCBI Taxonomy 485 - Neisseria gonorrhoeae; species, not donor strain'
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=485&mode=Info
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States of America
+    list_name: U.S. Department of the Interior Final List of Critical Minerals
+    edition: '2025 (published November 7, 2025; 90 FR 50494-50497)'
+    classification: critical
+    source_ref: usgs_2025
+mechanisms:
+  - id: isolated_fbp_hafnium_cluster_binding
+    name: Cell-free Hf(IV) cluster binding by bacterial ferric ion-binding protein
+    process: other
+    description: >-
+      Purified recombinant Neisseria gonorrhoeae ferric ion-binding protein
+      (nFbp) retained multiple Hf(IV) equivalents after removal of unbound
+      small molecules. Crystallography resolved oxo-Hf clusters attached to
+      Tyr195 and Tyr196 in an open protein cleft. This supports a laboratory
+      protein-cluster interaction; physiological Hf uptake, ore dissolution,
+      Hf(IV) reduction and recovery of elemental hafnium were not demonstrated.
+    context: >-
+      The protein was expressed in Escherichia coli TOP10 carrying
+      pTrc99A/Fbp/Ng and purified by cation exchange chromatography. Holo
+      protein was stripped of iron with citrate to prepare apo protein;
+      this was a purified-protein assay, not live-cell exposure. Table 1's
+      representative Hf preparation used a 50-fold molar excess of
+      [Hf(NTA)2]2-, 100 mM NaCl, 4 mM phosphate and 25 mM bicarbonate at
+      pH 7.4 and 310 K for 3 h. ICP-AES after gel filtration and/or
+      ultrafiltration reported 4.03 +/- 0.10 mol Hf and 1.39 +/- 0.04 mol
+      phosphorus per mol protein. Methods describes averages of three
+      determinations on each sample, not three independent cultures. The
+      crystallization preparation separately states four molar equivalents
+      of Na2[Hf(NTA)2].2H2O under similar buffer, temperature and time
+      conditions, followed by ultrafiltration in 0.1 M KCl; 50 or 100
+      equivalents reportedly gave similar results. Hanging-drop crystals
+      were grown at 290 K with PEG 4000, KCl and imidazole/malate buffer
+      pH 7.7. The paper does not identify the N. gonorrhoeae donor strain;
+      E. coli is the expression host and does not demonstrate whole-cell
+      hafnium handling in this experiment.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:485
+        label: Neisseria gonorrhoeae
+    evidence:
+      - source_ref: alexeev_2003
+        supports: support
+        explanation: >-
+          Table 1 and Methods establish retention of Hf with purified apo
+          nFbp. Figures 1-3 and Table 2 resolve differently ordered three-
+          and five-Hf clusters across nine protein molecules in the crystal,
+          with phosphate present in some clusters. Anomalous diffraction
+          supports assignment of the heavy atoms to Hf. These are molecular
+          clusters, not proof of a bulk HfO2 mineral product.
+      - source_ref: alexeev_2003
+        supports: partial
+        explanation: >-
+          The structural comparison and single-metal holo/apo preparations
+          support binding-site interpretation, but no Hf-specific Tyr-mutant
+          result or matched protein-free cluster-formation outcome is
+          reported. References to loss of iron binding in Tyr mutants do
+          not establish Hf-specific necessity. Some Hf positions are
+          disordered, twinning complicated refinement, and HfO2 geometry
+          supplied refinement restraints. The paper's crystal preparation
+          reports 4.8 Hf per protein whereas its initial feed is stated as
+          four equivalents; these distinct reported quantities are retained
+          without deriving a recovery fraction or resolving the discrepancy.
+      - source_ref: pdb_1o7t
+        supports: context_only
+        explanation: >-
+          The deposited entry links the same DOI, bacterial protein and Hf
+          cluster components; its current revision history records 2026
+          metalloprotein remediation involving nonpolymer descriptions and
+          derived coordination information. It is associated structural
+          evidence from the same experiment, not an independent replication
+          or a new microbial extraction study. No coordinate re-refinement
+          or validation of all atomic assignments was performed in curation.
+curation_history:
+  - timestamp: '2026-10-11T07:57:17Z'
+    curator: Codex (GPT-6; Codex)
+    action: create
+    summary: >-
+      Verified element identity, dated individual US criticality and cell-free bacterial protein-cluster binding; preserved preparation discrepancies and excluded whole-cell extrapolation.
+      Attached canonical CREATE history; independent scientific review is separate.
+history_refs:
+  - history/records/hafnium/2026-10-11T075415Z-codex-3cf591.yaml

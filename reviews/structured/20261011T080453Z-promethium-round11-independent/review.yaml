@@ -1,0 +1,279 @@
+schema_version: 1.0.0
+review_id: 20261011T080453Z-promethium-round11-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of promethium round11 record
+started_at: '2026-10-11T07:57:28Z'
+finished_at: '2026-10-11T08:04:53Z'
+reviewer:
+  identity: Codex /root/cmm11_be_rb_re
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer curated only the separate Be/Rb/Re trio. I did not
+    author or edit these Lu/Tm/Pm records, histories or dossier. After helper path/cache
+    invocation errors were corrected, inspect captured the unchanged frozen bytes
+    before conclusions; primary sources, figures, identity authorities and dated criticality
+    were assessed independently.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: a1d46ce5ca9958ff4cbd8a3b6aaf83bc8710ae0c
+  state: working_tree
+  inputs:
+  - path: data/records/promethium.yaml
+    sha256: 147239c35cf5c9aa8d57342dd2c4014d35eddf92da0625cf5928250ad94a3948
+    role: target
+  - path: history/records/promethium/2026-10-11T075338Z-codex-e70863.yaml
+    sha256: bfb93a46b81acb457b33b2d8d7d9d1a79ba697e3e1bac41d9713af03bfd32c01
+    role: context
+  - path: research/ingests/round11-lu-tm-pm-20261011.json
+    sha256: aa6f8e56272c8b2396c532eddd36bbb96eb4bc8d16bb5ecfb6e71d97fc2bae77
+    role: context
+  - path: research/ingests/round11-lu-tm-pm-20261011.md
+    sha256: 6859b6dbb806348045fae5c2234217c226c494dc7bacbc5ef38296b749630398
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+targets:
+- target_id: cmmmech:promethium
+  path: data/records/promethium.yaml
+  label: Promethium
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/promethium.yaml
+    role: maintained native record
+scope:
+  description: All scientific and provenance fields of this named record; source-specific
+    identity, criticality and accepted experimental evidence. Deferred literature
+    is context only.
+  selection: Assigned named record; no sampling.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:promethium
+checks:
+- check_id: named
+  name: Reviewer named validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/lutetium.yaml data/records/thulium.yaml data/records/promethium.yaml
+  status: passed
+  required: true
+  summary: Reviewer session 21846 terminal exit 0; final named validation checked
+    3 records, 0 failed.
+  scope_note: /private/tmp/cmm-round11-final-independent-lu-tm-pm-validation.log;
+    independently executed after the correction.
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+  target_ids:
+  - cmmmech:promethium
+- check_id: batch
+  name: Parent full native batch gate
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  status: passed
+  required: true
+  summary: Final just check passed 307 tests, three skipped in 61.95 seconds; 71 records
+    and 83 histories valid. Root session 92015 terminal exit 0. Reviewer independently
+    read the complete log and received the terminal exit receipt.
+  scope_note: /private/tmp/cmm-round11-final-check.log
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+  target_ids:
+  - cmmmech:promethium
+- check_id: nonempty
+  name: Parent nonempty corpus validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Final required-record validation passed 71 records, zero failed. Root session
+    93511 terminal exit 0. Reviewer independently read the complete log and received
+    the terminal exit receipt.
+  scope_note: /private/tmp/cmm-round11-final-validation.log
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+  target_ids:
+  - cmmmech:promethium
+- check_id: history
+  name: Parent trusted-base history validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate-history --base a1d46ce5ca9958ff4cbd8a3b6aaf83bc8710ae0c
+  status: passed
+  required: true
+  summary: Final trusted-base history validation passed 83 histories, zero errors.
+    Root session 88115 terminal exit 0. Reviewer independently read the complete log
+    and received the terminal exit receipt.
+  scope_note: /private/tmp/cmm-round11-final-history.log
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+  target_ids:
+  - cmmmech:promethium
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/promethium.yaml
+  locator: Entire frozen native record, linked CREATE history, shared MD/JSON dossier
+    and schema
+  accessed_at: '2026-10-11T08:03:56Z'
+  support: supports
+  summary: Final inspect captured target, histories and corrected shared dossier bytes.
+    The only shared scientific correction narrows Tm LTA causality; Lu and Pm target
+    bytes remain unchanged. Actual actor codex/GPT-6/codex and issue links match the
+    separate inline events.
+  snapshot_sha256: 147239c35cf5c9aa8d57342dd2c4014d35eddf92da0625cf5928250ad94a3948
+- evidence_id: identity
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/33373/
+  locator: Fresh public API chebi_accession, name and chemical_data fields
+  accessed_at: '2026-10-11T08:01:04Z'
+  support: supports
+  summary: Independent fresh HTTP 200 API resolution identifies promethium atom, formula
+    Pm, charge zero. The identifier denotes an elemental root, not the experimental
+    ion, isotope or salt.
+  snapshot_sha256: b369e01aa7896017326e7b1fb5c5dedc940ff264db5c7587f507d22c1bc1adef
+- evidence_id: criticality
+  kind: authority
+  reference: https://www.industry.gov.au/publications/australias-critical-minerals-list-and-strategic-materials-list
+  locator: Revision statement; Table 1 rare-earth row; footnote 17
+  accessed_at: '2026-10-11T08:01:04Z'
+  support: supports
+  summary: Live departmental text states 20 February 2024 update following 16 February
+    ministerial decision. Footnote17 explicitly names promethium. Record correctly
+    maps group membership and makes no individual score or other-jurisdiction claim.
+- evidence_id: validation
+  kind: validation
+  reference: /private/tmp/cmm-round11-final-check.log
+  locator: Complete batch, nonempty, history logs plus reviewer named validation
+  accessed_at: '2026-10-11T08:04:53Z'
+  support: supports
+  summary: Actual logs were read independently; precise commands and terminal results
+    are reported under checks. Canonical history and inline events are distinct provenance.
+  snapshot_sha256: c77a6c80e36a0fc706ea157d0a79dc84cabdd120f3952e93f950832cb3b881be
+- evidence_id: search
+  kind: search
+  reference: Bounded independent web queries and scoped local trees
+  locator: First returned web result sets, 11 October 2026; exact identity/DOI local
+    search
+  accessed_at: '2026-10-11T08:01:04Z'
+  support: context_only
+  summary: The inspected DOI correction/erratum/retraction result sets returned papers
+    and citing literature, no matching notice. This is a bounded observation, not
+    exhaustive absence. Accepted full texts and source figures were checked separately
+    from regex.
+  search_scope: 'web.run without filters or pagination: "10.3390/met10070954" correction
+    retraction erratum; "10.1007/s00253-012-4200-3" correction retraction erratum;
+    "lutetium" "Bacillus" "biosorption" Breuker contrary; "promethium" bacteria sorption
+    Pedersen 1990 1991; exact Tm DOI with erratum; exact Lu DOI with retraction; "lipoteichoic"
+    "Tm" "adsorption" mutant residual. rg --no-ignore --hidden --follow searched ChEBI33382/33380/33373,
+    exact CMM IDs and accepted DOIs in data/research/reviews/history/.claude, including
+    ignored files; matches were this trio and shared dossier. Prior cited raw roots
+    and acquisition manifest were read as scoped provenance, not a machine-wide absence
+    search.'
+- evidence_id: deferred
+  kind: primary_source
+  reference: https://research.chalmers.se/en/publication/95409
+  locator: Author-institution publication identity; shared dossier and acquisition
+    failure receipts
+  accessed_at: '2026-10-11T08:01:04Z'
+  support: context_only
+  summary: The 1991 report is a real primary literature lead. Reviewer also found
+    Anderson et al. 2006 DOI10.1080/01490450500399946 author abstract describing mixed-biofilm147Pm
+    comparisons. Neither source was fully reassessed for curation here; no absence
+    of microbial Pm interaction is asserted.
+assessments:
+- assessment_id: identity-grounding
+  area: identity
+  topic: Element versus experimental form and list scope
+  outcome: supported
+  summary: Verified element identity and explicit dated criticality remain distinct
+    from ions, host minerals, isotope tracers and commodity mixtures.
+  target_ids:
+  - cmmmech:promethium
+  evidence_ids:
+  - record
+  - identity
+  - criticality
+  dimensions:
+  - name: material-form
+    value: Promethium elemental root; CHEBI:33373
+    definition: Neutral atomic identity grounds the element record.
+    evidence_ids:
+    - identity
+  - name: criticality
+    value: Australia; Critical Minerals List, rare-earth group footnote 17; 20 February
+      2024 update
+    definition: Dated source-specific designation.
+    evidence_ids:
+    - criticality
+- assessment_id: mechanism-boundary
+  area: scope
+  topic: Identity/designation-only scope
+  outcome: supported
+  summary: Omitting a mechanism avoids treating incomplete radiotracer evidence or
+    generic rare-earth membership as a proven microbial process.
+  target_ids:
+  - cmmmech:promethium
+  evidence_ids:
+  - record
+  - deferred
+  dimensions:
+  - name: mechanism
+    value: None asserted
+    definition: No organism, preparation, substrate, conditions, control, percentage
+      or deployment claim is accepted.
+    evidence_ids:
+    - record
+  - name: deferred-evidence
+    value: 1990report/1991article lineage;147Pm with Nd carrier and historical isolate
+    definition: Dossier access/calculation/identity limitations remain future curation
+      work, not evidence of no interaction.
+    evidence_ids:
+    - deferred
+    - record
+- assessment_id: provenance
+  area: provenance
+  topic: CREATE provenance and frozen bytes
+  outcome: supported
+  summary: Actual sidecar and separate inline CREATE event are consistent; no review-derived
+    curation is backdated.
+  target_ids:
+  - cmmmech:promethium
+  evidence_ids:
+  - record
+  - validation
+findings: []
+actions: []
+limitations:
+- This review certifies only identity and source-specific group designation; it supplies
+  no microbial recovery evidence.
+- Pm radiotracer reports, carrier/background calculations, historical isolate taxonomy
+  and primary figure review remain deferred; no exhaustive literature-absence claim
+  is made.
+- Bounded search result sets and cited-source inspection do not exhaust all later
+  corrections, supplements or alternative mechanisms. Verdict applies to the exact
+  target hash.
+notes:
+- No record, history or dossier edits by this reviewer. Initial failed inspect invocations
+  used a wrong schema path and then an unwritable default UV cache; corrected invocations
+  succeeded and bound unchanged target bytes. Named validation passed independently.
+- Twenty acquired source hashes matched the curator receipts. Raw papers remain outside
+  Git. The dated list assertions do not assert latest status in every jurisdiction.
+- Shared Tm dossier correction was independently compared before final inspection;
+  it changes no promethium science, source acquisitions or record bytes. This review
+  binds the corrected shared dossier context.
+summary: The neutral-element identity and explicit Australian 2024 rare-earth group-member
+  mapping are supported. The identity/designation-only scope appropriately avoids
+  accepting incompletely inspected Pm radiotracer mechanisms or claiming no microbial
+  interaction exists.

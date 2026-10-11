@@ -1,0 +1,109 @@
+id: cmmmech:lutetium
+name: Lutetium
+material_kind: element
+description: >-
+  Lutetium is the element Lu, represented here by its neutral-atom identity,
+  distinct from dissolved Lu(III), chloride feed, host minerals and mixed rare-earth
+  commodities. The United States designation refers to the named element in the
+  Final 2025 List of Critical Minerals. A laboratory mixed-chloride experiment
+  supports lutetium biosorption associated with washed Bacillus subtilis biomass;
+  it does not establish a purified lutetium product or industrial recovery.
+identifiers:
+- id: CHEBI:33382
+  label: lutetium atom
+sources:
+- id: chebi_lutetium
+  title: 'ChEBI CHEBI:33382, lutetium atom; neutral Lu entity and lanthanoid relation'
+  url: https://www.ebi.ac.uk/chebi/CHEBI:33382
+  accessed_on: '2026-10-11'
+- id: usgs_2025
+  title: 'US Geological Survey (2025). Final 2025 List of Critical Minerals, Federal Register 90, 50494–50497, 7 November; named lutetium entry'
+  url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  accessed_on: '2026-10-11'
+- id: breuker_2020
+  title: 'Breuker, Ritter and Schippers (2020). Biosorption of Rare Earth Elements by Different Microorganisms in Acidic Solutions. Metals 10, 954; Sections 2.1–2.2 and 3.1, Table 1, Figures 1–4 and 7'
+  url: https://doi.org/10.3390/met10070954
+  accessed_on: '2026-10-11'
+- id: breuker_2020_supp
+  title: 'Breuker et al. (2020), supplementary material; Table S1 eight-REE experiment and Figures S1–S5'
+  url: https://mdpi-res.com/d_attachment/metals/metals-10-00954/article_deploy/metals-10-00954-s001.pdf
+  accessed_on: '2026-10-11'
+- id: atcc_7003
+  title: 'ATCC 7003, Bacillus subtilis, strain NRS 730; culture identity rather than experimental performance'
+  url: https://www.atcc.org/products/7003
+  accessed_on: '2026-10-11'
+- id: ncbi_bsubtilis
+  title: 'NCBI Taxonomy 1423, Bacillus subtilis, species scope; does not identify ATCC 7003 uniquely'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1423
+  accessed_on: '2026-10-11'
+criticality:
+- jurisdiction: United States
+  list_name: Final 2025 List of Critical Minerals
+  edition: '2025; Federal Register notice of 7 November 2025'
+  classification: critical
+  source_ref: usgs_2025
+mechanisms:
+- id: bsubtilis_acidic_mixture_biosorption
+  name: Lutetium biosorption by washed Bacillus subtilis biomass in an acidic mixed-REE solution
+  process: biosorption
+  microbial: true
+  organisms:
+  - id: NCBITaxon:1423
+    label: Bacillus subtilis
+  description: >-
+    Washed, non-autoclaved B. subtilis ATCC 7003 biomass lowered the lutetium
+    concentration of a synthetic eight-REE solution relative to simultaneous
+    no-biomass controls. The eight-element arm in supplementary Table S1 reports
+    74% relative lutetium biosorption at both two and four hours. This percentage
+    uses the contemporaneous control concentration as its denominator, not an
+    isolated-product recovery or a fraction proven to be intracellular.
+  context: >-
+    Table 1 identifies ATCC 7003, grown in FP medium at 30 degrees C and 120 rpm
+    for two to four days. Section 2.2 reports harvested biomass washed twice in
+    acidified water, then exposed at room temperature and pH 2.5 (HCl) to chloride
+    salts of La, Ce, Nd, Gd, Dy, Er, Yb and Lu, each initially 15 micromol/L, with
+    5 g dry biomass/L. Samples were centrifuged and filtered through 0.2-micrometre
+    nylon before ICP-MS. Assays and no-biomass controls were duplicated; independent
+    culture derivation is unspecified. Control-relative depletion corrects for
+    losses present without biomass, but cannot distinguish cell-surface adsorption,
+    intracellular uptake and cell-associated precipitation. The authors call the
+    untreated biomass living; viability during the acidic assay was not established
+    here. The separate 4 g/L live-versus-autoclaved comparison is not the Table S1
+    condition. No Lu-specific desorption, purified product or industrial operation
+    is demonstrated by this accepted arm.
+  evidence:
+  - source_ref: breuker_2020_supp
+    supports: support
+    explanation: >-
+      Table S1, experiment 2, Lu column, reports means of two parallel assays of
+      74% at two and four hours. Experiment 1 and Figure S1 contain La, Nd, Dy and
+      Yb, without Lu; their biomass-loading and time patterns are not lutetium
+      measurements. The percentage is calculated by the main paper's Section 2.2
+      formula (control minus sample)/control.
+  - source_ref: breuker_2020
+    supports: support
+    explanation: >-
+      Methods 2.1–2.2, Table 1 and Figure 2a locate the ATCC 7003
+      preparation and the Lu-specific bar for the eight-REE, 5 g/L, two-hour assay.
+      The pattern shows greater fractional depletion for Lu than the lighter
+      members of this mixture, without establishing universal selectivity across
+      different feeds or proving a particular binding ligand.
+  - source_ref: breuker_2020
+    supports: partial
+    explanation: >-
+      Figure 1 shows lower relative Lu biosorption at higher REE loading, while
+      Figure 7 shows lower Lu depletion with autoclaved than untreated biomass
+      under its separate 4 g/L conditions. Autoclaving changes cell integrity and
+      does not by itself prove metabolically driven uptake. Section 3.1 explicitly
+      leaves the dominant acidic-pH binding chemistry unresolved. Figure 4's
+      separate Fe/Zr competition assay has different Lu percentages from Figure 2;
+      its similar paired outcomes do not establish that all competing ions are
+      harmless. The wastewater application concerns gadolinium, not lutetium.
+curation_history:
+- timestamp: '2026-10-11T07:54:11Z'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Added lutetium identity and US 2025 designation with the Lu-specific controlled mixed-solution
+    biosorption assay; preserved live-biomass and quantitative limits.
+history_refs:
+- history/records/lutetium/2026-10-11T075300Z-codex-aa9d5e.yaml

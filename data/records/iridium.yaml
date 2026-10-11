@@ -1,0 +1,145 @@
+id: cmmmech:iridium
+name: Iridium
+material_kind: element
+description: >-
+  Iridium (Ir), distinct from experimental hexachloroiridate(IV), metallic
+  alloys and iridium-bearing ores or waste streams. The US 2025 list names
+  iridium individually; this designation is mapped to the element without
+  extending it to every Ir-bearing material. Curated evidence concerns
+  laboratory adsorption and desorption using lyophilized unicellular algal
+  biomass in synthetic solutions, not reduction to Ir metal or deployment.
+identifiers:
+  - id: CHEBI:49666
+    label: iridium atom
+sources:
+  - id: chebi_iridium
+    title: 'ChEBI:49666 - iridium atom; Ir, charge 0; CHEBI:33360 is an alternative ID'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:49666
+    accessed_on: '2026-10-11'
+  - id: usgs_2025
+    title: >-
+      U.S. Geological Survey (2025). Final 2025 List of Critical Minerals.
+      Federal Register 90 FR 50494-50497, November 7, 2025; final commodity
+      table, Iridium row on page 50496. Its Yes column concerns byproduct
+      production, not a separate criticality classification.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: minoda_2023
+    title: >-
+      Minoda et al. Reversible adsorption of iridium in lyophilized cells
+      of the unicellular red alga Galdieria sulphuraria. RSC Advances 13,
+      14217-14223 (2023). DOI 10.1039/D3RA01249B; Methods 2.1-2.5,
+      Results 3.1-3.2, Table 1 and Figures 1-7; supplementary methods,
+      Figures S1-S4 and Tables S1-S2.
+    url: https://doi.org/10.1039/D3RA01249B
+    accessed_on: '2026-10-11'
+  - id: nies_3638
+    title: >-
+      NIES Microbial Culture Collection, NIES-3638; current name Galdieria
+      javensis, former name Galdieria sulphuraria, other strain number 074W.
+    url: https://mcc.nbrp.jp/strainList.do?strainId=3636&strainNumberEn=NIES-3638
+    accessed_on: '2026-10-11'
+  - id: ncbi_galdieria_javensis
+    title: 'NCBI Taxonomy 3569544 - Galdieria javensis; species identifier'
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3569544&mode=Info
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States of America
+    list_name: U.S. Department of the Interior Final List of Critical Minerals
+    edition: '2025 (published November 7, 2025; 90 FR 50494-50497)'
+    classification: critical
+    source_ref: usgs_2025
+mechanisms:
+  - id: lyophilized_galdieria_iridium_sorption
+    name: Reversible iridium adsorption by lyophilized Galdieria 074W biomass
+    process: biosorption
+    description: >-
+      Lyophilized biomass of strain 074W (NIES-3638) removed dissolved Ir
+      from acidic synthetic solutions relative to no-adsorbent controls,
+      and the loaded Ir could subsequently be eluted. The study calls the
+      organism Galdieria sulphuraria; the collection now identifies the same
+      strain as Galdieria javensis. The observation concerns inactive
+      microbial biomass, not metabolic uptake. Adsorption and eluate
+      production do not establish purified elemental Ir recovery.
+    context: >-
+      Biomass was cultivated in 500 mL modified Allen's medium at pH 2.5
+      and 40 degrees C under continuous illumination, harvested at OD750
+      2 and lyophilized. The sorption assay used 20 mg/mL adsorbent in 1 mL
+      HCl solutions at 25 degrees C for 30 min, with Ir supplied as H2IrCl6.
+      Single-metal assays included 10 mg/L Ir and 0.1-1 M HCl; separate
+      high-loading and mixed-metal assays must not be pooled with them.
+      ICP-MS measured supernatant Ir after dilution; the authors' recovery
+      efficiency is the difference from the no-adsorbent supernatant divided
+      by that control concentration. Figure 1 reports reduced sorption as
+      acidity increases. Activated carbon and an anion-exchange resin were
+      comparator adsorbents, not microbial controls. For Table 1 desorption,
+      biomass loaded for 30 min in 0.2 M HCl with 10 mg/L Ir was collected
+      by centrifugation, washed once with water and incubated in eluent for
+      30 min at 25 degrees C. Desorption efficiency uses the adsorbed pool
+      as denominator, not the starting feed. Main figure captions specify
+      means and SDs from three replicate assays; Table 1 does not separately
+      define its uncertainty or replicate count.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:3569544
+        label: Galdieria javensis
+    evidence:
+      - source_ref: minoda_2023
+        supports: support
+        explanation: >-
+          Methods 2.1-2.3, Figure 1 and Table 1 support adsorption by
+          lyophilized biomass and subsequent chemical desorption. Table 1
+          reports 98 +/- 7% desorption with 6 M HCl, but 5.3 +/- 0.8%
+          with 1 M thiourea in 0.1 M HCl; the latter is low, not literally
+          zero despite the narrative wording. Figure 4 shows declining
+          sorption across reuse cycles. These percentages describe distinct
+          assay stages, not a complete-process product yield.
+      - source_ref: minoda_2023
+        supports: partial
+        explanation: >-
+          Results 3.1.5 and the Figure 4 caption specify 4 M HCl for reuse
+          elution, whereas the abstract says 6 M; the exact repeated-cycle
+          acid strength remains internally inconsistent. Figure 3 includes
+          Cd although the adjacent mixture prose omits it; its Fe and Cd
+          bar heights also differ visibly from quoted text percentages.
+          Both presentations show substantial competing-metal adsorption,
+          so universal Ir selectivity is unsupported. Supplementary Table S1
+          reports an Ir/Fe separation coefficient of 1.3 for this biomass;
+          this is an enrichment ratio under the stated mixed-feed assay,
+          not product purity. A reconciled mixed-feed recovery percentage
+          is not adopted from the conflicting presentations.
+      - source_ref: minoda_2023
+        supports: partial
+        explanation: >-
+          Methods 2.4-2.5 and Figures 5-7 associate contrast changes and
+          Ir-Cl-like spectra with loaded biomass. Imaging used 1000 mg/L
+          Ir, whereas main-text XAFS used 10 mg/L and Figure S3 specifies
+          200 mg/L for its supplemental fit; these conditions must not be
+          pooled. The localization images do not directly establish the
+          low-loading distribution. The authors'
+          outer-sphere and amine-group interpretation remains a proposed
+          binding model; no specific cellular ligand or active transporter
+          is demonstrated. Supplementary Table S2 gives a model-fitted
+          capacity rather than an observed saturation yield; its rounded
+          Langmuir constant and the printed equation do not permit a
+          reliable independent reconstruction, so that capacity is not
+          adopted. No Ir(0) product,
+          ore/waste-feed experiment or industrial operation is demonstrated.
+      - source_ref: nies_3638
+        supports: context_only
+        explanation: >-
+          The strain collection explicitly connects NIES-3638, the 074W
+          alias, current G. javensis identification and former G. sulphuraria
+          name. This preserves the experimental strain while avoiding
+          assignment to every member of the historically broader species.
+          The collection's routine cultivation conditions are not substituted
+          for the experiment's reported cultivation or sorption conditions.
+curation_history:
+  - timestamp: '2026-10-11T07:57:17Z'
+    curator: Codex (GPT-6; Codex)
+    action: create
+    summary: >-
+      Verified element identity, dated individual US criticality, current strain taxonomy and primary biomass-sorption evidence including supplements; preserved conflicting conditions and limits.
+      Attached canonical CREATE history; independent scientific review is separate.
+history_refs:
+  - history/records/iridium/2026-10-11T075703Z-codex-5aade4.yaml
