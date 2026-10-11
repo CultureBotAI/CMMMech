@@ -1,0 +1,78 @@
+id: cmmmech:iron-ore-tailings
+name: Iron-ore tailings
+material_kind: secondary_resource
+description: Iron-ore tailings are processing-derived residual feeds from iron-ore production, distinct
+  from natural iron ore, elemental iron and individual iron minerals. This record curates a mixed goethite/hematite/quartz
+  tailing used as a source of biologically mobilized iron in a laboratory two-stage manganese-leaching
+  experiment. The unnamed facility and tested composition do not define all iron-ore tailings. No criticality
+  designation is inherited from constituents.
+mechanisms:
+- id: anaerobic_iron_mobilization_for_manganese_leaching
+  name: Mixed-culture iron mobilization from tailings for downstream manganese leaching
+  process: bioleaching
+  microbial: true
+  description: An anaerobic mixed-culture iron-tailings stage supplied Fe(II)-bearing liquor to a separate
+    manganese-ore stage. The experiment supports iron mobilization from the mixed tailings in this culture
+    system, consistent with the proposed reductive role of its dissolved iron. It does not quantify
+    a particular organism or mineral phase contribution, or isolate a recovered iron product.
+  context: 'Living mixed metal-reducing cultures originated from a fen in Houghton County, Michigan,
+    and previously adapted cultures inoculated the iron stage. No individual strain or causal community
+    member is resolved here. Fermented Typha latifolia biomass plus 5 g/L sucrose supplied organic nutrient
+    liquid. Methods 2.4 and Figure 5 describe two 250 mL Buechner flasks in series: the drawing labels
+    200 g iron feed and 350 g manganese ore. Methods 2.1 identifies the iron feed as tailings from an
+    unnamed iron-ore production facility, smaller than 0.15 mm; the manganese ore came from an abandoned
+    Keweenaw County mine and was crushed below 3 mm. After seven days of adaptation, 300 mL fresh nutrient
+    per week was supplied in five 60 mL increments. Packed beds, fermentation locks and a submerged
+    manganese-flask outlet were used to maintain anaerobic conditions. Experiments were run in triplicate.
+    A numerical flask incubation temperature is not specified in these methods; Section 3.6 discusses
+    ambient-temperature operation. Reported operating pH was 4.7 +/- 0.7 in the iron stage and 4.4 +/-
+    0.8 in the manganese stage. Overflow Mn was measured by colorimetric periodate oxidation and Fe(II)
+    by 1,10-phenanthroline spectrophotometry; filtration and operational dissolved-fraction details
+    are not supplied. These assays do not resolve the mineral phase contributing each metal.'
+  evidence:
+  - source_ref: borkar2026
+    supports: support
+    explanation: Methods 2.1 and Tables 3–4 identify the tailings and report XRD phase proportions of
+      19.3 wt% goethite, 5.9% hematite and 74.8% quartz. The reported 16 wt% Fe is calculated from XRD,
+      not an independent bulk chemical assay. Figure 5 labels the flask solid as 200 g iron ore, whereas
+      the feed section identifies iron-ore tailings; this terminology is retained without changing processing
+      origin.
+  - source_ref: borkar2026
+    supports: support
+    explanation: Section 3.1 and Figure 7 report cumulative assayed iron amounts over 123 days of 4.71
+      g from the first stage and 0.22 g in the manganese-stage overflow. The text calls their approximately
+      21-fold difference a concentration comparison, but the graph and values have mass units. These
+      cumulative amounts are not a direct phase-specific dissolution rate or a closed iron balance;
+      precipitation after oxidation is the authors' proposed explanation for reduced downstream iron.
+  - source_ref: borkar2026
+    supports: partial
+    explanation: Sections 3.1–3.3 compare the two-stage experiment with single-stage biotic and abiotic
+      experiments from earlier studies, references 7 and 13. They are historical comparisons, not matched
+      contemporaneous two-stage controls. The paper does not provide a sterile two-stage or matched
+      chemical-Fe(II) comparator that isolates microbial necessity or the relative acid and iron contributions.
+      Section 3.6 explicitly allows microbial carryover into the manganese stage and states that dominant
+      organisms and relative activities were not assessed. Thus the second stage is not established
+      as cell-free, and no taxon-specific or mineral-specific causal claim is made.
+  - source_ref: borkar2026
+    supports: partial
+    explanation: Sections 2.5 and 3.4–3.6 also describe a 19 L bench-scale tank system, termed a small
+      pilot by the authors. Table 6 calls its 20 kg iron charge iron ore, without a separate batch assay.
+      No industrial deployment, economic viability or universal tailings treatment performance follows
+      from either apparatus. This and the manganese-ore record describe linked stages of the same study,
+      not independent replications.
+sources:
+- id: borkar2026
+  title: Borkar, Sharma, Rane, Boafo and Eisele (2026). Leaching of Manganese Using Bio-solubilized
+    Iron Reductant to Prevent Manganese Carbonate Formation. Mining, Metallurgy & Exploration 43:2019–2030.
+    DOI 10.1007/s42461-026-01506-2; Methods 2.1–2.6, Tables 1–7, Figures 5–13 and Results 3.1–3.6. Full
+    12-page primary article and figures inspected.
+  url: https://doi.org/10.1007/s42461-026-01506-2
+  accessed_on: '2026-10-11'
+curation_history:
+- timestamp: '2026-10-11T11:42:56.094430+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created resource identity and narrowly scoped primary two-stage bioleaching evidence, preserving
+    controls, analytical basis and scale limitations.
+history_refs:
+- history/records/iron-ore-tailings/2026-10-11T114257Z-codex-1ce479.yaml

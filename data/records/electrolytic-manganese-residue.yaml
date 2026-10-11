@@ -1,0 +1,66 @@
+id: cmmmech:electrolytic-manganese-residue
+name: Electrolytic manganese residue
+material_kind: secondary_resource
+description: Process residue from electrolytic manganese production, including the manganese-electrolysed
+  slag sampled from a disposal dam near Jishou, Hunan, in Cao et al. This heterogeneous secondary resource
+  is distinct from manganese ore, elemental manganese, and manufactured electrolytic manganese metal or
+  dioxide. Its composition is sample dependent; no constituent-element criticality designation is inherited.
+sources:
+- id: cao_2012
+  title: 'Cao, Li, Ouyang, Zheng, Wang, Shen, Yue and Yang (2012). Manganese-electrolysed slag treatment:
+    bioleaching of manganese by Fusarium sp. Environmental Technology 33(11):1307-1312. DOI 10.1080/09593330.2011.624125;
+    Sections 2-3, Figures 1-6. Full publisher PDF inspected from the Hunan University author site.'
+  url: https://doi.org/10.1080/09593330.2011.624125
+  accessed_on: '2026-10-11'
+- id: ncbi_fusarium
+  title: 'NCBI Taxonomy 5506: Fusarium, genus; identifies neither an experimental strain nor a resolved
+    species.'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5506&mode=Info
+  accessed_on: '2026-10-11'
+- id: genbank_fj532369
+  title: GenBank FJ532369.1, Fusarium sp. CJB1 partial 28S ribosomal RNA gene, 538 bp; record dated 17
+    January 2009. Conflicts with the paper's J62 designation and ribosomal-marker wording.
+  url: https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=FJ532369.1&db=nuccore&report=genbank&retmode=text
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: fusarium_residue_mobilization
+  name: Fusarium culture-associated manganese mobilization from electrolytic residue
+  process: bioleaching
+  microbial: true
+  description: An indigenous isolate reported as Fusarium sp. increased solution-phase Mn relative to
+    uninoculated cultures. Organic-acid action remains a hypothesis; this laboratory assay establishes
+    neither an isolated manganese product nor industrial recovery.
+  context: Cao et al. sampled a slag dam 40 km south of Jishou and stored material at 4 degrees C for
+    24 h. Triplicate flask assays used 100 mL sterilized sucrose-containing Czapek medium, nominal 2%
+    v/v inoculum, initial pH 4, 28 degrees C and 150 rpm, monitored through 144 h. Solid loading and feed
+    pretreatment are insufficiently specified. Centrifuged supernatant was analyzed by AAS, which does
+    not independently establish Mn oxidation state. Inoculum mass wording is ambiguous. The genus identifier
+    preserves the source-level identification without resolving the strain.
+  organisms:
+  - id: NCBITaxon:5506
+    label: Fusarium
+  evidence:
+  - source_ref: cao_2012
+    supports: support
+    explanation: Sections 2.4 and 3.2 and Figures 2-4 report 71.6% at 72 h, calculated as medium Mn mass
+      divided by initial slag Mn mass. Uninoculated release is nonzero and lower; later inoculated values
+      decline. No precise control percentage is digitized.
+  - source_ref: cao_2012
+    supports: partial
+    explanation: Figures 2-5 show changing pH, without an abiotic comparator matched through that trajectory.
+      Section 3.2.5 explicitly leaves organic acids unverified; operational BCR fractions in Figure 6
+      are not mineral identifications or full mass balance. Methods describe 26S/J62, while Section 3.1
+      says 16S. Figure 4 labels pH 4, 6, 7 and 8, conflicting with the prose upper bound 9.6.
+  - source_ref: genbank_fj532369
+    supports: partial
+    explanation: The cited accession actually identifies CJB1 and partial 28S, not J62/26S. This supports
+      Fusarium provenance but does not establish that J62 and CJB1 are the same isolate; no strain-level
+      taxon is assigned.
+curation_history:
+- timestamp: '2026-10-11T11:41:43.881318+00:00'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Created the process-defined residue record from a complete primary fungal assay, preserving
+    source taxonomy contradictions, missing loading, abiotic-control limits and laboratory scope.
+history_refs:
+- history/records/electrolytic-manganese-residue/2026-10-11T114147Z-codex-794cf9.yaml

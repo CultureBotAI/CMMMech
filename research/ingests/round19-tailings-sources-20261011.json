@@ -1,0 +1,334 @@
+{
+  "timestamp": "2026-10-11T11:43:49.610867+00:00",
+  "actor": {
+    "name": "codex",
+    "model": "GPT-6",
+    "tool": "codex",
+    "agent": "/root/round19_tailings"
+  },
+  "trusted_base": "c4b2a6c21a2ff54d1fdd3965ac98a6d90effba7a",
+  "branch": "curate/cmm-expansion-round19-20261011",
+  "records": [
+    {
+      "id": "cmmmech:copper-flotation-tailings",
+      "path": "data/records/copper-flotation-tailings.yaml",
+      "sha256": "f0b1e1e1ef7608409d07381a29588802f7712793541e6545b811eaa2accefd7a",
+      "history": "history/records/copper-flotation-tailings/2026-10-11T114200Z-codex-932301.yaml"
+    },
+    {
+      "id": "cmmmech:chrysotile-asbestos-tailings",
+      "path": "data/records/chrysotile-asbestos-tailings.yaml",
+      "sha256": "00984956be6f2c83bd5cbe22e7e2fac227e874ed78a5063468d0c200cc5f101d",
+      "history": "history/records/chrysotile-asbestos-tailings/2026-10-11T114217Z-codex-da6cf3.yaml"
+    }
+  ],
+  "discovery_report": "research/sources/round19-tailings-sources-20261011/20261011T114349Z.md",
+  "searches": [
+    {
+      "provider": "web search",
+      "query": "\"10.3389/fbioe.2024.1393334\"",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; unpaginated; no date filter"
+    },
+    {
+      "provider": "web search",
+      "query": "\"10.1021/es900986n\" full text",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; unpaginated; no date filter"
+    },
+    {
+      "provider": "web search",
+      "query": "\"1393334\" correction retraction erratum",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; unpaginated; no date filter"
+    },
+    {
+      "provider": "web search",
+      "query": "\"Bioleaching of Ultramafic Tailings\" pdf Power Dipple Southam",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; unpaginated; no date filter"
+    },
+    {
+      "provider": "web search",
+      "query": "\"copper tailings\" Maureira 2024 calcite control criticism",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; unpaginated; no date filter"
+    },
+    {
+      "provider": "web search",
+      "query": "\"10.3389/fbioe.2024.1393334\" correction retraction erratum",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; unpaginated; no date filter"
+    },
+    {
+      "provider": "web search",
+      "query": "\"10.1021/es900986n\" correction retraction erratum",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; unpaginated; no date filter"
+    },
+    {
+      "provider": "web search",
+      "query": "\"es900986n\" figshare supporting",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; unpaginated; no date filter"
+    },
+    {
+      "provider": "web search",
+      "query": "\"Bioleaching of Ultramafic Tailings\" \"Supporting\"",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; unpaginated; no date filter"
+    },
+    {
+      "provider": "web search",
+      "query": "\"Maureira\" \"T130-13\" \"control\"",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; unpaginated; no date filter"
+    },
+    {
+      "provider": "web search",
+      "query": "site.acs.figshare.com \"Bioleaching of Ultramafic Tailings\"",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; unpaginated; no date filter"
+    },
+    {
+      "provider": "web search",
+      "query": "\"es900986n_si_001.pdf\"",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; unpaginated; no date filter"
+    },
+    {
+      "provider": "web search",
+      "query": "site.yukon.ca Clinton Creek asbestos tailings mill",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; unpaginated; no date filter"
+    },
+    {
+      "provider": "web search",
+      "query": "\"MICP mediated\" \"tailings\" \"abiotic\"",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; unpaginated; no date filter"
+    },
+    {
+      "provider": "web search",
+      "query": "\"Bioleaching of Ultramafic Tailings\" \"abiotic\" control",
+      "date": "2026-10-11",
+      "coverage": "First returned result set; unpaginated; no date filter"
+    }
+  ],
+  "novelty_boundary": {
+    "utc": "2026-10-11T11:40:57.775362+00:00",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-n",
+      "-i",
+      "1393334|es900986n|copper.?flotation.?tailings|chrysotile.?asbestos.?tailings|cmmmech:copper-tailings|cmmmech:asbestos-tailings",
+      "data/records",
+      "research",
+      "reviews",
+      "history",
+      "/private/tmp/cmm-round17-enstatite-raw",
+      "/private/tmp/cmm-round18-dunite-raw",
+      "/private/tmp/cmm-round19-tailings-raw"
+    ],
+    "exit_code": 0,
+    "errors": "",
+    "matched_lines": 66,
+    "record_matches": [],
+    "scope": "Named paths only; includes ignored/hidden, follows links; PDFs inspected separately, not text-search completeness."
+  },
+  "acquisitions": [
+    {
+      "name": "maureira2024.html",
+      "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2024.1393334/full",
+      "access_utc": "2026-10-11T11:37:20.048280+00:00",
+      "status": 200,
+      "final_url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2024.1393334/full",
+      "content_type": "text/html;charset=utf-8",
+      "bytes": 1359844,
+      "sha256": "c7668ebf32d03efd9cb3d8bab78bc3fd1cedb21d665226cd4b461b8daa2351d4"
+    },
+    {
+      "name": "maureira2024.pdf",
+      "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2024.1393334/pdf",
+      "access_utc": "2026-10-11T11:37:21.940982+00:00",
+      "status": 200,
+      "final_url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2024.1393334/pdf",
+      "content_type": "application/pdf",
+      "bytes": 3149606,
+      "sha256": "509485ad184d3df35d2d68fe24b304a3bf131b6eb3a1073cce6259d8813b7f01"
+    },
+    {
+      "name": "epmc-search.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.3389/fbioe.2024.1393334&format=json",
+      "access_utc": "2026-10-11T11:37:23.600265+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.3389/fbioe.2024.1393334&format=json",
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 1095,
+      "sha256": "00eb9064ef30518da5edb91495b57c4cfe1f479b3555f64c93ba4018e89ddede"
+    },
+    {
+      "name": "cenizas-taltal.html",
+      "url": "https://www.cenizas.cl/faenas_oficinas/faena-taltal/",
+      "access_utc": "2026-10-11T11:37:24.231800+00:00",
+      "status": 200,
+      "final_url": "https://www.cenizas.cl/faenas_oficinas/faena-taltal/",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 206838,
+      "sha256": "f05201bef0735ef3923d046a24e3750deee7c8bb3ffb03cf6b747f47b58327fe"
+    },
+    {
+      "name": "power2010.pdf",
+      "url": "https://powergeolab.com/s/Power-et-al-2010-Environ-Sci-Technol-f4jx.pdf",
+      "access_utc": "2026-10-11T11:38:40.334963+00:00",
+      "status": 200,
+      "final_url": "https://static1.squarespace.com/static/5806b872ff7c50adea9acb25/t/65e4e97e613fe52c88b3f297/1709500801600/Power+et+al%2C+2010+-+Environ+Sci+Technol.pdf",
+      "content_type": "application/pdf",
+      "bytes": 2270103,
+      "sha256": "3c225a1d23387f6bc7c0fd17f41b7d1e5e5c255993a339498fd42d174d7ce384"
+    },
+    {
+      "name": "power2010-si.pdf",
+      "url": "https://pubs.acs.org/doi/suppl/10.1021/es900986n/suppl_file/es900986n_si_001.pdf",
+      "access_utc": "2026-10-11T11:38:41.632156+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "maureira2024.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11208896/fullTextXML",
+      "access_utc": "2026-10-11T11:38:41.663889+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11208896/fullTextXML",
+      "content_type": "application/xml",
+      "bytes": 200058,
+      "sha256": "42be5deb497f81734e723f16a1ccb72519b0327fa792b86c9fc6f9761f4b01ff"
+    },
+    {
+      "name": "power-publications.html",
+      "url": "https://powergeolab.com/publications",
+      "access_utc": "2026-10-11T11:38:43.086720+00:00",
+      "status": 200,
+      "final_url": "https://powergeolab.com/publications",
+      "content_type": "text/html;charset=utf-8",
+      "bytes": 93064,
+      "sha256": "8bd950086c2678606752abd949fa2b9e34954ea50f304bab499d647d658d3b83"
+    },
+    {
+      "name": "power-figshare.json",
+      "url": "https://api.figshare.com/v2/articles?resource_doi=10.1021/es900986n",
+      "access_utc": "2026-10-11T11:39:35.844741+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 1149,
+      "sha256": "9bad782b4074951946d3b8a1d5fe832c061530aa2425208bb384851d9a884eee"
+    },
+    {
+      "name": "power-si-metadata.json",
+      "url": "https://api.figshare.com/v2/articles/2802688",
+      "access_utc": "2026-10-11T11:39:55.536269+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 5957,
+      "sha256": "f10de90a0f0118e5eb7afc4352e662429a80c623f11594cf51e0ff966ca3c43c"
+    },
+    {
+      "name": "es900986n_si_001.pdf",
+      "url": "https://ndownloader.figshare.com/files/4497097",
+      "access_utc": "2026-10-11T11:39:56.304435+00:00",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 4237086,
+      "sha256": "185aeb03963860725642337b14b6aeb521711713cae5f7f9138369feb258ba11"
+    },
+    {
+      "name": "clinton-overview-2009.pdf",
+      "url": "https://emrlibrary.gov.yk.ca/aam/former-clinton-creek-asbestos-mine-overview-report-2009.pdf",
+      "access_utc": "2026-10-11T11:40:41.824849+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "web_only_inspection": [
+    {
+      "url": "https://emrlibrary.gov.yk.ca/aam/former-clinton-creek-asbestos-mine-overview-report-2009.pdf",
+      "date": "2026-10-11",
+      "pages": 102,
+      "inspected": "Cover, revision log, Sections2.2/3.1/3.3 printed3,5-7",
+      "direct_download_status": 403,
+      "local_original_sha256": null
+    }
+  ],
+  "source_artifacts": {
+    "maureira2024": {
+      "pdf_pages": 17,
+      "pmcid": "PMC11208896",
+      "supplementary_material_nodes": 0,
+      "visual_checks": [
+        "PDFpages8-13,Figures2-8,Table5"
+      ],
+      "text_checks": [
+        "Fullmainmethods/results/discussion",
+        "Tables1-5",
+        "OperatorLasLucesandOxidossections"
+      ]
+    },
+    "power2010": {
+      "pdf_pages": 7,
+      "si_pages": 19,
+      "visual_checks": [
+        "MainFigures1-3",
+        "SITablesS3-S4",
+        "SIFiguresS1-S7"
+      ],
+      "text_checks": [
+        "AllmainandSItext",
+        "SITablesS1-S5"
+      ],
+      "known_source_delta": "Prior main access gap closed via author page and direct PDF; SI403 resolved by matching ACS Figshare article2802688/file4497097."
+    }
+  },
+  "licenses": {
+    "maureira": "CC BY",
+    "cenizas": "Rights reserved",
+    "power_main": "ACS copyright; public author copy, no open redistribution license asserted",
+    "power_si": "CC BY-NC4.0 from ACS Figshare metadata",
+    "yukon": "Not resolved; public consultant report with qualifications"
+  },
+  "validation": {
+    "baseline_reported_by_root": {
+      "exit_code": 0,
+      "passed": 308,
+      "skipped": 3,
+      "seconds": 97.97,
+      "records": 138,
+      "histories": 154
+    },
+    "individual": {
+      "command": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate data/records/copper-flotation-tailings.yaml data/records/chrysotile-asbestos-tailings.yaml",
+      "exit_code": 0,
+      "output": "Checked 2 record(s); 0 failed."
+    },
+    "independent_reviews": "Pending root-coordinated cross-review",
+    "batch_gates": "Pending root-coordinated terminal receipts"
+  },
+  "further_leads": [
+    {
+      "url": "https://www.mdpi.com/2075-4701/16/2/178",
+      "title": "Assessing the Potential of Heterotrophic Bioleaching to Extract Metals from Mafic Tailings",
+      "state": "Primary search-result lead only; complete assay and processing origin not inspected"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S030147972600201X",
+      "title": "Microbially induced calcite precipitation in As- and Sb- containing low sulfide tailings to mitigate neutral contaminated mine drainage: A comparison of bioaugmentation and biostimulation approaches",
+      "state": "Primary search-result lead only; DOI and complete assay not resolved"
+    },
+    {
+      "doi": "10.1021/es900986n",
+      "candidate": "Kam Kotia Cu-Zn tailings cofeed",
+      "state": "FullmainandSIseen; processidentity/overlapneedsassessmentbeforenewroot"
+    }
+  ],
+  "global_exhaustion": false
+}

@@ -1,0 +1,201 @@
+{
+  "timestamp": "2026-10-11T11:43:35.790316+00:00",
+  "researcher": {
+    "model": "GPT-6",
+    "tool": "codex"
+  },
+  "base": "c4b2a6c21a2ff54d1fdd3965ac98a6d90effba7a",
+  "branch": "curate/cmm-expansion-round19-20261011",
+  "source_report": "research/sources/round19-iron-manganese-sources-20261011/20261011T114335Z.md",
+  "records": {
+    "iron-ore-tailings": {
+      "path": "data/records/iron-ore-tailings.yaml",
+      "sha256": "b7aa507c769c9e55d8ab8cdb13a675d3d1b3ee8e0d36372a70212445192ef08b",
+      "history_refs": [
+        "history/records/iron-ore-tailings/2026-10-11T114257Z-codex-1ce479.yaml"
+      ],
+      "individual_validation": {
+        "exit_code": 0,
+        "stdout": "Checked 1 record(s); 0 failed."
+      }
+    },
+    "manganese-ore": {
+      "path": "data/records/manganese-ore.yaml",
+      "sha256": "750914286da11611358a379f693fad3a3d670bdba29b7e310806e852183f97db",
+      "history_refs": [
+        "history/records/manganese-ore/2026-10-11T114302Z-codex-4e6a73.yaml",
+        "history/records/manganese-ore/2026-10-11T114921Z-codex-7272e2.yaml"
+      ],
+      "individual_validation": {
+        "exit_code": 0,
+        "stdout": "Checked 1 record(s); 0 failed."
+      }
+    }
+  },
+  "dedup": {
+    "at": "2026-10-11T11:42:56.093011+00:00",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-n",
+      "-i",
+      "01506|manganese.ore|iron.ore.tailings",
+      "data/records",
+      "research",
+      "reviews",
+      "history",
+      "/private/tmp/cmm-round19-iron-manganese-raw",
+      "/private/tmp/cmm-round18-products-raw"
+    ],
+    "exit_code": 0,
+    "hidden_ignored_followed": true,
+    "output_sha256": "5b3ec40ec40fa689b8824ebf7b1d90a25dc19a9945741d144341cdae4a78edd5",
+    "scope_limit": "Named paths only; includes retained raw text, not uninspected binary contents; no global absence claim."
+  },
+  "acquisition": [
+    {
+      "path": "/private/tmp/cmm-round19-iron-manganese-raw/borkar2026.pdf",
+      "url": "https://link.springer.com/content/pdf/10.1007/s42461-026-01506-2.pdf",
+      "started_at": "2026-10-11T11:37:31.043313+00:00",
+      "final_url": "https://link.springer.com/content/pdf/10.1007/s42461-026-01506-2.pdf?error=cookies_not_supported&code=40f28080-b73b-4818-9c02-69beeaa43329",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 3095473,
+      "sha256": "af3826b3ffc8c712ac8b7caa9185e61c45eb4d5bcac328a2a1c2ad530917f00d",
+      "is_pdf": true,
+      "finished_at": "2026-10-11T11:37:33.900241+00:00",
+      "reuse": "2026 primary CC BY4.0;2025primary publisher rights reserved;Crossref metadata. Raw outside Git; no bulk content redistributed."
+    },
+    {
+      "path": "/private/tmp/cmm-round19-iron-manganese-raw/borkar2026.html",
+      "url": "https://link.springer.com/article/10.1007/s42461-026-01506-2",
+      "started_at": "2026-10-11T11:37:31.044422+00:00",
+      "final_url": "https://link.springer.com/article/10.1007/s42461-026-01506-2?error=cookies_not_supported&code=cb9c7cd6-4157-46fb-86da-1c3fc131f2cc",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 410471,
+      "sha256": "b7bd0eb9926c899ee9530ee01ccfcb2f82947dd3ffe2d0c4c0bfe92fdfcd4531",
+      "is_pdf": false,
+      "finished_at": "2026-10-11T11:37:32.985988+00:00",
+      "reuse": "2026 primary CC BY4.0;2025primary publisher rights reserved;Crossref metadata. Raw outside Git; no bulk content redistributed."
+    },
+    {
+      "path": "/private/tmp/cmm-round19-iron-manganese-raw/borkar2025-iron.pdf",
+      "url": "https://link.springer.com/content/pdf/10.1007/s42461-025-01403-0.pdf",
+      "started_at": "2026-10-11T11:37:31.044886+00:00",
+      "final_url": "https://link.springer.com/article/10.1007/s42461-025-01403-0?error=cookies_not_supported&code=dac91ffb-3d7f-45cd-aa6c-e0aafdc4b82e",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 326137,
+      "sha256": "681693e0068f04441c7a28b91a757cccc9b86ed56554d979768ab3e40ea1e68a",
+      "is_pdf": false,
+      "finished_at": "2026-10-11T11:37:34.154150+00:00",
+      "reuse": "2026 primary CC BY4.0;2025primary publisher rights reserved;Crossref metadata. Raw outside Git; no bulk content redistributed."
+    },
+    {
+      "path": "/private/tmp/cmm-round19-iron-manganese-raw/borkar2025-iron.html",
+      "url": "https://link.springer.com/article/10.1007/s42461-025-01403-0",
+      "started_at": "2026-10-11T11:37:31.045217+00:00",
+      "final_url": "https://link.springer.com/article/10.1007/s42461-025-01403-0?error=cookies_not_supported&code=7f0cffe6-7048-4ce1-95a5-e303c32b3843",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 326137,
+      "sha256": "3f4286b2f62dbef01877816737d52cbe8331de42e8a57ae896d44eb6a9fd6826",
+      "is_pdf": false,
+      "finished_at": "2026-10-11T11:37:33.075579+00:00",
+      "reuse": "2026 primary CC BY4.0;2025primary publisher rights reserved;Crossref metadata. Raw outside Git; no bulk content redistributed."
+    },
+    {
+      "path": "/private/tmp/cmm-round19-iron-manganese-raw/borkar2026-crossref.json",
+      "url": "https://api.crossref.org/works/10.1007/s42461-026-01506-2",
+      "started_at": "2026-10-11T11:37:32.986026+00:00",
+      "final_url": "https://api.crossref.org/works/10.1007/s42461-026-01506-2",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 20579,
+      "sha256": "b53876ed0fd7e43dd70f58152de10aa5f222e22509562dc579827977d1a1000f",
+      "is_pdf": false,
+      "finished_at": "2026-10-11T11:37:33.362015+00:00",
+      "reuse": "2026 primary CC BY4.0;2025primary publisher rights reserved;Crossref metadata. Raw outside Git; no bulk content redistributed."
+    },
+    {
+      "path": "/private/tmp/cmm-round19-iron-manganese-raw/borkar2025-iron-crossref.json",
+      "url": "https://api.crossref.org/works/10.1007/s42461-025-01403-0",
+      "started_at": "2026-10-11T11:37:33.075616+00:00",
+      "final_url": "https://api.crossref.org/works/10.1007/s42461-025-01403-0",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 15338,
+      "sha256": "2843551c4a02d3f20b62613a8b41cd273297cc1f7fa1ea580f21f1ef2d42f93f",
+      "is_pdf": false,
+      "finished_at": "2026-10-11T11:37:33.444842+00:00",
+      "reuse": "2026 primary CC BY4.0;2025primary publisher rights reserved;Crossref metadata. Raw outside Git; no bulk content redistributed."
+    }
+  ],
+  "queries": [
+    {
+      "query": "\"10.1007/s42461-026-01506-2\" correction retraction",
+      "utc_date": "2026-10-11",
+      "coverage": "First returned web set;no pagination/date filter;exact timestamps not retained"
+    },
+    {
+      "query": "\"iron ore tailings\" \"manganese\" \"Borkar\"",
+      "utc_date": "2026-10-11",
+      "coverage": "First returned web set;no pagination/date filter;exact timestamps not retained"
+    },
+    {
+      "query": "\"bio-solubilized iron\" manganese carbonate criticism",
+      "utc_date": "2026-10-11",
+      "coverage": "First returned web set;no pagination/date filter;exact timestamps not retained"
+    }
+  ],
+  "frontier": [
+    {
+      "doi": "10.1007/s42461-025-01403-0",
+      "title": "Reductive Bioleaching of Goethite-Rich and Hematite-Rich Iron Tailings by Anaerobic Organisms",
+      "decision": "Existing iron-ore-tailings evidence extension; possible mineral claims only after phase-specific review",
+      "access": "Publisher PDF request returned HTML with access offer, not a PDF; metadata/abstract/references inspected, full methods not accepted",
+      "needed": "Legitimate full main and all relevant figures/controls; resolve whether tested tailings are the same batch as2026"
+    },
+    {
+      "doi": "10.1016/j.hydromet.2024.106430",
+      "title": "Pilot plant study on manganese bioleaching using biomass decomposition products as a nutrient source and electrolysis for oxide precipitation",
+      "decision": "Prioritize original primary controls/community and final product characterization",
+      "access": "Cited by2026; not acquired/read in this lane",
+      "needed": "Full main/SI,16S community resolution and electrode/product speciation; no EMD mechanism inherited"
+    },
+    {
+      "doi": "10.1016/j.mineng.2021.107152",
+      "title": "Anaerobic reductive bioleaching of manganese ores",
+      "decision": "Retrieve original historical comparator for manganese-ore evidence extension",
+      "access": "Cited by2026, not independently verified full main",
+      "needed": "Full controls, solid/liquid conditions and original carbonate assignment"
+    },
+    {
+      "doi": "10.1016/j.hydromet.2016.10.009",
+      "title": "Bioleaching of Indian ocean nodules with in situ iron precipitation by anaerobic Mn reducing consortia",
+      "decision": "Candidate natural polymetallic-nodule primary resource, not accepted",
+      "access": "Reference-list lead only",
+      "needed": "Verify DOI/title and full main/SI, feed origin, controls and outcome"
+    },
+    {
+      "doi": "10.1080/24749508.2017.1332847",
+      "title": "Bioleaching of manganese from mining waste residues using acinetobacter sp.",
+      "decision": "Candidate mining-waste resource distinct from electrolysis residue; identity requires verification",
+      "access": "Reference-list lead only",
+      "needed": "Verify feed process identity, full primary methods and strain/control evidence"
+    }
+  ],
+  "independent_review": "pending at authoring;final manifest provides exact-byte links",
+  "scope_limit": "Bounded feed/source investigation;no global exhaustion claim",
+  "correction": {
+    "at": "2026-10-11T11:49:25.537955+00:00",
+    "issue": 71,
+    "prior_review": "reviews/structured/20261011T114805Z-manganese-ore-round19-independent/review.yaml",
+    "prior_record_sha256": "1a50ff92f40534128825b5b51889107d69799df261bb04996ee44e4c56ce3e11",
+    "finding_key": "round19-manganese-figure11-carbonate",
+    "change": "Preserve text-figure contradiction; detection status unresolved; final successor review pending."
+  }
+}

@@ -148,6 +148,13 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Spent hydrodesulfurization catalyst](data/records/spent-hydrodesulfurization-catalyst.yaml) | Acidophile leaching of raw spent diesel-HDS catalyst | Chemical controls limit microbial advantage; dissolved metals are not isolated products |
 | [Electrolytic manganese metal](data/records/electrolytic-manganese-metal.yaml) | Manufactured commodity identity and producer process descriptions | Conflicting grade specifications; no universal battery qualification or microbial production claim |
 | [Electrolytic manganese dioxide](data/records/electrolytic-manganese-dioxide.yaml) | Manufactured commodity identity and application-specific product context | Distinct from natural mineral species; no inherited criticality or microbial production claim |
+| [Manganese ore](data/records/manganese-ore.yaml) | Two-stage leaching using biologically mobilized iron | Mixed natural ore; historical controls and post-roast product characterization limit claims |
+| [Iron-ore tailings](data/records/iron-ore-tailings.yaml) | Anaerobic mixed-culture iron mobilization | Same linked experiment as manganese ore; no phase-specific flux or isolated iron recovery |
+| [Electrolytic manganese residue](data/records/electrolytic-manganese-residue.yaml) | Fungal culture-associated manganese mobilization | Accession/strain contradiction and missing solid loading retained |
+| [Automotive wastewater-treatment sludge](data/records/automotive-wastewater-treatment-sludge.yaml) | Two-stage biogenic-acid leaching | Loading and pH dependence; no isolated product or matched chemical-acid control |
+| [Spent vegetable-oil hydrogenation catalyst](data/records/spent-vegetable-oil-hydrogenation-catalyst.yaml) | Process-defined spent-catalyst identity | Identity only; full experimental methods remain inaccessible |
+| [Copper-flotation tailings](data/records/copper-flotation-tailings.yaml) | Indigenous-bacterial treatment for physical stabilization | Control activity and source inconsistencies retained; no metal recovery claimed |
+| [Chrysotile-asbestos tailings](data/records/chrysotile-asbestos-tailings.yaml) | Acidophile-assisted magnesium leaching from mill tailings | Existing carbonates and control limits; no measured net carbon storage or asbestos detoxification |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -173,7 +180,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [sixteenth expansion reviews](research/ingests/round16-20261011-publication.md),
 [seventeenth expansion reviews](research/ingests/round17-20261011-publication.md),
 [eighteenth expansion reviews](research/ingests/round18-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round18-frontier-20261011.md), and
+[nineteenth expansion reviews](research/ingests/round19-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round19-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

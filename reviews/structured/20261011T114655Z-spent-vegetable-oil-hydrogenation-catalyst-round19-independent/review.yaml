@@ -1,0 +1,270 @@
+schema_version: 1.0.0
+review_id: 20261011T114655Z-spent-vegetable-oil-hydrogenation-catalyst-round19-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Spent vegetable-oil hydrogenation catalyst
+started_at: '2026-10-11T11:42:58.074529Z'
+finished_at: '2026-10-11T11:46:55Z'
+reviewer:
+  identity: Codex /root/round19_manganese_residue
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Separate agent /root/round19_hydrogenation_catalyst authored
+    this record and history. Reviewer independently inspected primary source text/figures
+    and official identifiers after canonical target inspection. Shared worktree/raw
+    artifacts and curator dossier access are disclosed; reviewer made no scientific-record
+    edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The accepted resource identity and deliberately bounded evidence claims are
+  supported. No actionable defect was found in the inspected bytes; source-access
+  and experimental limitations remain explicit.
+source:
+  git_revision: c4b2a6c21a2ff54d1fdd3965ac98a6d90effba7a
+  state: working_tree
+  inputs:
+  - path: data/records/spent-vegetable-oil-hydrogenation-catalyst.yaml
+    sha256: 4805ee17fbc683dc7cd6cd1a314493ab3a770b20987c4853dbb330eb2b61cbe4
+    role: target
+  - path: history/records/spent-vegetable-oil-hydrogenation-catalyst/2026-10-11T114047Z-codex-36ce3e.yaml
+    sha256: e48468492276cb735d579ee56cff412128d7ff3c98198ad634b2098cc96f844a
+    role: context
+  - path: research/ingests/round19-hydrogenation-catalyst-sources-20261011.json
+    sha256: 6c976afa6be2bc42054b11a8c92dc223edc27731025d578c825b67167b2aa810
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: All fields and linked CREATE history of one frozen maintained record,
+    assessed against actual primary/authority evidence.
+  selection: One of two assigned catalyst/sludge lane records; a separate per-record
+    observation is saved.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:spent-vegetable-oil-hydrogenation-catalyst
+  exclusions:
+  - target: Other corpus records and unavailable complete Bosio experiments
+    reason: No scientific verdict for other records or uninspected measurements.
+targets:
+- target_id: cmmmech:spent-vegetable-oil-hydrogenation-catalyst
+  path: data/records/spent-vegetable-oil-hydrogenation-catalyst.yaml
+  label: Spent vegetable-oil hydrogenation catalyst
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/spent-vegetable-oil-hydrogenation-catalyst.yaml
+    role: maintained_input
+checks:
+- check_id: named
+  name: Independent named-record validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/spent-vegetable-oil-hydrogenation-catalyst.yaml
+    data/records/automotive-wastewater-treatment-sludge.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Reviewer executed and observed terminal exit0: Checked 2 record(s); 0
+    failed.'
+  target_ids:
+  - cmmmech:spent-vegetable-oil-hydrogenation-catalyst
+- check_id: batch
+  name: Native full checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed gates; reviewer independently read the terminal receipt
+    and complete logs. /private/tmp/cmm-round19-final-batch.log: uv run --locked --extra
+    dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 122.38s (0:02:02)
+
+    Checked 145 record(s); 0 failed.
+
+    Checked 161 history record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:spent-vegetable-oil-hydrogenation-catalyst
+- check_id: require
+  name: Required corpus
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed gates; reviewer independently read the terminal receipt
+    and complete logs. /private/tmp/cmm-round19-final-require.log: Checked 145 record(s);
+    0 failed.
+
+    '
+  target_ids:
+  - cmmmech:spent-vegetable-oil-hydrogenation-catalyst
+- check_id: history
+  name: Trusted-base history
+  command: uv run --locked cmmmech validate-history --base c4b2a6c21a2ff54d1fdd3965ac98a6d90effba7a
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed gates; reviewer independently read the terminal receipt
+    and complete logs. /private/tmp/cmm-round19-final-history.log: Checked 161 history
+    record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:spent-vegetable-oil-hydrogenation-catalyst
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/spent-vegetable-oil-hydrogenation-catalyst.yaml
+  locator: Complete frozen YAML and linked CREATE sidecar
+  accessed_at: '2026-10-11T11:46:55Z'
+  support: supports
+  summary: Exact reviewed scientific bytes and separate inline/canonical CREATE events.
+    No inherited criticality designation.
+  snapshot_sha256: 4805ee17fbc683dc7cd6cd1a314493ab3a770b20987c4853dbb330eb2b61cbe4
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round19-catalyst-review-receipt.json
+  locator: Three exact correction/abiotic queries and dedup command/result
+  accessed_at: '2026-10-11T11:46:55Z'
+  support: context_only
+  summary: No affecting correction notice surfaced in the first result sets. Local
+    adjacent resource identities were checked without treating shared constituents
+    as duplicates.
+  search_scope: Hidden and ignored files with relevant symlinks followed across data,
+    research, reviews, history and named round19 catalyst raw directory. Binary sources
+    independently read. Bounded search, no machine-wide or exhaustive-literature claim.
+  snapshot_sha256: 6ea1820c08f90c455609f4ee9c154740c45a314b2874f1807e50e6c4fef8f3c8
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round19-gate-receipts.json
+  locator: All three terminal command results and full associated logs
+  accessed_at: '2026-10-11T11:46:55Z'
+  support: supports
+  summary: Native checks, required-records and trusted-base history validation all
+    passed; exact target and history hashes remained unchanged.
+  snapshot_sha256: 73640a84a624b3375df302586a36481457dbdc3e045f50101b67fe811860b6db
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.jhazmat.2007.10.095
+  locator: Live publisher introduction and Spent catalyst section excerpt, resolved
+    PII S0304389407015804
+  accessed_at: '2026-10-11T11:46:55Z'
+  support: supports
+  summary: The studied material came from vegetable-oil hydrogenation and included
+    adsorbed organics plus diatomaceous-earth filtering aid. Full mechanism evidence
+    remains unavailable and is not curated.
+- evidence_id: authority
+  kind: authority
+  reference: https://www.ifc.org/content/dam/ifc/doc/2010/2015-vegetable-oil-processing-ehs-guidelines-en.pdf
+  locator: Dated 12 February 2015; paragraphs8-9 pp2-4 and paragraph56 pp23-24; visually
+    checked pp3,23
+  accessed_at: '2026-10-11T11:46:55Z'
+  support: supports
+  summary: Process guidance distinguishes oil-hardening spent catalysts/filtering
+    aid from bleaching earth; nickel catalyst in vegetable-oil hydrogenation is independently
+    documented. Dated identity guidance is not a criticality designation or microbial
+    deployment study.
+  snapshot_sha256: 4cde84621543b1a9425bc9910f8dbc395cabe7acda32bf4f9988aab4f6ef92be
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Material boundary and source identity
+  outcome: supported
+  summary: The maintained target denotes a distinct process-defined secondary resource
+    with source-specific composition and no inherited criticality.
+  target_ids:
+  - cmmmech:spent-vegetable-oil-hydrogenation-catalyst
+  evidence_ids:
+  - record
+  - primary
+  - authority
+  - search
+  dimensions:
+  - name: material_identity
+    value: Secondary resource from vegetable-oil hydrogenation, including catalyst/filter-aid
+      mixtures
+    definition: Distinct from fresh nickel catalyst, nickel element, spent bleaching
+      earth and petroleum refinery catalyst streams.
+    evidence_ids:
+    - primary
+    - authority
+    - record
+  - name: mechanism_acceptance
+    value: None curated
+    definition: Accessible identity text cannot substantiate unavailable microbial
+      assays or recovered solids.
+    evidence_ids:
+    - primary
+    - record
+  - name: criticality
+    value: Not asserted
+    definition: Neither process residue inherits a constituent-element jurisdiction/list/edition
+      designation.
+    evidence_ids:
+    - record
+- assessment_id: mechanism
+  area: evidence
+  topic: Claim scope and experimental limits
+  outcome: supported
+  summary: Identity-only curation correctly withholds Bosio microbial dissolution
+    and downstream sulfide recovery until full methods, controls and products are
+    available.
+  target_ids:
+  - cmmmech:spent-vegetable-oil-hydrogenation-catalyst
+  evidence_ids:
+  - record
+  - primary
+  - authority
+- assessment_id: provenance
+  area: provenance
+  topic: Exact bytes and actual CREATE history
+  outcome: supported
+  summary: Canonical inspect preceded scientific target assessment. Final inspection
+    additionally captured sidecar bytes, and every input remained unchanged. Named
+    and batch/history validations completed successfully.
+  target_ids:
+  - cmmmech:spent-vegetable-oil-hydrogenation-catalyst
+  evidence_ids:
+  - record
+  - gates
+findings: []
+actions: []
+limitations:
+- Bosio full main text, figures and product characterization were not available; record
+  accepts only explicit accessible material-origin evidence backed by complete IFC
+  guidance.
+- One selected feed composition does not define every spent hydrogenation catalyst.
+  IFC2015 is a dated process-identity source, not a current statutory or criticality
+  claim.
+- Bounded searches cannot prove absence of further data, corrections or legitimate
+  author copies.
+tags:
+- round19
+- independent
+- scientific-review
+- secondary-resource
+notes:
+- No curation event is created merely for scientific review. Full text remains outside
+  Git; review sources preserve evidence locators and hashes.
