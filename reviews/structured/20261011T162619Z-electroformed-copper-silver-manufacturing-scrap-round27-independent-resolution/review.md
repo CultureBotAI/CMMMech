@@ -1,0 +1,497 @@
+# Independent corrected scientific review of electroformed Cu/Ag manufacturing scrap
+
+- Review: 20261011T162619Z-electroformed-copper-silver-manufacturing-scrap-round27-independent-resolution
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T16:23:18.067143Z
+- Finished UTC: 2026-10-11T16:26:19.356446Z
+- Reviewer: Codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The full final record retains scientifically qualified culture-associated Cu leaching and separate chemical/electrochemical recovery. Exact predecessor F1 is resolved: the incorrect Figure 5 direction is removed while the source 59% versus 50.0% conflict remains explicit. All required final record/history checks passed.
+
+## Scope And Provenance
+
+Entire frozen maintained record and history, all accepted main-paper claims, source contradictions, identifier scope and missing supplement limitations.
+
+Selection: Independent assigned review of one new manufacturing-resource record.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 3f1350b24b4f6248ed2e17caade936c15af9be93.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:electroformed-copper-silver-manufacturing-scrap | data/records/electroformed-copper-silver-manufacturing-scrap.yaml | maintained | Electroformed copper-silver manufacturing scrap |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named record validation | passed | True | cmmmech:electroformed-copper-silver-manufacturing-scrap | Reviewer reran named validation after correction; terminal exit 0, one record checked and zero failed. |
+| Final corrected batch gate | passed | True | cmmmech:electroformed-copper-silver-manufacturing-scrap | Root executed to terminal success; log /private/tmp/cmm-round27-final-batch.log SHA256 b3fa9df851fccafcdfbf10b779dbd696dc6b6d2f854749274eb4278eebde0c87. Frozen target bytes unchanged through all checks. |
+| Final corrected batch gate | passed | True | cmmmech:electroformed-copper-silver-manufacturing-scrap | Root executed to terminal success; log /private/tmp/cmm-round27-final-nonempty.log SHA256 d19c2a1730391ae1c8c5514c6c913de943734bcd4ae158c6d7896b44785ab647. Frozen target bytes unchanged through all checks. |
+| Final corrected batch gate | passed | True | cmmmech:electroformed-copper-silver-manufacturing-scrap | Root executed to terminal success; log /private/tmp/cmm-round27-final-history.log SHA256 36bf9bc9a48eef8b31f754370c7605b2632dfdacc4d6847751f59d3c1971ce00. Frozen target bytes unchanged through all checks. |
+
+## Scientific And Domain Assessments
+
+### Distinct manufacturing scrap and criticality scope
+
+identity: supported. Targets: cmmmech:electroformed-copper-silver-manufacturing-scrap.
+
+The source supports a secondary resource from defective Cu/Ag electroformed components. The record does not conflate this with copper/silver elements, plating sludge, PCBs or beverage packaging and assigns no inherited criticality designation.
+
+### Conditional culture-associated ferric leaching
+
+evidence: supported. Targets: cmmmech:electroformed-copper-silver-manufacturing-scrap.
+
+The record supports dissolution by growing cultures with iron cycling, without claiming direct cellular electron transfer or universal reactor optimization. Abiotic release, different conditions, source measurement discrepancies and lack of biological replication remain explicit.
+
+### CF3 historical versus current species scope
+
+nomenclature: supported. Targets: cmmmech:electroformed-copper-silver-manufacturing-scrap.
+
+The NCBI CURIE is scoped to species context for CF3; the source historical naming and consortium-membership uncertainty are preserved.
+
+### Removal, electrowinning and product purity
+
+quantity: supported. Targets: cmmmech:electroformed-copper-silver-manufacturing-scrap.
+
+Chemical iron removal losses, conditional electrolyte recovery and local EDS fractions are correctly distinguished. No source-stage percentages are multiplied into a whole-feed product yield.
+
+### Final community-profile figure direction
+
+consistency: supported. Targets: cmmmech:electroformed-copper-silver-manufacturing-scrap.
+
+The final wording removes the incorrect plot interpretation and preserves the source abstract/Results conflict; no exact counts are reconstructed.
+
+### Final frozen scope and completed gates
+
+provenance: supported. Targets: cmmmech:electroformed-copper-silver-manufacturing-scrap.
+
+Final native inspection includes target, both history sessions and predecessor review; all final required gates passed. The exact F1 occurrence is explicitly resolved.
+
+## Findings
+
+### F1: Correct the Figure 5 interpretation of final Leptospirillum abundance
+
+minor / resolved / confirmed; issue key: CMMMech.electroformed-scrap-leptospirillum-figure-direction.
+
+The initial record incorrectly said Figure 5 was approximately consistent with Results 50.0%. The curator removed that assertion while retaining the abstract 59% versus Results 50.0% disagreement and stating no independent exact percentage is inferred. The reviewer reinspected original Figure 5 and the full final record.
+
+Disposition: Exact final field matches the narrower support from Figure 5, abstract and Results. New EDIT provenance and unchanged initial observation are preserved. Named, full batch, nonempty and trusted-base history gates passed.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/electroformed-copper-silver-manufacturing-scrap.yaml; Entire frozen record, CREATE sidecar and native inspection | supports | Entire final maintained record re-read. The erroneous claim that Figure 5 favors 50.0% is removed, and the source conflict remains unresolved without an invented exact plot value. |
+| primary | https://doi.org/10.3390/su151914068; Complete 18-page published article; Methods 2.1-2.6, Table 1, Results 3.1-3.5, Discussion and source limitations; original Figures 1-8 on pages 3 and 6-10 visually inspected | supports | Defective electroformed Cu/Ag tubes, ethanol pretreatment, iron-grown cultures, medium replacement, acid control and distinct laboratory setups match the record. The source reports dissolved Cu and solid products but does not establish whole-feed recovered-metal yield or commercial deployment. |
+| comparison | https://doi.org/10.3390/su151914068; Figures 2-4 and Methods 2.3; abstract versus Results 3.1 | supports | CF3 extraction differs between abstract 94.7% and Results 95.2%; record retains approximate 95% and both source values. Consortium and reactor endpoints have different duration, temperature, aeration and prior adaptation. The single abiotic flask is not a matched reactor or ferric-supply control. Independent treatment replicates/inferential comparisons are not reported. Source stirring-speed conflict 220 versus 130 rpm is retained. |
+| figure_direction | https://doi.org/10.3390/su151914068; Original Figure 5 on PDF page 9, independently rendered at 2x; abstract and Results 3.3 | supports | Original Figure 5 was visually reinspected: the final gray segment is roughly 60 percentage points, so it did not support the former assertion that it corroborates 50.0%. The corrected record appropriately retains abstract 59% versus Results 50.0% and refrains from inferring an independent exact percentage. |
+| products | https://doi.org/10.3390/su151914068; Methods 2.4-2.5, Results 3.4-3.5, Figures 6-8 | supports | KOH iron removal loses 6-19% of solubilized Cu before electrowinning from selected liquor. Recovery percentages refer to the remaining solution. EDS on an Ag-rich residue and Cu deposits are local elemental fractions; the starting Cu-foil cathode and absent net deposited-mass balance prevent a whole-feed/bulk-purity claim. The record preserves those limits and marks electrowinning nonmicrobial. |
+| taxonomy | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3063951&amp;mode=Info; Author-acquired current taxonomy HTML independently read; live BioSample SAMN14556242 independently opened | supports | NCBI 3063951 is the species Acidithiobacillus ferruginosus with CF3 type-strain context and effective-name nomenclatural caveat. SAMN14556242 is CF3, while its linked project title retains A. ferrooxidans CF3. This is taxonomic context, not authentication of the 2023 experimental culture or sequencing data from that experiment. The reviewer web taxonomy open failed; no fresh successful taxonomy download by the reviewer is claimed. |
+| search | https://doi.org/10.3390/su151914068; Exact DOI correction/erratum/retraction query and exact title supplementary query; local identity search | context_only | No applicable correction identified in first returned result sets. Publisher/main article states supplemental Figures S1-S4; the author documented unsuccessful acquisition, and none of their unseen image content is accepted. Bounded hidden/ignored-inclusive dedup found the new target and associated dossiers, not a pre-existing duplicate root. |
+| provenance | history/records/electroformed-copper-silver-manufacturing-scrap/2026-10-11T161330Z-codex-865469.yaml; Unchanged CREATE history plus new EDIT history and inline event; canonical final inspection | supports | Original CREATE preserved. Curator appended history/records/electroformed-copper-silver-manufacturing-scrap/2026-10-11T162139Z-codex-98721d.yaml and actual inline EDIT documenting F1 correction. Reviewer did not edit the record; final inspect includes both sidecars and exact predecessor review. |
+| prior | reviews/structured/20261011T161956Z-electroformed-copper-silver-manufacturing-scrap-round27-independent-initial/review.yaml; Entire artifact | supports | Immutable initial needs-curation observation; exact F1 occurrence explicitly resolved below. |
+| correction | history/records/electroformed-copper-silver-manufacturing-scrap/2026-10-11T162139Z-codex-98721d.yaml; Entire artifact | supports | Actual correction session; removes unsupported plot direction and retains source disagreement. |
+
+## Limits And Additional Notes
+
+- Supplementary images S1-S4 were not acquired; main-text captions do not substitute for image inspection.
+- Single-system comparisons have confounded operating conditions and no independent treatment replication stated.
+- Local EDS and solution depletion do not establish bulk purity or net whole-feed recovered product.
+- Current CF3 nomenclature does not authenticate experimental stock or individual consortium causal contribution.
+- Full final record re-read by independent reviewer after native inspection; no target edits by reviewer. Initial observation preserved unchanged. GitHub publication is separate from this local scientific disposition.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T162619Z-electroformed-copper-silver-manufacturing-scrap-round27-independent-resolution
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent corrected scientific review of electroformed Cu/Ag manufacturing
+  scrap
+started_at: '2026-10-11T16:23:18.067143Z'
+finished_at: '2026-10-11T16:26:19.356446Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Agent /root/round27_packaging authored the record and history.
+    Reviewer /root did not edit them; independently inspected complete primary text,
+    original figure pixels, public identifiers and comparison boundaries. Shared author-acquired
+    source artifacts and coordination are disclosed.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'The full final record retains scientifically qualified culture-associated
+  Cu leaching and separate chemical/electrochemical recovery. Exact predecessor F1
+  is resolved: the incorrect Figure 5 direction is removed while the source 59% versus
+  50.0% conflict remains explicit. All required final record/history checks passed.'
+source:
+  git_revision: 3f1350b24b4f6248ed2e17caade936c15af9be93
+  state: working_tree
+  inputs:
+  - path: data/records/electroformed-copper-silver-manufacturing-scrap.yaml
+    sha256: cd4c7e284b4ad47079d0c609db007795f1aeeb28dcdf7cf359d2a32b52b1ea62
+    role: target
+  - path: history/records/electroformed-copper-silver-manufacturing-scrap/2026-10-11T161330Z-codex-865469.yaml
+    sha256: 94898c2aca03f9e368c1b1c75a9ea146d34fa4f397c6d34cda5aa6c62243084b
+    role: context
+  - path: history/records/electroformed-copper-silver-manufacturing-scrap/2026-10-11T162139Z-codex-98721d.yaml
+    sha256: e5c93ba48d4e7a110cb5801083eeee5fc37c7462025379dd11301754bb16725f
+    role: context
+  - path: reviews/structured/20261011T161956Z-electroformed-copper-silver-manufacturing-scrap-round27-independent-initial/review.yaml
+    sha256: e27807adfe3246cbb13fde9d7f554dced27b698c696d590c3c7fa9155197d05b
+    role: context
+scope:
+  description: Entire frozen maintained record and history, all accepted main-paper
+    claims, source contradictions, identifier scope and missing supplement limitations.
+  selection: Independent assigned review of one new manufacturing-resource record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:electroformed-copper-silver-manufacturing-scrap
+  exclusions:
+  - target: Supplementary Figures S1-S4 and unpublished raw sequence/replicate data
+    reason: Not acquired; no claims based solely on unseen images or reconstructed
+      raw measurements accepted.
+targets:
+- target_id: cmmmech:electroformed-copper-silver-manufacturing-scrap
+  path: data/records/electroformed-copper-silver-manufacturing-scrap.yaml
+  label: Electroformed copper-silver manufacturing scrap
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/electroformed-copper-silver-manufacturing-scrap.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named record validation
+  command: uv run --locked cmmmech validate data/records/electroformed-copper-silver-manufacturing-scrap.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Reviewer reran named validation after correction; terminal exit 0, one
+    record checked and zero failed.
+  target_ids:
+  - cmmmech:electroformed-copper-silver-manufacturing-scrap
+- check_id: batch
+  name: Final corrected batch gate
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root executed to terminal success; log /private/tmp/cmm-round27-final-batch.log
+    SHA256 b3fa9df851fccafcdfbf10b779dbd696dc6b6d2f854749274eb4278eebde0c87. Frozen
+    target bytes unchanged through all checks.
+  target_ids:
+  - cmmmech:electroformed-copper-silver-manufacturing-scrap
+- check_id: nonempty
+  name: Final corrected batch gate
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root executed to terminal success; log /private/tmp/cmm-round27-final-nonempty.log
+    SHA256 d19c2a1730391ae1c8c5514c6c913de943734bcd4ae158c6d7896b44785ab647. Frozen
+    target bytes unchanged through all checks.
+  target_ids:
+  - cmmmech:electroformed-copper-silver-manufacturing-scrap
+- check_id: history
+  name: Final corrected batch gate
+  command: uv run --locked cmmmech validate-history --base 3f1350b24b4f6248ed2e17caade936c15af9be93
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root executed to terminal success; log /private/tmp/cmm-round27-final-history.log
+    SHA256 36bf9bc9a48eef8b31f754370c7605b2632dfdacc4d6847751f59d3c1971ce00. Frozen
+    target bytes unchanged through all checks.
+  target_ids:
+  - cmmmech:electroformed-copper-silver-manufacturing-scrap
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/electroformed-copper-silver-manufacturing-scrap.yaml
+  locator: Entire frozen record, CREATE sidecar and native inspection
+  accessed_at: '2026-10-11T16:26:19.356446Z'
+  support: supports
+  summary: Entire final maintained record re-read. The erroneous claim that Figure
+    5 favors 50.0% is removed, and the source conflict remains unresolved without
+    an invented exact plot value.
+  snapshot_sha256: cd4c7e284b4ad47079d0c609db007795f1aeeb28dcdf7cf359d2a32b52b1ea62
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/su151914068
+  locator: Complete 18-page published article; Methods 2.1-2.6, Table 1, Results 3.1-3.5,
+    Discussion and source limitations; original Figures 1-8 on pages 3 and 6-10 visually
+    inspected
+  accessed_at: '2026-10-11T16:26:19.356446Z'
+  support: supports
+  summary: Defective electroformed Cu/Ag tubes, ethanol pretreatment, iron-grown cultures,
+    medium replacement, acid control and distinct laboratory setups match the record.
+    The source reports dissolved Cu and solid products but does not establish whole-feed
+    recovered-metal yield or commercial deployment.
+  snapshot_sha256: 26ad9598cd228c7b83dda78d77452af0a77610c5559ffe4b570ff01043085264
+- evidence_id: comparison
+  kind: primary_source
+  reference: https://doi.org/10.3390/su151914068
+  locator: Figures 2-4 and Methods 2.3; abstract versus Results 3.1
+  accessed_at: '2026-10-11T16:26:19.356446Z'
+  support: supports
+  summary: CF3 extraction differs between abstract 94.7% and Results 95.2%; record
+    retains approximate 95% and both source values. Consortium and reactor endpoints
+    have different duration, temperature, aeration and prior adaptation. The single
+    abiotic flask is not a matched reactor or ferric-supply control. Independent treatment
+    replicates/inferential comparisons are not reported. Source stirring-speed conflict
+    220 versus 130 rpm is retained.
+  snapshot_sha256: 26ad9598cd228c7b83dda78d77452af0a77610c5559ffe4b570ff01043085264
+- evidence_id: figure_direction
+  kind: primary_source
+  reference: https://doi.org/10.3390/su151914068
+  locator: Original Figure 5 on PDF page 9, independently rendered at 2x; abstract
+    and Results 3.3
+  accessed_at: '2026-10-11T16:26:19.356446Z'
+  support: supports
+  summary: 'Original Figure 5 was visually reinspected: the final gray segment is
+    roughly 60 percentage points, so it did not support the former assertion that
+    it corroborates 50.0%. The corrected record appropriately retains abstract 59%
+    versus Results 50.0% and refrains from inferring an independent exact percentage.'
+  snapshot_sha256: 26ad9598cd228c7b83dda78d77452af0a77610c5559ffe4b570ff01043085264
+- evidence_id: products
+  kind: primary_source
+  reference: https://doi.org/10.3390/su151914068
+  locator: Methods 2.4-2.5, Results 3.4-3.5, Figures 6-8
+  accessed_at: '2026-10-11T16:26:19.356446Z'
+  support: supports
+  summary: KOH iron removal loses 6-19% of solubilized Cu before electrowinning from
+    selected liquor. Recovery percentages refer to the remaining solution. EDS on
+    an Ag-rich residue and Cu deposits are local elemental fractions; the starting
+    Cu-foil cathode and absent net deposited-mass balance prevent a whole-feed/bulk-purity
+    claim. The record preserves those limits and marks electrowinning nonmicrobial.
+  snapshot_sha256: 26ad9598cd228c7b83dda78d77452af0a77610c5559ffe4b570ff01043085264
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3063951&mode=Info
+  locator: Author-acquired current taxonomy HTML independently read; live BioSample
+    SAMN14556242 independently opened
+  accessed_at: '2026-10-11T16:26:19.356446Z'
+  support: supports
+  summary: NCBI 3063951 is the species Acidithiobacillus ferruginosus with CF3 type-strain
+    context and effective-name nomenclatural caveat. SAMN14556242 is CF3, while its
+    linked project title retains A. ferrooxidans CF3. This is taxonomic context, not
+    authentication of the 2023 experimental culture or sequencing data from that experiment.
+    The reviewer web taxonomy open failed; no fresh successful taxonomy download by
+    the reviewer is claimed.
+  snapshot_sha256: 640d19bafe00781260a680f62da6866e72dfb6da96dc6288767fba162648e53d
+- evidence_id: search
+  kind: search
+  reference: https://doi.org/10.3390/su151914068
+  locator: Exact DOI correction/erratum/retraction query and exact title supplementary
+    query; local identity search
+  accessed_at: '2026-10-11T16:26:19.356446Z'
+  support: context_only
+  summary: No applicable correction identified in first returned result sets. Publisher/main
+    article states supplemental Figures S1-S4; the author documented unsuccessful
+    acquisition, and none of their unseen image content is accepted. Bounded hidden/ignored-inclusive
+    dedup found the new target and associated dossiers, not a pre-existing duplicate
+    root.
+  search_scope: Web first result sets only, no pagination/date filters. rg --no-ignore
+    --hidden --follow searched worktree data/records, research, reviews, history and
+    referenced /private/tmp/cmm-round27-packaging-raw and /private/tmp/cmm-round26-packaging-raw;
+    17 matching files recorded in /private/tmp/cmm-round27-cuag-independent-dedup.txt.
+    No global absence claim.
+- evidence_id: provenance
+  kind: record_content
+  reference: history/records/electroformed-copper-silver-manufacturing-scrap/2026-10-11T161330Z-codex-865469.yaml
+  locator: Unchanged CREATE history plus new EDIT history and inline event; canonical
+    final inspection
+  accessed_at: '2026-10-11T16:26:19.356446Z'
+  support: supports
+  summary: Original CREATE preserved. Curator appended history/records/electroformed-copper-silver-manufacturing-scrap/2026-10-11T162139Z-codex-98721d.yaml
+    and actual inline EDIT documenting F1 correction. Reviewer did not edit the record;
+    final inspect includes both sidecars and exact predecessor review.
+  snapshot_sha256: 94898c2aca03f9e368c1b1c75a9ea146d34fa4f397c6d34cda5aa6c62243084b
+- evidence_id: prior
+  kind: record_content
+  reference: reviews/structured/20261011T161956Z-electroformed-copper-silver-manufacturing-scrap-round27-independent-initial/review.yaml
+  locator: Entire artifact
+  accessed_at: '2026-10-11T16:26:19.356446Z'
+  support: supports
+  summary: Immutable initial needs-curation observation; exact F1 occurrence explicitly
+    resolved below.
+  snapshot_sha256: e27807adfe3246cbb13fde9d7f554dced27b698c696d590c3c7fa9155197d05b
+- evidence_id: correction
+  kind: record_content
+  reference: history/records/electroformed-copper-silver-manufacturing-scrap/2026-10-11T162139Z-codex-98721d.yaml
+  locator: Entire artifact
+  accessed_at: '2026-10-11T16:26:19.356446Z'
+  support: supports
+  summary: Actual correction session; removes unsupported plot direction and retains
+    source disagreement.
+  snapshot_sha256: e5c93ba48d4e7a110cb5801083eeee5fc37c7462025379dd11301754bb16725f
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Distinct manufacturing scrap and criticality scope
+  outcome: supported
+  summary: The source supports a secondary resource from defective Cu/Ag electroformed
+    components. The record does not conflate this with copper/silver elements, plating
+    sludge, PCBs or beverage packaging and assigns no inherited criticality designation.
+  target_ids:
+  - cmmmech:electroformed-copper-silver-manufacturing-scrap
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: leaching
+  area: evidence
+  topic: Conditional culture-associated ferric leaching
+  outcome: supported
+  summary: The record supports dissolution by growing cultures with iron cycling,
+    without claiming direct cellular electron transfer or universal reactor optimization.
+    Abiotic release, different conditions, source measurement discrepancies and lack
+    of biological replication remain explicit.
+  target_ids:
+  - cmmmech:electroformed-copper-silver-manufacturing-scrap
+  evidence_ids:
+  - primary
+  - comparison
+  dimensions:
+  - name: biomass_and_conditions
+    value: Iron-grown CF3 and mixed cultures; 0.7 L flasks versus 2 L reactor vessel;
+      pH 1.9
+    definition: Live culture with ethanol-treated scrap; temperature/aeration/adaptation
+      and stirring differences prevent single-factor causal attribution.
+    evidence_ids:
+    - primary
+    - comparison
+  - name: deployment
+    value: Laboratory
+    definition: Industrial origin of manufacturing rejects and product photographs
+      do not establish industrial deployment, economics or life-cycle benefit.
+    evidence_ids:
+    - record
+    - primary
+- assessment_id: taxonomy
+  area: nomenclature
+  topic: CF3 historical versus current species scope
+  outcome: supported
+  summary: The NCBI CURIE is scoped to species context for CF3; the source historical
+    naming and consortium-membership uncertainty are preserved.
+  target_ids:
+  - cmmmech:electroformed-copper-silver-manufacturing-scrap
+  evidence_ids:
+  - taxonomy
+  - record
+- assessment_id: products
+  area: quantity
+  topic: Removal, electrowinning and product purity
+  outcome: supported
+  summary: Chemical iron removal losses, conditional electrolyte recovery and local
+    EDS fractions are correctly distinguished. No source-stage percentages are multiplied
+    into a whole-feed product yield.
+  target_ids:
+  - cmmmech:electroformed-copper-silver-manufacturing-scrap
+  evidence_ids:
+  - products
+  - record
+- assessment_id: figure
+  area: consistency
+  topic: Final community-profile figure direction
+  outcome: supported
+  summary: The final wording removes the incorrect plot interpretation and preserves
+    the source abstract/Results conflict; no exact counts are reconstructed.
+  target_ids:
+  - cmmmech:electroformed-copper-silver-manufacturing-scrap
+  evidence_ids:
+  - figure_direction
+  - record
+  - prior
+  - correction
+- assessment_id: provenance
+  area: provenance
+  topic: Final frozen scope and completed gates
+  outcome: supported
+  summary: Final native inspection includes target, both history sessions and predecessor
+    review; all final required gates passed. The exact F1 occurrence is explicitly
+    resolved.
+  target_ids:
+  - cmmmech:electroformed-copper-silver-manufacturing-scrap
+  evidence_ids:
+  - provenance
+  - record
+  - prior
+  - correction
+findings:
+- finding_id: F1
+  issue_key: CMMMech.electroformed-scrap-leptospirillum-figure-direction
+  category: consistency
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Correct the Figure 5 interpretation of final Leptospirillum abundance
+  description: The initial record incorrectly said Figure 5 was approximately consistent
+    with Results 50.0%. The curator removed that assertion while retaining the abstract
+    59% versus Results 50.0% disagreement and stating no independent exact percentage
+    is inferred. The reviewer reinspected original Figure 5 and the full final record.
+  target_ids:
+  - cmmmech:electroformed-copper-silver-manufacturing-scrap
+  field_paths:
+  - mechanisms[0].evidence[2].explanation
+  evidence_ids:
+  - record
+  - figure_direction
+  - prior
+  - correction
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/electroformed-copper-silver-manufacturing-scrap.yaml
+    role: maintained_record
+  rule_id: claim-level figure interpretation
+  native_severity: minor
+  normalization_reason: A bounded supporting-figure interpretation error; root identity
+    and qualified leaching mechanism remain supported.
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261011T161956Z-electroformed-copper-silver-manufacturing-scrap-round27-independent-initial
+    finding_id: F1
+  disposition_reason: Exact final field matches the narrower support from Figure 5,
+    abstract and Results. New EDIT provenance and unchanged initial observation are
+    preserved. Named, full batch, nonempty and trusted-base history gates passed.
+actions: []
+limitations:
+- Supplementary images S1-S4 were not acquired; main-text captions do not substitute
+  for image inspection.
+- Single-system comparisons have confounded operating conditions and no independent
+  treatment replication stated.
+- Local EDS and solution depletion do not establish bulk purity or net whole-feed
+  recovered product.
+- Current CF3 nomenclature does not authenticate experimental stock or individual
+  consortium causal contribution.
+notes:
+- Full final record re-read by independent reviewer after native inspection; no target
+  edits by reviewer. Initial observation preserved unchanged. GitHub publication is
+  separate from this local scientific disposition.
+tags:
+- round27
+- independent
+- scientific-review
+- resolved-finding
+```

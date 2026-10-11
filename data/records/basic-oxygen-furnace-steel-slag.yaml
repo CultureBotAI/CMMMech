@@ -2,12 +2,14 @@ id: cmmmech:basic-oxygen-furnace-steel-slag
 name: Basic-oxygen-furnace steel slag
 material_kind: secondary_resource
 description: >-
-  Steelmaking slag identified by the primary study as basic-oxygen-furnace
-  (BOF) slag, represented by a December 2016 sample from Yarborough,
-  Scunthorpe, UK. This process-defined secondary resource is distinct from
+  Steelmaking slag identified by primary studies as basic-oxygen-furnace
+  (BOF), or Linz-Donawitz converter, slag. The separately studied feeds are a
+  December 2016 sample from Yarborough, Scunthorpe, UK, and a sample supplied
+  by an unnamed Austrian steelmaking company in the 2022 study. This
+  process-defined secondary resource is distinct from
   electric-arc-furnace slag or dust, blast-furnace residues, copper smelter
-  slag, constituent elements and individual mineral species. One heterogeneous
-  sample does not define all BOF slags. No inherited elemental identifier or
+  slag, constituent elements and individual mineral species. These heterogeneous
+  samples do not define all BOF slags. No inherited elemental identifier or
   criticality designation is assigned.
 sources:
 - id: gomes_2018
@@ -25,6 +27,29 @@ sources:
     10.1016/j.jenvman.2018.05.056. Publisher DOCX: X-ray diffraction
     Figures S1-S2 and preliminary community T-RFLP Table S1.
   url: https://ars.els-cdn.com/content/image/1-s2.0-S0301479718305875-mmc1.docx
+  accessed_on: '2026-10-11'
+- id: kremser_2022
+  title: >-
+    Kremser, Thallner, Spiess, Kucera, Vaculovic, Vsiansky, Haberbauer and
+    Guebitz (2022). Bioleaching and Selective Precipitation for Metal Recovery
+    from Basic Oxygen Furnace Slag. Processes 10:576. DOI 10.3390/pr10030576;
+    published 15 March 2022. Complete 12-page version-2 publisher PDF from
+    K1-MET, Methods 2.1-2.8, Results 3.1-3.4, Tables 1-2, Figures 1-5 and
+    the displayed leaching-efficiency equation inspected. The ESI named in
+    the data-availability statement was not acquired.
+  url: https://doi.org/10.3390/pr10030576
+  accessed_on: '2026-10-11'
+- id: dsm504_catalogue
+  title: >-
+    DSMZ catalogue, DSM 504, Acidithiobacillus thiooxidans. Accession-to-name
+    context; not independent authentication of the 2022 experimental stock.
+  url: https://www.dsmz.de/collection/catalogue/details/culture/DSM-504
+  accessed_on: '2026-10-11'
+- id: dsm583_catalogue
+  title: >-
+    DSMZ catalogue, DSM 583, displayed as Acidithiobacillus ferrooxidans,
+    contrasting with the 2022 paper's Acidithiobacillus ferridurans label.
+  url: https://www.dsmz.de/collection/catalogue/details/culture/DSM-583
   accessed_on: '2026-10-11'
 mechanisms:
 - id: mixed_culture_conditioned_acid_leaching
@@ -151,6 +176,128 @@ mechanisms:
       in Methods; it is not silently corrected. Better performance of other
       resins, alkaline drainage or selective precipitation remains future or
       external context, not a result for these bioleachates.
+- id: defined_acidophile_batch_and_cstr_leaching
+  name: Conditional metal mobilization in separate acidophile cultures
+  process: bioleaching
+  microbial: true
+  description: >-
+    A separately sampled Austrian BOF slag was leached in cultures reported
+    as Acidithiobacillus thiooxidans DSM 504 and Acidithiobacillus ferridurans
+    DSM 583. Flask and semi-continuous reactor comparisons support
+    condition-dependent metal mobilization, with culture-driven acidity
+    accompanied by externally supplied acid in some reactor stages. They
+    do not isolate a species effect independent of medium chemistry or
+    establish a universal improvement over chemical leaching. The DSM 583
+    species label conflicts with the current collection catalogue and is
+    retained as the paper's attribution without a species CURIE.
+  context: >-
+    Methods 2.1-2.6 and Table 1 describe slag dried at 22 degrees C, crushed
+    and sieved to 0.25-0.5 mm, with an approximately pH-12 characterization.
+    ICP-MS after sequential acid digestion reported Fe 225.70 +/- 4.97,
+    Mn 51.46 +/- 0.95, Al 9.21 +/- 0.62, Cr 1.30 +/- 0.00 and
+    V 0.67 +/- 0.03 mg/g, means and standard deviations for n=3. Those
+    values describe this feed, not the 2018 UK slag. Duplicate 100-mL
+    flask cultures in 250-mL vessels used 10 g/L slag, 10% preculture,
+    30 degrees C, 150 rpm and 14 days, with respective uninoculated-medium
+    controls. BSM-AT supplied 10 g/L sulfur at initial pH 4.2; BSM-AF
+    supplied 33.3 g/L FeSO4.7H2O at acid-adjusted initial pH 1.4, with
+    sulfur also added for leaching. The two media differ in salts and iron.
+    Separate 1.5-L working-volume stirred reactors used 30 degrees C,
+    250 rpm, about 30 L/h air and pH control at or below 2.4 with 2 M
+    sulfuric acid. Four two-week cycles nominally used 10, 25, 50 and
+    75 g/L slag; each exchange removed 1 L of suspension and replaced
+    medium, sulfur and slag. Residual liquid and solids remained between
+    cycles. The reactor control used double-distilled water and the same
+    pH setpoint, rather than the culture media. Independent replicate
+    reactors within a treatment and a complete retained-solid/liquid
+    inventory calculation are not documented. These remain laboratory
+    experiments; increasing flask to 1.5-L scale is not industrial deployment.
+  evidence:
+  - source_ref: kremser_2022
+    supports: support
+    explanation: >-
+      Results 3.2/Figure 3 report approximate flask extraction percentages
+      for V, Cr, Mn and Al of 30, 10, 37 and below 1 with DSM 504,
+      versus 2, 96, 42 and 53 with the DSM 583 culture. The latter's V
+      result is close to its abiotic control, and DSM 504 shows negligible
+      Al mobilization. Endpoint pH differs from the controls. These are
+      reported feed-relative leaching metrics, not isolated product yields.
+      Figure 4 and Table 2 show strong dependence on loading and culture:
+      performance generally falls at higher loadings, and DSM 583 reactor V
+      extraction falls below the chemical control at the higher loadings.
+  - source_ref: kremser_2022
+    supports: partial
+    explanation: >-
+      Table 2 reports acid consumption on an 18 M H2SO4-equivalent volume
+      per gram slag basis, whereas Methods uses 2 M dosing acid; the
+      conversion is not detailed. At 75 g/L the reported volumes are
+      0.49, 0.19 and 0.23 mL/g for DSM 504, DSM 583 and control,
+      respectively. The paper itself attributes part of DSM 504's
+      high-loading extraction to the added acid. Figure 4 does not sustain
+      the prose statement that DSM 583 Al and Mn extraction remain above
+      80% and 50% throughout: some displayed bars are below those
+      thresholds. Medium, starting acidity, external acid and carryover
+      differ; no unique ferric-iron pathway or demonstrated physiological
+      adaptation is established by the comparison alone. The displayed
+      efficiency equation subtracts both medium and inoculum backgrounds,
+      but raw concentrations, sampling/volume corrections and retained
+      inventory accounting cannot be audited from the reported endpoints.
+      The unavailable ESI/data limits independent recalculation. No exact
+      concentration observations or reconciled whole-feed yields are added.
+  - source_ref: dsm504_catalogue
+    supports: context_only
+    explanation: >-
+      The collection identifies DSM 504 as Acidithiobacillus thiooxidans;
+      this supports the reported accession-to-name mapping, not stock
+      authentication or causal proof for the slag experiment.
+  - source_ref: dsm583_catalogue
+    supports: partial
+    explanation: >-
+      DSMZ currently displays DSM 583 as Acidithiobacillus ferrooxidans,
+      whereas the paper calls it Acidithiobacillus ferridurans and cites a
+      genomic revision. The experimental culture was not independently
+      genotyped here. The accession and source-specific name are preserved
+      without silently assigning a definitive species identifier.
+- id: synthetic_bof_leachate_precipitation
+  name: Chemical precipitation from synthetic analogues of BOF leachates
+  process: separation
+  microbial: false
+  description: >-
+    Sodium hydroxide removed metal fractions from two synthetic salt
+    solutions designed to approximate the final 2022 reactor leachates.
+    This is a separate nonmicrobial proof-of-concept separation, not a
+    demonstrated recovery stage applied to actual slag bioleachate.
+  context: >-
+    Methods 2.7-2.8 defined SMS-AT with Fe(II) sulfate and SMS-AF with
+    Fe(III) chloride, plus different Al, Cr, V and Mn salt concentrations
+    and initial pH 2.3 and 2.2 respectively. These simplified matrices
+    do not establish the iron speciation of the actual leachates. Duplicate
+    25-mL assays were stirred at 500 rpm and adjusted with 1 M NaOH to
+    pH 2.5-5.0. After 45 hours the 0.2-micrometre filtrates were measured
+    by ICP-MS. Figure 5 error bars are standard deviations for n=2.
+    No mineral-phase identification, purity, separated-product mass or
+    complete feed-to-product balance is provided for the precipitates.
+  evidence:
+  - source_ref: kremser_2022
+    supports: support
+    explanation: >-
+      Results 3.4/Figure 5 report SMS-AT removal at pH 4 of V 92% and
+      Cr 75%, accompanied by Al 16% and Fe 8%. SMS-AF at pH 3 showed
+      approximately 98% V and 92% Fe removal. Other constituents co-remove,
+      so these are differential synthetic-solution depletion results, not
+      isolated single-metal purities. The two matrices require different
+      amounts of base and cannot be compared solely as microbial effects.
+  - source_ref: kremser_2022
+    supports: partial
+    explanation: >-
+      Abstract and conclusion wording implies recovery from biolixiviant,
+      but Methods and Figure 5 specify synthetic solutions. Fe oxidation
+      states were assigned through reagent selection rather than shown
+      to represent actual effluent speciation. The simplified solution
+      results are therefore only context for a possible downstream BOF
+      process. They must not be multiplied by leaching percentages or
+      reported as a slag-derived product yield, and they do not validate
+      industrial operation or environmental acceptability of treated slag.
 curation_history:
 - timestamp: '2026-10-11T15:34:12.345362+00:00'
   curator: Codex (GPT-6; Codex)
@@ -160,5 +307,15 @@ curation_history:
     leaching and chemical resin stages, preserving preliminary community
     identity, null comparisons, unmatched chemistry, contradictory numerical
     inventories and laboratory scope.
+- timestamp: '2026-10-11T16:13:41.214580+00:00'
+  curator: Codex (GPT-6; Codex)
+  action: EDIT
+  summary: >-
+    Added the separate 2022 Austrian-feed culture and reactor experiment,
+    retaining null results, acid and medium confounding, uncertain DSM 583
+    taxonomy, incomplete cycle accounting and unavailable supporting data.
+    Added the synthetic-solution chemical precipitation experiment without
+    implying treatment of actual bioleachate or isolated-product recovery.
 history_refs:
 - history/records/basic-oxygen-furnace-steel-slag/2026-10-11T153415Z-codex-f742c3.yaml
+- history/records/basic-oxygen-furnace-steel-slag/2026-10-11T161312Z-codex-27b6e0.yaml

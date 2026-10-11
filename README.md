@@ -176,9 +176,11 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Biogas-desulfurization sulfur residue](data/records/biogas-desulfurization-sulfur-residue.yaml) | Mixed-culture acid production from a sulfur-rich residue | Conflicting culture accession and incomplete sulfur balance; battery leaching is a separate downstream use |
 | [Spent zinc-manganese button-cell batteries](data/records/spent-zinc-manganese-button-cell-batteries.yaml) | Culture-associated leaching after thermal pretreatment | Inhibited treatments, uncertain strain identity and unmatched chemistry limit generalization |
 | [Electric-arc-furnace dust](data/records/electric-arc-furnace-dust.yaml) | Filtered culture-acid leaching followed by microbial electrolysis | Stage-specific depletion and deposit composition do not establish whole-feed recovery |
-| [Basic-oxygen-furnace steel slag](data/records/basic-oxygen-furnace-steel-slag.yaml) | Mixed-culture and supernatant leaching followed by chemical resin tests | Unmatched acidity, inconsistent feed inventories and poor elution limit recovery claims |
+| [Basic-oxygen-furnace steel slag](data/records/basic-oxygen-furnace-steel-slag.yaml) | Separate UK and Austrian culture-leaching studies with chemical separation assays | Unmatched acidity, retained reactor inventory and synthetic precipitation feeds limit recovery claims |
 | [Pharmaceutical blister packaging waste](data/records/pharmaceutical-blister-packaging-waste.yaml) | Culture-derived acid leaching of actual hospital waste | High-temperature null comparison, poor silver-fraction release and lower 1 L results retained |
 | [Beverage-carton hydropulping reject](data/records/beverage-carton-hydropulping-reject.yaml) | Separate enzymatic pretreatment, culture-acid leaching and chemical precipitation | Comparable reagent acid, direct-culture limitations and unverified product purity remain explicit |
+| [Basic-oxygen-furnace steelmaking dust](data/records/basic-oxygen-furnace-steelmaking-dust.yaml) | Acidophile-associated leaching with hybrid and column comparisons | Abiotic convergence, unlike pretreatments and unresolved inventory accounting; no isolated product |
+| [Electroformed copper-silver manufacturing scrap](data/records/electroformed-copper-silver-manufacturing-scrap.yaml) | Culture-associated copper leaching and separate chemical/electrochemical recovery | Confounded operating conditions, pretreatment losses and local EDS do not establish whole-feed yield |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -211,7 +213,9 @@ edition; none assert timeless status or industrial process deployment. See the
 [twenty-third expansion reviews](research/ingests/round23-20261011-publication.md),
 [twenty-fourth expansion reviews](research/ingests/round24-20261011-publication.md),
 [twenty-fifth expansion reviews](research/ingests/round25-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round25-frontier-20261011.md), and
+[twenty-sixth expansion reviews](research/ingests/round26-20261011-publication.md),
+[twenty-seventh expansion reviews](research/ingests/round27-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round27-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

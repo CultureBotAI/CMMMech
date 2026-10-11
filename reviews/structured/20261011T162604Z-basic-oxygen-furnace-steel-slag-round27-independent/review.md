@@ -1,0 +1,622 @@
+# Independent full scientific review of the expanded BOF steel-slag record
+
+- Review: 20261011T162604Z-basic-oxygen-furnace-steel-slag-round27-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T16:15:56Z
+- Finished UTC: 2026-10-11T16:26:04.154686Z
+- Reviewer: Codex /root/round27_packaging (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The whole frozen record faithfully distinguishes two independently sampled BOF slags, conditional microbial or culture-conditioned metal mobilization, real-leachate resin experiments, and synthetic-solution precipitation. Primary numerical, identity and causal limitations are preserved. No corrective record finding was identified.
+
+## Scope And Provenance
+
+Entire maintained record and linked histories, including both 2018 mechanisms and both 2022 additions; identity, controls, assay conditions, outcomes, contradictions and deployment scope.
+
+Selection: Assigned independent review of the expanded BOF record; both retained and added scientific claims reassessed.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 3f1350b24b4f6248ed2e17caade936c15af9be93.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:basic-oxygen-furnace-steel-slag | data/records/basic-oxygen-furnace-steel-slag.yaml | maintained | Basic-oxygen-furnace steel slag |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named-record validation | passed | True | cmmmech:basic-oxygen-furnace-steel-slag | Executed independently with terminal exit 0; named log read: 1 record checked, 0 failed. |
+| Coordinator final batch checks | passed | True | cmmmech:basic-oxygen-furnace-steel-slag | Actual coordinator terminal receipt and log independently read and log hash verified: 308 passed, 3 skipped in 140.18 seconds; 171 records and 195 histories valid. Reviewed target and all context hashes remain unchanged. |
+| Coordinator final nonempty validation | passed | True | cmmmech:basic-oxygen-furnace-steel-slag | Actual coordinator terminal receipt and log independently read and log hash verified: 171 records checked, 0 failed. |
+| Coordinator trusted-base history validation | passed | True | cmmmech:basic-oxygen-furnace-steel-slag | Actual coordinator terminal receipt and log independently read and log hash verified: 195 history records checked, 0 errors. Both BOF sidecars remain equal to canonical inspect. |
+
+## Scientific And Domain Assessments
+
+### Process-defined resource, independent feeds and absent criticality claim
+
+identity: supported. Targets: cmmmech:basic-oxygen-furnace-steel-slag.
+
+Two heterogeneous BOF slags belong to one process-defined secondary-resource record. The UK and Austrian measurements remain separate; no alloy, element or mineral identity is inferred.
+
+### Culture-conditioned laboratory leaching with limited attribution
+
+evidence: supported. Targets: cmmmech:basic-oxygen-furnace-steel-slag.
+
+The record accurately supports conditional aqueous mobilization while retaining organism resolution, unequal controls, null results and quantitative contradictions.
+
+### Real-leachate removal and poor elution are separate chemical outcomes
+
+evidence: supported. Targets: cmmmech:basic-oxygen-furnace-steel-slag.
+
+Nonmicrobial IRA-400 removal and alkaline elution retain their stage-specific values and source ambiguities; they are not purified-metal or whole-feed yields.
+
+### Independent Austrian-feed assays and sequential reactor operation
+
+evidence: supported. Targets: cmmmech:basic-oxygen-furnace-steel-slag.
+
+The record preserves source-specific culture names and approximate feed-relative leaching metrics, without an unsupported universal biological advantage.
+
+### Synthetic matrices do not establish actual effluent recovery
+
+evidence: supported. Targets: cmmmech:basic-oxygen-furnace-steel-slag.
+
+The record correctly classifies NaOH precipitation as nonmicrobial and contextual for downstream BOF processing. Distinct solution compositions preclude an oxidation-state-only or microbial causal comparison.
+
+### Exact input and historical change accounting
+
+provenance: supported. Targets: cmmmech:basic-oxygen-furnace-steel-slag.
+
+Canonical inspect records the stable mainline base and working-tree hashes. CREATE and new EDIT sidecars describe distinct actual changes; review does not invent earlier authorship.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/basic-oxygen-furnace-steel-slag.yaml; Entire frozen YAML and both linked CREATE/EDIT sidecars | supports | The process-defined resource keeps the Austrian and UK feeds separate and makes no inherited elemental identifier or criticality assertion. Both 2018 mechanism blocks are unchanged from the base, but were independently reassessed here. |
+| primary2018 | https://doi.org/10.1016/j.jenvman.2018.05.056; Complete seven-page primary; Methods 2.1–2.7, Results 3.1–3.4; original Figures 1–3 and Tables 1–2 visually inspected | supports | Adapted Libiola mixed culture and its filtered supernatant mobilized metals from the UK BOF slag under laboratory conditions. The unequal fresh-medium control, reagent acid, unspecified independent column replication, activity proxies and inconsistent inventory constrain attribution and exact recovery. |
+| supplement2018 | https://ars.els-cdn.com/content/image/1-s2.0-S0301479718305875-mmc1.docx; Original DOCX text/XML table and both embedded XRD images; Figures S1–S2 and Table S1 | supports | Preliminary T-RFLP assignments do not justify strain identity or member-specific causality. Mixed XRD phase assignments are retained without implying pure products or uniquely microbial precipitation. |
+| inventory2018 | https://doi.org/10.1016/j.jenvman.2018.05.056; Table 1, Figures 1–3 and Results 3.1–3.3 | context_only | The feed Al/Cr/V values and batch or column loading do not reconcile the source concentration/mass plots with its extraction percentages; 109% Al and the Mg 29.4% versus cited typical range conflict remain explicit. No exact normalized observation or repaired inventory is imported. |
+| resin2018 | https://doi.org/10.1016/j.jenvman.2018.05.056; Methods 2.5 and Results 3.4 | supports | The 1 g IRA-400/20 mL leachate adsorption and subsequent 20 mL 2 M NaOH elution have separate outcomes. A/B removal and poor elution values match the record; greater B Al removal, uncertain denominator/error definition and 22 versus 0.22 micrometre wording are retained. |
+| primary2022 | https://doi.org/10.3390/pr10030576; Complete 12-page version-2 published PDF, including Methods 2.1–2.8, Results 3.1–3.4, references; Figures 1–5, Tables 1–2 and displayed equation visually inspected | supports | The Austrian feed composition, duplicate flask assays, sequential loading reactor cycles, controls and synthetic downstream matrices are supported by the full primary. Biological mobilization depends on medium, acidity and loading; flask null results and high-loading limitations are preserved. The ESI named in the data statement was not acquired. |
+| reactor2022 | https://doi.org/10.3390/pr10030576; Methods 2.3–2.4 and displayed equation; Results 3.2–3.3/Figures 3–4 and Table 2 | supports | Figure 3 approximate flask metrics match the record. Reactor Figure 4 does not sustain the prose universal Al/Mn thresholds; Table 2 high-loading AT acid demand can help explain mobilization. Medium, reagent acid and cycle carryover prevent an isolated species advantage, and raw sample/inventory data cannot be audited. |
+| precipitation2022 | https://doi.org/10.3390/pr10030576; Methods 2.7–2.8 and Results 3.4/Figure 5 | supports | Different Fe(II)-sulfate and Fe(III)-chloride synthetic matrices, adjusted with NaOH and measured after 45 hours, support only differential dissolved-metal depletion. The stated approximate V/Cr/Al/Fe values match Figure 5 and prose. No actual-bioleachate product recovery, oxidation-state-only causal comparison, phase purity or integrated yield is demonstrated. |
+| dsm504 | https://www.dsmz.de/collection/catalogue/details/culture/DSM-504; Live collection page independently opened; author-acquired full HTML also read | supports | The collection maps DSM 504 to Acidithiobacillus thiooxidans. This verifies accession-to-name context, not the identity of the experimental stock. |
+| dsm583 | https://www.dsmz.de/collection/catalogue/details/culture/DSM-583; Live collection page independently opened; author-acquired full HTML also read | context_only | The current catalogue displays Acidithiobacillus ferrooxidans for DSM 583, while the paper uses ferridurans. The record appropriately retains the accession and reported label without silently assigning a species CURIE. |
+| metadata2018 | https://api.crossref.org/works/10.1016%2Fj.jenvman.2018.05.056; Full author-acquired Crossref JSON and primary front matter | supports | DOI, title and bibliographic identity agree. Relation metadata is empty and no update-to was found in the inspected response; this does not prove absence of subsequent corrections. |
+| metadata2022 | https://api.crossref.org/works/10.3390%2Fpr10030576; Full author-acquired Crossref JSON and primary front matter | supports | DOI, title and 15 March 2022 publication date agree. Relation metadata is empty and update-to/updated-by absent from the inspected response; this does not prove absence of subsequent corrections. |
+| bounded_search | https://doi.org/10.3390/pr10030576; Independent web and local hidden/ignored searches; local path receipt /private/tmp/cmm-round27-bof-review-dedup.txt | context_only | No applicable correction was identified in the returned exact-DOI query sets. Local matches identify the existing BOF record, its reviews and handoffs; the 2022 Austrian experiment extends that process-defined resource without conflating EAF slag, BOF dust or mineral species. |
+| gates | /private/tmp/cmm-round27-final-terminal.json; Actual coordinator receipt and all three named logs; independently executed named validation log | supports | All required checks reached terminal exit 0. Log hashes agree with the receipt and every canonical BOF input hash was independently rechecked before saving. Checks concern structural integrity, not scientific truth. |
+
+## Limits And Additional Notes
+
+- The 2018 source has unresolved feed-inventory, concentration and percentage conflicts; no closed mass balance can be reconstructed from the reported data.
+- Preliminary 2018 community profiles do not authenticate pure strains or isolate individual causal roles. The 2022 DSM 583 species label conflicts with the current collection catalogue.
+- Acidity, medium composition, external sulfuric acid and retained reactor contents limit biological attribution and between-culture comparisons. Independent 2018 columns and 2022 reactors per treatment are not documented.
+- The 2018 supplement was inspected as original DOCX text/XML and embedded XRD images, not rendered document pages. The 2022 ESI/data was not acquired.
+- The 2022 dosing acid is 2 M but Table 2 reports an 18 M volume basis without detailing the conversion; the displayed efficiency equation does not provide raw inventory bookkeeping.
+- Resin removal, elution and synthetic-matrix precipitation percentages have different stage denominators. None establishes a purified slag-derived product or integrated industrial recovery yield.
+- Correction searches cover the returned exact-DOI query sets and Crossref metadata, not all literature or a verified complete Crossmark service history.
+- Canonical inspect captured the reviewed working-tree bytes and stable base before assessment. The final save verifies those input hashes again.
+- The earlier round26 review was read as provenance context, but this is a fresh independent scientific reassessment of the entire expanded record.
+- No record correction, new history event or corrective issue was warranted by this review. Structural checks do not establish scientific truth.
+- Final batch receipt and logs were inspected after the Cu/Ag correction and before this review save. The BOF target stayed frozen throughout.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T162604Z-basic-oxygen-furnace-steel-slag-round27-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent full scientific review of the expanded BOF steel-slag record
+started_at: '2026-10-11T16:15:56Z'
+finished_at: '2026-10-11T16:26:04.154686Z'
+reviewer:
+  identity: Codex /root/round27_packaging
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The coordinating agent authored the retained 2018 claims and
+    /root/round27_eaf_slag authored the 2022 extension. This reviewer authored neither
+    and made no changes to the target or its histories. Independent assessment used
+    author-acquired primary files, original figure pixels, catalogue pages and fresh
+    web searches in the shared worktree. The reviewer separately authored the scientifically
+    distinct Cu/Ag manufacturing-scrap record.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The whole frozen record faithfully distinguishes two independently sampled
+  BOF slags, conditional microbial or culture-conditioned metal mobilization, real-leachate
+  resin experiments, and synthetic-solution precipitation. Primary numerical, identity
+  and causal limitations are preserved. No corrective record finding was identified.
+source:
+  git_revision: 3f1350b24b4f6248ed2e17caade936c15af9be93
+  state: working_tree
+  inputs:
+  - path: data/records/basic-oxygen-furnace-steel-slag.yaml
+    sha256: 88e0d8b3c9ce06a1d70cf1ab5a34059259c28eac1904cf9589a9dd9364575ea4
+    role: target
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/basic-oxygen-furnace-steel-slag/2026-10-11T153415Z-codex-f742c3.yaml
+    sha256: f753a98da2f0cc7a71fa4d6c1a28ec97b707c4738fa3e0427404faa12a8d6e7f
+    role: context
+  - path: history/records/basic-oxygen-furnace-steel-slag/2026-10-11T161312Z-codex-27b6e0.yaml
+    sha256: 26a4f9792d09decd2733cd69cdccdf09ff7d9af2150718dab43aeca4c1156bf9
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire maintained record and linked histories, including both 2018
+    mechanisms and both 2022 additions; identity, controls, assay conditions, outcomes,
+    contradictions and deployment scope.
+  selection: Assigned independent review of the expanded BOF record; both retained
+    and added scientific claims reassessed.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:basic-oxygen-furnace-steel-slag
+  exclusions:
+  - target: Unavailable 2022 ESI/data
+    reason: Author acquisition receipts and the full main PDF were checked; the unavailable
+      ESI itself was not inspected or accepted as corroboration.
+  - target: Other slag/dust source families
+    reason: Not separately accepted as primary mechanism evidence for this record.
+targets:
+- target_id: cmmmech:basic-oxygen-furnace-steel-slag
+  path: data/records/basic-oxygen-furnace-steel-slag.yaml
+  label: Basic-oxygen-furnace steel slag
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/basic-oxygen-furnace-steel-slag.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named-record validation
+  command: uv run --locked cmmmech validate data/records/basic-oxygen-furnace-steel-slag.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Executed independently with terminal exit 0; named log read: 1 record
+    checked, 0 failed.'
+  target_ids:
+  - cmmmech:basic-oxygen-furnace-steel-slag
+- check_id: batch
+  name: Coordinator final batch checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Actual coordinator terminal receipt and log independently read and log
+    hash verified: 308 passed, 3 skipped in 140.18 seconds; 171 records and 195 histories
+    valid. Reviewed target and all context hashes remain unchanged.'
+  target_ids:
+  - cmmmech:basic-oxygen-furnace-steel-slag
+- check_id: nonempty
+  name: Coordinator final nonempty validation
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Actual coordinator terminal receipt and log independently read and log
+    hash verified: 171 records checked, 0 failed.'
+  target_ids:
+  - cmmmech:basic-oxygen-furnace-steel-slag
+- check_id: history
+  name: Coordinator trusted-base history validation
+  command: uv run --locked cmmmech validate-history --base 3f1350b24b4f6248ed2e17caade936c15af9be93
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Actual coordinator terminal receipt and log independently read and log
+    hash verified: 195 history records checked, 0 errors. Both BOF sidecars remain
+    equal to canonical inspect.'
+  target_ids:
+  - cmmmech:basic-oxygen-furnace-steel-slag
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/basic-oxygen-furnace-steel-slag.yaml
+  locator: Entire frozen YAML and both linked CREATE/EDIT sidecars
+  accessed_at: '2026-10-11T16:21:03.041839Z'
+  support: supports
+  summary: The process-defined resource keeps the Austrian and UK feeds separate and
+    makes no inherited elemental identifier or criticality assertion. Both 2018 mechanism
+    blocks are unchanged from the base, but were independently reassessed here.
+  snapshot_sha256: 88e0d8b3c9ce06a1d70cf1ab5a34059259c28eac1904cf9589a9dd9364575ea4
+- evidence_id: primary2018
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.jenvman.2018.05.056
+  locator: Complete seven-page primary; Methods 2.1–2.7, Results 3.1–3.4; original
+    Figures 1–3 and Tables 1–2 visually inspected
+  accessed_at: '2026-10-11T16:21:03.041839Z'
+  support: supports
+  summary: Adapted Libiola mixed culture and its filtered supernatant mobilized metals
+    from the UK BOF slag under laboratory conditions. The unequal fresh-medium control,
+    reagent acid, unspecified independent column replication, activity proxies and
+    inconsistent inventory constrain attribution and exact recovery.
+  snapshot_sha256: e17a1a49ad53c878924bd967847f2823af3126ef59bcb6b9e45d1e078c22a40b
+- evidence_id: supplement2018
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S0301479718305875-mmc1.docx
+  locator: Original DOCX text/XML table and both embedded XRD images; Figures S1–S2
+    and Table S1
+  accessed_at: '2026-10-11T16:21:03.041839Z'
+  support: supports
+  summary: Preliminary T-RFLP assignments do not justify strain identity or member-specific
+    causality. Mixed XRD phase assignments are retained without implying pure products
+    or uniquely microbial precipitation.
+  snapshot_sha256: 0259b69187a29d2ca45796689ca3a4e1c5ffeea0d357ff24dffca1621ac24659
+- evidence_id: inventory2018
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.jenvman.2018.05.056
+  locator: Table 1, Figures 1–3 and Results 3.1–3.3
+  accessed_at: '2026-10-11T16:21:03.041839Z'
+  support: context_only
+  summary: The feed Al/Cr/V values and batch or column loading do not reconcile the
+    source concentration/mass plots with its extraction percentages; 109% Al and the
+    Mg 29.4% versus cited typical range conflict remain explicit. No exact normalized
+    observation or repaired inventory is imported.
+  snapshot_sha256: e17a1a49ad53c878924bd967847f2823af3126ef59bcb6b9e45d1e078c22a40b
+- evidence_id: resin2018
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.jenvman.2018.05.056
+  locator: Methods 2.5 and Results 3.4
+  accessed_at: '2026-10-11T16:21:03.041839Z'
+  support: supports
+  summary: The 1 g IRA-400/20 mL leachate adsorption and subsequent 20 mL 2 M NaOH
+    elution have separate outcomes. A/B removal and poor elution values match the
+    record; greater B Al removal, uncertain denominator/error definition and 22 versus
+    0.22 micrometre wording are retained.
+  snapshot_sha256: e17a1a49ad53c878924bd967847f2823af3126ef59bcb6b9e45d1e078c22a40b
+- evidence_id: primary2022
+  kind: primary_source
+  reference: https://doi.org/10.3390/pr10030576
+  locator: Complete 12-page version-2 published PDF, including Methods 2.1–2.8, Results
+    3.1–3.4, references; Figures 1–5, Tables 1–2 and displayed equation visually inspected
+  accessed_at: '2026-10-11T16:21:03.041839Z'
+  support: supports
+  summary: The Austrian feed composition, duplicate flask assays, sequential loading
+    reactor cycles, controls and synthetic downstream matrices are supported by the
+    full primary. Biological mobilization depends on medium, acidity and loading;
+    flask null results and high-loading limitations are preserved. The ESI named in
+    the data statement was not acquired.
+  snapshot_sha256: ec418401549a081e8771f54a94fbb715b96efa71981b83b7cadf285c432a5ba1
+- evidence_id: reactor2022
+  kind: primary_source
+  reference: https://doi.org/10.3390/pr10030576
+  locator: Methods 2.3–2.4 and displayed equation; Results 3.2–3.3/Figures 3–4 and
+    Table 2
+  accessed_at: '2026-10-11T16:21:03.041839Z'
+  support: supports
+  summary: Figure 3 approximate flask metrics match the record. Reactor Figure 4 does
+    not sustain the prose universal Al/Mn thresholds; Table 2 high-loading AT acid
+    demand can help explain mobilization. Medium, reagent acid and cycle carryover
+    prevent an isolated species advantage, and raw sample/inventory data cannot be
+    audited.
+  snapshot_sha256: ec418401549a081e8771f54a94fbb715b96efa71981b83b7cadf285c432a5ba1
+- evidence_id: precipitation2022
+  kind: primary_source
+  reference: https://doi.org/10.3390/pr10030576
+  locator: Methods 2.7–2.8 and Results 3.4/Figure 5
+  accessed_at: '2026-10-11T16:21:03.041839Z'
+  support: supports
+  summary: Different Fe(II)-sulfate and Fe(III)-chloride synthetic matrices, adjusted
+    with NaOH and measured after 45 hours, support only differential dissolved-metal
+    depletion. The stated approximate V/Cr/Al/Fe values match Figure 5 and prose.
+    No actual-bioleachate product recovery, oxidation-state-only causal comparison,
+    phase purity or integrated yield is demonstrated.
+  snapshot_sha256: ec418401549a081e8771f54a94fbb715b96efa71981b83b7cadf285c432a5ba1
+- evidence_id: dsm504
+  kind: primary_source
+  reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-504
+  locator: Live collection page independently opened; author-acquired full HTML also
+    read
+  accessed_at: '2026-10-11T16:21:03.041839Z'
+  support: supports
+  summary: The collection maps DSM 504 to Acidithiobacillus thiooxidans. This verifies
+    accession-to-name context, not the identity of the experimental stock.
+  snapshot_sha256: 5ec0de034b3c0b34a660dc47904a866be2e11d566a979f2bf3f2609455ce1099
+- evidence_id: dsm583
+  kind: primary_source
+  reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-583
+  locator: Live collection page independently opened; author-acquired full HTML also
+    read
+  accessed_at: '2026-10-11T16:21:03.041839Z'
+  support: context_only
+  summary: The current catalogue displays Acidithiobacillus ferrooxidans for DSM 583,
+    while the paper uses ferridurans. The record appropriately retains the accession
+    and reported label without silently assigning a species CURIE.
+  snapshot_sha256: 9b179fbe52c92a21328938f76bf676a676e257cf342f5d7a6f3f84193ebabba1
+- evidence_id: metadata2018
+  kind: primary_source
+  reference: https://api.crossref.org/works/10.1016%2Fj.jenvman.2018.05.056
+  locator: Full author-acquired Crossref JSON and primary front matter
+  accessed_at: '2026-10-11T16:21:03.041839Z'
+  support: supports
+  summary: DOI, title and bibliographic identity agree. Relation metadata is empty
+    and no update-to was found in the inspected response; this does not prove absence
+    of subsequent corrections.
+  snapshot_sha256: a2569ab62e6c2b52963e9ee211bc08fe47a092895051d9c480c044c8a5e302b2
+- evidence_id: metadata2022
+  kind: primary_source
+  reference: https://api.crossref.org/works/10.3390%2Fpr10030576
+  locator: Full author-acquired Crossref JSON and primary front matter
+  accessed_at: '2026-10-11T16:21:03.041839Z'
+  support: supports
+  summary: DOI, title and 15 March 2022 publication date agree. Relation metadata
+    is empty and update-to/updated-by absent from the inspected response; this does
+    not prove absence of subsequent corrections.
+  snapshot_sha256: 90e0a23cae442e5287d0e6956e557dc938cd3a717a16826087667e44d86d1c8a
+- evidence_id: bounded_search
+  kind: search
+  reference: https://doi.org/10.3390/pr10030576
+  locator: Independent web and local hidden/ignored searches; local path receipt /private/tmp/cmm-round27-bof-review-dedup.txt
+  accessed_at: '2026-10-11T16:21:03.041839Z'
+  support: context_only
+  summary: No applicable correction was identified in the returned exact-DOI query
+    sets. Local matches identify the existing BOF record, its reviews and handoffs;
+    the 2022 Austrian experiment extends that process-defined resource without conflating
+    EAF slag, BOF dust or mineral species.
+  search_scope: First returned sets for exact DOI 10.3390/pr10030576 plus correction
+    OR corrigendum OR retraction; exact DOI 10.1016/j.jenvman.2018.05.056 with the
+    same terms; exact 2022 title plus synthetic; DSM 583 plus ferrooxidans. rg --no-ignore
+    --hidden --follow searched current records/research/reviews/history, original-checkout
+    records/research and referenced round26/27 BOF raw directories for both DOIs,
+    Yarborough and the target slug. No whole-machine or universal literature-absence
+    claim.
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round27-final-terminal.json
+  locator: Actual coordinator receipt and all three named logs; independently executed
+    named validation log
+  accessed_at: '2026-10-11T16:26:04.154686Z'
+  support: supports
+  summary: All required checks reached terminal exit 0. Log hashes agree with the
+    receipt and every canonical BOF input hash was independently rechecked before
+    saving. Checks concern structural integrity, not scientific truth.
+  snapshot_sha256: 73af58ed64cc2e18adb618642cabb5cd813a78a141630ea0c73fb636d219167c
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Process-defined resource, independent feeds and absent criticality claim
+  outcome: supported
+  summary: Two heterogeneous BOF slags belong to one process-defined secondary-resource
+    record. The UK and Austrian measurements remain separate; no alloy, element or
+    mineral identity is inferred.
+  target_ids:
+  - cmmmech:basic-oxygen-furnace-steel-slag
+  evidence_ids:
+  - record
+  - primary2018
+  - primary2022
+  dimensions:
+  - name: material_kind
+    value: secondary_resource
+    definition: BOF/Linz-Donawitz converter slag; distinct from EAF slag/dust and
+      BOF dust.
+    evidence_ids:
+    - record
+  - name: criticality
+    value: Not asserted
+    definition: No authority, jurisdiction, list or edition designation is inherited
+      from constituent elements.
+    evidence_ids:
+    - record
+- assessment_id: leaching2018
+  area: evidence
+  topic: Culture-conditioned laboratory leaching with limited attribution
+  outcome: supported
+  summary: The record accurately supports conditional aqueous mobilization while retaining
+    organism resolution, unequal controls, null results and quantitative contradictions.
+  target_ids:
+  - cmmmech:basic-oxygen-furnace-steel-slag
+  evidence_ids:
+  - primary2018
+  - supplement2018
+  - inventory2018
+  dimensions:
+  - name: organism_and_biomass
+    value: Adapted mixed Libiola acidophilic culture and separately filtered supernatant
+    definition: Preliminary community labels do not authenticate strains; filtered
+      liquid supports dissolution without retained live cells, without a separate
+      viability claim.
+    evidence_ids:
+    - primary2018
+    - supplement2018
+  - name: pretreatment
+    value: Ground/sieved UK slag; autoclaving before adaptation
+    definition: Batch sizes below 75 micrometres or below 2 mm; malformed coarse-column
+      inequality retained.
+    evidence_ids:
+    - primary2018
+  - name: conditions
+    value: Batch 1 g/100 mL at 30 degrees C, 150 rpm for 3/6 days; columns 100 g/1
+      L, 5 mL/min, 28 +/- 1 degrees C, 22 days
+    definition: Triplicate batch assays, but independent column replication unspecified.
+    evidence_ids:
+    - primary2018
+  - name: controls
+    value: Uninoculated medium; column culture and supernatant compared with higher-pH
+      fresh medium
+    definition: Reagent acid and unequal initial chemistry preclude matched live-cell
+      attribution.
+    evidence_ids:
+    - primary2018
+  - name: outcome
+    value: Conditional Al/Cr/V mobilization, null culture-versus-supernatant and 3-versus-6-day
+      comparisons
+    definition: Inventory contradictions prevent validated exact yields; no isolated
+      product or industrial deployment.
+    evidence_ids:
+    - primary2018
+    - inventory2018
+- assessment_id: resin
+  area: evidence
+  topic: Real-leachate removal and poor elution are separate chemical outcomes
+  outcome: supported
+  summary: Nonmicrobial IRA-400 removal and alkaline elution retain their stage-specific
+    values and source ambiguities; they are not purified-metal or whole-feed yields.
+  target_ids:
+  - cmmmech:basic-oxygen-furnace-steel-slag
+  evidence_ids:
+  - record
+  - resin2018
+  dimensions: []
+- assessment_id: leaching2022
+  area: evidence
+  topic: Independent Austrian-feed assays and sequential reactor operation
+  outcome: supported
+  summary: The record preserves source-specific culture names and approximate feed-relative
+    leaching metrics, without an unsupported universal biological advantage.
+  target_ids:
+  - cmmmech:basic-oxygen-furnace-steel-slag
+  evidence_ids:
+  - primary2022
+  - reactor2022
+  - dsm504
+  - dsm583
+  dimensions:
+  - name: organism_and_biomass
+    value: Live cultures reported as A. thiooxidans DSM 504 and A. ferridurans DSM
+      583
+    definition: DSM 583 catalogue conflict retained; no genotype authentication or
+      species CURIE.
+    evidence_ids:
+    - primary2022
+    - dsm504
+    - dsm583
+  - name: substrate_and_pretreatment
+    value: Austrian BOF slag, dried 22 degrees C, crushed/sieved 0.25–0.5 mm
+    definition: Table 1 triplicate feed composition remains local to this feed; separate
+      from 2018.
+    evidence_ids:
+    - primary2022
+  - name: flask_conditions
+    value: Duplicate 100 mL assays, 10 g/L slag, 10% inoculum, 30 degrees C, 150 rpm,
+      14 days
+    definition: Respective uninoculated-media controls; different media/initial acidity
+      and endpoint pH limit species comparison.
+    evidence_ids:
+    - primary2022
+  - name: reactor_conditions
+    value: 1.5 L working volume, 30 degrees C, 250 rpm, about 30 L/h air; four 2-week
+      cycles at nominal 10/25/50/75 g/L
+    definition: 1 L suspension exchanges retain liquid and solids; acid-controlled
+      pH at/below 2.4; no independent reactor replicates established.
+    evidence_ids:
+    - primary2022
+    - reactor2022
+  - name: controls
+    value: Reactor chemical comparator uses water with pH control, not matched culture
+      medium
+    definition: 2 M dosing acid versus 18 M Table 2 volume basis, added acid and carryover
+      explicitly constrain interpretation.
+    evidence_ids:
+    - reactor2022
+  - name: outcomes_and_deployment
+    value: Condition-dependent laboratory solubilization only
+    definition: Source threshold overstatement, AF vanadium null/inferior comparisons
+      and unavailable recalculation data retained; 1.5 L scale is not industrial deployment.
+    evidence_ids:
+    - primary2022
+    - reactor2022
+- assessment_id: precipitation
+  area: evidence
+  topic: Synthetic matrices do not establish actual effluent recovery
+  outcome: supported
+  summary: The record correctly classifies NaOH precipitation as nonmicrobial and
+    contextual for downstream BOF processing. Distinct solution compositions preclude
+    an oxidation-state-only or microbial causal comparison.
+  target_ids:
+  - cmmmech:basic-oxygen-furnace-steel-slag
+  evidence_ids:
+  - precipitation2022
+  dimensions:
+  - name: conditions
+    value: Duplicate 25 mL synthetic-matrix assays, 500 rpm, 1 M NaOH to pH 2.5–5,
+      45 hours, 0.2-micrometre filtration
+    definition: Initial pH 2.3/2.2 and different Fe reagents and metal salt concentrations
+      retained.
+    evidence_ids:
+    - precipitation2022
+  - name: outcome
+    value: Differential dissolved-metal depletion with co-removal
+    definition: No mineral phase, purity, recovered product mass or integrated feed-to-product
+      balance.
+    evidence_ids:
+    - precipitation2022
+- assessment_id: provenance
+  area: provenance
+  topic: Exact input and historical change accounting
+  outcome: supported
+  summary: Canonical inspect records the stable mainline base and working-tree hashes.
+    CREATE and new EDIT sidecars describe distinct actual changes; review does not
+    invent earlier authorship.
+  target_ids:
+  - cmmmech:basic-oxygen-furnace-steel-slag
+  evidence_ids:
+  - record
+  - metadata2018
+  - metadata2022
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- The 2018 source has unresolved feed-inventory, concentration and percentage conflicts;
+  no closed mass balance can be reconstructed from the reported data.
+- Preliminary 2018 community profiles do not authenticate pure strains or isolate
+  individual causal roles. The 2022 DSM 583 species label conflicts with the current
+  collection catalogue.
+- Acidity, medium composition, external sulfuric acid and retained reactor contents
+  limit biological attribution and between-culture comparisons. Independent 2018 columns
+  and 2022 reactors per treatment are not documented.
+- The 2018 supplement was inspected as original DOCX text/XML and embedded XRD images,
+  not rendered document pages. The 2022 ESI/data was not acquired.
+- The 2022 dosing acid is 2 M but Table 2 reports an 18 M volume basis without detailing
+  the conversion; the displayed efficiency equation does not provide raw inventory
+  bookkeeping.
+- Resin removal, elution and synthetic-matrix precipitation percentages have different
+  stage denominators. None establishes a purified slag-derived product or integrated
+  industrial recovery yield.
+- Correction searches cover the returned exact-DOI query sets and Crossref metadata,
+  not all literature or a verified complete Crossmark service history.
+notes:
+- Canonical inspect captured the reviewed working-tree bytes and stable base before
+  assessment. The final save verifies those input hashes again.
+- The earlier round26 review was read as provenance context, but this is a fresh independent
+  scientific reassessment of the entire expanded record.
+- No record correction, new history event or corrective issue was warranted by this
+  review. Structural checks do not establish scientific truth.
+- Final batch receipt and logs were inspected after the Cu/Ag correction and before
+  this review save. The BOF target stayed frozen throughout.
+tags:
+- round27
+- independent
+- scientific-review
+- secondary-resource
+```
