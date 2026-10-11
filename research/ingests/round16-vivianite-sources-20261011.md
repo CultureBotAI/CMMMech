@@ -1,0 +1,39 @@
+# Round 16 mineral dossier: vivianite and siderite
+
+Prepared 2026-10-11T10:25:45.976429+00:00 by codex / GPT-6 / codex (`/root/round16_vivianite`).
+Base `b714ce2bd8050d5e19ed9ca072460ba2b8154c3b`, branch `curate/cmm-expansion-round16-20261011`. Records, CREATE sidecars and this dossier are uncommitted; independent scientific review is pending. Other batch work is separately owned.
+
+## Selection and conceptual boundaries
+
+The [2015 primary experiment](https://doi.org/10.3389/fmicb.2015.01024) provides one controlled culture with complementary XRD and microscopy. It supports two distinct mineral roots, **vivianite** and **siderite**, which share the experiment rather than count as independent studies. No constituent criticality is inherited. This is a defined Fe(II)-containing laboratory medium, not iron ore, wastewater, Fe(III) reduction or an industrial recovery process.
+
+The [IMA September 2026 list](https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf), visually checked on PDF pages 229 and 199, identifies vivianite as `Fe2+3(PO4)2(H2O)8`, grandfathered with original-description year 1817, and siderite as `Fe(CO3)`, approved in a 1962 special procedure. Page 1 distinguishes special-procedure years from approval numbers; neither was invented as a CURIE. The article's introductory `Fe2CO3` formula is a source error, not the accepted mineral formula.
+
+## Evidence and adverse checks
+
+Full publisher PDF and Europe PMC XML were acquired and inspected; these are copies of one experiment. Methods/Results on pages 2-3, Figure 1 on page 4, Figure 2 on page 5, Figures 3-4 on page 6 and Table 1 on page 7 were checked, with figures rendered and visually inspected. Bulk XRD marks both phases, with vivianite dominant; complementary images show Fe-P-bearing crystals and carbonate aggregates around cells/extracellular polymeric substances. No raw diffraction refitting or quantitative phase analysis was performed.
+
+The accepted organism is *Tessaracoccus lapidicaptus*, [NCBITaxon:1427523](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1427523&mode=Info), species rank, with CECT 8385 = DSM 27266 = IPBSL-7 verified through NCBI type-material names and [LPSN](https://lpsn.dsmz.de/species/tessaracoccus-lapidicaptus). The paper's alternate *Tessarococcus* spelling does not define another taxon.
+
+- Live cultures used FE medium at initial pH 6, 30 C, anaerobic incubation and observation for up to 45 days. Reported bottles and culture volumes are both 100 mL; inoculum OD600 is 0.5, not a stated final culture density. Full w/v composition is in both records, including FeCl2, phosphate, bicarbonate and organic substrates.
+- Uninoculated and nonviable-cell controls reportedly showed no precipitation or pH change. Nonviable preparation, viability verification, inoculum volume and replicate count are not specified. No matched-pH abiotic arm isolates surface nucleation from chemical changes.
+- Final live pH is approximately 7.5 in Results versus 7.8 in Discussion. Both are preserved. Proposed phosphatase/EPS causality, carbonate supply and mineral sequence were not independently perturbed or quantified.
+- Fe(II) falls from a reported 0.56 to 0.01 g/L, but sampled fraction/filtration handling is unspecified. This aggregate assay cannot yield a mineral-specific recovery percentage. Mixed phases do not establish pure isolated products, fertilizer efficacy or deployment.
+- Table 1 supersaturation values are model predictions for initial conditions, not observed control precipitation. The PDF/XML contain no inspected separate supplement; XML has zero supplementary-material elements. Bounded correction/retraction/supplement queries returned no actionable notice, without an exhaustive absence claim.
+
+## Search and provenance
+
+Hidden and ignored files were included with `rg --no-ignore --hidden --follow` across the worktree excluding `.git/.venv`; the scientific directories, docs and local skills were included. Named retained raw directories were inventoried including hidden/ignored files and their text/XML/JSON/Markdown searched: round 5 iron, round 15 mineral and brine, round 14 secondary, and this lane's raw directory. Before creation, there was no matching root record or accepted DOI/organism experiment in those repository boundaries. The round 5 iron report contains siderite contaminant context; its retained primary files contain distinct systems and a vivianite-like assignment that require further scrutiny. IMA files already contained the mineral names. Not every historical binary was reread; this is not a machine-wide novelty claim.
+
+Exact queries, acquisition UTC times, URLs, errors, sizes, SHA256, license notes, phase locators, validation results and follow-up leads are in [the paired JSON](round16-vivianite-sources-20261011.json). Initial sandbox acquisition failed DNS; the authorized network retry downloaded genuine PDF/XML/HTML content. Raw full text and rendered figures stay in `/private/tmp/cmm-round16-vivianite-raw`, outside Git. The primary article states CC BY; IMA states CC BY-SA 3.0; distinct taxonomy/LPSN reuse terms were not reassessed.
+
+## Local changes and checks
+
+- [`data/records/vivianite.yaml`](../../data/records/vivianite.yaml), CREATE `history/records/vivianite/2026-10-11T102429Z-codex-0b28a8.yaml`. Individual validation exit 0: Checked 1 record(s); 0 failed. SHA256 `8d820242970cd8a50d54ce1644caee79cdc508ba7a7c575f556dbe9f94dfc3d7`.
+- [`data/records/siderite.yaml`](../../data/records/siderite.yaml), CREATE `history/records/siderite/2026-10-11T102441Z-codex-ba014b.yaml`. Individual validation exit 0: Checked 1 record(s); 0 failed. SHA256 `664cc364a07cd83345b7d2b7cff2ac6a30403e6a93b3e7cb153418737a835ba0`.
+
+The root reported a terminal baseline of 308 passed, 3 skipped, 122 records and 138 histories before record writes. No native schema or validator change was needed. The individual checks above were executed by this author; independent review and final batch gates remain pending.
+
+## Repeatable follow-up
+
+Assess [Namakiaraghi et al. 2025](https://doi.org/10.1016/j.cemconcomp.2025.106214), found through counterevidence search, for exact strains, Fe(III) feeds, corrosion assays, phase identity and control separation once full methods/figures/SI are acquired. Existing [Sklute 2023](https://doi.org/10.3389/fmicb.2023.1272245) raw files may support distinct assay-arm extensions after phase verification; a vivianite-like label alone is insufficient. [Lu et al. 2022 publisher lead](https://doi.org/10.1039/D1EW00782C) requires full-text and phosphate mass-balance review before recovery claims. These are concrete research leads, not accepted additions or global exhaustion.

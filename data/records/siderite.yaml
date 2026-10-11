@@ -1,0 +1,82 @@
+id: cmmmech:siderite
+name: Siderite
+material_kind: mineral
+description: Siderite is the ferrous carbonate mineral species Fe(CO3), listed as approved through
+  a 1962 special procedure in the September 2026 IMA list. The special-procedure year is not an approval-number
+  CURIE. The selected culture experiment identifies siderite alongside dominant vivianite, rather
+  than a pure carbonate product. It is distinct from elemental iron, iron-ore commodities and other
+  iron-bearing phases. This is the same experiment curated under vivianite, not independent evidence
+  or an inherited criticality designation.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 199, Siderite row; page
+    1 column definitions and page 2 distribution terms.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-11'
+- id: sanchez_roman_2015
+  title: Sánchez-Román, Puente-Sánchez, Parro and Amils (2015). Nucleation of Fe-rich phosphates
+    and carbonates on microbial cells and exopolymeric substances. Frontiers in Microbiology 6:1024.
+    DOI 10.3389/fmicb.2015.01024; Methods, Results, Figures 1-4, Table 1 and Discussion.
+  url: https://doi.org/10.3389/fmicb.2015.01024
+  accessed_on: '2026-10-11'
+- id: ncbi_tessaracoccus
+  title: NCBI Taxonomy 1427523 - Tessaracoccus lapidicaptus; species rank and type-material names
+    CECT 8385, DSM 27266 and IPBSL-7 verified in taxonomy XML on 11 October 2026.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1427523&mode=Info
+  accessed_on: '2026-10-11'
+- id: lpsn_tessaracoccus
+  title: LPSN - Tessaracoccus lapidicaptus; validly published name and equivalent type-strain designations
+    CECT 8385, DSM 27266 and IPBSL-7.
+  url: https://lpsn.dsmz.de/species/tessaracoccus-lapidicaptus
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: tessaracoccus_siderite_formation
+  name: Culture-associated siderite formation with vivianite from an Fe(II) medium
+  process: biomineralization
+  description: Living Tessaracoccus lapidicaptus cultures formed a precipitate whose X-ray diffraction
+    pattern was assigned to siderite together with dominant vivianite. Microscopy shows carbonate-bearing
+    aggregates around cells and extracellular polymeric substances. Culture-associated precipitation
+    is supported, while the proposed mineral sequence, surface nucleation and metabolic carbonate
+    supply are not separately quantified causal pathways.
+  context: Living Tessaracoccus lapidicaptus CECT 8385 (= DSM 27266; type strain IPBSL-7) was cultured
+    anaerobically at 30 degrees C in reported 100-mL bottles containing 100 mL FE medium, examined
+    for mineral formation for up to 45 days. Inoculum OD600 was 0.5; inoculum volume and replicate
+    count are not specified. FE medium was initially pH 6 and autoclaved at 121 degrees C for 20
+    min. Its reported w/v composition was 0.25% NaCl, 0.04% NH4Cl, 0.003% MgCl2.6H2O, 0.005% CaCl2.2H2O,
+    0.2% FeCl2.4H2O, 0.01% yeast extract, 0.085% NaNO3, 0.1% glucose, 0.1% succinic anhydride, 0.05%
+    KH2PO4, 0.025% NaHCO3, 0.05% cysteine hydrochloride and 0.01% resazurin. Iron was supplied as
+    Fe(II), so this selected experiment does not establish microbial Fe(III) reduction. The organism
+    identifier is species-level; the paper and taxonomy authority link the culture collection strains.
+    The paper also uses the spelling Tessarococcus, whereas NCBI and LPSN accept Tessaracoccus.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:1427523
+    label: Tessaracoccus lapidicaptus
+  evidence:
+  - source_ref: sanchez_roman_2015
+    supports: support
+    explanation: Methods and Results on PDF pages 2-3 describe the live cultures and controls. Figure
+      1 on page 4 labels multiple siderite reflections in a pattern dominated by vivianite. Figure
+      4 on page 6 shows assigned siderite aggregates and Fe-C-O-bearing regions, including an EDX
+      spectrum with a small phosphorus signal and a nearby vivianite crystal. The complementary bulk
+      diffraction and microscopy support a siderite-containing mixture; EDX alone would not identify
+      a carbonate mineral species.
+  - source_ref: sanchez_roman_2015
+    supports: partial
+    explanation: Uninoculated and nonviable-cell controls reportedly showed neither mineral precipitation
+      nor pH change; the nonviable-cell preparation and viability check are not specified. Live-culture
+      final pH is approximately 7.5 in Results but 7.8 in Discussion. No matched-pH abiotic control
+      or direct phosphatase/EPS perturbation isolates the proposed nucleation mechanism. Table 1
+      gives modelled initial supersaturation, not observed abiotic precipitation. Reported Fe(II)
+      decline from 0.56 to 0.01 g/L has no specified filtration/fraction protocol and cannot be assigned
+      to either mineral or converted to a recovery yield. Mixed-phase formation, without quantified
+      phase abundance, product purity, isolated mass balance or fertilizer testing, is limited to
+      this laboratory medium; no industrial deployment is established.
+curation_history:
+- timestamp: '2026-10-11T10:24:37.301663+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created siderite mineral identity and bounded culture-associated formation with mixed-phase
+    and control limitations.
+history_refs:
+- history/records/siderite/2026-10-11T102441Z-codex-ba014b.yaml

@@ -1,0 +1,76 @@
+id: cmmmech:lizardite
+name: Lizardite
+material_kind: mineral
+description: Lizardite is the Mg3Si2O5(OH)4 mineral species, grandfathered in the September 2026 IMA
+  list with original-description year 1956. It is distinct from elemental magnesium, generic serpentine
+  minerals and ultramafic rock resources. The experimental material was designated lizardite and chemically
+  characterized by the authors; no quantitative phase-purity result is reported in the inspected study.
+  No constituent criticality designation is inherited.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026; PDF page 127, Lizardite row, and pages 1-2
+    column definitions and terms.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-11'
+- id: sheng_2026
+  title: Sheng, Zheng, Yang, Dong, He and Sheng (2026). Silicate minerals enhance the expression of
+    genes related to mineral dissolution by Priestia aryabhattai strain C4-10. Applied and Environmental
+    Microbiology 92(2):e02554-25. DOI 10.1128/aem.02554-25; Figure 2, Materials and Methods, and supplemental
+    methods pp1-2.
+  url: https://doi.org/10.1128/aem.02554-25
+  accessed_on: '2026-10-11'
+- id: ncbi_priestia
+  title: NCBI Taxonomy 412384 - Priestia aryabhattai, species; current taxonomy XML inspected 11 October 2026.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=412384&mode=Info
+  accessed_on: '2026-10-11'
+- id: ncbi_c4_10
+  title: NCBI assembly GCA_039631325.1, Priestia aryabhattai strain C4-10; linked BioSample SAMN41260351,
+    soil isolate. Assembly dataset report inspected 11 October 2026.
+  url: https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_039631325.1/
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: c4_10_lizardite_dissolution
+  name: C4-10 culture-associated dissolution of a lizardite feed
+  process: bioleaching
+  description: Priestia aryabhattai C4-10 cultures increased magnesium and silicon concentrations relative
+    to uninoculated feed controls, accompanied by acidification and surface-associated cells. Gene-expression
+    correlations are compatible with several contributing processes but do not establish any gene as
+    necessary for dissolution.
+  context: The soil isolate C4-10 was grown in LB, harvested and washed. Methods specify 1.5 mL of a
+    10^8-cells/mL suspension, 60 mL sterilized BHm and 0.6 g mineral in the dissolution protocol, with
+    lizardite substituting for biotite and MgSO4 omitted from BHm. The lizardite feed was 75-150 micrometres
+    and contained reported oxide fractions including 42.85% MgO and 44.35% SiO2; cleaning follows a cited
+    earlier protocol without restating its details. Triplicate laboratory flasks were incubated at 37
+    degrees C and 180 rpm, sampled from 4 to 48 hours. The initial BHm preparation pH is 7.0; Figure 2B instead
+    shows uninoculated lizardite media near 7.6 during sampling. Dissolved elements were measured by
+    ICP-OES. The separate biotite transcriptome assay used a different inoculum volume and is not pooled
+    with this lizardite dissolution assay.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:412384
+    label: Priestia aryabhattai
+  evidence:
+  - source_ref: sheng_2026
+    supports: support
+    explanation: Results and Figure 2A show higher Mg and Si in C4-10-inoculated lizardite medium than
+      uninoculated controls from 8 to 48 hours; Figure 2 caption gives n=3 and error bars as one standard
+      deviation. Figure 2B shows culture acidification relative to controls, and Figure 2E compares stained
+      cells on the mineral after 24 hours. These observations support conditional culture-associated
+      dissolution, without requiring a gene-specific causal assignment.
+  - source_ref: sheng_2026
+    supports: partial
+    explanation: There is no pH-matched abiotic comparison separating acid dissolution from other cellular
+      effects. The text describes decreasing culture pH over 4-48 hours, whereas Figure 2B shows a dip
+      followed by partial rebound; this record preserves the figure-level pattern rather than a monotonic
+      decline. Supplemental methods classify siderophore units below 10% as negative, although Figure 2D
+      displays some such values; a positive siderophore mechanism is therefore not assigned to every
+      time point. Feed phase purity and an isolated recovery yield remain unresolved. Surface staining
+      and gene correlations do not prove intracellular uptake or gene necessity, and no industrial deployment
+      is demonstrated.
+curation_history:
+- timestamp: '2026-10-11T10:24:54.074873+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created lizardite species record with culture-associated dissolution and source limitations.
+history_refs:
+- history/records/lizardite/2026-10-11T102453Z-codex-c8e63a.yaml
