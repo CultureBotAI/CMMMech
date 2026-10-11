@@ -138,6 +138,10 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Vivianite](data/records/vivianite.yaml) | Culture-associated precipitation from a defined Fe(II) medium | Dominant phase in a mixed product; no demonstrated Fe(III) reduction or pure-product yield |
 | [Siderite](data/records/siderite.yaml) | Co-occurring carbonate in the same culture experiment | Separate mineral identity, shared experiment and unquantified phase abundance |
 | [Oil and gas produced water](data/records/oil-and-gas-produced-water.yaml) | USGS production-stream identity and resource context | Identity-only secondary resource; microbial treatment evidence remains deferred |
+| [Enstatite](data/records/enstatite.yaml) | Bacterial treatment of an olivine/enstatite mixed feed | Modelled phase dissolution differs between culture and cell-free arms; no pure-enstatite assay |
+| [Olivine group](data/records/olivine-group.yaml) | Bacterial culture and filtered-biolixiviant comparisons | Natural group feeds remain distinct from pure forsterite; mixed solids and denominator conflicts constrain yields |
+| [Biotite mica series](data/records/biotite.yaml) | C4-10 culture-associated iron and silicon mobilization | Unresolved member species, unmatched acidity and expression correlations limit causal claims |
+| [Reverse osmosis concentrate](data/records/reverse-osmosis-concentrate.yaml) | Sludge-associated precipitation in river-derived concentrate | Control limitations and tentative solid phases; downstream recovery is a separate process |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -161,7 +165,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [fourteenth expansion reviews](research/ingests/round14-20261011-publication.md),
 [fifteenth expansion reviews](research/ingests/round15-20261011-publication.md),
 [sixteenth expansion reviews](research/ingests/round16-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round16-frontier-20261011.md), and
+[seventeenth expansion reviews](research/ingests/round17-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round17-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

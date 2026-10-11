@@ -1,0 +1,319 @@
+schema_version: 1.0.0
+review_id: 20261011T105429Z-biotite-round17-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Biotite mica series
+started_at: '2026-10-11T10:51:55Z'
+finished_at: '2026-10-11T10:54:29Z'
+reviewer:
+  identity: Codex /root/round17_saline
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent /root/round17_biotite authored target and CREATE
+    history. Reviewer independently read primary methods, supplement, figures and
+    authorities and made no target edits; shared worktree is disclosed.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Biotite is correctly represented as a mica series/group, and the culture-associated
+  dissolution claim is bounded to the author-designated feed and assay. No actionable
+  defect found; unresolved phase identity, analytical fraction and causal mechanisms
+  remain explicit.
+source:
+  git_revision: 4504ab1c5a005ea31e65318c3b3f206d6fbf44ed
+  state: working_tree
+  inputs:
+  - path: data/records/biotite.yaml
+    sha256: 52c2162343ba439ef35da695d6aed7cdf03c6e91fb43bfa9c9d706de24a5cbe8
+    role: target
+  - path: history/records/biotite/2026-10-11T104944Z-codex-f8837c.yaml
+    sha256: cee6095698c41ff565d1a0fb45515678bf92c3868e2d962f838e82175cb32cb2
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:biotite
+  path: data/records/biotite.yaml
+  label: Biotite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/biotite.yaml
+    role: maintained_record
+scope:
+  description: All scientific and provenance fields of the final new biotite record.
+  selection: One assigned new record with exact final hash captured through canonical
+    inspect before judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:biotite
+  exclusions:
+  - target: Other records, raw-data reanalysis, industrial applications and inherited
+      reference39 cleaning protocol
+    reason: Read nearby lizardite and source dossiers as context; the precise inherited
+      cleaning protocol is unavailable and explicitly unclaimed.
+checks:
+- check_id: named
+  name: Independent named-file validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/biotite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:biotite
+  summary: Checked 1 record(s); 0 failed. Reviewer executed to terminal exit 0; exact
+    hash remains unchanged.
+- check_id: batch
+  name: Native full checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed; reviewer independently inspected completed receipt and
+    terminal log. /private/tmp/cmm-round17-final-batch.log: uv run --locked --extra
+    dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 98.20s (0:01:38)
+
+    Checked 132 record(s); 0 failed.
+
+    Checked 148 history record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:biotite
+- check_id: require
+  name: Required corpus
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed; reviewer independently inspected completed receipt and
+    terminal log. /private/tmp/cmm-round17-final-require.log: Checked 132 record(s);
+    0 failed.
+
+    '
+  target_ids:
+  - cmmmech:biotite
+- check_id: history
+  name: Trusted-base history
+  command: uv run --locked cmmmech validate-history --base 4504ab1c5a005ea31e65318c3b3f206d6fbf44ed
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed; reviewer independently inspected completed receipt and
+    terminal log. /private/tmp/cmm-round17-final-history.log: Checked 148 history
+    record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:biotite
+evidence:
+- evidence_id: target
+  kind: record_content
+  reference: data/records/biotite.yaml
+  locator: Entire YAML and linked CREATE session
+  accessed_at: '2026-10-11T10:54:29Z'
+  support: supports
+  summary: Read all fields and actual sidecar at inspected final bytes. One new material
+    root; no criticality or phase-specific external material identifier asserted.
+  snapshot_sha256: 52c2162343ba439ef35da695d6aed7cdf03c6e91fb43bfa9c9d706de24a5cbe8
+- evidence_id: nomenclature
+  kind: authority
+  reference: https://doi.org/10.1346/CCMN.1998.0460513
+  locator: Rieder1998 p586 approval; p589 Table4 and adjacent series-name guidance
+  accessed_at: '2026-10-11T10:54:29Z'
+  support: supports
+  summary: Independently read retained complete primary nomenclature PDF and rendered
+    p589. Defines biotite as a series around annite-phlogopite and siderophyllite-eastonite
+    joins; incompletely investigated feeds do not resolve member species. The historical
+    Commission approval is explicit.
+  snapshot_sha256: 8661dd8e830f3cab69ee6659ce05b3295df72afd8db6d8b21974da4f454058a3
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/ima_reports/2%20IMA-Nomenclature-e-Booklet-2019-1.pdf
+  locator: 'PDF pp33-35: Whitney and Evans2010 reproduced table and GROUP definition'
+  accessed_at: '2026-10-11T10:54:29Z'
+  support: supports
+  summary: Independently read retained official compendium and rendered biotite GROUP
+    row on p34; p35 defines GROUP as mineral species group. Record correctly retains2010
+    table/2019 compendium distinction.
+  snapshot_sha256: aa78fca8983aa876dd2657e1874aa8f012a3e0236ad6717b675b76d86f8868c5
+- evidence_id: experiment
+  kind: primary_source
+  reference: https://doi.org/10.1128/aem.02554-25
+  locator: Sheng2026 main Materials and Methods, biotite Results and Figure1A-E, Discussion
+  accessed_at: '2026-10-11T10:54:29Z'
+  support: supports
+  summary: Independently read retained full XML and relevant methods/results; visually
+    inspected original Figure1. The1.5mL dissolution inoculum differs from0.5mL transcriptome
+    inoculum, and Fe/Si controls support the scoped observation. Correlative genes
+    and stained cells do not establish necessity or intracellular uptake.
+  snapshot_sha256: 964dca1e8190032f5d1241c843ee052b642bd949ddc917e7245569975a64a344
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://doi.org/10.1128/aem.02554-25
+  locator: Supplementary methods pp1-2 and FigureS3; aem.02554-25-s0001.pdf
+  accessed_at: '2026-10-11T10:54:29Z'
+  support: context_only
+  summary: Read actual siderophore negative threshold below10%, conflicting with main
+    detectable1.7-7.6% values. Cell-digest filtration applies to a separate assay
+    and cannot fill missing separation of aqueous Fe/Si aliquots. Organic-acid comparisons
+    support association, not an isolated causal mechanism.
+  snapshot_sha256: f48212f02220c34f9900690484231823cca2f11c2475566713a35bc465ba1465
+- evidence_id: taxon
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=412384&mode=Info
+  locator: Live NCBI species name/rank and retained taxonomy XML
+  accessed_at: '2026-10-11T10:54:29Z'
+  support: supports
+  summary: Live NCBI browser confirms Priestia aryabhattai species taxon412384. It
+    is a species identifier, not a strain accession or causal attribution.
+- evidence_id: strain
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_039631325.1/
+  locator: Retained official dataset report organism/infraspecific_names and BioSample
+    fields
+  accessed_at: '2026-10-11T10:54:29Z'
+  support: supports
+  summary: Reinspected retained dataset report linking C4-10 to taxon412384 and soil
+    sampleSAMN41260351. Not a fresh assembly API retrieval. Platform/completeness
+    discrepancies between paper and archive are excluded from the record.
+  snapshot_sha256: 6b6e65532705eb84c7b608f2c3c48e5a91c08f051f128d228a32941226f68602
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round17-biotite-review/checks.json
+  locator: Exact query list and dedup.log
+  accessed_at: '2026-10-11T10:54:29Z'
+  support: context_only
+  summary: No applicable correction surfaced in first returned sets; AEM.02554-13
+    is a different identifier. Existing lizardite and biotite use distinct feeds from
+    one experiment, not independent replications.
+  search_scope: Hidden and ignored files included, relevant links followed across
+    data,research,reviews,history,.claude and named round16-silicate/round17-biotite
+    raw roots. Binary sources inspected through extraction/rendering. No global novelty
+    or exhaustive absence claim.
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round17-gate-receipts.json
+  locator: Actual terminal receipt and round17 final batch/require/history logs
+  accessed_at: '2026-10-11T10:54:29Z'
+  support: supports
+  summary: 'Completed checks: 308 passed, 3 skipped; 132 records, 148 histories. Named-file
+    review validation also passed; reviewed hash remains exact.'
+  snapshot_sha256: a97866f32dbfe066d7f81fdc33be528505b734a195c8db28c8df0c7880e027d0
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mica series and member-species boundary
+  outcome: supported
+  summary: Series identity maps explicitly to mineral_group without treating biotite
+    as one mineral species or inheriting constituent criticality.
+  target_ids:
+  - cmmmech:biotite
+  evidence_ids:
+  - target
+  - nomenclature
+  - ima
+  - search
+  dimensions:
+  - name: material_kind
+    value: mineral_group; biotite mica series
+    definition: Nomenclature series spanning member species; author-designated experimental
+      feed is not member-resolved.
+    evidence_ids:
+    - nomenclature
+    - ima
+    - target
+  - name: criticality
+    value: Not asserted
+    definition: No jurisdiction/list/edition claim inferred from constituent elements.
+    evidence_ids:
+    - target
+- assessment_id: mechanism
+  area: evidence
+  topic: Assay-specific culture-associated Fe/Si mobilization
+  outcome: supported
+  summary: Full methods and Figure1 support the qualified living-C4-10 versus uninoculated-feed
+    comparison. Source contradictions and unavailable phase/fraction/causal evidence
+    are retained.
+  target_ids:
+  - cmmmech:biotite
+  evidence_ids:
+  - experiment
+  - supplement
+  - taxon
+  - strain
+  - target
+  dimensions:
+  - name: organism_and_state
+    value: Living Priestia aryabhattai C4-10; species412384 and assembly strain linkage
+      checked
+    definition: Species CURIE scope remains distinct from the experimental strain
+      and its inferred gene functions.
+    evidence_ids:
+    - taxon
+    - strain
+    - experiment
+  - name: scale
+    value: Laboratory; no isolated product yield or deployment
+    definition: Triplicate60mL assays at37degreesC/180rpm,4-48h timecourse; transcriptome
+      arm separately scoped.
+    evidence_ids:
+    - target
+    - experiment
+- assessment_id: provenance
+  area: provenance
+  topic: Final working bytes and actual creation session
+  outcome: supported
+  summary: Canonical inspect captured exact target and CREATE history against available
+    merged base. Actor, timestamps and target agree; no earlier history or review
+    was rewritten.
+  target_ids:
+  - cmmmech:biotite
+  evidence_ids:
+  - target
+  - gates
+findings: []
+actions: []
+limitations:
+- The experimental feed has no demonstrated member-species identity or phase purity;
+  fraction preparation for Fe/Si aliquots and earlier-reference cleaning details remain
+  unresolved.
+- No acid-matched, genetic knockout or rescue experiment establishes individual causal
+  roles. The CAS detection-threshold contradiction is explicit; no positive siderophore
+  mechanism is accepted.
+- Retained authority/source files were independently inspected, not all freshly downloaded.
+  The assembly and article disagree about platform/completeness; those claims remain
+  excluded. Bounded web searches cannot prove global absence of contrary evidence.
+notes:
+- Review starts at the canonical inspection file completion time. Retained full texts
+  and sources were acquired by the curator or prior rounds; this reviewer independently
+  assessed their actual bytes. Whole-batch receipts below are parent-executed checks,
+  independently inspected before saving.
+tags:
+- round17
+- independent
+- scientific-review
+- mineral-group

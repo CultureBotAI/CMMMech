@@ -1,0 +1,35 @@
+# Round17 biotite source assessment
+
+Prepared 2026-10-11T10:50:50.243690+00:00 by codex (GPT-6; codex), `/root/round17_biotite`, against base `4504ab1c5a005ea31e65318c3b3f206d6fbf44ed` on `curate/cmm-expansion-round17-20261011`. Scope is the biotite mica series and the C4-10 assay; no new criticality claim, bulk dataset or schema change is proposed.
+
+## Selection and identity
+
+Biotite is suitable as `mineral_group`, with its **series** scope retained explicitly. [Rieder et al. (1998)](https://doi.org/10.1346/CCMN.1998.0460513), p586, identifies Commission approval; p589 Table4 defines the trioctahedral mica field around the annite-phlogopite and siderophyllite-eastonite joins. The adjacent text explains incompletely characterized field materials and favors member names after detailed characterization. The publisher's 2024 online posting date is not the article's 1998 publication date.
+
+The [IMA-hosted compendium](https://cnmnc.units.it/ima_reports/2%20IMA-Nomenclature-e-Booklet-2019-1.pdf), copyright2019 and prepared for IMA2018, reproduces Whitney and Evans (2010), DOI10.2138/am.2010.3371, at PDF pp33-35. Its Table1 identifies biotite as GROUP on PDF p34; p35 defines GROUP as a group of mineral species. This is a reproduction of a historical table, not a newly revised 2019 list. Both table pages were visually checked. A master-list omission alone was not used to infer group status. No guessed member species, universal chemical formula or external species CURIE is assigned.
+
+## Primary assay and limits
+
+[Sheng et al. (2026), DOI10.1128/aem.02554-25](https://doi.org/10.1128/aem.02554-25) is already used for lizardite in round16. The biotite substrate is a distinct material in that same experiment, not an independent replication. Main text/XML, Figure1 image, and supplementary methods pp1-2 were reinspected from the retained round16 acquisition; a live PMC fulltext check confirmed article identity and license.
+
+The living C4-10 soil isolate was grown in LB, harvested and washed; the dissolution assay used 1.5mL of 10^8cells/mL suspension, 60mL BHm and 0.6g feed, at 37°C/180rpm, with triplicate 4-48h sampling. The separate 8h transcriptome arm used 0.5mL suspension. Feed was author-designated biotite,75-150µm, with bulk oxide characterization; member species and phase purity remain unresolved. The cited cleaning steps are not restated. BHm preparation pH7.0 is distinct from observed culture pH. ICP-OES Fe/Si results support culture-associated mobilization relative to uninoculated feed controls. No acid-matched abiotic comparison isolates the individual roles of acidification, attachment or metabolites. Elemental aliquot fraction preparation is not specified in the inspected main/supplement methods; the separate cell-digest filtration cannot be transferred to those aliquots.
+
+Figure1 was visually checked, including control trajectories, acidification, siderophore and polysaccharide curves, and fluorescence images. The main text calls early1.7-7.6% CAS siderophore units detectable, whereas supplement p2 calls values below10% negative; later biotite measurements are reported nondetections. No positive siderophore-specific mechanism is accepted. Molecular expression correlations do not establish gene necessity, which the Discussion explicitly acknowledges. Cell-associated Fe and surface staining do not establish intracellular uptake or recovered product. No isolated yield, whole-feed mass balance or industrial deployment is asserted.
+
+NCBI Taxonomy412384 was checked live and in retained XML for the current species label. The retained official assembly report GCA_039631325.1 confirms C4-10 and soil BioSampleSAMN41260351. The browser assembly page was unavailable this pass. The report describes a contig assembly, Nanopore/Unicycler, whereas the article describes complete-genome/Illumina/SOAPdenovo methods; no assembly-method or completeness claim is imported. The taxonomy page retains historical disagreement about synonymy with P.megaterium; this record follows the current deposited identifier and strain designation.
+
+## Search, acquisition and deduplication
+
+The paired JSON contains exact queries, URLs, timestamps, hashes and acquisition failures. Web queries covered IMA/CNMMN mica nomenclature, the exact Sheng DOI with correction/retraction/erratum, and Priestia/biotite/control/siderophore context. Only returned, unpaginated result sets were inspected. No affecting notice surfaced; the unrelated AEM.02554-13 retraction is not evidence against this article.
+
+Deduplication used hidden/ignored/followed searches in `data`, `research`, `reviews`, `history`, `.claude`, `/private/tmp/cmm-round16-silicate-raw` and `/private/tmp/cmm-round17-biotite-raw`, plus a complete hidden/ignored/followed record-file inventory. Relevant binary sources were inspected separately. The checked corpus contained lizardite and source references, but no existing biotite root before creation; no machine-wide absence claim is made. This pass's retained raw files remain outsideGit. The nomenclature paper and compendium have copyright restrictions; reading access was not treated as redistribution permission. Sheng's main article is CC-BY4.0, while its supplement gives a separate reuse notice.
+
+## Handoff and next priorities
+
+1. Review the newly created `data/records/biotite.yaml` independently; its CREATE history is `history/records/biotite/2026-10-11T104944Z-codex-f8837c.yaml`. Individual validation finished exit0: one record, zero failures. This source assessment is not its scientific acceptance review.
+2. Follow [Dong et al. (2026), DOI10.1128/aem.01201-26](https://doi.org/10.1128/aem.01201-26). Primary abstract, material methods and other-mineral Results show a useful biotite comparator and potassium-feldspar/olivine/hematite leads. Full supplement TablesS6/S7, strain accessions and analytical/control details remain to be reviewed. The methods duplicate CM125967.1 for two named strains, so accession correction is a concrete requirement. Coordinate olivine identity with the separate enstatite lane; do not create duplicate records.
+3. Acquire [Sheng et al. (2008), DOI10.1139/W08-089](https://doi.org/10.1139/W08-089), reference39, to resolve the inherited mineral-cleaning protocol. Additional mica-member records require their own verified identities and evidence; the group experiment does not assign a member.
+
+This bounded investigation leaves concrete evidence leads. It does not establish exhaustion of CMM materials or microbial studies.
+
+JSON receipt: [round17-biotite-sources-20261011.json](round17-biotite-sources-20261011.json).
