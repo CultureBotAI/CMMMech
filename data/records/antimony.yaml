@@ -1,0 +1,131 @@
+id: cmmmech:antimony
+name: Antimony
+material_kind: element
+description: >-
+  Antimony (Sb), represented as an element distinct from antimonate feed,
+  sorbed antimonite and sulfide-bearing products. A sediment-inoculated
+  laboratory experiment supports transformation through coupled microbial
+  and chemical reactions under sulfidogenic conditions. The United States
+  2025 critical-mineral designation names the antimony commodity; it does
+  not designate every Sb compound, host mineral or secondary resource.
+identifiers:
+  - id: CHEBI:30513
+    label: antimony atom
+sources:
+  - id: johnson_2021
+    title: >-
+      Johnson, Antonopoulos, Boyanov, Flynn, Koval, Kemner and O'Loughlin
+      (2021). Reduction of Sb(V) by coupled biotic-abiotic processes under
+      sulfidogenic conditions. Heliyon 7(2), e06275.
+      DOI 10.1016/j.heliyon.2021.e06275; PMID 33681496; PMC7930292.
+    url: https://doi.org/10.1016/j.heliyon.2021.e06275
+    accessed_on: '2026-10-11'
+  - id: usgs_2025
+    title: >-
+      U.S. Geological Survey (2025). Final 2025 List of Critical Minerals.
+      Federal Register 90 FR 50494-50497, November 7, 2025;
+      antimony row in the final commodity table, page 50496.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: chebi_antimony
+    title: 'ChEBI:30513 - antimony atom; Sb, net charge zero'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:30513
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States of America
+    list_name: U.S. Department of the Interior Final List of Critical Minerals
+    edition: '2025 (published November 7, 2025; 90 FR 50494-50497)'
+    classification: critical
+    source_ref: usgs_2025
+mechanisms:
+  - id: sediment_sulfidogenic_antimonate_transformation
+    name: Antimonate transformation coupled to microbial sulfur and iron cycling
+    process: redox_transformation
+    description: >-
+      In wetland-sediment-inoculated microcosms containing antimonate,
+      ferrihydrite, sulfate and lactate, solids-associated Sb(V) was
+      progressively reduced to Sb(III). X-ray absorption spectroscopy
+      supported both oxygen- and sulfur-coordinated Sb(III). Microbial
+      sulfate reduction and formation of reactive sulfide species provide
+      an indirect route: separate pasteurized-biogenic-material and
+      mackinawite experiments also reduced Sb(V). Direct enzymatic
+      reduction may contribute but was not demonstrated or excluded.
+      This is a laboratory transformation observation, without an
+      isolated-product yield or demonstrated industrial deployment.
+    context: >-
+      Johnson et al. system D: duplicate 240 mL serum bottles containing
+      200 mL final suspension, with 2 mM Sb(V) added as KSb(OH)6,
+      50 mM Fe(III) as ferrihydrite, sulfate reported as 10 mM, and
+      lactate in defined mineral medium adjusted to pH 7.2 before assembly.
+      The abstract gives 10 mM lactate, whereas Methods 2.3 specifies
+      2 mL of 2 M lactate in 200 mL, arithmetically 20 mM; this loading
+      discrepancy is unresolved. Bottles were argon-sparged for 20 min
+      and incubated in the dark at 30 degrees Celsius with roller mixing.
+      Each received 1 mL of an anoxic slurry made from 10 g of the top
+      5 cm of a Typha-dominated wetland sediment at Argonne National
+      Laboratory in 150 mL medium. No pure strain or individual taxon's
+      causal contribution is assigned. System D pH was reported as
+      7.11 initially, 6.87 at day 3 and 7.44 at day 21. ICP-OES measured
+      total Sb in the 0.2 micrometre nylon filtrate, with a 5 micromolar
+      detection limit; filter-retained solids were preserved anoxically
+      for Sb K-edge XANES/EXAFS. Solution depletion and solids-associated
+      redox speciation are distinct analytical outcomes. The experiment
+      used defined laboratory feed, not ore, waste leachate or a field
+      treatment installation.
+    microbial: true
+    evidence:
+      - source_ref: johnson_2021
+        supports: support
+        explanation: >-
+          Methods 2.3-2.4, 2.8 and 2.11; Results 3.1; Figures 13-16:
+          system D lost more than 99% of solution-phase Sb within 5 days,
+          while its day-5 EXAFS remained similar to the uninoculated
+          control. Later XANES/EXAFS showed reduction and changing O/S
+          coordination. Early solution removal therefore does not itself
+          establish reduction. Spectral components are model-based
+          assignments, not isolated product quantities or recovery yields.
+      - source_ref: johnson_2021
+        supports: partial
+        explanation: >-
+          Methods 2.3 and Results 3.1 define uninoculated system A as
+          containing Sb(V), ferrihydrite and sulfate. It removed about
+          98% of solution-phase Sb within 5 days without detected Sb(V)
+          reduction, supporting substantial abiotic sorption. Abbreviated
+          Figure 3/4 captions omit Sb from A; the explicit methods and
+          Sb results ground this control assignment. Community sequencing
+          and sulfate consumption support microbial activity, but do not
+          identify an Sb reductase or prove direct Sb respiration.
+      - source_ref: johnson_2021
+        supports: partial
+        explanation: >-
+          Methods 2.7, Results 3.2, Figure 18 and Discussion 4.3:
+          material from the Sb-free biotic system B at day 21 was
+          pasteurized for 1 hour at 70 degrees Celsius, amended with
+          2 mM Sb(V), and examined after a further 21 days. Sb(III)
+          formation in this material and in separate abiotic mackinawite
+          assays supports a chemical reduction route involving biogenic
+          sulfide. This is a mechanistic comparison, not a matched
+          killed-cell replicate of D or a quantitative microbial-effect
+          estimate. Attempts to enrich direct Sb(V)-reducing bacteria
+          failed, but do not rule out their contribution in D.
+      - source_ref: johnson_2021
+        supports: partial
+        explanation: >-
+          Results 3.1 and Discussion 4.3 do not uniquely identify all
+          system D products: fits using sorbed Sb(III) and amorphous
+          Sb2S3 standards describe O/S coordination, but a mixed-ligand
+          phase such as kermesite could not be resolved from those
+          alternatives. No crystalline Sb mineral is assigned here.
+          The paper also cautions that acid-extraction Fe(II) assays can
+          overestimate in-situ Fe reduction in sulfide-bearing samples.
+curation_history:
+  - timestamp: '2026-10-11T04:57:40Z'
+    curator: Codex (GPT-6; Codex)
+    action: create_record
+    summary: >-
+      Curated elemental antimony, the US 2025 designation and a sediment
+      microcosm transformation with chemical controls, uncertain lactate
+      loading and nonunique product speciation. Kept incomplete BES Sb
+      sample and microbial attribution in the research handoff.
+history_refs:
+  - history/records/antimony/2026-10-11T045740Z-codex-3839a3.yaml

@@ -1,0 +1,108 @@
+id: cmmmech:cerium
+name: Cerium
+material_kind: element
+description: >-
+  Cerium (Ce), a lanthanoid chemical element. The United States' named cerium
+  commodity designation is mapped to this element without extending it to
+  every cerium compound. The experiment uses soluble CeCl3 and yields
+  cerium-bearing phosphate/oxalate solids, not elemental cerium metal.
+identifiers:
+  - id: CHEBI:33369
+    label: cerium atom
+sources:
+  - id: chebi_cerium
+    title: 'ChEBI:33369 - cerium atom; formula Ce, net charge zero'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:33369
+    accessed_on: '2026-10-11'
+  - id: us_2025
+    title: >-
+      U.S. Department of the Interior, U.S. Geological Survey. Final 2025
+      List of Critical Minerals, 7 November 2025, 90 FR 50494-50497,
+      document 2025-19813; final table, Cerium row.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: kang_2022
+    title: >-
+      Kang, Csetenyi, Gao and Gadd (2022). Solubilization of struvite and
+      biorecovery of cerium by Aspergillus niger. Applied Microbiology and
+      Biotechnology 106:821-833. DOI 10.1007/s00253-021-11721-0;
+      PMC8763747; Methods, Figures 3, 6 and 9, Table 2 and Discussion.
+    url: https://doi.org/10.1007/s00253-021-11721-0
+    accessed_on: '2026-10-11'
+  - id: ncbi_atcc1015
+    title: 'NCBI Taxonomy 380704 - Aspergillus niger ATCC 1015, no-rank strain entry'
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=380704&mode=Info
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States
+    list_name: Department of the Interior Final List of Critical Minerals
+    edition: '2025 final, published 7 November 2025'
+    classification: critical
+    source_ref: us_2025
+mechanisms:
+  - id: fungal_leachate_cerium_precipitation
+    name: Cerium precipitation using pretreated biomass-free fungal struvite leachate
+    process: biomineralization
+    description: >-
+      Pretreated culture filtrate from Aspergillus niger ATCC 1015 growth on
+      struvite-bearing material precipitated cerium-bearing phosphate and,
+      at higher Ce loading, oxalate phases. Microbial involvement denotes
+      upstream leachate production; the cerium reaction itself was cell-free.
+    context: >-
+      Laboratory leachate came from 14-day fungal growth at 25 degrees C
+      and 125 rpm in darkness, with 1% w/v pulverized natural
+      struvite/dittmarite feed oven-treated at 105 degrees C for 48 h.
+      Modified Czapek-Dox medium contained 1 g/L Na2HPO4 as background
+      phosphate, with a 1 x 10^6 spores/mL inoculum. Biomass was removed
+      by filtration. Leachate was treated with 0.5 g H-form AG 50W-X8
+      cation-exchange resin per 5 mL for 24 h, adjusted to pH 7.5 using
+      4 M NaOH, and filtered at 0.25 micrometers. CeCl3 at final 5, 20,
+      40 or 50 mM Ce3+ was mixed with treated leachate in 10 mL reactions
+      for 24 h on a roller at room temperature, in triplicate. Solids were
+      centrifuged, washed three times and dried. This is a laboratory
+      precipitation experiment with synthetic cerium solution, not live-cell
+      cerium reduction, isolated elemental-metal yield or industrial deployment.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:380704
+        label: Aspergillus niger ATCC 1015
+    evidence:
+      - source_ref: kang_2022
+        supports: support
+        explanation: >-
+          Results and Figure 3 report greater than 99% removal of Ce from
+          solution at the tested loadings. At 50 mM input, residual Ce was
+          27.34 +/- 1.91 micromolar; caption errors are SEM for at least
+          three replicates. Supernatant Ce was measured by Arsenazo III
+          colorimetry at 658 nm. Reported apparent complete removal at lower
+          loadings does not establish literal zero residual concentration;
+          the inspected method does not give a detection limit. Solution
+          removal and weighed precipitate mass are not a pure-cerium yield.
+      - source_ref: kang_2022
+        supports: support
+        explanation: >-
+          Figure 6 XRD with Table 2 Rietveld fits assigns CePO4.H2O at
+          20 mM CeCl3 and phosphate plus Ce2(C2O4)3.10H2O at 50 mM.
+          Figure 9 FTIR supports phosphate and higher-loading oxalate
+          assignments. Fitted phase proportions are not recovery percentages
+          or proof of absolute phase purity. Subsequent high-temperature
+          calcination results are separate from the microbial-associated step.
+      - source_ref: kang_2022
+        supports: partial
+        explanation: >-
+          Resin treatment and alkaline adjustment are material process steps.
+          The inspected full text does not report a matched synthetic
+          phosphate/oxalate mixture or untreated-filtrate control for the
+          cerium stage. Background medium phosphate prevents assigning all
+          precipitate phosphorus to struvite. The study supports this prepared
+          leachate's precipitation performance, not microbial necessity for
+          precipitation, REE selectivity or performance on real cerium wastes.
+curation_history:
+  - timestamp: '2026-10-11T04:55:52Z'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Created verified element identity and dated criticality with bounded
+      Kang 2022 laboratory evidence, preserving feed, control and assay limits.
+history_refs:
+  - history/records/cerium/2026-10-11T045547Z-codex-ed2983.yaml

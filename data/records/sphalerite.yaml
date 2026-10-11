@@ -1,0 +1,124 @@
+id: cmmmech:sphalerite
+name: Sphalerite
+material_kind: mineral
+description: >-
+  Sphalerite is the mineral species with IMA-approved formula ZnS.
+  The September 2026 IMA list records status A (approved) and the
+  IMA No./Year entry 1980 s.p., denoting special procedure rather than a
+  sequential approval identifier or the year of original discovery.
+  This species is distinct from elemental zinc, the zinc commodity,
+  other ZnS phases and a flotation concentrate. The curated experiments
+  used an iron-bearing Gamsberg concentrate; they are the same studies
+  represented under cmmmech:zinc, not additional independent replications.
+  No constituent-element criticality is inherited.
+sources:
+  - id: ima_2026_09
+    title: >-
+      IMA-CNMNC. The New IMA List of Minerals, September 2026.
+      PDF page 203, Sphalerite row; page 1, column definitions;
+      page 2, distribution terms.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-11'
+  - id: fowler_crundwell_1999
+    title: >-
+      Fowler TA and Crundwell FK (1999). Leaching of Zinc Sulfide by
+      Thiobacillus ferrooxidans: Bacterial Oxidation of the Sulfur Product
+      Layer Increases the Rate of Zinc Sulfide Dissolution at High
+      Concentrations of Ferrous Ions. Applied and Environmental
+      Microbiology 65:5285-5292. DOI 10.1128/AEM.65.12.5285-5292.1999.
+      Methods; Figures 2-6 and 8-10; Discussion.
+    url: https://doi.org/10.1128/AEM.65.12.5285-5292.1999
+    accessed_on: '2026-10-11'
+  - id: fowler_crundwell_1998
+    title: >-
+      Fowler TA and Crundwell FK (1998). Leaching of Zinc Sulfide by
+      Thiobacillus ferrooxidans: Experiments with a Controlled Redox
+      Potential Indicate No Direct Bacterial Mechanism. Applied and
+      Environmental Microbiology 64:3570-3575.
+      DOI 10.1128/AEM.64.10.3570-3575.1998. Methods; Figures 4-6; Discussion.
+    url: https://doi.org/10.1128/AEM.64.10.3570-3575.1998
+    accessed_on: '2026-10-11'
+  - id: taxonomy_ferrooxidans
+    title: >-
+      NCBI Taxonomy 920, Acidithiobacillus ferrooxidans, species;
+      Thiobacillus ferrooxidans listed as homotypic synonym.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
+    accessed_on: '2026-10-11'
+mechanisms:
+  - id: fc1_concentrate_bioleaching
+    name: Conditional bacterial enhancement of sphalerite dissolution
+    process: bioleaching
+    description: >-
+      Living Thiobacillus ferrooxidans FC1, using its published name,
+      enhanced sphalerite-concentrate dissolution under selected elevated
+      ferrous-ion conditions relative to chemical controls with matched
+      bulk iron chemistry. The authors interpret surface analyses and
+      kinetic fits as support for removal of a sulfur product layer.
+      The experiments do not demonstrate direct enzymatic oxidation
+      of the ZnS lattice or a particular sulfur-oxidation enzyme.
+    context: >-
+      Both studies used Gamsberg flotation concentrate reported as
+      98% sphalerite by XRD, with 53.3% Zn, 7.84% Fe, 32.5% S,
+      1.19% Mn and 0.24% Pb. The authors interpret Fe as solid solution
+      in sphalerite rather than a separate mineral; this is not a pure
+      ideal-ZnS reagent. Concentrate was milled and screened to
+      45-53 micrometres and washed in 0.5 M sodium sulfide to remove
+      flotation agents and sulfidize its surface. The stirred, aerated
+      two-compartment electrolysis cell had 2 L working volume,
+      5 g concentrate/L, 10% v/v living FC1 inoculum, pH 1.6,
+      35 +/- 0.1 degrees C and 5.9 mg/L dissolved oxygen. Electrolytic
+      redox control maintained bulk iron concentrations during biotic
+      and chemical runs; uninoculated controls were checked microscopically
+      for bacteria. The 1999 series varied Fe(II) with Fe(III) held at
+      1 g/L. Zinc was measured by atomic spectrophotometry in
+      0.45-micrometre filtrate. Ten analytical replicates describe
+      assay repeatability, not biological reactor replication.
+      NCBITaxon:920 maps the published species name, not a verified
+      accession or modern genomic reassignment of strain FC1.
+      The apparatus controlled solution chemistry; it did not demonstrate
+      downstream zinc-product recovery or industrial deployment.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+    evidence:
+      - source_ref: fowler_crundwell_1999
+        supports: support
+        explanation: >-
+          Figures 2-3 show later divergence of zinc dissolution after an
+          initial approximately 8-12 h interval with similar dissolution.
+          Figures 5-6 compare surfaces at Fe(II) 4 g/L after 100 h and
+          8 g/L after 69 h, respectively. SEM/EDAX and shrinking-core
+          fits support the authors' sulfur-layer explanation, without
+          a sulfur mass balance or enzyme assay. These surface endpoints
+          are distinct from the shorter Figure 2 dissolution time course.
+          No recovery percentage is estimated from the figures.
+      - source_ref: fowler_crundwell_1999
+        supports: partial
+        explanation: >-
+          The 1 g/L Fe(II) series in Figures 2-3 also departs from
+          equal dissolution, in tension with the Discussion's sharp
+          low-ferrous null boundary. A universal 1 g/L threshold is
+          therefore not asserted. Figure 10 reanalyzes earlier 1998
+          data and is not new independent replication.
+      - source_ref: fowler_crundwell_1998
+        supports: partial
+        explanation: >-
+          Methods and Figures 4-6 report similar zinc dissolution in
+          inoculated and chemical runs with Fe(II) fixed at 1 g/L
+          and varied Fe(III), despite bacterial growth and attachment.
+          This conditional null limits a universal enhancement claim.
+          Figure 3's illustrative current caption gives different iron
+          concentrations from the Methods; no quantitative current-based
+          claim is taken from that panel.
+curation_history:
+  - timestamp: '2026-10-11T04:56:10Z'
+    curator: codex (GPT-6)
+    action: CREATE
+    summary: >-
+      Added IMA-grounded sphalerite identity and controlled dissolution of
+      iron-bearing concentrate, preserving null results, source tensions,
+      organism resolution and recovery limits. Distinguished the mineral
+      from zinc and identified the already represented shared experiments.
+history_refs:
+  - history/records/sphalerite/2026-10-11T045604Z-codex-dc28a1.yaml
