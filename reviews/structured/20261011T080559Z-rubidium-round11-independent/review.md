@@ -1,0 +1,408 @@
+# Independent scientific review of round 11 rubidium
+
+- Review: 20261011T080559Z-rubidium-round11-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T07:59:24Z
+- Finished UTC: 2026-10-11T08:05:59Z
+- Reviewer: Codex /root/cmm11_ir_os_hf (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The element identity and dated designation are supported. Complete primary scans support conditional light-dependent rubidium-ion uptake by prepared intact cells; the record correctly preserves ionophore dependence, buffer-specific null results and uncertain voltage interpretation without asserting recovered metal.
+
+## Scope And Provenance
+
+All scientific and provenance fields of the named frozen record; declared primary evidence and dated authorities.
+
+Selection: Assigned named record; no sampling. Other candidate studies are context or future leads.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base a1d46ce5ca9958ff4cbd8a3b6aaf83bc8710ae0c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:rubidium | data/records/rubidium.yaml | maintained | Rubidium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Reviewer named validation | passed | True | cmmmech:rubidium | Reviewer session 43433 terminal exit 0; Checked 3 records, 0 failed. Read /private/tmp/cmm11-independent-named-validation.log. |
+| Full batch gate | passed | True | cmmmech:rubidium | Final just check passed 307 tests, three skipped in 61.95 seconds; 71 records and 83 histories valid. Root session 92015 terminal exit 0. |
+| Required-record validation | passed | True | cmmmech:rubidium | Final required-record validation passed 71 records, zero failed. Root session 93511 terminal exit 0. |
+| Trusted-base history validation | passed | True | cmmmech:rubidium | Final trusted-base history validation passed 83 histories, zero errors. Root session 88115 terminal exit 0. |
+
+## Scientific And Domain Assessments
+
+### Neutral element and dated criticality
+
+identity: supported. Targets: cmmmech:rubidium.
+
+Correct element identity, jurisdiction, list and edition; ion/mineral/resource/grade distinctions preserved.
+
+### Primary assay and scope limits
+
+evidence: supported. Targets: cmmmech:rubidium.
+
+The element identity and dated designation are supported. Complete primary scans support conditional light-dependent rubidium-ion uptake by prepared intact cells; the record correctly preserves ionophore dependence, buffer-specific null results and uncertain voltage interpretation without asserting recovered metal.
+
+### Actual curation and immutable observation
+
+provenance: supported. Targets: cmmmech:rubidium.
+
+Canonical CREATE sidecar and separate inline event match the target and actual actor/times; reviewed working changes remain uncommitted and are attested by byte hash. Scientific review does not append curation history.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/rubidium.yaml; Entire record, linked CREATE history, inline event, dossier and schema inspected; exact working-tree input hashes captured before judgment. | supports | Reviewer authored only Ir/Os/Hf, not these Rb/Re/He records, dossiers or histories. Shared inspect captured final inputs before scientific assessment. Existing raw evidence was independently read, key primary images checked, authority content independently resolved or read from retained verified captures. No scientific target edits made by reviewer. |
+| identity | https://www.ebi.ac.uk/chebi/CHEBI:33322; Neutral element name/formula/charge, hierarchy and alternate identifiers | supports | Verified 33322 denotes rubidium atom, formula Rb, charge 0. Helium live page succeeded; Rb/Re live web route failed, so independently read same-day curator-acquired official HTML rather than claiming a fresh successful reviewer download. Element root does not identify an assay ion or commodity stream. |
+| criticality | https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm; Official title/date and exact annex or commodity row | supports | United States; DOI/USGS Final 2025 List of Critical Minerals; 7 November 2025; 90 FR 50494–50497; Rubidium row on printed p.50497. Live authority content and retained source text agree. No timeless or universal material designation inferred. |
+| primary | https://doi.org/10.1128/jb.150.3.1183-1191.1982; Hellingwerf et al. 1982, complete nine original article scans pp.1183–1191; independently visually read every page, particularly Methods pp.1183–1184, Figures 4–5 and text pp.1187–1190. | supports | Verified strain 2.4.1, separate growth/phosphate/chromatophore/Rb protocols, extensive washing and distinct Figure 4/5 buffers. Native uptake and valinomycin-assisted traces differ; choline-buffer no-uptake before formate and uncertain unbound-Rb voltage assumption are retained. No radiotracer count or voltage is converted to product yield. |
+| search | Bounded independent web and local search; Returned result sets and /private/tmp/cmm11-independent-{local,raw}-search.txt | context_only | Selected primary and authority leads examined within the stated bounded search; no comprehensive absence claim. |
+| validation | /private/tmp/cmm-round11-final-batch-receipts.json; Final parent terminal receipts and full logs; reviewer named-validation log | supports | Reviewer independently read parent final checks/logs and own named validation terminal 0; structural checks do not prove scientific truth. |
+| taxonomy | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1063&amp;mode=Info; Current species name, basionym and rank | supports | Retained NCBI datasets JSON and live official Taxonomy browser identify species 1063 as Cereibacter sphaeroides and list Rhodopseudomonas sphaeroides as basionym. The source-reported 2.4.1 strain is preserved; a species identifier is not made a strain accession. |
+
+## Limits And Additional Notes
+
+- Full automated-flow-dialysis protocol references earlier work; exact Figure 4–5 loading, measurement temperature and replication are unresolved.
+- Absolute membrane potential relies on unbound intracellular tracer assumptions explicitly challenged by the authors.
+- Species mapping and source-reported strain do not independently verify a preserved strain culture.
+- No unresolved blocker, major or minor record defect identified. No corrective action required for the inspected scope; listed limitations remain.
+- No target content, history, dossier or schema changed by this reviewer.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T080559Z-rubidium-round11-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of round 11 rubidium
+started_at: '2026-10-11T07:59:24Z'
+finished_at: '2026-10-11T08:05:59Z'
+reviewer:
+  identity: Codex /root/cmm11_ir_os_hf
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer authored only Ir/Os/Hf, not these Rb/Re/He records,
+    dossiers or histories. Shared inspect captured final inputs before scientific
+    assessment. Existing raw evidence was independently read, key primary images checked,
+    authority content independently resolved or read from retained verified captures.
+    No scientific target edits made by reviewer.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The element identity and dated designation are supported. Complete primary
+  scans support conditional light-dependent rubidium-ion uptake by prepared intact
+  cells; the record correctly preserves ionophore dependence, buffer-specific null
+  results and uncertain voltage interpretation without asserting recovered metal.
+source:
+  git_revision: a1d46ce5ca9958ff4cbd8a3b6aaf83bc8710ae0c
+  state: working_tree
+  inputs:
+  - path: data/records/rubidium.yaml
+    sha256: d05bc7d114e08fc9c5715a7a4618562e22215104fbc93f7c8292394856cd6a07
+    role: target
+  - path: history/records/rubidium/2026-10-11T075221Z-codex-dfa1a8.yaml
+    sha256: 8165d628163b7a96631a97f3ad160f5007ef004752fcc033adc8eaa4702c4d6c
+    role: context
+  - path: research/ingests/round11-be-rb-re-20261011.json
+    sha256: 640a1bdf8e27ab0ebd87f42949133434970efcd6eefcc12e771a245e966ab554
+    role: context
+  - path: research/ingests/round11-be-rb-re-20261011.md
+    sha256: 4dcf18bcbfd6721ffa40b82969b6198047bfbbc599ba52daba7da960368a175d
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+targets:
+- target_id: cmmmech:rubidium
+  path: data/records/rubidium.yaml
+  label: Rubidium
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/rubidium.yaml
+    role: maintained_record
+scope:
+  description: All scientific and provenance fields of the named frozen record; declared
+    primary evidence and dated authorities.
+  selection: Assigned named record; no sampling. Other candidate studies are context
+    or future leads.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:rubidium
+checks:
+- check_id: named
+  name: Reviewer named validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/rubidium.yaml data/records/rhenium.yaml data/records/helium.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Reviewer session 43433 terminal exit 0; Checked 3 records, 0 failed. Read
+    /private/tmp/cmm11-independent-named-validation.log.
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:rubidium
+  evidence_ids:
+  - validation
+- check_id: batch
+  name: Full batch gate
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  status: passed
+  required: true
+  summary: Final just check passed 307 tests, three skipped in 61.95 seconds; 71 records
+    and 83 histories valid. Root session 92015 terminal exit 0.
+  scope_note: Parent executed; reviewer independently read full terminal receipt and
+    /private/tmp/cmm-round11-final-check.log
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:rubidium
+  evidence_ids:
+  - validation
+- check_id: nonempty
+  name: Required-record validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Final required-record validation passed 71 records, zero failed. Root session
+    93511 terminal exit 0.
+  scope_note: Parent executed; reviewer independently read full terminal receipt and
+    /private/tmp/cmm-round11-final-validation.log
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:rubidium
+  evidence_ids:
+  - validation
+- check_id: history
+  name: Trusted-base history validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate-history --base a1d46ce5ca9958ff4cbd8a3b6aaf83bc8710ae0c
+  status: passed
+  required: true
+  summary: Final trusted-base history validation passed 83 histories, zero errors.
+    Root session 88115 terminal exit 0.
+  scope_note: Parent executed; reviewer independently read full terminal receipt and
+    /private/tmp/cmm-round11-final-history.log
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:rubidium
+  evidence_ids:
+  - validation
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/rubidium.yaml
+  locator: Entire record, linked CREATE history, inline event, dossier and schema
+    inspected; exact working-tree input hashes captured before judgment.
+  accessed_at: '2026-10-11T08:05:59Z'
+  support: supports
+  summary: Reviewer authored only Ir/Os/Hf, not these Rb/Re/He records, dossiers or
+    histories. Shared inspect captured final inputs before scientific assessment.
+    Existing raw evidence was independently read, key primary images checked, authority
+    content independently resolved or read from retained verified captures. No scientific
+    target edits made by reviewer.
+  snapshot_sha256: d05bc7d114e08fc9c5715a7a4618562e22215104fbc93f7c8292394856cd6a07
+- evidence_id: identity
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:33322
+  locator: Neutral element name/formula/charge, hierarchy and alternate identifiers
+  accessed_at: '2026-10-11T08:05:59Z'
+  support: supports
+  summary: Verified 33322 denotes rubidium atom, formula Rb, charge 0. Helium live
+    page succeeded; Rb/Re live web route failed, so independently read same-day curator-acquired
+    official HTML rather than claiming a fresh successful reviewer download. Element
+    root does not identify an assay ion or commodity stream.
+- evidence_id: criticality
+  kind: authority
+  reference: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  locator: Official title/date and exact annex or commodity row
+  accessed_at: '2026-10-11T08:05:59Z'
+  support: supports
+  summary: United States; DOI/USGS Final 2025 List of Critical Minerals; 7 November
+    2025; 90 FR 50494–50497; Rubidium row on printed p.50497. Live authority content
+    and retained source text agree. No timeless or universal material designation
+    inferred.
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1128/jb.150.3.1183-1191.1982
+  locator: Hellingwerf et al. 1982, complete nine original article scans pp.1183–1191;
+    independently visually read every page, particularly Methods pp.1183–1184, Figures
+    4–5 and text pp.1187–1190.
+  accessed_at: '2026-10-11T08:05:59Z'
+  support: supports
+  summary: Verified strain 2.4.1, separate growth/phosphate/chromatophore/Rb protocols,
+    extensive washing and distinct Figure 4/5 buffers. Native uptake and valinomycin-assisted
+    traces differ; choline-buffer no-uptake before formate and uncertain unbound-Rb
+    voltage assumption are retained. No radiotracer count or voltage is converted
+    to product yield.
+  snapshot_sha256: 88189e0ce2c7414cd713bc7b96ad06bf5b457b6b3c16f6964b357ee451b78565
+- evidence_id: search
+  kind: search
+  reference: Bounded independent web and local search
+  locator: Returned result sets and /private/tmp/cmm11-independent-{local,raw}-search.txt
+  accessed_at: '2026-10-11T08:05:59Z'
+  support: context_only
+  summary: Selected primary and authority leads examined within the stated bounded
+    search; no comprehensive absence claim.
+  search_scope: 'Live web.run on 2026-10-11: exact DOI 10.1128/jb.150.3.1183-1191.1982
+    and 10.3390/ma14164763 with correction retraction erratum; rubidium sphaeroides
+    valinomycin uptake; rhenium Saccharomyces 4763 control; helium microbial extraction
+    recovery tracer; exact ChEBI and taxonomy terms. Selected first returned results,
+    no pagination/date filters. No matching correction notice identified in inspected
+    returned titles; not an exhaustive registry audit. Hidden/ignored-inclusive rg
+    --no-ignore --hidden --follow covered data/research/reviews/history/.claude and
+    bounded cited roots /private/tmp/cmm-next-eu, /private/tmp/cmm-expansion-authorities-20261011,
+    /private/tmp/cmm-round11-be-rb-re-raw and /private/tmp/cmm-round11-he-raw; all
+    46 repository lines read and selected raw hits inspected. No symlinks in the inspected
+    repository science/provenance trees or two new raw roots. No machine-wide absence
+    claim.'
+- evidence_id: validation
+  kind: validation
+  reference: /private/tmp/cmm-round11-final-batch-receipts.json
+  locator: Final parent terminal receipts and full logs; reviewer named-validation
+    log
+  accessed_at: '2026-10-11T08:05:59Z'
+  support: supports
+  summary: Reviewer independently read parent final checks/logs and own named validation
+    terminal 0; structural checks do not prove scientific truth.
+- evidence_id: taxonomy
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1063&mode=Info
+  locator: Current species name, basionym and rank
+  accessed_at: '2026-10-11T08:05:59Z'
+  support: supports
+  summary: Retained NCBI datasets JSON and live official Taxonomy browser identify
+    species 1063 as Cereibacter sphaeroides and list Rhodopseudomonas sphaeroides
+    as basionym. The source-reported 2.4.1 strain is preserved; a species identifier
+    is not made a strain accession.
+assessments:
+- assessment_id: identity-authority
+  area: identity
+  topic: Neutral element and dated criticality
+  outcome: supported
+  target_ids:
+  - cmmmech:rubidium
+  evidence_ids:
+  - record
+  - identity
+  - criticality
+  summary: Correct element identity, jurisdiction, list and edition; ion/mineral/resource/grade
+    distinctions preserved.
+  dimensions:
+  - name: criticality-edition
+    value: United States; DOI/USGS Final 2025 List of Critical Minerals; 7 November
+      2025; 90 FR 50494–50497; Rubidium row on printed p.50497
+    definition: Edition-specific designation at original authority, not a perpetual
+      property of every derived material.
+    evidence_ids:
+    - criticality
+- assessment_id: scientific-scope
+  area: evidence
+  topic: Primary assay and scope limits
+  outcome: supported
+  target_ids:
+  - cmmmech:rubidium
+  evidence_ids:
+  - record
+  - primary
+  - taxonomy
+  summary: The element identity and dated designation are supported. Complete primary
+    scans support conditional light-dependent rubidium-ion uptake by prepared intact
+    cells; the record correctly preserves ionophore dependence, buffer-specific null
+    results and uncertain voltage interpretation without asserting recovered metal.
+  dimensions:
+  - name: organism-strain
+    value: Cereibacter sphaeroides species 1063; historical Rhodopseudomonas sphaeroides;
+      paper strain 2.4.1
+    definition: Modern species mapping preserves historical source name and strain,
+      without inventing strain accession.
+    evidence_ids:
+    - record
+    - primary
+  - name: biomass-pretreatment
+    value: Intact phototrophic cells; anaerobic illuminated growth in Sistrom medium
+      at 30 C; Figure 4 washed 5–8 times over two days
+    definition: The experiment is not isolated chromatophore or phosphate uptake;
+      assay temperature and loading are not filled using another protocol.
+    evidence_ids:
+    - record
+    - primary
+  - name: substrate-conditions
+    value: 86RbCl tracer; Figure 4A sodium-sulfate MES/HEPES pH 5.5/7.5; 4B choline/PIPES
+      pH 7.5 with later 35 mM formate; Figure 5 phosphate buffer pH 8
+    definition: Separate assay arms retain their own buffer and light/ionophore changes.
+    evidence_ids:
+    - record
+    - primary
+  - name: controls-outcome
+    value: Light/dark, competing K/Rb, uncouplers and valinomycin; conditional tracer
+      uptake with a no-uptake arm
+    definition: Pharmacology and electrogenic interpretation do not identify a particular
+      gene; valinomycin adds artificial conductance.
+    evidence_ids:
+    - record
+    - primary
+  - name: scale-product
+    value: Laboratory ion transport, not brine/ore recovery or redox; no isolated
+      product
+    definition: Tracer translocation supports microbial handling but not selective
+      bulk extraction.
+    evidence_ids:
+    - record
+    - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Actual curation and immutable observation
+  outcome: supported
+  target_ids:
+  - cmmmech:rubidium
+  evidence_ids:
+  - record
+  - validation
+  summary: Canonical CREATE sidecar and separate inline event match the target and
+    actual actor/times; reviewed working changes remain uncommitted and are attested
+    by byte hash. Scientific review does not append curation history.
+findings: []
+actions: []
+limitations:
+- Full automated-flow-dialysis protocol references earlier work; exact Figure 4–5
+  loading, measurement temperature and replication are unresolved.
+- Absolute membrane potential relies on unbound intracellular tracer assumptions explicitly
+  challenged by the authors.
+- Species mapping and source-reported strain do not independently verify a preserved
+  strain culture.
+notes:
+- No unresolved blocker, major or minor record defect identified. No corrective action
+  required for the inspected scope; listed limitations remain.
+- No target content, history, dossier or schema changed by this reviewer.
+tags:
+- round11
+- independent
+- scientific-review
+```
