@@ -1,0 +1,85 @@
+# Round 18 dunite source investigation
+
+Prepared 2026-10-11T11:16:04.586733Z by codex / GPT-6 / codex (`/root/round18_dunite`). Trusted base `26cb0688effb2f71e4a570c416f6f43ff858c5ab`; branch `curate/cmm-expansion-round18-20261011`. This is a source assessment and curation dossier; independent acceptance review is separate.
+
+## Scope, selection and identity
+
+The round 17 enstatite/olivine handoff identified [Lee et al. (2025), DOI 10.1038/s41598-025-99655-9](https://doi.org/10.1038/s41598-025-99655-9) as an unresolved full-assay lead. Complete primary evidence now supports a distinct **dunite primary resource** record. This natural rock feed differs from existing olivine-group, forsterite, enstatite, lizardite and talc identities. Multiple minerals and several experimental arms are not separate independent papers. No criticality designation is inherited from Mg, Ni or another constituent, and no new schema behavior was needed.
+
+The [BGS Rock Classification Scheme DUN entry](https://webapps.bgs.ac.uk/bgsrcs/rcs_details.cfm?code=DUN) defines dunite as peridotite with more than 90% olivine in the olivine/pyroxene/hornblende assemblage, referencing RR/99/06 section 5.1 and Figures 15-16. The external rock code is given as source context; no unverified CURIE prefix or mineral-species ID is minted. Source experimental powders have author-assigned XRD compositions DUN-1 = 64 wt% olivine/27% lizardite/5% antigorite/4% talc; DUN-2 = 37/59/0/2% plus 2% meixnerite; DUN-3 = 92% olivine/5% antigorite/2% lizardite/1% talc. They are variably altered rock from a dunite deposit, so the paper's generic greater-than-90%-olivine statement cannot apply to every powder. The record explicitly retains that boundary. It does not independently confirm these phases or infer phase-specific leaching from bulk solution chemistry.
+
+NCBI authority XML verifies [taxon 442](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=442&mode=Info) as *Gluconobacter oxydans*, species rank. [BioProject PRJNA761721](https://www.ncbi.nlm.nih.gov/bioproject/761721) identifies NRRL B-58 and reports ATCC 9844 provenance. This is strain context, not proof of the experimental derivative's genome or exact genotype. Main Methods establish B58 and the delta-pstS/P112:mgdh derivative; the paper inconsistently spells the latter gene as mdgh in some places.
+
+## Evidence checked and experimental boundaries
+
+The publisher's complete 15-page PDF and HTML, all primary Methods/Results/Discussion/Limitations, 14-page SI text, and all nine XLSX worksheets were inspected. Main Figures 2-8 were visually reviewed in rendered PDF pages 4-10; SI Figures S1-S5 and Tables S1-S2 were viewed at pages 3-9. Supplementary Tables S3-S4 and Note S1 were read in extracted text. Full-text interpretation did not rely on abstract percentages. The same study's PubMed/PMC identity was confirmed as PMID 40307501 / PMC12043915. Crossref verifies publication on 30 April 2025, Scientific Reports 15:15134; its journal issue metadata has December 2025, which is not substituted for the publication date.
+
+The weathered exterior was removed before milling the interior with a tungsten-carbide vial. DUN-1 underlies main Figures 2-6; DUN-2 underlies Figure 7; DUN-3 underlies Figure S3 according to main Methods. Growth used yeast-peptone-mannitol medium at 30 C/200 rpm; after back-dilution and about 48 h growth, culture was divided and mixed 1:1 with 40% glucose for 15 mL at 20% glucose, then incubated another 48 h. The principal short assay is 1% wt/vol powder, 22 C and 24 h with shaking. SI Figure S1 depicts 200 rpm during leaching. Filtrate through 0.45-micrometre plates, centrifuged at 1500 x g for five minutes and nitric-acid diluted, was analyzed by ICP-MS. These are operational elemental concentrations; no chemical-species measurement or isolated metal yield is inferred.
+
+Main Figure 2 supports much higher Mg/Mn/Fe/Co/Ni release than water, but only about 6% greater Mg than initially pH-matched gluconic acid. Figure 3 follows continued 24-96 h release; the reported 73% increase averages five elements, not Mg alone. Figure 4 retains a null difference after 0.22-micrometre cell removal (reported p=0.2-0.9); its control is described as sugar water. Figure S5 preserves a null stoppered/unstoppered comparison (p=0.3-0.6), without equating stoppering with confirmed anoxia. These observations support biologically produced leaching chemistry, not a requirement for live cell contact during dissolution.
+
+Figure 7 uses DUN-2 at 5/10/60% pulp for 24-72 h and shows a larger relative advantage over initially pH-matched gluconic acid, about 3.25:1 Mg concentration at 60%/72 h. Initial pH matching does not match buffering, acid inventory or later trajectories. Cross-study low/high-pulp differences also involve different feed mineralogy. No particular unidentified metabolite is asserted as causal. The double mutant has lower starting pH (2.01 +/- 0.02 versus WT 2.39 +/- 0.02); its reported mean approximately 12% increase does not isolate either gene's mineral-specific role.
+
+Figure 5's hydrolysate arm has lower mean Mg release despite a nonsignificant test, and marked variability; nonsignificance is not demonstrated equivalence. Feedstock metals were control-subtracted. Table S4 reports substantial hydrolysate background (e.g. Mg), and Figure S4 includes negative corrected estimates for some metals. These are not negative physical concentrations or zero recoveries. Table S2 defines `n.d.` as **not determined**. Chromium extraction is much poorer than several other metals; chromite stability is the authors' interpretation, not a mineral-specific flux measurement.
+
+Figure 8's carbon-investment ratio is a theoretical potential based on eventual one-CO2-per-mobilized-Mg carbonation. The experiment does not establish net atmospheric removal, carbonate-product yield, life-cycle benefit or deployment. Main text says final pH around 4-5 is unfavorable for carbonation and defers full starting/ending solid mass balances and surface-area characterization. The record does not recast source forecasts as measured sequestration.
+
+## Source inconsistencies and data reuse
+
+- Main Methods/Table S1 associate DUN-2 with Figure 7; SI Figure S2 says Figure 4. The record states the main-text assignment and preserves the conflict.
+- Main initial inoculum growth is 24 h; SI Figure S1 displays 48 h. Reported biological independence is also uneven: Methods split cultures into triplicates, Figure 3 says duplicate measurements, and Figure 4 mentions duplicate colonies while its data have three rows per treatment.
+- Figure 8 contains 12 plotted attempts, whereas prose/Methods/Table S1 refer to attempts through 14. No exact long-duration attempt-to-feed numerical claim is curated.
+- Supplementary XLSX labels are stale relative to main figures: `Figure 4` contains DUN-2 high-pulp series, `Figure 5` filtered/unfiltered DUN-1, `Figure 6` glucose/hydrolysate DUN-1, and `Figures 3&7` the WT/mutant 24-96 h time series. Workbook relationships were checked; this is not an extraction-order error. Joins use actual treatment, feed, time, dilution and loading content, not worksheet names alone.
+
+The workbook has nine sheets (nonempty-row counts including headers: Figure 2, 11; Figures 3&7, 38; Figure 4, 56; Figure 5, 11; Figure 6, 14; Figure 8, 38; Figure S3, 122; Figure S5, 11; Table S4, 8). Instrument concentration columns are `ug/l` with separate dilution fractions; `Sample Name` is not unique because replicate rows repeat labels. Values include censored strings such as `<0.000`, which are not true zero or numerically resolved limits. No native mg/kg observations are created: the units, measurement-date requirements and censoring convention differ from that contract. The dataset and supplement belong to this one paper, not independent experiments.
+
+The authors' [public plot-data repository](https://github.com/barstowlab/article-037-ultramafic-bioleaching) was retrieved at immutable commit `35e93d5c4fc51d8e110dd4f0254980f03edb4f4d`. README, MIT LICENSE, file inventory, Figure 4 CSV and Figure 7 CSV were inspected. Figure 4 CSV has three rows each for control/filtered/unfiltered and values consistent with the corresponding XLSX after its stated dilution. Figure 7 CSV has 24/48/72 h means/SD columns for 1/5/10/60% arms and the 60% final values 4450.333971 versus 1369.973275, consistent with a ratio near 3.25. CSV unit/replicate provenance is less complete than the primary methods and workbook; no wholesale import is performed. This pinned deposit is related to the same experiments. The article's Zenodo reference is an account/settings URL, not a resolved archival DOI; archive identity remains unverified.
+
+## Search and acquisition log
+
+| Provider | Exact query | UTC date | Coverage |
+|---|---|---|---|
+| Web search | `"s41598-025-99655-9" PMC` | 2026-10-11 | First returned result set, unpaginated; no date filter. |
+| Web search | `site.bgs.ac.uk dunite classification 90% olivine` | 2026-10-11 | First returned result set, unpaginated; no date filter. |
+| Web search | `"10.1038/s41598-025-99655-9" correction retraction` | 2026-10-11 | First returned result set, unpaginated; no date filter. |
+| Web search | `"Bio-accelerated weathering of ultramafic minerals with Gluconobacter oxydans" PMC` | 2026-10-11 | First returned result set, unpaginated; no date filter. |
+| Web search | `"Gluconobacter oxydans" "B58" NCBI 442` | 2026-10-11 | First returned result set, unpaginated; no date filter. |
+| Web search | `"10.1038/s41598-025-99655-9" correction retraction erratum` | 2026-10-11 | First returned result set, unpaginated; no date filter. |
+| Web search | `"Gluconobacter oxydans" dunite biolixiviant "no" weathering` | 2026-10-11 | First returned result set, unpaginated; no date filter. |
+| Web search | `"Bio-accelerated weathering" "99655" "github"` | 2026-10-11 | First returned result set, unpaginated; no date filter. |
+
+These first-page searches and inspected Crossref metadata surfaced no correction/retraction affecting this DOI; Crossref's relation is a prior preprint, DOI 10.1101/2024.11.25.625253, not independent replication. This bounded result does not prove that no notice or conflicting experiment exists. The adjacent cross-species paper below needs full review before claims are imported.
+
+Before creation, hidden/ignored-inclusive, symlink-following searches covered repository `data`, `research`, `reviews` and referenced `/private/tmp/cmm-round17-enstatite-raw`, using `dunite|99655` and expanded case-insensitive name/DOI/code terms. Existing round 17 handoff/frontier, olivine-group/enstatite/forsterite records and prior extracted primary text were inspected. No existing dunite root was found in that bounded corpus; these are not machine-wide absence claims. The newly acquired task directory was included in the later dedup receipt. Binary full texts remain outside Git; extracted text was searched where available.
+
+The first sandbox curl attempt could not resolve nature.com. An authorized network download then acquired the publisher HTML; a web open of the same URL separately returned an identity-provider redirect while search/open elsewhere provided text. These are access-route failures, not absence of the publication. Primary PDF/SI/workbook and official XML acquisitions succeeded. All files below remain under `/private/tmp/cmm-round18-dunite-raw`; HTML was acquired earlier in the same session and is supplementary to the timestamped primary PDF receipt.
+
+| Retained original artifact | Acquired UTC | SHA256 | Exact origin |
+|---|---|---|---|
+| `article.pdf` | 2026-10-11T11:10:52.844963+00:00 | `f2df07204a7ae1099e962fcd8c3b644ea1b1a43020114009012682b1edc48acc` | [origin](https://www.nature.com/articles/s41598-025-99655-9.pdf) |
+| `supplement.pdf` | 2026-10-11T11:10:54.938357+00:00 | `7a29b046f02a5b9336d722eb44f764fcd46a4cf3735de8e1318c1614d0155bef` | [origin](https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41598-025-99655-9/MediaObjects/41598_2025_99655_MOESM2_ESM.pdf) |
+| `data.xlsx` | 2026-10-11T11:10:55.165031+00:00 | `64bf48b7543ef39721548c7b3f2fe48abb16d92fd3a6670c3a830428a84b30d2` | [origin](https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41598-025-99655-9/MediaObjects/41598_2025_99655_MOESM1_ESM.xlsx) |
+| `bgs.html` | 2026-10-11T11:10:56.463026+00:00 | `f1ab8cd376c9c60717f5b6e6363be0ed48f684363a48cae33d94e7bff69b8207` | [origin](https://webapps.bgs.ac.uk/bgsrcs/rcs_details.cfm?code=DUN) |
+| `taxon442.xml` | 2026-10-11T11:10:57.193278+00:00 | `89f99310d5d7c407ef81f67b1446286364362a850c9e49e3e1d4518822fb9c5f` | [origin](https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=442) |
+| `bioproject761721.xml` | 2026-10-11T11:10:57.530088+00:00 | `627bf2ab12a9a1622894dcb9bad6430fc2e42e0af2b49700ea7e58c1ca011bf5` | [origin](https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=bioproject&id=761721) |
+| `crossref.json` | 2026-10-11T11:13:36.474544+00:00 | `fc7db00acb96102f4babfebf224ed7ab06eb21b784e47aed704bc647a2ebb900` | [origin](https://api.crossref.org/works/10.1038/s41598-025-99655-9) |
+| `epmc.json` | 2026-10-11T11:13:37.318462+00:00 | `412790084eb926f6824eb6a6d43fa6f3730fff74b7a1ed6e4bd478ad2cdd8610` | [origin](https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:40307501%20AND%20SRC:MED&format=json) |
+| `repository.json` | 2026-10-11T11:13:37.546152+00:00 | `3ed1dc06bc339ed20aa8d385fec6614eb193fd48f4622cadbad7ef46aa02d0e2` | [origin](https://api.github.com/repos/barstowlab/article-037-ultramafic-bioleaching) |
+| `repository-contents.json` | 2026-10-11T11:13:37.794914+00:00 | `43a1c1e7f0cc818c32832838ccde985f6da02181775b7dc223c5214c6c3fd2d3` | [origin](https://api.github.com/repos/barstowlab/article-037-ultramafic-bioleaching/contents) |
+| `repository-commit.json` | 2026-10-11T11:14:21.884533+00:00 | `86bcb9a7fae71a6cc6dc09d32bd69655f0a22effaabb5d57ac89b9167edb3f17` | [origin](https://api.github.com/repos/barstowlab/article-037-ultramafic-bioleaching/commits/main) |
+| `repository.zip` | 2026-10-11T11:14:22.380950+00:00 | `763ede3554ee89bdfdd50e58463bf29c6776b52ed8a932de5eea1942d819cf6d` | [origin](https://api.github.com/repos/barstowlab/article-037-ultramafic-bioleaching/zipball/35e93d5c4fc51d8e110dd4f0254980f03edb4f4d) |
+
+The publisher article and SI are CC BY-NC-ND 4.0 as stated in article/Crossref metadata; redistribution of adapted full text is not assumed. The authors' separate repository LICENSE is MIT. BGS/NCBI reuse permissions were not separately audited and remain unassessed here. Raw PDFs, XLSX, image renders, HTML and repository snapshots are not committed. Only original curation and provenance summaries enter CMMMech.
+
+## Curation handoff and validation
+
+Root confirmed baseline terminal success before record writes: 308 passed, 3 skipped in 101.63 s; 132 records and 148 histories. The new [data/records/dunite.yaml](../../data/records/dunite.yaml) and actual CREATE `history/records/dunite/2026-10-11T111317Z-codex-75893c.yaml` use GPT-6/codex metadata. Inline event and canonical sidecar remain distinct. The final record SHA256 for independent review is `4ee783b7ec26bf8ce662fe6cdd6c73a5e6f18bd8742b135660676dac8fa1d166`. Individual `UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked cmmmech validate data/records/dunite.yaml` completed with exit 0 and `Checked 1 record(s); 0 failed.` Final corpus/history/review checks and scientific acceptance are root-coordinated, not claimed here.
+
+## Priorities and unresolved questions
+
+1. Review [Cross-species comparison of ultramafic rock bio-accelerated weathering performance](https://doi.org/10.1038/s41598-025-14369-2), PMC12339931. It compares Gluconobacter, Penicillium and Sphingomonas in dunite; only search/primary-page lead content was inspected this round, not full methods/SI. This is a possible **extension to dunite**, not a duplicate root. Resolve feed correspondence and overlap with Lee2025 before independent-study claims.
+2. Acquire full primary methods for [Power et al., bioleaching of ultramafic tailings](https://doi.org/10.1021/es900986n), an existing round 17 lead. A tailings secondary-resource identity would require actual processing origin and feed characterization. No new acquisition attempt or assay acceptance occurred in this lane this round.
+3. Antigorite and meixnerite are reported feed components, not proven separately leached phases in this study. New species identities would require authoritative nomenclature and a useful independent claim; no speculative mechanism or duplicate mineral record was created.
+4. Source authors' exact colony/replicate structure, stale figure/data labels, DUN-1/DUN-2 original-rock classification and long-duration attempt identities remain unresolved. Obtain underlying experimental notes or a formal correction to remove those limits. No authors were contacted.
+
+This is concrete progress on the saved frontier, not exhaustion of CMM identities or data sources.

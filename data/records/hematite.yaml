@@ -1,0 +1,85 @@
+id: cmmmech:hematite
+name: Hematite
+material_kind: mineral
+description: Hematite is the Fe2O3 mineral species listed as approved (A), with 1971 special-procedure
+  status, in the IMA-CNMNC September 2026 master list. It is distinct from iron element, iron-ore commodities,
+  other Fe2O3 polymorphs and mixed iron-bearing feeds. The experimental author-designated hematite below
+  has substantial non-Fe oxide components; its bulk Fe2O3 percentage is not a quantified hematite phase
+  abundance. No constituent criticality designation is inherited.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC master list, September 2026, PDF p92 Hematite row and explanatory status definitions;
+    retained official PDF reinspected 11 October 2026. The entry 1971 s.p. is special-procedure history,
+    not an asserted external identifier.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-11'
+- id: dong_2026
+  title: 'Dong, Zhang, Yu, Sheng, He and Sheng (2026). Genomic traits, transcriptional responses, and
+    metabolic activities determine functional divergence in mineral dissolution between Priestia megaterium
+    PMA2-2 and Priestia flexa PMD1-1. Applied and Environmental Microbiology 92(9):e01201-26. DOI 10.1128/aem.01201-26;
+    Methods: Bacterial strains, minerals, and media; Biotite dissolution experiment; Dissolution of other
+    minerals and gene expression analysis; Results: Generalizability; Figure 5; supplement Tables S6-S7
+    (pp11-12).'
+  url: https://doi.org/10.1128/aem.01201-26
+  accessed_on: '2026-10-11'
+- id: ncbi_pma2_2
+  title: NCBI GenBank CM125967.1, Priestia megaterium strain PMA2-2 chromosome; source feature and BioSample
+    SAMN50659134 link inspected 11 October 2026. The species identifier does not identify the strain by
+    itself.
+  url: https://www.ncbi.nlm.nih.gov/nuccore/CM125967.1
+  accessed_on: '2026-10-11'
+- id: ncbi_megaterium
+  title: NCBI Taxonomy 1404, Priestia megaterium, species; taxonomy browser and taxonomy XML inspected
+    11 October 2026.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1404&mode=Info
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: pma2_2_hematite_dissolution
+  name: PMA2-2 culture-associated iron mobilization from a hematite feed
+  process: bioleaching
+  description: PMA2-2 cultures produced higher filtered Fe concentrations than uninoculated hematite-feed
+    controls during a short laboratory assay. Culture acidification accompanied this mobilization; the
+    individual chemical and cellular contributions remain unresolved.
+  context: 'Living Priestia megaterium PMA2-2, isolated from Dracaena cochinchinensis rhizosphere soil
+    in Purple Mountain, Nanjing, China, was precultured in LB for 12 hours at 37 degrees C and 160 rpm,
+    harvested, washed and resuspended in 0.85% NaCl. The other-mineral assays followed the dissolution
+    protocol: triplicate 220 mL flasks with 60 mL sterilized glucose minimal medium, 0.60 g of 75-150
+    micrometre mineral feed and 0.2 mL of 10^8 cells/mL suspension, incubated at 37 degrees C and 160
+    rpm, with separate flasks for 12- and 24-hour endpoints. Medium preparation pH was 7.0; its stated
+    composition was 0.015% MgSO4.7H2O, 0.05% Na2HPO4.2H2O, 0.025% (NH4)2SO4, 0.01% KNO3 and 0.5% glucose.
+    Element measurements used ICP-OES after centrifugation and 0.45 micrometre polyethersulfone filtration
+    of a 10 mL aliquot; these are operationally filtered total-element concentrations, without oxidation-state
+    resolution. Feed origin, cleaning procedure and quantitative phase analysis were not specified in
+    the inspected methods and supplement. Table S7 reports 86.58% Fe2O3 and 9.82% SiO2, with other minor
+    oxides, for the hematite feed. The organism is linked to GenBank CM125967.1; the paper''s duplicated
+    accession in its first Methods paragraph is not used to identify the comparator strain.'
+  microbial: true
+  organisms:
+  - id: NCBITaxon:1404
+    label: Priestia megaterium
+  evidence:
+  - source_ref: dong_2026
+    supports: support
+    explanation: Supplement Table S6 (p11; mean +/- SD, n=3) reports filtered Fe of 25.95 +/- 0.90 and
+      71.43 +/- 1.56 micromol/L at 12 and 24 hours with PMA2-2, versus 0.04 +/- 0.00 micromol/L at both
+      uninoculated endpoints. Culture pH was 4.69 +/- 0.05 and 4.66 +/- 0.06, versus control pH 7.16 +/-
+      0.04 and 7.12 +/- 0.05. These values support culture-associated mobilization from the stated impure
+      feed; the rounded control SD is not proof of analytical exactness.
+  - source_ref: dong_2026
+    supports: partial
+    explanation: Uninoculated feed controls establish the conditional culture-associated difference, but
+      no pH-matched or killed-cell hematite/feldspar comparator separates acidification from other effects.
+      The acid-buffer comparison, detailed transcriptomics, metabolomics, EPS and biofilm assays concern
+      biotite; their quantitative or causal results are not transferred to this feed. Figure 5 reports
+      a separate 12-hour RT-qPCR response to this mineral; expression associations do not demonstrate
+      gene necessity, and the Discussion explicitly calls for functional validation. No isolated-metal
+      product, whole-feed recovery percentage, mineral-specific mass balance or industrial deployment
+      is demonstrated.
+curation_history:
+- timestamp: '2026-10-11T11:14:04.745666Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created hematite identity and primary PMA2-2 culture-associated dissolution record with feed,
+    control and causal limits.
+history_refs:
+- history/records/hematite/2026-10-11T111406Z-codex-f219a6.yaml

@@ -1,0 +1,487 @@
+{
+  "timestamp": "2026-10-11T11:15:24.774750Z",
+  "actor": {
+    "name": "codex",
+    "model": "GPT-6",
+    "tool": "codex",
+    "agent": "/root/round18_mineral_feeds"
+  },
+  "trusted_base": "26cb0688effb2f71e4a570c416f6f43ff858c5ab",
+  "branch": "curate/cmm-expansion-round18-20261011",
+  "scope": "Hematite species and informal potassium-feldspar family; primary PMA2-2 experiments, no new criticality, schema change or bulk import.",
+  "searches": [
+    {
+      "provider": "web search",
+      "query": "site.cnmnc.units.it potassium feldspar group nomenclature",
+      "utc_date": "2026-10-11",
+      "coverage": "Returned first result sets only, unpaginated; exact-DOI notices and control context bounded, not exhaustive."
+    },
+    {
+      "provider": "web search",
+      "query": "site.mindat.org \"K Feldspar\" \"group\"",
+      "utc_date": "2026-10-11",
+      "coverage": "Returned first result sets only, unpaginated; exact-DOI notices and control context bounded, not exhaustive."
+    },
+    {
+      "provider": "web search",
+      "query": "site.ncbi.nlm.nih.gov CM125967 Priestia megaterium",
+      "utc_date": "2026-10-11",
+      "coverage": "Returned first result sets only, unpaginated; exact-DOI notices and control context bounded, not exhaustive."
+    },
+    {
+      "provider": "web search",
+      "query": "\"10.1128/aem.01201-26\" \"correction\" OR \"erratum\" OR \"retraction\"",
+      "utc_date": "2026-10-11",
+      "coverage": "Returned first result sets only, unpaginated; exact-DOI notices and control context bounded, not exhaustive."
+    },
+    {
+      "provider": "web search",
+      "query": "site.usgs.gov \"potassium feldspar\" \"microcline\" \"orthoclase\" \"sanidine\"",
+      "utc_date": "2026-10-11",
+      "coverage": "Returned first result sets only, unpaginated; exact-DOI notices and control context bounded, not exhaustive."
+    },
+    {
+      "provider": "web search",
+      "query": "site.bgs.ac.uk \"potassium feldspar\" \"group\"",
+      "utc_date": "2026-10-11",
+      "coverage": "Returned first result sets only, unpaginated; exact-DOI notices and control context bounded, not exhaustive."
+    },
+    {
+      "provider": "web search",
+      "query": "\"aem.01201-26\" correction retraction erratum",
+      "utc_date": "2026-10-11",
+      "coverage": "Returned first result sets only, unpaginated; exact-DOI notices and control context bounded, not exhaustive."
+    },
+    {
+      "provider": "web search",
+      "query": "\"Priestia megaterium\" \"hematite\" dissolution control",
+      "utc_date": "2026-10-11",
+      "coverage": "Returned first result sets only, unpaginated; exact-DOI notices and control context bounded, not exhaustive."
+    },
+    {
+      "provider": "web search",
+      "query": "\"potassium feldspar\" \"NK851\" pH protein dissolution",
+      "utc_date": "2026-10-11",
+      "coverage": "Returned first result sets only, unpaginated; exact-DOI notices and control context bounded, not exhaustive."
+    }
+  ],
+  "dedup": {
+    "utc": "2026-10-11T11:13:17.271820+00:00",
+    "args": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-l",
+      "hematite|Hematite|potassium.feldspar|Potassium.feldspar|01201-26",
+      "data",
+      "research",
+      "reviews",
+      "history",
+      ".claude",
+      "/private/tmp/cmm-round16-silicate-raw",
+      "/private/tmp/cmm-round17-biotite-raw",
+      "/private/tmp/cmm-round17-enstatite-raw",
+      "/private/tmp/cmm-round18-mineral-feeds-raw"
+    ],
+    "exit": 0,
+    "paths": [
+      "/private/tmp/cmm-round18-mineral-feeds-raw/acquisitions.json",
+      "/private/tmp/cmm-round18-mineral-feeds-raw/crossref.json",
+      "/private/tmp/cmm-round18-mineral-feeds-raw/dong.xml",
+      "/private/tmp/cmm-round18-mineral-feeds-raw/freeman2008.txt",
+      "/private/tmp/cmm-round18-mineral-feeds-raw/aem.01201-26-s0001.txt",
+      "/private/tmp/cmm-round18-mineral-feeds-raw/dong.txt",
+      "/private/tmp/cmm-round18-mineral-feeds-raw/europepmc.json",
+      "/private/tmp/cmm-round17-biotite-raw/mica-nomenclature-1998.txt",
+      "/private/tmp/cmm-round17-enstatite-raw/ima-booklet.txt",
+      "/private/tmp/cmm-round17-biotite-raw/ima-booklet-2019.txt",
+      "/private/tmp/cmm-round17-enstatite-raw/ima2026-09.txt",
+      "/private/tmp/cmm-round16-silicate-raw/priestia2026.txt",
+      "/private/tmp/cmm-round17-enstatite-raw/prior-raw-dedup.txt",
+      "research/sources/round17-biotite-sources-20261011/20261011T105050Z.md",
+      "data/records/bauxite-residue.yaml",
+      "research/ingests/round12-aluminium-boron-20261011.json",
+      "data/records/potash.yaml",
+      "/private/tmp/cmm-round16-silicate-raw/priestia2026.xml",
+      "/private/tmp/cmm-round16-silicate-raw/ima2026-09.txt",
+      "research/ingests/round12-industrial-minerals-20261011.md",
+      "research/ingests/round17-frontier-20261011.md",
+      "research/ingests/round17-biotite-sources-20261011.md",
+      "research/ingests/round17-biotite-sources-20261011.json",
+      "research/ingests/round5-iron-20261011.md",
+      "research/ingests/round12-industrial-minerals-20261011.json"
+    ],
+    "stderr": ""
+  },
+  "acquisitions": [
+    {
+      "file": "dong.html",
+      "url": "https://journals.asm.org/doi/full/10.1128/aem.01201-26",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "file": "dong-si.pdf",
+      "url": "https://journals.asm.org/doi/suppl/10.1128/aem.01201-26/suppl_file/aem.01201-26-s0001.pdf",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "file": "europepmc.json",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1128/aem.01201-26&format=json",
+      "utc": "2026-10-11T11:11:24.839447+00:00",
+      "status": 200,
+      "type": "application/json;charset=UTF-8",
+      "sha256": "7dbf3f17a8789c5a0d6b49922147437c816a9dcf301154f86b72dbb550dd4e27",
+      "bytes": 1171
+    },
+    {
+      "file": "genbank-pma.txt",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=CM125967.1&rettype=gb&retmode=text&seq_start=1&seq_stop=1",
+      "utc": "2026-10-11T11:11:25.697150+00:00",
+      "status": 200,
+      "type": "text/plain",
+      "sha256": "312bb58411c8bc4aa9a5d74858d71c5ffbf2453dccbc0f742e951ab01eebbb63",
+      "bytes": 5369
+    },
+    {
+      "file": "ncbi-taxonomy.xml",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1404",
+      "utc": "2026-10-11T11:11:26.082376+00:00",
+      "status": 200,
+      "type": "text/xml; charset=UTF-8",
+      "sha256": "0700c8fc37a88c59d57e25c8d1be945b20eb15a895544a22a39a6cd9942edcc2",
+      "bytes": 8468
+    },
+    {
+      "file": "crossref.json",
+      "url": "https://api.crossref.org/works/10.1128/aem.01201-26",
+      "utc": "2026-10-11T11:11:26.435082+00:00",
+      "status": 200,
+      "type": "application/json",
+      "sha256": "8857004cefbb4f30afd72d9f9d4521f054ef3d9b71dd408dcbcde286129aa198",
+      "bytes": 14445
+    },
+    {
+      "file": "dong.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13599522/fullTextXML",
+      "utc": "2026-10-11T11:12:01.347361+00:00",
+      "status": 200,
+      "type": "application/xml",
+      "sha256": "6c7e4c45cb387bf0806c0e517e153ccc094fbd6b103eaa00de4c62f8999a7c6c",
+      "bytes": 145101
+    },
+    {
+      "file": "dong-supplement.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13599522/supplementaryFiles",
+      "utc": "2026-10-11T11:12:12.010275+00:00",
+      "status": 200,
+      "type": "application/zip",
+      "sha256": "e96518393652200df72f1f8fb091662367d0fa1ae69476a90145908e0c2fdb6e",
+      "bytes": 2672302
+    },
+    {
+      "file": "freeman2008.pdf",
+      "url": "https://epsc.wustl.edu/~alianw/Planetary_Spectroscopy/Papers_pdf/Freeman_CanMin2009_Feldspars.pdf",
+      "utc": "2026-10-11T11:12:13.528670+00:00",
+      "status": 200,
+      "type": "application/pdf",
+      "sha256": "edc402730c5ecb6dd044280e00f9f994ecd1bc2263928cfc89e5659044e97e96",
+      "bytes": 1623637
+    },
+    {
+      "file": "genbank-pmd.txt",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=CM125968.1&rettype=gb&retmode=text&seq_start=1&seq_stop=1",
+      "utc": "2026-10-11T11:12:14.562774+00:00",
+      "status": 200,
+      "type": "text/plain",
+      "sha256": "df0ae52b69a27f783cffecf4b54eaf3b5348740ef06f53dbfeb619276b012177",
+      "bytes": 5326
+    },
+    {
+      "path": "/private/tmp/cmm-round17-enstatite-raw/ima2026-09.pdf",
+      "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "mode": "retained earlier acquisition reinspected; no fresh download",
+      "rechecked_utc": "2026-10-11T11:13:17.353104+00:00",
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "bytes": 3129886
+    },
+    {
+      "path": "/private/tmp/cmm-round17-biotite-raw/ima-booklet-2019.pdf",
+      "url": "https://cnmnc.units.it/ima_reports/2%20IMA-Nomenclature-e-Booklet-2019-1.pdf",
+      "mode": "retained earlier acquisition reinspected; no fresh download",
+      "rechecked_utc": "2026-10-11T11:13:17.389721+00:00",
+      "sha256": "aa78fca8983aa876dd2657e1874aa8f012a3e0236ad6717b675b76d86f8868c5",
+      "bytes": 30242508
+    }
+  ],
+  "local_artifact_inventory": [
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/acquisitions.json",
+      "bytes": 3896,
+      "sha256": "11e9c1f8fed4b748a291d127f70aa73f0f41b67fb8e655e9d9f7376d54c3286e"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/aem.01201-26-s0001-page11.png",
+      "bytes": 62396,
+      "sha256": "4b8fa6366fe35f8a9477e74caeb1a28d948998fcb4bb2751dcdfe4c366b90cf8"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/aem.01201-26-s0001-page12.png",
+      "bytes": 29829,
+      "sha256": "5d52494773d477d86338a91321ce87c3b101f42c3bf377aab8cfd80064dff9dc"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/aem.01201-26-s0001.txt",
+      "bytes": 18197,
+      "sha256": "3e6fbea99da26794eaffb49447c165b2746e5e7a05083dd3a316e593bd5d7e25"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/crossref.json",
+      "bytes": 14445,
+      "sha256": "8857004cefbb4f30afd72d9f9d4521f054ef3d9b71dd408dcbcde286129aa198"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/dedup-receipt.json",
+      "bytes": 2038,
+      "sha256": "b7a444b4e60ff089979e279a8ab60550c345d0ced6e5bbd0aac48de8eaa3c587"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/dong-supplement/aem.01201-26-s0001.pdf",
+      "bytes": 1785130,
+      "sha256": "bc170447b630c216e22448d6a5ae544d2c8efd5331e6a846564dc337da6e3616"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/dong-supplement/aem.01201-26.f001.gif",
+      "bytes": 15597,
+      "sha256": "cd772570b30e738e08ea014fd0c0ee8bb4e722961a562b2c2195edb53dbd97bb"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/dong-supplement/aem.01201-26.f001.webp",
+      "bytes": 142710,
+      "sha256": "7f835128262a39ab5a187afe9b78800452e9b31158410cbbcd27e167dbf6e8b0"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/dong-supplement/aem.01201-26.f002.gif",
+      "bytes": 13940,
+      "sha256": "a84906ea9cd8315307ab07d8189757f50653ba57d22086e2a304249affc80d40"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/dong-supplement/aem.01201-26.f002.webp",
+      "bytes": 133374,
+      "sha256": "aac754beaa59f38ed2be8783efeca98fa1c9a7ced5337c29db37aa9b45aa9de9"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/dong-supplement/aem.01201-26.f003.gif",
+      "bytes": 10740,
+      "sha256": "30ab8d6b8dfaf3af98c6cd8d8f4d3751341c415a3637b9f957cb176fee72a335"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/dong-supplement/aem.01201-26.f003.webp",
+      "bytes": 183546,
+      "sha256": "019d681f9f470c1cd10a8880880381c69724c7e88c7a9af4af6bf2376290539b"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/dong-supplement/aem.01201-26.f004.gif",
+      "bytes": 18431,
+      "sha256": "0e6d69e764048dbf46559f7dd3d4e17381deca43c3e1da322658939579c62f04"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/dong-supplement/aem.01201-26.f004.webp",
+      "bytes": 193310,
+      "sha256": "6620a70625fbaa00ec95787c66e8a4d16108e27631a35ed0cb909685c4f7307a"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/dong-supplement/aem.01201-26.f005.gif",
+      "bytes": 13798,
+      "sha256": "97476bd10dc5b83f39762d7f8bce9583da5de978eabf5c8e7f414d7ab4f97b31"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/dong-supplement/aem.01201-26.f005.webp",
+      "bytes": 80430,
+      "sha256": "4d59194abf2f806e74644865ca59d9566d3442e2908c24d22c606c005aaa587e"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/dong-supplement/aem.01201-26.f006.gif",
+      "bytes": 17507,
+      "sha256": "d1807c9477c3731d0d91021a0f4642a43499445684c473a1419de5032e380559"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/dong-supplement/aem.01201-26.f006.webp",
+      "bytes": 234622,
+      "sha256": "9a121f33e24748154b6f848f772ef07057da50d7ecfa7e625792bfa56f2ab5c1"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/dong-supplement.zip",
+      "bytes": 2672302,
+      "sha256": "e96518393652200df72f1f8fb091662367d0fa1ae69476a90145908e0c2fdb6e"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/dong.txt",
+      "bytes": 58442,
+      "sha256": "82ba238e03f2164d285c191d5139140b9ae3fe71496083015e9c32f43c34cd19"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/dong.xml",
+      "bytes": 145101,
+      "sha256": "6c7e4c45cb387bf0806c0e517e153ccc094fbd6b103eaa00de4c62f8999a7c6c"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/europepmc.json",
+      "bytes": 1171,
+      "sha256": "7dbf3f17a8789c5a0d6b49922147437c816a9dcf301154f86b72dbb550dd4e27"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/freeman2008-page12.png",
+      "bytes": 244303,
+      "sha256": "74a0416192cab6750853efce64381194cf23f5db29972fa4c527d1dd7069c0ee"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/freeman2008-page13.png",
+      "bytes": 121831,
+      "sha256": "f301afea41f32eecd0f63a7e271131cac91d44ac0d3d5c7316c020c7399e2df0"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/freeman2008.pdf",
+      "bytes": 1623637,
+      "sha256": "edc402730c5ecb6dd044280e00f9f994ecd1bc2263928cfc89e5659044e97e96"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/freeman2008.txt",
+      "bytes": 69762,
+      "sha256": "261b454618d0d0c11e2c716102bbd05b4dc3bf6317854e6ef21f29915b4dd5a6"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/genbank-pma.txt",
+      "bytes": 5369,
+      "sha256": "312bb58411c8bc4aa9a5d74858d71c5ffbf2453dccbc0f742e951ab01eebbb63"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/genbank-pmd.txt",
+      "bytes": 5326,
+      "sha256": "df0ae52b69a27f783cffecf4b54eaf3b5348740ef06f53dbfeb619276b012177"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/ima-booklet-2019-page34.png",
+      "bytes": 132998,
+      "sha256": "a9e19361e497d481bc1f5c0e3da70c0554a60c55ed6c70c34e38c21abff04038"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/ima2026-09-page92.png",
+      "bytes": 262241,
+      "sha256": "3e273f3563bcae09a0da87f9f531eb86951ddf66ce90c56950f01c8de87781d3"
+    },
+    {
+      "path": "/private/tmp/cmm-round18-mineral-feeds-raw/ncbi-taxonomy.xml",
+      "bytes": 8468,
+      "sha256": "0700c8fc37a88c59d57e25c8d1be945b20eb15a895544a22a39a6cd9942edcc2"
+    }
+  ],
+  "crossref_notice_fields": {
+    "update-to": null,
+    "updated-by": null,
+    "relation": {}
+  },
+  "records": [
+    {
+      "path": "data/records/hematite.yaml",
+      "sha256": "c677b20cd2ead19cf7bf8b1882cfd567f55ca38ffe0bfa7c7514cfc9143c4c49",
+      "history_refs": [
+        "history/records/hematite/2026-10-11T111406Z-codex-f219a6.yaml"
+      ],
+      "validation": {
+        "command": "uv run --locked cmmmech validate data/records/hematite.yaml",
+        "exit_code": 0,
+        "result": "Checked 1 record(s); 0 failed."
+      }
+    },
+    {
+      "path": "data/records/potassium-feldspar.yaml",
+      "sha256": "7a53e4d2bea0b490ca04c7a955359988ac3b8e348621e5a9787e080402181f7c",
+      "history_refs": [
+        "history/records/potassium-feldspar/2026-10-11T111412Z-codex-489b52.yaml"
+      ],
+      "validation": {
+        "command": "uv run --locked cmmmech validate data/records/potassium-feldspar.yaml",
+        "exit_code": 0,
+        "result": "Checked 1 record(s); 0 failed."
+      }
+    }
+  ],
+  "source_assessments": [
+    {
+      "key": "dong2026",
+      "doi": "10.1128/aem.01201-26",
+      "pmcid": "PMC13599522",
+      "pmid": "42573263",
+      "role": "primary mechanism experiment",
+      "publication": "Online 10 August 2026; AEM92(9), Crossref issue September2026; metadata dates not assay dates.",
+      "inspected": "Main publisher text and complete retained XML; relevant Methods/Results/Discussion, Figure5 visually, supplemental methods pp1-2, TablesS1/S6/S7, Figure captions. TablesS6/S7 rendered and visually checked. Other genomics/metabolomics content assessed as scope boundary, not independently reanalyzed.",
+      "accepted": "Filtered Fe/Al culture-associated increases in respective feeds at12/24h; no acid-matched comparator or gene necessity claim.",
+      "limitations": [
+        "Maintext first Methods paragraph duplicates CM125967.1 for two strains. Official GenBank CM125967.1 is PMA2-2 and CM125968.1 is PMD1-1, agreeing with Data Availability and transcriptome Methods.",
+        "TableS6 Mg is mM, maintext says micromol/L; olivine Mg numbers not imported.",
+        "Biotite RNA-seq inoculum resuspension differs (main saline dissolution versus supplemental sterile water RNA-seq). Do not conflate assays.",
+        "Hematite bulk86.58%Fe2O3 and9.82%SiO2; potassiumfeldspar bulk9.87%K2O and4.51%Na2O. Phasepurity and mineralorigin/cleaning not specified.",
+        "RT-qPCR Figure5 caption describes comparisons with16S reference; no independent statistical reanalysis or causal-gene assignment."
+      ],
+      "license": "Main article CC BY4.0, verified XML; publisher supplemental reuse notice requests author permission. Raw retained outsideGit."
+    },
+    {
+      "key": "ima202609",
+      "role": "mineral identity",
+      "locators": "PDF p92 Hematite row; introduction status keys",
+      "accepted": "Fe2O3 species, A status,1971 special procedure; no approval-number CURIE invented",
+      "access": "Prior round17 officialPDF reinspected; live CNMNC homepage confirms September2026 list. Direct PDF webopen timed out."
+    },
+    {
+      "key": "ima2019compendium",
+      "role": "nomenclature scope",
+      "locators": "PDF p34 reproduces Whitney&Evans2010 Table1",
+      "accepted": "K-feldspar informal; broader alkali feldspar and feldspar GROUP. No assertion of IMA-approved K-feldspar group.",
+      "access": "Retained round17 officialPDF reinspected and table visually checked; copyright2019 compendium is not a revision date for2010 paper."
+    },
+    {
+      "key": "freeman2008",
+      "doi": "10.3749/canmin.46.6.1477",
+      "role": "primary mineral characterization",
+      "locators": "pp1482,1488-1489 and Fig5; author-hosted24-pagePDF acquired",
+      "accepted": "K-feldspar structural family and compositional versus phase naming; no new microbial claim from mineralogical study.",
+      "license": "No open redistribution license verified; retained outsideGit.",
+      "date_boundary": "Article2008 despite filename CanMin2009."
+    },
+    {
+      "key": "ncbi",
+      "role": "organism identity",
+      "locators": "Taxonomy1404; GenBankCM125967.1/CM125968.1 source features queried as one-base regions to obtain metadata without fullgenomes",
+      "accepted": "NCBITaxon1404 Priestia megaterium species and PMA2-2 strain correspondence; no genome causal proof."
+    }
+  ],
+  "followups": [
+    {
+      "priority": 1,
+      "doi": "10.3390/ijms241814226",
+      "pmcid": "PMC10531590",
+      "title": "Analysis of the Potassium-Solubilizing Priestia megaterium Strain NK851 and Its Potassium Feldspar-Binding Proteins",
+      "decision": "Existing round12 lead now maps to newly established potassium-feldspar family. Reinspect complete original figures/supplement, baseline K and protein-fraction recovery/controls, exact NK851 accession before adding independent mechanism. This pass read returned primary sections4.1/4.5/4.6/4.7 and Figure5 caption, not full reassessment.",
+      "contrasting_scope": "pH4 HCl comparison does not reproduce NK851 culture K release; different strain and analyte from PMA2-2 Al experiment. It challenges universal acid-only interpretations, not the narrower current observation."
+    },
+    {
+      "priority": 2,
+      "doi": "10.1128/aem.01201-26",
+      "decision": "Possible existing biotite and olivine-group extensions need coordinated full source-specific review; no duplicate roots. Resolve Mg unit contradiction before numerical Mg statement; evaluate mediumMg background and controls."
+    },
+    {
+      "priority": 3,
+      "doi": "10.3389/fbioe.2024.1393334",
+      "title": "MICP mediated by indigenous bacteria isolated from tailings for biocementation for reduction of wind erosion",
+      "decision": "New primary search lead with phase/mixture and control questions; only search-level metadata inspected. Acquire full methods/supplement and exact feedidentity before any record."
+    }
+  ],
+  "not_claimed": [
+    "Exhaustion of CMM identities or microbial mechanisms",
+    "Independent record scientific acceptance (assigned separately)",
+    "All other mineral feeds inferentially share biotite molecular mechanism",
+    "Criticality inherited from constituent elements or feldspar commodity",
+    "Automated conversion of micromol/L to supported mg/kg observations"
+  ]
+}

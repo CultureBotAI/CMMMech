@@ -1,0 +1,96 @@
+id: cmmmech:potassium-feldspar
+name: Potassium feldspar family
+material_kind: mineral_group
+description: Potassium feldspar (K-feldspar) is an informal family of potassium-rich alkali feldspars,
+  including the microcline, orthoclase and sanidine structural forms; it is represented by the mineral_group
+  kind without claiming an IMA-approved group name or a single mineral species. Whitney and Evans (2010),
+  reproduced in the IMA-hosted nomenclature compendium, explicitly labels K-feldspar informal. Freeman
+  et al. (2008) distinguishes these structural forms and the compositional end-member notation from an
+  individual orthoclase phase. This family is distinct from the traded feldspar commodity and potash.
+  The experimental feed below is only author-designated potassium feldspar; bulk oxide composition does
+  not resolve its member species or phase proportions. No criticality designation is inherited.
+sources:
+- id: ima_compendium_2019
+  title: 'Schertl, Mills and Maresch, editors (2019 copyright). A Compendium of IMA-Approved Mineral Nomenclature,
+    prepared for IMA2018. PDF p34 reproduces Whitney and Evans (2010), DOI 10.2138/am.2010.3371, Table
+    1: K-feldspar is labeled informal, while alkali feldspar and feldspar are GROUP. Historical nomenclature
+    evidence, not a new 2019 classification.'
+  url: https://cnmnc.units.it/ima_reports/2%20IMA-Nomenclature-e-Booklet-2019-1.pdf
+  accessed_on: '2026-10-11'
+- id: freeman_2008
+  title: Freeman, Wang, Kuebler, Jolliff and Haskin (2008). Characterization of natural feldspars by Raman
+    spectroscopy for future planetary exploration. Canadian Mineralogist 46:1477-1500. DOI 10.3749/canmin.46.6.1477;
+    pp1482 and 1488-1489, Figure 5, distinguish structural forms and compositional notation. The author-hosted
+    filename says 2009, but the article is dated 2008.
+  url: https://doi.org/10.3749/canmin.46.6.1477
+  accessed_on: '2026-10-11'
+- id: dong_2026
+  title: 'Dong, Zhang, Yu, Sheng, He and Sheng (2026). Genomic traits, transcriptional responses, and
+    metabolic activities determine functional divergence in mineral dissolution between Priestia megaterium
+    PMA2-2 and Priestia flexa PMD1-1. Applied and Environmental Microbiology 92(9):e01201-26. DOI 10.1128/aem.01201-26;
+    Methods: Bacterial strains, minerals, and media; Biotite dissolution experiment; Dissolution of other
+    minerals and gene expression analysis; Results: Generalizability; Figure 5; supplement Tables S6-S7
+    (pp11-12).'
+  url: https://doi.org/10.1128/aem.01201-26
+  accessed_on: '2026-10-11'
+- id: ncbi_pma2_2
+  title: NCBI GenBank CM125967.1, Priestia megaterium strain PMA2-2 chromosome; source feature and BioSample
+    SAMN50659134 link inspected 11 October 2026. The species identifier does not identify the strain by
+    itself.
+  url: https://www.ncbi.nlm.nih.gov/nuccore/CM125967.1
+  accessed_on: '2026-10-11'
+- id: ncbi_megaterium
+  title: NCBI Taxonomy 1404, Priestia megaterium, species; taxonomy browser and taxonomy XML inspected
+    11 October 2026.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1404&mode=Info
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: pma2_2_potassium_feldspar_dissolution
+  name: PMA2-2 culture-associated aluminium mobilization from a potassium-feldspar feed
+  process: bioleaching
+  description: PMA2-2 cultures increased filtered Al concentrations relative to uninoculated potassium-feldspar-feed
+    controls, with accompanying acidification. This is an Al-release assay; neither potassium release
+    nor production of a feldspar or potash commodity was established by these measurements.
+  context: 'Living Priestia megaterium PMA2-2, isolated from Dracaena cochinchinensis rhizosphere soil
+    in Purple Mountain, Nanjing, China, was precultured in LB for 12 hours at 37 degrees C and 160 rpm,
+    harvested, washed and resuspended in 0.85% NaCl. The other-mineral assays followed the dissolution
+    protocol: triplicate 220 mL flasks with 60 mL sterilized glucose minimal medium, 0.60 g of 75-150
+    micrometre mineral feed and 0.2 mL of 10^8 cells/mL suspension, incubated at 37 degrees C and 160
+    rpm, with separate flasks for 12- and 24-hour endpoints. Medium preparation pH was 7.0; its stated
+    composition was 0.015% MgSO4.7H2O, 0.05% Na2HPO4.2H2O, 0.025% (NH4)2SO4, 0.01% KNO3 and 0.5% glucose.
+    Element measurements used ICP-OES after centrifugation and 0.45 micrometre polyethersulfone filtration
+    of a 10 mL aliquot; these are operationally filtered total-element concentrations, without oxidation-state
+    resolution. Feed origin, cleaning procedure and quantitative phase analysis were not specified in
+    the inspected methods and supplement. Table S7 reports 19.24% Al2O3, 60.57% SiO2, 9.87% K2O and 4.51%
+    Na2O, plus minor oxides, for this feed. These bulk data do not justify substituting a microcline,
+    orthoclase or sanidine species identifier.'
+  microbial: true
+  organisms:
+  - id: NCBITaxon:1404
+    label: Priestia megaterium
+  evidence:
+  - source_ref: dong_2026
+    supports: support
+    explanation: Supplement Table S6 (p11; mean +/- SD, n=3) reports filtered Al of 13.09 +/- 1.13 and
+      21.48 +/- 2.67 micromol/L at 12 and 24 hours with PMA2-2, versus 0.19 +/- 0.05 and 0.11 +/- 0.05
+      micromol/L without bacteria. Culture pH was 4.69 +/- 0.01 and 4.60 +/- 0.02, versus control pH 7.00
+      +/- 0.01 and 6.99 +/- 0.01. Table S6 does not report K; its dash symbol denotes not measured, not
+      zero.
+  - source_ref: dong_2026
+    supports: partial
+    explanation: Uninoculated feed controls establish the conditional culture-associated difference, but
+      no pH-matched or killed-cell hematite/feldspar comparator separates acidification from other effects.
+      The acid-buffer comparison, detailed transcriptomics, metabolomics, EPS and biofilm assays concern
+      biotite; their quantitative or causal results are not transferred to this feed. Figure 5 reports
+      a separate 12-hour RT-qPCR response to this mineral; expression associations do not demonstrate
+      gene necessity, and the Discussion explicitly calls for functional validation. No isolated-metal
+      product, whole-feed recovery percentage, mineral-specific mass balance or industrial deployment
+      is demonstrated.
+curation_history:
+- timestamp: '2026-10-11T11:14:04.745666Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created potassium-feldspar identity and primary PMA2-2 culture-associated dissolution record
+    with feed, control and causal limits.
+history_refs:
+- history/records/potassium-feldspar/2026-10-11T111412Z-codex-489b52.yaml
