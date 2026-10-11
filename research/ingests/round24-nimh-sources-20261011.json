@@ -1,0 +1,160 @@
+{
+  "created_at": "2026-10-11T14:26:04.176434+00:00",
+  "researcher": "Codex (GPT-6; Codex)",
+  "base": "d7183efeb2e528d6d88f0b69da41323642b8fa85",
+  "worktree": "/private/tmp/CMMMech-expansion-round24-20261011",
+  "search": {
+    "started_at": "2026-10-11T14:17:11.826085+00:00",
+    "queries": [
+      {
+        "provider": "web search",
+        "queries": [
+          "\"bioleaching\" \"spent zinc-carbon batteries\"",
+          "\"bioleaching\" \"nickel-metal hydride batteries\"",
+          "\"spent alkaline batteries\" bacteria bioleaching",
+          "\"10.1039/d6ra03345h\"",
+          "\"Comprehensive characterization\" \"nickel\" \"thiooxidans\" 2026 full text",
+          "\"Impacts of Phosphorous Source\" batteries bioleaching"
+        ],
+        "filters": "none",
+        "pagination": "first returned sets"
+      },
+      {
+        "provider": "web search",
+        "queries": [
+          "site.dsmz.de \"DSM 3503\"",
+          "site.dsmz.de \"DSM 40097\"",
+          "site.ncbi.nlm.nih.gov/Taxonomy \"Streptomyces pilosus\"",
+          "\"s12649-021-01398-x\" correction retraction",
+          "\"s12649-021-01398-x\" correction OR retraction",
+          "\"Impacts of Phosphorous Source\" correction OR erratum",
+          "\"Low residual dissolved phosphate\" bioleaching NiMH"
+        ],
+        "filters": "none",
+        "pagination": "first returned sets",
+        "date": "2026-10-11"
+      }
+    ],
+    "dedup": {
+      "command": "rg --no-ignore --hidden --follow -n -i 'alkaline batter|zinc.carbon batter|nickel.metal.hydride|nickel.cadmium batter|Ni.Cd batter|NiMH' data/records research reviews history",
+      "output": "/private/tmp/cmm-round24-battery-dedup.txt",
+      "matches": 0,
+      "scope": "All relevant maintained/source/review/history files in new worktree, including hidden/ignored and following symlinks; no machine-wide or exhaustive literature claim."
+    },
+    "expanded_dedup": {
+      "pattern": "Ni.?MH|107361|s12649-021-01398|d6ra03345h|nickel.{0,4}metal.{0,4}hydride",
+      "boundaries": [
+        "data/records",
+        "research",
+        "reviews",
+        "history"
+      ],
+      "command_options": "rg --no-ignore --hidden --follow -n -i",
+      "receipt": "/private/tmp/cmm-round24-nimh-dedup-expanded.txt",
+      "result": "Known 2022 source lead in research/sources/cmm-landscape/20261008T073140Z.md; no NiMH resource root before this curation in the searched corpus. The earlier narrower zero-match result did not establish source novelty."
+    }
+  },
+  "acquisition": [
+    {
+      "requested_url": "https://d-nb.info/123152670X/34",
+      "retrieved_at": "2026-10-11T14:18:14.733342+00:00",
+      "path": "/private/tmp/cmm-round24-nimh-raw/rasoulnia2021.pdf",
+      "status": 200,
+      "final_url": "https://d-nb.info/123152670X/34",
+      "content_type": "application/pdf;charset=base64",
+      "bytes": 1845225,
+      "sha256": "fde0cdd23acd519b7740891655e3bfcc360bca33017c53366333df2af0474986",
+      "pdf_magic": true
+    },
+    {
+      "requested_url": "https://link.springer.com/article/10.1007/s12649-021-01398-x",
+      "retrieved_at": "2026-10-11T14:18:14.734851+00:00",
+      "path": "/private/tmp/cmm-round24-nimh-raw/rasoulnia2021-publisher.html",
+      "status": 200,
+      "final_url": "https://link.springer.com/article/10.1007/s12649-021-01398-x?error=cookies_not_supported&code=33b4c3ea-1902-427a-8001-6cb81f3493b9",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 451702,
+      "sha256": "151a6a63520c90e4ede8ae2c90971530cbe541ff90c18a909f73970f17adddd1",
+      "pdf_magic": false
+    },
+    {
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13330771/",
+      "retrieved_at": "2026-10-11T14:18:14.735244+00:00",
+      "path": "/private/tmp/cmm-round24-nimh-raw/heidarinejad2026.html",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13330771/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 263902,
+      "sha256": "cdecc107f6e2d8b26bb3196ea40be92ad095bc1dfe2f7335a853c0465957b279",
+      "pdf_magic": false
+    },
+    {
+      "requested_url": "https://pubs.rsc.org/en/content/articlehtml/2026/ra/d6ra03345h",
+      "retrieved_at": "2026-10-11T14:18:15.275413+00:00",
+      "path": "/private/tmp/cmm-round24-nimh-raw/heidarinejad2026-rsc.html",
+      "error": "<HTTPError 403: 'Forbidden'>"
+    },
+    {
+      "requested_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs12649-021-01398-x/MediaObjects/12649_2021_1398_MOESM1_ESM.docx",
+      "retrieved_at": "2026-10-11T14:18:17.031169+00:00",
+      "path": "/private/tmp/cmm-round24-nimh-raw/rasoulnia2021-supplement-0.docx",
+      "status": 200,
+      "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs12649-021-01398-x/MediaObjects/12649_2021_1398_MOESM1_ESM.docx",
+      "content_type": "application/octet-stream",
+      "bytes": 36448,
+      "sha256": "097e6219a4a30babcf33f020e21fc70832c67bc0650fd344243e1bc000038749",
+      "pdf_magic": false
+    }
+  ],
+  "accepted_primary_doi": "10.1007/s12649-021-01398-x",
+  "record_path": "data/records/spent-nickel-metal-hydride-batteries.yaml",
+  "inspection": {
+    "main": "Publisher full HTML and complete primary PDF; Methods, Results, Tables 1-3 and Figures 1-5 checked; actual rendered PDF pages 3,4,5,6,8,9,10,11,12 inspected visually.",
+    "supplement": "Complete DOCX text and four native chart XML cached series, labels and error values inspected. No word/media images; no LibreOffice/soffice on PATH; original Word rendering not claimed.",
+    "authority": "Live DSMZ3503/40097 and NCBI442/28893 pages resolved; NCBI28893 legacy Browser URL failed, taxonomy/28893 succeeded.",
+    "correction_search": "Bounded DOI/title query first result sets and publisher article: no relevant correction or retraction returned; this is not exhaustive evidence of absence."
+  },
+  "retained_primary_files": [
+    {
+      "path": "/private/tmp/cmm-round24-nimh-raw/rasoulnia2021.pdf",
+      "sha256": "fde0cdd23acd519b7740891655e3bfcc360bca33017c53366333df2af0474986",
+      "bytes": 1845225
+    },
+    {
+      "path": "/private/tmp/cmm-round24-nimh-raw/rasoulnia2021-supplement-0.docx",
+      "sha256": "097e6219a4a30babcf33f020e21fc70832c67bc0650fd344243e1bc000038749",
+      "bytes": 36448
+    },
+    {
+      "path": "/private/tmp/cmm-round24-nimh-raw/supplement-chart-values.json",
+      "sha256": "8f4707bc8f3d51d41ca8b69d3e4b54720fbbe385528de187468472a7aeabd3da",
+      "bytes": 8926
+    }
+  ],
+  "license": "Main paper explicitly CC BY4.0; supplementary material linked by publisher. Raw full text and reconstructed/cached chart data remain outside Git. Metadata and paraphrased evidence only committed.",
+  "limits": [
+    "Abstract6.0% versus main6.5% total REEs for two-step treatment.",
+    "Methods/Fig3 one-day G. oxydans pregrowth versus Table3 two-day growth label; no synthetic timing reconciliation.",
+    "Table2 higher-phosphate initial pH7.0 conflicts with Results8.2/8.4; no imported growth-pH recommendation.",
+    "Species tested with different phosphate media; no universal ranking, acid/pH matched mechanism isolation, complete mass balance, product isolation or industrial deployment."
+  ],
+  "deferred": [
+    {
+      "doi": "10.1016/j.mineng.2021.107361",
+      "decision": "Existing NiMH root extension. Institutional PDF URL returned challenge HTML during prior acquisition; this session web search exposed indexed primary Methods and publisher abstract. Full original figures and supplementary model evidence not inspected; no 2022 yields imported."
+    },
+    {
+      "doi": "10.1039/d6ra03345h",
+      "decision": "Existing NiMH root extension; actual PMC full HTML acquired but no complete figure/SI audit. Indexed abstract/conclusion Co/Ni percentage assignment conflict needs direct panel audit. RSC direct403. Do not import numerical yields yet."
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0304386X18309113",
+      "decision": "Candidate spent alkaline button-cell battery resource; primary lead only, full methods and material identity audit needed."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12216006/",
+      "decision": "Discarded LED lamp lead, requires exact feed identity comparison with fluorescent lamp and LCD records and full primary audit."
+    }
+  ],
+  "report_path": "research/sources/round24-nimh/20261011T142604Z-source-investigation.md"
+}

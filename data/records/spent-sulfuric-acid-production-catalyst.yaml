@@ -1,0 +1,151 @@
+id: cmmmech:spent-sulfuric-acid-production-catalyst
+name: Spent sulfuric-acid-production catalyst
+material_kind: secondary_resource
+description: >-
+  Used catalyst from sulfur-dioxide oxidation in sulfuric-acid production,
+  represented here by vanadium-bearing material from a copper-smelter acid unit.
+  This process-defined secondary resource is distinct from petroleum
+  hydrodesulfurization catalysts, automotive converters, fresh catalyst and its
+  constituent elements or mineral phases. The selected silica-rich feed does
+  not define every spent acid-plant catalyst. No constituent-element criticality
+  designation is inherited.
+sources:
+- id: mikoda_2020
+  title: >-
+    Mikoda, Potysz, Kucha and Kmiecik (2020). Vanadium removal from spent sulfuric
+    acid plant catalyst using citric acid and Acidithiobacillus thiooxidans.
+    Archives of Civil and Mechanical Engineering 20:132. DOI
+    10.1007/s43452-020-00136-9; Methods 2.1-2.5, Results 3.1-3.3,
+    Tables 1-3 and Figures 1-9.
+  url: https://doi.org/10.1007/s43452-020-00136-9
+  accessed_on: '2026-10-11'
+- id: mikoda_2020_supplement
+  title: >-
+    Supplementary material to Mikoda et al. (2020), DOI
+    10.1007/s43452-020-00136-9. Figures S1-S3: catalyst preparation,
+    post-experiment activity test and culture-liquid color. DOCX inspected,
+    including its embedded figure images.
+  url: https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs43452-020-00136-9/MediaObjects/43452_2020_136_MOESM1_ESM.docx
+  accessed_on: '2026-10-11'
+- id: mikoda_residues
+  title: >-
+    Mikoda, Potysz, Gruszecka-Kosowska, Kmiecik and Tomczyk. Spent sulfuric acid
+    plant catalyst: valuable resource of vanadium or risky residue? Process
+    comparison for environmental implications. Published online 27 October 2020;
+    Environmental Science and Pollution Research 28:59358-59367 (2021).
+    DOI 10.1007/s11356-020-11349-z; Methods, Figures 1-3 and Tables 1-4.
+  url: https://doi.org/10.1007/s11356-020-11349-z
+  accessed_on: '2026-10-11'
+- id: dsm9463
+  title: >-
+    DSMZ catalogue: Acidithiobacillus thiooxidans DSM 9463, strain designation
+    B-S2, isolated from an Australian bioleaching reactor. Collection identity
+    does not independently verify the study's experimental stock.
+  url: https://www.dsmz.de/collection/catalogue/details/culture/DSM-9463
+  accessed_on: '2026-10-11'
+- id: ncbi_thiooxidans
+  title: >-
+    NCBI Taxonomy 930: Acidithiobacillus thiooxidans, species. This identifier
+    does not identify the experimental DSM 9463 stock.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: dsm9463_culture_associated_v_leaching
+  name: Loading-dependent culture-associated vanadium mobilization
+  process: bioleaching
+  microbial: true
+  description: >-
+    Living Acidithiobacillus thiooxidans DSM 9463 culture with elemental sulfur
+    was associated with increased filtered-liquid vanadium at low catalyst
+    loading, together with acidification and increasing sulfate. Higher-loading
+    experiments lacked the same advantage over uninoculated controls. The
+    evidence supports a conditional laboratory solubilization observation,
+    without establishing direct enzymatic vanadium reduction, isolated vanadium
+    recovery or industrial deployment.
+  context: >-
+    Mikoda et al. (2020) studied actual spent catalyst from a copper-smelter
+    sulfuric-acid unit: approximately 10-mm granules were comminuted and sieved.
+    Main Methods name 100- and 200-micrometre sieves, whereas supplementary
+    Figure S1 names a 250-micrometre sieve; the fraction used for each bioleaching
+    arm is not explicitly assigned. Table 3 reports 65.5 wt% SiO2 and 5.50 wt%
+    V2O5 on an oxide-composition basis, not pure vanadium oxide or a universal
+    feed composition. Culture DSM 9463 was supplied by DSMZ, pregrown in mineral
+    medium with 1% w/v sulfur to reported pH 1.7, and added at 2% v/v. Assays
+    used fresh mineral medium initially adjusted to pH 2.5 with sulfuric acid,
+    2% w/v added elemental sulfur, 28 degrees C and 100 rpm. Materials were
+    autoclaved at 121 degrees C for 15 minutes. The paper names 50-cm3 flasks
+    but does not clearly specify working liquid volume. Pulp densities were
+    1, 2, 5, 10 and 20%, with at least duplicate biotic and uninoculated batches
+    sampled on days 1, 7, 14, 21 and 28. Pulp-density percentages are retained
+    as source labels rather than silently assigned an unstated basis. Liquid
+    aliquots were filtered at 0.22 micrometres, diluted and acidified for ICP-MS
+    total-element V analysis; the stated quantification limit was 0.001 mg/L.
+    No pH-trajectory-matched sterile acid control was reported.
+  organisms:
+  - id: NCBITaxon:930
+    label: Acidithiobacillus thiooxidans
+  evidence:
+  - source_ref: mikoda_2020
+    supports: support
+    explanation: >-
+      Results 3.2, Figure 7 and Perspectives 3.3 assign day-21 liquid V release
+      of 93% to 1% pulp density and 85.5% to 2%, versus at most 17% in the
+      corresponding uninoculated series. These source percentages normalize
+      filtered-liquid V to the initial feed V inventory; they are not isolated
+      product yields. Lower culture pH and increasing sulfate in Figure 9
+      support culture-associated acidification, without separating the effects
+      of cells from their evolving solution chemistry.
+  - source_ref: mikoda_2020
+    supports: partial
+    explanation: >-
+      The abstract instead attributes 93% to 2% pulp density. Results 3.2 also
+      labels both day-28 values, 80% and 74%, as 1%, while Figure 7 distinguishes
+      the two arms. These inconsistencies remain unresolved. The low-loading
+      liquid V inventory declined after day 21. At 5-20% pulp density, Figure 8
+      shows decreasing liquid V with controls often exceeding inoculated arms;
+      no universal microbial advantage or monotonic extraction is established.
+      Oxygen-transfer limitation and precipitation are proposed explanations,
+      not independently isolated causes.
+  - source_ref: mikoda_2020_supplement
+    supports: partial
+    explanation: >-
+      Figures S2-S3 show a qualitative sulfur-settling transfer assay and
+      changing solution color. These are activity/speciation clues, not cell
+      counts, quantified survival, or direct measurement of V oxidation state.
+      Figure S1's sieve description conflicts with main Methods. The observed
+      colors cannot independently establish a microbial V(V)-reduction pathway.
+  - source_ref: mikoda_2020
+    supports: partial
+    explanation: >-
+      Figures 1-2 and Table 3 describe mixed feed and residual phases;
+      disappearance of XRD peaks and lower residual-solid V concentration do
+      not supply residue mass or a complete V balance. Color and the pH/Eh
+      comparison in Figure 6 do not directly identify dissolved V species.
+      Kinetic fits use selected incomplete time series to improve R-squared
+      values (Methods 2.5), so they do not demonstrate a unique rate-controlling
+      mechanism. Separate reagent-grade citric-acid leaching is abiotic, under
+      different temperature, duration and vessel conditions; it is not evidence
+      that DSM 9463 produced citrate.
+  - source_ref: mikoda_residues
+    supports: context_only
+    explanation: >-
+      This related same-group study explicitly follows the earlier work and
+      repeats its raw/residue oxide compositions. Its 2%-pulp-density 93% claim
+      does not resolve the earlier arm conflict or establish independent
+      replication. The approximately 96% statement compares solid V
+      concentrations, without residue-mass accounting for a recovered yield.
+      The separate SPLP assay (1 g residue, 20 mL pH-4.2 solution, 18 hours)
+      reports bioleached-residue V and Al of 6.4 and 4.8 mg/L in Table 3;
+      residual leachability remains. These observations do not demonstrate a
+      metal-free or universally safe residue, a regulatory determination,
+      validated concrete use, or a recovered vanadium product.
+curation_history:
+- timestamp: '2026-10-11T14:19:32.351097+00:00'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: >-
+    Created the process-defined spent sulfuric-acid catalyst record from primary
+    full text and supplements, retaining loading-dependent controls, source
+    contradictions, companion-study overlap and laboratory recovery limits.
+history_refs:
+- history/records/spent-sulfuric-acid-production-catalyst/2026-10-11T141934Z-codex-62c311.yaml

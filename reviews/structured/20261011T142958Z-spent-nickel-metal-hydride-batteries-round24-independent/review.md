@@ -1,0 +1,444 @@
+# Independent scientific review of spent nickel-metal-hydride batteries
+
+- Review: 20261011T142958Z-spent-nickel-metal-hydride-batteries-round24-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T14:25:03.702350Z
+- Finished UTC: 2026-10-11T14:29:58.444405Z
+- Reviewer: Codex /root/round24_sulfuric_catalyst (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The exact NiMH record is scientifically defensible within its stated culture-metabolite, laboratory and source-reported extraction scope. Null outcomes, contradictory endpoint/timing values and mechanism limits remain explicit. No corrective record finding is warranted.
+
+## Scope And Provenance
+
+Entire frozen NiMH record including resource identity, organism and strain mapping, feed preparation, culture state, media, controls, outcomes, limitations and actual history.
+
+Selection: Assigned root-authored new NiMH resource record.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base d7183efeb2e528d6d88f0b69da41323642b8fa85.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:spent-nickel-metal-hydride-batteries | data/records/spent-nickel-metal-hydride-batteries.yaml | maintained | Spent nickel-metal-hydride batteries |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named validation | passed | True | cmmmech:spent-nickel-metal-hydride-batteries | Checked 1 record(s); 0 failed. |
+| Native full checks | passed | True | cmmmech:spent-nickel-metal-hydride-batteries | /private/tmp/cmm-round24-final-batch.log: uv run --locked --extra dev python scripts/check.py<br>All checks passed!<br>........................................................................ [ 23%]<br>........................................................................ [ 46%]<br>........................................................................ [ 69%]<br>....................................................sss................. [ 92%]<br>.......................                                                  [100%]<br>308 passed, 3 skipped in 89.10s (0:01:29)<br>Checked 160 record(s); 0 failed.<br>Checked 181 history record(s); 0 error(s).<br> |
+| Required corpus | passed | True | cmmmech:spent-nickel-metal-hydride-batteries | /private/tmp/cmm-round24-final-require.log: Checked 160 record(s); 0 failed.<br> |
+| Trusted-base history | passed | True | cmmmech:spent-nickel-metal-hydride-batteries | /private/tmp/cmm-round24-final-history.log: Checked 181 history record(s); 0 error(s).<br> |
+
+## Scientific And Domain Assessments
+
+### Process-defined secondary resource
+
+identity: supported. Targets: cmmmech:spent-nickel-metal-hydride-batteries.
+
+The record has a defensible distinct feed identity and makes no resource-level criticality or pure-phase assertion.
+
+### Conditional activity of heterotrophic culture liquid
+
+evidence: supported. Targets: cmmmech:spent-nickel-metal-hydride-batteries.
+
+Positive and null treatments support a bounded flask-scale culture-metabolite association, while the record preserves source conflicts and avoids causal overstatement.
+
+### Independent review of frozen authored state
+
+provenance: supported. Targets: cmmmech:spent-nickel-metal-hydride-batteries.
+
+The CREATE sidecar and inline event document actual new curation. The reviewer did not author or edit the target; its captured hash still matches the validated batch.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/spent-nickel-metal-hydride-batteries.yaml; Entire frozen record and actual CREATE history; canonical inspection captured before scientific judgment | supports | The resource root denotes actual spent NiMH recycler powder. It does not collapse NiMH into lithium-ion black mass, pure electrodes or constituent elements, and does not inherit elemental criticality. |
+| primary | https://doi.org/10.1007/s12649-021-01398-x; Full 15-page primary PDF acquired from German National Library; Methods, Results and Conclusions read; Figures 1-5 and Tables 1-3 visually inspected on PDF pages 3,4,6,8,9,10,12 | supports | Independent inspection supports the narrowly worded G. oxydans culture-liquid association with extraction and retains one-step and S. pilosus null outcomes. Reported percentages, 0.2-micrometre filtering, triplicate errors and distinct media are faithfully represented. Main Results and Table 3 disagree with abstract total REE yield; Methods/Figure 3 disagree with Table 3 about two-step pregrowth. The record discloses these conflicts, centrifugation limits, lack of matched pure-acid/pH controls and incomplete partition accounting. |
+| supplement | https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs12649-021-01398-x/MediaObjects/12649_2021_1398_MOESM1_ESM.docx; Full text and independent ZIP/XML extraction of word/charts/chart1.xml through chart4.xml; cached x/y series, labels and positive/negative errors checked | context_only | Supplement medium-selection comparisons support context only. The DOCX has no word/media image files; original Word rendering was unavailable and is not claimed. Its charts compare acid concentrations, pH and available G. oxydans optical-density measures; S. pilosus hyphae precluded its OD comparison. These are not extra battery-leaching replicates. |
+| authority | https://www.dsmz.de/collection/catalogue/details/culture/DSM-3503; Live DSMZ 3503 and 40097 catalogue pages plus NCBI Taxonomy 442 and 28893, independently checked on review date | supports | Collection entries resolve G. oxydans DSM 3503 strain I and S. pilosus DSM 40097 ISP 5097. Taxonomy entries resolve the species. These authorities do not independently authenticate the experimental stocks or establish genetic causes of leaching. |
+| search | https://link.springer.com/article/10.1007/s12649-021-01398-x; Live primary publisher full HTML and bounded DOI correction/retraction search | context_only | The publisher independently confirms the article identity, text and open-access terms. The first returned set for the exact DOI with correction OR retraction yielded no relevant notice; this is not an exhaustive absence claim. |
+| provenance | research/ingests/round24-nimh-sources-20261011.json; Author acquisition/search manifest and paired Markdown assessed after the frozen record assessment began | supports | PDF and supplement hashes match independently inspected local files. The dossier distinguishes accepted 2021 evidence from incompletely reviewed 2022/2026 extensions. The author owns this dossier; the reviewer separately inspected the actual primary and supplement, preserving provenance rather than treating the manifest as scientific proof. |
+| gates | /private/tmp/cmm-round24-gate-receipts.json; Completed command receipts/logs read and exact record hash compared against the gated set | supports | The coordinating agent ran just check, require-records and trusted-base history validation. This reviewer read their terminal logs, verified the target hash and independently ran named-file validation. Structural success does not establish experimental reproducibility. |
+
+## Limits And Additional Notes
+
+- The species were tested in different phosphate media; no universal species ranking or unique molecular pathway follows from the reported contrast.
+- Centrifuged spent medium is source-described as cell-free; viable residual cells were not independently quantified and solution histories differ from two-step cultures.
+- Abstract 6.0 percent versus body/Table 3 6.5 percent total REE extraction and Methods/Figure 3 one-day versus Table 3 two-day G. oxydans pregrowth remain unresolved.
+- Table 2 higher-phosphate initial pH of 7.0 conflicts with Results 8.2/8.4; the record imports no optimization recommendation from this discrepancy.
+- Independent arithmetic of Table 1 detects another unresolved feed-accounting limitation: listed measured metals total 780.84 mg/g (78.084 percent), while Methods separately report 29.3 percent C, 4.99 percent N and 0.65 percent H. On one common mass basis these exceed 100 percent; the paper does not reconcile that basis. The record imports no absolute composition and explicitly calls extraction yields source-reported, so no invented recalculation or silent source repair is made.
+- Supplement original Word page rendering was unavailable; text and all four chart caches were independently checked, not represented as original visual rendering.
+- Source-reported yields and SEM/EDS do not establish complete mass balance, isolated products, economics or commercial deployment.
+- Correction and duplicate searches were bounded; neither universal absence nor source exhaustion is claimed.
+- Canonical target inspection preceded scientific judgment; captured target/history/schema hashes and gated target hash were checked again before saving.
+- The additional source composition-accounting limitation was communicated to the author. No numerical source repair, record edit or GitHub review issue is warranted by the current restricted claims.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T142958Z-spent-nickel-metal-hydride-batteries-round24-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of spent nickel-metal-hydride batteries
+started_at: '2026-10-11T14:25:03.702350Z'
+finished_at: '2026-10-11T14:29:58.444405Z'
+reviewer:
+  identity: Codex /root/round24_sulfuric_catalyst
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Coordinating agent /root authored the target. This reviewer
+    independently read primary methods/results, visual figures/tables, supplement
+    text/native chart caches and live authority pages, and made no target edits. Shared
+    worktree and author-acquired primary files/dossier are disclosed.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The exact NiMH record is scientifically defensible within its stated culture-metabolite,
+  laboratory and source-reported extraction scope. Null outcomes, contradictory endpoint/timing
+  values and mechanism limits remain explicit. No corrective record finding is warranted.
+source:
+  git_revision: d7183efeb2e528d6d88f0b69da41323642b8fa85
+  state: working_tree
+  inputs:
+  - path: data/records/spent-nickel-metal-hydride-batteries.yaml
+    sha256: 8aa2fc29df51e46e78b2d35c6e39b389314b9ee54afcb8ea62b5ce554eec14c1
+    role: target
+  - path: history/records/spent-nickel-metal-hydride-batteries/2026-10-11T142429Z-codex-40fbdc.yaml
+    sha256: 9408e9b7258e82c84271720a65204f0e2bdec5f7684347c0eb5c121f9ff67125
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire frozen NiMH record including resource identity, organism and
+    strain mapping, feed preparation, culture state, media, controls, outcomes, limitations
+    and actual history.
+  selection: Assigned root-authored new NiMH resource record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:spent-nickel-metal-hydride-batteries
+  exclusions:
+  - target: Deferred 2022 phosphate-reduction and 2026 NiMH studies
+    reason: No results from these incompletely inspected extensions enter the current
+      record; they require independent full-source curation before addition.
+targets:
+- target_id: cmmmech:spent-nickel-metal-hydride-batteries
+  path: data/records/spent-nickel-metal-hydride-batteries.yaml
+  label: Spent nickel-metal-hydride batteries
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/spent-nickel-metal-hydride-batteries.yaml
+    role: maintained scientific record
+checks:
+- check_id: named
+  name: Independent named validation
+  command: .venv/bin/python -m cmmmech validate data/records/spent-nickel-metal-hydride-batteries.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Checked 1 record(s); 0 failed.
+  target_ids:
+  - cmmmech:spent-nickel-metal-hydride-batteries
+- check_id: batch
+  name: Native full checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: '/private/tmp/cmm-round24-final-batch.log: uv run --locked --extra dev
+    python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 89.10s (0:01:29)
+
+    Checked 160 record(s); 0 failed.
+
+    Checked 181 history record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:spent-nickel-metal-hydride-batteries
+- check_id: require
+  name: Required corpus
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: '/private/tmp/cmm-round24-final-require.log: Checked 160 record(s); 0 failed.
+
+    '
+  target_ids:
+  - cmmmech:spent-nickel-metal-hydride-batteries
+- check_id: history
+  name: Trusted-base history
+  command: uv run --locked cmmmech validate-history --base d7183efeb2e528d6d88f0b69da41323642b8fa85
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: '/private/tmp/cmm-round24-final-history.log: Checked 181 history record(s);
+    0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:spent-nickel-metal-hydride-batteries
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/spent-nickel-metal-hydride-batteries.yaml
+  locator: Entire frozen record and actual CREATE history; canonical inspection captured
+    before scientific judgment
+  accessed_at: '2026-10-11T14:29:58.444405Z'
+  support: supports
+  summary: The resource root denotes actual spent NiMH recycler powder. It does not
+    collapse NiMH into lithium-ion black mass, pure electrodes or constituent elements,
+    and does not inherit elemental criticality.
+  snapshot_sha256: 8aa2fc29df51e46e78b2d35c6e39b389314b9ee54afcb8ea62b5ce554eec14c1
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1007/s12649-021-01398-x
+  locator: Full 15-page primary PDF acquired from German National Library; Methods,
+    Results and Conclusions read; Figures 1-5 and Tables 1-3 visually inspected on
+    PDF pages 3,4,6,8,9,10,12
+  accessed_at: '2026-10-11T14:29:58.444405Z'
+  support: supports
+  summary: Independent inspection supports the narrowly worded G. oxydans culture-liquid
+    association with extraction and retains one-step and S. pilosus null outcomes.
+    Reported percentages, 0.2-micrometre filtering, triplicate errors and distinct
+    media are faithfully represented. Main Results and Table 3 disagree with abstract
+    total REE yield; Methods/Figure 3 disagree with Table 3 about two-step pregrowth.
+    The record discloses these conflicts, centrifugation limits, lack of matched pure-acid/pH
+    controls and incomplete partition accounting.
+  snapshot_sha256: fde0cdd23acd519b7740891655e3bfcc360bca33017c53366333df2af0474986
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs12649-021-01398-x/MediaObjects/12649_2021_1398_MOESM1_ESM.docx
+  locator: Full text and independent ZIP/XML extraction of word/charts/chart1.xml
+    through chart4.xml; cached x/y series, labels and positive/negative errors checked
+  accessed_at: '2026-10-11T14:29:58.444405Z'
+  support: context_only
+  summary: Supplement medium-selection comparisons support context only. The DOCX
+    has no word/media image files; original Word rendering was unavailable and is
+    not claimed. Its charts compare acid concentrations, pH and available G. oxydans
+    optical-density measures; S. pilosus hyphae precluded its OD comparison. These
+    are not extra battery-leaching replicates.
+  snapshot_sha256: 097e6219a4a30babcf33f020e21fc70832c67bc0650fd344243e1bc000038749
+- evidence_id: authority
+  kind: primary_source
+  reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-3503
+  locator: Live DSMZ 3503 and 40097 catalogue pages plus NCBI Taxonomy 442 and 28893,
+    independently checked on review date
+  accessed_at: '2026-10-11T14:29:58.444405Z'
+  support: supports
+  summary: Collection entries resolve G. oxydans DSM 3503 strain I and S. pilosus
+    DSM 40097 ISP 5097. Taxonomy entries resolve the species. These authorities do
+    not independently authenticate the experimental stocks or establish genetic causes
+    of leaching.
+- evidence_id: search
+  kind: search
+  reference: https://link.springer.com/article/10.1007/s12649-021-01398-x
+  locator: Live primary publisher full HTML and bounded DOI correction/retraction
+    search
+  accessed_at: '2026-10-11T14:29:58.444405Z'
+  support: context_only
+  summary: The publisher independently confirms the article identity, text and open-access
+    terms. The first returned set for the exact DOI with correction OR retraction
+    yielded no relevant notice; this is not an exhaustive absence claim.
+  search_scope: Exact DOI correction/retraction query, first returned set only, no
+    filters or pagination. Fresh rg --no-ignore --hidden --follow covered data/records,
+    research, reviews and history for DOI, nickel-metal-hydride variants and NiMH.
+    The author expanded dedup receipt also records the pre-existing 2022 landscape
+    lead; no novelty or exhausted-literature assertion.
+- evidence_id: provenance
+  kind: record_content
+  reference: research/ingests/round24-nimh-sources-20261011.json
+  locator: Author acquisition/search manifest and paired Markdown assessed after the
+    frozen record assessment began
+  accessed_at: '2026-10-11T14:29:58.444405Z'
+  support: supports
+  summary: PDF and supplement hashes match independently inspected local files. The
+    dossier distinguishes accepted 2021 evidence from incompletely reviewed 2022/2026
+    extensions. The author owns this dossier; the reviewer separately inspected the
+    actual primary and supplement, preserving provenance rather than treating the
+    manifest as scientific proof.
+  snapshot_sha256: 42e49b746712fcd69e7bca5103eb622892d21e6bb1505cb256095b183881e8e8
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round24-gate-receipts.json
+  locator: Completed command receipts/logs read and exact record hash compared against
+    the gated set
+  accessed_at: '2026-10-11T14:29:58.444405Z'
+  support: supports
+  summary: The coordinating agent ran just check, require-records and trusted-base
+    history validation. This reviewer read their terminal logs, verified the target
+    hash and independently ran named-file validation. Structural success does not
+    establish experimental reproducibility.
+  snapshot_sha256: 78d51f2509b4419f72d1833d47d0d3b26bb21a56e3cad6bd806665d10ca026bb
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Process-defined secondary resource
+  outcome: supported
+  summary: The record has a defensible distinct feed identity and makes no resource-level
+    criticality or pure-phase assertion.
+  target_ids:
+  - cmmmech:spent-nickel-metal-hydride-batteries
+  evidence_ids:
+  - record
+  - primary
+  dimensions:
+  - name: material_kind
+    value: secondary_resource
+    definition: Actual end-of-life NiMH battery powder supplied by AkkuSer Oy, Finland;
+      battery formulations and upstream processing not fully reported.
+    evidence_ids:
+    - primary
+  - name: criticality
+    value: Not asserted
+    definition: No jurisdiction/list/edition status is inherited from Ni, Co or rare-earth
+      constituents.
+    evidence_ids:
+    - record
+- assessment_id: mechanism
+  area: evidence
+  topic: Conditional activity of heterotrophic culture liquid
+  outcome: supported
+  summary: Positive and null treatments support a bounded flask-scale culture-metabolite
+    association, while the record preserves source conflicts and avoids causal overstatement.
+  target_ids:
+  - cmmmech:spent-nickel-metal-hydride-batteries
+  evidence_ids:
+  - record
+  - primary
+  - supplement
+  - authority
+  dimensions:
+  - name: organism_strain
+    value: Gluconobacter oxydans DSM 3503 and Streptomyces pilosus DSM 40097
+    definition: Culture accession evidence is separate from species-level NCBITaxon:442
+      and NCBITaxon:28893 mappings.
+    evidence_ids:
+    - primary
+    - authority
+  - name: biomass_state
+    value: Live one-/two-step cultures and six-day centrifuged culture supernatants
+    definition: Source-described cell-free supernatant was centrifuged at 10000 rpm
+      for ten minutes, without independent residual viability counts; culture ages
+      and solution histories differ.
+    evidence_ids:
+    - primary
+  - name: feed_pretreatment
+    value: 630-micrometre-sieved actual battery powder autoclaved under nitrogen
+    definition: 121 degrees C for one hour; mineralogical invariance after sterilization
+      not demonstrated.
+    evidence_ids:
+    - primary
+  - name: conditions_controls
+    value: 1 percent w/v powder, 100 mL in 250-mL flasks, 27 +/- 1 degrees C, 150
+      rpm
+    definition: Triplicate experiments and respective sterile media plus cultures
+      without powder; 2.7 versus 27 mM K2HPO4 media differ between species and are
+      not matched pure-gluconic-acid or pH controls.
+    evidence_ids:
+    - primary
+  - name: outcomes
+    value: Source-reported liquid extraction percentages, with total REEs separate
+      from individual yields
+    definition: G. oxydans two-step/spent-medium results are retained with abstract-versus-body
+      REE and pregrowth-timing conflicts. Reported null treatments are not exact analytical
+      zeros or universal species incapability.
+    evidence_ids:
+    - record
+    - primary
+  - name: deployment
+    value: Laboratory culture and filtered-liquid measurements
+    definition: SEM/EDS of selected particles is not a closed phase balance, isolated
+      metal product or industrial demonstration.
+    evidence_ids:
+    - primary
+- assessment_id: history
+  area: provenance
+  topic: Independent review of frozen authored state
+  outcome: supported
+  summary: The CREATE sidecar and inline event document actual new curation. The reviewer
+    did not author or edit the target; its captured hash still matches the validated
+    batch.
+  target_ids:
+  - cmmmech:spent-nickel-metal-hydride-batteries
+  evidence_ids:
+  - record
+  - provenance
+  - gates
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- The species were tested in different phosphate media; no universal species ranking
+  or unique molecular pathway follows from the reported contrast.
+- Centrifuged spent medium is source-described as cell-free; viable residual cells
+  were not independently quantified and solution histories differ from two-step cultures.
+- Abstract 6.0 percent versus body/Table 3 6.5 percent total REE extraction and Methods/Figure
+  3 one-day versus Table 3 two-day G. oxydans pregrowth remain unresolved.
+- Table 2 higher-phosphate initial pH of 7.0 conflicts with Results 8.2/8.4; the record
+  imports no optimization recommendation from this discrepancy.
+- 'Independent arithmetic of Table 1 detects another unresolved feed-accounting limitation:
+  listed measured metals total 780.84 mg/g (78.084 percent), while Methods separately
+  report 29.3 percent C, 4.99 percent N and 0.65 percent H. On one common mass basis
+  these exceed 100 percent; the paper does not reconcile that basis. The record imports
+  no absolute composition and explicitly calls extraction yields source-reported,
+  so no invented recalculation or silent source repair is made.'
+- Supplement original Word page rendering was unavailable; text and all four chart
+  caches were independently checked, not represented as original visual rendering.
+- Source-reported yields and SEM/EDS do not establish complete mass balance, isolated
+  products, economics or commercial deployment.
+- Correction and duplicate searches were bounded; neither universal absence nor source
+  exhaustion is claimed.
+notes:
+- Canonical target inspection preceded scientific judgment; captured target/history/schema
+  hashes and gated target hash were checked again before saving.
+- The additional source composition-accounting limitation was communicated to the
+  author. No numerical source repair, record edit or GitHub review issue is warranted
+  by the current restricted claims.
+tags:
+- round24
+- independent
+- scientific-review
+- secondary-resource
+```

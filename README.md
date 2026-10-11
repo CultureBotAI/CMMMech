@@ -166,6 +166,10 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [End-of-life crystalline-silicon photovoltaic modules](data/records/end-of-life-crystalline-silicon-photovoltaic-modules.yaml) | Bioanode-powered silver-bearing cathode deposition from prepared module leachate | Chemical pretreatment, abiotic cathode, missing matched controls and ambiguous blank XRD limit recovery claims |
 | [Waste liquid-crystal-display panels](data/records/waste-liquid-crystal-display-panels.yaml) | Mixed acidophile-associated indium/tin mobilization | Unlike pH trajectories, ambiguous replication and source percentage conflicts; no isolated product |
 | [Spent automotive three-way catalyst](data/records/spent-automotive-three-way-catalyst.yaml) | Biogenic-acid aluminium-leaching pretreatment | Unlike media and unresolved Pt accounting prevent a measured PGM-recovery claim |
+| [Spent sulfuric-acid-production catalyst](data/records/spent-sulfuric-acid-production-catalyst.yaml) | Culture-associated vanadium mobilization | Loading-dependent controls, conflicting source labels and residual leachability; no isolated product |
+| [Copper-smelter slag](data/records/copper-smelter-slag.yaml) | Sulfur-oxidizer-associated copper mobilization | Slag-dependent outcomes, acidity and loading conflicts; no isolated product |
+| [Coal-mine-drainage treatment solids](data/records/coal-mine-drainage-treatment-solids.yaml) | Isolate-associated REE mobilization | Site-specific sterile release, below-control outcomes and unresolved mass accounting |
+| [Spent nickel-metal-hydride batteries](data/records/spent-nickel-metal-hydride-batteries.yaml) | Heterotrophic culture-metabolite leaching | Null treatments, different media and source yield/timing conflicts; no isolated product |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -196,7 +200,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [twenty-first expansion reviews](research/ingests/round21-20261011-publication.md),
 [twenty-second expansion reviews](research/ingests/round22-20261011-publication.md),
 [twenty-third expansion reviews](research/ingests/round23-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round23-frontier-20261011.md), and
+[twenty-fourth expansion reviews](research/ingests/round24-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round24-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 
