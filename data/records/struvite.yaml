@@ -1,0 +1,70 @@
+id: cmmmech:struvite
+name: Struvite
+material_kind: mineral
+description: Struvite is the (NH4)Mg(PO4)(H2O)6 mineral species, grandfathered in the September
+  2026 IMA list with original-description year 1846. It is distinct from struvite-(K), dittmarite,
+  elemental phosphorus or magnesium, and a recovered wastewater product that may contain multiple
+  phases. The fungal experiment used processed struvite-bearing material from a water-treatment
+  site and reuses Kang 2022 also represented under phosphorus and cerium; it is not an independent
+  study. No constituent-element criticality is inherited.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 208, Struvite row;
+    page 1 column definitions and page 2 distribution terms.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-11'
+- id: kang_2022
+  title: Kang, Csetenyi, Gao and Gadd (2022). Solubilization of struvite and biorecovery of
+    cerium by Aspergillus niger. Applied Microbiology and Biotechnology 106:821-833. DOI 10.1007/s00253-021-11721-0;
+    PMC8763747; Methods, Figures 1-2, Table 1 and Discussion.
+  url: https://doi.org/10.1007/s00253-021-11721-0
+  accessed_on: '2026-10-11'
+- id: ncbi_atcc1015
+  title: NCBI Taxonomy 380704 - Aspergillus niger ATCC 1015; strain rank in the XML retrieved
+    11 October 2026.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=380704&mode=Info
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: fungal_struvite_phosphate_mobilization
+  name: Phosphate mobilization during fungal growth on struvite-bearing material
+  process: bioleaching
+  description: Aspergillus niger ATCC 1015 growth was associated with acidification, oxalic
+    acid production and increased soluble inorganic phosphate in struvite-containing medium.
+    Acid-mediated dissolution is supported; oxalate's exclusive causal contribution is not
+    isolated by this experiment.
+  context: Laboratory natural struvite fragments from a Veolia Water Outsourcing site in Exeter,
+    UK, were pulverized and oven-treated at 105 degrees C for 48 h. XRD identified struvite
+    plus dittmarite in the feed. Flasks contained 1% w/v feed in 200 mL modified Czapek-Dox
+    medium, inoculated with 1 x 10^6 spores/mL and incubated for 14 days at 25 degrees C,
+    125 rpm, in darkness. Medium pH was adjusted to 5.5 before autoclaving; this is not a
+    measured post-feed starting pH. The medium already contained 1 g/L Na2HPO4, so struvite
+    was not the sole phosphorus source. These are laboratory mobilization results without
+    an isolated phosphorus product yield or demonstrated industrial deployment.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:380704
+    label: Aspergillus niger ATCC 1015
+  evidence:
+  - source_ref: kang_2022
+    supports: support
+    explanation: Results and Figure 2B report final soluble Pi of 51.37 +/- 0.59 mM in the
+      struvite-containing fungal culture; Figure 2 specifies means and standard errors from
+      at least three replicates. Final pH was 2.46 +/- 0.11 and oxalic acid 26.49 +/- 3.43
+      mM. These are solution endpoints, not a mineral-specific mass balance or a recovery
+      yield.
+  - source_ref: kang_2022
+    supports: partial
+    explanation: Methods name uninoculated flasks, but Figure 2 compares inoculated cultures
+      with versus without struvite. It does not provide an acid-matched abiotic contrast.
+      Background medium phosphate and the mixed mineral feed limit attribution of every measured
+      Pi molecule to struvite. The inspected full text does not specify the Pi assay procedure,
+      although it describes oxalic acid HPLC. The source's complete-solubilization wording
+      is not adopted as a quantified mineral dissolution fraction.
+curation_history:
+- timestamp: '2026-10-11T09:26:59.519956+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created struvite species identity with mixed-feed fungal phosphate mobilization
+    and control limitations.
+history_refs:
+- history/records/struvite/2026-10-11T092658Z-codex-da0301.yaml

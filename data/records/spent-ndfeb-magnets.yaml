@@ -1,0 +1,140 @@
+id: cmmmech:spent-ndfeb-magnets
+name: Spent NdFeB permanent magnets
+material_kind: secondary_resource
+description: >-
+  Discarded neodymium-iron-boron permanent-magnet material considered as a
+  secondary resource, distinct from the neodymium element, a fixed-purity
+  Nd2Fe14B compound, all rare-earth magnets, and the broader commodity grouping
+  of raw materials for permanent magnets. Actual feeds can contain other rare
+  earths, alloying elements, coatings and impurities; no universal composition
+  is assigned. Riano and Binnemans document an end-of-life NdFeB feed. The
+  microbial-origin biomass assay curated here instead used chemically prepared
+  hard-disk-magnet leachate; its precise device history and waste collection
+  provenance were not reported. This is the same Kucuker experiment represented
+  under neodymium, not an independent replication or a criticality designation
+  inherited from its constituent elements.
+sources:
+  - id: riano2015
+    title: >-
+      Riano and Binnemans (2015). Extraction and separation of neodymium and
+      dysprosium from used NdFeB magnets: an application of ionic liquids in
+      solvent extraction towards the recycling of magnets. Green Chemistry
+      17:2931-2942. DOI 10.1039/C5GC00230C; pp.2932-2933, end-of-life feed,
+      Selective leaching and direct magnet dissolution, and Table 1. Used for
+      material/feed context, not microbial evidence.
+    url: https://doi.org/10.1039/C5GC00230C
+    accessed_on: '2026-10-11'
+  - id: kucuker2017
+    title: >-
+      Kucuker et al. (2017). Biosorption of neodymium on Chlorella vulgaris in
+      aqueous solution obtained from hard disk drive magnets. PLOS ONE
+      12(4):e0175255. DOI 10.1371/journal.pone.0175255; Methods pp.2-4,
+      Figures 1-3, Table 1 and Results/Conclusion pp.5-10.
+    url: https://doi.org/10.1371/journal.pone.0175255
+    accessed_on: '2026-10-11'
+  - id: kucuker2017_s1
+    title: >-
+      Kucuker et al. (2017), S1 Table, Results of the kinetic analysis.
+      Publisher XLSX; Tabelle1 merged A83:A86/B83:B86/C83:C86 and D86/E86/J86;
+      selected experimental and fitted uptake values are different quantities.
+    url: https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0175255.s001&type=supplementary
+    accessed_on: '2026-10-11'
+  - id: ncbi_chlorella
+    title: 'NCBI Taxonomy 3077 - Chlorella vulgaris; species-level identifier'
+    url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=3077&retmode=xml
+    accessed_on: '2026-10-11'
+  - id: sag21112
+    title: 'SAG culture catalogue, strain 211-12, Chlorella vulgaris'
+    url: https://sagdb.uni-goettingen.de/detailedList.php?str_number=211-12
+    accessed_on: '2026-10-11'
+mechanisms:
+  - id: chlorella_magnet_leachate_biosorption
+    name: Nd depletion during contact of magnet-derived leachate with dried algae
+    process: biosorption
+    microbial: true
+    organisms:
+      - id: NCBITaxon:3077
+        label: Chlorella vulgaris
+    description: >-
+      Dried Chlorella vulgaris SAG 211-12 biomass was associated with removal
+      of dissolved Nd from a selectively prepared hard-disk-magnet leachate.
+      The reported uptake was calculated from filtered solution depletion,
+      not measured as isolated Nd product. Thermal and nitric-acid steps
+      dissolved the magnet before the biomass assay; the experiment does not
+      demonstrate microbial dissolution of the intact alloy, metabolic uptake,
+      a unique binding pathway or industrial magnet recycling.
+    context: >-
+      The laboratory feed comprised crushed and milled NdFeB hard-disk magnets
+      sieved below 250 micrometres, roasted at 950 degrees C for 7 h, then
+      leached using 5 mL 65% HNO3 and 10 mL water per 15 g roasted sample at
+      80 +/- 2 degrees C for 72 h with stirring. Centrifugation at 3000 rpm
+      for 10 min and sequential filter paper/0.45 micrometre filtration
+      preceded preparation of 1000 mg Nd/L stock and diluted assay feeds.
+      The biosorbent was cultured in outdoor photobioreactors, then dried
+      at 90 degrees C for 24 h; its reported particle size was 250 micrometres.
+      Pilot-scale biomass cultivation does not establish pilot-scale recovery.
+      Batch assays used 0.2 L solution in 500 mL flasks at 300 rpm for 90 min,
+      50-250 mg Nd/L, 0.5-3 g dry biomass/L, pH 3-5 and 21, 35 or 50 degrees C.
+      HCl/NaOH maintained pH within +/- 0.2. The curated endpoint is pH 5,
+      35 degrees C, 250 mg Nd/L and 0.5 g biomass/L. Filtered time-point samples
+      were measured by ICP-OES; reported values average duplicate experiments.
+      The source does not describe a matched biomass-free time-course blank
+      in these Methods. NCBI identifies the species, whereas SAG and the paper
+      establish the strain; catalogue axenity is not independent verification
+      of the outdoor-grown assay biomass.
+    evidence:
+      - source_ref: kucuker2017
+        supports: support
+        explanation: >-
+          Methods pp.2-4, Eq.1, Figure 2 and Conclusion p.10 support the stated
+          preparation, inactive biomass and endpoint. At the scoped condition,
+          the authors report 157.40 mg Nd/g dry biomass, calculated as solution
+          volume times initial-minus-final concentration divided by dry biomass
+          mass. This is a source-reported depletion-derived uptake per biomass,
+          not a percent of original-magnet Nd recovered. Figure 1's combustion
+          route is not accompanied by an isolated-metal or metal-rich-ash
+          product yield in the inspected results. Table 1 separately gives a
+          fitted Langmuir capacity of 188.68 mg/g, which is not the measured
+          endpoint.
+      - source_ref: kucuker2017_s1
+        supports: support
+        explanation: >-
+          Tabelle1's merged condition cells A83:C86 specify 35 degrees C,
+          pH 5 and 0.5 g/L; D86 gives 250 mg Nd/L and E86 gives experimental
+          uptake 157.3984 mg/g when rounded to four decimal places. J86 is
+          a separate fitted pseudo-second-order uptake of about 161.29 mg/g,
+          which does not replace the reported endpoint.
+      - source_ref: kucuker2017
+        supports: partial
+        explanation: >-
+          Results pp.6-8 report Fe, B, Dy and Co below detection after selective
+          preparation, without numerical detection limits; they are not
+          established measured zeros. The assay therefore does not verify
+          selectivity in an untreated multimetal waste. The source asserts no
+          Nd hydroxide precipitation below pH 7 but also proposes precipitation
+          at 50 degrees C, and gives differing 50-degree uptake values across
+          abstract and Results. These statements are not silently reconciled
+          or used to replace the scoped 35-degree endpoint. Missing matched
+          blanks and phase/localization measurements leave precipitation,
+          nonspecific loss and specific binding contributions unresolved.
+          The resource's complete collection-to-product mass balance, biomass
+          regeneration and industrial operation were not demonstrated.
+      - source_ref: kucuker2017_s1
+        supports: partial
+        explanation: >-
+          Kinetic model fit does not prove a molecular mechanism or rate-limiting
+          chemical reaction. S1 contains pseudo-second-order R-squared values
+          below the paper's broad greater-than-0.99 wording, including K100
+          (about 0.7203) and K121 (about 0.9635), for other assay conditions.
+          No universal kinetic fit or unique carboxyl-group mechanism is asserted.
+curation_history:
+  - timestamp: '2026-10-11T09:26:30.112393+00:00'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Created a distinct magnet-waste resource identity and a source-scoped
+      inactive-algal biosorption assay after thermal/acid pretreatment. Verified
+      primary methods, figures, supplementary cells and organism authorities;
+      retained uncertainties and distinguished reused evidence from replication.
+history_refs:
+  - history/records/spent-ndfeb-magnets/2026-10-11T092622Z-codex-65cd7d.yaml

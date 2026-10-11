@@ -1,0 +1,79 @@
+id: cmmmech:coal-fly-ash
+name: Coal fly ash
+material_kind: secondary_resource
+description: Fine particulate residue from coal combustion carried with flue gas and collected
+  as fly ash, distinct from coal, coal bottom ash, municipal-waste incineration ash and sewage-sludge
+  incineration ash. It is a heterogeneous secondary resource rather than a mineral species or
+  a rare-earth commodity. A selected power-plant sample underwent laboratory treatment with
+  yeast culture supernatant; constituent-element criticality is not inherited by the ash.
+sources:
+- id: park_liang_2019
+  title: Park and Liang (2019). Bioleaching of trace elements and rare earth elements from coal
+    fly ash. International Journal of Coal Science & Technology 6:74-83. DOI 10.1007/s40789-019-0238-5;
+    Sections 2.1-2.4 and 3, Tables 1-2, Figures 1-3 and 6-7.
+  url: https://doi.org/10.1007/s40789-019-0238-5
+  accessed_on: '2026-10-11'
+- id: ncbi_starmerella
+  title: 'NCBI Taxonomy 75736: Starmerella bombicola, species; Candida bombicola is a listed
+    synonym and ATCC 22214 is listed among type-material cultures.'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=75736
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: bombicola_supernatant_residue_loss
+  name: Element loss from coal fly ash after yeast-supernatant treatment
+  process: bioleaching
+  description: Park and Liang report decreased residual-solid element inventories following
+    contact with supernatant from Candida (Starmerella) bombicola ATCC 22214. The study estimates
+    extraction from the difference between initial and residual ash analyses, not by measuring
+    recovered metal in solution. This supports a qualified laboratory leaching observation without
+    identifying the active metabolite or a purified product.
+  context: Fly ash from Southern Illinois University Carbondale power plant was ball-milled
+    for one hour and sieved to below 74 micrometres. The yeast was cultivated in glucose 100
+    g/L, yeast extract 10 g/L and urea 1 g/L medium, initially pH 5.5. A 10% v/v inoculum was
+    grown with 1% w/v fly ash for three days at 28 degrees C, in darkness, 150 rpm. Centrifugation
+    at 4500 x g for 15 minutes supplied supernatant for fresh-fly-ash contact at 28 degrees
+    C, 50 rpm for six hours; Table 2 gives 1% pulp density for this leaching stage. Final solids
+    were separated with a 0.45-micrometre membrane, water-washed, dried and heated at 550 degrees
+    C for six hours. Initial/residual solids underwent dilute nitric/hydrochloric acid reflux
+    at 95 degrees C for 30 minutes, then ICP-MS. Experiments were triplicated; leach volume
+    is not specified. Water and fresh growth-media comparators were stated.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:75736
+    label: Starmerella bombicola
+  evidence:
+  - source_ref: park_liang_2019
+    supports: support
+    explanation: Sections 2.3-2.4 and 3, Figure 3 report residual-inventory-based losses of
+      67.7% Yb, 64.6% Er, 63.0% Sc, 62.2% Y and 79.5% Mo for the ATCC 22214 supernatant. The
+      approximately 59.7% mineral loss is a separate gravimetric denominator based on initial
+      nonvolatile mineral residue, not a total-REE recovery yield. Figure 7 shows that extending
+      culture production from three to six or nine days did not produce a reported significant
+      increase in this mineral-loss measure.
+  - source_ref: park_liang_2019
+    supports: partial
+    explanation: The paper intentionally analyzes initial and residual solids rather than leaching
+      liquor. Equal digestion procedures do not establish quantitative dissolution of all original
+      and altered host phases, and no solution/residue mass balance or isolated product is supplied.
+      The main figures do not report quantitative leaching outcomes for the stated water/fresh-medium
+      controls; Figure 6 controls concern yeast growth without ash, not an acidity-matched sterile
+      leach. Centrifugation is stated without sterile filtration of the spent medium. These
+      limits prevent assigning the whole residual-inventory difference to microbial metabolism
+      or claiming a universal dissolved-metal yield.
+  - source_ref: park_liang_2019
+    supports: partial
+    explanation: Organic-acid or sophorolipid causality is proposed but the active leaching
+      chemicals were not isolated or measured in this experiment. Figure 2 labels the two nonselected
+      comparator organisms in the opposite order to the corresponding mineral-loss values in
+      running text, and Figure 3 gives Ce 27.3% while text groups the lowest light-REE losses
+      as 28.1-30.7%. Those inconsistent details are not silently corrected or adopted. Results
+      from the three organisms are not independent confirmation of a single molecular mechanism,
+      and no commercial operation was tested.
+curation_history:
+- timestamp: '2026-10-11T09:26:04.464015+00:00'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Created the distinct secondary-resource identity and source-scoped laboratory evidence,
+    preserving control, measurement, scale and source-consistency limitations.
+history_refs:
+- history/records/coal-fly-ash/2026-10-11T092617Z-codex-c42785.yaml

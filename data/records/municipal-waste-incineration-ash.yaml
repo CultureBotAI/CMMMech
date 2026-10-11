@@ -1,0 +1,74 @@
+id: cmmmech:municipal-waste-incineration-ash
+name: Municipal-waste incineration ash
+material_kind: secondary_resource
+description: Ash resulting from municipal-waste thermal treatment, a heterogeneous secondary
+  resource distinct from coal fly ash and sewage-sludge incineration ash. The curated study
+  calls its feed ash A without identifying whether it is fly ash, bottom ash, or a mixture;
+  this record does not resolve that fraction by inference. Criticality of individual constituents
+  does not designate the whole ash. The selected experiment is shared with the niobium element
+  record, not an independent replication.
+sources:
+- id: andrzejewska_gorecka_2019
+  title: Andrzejewska-Gorecka et al. (2019). Release of critical metals from furnace wastes
+    using the process of bioleaching in various variants. Archives of Environmental Protection
+    45(3):72-78. DOI 10.24425/aep.2019.128643; research methods pp.73-74, Tables 1-4, Figures
+    1-9.
+  url: https://doi.org/10.24425/aep.2019.128643
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: sludge_culture_ash_a_release
+  name: Condition-dependent metal release from municipal-waste ash in sludge cultures
+  process: bioleaching
+  description: An adapted sludge-derived culture was associated with different reported metal
+    release patterns from ash A across aeration, temperature and mixing conditions. Niobium
+    release was reported highest in the shaken 24 degrees C arm and null in the aerated arm,
+    whereas several other metals showed the opposite pattern. The observations do not establish
+    microbial necessity, metal-specific redox pathways or isolated-metal recovery.
+  context: 'A living mixed culture derived from municipal activated sludge was adapted at 24
+    degrees C and 120 rpm in sludge:distilled water 1:1 with 1% powdered sulfur (percentage
+    basis unspecified), until pH below 3 and reported sulfur-oxidizer index 10^-6. Each 300
+    mL flask contained 150 mL culture and 10 g ash for five days. Taxa, strains, treatment-plant
+    identity, ash mineralogy, particle size, sterilization and detailed provenance are unresolved.
+    Table 2 defines three variants: 24 degrees C/120 rpm without compressed air; 24 degrees
+    C with air providing mixing; and 37 degrees C/50 rpm without compressed air. Three corresponding
+    controls were averaged because their results were reportedly similar. ICP-OES measured metal
+    content. This is a laboratory flask assay. Initial ash-A Nb content was 33.6 mg/kg. Starting
+    pH below 3 rose to final pH 10, 6 and 10 in variants 1, 2 and 3, respectively.'
+  microbial: true
+  evidence:
+  - source_ref: andrzejewska_gorecka_2019
+    supports: support
+    explanation: Figure 3 reports Nb release of 100.0%, 0.0% and 6.7% for variants 1-3 versus
+      2.3% averaged control. The p.74 formula uses leaching-culture metal concentration times
+      volume divided by initial ash mass times initial metal content, so 100% is relative to
+      the characterized feed inventory, not product recovery or independently verified complete
+      dissolution. Figures 1,2,4,5 report 99.2% Rh, 91.1% Cd, 60.7% In and 50.0% Cr in the aerated
+      24 degrees C condition. These are the authors' unqualified analytical values, not accepted
+      universal yields.
+  - source_ref: andrzejewska_gorecka_2019
+    supports: partial
+    explanation: Methods do not define control composition, inoculum exclusion, sterilization
+      or matched acidity. Filtration/centrifugation, leach-sample digestion, culture-background
+      subtraction and detection limits are unspecified, so dissolved metal cannot be distinguished
+      confidently from colloidal/particulate material or sludge contributions. Three instrument
+      exposures are not evidence of independent biological triplicates; replicate counts, error
+      bars and statistical tests are absent. Table 4 calls variant 3 120 rpm while Table 2 and
+      figures say 50 rpm. Its caption ambiguously mentions culture while running text defines
+      released amount per kg waste. No phase-specific dissolution, isolated product purity,
+      closed mass balance or industrial deployment was shown.
+  - source_ref: andrzejewska_gorecka_2019
+    supports: partial
+    explanation: The reported 0.0% Nb is retained without interpreting it as an analytically
+      proven zero. Sulfate and sulfur-oxidizer indices increased with aeration, but maximum
+      Nb release was at final pH 10 without aeration; sulfur oxidation and acidity cannot be
+      assumed to cause that Nb result. The much lower Nb outcome in ash B is counterevidence
+      to uniform performance across furnace wastes. Neither ash fractions nor feed phases are
+      identified well enough to generalize across municipal incinerators.
+curation_history:
+- timestamp: '2026-10-11T09:26:04.469269+00:00'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Created the distinct secondary-resource identity and source-scoped laboratory evidence,
+    preserving control, measurement, scale and source-consistency limitations.
+history_refs:
+- history/records/municipal-waste-incineration-ash/2026-10-11T092619Z-codex-f202ce.yaml

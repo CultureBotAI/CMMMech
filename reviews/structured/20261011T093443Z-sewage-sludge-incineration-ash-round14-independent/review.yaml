@@ -1,0 +1,233 @@
+schema_version: 1.0.0
+review_id: 20261011T093443Z-sewage-sludge-incineration-ash-round14-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: 'Independent scientific review: sewage-sludge-incineration-ash'
+started_at: '2026-10-11T09:28:57.274265Z'
+finished_at: '2026-10-11T09:34:43Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Separate resource agent authored this target. Root independently
+    inspected original full text, methods, tables and rendered figures, original taxonomy
+    exports and record/history bytes. Root authored only a different magnet record.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Supported scoped resource identity and qualified laboratory mechanism,with
+  no actionable record defect in reviewed scope.
+source:
+  git_revision: 8f8abedfce68f932e4f6f333a5470ee5f3897ff4
+  state: working_tree
+  inputs:
+  - path: data/records/sewage-sludge-incineration-ash.yaml
+    sha256: 2c63142c818ba0e3309df50b45f614b0a6ff2c0d39e370a9e0651d3b5d999a0a
+    role: target
+  - path: docs/records.md
+    sha256: 212cdbb723eb1ad9eb76ea1b7dad066914659b1f85eb2cdb51ee67466cfcc8ee
+    role: context
+  - path: history/records/sewage-sludge-incineration-ash/2026-10-11T092622Z-codex-0a1911.yaml
+    sha256: 446f917126d06353195905e787ced6df5c0bf0f5554e4e36259dac215a76c02e
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+scope:
+  description: All scientific and provenance fields of one new resource record.
+  selection: New round14 resource assigned independently; all fields reviewed.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:sewage-sludge-incineration-ash
+  exclusions:
+  - target: Other corpus records and uncurated literature
+    reason: Checked only for duplicate/scope context; no corpus-wide scientific clearance.
+targets:
+- target_id: cmmmech:sewage-sludge-incineration-ash
+  path: data/records/sewage-sludge-incineration-ash.yaml
+  label: Sewage-sludge incineration ash
+  kind: maintained
+  ownership_note: Maintained native CMMMech YAML; future corrections belong to this
+    record, not saved reviews.
+checks:
+- check_id: named
+  name: Five reviewed-resource validation
+  command: uv run --locked cmmmech validate data/records/spent-fluid-catalytic-cracking-catalyst.yaml
+    data/records/coal-fly-ash.yaml data/records/municipal-waste-incineration-ash.yaml
+    data/records/sewage-sludge-incineration-ash.yaml data/records/spent-hydrocracking-catalyst.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:sewage-sludge-incineration-ash
+  summary: Root executed and observed terminal0:5 records,0failed. /private/tmp/cmm-round14-root-review/named-validation.log
+- check_id: history
+  name: Trusted-base canonical history
+  command: uv run --locked cmmmech validate-history --base 8f8abedfce68f932e4f6f333a5470ee5f3897ff4
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root observed terminal0:134history records,0errors. /private/tmp/cmm-round14-history.log
+  target_ids:
+  - cmmmech:sewage-sludge-incineration-ash
+- check_id: records
+  name: Required corpus validation
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root observed terminal0:119records,0failed. /private/tmp/cmm-round14-require.log
+  target_ids:
+  - cmmmech:sewage-sludge-incineration-ash
+- check_id: batch
+  name: Native full batch checks before FCC wording correction
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal0 session53639:307 passed,3 skipped in80.06s;119records,134histories
+    valid. Log /private/tmp/cmm-round14-check.log. FCC wording correction pending;
+    this gate covers other unchanged targets.
+  target_ids:
+  - cmmmech:sewage-sludge-incineration-ash
+evidence:
+- evidence_id: target
+  kind: record_content
+  reference: data/records/sewage-sludge-incineration-ash.yaml
+  locator: All fields and linked CREATE sidecar
+  accessed_at: '2026-10-11T09:34:43Z'
+  support: supports
+  summary: Exact working bytes captured before assessment; native schema and docs
+    checked; actual GPT-6/codex CREATE targets this record and issue56, with separate
+    inline event.
+  snapshot_sha256: 2c63142c818ba0e3309df50b45f614b0a6ff2c0d39e370a9e0651d3b5d999a0a
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.24425/aep.2019.128643
+  locator: Research methods printed73-74; Tables1-4; Figures6-9; Results75-77
+  accessed_at: '2026-10-11T09:34:43Z'
+  support: supports
+  summary: Independently read retained original primary PDF acquired by curator this
+    round. Sewage-sludge thermal-treatment ashB; distinct from sludge feed and municipal-waste
+    ashA. Sameculturepreparation;150mLculture+10gash,5days;24C120rpm,24Caerated,37C50rpm.
+    AshB Nb14.6/14.5/14.7% versus5.9;In10.2/53.1/3.5% versus3.4;Rh20.3/10.6/8.3% versus4.1.
+    No identified host phases or control chemistry; finalpH9/8/9. Table4 Rd is not
+    an element identity; Figure6 and prose identify Rh. Instrument exposures are not
+    biological replicates; control-near In result has no equivalence test.
+  snapshot_sha256: 9f7ac95ce6f552b2473aa1c42ee5d7000fa4eec60ac1e6e0c5116aba91bb31f0
+- evidence_id: search
+  kind: search
+  reference: Local corpus and four exact DOI queries
+  locator: data/records,history,research,reviews plus first web result page
+  accessed_at: '2026-10-11T09:34:43Z'
+  support: context_only
+  summary: Ignored-inclusive followed local search establishes bounded identity overlap
+    and repeated-study context. Four DOI correction/retraction queries returned original
+    publications and related leads; no applicable notice in that result window. No
+    exhaustive clearance.
+  snapshot_sha256: db9cb5c3009827426a8eeac8ba9a3e3d7a5ce7f1a61204484aac61e7a32dc15b
+  search_scope: rg --no-ignore --hidden --follow matching four DOIs and five resource
+    slugs across data/records history research reviews. Web queries exact quoted DOI
+    for each cited paper plus correction retraction; no domain/date filters or pagination.
+    Sources were independently read, not inferred from snippets.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Secondary-resource boundaries
+  outcome: supported
+  summary: Sewage-sludge thermal-treatment ashB; distinct from sludge feed and municipal-waste
+    ashA. No constituent-element criticality is inherited. No unverified resource/mineral
+    identifier or designation is invented.
+  target_ids:
+  - cmmmech:sewage-sludge-incineration-ash
+  evidence_ids:
+  - target
+  - primary
+  dimensions:
+  - name: material_form
+    value: secondary_resource
+    definition: Industrial waste/feed class, not elemental or mineral identity.
+    evidence_ids:
+    - primary
+    - target
+  - name: criticality
+    value: No designation asserted
+    definition: No jurisdiction/list/edition transferred from constituents.
+    evidence_ids:
+    - primary
+    - target
+- assessment_id: mechanism
+  area: evidence
+  topic: Organism,pretreatment,controls and outcome
+  outcome: supported
+  summary: Living activated-sludge-derived mixed culture; no assigned taxon or strain.
+    Sameculturepreparation;150mLculture+10gash,5days;24C120rpm,24Caerated,37C50rpm.
+    AshB Nb14.6/14.5/14.7% versus5.9;In10.2/53.1/3.5% versus3.4;Rh20.3/10.6/8.3% versus4.1.
+    No identified host phases or control chemistry; finalpH9/8/9. Table4 Rd is not
+    an element identity; Figure6 and prose identify Rh. Instrument exposures are not
+    biological replicates; control-near In result has no equivalence test.
+  target_ids:
+  - cmmmech:sewage-sludge-incineration-ash
+  evidence_ids:
+  - target
+  - primary
+  dimensions:
+  - name: organism
+    value: Living activated-sludge-derived mixed culture; no assigned taxon or strain
+    definition: Taxon,experimentalstrain or mixedcommunity scope.
+    evidence_ids:
+    - primary
+    - target
+  - name: conditions
+    value: Sameculturepreparation;150mLculture+10gash,5days;24C120rpm,24Caerated,37C50rpm
+    definition: Selected laboratory assay and prior preparation.
+    evidence_ids:
+    - primary
+    - target
+  - name: outcome
+    value: AshB Nb14.6/14.5/14.7% versus5.9;In10.2/53.1/3.5% versus3.4;Rh20.3/10.6/8.3%
+      versus4.1
+    definition: Measured source endpoint and denominator, not isolated product.
+    evidence_ids:
+    - primary
+    - target
+  - name: deployment
+    value: Laboratory only
+    definition: Supplier industrial origin is not industrial biological deployment.
+    evidence_ids:
+    - primary
+    - target
+- assessment_id: provenance
+  area: provenance
+  topic: Immutable history and exact working state
+  outcome: supported
+  summary: Independent root reviewer did not author this record; inspected target,
+    native contract and actual CREATE sidecar before judging. Reused studies remain
+    linked views, not independent replicates.
+  target_ids:
+  - cmmmech:sewage-sludge-incineration-ash
+  evidence_ids:
+  - target
+  - search
+findings: []
+actions: []
+limitations:
+- No identified host phases or control chemistry; finalpH9/8/9. Table4 Rd is not an
+  element identity; Figure6 and prose identify Rh. Instrument exposures are not biological
+  replicates; control-near In result has no equivalence test.
+- 'Primary artifacts freshly acquired by curator were independently read by root;
+  not claimed as independent root downloads. Visual checks: ReedPDF18/22;ParkPDF5/8;ashPDF2-5;hydroPDF6/8-11,
+  with other relevant methods/results read as PDF text.'
+- Correction searches covered only listed exact-DOI queries and first returned results.
+  Source weaknesses retained explicitly are not fabricated review issues.
+tags:
+- round14
+- independent
+- scientific-review

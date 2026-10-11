@@ -1,0 +1,89 @@
+id: cmmmech:spent-hydrocracking-catalyst
+name: Spent hydrocracking catalyst
+material_kind: secondary_resource
+description: Used refinery catalyst from hydrocracking, which combines cracking and hydrogenation
+  of hydrocarbon feeds. This secondary-resource class is distinct from spent fluid catalytic
+  cracking catalyst, automotive catalyst and the broader category of all hydroprocessing catalysts.
+  The selected Thai refinery material was decoked before laboratory leaching; its composition
+  is not a universal catalyst formulation, and no constituent-element criticality is inherited.
+sources:
+- id: sawangchart_2026
+  title: Sawangchart, Meksiriporn and Sutjaritvorakul (2026). Process Optimization and Kinetics
+    Study of Metals Leaching from Spent Hydrocracking Catalysts by Cell-free Medium Filtrate
+    of Aspergillus aculeatus. Trends in Sciences 23(10):13063. Published 10 May 2026; DOI 10.48048/tis.2026.13063.
+    Methods pp. 3-5, Tables 4-8, Figures 1-4.
+  url: https://doi.org/10.48048/tis.2026.13063
+  accessed_on: '2026-10-11'
+- id: ncbi_aculeatus
+  title: 'NCBI Taxonomy 5053: Aspergillus aculeatus, species; does not identify the experimental
+    Thai isolate.'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5053
+  accessed_on: '2026-10-11'
+- id: ncbi_reference_its
+  title: 'NCBI RefSeq NR_111412.1: Aspergillus aculeatus CBS 172.66 ITS region from type material;
+    this is the reference matched by the paper, not its experimental isolate sequence.'
+  url: https://www.ncbi.nlm.nih.gov/nuccore/NR_111412.1
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: aculeatus_filtrate_leaching
+  name: Metal mobilization with pretreated Aspergillus aculeatus culture filtrate
+  process: bioleaching
+  description: A culture filtrate from a Thai soil isolate reported as Aspergillus aculeatus
+    was associated with measurable metal release from decoked spent hydrocracking catalyst.
+    The filtrate was subsequently pH-adjusted and autoclaved; live cells did not act during
+    leaching. Source inconsistencies constrain quantitative and molecular interpretation, so
+    the accepted claim is qualified laboratory mobilization, not a validated optimal yield or
+    industrial process.
+  context: NICS Innovation Company supplied used catalyst from refineries in Thailand's Eastern
+    Economic Corridor. Material was heated at 600 degrees C for six hours, powdered and sieved
+    below 150 micrometres. A Phichit gold-mine-soil isolate selected for growth on catalyst-containing
+    agar was identified morphologically and by reported 100% sequence identity to reference
+    NR_111412.1; the isolate's own accession and culture-deposit ID are not supplied. Potato
+    dextrose broth initially pH 6.5 was cultured for nine days at 30-35 degrees C, 150 rpm; mycelia
+    were filtered out and broth centrifuged 10000 rpm for ten minutes. Methods then say pH 6.5
+    adjustment with 2 N HCl before autoclaving. A 250 mL flask held 100 mL filtrate plus catalyst
+    for 180 minutes. Methods use 3, 6, 10% w/v pulp, 30-50 degrees C and 120-180 rpm; independent
+    optimization trials used nominal 10% w/v, 50 degrees C and 148 rpm. Filtered liquid was analyzed
+    by ICP-AES; trials were triplicated.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:5053
+    label: Aspergillus aculeatus
+  evidence:
+  - source_ref: sawangchart_2026
+    supports: support
+    explanation: 'Methods pp. 3-5 and Tables 5, 7 report release after fungal-filtrate contact
+      and lower values in controls described as cell-free culture medium. Figure 1 documents
+      citric/oxalic acid production and falling pH during prior culture growth. Table 7 clearly
+      distinguishes model predictions from experimental values: for Mo, 24.55% predicted versus 22.95
+      +/-0.80% experimental. These are reported feed-normalized measurements, not accepted product-recovery
+      yields; no downstream isolated product was measured.'
+  - source_ref: sawangchart_2026
+    supports: partial
+    explanation: Figure 1 shows final culture pH near 3.5, whereas methods say adjust the resulting
+      filtrate to 6.5 using HCl. The direction and chemical treatment are unresolved. Tables
+      2, 5 label pulp density mg/L but methods/optimization text say %w/v; neither conversion
+      nor corrected value is assumed. The stated control was at 180 rpm, unlike the 148 rpm optimized
+      trial, and the relationship between that control and Table 7 controls is unclear. Control
+      percentages on p. 8 (Al 0.05, Ni 0.08, Mo 0.03, Fe 0.03, Zn 0.02) differ from Table 7 (0.30, 0.35, 0.35, 0.32, 0.03).
+      These ambiguities prevent treating this as a fully chemistry-matched demonstration of
+      microbial enhancement.
+  - source_ref: sawangchart_2026
+    supports: partial
+    explanation: The source acknowledges incomplete acid digestion of the pretreated catalyst
+      used for the denominator, so normalized percentages need not represent true total-feed
+      extraction. Model fit is not direct molecular evidence; Table 6 reports significant Al
+      lack of fit (p=0.018), and no kinetic uncertainty estimates or before/after surface characterization
+      were provided. Citric/oxalic acid detection during cultivation does not quantify their
+      causal contribution after pH adjustment/autoclaving. Proposed surface-reaction control,
+      enzyme pathways and environmental/economic superiority are not established independently;
+      culture preparation plus 600-degree-C decoking also precede the short leach. No pilot or
+      industrial deployment was tested.
+curation_history:
+- timestamp: '2026-10-11T09:26:04.479595+00:00'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Created the distinct secondary-resource identity and source-scoped laboratory evidence,
+    preserving control, measurement, scale and source-consistency limitations.
+history_refs:
+- history/records/spent-hydrocracking-catalyst/2026-10-11T092624Z-codex-4b894e.yaml

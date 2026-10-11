@@ -1,0 +1,90 @@
+id: cmmmech:pyrolusite
+name: Pyrolusite
+material_kind: mineral
+description: Pyrolusite is the MnO2 mineral species in the September 2026 IMA list (status
+  A, 1982 s.p.). The special-procedure entry is not a sequential approval accession. The species
+  is distinct from elemental manganese, unspecified MnO2 polymorphs and source-labelled pyrolusite
+  ores. The accepted experiment below is an explicitly abiotic reaction of characterized commercial
+  beta-MnO2. A microbial ore study was inspected but cannot establish phase-specific microbial
+  causality. No manganese-commodity criticality is inherited.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 179, Pyrolusite
+    row; page 1 column definitions and page 2 distribution terms.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-11'
+- id: schaefer2017
+  title: Schaefer, Handler and Scherer (2017). Fe(II) reduction of pyrolusite (beta-MnO2)
+    and secondary mineral evolution. Geochemical Transactions 18:7. DOI 10.1186/s12932-017-0045-0;
+    PMC5716966; Experimental, Figures 1-3, Results and discussion.
+  url: https://doi.org/10.1186/s12932-017-0045-0
+  accessed_on: '2026-10-11'
+- id: retnaningrum2019
+  title: Retnaningrum and Wilopo (2019). Pyrolusite Bioleaching by an Indigenous Acidithiobacillus
+    sp KL3 Isolated from an Indonesian Sulfurous River Sediment. Indonesian Journal of Chemistry
+    19(3):712-719. DOI 10.22146/ijc.38898; contextual mixed-ore study with unresolved phase
+    and reporting limitations.
+  url: https://doi.org/10.22146/ijc.38898
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: ferrous-pyrolusite-abiotic-reduction
+  name: Abiotic Fe(II)-driven pyrolusite reduction and manganese mobilization
+  process: redox_transformation
+  microbial: false
+  description: Aqueous Fe(II) reacted with characterized beta-MnO2 in an anoxic buffered laboratory
+    system, releasing filter-passing manganese and depositing Fe-bearing secondary phases.
+    Fe-free comparisons did not show measurable Mn release. The experiment contains no microbial
+    culture and therefore supports a chemical alternative pathway, not microbial catalysis,
+    organism activity or industrial metal recovery.
+  context: Schaefer et al. used commercial Sigma-Aldrich MnO2, ground and sieved at 150 micrometres;
+    XRD identified pyrolusite as the sole detected Mn oxide phase, with no detected impurity
+    peaks. BET surface area was 1-2 m2/g. Assays used 18 mg solid in 18 mL deoxygenated 25
+    mM HEPES plus 25 mM KBr at initial pH 7.5, in a 95% N2/5% H2 chamber below 1 ppmv O2.
+    Approximately 3 mM enriched Fe(II) was added, with an equal-volume NaOH counter-spike;
+    Figure 2 kinetic runs started at 2.4 mM measured Fe(II). Reactors rotated in darkness.
+    Methods describe typical runs of about 90 minutes, while the Figure 2 kinetic series follows
+    75-minute exposures. The reaction temperature and replicate count are not specified
+    in the inspected methods; no temperature or replicate count is inferred. Samples were
+    filtered through 0.2-micrometre nylon before photometric Fe and formaldoxime Mn analysis.
+    Washed solids could receive additional Fe(II) or Fe-free buffer. This is laboratory chemical
+    mobilization from reagent material, not an organism experiment, natural-ore recovery or
+    an isolated manganese product.
+  evidence:
+  - source_ref: schaefer2017
+    supports: support
+    explanation: Experimental and Figure 1 establish the starting phase. Figure 2 and the
+      first Results subsection show near-complete solution Fe(II) loss by 75 minutes from
+      the 2.4 mM arm, with approximately 0.6 mM solution Mn and no measured Mn in Fe-free
+      controls. These source-reported values describe filter-passing solution concentrations,
+      not a recovered-product yield. Figure 3 and diffraction/Mossbauer analyses identify
+      an Fe-rich surface coating initially interpreted as lepidocrocite.
+  - source_ref: schaefer2017
+    supports: partial
+    explanation: 'The Mn colorimetric assay does not speciate aqueous manganese: Mn(II) is
+      inferred from chemical constraints. Solution Mn was lower than the simple two-Fe-per-Mn
+      stoichiometric prediction; sorption, incorporation, reoxidation and later phase transformation
+      remain possible explanations. Subsequent solids contain a magnetite/maghemite contribution;
+      the paper explicitly groups these as magnetite, so pure magnetite is not established.
+      Co versus Cu radiation labels conflict between Experimental and Figure 1, and no exact
+      XRD angles are transcribed here. This chemical result neither demonstrates nor rules
+      out microbial reduction under other conditions.'
+  - source_ref: retnaningrum2019
+    supports: context_only
+    explanation: The distinct 16-day KL3 study reported Mn mobilization from Kliripan ore
+      labelled pyrolusite, but no diffraction phase confirmation was provided, and feed contained
+      reported 25% Mn, 30.4% Fe and 34% S. Its C arm is no added mineral, not an uninoculated
+      mineral control. Methods specify pH 6.0 whereas Figure 2 caption says 2.0; a pulp-density
+      list repeats 0.03, and Table 1 mixes atomic/mass labels with a nonclosing day-16 composition.
+      Surface cells/EPS, acidification and Mn release therefore do not prove a mineral-specific
+      microbial pathway or isolate sulfur causality. No KL3 taxon identifier, bioleaching
+      yield or direct-versus-indirect mechanism is accepted. This contextual study is not
+      the abiotic control for Schaefer and is not transferred into microbial evidence for
+      the species.
+curation_history:
+- timestamp: '2026-10-11T09:27:06.884364+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created pyrolusite species identity and controlled abiotic reduction; deferred
+    unproven microbial phase-specific causality.
+history_refs:
+- history/records/pyrolusite/2026-10-11T092706Z-codex-4fdff9.yaml

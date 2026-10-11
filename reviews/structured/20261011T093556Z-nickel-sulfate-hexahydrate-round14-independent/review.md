@@ -1,0 +1,357 @@
+# Independent evidence review of Nickel sulfate hexahydrate commodity
+
+- Review: 20261011T093556Z-nickel-sulfate-hexahydrate-round14-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T09:30:12Z
+- Finished UTC: 2026-10-11T09:35:56Z
+- Reviewer: Codex /root/round14_minerals (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Supported commodity identity and carefully bounded source claims; no actionable findings. Product-specific specifications remain distinct from universal grade rules, criticality and microbial recovery evidence.
+
+## Scope And Provenance
+
+All fields, cited source claims and linked history of one exact new working-tree record.
+
+Selection: One assigned member of six product-boundary records; full per-record assessment, not a corpus-wide scientific review.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 8f8abedfce68f932e4f6f333a5470ee5f3897ff4.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:nickel-sulfate-hexahydrate | data/records/nickel-sulfate-hexahydrate.yaml | maintained | Nickel sulfate hexahydrate commodity |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent reviewer named-file validation | passed | True | cmmmech:nickel-sulfate-hexahydrate | Reviewer executed session48219, terminal exit0: 6 records, 0 failed; log /private/tmp/cmm-round14-product-review/named-validation.log. |
+| Initial completed batch check before unrelated FCC wording correction | passed | True | cmmmech:nickel-sulfate-hexahydrate | Root executed terminal0; reviewer read /private/tmp/cmm-round14-check.log and initial parent receipts: 307 passed, 3 skipped in 80.06s; 119 records, 134 histories. This gate preceded a pending unrelated FCC record wording correction; reviewed product hashes remain unchanged. Root will rerun affected final batch gates separately. |
+| Nonempty corpus validation | passed | True | cmmmech:nickel-sulfate-hexahydrate | Root executed terminal0; reviewer read /private/tmp/cmm-round14-require.log and receipts: 119 records, 0 failed. |
+| Append-only history validation at trusted base | passed | True | cmmmech:nickel-sulfate-hexahydrate | Root executed terminal0; reviewer read /private/tmp/cmm-round14-history.log and receipts: 134 history records, 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Commodity, hydrate and end-use boundaries
+
+identity: supported. Targets: cmmmech:nickel-sulfate-hexahydrate.
+
+Crystalline NiSO4.6H2O manufactured commodity. Primobius explicitly identifies the hexahydrate; Coremax provides an independently read battery-labelled product specification. Their Ni limits of 22.0 wt% minimum and greater than 22.3 wt% are separate supplier claims, not a pooled universal requirement. A dissolved leachate is not a qualified crystal product.
+
+### Primary specifications, versions and uncertainty
+
+evidence: supported. Targets: cmmmech:nickel-sulfate-hexahydrate.
+
+Primobius explicitly identifies the hexahydrate; Coremax provides an independently read battery-labelled product specification. Their Ni limits of 22.0 wt% minimum and greater than 22.3 wt% are separate supplier claims, not a pooled universal requirement. A dissolved leachate is not a qualified crystal product. Fresh Primobius retrieval failed (web403/direct empty202); independently read retained original HTTP200 HTML is used with verified acquisition receipt. Full supplier qualification details and universal battery grade are not established.
+
+### Actual CREATE history and exact reviewed working bytes
+
+provenance: supported. Targets: cmmmech:nickel-sulfate-hexahydrate.
+
+New inline CREATE event and matching canonical sidecar describe this session honestly with actual GPT-6/codex identity. Trusted main base and exact working hashes remain available and match batch-gated bytes. Record author and reviewer are distinct agents.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/nickel-sulfate-hexahydrate.yaml; Complete frozen YAML and exact linked CREATE sidecar | supports | Independent reviewer read record and sidecar after inspect capture. Actual GPT-6/codex attribution, separate inline and canonical timestamps, target and issue56 link match the present creation. Current SHA matches inspected and gated bytes. |
+| primobius-nickel-sulfate | https://www.primobius.com/technology-services/recovered-battery-materials/nickel-sulphate; Complete retained original HTML: product heading, specification table and use; curator acquisition.json HTTP200 at 2026-10-11T09:23:19.997270Z | supports | Fresh reviewer retrieval failed (web403; direct empty202). Independently read original retained HTML and verified its SHA against the curator acquisition receipt. Explicit nickel sulfate hexahydrate formula, 22.0 wt% minimum Ni and cathode-precursor use support the bounded claims. Empty fresh response is not evidence. |
+| coremax-nickel-v8 | https://www.coremaxcorp.com/uploads/product/Battery_Materials/Nickel_Sulfate_Battery_V2.pdf; Complete one-page specification, version 8, 2 July 2024 | supports | Fresh PDF read and visually checked. Nickel is greater than 22.3 wt%; battery and electroplate uses and customer-specific production are explicit. Filename V2 is not mistaken for document version. Supplier CAS is not assigned as a commodity identifier. |
+| search | /private/tmp/cmm-round14-product-review/version-search.json; Eight exact manufacturer/standard search queries, first returned result windows; local dedup.txt and dedup-paths.txt | context_only | Ignored/hidden/followed searches cover records, research, reviews, history and named current raw source paths. Existing element, graphite and broad EU-grade records are not synonymized with these scoped products. Bounded version search found Coremax version6 alongside the cited version8; nickel-sulfate record pins version8 and does not claim all versions share impurity limits. No paper-based mechanism is claimed, so publication retraction screening is not a substitute for product-version checks. |
+| gates | /private/tmp/cmm-round14-gate-receipts-initial.json; Parent terminal receipts, check/require/history logs and gated-record-hashes.json | supports | Reviewer read all three actual batch logs and parent terminal receipts and compared this record hash to the gated manifest. Offline structure and provenance checks do not independently establish product identity or qualification. |
+
+## Limits And Additional Notes
+
+- Fresh Primobius retrieval failed (web403/direct empty202); independently read retained original HTTP200 HTML is used with verified acquisition receipt. Full supplier qualification details and universal battery grade are not established.
+- Manufacturer examples and catalogue metadata establish product scope; they do not independently certify each supplied lot or a recovered product.
+- No criticality or microbial mechanism claim is added. Omission does not assert that such evidence cannot exist.
+- Searches and source-version checks are bounded; this is not exhaustive absence certification or a review of every possible supplier.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T093556Z-nickel-sulfate-hexahydrate-round14-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent evidence review of Nickel sulfate hexahydrate commodity
+started_at: '2026-10-11T09:30:12Z'
+finished_at: '2026-10-11T09:35:56Z'
+reviewer:
+  identity: Codex /root/round14_minerals
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Separate /root/round14_products agent authored this record and
+    history. Reviewer acquired and read primary sources independently and made no
+    product-record edits. Both agents share the task and worktree; this is record-author
+    separation, not organizational independence.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Supported commodity identity and carefully bounded source claims; no actionable
+  findings. Product-specific specifications remain distinct from universal grade rules,
+  criticality and microbial recovery evidence.
+source:
+  git_revision: 8f8abedfce68f932e4f6f333a5470ee5f3897ff4
+  state: working_tree
+  inputs:
+  - path: data/records/nickel-sulfate-hexahydrate.yaml
+    sha256: 468df9c5da237f38f0263ce32bb06275e7572999d73387a96456d9892a053c9d
+    role: target
+  - path: docs/records.md
+    sha256: 212cdbb723eb1ad9eb76ea1b7dad066914659b1f85eb2cdb51ee67466cfcc8ee
+    role: context
+  - path: history/records/nickel-sulfate-hexahydrate/2026-10-11T092624Z-codex-1addde.yaml
+    sha256: eef5632b2e98237c66e9eef0c6f96ec5ad5c81a8b674423c5db4ecbf6edaab93
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+scope:
+  description: All fields, cited source claims and linked history of one exact new
+    working-tree record.
+  selection: One assigned member of six product-boundary records; full per-record
+    assessment, not a corpus-wide scientific review.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:nickel-sulfate-hexahydrate
+  exclusions:
+  - target: Uncurated mechanisms, other records and inaccessible full standards
+    reason: No new mechanism or criticality is asserted. Related records inform boundary
+      checks only; standards catalogues do not establish unseen numerical qualification
+      tables.
+targets:
+- target_id: cmmmech:nickel-sulfate-hexahydrate
+  path: data/records/nickel-sulfate-hexahydrate.yaml
+  label: Nickel sulfate hexahydrate commodity
+  kind: maintained
+  record_class: commodity
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/nickel-sulfate-hexahydrate.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent reviewer named-file validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/lithium-carbonate.yaml data/records/lithium-hydroxide-monohydrate.yaml
+    data/records/nickel-sulfate-hexahydrate.yaml data/records/manganese-sulfate-monohydrate.yaml
+    data/records/ferroboron.yaml data/records/graphite-anode-material.yaml
+  status: passed
+  required: true
+  summary: 'Reviewer executed session48219, terminal exit0: 6 records, 0 failed; log
+    /private/tmp/cmm-round14-product-review/named-validation.log.'
+  target_ids:
+  - cmmmech:nickel-sulfate-hexahydrate
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: batch
+  name: Initial completed batch check before unrelated FCC wording correction
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  status: passed
+  required: true
+  summary: 'Root executed terminal0; reviewer read /private/tmp/cmm-round14-check.log
+    and initial parent receipts: 307 passed, 3 skipped in 80.06s; 119 records, 134
+    histories. This gate preceded a pending unrelated FCC record wording correction;
+    reviewed product hashes remain unchanged. Root will rerun affected final batch
+    gates separately.'
+  target_ids:
+  - cmmmech:nickel-sulfate-hexahydrate
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: require
+  name: Nonempty corpus validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: 'Root executed terminal0; reviewer read /private/tmp/cmm-round14-require.log
+    and receipts: 119 records, 0 failed.'
+  target_ids:
+  - cmmmech:nickel-sulfate-hexahydrate
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: history
+  name: Append-only history validation at trusted base
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate-history --base 8f8abedfce68f932e4f6f333a5470ee5f3897ff4
+  status: passed
+  required: true
+  summary: 'Root executed terminal0; reviewer read /private/tmp/cmm-round14-history.log
+    and receipts: 134 history records, 0 errors.'
+  target_ids:
+  - cmmmech:nickel-sulfate-hexahydrate
+  exit_code: 0
+  expected_exit_code: 0
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/nickel-sulfate-hexahydrate.yaml
+  locator: Complete frozen YAML and exact linked CREATE sidecar
+  accessed_at: '2026-10-11T09:35:56Z'
+  support: supports
+  summary: Independent reviewer read record and sidecar after inspect capture. Actual
+    GPT-6/codex attribution, separate inline and canonical timestamps, target and
+    issue56 link match the present creation. Current SHA matches inspected and gated
+    bytes.
+  snapshot_sha256: 468df9c5da237f38f0263ce32bb06275e7572999d73387a96456d9892a053c9d
+- evidence_id: primobius-nickel-sulfate
+  kind: primary_source
+  reference: https://www.primobius.com/technology-services/recovered-battery-materials/nickel-sulphate
+  locator: 'Complete retained original HTML: product heading, specification table
+    and use; curator acquisition.json HTTP200 at 2026-10-11T09:23:19.997270Z'
+  accessed_at: '2026-10-11T09:35:56Z'
+  support: supports
+  summary: Fresh reviewer retrieval failed (web403; direct empty202). Independently
+    read original retained HTML and verified its SHA against the curator acquisition
+    receipt. Explicit nickel sulfate hexahydrate formula, 22.0 wt% minimum Ni and
+    cathode-precursor use support the bounded claims. Empty fresh response is not
+    evidence.
+  snapshot_sha256: f40f90d98c323f6033bdea71bb2241a1f0456481ba5b0615cd107bdf066320c5
+- evidence_id: coremax-nickel-v8
+  kind: primary_source
+  reference: https://www.coremaxcorp.com/uploads/product/Battery_Materials/Nickel_Sulfate_Battery_V2.pdf
+  locator: Complete one-page specification, version 8, 2 July 2024
+  accessed_at: '2026-10-11T09:29:40Z'
+  support: supports
+  summary: Fresh PDF read and visually checked. Nickel is greater than 22.3 wt%; battery
+    and electroplate uses and customer-specific production are explicit. Filename
+    V2 is not mistaken for document version. Supplier CAS is not assigned as a commodity
+    identifier.
+  snapshot_sha256: 84c1ff20e2ed56d4c536738ee4ec211a1bc769c1622dccbfbe1e582814473085
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round14-product-review/version-search.json
+  locator: Eight exact manufacturer/standard search queries, first returned result
+    windows; local dedup.txt and dedup-paths.txt
+  accessed_at: '2026-10-11T09:35:56Z'
+  support: context_only
+  summary: Ignored/hidden/followed searches cover records, research, reviews, history
+    and named current raw source paths. Existing element, graphite and broad EU-grade
+    records are not synonymized with these scoped products. Bounded version search
+    found Coremax version6 alongside the cited version8; nickel-sulfate record pins
+    version8 and does not claim all versions share impurity limits. No paper-based
+    mechanism is claimed, so publication retraction screening is not a substitute
+    for product-version checks.
+  search_scope: rg --no-ignore --hidden --follow across data/records, research, reviews,
+    history, /private/tmp/cmm-round14-product-raw and /private/tmp/cmm-round14-product-review;
+    eight queries retained in version-search.json. First web result windows only,
+    no global product-version or absence claim.
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round14-gate-receipts-initial.json
+  locator: Parent terminal receipts, check/require/history logs and gated-record-hashes.json
+  accessed_at: '2026-10-11T09:35:56Z'
+  support: supports
+  summary: Reviewer read all three actual batch logs and parent terminal receipts
+    and compared this record hash to the gated manifest. Offline structure and provenance
+    checks do not independently establish product identity or qualification.
+  snapshot_sha256: cd1d462bdeea6cc6174ffa7ccff29bf6f49a9037541c6b3327fb923fc64106bb
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Commodity, hydrate and end-use boundaries
+  outcome: supported
+  summary: Crystalline NiSO4.6H2O manufactured commodity. Primobius explicitly identifies
+    the hexahydrate; Coremax provides an independently read battery-labelled product
+    specification. Their Ni limits of 22.0 wt% minimum and greater than 22.3 wt% are
+    separate supplier claims, not a pooled universal requirement. A dissolved leachate
+    is not a qualified crystal product.
+  target_ids:
+  - cmmmech:nickel-sulfate-hexahydrate
+  evidence_ids:
+  - record
+  - search
+  - primobius-nickel-sulfate
+  - coremax-nickel-v8
+  dimensions:
+  - name: material_form
+    value: Crystalline NiSO4.6H2O manufactured commodity
+    definition: Maintained commodity scope, distinct from constituent element, ions,
+      mineral specimen or source feed.
+    evidence_ids:
+    - record
+    - primobius-nickel-sulfate
+    - coremax-nickel-v8
+  - name: criticality
+    value: Not asserted
+    definition: No jurisdiction/list/edition or elemental criticality is inherited
+      into this product.
+    evidence_ids:
+    - record
+  - name: mechanism_deployment
+    value: Not asserted
+    definition: No organism, biomass, substrate, assay controls, microbial yield or
+      laboratory/industrial mechanism is represented by these manufacturer descriptions.
+    evidence_ids:
+    - record
+    - primobius-nickel-sulfate
+    - coremax-nickel-v8
+- assessment_id: evidence
+  area: evidence
+  topic: Primary specifications, versions and uncertainty
+  outcome: supported
+  summary: Primobius explicitly identifies the hexahydrate; Coremax provides an independently
+    read battery-labelled product specification. Their Ni limits of 22.0 wt% minimum
+    and greater than 22.3 wt% are separate supplier claims, not a pooled universal
+    requirement. A dissolved leachate is not a qualified crystal product. Fresh Primobius
+    retrieval failed (web403/direct empty202); independently read retained original
+    HTTP200 HTML is used with verified acquisition receipt. Full supplier qualification
+    details and universal battery grade are not established.
+  target_ids:
+  - cmmmech:nickel-sulfate-hexahydrate
+  evidence_ids:
+  - primobius-nickel-sulfate
+  - coremax-nickel-v8
+  - record
+  - search
+- assessment_id: provenance
+  area: provenance
+  topic: Actual CREATE history and exact reviewed working bytes
+  outcome: supported
+  summary: New inline CREATE event and matching canonical sidecar describe this session
+    honestly with actual GPT-6/codex identity. Trusted main base and exact working
+    hashes remain available and match batch-gated bytes. Record author and reviewer
+    are distinct agents.
+  target_ids:
+  - cmmmech:nickel-sulfate-hexahydrate
+  evidence_ids:
+  - record
+  - gates
+findings: []
+actions: []
+limitations:
+- Fresh Primobius retrieval failed (web403/direct empty202); independently read retained
+  original HTTP200 HTML is used with verified acquisition receipt. Full supplier qualification
+  details and universal battery grade are not established.
+- Manufacturer examples and catalogue metadata establish product scope; they do not
+  independently certify each supplied lot or a recovered product.
+- No criticality or microbial mechanism claim is added. Omission does not assert that
+  such evidence cannot exist.
+- Searches and source-version checks are bounded; this is not exhaustive absence certification
+  or a review of every possible supplier.
+tags:
+- round14
+- independent
+- scientific-review
+- commodity
+```
