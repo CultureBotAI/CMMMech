@@ -1,0 +1,372 @@
+schema_version: 1.0.0
+review_id: 20261011T230405Z-falottaite-round37-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of falottaite phase formation
+started_at: '2026-10-11T23:00:40.768153Z'
+finished_at: '2026-10-11T23:04:05.735698Z'
+reviewer:
+  identity: Codex /root/round27_packaging
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Curated by /root. Reviewer authored only the rhabdophane source-only
+    deferral, not falottaite, its sidecar or source dossier. Shared worktree and author-acquired
+    original artifacts disclosed; primary evidence independently read and original
+    pages/figures inspected.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Whole frozen falottaite record is defensible as culture-associated trihydrate
+  assignment within a mixed laboratory precipitate. Zero corrective findings; onset,
+  control, phase-specificity and recovery limits preserved. Named and final cohort
+  gates passed on reviewed bytes.
+source:
+  git_revision: dcfbedb78bfd682ad06f2ff4517241f490e4f401
+  state: working_tree
+  inputs:
+  - path: data/records/falottaite.yaml
+    sha256: 851d49c13b688d9c39cfa91d1a5962004e6712d80783da40b71650706ae4bcea
+    role: target
+  - path: history/records/falottaite/2026-10-11T225635Z-codex-dedc98.yaml
+    sha256: 2a86971d185ea3d381b764c84204df3f2263c87ccb62941db55a89a81c985baa
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Whole falottaite target, mechanism, identity sources, conditions, controls,
+    outcomes and canonical/inline provenance.
+  selection: Parent assigned independent review of a different curator record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:falottaite
+  exclusions:
+  - target: Separate lindbergite record and unadopted comparative Mn-oxalate studies
+    reason: Sibling mineral species and independent experiments need their own reviewed
+      material owners; same primary is not independent replication.
+targets:
+- target_id: cmmmech:falottaite
+  path: data/records/falottaite.yaml
+  label: Falottaite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/falottaite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named-record validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 uv run --locked
+    cmmmech validate data/records/falottaite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Reviewer executed: 1 record, 0 failed. Log /private/tmp/cmm-round37-falottaite-review-named.log,
+    SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e.'
+  target_ids:
+  - cmmmech:falottaite
+- check_id: batch
+  name: Final cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed; reviewer independently read and hash-verified /private/tmp/cmm-round37-final-batch.log
+    SHA256 66cd8ce7b2befd361157ae7ca4451bc53e7af52ad8b471ef3e6c8de404f7ce76. uv run
+    --locked --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 169.92s (0:02:49)
+
+    Checked 203 record(s); 0 failed.
+
+    Checked 234 history record(s); 0 error(s).'
+  target_ids:
+  - cmmmech:falottaite
+- check_id: nonempty
+  name: Final cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Parent executed; reviewer independently read and hash-verified /private/tmp/cmm-round37-final-nonempty.log
+    SHA256 fb8749bf338f8365b7257600e0f9027811928450edb84261927b6c183f100968. Checked
+    203 record(s); 0 failed.
+  target_ids:
+  - cmmmech:falottaite
+- check_id: history
+  name: Final cohort history
+  command: uv run --locked cmmmech validate-history --base dcfbedb78bfd682ad06f2ff4517241f490e4f401
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Parent executed; reviewer independently read and hash-verified /private/tmp/cmm-round37-final-history.log
+    SHA256 32939b2f20f8cf7bff98cb0d67e9dd288f58f0b9e3cbe88ad81ace21c1b8ccdc. Checked
+    234 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:falottaite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/falottaite.yaml
+  locator: Entire target and native inspection hashes
+  accessed_at: '2026-10-11T23:04:05.735698Z'
+  support: supports
+  summary: Reviewer did not curate this record. Exact 851d49c13b688d9c39cfa91d1a5962004e6712d80783da40b71650706ae4bcea
+    target remains unchanged from native inspect.
+  snapshot_sha256: 851d49c13b688d9c39cfa91d1a5962004e6712d80783da40b71650706ae4bcea
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/jof6040270
+  locator: Complete 12-page article; Methods2.1–2.5, all Results/Discussion, original
+    Figures1–8 and Tables1–2
+  accessed_at: '2026-10-11T23:04:05.735698Z'
+  support: supports
+  summary: Independently read complete text/XML and inspected all12 original PDF pages.
+    Synthetic hausmannite,50mL commercial SDB in100mL flasks,0.25g solid,9.1mg/L As(V),24h130rpm
+    precontact then0.1mL spore suspension from10day culture at approximately10^6CFU/mL;25day
+    static triplicate cultures. Maintenance25C is not an explicit assay temperature.
+    Oxide synthesis/preheating agrees; inoculated oxide-free and arsenic-free treatments
+    do not establish a matched sterile/killed/oxalate-only mineral formation comparison.
+  snapshot_sha256: c9bc5ba8f8bd642eb995e81abe2303aae8672ea106ba60528203cd08a149d041
+- evidence_id: phase
+  kind: primary_source
+  reference: https://doi.org/10.3390/jof6040270
+  locator: Original page8 Figure6a–b and Table2; pages7,9–10 source interpretation
+  accessed_at: '2026-10-11T23:04:05.735698Z'
+  support: supports
+  summary: Figure6 reference sticks support the authors falottaite assignment within
+    mixed residual phases. Original Figure6a has6 traces but5 time labels; record
+    appropriately declines a time for the unlabeled lowest trace. Results20day versus
+    Discussion15day onset and Figure5a misreference retained. Stated Methods20–80degree
+    window differs from displayed sub20degree data. Table2/Figures7–8 describe the
+    later dihydrate, not falottaite-specific localization or hydration measurement.
+  snapshot_sha256: 613acfc44a203e7907e9103f2becc7bd6d70d105e1c4e467a4aaf9872bd5fd02
+- evidence_id: outcome
+  kind: primary_source
+  reference: https://doi.org/10.3390/jof6040270
+  locator: Original Figures2–5, captions and Results3.2–3.4
+  accessed_at: '2026-10-11T23:04:05.735698Z'
+  support: supports
+  summary: Concentration and mass axes concern aqueous, mixed solids and mineral-bearing
+    mycelium. Roughly45percent redistribution is8percent medium and37percent mineral-bearing
+    mycelium relative to initial hausmannite Mn; not a falottaite mass/yield or exclusively
+    intracellular uptake. No phase-specific As uptake, purity or field stability.
+    No direct oxalate quantification or enzyme perturbation isolates the suggested
+    acidolysis/complexation/nucleation mechanism.
+  snapshot_sha256: 3f8d973f32836a6f3a08d854b4ce5a0eba24e718a75dbe183eccf9aa5616668a
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September2026 master originalpages1–2 definitions/license and67 row
+  accessed_at: '2026-10-11T23:04:05.735698Z'
+  support: supports
+  summary: 'Independently inspected original row: Falottaite MnC2O4.3H2O, statusA,
+    IMA2013-044. Exact trihydrate species differs from manganese element/oxide/dihydrates.
+    Compilation is identity authority, not criticality or industrial deployment evidence.'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: ncbi
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/datasets/taxonomy/5061/
+  locator: Live official species page and independently parsed retained same-day NCBI
+    API JSON
+  accessed_at: '2026-10-11T23:04:05.735698Z'
+  support: supports
+  summary: Species5061 currently Aspergillus niger. This does not independently authenticate
+    CBS140837 or its phenotype. Experimental strain label comes from mainMethods2.3.
+  snapshot_sha256: 6d2d9b2a4b031de6fd14225ddc52dec2a240dadb51d83f12a549e035575e9126
+- evidence_id: notices
+  kind: search
+  reference: https://doi.org/10.3390/jof6040270
+  locator: Exact DOI notice queries and full original supplemental-link inventory
+  accessed_at: '2026-10-11T23:04:05.735698Z'
+  support: supports
+  summary: First result sets resolve primary PMC/PubMed/authorrepository and related
+    literature with no verified affecting notice. FullXML has no supplementary-material
+    element; no original article supplemental section observed. Separate fungal Mn
+    mineral studies surfaced but are not imported as replicated evidence. Internal
+    onset, phase and analytical limitations were checked directly rather than concealed.
+  search_scope: '2026-10-11 queries: "10.3390/jof6040270" correction retraction erratum;
+    "falottaite" "Aspergillus" XRD; "10.3390/jof6040270" correction retraction. First
+    returned results, no pagination. Full retained XML/PDF supplementary search; not
+    a universal absence claim.'
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round37-falottaite-review-dedup.txt
+  locator: Hidden/ignored-inclusive followed scan of current records/research/reviews/history
+  accessed_at: '2026-10-11T23:04:05.735698Z'
+  support: supports
+  summary: Current falottaite record resolves as distinct owner; existing frontier
+    mentions and shared lindbergite source reflect one experiment, not independent
+    replication. No duplicate accepted falottaite owner found in bounded current maintained
+    trees.
+  snapshot_sha256: 36216ec2cd3a8ed14f13268717ffc5c7a60f618c805677502c6368a02af9e568
+  search_scope: rg --hidden --no-ignore --follow for falottaite,2013-044,jof6040270,PMC7711977
+    across data/records,research,reviews,history. Referenced acquisition2 and original
+    raw source files independently read/hashverified; not machine-wide novelty.
+- evidence_id: history
+  kind: record_content
+  reference: history/records/falottaite/2026-10-11T225635Z-codex-dedc98.yaml
+  locator: Whole CREATE sidecar and distinct inline event
+  accessed_at: '2026-10-11T23:04:05.735698Z'
+  support: supports
+  summary: Canonical actual codex/GPT-6/codex actor,22:56:35Z sidecar and22:57:00Z
+    inline event are distinct and fit new target scope. No prior source findings or
+    old provenance rewritten.
+  snapshot_sha256: 2a86971d185ea3d381b764c84204df3f2263c87ccb62941db55a89a81c985baa
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round37-final-terminal.json
+  locator: Terminal receipt and all3 exact hashed logs
+  accessed_at: '2026-10-11T23:04:05.735698Z'
+  support: supports
+  summary: Parent completed cohort checks; reviewer independently read and hashverified
+    logs and frozen target. Validation supports structural correctness, not scientific
+    truth.
+  snapshot_sha256: 823cb34ae09a21ab5e4334ae3c279d1f7f820568504908075c8213b0b8cd49e9
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Precise mineral and organism scope
+  outcome: supported
+  summary: IMA trihydrate owner and species-level NCBI mapping are correct; mixed
+    assay solid is not promoted to pure natural material or commodity.
+  target_ids:
+  - cmmmech:falottaite
+  evidence_ids:
+  - record
+  - ima
+  - ncbi
+  - dedup
+  dimensions:
+  - name: material_form
+    value: Falottaite trihydrate species; phase assigned in mixed laboratory solid
+    definition: No natural sample or purified product assertion.
+    evidence_ids:
+    - ima
+    - phase
+  - name: criticality
+    value: Not asserted
+    definition: No jurisdiction/list/edition inherited from manganese.
+    evidence_ids:
+    - record
+  - name: organism
+    value: Source-reported A.niger CBS140837; NCBITaxon5061 species
+    definition: Species node does not authenticate source stock or causal phenotype.
+    evidence_ids:
+    - primary
+    - ncbi
+- assessment_id: mechanism
+  area: evidence
+  topic: Culture-associated mineral formation
+  outcome: supported
+  summary: Full primary supports qualified phase formation during fungal culture,
+    with acidification/oxalate and nucleation retained as authors proposed explanation
+    and controls explicitly limited.
+  target_ids:
+  - cmmmech:falottaite
+  evidence_ids:
+  - record
+  - primary
+  - phase
+  dimensions:
+  - name: biomass
+    value: 0.1mL of approximately10^6CFU/mL source spore suspension from10day culture
+    definition: Suspension concentration is not the final flask inoculum density.
+    evidence_ids:
+    - primary
+  - name: conditions
+    value: 25days static; triplicates;50mL SDB;0.25g synthetic hausmannite;9.1mg/L
+      As(V)
+    definition: 24h130rpm precontact precedes fungal cultivation; numerical culture
+      temperature unspecified.
+    evidence_ids:
+    - primary
+  - name: controls
+    value: Inoculated oxide-free/arsenic-free comparisons; no matched uninoculated/killed/oxalate-only
+      formation series
+    definition: Observed association does not establish exclusive metabolic causality.
+    evidence_ids:
+    - primary
+- assessment_id: boundaries
+  area: evidence
+  topic: Phase attribution, time ambiguity and yield limitations
+  outcome: supported
+  summary: Record preserves source15/20day conflict, unlabeled trace, scanwindow mismatch,
+    mixed phases and dihydrate microscopy boundary. Element redistribution and As
+    immobilization are not falottaite-specific yield or capacity.
+  target_ids:
+  - cmmmech:falottaite
+  evidence_ids:
+  - phase
+  - outcome
+  - record
+  dimensions:
+  - name: outcome
+    value: Qualitative diffraction-assigned trihydrate in mixed precipitate
+    definition: No phase fraction, water analysis, isolatedmass or closed falottaite
+      recovery balance.
+    evidence_ids:
+    - phase
+    - outcome
+  - name: deployment
+    value: Laboratory model culture only
+    definition: No field deployment or durable environmental sequestration test.
+    evidence_ids:
+    - primary
+    - outcome
+- assessment_id: provenance
+  area: provenance
+  topic: Independent reviewed working state and actual gates
+  outcome: supported
+  summary: Native inspect before judgment pins trustedbase and working bytes. Reviewer
+    authored rhabdophane source-only dossier, not this target. Named and parent batch
+    checks pass; source limitations remain without corrective record findings.
+  target_ids:
+  - cmmmech:falottaite
+  evidence_ids:
+  - record
+  - history
+  - gates
+  - notices
+findings: []
+actions: []
+limitations:
+- No matched uninoculated, killed-cell or oxalate-only formation series isolates microbial
+  causality; no direct oxalate assay or enzyme mechanism measured.
+- No numeric assay temperature is supplied; maintenance25C is not transferred.
+- First falottaite detection conflicts between15 and20days; unlabelled trace and scanwindow
+  inconsistency block precise onset/rate reconstruction.
+- Mixed diffraction assignment lacks quantified phase fractions, specimen-specific
+  hydration, isolated falottaite mass or yield.
+- The source dihydrate microscopy and Table2 are not falottaite-specific confirmation;
+  mixed-element pools do not measure its arsenic capacity or purity.
+- Bounded notice/counterevidence searches are not exhaustive; no fresh comparison
+  experiment or reanalysis of raw diffraction was performed.
+notes:
+- All12 original article pages, all8 figures and bothtables inspected, with authority
+  definitions and originalrow. FullXML/PDF supplied no linked supplement in this bounded
+  inventory.
+- No record/history edits made by reviewer. Rhabdophane source-only deferral does
+  not constitute a defect in this target.
+links:
+- https://doi.org/10.3390/jof6040270
+- https://www.ncbi.nlm.nih.gov/datasets/taxonomy/5061/

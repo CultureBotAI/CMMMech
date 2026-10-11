@@ -210,6 +210,9 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Schwertmannite](data/records/schwertmannite.yaml) | Resting iron-oxidizing cells form an iron oxyhydroxysulfate material | Matched oxidation controls and biomass perturbations constrain formation and adsorption claims |
 | [Uramphite](data/records/uramphite.yaml) | Thermophilic culture transforms a precipitated ammonium uranyl-phosphate analogue | High-loading nulls, dissolved-pathway uncertainty and source discrepancies limit the reduction claim |
 | [Moolooite](data/records/moolooite.yaml) | Fungal culture-associated copper oxalate formation on weathered ore surfaces | Variable hydration, mixed phases and missing matched controls prevent pure-product or exclusive biological claims |
+| [Humboldtine](data/records/humboldtine.yaml) | Fungal culture-associated iron oxalate formation on siderite- and altered pyrrhotite-bearing rocks | Organism-specific nulls, method-dependent phase assignments and control gaps limit causal and recovery claims |
+| [Lindbergite](data/records/lindbergite.yaml) | Fungal formation of a source-assigned manganese oxalate dihydrate from mixed natural nodules | Mixed phases, hydration and polymorph uncertainty, and assay discrepancies prevent a pure-product yield claim |
+| [Falottaite](data/records/falottaite.yaml) | Fungal culture-associated manganese oxalate trihydrate assignment in a hausmannite/arsenate assay | Unresolved onset, mixed phases and absent matched abiotic controls prevent phase-specific recovery or arsenic-capacity claims |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -253,7 +256,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [thirty-fourth expansion reviews](research/ingests/round34-20261011-publication.md),
 [thirty-fifth expansion reviews](research/ingests/round35-20261011-publication.md),
 [thirty-sixth expansion reviews](research/ingests/round36-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round36-frontier-20261011.md), and
+[thirty-seventh expansion reviews](research/ingests/round37-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round37-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

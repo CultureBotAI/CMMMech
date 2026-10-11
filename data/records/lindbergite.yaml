@@ -1,0 +1,172 @@
+id: cmmmech:lindbergite
+name: Lindbergite
+material_kind: mineral
+description: >-
+  Lindbergite is the approved manganese oxalate dihydrate mineral,
+  Mn(C2O4)(H2O)2, IMA 2003-029. The authoritative mineral description
+  assigns monoclinic symmetry and space group C2/c. It is distinct from
+  elemental manganese, natural manganese nodules, the orthorhombic
+  manganese oxalate dihydrate polymorph, and the trihydrate falottaite.
+  No criticality designation is inherited from manganese.
+sources:
+- id: ima_2026_09
+  title: >-
+    IMA-CNMNC. The New IMA List of Minerals, September 2026. Lindbergite
+    row, PDF page 126; introductory definitions and distribution terms.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-11'
+- id: lindbergite_handbook
+  title: >-
+    Mineralogical Society of America, Handbook of Mineralogy. Lindbergite,
+    one-page entry revised 2/8/2021; formula, crystal data and references
+    to the original mineral description.
+  url: https://www.handbookofmineralogy.org/pdfs/Lindbergite.pdf
+  accessed_on: '2026-10-11'
+- id: ferrier2019
+  title: >-
+    Ferrier et al. (2019). Colonization, penetration and transformation of
+    manganese oxide nodules by Aspergillus niger. Environmental Microbiology
+    21(5):1821-1832. Complete main article, Figures 1-8, Table 1 and
+    Experimental procedures; Dundee publisher-version PDF and full JATS.
+  url: https://doi.org/10.1111/1462-2920.14591
+  accessed_on: '2026-10-11'
+- id: farkas2020
+  title: >-
+    Farkas et al. (2020). Aspergillus niger Decreases Bioavailability of
+    Arsenic(V) via Biotransformation of Manganese Oxide into Biogenic
+    Oxalate Minerals. Journal of Fungi 6(4):270.
+    Complete main article, especially Sections 2.2-2.5 and 3.5, Figure 6
+    and Table 2; related phase assignment with a crystallographic conflict.
+  url: https://doi.org/10.3390/jof6040270
+  accessed_on: '2026-10-11'
+- id: ncbi_niger
+  title: NCBI Taxonomy 5061. Aspergillus niger, current species node.
+  url: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/5061/dataset_report
+  accessed_on: '2026-10-11'
+- id: atcc1015
+  title: ATCC 1015. Aspergillus niger strain catalogue entry.
+  url: https://www.atcc.org/products/1015
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: niger_associated_manganese_oxalate_formation
+  name: Lindbergite-assigned formation during fungal culture with manganese nodule powder
+  process: biomineralization
+  microbial: true
+  organisms:
+  - id: NCBITaxon:5061
+    label: Aspergillus niger
+  description: >-
+    Laboratory cultures of Aspergillus niger ATCC 1015 with natural
+    manganese nodule powder produced crystalline material assigned to
+    lindbergite by powder X-ray diffraction. The proposed explanation is
+    manganese mobilization followed by precipitation with fungal oxalate.
+    The experiment supports culture-associated phase formation, without
+    directly measuring oxalate production or isolating an exclusive
+    metabolic pathway. It does not establish a lindbergite mass yield,
+    complete manganese recovery or industrial deployment.
+  context: >-
+    The accepted powder experiments used mixed natural Clarion-Clipperton
+    Zone nodule sample COG_MN35, not pure manganese oxide or a lindbergite
+    feed. Powder was oven-treated at 105 degrees C for at least 48 hours.
+    In the solid-medium arm, particles below 210 micrometres were added
+    to molten malt extract agar at approximately 60 degrees C to give
+    0.2% (w/v). Plates received a 5 mm mycelial disc and were incubated
+    for 14 days at 25 degrees C in the dark. The mineral-recovery methods
+    unexpectedly also specify shaking at 125 rpm for this solid-medium
+    arm; the plate figure captions do not resolve that protocol ambiguity.
+    In the liquid arm, particles below 90 micrometres were added at 2%
+    (w/v) to glucose-containing AP1 medium, with 14 days at 25 degrees C
+    and 125 rpm for the analysed pellets. Methods specify a final inoculum
+    of 10^4 spores/mL, whereas Figure 6 reports 10^6 spores/mL for its
+    six-day flask images. Initial and final culture pH are not reported.
+    AP1 contains calcium and trace manganese as well as the nodule feed;
+    no tracer partitions the mineral product's elemental provenance.
+    The species TaxID does not identify ATCC 1015 at strain level.
+  evidence:
+  - source_ref: ferrier2019
+    supports: support
+    explanation: >-
+      Figures 4-5 compare inoculated and uninoculated solid-medium
+      preparations after two weeks. The inoculated mineral debris has
+      sharp diffraction peaks assigned to manganese oxalate dihydrate
+      (lindbergite), calcium oxalate dihydrate and quartz, against a poorly
+      crystalline uninoculated pattern. Figure 5 reports typical patterns
+      from at least three determinations, without distinguishing biological
+      replicates from repeated analytical determinations. These data support
+      the authors' lindbergite assignment in a mixed recovered solid.
+  - source_ref: ferrier2019
+    supports: support
+    explanation: >-
+      Figures 6-8 show powder incorporation into fungal pellets and
+      diffraction peaks assigned to lindbergite in dried, powdered pellets
+      after 14 days. Figure 6 includes an uninoculated nodule-containing
+      liquid flask at six days, while Figure 7 includes no-mineral fungal
+      controls. Pellet formation and broth clearing are physical capture
+      observations, not measurements of pure lindbergite separation or
+      dissolved manganese extraction. The solid and liquid arms belong
+      to the same study and are not independent replication by different
+      research groups.
+  - source_ref: ferrier2019
+    supports: partial
+    explanation: >-
+      Phase identification used powder diffraction and the ICDD database;
+      no specimen-specific unit-cell refinement, water-content assay,
+      quantitative phase fraction or manganese mass balance is supplied.
+      Solid-medium debris was recovered using approximately 70 degrees C
+      water, washed twice and dried for a week; the liquid diffraction
+      sample was also dried. Hydration in the living culture was not
+      measured. The source-assigned mineral identity is retained without
+      claiming independent crystallographic re-identification of each
+      precipitate or a quantified transformation yield.
+  - source_ref: ferrier2019
+    supports: partial
+    explanation: >-
+      No killed-biomass, cell-free-metabolite or acid-matched series
+      establishes the necessity of living cells, oxalate specifically or
+      a quantitative fungal enhancement. The liquid-product calcium
+      oxalate assignment also conflicts: Figure 8 names monohydrate
+      whewellite, while the corresponding results call it calcium oxalate
+      dihydrate. That unresolved co-product distinction is not silently
+      corrected and does not by itself refute the stated manganese-phase
+      assignment. Separate COG_MN12 fragment-colonization experiments and
+      the delta-oafA comparison are not treated as direct lindbergite
+      confirmation or a demonstrated gene-level mechanism.
+  - source_ref: farkas2020
+    supports: context_only
+    explanation: >-
+      This separate A. niger CBS 140837 experiment on synthetic
+      hausmannite reports both falottaite and a product called lindbergite.
+      However, Table 2 assigns its manganese oxalate dihydrate an
+      orthorhombic cell, conflicting with the monoclinic lindbergite
+      identity in the authoritative handbook. The name alone is therefore
+      not accepted as a second verified lindbergite-forming mechanism.
+      Its manganese and arsenic partition measurements are not
+      phase-specific lindbergite yields. If a separate falottaite record
+      uses this experiment, that is shared-study coverage of a distinct
+      phase, not additional experimental replication for lindbergite.
+  - source_ref: lindbergite_handbook
+    supports: context_only
+    explanation: >-
+      The mineral authority establishes the monoclinic C2/c identity
+      boundary. It does not authenticate the phase of the experimental
+      fungal precipitates; those remain source-assigned from diffraction.
+  - source_ref: ncbi_niger
+    supports: context_only
+    explanation: >-
+      The authority verifies the current species name and identifier.
+      Species membership alone does not establish the mineral-forming trait.
+  - source_ref: atcc1015
+    supports: context_only
+    explanation: >-
+      The catalogue confirms the A. niger ATCC 1015 strain designation.
+      It does not independently authenticate the culture used in the paper.
+curation_history:
+- timestamp: '2026-10-11T22:59:52Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: >-
+    Added lindbergite identity and source-assigned fungal formation from
+    mixed nodule powder, retaining protocol, hydration and yield limits
+    and the distinct orthorhombic assignment in a related study.
+history_refs:
+- history/records/lindbergite/2026-10-11T225957Z-codex-f222f6.yaml
