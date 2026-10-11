@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-10-11T04:12:43.517602+00:00",
+  "pull_request": "https://github.com/CultureBotAI/CMMMech/pull/22",
+  "curation_commit": "c5cea3ac353e9bf369c27e2eba617b985fcc348b",
+  "curation_tree": "5eb4aa53ce65c0aae17e978d0eaccd0372275238",
+  "isolated_directory": "/private/tmp/CMMMech-expansion-squash-preflight-20261011",
+  "isolated_squash_commit": "95b2ecdffbadebc6d8a42496f3a62e5428547a8e",
+  "isolated_parent": "76cd81d310a6ccb4cf7bdebcc61be050d0863222",
+  "topic_commit_available": false,
+  "topic_commit_probe_exit_code": 128,
+  "branch_inventory": [
+    "* main",
+    "  remotes/origin/HEAD -> origin/main",
+    "  remotes/origin/main"
+  ],
+  "procedure": "Independent remote single-branch main clone; explicit tag fetch; apply complete binary diff from trusted main base; local commit with main as sole parent. No topic branch or commit fetched.",
+  "patch_sha256": "33d6765c849c6e1b2bd6e86ece24aab92ffd27c7f6d594fdc0137b8f889ffb10",
+  "gates": [
+    {
+      "command": "uv sync --locked --extra dev --offline",
+      "exit_code": 0,
+      "result": "Fresh project environment installed from cached locked artifacts."
+    },
+    {
+      "command": "uv run --locked python scripts/record_review.py check --base 76cd81d310a6ccb4cf7bdebcc61be050d0863222 --require-reviews",
+      "exit_code": 0,
+      "result": "17 valid bundles; declared scopes only."
+    },
+    {
+      "command": "uv run --locked cmmmech validate --require-records",
+      "exit_code": 0,
+      "result": "13 records; 0 failed."
+    },
+    {
+      "command": "uv run --locked cmmmech validate-history --base 76cd81d310a6ccb4cf7bdebcc61be050d0863222",
+      "exit_code": 0,
+      "result": "22 sessions; 0 errors."
+    }
+  ],
+  "scope_note": "This receipt is the only additional repository change after the tested curation tree. It does not modify any reviewed input. Actual remote merge and branch deletion require subsequent fresh-main verification."
+}

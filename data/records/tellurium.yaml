@@ -1,0 +1,104 @@
+id: cmmmech:tellurium
+name: Tellurium
+material_kind: element
+description: >-
+  Tellurium (Te), chemical element with atomic number 52. The experimental
+  substrate here is soluble potassium tellurite, not a tellurium mineral,
+  commodity feed, or secondary resource.
+identifiers:
+  - id: CHEBI:30452
+    label: tellurium atom
+sources:
+  - id: chebi_tellurium
+    title: 'ChEBI:30452 - tellurium atom'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:30452
+    accessed_on: '2026-10-11'
+  - id: usgs_2025
+    title: >-
+      U.S. Geological Survey (2025). Final 2025 List of Critical Minerals.
+      Federal Register 90 FR 50494-50497, November 7, 2025; tellurium entry
+      on page 50497. The final list retains tellurium despite proposed
+      removal in the draft.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: presentato_2018
+    title: >-
+      Presentato et al. (2018). Assembly, growth and conductive properties of
+      tellurium nanorods produced by Rhodococcus aetherivorans BCP1.
+      Scientific Reports 8, 3923. DOI 10.1038/s41598-018-22320-x.
+    url: https://link.springer.com/article/10.1038/s41598-018-22320-x
+    accessed_on: '2026-10-11'
+  - id: presentato_2018_supplement
+    title: >-
+      Presentato et al. (2018), supplementary information: growth/exposure
+      and bioconversion methods; Supplementary Figure 1, abiotic controls.
+      41598_2018_22320_MOESM1_ESM.doc.
+    url: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41598-018-22320-x/MediaObjects/41598_2018_22320_MOESM1_ESM.doc
+    accessed_on: '2026-10-11'
+  - id: ncbi_aetherivorans
+    title: 'NCBI Taxonomy: Rhodococcus aetherivorans (Taxonomy ID 191292; species)'
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=191292&mode=Info
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States of America
+    list_name: U.S. Department of the Interior Final List of Critical Minerals
+    edition: '2025 (published November 7, 2025; 90 FR 50494-50497)'
+    classification: critical
+    source_ref: usgs_2025
+mechanisms:
+  - id: bcp1_tellurite_reduction
+    name: Resting-cell tellurite transformation to intracellular tellurium nanorods
+    process: redox_transformation
+    description: >-
+      Rhodococcus aetherivorans BCP1 (DSM 44980) resting cells produced
+      intracellular tellurium nanostructures. Electron diffraction supported
+      trigonal elemental tellurium in analyzed nanorods. The proposed
+      surfactant-assisted assembly pathway remains an interpretation.
+    context: >-
+      Laboratory aerobic exposure of LB-grown, twice PBS-washed cells in
+      50 mL PBS, pH 7.4, at 30 degrees C and 150 rpm for 0.5-16 h.
+      The supplement specifies initial K2TeO3 loadings of 100, 500 or
+      1000 micrograms/mL; main-text labels instead call these tellurite
+      concentrations. Preserve that mass-basis ambiguity without conversion
+      to elemental Te. Biomass loading is not quantified in the exposure
+      protocol. Solution depletion is not an isolated-product yield;
+      industrial operation was not demonstrated.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:191292
+        label: Rhodococcus aetherivorans
+    evidence:
+      - source_ref: presentato_2018
+        supports: support
+        explanation: >-
+          Figures 1-3 and 5 support solution depletion, intracellular
+          nanostructures, and trigonal-Te diffraction. Figure 1 uses three
+          biological replicates. At 16 h the higher nominal doses showed
+          partial removal: 42 +/- 3% (500) and 28 +/- 4% (1000), not complete
+          conversion. These are reported removal percentages, not recovery yields.
+      - source_ref: presentato_2018_supplement
+        supports: support
+        explanation: >-
+          Supplementary methods and Figure S1 caption specify PBS-only and
+          autoclaved-biomass controls at the highest loading; the main text
+          reports no abiotic removal. The assay measures supernatant tellurite
+          by diethyldithiocarbamate absorbance at 340 nm, calibrated with
+          K2TeO3 in PBS. No analytical detection limit is given; apparent
+          complete depletion at the lowest dose cannot establish literal zero.
+      - source_ref: presentato_2018
+        supports: partial
+        explanation: >-
+          Figure 7 proposes nanorod assembly assisted by amphiphilic
+          biomolecules. The paper does not identify a necessary tellurite
+          reductase or measure an isolated elemental-tellurium mass yield.
+curation_history:
+  - timestamp: '2026-10-11T04:01:00Z'
+    curator: Codex (GPT-6; Codex)
+    action: create
+    summary: >-
+      Created the tellurium identity, dated US criticality, and scoped BCP1
+      transformation record from verified authority pages and primary full
+      text/supplement. Retained mass-basis ambiguity, partial outcomes,
+      analytical limits, and distinction from isolated yield or deployment.
+history_refs:
+  - history/records/tellurium/2026-10-11T040057Z-codex-bc6ab1.yaml

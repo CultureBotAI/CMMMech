@@ -17,6 +17,9 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Lithium](data/records/lithium.yaml) | Conditional acidophile bioleaching of jadarite-bearing material | Transient advantage; controls converge and other feeds show null effects |
 | [Uranium](data/records/uranium.yaml) | Laboratory bioelectrochemical observations | Inoculated-cell observations do not isolate microbial enhancement |
 | [Vanadium](data/records/vanadium.yaml) | Laboratory bioelectrochemical observations | Inoculated-cell observations do not establish a purified product |
+| [Copper](data/records/copper.yaml) | Defined acidophile cultures leach chalcopyrite concentrate | Consortium-dependent release assay includes dissolved and precipitated copper |
+| [Nickel](data/records/nickel.yaml) | *Acidithiobacillus thiooxidans* mixture leaches selected laterites | Matched-pH controls and ore-dependent null outcomes limit generalization |
+| [Tellurium](data/records/tellurium.yaml) | Resting *Rhodococcus aetherivorans* BCP1 transforms tellurite to nanorods | Partial high-dose depletion and phase evidence do not establish isolated yield |
 | [Spent lamp phosphor](data/records/fluorescent-lamp-phosphor.yaml) | *Gluconobacter* biolixiviant bioleaching of a secondary resource | Retorted mixed powder; total-REE outcome, not an element-specific yield |
 | [Cobaltite](data/records/cobaltite.yaml) | IMA September 2026 mineral identity | Distinct from cobalt; no inherited criticality or microbial mechanism |
 | [Monazite-(Nd)](data/records/monazite-nd.yaml) | IMA September 2026 mineral identity | Distinct from neodymium and synthetic mixed experimental feeds |
@@ -26,7 +29,8 @@ their distinct identities. Criticality entries identify a jurisdiction and
 edition; none assert timeless status or industrial process deployment. See the
 [initial pilot assessment](docs/pilot-session.md),
 [first ingest queue](research/ingests/20261009-priorities.md),
-[latest ingest results and priorities](research/ingests/20261009T054507Z-followup.md), and
+[earlier ingest results](research/ingests/20261009T054507Z-followup.md),
+[expansion inventory and priorities](research/sources/expansion-authorities/20261011T040103Z.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 
@@ -57,8 +61,10 @@ uv run cmmmech validate path/to/record.yaml
 uv run cmmmech validate --require-records
 ```
 
-Without `just`, use `uv run python scripts/check.py`. The same command is used
-by CI. This local gate uses no research provider, model, credential, or network
+The locked development dependencies include `just`; use `uv run just check`
+if it is not otherwise on your PATH. CI runs `uv run python scripts/check.py`,
+including the recipe argument-forwarding regressions. This local gate uses no
+research provider, model, credential, or network
 lookup after dependencies are installed. CI also runs the separate canonical
 artifact check, which reads the pinned public CLAW revision:
 
