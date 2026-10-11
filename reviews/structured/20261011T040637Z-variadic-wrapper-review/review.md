@@ -1,0 +1,352 @@
+# Adversarial review of variadic command argument preservation
+
+- Review: 20261011T040637Z-variadic-wrapper-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T04:05:05Z
+- Finished UTC: 2026-10-11T04:06:37Z
+- Reviewer: codex /root/cmm_expansion_authorities (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: false
+
+## Summary
+
+Confirmed one major workflow defect: all three variadic just recipes interpolate caller arguments as shell source. Multiword history text and paths lose boundaries; literal command-substitution text is evaluated. An isolated positional-argument prototype preserves exact argv on installed just 1.58.0. No record/history writes or repository fix performed by this reviewer.
+
+## Scope And Provenance
+
+Bounded inspection of the single native justfile target, covering new-history, validate-history and review-check.
+
+Selection: All three variadic recipes in justfile; contextual record guide and add-record skill establish intended usage.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 76cd81d310a6ccb4cf7bdebcc61be050d0863222.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| just-variadic-wrappers | justfile | maintained | Native variadic command wrappers |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Original and prototype variadic recipe argument capture | passed | True | just-variadic-wrappers | Harness exited 0 after asserting that all three originals change argv and all three positional-argument prototypes preserve it. The harness passes by reproducing the defect; it does not mark original behavior acceptable. |
+| Installed just version and parser interface inspection | passed | True | just-variadic-wrappers | just 1.58.0 supports recipe-level positional-arguments in the prototype. Inspected cmmmech validate-history and record_review.py check help to select supported option names. |
+| Full corpus, scientific reviews and CI | not_applicable | False | just-variadic-wrappers | Owned by publisher and scientific reviewers, not rerun for this wrapper finding. |
+
+## Scientific And Domain Assessments
+
+### Argument and prose fidelity across native wrappers
+
+representation: concern. Targets: just-variadic-wrappers.
+
+The wrappers reinterpret already-separated caller arguments as shell text. This breaks documented history creation and can alter literal source descriptions. Valid paths and Git revision expressions containing spaces also split.
+
+## Findings
+
+### F1: Preserve variadic argument boundaries instead of reinterpreting caller text
+
+major / open / confirmed; issue key: CMMMech.just-variadic-argument-preservation.
+
+The new-history, validate-history and review-check recipes expand {{args}} directly into shell source. A quoted multiword history summary reaches fake uv as two arguments; details containing literal $(printf SENTINEL) cause command substitution and arrive as changed text. validate-history splits a --repo-root path containing spaces; review-check splits the supported --base value HEAD^{/literal subject}. This is a native wrapper defect, not a validator failure. Replace raw interpolation with safe positional forwarding and guard the behavior with real just execution tests.
+
+## Recommended Actions And Acceptance Checks
+
+### A1
+
+Use recipe-level positional arguments and quoted "$@" or equivalent verified argument-preserving forwarding for all three variadic wrappers. Add regressions invoking installed just with fake uv; do not invoke real record/history writes during the argv test.
+
+- All three wrappers preserve exact argument count and values for whitespace-bearing text, paths and supported Git revision expressions.
+- Literal shell metacharacters and command-substitution syntax remain literal argv; a benign sentinel test proves no unintended substitution.
+- Zero variadic arguments remain supported; ordinary --help invocations still reach the intended CLI.
+- Targeted regressions execute real just on supported installed version; full just check and required record/history/review gates pass.
+- Save an independent successor disposition with unchanged issue_key and exact previous_occurrences pointing to this finding; retain this original bundle.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| source | justfile; docs/records.md; .claude/skills/cmmmech-add-record/SKILL.md; justfile lines17–25; record guide Append-only curation history; add-record skill Curate YAML and history | supports | All three variadic recipes append {{args}} unquoted to a shell command. The documented history command passes quoted multiword summary/details, which the first calling shell correctly preserves before just discards those boundaries. |
+| argv-capture | /private/tmp/cmm-just-review-20261011/reproduction.json; Six fake-uv captures; original and positional prototype for each of three recipes | supports | [{"recipe": "new-history", "variant": "original", "supplied_args": ["--summary", "multiword text", "--details", "Keep $(printf SENTINEL) literal"], "expected_uv_argv": ["run", "--locked", "cmmmech", "new-history", "--summary", "multiword text", "--details", "Keep $(printf SENTINEL) literal"], "observed_uv_argv": ["run", "--locked", "cmmmech", "new-history", "--summary", "multiword", "text", "--details", "Keep", "SENTINEL", "literal"], "returncode": 0, "arguments_preserved": false, "stderr": "uv run --locked cmmmech new-history --summary multiword text --details Keep $(printf SENTINEL) literal"}, {"recipe": "new-history", "variant": "fixed", "supplied_args": ["--summary", "multiword text", "--details", "Keep $(printf SENTINEL) literal"], "expected_uv_argv": ["run", "--locked", "cmmmech", "new-history", "--summary", "multiword text", "--details", "Keep $(printf SENTINEL) literal"], "observed_uv_argv": ["run", "--locked", "cmmmech", "new-history", "--summary", "multiword text", "--details", "Keep $(printf SENTINEL) literal"], "returncode": 0, "arguments_preserved": true, "stderr": "uv run --locked cmmmech new-history \"$@\""}, {"recipe": "validate-history", "variant": "original", "supplied_args": ["--repo-root", "/tmp/path with spaces", "--base", "HEAD"], "expected_uv_argv": ["run", "--locked", "cmmmech", "validate-history", "--repo-root", "/tmp/path with spaces", "--base", "HEAD"], "observed_uv_argv": ["run", "--locked", "cmmmech", "validate-history", "--repo-root", "/tmp/path", "with", "spaces", "--base", "HEAD"], "returncode": 0, "arguments_preserved": false, "stderr": "uv run --locked cmmmech validate-history --repo-root /tmp/path with spaces --base HEAD"}, {"recipe": "validate-history", "variant": "fixed", "supplied_args": ["--repo-root", "/tmp/path with spaces", "--base", "HEAD"], "expected_uv_argv": ["run", "--locked", "cmmmech", "validate-history", "--repo-root", "/tmp/path with spaces", "--base", "HEAD"], "observed_uv_argv": ["run", "--locked", "cmmmech", "validate-history", "--repo-root", "/tmp/path with spaces", "--base", "HEAD"], "returncode": 0, "arguments_preserved": true, "stderr": "uv run --locked cmmmech validate-history \"$@\""}, {"recipe": "review-check", "variant": "original", "supplied_args": ["--base", "HEAD^{/literal subject}"], "expected_uv_argv": ["run", "python", "scripts/record_review.py", "check", "--base", "HEAD^{/literal subject}"], "observed_uv_argv": ["run", "python", "scripts/record_review.py", "check", "--base", "HEAD^{/literal", "subject}"], "returncode": 0, "arguments_preserved": false, "stderr": "uv run python scripts/record_review.py check --base HEAD^{/literal subject}"}, {"recipe": "review-check", "variant": "fixed", "supplied_args": ["--base", "HEAD^{/literal subject}"], "expected_uv_argv": ["run", "python", "scripts/record_review.py", "check", "--base", "HEAD^{/literal subject}"], "observed_uv_argv": ["run", "python", "scripts/record_review.py", "check", "--base", "HEAD^{/literal subject}"], "returncode": 0, "arguments_preserved": true, "stderr": "uv run python scripts/record_review.py check \"$@\""}] |
+| runtime | Installed just executable; just --version and prototype execution | supports | Version just 1.58.0. Recipe-level [positional-arguments] with quoted "$@" forwards the exact original argv, including spaces and the literal $(printf SENTINEL) string. |
+
+## Limits And Additional Notes
+
+- This bounded review does not establish microbial or chemical validity of any record.
+- The fake-uv harness checks shell forwarding, not every downstream CLI option or environment.
+- The safe prototype exists only in temporary fixtures. A passing prototype is not evidence that repository code has been fixed.
+- Full corpus checks, publication, provenance-tag decisions and remote CI remain publisher responsibilities.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T040637Z-variadic-wrapper-review
+kind: repository
+repository: CultureBotAI/CMMMech
+title: Adversarial review of variadic command argument preservation
+started_at: '2026-10-11T04:05:05Z'
+finished_at: '2026-10-11T04:06:37Z'
+reviewer:
+  identity: codex /root/cmm_expansion_authorities
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Did not author the justfile or its documentation. Maintainer
+    reported a curator failure; this delegated reviewer independently inspected source
+    and reproduced it with a fake uv executable. Authored the separate authority inventory,
+    which is explicitly excluded from this review.
+skill: docs/record-reviews.md structured repository review contract; docs/record-review-profile.md
+  native workflow
+completion: completed
+verdict: needs_curation
+scientific_review: false
+summary: 'Confirmed one major workflow defect: all three variadic just recipes interpolate
+  caller arguments as shell source. Multiword history text and paths lose boundaries;
+  literal command-substitution text is evaluated. An isolated positional-argument
+  prototype preserves exact argv on installed just 1.58.0. No record/history writes
+  or repository fix performed by this reviewer.'
+source:
+  git_revision: 76cd81d310a6ccb4cf7bdebcc61be050d0863222
+  state: working_tree
+  inputs:
+  - path: .claude/skills/cmmmech-add-record/SKILL.md
+    sha256: c9b05bae67a8d30fe27f1f501f4240a36c599d14cfefac0175e79d71ef0ac889
+    role: context
+  - path: docs/records.md
+    sha256: 212cdbb723eb1ad9eb76ea1b7dad066914659b1f85eb2cdb51ee67466cfcc8ee
+    role: context
+  - path: justfile
+    sha256: 28702ef99f76fe3d7c8291d1f34afd9797501bf7f624a9d9296ce1666f8d4333
+    role: target
+scope:
+  description: Bounded inspection of the single native justfile target, covering new-history,
+    validate-history and review-check.
+  selection: All three variadic recipes in justfile; contextual record guide and add-record
+    skill establish intended usage.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - just-variadic-wrappers
+  exclusions:
+  - target: research/sources/expansion-authorities/*
+    reason: Authored by this reviewer; requires independent assessment elsewhere.
+  - target: data/records/*.yaml and primary literature
+    reason: Scientific acceptance is delegated separately; this review concerns command
+      forwarding only.
+  - target: CLAW governed helpers, global shell-security behavior and GitHub state
+    reason: Outside the narrow native-wrapper defect; no governed edits or publication
+      actions performed.
+targets:
+- target_id: just-variadic-wrappers
+  path: justfile
+  label: Native variadic command wrappers
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: justfile
+    role: Native command argument forwarding
+checks:
+- check_id: argv-reproduction
+  name: Original and prototype variadic recipe argument capture
+  status: passed
+  required: true
+  summary: Harness exited 0 after asserting that all three originals change argv and
+    all three positional-argument prototypes preserve it. The harness passes by reproducing
+    the defect; it does not mark original behavior acceptable.
+  target_ids:
+  - just-variadic-wrappers
+  command: /private/tmp/CMMMech-add-record-publish-20261010/.venv/bin/python /private/tmp/cmm-just-review-20261011/reproduce.py
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - argv-capture
+- check_id: runtime-version
+  name: Installed just version and parser interface inspection
+  status: passed
+  required: true
+  summary: just 1.58.0 supports recipe-level positional-arguments in the prototype.
+    Inspected cmmmech validate-history and record_review.py check help to select supported
+    option names.
+  target_ids:
+  - just-variadic-wrappers
+  command: just --version; cmmmech validate-history --help; python scripts/record_review.py
+    check --help
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - runtime
+  - source
+- check_id: full-corpus
+  name: Full corpus, scientific reviews and CI
+  status: not_applicable
+  required: false
+  summary: Owned by publisher and scientific reviewers, not rerun for this wrapper
+    finding.
+  target_ids:
+  - just-variadic-wrappers
+evidence:
+- evidence_id: source
+  kind: record_content
+  reference: justfile; docs/records.md; .claude/skills/cmmmech-add-record/SKILL.md
+  locator: justfile lines17–25; record guide Append-only curation history; add-record
+    skill Curate YAML and history
+  accessed_at: '2026-10-11T04:06:37Z'
+  support: supports
+  summary: All three variadic recipes append {{args}} unquoted to a shell command.
+    The documented history command passes quoted multiword summary/details, which
+    the first calling shell correctly preserves before just discards those boundaries.
+- evidence_id: argv-capture
+  kind: validation
+  reference: /private/tmp/cmm-just-review-20261011/reproduction.json
+  locator: Six fake-uv captures; original and positional prototype for each of three
+    recipes
+  accessed_at: '2026-10-11T04:06:37Z'
+  support: supports
+  summary: '[{"recipe": "new-history", "variant": "original", "supplied_args": ["--summary",
+    "multiword text", "--details", "Keep $(printf SENTINEL) literal"], "expected_uv_argv":
+    ["run", "--locked", "cmmmech", "new-history", "--summary", "multiword text", "--details",
+    "Keep $(printf SENTINEL) literal"], "observed_uv_argv": ["run", "--locked", "cmmmech",
+    "new-history", "--summary", "multiword", "text", "--details", "Keep", "SENTINEL",
+    "literal"], "returncode": 0, "arguments_preserved": false, "stderr": "uv run --locked
+    cmmmech new-history --summary multiword text --details Keep $(printf SENTINEL)
+    literal"}, {"recipe": "new-history", "variant": "fixed", "supplied_args": ["--summary",
+    "multiword text", "--details", "Keep $(printf SENTINEL) literal"], "expected_uv_argv":
+    ["run", "--locked", "cmmmech", "new-history", "--summary", "multiword text", "--details",
+    "Keep $(printf SENTINEL) literal"], "observed_uv_argv": ["run", "--locked", "cmmmech",
+    "new-history", "--summary", "multiword text", "--details", "Keep $(printf SENTINEL)
+    literal"], "returncode": 0, "arguments_preserved": true, "stderr": "uv run --locked
+    cmmmech new-history \"$@\""}, {"recipe": "validate-history", "variant": "original",
+    "supplied_args": ["--repo-root", "/tmp/path with spaces", "--base", "HEAD"], "expected_uv_argv":
+    ["run", "--locked", "cmmmech", "validate-history", "--repo-root", "/tmp/path with
+    spaces", "--base", "HEAD"], "observed_uv_argv": ["run", "--locked", "cmmmech",
+    "validate-history", "--repo-root", "/tmp/path", "with", "spaces", "--base", "HEAD"],
+    "returncode": 0, "arguments_preserved": false, "stderr": "uv run --locked cmmmech
+    validate-history --repo-root /tmp/path with spaces --base HEAD"}, {"recipe": "validate-history",
+    "variant": "fixed", "supplied_args": ["--repo-root", "/tmp/path with spaces",
+    "--base", "HEAD"], "expected_uv_argv": ["run", "--locked", "cmmmech", "validate-history",
+    "--repo-root", "/tmp/path with spaces", "--base", "HEAD"], "observed_uv_argv":
+    ["run", "--locked", "cmmmech", "validate-history", "--repo-root", "/tmp/path with
+    spaces", "--base", "HEAD"], "returncode": 0, "arguments_preserved": true, "stderr":
+    "uv run --locked cmmmech validate-history \"$@\""}, {"recipe": "review-check",
+    "variant": "original", "supplied_args": ["--base", "HEAD^{/literal subject}"],
+    "expected_uv_argv": ["run", "python", "scripts/record_review.py", "check", "--base",
+    "HEAD^{/literal subject}"], "observed_uv_argv": ["run", "python", "scripts/record_review.py",
+    "check", "--base", "HEAD^{/literal", "subject}"], "returncode": 0, "arguments_preserved":
+    false, "stderr": "uv run python scripts/record_review.py check --base HEAD^{/literal
+    subject}"}, {"recipe": "review-check", "variant": "fixed", "supplied_args": ["--base",
+    "HEAD^{/literal subject}"], "expected_uv_argv": ["run", "python", "scripts/record_review.py",
+    "check", "--base", "HEAD^{/literal subject}"], "observed_uv_argv": ["run", "python",
+    "scripts/record_review.py", "check", "--base", "HEAD^{/literal subject}"], "returncode":
+    0, "arguments_preserved": true, "stderr": "uv run python scripts/record_review.py
+    check \"$@\""}]'
+  search_scope: No absence finding. A scoped hidden/ignored search of justfile, docs,
+    scripts, tests and .claude/skills identified the three native wrappers and documented
+    invocation. Temporary fixtures use fake uv and do not invoke CMMMech or mutate
+    history.
+- evidence_id: runtime
+  kind: validation
+  reference: Installed just executable
+  locator: just --version and prototype execution
+  accessed_at: '2026-10-11T04:06:37Z'
+  support: supports
+  summary: Version just 1.58.0. Recipe-level [positional-arguments] with quoted "$@"
+    forwards the exact original argv, including spaces and the literal $(printf SENTINEL)
+    string.
+assessments:
+- assessment_id: argument-integrity
+  area: representation
+  topic: Argument and prose fidelity across native wrappers
+  outcome: concern
+  summary: The wrappers reinterpret already-separated caller arguments as shell text.
+    This breaks documented history creation and can alter literal source descriptions.
+    Valid paths and Git revision expressions containing spaces also split.
+  target_ids:
+  - just-variadic-wrappers
+  evidence_ids:
+  - source
+  - argv-capture
+  - runtime
+findings:
+- finding_id: F1
+  issue_key: CMMMech.just-variadic-argument-preservation
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Preserve variadic argument boundaries instead of reinterpreting caller text
+  description: The new-history, validate-history and review-check recipes expand {{args}}
+    directly into shell source. A quoted multiword history summary reaches fake uv
+    as two arguments; details containing literal $(printf SENTINEL) cause command
+    substitution and arrive as changed text. validate-history splits a --repo-root
+    path containing spaces; review-check splits the supported --base value HEAD^{/literal
+    subject}. This is a native wrapper defect, not a validator failure. Replace raw
+    interpolation with safe positional forwarding and guard the behavior with real
+    just execution tests.
+  target_ids:
+  - just-variadic-wrappers
+  field_paths:
+  - justfile:new-history *args recipe
+  - justfile:validate-history *args recipe
+  - justfile:review-check *args recipe
+  evidence_ids:
+  - source
+  - argv-capture
+  - runtime
+  rule_id: preserve-cli-argument-boundaries
+  native_severity: major
+  normalization_reason: Systemic native-workflow error breaks the documented curation
+    path and changes user-authored evidence/history text; all affected wrappers reproduce
+    independently.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: justfile
+    role: Native command argument forwarding
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/21
+actions:
+- action_id: A1
+  description: Use recipe-level positional arguments and quoted "$@" or equivalent
+    verified argument-preserving forwarding for all three variadic wrappers. Add regressions
+    invoking installed just with fake uv; do not invoke real record/history writes
+    during the argv test.
+  finding_ids:
+  - F1
+  target_ids:
+  - just-variadic-wrappers
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: justfile
+    role: Native command argument forwarding
+  - repository: CultureBotAI/CMMMech
+    path: tests
+    role: Meaningful wrapper invocation regressions
+  acceptance_checks:
+  - All three wrappers preserve exact argument count and values for whitespace-bearing
+    text, paths and supported Git revision expressions.
+  - Literal shell metacharacters and command-substitution syntax remain literal argv;
+    a benign sentinel test proves no unintended substitution.
+  - Zero variadic arguments remain supported; ordinary --help invocations still reach
+    the intended CLI.
+  - Targeted regressions execute real just on supported installed version; full just
+    check and required record/history/review gates pass.
+  - Save an independent successor disposition with unchanged issue_key and exact previous_occurrences
+    pointing to this finding; retain this original bundle.
+limitations:
+- This bounded review does not establish microbial or chemical validity of any record.
+- The fake-uv harness checks shell forwarding, not every downstream CLI option or
+  environment.
+- The safe prototype exists only in temporary fixtures. A passing prototype is not
+  evidence that repository code has been fixed.
+- Full corpus checks, publication, provenance-tag decisions and remote CI remain publisher
+  responsibilities.
+tags:
+- adversarial
+- native-workflow
+- argument-fidelity
+```

@@ -14,12 +14,15 @@ validate:
     uv run --locked cmmmech validate
 
 # Create a new immutable sidecar, then attach its printed path to the record.
+[positional-arguments]
 new-history *args:
-    uv run --locked cmmmech new-history {{args}}
+    uv run --locked cmmmech new-history "$@"
 
+[positional-arguments]
 validate-history *args:
-    uv run --locked cmmmech validate-history {{args}}
+    uv run --locked cmmmech validate-history "$@"
 
 # Validate immutable structured review observations; never curate records.
+[positional-arguments]
 review-check *args:
-    uv run python scripts/record_review.py check {{args}}
+    uv run python scripts/record_review.py check "$@"

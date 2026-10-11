@@ -1,0 +1,103 @@
+id: cmmmech:nickel
+name: Nickel
+material_kind: element
+description: >-
+  Nickel (Ni), atomic number 28. The ChEBI nickel-atom identifier grounds this
+  element-level record; nickel ions, alloys, mineral species and heterogeneous
+  laterite ores are different entities. The US designation maps the listed
+  nickel commodity to this element and does not designate every nickel-bearing
+  ore or waste. The curated experiment concerns nickel mobilization from
+  particular laterite samples, not dissolution of elemental nickel.
+identifiers:
+  - id: CHEBI:28112
+    label: nickel atom
+sources:
+  - id: chebi_nickel
+    title: ChEBI CHEBI:28112 — nickel atom
+    url: https://www.ebi.ac.uk/chebi/CHEBI:28112
+    accessed_on: '2026-10-11'
+  - id: usgs2025
+    title: >-
+      USGS (2025). Final 2025 List of Critical Minerals. Federal Register
+      90:50494-50497, document 2025-19813; nickel in the final commodity table.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: hetz_schippers_2025
+    title: >-
+      Hetz SA and Schippers A (2025). Aerobic Bioleaching of Six Brazilian
+      Laterite Ores with Acidithiobacillus thiooxidans, Sulfobacillus species
+      and Archaea at Various Conditions. Journal of Sustainable Metallurgy
+      11:3732-3747. doi:10.1007/s40831-025-01139-7.
+    url: https://doi.org/10.1007/s40831-025-01139-7
+    accessed_on: '2026-10-11'
+  - id: ncbi_thiooxidans
+    title: NCBI Taxonomy 930 — Acidithiobacillus thiooxidans, species rank
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States of America
+    list_name: USGS Final List of Critical Minerals
+    edition: '2025; Federal Register 90:50494-50497; published 7 November 2025'
+    classification: critical
+    source_ref: usgs2025
+mechanisms:
+  - id: thiooxidans_laterite_bioleaching
+    name: Conditional nickel bioleaching from Brazilian laterites
+    process: bioleaching
+    description: >-
+      A living six-strain Acidithiobacillus thiooxidans mixture mobilized nickel
+      from selected laterites under aerobic laboratory conditions. Sulfur
+      oxidation supplied acidity; additional reductive dissolution is inferred
+      for some feeds, without establishing its molecular route. Performance
+      depended strongly on the particular ore sample.
+    context: >-
+      DSM 14887T, DSM 504, DSM 622, DSM 103717, DSM 9463 and BGR isolate RAM8
+      were mixed in equal culture volumes; the taxon ID identifies the species,
+      not this mixture or any individual strain's contribution. Homogenized,
+      sieved (<2 mm), unwashed laterite was added at 10% w/v after four days
+      of growth with 10% v/v inoculum in 2-L stirred, air-supplied reactors
+      containing 1.5 L salts medium, initially pH 3.0, with 1% w/v elemental
+      sulfur at 30 degrees C. Methods describe 3 mM ferrous iron in the medium
+      and 3 mM ferrous sulfate before ore addition; the cumulative dose is not
+      resolved here. Leaching pH was maintained at 1.5 or allowed to change;
+      uninoculated controls were adjusted to the corresponding biotic pH
+      trajectories. BaSt and 1P5 were assayed for 15 days, BaC for 20 days,
+      Jacare samples for 24 days and Piaui for 15 days. Dissolved metals were
+      measured by ICP-OES after 0.2-micrometer filtration and acid stabilization.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:930
+        label: Acidithiobacillus thiooxidans
+    evidence:
+      - source_ref: hetz_schippers_2025
+        supports: support
+        explanation: >-
+          Methods and Barro Alto Results, Figures 1-7: for stockpile sample
+          BaSt with pH not maintained, reported nickel extraction after 15 days
+          was 83.0 +/- 5.7% (mean +/- SD; four bioreactors), versus 33.6 +/- 0.1%
+          in the matched-pH uninoculated control (two bioreactors). These are
+          reported fractions of feed nickel mobilized, not an isolated nickel
+          product, and do not demonstrate industrial operation.
+      - source_ref: hetz_schippers_2025
+        supports: partial
+        explanation: >-
+          Figures 5-6 and 8-10 and the corresponding Results restrict the
+          mechanism's generality: 1P5 showed no enhancement over its chemical
+          control (three biotic reactors, one control), Piaui had similar
+          nickel extraction in biotic and chemical assays, and JacF extraction
+          was very low. JacC showed some enhancement in Results even though
+          the abstract groups Jacare samples broadly with acid-only outcomes.
+          Discussion leaves the aerobic ferric-iron reduction route unresolved;
+          it does not establish a specific enzyme or universal nickel-leaching
+          advantage across laterites.
+curation_history:
+  - timestamp: '2026-10-11T04:01:36Z'
+    curator: Codex (GPT-6; Codex)
+    action: record_creation
+    summary: >-
+      Created nickel identity, dated US 2025 criticality and a primary-evidence
+      laterite bioleaching mechanism with matched-pH controls, null outcomes,
+      unresolved dosing and causal details, and laboratory scope. Independent
+      scientific review is a separate subsequent artifact.
+history_refs:
+  - history/records/nickel/2026-10-11T040136Z-codex-dc4fc2.yaml

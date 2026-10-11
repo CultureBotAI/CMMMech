@@ -1,0 +1,484 @@
+# Independent resolution of variadic wrapper argument defect
+
+- Review: 20261011T041005Z-variadic-wrapper-resolution
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T04:08:03Z
+- Finished UTC: 2026-10-11T04:10:05Z
+- Reviewer: codex /root/cmm_expansion_authorities (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: false
+
+## Summary
+
+F1 is resolved for all three native variadic wrappers. Nine real-just regression cases pass independently; literal shell syntax, whitespace and empty arguments reach the fake receiver unchanged. The locked dev dependency and CI installation path ensure these tests run. Real CLI help smoke checks work. No new blocker or major finding in these five implementation/dependency/documentation targets. Scientific and complete publication acceptance remain outside this bounded review.
+
+## Scope And Provenance
+
+Independent follow-up on five fix owners: all three variadic recipes, real-just tests, dev dependency declaration/lock, and README command guidance/link paths.
+
+Selection: All maintained files changed to address issue21; README assessed for workflow guidance and link existence only.
+Coverage: full; 5 reviewed / 5 in the declared population.
+Source: working_tree at Git base 76cd81d310a6ccb4cf7bdebcc61be050d0863222.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| just-variadic-wrappers | justfile | maintained | Native variadic command wrappers |
+| just-argv-regressions | tests/test_just_recipes.py | maintained | Real-just argument regressions |
+| development-dependencies | pyproject.toml | maintained | Development dependency declaration |
+| dependency-lock | uv.lock | maintained | Locked just dependency |
+| workflow-readme | README.md | maintained | Native command documentation |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Real-just regression suite | passed | True | just-variadic-wrappers, just-argv-regressions | Nine parameterized cases passed in9.80s with no skips: three wrappers by three argument sets. Executed actual maintained recipes with only uv replaced by fake receiver. |
+| Changed-test lint and whitespace | passed | True | just-variadic-wrappers, just-argv-regressions, development-dependencies, dependency-lock, workflow-readme | ruff check tests/test_just_recipes.py and git diff --check both passed. |
+| Maintained wrapper CLI help smoke | passed | True | just-variadic-wrappers, workflow-readme | new-history, validate-history and review-check each reached its intended real downstream help interface through maintained just recipes, without record or history mutation. |
+| Pinned dependency, lock and local README links | passed | True | development-dependencies, dependency-lock, workflow-readme | Python tomllib assertions confirm rust-just==1.58.0 in dev and one matching lock package with16 platform wheels; installed .venv/bin/just is1.58.0. New record and inventory README links resolve. |
+| Full scientific and publication acceptance | not_applicable | False | just-variadic-wrappers, just-argv-regressions, development-dependencies, dependency-lock, workflow-readme | Publisher owns complete gates after independent record reviews; not rerun as part of this bounded correction review. |
+
+## Scientific And Domain Assessments
+
+### Correctness of all three native wrappers
+
+representation: supported. Targets: just-variadic-wrappers.
+
+Positional forwarding preserves caller argument boundaries and literal contents; actual recipe regression execution passes.
+
+### Tests exercise user-visible failure rather than source text
+
+completeness: supported. Targets: just-argv-regressions.
+
+Fake receiver plus real just captures behavior including zero-argument and empty-string cases; no skip path masks missing runtime.
+
+### Test runtime availability and locked declaration
+
+consistency: supported. Targets: development-dependencies, dependency-lock.
+
+Matching dev declaration and lock constrain just1.58.0; existing CI installs that extra and runs all tests. No runtime library dependency added.
+
+### Workflow guidance and navigation
+
+scope: supported. Targets: workflow-readme.
+
+Command guidance matches declared dev dependency and CI pipeline; linked new local artifact paths resolve. Scientific table claims remain separate review scope.
+
+## Findings
+
+### F1: Variadic wrappers preserve exact caller arguments
+
+major / resolved / confirmed; issue key: CMMMech.just-variadic-argument-preservation.
+
+All three maintained recipes now use recipe-level positional arguments and quoted "$@". Independent execution of nine regression cases preserves literal text, whitespace, empty strings, quotes, newlines and tabs, while sentinel files prove no tested command substitutions execute. The declared locked development dependency supplies just to CI and is not optional in the regression. The documentation identifies uv run just for the locked environment.
+
+Disposition: Inspected exact maintained fix and executed the new real-just regressions independently: all nine passed. Each maintained wrapper also reached its downstream CLI help. Dependency declaration, lock entry and CI installation path agree. Full-corpus and remote merge checks remain separate publication gates; this terminal disposition addresses the native argument-preservation defect.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| fix | justfile; new-history, validate-history and review-check recipes | supports | Each wrapper has [positional-arguments] and forwards "$@"; command prefixes remain unchanged. No global shell setting or governed helper changed. |
+| tests | tests/test_just_recipes.py; All nine parameterized cases and independent execution | supports | Tests require real just, copy maintained recipes, intercept uv with a JSON argv recorder, and cover empty argument lists; multiword text; literal $(), backticks, variables and glob; empty strings, quotes, newlines and tabs. They assert exact argv and absence of benign substitution-marker files. Nine passed; ruff and diff whitespace checks passed. |
+| dependency | pyproject.toml; uv.lock; .github/workflows/validate-strict.yaml; scripts/check.py; dev extra, rust-just lock package, CI install/gate steps, pytest invocation | supports | rust-just1.58.0 is pinned only in dev and locked with source/wheel hashes. Existing CI installs --locked --extra dev then uv run --no-sync executes scripts/check.py, which runs all pytest tests. Regression asserts just exists instead of skipping. |
+| package-source | https://pypi.org/project/rust-just/1.58.0/; Package documentation installation table: pipx and uv entries | supports | Official package page documents rust-just as the Python-distributed just command and links upstream documentation. This is package identity/context, not a source audit of the binary. |
+| smoke | Maintained just recipes executed from current worktree; Actual --help output for all three wrappers | supports | new-history help exposes required summary/details/actor flags; validate-history help exposes paths/repo-root/base; review-check help exposes base/require-reviews. No CLI was invoked with mutating arguments. |
+| readme | README.md; Local Checks paragraph and four added/changed local links | supports | README explains locked development just and uv run just check; declared CI test behavior matches existing workflow and scripts/check.py. Copper/nickel/tellurium/inventory paths exist, but associated scientific statements are not re-reviewed here. |
+| predecessor | reviews/structured/20261011T040637Z-variadic-wrapper-review/review.yaml; F1 | supports | Original independent reproduction recorded a major/open finding at the unchanged stable issue key. This successor retains its target and cites that exact occurrence. |
+
+## Limits And Additional Notes
+
+- Targeted fix verification was performed locally on macOS with just1.58.0. Linux execution will also be exercised by the existing Ubuntu CI gate; no Windows shell compatibility claim is made.
+- Full just check, nonempty corpus validation, history/review append-only checks and remote merge/cleanup remain publication gates owned by the parent agent.
+- No new criticality, mechanism, identifier or authority-inventory acceptance is established by this implementation review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T041005Z-variadic-wrapper-resolution
+kind: repository
+repository: CultureBotAI/CMMMech
+title: Independent resolution of variadic wrapper argument defect
+started_at: '2026-10-11T04:08:03Z'
+finished_at: '2026-10-11T04:10:05Z'
+reviewer:
+  identity: codex /root/cmm_expansion_authorities
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Same delegated reviewer who independently reproduced F1; did
+    not author maintained recipe fix, regression tests, dependency declaration/lock
+    or README edits. Inspected parent-authored changes and reran targeted checks.
+    Separately authored source inventory is excluded.
+skill: docs/record-reviews.md structured successor contract; docs/record-review-profile.md
+  native workflow
+completion: completed
+verdict: pass_with_limitations
+scientific_review: false
+summary: F1 is resolved for all three native variadic wrappers. Nine real-just regression
+  cases pass independently; literal shell syntax, whitespace and empty arguments reach
+  the fake receiver unchanged. The locked dev dependency and CI installation path
+  ensure these tests run. Real CLI help smoke checks work. No new blocker or major
+  finding in these five implementation/dependency/documentation targets. Scientific
+  and complete publication acceptance remain outside this bounded review.
+source:
+  git_revision: 76cd81d310a6ccb4cf7bdebcc61be050d0863222
+  state: working_tree
+  inputs:
+  - path: .claude/skills/cmmmech-add-record/SKILL.md
+    sha256: c9b05bae67a8d30fe27f1f501f4240a36c599d14cfefac0175e79d71ef0ac889
+    role: context
+  - path: .github/workflows/validate-strict.yaml
+    sha256: 3a00e7becf969a181f71bbc1b12875929400a6cedfdf56f287cdbfcf1c3ff134
+    role: context
+  - path: README.md
+    sha256: 78c70cac10a21bebc09b2bb5f3ddb402e174e71673b96c4bfbd779ea4607f70a
+    role: target
+  - path: docs/records.md
+    sha256: 212cdbb723eb1ad9eb76ea1b7dad066914659b1f85eb2cdb51ee67466cfcc8ee
+    role: context
+  - path: justfile
+    sha256: ab372446900aadfbbca2f1195c085cf100ef69cddb10a9ea52f74ecb441a8a4c
+    role: target
+  - path: pyproject.toml
+    sha256: e6d0c71251d97a1b5f8b65ef9a0f6f8c04848e4de50bf4c3e46d96b9edc02eed
+    role: target
+  - path: reviews/structured/20261011T040637Z-variadic-wrapper-review/review.yaml
+    sha256: 1c6b03b45836f19e4fe601e6def2025fa5f86b8bb742c6d07d07e8d3c8882fc2
+    role: context
+  - path: scripts/check.py
+    sha256: 69894bbe6480c4dbec56b8e15cf97e3ed6273078dd6ac1b929d73aab3a87301a
+    role: context
+  - path: tests/test_just_recipes.py
+    sha256: d458a511cb46d66c77ee02057a70b9fd30b2cef40275c22f21331e7252739bd2
+    role: target
+  - path: uv.lock
+    sha256: 473bfdb18b56d16f4b87672a4cd975b572c9f56db367db3d43cabaeeb2b055a7
+    role: target
+scope:
+  description: 'Independent follow-up on five fix owners: all three variadic recipes,
+    real-just tests, dev dependency declaration/lock, and README command guidance/link
+    paths.'
+  selection: All maintained files changed to address issue21; README assessed for
+    workflow guidance and link existence only.
+  coverage: full
+  population_size: 5
+  reviewed_target_ids:
+  - just-variadic-wrappers
+  - just-argv-regressions
+  - development-dependencies
+  - dependency-lock
+  - workflow-readme
+  exclusions:
+  - target: README scientific table claims, data/records/*.yaml and primary literature
+    reason: Scientific acceptance is delegated separately; table link existence does
+      not certify the record claims.
+  - target: research/sources/expansion-authorities/*
+    reason: This reviewer authored inventory; independent review assigned elsewhere.
+  - target: Full corpus, history/review gates, remote CI, merge queue and branch cleanup
+    reason: Separate publisher-owned gates; not certified by targeted wrapper checks.
+targets:
+- target_id: just-variadic-wrappers
+  path: justfile
+  label: Native variadic command wrappers
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: justfile
+    role: Native implementation, regression, dependency or documentation owner
+- target_id: just-argv-regressions
+  path: tests/test_just_recipes.py
+  label: Real-just argument regressions
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: tests/test_just_recipes.py
+    role: Native implementation, regression, dependency or documentation owner
+- target_id: development-dependencies
+  path: pyproject.toml
+  label: Development dependency declaration
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: pyproject.toml
+    role: Native implementation, regression, dependency or documentation owner
+- target_id: dependency-lock
+  path: uv.lock
+  label: Locked just dependency
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: uv.lock
+    role: Native implementation, regression, dependency or documentation owner
+- target_id: workflow-readme
+  path: README.md
+  label: Native command documentation
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: README.md
+    role: Native implementation, regression, dependency or documentation owner
+checks:
+- check_id: argv-regression
+  name: Real-just regression suite
+  status: passed
+  required: true
+  summary: 'Nine parameterized cases passed in9.80s with no skips: three wrappers
+    by three argument sets. Executed actual maintained recipes with only uv replaced
+    by fake receiver.'
+  target_ids:
+  - just-variadic-wrappers
+  - just-argv-regressions
+  command: PATH=/private/tmp/CMMMech-add-record-publish-20261010/.venv/bin:$PATH /private/tmp/CMMMech-add-record-publish-20261010/.venv/bin/python
+    -m pytest -q tests/test_just_recipes.py
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - tests
+- check_id: lint-diff
+  name: Changed-test lint and whitespace
+  status: passed
+  required: true
+  summary: ruff check tests/test_just_recipes.py and git diff --check both passed.
+  target_ids:
+  - just-variadic-wrappers
+  - just-argv-regressions
+  - development-dependencies
+  - dependency-lock
+  - workflow-readme
+  command: python -m ruff check tests/test_just_recipes.py; git diff --check
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - tests
+- check_id: wrapper-help
+  name: Maintained wrapper CLI help smoke
+  status: passed
+  required: true
+  summary: new-history, validate-history and review-check each reached its intended
+    real downstream help interface through maintained just recipes, without record
+    or history mutation.
+  target_ids:
+  - just-variadic-wrappers
+  - workflow-readme
+  command: PATH=/private/tmp/CMMMech-expansion-20261011/.venv/bin:$PATH UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache
+    just new-history --help; just validate-history --help; just review-check --help
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - smoke
+- check_id: dependency-links
+  name: Pinned dependency, lock and local README links
+  status: passed
+  required: true
+  summary: Python tomllib assertions confirm rust-just==1.58.0 in dev and one matching
+    lock package with16 platform wheels; installed .venv/bin/just is1.58.0. New record
+    and inventory README links resolve.
+  target_ids:
+  - development-dependencies
+  - dependency-lock
+  - workflow-readme
+  command: Python tomllib/pathlib dependency and link assertions; .venv/bin/just --version
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - dependency
+  - readme
+- check_id: full-publication
+  name: Full scientific and publication acceptance
+  status: not_applicable
+  required: false
+  summary: Publisher owns complete gates after independent record reviews; not rerun
+    as part of this bounded correction review.
+  target_ids:
+  - just-variadic-wrappers
+  - just-argv-regressions
+  - development-dependencies
+  - dependency-lock
+  - workflow-readme
+evidence:
+- evidence_id: fix
+  kind: record_content
+  reference: justfile
+  locator: new-history, validate-history and review-check recipes
+  accessed_at: '2026-10-11T04:10:05Z'
+  support: supports
+  summary: Each wrapper has [positional-arguments] and forwards "$@"; command prefixes
+    remain unchanged. No global shell setting or governed helper changed.
+- evidence_id: tests
+  kind: validation
+  reference: tests/test_just_recipes.py
+  locator: All nine parameterized cases and independent execution
+  accessed_at: '2026-10-11T04:10:05Z'
+  support: supports
+  summary: Tests require real just, copy maintained recipes, intercept uv with a JSON
+    argv recorder, and cover empty argument lists; multiword text; literal $(), backticks,
+    variables and glob; empty strings, quotes, newlines and tabs. They assert exact
+    argv and absence of benign substitution-marker files. Nine passed; ruff and diff
+    whitespace checks passed.
+- evidence_id: dependency
+  kind: record_content
+  reference: pyproject.toml; uv.lock; .github/workflows/validate-strict.yaml; scripts/check.py
+  locator: dev extra, rust-just lock package, CI install/gate steps, pytest invocation
+  accessed_at: '2026-10-11T04:10:05Z'
+  support: supports
+  summary: rust-just1.58.0 is pinned only in dev and locked with source/wheel hashes.
+    Existing CI installs --locked --extra dev then uv run --no-sync executes scripts/check.py,
+    which runs all pytest tests. Regression asserts just exists instead of skipping.
+- evidence_id: package-source
+  kind: authority
+  reference: https://pypi.org/project/rust-just/1.58.0/
+  locator: 'Package documentation installation table: pipx and uv entries'
+  accessed_at: '2026-10-11T04:10:05Z'
+  support: supports
+  summary: Official package page documents rust-just as the Python-distributed just
+    command and links upstream documentation. This is package identity/context, not
+    a source audit of the binary.
+- evidence_id: smoke
+  kind: validation
+  reference: Maintained just recipes executed from current worktree
+  locator: Actual --help output for all three wrappers
+  accessed_at: '2026-10-11T04:10:05Z'
+  support: supports
+  summary: new-history help exposes required summary/details/actor flags; validate-history
+    help exposes paths/repo-root/base; review-check help exposes base/require-reviews.
+    No CLI was invoked with mutating arguments.
+- evidence_id: readme
+  kind: record_content
+  reference: README.md
+  locator: Local Checks paragraph and four added/changed local links
+  accessed_at: '2026-10-11T04:10:05Z'
+  support: supports
+  summary: README explains locked development just and uv run just check; declared
+    CI test behavior matches existing workflow and scripts/check.py. Copper/nickel/tellurium/inventory
+    paths exist, but associated scientific statements are not re-reviewed here.
+- evidence_id: predecessor
+  kind: prior_review
+  reference: reviews/structured/20261011T040637Z-variadic-wrapper-review/review.yaml
+  locator: F1
+  accessed_at: '2026-10-11T04:10:05Z'
+  support: supports
+  summary: Original independent reproduction recorded a major/open finding at the
+    unchanged stable issue key. This successor retains its target and cites that exact
+    occurrence.
+assessments:
+- assessment_id: literal-forwarding
+  area: representation
+  topic: Correctness of all three native wrappers
+  outcome: supported
+  summary: Positional forwarding preserves caller argument boundaries and literal
+    contents; actual recipe regression execution passes.
+  target_ids:
+  - just-variadic-wrappers
+  evidence_ids:
+  - fix
+  - tests
+  - smoke
+- assessment_id: regression-quality
+  area: completeness
+  topic: Tests exercise user-visible failure rather than source text
+  outcome: supported
+  summary: Fake receiver plus real just captures behavior including zero-argument
+    and empty-string cases; no skip path masks missing runtime.
+  target_ids:
+  - just-argv-regressions
+  evidence_ids:
+  - tests
+- assessment_id: dependency-consistency
+  area: consistency
+  topic: Test runtime availability and locked declaration
+  outcome: supported
+  summary: Matching dev declaration and lock constrain just1.58.0; existing CI installs
+    that extra and runs all tests. No runtime library dependency added.
+  target_ids:
+  - development-dependencies
+  - dependency-lock
+  evidence_ids:
+  - dependency
+  - package-source
+- assessment_id: documentation
+  area: scope
+  topic: Workflow guidance and navigation
+  outcome: supported
+  summary: Command guidance matches declared dev dependency and CI pipeline; linked
+    new local artifact paths resolve. Scientific table claims remain separate review
+    scope.
+  target_ids:
+  - workflow-readme
+  evidence_ids:
+  - readme
+  - dependency
+findings:
+- finding_id: F1
+  issue_key: CMMMech.just-variadic-argument-preservation
+  category: representation
+  severity: major
+  status: resolved
+  certainty: confirmed
+  title: Variadic wrappers preserve exact caller arguments
+  description: All three maintained recipes now use recipe-level positional arguments
+    and quoted "$@". Independent execution of nine regression cases preserves literal
+    text, whitespace, empty strings, quotes, newlines and tabs, while sentinel files
+    prove no tested command substitutions execute. The declared locked development
+    dependency supplies just to CI and is not optional in the regression. The documentation
+    identifies uv run just for the locked environment.
+  target_ids:
+  - just-variadic-wrappers
+  field_paths:
+  - justfile:new-history *args recipe
+  - justfile:validate-history *args recipe
+  - justfile:review-check *args recipe
+  evidence_ids:
+  - fix
+  - tests
+  - dependency
+  - smoke
+  rule_id: preserve-cli-argument-boundaries
+  native_severity: major
+  normalization_reason: Systemic native-workflow error breaks the documented curation
+    path and changes user-authored evidence/history text; all affected wrappers reproduce
+    independently.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: justfile
+    role: Native command argument forwarding
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/21
+  disposition_reason: 'Inspected exact maintained fix and executed the new real-just
+    regressions independently: all nine passed. Each maintained wrapper also reached
+    its downstream CLI help. Dependency declaration, lock entry and CI installation
+    path agree. Full-corpus and remote merge checks remain separate publication gates;
+    this terminal disposition addresses the native argument-preservation defect.'
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261011T040637Z-variadic-wrapper-review
+    finding_id: F1
+actions: []
+limitations:
+- Targeted fix verification was performed locally on macOS with just1.58.0. Linux
+  execution will also be exercised by the existing Ubuntu CI gate; no Windows shell
+  compatibility claim is made.
+- Full just check, nonempty corpus validation, history/review append-only checks and
+  remote merge/cleanup remain publication gates owned by the parent agent.
+- No new criticality, mechanism, identifier or authority-inventory acceptance is established
+  by this implementation review.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261011T040637Z-variadic-wrapper-review
+  relationship: supersedes finding disposition
+tags:
+- adversarial
+- native-workflow
+- argument-fidelity
+- resolution
+```

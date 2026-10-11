@@ -1,0 +1,92 @@
+{
+  "checked_at": "2026-10-11T04:10:32.790904+00:00",
+  "reviewed_base": "76cd81d310a6ccb4cf7bdebcc61be050d0863222",
+  "scope": "Current byte coverage of all three new records; known issue21 lineage; all structured review source revisions. Working-tree attestations remain such after publication.",
+  "records": [
+    {
+      "path": "data/records/copper.yaml",
+      "sha256": "357e81e48e5a480359f485e380a26eecf8d5a125100f328d99b06c0dacaabbfc",
+      "reviews": [
+        {
+          "yaml": "reviews/structured/20261011T040915Z-copper-expansion-science/review.yaml",
+          "markdown": "reviews/structured/20261011T040915Z-copper-expansion-science/review.md",
+          "review_id": "20261011T040915Z-copper-expansion-science",
+          "verdict": "pass_with_limitations",
+          "independence": "independent"
+        }
+      ]
+    },
+    {
+      "path": "data/records/nickel.yaml",
+      "sha256": "b87ef9b7ab31d74980b5d6c57d7e74ba85a3d7860ca257cd30c0886c85aa47dc",
+      "reviews": [
+        {
+          "yaml": "reviews/structured/20261011T040430Z-nickel-expansion-independent/review.yaml",
+          "markdown": "reviews/structured/20261011T040430Z-nickel-expansion-independent/review.md",
+          "review_id": "20261011T040430Z-nickel-expansion-independent",
+          "verdict": "pass_with_limitations",
+          "independence": "independent"
+        }
+      ]
+    },
+    {
+      "path": "data/records/tellurium.yaml",
+      "sha256": "8de03e4ddd334be7f6adf1813384529600bdbab2b9b0dec6f0f394fdbab81f38",
+      "reviews": [
+        {
+          "yaml": "reviews/structured/20261011T040423Z-tellurium-expansion-science/review.yaml",
+          "markdown": "reviews/structured/20261011T040423Z-tellurium-expansion-science/review.md",
+          "review_id": "20261011T040423Z-tellurium-expansion-science",
+          "verdict": "pass_with_limitations",
+          "independence": "independent"
+        }
+      ]
+    }
+  ],
+  "workflow_finding": {
+    "issue_key": "CMMMech.just-variadic-argument-preservation",
+    "github_issue": 21,
+    "occurrences": [
+      {
+        "review_id": "20261011T040637Z-variadic-wrapper-review",
+        "finding_id": "F1",
+        "status": "open",
+        "previous_occurrences": [],
+        "yaml": "reviews/structured/20261011T040637Z-variadic-wrapper-review/review.yaml"
+      },
+      {
+        "review_id": "20261011T041005Z-variadic-wrapper-resolution",
+        "finding_id": "F1",
+        "status": "resolved",
+        "previous_occurrences": [
+          {
+            "repository": "CultureBotAI/CMMMech",
+            "review_id": "20261011T040637Z-variadic-wrapper-review",
+            "finding_id": "F1"
+          }
+        ],
+        "yaml": "reviews/structured/20261011T041005Z-variadic-wrapper-resolution/review.yaml"
+      }
+    ]
+  },
+  "review_bases": [
+    {
+      "revision": "76cd81d310a6ccb4cf7bdebcc61be050d0863222",
+      "origin_main_ancestor": true,
+      "local_tags": []
+    },
+    {
+      "revision": "c0adc2c0763e1515ed07dc712b024974d98fb342",
+      "origin_main_ancestor": false,
+      "local_tags": [
+        "review-base/cmm-source-survey-20261009"
+      ]
+    }
+  ],
+  "remote_tag_verified": {
+    "tag": "review-base/cmm-source-survey-20261009",
+    "peeled_commit": "c0adc2c0763e1515ed07dc712b024974d98fb342",
+    "tag_object": "fc4040c3abcd28f0a9cc52467e308100144ad1fd"
+  },
+  "new_provenance_tags_needed": false
+}
