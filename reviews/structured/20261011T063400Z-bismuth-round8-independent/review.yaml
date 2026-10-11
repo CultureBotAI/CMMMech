@@ -1,0 +1,389 @@
+schema_version: 1.0.0
+review_id: 20261011T063400Z-bismuth-round8-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of the bismuth expansion record
+started_at: '2026-10-11T06:29:01Z'
+finished_at: '2026-10-11T06:34:00Z'
+reviewer:
+  identity: Codex /root/cmm8_sc_pr
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: This reviewer authored Sc/Pr, not the Pb/Bi records, histories
+    or dossiers. The frozen targets were inspected before judgment; primary methods/results
+    and figure pixels, authority identifiers and counterevidence were checked independently.
+    Curator-acquired files were read directly and their successful acquisition/derived
+    hashes verified.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The elemental identity, dated US designation and Fusarium BI accumulation
+  evidence are supported. The record retains the small soluble-pool denominator, intracellular
+  localization and tentative polyphosphate association without asserting a mineral
+  phase, Bi reduction, molecular transport or industrial recovery. No actionable defect
+  in the inspected state.
+source:
+  git_revision: 5b4a463f700bceb441f7b669f58a5e60823d2841
+  state: working_tree
+  inputs:
+  - path: data/records/bismuth.yaml
+    sha256: 1df7276c9545a4cc13a9a289e3aca1bb68da4794f59034c04a625cb1f86984ea
+    role: target
+  - path: history/records/bismuth/2026-10-11T062452Z-codex-4dfe9f.yaml
+    sha256: 5ad600ae2801cc87b6a36f330c30a9a7f81d0e4c93b896e0894f8209183e5481
+    role: context
+  - path: research/ingests/round8-pb-bi-20261011.json
+    sha256: 881f45c216d6b2956d2d1103f4fd80ce80b8a9c79996d3cbf028095d00c139e6
+    role: context
+  - path: research/ingests/round8-pb-bi-20261011.md
+    sha256: fb5e7151feee06771cb3c216e4fe792ec6ca918cdf8f654d64919282e1c97b1a
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+targets:
+- target_id: cmmmech:bismuth
+  path: data/records/bismuth.yaml
+  label: Bismuth
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/bismuth.yaml
+    role: maintained_record
+scope:
+  description: All scientific and provenance fields of the frozen bismuth record,
+    with dated criticality, primary methods/controls, figures, numerical denominators,
+    identity and uncertainty.
+  selection: Assigned named record, no sampling. Companion record is context only.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:bismuth
+checks:
+- check_id: record
+  name: Reviewer-executed named-record validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/lead.yaml data/records/bismuth.yaml
+  status: passed
+  required: true
+  summary: 'Terminal session 23819 exited 0: 2 records checked, 0 failed.'
+  target_ids:
+  - cmmmech:bismuth
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: batch
+  name: Parent-executed full native batch gate
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  status: passed
+  required: true
+  summary: 'Parent supplied terminal exit 0. Reviewer read /private/tmp/cmm-round8-batch.log
+    in full: lint passed, 307 tests passed, 3 skipped in 46.87 seconds; 48 records
+    valid and 58 histories valid.'
+  target_ids:
+  - cmmmech:bismuth
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: nonempty
+  name: Parent-executed nonempty corpus validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: 'Parent supplied separate terminal exit 0; reviewer read /private/tmp/cmm-round8-corpus.log:
+    48 records checked, 0 failed.'
+  target_ids:
+  - cmmmech:bismuth
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: history
+  name: Parent-executed trusted-base history validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate-history --base 5b4a463f700bceb441f7b669f58a5e60823d2841
+  status: passed
+  required: true
+  summary: 'Parent supplied separate terminal exit 0; reviewer read /private/tmp/cmm-round8-history.log:
+    58 histories checked, 0 errors. Reviewer also read the actual linked sidecar and
+    distinct inline event.'
+  target_ids:
+  - cmmmech:bismuth
+  exit_code: 0
+  expected_exit_code: 0
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/bismuth.yaml
+  locator: Entire frozen record; linked CREATE history; frozen Markdown/JSON dossier
+  accessed_at: '2026-10-11T06:34:00Z'
+  support: supports
+  summary: Exact record, target ownership, source inputs and distinct inline/canonical
+    provenance inspected; no edits by this reviewer.
+  snapshot_sha256: 1df7276c9545a4cc13a9a289e3aca1bb68da4794f59034c04a625cb1f86984ea
+- evidence_id: identity
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:33301
+  locator: Live official ChEBI ID, name, formula and charge
+  accessed_at: '2026-10-11T06:34:00Z'
+  support: supports
+  summary: Neutral Bi atom identifier is correct; it is not a mineral, ion, compound
+    or secondary-resource identifier.
+- evidence_id: criticality
+  kind: authority
+  reference: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  locator: Final 2025 List, Bismuth row and table heading; FR 90:50494-50497
+  accessed_at: '2026-10-11T06:34:00Z'
+  support: supports
+  summary: Live authority and retained HTML independently checked. United States,
+    U.S. Department of the Interior/USGS, 2025 final list published 7 November 2025
+    explicitly names the commodity. The neighboring Yes/No denotes byproduct/co-product
+    occurrence, not criticality.
+  snapshot_sha256: 0d3527a735c3fa04765a98d3b9140af0c221e5fd7706b96329b5c7d900591f7e
+- evidence_id: validation
+  kind: validation
+  reference: /private/tmp/cmm-round8-batch.log
+  locator: Entire batch log plus separate nonempty-corpus and trusted-base history
+    receipts
+  accessed_at: '2026-10-11T06:34:00Z'
+  support: supports
+  summary: Parent-executed gates passed; reviewer read all three full logs and independently
+    validated the two named records. Every inspected maintained input still matches
+    its captured hash.
+  snapshot_sha256: a143a8808e0b322d1a9d95769a824de04bd1f8721483d97d6d69efc07bba081b
+- evidence_id: search
+  kind: search
+  reference: Live web search and rg --no-ignore --hidden
+  locator: First web result sets; specified scientific repository trees and retained
+    raw directory
+  accessed_at: '2026-10-11T06:34:00Z'
+  support: context_only
+  summary: No actionable correction/retraction or duplicate accepted element root
+    surfaced in this bounded review search. This is not exhaustive literature coverage.
+  search_scope: 'Queries: "10.1007/s11356-013-1968-3" correction OR retraction OR
+    corrigendum; "10.1128/AEM.71.2.876-882.2005" correction OR retraction OR polyphosphate;
+    Fusarium BI bismuth intracellular accumulation polyphosphate mechanism contradictory.
+    No date/domain filters and no pagination. Hidden/ignored-inclusive rg over data,
+    research, history, reviews, .claude, docs, tests and src searched root IDs and
+    DOI tokens; retained raw TXT/XML/HTML/JSON files searched DOI, accession and ChEBI
+    tokens. An initial .codex operand was unavailable; repeated search used the listed
+    existing trees. No machine-wide absence claim.'
+- evidence_id: taxon
+  kind: database
+  reference: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/292829/dataset_report
+  locator: Retained official taxonomy response and exact scientific name
+  accessed_at: '2026-10-11T06:34:00Z'
+  support: supports
+  summary: NCBITaxon:292829 resolves informal Fusarium sp. BI. A species-rank taxonomy
+    node does not turn the unresolved isolate into a named Fusarium species. Live
+    endpoint attempts failed in this reviewer session; retained official response
+    was read and hashed.
+  snapshot_sha256: 84db02244ba58ef93266f358ac5ff39f81bc29f0f11065740d0c714a48aefb9c
+- evidence_id: accession
+  kind: database
+  reference: https://www.ebi.ac.uk/ena/browser/view/AY725264.1
+  locator: Retained ENA/INSDC flat file ID/SV, source qualifiers and publication references
+  accessed_at: '2026-10-11T06:34:00Z'
+  support: supports
+  summary: AY725264 sequence version 1 is a 1051 bp partial 18S rRNA sequence, source
+    sewage sludge enriched on bismuth subsalicylate, taxon 292829. DOI and PMID match
+    Dodge and Wackett. ENA live browser/API opens failed; retained authority bytes
+    were independently inspected.
+  snapshot_sha256: b13c039dee06cdd7e0346842fac3e700c9a375fd5af5eaf986baebd642b494b8
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1128/AEM.71.2.876-882.2005
+  locator: Complete retained primary HTML methods/results/discussion; Figures 2-4
+    and Table 1
+  accessed_at: '2026-10-11T06:34:00Z'
+  support: supports
+  summary: Independent full-text inspection supports laboratory accumulation and tentative
+    polyphosphate association. Experimental preparation, dissolved-pool filtering,
+    TEM-EDS limits and polyphosphate extraction differ; no closed whole-feed mass
+    balance or Bi oxidation-state assay is reported.
+  snapshot_sha256: 4dd819a258270df192e571e266e9ee7629eb179cbad5b151892938b57e698ec6
+- evidence_id: figures
+  kind: primary_source
+  reference: https://doi.org/10.1128/AEM.71.2.876-882.2005
+  locator: Original Figure 2 soluble time-course, Figure 3 TEM-EDS and Figure 4 Bi/phosphate
+    fraction bars, all visually inspected
+  accessed_at: '2026-10-11T06:34:00Z'
+  support: supports
+  summary: Figure 2 shows inoculated depletion and uninoculated increase, with no
+    error bars. Figure 3 shows intracellular electron-dense granules and Bi/P spectrum;
+    Figure 4 has stronger long-chain/granular association with broad error bars. Source
+    approximate 75% refers to soluble pool; no graph digitization used.
+- evidence_id: limits
+  kind: primary_source
+  reference: https://doi.org/10.1128/AEM.71.2.876-882.2005
+  locator: 'Methods and Results: Localization, Polyphosphate isolation, Depletion
+    and Degradation of salicylate moiety'
+  accessed_at: '2026-10-11T06:34:00Z'
+  support: partial
+  summary: EDS beam includes surrounding material; phosphate-rich extract association
+    is not a solved molecular structure. The study lacks oxidation-state discrimination.
+    Organic salicylate catabolism and separate nitrate tolerance assays are not a
+    Bi reductase or recovery test.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Element, dated commodity and exact informal isolate
+  outcome: supported
+  summary: The record resolves element and isolate identifiers without importing a
+    named Fusarium species or a phosphate mineral identity.
+  target_ids:
+  - cmmmech:bismuth
+  evidence_ids:
+  - record
+  - identity
+  - criticality
+  - taxon
+  - accession
+  dimensions:
+  - name: material
+    value: Element Bi; bismuth subsalicylate, filtered soluble Bi and intracellular
+      Bi-bearing granules remain distinct.
+    definition: Evidence-bounded scope and analytical interpretation of this record.
+    evidence_ids:
+    - record
+    - primary
+  - name: criticality
+    value: United States; U.S. Department of the Interior Final List of Critical Minerals;
+      final 2025 edition published 7 November 2025.
+    definition: Evidence-bounded scope and analytical interpretation of this record.
+    evidence_ids:
+    - criticality
+  - name: organism
+    value: Fusarium sp. BI from activated sewage sludge; unresolved named species,
+      exact informal NCBI node and partial 18S accession verified.
+    definition: Evidence-bounded scope and analytical interpretation of this record.
+    evidence_ids:
+    - taxon
+    - accession
+    - primary
+- assessment_id: mechanism
+  area: evidence
+  topic: Accumulation, controls and provisional chemical association
+  outcome: supported
+  summary: Intracellular Bi accumulation is supported; polyphosphate complexing and
+    transport remain tentative.
+  target_ids:
+  - cmmmech:bismuth
+  evidence_ids:
+  - record
+  - primary
+  - figures
+  - limits
+  dimensions:
+  - name: biomass
+    value: Growing fungal cultures; separately washed 96 h biomass for 60 nm TEM sections
+      and 0.4 g wet 72 h biomass for polyphosphate fractionation.
+    definition: Evidence-bounded scope and analytical interpretation of this record.
+    evidence_ids:
+    - primary
+  - name: substrate_pretreatment
+    value: 1.5 mM bismuth subsalicylate suspension preincubated 24 h, then 100 microlitres
+      of 48 h salicylate culture inoculum.
+    definition: Evidence-bounded scope and analytical interpretation of this record.
+    evidence_ids:
+    - primary
+  - name: conditions
+    value: 250 mL minimal medium, 15 mM potassium phosphate pH 7.0, salts/vitamins,
+      shaker at 30 C; six-day daily sampling.
+    definition: Evidence-bounded scope and analytical interpretation of this record.
+    evidence_ids:
+    - primary
+  - name: controls
+    value: Uninoculated suspension for soluble Bi; salicylate-grown biomass for TEM-EDS
+      and fractionation. Time-course replication unspecified; Figure 4 has three replicates
+      without independently established culture replication.
+    definition: Evidence-bounded scope and analytical interpretation of this record.
+    evidence_ids:
+    - primary
+    - figures
+    - limits
+  - name: deployment
+    value: Laboratory reagent suspension; no industrial system, isolated-product yield
+      or ore/waste feed.
+    definition: Evidence-bounded scope and analytical interpretation of this record.
+    evidence_ids:
+    - primary
+    - record
+- assessment_id: outcomes
+  area: quantity
+  topic: Filtered-pool denominator and localization evidence
+  outcome: supported
+  summary: Source approximate soluble decline is correctly scoped; localization and
+    co-fractionation do not establish a phase or redox change.
+  target_ids:
+  - cmmmech:bismuth
+  evidence_ids:
+  - record
+  - primary
+  - figures
+  - limits
+  dimensions:
+  - name: analytical_denominator
+    value: Daily 0.2 micrometre PES filtrates acidified for ICP-OES, yttrium internal
+      standard; about 0.4 mg/L soluble decline versus 0.2 mg/L control increase. Source
+      about 75% is of initial soluble pool, not total 1.5 mM suspended feed.
+    definition: Evidence-bounded scope and analytical interpretation of this record.
+    evidence_ids:
+    - primary
+    - figures
+  - name: localization
+    value: Bi/P with other elements in cytoplasmic/vacuolar granules; EDS beam exceeds
+      granule diameter; salicylate controls have no detected Bi. Extracellular feed-like
+      Bi remains.
+    definition: Evidence-bounded scope and analytical interpretation of this record.
+    evidence_ids:
+    - primary
+    - figures
+    - limits
+  - name: association
+    value: Long-chain/granular fraction Bi relative to phosphate after hydrolysis
+      is greater than short-chain/control fractions; neither stoichiometric Bi-polyphosphate
+      structure nor causal tolerance mechanism is shown.
+    definition: Evidence-bounded scope and analytical interpretation of this record.
+    evidence_ids:
+    - primary
+    - figures
+    - limits
+- assessment_id: provenance
+  area: provenance
+  topic: Canonical CREATE and exact reviewed bytes
+  outcome: supported
+  summary: The actual codex/GPT-6/codex CREATE sidecar and distinct inline event correctly
+    describe this new record. Frozen input hashes still match and trusted-base history
+    validation passed.
+  target_ids:
+  - cmmmech:bismuth
+  evidence_ids:
+  - record
+  - validation
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- Filtered-solution depletion is a small-pool measurement; no closed balance of suspended
+  feed, dissolved Bi and biomass or isolated-product yield is available.
+- TEM-EDS and co-fractionation support association but do not identify a crystalline
+  phase, Bi oxidation-state change, transport protein or causal polyphosphate tolerance
+  mechanism.
+- Time-course replication is unspecified; three fractionation replicates are not clearly
+  independent biological cultures.
+- ENA and NCBI live opens failed during review. Identity verification uses curator-retained
+  official responses whose source, content and hashes were independently checked.
+- The retained files named dodge2005.pdf and dodge2005-correct.pdf are HTML, not PDFs;
+  review used the actual full HTML and figure images. No PDF inspection is claimed.
+- Correction/counterevidence and duplicate searches are bounded by the stated scope;
+  no exhaustive absence claim or guarantee about all literature is made.
+notes:
+- Initial two-target inspect was captured at 2026-10-11T06:29:01Z before scientific
+  judgment; subsequent per-record inspect added its linked history. Failed preliminary
+  per-record calls used a list instead of the required targets mapping, were corrected,
+  and both actual inspections then exited 0.
+- No record, history or dossier edits were made by this independent reviewer. Successful
+  raw acquisition hashes (25 files) and derived artifacts (9) match the dossier; three
+  explicit failed requests are correctly recorded as failures, not acquired evidence.
+- Primary literature remains outside Git. Parent executed shared batch gates; the
+  reviewer independently read complete receipts and ran affected named validation.

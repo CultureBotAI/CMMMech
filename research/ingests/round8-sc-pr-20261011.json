@@ -1,0 +1,721 @@
+{
+  "created_at": "2026-10-11T06:28:19Z",
+  "base_revision": "5b4a463f700bceb441f7b669f58a5e60823d2841",
+  "worktree": "/private/tmp/CMMMech-expansion-round8-20261011",
+  "branch": "curate/cmm-expansion-round8-20261011",
+  "scope": "Elemental Sc and Pr, separate cell-free bacterial protein separation experiments.",
+  "records": [
+    {
+      "id": "cmmmech:scandium",
+      "path": "data/records/scandium.yaml",
+      "sha256": "bdc21ed9d82ee8451c5d7a6d40122dd728bfe1efeb7a5d05756040e8ea364219",
+      "history_paths": [
+        "history/records/scandium/2026-10-11T062653Z-codex-38b6bd.yaml"
+      ]
+    },
+    {
+      "id": "cmmmech:praseodymium",
+      "path": "data/records/praseodymium.yaml",
+      "sha256": "9d949294a5b3f0ad5cf976b71dc4ddfe8cc93c7321d2e48126b11f7fb1c26049",
+      "history_paths": [
+        "history/records/praseodymium/2026-10-11T062656Z-codex-5084e0.yaml"
+      ]
+    }
+  ],
+  "search": {
+    "provider": "web search tool",
+    "checked_on": "2026-10-11",
+    "queries": [
+      "\"Bridging Hydrometallurgy and Biochemistry\" full text",
+      "\"Protein-based approach for high-purity\" scandium",
+      "scandium CHEBI praseodymium CHEBI",
+      "\"Protein-based approach\" \"125919\" osti",
+      "\"Bridging Hydrometallurgy\" PMC",
+      "\"10.1016/j.seppur.2023.125919\" correction OR corrigendum OR retraction",
+      "\"lanmodulin\" \"praseodymium\" separation control",
+      "\"Methylorubrum extorquens AM1\" NCBI taxonomy",
+      "\"WP_170868125.1\" \"13MFTsu3.1M2\"",
+      "\"13MFTsu3.1M2\" \"Taxonomy\"",
+      "\"10.1038/s41589-026-02176-3\" correction retraction",
+      "\"10.1016/j.seppur.2023.125919\" corrigendum"
+    ],
+    "filters": "Default returned result sets; no date restriction or added pagination. Followed primary publisher, Europe PMC, OSTI and authoritative identifier routes.",
+    "local": "rg --no-ignore --hidden, with relevant symlink inventory and -L for cited downloads; data/records, research, reviews, history and .claude. Cited /private/tmp/cmm-next-eu, /private/tmp/cmm-expansion-authorities-20261011 and this task raw directory.",
+    "bounds": "Hidden and ignored files included within these surfaces. No relevant scientific-tree symlinks observed. Unrelated home/temp trees excluded. Exact ancestor AGENTS.md paths also checked.",
+    "outcome": "Before curation, candidate/list mentions but no existing Sc/Pr root or accepted matching experiment found in bounded scientific trees. No correction or retraction identified in returned results or Crossref update/relation fields; this is not an exhaustive literature claim."
+  },
+  "acquisitions": [
+    {
+      "filename": "osti2024.pdf",
+      "url": "https://www.osti.gov/servlets/purl/2315086",
+      "accessed_at": "2026-10-11T06:21:11.339596+00:00",
+      "status": 200,
+      "content_type": "application/pdf",
+      "final_url": "https://www.osti.gov/servlets/purl/2315086",
+      "bytes": 2473934,
+      "sha256": "08db3f1433eb76fdc5bcbbe4fed096f11a42f2f1e513a7e3e234a1e359c7b4a2",
+      "magic": "b'%PDF-1.4\\n%\\xe2\\xe3\\xcf\\xd3\\n2 0 obj\\n<</Filt'",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-additional.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/osti2024.pdf",
+      "accepted_artifact": true,
+      "content_check": "Expected primary article, source workbook, authority entry or metadata inspected; magic and parser checks performed."
+    },
+    {
+      "filename": "dong2021-supp.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8614107/supplementaryFiles",
+      "accessed_at": "2026-10-11T06:21:15.945598+00:00",
+      "error": "The read operation timed out",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-additional.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/dong2021-supp.zip",
+      "accepted_artifact": false,
+      "content_check": "Failed request; no article evidence inferred from this route."
+    },
+    {
+      "filename": "crossref2024.json",
+      "url": "https://api.crossref.org/works/10.1016/j.seppur.2023.125919",
+      "accessed_at": "2026-10-11T06:22:11.434791+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "final_url": "https://api.crossref.org/works/10.1016/j.seppur.2023.125919",
+      "bytes": 32524,
+      "sha256": "156ef5f2ccb2646f1cd4b347f7743e1bfc6da72c15c134a0113e80ab46766239",
+      "magic": "b'{\"status\":\"ok\",\"message-type\":'",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-additional.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/crossref2024.json",
+      "accepted_artifact": true,
+      "content_check": "Expected primary article, source workbook, authority entry or metadata inspected; magic and parser checks performed."
+    },
+    {
+      "filename": "diep2026.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13128445/fullTextXML",
+      "accessed_at": "2026-10-11T06:22:33.139650+00:00",
+      "status": 200,
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13128445/fullTextXML",
+      "bytes": 204592,
+      "sha256": "404b747ef072404b640a78cd81e77291d616d484afb824b903e5c12c9e061938",
+      "magic": "b'\\n<!DOCTYPE article\\n  PUBLIC \"-'",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-diep.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026.xml",
+      "accepted_artifact": true,
+      "content_check": "Expected primary article, source workbook, authority entry or metadata inspected; magic and parser checks performed."
+    },
+    {
+      "filename": "taxon-am1.html",
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=272630",
+      "accessed_at": "2026-10-11T06:22:34.619571+00:00",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=272630",
+      "bytes": 28129,
+      "sha256": "626aea5ea7724ef9b86dc825937e1f819193b46ff0433cc2b9979cf8391117b0",
+      "magic": "b'<!doctype html>\\r\\n<html>\\r\\n\\r\\n<!-'",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-diep.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/taxon-am1.html",
+      "accepted_artifact": true,
+      "content_check": "Expected primary article, source workbook, authority entry or metadata inspected; magic and parser checks performed."
+    },
+    {
+      "filename": "dong2021-supp.pdf",
+      "url": "https://pubs.acs.org/doi/suppl/10.1021/acscentsci.1c00724/suppl_file/oc1c00724_si_001.pdf",
+      "accessed_at": "2026-10-11T06:22:34.931054+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-diep.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/dong2021-supp.pdf",
+      "accepted_artifact": false,
+      "content_check": "Failed request; no article evidence inferred from this route."
+    },
+    {
+      "filename": "melba-protein.gp",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=WP_170868125.1&rettype=gp&retmode=text",
+      "accessed_at": "2026-10-11T06:25:19.217511+00:00",
+      "status": 200,
+      "content_type": "text/plain",
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=WP_170868125.1&rettype=gp&retmode=text",
+      "bytes": 2606,
+      "sha256": "3f90d06e75c398a5d0629810d823661f4b720ab8a4b92952fd9ede3f283d91b8",
+      "magic": "b'LOCUS       WP_170868125      '",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-final.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/melba-protein.gp",
+      "accepted_artifact": true,
+      "content_check": "Expected primary article, source workbook, authority entry or metadata inspected; magic and parser checks performed."
+    },
+    {
+      "filename": "crossref2026.json",
+      "url": "https://api.crossref.org/works/10.1038/s41589-026-02176-3",
+      "accessed_at": "2026-10-11T06:25:19.608836+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "final_url": "https://api.crossref.org/works/10.1038/s41589-026-02176-3",
+      "bytes": 23550,
+      "sha256": "05f1f5213b4981ba586e4392d66042f39d18c51d6ec88dda3521cd35f5e82043",
+      "magic": "b'{\"status\":\"ok\",\"message-type\":'",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-final.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/crossref2026.json",
+      "accepted_artifact": true,
+      "content_check": "Expected primary article, source workbook, authority entry or metadata inspected; magic and parser checks performed."
+    },
+    {
+      "filename": "osti2024.pdf",
+      "url": "https://www.osti.gov/pages/servlets/purl/2315086",
+      "accessed_at": "2026-10-11T06:20:13.635839+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-initial.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/osti2024.pdf",
+      "accepted_artifact": false,
+      "content_check": "Failed request; no article evidence inferred from this route."
+    },
+    {
+      "filename": "dong2021.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8614107/fullTextXML",
+      "accessed_at": "2026-10-11T06:20:13.764796+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-initial.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/dong2021.xml",
+      "accepted_artifact": false,
+      "content_check": "Failed request; no article evidence inferred from this route."
+    },
+    {
+      "filename": "osti-api.json",
+      "url": "https://www.osti.gov/api/v1/records?search=10.1016%2Fj.seppur.2023.125919",
+      "accessed_at": "2026-10-11T06:20:13.765907+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-initial.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/osti-api.json",
+      "accepted_artifact": false,
+      "content_check": "Actual content is XML, despite the local .json suffix; parsed as XML."
+    },
+    {
+      "filename": "chebi-pr.html",
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:49828",
+      "accessed_at": "2026-10-11T06:20:13.766933+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-initial.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/chebi-pr.html",
+      "accepted_artifact": false,
+      "content_check": "Failed request; no article evidence inferred from this route."
+    },
+    {
+      "filename": "usgs2025.html",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm",
+      "accessed_at": "2026-10-11T06:20:13.768519+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-initial.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/usgs2025.html",
+      "accepted_artifact": false,
+      "content_check": "Failed request; no article evidence inferred from this route."
+    },
+    {
+      "filename": "osti2024.pdf",
+      "url": "https://www.osti.gov/pages/servlets/purl/2315086",
+      "accessed_at": "2026-10-11T06:20:40.586551+00:00",
+      "error": "<urlopen error [Errno 54] Connection reset by peer>",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-live.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/osti2024.pdf",
+      "accepted_artifact": false,
+      "content_check": "Failed request; no article evidence inferred from this route."
+    },
+    {
+      "filename": "dong2021.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8614107/fullTextXML",
+      "accessed_at": "2026-10-11T06:20:44.917851+00:00",
+      "status": 200,
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8614107/fullTextXML",
+      "bytes": 121728,
+      "sha256": "e5badfa6f3f7624cbf0584ac14565b82a2c5d0405fe433ce69eb3ff997231eeb",
+      "magic": "b'\\n<!DOCTYPE article\\n  PUBLIC \"-'",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-live.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/dong2021.xml",
+      "accepted_artifact": true,
+      "content_check": "Expected primary article, source workbook, authority entry or metadata inspected; magic and parser checks performed."
+    },
+    {
+      "filename": "osti-api.json",
+      "url": "https://www.osti.gov/api/v1/records?search=10.1016%2Fj.seppur.2023.125919",
+      "accessed_at": "2026-10-11T06:20:46.116186+00:00",
+      "status": 200,
+      "content_type": "application/xml",
+      "final_url": "https://www.osti.gov/api/v1/records?search=10.1016%2Fj.seppur.2023.125919",
+      "bytes": 4525,
+      "sha256": "abeb5faf603c074c67208d9c83efc17085fd5d646e3eb0450560de712acc1cbf",
+      "magic": "b'<?xml version=\"1.0\" encoding=\"'",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-live.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/osti-api.json",
+      "accepted_artifact": true,
+      "content_check": "Actual content is XML, despite the local .json suffix; parsed as XML."
+    },
+    {
+      "filename": "chebi-pr.html",
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:49828",
+      "accessed_at": "2026-10-11T06:20:48.673932+00:00",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "final_url": "https://www.ebi.ac.uk/chebi/CHEBI:49828",
+      "bytes": 824218,
+      "sha256": "fb65a54b4b864676f54988028209b57edcbd491dd8ac64848bd02a35294622f2",
+      "magic": "b'<!DOCTYPE html>\\n<html >\\n<head>'",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-live.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/chebi-pr.html",
+      "accepted_artifact": true,
+      "content_check": "Expected primary article, source workbook, authority entry or metadata inspected; magic and parser checks performed."
+    },
+    {
+      "filename": "chebi-sc.html",
+      "url": "https://www.ebi.ac.uk/chebi/CHEBI:33330",
+      "accessed_at": "2026-10-11T06:20:51.501497+00:00",
+      "status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "final_url": "https://www.ebi.ac.uk/chebi/CHEBI:33330",
+      "bytes": 824657,
+      "sha256": "0df7a79b49898755367bdb82fdc45b2a7cd14741147f09b3a8b4ddc860ac4ff8",
+      "magic": "b'<!DOCTYPE html>\\n<html >\\n<head>'",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-live.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/chebi-sc.html",
+      "accepted_artifact": true,
+      "content_check": "Expected primary article, source workbook, authority entry or metadata inspected; magic and parser checks performed."
+    },
+    {
+      "filename": "usgs2025.html",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm",
+      "accessed_at": "2026-10-11T06:20:54.508919+00:00",
+      "status": 200,
+      "content_type": "text/html",
+      "final_url": "https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm",
+      "bytes": 21581,
+      "sha256": "97b6f5440681b1794d1d438ed87afa57c706778440e3775f16d2fd742975b4c5",
+      "magic": "b'<html>\\n<head>\\n<title>Federal R'",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-live.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/usgs2025.html",
+      "accepted_artifact": true,
+      "content_check": "Expected primary article, source workbook, authority entry or metadata inspected; magic and parser checks performed."
+    },
+    {
+      "filename": "taxon-melba.html",
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1502776",
+      "accessed_at": "2026-10-11T06:26:31.624275+00:00",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1502776",
+      "bytes": 23263,
+      "sha256": "0133157a029025e31572407cc67d1d3192ebff0d731bace6cbfcdb9e5b044b88",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-melba-taxon.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/taxon-melba.html",
+      "accepted_artifact": true,
+      "content_check": "Expected primary article, source workbook, authority entry or metadata inspected; magic and parser checks performed."
+    },
+    {
+      "filename": "diep2026-supp.pdf",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41589-026-02176-3/MediaObjects/41589_2026_2176_MOESM1_ESM.pdf",
+      "accessed_at": "2026-10-11T06:23:45.516673+00:00",
+      "status": 200,
+      "content_type": "application/pdf",
+      "final_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41589-026-02176-3/MediaObjects/41589_2026_2176_MOESM1_ESM.pdf",
+      "bytes": 5811115,
+      "sha256": "2f52bd9b5367c56d69071e2077e25f1191bb5d31c6ec4e2b23606de1ff7ab56d",
+      "magic": "b'%PDF-1.7\\r%\\xe2\\xe3\\xcf\\xd3\\r\\n198 0 obj\\r<</L'",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-springer-alternate.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026-supp.pdf",
+      "accepted_artifact": true,
+      "content_check": "Expected primary article, source workbook, authority entry or metadata inspected; magic and parser checks performed."
+    },
+    {
+      "filename": "diep2026-data1.xlsx",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41589-026-02176-3/MediaObjects/41589_2026_2176_MOESM3_ESM.xlsx",
+      "accessed_at": "2026-10-11T06:23:47.941894+00:00",
+      "status": 200,
+      "content_type": "application/octet-stream",
+      "final_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41589-026-02176-3/MediaObjects/41589_2026_2176_MOESM3_ESM.xlsx",
+      "bytes": 594713,
+      "sha256": "391933234dcf5d3862de958da88afd46fe0f6a8bcb8e3fb1a22640bf976a99f1",
+      "magic": "b'PK\\x03\\x04\\x14\\x00\\x06\\x00\\x08\\x00\\x00\\x00!\\x00\\x12\\x18\\xde\\xddd\\x01\\x00\\x00\\x18\\x05\\x00\\x00\\x13\\x00\\x08\\x02'",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-springer-alternate.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026-data1.xlsx",
+      "accepted_artifact": true,
+      "content_check": "Expected primary article, source workbook, authority entry or metadata inspected; magic and parser checks performed."
+    },
+    {
+      "filename": "diep2026-fig6.xlsx",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41589-026-02176-3/MediaObjects/41589_2026_2176_MOESM7_ESM.xlsx",
+      "accessed_at": "2026-10-11T06:23:49.279398+00:00",
+      "status": 200,
+      "content_type": "application/octet-stream",
+      "final_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41589-026-02176-3/MediaObjects/41589_2026_2176_MOESM7_ESM.xlsx",
+      "bytes": 66764,
+      "sha256": "21cd055cd46191a02b60ccc39fa28d6020531f4d576ecd116d1868688699ca5e",
+      "magic": "b'PK\\x03\\x04\\x14\\x00\\x06\\x00\\x08\\x00\\x00\\x00!\\x00T\\x98lY\\x85\\x01\\x00\\x00Y\\t\\x00\\x00\\x13\\x00\\x08\\x02'",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-springer-alternate.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026-fig6.xlsx",
+      "accepted_artifact": true,
+      "content_check": "Expected primary article, source workbook, authority entry or metadata inspected; magic and parser checks performed."
+    },
+    {
+      "filename": "diep2026-edfig8.xlsx",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41589-026-02176-3/MediaObjects/41589_2026_2176_MOESM11_ESM.xlsx",
+      "accessed_at": "2026-10-11T06:23:50.047472+00:00",
+      "status": 200,
+      "content_type": "application/octet-stream",
+      "final_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41589-026-02176-3/MediaObjects/41589_2026_2176_MOESM11_ESM.xlsx",
+      "bytes": 22837,
+      "sha256": "412cec2cd46331a945eacefaf55013227aab089c55b57f17bac012b980392718",
+      "magic": "b'PK\\x03\\x04\\x14\\x00\\x06\\x00\\x08\\x00\\x00\\x00!\\x00Js\\xd2\\xd8m\\x01\\x00\\x00(\\x06\\x00\\x00\\x13\\x00\\x08\\x02'",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-springer-alternate.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026-edfig8.xlsx",
+      "accepted_artifact": true,
+      "content_check": "Expected primary article, source workbook, authority entry or metadata inspected; magic and parser checks performed."
+    },
+    {
+      "filename": "diep2026.pdf",
+      "url": "https://www.nature.com/articles/s41589-026-02176-3.pdf",
+      "accessed_at": "2026-10-11T06:23:50.667983+00:00",
+      "status": 200,
+      "content_type": "application/pdf",
+      "final_url": "https://www.nature.com/articles/s41589-026-02176-3.pdf?error=cookies_not_supported&code=3d9f76a1-cc31-44c4-b8ca-82d4c5ab3719",
+      "bytes": 10500688,
+      "sha256": "5b6141b0cf52d09c473b0f594afc65f3c94cbe0dd391f531dd3a0a455aa3eacf",
+      "magic": "b'%PDF-1.4\\r%\\xe2\\xe3\\xcf\\xd3\\r\\n2385 0 obj\\r<</'",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-springer-alternate.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026.pdf",
+      "accepted_artifact": true,
+      "content_check": "Expected primary article, source workbook, authority entry or metadata inspected; magic and parser checks performed."
+    },
+    {
+      "filename": "diep2026-supp.pdf",
+      "url": "https://static-content.springer-cdn.com/esm/art%3A10.1038%2Fs41589-026-02176-3/MediaObjects/41589_2026_2176_MOESM1_ESM.pdf",
+      "accessed_at": "2026-10-11T06:23:13.558238+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-supplements.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026-supp.pdf",
+      "accepted_artifact": false,
+      "content_check": "Failed request; no article evidence inferred from this route."
+    },
+    {
+      "filename": "diep2026-data1.xlsx",
+      "url": "https://static-content.springer-cdn.com/esm/art%3A10.1038%2Fs41589-026-02176-3/MediaObjects/41589_2026_2176_MOESM3_ESM.xlsx",
+      "accessed_at": "2026-10-11T06:23:13.599634+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-supplements.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026-data1.xlsx",
+      "accepted_artifact": false,
+      "content_check": "Failed request; no article evidence inferred from this route."
+    },
+    {
+      "filename": "diep2026-fig6.xlsx",
+      "url": "https://static-content.springer-cdn.com/esm/art%3A10.1038%2Fs41589-026-02176-3/MediaObjects/41589_2026_2176_MOESM7_ESM.xlsx",
+      "accessed_at": "2026-10-11T06:23:13.601550+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-supplements.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026-fig6.xlsx",
+      "accepted_artifact": false,
+      "content_check": "Failed request; no article evidence inferred from this route."
+    },
+    {
+      "filename": "diep2026-edfig8.xlsx",
+      "url": "https://static-content.springer-cdn.com/esm/art%3A10.1038%2Fs41589-026-02176-3/MediaObjects/41589_2026_2176_MOESM11_ESM.xlsx",
+      "accessed_at": "2026-10-11T06:23:13.603478+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-supplements.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026-edfig8.xlsx",
+      "accepted_artifact": false,
+      "content_check": "Failed request; no article evidence inferred from this route."
+    },
+    {
+      "filename": "dong2021-supp-retry.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8614107/supplementaryFiles",
+      "accessed_at": "2026-10-11T06:23:13.605279+00:00",
+      "status": 200,
+      "content_type": "application/zip",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8614107/supplementaryFiles",
+      "bytes": 2030618,
+      "sha256": "dfd25766318960d626784cd0d2c1bed8922ba08da06624e25f0faa102e38b4fc",
+      "magic": "b'PK\\x03\\x04\\x14\\x00\\x08\\x08\\x08\\x00\\xe7:K]\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x12\\x00\\x00\\x00'",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-supplements.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/dong2021-supp-retry.zip",
+      "accepted_artifact": true,
+      "content_check": "Expected primary article, source workbook, authority entry or metadata inspected; magic and parser checks performed."
+    },
+    {
+      "filename": "taxon-extorquens.html",
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=408",
+      "accessed_at": "2026-10-11T06:23:38.229522+00:00",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=408",
+      "bytes": 20808,
+      "sha256": "bb25421a7f1f67e7520fce3beb1f3cbb7ea34db236d04d7a109adbaced92aa62",
+      "magic": "b'<!doctype html>\\r\\n<html>\\r\\n\\r\\n<!-'",
+      "receipt_file": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-supplements.json",
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/taxon-extorquens.html",
+      "accepted_artifact": true,
+      "content_check": "Expected primary article, source workbook, authority entry or metadata inspected; magic and parser checks performed."
+    }
+  ],
+  "raw_and_derived_files": [
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-additional.json",
+      "sha256": "bc4fb1c36364d798bc8ba4f306874b64980a9608d37a3d302e6438c84412f9fa",
+      "bytes": 1161
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-diep.json",
+      "sha256": "f1cd8a97d872abe67a05913d6fb37197270e3b802335eb581af554628ce79c06",
+      "bytes": 1236
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-final.json",
+      "sha256": "01d0caaddea2125ee020990ae65b7827e03ddb995f9a0195aa3df392458b402a",
+      "bytes": 1029
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-initial.json",
+      "sha256": "a3d2cf08d61a3a09888c78bc60c15fe96a1cd0d4d799835ae6213a25cf0352f4",
+      "bytes": 1291
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-live.json",
+      "sha256": "a8e1e5a0374728edcf62ee6561f0b8b4102465c53fb77c5695c638a32d3a96cd",
+      "bytes": 2552
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-melba-taxon.json",
+      "sha256": "7eaa2ec48441edd1f350b19d4bf0af0b77d0b0831853485c202a4b4e2c8e4f94",
+      "bytes": 441
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-springer-alternate.json",
+      "sha256": "b0804908b4405dc2578f29b74d0ee0942d9b79d93dca8847c3dc7b8142710dd1",
+      "bytes": 3231
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/acquisition-supplements.json",
+      "sha256": "fa97af52a6b23025d80e52b16d052bd77f01043442e920859772b523098ee87e",
+      "bytes": 2416
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/chebi-pr.html",
+      "sha256": "fb65a54b4b864676f54988028209b57edcbd491dd8ac64848bd02a35294622f2",
+      "bytes": 824218
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/chebi-sc.html",
+      "sha256": "0df7a79b49898755367bdb82fdc45b2a7cd14741147f09b3a8b4ddc860ac4ff8",
+      "bytes": 824657
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/crossref2024.json",
+      "sha256": "156ef5f2ccb2646f1cd4b347f7743e1bfc6da72c15c134a0113e80ab46766239",
+      "bytes": 32524
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/crossref2026.json",
+      "sha256": "05f1f5213b4981ba586e4392d66042f39d18c51d6ec88dda3521cd35f5e82043",
+      "bytes": 23550
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/dedup-primary-studies.txt",
+      "sha256": "153dcd873700e91e4eac9b1bc9df03c3f3d653f30488aa27d516be9e1feadb64",
+      "bytes": 724
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/dedup-referenced-downloads.txt",
+      "sha256": "689c974888bfe55e14466512ede3fe31ccbf25ee712d5745e4faaf222db2c31b",
+      "bytes": 17827
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/dedup-repository.txt",
+      "sha256": "c72b2191a6d695fe10c3c2eb842e5839afcba4be1fba35630efe771ae0390d42",
+      "bytes": 4580
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026-body.txt",
+      "sha256": "f50159f58e7865ef3a2fa6b2256bce76b0a376512b58f668851bcd5d7b027129",
+      "bytes": 86568
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026-data1.xlsx",
+      "sha256": "391933234dcf5d3862de958da88afd46fe0f6a8bcb8e3fb1a22640bf976a99f1",
+      "bytes": 594713
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026-data1.xlsx.cells.json",
+      "sha256": "f8dc416417d36cda99e681728e1df1955f2ce9c0389a9e3b23160cfb8c0ca6e8",
+      "bytes": 2184522
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026-edfig8.xlsx",
+      "sha256": "412cec2cd46331a945eacefaf55013227aab089c55b57f17bac012b980392718",
+      "bytes": 22837
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026-edfig8.xlsx.cells.json",
+      "sha256": "144f2450e201d41487599b524c8c4f2d032f0a275950caabce8e79744880f447",
+      "bytes": 46594
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026-fig6.xlsx",
+      "sha256": "21cd055cd46191a02b60ccc39fa28d6020531f4d576ecd116d1868688699ca5e",
+      "bytes": 66764
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026-fig6.xlsx.cells.json",
+      "sha256": "c096ce3ee56b98904d6f91783b9e21653c6115e2fe98e39db9f6011cd8050936",
+      "bytes": 195836
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026-page25.png",
+      "sha256": "1e544c7edd6da2e679d27cf634b35afe5e2114d18369beef260b19883a23ad4d",
+      "bytes": 195152
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026-page9.png",
+      "sha256": "aaabc08924a2fcc5d77d24ead99e48f63903d2ba7abf3aecd676475175c78e4a",
+      "bytes": 309568
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026-supp.pdf",
+      "sha256": "2f52bd9b5367c56d69071e2077e25f1191bb5d31c6ec4e2b23606de1ff7ab56d",
+      "bytes": 5811115
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026-supp.txt",
+      "sha256": "9a43e008f5ec36f0149c5cf5e8089a35afe75ddd0c32cfe5fe24b9ba6b1676c4",
+      "bytes": 28688
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026.pdf",
+      "sha256": "5b6141b0cf52d09c473b0f594afc65f3c94cbe0dd391f531dd3a0a455aa3eacf",
+      "bytes": 10500688
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026.txt",
+      "sha256": "9759b34c208873e949c477d5d07f26b7bb546c2653eb7e4d3f9a8bd5171bcb45",
+      "bytes": 114592
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/diep2026.xml",
+      "sha256": "404b747ef072404b640a78cd81e77291d616d484afb824b903e5c12c9e061938",
+      "bytes": 204592
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/dong2021-body.txt",
+      "sha256": "542c08944b403876e5e0a32790b5008cc976a466cafc4cf67f8ad361fe4693b2",
+      "bytes": 70123
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/dong2021-supp-retry.zip",
+      "sha256": "dfd25766318960d626784cd0d2c1bed8922ba08da06624e25f0faa102e38b4fc",
+      "bytes": 2030618
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/dong2021-supp.pdf",
+      "sha256": "12f25986a7daadaa6653453c29bbe9943009a37921ae9db768dff6ed8654ace7",
+      "bytes": 1436930
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/dong2021-supp.txt",
+      "sha256": "a543cfa204ff71f8c2357f3dc06d488a8651e2e19726f9c5e480887d4cf3d7e6",
+      "bytes": 26887
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/dong2021.xml",
+      "sha256": "e5badfa6f3f7624cbf0584ac14565b82a2c5d0405fe433ce69eb3ff997231eeb",
+      "bytes": 121728
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/melba-protein.gp",
+      "sha256": "3f90d06e75c398a5d0629810d823661f4b720ab8a4b92952fd9ede3f283d91b8",
+      "bytes": 2606
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/osti-api.json",
+      "sha256": "abeb5faf603c074c67208d9c83efc17085fd5d646e3eb0450560de712acc1cbf",
+      "bytes": 4525
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/osti2024-page23.png",
+      "sha256": "525670f86fd6178a5efd8fa4e7487f5b34d42e33c7b8547296062cb7c836d490",
+      "bytes": 308335
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/osti2024-page42.png",
+      "sha256": "680f53d4e1189df2ddcfd340a1efa19605015bffa2b60f6d25cc9700053aae69",
+      "bytes": 179033
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/osti2024.pdf",
+      "sha256": "08db3f1433eb76fdc5bcbbe4fed096f11a42f2f1e513a7e3e234a1e359c7b4a2",
+      "bytes": 2473934
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/osti2024.txt",
+      "sha256": "c197c983d969eae990899c62e06b2640d88324594d85662fababf2a10edc785b",
+      "bytes": 84877
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/taxon-am1.html",
+      "sha256": "626aea5ea7724ef9b86dc825937e1f819193b46ff0433cc2b9979cf8391117b0",
+      "bytes": 28129
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/taxon-extorquens.html",
+      "sha256": "bb25421a7f1f67e7520fce3beb1f3cbb7ea34db236d04d7a109adbaced92aa62",
+      "bytes": 20808
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/taxon-melba.html",
+      "sha256": "0133157a029025e31572407cc67d1d3192ebff0d731bace6cbfcdb9e5b044b88",
+      "bytes": 23263
+    },
+    {
+      "path": "/private/tmp/cmm-round8-sc-pr-raw/usgs2025.html",
+      "sha256": "97b6f5440681b1794d1d438ed87afa57c706778440e3775f16d2fd742975b4c5",
+      "bytes": 21581
+    }
+  ],
+  "rights": {
+    "dong2024": "OSTI accepted manuscript, LLNL-JRNL-852792; public reading access, no blanket redistribution permission assumed. Publisher copyright Elsevier2023; Crossref lists an accepted-manuscript user license, not a CC license. Kept outside Git.",
+    "dong2021": "Full XML license CC BY-NC-ND4.0; source and supplement retained outside Git.",
+    "diep2026": "Publisher and XML license CC BY-NC-ND4.0. Supplementary workbooks/PDF retained outside Git. Only original curation prose, selected factual observations and provenance committed.",
+    "authorities": "Live ChEBI, NCBI, Crossref and GovInfo responses retained outside Git; no full-response redistribution."
+  },
+  "scientific_decisions": {
+    "scandium": "Use Dong2024 malonate separation of Sc from synthetic mixed REEs; preserve single column run, protein-origin vs expression-host identity, unreported column temperature, reagent-dependent outcome, feed concentration/table-label conflicts and lack of a direct Sc resin-only comparator. Do not substitute fitted affinity for recovery.",
+    "praseodymium": "Use Diep2026 Melba-LanM binary Pr/La experiment and lower repeat outcomes; retain exact construct, expression host, cell-free assay, selected-fraction denominator, scale/schedule differences and source workbook annotation limitations. Dong2024 grouped Pr-Eu enrichment is not a purified-Pr result."
+  },
+  "source_discrepancies": {
+    "dong2024": [
+      "Figure5 nominal total REE0.4mM versus sum0.2430mM of16 means in actual TableS10. Sc23.8\u00b11.1\u00b5M. No value corrected by conjecture.",
+      "Main references TablesS9/S10/S11/S12 while appended labels are shifted in relevant places; cite actual table title and PDF page.",
+      "Methods fluorescence protein20\u00b5M versus Figure4 caption10\u00b5M; avoid curating a fixed concentration for that subsidiary assay.",
+      "Apparent Sc Kd7.4pM depends on thermodynamic constant choice; SI mentions2.1pM alternative. No direct capacity or universal affinity imported."
+    ],
+    "diep2026": [
+      "Figure6d single-run result above99.9mol% Pr purity and83.2% yield versus refabricated0.4mL repeats96.5\u00b10.2mol% and72.0\u00b15.8%. The repeat graph begins at pH2.5 versus main2.4.",
+      "Source Data Extended Data Fig8 sheet o-36 La-Pr has A1 text o621 despite sheet label and traces agreeing with o-36 Figure8d; retain annotation ambiguity and do not merge the datasets.",
+      "Main-text capacity descriptions2\u00b5mol/mL vs Methods about2.8\u00b5mol/mL are not used as an exact Pr assay capacity.",
+      "Figure6 source data sheet lacks units in header; printed figure labels ppm. No mg/kg native observation or detection-limit interpretation created."
+    ]
+  },
+  "pr_fraction_reproduction": {
+    "source": "diep2026-fig6.xlsx; sheet o36 Agarose La-Pr; A=Fraction,B=La,C=Pr; rows2-97",
+    "selected_fraction_range": [
+      48,
+      80
+    ],
+    "denominator": "Sum Pr over all96 tabulated fractions; constant fraction volume. This reproduces the author yield but is not an independently closed balance on Pr fed.",
+    "calculated_percent": 83.16057954129472,
+    "author_reported_percent": 83.16,
+    "purity_note": "Authors report mol% purity. The source-data concentration ratio also rounds to99.97%; no claim that an unlabelled workbook alone establishes full chemical purity."
+  },
+  "validation": {
+    "named_records": "Both named validators completed with exit 0 after histories were attached: Checked 1 record(s); 0 failed for each.",
+    "batch": "Parent owns completed-batch check, full-corpus/history and structured-review gates.",
+    "review": "Independent review assigned to cmm8_y_ytterbium; this dossier is curation evidence, not self-review."
+  },
+  "remaining": [
+    "Replicated Sc mass balance with resolved feed composition and direct resin-only control.",
+    "Pr process-level feed-to-product accounting, definition of repeat variation and annotation cleanup.",
+    "Performance with real mixed feeds, other competing ions, reuse and deployment studies.",
+    "Investigate primary alternative Microbe-Encapsulated Silica Gel Biosorbents for Selective Extraction of Scandium from Coal Byproducts (Dong et al.2021, Environmental Science & Technology55:6320-6328); cited lead, not acquired or claimed here."
+  ]
+}

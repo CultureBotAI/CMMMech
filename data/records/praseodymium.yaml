@@ -1,0 +1,112 @@
+id: cmmmech:praseodymium
+name: Praseodymium
+material_kind: element
+description: >-
+  The element Pr, distinct from dissolved Pr(III), its salts and oxides,
+  Pr-containing magnet alloys and ore or waste resources. The US2025
+  designation applies to the named praseodymium mineral commodity.
+  Evidence below concerns cell-free protein chromatography of a synthetic
+  binary solution, not microbial growth on an ore or industrial recovery.
+identifiers:
+  - id: CHEBI:49828
+    label: praseodymium atom
+sources:
+  - id: chebi_praseodymium
+    title: 'ChEBI CHEBI:49828 - praseodymium atom; formula Pr, net charge 0'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:49828
+    accessed_on: '2026-10-11'
+  - id: usgs2025
+    title: >-
+      USGS (2025). Final 2025 List of Critical Minerals. Federal Register
+      90:50494-50497, document 2025-19813; named praseodymium entry.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: diep2026
+    title: >-
+      Diep, Madsen, Choi et al. (2026). A family portrait of lanmodulin
+      selectivity for enhanced rare-earth separations. Nature Chemical Biology
+      22:829-839; DOI 10.1038/s41589-026-02176-3, PMID 41851437,
+      PMC13128445. Figure 6d, Extended Data Figure 8c-d, Methods,
+      Supplementary Figures 37-40 and associated source data.
+    url: https://doi.org/10.1038/s41589-026-02176-3
+    accessed_on: '2026-10-11'
+  - id: ncbi_melba_origin
+    title: >-
+      NCBI Taxonomy 1502776 - Methylobacterium sp. 13MFTsu3.1M2;
+      species-rank node for the study-named protein-origin organism.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1502776
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States of America
+    list_name: USGS Final List of Critical Minerals
+    edition: '2025; Federal Register 90:50494-50497, 7 November 2025'
+    classification: critical
+    source_ref: usgs2025
+mechanisms:
+  - id: melba_lanmodulin_praseodymium_lanthanum_separation
+    name: Praseodymium separation from lanthanum using immobilized Melba-LanM
+    process: separation
+    microbial: true
+    organisms:
+      - id: NCBITaxon:1502776
+        label: Methylobacterium sp. 13MFTsu3.1M2
+    description: >-
+      Melba-LanM, ortholog o-36 attributed by the study to Methylobacterium
+      sp. 13MFTsu3.1M2, retained Pr(III) more strongly than La(III) during
+      acid elution of a binary feed. The purified bacterial protein carried
+      a terminal GSGC tag and was immobilized on agarose. Microbial involvement
+      denotes protein origin and recombinant production; no living cells
+      were present in the metal-separation step. Escherichia coli BL21(DE3)
+      was the expression host, not the organism of origin.
+    context: >-
+      Methods, Column experiments III, specify a 0.8 mL agarose bed in a
+      0.5 cm by 5 cm column, pre-equilibrated with 10 mM glycine at pH 3
+      for 20 minutes. The synthetic binary feed contained 0.4 mM of each
+      ion, 0.8 mM total, applied for two minutes at approximately 0.32 mL/min
+      and a reported 10% capacity. After a 20-minute water wash, the
+      elution used pH 2.4 for 140 minutes then pH 1.5 for 25 minutes.
+      Fractions were analyzed by ICP-MS; one fraction represented one
+      0.8 mL bed volume. Mex-LanM, ortholog o-621, was the protein comparator.
+      Figure 6d represents one run. Separately fabricated 0.4 mL columns
+      with a new protein batch were tested in three independent runs
+      in Extended Data Figure 8; their scale and elution schedule differ.
+      Column operating temperature was not explicitly stated. Neither
+      complex waste leachates nor industrial deployment were demonstrated.
+    evidence:
+      - source_ref: diep2026
+        supports: support
+        explanation: >-
+          Figure 6d and Results, C5 LanMs reject lanthanum for enhanced RE
+          separations, report above 99.9 mol% Pr purity and 83.2% yield
+          for the selected aqueous Pr fraction. The figure labels these
+          99.97% and 83.16%; its shaded collection region spans bed volumes
+          48-80. In Source Data Figure 6, sheet o36 Agarose La-Pr, summing
+          Pr values in that region divided by Pr across all 96 tabulated
+          fractions reproduces the rounded 83.16% value. This supports a
+          fraction-recovery interpretation, not an independently verified
+          feed-to-product mass balance or isolated elemental-Pr yield.
+          Mex-LanM largely co-eluted Pr and La under the same binary protocol.
+      - source_ref: diep2026
+        supports: partial
+        explanation: >-
+          Results and Extended Data Figure 8d report 96.5 +/- 0.2 mol% Pr
+          purity and 72.0 +/- 5.8% yield for the three repeat runs, lower
+          than the single Figure 6d result. Selected repeat fractions were
+          53-93; the first elution step is shown at pH 2.5, not the pH 2.4
+          of Figure 6d. Thus the best purity is conditional on the tested
+          protein preparation, scale and collection window. The comparison
+          supports this protein-based separation, not a unique cellular
+          process, separation from every competing REE, or a requirement
+          for biological metabolism. No exact causal amino-acid substitution
+          is established by the separation experiment.
+curation_history:
+  - timestamp: '2026-10-11T06:27:14Z'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Added verified elemental identity, dated US2025 criticality and
+      qualified cell-free protein separation evidence after primary-source
+      inspection; retained experimental and source limitations. Independent
+      scientific review is recorded separately.
+history_refs:
+  - history/records/praseodymium/2026-10-11T062656Z-codex-5084e0.yaml

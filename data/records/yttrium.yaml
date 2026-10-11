@@ -1,0 +1,119 @@
+id: cmmmech:yttrium
+name: Yttrium
+material_kind: element
+description: >-
+  The element Y, distinct from its trivalent ion, experimental chloride salt,
+  host minerals and rare-earth commodity mixtures. The dated US designation
+  concerns the named yttrium mineral commodity; it does not establish criticality
+  of every Y-bearing substance. Laboratory evidence concerns yttrium associated
+  with washed algal biomass, without establishing intracellular transport,
+  isolated-product recovery or industrial deployment.
+identifiers:
+- id: CHEBI:33331
+  label: yttrium atom
+sources:
+- id: chebi_yttrium
+  title: ChEBI CHEBI:33331 - yttrium atom; formula Y and net charge 0
+  url: https://www.ebi.ac.uk/chebi/CHEBI:33331
+  accessed_on: '2026-10-11'
+- id: usgs2025
+  title: >-
+    USGS (2025). Final 2025 List of Critical Minerals. Federal Register
+    90:50494-50497, document 2025-19813; named yttrium row.
+  url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  accessed_on: '2026-10-11'
+- id: iovinella2022
+  title: >-
+    Iovinella et al. (2022). Bioremoval of Yttrium (III), Cerium (III), Europium
+    (III), and Terbium (III) from Single and Quaternary Aqueous Solutions Using
+    the Extremophile Galdieria sulphuraria (Galdieriaceae, Rhodophyta).
+    Plants 11:1376; Sections 2.1-2.2 and 4.1-4.4, Figures 1-4.
+  url: https://doi.org/10.3390/plants11101376
+  accessed_on: '2026-10-11'
+- id: ncbi_galdieria
+  title: NCBI Taxonomy 83373 - Galdieria; genus-level identifier
+  url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=83373&retmode=xml
+  accessed_on: '2026-10-11'
+- id: ciniglia2025_taxonomy
+  title: >-
+    Ciniglia et al. (2025). Mosaic Evolution of Membrane Transporters in
+    Galdieriales. Plants 14:2043; Section 2 identifies ACUF 427 as Galdieria daedala.
+  url: https://doi.org/10.3390/plants14132043
+  accessed_on: '2026-10-11'
+criticality:
+- jurisdiction: United States of America
+  list_name: USGS Final List of Critical Minerals
+  edition: 2025; Federal Register 90:50494-50497, 7 November 2025
+  classification: critical
+  source_ref: usgs2025
+mechanisms:
+- id: galdieria_yttrium_association
+  name: Yttrium association with washed Galdieria ACUF 427 biomass
+  process: other
+  microbial: true
+  organisms:
+  - id: NCBITaxon:83373
+    label: Galdieria
+  description: >-
+    Living cultures reported as Galdieria sulphuraria ACUF 427 yielded washed
+    biomass containing yttrium after exposure to synthetic Y(III) solutions.
+    The measured biomass-associated amount was lower in a quaternary REE
+    mixture than in the corresponding single-element treatments. The experiment
+    does not separate surface binding from intracellular accumulation or other
+    material retained with the biomass.
+  context: >-
+    ACUF 427 originated from acidic soil in Gunnuhver, Iceland, and was obtained
+    from the University of Naples algal collection. The 2022 source calls it
+    G. sulphuraria; a 2025 primary study calls ACUF 427 G. daedala. The record
+    therefore uses the verified genus identifier and retains the exact strain
+    designation, without assigning the former species identifier to a newly
+    named taxon. Cultures were prepared in Allen medium, pelleted and washed
+    twice before exposure. Living biomass at an initial optical density of
+    5 at 550 nm was incubated in 2 mL water-plus-metal solutions in 24-well
+    plates, with tilting agitation, at 37 degrees C for 24 h. Chloride salts
+    supplied nominally 178 micromol/L of Y alone or each of Y, Ce, Eu and Tb
+    in a mixture. The four initial pH values were 2.5, 3.5, 4.5 and 5.5,
+    adjusted using sulfuric acid. The methods specify acid adjustment, although
+    the abstract calls the solutions buffered. Metal-only and biomass-only
+    controls were included; initial metal concentrations were checked by ICP-MS.
+    Experiments were performed in triplicate, with mean and standard deviation
+    reported. After exposure, supernatant and biomass were separated; the
+    supernatant was filtered at 0.2 micrometres, and biomass was washed twice
+    with water at the exposure pH before acid digestion and ICP-MS. Reported
+    micromol/g values derive from the analyzed biomass fraction and its dry-mass
+    denominator. They are not pure-metal yields. No resolved intracellular
+    localization, desorption product or industrial operation is demonstrated.
+  evidence:
+  - source_ref: iovinella2022
+    supports: support
+    explanation: >-
+      Sections 2.1-2.2 and Figures 1b and 3b support the individual-Y comparison:
+      at initial pH 2.5 the text reports 22.43 +/- 2.05 micromol Y/g dry biomass
+      in the single-element arm and 5.08 micromol/g in the mixed arm. These
+      are source-reported biomass-associated amounts from distinct assay arms,
+      not an isolated recovery percentage or a general selectivity coefficient.
+  - source_ref: iovinella2022
+    supports: partial
+    explanation: >-
+      For ACUF 427, Sections 2.1-2.2 and Figures 2b and 4b report no significant
+      Y improvement across the tested pH range, unlike the stronger pH response
+      of SAG 107.79. The abstract's broad pH conclusion is not applied uniformly
+      to ACUF 427. Matched biomass-free controls and washing improve attribution,
+      but the main article does not supply numerical Y control recoveries,
+      complete fraction balances or a localization assay for these quoted
+      results; its supplementary tables were unavailable in this curation. Binding,
+      active uptake and biomass-associated precipitation remain unresolved;
+      process other preserves that limitation.
+  - source_ref: ciniglia2025_taxonomy
+    supports: context_only
+    explanation: >-
+      Section 2 and its strain comparisons use Galdieria daedala ACUF 427.
+      This supports the taxonomy caveat, not a new yttrium experiment or an
+      inference that predicted transporters cause the 2022 biomass association.
+curation_history:
+- timestamp: '2026-10-11T06:24:47Z'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Added verified elemental identity and dated US criticality with a living-algal biomass association assay; retained taxonomy, mixed-solution, control and localization limits.
+history_refs:
+- history/records/yttrium/2026-10-11T062414Z-codex-03422f.yaml

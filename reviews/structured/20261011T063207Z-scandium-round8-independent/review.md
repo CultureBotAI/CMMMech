@@ -1,0 +1,453 @@
+# Independent scientific review of Scandium
+
+- Review: 20261011T063207Z-scandium-round8-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T06:29:25Z
+- Finished UTC: 2026-10-11T06:32:07Z
+- Reviewer: codex /root/cmm8_y_ytterbium (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The final Sc record supports a scoped cell-free protein separation from synthetic solution. It preserves chemistry-dependent outcomes, the unresolved feed/table inconsistency and limited process replication without implying living-cell extraction or isolated metal. No actionable curation defect was found in this scoped final-state review.
+
+## Scope And Provenance
+
+All fields of the named final maintained record, its sidecar and cited evidence.
+
+Selection: Assigned named record; no sampling.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 5b4a463f700bceb441f7b669f58a5e60823d2841.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:scandium | data/records/scandium.yaml | maintained | Scandium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Named-record validation | passed | True | cmmmech:scandium | Reviewer executed; 2 records checked, 0 failed; terminal exit 0. |
+| Full batch gate | passed | True | cmmmech:scandium | Parent executed; reviewer read /private/tmp/cmm-round8-batch.log: 307 passed, 3 skipped in 46.87 s; lint, 48 records and 58 histories passed; terminal exit 0 confirmed by parent. |
+| Nonempty corpus | passed | True | cmmmech:scandium | Reviewer read /private/tmp/cmm-round8-corpus.log: 48 checked, 0 failed; parent confirmed terminal exit 0. |
+| Trusted-base history | passed | True | cmmmech:scandium | Reviewer read /private/tmp/cmm-round8-history.log: 58 histories, 0 errors; parent confirmed terminal exit 0. |
+
+## Scientific And Domain Assessments
+
+### Element identity and protein-origin taxonomy
+
+identity: supported. Targets: cmmmech:scandium.
+
+Verified atomic identity and protein-origin organism are distinguished from ions, chemical reagents, expression host and a living-cell experiment.
+
+### Dated jurisdiction-specific criticality
+
+evidence: supported. Targets: cmmmech:scandium.
+
+The named commodity in the dated USGS final 2025 notice supports the scoped designation.
+
+### Analyte-specific separation, conditions and controls
+
+evidence: supported. Targets: cmmmech:scandium.
+
+The final Sc record supports a scoped cell-free protein separation from synthetic solution. It preserves chemistry-dependent outcomes, the unresolved feed/table inconsistency and limited process replication without implying living-cell extraction or isolated metal.
+
+### Denominators, contradictory performance and scale
+
+quantity: supported. Targets: cmmmech:scandium.
+
+The record preserves observed source inconsistencies and weaker outcomes. Aqueous eluate purity/recovery is not equated with isolated metal, metabolism or industrial deployment.
+
+### Actual curation and immutable evidence
+
+provenance: supported. Targets: cmmmech:scandium.
+
+CREATE sidecar target, actor codex/GPT-6/codex, issue 36 and distinct inline timestamp agree; current bytes match captured hashes. No prior history was rewritten.
+
+### Bounded adversarial search
+
+completeness: supported. Targets: cmmmech:scandium.
+
+Primary claims and source limitations were checked independently, while searches remain bounded.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/scandium.yaml; Whole inspected record, linked CREATE sidecar, schema and dossier | supports | Exact target and source inputs were captured before formal assessment. Reviewer is different from the curator and made no scientific record or history edits. |
+| identity | https://www.ebi.ac.uk/chebi/CHEBI:33330; Current atom entry, formula and charge | supports | Scandium atom (Sc, charge 0) |
+| taxon | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=408,1502776&amp;retmode=xml; Live NCBI names and ranks, retrieved independently | supports | NCBI 408 resolves Methylorubrum extorquens at species rank; NCBI 1502776 resolves Methylobacterium sp. 13MFTsu3.1M2 at species rank. They denote protein origins, not living biomass in the separation stage. |
+| criticality | https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm; Complete final 2025 notice and individually named Sc/Pr rows | supports | United States jurisdiction, USGS Final List and 7 November 2025 edition explicitly name each commodity. Element-to-commodity mapping is scoped in the record; no latest-list or host-material inheritance claim. |
+| primary | https://doi.org/10.1016/j.seppur.2023.125919; OSTI 2315086 accepted manuscript: Methods, Section 3.4, Figures 3-5 | supports | Independently read full relevant methods and results: default flow, column dimensions, synthetic chloride feed, loading/wash, two-step malonate and ICP-MS. Source reports above 99 mol% Sc purity and above 99% yield; citrate gives about 96 mol% and 78%. Yield is defined against loaded target REE. |
+| figures | https://www.osti.gov/servlets/purl/2315086; PDF page 23, Figure 5E-F; pages 42-43, Table S10 | supports | Original figure pixels show selective Sc elution under 30 then 50 mM malonate and cumulative desorption. Independently summed all 16 Table S10 means to 243.0 micromolar, conflicting with nominal 0.4 mM; Sc is 23.8 +/- 1.1 micromolar. Figure reference S9 versus actual S10 is preserved. |
+| preparation | https://doi.org/10.1021/acscentsci.1c00724; Supporting Information S2-S4 and S6-S7 | supports | Read expression in E. coli BL21(DE3), GSGC construct purification and thiol-maleimide agarose immobilization. The earlier resin control concerns other metals and is correctly not promoted to a matched Sc-only control. |
+| search | Independent review-session searches and local hidden/ignored inventory; 2026-10-11 bounded exact-DOI/counterevidence searches | context_only | No matching correction or retraction notice appeared in the inspected first result sets. Alternative Sc membrane/peptide reports and earlier live-cell results concern different systems, not contrary replication of the accepted cell-free assay. |
+
+## Limits And Additional Notes
+
+- Single column runs and unresolved feed/table inconsistencies prevent a robust universal efficiency or independent mass-balance claim.
+- Matched Sc-only resin-without-LanM separation control was not reported in inspected primary methods/SI.
+- The fitted apparent affinity depends on the chelator model; it is not a recovery measurement.
+- Raw copyrighted manuscripts remain outside Git; reuse is scientific inspection, not unrestricted redistribution.
+- Correction and duplicate searches are bounded; absence of a returned notice is not exhaustive absence.
+- Working-tree provenance records exact uncommitted bytes against a durable main ancestor; it does not claim the record existed in that base.
+- Source limitations already retained by the record are not manufactured corrective findings.
+- Existing local source copies were independently inspected with their provenance and hashes; authority fallback downloads are recorded in /private/tmp/cmm-round8-sc-pr-review/acquisition.json.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T063207Z-scandium-round8-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Scandium
+started_at: '2026-10-11T06:29:25Z'
+finished_at: '2026-10-11T06:32:07Z'
+reviewer:
+  identity: codex /root/cmm8_y_ytterbium
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer is different from curator /root/cmm8_sc_pr; inspected
+    frozen inputs before judging, independently read primary methods/SI and original
+    figure pixels, rechecked identities and quantities, and made no target or history
+    edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The final Sc record supports a scoped cell-free protein separation from synthetic
+  solution. It preserves chemistry-dependent outcomes, the unresolved feed/table inconsistency
+  and limited process replication without implying living-cell extraction or isolated
+  metal. No actionable curation defect was found in this scoped final-state review.
+source:
+  git_revision: 5b4a463f700bceb441f7b669f58a5e60823d2841
+  state: working_tree
+  inputs:
+  - path: data/records/scandium.yaml
+    sha256: bdc21ed9d82ee8451c5d7a6d40122dd728bfe1efeb7a5d05756040e8ea364219
+    role: target
+  - path: history/records/scandium/2026-10-11T062653Z-codex-38b6bd.yaml
+    sha256: 9baeef7a694b72cb57c8d8627f419186a02c5151b4135175fd7d043c09a7c7bb
+    role: context
+  - path: research/ingests/round8-sc-pr-20261011.json
+    sha256: 35c51dbd3b4c4c8765cdca7681f587e6c439f8191d3dedfc5db07bf5981128a1
+    role: context
+  - path: research/ingests/round8-sc-pr-20261011.md
+    sha256: ebbb7385b902dc5363fbbb8774aa7e6c0c58b0d8202d448d3a3163bf3900c45f
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 861e6299240364ebddc53f7fb238b11014a5c2d48d2a211a80fcb18a5cc2170c
+    role: context
+scope:
+  description: All fields of the named final maintained record, its sidecar and cited
+    evidence.
+  selection: Assigned named record; no sampling.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:scandium
+targets:
+- target_id: cmmmech:scandium
+  path: data/records/scandium.yaml
+  label: Scandium
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/scandium.yaml
+    role: maintained
+checks:
+- check_id: named
+  name: Named-record validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/scandium.yaml data/records/praseodymium.yaml
+  status: passed
+  required: true
+  summary: Reviewer executed; 2 records checked, 0 failed; terminal exit 0.
+  target_ids:
+  - cmmmech:scandium
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: batch
+  name: Full batch gate
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache just check
+  status: passed
+  required: true
+  summary: 'Parent executed; reviewer read /private/tmp/cmm-round8-batch.log: 307
+    passed, 3 skipped in 46.87 s; lint, 48 records and 58 histories passed; terminal
+    exit 0 confirmed by parent.'
+  target_ids:
+  - cmmmech:scandium
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: nonempty
+  name: Nonempty corpus
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: 'Reviewer read /private/tmp/cmm-round8-corpus.log: 48 checked, 0 failed;
+    parent confirmed terminal exit 0.'
+  target_ids:
+  - cmmmech:scandium
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: history
+  name: Trusted-base history
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate-history --base 5b4a463f700bceb441f7b669f58a5e60823d2841
+  status: passed
+  required: true
+  summary: 'Reviewer read /private/tmp/cmm-round8-history.log: 58 histories, 0 errors;
+    parent confirmed terminal exit 0.'
+  target_ids:
+  - cmmmech:scandium
+  exit_code: 0
+  expected_exit_code: 0
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/scandium.yaml
+  locator: Whole inspected record, linked CREATE sidecar, schema and dossier
+  accessed_at: '2026-10-11T06:32:07Z'
+  support: supports
+  summary: Exact target and source inputs were captured before formal assessment.
+    Reviewer is different from the curator and made no scientific record or history
+    edits.
+- evidence_id: identity
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:33330
+  locator: Current atom entry, formula and charge
+  accessed_at: '2026-10-11T06:32:07Z'
+  support: supports
+  summary: Scandium atom (Sc, charge 0)
+- evidence_id: taxon
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=408,1502776&retmode=xml
+  locator: Live NCBI names and ranks, retrieved independently
+  accessed_at: '2026-10-11T06:32:07Z'
+  support: supports
+  summary: NCBI 408 resolves Methylorubrum extorquens at species rank; NCBI 1502776
+    resolves Methylobacterium sp. 13MFTsu3.1M2 at species rank. They denote protein
+    origins, not living biomass in the separation stage.
+  snapshot_sha256: 0f5e7191dc55b81a170845e91d4fe485ede66b97f8c15461b1c4c1d801618702
+- evidence_id: criticality
+  kind: authority
+  reference: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  locator: Complete final 2025 notice and individually named Sc/Pr rows
+  accessed_at: '2026-10-11T06:32:07Z'
+  support: supports
+  summary: United States jurisdiction, USGS Final List and 7 November 2025 edition
+    explicitly name each commodity. Element-to-commodity mapping is scoped in the
+    record; no latest-list or host-material inheritance claim.
+  snapshot_sha256: cf9196a8480af3269d74f95c5de529f5f7db967df2a742af6e2c69743190f65d
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.seppur.2023.125919
+  locator: 'OSTI 2315086 accepted manuscript: Methods, Section 3.4, Figures 3-5'
+  accessed_at: '2026-10-11T06:32:07Z'
+  support: supports
+  summary: 'Independently read full relevant methods and results: default flow, column
+    dimensions, synthetic chloride feed, loading/wash, two-step malonate and ICP-MS.
+    Source reports above 99 mol% Sc purity and above 99% yield; citrate gives about
+    96 mol% and 78%. Yield is defined against loaded target REE.'
+  snapshot_sha256: 08db3f1433eb76fdc5bcbbe4fed096f11a42f2f1e513a7e3e234a1e359c7b4a2
+- evidence_id: figures
+  kind: primary_source
+  reference: https://www.osti.gov/servlets/purl/2315086
+  locator: PDF page 23, Figure 5E-F; pages 42-43, Table S10
+  accessed_at: '2026-10-11T06:32:07Z'
+  support: supports
+  summary: Original figure pixels show selective Sc elution under 30 then 50 mM malonate
+    and cumulative desorption. Independently summed all 16 Table S10 means to 243.0
+    micromolar, conflicting with nominal 0.4 mM; Sc is 23.8 +/- 1.1 micromolar. Figure
+    reference S9 versus actual S10 is preserved.
+  snapshot_sha256: 525670f86fd6178a5efd8fa4e7487f5b34d42e33c7b8547296062cb7c836d490
+- evidence_id: preparation
+  kind: primary_source
+  reference: https://doi.org/10.1021/acscentsci.1c00724
+  locator: Supporting Information S2-S4 and S6-S7
+  accessed_at: '2026-10-11T06:32:07Z'
+  support: supports
+  summary: Read expression in E. coli BL21(DE3), GSGC construct purification and thiol-maleimide
+    agarose immobilization. The earlier resin control concerns other metals and is
+    correctly not promoted to a matched Sc-only control.
+  snapshot_sha256: 12f25986a7daadaa6653453c29bbe9943009a37921ae9db768dff6ed8654ace7
+- evidence_id: search
+  kind: search
+  reference: Independent review-session searches and local hidden/ignored inventory
+  locator: 2026-10-11 bounded exact-DOI/counterevidence searches
+  accessed_at: '2026-10-11T06:32:07Z'
+  support: context_only
+  summary: No matching correction or retraction notice appeared in the inspected first
+    result sets. Alternative Sc membrane/peptide reports and earlier live-cell results
+    concern different systems, not contrary replication of the accepted cell-free
+    assay.
+  search_scope: 'Web queries: "10.1016/j.seppur.2023.125919" correction OR retraction;
+    "10.1038/s41589-026-02176-3" correction OR retraction; "lanmodulin" "scandium"
+    malonate control resin; "Melba-LanM" praseodymium repeat purity. First result
+    sets only, no exhaustive pagination. rg --no-ignore --hidden -L searched data/records,
+    research, reviews, history and /private/tmp/cmm-round8-sc-pr-raw for exact IDs
+    and DOIs; binary PDF/XLSX/ZIP/images excluded from text matching and relevant
+    binaries inspected separately. No unrelated home/temp or literature-wide absence
+    claim.'
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Element identity and protein-origin taxonomy
+  outcome: supported
+  summary: Verified atomic identity and protein-origin organism are distinguished
+    from ions, chemical reagents, expression host and a living-cell experiment.
+  target_ids:
+  - cmmmech:scandium
+  evidence_ids:
+  - record
+  - identity
+  - taxon
+- assessment_id: criticality
+  area: evidence
+  topic: Dated jurisdiction-specific criticality
+  outcome: supported
+  summary: The named commodity in the dated USGS final 2025 notice supports the scoped
+    designation.
+  target_ids:
+  - cmmmech:scandium
+  evidence_ids:
+  - record
+  - criticality
+- assessment_id: mechanism
+  area: evidence
+  topic: Analyte-specific separation, conditions and controls
+  outcome: supported
+  summary: The final Sc record supports a scoped cell-free protein separation from
+    synthetic solution. It preserves chemistry-dependent outcomes, the unresolved
+    feed/table inconsistency and limited process replication without implying living-cell
+    extraction or isolated metal.
+  target_ids:
+  - cmmmech:scandium
+  evidence_ids:
+  - record
+  - primary
+  - figures
+  - preparation
+  dimensions:
+  - name: material_form
+    value: Synthetic dissolved chloride-salt mixture at pH 3; nominal 0.4 mM total
+      REEs conflicts with table sum 0.2430 mM.
+    definition: No ore or waste treatment run.
+    evidence_ids:
+    - record
+    - primary
+    - figures
+  - name: microbial_role
+    value: Purified bacterial LanM-GSGC expressed in E. coli and immobilized on agarose.
+    definition: Bacterial origin and recombinant production are distinct from metabolism;
+      separation is cell-free.
+    evidence_ids:
+    - record
+    - primary
+    - figures
+  - name: conditions
+    value: 5 cm by 0.5 cm column; 0.9 mL bed; 0.5 mL/min; five-bed-volume wash; 30
+      then 50 mM malonate at pH 5.
+    definition: Exact reported laboratory process; operating temperature unreported.
+    evidence_ids:
+    - record
+    - primary
+    - figures
+  - name: quantity
+    value: Author-reported aqueous fraction above 99 mol% Sc and above 99% loaded-target
+      yield.
+    definition: Not isolated metal or oxide; no independently closed mass balance.
+    evidence_ids:
+    - record
+    - primary
+    - figures
+  - name: controls
+    value: Citrate comparison is weaker; direct matched Sc-only resin control absent
+      in inspected study.
+    definition: Supporting protein binding assays do not resolve all matrix contributions;
+      analytical triplicates are not process replication.
+    evidence_ids:
+    - record
+    - primary
+    - figures
+- assessment_id: uncertainty
+  area: quantity
+  topic: Denominators, contradictory performance and scale
+  outcome: supported
+  summary: The record preserves observed source inconsistencies and weaker outcomes.
+    Aqueous eluate purity/recovery is not equated with isolated metal, metabolism
+    or industrial deployment.
+  target_ids:
+  - cmmmech:scandium
+  evidence_ids:
+  - record
+  - primary
+  - figures
+- assessment_id: provenance
+  area: provenance
+  topic: Actual curation and immutable evidence
+  outcome: supported
+  summary: CREATE sidecar target, actor codex/GPT-6/codex, issue 36 and distinct inline
+    timestamp agree; current bytes match captured hashes. No prior history was rewritten.
+  target_ids:
+  - cmmmech:scandium
+  evidence_ids:
+  - record
+- assessment_id: coverage
+  area: completeness
+  topic: Bounded adversarial search
+  outcome: supported
+  summary: Primary claims and source limitations were checked independently, while
+    searches remain bounded.
+  target_ids:
+  - cmmmech:scandium
+  evidence_ids:
+  - search
+  - record
+findings: []
+actions: []
+limitations:
+- Single column runs and unresolved feed/table inconsistencies prevent a robust universal
+  efficiency or independent mass-balance claim.
+- Matched Sc-only resin-without-LanM separation control was not reported in inspected
+  primary methods/SI.
+- The fitted apparent affinity depends on the chelator model; it is not a recovery
+  measurement.
+- Raw copyrighted manuscripts remain outside Git; reuse is scientific inspection,
+  not unrestricted redistribution.
+- Correction and duplicate searches are bounded; absence of a returned notice is not
+  exhaustive absence.
+notes:
+- Working-tree provenance records exact uncommitted bytes against a durable main ancestor;
+  it does not claim the record existed in that base.
+- Source limitations already retained by the record are not manufactured corrective
+  findings.
+- Existing local source copies were independently inspected with their provenance
+  and hashes; authority fallback downloads are recorded in /private/tmp/cmm-round8-sc-pr-review/acquisition.json.
+links:
+- research/ingests/round8-sc-pr-20261011.md
+- research/ingests/round8-sc-pr-20261011.json
+- https://github.com/CultureBotAI/CMMMech/issues/36
+tags:
+- round8
+- scandium
+- independent-review
+- primary-literature
+```

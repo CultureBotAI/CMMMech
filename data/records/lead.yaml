@@ -1,0 +1,117 @@
+id: cmmmech:lead
+name: Lead
+material_kind: element
+description: Lead (Pb), represented as an element distinct from dissolved lead, pyromorphite
+  mineral and lead-bearing commodities or wastes. Laboratory bacterial cultures enhanced Pb
+  release from synthetic pyromorphite, demonstrating that microbial interactions can remobilize
+  previously immobilized lead. The United States 2025 designation names the lead commodity;
+  it does not designate every lead compound, mineral or secondary resource.
+identifiers:
+- id: CHEBI:25016
+  label: lead atom
+sources:
+- id: topolska_2014
+  title: Topolska, Latowski, Kaschabek, Manecki, Merkel and Rakovan (2014; online July 20,
+    2013). Pb remobilization by bacterially mediated dissolution of pyromorphite Pb5(PO4)3Cl
+    in presence of phosphate-solubilizing Pseudomonas putida. Environmental Science and Pollution
+    Research 21, 1079-1089. DOI 10.1007/s11356-013-1968-3; PMID 23872890; PMC3880484.
+  url: https://doi.org/10.1007/s11356-013-1968-3
+  accessed_on: '2026-10-11'
+- id: kato_2022
+  title: Kato et al. (2022). Deposition of Lead Phosphate by Lead-Tolerant Bacteria Isolated
+    from Fresh Water near an Abandoned Mine. International Journal of Molecular Sciences 23(5),
+    2483. DOI 10.3390/ijms23052483; PMID 35269625; PMC8910126. Distinct deposition context;
+    quantitative conditions and phosphate-phase mapping remain inconsistent.
+  url: https://doi.org/10.3390/ijms23052483
+  accessed_on: '2026-10-11'
+- id: usgs_2025
+  title: U.S. Geological Survey (2025). Final 2025 List of Critical Minerals. Federal Register
+    90 FR 50494-50497, November 7, 2025; Lead row in the final commodity table. The adjacent
+    No is the byproduct/co-product column, not criticality.
+  url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  accessed_on: '2026-10-11'
+- id: chebi_lead
+  title: ChEBI:25016 - lead atom; Pb, net charge zero
+  url: https://www.ebi.ac.uk/chebi/CHEBI:25016
+  accessed_on: '2026-10-11'
+- id: ncbi_putida
+  title: 'NCBI Taxonomy 303: Pseudomonas putida, species. This identifier does not resolve
+    IBPRS KKP 1136 at strain level.'
+  url: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/303/dataset_report
+  accessed_on: '2026-10-11'
+criticality:
+- jurisdiction: United States of America
+  list_name: U.S. Department of the Interior Final List of Critical Minerals
+  edition: 2025 (published November 7, 2025; 90 FR 50494-50497)
+  classification: critical
+  source_ref: usgs_2025
+mechanisms:
+- id: putida_pyromorphite_remobilization
+  name: Culture-enhanced lead release from synthetic pyromorphite
+  process: bioleaching
+  description: Growing Pseudomonas putida IBPRS KKP 1136 cultures increased filtered-solution
+    Pb relative to uninoculated controls during dissolution of synthetic pyromorphite. The
+    effect was greater when the mineral was the only added phosphate source. Nutrient scavenging,
+    metabolites and cell-associated binding are candidate contributors; the experiment does
+    not identify a unique dissolution pathway. This laboratory remobilization observation
+    is not an isolated-metal recovery process or proof of a field remediation outcome.
+  context: 'Topolska et al. E.II: 0.05 g synthetic pyromorphite in 100 mL medium in 500 mL
+    flasks, run in triplicate for 305 h at 21 +/- 1 degrees Celsius and 100 rpm. XRD and SEM-EDS
+    characterized the starting mineral; wet chemical analysis gave Pb5.09(PO4)2.96Cl. Mineral
+    portions were heated at 180 degrees Celsius for 3 h before use. Mid-log cells grown to
+    OD600 0.8 were pelleted, resuspended in the experimental solution and inoculated 1:100.
+    The paper identifies the strain by earlier numerical taxonomy; the linked species identifier
+    does not independently verify that strain assignment. MP+ contained 0.5 g/L K2HPO4, disodium
+    succinate, glycerol, salts and FeEDTA; MP- omitted K2HPO4. The source reports FeEDTA as
+    30 mM, an unusual medium specification retained as reported rather than silently corrected.
+    Initial pH was about 7.3; biotic pH rose toward 9, while abiotic pH stayed near its initial
+    value. Controls included uninoculated mineral suspensions, growth without mineral and
+    chlorapatite comparisons. ICP-MS measured total Pb and P after centrifugation and 0.2
+    micrometre polycarbonate filtration; a separate acid-digestion comparison assessed cell-associated
+    Pb. Feed was a synthetic mineral, not a contaminated soil or industrial ore.'
+  microbial: true
+  organisms:
+  - id: NCBITaxon:303
+    label: Pseudomonas putida
+  evidence:
+  - source_ref: topolska_2014
+    supports: support
+    explanation: 'Experimental methods, Table 2, Figure 4 and Table 3: after 305 h, filtered-solution
+      Pb in MP- was 13.5 +/- 0.37 micromolar with bacteria versus 1.47 +/- 0.16 micromolar
+      without; MP+ values were 3.66 +/- 0.31 and 1.15 +/- 0.07 micromolar, respectively. Errors
+      are reported standard deviations of triplicates. These are solution concentrations,
+      not extraction percentages or isolated-product yields. Figure 2 also shows limited growth
+      when pyromorphite supplies phosphate, with no growth in the no-phosphate/no-mineral
+      control.'
+  - source_ref: topolska_2014
+    supports: partial
+    explanation: 'Solution analysis, cell-bound Pb method and Results E.II: the separate 100
+      h MP+ acid-digestion comparison assigned 13.6 +/- 0.4 micromolar Pb to cells, reported
+      as 94% of total Pb released in that comparison. That fraction is not the 305 h filtered-solution
+      result or a 94% mineral-recovery yield. Sorption could be reversible; no long-term permanence
+      is demonstrated.'
+  - source_ref: topolska_2014
+    supports: partial
+    explanation: 'Discussion, Microbially enhanced Pb remobilization: pH was not held equal
+      across biotic and abiotic arms. The authors argue that the observed pH range is insufficient
+      to explain the Pb difference but explicitly do not completely exclude its contribution.
+      Unmeasured metabolites, P uptake and binding are proposed contributors; acidification,
+      a named enzyme or a unique chelation mechanism is not established.'
+  - source_ref: kato_2022
+    supports: context_only
+    explanation: Results 2.3 and Figures 6-7 report pyromorphite/hydrocerussite associated
+      with a different isolate, Pseudomonas sp. KKY-29, exposed to lead acetate. This distinct
+      deposition experiment does not contradict Topolska's dissolution result under different
+      substrate and nutrient conditions, or establish permanent immobilization. Kato's Results
+      2.6 and Discussion reverse the phosphate-condition phase assignments, and biomass/phosphate
+      units are inconsistent; those assignments, removal percentages and proposed phosphate-metabolism
+      causality are not transferred here.
+curation_history:
+- timestamp: '2026-10-11T06:24:33Z'
+  curator: Codex (GPT-6; Codex)
+  action: create_record
+  summary: Curated elemental lead, the named US 2025 designation and controlled pyromorphite
+    remobilization; preserved cell-associated versus filtered-solution Pb, unequal pH, reported
+    medium uncertainty and distinct deposition context.
+history_refs:
+- history/records/lead/2026-10-11T062445Z-codex-f6ac41.yaml
