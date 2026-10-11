@@ -1,0 +1,126 @@
+id: cmmmech:platinum
+name: Platinum
+material_kind: element
+description: >-
+  Platinum (Pt). The element is distinct from its experimental dissolved
+  chloro-complexes, the potassium salts used to prepare them, and platinum-bearing
+  minerals or wastes. The US 2025 designation names the platinum commodity
+  individually; it is mapped here to the element without designating every
+  platinum compound or secondary resource as critical. Curated evidence concerns
+  laboratory transformation in the presence of bacterial biomass, with substantial
+  abiotic reduction and no demonstrated isolated-metal yield or industrial use.
+identifiers:
+  - id: CHEBI:33364
+    label: platinum atom
+sources:
+  - id: chebi_platinum
+    title: 'ChEBI:33364 - platinum atom; Pt, charge 0'
+    url: https://www.ebi.ac.uk/chebi/CHEBI:33364
+    accessed_on: '2026-10-11'
+  - id: usgs_2025
+    title: >-
+      U.S. Geological Survey (2025). Final 2025 List of Critical Minerals.
+      Federal Register 90 FR 50494-50497, November 7, 2025; final commodity
+      table, Platinum row.
+    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+    accessed_on: '2026-10-11'
+  - id: maes_2017
+    title: >-
+      Maes et al. (2017). Biological Recovery of Platinum Complexes from Diluted
+      Aqueous Streams by Axenic Cultures. PLOS ONE 12(1), e0169093.
+      DOI 10.1371/journal.pone.0169093. Methods, Table 1, Figures 1, 3 and 5,
+      supplementary Figure S1 and Table S1.
+    url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0169093
+    accessed_on: '2026-10-11'
+  - id: ncbi_ch34
+    title: 'NCBI Taxonomy: Cupriavidus metallidurans CH34, Taxonomy ID 266264'
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=266264&mode=Info
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: United States of America
+    list_name: U.S. Department of the Interior Final List of Critical Minerals
+    edition: '2025 (published November 7, 2025; 90 FR 50494-50497)'
+    classification: critical
+    source_ref: usgs_2025
+mechanisms:
+  - id: ch34_hydrogen_ptii_transformation
+    name: Hydrogen-driven Pt(II) transformation in the presence of CH34 biomass
+    process: redox_transformation
+    description: >-
+      Washed Cupriavidus metallidurans CH34 biomass exposed to a synthetic
+      Pt(II) chloro-complex under hydrogen acquired platinum-bearing particles.
+      The authors interpreted biomass-associated XANES and EXAFS spectra as
+      consistent with metallic Pt(0). Hydrogen alone also removed Pt(II), so the
+      experiment supports a transformation with microbial biomass present,
+      without establishing that living cells or a particular enzyme are necessary.
+    context: >-
+      Laboratory anaerobic batches: CH34 from SCK-CEN was first grown aerobically
+      overnight in LB-Lennox at 28 degrees C, centrifuged at 7000 g for 7 minutes,
+      washed twice with 25 mL phosphate buffer (8.5 g/L Na2HPO4.7H2O and 3 g/L
+      KH2PO4), and resuspended to OD610 of 1. Fifty mL suspensions in 120 mL serum
+      bottles received Pt(II) supplied as K2PtCl4, at 100 mg/L Pt from a
+      2.5 g/L Pt stock in 1 M HCl. Bottles underwent 20 nitrogen/vacuum cycles
+      and the headspace was replaced with 100% hydrogen; batches were mixed at
+      100 rpm and 28 degrees C, with initial assay pH adjusted to 1.8-2.2.
+      Aerobic denotes biomass cultivation, not the anaerobic transformation assay.
+      Table 1 reports 99% Pt removal with hydrogen at 48 h versus 24% in the
+      no-electron-donor CH34 arm and 99% in the chemical hydrogen control
+      (screening experiments n=1). These ICP-OES-based removal percentages are
+      not measured Pt(0) fractions or purified-product yields; the 2017 methods
+      refer detailed ICP sample preparation to an earlier paper, whose full
+      procedure was not verified here. Membrane-intact cell counts decreased
+      during exposure, so sustained metabolic activity is not assumed.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:266264
+        label: Cupriavidus metallidurans CH34
+    evidence:
+      - source_ref: maes_2017
+        supports: support
+        explanation: >-
+          Methods, Figure 1, supplementary Figure S1, and the Platinum speciation
+          analysis section support the authors' Pt(0) interpretation for
+          aerobically cultivated CH34 exposed to Pt(II) under hydrogen. Figure 3
+          shows particulate deposits in the CH34 Pt(II) panel. The phase claim
+          depends on X-ray absorption evidence, not the color change or microscopy
+          alone, and is not a quantitative determination of complete conversion.
+      - source_ref: maes_2017
+        supports: partial
+        explanation: >-
+          Table 1's chemical hydrogen control also reaches 99% Pt(II) removal;
+          thus the CH34 endpoint does not establish a microbial enhancement over
+          that abiotic arm. The paper additionally reports 99% removal with
+          heat-killed Shewanella cells, a different organism and not a matched
+          CH34 viability control. No specific hydrogenase or other enzyme was
+          demonstrated to cause Pt reduction in CH34.
+      - source_ref: maes_2017
+        supports: partial
+        explanation: >-
+          Figure 5 and the membrane-integrity results show CH34 intact-cell
+          counts declining to the assay detection level by 27 h in the acidic
+          Pt(II)/hydrogen experiment. Membrane staining is not proof of growth
+          or metabolic activity. Table 1 also reports only 3% carboplatin
+          removal and zero for the tetraamine preparation with CH34 and hydrogen;
+          the Pt(II) chloro-complex result cannot be extended to all Pt complexes.
+      - source_ref: maes_2017
+        supports: partial
+        explanation: >-
+          Spectroscopy reporting has unresolved internal inconsistencies:
+          Methods specifies the Pt L3 edge and a 11919 eV calibration value,
+          while Figure 1 is plotted near 11560-11630 eV and Results calls the
+          edge K-edge. This record retains the authors' qualitative
+          XANES/EXAFS interpretation without adopting those conflicting absolute
+          energy assignments or claiming independent spectral refitting. The
+          source also distinguishes solution removal from reduced Pt in biomass.
+curation_history:
+  - timestamp: '2026-10-11T04:36:09Z'
+    curator: Codex (GPT-6; Codex)
+    action: create
+    summary: >-
+      Created the platinum element record after verifying identity, the US 2025
+      designation, and Maes et al. 2017 CH34/Pt(II)/hydrogen evidence. Preserved
+      abiotic removal, biomass-state limitations, unreplicated screening,
+      complex-specific nulls and source spectroscopy inconsistencies. Attached
+      canonical CREATE history; independent scientific review is separate.
+history_refs:
+  - history/records/platinum/2026-10-11T043609Z-codex-1cf1ab.yaml

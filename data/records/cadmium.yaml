@@ -1,0 +1,102 @@
+id: cmmmech:cadmium
+name: Cadmium
+material_kind: element
+description: >-
+  Cadmium (Cd), atomic number 48. The neutral-atom identifier grounds the
+  element, not Cd(II), cadmium chloride, cadmium sulfide, or a mineral species.
+  India's June 2023 committee list names the cadmium material; that dated
+  designation is mapped to this element without extending it to its compounds.
+  This is the 30-material committee assessment, not a claim about the separate
+  statutory critical/strategic schedule or current law. Curated laboratory
+  evidence concerns culture-associated cadmium-sulfide formation.
+identifiers:
+  - id: CHEBI:22977
+    label: cadmium atom
+sources:
+  - id: chebi_cadmium
+    title: ChEBI CHEBI:22977 — cadmium atom
+    url: https://www.ebi.ac.uk/chebi/CHEBI:22977
+    accessed_on: '2026-10-11'
+  - id: india_committee_2023
+    title: >-
+      Government of India, Ministry of Mines (June 2023). Critical Minerals
+      for India: Report of the Committee on Identification of Critical
+      Minerals. Chapter 9, printed page 32 / PDF page 40, item 4 Cadmium;
+      summary on PDF page 11.
+    url: https://mines.gov.in/admin/storage/app/uploads/649d4212cceb01688027666.pdf
+    accessed_on: '2026-10-11'
+  - id: india_launch_2023
+    title: >-
+      Ministry of Mines / Press Information Bureau (28 June 2023).
+      Union Minister Pralhad Joshi unveils List of Critical Minerals for India.
+      Release 1936083; launch of the 30-material expert-committee report.
+    url: https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1936083&lang=2&reg=48
+    accessed_on: '2026-10-11'
+  - id: sharma_2000
+    title: >-
+      Sharma PK, Balkwill DL, Frenkel A and Vairavamurthy MA (2000).
+      A New Klebsiella planticola Strain (Cd-1) Grows Anaerobically at High
+      Cadmium Concentrations and Precipitates Cadmium Sulfide. Applied and
+      Environmental Microbiology 66:3083-3087.
+      doi:10.1128/AEM.66.7.3083-3087.2000. Growth-medium and transformation
+      sections; Figures 2-3; sulfide measurement subsection.
+    url: https://doi.org/10.1128/AEM.66.7.3083-3087.2000
+    accessed_on: '2026-10-11'
+  - id: taxonomy_planticola
+    title: >-
+      NCBI Taxonomy 575 — Klebsiella planticola, species rank;
+      Raoultella planticola listed as a homotypic synonym.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=575&mode=Info
+    accessed_on: '2026-10-11'
+criticality:
+  - jurisdiction: India
+    list_name: Ministry of Mines committee list of 30 Critical Minerals for India
+    edition: 'June 2023 committee report; launched 28 June 2023'
+    classification: critical
+    source_ref: india_committee_2023
+mechanisms:
+  - id: cd1_cadmium_sulfide
+    name: Culture-associated cadmium-sulfide formation
+    process: biomineralization
+    description: >-
+      Living Klebsiella planticola Cd-1 cultures formed CdS-associated solids.
+      This supports laboratory immobilization, not elemental-cadmium reduction,
+      purified-product recovery or industrial deployment.
+    context: >-
+      Anaerobic synthetic CdCl2 medium used pyruvate/glucose and Trizma buffer,
+      initially around pH 7.1. Washed, freeze-dried late-stationary biomass from
+      5 mM Cd(II) cultures was characterized spectroscopically. A separate
+      thiosulfate-amended assay used 5 mM Cd(II) and 5 or 10 mM thiosulfate.
+      Exact precipitation incubation temperature, elapsed harvest time and
+      vessel volume are not explicit. NCBITaxon:575 identifies the published
+      species, not a verified Cd-1 strain accession.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:575
+        label: Klebsiella planticola
+    evidence:
+      - source_ref: sharma_2000
+        supports: support
+        explanation: >-
+          Figures 2-3 compare sulfur XANES and cadmium EXAFS against reference
+          compounds and cadmium-free biomass, supporting Cd-S coordination;
+          Cd-O ligands also remain unresolved. The separate washed-pellet
+          methylene-blue assay estimates approximately 1 mM CdS from sulfide,
+          not directly measured cadmium recovery.
+      - source_ref: sharma_2000
+        supports: partial
+        explanation: >-
+          No matched cell-free precipitation comparison is reported. Thiosulfate
+          interferes with the sulfide assay and was removed by pellet washing.
+          These experiments do not identify an enzyme, establish a complete
+          cadmium mass balance, or distinguish all abiotic contributions.
+curation_history:
+  - timestamp: '2026-10-11T04:34:43Z'
+    curator: codex (GPT-6)
+    action: CREATE
+    summary: >-
+      Added cadmium identity and India's dated committee-list designation,
+      with primary Cd-1 precipitation evidence, spectroscopy and assay limits,
+      unresolved controls, and explicit laboratory scope.
+history_refs:
+  - history/records/cadmium/2026-10-11T043443Z-codex-9ca538.yaml
