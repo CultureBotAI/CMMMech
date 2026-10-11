@@ -1,0 +1,374 @@
+# Independent scientific review of Lizardite
+
+- Review: 20261011T102943Z-lizardite-round16-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T10:25:50Z
+- Finished UTC: 2026-10-11T10:29:43Z
+- Reviewer: Codex /root/round16_produced_water (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Identity and the bounded mechanism are supported; retained scientific and access limitations prevent a stronger general claim. No actionable record defect identified in this scope.
+
+## Scope And Provenance
+
+Scientific and provenance assessment of this final new mineral record.
+
+Selection: One assigned new record; all fields and linked CREATE history reviewed.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base b714ce2bd8050d5e19ed9ca072460ba2b8154c3b.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:lizardite | data/records/lizardite.yaml | maintained | Lizardite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named-record validation | passed | True | cmmmech:lizardite | Reviewer ran this command to terminal exit 0: 3 records, 0 failed. Exact target hashes rechecked unchanged. |
+| Native full checks | passed | True | cmmmech:lizardite | Parent executed and reviewer independently read terminal receipt/log; /private/tmp/cmm-round16-final-batch.log: uv run --locked --extra dev python scripts/check.py<br>All checks passed!<br>........................................................................ [ 23%]<br>........................................................................ [ 46%]<br>........................................................................ [ 69%]<br>....................................................sss................. [ 92%]<br>.......................                                                  [100%]<br>308 passed, 3 skipped in 123.11s (0:02:03)<br>Checked 128 record(s); 0 failed.<br>Checked 144 history record(s); 0 error(s).<br> |
+| Required corpus | passed | True | cmmmech:lizardite | Parent executed and reviewer independently read terminal receipt/log; /private/tmp/cmm-round16-final-require.log: Checked 128 record(s); 0 failed.<br> |
+| Trusted-base history | passed | True | cmmmech:lizardite | Parent executed and reviewer independently read terminal receipt/log; /private/tmp/cmm-round16-final-history.log: Checked 144 history record(s); 0 error(s).<br> |
+
+## Scientific And Domain Assessments
+
+### Mineral species and constituent boundary
+
+identity: supported. Targets: cmmmech:lizardite.
+
+Lizardite species/formula matches the IMA row; no inherited criticality.
+
+### Assay-specific microbial transformation
+
+evidence: supported. Targets: cmmmech:lizardite.
+
+The selected C4-10 assay supports a conditional culture/control dissolution contrast. Correlations remain separate from gene necessity and source inconsistencies are explicit.
+
+### Exact current record and actual creation session
+
+provenance: supported. Targets: cmmmech:lizardite.
+
+Inspect captured final working-tree bytes at the merged trusted base; sidecar actor, timestamp and target agree with actual creation.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/lizardite.yaml; Complete final YAML and linked CREATE sidecar | supports | All fields and history were independently read against the captured final bytes. No criticality or external mineral identifier is inferred. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; PDF page 127 row and pages 1-2 column definitions | supports | Reviewer independently inspected the retained official PDF text and rendered row. Mineral name, formula and grandfathered status match; historical years are not approval identifiers. Retained download rechecked, not a new reviewer download. |
+| primary | https://doi.org/10.1128/aem.02554-25; Main Materials and Methods, lizardite Results, Figure 2A-E and supplement pp. 1-2 | supports | Independent XML/supplement reading and Figure 2 image confirm the narrowly stated culture/control contrast and retained inconsistencies. Gene necessity is untested; actual published results remain distinct from proposed mechanisms. |
+| taxon | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=412384&amp;mode=Info; Live browser name/rank and retained authority XML | supports | Priestia aryabhattai taxon 412384 is species rank. Independently read retained NCBI assembly report GCA_039631325.1 linking C4-10 and BioSample SAMN41260351; web assembly page failed. No assembly quality claim is curated. |
+| search | /private/tmp/cmm-round16-silicate-independent/search.json; Exact DOI correction queries and dedup.log | context_only | No applicable notice surfaced in the bounded result sets. Nearby records and new targets were checked by identity and DOI; Cai forsterite/talc are one study, not independent replications. |
+| supplement | https://doi.org/10.1128/aem.02554-25; Supporting PDF pp. 1-2; Figure 2 image from associated package | context_only | Read the siderophore threshold and separation methods; visually checked the pH dip/rebound and assay trajectories. Cell-associated measurements do not establish intracellular localization. |
+| gates | /private/tmp/cmm-round16-gate-receipts.json; Finished receipt and /private/tmp/cmm-round16-final-{batch,require,history}.log | supports | Actual terminal batch result: 308 tests passed, 3 skipped; 128 records and 144 history sessions valid. Separate nonempty and trusted-base history checks passed; reviewed hashes remain unchanged. |
+
+## Limits And Additional Notes
+
+- Feed phase purity is not quantified; acid-matched controls and gene perturbations are unavailable.
+- The record retains the source pH-pattern and siderophore-threshold inconsistencies. Assembly platform/completeness differs between article and NCBI; those claims are uncurated.
+- Bounded literature searches cannot establish absence of all contrary evidence. No pure-product recovery or industrial application is established.
+- Review interval begins at the first recorded canonical inspection completion time for this assigned three-target review round. Lizardite was re-inspected after an author spacing-only polish; final captured bytes are assessed. Each record receives its own verdict and artifact.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T102943Z-lizardite-round16-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Lizardite
+started_at: '2026-10-11T10:25:50Z'
+finished_at: '2026-10-11T10:29:43Z'
+reviewer:
+  identity: Codex /root/round16_produced_water
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: A separate /root/round16_silicates agent authored the record
+    and CREATE history. Reviewer read primary evidence and authority entries independently
+    and made no target edits. Shared worktree is disclosed.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Identity and the bounded mechanism are supported; retained scientific and
+  access limitations prevent a stronger general claim. No actionable record defect
+  identified in this scope.
+source:
+  git_revision: b714ce2bd8050d5e19ed9ca072460ba2b8154c3b
+  state: working_tree
+  inputs:
+  - path: data/records/lizardite.yaml
+    sha256: 535a6f4a0c3f74f254ab0f3d19c4ead03774d16a8c83f7769d1c4aeac0092684
+    role: target
+  - path: history/records/lizardite/2026-10-11T102453Z-codex-c8e63a.yaml
+    sha256: 3fb097343dffa36aa2a0b12de8978cfd45ab8239a235d3d234ec87f1ac1f4559
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Scientific and provenance assessment of this final new mineral record.
+  selection: One assigned new record; all fields and linked CREATE history reviewed.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:lizardite
+  exclusions:
+  - target: Other records, raw-data reanalysis and industrial deployment verification
+    reason: Only this maintained record is judged; contextual reads are not reviews
+      of those other targets.
+targets:
+- target_id: cmmmech:lizardite
+  path: data/records/lizardite.yaml
+  label: Lizardite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lizardite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named-record validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/forsterite.yaml data/records/talc.yaml data/records/lizardite.yaml
+  status: passed
+  required: true
+  summary: 'Reviewer ran this command to terminal exit 0: 3 records, 0 failed. Exact
+    target hashes rechecked unchanged.'
+  target_ids:
+  - cmmmech:lizardite
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: batch
+  name: Native full checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed and reviewer independently read terminal receipt/log;
+    /private/tmp/cmm-round16-final-batch.log: uv run --locked --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 123.11s (0:02:03)
+
+    Checked 128 record(s); 0 failed.
+
+    Checked 144 history record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:lizardite
+- check_id: require
+  name: Required corpus
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed and reviewer independently read terminal receipt/log;
+    /private/tmp/cmm-round16-final-require.log: Checked 128 record(s); 0 failed.
+
+    '
+  target_ids:
+  - cmmmech:lizardite
+- check_id: history
+  name: Trusted-base history
+  command: uv run --locked cmmmech validate-history --base b714ce2bd8050d5e19ed9ca072460ba2b8154c3b
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed and reviewer independently read terminal receipt/log;
+    /private/tmp/cmm-round16-final-history.log: Checked 144 history record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:lizardite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/lizardite.yaml
+  locator: Complete final YAML and linked CREATE sidecar
+  accessed_at: '2026-10-11T10:27:53Z'
+  support: supports
+  summary: All fields and history were independently read against the captured final
+    bytes. No criticality or external mineral identifier is inferred.
+  snapshot_sha256: 535a6f4a0c3f74f254ab0f3d19c4ead03774d16a8c83f7769d1c4aeac0092684
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: PDF page 127 row and pages 1-2 column definitions
+  accessed_at: '2026-10-11T10:27:53Z'
+  support: supports
+  summary: Reviewer independently inspected the retained official PDF text and rendered
+    row. Mineral name, formula and grandfathered status match; historical years are
+    not approval identifiers. Retained download rechecked, not a new reviewer download.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1128/aem.02554-25
+  locator: Main Materials and Methods, lizardite Results, Figure 2A-E and supplement
+    pp. 1-2
+  accessed_at: '2026-10-11T10:27:53Z'
+  support: supports
+  summary: Independent XML/supplement reading and Figure 2 image confirm the narrowly
+    stated culture/control contrast and retained inconsistencies. Gene necessity is
+    untested; actual published results remain distinct from proposed mechanisms.
+  snapshot_sha256: 964dca1e8190032f5d1241c843ee052b642bd949ddc917e7245569975a64a344
+- evidence_id: taxon
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=412384&mode=Info
+  locator: Live browser name/rank and retained authority XML
+  accessed_at: '2026-10-11T10:27:53Z'
+  support: supports
+  summary: Priestia aryabhattai taxon 412384 is species rank. Independently read retained
+    NCBI assembly report GCA_039631325.1 linking C4-10 and BioSample SAMN41260351;
+    web assembly page failed. No assembly quality claim is curated.
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round16-silicate-independent/search.json
+  locator: Exact DOI correction queries and dedup.log
+  accessed_at: '2026-10-11T10:27:53Z'
+  support: context_only
+  summary: No applicable notice surfaced in the bounded result sets. Nearby records
+    and new targets were checked by identity and DOI; Cai forsterite/talc are one
+    study, not independent replications.
+  search_scope: Ignored and hidden files included; relevant symlinks followed across
+    data, research, reviews, history and named silicate raw directory. First returned
+    web query sets only; no machine-wide or exhaustive absence claim.
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://doi.org/10.1128/aem.02554-25
+  locator: Supporting PDF pp. 1-2; Figure 2 image from associated package
+  accessed_at: '2026-10-11T10:27:53Z'
+  support: context_only
+  summary: Read the siderophore threshold and separation methods; visually checked
+    the pH dip/rebound and assay trajectories. Cell-associated measurements do not
+    establish intracellular localization.
+  snapshot_sha256: f48212f02220c34f9900690484231823cca2f11c2475566713a35bc465ba1465
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round16-gate-receipts.json
+  locator: Finished receipt and /private/tmp/cmm-round16-final-{batch,require,history}.log
+  accessed_at: '2026-10-11T10:29:43Z'
+  support: supports
+  summary: 'Actual terminal batch result: 308 tests passed, 3 skipped; 128 records
+    and 144 history sessions valid. Separate nonempty and trusted-base history checks
+    passed; reviewed hashes remain unchanged.'
+  snapshot_sha256: 263a0f7e628e4fe4a4b77dd731b52a9f17ca7b155ecfef8f0913367d4057543b
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral species and constituent boundary
+  outcome: supported
+  summary: Lizardite species/formula matches the IMA row; no inherited criticality.
+  target_ids:
+  - cmmmech:lizardite
+  evidence_ids:
+  - record
+  - ima
+  - search
+  dimensions:
+  - name: material_kind
+    value: mineral
+    definition: Exact mineral species, distinct from elements, generic rocks and commercial
+      mixtures.
+    evidence_ids:
+    - record
+    - ima
+  - name: criticality
+    value: Not asserted
+    definition: No jurisdiction/list/edition claim inherited from constituent elements.
+    evidence_ids:
+    - record
+- assessment_id: mechanism
+  area: evidence
+  topic: Assay-specific microbial transformation
+  outcome: supported
+  summary: The selected C4-10 assay supports a conditional culture/control dissolution
+    contrast. Correlations remain separate from gene necessity and source inconsistencies
+    are explicit.
+  target_ids:
+  - cmmmech:lizardite
+  evidence_ids:
+  - primary
+  - record
+  - taxon
+  - supplement
+  dimensions:
+  - name: organism_and_state
+    value: Growing Priestia aryabhattai C4-10; species ID 412384, assembly strain
+      link checked
+    definition: Reported living assay biomass; species label does not authenticate
+      a strain.
+    evidence_ids:
+    - primary
+    - taxon
+  - name: scale_and_outcome
+    value: Laboratory observation; no isolated product yield or deployment claim
+    definition: The curated result is bounded to the stated substrate, conditions
+      and comparisons.
+    evidence_ids:
+    - record
+    - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Exact current record and actual creation session
+  outcome: supported
+  summary: Inspect captured final working-tree bytes at the merged trusted base; sidecar
+    actor, timestamp and target agree with actual creation.
+  target_ids:
+  - cmmmech:lizardite
+  evidence_ids:
+  - record
+  - gates
+findings: []
+actions: []
+limitations:
+- Feed phase purity is not quantified; acid-matched controls and gene perturbations
+  are unavailable.
+- The record retains the source pH-pattern and siderophore-threshold inconsistencies.
+  Assembly platform/completeness differs between article and NCBI; those claims are
+  uncurated.
+- Bounded literature searches cannot establish absence of all contrary evidence. No
+  pure-product recovery or industrial application is established.
+tags:
+- round16
+- independent
+- scientific-review
+- mineral
+notes:
+- Review interval begins at the first recorded canonical inspection completion time
+  for this assigned three-target review round. Lizardite was re-inspected after an
+  author spacing-only polish; final captured bytes are assessed. Each record receives
+  its own verdict and artifact.
+```

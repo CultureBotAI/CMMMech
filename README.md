@@ -132,6 +132,12 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Dittmarite](data/records/dittmarite.yaml) | Fungal transformation of an XRD-identified synthetic phosphate feed | Source calls the feed struvite; monohydrate identity and no recovery yield remain explicit |
 | [Glushinskite](data/records/glushinskite.yaml) | Fungal magnesium oxalate dihydrate formation | Same experiment as dittmarite and magnesium; mixed product is not a pure-phase yield |
 | [Lithium-bearing geothermal brine](data/records/lithium-bearing-geothermal-brine.yaml) | Ureolytic carbonate precipitation during brine pretreatment | Natural primary resource; aqueous lithium retention is not isolated lithium recovery |
+| [Forsterite](data/records/forsterite.yaml) | Fungal culture-associated dissolution and magnesium oxalate formation | Chemical oxalate also dissolves the feed; solution magnesium is not a recovery yield |
+| [Talc](data/records/talc.yaml) | Low magnesium release in the same fungal comparison | No secondary mineral recovered in that assay; no matched abiotic talc trajectory |
+| [Lizardite](data/records/lizardite.yaml) | C4-10 culture-associated magnesium and silicon release | Acidification and gene correlations do not establish gene necessity or isolated recovery |
+| [Vivianite](data/records/vivianite.yaml) | Culture-associated precipitation from a defined Fe(II) medium | Dominant phase in a mixed product; no demonstrated Fe(III) reduction or pure-product yield |
+| [Siderite](data/records/siderite.yaml) | Co-occurring carbonate in the same culture experiment | Separate mineral identity, shared experiment and unquantified phase abundance |
+| [Oil and gas produced water](data/records/oil-and-gas-produced-water.yaml) | USGS production-stream identity and resource context | Identity-only secondary resource; microbial treatment evidence remains deferred |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -154,7 +160,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [thirteenth expansion reviews](research/ingests/round13-20261011-publication.md),
 [fourteenth expansion reviews](research/ingests/round14-20261011-publication.md),
 [fifteenth expansion reviews](research/ingests/round15-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round15-frontier-20261011.md), and
+[sixteenth expansion reviews](research/ingests/round16-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round16-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

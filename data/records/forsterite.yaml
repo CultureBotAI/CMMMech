@@ -1,0 +1,67 @@
+id: cmmmech:forsterite
+name: Forsterite
+material_kind: mineral
+description: Forsterite is the Mg2(SiO4) mineral species, grandfathered in the September 2026 IMA list.
+  This species is distinct from elemental magnesium or silicon and from generic magnesium-bearing rocks
+  or commercial mineral mixtures. No constituent criticality is inherited. This record and the companion
+  talc record curate different substrates in the same Cai 2013 experiment, not independent studies.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026; PDF page 77, Forsterite row, and pages
+    1-2 definitions and terms.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-11'
+- id: cai_2013
+  title: Cai, Xiao, Huang, Li and Zhou (2013). Solubilization of Magnesium-Bearing Silicate Minerals
+    and the Subsequent Formation of Glushinskite by Aspergillus niger. Geomicrobiology Journal 30(4):302-312.
+    DOI 10.1080/01490451.2012.688924; methods pp303-304, Tables 1-2, Results pp304-305 and Discussion
+    pp307-308.
+  url: https://doi.org/10.1080/01490451.2012.688924
+  accessed_on: '2026-10-11'
+- id: ncbi_niger
+  title: NCBI Taxonomy 5061 - Aspergillus niger, species rank; taxonomy XML inspected 11 October 2026.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061&mode=Info
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: fungal_forsterite_dissolution
+  name: Culture-associated forsterite dissolution with secondary magnesium oxalate formation
+  process: bioleaching
+  description: Growing Aspergillus niger cultures with a forsterite feed contained dissolved magnesium
+    and yielded precipitate assigned by the authors to glushinskite. Chemical oxalate controls also
+    dissolved forsterite; the result supports conditional fungal-associated mineral transformation rather
+    than microbial necessity or magnesium-metal recovery.
+  context: The reported Aspergillus niger strain has no collection accession in the inspected paper;
+    NCBI:5061 resolves only the species. Mineral powders were washed and sonicated, exposed to 0.1 mM
+    HCl for one hour, rinsed and air-dried; feed XRD purity is reported but its patterns are not shown.
+    In the selected Mg-source comparison, minus-200-mesh particles supplied 0.01 mol Mg to 95 mL Czapek-based
+    medium plus 5 mL inoculum at 10^7 spores/mL. Initial pH was adjusted to 8.15; growing cultures were
+    shaken at 150 rpm and 30 degrees C for ten days. The separate particle-size and filtered-MgSO4-supernatant
+    experiments are not pooled with this comparison.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:5061
+    label: Aspergillus niger
+  evidence:
+  - source_ref: cai_2013
+    supports: support
+    explanation: Table 1 reports final supernatant Mg of 1.854 x 10^-2 mol/L with forsterite versus
+      3.121 x 10^-4 mol/L with talc, measured by ICP-AES. Table 2 gives forsterite abiotic-control Mg
+      at 1.32, 5.09 and 6.10 mM with initial oxalic acid of 0, 100 and 200 mM respectively after ten
+      days. Results p305 assign the forsterite-culture precipitate in Figure 3a to monoclinic glushinskite;
+      the talc arm had no recovered secondary mineral after ten days.
+  - source_ref: cai_2013
+    supports: partial
+    explanation: Initial acid doses in the abiotic comparison do not reproduce the culture pH and metabolite
+      trajectories, so the data do not isolate oxalate from other fungal products or proton effects.
+      No replicate counts or measurement uncertainties are specified for Tables 1-2 in the inspected
+      article. Supernatant Mg remaining after precipitation is not a total dissolution or isolated-product
+      yield. Feed purity and product identity are the published analytical assignments, not independently
+      reprocessed diffraction data. The experiment is laboratory-scale and does not establish industrial
+      deployment.
+curation_history:
+- timestamp: '2026-10-11T10:24:35.653580+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created forsterite species record with bounded fungal dissolution and abiotic controls.
+history_refs:
+- history/records/forsterite/2026-10-11T102433Z-codex-ff90a8.yaml

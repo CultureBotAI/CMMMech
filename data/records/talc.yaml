@@ -1,0 +1,65 @@
+id: cmmmech:talc
+name: Talc
+material_kind: mineral
+description: Talc is the Mg3Si4O10(OH)2 mineral species, grandfathered in the September 2026 IMA list.
+  This species is distinct from elemental magnesium or silicon and from generic magnesium-bearing rocks
+  or commercial mineral mixtures. No constituent criticality is inherited. This record and the companion
+  forsterite record curate different substrates in the same Cai 2013 experiment, not independent studies.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026; PDF page 211, Talc row, and pages
+    1-2 definitions and terms.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-11'
+- id: cai_2013
+  title: Cai, Xiao, Huang, Li and Zhou (2013). Solubilization of Magnesium-Bearing Silicate Minerals
+    and the Subsequent Formation of Glushinskite by Aspergillus niger. Geomicrobiology Journal 30(4):302-312.
+    DOI 10.1080/01490451.2012.688924; methods pp303-304, Tables 1-2, Results pp304-305 and Discussion
+    pp307-308.
+  url: https://doi.org/10.1080/01490451.2012.688924
+  accessed_on: '2026-10-11'
+- id: ncbi_niger
+  title: NCBI Taxonomy 5061 - Aspergillus niger, species rank; taxonomy XML inspected 11 October 2026.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061&mode=Info
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: fungal_talc_dissolution_limit
+  name: Limited magnesium release from talc during fungal culture
+  process: bioleaching
+  description: Aspergillus niger grew with talc as the supplied magnesium source, but the final dissolved
+    magnesium concentration was much smaller than in the companion forsterite culture. No secondary
+    mineral was recovered from the talc treatment after ten days. This is a substrate-dependent laboratory
+    observation, not evidence that talc is universally resistant to microbial transformation.
+  context: The reported Aspergillus niger strain has no collection accession in the inspected paper;
+    NCBI:5061 resolves only the species. Mineral powders were washed and sonicated, exposed to 0.1 mM
+    HCl for one hour, rinsed and air-dried; feed XRD purity is reported but its patterns are not shown.
+    In the selected Mg-source comparison, minus-200-mesh particles supplied 0.01 mol Mg to 95 mL Czapek-based
+    medium plus 5 mL inoculum at 10^7 spores/mL. Initial pH was adjusted to 8.15; growing cultures were
+    shaken at 150 rpm and 30 degrees C for ten days. The separate particle-size and filtered-MgSO4-supernatant
+    experiments are not pooled with this comparison.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:5061
+    label: Aspergillus niger
+  evidence:
+  - source_ref: cai_2013
+    supports: support
+    explanation: Table 1 reports final talc-culture Mg of 3.121 x 10^-4 mol/L by ICP-AES and total oxalate
+      species of 0.039 mol/L by HPLC, compared with forsterite-culture Mg of 1.854 x 10^-2 mol/L. Results
+      pp304-305 report acidification followed by pH increase and no secondary precipitate after ten
+      days in the talc arm.
+  - source_ref: cai_2013
+    supports: partial
+    explanation: Table 2 tests abiotic oxalic-acid dissolution of forsterite, not talc. A matched uninoculated
+      talc trajectory is not reported, so the talc observation does not quantify a microbial enhancement
+      over abiotic dissolution. Replicate counts and uncertainties for Table 1 are unspecified. The
+      authors explain the precipitation null by an apparent concentration product, but this is not a
+      measured recovery yield or general thermodynamic validation. The experiment does not establish
+      purified magnesium recovery or industrial deployment.
+curation_history:
+- timestamp: '2026-10-11T10:24:47.919181+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created talc species record preserving low-release and no-secondary-mineral outcomes.
+history_refs:
+- history/records/talc/2026-10-11T102447Z-codex-d0e525.yaml
