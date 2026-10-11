@@ -195,8 +195,11 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Stibnite](data/records/stibnite.yaml) | Aerobic culture-associated antimony mobilization and oxidation | Loading conflict, abiotic chemistry and relative phases limit causal and recovery claims |
 | [Bornite](data/records/bornite.yaml) | Culture-associated copper leaching and biofilm observations | Mixed specimens, source conflicts and apparatus differences limit mineral-specific yield and causality |
 | [Arsenopyrite](data/records/arsenopyrite.yaml) | Culture-associated arsenic release and secondary-solid formation | Missing matched controls and incomplete mass accounting limit passivation and recovery claims |
-| [Molybdenite](data/records/molybdenite.yaml) | Controlled limited-leaching observation in a mixed natural specimen | Mo below 2 mg/L and qualitative residual phases do not establish zero dissolution or recovery |
+| [Molybdenite](data/records/molybdenite.yaml) | Controlled limited-leaching observation and a separate concentrate comparison | Censored Mo and ambiguous residue percentages do not establish zero dissolution or extraction yield |
 | [Chromite beneficiation tailings](data/records/chromite-beneficiation-tailings.yaml) | Separate bacterial and fungal treatment studies of mixed residues | Source unit conflicts, absent controls and incomplete percentage normalization remain explicit |
+| [Pyrite](data/records/pyrite.yaml) | Methanogen growth on a natural specimen with separate synthetic-phase reduction assays | Mineral-access dependence does not resolve electron transfer, uptake or recovered-product yield |
+| [Chalcocite](data/records/chalcocite.yaml) | Culture-associated leaching observations in mineral separates and mixtures | Feed composition, controls and an inconsistent extraction equation limit causal and yield claims |
+| [Covellite](data/records/covellite.yaml) | Phase formation from mine drainage using biogenic sulfide | Separate chemical precipitation; inconsistent composition values cannot establish purity or recovery yield |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -236,7 +239,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [thirtieth expansion reviews](research/ingests/round30-20261011-publication.md),
 [thirty-first expansion reviews](research/ingests/round31-20261011-publication.md),
 [thirty-second expansion reviews](research/ingests/round32-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round32-frontier-20261011.md), and
+[thirty-third expansion reviews](research/ingests/round33-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round33-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 
