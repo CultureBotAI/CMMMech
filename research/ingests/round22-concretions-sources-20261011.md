@@ -1,0 +1,56 @@
+# Round22 Baltic nodule source assessment
+
+Recorded 2026-10-11T13:17:01.967736+00:00 by codex (GPT-6; codex), lane `round22_shallow_concretions`.
+
+## Scope and provenance
+
+Worktree `/private/tmp/CMMMech-expansion-round22-20261011`, branch `curate/cmm-expansion-round22-20261011`, trusted base `b19103bb393096e405bbecd2808a1aa0e01bb200`. Root confirmed the baseline completed with 308 tests passed, 3 skipped, 152 records and 169 histories before authoring clearance. This lane changes only [polymetallic nodules](../../data/records/polymetallic-nodules.yaml), its new EDIT history and this research handoff. Batch issue is [#80](https://github.com/CultureBotAI/CMMMech/issues/80). Independent scientific acceptance follows separately.
+
+The existing resource definition already covers marine iron-manganese concretions and says they *commonly* occur on abyssal sediments; it is not restricted to deep water. Shallow Baltic origin therefore does not justify a duplicate root. This curation attaches only the discoidal and spheroidal nodule arms. The studies' flat crust morphotype remains a separate experimental comparison, and no result is transferred to the distinct rock-surface cobalt-rich crust record. Elements, mineral species, primary resource and secondary materials remain distinct. No criticality designation or external material/taxon identifier is added.
+
+## Search and acquisition log
+
+The [paired JSON](round22-concretions-sources-20261011.json) contains all 11 exact web queries, dates, source opens, file URLs, actual HTTP acquisition times, MIME types, bytes and SHA-256 hashes. Queries were run on 2026-10-11, with no filters and only the first returned result sets; no pagination or complete correction-index audit was performed. Exact query times were not retained. Correction/retraction searches covered both mechanism DOIs and the mineralogy DOI; no corrective notice was identified in the returned sets, which is a bounded result rather than proof none exists.
+
+`rg --no-ignore --hidden --follow` searched `data/records`, `research`, `reviews`, `history`, `/private/tmp/cmm-round21-crusts-raw`, `/private/tmp/cmm-round20-nodule-raw` and this lane's raw directory, using DOI, PMCID and material words. The saved command exited 0 with 769 matching lines, including full source XML and this investigation's files. PDFs were extracted separately. The results include the prior frontier lead and existing broad nodule record, not an independent accepted Baltic experiment. Hidden and ignored files and relevant symlinks were included; unrelated home/temp directories were excluded. No machine-wide absence or scientific exhaustion is claimed.
+
+The 2025 primary 15-page PDF was acquired from Helsinki, and its publisher full HTML was also read through the web tool. Its linked `gbi70010-sup-0001-Supinfo.docx` returns 403 through web and direct HTTP. The 2026 full Europe PMC XML and LUKE 27-page PDF were acquired. The actual PMC page returned a browser challenge, and a purported supplement download returned HTML rather than DOCX; that file is explicitly rejected as evidence. Europe PMC's supplementary package timed out twice. The original Helsinki 2025 and LUKE 2026 repository file bundles each list one primary PDF on their complete one-page inventories; neither inspected bundle contained SI. This does not establish absence from every repository. No challenge was bypassed, and no inaccessible supplementary table is represented as read.
+
+## Candidate inventory and claim assessment
+
+### Majamäki et al. 2025 — narrowed curation
+
+[DOI 10.1111/gbi.70010](https://doi.org/10.1111/gbi.70010), *Microbially Enhanced Growth and Metal Capture by Ferromanganese Concretions in a Laboratory Experiment*, Geobiology 23(1):e70010. Publisher and Crossref identify online publication on 2 February 2025; January issue metadata and the PDF's August repository-download watermark are different dates. The publisher paper and repository licensing identify CC BY; the LUKE metadata explicitly says CC BY 4.0.
+
+Methods 2.1–2.4, Tables 1–2 and Figures 5–7 support the 2022-sampling 12-week laboratory experiment: natural rinsed nodules, 125 mL artificial brackish seawater, 3.5 degrees C, darkness, 100 rpm, three biotic bottles and one 15 mM azide comparator at each destructive timepoint. The retained mixed communities are not identified causal strains. Source pH varies rather than remaining experimentally fixed.
+
+Results 3.3/Figure 5 document three selected local thickness points, 4.2, 5.2 and 6.2 µm, on one imaged spheroidal patch. These are not three independent growth replicates, a bulk nodule mass change, an observed annual production rate or recovered-metal yield. The approximately 10 µm maximum cited in the abstract belongs to the flat-crust comparison. Figure 6 SEM/EDS grains are O/Fe/Mn-bearing, but detached grains reattaching to slides remain the authors' explicit alternative explanation. CT growth bottles have no reported poisoned CT series.
+
+Results 3.4/Figure 7b–c support qualitative solution trends: biotic mean metal concentrations decreased in both nodule morphotypes, while controls generally increased with stated Fe, V and Zn exceptions. These panels normalize concentrations and compute relative change; their concentration-unit labels do not turn dimensionless ratios into original assay cells. High biotic variability and the unreplicated control limit comparisons. No raw SI concentration, exact unreviewed formulation or mass balance is imported. The inferred redox pathways and methanotroph roles remain proposed. Density/porosity-based volumes and annualized rates remain calculations.
+
+### Majamäki et al. 2026 — separate conditional partitioning
+
+[DOI 10.1111/1462-2920.70390](https://doi.org/10.1111/1462-2920.70390), *Different Ferromanganese Concretion Morphologies Host Distinct Microbial Communities and Metal Accumulation Patterns in the Baltic Sea*, Environmental Microbiology 28(7):e70390; online 23 July 2026. Europe PMC XML states CC BY 4.0. Full Methods 2.1–2.6, Results 3.2–3.3 and Discussion 4.1–4.2 were read; Figures 5–7 and 11–13 were visually inspected from the repository PDF.
+
+The new metal experiment used 2023-sampling material, 130 mL artificial brackish seawater, 30-fold greater Fe/Mn inputs, 50 mM azide and 15 weeks. Conditions are not interchangeable with the earlier experiment. It also analyses community samples from 2022, which are reused earlier samples, not additional independent metal microcosms. Starting bottle loads differ between destructive timepoints; the 24.0 versus 17.8 g discoidal means are not evidence of mass loss from the same nodules. Methods/Table 1 switch site-2/site-3 coordinate associations relative to the earlier paper; exact coordinates are not reconciled or imported. Morphotypes and experiment years are retained explicitly.
+
+Figure 5b–c and Results 3.3 show biotic solution Mn decreasing but Fe increasing. A lower endpoint than an azide comparator does not necessarily mean net removal from the initial solution. Figures 6–7 show a distinct acid-washed bottle-wall fraction: Mn is higher in spheroidal biotic washes but lower in discoidal biotic washes than the respective comparator. Both comparator and biotic bottles accumulate material. Solution depletion cannot all be assigned to nodule growth. Absolute recovered mass is not derived: Methods 2.3 says 5 mL acid plus three 5 mL rinses, then a final 10 mL solution, an unresolved arithmetic inconsistency. Some broad text claims for minor-element wash trends are difficult to reconcile visually; no blanket all-metal deposit advantage is adopted, and exact SI rows are needed for further import.
+
+The authors explicitly note statistical weakness, azide chemistry/redox effects and excessive N2O in poisoned controls. pH and feed loading also differ. DNA/RNA community associations do not identify an individually causal species or distinguish communities shaping morphology from communities responding to it; the authors retain this directionality uncertainty. No enzyme, new pure mineral phase, saleable metal grade or deployment claim is accepted. Source-named accession PRJNA1417979 was not independently resolved or sampled in this lane and is not asserted in the curated record.
+
+### Wasiljeff et al. 2025 — context, not a new record
+
+[DOI 10.1016/j.gca.2025.05.012](https://doi.org/10.1016/j.gca.2025.05.012), *Mineral phases and growth conditions of morphologically diverse shelfal ferromanganese concretions*, Geochimica et Cosmochimica Acta 400:227–247. The 21-page CC BY 4.0 PDF was acquired; Introduction and scope were inspected to adjudicate identity. Its shelfal setting, mixed phases and porous morphology do not alone justify splitting this corpus's existing resource. The analytical results and SI were not fully reviewed, so no mineral species or mechanistic result is curated from it.
+
+## Curation, preservation and checks
+
+Existing identity fields, original deep-sea enrichment mechanism, original two sources, prior inline event and prior history reference were checked for exact parsed equality to the trusted base. They remain unchanged. New record SHA-256 is `ac8458db0730c8064ccf42d4db53459861a95370567747be2d1fd3d3b8065751`. The actual helper-created EDIT sidecar is [history/records/polymetallic-nodules/2026-10-11T131517Z-codex-d9bfef.yaml](../../history/records/polymetallic-nodules/2026-10-11T131517Z-codex-d9bfef.yaml) with SHA-256 `1d643167cfc9f995704da95170d3acbedd890d5fa2d44f0166c3deae4d82666f`. The separate inline event describes present work. Single-file validation returned `Checked 1 record(s); 0 failed.` This author assessment does not claim independent review or completed batch gates.
+
+Raw PDFs, XML, challenge response, receipts and rendered pages remain outside Git in `/private/tmp/cmm-round22-concretions-raw`. The committed artifacts contain provenance and original assessment, not redistributed bulk primary text. No quantitative dataset is imported; native mg/kg source-cell validation is therefore inapplicable to these qualitative/local-dimension claims.
+
+## Priorities and unresolved questions
+
+1. Acquire both genuine supplementary DOCX files. Check exact media compositions, concentrations, censored values and table/figure mappings before any quantitative extension; resolve 2026 acid-wash volume and minor-element text/figure differences.
+2. Seek chemistry-matched, replicated controls for the natural nodule assays; distinguish azide effects from biological contributions and quantify receiving compartments. This remains an evidence gap, not a requested new experiment.
+3. Investigate the newly returned [2025 Baltic biomarker source](https://doi.org/10.3389/fmars.2025.1717972) and the original [1982 budding-bacteria study](https://doi.org/10.1128/aem.43.6.1464-1472.1982). They are leads only here. Biomarkers or isolate origin alone cannot prove nodule growth or extraction.
+4. Complete independent review of this final record state. The two laboratory studies do not establish industrial extraction or environmental superiority, and the bounded investigation does not establish source exhaustion.

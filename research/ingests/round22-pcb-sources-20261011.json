@@ -1,0 +1,180 @@
+{
+  "schema": "CMMMech source dossier (descriptive, not native scientific record)",
+  "generated_at": "2026-10-11T13:17:48.373186+00:00",
+  "researcher": {
+    "name": "codex",
+    "model": "GPT-6",
+    "tool": "codex"
+  },
+  "base": "b19103bb393096e405bbecd2808a1aa0e01bb200",
+  "branch": "curate/cmm-expansion-round22-20261011",
+  "issue": 80,
+  "searches": [
+    {
+      "provider": "web search",
+      "query": "\"10.1016/j.mineng.2023.108459\" correction retraction",
+      "date": "2026-10-11",
+      "filters": "none",
+      "coverage": "first returned set; no pagination; exact query timestamps not retained"
+    },
+    {
+      "provider": "web search",
+      "query": "\"A high productivity bioprocess\" dataset copper",
+      "date": "2026-10-11",
+      "filters": "none",
+      "coverage": "first returned set; no pagination; exact query timestamps not retained"
+    }
+  ],
+  "duplicate_search": {
+    "command": "rg -n --no-ignore --hidden --follow '161670|108459|high productivity bioprocess' data/records research reviews history /private/tmp/cmm-round22-pcb-raw /private/tmp/cmm-round21-pcb-raw -g '*.yaml' -g '*.md' -g '*.json' -g '*.txt'",
+    "receipt": "/private/tmp/cmm-round22-pcb-final-dedup.txt",
+    "sha256": "c3ca1ccce96de64f2f2648ec84202e5449d128e72e704771a62258fda161fd5b",
+    "scope": "hidden/ignored included, relevant symlinks followed; bounded named directories, not machine-wide",
+    "finding": "Existing PCB identity and round21 frontier; update existing target, do not create duplicate."
+  },
+  "acquisitions": [
+    {
+      "path": "/private/tmp/cmm-round22-pcb-raw/accepted-manuscript.pdf",
+      "url": "https://idus.us.es/server/api/core/bitstreams/bf5e6054-a962-47b4-bee1-1720300fb1db/content",
+      "started_at": "2026-10-11T13:08:41.646009+00:00",
+      "finished_at": "2026-10-11T13:08:44.266643+00:00",
+      "exit_code": 0,
+      "http": "200|https://idus.us.es/server/api/core/bitstreams/bf5e6054-a962-47b4-bee1-1720300fb1db/content|application/pdf;charset=UTF-8",
+      "error": "",
+      "bytes": 960633,
+      "sha256": "dfad516802ab79b1058e2d6659479bf18e851838cd731e79a16a0821ad82bff6",
+      "magic": "255044462d312e35"
+    },
+    {
+      "path": "/private/tmp/cmm-round22-pcb-raw/upc-manuscript.pdf",
+      "url": "https://upcommons.upc.edu/server/api/core/bitstreams/f07097b6-b4de-47bc-9520-3c20147e472a/content",
+      "started_at": "2026-10-11T13:08:41.646902+00:00",
+      "finished_at": "2026-10-11T13:08:44.432425+00:00",
+      "exit_code": 0,
+      "http": "200|https://upcommons.upc.edu/server/api/core/bitstreams/f07097b6-b4de-47bc-9520-3c20147e472a/content|application/pdf;charset=UTF-8",
+      "error": "",
+      "bytes": 621191,
+      "sha256": "c47f6fd7db4612c16a45669f62f1dfb766bf7744049e9d2cb1bb967db7ae325c",
+      "magic": "255044462d312e37"
+    },
+    {
+      "path": "/private/tmp/cmm-round22-pcb-raw/dataset-bundles.json",
+      "url": "https://idus.us.es/server/api/core/items/a627a7fa-9068-4743-bd98-5c1b00e0e2f9/bundles",
+      "started_at": "2026-10-11T13:08:41.653595+00:00",
+      "finished_at": "2026-10-11T13:08:42.323545+00:00",
+      "exit_code": 0,
+      "http": "200|https://idus.us.es/server/api/core/items/a627a7fa-9068-4743-bd98-5c1b00e0e2f9/bundles|application/hal+json;charset=UTF-8",
+      "error": "",
+      "bytes": 3124,
+      "sha256": "2a9258fd711272b6b05ddeb88260fd26054240cee8038772461c715902e6fdcc",
+      "magic": "7b0a2020225f656d"
+    },
+    {
+      "path": "/private/tmp/cmm-round22-pcb-raw/dataset-metadata.json",
+      "url": "https://idus.us.es/server/api/core/items/a627a7fa-9068-4743-bd98-5c1b00e0e2f9",
+      "started_at": "2026-10-11T13:08:41.656317+00:00",
+      "finished_at": "2026-10-11T13:08:42.363054+00:00",
+      "exit_code": 0,
+      "http": "200|https://idus.us.es/server/api/core/items/a627a7fa-9068-4743-bd98-5c1b00e0e2f9|application/hal+json;charset=UTF-8",
+      "error": "",
+      "bytes": 9449,
+      "sha256": "ab1be3ba406822f37e033622dc33f67edcd0214a83de04f73773ee7cb828104e",
+      "magic": "7b0a202022696422"
+    },
+    {
+      "path": "/private/tmp/cmm-round22-pcb-raw/crossref.json",
+      "url": "https://api.crossref.org/works/10.1016/j.mineng.2023.108459",
+      "started_at": "2026-10-11T13:08:41.656126+00:00",
+      "finished_at": "2026-10-11T13:08:42.131983+00:00",
+      "exit_code": 0,
+      "http": "200|https://api.crossref.org/works/10.1016/j.mineng.2023.108459|application/json",
+      "error": "",
+      "bytes": 18996,
+      "sha256": "5f5f7c6a1c814c5ba7d329c5dc48b7593528f20a4c4b93ca68240f32fa6dcfa8",
+      "magic": "7b22737461747573"
+    },
+    {
+      "url": "https://idus.us.es/server/api/core/bundles/9ab20730-0393-4f8a-b225-27813f3d7c7b/bitstreams",
+      "path": "/private/tmp/cmm-round22-pcb-raw/dataset-original-bitstreams.json",
+      "started_at": "2026-10-11T13:09:39.864231+00:00",
+      "finished_at": "2026-10-11T13:09:40.516498+00:00",
+      "exit_code": 0,
+      "http": "200|application/hal+json;charset=UTF-8",
+      "error": "",
+      "sha256": "ad71c608390481df4b881e5549ef529ea713d18b29ea4dfb16df33e608692dc2",
+      "bytes": 3958
+    },
+    {
+      "path": "/private/tmp/cmm-round22-pcb-raw/experimental-data.xlsx",
+      "url": "https://idus.us.es/server/api/core/bitstreams/1403617d-72b0-471a-8e28-2394ef301fc6/content",
+      "started_at": "2026-10-11T13:10:52.827594+00:00",
+      "finished_at": "2026-10-11T13:10:53.438150+00:00",
+      "exit_code": 0,
+      "http": "200|https://idus.us.es/server/api/core/bitstreams/1403617d-72b0-471a-8e28-2394ef301fc6/content|application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8",
+      "error": "",
+      "bytes": 39077,
+      "sha256": "e058132bb509f6197ef30e192be561af0d92a2ca93eda84e381620acd1a5c4d3",
+      "magic": "504b030414000600"
+    },
+    {
+      "path": "/private/tmp/cmm-round22-pcb-raw/dataset-readme.txt",
+      "url": "https://idus.us.es/server/api/core/bitstreams/76cb2131-ebb3-40ff-b675-450501f96756/content",
+      "started_at": "2026-10-11T13:10:52.828075+00:00",
+      "finished_at": "2026-10-11T13:10:53.428392+00:00",
+      "exit_code": 0,
+      "http": "200|https://idus.us.es/server/api/core/bitstreams/76cb2131-ebb3-40ff-b675-450501f96756/content|text/plain;charset=UTF-8",
+      "error": "",
+      "bytes": 4605,
+      "sha256": "05f2fd04d68797894de73dde255127d9dea24a4cfef9ee6db4684b0e14bf65e9",
+      "magic": "efbbbf4573746520"
+    }
+  ],
+  "workbook": {
+    "path": "/private/tmp/cmm-round22-pcb-raw/experimental-data.xlsx",
+    "sha256": "e058132bb509f6197ef30e192be561af0d92a2ca93eda84e381620acd1a5c4d3",
+    "parsed_cells": {
+      "composition": 170,
+      "Batch": 895,
+      "CSTR": 20,
+      "biooxidation": 83,
+      "SX": 213,
+      "EW": 54
+    },
+    "scope": "All cells parsed; focused claim-cell review, not full numerical reanalysis; exact discrepancies and locators in Markdown",
+    "native_import": false
+  },
+  "accepted": [
+    {
+      "doi": "10.1016/j.mineng.2023.108459",
+      "scope": "Chemical PCB leaching with separate living-column ferric regeneration; synthetic EW explicitly separated"
+    },
+    {
+      "doi": "10.12795/11441/161670",
+      "scope": "Same-experiment contextual dataset and limitations; no independent replication or native observations"
+    }
+  ],
+  "deferred": [
+    "Closed-loop copper/reagent/wash mass balance pending source reconciliation",
+    "Whole-board isolated-product yield unsupported by synthetic EW",
+    "Species-specific causality and matched sterile columns not established"
+  ],
+  "output": {
+    "record": "data/records/waste-printed-circuit-boards.yaml",
+    "record_sha256": "08994df8c73e773c677d9a0397c86c4a23b698380d870923b255fccffb7888dd",
+    "history": "history/records/waste-printed-circuit-boards/2026-10-11T131557Z-codex-cd46c3.yaml",
+    "history_sha256": "2990a3d5082ea2cbf5c7fb2aa264f2e9c8abdd119ce93e700b4d245b7c4a5803",
+    "named_validation": {
+      "exit_code": 0,
+      "stdout": "Checked 1 record(s); 0 failed."
+    },
+    "independent_review": "pending at report freeze",
+    "markdown": "research/ingests/round22-pcb-sources-20261011.md",
+    "timestamped_report": "research/sources/round22-pcb/20261011T131748Z-source-investigation.md"
+  },
+  "limitations": [
+    "Official direct downloads succeeded; web page opens failed",
+    "No exhaustive correction/retraction absence claim",
+    "No full Figure1 graphic inspection claim",
+    "No raw full text or workbook committed"
+  ]
+}

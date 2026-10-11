@@ -1,0 +1,102 @@
+id: cmmmech:seafloor-massive-sulfides
+name: Seafloor massive sulfides
+material_kind: primary_resource
+description: Naturally occurring polymetallic sulfide deposit material formed at or beneath the seafloor
+  by hydrothermal mineralization. This resource includes heterogeneous sulfide-bearing ore and associated
+  gangue, rather than a single mineral species, constituent element, finished metal commodity, or processing
+  residue. USGS distinguishes this hydrothermal resource from polymetallic nodules and cobalt-rich ferromanganese
+  crusts. The curated experiment used collected Japanese marine hydrothermal ores, not seawater alone
+  or pure synthetic sulfides. Their compositions are sample-specific and do not define a universal resource
+  grade. Collection, grinding and washing leave the feed a primary resource. No constituent criticality
+  designation is inherited; the laboratory mechanism does not establish seafloor extraction or industrial
+  deployment.
+sources:
+- id: usgs2025
+  title: U.S. Geological Survey (2025). U.S. Geological Survey Global Seabed Mineral Resources. Fact Sheet
+    2025–3017, version 1.1, April 2025, page 2 Table 1 and polymetallic-sulfide photograph. Hydrothermal
+    resource identity; asterisks identify constituent membership of the US 2022 critical-mineral list,
+    not a resource-wide designation. Previously acquired official PDF re-inspected.
+  url: https://pubs.usgs.gov/fs/2025/3017/fs20253017.pdf
+  accessed_on: '2026-10-11'
+- id: saito2015
+  title: Saito, Haruki, Nomura and Konishi (2015). Bioleaching of Deep-Sea Hydrothermal Ore Deposits by
+    the Acidophilic and Thermophilic Archaeon Acidianus Brierleyi. Journal of MMIJ 131(12):627–633. DOI
+    10.2473/journalofmmij.131.627. Published 1 December 2015; released on J-STAGE 1 January 2016. Japanese
+    full primary paper with English captions; Methods 2.1–2.2, Table 1, Results 3.1–3.5 and Figures 1–9.
+  url: https://doi.org/10.2473/journalofmmij.131.627
+  accessed_on: '2026-10-11'
+- id: dsm1651
+  title: 'DSMZ culture catalogue: Acidianus brierleyi DSM 1651, type strain, from thermal spring drainage
+    in Yellowstone National Park. Confirms the culture accession and organism name reported by Saito et
+    al.; catalogue cultivation conditions are not substituted for the paper protocol.'
+  url: https://www.dsmz.de/collection/catalogue/details/culture/DSM-1651
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: saito2015-archaeal-bioleaching
+  name: Acidianus brierleyi culture-associated copper and zinc leaching from marine hydrothermal ore
+  process: bioleaching
+  microbial: true
+  description: Living, ore-adapted Acidianus brierleyi DSM 1651 cultures increased aqueous copper and
+    zinc extraction from characterized sulfide-bearing ore relative to the source-designated sterile controls.
+    In the sample A Figure 1 experiment, the paper reports approximately 85% copper and 80% zinc extraction
+    after 10 days, versus approximately 4% and 20%, respectively, without inoculation. These are percentages
+    calculated from measured liquid concentrations and the initial ore metal content, not purified-metal
+    recovery. Culture growth and leaching are consistent with iron/sulfur-oxidizing activity; the proposed
+    contributions of cell attachment, ferric-mediated chemical dissolution and sulfur oxidation are not
+    independently isolated by these experiments. Residual sulfides remain, and the result does not apply
+    uniformly to every metal or ore.
+  context: The paper describes ores A, B and C collected from marine hydrothermal deposits near Japan
+    without resolving exact collection sites. Feed was ground, sieved to 38–53 µm, washed twice with distilled
+    water and dried at room temperature. XRD identifies sphalerite, chalcopyrite, galena and montmorillonite;
+    sample A contains 45.4 wt% SiO2 by the source table. The DSM 1651 culture was adapted by serial transfers,
+    with similar leaching after the eighth transfer. Laboratory batch tests used 200 cm3 medium in 500
+    cm3 baffled flasks, 100 rpm and 65°C; some separate runs used an aerated stirred vessel. Modified
+    medium omitted added elemental sulfur and ferrous sulfate and included 0.5 kg/m3 yeast extract. Figure
+    1 used initial loading 5 kg/m3, 1.0 × 10^13 cells/m3 and initial pH 1.8; Results 3.1 reports pH 1.8
+    ± 0.3. Other experiments varied starting pH, loading, inoculum and salt separately. Liquid metal analysis
+    used ICP emission spectroscopy and atomic absorption, with optical free-cell counts. The study includes
+    uninoculated controls but does not report biological replicate counts, uncertainty bars or a detailed
+    sterilization procedure. Matching initial conditions does not establish equal pH/redox histories.
+    Neither the culture's terrestrial origin nor laboratory ore collection establishes in situ operation.
+  evidence:
+  - source_ref: saito2015
+    supports: support
+    explanation: Methods 2.1–2.2 and Table 1 establish natural mixed ore, living DSM 1651 culture, preparation
+      and assay. Results 3.1 and the rendered Figure 1 distinguish sample A copper/zinc inoculated curves
+      from sample A sterile curves and sample B zinc. The text supplies the approximate day-10 values
+      retained here. Figure 2 compares starting material and residues at initial pH 1.2, a different condition
+      from Figure 1; it supports a changed mineral assemblage, not an identical-assay metal balance.
+  - source_ref: saito2015
+    supports: partial
+    explanation: 'Results 3.2–3.3 retain non-target behavior: dissolved Pb and Au were below the reported
+      0.1 g/m3 analytical limit, not measured zero. Anglesite peaks appear in the inoculated residue,
+      consistent with secondary Pb precipitation; the detailed dissolution/precipitation route is inferred.
+      Gallium extraction decreases with increasing ore loading and Ga/Au are enriched in residual material,
+      not isolated products. The reported dissolved-Ga concentration in section 3.3 is incompatible with
+      the Table 1 feed inventory at the stated loadings, so that numerical concentration and a closed
+      Ga balance are not accepted.'
+  - source_ref: saito2015
+    supports: partial
+    explanation: 'Figures 4–8 and sections 3.4.1–3.4.5 limit generalization: higher loading lengthens
+      the lag, and section 3.4.3 describes about 80% Cu/Zn extraction at 15 days, whereas the conclusion
+      broadly says above 80% at 10 days across the loading range. Salt addition increases abiotic leaching
+      and suppresses copper bioleaching at higher nominal doses; section 3.4.5 uses kmol/m3 while Figure
+      8 labels the same NaCl numbers kg/m3, so no resolved salt threshold is asserted. The pH-variation
+      subsection reports smaller drift than section 3.1; no single pH tolerance is imposed on all runs.
+      Replication, chemistry-matched causality and complete mass balance remain unresolved. Figure 9 reuses
+      terrestrial-concentrate results from earlier papers and is not an independent replication of the
+      marine ore assay.'
+  - source_ref: dsm1651
+    supports: context_only
+    explanation: The issuing collection confirms Acidianus brierleyi DSM 1651 and its terrestrial thermal-spring
+      provenance. It does not certify the adapted culture state, experimental performance or a marine
+      strain identity.
+curation_history:
+- timestamp: '2026-10-11T13:11:22.652249+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created a distinct natural seafloor sulfide resource and a narrowly scoped, controlled laboratory
+    ore-bioleaching mechanism from full primary evidence; retained source inconsistencies, non-target
+    limits and unresolved causal chemistry.
+history_refs:
+- history/records/seafloor-massive-sulfides/2026-10-11T131125Z-codex-a181a5.yaml

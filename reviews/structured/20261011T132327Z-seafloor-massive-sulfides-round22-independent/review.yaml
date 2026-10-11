@@ -1,0 +1,370 @@
+schema_version: 1.0.0
+review_id: 20261011T132327Z-seafloor-massive-sulfides-round22-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of seafloor massive sulfides
+started_at: '2026-10-11T13:15:43Z'
+finished_at: '2026-10-11T13:23:27Z'
+reviewer:
+  identity: Codex /root/round22_photovoltaic_waste
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The seafloor-sulfides author lane curated the target and sidecar.
+    This different PV author lane independently read the full Japanese paper and rendered
+    figures, checked authority metadata and organisms, and executed named validation
+    and searches. Shared worktree and curator-acquired raw sources are disclosed;
+    no target edits were made.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Natural hydrothermal resource identity and the narrowly scoped laboratory
+  Cu/Zn bioleaching comparison are supported. Source-internal unit, inventory and
+  endpoint conflicts, non-target limitations and causal uncertainty are retained explicitly.
+  No corrective finding identified in the assessed target.
+source:
+  git_revision: b19103bb393096e405bbecd2808a1aa0e01bb200
+  state: working_tree
+  inputs:
+  - path: data/records/seafloor-massive-sulfides.yaml
+    sha256: aa25b49b9db4d610f888489c6d49836b7c8adea6415fca42e6403391f2b5aaea
+    role: target
+  - path: history/records/seafloor-massive-sulfides/2026-10-11T131125Z-codex-a181a5.yaml
+    sha256: 5469a83b50c2b53cbd5fe3d64cb6397da2f44ff8d0a0487dbb07d66c2b242994
+    role: context
+  - path: research/ingests/round22-sulfides-sources-20261011.json
+    sha256: 5512fec415c982dc80fb3a8230cb0075501e06209907f2f289d269df7a824822
+    role: context
+  - path: research/ingests/round22-sulfides-sources-20261011.md
+    sha256: afdf6b3a1b270fb51fcb017df2e0931cc5177553d886c7a7edfe1f81dad16359
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: All fields of the one assigned new marine resource record, its actual
+    CREATE history, primary identity and experiment; final exact bytes.
+  selection: Assigned round22 maintained record; full target and linked accepted evidence
+    inspected.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:seafloor-massive-sulfides
+  exclusions:
+  - target: Other corpus records and deferred studies
+    reason: No independent scientific verdict on other records, the Dong field study
+      or unacquired prior studies; raw instrumental data were not reanalysed.
+targets:
+- target_id: cmmmech:seafloor-massive-sulfides
+  path: data/records/seafloor-massive-sulfides.yaml
+  label: Seafloor massive sulfides
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/seafloor-massive-sulfides.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent single-record validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/seafloor-massive-sulfides.yaml
+  status: passed
+  required: true
+  summary: Checked 1 record(s); 0 failed.
+  target_ids:
+  - cmmmech:seafloor-massive-sulfides
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: batch
+  name: Native full checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Executed by the parent coordinator; independently read terminal receipt
+    and complete log by this reviewer. /private/tmp/cmm-round22-final-batch.log: uv
+    run --locked --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 124.01s (0:02:04)
+
+    Checked 154 record(s); 0 failed.
+
+    Checked 173 history record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:seafloor-massive-sulfides
+- check_id: require
+  name: Required corpus
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Executed by the parent coordinator; independently read terminal receipt
+    and complete log by this reviewer. /private/tmp/cmm-round22-final-require.log:
+    Checked 154 record(s); 0 failed.
+
+    '
+  target_ids:
+  - cmmmech:seafloor-massive-sulfides
+- check_id: history
+  name: Trusted-base history
+  command: uv run --locked cmmmech validate-history --base b19103bb393096e405bbecd2808a1aa0e01bb200
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Executed by the parent coordinator; independently read terminal receipt
+    and complete log by this reviewer. /private/tmp/cmm-round22-final-history.log:
+    Checked 173 history record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:seafloor-massive-sulfides
+evidence:
+- evidence_id: target
+  kind: record_content
+  reference: data/records/seafloor-massive-sulfides.yaml
+  locator: All fields and linked CREATE session
+  accessed_at: '2026-10-11T13:16:22Z'
+  support: supports
+  summary: Maintained resource identity, full mechanism, all evidence qualifications
+    and source/history links read independently.
+  snapshot_sha256: aa25b49b9db4d610f888489c6d49836b7c8adea6415fca42e6403391f2b5aaea
+- evidence_id: identity
+  kind: primary_source
+  reference: https://pubs.usgs.gov/fs/2025/3017/fs20253017.pdf
+  locator: USGS Fact Sheet 2025–3017 v1.1 April 2025; rendered page 2 Table 1
+  accessed_at: '2026-10-11T13:16:22Z'
+  support: supports
+  summary: Official source separately identifies hydrothermal polymetallic sulfides,
+    nodules and ferromanganese crusts. Asterisks designate constituent membership
+    in the 2022 US list; the record does not transfer these to the resource.
+  snapshot_sha256: 881d2703e3e0d5425789859a9403175e8cceed44093167480bcb3c820c46439f
+- evidence_id: experiment
+  kind: primary_source
+  reference: https://doi.org/10.2473/journalofmmij.131.627
+  locator: Seven-page Japanese primary paper; Methods 2.1–2.2, Table 1, Results 3.1–3.5,
+    all Figures 1–9 and conclusion; rendered PDF pp. 2–6 inspected
+  accessed_at: '2026-10-11T13:16:22Z'
+  support: supports
+  summary: Actual marine hydrothermal ores near Japan, modified medium and adapted
+    DSM 1651 culture support the scoped laboratory comparison. Sample A Figure 1 reports
+    approximately 85% Cu and 80% Zn versus 4% Cu and 20% Zn in sterile controls at
+    ten days. Units, loading, pH, particle size and strain match the target. Leaching
+    fractions are based on aqueous measurements and starting feed, not harvested product.
+  snapshot_sha256: 662d6ca9585a91556e345ee3b4a2a20bb5e79ad57c392be321fb93a53db964b9
+- evidence_id: counterevidence
+  kind: primary_source
+  reference: https://doi.org/10.2473/journalofmmij.131.627
+  locator: Table 1, sections 3.2–3.4.5, Figures 2–8 and conclusion
+  accessed_at: '2026-10-11T13:16:22Z'
+  support: partial
+  summary: Independent reading confirms Pb/Au analytical limits, residue enrichment,
+    Ga-inventory inconsistency, NaCl caption-versus-text unit conflict and overbroad
+    ten-day conclusion relative to high-load Figure 6. Figure 2 uses pH 1.2 rather
+    than Figure 1 pH 1.8. Record retains these distinctions, avoids universal salt
+    thresholds and does not convert nondetection to zero.
+  snapshot_sha256: 662d6ca9585a91556e345ee3b4a2a20bb5e79ad57c392be321fb93a53db964b9
+- evidence_id: organism
+  kind: primary_source
+  reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-1651
+  locator: Live issuing catalogue, name, DSM number, type status, isolation site and
+    culture conditions
+  accessed_at: '2026-10-11T13:16:22Z'
+  support: supports
+  summary: DSMZ confirms Acidianus brierleyi DSM 1651 as a type strain isolated from
+    Yellowstone thermal-spring drainage. The record properly treats this as terrestrial
+    culture provenance and uses paper-specific assay conditions rather than the catalogue
+    70 degrees C.
+- evidence_id: metadata
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/journalofmmij/131/12/131_627/_article/-char/en
+  locator: Live publisher metadata and supplementary-material count; retained Crossref
+    record
+  accessed_at: '2026-10-11T13:16:22Z'
+  support: supports
+  summary: The journal title, author names, DOI, 2015 publication and 2016 J-STAGE
+    release are reconciled. Publisher lists supplementary material (0); retained Crossref
+    has no update-to entry or relations. No external taxon CURIE is asserted.
+  snapshot_sha256: 53fe983ca6586c5a203714935052a4cfe9b9bcfdb7a4cf001029edb0f7e64355
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round22-pv-raw/sulfides-independent-search.json
+  locator: Independent bounded notice/control queries and hidden/ignored-following
+    dedup
+  accessed_at: '2026-10-11T13:16:22Z'
+  support: context_only
+  summary: Two exact queries on 2026-10-11 returned no affecting notice in the inspected
+    first result sets. Bounded repository and raw-source search found the new target
+    and context references, without another accepted same-resource record in those
+    paths.
+  snapshot_sha256: fe3097a437345a82ab5d5398af9ffc08b627e5a956b0a2eb980c049c6bde4e70
+  search_scope: New same-root target and dossiers are expected matches; prior mixed-resource
+    citations are context, not an accepted duplicate root. Ignored and hidden files
+    included; relevant symlinks followed; unrelated home/temp paths excluded.
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round22-gate-receipts.json
+  locator: All three terminal command receipts and referenced batch, require and history
+    logs; gated target hash manifest
+  accessed_at: '2026-10-11T13:23:27Z'
+  support: supports
+  summary: Native checks completed at 13:20:35 UTC with 308 passed and 3 skipped,
+    154 records and 173 history sidecars validated. The reviewed target bytes match
+    the frozen and gated SHA-256; these structural checks do not establish scientific
+    truth.
+  snapshot_sha256: ee1b6156ba8df516f968a764970052ed3ec86221a56f7a182b4d2a374766fbfb
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Natural resource, not mineral species or processing residue
+  outcome: supported
+  summary: The heterogeneous collected hydrothermal deposit material is correctly
+    typed primary_resource. No constituent criticality or worldwide grade is inherited.
+  target_ids:
+  - cmmmech:seafloor-massive-sulfides
+  evidence_ids:
+  - target
+  - identity
+  - experiment
+  dimensions:
+  - name: material_kind
+    value: primary_resource
+    definition: Collected, ground and washed natural geological feed; handling does
+      not create a waste resource.
+    evidence_ids:
+    - identity
+    - experiment
+  - name: criticality
+    value: Not asserted
+    definition: USGS 2022 constituent asterisks are not a whole-resource designation.
+    evidence_ids:
+    - target
+    - identity
+- assessment_id: mechanism
+  area: evidence
+  topic: Organism, assay and measured outcome
+  outcome: supported
+  summary: The record accurately preserves an inoculated-versus-source-designated-sterile
+    difference while keeping biological attribution narrower than a resolved molecular
+    pathway.
+  target_ids:
+  - cmmmech:seafloor-massive-sulfides
+  evidence_ids:
+  - target
+  - experiment
+  - counterevidence
+  - organism
+  dimensions:
+  - name: organism_biomass
+    value: Living ore-adapted Acidianus brierleyi DSM 1651
+    definition: Serially transferred terrestrial thermal-spring culture; no marine
+      isolate, unsupported species accession or killed-biomass claim.
+    evidence_ids:
+    - experiment
+    - organism
+  - name: substrate
+    value: Japanese marine hydrothermal mixed ore
+    definition: 38–53 micrometre ground and washed feed with sulfides and gangue;
+      Table 1 sample A is 45.4 wt% SiO2.
+    evidence_ids:
+    - experiment
+  - name: conditions_controls
+    value: 65 degrees C, 100 rpm, 200 cm3 medium in 500 cm3 flasks; Figure 1 pH 1.8
+      and 5 kg/m3
+    definition: Source-designated sterile controls lack a detailed sterilization protocol;
+      dynamics are not chemistry matched and replication is unresolved.
+    evidence_ids:
+    - experiment
+    - counterevidence
+  - name: outcome_scale
+    value: Conditional Cu/Zn solubilization in laboratory batches
+    definition: Liquid-based extraction fractions, residual solids and non-target
+      nondetections do not establish purified products, complete mass balance, in
+      situ treatment or industrial deployment.
+    evidence_ids:
+    - experiment
+    - counterevidence
+- assessment_id: contradictions
+  area: evidence
+  topic: Preserved source inconsistency and null results
+  outcome: supported
+  summary: Record explicitly retains incompatible printed Ga concentration, ambiguous
+    salt units and different endpoints/pH ranges instead of silently repairing the
+    source.
+  target_ids:
+  - cmmmech:seafloor-massive-sulfides
+  evidence_ids:
+  - target
+  - counterevidence
+  dimensions:
+  - name: ga_inventory
+    value: Printed 116 +/- 20 g/m3 exceeds nominal feed inventory
+    definition: 46.7 mg/kg Ga at 5–40 kg ore/m3 corresponds to 0.2335–1.868 g Ga/m3;
+      reviewer unit calculation corroborates a mismatch, not a guessed unit correction.
+    evidence_ids:
+    - experiment
+    - counterevidence
+  - name: non_target_limits
+    value: Pb and Au below reported 0.1 g/m3 limit
+    definition: Nondetection is not measured zero; anglesite association and residue
+      enrichment do not prove isolated recovery yields.
+    evidence_ids:
+    - counterevidence
+- assessment_id: provenance
+  area: provenance
+  topic: Exact working state, actual curation and source traceability
+  outcome: supported
+  summary: Canonical inspect captured target, schema, paired dossiers and actual CREATE
+    session at the trusted main base. The reviewer made no target or history edits;
+    author-acquired sources were independently read.
+  target_ids:
+  - cmmmech:seafloor-massive-sulfides
+  evidence_ids:
+  - target
+  - metadata
+  - search
+  - gates
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- No biological replicate count, detailed sterilization procedure or dynamically chemistry-matched
+  control is reported.
+- Cell attachment, ferric-mediated dissolution and sulfur oxidation remain proposed
+  contributions rather than independently isolated mechanisms.
+- Printed Ga concentration, nominal salt units and broad high-loading endpoint statements
+  remain internally inconsistent; no numerical correction is inferred.
+- Bulk recovery mass balance, raw instrument data, exact collection sites and industrial
+  or in situ operation are unavailable or unestablished.
+- The seven-page Japanese primary was read directly with its English captions; no
+  certified translation or external translator was used.
+- Correction/retraction searches are bounded; no exhaustive absence claim or review
+  of every earlier referenced assay.
+notes:
+- Initial target orientation and inspect occurred before this review round; a second
+  inspect at the recorded start also included the linked CREATE session. Scientific
+  conclusions follow that complete input capture.
+- No new material or taxon external CURIE is asserted; the DSM culture accession is
+  checked directly at its authority.
+tags:
+- round22
+- independent
+- scientific-review
+- primary-resource
