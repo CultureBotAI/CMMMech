@@ -181,6 +181,9 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Beverage-carton hydropulping reject](data/records/beverage-carton-hydropulping-reject.yaml) | Separate enzymatic pretreatment, culture-acid leaching and chemical precipitation | Comparable reagent acid, direct-culture limitations and unverified product purity remain explicit |
 | [Basic-oxygen-furnace steelmaking dust](data/records/basic-oxygen-furnace-steelmaking-dust.yaml) | Acidophile-associated leaching with hybrid and column comparisons | Abiotic convergence, unlike pretreatments and unresolved inventory accounting; no isolated product |
 | [Electroformed copper-silver manufacturing scrap](data/records/electroformed-copper-silver-manufacturing-scrap.yaml) | Culture-associated copper leaching and separate chemical/electrochemical recovery | Confounded operating conditions, pretreatment losses and local EDS do not establish whole-feed yield |
+| [Metal grinding sludge](data/records/metal-grinding-sludge.yaml) | Culture-associated acid leaching of metalworking residue | Missing matched abiotic controls and residue mass prevent verified recovery yields |
+| [Metalliferous black shale](data/records/metalliferous-black-shale.yaml) | Three separate culture-associated leaching studies | Pretreated-feed denominators, null comparisons and source figure/dose conflicts remain explicit |
+| [Ground waste tire rubber](data/records/ground-waste-tire-rubber.yaml) | Partial microbial rubber transformation | Chemical pretreatment is separate; no demonstrated microbial zinc extraction |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -215,7 +218,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [twenty-fifth expansion reviews](research/ingests/round25-20261011-publication.md),
 [twenty-sixth expansion reviews](research/ingests/round26-20261011-publication.md),
 [twenty-seventh expansion reviews](research/ingests/round27-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round27-frontier-20261011.md), and
+[twenty-eighth expansion reviews](research/ingests/round28-20261011-publication.md),
+[remaining ingest priorities](research/ingests/round28-frontier-20261011.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 
