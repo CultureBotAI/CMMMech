@@ -1,0 +1,91 @@
+id: cmmmech:boron-ore-concentration-tailings
+name: Boron-ore concentration tailings
+material_kind: secondary_resource
+description: >-
+  Residual solids generated during concentration of boron-bearing ore. The
+  curated feed is the minus-25-mm solid waste from the Espey concentrator of
+  the Eti Mine Boric Acid Operation in Emet, Kütahya, Turkey. It contains
+  colemanite, muscovite, quartz and dolomite according to the study's XRD
+  characterization. This processing residue is distinct from unprocessed
+  borate ore, traded borate products, elemental boron and a pure colemanite
+  mineral. The sampled composition does not define every concentrator residue;
+  no criticality designation is inherited from its constituents.
+sources:
+  - id: ertan2026
+    title: >-
+      Ertan (2026). Investigation of Bioleaching Kinetics of Valuable Metals
+      in Boron Waste. Journal of Anatolian Environmental and Animal Sciences
+      11:1-8. DOI 10.35229/jaes.1832038; Materials and Methods pp. 2-3,
+      Results pp. 3-7, Tables 1-2 and Figures 1-3. Publisher PDF prints
+      13 March 2026; landing page displays 24 March 2026. Full eight-page
+      primary article and figures inspected.
+    url: https://doi.org/10.35229/jaes.1832038
+    accessed_on: '2026-10-11'
+mechanisms:
+  - id: fungal_alkali_metal_mobilization
+    name: Culture-associated alkali-metal leaching from boron concentrator waste
+    process: bioleaching
+    microbial: true
+    description: >-
+      Cultures reported as Aspergillus niger mobilized lithium, rubidium and
+      cesium into filtered leachate from the characterized mixed waste.
+      Organic-acid dissolution and complexation are proposed explanations;
+      no matched abiotic leaching series establishes the microbial increment
+      or the necessity of either chemical route. The laboratory assay does
+      not demonstrate isolated metal products or industrial deployment.
+    context: >-
+      A living fungal culture was supplied by the Department of Molecular
+      Biology and Genetics at Erzurum Technical University; no strain accession
+      or sequence authentication is reported. Collected waste was dried at
+      110 degrees C for 48 h, homogenized, pulverized and sieved through
+      38 micrometres. Medium, waste and containers were autoclaved at
+      121 degrees C for 15 min. A seven-day preculture used sucrose at 100 g/L
+      with yeast extract, nitrate and mineral salts. Leaching used 250 mL
+      flasks with 100 mL medium, 2.5 mL spore suspension and 1 g waste, at
+      30 degrees C and 125 rpm for 31 days. Spore concentration is unspecified.
+      Samples on days 4, 10, 13, 18, 24 and 31 were centrifuged, filtered
+      through 0.45 micrometres and stabilized in 0.65% nitric acid for ICP-MS.
+      Figure 2 reports means and standard deviations with N=5, without
+      resolving whether those replicates were independent cultures or analyses.
+      Equation 1 defines the extraction percentage from leachate concentration
+      and volume relative to initial feed metal concentration and mass.
+    evidence:
+      - source_ref: ertan2026
+        supports: support
+        explanation: >-
+          Materials pp. 2-3 establishes concentrator-waste origin and preparation;
+          Table 1 reports the feed's measured Li, Rb and Cs concentrations.
+          Figure 2 and Bioleaching Kinetic p. 4 show increasing assayed release
+          over time, with reported day-31 extraction of approximately 79% Li,
+          37% Rb and 30% Cs. These are feed-relative leachate percentages,
+          not isolated-product yields or exact dated mg/kg observations.
+      - source_ref: ertan2026
+        supports: partial
+        explanation: >-
+          Methods and Figure 2 provide no uninoculated or matched organic-acid
+          leaching series. Figure 1 labels its complexes as possible;
+          solution speciation, mineral-specific metal release and causal
+          contributions of individual metabolites were not directly resolved.
+          The pH account on p. 3 explicitly cites Ertan 2023. This later
+          article is not treated as independent replication of the earlier
+          fungal study; its exact experimental overlap remains unresolved.
+      - source_ref: ertan2026
+        supports: partial
+        explanation: >-
+          The p. 4 text gives 43.71% Li at day 24, whereas Figure 2 plots
+          that point near 35%; no exact intermediate yield is adopted.
+          Table 2 and Figure 3 compare fitted shrinking-core models, which
+          do not independently prove a controlling biochemical mechanism.
+          Figure 3d's rubidium diffusion ordinate is inconsistent with the
+          printed equation and Figure 2 endpoint, so kinetic coefficients and
+          a definitive chemical-control conclusion are not adopted. The
+          experiment did not vary temperature to establish Arrhenius behavior.
+curation_history:
+  - timestamp: '2026-10-11T12:13:07Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Created a processing-derived resource with primary fungal leaching
+      evidence and explicit controls, publication-overlap and kinetic limits.
+history_refs:
+  - history/records/boron-ore-concentration-tailings/2026-10-11T121340Z-codex-116c97.yaml

@@ -1,0 +1,397 @@
+# Independent scientific review of boron-ore concentration tailings
+
+- Review: 20261011T122052Z-boron-ore-concentration-tailings-round20-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T12:16:26Z
+- Finished UTC: 2026-10-11T12:20:52Z
+- Reviewer: Codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The processing-derived resource identity and qualified laboratory leachate observations are supported. The record already preserves missing causal controls, source contradictions, kinetic interpretation limits and unresolved overlap with the earlier study. No actionable defect was identified in the reviewed state.
+
+## Scope And Provenance
+
+Every field of the frozen record and its linked CREATE history, with primary methods/results/figures and source identity independently assessed.
+
+Selection: One round20 maintained record authored by another agent.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base e98bdfaba62869faf5112ef281a9371d2a04d78e.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:boron-ore-concentration-tailings | data/records/boron-ore-concentration-tailings.yaml | maintained | Boron ore concentration tailings |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named-record validation | passed | True | cmmmech:boron-ore-concentration-tailings | Reviewer ran and observed terminal exit0 in session27120: Checked1 record(s);0 failed. |
+| Native full checks | passed | True | cmmmech:boron-ore-concentration-tailings | /private/tmp/cmm-round20-final-batch.log: uv run --locked --extra dev python scripts/check.py<br>All checks passed!<br>........................................................................ [ 23%]<br>........................................................................ [ 46%]<br>........................................................................ [ 69%]<br>....................................................sss................. [ 92%]<br>.......................                                                  [100%]<br>308 passed, 3 skipped in 80.63s (0:01:20)<br>Checked 149 record(s); 0 failed.<br>Checked 166 history record(s); 0 error(s).<br> |
+| Required corpus | passed | True | cmmmech:boron-ore-concentration-tailings | /private/tmp/cmm-round20-final-require.log: Checked 149 record(s); 0 failed.<br> |
+| Trusted-base history | passed | True | cmmmech:boron-ore-concentration-tailings | /private/tmp/cmm-round20-final-history.log: Checked 166 history record(s); 0 error(s).<br> |
+
+## Scientific And Domain Assessments
+
+### Process identity and criticality separation
+
+identity: supported. Targets: cmmmech:boron-ore-concentration-tailings.
+
+Espey concentrator residual solid is a secondary resource, distinct from borate commodity, pure colemanite and elemental boron. Sample-specific mineralogy does not define universal composition. No constituent criticality is inherited.
+
+### Culture, assay, controls, outcome and deployment limits
+
+evidence: supported. Targets: cmmmech:boron-ore-concentration-tailings.
+
+Reported A.niger cultures mobilized Li/Rb/Cs under a specific31day flask protocol. Approximately79/37/30% endpoints are explicitly reported feed-relative leachate values, not isolated products or universally attributable microbial increments.
+
+### Quantitative inconsistency and overlapping study evidence
+
+evidence: supported. Targets: cmmmech:boron-ore-concentration-tailings.
+
+Record correctly avoids exact Li day24 yield because prose43.71% differs from Figure2 near35%. Figure3d Rb ordinate does not match its printed transform at reported endpoint; kinetic coefficients and Arrhenius causality are excluded.2023 pH citation and unresolved experimental overlap prevent an independent replication claim.
+
+### Actual curation and exact reviewed bytes
+
+provenance: supported. Targets: cmmmech:boron-ore-concentration-tailings.
+
+Canonical inspect preceded judgment. Actual CREATE session and separate inline event identify the target and performed work. Named validation and completed batch/history gates pass; no record edit was made by this review.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/boron-ore-concentration-tailings.yaml; All fields, source/evidence joins and linked CREATE sidecar | supports | Resource identity, qualified mechanism and actual GPT-6/codex provenance inspected. No external material or organism CURIE and no criticality designation are asserted. |
+| primary | https://doi.org/10.35229/jaes.1832038; Publisher eight-pagePDF: Materials/Methods pp2–3; Results pp3–7; Tables1–2, Equation1, Figures1–3. Rendered pp4/6 independently visually checked. | supports | Concentrator-waste origin, preparation, culture conditions and ICP-MS filtrate assay support the narrow recorded observations. Full-text methods do not supply a matched abiotic time series or strain accession. Printed Li day24 and Rb kinetic transform conflict with figures; record preserves these limits. |
+| publisher | https://dergipark.org.tr/en/pub/jaes/article/1832038; Live returned publisher landing-page metadata and PDF title/DOI header | supports | DOI, title and author agree. Landing-page publication24March2026 differs from PDF published13March2026; both are disclosed, without inventing a correction notice. |
+| search | /private/tmp/cmm-round20-boron-independent-search.json; Executed local dedup and actual web correction/abiotic queries | context_only | Bounded first-result web sets returned no specific correction/retraction.2023 overlap lead remains unresolved rather than counted as independent replication. Local matches concern the current record, dossiers and earlier borate context. |
+| gates | /private/tmp/cmm-round20-gate-receipts.json; Actual completed native check,require-records and trusted-base history receipts and logs | supports | All commands completed exit0;308tests passed,3skipped;149records and166histories valid. Named record validation also passed. Target/context hashes rechecked before save. |
+
+## Limits And Additional Notes
+
+- Missing matched chemical/abiotic controls prevent estimation of a microbial increment or causal acid-versus-ligand contribution.
+- Unresolved fungal strain, spore density and replicate independence limit reproducibility.
+- Source figure/text and kinetic-transform inconsistencies preclude selected intermediate yields and fitted mechanistic assertions.
+- Exact experimental overlap with Ertan2023 remains unresolved; no independent replication claim is made.
+- Only laboratory leachate mobilization is established; isolated products and deployment are unverified.
+- Bounded source and local searches do not establish absence of all contradictions or new resources.
+- No blocker,major or minor record finding was identified. The saved limitations are limits of accepted evidence, not hidden corrective findings.
+- Review start is the completed inspect output timestamp before root read and judged this target; no target edit or additional curation-history event accompanies review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T122052Z-boron-ore-concentration-tailings-round20-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of boron-ore concentration tailings
+started_at: '2026-10-11T12:16:26Z'
+finished_at: '2026-10-11T12:20:52Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Separate agent /root/round20_mafic_tailings authored the record
+    and CREATE history. Root coordinated scope but did not author or edit this target.
+    Root independently read the primary methods/results, rendered figures and exact
+    frozen record after canonical inspect; shared raw artifacts and worktree access
+    are disclosed.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The processing-derived resource identity and qualified laboratory leachate
+  observations are supported. The record already preserves missing causal controls,
+  source contradictions, kinetic interpretation limits and unresolved overlap with
+  the earlier study. No actionable defect was identified in the reviewed state.
+source:
+  git_revision: e98bdfaba62869faf5112ef281a9371d2a04d78e
+  state: working_tree
+  inputs:
+  - path: data/records/boron-ore-concentration-tailings.yaml
+    sha256: ade7411923a81921cd55f980c8ff48c53a7dc32c652672621e1fb361859c5fa7
+    role: target
+  - path: research/ingests/round20-mafic-tailings-sources-20261011.json
+    sha256: 19e29ebdae36aaf8a4b4a8f1441dd7fbb8b6df2d1496d67ce3382fce1406da44
+    role: context
+targets:
+- target_id: cmmmech:boron-ore-concentration-tailings
+  path: data/records/boron-ore-concentration-tailings.yaml
+  label: Boron ore concentration tailings
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/boron-ore-concentration-tailings.yaml
+    role: maintained
+scope:
+  description: Every field of the frozen record and its linked CREATE history, with
+    primary methods/results/figures and source identity independently assessed.
+  selection: One round20 maintained record authored by another agent.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:boron-ore-concentration-tailings
+  exclusions:
+  - target: Other corpus records and full2023/2025 companion experiments
+    reason: Used for boundary/access context only; those experiments are not accepted
+      as independently verified mechanisms in this record.
+checks:
+- check_id: named
+  name: Independent named-record validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/boron-ore-concentration-tailings.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Reviewer ran and observed terminal exit0 in session27120: Checked1 record(s);0
+    failed.'
+  target_ids:
+  - cmmmech:boron-ore-concentration-tailings
+- check_id: batch
+  name: Native full checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: '/private/tmp/cmm-round20-final-batch.log: uv run --locked --extra dev
+    python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 80.63s (0:01:20)
+
+    Checked 149 record(s); 0 failed.
+
+    Checked 166 history record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:boron-ore-concentration-tailings
+- check_id: require
+  name: Required corpus
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: '/private/tmp/cmm-round20-final-require.log: Checked 149 record(s); 0 failed.
+
+    '
+  target_ids:
+  - cmmmech:boron-ore-concentration-tailings
+- check_id: history
+  name: Trusted-base history
+  command: uv run --locked cmmmech validate-history --base e98bdfaba62869faf5112ef281a9371d2a04d78e
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: '/private/tmp/cmm-round20-final-history.log: Checked 166 history record(s);
+    0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:boron-ore-concentration-tailings
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/boron-ore-concentration-tailings.yaml
+  locator: All fields, source/evidence joins and linked CREATE sidecar
+  accessed_at: '2026-10-11T12:20:52Z'
+  support: supports
+  summary: Resource identity, qualified mechanism and actual GPT-6/codex provenance
+    inspected. No external material or organism CURIE and no criticality designation
+    are asserted.
+  snapshot_sha256: ade7411923a81921cd55f980c8ff48c53a7dc32c652672621e1fb361859c5fa7
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.35229/jaes.1832038
+  locator: 'Publisher eight-pagePDF: Materials/Methods pp2–3; Results pp3–7; Tables1–2,
+    Equation1, Figures1–3. Rendered pp4/6 independently visually checked.'
+  accessed_at: '2026-10-11T12:20:52Z'
+  support: supports
+  summary: Concentrator-waste origin, preparation, culture conditions and ICP-MS filtrate
+    assay support the narrow recorded observations. Full-text methods do not supply
+    a matched abiotic time series or strain accession. Printed Li day24 and Rb kinetic
+    transform conflict with figures; record preserves these limits.
+  snapshot_sha256: d1087852aa671bc42fd09229be843f8247d6582f8224487d946187dcdefd2bef
+- evidence_id: publisher
+  kind: authority
+  reference: https://dergipark.org.tr/en/pub/jaes/article/1832038
+  locator: Live returned publisher landing-page metadata and PDF title/DOI header
+  accessed_at: '2026-10-11T12:20:52Z'
+  support: supports
+  summary: DOI, title and author agree. Landing-page publication24March2026 differs
+    from PDF published13March2026; both are disclosed, without inventing a correction
+    notice.
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round20-boron-independent-search.json
+  locator: Executed local dedup and actual web correction/abiotic queries
+  accessed_at: '2026-10-11T12:20:52Z'
+  support: context_only
+  summary: Bounded first-result web sets returned no specific correction/retraction.2023
+    overlap lead remains unresolved rather than counted as independent replication.
+    Local matches concern the current record, dossiers and earlier borate context.
+  snapshot_sha256: 12784a23ad4688a797f03b99bb0a6bb5ed0648826c3e018517bb076d2cbb182a
+  search_scope: rg --no-ignore --hidden --follow over records,research,reviews,history
+    and three named existing raw directories; ignored and hidden files included. Binary
+    primary PDF independently read. Not a global novelty or absence claim.
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round20-gate-receipts.json
+  locator: Actual completed native check,require-records and trusted-base history
+    receipts and logs
+  accessed_at: '2026-10-11T12:20:52Z'
+  support: supports
+  summary: All commands completed exit0;308tests passed,3skipped;149records and166histories
+    valid. Named record validation also passed. Target/context hashes rechecked before
+    save.
+  snapshot_sha256: f59d8f098925a9b4adf1ee2ff887e11d8fe86bfdfa1e2b328e4a4f617664f26a
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Process identity and criticality separation
+  outcome: supported
+  summary: Espey concentrator residual solid is a secondary resource, distinct from
+    borate commodity, pure colemanite and elemental boron. Sample-specific mineralogy
+    does not define universal composition. No constituent criticality is inherited.
+  target_ids:
+  - cmmmech:boron-ore-concentration-tailings
+  evidence_ids:
+  - record
+  - primary
+  dimensions:
+  - name: material_kind
+    value: secondary_resource
+    definition: Mixed residue generated during ore concentration, with origin supported
+      by primary methods.
+    evidence_ids:
+    - primary
+  - name: criticality
+    value: Not asserted
+    definition: No jurisdiction/list/edition designation is inherited from constituent
+      elements or the source abstract.
+    evidence_ids:
+    - record
+- assessment_id: mechanism
+  area: evidence
+  topic: Culture, assay, controls, outcome and deployment limits
+  outcome: supported
+  summary: Reported A.niger cultures mobilized Li/Rb/Cs under a specific31day flask
+    protocol. Approximately79/37/30% endpoints are explicitly reported feed-relative
+    leachate values, not isolated products or universally attributable microbial increments.
+  target_ids:
+  - cmmmech:boron-ore-concentration-tailings
+  evidence_ids:
+  - record
+  - primary
+  dimensions:
+  - name: organism_and_biomass
+    value: Living fungal culture reported as Aspergillus niger; supplied by Erzurum
+      Technical University, strain and sequence authentication unresolved.
+    definition: Source naming does not resolve a strain or causal molecular pathway.
+    evidence_ids:
+    - primary
+  - name: substrate_and_conditions
+    value: Minus25mm concentrator-waste sample,110C48h drying and38µm preparation;
+      autoclaved components;1g waste/100mLmedium plus2.5mLspores in250mLflasks,30C125rpm31days.
+    definition: Actual mixed feed and pretreatment/assay scope; not pure-mineral leaching.
+    evidence_ids:
+    - primary
+  - name: controls_and_measurement
+    value: 0.45µm filtrate ICP-MS after centrifugation and nitric-acid stabilization.
+      No matched abiotic time series; N=5 replicate independence unresolved.
+    definition: Operationally assayed aqueous fraction and causal limits are explicit.
+    evidence_ids:
+    - primary
+  - name: outcome_and_scale
+    value: Laboratory mobilization; acid/ligand routes and shrinking-core control
+      remain proposed. No isolated product, mass-balanced full process or industrial
+      deployment.
+    definition: Measured mobilization, fitted kinetics and industrial performance
+      are distinct.
+    evidence_ids:
+    - primary
+    - record
+- assessment_id: contradictions
+  area: evidence
+  topic: Quantitative inconsistency and overlapping study evidence
+  outcome: supported
+  summary: Record correctly avoids exact Li day24 yield because prose43.71% differs
+    from Figure2 near35%. Figure3d Rb ordinate does not match its printed transform
+    at reported endpoint; kinetic coefficients and Arrhenius causality are excluded.2023
+    pH citation and unresolved experimental overlap prevent an independent replication
+    claim.
+  target_ids:
+  - cmmmech:boron-ore-concentration-tailings
+  evidence_ids:
+  - record
+  - primary
+  - search
+- assessment_id: provenance
+  area: provenance
+  topic: Actual curation and exact reviewed bytes
+  outcome: supported
+  summary: Canonical inspect preceded judgment. Actual CREATE session and separate
+    inline event identify the target and performed work. Named validation and completed
+    batch/history gates pass; no record edit was made by this review.
+  target_ids:
+  - cmmmech:boron-ore-concentration-tailings
+  evidence_ids:
+  - record
+  - gates
+findings: []
+actions: []
+limitations:
+- Missing matched chemical/abiotic controls prevent estimation of a microbial increment
+  or causal acid-versus-ligand contribution.
+- Unresolved fungal strain, spore density and replicate independence limit reproducibility.
+- Source figure/text and kinetic-transform inconsistencies preclude selected intermediate
+  yields and fitted mechanistic assertions.
+- Exact experimental overlap with Ertan2023 remains unresolved; no independent replication
+  claim is made.
+- Only laboratory leachate mobilization is established; isolated products and deployment
+  are unverified.
+- Bounded source and local searches do not establish absence of all contradictions
+  or new resources.
+tags:
+- round20
+- independent
+- scientific-review
+- resource
+notes:
+- No blocker,major or minor record finding was identified. The saved limitations are
+  limits of accepted evidence, not hidden corrective findings.
+- Review start is the completed inspect output timestamp before root read and judged
+  this target; no target edit or additional curation-history event accompanies review.
+```

@@ -1,0 +1,155 @@
+id: cmmmech:goethite
+name: Goethite
+material_kind: mineral
+description: >-
+  Goethite is the FeO(OH) mineral species listed as approved (A), with 1980
+  special-procedure history, in the IMA-CNMNC September 2026 master list. It is
+  distinct from iron element, other iron oxyhydroxide minerals, iron-ore
+  commodities and mixed goethite-bearing tailings. The natural mineral feeds
+  below have sample-specific compositions; synthetic goethite preparations can
+  contain more reactive precursor phases. No iron criticality designation is
+  inherited.
+sources:
+- id: ima_2026_09
+  title: >-
+    IMA-CNMNC master list, September 2026, PDF p84 Goethite row and p1 status
+    definitions; retained official PDF reinspected 11 October 2026. The entry
+    1980 s.p. is special-procedure history, not an asserted external identifier.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-11'
+- id: stankovic_2024
+  title: >-
+    Stankovic S and Schippers A (2024). Goethite dissolution by acidophilic
+    bacteria. Frontiers in Microbiology 15:1360018. DOI
+    10.3389/fmicb.2024.1360018; Methods 2.1-2.3, Tables 1-2, Results 3.1 and
+    3.3-3.4, Figures 1-2 and 6-9, Discussion and Conclusion. Publisher PDF and
+    Europe PMC full-text XML inspected, including rendered PDF pp3-4 and 8-10.
+  url: https://doi.org/10.3389/fmicb.2024.1360018
+  accessed_on: '2026-10-11'
+- id: ncbi_thiooxidans
+  title: NCBI Taxonomy 930, Acidithiobacillus thiooxidans; species-level taxonomy XML inspected.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930
+  accessed_on: '2026-10-11'
+- id: ncbi_caldus
+  title: NCBI Taxonomy 33059, Acidithiobacillus caldus; species-level taxonomy XML inspected.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33059
+  accessed_on: '2026-10-11'
+- id: ncbi_cryptum
+  title: NCBI Taxonomy 524, Acidiphilium cryptum; species-level taxonomy XML inspected.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=524
+  accessed_on: '2026-10-11'
+mechanisms:
+- id: sulfur_oxidizer_goethite_mobilization
+  name: Culture-associated iron mobilization from natural goethite during sulfur oxidation
+  process: bioleaching
+  microbial: true
+  organisms:
+  - id: NCBITaxon:930
+    label: Acidithiobacillus thiooxidans
+  - id: NCBITaxon:33059
+    label: Acidithiobacillus caldus
+  description: >-
+    Separate living Acidithiobacillus thiooxidans DSM 14887 and Acidithiobacillus
+    caldus DSM 8584 cultures increased filtered iron concentrations from a
+    natural goethite feed while acidifying sulfur-containing medium. These
+    laboratory observations support culture-associated mobilization. They do
+    not isolate direct microbial reduction of solid goethite from acid
+    dissolution or chemical reduction by sulfur intermediates.
+  context: >-
+    Series 1 used BGR sample S343 from the Wolf mine, Herdorf, Germany, ground
+    to a fine powder in a mortar. XRD with Rietveld refinement identified
+    goethite as the mineral phase; the source calls it pure goethite, but Table
+    1 reports 85% Fe2O3 and 2% SiO2 by XRF, so chemical purity is not assumed.
+    The cultures were precultivated for 10 days in HBS-TE medium at initial
+    pH 3 with 1 g/L elemental sulfur and inoculated at 10% v/v into separate
+    flasks containing 0.5% w/v S343 and 1 g/L sulfur. The aerobic five-week
+    experiment used 30 degrees C and 120 rpm for A. thiooxidans and 45 degrees
+    C shake-flask cultivation for A. caldus. Figure 1 shows starting pH near
+    3 in the dissolution assays. Three inoculated flasks were used per species;
+    Methods 2.3 specifies duplicate uninoculated controls at each temperature,
+    whereas Figure 1 caption describes three parallel assays each. Ferrozine
+    analysis of 0.2 micrometre-filtered liquid measured Fe(II) and Fe(III).
+    These are operationally filtered iron concentrations, not an isolated
+    metal product or a whole-feed recovery yield. Species taxonomy identifiers
+    do not independently identify the experimental DSM strains.
+  evidence:
+  - source_ref: stankovic_2024
+    supports: support
+    explanation: >-
+      Results 3.1 and Figure 1 report endpoint mean total iron concentrations
+      of 1.9 mM with A. thiooxidans and 3.8 mM with A. caldus, compared with
+      0.08 mM and 0.3 mM in uninoculated controls at 30 and 45 degrees C,
+      respectively. Culture pH reached 1.2 and 1.0, respectively. The paired
+      temperature controls support conditional culture-associated mobilization;
+      the different incubation temperatures prevent a species-only efficacy
+      comparison.
+  - source_ref: stankovic_2024
+    supports: partial
+    explanation: >-
+      No acid-matched or killed-cell Series 1 control separates acidity,
+      reduced sulfur chemistry and cellular electron transfer. The Discussion
+      explicitly states that changes in Fe(II)/Fe(III) alone cannot distinguish
+      chemical sulfur-mediated reduction from dissimilatory ferric reduction.
+      Figure 2 and the Discussion give different fitted correlation values;
+      no numerical fit or direct causal proof is adopted here. The unresolved
+      replication wording and lack of isolated product, full mass balance or
+      industrial deployment limit interpretation.
+- id: cryptum_natural_goethite_null
+  name: No demonstrated enhancement of natural-goethite dissolution by Acidiphilium cryptum
+  process: bioleaching
+  microbial: true
+  organisms:
+  - id: NCBITaxon:524
+    label: Acidiphilium cryptum
+  description: >-
+    Under the tested anaerobic glycerol-fed conditions, living Acidiphilium
+    cryptum DSM 2389 and SJH cultures reduced soluble ferric iron in positive
+    controls but did not demonstrate enhanced iron extraction from the two
+    natural goethite feeds relative to uninoculated controls. This is a
+    condition-specific negative result, not a measured zero or a universal
+    inability to transform goethite.
+  context: >-
+    Series 3 used separately tested BGR S018 from Conakry, Guinea, and S337
+    from the Sasik mine, Pamir, Tajikistan. Both were mortar-ground and
+    characterized by XRD/Rietveld analysis: S018 contained gibbsite and S337
+    contained 1% lepidocrocite. Table 2 gives BET areas of 35 and 19 m2/g,
+    respectively. Five-day aerobic precultures were centrifuged, washed twice
+    with medium and resuspended anaerobically for 10% v/v inoculation.
+    Triplicate anaerobic unshaken assays at 30 degrees C used 0.1 g mineral
+    (0.5% w/v), basal medium with yeast extract and 10 mM glycerol, initially
+    adjusted to pH 2. Separate 25 mM ferric sulfate positive controls replaced
+    the mineral; uninoculated controls were included. The experiment lasted
+    42 days, with 0.2 micrometre filtration and ferrozine iron assays. Transfer
+    to fresh aerobic medium followed by nine-day cultivation and microscopy
+    was used to check persistence of viable cells.
+  evidence:
+  - source_ref: stankovic_2024
+    supports: support
+    explanation: >-
+      Results 3.3 and Figures 6-7 support the stated negative result: the
+      authors report negligible extraction and no significant inoculated versus
+      uninoculated difference for the natural feeds, while both strains reduced
+      soluble Fe(III) in positive controls. Figure 9 includes small nonzero
+      natural-feed iron concentrations; the narrative null is not converted
+      into a zero concentration or an analytical detection limit.
+  - source_ref: stankovic_2024
+    supports: partial
+    explanation: >-
+      Series 4 is a separate 33-day comparison involving S337 and synthetic
+      preparations sG1/sG2, with a stated 13-day repeat; its endpoints must not
+      be pooled with Series 3. The larger response for synthetic sG2 does not
+      establish a pure-goethite mechanism. Synthetic BET areas of 62 and
+      97 m2/g exceed the natural values, and the authors infer more reactive
+      ferrihydrite contamination without quantifying its phase fraction.
+      Figure 8 contains finite natural-feed values despite the prose phrase
+      not detectable. Neither the source's qualitative null nor its synthetic
+      result establishes an absolute mineral-specific dissolution yield.
+curation_history:
+- timestamp: '2026-10-11T12:13:26.307790+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: >-
+    Created goethite identity with natural-feed acidophile mobilization and
+    condition-specific null evidence, preserving feed and causal limits.
+history_refs:
+- history/records/goethite/2026-10-11T121318Z-codex-f97231.yaml

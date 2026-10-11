@@ -1,0 +1,529 @@
+# Independent review of Nickel laterite ore
+
+- Review: 20261011T122141Z-nickel-laterite-ore-round20-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-11T12:16:53Z
+- Finished UTC: 2026-10-11T12:21:41Z
+- Reviewer: Codex /root/round20_mafic_tailings (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The geological resource boundary and two conditional laboratory bioleaching mechanisms are supported. Ore dependence, null outcomes, unmatched loading/chemical comparators, unresolved Cr(VI)-independent toxicity and source dosing/replicate tensions are explicitly retained. No corrective finding in this one-record scope.
+
+## Scope And Provenance
+
+All identity, evidence, organism, mechanism, experimental context and provenance fields in the frozen nickel-laterite-ore record.
+
+Selection: Parent-assigned single-record independent cross-review; other round20 records excluded.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base e98bdfaba62869faf5112ef281a9371d2a04d78e.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:nickel-laterite-ore | data/records/nickel-laterite-ore.yaml | maintained | Nickel laterite ore |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Named-record validation | passed | True | cmmmech:nickel-laterite-ore | Reviewer executed session53751; terminal exit0, Checked 1 record(s); 0 failed. |
+| Native full checks | passed | True | cmmmech:nickel-laterite-ore | Root executed final changed-state gate; reviewer independently read terminal receipt and log. /private/tmp/cmm-round20-final-batch.log: uv run --locked --extra dev python scripts/check.py<br>All checks passed!<br>........................................................................ [ 23%]<br>........................................................................ [ 46%]<br>........................................................................ [ 69%]<br>....................................................sss................. [ 92%]<br>.......................                                                  [100%]<br>308 passed, 3 skipped in 80.63s (0:01:20)<br>Checked 149 record(s); 0 failed.<br>Checked 166 history record(s); 0 error(s).<br> |
+| Required corpus | passed | True | cmmmech:nickel-laterite-ore | Root executed final changed-state gate; reviewer independently read terminal receipt and log. /private/tmp/cmm-round20-final-require.log: Checked 149 record(s); 0 failed.<br> |
+| Trusted-base history | passed | True | cmmmech:nickel-laterite-ore | Root executed final changed-state gate; reviewer independently read terminal receipt and log. /private/tmp/cmm-round20-final-history.log: Checked 166 history record(s); 0 error(s).<br> |
+
+## Scientific And Domain Assessments
+
+### Primary geological resource boundary
+
+identity: supported. Targets: cmmmech:nickel-laterite-ore.
+
+USGS natural laterite identity is distinct from nickel element, goethite mineral and manufactured sulfate product. Stockpiled unprocessed BaSt ore is not processing-generated tailings. Existing nickel-level reuse of Hetz evidence is explicitly a different entity, not a newly discovered study. No external mineral/element identifier or constituent criticality is transferred.
+
+### Ore-dependent aerobic consortium assay
+
+evidence: supported. Targets: cmmmech:nickel-laterite-ore.
+
+Matched-pH controls and BaSt extraction support conditional consortium enhancement. Record retains null/low ore outcomes, solution-chemistry inference, source Fe-dose ambiguity and JacC/replicate contradictions. No pure-goethite or individual-strain causal claim is made.
+
+### Conditional anoxic consortium association with chemical counterevidence
+
+evidence: supported. Targets: cmmmech:nickel-laterite-ore.
+
+NC1 staged dosing supports reductive conditions and higher reported extraction in that run, while dose/duration confounding prevents a matched treatment effect. Cells were not sustained. NC2 abiotic ferrous extraction and residual toxicity with undetectable Cr(VI) directly constrain microbial and inhibitor attribution. The record preserves those limits.
+
+### Measurements, deployment and transfer limits
+
+scope: supported. Targets: cmmmech:nickel-laterite-ore.
+
+Percentages remain source-reported feed-metal mobilization in prose, not native mg/kg observations, isolated products or commercial deployment. Laboratory conditions, washing state, particle sizes, organism uncertainty and unsupported dose transfer are explicit. Neither study establishes a universal laterite mechanism.
+
+### Actual record creation and review independence
+
+provenance: supported. Targets: cmmmech:nickel-laterite-ore.
+
+CREATE sidecar and inline event truthfully identify codex/GPT-6 and target. Independent scientific acceptance is separate. Reviewer did not author or edit this record/history/dossier, and final structural/history gates pass against the trusted base.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/nickel-laterite-ore.yaml; Entire frozen record and linked CREATE sidecar | supports | Canonical inspect preceded scientific judgment. Entire target and actual codex/GPT-6 CREATE history read. Initial inspection output completed at 12:16:53 UTC; expanded contextual capture retained identical target bytes. Root gated manifest and current bytes match. |
+| usgs | https://www.usgs.gov/publications/nickel-cobalt-laterites-a-deposit-model; Official 2013 publication summary: origin, oxide/silicate/clay subtype paragraphs | supports | Fresh official summary read. Supergene enrichment of ultramafic parent rock and heterogeneous oxide, smectite and hydrous magnesium silicate subtypes support the natural geological feed identity. Full deposit-model PDF was not needed for or claimed as inspected evidence. |
+| hetz | https://doi.org/10.1007/s40831-025-01139-7; Full primary PDF: Laterite Samples; Microorganisms; Laterite Bioleaching Experiments; Liquid Samples Analyses; Tables1-3; Results Figures1-10 and Discussion; Figure6 pixels | supports | Independently read retained full methods/results/discussion and table/caption content; visually inspected Figure6. Unwashed &lt;2mm feed, 10% w/v, 30C, 1% sulfur, equal six-strain mixture, four-day preculture, duplicated wording of 3mM Fe dose, matched-pH abiotic trajectories and ore-specific durations match. BaSt 15-day Ni83.0±5.7% (four reactors) versus33.6±0.1% (two controls) and Co83.0±3.0 versus23.9±0.1 match text and Figure6A. 1P5 null, Piaui similar Ni and JacF low outcomes preclude universal enhancement; JacC-specific enhancement qualifies abstract generalization. Raw /private/tmp/cmmmech-nickel-evidence-20261011/hetz2025.pdf. |
+| hetz-si | https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs40831-025-01139-7/MediaObjects/40831_2025_1139_MOESM1_ESM.pdf; Nine-page supplement: captions S1-S10, particularly S1-S3; S1 page pixels | supports | Independent read of all retained supplement captions and direct view of S1 confirms JacF biotic n=1 in S1 while S3 gives n=2. The record explicitly preserves this inconsistency. Supplement is not an independent study or source of a repaired replicate count. |
+| santos | https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2021.802991/full; Full publisher HTML: Methods; Tables1-4; Results Figures1-11 and Discussion; independently acquired Figure2/3/5/6 pixels | supports | Independently read complete primary methods/results/discussion/table and caption text and fresh publisher figure images. NC1 I/II differ in dose schedule, total dose and duration; Table3 reports Ni12/31%, Co41/94%. Cells declined to undetectable in both. NC2 IV/V are unmatched in inoculation, volume, staged versus single ore addition and duration; Ni12/10%, Co72/70% supports chemical leachability, not a microbial effect size. Table4 derives from a separate NC2&lt;50 leachate assay (20% feed, pH0.5, 100mM sulfate,48C,2d), and Discussion reports persistent toxicity despite Cr(VI) below detection after ferrous treatment. Cr(VI) is implicated but not the only established inhibitor. XRD showed no major goethite phase change. Volume12(2021) publication date is11January2022. Retained HTML /private/tmp/cmm-round20-laterite-raw/santos2022.html. |
+| taxonomy | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&amp;mode=Info; Current official species page, rank and type-strain names | supports | Fresh official NCBI page resolves930 to Acidithiobacillus thiooxidans at species rank. It does not encode the six-strain mixture or prove each member contribution. Record applies this ID only at species scope and leaves unresolved Santos consortium spellings ungrounded. |
+| search | Reviewer local and live-web boundary/correction searches; Declared bounded corpus, exact query result windows and neighboring record descriptions | supports | Ignored/hidden-inclusive local searches surfaced the existing nickel element study and new laterite resource; these share evidence but denote distinct concepts. Read nickel, goethite and nickel-sulfate-hexahydrate identity descriptions. First returned web windows did not surface a formal correction/retraction notice for either DOI; this is a bounded search, not exhaustive absence. |
+| gates | /private/tmp/cmm-round20-gate-receipts.json; All final batch, nonempty and trusted-base history logs; gated-record hashes | supports | Reviewer read actual root receipts/logs,12:16:16-12:17:50UTC. All exit0:308 tests passed,3 skipped in80.63s;149 records/0 failed;166 histories/0 errors. Named check was independently run. Target hash matches the gated manifest and all inspection inputs were rehashed unchanged before saving. |
+
+## Limits And Additional Notes
+
+- Source experiments use heterogeneous ores; no universal laterite response or pure-mineral causal attribution follows.
+- Hetz iron-dose wording and JacF replicate counts remain unresolved; JacC result wording is more specific than abstract generalization.
+- Santos sequential experiments and abiotic comparator are not fully matched. Chromium(VI) is implicated, but further leachate toxicity remains unexplained; strain-level assignments, replicate counts and reactor sulfur/inoculum dosing are not invented.
+- Primary full text was inspected as retained Hetz PDF/SI and complete publisher Santos HTML. Institutional Santos PDF retrieval returned HTTP403; fresh publisher figures2,3,5,6 were successfully acquired and inspected. No inaccessible PDF content was assumed.
+- USGS official publication summary, not the full deposit-model PDF, grounds the resource boundary. Searches were bounded and raw artifacts outside Git are not guaranteed by a saved review.
+- Final batch/history checks were executed by root and terminal receipts independently read; this reviewer ran named-record validation. Three baseline-consistent tests were skipped in the full suite; no required review check was unavailable.
+- Canonical initial inspect output completed12:16:53UTC; expanded context inspection kept the same target hash. All source input bytes were rechecked before saving.
+- Working-tree evidence is attached to trusted base e98bdfaba62869faf5112ef281a9371d2a04d78e; it does not claim uncommitted target bytes existed in that commit.
+- No record/history edits or shared publication were performed by this reviewer. No corrective findings require issues.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261011T122141Z-nickel-laterite-ore-round20-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent review of Nickel laterite ore
+started_at: '2026-10-11T12:16:53Z'
+finished_at: '2026-10-11T12:21:41Z'
+reviewer:
+  identity: Codex /root/round20_mafic_tailings
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Curated a separate boron concentration-tailings record. Did
+    not author or edit the laterite record, history or dossier. Independently inspected
+    canonical frozen bytes, full primary methods/results, retained Hetz supplement
+    and figure pixels, fresh Santos figure images, official identity/taxonomy sources
+    and correction searches.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The geological resource boundary and two conditional laboratory bioleaching
+  mechanisms are supported. Ore dependence, null outcomes, unmatched loading/chemical
+  comparators, unresolved Cr(VI)-independent toxicity and source dosing/replicate
+  tensions are explicitly retained. No corrective finding in this one-record scope.
+source:
+  git_revision: e98bdfaba62869faf5112ef281a9371d2a04d78e
+  state: working_tree
+  inputs:
+  - path: data/records/goethite.yaml
+    sha256: 9a10d095cedc9e0e5a25d33426c644072a04f194eee2fa35cacc8ad1e0da796c
+    role: context
+  - path: data/records/nickel-laterite-ore.yaml
+    sha256: b48757556c090b7e47e394fa8977bcf33cb384c3cd8153687ad21ba89e6d8cba
+    role: target
+  - path: data/records/nickel-sulfate-hexahydrate.yaml
+    sha256: 468df9c5da237f38f0263ce32bb06275e7572999d73387a96456d9892a053c9d
+    role: context
+  - path: data/records/nickel.yaml
+    sha256: b87ef9b7ab31d74980b5d6c57d7e74ba85a3d7860ca257cd30c0886c85aa47dc
+    role: context
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/nickel-laterite-ore/2026-10-11T121306Z-codex-4f14be.yaml
+    sha256: b96d5c39172a233c1fb11758b1d773e6de65e7e5732f3894aed2154f294ef92c
+    role: context
+  - path: research/ingests/round20-laterite-sources-20261011.json
+    sha256: 1227839212560ca878320d38f3b5b751f602f44f6bd4fed224e77667456e0264
+    role: context
+  - path: research/ingests/round20-laterite-sources-20261011.md
+    sha256: 3e11e0e25c2c798bdabf9d170245a1edce5ad1f6d7961e0e61fc3b7f5fd9bc84
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:nickel-laterite-ore
+  path: data/records/nickel-laterite-ore.yaml
+  label: Nickel laterite ore
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/nickel-laterite-ore.yaml
+    role: maintained_record
+scope:
+  description: All identity, evidence, organism, mechanism, experimental context and
+    provenance fields in the frozen nickel-laterite-ore record.
+  selection: Parent-assigned single-record independent cross-review; other round20
+    records excluded.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:nickel-laterite-ore
+checks:
+- check_id: named
+  name: Named-record validation
+  command: uv run --locked cmmmech validate data/records/nickel-laterite-ore.yaml
+  status: passed
+  required: true
+  summary: Reviewer executed session53751; terminal exit0, Checked 1 record(s); 0
+    failed.
+  target_ids:
+  - cmmmech:nickel-laterite-ore
+  exit_code: 0
+  expected_exit_code: 0
+- check_id: batch
+  name: Native full checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Root executed final changed-state gate; reviewer independently read terminal
+    receipt and log. /private/tmp/cmm-round20-final-batch.log: uv run --locked --extra
+    dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 80.63s (0:01:20)
+
+    Checked 149 record(s); 0 failed.
+
+    Checked 166 history record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:nickel-laterite-ore
+- check_id: require
+  name: Required corpus
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Root executed final changed-state gate; reviewer independently read terminal
+    receipt and log. /private/tmp/cmm-round20-final-require.log: Checked 149 record(s);
+    0 failed.
+
+    '
+  target_ids:
+  - cmmmech:nickel-laterite-ore
+- check_id: history
+  name: Trusted-base history
+  command: uv run --locked cmmmech validate-history --base e98bdfaba62869faf5112ef281a9371d2a04d78e
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Root executed final changed-state gate; reviewer independently read terminal
+    receipt and log. /private/tmp/cmm-round20-final-history.log: Checked 166 history
+    record(s); 0 error(s).
+
+    '
+  target_ids:
+  - cmmmech:nickel-laterite-ore
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/nickel-laterite-ore.yaml
+  locator: Entire frozen record and linked CREATE sidecar
+  accessed_at: '2026-10-11T12:21:41Z'
+  support: supports
+  summary: Canonical inspect preceded scientific judgment. Entire target and actual
+    codex/GPT-6 CREATE history read. Initial inspection output completed at 12:16:53
+    UTC; expanded contextual capture retained identical target bytes. Root gated manifest
+    and current bytes match.
+  snapshot_sha256: b48757556c090b7e47e394fa8977bcf33cb384c3cd8153687ad21ba89e6d8cba
+- evidence_id: usgs
+  kind: authority
+  reference: https://www.usgs.gov/publications/nickel-cobalt-laterites-a-deposit-model
+  locator: 'Official 2013 publication summary: origin, oxide/silicate/clay subtype
+    paragraphs'
+  accessed_at: '2026-10-11T12:21:41Z'
+  support: supports
+  summary: Fresh official summary read. Supergene enrichment of ultramafic parent
+    rock and heterogeneous oxide, smectite and hydrous magnesium silicate subtypes
+    support the natural geological feed identity. Full deposit-model PDF was not needed
+    for or claimed as inspected evidence.
+- evidence_id: hetz
+  kind: primary_source
+  reference: https://doi.org/10.1007/s40831-025-01139-7
+  locator: 'Full primary PDF: Laterite Samples; Microorganisms; Laterite Bioleaching
+    Experiments; Liquid Samples Analyses; Tables1-3; Results Figures1-10 and Discussion;
+    Figure6 pixels'
+  accessed_at: '2026-10-11T12:21:41Z'
+  support: supports
+  summary: Independently read retained full methods/results/discussion and table/caption
+    content; visually inspected Figure6. Unwashed <2mm feed, 10% w/v, 30C, 1% sulfur,
+    equal six-strain mixture, four-day preculture, duplicated wording of 3mM Fe dose,
+    matched-pH abiotic trajectories and ore-specific durations match. BaSt 15-day
+    Ni83.0±5.7% (four reactors) versus33.6±0.1% (two controls) and Co83.0±3.0 versus23.9±0.1
+    match text and Figure6A. 1P5 null, Piaui similar Ni and JacF low outcomes preclude
+    universal enhancement; JacC-specific enhancement qualifies abstract generalization.
+    Raw /private/tmp/cmmmech-nickel-evidence-20261011/hetz2025.pdf.
+  snapshot_sha256: 3b6586fb3ce385b519929b0c35fbd2e7c9159e6089b9d88f6700a52af04c706e
+- evidence_id: hetz-si
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs40831-025-01139-7/MediaObjects/40831_2025_1139_MOESM1_ESM.pdf
+  locator: 'Nine-page supplement: captions S1-S10, particularly S1-S3; S1 page pixels'
+  accessed_at: '2026-10-11T12:21:41Z'
+  support: supports
+  summary: Independent read of all retained supplement captions and direct view of
+    S1 confirms JacF biotic n=1 in S1 while S3 gives n=2. The record explicitly preserves
+    this inconsistency. Supplement is not an independent study or source of a repaired
+    replicate count.
+  snapshot_sha256: 46100c34e9acb70e99293a0ae228981bbf82136e7bae223736aafd95f7ff9f07
+- evidence_id: santos
+  kind: primary_source
+  reference: https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2021.802991/full
+  locator: 'Full publisher HTML: Methods; Tables1-4; Results Figures1-11 and Discussion;
+    independently acquired Figure2/3/5/6 pixels'
+  accessed_at: '2026-10-11T12:21:41Z'
+  support: supports
+  summary: Independently read complete primary methods/results/discussion/table and
+    caption text and fresh publisher figure images. NC1 I/II differ in dose schedule,
+    total dose and duration; Table3 reports Ni12/31%, Co41/94%. Cells declined to
+    undetectable in both. NC2 IV/V are unmatched in inoculation, volume, staged versus
+    single ore addition and duration; Ni12/10%, Co72/70% supports chemical leachability,
+    not a microbial effect size. Table4 derives from a separate NC2<50 leachate assay
+    (20% feed, pH0.5, 100mM sulfate,48C,2d), and Discussion reports persistent toxicity
+    despite Cr(VI) below detection after ferrous treatment. Cr(VI) is implicated but
+    not the only established inhibitor. XRD showed no major goethite phase change.
+    Volume12(2021) publication date is11January2022. Retained HTML /private/tmp/cmm-round20-laterite-raw/santos2022.html.
+  snapshot_sha256: e469e8d3ea5d038f9973b5be2e69b6eb12f6244c65e6350b0ed501be6ad99b09
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info
+  locator: Current official species page, rank and type-strain names
+  accessed_at: '2026-10-11T12:21:41Z'
+  support: supports
+  summary: Fresh official NCBI page resolves930 to Acidithiobacillus thiooxidans at
+    species rank. It does not encode the six-strain mixture or prove each member contribution.
+    Record applies this ID only at species scope and leaves unresolved Santos consortium
+    spellings ungrounded.
+- evidence_id: search
+  kind: search
+  reference: Reviewer local and live-web boundary/correction searches
+  locator: Declared bounded corpus, exact query result windows and neighboring record
+    descriptions
+  accessed_at: '2026-10-11T12:21:41Z'
+  support: supports
+  summary: Ignored/hidden-inclusive local searches surfaced the existing nickel element
+    study and new laterite resource; these share evidence but denote distinct concepts.
+    Read nickel, goethite and nickel-sulfate-hexahydrate identity descriptions. First
+    returned web windows did not surface a formal correction/retraction notice for
+    either DOI; this is a bounded search, not exhaustive absence.
+  search_scope: 'Local rg --no-ignore --hidden --follow -n -i pattern nickel.?laterite|01139-7|802991|Hetz|Penamax|BaSt|Jacaré|Jacare
+    over data research reviews history, 114 matching lines retained in /private/tmp/cmm-round20-mafic-tailings-raw/laterite-review-dedup.txt.
+    Additional ignored-inclusive followed path search with same pattern plus Caron
+    over /private/tmp/cmm-round20-laterite-raw and /private/tmp/cmmmech-nickel-evidence-20261011;
+    PDFs independently extracted/read because plain rg is not an exhaustive binary-content
+    search. Bounded web queries: "10.1007/s40831-025-01139-7" correction retraction;
+    "10.3389/fmicb.2021.802991" correction retraction. Provider first-result windows
+    only, no filters or exhaustive pagination. Official USGS, NCBI and Frontiers pages
+    opened. No new literature-wide absence claim.'
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round20-gate-receipts.json
+  locator: All final batch, nonempty and trusted-base history logs; gated-record hashes
+  accessed_at: '2026-10-11T12:21:41Z'
+  support: supports
+  summary: Reviewer read actual root receipts/logs,12:16:16-12:17:50UTC. All exit0:308
+    tests passed,3 skipped in80.63s;149 records/0 failed;166 histories/0 errors. Named
+    check was independently run. Target hash matches the gated manifest and all inspection
+    inputs were rehashed unchanged before saving.
+  snapshot_sha256: f59d8f098925a9b4adf1ee2ff887e11d8fe86bfdfa1e2b328e4a4f617664f26a
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Primary geological resource boundary
+  outcome: supported
+  summary: USGS natural laterite identity is distinct from nickel element, goethite
+    mineral and manufactured sulfate product. Stockpiled unprocessed BaSt ore is not
+    processing-generated tailings. Existing nickel-level reuse of Hetz evidence is
+    explicitly a different entity, not a newly discovered study. No external mineral/element
+    identifier or constituent criticality is transferred.
+  target_ids:
+  - cmmmech:nickel-laterite-ore
+  evidence_ids:
+  - record
+  - usgs
+  - search
+  dimensions:
+  - name: material_form
+    value: Heterogeneous geological primary resource; excavated/stockpiled unprocessed
+      laterite included
+    definition: Maintained feed identity rather than a pure host mineral or downstream
+      product
+    evidence_ids:
+    - record
+    - usgs
+  - name: criticality
+    value: None asserted
+    definition: No authority/list/edition designation is inherited from contained
+      Ni or Co
+    evidence_ids:
+    - record
+- assessment_id: aerobic
+  area: evidence
+  topic: Ore-dependent aerobic consortium assay
+  outcome: supported
+  summary: Matched-pH controls and BaSt extraction support conditional consortium
+    enhancement. Record retains null/low ore outcomes, solution-chemistry inference,
+    source Fe-dose ambiguity and JacC/replicate contradictions. No pure-goethite or
+    individual-strain causal claim is made.
+  target_ids:
+  - cmmmech:nickel-laterite-ore
+  evidence_ids:
+  - record
+  - hetz
+  - hetz-si
+  - taxonomy
+  dimensions:
+  - name: organism
+    value: Six-strain A. thiooxidans mixture; NCBITaxon930 species only
+    definition: Species grounding does not identify the mixture or individual causal
+      contribution
+    evidence_ids:
+    - record
+    - hetz
+    - taxonomy
+  - name: biomass_state
+    value: Living precultured inoculum
+    definition: Active culture added before unwashed ore; not dead biomass or extracted
+      metabolites
+    evidence_ids:
+    - hetz
+  - name: controls
+    value: Matched pH trajectory uninoculated reactors; ore-specific outcomes
+    definition: Comparator supports within-ore inference only under recorded laboratory
+      conditions
+    evidence_ids:
+    - hetz
+    - hetz-si
+- assessment_id: anoxic
+  area: evidence
+  topic: Conditional anoxic consortium association with chemical counterevidence
+  outcome: supported
+  summary: NC1 staged dosing supports reductive conditions and higher reported extraction
+    in that run, while dose/duration confounding prevents a matched treatment effect.
+    Cells were not sustained. NC2 abiotic ferrous extraction and residual toxicity
+    with undetectable Cr(VI) directly constrain microbial and inhibitor attribution.
+    The record preserves those limits.
+  target_ids:
+  - cmmmech:nickel-laterite-ore
+  evidence_ids:
+  - record
+  - santos
+  dimensions:
+  - name: organism
+    value: Reported mixed acidophile cultures; NC1 mesophiles and separate NC2 moderately
+      thermophilic consortium
+    definition: Source names are retained without invented strain IDs or a single
+      responsible taxon
+    evidence_ids:
+    - santos
+  - name: substrate
+    value: Ground/screened <100µm Penamax NC1/NC2 mixed limonite
+    definition: Specific heterogeneous feed, not pure goethite or all laterites
+    evidence_ids:
+    - santos
+  - name: controls
+    value: Sequential loading experiments and unmatched NC2 chemical comparator
+    definition: No microbial effect size derived from differing ore doses, durations,
+      volumes or organisms
+    evidence_ids:
+    - santos
+- assessment_id: scope
+  area: scope
+  topic: Measurements, deployment and transfer limits
+  outcome: supported
+  summary: Percentages remain source-reported feed-metal mobilization in prose, not
+    native mg/kg observations, isolated products or commercial deployment. Laboratory
+    conditions, washing state, particle sizes, organism uncertainty and unsupported
+    dose transfer are explicit. Neither study establishes a universal laterite mechanism.
+  target_ids:
+  - cmmmech:nickel-laterite-ore
+  evidence_ids:
+  - record
+  - hetz
+  - hetz-si
+  - santos
+- assessment_id: provenance
+  area: provenance
+  topic: Actual record creation and review independence
+  outcome: supported
+  summary: CREATE sidecar and inline event truthfully identify codex/GPT-6 and target.
+    Independent scientific acceptance is separate. Reviewer did not author or edit
+    this record/history/dossier, and final structural/history gates pass against the
+    trusted base.
+  target_ids:
+  - cmmmech:nickel-laterite-ore
+  evidence_ids:
+  - record
+  - gates
+findings: []
+actions: []
+limitations:
+- Source experiments use heterogeneous ores; no universal laterite response or pure-mineral
+  causal attribution follows.
+- Hetz iron-dose wording and JacF replicate counts remain unresolved; JacC result
+  wording is more specific than abstract generalization.
+- Santos sequential experiments and abiotic comparator are not fully matched. Chromium(VI)
+  is implicated, but further leachate toxicity remains unexplained; strain-level assignments,
+  replicate counts and reactor sulfur/inoculum dosing are not invented.
+- Primary full text was inspected as retained Hetz PDF/SI and complete publisher Santos
+  HTML. Institutional Santos PDF retrieval returned HTTP403; fresh publisher figures2,3,5,6
+  were successfully acquired and inspected. No inaccessible PDF content was assumed.
+- USGS official publication summary, not the full deposit-model PDF, grounds the resource
+  boundary. Searches were bounded and raw artifacts outside Git are not guaranteed
+  by a saved review.
+- Final batch/history checks were executed by root and terminal receipts independently
+  read; this reviewer ran named-record validation. Three baseline-consistent tests
+  were skipped in the full suite; no required review check was unavailable.
+notes:
+- Canonical initial inspect output completed12:16:53UTC; expanded context inspection
+  kept the same target hash. All source input bytes were rechecked before saving.
+- Working-tree evidence is attached to trusted base e98bdfaba62869faf5112ef281a9371d2a04d78e;
+  it does not claim uncommitted target bytes existed in that commit.
+- No record/history edits or shared publication were performed by this reviewer. No
+  corrective findings require issues.
+links:
+- research/ingests/round20-laterite-sources-20261011.md
+- research/ingests/round20-laterite-sources-20261011.json
+- https://github.com/CultureBotAI/CMMMech/issues/74
+tags:
+- round20
+- independent-review
+- nickel-laterite
+```
