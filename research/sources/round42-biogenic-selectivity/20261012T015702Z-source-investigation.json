@@ -1,0 +1,741 @@
+{
+  "schema": "CMMMech source investigation and curation handoff; not independent scientific review",
+  "timestamp_utc": "2026-10-12T01:57:02.605617+00:00",
+  "curator": {
+    "actor": "codex",
+    "model": "GPT-6",
+    "tool": "codex",
+    "agent": "/root/round27_packaging"
+  },
+  "worktree": "/private/tmp/CMMMech-expansion-round42-20261012",
+  "trusted_base": "a5528a4807ba14fd8088a557ad105ac10ca62965",
+  "branch": "curate/cmm-expansion-round42-20261012",
+  "decision": "Extend existing birnessite owner with distinct 2009 binary Co/Ni sorption arm, preserving every prior field/list prefix and history. No new material owner, criticality or identity identifier.",
+  "target": "data/records/birnessite.yaml",
+  "record_sha256": "68f1ff968be471ba2095191414df2e51608002b5d34285dadde2814825ac65f4",
+  "history": "history/records/birnessite/2026-10-12T015436Z-codex-a24dff.yaml",
+  "history_sha256": "76bac25843cd385f3fac82ac6bbd486c95561de7e1b615c6b5eef99550accaa4",
+  "source": {
+    "doi": "10.2320/matertrans.M-M2009821",
+    "title": "Selective Sorption of Co2+ over Ni2+ Using Biogenic Manganese Oxides",
+    "authors": [
+      "Keiko Sasaki",
+      "Takuya Kaseyama",
+      "Tsuyoshi Hirajima"
+    ],
+    "edition": "Materials Transactions50(11):2643-2648,2009; advance7Oct2009, issue1Nov2009, J-STAGEavailable25Oct2009",
+    "url": "https://www.jstage.jst.go.jp/article/matertrans/50/11/50_M-M2009821/_article",
+    "pdf_url": "https://www.jstage.jst.go.jp/article/matertrans/50/11/50_M-M2009821/_pdf",
+    "state": "Complete original final paginated six-page PDF acquired, text and every original page/figure/table inspected",
+    "supplements": "Publisher HTML explicitly reports Supplementary material(0); no separate SI acquired or claimed. Its Figures(0) describes the HTML asset inventory, not absence of the12 printed PDF figures.",
+    "reuse": "Free reading access, PDF copyright2009 The Mining and Materials Processing Institute of Japan; no open redistribution license verified, no raw fulltext committed."
+  },
+  "assay": {
+    "material": "Source-assigned poorly crystalline birnessite, freeze-dried fungal Mn-oxide composite; phase purity unresolved, no new2009XRD",
+    "organism": "Paraconiothyrium sp.WL-2, current NCBITaxon443224; strain-labelled unresolved species node, not stock authentication",
+    "biomass_state": "Freeze-dried prepared material; no viable-cell/metabolic sorption demonstration",
+    "chemical_comparator": "Boiled MnSO4/ammonium peroxodisulfate product called ramsdellite; unlike mineral/area/composition",
+    "loadings": {
+      "biogenic_g": 0.02,
+      "chemical_g": 0.015,
+      "solution_L": 0.15,
+      "nominal_solid_Mn_mmol_per_L": 1
+    },
+    "conditions": {
+      "initial_pH": 6.5,
+      "buffer": "PIPES, concentration not given",
+      "KNO3_mmol_per_L": 100,
+      "temperature_C": 25,
+      "shaking_rpm": 100,
+      "duration_h": 300,
+      "replicates": 2
+    },
+    "actual_initial_pairs_Co_Ni_mmol_per_L": [
+      [
+        0.31,
+        0.1
+      ],
+      [
+        0.35,
+        0.35
+      ],
+      [
+        0.34,
+        1.0
+      ]
+    ],
+    "controls": "Co-only comparison; no-Co or no-Ni background Mn release in respective single-solute panels; preliminary tissue-only negative stated without displayed data; no displayed no-sorbent timecourse or sterile formation series",
+    "measurements": "0.2micrometre filtrates ICP-MS; source detection limits0.06microgram/L Mn,0.01microgram/L Co/Ni. Residue0.45micrometre filtration then overnight lyophilization and exsituXPS; no in situ redox timecourse",
+    "outcome": "Preferential fractional Co depletion with Ni-dependent inhibition of Co uptake. Table2 alphaCo=7.92,7.47,17.7biogenic versus5.65,2.23,2.65chemical",
+    "coefficient_definition": "Dimensionless alphaCo=(XCo/CCo)/(XNi/CNi), X/C being sorbed/aqueous mole fractions; reported coefficients, not independently reconstructed raw measurements, percentages, product yield or purity.",
+    "scale": "Laboratory defined salts; no real ore-leachate trial, isolated Co product, desorption/regeneration or industrial deployment"
+  },
+  "figure_inspection": [
+    {
+      "pages": "2643",
+      "scope": "Complete methods, title/authors, prepared-material identities and doses; actual micro-unit glyphs checked against text extraction."
+    },
+    {
+      "pages": "2644",
+      "scope": "Table1 Mn fractions/AOS versus adjoining prose; Fig1 Co and Mn single-solute courses including no-Co background."
+    },
+    {
+      "pages": "2645",
+      "scope": "Figs2-4 chemical Co, fungal Ni and chemical Ni assays; actual initial concentrations and different plotted durations. No raw values inferred by digitization."
+    },
+    {
+      "pages": "2646",
+      "scope": "Figs5-6 fitted Freundlich/Langmuir displays and Mn(III,IV) mass denominator; Fig7 original binary Co/Ni/Mn curves and Eq3 coefficient definition."
+    },
+    {
+      "pages": "2647",
+      "scope": "Fig8 chemical binary comparator, Table2 exact coefficients/initial pairs, Fig9 Mn3s and Fig10 Co2p-Mn2s XPS."
+    },
+    {
+      "pages": "2648",
+      "scope": "Fig11 Ni2p satellite interpretation, Fig12 proposed binding-site diagram and complete references, including characterization-reference mismatch."
+    }
+  ],
+  "conflicts_and_limits": [
+    "No new2009diffraction; characterization sentence points to reference15Murray1984 whereas the separately cited source7 is2008WL-2 study. No fresh mineral-purity proof inferred.",
+    "Table1 AOS3.09/3.68 conflicts with prose3.17/3.70; Table1 synthetic MnIII0.296 conflicts with prose lack of MnIII. No inventory silently reconciled.",
+    "Methods single-ion limitsCo1.7/Ni2.11mmol/L are exceeded by Fig2Co2.19 and Fig3Ni2.31; actual binary Table2pairs retained separately.",
+    "Page2646biogenic Mn-release paragraph points to Fig8a/c, but Fig8caption identifies chemical comparator; Fig7c is the biogenic binary Mn panel.",
+    "Specific areas81.4vs11.5m2/g, differing phases, oxidation composition and biomass confound attributing selective uptake exclusively to microbial origin.",
+    "Figure5Q normalized to MnIII/IV mass excludingMnII; fitted models are not independent observations or capacity pertotalcomposite. No fitted capacity imported.",
+    "Abstract Ni-edge-site claim differs from bodydiscussion of layer substitution/no edge competition; Fig12 is proposed mechanism and does not measure occupancy.",
+    "XPSsurface CoIII/NiII assignments do not demonstrate complete bulk conversion or CoOOH mineral yield; released Mn decreases are not closed Mn/Co balance.",
+    "2009samples lyophilized aftersorption versus2008air-dried at4C; paper/material lineage overlaps and stock/batch independence is not proven. Newbinaryassays are distinct, notclaimed independentproductionreplication.",
+    "No replicate-level numeric dataset or SI supports rebuilding coefficient uncertainty; Table2 values are retained as source-reported."
+  ],
+  "identifiers": {
+    "fresh_taxonomy_receipt": "/private/tmp/cmm-round42-biogenic-selectivity-research/raw/ncbi443224.json",
+    "taxon443224_label": "Paraconiothyrium sp. WL-2",
+    "mineral_identifiers": "No new mineral CURIE or formula assignment. Existing dated IMA/Handbook identity and old studies preserved via prior independently reviewed record, not represented as freshly re-researched."
+  },
+  "dedup": {
+    "timestamp": "2026-10-12T01:52:38.267361+00:00",
+    "corpus_roots": [
+      "/private/tmp/CMMMech-expansion-round42-20261012/data/records",
+      "/private/tmp/CMMMech-expansion-round42-20261012/research",
+      "/private/tmp/CMMMech-expansion-round42-20261012/reviews",
+      "/private/tmp/CMMMech-expansion-round42-20261012/history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history"
+    ],
+    "metadata_files_scanned_for_referenced_roots": 3248,
+    "referenced_raw_roots": [
+      "/private/tmp/cmm-round10-b-f-raw",
+      "/private/tmp/cmm-round10-graphite-raw",
+      "/private/tmp/cmm-round10-nb-ta-raw",
+      "/private/tmp/cmm-round10-ti-zr-raw",
+      "/private/tmp/cmm-round11-be-rb-re-raw",
+      "/private/tmp/cmm-round11-he-raw",
+      "/private/tmp/cmm-round11-ir-os-hf-raw",
+      "/private/tmp/cmm-round11-lu-tm-pm-raw",
+      "/private/tmp/cmm-round12-aluminium-boron-raw",
+      "/private/tmp/cmm-round12-carbon-metals-raw",
+      "/private/tmp/cmm-round12-groups-raw",
+      "/private/tmp/cmm-round12-industrial-minerals-raw",
+      "/private/tmp/cmm-round13-grade-raw",
+      "/private/tmp/cmm-round13-mineral-raw",
+      "/private/tmp/cmm-round13-secondary-raw",
+      "/private/tmp/cmm-round14-magnet-raw",
+      "/private/tmp/cmm-round14-mineral-raw",
+      "/private/tmp/cmm-round14-product-raw",
+      "/private/tmp/cmm-round14-secondary-raw",
+      "/private/tmp/cmm-round15-brine-raw",
+      "/private/tmp/cmm-round15-mineral-raw",
+      "/private/tmp/cmm-round16-produced-water-raw",
+      "/private/tmp/cmm-round16-silicate-raw",
+      "/private/tmp/cmm-round16-vivianite-raw",
+      "/private/tmp/cmm-round17-biotite-raw",
+      "/private/tmp/cmm-round17-enstatite-raw",
+      "/private/tmp/cmm-round17-saline-raw",
+      "/private/tmp/cmm-round18-catalyst-raw",
+      "/private/tmp/cmm-round18-dunite-raw",
+      "/private/tmp/cmm-round18-mineral-feeds-raw",
+      "/private/tmp/cmm-round18-products-raw",
+      "/private/tmp/cmm-round19-hydrogenation-catalyst-raw",
+      "/private/tmp/cmm-round19-iron-manganese-raw",
+      "/private/tmp/cmm-round19-manganese-residue-raw",
+      "/private/tmp/cmm-round19-tailings-raw",
+      "/private/tmp/cmm-round20-goethite-raw",
+      "/private/tmp/cmm-round20-laterite-raw",
+      "/private/tmp/cmm-round20-mafic-tailings-raw",
+      "/private/tmp/cmm-round20-nodule-raw",
+      "/private/tmp/cmm-round21-crusts-raw",
+      "/private/tmp/cmm-round21-pcb-raw",
+      "/private/tmp/cmm-round21-ree-mud-raw",
+      "/private/tmp/cmm-round22-concretions-raw",
+      "/private/tmp/cmm-round22-pcb-raw",
+      "/private/tmp/cmm-round22-pv-raw",
+      "/private/tmp/cmm-round22-sulfides-raw",
+      "/private/tmp/cmm-round23-crusts-raw",
+      "/private/tmp/cmm-round23-ghiorse-raw",
+      "/private/tmp/cmm-round23-identity-gaps-raw",
+      "/private/tmp/cmm-round23-lcd-raw",
+      "/private/tmp/cmm-round23-rey-mud-raw",
+      "/private/tmp/cmm-round24-copper-slag-raw",
+      "/private/tmp/cmm-round24-frontier-raw",
+      "/private/tmp/cmm-round24-nimh-raw",
+      "/private/tmp/cmm-round24-sulfuric-raw",
+      "/private/tmp/cmm-round25-bf-dust-raw",
+      "/private/tmp/cmm-round25-button-raw",
+      "/private/tmp/cmm-round25-frontier-raw",
+      "/private/tmp/cmm-round25-oil-ash-raw",
+      "/private/tmp/cmm-round26-eaf-dust-raw",
+      "/private/tmp/cmm-round26-packaging-raw",
+      "/private/tmp/cmm-round26-root-raw",
+      "/private/tmp/cmm-round26-superalloy-raw",
+      "/private/tmp/cmm-round27-eaf-slag-raw",
+      "/private/tmp/cmm-round27-goethite-raw",
+      "/private/tmp/cmm-round27-packaging-raw",
+      "/private/tmp/cmm-round27-root-raw",
+      "/private/tmp/cmm-round27-superalloy-raw",
+      "/private/tmp/cmm-round28-black-shale-research",
+      "/private/tmp/cmm-round28-goethite-research",
+      "/private/tmp/cmm-round28-tatra-research",
+      "/private/tmp/cmm-round28-tire-research",
+      "/private/tmp/cmm-round29-bastnaesite-research",
+      "/private/tmp/cmm-round29-ilmenite-research",
+      "/private/tmp/cmm-round29-tungsten-waste-research",
+      "/private/tmp/cmm-round29-zinc-ore-research",
+      "/private/tmp/cmm-round30-basalt-research",
+      "/private/tmp/cmm-round30-chromite-research",
+      "/private/tmp/cmm-round30-pyrrhotite-research",
+      "/private/tmp/cmm-round30-tungsten-research",
+      "/private/tmp/cmm-round31-chromite-tailings-research",
+      "/private/tmp/cmm-round31-ilmenite-research",
+      "/private/tmp/cmm-round31-kaolin-research",
+      "/private/tmp/cmm-round31-kaolin-waste-research",
+      "/private/tmp/cmm-round31-stibnite-research",
+      "/private/tmp/cmm-round31-tungsten-research",
+      "/private/tmp/cmm-round32-arsenopyrite-research",
+      "/private/tmp/cmm-round32-bornite-research",
+      "/private/tmp/cmm-round32-chromitite-research",
+      "/private/tmp/cmm-round32-molybdenite-research",
+      "/private/tmp/cmm-round33-chalcocite-research",
+      "/private/tmp/cmm-round33-covellite-research",
+      "/private/tmp/cmm-round33-molybdenite-research",
+      "/private/tmp/cmm-round33-pyrite-research",
+      "/private/tmp/cmm-round34-galena-research",
+      "/private/tmp/cmm-round34-greigite-research",
+      "/private/tmp/cmm-round34-mackinawite-research",
+      "/private/tmp/cmm-round34-uraninite-research",
+      "/private/tmp/cmm-round35-anglesite-research",
+      "/private/tmp/cmm-round35-jarosite-research",
+      "/private/tmp/cmm-round35-ningyoite-research",
+      "/private/tmp/cmm-round35-schwertmannite-research",
+      "/private/tmp/cmm-round36-autunite-assist",
+      "/private/tmp/cmm-round36-autunite-research",
+      "/private/tmp/cmm-round36-moolooite-research",
+      "/private/tmp/cmm-round36-uramphite-research",
+      "/private/tmp/cmm-round37-falottaite-research",
+      "/private/tmp/cmm-round37-humboldtine-research",
+      "/private/tmp/cmm-round37-lindbergite-research",
+      "/private/tmp/cmm-round37-rhabdophane-research",
+      "/private/tmp/cmm-round38-hausmannite-research",
+      "/private/tmp/cmm-round38-katsarosite-research",
+      "/private/tmp/cmm-round38-mimetite-research",
+      "/private/tmp/cmm-round38-vanadinite-research",
+      "/private/tmp/cmm-round39-brownrot-research",
+      "/private/tmp/cmm-round39-ree-phosphate-research",
+      "/private/tmp/cmm-round39-vanadinite-research",
+      "/private/tmp/cmm-round39-wei-manganese-research",
+      "/private/tmp/cmm-round40-birnessite-research",
+      "/private/tmp/cmm-round40-cobalt-manganese-oxide-research",
+      "/private/tmp/cmm-round40-manganese-ore-oxalates-research",
+      "/private/tmp/cmm-round40-samarium-phosphate-research",
+      "/private/tmp/cmm-round41-biogenic-birnessite-research",
+      "/private/tmp/cmm-round41-cobalt-birnessite-research",
+      "/private/tmp/cmm-round41-lateritic-cobalt-research",
+      "/private/tmp/cmm-round41-manganese-minerals-research",
+      "/private/tmp/cmm-round7-ho-er-gd-raw",
+      "/private/tmp/cmm-round7-terbium-raw",
+      "/private/tmp/cmm-round8-sc-pr-raw",
+      "/private/tmp/cmm-round9-cs-sr-raw",
+      "/private/tmp/cmm-round9-ru-rh-raw",
+      "/private/tmp/cmm-round9-si-sn-raw"
+    ],
+    "pattern": "10\\.2320/matertrans[.]M-M2009821|M-M2009821|Selective Sorption of Co|Paraconiothyrium|birnessite",
+    "commands": [
+      [
+        "rg",
+        "--hidden",
+        "--no-ignore",
+        "--follow",
+        "-n",
+        "-i",
+        "10\\.2320/matertrans[.]M-M2009821|M-M2009821|Selective Sorption of Co|Paraconiothyrium|birnessite",
+        "/private/tmp/CMMMech-expansion-round42-20261012/data/records",
+        "/private/tmp/CMMMech-expansion-round42-20261012/research",
+        "/private/tmp/CMMMech-expansion-round42-20261012/reviews",
+        "/private/tmp/CMMMech-expansion-round42-20261012/history",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history"
+      ],
+      [
+        "rg",
+        "--hidden",
+        "--no-ignore",
+        "--follow",
+        "-n",
+        "-i",
+        "10\\.2320/matertrans[.]M-M2009821|M-M2009821|Selective Sorption of Co|Paraconiothyrium|birnessite",
+        "-g",
+        "*.txt",
+        "-g",
+        "*.json",
+        "-g",
+        "*.md",
+        "-g",
+        "*.yaml",
+        "-g",
+        "*.html",
+        "-g",
+        "*.xml",
+        "/private/tmp/cmm-round10-b-f-raw",
+        "/private/tmp/cmm-round10-graphite-raw",
+        "/private/tmp/cmm-round10-nb-ta-raw",
+        "/private/tmp/cmm-round10-ti-zr-raw",
+        "/private/tmp/cmm-round11-be-rb-re-raw",
+        "/private/tmp/cmm-round11-he-raw",
+        "/private/tmp/cmm-round11-ir-os-hf-raw",
+        "/private/tmp/cmm-round11-lu-tm-pm-raw",
+        "/private/tmp/cmm-round12-aluminium-boron-raw",
+        "/private/tmp/cmm-round12-carbon-metals-raw",
+        "/private/tmp/cmm-round12-groups-raw",
+        "/private/tmp/cmm-round12-industrial-minerals-raw",
+        "/private/tmp/cmm-round13-grade-raw",
+        "/private/tmp/cmm-round13-mineral-raw",
+        "/private/tmp/cmm-round13-secondary-raw",
+        "/private/tmp/cmm-round14-magnet-raw",
+        "/private/tmp/cmm-round14-mineral-raw",
+        "/private/tmp/cmm-round14-product-raw",
+        "/private/tmp/cmm-round14-secondary-raw",
+        "/private/tmp/cmm-round15-brine-raw",
+        "/private/tmp/cmm-round15-mineral-raw",
+        "/private/tmp/cmm-round16-produced-water-raw",
+        "/private/tmp/cmm-round16-silicate-raw",
+        "/private/tmp/cmm-round16-vivianite-raw",
+        "/private/tmp/cmm-round17-biotite-raw",
+        "/private/tmp/cmm-round17-enstatite-raw",
+        "/private/tmp/cmm-round17-saline-raw",
+        "/private/tmp/cmm-round18-catalyst-raw",
+        "/private/tmp/cmm-round18-dunite-raw",
+        "/private/tmp/cmm-round18-mineral-feeds-raw",
+        "/private/tmp/cmm-round18-products-raw",
+        "/private/tmp/cmm-round19-hydrogenation-catalyst-raw",
+        "/private/tmp/cmm-round19-iron-manganese-raw",
+        "/private/tmp/cmm-round19-manganese-residue-raw",
+        "/private/tmp/cmm-round19-tailings-raw",
+        "/private/tmp/cmm-round20-goethite-raw",
+        "/private/tmp/cmm-round20-laterite-raw",
+        "/private/tmp/cmm-round20-mafic-tailings-raw",
+        "/private/tmp/cmm-round20-nodule-raw",
+        "/private/tmp/cmm-round21-crusts-raw",
+        "/private/tmp/cmm-round21-pcb-raw",
+        "/private/tmp/cmm-round21-ree-mud-raw",
+        "/private/tmp/cmm-round22-concretions-raw",
+        "/private/tmp/cmm-round22-pcb-raw",
+        "/private/tmp/cmm-round22-pv-raw",
+        "/private/tmp/cmm-round22-sulfides-raw",
+        "/private/tmp/cmm-round23-crusts-raw",
+        "/private/tmp/cmm-round23-ghiorse-raw",
+        "/private/tmp/cmm-round23-identity-gaps-raw",
+        "/private/tmp/cmm-round23-lcd-raw",
+        "/private/tmp/cmm-round23-rey-mud-raw",
+        "/private/tmp/cmm-round24-copper-slag-raw",
+        "/private/tmp/cmm-round24-frontier-raw",
+        "/private/tmp/cmm-round24-nimh-raw",
+        "/private/tmp/cmm-round24-sulfuric-raw",
+        "/private/tmp/cmm-round25-bf-dust-raw",
+        "/private/tmp/cmm-round25-button-raw",
+        "/private/tmp/cmm-round25-frontier-raw",
+        "/private/tmp/cmm-round25-oil-ash-raw",
+        "/private/tmp/cmm-round26-eaf-dust-raw",
+        "/private/tmp/cmm-round26-packaging-raw",
+        "/private/tmp/cmm-round26-root-raw",
+        "/private/tmp/cmm-round26-superalloy-raw",
+        "/private/tmp/cmm-round27-eaf-slag-raw",
+        "/private/tmp/cmm-round27-goethite-raw",
+        "/private/tmp/cmm-round27-packaging-raw",
+        "/private/tmp/cmm-round27-root-raw",
+        "/private/tmp/cmm-round27-superalloy-raw",
+        "/private/tmp/cmm-round28-black-shale-research",
+        "/private/tmp/cmm-round28-goethite-research",
+        "/private/tmp/cmm-round28-tatra-research",
+        "/private/tmp/cmm-round28-tire-research",
+        "/private/tmp/cmm-round29-bastnaesite-research",
+        "/private/tmp/cmm-round29-ilmenite-research",
+        "/private/tmp/cmm-round29-tungsten-waste-research",
+        "/private/tmp/cmm-round29-zinc-ore-research",
+        "/private/tmp/cmm-round30-basalt-research",
+        "/private/tmp/cmm-round30-chromite-research",
+        "/private/tmp/cmm-round30-pyrrhotite-research",
+        "/private/tmp/cmm-round30-tungsten-research",
+        "/private/tmp/cmm-round31-chromite-tailings-research",
+        "/private/tmp/cmm-round31-ilmenite-research",
+        "/private/tmp/cmm-round31-kaolin-research",
+        "/private/tmp/cmm-round31-kaolin-waste-research",
+        "/private/tmp/cmm-round31-stibnite-research",
+        "/private/tmp/cmm-round31-tungsten-research",
+        "/private/tmp/cmm-round32-arsenopyrite-research",
+        "/private/tmp/cmm-round32-bornite-research",
+        "/private/tmp/cmm-round32-chromitite-research",
+        "/private/tmp/cmm-round32-molybdenite-research",
+        "/private/tmp/cmm-round33-chalcocite-research",
+        "/private/tmp/cmm-round33-covellite-research",
+        "/private/tmp/cmm-round33-molybdenite-research",
+        "/private/tmp/cmm-round33-pyrite-research",
+        "/private/tmp/cmm-round34-galena-research",
+        "/private/tmp/cmm-round34-greigite-research",
+        "/private/tmp/cmm-round34-mackinawite-research",
+        "/private/tmp/cmm-round34-uraninite-research",
+        "/private/tmp/cmm-round35-anglesite-research",
+        "/private/tmp/cmm-round35-jarosite-research",
+        "/private/tmp/cmm-round35-ningyoite-research",
+        "/private/tmp/cmm-round35-schwertmannite-research",
+        "/private/tmp/cmm-round36-autunite-assist",
+        "/private/tmp/cmm-round36-autunite-research",
+        "/private/tmp/cmm-round36-moolooite-research",
+        "/private/tmp/cmm-round36-uramphite-research",
+        "/private/tmp/cmm-round37-falottaite-research",
+        "/private/tmp/cmm-round37-humboldtine-research",
+        "/private/tmp/cmm-round37-lindbergite-research",
+        "/private/tmp/cmm-round37-rhabdophane-research",
+        "/private/tmp/cmm-round38-hausmannite-research",
+        "/private/tmp/cmm-round38-katsarosite-research",
+        "/private/tmp/cmm-round38-mimetite-research",
+        "/private/tmp/cmm-round38-vanadinite-research",
+        "/private/tmp/cmm-round39-brownrot-research",
+        "/private/tmp/cmm-round39-ree-phosphate-research",
+        "/private/tmp/cmm-round39-vanadinite-research",
+        "/private/tmp/cmm-round39-wei-manganese-research",
+        "/private/tmp/cmm-round40-birnessite-research",
+        "/private/tmp/cmm-round40-cobalt-manganese-oxide-research",
+        "/private/tmp/cmm-round40-manganese-ore-oxalates-research",
+        "/private/tmp/cmm-round40-samarium-phosphate-research",
+        "/private/tmp/cmm-round41-biogenic-birnessite-research",
+        "/private/tmp/cmm-round41-cobalt-birnessite-research",
+        "/private/tmp/cmm-round41-lateritic-cobalt-research",
+        "/private/tmp/cmm-round41-manganese-minerals-research",
+        "/private/tmp/cmm-round7-ho-er-gd-raw",
+        "/private/tmp/cmm-round7-terbium-raw",
+        "/private/tmp/cmm-round8-sc-pr-raw",
+        "/private/tmp/cmm-round9-cs-sr-raw",
+        "/private/tmp/cmm-round9-ru-rh-raw",
+        "/private/tmp/cmm-round9-si-sn-raw"
+      ]
+    ],
+    "exit_codes": [
+      0,
+      0
+    ],
+    "matching_lines": [
+      1024,
+      5349
+    ],
+    "scope": "Hidden and ignored files included; relevant symlinks followed. Bounded current and original checkout scientific/document trees plus referenced existing round research/raw/assist roots. Raw search checks retained text/metadata/extractions, not byte-level recognition of unextracted binary scientific figures. No unrelated home or temp scan."
+  },
+  "searches": [
+    {
+      "provider": "web search",
+      "query": "\"10.2320/matertrans.M-M2009821\"",
+      "date": "2026-10-12",
+      "coverage": "First returned result set only; no exhaustive citation/database scan"
+    },
+    {
+      "provider": "web search",
+      "query": "\"M-M2009821\" correction retraction erratum",
+      "date": "2026-10-12",
+      "coverage": "First returned result set only; no exhaustive citation/database scan"
+    },
+    {
+      "provider": "web search",
+      "query": "\"Selective Sorption of Co2+\" \"Sasaki\" correction OR erratum OR retraction",
+      "date": "2026-10-12",
+      "coverage": "First returned result set only; no exhaustive citation/database scan"
+    },
+    {
+      "provider": "web search",
+      "query": "\"Paraconiothyrium\" \"selectivity\" cobalt nickel Mn oxides contradiction",
+      "date": "2026-10-12",
+      "coverage": "First returned result set only; no exhaustive citation/database scan"
+    },
+    {
+      "provider": "web search",
+      "query": "\"10.2320/matertrans.M-M2009821\" supplementary data",
+      "date": "2026-10-12",
+      "coverage": "First returned result set only; no exhaustive citation/database scan"
+    }
+  ],
+  "notice_assessment": "No correction/retraction specific to this paper located in bounded returned searches or current publisher record. Crossref update-to absent and relation empty. This is not an exhaustive absence claim; actual source discrepancies are preserved.",
+  "source_overlap": "Current/original trees contain DOI only as a bibliographic frontier lead. Existing2008Co-onlyand2022live-fungal arms remain unchanged.2009adds binaryCo/Ni mixtures; Yu2012 remains incomplete underissue137, not accepted indirectly.",
+  "acquisitions": [
+    {
+      "url": "https://www.jstage.jst.go.jp/article/matertrans/50/11/50_M-M2009821/_pdf",
+      "timestamp": "2026-10-12T01:52:12.489612+00:00",
+      "status": 200,
+      "final_url": "https://www.jstage.jst.go.jp/article/matertrans/50/11/50_M-M2009821/_pdf",
+      "content_type": "application/pdf;charset=UTF-8",
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/raw/sasaki2009.pdf",
+      "bytes": 475207,
+      "sha256": "eb7ecae442f557dc472c2fe06c2ac7699f7ff1e7f7b1029a319605ea35ef6cb2"
+    },
+    {
+      "url": "https://www.jstage.jst.go.jp/article/matertrans/50/11/50_M-M2009821/_article",
+      "timestamp": "2026-10-12T01:52:15.387049+00:00",
+      "status": 200,
+      "final_url": "https://www.jstage.jst.go.jp/article/matertrans/50/11/50_M-M2009821/_article",
+      "content_type": "text/html;charset=utf-8",
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/raw/publisher.html",
+      "bytes": 74052,
+      "sha256": "4a517ea8245c7f2186f6e25c84af399f2a9345146e023ab9af05e00b4304e8c3"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.2320%2Fmatertrans.M-M2009821",
+      "timestamp": "2026-10-12T01:52:17.345786+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.2320%2Fmatertrans.M-M2009821",
+      "content_type": "application/json",
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/raw/crossref.json",
+      "bytes": 6603,
+      "sha256": "81036e6ec1d43a0d918f7a09fbaa5fff58e36e241a22cd667815defeeea3b83f"
+    },
+    {
+      "url": "https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/443224/dataset_report",
+      "timestamp": "2026-10-12T01:52:17.588501+00:00",
+      "status": 200,
+      "final_url": "https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/443224/dataset_report",
+      "content_type": "application/json",
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/raw/ncbi443224.json",
+      "bytes": 914,
+      "sha256": "2d97e5866e43400dfe134e084b344c55db139bf2f201a75ef37c04f940fd2004"
+    }
+  ],
+  "failed_initial_acquisition": [
+    {
+      "url": "https://www.jstage.jst.go.jp/article/matertrans/50/11/50_M-M2009821/_pdf",
+      "timestamp": "2026-10-12T01:51:59.447263+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://www.jstage.jst.go.jp/article/matertrans/50/11/50_M-M2009821/_article",
+      "timestamp": "2026-10-12T01:51:59.470804+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.2320%2Fmatertrans.M-M2009821",
+      "timestamp": "2026-10-12T01:51:59.471633+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/443224/dataset_report",
+      "timestamp": "2026-10-12T01:51:59.472193+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    }
+  ],
+  "prior_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round41-biogenic-birnessite-research/raw/sasaki2008.pdf",
+      "sha256": "28c4babe0dc984ac07f6660069f0a43f95fc7490ab6b4c560bdbac3db54ebbac",
+      "fresh_download": false,
+      "scope": "Previously fully inspected in round41; source comparison and relevant preparation text rechecked here. Not a new independent replication."
+    },
+    {
+      "path": "/private/tmp/cmm-round41-biogenic-birnessite-research/raw/sasaki2008.txt",
+      "sha256": "5bd7f4b36c163df0d264ecfcc59c1578dfa5c2e310588907623d9bbb0423de10",
+      "fresh_download": false,
+      "scope": "Previously fully inspected in round41; source comparison and relevant preparation text rechecked here. Not a new independent replication."
+    }
+  ],
+  "baseline": {
+    "recorded_at": "2026-10-12T01:51:04.365517+00:00",
+    "worktree": "/private/tmp/CMMMech-expansion-round42-20261012",
+    "branch": "curate/cmm-expansion-round42-20261012",
+    "base": "a5528a4807ba14fd8088a557ad105ac10ca62965",
+    "tree": "e49c2a2ee20b9450dd8a9e6f727fb9eef962828c",
+    "preservation_snapshot": "/private/tmp/cmm-round42-preservation-before.json",
+    "preserved_counts": {
+      "main": 7187,
+      "skill": 8
+    },
+    "baseline_receipt": "/private/tmp/cmm-round41-postmerge-20261012-published-terminal.json",
+    "baseline_sha256": "e4419f9b81546a9958657f3afd3ce255788addf5a35e34cb8d971819bdb2ae28",
+    "baseline_scope": "Reuse the just-completed fresh remote-main full gate at this exact unmodified commit and tree; no redundant test rerun before curation.",
+    "passed": true
+  },
+  "preservation": {
+    "timestamp": "2026-10-12T01:54:56Z",
+    "base": "a5528a4807ba14fd8088a557ad105ac10ca62965",
+    "record": "data/records/birnessite.yaml",
+    "record_sha256": "68f1ff968be471ba2095191414df2e51608002b5d34285dadde2814825ac65f4",
+    "prior_record_sha256": "3b406cf7edacbefa8b8462317643125730f03801dd969630bb0afa98844f06be",
+    "all_prior_fields_and_ordered_prefixes_preserved": true,
+    "prior_history_hashes": {
+      "history/records/birnessite/2026-10-12T004836Z-codex-f35e9c.yaml": "47ff413bf0dab6ae94eb7f7343e5adeafba67cbc33d98852db91a8153ae48422",
+      "history/records/birnessite/2026-10-12T012317Z-codex-aeaa14.yaml": "9071cd0f52d4d2638bdd3f11876d43cd7efbcbec22bc77a44dc12b266a88f4c1"
+    },
+    "new_history": "history/records/birnessite/2026-10-12T015436Z-codex-a24dff.yaml",
+    "new_history_sha256": "76bac25843cd385f3fac82ac6bbd486c95561de7e1b615c6b5eef99550accaa4",
+    "changes": {
+      "sources_appended": 1,
+      "mechanisms_appended": 1,
+      "inline_events_appended": 1,
+      "history_refs_appended": 1
+    }
+  },
+  "checks": {
+    "named_validation": "UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 PYTHONDONTWRITEBYTECODE=1 uv run --locked cmmmech validate data/records/birnessite.yaml",
+    "named_validation_exit": 0,
+    "named_validation_result": "Checked1record;0failed",
+    "named_validation_log": "/private/tmp/cmm-round42-biogenic-selectivity-research/named-validation-final.log",
+    "named_validation_sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e",
+    "independent_review": "Pending by another agent; this dossier is authorhandoff only",
+    "full_batch_gates": "Parent owns finalcohort gates; not yet claimed here",
+    "prewrite_guard": "Initial temporary fragment indentation failed in-memory preservation assertion before any record write; corrected before appending record. Canonical scaffold was then attached normally; no old artifact overwritten."
+  },
+  "raw_files": [
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/acquire-network.py",
+      "sha256": "64bebeff95099064638fbc1ebe9a059baf08a5f91387ef84e7c71b4bf74bdf6a",
+      "bytes": 1162
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/acquire.py",
+      "sha256": "384f0772925370c2be2562d897daf9662fcab76d44d25074d3833cf7d9b0b562",
+      "bytes": 1154
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/dedup-corpus-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/dedup-corpus.txt",
+      "sha256": "a9dbf3ed498782da6620dc9883ed3ad580b0bdf8ea5cca51e8568b1d9e8ea913",
+      "bytes": 294188
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/dedup-raw-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/dedup-referenced-raw.txt",
+      "sha256": "26f50fb4ed89577ff7d3eacfa695cd4026250db3ce1b2493cead9d67a528dd4e",
+      "bytes": 5807041
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/dedup.json",
+      "sha256": "8ee6885991f8c2857959c79731230b431944fa7ec191279c3e4ca549f5053509",
+      "bytes": 15551
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/dedup.py",
+      "sha256": "e5966ce78d284f2539d0d4fb0544babbec7b9ee57baa0833eac9e9026cdaeb78",
+      "bytes": 2476
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/extension.yaml",
+      "sha256": "684de10dd1f639485e5e27c68837d48644a933ee80c6b40485e66c3f4b1429da",
+      "bytes": 6395
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/named-validation-final.log",
+      "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e",
+      "bytes": 31
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/named-validation.log",
+      "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e",
+      "bytes": 31
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/preservation.json",
+      "sha256": "9f36e4e59ded41d23b390f1c9aaa24e06f73276039b1bbc2af755b1b4298a6dd",
+      "bytes": 1006
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/raw/acquisition-network.json",
+      "sha256": "cfbc5c571b4bed212bfc9bbd5274948654529c672ec94e210ec052a5c6bae23c",
+      "bytes": 1983
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/raw/acquisition.json",
+      "sha256": "9b62f939005e869b853f35a3084a3f15ab894a76b44ffe60b2a90f74563adb6b",
+      "bytes": 942
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/raw/crossref.json",
+      "sha256": "81036e6ec1d43a0d918f7a09fbaa5fff58e36e241a22cd667815defeeea3b83f",
+      "bytes": 6603
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/raw/ncbi443224.json",
+      "sha256": "2d97e5866e43400dfe134e084b344c55db139bf2f201a75ef37c04f940fd2004",
+      "bytes": 914
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/raw/notice-counterevidence-web.json",
+      "sha256": "3c5ca1259f56aa32610f73c14d8292a2e0d93d0851f5e3a19dbac71840d83597",
+      "bytes": 29508
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/raw/pages/page-01.png",
+      "sha256": "ddf811c05388770cb3bb570cbfe38feca96d20526b3247b2ababca4ecd89c57f",
+      "bytes": 371642
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/raw/pages/page-02.png",
+      "sha256": "f89a07a7747f4fcd8e56746d9bd01b45ab36db69d098fe87ce2f09fa2d5fd18f",
+      "bytes": 373754
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/raw/pages/page-03.png",
+      "sha256": "8ae63058ff203b7adeffbb2112476b6c53086ee313804c767f923d78c0daf13a",
+      "bytes": 191776
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/raw/pages/page-04.png",
+      "sha256": "6c858a24152e4abd0f950fdd316ca62174cb0709ca22a86929d2d2426e595714",
+      "bytes": 266801
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/raw/pages/page-05.png",
+      "sha256": "c53c84dd00e1a2f131cb355ca4ce315303cf1ece815ffd63b21169c0903f1d20",
+      "bytes": 289951
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/raw/pages/page-06.png",
+      "sha256": "373c93115392768fd45fabc1de75899a35768715069d1cfee16925b67eb2c934",
+      "bytes": 424307
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/raw/publisher.html",
+      "sha256": "4a517ea8245c7f2186f6e25c84af399f2a9345146e023ab9af05e00b4304e8c3",
+      "bytes": 74052
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/raw/sasaki2009.pdf",
+      "sha256": "eb7ecae442f557dc472c2fe06c2ac7699f7ff1e7f7b1029a319605ea35ef6cb2",
+      "bytes": 475207
+    },
+    {
+      "path": "/private/tmp/cmm-round42-biogenic-selectivity-research/raw/sasaki2009.txt",
+      "sha256": "8c4902151538bc21bc93ec35d52104e9d214ceeaedf337184e2e77cba0f570d8",
+      "bytes": 24222
+    }
+  ],
+  "next_actions": [
+    "Independent whole-record scientific review with exactnewhash and retained-old-science scope.",
+    "Keep issue137Yu2012 methods/graphics gap open; do not substitute2009data.",
+    "Optional separate selectivity research should acquire complete Ce/La primary or site-specific structural counterevidence before extending; current bounded search is not source exhaustion."
+  ]
+}
