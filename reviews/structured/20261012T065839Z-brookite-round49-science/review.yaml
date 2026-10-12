@@ -1,0 +1,293 @@
+schema_version: 1.0.0
+review_id: 20261012T065839Z-brookite-round49-science
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of brookite
+started_at: '2026-10-12T06:50:38Z'
+finished_at: '2026-10-12T06:58:39Z'
+reviewer:
+  identity: Codex /root/round43_hardmetal
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Peer /root/round27_packaging authored this record/history/dossier.
+    Reviewer authored separate baddeleyite only and inspected exact target/context
+    before scientific judgment; no target edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Current species identity and the complete natural-specimen primary study
+  support all curated claims. All10main and9SI pages/graphics inspected; no corrective
+  brookite finding. Quantities remain localspotanalyses and high-pressure modeled/fitted
+  phase observations, not recovery or biologicalclaims.
+source:
+  git_revision: b701555aa8b06a51f94a4d97bed7f3ebf96ab439
+  state: working_tree
+  inputs:
+  - path: data/records/brookite.yaml
+    sha256: 39978526ff9e4fe8233cbcbb6c2dc2e8d73b994054cac0b4d109cabc6bf6fd98
+    role: target
+  - path: history/records/brookite/2026-10-12T064821Z-codex-147a2e.yaml
+    sha256: 52bf491f3c4170c62cae27609e036917374a9dda685c36caed4d59b829fea119
+    role: context
+  - path: research/sources/round49-ti-minerals/20261012T065018Z-source-investigation.json
+    sha256: cb591bbfda47b62ffa39fa1629c28e2a4ad88ca1c7a1bfc34e62e1668234f0ff
+    role: context
+  - path: research/sources/round49-ti-minerals/20261012T065018Z-source-investigation.md
+    sha256: 0777f05cacdeb9fd0ff916a8152e3b43511ee6929f3364eed5dd2ca83d0146e8
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:brookite
+  path: data/records/brookite.yaml
+  label: Brookite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/brookite.yaml
+    role: maintained scientific record
+scope:
+  description: All fields/history/paired dossier; complete original10-page article
+    and9-pageSI, currentIMA, sourcebinding, bounded notices/dedup.
+  selection: Assigned independent review of new brookite owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:brookite
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/anatase.yaml data/records/brookite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:brookite
+  summary: Actually executed; Checked2records,0failed.
+- check_id: batch
+  name: Parent actual cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:brookite
+  summary: Verified terminal receipt and exact logSHA256; actual executed result.
+    Original-state241records284histories; target brookite unchanged.
+- check_id: nonempty
+  name: Parent actual cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:brookite
+  summary: Verified terminal receipt and exact logSHA256; actual executed result.
+    Original-state241records284histories; target brookite unchanged.
+- check_id: history
+  name: Parent actual cohort history
+  command: uv run --locked cmmmech validate-history --base b701555aa8b06a51f94a4d97bed7f3ebf96ab439
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:brookite
+  summary: Verified terminal receipt and exact logSHA256; actual executed result.
+    Original-state241records284histories; target brookite unchanged.
+- check_id: render-check
+  name: Parent actual cohort render-check
+  command: just render-check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:brookite
+  summary: Verified terminal receipt and exact logSHA256; actual executed result.
+    Original-state241records284histories; target brookite unchanged.
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/brookite.yaml
+  locator: All fields
+  accessed_at: '2026-10-12T06:58:39Z'
+  support: supports
+  summary: Exact frozen record and all source qualifiers inspected.
+  snapshot_sha256: 39978526ff9e4fe8233cbcbb6c2dc2e8d73b994054cac0b4d109cabc6bf6fd98
+- evidence_id: history
+  kind: record_content
+  reference: history/records/brookite/2026-10-12T064821Z-codex-147a2e.yaml
+  locator: Actual CREATE and separate inline event
+  accessed_at: '2026-10-12T06:58:39Z'
+  support: supports
+  summary: No scientific acceptance attributed to author.
+  snapshot_sha256: 52bf491f3c4170c62cae27609e036917374a9dda685c36caed4d59b829fea119
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round49-ti-minerals/20261012T065018Z-source-investigation.md
+  locator: Brookite investigation, acquisition and limits
+  accessed_at: '2026-10-12T06:58:39Z'
+  support: supports
+  summary: Scoped identity and natural-specimen characterization; separate anatase
+    locator defect is tracked in its own initial review and does not affect brookite.
+  snapshot_sha256: 0777f05cacdeb9fd0ff916a8152e3b43511ee6929f3364eed5dd2ca83d0146e8
+- evidence_id: dossier_json
+  kind: record_content
+  reference: research/sources/round49-ti-minerals/20261012T065018Z-source-investigation.json
+  locator: All119 source-artifact path/hash bindings
+  accessed_at: '2026-10-12T06:58:39Z'
+  support: supports
+  summary: Independently verified all119 bindings; acquired sources and failed non-evidence
+    responses distinguished.
+  snapshot_sha256: cb591bbfda47b62ffa39fa1629c28e2a4ad88ca1c7a1bfc34e62e1668234f0ff
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1021/acsearthspacechem.8b00213
+  locator: Complete10-page published original, pp844–853; Figures1–7, Table1
+  accessed_at: '2026-10-12T06:58:39Z'
+  support: supports
+  summary: All10 pages personally viewed. Specimen8115/MagnetCove, preparation and
+    ambient powderXRD support natural brookite. Two EDS locations on one particle
+    provide Table1 values; phase mixtures are kinetic, medium-dependent abiotic observations.
+  snapshot_sha256: 35952fc0406efdf9a512b0ba21c3e7b0e571e9d4d1186e3d25e37d9b59b97027
+- evidence_id: si
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/14894039
+  locator: Complete9-page SI, FiguresS1–S4 andTablesS1–S4
+  accessed_at: '2026-10-12T06:58:39Z'
+  support: supports
+  summary: All9 pages personally viewed. S2 supports no apparent phase change from
+    approximately8MPa pressing. S1/TablesS1,3,4 contain modeled quantities; S2-table
+    contains fitted phase fractions, not extraction yield.
+  snapshot_sha256: 886517ebd9788f6a3d1561acc460b283835eb1bc816cf37782c0959fe010f906
+- evidence_id: si_binding
+  kind: authority
+  reference: https://api.figshare.com/v2/articles/7999103
+  locator: Resource DOI and file14894039 metadata
+  accessed_at: '2026-10-12T06:58:39Z'
+  support: supports
+  summary: Resource DOI matches main8b00213; file name and MD5 match acquired original9-page
+    SI.
+  snapshot_sha256: 2b657f07a2af10d27a9e65270e604b6aa770bef59ea8ad610ddff3c68104117d
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Page31 Brookite row; definitions/terms pages1–2 inspected thisround
+  accessed_at: '2026-10-12T06:58:39Z'
+  support: supports
+  summary: TiO2,grandfatheredG,1825,UnitedKingdom. Year is not approval accession.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round49-ti-independent/source-check.json
+  locator: Independent named validation and raw hash verification
+  accessed_at: '2026-10-12T06:58:39Z'
+  support: supports
+  summary: Actual named2records0failed; all119 source artifact bindings verified.
+  snapshot_sha256: e4bf9bdb2c266b645a2077037fa0e14c9cee9fcf17b886576172694514b056ae
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round49-ti-independent/dedup-receipt.json
+  locator: Hidden/ignored/followed exactidentity andexperimentsearch
+  accessed_at: '2026-10-12T06:58:39Z'
+  support: supports
+  summary: Only the assigned new owner matches exactID; no material/formula lumping.
+  snapshot_sha256: 8f854c3c97fe0499fa9a9675d95f2501d44d09397529ba7b82c4d5d35becb65e
+  search_scope: rg --no-ignore --hidden --follow current/original records,research,reviews,history
+    plus180 existing referencedrawroots;3802textmetadatafiles. Nine missinghistoricalroots
+    and unextractedbinaries disclosed. Terms anatase,brookite,C6SC02311H,8b00213,INP.5R5,8115.*brookite.
+    Bounded, not machinewideabsence.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round49-ti-independent/web-notices.txt
+  locator: DOI/title correction/retraction resultsets
+  accessed_at: '2026-10-12T06:58:39Z'
+  support: supports
+  summary: No applicable notice returned in inspected bounded sets; no comprehensive
+    notice-absence claim.
+  snapshot_sha256: d6f1f4b1f2c6a91d31674d0aaf09998df73eca4151cccb900d78605a05ca9a22
+  search_scope: Exact10.1021/acsearthspacechem.8b00213 and10.1039/C6SC02311H pluscorrection
+    erratum retraction; exactanatase titlecriticism andNCBI562. First resultsets,no
+    pagination;2026-10-12.
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round49-final-terminal.json
+  locator: Actual four completed commands; all log hashes independently verified
+  accessed_at: '2026-10-12T06:58:39Z'
+  support: supports
+  summary: justcheck317passed3skipped;241records284histories;nonempty/history/render-check0.
+    Structural checks are separate from scientificreview.
+  snapshot_sha256: f4b7ce550db56904c8c1720dc9692d93cbb7dc471890f22f2be8b4f6c639f2d1
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Distinct current mineral identity
+  outcome: supported
+  target_ids:
+  - cmmmech:brookite
+  evidence_ids:
+  - ima
+  - primary
+  summary: TiO2brookite is distinct from anatase/rutile,elementalTi and manufacturedparticles;
+    natural MagnetCove specimen not universalorecharacterization.
+- assessment_id: characterization
+  area: evidence
+  topic: Localized natural-specimen characterization
+  outcome: supported
+  target_ids:
+  - cmmmech:brookite
+  evidence_ids:
+  - primary
+  - si
+  summary: Figure1powderXRD/Rietveld establishes phase assignment; Table1O38.64,Ti59.23,Nb2.13wt%
+    are twoEDSspotaverages ononeparticle,notoregrade or pureendmember.
+- assessment_id: scope
+  area: evidence
+  topic: Abiotic high-pressure interpretation
+  outcome: supported
+  target_ids:
+  - cmmmech:brookite
+  evidence_ids:
+  - primary
+  - si
+  summary: Hydrostaticity/pressure/transformationpath vary; Figure5 is kineticnonequilibrium.
+    High-pressureTiO2baddeleyite-type structure is not formation of ZrO2baddeleyite.
+    DFT calculations remainmodels.
+- assessment_id: restraint
+  area: completeness
+  topic: Explicit excluded claims
+  outcome: supported
+  target_ids:
+  - cmmmech:brookite
+  evidence_ids:
+  - record
+  - primary
+  - ima
+  summary: No microbialmechanism,criticality,Ti recovery or industrialdeployment imported.
+    Materialspecies identity is scientificallyadequate within narrowrecordscope.
+findings: []
+actions: []
+limitations:
+- No independent remeasurement of specimen8115 or raw diffraction re-refinement; source-reported
+  two-spotEDS is not a representative ore survey.
+- No independent verification of historical1825publication or every reference within
+  the2019study; currentIMAauthority and complete selectedprimary support adoptedidentity.
+- DFT andpressure-medium extrapolations were evaluated as source models, not independently
+  recomputed.
+- No microbial transformation/recovery assay supports such a mechanism for this record.
+- Dedup/notice searches bounded as declared; nine unavailable rawroots and unextracted
+  binaries excluded.
+- Shared initialdossier contains separate anatase locator defect tracked by immutable
+  initialreview; no brookite evidence affected.
+notes:
+- No Git/GitHub or record/history mutation by reviewer.
+- Actual original-state gates passed; brookite exact target/context remains unchanged.
+- All visual source inspection claims refer only to pages personally viewed in tool
+  output; an earlier truncated output was reissued successfully.
+tags:
+- round49
+- brookite
+- independent
+- science

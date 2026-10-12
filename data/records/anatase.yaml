@@ -1,0 +1,150 @@
+id: cmmmech:anatase
+name: Anatase
+material_kind: mineral
+description: >-
+  Anatase is the TiO2 mineral species listed by IMA-CNMNC in September
+  2026 with approved status A and the designation 1962 s.p. The latter
+  denotes a special procedure, not a numbered approval identifier.
+  Anatase is distinct from rutile and brookite despite their common
+  ideal formula, and from elemental titanium, titanium-bearing ores and
+  unspecified TiO2 nanoparticles. The curated experiment concerns a
+  manufactured anatase counterpart produced using engineered bacterial
+  biomass, a soluble titanium reagent and subsequent heat treatment.
+  It does not establish microbial formation of natural anatase,
+  dissolution of a natural titanium mineral or recovery of titanium
+  from an ore or waste. No constituent-derived criticality is asserted.
+sources:
+  - id: ima_2026_09
+    title: >-
+      IMA-CNMNC. The New IMA List of Minerals, September 2026.
+      Anatase row on PDF page 10: TiO2, A, 1962 s.p., France;
+      definitions on page 1 and distribution terms on page 2.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-12'
+  - id: ping2016
+    title: >-
+      Ping H, Xie H, Xiang M and colleagues (2016). Confined-space
+      synthesis of nanostructured anatase, directed by genetically
+      engineered living organisms for lithium-ion batteries.
+      Chemical Science 7:6330-6336. DOI 10.1039/C6SC02311H.
+      Complete seven-page primary article, Figures 1-7, and original
+      fourteen-page Supporting Information, especially experimental
+      section pages 2-3 and Figures S1-S9; Tables S1-S2 are battery context.
+    url: https://doi.org/10.1039/C6SC02311H
+    accessed_on: '2026-10-12'
+  - id: ncbi_ecoli
+    title: >-
+      NCBI Taxonomy 562, Escherichia coli, species. The species mapping
+      does not independently authenticate the engineered BL21(DE3)
+      stocks or recombinant constructs used by Ping and colleagues.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=562
+    accessed_on: '2026-10-12'
+mechanisms:
+  - id: bacterial_template_then_thermal_anatase_synthesis
+    name: Engineered bacterial template followed by thermal anatase synthesis
+    process: other
+    description: >-
+      Escherichia coli BL21(DE3) bearing an ice-nucleation-protein
+      anchor fused to repeated silaffin-derived R5 segments associated
+      with titanium-containing precursor deposition and shaped the
+      subsequently calcined product. Microscopy and diffraction support
+      rod-shaped aggregates of anatase nanocrystals after heat treatment.
+      The microbial contribution is an engineered biomass template and,
+      under argon, a carbon source. The 600 degrees C crystallization
+      stage is abiotic. This coupled process is not demonstrated growth
+      on titanium, metabolic titanium reduction or isolated-metal recovery.
+    context: >-
+      The original supplement identifies BL21(DE3) and pET(INP-nR5)
+      constructs with one, three or five R5 repeats; NCBITaxon:562 maps
+      the species only. Its synthesis section uses cell pellets in
+      10 mL Tris-buffered saline, specified as 50 mM Tris-HCl at pH 7.0
+      and 300 mM NaCl, with 2 mL titanium(IV) bis(ammonium lactato)
+      dihydroxide solution. The precursor stock concentration and pellet
+      biomass loading are not supplied there. This is a synthetic reagent
+      feed, not a mineral leachate. The mixture was incubated at 37
+      degrees C for 24 h and then at 80 degrees C for 24 h, centrifuged,
+      water-washed and freeze-dried. Products were heated at 600 degrees
+      C for 4 h in air or argon, with respective heating rates of 10 and
+      4 degrees C/min. The supplement's separate membrane-fraction
+      preparation is for protein analysis and is not substituted for the
+      cell-pellet synthesis procedure. Viability during mineralization
+      or after heating was not measured in the reported assays. The
+      buffered starting pH is not a measured reaction pH trajectory.
+      These are laboratory material-synthesis and coin-cell experiments,
+      not industrial deployment.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:562
+        label: Escherichia coli
+    evidence:
+      - source_ref: ping2016
+        supports: support
+        explanation: >-
+          Main Figures 1-4 and Supporting Figures S2, S4-S8 support
+          cell-associated precursor deposition, retention of a rod-like
+          template after heating, and an anatase-assigned crystalline
+          product characterized by XRD, electron diffraction and lattice
+          imaging. The five-repeat air-treated product is described as
+          approximately 5 nm particles, while Figure 3 labels its size
+          5.8 plus or minus 0.8 nm. Those descriptions are not treated
+          as identical measurements or a production yield. Argon-treated
+          material additionally contains carbon observed by microscopy,
+          elemental mapping and Raman analysis; it is an anatase-carbon
+          composite, not an assertion of pure recovered titanium.
+      - source_ref: ping2016
+        supports: partial
+        explanation: >-
+          At 37 degrees C, Figure 1b electron diffraction and Figure S2g
+          support largely amorphous precursor rather than established
+          crystalline anatase. The authors interpret a weak broad peak
+          near 26 degrees in S2h after the 80 degrees C stage as anatase
+          nuclei; that low-crystallinity assignment is weaker than the
+          post-calcination diffraction evidence. The main text on page
+          6332 cites powder reference 21-1271, whereas Figure 2e and
+          Supporting Figure S6 both label 21-1272. No reference-card
+          identifier is independently adopted
+          here. The phase assignment rests on the source's combined
+          reported characterization, not on nominal TiO2 composition alone.
+      - source_ref: ping2016
+        supports: partial
+        explanation: >-
+          INP-only cells provide a relevant protein-display comparator:
+          Figure S2 shows smoother surfaces than the five-repeat arm,
+          and S4b shows aggregated particles with loss of the rod shape
+          after heating. Thus the control supports a morphology effect;
+          it does not show that titanium-containing solids can form only
+          with R5 or only through microbial metabolism. The one-, three-
+          and five-repeat comparisons further associate repeat number
+          with particle size. No matched cell-free precursor control,
+          live-versus-killed comparison, titanium mass balance or
+          quantitative isolated-product yield is reported for this
+          synthesis. Biological replicate counts and the statistical
+          basis of Figure 3's size uncertainties are not specified.
+      - source_ref: ping2016
+        supports: context_only
+        explanation: >-
+          The electrostatic binding, hydrogen-bond catalysis and protein
+          confinement steps in Figures 1d, 3d and 5 are proposed molecular
+          explanations, not direct measurements of each catalytic
+          intermediate or proof of a specific active enzyme pathway.
+          Figure S1 documents membrane-protein bands without a viability
+          assay. Subsequent lithium-battery capacities, fitted diffusion
+          coefficients and modeled carbon coverage concern material
+          performance; they are not titanium extraction or recovery
+          endpoints and are not imported as such.
+curation_history:
+  - timestamp: '2026-10-12T06:48:07Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Created the distinct anatase mineral with a qualified engineered-biomass template and abiotic thermal-crystallization process; retained phase, control, biomass and yield limitations.
+  - timestamp: '2026-10-12T07:00:49Z'
+    curator: codex (GPT-6; codex)
+    action: EDIT
+    summary: >-
+      Corrected issue 156 and independent finding F1: page 6332 prose cites
+      21-1271, while Figure 2e and Supporting Figure S6 both label 21-1272;
+      retained the source discrepancy and all other scientific claims.
+history_refs:
+  - history/records/anatase/2026-10-12T064814Z-codex-810f65.yaml
+  - history/records/anatase/2026-10-12T070029Z-codex-ac9983.yaml
