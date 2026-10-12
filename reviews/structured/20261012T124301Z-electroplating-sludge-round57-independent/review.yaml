@@ -1,0 +1,302 @@
+schema_version: 1.0.0
+review_id: 20261012T124301Z-electroplating-sludge-round57-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of electroplating sludge
+started_at: '2026-10-12T12:40:03.163884Z'
+finished_at: '2026-10-12T12:43:01.888907Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Curated by /root/round27_packaging; /root did not write the
+    record/history and independently read sources and figures, verified identifiers
+    and assessed frozen bytes.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Accept the qualified secondary-resource record. No corrective record defect
+  identified. Distinct living-culture and cell-removed reagent assays retain mismatched
+  controls, source calculation/model/toxicity conflicts, strain uncertainty and laboratory/product
+  limits.
+source:
+  git_revision: 76509ff65c70edb5f212b6b4217febe5493bb0f3
+  state: working_tree
+  inputs:
+  - path: data/records/electroplating-sludge.yaml
+    sha256: 0a6dc3091c42ba7cf80fa4ce745ab59de9187596a4e5944cf7bb64452a79b2ec
+    role: target
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/electroplating-sludge/2026-10-12T123444Z-codex-0fe180.yaml
+    sha256: 2b0bc1c1c587e2b2816b5e19917c4f8ef9d4e5bbff65d71f7cc9d321266e87fb
+    role: context
+  - path: research/sources/round57-electroplating/20261012T124115Z-source-investigation.json
+    sha256: 67876cb9c453bb885979368b36de193d99148dd0cfcecad4a619f8511dbd1d1d
+    role: context
+  - path: research/sources/round57-electroplating/20261012T124115Z-source-investigation.md
+    sha256: 315704408965ea3757fd513f17c5fd590b141b1b8d1a850a12a33622986a6dc4
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Full scientific review of the single frozen electroplating-sludge record
+    with its CREATE history and source dossier.
+  selection: New round57 record selected for independent review.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:electroplating-sludge
+targets:
+- target_id: cmmmech:electroplating-sludge
+  path: data/records/electroplating-sludge.yaml
+  label: Electroplating sludge
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/electroplating-sludge.yaml
+    role: maintained material record
+checks:
+- check_id: primary-assessment
+  name: Independent primary scientific review
+  status: passed
+  required: true
+  summary: Primary text, all relevant main graphics/tables, all SI images and XML
+    tables inspected; uncertainties retained.
+  target_ids:
+  - cmmmech:electroplating-sludge
+  evidence_ids:
+  - prabhu2015
+  - kordloo2026
+  - kordloo-si
+  - ncbi920
+  - notices
+  - identity-dedup
+- check_id: validation-0
+  name: Named record validation
+  status: passed
+  required: true
+  summary: Checked 1 record(s); 0 failed.
+  target_ids:
+  - cmmmech:electroplating-sludge
+  command: uv run --locked cmmmech validate data/records/electroplating-sludge.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validation-1
+  name: Append-only history validation
+  status: passed
+  required: true
+  summary: Checked 315 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:electroplating-sludge
+  command: uv run --locked cmmmech validate-history --base 76509ff65c70edb5f212b6b4217febe5493bb0f3
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+evidence:
+- evidence_id: prabhu2015
+  kind: primary_source
+  reference: https://doi.org/10.15244/pjoes/30931
+  locator: Complete scientific text pp.1249–1257; original images on PDF pages3–8,
+    covering Tables1–4 and Figures1–10
+  accessed_at: '2026-10-12T12:43:01.888907Z'
+  support: supports
+  summary: Independent reading verifies Chennai treatment sludge, phenotypically assigned
+    culture, sulfur medium, loading/pH/temperature/time, germicide-altered control
+    and mobilization curves. Equation4 numerator and Table4/graph regression conflicts
+    are preserved; model fits do not establish a unique mechanism.
+  snapshot_sha256: c1648b20067bd085b3fcd3ccbe544c6fad909c3795eadfe50a24603f1f13735d
+- evidence_id: kordloo2026
+  kind: primary_source
+  reference: https://doi.org/10.1038/s41598-026-37924-x
+  locator: Complete 13-page text; original main images pages3–9, all five figures
+    and four tables
+  accessed_at: '2026-10-12T12:43:01.888907Z'
+  support: supports
+  summary: Independent reading verifies upstream culture followed by centrifuged liquor,
+    separate ultrasound treatment, conditional 8min percentages and absent chemically
+    matched control. Later dissolved fractions decline; a commercial product or deployment
+    is not demonstrated.
+  snapshot_sha256: 37b2b232ec2e7783e471a0d41519fcaa1fc18750c50b569264a9e7730bcb76aa
+- evidence_id: kordloo-si
+  kind: primary_source
+  reference: https://doi.org/10.1038/s41598-026-37924-x
+  locator: 'Original Supplementary Material1 DOCX: XML text/tables S1–S3; ten embedded
+    images covering S1–S6 and caption order'
+  accessed_at: '2026-10-12T12:43:01.888907Z'
+  support: partial
+  summary: All ten original embedded graphics independently viewed. S6a reports Ni13.9mg/L
+    above source comparator5; S6b has no stated Ni threshold. S2 final PLS tokens
+    are not independently reconstructable yields. XRD/EDS support qualified phase/surface
+    observations, not elemental incorporation or a causal rate law.
+  snapshot_sha256: 13c31bedd168a12c2ef38304d4349e5d3201f34e78b81734063b69f1ed118af1
+- evidence_id: ncbi920
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
+  locator: Live NCBI browser plus curator-acquired authoritative XML
+  accessed_at: '2026-10-12T12:43:01.888907Z'
+  support: supports
+  summary: TaxId920 identifies Acidithiobacillus ferrooxidans at species level. No
+    strain authentication follows.
+  snapshot_sha256: 24c18c87a7999d4024a1e0a2b780785e1f77cfdc584e3f00737b2a03d9d2b73a
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round57-electroplating-review/web-search.json
+  locator: Fresh DOI-specific correction/retraction queries and title-conflict query;
+    current Crossref works objects
+  accessed_at: '2026-10-12T12:43:01.888907Z'
+  support: context_only
+  summary: Inspected results identify no affecting notice. This is bounded search
+    coverage, not an exhaustive notice-history certification. Other sludge studies
+    are different assays, not direct replications.
+  search_scope: 'Queries: exact 10.15244/pjoes/30931 correction retraction; exact
+    10.1038/s41598-026-37924-x correction retraction; exact Detoxification of Electroplating
+    Sludge contradictory results. Primary official pages and Crossref identity used;
+    secondary summaries were not adopted.'
+  snapshot_sha256: fdbcecb2581b4b314f0d964960c67e70d8d5b2319176d0d2cea92ce8173208d3
+- evidence_id: identity-dedup
+  kind: search
+  reference: /private/tmp/cmm-round57-electroplating-review/dedup-hits.txt
+  locator: Accessible round57 data/records, research, reviews and history, including
+    hidden/ignored files and symlinks
+  accessed_at: '2026-10-12T12:43:01.888907Z'
+  support: context_only
+  summary: Independent rg scan and reading nearby automotive wastewater sludge, electroformed
+    Cu/Ag scrap and GaAs hydroxide sludge confirm distinct maintained scopes. Curator
+    bounded source-clone/cited-raw search was read; unavailability and binary limits
+    remain explicit.
+  search_scope: rg --no-ignore --hidden --follow -n -i with electroplat, galvanic
+    sludge and both exact DOI patterns. Original Documents checkout remains unavailable
+    with EPERM; no absence claim for it or all unreferenced downloads.
+  snapshot_sha256: dcf9e870ee97daa56d6d4a9b6a18cc121430dedc98eb9b95f865d8aa6157a545
+- evidence_id: record-history
+  kind: record_content
+  reference: data/records/electroplating-sludge.yaml
+  locator: Final frozen record and CREATE sidecar; dossier paired files in source.inputs
+  accessed_at: '2026-10-12T12:43:01.888907Z'
+  support: supports
+  summary: Record has separate experimental arms, no borrowed criticality, an actual
+    CREATE session and distinct inline event. All46 dossier raw hashes were reverified.
+    The author dossier is supporting provenance, not the independent review.
+  snapshot_sha256: 0a6dc3091c42ba7cf80fa4ce745ab59de9187596a4e5944cf7bb64452a79b2ec
+- evidence_id: validation
+  kind: validation
+  reference: /private/tmp/cmm-round57-electroplating-review/checks.json
+  locator: Named validation and trusted-base whole history validation
+  accessed_at: '2026-10-12T12:43:01.888907Z'
+  support: supports
+  summary: 'Both exit0: one named record accepted;315 history records, zero errors.'
+  snapshot_sha256: 22b9a3fddbdfec00f95740226f505c40f69b8a326b25337e14ae33f8e4feb926
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Secondary-resource identity and distinct study feeds
+  outcome: supported
+  summary: Wastewater-treatment solids remain a heterogeneous secondary resource.
+    The two feeds are separate study contexts, not pooled composition or replications.
+  target_ids:
+  - cmmmech:electroplating-sludge
+  evidence_ids:
+  - prabhu2015
+  - kordloo2026
+  - identity-dedup
+  - record-history
+- assessment_id: culture
+  area: evidence
+  topic: 2015 living-culture assay
+  outcome: supported
+  summary: The qualified culture-associated acidification/mobilization claim is supported
+    by methods and Figures2–4. Percentages remain source-reported because Equation4
+    and sampling normalization are unresolved.
+  target_ids:
+  - cmmmech:electroplating-sludge
+  evidence_ids:
+  - prabhu2015
+  details: 28°C,150rpm,480h,1–5% w/v, initial pH3,100mL with10mL inoculum. The sole1%
+    control receives alcoholic thymol; pH and chemistry are not matched. Source morphology
+    does not authenticate strain identity.
+- assessment_id: liquor
+  area: evidence
+  topic: 2026 biogenic reagent and ultrasound
+  outcome: supported
+  summary: Microbial activity is upstream reagent production; the cell-removed liquor
+    step remains a separate chemical leaching stage. The record does not infer a unique
+    biological extraction advantage.
+  target_ids:
+  - cmmmech:electroplating-sludge
+  evidence_ids:
+  - kordloo2026
+  - kordloo-si
+  details: Centrifugation5000rpm15min; liquor pH1.2,650mV,9g/L ferric iron.100mL,250mL
+    flask,37kHz150W. Reported92.51%Cr/86.91%Cu/91.25%Ni at8min45°C400rpm10g/L are
+    conditional, not universal maxima or isolated yield.
+- assessment_id: counterevidence
+  area: consistency
+  topic: Conflicts, toxicity and mechanistic limits
+  outcome: supported
+  summary: The record explicitly rejects broad detoxification and universal kinetic-control
+    conclusions while retaining narrower observed effects. It avoids inferring jarosite
+    metal incorporation from XRD/EDS or silently repairing medium formulas.
+  target_ids:
+  - cmmmech:electroplating-sludge
+  evidence_ids:
+  - prabhu2015
+  - kordloo2026
+  - kordloo-si
+  - notices
+- assessment_id: scope
+  area: scope
+  topic: Taxonomy, criticality and deployment
+  outcome: supported
+  summary: Species-level identifier scope is correct. No criticality designation is
+    asserted, so no list/jurisdiction is invented. Laboratory results and industrial
+    feed origin remain distinct.
+  target_ids:
+  - cmmmech:electroplating-sludge
+  evidence_ids:
+  - ncbi920
+  - record-history
+  - prabhu2015
+  - kordloo2026
+- assessment_id: provenance
+  area: provenance
+  topic: Exact reviewed inputs and validation
+  outcome: supported
+  summary: Inspection captured trusted base and working-tree byte hashes before final
+    assessment. Record/history/dossier files and source hashes match; no earlier observation
+    or history was rewritten.
+  target_ids:
+  - cmmmech:electroplating-sludge
+  evidence_ids:
+  - record-history
+  - validation
+findings: []
+actions: []
+limitations:
+- Independent review covers the stated narrow observations, not experimental reproduction
+  or reconstruction of unavailable mass balances.
+- 2015 isolate and2026 culture lack strain authentication; controls do not separate
+  acidity/ferric chemistry from a unique microbial contribution.
+- Source percentage calculations, regression conflicts, medium formulas and toxicity
+  comparator scope remain unresolved and explicit.
+- The2024 pickling-liquor study sharing an ambient percentage triple was identified
+  as a lead but its original was not assessed here; no independent replication or
+  misconduct claim is made.
+- Main PDFs were read completely as text; original graphic pages were visually checked
+  as specified above. SI original media/XML were inspected, not rendered DOCX pagination.
+- New-cohort full checks and structured-review coverage are coordinator publication
+  gates still pending at this review; the named record/history checks above were actually
+  run.
+- Original Documents checkout is inaccessible; hidden/ignored-inclusive absence claims
+  are limited to the stated accessible roots.
+tags:
+- round57
+- independent
+- secondary-resource
