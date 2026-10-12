@@ -1,0 +1,315 @@
+schema_version: 1.0.0
+review_id: 20261012T075351Z-indite-round50-science
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of indite
+started_at: '2026-10-12T07:44:11Z'
+finished_at: '2026-10-12T07:53:51Z'
+reviewer:
+  identity: Codex /root/round43_hardmetal
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Peer /root/round27_superalloy authored the target, history and
+    dossier. Reviewer authored the separate xenotime-concentrate record and zircon-feed
+    deferral only. Native inspect captured five explicit target/context inputs before
+    scientific judgment; reviewer made no edits to the assessed record or provenance.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Natural indite identity is supported by the complete original description
+  and current IMA authority. Variable approximate composition, alteration, diffraction
+  limits and inferred geology remain explicit. No corrective findings; no microbial
+  or recovery claim is introduced.
+source:
+  git_revision: 98e787e8d61593797aef1ed29840b2315a0cc6e5
+  state: working_tree
+  inputs:
+  - path: data/records/indite.yaml
+    sha256: 2be7428bebe7fa0031dcf2c50e7b87c5f85e359ed9bc6f28b09ab05051eafa8c
+    role: target
+  - path: history/records/indite/2026-10-12T073831Z-codex-7823c0.yaml
+    sha256: 89c262ada285cfd6ff6d4015a0ea46c32a6d2e20a6185f41d5f71f3d15872b1b
+    role: context
+  - path: research/sources/round50-in-hf/20261012T074056Z-source-investigation.json
+    sha256: 76a492b3a998e5c13bdfcb0f4e2c63aeb4188489a18dc29d7a2ee37348708097
+    role: context
+  - path: research/sources/round50-in-hf/20261012T074056Z-source-investigation.md
+    sha256: 4393c61916967b4e24601fcc34b440acaf6e6701a73e6d9a475b167553d9a008
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:indite
+  path: data/records/indite.yaml
+  label: Indite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/indite.yaml
+    role: maintained scientific record
+scope:
+  description: Whole frozen record, canonical CREATE and inline provenance, paired
+    source dossier, schema, retained primary claims and counterevidence; independent
+    scientific review with explicitly bounded visual and search scope.
+  selection: Parent-assigned independent review of this new owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:indite
+checks:
+- check_id: named
+  name: Independent named record validation
+  command: .venv/bin/cmmmech validate data/records/indite.yaml --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:indite
+  summary: 'Actually executed by this reviewer: one record checked, zero failures.
+    Log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e'
+- check_id: batch
+  name: Completed cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:indite
+  summary: 'Parent executed; reviewer read actual terminal receipt and verified exact
+    log SHA256 dcc7d1261abfca630c5a13f9ed142b85bb1462960ff410d2072f7b14d4c3908a. Final
+    cohort: 317 tests passed, 3 skipped; 246 records, 291 histories; required nonempty,
+    history and render checks passed. No future or hosted execution claimed.'
+- check_id: nonempty
+  name: Completed cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:indite
+  summary: 'Parent executed; reviewer read actual terminal receipt and verified exact
+    log SHA256 5599312a3ee08a5df1b1f5d52f06e26aec1513ffe4bc0a5e4ef60dd00ea6e0aa. Final
+    cohort: 317 tests passed, 3 skipped; 246 records, 291 histories; required nonempty,
+    history and render checks passed. No future or hosted execution claimed.'
+- check_id: history
+  name: Completed cohort history
+  command: uv run --locked cmmmech validate-history --base 98e787e8d61593797aef1ed29840b2315a0cc6e5
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:indite
+  summary: 'Parent executed; reviewer read actual terminal receipt and verified exact
+    log SHA256 bf614125e66d58201aeb2a712034842703a4c3090392cb57e00cd260c9c6e79a. Final
+    cohort: 317 tests passed, 3 skipped; 246 records, 291 histories; required nonempty,
+    history and render checks passed. No future or hosted execution claimed.'
+- check_id: render-check
+  name: Completed cohort render-check
+  command: just render-check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:indite
+  summary: 'Parent executed; reviewer read actual terminal receipt and verified exact
+    log SHA256 be156b3acc20d39b6bad41632b10eb7ccfc2c8a7fdeaec3f6236fbc67831aea6. Final
+    cohort: 317 tests passed, 3 skipped; 246 records, 291 histories; required nonempty,
+    history and render checks passed. No future or hosted execution claimed.'
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/indite.yaml
+  locator: Complete captured file
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: Exact frozen input read and hash-verified against the pre-assessment native
+    capture.
+  snapshot_sha256: 2be7428bebe7fa0031dcf2c50e7b87c5f85e359ed9bc6f28b09ab05051eafa8c
+- evidence_id: history
+  kind: record_content
+  reference: history/records/indite/2026-10-12T073831Z-codex-7823c0.yaml
+  locator: Complete captured file
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: Exact frozen input read and hash-verified against the pre-assessment native
+    capture.
+  snapshot_sha256: 89c262ada285cfd6ff6d4015a0ea46c32a6d2e20a6185f41d5f71f3d15872b1b
+- evidence_id: dossier_json
+  kind: record_content
+  reference: research/sources/round50-in-hf/20261012T074056Z-source-investigation.json
+  locator: Complete captured file
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: Exact frozen input read and hash-verified against the pre-assessment native
+    capture.
+  snapshot_sha256: 76a492b3a998e5c13bdfcb0f4e2c63aeb4188489a18dc29d7a2ee37348708097
+- evidence_id: dossier_md
+  kind: record_content
+  reference: research/sources/round50-in-hf/20261012T074056Z-source-investigation.md
+  locator: Complete captured file
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: Exact frozen input read and hash-verified against the pre-assessment native
+    capture.
+  snapshot_sha256: 4393c61916967b4e24601fcc34b440acaf6e6701a73e6d9a475b167553d9a008
+- evidence_id: schema
+  kind: record_content
+  reference: src/cmmmech/schema/cmmmech.yaml
+  locator: Complete captured file
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: Exact frozen input read and hash-verified against the pre-assessment native
+    capture.
+  snapshot_sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+- evidence_id: verification
+  kind: validation
+  reference: /private/tmp/cmm-round50-independent-science/indite-verification.json
+  locator: Independent named command and source hash verification
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: Actual named validation and source-byte integrity checks; source verification
+    is separate from scientific judgment.
+  snapshot_sha256: 94da93b2ce2b1beb4cfed4f49e71b3e90ad749bb572c340272f3faf9b3f4aaf3
+- evidence_id: cohort
+  kind: validation
+  reference: /private/tmp/cmm-round50-corrected-terminal.json
+  locator: Four completed terminal commands and logs
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: Reviewer independently verified all four terminal statuses and exact log
+    hashes, including 317/3 tests, 246 records and 291 histories.
+  snapshot_sha256: e100469f511872754cd380524eb7f2b4077877db7445e203b9fa465925a28568
+- evidence_id: original
+  kind: primary_source
+  reference: https://www.rruff.net/odr/view/downloadfile/74558
+  locator: Genkin and Muraveva 1963, numbered pp445–457 plus three inserted plates;
+    all 16 PDF pages, Figures1–10 and Tables1–8
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: All 16 original pages personally visually inspected after native capture.
+    Russian occurrence/chemistry, natural-versus-synthetic diffraction and later geological
+    interpretation read. Table2 and pp446–447 support approximate natural composition;
+    Table3/Figure6 retain 311 intensity difference; texture and replacement are observations,
+    hydrothermal timing is interpretation. Separate dzhalindite heating and cited
+    synthesis are not natural indite experiments.
+  snapshot_sha256: 071fe4145c4f05d04dc3abbda0804ccd43ad86c7d043b433706dbf945e3f6e0e
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September2026 edition, definitions page1 and Indite row page101
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: Both cited pages personally viewed. Current FeIn2S4 identity, approved
+    A status and 1967 special-procedure year match; no numbered accession invented.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://handbookofmineralogy.org/pdfs/indite.pdf
+  locator: Complete one-page entry; chemistry and occurrence
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: Entire entry visually inspected. Ideal formula differs from approximate
+    natural microspectrographic chemistry; Dzhalinda and original1963 reference match.
+  snapshot_sha256: 83608df8fcedde0edcfa8d0cf6e4e4fd2e9768b0e45bdf810d1e9a660f061e70
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round50-independent-science/indite-search.txt
+  locator: Exact original-title and indite/FeIn2S4 returned web queries
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: Returned original and later contextual discussion did not identify an applicable
+    correction or retraction. A later review retains unresolved natural structure;
+    its inconsistent grain-size wording was not imported.
+  snapshot_sha256: 334cfe5dac7743bf7273fc1173e527529d2e108bb209031b9484db3a5ec3cceb
+  search_scope: 'First returned web sets on2026-10-12: "Indite and dzhalindite" correction
+    erratum and "indite" "FeIn2S4" Genkin Muraveva1963. No pagination or exhaustive
+    notice registry claim. Not a local-file absence search.'
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Natural mineral species and current authority
+  outcome: supported
+  target_ids:
+  - cmmmech:indite
+  evidence_ids:
+  - original
+  - ima
+  - handbook
+  - record
+  summary: The mineral FeIn2S4 is distinct from elemental indium, synthetic comparators,
+    dzhalindite and mixed cassiterite ore. Current authority supports the name and
+    ideal formula, without converting approximate natural chemistry into uniform purity.
+  dimensions:
+  - name: material_form
+    value: Natural mineral species; altered grains in mixed cassiterite-quartz ore
+    definition: Identity represented by this owner, not the bulk ore.
+    evidence_ids:
+    - original
+    - ima
+  - name: criticality
+    value: No criticality designation asserted
+    definition: No constituent-derived jurisdiction/list/edition claim is imported.
+    evidence_ids:
+    - record
+- assessment_id: characterization
+  area: evidence
+  topic: Chemistry, diffraction and alteration limits
+  outcome: supported
+  target_ids:
+  - cmmmech:indite
+  evidence_ids:
+  - original
+  - handbook
+  - record
+  summary: Microscopy, microspectrography and powder diffraction support natural identification;
+    variable composition, nearly ubiquitous dzhalindite replacement and the natural/synthetic311
+    intensity difference are retained. No new natural single-crystal refinement or
+    purity measurement is claimed.
+- assessment_id: scope
+  area: evidence
+  topic: Mechanism and deployment boundaries
+  outcome: supported
+  target_ids:
+  - cmmmech:indite
+  evidence_ids:
+  - original
+  - record
+  summary: Quartz-associated later introduction is an interpretation of textures;
+    source synthetic FeIn2S4 and dzhalindite heating are kept separate. No organism,
+    measured microbial mechanism, extraction yield or industrial recovery is asserted.
+- assessment_id: provenance
+  area: provenance
+  topic: Actual curation and validated frozen inputs
+  outcome: supported
+  target_ids:
+  - cmmmech:indite
+  evidence_ids:
+  - history
+  - dossier_md
+  - dossier_json
+  - verification
+  - cohort
+  summary: Actual inline CREATE and separate canonical history describe this new owner;
+    dates and roles are not conflated with independent review. All61 declared raw-artifact
+    hashes were independently checked, five native inputs remain unchanged and actual
+    required gates passed.
+findings: []
+actions: []
+limitations:
+- The original uses approximately determined natural microspectrographic composition
+  and altered small grains; this review does not improve analytical precision or solve
+  the natural crystal structure.
+- Source geological interpretation is not an experimental natural-formation mechanism.
+  No microbial causality, criticality, process yield or deployment is supported.
+- All16 primary pages, all10 figures and all8 tables, the one-page Handbook and cited
+  IMA pages were viewed. No claim to inspecting every page of the complete IMA list
+  or independently rerunning diffraction measurements.
+- Notice search is bounded to the stated queries. Curator discovery dedup includes
+  hidden/ignored/followed current/original scientific trees and referenced raw roots
+  with missing/oversize/binary limits stated in the dossier; this review makes no
+  machine-wide absence claim.
+- Local gates establish structure/provenance, not scientific truth; raw originals
+  remain outside Git. No hosted CI or merge result is asserted.

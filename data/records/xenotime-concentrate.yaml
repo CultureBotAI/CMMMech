@@ -1,0 +1,169 @@
+id: cmmmech:xenotime-concentrate
+name: Xenotime concentrate
+material_kind: primary_resource
+description: >-
+  A mixed natural mineral concentrate represented by the laboratory feed
+  studied by He et al. (2024), containing source-assigned xenotime,
+  monazite, zircon, almandine and ilmenite. Its deposit, supplier and
+  concentration history are not specified in the reviewed article and
+  supplement. Particle counting and density conversion estimated about
+  82.0 wt% xenotime and 2.7 wt% monazite; these are sample-specific phase
+  estimates, not measured product purity. The feed is distinct from the
+  xenotime-(Y) mineral species, monazite species, elemental rare earths,
+  a rare-earth commodity and a secondary waste resource. No criticality
+  designation is inherited from its constituent elements.
+sources:
+  - id: he2024
+    title: >-
+      He Y, Ma L, Liang X, Li X, Zhu J and He H (2024). Resistant rare
+      earth phosphates as possible sources of environmental dissolved
+      rare earth elements: Insights from experimental bio-weathering of
+      xenotime and monazite. Chemical Geology 661:122186.
+      DOI 10.1016/j.chemgeo.2024.122186; complete 56-page GFZ author
+      postprint including repository cover, Figures 1-7 and Tables 1-3.
+    url: https://doi.org/10.1016/j.chemgeo.2024.122186
+    accessed_on: '2026-10-12'
+  - id: he2024_supplement
+    title: >-
+      He et al. (2024), original publisher Supplementary Materials,
+      16 pages, Figures S1-S7, Tables S1-S8 and Text S1. Actual item
+      captions are used; the page-2 contents list has inconsistent
+      figure and table numbering.
+    url: https://ars.els-cdn.com/content/image/1-s2.0-S0009254124002663-mmc1.pdf
+    accessed_on: '2026-10-12'
+  - id: ncbi_thuringiensis
+    title: >-
+      NCBI Taxonomy 1428, Bacillus thuringiensis, species in the Bacillus
+      cereus group. This maps the authors' species name and does not
+      independently identify their experimental isolate.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1428&mode=Info
+    accessed_on: '2026-10-12'
+mechanisms:
+  - id: bacillus_concentrate_bioweathering
+    name: Bacterial enhancement of rare-earth mobilization from mixed phosphate concentrate
+    process: bioleaching
+    description: >-
+      A culture identified by the authors as Bacillus thuringiensis
+      enhanced aqueous rare-earth release from the mixed concentrate
+      relative to corresponding abiotic controls. Unbuffered cultures
+      acidified strongly; enhanced release also occurred in MES-buffered
+      medium near pH 6. Metabolite profiles and separate organic-acid
+      leaching assays support a contribution from proton attack and
+      organic ligands, without resolving each metabolite's contribution
+      in the living culture. This is laboratory bio-weathering and
+      mobilization, with partial immobilization in secondary precipitates,
+      not an isolated rare-earth product or an industrial recovery process.
+    context: >-
+      The isolate came from topsoil at the Renju regolith-hosted rare-earth
+      deposit in Guangdong, China; that location is not established as
+      the concentrate's origin. Section 2.2 refers to sequence comparison
+      by BLAST but supplies no isolate accession or independently
+      verifiable sequence in the reviewed article and supplement.
+      Concentrate was crushed and sieved to 48-74 micrometres, washed
+      ultrasonically with ethanol and ultrapure water and freeze-dried.
+      Assays used 0.5 g of sterile feed and 100 mL medium in 250 mL
+      flasks, approximately 1e6 CFU/mL initially, 180 rpm and 25-28
+      degrees C for 30 days. Cells were harvested in exponential phase
+      and washed three times. Medium contained, in g/L, glucose 10,
+      NH4Cl 1, MgSO4.7H2O 1 and KCl 0.2, initially pH 6, with or
+      without 20 mmol/L MES. No additional phosphorus was supplied.
+      Each medium had a biotic feed arm, an abiotic feed control and a
+      cells-only control. Time-course measurements used three replicates;
+      metabolomics on days 4, 8 and 15 used six biotic-feed and five
+      cells-only replicates. CFU counts exclude attached cells. Aqueous
+      elemental analyses used centrifuged, 0.22-micrometre-filtered
+      samples and ICP-MS. Separate chemical tests used 0.1 g feed in
+      20 mL of HCl or 1 mmol/L organic-acid solution, initial pH 3, 5
+      or 6, at the same temperature and agitation for 96 h in triplicate.
+      These chemical assays were not a 30-day pH-trajectory-matched
+      replacement for the biological experiment.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:1428
+        label: Bacillus thuringiensis
+    evidence:
+      - source_ref: he2024
+        supports: support
+        explanation: >-
+          Sections 2.3 and 3.2-3.4 and Figures 1-3 show enhanced
+          aqueous rare-earth release in both bacterial feed arms compared
+          with their abiotic controls. The unbuffered culture reached
+          about pH 3 and the text reports a maximum total rare-earth
+          concentration of about 716 micrograms/L on day 15, followed
+          by a decline and partial increase. The buffered culture reached
+          about 343 micrograms/L at day 30. These are filtered aqueous
+          concentrations, not cumulative extraction fractions or isolated
+          product yields. The later decline and observed precipitates
+          prevent treating solution concentration as total mineral loss.
+      - source_ref: he2024
+        supports: partial
+        explanation: >-
+          Figures 4-6 and Sections 3.5-3.6 and 4.2 link bacterial growth
+          to organic-acid profiles and show acid-dependent chemical
+          leaching, including tartaric-acid activity near pH 6. Many tested
+          organic acids perform similarly to HCl at pH 3; proton and
+          ligand contributions depend on conditions. Normalized MS
+          signals are not absolute extracellular acid concentrations.
+          No genetic intervention, spent-medium reconstruction or
+          individual-metabolite contribution in the live culture was
+          demonstrated. Figure 5's caption calls the cells-only comparator
+          Exp-Control, whereas its legend and Methods identify it as
+          Exp-Bt; the abiotic mineral control remains a separate arm.
+          Section 2.4 prints 0.22 mm for chemical-solution filters,
+          whereas Section 2.5.1 specifies 0.22 micrometres for analyzed
+          suspensions. These preparation descriptions are not silently
+          harmonized.
+      - source_ref: he2024_supplement
+        supports: partial
+        explanation: >-
+          Figure S1 and Tables S2-S4 support a mixed mineral feed and
+          distinct rare-earth distributions among its phases. Phase weight
+          fractions derive from particle counts and assumed densities.
+          Quantitative source inconsistencies remain: Figure S1 repeats
+          the same reference-card number for almandine and ilmenite;
+          xenotime Yb and Lu values in Tables S3 and S4 do not agree
+          under straightforward oxide-to-element conversion. Main Table
+          1's TiO2 content also does not close against the tabulated phase
+          fractions and compositions. Its printed P2O3 and U2O3 labels
+          are retained as source uncertainties, not silently relabeled.
+          Whole-feed Y was above the XRF upper limit, not absent.
+          These limitations preclude a new closed elemental mass balance
+          or a precise recovery efficiency from the phase estimates.
+      - source_ref: he2024
+        supports: partial
+        explanation: >-
+          Table 3 estimates 0.03% xenotime and 0.3% monazite dissolution
+          for the unbuffered day-15 solution. These are two-component
+          calculations from aqueous rare-earth composition, not measured
+          separate-mineral mass losses. They assume the two phosphates
+          supply the dissolved rare earths and negligible differential
+          re-sorption or precipitation. Figure 7 and Section 4.3 show
+          secondary REE- and P-bearing precipitates, but their mineral
+          identities could not be established by micro-XRD, TEM or
+          Raman. Rhabdophane- or churchite-type assignments are proposed
+          analogies, not identified products. This qualifies the dissolution
+          model and supports only conditional preferential monazite
+          dissolution, without proving a general species-level rate ratio.
+      - source_ref: he2024_supplement
+        supports: context_only
+        explanation: >-
+          Actual Figure S6 models phosphate saturation and Figure S7
+          compares modeled and measured solution composition; their
+          numbering is reversed in the contents list. Table S7 and Text
+          S1 apply the concentrate's 1.38 square metres/g surface area
+          to both phosphate phases by assumption. Phase-specific rates
+          therefore are model dependent. Main Equation 1 also calls this
+          a prepared granite sample despite the study's concentrate feed.
+          No calculated mineral-specific rate is promoted to a direct
+          measurement or an industrial design parameter here.
+curation_history:
+  - timestamp: '2026-10-12T07:41:53Z'
+    curator: codex (GPT-6)
+    action: CREATE
+    summary: >-
+      Added a distinct mixed xenotime-concentrate resource from the
+      complete primary postprint and publisher supplement. Preserved
+      abiotic controls, strain uncertainty, source inconsistencies and
+      model-dependent dissolution boundaries without claiming recovery.
+history_refs:
+  - history/records/xenotime-concentrate/2026-10-12T074155Z-codex-66bb20.yaml

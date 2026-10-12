@@ -1,0 +1,36 @@
+{
+  "recorded_at": "2026-10-12T07:49:14.175213+00:00",
+  "base": "98e787e8d61593797aef1ed29840b2315a0cc6e5",
+  "issue": "https://github.com/CultureBotAI/CMMMech/issues/158",
+  "record": "data/records/xenotime-y.yaml",
+  "before_sha256": "24c0f45ad501802aa8d8469058f0b3b879ee56383bc45c785fcf5c30a0d5af67",
+  "after_sha256": "a37d27346742d1cde30a5a01d6e58bde938435c3980fd503d50594f68da718de",
+  "predecessor_review": "reviews/structured/20261012T074809Z-xenotime-y-round50-initial/review.yaml",
+  "review_id": "20261012T074809Z-xenotime-y-round50-initial",
+  "finding_id": "F1",
+  "issue_key": "CMMMech.xenotime-y.synthetic-comparator-attribution",
+  "correction": "Corrected the synthetic-comparator attribution: Ni et al. (1995) measured synthetic rare-earth phosphates, while synthetic YPO4 occurs in cited earlier work.",
+  "primary": {
+    "url": "https://www.msaweb.org/MSA/AmMin/TOC/Articles_Free/1995/Ni_p21-26_95.pdf",
+    "path": "/private/tmp/cmm-round50-ree-research/raw/ni1995-main.pdf",
+    "sha256": "d1e4aba888865b3a7cf56409dc14f058db8f6f866095315f073964d44c7a6d24",
+    "locator": "Methods and Table2: natural xenotime plus synthetic Tb,Dy,Ho,Er,Tm,Yb,Lu phosphate columns; references to prior Milligan YPO4 work are separate."
+  },
+  "history": [
+    "history/records/xenotime-y/2026-10-12T074910Z-codex-dd0e6e.yaml"
+  ],
+  "validation": {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "cmmmech",
+      "validate",
+      "data/records/xenotime-y.yaml"
+    ],
+    "exit_code": 0,
+    "stdout": "Checked 1 record(s); 0 failed.\n",
+    "stderr": ""
+  },
+  "scope": "Append-only correction note; original source dossier/review/history remain immutable. Final independent review and batch gates follow."
+}

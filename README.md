@@ -8,7 +8,7 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 241 material records.
+The catalogue currently contains 246 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
@@ -253,6 +253,11 @@ The catalogue currently contains 241 material records.
 | [Cadmoindite](data/records/cadmoindite.yaml) | Natural cadmium-indium sulfide identity and original fumarole characterization | Geological formation is inferred; no microbial recovery or deployment claim |
 | [Brookite](data/records/brookite.yaml) | Natural titanium-dioxide mineral identity and specimen structure | Distinct from rutile and anatase; no microbial mechanism asserted |
 | [Anatase](data/records/anatase.yaml) | Engineered bacterial templating followed by thermal crystallization | Calcination is required for the reported phase; no microbial titanium recovery claim |
+| [Indite](data/records/indite.yaml) | Original natural iron-indium sulfide characterization | Identity and inferred geological context; no microbial recovery |
+| [Monazite-(Ce)](data/records/monazite-ce.yaml) | Natural crystal chemistry and structure | Distinct from other species, synthetic comparators and mixed ore |
+| [Xenotime-(Y)](data/records/xenotime-y.yaml) | Natural crystal chemistry and structure | Species identity remains separate from mixed-concentrate experiments |
+| [Oil-sands froth-treatment tailings](data/records/oil-sands-froth-treatment-tailings.yaml) | Acid-column mobilization and separate field community evidence | Chemical treatment and ecological associations do not establish microbial recovery |
+| [Xenotime concentrate](data/records/xenotime-concentrate.yaml) | Culture-associated mobilization from mixed mineral feed | Laboratory release, uncertain phase mechanisms and no isolated product |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -310,7 +315,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [forty-eighth expansion reviews](research/ingests/round48-20261012-publication.md),
 [Pages integration and refreshed validation](research/ingests/round48-20261012-integration.md),
 [forty-ninth expansion reviews](research/ingests/round49-20261012-publication.md),
-[remaining ingest priorities](research/ingests/round49-frontier-20261012.md), and
+[fiftieth expansion reviews](research/ingests/round50-20261012-publication.md),
+[remaining ingest priorities](research/ingests/round50-frontier-20261012.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 
