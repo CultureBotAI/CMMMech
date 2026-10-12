@@ -1,0 +1,520 @@
+schema_version: 1.0.0
+review_id: 20261012T145900Z-spent-lead-acid-battery-electrolyte-round60-science
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of spent lead-acid battery electrolyte
+started_at: '2026-10-12T14:52:02.676068Z'
+finished_at: '2026-10-12T14:59:00.185917Z'
+reviewer:
+  identity: Codex /root/round27_superalloy
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Packaging authored this electrolyte record/history/dossier.
+    Reviewer authored only the separate fluorite contribution and captured all five
+    explicit native inputs before record judgment; primary literature preparation
+    preceded that capture.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The frozen secondary-resource record is supported within its pretreated-liquid,
+  culture-associated laboratory scope. Complete primary originals and SI support its
+  stage boundaries, censored Pb/Cd endpoints, dried-solid assignments and preserved
+  controls/measurement/source-conflict limits. No corrective record defect identified.
+source:
+  git_revision: 3ac02ecf15ba53e28b15b2f4afcdcb083d0a226c
+  state: working_tree
+  inputs:
+  - path: data/records/spent-lead-acid-battery-electrolyte.yaml
+    sha256: d55809c101b5ab610c3b630607d58c4eb253b67825e95bfcc8fd042adee8305c
+    role: target
+  - path: history/records/spent-lead-acid-battery-electrolyte/2026-10-12T144802Z-codex-2bfdb3.yaml
+    sha256: 4407aa45ee22e4842b21d883a7ebcf67113b5eebbe827a9c647119f0c791993f
+    role: context
+  - path: research/sources/round60-batteries/20261012T145129Z-source-investigation.json
+    sha256: bed448658758cd4db819bf230fae87d8a2f78775c046bf42c4d67cba2002e0f5
+    role: context
+  - path: research/sources/round60-batteries/20261012T145129Z-source-investigation.md
+    sha256: 27a10a378c6f3704bdd64d146b901a241fb074094357e04c05c1426246d57323
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:spent-lead-acid-battery-electrolyte
+  path: data/records/spent-lead-acid-battery-electrolyte.yaml
+  label: Spent lead-acid battery electrolyte
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/spent-lead-acid-battery-electrolyte.yaml
+    role: maintained_record
+scope:
+  description: Entire electrolyte record, CREATE history, paired source dossier and
+    schema; complete11page Gu2020 main and2pageSI, all original graphics/tables; complete8page
+    Vu2019 contextual primary; bounded notices/dedup and actual completed gates. Deferred
+    lead-paste/CIGS/pilot leads are not accepted or independently scientifically approved
+    here.
+  selection: Parent-assigned independent review of one new secondary-resource record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:spent-lead-acid-battery-electrolyte
+checks:
+- check_id: named
+  name: Reviewer named validation
+  command: uv run --locked cmmmech validate data/records/spent-lead-acid-battery-electrolyte.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-lead-acid-battery-electrolyte
+  summary: 'Actually executed: one checked, zero failed.'
+- check_id: integrity
+  name: Exact frozen inputs and retained source integrity
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-lead-acid-battery-electrolyte
+  summary: Five captured inputs,48 raw artifacts and18 acquisition/research receipts
+    match their pinned SHA-256 values.
+- check_id: cohort_batch
+  name: Parent completed batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-lead-acid-battery-electrolyte
+  summary: Actual parent terminal receipt and raw log hash verified; results read
+    independently.
+- check_id: cohort_nonempty
+  name: Parent completed nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-lead-acid-battery-electrolyte
+  summary: Actual parent terminal receipt and raw log hash verified; results read
+    independently.
+- check_id: cohort_history
+  name: Parent completed history
+  command: uv run --locked cmmmech validate-history --base 3ac02ecf15ba53e28b15b2f4afcdcb083d0a226c
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-lead-acid-battery-electrolyte
+  summary: Actual parent terminal receipt and raw log hash verified; results read
+    independently.
+- check_id: cohort_render_check
+  name: Parent completed render-check
+  command: just render-check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-lead-acid-battery-electrolyte
+  summary: Actual parent terminal receipt and raw log hash verified; results read
+    independently.
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/spent-lead-acid-battery-electrolyte.yaml
+  locator: Entire explicit native-inspected input, unchanged at final save
+  accessed_at: '2026-10-12T14:59:00.185917Z'
+  support: supports
+  summary: Read exact maintained record or provenance context; curator dossier is
+    a handoff, not an independent scientific verdict.
+  snapshot_sha256: d55809c101b5ab610c3b630607d58c4eb253b67825e95bfcc8fd042adee8305c
+- evidence_id: history
+  kind: record_content
+  reference: history/records/spent-lead-acid-battery-electrolyte/2026-10-12T144802Z-codex-2bfdb3.yaml
+  locator: Entire explicit native-inspected input, unchanged at final save
+  accessed_at: '2026-10-12T14:59:00.185917Z'
+  support: supports
+  summary: Read exact maintained record or provenance context; curator dossier is
+    a handoff, not an independent scientific verdict.
+  snapshot_sha256: 4407aa45ee22e4842b21d883a7ebcf67113b5eebbe827a9c647119f0c791993f
+- evidence_id: dossier_json
+  kind: record_content
+  reference: research/sources/round60-batteries/20261012T145129Z-source-investigation.json
+  locator: Entire explicit native-inspected input, unchanged at final save
+  accessed_at: '2026-10-12T14:59:00.185917Z'
+  support: supports
+  summary: Read exact maintained record or provenance context; curator dossier is
+    a handoff, not an independent scientific verdict.
+  snapshot_sha256: bed448658758cd4db819bf230fae87d8a2f78775c046bf42c4d67cba2002e0f5
+- evidence_id: dossier_md
+  kind: record_content
+  reference: research/sources/round60-batteries/20261012T145129Z-source-investigation.md
+  locator: Entire explicit native-inspected input, unchanged at final save
+  accessed_at: '2026-10-12T14:59:00.185917Z'
+  support: supports
+  summary: Read exact maintained record or provenance context; curator dossier is
+    a handoff, not an independent scientific verdict.
+  snapshot_sha256: 27a10a378c6f3704bdd64d146b901a241fb074094357e04c05c1426246d57323
+- evidence_id: schema
+  kind: record_content
+  reference: src/cmmmech/schema/cmmmech.yaml
+  locator: Entire explicit native-inspected input, unchanged at final save
+  accessed_at: '2026-10-12T14:59:00.185917Z'
+  support: supports
+  summary: Read exact maintained record or provenance context; curator dossier is
+    a handoff, not an independent scientific verdict.
+  snapshot_sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+- evidence_id: gu_main
+  kind: primary_source
+  reference: /private/tmp/cmm-round60-battery-research/raw/gu2020.pdf
+  locator: Complete original eleven pages; Scheme1, Figures1–5/all panels, Table1
+    and Equations1–2 independently inspected; source DOI10.3390/su12031263
+  accessed_at: '2026-10-12T14:59:00.185917Z'
+  support: supports
+  summary: Original methods and results support pretreated-liquid culture-associated
+    precipitation, detection-limited concentrations and a separate chemical sulfide-polishing
+    stage. The record preserves missing culture/controls, endpoint/pH discrepancies
+    and the source-internal discharge-claim problems.
+  snapshot_sha256: 8aa03b89bdd5560699814c8f2d719ac814ac68eb0e536a380d6aab6ad7683299
+- evidence_id: gu_si
+  kind: primary_source
+  reference: /private/tmp/cmm-round60-battery-research/raw/gu2020-si.pdf
+  locator: Both original pages, TableS1 reactionsS1–S35 and HUMAS/Raman method sections
+    personally read and viewed
+  accessed_at: '2026-10-12T14:59:00.185917Z'
+  support: supports
+  summary: Supplement distinguishes model parameters from observations and documents
+    kit/carbonate-band descriptions that do not resolve all main-text species assignments.
+    No missing matched controls or strain authentication is supplied here.
+  snapshot_sha256: 8a2e7487c825fca992b817ffc42795476eff1217770bc0c6e2cf88dc13b3e0b3
+- evidence_id: vu_main
+  kind: primary_source
+  reference: /private/tmp/cmm-round60-battery-research/raw/vu2019.pdf
+  locator: Complete eight original pages; all four figures, Tables1–3 and concentration-removal
+    equation; Materials2.1 and Methods2.2 emphasized
+  accessed_at: '2026-10-12T14:59:00.185917Z'
+  support: supports
+  summary: The earlier chemical study establishes spent-acid origin and lime/carbonation
+    context. It is not an independent replication of the biological stage; mixing
+    and analytical dilution preclude an unqualified cross-paper recovery calculation.
+  snapshot_sha256: 39578d122ea1397d250c058bc3f6988f11c6b3ccd3cdaaf92072293f74fcffb0
+- evidence_id: primary_xml
+  kind: primary_source
+  reference: /private/tmp/cmm-round60-battery-research/raw/gu2020-deploy.xml
+  locator: Title/DOI/authors/publication date and supplement href in retained official
+    XML
+  accessed_at: '2026-10-12T14:59:00.185917Z'
+  support: supports
+  summary: Primary identifiers match original PDFs and fresh indexed primary results;
+    linked supplement is the two-page original actually inspected.
+  snapshot_sha256: 1cca27d262f8f5f0ae38fa76deabdfd054d8c28b1f9ed1f128a75c63089e7bce
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round60-electrolyte-review/search.json
+  locator: Reviewer live exact-DOI correction/retraction queries, indexed primary
+    identity checks and attempted publisher opens
+  accessed_at: '2026-10-12T14:59:00.185917Z'
+  support: supports
+  summary: No affecting notice identified in the bounded returned results. Direct
+    publisher landing opens returned Internal Error; retained originals and fresh
+    indexed original/peer-review pages were available.
+  snapshot_sha256: 86231c69c7c137dccd5c2bb8f8eb4b0b70a7c7ee8d26c63b59772bc255a84f48
+  search_scope: 'Queries: exact DOIs10.3390/su12031263 and10.3390/su11133497 plus
+    correction/retraction. First returned web sets only, no exhaustive pagination/citation
+    search. No claim that inaccessible current landing notices were inspected.'
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round60-electrolyte-review/dedup.json
+  locator: Reviewer hidden/ignored/followed current and original scientific-tree search
+  accessed_at: '2026-10-12T14:59:00.185917Z'
+  support: supports
+  summary: Exact source/owner checks found the newly added current owner and its history
+    rather than a prior accepted duplicate. This is bounded documentary deduplication.
+  snapshot_sha256: 8ac8bac0824973d67f0f22b89b3f37c6546d608210d014926725e2bc10a9165e
+  search_scope: rg --no-ignore --hidden -L in current/original data/records,research,reviews,history;
+    exactDOIs/owner/title. Initial capture preceded author dossier creation; additional209
+    cited raw roots separately searched in checks.json, text extensions <=8MB, no
+    binary OCR or unrelated home search.
+- evidence_id: integrity
+  kind: validation
+  reference: /private/tmp/cmm-round60-electrolyte-review/checks.json
+  locator: Five native inputs,48 raw artifacts,18 curator receipts, reviewer named
+    validation and209 cited raw-directory searches
+  accessed_at: '2026-10-12T14:59:00.185917Z'
+  support: supports
+  summary: All71 input/source/receipt hashes independently matched. Named validation
+    checked one record, zero failed; no maintained input changed during review.
+  snapshot_sha256: d1632f7ac9b7eed5ccca7e10cb5bc6dbebd827748a5fb28a37a70da0e96dbb05
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round60-electrolyte-review/named.log
+  locator: Actually executed reviewer named validation
+  accessed_at: '2026-10-12T14:59:00.185917Z'
+  support: supports
+  summary: One record checked, zero failed from explicit round60 working directory
+    and locked offline environment.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: cohort
+  kind: validation
+  reference: /private/tmp/cmm-round60-final-terminal.json
+  locator: Actual completed parent batch/nonempty/history/render commands and their
+    raw log hashes
+  accessed_at: '2026-10-12T14:59:00.185917Z'
+  support: supports
+  summary: Every recorded command completed exit0. Reviewer independently verified
+    byte hashes and read results; no duplicate batch execution or future-check assertion.
+  snapshot_sha256: b5da09e8c78b732c8984a7811124948c483609cfd927aec65334179f4013756f
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Spent electrolyte and pretreated liquid owner
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-lead-acid-battery-electrolyte
+  evidence_ids:
+  - record
+  - gu_main
+  - vu_main
+  - dedup
+  summary: Materials2.1 in Vu2019 explicitly identifies used-battery acid poured into
+    a storage tank; Gu2020 treats the resulting lime/carbonation effluent. The resource
+    owner and stage-specific substrate are accurately distinguished from lead paste,
+    grids, whole batteries and elemental lead.
+  dimensions:
+  - name: material
+    value: Use-derived spent lead-acid electrolyte and pretreated liquid
+    definition: Secondary resource; accepted biological assay is the residual liquid,
+      not untreated concentrated acid.
+    evidence_ids:
+    - record
+    - gu_main
+    - vu_main
+  - name: criticality
+    value: No designation asserted
+    definition: No constituent-element or commodity criticality is inherited.
+    evidence_ids:
+    - record
+  - name: identifiers
+    value: Verified source DOIs; no material or organism accession asserted
+    definition: Unresolved feed/community does not justify an invented external identifier.
+    evidence_ids:
+    - record
+    - primary_xml
+- assessment_id: culture
+  area: evidence
+  topic: Community and biological causality limits
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-lead-acid-battery-electrolyte
+  evidence_ids:
+  - record
+  - gu_main
+  - gu_si
+  summary: The mixed culture comes from an unnamed local wastewater plant and was
+    enriched for one month. Gram-negative wording supplies no species/strain identity.
+    The record correctly limits the claim to association rather than necessity or
+    superiority.
+  dimensions:
+  - name: biomass
+    value: Enriched mixed sulfate-reducing community, described as immobilized
+    definition: No authentication, inoculum dose, carrier or actual working-volume
+      detail is supplied.
+    evidence_ids:
+    - gu_main
+    - record
+  - name: conditions
+    value: Methanol4g/L,30 degreesC,reported0.1V,1L glass vessel
+    definition: The electrode reference is unspecified; vessel capacity is not assumed
+      to be working volume.
+    evidence_ids:
+    - gu_main
+  - name: controls
+    value: No matched sterile,killed-cell,no-methanol or pH-matched comparison reported
+    definition: Original main/SI do not isolate microbial necessity; chemical-model
+      predictions are not experimental controls.
+    evidence_ids:
+    - gu_main
+    - gu_si
+- assessment_id: outcomes
+  area: evidence
+  topic: Liquid-concentration endpoints and censored Pb/Cd
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-lead-acid-battery-electrolyte
+  evidence_ids:
+  - record
+  - gu_main
+  summary: Table1 values and detection-limit explanations support the stated stage-specific
+    concentration changes. The record does not replace ODL with zero or pool chemical
+    polishing into the biological removal percentage.
+  dimensions:
+  - name: denominator
+    value: Initial pretreated-liquid concentration, not whole-battery mass
+    definition: Sulfate3013.5→27.1mg/L after culture;25.2mg/L after chemical polishing.
+      Reported99.2% refers to both stages.
+    evidence_ids:
+    - gu_main
+    - record
+  - name: censoring
+    value: Pb<0.05mg/L;Cd<0.005mg/L per source explanation
+    definition: Source-reported rounded removal bounds>94.6% and>99.8% remain attributed;
+      not direct measurements of complete removal.
+    evidence_ids:
+    - gu_main
+  - name: time_and_uncertainty
+    value: Prose12days versus Figure1 extending to14days; undefined error bars
+    definition: No replicate count or raw uncertainty permits reconciliation; no precise
+      kinetic rate is adopted.
+    evidence_ids:
+    - gu_main
+    - record
+- assessment_id: phases
+  area: evidence
+  topic: Prepared mixed solid and modeled species
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-lead-acid-battery-electrolyte
+  evidence_ids:
+  - record
+  - gu_main
+  - gu_si
+  summary: Figure3 supports the authors’ dried-solid phase assignment, but not independently
+    audited96/2/2purity. Main/SI analytical wording differs, and the record accurately
+    avoids treating modeled species as directly measured cellular products.
+  dimensions:
+  - name: preparation
+    value: Filtered solids dried80 degreesC for48h
+    definition: No wet-solid phase determination or closed harvested-metal balance
+      is supplied.
+    evidence_ids:
+    - gu_main
+  - name: phase_evidence
+    value: XRD assigned calcite,galena,hawleyite
+    definition: No quantitative phase-refinement method or product mass supports an
+      isolated-product yield.
+    evidence_ids:
+    - gu_main
+    - record
+  - name: analytical_limits
+    value: ICP-OES metals; main sulfide method versusSIkits; bicarbonate versus carbonate
+      Raman wording
+    definition: No independently resolved oxidation-state or calibrated complete anion-speciation
+      assertion.
+    evidence_ids:
+    - gu_main
+    - gu_si
+  - name: model
+    value: Figures2/4 andTableS1 thermodynamic calculations
+    definition: Reaction-balance concerns and model assumptions are not silently repaired
+      or promoted to validated direct observations.
+    evidence_ids:
+    - gu_main
+    - gu_si
+- assessment_id: polishing
+  area: evidence
+  topic: Separate reagent stage and discharge boundary
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-lead-acid-battery-electrolyte
+  evidence_ids:
+  - record
+  - gu_main
+  summary: Methods2.2 and Figures4–5 support separate Fe(OH)2 treatment. microbial:false
+    describes that reagent-driven step, not sterility. The maintained wording correctly
+    rejects blanket discharge/no-impurity claims using the source’s own conflicting
+    values.
+  dimensions:
+  - name: chemical_stage
+    value: Fe(OH)2 6.29g/L,24h,200rpm after first filtration
+    definition: No new microbial inoculation is assigned; prior culture can still
+      condition the feed.
+    evidence_ids:
+    - gu_main
+    - record
+  - name: drying
+    value: Black sediment becomes red; dried XRD assigned magnetite,troilite,siderite
+    definition: Proposed drying oxidation is interpretation, not measured wet-reactor
+      mineralogy.
+    evidence_ids:
+    - gu_main
+  - name: discharge
+    value: FinalpH9.08,sulfide1.27mg/L,Fe89.5mg/L
+    definition: Source comparison values are pH6–9 andsulfide1.0mg/L; no regulatory
+      compliance or initialFezero is inferred.
+    evidence_ids:
+    - gu_main
+    - record
+- assessment_id: lineage
+  area: evidence
+  topic: Upstream study and laboratory scale
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-lead-acid-battery-electrolyte
+  evidence_ids:
+  - record
+  - vu_main
+  - gu_main
+  summary: Vu2019 establishes feed provenance and chemical treatment. The retained
+    dilution and batch-continuity qualifications prevent multiplying efficiencies
+    or presenting the two papers as independent microbial replicates.
+  dimensions:
+  - name: upstream
+    value: 200mL wastewater plus200mL reagent, filtrate diluted to500mL for analysis
+    definition: Cross-paper normalization and exact batch continuity unavailable.
+    evidence_ids:
+    - vu_main
+    - record
+  - name: scale
+    value: Laboratory vessel treatment of industrial-origin waste
+    definition: Waste origin and proposed disposal process do not establish a pilot
+      or industrial biological deployment.
+    evidence_ids:
+    - gu_main
+    - record
+- assessment_id: provenance
+  area: provenance
+  topic: Exact contexts and completed checks
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-lead-acid-battery-electrolyte
+  evidence_ids:
+  - history
+  - dossier_json
+  - dossier_md
+  - schema
+  - integrity
+  - named
+  - cohort
+  summary: The actual CREATE sidecar and distinct inline event correctly describe
+    this new scoped owner. Dossier/schema inputs were explicitly captured before record
+    judgment. Independent review changes no maintained record, history or source bytes.
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- Community identity,inoculum,working volume and immobilization carrier remain unspecified;
+  no matched controls establish biological necessity.
+- 12-day endpoint versus14-day plotted range and8.81 versus8.86 post-SRB pH remain
+  source inconsistencies; error-bar definition/replication unavailable.
+- Pb/Cd removal bounds are source-attributed rounded concentration comparisons, not
+  zero measurements or product yields.
+- Dried-XRD assignments lack independently audited quantitative phases/harvested mass;
+  modeled species and uncertain analytical speciation are not direct causal observations.
+- Chemical polishing does not establish sterility, selective product recovery or discharge
+  compliance; printed final sulfide/pH conflict with source comparison values.
+- Upstream feed linkage does not establish identical batches or dilution-normalized
+  full-process recovery; no deployment claim.
+- Bounded live searches and text-only raw searches do not prove universal notice/supplement/duplicate
+  absence. Deferred candidate sources are outside accepted scientific review scope.
+notes:
+- All maintained inputs stayed frozen. No Git/GitHub action or scientific record/history/source-dossier
+  edit performed.
+- Fluorite curation authorship is disclosed; its independent scientific judgment belongs
+  to another reviewer.
+tags:
+- round60
+- independent
+- lead-acid-electrolyte
+- secondary-resource

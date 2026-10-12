@@ -1,0 +1,803 @@
+{
+  "created_at": "2026-10-12T14:51:29.118255+00:00",
+  "actor": {
+    "name": "codex",
+    "model": "GPT-6",
+    "tool": "codex"
+  },
+  "worktree": "/private/tmp/CMMMech-expansion-round60-20261012",
+  "trusted_base": "3ac02ecf15ba53e28b15b2f4afcdcb083d0a226c",
+  "outcome": "one new secondary-resource owner; independent review pending",
+  "record": {
+    "path": "data/records/spent-lead-acid-battery-electrolyte.yaml",
+    "sha256": "d55809c101b5ab610c3b630607d58c4eb253b67825e95bfcc8fd042adee8305c"
+  },
+  "history": {
+    "path": "history/records/spent-lead-acid-battery-electrolyte/2026-10-12T144802Z-codex-2bfdb3.yaml",
+    "sha256": "4407aa45ee22e4842b21d883a7ebcf67113b5eebbe827a9c647119f0c791993f"
+  },
+  "baseline": {
+    "path": "/private/tmp/cmm-round60-initialization.json",
+    "sha256": "6d3a7fc4b0be6591c9c2fdcfee06990be0d4b30bd69f4ef5bc874abc09152897",
+    "scope": "Parent explicitly reuses the immediately preceding fresh published-base gates at identical base/tree; no new baseline run claimed by this curator."
+  },
+  "primary_sources": [
+    {
+      "doi": "10.3390/su12031263",
+      "role": "accepted primary microbial-associated and separate chemical stages",
+      "title": "Simultaneous Removal of Residual Sulfate and Heavy Metals from Spent Electrolyte of Lead-Acid Battery after Precipitation and Carbonation",
+      "published": "2020-02-10",
+      "authors": [
+        "Shuai Gu",
+        "Bitian Fu",
+        "Ji Whan Ahn"
+      ],
+      "pages": 11,
+      "figures": "Scheme 1, Figures 1–5 including all panels, Table 1, Equations 1–2",
+      "supplement": "Complete two-page original PDF, Table S1 reactions S1–S35 and both analytical-method sections; no SI figures. href sustainability-12-01263-s001.pdf in original publisher XML resolved relative to article_deploy.",
+      "identity": "PDF/JATS/DOI Crossref title and authors agree; same DOI and supplement are one study, not independent experiments.",
+      "license": "CC BY 4.0 printed in main p.11 and Crossref VOR license. Raw files remain outside Git."
+    },
+    {
+      "doi": "10.3390/su11133497",
+      "role": "accepted upstream waste-origin and pretreatment context only",
+      "title": "Sustainable Treatment for Sulfate and Lead Removal from Battery Wastewater",
+      "published": "2019-06-26",
+      "pages": 8,
+      "figures": "All four original figures/panels, three tables and three numbered reaction equations; unnumbered concentration-removal equation also inspected.",
+      "supplement": "No supplementary-material node in complete publisher XML or supplement statement in complete main. No universal absence claim.",
+      "identity": "PDF/JATS title, author list and DOI agree; Crossref fetch returned 429, not metadata verification.",
+      "license": "CC BY 4.0 printed in main p.8."
+    }
+  ],
+  "visual_coverage": {
+    "personally_viewed_original_page_renders": [
+      "gu2020-pages/page-01.png through page-11.png",
+      "gu2020-si-pages/page-01.png through page-02.png",
+      "vu2019-pages/page-01.png through page-08.png"
+    ],
+    "rendering": "PyMuPDF from uv --no-project outside checkouts; complete text extracted separately.",
+    "uninspected_candidate_graphics": "CIGS2021 six pages were rendered but not visually assessed; CIGS2015 XML inspected only for preliminary methods/feed eligibility. Neither contributes accepted measurements."
+  },
+  "identity_scope": "Used lead-acid electrolyte and its pretreated liquid effluent, not lead paste, whole cells, grids, lead atom or pure mineral. Vu2019 p.2 explicitly describes used-battery acid poured into a storage tank. No verified external ID for this resource and no authenticated taxon for the unresolved wastewater SRB community are asserted. Criticality omitted.",
+  "experimental_scope": {
+    "organism": "mixed local-wastewater sulfate-reducing culture; month enrichment in Postgate C; no species/strain/sequence accession; no invented taxon mapping",
+    "conditions": "Gu pp.2–3: methanol4g/L,30C,reported initial0.1V with no electrode basis,immobilizedSRB1Lglassvessel; actualworkingvolume/inoculumdose/carrier unavailable. Main describes anaerobic/sterilized medium without protocol.",
+    "controls": "No matched uninoculated, killed-biomass, no-methanol or matched-pH comparator identified in full main/SI. Figure1 errorbars lack definition/replicate count.",
+    "measurement": "ICP-OES total metals; concentration bounds versus stated detection limits, no isolated product mass balance. Main/SI anion-method wording retained without reconstructing speciation/calibration.",
+    "separate_stage": "Fe(OH)2 6.29g/L,24h200rpm after first filtration; separate chemical step, microbial:false describes stage role not proven absence of cells."
+  },
+  "preserved_limitations": [
+    "Gu p.3 reports endpoint at12days, Figure1 includes14days; pH8.81 in prose versus8.86 Table1. No forced reconciliation.",
+    "Initial sulfate3013.5mg/L to27.1 afterSRB,25.2 afterchemical;99.2% overall is not assigned wholly to SRB. Pb/Cd ODL and stated limits0.05/0.005mg/L imply reported bounds>94.6/>99.8%, not zero or100% product recovery.",
+    "Gu Figure3 dried precipitate assigned calcite/galena/hawleyite; asserted96/2/2 fractions lack quantitative phase method/harvested mass/closedbalance, not adopted purity. Figures2/4 and SI S1 model species rather than directly measuring them.",
+    "Main Methods4500-S2− versus SIHUMASkit wording; main bicarbonate assignment versus SI carbonate1066cm−1 band without calibration/conversion. ICP cannot independently establish printed oxidation states.",
+    "SITableS1 contains printed reaction-balance concerns, e.g.S28 has one carbonate on left but two in product and S34 lacks balanced H/O; thermodynamic reaction set is not independently reproduced or adopted as a validated quantitative model.",
+    "Gu Table1 final Fe89.5mg/L and pH9.08/HS1.27 undermine blanket no-new-impurities/safe-discharge wording against its own printed comparison values. NA cells are not zero. No regulatory determination made.",
+    "Figure5 wetblack/driedred sediment and driedXRD differ from modeled wet phases; drying oxidation is proposed, not directly isolated.",
+    "Vu2019 upstream acid/reagent mixing and dilution to500mL complicate concentration-denominator transfer; exact experimental batch continuity with2020 is unavailable. Chemical upstream study is not replication of SRB and efficiencies are not multiplied.",
+    "No industrial deployment, isolated product, element-level criticality inheritance, species-specific causality or unique biological advantage inferred."
+  ],
+  "dedup": {
+    "receipt": "/private/tmp/cmm-round60-battery-research/dedup.json",
+    "sha256": "7ff5b0c9c98723cbeacbab652194ec21c72c8faf1afdea2543c2fa9b13754fce",
+    "scope": {
+      "repo": "/private/tmp/CMMMech-expansion-round60-20261012",
+      "published_clone": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech",
+      "scientific_dirs": [
+        "data/records",
+        "research",
+        "reviews",
+        "history"
+      ],
+      "hidden_included": true,
+      "ignored_included": true,
+      "follow_symlinks": true,
+      "excluded_components": [
+        ".git",
+        ".venv",
+        "__pycache__",
+        "node_modules"
+      ],
+      "text_extensions": [
+        "md",
+        "json",
+        "yaml",
+        "yml",
+        "txt",
+        "log",
+        "xml",
+        "html",
+        "csv",
+        "tsv"
+      ],
+      "raw_text_size_limit_bytes": 30000000,
+      "raw_roots_from_citations": [
+        "/private/tmp/CMMMech-source-skill-20261007",
+        "/private/tmp/CMMMech-source-survey-20261008",
+        "/private/tmp/cmm-round10-b-f-raw",
+        "/private/tmp/cmm-round10-graphite-raw",
+        "/private/tmp/cmm-round10-nb-ta-raw",
+        "/private/tmp/cmm-round10-ti-zr-raw",
+        "/private/tmp/cmm-round11-be-rb-re-raw",
+        "/private/tmp/cmm-round11-he-raw",
+        "/private/tmp/cmm-round11-ir-os-hf-raw",
+        "/private/tmp/cmm-round11-lu-tm-pm-raw",
+        "/private/tmp/cmm-round12-aluminium-boron-raw",
+        "/private/tmp/cmm-round12-carbon-metals-raw",
+        "/private/tmp/cmm-round12-groups-raw",
+        "/private/tmp/cmm-round12-industrial-minerals-raw",
+        "/private/tmp/cmm-round13-grade-raw",
+        "/private/tmp/cmm-round13-mineral-raw",
+        "/private/tmp/cmm-round13-secondary-raw",
+        "/private/tmp/cmm-round14-magnet-raw",
+        "/private/tmp/cmm-round14-mineral-raw",
+        "/private/tmp/cmm-round14-product-raw",
+        "/private/tmp/cmm-round14-secondary-raw",
+        "/private/tmp/cmm-round15-brine-raw",
+        "/private/tmp/cmm-round15-mineral-raw",
+        "/private/tmp/cmm-round15-phosphate-raw",
+        "/private/tmp/cmm-round16-produced-water-raw",
+        "/private/tmp/cmm-round16-silicate-raw",
+        "/private/tmp/cmm-round16-vivianite-raw",
+        "/private/tmp/cmm-round17-biotite-raw",
+        "/private/tmp/cmm-round17-catalyst-raw",
+        "/private/tmp/cmm-round17-enstatite-raw",
+        "/private/tmp/cmm-round17-independent-links-sources-final.json",
+        "/private/tmp/cmm-round17-saline-raw",
+        "/private/tmp/cmm-round17-secondary-raw",
+        "/private/tmp/cmm-round18-catalyst-raw",
+        "/private/tmp/cmm-round18-dunite-raw",
+        "/private/tmp/cmm-round18-independent-source-link-check.json",
+        "/private/tmp/cmm-round18-mineral-feeds-raw",
+        "/private/tmp/cmm-round18-products-raw",
+        "/private/tmp/cmm-round19-hydrogenation-catalyst-raw",
+        "/private/tmp/cmm-round19-independent-source-link-check.json",
+        "/private/tmp/cmm-round19-iron-manganese-raw",
+        "/private/tmp/cmm-round19-manganese-residue-raw",
+        "/private/tmp/cmm-round19-tailings-raw",
+        "/private/tmp/cmm-round20-goethite-raw",
+        "/private/tmp/cmm-round20-independent-source-link-check.json",
+        "/private/tmp/cmm-round20-laterite-raw",
+        "/private/tmp/cmm-round20-mafic-tailings-raw",
+        "/private/tmp/cmm-round20-nodule-raw",
+        "/private/tmp/cmm-round21-crusts-raw",
+        "/private/tmp/cmm-round21-pcb-raw",
+        "/private/tmp/cmm-round21-ree-mud-raw",
+        "/private/tmp/cmm-round22-concretions-raw",
+        "/private/tmp/cmm-round22-pcb-raw",
+        "/private/tmp/cmm-round22-pv-raw",
+        "/private/tmp/cmm-round22-sulfides-raw",
+        "/private/tmp/cmm-round23-crusts-raw",
+        "/private/tmp/cmm-round23-ghiorse-raw",
+        "/private/tmp/cmm-round23-identity-gaps-raw",
+        "/private/tmp/cmm-round23-lcd-raw",
+        "/private/tmp/cmm-round23-rey-mud-raw",
+        "/private/tmp/cmm-round24-copper-slag-raw",
+        "/private/tmp/cmm-round24-frontier-raw",
+        "/private/tmp/cmm-round24-independent-source-hash-audit.json",
+        "/private/tmp/cmm-round24-nimh-raw",
+        "/private/tmp/cmm-round24-sulfuric-raw",
+        "/private/tmp/cmm-round25-bf-dust-raw",
+        "/private/tmp/cmm-round25-button-raw",
+        "/private/tmp/cmm-round25-frontier-raw",
+        "/private/tmp/cmm-round25-oil-ash-raw",
+        "/private/tmp/cmm-round26-bof-prior-raw",
+        "/private/tmp/cmm-round26-bof-prior-raw-dedup",
+        "/private/tmp/cmm-round26-bof-prior-raw-dedup.txt",
+        "/private/tmp/cmm-round26-eaf-dust-dedup-raw",
+        "/private/tmp/cmm-round26-eaf-dust-dedup-raw.txt",
+        "/private/tmp/cmm-round26-eaf-dust-raw",
+        "/private/tmp/cmm-round26-packaging-raw",
+        "/private/tmp/cmm-round26-root-raw",
+        "/private/tmp/cmm-round26-superalloy-raw",
+        "/private/tmp/cmm-round27-eaf-slag-raw",
+        "/private/tmp/cmm-round27-goethite-raw",
+        "/private/tmp/cmm-round27-packaging-raw",
+        "/private/tmp/cmm-round27-root-raw",
+        "/private/tmp/cmm-round27-superalloy-raw",
+        "/private/tmp/cmm-round28-black-shale-research",
+        "/private/tmp/cmm-round28-goethite-research",
+        "/private/tmp/cmm-round28-tatra-research",
+        "/private/tmp/cmm-round28-tire-research",
+        "/private/tmp/cmm-round29-bastnaesite-research",
+        "/private/tmp/cmm-round29-ilmenite-research",
+        "/private/tmp/cmm-round29-source-issues.json",
+        "/private/tmp/cmm-round29-tungsten-waste-research",
+        "/private/tmp/cmm-round29-zinc-ore-research",
+        "/private/tmp/cmm-round30-basalt-research",
+        "/private/tmp/cmm-round30-chromite-research",
+        "/private/tmp/cmm-round30-pyrrhotite-independent-source-manifest.json",
+        "/private/tmp/cmm-round30-pyrrhotite-research",
+        "/private/tmp/cmm-round30-source-manifest-audit.json",
+        "/private/tmp/cmm-round30-tungsten-research",
+        "/private/tmp/cmm-round31-chromite-tailings-research",
+        "/private/tmp/cmm-round31-ilmenite-research",
+        "/private/tmp/cmm-round31-kaolin-research",
+        "/private/tmp/cmm-round31-kaolin-waste-research",
+        "/private/tmp/cmm-round31-stibnite-research",
+        "/private/tmp/cmm-round31-tungsten-research",
+        "/private/tmp/cmm-round32-arsenopyrite-research",
+        "/private/tmp/cmm-round32-bornite-research",
+        "/private/tmp/cmm-round32-chromitite-raw",
+        "/private/tmp/cmm-round32-chromitite-raw-prior-hits",
+        "/private/tmp/cmm-round32-chromitite-raw-prior-hits.txt",
+        "/private/tmp/cmm-round32-chromitite-research",
+        "/private/tmp/cmm-round32-molybdenite-research",
+        "/private/tmp/cmm-round33-chalcocite-research",
+        "/private/tmp/cmm-round33-covellite-research",
+        "/private/tmp/cmm-round33-molybdenite-research",
+        "/private/tmp/cmm-round33-pyrite-research",
+        "/private/tmp/cmm-round34-galena-research",
+        "/private/tmp/cmm-round34-greigite-research",
+        "/private/tmp/cmm-round34-mackinawite-research",
+        "/private/tmp/cmm-round34-publication-source-hash-audit.json",
+        "/private/tmp/cmm-round34-uraninite-research",
+        "/private/tmp/cmm-round35-anglesite-research",
+        "/private/tmp/cmm-round35-jarosite-research",
+        "/private/tmp/cmm-round35-ningyoite-research",
+        "/private/tmp/cmm-round35-schwertmannite-research",
+        "/private/tmp/cmm-round36-autunite-research",
+        "/private/tmp/cmm-round36-moolooite-research",
+        "/private/tmp/cmm-round36-source-issue.json",
+        "/private/tmp/cmm-round36-uramphite-research",
+        "/private/tmp/cmm-round37-falottaite-research",
+        "/private/tmp/cmm-round37-humboldtine-research",
+        "/private/tmp/cmm-round37-lindbergite-research",
+        "/private/tmp/cmm-round37-rhabdophane-research",
+        "/private/tmp/cmm-round38-hausmannite-research",
+        "/private/tmp/cmm-round38-katsarosite-research",
+        "/private/tmp/cmm-round38-mimetite-research",
+        "/private/tmp/cmm-round38-vanadinite-research",
+        "/private/tmp/cmm-round39-brownrot-research",
+        "/private/tmp/cmm-round39-ree-phosphate-research",
+        "/private/tmp/cmm-round39-source-hash-audit.json",
+        "/private/tmp/cmm-round39-source-issues-created.json",
+        "/private/tmp/cmm-round39-vanadinite-research",
+        "/private/tmp/cmm-round39-wei-manganese-research",
+        "/private/tmp/cmm-round40-birnessite-research",
+        "/private/tmp/cmm-round40-cobalt-manganese-oxide-research",
+        "/private/tmp/cmm-round40-manganese-ore-oxalates-research",
+        "/private/tmp/cmm-round40-samarium-phosphate-research",
+        "/private/tmp/cmm-round40-source-issues-created.json",
+        "/private/tmp/cmm-round41-biogenic-birnessite-research",
+        "/private/tmp/cmm-round41-cobalt-birnessite-research",
+        "/private/tmp/cmm-round41-lateritic-cobalt-research",
+        "/private/tmp/cmm-round41-manganese-minerals-research",
+        "/private/tmp/cmm-round41-source-followups-audit.json",
+        "/private/tmp/cmm-round41-source-issues-created.json",
+        "/private/tmp/cmm-round42-biogenic-selectivity-research",
+        "/private/tmp/cmm-round42-hardmetal-research",
+        "/private/tmp/cmm-round42-lithium-minerals-research",
+        "/private/tmp/cmm-round42-theisen-research",
+        "/private/tmp/cmm-round43-ge-independent-research",
+        "/private/tmp/cmm-round43-ge-minerals-research",
+        "/private/tmp/cmm-round43-germanium-resources-research",
+        "/private/tmp/cmm-round43-hardmetal-research",
+        "/private/tmp/cmm-round43-lithium-mixed-feeds-research",
+        "/private/tmp/cmm-round44-coal-optimization-research",
+        "/private/tmp/cmm-round44-hardmetal-2011-research",
+        "/private/tmp/cmm-round44-lithium-mixed-feeds-research",
+        "/private/tmp/cmm-round45-coal-technology-research",
+        "/private/tmp/cmm-round45-ge-minerals-research",
+        "/private/tmp/cmm-round45-indium-minerals-research",
+        "/private/tmp/cmm-round45-theisen-research",
+        "/private/tmp/cmm-round46-cassiterite-research",
+        "/private/tmp/cmm-round46-ge-minerals-research",
+        "/private/tmp/cmm-round46-laforetite-research",
+        "/private/tmp/cmm-round46-roquesite-research",
+        "/private/tmp/cmm-round47-indium-research",
+        "/private/tmp/cmm-round47-sn-minerals-research",
+        "/private/tmp/cmm-round47-tin-research",
+        "/private/tmp/cmm-round48-indium-research",
+        "/private/tmp/cmm-round48-sn-research",
+        "/private/tmp/cmm-round48-ti-research",
+        "/private/tmp/cmm-round48-zirconium-research",
+        "/private/tmp/cmm-round49-in-research",
+        "/private/tmp/cmm-round49-root-research",
+        "/private/tmp/cmm-round49-ti-research",
+        "/private/tmp/cmm-round49-zr-research",
+        "/private/tmp/cmm-round5-magnesium-raw",
+        "/private/tmp/cmm-round50-ftt-research",
+        "/private/tmp/cmm-round50-in-hf-research",
+        "/private/tmp/cmm-round50-ree-research",
+        "/private/tmp/cmm-round50-xenotime-feed-research",
+        "/private/tmp/cmm-round50-zircon-feed-research",
+        "/private/tmp/cmm-round51-hf-zr-research",
+        "/private/tmp/cmm-round51-monazite-research",
+        "/private/tmp/cmm-round51-ree-clay-research",
+        "/private/tmp/cmm-round51-zircon-feed-research",
+        "/private/tmp/cmm-round52-allanite-research",
+        "/private/tmp/cmm-round52-eudialyte-research",
+        "/private/tmp/cmm-round52-gold-tailings-research",
+        "/private/tmp/cmm-round52-hf-zr-research",
+        "/private/tmp/cmm-round53-allanite-leachate-research",
+        "/private/tmp/cmm-round53-clay-source-issue.json",
+        "/private/tmp/cmm-round53-hf-zr-research",
+        "/private/tmp/cmm-round53-ree-clay-research",
+        "/private/tmp/cmm-round53-zircon-feed-research",
+        "/private/tmp/cmm-round54-clay-resources-research",
+        "/private/tmp/cmm-round54-gluconobacter-research",
+        "/private/tmp/cmm-round54-mineral-frontier-research",
+        "/private/tmp/cmm-round54-tennantite-research",
+        "/private/tmp/cmm-round55-clay-recovery-research",
+        "/private/tmp/cmm-round55-clay-source-issue-readback.json",
+        "/private/tmp/cmm-round55-enargite-research",
+        "/private/tmp/cmm-round55-tetrahedrite-research",
+        "/private/tmp/cmm-round56-chalcopyrite-enargite-research",
+        "/private/tmp/cmm-round56-enargite-carbon-research",
+        "/private/tmp/cmm-round56-enargite-source-20261012T115823Z-independent.json",
+        "/private/tmp/cmm-round56-nickel-arsenic-ore-research",
+        "/private/tmp/cmm-round56-source-issue-receipt.json",
+        "/private/tmp/cmm-round56-zirconolite-research",
+        "/private/tmp/cmm-round57-anode-slime-research",
+        "/private/tmp/cmm-round57-electroplating-research",
+        "/private/tmp/cmm-round57-mineral-research",
+        "/private/tmp/cmm-round58-battery-research",
+        "/private/tmp/cmm-round58-created-source-issues.json",
+        "/private/tmp/cmm-round58-electroplating-research",
+        "/private/tmp/cmm-round58-mineral-research",
+        "/private/tmp/cmm-round58-scr-research",
+        "/private/tmp/cmm-round59-battery-research",
+        "/private/tmp/cmm-round59-industrial-research",
+        "/private/tmp/cmm-round59-mineral-research",
+        "/private/tmp/cmm-round59-source-issues.json",
+        "/private/tmp/cmm-round59-tannery-research",
+        "/private/tmp/cmm-round6-eu-sm-tb-raw",
+        "/private/tmp/cmm-round6-indium-raw",
+        "/private/tmp/cmm-round7-ho-er-gd-raw",
+        "/private/tmp/cmm-round7-terbium-raw",
+        "/private/tmp/cmm-round8-sc-pr-raw",
+        "/private/tmp/cmm-round9-cs-sr-raw",
+        "/private/tmp/cmm-round9-ru-rh-raw",
+        "/private/tmp/cmm-round9-si-sn-raw",
+        "/private/tmp/cmm-source-authority-acquisition",
+        "/private/tmp/cmm-source-datasets-downloads",
+        "/private/tmp/cmm-source-discovery-downloads",
+        "/private/tmp/cmm-source-gluco2021.html",
+        "/private/tmp/cmm-source-gluco2025-code.zip",
+        "/private/tmp/cmm-source-gluco2025-descriptions.docx",
+        "/private/tmp/cmm-source-gluco2025-supp4.xlsx",
+        "/private/tmp/cmm-source-gluco2025.html",
+        "/private/tmp/cmm-source-gluco2025.txt",
+        "/private/tmp/cmm-source-li2024.html",
+        "/private/tmp/cmm-source-li2024.txt",
+        "/private/tmp/cmm-source-mn2018.html",
+        "/private/tmp/cmm-source-mn2018.txt",
+        "/private/tmp/cmmmech-round5-ree-raw",
+        "/private/tmp/cmmmech-round6-mo-w-raw",
+        "/private/tmp/cmmmech-source-downloads",
+        "/private/tmp/cmmmech-source-skill-trial"
+      ],
+      "unavailable_roots": [
+        "/private/tmp/CMMMech-source-skill-20261007",
+        "/private/tmp/cmm-round15-phosphate-raw",
+        "/private/tmp/cmm-round17-catalyst-raw",
+        "/private/tmp/cmm-round17-independent-links-sources-final.json",
+        "/private/tmp/cmm-round17-secondary-raw",
+        "/private/tmp/cmm-round18-independent-source-link-check.json",
+        "/private/tmp/cmm-round19-independent-source-link-check.json",
+        "/private/tmp/cmm-round20-independent-source-link-check.json",
+        "/private/tmp/cmm-round24-independent-source-hash-audit.json",
+        "/private/tmp/cmm-round26-bof-prior-raw",
+        "/private/tmp/cmm-round26-bof-prior-raw-dedup",
+        "/private/tmp/cmm-round26-bof-prior-raw-dedup.txt",
+        "/private/tmp/cmm-round26-eaf-dust-dedup-raw",
+        "/private/tmp/cmm-round26-eaf-dust-dedup-raw.txt",
+        "/private/tmp/cmm-round29-source-issues.json",
+        "/private/tmp/cmm-round30-pyrrhotite-independent-source-manifest.json",
+        "/private/tmp/cmm-round30-source-manifest-audit.json",
+        "/private/tmp/cmm-round32-chromitite-raw",
+        "/private/tmp/cmm-round32-chromitite-raw-prior-hits",
+        "/private/tmp/cmm-round32-chromitite-raw-prior-hits.txt",
+        "/private/tmp/cmm-round34-publication-source-hash-audit.json",
+        "/private/tmp/cmm-round36-source-issue.json",
+        "/private/tmp/cmm-round39-source-hash-audit.json",
+        "/private/tmp/cmm-round39-source-issues-created.json",
+        "/private/tmp/cmm-round40-source-issues-created.json",
+        "/private/tmp/cmm-round41-source-followups-audit.json",
+        "/private/tmp/cmm-round41-source-issues-created.json",
+        "/private/tmp/cmm-round5-magnesium-raw",
+        "/private/tmp/cmm-round53-clay-source-issue.json",
+        "/private/tmp/cmm-round55-clay-source-issue-readback.json",
+        "/private/tmp/cmm-round56-enargite-source-20261012T115823Z-independent.json",
+        "/private/tmp/cmm-round56-source-issue-receipt.json",
+        "/private/tmp/cmm-round58-created-source-issues.json",
+        "/private/tmp/cmm-round59-source-issues.json",
+        "/private/tmp/cmm-round6-eu-sm-tb-raw",
+        "/private/tmp/cmm-round6-indium-raw",
+        "/private/tmp/cmm-source-gluco2021.html",
+        "/private/tmp/cmm-source-gluco2025-code.zip",
+        "/private/tmp/cmm-source-gluco2025-descriptions.docx",
+        "/private/tmp/cmm-source-gluco2025-supp4.xlsx",
+        "/private/tmp/cmm-source-gluco2025.html",
+        "/private/tmp/cmm-source-gluco2025.txt",
+        "/private/tmp/cmm-source-li2024.html",
+        "/private/tmp/cmm-source-li2024.txt",
+        "/private/tmp/cmm-source-mn2018.html",
+        "/private/tmp/cmm-source-mn2018.txt",
+        "/private/tmp/cmmmech-source-downloads"
+      ],
+      "original_documents_checkout": "Read-only current original Documents corpus searched; no environment commands or writes there",
+      "limitations": "Source PDF/image bytes are inventoried/hashed only in selected acquisition, not full-text searched in raw-root dedup; retained text/XML/metadata searched. Unreferenced temp/home directories excluded."
+    },
+    "file_count": 8975,
+    "hit_files": 74,
+    "errors": [],
+    "supplementary_rg": "/private/tmp/cmm-round60-battery-research/dedup-rg.json",
+    "exact_doi_search": "/private/tmp/cmm-round60-battery-research/dedup-doi.json",
+    "assessment": "No pre-existing electrolyte owner or accepted Gu/Vu experiment found within searched current/original scientific dirs and available cited text roots. Existing lead/galena/anglesite are element/mineral owners; Weijma2002 was already deferred; existing NiCd/NiMH/LIB/alkaline/button-cell owners have different feeds. Existing crystalline-Si PV explicitly excludes CIGS. No machine-wide or unavailable-root absence claim."
+  },
+  "search_scope": {
+    "provider": "web search/open plus public publisher and DOI endpoints",
+    "dates": "2026-10-12 UTC",
+    "coverage": "Bounded first result sets, no claimed exhaustive literature survey. Exact queries retained in raw search1–7/notice JSON; initial broad search results were not retained, explicitly excluded from saved-result completeness.",
+    "primary_queries": [
+      "spent lead acid battery paste bioleaching bacteria full text lead sulfate Acidithiobacillus",
+      "spent lead acid batteries fungal bioleaching lead paste organic acid primary study"
+    ],
+    "notices_queries": [
+      "\"su12031263\" correction erratum retraction",
+      "\"Simultaneous Removal of Residual Sulfate\" \"control\"",
+      "\"su11133497\" correction erratum retraction",
+      "\"spent electrolyte\" \"sulfate reducing\" Gu Fu Ahn"
+    ],
+    "notice_result": "No affecting correction/retraction or directly matched contradictory replication identified in inspected results; Gu Crossref returned no update-to/updated-by relationship. Publisher HTML/XML route denials and throttling limit version-note checks. Internal contradictions assessed from full originals. This is not proof no notice exists."
+  },
+  "access_limits": "Publisher HTML/standard XML routes returned403 or429; original public article_deploy PDFs/XML and XML-resolved SI succeeded. Three earlier SI format/directory guesses returned404 and were not treated as evidence. Initial acquisition2 failed sandbox DNS; separate authorized network retry receipt preserves that failure. No login/challenge bypass.",
+  "deferred_candidates": [
+    {
+      "doi": "10.1021/bp025523k",
+      "candidate": "spent lead-acid paste",
+      "status": "Known prior2002 Weijma fulltext gap; newly tried public fullHTML route failed, metadata does not establish unavailable assay details. Prior denied WileyPDF endpoints not repeatedly retried. Full originals/controls and actual paste origin remain acceptance needs."
+    },
+    {
+      "doi": "10.3390/materproc2021005051",
+      "candidate": "end-of-life CIGS panels",
+      "status": "Complete6page officialPDF acquired/rendered, not full scientific/visual assessment. Preliminary feedmethods identify EoL chemical/thermal route; no microbial evidence adopted. Future fullassessment/dedup required."
+    },
+    {
+      "doi": "10.1155/2015/494015",
+      "candidate": "CIGS process waste",
+      "status": "CompletePMCXML acquired and preliminary methods read; originalgraphics/unambiguous manufacturing-versus-use origin not verified. No accepted claim."
+    },
+    {
+      "title": "Biotechnological processing of spent electrolyte from lead-acid batteries, Retka, Uhrynowski and Drewniak (2020)",
+      "url": "https://bib.gwsh.edu.pl/ici/recorddetail?id=bwmeta1.element.baztech-4ce2788a-c073-4cd2-ab50-bd7035a04996",
+      "status": "New source-only discovery via metadata/abstract, including a claimed7-reactor pilot. Full primary/graphics/SI, verifiedDOI, apparatus/denominators and studyoverlap needed before any extension or pilotclaim."
+    }
+  ],
+  "named_validation": {
+    "started_at": "2026-10-12T14:48:15.887368+00:00",
+    "completed_at": "2026-10-12T14:48:21.351428+00:00",
+    "cwd": "/private/tmp/CMMMech-expansion-round60-20261012",
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "cmmmech",
+      "validate",
+      "data/records/spent-lead-acid-battery-electrolyte.yaml"
+    ],
+    "exit_code": 0,
+    "log_path": "/private/tmp/cmm-round60-battery-research/named-validation.log",
+    "log_sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e"
+  },
+  "raw_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/cigs2015.xml",
+      "bytes": 90603,
+      "sha256": "7ef6404714a63807107728156d6a53ff65fca26b28ab9ac78b005a1b3dd7dc34"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/cigs2021-pages/page-01.png",
+      "bytes": 329639,
+      "sha256": "4fd3bb14e619b4b86ecc5b71bf5a167b237968baf6a97ec8720edb4aaac31866"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/cigs2021-pages/page-02.png",
+      "bytes": 299019,
+      "sha256": "d5c69f444b5b316ab659fe9775c21015c4f0d6d6bd2d0ce9a38ad6c1e95c777a"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/cigs2021-pages/page-03.png",
+      "bytes": 202004,
+      "sha256": "64ae276304f47f1f4713b4393e8b2d2ea2432a78136d4cb82bc17d9ab99e4be5"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/cigs2021-pages/page-04.png",
+      "bytes": 318957,
+      "sha256": "dcef25d6f8bca0f3b0b25f5f5b5159224111fcbd92c12b22c2a4d74d1417b00a"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/cigs2021-pages/page-05.png",
+      "bytes": 428587,
+      "sha256": "43ebbbedc59e7800740bf92fe64dc86d2df494d5f5b0f94411a477a674f6932f"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/cigs2021-pages/page-06.png",
+      "bytes": 271404,
+      "sha256": "ce642ae664d7f3027277c16426edd8ca9deb7eb0e55bd074739f1a06a3637ce4"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/cigs2021.pdf",
+      "bytes": 1969337,
+      "sha256": "894a709becf47c12213d048798455c5ff0f2a22a5749f88e8501529ca06a036e"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/cigs2021.txt",
+      "bytes": 16646,
+      "sha256": "81e4dde1829268e559731291357c7ae9fe2c1799bb6d4d6620886a9bf97b36c8"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/gu2020-crossref.json",
+      "bytes": 17707,
+      "sha256": "c106592d3b47dc9c69153cf4a64fe25346d9398b44f0e2bb26b568156020e705"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/gu2020-deploy.xml",
+      "bytes": 96108,
+      "sha256": "1cca27d262f8f5f0ae38fa76deabdfd054d8c28b1f9ed1f128a75c63089e7bce"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/gu2020-pages/page-01.png",
+      "bytes": 290918,
+      "sha256": "7f87c09ad93c31482011841e8648b6c41860fe4ee8f3ab71cc72d3e04aeabaf5"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/gu2020-pages/page-02.png",
+      "bytes": 283572,
+      "sha256": "6a0dac3055cd66ff43f00f5303f6c34040430ddd41a0087db31877af3dbdbf3b"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/gu2020-pages/page-03.png",
+      "bytes": 259680,
+      "sha256": "89ad116856a60c27d213e0146965324e17dc6b717c51425e70d4b260653a6638"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/gu2020-pages/page-04.png",
+      "bytes": 275337,
+      "sha256": "8d557f9d16dc6dde8a486049a99e2ad87e3debd81929cc6d0f5f27ba4130d35a"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/gu2020-pages/page-05.png",
+      "bytes": 403712,
+      "sha256": "404ec111805b5c3af83c353392fa3d6c026112551b9c01b4e8d44d2446474df4"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/gu2020-pages/page-06.png",
+      "bytes": 193569,
+      "sha256": "d26883a77d486437bf306729643b1ed9b738a60df641cf0a03bd0dae13c50799"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/gu2020-pages/page-07.png",
+      "bytes": 387123,
+      "sha256": "4ffb3af376364126d81bb4aa70fd4afa5c8b2c0859a6912410a05efaf3eee5fe"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/gu2020-pages/page-08.png",
+      "bytes": 329051,
+      "sha256": "b4ce45c011c1b717bf4eb85b8932ac8fc7fcd053528056c571ed1208a159e8d4"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/gu2020-pages/page-09.png",
+      "bytes": 333705,
+      "sha256": "98933d99767b056ea2cf8fb2fe50966dff67d303086acffa6aaf1b25b6fdf7b0"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/gu2020-pages/page-10.png",
+      "bytes": 337441,
+      "sha256": "398b5e6f0868fab5e54a05ef7978a7ba4f31061ce224eace622335a149f7ff2a"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/gu2020-pages/page-11.png",
+      "bytes": 153238,
+      "sha256": "6c23bc4863b1b2b465dc35dc5f51545cf3c970b38e1bea37b2daf5bff0ce8eac"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/gu2020-si-pages/page-01.png",
+      "bytes": 224075,
+      "sha256": "05975cb41f372ecc8a77e993918cef92d88e2a929798f1ccb5ba46a0b4b1a7a7"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/gu2020-si-pages/page-02.png",
+      "bytes": 224472,
+      "sha256": "8275e967d08e81711f9d161294d77baa514657c67572745d815f203779995196"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/gu2020-si.pdf",
+      "bytes": 193540,
+      "sha256": "8a2e7487c825fca992b817ffc42795476eff1217770bc0c6e2cf88dc13b3e0b3"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/gu2020-si.txt",
+      "bytes": 3994,
+      "sha256": "161e81674611f973f573a550330cc5c9514d5911b15f75307d3bab00a1b309e1"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/gu2020.pdf",
+      "bytes": 3035190,
+      "sha256": "8aa03b89bdd5560699814c8f2d719ac814ac68eb0e536a380d6aab6ad7683299"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/gu2020.txt",
+      "bytes": 31397,
+      "sha256": "7220d540e1b8869625d7ae83944c701624319593a338256f1b5d617832bafbbc"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/notices.json",
+      "bytes": 36045,
+      "sha256": "06801bfc0fd7968e92f105933e36cf3379527c95a7b74c1e22a2942b1cb09ba0"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/primary-web.json",
+      "bytes": 593,
+      "sha256": "202b8cc98b86ea4b1a61257b79e0d7a84166fbd89c4237296d7d8779d5db85f3"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/search-1.json",
+      "bytes": 37474,
+      "sha256": "0000ad46414bf918444a97f99e5b83fe03c9823fd7b561b29ebb9f6c2ba12091"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/search-2.json",
+      "bytes": 31682,
+      "sha256": "42eb99807b46fdec4466cf0de2fb58f40dbcae36419b2b4de1aece0915894aa9"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/search-3.json",
+      "bytes": 28964,
+      "sha256": "4a60ff1505f71ae1407844161e4487ab3a383beffa3e7dac5b0fb6fc859a548a"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/search-4.json",
+      "bytes": 27735,
+      "sha256": "9760bb0b274745e1ec206c04c6eb4e752a4baefa3b54061bddead257dace2169"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/search-5.json",
+      "bytes": 35290,
+      "sha256": "830304d20607503bcda5c46ff6aa439319ed98d5b50f694234eeae260f3696e2"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/search-6.json",
+      "bytes": 32310,
+      "sha256": "aba35dfa18bca05f61083fb2d4011d14c3c94baa9cbed905dda678cbb7d0e1b9"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/search-7.json",
+      "bytes": 31398,
+      "sha256": "2f4babed11abf9670af861da22139ce0e9231283dad25a30553ae54e06ded5ff"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/vu2019-deploy.xml",
+      "bytes": 66761,
+      "sha256": "a5713bf4e42597b0c809c1580886a62d1d418001dc0dcf2d7f56174a9ead4b38"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/vu2019-pages/page-01.png",
+      "bytes": 280923,
+      "sha256": "75da28e41c343467ee10fa756cd68a472b390290083f84caedb5d12376a53c89"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/vu2019-pages/page-02.png",
+      "bytes": 264016,
+      "sha256": "9adf216f674bd3ff31450cf0fb3a731afcf7d571efc229c52999763ebf65aeee"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/vu2019-pages/page-03.png",
+      "bytes": 270790,
+      "sha256": "f6ee025e8c10a1e72220154b9c16b5993b9d626300df6e42a820d9a3360aacc3"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/vu2019-pages/page-04.png",
+      "bytes": 164784,
+      "sha256": "19d3acea4cc7a1842d440a24d3a2b32589f181a7c449ca71214d55f924eed9c2"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/vu2019-pages/page-05.png",
+      "bytes": 266839,
+      "sha256": "4f784a2c69adb9868d72799abab31c32189466cec62e500daf360441674a9a21"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/vu2019-pages/page-06.png",
+      "bytes": 172204,
+      "sha256": "90762bdbb715296844d61b3b62aa117669e531a9c96dc18d3cdde8ac55b942d1"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/vu2019-pages/page-07.png",
+      "bytes": 288842,
+      "sha256": "865dadaaf6c6bfadf5f0aaeb1d1bf899da3debf911fa47107f0a819988009b48"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/vu2019-pages/page-08.png",
+      "bytes": 315228,
+      "sha256": "0c0a9ecfe2ed4a8f7386f9c1c5de850fd501d0ad0fa80f19b0b8334023c41b3b"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/vu2019.pdf",
+      "bytes": 1209078,
+      "sha256": "39578d122ea1397d250c058bc3f6988f11c6b3ccd3cdaaf92072293f74fcffb0"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/raw/vu2019.txt",
+      "bytes": 23469,
+      "sha256": "ff906a4211e0819326974192de2125d4badbb70e381994712e3c16116732064d"
+    }
+  ],
+  "receipts": [
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/acquisition-1.json",
+      "sha256": "455ff78e41dfb47b0e34f12c9f157415b27293874e2bb687b8e7e9380138343e"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/acquisition-2-network.json",
+      "sha256": "4af599f4a17b1ddfb633446ab7ececf80d4cfedabcf0fd62c7857591103e89ef"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/acquisition-2.json",
+      "sha256": "3ef75035a1c956fd24feddfd668b0a47efd5e1f603dcae8433467d221802b927"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/acquisition-3.json",
+      "sha256": "5b24a01bdca366572fbb040596bfb00aef0e2119389efa176b1b0853b0547d2d"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/acquisition-4.json",
+      "sha256": "d63df088008638b757ce1eccab1a82776cf2e705314eef7443072ef310f1911b"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/dedup-doi-errors.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/dedup-doi-hits.txt",
+      "sha256": "65c902bed8cbc76a0d3454785cbc81009835d5e2e3e7175e2bde4a0ddd6c9014"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/dedup-doi.json",
+      "sha256": "d9c45aacdad503645142d34524269629234466980343fe304046eb313adcdd84"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/dedup-exact-study.json",
+      "sha256": "998c03eef3d96cd3bfcfec88df00ef654228fef794bead85948bb52998de0c6e"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/dedup-rg-errors.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/dedup-rg-matches.txt",
+      "sha256": "f6bb4e6e7e7a528b4805993d741cf7d6f6fd252f7e0b7adade5be6ac80e54455"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/dedup-rg.json",
+      "sha256": "2f7dbfd4e9c112c4dfb3ba2e1458ae1e8daa1452f59a884da6bfa74b57843198"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/dedup.json",
+      "sha256": "7ff5b0c9c98723cbeacbab652194ec21c72c8faf1afdea2543c2fa9b13754fce"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/history-create.json",
+      "sha256": "d82c61ef62eba4216c20060307a7fd80d0e85a7c73c084fcdd407f99056c7922"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/history-create.log",
+      "sha256": "db7cc4bcde7701ee50aab304f0b35bd3bcc72e12f966e74f311a2176ffcd8f6b"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/initial-specific-dedup.txt",
+      "sha256": "aeafae6bb905bdf72cf92135e7c9adbd8d9029189042f6b40f3c20d741dc2845"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/named-validation.json",
+      "sha256": "8a10bdd14090e337e4a46e4a5155260af766f7805878edbc0654fd43ac08acc8"
+    },
+    {
+      "path": "/private/tmp/cmm-round60-battery-research/named-validation.log",
+      "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e"
+    }
+  ],
+  "independent_review": "Not authored by curator; parent assigned separate reviewer. No completed cohort result claimed here."
+}
