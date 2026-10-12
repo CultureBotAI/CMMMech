@@ -1,0 +1,456 @@
+# Independent scientific review of ion-adsorption rare-earth leach residue
+
+- Review: 20261012T104845Z-ion-adsorption-rare-earth-leach-residue-round54-science
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-12T10:39:56.670187Z
+- Finished UTC: 2026-10-12T10:48:45.308513Z
+- Reviewer: Codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The prepared-residue identity and qualified fungal/culture-filtrate association are supported. Controls, source ranges and chemical-arm boundaries prevent stronger causal, recovery or deployment claims; no corrective finding in the reviewed state.
+
+## Scope And Provenance
+
+All final record fields, original evidence relevant to claims, history and paired dossier inspected; no independent laboratory reproduction or statistical reanalysis.
+
+Selection: New record assigned to a reviewer distinct from the curator.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 5c83f27fa4d916a8432894e07031c2b5c7451a09.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:ion-adsorption-rare-earth-leach-residue | data/records/ion-adsorption-rare-earth-leach-residue.yaml | maintained | Ion-adsorption rare-earth leach residue |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named validation | passed | True | cmmmech:ion-adsorption-rare-earth-leach-residue | Root executed; one record checked, zero failed. Log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e |
+| Completed batch batch | passed | True | cmmmech:ion-adsorption-rare-earth-leach-residue | Root executed; actual log /private/tmp/cmm-round54-final-batch.log SHA256 7df7af409fc0dcbe038e79ee6eb827d01eac21459322f279c36bcebbbf242b32. ts/check.py<br>All checks passed!<br>........................................................................ [ 22%]<br>........................................................................ [ 45%]<br>........................................................................ [ 67%]<br>.............................................................sss........ [ 90%]<br>................................                                         [100%]<br>317 passed, 3 skipped in 167.50s (0:02:47)<br>Checked 259 record(s); 0 failed.<br>Checked 307 history record(s); 0 error(s).<br> |
+| Completed batch nonempty | passed | True | cmmmech:ion-adsorption-rare-earth-leach-residue | Root executed; actual log /private/tmp/cmm-round54-final-nonempty.log SHA256 d6352ce5892e0da95df27d121ac84e0c387cc23d5583acbeafce8944f357bb6c. Checked 259 record(s); 0 failed.<br> |
+| Completed batch history | passed | True | cmmmech:ion-adsorption-rare-earth-leach-residue | Root executed; actual log /private/tmp/cmm-round54-final-history.log SHA256 b3a780aa618d78baed0dce1308db129dd8cfc00e4f9fabbcc2081e9d44ebdc32. Checked 307 history record(s); 0 error(s).<br> |
+| Completed batch render-check | passed | True | cmmmech:ion-adsorption-rare-earth-leach-residue | Root executed; actual log /private/tmp/cmm-round54-final-render-check.log SHA256 be156b3acc20d39b6bad41632b10eb7ccfc2c8a7fdeaec3f6236fbc67831aea6. uv run python scripts/render_pages.py --check<br>pages/ is current<br> |
+
+## Scientific And Domain Assessments
+
+### Prepared secondary resource and bounded identity
+
+identity: supported. Targets: cmmmech:ion-adsorption-rare-earth-leach-residue.
+
+Repeated ammonium-sulfate extraction and further preparation create a distinct residue owner; no pure mineral, industrial tailings sample or regional resource specification is inferred.
+
+### Culture and filtrate observations versus causal attribution
+
+evidence: supported. Targets: cmmmech:ion-adsorption-rare-earth-leach-residue.
+
+Cultivation, measured acids and solution release support qualified fungal-associated mobilization; chemical citric-acid, sequential extraction and DFT are context rather than proof of a specific microbial cause.
+
+### Reported ranges, denominators and chemical-arm limits
+
+quantity: supported. Targets: cmmmech:ion-adsorption-rare-earth-leach-residue.
+
+Reported percentage ranges, hour-scale pH plot, post-leach salt desorption and minor TableS3 discrepancy remain qualified. No average31.4%, significance, closed mass balance or product yield is invented.
+
+### Independent review, real history and exact source state
+
+provenance: supported. Targets: cmmmech:ion-adsorption-rare-earth-leach-residue.
+
+Different reviewer independently checks complete evidence relevant to accepted claims, source/record hashes and actual CREATE metadata. No schema change was needed.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| primary | https://www.osti.gov/servlets/purl/2479444; Complete nine-page accepted manuscript of DOI10.1016/j.seppur.2024.127691; Methods2.2.1-2.2.6, Results3.1-3.5; original pages2-7 visually checked, all five figures and Table1; remaining article text read. | supports | The feed is laboratory-prepared Guangdong ore residue, not sampled industrial tailings. Fungal culture/filtrate solution mobilization is distinguishable from chemical-acid assays and isolated-product recovery. |
+| supplement | https://ars.els-cdn.com/content/image/1-s2.0-S1383586624014308-mmc1.docx; Matching original title/authors; complete original XML and all six tables independently parsed; FiguresS1-S7 and DFT graphic inspected with local rendering pages4-14,16-18. | supports | TableS3 heading and rounded total, S5 metabolite mixture, S1 oxide-equivalent compositions and arm distinctions are accurately retained. Original DOCX is authoritative over imperfect twenty-page derivative rendering. |
+| limits | https://doi.org/10.1016/j.seppur.2024.127691; Main Figure4 and Methods2.2.2-2.2.3; chemical Figures2-3/5; Table1; SI TablesS1/S3/S5. | supports | A sterile PDB control without solid is not matched abiotic leaching. Biological solid loading, cell-free proof and replication definitions are missing. Reported15.8-24.1 and18.1-31.4% ranges are not means or significant improvements. Post-leach desorption and unclosed inventories prevent product yield. DFT/XPS and separate particle spots do not prove selective microbial dissolution. |
+| taxonomy | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061&amp;mode=Info; Official NCBI Taxonomy live page, species rank and Aspergillus niger label, accessed2026-10-12. | supports | Identifier resolves species only; reported CGMCC3.739 through BJMCC is not an independently authenticated strain or sequence. |
+| provenance | research/sources/round54-clay-resources/20261012T104034Z-source-investigation.json; Paired dossier, actual CREATE sidecar/inline event and source acquisition records. | supports | OSTI accepted manuscript and official publisher supplement match the experiment. Inferred standard PII supplement URL is transparently disclosed. Journal/OSTI/PNNL dates are not assay dates or independent experiments; original copyrighted files stay outside Git. |
+| hashes | /private/tmp/cmm-round54-clay-review/hash-proof.json; Independent sixty raw artifact SHA256 comparisons and all five final inspected input hashes. | supports | All source artifacts and final record/history/dossier/schema inputs verified unchanged. Initial native inspect captured target/history/schema before assessment; successor adds the final paired dossier. |
+| search | /private/tmp/cmm-round54-clay-review/dedup.json; Independent exact DOI/material search and first returned exactDOI correction/erratum/retraction/title/control web searches. | supports | Only current residue owner and earlier deferred source leads occur in bounded independent search. Existing natural-clay record is a different processing state. No affecting notice surfaced; curator actual Crossmark current response and broader acquisition/dedup receipts were separately inspected. |
+| gates | /private/tmp/cmm-round54-final-terminal.json; Completed just check, nonempty corpus, append-only history and render checks; exact logs hash-verified. | supports | Structural checks pass; scientific assessment independently rests on original evidence. |
+
+## Limits And Additional Notes
+
+- Biological solids/loading, filtration cutoff, replication/error-bar definitions and matched uninoculated solid control remain unreported.
+- Source range upper endpoints are not established means; separate desorption and incomplete inventories prevent closed recovery calculations.
+- S3 wording/rounding, oxide-equivalent versus elemental composition and differing arm labels remain source limitations.
+- Chemical kinetic fits, operational fractions, XPS components and cluster DFT do not prove a unique microbial mechanism or bulk mineral abundance.
+- Species identity does not authenticate the experimental strain.
+- Root visually inspected primary pages2-7 and read remaining text; SI original XML/tables plus cited rendered graphics cover accepted claims, not a claim of flawless derivative layout.
+- Bounded searches and hash checks cannot establish universal novelty, notice absence or scientific truth; inaccessible historical roots and unextracted binaries are disclosed.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261012T104845Z-ion-adsorption-rare-earth-leach-residue-round54-science
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of ion-adsorption rare-earth leach residue
+started_at: '2026-10-12T10:39:56.670187Z'
+finished_at: '2026-10-12T10:48:45.308513Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Record, history and paired source investigation were authored
+    by /root/round43_hardmetal. Root did not curate those files and independently
+    inspected the primary manuscript, supplement, identity, source limits and final
+    hashes.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The prepared-residue identity and qualified fungal/culture-filtrate association
+  are supported. Controls, source ranges and chemical-arm boundaries prevent stronger
+  causal, recovery or deployment claims; no corrective finding in the reviewed state.
+source:
+  git_revision: 5c83f27fa4d916a8432894e07031c2b5c7451a09
+  state: working_tree
+  inputs:
+  - path: data/records/ion-adsorption-rare-earth-leach-residue.yaml
+    sha256: 745912557a73b2ce7cb2f2ab93ca884c0ae383099225b6619292f4b76c346acf
+    role: target
+  - path: history/records/ion-adsorption-rare-earth-leach-residue/2026-10-12T103856Z-codex-456fc0.yaml
+    sha256: 43bdce1c461b7073a831f06e66c1f484ddb2f497e7c8d5147ed145f6f4f2e0c0
+    role: context
+  - path: research/sources/round54-clay-resources/20261012T104034Z-source-investigation.json
+    sha256: beb3acec4daa7788f53d463cca2750af16a6934dd1dd1c67d29f09572d8e885e
+    role: context
+  - path: research/sources/round54-clay-resources/20261012T104034Z-source-investigation.md
+    sha256: 92d2a882078ea8f164a5ccd039ffadf0db306a460583d3d3441e3ed98fc4c752
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:ion-adsorption-rare-earth-leach-residue
+  path: data/records/ion-adsorption-rare-earth-leach-residue.yaml
+  label: Ion-adsorption rare-earth leach residue
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/ion-adsorption-rare-earth-leach-residue.yaml
+    role: maintained scientific record
+scope:
+  description: All final record fields, original evidence relevant to claims, history
+    and paired dossier inspected; no independent laboratory reproduction or statistical
+    reanalysis.
+  selection: New record assigned to a reviewer distinct from the curator.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:ion-adsorption-rare-earth-leach-residue
+  exclusions: []
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/ion-adsorption-rare-earth-leach-residue.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:ion-adsorption-rare-earth-leach-residue
+  summary: Root executed; one record checked, zero failed. Log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- check_id: batch
+  name: Completed batch batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:ion-adsorption-rare-earth-leach-residue
+  summary: 'Root executed; actual log /private/tmp/cmm-round54-final-batch.log SHA256
+    7df7af409fc0dcbe038e79ee6eb827d01eac21459322f279c36bcebbbf242b32. ts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 22%]
+
+    ........................................................................ [ 45%]
+
+    ........................................................................ [ 67%]
+
+    .............................................................sss........ [ 90%]
+
+    ................................                                         [100%]
+
+    317 passed, 3 skipped in 167.50s (0:02:47)
+
+    Checked 259 record(s); 0 failed.
+
+    Checked 307 history record(s); 0 error(s).
+
+    '
+- check_id: nonempty
+  name: Completed batch nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:ion-adsorption-rare-earth-leach-residue
+  summary: 'Root executed; actual log /private/tmp/cmm-round54-final-nonempty.log
+    SHA256 d6352ce5892e0da95df27d121ac84e0c387cc23d5583acbeafce8944f357bb6c. Checked
+    259 record(s); 0 failed.
+
+    '
+- check_id: history
+  name: Completed batch history
+  command: uv run --locked cmmmech validate-history --base 5c83f27fa4d916a8432894e07031c2b5c7451a09
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:ion-adsorption-rare-earth-leach-residue
+  summary: 'Root executed; actual log /private/tmp/cmm-round54-final-history.log SHA256
+    b3a780aa618d78baed0dce1308db129dd8cfc00e4f9fabbcc2081e9d44ebdc32. Checked 307
+    history record(s); 0 error(s).
+
+    '
+- check_id: render-check
+  name: Completed batch render-check
+  command: just render-check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:ion-adsorption-rare-earth-leach-residue
+  summary: 'Root executed; actual log /private/tmp/cmm-round54-final-render-check.log
+    SHA256 be156b3acc20d39b6bad41632b10eb7ccfc2c8a7fdeaec3f6236fbc67831aea6. uv run
+    python scripts/render_pages.py --check
+
+    pages/ is current
+
+    '
+evidence:
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.osti.gov/servlets/purl/2479444
+  locator: Complete nine-page accepted manuscript of DOI10.1016/j.seppur.2024.127691;
+    Methods2.2.1-2.2.6, Results3.1-3.5; original pages2-7 visually checked, all five
+    figures and Table1; remaining article text read.
+  accessed_at: '2026-10-12T10:48:45.308513Z'
+  support: supports
+  summary: The feed is laboratory-prepared Guangdong ore residue, not sampled industrial
+    tailings. Fungal culture/filtrate solution mobilization is distinguishable from
+    chemical-acid assays and isolated-product recovery.
+  snapshot_sha256: 06a3b6529255226f7261a642603b1e16833b48764336d74786dd764f426089d3
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S1383586624014308-mmc1.docx
+  locator: Matching original title/authors; complete original XML and all six tables
+    independently parsed; FiguresS1-S7 and DFT graphic inspected with local rendering
+    pages4-14,16-18.
+  accessed_at: '2026-10-12T10:48:45.308513Z'
+  support: supports
+  summary: TableS3 heading and rounded total, S5 metabolite mixture, S1 oxide-equivalent
+    compositions and arm distinctions are accurately retained. Original DOCX is authoritative
+    over imperfect twenty-page derivative rendering.
+  snapshot_sha256: afadcaac908a76ad30624478e441138a95e2e59f86872fc7deb4543d3ea9bd76
+- evidence_id: limits
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.seppur.2024.127691
+  locator: Main Figure4 and Methods2.2.2-2.2.3; chemical Figures2-3/5; Table1; SI
+    TablesS1/S3/S5.
+  accessed_at: '2026-10-12T10:48:45.308513Z'
+  support: supports
+  summary: A sterile PDB control without solid is not matched abiotic leaching. Biological
+    solid loading, cell-free proof and replication definitions are missing. Reported15.8-24.1
+    and18.1-31.4% ranges are not means or significant improvements. Post-leach desorption
+    and unclosed inventories prevent product yield. DFT/XPS and separate particle
+    spots do not prove selective microbial dissolution.
+  snapshot_sha256: 06a3b6529255226f7261a642603b1e16833b48764336d74786dd764f426089d3
+- evidence_id: taxonomy
+  kind: primary_source
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061&mode=Info
+  locator: Official NCBI Taxonomy live page, species rank and Aspergillus niger label,
+    accessed2026-10-12.
+  accessed_at: '2026-10-12T10:48:45.308513Z'
+  support: supports
+  summary: Identifier resolves species only; reported CGMCC3.739 through BJMCC is
+    not an independently authenticated strain or sequence.
+- evidence_id: provenance
+  kind: record_content
+  reference: research/sources/round54-clay-resources/20261012T104034Z-source-investigation.json
+  locator: Paired dossier, actual CREATE sidecar/inline event and source acquisition
+    records.
+  accessed_at: '2026-10-12T10:48:45.308513Z'
+  support: supports
+  summary: OSTI accepted manuscript and official publisher supplement match the experiment.
+    Inferred standard PII supplement URL is transparently disclosed. Journal/OSTI/PNNL
+    dates are not assay dates or independent experiments; original copyrighted files
+    stay outside Git.
+  snapshot_sha256: beb3acec4daa7788f53d463cca2750af16a6934dd1dd1c67d29f09572d8e885e
+- evidence_id: hashes
+  kind: record_content
+  reference: /private/tmp/cmm-round54-clay-review/hash-proof.json
+  locator: Independent sixty raw artifact SHA256 comparisons and all five final inspected
+    input hashes.
+  accessed_at: '2026-10-12T10:48:45.308513Z'
+  support: supports
+  summary: All source artifacts and final record/history/dossier/schema inputs verified
+    unchanged. Initial native inspect captured target/history/schema before assessment;
+    successor adds the final paired dossier.
+  snapshot_sha256: cd3391fb9e896f0356c3c35517b5bf17d900833f7a7c1e427d5347906351ad84
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round54-clay-review/dedup.json
+  locator: Independent exact DOI/material search and first returned exactDOI correction/erratum/retraction/title/control
+    web searches.
+  accessed_at: '2026-10-12T10:48:45.308513Z'
+  support: supports
+  summary: Only current residue owner and earlier deferred source leads occur in bounded
+    independent search. Existing natural-clay record is a different processing state.
+    No affecting notice surfaced; curator actual Crossmark current response and broader
+    acquisition/dedup receipts were separately inspected.
+  search_scope: Current records/research/reviews/history and current raw root using
+    rg --no-ignore --hidden --follow. Curator current/original4158 metadata files
+    and200 available referenced raw roots inspected separately; nine unavailable roots,
+    unextracted binaries and unrelated paths excluded. Bounded first returned web
+    relevance sets do not prove universal absence.
+  snapshot_sha256: 3b2b03caee0b7351fe66e6660d15cbf8c61cc12dc5d3ef2b97c615b311c13b19
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round54-final-terminal.json
+  locator: Completed just check, nonempty corpus, append-only history and render checks;
+    exact logs hash-verified.
+  accessed_at: '2026-10-12T10:48:45.308513Z'
+  support: supports
+  summary: Structural checks pass; scientific assessment independently rests on original
+    evidence.
+  snapshot_sha256: 800f6a64d451a79496d4ebe50bbabc91aff6f8fea31dff90f914c6101be15b9d
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Prepared secondary resource and bounded identity
+  outcome: supported
+  target_ids:
+  - cmmmech:ion-adsorption-rare-earth-leach-residue
+  evidence_ids:
+  - primary
+  - supplement
+  - search
+  summary: Repeated ammonium-sulfate extraction and further preparation create a distinct
+    residue owner; no pure mineral, industrial tailings sample or regional resource
+    specification is inferred.
+  dimensions:
+  - name: material_form
+    value: Laboratory-prepared mixed residue from Guangdong ion-adsorption ore
+    definition: Operationally nonexchangeable after the reported pretreatment, not
+      universally insoluble
+    evidence_ids:
+    - primary
+    - supplement
+  - name: criticality
+    value: No designation asserted
+    definition: No criticality inherited from constituent elements; jurisdiction/list/edition
+      absent because no such claim is made
+    evidence_ids:
+    - provenance
+- assessment_id: mechanism
+  area: evidence
+  topic: Culture and filtrate observations versus causal attribution
+  outcome: supported
+  target_ids:
+  - cmmmech:ion-adsorption-rare-earth-leach-residue
+  evidence_ids:
+  - primary
+  - supplement
+  - limits
+  - taxonomy
+  summary: Cultivation, measured acids and solution release support qualified fungal-associated
+    mobilization; chemical citric-acid, sequential extraction and DFT are context
+    rather than proof of a specific microbial cause.
+  dimensions:
+  - name: organism_and_biomass
+    value: Source-reported A.niger CGMCC3.739 culture; separate culture filtrate with
+      unspecified cutoff
+    definition: NCBITaxon5061 denotes species, not strain authentication or verified
+      cell-free status
+    evidence_ids:
+    - primary
+    - taxonomy
+  - name: conditions_and_controls
+    value: 301K/220rpm, separately prepared culture filtrate and one-step inoculated
+      solids; control PDB without sample
+    definition: Biological loading/replication and matched uninoculated solid trajectory
+      are unestablished
+    evidence_ids:
+    - primary
+    - limits
+- assessment_id: quantity
+  area: quantity
+  topic: Reported ranges, denominators and chemical-arm limits
+  outcome: supported
+  target_ids:
+  - cmmmech:ion-adsorption-rare-earth-leach-residue
+  evidence_ids:
+  - primary
+  - supplement
+  - limits
+  summary: Reported percentage ranges, hour-scale pH plot, post-leach salt desorption
+    and minor TableS3 discrepancy remain qualified. No average31.4%, significance,
+    closed mass balance or product yield is invented.
+  dimensions:
+  - name: outcome_and_scale
+    value: Laboratory solution mobilization from one prepared feed
+    definition: No isolated product, pilot process, LCA or industrial deployment demonstrated
+    evidence_ids:
+    - primary
+    - limits
+- assessment_id: provenance
+  area: provenance
+  topic: Independent review, real history and exact source state
+  outcome: supported
+  target_ids:
+  - cmmmech:ion-adsorption-rare-earth-leach-residue
+  evidence_ids:
+  - provenance
+  - hashes
+  - gates
+  summary: Different reviewer independently checks complete evidence relevant to accepted
+    claims, source/record hashes and actual CREATE metadata. No schema change was
+    needed.
+findings: []
+actions: []
+limitations:
+- Biological solids/loading, filtration cutoff, replication/error-bar definitions
+  and matched uninoculated solid control remain unreported.
+- Source range upper endpoints are not established means; separate desorption and
+  incomplete inventories prevent closed recovery calculations.
+- S3 wording/rounding, oxide-equivalent versus elemental composition and differing
+  arm labels remain source limitations.
+- Chemical kinetic fits, operational fractions, XPS components and cluster DFT do
+  not prove a unique microbial mechanism or bulk mineral abundance.
+- Species identity does not authenticate the experimental strain.
+- Root visually inspected primary pages2-7 and read remaining text; SI original XML/tables
+  plus cited rendered graphics cover accepted claims, not a claim of flawless derivative
+  layout.
+- Bounded searches and hash checks cannot establish universal novelty, notice absence
+  or scientific truth; inaccessible historical roots and unextracted binaries are
+  disclosed.
+tags:
+- round54
+- clay-residue
+- independent
+- scientific
+```

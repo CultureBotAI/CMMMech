@@ -8,7 +8,7 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 256 material records.
+The catalogue currently contains 259 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
@@ -268,6 +268,9 @@ The catalogue currently contains 256 material records.
 | [Allanite-derived leachate](data/records/allanite-leachate.yaml) | Yeast-supernatant oxalate precipitation from a chemically prepared liquor | Solution depletion, impurity co-removal and dose inconsistencies limit product claims |
 | [Eudialyte concentrate](data/records/eudialyte-concentrate.yaml) | Chemical treatment of a magnetically beneficiated feed | Laboratory and pilot evidence; no microbial or industrial-deployment claim |
 | [Hafnon](data/records/hafnon.yaml) | Dated mineral identity and qualified natural occurrence | Earlier microanalysis reuse remains explicit; no inherited criticality or mechanism |
+| [Tennantite concentrate](data/records/tennantite-concentrate.yaml) | Acidophile-associated leaching of a mixed concentrate | Carbon effects depend on culture and conditions; no abiotic control or isolated product |
+| [Catapleiite](data/records/catapleiite.yaml) | Mineral identity and qualified natural-specimen context | Silver exchange in a heated derivative is not attributed to the unheated mineral |
+| [Ion-adsorption rare-earth leach residue](data/records/ion-adsorption-rare-earth-leach-residue.yaml) | Fungal/metabolite treatment of a chemically prepared residue | Laboratory preparation, source percentage and control limits; no industrial tailings deployment |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -328,7 +331,9 @@ edition; none assert timeless status or industrial process deployment. See the
 [fiftieth expansion reviews](research/ingests/round50-20261012-publication.md),
 [fifty-first expansion reviews](research/ingests/round51-20261012-publication.md),
 [fifty-second expansion reviews](research/ingests/round52-20261012-publication.md),
-[remaining ingest priorities](research/ingests/round52-frontier-20261012.md), and
+[fifty-third expansion reviews](research/ingests/round53-20261012-publication.md),
+[fifty-fourth expansion reviews](research/ingests/round54-20261012-publication.md),
+[remaining ingest priorities](research/ingests/round54-frontier-20261012.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

@@ -1,0 +1,132 @@
+id: cmmmech:tennantite-concentrate
+name: Tennantite concentrate
+material_kind: primary_resource
+description: >-
+  A mixed mineral concentrate enriched in source-labelled tennantite, represented
+  here by the feed studied by Kondo et al. (2024). This resource is distinct from
+  a pure mineral species, the separately described tennantite-(In), and elemental
+  copper or arsenic. The study reports mineral liberation analysis of about
+  60 wt% tennantite, 23% pyrite, 8.2% sphalerite, 6.3% gangue, 1.6% galena and
+  0.97% chalcopyrite (rounded values). Bulk elemental composition is reported as
+  S 31%, Cu 23%, Fe 12%, Zn 10%, Sb 7.8% and As 6.2%, with median particle size
+  41 micrometres. Its geographic origin and beneficiation route are not given.
+  Generic discussion of flotation wastes does not establish that this particular
+  feed was discarded waste. The informal tennantite phase label does not resolve
+  a modern mineral species or establish the ideal Cu12As4S13 composition of every
+  grain. No criticality designation is transferred from a constituent element.
+sources:
+  - id: kondo_2024
+    title: >-
+      Kondo S, Hayashi K, Phann I and Okibe N (2024). Bioleaching of tennantite
+      concentrate: influence of microbial community and solution redox potential.
+      Frontiers in Microbiology 14:1339549. Published 8 January 2024 in volume
+      designated 2023; DOI 10.3389/fmicb.2023.1339549. Sections 2-4, Figures 1-6,
+      Table 1 and data availability statement.
+    url: https://doi.org/10.3389/fmicb.2023.1339549
+    accessed_on: '2026-10-12'
+  - id: ncbi_sulfobacillus
+    title: >-
+      NCBI Taxonomy 28034, Sulfobacillus thermosulfidooxidans, species; lists
+      DSM 9293 and AT-1 as type-strain designations. Identifier context only,
+      not independent authentication of the experimental culture.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=28034&mode=Info
+    accessed_on: '2026-10-12'
+mechanisms:
+  - id: acidophile_associated_copper_mobilization
+    name: Acidophile-associated copper mobilization with variable carbon addition
+    process: bioleaching
+    microbial: true
+    organisms:
+      - id: NCBITaxon:28034
+        label: Sulfobacillus thermosulfidooxidans
+    description: >-
+      In inoculated acidic laboratory suspensions, copper entered the filtered
+      liquid while the effect of activated carbon depended on culture history
+      and experimental conditions. Source-reported final copper dissolution in
+      50-day flasks was about 70% with 0.01% activated carbon versus 45% without
+      it; larger carbon additions gave 52% and 38% at 0.025% and 0.05%, respectively.
+      In later 100-day pH-controlled reactors both carbon-free and 0.01% carbon
+      systems reached about 60% copper dissolution. These percentages describe
+      reported dissolved copper relative to the mixed feed inventory, not
+      isolated metal recovery or a pure-tennantite yield. Carbon-free systems
+      were also inoculated; no uninoculated leaching control is described.
+      Redox profiles, cell growth and community composition are consistent with
+      microbial involvement but do not isolate its advantage over matched
+      chemical leaching or prove a particular member's necessity.
+    context: >-
+      Unwashed, unsterilized concentrate was used. The initial inoculum contained
+      source-labelled Acidimicrobium ferrooxidans ICP (DSM 10331), Acidiplasma sp.
+      Fv-Ap, Acidithiobacillus caldus KU (DSM 8584), Sulfobacillus sibiricus N1
+      (DSM 17363), S. thermotolerans Kr1 (DSM 17362) and S. thermosulfidooxidans
+      AT-1 (DSM 9293), with equal initial cell densities before pre-growth on
+      concentrate. The paper's acknowledgement instead calls Fv-Ap Acidisphaera;
+      that inconsistency is not resolved here. The structured organism denotes
+      one reported community member, not the entire consortium or a verified
+      strain accession. Terminal 16S V3-V4 amplicon analysis reported 99.9%
+      S. thermosulfidooxidans in flask residue and dominance in reactor residue;
+      this is not a time-resolved census or proof of strain identity or causality.
+      Duplicate flasks contained 200 mL acidophile basal salts medium in 500 mL
+      vessels, 0.02% yeast extract, 5 mM Fe(II), 5% w/v concentrate and 10% v/v
+      pre-grown inoculum, initially pH 1.5 with sulfuric acid, at 45 degrees C
+      and 150 rpm for 50 days. Carbon doses were 0, 0.01, 0.025 and 0.05% w/v;
+      pH subsequently diverged, so the carbon comparison is not pH matched.
+      Two later 2 L reactor systems contained 1.2 L medium, 0.02% yeast extract,
+      5% concentrate and 10% inoculum descended from flask cultures, at 45 degrees C
+      and 150 rpm. Each carbon condition is one described reactor, not duplicate
+      reactors. Sulfuric acid maintained pH 2.0 through day 37 and 1.5 from day 38.
+      Day-53 Fe(II) additions differed: 20 mM without carbon and 10 mM with carbon.
+      Terminal outcomes therefore cannot be treated as a clean factorial carbon
+      effect or independent replication of the earlier flasks. Filtered 0.45-micrometre
+      aliquots were measured by ICP-OES; plotted total-element concentrations
+      do not identify oxidation state. No isolated copper product, complete
+      sampling-corrected mass balance or industrial deployment was demonstrated.
+    evidence:
+      - source_ref: kondo_2024
+        supports: support
+        explanation: >-
+          Sections 2.1-2.5, Figures 1-4 and Section 3 support the specific
+          mixed-feed culture assays and their reported dissolved-metal outcomes.
+          Figure 2 shows nonmonotonic carbon-dose effects and rising pH in carbon
+          arms; Figure 4 shows similar later copper trajectories, unequal iron
+          additions and the intervening pH change. These are two linked culture
+          stages, not universal operating optima. Figure 3 derives rates from
+          Figure 2 and is not an independent kinetic experiment.
+      - source_ref: kondo_2024
+        supports: partial
+        explanation: >-
+          Figures 5-6 and Section 3.2 show As/Fe/O/S/Sb-bearing secondary particles
+          and declining relative tennantite diffraction peaks. They do not
+          independently identify a pure ferric-arsenate or scorodite product,
+          quantify phase-specific dissolution, or demonstrate long-term arsenic
+          stability. Reported final dissolved arsenic is about 4% in the 0.01%
+          carbon flask and 15% in both reactors, not an isolated arsenic recovery
+          yield. The proposed ferric-arsenate/basic-ferric-sulfate association
+          remains tentative. Iron percentages are especially difficult to
+          interpret after unequal external iron additions.
+          Terminal community dominance and separate tolerance tests in Table 1
+          cannot establish that selection caused every change in leaching.
+      - source_ref: ncbi_sulfobacillus
+        supports: context_only
+        explanation: >-
+          Resolves the species label and type-strain aliases for the reported
+          member; it does not verify the stock used or resolve the other
+          consortium members and source naming discrepancy.
+curation_history:
+  - timestamp: '2026-10-12T10:34:34.119493Z'
+    curator: Codex (GPT-6)
+    action: create
+    summary: >-
+      Curated the mixed concentrate identity and separately scoped flask/reactor
+      leaching observations from the complete Kondo2024 original, preserving
+      controls, nonmonotonic carbon effects, source discrepancies and limits on
+      phase identity, causal attribution and recovered product.
+  - timestamp: '2026-10-12T10:44:51.012272Z'
+    curator: Codex (GPT-6)
+    action: edit
+    summary: >-
+      Addressed independent review F1 and issue 167 by removing the unsupported
+      claim of inconsistent early reactor redox maxima. The original Section 3.2
+      and Figure 4E agree; experimental qualifications remain unchanged.
+history_refs:
+  - history/records/tennantite-concentrate/2026-10-12T103421Z-codex-feb6a6.yaml
+  - history/records/tennantite-concentrate/2026-10-12T104425Z-codex-b15461.yaml

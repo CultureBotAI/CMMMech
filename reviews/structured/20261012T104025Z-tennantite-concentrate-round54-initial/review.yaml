@@ -1,0 +1,247 @@
+schema_version: 1.0.0
+review_id: 20261012T104025Z-tennantite-concentrate-round54-initial
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent initial scientific review of tennantite concentrate
+started_at: '2026-10-12T10:36:51Z'
+finished_at: '2026-10-12T10:40:25Z'
+reviewer:
+  identity: Codex /root/round27_packaging
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored this record/history/dossier. Reviewer authored
+    only the round54 Gluconobacter duplicate-source assessment, not this target. Native
+    inspect preceded assessment; all ten original pages, all figures and Table1 were
+    personally inspected. Reviewer has made no target edit.
+skill: .claude/skills/review-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: One minor source-fidelity error invents an early redox prose/figure inconsistency.
+  The narrow mixed-feed microbial association and retained control/outcome boundaries
+  are otherwise supported by the complete original. Final checks remain pending.
+source:
+  git_revision: 5c83f27fa4d916a8432894e07031c2b5c7451a09
+  state: working_tree
+  inputs:
+  - path: data/records/tennantite-concentrate.yaml
+    sha256: 6dabd6e6a78a6834706c147c2bbd491ca5d91e592c95a2728091d6048b39be55
+    role: target
+  - path: history/records/tennantite-concentrate/2026-10-12T103421Z-codex-feb6a6.yaml
+    sha256: 5b761a45c4885e91f50a5108fd5d7c930aa473c506ca2e9083160a00fdd2d275
+    role: context
+  - path: research/sources/round54-tennantite/20261012T103534Z-source-investigation.json
+    sha256: d7cd9cd0ef8fede38c8d45a7ef6bd109c61522da157ed42a76f8b80c4b1d9480
+    role: context
+  - path: research/sources/round54-tennantite/20261012T103534Z-source-investigation.md
+    sha256: 438db924c97ba28af5f02f8a04ec13d0500f308e969b9ca6eddb13e18d6e3697
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:tennantite-concentrate
+  path: data/records/tennantite-concentrate.yaml
+  label: Tennantite concentrate
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/tennantite-concentrate.yaml
+    role: maintained scientific record
+scope:
+  description: Exact new target, CREATE and paired dossier/schema; complete Kondo2024
+    original text and graphics. Initial supported finding, not completed batch acceptance.
+  selection: Assigned independent scientific review
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:tennantite-concentrate
+checks:
+- check_id: named
+  name: Independent named validation
+  command: .venv/bin/cmmmech validate data/records/tennantite-concentrate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:tennantite-concentrate
+  summary: Reviewer executed:1checked/0failed; logSHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/tennantite-concentrate.yaml
+  locator: All fields; mechanisms[0].evidence[1].explanation
+  accessed_at: '2026-10-12T10:40:25Z'
+  support: supports
+  summary: Exact frozen target and all five native inputs inspected. Its claim of
+    conflicting early redox maxima is not supported by the original.
+  snapshot_sha256: 6dabd6e6a78a6834706c147c2bbd491ca5d91e592c95a2728091d6048b39be55
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round54-tennantite/20261012T103534Z-source-investigation.md
+  locator: Evidence and adversarial reading, fourth bullet
+  accessed_at: '2026-10-12T10:40:25Z'
+  support: supports
+  summary: Dossier incorrectly attributes approximately760mV to Section3.2; original
+    PDF and JATS both say approximately670mV.
+  snapshot_sha256: 438db924c97ba28af5f02f8a04ec13d0500f308e969b9ca6eddb13e18d6e3697
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3389/fmicb.2023.1339549
+  locator: Complete original ten pages, Figures1–6 and Table1 personally inspected;
+    Section3.2 onp5
+  accessed_at: '2026-10-12T10:40:25Z'
+  support: supports
+  summary: The original gives AC-free approximately740mV and AC0.01% approximately670mV.
+    Conditions, mixed feed, absent abiotic control, variablepH and unequalFe additions
+    support the otherwise qualified record.
+  snapshot_sha256: b11a5770f1393168d919ed428fe379840dd8e073dcb8990135147eda2985dd49
+- evidence_id: prose
+  kind: primary_source
+  reference: /private/tmp/cmm-round54-tennantite-research/page-05.png
+  locator: Original p5, Section3.2, Days0–37 paragraph
+  accessed_at: '2026-10-12T10:40:25Z'
+  support: supports
+  summary: Approximately740mV without carbon and670mV with0.01% carbon are explicitly
+    printed; this agrees with the stated suppression interpretation.
+  snapshot_sha256: a2f3bbd59b2f8b10ab1d3b8151ce2f53b00ab46a2b3703dc40bc7ee20eacb7de
+- evidence_id: graphic
+  kind: primary_source
+  reference: /private/tmp/cmm-round54-tennantite-research/page-06.png
+  locator: Original Figure4E onp6
+  accessed_at: '2026-10-12T10:40:25Z'
+  support: supports
+  summary: Graph depicts higher early carbon-free peak near740mV and lower carbon-arm
+    peak near670mV, consistent with the primary prose.
+  snapshot_sha256: fdf670533b2716c19db5dc7518b93f8ca394f35a9403cb44aed5b9b120075e26
+- evidence_id: xml
+  kind: primary_source
+  reference: /private/tmp/cmm-round54-tennantite-research/raw/main.xml
+  locator: Section3.2 Days0–37 paragraph, retained original JATS line230
+  accessed_at: '2026-10-12T10:40:25Z'
+  support: supports
+  summary: Machine-readable original independently confirms740 and670, so this is
+    a curation misreading rather than an established publisher-format conflict.
+  snapshot_sha256: 34c378adcc3026a858c28de943eef9dc8918630d581156b47a35a11b829c2834
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round54-tennantite-peer/named-validation.log
+  locator: Reviewer-executed named validation in explicit round54 worktree
+  accessed_at: '2026-10-12T10:40:25Z'
+  support: supports
+  summary: One record checked, zero failed; all nativeinput and28 frozenraw hashes
+    verified. Shared batch gates not yet used in this initial observation.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+assessments:
+- assessment_id: material
+  area: identity
+  topic: Mixed mineral concentrate identity
+  outcome: supported
+  target_ids:
+  - cmmmech:tennantite-concentrate
+  evidence_ids:
+  - record
+  - primary
+  summary: Characterized concentrate is distinct from pure tennantite species, tennantite-(In),
+    constituent elements and unproven discarded waste; no criticality is asserted.
+- assessment_id: biology
+  area: evidence
+  topic: Qualified microbial leaching association
+  outcome: supported
+  target_ids:
+  - cmmmech:tennantite-concentrate
+  evidence_ids:
+  - primary
+  - graphic
+  summary: Inoculated carbon-free control is not abiotic. Duplicate flasks and single
+    described reactors, culture history, pH changes, unequalFe additions and missing
+    phase-specific/product yields remain explicit.
+- assessment_id: redox
+  area: evidence
+  topic: Alleged early redox conflict
+  outcome: concern
+  target_ids:
+  - cmmmech:tennantite-concentrate
+  evidence_ids:
+  - record
+  - dossier
+  - prose
+  - graphic
+  - xml
+  summary: 'F1: Section3.2 approximately740/670mV agrees with Figure4E. The record
+    and dossier assert a nonexistent760mV inconsistency.'
+findings:
+- finding_id: F1
+  issue_key: CMMMech.tennantite-concentrate.early-redox-source-fidelity
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: The claimed early redox prose–figure conflict is not present in the primary
+    source
+  description: The record says Section3.2 prints early reactor redox maxima inconsistent
+    with Figure4E and its suppression interpretation; the dossier specifies approximately760mV
+    in the carbon arm. The complete original PDF p5 and JATS both print approximately740mV
+    for AC-free and670mV for AC0.01%, which match Figure4E. Remove this invented conflict
+    or replace it with a faithful statement that source prose and graphic agree, retaining
+    genuine experimental limitations.
+  target_ids:
+  - cmmmech:tennantite-concentrate
+  field_paths:
+  - mechanisms[0].evidence[1].explanation
+  evidence_ids:
+  - record
+  - dossier
+  - prose
+  - graphic
+  - xml
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/tennantite-concentrate.yaml
+    role: maintained scientific record
+  - repository: CultureBotAI/CMMMech
+    path: research/sources/round54-tennantite/20261012T103534Z-source-investigation.md
+    role: source-context occurrence; preserve predecessor and append correction
+  rule_id: primary-source-fidelity
+  native_severity: minor
+  normalization_reason: Bounded incorrect source-uncertainty claim; does not overturn
+    feed identity or qualified leaching association.
+actions:
+- action_id: A1
+  description: Correct only the unsupported redox-conflict statement, append actual
+    EDIT history and a dated source correction while preserving this initial bundle
+    and original context.
+  finding_ids:
+  - F1
+  target_ids:
+  - cmmmech:tennantite-concentrate
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/tennantite-concentrate.yaml
+    role: maintained scientific record
+  - repository: CultureBotAI/CMMMech
+    path: research/sources/round54-tennantite/20261012T103534Z-source-investigation.md
+    role: source-context occurrence; preserve predecessor and append correction
+  acceptance_checks:
+  - Compare corrected wording with original PDFp5, Figure4E and JATS Section3.2.
+  - Preserve initial CREATE/dossier/review; append actual EDIT and correction context.
+  - Repeat named/affected batch checks and save successor with exact F1 occurrence
+    and review issue lineage.
+limitations:
+- Initial observation uses actual named validation; completed batch and final corrected-state
+  checks will be assessed in the successor.
+- No uninoculated leaching control, pH-matched carbon design, duplicate reactors,
+  phase-specificmassbalance or isolatedproduct reported.
+- Full original graphics inspected; no raw underlying sequence/time-series data or
+  linked supplement acquired.
+- Full taxonomy and bounded discovery/notice reconciliation will be finalized before
+  a positive completed review.
+notes:
+- No Git/GitHub or scientific-target changes by reviewer. Initial observation saved
+  before requested correction.
+tags:
+- round54
+- tennantite-concentrate
+- independent
+- initial
