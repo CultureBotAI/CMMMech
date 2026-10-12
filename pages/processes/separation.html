@@ -34,12 +34,12 @@
   <div>
     <label for="record-kind">Material Kind</label>
     <select id="record-kind">
-      <option value="">All kinds (7)</option>
+      <option value="">All kinds (8)</option>
       <option value="element">Element (64)</option>
-      <option value="mineral">Mineral (60)</option>
-      <option value="secondary_resource">Secondary resource (48)</option>
+      <option value="mineral">Mineral (68)</option>
+      <option value="secondary_resource">Secondary resource (49)</option>
       <option value="commodity">Commodity (32)</option>
-      <option value="primary_resource">Primary resource (13)</option>
+      <option value="primary_resource">Primary resource (14)</option>
       <option value="mineral_group">Mineral group (4)</option>
     </select>
   </div>
@@ -47,11 +47,11 @@
     <label for="record-mechanism">Mechanism Process</label>
     <select id="record-mechanism">
       <option value="">All processes</option>
-      <option value="bioleaching">Bioleaching (92)</option>
+      <option value="bioleaching">Bioleaching (93)</option>
       <option value="biomineralization">Biomineralization (32)</option>
       <option value="redox_transformation">Redox transformation (24)</option>
       <option value="biosorption">Biosorption (12)</option>
-      <option value="separation">Separation (7)</option>
+      <option value="separation">Separation (8)</option>
       <option value="recovery">Recovery (5)</option>
       <option value="other">Other (20)</option>
     </select>
@@ -66,7 +66,7 @@
   <button type="reset">Clear filters</button>
 </form>
 
-<p id="record-count" role="status" aria-live="polite">7 materials</p>
+<p id="record-count" role="status" aria-live="polite">8 materials</p>
 <p id="record-empty" hidden>No materials match your query or filters. Clear filters to show all.</p>
 
 <div class="record-table-scroll" role="region" aria-label="Materials table" tabindex="0">
@@ -106,6 +106,35 @@
       </td>
       <td>
         <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="mineral"
+        data-mechanisms="separation"
+        data-critical="false"
+        data-search="cassiterite cassiterite mineral cassiterite is the mineral species with ima-approved formula sno2. the september 2026 ima list records grandfathered status g and original description year 1832; that year is not an ima approval identifier. the mineral is distinct from elemental tin, a tin commodity, and a cassiterite-bearing experimental feed. the curated separation study used a brazilian mineral sample reported as 84.7% pure by x-ray fluorescence, rather than a demonstrated pure sno2 phase. no criticality designation is inherited from tin. separation rhodococcus opacus ncbitaxon:37919">
+      <td>
+        <a href="../materials/cassiterite.html"><strong>Cassiterite</strong></a>
+        <p class="record-desc">Cassiterite is the mineral species with IMA-approved formula SnO2. The September 2026 IMA list records grandfathered status G and original description year 1832; that year is not an IMA approval identifier. The mineral is distinct from elemental tin, a tin commodity, and a cassiterite-bearing experimental feed. The curated separation study used a Brazilian mineral sample reported as 84.7% pure by X-ray fluorescence, rather than a demonstrated pure SnO2 phase. No criticality designation is inherited from tin.</p>
+      </td>
+      <td>
+        <span class="badge">mineral</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Rhodococcus opacus</li>
+        </ul>
       </td>
       <td>
         <span style="color: var(--muted); font-size: .85rem;">—</span>
