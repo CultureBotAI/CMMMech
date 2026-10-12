@@ -228,8 +228,9 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Polylithionite](data/records/polylithionite.yaml) | Dated IMA identity and original mica nomenclature | Lepidolite series is not an exact endmember synonym; no accepted microbial mechanism |
 | [Germanite](data/records/germanite.yaml) | Dated IMA identity and original crystal chemistry | Source space-group disagreement preserved; no accepted microbial mechanism |
 | [Renierite](data/records/renierite.yaml) | Dated IMA identity and original composition study | Coupled composition variation within the species; no inherited criticality |
-| [Lithium-mica ore](data/records/lithium-mica-ore.yaml) | Acidophile, fungal and yeast observations on a mixed Beauvoir feed | Source denominator/protocol conflicts and bacterial null results; no mineral-specific transfer |
-| [Coal beneficiation waste](data/records/coal-beneficiation-waste.yaml) | Community-associated leaching in complete 2012/2016 studies | Missing matched controls and source unit/percentage conflicts; no complete product yield |
+| [Lithium-mica ore](data/records/lithium-mica-ore.yaml) | Qualified microbial leaching observations on mixed mica-bearing feeds | Source denominator/protocol conflicts and distinct analytical fractions; no mineral-specific transfer |
+| [Coal beneficiation waste](data/records/coal-beneficiation-waste.yaml) | Community-associated leaching in complete 2012/2016/2017 studies | Missing matched controls and conflicting optimum recipes/results; no complete product yield |
+| [Tungsten-nickel-iron alloy scrap](data/records/tungsten-nickel-iron-alloy-scrap.yaml) | Ferric-assisted mechanical separation in a complete 2011 study | Proposed microbial regeneration is untested; purity and pressed-surface size claims remain qualified |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -280,7 +281,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [forty-first expansion reviews](research/ingests/round41-20261012-publication.md),
 [forty-second expansion reviews](research/ingests/round42-20261012-publication.md),
 [forty-third expansion reviews](research/ingests/round43-20261012-publication.md),
-[remaining ingest priorities](research/ingests/round43-frontier-20261012.md), and
+[forty-fourth expansion reviews](research/ingests/round44-20261012-publication.md),
+[remaining ingest priorities](research/ingests/round44-frontier-20261012.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

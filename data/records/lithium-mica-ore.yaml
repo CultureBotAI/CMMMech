@@ -3,7 +3,7 @@ name: Lithium-mica ore
 material_kind: primary_resource
 description: >-
   Natural lithium-bearing ore containing lithium micas together with other
-  mineral phases. The curated experiment used crushed ore from Beauvoir,
+  mineral phases. The 2020 curated experiment used crushed ore from Beauvoir,
   France, supplied by the University of Birmingham and called lepidolite by
   Sedlakova-Kadukova et al. Its initial XRD pattern was assigned to
   polylithionite, muscovite and kaolinite in supplementary Figure S2A.
@@ -12,7 +12,12 @@ description: >-
   Lepidolite is series terminology, not an unambiguous mineral-species
   identifier. This extracted geological feed remains a primary resource,
   distinct from an individual mica species, elemental lithium, a processing
-  waste or a purified lithium product. No criticality designation or
+  waste or a purified lithium product. A separate 2025 experiment used a
+  supplier-provided mixed feed called lepidolite, with mica, albite and quartz
+  assignments and additional celadonite labels in its initial diffraction
+  figure; no mine provenance or quantitative species composition was supplied.
+  The two feeds are separate experiments within this resource category.
+  No criticality designation or
   industrial deployment is inferred from its lithium content.
 sources:
   - id: sedlakova2020
@@ -49,6 +54,17 @@ sources:
   - id: ncbi_mucilaginosa
     title: NCBI Taxonomy 5537, Rhodotorula mucilaginosa, species-rank identity
     url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5537
+    accessed_on: '2026-10-12'
+  - id: li2025
+    title: >-
+      Li, Wang, Zhang, Liu, Huang, Liu, Liao, Vardanyan, Xia and Wang
+      (2025). Enhanced Leaching of Lepidolite by Acidophilic Microorganisms
+      Under Mechanical Activation. Microorganisms 13(2):415.
+      DOI 10.3390/microorganisms13020415. Complete 23-page publisher PDF,
+      Sections 2-4 and original Figures 1-12; original four-page supplement,
+      Figures S1-S6 and Tables S1-S3, obtained through official PMC Cloud
+      version PMC11858582.1 with deposited object checksums verified.
+    url: https://doi.org/10.3390/microorganisms13020415
     accessed_on: '2026-10-12'
 mechanisms:
   - id: beauvoir_acidophile_leaching
@@ -242,6 +258,115 @@ mechanisms:
           incubation-description conflicts also limit quantitative
           comparison. Downstream recovery and sequential microbial
           processing remain proposals rather than performed operations.
+  - id: mechanically_activated_community_leaching
+    name: Community-associated lithium mobilization from mechanically activated mixed ore
+    process: bioleaching
+    microbial: true
+    description: >-
+      An acidophilic microbial community incubated with mechanically activated
+      mixed lithium-mica feed produced higher dissolved-lithium concentrations
+      than the reported abiotic arm, with the pyrite-supplemented culture
+      highest in the source's comparisons. Grinding and acidic chemical
+      leaching also contributed. The evidence supports a laboratory
+      culture-associated result, without resolving organism-specific action,
+      a pure mica-species response or an isolated lithium product. The
+      authors' combined percentage calculation includes a subsequent
+      hydrochloric-acid extraction of residues and is not a direct biological
+      recovery yield.
+    context: >-
+      Li et al. used lepidolite supplied by Central South University,
+      Changsha, with no reported mine provenance; its initial mixed phase
+      assignments do not identify a pure polylithionite or trilithionite.
+      A separate pyrite feed was added to the eutrophic arm. Ore sieved
+      to 38-74 micrometres was milled in stainless-steel equipment at
+      200 rpm, ball-to-material mass ratio 20:1, for 0-150 minutes.
+      Three parallel 250 mL flasks per group contained 100 mL 9K basal
+      medium initially at pH 2.0, 10 g/L ore, and either 10 g/L added
+      pyrite in eutrophic cultures or no added pyrite in oligotrophic
+      cultures. Washed mid-log community inocula started at 5 x 10^7
+      cells/mL; incubation was 45 degrees C, 180 rpm for 14 days, with
+      sampling every two days and daily evaporation replacement. The
+      community came from the Dabaoshan sulfide-mining area and was
+      adapted to lepidolite plus pyrite. Its 16S-based labels, including
+      unclassified Leptospirillum and Acidithiobacillus caldus, do not
+      establish authenticated strains or individual causal contributions;
+      no strain or taxon identifier is asserted for this community.
+      Methods describes sterile controls without pyrite, but Figure 2
+      depicts pyrite in that arm and Figures 9 and S5 label pyrite peaks
+      in its residues. The actual control composition is unresolved.
+    evidence:
+      - source_ref: li2025
+        supports: support
+        explanation: >-
+          Sections 2.2.3-2.2.4, 3.2 and original Figure 6d show direct
+          leachate lithium concentrations increasing with activation,
+          and higher concentrations in the culture arms than the abiotic
+          arm at corresponding activation durations. The pyrite culture
+          is highest in the plotted comparisons. ICP-OES measures total
+          elemental lithium in the sampled solution, not free-ion
+          speciation. Figures 3-5 document changed particle morphology
+          and diffraction after grinding. These comparisons support the
+          measured laboratory response, without a quantified isolated
+          product, industrial deployment or demonstrated process economics.
+      - source_ref: li2025
+        supports: partial
+        explanation: >-
+          The sterile-arm pyrite discrepancy between Methods and original
+          Figures 2, 9 and S5 prevents assuming a matched pyrite control.
+          Figure 6a also shows markedly different pH histories: initial
+          pH was shared, but acidity was not held equal. No matched-acidity,
+          killed-cell or cell-free metabolite comparison separates the
+          effects of acidification, live cells and added pyrite. Initial
+          feed XRD Figure 1 includes celadonite labels omitted from its
+          accompanying main-phase list; no quantitative phase analysis
+          resolves which mica supplied the lithium. Sample-withdrawal
+          volumes and a complete sampling mass balance are not supplied.
+      - source_ref: li2025
+        supports: partial
+        explanation: >-
+          Sections 2.2.6-2.2.7, Equation 1, Figure 7 and original Figure S1
+          distinguish the initial leachate from freeze-dried residues
+          treated with 1 M HCl for 24 hours. Equation 1 adds direct
+          solution lithium to the difference between acid-treated culture
+          and sterile residues. HCl can dissolve remaining feed as well
+          as associated material, so that difference does not selectively
+          measure EPS-bound or secondary-mineral lithium. The printed
+          denominator defines feed lithium content in mg/L multiplied
+          by ore mass in grams, a dimensionally inconsistent definition
+          that is not silently corrected here. Section 2.1.2 reports
+          3.20% Li and 5.05% Al by ICP-MS, whereas Equation 1 attributes
+          feed lithium to XRF and Table S1 contains no Li cell and gives
+          26.35% Al2O3. These unresolved assay and denominator issues
+          prevent an independently reconstructed extraction percentage.
+      - source_ref: li2025
+        supports: partial
+        explanation: >-
+          Section 3.6 and Figure 11 report 11.3%, 20.8% and 24.9% for
+          sterile, oligotrophic and eutrophic arms after 150-minute
+          activation, whereas Conclusions reports 11.3%, 16.75% and
+          19.24%. No reconciled percentage is adopted. The Figure 7
+          bars and adjacent prose also differ for acid-treated sterile
+          and oligotrophic residues. Neither those acid-extraction values
+          nor the combined percentages are presented here as direct
+          microbial recovery. The claimed threefold comparison with the
+          2020 study also uses a 41-day duration that does not describe
+          its prolonged bacterial arm; unlike feeds, conditions and
+          analytical fractions preclude that pooled performance claim.
+      - source_ref: li2025
+        supports: partial
+        explanation: >-
+          Figures 8-10, S3-S5 and Tables S2-S3 support cell-associated
+          surfaces, altered mixed residues, community profiles and lithium
+          in an operational thermal extract. Jarosite assignments in
+          eutrophic residues and lithium in the extract do not establish
+          lithium incorporation in a specific mineral lattice, intracellular
+          uptake or a quantitative EPS-binding mechanism. Extraction at
+          80 degrees C and the source's cell-disruption description do
+          not isolate pure extracellular polymer. Table S3 reports lithium
+          in micrograms per litre, not milligrams per litre. Figure 12 is
+          a proposed mechanism diagram; sequencing shifts, microscopy and
+          FTIR alone do not establish the separate causal steps or a
+          mineral-specific mass balance.
 curation_history:
   - timestamp: '2026-10-12T02:37:16Z'
     curator: codex (GPT-6; codex)
@@ -251,5 +376,15 @@ curation_history:
       primary and supplementary evidence, separating three microbial assay
       arms, preserving control/null/phase/assay conflicts and excluding
       mineral-specific yields, inherited criticality and industrial claims.
+  - timestamp: '2026-10-12T03:21:37Z'
+    curator: codex (GPT-6; codex)
+    action: EDIT
+    summary: >-
+      Added a separate mechanically activated mixed-feed community assay
+      from complete 2025 primary and supplementary evidence. Preserved
+      direct-solution versus post-HCl fractions, pyrite-control ambiguity,
+      inconsistent percentage and denominator definitions, and phase and
+      community limits without changing the three existing 2020 mechanisms.
 history_refs:
   - history/records/lithium-mica-ore/2026-10-12T023720Z-codex-9e7491.yaml
+  - history/records/lithium-mica-ore/2026-10-12T032137Z-codex-47f29b.yaml
