@@ -1,0 +1,142 @@
+id: cmmmech:monazite-ore
+name: Monazite ore
+material_kind: primary_resource
+description: 'A heterogeneous geological rare-earth phosphate feed represented by the high-grade
+  monazite ore supplied by Lynas Rare Earths, Australia, to van Alin et al. (2023). The reviewed
+  study does not establish its precise mine or deposit of origin. XRD, TIMA and elemental analyses
+  characterize a mixed feed rather than a pure monazite species: the supplement reports monazite-group
+  and other phosphate phases with additional gangue. This resource is distinct from monazite-(Ce),
+  monazite-(Nd), elemental rare earths, a rare-earth commodity and secondary processing waste.
+  The source''s high-grade description is not an independently certified commercial grade. No
+  constituent criticality designation is inherited.'
+sources:
+- id: vanalin2023
+  title: van Alin A et al. (2023). Biofilm formation on the surface of monazite and xenotime during
+    bioleaching. Microbial Biotechnology 16:1790-1802. DOI 10.1111/1751-7915.14260; complete 13-page
+    original article, Figures 1-5.
+  url: https://doi.org/10.1111/1751-7915.14260
+  accessed_on: '2026-10-12'
+- id: vanalin2023_appendix
+  title: 'van Alin et al. (2023), original Appendix S1, MBT2-16-1790-s001.docx: Figures S1-S16
+    and Tables S1-S4. Original DOCX text, tables and embedded figure images inspected.'
+  url: https://pmc-oa-opendata.s3.amazonaws.com/PMC10443343.1/MBT2-16-1790-s001.docx
+  accessed_on: '2026-10-12'
+- id: vanalin2023_video
+  title: van Alin et al. (2023), original Video S1 archive, MBT2-16-1790-s002.zip, containing
+    three day-11/day-14 clips. Six frames spanning each clip were inspected; the clips present
+    rotating depth-coded CLSM reconstructions, not continuous biological time-course measurements.
+  url: https://pmc-oa-opendata.s3.amazonaws.com/PMC10443343.1/MBT2-16-1790-s002.zip
+  accessed_on: '2026-10-12'
+- id: ncbi_aerogenes
+  title: 'NCBI Taxonomy 548: Klebsiella aerogenes, current species identity. This maps the reported
+    species name without independently authenticating the experimental stock.'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=548&mode=Info
+  accessed_on: '2026-10-12'
+- id: atcc13048
+  title: ATCC 13048 official catalogue, Klebsiella aerogenes NCDC 819-56; formerly Enterobacter
+    aerogenes. Catalogue identity is separate from experimental-stock verification.
+  url: https://www.atcc.org/products/13048
+  accessed_on: '2026-10-12'
+mechanisms:
+- id: klebsiella_surface_colonization
+  name: Biofilm formation and qualitative surface alteration under bioleaching conditions
+  process: bioleaching
+  microbial: true
+  organisms:
+  - id: NCBITaxon:548
+    label: Klebsiella aerogenes
+  description: Klebsiella aerogenes ATCC 13048 attached to the mixed monazite ore and formed surface
+    biofilms in laboratory phosphate-free medium. Microscopy showed preferential localization
+    at physical surface imperfections and no detected preference for particular grain chemistry
+    in the examined fields. Representative day-14 images show more eroded surfaces in the biotic
+    arm than in abiotic controls, supporting a qualitative association with microbial surface
+    alteration. This study does not provide a new quantitative rare-earth dissolution yield, a
+    demonstrated molecular dissolution pathway, an isolated product or industrial deployment.
+  context: The ore was reported as sized to 50-200 micrometres and gamma irradiated at 50 kGy
+    for 11 h. The subsequent biofilm Methods collectively describe the ore and two separate crystal
+    substrates as 0.5-2 mm; this size-description discrepancy is unresolved. Cells were pregrown
+    aerobically for 3-5 days at 30 degrees C and 120 rpm in NBRIP with 30 g/L glucose and 1 g/L
+    each KH2PO4 and K2HPO4. Ore and separate crystal specimens were mounted on glass using E6000
+    adhesive, treated with 70% ethanol for 10 min and UV for 1 h per side, then incubated in 100
+    mL phosphate-free NBRIP at initial pH 6.2 +/- 0.4, 30 degrees C and 140 rpm. Initial inoculum
+    was approximately 1e7 cells/mL by flow cytometry, not CFU. Glutaraldehyde fixation applied
+    to enumeration aliquots, not the whole bioleaching inoculum. The ore was described as the
+    sole phosphate source, but inoculum washing and an ore-free phosphorus-limited growth control
+    are not documented; growth dependence on ore phosphorus is therefore not established. Mounted
+    specimens were collected at 4, 8, 16 and 24 h and days 2, 3, 5, 8, 11 and 14, repeatedly washed,
+    and stained for CLSM or prepared for SEM/FIB. Separate live-imaging assays used a reported
+    1% monazite slurry and continued observations through days 20-70; their images are not pooled
+    with mounted-slide measurements. Sterile NBRIP and Milli-Q-water controls assessed abiotic
+    surface appearance and autofluorescence. One Methods passage specifies control pH 6, 5 and
+    4, whereas the live-imaging passage and Figure S6 specify 7, 5 and 4. A matched pH trajectory,
+    replicate counts and quantitative erosion statistics are not supplied.
+  evidence:
+  - source_ref: vanalin2023
+    supports: support
+    explanation: Figures 1-3 and the Results document attached cells, biofilm development and
+      a thin biofilm layer by complementary CLSM, SEM and a FIB cross-section; Appendix Figure
+      S12 provides a CLSM cross-section of mature biofilm. Main Figure 1A/D
+      and Appendix Figures S7 and S10 distinguish early attachment, greater coverage during maturation
+      and reduced coverage during dispersion on the ore. Main Figure 3E/F localizes cells around roughness and surface imperfections. Reported attachment within
+      10 min and growth to approximately 1e9 cells/mL are explicitly data not shown and are not
+      adopted here as verified quantitative observations. Images from the separate monazite-muscovite
+      and xenotime crystal arms are contextual comparisons, not measurements of this ore.
+  - source_ref: vanalin2023
+    supports: partial
+    explanation: Figure 5 compares representative high-grade ore surfaces after 14 days of abiotic
+      and biotic treatment and supports the authors' qualitative erosion interpretation. It is
+      not a registered before-and-after image series of the same grain and supplies no erosion
+      volume, elemental release time course, closed mass balance or measured recovery fraction.
+      Similar-pH abiotic comparisons are described in the discussion, but the control pH lists
+      disagree elsewhere and no matched pH trajectory is shown. Contact-mediated chemistry, organic-acid
+      action and EPS contributions remain interpretations without a causal intervention in this
+      experiment.
+  - source_ref: vanalin2023_appendix
+    supports: partial
+    explanation: Figures S1-S2 and Tables S1-S4 support a heterogeneous ore, not a pure Ce- or
+      Nd-dominant monazite specimen. Table S3 reports 65 wt% monazite group among crystalline
+      phases only; its listed 65, 3, 15 and 18 sum to 101 despite a printed total of 100. Table
+      S1 describes monazite-(Ce) and cheralite refinement references, while Table S2 lists CePO4
+      and LaPO4 reference patterns. Overlapping crandallite/florencite peaks and a tentative kihlmanite
+      assignment are acknowledged by the source. These model and reference-pattern differences
+      preclude promoting the tabulation to whole-feed grade or a unique mineral-species identifier.
+      No new extraction denominator is calculated from these phase estimates.
+  - source_ref: vanalin2023_appendix
+    supports: partial
+    explanation: Figures S5-S7 document cytometry and fluorescence controls. Hoechst and DiTO-1
+      stain DNA with different permeability properties; their combined signal is not a live-cell
+      count, and Figure S7 explicitly identifies autofluorescent epoxy around grains. SEM observations
+      independently support cell attachment. Main Figure 4C-E and Appendix Figures S15-S16 show
+      cells on grains with different elemental composition, supporting only the reported absence
+      of detected selective colonization in the examined fields. Figure S11 provides later live-imaging
+      snapshots without a quantified recolonization rate.
+  - source_ref: vanalin2023_video
+    supports: context_only
+    explanation: The three source-labelled day-11/day-14 clips show depth-coded reconstructions
+      of the mineral-associated fluorescent structures. Six sampled frames per clip span their
+      approximately 16, 48 and 32 s display durations; these are viewing rotations, not elapsed
+      culture time or independent replicates. They corroborate spatial imaging context but do
+      not establish live-cell viability, metabolite activity, dissolution kinetics or rare-earth
+      recovery.
+  - source_ref: vanalin2023
+    supports: context_only
+    explanation: The Introduction and Discussion quote rare-earth solution concentrations from
+      Corbett and Fathollahzadeh studies published in 2017-2018. Those values are prior-study
+      context rather than new measurements from the 2023 microscopy experiment, and are not imported
+      as this feed's yield or as independent replication. The separate crystal arms and previously
+      studied ore batches are not assumed to be the identical physical feed.
+curation_history:
+- timestamp: '2026-10-12T08:29:20Z'
+  curator: codex (GPT-6)
+  action: CREATE
+  summary: Added a distinct mixed monazite-ore resource from complete primary microscopy evidence,
+    original Appendix S1 and sampled original videos; preserved controls, phase/size/pH inconsistencies
+    and the absence of a new REE recovery yield.
+- timestamp: '2026-10-12T08:42:49Z'
+  curator: codex (GPT-6)
+  action: EDIT
+  summary: Corrected the Appendix S12 locator to support the thin-biofilm cross-section;
+    main Figure 3E/F remains the roughness-localization evidence.
+history_refs:
+- history/records/monazite-ore/2026-10-12T082924Z-codex-7eb1e5.yaml
+- history/records/monazite-ore/2026-10-12T084248Z-codex-69c8b2.yaml

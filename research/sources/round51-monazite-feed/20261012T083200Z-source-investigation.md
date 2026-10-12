@@ -1,0 +1,58 @@
+# Monazite ore: source investigation and curation handoff
+
+- UTC: 2026-10-12T08:32:00Z
+- Curator: codex / GPT-6 / codex, task `/root/round27_packaging`.
+- Working revision: `466cb14cbc271ba73ba05e89ed188cfd113d06ea`; worktree `/private/tmp/CMMMech-expansion-round51-20261012`.
+- Record: [monazite-ore.yaml](../../../data/records/monazite-ore.yaml), SHA256 `37c301ad96d2992289489748490ca48567b3f0e0f0f9d8f9b6d893dcbecdd3c6`.
+- CREATE: [2026-10-12T082924Z-codex-7eb1e5.yaml](../../../history/records/monazite-ore/2026-10-12T082924Z-codex-7eb1e5.yaml), SHA256 `0545df8726c7600df1ec37b900991ef4b9c38d82139fc43ee79e9796b8396758`.
+- Status: named validation passed; independent scientific review remains pending. This is the curator's handoff, not a self-authored acceptance review.
+
+## Selection and identity
+
+The selected source is van Alin et al. (2023), *Biofilm formation on the surface of monazite and xenotime during bioleaching*, Microbial Biotechnology 16:1790–1802, [DOI 10.1111/1751-7915.14260](https://doi.org/10.1111/1751-7915.14260), [PMC10443343](https://pmc.ncbi.nlm.nih.gov/articles/PMC10443343/), PMID37291762. The primary paper's online date is 8 June 2023 and issue date September 2023; the source was already known and deferred in earlier research, including the preserved [round50 dossier](../round50-ree-minerals/20261012T074105Z-source-investigation.md).
+
+Heterogeneous high-grade monazite ore supplied by Lynas Rare Earths, Australia; precise deposit unspecified in this source. It is not a species identifier, pure Ce/Nd phosphate, commodity or secondary waste. Crushing and sizing do not make the feed a secondary resource. No exact deposit, whole-feed grade, species identifier or criticality designation is inferred. Separate monazite-muscovite and xenotime crystal assays remain contextual comparisons. The current monazite-(Ce), monazite-(Nd), neodymium and xenotime-concentrate records do not own this mixed feed experiment.
+
+## Actual access and visual coverage
+
+The complete 13-page article PDF (23,933,036 bytes) and original Appendix S1 DOCX (62,310,091 bytes) were acquired in round50 and reused with unchanged SHA256 bytes. Their old acquisition is distinguished from fresh current PMC version metadata/checksum verification. Current metadata independently matches PDF MD5 `899b45e7edb6cb96cbed08ed8f752f58` and appendix MD5 `034acce13c7504a8e27bdc3bab75b7f9`. The article is CC BY. Fresh NCBI/ATCC/Crossref and PMC receipts record the actual URLs/timestamps; an initial sandbox DNS failure is retained separately from the successful network retry.
+
+The previously unacquired [original Video S1 ZIP](https://pmc-oa-opendata.s3.amazonaws.com/PMC10443343.1/MBT2-16-1790-s002.zip) was downloaded this round: 243,758,595 bytes, SHA256 `d5842ce6fc16c28d70f60fbdf79fd25814bc092fc47b319957da9d4e037c562f`, MD5 `1b9bce6df55a18846bff799446829949` verified against official current metadata. It contains three original MP4s labelled day11/day14. No authentication, challenge bypass or invented fulltext access was used.
+
+- Main: All13 original PDF pages personally viewed/read; Figures1-5 inspected on original page renders and original media available. JATS media numbering is nonsequential: Fig1=g006,Fig2=g004,Fig3=g003,Fig4=g001,Fig5=g002; g005 not treated as numberedFig6.
+- Appendix: OriginalDOCX XML text/all4tables read; all59 PNG/JPEG/TIFF original figure media rendered and personally inspected via10contact sheets coveringFiguresS1-S16, with S2XRD also viewed individually. Nine WDP alternate media were not decoded; their paragraph-associated PNG fallback images were inspected. No whole-DOCX printed-page layout or independent XRD reanalysis is claimed.
+- Video: Complete official243758595byte archive acquired and MD5bound to currentPMCmetadata. All3 originalMP4s preserved. PyAV decoded six frames each at0,20,40,60,80,99% duration; all18 sampledframes visually inspected inthreecontact sheets, plusclip2sample4originalframe. Actualtimes/hashes in video-sampling.json. Durationsapprox16/48/32s reflectrotating3Dviews, not culturetime; all2880frames were not personally viewed.
+- Tables: OriginalS1-S4 XML tables inspected; S3 arithmetic mismatch independently calculated65+3+15+18=101. Mainarticle has no numbered data tables.
+
+Raw originals, derived renders and checksum manifest remain outside Git in `/private/tmp/cmm-round51-monazite-research`. Main renders are `raw/pages/page-01.png` through `page-13.png`; Appendix original media, relationship map and extracted tables are under `raw/appendix-original-media`, `raw/appendix-image-map.json`, `raw/appendix-tables.json`; inspected contacts under `raw/si-inspection`; videos and exact sampled frames under `raw/video` and `raw/video-sampled-frames`. Standalone PyMuPDF and PyAV/Pillow ran outside checkouts, with no original-main environment changes.
+
+## Experimental contract and source boundaries
+
+| Item | Primary-supported scope and limitations |
+| --- | --- |
+| Organism | Klebsiella aerogenes ATCC13048; current NCBI Taxonomy548 verified. ATCC catalogue former Enterobacter aerogenes and type-strain mapping corroborated; experimental stock not independently sequenced/authenticated. |
+| Feed and conditions | Ore50-200um, gamma50kGy11h; later collective mounted-substrate wording0.5-2mm conflicts. Pregrowth3-5d,30C120rpm with phosphate/glucose. Mounted glass/adhesive specimens ethanol/UV treated,100mL phosphate-free NBRIP,initialpH6.2+/-0.4,30C140rpm,approximately1e7 flow-cytometry cells/mL,4h-day14. Separate1% live slurry continues day70; no unsupported w/v definition or mounted-volume transfer. |
+| Controls | Sterile NBRIP/Milli-Q controls for fluorescence and representative surface comparison. Methods controlpH6/5/4 versus live Methods andS6 pH7/5/4. Glutaraldehyde is enumeration-aliquot fixation. Hoechst/DiTO-1 fluorescence is not CFU or live-specific; epoxy autofluoresces. No documented inoculum wash, ore-free phosphorus-limited growth control, quantitative erosion replication or matched pH trajectory. |
+| Outcome | CLSM/SEM/FIB evidence of cell attachment and biofilm on ore. Qualitative day14 erosion comparison; no new aqueous-REE release, percentage extraction, closed mass balance, isolated product or industrial deployment. No detected chemical-composition preference in examined grains; roughness association. Contact/acid/EPS causation remains inferred. |
+| Composition and denominators | SI S3 crystalline-only monazite-group65 wt%, other listed3/15/18, arithmetic101 versusprintedtotal100; notwhole-feed grade. S1 Ce+cheralite refinement versusS2 Ce/La referencepatterns, overlappingcrandallite/florencite andtentativekihlmanite. No new denominator or mineralID from these estimates. Prior2017/2018 REE concentrations are cited context, not2023 measurements. |
+| Study overlap | Current Ce/Nd mineral identities, Nd synthetic mixed-phosphate evidence and He2024 xenotime concentrate are different material/study owners. VanAlin2023 was known/deferred in prior source inventories includinground50; this is newly accepted complete evidence, not a newly discovered DOI or proof of independent replication of earlier Lynas ore studies. |
+
+All supported claims refer to laboratory batch microscopy, not deployment. Initial approximately 1e7 cells/mL comes from cytometry, not colony counts. Fixation applied to enumeration aliquots. Pregrowth supplied phosphate; inoculum washing is not documented, so the source's sole-phosphate-source description does not independently prove ore-dependent growth. Separate mounted-slide and slurry arms are not numerically pooled.
+
+Main Figure1A/D and FiguresS7/S10 support progression of attachment, coverage and dispersion. Figure2 provides a local FIB cross-section; no average thickness is calculated. Main Figure3E/F and S12 show localization at imperfections. Main Figure4C–E and S15/S16 show cells on chemically different grains, supporting only the observed lack of compositional selectivity in those fields. Its caption wording is imperfect about panel attribution; claims follow the actual panels. Figure5 compares representative abiotic and biotic day14 surfaces; no registered same-particle before/after geometry, erosion volume, replicate estimate, elemental release curve or recovery mass balance is supplied. Proposed EPS/acid/contact explanations are not causally isolated here.
+
+The Introduction quotes 2017–2018 solution concentrations; these are not new 2023 yield observations. Some very early attachment and cell-growth statements explicitly have data not shown; they are not treated as verified quantitative observations. The source's later imaging and rotating video displays are not replicate kinetic measurements or proof of viability.
+
+## Deduplication and notices
+
+Search scope: Two exact checkouts data/records,research,reviews,history; hidden/ignored included via os.walk with followed symlinks and realpath cycle protection. Current cited raw research/raw roots only; text formats up to30MB; unextracted binarycontents excluded. No unrelated home/temp scan. Before record creation, 3958 scientific text files in the current and original checkouts were searched, then 3393 text files in 177 bounded referenced raw roots. 9 referenced roots were unavailable and are listed in the paired JSON/receipt; unextracted binaries and text above30MB were excluded. Thus the no-existing-owner conclusion includes hidden/ignored files and followed symlinks within these bounds, not every possible external source. Exact query, hits, roots and errors are retained in `/private/tmp/cmm-round51-monazite-research/dedup.json`.
+
+Fresh web queries were `"10.1111/1751-7915.14260" correction erratum retraction`, `"Klebsiella aerogenes" "ATCC 13048" NCBI Taxonomy`, and `"Biofilm formation on the surface of monazite" control bioleaching`. Search scope: Three first-page relevance searches during round51; returned primary PMC/PubMed/NCBI/ATCC records and related results inspected for identity and notice leads. No pagination or exhaustive worldwide notice assertion. This receipt is a curator summary of executed queries, not a verbatim tool-output archive. No applicable correction or retraction located in these bounded results. PMC current version metadata states is_retracted=false and Crossref supplies no update-to relation; neither establishes absolute absence. Species548 and official ATCC13048 catalogue mapping verified separately from experimental stock. Counterevidence is retained chiefly in the source's control and phase inconsistencies, not discarded to strengthen an extraction claim.
+
+## Validation and readiness
+
+Named command `uv run --locked cmmmech validate data/records/monazite-ore.yaml` completed exit0: one checked, zero failed. Log SHA256 `6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e`. The actual CREATE helper generated the immutable sidecar; the record has a distinct actual-UTC inline event and linked history. Baseline is explicitly reused from the exact published-base postmerge receipt through round51 initialization. This curator has not run or claimed final cohort checks.
+
+Remaining work is independent scientific review of these exact frozen inputs, followed by root-owned cohort and publication gates. Further quantitative leaching work requires complete prior originals and specimen/experiment overlap resolution. Unresolved source limitations remain explicit rather than being converted to fabricated recovery values.
+
+The paired JSON contains all raw file checksums and acquisition details. The standalone raw manifest SHA256 is `8b176972af4c42ddd090cab755304d44373a82b8d2455fe089b40c0dab55a60d`. No bulk primary files are vendored into Git.

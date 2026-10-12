@@ -8,7 +8,7 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 246 material records.
+The catalogue currently contains 249 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
@@ -258,6 +258,9 @@ The catalogue currently contains 246 material records.
 | [Xenotime-(Y)](data/records/xenotime-y.yaml) | Natural crystal chemistry and structure | Species identity remains separate from mixed-concentrate experiments |
 | [Oil-sands froth-treatment tailings](data/records/oil-sands-froth-treatment-tailings.yaml) | Acid-column mobilization and separate field community evidence | Chemical treatment and ecological associations do not establish microbial recovery |
 | [Xenotime concentrate](data/records/xenotime-concentrate.yaml) | Culture-associated mobilization from mixed mineral feed | Laboratory release, uncertain phase mechanisms and no isolated product |
+| [Elpidite](data/records/elpidite.yaml) | Natural occurrence and dated IMA identity | Source-qualified mineral assignment; no microbial mechanism |
+| [Ion-adsorption rare-earth clay](data/records/ion-adsorption-rare-earth-clay.yaml) | Heterotrophic leaching with complete primary and supplementary data | Nonsterile controls, genus-only inocula and faster salt comparator |
+| [Monazite ore](data/records/monazite-ore.yaml) | Biofilm microscopy with full primary/SI and sampled video evidence | Mixed natural feed; qualitative alteration without a new recovery yield |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -316,7 +319,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [Pages integration and refreshed validation](research/ingests/round48-20261012-integration.md),
 [forty-ninth expansion reviews](research/ingests/round49-20261012-publication.md),
 [fiftieth expansion reviews](research/ingests/round50-20261012-publication.md),
-[remaining ingest priorities](research/ingests/round50-frontier-20261012.md), and
+[fifty-first expansion reviews](research/ingests/round51-20261012-publication.md),
+[remaining ingest priorities](research/ingests/round51-frontier-20261012.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

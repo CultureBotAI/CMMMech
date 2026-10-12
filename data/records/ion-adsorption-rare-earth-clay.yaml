@@ -1,0 +1,100 @@
+id: cmmmech:ion-adsorption-rare-earth-clay
+name: Ion-adsorption rare-earth clay
+material_kind: primary_resource
+description: >-
+  Naturally weathered, rare-earth-bearing clay material, distinct from an individual
+  clay mineral, isolated rare-earth element or processing residue. The curated
+  experiment concerns ferruginous, poorly sorted material from 3.8–4.8 m depth
+  above volcanic breccia in the Ambohimirahavavy Alkaline Complex, Madagascar;
+  its results do not characterize every ion-adsorption deposit.
+sources:
+  - id: barnett2018
+    title: >-
+      Barnett, Palumbo-Roe and Gregory (2018), Comparison of Heterotrophic
+      Bioleaching and Ammonium Sulfate Ion Exchange Leaching of Rare Earth
+      Elements from a Madagascan Ion-Adsorption Clay; Minerals 8, 236;
+      Sections 2–5, Figures 1–3 and Tables 1–5
+    url: https://doi.org/10.3390/min8060236
+    accessed_on: '2026-10-12'
+  - id: barnett2018_supplement
+    title: >-
+      Barnett et al. (2018), Document S1 microbial screening and medium recipes,
+      and Table S1 leaching workbook; publisher ZIP linked by the article XML
+    url: https://mdpi-res.com/d_attachment/minerals/minerals-08-00236/article_deploy/minerals-08-00236-s001.zip
+    accessed_on: '2026-10-12'
+  - id: ncbi_aspergillus
+    title: NCBI Taxonomy, Aspergillus genus, taxon 5052; genus context only
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5052
+    accessed_on: '2026-10-12'
+  - id: ncbi_bacillus
+    title: NCBI Taxonomy, Bacillus genus, taxon 1386; genus context only
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1386
+    accessed_on: '2026-10-12'
+mechanisms:
+  - id: heterotrophic_acid_associated_mobilization
+    name: Heterotrophic culture-associated rare-earth mobilization
+    process: bioleaching
+    microbial: true
+    organisms:
+      - id: NCBITaxon:5052
+        label: Aspergillus
+      - id: NCBITaxon:1386
+        label: Bacillus
+    description: >-
+      Separate Aspergillus TD25 and Bacillus TD29 inoculations were associated
+      with acidification and gradual rare-earth release from a nonsterile clay
+      feed. Organic-acid measurements support an acid-associated interpretation,
+      without isolating proton attack from ligand complexation or endogenous
+      community effects. Salt leaching was generally faster and more effective;
+      cerium showed the opposite comparison. Dissolved release is not an
+      isolated rare-earth product or demonstrated industrial recovery.
+    context: >-
+      Barnett et al. used living isolates from a separate country-rock profile;
+      nonaseptic collection/storage limits claims of indigenous provenance.
+      The reported genus assignments are retained: Table 3's closest GenBank
+      matches do not identify the experimental isolates themselves. Triplicate
+      treatments contained 3 g crushed/sieved feed below 0.5 mm and 150 mL liquid
+      (2% w/v), incubated at 25 °C and 150 rpm for 60 days after 48 h inoculum
+      cultivation. Modified phosphate-free CAB contained 140 g/L glucose;
+      comparators were uninoculated CAB and 0.5 M ammonium sulfate. The feed
+      was deliberately not sterilized. Late acidification in uninoculated
+      flasks prevents treating them as abiotic controls. Leachate ICP-MS data
+      were corrected for sampling and evaporation. No isolated-product recovery
+      yield was reported.
+    evidence:
+      - source_ref: barnett2018
+        supports: support
+        explanation: >-
+          Sections 2–3, Figures 1–3 and Tables 1–5 establish the feed, separate
+          inoculations, measured acidification, organic ligands and solution
+          release. At day 60, reported Lu release was 70.7% with Aspergillus
+          versus 73.1% with salt, relative to total feed Lu. This supports
+          condition-specific mobilization, not general microbial superiority.
+      - source_ref: barnett2018_supplement
+        supports: support
+        explanation: >-
+          Document S1 specifies the modified CAB recipe and screening methods.
+          Table S1, Sheet1 rows 4–20, supplies triplicate mean/standard-deviation
+          leaching data and original-feed composition; its fungal, bacterial,
+          natural-community and salt rows remain distinct. These are source
+          mass-based values, not solution concentrations or independent studies.
+      - source_ref: barnett2018
+        supports: partial
+        explanation: >-
+          Discussion Sections 4–5 acknowledge background-community activity,
+          unresolved acid-versus-complexation effects, slow kinetics and Si/Fe
+          co-leaching. A matched proton-only test was future work. Cerium
+          speciation and local redox explanations are proposed rather than
+          demonstrated; the paper gives inconsistent Ce correlation statistics.
+          Genus-level identifiers do not establish strain identity or each
+          organism's exclusive causal contribution.
+history_refs:
+  - history/records/ion-adsorption-rare-earth-clay/2026-10-12T082825Z-codex-0d6399.yaml
+curation_history:
+  - timestamp: '2026-10-12T08:32:06Z'
+    curator: codex
+    action: CREATE
+    summary: >-
+      Added the natural clay-feed identity and primary-supported laboratory
+      mobilization mechanism, preserving nonsterile controls, genus-only
+      assignments, chemical comparisons and unresolved causal contributions.
