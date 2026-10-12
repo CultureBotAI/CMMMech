@@ -95,7 +95,7 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Sodium compounds](data/records/sodium-compounds.yaml) | Commodity identity and explicitly dated designation | Distinct material form; no microbial mechanism is asserted |
 | [Magnesium metal](data/records/magnesium-metal.yaml) | Commodity identity and explicitly dated designation | Distinct material form; no microbial mechanism is asserted |
 | [Silicon metal](data/records/silicon-metal.yaml) | Commodity identity and explicitly dated designation | Distinct material form; no microbial mechanism is asserted |
-| [Titanium metal](data/records/titanium-metal.yaml) | Commodity identity and explicitly dated designation | Distinct material form; no microbial mechanism is asserted |
+| [Titanium metal](data/records/titanium-metal.yaml) | Dated commodity designation and culture-containing grinding study | Pooled feed outcomes and mixed compounds; no pure-metal yield or demonstrated microbial advantage |
 | [Coking coal](data/records/coking-coal.yaml) | Mixed acidophile treatment of a coking-coal feed | Sterile controls and final acid washing complicate sulfur attribution; coking performance untested |
 | [Graphite commodity family](data/records/graphite.yaml) | Natural and synthetic graphite commodity family | Distinct from the narrower natural-graphite record and from a certified battery grade |
 | [Platinum-group commodities](data/records/platinum-group-commodities.yaml) | Six-member commodity family and Australian 2024 designation | No group-wide microbial mechanism or uniform product specification |
@@ -226,6 +226,10 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Cemented tungsten carbide scrap](data/records/cemented-tungsten-carbide-scrap.yaml) | Reported culture/ferric binder mobilization and separate chemical powder preparation | Missing matched controls and mass-balance denominators; no numerical extraction yield or WC purity |
 | [Petalite](data/records/petalite.yaml) | Dated IMA species identity and Handbook geological context | No accepted microbial mechanism or inherited criticality |
 | [Polylithionite](data/records/polylithionite.yaml) | Dated IMA identity and original mica nomenclature | Lepidolite series is not an exact endmember synonym; no accepted microbial mechanism |
+| [Germanite](data/records/germanite.yaml) | Dated IMA identity and original crystal chemistry | Source space-group disagreement preserved; no accepted microbial mechanism |
+| [Renierite](data/records/renierite.yaml) | Dated IMA identity and original composition study | Coupled composition variation within the species; no inherited criticality |
+| [Lithium-mica ore](data/records/lithium-mica-ore.yaml) | Acidophile, fungal and yeast observations on a mixed Beauvoir feed | Source denominator/protocol conflicts and bacterial null results; no mineral-specific transfer |
+| [Coal beneficiation waste](data/records/coal-beneficiation-waste.yaml) | Community-associated leaching in complete 2012/2016 studies | Missing matched controls and source unit/percentage conflicts; no complete product yield |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -275,7 +279,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [fortieth expansion reviews](research/ingests/round40-20261012-publication.md),
 [forty-first expansion reviews](research/ingests/round41-20261012-publication.md),
 [forty-second expansion reviews](research/ingests/round42-20261012-publication.md),
-[remaining ingest priorities](research/ingests/round42-frontier-20261012.md), and
+[forty-third expansion reviews](research/ingests/round43-20261012-publication.md),
+[remaining ingest priorities](research/ingests/round43-frontier-20261012.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

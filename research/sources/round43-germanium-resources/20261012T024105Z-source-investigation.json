@@ -1,0 +1,1033 @@
+{
+  "timestamp_utc": "2026-10-12T02:41:05Z",
+  "author": {
+    "name": "Codex /root/round27_packaging",
+    "model": "GPT-6",
+    "tool": "codex",
+    "role": "curator and source investigator; not independent record reviewer"
+  },
+  "worktree": "/private/tmp/CMMMech-expansion-round43-20261012",
+  "trusted_base": "59e24ec38d9c7b377dcfeade1637b298aab9623e",
+  "decision": "curated_qualified_secondary_resource_pending_independent_review",
+  "record": {
+    "path": "data/records/coal-beneficiation-waste.yaml",
+    "sha256": "d66baa5a261df19b446a1689dd00222e5be5a603439f28f4b344482a65c0dd20"
+  },
+  "history": {
+    "path": "history/records/coal-beneficiation-waste/2026-10-12T023644Z-codex-ef668b.yaml",
+    "sha256": "b1ebae42277506d336b2e573d01427b50550f66dfcfcf97c6477ea02f37076c7"
+  },
+  "report": {
+    "path": "research/sources/round43-germanium-resources/20261012T024105Z-source-investigation.md",
+    "sha256": "8eb2c2448f5b5f318106f96fafb66f6ce5a4accc51e8b1b34ca32eb23bfa27e8"
+  },
+  "sources": [
+    {
+      "key": "blayda2012",
+      "decision": "accepted_qualified_native_community_association",
+      "role": [
+        "resource_identity",
+        "primary_mechanism_experiment"
+      ],
+      "url": "https://dspace.onu.edu.ua/items/1db891e3-f8fc-4e42-862f-520085833a0f",
+      "original_url": "https://dspace.onu.edu.ua/server/api/core/bitstreams/a1ad0c7a-5b30-407b-bd33-2bcca63cb7c0/content",
+      "primary": "/private/tmp/cmm-round43-germanium-resources-research/raw/blayda2012-primary.pdf",
+      "pages": 7,
+      "publication": "2012, Energotekhnologii i Resursosberezhenie 2:37–43",
+      "doi": null,
+      "inspected": "Complete 7 original pages, Tables1–2, Figures1–3; methods p39 and results Table2.",
+      "rights": "Copyright authors2012; explicit redistribution license unverified."
+    },
+    {
+      "key": "vasyleva2016",
+      "decision": "accepted_qualified_reagent_comparison",
+      "role": [
+        "resource_identity",
+        "primary_mechanism_experiment"
+      ],
+      "doi": "10.18524/2307-4663.2016.3(35).77956",
+      "url": "https://mbt.onu.edu.ua/article/view/77956",
+      "original_url": "https://mbt.onu.edu.ua/article/download/77956/74393",
+      "repository_url": "https://dspace.onu.edu.ua/server/api/core/bitstreams/11b4da0c-d6a7-44f0-9a72-1f09acae0fe4/content",
+      "primary": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-primary.pdf",
+      "pages": 14,
+      "publication": "22 September2016, Microbiology and Biotechnology3(35):43–56",
+      "inspected": "Complete14 original pages, Table1, Figures1–4, methods pp44–45 and results/discussion pp46–52.",
+      "rights": "Publisher metadata DC.Rights and footer identify CC BY-NC4.0.",
+      "version_comparison": "Repository and publisher PDFs have different file hashes but all14 extracted page texts and raster bytes match."
+    },
+    {
+      "key": "dzhambek2019",
+      "decision": "source_context_only_not_curated",
+      "role": [
+        "resource_context",
+        "electrochemical_experiment_without_verified_biological_activity"
+      ],
+      "doi": "10.18524/2304-0947.2019.1(69).158498",
+      "url": "https://dspace.onu.edu.ua/items/08e30b59-49fe-4188-9cf7-141584c1b6b8",
+      "original_url": "https://dspace.onu.edu.ua/server/api/core/bitstreams/eb40265d-5d7c-49a5-973c-891933f684b5/content",
+      "publisher_url": "https://heraldchem.onu.edu.ua/article/view/158498",
+      "primary": "/private/tmp/cmm-round43-germanium-resources-research/raw/dzhambek2019-primary.pdf",
+      "pages": 6,
+      "publication": "4 March2019, Odesa National University Herald Chemistry24(1(69)):74–79",
+      "inspected": "Complete6 original pages, Tables1–2; no figures in the complete article.",
+      "rights": "Copyright authors2019; explicit redistribution version/license unverified."
+    }
+  ],
+  "search": {
+    "date": "2026-10-12",
+    "provider": "web search",
+    "queries": [
+      "\"08e30b59-49fe-4188-9cf7-141584c1b6b8\"",
+      "site:dspace.onu.edu.ua germanium coal dumps bioleaching",
+      "\"08e30b59\" germanium",
+      "\"UTILIZATION\" \"coal beneficiation waste dumps\" Blayda 2012",
+      "\"Бактериальное выщелачивание\" \"германия\" \"2012\" Блайда",
+      "\"10.18524/2304-0947.2019.1(69).158498\" correction erratum",
+      "\"10.18524/2307-4663.2016.3(35).77956\" correction retraction",
+      "\"Блайда\" \"Комплексная оценка отходов углеобогащения\" исправление",
+      "\"germanium\" \"Chervonogradska\" leaching sterile control"
+    ],
+    "filters": null,
+    "coverage": "first returned results and bounded adaptive queries, no exhaustive pagination",
+    "notice_result": "No paper-specific formal notice found; Crossref no update-to, not exhaustive"
+  },
+  "dedup": {
+    "at": "2026-10-12T02:32:28.854712+00:00",
+    "base": "59e24ec38d9c7b377dcfeade1637b298aab9623e",
+    "commands": [
+      [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-n",
+        "-i",
+        "-g",
+        "*.{yaml,yml,json,md,txt,html,xml,csv,tsv}",
+        "coal.*(dump|beneficiation|flotation)|Chervonograd|Червоноград|Блайда|Blayda|Blaida|Васильева|77956|08e30b59|19228/1/37-43|germanium-bearing.*waste",
+        "/private/tmp/CMMMech-expansion-round43-20261012/data/records",
+        "/private/tmp/CMMMech-expansion-round43-20261012/research",
+        "/private/tmp/CMMMech-expansion-round43-20261012/reviews",
+        "/private/tmp/CMMMech-expansion-round43-20261012/history",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history"
+      ],
+      [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-n",
+        "-i",
+        "-g",
+        "*.{yaml,yml,json,md,txt,html,xml,csv,tsv}",
+        "coal.*(dump|beneficiation|flotation)|Chervonograd|Червоноград|Блайда|Blayda|Blaida|Васильева|77956|08e30b59|19228/1/37-43|germanium-bearing.*waste",
+        "/private/tmp/cmm-round10-b-f-raw",
+        "/private/tmp/cmm-round10-graphite-raw",
+        "/private/tmp/cmm-round10-nb-ta-raw",
+        "/private/tmp/cmm-round10-ti-zr-raw",
+        "/private/tmp/cmm-round11-be-rb-re-raw",
+        "/private/tmp/cmm-round11-he-raw",
+        "/private/tmp/cmm-round11-ir-os-hf-raw",
+        "/private/tmp/cmm-round11-lu-tm-pm-raw",
+        "/private/tmp/cmm-round12-aluminium-boron-raw",
+        "/private/tmp/cmm-round12-carbon-metals-raw",
+        "/private/tmp/cmm-round12-groups-raw",
+        "/private/tmp/cmm-round12-industrial-minerals-raw",
+        "/private/tmp/cmm-round13-grade-raw",
+        "/private/tmp/cmm-round13-mineral-raw",
+        "/private/tmp/cmm-round13-secondary-raw",
+        "/private/tmp/cmm-round14-magnet-raw",
+        "/private/tmp/cmm-round14-mineral-raw",
+        "/private/tmp/cmm-round14-product-raw",
+        "/private/tmp/cmm-round14-secondary-raw",
+        "/private/tmp/cmm-round15-brine-raw",
+        "/private/tmp/cmm-round15-mineral-raw",
+        "/private/tmp/cmm-round16-produced-water-raw",
+        "/private/tmp/cmm-round16-silicate-raw",
+        "/private/tmp/cmm-round16-vivianite-raw",
+        "/private/tmp/cmm-round17-biotite-raw",
+        "/private/tmp/cmm-round17-enstatite-raw",
+        "/private/tmp/cmm-round17-saline-raw",
+        "/private/tmp/cmm-round18-catalyst-raw",
+        "/private/tmp/cmm-round18-dunite-raw",
+        "/private/tmp/cmm-round18-mineral-feeds-raw",
+        "/private/tmp/cmm-round18-products-raw",
+        "/private/tmp/cmm-round19-hydrogenation-catalyst-raw",
+        "/private/tmp/cmm-round19-iron-manganese-raw",
+        "/private/tmp/cmm-round19-manganese-residue-raw",
+        "/private/tmp/cmm-round19-tailings-raw",
+        "/private/tmp/cmm-round2-selenium-evidence-20261011",
+        "/private/tmp/cmm-round20-goethite-raw",
+        "/private/tmp/cmm-round20-laterite-raw",
+        "/private/tmp/cmm-round20-mafic-tailings-raw",
+        "/private/tmp/cmm-round20-nodule-raw",
+        "/private/tmp/cmm-round21-crusts-raw",
+        "/private/tmp/cmm-round21-pcb-raw",
+        "/private/tmp/cmm-round21-ree-mud-raw",
+        "/private/tmp/cmm-round22-concretions-raw",
+        "/private/tmp/cmm-round22-pcb-raw",
+        "/private/tmp/cmm-round22-pv-raw",
+        "/private/tmp/cmm-round22-sulfides-raw",
+        "/private/tmp/cmm-round23-crusts-raw",
+        "/private/tmp/cmm-round23-ghiorse-raw",
+        "/private/tmp/cmm-round23-identity-gaps-raw",
+        "/private/tmp/cmm-round23-lcd-raw",
+        "/private/tmp/cmm-round23-rey-mud-raw",
+        "/private/tmp/cmm-round24-copper-slag-raw",
+        "/private/tmp/cmm-round24-frontier-raw",
+        "/private/tmp/cmm-round24-nimh-raw",
+        "/private/tmp/cmm-round24-sulfuric-raw",
+        "/private/tmp/cmm-round25-bf-dust-raw",
+        "/private/tmp/cmm-round25-button-raw",
+        "/private/tmp/cmm-round25-frontier-raw",
+        "/private/tmp/cmm-round25-oil-ash-raw",
+        "/private/tmp/cmm-round26-eaf-dust-raw",
+        "/private/tmp/cmm-round26-packaging-raw",
+        "/private/tmp/cmm-round26-root-raw",
+        "/private/tmp/cmm-round26-superalloy-raw",
+        "/private/tmp/cmm-round27-eaf-slag-raw",
+        "/private/tmp/cmm-round27-goethite-raw",
+        "/private/tmp/cmm-round27-packaging-raw",
+        "/private/tmp/cmm-round27-root-raw",
+        "/private/tmp/cmm-round27-superalloy-raw",
+        "/private/tmp/cmm-round28-black-shale-research",
+        "/private/tmp/cmm-round28-goethite-research",
+        "/private/tmp/cmm-round28-tatra-research",
+        "/private/tmp/cmm-round28-tire-research",
+        "/private/tmp/cmm-round29-bastnaesite-research",
+        "/private/tmp/cmm-round29-ilmenite-research",
+        "/private/tmp/cmm-round29-tungsten-waste-research",
+        "/private/tmp/cmm-round29-zinc-ore-research",
+        "/private/tmp/cmm-round3-cadmium-evidence-20261011",
+        "/private/tmp/cmm-round3-chromium-evidence-20261011",
+        "/private/tmp/cmm-round3-platinum-evidence-20261011",
+        "/private/tmp/cmm-round3-selenium-evidence-20261011",
+        "/private/tmp/cmm-round30-basalt-research",
+        "/private/tmp/cmm-round30-chromite-research",
+        "/private/tmp/cmm-round30-pyrrhotite-research",
+        "/private/tmp/cmm-round30-tungsten-research",
+        "/private/tmp/cmm-round31-chromite-tailings-research",
+        "/private/tmp/cmm-round31-ilmenite-research",
+        "/private/tmp/cmm-round31-kaolin-research",
+        "/private/tmp/cmm-round31-kaolin-waste-research",
+        "/private/tmp/cmm-round31-stibnite-research",
+        "/private/tmp/cmm-round31-tungsten-research",
+        "/private/tmp/cmm-round32-arsenopyrite-research",
+        "/private/tmp/cmm-round32-bornite-research",
+        "/private/tmp/cmm-round32-chromitite-research",
+        "/private/tmp/cmm-round32-molybdenite-research",
+        "/private/tmp/cmm-round33-chalcocite-research",
+        "/private/tmp/cmm-round33-covellite-research",
+        "/private/tmp/cmm-round33-molybdenite-research",
+        "/private/tmp/cmm-round33-pyrite-research",
+        "/private/tmp/cmm-round34-galena-research",
+        "/private/tmp/cmm-round34-greigite-research",
+        "/private/tmp/cmm-round34-mackinawite-research",
+        "/private/tmp/cmm-round34-uraninite-research",
+        "/private/tmp/cmm-round35-anglesite-research",
+        "/private/tmp/cmm-round35-jarosite-research",
+        "/private/tmp/cmm-round35-ningyoite-research",
+        "/private/tmp/cmm-round35-schwertmannite-research",
+        "/private/tmp/cmm-round36-autunite-research",
+        "/private/tmp/cmm-round36-moolooite-research",
+        "/private/tmp/cmm-round36-uramphite-research",
+        "/private/tmp/cmm-round37-falottaite-research",
+        "/private/tmp/cmm-round37-humboldtine-research",
+        "/private/tmp/cmm-round37-lindbergite-research",
+        "/private/tmp/cmm-round37-rhabdophane-research",
+        "/private/tmp/cmm-round38-hausmannite-research",
+        "/private/tmp/cmm-round38-katsarosite-research",
+        "/private/tmp/cmm-round38-mimetite-research",
+        "/private/tmp/cmm-round38-vanadinite-research",
+        "/private/tmp/cmm-round39-brownrot-research",
+        "/private/tmp/cmm-round39-ree-phosphate-research",
+        "/private/tmp/cmm-round39-vanadinite-research",
+        "/private/tmp/cmm-round39-wei-manganese-research",
+        "/private/tmp/cmm-round4-antimony-evidence-20261011",
+        "/private/tmp/cmm-round4-phosphorus-cerium-evidence-20261011",
+        "/private/tmp/cmm-round40-birnessite-research",
+        "/private/tmp/cmm-round40-cobalt-manganese-oxide-research",
+        "/private/tmp/cmm-round40-manganese-ore-oxalates-research",
+        "/private/tmp/cmm-round40-samarium-phosphate-research",
+        "/private/tmp/cmm-round41-biogenic-birnessite-research",
+        "/private/tmp/cmm-round41-cobalt-birnessite-research",
+        "/private/tmp/cmm-round41-lateritic-cobalt-research",
+        "/private/tmp/cmm-round41-manganese-minerals-research",
+        "/private/tmp/cmm-round42-biogenic-selectivity-research",
+        "/private/tmp/cmm-round42-hardmetal-research",
+        "/private/tmp/cmm-round42-lithium-minerals-research",
+        "/private/tmp/cmm-round42-theisen-research",
+        "/private/tmp/cmm-round5-iron-evidence-20261011",
+        "/private/tmp/cmm-round5-magnesium-evidence-20261011",
+        "/private/tmp/cmm-round6-aluminium-evidence",
+        "/private/tmp/cmm-round6-indium-evidence-20261011",
+        "/private/tmp/cmm-round7-ho-er-gd-raw",
+        "/private/tmp/cmm-round7-terbium-raw",
+        "/private/tmp/cmm-round8-pb-bi-evidence",
+        "/private/tmp/cmm-round8-sc-pr-raw",
+        "/private/tmp/cmm-round8-y-yb-evidence",
+        "/private/tmp/cmm-round9-cs-sr-raw",
+        "/private/tmp/cmm-round9-graphite-evidence",
+        "/private/tmp/cmm-round9-ru-rh-raw",
+        "/private/tmp/cmm-round9-si-sn-raw",
+        "/private/tmp/cmmmech-integration-evidence",
+        "/private/tmp/cmmmech-nickel-evidence-20261011",
+        "/private/tmp/cmmmech-round5-ree-raw",
+        "/private/tmp/cmmmech-round6-mo-w-raw",
+        "/private/tmp/cmmmech-tellurium-evidence-20261011"
+      ],
+      [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-n",
+        "-i",
+        "^id: cmmmech:.*(coal|germanium|ash)",
+        "/private/tmp/CMMMech-expansion-round43-20261012/data/records"
+      ]
+    ],
+    "exit_codes": [
+      0,
+      0,
+      0
+    ],
+    "corpus_roots": [
+      "/private/tmp/CMMMech-expansion-round43-20261012/data/records",
+      "/private/tmp/CMMMech-expansion-round43-20261012/research",
+      "/private/tmp/CMMMech-expansion-round43-20261012/reviews",
+      "/private/tmp/CMMMech-expansion-round43-20261012/history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history"
+    ],
+    "metadata_files_read": 3324,
+    "referenced_raw_roots": [
+      "/private/tmp/cmm-round10-b-f-raw",
+      "/private/tmp/cmm-round10-graphite-raw",
+      "/private/tmp/cmm-round10-nb-ta-raw",
+      "/private/tmp/cmm-round10-ti-zr-raw",
+      "/private/tmp/cmm-round11-be-rb-re-raw",
+      "/private/tmp/cmm-round11-he-raw",
+      "/private/tmp/cmm-round11-ir-os-hf-raw",
+      "/private/tmp/cmm-round11-lu-tm-pm-raw",
+      "/private/tmp/cmm-round12-aluminium-boron-raw",
+      "/private/tmp/cmm-round12-carbon-metals-raw",
+      "/private/tmp/cmm-round12-groups-raw",
+      "/private/tmp/cmm-round12-industrial-minerals-raw",
+      "/private/tmp/cmm-round13-grade-raw",
+      "/private/tmp/cmm-round13-mineral-raw",
+      "/private/tmp/cmm-round13-secondary-raw",
+      "/private/tmp/cmm-round14-magnet-raw",
+      "/private/tmp/cmm-round14-mineral-raw",
+      "/private/tmp/cmm-round14-product-raw",
+      "/private/tmp/cmm-round14-secondary-raw",
+      "/private/tmp/cmm-round15-brine-raw",
+      "/private/tmp/cmm-round15-mineral-raw",
+      "/private/tmp/cmm-round16-produced-water-raw",
+      "/private/tmp/cmm-round16-silicate-raw",
+      "/private/tmp/cmm-round16-vivianite-raw",
+      "/private/tmp/cmm-round17-biotite-raw",
+      "/private/tmp/cmm-round17-enstatite-raw",
+      "/private/tmp/cmm-round17-saline-raw",
+      "/private/tmp/cmm-round18-catalyst-raw",
+      "/private/tmp/cmm-round18-dunite-raw",
+      "/private/tmp/cmm-round18-mineral-feeds-raw",
+      "/private/tmp/cmm-round18-products-raw",
+      "/private/tmp/cmm-round19-hydrogenation-catalyst-raw",
+      "/private/tmp/cmm-round19-iron-manganese-raw",
+      "/private/tmp/cmm-round19-manganese-residue-raw",
+      "/private/tmp/cmm-round19-tailings-raw",
+      "/private/tmp/cmm-round2-selenium-evidence-20261011",
+      "/private/tmp/cmm-round20-goethite-raw",
+      "/private/tmp/cmm-round20-laterite-raw",
+      "/private/tmp/cmm-round20-mafic-tailings-raw",
+      "/private/tmp/cmm-round20-nodule-raw",
+      "/private/tmp/cmm-round21-crusts-raw",
+      "/private/tmp/cmm-round21-pcb-raw",
+      "/private/tmp/cmm-round21-ree-mud-raw",
+      "/private/tmp/cmm-round22-concretions-raw",
+      "/private/tmp/cmm-round22-pcb-raw",
+      "/private/tmp/cmm-round22-pv-raw",
+      "/private/tmp/cmm-round22-sulfides-raw",
+      "/private/tmp/cmm-round23-crusts-raw",
+      "/private/tmp/cmm-round23-ghiorse-raw",
+      "/private/tmp/cmm-round23-identity-gaps-raw",
+      "/private/tmp/cmm-round23-lcd-raw",
+      "/private/tmp/cmm-round23-rey-mud-raw",
+      "/private/tmp/cmm-round24-copper-slag-raw",
+      "/private/tmp/cmm-round24-frontier-raw",
+      "/private/tmp/cmm-round24-nimh-raw",
+      "/private/tmp/cmm-round24-sulfuric-raw",
+      "/private/tmp/cmm-round25-bf-dust-raw",
+      "/private/tmp/cmm-round25-button-raw",
+      "/private/tmp/cmm-round25-frontier-raw",
+      "/private/tmp/cmm-round25-oil-ash-raw",
+      "/private/tmp/cmm-round26-eaf-dust-raw",
+      "/private/tmp/cmm-round26-packaging-raw",
+      "/private/tmp/cmm-round26-root-raw",
+      "/private/tmp/cmm-round26-superalloy-raw",
+      "/private/tmp/cmm-round27-eaf-slag-raw",
+      "/private/tmp/cmm-round27-goethite-raw",
+      "/private/tmp/cmm-round27-packaging-raw",
+      "/private/tmp/cmm-round27-root-raw",
+      "/private/tmp/cmm-round27-superalloy-raw",
+      "/private/tmp/cmm-round28-black-shale-research",
+      "/private/tmp/cmm-round28-goethite-research",
+      "/private/tmp/cmm-round28-tatra-research",
+      "/private/tmp/cmm-round28-tire-research",
+      "/private/tmp/cmm-round29-bastnaesite-research",
+      "/private/tmp/cmm-round29-ilmenite-research",
+      "/private/tmp/cmm-round29-tungsten-waste-research",
+      "/private/tmp/cmm-round29-zinc-ore-research",
+      "/private/tmp/cmm-round3-cadmium-evidence-20261011",
+      "/private/tmp/cmm-round3-chromium-evidence-20261011",
+      "/private/tmp/cmm-round3-platinum-evidence-20261011",
+      "/private/tmp/cmm-round3-selenium-evidence-20261011",
+      "/private/tmp/cmm-round30-basalt-research",
+      "/private/tmp/cmm-round30-chromite-research",
+      "/private/tmp/cmm-round30-pyrrhotite-research",
+      "/private/tmp/cmm-round30-tungsten-research",
+      "/private/tmp/cmm-round31-chromite-tailings-research",
+      "/private/tmp/cmm-round31-ilmenite-research",
+      "/private/tmp/cmm-round31-kaolin-research",
+      "/private/tmp/cmm-round31-kaolin-waste-research",
+      "/private/tmp/cmm-round31-stibnite-research",
+      "/private/tmp/cmm-round31-tungsten-research",
+      "/private/tmp/cmm-round32-arsenopyrite-research",
+      "/private/tmp/cmm-round32-bornite-research",
+      "/private/tmp/cmm-round32-chromitite-research",
+      "/private/tmp/cmm-round32-molybdenite-research",
+      "/private/tmp/cmm-round33-chalcocite-research",
+      "/private/tmp/cmm-round33-covellite-research",
+      "/private/tmp/cmm-round33-molybdenite-research",
+      "/private/tmp/cmm-round33-pyrite-research",
+      "/private/tmp/cmm-round34-galena-research",
+      "/private/tmp/cmm-round34-greigite-research",
+      "/private/tmp/cmm-round34-mackinawite-research",
+      "/private/tmp/cmm-round34-uraninite-research",
+      "/private/tmp/cmm-round35-anglesite-research",
+      "/private/tmp/cmm-round35-jarosite-research",
+      "/private/tmp/cmm-round35-ningyoite-research",
+      "/private/tmp/cmm-round35-schwertmannite-research",
+      "/private/tmp/cmm-round36-autunite-research",
+      "/private/tmp/cmm-round36-moolooite-research",
+      "/private/tmp/cmm-round36-uramphite-research",
+      "/private/tmp/cmm-round37-falottaite-research",
+      "/private/tmp/cmm-round37-humboldtine-research",
+      "/private/tmp/cmm-round37-lindbergite-research",
+      "/private/tmp/cmm-round37-rhabdophane-research",
+      "/private/tmp/cmm-round38-hausmannite-research",
+      "/private/tmp/cmm-round38-katsarosite-research",
+      "/private/tmp/cmm-round38-mimetite-research",
+      "/private/tmp/cmm-round38-vanadinite-research",
+      "/private/tmp/cmm-round39-brownrot-research",
+      "/private/tmp/cmm-round39-ree-phosphate-research",
+      "/private/tmp/cmm-round39-vanadinite-research",
+      "/private/tmp/cmm-round39-wei-manganese-research",
+      "/private/tmp/cmm-round4-antimony-evidence-20261011",
+      "/private/tmp/cmm-round4-phosphorus-cerium-evidence-20261011",
+      "/private/tmp/cmm-round40-birnessite-research",
+      "/private/tmp/cmm-round40-cobalt-manganese-oxide-research",
+      "/private/tmp/cmm-round40-manganese-ore-oxalates-research",
+      "/private/tmp/cmm-round40-samarium-phosphate-research",
+      "/private/tmp/cmm-round41-biogenic-birnessite-research",
+      "/private/tmp/cmm-round41-cobalt-birnessite-research",
+      "/private/tmp/cmm-round41-lateritic-cobalt-research",
+      "/private/tmp/cmm-round41-manganese-minerals-research",
+      "/private/tmp/cmm-round42-biogenic-selectivity-research",
+      "/private/tmp/cmm-round42-hardmetal-research",
+      "/private/tmp/cmm-round42-lithium-minerals-research",
+      "/private/tmp/cmm-round42-theisen-research",
+      "/private/tmp/cmm-round5-iron-evidence-20261011",
+      "/private/tmp/cmm-round5-magnesium-evidence-20261011",
+      "/private/tmp/cmm-round6-aluminium-evidence",
+      "/private/tmp/cmm-round6-indium-evidence-20261011",
+      "/private/tmp/cmm-round7-ho-er-gd-raw",
+      "/private/tmp/cmm-round7-terbium-raw",
+      "/private/tmp/cmm-round8-pb-bi-evidence",
+      "/private/tmp/cmm-round8-sc-pr-raw",
+      "/private/tmp/cmm-round8-y-yb-evidence",
+      "/private/tmp/cmm-round9-cs-sr-raw",
+      "/private/tmp/cmm-round9-graphite-evidence",
+      "/private/tmp/cmm-round9-ru-rh-raw",
+      "/private/tmp/cmm-round9-si-sn-raw",
+      "/private/tmp/cmmmech-integration-evidence",
+      "/private/tmp/cmmmech-nickel-evidence-20261011",
+      "/private/tmp/cmmmech-round5-ree-raw",
+      "/private/tmp/cmmmech-round6-mo-w-raw",
+      "/private/tmp/cmmmech-tellurium-evidence-20261011"
+    ],
+    "missing_referenced_roots": [
+      "/private/tmp/cmm-round15-phosphate-raw",
+      "/private/tmp/cmm-round17-catalyst-raw",
+      "/private/tmp/cmm-round17-secondary-raw",
+      "/private/tmp/cmm-round26-bof-prior-raw",
+      "/private/tmp/cmm-round26-eaf-dust-dedup-raw",
+      "/private/tmp/cmm-round32-chromitite-raw",
+      "/private/tmp/cmm-round5-magnesium-raw",
+      "/private/tmp/cmm-round6-eu-sm-tb-raw",
+      "/private/tmp/cmm-round6-indium-raw"
+    ],
+    "read_errors": [],
+    "hidden_ignored_included": true,
+    "relevant_symlinks_followed": true,
+    "scope": "Both specified checkouts: records, research, reviews, history; all existing raw/research/evidence directories referenced by their textual artifacts, with cycle-aware path discovery. Text-bearing extensions only; no claim to decode every binary PDF/image/archive or to search unrelated machine directories.",
+    "corpus_hit_lines": 2,
+    "raw_hit_lines": 125,
+    "raw_roots_count": 154,
+    "errors": [
+      "",
+      "",
+      ""
+    ],
+    "owner_matches": "/private/tmp/CMMMech-expansion-round43-20261012/data/records/sewage-sludge-incineration-ash.yaml:1:id: cmmmech:sewage-sludge-incineration-ash\n/private/tmp/CMMMech-expansion-round43-20261012/data/records/coking-coal.yaml:1:id: cmmmech:coking-coal\n/private/tmp/CMMMech-expansion-round43-20261012/data/records/coal-mine-drainage-treatment-solids.yaml:1:id: cmmmech:coal-mine-drainage-treatment-solids\n/private/tmp/CMMMech-expansion-round43-20261012/data/records/metallurgical-coal.yaml:1:id: cmmmech:metallurgical-coal\n/private/tmp/CMMMech-expansion-round43-20261012/data/records/municipal-waste-incineration-ash.yaml:1:id: cmmmech:municipal-waste-incineration-ash\n/private/tmp/CMMMech-expansion-round43-20261012/data/records/heavy-fuel-oil-combustion-ash.yaml:1:id: cmmmech:heavy-fuel-oil-combustion-ash\n/private/tmp/CMMMech-expansion-round43-20261012/data/records/coal-fly-ash.yaml:1:id: cmmmech:coal-fly-ash\n/private/tmp/CMMMech-expansion-round43-20261012/data/records/potash.yaml:1:id: cmmmech:potash\n/private/tmp/CMMMech-expansion-round43-20261012/data/records/germanium.yaml:1:id: cmmmech:germanium\n"
+  },
+  "exact_dedup_receipt": "/private/tmp/cmm-round43-germanium-resources-research/dedup-specific.json",
+  "evidence_matrix_from_final_record": "See record mechanism context/evidence and paired Markdown; all values remain prose because these are not bulk quantitative concentration imports.",
+  "named_validation": {
+    "command": "uv run --locked cmmmech validate data/records/coal-beneficiation-waste.yaml",
+    "exit_code": 0,
+    "log": "/private/tmp/cmm-round43-germanium-resources-research/named-validation.log",
+    "log_sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e"
+  },
+  "baseline": {
+    "scope": "exact-base reuse, not new execution",
+    "initialization_receipt": "/private/tmp/cmm-round43-initialization.json",
+    "initialization_sha256": "c2b118a54ce51a4636d267dc147f97d761cf59bf7d6f9b8795517a5e11106a13",
+    "reused_gate": "/private/tmp/cmm-round42-postmerge-20261012-published-terminal.json",
+    "reused_gate_sha256": "dd80cddd7bbf18f1f96a1b0cb2a96b7cf39e0bfe2939e5f294a7c2a01f97a323"
+  },
+  "raw_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/acquire.py",
+      "sha256": "b554a3681840a6f92ba970107d42a7f6d28c2fc866f20ed4daff7837531ea607",
+      "bytes": 1439,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/acquire2.py",
+      "sha256": "d408b83f6d0a6453a684e6d340ea1418dfdfa03581424d2d4eef2d684aa5b934",
+      "bytes": 1543,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/acquire3.py",
+      "sha256": "000de4da8e06e3ad6beccfa26bcc5d5446c2f7473211fe3cf95bdd642d6f5b48",
+      "bytes": 1615,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/acquire4.py",
+      "sha256": "08ea4c72ac52f78cdb9a1bb2819b30a4da338d5570402290e5c2e80bd5f5ad41",
+      "bytes": 1006,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/dedup-corpus-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/dedup-corpus.txt",
+      "sha256": "27af110f8b13ce5dc63dba6cad172df81ddb6792e8b0fbf7eb015b870b5b7f11",
+      "bytes": 329,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/dedup-owners.txt",
+      "sha256": "2cad978e09d59ccf5b9d8a017034596c41820ee56bdfff9f033766aa337de77f",
+      "bytes": 1102,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/dedup-raw-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/dedup-raw.txt",
+      "sha256": "7881bb75a0dc0c6c0ad3193f350c4781d00ce233fa25560ce8945cba3bb53c72",
+      "bytes": 9861419,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/dedup-receipt.json",
+      "sha256": "f58ffa1d1c06dd7bca935d6b959c1070f1fc917e5c2510245d539f89ac78b29b",
+      "bytes": 20144,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/dedup-specific.json",
+      "sha256": "b7450d10090e3fe1da34b06eb19887926b7fbb6f2e479856b62f35f8a1d89923",
+      "bytes": 8690,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/dedup-specific.txt",
+      "sha256": "0fa5ffeb97690719491af53730bcd533d7dae292d21e1dd1de2950eeb9bc9771",
+      "bytes": 32730,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/dedup.py",
+      "sha256": "8400be337ae3bfa160d361e8da3b4e037a1e46158407debe55f88253710986c4",
+      "bytes": 3332,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/named-validation.log",
+      "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e",
+      "bytes": 31,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/acquisition-1.json",
+      "sha256": "752ef2320ab9722fb7324a6a452ba6885d6d554400e65be7db3826581d8e8732",
+      "bytes": 3270,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/acquisition-2.json",
+      "sha256": "740319c4b43d37f8ed70a67fd7bc08dac998210ef649ef8f32169283897e4c70",
+      "bytes": 3329,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/acquisition-3.json",
+      "sha256": "eed20fec01be840eef041bbc84bc6d74a1132ce7379d4df6007785ea39616878",
+      "bytes": 3897,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/acquisition-4.json",
+      "sha256": "d467998a2bdb0f68e4e05bf8bbf1dffdd606a363e1231211aa19f09d98989417",
+      "bytes": 674,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/blayda2012/page-01.png",
+      "sha256": "5410faf59ccc467a288d8923a2145b537b172aa88e938e04ee633b0a4624a518",
+      "bytes": 3825,
+      "role": "html_shell_render_not_evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/blayda2012-bundles.json",
+      "sha256": "bbd7215716592a9f317ea363f9b37327836d76b7c53cda1f75d5619b505334f3",
+      "bytes": 4194,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/blayda2012-handle.json",
+      "sha256": "1dad117d50348816adc4672f54b40a3e6f6efb263fb7dce86d4eb73162dd139b",
+      "bytes": 15649,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/blayda2012-original-bitstreams.json",
+      "sha256": "ca0c323e176e0ba532f26ec535195ad8af6b63aba41b66926508c27e1cfe82ce",
+      "bytes": 2063,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/blayda2012-primary/page-01.png",
+      "sha256": "1a00dc8da04b728ec18f82c15504a067d255f344809bdfedc06f20527a080d0f",
+      "bytes": 319095,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/blayda2012-primary/page-02.png",
+      "sha256": "cdfb80c3481f77f463feed87cff58527da69829000135a13e01475385c16f021",
+      "bytes": 502442,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/blayda2012-primary/page-03.png",
+      "sha256": "3d201113ad855c8c8fee416f279159eda4c36130167dab139cce2a697dcac7c9",
+      "bytes": 434323,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/blayda2012-primary/page-04.png",
+      "sha256": "779c6a76c147c41ebc0dc7bf50b6a3c3860382a1875e5ece9339b62d86048b6b",
+      "bytes": 426110,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/blayda2012-primary/page-05.png",
+      "sha256": "b542f2a0da0f1b2c29026d9c794fcc40a1f4024112ab02a4a4eb018683bbf0cb",
+      "bytes": 472568,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/blayda2012-primary/page-06.png",
+      "sha256": "dfb0da810660d0b94786dac1da6904d0468af14c6e741eeb7d95534a4d4dc673",
+      "bytes": 482132,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/blayda2012-primary/page-07.png",
+      "sha256": "5b1db437625a52c446fde949505cbc6c4b8373497ca3647a211f3732b21d9dbe",
+      "bytes": 265565,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/blayda2012-primary.pdf",
+      "sha256": "d00048bcf19a3e8e567dccbfdd8020facd3d1d4d1d2f4cfe9dcda80fea8e45be",
+      "bytes": 501520,
+      "role": "complete_primary_pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/blayda2012-primary.txt",
+      "sha256": "fb540f45542ccfc2b2d29797da11d8a615f6888ccf4422770033e49b60b229a4",
+      "bytes": 43769,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/blayda2012.pdf",
+      "sha256": "dcd13c0c07f3ae6c065aea780ea3f378d235b804a5a61cf8b884346f6401ca94",
+      "bytes": 724,
+      "role": "html_shell_or_derivative_not_primary_evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/blayda2012.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "html_shell_or_derivative_not_primary_evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/dzhambek2019-bundles.json",
+      "sha256": "52f8f05400a3124ecc4988e69c59b1d669375de64d55cd9ab6cd617394d555e9",
+      "bytes": 4194,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/dzhambek2019-crossref.json",
+      "sha256": "52a328e6a18163f36e429feb03fa1486e51f5df59ee891c9c767bf1ed1f61244",
+      "bytes": 2156,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/dzhambek2019-original-bitstreams.json",
+      "sha256": "479c7a5791e73d0bb07d6afb1ecc2c4e52f1b5cd9f822b38914632cca0e27ca9",
+      "bytes": 2063,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/dzhambek2019-primary/page-01.png",
+      "sha256": "253d56ab11694724fe0a1c88a6c49c824362b4df8fc2afba8515f61f908e9fe3",
+      "bytes": 202322,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/dzhambek2019-primary/page-02.png",
+      "sha256": "4c2c37a425393e10c750e81566fd9dff57a102a4862257cbdad1acf6f6046c3f",
+      "bytes": 204320,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/dzhambek2019-primary/page-03.png",
+      "sha256": "ac02cf53de66410a09249b600fbb2bc0b85f606fb67af107edd933cf029ef9db",
+      "bytes": 155099,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/dzhambek2019-primary/page-04.png",
+      "sha256": "e856203a0d2c39db5ae90e98f2915dd4210a944e1b892b0c6c3cb1d1440dcb39",
+      "bytes": 223276,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/dzhambek2019-primary/page-05.png",
+      "sha256": "d722b9d916a28232cedd4f9287bfb002347c596a999cd579acc8350380a0d25b",
+      "bytes": 216429,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/dzhambek2019-primary/page-06.png",
+      "sha256": "5983b1c1aacfd8e2805e113c198d1ad3aabe117816b6a574bc64bff52fdedc3a",
+      "bytes": 227496,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/dzhambek2019-primary.pdf",
+      "sha256": "00b135ea38d951583a9c5def549fda49aac74332977e412fc8d2e66f860c45e8",
+      "bytes": 338737,
+      "role": "complete_primary_pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/dzhambek2019-primary.txt",
+      "sha256": "b2982a0ad4a6d8c7645b6c1691f73bf9f34c4dde2b7f048efb725236b4352f3d",
+      "bytes": 29172,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/lead-bundles.json",
+      "sha256": "52f8f05400a3124ecc4988e69c59b1d669375de64d55cd9ab6cd617394d555e9",
+      "bytes": 4194,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/lead-item-api.json",
+      "sha256": "4d5fe6490909b55d028fab5fc370762fba3775436bdc2da1a5c09665c268fb8d",
+      "bytes": 13155,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/lead-item.html",
+      "sha256": "dcd13c0c07f3ae6c065aea780ea3f378d235b804a5a61cf8b884346f6401ca94",
+      "bytes": 724,
+      "role": "html_shell_or_derivative_not_primary_evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/rendered-pages.json",
+      "sha256": "e712e60b9753dfb196225810d6e932d9d7660a4342839d8a97d1f72a9c08337c",
+      "bytes": 377,
+      "role": "html_shell_or_derivative_not_primary_evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016/page-01.png",
+      "sha256": "5410faf59ccc467a288d8923a2145b537b172aa88e938e04ee633b0a4624a518",
+      "bytes": 3825,
+      "role": "html_shell_render_not_evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-crossref.json",
+      "sha256": "9a0bf6a6a319144056d355eb2a74469494394856aaa84bab78e59ad723562849",
+      "bytes": 2421,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-primary/page-01.png",
+      "sha256": "05507829807af8e8dc419afb8c3f85c785cdba357113e06b2fdfef905c3085ad",
+      "bytes": 205799,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-primary/page-02.png",
+      "sha256": "10b8837647bedf762c9edb6dc745927009e61d10cff76b5ee9674b37c197250d",
+      "bytes": 229685,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-primary/page-03.png",
+      "sha256": "79a7272d91368e37ed5467b1b87e32b158e19d6c05df87155dce00322678db45",
+      "bytes": 240170,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-primary/page-04.png",
+      "sha256": "0784e458f8a860fc73367269eb4879760becc17957b4df92e2b87e2ce96b1c67",
+      "bytes": 137207,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-primary/page-05.png",
+      "sha256": "ebbe5cc420660bf6e689353df199152cc8f1bd756c7b75d47161e25195213bf9",
+      "bytes": 212636,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-primary/page-06.png",
+      "sha256": "84dd7f08e2f2ad575f404014c7e79f27780542a444689e15fedd617029f78260",
+      "bytes": 187296,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-primary/page-07.png",
+      "sha256": "f991b6897537aa59c046524343c105223eb9d6892623537a23977a3b926fd106",
+      "bytes": 114998,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-primary/page-08.png",
+      "sha256": "439fe335f5aed85ca5fd94613f844c32ccc79ed51ed503af4ab64ed11bca5b70",
+      "bytes": 253003,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-primary/page-09.png",
+      "sha256": "8feefe47250ad447c08bf26cf143351d27160bf385846bef81a031adaada3f32",
+      "bytes": 189704,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-primary/page-10.png",
+      "sha256": "b11a9142fd3a7e8490c42c009be0916977511ca2c88440ef7531c72e69670f28",
+      "bytes": 206100,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-primary/page-11.png",
+      "sha256": "74da87efcfef18bd11671396ab5917614d8b9d92561dec47e2d40ee85da24db8",
+      "bytes": 214668,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-primary/page-12.png",
+      "sha256": "134d4ae87f24a64482daeda51497bc74b4043f6ac7a2d988de497593b5546b77",
+      "bytes": 238535,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-primary/page-13.png",
+      "sha256": "104045d486b7fbc17b243c17e6e74f5cc0c0916b689fdbc86b7b81875567e067",
+      "bytes": 235014,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-primary/page-14.png",
+      "sha256": "2f59e20e21de51177a5bcbfaed645cf1a6db21470d6bb50ddaa92329feea5a99",
+      "bytes": 123002,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-primary.pdf",
+      "sha256": "160e68a4d73a2bd96b8385a7c941b5e04142d4ad7f83d731bdf1dbceff8f4e89",
+      "bytes": 595165,
+      "role": "complete_primary_pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-primary.txt",
+      "sha256": "4369c4233c85932796aa7a6b1c1f7e58495c8a94773a9f49c86fcf4c1e5689a7",
+      "bytes": 53696,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-publisher/page-01.png",
+      "sha256": "05507829807af8e8dc419afb8c3f85c785cdba357113e06b2fdfef905c3085ad",
+      "bytes": 205799,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-publisher/page-02.png",
+      "sha256": "10b8837647bedf762c9edb6dc745927009e61d10cff76b5ee9674b37c197250d",
+      "bytes": 229685,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-publisher/page-03.png",
+      "sha256": "79a7272d91368e37ed5467b1b87e32b158e19d6c05df87155dce00322678db45",
+      "bytes": 240170,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-publisher/page-04.png",
+      "sha256": "0784e458f8a860fc73367269eb4879760becc17957b4df92e2b87e2ce96b1c67",
+      "bytes": 137207,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-publisher/page-05.png",
+      "sha256": "ebbe5cc420660bf6e689353df199152cc8f1bd756c7b75d47161e25195213bf9",
+      "bytes": 212636,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-publisher/page-06.png",
+      "sha256": "84dd7f08e2f2ad575f404014c7e79f27780542a444689e15fedd617029f78260",
+      "bytes": 187296,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-publisher/page-07.png",
+      "sha256": "f991b6897537aa59c046524343c105223eb9d6892623537a23977a3b926fd106",
+      "bytes": 114998,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-publisher/page-08.png",
+      "sha256": "439fe335f5aed85ca5fd94613f844c32ccc79ed51ed503af4ab64ed11bca5b70",
+      "bytes": 253003,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-publisher/page-09.png",
+      "sha256": "8feefe47250ad447c08bf26cf143351d27160bf385846bef81a031adaada3f32",
+      "bytes": 189704,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-publisher/page-10.png",
+      "sha256": "b11a9142fd3a7e8490c42c009be0916977511ca2c88440ef7531c72e69670f28",
+      "bytes": 206100,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-publisher/page-11.png",
+      "sha256": "74da87efcfef18bd11671396ab5917614d8b9d92561dec47e2d40ee85da24db8",
+      "bytes": 214668,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-publisher/page-12.png",
+      "sha256": "134d4ae87f24a64482daeda51497bc74b4043f6ac7a2d988de497593b5546b77",
+      "bytes": 238535,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-publisher/page-13.png",
+      "sha256": "104045d486b7fbc17b243c17e6e74f5cc0c0916b689fdbc86b7b81875567e067",
+      "bytes": 235014,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-publisher/page-14.png",
+      "sha256": "2f59e20e21de51177a5bcbfaed645cf1a6db21470d6bb50ddaa92329feea5a99",
+      "bytes": 123002,
+      "role": "primary_page_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-publisher.html",
+      "sha256": "03732ecb7e8ba4fe10d63fbeb716ebd38e17fc79c98b345f2b4d24099ecab2ad",
+      "bytes": 37613,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-publisher.pdf",
+      "sha256": "5b90989ac7438d83aecb488c63c3ca94c3583864ec10da6d23343ec1dad9036a",
+      "bytes": 599868,
+      "role": "complete_primary_pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-publisher.txt",
+      "sha256": "4369c4233c85932796aa7a6b1c1f7e58495c8a94773a9f49c86fcf4c1e5689a7",
+      "bytes": 53696,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016-version-comparison.json",
+      "sha256": "7c33a26cace9ebaf71ce197912476b0c8f9c0b471052ee88708781cd23dd3231",
+      "bytes": 1376,
+      "role": "acquisition_or_analysis_receipt"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016.pdf",
+      "sha256": "dcd13c0c07f3ae6c065aea780ea3f378d235b804a5a61cf8b884346f6401ca94",
+      "bytes": 724,
+      "role": "html_shell_or_derivative_not_primary_evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round43-germanium-resources-research/raw/vasyleva2016.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "html_shell_or_derivative_not_primary_evidence"
+    }
+  ],
+  "limitations": [
+    "No sterile matched biological advantage established",
+    "Unknown native taxon/strain",
+    "No inherited criticality",
+    "No isolated product or industrial deployment",
+    "2019 microbial causality unverified",
+    "Nine referenced historical raw roots unavailable; no machine-wide absence claim"
+  ],
+  "full_batch_and_independent_review": "parent/reviewer pending at handoff; no pass attestation"
+}

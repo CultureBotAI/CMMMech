@@ -1,0 +1,469 @@
+{
+  "recorded_at": "2026-10-12T02:54:32.859182+00:00",
+  "base": "59e24ec38d9c7b377dcfeade1637b298aab9623e",
+  "branch": "curate/cmm-expansion-round43-20261012",
+  "counts": {
+    "record_count": 220,
+    "history_count": 259,
+    "structured_review_count": 263,
+    "review_base_count": 44,
+    "covered_records": 220
+  },
+  "record_actions": {
+    "coal-beneficiation-waste": "CREATE",
+    "germanite": "CREATE",
+    "lithium-mica-ore": "CREATE",
+    "renierite": "CREATE",
+    "titanium-metal": "EDIT"
+  },
+  "records": [
+    {
+      "slug": "coal-beneficiation-waste",
+      "action": "CREATE",
+      "record": "data/records/coal-beneficiation-waste.yaml",
+      "record_sha256": "ec4251fdebda1cfe7d83378fdade66f560a2b4445a78b1725e63ebeefe9d669f",
+      "histories": [
+        {
+          "path": "history/records/coal-beneficiation-waste/2026-10-12T023644Z-codex-ef668b.yaml",
+          "sha256": "b1ebae42277506d336b2e573d01427b50550f66dfcfcf97c6477ea02f37076c7"
+        },
+        {
+          "path": "history/records/coal-beneficiation-waste/2026-10-12T024545Z-codex-a1785a.yaml",
+          "sha256": "88a77ed35fec0f95f4abf6ca53e55788368ddd041c5ed0d3cee156f1f2477a2a"
+        }
+      ],
+      "review": "reviews/structured/20261012T025133Z-coal-beneficiation-waste-round43-resolution/review.yaml",
+      "review_md": "reviews/structured/20261012T025133Z-coal-beneficiation-waste-round43-resolution/review.md",
+      "review_sha256": "dcc454754f219b3d0f1a4ba96f582962907fb087d5f3d478814156cbbc4039fc",
+      "review_md_sha256": "e5b3d88f1564672121f509b3114e5f167db234a490a9f76d555f708954613e27",
+      "reviewer": {
+        "identity": "Codex /root/round27_superalloy",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Record/history/dossier authored by /root/round27_packaging. Reviewer authored lithium-mica-ore in this cohort, not this record. Native inspect preceded judgment. Curator-acquired primary originals were independently read; complete original seven-page 2012 and fourteen-page 2016 articles and all their figures/tables inspected. Shared worktree and acquisition disclosed. Successor re-inspected corrected target before judgment and independently reconstructed initial bytes; did not edit maintained scientific content."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [
+        {
+          "finding_id": "F1",
+          "issue_key": "CMMMech.coal-beneficiation-waste.figure-assay-scope",
+          "category": "evidence",
+          "severity": "minor",
+          "status": "resolved",
+          "certainty": "confirmed",
+          "title": "Assign only Figures 1 and 3 to the wheat assay",
+          "description": "The first mechanism evidence[2] assigns Figures1\u20133 to the separate three-day wheat germination assay. Original2012 Figure2 instead displays metal concentrations before and after bacterial leaching, while Figures1 and3 show germination. Correct the locator to Figures1 and3, preserving the separation of the three-day assay from unspecified leaching duration.",
+          "target_ids": [
+            "cmmmech:coal-beneficiation-waste"
+          ],
+          "field_paths": [
+            "mechanisms[id=native_community_associated_acid_leaching].evidence[2].explanation"
+          ],
+          "evidence_ids": [
+            "record",
+            "figure2012",
+            "primary2012",
+            "initial",
+            "delta",
+            "edit",
+            "correction",
+            "gates"
+          ],
+          "rule_id": "primary-source-fidelity",
+          "native_severity": "minor",
+          "normalization_reason": "Bounded source-locator or citation transcription defect; material identity and narrow laboratory leaching observations remain supportable.",
+          "owner_paths": [
+            {
+              "repository": "CultureBotAI/CMMMech",
+              "path": "data/records/coal-beneficiation-waste.yaml",
+              "role": "maintained_record"
+            }
+          ],
+          "disposition_reason": "Original2012 figures/author headers independently checked; corrected record now matches those locators. Exact reverse reconstruction verifies only two phrases plus provenance changed. Canonical EDIT and correction dossier link143; named and full corrected-state gates pass.",
+          "previous_occurrences": [
+            {
+              "repository": "CultureBotAI/CMMMech",
+              "review_id": "20261012T024442Z-coal-beneficiation-waste-round43-initial",
+              "finding_id": "F1"
+            }
+          ],
+          "external_issues": [
+            "https://github.com/CultureBotAI/CMMMech/issues/143"
+          ]
+        },
+        {
+          "finding_id": "F2",
+          "issue_key": "CMMMech.coal-beneficiation-waste.author-transliteration",
+          "category": "provenance",
+          "severity": "minor",
+          "status": "resolved",
+          "certainty": "confirmed",
+          "title": "Preserve original author spelling Kamskaya",
+          "description": "The2012 citation lists Kamenskaya. Original English page43 prints Kamskaya V.L.; Cyrillic page37 reads \u041a\u0430\u043c\u0441\u043a\u0430\u044f. Correct to Kamskaya or faithful original Cyrillic.",
+          "target_ids": [
+            "cmmmech:coal-beneficiation-waste"
+          ],
+          "field_paths": [
+            "sources[id=blayda2012].title"
+          ],
+          "evidence_ids": [
+            "record",
+            "author2012",
+            "primary2012",
+            "initial",
+            "delta",
+            "edit",
+            "correction",
+            "gates"
+          ],
+          "rule_id": "primary-source-fidelity",
+          "native_severity": "minor",
+          "normalization_reason": "Bounded source-locator or citation transcription defect; material identity and narrow laboratory leaching observations remain supportable.",
+          "owner_paths": [
+            {
+              "repository": "CultureBotAI/CMMMech",
+              "path": "data/records/coal-beneficiation-waste.yaml",
+              "role": "maintained_record"
+            }
+          ],
+          "disposition_reason": "Original2012 figures/author headers independently checked; corrected record now matches those locators. Exact reverse reconstruction verifies only two phrases plus provenance changed. Canonical EDIT and correction dossier link143; named and full corrected-state gates pass.",
+          "previous_occurrences": [
+            {
+              "repository": "CultureBotAI/CMMMech",
+              "review_id": "20261012T024442Z-coal-beneficiation-waste-round43-initial",
+              "finding_id": "F2"
+            }
+          ],
+          "external_issues": [
+            "https://github.com/CultureBotAI/CMMMech/issues/143"
+          ]
+        }
+      ],
+      "dossiers": [
+        {
+          "path": "research/sources/round43-germanium-resources/20261012T024105Z-source-investigation.json",
+          "sha256": "5c09473783ea5940640ba9d65665dd2fd37f2fd93d2611915c555564bb84f1d9"
+        },
+        {
+          "path": "research/sources/round43-germanium-resources/20261012T024105Z-source-investigation.md",
+          "sha256": "8eb2c2448f5b5f318106f96fafb66f6ce5a4accc51e8b1b34ca32eb23bfa27e8"
+        },
+        {
+          "path": "research/sources/round43-germanium-resources/20261012T024546Z-source-fidelity-correction.json",
+          "sha256": "a9539ea58821a4caca78a093f87db1e0d251d1797c7eb1530f589aea14cc26d9"
+        },
+        {
+          "path": "research/sources/round43-germanium-resources/20261012T024546Z-source-fidelity-correction.md",
+          "sha256": "90e5b5d4730b266f9f545c03967b5d4ccd972dcbba3e2d515b93b0c2818802ff"
+        }
+      ]
+    },
+    {
+      "slug": "germanite",
+      "action": "CREATE",
+      "record": "data/records/germanite.yaml",
+      "record_sha256": "7a15d724ccb45945471b744657f8e43e00aec76a37d4a49d8ddb08a35a0fad14",
+      "histories": [
+        {
+          "path": "history/records/germanite/2026-10-12T023451Z-codex-bac8ae.yaml",
+          "sha256": "4064d4559fd27ed2f508925eebff9efbbe79a66f07215fcbf53372e15720db8d"
+        }
+      ],
+      "review": "reviews/structured/20261012T025122Z-germanite-round43-independent/review.yaml",
+      "review_md": "reviews/structured/20261012T025122Z-germanite-round43-independent/review.md",
+      "review_sha256": "bfe03739e5332735c62be8256e32347fa7b637960e05782d6581f3fd15db6df2",
+      "review_md_sha256": "a0d90f52c310cb53b010fa2b984a6ed89995294cb1c4203c12d118d8e109ef22",
+      "reviewer": {
+        "identity": "Codex /root/round43_hardmetal",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Root authored the mineral records, histories and source dossier. This reviewer authored none of those bytes and independently inspected source images/text, refreshed primary downloads, checked nomenclature/scope and validated records. Reviewer curated a separate titanium record in this batch."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [],
+      "dossiers": [
+        {
+          "path": "research/sources/round43-ge-minerals/20261012T023445Z-source-investigation.json",
+          "sha256": "2ea7a4c287e9b9fb1048ec29eb97c6563b961b4c15d2f0422875117ef8f72210"
+        },
+        {
+          "path": "research/sources/round43-ge-minerals/20261012T023445Z-source-investigation.md",
+          "sha256": "df7dd3eef5110d9a5183edd5f0be2452b1f8ecc52b58130457c64bb4d9366f5d"
+        }
+      ]
+    },
+    {
+      "slug": "lithium-mica-ore",
+      "action": "CREATE",
+      "record": "data/records/lithium-mica-ore.yaml",
+      "record_sha256": "5fefc582ad08ec87d3f37fde1c7b3faf26a096adc86492006302e41da8d1c808",
+      "histories": [
+        {
+          "path": "history/records/lithium-mica-ore/2026-10-12T023720Z-codex-9e7491.yaml",
+          "sha256": "136f3aaa105a9ce80427a6895c43124198ee4a038b7622498c7b32210f12cb90"
+        }
+      ],
+      "review": "reviews/structured/20261012T025143Z-lithium-mica-ore-round43-independent/review.yaml",
+      "review_md": "reviews/structured/20261012T025143Z-lithium-mica-ore-round43-independent/review.md",
+      "review_sha256": "755ba29ea745b5706168d37c2800f9802b09d130d067a185d51e98081c77e766",
+      "review_md_sha256": "e70564512a3f8a9088c6e4d9941e38e41ce5bb457deb94611c88f3e93e53d8a2",
+      "reviewer": {
+        "identity": "Codex /root/round27_packaging",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Authored separate coal-beneficiation-waste record and source dossier. Did not author or edit lithium-mica-ore, its history or source dossier. Personally inspected complete original primary/SI graphics, authorities and exact current record before judgment."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [],
+      "dossiers": [
+        {
+          "path": "research/sources/round43-lithium-mixed-feeds/20261012T024004Z-source-investigation.json",
+          "sha256": "1edcc0db4bcd2bfc4d10b2899542bc3fe939e788fd49a95df499f5eb4a8c7613"
+        },
+        {
+          "path": "research/sources/round43-lithium-mixed-feeds/20261012T024004Z-source-investigation.md",
+          "sha256": "e3252e0fbde7635ed8a9b52cffc34759e138c95eb9495095a1a079135644ec0c"
+        }
+      ]
+    },
+    {
+      "slug": "renierite",
+      "action": "CREATE",
+      "record": "data/records/renierite.yaml",
+      "record_sha256": "a1c9a0a102aa07ff9f99dfc7463e9bf2b80fb58af52bbabc533d48604787f58c",
+      "histories": [
+        {
+          "path": "history/records/renierite/2026-10-12T023456Z-codex-602bee.yaml",
+          "sha256": "ba48e5264f506436d695ca09bc1edb1cee134745483ac37f8e7920fcec36db2c"
+        }
+      ],
+      "review": "reviews/structured/20261012T025128Z-renierite-round43-independent/review.yaml",
+      "review_md": "reviews/structured/20261012T025128Z-renierite-round43-independent/review.md",
+      "review_sha256": "7cd3c373074c438af7cdeaaa35717bca32a301e2965abe838da3d73b7629db42",
+      "review_md_sha256": "b473b513fc916004f7d3b3b717174b94b6f34fb2e662d02cfdf043cd946f9ff7",
+      "reviewer": {
+        "identity": "Codex /root/round43_hardmetal",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Root authored the mineral records, histories and source dossier. This reviewer authored none of those bytes and independently inspected source images/text, refreshed primary downloads, checked nomenclature/scope and validated records. Reviewer curated a separate titanium record in this batch."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [],
+      "dossiers": [
+        {
+          "path": "research/sources/round43-ge-minerals/20261012T023445Z-source-investigation.json",
+          "sha256": "2ea7a4c287e9b9fb1048ec29eb97c6563b961b4c15d2f0422875117ef8f72210"
+        },
+        {
+          "path": "research/sources/round43-ge-minerals/20261012T023445Z-source-investigation.md",
+          "sha256": "df7dd3eef5110d9a5183edd5f0be2452b1f8ecc52b58130457c64bb4d9366f5d"
+        }
+      ]
+    },
+    {
+      "slug": "titanium-metal",
+      "action": "EDIT",
+      "record": "data/records/titanium-metal.yaml",
+      "record_sha256": "30e8ba344b68e000b74415cf7345252187af4f9075b4bfe2823257d63aae3e53",
+      "histories": [
+        {
+          "path": "history/records/titanium-metal/2026-10-11T083011Z-codex-5e59d0.yaml",
+          "sha256": "d25b18dde9cdb60509d6b22e326a8cfb0ddff2f8159b5d14fadb1207eb31cb94"
+        },
+        {
+          "path": "history/records/titanium-metal/2026-10-12T023444Z-codex-ff8e43.yaml",
+          "sha256": "75908fd0a32abbaf58ad8e34cc5e79a43a510a9ff175c5d18dcf38faf8629bf4"
+        },
+        {
+          "path": "history/records/titanium-metal/2026-10-12T023836Z-codex-e31d46.yaml",
+          "sha256": "1c96fe599ca722066d6c481e4eda45b81de71df220193096da248482ab33b749"
+        }
+      ],
+      "review": "reviews/structured/20261012T025118Z-titanium-metal-round43-resolution/review.yaml",
+      "review_md": "reviews/structured/20261012T025118Z-titanium-metal-round43-resolution/review.md",
+      "review_sha256": "64c5c180ab1b7413fd2f2955736a2c4dd3d143e78dd9bcaf3dcbca895f791c40",
+      "review_md_sha256": "66c1d0fb32dc2621d48347962484f019a0d5a9987ef2fe530f13a93f7b512040",
+      "reviewer": {
+        "identity": "Codex /root",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "The extension, correction, history and source dossier were authored by /root/round43_hardmetal. Root assigned scope but authored none of their scientific bytes. Root independently read all five original pages before the initial finding, captured corrected native inputs before reassessment, then reread original page134 against final text and history."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [
+        {
+          "title": "Restore the average-grain-size qualifier",
+          "finding_id": "F1",
+          "issue_key": "CMMMech.titanium-metal.average-grain-size",
+          "category": "quantity",
+          "severity": "minor",
+          "status": "resolved",
+          "certainty": "confirmed",
+          "target_ids": [
+            "cmmmech:titanium-metal"
+          ],
+          "field_paths": [
+            "mechanisms/0/evidence/2/explanation"
+          ],
+          "evidence_ids": [
+            "record",
+            "primary",
+            "history"
+          ],
+          "owner_paths": [
+            {
+              "repository": "CultureBotAI/CMMMech",
+              "path": "data/records/titanium-metal.yaml",
+              "role": "maintained_record"
+            }
+          ],
+          "description": "Initial wording omitted average from the source grain-size estimate. Final evidence restores that qualifier and preserves unavailable distribution and source conclusion discrepancy.",
+          "disposition_reason": "Compared corrected exact bytes and new history against the original p134 prose after fresh native inspection. Source average qualifier is restored; named and completed batch gates pass.",
+          "previous_occurrences": [
+            {
+              "repository": "CultureBotAI/CMMMech",
+              "review_id": "20261012T023745Z-titanium-metal-round43-initial",
+              "finding_id": "F1"
+            }
+          ],
+          "external_issues": [
+            "https://github.com/CultureBotAI/CMMMech/issues/142"
+          ]
+        }
+      ],
+      "dossiers": [
+        {
+          "path": "research/sources/round43-hardmetal/20261012T023629Z-source-investigation.json",
+          "sha256": "fc30c27bbd95fd3b551358b71311f48bfa00725f4f14e1447b5c0dfc00582a1d"
+        },
+        {
+          "path": "research/sources/round43-hardmetal/20261012T023629Z-source-investigation.md",
+          "sha256": "9cbbb193ebe563054815ab3f6259089a24e4935b243e57bb2cb5a6dfc0216121"
+        }
+      ]
+    }
+  ],
+  "gate_receipts": {
+    "started_at": "2026-10-12T02:46:56.394047+00:00",
+    "base": "59e24ec38d9c7b377dcfeade1637b298aab9623e",
+    "commands": [
+      {
+        "name": "batch",
+        "command": [
+          "just",
+          "check"
+        ],
+        "started_at": "2026-10-12T02:46:56.394293+00:00",
+        "finished_at": "2026-10-12T02:50:48.497823+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round43-final-v2-batch.log",
+        "sha256": "3b461ec716372779d864a3273f66a8f5e36a3275912d2edc011da55513defab4"
+      },
+      {
+        "name": "nonempty",
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate",
+          "--require-records"
+        ],
+        "started_at": "2026-10-12T02:50:48.498358+00:00",
+        "finished_at": "2026-10-12T02:50:57.121646+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round43-final-v2-nonempty.log",
+        "sha256": "5f5111acf2e1d4f13998e3baccfe8b9a433c95528bd47cfbc3572bbbef706f99"
+      },
+      {
+        "name": "history",
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate-history",
+          "--base",
+          "59e24ec38d9c7b377dcfeade1637b298aab9623e"
+        ],
+        "started_at": "2026-10-12T02:50:57.122141+00:00",
+        "finished_at": "2026-10-12T02:51:03.103273+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round43-final-v2-history.log",
+        "sha256": "a7e1e37a7ef921c16b129f63f7319e52d3effcf1660ec0e77c1d93369e0f3063"
+      }
+    ],
+    "exit_code": 0,
+    "finished_at": "2026-10-12T02:51:03.103503+00:00"
+  },
+  "review_check_receipt": {
+    "command": [
+      "just",
+      "review-check",
+      "--base",
+      "59e24ec38d9c7b377dcfeade1637b298aab9623e",
+      "--require-reviews"
+    ],
+    "started_at": "2026-10-12T02:52:02.098566+00:00",
+    "finished_at": "2026-10-12T02:54:19.927896+00:00",
+    "exit_code": 0,
+    "log": "/private/tmp/cmm-round43-review-check.log",
+    "sha256": "13e04b9c6c41298f12c91b9da36c1526c59356acf6b9df69ede85f66b7cd34ac"
+  },
+  "exact_coverage_receipt": {
+    "path": "/private/tmp/cmm-round43-local-coverage.json",
+    "sha256": "b3c88434b1fd0c8931017952fae740caa9458d488f06ae06279ba8a3bb891bdd",
+    "counts": {
+      "record_count": 220,
+      "history_count": 259,
+      "structured_review_count": 263,
+      "review_base_count": 44,
+      "covered_records": 220
+    }
+  },
+  "baseline": {
+    "scope": "Reuse the just-completed fresh remote-main full gate at this exact unmodified commit and tree; no redundant test rerun before curation.",
+    "receipt": "/private/tmp/cmm-round42-postmerge-20261012-published-terminal.json",
+    "sha256": "dd80cddd7bbf18f1f96a1b0cb2a96b7cf39e0bfe2939e5f294a7c2a01f97a323"
+  },
+  "pre_correction_receipt": {
+    "path": "/private/tmp/cmm-round43-pre-correction-terminal.json",
+    "sha256": "b9bcbbf548790aae214428a897cb0a0585706c04613bbe9b251486ac43ee7fa1",
+    "scope": "Passed before coal wording corrections; superseded for final acceptance by listed final gates."
+  },
+  "deferred_sources": [],
+  "corrected_review_issues": [
+    142,
+    143
+  ],
+  "open_source_issues": [
+    103,
+    104,
+    120,
+    129,
+    130,
+    133,
+    134,
+    137,
+    140
+  ],
+  "new_source_issues": [],
+  "issue_receipt": {
+    "path": "/private/tmp/cmm-round43-issues-created.json",
+    "sha256": "86e3ed8d235778de69b54b90b47b25f992bfdccf714f0179ec4a08c13190ca22"
+  },
+  "exhausted": false,
+  "governance_snapshot": {
+    "path": "reviews/publication/20261012-round43/current-status.json",
+    "sha256": "4a0f0c70544db29ee19efa6b1620bd04c29baddc452bc3fad85c014a217423cb"
+  },
+  "preservation_receipt": {
+    "path": "reviews/publication/20261012-round43/preservation-prepublication.json",
+    "sha256": "b75c3c74b5b0fbae765089cee76707c7034c729e25d46e41788e555fb1417de2"
+  }
+}

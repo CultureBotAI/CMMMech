@@ -1,0 +1,50 @@
+{
+  "timestamp_utc": "2026-10-12T02:45:46Z",
+  "author": "Codex /root/round27_packaging; GPT-6; codex",
+  "scope": "Two source-fidelity corrections following independent review; not a self approval",
+  "issue": "https://github.com/CultureBotAI/CMMMech/issues/143",
+  "initial_review": {
+    "path": "reviews/structured/20261012T024442Z-coal-beneficiation-waste-round43-initial/review.yaml",
+    "sha256": "2b4186580e1a0a2cfb6c9d166d4edfe4a969f2cb8723fdbb871dd94c5f949d62",
+    "findings": [
+      "F1",
+      "F2"
+    ]
+  },
+  "record": {
+    "path": "data/records/coal-beneficiation-waste.yaml",
+    "before_sha256": "d66baa5a261df19b446a1689dd00222e5be5a603439f28f4b344482a65c0dd20",
+    "after_sha256": "ec4251fdebda1cfe7d83378fdade66f560a2b4445a78b1725e63ebeefe9d669f"
+  },
+  "new_edit_history": {
+    "path": "history/records/coal-beneficiation-waste/2026-10-12T024545Z-codex-a1785a.yaml",
+    "sha256": "88a77ed35fec0f95f4abf6ca53e55788368ddd041c5ed0d3cee156f1f2477a2a"
+  },
+  "preserved_initial_dossier": {
+    "md": "research/sources/round43-germanium-resources/20261012T024105Z-source-investigation.md",
+    "md_sha256": "8eb2c2448f5b5f318106f96fafb66f6ce5a4accc51e8b1b34ca32eb23bfa27e8",
+    "json": "research/sources/round43-germanium-resources/20261012T024105Z-source-investigation.json",
+    "json_sha256": "5c09473783ea5940640ba9d65665dd2fd37f2fd93d2611915c555564bb84f1d9"
+  },
+  "corrections": [
+    {
+      "finding": "F1",
+      "before": "Figures1–3 all concern wheat germination",
+      "after": "Figures1 and3 concern wheat germination; Figure2 is pre/post-leach metal concentrations",
+      "evidence": "Blayda2012 original printedp41, Figures2–3 and originalp40Figure1"
+    },
+    {
+      "finding": "F2",
+      "before": "Kamenskaya",
+      "after": "Kamskaya",
+      "evidence": "Blayda2012 original Englishp43; Cyrillic Камская p37"
+    }
+  ],
+  "validation": {
+    "command": "uv run --locked cmmmech validate data/records/coal-beneficiation-waste.yaml",
+    "exit_code": 0,
+    "log": "/private/tmp/cmm-round43-germanium-resources-research/corrected-named-validation.log",
+    "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e"
+  },
+  "remaining": "No other record claim changed. Original 2012/2016 controls/measurement limitations remain; independent successor review and final cohort gates required."
+}

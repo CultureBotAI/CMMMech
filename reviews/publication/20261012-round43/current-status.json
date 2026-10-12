@@ -1,0 +1,243 @@
+{
+  "recorded_at": "2026-10-12T02:54:32.859182+00:00",
+  "observation_timestamp": "2026-10-12T02:35:26.794804+00:00",
+  "raw_receipt": {
+    "path": "/private/tmp/cmm-round43-current-status.json",
+    "sha256": "3898598ae8c8a30734fdb5080fabe4f47359b70f727b968db5b5ce318daa4a0a"
+  },
+  "governance_pin": "a5d562962c75a2ad9efd8160b548df5944315422",
+  "admission": {
+    "number": 581,
+    "html_url": "https://github.com/CultureBotAI/culturebotai-claw/pull/581",
+    "state": "closed",
+    "merged": true,
+    "merged_at": "2026-10-08T02:08:09Z",
+    "merge_commit_sha": "849f336e025510316a5f235eb0af8547b8bd50cc"
+  },
+  "effective_main_rules": [
+    {
+      "type": "pull_request",
+      "parameters": {
+        "required_approving_review_count": 0,
+        "dismiss_stale_reviews_on_push": false,
+        "required_reviewers": [],
+        "require_code_owner_review": false,
+        "dismissal_restriction": {
+          "enabled": false,
+          "allowed_actors": []
+        },
+        "require_last_push_approval": false,
+        "required_review_thread_resolution": false,
+        "require_extra_approval_for_unattributed_changes": true,
+        "allowed_merge_methods": [
+          "merge",
+          "squash",
+          "rebase"
+        ]
+      },
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "CultureBotAI/CMMMech",
+      "ruleset_id": 24692449
+    },
+    {
+      "type": "required_status_checks",
+      "parameters": {
+        "strict_required_status_checks_policy": false,
+        "do_not_enforce_on_create": false,
+        "required_status_checks": [
+          {
+            "context": "validate-strict",
+            "integration_id": 15368
+          }
+        ]
+      },
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "CultureBotAI/CMMMech",
+      "ruleset_id": 24692449
+    },
+    {
+      "type": "merge_queue",
+      "parameters": {
+        "merge_method": "SQUASH",
+        "max_entries_to_build": 3,
+        "min_entries_to_merge": 1,
+        "max_entries_to_merge": 1,
+        "min_entries_to_merge_wait_minutes": 5,
+        "grouping_strategy": "ALLGREEN",
+        "check_response_timeout_minutes": 120
+      },
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "CultureBotAI/CMMMech",
+      "ruleset_id": 24692449
+    }
+  ],
+  "ruleset": {
+    "id": 24692449,
+    "name": "CLAW merge queue",
+    "enforcement": "active",
+    "bypass_actors": [],
+    "conditions": {
+      "ref_name": {
+        "exclude": [],
+        "include": [
+          "refs/heads/main"
+        ]
+      }
+    },
+    "rules": [
+      {
+        "type": "pull_request",
+        "parameters": {
+          "required_approving_review_count": 0,
+          "dismiss_stale_reviews_on_push": false,
+          "required_reviewers": [],
+          "require_code_owner_review": false,
+          "dismissal_restriction": {
+            "enabled": false,
+            "allowed_actors": []
+          },
+          "require_last_push_approval": false,
+          "required_review_thread_resolution": false,
+          "require_extra_approval_for_unattributed_changes": true,
+          "allowed_merge_methods": [
+            "merge",
+            "squash",
+            "rebase"
+          ]
+        }
+      },
+      {
+        "type": "required_status_checks",
+        "parameters": {
+          "strict_required_status_checks_policy": false,
+          "do_not_enforce_on_create": false,
+          "required_status_checks": [
+            {
+              "context": "validate-strict",
+              "integration_id": 15368
+            }
+          ]
+        }
+      },
+      {
+        "type": "merge_queue",
+        "parameters": {
+          "merge_method": "SQUASH",
+          "max_entries_to_build": 3,
+          "min_entries_to_merge": 1,
+          "max_entries_to_merge": 1,
+          "min_entries_to_merge_wait_minutes": 5,
+          "grouping_strategy": "ALLGREEN",
+          "check_response_timeout_minutes": 120
+        }
+      }
+    ]
+  },
+  "workflows": [
+    {
+      "id": 378016117,
+      "name": "Automatic merge queue admission",
+      "path": ".github/workflows/merge-queue-admission.yaml",
+      "state": "active",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/blob/main/.github/workflows/merge-queue-admission.yaml"
+    },
+    {
+      "id": 378016120,
+      "name": "PR shepherd",
+      "path": ".github/workflows/pr-shepherd.yml",
+      "state": "active",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/blob/main/.github/workflows/pr-shepherd.yml"
+    },
+    {
+      "id": 375954368,
+      "name": "Validate strictly",
+      "path": ".github/workflows/validate-strict.yaml",
+      "state": "active",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/blob/main/.github/workflows/validate-strict.yaml"
+    },
+    {
+      "id": 378016122,
+      "name": "Verify merge integrity",
+      "path": ".github/workflows/verify-merge-integrity.yaml",
+      "state": "active",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/blob/main/.github/workflows/verify-merge-integrity.yaml"
+    }
+  ],
+  "issues_at_initial_observation": [
+    {
+      "number": 140,
+      "state": "open",
+      "title": "Acquire complete Theisen sludge primary evidence before record admission",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/140"
+    },
+    {
+      "number": 137,
+      "state": "open",
+      "title": "Acquire complete Yu2012 biogenic-birnessite cobalt evidence before curation",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/137"
+    },
+    {
+      "number": 134,
+      "state": "open",
+      "title": "Complete original-figure and phase verification for manganese-ore oxalates",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/134"
+    },
+    {
+      "number": 133,
+      "state": "open",
+      "title": "Verify original samarium biomineralization figures before record admission",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/133"
+    },
+    {
+      "number": 130,
+      "state": "open",
+      "title": "Resolve yeast cerium-phosphate phase identity from full primary evidence",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/130"
+    },
+    {
+      "number": 129,
+      "state": "open",
+      "title": "Complete vanadinite original-figure verification before admission",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/129"
+    },
+    {
+      "number": 120,
+      "state": "open",
+      "title": "Complete meta-autunite figure verification before record admission",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/120"
+    },
+    {
+      "number": 104,
+      "state": "open",
+      "title": "Acquire and reconcile full ilmenite bioleaching studies",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/104"
+    },
+    {
+      "number": 103,
+      "state": "open",
+      "title": "Acquire tungsten mining-waste methods before record admission",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/103"
+    }
+  ],
+  "later_created_issues": [
+    {
+      "body": "Independent scientific review found one minor source-interpretation defect in the round43 titanium-metal draft.\n\n- Stable finding: `CMMMech.titanium-metal.average-grain-size` / F1.\n- Initial saved review: `reviews/structured/20261012T023745Z-titanium-metal-round43-initial/review.yaml` and generated Markdown, on base `59e24ec38d9c7b377dcfeade1637b298aab9623e`.\n- Reviewed target SHA-256: `627a897cadf7c806be66e6fc0a7b8c0f2928f374f6a8a1c56768409a1016718e`.\n- Owner: `data/records/titanium-metal.yaml`, `mechanisms/0/evidence/2/explanation`.\n\nThe [original Baranov2013 paper](https://journal.mmi.kpi.ua/old/article/view/29005/28485), printed page134 beneath Figure3, describes an **average grain size** not exceeding150\u2013200nm. The draft says \u201cgrains no larger than150\u2013200nm,\u201d dropping \u201caverage\u201d and implying an individual-particle maximum. The paper provides no counted size distribution.\n\nRestore the average qualifier, retain the source attribution and missing-distribution limits, append a canonical correction history, and save a successor scientific review referencing the exact initial F1 occurrence. Named, full-batch, nonempty and trusted-base history/review checks must pass on final bytes. The initial partial review does not claim completed batch validation.\n\nThis concerns an unmerged draft; it does not allege a defect in published main. Review artifacts will be linked from the publication PR. No change to the source's actual measurements is requested.\n",
+      "number": 142,
+      "state": "OPEN",
+      "title": "Preserve average grain size in titanium sponge evidence",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/142",
+      "kind": "review",
+      "body_sha256": "716074f4bed58fcd18342f583fd3068f339ae1fc6fff6ef0de8c2ef73712ca22"
+    },
+    {
+      "body": "Independent review of the new coal-beneficiation-waste record found two source-fidelity errors in the Blayda et al. (2012) evidence:\n\n1. The record groups Figures 1\u20133 as the three-day wheat-germination assay. Original Figure 2 on printed page 41 shows metal concentrations before and after bacterial leaching; only Figures 1 and 3 concern germination.\n2. The citation gives the author surname as Kamenskaya. The original Russian header and printed English author list on page 43 identify Kamskaya.\n\nBoth are minor, confirmed findings. The narrow leaching interpretation remains supportable; the correction must retain the missing matched sterile control, uncertain leaching endpoint and concentration/yield limitations.\n\nSaved initial review: `reviews/structured/20261012T024442Z-coal-beneficiation-waste-round43-initial/review.yaml` and generated `review.md`, based on revision `59e24ec38d9c7b377dcfeade1637b298aab9623e` plus captured working inputs. Stable finding keys: `CMMMech.coal-beneficiation-waste.figure-assay-scope` and `CMMMech.coal-beneficiation-waste.author-transliteration`.\n\nPrimary source: https://dspace.onu.edu.ua/items/1db891e3-f8fc-4e42-862f-520085833a0f\n\nAcceptance: correct the maintained record and any affected dossier text; append correction history; retain the initial review; save an independent successor resolving both exact occurrences; pass named record, full corpus, history and structured-review checks before merge.\n",
+      "number": 143,
+      "state": "OPEN",
+      "title": "Correct coal-waste figure scope and primary author spelling",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/143",
+      "kind": "review",
+      "body_sha256": "d874b975a0bbe192bb582a3d46f3c87163d09c32b77d0ea769f7335d4cfe178c"
+    }
+  ],
+  "scope": "Issue creation postdates initial live status. Workflow presence does not establish shepherd credentials or fleet-wide convergence. Future integration uses CLAW supported admission/synchronization."
+}

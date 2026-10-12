@@ -8,10 +8,11 @@ description: >-
   not the entire commodity. This record is distinct from the titanium element
   as a chemical identity, titanium-bearing minerals, titanium oxides and any
   particular alloy formulation or waste stream. The designations preserve the
-  titanium-metal scope in the original EU 2024 lists. Previously curated
-  laboratory alteration of a passive oxide film on titanium specimens does not
-  establish recovered titanium product or a microbial metal-production process;
-  no microbial mechanism is asserted here.
+  titanium-metal scope in the original EU 2024 lists. A culture-containing
+  grinding study used titanium sponge alongside an incompletely identified
+  titanium-industry waste feed and reported fine titanium-compound powders.
+  Its pooled results do not establish sponge-specific recovery, microbial
+  enhancement or production of pure titanium metal.
 sources:
   - id: usgs-mcs2026-titanium
     title: >-
@@ -26,6 +27,26 @@ sources:
       3 May 2024: Annex I, Section 1(p), and Annex II, Section 1(af), titanium metal
     url: https://eur-lex.europa.eu/eli/reg/2024/1252/oj/eng
     accessed_on: '2026-10-11'
+  - id: baranov2013-sponge
+    title: >-
+      Baranov, Kryukovskaya and Maronchuk (2013), The production of titanium
+      nanopowders from the titanium sponge and titanium industry waste
+      using method of the bacterial leaching. Visnyk NTUU KPI,
+      Mechanical Engineering 3(69), 131-135. Complete Russian original,
+      Figures 1-3 and the unnumbered composition table; printed issue year
+      2013, manuscript received 22 December 2012. Portal posting date
+      2014-01-07 differs from the issue year. Publisher-declared DOI
+      10.20535/2305-9001.2013.69.29005 returned HTTP 404 at doi.org and
+      Crossref on the access date; the official article/PDF is accessible.
+    url: https://journal.mmi.kpi.ua/old/article/view/29005
+    accessed_on: '2026-10-12'
+  - id: ncbi-ferrooxidans
+    title: >-
+      NCBI Taxonomy 920, Acidithiobacillus ferrooxidans;
+      Thiobacillus ferrooxidans is a homotypic synonym. Species
+      nomenclature only, not authentication of the experimental stock.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
+    accessed_on: '2026-10-12'
 criticality:
   - jurisdiction: European Union
     list_name: Regulation (EU) 2024/1252, Annex I, Section 1, strategic raw materials
@@ -37,11 +58,113 @@ criticality:
     edition: 'Original act of 11 April 2024, published 3 May 2024'
     classification: critical
     source_ref: eu2024-original
+mechanisms:
+  - id: culture_ferric_grinding_of_titanium_sponge
+    name: Culture-containing ferric-solution grinding of titanium sponge feeds
+    process: other
+    microbial: true
+    organisms:
+      - id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+    description: >-
+      Baranov and colleagues processed titanium sponge and a source-described
+      titanium slag in a rotating disintegrator with ferric-sulfate solution
+      containing Thiobacillus ferrooxidans. They obtained fine agglomerated
+      powders reported to contain titanium oxides and hydride. This supports
+      a culture-associated mechanical and chemical workflow; it does not
+      isolate bacterial causality, demonstrate microbial titanium reduction,
+      or establish a pure titanium-metal product.
+    context: >-
+      Figure 1 on page 132 shows sponge feeds labelled 0.1-1 mm and
+      0.1-3 mm, and a waste feed labelled titanium slag, 10-100 mm. The
+      stated research tasks instead refer to titanium cut-offs. Waste
+      provenance, grade and initial phase composition are not resolved, so
+      the waste is not equated with a defined smelting slag or with sponge.
+      Feed and bacterial solution were mixed 1:1 by mass. Reported product
+      data are not assigned to separate sponge sizes or waste arms, and it
+      is unclear whether the feeds were processed separately or combined.
+      No strain accession, culture-purity check, inoculum amount, ferric
+      concentration, nutrient recipe, pH, temperature, duration, rotation
+      speed, vessel volume or replicate count is provided.
+    evidence:
+      - source_ref: baranov2013-sponge
+        supports: support
+        explanation: >-
+          Pages 132-134 document the feeds, culture-containing dispersing
+          solution, repeated fragment collisions and recovered fine solids.
+          The page 133 table reports average relative Ti contents of
+          95.84 percent in starting material and 98.14 percent in powder,
+          with Cr, Fe and Ni also listed. These four-element compositions
+          are not titanium extraction yields or metallic phase purity.
+          Elvax light XRF does not account for oxygen or hydrogen here;
+          the authors explicitly acknowledge missing gaseous impurities.
+          No isolated masses or solution/solid mass balance is supplied.
+      - source_ref: baranov2013-sponge
+        supports: partial
+        explanation: >-
+          The source reports oxide and hydride phases from DRON-4-07
+          diffraction but displays no diffractogram or phase fractions;
+          it says unclear individual peaks prevented crystallite sizing.
+          The title and some captions call the material titanium powder,
+          while the results and conclusion identify titanium compounds
+          and reserve pure titanium production for future work under an
+          altered atmosphere. Neither a named oxide polymorph, hydride
+          stoichiometry nor pure Ti(0) nanoparticle production is adopted.
+      - source_ref: baranov2013-sponge
+        supports: partial
+        explanation: >-
+          Figure 2 SEM images show agglomeration; Figure 3 TEM images
+          follow ultrasonic preparation and carry 100 nm and 500 nm scale
+          bars. Figure 3's caption repeats the 2500-fold and 1000-fold
+          labels used for Figure 2, so those nominal magnifications are
+          not adopted as calibrated TEM measurements. The text estimates
+          an average grain size not exceeding 150-200 nm and the conclusion gives
+          100-200 nm, without a counted size distribution, sampling error
+          or yield of that size fraction. These estimates do not establish
+          a uniformly nanoscale powder or a bulk crystallite size.
+      - source_ref: baranov2013-sponge
+        supports: partial
+        explanation: >-
+          Pages 133-134 attribute redox-potential maintenance and acid
+          regeneration to the bacteria, but provide no measured redox,
+          acidity, culture-growth or iron-oxidation series. There is no
+          matched sterile ferric-solution, acid-only or mechanical-only
+          control. The paper's generic faster-leaching, low-cost and
+          waste-free claims are therefore not demonstrated comparisons.
+          Equipment throughput and deployment are not established; the
+          proposed inert-atmosphere refinement is future work, not an
+          experimentally demonstrated pure-metal recovery stage.
+      - source_ref: ncbi-ferrooxidans
+        supports: context_only
+        explanation: >-
+          The authority maps the paper's historical species name to
+          Acidithiobacillus ferrooxidans, NCBITaxon:920. This does not
+          authenticate an unaccessioned stock or establish that a pure
+          culture caused the observed material changes.
 curation_history:
   - timestamp: '2026-10-11T08:30:16Z'
     curator: codex (GPT-6; codex)
     action: CREATE
     summary: >-
       Created a titanium-metal commodity record with original EU 2024 critical and strategic designations.
+  - timestamp: '2026-10-12T02:34:30Z'
+    curator: Codex (GPT-6; codex)
+    action: EDIT
+    summary: >-
+      Added the complete Baranov2013 sponge-processing study as a
+      culture-containing mechanical and chemical transformation context.
+      Retained pooled feed outcomes, ambiguous waste identity, mixed
+      oxide/hydride products, XRF denominator limits, inconsistent size
+      wording and missing causal controls; no pure-metal recovery inferred.
+  - timestamp: '2026-10-12T02:38:33Z'
+    curator: Codex (GPT-6; codex)
+    action: EDIT
+    summary: >-
+      Addressed independent review issue 142 by retaining the source's
+      average-grain-size qualifier; the 150-200 nm estimate is not an
+      upper bound on every particle. Preserved the differing conclusion
+      wording and unavailable size distribution.
 history_refs:
   - history/records/titanium-metal/2026-10-11T083011Z-codex-5e59d0.yaml
+  - history/records/titanium-metal/2026-10-12T023444Z-codex-ff8e43.yaml
+  - history/records/titanium-metal/2026-10-12T023836Z-codex-e31d46.yaml
