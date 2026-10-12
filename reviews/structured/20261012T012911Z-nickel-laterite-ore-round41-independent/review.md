@@ -1,0 +1,510 @@
+# Independent review of nickel laterite ore Newsome extension and retained prior science
+
+- Review: 20261012T012911Z-nickel-laterite-ore-round41-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-12T01:24:16Z
+- Finished UTC: 2026-10-12T01:29:11Z
+- Reviewer: Codex /root/round27_packaging (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The new donor-associated native-community mechanism is supported within the explicit experimental and causal limits. Quantitative fractions, null aqueous outcomes, source inconsistencies and distinction from product recovery are retained. All prior scientific fields match their earlier independent reviewed state. No corrective finding.
+
+## Scope And Provenance
+
+Whole current target: fresh independent source review of Newsome2020 extension and preservation/continuity assessment of unchanged older scientific fields.
+
+Selection: Parent-assigned independent one-record review; this reviewer did not author target.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 762508748eaa4f857179fa6f3450765bc62ebd6a.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:nickel-laterite-ore | data/records/nickel-laterite-ore.yaml | maintained | Nickel laterite ore |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named record validation | passed | True | cmmmech:nickel-laterite-ore | Reviewer executed with project cwd explicitly round41; terminal0. Checked 1 record(s); 0 failed. Log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e |
+| Final cohort batch | passed | True | cmmmech:nickel-laterite-ore | Parent executed; reviewer independently read complete log and verified raw-byte SHA256 408f773b76559736d91562a26d537e9143f241393e84d65e6379cbba8db6397b. uv run --locked --extra dev python scripts/check.py<br>All checks passed!<br>........................................................................ [ 23%]<br>........................................................................ [ 46%]<br>........................................................................ [ 69%]<br>....................................................sss................. [ 92%]<br>.......................                                                  [100%]<br>308 passed, 3 skipped in 164.97s (0:02:44)<br>Checked 213 record(s); 0 failed.<br>Checked 248 history record(s); 0 error(s). |
+| Final cohort nonempty | passed | True | cmmmech:nickel-laterite-ore | Parent executed; reviewer independently read complete log and verified raw-byte SHA256 7c214b2dfc443a636336b4bee5fb9b872bf92f9b0c8782a3fbefdbcbaddb32d7. Checked 213 record(s); 0 failed. |
+| Final cohort history | passed | True | cmmmech:nickel-laterite-ore | Parent executed; reviewer independently read complete log and verified raw-byte SHA256 992bba227a677a063bbb8584ffef1b45db04a156f0c7d396bba097852b6f479f. Checked 248 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Natural laterite resource and community boundary
+
+identity: supported. Targets: cmmmech:nickel-laterite-ore.
+
+The existing primary-resource owner covers these composite natural nickel-cobalt laterites; no new mineral species, waste identity, pure-phase or inherited criticality assertion. Native communities remain unresolved; contextual Geobacter ID has species-only scope.
+
+### Donor-associated mobilization and separate chemical extraction
+
+evidence: supported. Targets: cmmmech:nickel-laterite-ore.
+
+New mechanism tracks original feed-specific results and appropriate causal uncertainty. NHM low aqueous release and Piauí aqueous release are distinguished from later acetic-acid extraction and from each other.
+
+### Normalized fractions, model components and source inconsistencies
+
+evidence: supported. Targets: cmmmech:nickel-laterite-ore.
+
+The64%source value is accurately qualified as fraction-sum normalization. Niunit mismatch, medium/replicate/caption conflicts, heterogeneous Fe response, indirect redox possibilities and exsitu spectral limits are retained without silent correction or inflated yield.
+
+### Retained old science plus independently reviewed extension
+
+provenance: supported. Targets: cmmmech:nickel-laterite-ore.
+
+Exact prior-field preservation links this final record to the earlier independent review. Native inspect preceded judgment; reviewer authored only separate birnessite handoff and no laterite content. Newhistory and actualgates are valid and exactfrozenbytesunchanged.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/nickel-laterite-ore.yaml; Exact frozen whole target; native inspect before assessment | supports | New Newsome arm reviewed from original sources; all prior fields retained by exact value proof and earlier independent scientific review. No target/history edits by this reviewer. |
+| primary | https://doi.org/10.1016/j.chemgeo.2019.119330; Complete 15-page published primary; all methods/results, Figures1-9 and Tables1-3 | supports | Original repository PDF read and all pages visually inspected, including all claim-bearing figures/tables. Chemical Geology531(2020)119330, online23October2019. Laboratory composite natural laterites, not pure minerals or secondary waste. CC BY4.0 stated in original; raw remains outside Git. |
+| conditions | https://doi.org/10.1016/j.chemgeo.2019.119330; Sections2.1-2.4, Figures1-6, Tables2-3 | supports | NHM3g wet/30ml initiallypH7 minimal medium+10mMacetate,30C/dark/N2:CO2,90days; separate washed Geobacter augmentation in30mMbicarbonate33days. Piauí screen3g/30ml,main10g/100ml10mMglucose143days,repeat264days. Characterization drying105C/ballmilling not imposed on live feed. Main triplicates compared to single nonsterile donor-free controls. Centrifuged supernatant ICP is not a membrane-filtered fraction. |
+| supplement | https://ars.els-cdn.com/content/image/1-s2.0-S0009254119304371-mmc1.doc; Original Word, complete local conversion; TablesS1-S8, FiguresS1-S16 | supports | Original byte hash verified; 23-page PDF is a derivative, last page blank. All tables/figures visually inspected. S2 includes negative-control sequence subtraction/below-standard qPCR. S12 explicitly substitutes zero for apparent yellow-colour Fe(II) interference and uses AGW non-pH day-zero points. S10 donor screen differs from S12repeat. S8 fits Co-MnO2/Co-goethite standards, not physically isolated phase percentages. |
+| workbooks | https://data.mendeley.com/datasets/jjr63cyp35/2; Selected six original version2 workbooks; Co fraction formulas/cached results; XRF and monitoring labels | supports | Reviewer independently parsed six OOXML containers. NHM CoA16,B21/E21,Q7 and PiauíCoA13,B16/D16,L5 normalize against sum of aqueous and all BCR extracts. Piauí4 cached13.262251+50.265245=63.527496%, rounding toTable3 64%, is not initial-inventory recovery. Propagated stdev quantities are not product-yield SD. XRF NiS13-S15 andPiauíT12-T13 confirm factor-ten mainTable1 discrepancy. No formula recalculation or full descendant dataset audit claimed. Reviewer-selected extracted cells retained outside Git. |
+| controls | https://doi.org/10.1016/j.chemgeo.2019.119330; Sections3.2-3.6; mainFigures1,4,5,7-9; supplementaryFiguresS2-S6,S10-S16 | supports | Low NHM aqueousCo/Ni contrasts with greater acid-extractable fractions; Piauí aqueous release accompanies acidification/VFAs. Donor-free controls still contain native organisms, no sterile donor/killed-cell/matched-acid comparator isolates microbial necessity or direct vs indirect cobalt reduction. Piauí endpoint fraction plot lacks donor-free endpoint. Fe(II) varies by replicate; CoXANES only supports redox interpretation for analysed samples; no postShevchenkoCo spectrum, noCoEXAFS. No product isolation or deployment. |
+| taxonomy | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=35554&amp;mode=info; Fresh independent browser result and author-acquired official DatasetsJSON35554 | supports | Geobacter sulfurreducens species identity confirmed only for contextual augmentation. Unaccessioned local culture not authenticated; no invented native-community strain or causative organism ID. Taxonomy lookup does not prove phenotype. |
+| preservation | /private/tmp/cmm-round41-laterite-review-preservation.json; Independent removal of appended4sources/1mechanism/1inline/1historyref then exact YAML comparison totrustedbase | supports | Every prior YAML value matches. Existing history bytes unchanged. Base recordSHA b48757556c090b7e47e394fa8977bcf33cb384c3cd8153687ad21ba89e6d8cba equals previous round20 review input. Prior science is retained through that review, not newly re-researched here. |
+| prior-review | reviews/structured/20261011T122141Z-nickel-laterite-ore-round20-independent/review.yaml; Original saved independent scientific review, exactbase targethashmatch | supports | Earlier Hetz2025 and Santos2022 source assessments, resource identity and limitations are retained; their old scientific bytes/values were not broadened by the new source. This review does not claim fresh fulltext reassessment of those old studies. |
+| dedup | /private/tmp/cmm-round41-laterite-review-dedup.json; Independent bounded hidden/ignored/followed current4trees and relevant citedrawroots | supports | Current Newsome mechanism has one owner. Older Shevchenko low-pH inoculated reactor, sulfur-oxidizer, Penamax and Ferrier fungal assays are distinct experiments; same locality is not replication. Binary detection retained; no machine-wide absence claim. |
+| history | history/records/nickel-laterite-ore/2026-10-12T012121Z-codex-742f3f.yaml; Whole canonical EDIT, separate inline timestamp and preserved oldCREATE | supports | Actual codex/GPT-6/codex, target and scoped change agree; no old history rewritten. Inline01:21:15.841593Z and sidecar01:21:21Z are separate events, not invented prior authorship. |
+| gates | /private/tmp/cmm-round41-final-terminal.json; Actual terminal receipt and raw-byte verified three logs | supports | Final parent checks terminal0:308passed3skipped164.97s,213records248histories; explicit nonempty213/0 and basehistory248/0. Reviewer named validation1/0. Hashes remain frozen. |
+| audit | /private/tmp/cmm-round41-laterite-independent-evidence-check.json; Independent original-source inspection, artifact checks and bounded notices | supports | All84authorartifacthashes verified. No affecting formal notice found in the bounded exact DOI/title queries and retainedCrossrefmetadata; not an exhaustive absence claim. Original fulltext/SI/selected workbook assessment not replaced by curator verdict. |
+
+## Limits And Additional Notes
+
+- Nonsterile donor-free controls cannot isolate biological metabolism from donor chemistry, ligand effects or indirect reduction.
+- Different feed/media/duration prevent universal glucose-versus-acetate superiority; Piauí fraction endpoint lacks donor-free counterpart.
+- Sequential fractions normalize to recovered fraction sum, not independently closed starting inventory; no isolated cobalt product or industrial deployment.
+- MainTable1Ni conflicts roughlytenfold withSI/XRF; medium labels, extraction replicatecounts and repeatfigure pointer remain source tensions.
+- Ferrozine interference correction and AGW day-zero substitutions are source-handled values, not raw observed zeros.
+- CoXANES standards are model components; no post-treatmentShevchenkoCo spectrum orCoEXAFS, no directvsindirect pathway resolution.
+- Communitysequence similarities and extraction-dependent abundances do not identify a causal culture/strain.
+- All original new figures/tables were inspected; workbook review remains selected, not exhaustive; no affecting notice found in bounded search only.
+- Older literature was not freshly re-researched; exactpriorfields and existingreview provide continuity.
+- No target/history mutations by reviewer. Named check executed by reviewer; parent batch/history checks independently read and hash-verified.
+- Related retained review:20261011T122141Z-nickel-laterite-ore-round20-independent, targethash b48757556c090b7e47e394fa8977bcf33cb384c3cd8153687ad21ba89e6d8cba.
+- No fresh fulltext re-review of preserved Hetz2025/Santos2022 science; retain exact prior independent assessment.
+- No full Mendeley descendant dataset audit, raw-read reprocessing, spectral refitting or laboratory replication.
+- Other round41 records and birnessite author handoff excluded.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261012T012911Z-nickel-laterite-ore-round41-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent review of nickel laterite ore Newsome extension and retained prior
+  science
+started_at: '2026-10-12T01:24:16Z'
+finished_at: '2026-10-12T01:29:11Z'
+reviewer:
+  identity: Codex /root/round27_packaging
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Authored separate biogenic-birnessite research handoff. Did
+    not author or edit nickel-laterite record, history or dossier. Personally inspected
+    complete new primary/SI original graphics, parsed selected original workbook cells,
+    verified authorities, preserved old fields/prior review and actual gates. Older
+    science is retained via exact field/hash proof and prior independent review, not
+    claimed as freshly re-researched.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The new donor-associated native-community mechanism is supported within the
+  explicit experimental and causal limits. Quantitative fractions, null aqueous outcomes,
+  source inconsistencies and distinction from product recovery are retained. All prior
+  scientific fields match their earlier independent reviewed state. No corrective
+  finding.
+source:
+  git_revision: 762508748eaa4f857179fa6f3450765bc62ebd6a
+  state: working_tree
+  inputs:
+  - path: data/records/nickel-laterite-ore.yaml
+    sha256: 98c1bee7184d632ed9ea7ed901dfd231b43f95c84d7d9d0d6df224fa6540d1d6
+    role: target
+  - path: history/records/nickel-laterite-ore/2026-10-12T012121Z-codex-742f3f.yaml
+    sha256: 1165bb4f3e9d9811bd1b0a7b9de25e2fe2f89690b0520626e4bf5f8b76d5c24d
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:nickel-laterite-ore
+  path: data/records/nickel-laterite-ore.yaml
+  label: Nickel laterite ore
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/nickel-laterite-ore.yaml
+    role: maintained_record
+scope:
+  description: 'Whole current target: fresh independent source review of Newsome2020
+    extension and preservation/continuity assessment of unchanged older scientific
+    fields.'
+  selection: Parent-assigned independent one-record review; this reviewer did not
+    author target.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:nickel-laterite-ore
+checks:
+- check_id: named
+  name: Independent named record validation
+  command: uv run --locked cmmmech validate data/records/nickel-laterite-ore.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:nickel-laterite-ore
+  summary: Reviewer executed with project cwd explicitly round41; terminal0. Checked
+    1 record(s); 0 failed. Log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- check_id: batch
+  name: Final cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:nickel-laterite-ore
+  summary: 'Parent executed; reviewer independently read complete log and verified
+    raw-byte SHA256 408f773b76559736d91562a26d537e9143f241393e84d65e6379cbba8db6397b.
+    uv run --locked --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 164.97s (0:02:44)
+
+    Checked 213 record(s); 0 failed.
+
+    Checked 248 history record(s); 0 error(s).'
+- check_id: nonempty
+  name: Final cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:nickel-laterite-ore
+  summary: Parent executed; reviewer independently read complete log and verified
+    raw-byte SHA256 7c214b2dfc443a636336b4bee5fb9b872bf92f9b0c8782a3fbefdbcbaddb32d7.
+    Checked 213 record(s); 0 failed.
+- check_id: history
+  name: Final cohort history
+  command: uv run --locked cmmmech validate-history --base 762508748eaa4f857179fa6f3450765bc62ebd6a
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:nickel-laterite-ore
+  summary: Parent executed; reviewer independently read complete log and verified
+    raw-byte SHA256 992bba227a677a063bbb8584ffef1b45db04a156f0c7d396bba097852b6f479f.
+    Checked 248 history record(s); 0 error(s).
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/nickel-laterite-ore.yaml
+  locator: Exact frozen whole target; native inspect before assessment
+  accessed_at: '2026-10-12T01:29:11Z'
+  support: supports
+  summary: New Newsome arm reviewed from original sources; all prior fields retained
+    by exact value proof and earlier independent scientific review. No target/history
+    edits by this reviewer.
+  snapshot_sha256: 98c1bee7184d632ed9ea7ed901dfd231b43f95c84d7d9d0d6df224fa6540d1d6
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.chemgeo.2019.119330
+  locator: Complete 15-page published primary; all methods/results, Figures1-9 and
+    Tables1-3
+  accessed_at: '2026-10-12T01:29:11Z'
+  support: supports
+  summary: Original repository PDF read and all pages visually inspected, including
+    all claim-bearing figures/tables. Chemical Geology531(2020)119330, online23October2019.
+    Laboratory composite natural laterites, not pure minerals or secondary waste.
+    CC BY4.0 stated in original; raw remains outside Git.
+  snapshot_sha256: d661047ffe5b892aaf36286060c4108c7505cc0bdb8bf8a88f1b8445e5f23d0e
+- evidence_id: conditions
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.chemgeo.2019.119330
+  locator: Sections2.1-2.4, Figures1-6, Tables2-3
+  accessed_at: '2026-10-12T01:29:11Z'
+  support: supports
+  summary: NHM3g wet/30ml initiallypH7 minimal medium+10mMacetate,30C/dark/N2:CO2,90days;
+    separate washed Geobacter augmentation in30mMbicarbonate33days. Piauí screen3g/30ml,main10g/100ml10mMglucose143days,repeat264days.
+    Characterization drying105C/ballmilling not imposed on live feed. Main triplicates
+    compared to single nonsterile donor-free controls. Centrifuged supernatant ICP
+    is not a membrane-filtered fraction.
+  snapshot_sha256: d661047ffe5b892aaf36286060c4108c7505cc0bdb8bf8a88f1b8445e5f23d0e
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S0009254119304371-mmc1.doc
+  locator: Original Word, complete local conversion; TablesS1-S8, FiguresS1-S16
+  accessed_at: '2026-10-12T01:29:11Z'
+  support: supports
+  summary: Original byte hash verified; 23-page PDF is a derivative, last page blank.
+    All tables/figures visually inspected. S2 includes negative-control sequence subtraction/below-standard
+    qPCR. S12 explicitly substitutes zero for apparent yellow-colour Fe(II) interference
+    and uses AGW non-pH day-zero points. S10 donor screen differs from S12repeat.
+    S8 fits Co-MnO2/Co-goethite standards, not physically isolated phase percentages.
+  snapshot_sha256: 1695d0ab836dbc6fdbbf5db211293f6332dd30045e0b1f50c84414597dff7ffd
+- evidence_id: workbooks
+  kind: primary_source
+  reference: https://data.mendeley.com/datasets/jjr63cyp35/2
+  locator: Selected six original version2 workbooks; Co fraction formulas/cached results;
+    XRF and monitoring labels
+  accessed_at: '2026-10-12T01:29:11Z'
+  support: supports
+  summary: Reviewer independently parsed six OOXML containers. NHM CoA16,B21/E21,Q7
+    and PiauíCoA13,B16/D16,L5 normalize against sum of aqueous and all BCR extracts.
+    Piauí4 cached13.262251+50.265245=63.527496%, rounding toTable3 64%, is not initial-inventory
+    recovery. Propagated stdev quantities are not product-yield SD. XRF NiS13-S15
+    andPiauíT12-T13 confirm factor-ten mainTable1 discrepancy. No formula recalculation
+    or full descendant dataset audit claimed. Reviewer-selected extracted cells retained
+    outside Git.
+  snapshot_sha256: 41ad90e0112a58f1f7e4b2666a0c67aed96504db00e7bb75545bcd39a47243fe
+- evidence_id: controls
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.chemgeo.2019.119330
+  locator: Sections3.2-3.6; mainFigures1,4,5,7-9; supplementaryFiguresS2-S6,S10-S16
+  accessed_at: '2026-10-12T01:29:11Z'
+  support: supports
+  summary: Low NHM aqueousCo/Ni contrasts with greater acid-extractable fractions;
+    Piauí aqueous release accompanies acidification/VFAs. Donor-free controls still
+    contain native organisms, no sterile donor/killed-cell/matched-acid comparator
+    isolates microbial necessity or direct vs indirect cobalt reduction. Piauí endpoint
+    fraction plot lacks donor-free endpoint. Fe(II) varies by replicate; CoXANES only
+    supports redox interpretation for analysed samples; no postShevchenkoCo spectrum,
+    noCoEXAFS. No product isolation or deployment.
+  snapshot_sha256: d661047ffe5b892aaf36286060c4108c7505cc0bdb8bf8a88f1b8445e5f23d0e
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=35554&mode=info
+  locator: Fresh independent browser result and author-acquired official DatasetsJSON35554
+  accessed_at: '2026-10-12T01:29:11Z'
+  support: supports
+  summary: Geobacter sulfurreducens species identity confirmed only for contextual
+    augmentation. Unaccessioned local culture not authenticated; no invented native-community
+    strain or causative organism ID. Taxonomy lookup does not prove phenotype.
+  snapshot_sha256: 0c0ee91f0f7b5a079ad8b28207336fd86dc968679522f9d1c35732875454fa32
+- evidence_id: preservation
+  kind: record_content
+  reference: /private/tmp/cmm-round41-laterite-review-preservation.json
+  locator: Independent removal of appended4sources/1mechanism/1inline/1historyref
+    then exact YAML comparison totrustedbase
+  accessed_at: '2026-10-12T01:29:11Z'
+  support: supports
+  summary: Every prior YAML value matches. Existing history bytes unchanged. Base
+    recordSHA b48757556c090b7e47e394fa8977bcf33cb384c3cd8153687ad21ba89e6d8cba equals
+    previous round20 review input. Prior science is retained through that review,
+    not newly re-researched here.
+  snapshot_sha256: ffca31f1558808afdef9953050db889cc6deeab5ad7c8d9c782db3a395ebd1e2
+- evidence_id: prior-review
+  kind: record_content
+  reference: reviews/structured/20261011T122141Z-nickel-laterite-ore-round20-independent/review.yaml
+  locator: Original saved independent scientific review, exactbase targethashmatch
+  accessed_at: '2026-10-12T01:29:11Z'
+  support: supports
+  summary: Earlier Hetz2025 and Santos2022 source assessments, resource identity and
+    limitations are retained; their old scientific bytes/values were not broadened
+    by the new source. This review does not claim fresh fulltext reassessment of those
+    old studies.
+  snapshot_sha256: 9ec03640c67fa2fab7159acc3c2fd1e12ee8b7a8c9b7dcafb8756152a2e3d73f
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round41-laterite-review-dedup.json
+  locator: Independent bounded hidden/ignored/followed current4trees and relevant
+    citedrawroots
+  accessed_at: '2026-10-12T01:29:11Z'
+  support: supports
+  summary: Current Newsome mechanism has one owner. Older Shevchenko low-pH inoculated
+    reactor, sulfur-oxidizer, Penamax and Ferrier fungal assays are distinct experiments;
+    same locality is not replication. Binary detection retained; no machine-wide absence
+    claim.
+  snapshot_sha256: 46944a0c377c2bfad398a18153bc56753cd4c489b9b48ce0cdfa278b7fa4019b
+  search_scope: rg --hidden --no-ignore --follow across current data/records,research,reviews,history
+    and cited round20-laterite, earlier nickel, round40-cobalt-manganese-oxide raw
+    roots. Binary detection retained; no unrelated machine-wide search.
+- evidence_id: history
+  kind: record_content
+  reference: history/records/nickel-laterite-ore/2026-10-12T012121Z-codex-742f3f.yaml
+  locator: Whole canonical EDIT, separate inline timestamp and preserved oldCREATE
+  accessed_at: '2026-10-12T01:29:11Z'
+  support: supports
+  summary: Actual codex/GPT-6/codex, target and scoped change agree; no old history
+    rewritten. Inline01:21:15.841593Z and sidecar01:21:21Z are separate events, not
+    invented prior authorship.
+  snapshot_sha256: 1165bb4f3e9d9811bd1b0a7b9de25e2fe2f89690b0520626e4bf5f8b76d5c24d
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round41-final-terminal.json
+  locator: Actual terminal receipt and raw-byte verified three logs
+  accessed_at: '2026-10-12T01:29:11Z'
+  support: supports
+  summary: Final parent checks terminal0:308passed3skipped164.97s,213records248histories;
+    explicit nonempty213/0 and basehistory248/0. Reviewer named validation1/0. Hashes
+    remain frozen.
+  snapshot_sha256: fac7a8a8b654e5ea256c2a1a4d9718b00e926b0fccb75268ec8d7312a5f036c2
+- evidence_id: audit
+  kind: record_content
+  reference: /private/tmp/cmm-round41-laterite-independent-evidence-check.json
+  locator: Independent original-source inspection, artifact checks and bounded notices
+  accessed_at: '2026-10-12T01:29:11Z'
+  support: supports
+  summary: All84authorartifacthashes verified. No affecting formal notice found in
+    the bounded exact DOI/title queries and retainedCrossrefmetadata; not an exhaustive
+    absence claim. Original fulltext/SI/selected workbook assessment not replaced
+    by curator verdict.
+  snapshot_sha256: 1e16be9d5aab326bba205d465e6dab65ba82e0aaedf3e64c549cd185b91f515c
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Natural laterite resource and community boundary
+  outcome: supported
+  summary: The existing primary-resource owner covers these composite natural nickel-cobalt
+    laterites; no new mineral species, waste identity, pure-phase or inherited criticality
+    assertion. Native communities remain unresolved; contextual Geobacter ID has species-only
+    scope.
+  target_ids:
+  - cmmmech:nickel-laterite-ore
+  evidence_ids:
+  - record
+  - primary
+  - taxonomy
+  - dedup
+  - prior-review
+  dimensions: []
+- assessment_id: new-evidence
+  area: evidence
+  topic: Donor-associated mobilization and separate chemical extraction
+  outcome: supported
+  summary: New mechanism tracks original feed-specific results and appropriate causal
+    uncertainty. NHM low aqueous release and Piauí aqueous release are distinguished
+    from later acetic-acid extraction and from each other.
+  target_ids:
+  - cmmmech:nickel-laterite-ore
+  evidence_ids:
+  - conditions
+  - primary
+  - supplement
+  - controls
+  dimensions:
+  - name: biomass
+    value: Indigenous communities in nonsterilized laterite; separate washed Geobacter
+      comparison
+    definition: No cultured causal native taxon identified; added donor comparison
+      is not sterile abiotic control.
+    evidence_ids:
+    - conditions
+    - taxonomy
+    - controls
+  - name: scale
+    value: Laboratory anaerobic microcosms and sequential chemical extraction
+    definition: Process proposals are not industrial deployment or recovered purified
+      product.
+    evidence_ids:
+    - primary
+    - controls
+- assessment_id: measurements
+  area: evidence
+  topic: Normalized fractions, model components and source inconsistencies
+  outcome: supported
+  summary: The64%source value is accurately qualified as fraction-sum normalization.
+    Niunit mismatch, medium/replicate/caption conflicts, heterogeneous Fe response,
+    indirect redox possibilities and exsitu spectral limits are retained without silent
+    correction or inflated yield.
+  target_ids:
+  - cmmmech:nickel-laterite-ore
+  evidence_ids:
+  - workbooks
+  - supplement
+  - controls
+  - primary
+  dimensions: []
+- assessment_id: continuity
+  area: provenance
+  topic: Retained old science plus independently reviewed extension
+  outcome: supported
+  summary: Exact prior-field preservation links this final record to the earlier independent
+    review. Native inspect preceded judgment; reviewer authored only separate birnessite
+    handoff and no laterite content. Newhistory and actualgates are valid and exactfrozenbytesunchanged.
+  target_ids:
+  - cmmmech:nickel-laterite-ore
+  evidence_ids:
+  - record
+  - preservation
+  - prior-review
+  - history
+  - gates
+  - audit
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- Nonsterile donor-free controls cannot isolate biological metabolism from donor chemistry,
+  ligand effects or indirect reduction.
+- Different feed/media/duration prevent universal glucose-versus-acetate superiority;
+  Piauí fraction endpoint lacks donor-free counterpart.
+- Sequential fractions normalize to recovered fraction sum, not independently closed
+  starting inventory; no isolated cobalt product or industrial deployment.
+- MainTable1Ni conflicts roughlytenfold withSI/XRF; medium labels, extraction replicatecounts
+  and repeatfigure pointer remain source tensions.
+- Ferrozine interference correction and AGW day-zero substitutions are source-handled
+  values, not raw observed zeros.
+- CoXANES standards are model components; no post-treatmentShevchenkoCo spectrum orCoEXAFS,
+  no directvsindirect pathway resolution.
+- Communitysequence similarities and extraction-dependent abundances do not identify
+  a causal culture/strain.
+- All original new figures/tables were inspected; workbook review remains selected,
+  not exhaustive; no affecting notice found in bounded search only.
+- Older literature was not freshly re-researched; exactpriorfields and existingreview
+  provide continuity.
+notes:
+- No target/history mutations by reviewer. Named check executed by reviewer; parent
+  batch/history checks independently read and hash-verified.
+- Related retained review:20261011T122141Z-nickel-laterite-ore-round20-independent,
+  targethash b48757556c090b7e47e394fa8977bcf33cb384c3cd8153687ad21ba89e6d8cba.
+- No fresh fulltext re-review of preserved Hetz2025/Santos2022 science; retain exact
+  prior independent assessment.
+- No full Mendeley descendant dataset audit, raw-read reprocessing, spectral refitting
+  or laboratory replication.
+- Other round41 records and birnessite author handoff excluded.
+links:
+- https://doi.org/10.1016/j.chemgeo.2019.119330
+- https://data.mendeley.com/datasets/jjr63cyp35/2
+```
