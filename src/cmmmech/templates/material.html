@@ -1,0 +1,196 @@
+{% extends "base.html" %}
+{% block title %}{{ r.name }} · CMMMech{% endblock %}
+{% block content %}
+<div class="breadcrumbs">
+  <a href="{{ root }}index.html">CMMMech</a> &gt;
+  <a href="{{ root }}kinds/{{ r.material_kind }}.html">{{ r.material_kind | replace('_', ' ') | capitalize }}</a> &gt;
+  <span>{{ r.name }}</span>
+</div>
+
+<h1>
+  {{ r.name }}
+  <span class="badge" style="font-size: .9rem; vertical-align: middle; margin-left: .4rem;">{{ r.material_kind | replace('_', ' ') }}</span>
+  {% if r.criticality %}
+  <span class="badge badge-critical" style="font-size: .9rem; vertical-align: middle; margin-left: .2rem;">Critical Material</span>
+  {% endif %}
+</h1>
+
+{% if r.description %}
+<p class="lede">{{ r.description }}</p>
+{% endif %}
+
+{% if r.identifiers %}
+<div class="detail-section">
+  <h3>Identifiers &amp; Classification</h3>
+  <table style="margin: .4rem 0;">
+    <thead>
+      <tr>
+        <th scope="col">System</th>
+        <th scope="col">Identifier</th>
+        <th scope="col">Label</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in r.identifiers %}
+      <tr>
+        <td>{{ item.id.split(':')[0] }}</td>
+        <td>
+          {% if item.url %}
+          <a href="{{ item.url }}" target="_blank" rel="noopener"><code>{{ item.id }}</code></a>
+          {% else %}
+          <code>{{ item.id }}</code>
+          {% endif %}
+        </td>
+        <td>{{ item.label or '—' }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endif %}
+
+{% if r.criticality %}
+<div class="detail-section">
+  <h3>Criticality Designations</h3>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Jurisdiction</th>
+        <th scope="col">List Name</th>
+        <th scope="col">Edition / Document</th>
+        <th scope="col">Classification</th>
+        <th scope="col">Source</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for crit in r.criticality %}
+      <tr>
+        <td><strong>{{ crit.jurisdiction }}</strong></td>
+        <td>{{ crit.list_name }}</td>
+        <td>{{ crit.edition }}</td>
+        <td><span class="badge badge-critical">{{ crit.classification }}</span></td>
+        <td>
+          {% if crit.source_ref %}
+          <a href="#source-{{ crit.source_ref }}"><code>{{ crit.source_ref }}</code></a>
+          {% else %}
+          —
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endif %}
+
+{% if r.mechanisms %}
+<div class="detail-section">
+  <h3>Microbial &amp; Biochemical Mechanisms ({{ r.mechanisms|length }})</h3>
+  {% for m in r.mechanisms %}
+  <div class="mechanism-box" id="mechanism-{{ m.id }}">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .5rem;">
+      <h4 style="margin: 0; font-size: 1.15rem;">{{ m.name }}</h4>
+      <div>
+        <span class="badge">{{ m.process | replace('_', ' ') }}</span>
+        {% if m.microbial %}
+        <span class="badge" style="background: #e2f5e8; color: #1d733a;">Microbial</span>
+        {% endif %}
+      </div>
+    </div>
+
+    {% if m.organisms %}
+    <p style="margin: .4rem 0 .2rem; font-size: .92rem;">
+      <strong>Associated Organisms:</strong>
+      {% for org in m.organisms %}
+        {% if org.url %}
+        <a href="{{ org.url }}" target="_blank" rel="noopener"><em>{{ org.label }}</em> (<code>{{ org.id }}</code>)</a>{% if not loop.last %}, {% endif %}
+        {% else %}
+        <em>{{ org.label }}</em> (<code>{{ org.id }}</code>){% if not loop.last %}, {% endif %}
+        {% endif %}
+      {% endfor %}
+    </p>
+    {% endif %}
+
+    {% if m.description %}
+    <p style="margin: .5rem 0; font-size: .95rem;">{{ m.description }}</p>
+    {% endif %}
+
+    {% if m.context %}
+    <div style="background: var(--code); border-radius: 6px; padding: .6rem .8rem; margin: .6rem 0; font-size: .88rem;">
+      <strong>Experimental Context &amp; Analytical Limits:</strong><br>
+      {{ m.context }}
+    </div>
+    {% endif %}
+
+    {% if m.evidence %}
+    <div style="margin-top: .6rem;">
+      <strong style="font-size: .88rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Curated Evidence Points:</strong>
+      {% for ev in m.evidence %}
+      <div class="evidence-item">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: .2rem;">
+          <span class="badge {% if ev.supports == 'support' %}badge-support{% elif ev.supports == 'partial' %}badge-partial{% else %}badge-refute{% endif %}">
+            {{ ev.supports | capitalize }}
+          </span>
+          {% if ev.source_ref %}
+          <a href="#source-{{ ev.source_ref }}" style="font-size: .85rem;">Source: <code>{{ ev.source_ref }}</code></a>
+          {% endif %}
+        </div>
+        <div style="font-size: .9rem;">{{ ev.explanation }}</div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if r.sources %}
+<div class="detail-section">
+  <h3>Sources &amp; References</h3>
+  <ol style="padding-left: 1.2rem; margin: .4rem 0;">
+    {% for s in r.sources %}
+    <li id="source-{{ s.id }}" style="margin-bottom: .6rem; font-size: .92rem;">
+      <strong>{{ s.id }}</strong>: {{ s.title }}
+      {% if s.url %}
+      <br><a href="{{ s.url }}" target="_blank" rel="noopener" style="font-size: .85rem; word-break: break-all;">{{ s.url }}</a>
+      {% endif %}
+      {% if s.accessed_on %}
+      <span style="font-size: .82rem; color: var(--muted);">(accessed {{ s.accessed_on }})</span>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+</div>
+{% endif %}
+
+{% if r.curation_history %}
+<div class="detail-section">
+  <h3>Curation History</h3>
+  <table style="font-size: .88rem;">
+    <thead>
+      <tr>
+        <th scope="col">Timestamp</th>
+        <th scope="col">Curator</th>
+        <th scope="col">Action</th>
+        <th scope="col">Summary</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for ch in r.curation_history %}
+      <tr>
+        <td><code>{{ ch.timestamp }}</code></td>
+        <td>{{ ch.curator }}</td>
+        <td><span class="badge">{{ ch.action }}</span></td>
+        <td>{{ ch.summary }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endif %}
+
+<p class="history" style="font-size: .85rem; color: var(--muted); margin-top: 1.5rem;">
+  Record source: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/{{ source_path }}"><code>{{ source_path }}</code></a>
+</p>
+{% endblock %}

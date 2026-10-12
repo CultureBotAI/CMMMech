@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% block title %}CMMMech · Critical Materials, Minerals & Microbial Mechanisms{% endblock %}
+{% block content %}
+<div class="hero">
+  <h1>Critical Materials, Minerals &amp; Microbial Mechanisms</h1>
+  <p class="lede">An evidence-backed knowledge base for <strong>critical minerals and materials</strong>, connecting strategic commodities and mineral hosts to <strong>microbial extraction, biomineralization, and recovery mechanisms</strong>.</p>
+</div>
+
+<div class="stats-grid">
+  <div class="stat-card">
+    <div class="stat-number">{{ total_materials }}</div>
+    <div class="stat-label">Materials &amp; Commodities</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-number">{{ total_mechanisms }}</div>
+    <div class="stat-label">Biological Mechanisms</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-number">{{ materials_with_mechs }}</div>
+    <div class="stat-label">Materials with Bio-Mechanisms</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-number">{{ critical_materials_count }}</div>
+    <div class="stat-label">Designated Critical Materials</div>
+  </div>
+</div>
+
+<h2>Material Kinds</h2>
+<p>Records are classified into six distinct material kinds to preserve the boundary between chemical elements, crystalline minerals, commercial commodities, and secondary waste feeds.</p>
+
+<ul class="cards">
+  {% for k in kinds %}
+  <li>
+    <a href="{{ root }}{{ k.page }}">
+      <div class="card-title">
+        <strong>{{ k.label }}</strong>
+        <span class="count">{{ k.count }} records</span>
+      </div>
+      <p class="card-desc">{{ k.blurb }}</p>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>Microbial Transformation Processes</h2>
+<p>Each biological mechanism captures experimental feedstocks, microbial agents, reaction conditions, and formal evidence evaluations.</p>
+
+<ul class="cards">
+  {% for m in processes %}
+  <li>
+    <a href="{{ root }}{{ m.page }}">
+      <div class="card-title">
+        <strong>{{ m.label }}</strong>
+        <span class="count">{{ m.count }} mechanisms</span>
+      </div>
+      <p class="card-desc">{{ m.blurb }}</p>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>Highlighted Strategic Materials</h2>
+<p>Representative materials spanning battery elements, rare earths, platinum group metals, and secondary resources:</p>
+
+<div class="record-table-scroll" role="region" aria-label="Featured materials" tabindex="0">
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Material</th>
+      <th scope="col">Kind</th>
+      <th scope="col">Criticality</th>
+      <th scope="col">Key Mechanisms</th>
+      <th scope="col">Curated Evidence Boundary</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for feat in featured %}
+    <tr>
+      <td><a href="{{ root }}materials/{{ feat.slug }}.html"><strong>{{ feat.name }}</strong></a></td>
+      <td><span class="badge">{{ feat.material_kind | replace('_', ' ') }}</span></td>
+      <td>
+        {% if feat.is_critical %}
+        <span class="badge badge-critical">Critical</span>
+        {% else %}
+        —
+        {% endif %}
+      </td>
+      <td>
+        {% for proc in feat.mechanism_processes %}
+        <span class="badge" style="font-size: .75rem; margin-right: .2rem;">{{ proc | replace('_', ' ') }}</span>
+        {% endfor %}
+      </td>
+      <td style="font-size: .88rem; color: var(--muted);">{{ feat.evidence_boundary }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+
+<p style="margin-top: 1.5rem; text-align: center;">
+  <a href="{{ root }}browse.html" style="display: inline-block; padding: .6rem 1.4rem; background: var(--accent); color: #fff; border-radius: 8px; font-weight: 600; text-decoration: none;">Browse all {{ total_materials }} materials &rarr;</a>
+</p>
+
+<h2>Evidence &amp; Curation Contract</h2>
+<div class="detail-section">
+  <p>CMMMech records enforce rigorous scientific limits:</p>
+  <ul>
+    <li><strong>Chemical identity separation:</strong> An element (e.g. <em>Lithium</em>) is strictly distinct from its mineral hosts (e.g. <em>Spodumene</em>, <em>Jadarite</em>) and its commercial form.</li>
+    <li><strong>Mechanism evidence boundaries:</strong> Laboratory solubilization or binding is explicitly distinguished from full industrial recovery, elemental yield, or isolated pure metal.</li>
+    <li><strong>Negative &amp; control evidence:</strong> Abiotic controls, matched acid baselines, and null results are recorded alongside positive extraction claims to prevent inflated efficacy.</li>
+    <li><strong>Structured provenance:</strong> Every material links to primary research citations, ChEBI, and NCBI Taxonomy identifiers.</li>
+  </ul>
+</div>
+{% endblock %}

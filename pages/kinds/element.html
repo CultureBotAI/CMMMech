@@ -1,0 +1,2135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elements · CMMMech</title>
+<link rel="stylesheet" href="../style.css">
+<script src="../theme-toggle.js"></script>
+</head>
+<body>
+<header>
+  <a class="brand" href="../index.html">CMMMech</a>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../browse.html">Browse</a>
+    <a href="https://github.com/CultureBotAI/CMMMech">GitHub</a>
+  </nav>
+</header>
+<main>
+<div class="breadcrumbs">
+  <a href="../index.html">CMMMech</a> &gt;
+  <a href="../browse.html">Browse</a> &gt;
+  <span>Elements</span>
+</div>
+
+<h1>Elements</h1>
+<p class="lede">Chemical elements distinct from ores, alloys, and waste streams.</p>
+
+<form id="record-filters" class="record-filters" hidden>
+  <div>
+    <label for="record-query">Search materials</label>
+    <input id="record-query" type="search" placeholder="Name, formula, organism, process…">
+  </div>
+  <div>
+    <label for="record-kind">Material Kind</label>
+    <select id="record-kind">
+      <option value="">All kinds (64)</option>
+      <option value="element">Element (64)</option>
+      <option value="mineral">Mineral (68)</option>
+      <option value="secondary_resource">Secondary resource (49)</option>
+      <option value="commodity">Commodity (32)</option>
+      <option value="primary_resource">Primary resource (14)</option>
+      <option value="mineral_group">Mineral group (4)</option>
+    </select>
+  </div>
+  <div>
+    <label for="record-mechanism">Mechanism Process</label>
+    <select id="record-mechanism">
+      <option value="">All processes</option>
+      <option value="bioleaching">Bioleaching (93)</option>
+      <option value="biomineralization">Biomineralization (32)</option>
+      <option value="redox_transformation">Redox transformation (24)</option>
+      <option value="biosorption">Biosorption (12)</option>
+      <option value="separation">Separation (8)</option>
+      <option value="recovery">Recovery (5)</option>
+      <option value="other">Other (20)</option>
+    </select>
+  </div>
+  <div>
+    <label for="record-criticality">Criticality</label>
+    <select id="record-criticality">
+      <option value="">All criticality</option>
+      <option value="critical">Designated Critical</option>
+    </select>
+  </div>
+  <button type="reset">Clear filters</button>
+</form>
+
+<p id="record-count" role="status" aria-live="polite">64 materials</p>
+<p id="record-empty" hidden>No materials match your query or filters. Clear filters to show all.</p>
+
+<div class="record-table-scroll" role="region" aria-label="Materials table" tabindex="0">
+<table id="record-table">
+  <caption>Curated Materials and Minerals</caption>
+  <thead>
+    <tr>
+      <th scope="col">Material</th>
+      <th scope="col">Kind</th>
+      <th scope="col">Criticality</th>
+      <th scope="col">Mechanisms</th>
+      <th scope="col">Microbial Agents</th>
+      <th scope="col">Identifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-kind="element"
+        data-mechanisms="bioleaching"
+        data-critical="true"
+        data-search="aluminium aluminium element aluminium (al), the chemical element, distinct from its ions, alumina, bauxite ores and red-mud wastes. the dated us designation maps the named aluminum commodity to this element without assigning criticality to every al-bearing material. the curated mechanism concerns laboratory aluminium mobilization from a mixed red-mud sample, not production of aluminium metal. chebi:28984 aluminium atom bioleaching aspergillus niger ncbitaxon:5061 united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/aluminium.html"><strong>Aluminium</strong></a>
+        <p class="record-desc">Aluminium (Al), the chemical element, distinct from its ions, alumina, bauxite ores and red-mud wastes. The dated US designation maps the named aluminum commodity to this element without assigning criticality to every Al-bearing material. The curated mechanism concerns laboratory aluminium mobilization from a mixed red-mud sample, not production of aluminium metal.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Aspergillus niger</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:28984</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="antimony antimony element antimony (sb), represented as an element distinct from antimonate feed, sorbed antimonite and sulfide-bearing products. a sediment-inoculated laboratory experiment supports transformation through coupled microbial and chemical reactions under sulfidogenic conditions. the united states 2025 critical-mineral designation names the antimony commodity; it does not designate every sb compound, host mineral or secondary resource. chebi:30513 antimony atom redox_transformation united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/antimony.html"><strong>Antimony</strong></a>
+        <p class="record-desc">Antimony (Sb), represented as an element distinct from antimonate feed, sorbed antimonite and sulfide-bearing products. A sediment-inoculated laboratory experiment supports transformation through coupled microbial and chemical reactions under sulfidogenic conditions. The United States 2025 critical-mineral designation names the antimony commodity; it does not designate every Sb compound, host mineral or secondary resource.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <div><code>CHEBI:30513</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="bioleaching"
+        data-critical="true"
+        data-search="arsenic arsenic element arsenic (as), grounded by the neutral-atom chebi identifier. arsenate, arsenite, gallium arsenide and metal hydroxide sludge are different chemical or resource entities. the us designation maps the listed arsenic commodity to this element without designating all arsenic-bearing wastes. arsenic was retained in the final 2025 list despite proposed removal in the draft. the mechanism concerns co-mobilization from sludge in the same experiment curated for gallium, not an independent replication or an arsenic detoxification process. chebi:27563 arsenic atom bioleaching acidithiobacillus thiooxidans ncbitaxon:930 united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/arsenic.html"><strong>Arsenic</strong></a>
+        <p class="record-desc">Arsenic (As), grounded by the neutral-atom ChEBI identifier. Arsenate, arsenite, gallium arsenide and metal hydroxide sludge are different chemical or resource entities. The US designation maps the listed arsenic commodity to this element without designating all arsenic-bearing wastes. Arsenic was retained in the final 2025 list despite proposed removal in the draft. The mechanism concerns co-mobilization from sludge in the same experiment curated for gallium, not an independent replication or an arsenic detoxification process.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Acidithiobacillus thiooxidans</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:27563</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms=""
+        data-critical="true"
+        data-search="beryllium beryllium element beryllium (be), represented as an element distinct from its ions, compounds, isotopes, host minerals, alloys and commodity streams. the us 2025 designation names the beryllium commodity and does not designate every compound or host material. no microbial extraction, transformation or recovery mechanism is accepted in this identity and designation record; unresolved experimental leads are retained in the accompanying research dossier. chebi:30501 beryllium atom united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/beryllium.html"><strong>Beryllium</strong></a>
+        <p class="record-desc">Beryllium (Be), represented as an element distinct from its ions, compounds, isotopes, host minerals, alloys and commodity streams. The US 2025 designation names the beryllium commodity and does not designate every compound or host material. No microbial extraction, transformation or recovery mechanism is accepted in this identity and designation record; unresolved experimental leads are retained in the accompanying research dossier.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">None</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <div><code>CHEBI:30501</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="other"
+        data-critical="true"
+        data-search="bismuth bismuth element bismuth (bi), represented as an element distinct from bismuth subsalicylate, dissolved bismuth and intracellular bi-bearing material. a laboratory fusarium isolate accumulated bi while growing on bismuth subsalicylate. the accumulated material was associated with phosphorus-rich granules, without an identified mineral phase or established bi oxidation-state change. the united states 2025 designation names the bismuth commodity and does not automatically apply to every compound or resource. chebi:33301 bismuth atom other fusarium sp. bi ncbitaxon:292829 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/bismuth.html"><strong>Bismuth</strong></a>
+        <p class="record-desc">Bismuth (Bi), represented as an element distinct from bismuth subsalicylate, dissolved bismuth and intracellular Bi-bearing material. A laboratory Fusarium isolate accumulated Bi while growing on bismuth subsalicylate. The accumulated material was associated with phosphorus-rich granules, without an identified mineral phase or established Bi oxidation-state change. The United States 2025 designation names the bismuth commodity and does not automatically apply to every compound or resource.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Fusarium sp. BI</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33301</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="other"
+        data-critical="true"
+        data-search="boron boron element the element b, distinct from boric acid, borate ions, borate mineral species and commercial borates. the unqualified boron entry in annex ii of the original eu 2024 critical-raw-materials regulation is mapped to this element; the separately metallurgy-qualified strategic entry is not broadened here. chebi:27560 boron atom other streptomyces ncbitaxon:1883 european union regulation (eu) 2024/1252, annex ii, critical raw materials (critical)">
+      <td>
+        <a href="../materials/boron.html"><strong>Boron</strong></a>
+        <p class="record-desc">The element B, distinct from boric acid, borate ions, borate mineral species and commercial borates. The unqualified boron entry in Annex II of the original EU 2024 critical-raw-materials regulation is mapped to this element; the separately metallurgy-qualified strategic entry is not broadened here.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          European Union Regulation (EU) 2024/1252, Annex II, critical raw materials (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Streptomyces</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:27560</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="biomineralization"
+        data-critical="true"
+        data-search="cadmium cadmium element cadmium (cd), atomic number 48. the neutral-atom identifier grounds the element, not cd(ii), cadmium chloride, cadmium sulfide, or a mineral species. india&#39;s june 2023 committee list names the cadmium material; that dated designation is mapped to this element without extending it to its compounds. this is the 30-material committee assessment, not a claim about the separate statutory critical/strategic schedule or current law. curated laboratory evidence concerns culture-associated cadmium-sulfide formation. chebi:22977 cadmium atom biomineralization klebsiella planticola ncbitaxon:575 india ministry of mines committee list of 30 critical minerals for india (critical)">
+      <td>
+        <a href="../materials/cadmium.html"><strong>Cadmium</strong></a>
+        <p class="record-desc">Cadmium (Cd), atomic number 48. The neutral-atom identifier grounds the element, not Cd(II), cadmium chloride, cadmium sulfide, or a mineral species. India&#39;s June 2023 committee list names the cadmium material; that dated designation is mapped to this element without extending it to its compounds. This is the 30-material committee assessment, not a claim about the separate statutory critical/strategic schedule or current law. Curated laboratory evidence concerns culture-associated cadmium-sulfide formation.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          India Ministry of Mines committee list of 30 Critical Minerals for India (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biomineralization</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Klebsiella planticola</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:22977</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="biomineralization"
+        data-critical="true"
+        data-search="cerium cerium element cerium (ce), a lanthanoid chemical element. the united states&#39; named cerium commodity designation is mapped to this element without extending it to every cerium compound. the experiment uses soluble cecl3 and yields cerium-bearing phosphate/oxalate solids, not elemental cerium metal. chebi:33369 cerium atom biomineralization aspergillus niger atcc 1015 ncbitaxon:380704 united states department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/cerium.html"><strong>Cerium</strong></a>
+        <p class="record-desc">Cerium (Ce), a lanthanoid chemical element. The United States&#39; named cerium commodity designation is mapped to this element without extending it to every cerium compound. The experiment uses soluble CeCl3 and yields cerium-bearing phosphate/oxalate solids, not elemental cerium metal.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biomineralization</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Aspergillus niger ATCC 1015</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33369</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="other"
+        data-critical="true"
+        data-search="cesium cesium element cesium (caesium; cs), represented as an element distinct from cs(i) salts, radioactive isotopes, pollucite mineral and cesium-bearing commodities or wastes. a laboratory study measured cs retained by washed bifidobacterium adolescentis biomass after growth in non-radioactive cesium chloride. the us 2025 critical-mineral designation names the cesium commodity; it does not designate every cesium compound or imply deployment of a microbial recovery process. chebi:30514 caesium atom other bifidobacterium adolescentis ncbitaxon:1680 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/cesium.html"><strong>Cesium</strong></a>
+        <p class="record-desc">Cesium (caesium; Cs), represented as an element distinct from Cs(I) salts, radioactive isotopes, pollucite mineral and cesium-bearing commodities or wastes. A laboratory study measured Cs retained by washed Bifidobacterium adolescentis biomass after growth in non-radioactive cesium chloride. The US 2025 critical-mineral designation names the cesium commodity; it does not designate every cesium compound or imply deployment of a microbial recovery process.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Bifidobacterium adolescentis</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:30514</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="chromium chromium element chromium (cr), represented as an element. its identity differs from chromate oxyanions, potassium chromate reagent, chromium-bearing precipitates and chromite mineral species. the dated us designation names the chromium mineral commodity and is mapped to its elemental identity here; it is not inherited by every chromium compound or waste. chebi:28073 chromium atom redox_transformation shewanella oneidensis mr-1 ncbitaxon:211586 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/chromium.html"><strong>Chromium</strong></a>
+        <p class="record-desc">Chromium (Cr), represented as an element. Its identity differs from chromate oxyanions, potassium chromate reagent, chromium-bearing precipitates and chromite mineral species. The dated US designation names the chromium mineral commodity and is mapped to its elemental identity here; it is not inherited by every chromium compound or waste.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Shewanella oneidensis MR-1</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:28073</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="bioleaching"
+        data-critical="true"
+        data-search="cobalt cobalt element cobalt (co), atomic number 27. this element-level record uses the chebi cobalt-atom identifier for chemical identity. cobalt-bearing cathodes and mixed battery black mass are material forms and secondary resources, respectively; neither is a mineral species or synonymous with the element. the dated us designation maps the listed cobalt commodity to this element record; it does not designate every cobalt-bearing mineral or waste stream. chebi:27638 cobalt atom bioleaching european union regulation (eu) 2024/1252, annex ii, section 1, list of critical raw materials (critical); united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/cobalt.html"><strong>Cobalt</strong></a>
+        <p class="record-desc">Cobalt (Co), atomic number 27. This element-level record uses the ChEBI cobalt-atom identifier for chemical identity. Cobalt-bearing cathodes and mixed battery black mass are material forms and secondary resources, respectively; neither is a mineral species or synonymous with the element. The dated US designation maps the listed cobalt commodity to this element record; it does not designate every cobalt-bearing mineral or waste stream.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          European Union Regulation (EU) 2024/1252, Annex II, Section 1, List of critical raw materials (critical); United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <div><code>CHEBI:27638</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="bioleaching"
+        data-critical="true"
+        data-search="copper copper element copper is the element cu, grounded by the chebi copper-atom identifier. the united states 2025 designation names the copper commodity; it does not designate every copper-bearing mineral or waste. experimental copper released from chalcopyrite concentrate is distinct from elemental copper metal and from a recovered, purified product. chebi:28694 copper atom bioleaching acidithiobacillus caldus sulfobacillus thermosulfidooxidans leptospirillum ferriphilum ncbitaxon:33059 ncbitaxon:28034 ncbitaxon:178606 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/copper.html"><strong>Copper</strong></a>
+        <p class="record-desc">Copper is the element Cu, grounded by the ChEBI copper-atom identifier. The United States 2025 designation names the copper commodity; it does not designate every copper-bearing mineral or waste. Experimental copper released from chalcopyrite concentrate is distinct from elemental copper metal and from a recovered, purified product.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Acidithiobacillus caldus</li>
+          <li>Sulfobacillus thermosulfidooxidans</li>
+          <li>Leptospirillum ferriphilum</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:28694</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="biosorption"
+        data-critical="true"
+        data-search="dysprosium dysprosium element the element dy, distinct from its dissolved ions, salts, magnets, minerals and waste streams. the dated us designation concerns the named dysprosium mineral commodity, without assigning criticality to every dy-bearing material. the mechanism records a laboratory study of dried brewing-yeast biomass with synthetic dy solutions; it does not establish recovery from actual industrial effluent or a purified dysprosium product. chebi:33377 dysprosium atom biosorption saccharomyces cerevisiae ncbitaxon:4932 united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/dysprosium.html"><strong>Dysprosium</strong></a>
+        <p class="record-desc">The element Dy, distinct from its dissolved ions, salts, magnets, minerals and waste streams. The dated US designation concerns the named dysprosium mineral commodity, without assigning criticality to every Dy-bearing material. The mechanism records a laboratory study of dried brewing-yeast biomass with synthetic Dy solutions; it does not establish recovery from actual industrial effluent or a purified dysprosium product.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biosorption</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Saccharomyces cerevisiae</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33377</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="other"
+        data-critical="true"
+        data-search="erbium erbium element the element er, distinct from its dissolved ions, experimental nitrate salt, host minerals and manufactured materials. the dated us designation concerns the named erbium mineral commodity, without transferring criticality to every er-bearing substance. the curated laboratory experiment documents element in harvested cyanobacterial biomass, not a resolved uptake pathway, purified metal recovery or industrial deployment. chebi:33379 erbium atom other limnospira platensis ncbitaxon:118562 united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/erbium.html"><strong>Erbium</strong></a>
+        <p class="record-desc">The element Er, distinct from its dissolved ions, experimental nitrate salt, host minerals and manufactured materials. The dated US designation concerns the named erbium mineral commodity, without transferring criticality to every Er-bearing substance. The curated laboratory experiment documents element in harvested cyanobacterial biomass, not a resolved uptake pathway, purified metal recovery or industrial deployment.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Limnospira platensis</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33379</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="biosorption"
+        data-critical="true"
+        data-search="europium europium element the element eu, distinct from eu(iii), europium nitrate, oxides, mineral species and waste streams. the dated us designation concerns the named europium mineral commodity and does not transfer criticality to every eu-bearing material. laboratory evidence below concerns cyanobacterial culture-associated removal from synthetic solutions; it does not establish selective extraction, a purified product or industrial deployment. chebi:32999 europium atom biosorption anabaena sp. sag 12.82 ncbitaxon:1840102 united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/europium.html"><strong>Europium</strong></a>
+        <p class="record-desc">The element Eu, distinct from Eu(III), europium nitrate, oxides, mineral species and waste streams. The dated US designation concerns the named europium mineral commodity and does not transfer criticality to every Eu-bearing material. Laboratory evidence below concerns cyanobacterial culture-associated removal from synthetic solutions; it does not establish selective extraction, a purified product or industrial deployment.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biosorption</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Anabaena sp. SAG 12.82</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:32999</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="other"
+        data-critical="true"
+        data-search="fluorine fluorine element the element f, distinct from fluoride anion, molecular fluorine, individual organofluorine compounds, fluorite mineral and the fluorspar commodity. australia&#39;s explicitly named fluorine entry is mapped to the element; its comparative footnote about us and eu fluorspar does not establish elemental-fluorine criticality in those jurisdictions. chebi:24061 fluorine atom other pseudomonas putida ncbitaxon:303 australia department of industry, science and resources critical minerals list (critical)">
+      <td>
+        <a href="../materials/fluorine.html"><strong>Fluorine</strong></a>
+        <p class="record-desc">The element F, distinct from fluoride anion, molecular fluorine, individual organofluorine compounds, fluorite mineral and the fluorspar commodity. Australia&#39;s explicitly named Fluorine entry is mapped to the element; its comparative footnote about US and EU fluorspar does not establish elemental-fluorine criticality in those jurisdictions.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          Australia Department of Industry, Science and Resources Critical Minerals List (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Pseudomonas putida</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:24061</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="other"
+        data-critical="true"
+        data-search="gadolinium gadolinium element the element gd, distinct from its dissolved ions, experimental nitrate salt, host minerals and manufactured materials. the dated us designation concerns the named gadolinium mineral commodity, without transferring criticality to every gd-bearing substance. the curated laboratory experiment documents element in harvested cyanobacterial biomass, not a resolved uptake pathway, purified metal recovery or industrial deployment. chebi:33375 gadolinium atom other limnospira platensis ncbitaxon:118562 united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/gadolinium.html"><strong>Gadolinium</strong></a>
+        <p class="record-desc">The element Gd, distinct from its dissolved ions, experimental nitrate salt, host minerals and manufactured materials. The dated US designation concerns the named gadolinium mineral commodity, without transferring criticality to every Gd-bearing substance. The curated laboratory experiment documents element in harvested cyanobacterial biomass, not a resolved uptake pathway, purified metal recovery or industrial deployment.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Limnospira platensis</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33375</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="bioleaching"
+        data-critical="true"
+        data-search="gallium gallium element gallium (ga), grounded by the neutral-atom chebi identifier. this element record is distinct from gallium ions, gallium arsenide semiconductor material and the heterogeneous hydroxide sludge used in the experiment. the us 2025 designation maps its gallium commodity to this element; it does not designate every gallium-bearing waste. the arsenic record describes co-mobilization in the same experiment, not an independent replication. chebi:49631 gallium atom bioleaching acidithiobacillus thiooxidans ncbitaxon:930 united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/gallium.html"><strong>Gallium</strong></a>
+        <p class="record-desc">Gallium (Ga), grounded by the neutral-atom ChEBI identifier. This element record is distinct from gallium ions, gallium arsenide semiconductor material and the heterogeneous hydroxide sludge used in the experiment. The US 2025 designation maps its gallium commodity to this element; it does not designate every gallium-bearing waste. The arsenic record describes co-mobilization in the same experiment, not an independent replication.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Acidithiobacillus thiooxidans</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:49631</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="other"
+        data-critical="true"
+        data-search="germanium germanium element germanium (ge), grounded by the neutral-atom chebi identifier. this element is distinct from the geo2 reagent and dissolved germanium species used in the experiments, germanium-bearing minerals and coal wastes. the us 2025 list names the germanium commodity; its designation is mapped to this element without extending it to every germanium-bearing material. chebi:30441 germanium atom other pseudomonas putida ncbitaxon:303 united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/germanium.html"><strong>Germanium</strong></a>
+        <p class="record-desc">Germanium (Ge), grounded by the neutral-atom ChEBI identifier. This element is distinct from the GeO2 reagent and dissolved germanium species used in the experiments, germanium-bearing minerals and coal wastes. The US 2025 list names the germanium commodity; its designation is mapped to this element without extending it to every germanium-bearing material.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Pseudomonas putida</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:30441</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="other"
+        data-critical="true"
+        data-search="hafnium hafnium element hafnium (hf), distinct from its hf(iv) complexes, hafnium oxide phases, zirconium-bearing minerals and commercial alloy or waste streams. the us 2025 critical-mineral list names hafnium individually; the designation is mapped to this element without extending it to every hf-bearing material. curated evidence concerns cell-free binding of hf(iv) clusters by a purified bacterial protein, not microbial ore extraction or industrial metal recovery. chebi:33343 hafnium atom other neisseria gonorrhoeae ncbitaxon:485 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/hafnium.html"><strong>Hafnium</strong></a>
+        <p class="record-desc">Hafnium (Hf), distinct from its Hf(IV) complexes, hafnium oxide phases, zirconium-bearing minerals and commercial alloy or waste streams. The US 2025 critical-mineral list names hafnium individually; the designation is mapped to this element without extending it to every Hf-bearing material. Curated evidence concerns cell-free binding of Hf(IV) clusters by a purified bacterial protein, not microbial ore extraction or industrial metal recovery.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Neisseria gonorrhoeae</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33343</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms=""
+        data-critical="true"
+        data-search="helium helium element helium (he), grounded by the neutral-atom chebi identifier. this element record is distinct from isotope-specific preparations, commercial purity grades and helium-bearing gas resources. the original eu 2024 act lists helium as a critical raw material; this does not designate every helium-bearing resource. no microbial extraction, transformation or recovery mechanism is admitted in this record. the bounded literature assessment in the round-11 helium dossier separates helium used as a tracer or analytical/plasma gas from helium as a microbial recovery target; this is not a universal absence claim about biological interactions with helium. chebi:30217 helium atom european union regulation (eu) 2024/1252, annex ii critical raw materials (critical)">
+      <td>
+        <a href="../materials/helium.html"><strong>Helium</strong></a>
+        <p class="record-desc">Helium (He), grounded by the neutral-atom ChEBI identifier. This element record is distinct from isotope-specific preparations, commercial purity grades and helium-bearing gas resources. The original EU 2024 act lists helium as a critical raw material; this does not designate every helium-bearing resource. No microbial extraction, transformation or recovery mechanism is admitted in this record. The bounded literature assessment in the round-11 helium dossier separates helium used as a tracer or analytical/plasma gas from helium as a microbial recovery target; this is not a universal absence claim about biological interactions with helium.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          European Union Regulation (EU) 2024/1252, Annex II critical raw materials (critical)
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">None</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <div><code>CHEBI:30217</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="other"
+        data-critical="true"
+        data-search="holmium holmium element the element ho, distinct from its dissolved ions, experimental nitrate salt, host minerals and manufactured materials. the dated us designation concerns the named holmium mineral commodity, without transferring criticality to every ho-bearing substance. the curated laboratory experiment documents element in harvested cyanobacterial biomass, not a resolved uptake pathway, purified metal recovery or industrial deployment. chebi:49648 holmium atom other limnospira platensis ncbitaxon:118562 united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/holmium.html"><strong>Holmium</strong></a>
+        <p class="record-desc">The element Ho, distinct from its dissolved ions, experimental nitrate salt, host minerals and manufactured materials. The dated US designation concerns the named holmium mineral commodity, without transferring criticality to every Ho-bearing substance. The curated laboratory experiment documents element in harvested cyanobacterial biomass, not a resolved uptake pathway, purified metal recovery or industrial deployment.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Limnospira platensis</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:49648</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="biosorption"
+        data-critical="true"
+        data-search="indium indium element the element in, distinct from indium ions, salts, indium tin oxide and indium-bearing minerals or waste streams. the dated us designation concerns the named indium mineral commodity. the mechanism describes laboratory biosorption from synthetic solutions by prepared mixed microalgal biomass; it does not establish treatment of an actual indium waste stream or recovery of an isolated indium product. chebi:30430 indium atom biosorption united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/indium.html"><strong>Indium</strong></a>
+        <p class="record-desc">The element In, distinct from indium ions, salts, indium tin oxide and indium-bearing minerals or waste streams. The dated US designation concerns the named indium mineral commodity. The mechanism describes laboratory biosorption from synthetic solutions by prepared mixed microalgal biomass; it does not establish treatment of an actual indium waste stream or recovery of an isolated indium product.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biosorption</span>
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <div><code>CHEBI:30430</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="biosorption"
+        data-critical="true"
+        data-search="iridium iridium element iridium (ir), distinct from experimental hexachloroiridate(iv), metallic alloys and iridium-bearing ores or waste streams. the us 2025 list names iridium individually; this designation is mapped to the element without extending it to every ir-bearing material. curated evidence concerns laboratory adsorption and desorption using lyophilized unicellular algal biomass in synthetic solutions, not reduction to ir metal or deployment. chebi:49666 iridium atom biosorption galdieria javensis ncbitaxon:3569544 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/iridium.html"><strong>Iridium</strong></a>
+        <p class="record-desc">Iridium (Ir), distinct from experimental hexachloroiridate(IV), metallic alloys and iridium-bearing ores or waste streams. The US 2025 list names iridium individually; this designation is mapped to the element without extending it to every Ir-bearing material. Curated evidence concerns laboratory adsorption and desorption using lyophilized unicellular algal biomass in synthetic solutions, not reduction to Ir metal or deployment.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biosorption</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Galdieria javensis</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:49666</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="biomineralization"
+        data-critical="true"
+        data-search="iron iron element the element fe, distinct from its dissolved ions, iron-bearing minerals, alloys, and ore grades. the uk designation maps to the explicitly named iron entry in the government&#39;s technical annex; it does not designate every fe-bearing compound or canada&#39;s separate high-purity iron ore commodity. chebi:18248 iron atom biomineralization desulfovulcanus ferrireducens ncbitaxon:2831190 united kingdom department for business and trade critical minerals technical annex, annex 1 (critical)">
+      <td>
+        <a href="../materials/iron.html"><strong>Iron</strong></a>
+        <p class="record-desc">The element Fe, distinct from its dissolved ions, iron-bearing minerals, alloys, and ore grades. The UK designation maps to the explicitly named iron entry in the government&#39;s technical annex; it does not designate every Fe-bearing compound or Canada&#39;s separate high-purity iron ore commodity.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United Kingdom Department for Business and Trade Critical Minerals technical annex, Annex 1 (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biomineralization</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Desulfovulcanus ferrireducens</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:18248</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="biomineralization"
+        data-critical="true"
+        data-search="lanthanum lanthanum element the element la, distinct from dissolved la(iii), lanthanum chloride, lanthanum oxalate, lanthanum oxide and la-bearing minerals or wastes. the dated us designation concerns the named lanthanum mineral commodity; it does not transfer criticality to every la-bearing material. laboratory evidence below concerns fungal production of a precipitation medium and separate chemical conversion of a precipitate, not extraction from an ore. chebi:33336 lanthanum atom biomineralization aspergillus niger atcc 1015 ncbitaxon:380704 united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/lanthanum.html"><strong>Lanthanum</strong></a>
+        <p class="record-desc">The element La, distinct from dissolved La(III), lanthanum chloride, lanthanum oxalate, lanthanum oxide and La-bearing minerals or wastes. The dated US designation concerns the named lanthanum mineral commodity; it does not transfer criticality to every La-bearing material. Laboratory evidence below concerns fungal production of a precipitation medium and separate chemical conversion of a precipitate, not extraction from an ore.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biomineralization</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Aspergillus niger ATCC 1015</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33336</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="bioleaching"
+        data-critical="true"
+        data-search="lead lead element lead (pb), represented as an element distinct from dissolved lead, pyromorphite mineral and lead-bearing commodities or wastes. laboratory bacterial cultures enhanced pb release from synthetic pyromorphite, demonstrating that microbial interactions can remobilize previously immobilized lead. the united states 2025 designation names the lead commodity; it does not designate every lead compound, mineral or secondary resource. chebi:25016 lead atom bioleaching pseudomonas putida ncbitaxon:303 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/lead.html"><strong>Lead</strong></a>
+        <p class="record-desc">Lead (Pb), represented as an element distinct from dissolved lead, pyromorphite mineral and lead-bearing commodities or wastes. Laboratory bacterial cultures enhanced Pb release from synthetic pyromorphite, demonstrating that microbial interactions can remobilize previously immobilized lead. The United States 2025 designation names the lead commodity; it does not designate every lead compound, mineral or secondary resource.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Pseudomonas putida</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:25016</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="bioleaching"
+        data-critical="true"
+        data-search="lithium lithium element the element li, distinct from dissolved lithium ions, li-bearing mineral species or groups, and battery materials. the us designation below concerns the named lithium commodity in the 2025 list, not every li-containing resource. chebi:30145 lithium atom bioleaching acidithiobacillus ferrooxidans ncbitaxon:920 united states of america usgs final list of critical minerals (critical); european union regulation (eu) 2024/1252, annex ii, section 1(s), lithium (critical)">
+      <td>
+        <a href="../materials/lithium.html"><strong>Lithium</strong></a>
+        <p class="record-desc">The element Li, distinct from dissolved lithium ions, Li-bearing mineral species or groups, and battery materials. The US designation below concerns the named lithium commodity in the 2025 list, not every Li-containing resource.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical); European Union Regulation (EU) 2024/1252, Annex II, Section 1(s), lithium (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Acidithiobacillus ferrooxidans</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:30145</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="biosorption"
+        data-critical="true"
+        data-search="lutetium lutetium element lutetium is the element lu, represented here by its neutral-atom identity, distinct from dissolved lu(iii), chloride feed, host minerals and mixed rare-earth commodities. the united states designation refers to the named element in the final 2025 list of critical minerals. a laboratory mixed-chloride experiment supports lutetium biosorption associated with washed bacillus subtilis biomass; it does not establish a purified lutetium product or industrial recovery. chebi:33382 lutetium atom biosorption bacillus subtilis ncbitaxon:1423 united states final 2025 list of critical minerals (critical)">
+      <td>
+        <a href="../materials/lutetium.html"><strong>Lutetium</strong></a>
+        <p class="record-desc">Lutetium is the element Lu, represented here by its neutral-atom identity, distinct from dissolved Lu(III), chloride feed, host minerals and mixed rare-earth commodities. The United States designation refers to the named element in the Final 2025 List of Critical Minerals. A laboratory mixed-chloride experiment supports lutetium biosorption associated with washed Bacillus subtilis biomass; it does not establish a purified lutetium product or industrial recovery.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States Final 2025 List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biosorption</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Bacillus subtilis</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33382</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="biomineralization"
+        data-critical="true"
+        data-search="magnesium magnesium element magnesium (mg), the chemical element. the named magnesium commodity in the us 2025 list is mapped to this element; its designation is not inherited by every magnesium mineral. the experiment concerns magnesium-containing mineral transformation, not production of elemental magnesium metal. chebi:25107 magnesium atom biomineralization aspergillus niger atcc 1015 ncbitaxon:380704 united states us geological survey final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/magnesium.html"><strong>Magnesium</strong></a>
+        <p class="record-desc">Magnesium (Mg), the chemical element. The named magnesium commodity in the US 2025 list is mapped to this element; its designation is not inherited by every magnesium mineral. The experiment concerns magnesium-containing mineral transformation, not production of elemental magnesium metal.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States US Geological Survey Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biomineralization</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Aspergillus niger ATCC 1015</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:25107</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="manganese manganese element the element mn, distinct from its dissolved oxidation states, ligand complexes, oxide minerals, and mn-bearing commodities. the us designation below maps to the explicitly named manganese commodity in the 2025 list; it does not assign criticality to every mn-bearing compound or resource. chebi:18291 manganese atom redox_transformation pseudomonas putida gb-1 ncbitaxon:76869 united states of america usgs final list of critical minerals (critical); european union regulation (eu) 2024/1252, annex ii, section 1(u), manganese (critical)">
+      <td>
+        <a href="../materials/manganese.html"><strong>Manganese</strong></a>
+        <p class="record-desc">The element Mn, distinct from its dissolved oxidation states, ligand complexes, oxide minerals, and Mn-bearing commodities. The US designation below maps to the explicitly named manganese commodity in the 2025 list; it does not assign criticality to every Mn-bearing compound or resource.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical); European Union Regulation (EU) 2024/1252, Annex II, Section 1(u), manganese (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Pseudomonas putida GB-1</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:18291</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="molybdenum molybdenum element the element mo, distinct from molybdate ions, experimental sodium molybdate, molybdenum-blue products, molybdenite and other mo-bearing resources. the canadian designation is the named molybdenum material in its 2024 list; it does not assign criticality to every compound or ore. a laboratory dry1 culture study supports molybdenum-blue formation consistent with molybdate transformation, without an isolated-metal recovery yield or a chemically resolved product phase. chebi:28685 molybdenum atom redox_transformation gamma proteobacterium dr.y1 ncbitaxon:351651 canada canada&#39;s critical minerals list (critical)">
+      <td>
+        <a href="../materials/molybdenum.html"><strong>Molybdenum</strong></a>
+        <p class="record-desc">The element Mo, distinct from molybdate ions, experimental sodium molybdate, molybdenum-blue products, molybdenite and other Mo-bearing resources. The Canadian designation is the named molybdenum material in its 2024 list; it does not assign criticality to every compound or ore. A laboratory DRY1 culture study supports molybdenum-blue formation consistent with molybdate transformation, without an isolated-metal recovery yield or a chemically resolved product phase.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          Canada Canada&#39;s Critical Minerals List (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>gamma proteobacterium DR.Y1</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:28685</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="bioleaching biosorption"
+        data-critical="true"
+        data-search="neodymium neodymium element the element nd. the identifier grounds the element, not an nd(iii) ion, mineral species, magnet alloy, or discarded magnet. the us designation below concerns the named neodymium mineral commodity in the separate 2022 and 2025 lists; these dated designations do not assign criticality to every nd-bearing resource. the mechanisms distinguish biosorption from microbial production of a lixiviant that releases nd from a synthetic phosphate substrate. chebi:33372 neodymium atom bioleaching biosorption chlorella vulgaris gluconobacter oxydans ncbitaxon:3077 ncbitaxon:442 united states of america usgs final list of critical minerals (critical); united states of america usgs final list of critical minerals (critical); european union regulation (eu) 2024/1252, annex ii, section 1(r), light rare earth elements (neodymium membership documented in ec2017_groups) (critical)">
+      <td>
+        <a href="../materials/neodymium.html"><strong>Neodymium</strong></a>
+        <p class="record-desc">The element Nd. The identifier grounds the element, not an Nd(III) ion, mineral species, magnet alloy, or discarded magnet. The US designation below concerns the named neodymium mineral commodity in the separate 2022 and 2025 lists; these dated designations do not assign criticality to every Nd-bearing resource. The mechanisms distinguish biosorption from microbial production of a lixiviant that releases Nd from a synthetic phosphate substrate.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical); United States of America USGS Final List of Critical Minerals (critical); European Union Regulation (EU) 2024/1252, Annex II, Section 1(r), light rare earth elements (neodymium membership documented in ec2017_groups) (critical)
+        </div>
+      </td>
+      <td>
+        <strong>2</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biosorption</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Chlorella vulgaris</li>
+          <li>Gluconobacter oxydans</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33372</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="bioleaching"
+        data-critical="true"
+        data-search="nickel nickel element nickel (ni), atomic number 28. the chebi nickel-atom identifier grounds this element-level record; nickel ions, alloys, mineral species and heterogeneous laterite ores are different entities. the us designation maps the listed nickel commodity to this element and does not designate every nickel-bearing ore or waste. the curated experiment concerns nickel mobilization from particular laterite samples, not dissolution of elemental nickel. chebi:28112 nickel atom bioleaching acidithiobacillus thiooxidans ncbitaxon:930 united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/nickel.html"><strong>Nickel</strong></a>
+        <p class="record-desc">Nickel (Ni), atomic number 28. The ChEBI nickel-atom identifier grounds this element-level record; nickel ions, alloys, mineral species and heterogeneous laterite ores are different entities. The US designation maps the listed nickel commodity to this element and does not designate every nickel-bearing ore or waste. The curated experiment concerns nickel mobilization from particular laterite samples, not dissolution of elemental nickel.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Acidithiobacillus thiooxidans</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:28112</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="bioleaching"
+        data-critical="true"
+        data-search="niobium niobium element the element nb, also called columbium, distinct from niobium ions, oxides, host minerals, alloys and niobium-bearing furnace wastes. the united states 2025 list&#39;s niobium entry is mapped to this element; it does not automatically designate a waste feed as critical. the curated experiment reports condition-dependent niobium release in an activated-sludge-derived culture, with unresolved controls and analytical preparation limiting causal inference. chebi:33344 niobium atom bioleaching united states department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/niobium.html"><strong>Niobium</strong></a>
+        <p class="record-desc">The element Nb, also called columbium, distinct from niobium ions, oxides, host minerals, alloys and niobium-bearing furnace wastes. The United States 2025 list&#39;s Niobium entry is mapped to this element; it does not automatically designate a waste feed as critical. The curated experiment reports condition-dependent niobium release in an activated-sludge-derived culture, with unresolved controls and analytical preparation limiting causal inference.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <div><code>CHEBI:33344</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="osmium osmium element osmium (os), distinct from osmium chlorides, oxides, coordination complexes and platinum-group ores or commodities. australia&#39;s 20 february 2024 critical-minerals list includes osmium through its explicitly enumerated platinum-group-elements entry; this grouped designation is not a separate unqualified listing of every osmium-bearing material. curated microbial evidence is a historical cell-extract experiment with qualified product assignments, not a demonstrated industrial recovery process. chebi:30687 osmium atom redox_transformation australia department of industry, science and resources critical minerals list (platinum-group-elements entry, including osmium by footnote 16) (critical)">
+      <td>
+        <a href="../materials/osmium.html"><strong>Osmium</strong></a>
+        <p class="record-desc">Osmium (Os), distinct from osmium chlorides, oxides, coordination complexes and platinum-group ores or commodities. Australia&#39;s 20 February 2024 critical-minerals list includes osmium through its explicitly enumerated platinum-group-elements entry; this grouped designation is not a separate unqualified listing of every osmium-bearing material. Curated microbial evidence is a historical cell-extract experiment with qualified product assignments, not a demonstrated industrial recovery process.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          Australia Department of Industry, Science and Resources Critical Minerals List (platinum-group-elements entry, including osmium by footnote 16) (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <div><code>CHEBI:30687</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="palladium palladium element palladium (pd), chemical element with atomic number 46. this record concerns laboratory reduction of dissolved pd(ii) to cell-associated elemental pd(0), not extraction from a palladium mineral or an industrial recovery operation. chebi:33363 palladium atom redox_transformation desulfovibrio desulfuricans ncbitaxon:876 united states of america u.s. department of the interior final list of critical minerals (critical); european union regulation (eu) 2024/1252, annex ii, section 1(aa), platinum group metals (palladium membership documented in ec2017_groups) (critical)">
+      <td>
+        <a href="../materials/palladium.html"><strong>Palladium</strong></a>
+        <p class="record-desc">Palladium (Pd), chemical element with atomic number 46. This record concerns laboratory reduction of dissolved Pd(II) to cell-associated elemental Pd(0), not extraction from a palladium mineral or an industrial recovery operation.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical); European Union Regulation (EU) 2024/1252, Annex II, Section 1(aa), platinum group metals (palladium membership documented in ec2017_groups) (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Desulfovibrio desulfuricans</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33363</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="bioleaching"
+        data-critical="true"
+        data-search="phosphorus phosphorus element phosphorus (p), the chemical element. canada&#39;s named phosphorus material designation is mapped to this element; it is not a designation of every phosphate salt or mineral. the experiment concerns phosphate mobilization from a mixed struvite/dittmarite feed, not elemental phosphorus production. chebi:28659 phosphorus atom bioleaching aspergillus niger atcc 1015 ncbitaxon:380704 canada natural resources canada critical minerals list (critical)">
+      <td>
+        <a href="../materials/phosphorus.html"><strong>Phosphorus</strong></a>
+        <p class="record-desc">Phosphorus (P), the chemical element. Canada&#39;s named phosphorus material designation is mapped to this element; it is not a designation of every phosphate salt or mineral. The experiment concerns phosphate mobilization from a mixed struvite/dittmarite feed, not elemental phosphorus production.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          Canada Natural Resources Canada Critical Minerals List (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Aspergillus niger ATCC 1015</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:28659</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="platinum platinum element platinum (pt). the element is distinct from its experimental dissolved chloro-complexes, the potassium salts used to prepare them, and platinum-bearing minerals or wastes. the us 2025 designation names the platinum commodity individually; it is mapped here to the element without designating every platinum compound or secondary resource as critical. curated evidence concerns laboratory transformation in the presence of bacterial biomass, with substantial abiotic reduction and no demonstrated isolated-metal yield or industrial use. chebi:33364 platinum atom redox_transformation cupriavidus metallidurans ch34 ncbitaxon:266264 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/platinum.html"><strong>Platinum</strong></a>
+        <p class="record-desc">Platinum (Pt). The element is distinct from its experimental dissolved chloro-complexes, the potassium salts used to prepare them, and platinum-bearing minerals or wastes. The US 2025 designation names the platinum commodity individually; it is mapped here to the element without designating every platinum compound or secondary resource as critical. Curated evidence concerns laboratory transformation in the presence of bacterial biomass, with substantial abiotic reduction and no demonstrated isolated-metal yield or industrial use.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Cupriavidus metallidurans CH34</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33364</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="separation"
+        data-critical="true"
+        data-search="praseodymium praseodymium element the element pr, distinct from dissolved pr(iii), its salts and oxides, pr-containing magnet alloys and ore or waste resources. the us2025 designation applies to the named praseodymium mineral commodity. evidence below concerns cell-free protein chromatography of a synthetic binary solution, not microbial growth on an ore or industrial recovery. chebi:49828 praseodymium atom separation methylobacterium sp. 13mftsu3.1m2 ncbitaxon:1502776 united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/praseodymium.html"><strong>Praseodymium</strong></a>
+        <p class="record-desc">The element Pr, distinct from dissolved Pr(III), its salts and oxides, Pr-containing magnet alloys and ore or waste resources. The US2025 designation applies to the named praseodymium mineral commodity. Evidence below concerns cell-free protein chromatography of a synthetic binary solution, not microbial growth on an ore or industrial recovery.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Methylobacterium sp. 13MFTsu3.1M2</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:49828</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms=""
+        data-critical="true"
+        data-search="promethium promethium element promethium is the element pm, represented here by its neutral-atom identity, distinct from individual isotopes, dissolved ions, mineral species and rare-earth commodity mixtures. australia&#39;s critical minerals list, updated on 20 february 2024, includes a rare-earth-elements group whose footnote 17 explicitly names promethium. the designation below is that source&#39;s group-member mapping, not a separate individually scored promethium entry or a claim about other jurisdictions. this record contains verified identity and dated criticality; no microbial mechanism or recovery performance is asserted. chebi:33373 promethium atom australia australia’s critical minerals list; rare-earth-elements group, footnote 17 (critical)">
+      <td>
+        <a href="../materials/promethium.html"><strong>Promethium</strong></a>
+        <p class="record-desc">Promethium is the element Pm, represented here by its neutral-atom identity, distinct from individual isotopes, dissolved ions, mineral species and rare-earth commodity mixtures. Australia&#39;s Critical Minerals List, updated on 20 February 2024, includes a rare-earth-elements group whose footnote 17 explicitly names promethium. The designation below is that source&#39;s group-member mapping, not a separate individually scored promethium entry or a claim about other jurisdictions. This record contains verified identity and dated criticality; no microbial mechanism or recovery performance is asserted.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          Australia Australia’s Critical Minerals List; rare-earth-elements group, footnote 17 (critical)
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">None</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <div><code>CHEBI:33373</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="biosorption"
+        data-critical="true"
+        data-search="rhenium rhenium element rhenium (re), represented as an element distinct from its ions, compounds, isotopes, host minerals, alloys and commodity streams. the us 2025 designation names the rhenium commodity and does not designate every compound or host material. a laboratory batch study tested inactive brewer&#39;s yeast biomass for rhenium association from synthetic perrhenate solutions. this biosorption record does not assert microbial rhenium reduction or isolated-metal recovery. chebi:49882 rhenium atom biosorption saccharomyces cerevisiae ncbitaxon:4932 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/rhenium.html"><strong>Rhenium</strong></a>
+        <p class="record-desc">Rhenium (Re), represented as an element distinct from its ions, compounds, isotopes, host minerals, alloys and commodity streams. The US 2025 designation names the rhenium commodity and does not designate every compound or host material. A laboratory batch study tested inactive brewer&#39;s yeast biomass for rhenium association from synthetic perrhenate solutions. This biosorption record does not assert microbial rhenium reduction or isolated-metal recovery.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biosorption</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Saccharomyces cerevisiae</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:49882</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="rhodium rhodium element rhodium (rh). the element is distinct from the rh(iii) chloride hydrate used as experimental feed, monometallic biomass-supported particles and mixed pdrh nanoparticles. the us 2025 list names the rhodium commodity individually; that designation is mapped to the element without extending it to every rh-bearing compound, mineral or secondary resource. curated evidence concerns laboratory transformation in synthetic solutions, not extraction from ore, purified-metal recovery or industrial deployment. chebi:33359 rhodium atom redox_transformation geobacter sulfurreducens ncbitaxon:35554 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/rhodium.html"><strong>Rhodium</strong></a>
+        <p class="record-desc">Rhodium (Rh). The element is distinct from the Rh(III) chloride hydrate used as experimental feed, monometallic biomass-supported particles and mixed PdRh nanoparticles. The US 2025 list names the rhodium commodity individually; that designation is mapped to the element without extending it to every Rh-bearing compound, mineral or secondary resource. Curated evidence concerns laboratory transformation in synthetic solutions, not extraction from ore, purified-metal recovery or industrial deployment.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>2</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Geobacter sulfurreducens</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33359</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="other"
+        data-critical="true"
+        data-search="rubidium rubidium element rubidium (rb), represented as an element distinct from its ions, compounds, isotopes, host minerals, alloys and commodity streams. the us 2025 designation names the rubidium commodity and does not designate every compound or host material. a laboratory experiment tracked light-dependent uptake of rubidium-86 ions by intact phototrophic bacteria as a probe of potassium transport. this does not establish rubidium recovery from ore, brine or waste. chebi:33322 rubidium atom other cereibacter sphaeroides ncbitaxon:1063 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/rubidium.html"><strong>Rubidium</strong></a>
+        <p class="record-desc">Rubidium (Rb), represented as an element distinct from its ions, compounds, isotopes, host minerals, alloys and commodity streams. The US 2025 designation names the rubidium commodity and does not designate every compound or host material. A laboratory experiment tracked light-dependent uptake of rubidium-86 ions by intact phototrophic bacteria as a probe of potassium transport. This does not establish rubidium recovery from ore, brine or waste.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Cereibacter sphaeroides</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33322</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="other"
+        data-critical="true"
+        data-search="ruthenium ruthenium element ruthenium (ru). this element record is distinct from the dissolved ru(iii) chloride feed, cell-associated oxidized ruthenium material, and pd/ru catalyst preparations in the curated laboratory study. the us 2025 list names the ruthenium commodity individually; this maps to the element without extending criticality to every ruthenium compound, mineral or waste. the evidence supports biomass-associated deposition, without demonstrating elemental ru recovery, a microbial enzyme requirement or industrial operation. chebi:30682 ruthenium atom other bacillus benzoevorans ncbitaxon:1456 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/ruthenium.html"><strong>Ruthenium</strong></a>
+        <p class="record-desc">Ruthenium (Ru). This element record is distinct from the dissolved Ru(III) chloride feed, cell-associated oxidized ruthenium material, and Pd/Ru catalyst preparations in the curated laboratory study. The US 2025 list names the ruthenium commodity individually; this maps to the element without extending criticality to every ruthenium compound, mineral or waste. The evidence supports biomass-associated deposition, without demonstrating elemental Ru recovery, a microbial enzyme requirement or industrial operation.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Bacillus benzoevorans</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:30682</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="biosorption"
+        data-critical="true"
+        data-search="samarium samarium element the element sm, distinct from sm(iii), samarium nitrate, mineral species, alloys and waste streams. the dated us designation concerns the named samarium mineral commodity, without assigning that designation to every sm-bearing material. the mechanism concerns laboratory culture-associated depletion from a synthetic solution and qualitative biomass enrichment, not a purified samarium product or industrial process. chebi:33374 samarium atom biosorption anabaena cylindrica pcc 7122 ncbitaxon:272123 united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/samarium.html"><strong>Samarium</strong></a>
+        <p class="record-desc">The element Sm, distinct from Sm(III), samarium nitrate, mineral species, alloys and waste streams. The dated US designation concerns the named samarium mineral commodity, without assigning that designation to every Sm-bearing material. The mechanism concerns laboratory culture-associated depletion from a synthetic solution and qualitative biomass enrichment, not a purified samarium product or industrial process.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biosorption</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Anabaena cylindrica PCC 7122</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33374</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="separation"
+        data-critical="true"
+        data-search="scandium scandium element the element sc, distinct from dissolved sc(iii), scandium chloride, scandium oxide, sc-bearing minerals and waste feedstocks. the us2025 designation concerns the named scandium mineral commodity. laboratory evidence below uses an immobilized bacterial protein and synthetic dissolved-metal mixtures; it does not demonstrate living-cell extraction. chebi:33330 scandium atom separation methylorubrum extorquens ncbitaxon:408 united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/scandium.html"><strong>Scandium</strong></a>
+        <p class="record-desc">The element Sc, distinct from dissolved Sc(III), scandium chloride, scandium oxide, Sc-bearing minerals and waste feedstocks. The US2025 designation concerns the named scandium mineral commodity. Laboratory evidence below uses an immobilized bacterial protein and synthetic dissolved-metal mixtures; it does not demonstrate living-cell extraction.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Methylorubrum extorquens</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33330</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="selenium selenium element selenium (se), chemical element with atomic number 34. the experimental substrate is soluble selenite, distinct from the element identifier, a selenium mineral, or a secondary resource. australia&#39;s dated selenium material designation is mapped to this element without extending it to salts. chebi:27568 selenium atom redox_transformation shewanella oneidensis mr-1 ncbitaxon:211586 australia department of industry, science and resources critical minerals list (critical)">
+      <td>
+        <a href="../materials/selenium.html"><strong>Selenium</strong></a>
+        <p class="record-desc">Selenium (Se), chemical element with atomic number 34. The experimental substrate is soluble selenite, distinct from the element identifier, a selenium mineral, or a secondary resource. Australia&#39;s dated selenium material designation is mapped to this element without extending it to salts.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          Australia Department of Industry, Science and Resources Critical Minerals List (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Shewanella oneidensis MR-1</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:27568</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="biomineralization"
+        data-critical="true"
+        data-search="silicon silicon element the element si, distinct from dissolved silicic acid, biogenic silica, crystalline silica minerals and the silicon-metal commodity. the united states 2025 list&#39;s silicon material designation is mapped to this element; it does not designate every silicate or imply that diatom silica formation recovers semiconductor-grade or metallic silicon. chebi:27573 silicon atom biomineralization thalassiosira pseudonana ccmp1335 ncbitaxon:296543 united states department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/silicon.html"><strong>Silicon</strong></a>
+        <p class="record-desc">The element Si, distinct from dissolved silicic acid, biogenic silica, crystalline silica minerals and the silicon-metal commodity. The United States 2025 list&#39;s Silicon material designation is mapped to this element; it does not designate every silicate or imply that diatom silica formation recovers semiconductor-grade or metallic silicon.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biomineralization</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Thalassiosira pseudonana CCMP1335</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:27573</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="silver silver element silver (ag). the element identity is distinct from the silver(i) salts and precipitates used in the laboratory experiment below. the dated us designation concerns the silver mineral commodity; it is mapped here to its elemental identity, not inherited by every silver-bearing material. chebi:30512 silver atom redox_transformation shewanella oneidensis mr-1 ncbitaxon:211586 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/silver.html"><strong>Silver</strong></a>
+        <p class="record-desc">Silver (Ag). The element identity is distinct from the silver(I) salts and precipitates used in the laboratory experiment below. The dated US designation concerns the silver mineral commodity; it is mapped here to its elemental identity, not inherited by every silver-bearing material.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Shewanella oneidensis MR-1</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:30512</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="biomineralization"
+        data-critical="true"
+        data-search="strontium strontium element strontium (sr), represented as an element distinct from dissolved sr(ii), strontianite or other mineral species, and strontium-bearing commodities or wastes. laboratory cultures of bacillus sp. tk2d lowered soluble sr from a defined saline srcl2 medium while sr-bearing carbonate-rich material formed. the eu 2024 critical-raw-material designation names strontium; it is not inherited by every strontium compound or waste. chebi:33324 strontium atom biomineralization bacillus sp. tk2d ncbitaxon:1630002 european union critical raw materials, regulation (eu) 2024/1252, annex ii, section 1 (critical)">
+      <td>
+        <a href="../materials/strontium.html"><strong>Strontium</strong></a>
+        <p class="record-desc">Strontium (Sr), represented as an element distinct from dissolved Sr(II), strontianite or other mineral species, and strontium-bearing commodities or wastes. Laboratory cultures of Bacillus sp. TK2d lowered soluble Sr from a defined saline SrCl2 medium while Sr-bearing carbonate-rich material formed. The EU 2024 critical-raw-material designation names strontium; it is not inherited by every strontium compound or waste.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          European Union Critical raw materials, Regulation (EU) 2024/1252, Annex II, Section 1 (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biomineralization</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Bacillus sp. TK2d</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33324</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="bioleaching"
+        data-critical="true"
+        data-search="tantalum tantalum element the element ta, distinct from tantalum ions, oxides, mineral species, capacitor components and mixed electronic scrap. the united states 2025 list&#39;s tantalum entry is mapped to this element; that designation is not inherited by every capacitor or waste feed. the curated primary study documents an unsuccessful acidophile leaching attempt for ta under specified conditions, preserving a useful limitation rather than asserting recovery. chebi:33348 tantalum atom bioleaching united states department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/tantalum.html"><strong>Tantalum</strong></a>
+        <p class="record-desc">The element Ta, distinct from tantalum ions, oxides, mineral species, capacitor components and mixed electronic scrap. The United States 2025 list&#39;s Tantalum entry is mapped to this element; that designation is not inherited by every capacitor or waste feed. The curated primary study documents an unsuccessful acidophile leaching attempt for Ta under specified conditions, preserving a useful limitation rather than asserting recovery.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <div><code>CHEBI:33348</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="tellurium tellurium element tellurium (te), chemical element with atomic number 52. the experimental substrate here is soluble potassium tellurite, not a tellurium mineral, commodity feed, or secondary resource. chebi:30452 tellurium atom redox_transformation rhodococcus aetherivorans ncbitaxon:191292 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/tellurium.html"><strong>Tellurium</strong></a>
+        <p class="record-desc">Tellurium (Te), chemical element with atomic number 52. The experimental substrate here is soluble potassium tellurite, not a tellurium mineral, commodity feed, or secondary resource.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Rhodococcus aetherivorans</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:30452</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="biosorption"
+        data-critical="true"
+        data-search="terbium terbium element the element tb, distinct from its dissolved ions, salts, host minerals, phosphors and waste streams. the dated us designation concerns the named terbium mineral commodity; it does not assign criticality to every tb-bearing material. the curated mechanism is a laboratory screening observation using lyophilized cyanobacterial biomass and a synthetic terbium solution, without demonstrated isolated-product recovery. chebi:33376 terbium atom biosorption synechococcus elongatus utex 2973 ncbitaxon:1350461 united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/terbium.html"><strong>Terbium</strong></a>
+        <p class="record-desc">The element Tb, distinct from its dissolved ions, salts, host minerals, phosphors and waste streams. The dated US designation concerns the named terbium mineral commodity; it does not assign criticality to every Tb-bearing material. The curated mechanism is a laboratory screening observation using lyophilized cyanobacterial biomass and a synthetic terbium solution, without demonstrated isolated-product recovery.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biosorption</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Synechococcus elongatus UTEX 2973</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33376</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="biosorption"
+        data-critical="true"
+        data-search="thulium thulium element thulium is the element tm, represented by its neutral-atom identity and distinct from tm(iii) chloride solutions, mineral hosts and rare-earth commodities. it is named in the united states final 2025 list of critical minerals. prepared bacillus subtilis cell powders provide laboratory evidence for thulium biosorption and subsequent acidic elution, without an isolated pure-metal yield or demonstrated industrial process. chebi:33380 thulium atom biosorption bacillus subtilis subsp. subtilis str. 168 ncbitaxon:224308 united states final 2025 list of critical minerals (critical)">
+      <td>
+        <a href="../materials/thulium.html"><strong>Thulium</strong></a>
+        <p class="record-desc">Thulium is the element Tm, represented by its neutral-atom identity and distinct from Tm(III) chloride solutions, mineral hosts and rare-earth commodities. It is named in the United States Final 2025 List of Critical Minerals. Prepared Bacillus subtilis cell powders provide laboratory evidence for thulium biosorption and subsequent acidic elution, without an isolated pure-metal yield or demonstrated industrial process.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States Final 2025 List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biosorption</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Bacillus subtilis subsp. subtilis str. 168</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33380</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="other"
+        data-critical="true"
+        data-search="tin tin element the element sn, distinct from organotin compounds, dissolved inorganic tin, tin minerals, indium tin oxide and tin-bearing waste resources. the united states 2025 list&#39;s tin designation is mapped to this element; it does not automatically designate tributyltin or contaminated sediment as critical. the curated microbial experiment concerns organotin ligand transformation, not destruction of the tin element or production of metallic tin. chebi:27007 tin atom other united states department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/tin.html"><strong>Tin</strong></a>
+        <p class="record-desc">The element Sn, distinct from organotin compounds, dissolved inorganic tin, tin minerals, indium tin oxide and tin-bearing waste resources. The United States 2025 list&#39;s Tin designation is mapped to this element; it does not automatically designate tributyltin or contaminated sediment as critical. The curated microbial experiment concerns organotin ligand transformation, not destruction of the tin element or production of metallic tin.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <div><code>CHEBI:27007</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="titanium titanium element the element ti, distinct from titanium dioxide phases, titanium-bearing mineral species, alloy formulations and the titanium-metal commodity. the united states 2025 titanium designation is mapped to this element; it does not designate every titanium compound or establish microbial recovery of metallic titanium. the curated experiment concerns alteration of an oxide film on commercially pure titanium laboratory specimens. chebi:33341 titanium atom redox_transformation shewanella algae ncbitaxon:38313 united states department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/titanium.html"><strong>Titanium</strong></a>
+        <p class="record-desc">The element Ti, distinct from titanium dioxide phases, titanium-bearing mineral species, alloy formulations and the titanium-metal commodity. The United States 2025 Titanium designation is mapped to this element; it does not designate every titanium compound or establish microbial recovery of metallic titanium. The curated experiment concerns alteration of an oxide film on commercially pure titanium laboratory specimens.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Shewanella algae</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33341</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="bioleaching"
+        data-critical="true"
+        data-search="tungsten tungsten element the element w, distinct from tungstate ions, scheelite and wolframite, tungsten carbides, experimental concentrates and mining wastes. the dated us designation concerns the named tungsten mineral commodity rather than every w-bearing material. a laboratory study supports enhanced tungsten release from an impure scheelite concentrate in metallosphaera sedula cultures; it does not establish an isolated tungsten product, a specific tungsten redox pathway or industrial recovery. chebi:27998 tungsten atom bioleaching metallosphaera sedula ncbitaxon:43687 united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/tungsten.html"><strong>Tungsten</strong></a>
+        <p class="record-desc">The element W, distinct from tungstate ions, scheelite and wolframite, tungsten carbides, experimental concentrates and mining wastes. The dated US designation concerns the named tungsten mineral commodity rather than every W-bearing material. A laboratory study supports enhanced tungsten release from an impure scheelite concentrate in Metallosphaera sedula cultures; it does not establish an isolated tungsten product, a specific tungsten redox pathway or industrial recovery.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Metallosphaera sedula</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:27998</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="separation"
+        data-critical="true"
+        data-search="uranium uranium element uranium (u), represented here as an element distinct from the dissolved u(vi) feed and electrode-associated material in a laboratory bioelectrochemical separation study. the united states 2025 designation applies to the named uranium commodity; it does not identify a uranium mineral species or establish the criticality of every uranium compound. chebi:27214 uranium atom separation shewanella oneidensis mr-1 ncbitaxon:211586 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/uranium.html"><strong>Uranium</strong></a>
+        <p class="record-desc">Uranium (U), represented here as an element distinct from the dissolved U(VI) feed and electrode-associated material in a laboratory bioelectrochemical separation study. The United States 2025 designation applies to the named uranium commodity; it does not identify a uranium mineral species or establish the criticality of every uranium compound.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Shewanella oneidensis MR-1</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:27214</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="separation"
+        data-critical="true"
+        data-search="vanadium vanadium element vanadium (v), represented here as an element distinct from the dissolved v(v) feed and electrode-associated material in a laboratory bioelectrochemical separation study. the united states 2025 designation applies to the named vanadium commodity; it does not identify a vanadium mineral species or establish the criticality of every vanadium compound. chebi:27698 vanadium atom separation shewanella oneidensis mr-1 ncbitaxon:211586 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/vanadium.html"><strong>Vanadium</strong></a>
+        <p class="record-desc">Vanadium (V), represented here as an element distinct from the dissolved V(V) feed and electrode-associated material in a laboratory bioelectrochemical separation study. The United States 2025 designation applies to the named vanadium commodity; it does not identify a vanadium mineral species or establish the criticality of every vanadium compound.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Shewanella oneidensis MR-1</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:27698</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="other"
+        data-critical="true"
+        data-search="ytterbium ytterbium element the element yb, distinct from its dissolved ions, experimental chloride salt, phosphate phases, ores and manufactured materials. the dated us designation concerns the named ytterbium mineral commodity. the curated laboratory assay documents culture-associated aqueous depletion; it does not establish a particular mineral phase, purified product or industrial recovery process. chebi:33381 ytterbium atom other penidiella sp. t9 ncbitaxon:1391704 united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/ytterbium.html"><strong>Ytterbium</strong></a>
+        <p class="record-desc">The element Yb, distinct from its dissolved ions, experimental chloride salt, phosphate phases, ores and manufactured materials. The dated US designation concerns the named ytterbium mineral commodity. The curated laboratory assay documents culture-associated aqueous depletion; it does not establish a particular mineral phase, purified product or industrial recovery process.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Penidiella sp. T9</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33381</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="other"
+        data-critical="true"
+        data-search="yttrium yttrium element the element y, distinct from its trivalent ion, experimental chloride salt, host minerals and rare-earth commodity mixtures. the dated us designation concerns the named yttrium mineral commodity; it does not establish criticality of every y-bearing substance. laboratory evidence concerns yttrium associated with washed algal biomass, without establishing intracellular transport, isolated-product recovery or industrial deployment. chebi:33331 yttrium atom other galdieria ncbitaxon:83373 united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/yttrium.html"><strong>Yttrium</strong></a>
+        <p class="record-desc">The element Y, distinct from its trivalent ion, experimental chloride salt, host minerals and rare-earth commodity mixtures. The dated US designation concerns the named yttrium mineral commodity; it does not establish criticality of every Y-bearing substance. Laboratory evidence concerns yttrium associated with washed algal biomass, without establishing intracellular transport, isolated-product recovery or industrial deployment.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Galdieria</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33331</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="bioleaching"
+        data-critical="true"
+        data-search="zinc zinc element zinc (zn), atomic number 30. the zinc-atom identifier grounds this element record, not dissolved zn(ii), zinc sulfide, sphalerite, or a zinc concentrate. the united states designation maps the listed zinc commodity to this element; it does not designate every zinc-bearing mineral or waste. the curated experiments concern laboratory dissolution of a sphalerite concentrate. chebi:27363 zinc atom bioleaching acidithiobacillus ferrooxidans ncbitaxon:920 united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/zinc.html"><strong>Zinc</strong></a>
+        <p class="record-desc">Zinc (Zn), atomic number 30. The zinc-atom identifier grounds this element record, not dissolved Zn(II), zinc sulfide, sphalerite, or a zinc concentrate. The United States designation maps the listed zinc commodity to this element; it does not designate every zinc-bearing mineral or waste. The curated experiments concern laboratory dissolution of a sphalerite concentrate.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Acidithiobacillus ferrooxidans</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:27363</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="other"
+        data-critical="true"
+        data-search="zirconium zirconium element the element zr, distinct from zirconium salts, zirconia phases, zircon mineral and zirconium-metal commodities. the united states 2025 zirconium designation is mapped to this element without extending it to every host mineral or compound. the curated laboratory preparation combines microbial culture with subsequent thermal processing and does not establish isolated zirconium-metal recovery. chebi:33342 zirconium atom other united states department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/zirconium.html"><strong>Zirconium</strong></a>
+        <p class="record-desc">The element Zr, distinct from zirconium salts, zirconia phases, zircon mineral and zirconium-metal commodities. The United States 2025 Zirconium designation is mapped to this element without extending it to every host mineral or compound. The curated laboratory preparation combines microbial culture with subsequent thermal processing and does not establish isolated zirconium-metal recovery.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <div><code>CHEBI:33342</code></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<script src="../record-browser.js" defer></script></main>
+<footer>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · generated by <code>scripts/render_pages.py</code></p>
+  <p class="fam">
+    <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
+    <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·
+    <a href="https://culturebotai.github.io/CommunityMech/">CommunityMech</a> ·
+    <a href="https://culturebotai.github.io/TraitMech/">TraitMech</a> ·
+    <a href="https://culturebotai.github.io/proteintraitsmech/">ProteinTraitsMech</a> ·
+    <a href="https://culturebotai.github.io/AntibioticMech/">AntibioticMech</a> ·
+    <a href="https://culturebotai.github.io/CellStructureMech/">CellStructureMech</a> ·
+    <a href="https://culturebotai.github.io/NaturalProductMech/">NaturalProductMech</a> ·
+    <a href="https://culturebotai.github.io/DUFMech/">DUFMech</a> ·
+    <a href="https://culturebotai.github.io/PathwayMech/">PathwayMech</a> ·
+    <a href="https://culturebotai.github.io/TaxonMech/">TaxonMech</a> ·
+    <a href="https://culturebotai.github.io/HabitatMech/">HabitatMech</a> ·
+    <a href="https://culturebotai.github.io/AIMech/">AIMech</a> ·
+    <span class="self">CMMMech</span>
+  </p>
+  <p class="fam">
+    <a href="https://github.com/Knowledge-Graph-Hub/kg-microbe">kg-microbe</a> ·
+    <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
+  </p>
+</footer>
+</body>
+</html>

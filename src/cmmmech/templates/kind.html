@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}{{ kind.label }} · CMMMech{% endblock %}
+{% block content %}
+<div class="breadcrumbs">
+  <a href="{{ root }}index.html">CMMMech</a> &gt;
+  <a href="{{ root }}browse.html">Browse</a> &gt;
+  <span>{{ kind.label }}</span>
+</div>
+
+<h1>{{ kind.label }}</h1>
+<p class="lede">{{ kind.blurb }}</p>
+
+{% include "record_table.html" %}
+{% endblock %}

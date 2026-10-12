@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recovery Mechanisms · CMMMech</title>
+<link rel="stylesheet" href="../style.css">
+<script src="../theme-toggle.js"></script>
+</head>
+<body>
+<header>
+  <a class="brand" href="../index.html">CMMMech</a>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../browse.html">Browse</a>
+    <a href="https://github.com/CultureBotAI/CMMMech">GitHub</a>
+  </nav>
+</header>
+<main>
+<div class="breadcrumbs">
+  <a href="../index.html">CMMMech</a> &gt;
+  <a href="../browse.html">Browse</a> &gt;
+  <span>Recovery</span>
+</div>
+
+<h1>Recovery Mechanisms</h1>
+<p class="lede">Integrated microbial processing schemes yielding concentrated or isolated materials.</p>
+
+<form id="record-filters" class="record-filters" hidden>
+  <div>
+    <label for="record-query">Search materials</label>
+    <input id="record-query" type="search" placeholder="Name, formula, organism, process…">
+  </div>
+  <div>
+    <label for="record-kind">Material Kind</label>
+    <select id="record-kind">
+      <option value="">All kinds (5)</option>
+      <option value="element">Element (64)</option>
+      <option value="mineral">Mineral (68)</option>
+      <option value="secondary_resource">Secondary resource (49)</option>
+      <option value="commodity">Commodity (32)</option>
+      <option value="primary_resource">Primary resource (14)</option>
+      <option value="mineral_group">Mineral group (4)</option>
+    </select>
+  </div>
+  <div>
+    <label for="record-mechanism">Mechanism Process</label>
+    <select id="record-mechanism">
+      <option value="">All processes</option>
+      <option value="bioleaching">Bioleaching (93)</option>
+      <option value="biomineralization">Biomineralization (32)</option>
+      <option value="redox_transformation">Redox transformation (24)</option>
+      <option value="biosorption">Biosorption (12)</option>
+      <option value="separation">Separation (8)</option>
+      <option value="recovery">Recovery (5)</option>
+      <option value="other">Other (20)</option>
+    </select>
+  </div>
+  <div>
+    <label for="record-criticality">Criticality</label>
+    <select id="record-criticality">
+      <option value="">All criticality</option>
+      <option value="critical">Designated Critical</option>
+    </select>
+  </div>
+  <button type="reset">Clear filters</button>
+</form>
+
+<p id="record-count" role="status" aria-live="polite">5 materials</p>
+<p id="record-empty" hidden>No materials match your query or filters. Clear filters to show all.</p>
+
+<div class="record-table-scroll" role="region" aria-label="Materials table" tabindex="0">
+<table id="record-table">
+  <caption>Curated Materials and Minerals</caption>
+  <thead>
+    <tr>
+      <th scope="col">Material</th>
+      <th scope="col">Kind</th>
+      <th scope="col">Criticality</th>
+      <th scope="col">Mechanisms</th>
+      <th scope="col">Microbial Agents</th>
+      <th scope="col">Identifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-kind="secondary_resource"
+        data-mechanisms="bioleaching recovery"
+        data-critical="false"
+        data-search="cemented tungsten carbide scrap cemented-tungsten-carbide-scrap secondary_resource discarded hardmetal production components composed of tungsten carbide with cobalt or cobalt-nickel binder, represented by rolling-mill rollers and brazed cutting tips in the chaika study. this manufactured secondary resource is distinct from pure tungsten carbide, a mineral species, tungsten mining tailings and metal grinding sludge. the sampled shapes and compositions do not define every hardmetal waste stream. no criticality designation or industrial deployment is inferred. bioleaching recovery acidithiobacillus ferrooxidans ncbitaxon:920">
+      <td>
+        <a href="../materials/cemented-tungsten-carbide-scrap.html"><strong>Cemented tungsten carbide scrap</strong></a>
+        <p class="record-desc">Discarded hardmetal production components composed of tungsten carbide with cobalt or cobalt-nickel binder, represented by rolling-mill rollers and brazed cutting tips in the Chaika study. This manufactured secondary resource is distinct from pure tungsten carbide, a mineral species, tungsten mining tailings and metal grinding sludge. The sampled shapes and compositions do not define every hardmetal waste stream. No criticality designation or industrial deployment is inferred.</p>
+      </td>
+      <td>
+        <span class="badge">secondary resource</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>2</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recovery</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Acidithiobacillus ferrooxidans</li>
+        </ul>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="secondary_resource"
+        data-mechanisms="bioleaching recovery"
+        data-critical="false"
+        data-search="electric-arc-furnace dust electric-arc-furnace-dust secondary_resource zinc-bearing dust generated by electric-arc-furnace steelmaking, represented here by two actual dusts supplied by an unnamed steelmaking company. this process-defined secondary resource is distinct from cast-house dust, blast-furnace flue-gas dust, steelmaking slag, zinc ore and elemental zinc. the two samples do not define a universal composition. no elemental identifier or criticality designation is assigned to the dust. bioleaching recovery acidithiobacillus thiooxidans ncbitaxon:930">
+      <td>
+        <a href="../materials/electric-arc-furnace-dust.html"><strong>Electric-arc-furnace dust</strong></a>
+        <p class="record-desc">Zinc-bearing dust generated by electric-arc-furnace steelmaking, represented here by two actual dusts supplied by an unnamed steelmaking company. This process-defined secondary resource is distinct from cast-house dust, blast-furnace flue-gas dust, steelmaking slag, zinc ore and elemental zinc. The two samples do not define a universal composition. No elemental identifier or criticality designation is assigned to the dust.</p>
+      </td>
+      <td>
+        <span class="badge">secondary resource</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>2</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recovery</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Acidithiobacillus thiooxidans</li>
+        </ul>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="secondary_resource"
+        data-mechanisms="bioleaching recovery"
+        data-critical="false"
+        data-search="electroformed copper-silver manufacturing scrap electroformed-copper-silver-manufacturing-scrap secondary_resource defective electroformed copper components retaining an inner silver-bearing conductive coating from manufacture on expendable wax mandrels. the studied tube-shaped rejects had incomplete copper deposition or uneven wall thickness. this manufacturing-derived secondary resource is distinct from elemental copper or silver, printed circuit boards, electroplating sludge and multilayer beverage packaging. its selected composition does not define all electroforming waste or confer a jurisdictional criticality designation. bioleaching recovery acidithiobacillus ferruginosus ncbitaxon:3063951">
+      <td>
+        <a href="../materials/electroformed-copper-silver-manufacturing-scrap.html"><strong>Electroformed copper-silver manufacturing scrap</strong></a>
+        <p class="record-desc">Defective electroformed copper components retaining an inner silver-bearing conductive coating from manufacture on expendable wax mandrels. The studied tube-shaped rejects had incomplete copper deposition or uneven wall thickness. This manufacturing-derived secondary resource is distinct from elemental copper or silver, printed circuit boards, electroplating sludge and multilayer beverage packaging. Its selected composition does not define all electroforming waste or confer a jurisdictional criticality designation.</p>
+      </td>
+      <td>
+        <span class="badge">secondary resource</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>2</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recovery</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Acidithiobacillus ferruginosus</li>
+        </ul>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="secondary_resource"
+        data-mechanisms="recovery"
+        data-critical="false"
+        data-search="end-of-life crystalline-silicon photovoltaic modules end-of-life-crystalline-silicon-photovoltaic-modules secondary_resource discarded crystalline-silicon photovoltaic modules and their separated cell fractions are a composite secondary resource generated by photovoltaic equipment use and dismantling. their silicon wafers, metal contacts, glass and encapsulants remain distinct from elemental silicon, silicon-metal commodity, silver and mineral species. this record excludes cdte and cigs thin-film modules, manufacturing scrap of unspecified origin and generic electronic waste. the curated experiment used a chemical extract from end-of-life hyundai m-si units, not intact modules in direct contact with microorganisms. criticality designations of constituent elements are not inherited by this waste feed. recovery">
+      <td>
+        <a href="../materials/end-of-life-crystalline-silicon-photovoltaic-modules.html"><strong>End-of-life crystalline-silicon photovoltaic modules</strong></a>
+        <p class="record-desc">Discarded crystalline-silicon photovoltaic modules and their separated cell fractions are a composite secondary resource generated by photovoltaic equipment use and dismantling. Their silicon wafers, metal contacts, glass and encapsulants remain distinct from elemental silicon, silicon-metal commodity, silver and mineral species. This record excludes CdTe and CIGS thin-film modules, manufacturing scrap of unspecified origin and generic electronic waste. The curated experiment used a chemical extract from end-of-life Hyundai m-Si units, not intact modules in direct contact with microorganisms. Criticality designations of constituent elements are not inherited by this waste feed.</p>
+      </td>
+      <td>
+        <span class="badge">secondary resource</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recovery</span>
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="secondary_resource"
+        data-mechanisms="recovery"
+        data-critical="false"
+        data-search="tungsten-nickel-iron alloy scrap tungsten-nickel-iron-alloy-scrap secondary_resource discarded tungsten-nickel-iron heavy-alloy components, represented by decommissioned projectile cores identified as vnzh in the baranov study. this manufactured secondary resource is distinct from elemental tungsten, cemented tungsten carbide scrap, mining tailings and grinding-fluid sludge. the reported feed composition describes the tested material, not every vnzh grade or tungsten-alloy waste. no criticality designation, standardized product specification or industrial deployment is inferred. recovery">
+      <td>
+        <a href="../materials/tungsten-nickel-iron-alloy-scrap.html"><strong>Tungsten-nickel-iron alloy scrap</strong></a>
+        <p class="record-desc">Discarded tungsten-nickel-iron heavy-alloy components, represented by decommissioned projectile cores identified as VNZh in the Baranov study. This manufactured secondary resource is distinct from elemental tungsten, cemented tungsten carbide scrap, mining tailings and grinding-fluid sludge. The reported feed composition describes the tested material, not every VNZh grade or tungsten-alloy waste. No criticality designation, standardized product specification or industrial deployment is inferred.</p>
+      </td>
+      <td>
+        <span class="badge">secondary resource</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recovery</span>
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<script src="../record-browser.js" defer></script></main>
+<footer>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · generated by <code>scripts/render_pages.py</code></p>
+  <p class="fam">
+    <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
+    <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·
+    <a href="https://culturebotai.github.io/CommunityMech/">CommunityMech</a> ·
+    <a href="https://culturebotai.github.io/TraitMech/">TraitMech</a> ·
+    <a href="https://culturebotai.github.io/proteintraitsmech/">ProteinTraitsMech</a> ·
+    <a href="https://culturebotai.github.io/AntibioticMech/">AntibioticMech</a> ·
+    <a href="https://culturebotai.github.io/CellStructureMech/">CellStructureMech</a> ·
+    <a href="https://culturebotai.github.io/NaturalProductMech/">NaturalProductMech</a> ·
+    <a href="https://culturebotai.github.io/DUFMech/">DUFMech</a> ·
+    <a href="https://culturebotai.github.io/PathwayMech/">PathwayMech</a> ·
+    <a href="https://culturebotai.github.io/TaxonMech/">TaxonMech</a> ·
+    <a href="https://culturebotai.github.io/HabitatMech/">HabitatMech</a> ·
+    <a href="https://culturebotai.github.io/AIMech/">AIMech</a> ·
+    <span class="self">CMMMech</span>
+  </p>
+  <p class="fam">
+    <a href="https://github.com/Knowledge-Graph-Hub/kg-microbe">kg-microbe</a> ·
+    <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
+  </p>
+</footer>
+</body>
+</html>

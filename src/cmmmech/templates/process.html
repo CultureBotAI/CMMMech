@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}{{ process.label }} Mechanisms · CMMMech{% endblock %}
+{% block content %}
+<div class="breadcrumbs">
+  <a href="{{ root }}index.html">CMMMech</a> &gt;
+  <a href="{{ root }}browse.html">Browse</a> &gt;
+  <span>{{ process.label }}</span>
+</div>
+
+<h1>{{ process.label }} Mechanisms</h1>
+<p class="lede">{{ process.blurb }}</p>
+
+{% include "record_table.html" %}
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}{{ page_title | default("Browse Materials") }} · CMMMech{% endblock %}
+{% block content %}
+<div class="breadcrumbs">
+  <a href="{{ root }}index.html">CMMMech</a> &gt; <span>Browse</span>
+</div>
+
+<h1>{{ heading | default("Browse Critical Materials and Minerals") }}</h1>
+{% if lede %}
+<p class="lede">{{ lede }}</p>
+{% else %}
+<p class="lede">Explore all {{ records|length }} materials, minerals, and resources with their criticality assessments and microbial transformation mechanisms.</p>
+{% endif %}
+
+{% include "record_table.html" %}
+{% endblock %}

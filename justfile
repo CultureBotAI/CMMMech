@@ -13,6 +13,14 @@ lint:
 validate:
     uv run --locked cmmmech validate
 
+# Render the browsable site under pages/ from the corpus.
+render *args:
+    uv run python scripts/render_pages.py {{args}}
+
+# Fail if pages/ is out of step with the corpus
+render-check:
+    uv run python scripts/render_pages.py --check
+
 # Create a new immutable sidecar, then attach its printed path to the record.
 [positional-arguments]
 new-history *args:
