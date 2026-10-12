@@ -1,0 +1,27 @@
+history_version: 1
+target:
+  kind: record
+  slug: tennantite-concentrate
+  path: data/records/tennantite-concentrate.yaml
+session:
+  id: 2026-10-12T104425Z-codex-b15461
+  timestamp: '2026-10-12T10:44:25Z'
+  actors:
+  - name: codex
+    type: ai_agent
+    model: gpt-6
+    agent_tool: codex
+events:
+- type: EDIT
+  outcome: changed
+  summary: Remove unsupported early-redox source-conflict claim identified by independent
+    review.
+  details: 'Resolve issue #167 and initial review F1. The original Section 3.2 and Figure
+    4E agree: early maxima are approximately 740 mV without activated carbon and 670 mV with
+    0.01% carbon. The draft incorrectly described a discrepancy. Remove only that assertion,
+    preserve actual experimental limits and immutable CREATE/initial review/source investigation,
+    and append a timestamped source correction. Repeat named and corpus checks and save an
+    independent successor with exact finding lineage.'
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/167

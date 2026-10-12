@@ -1,0 +1,320 @@
+{
+  "recorded_at": "2026-10-12T10:52:08.747454+00:00",
+  "base": "5c83f27fa4d916a8432894e07031c2b5c7451a09",
+  "scientific_base": "5c83f27fa4d916a8432894e07031c2b5c7451a09",
+  "branch": "curate/cmm-expansion-round54-20261012",
+  "counts": {
+    "record_count": 259,
+    "history_count": 307,
+    "structured_review_count": 317,
+    "review_base_count": 55,
+    "covered_records": 259
+  },
+  "record_actions": {
+    "tennantite-concentrate": "CREATE",
+    "catapleiite": "CREATE",
+    "ion-adsorption-rare-earth-leach-residue": "CREATE"
+  },
+  "records": [
+    {
+      "slug": "tennantite-concentrate",
+      "action": "CREATE",
+      "record": "data/records/tennantite-concentrate.yaml",
+      "record_sha256": "3c5e3548fd7d4dcd1e81b08f1006a24cfeebb9ad77934a5be5dc4e5a168dc7ad",
+      "histories": [
+        {
+          "path": "history/records/tennantite-concentrate/2026-10-12T103421Z-codex-feb6a6.yaml",
+          "sha256": "5b761a45c4885e91f50a5108fd5d7c930aa473c506ca2e9083160a00fdd2d275"
+        },
+        {
+          "path": "history/records/tennantite-concentrate/2026-10-12T104425Z-codex-b15461.yaml",
+          "sha256": "1c6d90532d6588d01bcd28c82f97a0310d0ed56bf25fa244123b44203c519fba"
+        }
+      ],
+      "review": "reviews/structured/20261012T104846Z-tennantite-concentrate-round54-science/review.yaml",
+      "review_md": "reviews/structured/20261012T104846Z-tennantite-concentrate-round54-science/review.md",
+      "review_sha256": "20aa0e72072c92b47e25ce2602fbcd31050d2a9470d79bb31c63db5db4400e6a",
+      "review_md_sha256": "a9e3cad1a8882fc753fd5df6da539ffae133f8bde9d9e74c9b9d5dd4fa2027b1",
+      "reviewer": {
+        "identity": "Codex /root/round27_packaging",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Root authored the target and exact correction; reviewer authored only the separate round54 Gluconobacter duplicate-source assessment. Reviewer independently inspected all ten original pages/all six figures/Table1, source identifiers, source/dedup bounds and corrected inputs, and made no target edit."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [
+        {
+          "finding_id": "F1",
+          "issue_key": "CMMMech.tennantite-concentrate.early-redox-source-fidelity",
+          "category": "evidence",
+          "severity": "minor",
+          "status": "resolved",
+          "certainty": "confirmed",
+          "title": "The claimed early redox prose\u2013figure conflict is not present in the primary source",
+          "description": "The initial record and dossier invented an approximately760mV carbon-arm conflict. OriginalPDFp5/JATS actually say740mV withoutcarbon and670mV with0.01%carbon, agreeing withFigure4E. Corrected target and append-only source note now state this faithfully.",
+          "target_ids": [
+            "cmmmech:tennantite-concentrate"
+          ],
+          "field_paths": [
+            "mechanisms[0].evidence[1].explanation"
+          ],
+          "evidence_ids": [
+            "record",
+            "prior",
+            "prose",
+            "graphic",
+            "xml",
+            "correction",
+            "edit",
+            "proof",
+            "gates"
+          ],
+          "owner_paths": [
+            {
+              "repository": "CultureBotAI/CMMMech",
+              "path": "data/records/tennantite-concentrate.yaml",
+              "role": "maintained scientific record"
+            },
+            {
+              "repository": "CultureBotAI/CMMMech",
+              "path": "research/sources/round54-tennantite/20261012T103534Z-source-investigation.md",
+              "role": "source-context occurrence; preserve predecessor and append correction"
+            }
+          ],
+          "rule_id": "primary-source-fidelity",
+          "native_severity": "minor",
+          "normalization_reason": "Bounded incorrect source-uncertainty claim; does not overturn feed identity or qualified leaching association.",
+          "disposition_reason": "Independent original-page/JATS recheck, fresh explicit input capture, preserved-science proof and actual corrected checks support the narrow correction.",
+          "previous_occurrences": [
+            {
+              "repository": "CultureBotAI/CMMMech",
+              "review_id": "20261012T104025Z-tennantite-concentrate-round54-initial",
+              "finding_id": "F1"
+            }
+          ],
+          "external_issues": [
+            "https://github.com/CultureBotAI/CMMMech/issues/167"
+          ]
+        }
+      ],
+      "dossiers": [
+        {
+          "path": "research/sources/round54-tennantite/20261012T103534Z-source-investigation.json",
+          "sha256": "d7cd9cd0ef8fede38c8d45a7ef6bd109c61522da157ed42a76f8b80c4b1d9480"
+        },
+        {
+          "path": "research/sources/round54-tennantite/20261012T103534Z-source-investigation.md",
+          "sha256": "438db924c97ba28af5f02f8a04ec13d0500f308e969b9ca6eddb13e18d6e3697"
+        },
+        {
+          "path": "research/sources/round54-tennantite/20261012T104451Z-source-correction.json",
+          "sha256": "2f5226b897d14ea851e704e25ceb5fef86435122702bfe2cb6c10e4da1eed513"
+        },
+        {
+          "path": "research/sources/round54-tennantite/20261012T104451Z-source-correction.md",
+          "sha256": "e00ad93dbc792dd8207898153a57aaf6b7197de2e27c722e8451fc72196e4124"
+        }
+      ]
+    },
+    {
+      "slug": "catapleiite",
+      "action": "CREATE",
+      "record": "data/records/catapleiite.yaml",
+      "record_sha256": "35b40ba6a6329736254e413555c2d9195a821dc5d785742b4d2fa4bd4d0a69b0",
+      "histories": [
+        {
+          "path": "history/records/catapleiite/2026-10-12T103749Z-codex-880439.yaml",
+          "sha256": "5098257d75e59e0ec127c85868ea1387be94baa71deb59af438bb2cda1a47f8f"
+        }
+      ],
+      "review": "reviews/structured/20261012T104910Z-catapleiite-round54-science/review.yaml",
+      "review_md": "reviews/structured/20261012T104910Z-catapleiite-round54-science/review.md",
+      "review_sha256": "6d32440e5d001748656ef797db4b590505ff9c499f2d692135b21d738765dc7c",
+      "review_md_sha256": "22a066d62e36a2dc548e59067257dcd171805c02b050a63f1ad0a28349a5c216",
+      "reviewer": {
+        "identity": "Codex /root/round43_hardmetal",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "The superalloy agent authored catapleiite, its history and paired dossier. This reviewer authored the separate clay leach-residue contribution and did not alter catapleiite or its context. Native inspect captured the five assigned inputs before judgment, then captured the additional existing elpidite owner before the final lineage assessment; the five initial bytes remained unchanged."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [],
+      "dossiers": [
+        {
+          "path": "research/sources/round54-mineral-frontier/20261012T103955Z-source-investigation.json",
+          "sha256": "54bcf989193fbc80e9d2709fa94ab23f1c9397790be1394ea09c5967a0320cd6"
+        },
+        {
+          "path": "research/sources/round54-mineral-frontier/20261012T103955Z-source-investigation.md",
+          "sha256": "6c63e4444e981b8089369f841a1076c2313b91da71c134b33fd6a535698e9894"
+        }
+      ]
+    },
+    {
+      "slug": "ion-adsorption-rare-earth-leach-residue",
+      "action": "CREATE",
+      "record": "data/records/ion-adsorption-rare-earth-leach-residue.yaml",
+      "record_sha256": "745912557a73b2ce7cb2f2ab93ca884c0ae383099225b6619292f4b76c346acf",
+      "histories": [
+        {
+          "path": "history/records/ion-adsorption-rare-earth-leach-residue/2026-10-12T103856Z-codex-456fc0.yaml",
+          "sha256": "43bdce1c461b7073a831f06e66c1f484ddb2f497e7c8d5147ed145f6f4f2e0c0"
+        }
+      ],
+      "review": "reviews/structured/20261012T104845Z-ion-adsorption-rare-earth-leach-residue-round54-science/review.yaml",
+      "review_md": "reviews/structured/20261012T104845Z-ion-adsorption-rare-earth-leach-residue-round54-science/review.md",
+      "review_sha256": "9a3946d41b32b496e042ebdb9cfe155f604bc89b511bf3a397c5e6cfc48c6164",
+      "review_md_sha256": "8af6c2bc8355db7bfe506ee87f15edc085bb540676453ca6c8058e978c27c0df",
+      "reviewer": {
+        "identity": "Codex /root",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Record, history and paired source investigation were authored by /root/round43_hardmetal. Root did not curate those files and independently inspected the primary manuscript, supplement, identity, source limits and final hashes."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [],
+      "dossiers": [
+        {
+          "path": "research/sources/round54-clay-resources/20261012T104034Z-source-investigation.json",
+          "sha256": "beb3acec4daa7788f53d463cca2750af16a6934dd1dd1c67d29f09572d8e885e"
+        },
+        {
+          "path": "research/sources/round54-clay-resources/20261012T104034Z-source-investigation.md",
+          "sha256": "92d2a882078ea8f164a5ccd039ffadf0db306a460583d3d3441e3ed98fc4c752"
+        }
+      ]
+    }
+  ],
+  "gate_receipts": {
+    "base": "5c83f27fa4d916a8432894e07031c2b5c7451a09",
+    "exit_code": 0,
+    "commands": [
+      {
+        "name": "batch",
+        "command": [
+          "just",
+          "check"
+        ],
+        "started_at": "2026-10-12T10:45:15.740179+00:00",
+        "finished_at": "2026-10-12T10:48:17.217100+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round54-final-batch.log",
+        "sha256": "7df7af409fc0dcbe038e79ee6eb827d01eac21459322f279c36bcebbbf242b32"
+      },
+      {
+        "name": "nonempty",
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate",
+          "--require-records"
+        ],
+        "started_at": "2026-10-12T10:48:17.217580+00:00",
+        "finished_at": "2026-10-12T10:48:24.271097+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round54-final-nonempty.log",
+        "sha256": "d6352ce5892e0da95df27d121ac84e0c387cc23d5583acbeafce8944f357bb6c"
+      },
+      {
+        "name": "history",
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate-history",
+          "--base",
+          "5c83f27fa4d916a8432894e07031c2b5c7451a09"
+        ],
+        "started_at": "2026-10-12T10:48:24.271868+00:00",
+        "finished_at": "2026-10-12T10:48:32.110921+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round54-final-history.log",
+        "sha256": "b3a780aa618d78baed0dce1308db129dd8cfc00e4f9fabbcc2081e9d44ebdc32"
+      },
+      {
+        "name": "render-check",
+        "command": [
+          "just",
+          "render-check"
+        ],
+        "started_at": "2026-10-12T10:48:32.111407+00:00",
+        "finished_at": "2026-10-12T10:48:34.613460+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round54-final-render-check.log",
+        "sha256": "be156b3acc20d39b6bad41632b10eb7ccfc2c8a7fdeaec3f6236fbc67831aea6"
+      }
+    ]
+  },
+  "review_check_receipt": {
+    "command": [
+      "just",
+      "review-check",
+      "--base",
+      "5c83f27fa4d916a8432894e07031c2b5c7451a09",
+      "--require-reviews"
+    ],
+    "started_at": "2026-10-12T10:49:37.619375+00:00",
+    "finished_at": "2026-10-12T10:52:04.116011+00:00",
+    "exit_code": 0,
+    "log": "/private/tmp/cmm-round54-review-check.log",
+    "sha256": "2458229dc3f9783d0b97446d44cedfc31a957e6cd9888bd885b52a565e80b1fa"
+  },
+  "exact_coverage_receipt": {
+    "path": "/private/tmp/cmm-round54-local-coverage.json",
+    "sha256": "af04aac6b6fd8dd62f9d05f56ed3bbc708aaebe425104b992a5f7e10bf14c9e8",
+    "counts": {
+      "record_count": 259,
+      "history_count": 307,
+      "structured_review_count": 317,
+      "review_base_count": 55,
+      "covered_records": 259
+    }
+  },
+  "baseline": {
+    "scope": "Reuse just-completed fresh remote-main full checks at this exact unchanged commit/tree; no redundant rerun.",
+    "receipt": "/private/tmp/cmm-round53-postmerge-20261012-published-terminal.json",
+    "sha256": "b0517a4886bd92d448224d63e0085ee73b54603268a57e28fb929b6cbb9fa208"
+  },
+  "deferred_sources": [
+    {
+      "path": "research/sources/round54-gluconobacter/20261012T103511Z-duplicate-assessment.json",
+      "sha256": "1c621a67051dc9d96c7655a787857c60692bf25cc64f1b27b52eaef4939911cd"
+    },
+    {
+      "path": "research/sources/round54-gluconobacter/20261012T103511Z-duplicate-assessment.md",
+      "sha256": "dfa9312a36a6cb68d89a9f78e5f6a1da15e83722582e42c2b0a6a7d8a47721dc"
+    }
+  ],
+  "corrected_review_issues": [
+    167
+  ],
+  "open_source_issues": [
+    103,
+    104,
+    120,
+    129,
+    130,
+    133,
+    134,
+    137,
+    140,
+    153,
+    165
+  ],
+  "closed_source_issues": [],
+  "exhausted": false,
+  "governance_snapshot": {
+    "path": "reviews/publication/20261012-round54/current-status.json",
+    "sha256": "b84a83132ecf041bf22ada2681bab743dace3c87d90982aa5e73f4045fbc1f34"
+  },
+  "preservation_receipt": {
+    "path": "reviews/publication/20261012-round54/preservation-prepublication.json",
+    "sha256": "2a6aae4659d0963b19754da6ce2c983d23681d62941c876f2790f4f5861606cd"
+  }
+}

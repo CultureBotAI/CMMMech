@@ -1,0 +1,33 @@
+# Tennantite concentrate source investigation
+
+Recorded 2026-10-12T10:35:34.055096+00:00 by Codex /root (GPT-6), at base `5c83f27fa4d916a8432894e07031c2b5c7451a09` with an uncommitted new record and actual CREATE history. This investigation applies the local add-record and discover-sources skills; it does not substitute for independent scientific review.
+
+## Selection and identity
+
+The broader mineral-bioleaching search surfaced [Kondo et al.2024](https://doi.org/10.3389/fmicb.2023.1339549), an accessible primary study with a characterized mixed feed and directly inspectable controls/graphics. Its source-labelled tennantite concentrate is a mineral feed (`primary_resource`), separate from tennantite-(In), elemental copper/arsenic and generic flotation tailings. Its mine and beneficiation route are unreported; introductory waste examples do not establish that this sample was discarded. No root mineral identifier or criticality designation is assigned.
+
+Bounded hidden/ignored-inclusive `rg --no-ignore --hidden --follow` searches covered current/original records, research, reviews and histories and metadata-cited raw roots. The initial metadata scan read4152files, with44broad corpus matching paths, principally the distinct tennantite-(In) description. Specific DOI/concentrate/title-author search found no match outside this investigation's newly acquired raw root. Nine historical roots were unavailable; unextracted binaries and unrelated filesystem locations were not semantically searched. The paired JSON records exact commands, roots and failures; no machine-wide absence is claimed.
+
+## Source identity, access and reuse
+
+The complete ten-page publisher PDF is SHA256`b11a5770f1393168d919ed428fe379840dd8e073dcb8990135147eda2985dd49`. Publisher XML and Crossref confirm DOI, title, four authors and online publication8January2024; volume14/DOI use2023. Landing-page modification metadata is not a new scientific edition. All text was read, and original pages3–8 containing Figures1–6/Table1 visually checked. The HTML and JATS inventory expose no linked supplementary artifact (zero supplementary-material nodes); the generic data statement still says article/supplementary material. No raw sequence/time-series file was obtained or invented. The local PMC HTTP200response was a reCAPTCHA page and is explicitly not article evidence.
+
+The publisher and Crossref specify CC BY4.0. Raw originals and renders remain outsideGit. The record supplies original author/title/DOI attribution; source manifests retain URLs, acquisition times and hashes. This is a primary article, not a reusable bulk assay dataset with a published dictionary. No structured mg/kg observation is created from plotted mM concentrations or percentages.
+
+## Evidence and adversarial reading
+
+- Sections2.1/Figure1 characterize one mixed feed: rounded phase fractions sum100.07%, not an exact normalized assay. Tennantite phase nomenclature/formula is informal and contains substantial bulkSb/Zn; no modern endmember assignment is inferred.
+- Sections2.2–2.5 distinguish pre-culture medium10mMFe(II) from flask assay5mMFe(II), duplicate200mLflasks from two separately described1.2Lreactors, and the50day/100day linked stages. Concentrate is unwashed/unsterilized. Carbon-free arms are inoculated, not abiotic controls. FlaskpH varies with carbon. ReactorpH changes onday38 and iron additions onday53 differ20/10mM; no clean carbon-only factorial interpretation or duplicate-reactor claim follows.
+- Figure2 reports approximately45/70/52/38%finalCu dissolution at0/0.01/0.025/0.05%carbon. The largestdose underperforms the carbon-free arm; a universal monotonic benefit is false. Figure3rates are calculated fromFigure2, not independent experiments. Figure4laterreactors converge near60%Cu, so a persistentcarbonadvantage is not established.
+- Figure4E visibly has a lower early peak in the carbon arm, unlike Section3.2's printed~760mV entry; the text itself describes suppression. The record preserves the inconsistency without inventing a corrected exactvalue. Iron concentration includes exogenous additions, making unqualified feed-iron dissolutionpercentages unsafe.
+- Figures5–6 show an As/Fe/O/S/Sb particle association and diminished relative tennantite peaks. EDS is not phase or valence identification, and relativeXRD is not phase-resolved mass balance. Ferricarsenate/basicferricsulfate remains tentative; scorodite is not established. Net dissolvedAs endpoints cannot establish isolatedAs recovery or long-term stabilization.
+- Final bacterial16Samplicon assignments support source-reportedS.thermosulfidooxidans dominance but do not prove a causal population trajectory or strain authentication; noaccession is given. MethodsFv-ApAcidiplasma versus acknowledgementAcidisphaera is unresolved. Table1largely reuses earliermetal-tolerance results and mixes highest-growth concentrations with MICs; neither is imported as an independent communityleaching experiment. [NCBI28034](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=28034&mode=Info) resolves only the listed species/member and type-strainaliases.
+- ICP-OES of0.45micrometrefiltrate is total-element liquid concentration. No isolatedCu product, complete sampling-corrected recovery mass balance or industrialoperation is shown. The industrial discussion is prospective.
+
+Exact DOI correction/corrigendum/retraction queries and officialmetadata returned no affecting notice in their bounded first relevance sets. This is not proof that no correction or counterstudy exists. Distinct tetrahedrite/enargite primary leads were identified, not imported as direct replication or refutation.
+
+## Curation handoff and remaining priorities
+
+The new record is `data/records/tennantite-concentrate.yaml`, SHA256`6dabd6e6a78a6834706c147c2bbd491ca5d91e592c95a2728091d6048b39be55`. Its actual canonical CREATE path/hash is in the pairedmanifest; the inline event describes this curation. Named validation is retained separately; finalbatchgates and independent exact-byte scientificreview follow.
+
+Next prioritize full [tetrahedrite study10.1007/s40831-025-01089-0](https://doi.org/10.1007/s40831-025-01089-0), then [enargite concentrate10.3390/min12040449](https://doi.org/10.3390/min12040449) and [multiplefeeds10.3390/min11040432](https://doi.org/10.3390/min11040432), with mineral-name grounding, full originalmethods/graphics/SI and experimentdedup. These are new bounded leads, not accepted records. For this paper, raw sequencing/time-series and origin/assay clarification could refine interpretation, but the present record explicitly retains missing controls and source limitations. Source discovery is not exhausted.

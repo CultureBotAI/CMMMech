@@ -1,0 +1,531 @@
+# Independent scientific review of catapleiite
+
+- Review: 20261012T104910Z-catapleiite-round54-science
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-12T10:41:06Z
+- Finished UTC: 2026-10-12T10:49:10Z
+- Reviewer: Codex /root/round43_hardmetal (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The current IMA mineral identity and qualified natural Greenland occurrence are supported. Complete 2020 and 2022 originals and all their graphics/tables were independently checked. The record correctly separates the heated silver-exchanged derivative, shared specimen lineage, missing analytical supplement and conflicting source labels/compositions. No corrective finding was identified.
+
+## Scope And Provenance
+
+Entire frozen catapleiite record, CREATE history, paired source dossier and schema; complete accepted primary originals, retained issuing-authority mineral list, Handbook and bounded notice checks.
+
+Selection: Parent-assigned independent scientific review of this new mineral owner.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 5c83f27fa4d916a8432894e07031c2b5c7451a09.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:catapleiite | data/records/catapleiite.yaml | maintained | Catapleiite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named validation | passed | True | cmmmech:catapleiite | Executed by this reviewer: one record checked, zero failed. |
+| Exact input and raw-source verification | passed | True | cmmmech:catapleiite | All six inspect inputs,42 declared raw-artifact hashes and nine local-receipt hashes match. |
+| Parent-completed cohort batch | passed | True | cmmmech:catapleiite | Actual completed terminal receipt and exact log digest independently verified; reviewer did not duplicate the full suite. |
+| Parent-completed cohort nonempty | passed | True | cmmmech:catapleiite | Actual completed terminal receipt and exact log digest independently verified; reviewer did not duplicate the full suite. |
+| Parent-completed cohort history | passed | True | cmmmech:catapleiite | Actual completed terminal receipt and exact log digest independently verified; reviewer did not duplicate the full suite. |
+| Parent-completed cohort render-check | passed | True | cmmmech:catapleiite | Actual completed terminal receipt and exact log digest independently verified; reviewer did not duplicate the full suite. |
+
+## Scientific And Domain Assessments
+
+### Current species boundary
+
+identity: supported. Targets: cmmmech:catapleiite.
+
+Formula, grandfathered status and historical year match current issuing authority. The mineral is separate from calciocatapleiite, elpidite, elemental zirconium and mixed geological resources.
+
+### Natural specimen and missing-data limits
+
+evidence: supported. Targets: cmmmech:catapleiite.
+
+The source-qualified natural occurrence rests on a loose block attributed to the Green Granite, microscopy and microprobe evidence. It is not diffraction confirmation, a pure feed or independently replicated sampling. Missing analytical appendix and full supplementary dataset are disclosed; representative main-table evidence supports the narrow description.
+
+### Source labels, compositional ranges and geological interpretation
+
+evidence: supported. Targets: cmmmech:catapleiite.
+
+Original Figure3C SZR/caption disagreement, Tables4/6 IL-356 reuse and Table5/page240 Na2O discrepancy are preserved. No source-wide range or quantified alteration yield is imported. Inferred late-magmatic and hydrothermal sequence is separated from a controlled transformation assay.
+
+### Thermally transformed material versus unheated mineral
+
+evidence: supported. Targets: cmmmech:catapleiite.
+
+The1000-degree annealed zirconosilicate is the substrate for250-degree/30day Ag exchange. Different ring framework, prior models, poor crystal/refinement limitations and measured-versus-refined composition prevent assigning its performance to hydrated catapleiite. The maintained record accurately keeps this as context.
+
+### Exact curation state and validation
+
+provenance: supported. Targets: cmmmech:catapleiite.
+
+Inline creation and canonical CREATE sidecar describe actual curation. Six captured inputs,42 raw hashes and nine receipts match; independent named and parent cohort gates completed. Original unavailable2013 graphics and2022 supplement remain deferred.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/catapleiite.yaml; Entire captured input | supports | Exact input independently read and rechecked against native pre-assessment capture. |
+| history | history/records/catapleiite/2026-10-12T103749Z-codex-880439.yaml; Entire captured input | supports | Exact input independently read and rechecked against native pre-assessment capture. |
+| dossier_json | research/sources/round54-mineral-frontier/20261012T103955Z-source-investigation.json; Entire captured input | supports | Exact input independently read and rechecked against native pre-assessment capture. |
+| dossier_md | research/sources/round54-mineral-frontier/20261012T103955Z-source-investigation.md; Entire captured input | supports | Exact input independently read and rechecked against native pre-assessment capture. |
+| schema | src/cmmmech/schema/cmmmech.yaml; Entire captured input | supports | Exact input independently read and rechecked against native pre-assessment capture. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September2026 original pages1,35,38 | supports | Current ideal Na2Zr(Si3O9)(H2O)2, G status and1850 year are correct; Calciocatapleiite is a separate species. The retained authority copy was visually reinspected, not freshly downloaded by this reviewer. |
+| handbook | https://handbookofmineralogy.org/pdfs/catapleiite.pdf; Complete one-page version1.2(2001) | supports | Ideal identity and older monoclinic natural description provide context; record correctly does not impose that symmetry or chemistry on every natural grain. |
+| natural | https://doi.org/10.24425/agp.2022.140427; Entire original pp235–245 plus repository cover; Figures1–7/Tables1–6; methods236–237; catapleiite239–243, Figure3B, Figure6, Table5 | supports | All twelve local original-page renders personally viewed. Electron-microprobe and texture evidence support the author-assigned occurrence, with loose-block provenance and missing appendix retained. Page240 and Table5 sodium differences, Figure3C label/caption and repeatedIL-356 conflicts confirmed from original pixels. |
+| thermal | https://doi.org/10.3390/min10030243; Entire ten-page publisher original; Figures1–3/Tables1–5; Methods p3, Table1 p2, structural limits p4, discussion p9 and refs4/8 p10 | supports | All original pages/graphics/tables independently viewed.1000-degree annealing produces the different framework used for silver exchange; Figure1a/b reuse previous structural models. The new diffraction study concerns the silver-exchanged derivative. No untreated-mineral recovery performance is established. |
+| xml | https://mdpi-res.com/d_attachment/minerals/minerals-10-00243/article_deploy/minerals-10-00243.xml; Complete article XML; supplement-node/link inspection | supports | Acquired XML contains no supplementary-material nodes or supplement links. This bounded document check is not universal proof that no associated data could exist. |
+| lineage | data/records/elpidite.yaml; Description and Cegielka2022 source/evidence context | supports | Existing maintained elpidite shares the exact Greenland paper and block; new species owner does not claim independent sampling or a separate pure feed. |
+| notices | /private/tmp/cmm-round54-catapleiite-independent/web-check.json; Actual2026-10-12 returned DOI/correction and mineral-name query sets | supports | No affecting correction was found within returned sets; identity search also returned secondary sources, which were not used instead of current IMA original. |
+| dedup | research/sources/round54-mineral-frontier/20261012T103955Z-source-investigation.json; Curator dedup receipt and recorded boundary; reviewer verified source and receipt hashes | supports | Prior mentions, IMA rows and the shared2022 experiment are retained as context rather than a duplicate accepted owner. |
+| verification | /private/tmp/cmm-round54-catapleiite-independent/verification.json; Hash verification and actual independently inspected original-page scope | supports | All recorded raw/context digests and actual gates verified; this mechanical evidence does not substitute for source assessment. |
+| cohort | /private/tmp/cmm-round54-final-terminal.json; Completed cohort checks and exact linked log digests | supports | All required parent checks completed before this save:317passed3skipped,259 records307 histories; no future pass inferred. |
+
+## Limits And Additional Notes
+
+- The2022 specimen phase assignment is source-reported microscopy/microprobe evidence, not sample-specific crystallographic confirmation. Detailed analytical appendix and SupplementaryTable1 remain unavailable.
+- No original2013 figures/tables or earlier1936/1981/2012/2019 complete structural datasets were separately reviewed; only their explicitly attributed context in accepted originals is retained.
+- The2020 derivative experiment does not establish a microbial mechanism, untreated-mineral exchange yield or industrial recovery. No new experimental measurement was performed.
+- Current IMA bytes were retained from the curator previous-round acquisition and independently inspected; no fresh authority download is claimed. Notice/dedup searches are bounded, with hidden/ignored coverage and unavailable/oversized/binary limitations explicit.
+- No record, history or source-dossier edit by this reviewer. No Git/GitHub/governance mutation.
+- This is scientific acceptance of the exact working-tree state, not a claim of publication or independent laboratory replication.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261012T104910Z-catapleiite-round54-science
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of catapleiite
+started_at: '2026-10-12T10:41:06Z'
+finished_at: '2026-10-12T10:49:10Z'
+reviewer:
+  identity: Codex /root/round43_hardmetal
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The superalloy agent authored catapleiite, its history and paired
+    dossier. This reviewer authored the separate clay leach-residue contribution and
+    did not alter catapleiite or its context. Native inspect captured the five assigned
+    inputs before judgment, then captured the additional existing elpidite owner before
+    the final lineage assessment; the five initial bytes remained unchanged.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The current IMA mineral identity and qualified natural Greenland occurrence
+  are supported. Complete 2020 and 2022 originals and all their graphics/tables were
+  independently checked. The record correctly separates the heated silver-exchanged
+  derivative, shared specimen lineage, missing analytical supplement and conflicting
+  source labels/compositions. No corrective finding was identified.
+source:
+  git_revision: 5c83f27fa4d916a8432894e07031c2b5c7451a09
+  state: working_tree
+  inputs:
+  - path: data/records/catapleiite.yaml
+    sha256: 35b40ba6a6329736254e413555c2d9195a821dc5d785742b4d2fa4bd4d0a69b0
+    role: target
+  - path: data/records/elpidite.yaml
+    sha256: d4380b722d62b9e66de5be913d7629dce70780fff4e55ec47147eb96ed9baf3e
+    role: context
+  - path: history/records/catapleiite/2026-10-12T103749Z-codex-880439.yaml
+    sha256: 5098257d75e59e0ec127c85868ea1387be94baa71deb59af438bb2cda1a47f8f
+    role: context
+  - path: research/sources/round54-mineral-frontier/20261012T103955Z-source-investigation.json
+    sha256: 54bcf989193fbc80e9d2709fa94ab23f1c9397790be1394ea09c5967a0320cd6
+    role: context
+  - path: research/sources/round54-mineral-frontier/20261012T103955Z-source-investigation.md
+    sha256: 6c63e4444e981b8089369f841a1076c2313b91da71c134b33fd6a535698e9894
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:catapleiite
+  path: data/records/catapleiite.yaml
+  label: Catapleiite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/catapleiite.yaml
+    role: maintained_record
+scope:
+  description: Entire frozen catapleiite record, CREATE history, paired source dossier
+    and schema; complete accepted primary originals, retained issuing-authority mineral
+    list, Handbook and bounded notice checks.
+  selection: Parent-assigned independent scientific review of this new mineral owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:catapleiite
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/catapleiite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:catapleiite
+  summary: 'Executed by this reviewer: one record checked, zero failed.'
+- check_id: hashes
+  name: Exact input and raw-source verification
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:catapleiite
+  summary: All six inspect inputs,42 declared raw-artifact hashes and nine local-receipt
+    hashes match.
+- check_id: cohort_batch
+  name: Parent-completed cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:catapleiite
+  summary: Actual completed terminal receipt and exact log digest independently verified;
+    reviewer did not duplicate the full suite.
+- check_id: cohort_nonempty
+  name: Parent-completed cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:catapleiite
+  summary: Actual completed terminal receipt and exact log digest independently verified;
+    reviewer did not duplicate the full suite.
+- check_id: cohort_history
+  name: Parent-completed cohort history
+  command: uv run --locked cmmmech validate-history --base 5c83f27fa4d916a8432894e07031c2b5c7451a09
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:catapleiite
+  summary: Actual completed terminal receipt and exact log digest independently verified;
+    reviewer did not duplicate the full suite.
+- check_id: cohort_render_check
+  name: Parent-completed cohort render-check
+  command: just render-check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:catapleiite
+  summary: Actual completed terminal receipt and exact log digest independently verified;
+    reviewer did not duplicate the full suite.
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/catapleiite.yaml
+  locator: Entire captured input
+  accessed_at: '2026-10-12T10:49:10Z'
+  support: supports
+  summary: Exact input independently read and rechecked against native pre-assessment
+    capture.
+  snapshot_sha256: 35b40ba6a6329736254e413555c2d9195a821dc5d785742b4d2fa4bd4d0a69b0
+- evidence_id: history
+  kind: record_content
+  reference: history/records/catapleiite/2026-10-12T103749Z-codex-880439.yaml
+  locator: Entire captured input
+  accessed_at: '2026-10-12T10:49:10Z'
+  support: supports
+  summary: Exact input independently read and rechecked against native pre-assessment
+    capture.
+  snapshot_sha256: 5098257d75e59e0ec127c85868ea1387be94baa71deb59af438bb2cda1a47f8f
+- evidence_id: dossier_json
+  kind: record_content
+  reference: research/sources/round54-mineral-frontier/20261012T103955Z-source-investigation.json
+  locator: Entire captured input
+  accessed_at: '2026-10-12T10:49:10Z'
+  support: supports
+  summary: Exact input independently read and rechecked against native pre-assessment
+    capture.
+  snapshot_sha256: 54bcf989193fbc80e9d2709fa94ab23f1c9397790be1394ea09c5967a0320cd6
+- evidence_id: dossier_md
+  kind: record_content
+  reference: research/sources/round54-mineral-frontier/20261012T103955Z-source-investigation.md
+  locator: Entire captured input
+  accessed_at: '2026-10-12T10:49:10Z'
+  support: supports
+  summary: Exact input independently read and rechecked against native pre-assessment
+    capture.
+  snapshot_sha256: 6c63e4444e981b8089369f841a1076c2313b91da71c134b33fd6a535698e9894
+- evidence_id: schema
+  kind: record_content
+  reference: src/cmmmech/schema/cmmmech.yaml
+  locator: Entire captured input
+  accessed_at: '2026-10-12T10:49:10Z'
+  support: supports
+  summary: Exact input independently read and rechecked against native pre-assessment
+    capture.
+  snapshot_sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September2026 original pages1,35,38
+  accessed_at: '2026-10-12T10:49:10Z'
+  support: supports
+  summary: Current ideal Na2Zr(Si3O9)(H2O)2, G status and1850 year are correct; Calciocatapleiite
+    is a separate species. The retained authority copy was visually reinspected, not
+    freshly downloaded by this reviewer.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://handbookofmineralogy.org/pdfs/catapleiite.pdf
+  locator: Complete one-page version1.2(2001)
+  accessed_at: '2026-10-12T10:49:10Z'
+  support: supports
+  summary: Ideal identity and older monoclinic natural description provide context;
+    record correctly does not impose that symmetry or chemistry on every natural grain.
+  snapshot_sha256: 8376c0d6866eb9a6f5ef99ba98493cdb2cd23c8c285ba74ae4e5c547d70a6d16
+- evidence_id: natural
+  kind: primary_source
+  reference: https://doi.org/10.24425/agp.2022.140427
+  locator: Entire original pp235–245 plus repository cover; Figures1–7/Tables1–6;
+    methods236–237; catapleiite239–243, Figure3B, Figure6, Table5
+  accessed_at: '2026-10-12T10:49:10Z'
+  support: supports
+  summary: All twelve local original-page renders personally viewed. Electron-microprobe
+    and texture evidence support the author-assigned occurrence, with loose-block
+    provenance and missing appendix retained. Page240 and Table5 sodium differences,
+    Figure3C label/caption and repeatedIL-356 conflicts confirmed from original pixels.
+  snapshot_sha256: 10f989117eed7413f5586b5acc35c57e7f91a7f21c1bc0417213b7f39f800b35
+- evidence_id: thermal
+  kind: primary_source
+  reference: https://doi.org/10.3390/min10030243
+  locator: Entire ten-page publisher original; Figures1–3/Tables1–5; Methods p3, Table1
+    p2, structural limits p4, discussion p9 and refs4/8 p10
+  accessed_at: '2026-10-12T10:49:10Z'
+  support: supports
+  summary: All original pages/graphics/tables independently viewed.1000-degree annealing
+    produces the different framework used for silver exchange; Figure1a/b reuse previous
+    structural models. The new diffraction study concerns the silver-exchanged derivative.
+    No untreated-mineral recovery performance is established.
+  snapshot_sha256: eea09b114cefa52faf235567eb282062310b961355eb886a6877e090e1dbb60c
+- evidence_id: xml
+  kind: primary_source
+  reference: https://mdpi-res.com/d_attachment/minerals/minerals-10-00243/article_deploy/minerals-10-00243.xml
+  locator: Complete article XML; supplement-node/link inspection
+  accessed_at: '2026-10-12T10:49:10Z'
+  support: supports
+  summary: Acquired XML contains no supplementary-material nodes or supplement links.
+    This bounded document check is not universal proof that no associated data could
+    exist.
+  snapshot_sha256: f0336203a67f44cd15bfed505ec2440eb3a5d86b8da76e084c01333abc78e2bd
+- evidence_id: lineage
+  kind: record_content
+  reference: data/records/elpidite.yaml
+  locator: Description and Cegielka2022 source/evidence context
+  accessed_at: '2026-10-12T10:49:10Z'
+  support: supports
+  summary: Existing maintained elpidite shares the exact Greenland paper and block;
+    new species owner does not claim independent sampling or a separate pure feed.
+  snapshot_sha256: d4380b722d62b9e66de5be913d7629dce70780fff4e55ec47147eb96ed9baf3e
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round54-catapleiite-independent/web-check.json
+  locator: Actual2026-10-12 returned DOI/correction and mineral-name query sets
+  accessed_at: '2026-10-12T10:49:10Z'
+  support: supports
+  summary: No affecting correction was found within returned sets; identity search
+    also returned secondary sources, which were not used instead of current IMA original.
+  snapshot_sha256: 924cb5f88d8a4310fa250e21debdedca71b5b8e804a29a594864663345f87dc9
+  search_scope: 'Exact queries: "10.3390/min10030243" correction erratum retraction;
+    "10.24425/agp.2022.140427" correction erratum; "catapleiite" "calciocatapleiite"
+    IMA. First returned sets only, no pagination or universal notice-absence inference.'
+- evidence_id: dedup
+  kind: search
+  reference: research/sources/round54-mineral-frontier/20261012T103955Z-source-investigation.json
+  locator: Curator dedup receipt and recorded boundary; reviewer verified source and
+    receipt hashes
+  accessed_at: '2026-10-12T10:49:10Z'
+  support: supports
+  summary: Prior mentions, IMA rows and the shared2022 experiment are retained as
+    context rather than a duplicate accepted owner.
+  snapshot_sha256: 54bcf989193fbc80e9d2709fa94ab23f1c9397790be1394ea09c5967a0320cd6
+  search_scope: Hidden/ignored files included; symlinks followed cycle-safely; current/original
+    scientific data/research/reviews/history and their cited raw roots only; text-bearing
+    formats,16MB cap. Unextracted binaries not semantically searched. No machine-wide
+    absence claim. Curator searched4152 corpus text files and181 existing cited raw
+    roots; nine missing roots and ten oversized files are explicit. Reviewer verified
+    this bounded receipt and inspected the existing elpidite owner; no new machine-wide
+    inventory claimed.
+- evidence_id: verification
+  kind: validation
+  reference: /private/tmp/cmm-round54-catapleiite-independent/verification.json
+  locator: Hash verification and actual independently inspected original-page scope
+  accessed_at: '2026-10-12T10:49:10Z'
+  support: supports
+  summary: All recorded raw/context digests and actual gates verified; this mechanical
+    evidence does not substitute for source assessment.
+  snapshot_sha256: 2b5af598ec7ed3852da89a5d5009da5e54e6f38bd4737444204a81fc3dd4941f
+- evidence_id: cohort
+  kind: validation
+  reference: /private/tmp/cmm-round54-final-terminal.json
+  locator: Completed cohort checks and exact linked log digests
+  accessed_at: '2026-10-12T10:49:10Z'
+  support: supports
+  summary: All required parent checks completed before this save:317passed3skipped,259
+    records307 histories; no future pass inferred.
+  snapshot_sha256: 800f6a64d451a79496d4ebe50bbabc91aff6f8fea31dff90f914c6101be15b9d
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Current species boundary
+  outcome: supported
+  target_ids:
+  - cmmmech:catapleiite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  summary: Formula, grandfathered status and historical year match current issuing
+    authority. The mineral is separate from calciocatapleiite, elpidite, elemental
+    zirconium and mixed geological resources.
+  dimensions:
+  - name: material_form
+    value: Mineral species, Na2Zr(Si3O9)(H2O)2
+    definition: IMA September2026 species; ideal formula does not specify every specimen
+      composition/symmetry.
+    evidence_ids:
+    - ima
+    - record
+  - name: criticality
+    value: None asserted
+    definition: No jurisdiction/list/edition designation inherited from zirconium.
+    evidence_ids:
+    - record
+- assessment_id: natural_context
+  area: evidence
+  topic: Natural specimen and missing-data limits
+  outcome: supported
+  target_ids:
+  - cmmmech:catapleiite
+  evidence_ids:
+  - natural
+  - record
+  - dossier_md
+  - lineage
+  summary: The source-qualified natural occurrence rests on a loose block attributed
+    to the Green Granite, microscopy and microprobe evidence. It is not diffraction
+    confirmation, a pure feed or independently replicated sampling. Missing analytical
+    appendix and full supplementary dataset are disclosed; representative main-table
+    evidence supports the narrow description.
+- assessment_id: contradictions
+  area: evidence
+  topic: Source labels, compositional ranges and geological interpretation
+  outcome: supported
+  target_ids:
+  - cmmmech:catapleiite
+  evidence_ids:
+  - natural
+  - record
+  summary: Original Figure3C SZR/caption disagreement, Tables4/6 IL-356 reuse and
+    Table5/page240 Na2O discrepancy are preserved. No source-wide range or quantified
+    alteration yield is imported. Inferred late-magmatic and hydrothermal sequence
+    is separated from a controlled transformation assay.
+- assessment_id: derivative
+  area: evidence
+  topic: Thermally transformed material versus unheated mineral
+  outcome: supported
+  target_ids:
+  - cmmmech:catapleiite
+  evidence_ids:
+  - thermal
+  - xml
+  - record
+  summary: The1000-degree annealed zirconosilicate is the substrate for250-degree/30day
+    Ag exchange. Different ring framework, prior models, poor crystal/refinement limitations
+    and measured-versus-refined composition prevent assigning its performance to hydrated
+    catapleiite. The maintained record accurately keeps this as context.
+  dimensions:
+  - name: organism_and_biomass
+    value: Not asserted
+    definition: Accepted sources describe geological mineralogy and nonbiological
+      derivative experiments.
+    evidence_ids:
+    - natural
+    - thermal
+    - record
+  - name: controls_and_outcome
+    value: No mineral-level recovery mechanism asserted
+    definition: Derivative structure determination is separate from recovery yield
+      for natural catapleiite.
+    evidence_ids:
+    - thermal
+    - record
+  - name: deployment
+    value: Not asserted
+    definition: No industrial or microbial deployment is established by these source
+      scopes.
+    evidence_ids:
+    - record
+    - thermal
+- assessment_id: provenance
+  area: provenance
+  topic: Exact curation state and validation
+  outcome: supported
+  target_ids:
+  - cmmmech:catapleiite
+  evidence_ids:
+  - history
+  - dossier_md
+  - dossier_json
+  - schema
+  - verification
+  - cohort
+  summary: Inline creation and canonical CREATE sidecar describe actual curation.
+    Six captured inputs,42 raw hashes and nine receipts match; independent named and
+    parent cohort gates completed. Original unavailable2013 graphics and2022 supplement
+    remain deferred.
+findings: []
+actions: []
+limitations:
+- The2022 specimen phase assignment is source-reported microscopy/microprobe evidence,
+  not sample-specific crystallographic confirmation. Detailed analytical appendix
+  and SupplementaryTable1 remain unavailable.
+- No original2013 figures/tables or earlier1936/1981/2012/2019 complete structural
+  datasets were separately reviewed; only their explicitly attributed context in accepted
+  originals is retained.
+- The2020 derivative experiment does not establish a microbial mechanism, untreated-mineral
+  exchange yield or industrial recovery. No new experimental measurement was performed.
+- Current IMA bytes were retained from the curator previous-round acquisition and
+  independently inspected; no fresh authority download is claimed. Notice/dedup searches
+  are bounded, with hidden/ignored coverage and unavailable/oversized/binary limitations
+  explicit.
+notes:
+- No record, history or source-dossier edit by this reviewer. No Git/GitHub/governance
+  mutation.
+- This is scientific acceptance of the exact working-tree state, not a claim of publication
+  or independent laboratory replication.
+tags:
+- round54
+- catapleiite
+- independent
+- mineral-identity
+- natural-versus-thermal-derivative
+```
