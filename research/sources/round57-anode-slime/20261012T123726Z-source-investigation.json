@@ -1,0 +1,496 @@
+{
+  "timestamp_utc": "2026-10-12T12:37:26.329765+00:00",
+  "researcher": "codex (GPT-6; codex), /root/round43_hardmetal",
+  "worktree": "/private/tmp/CMMMech-expansion-round57-20261012",
+  "branch": "curate/cmm-expansion-round57-20261012",
+  "base": "76509ff65c70edb5f212b6b4217febe5493bb0f3",
+  "scope": "One new processing-residue owner from complete primary microbial evidence; original broad copper-anode-slime search narrowed to copper autoclave slime. No inherited criticality or industrial deployment; no schema change.",
+  "record": {
+    "path": "data/records/copper-autoclave-slime.yaml",
+    "sha256": "f3ac236a434e2ede82ca9a98f84c942dafba680194ff56b0f0897316becef594",
+    "kind": "secondary_resource",
+    "decision": "curated; independent review pending"
+  },
+  "history": {
+    "path": "history/records/copper-autoclave-slime/2026-10-12T123416Z-codex-2b633a.yaml",
+    "sha256": "280040ee87c06dc2ae81f7b67e0a44817e152b55e42ece51c06b72660452cbf0",
+    "event": "CREATE"
+  },
+  "primary": {
+    "doi": "10.1111/jam.12629",
+    "pmid": "25175548",
+    "title": "Bacterial recovery and recycling of tellurium from tellurium-containing compounds by Pseudoalteromonas sp. EPR3",
+    "authors": [
+      "W.D. Bonificio",
+      "D.R. Clarke"
+    ],
+    "year": 2014,
+    "journal": "Journal of Applied Microbiology",
+    "volume": "117",
+    "issue": "5",
+    "pages": "1293–1304",
+    "online_date": "2014-09-26",
+    "print_date": "2014-11",
+    "identity_checked": "Harvard landing and PDF repository cover plus Crossref identity/date fields; DOI publisher landing returned 403.",
+    "version": "Harvard file is labeled accepted version; interior title says For submission to Journal of Applied Microbiology. Complete 37-page PDF includes repository cover; publisher-layout version not acquired.",
+    "url": "https://dash.harvard.edu/server/api/core/bitstreams/7312037d-3b9e-6bd4-e053-0100007fdf3b/content",
+    "sha256": "b559b7899bf4a901686eea3bc552c0975897b19799414fe66138f569cb31381f",
+    "full_text_read": true,
+    "visual_pages_1_based": [
+      1,
+      2,
+      3,
+      5,
+      7,
+      8,
+      9,
+      10,
+      13,
+      14,
+      17,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37
+    ],
+    "visual_scope": "All eight original figures, sole Table 1 and all figure captions, plus original methods/material/metadata/limitation pages. Other manuscript pages were read as extracted text; not all 37 page images were inspected.",
+    "supplement_assessment": "No supplement callout found in the complete accepted manuscript; Harvard Supplemented By field is empty. No additional supplement located in bounded exact-DOI searches; publisher 403 prevents comprehensive publisher-attachment verification.",
+    "terms": "Harvard cover/landing states Open Access Policy Articles (OAP) terms; site-footer CC-BY does not establish article redistribution permission. Full text and derived page images remain outside Git."
+  },
+  "organism": {
+    "source_name": "Pseudoalteromonas sp. EPR3",
+    "source_reported_deposit": "DSMZ 28475",
+    "verified_identifier": "NCBITaxon:53246",
+    "verified_rank": "genus",
+    "limitation": "No strain-specific taxon ID; DSMZ catalogue URL redirected to general search, not a successful collection-entry validation."
+  },
+  "assays": [
+    {
+      "key": "slime-agar",
+      "feed": "Approximately 0.1 g dried refinery autoclave slime",
+      "biomass": "100 microliters fully grown EPR3 culture, OD600 0.7",
+      "medium": "Artificial seawater with 1.5% wt/vol agar; recipe cited to Vetriani2005",
+      "conditions": "Aerobic, 37 degrees C, 48 h",
+      "control": "Corresponding no-EPR3 plates; source-reported sterile",
+      "observations": "Figure 7a,d: light-brown lawn and Te(0) Raman spectrum; Figure 3: headspace Te125 counts",
+      "not_established": [
+        "bulk feed composition",
+        "numeric pH",
+        "feed sterilization verification",
+        "isolated product yield",
+        "purity",
+        "gas identity",
+        "intracellular localization",
+        "gene causality",
+        "industrial deployment"
+      ]
+    },
+    {
+      "key": "slime-sterile-liquid",
+      "feed": "Approximately 0.1 g slime in 5 g sterile ASW",
+      "conditions": "37 degrees C, 48 h, shaking",
+      "biomass": "None",
+      "result": "Table 1: 0.066 mmol/L dissolved Te",
+      "detection": "20 nmol/L liquid ICP-MS sensitivity",
+      "interpretation": "Abiotic dissolution only, not a microbial yield"
+    },
+    {
+      "key": "tellurite-liquid",
+      "decision": "Excluded from slime outcomes",
+      "reason": "93% depletion in Figure 5 concerns potassium tellurite, not a slime mass balance"
+    }
+  ],
+  "source_conflicts_and_limits": [
+    "Methods cite elemental-Te Raman reference peaks 120.4 +/- 0.5 and 140.7 +/- 0.5 cm^-1, while Figure 1/7 captions use 122 and 141; the source identification is retained without inventing an exact recalibration.",
+    "The abstract broadly describes solid and liquid culture for the range of compounds, but the explicit slime microbial experiment is on agar; the Table 1 liquid slime value is uninoculated. No liquid slime bioleaching yield is curated.",
+    "Figure 8 and some discussion phrasing imply intracellular precipitation and methylation, whereas the actual slime evidence is Raman from excised bacterial-lawn agar plus elemental headspace detection. The record retains localization and molecular pathway as unresolved.",
+    "Sterile controls are described but feed sterilization/sterility verification are unspecified; gas-control nulls are reported in prose/caption rather than plotted on the logarithmic Figure 3 axis.",
+    "Figure 6 caption assigns tellurite to blue squares and cells to red circles, while the displayed Figure 6b curves use the opposite apparent shapes/colors. This separate liquid assay is not transcribed into the slime record. Disclosed removal of an unrelated telluric-acid tube from Figure 6 photographs is not represented as a slime result."
+  ],
+  "search_log": {
+    "provider": "web search tool plus public Crossref, Harvard, NCBI and DSMZ routes",
+    "date_utc": "2026-10-12",
+    "queries": [
+      "\"anode slime\" \"bioleaching\"",
+      "\"anode slimes\" bacteria selenium",
+      "\"anode slime\" microorganism recovery",
+      "\"anode slime\" \"Acidithiobacillus\"",
+      "\"anode slime\" \"Thiobacillus\"",
+      "\"anode slime\" \"bio-hydrometallurgy\"",
+      "\"anode slime\" \"biological\" leaching microorganisms",
+      "\"Comparative environmental impacts\" \"copper anode\" bio",
+      "\"anode slime\" \"bioleaching\" bacteria -site:sciencedirect.com -site:openurl.ebsco.com",
+      "\"copper anode\" \"bacteria\" leaching",
+      "\"Bacterial recovery and recycling\" tellurium",
+      "\"tellurium\" \"slime\" bacteria",
+      "\"copper anode slime\" \"iodide\" bacteria",
+      "\"Bonificio\" \"Clarke\" \"2014\" \"10.1111\"",
+      "\"Bacterial recovery and recycling of tellurium\" pdf -site:scispace.com -site:citeseerx.ist.psu.edu",
+      "\"25175548\" doi",
+      "\"10.1111/jam.12629\" supplementary correction retraction",
+      "\"Pseudoalteromonas\" \"EPR3\" taxonomy",
+      "site.dsmz.de \"28475\"",
+      "site.ncbi.nlm.nih.gov/Taxonomy \"Pseudoalteromonas\" \"53246\"",
+      "site.clarke.seas.harvard.edu \"Bacterial recovery\"",
+      "\"EPR3\" \"28475\"",
+      "\"jam.12629\" \"Supporting\"",
+      "\"jam.12629\" \"Correction\""
+    ],
+    "coverage": "First returned search/open results, no exhaustive pagination; several exact-DOI queries tokenized poorly and returned unrelated hits. Earlier broad screening not retained is not used as negative proof. Retained output snapshots are in the referenced receipt.",
+    "notices": "Crossref relation is empty and update-to absent. No applicable correction/retraction identified in bounded searches. Publisher 403 and irrelevant results limit assurance; not a guarantee no notice exists.",
+    "counterevidence": "Primary matched no-EPR3 controls and separate sterile dissolution directly inspected; no independently matched contrary slime experiment found in the bounded search."
+  },
+  "dedup": {
+    "receipt": "/private/tmp/cmm-round57-anode-slime-research/dedup-primary-receipt.json",
+    "hidden_and_ignored_included": true,
+    "relevant_symlinks_followed": true,
+    "available_raw_roots": 210,
+    "unavailable_regex_derived_roots": [
+      "/private/tmp/cmm-round15-phosphate-raw",
+      "/private/tmp/cmm-round17-catalyst-raw",
+      "/private/tmp/cmm-round17-secondary-raw",
+      "/private/tmp/cmm-round26-bof-prior-raw",
+      "/private/tmp/cmm-round26-bof-prior-raw-dedup",
+      "/private/tmp/cmm-round26-eaf-dust-dedup-raw",
+      "/private/tmp/cmm-round32-chromitite-raw",
+      "/private/tmp/cmm-round32-chromitite-raw-prior-hits",
+      "/private/tmp/cmm-round41-laterite-independent-evidence-check",
+      "/private/tmp/cmm-round41-mineral-independent-evidence",
+      "/private/tmp/cmm-round42-hardmetal-independent-evidence-check",
+      "/private/tmp/cmm-round42-mineral-independent-evidence",
+      "/private/tmp/cmm-round42-publication-evidence-check",
+      "/private/tmp/cmm-round43-lithium-independent-evidence",
+      "/private/tmp/cmm-round44-lithium-independent-evidence",
+      "/private/tmp/cmm-round45-theisen-independent-evidence",
+      "/private/tmp/cmm-round46-ge-independent-evidence",
+      "/private/tmp/cmm-round5-magnesium-raw",
+      "/private/tmp/cmm-round53-allanite-review-evidence",
+      "/private/tmp/cmm-round6-eu-sm-tb-raw",
+      "/private/tmp/cmm-round6-indium-raw"
+    ],
+    "scientific_roots": "Current worktree and verified published clone: data/records, research, reviews and history.",
+    "corpus_prewrite_matches": 0,
+    "raw_hits": "Own acquisitions, unrelated EPR3 substrings and Bonificio2016 REE-paper references; inspected bounded raw-hit contexts did not identify an accepted slime owner or the same primary experiment.",
+    "related_record": "data/records/tellurium.yaml covers Rhodococcus aetherivorans BCP1 on soluble tellurite, a distinct element owner and assay.",
+    "limitations": "Current and independently verified published-base clone records/research/reviews/history; original Documents checkout unavailable per root EPERM receipt, not touched and referenced cmm research/raw/evidence directory roots plus current source directory. No unrelated home/temp walk. rg semantically searches available text and extracted text, not unextracted binary graphics/archive content. Neither machine-wide absence nor comprehensive literature absence claimed. Current raw self-matches retained and distinguishable."
+  },
+  "other_candidates": [
+    {
+      "doi": "10.1016/j.enceco.2025.01.005",
+      "version": "Complete public Swansea PDF acquired",
+      "decision": "Discovery and context only",
+      "scope": "Li2025 comparative LCA of copper anode-slime recovery uses separate pure-salt microbial literature rather than a direct raw-CAS microbial demonstration. Not a source of curated slime yield.",
+      "inspection": "Relevant text, methods and references screened; not a full graphics review or scientific acceptance."
+    }
+  ],
+  "raw_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/author-publications.html",
+      "bytes": 392,
+      "sha256": "4c3b0d06626b02bc3c0c710928f949100ad9901c918409e2a01aa5017dcb3a65"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bacterial-recovery-harvard.pdf",
+      "bytes": 2139,
+      "sha256": "1b4c2aa5445925cc54bf5927764359f23de8f67910c9967c857adb8259d5a7e9"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-accepted.pdf",
+      "bytes": 748791,
+      "sha256": "b559b7899bf4a901686eea3bc552c0975897b19799414fe66138f569cb31381f"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-author-final.pdf",
+      "bytes": 495,
+      "sha256": "850708085afc47d4093e3e25eb4d09576fc1fbb75c5da8f9bec5b59d736889bb"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-crossref.json",
+      "bytes": 23288,
+      "sha256": "bb27df95676c20077e38e1783cb1f7ecdb313fc9eb43fa4514c0db9624a223bc"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-01.png",
+      "bytes": 132398,
+      "sha256": "5b926ab86f6d5ff75f78c48871591688706d68bac5872982664d86147292ec1e"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-02.png",
+      "bytes": 67431,
+      "sha256": "9bc052b317030527e9fba2108d867bd5f730f334792f3d9a066b6eed7374828f"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-03.png",
+      "bytes": 127170,
+      "sha256": "f2eef97b02bb5ba7a9cb337884e17cc1ab3b363b3c4cb143c25fc22d8613db49"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-04.png",
+      "bytes": 204643,
+      "sha256": "e6a50c447f8c74bfc880bb377b5b8ec1df8d7509f23155c978864c9585b08d23"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-05.png",
+      "bytes": 205287,
+      "sha256": "db1d29aabc92162e4219d65fdcb84c823b2dbe6e16d74e30945a710fa096b663"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-06.png",
+      "bytes": 185418,
+      "sha256": "e1cde03c8ddcac82620c22994837ceb3af94a047f8f73c7ad36d351e0e6ee11a"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-07.png",
+      "bytes": 209335,
+      "sha256": "d7946cde55974d48c643c93724b39bdc2fd744527c83fb8302ee8f1de486533a"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-08.png",
+      "bytes": 213542,
+      "sha256": "35c51619ca1156f207308535f5658986cd34f7be288f01a184f025edc71297f2"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-09.png",
+      "bytes": 205164,
+      "sha256": "d8d2f136c359773803eb446d34102ea220e633fbc9beb116b09a3fb21eefdbf0"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-10.png",
+      "bytes": 204041,
+      "sha256": "0c6d19a62ad8f69aabb13cbdf9cc7428eb91ac189733e625ee30105b89f21216"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-11.png",
+      "bytes": 165656,
+      "sha256": "4d0dad37e780f4ab9a2e492ebe2c9eb668070598de14cc77efc2b83243640ffa"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-12.png",
+      "bytes": 186230,
+      "sha256": "9cf80f3c0d216c28de4625a5d42094cc83831273074b58074444801d148ef72c"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-13.png",
+      "bytes": 184769,
+      "sha256": "f12ec9b71eae7147383a26d5a50951e87ab6beb0fcf77cd536c8230a8b99337e"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-14.png",
+      "bytes": 193175,
+      "sha256": "126ad2fa44bca2c7be8fc4244d250e4b9a14300458a8c10d11b5e51039d56c92"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-15.png",
+      "bytes": 197085,
+      "sha256": "54c3b962df29311c94f05ae605824d9daee7f6d741d5073680c87012f823b2e6"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-16.png",
+      "bytes": 191082,
+      "sha256": "415f6cc239e9eb25eda7be9b0dfbdbae98d55d7fe0d1bcde66538346ddfd3251"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-17.png",
+      "bytes": 110035,
+      "sha256": "705c1563f5f1448deb48a63a9ac7002ef096c6391e4d1efc8b86ba54bdc3933d"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-18.png",
+      "bytes": 138225,
+      "sha256": "4ed17dff22b453b728dfc7f3b8cd8f58f02fb3606c728cbcb807bc8a0645938b"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-19.png",
+      "bytes": 138382,
+      "sha256": "8ca396ab7fe73aa0d89a1589bd81eeb62e3777476fa131c88962a8f43008bbb0"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-20.png",
+      "bytes": 138051,
+      "sha256": "2cf1c540a258952919068249335dfaf003b3a1ec2fd3ecad0f7a18bf93cfa844"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-21.png",
+      "bytes": 145395,
+      "sha256": "320c8a2141a6f25e52bdaaef7709376cc0299cf458c45c4300c4b061b90e6883"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-22.png",
+      "bytes": 147766,
+      "sha256": "d75c8df57e42ba27bbb1e2ae14d9d6b31c0af6e509397d4facfb65948df23e1e"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-23.png",
+      "bytes": 136928,
+      "sha256": "6db229e6dd660ae726e6786c65ece609b8db1e005ec2eab45ac61528f58c1173"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-24.png",
+      "bytes": 143023,
+      "sha256": "03ab9c518f001a59ec283e22d7a4a21008c1b7007c39867d166ec15e9f55a322"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-25.png",
+      "bytes": 48948,
+      "sha256": "e18918654bdc34b5a2d535bed6a6b2bbd1d096d97fd5334eafcdbd69a089148b"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-26.png",
+      "bytes": 107021,
+      "sha256": "a923382b0352b2f3ee76aaeb962451c48eb309eef5bb228233318d166948c8c3"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-27.png",
+      "bytes": 145140,
+      "sha256": "1e4d515e438b0a19741206e10e6454f74a925e717c266a9b1570671d9753e014"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-28.png",
+      "bytes": 160712,
+      "sha256": "72077125caf5544ac54cd50d306585398f1027f05e19be9470207e3de605e732"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-29.png",
+      "bytes": 82463,
+      "sha256": "c834985cdef585031b61172d1415764bfc4697b1b242ca60cd62e72d01588fd1"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-30.png",
+      "bytes": 52207,
+      "sha256": "f146c4feb26d6233529e8320d85ca3caba34cf4ff53ba38bb031c52bf073c615"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-31.png",
+      "bytes": 42814,
+      "sha256": "608ef146ccf88c36e156b14781da6d49559688590dc3076145b695565e7fe938"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-32.png",
+      "bytes": 48815,
+      "sha256": "ea081f39e832269c5f3e368f8e9906df42cbcdb20f63533fb06b2026a2687dd5"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-33.png",
+      "bytes": 374077,
+      "sha256": "8732f22e1fce0da2ab3a05e4fc5c5238d301781ef46ce168a7698d4afc7b5c9e"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-34.png",
+      "bytes": 24748,
+      "sha256": "5168798132539ee51276482d390c5f3979589146c95145d58c5c6a37f6a02796"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-35.png",
+      "bytes": 314306,
+      "sha256": "6600a620f8fb21982c1dd2c83acd6f10b7130a9af8a19344c6246c016f851e8c"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-36.png",
+      "bytes": 394737,
+      "sha256": "00f8c6a627b0b4a8240b57dd240afd53fdcd1fb6689a208c407c1ddca9193786"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-pages/page-37.png",
+      "bytes": 42712,
+      "sha256": "0ae9b0950b6f0b2eeef0c0cc66e1b5a3cbac56f7a06bf8d9ff2cd8e7f4a2a69b"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-publisher.html",
+      "bytes": 5495,
+      "sha256": "d8d61286e23cd6efaad159c1ed8727b7da34025e1229b8c7b57f9b104881869a"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/bonificio2014-text.txt",
+      "bytes": 57025,
+      "sha256": "3d6812f97e3cf259035994e4ac6816d79fa63778629386eab23f35b8758bbd95"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/dsm28475.html",
+      "bytes": 51685,
+      "sha256": "9b93f31124d36c982f3fb54e5774dc94d563141718f36b43025ce0a9764f3e3a"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/harvard-landing.html",
+      "bytes": 485091,
+      "sha256": "65f7cfcc6f9dff2fa89ebbca7462d788b15f24966df06f7b0a848e485dea305a"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/li2025-lca.pdf",
+      "bytes": 1029062,
+      "sha256": "273479418c48f693580d126bcfd44dae17f26fc77a4eeaec773385f8df3c8135"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/li2025-lca.txt",
+      "bytes": 58760,
+      "sha256": "1b194c5a62aa300f15147c279788aa8747df882334ea6bc359b9a2a7ae56e457"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/raw/ncbi-pseudoalteromonas.html",
+      "bytes": 31885,
+      "sha256": "ac767ff9da7d96bd46bd39f6b9152198423ce1cd25d75bf7c9bd95984f7d6a57"
+    }
+  ],
+  "receipts": [
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/acquisition1.json",
+      "sha256": "feba21c64efdca8b3caed715c038d491a69401b53eef6ff974979662f35fb9a7"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/acquisition2.json",
+      "sha256": "c3d6af813a8dd56c015b9708f06d339445ae52fcdd788ec3c938c91bc5888891"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/acquisition3.json",
+      "sha256": "e87903403518d4eeeeb3568f7299bb84865f3419f7b96d213d054a875995988d"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/acquisition4.json",
+      "sha256": "64a8316fa468fa7e57fb96748e8527141738203b492ab416c0cfceac557b5bc5"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/dedup-receipt.json",
+      "sha256": "b596c97549baab111668b15475788aa0a6ac05911010e548bcb1eebf473c8d42"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/dedup-primary-receipt.json",
+      "sha256": "a1b1a054da8d0c67fc4b1e3507cf96022f9bd47a15c3923f2ba805012f143ad1"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/web-search-snapshots.json",
+      "sha256": "034f158621ed711e869e4a4dd5b05086adc41ef67697d24b182138645c540536"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-anode-slime-research/named-validation.json",
+      "sha256": "8e2e615a826f38fb416ace5ee481b84dd17fd2beeb00249a693b7d00e8431ff6"
+    }
+  ],
+  "named_validation": {
+    "observed_at_utc": "2026-10-12T12:37:26.329765+00:00",
+    "command": "env UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 PYTHONDONTWRITEBYTECODE=1 uv run --locked cmmmech validate data/records/copper-autoclave-slime.yaml",
+    "cwd": "/private/tmp/CMMMech-expansion-round57-20261012",
+    "exit_code": 0,
+    "output": "Checked 1 record(s); 0 failed.\n",
+    "tool_chunk_id": "12e51f",
+    "elapsed_seconds": 3.26826956,
+    "record_sha256": "f3ac236a434e2ede82ca9a98f84c942dafba680194ff56b0f0897316becef594",
+    "note": "Receipt transcribes the actual completed exec tool result; observed_at is receipt-writing time, not a fabricated execution start/end."
+  },
+  "handoff": {
+    "record_ready_for_independent_review": true,
+    "scientific_acceptance": "pending independent reviewer; this dossier is curator-authored",
+    "priorities": [
+      "Independently check the final record and all primary figure/arm boundaries.",
+      "Future work: source-specific slime chemistry, gas molecular speciation, replication, closed mass balance and isolated-product purity/yield. Industrial-scale claims require direct evidence.",
+      "Raw anode slime remains uncurated; do not transfer LCA, salt or sibling-compound results."
+    ],
+    "schema_change": "None; the mg/kg quantitative-cell contract does not cover reported mmol/L, which remains qualified prose."
+  }
+}

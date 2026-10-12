@@ -1,0 +1,46 @@
+# Coffinite: natural occurrence and bounded abiotic formation
+
+UTC assessment: 2026-10-12T12:42:25.908929Z. Curator: codex (GPT-6; codex). This is a curation handoff, not independent scientific approval.
+
+Record: `data/records/coffinite.yaml` (`cmmmech:coffinite`). Trusted base: `76509ff65c70edb5f212b6b4217febe5493bb0f3`. Worktree: `/private/tmp/CMMMech-expansion-round57-20261012`. Exact published-base checks are reused as recorded by initialization; only the named validation below was newly executed here.
+
+## Decision and identities
+
+Coffinite is a uranium silicate mineral in the issuing IMA-CNMNC September 2026 list, `U(SiO4)·nH2O`, G, 1956. Definitions and row are original PDF pages 1/48. The retained PDF is byte-identical to the earlier official copy and the freshly acquired issuing home page still links this edition. The year is not a numbered approval; the variable hydration term does not establish every experimental particle's water content. The failed Handbook route is not evidence. There is no inherited uranium criticality claim.
+
+The record combines two separate evidence scopes: natural coffinite nanoparticles from a fracture carbonate at Mizunami, and an abiotic coffinite-bearing layer formed in a prepared UO2-pellet assay. It does not turn natural microbial interpretation into a demonstrated mechanism. The direct microbial leaching study remains deferred. Existing uraninite is a distinct material; synthetic UO2 starting material, natural carbonate vein, dissolved uranium and coffinite are not merged into one feed identity.
+
+## Complete sources inspected
+
+- Suzuki et al. (2016), *Formation and Geological Sequestration of Uranium Nanoparticles in Deep Granitic Aquifer*, [DOI10.1038/srep22701](https://doi.org/10.1038/srep22701). Complete six-page original publisher PDF, JATS and original supplementary DOCX acquired. Main Figures 1–3, supplementary Tables 1–4, both original supplementary figures and full Notes 1–2 inspected. Raw `suzuki2016-*` files below retain the originals and derived aids.
+- Szenknect et al. (2020), *Coffinite formation from UO2+x*, [DOI10.1038/s41598-020-69161-1](https://doi.org/10.1038/s41598-020-69161-1). Complete ten-page publisher PDF acquired through coauthor/funder SKB, JATS, current publisher landing and original supplementary DOCX. Main Figures 1–6, Table 1, and all three original supplementary graphics inspected. Raw `szenknect2020-*` files retain the original artifacts.
+
+Both full texts, methods and references were read. Original graphics were assessed with text, not replaced by abstract-derived measurements. Local LibreOffice conversion of the 2020 DOCX clipped two TIFF plots and omitted three of four EMF micrographs. The TIFF originals were separately viewed in full; all four unmodified raster payloads from the original EMF were extracted using its explicit bitmap offsets and viewed. The derived PDF retains vector labels but is not a complete faithful image rendering. The exact extraction map and original media are retained; no timepoint was inferred just from extraction order. The 2016 DOCX tables, both embedded figures and full notes were inspected. Derived PDFs are not publisher PDFs.
+
+## Scientific boundaries and adverse evidence
+
+Suzuki2016 identifies L3 nanoparticles using elemental mapping, selected-area diffraction and lattice spacings. Associated aluminosilicate and P/Zr/Y signals limit a pure ideal-composition interpretation. Heterotrophic enzymatic reduction/carbonate precipitation is proposed from field observations, without organism-specific cultures or intervention controls. Supplementary Figure 1 includes nearby sulfide-bearing particles; neither that observation nor the reported local association resolves every abiotic alternative. U-Pb retention ages are modeled with matrix-effect estimation and no coffinite-matched standard, not a demonstrated engineered lifetime. Minor main/SI age rounding and isotope-unit inconsistencies are not imported as precise record measurements.
+
+Szenknect2020 reports one prepared-pellet experiment in 100 mL silicate solution at 25 C, initially pH9, with added uranium near10^-5 M. Starting bulk UO2 coexists with surface oxidation measured by XPS. GI-XRD additional coffinite peaks and particle-scale microscopy/chemistry support a coffinite-bearing layer alongside residual UO2. The study does not trace the separate contributions of added uranium and pellet uranium, quantify total conversion or isolated purity, or provide parallel unspiked/no-pellet/silicate-free time-course controls. Triplicate analytical readings are not triplicate reactors. Ultrafiltration introduced after328days changes late sampling fraction. Thermodynamic diagrams deliberately exclude crystalline UO2 and do not directly measure solution oxidation states.
+
+The record preserves source conflicts: terminal TEM after371days in prose versus339days in Figure6; Results pointing to S1 as pellet while original SI labels S1 powder/S2 pellet; saturated-silica abstract shorthand versus slightly undersaturated methods; and gentle-drying versus never-dried ESEM statements. These do not erase the phase observation, but they bound timing, hydration, causal pathway and extrapolation. Laboratory prepared-pellet formation is not industrial deployment, actual irradiated-fuel performance or demonstrated microbial recovery.
+
+## Deduplication and access limits
+
+Hidden and ignored files were included, symlinks followed with cycle protection, across the current and exact published source clone's data/research/reviews/history trees and 192 cited raw roots. The precise follow-up read 4326 corpus and 8224 total unique text files, retaining 14 size/read limits and 9 missing referenced raw roots. Search formats were md/json/txt/yaml/yml/html/xml, capped at16 MB per file. Unextracted binary contents were not semantically searched. The original Documents checkout was not accessible per the parent-reported EPERM condition and was not searched; no preservation or absence claim is made for it. No machine-wide novelty claim is made.
+
+Within the declared scope, no prior maintained coffinite owner or accepted 2016/2020 experiment was found. Prior raw mentions are largely IMA rows and unrelated substitution/Antei references. Both dedup receipts preserve hits, bounds, missing paths and limits. Existing rhabdophane leads were inspected: the round37 deferral does not establish sufficient phase-specific attribution, and existing neodymium/xenotime records do not justify a pure rhabdophane species. An uranophane chemical-AFM lead was retained but not expanded while stronger coffinite evidence was available.
+
+## Direct microbial study remains a source-acquisition follow-up
+
+Yang et al. (2021), [DOI10.1016/j.jhazmat.2020.123914](https://doi.org/10.1016/j.jhazmat.2020.123914), compares synthetic uranium-bearing phases. The official Elsevier API returned metadata only (1878bytes), RMIT Figshare item27539790 has no files and explicitly is a metadata record, and Monash gives metadata/abstract/DOI only. OpenAlex has no downloadable OA location. ScienceDirect and CSIRO reader attempts errored; these routes were not repeatedly retried. The complete methods, original figures/tables and any SI were not acquired, so its abstract results, organisms and yields are not curated. This gap does not negate the separately supported abiotic/natural coffinite scopes. A bounded read-only GitHub search for `123914 OR coffinite OR Yang` returned an empty result; the coordinator must still check differently worded duplicates before posting the prepared issue.
+
+Notice searches for both accepted DOIs and title-based criticism returned no affecting correction/retraction in the checked sets; fetched Crossref records expose no correction linkage. This is not an exhaustive negative. A separately surfaced 2026 mine-water study has a correction lead and is deferred without claims.
+
+## Reproduction and handoff
+
+Raw evidence: `/private/tmp/cmm-round57-mineral-research/raw`. All 76 raw originals/derived artifacts and 19 outside-Git receipts/scripts in the paired JSON have actual SHA-256 values. Acquisition receipts1–4 distinguish environment DNS failures, genuine HTTP failures, metadata-only HTTP200 responses, local fragment-URL errors, and successful originals. IMA original provenance, exact URLs and timestamps are retained. Isolated PDF/Office tools ran outside checkouts; no original-main project environment was modified.
+
+Actual named validation: `uv run --locked cmmmech validate data/records/coffinite.yaml`, cwd `/private/tmp/CMMMech-expansion-round57-20261012`, completed 2026-10-12T12:39:34.360801Z, exit0, `Checked 1 record(s); 0 failed.` Full cohort gates and independent review are the parent's next steps, not claimed here.
+
+Record SHA256 `87fce590c46f36cf970ce3cc1c74d1a93e141fbec4bd91c3d738202f8b8b5496`. CREATE `history/records/coffinite/2026-10-12T123556Z-codex-81d463.yaml`, SHA256 `55b8e6d1f92e1ba3b8bbc8cab0e536e6782c82c0090218e28cbb65eebc2a04e5`. This is an actual new-history CREATE plus a distinct inline event; no fabricated source-access history or independent approval. All record bytes are frozen for independent review. The paired JSON pins these maintained artifacts and the named-validation log.

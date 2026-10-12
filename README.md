@@ -8,7 +8,7 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 264 material records.
+The catalogue currently contains 267 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
@@ -276,6 +276,9 @@ The catalogue currently contains 264 material records.
 | [Chalcopyrite-enargite concentrate](data/records/chalcopyrite-enargite-concentrate.yaml) | Mixed-feed acidophile bioleaching with carbon | Nonsterilized controls and theoretical copper contributions limit causal claims |
 | [Nickeline-bearing ore](data/records/nickeline-bearing-ore.yaml) | Mixed-culture nickel mobilization from two natural feed grades | Ferric-only dissolution and source inconsistencies limit microbial attribution |
 | [Zirconolite](data/records/zirconolite.yaml) | Current mineral identity and natural metamict specimen | No inferred polytype, microbial mechanism or criticality designation |
+| [Electroplating sludge](data/records/electroplating-sludge.yaml) | Separate culture-associated and biogenic-liquor leaching assays | Mismatched controls and source calculation/toxicity conflicts; no isolated product |
+| [Copper autoclave slime](data/records/copper-autoclave-slime.yaml) | EPR3-associated tellurium transport from processed refinery residue | Laboratory agar/headspace evidence; gas identity and recovered mass remain unresolved |
+| [Coffinite](data/records/coffinite.yaml) | Mineral identity, natural occurrence and abiotic laboratory formation | Abiotic precipitation is distinct from a deferred microbial-leaching study |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -340,7 +343,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [fifty-fourth expansion reviews](research/ingests/round54-20261012-publication.md),
 [fifty-fifth expansion reviews](research/ingests/round55-20261012-publication.md),
 [fifty-sixth expansion reviews](research/ingests/round56-20261012-publication.md),
-[remaining ingest priorities](research/ingests/round56-frontier-20261012.md), and
+[fifty-seventh expansion reviews](research/ingests/round57-20261012-publication.md),
+[remaining ingest priorities](research/ingests/round57-frontier-20261012.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 
