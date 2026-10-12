@@ -1,0 +1,380 @@
+schema_version: 1.0.0
+review_id: 20261012T020432Z-cemented-tungsten-carbide-scrap-round42-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of cemented tungsten carbide scrap
+started_at: '2026-10-12T01:59:54Z'
+finished_at: '2026-10-12T02:04:32Z'
+reviewer:
+  identity: Codex /root/round27_packaging
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Authored separate round42 birnessite extension and reviewed
+    Theisen source-only documentation. Did not author or edit hardmetal record/history/dossier.
+    Personally inspected complete original six-page paper and all graphics, authorities,
+    access/dedup receipts and actual validation logs.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'The new hardmetal secondary-resource record is supported within explicit
+  limits: culture/ferric-associated binder mobilization, separately chemical powder
+  preparation, unresolved causal controls and composition denominators. No corrective
+  record finding.'
+source:
+  git_revision: a5528a4807ba14fd8088a557ad105ac10ca62965
+  state: working_tree
+  inputs:
+  - path: data/records/cemented-tungsten-carbide-scrap.yaml
+    sha256: 16210c05938ea5d7486a5450dcf2c7e8d04192a82fbc991bb62c1c84699ed422
+    role: target
+  - path: history/records/cemented-tungsten-carbide-scrap/2026-10-12T015830Z-codex-71aae7.yaml
+    sha256: 7d4d6a35c27e63e87e02e3531644ef3b4a525e9bdf2a00b253f6f6219b5e25e6
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:cemented-tungsten-carbide-scrap
+  path: data/records/cemented-tungsten-carbide-scrap.yaml
+  label: Cemented tungsten carbide scrap
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cemented-tungsten-carbide-scrap.yaml
+    role: maintained_record
+scope:
+  description: Whole frozen new record, primary experiment and authorities, both microbial-association
+    and downstream nonmicrobial steps.
+  selection: Parent-assigned independent review of peer-authored record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:cemented-tungsten-carbide-scrap
+checks:
+- check_id: named
+  name: Independent named record validation
+  command: uv run --locked cmmmech validate data/records/cemented-tungsten-carbide-scrap.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:cemented-tungsten-carbide-scrap
+  summary: Reviewer executed in explicit round42 cwd with isolated cache/offline/no-bytecode
+    environment. Terminal0; 1 checked, 0 failed. Log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- check_id: batch
+  name: Final cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:cemented-tungsten-carbide-scrap
+  summary: 'Parent executed; reviewer independently read complete raw-byte log and
+    verified SHA256 4980aedbe1b677797b96f68809ecd197fb335257db08dd5e42f8677eca30b98f.
+    uv run --locked --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 174.24s (0:02:54)
+
+    Checked 216 record(s); 0 failed.
+
+    Checked 252 history record(s); 0 error(s).'
+- check_id: nonempty
+  name: Final cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:cemented-tungsten-carbide-scrap
+  summary: Parent executed; reviewer independently read complete raw-byte log and
+    verified SHA256 253a7b1f24733e2960a5844348786b1f7b8c035bb10af8e25c914e2d5234e023.
+    Checked 216 record(s); 0 failed.
+- check_id: history
+  name: Final cohort history
+  command: uv run --locked cmmmech validate-history --base a5528a4807ba14fd8088a557ad105ac10ca62965
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:cemented-tungsten-carbide-scrap
+  summary: Parent executed; reviewer independently read complete raw-byte log and
+    verified SHA256 c2a1a9ebbab06d77f85879fede0494f78da78b43ff3500e7c095428e8f54ba35.
+    Checked 252 history record(s); 0 error(s).
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/cemented-tungsten-carbide-scrap.yaml
+  locator: Exact whole frozen target; native inspect before judgment
+  accessed_at: '2026-10-12T02:04:32Z'
+  support: supports
+  summary: New secondary-resource owner and both mechanisms independently assessed.
+    No target/history mutation by reviewer.
+  snapshot_sha256: 16210c05938ea5d7486a5450dcf2c7e8d04192a82fbc991bb62c1c84699ed422
+- evidence_id: primary
+  kind: primary_source
+  reference: https://journal.mmi.kpi.ua/old/article/view/29004
+  locator: Complete original Russian paper pp125-130, all Figures1-3, Tables1-6 and
+    eight printed equations
+  accessed_at: '2026-10-12T02:04:32Z'
+  support: supports
+  summary: Personally read complete text and visually inspected all six original pages.
+    Official and institutional PDFs match. Printed2013 issue differs from portal2014
+    posting. No separate SI pointer identified in inspected fullpaper or landing;
+    inaccessible2012 apparatus/particle studies are not claimed as reviewed.
+  snapshot_sha256: d9f1e4def85d66c8086ebbbe5afe78c04413046cd37dcf9645735b61b93867da
+- evidence_id: conditions
+  kind: primary_source
+  reference: https://journal.mmi.kpi.ua/old/article/view/29004
+  locator: pp125-128; Figure1, Tables1-2, Equations1-2
+  accessed_at: '2026-10-12T02:04:32Z'
+  support: supports
+  summary: Waste rolling-mill rollers with Co/Ni binder and cutting tips with Co binder;
+    biological ferric-sulfate solution, liquid:solid volume1:1, continuous mixing,
+    seven days. FerricFe>4g/L/pH<4 are working criteria, not a complete controlled
+    culture protocol.85C is residue drying, not incubation. Paper names T.ferrooxidans
+    plus bacterial association; stock, density, medium, temperature, reactor volume,
+    rpm and replicated uncertainty are missing.
+  snapshot_sha256: d9f1e4def85d66c8086ebbbe5afe78c04413046cd37dcf9645735b61b93867da
+- evidence_id: controls
+  kind: primary_source
+  reference: https://journal.mmi.kpi.ua/old/article/view/29004
+  locator: pp126-128; proposed direct/indirect mechanisms and Figure2
+  accessed_at: '2026-10-12T02:04:32Z'
+  support: supports
+  summary: No matched sterile-ferric, acid-only, no-mixing or cell-free regeneration
+    arm. Authors explicitly say mechanism is not finally established; chemical/electrochemical/abrasion
+    contributions coexist. The accepted culture association does not demonstrate microbial
+    advantage, cell-contact electron transfer or industrial benefit.
+  snapshot_sha256: d9f1e4def85d66c8086ebbbe5afe78c04413046cd37dcf9645735b61b93867da
+- evidence_id: measurements
+  kind: primary_source
+  reference: https://journal.mmi.kpi.ua/old/article/view/29004
+  locator: Figure2, Tables1-4, p127 and conclusion p129
+  accessed_at: '2026-10-12T02:04:32Z'
+  support: supports
+  summary: Figure2 percent-Co content lacks starting-inventory/mass-balance denominator.
+    Tables give relative elemental compositions without carbon; residualCo and liquorW
+    demonstrate incomplete partitioning. W95.395% and conclusion95.2%WC purity differ
+    and cannot be interchanged. Reported hexagonalWC lacks displayed XRD/quantitative
+    phase data; particle metrics rely on unacquired2012 study. pH curve approaches4
+    despite prose1.5-3, retained as source tension.
+  snapshot_sha256: d9f1e4def85d66c8086ebbbe5afe78c04413046cd37dcf9645735b61b93867da
+- evidence_id: chemical-products
+  kind: primary_source
+  reference: https://journal.mmi.kpi.ua/old/article/view/29004
+  locator: pp127-129; Tables5-6, Figure3 and Equations3-8
+  accessed_at: '2026-10-12T02:04:32Z'
+  support: supports
+  summary: Ammonia/NaF iron separation and hydrazine reduction are separately microbial:false.
+    Table6 relativeCo70.089/87.831/89.843% at pH4/5/11,80.098%NaF are composition,
+    not extraction yield. pH11 precipitateCo44.597% indicates potential loss without
+    its mass. FavoredpH5 differs from headline89.8%Co. pH4.5vs5, NaFFe1.27vs1.373%,
+    Figure3 omittedNi and unbalanced Equation7 remain explicit. No equation is adopted
+    as validated stoichiometry; no isolated product masses or displayed cobalt-phase
+    characterization.
+  snapshot_sha256: d9f1e4def85d66c8086ebbbe5afe78c04413046cd37dcf9645735b61b93867da
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
+  locator: Fresh independent official browser and retained current official API/browserHTML
+  accessed_at: '2026-10-12T02:04:32Z'
+  support: supports
+  summary: NCBITaxon920 is Acidithiobacillus ferrooxidans, with Thiobacillus ferrooxidans
+    homotypic synonym. This maps species nomenclature only, not the unaccessioned
+    experimental stock or every consortium member.
+  snapshot_sha256: c6d264e2f6ed730350be86773d9564c7427f7f089b57ed566d6494e3bd21a4ac
+- evidence_id: metadata
+  kind: authority
+  reference: https://journal.mmi.kpi.ua/old/article/view/29004
+  locator: Official landing metadata; acquisition1-3; matching institutional mirror
+  accessed_at: '2026-10-12T02:04:32Z'
+  support: supports
+  summary: Official fulltext is accessible. Publisher DOI10.20535/2305-9001.2013.69.29004
+    returned resolver/Crossref404 in retained acquisition receipts, correctly not
+    asserted resolved. Generic CC attribution statement has unverified version; original
+    bulk retained outsideGit.
+  snapshot_sha256: c915aa0d37607393b146230f19e09db25d1e8e7ddea04da38592ca0e83afe2e5
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round42-hardmetal-independent-evidence-check.json
+  locator: Independent rerun of exact author experiment/DOI/identity search over bounded
+    two-checkout and citedraw scope
+  accessed_at: '2026-10-12T02:04:32Z'
+  support: supports
+  summary: Hidden/ignored/followed search now matches only this new record, its CREATE
+    and two source dossiers.150 cited existing rawroots and six missing paths disclosed.
+    Unextracted binary graphics are not text search coverage; no machine-wide absence
+    claim. Distinct from tungsten mineral/tailings and iron-rich metal grinding sludge.
+  search_scope: rg --no-ignore --hidden --follow across round42 and original data/records,research,reviews,history
+    plus author-listed150 existing citedrawroots; text-bearing extensions only, explicit
+    missing roots retained.
+  snapshot_sha256: a6b4cf2f5bb6b66538f29725ccfb64f8ead8a2f3f8cfb4e8e3f754d3499d6af0
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round42-hardmetal-independent-evidence-check.json
+  locator: Exact DOI/author correction queries and targeted competing bioleaching
+    query
+  accessed_at: '2026-10-12T02:04:32Z'
+  support: supports
+  summary: No affecting formal notice identified in bounded first returned sets, not
+    exhaustive.2015 WC-Co corrosion DOI10.1016/j.corsci.2015.01.036 is only metadata/coredata
+    here; no claim its fullmethods/graphics were assessed and no abstract measurement
+    imported. All29 declared author artifacts independently hash-verified.
+  search_scope: web.run first results for exact DOI, Chaika29004 correction/erratum/retraction,
+    and cemented-carbide bioleaching sterile control; current official NCBI browser.
+  snapshot_sha256: a6b4cf2f5bb6b66538f29725ccfb64f8ead8a2f3f8cfb4e8e3f754d3499d6af0
+- evidence_id: history
+  kind: record_content
+  reference: history/records/cemented-tungsten-carbide-scrap/2026-10-12T015830Z-codex-71aae7.yaml
+  locator: Canonical CREATE and separate inline event
+  accessed_at: '2026-10-12T02:04:32Z'
+  support: supports
+  summary: Actual Codex/GPT-6/codex provenance and scoped newowner agree. Inline01:56:58Z
+    and canonical01:58:30Z are distinct events, not a fabricated common timestamp;
+    sidecar linked exactly.
+  snapshot_sha256: 7d4d6a35c27e63e87e02e3531644ef3b4a525e9bdf2a00b253f6f6219b5e25e6
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round42-final-terminal.json
+  locator: Actual final terminal receipt and three raw-byte checked logs
+  accessed_at: '2026-10-12T02:04:32Z'
+  support: supports
+  summary: Terminal0:308passed3skipped174.24s,216records252histories; separate nonempty216/0
+    and trusted-basehistory252/0. Reviewer namedvalidation1/0. Final target/history
+    hashes remain inspect-identical.
+  snapshot_sha256: a25cbb01ec2e6d41c20607099611dd95f796cfe264c28c29a012e8f5b64f235f
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Manufactured secondary-resource boundary
+  outcome: supported
+  summary: Hardmetal components with variable binders are a distinct secondary feed.
+    No mineral species identifier, pure WC identity, inherited criticality, universal
+    waste composition or industrial implementation is asserted.
+  target_ids:
+  - cmmmech:cemented-tungsten-carbide-scrap
+  evidence_ids:
+  - record
+  - primary
+  - dedup
+  - taxonomy
+  dimensions: []
+- assessment_id: microbial
+  area: evidence
+  topic: Culture association and uncertain causal contribution
+  outcome: supported
+  summary: The paper supports the reported culture/ferric workflow and incomplete
+    binder mobilization, bounded by absent matched controls and unresolved consortium/strain
+    identity.
+  target_ids:
+  - cmmmech:cemented-tungsten-carbide-scrap
+  evidence_ids:
+  - conditions
+  - controls
+  - taxonomy
+  dimensions:
+  - name: biomass
+    value: Reported culture-containing ferric solution and thionic-bacterial association
+    definition: No authenticated pure strain or direct causal metabolic mechanism;
+      ferric regeneration reported but kinetics not measured.
+    evidence_ids:
+    - conditions
+    - controls
+    - taxonomy
+  - name: scale
+    value: Laboratory waste-treatment experiment and chemical downstream preparation
+    definition: Industrial-origin components and introductory process claims do not
+      establish industrial deployment.
+    evidence_ids:
+    - primary
+    - controls
+- assessment_id: quantities
+  area: evidence
+  topic: Relative composition is not extraction or phase purity
+  outcome: supported
+  summary: Curve/tables are not closed mass recovery; pH behavior, W-versus-WC and
+    missing characterization are accurately preserved.
+  target_ids:
+  - cmmmech:cemented-tungsten-carbide-scrap
+  evidence_ids:
+  - measurements
+  - primary
+  dimensions: []
+- assessment_id: downstream
+  area: evidence
+  topic: Separate chemical product preparation
+  outcome: supported
+  summary: RelativeCo enrichments and co-precipitation loss remain composition observations.
+    Chemical step is correctly nonmicrobial; no isolated yield or validated phase-purity
+    claim. Source conflicts are transparently retained.
+  target_ids:
+  - cmmmech:cemented-tungsten-carbide-scrap
+  evidence_ids:
+  - chemical-products
+  - controls
+  dimensions: []
+- assessment_id: provenance
+  area: provenance
+  topic: Exact source access, review independence and actual validation
+  outcome: supported
+  summary: Reviewer did not author target. Original fullarticle personally checked;
+    unavailable references/DOI and bounded search scope disclosed. Native inspect
+    preceded judgment and every input remains unchanged. Actual named/full/nonempty/history
+    gates independently verified.
+  target_ids:
+  - cmmmech:cemented-tungsten-carbide-scrap
+  evidence_ids:
+  - record
+  - metadata
+  - notices
+  - history
+  - gates
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- No matched abiotic/sterile/mechanical controls isolate microbial advantage; the
+  association and reported iron-regeneration workflow are narrower than a proven contact
+  pathway.
+- Unknown strain provenance, culture density, temperature, detailed medium, reactor
+  volume, agitation rate and replicated analytical uncertainty limit reproducibility.
+- Percent-Co curve and relative elemental tables are not initial-inventory extraction
+  yields or complete mass balances; carbon absent and normalization incompletely described.
+- No original WC diffraction trace or quantitative phase purity; particle distribution
+  comes from inaccessible2012reference. Reported Co-rich powder lacks independently
+  displayed phase characterization.
+- Downstream chemical purification/reduction has conflicting pH/composition descriptions
+  and no isolated product masses; Equation7 is unbalanced and not adopted.
+- Publisher-declared DOI remains unresolved despite accessible official fullpaper;
+  no separate SI linked on inspected primary/landing.2012 references and2015 corrosion
+  fulltext are deferred.
+- Bounded notice/dedup searches include hidden/ignored/followed relevant paths but
+  do not cover unrelated machine directories or all unextracted binary content.
+notes:
+- No scientific target/history edits by reviewer. Reviewer executed namedvalidation;
+  parent full gates were read and raw-byte hash-verified.
+- All3figures/6tables/8printed equations were visually inspected in the six-page original,
+  rather than relying only on extracted text or curator conclusions.
+- Birnessite author work, other cohort records, publication deployment and unacquired
+  references are outside this independent record verdict.
+links:
+- https://journal.mmi.kpi.ua/old/article/view/29004
+- https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info

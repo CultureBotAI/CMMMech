@@ -1,0 +1,176 @@
+id: cmmmech:cemented-tungsten-carbide-scrap
+name: Cemented tungsten carbide scrap
+material_kind: secondary_resource
+description: >-
+  Discarded hardmetal production components composed of tungsten carbide
+  with cobalt or cobalt-nickel binder, represented by rolling-mill rollers
+  and brazed cutting tips in the Chaika study. This manufactured secondary
+  resource is distinct from pure tungsten carbide, a mineral species,
+  tungsten mining tailings and metal grinding sludge. The sampled shapes
+  and compositions do not define every hardmetal waste stream. No
+  criticality designation or industrial deployment is inferred.
+sources:
+- id: chaika2013_hardmetal
+  title: >-
+    Chaika, Derbasova and Gavrish (2013), Research division of tungsten
+    carbide and cobalt as a result of microbiological waste destruction
+    of tungstencobalt waste. Visnyk NTUU KPI, Mechanical Engineering
+    3(69), 125-130. Complete Russian original, Figures 1-3, Tables 1-6,
+    Equations 1-8. Publisher portal posting date 2014-01-07 differs from
+    printed issue year 2013. Publisher-declared DOI
+    10.20535/2305-9001.2013.69.29004 returned 404 at both DOI resolver
+    and Crossref on the access date; the official article/PDF is accessible.
+  url: https://journal.mmi.kpi.ua/old/article/view/29004
+  accessed_on: '2026-10-12'
+- id: ncbi_ferrooxidans
+  title: >-
+    NCBI Taxonomy 920, Acidithiobacillus ferrooxidans; Thiobacillus
+    ferrooxidans is a homotypic synonym. Species nomenclature only,
+    without authentication of the experimental culture.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
+  accessed_on: '2026-10-12'
+mechanisms:
+- id: culture_ferric_associated_binder_mobilization
+  name: Culture and ferric-solution-associated hardmetal binder mobilization
+  process: bioleaching
+  microbial: true
+  organisms:
+  - id: NCBITaxon:920
+    label: Acidithiobacillus ferrooxidans
+  description: >-
+    A source-described bacterial ferric-sulfate solution was used in a
+    continuously mixed hardmetal-scrap experiment. The authors report
+    cobalt and nickel transfer into liquor and a tungsten-rich solid
+    residue, with spent ferrous liquor routed to fermenters for biological
+    ferric regeneration. This supports association with the reported
+    culture-containing workflow. Ferric attack, electrochemical dissolution
+    and mechanical abrasion also occur in the authors' process description;
+    without matched controls it does not isolate a microbial enhancement
+    or demonstrate a specific contact-mediated pathway.
+  context: >-
+    Pages 125-128 describe production waste with Co binder in cutting tips
+    and Co-Ni binder in rolling-mill rollers, mixed with the biological
+    solution at a liquid-to-solid volume ratio of 1:1. This is not a mass
+    loading. The apparatus is referred to a 2012 paper; its construction
+    is not specified in this article. The working-solution criteria are
+    ferric Fe above 4 g/L and pH below 4, with a seven-day time course.
+    The source names Thiobacillus ferrooxidans and also an association of
+    thionic bacteria; a verified pure culture is not established. Strain
+    accession, stock provenance, inoculum density, nutrient recipe,
+    incubation temperature, reactor volume, agitation rate, replicated
+    leaching runs and analytical uncertainty are not supplied. Residue
+    was decantation-washed and dried at 85 degrees C; that is a recovery
+    preparation temperature, not the leaching temperature.
+  evidence:
+  - source_ref: chaika2013_hardmetal
+    supports: support
+    explanation: >-
+      Figure 1 and Table 2 identify the two scrap forms and different
+      starting elemental compositions. Figure 2 shows increasing reported
+      Co content over 168 hours, with the steepest rise in the first
+      24 hours and slower subsequent increase. Tables 3 and 4 separately
+      describe residue and spent-liquor elemental composition, including
+      residual Co in the solid and W in the liquor. These observations
+      support incomplete partitioning rather than perfect separation.
+      The paper does not resolve all subsequent products and time-course
+      data into separate roller and cutting-tip experimental arms.
+  - source_ref: chaika2013_hardmetal
+    supports: partial
+    explanation: >-
+      Figure 2 labels its Co axis as content in percent without specifying
+      a fraction of initial feed Co, an absolute dissolved concentration
+      or a mass-balance denominator. Tables 1-6 give relative elemental
+      percentages; their analytical normalization and sample preparation
+      are insufficiently described, and carbon is absent from the reported
+      element lists. Neither the curve nor the liquor/residue compositions
+      establish an extraction percentage, a WC purity or a recovered yield.
+      The Figure 2 pH curve reaches approximately 4; the accompanying text
+      highlights pH 1.5-3 and the working criterion is below 4. These
+      descriptions are retained without treating pH as constant.
+  - source_ref: chaika2013_hardmetal
+    supports: partial
+    explanation: >-
+      No matched sterile ferric-sulfate, acid-only, no-mixing or cell-free
+      regeneration comparison is reported in the complete article.
+      Page 126 explicitly states that the destruction mechanism is not
+      finally established. Its proposed contact and indirect pathways
+      and Equations 1-2 are explanatory hypotheses, not demonstrations
+      of cell attachment, electron transfer, enzyme action or necessity.
+      Culture abundance and iron-regeneration kinetics are not measured
+      here. The experiment does not substantiate the introduction's
+      environmental, economic or equipment advantages at industrial scale.
+  - source_ref: chaika2013_hardmetal
+    supports: partial
+    explanation: >-
+      Page 127 reports predominantly hexagonal WC by DRON-4-07 phase
+      analysis, but displays no original diffraction trace or quantitative
+      phase fraction. Its particle-size range and mass-peak statement
+      refer to a separate 2012 study, not an independently inspected size
+      distribution in this article. Table 3 reports W at 95.395 percent
+      and the discussion rounds this to 95.4 percent W; the conclusion
+      instead calls the powder 95.2 percent WC purity. Relative elemental
+      W abundance, especially without measured carbon, does not establish
+      that phase-purity claim. No numerical WC purity is adopted.
+  - source_ref: ncbi_ferrooxidans
+    supports: context_only
+    explanation: >-
+      The live authority lists the historical paper name as a homotypic
+      synonym of Acidithiobacillus ferrooxidans. NCBITaxon:920 identifies
+      a species, not the unaccessioned experimental stock or every member
+      of the source-described bacterial association.
+- id: chemical_liquor_separation_and_powder_recovery
+  name: Chemical purification and reduction of the resulting leach liquor
+  process: recovery
+  microbial: false
+  description: >-
+    The same workflow included chemical iron separation followed by
+    alkaline hydrazine-hydrate reduction to a reported Co-rich powder
+    containing nickel and other impurities. This downstream product
+    preparation was not a microbial reduction. Product elemental
+    composition and impurity comparisons do not establish whole-feed
+    recovery, cobalt phase purity or an optimized industrial process.
+  context: >-
+    Pages 127-129 compare aqueous ammonia iron precipitation at nominal
+    pH 4, 5 and 11 with a sodium-fluoride route, followed by settling,
+    filtration and hydrazine-hydrate treatment. The paper does not supply
+    complete reagent doses, isolated product masses, replication,
+    sampling-adjusted metal balance or independent phase characterization
+    of the reported cobalt powders. These are downstream treatments
+    of the earlier liquor, not additional bioleaching experiments.
+  evidence:
+  - source_ref: chaika2013_hardmetal
+    supports: support
+    explanation: >-
+      Tables 5-6 and Figure 3 document differing precipitate/powder
+      compositions. Table 6 reports relative Co contents of 70.089,
+      87.831 and 89.843 percent for the pH 4, 5 and 11 ammonia routes,
+      and 80.098 percent for sodium fluoride. These are source-reported
+      elemental contents, not percentages of feed cobalt recovered.
+      Table 5 reports 44.597 percent Co in the pH 11 iron-separation
+      precipitate, supporting co-precipitation as a loss pathway without
+      quantifying its mass. The authors therefore favor pH 5 despite
+      higher relative Co content in the pH 11 final powder.
+  - source_ref: chaika2013_hardmetal
+    supports: partial
+    explanation: >-
+      Page 129 discusses pH 4.5 where Table 6 and Figure 3 label pH 5;
+      it gives 1.27 percent Fe for the sodium-fluoride powder whereas
+      Table 6 gives 1.373 percent. The concluding 89.8 percent Co value
+      corresponds to the pH 11 column, not the recommended pH 5 column.
+      Figure 3 omits Ni although Table 6 includes it. Equation 7's
+      printed sodium-iron-fluoride stoichiometry is not balanced and
+      is not adopted. These inconsistencies prevent treating the
+      headline purity, chosen pH and chemical equation as a single
+      validated recovery specification.
+curation_history:
+- timestamp: '2026-10-12T01:56:58Z'
+  curator: Codex (GPT-6)
+  action: CREATE
+  summary: >-
+    Created a distinct cemented tungsten carbide scrap resource from the
+    complete original Chaika study and fresh species authority. Separated
+    culture/ferric-associated binder mobilization from chemical powder
+    preparation and retained missing controls, unresolved denominators,
+    source inconsistencies, incomplete phase evidence and DOI access limits.
+history_refs:
+- history/records/cemented-tungsten-carbide-scrap/2026-10-12T015830Z-codex-71aae7.yaml

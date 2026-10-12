@@ -1,0 +1,82 @@
+{
+  "recorded_at": "2026-10-12T02:04:10.763016+00:00",
+  "reviewer": "Codex /root/round27_eaf_slag (GPT-6; codex)",
+  "independence": "Root authored these two gate-wrapper ports; reviewer authored hardmetal and separate operational/document helpers, not these two wrappers. This is not a scientific review of the reviewer-authored record or a self-audit of those other helpers.",
+  "scope": "Two exact path/base-only gate ports, explicit isolated working directory/environment, immutable log destinations and terminal/hash reporting. Read-only assessment; no commands rerun.",
+  "verdict": "pass",
+  "findings": [],
+  "helpers": [
+    {
+      "name": "run-final",
+      "source": "/private/tmp/cmm-round41-run-final.py",
+      "source_sha256": "c9e7b2afa71c78848858fd74ad59b9dfbbe06cdeeee20856c293051ccd7d65e4",
+      "target": "/private/tmp/cmm-round42-run-final.py",
+      "sha256": "19f6f408b8c153c03281f2ba2ff077b4e03234393c7b6ad2996d8d3dcb6e5e85",
+      "normalized_text_and_ast_match": true
+    },
+    {
+      "name": "run-review-check",
+      "source": "/private/tmp/cmm-round41-run-review-check.py",
+      "source_sha256": "a2c218087ce1dbbc123fac0c4a7d03465ff4e1a43ff265869c06ecce7dec0bde",
+      "target": "/private/tmp/cmm-round42-run-review-check.py",
+      "sha256": "ad7999d00e4a716052bdfed7bc52c3d67f9e63c9982371a7c44201863fabeeb1",
+      "normalized_text_and_ast_match": true
+    }
+  ],
+  "actual_final_receipt": {
+    "path": "/private/tmp/cmm-round42-final-terminal.json",
+    "sha256": "a25cbb01ec2e6d41c20607099611dd95f796cfe264c28c29a012e8f5b64f235f",
+    "exit_code": 0,
+    "test_summary": "308 passed, 3 skipped in 174.24s",
+    "records": 216,
+    "histories": 252,
+    "commands": [
+      {
+        "name": "batch",
+        "command": [
+          "just",
+          "check"
+        ],
+        "started_at": "2026-10-12T02:00:06.060645+00:00",
+        "finished_at": "2026-10-12T02:03:10.878566+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round42-final-batch.log",
+        "sha256": "4980aedbe1b677797b96f68809ecd197fb335257db08dd5e42f8677eca30b98f"
+      },
+      {
+        "name": "nonempty",
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate",
+          "--require-records"
+        ],
+        "started_at": "2026-10-12T02:03:10.880243+00:00",
+        "finished_at": "2026-10-12T02:03:15.636187+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round42-final-nonempty.log",
+        "sha256": "253a7b1f24733e2960a5844348786b1f7b8c035bb10af8e25c914e2d5234e023"
+      },
+      {
+        "name": "history",
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate-history",
+          "--base",
+          "a5528a4807ba14fd8088a557ad105ac10ca62965"
+        ],
+        "started_at": "2026-10-12T02:03:15.636522+00:00",
+        "finished_at": "2026-10-12T02:03:18.832776+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round42-final-history.log",
+        "sha256": "c2a1a9ebbab06d77f85879fede0494f78da78b43ff3500e7c095428e8f54ba35"
+      }
+    ]
+  },
+  "limits": "Native review-check completion was not available at this audit; this assesses its implementation, not a pending result. Fresh isolated preflight/hosted/postmerge checks remain future runtime steps."
+}

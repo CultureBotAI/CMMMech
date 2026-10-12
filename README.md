@@ -220,9 +220,12 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Cerussite](data/records/cerussite.yaml) | Brown-rot cultures form lead oxalate on a natural cerussite specimen | Microscopy-only assignments and conflicting co-product wording remain explicit |
 | [Fluorapatite](data/records/fluorapatite.yaml) | Brown-rot cultures form calcium oxalate on a chlorine-bearing fluorapatite specimen | Medium calcium and method-dependent phase detection prevent source-exclusive or phosphorus-recovery claims |
 | [Hollandite](data/records/hollandite.yaml) | Brown-rot cultures form source-assigned manganese oxalate phases on a hollandite specimen | Formula and figure/table phase conflicts remain unresolved; no phase-specific recovery yield |
-| [Birnessite](data/records/birnessite.yaml) | Separate synthetic-feed transformation and prepared fungal-composite cobalt sorption | Different strains, phase uncertainty and source capacity/redox conflicts; no isolated cobalt yield |
+| [Birnessite](data/records/birnessite.yaml) | Separate synthetic-feed transformation, fungal-composite cobalt sorption and binary Co/Ni selectivity | Different strains, phase uncertainty and source capacity/redox conflicts; no isolated metal yield |
 | [Todorokite](data/records/todorokite.yaml) | Dated IMA identity and geological occurrence | Variable composition; geological alteration does not make it an industrial secondary resource |
 | [Kutnohorite](data/records/kutnohorite.yaml) | Dated IMA identity and natural compositional variation | Distinct carbonate species; no inherited criticality or microbial mechanism |
+| [Cemented tungsten carbide scrap](data/records/cemented-tungsten-carbide-scrap.yaml) | Reported culture/ferric binder mobilization and separate chemical powder preparation | Missing matched controls and mass-balance denominators; no numerical extraction yield or WC purity |
+| [Petalite](data/records/petalite.yaml) | Dated IMA species identity and Handbook geological context | No accepted microbial mechanism or inherited criticality |
+| [Polylithionite](data/records/polylithionite.yaml) | Dated IMA identity and original mica nomenclature | Lepidolite series is not an exact endmember synonym; no accepted microbial mechanism |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -271,7 +274,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [thirty-ninth expansion reviews](research/ingests/round39-20261012-publication.md),
 [fortieth expansion reviews](research/ingests/round40-20261012-publication.md),
 [forty-first expansion reviews](research/ingests/round41-20261012-publication.md),
-[remaining ingest priorities](research/ingests/round41-frontier-20261012.md), and
+[forty-second expansion reviews](research/ingests/round42-20261012-publication.md),
+[remaining ingest priorities](research/ingests/round42-frontier-20261012.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

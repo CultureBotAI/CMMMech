@@ -1,0 +1,243 @@
+{
+  "recorded_at": "2026-10-12T02:07:51.304026+00:00",
+  "observation_timestamp": "2026-10-12T01:58:35.312848+00:00",
+  "raw_receipt": {
+    "path": "/private/tmp/cmm-round42-current-status.json",
+    "sha256": "6f368b53769b1c85a7d579c77c836f0a23d2d37dafc7975039e93988bab0daf0"
+  },
+  "governance_pin": "a5d562962c75a2ad9efd8160b548df5944315422",
+  "admission": {
+    "number": 581,
+    "html_url": "https://github.com/CultureBotAI/culturebotai-claw/pull/581",
+    "state": "closed",
+    "merged": true,
+    "merged_at": "2026-10-08T02:08:09Z",
+    "merge_commit_sha": "849f336e025510316a5f235eb0af8547b8bd50cc"
+  },
+  "effective_main_rules": [
+    {
+      "type": "pull_request",
+      "parameters": {
+        "required_approving_review_count": 0,
+        "dismiss_stale_reviews_on_push": false,
+        "required_reviewers": [],
+        "require_code_owner_review": false,
+        "dismissal_restriction": {
+          "enabled": false,
+          "allowed_actors": []
+        },
+        "require_last_push_approval": false,
+        "required_review_thread_resolution": false,
+        "require_extra_approval_for_unattributed_changes": true,
+        "allowed_merge_methods": [
+          "merge",
+          "squash",
+          "rebase"
+        ]
+      },
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "CultureBotAI/CMMMech",
+      "ruleset_id": 24692449
+    },
+    {
+      "type": "required_status_checks",
+      "parameters": {
+        "strict_required_status_checks_policy": false,
+        "do_not_enforce_on_create": false,
+        "required_status_checks": [
+          {
+            "context": "validate-strict",
+            "integration_id": 15368
+          }
+        ]
+      },
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "CultureBotAI/CMMMech",
+      "ruleset_id": 24692449
+    },
+    {
+      "type": "merge_queue",
+      "parameters": {
+        "merge_method": "SQUASH",
+        "max_entries_to_build": 3,
+        "min_entries_to_merge": 1,
+        "max_entries_to_merge": 1,
+        "min_entries_to_merge_wait_minutes": 5,
+        "grouping_strategy": "ALLGREEN",
+        "check_response_timeout_minutes": 120
+      },
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "CultureBotAI/CMMMech",
+      "ruleset_id": 24692449
+    }
+  ],
+  "ruleset": {
+    "id": 24692449,
+    "name": "CLAW merge queue",
+    "enforcement": "active",
+    "bypass_actors": [],
+    "conditions": {
+      "ref_name": {
+        "exclude": [],
+        "include": [
+          "refs/heads/main"
+        ]
+      }
+    },
+    "rules": [
+      {
+        "type": "pull_request",
+        "parameters": {
+          "required_approving_review_count": 0,
+          "dismiss_stale_reviews_on_push": false,
+          "required_reviewers": [],
+          "require_code_owner_review": false,
+          "dismissal_restriction": {
+            "enabled": false,
+            "allowed_actors": []
+          },
+          "require_last_push_approval": false,
+          "required_review_thread_resolution": false,
+          "require_extra_approval_for_unattributed_changes": true,
+          "allowed_merge_methods": [
+            "merge",
+            "squash",
+            "rebase"
+          ]
+        }
+      },
+      {
+        "type": "required_status_checks",
+        "parameters": {
+          "strict_required_status_checks_policy": false,
+          "do_not_enforce_on_create": false,
+          "required_status_checks": [
+            {
+              "context": "validate-strict",
+              "integration_id": 15368
+            }
+          ]
+        }
+      },
+      {
+        "type": "merge_queue",
+        "parameters": {
+          "merge_method": "SQUASH",
+          "max_entries_to_build": 3,
+          "min_entries_to_merge": 1,
+          "max_entries_to_merge": 1,
+          "min_entries_to_merge_wait_minutes": 5,
+          "grouping_strategy": "ALLGREEN",
+          "check_response_timeout_minutes": 120
+        }
+      }
+    ]
+  },
+  "workflows": [
+    {
+      "id": 378016117,
+      "name": "Automatic merge queue admission",
+      "path": ".github/workflows/merge-queue-admission.yaml",
+      "state": "active",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/blob/main/.github/workflows/merge-queue-admission.yaml"
+    },
+    {
+      "id": 378016120,
+      "name": "PR shepherd",
+      "path": ".github/workflows/pr-shepherd.yml",
+      "state": "active",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/blob/main/.github/workflows/pr-shepherd.yml"
+    },
+    {
+      "id": 375954368,
+      "name": "Validate strictly",
+      "path": ".github/workflows/validate-strict.yaml",
+      "state": "active",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/blob/main/.github/workflows/validate-strict.yaml"
+    },
+    {
+      "id": 378016122,
+      "name": "Verify merge integrity",
+      "path": ".github/workflows/verify-merge-integrity.yaml",
+      "state": "active",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/blob/main/.github/workflows/verify-merge-integrity.yaml"
+    }
+  ],
+  "issues_at_initial_observation": [
+    {
+      "number": 137,
+      "state": "open",
+      "title": "Acquire complete Yu2012 biogenic-birnessite cobalt evidence before curation",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/137"
+    },
+    {
+      "number": 134,
+      "state": "open",
+      "title": "Complete original-figure and phase verification for manganese-ore oxalates",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/134"
+    },
+    {
+      "number": 133,
+      "state": "open",
+      "title": "Verify original samarium biomineralization figures before record admission",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/133"
+    },
+    {
+      "number": 130,
+      "state": "open",
+      "title": "Resolve yeast cerium-phosphate phase identity from full primary evidence",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/130"
+    },
+    {
+      "number": 129,
+      "state": "open",
+      "title": "Complete vanadinite original-figure verification before admission",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/129"
+    },
+    {
+      "number": 120,
+      "state": "open",
+      "title": "Complete meta-autunite figure verification before record admission",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/120"
+    },
+    {
+      "number": 104,
+      "state": "open",
+      "title": "Acquire and reconcile full ilmenite bioleaching studies",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/104"
+    },
+    {
+      "number": 103,
+      "state": "open",
+      "title": "Acquire tungsten mining-waste methods before record admission",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/103"
+    }
+  ],
+  "later_created_issues": [
+    {
+      "kind": "review",
+      "body": "Independent adversarial review found a minor provenance overstatement in the round42 Theisen source dossier (no accepted record is affected).\n\nStable finding key: `CMMMech.theisen.source-version-date`.\n\nAffected input: `research/sources/round42-theisen-sludge/20261012T015742Z-source-investigation.md`, version-date paragraph. It interprets March 2016 as accepted-manuscript availability. The inspected Wiley record only labels 23 March 2016 \u201cFirst published\u201d; Crossref gives `published-online` 25 April 2016, and Oxford displays the June issue date. These receipts do not establish a manuscript-version mapping.\n\nCorrection required: preserve each provider's literal date label and leave the relationship between manuscript versions unresolved. Verify the corrected paragraph against retained acquisition receipts and obtain a successor independent disposition before publication. Keep the primary-paper and supplementary-access deferral intact.\n\nInitial independent review: `/private/tmp/cmm-round42-theisen-independent-initial-20261012T015921Z.md` and its JSON companion. The final disposition and published dossier will be linked from the PR.\n",
+      "number": 139,
+      "state": "OPEN",
+      "title": "Correct unsupported Theisen manuscript-version date interpretation",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/139",
+      "body_sha256": "97d21525056f5a9d1dd72796224eecf61bbb102f61029b0401ea99c3e610ae10",
+      "verified_at": "2026-10-12T01:59:51.908656+00:00"
+    },
+    {
+      "kind": "source",
+      "body": "The round42 source investigation identified a distinct secondary-resource candidate, Theisen sludge from former copper-shale smelting, but did not admit a record because complete primary methods, original graphics and relevant supplementary evidence were not available for inspection.\n\nPrimary target: Klink et al. (2016), *Journal of Applied Microbiology* 120(6):1520\u20131530, DOI [10.1111/jam.13142](https://doi.org/10.1111/jam.13142), PMID 27005888. Publisher, Crossref and UFZ metadata agree on the study identity. Indexed author text and abstracts are discovery evidence only.\n\nThe investigation is staged at `research/sources/round42-theisen-sludge/20261012T015742Z-source-investigation.md` with a JSON acquisition/search manifest; a published link will be added after merge. Direct Wiley/ResearchGate requests and the original supplementary link failed; UFZ's shareable link reached a verification page; current Oxford article/supplement links exposed the purchase/abstract view. These failures are access limits, not evidence that the study lacks methods or supplements.\n\nAcceptance criteria:\n\n- Acquire the complete paper and relevant original Tables 1\u20132, Figures 1\u20133 and supplementary Table S1/Figures S1\u2013S9 through a legitimate route; retain URL, version, acquisition date and hashes.\n- Verify feed provenance, culture membership and the reported strain accession; distinguish viable/inactivated controls, pretreatment, loading, pH, temperature, sampling, replication and dissolved/solid accounting.\n- Reconcile quantities and study-version differences against originals. Do not import abstract percentages/fold changes or infer isolated-product recovery or industrial deployment.\n- Compare the 2015 report (10.4028/www.scientific.net/AMR.1130.321) and 2016 poster for experiment overlap. Keep downstream speciation/separation studies distinct.\n- Repeat hidden/ignored-inclusive material/study deduplication, including newly available referenced raw directories. Then either curate a scoped `secondary_resource` record with canonical history and independent review, or record why deferral remains appropriate.\n\nThis is a source-access/review follow-up, not a defect in an accepted record. Nine referenced raw directories were unavailable in this bounded search; no machine-wide absence or source exhaustion is claimed.\n",
+      "number": 140,
+      "state": "OPEN",
+      "title": "Acquire complete Theisen sludge primary evidence before record admission",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/140",
+      "body_sha256": "56d0e3583803e111b0a9b5b66d600e77685c8f9ca7b14860e97a9e0e100ca9de",
+      "verified_at": "2026-10-12T01:59:53.778244+00:00"
+    }
+  ],
+  "later_issue_receipt": {
+    "path": "/private/tmp/cmm-round42-issues-created.json",
+    "sha256": "28c865f0e0ca8dedf35e44a7b97303bb95eaea98d455ed0b5a4ca970957d003a"
+  },
+  "scope": "Retained live observations: the issue-creation receipt postdates initial status. Workflow presence does not verify shepherd credentials or fleet-wide convergence. Future integration uses CLAW supported admission/synchronization."
+}
