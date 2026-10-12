@@ -1,0 +1,144 @@
+id: cmmmech:eudialyte-ore
+name: Eudialyte ore
+material_kind: primary_resource
+description: >-
+  A natural geological feed represented by the eudialyte ore sample from
+  the Ilimaussaq Complex, Greenland, used in Hunter's 2020 doctoral
+  thesis. The sample was jaw-crushed and finely ground for laboratory
+  leaching. Its mineral proportions, bulk elemental grade and particle-size
+  distribution are not established in the reviewed experimental account.
+  This resource is distinct from a formally identified eudialyte mineral
+  species, the eudialyte group, an upgraded concentrate, elemental zirconium
+  or rare earths, and a recovered product. A literature crystal structure
+  in the thesis is not characterization of this particular feed. No
+  criticality designation is inherited from its constituent elements.
+sources:
+  - id: hunter2020
+    title: >-
+      Hunter, Jamie Patrick (2020). Investigating the recovery of rare
+      earth elements by ionic liquids and bacteria. PhD thesis, University
+      of Edinburgh. DOI 10.7488/era/834. Chapter 4, printed pp.119-138;
+      relevant general methods pp.158-167. Complete 217-page repository
+      PDF acquired; this is primary thesis evidence, not a journal article.
+    url: https://doi.org/10.7488/era/834
+    accessed_on: '2026-10-12'
+  - id: hunter2020_supporting
+    title: >-
+      Hunter2020 official supporting_informationHunter2020.zip, linked
+      from the Edinburgh thesis deposit. The complete archive was
+      inventoried and screened; its computational files and seven
+      workbooks concern ionic-liquid modeling. No Chapter 4 bioleaching
+      measurement table was identified in that bounded screening.
+    url: https://era.ed.ac.uk/bitstreams/f4ed3ae2-174e-40a0-b60d-7f9ab0de1e3e/download
+    accessed_on: '2026-10-12'
+  - id: ncbi_ferrooxidans
+    title: >-
+      NCBI Taxonomy 920, Acidithiobacillus ferrooxidans, species-level
+      mapping of the thesis body and methods name. This does not resolve
+      the conflicting abstract or independently authenticate NCIMB 10435.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
+    accessed_on: '2026-10-12'
+mechanisms:
+  - id: culture_assisted_acid_leaching
+    name: Culture-associated acidification and enhanced ore leaching
+    process: bioleaching
+    description: >-
+      Inoculated iron-containing acidic medium mobilized more rare earths
+      from the ore than the uninoculated mild-acid comparator. The thesis
+      attributes the effect to microbial iron oxidation followed by
+      acidification. Iron-assay trends and declining pH support this
+      interpretation, but they do not isolate a biological advantage at
+      matched pH. Strong nitric or sulfuric acid leached substantially
+      more rare earths than the inoculated medium. These are laboratory
+      aqueous-mobilization observations, not industrial deployment or
+      recovery of a purified rare-earth or zirconium product.
+    context: >-
+      Methods Section 7.4.1 identifies a culture obtained from NCIMB as
+      Acidithiobacillus ferrooxidans NCIMB 10435; Chapter 4 uses the same
+      species and abbreviates it ATs. The abstract instead says
+      Acidithiobacillus thiooxidans. The organism identifier here maps
+      the methods name only; no independent sequence, strain equivalence
+      or contemporaneous culture-purity test was verified. Section 4.5.2
+      describes triplicate inoculated flasks with membrane screw caps,
+      125 mL growth medium and agitation, plus uninoculated medium.
+      The medium's reported final concentrations are 0.1 M FeSO4 and
+      6.9 mM H2SO4 with ammonium, magnesium and phosphate salts.
+      Section 4.5.3 repeats the setup with 0.50 g finely ground ore,
+      autoclaved at 121 degrees C for 15 minutes, and includes a
+      culture-without-ore reference. It follows leaching for about three
+      weeks. The narrative invokes room temperature, 25 degrees C,
+      but gives no controlled incubation set point, agitation rate or
+      inoculum density. The acid-comparison experiment uses 1.00 g ore
+      per 125 mL and compares inoculated medium, uninoculated medium,
+      2.0 M HNO3 and 2.0 M H2SO4. Sampling used filtration and ICP-OES;
+      measured solution concentrations are not cumulative extraction
+      fractions or a closed feed-to-product mass balance.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+    evidence:
+      - source_ref: hunter2020
+        supports: support
+        explanation: >-
+          Sections 4.5.2-4.5.4 and Figures 4.5.2.1, 4.5.3.1 and
+          4.5.3.4-4.5.4.1 show acidification, an iron-assay shift and
+          enhanced dissolved Si, Zr and rare earths in the inoculated
+          ore treatment. In the ore time course, inoculated solutions
+          approach pH 2.2 while the uninoculated ore comparator stays
+          roughly pH 2.6-2.8. Figure 4.5.4.1 shows greater Y, La, Ce
+          and Nd concentrations with inoculation than without it, but
+          substantially higher concentrations under either strong-acid
+          treatment. The controls have different pH trajectories and
+          therefore do not establish a pH-independent microbial effect.
+      - source_ref: hunter2020
+        supports: partial
+        explanation: >-
+          Exact kinetic and mechanistic quantification is limited by
+          internal source problems. Chapter 4 describes ferrozine
+          measurements at 562 nm, whereas Section 7.4.9 specifies
+          568 nm. The printed calibration, equations and claim of
+          complete iron oxidation are not independently recalibrated
+          here. Section 4.5.1's FeSO4 stock molarity does not agree
+          with its stated mass and volume. The text's Si:Zr comparison
+          contrasts mass-concentration slopes with atomic stoichiometry;
+          it cannot establish preferential adsorption from that ratio.
+          Adsorption of Si onto iron precipitates remains an explanation,
+          not a demonstrated ore-specific mechanism. No gel was observed
+          at this low solids loading, which does not establish behavior
+          at commercial pulp densities.
+      - source_ref: hunter2020
+        supports: context_only
+        explanation: >-
+          Section 4.5.5 and Figures 4.5.5.1-4.5.5.2 describe a separate
+          chemical solvent-extraction step. A model solution and the
+          actual filtered bioleachate are different experiments. The
+          actual leachate was concentrated fivefold under vacuum,
+          adjusted to 5.0 M NaNO3 and 0.1 M HNO3 at pH 1.40, and
+          contacted with 0.1 M IL0 or the secondary amido-ammonium
+          extractant 2AA in toluene. This procedure contradicts the
+          abstract and conclusions' unqualified no-pH-adjustment wording.
+          Reported solvent-extraction percentages are not ore recovery
+          yields; Section 7.2's printed percentage equations also leave
+          the concentration denominator ambiguous. Low concentrations
+          of minor rare earths limit selectivity comparisons. Neither
+          a purified product yield nor a complete zirconium separation
+          is demonstrated by the retained ore experiment.
+      - source_ref: hunter2020_supporting
+        supports: context_only
+        explanation: >-
+          Archive member and text/workbook screening supplies provenance
+          for the deposited computational supporting material. It does
+          not repair the bioleaching organism discrepancy, supply an
+          ore phase assay, or independently reproduce Chapter 4 curves.
+curation_history:
+  - timestamp: '2026-10-12T09:17:28Z'
+    curator: codex (GPT-6)
+    action: CREATE
+    summary: >-
+      Added the Ilimaussaq eudialyte ore resource and qualified laboratory
+      culture-assisted acid leaching from the complete primary thesis.
+      Preserved chemical controls, organism and analytical discrepancies,
+      supplement scope and the distinction between mobilization and recovery.
+history_refs:
+  - history/records/eudialyte-ore/2026-10-12T091728Z-codex-d2511a.yaml

@@ -8,7 +8,7 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 249 material records.
+The catalogue currently contains 253 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
@@ -261,6 +261,10 @@ The catalogue currently contains 249 material records.
 | [Elpidite](data/records/elpidite.yaml) | Natural occurrence and dated IMA identity | Source-qualified mineral assignment; no microbial mechanism |
 | [Ion-adsorption rare-earth clay](data/records/ion-adsorption-rare-earth-clay.yaml) | Heterotrophic leaching with complete primary and supplementary data | Nonsterile controls, genus-only inocula and faster salt comparator |
 | [Monazite ore](data/records/monazite-ore.yaml) | Biofilm microscopy with full primary/SI and sampled video evidence | Mixed natural feed; qualitative alteration without a new recovery yield |
+| [Allanite concentrate](data/records/allanite-concentrate.yaml) | Engineered Gluconobacter laboratory leaching | Relative improvement, culture-containing assay and stronger nitric-acid comparator |
+| [Eudialyte ore](data/records/eudialyte-ore.yaml) | Primary thesis evidence of culture-associated leaching | Conflicting organism labels, mismatched pH controls and separate chemical extraction |
+| [Gold-mine tailings](data/records/gold-mine-tailings.yaml) | Oxalic pretreatment and acidophile-associated REE extraction | Incomplete control data, uncertain endpoint basis and no isolated product |
+| [Yusupovite](data/records/yusupovite.yaml) | Original natural mineral description and dated IMA identity | Distinct from elpidite; no demonstrated microbial recovery or ion exchange |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -320,7 +324,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [forty-ninth expansion reviews](research/ingests/round49-20261012-publication.md),
 [fiftieth expansion reviews](research/ingests/round50-20261012-publication.md),
 [fifty-first expansion reviews](research/ingests/round51-20261012-publication.md),
-[remaining ingest priorities](research/ingests/round51-frontier-20261012.md), and
+[fifty-second expansion reviews](research/ingests/round52-20261012-publication.md),
+[remaining ingest priorities](research/ingests/round52-frontier-20261012.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 
