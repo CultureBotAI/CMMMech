@@ -1,0 +1,226 @@
+{
+  "recorded_at": "2026-10-12T01:33:06.509507+00:00",
+  "observation_timestamp": "2026-10-12T01:19:02.889953+00:00",
+  "raw_receipt": {
+    "path": "/private/tmp/cmm-round41-current-status.json",
+    "sha256": "fdeb490c07dc221288508c996804ffc4a54c65596b1b19cd705b8f3a519a95a7"
+  },
+  "governance_pin": "a5d562962c75a2ad9efd8160b548df5944315422",
+  "admission": {
+    "number": 581,
+    "html_url": "https://github.com/CultureBotAI/culturebotai-claw/pull/581",
+    "state": "closed",
+    "merged": true,
+    "merged_at": "2026-10-08T02:08:09Z",
+    "merge_commit_sha": "849f336e025510316a5f235eb0af8547b8bd50cc"
+  },
+  "effective_main_rules": [
+    {
+      "type": "pull_request",
+      "parameters": {
+        "required_approving_review_count": 0,
+        "dismiss_stale_reviews_on_push": false,
+        "required_reviewers": [],
+        "require_code_owner_review": false,
+        "dismissal_restriction": {
+          "enabled": false,
+          "allowed_actors": []
+        },
+        "require_last_push_approval": false,
+        "required_review_thread_resolution": false,
+        "require_extra_approval_for_unattributed_changes": true,
+        "allowed_merge_methods": [
+          "merge",
+          "squash",
+          "rebase"
+        ]
+      },
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "CultureBotAI/CMMMech",
+      "ruleset_id": 24692449
+    },
+    {
+      "type": "required_status_checks",
+      "parameters": {
+        "strict_required_status_checks_policy": false,
+        "do_not_enforce_on_create": false,
+        "required_status_checks": [
+          {
+            "context": "validate-strict",
+            "integration_id": 15368
+          }
+        ]
+      },
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "CultureBotAI/CMMMech",
+      "ruleset_id": 24692449
+    },
+    {
+      "type": "merge_queue",
+      "parameters": {
+        "merge_method": "SQUASH",
+        "max_entries_to_build": 3,
+        "min_entries_to_merge": 1,
+        "max_entries_to_merge": 1,
+        "min_entries_to_merge_wait_minutes": 5,
+        "grouping_strategy": "ALLGREEN",
+        "check_response_timeout_minutes": 120
+      },
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "CultureBotAI/CMMMech",
+      "ruleset_id": 24692449
+    }
+  ],
+  "ruleset": {
+    "id": 24692449,
+    "name": "CLAW merge queue",
+    "enforcement": "active",
+    "bypass_actors": [],
+    "conditions": {
+      "ref_name": {
+        "exclude": [],
+        "include": [
+          "refs/heads/main"
+        ]
+      }
+    },
+    "rules": [
+      {
+        "type": "pull_request",
+        "parameters": {
+          "required_approving_review_count": 0,
+          "dismiss_stale_reviews_on_push": false,
+          "required_reviewers": [],
+          "require_code_owner_review": false,
+          "dismissal_restriction": {
+            "enabled": false,
+            "allowed_actors": []
+          },
+          "require_last_push_approval": false,
+          "required_review_thread_resolution": false,
+          "require_extra_approval_for_unattributed_changes": true,
+          "allowed_merge_methods": [
+            "merge",
+            "squash",
+            "rebase"
+          ]
+        }
+      },
+      {
+        "type": "required_status_checks",
+        "parameters": {
+          "strict_required_status_checks_policy": false,
+          "do_not_enforce_on_create": false,
+          "required_status_checks": [
+            {
+              "context": "validate-strict",
+              "integration_id": 15368
+            }
+          ]
+        }
+      },
+      {
+        "type": "merge_queue",
+        "parameters": {
+          "merge_method": "SQUASH",
+          "max_entries_to_build": 3,
+          "min_entries_to_merge": 1,
+          "max_entries_to_merge": 1,
+          "min_entries_to_merge_wait_minutes": 5,
+          "grouping_strategy": "ALLGREEN",
+          "check_response_timeout_minutes": 120
+        }
+      }
+    ]
+  },
+  "workflows": [
+    {
+      "id": 378016117,
+      "name": "Automatic merge queue admission",
+      "path": ".github/workflows/merge-queue-admission.yaml",
+      "state": "active",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/blob/main/.github/workflows/merge-queue-admission.yaml"
+    },
+    {
+      "id": 378016120,
+      "name": "PR shepherd",
+      "path": ".github/workflows/pr-shepherd.yml",
+      "state": "active",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/blob/main/.github/workflows/pr-shepherd.yml"
+    },
+    {
+      "id": 375954368,
+      "name": "Validate strictly",
+      "path": ".github/workflows/validate-strict.yaml",
+      "state": "active",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/blob/main/.github/workflows/validate-strict.yaml"
+    },
+    {
+      "id": 378016122,
+      "name": "Verify merge integrity",
+      "path": ".github/workflows/verify-merge-integrity.yaml",
+      "state": "active",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/blob/main/.github/workflows/verify-merge-integrity.yaml"
+    }
+  ],
+  "source_issues_at_observation": [
+    {
+      "number": 134,
+      "state": "open",
+      "title": "Complete original-figure and phase verification for manganese-ore oxalates",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/134"
+    },
+    {
+      "number": 133,
+      "state": "open",
+      "title": "Verify original samarium biomineralization figures before record admission",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/133"
+    },
+    {
+      "number": 130,
+      "state": "open",
+      "title": "Resolve yeast cerium-phosphate phase identity from full primary evidence",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/130"
+    },
+    {
+      "number": 129,
+      "state": "open",
+      "title": "Complete vanadinite original-figure verification before admission",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/129"
+    },
+    {
+      "number": 120,
+      "state": "open",
+      "title": "Complete meta-autunite figure verification before record admission",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/120"
+    },
+    {
+      "number": 104,
+      "state": "open",
+      "title": "Acquire and reconcile full ilmenite bioleaching studies",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/104"
+    },
+    {
+      "number": 103,
+      "state": "open",
+      "title": "Acquire tungsten mining-waste methods before record admission",
+      "html_url": "https://github.com/CultureBotAI/CMMMech/issues/103"
+    }
+  ],
+  "new_source_issue": {
+    "number": 137,
+    "url": "https://github.com/CultureBotAI/CMMMech/issues/137",
+    "receipt": "/private/tmp/cmm-round41-source-issues-created.json",
+    "receipt_sha256": "d5303d5073004cc684ae69838d8ba91889bdb0c3d814f64ab2a2089405bbddd3",
+    "title": "Acquire complete Yu2012 biogenic-birnessite cobalt evidence before curation",
+    "body": "The round41 source investigation verified a separately scoped 2008 study (DOI 10.2320/matertrans.M-MRA2007888), which is being added to the existing birnessite record. It did not obtain the complete Yu et al. 2012 article, DOI 10.1016/j.chemgeo.2012.03.029, and does not support importing that paper\u2019s quantitative or mechanistic claims.\n\nEvidence recovered on 2026-10-12 UTC:\n\n- Publisher/Crossref identity and abstract; the public Elsevier response is only coredata metadata despite its full-text wrapper.\n- JAEA record 5035603 has metadata/abstract but no PDF in its PDF field.\n- Kyushu catalogue 26198 reports deleted data; the indexed download is a 108-page thesis-summary compilation, with Yu on pages 68\u201369, not the complete thesis.\n- KEK PF News 31(2), August 2013, page 44 contains an author summary and one Co XANES comparison, but not complete experimental methods and controls.\n\nFollow-up acceptance criteria:\n\n1. Acquire the complete primary article and original figures, tables and relevant supplements through a legitimate library, author-deposited or institutional route; retain version, URL and hashes.\n2. Verify fungal strain, biomass state, material preparation, cobalt loading, conditions, controls and the analytical basis for oxidation or incorporation claims.\n3. Establish its experiment/preparation relationship to the 2008 paper before combining observations or claiming independent replication.\n4. Curate only supported additional claims in the existing material owner, append history and save a new independent scientific review. Otherwise retain a documented deferral.\n\nThis is an evidence-access follow-up, not a corrective defect in the qualified 2008 record. Do not close it when round41 merges. The round41 dossier will be linked after publication; it currently resides at research/sources/round41-biogenic-birnessite/20261012T012315Z-source-investigation.md.\n",
+    "state": "OPEN"
+  },
+  "progress_issue134": {
+    "receipt": "/private/tmp/cmm-round41-source-issues-created.json",
+    "receipt_sha256": "d5303d5073004cc684ae69838d8ba91889bdb0c3d814f64ab2a2089405bbddd3",
+    "url": "https://github.com/CultureBotAI/CMMMech/issues/134#issuecomment-6116157338",
+    "body": "Round41 follow-up found a legitimate additional source: the 2025 SPbU-hosted coauthor review at https://pureportal.spbu.ru/files/132149284/xk5108.pdf. Its original Figure 7 reproduces six SEM panels from the 2022 study by permission; these panels were visually inspected. A separate 69-page project report at https://pureportal.spbu.ru/files/91305371/_2019_2021.pdf was also acquired.\n\nThese additions do not recover the original main PXRD/control series needed to resolve the experimental assignment in DOI 10.2138/am-2021-7651. Issue #134 remains open. Round41 separately establishes todorokite and kutnohorite mineral identities from dated IMA and complete Handbook authorities; those identity-only records do not assert the deferred microbial experiment or resolve this source gap. The source assessment is research/sources/round41-manganese-minerals/20261012T012222Z-source-investigation.md, to be linked after publication.\n"
+  },
+  "scope": "Compact summary of retained live API responses; the new source issue/progress receipts postdate the initial status snapshot. Workflow presence does not verify secrets, operational shepherd credentials or whole-fleet convergence. Future integration changes use CLAW supported admission and synchronization."
+}

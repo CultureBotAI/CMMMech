@@ -156,7 +156,7 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Copper-flotation tailings](data/records/copper-flotation-tailings.yaml) | Indigenous-bacterial treatment for physical stabilization | Control activity and source inconsistencies retained; no metal recovery claimed |
 | [Chrysotile-asbestos tailings](data/records/chrysotile-asbestos-tailings.yaml) | Acidophile-assisted magnesium leaching from mill tailings | Existing carbonates and control limits; no measured net carbon storage or asbestos detoxification |
 | [Goethite](data/records/goethite.yaml) | Species-grounded acidophile iron-mobilization assays | Natural and synthetic feeds differ; acid confounding, null results and source contradictions retained |
-| [Nickel laterite ore](data/records/nickel-laterite-ore.yaml) | Aerobic and anaerobic acidophile leaching of characterized ores | Matched-pH nulls, loading inhibition and unlike chemical comparators limit microbial attribution |
+| [Nickel laterite ore](data/records/nickel-laterite-ore.yaml) | Acidophile leaching and separate indigenous-community cobalt mobilization experiments | Ore-dependent nulls, different controls and unresolved source concentrations limit recovery comparisons |
 | [Polymetallic nodules](data/records/polymetallic-nodules.yaml) | Enrichment leaching and Baltic microcosm growth/partitioning | Citrate and azide controls, local growth and distinct receiving fractions limit causal and recovery claims |
 | [Waste printed circuit boards](data/records/waste-printed-circuit-boards.yaml) | Copper mobilization and separate biogenic ferric regeneration | Synthetic electrowinning, acid-washed residue and unlike controls prevent an actual-board closed-process yield |
 | [Cobalt-rich ferromanganese crusts](data/records/cobalt-rich-ferromanganese-crusts.yaml) | Community-associated metal redistribution | Azide chemistry, solution partitioning and differing companion experiments limit causal and recovery claims |
@@ -220,7 +220,9 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Cerussite](data/records/cerussite.yaml) | Brown-rot cultures form lead oxalate on a natural cerussite specimen | Microscopy-only assignments and conflicting co-product wording remain explicit |
 | [Fluorapatite](data/records/fluorapatite.yaml) | Brown-rot cultures form calcium oxalate on a chlorine-bearing fluorapatite specimen | Medium calcium and method-dependent phase detection prevent source-exclusive or phosphorus-recovery claims |
 | [Hollandite](data/records/hollandite.yaml) | Brown-rot cultures form source-assigned manganese oxalate phases on a hollandite specimen | Formula and figure/table phase conflicts remain unresolved; no phase-specific recovery yield |
-| [Birnessite](data/records/birnessite.yaml) | Fungal transformation of a source-named synthetic sodium form | Same Wei2012 experiment as the lindbergite product arm; uncertain feed polytype and clearing metrics do not establish recovery |
+| [Birnessite](data/records/birnessite.yaml) | Separate synthetic-feed transformation and prepared fungal-composite cobalt sorption | Different strains, phase uncertainty and source capacity/redox conflicts; no isolated cobalt yield |
+| [Todorokite](data/records/todorokite.yaml) | Dated IMA identity and geological occurrence | Variable composition; geological alteration does not make it an industrial secondary resource |
+| [Kutnohorite](data/records/kutnohorite.yaml) | Dated IMA identity and natural compositional variation | Distinct carbonate species; no inherited criticality or microbial mechanism |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -268,7 +270,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [thirty-eighth expansion reviews](research/ingests/round38-20261011-publication.md),
 [thirty-ninth expansion reviews](research/ingests/round39-20261012-publication.md),
 [fortieth expansion reviews](research/ingests/round40-20261012-publication.md),
-[remaining ingest priorities](research/ingests/round40-frontier-20261012.md), and
+[forty-first expansion reviews](research/ingests/round41-20261012-publication.md),
+[remaining ingest priorities](research/ingests/round41-frontier-20261012.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

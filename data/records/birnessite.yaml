@@ -7,8 +7,10 @@ description: >-
   (Na,Ca,K)0.6(Mn4+,Mn3+)2O4(H2O)1.5. Its composition and polytype vary.
   It is distinct from elemental manganese, mixed manganese ore and nodules,
   the buserite precursor used to prepare some synthetic analogues, and
-  manganese oxalate products. The mechanism below concerns a source-named
-  synthetic sodium form, not a natural ore or every birnessite polytype.
+  manganese oxalate products. The mechanisms below concern separately
+  prepared synthetic sodium and cobalt-bearing forms, and a source-assigned
+  poorly crystalline biogenic Mn-oxide/fungal composite. They do not establish
+  behavior for natural ore or every birnessite polytype.
   No criticality designation is inherited from manganese.
 sources:
 - id: ima_2026_09
@@ -40,6 +42,40 @@ sources:
 - id: ncbi_himantioides
   title: NCBI Taxonomy 80602. Serpula himantioides, current species node.
   url: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/80602/dataset_report
+  accessed_on: '2026-10-12'
+- id: ferrier2022
+  title: >-
+    Ferrier, Csetenyi and Gadd (2022; first online 2021). Fungal transformation
+    of natural and synthetic cobalt-bearing manganese oxides and implications
+    for cobalt biogeochemistry. Environmental Microbiology 24(2):667-677.
+    Synthetic Co-birnessite arm: Figures 6-8, Tables 1-2 and procedures
+    on pages 674-675; complete publisher PDF deposited at Dundee.
+  url: https://doi.org/10.1111/1462-2920.15526
+  accessed_on: '2026-10-12'
+- id: atcc1015
+  title: ATCC 1015. Aspergillus niger culture collection entry and strain designation.
+  url: https://www.atcc.org/products/1015
+  accessed_on: '2026-10-12'
+- id: sasaki2008
+  title: >-
+    Sasaki, Matsuda, Urata, Hirajima and Konno (2008). Sorption of Co2+ Ions
+    on the Biogenic Mn Oxide Produced by a Mn-Oxidizing Fungus,
+    Paraconiothyrium sp. WL-2. Materials Transactions 49(3):605-611.
+    Complete publisher PDF, Figures 1-11 and all methods; J-STAGE lists
+    zero separate supplementary files.
+  url: https://doi.org/10.2320/matertrans.M-MRA2007888
+  accessed_on: '2026-10-12'
+- id: ncbi_wl2
+  title: >-
+    NCBI Taxonomy 443224. Paraconiothyrium sp. WL-2, strain-labelled
+    unclassified taxon; current NCBI Datasets taxonomy response.
+  url: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/443224/dataset_report
+  accessed_on: '2026-10-12'
+- id: genbank_wl2
+  title: >-
+    GenBank AB303550.1. Paraconiothyrium sp. WL-2 ribosomal DNA and ITS
+    sequence; strain WL-2 and taxon 443224 cross-reference.
+  url: https://www.ncbi.nlm.nih.gov/nuccore/AB303550.1
   accessed_on: '2026-10-12'
 mechanisms:
 - id: fungal_synthetic_sodium_birnessite_transformation
@@ -135,6 +171,204 @@ mechanisms:
     explanation: >-
       TaxID 80602 resolves the reported species name, not the unaccessioned
       experimental isolate or a lineage within that species complex.
+- id: fungal_synthetic_cobalt_birnessite_transformation
+  name: Fungal transformation of synthetic cobalt-bearing birnessite to oxalate-bearing solids
+  process: biomineralization
+  microbial: true
+  organisms:
+  - id: NCBITaxon:5061
+    label: Aspergillus niger
+  description: >-
+    Growing A. niger ATCC 1015 transformed a separately prepared synthetic
+    cobalt-bearing birnessite into rosette-like solids assigned by the authors
+    to manganese oxalate dihydrate (lindbergite), with cobalt detected by
+    EDXA in examined transformed material. Matched uninoculated material
+    retained birnessite-like diffraction. This supports culture-associated
+    mineral transformation and cobalt association with the recovered solids,
+    not a measured cobalt recovery fraction or demonstrated cobalt lattice
+    substitution. Oxalate-mediated dissolution and precipitation are the
+    authors' interpretation; cobalt reduction was proposed without a direct
+    oxidation-state assay. No industrial deployment was demonstrated.
+  context: >-
+    Ferrier2022 used living A. niger ATCC 1015 on 90 mm malt extract agar
+    plates, approximately 25 cm3 medium containing 0.2% (w/v) powder below
+    90 micrometres, inoculated with a 5 mm leading-edge colony plug and
+    incubated for 14 days at 25 degrees C in darkness. Synthetic feed was
+    prepared from CoCl2 and KMnO4 with HCl at elevated temperature, washed,
+    desiccated, acid-treated to exchange interlayer potassium, then recovered
+    and dried. The printed nitric-acid recipe says 200 ml 0.1 HNO3 without
+    a concentration unit; it is not silently completed here. Feed was
+    heated at 105 degrees C for at least 24 hours before experiments.
+    Table 1 reports partial XRF composition as 73.41% MnO, 7.74% Co and
+    4.48% K2O, using the source's mixed oxide/element basis; this is neither
+    a refined mineral formula nor complete phase purity. Elements not
+    present in synthesis solutions were excluded from that table. This
+    arm is separate from the same paper's natural Nkamouna laterite and
+    from Wei2012's sodium birnessite and A. niger ATCC 201373.
+  evidence:
+  - source_ref: ferrier2022
+    supports: support
+    explanation: >-
+      Figures 6-7 (page 673) compare fine uninoculated feed particles with
+      rosette-like recovered solids, and EDXA detects Mn, O and Co in both,
+      with C in the transformed material and K no longer detected there.
+      These qualitative spectra do not quantify cobalt incorporation or
+      establish its oxidation state, binding site or chemical phase.
+      Microscopy examples are reported as representative of several
+      examinations, not a quantified transformed-particle fraction.
+  - source_ref: ferrier2022
+    supports: support
+    explanation: >-
+      Figure 8 (page 674) matches the uninoculated control to birnessite
+      and inoculated recovered solids to lindbergite. The caption heading
+      incorrectly names Nkamouna laterite; its detailed caption, Results,
+      traces and synthetic-arm methods identify Co-birnessite. Replicates
+      were pooled for a subsample. The methods specify Cu-Kalpha XRD of
+      ground powder on PVC slides over 3-60 degrees 2-theta, unlike the
+      Co-radiation, acetone-smear XRPD used for the natural laterite.
+      Reference-pattern agreement supports a source-assigned product,
+      not quantitative phase purity or a detection limit for residual feed.
+  - source_ref: ferrier2022
+    supports: partial
+    explanation: >-
+      Table 2 reports day-14 surface pH 2.17 +/- 0.03 (n=6) for inoculated
+      Co-birnessite agar, 2.26 +/- 0.02 (n=3) for mineral-free fungal agar,
+      6.43 +/- 0.04 (n=2) for uninoculated mineral agar and 5.32 +/- 0.02
+      (n=3) for uninoculated mineral-free agar; uncertainties are reported
+      SD. The discussion's general increased-pH explanation does not match
+      the lower fungal Co-birnessite mean relative to its fungal control.
+      The 94.1% tolerance index is a dry-biomass ratio and 1.47 is a
+      colony-extension-rate ratio, not metal extraction or recovery.
+  - source_ref: ferrier2022
+    supports: partial
+    explanation: >-
+      Procedures on page 675 recover debris by approximately 70 degrees C
+      water washing followed by at least 48 hours desiccation. Preparation
+      can affect hydration; in-culture phase identity is not independently
+      established. The authors' total-transformation/solubilization wording
+      rests on morphology and recovered diffraction, without dissolved-metal
+      or total product mass balance. No measured oxalate time course,
+      pH-matched acid-only, killed-biomass or cell-free metabolite controls
+      isolate the proposed route. Direct Mn/Co oxidation-state or cobalt-site
+      measurements are absent from the reported analyses; inferred reduction
+      and a mixed oxalate lattice remain mechanistic interpretations.
+  - source_ref: atcc1015
+    supports: context_only
+    explanation: >-
+      The collection resolves ATCC 1015 as A. niger with strain designation
+      A1144 3528.7 and CBS 113.46. This supports catalogue identity, not
+      authentication of the paper's experimental stock.
+  - source_ref: ncbi_niger
+    supports: context_only
+    explanation: TaxID 5061 resolves the species name, not strain-specific performance.
+- id: cobalt_sorption_by_fungal_birnessite_bearing_composite
+  name: Cobalt sorption and surface oxidation by a freeze-dried fungal birnessite-bearing composite
+  process: biosorption
+  microbial: true
+  organisms:
+  - id: NCBITaxon:443224
+    label: Paraconiothyrium sp. WL-2
+  description: >-
+    A laboratory-grown Paraconiothyrium sp. WL-2 culture produced a
+    poorly crystalline Mn-oxide and fungal-tissue composite assigned by
+    the authors primarily to birnessite. After recovery and freeze-drying,
+    this material removed aqueous Co from nitrate solution; surface XPS
+    was interpreted as sorbed Co(III). The microbial designation refers
+    to the origin and retained biomass of the sorbent, not demonstrated
+    active metabolism during cobalt treatment. The downstream experiment
+    used prepared powder, not a growing culture. Neither a pure birnessite
+    phase, intrinsic advantage of biological origin, isolated cobalt
+    product, regeneration yield nor industrial recovery was established.
+  context: >-
+    Sasaki2008 grew the wetland isolate in 150-200 ml PY medium in 500 ml
+    flasks with 150 mg/L initial Mn(II), initial pH 6.6 buffered with PIPES,
+    and 0.5 mg wet fungal inoculum as printed. Cultures were shaken at
+    100 rpm and 25 +/- 2 degrees C, shielded from light, for up to two
+    weeks. Precipitates were collected on a 5 micrometre filter and rinsed;
+    the next preparation sentence calls the material freeze-dried for
+    24 hours the filtrate, an unresolved wording ambiguity. The recovered
+    powder was stored at 4 degrees C. Sorption used 0.020 g biogenic or
+    0.015 g chemically prepared oxide in 0.150 L solution, nominally
+    1 mmol/L solid Mn, 100 mmol/L KNO3, PIPES-buffered initial pH 6.5,
+    25 degrees C and 100 rpm shaking. Residual dissolved Co and Mn were
+    measured after 0.2 micrometre filtration; time courses were duplicated.
+    Methods give initial Co up to 175 micromol/L and 100-300 hours, whereas
+    Figure 7 begins near 0.21 mmol/L and extends beyond 300 hours. These
+    are source discrepancies, not a reconciled loading or endpoint.
+  evidence:
+  - source_ref: sasaki2008
+    supports: partial
+    explanation: >-
+      Section 3.1 and Figure 1 (pages 606-607) assign the noisy, poorly
+      crystalline biogenic diffraction pattern primarily to birnessite
+      while explicitly calling the assignments potentially indefinite.
+      The reference-pattern formula is not a measured batch formula or
+      a quantified phase fraction. The chemical comparator is assigned
+      to ramsdellite, not abiotic birnessite. Figures 2-5 document retained
+      fungal organics, morphology and porosity differences; reported
+      specific areas are 81.4 versus 11.3 m2/g. Phase, surface area and
+      biomass therefore confound attributing differences solely to
+      microbial origin. No sterile formation time course or enzyme
+      intervention establishes the culture's exclusive precipitation route.
+  - source_ref: sasaki2008
+    supports: support
+    explanation: >-
+      Figure 7 and section 3.2 (page 609) show declining aqueous Co with
+      both oxide preparations, with slower uptake and a lower final
+      aqueous concentration for the biogenic composite in the displayed
+      experiment. A matched amount of lyophilized fungal tissue alone
+      showed no observed Co uptake. This supports an oxide-associated
+      sorption contribution under these conditions, not a species-wide
+      phenotype or proof that viable cells were needed during sorption.
+  - source_ref: sasaki2008
+    supports: partial
+    explanation: >-
+      The prose reports 160 versus 28.7 mmol Co per mol solid Mn and a
+      5.6-fold biogenic advantage. Those normalized values are not readily
+      reproduced from the Figure 7 concentration changes and nominal
+      1 mmol/L solid Mn, and its initial Co differs from the methods limit.
+      The text also mentions an unshown 0.55 mmol/L initial-Co experiment.
+      No capacity, fold advantage or complete cobalt mass balance is
+      adopted here; the directly displayed qualitative aqueous trend is
+      retained. Methods also print 500 dm3 sorption flasks, unlike the
+      500 cm3 preparation vessels; the apparent unit error is not silently
+      corrected into a measured vessel volume.
+  - source_ref: sasaki2008
+    supports: support
+    explanation: >-
+      Figure 10 (pages 610-611) assigns the sorbed-Co XPS signal to Co(III),
+      using Co 2p1/2 because the Co 2p3/2 region overlaps Mn 2s. Peak
+      positions and absence of the expected Co(II) satellite support the
+      authors' surface oxidation interpretation, not a bulk CoOOH mineral
+      assignment, complete oxidation of all removed Co or product purity.
+      Recovered sorption solids were air-dried for one week at 4 degrees C
+      before XPS; no in situ redox time course is provided.
+  - source_ref: sasaki2008
+    supports: partial
+    explanation: >-
+      Figures 8 and 11 show Mn release even without Co and additional
+      release with Co in the biogenic arm. Figure 11 subtracts the
+      no-Co background; it does not plot total Mn dissolution. The abstract
+      states that Mn(IV) reacts preferentially over Mn(III), whereas the
+      Results and discussion on pages 610-611 infer preferential Mn(III)
+      reaction over Mn(IV). This unresolved source conflict precludes
+      adopting a preferred Mn oxidant or a unique stoichiometric
+      redox pathway. Figure 9 is a surface Mn XPS comparison, not a closed
+      redox or dissolved-metal balance.
+  - source_ref: ncbi_wl2
+    supports: context_only
+    explanation: >-
+      TaxID 443224 resolves the exact strain-labelled Paraconiothyrium
+      sp. WL-2 node. Although NCBI assigns species rank, it is not a
+      resolved named species or evidence authenticating the experimental
+      stock; no other Paraconiothyrium species is substituted.
+  - source_ref: genbank_wl2
+    supports: context_only
+    explanation: >-
+      AB303550.1 records strain WL-2, the same taxon cross-reference and
+      Japanese wetland provenance with ribosomal/ITS sequence information.
+      It corroborates the isolate label, not a functional gene assignment,
+      enzyme mechanism or verification of the exact 2008 culture stock.
 curation_history:
 - timestamp: '2026-10-12T00:48:58Z'
   curator: codex (GPT-6; codex)
@@ -143,5 +377,14 @@ curation_history:
     Added birnessite identity and the Wei2012 synthetic sodium-form feed
     experiment, retaining separate fungi, phase and preparation uncertainty,
     control limits and the distinction between clearing and metal recovery.
+- timestamp: '2026-10-12T01:23:37Z'
+  curator: codex (GPT-6; codex; root and packaging agent)
+  action: EDIT
+  summary: >-
+    Added separate Ferrier2022 synthetic cobalt-bearing transformation and
+    Sasaki2008 prepared fungal composite sorption experiments, preserving
+    prior Wei2012 science, source discrepancies, uncertain phase and redox
+    attribution, and the distinction from isolated cobalt recovery.
 history_refs:
 - history/records/birnessite/2026-10-12T004836Z-codex-f35e9c.yaml
+- history/records/birnessite/2026-10-12T012317Z-codex-aeaa14.yaml

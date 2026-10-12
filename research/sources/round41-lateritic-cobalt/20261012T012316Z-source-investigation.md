@@ -1,0 +1,49 @@
+# Newsome lateritic-cobalt investigation
+
+UTC: 2026-10-12T01:23:16.188629+00:00. Author: codex (GPT-6; codex), `/root/round27_eaf_slag`.
+
+Worktree `/private/tmp/CMMMech-expansion-round41-20261012`, branch `curate/cmm-expansion-round41-20261012`, trusted base `762508748eaa4f857179fa6f3450765bc62ebd6a`. This source investigation and author curation handoff is separate from independent scientific acceptance. The [paired JSON](20261012T012316Z-source-investigation.json) includes actual acquisition receipts, failures, raw hashes, search boundaries and validation.
+
+## Owner and deduplication
+
+Extend the existing [nickel laterite ore](../../../data/records/nickel-laterite-ore.yaml) primary-resource record with one donor-associated native-community mechanism. Parent approved this owner before edits. Newsome's natural composite Acoje, Çaldağ, Shevchenko 11 and Piauí 4/23 feeds fit the existing nickel-cobalt laterite identity. They do not define a pure oxide mineral, new commodity grade or processing waste. No elemental criticality designation is inherited.
+
+`rg --no-ignore --hidden --follow` covered current and original-main `data`, `research`, `reviews`, `history`, plus the cited round20 laterite, earlier nickel and round40 Ferrier raw directories. Seven current-corpus matches are research/frontier leads or older Shevchenko future context; no accepted Newsome mechanism was found in record text. The prior nickel-laterite and manganese-ore owners were read in full. Shared localities are not shared experiments: Johnson2021 Shevchenko low-pH reactors, Hetz2025 Brazilian sulfur oxidizers, Santos2022 Penamax staged assays and Ferrier2022 Nkamouna fungal plates remain distinct. Search boundaries, exact outputs and binary-content limits are retained; no machine-wide absence is claimed.
+
+## Acquired and inspected evidence
+
+[Newsome et al., DOI 10.1016/j.chemgeo.2019.119330](https://doi.org/10.1016/j.chemgeo.2019.119330) is Chemical Geology **531 (2020),119330**, issue 5 January 2020, online 23 October 2019. Fresh Crossref and publisher XML agree. The official [UCR repository item](https://kerwa.ucr.ac.cr/items/242c21fb-5fd3-4dfe-b9c0-49eedefba33e) advertises its current `repositorio.ucr.ac.cr` API host, from which the complete published 15-page PDF was acquired. Obsolete aliases failed; their TLS checks were not disabled. Direct publisher HTML was denied. Original main SHA256: `d661047ffe5b892aaf36286060c4108c7505cc0bdb8bf8a88f1b8445e5f23d0e`.
+
+The original [Word supplement](https://ars.els-cdn.com/content/image/1-s2.0-S0009254119304371-mmc1.doc), SHA256 `1695d0ab836dbc6fdbbf5db211293f6332dd30045e0b1f50c84414597dff7ffd`, was acquired and converted locally using an isolated LibreOffice profile. All nine main figures, three main tables, Tables S1–S8 (including S3a/b/c) and Figures S1–S16 were visually inspected, alongside complete methods/results text. The converted supplement has 23 pages, with the last blank; it is a derivative of the original Word file. All full text and images remain outside Git in `/private/tmp/cmm-round41-lateritic-cobalt-research/raw`.
+
+[Mendeley Data v2, DOI 10.17632/jjr63cyp35.2](https://data.mendeley.com/datasets/jjr63cyp35/2), published 2 October 2019, is associated data for this experiment, not a replication. The live snapshot declares CC BY 4.0, also stated for the main article. Thirty-five folders were enumerated; three relevant direct-folder inventories expose 24 files. Six workbooks were downloaded: NHM and Piauí sequential extractions, XRF and main geochemical monitoring. Formula and cached-value inspection establishes the fraction denominator; selected data were assessed, not every descendant dataset file. Public client-declared routes resolved initially empty/failed API attempts.
+
+## Assay and interpretation
+
+Native communities were biostimulated in NHM feeds with 3 g wet laterite, 30 mL modified freshwater minimal medium initially pH 7 and 10 mM acetate, under an 80:20 N2:CO2 headspace at 30 degrees C in darkness through day 90. A separate washed Geobacter augmentation used bicarbonate medium and ended at day 33. Piauí donor screening used 3 g/30 mL; main assays used 10 g/100 mL artificial groundwater with 10 mM glucose through day 143. Repeat Piauí 23 bottles were separately followed to day 264. Characterization drying at 105 degrees C and ball milling are not assigned to live microcosm feed preparation.
+
+Acetate-treated NHM material showed little aqueous cobalt, manganese or nickel but increased acetic-acid extractability. Glucose-treated Piauí material also released metals to centrifuged supernatants, with acidification and volatile fatty acids. Donor-free controls are single, nonsterile controls in the main time courses. They cannot isolate microbial metabolism from donor chemistry, ligand effects or indirect reduction; no sterile donor-amended, killed-cell or matched-acid/VFA comparator is described. Different feeds, media and durations prevent a universal glucose-versus-acetate comparison.
+
+The sequential extraction uses dried solids and operational acetic-acid, hydroxylamine, peroxide/ammonium-acetate and aqua-regia fractions. NHM workbook sheet `Co` A16 and formulas B21/E21/Q7, and Piauí `Co` A13/B16/D16/L5, explicitly normalize to the **sum of aqueous and all extracted fractions**. Piauí 4's cached aqueous and acetic fractions total about 63.53%, corresponding to the article's reported 64 ± 3%. That result is neither an independently closed starting-metal balance nor isolated cobalt-product recovery. The source propagates SD terms through fraction calculations. The Piauí endpoint extraction plots/table omit a donor-free endpoint even though aqueous time courses include controls. No native concentration observations were imported.
+
+Co XANES supports a shift toward Co(II) in Acoje, Çaldağ and Piauí, with no post-treatment Shevchenko Co spectrum and no Co EXAFS. Table S8 fits two spectral standards, not physical mineral phase percentages. The dataset cannot distinguish direct microbial cobalt reduction from indirect reduction following Mn-oxide dissolution. Goethite remains the dominant Fe/Ni environment; no pure-host selectivity is established. Community sequence similarities, inferred metabolic functions and separate-repeat Piauí DNA do not identify a causative cultured organism. Fresh NCBI TaxID 35554 resolves *Geobacter sulfurreducens* species only for augmentation context; no native-community or strain CURIE is invented.
+
+## Conflicts, nulls and limits retained
+
+- Main Table 1 nickel percentages are approximately tenfold lower than Table S1 g/kg values. Original major-XRF workbooks support percent-scale nickel around 1.4–2.7; these discrepancies are disclosed without silently replacing source values or using them for an initial-inventory yield.
+- Main NHM methods name minimal medium; extraction labels say AGW. Triplicate-culture statements and separately labelled extraction replicate counts (sometimes four) are not assumed equivalent.
+- Only two of five Piauí 23 microcosms generated Fe(II). Figure S12 explicitly replaces apparent yellow-colour interference with zero and uses artificial-groundwater values for non-pH day-zero points. These are not imported as raw measured zeros or slurry baselines.
+- Main Figure 4 sends readers to S10 for repeats, but S12 displays that repeat. Table S2 warns of negative-control subtraction and a below-lowest-standard qPCR value. DNA extraction and community changes also occur in donor-free controls.
+- Main Section 3.2.2 says easily recoverable Fe reaches 4.8%, while Table 2 lists 5.9% for acetate-treated Çaldağ. Main Section 3.4.1 describes Acoje maghemite absent initially, while Table S1 marks it present. Those stronger claims are not admitted.
+- The Piauí workbook retains a three-gram comparison note beside a ten-gram normalization; no dose is reconstructed from that note. The record follows the explicitly reported main-assay method.
+- Chemical mobilization and source-proposed process development are distinct from purified product recovery or industrial deployment. Source investigation remains bounded, not exhausted.
+
+Exact DOI/title correction, retraction and erratum searches plus current Crossref metadata identified no affecting notice in returned results. This is not proof that no notice exists anywhere. Primary internal contradictions above remain explicit; Ferrier2022 is a distinct context study, not a direct refutation.
+
+## Curation, preservation and handoff
+
+Frozen record SHA256: `98c1bee7184d632ed9ea7ed901dfd231b43f95c84d7d9d0d6df224fa6540d1d6`. Canonical EDIT history: [2026-10-12T012121Z-codex-742f3f.yaml](../../../history/records/nickel-laterite-ore/2026-10-12T012121Z-codex-742f3f.yaml), SHA256 `1165bb4f3e9d9811bd1b0a7b9de25e2fe2f89690b0520626e4bf5f8b76d5c24d`. The actual helper actor is codex/GPT-6/codex; a separate inline event records this edit. Removing only the added mechanism, four sources, inline event and history reference exactly reproduces all prior YAML values. All prior text lines remain in order and the committed sidecar remains byte-identical. The paired JSON retains this proof.
+
+Named validation completed with exit 0: `Checked 1 record(s); 0 failed.` Baseline success was explicitly reused from parent-verified fresh main checks at this exact base; it was not rerun by this author. Parent owns final corpus/history/review gates and independent review. No schema, tests, README, shared ingest files, Git state or GitHub content was changed by this source task.
+
+Next work: independent exact-byte acceptance; resolve Ni/medium reporting and data normalization before numerical harmonization; acquire causal controls and host-resolved redox evidence; assess distinct flowing-system studies if justified. Full dataset reuse requires a separate bounded audit of the remaining files.

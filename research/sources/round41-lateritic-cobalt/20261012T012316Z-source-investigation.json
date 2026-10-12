@@ -1,0 +1,955 @@
+{
+  "timestamp": "2026-10-12T01:23:16.188629+00:00",
+  "researcher": "codex (GPT-6; codex), /root/round27_eaf_slag",
+  "scope": "Author investigation and existing nickel-laterite-ore extension, not independent acceptance review",
+  "worktree": "/private/tmp/CMMMech-expansion-round41-20261012",
+  "branch": "curate/cmm-expansion-round41-20261012",
+  "trusted_base": "762508748eaa4f857179fa6f3450765bc62ebd6a",
+  "owner_decision": {
+    "record": "data/records/nickel-laterite-ore.yaml",
+    "kind": "primary_resource",
+    "decision": "Extend existing nickel-cobalt laterite geological feed; no duplicate new mineral/site/element/waste record. Parent approved before edit.",
+    "distinct_from": [
+      "Ferrier2022 natural Nkamouna fungal plate assay in manganese-ore",
+      "Hetz2025 Brazilian aerobic sulfur-oxidizer reactors",
+      "Santos2022 Penamax low-pH staged-loading assays",
+      "Johnson2021 Shevchenko low-pH inoculated reactor lead"
+    ],
+    "mechanism": "native_laterite_reductive_mobilization"
+  },
+  "primary": {
+    "doi": "10.1016/j.chemgeo.2019.119330",
+    "title": "Manganese and cobalt redox cycling in laterites; Biogeochemical and bioprocessing implications",
+    "issue": "Chemical Geology 531:119330, 5 January 2020",
+    "online_date": "2019-10-23",
+    "raw_original": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/primary.pdf",
+    "sha256": "d661047ffe5b892aaf36286060c4108c7505cc0bdb8bf8a88f1b8445e5f23d0e",
+    "url": "https://repositorio.ucr.ac.cr/server/api/core/bitstreams/3b6e8687-9fdf-4544-bd51-470efc6e416a/content",
+    "repository_landing": "https://kerwa.ucr.ac.cr/items/242c21fb-5fd3-4dfe-b9c0-49eedefba33e",
+    "inspection": "Full 15-page published article text, all nine original figures and three tables; main pages 4–7 and 9–13 inspected visually at original layout.",
+    "licence": "CC BY4.0 stated in published article and publisher XML; retain originals/derivatives outside Git."
+  },
+  "supplement": {
+    "original": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/supplement.doc",
+    "sha256": "1695d0ab836dbc6fdbbf5db211293f6332dd30045e0b1f50c84414597dff7ffd",
+    "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0009254119304371-mmc1.doc",
+    "inspection": "Complete original Word text; all Tables S1–S8 (S3a,b,c) and Figures S1–S16 visually inspected after local LibreOffice conversion to 23-page PDF, final page blank. Converted PDF/renderings are derivatives, not separate publications.",
+    "conversion": "Initial sandbox LibreOffice terminated134; approved isolated-profile run completed0. No original-checkout environment changes."
+  },
+  "dataset": {
+    "doi": "10.17632/jjr63cyp35.2",
+    "version": 2,
+    "published": "2019-10-02",
+    "licence": "CC BY4.0 per live snapshot",
+    "inventory": "35 folders enumerated; direct files of NHM laterites data, Piaui data, and NHM & Piaui data inspected (24 entries). Six selected workbooks acquired. This is a selected dataset review, not an exhaustive audit of all descendant files.",
+    "selected_files": [
+      "NHM-laterites-XRF.xlsx",
+      "NHM-laterites-geochemical-monitoring.xlsx",
+      "NHM-laterites-sequential-extractions.xlsx",
+      "Piaui-XRF.xlsx",
+      "Piaui-geochemical-monitoring-composite-microcosms.xlsx",
+      "Piaui-sequential-extractions.xlsx"
+    ],
+    "use": "Co fraction formula/cached-value checks; major XRF source discrepancy check; monitoring sheet structure and sample/arm labels. No raw replicate recomputation or standardized concentration import.",
+    "locators": [
+      "NHM sequential extractions: Co A16,B21,E21,Q7 and Co origin A1; total Q7=sum of aqueous and all BCR fractions; Co B21+E21 about45.016%.",
+      "Piaui sequential extractions: Co A13,B16,D16,L5; source cached fractions13.262251+50.265245 about63.527496%, corresponding to printed64% Piauí4, normalized by2.538533mg total fraction sum.",
+      "NHM XRF majors101215: Ni S13=1.608%,S14=1.728%,S15=1.391%; main Table1 instead0.16,0.17,0.14%.",
+      "Piaui XRF lnmajors13516: Ni T12=2.165%,T13=2.704%; source TableS1 says21.2/27.0g/kg, mainTable1 says0.21/0.27%. No silent correction.",
+      "Piaui Co A10 retains a3g comparison note despite10g sheet/header normalization; no dose reconstruction from this note.",
+      "Error/uncertainty rows labelled stdev and propagated formulas, not SD of independent product yields."
+    ]
+  },
+  "evidence_boundaries": [
+    "As-supplied composite natural laterites span horizons; no pure Mn-oxide experimental feed. Characterization drying/ball milling not attributed to live feed.",
+    "NHM3g wet/30mL,10mM acetate,minimal medium initiallypH7,30C/dark/N2CO2,90d; separate33d washedGeobacter augmentation differs in medium.",
+    "Piauí donor screen3g/30mL, then10g/100mL10mMglucose for143d; native community; main triplicates and single donor-free controls. RepeatPiauí23 two treated plusonecontrol, later264d monitoring.",
+    "NHM low aqueous release versus altered chemical fractions; Piauíglucoseaqueousrelease doesnotprove universal donor superiority due differing feeds/media/duration.",
+    "OperationalBCR fractions and centrifuged-supernatantICP; no membrane-filter definition, isolatedproductyield, metal-specificpurehostassignment orindustrialdeployment.",
+    "Nonsterile donor-free controls; no sterile donor-amended/killed-cell/chemistry-matched VFA control described.",
+    "Fe(II) responseheterogeneous and S12yellowinterferencecorrectedto0byauthors; no rawzeroobservationimported.",
+    "CoXANES qualitative reductionconsistent; no postShevchenkoCoXANES, noCoEXAFS; fittedS8standards not mineralfractions; directvsindirectCo reduction unresolved.",
+    "16S/ITS similaritiesand inferredfunctions notcausativespecies; repeatPiauíDNA only and extractionefficiency concern.",
+    "Table1Ni factor-ten disagreement; mediumAGW/minimal andtriplicate/extractioncounts differences; mainFig4repeatpointerS10 versus actualS12.",
+    "Main3.2.2maxFe4.8% conflicts Table2Çaldağbiostim5.9%; main3.4.1 Acojemaghemiteabsence conflictsTableS1presence; neither strongerclaim admitted.",
+    "No criticality claims, no schema changes, no concentration-observationcells."
+  ],
+  "identifiers": {
+    "NCBITaxon:35554": "Fresh authority resolves Geobacter sulfurreducens species, only separateaugmentationcontext. No strainaccession ortaxonID asserted forunresolvednativecommunity.",
+    "NCBITaxon:259900": "Extraneous preliminary lookup not used as organism identity or accepted evidence."
+  },
+  "searches": {
+    "provider": "web search plus official repository/publisher/Crossref/NCBI/Mendeley",
+    "utc_window": "2026-10-12 approximately01:15–01:20UTC",
+    "queries": [
+      "\"10.1016/j.chemgeo.2019.119330\"",
+      "\"10.1016/j.chemgeo.2019.119330\" supplementary",
+      "\"10.1016/j.chemgeo.2019.119330\" \"supplement\"",
+      "\"jjr63cyp35\" files",
+      "\"Manganese and cobalt redox cycling\" correction retraction erratum",
+      "\"119330\" \"laterites\" \"erratum\"",
+      "\"Manganese and cobalt redox cycling\" \"abiotic\" \"control\"",
+      "\"10.17632/jjr63cyp35.2\" \"xlsx\""
+    ],
+    "coverage": "Returned search results only, no database pagination. Exact DOI/title notice searches and liveCrossref metadata did not identify an affecting notice; no claim of exhaustive absence. Ferrier2022 and2022SantaElena primary context surfaced, not reclassified as a direct refutation.",
+    "crossref_relation": {},
+    "crossref_update_to": []
+  },
+  "access_limits": "Sandbox DNSfailed initially; network-enabled official reads used. www.kerwa certificate mismatch not bypassed; obsolete no-www API404, repository-advertised repositorio.ucr.ac.cr API200. DirectScienceDirect403; publicAPI metadata only. SIpdf/docx404 but originaldoc200. Mendeley initial guessedroutes404/400 or emptyroot; officialclient exposed actualfolder API and descendants, selectedfiles200. No credentials, contacts, paywallcircumvention or externalposts.",
+  "dedup": {
+    "method": "rg -n --no-ignore --hidden --follow -i, plus reading nearby records and referenced source dossiers; hidden/ignored files included; relevant symlinks followed by rg. Text-content searches do not assert complete byte-level indexing of every binary PDF/archive.",
+    "pattern": "119330|Acoje|Shevchenko|Caldag|Çaldağ|Manganese and cobalt redox cycling",
+    "roots": [
+      "/private/tmp/CMMMech-expansion-round41-20261012/data",
+      "/private/tmp/CMMMech-expansion-round41-20261012/research",
+      "/private/tmp/CMMMech-expansion-round41-20261012/reviews",
+      "/private/tmp/CMMMech-expansion-round41-20261012/history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history",
+      "/private/tmp/cmm-round20-laterite-raw",
+      "/private/tmp/cmmmech-nickel-evidence-20261011",
+      "/private/tmp/cmm-round40-cobalt-manganese-oxide-research"
+    ],
+    "excluded": "Unrelated temp/home/download trees and repository environment/Git object databases. A broad /private/tmp AGENTS-path search was cancelled and is not evidence for novelty. Direct ancestor AGENTS checks and supplied user instructions were applied.",
+    "results": "Seven current-corpus matches, all research/frontier leads or older Shevchenko future context; no accepted Newsome mechanism found in searched record text. Existing owners nickel-laterite-ore and manganese-ore were read in full. Round20 Johnson2021 uses separate low-pH inoculated reactors despite shared Shevchenko locality; existing Hetz2025/Santos2022 and Ferrier2022 are distinct experiments. Original-main matches agree with the trusted current corpus. Referenced raw matches concern citations or those distinct experiments.",
+    "outputs": [
+      {
+        "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/corpus-dedup.txt",
+        "sha256": "50407d46fede7e7cff63b3bc05910b8470269329b69e08f9db203a2cb7e2f5e5"
+      },
+      {
+        "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/original-main-dedup.txt",
+        "sha256": "bbb5fcc197969b02746e176309c5ba67d0b15f896cb19dc39db461a09d5e3d2b"
+      },
+      {
+        "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/referenced-raw-dedup.txt",
+        "sha256": "c96be4c0004dc593e81a84ca7a38242e53a4100fa8049930831f8d8174b85533"
+      },
+      {
+        "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/nickel-raw-dedup.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "baseline": {
+    "receipt": "/private/tmp/cmm-round41-initialization.json",
+    "sha256": "98bcbb2280dd982001209a99308567790e2d8a83b164e200d1512e78751f2760",
+    "scope": "Parent reused fresh round40 postmerge checks at this exact publishedbase; no newbaselineexecutionclaim."
+  },
+  "preservation": {
+    "passed": true,
+    "utc": "2026-10-12T01:21:47.400824+00:00",
+    "base": "762508748eaa4f857179fa6f3450765bc62ebd6a",
+    "record": "data/records/nickel-laterite-ore.yaml",
+    "record_sha256": "98c1bee7184d632ed9ea7ed901dfd231b43f95c84d7d9d0d6df224fa6540d1d6",
+    "before_sha256": "b48757556c090b7e47e394fa8977bcf33cb384c3cd8153687ad21ba89e6d8cba",
+    "history_path": "history/records/nickel-laterite-ore/2026-10-12T012121Z-codex-742f3f.yaml",
+    "history_sha256": "1165bb4f3e9d9811bd1b0a7b9de25e2fe2f89690b0520626e4bf5f8b76d5c24d",
+    "all_prior_fields_equal": true,
+    "all_old_lines_remain_unchanged_in_order": true,
+    "old_histories": [
+      {
+        "path": "history/records/nickel-laterite-ore/2026-10-11T121306Z-codex-4f14be.yaml",
+        "sha256": "b96d5c39172a233c1fb11758b1d773e6de65e7e5732f3894aed2154f294ef92c"
+      }
+    ]
+  },
+  "validation": {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "cmmmech",
+      "validate",
+      "data/records/nickel-laterite-ore.yaml"
+    ],
+    "cwd": "/private/tmp/CMMMech-expansion-round41-20261012",
+    "exit_code": 0,
+    "result": "Checked 1 record(s); 0 failed.",
+    "log": "/private/tmp/cmm-round41-lateritic-cobalt-research/named-validation.log",
+    "log_sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e",
+    "checked_record_sha256": "98c1bee7184d632ed9ea7ed901dfd231b43f95c84d7d9d0d6df224fa6540d1d6",
+    "recorded_at": "2026-10-12T01:23:16.188629+00:00"
+  },
+  "artifacts": [
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/NHM-laterites-XRF.xlsx",
+      "bytes": 13733,
+      "sha256": "8babf6b3e2ff6c2a105173ed1d557646c07241a44a7bb31eccf032c490b12f8e"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/NHM-laterites-geochemical-monitoring.xlsx",
+      "bytes": 108657,
+      "sha256": "1302d4c7907fe38b4e888173635b4e26b2662a102870931d4ab84b12156830b0"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/NHM-laterites-sequential-extractions.xlsx",
+      "bytes": 133876,
+      "sha256": "86beed23750d036b0f0ed7c7aa0f495557fa391d4c82642df8b2af062a9d48a8"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/Piaui-XRF.xlsx",
+      "bytes": 13105,
+      "sha256": "cf163713f57b0cb9cd509af1406b8ef4ef8ef25f5ae880073d9984a0c5a0b71e"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/Piaui-geochemical-monitoring-composite-microcosms.xlsx",
+      "bytes": 91350,
+      "sha256": "d3b7e6c80a235a5a01e5840d3205aaec64cf90e83f4cf5b3f2011219a1a79e48"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/Piaui-sequential-extractions.xlsx",
+      "bytes": 73809,
+      "sha256": "5dca518097851604b47b4572332de1bb949b02d2c83e9b4227719611f47efc3e"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/acquisition-1-sandbox-network.json",
+      "bytes": 1562,
+      "sha256": "40f6adffa9dc97049a7dff857cd2a4908254a523055e48ff1d2a338ad955a49d"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/acquisition-1.json",
+      "bytes": 2265,
+      "sha256": "b347da6e2e05bddce3686923f4e87dcc5fa46938fb1968b94233fb18ddbc4cb2"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/acquisition-2.json",
+      "bytes": 1430,
+      "sha256": "3896e5ca43fea617c00d79083029d7651001db4b8c3a49a76ef56ffd925be0b2"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/acquisition-3.json",
+      "bytes": 1629,
+      "sha256": "f55a48f67176d9ae37187cf782535475b78aef2d203ac489a77f08b3868d5ed7"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/acquisition-4.json",
+      "bytes": 1875,
+      "sha256": "67d5b59bf891ef0d0844953210fb4a5f0a1460f84802376c945f6e493296496d"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/acquisition-5.json",
+      "bytes": 445,
+      "sha256": "1547df0c63e998da08d6f95af14c60d40d3640e0de1da342fb29ba63d81b54ec"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/acquisition-6.json",
+      "bytes": 1426,
+      "sha256": "e9c1c5b40b3fcc809796bee8d27f4301848bf79e2200db3a9cb9dc97c348ad9d"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/acquisition-7.json",
+      "bytes": 1796,
+      "sha256": "6f45c867fe604abd238318e36749274c45d82622bb5dc55fce40c39269b5a086"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/acquisition-8.json",
+      "bytes": 3510,
+      "sha256": "14284759caf026a030273140be6971d1508d61534a7c5cbad9f1177c0eacef03"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/crossref.json",
+      "bytes": 29513,
+      "sha256": "c304b8ba568277b6376329691f01d9aac1820f70cbeff95a70f6bba34f00f5ff"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/elsevier.xml",
+      "bytes": 2020,
+      "sha256": "c8f524ea03be55e9d3a0ae249bc344e3d7dc432caf8c2250b3d6db22dcb367ae"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/manchester.html",
+      "bytes": 57169,
+      "sha256": "5b4aa6c3b58ed0f869bed4125fdad9cc682f90179d1af888e599502811b73771"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/mendeley-all-files-incomplete.json",
+      "bytes": 13,
+      "sha256": "067b54b10f9034fdaa6ee1ea34518b5d7369f4b5a8d813f0fcc6890fa201826e"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/mendeley-all-files.json",
+      "bytes": 4068,
+      "sha256": "2ea3668b1950a35da43354c10e180068fb484e7c84fa6f9a047b19aa69effd9d"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/mendeley-bundle.js",
+      "bytes": 654884,
+      "sha256": "e9c250331f19e2248a9671bb673abd96225715c4cc1c1da4efe8ff28bc3ddf31"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/mendeley-files-v2-header.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/mendeley-files-v2.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/mendeley-folders-v2.json",
+      "bytes": 5750,
+      "sha256": "e7e3936fe2e52d602be7b4d61f653c1429431ffcb9f2ff1d8504a582b500e822"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/mendeley-nhm-files.json",
+      "bytes": 5736,
+      "sha256": "101dbe76a2613c1f97062062ec8f391fc046eba95fc213f321f7762f7d9e156d"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/mendeley-piaui-files.json",
+      "bytes": 9870,
+      "sha256": "a452dda0513837baaa1dfbd24a0a21ca520f791fb2fae6656324d2e6785488fd"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/mendeley-snapshot-v2.json",
+      "bytes": 1736,
+      "sha256": "5bf351134945602ffb7a2dd8f483496db6a9ebea844a2f8d18a6b63ad86a1594"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/mendeley.html",
+      "bytes": 117695,
+      "sha256": "eeff6f6a133a7091c20a9ae804b4708fa6a0e61376e81cd7474c97edc78ba4ba"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/ncbi259900.json",
+      "bytes": 251,
+      "sha256": "5bba0a1339aeddc045023732a196763beea160cfc8b38f8e080dce2543011914"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/ncbi35554.json",
+      "bytes": 341,
+      "sha256": "0c0ee91f0f7b5a079ad8b28207336fd86dc968679522f9d1c35732875454fa32"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/pages/page-01.png",
+      "bytes": 266453,
+      "sha256": "a078ae4c4f6b046134b226a40a297b29c39bb198d2a098b29ab47559c85257cd"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/pages/page-02.png",
+      "bytes": 357897,
+      "sha256": "477e5af2441c9a0c5fd1a47ca0102201e8384791cd7b089b7153d4c46cdd3690"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/pages/page-03.png",
+      "bytes": 379465,
+      "sha256": "69ca38b2294963074de1611a61fda1778f63bbd9da3a57b3b109625b7253dcc4"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/pages/page-04.png",
+      "bytes": 342823,
+      "sha256": "e75e02838fb054336b7f6d0715b86684c12794ceadedfd970371c48741ad8443"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/pages/page-05.png",
+      "bytes": 334050,
+      "sha256": "d61bf3b900db6491b63d2db13cb99d6c58938419fde3c92c210909b3c4d2d25b"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/pages/page-06.png",
+      "bytes": 238389,
+      "sha256": "0dfb3756f09816a88a713e0c0d2c52e0dc1b635e982a7943454d248e57c94a04"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/pages/page-07.png",
+      "bytes": 308222,
+      "sha256": "1394111b1334fc673a92b33fec5e60f6f9ef1799d18137ce37e0a254ac614f30"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/pages/page-08.png",
+      "bytes": 346133,
+      "sha256": "a21c3c7957c25f1f8f0dfbb5e16bf3f11bd2ebaa94bd8d7f3fc8bb5b08ee6714"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/pages/page-09.png",
+      "bytes": 345154,
+      "sha256": "833924956207755b9fcd798345f5eb6e401966e5ef9df991801c0eb0bade435b"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/pages/page-10.png",
+      "bytes": 190112,
+      "sha256": "3838746aa8e20bb6ed867df881dd392d748c0656abeeabdae13d92f55eacb8cb"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/pages/page-11.png",
+      "bytes": 337954,
+      "sha256": "b99320c9879de4243ca81eefe6f2a140da298edacb9ab5e295cd2436ddba6e59"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/pages/page-12.png",
+      "bytes": 401130,
+      "sha256": "8b1e6d14ef3df2bf830c2542af90b7bb49e78f25625bdfcd630ba5ce6074a276"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/pages/page-13.png",
+      "bytes": 340063,
+      "sha256": "2a176436deb2ea9f7174e39fa0eb54c2d2e647668c071228717a7b5ed6d22cfe"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/pages/page-14.png",
+      "bytes": 357083,
+      "sha256": "92410743b2a4c31085aa24094d0877e3c778ab564a105ff425c3cc9e699d6003"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/pages/page-15.png",
+      "bytes": 208650,
+      "sha256": "9432d0affe1ccd4c663a768461c1df492d34ea03ff9596d97ff40a673cb9f738"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/primary.pdf",
+      "bytes": 3476888,
+      "sha256": "d661047ffe5b892aaf36286060c4108c7505cc0bdb8bf8a88f1b8445e5f23d0e"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/primary.txt",
+      "bytes": 94772,
+      "sha256": "08a9bce281ef15d28236f81c27581486677fd987d482e4dc02da7bce98b2dda5"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/repository.html",
+      "bytes": 624516,
+      "sha256": "05723d408be2895c06a28100e5ea863d4ca6647e6cef0617ab23b623aa336f8e"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-01.png",
+      "bytes": 130964,
+      "sha256": "56a1e00db50cfa196ee7a8915ab1dec4ba649213dc52b62e016332c1a364d2e6"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-02.png",
+      "bytes": 181691,
+      "sha256": "15ac4f2af5e83a56b830b14e9281aa4b450ba2bdd98edd1c5268734ce85911df"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-03.png",
+      "bytes": 128437,
+      "sha256": "2332c3f8f31b892f28c3c98c0f2fa9f274717be9f0d2770926cb66fa00367d5b"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-04.png",
+      "bytes": 154629,
+      "sha256": "4185f4d2e753eb0fd85303f22858ce42924d87c696efe6229b88fb11656daa96"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-05.png",
+      "bytes": 108915,
+      "sha256": "baa5a40530be08703facb5dee52b421627a150be3b0f0dffca0058bdae69abcc"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-06.png",
+      "bytes": 116888,
+      "sha256": "86b3db25bef51cbd2428d2f5da9c10792b31adf57b4def6df289e59c077bb4d8"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-07.png",
+      "bytes": 157107,
+      "sha256": "dd0cb2be163014a881079461f4ce97a5ff6adda6a0b0c0f4c041b9151dcd7cd3"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-08.png",
+      "bytes": 90608,
+      "sha256": "239d2565779d7553de43a732d59497b946318f2da4a67f6eb509f331f4f83648"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-09.png",
+      "bytes": 179229,
+      "sha256": "1a8027a2654c2076fa6f05a968c2ba729b452ca38473fe64cdb937ac6bc93a77"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-10.png",
+      "bytes": 40572,
+      "sha256": "e827d821490681d5d359a6af60f3e0ee841c6ed7771e1566c94f7d1ece6dd948"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-11.png",
+      "bytes": 200804,
+      "sha256": "4aa58606a371c331947a7bf606bb6489157dac7d1632774776c875ad9f128f1b"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-12.png",
+      "bytes": 296564,
+      "sha256": "befb0dbade8d88d9c1a69ebe3109bf9aad54d38e745982a1eb65df98192bff58"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-13.png",
+      "bytes": 113940,
+      "sha256": "596a76c18abdf8d9d172ba934b3cd3f52b0403824c1a2be5c55f42ba4ae3b33b"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-14.png",
+      "bytes": 128126,
+      "sha256": "f6e0cbb4cc30457d9d857afb733def10bab0d314d3b1cc0e10dd4d0a4c572b30"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-15.png",
+      "bytes": 297078,
+      "sha256": "b57717b8cded0da613af8047fa1e7b27a2a090a1b2f2eb29c562bd421b9000be"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-16.png",
+      "bytes": 293197,
+      "sha256": "a4045b883f15c9124b4d7865fda608097d8f3641d8bea5eece45577f0331df04"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-17.png",
+      "bytes": 117559,
+      "sha256": "7ac6c3208eabc63b7114f5859c75289d8718387af5200bff60bce59e46029d69"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-18.png",
+      "bytes": 167673,
+      "sha256": "ee41b12372bd8c2aa9297ed6f22fe69bb5c117e7f8b727fb6b2f95b68dfe64e6"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-19.png",
+      "bytes": 126768,
+      "sha256": "ec681a74ea10e11405697734fa018044ee232611ecb38bac2fce2958d58331dc"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-20.png",
+      "bytes": 138442,
+      "sha256": "a6bbb26c0377c2d72b7981b0ba52a0ab2145d229acfb7599e98c8fbee8069d7f"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-21.png",
+      "bytes": 248873,
+      "sha256": "358c49fd1e42bb6a76681382282c008fc5a6a605289a9d0c92d1cf7291783d0b"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-22.png",
+      "bytes": 264056,
+      "sha256": "e88d3deefe0efeeae30970996357d4f3c59718d48005316236ebb3ed71d296f1"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/si-pages/page-23.png",
+      "bytes": 5959,
+      "sha256": "a3b482de56db106ee1cfafacedaafbb7c228ba803c7f52bafa11ea59652457e8"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/supplement-rendered.txt",
+      "bytes": 34772,
+      "sha256": "d31a3b18b5dc8252c85ee6519599a261f39aeffa05be85ddd575ca9d0a7f4df1"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/supplement.doc",
+      "bytes": 2896384,
+      "sha256": "1695d0ab836dbc6fdbbf5db211293f6332dd30045e0b1f50c84414597dff7ffd"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/supplement.pdf",
+      "bytes": 2497213,
+      "sha256": "949ff0d25c6b542f635b59d10a9a49c24726ab7b3897015517454b75e65b268e"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/supplement.txt",
+      "bytes": 16196,
+      "sha256": "17dcf69a10114153908b42020f7e99b6854fce8469bc16795ec8466784694911"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/raw/workbooks-dump.txt",
+      "bytes": 489832,
+      "sha256": "f17b1d3f705e91de4418cffa229a8b22edd0f8648ae8f2b74e86654342ec4a8e"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/dedup-receipt.json",
+      "bytes": 2709,
+      "sha256": "71cc3557506563dd98292dc7f7071fa6b2f06becf3a8c29435b2404aa6d494b6"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/corpus-dedup.txt",
+      "bytes": 2194,
+      "sha256": "50407d46fede7e7cff63b3bc05910b8470269329b69e08f9db203a2cb7e2f5e5"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/original-main-dedup.txt",
+      "bytes": 2194,
+      "sha256": "bbb5fcc197969b02746e176309c5ba67d0b15f896cb19dc39db461a09d5e3d2b"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/referenced-raw-dedup.txt",
+      "bytes": 565683,
+      "sha256": "c96be4c0004dc593e81a84ca7a38242e53a4100fa8049930831f8d8174b85533"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/nickel-raw-dedup.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/preservation.json",
+      "bytes": 825,
+      "sha256": "1a9c96d89c66cc46b33d7bac9c9888c35ecd0a60064315d2c389872320e3be9b"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/named-validation.log",
+      "bytes": 31,
+      "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e"
+    },
+    {
+      "path": "/private/tmp/cmm-round41-lateritic-cobalt-research/named-validation-receipt.json",
+      "bytes": 575,
+      "sha256": "dd19908e33f7510004b1f396fab1ad7e6f3be77304a33f8d96340e8c695b407d"
+    }
+  ],
+  "acquisitions": [
+    [
+      {
+        "filename": "primary.pdf",
+        "url": "https://www.kerwa.ucr.ac.cr/server/api/core/bitstreams/3b6e8687-9fdf-4544-bd51-470efc6e416a/content",
+        "utc": "2026-10-12T01:15:55.177989+00:00",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      },
+      {
+        "filename": "crossref.json",
+        "url": "https://api.crossref.org/works/10.1016/j.chemgeo.2019.119330",
+        "utc": "2026-10-12T01:15:55.178641+00:00",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      },
+      {
+        "filename": "publisher.html",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0009254119304371",
+        "utc": "2026-10-12T01:15:55.178834+00:00",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      },
+      {
+        "filename": "repository.html",
+        "url": "https://kerwa.ucr.ac.cr/items/242c21fb-5fd3-4dfe-b9c0-49eedefba33e",
+        "utc": "2026-10-12T01:15:55.179033+00:00",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      },
+      {
+        "filename": "mendeley.html",
+        "url": "https://data.mendeley.com/datasets/jjr63cyp35",
+        "utc": "2026-10-12T01:15:55.179289+00:00",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      },
+      {
+        "filename": "elsevier.xml",
+        "url": "https://api.elsevier.com/content/article/PII:S0009254119304371?httpAccept=text/xml",
+        "utc": "2026-10-12T01:15:55.210108+00:00",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      }
+    ],
+    [
+      {
+        "filename": "primary.pdf",
+        "url": "https://www.kerwa.ucr.ac.cr/server/api/core/bitstreams/3b6e8687-9fdf-4544-bd51-470efc6e416a/content",
+        "utc": "2026-10-12T01:16:11.458071+00:00",
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.kerwa.ucr.ac.cr'. (_ssl.c:1032)>"
+      },
+      {
+        "filename": "crossref.json",
+        "url": "https://api.crossref.org/works/10.1016/j.chemgeo.2019.119330",
+        "utc": "2026-10-12T01:16:11.459116+00:00",
+        "status": 200,
+        "final_url": "https://api.crossref.org/works/10.1016/j.chemgeo.2019.119330",
+        "content_type": "application/json",
+        "bytes": 29513,
+        "sha256": "c304b8ba568277b6376329691f01d9aac1820f70cbeff95a70f6bba34f00f5ff"
+      },
+      {
+        "filename": "publisher.html",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0009254119304371",
+        "utc": "2026-10-12T01:16:11.459429+00:00",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "filename": "repository.html",
+        "url": "https://kerwa.ucr.ac.cr/items/242c21fb-5fd3-4dfe-b9c0-49eedefba33e",
+        "utc": "2026-10-12T01:16:11.459671+00:00",
+        "status": 200,
+        "final_url": "https://kerwa.ucr.ac.cr/items/242c21fb-5fd3-4dfe-b9c0-49eedefba33e",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 624516,
+        "sha256": "05723d408be2895c06a28100e5ea863d4ca6647e6cef0617ab23b623aa336f8e"
+      },
+      {
+        "filename": "mendeley.html",
+        "url": "https://data.mendeley.com/datasets/jjr63cyp35",
+        "utc": "2026-10-12T01:16:11.459934+00:00",
+        "status": 200,
+        "final_url": "https://data.mendeley.com/datasets/jjr63cyp35/2",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 117695,
+        "sha256": "eeff6f6a133a7091c20a9ae804b4708fa6a0e61376e81cd7474c97edc78ba4ba"
+      },
+      {
+        "filename": "elsevier.xml",
+        "url": "https://api.elsevier.com/content/article/PII:S0009254119304371?httpAccept=text/xml",
+        "utc": "2026-10-12T01:16:11.632889+00:00",
+        "status": 200,
+        "final_url": "https://api.elsevier.com/content/article/PII:S0009254119304371?httpAccept=text/xml",
+        "content_type": "text/xml;charset=UTF-8",
+        "bytes": 2020,
+        "sha256": "c8f524ea03be55e9d3a0ae249bc344e3d7dc432caf8c2250b3d6db22dcb367ae"
+      }
+    ],
+    [
+      {
+        "filename": "primary.pdf",
+        "url": "https://kerwa.ucr.ac.cr/server/api/core/bitstreams/3b6e8687-9fdf-4544-bd51-470efc6e416a/content",
+        "utc": "2026-10-12T01:16:37.574306+00:00",
+        "error": "HTTP Error 404: Not found"
+      },
+      {
+        "filename": "mendeley-dataset.json",
+        "url": "https://data.mendeley.com/public-api/datasets/jjr63cyp35/versions/2",
+        "utc": "2026-10-12T01:16:37.575211+00:00",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "filename": "mendeley-files.json",
+        "url": "https://data.mendeley.com/public-api/datasets/jjr63cyp35/versions/2/files",
+        "utc": "2026-10-12T01:16:37.575527+00:00",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "filename": "supplement.docx",
+        "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0009254119304371-mmc1.docx",
+        "utc": "2026-10-12T01:16:37.575813+00:00",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "filename": "manchester.html",
+        "url": "https://research.manchester.ac.uk/en/publications/manganese-and-cobalt-redox-cycling-in-laterites-biogeochemical-an/",
+        "utc": "2026-10-12T01:16:37.576021+00:00",
+        "status": 200,
+        "final_url": "https://research.manchester.ac.uk/en/publications/manganese-and-cobalt-redox-cycling-in-laterites-biogeochemical-an/",
+        "content_type": "text/html;charset=UTF-8",
+        "bytes": 57169,
+        "sha256": "5b4aa6c3b58ed0f869bed4125fdad9cc682f90179d1af888e599502811b73771"
+      }
+    ],
+    [
+      {
+        "filename": "primary.pdf",
+        "url": "https://repositorio.ucr.ac.cr/server/api/core/bitstreams/3b6e8687-9fdf-4544-bd51-470efc6e416a/content",
+        "utc": "2026-10-12T01:17:01.196474+00:00",
+        "status": 200,
+        "final_url": "https://repositorio.ucr.ac.cr/server/api/core/bitstreams/3b6e8687-9fdf-4544-bd51-470efc6e416a/content",
+        "content_type": "application/pdf;charset=UTF-8",
+        "bytes": 3476888,
+        "sha256": "d661047ffe5b892aaf36286060c4108c7505cc0bdb8bf8a88f1b8445e5f23d0e"
+      },
+      {
+        "filename": "mendeley-files-v2.json",
+        "url": "https://data.mendeley.com/public-api/datasets/jjr63cyp35/files?folder_id=root&version=2",
+        "utc": "2026-10-12T01:17:01.197607+00:00",
+        "status": 200,
+        "final_url": "https://data.mendeley.com/public-api/datasets/jjr63cyp35/files?folder_id=root&version=2",
+        "content_type": "application/json; charset=utf-8",
+        "bytes": 2,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      {
+        "filename": "supplement.pdf",
+        "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0009254119304371-mmc1.pdf",
+        "utc": "2026-10-12T01:17:01.197921+00:00",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "filename": "supplement.doc",
+        "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0009254119304371-mmc1.doc",
+        "utc": "2026-10-12T01:17:01.198198+00:00",
+        "status": 200,
+        "final_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0009254119304371-mmc1.doc",
+        "content_type": "application/word",
+        "bytes": 2896384,
+        "sha256": "1695d0ab836dbc6fdbbf5db211293f6332dd30045e0b1f50c84414597dff7ffd"
+      }
+    ],
+    [
+      {
+        "filename": "mendeley-all-files-incomplete.json",
+        "url": "https://data.mendeley.com/public-api/datasets/jjr63cyp35/files?version=2",
+        "utc": "2026-10-12T01:18:08.557727+00:00",
+        "status": 200,
+        "final_url": "https://data.mendeley.com/public-api/datasets/jjr63cyp35/files?version=2",
+        "content_type": "application/json; charset=utf-8",
+        "bytes": 13,
+        "sha256": "067b54b10f9034fdaa6ee1ea34518b5d7369f4b5a8d813f0fcc6890fa201826e",
+        "retention_note": "Original 13-byte error payload retained under disambiguated filename after successful folder-specific inventory."
+      },
+      {
+        "filename": "mendeley-folders.json",
+        "url": "https://data.mendeley.com/public-api/datasets/jjr63cyp35/folders?version=2",
+        "utc": "2026-10-12T01:18:08.558954+00:00",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "filename": "mendeley-version.json",
+        "url": "https://data.mendeley.com/public-api/datasets/jjr63cyp35/versions/2?view=full",
+        "utc": "2026-10-12T01:18:08.559277+00:00",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "filename": "ncbi259900.json",
+        "url": "https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/259900",
+        "utc": "2026-10-12T01:18:08.559595+00:00",
+        "status": 200,
+        "final_url": "https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/259900",
+        "content_type": "application/json",
+        "bytes": 251,
+        "sha256": "5bba0a1339aeddc045023732a196763beea160cfc8b38f8e080dce2543011914"
+      },
+      {
+        "filename": "ncbi35554.json",
+        "url": "https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/35554",
+        "utc": "2026-10-12T01:18:08.559923+00:00",
+        "status": 200,
+        "final_url": "https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/35554",
+        "content_type": "application/json",
+        "bytes": 341,
+        "sha256": "0c0ee91f0f7b5a079ad8b28207336fd86dc968679522f9d1c35732875454fa32"
+      }
+    ],
+    [
+      {
+        "filename": "mendeley-bundle.js",
+        "url": "https://data.mendeley.com/datasets/bundle.js?5e5376ee3a5def54f781",
+        "utc": "2026-10-12T01:18:50.005236+00:00",
+        "status": 200,
+        "final_url": "https://data.mendeley.com/datasets/bundle.js?5e5376ee3a5def54f781",
+        "content_type": "application/javascript; charset=UTF-8",
+        "bytes": 654884,
+        "sha256": "e9c250331f19e2248a9671bb673abd96225715c4cc1c1da4efe8ff28bc3ddf31"
+      }
+    ],
+    [
+      {
+        "filename": "mendeley-folders-v2.json",
+        "url": "https://data.mendeley.com/public-api/datasets/jjr63cyp35/folders/2",
+        "utc": "2026-10-12T01:19:10.006448+00:00",
+        "status": 200,
+        "final_url": "https://data.mendeley.com/public-api/datasets/jjr63cyp35/folders/2",
+        "content_type": "application/json; charset=utf-8",
+        "bytes": 5750,
+        "sha256": "e7e3936fe2e52d602be7b4d61f653c1429431ffcb9f2ff1d8504a582b500e822"
+      },
+      {
+        "filename": "mendeley-files-v2-header.json",
+        "url": "https://data.mendeley.com/public-api/datasets/jjr63cyp35/files?folder_id=root&version=2&%24start=0&%24limit=1000",
+        "utc": "2026-10-12T01:19:10.007634+00:00",
+        "status": 200,
+        "final_url": "https://data.mendeley.com/public-api/datasets/jjr63cyp35/files?folder_id=root&version=2&%24start=0&%24limit=1000",
+        "content_type": "application/json; charset=utf-8",
+        "bytes": 2,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      {
+        "filename": "mendeley-snapshot-v2.json",
+        "url": "https://data.mendeley.com/public-api/datasets/jjr63cyp35/snapshot/2",
+        "utc": "2026-10-12T01:19:10.008022+00:00",
+        "status": 200,
+        "final_url": "https://data.mendeley.com/public-api/datasets/jjr63cyp35/snapshot/2",
+        "content_type": "application/json; charset=utf-8",
+        "bytes": 1736,
+        "sha256": "5bf351134945602ffb7a2dd8f483496db6a9ebea844a2f8d18a6b63ad86a1594"
+      }
+    ],
+    [
+      {
+        "filename": "mendeley-nhm-files.json",
+        "url": "https://data.mendeley.com/public-api/datasets/jjr63cyp35/files?folder_id=869e61f5-e169-48b1-9653-b44472ed9e48&version=2&%24start=0&%24limit=1000",
+        "utc": "2026-10-12T01:19:30.210956+00:00",
+        "status": 200,
+        "final_url": "https://data.mendeley.com/public-api/datasets/jjr63cyp35/files?folder_id=869e61f5-e169-48b1-9653-b44472ed9e48&version=2&%24start=0&%24limit=1000",
+        "content_type": "application/json; charset=utf-8",
+        "bytes": 5736,
+        "sha256": "101dbe76a2613c1f97062062ec8f391fc046eba95fc213f321f7762f7d9e156d"
+      },
+      {
+        "filename": "mendeley-piaui-files.json",
+        "url": "https://data.mendeley.com/public-api/datasets/jjr63cyp35/files?folder_id=ee405855-d7d8-45e1-8f01-b69cb18f773f&version=2&%24start=0&%24limit=1000",
+        "utc": "2026-10-12T01:19:30.211937+00:00",
+        "status": 200,
+        "final_url": "https://data.mendeley.com/public-api/datasets/jjr63cyp35/files?folder_id=ee405855-d7d8-45e1-8f01-b69cb18f773f&version=2&%24start=0&%24limit=1000",
+        "content_type": "application/json; charset=utf-8",
+        "bytes": 9870,
+        "sha256": "a452dda0513837baaa1dfbd24a0a21ca520f791fb2fae6656324d2e6785488fd"
+      },
+      {
+        "filename": "mendeley-all-files.json",
+        "url": "https://data.mendeley.com/public-api/datasets/jjr63cyp35/files?folder_id=0f038e59-4530-42f6-9239-753627cc1ad0&version=2&%24start=0&%24limit=1000",
+        "utc": "2026-10-12T01:19:30.212219+00:00",
+        "status": 200,
+        "final_url": "https://data.mendeley.com/public-api/datasets/jjr63cyp35/files?folder_id=0f038e59-4530-42f6-9239-753627cc1ad0&version=2&%24start=0&%24limit=1000",
+        "content_type": "application/json; charset=utf-8",
+        "bytes": 4068,
+        "sha256": "2ea3668b1950a35da43354c10e180068fb484e7c84fa6f9a047b19aa69effd9d"
+      }
+    ],
+    [
+      {
+        "filename": "NHM-laterites-geochemical-monitoring.xlsx",
+        "url": "https://data.mendeley.com/public-files/datasets/jjr63cyp35/files/8925722f-1a9d-4695-9beb-2d56301775a9/file_downloaded",
+        "utc": "2026-10-12T01:19:54.231323+00:00",
+        "status": 200,
+        "final_url": "https://prod-dcd-datasets-public-files-eu-west-1.s3.eu-west-1.amazonaws.com/69a546d2-d172-48ec-b9d4-6e9361084619",
+        "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "bytes": 108657,
+        "sha256": "1302d4c7907fe38b4e888173635b4e26b2662a102870931d4ab84b12156830b0"
+      },
+      {
+        "filename": "NHM-laterites-sequential-extractions.xlsx",
+        "url": "https://data.mendeley.com/public-files/datasets/jjr63cyp35/files/72900fd1-20e4-4d8a-9e8a-85ac7edfc09a/file_downloaded",
+        "utc": "2026-10-12T01:19:54.232366+00:00",
+        "status": 200,
+        "final_url": "https://prod-dcd-datasets-public-files-eu-west-1.s3.eu-west-1.amazonaws.com/023ed82e-6c50-4ce4-9871-76c51f2234f8",
+        "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "bytes": 133876,
+        "sha256": "86beed23750d036b0f0ed7c7aa0f495557fa391d4c82642df8b2af062a9d48a8"
+      },
+      {
+        "filename": "NHM-laterites-XRF.xlsx",
+        "url": "https://data.mendeley.com/public-files/datasets/jjr63cyp35/files/e47bc003-df04-4b8f-9724-4bf83b0855ea/file_downloaded",
+        "utc": "2026-10-12T01:19:54.232699+00:00",
+        "status": 200,
+        "final_url": "https://prod-dcd-datasets-public-files-eu-west-1.s3.eu-west-1.amazonaws.com/6ad56704-41a5-4e32-b1fd-88e588b282e5",
+        "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "bytes": 13733,
+        "sha256": "8babf6b3e2ff6c2a105173ed1d557646c07241a44a7bb31eccf032c490b12f8e"
+      },
+      {
+        "filename": "Piaui-geochemical-monitoring-composite-microcosms.xlsx",
+        "url": "https://data.mendeley.com/public-files/datasets/jjr63cyp35/files/28a62098-74fd-438d-9302-a4e33c044ca6/file_downloaded",
+        "utc": "2026-10-12T01:19:54.232988+00:00",
+        "status": 200,
+        "final_url": "https://prod-dcd-datasets-public-files-eu-west-1.s3.eu-west-1.amazonaws.com/e6d36a8c-5258-48a2-8439-f07e90a8f4fa",
+        "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "bytes": 91350,
+        "sha256": "d3b7e6c80a235a5a01e5840d3205aaec64cf90e83f4cf5b3f2011219a1a79e48"
+      },
+      {
+        "filename": "Piaui-sequential-extractions.xlsx",
+        "url": "https://data.mendeley.com/public-files/datasets/jjr63cyp35/files/9876188f-4c3a-49af-ab62-509cb964390c/file_downloaded",
+        "utc": "2026-10-12T01:19:54.233230+00:00",
+        "status": 200,
+        "final_url": "https://prod-dcd-datasets-public-files-eu-west-1.s3.eu-west-1.amazonaws.com/8208c6d4-3f23-4eaa-a88d-7f1603749b6d",
+        "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "bytes": 73809,
+        "sha256": "5dca518097851604b47b4572332de1bb949b02d2c83e9b4227719611f47efc3e"
+      },
+      {
+        "filename": "Piaui-XRF.xlsx",
+        "url": "https://data.mendeley.com/public-files/datasets/jjr63cyp35/files/889afbe9-7d6f-4652-a25c-5785dd23e3dd/file_downloaded",
+        "utc": "2026-10-12T01:19:54.233503+00:00",
+        "status": 200,
+        "final_url": "https://prod-dcd-datasets-public-files-eu-west-1.s3.eu-west-1.amazonaws.com/486b452a-7611-48d4-a031-87b1650f2269",
+        "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "bytes": 13105,
+        "sha256": "cf163713f57b0cb9cd509af1406b8ef4ef8ef25f5ae880073d9984a0c5a0b71e"
+      }
+    ]
+  ],
+  "next_priorities": [
+    "Independent final-byte review and parent cohort gates.",
+    "Resolve source Ni composition, medium labels and raw/bulk balance before numerical harmonization.",
+    "Matched sterile/acid/fermentation controls and host-resolved redox assays needed for causal mechanism partition.",
+    "Distinct future flowing-system evidence and fuller versioned data audit; source frontier not exhausted."
+  ]
+}

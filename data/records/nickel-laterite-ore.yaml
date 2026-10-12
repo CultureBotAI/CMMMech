@@ -40,6 +40,22 @@ sources:
     title: NCBI Taxonomy 930 — Acidithiobacillus thiooxidans, species rank
     url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info
     accessed_on: '2026-10-11'
+  - id: newsome2020
+    title: Newsome L, Solano Arguedas A, Coker VS, Boothman C and Lloyd JR (2020; online 23 October 2019). Manganese and cobalt redox cycling in laterites; Biogeochemical and bioprocessing implications. Chemical Geology 531:119330. DOI 10.1016/j.chemgeo.2019.119330; complete published 15-page article, Figures 1–9 and Tables 1–3.
+    url: https://doi.org/10.1016/j.chemgeo.2019.119330
+    accessed_on: '2026-10-12'
+  - id: newsome2020_supplement
+    title: Newsome et al. (2020), original supplementary Word document to DOI 10.1016/j.chemgeo.2019.119330; Tables S1–S8 and Figures S1–S16. Locally rendered for inspection.
+    url: https://ars.els-cdn.com/content/image/1-s2.0-S0009254119304371-mmc1.doc
+    accessed_on: '2026-10-12'
+  - id: newsome2019_data_v2
+    title: Newsome L (2019). Manganese and cobalt redox cycling in laterites; biogeochemical and bioprocessing implications. Mendeley Data v2, published 2 October 2019, DOI 10.17632/jjr63cyp35.2. Selected NHM/Piaui sequential-extraction, XRF and geochemical-monitoring workbooks; associated data for the same experiment, not independent replication.
+    url: https://data.mendeley.com/datasets/jjr63cyp35/2
+    accessed_on: '2026-10-12'
+  - id: ncbi_geobacter_20261012
+    title: NCBI Taxonomy 35554 — Geobacter sulfurreducens, species rank; live Datasets response checked 12 October 2026.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=35554&mode=Info
+    accessed_on: '2026-10-12'
 mechanisms:
   - id: aerobic_sulfur_oxidizer_leaching
     name: Ore-dependent aerobic bioleaching by a sulfur-oxidizing consortium
@@ -149,6 +165,38 @@ mechanisms:
           remained strongly biotoxic despite undetectable Cr(VI); the cause
           was unresolved. XRD residues showed no major goethite-phase changes,
           preventing a pure-goethite dissolution claim from these ore assays.
+  - id: native_laterite_reductive_mobilization
+    name: Donor-associated cobalt mobilization and extractability changes in natural laterites
+    process: bioleaching
+    description: Anaerobic incubation with simple organic electron donors stimulated indigenous laterite communities and was associated with altered cobalt and manganese partitioning. Acetate-treated NHM feeds mainly accumulated acid-extractable metal in solids, whereas glucose-treated Piauí feeds also released metals to solution. The evidence supports conditional community-associated mobilization and subsequent chemical extractability, with unresolved direct versus indirect redox pathways and no isolated-product recovery.
+    context: 'Newsome et al. studied composite heap samples spanning horizons: Acoje (Philippines), Çaldağ (Turkey), Shevchenko 11 (Kazakhstan), and Piauí 4 and 23 (Brazil, sampled April 2016). These are mixed natural nickel-cobalt laterites, not processing wastes or pure Mn/Fe oxide minerals. Characterization aliquots were dried at 105 degrees C and ball-milled; that preparation is not stated for the live microcosm feed. NHM biostimulation used 3 g wet laterite, 30 mL anaerobic modified freshwater minimal medium initially pH 7, and 10 mM acetate, with 80:20 N2:CO2 headspace, darkness and 30 degrees C, followed through 90 days. Piauí screening used 3 g laterite/30 mL sterile artificial groundwater with either 5 mM each acetate and lactate or 10 mM glucose. Subsequent main glucose assays used 10 g laterite/100 mL artificial groundwater and 10 mM glucose, in triplicate under the same gas/temperature/dark conditions; endpoint solids were collected at 143 days. Repeat Piauí 23 assays comprised
+      two amended bottles and an additional donor-free control, with later monitoring to day 264. Donor-free controls are single controls in the plotted main time courses. ICP-AES analysed centrifuged supernatants, not a stated membrane-filtered dissolved fraction. The separate BCR extraction used 0.5 g dried solid and sequential 0.11 M acetic acid, 0.5 M hydroxylamine hydrochloride, peroxide/ammonium acetate and aqua regia steps; the first two steps on biostimulated sediment were anaerobic. Extractant fractions are operational categories, not unique mineral species. These were laboratory bottle and extraction assays.'
+    microbial: true
+    evidence:
+    - source_ref: newsome2020
+      supports: support
+      explanation: 'Sections 2.1–2.4 and 3.1–3.3, Figures 1–6 and Tables 2–3: acetate-amended NHM laterites developed reducing conditions but showed little aqueous Co, Mn or Ni release. Their sequential extractions shifted Co and Mn toward the acetic-acid-extractable fraction compared with as-supplied material and donor-free controls. In contrast, glucose-amended Piauí 4 and 23 microcosms released Co, Mn and Ni to solution relative to donor-free controls, alongside acidification and volatile-fatty-acid production. These are different feeds, media and durations; they do not isolate a universal advantage of glucose over acetate.'
+    - source_ref: newsome2020_supplement
+      supports: support
+      explanation: 'Figures S2–S6 corroborate the NHM low-aqueous-release and fraction-shift results. Figures S10–S13 distinguish the preliminary donor screen, Piauí 4 main assay and repeat Piauí 23 microcosms. Fe(II) production varied between replicates: the article reports two of five Piauí 23 microcosms developed Fe(III)-reducing conditions. Figure S12 explicitly substitutes zero for an apparent ferrozine signal attributed to yellow sediment interference; its non-pH day-zero values represent artificial-groundwater composition, not measured slurry baselines. This heterogeneity is retained rather than pooling all cultures into one response.'
+    - source_ref: newsome2019_data_v2
+      supports: support
+      explanation: In NHM laterites sequential extractions.xlsx, sheet Co A16 and B21/E21/Q7, and Piaui sequential extractions.xlsx, sheet Co A13, B16/D16/L5, the denominator is the sum of aqueous plus all sequentially extracted metal fractions. Thus the article Table 3 value of 64 +/- 3% for glucose-treated Piauí 4 cobalt describes an operational aqueous-plus-acetic-acid fraction after 143 days, not 64% of an independently closed initial-metal balance or an isolated cobalt-product yield. The workbooks label source SD terms and propagate them through fraction calculations; this is not a direct SD of replicated purified-product recovery. The Piauí sequential-extraction comparison lacks a displayed donor-free endpoint in Figure 5, Figure S13 and Table 3, despite aqueous monitoring controls.
+    - source_ref: newsome2020
+      supports: partial
+      explanation: 'Sections 2.4 and 3.4, Figures 7–9: goethite remains in XRD and the dominant Fe/Ni spectral environment changes little. Cobalt XANES shifts in Acoje, Çaldağ and Piauí are consistent with a greater Co(II) contribution; post-treatment Shevchenko cobalt was not analysed. Mn-oxide hosts were not resolved by XRD, and Co EXAFS could not be obtained. Direct microbial Co(III) reduction cannot be distinguished from indirect reduction accompanying Mn-oxide dissolution and equilibration. No pure-host-mineral selectivity, identified reductase or quantitative wet-state phase conversion is established.'
+    - source_ref: newsome2020_supplement
+      supports: partial
+      explanation: Table S8 fits Co spectra using Co-doped MnO2 and Co-doped goethite standards; these are model components, not physically isolated phase fractions. Tables S2–S6 and Figures S7–S9/S14–S15 report community sequence similarities and inferred functions, not cultured causative organisms. The Piauí DNA observations come from the repeat experiment after extraction optimization, not the original Figure 4 triplicates. Both amended and donor-free microcosms changed community composition, and extraction efficiency and sediment heterogeneity constrain abundance interpretation.
+    - source_ref: newsome2020
+      supports: partial
+      explanation: Donor-free controls retain indigenous microorganisms and are not sterilized abiotic controls. A sterile donor-amended, killed-cell or chemistry-matched acid/VFA control is not described, so metabolic respiration, fermentation, ligand chemistry and indirect chemical reduction are not individually isolated. The separately bioaugmented NHM arm used washed Geobacter sulfurreducens from a local culture collection in 30 mM bicarbonate with 10 mM acetate, reported OD600 0.8, for 33 days. No strain accession or final inoculum-volume basis is given; it differs from the 90-day native-community medium and cannot identify an individual native taxon as the cause. No recovered purified product or industrial deployment was demonstrated; Section 3.6 proposes future process testing.
+    - source_ref: newsome2020_supplement
+      supports: partial
+      explanation: Main Table 1 labels nickel as dry-weight percent and gives 0.14–0.27%, whereas Table S1 gives 13.9–27.0 g/kg, approximately tenfold higher after unit conversion. The associated major-element XRF workbooks likewise report percent-scale nickel around 1.4–2.7%; the discrepancy is not silently corrected or used as a yield denominator. Main Figure 2 and supplemental extraction plots label NHM medium AGW, while Methods 2.1.2 calls it modified freshwater minimal medium. Main Methods call assays triplicate, but extraction plots separately label numbers of extraction replicates, including four in some NHM bars; these are not assumed to be four independent cultures. Main Figure 4 points to S10 for repeats, while the repeated Piauí 23 assay is S12.
+    - source_ref: ncbi_geobacter_20261012
+      supports: context_only
+      explanation: TaxID 35554 resolves to Geobacter sulfurreducens at species rank. It grounds the species name in the separate augmentation comparison only, not an authenticated strain or the unresolved indigenous communities. No organism CURIE is assigned to those communities.
 curation_history:
   - timestamp: '2026-10-11T12:13:06Z'
     curator: Codex (GPT-6; codex)
@@ -159,5 +207,10 @@ curation_history:
       context and primary methods, preserving null outcomes, chemical
       comparators and unresolved dosing, toxicity and causal limitations.
       Scientific acceptance is recorded separately by independent review.
+  - timestamp: '2026-10-12T01:21:15.841593+00:00'
+    curator: codex (GPT-6; codex)
+    action: EDIT
+    summary: Added the independently sourced Newsome2020 native-community laterite assay, distinguishing acetate/glucose arms, aqueous and sequentially extractable fractions, model-based redox interpretation, nonsterile controls, source inconsistencies and unproven product recovery. Preserved all prior scientific fields and committed history.
 history_refs:
   - history/records/nickel-laterite-ore/2026-10-11T121306Z-codex-4f14be.yaml
+  - history/records/nickel-laterite-ore/2026-10-12T012121Z-codex-742f3f.yaml
