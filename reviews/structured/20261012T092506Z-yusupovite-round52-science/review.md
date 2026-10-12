@@ -1,0 +1,439 @@
+# Independent scientific review of yusupovite
+
+- Review: 20261012T092506Z-yusupovite-round52-science
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-12T09:20:04.686516Z
+- Finished UTC: 2026-10-12T09:25:06Z
+- Reviewer: Codex /root/round27_packaging (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The mineral identity and qualified natural occurrence are supported by the issuing authority and complete original characterization. No corrective finding; calculated hydration, missing CIF, source powder-line discrepancy and prospective applications remain bounded.
+
+## Scope And Provenance
+
+All yusupovite record fields, CREATE sidecar, paired source dossiers and schema; full main paper and every original figure/table plus dated IMA authority.
+
+Selection: Assigned independent exact-target scientific review.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 79ed7d69ea654d1b67bbf74bb931ff70c4c6913e.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:yusupovite | data/records/yusupovite.yaml | maintained | Yusupovite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named structural validation | passed | True | cmmmech:yusupovite | Reviewer executed in round52; one record checked, zero failed. Log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e |
+| Parent completed batch | passed | True | cmmmech:yusupovite | Parent executed; reviewer read and hash-verified log /private/tmp/cmm-round52-final-batch.log SHA256 98c9a3c5b08e68cefe8dc71e984bff78ca3b8320a49f048a43ca0402489f5685. uv run --locked --extra dev python scripts/check.py<br>All checks passed!<br>........................................................................ [ 22%]<br>........................................................................ [ 45%]<br>........................................................................ [ 67%]<br>.............................................................sss........ [ 90%]<br>................................                                         [100%]<br>317 passed, 3 skipped in 179.41s (0:02:59)<br>Checked 253 record(s); 0 failed.<br>Checked 299 history record(s); 0 error(s).<br> |
+| Parent completed nonempty | passed | True | cmmmech:yusupovite | Parent executed; reviewer read and hash-verified log /private/tmp/cmm-round52-final-nonempty.log SHA256 4a50f2f93e44bfb9e2561b166775c22abe8b3fb410bdcd90d2c75a2ff66d406a. Checked 253 record(s); 0 failed.<br> |
+| Parent completed history | passed | True | cmmmech:yusupovite | Parent executed; reviewer read and hash-verified log /private/tmp/cmm-round52-final-history.log SHA256 6fab9a1f2f422f605fd0b242200596b27558aa866fa8b2dffabac4718cbce617. Checked 299 history record(s); 0 error(s).<br> |
+| Parent completed render-check | passed | True | cmmmech:yusupovite | Parent executed; reviewer read and hash-verified log /private/tmp/cmm-round52-final-render-check.log SHA256 be156b3acc20d39b6bad41632b10eb7ccfc2c8a7fdeaec3f6236fbc67831aea6. uv run python scripts/render_pages.py --check<br>pages/ is current<br> |
+
+## Scientific And Domain Assessments
+
+### Species and natural-material boundaries
+
+identity: supported. Targets: cmmmech:yusupovite.
+
+Mineral identity, approved accession and qualified natural occurrence are supported; ideal formula is separated from measured substituted composition.
+
+### Published structural evidence and bounded applications
+
+evidence: supported. Targets: cmmmech:yusupovite.
+
+Complete main-paper evidence supports the narrow identity despite unavailable deposited CIF. No independent re-refinement, time-resolved transformation or measured exchange performance is asserted.
+
+### Frozen context and executed required validation
+
+provenance: supported. Targets: cmmmech:yusupovite.
+
+All explicit inputs and retained artifacts matched their hashes; independent named and actual shared checks passed. Access/search limits remain explicit.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| primary | https://doi.org/10.2138/am-2015-5092; Complete original seven-page article, printed1502–1508; all four figures and seven tables independently viewed/read. | supports | Natural specimens were collected from glacier-moraine pegmatitic material, not an in-place resource survey or pure feed. Microscopy, microprobe chemistry, IR, powder and single-crystal diffraction support the monoclinic species assignment. Prospective applications rely on earlier elpidite experiments. |
+| composition | /private/tmp/cmm-round52-hf-zr-research/raw/agakhanov2015-pages/page-003.png; Original Table2 on1504; compared with Tables5/7 and description on1506–1507. | supports | Ten-point mean contains K, Cs, Y and minor Hf. H2O is calculated from refinement; 2.52 water per formula unit describes the specimen and is separate from ideal3H2O. No direct water assay or exact pure end-member is claimed. |
+| structure | /private/tmp/cmm-round52-hf-zr-research/raw/agakhanov2015-pages/page-004.png; Original Tables3–4 on1505; Tables5–7 and Figure4 on1506–1507; CIF footnote on1506. | supports | Published powder and single-crystal results distinguish C2/m yusupovite from orthorhombic elpidite. Table3 observed2.567/calculated2.265 row remains unresolved and unimported. Unacquired CIFAM-15-75092 does not become an independent re-refinement claim. Structural comparison is not an observed temporal transformation. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Retained issuing-authority original September2026, definitions page1 and yusupovite row239 independently visually inspected. | supports | Approved IMA2014-022, Na2Zr(Si6O15)(H2O)3 and Tajikistan match the asserted identifier and ideal identity. The retained original was reused rather than newly acquired. |
+| context | research/sources/round52-hf-zr/20261012T091921Z-source-investigation.json; Entire paired source investigation MD/JSON, all frozen explicit input hashes and raw manifest. | supports | Acquisition and limitations accurately separate complete seven-page primary evidence from missing CIF and deferred hafnon sources. All 33 listed artifact hashes independently matched; partial hafnon reading is not represented as full source review. |
+| history | history/records/yusupovite/2026-10-12T091646Z-codex-e0fb3c.yaml; Whole CREATE sidecar and distinct inline event. | supports | Actual codex/GPT-6/codex actor, UTC creation, target and identity-only change are consistent. This independent review does not add a curation history event. |
+| dedup | /private/tmp/cmm-round52-yusupovite-review/evidence-proof.json; Independent bounded identity/DOI search, raw-hash verification and named-validation receipt. | supports | Current maintained owner is distinct from elpidite and elemental zirconium. Earlier lead/reference appearances are not duplicate accepted yusupovite experiments. |
+| notices | /private/tmp/cmm-round52-yusupovite-review/evidence-proof.json; Three fresh independent web queries plus retained fresh Crossref metadata. | supports | No applicable notice found in the bounded returned results. Historical2.5-water listings do not replace dated current3-water ideal authority; record retains calculated specimen hydration. Later elpidite structural literature is context only, not a new verified mechanism. |
+| gates | /private/tmp/cmm-round52-final-terminal.json; Actual completed round52 gate receipt and every command log read/hash-verified. | supports | Required shared checks passed on the frozen cohort. Target and all five captured input hashes remain unchanged. |
+
+## Limits And Additional Notes
+
+- Unacquired AM-15-75092 CIF; main published diffraction/refinement supports narrow identity without independent re-refinement.
+- Table3 observed2.567/calculated2.265 row is visibly inconsistent and not imported.
+- Ideal3H2O and structure-derived2.52H2O differ; no direct water assay.
+- Application predictions cite elpidite experiments, no yusupovite performance or microbial assay.
+- Natural moraine material does not establish an in-place resource or feed inventory.
+- Hidden/ignored-followed textual searches have explicit size and missing-root limits; unextracted binaries and unrelated machine paths are excluded.
+- No target edit, Git/GitHub mutation or self-scientific approval.
+- Native inspect captured record, history, both dossier formats and schema before scientific judgment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261012T092506Z-yusupovite-round52-science
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of yusupovite
+started_at: '2026-10-12T09:20:04.686516Z'
+finished_at: '2026-10-12T09:25:06Z'
+reviewer:
+  identity: Codex /root/round27_packaging
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer authored gold-mine-tailings, not yusupovite. Yusupovite
+    record/history/dossier were authored by /root/round27_superalloy. Reviewer captured
+    native inputs before judgment, independently inspected all original seven pages/graphics
+    and IMA, and did not edit the target.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The mineral identity and qualified natural occurrence are supported by the
+  issuing authority and complete original characterization. No corrective finding;
+  calculated hydration, missing CIF, source powder-line discrepancy and prospective
+  applications remain bounded.
+source:
+  git_revision: 79ed7d69ea654d1b67bbf74bb931ff70c4c6913e
+  state: working_tree
+  inputs:
+  - path: data/records/yusupovite.yaml
+    sha256: e342ffb44f22f0e65f0bfe60f11cb1a28f53b60cb3c5a3f00e4c4f9726102f83
+    role: target
+  - path: history/records/yusupovite/2026-10-12T091646Z-codex-e0fb3c.yaml
+    sha256: 0675d0a8cedf9402c4423e1b86c575506db06eda430b508fa6a9f9aad8a75dba
+    role: context
+  - path: research/sources/round52-hf-zr/20261012T091921Z-source-investigation.json
+    sha256: cd9567b9f16cff68a31d530921689f093d5d003508ef058be28fbc4889883dd1
+    role: context
+  - path: research/sources/round52-hf-zr/20261012T091921Z-source-investigation.md
+    sha256: 979029e7ae6ce5746d3b1baea5dc316737077325802d1c01f8ec162db37554ab
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:yusupovite
+  path: data/records/yusupovite.yaml
+  label: Yusupovite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/yusupovite.yaml
+    role: maintained
+scope:
+  description: All yusupovite record fields, CREATE sidecar, paired source dossiers
+    and schema; full main paper and every original figure/table plus dated IMA authority.
+  selection: Assigned independent exact-target scientific review.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:yusupovite
+  exclusions:
+  - target: Unacquired CIF AM-15-75092 and deferred hafnon primary investigations
+    reason: No deposited-data inspection or independent refinement claimed; hafnon
+      is not this maintained target.
+checks:
+- check_id: named
+  name: Independent named structural validation
+  command: uv run --locked cmmmech validate data/records/yusupovite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:yusupovite
+  summary: Reviewer executed in round52; one record checked, zero failed. Log SHA256
+    6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- check_id: batch
+  name: Parent completed batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:yusupovite
+  summary: 'Parent executed; reviewer read and hash-verified log /private/tmp/cmm-round52-final-batch.log
+    SHA256 98c9a3c5b08e68cefe8dc71e984bff78ca3b8320a49f048a43ca0402489f5685. uv run
+    --locked --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 22%]
+
+    ........................................................................ [ 45%]
+
+    ........................................................................ [ 67%]
+
+    .............................................................sss........ [ 90%]
+
+    ................................                                         [100%]
+
+    317 passed, 3 skipped in 179.41s (0:02:59)
+
+    Checked 253 record(s); 0 failed.
+
+    Checked 299 history record(s); 0 error(s).
+
+    '
+- check_id: nonempty
+  name: Parent completed nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:yusupovite
+  summary: 'Parent executed; reviewer read and hash-verified log /private/tmp/cmm-round52-final-nonempty.log
+    SHA256 4a50f2f93e44bfb9e2561b166775c22abe8b3fb410bdcd90d2c75a2ff66d406a. Checked
+    253 record(s); 0 failed.
+
+    '
+- check_id: history
+  name: Parent completed history
+  command: uv run --locked cmmmech validate-history --base 79ed7d69ea654d1b67bbf74bb931ff70c4c6913e
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:yusupovite
+  summary: 'Parent executed; reviewer read and hash-verified log /private/tmp/cmm-round52-final-history.log
+    SHA256 6fab9a1f2f422f605fd0b242200596b27558aa866fa8b2dffabac4718cbce617. Checked
+    299 history record(s); 0 error(s).
+
+    '
+- check_id: render-check
+  name: Parent completed render-check
+  command: just render-check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:yusupovite
+  summary: 'Parent executed; reviewer read and hash-verified log /private/tmp/cmm-round52-final-render-check.log
+    SHA256 be156b3acc20d39b6bad41632b10eb7ccfc2c8a7fdeaec3f6236fbc67831aea6. uv run
+    python scripts/render_pages.py --check
+
+    pages/ is current
+
+    '
+evidence:
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.2138/am-2015-5092
+  locator: Complete original seven-page article, printed1502–1508; all four figures
+    and seven tables independently viewed/read.
+  accessed_at: '2026-10-12T09:25:06Z'
+  support: supports
+  summary: Natural specimens were collected from glacier-moraine pegmatitic material,
+    not an in-place resource survey or pure feed. Microscopy, microprobe chemistry,
+    IR, powder and single-crystal diffraction support the monoclinic species assignment.
+    Prospective applications rely on earlier elpidite experiments.
+  snapshot_sha256: ce3aa9e7dc086ff1a48bb860a18179c7810fb088350855a60a4b930a7e1c86be
+- evidence_id: composition
+  kind: primary_source
+  reference: /private/tmp/cmm-round52-hf-zr-research/raw/agakhanov2015-pages/page-003.png
+  locator: Original Table2 on1504; compared with Tables5/7 and description on1506–1507.
+  accessed_at: '2026-10-12T09:25:06Z'
+  support: supports
+  summary: Ten-point mean contains K, Cs, Y and minor Hf. H2O is calculated from refinement;
+    2.52 water per formula unit describes the specimen and is separate from ideal3H2O.
+    No direct water assay or exact pure end-member is claimed.
+  snapshot_sha256: 7eb9fdc41027f1ae5007d536491cbb10f0d111692ef111051af7a0d316a217f1
+- evidence_id: structure
+  kind: primary_source
+  reference: /private/tmp/cmm-round52-hf-zr-research/raw/agakhanov2015-pages/page-004.png
+  locator: Original Tables3–4 on1505; Tables5–7 and Figure4 on1506–1507; CIF footnote
+    on1506.
+  accessed_at: '2026-10-12T09:25:06Z'
+  support: supports
+  summary: Published powder and single-crystal results distinguish C2/m yusupovite
+    from orthorhombic elpidite. Table3 observed2.567/calculated2.265 row remains unresolved
+    and unimported. Unacquired CIFAM-15-75092 does not become an independent re-refinement
+    claim. Structural comparison is not an observed temporal transformation.
+  snapshot_sha256: 56e89cfc9bd106ced7e1d2b86aade5a2725f154a1ca0b473e09a8c0f5ef7bee0
+- evidence_id: ima
+  kind: database
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Retained issuing-authority original September2026, definitions page1 and
+    yusupovite row239 independently visually inspected.
+  accessed_at: '2026-10-12T09:25:06Z'
+  support: supports
+  summary: Approved IMA2014-022, Na2Zr(Si6O15)(H2O)3 and Tajikistan match the asserted
+    identifier and ideal identity. The retained original was reused rather than newly
+    acquired.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: context
+  kind: record_content
+  reference: research/sources/round52-hf-zr/20261012T091921Z-source-investigation.json
+  locator: Entire paired source investigation MD/JSON, all frozen explicit input hashes
+    and raw manifest.
+  accessed_at: '2026-10-12T09:25:06Z'
+  support: supports
+  summary: Acquisition and limitations accurately separate complete seven-page primary
+    evidence from missing CIF and deferred hafnon sources. All 33 listed artifact
+    hashes independently matched; partial hafnon reading is not represented as full
+    source review.
+  snapshot_sha256: cd9567b9f16cff68a31d530921689f093d5d003508ef058be28fbc4889883dd1
+- evidence_id: history
+  kind: record_content
+  reference: history/records/yusupovite/2026-10-12T091646Z-codex-e0fb3c.yaml
+  locator: Whole CREATE sidecar and distinct inline event.
+  accessed_at: '2026-10-12T09:25:06Z'
+  support: supports
+  summary: Actual codex/GPT-6/codex actor, UTC creation, target and identity-only
+    change are consistent. This independent review does not add a curation history
+    event.
+  snapshot_sha256: 0675d0a8cedf9402c4423e1b86c575506db06eda430b508fa6a9f9aad8a75dba
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round52-yusupovite-review/evidence-proof.json
+  locator: Independent bounded identity/DOI search, raw-hash verification and named-validation
+    receipt.
+  accessed_at: '2026-10-12T09:25:06Z'
+  support: supports
+  summary: Current maintained owner is distinct from elpidite and elemental zirconium.
+    Earlier lead/reference appearances are not duplicate accepted yusupovite experiments.
+  snapshot_sha256: 91ed046269cc6bc294954ca261cbc0132eaf5f5b3eeabfd6613f64a05a777ff1
+  search_scope: Independent cycle-safe os.walk followlinks included hidden/ignored
+    current and original data/research/reviews/history and all173 raw roots explicitly
+    enumerated by curator receipt; textual extensions <=16MB only. No unextracted
+    binary or entire-machine absence claim.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round52-yusupovite-review/evidence-proof.json
+  locator: Three fresh independent web queries plus retained fresh Crossref metadata.
+  accessed_at: '2026-10-12T09:25:06Z'
+  support: supports
+  summary: No applicable notice found in the bounded returned results. Historical2.5-water
+    listings do not replace dated current3-water ideal authority; record retains calculated
+    specimen hydration. Later elpidite structural literature is context only, not
+    a new verified mechanism.
+  snapshot_sha256: 91ed046269cc6bc294954ca261cbc0132eaf5f5b3eeabfd6613f64a05a777ff1
+  search_scope: 'Fresh web first returned relevance sets on2026-10-12, without pagination.
+    Current retained September2026 authority original is the identity basis; search
+    returned historical authority lists and relevant later elpidite structural context.
+    No applicable correction/retraction identified in this bounded set. No full later-study
+    or universal absence claim. Queries: "10.2138/am-2015-5092" correction erratum
+    retraction; "Yusupovite" "2014-022" IMA; "Yusupovite" microbial ion exchange experiment'
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round52-final-terminal.json
+  locator: Actual completed round52 gate receipt and every command log read/hash-verified.
+  accessed_at: '2026-10-12T09:25:06Z'
+  support: supports
+  summary: Required shared checks passed on the frozen cohort. Target and all five
+    captured input hashes remain unchanged.
+  snapshot_sha256: 5b99f9d171be5aa6cf30e680ccb15098c90864664c7a773aa6e57fa27ce0ab40
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species and natural-material boundaries
+  outcome: supported
+  target_ids:
+  - cmmmech:yusupovite
+  evidence_ids:
+  - ima
+  - primary
+  - composition
+  - dedup
+  summary: Mineral identity, approved accession and qualified natural occurrence are
+    supported; ideal formula is separated from measured substituted composition.
+  dimensions:
+  - name: material_form
+    value: Natural mineral grains in heterogeneous moraine-collected pegmatitic rocks
+    definition: Not elemental zirconium, elpidite, purified ore or industrial feed
+    evidence_ids:
+    - primary
+    - ima
+  - name: criticality
+    value: No criticality designation assigned
+    definition: No constituent-derived jurisdiction, list or edition
+    evidence_ids:
+    - ima
+- assessment_id: science
+  area: evidence
+  topic: Published structural evidence and bounded applications
+  outcome: supported
+  target_ids:
+  - cmmmech:yusupovite
+  evidence_ids:
+  - primary
+  - composition
+  - structure
+  - context
+  summary: Complete main-paper evidence supports the narrow identity despite unavailable
+    deposited CIF. No independent re-refinement, time-resolved transformation or measured
+    exchange performance is asserted.
+  dimensions:
+  - name: mechanism_and_biomass
+    value: No microbial organism, biomass, pretreatment or causal mechanism asserted
+    definition: Mineral characterization is separate from biological extraction experiments
+    evidence_ids:
+    - primary
+  - name: outcome_scale
+    value: Natural-specimen characterization and prospective application discussion
+    definition: No extraction denominator, isolated recovery yield or industrial deployment
+    evidence_ids:
+    - primary
+    - structure
+- assessment_id: provenance
+  area: provenance
+  topic: Frozen context and executed required validation
+  outcome: supported
+  target_ids:
+  - cmmmech:yusupovite
+  evidence_ids:
+  - history
+  - context
+  - gates
+  - notices
+  summary: All explicit inputs and retained artifacts matched their hashes; independent
+    named and actual shared checks passed. Access/search limits remain explicit.
+findings: []
+actions: []
+limitations:
+- Unacquired AM-15-75092 CIF; main published diffraction/refinement supports narrow
+  identity without independent re-refinement.
+- Table3 observed2.567/calculated2.265 row is visibly inconsistent and not imported.
+- Ideal3H2O and structure-derived2.52H2O differ; no direct water assay.
+- Application predictions cite elpidite experiments, no yusupovite performance or
+  microbial assay.
+- Natural moraine material does not establish an in-place resource or feed inventory.
+- Hidden/ignored-followed textual searches have explicit size and missing-root limits;
+  unextracted binaries and unrelated machine paths are excluded.
+notes:
+- No target edit, Git/GitHub mutation or self-scientific approval.
+- Native inspect captured record, history, both dossier formats and schema before
+  scientific judgment.
+tags:
+- round52
+- yusupovite
+- independent
+- scientific
+```

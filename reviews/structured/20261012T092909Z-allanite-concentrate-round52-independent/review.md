@@ -1,0 +1,476 @@
+# Independent scientific review of allanite concentrate
+
+- Review: 20261012T092909Z-allanite-concentrate-round52-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-12T09:20:17Z
+- Finished UTC: 2026-10-12T09:29:09Z
+- Reviewer: Codex /root/round27_superalloy (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The frozen record supports a qualified laboratory comparison of culture-associated REE leaching from the stated concentrate. No corrective finding was identified. Molecular causality, feed characterization, denominator, control, source-label and scale limitations remain explicit.
+
+## Scope And Provenance
+
+All maintained record fields, CREATE and inline history, paired source dossiers and schema; independent assessment of the complete 2025 main article, scientific supplement and claim-relevant workbook data.
+
+Selection: Assigned independent review of the exact target; no scientific approval of the reviewer’s own record.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 79ed7d69ea654d1b67bbf74bb931ff70c4c6913e.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:allanite-concentrate | data/records/allanite-concentrate.yaml | maintained | Allanite concentrate |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named record validation | passed | True | cmmmech:allanite-concentrate | Reviewer executed this check in the round52 worktree. Tool session 6701 completed with exit 0: Checked 1 record(s); 0 failed. Execution receipt: /private/tmp/cmm-round52-allanite-independent/assessment-receipt.json. |
+| Parent-executed completed batch | passed | True | cmmmech:allanite-concentrate | Reviewer independently read terminal log /private/tmp/cmm-round52-final-batch.log, SHA256 98c9a3c5b08e68cefe8dc71e984bff78ca3b8320a49f048a43ca0402489f5685; all bytes match actual receipt. uv run --locked --extra dev python scripts/check.py<br>All checks passed!<br>........................................................................ [ 22%]<br>........................................................................ [ 45%]<br>........................................................................ [ 67%]<br>.............................................................sss........ [ 90%]<br>................................                                         [100%]<br>317 passed, 3 skipped in 179.41s (0:02:59)<br>Checked 253 record(s); 0 failed.<br>Checked 299 history record(s); 0 error(s).<br> |
+| Parent-executed completed nonempty | passed | True | cmmmech:allanite-concentrate | Reviewer independently read terminal log /private/tmp/cmm-round52-final-nonempty.log, SHA256 4a50f2f93e44bfb9e2561b166775c22abe8b3fb410bdcd90d2c75a2ff66d406a; all bytes match actual receipt. Checked 253 record(s); 0 failed.<br> |
+| Parent-executed completed history | passed | True | cmmmech:allanite-concentrate | Reviewer independently read terminal log /private/tmp/cmm-round52-final-history.log, SHA256 6fab9a1f2f422f605fd0b242200596b27558aa866fa8b2dffabac4718cbce617; all bytes match actual receipt. Checked 299 history record(s); 0 error(s).<br> |
+| Parent-executed completed render-check | passed | True | cmmmech:allanite-concentrate | Reviewer independently read terminal log /private/tmp/cmm-round52-final-render-check.log, SHA256 be156b3acc20d39b6bad41632b10eb7ccfc2c8a7fdeaec3f6236fbc67831aea6; all bytes match actual receipt. uv run python scripts/render_pages.py --check<br>pages/ is current<br> |
+
+## Scientific And Domain Assessments
+
+### Primary-resource boundary and organism identity
+
+identity: supported. Targets: cmmmech:allanite-concentrate.
+
+The concentrated geological feed is correctly represented as a primary resource. Generic allanite naming is not promoted to a mineral species, grade, purity or mine identity. Species-level taxon 442 is correct and strain limitations are explicit.
+
+### Cultures, controls, denominators and measured outcome
+
+evidence: supported. Targets: cmmmech:allanite-concentrate.
+
+The bounded genotype-associated mobilization claim matches the main article, supplement and workbooks. Relative improvements, lower absolute extraction, nonzero and unmatched controls, timing and unit conflicts, triplicates from split culture, and separate S2 conditions remain explicit. No isolated product, universal chemical superiority or verified molecular causal pathway is claimed.
+
+### Exact contexts, actual history and required checks
+
+provenance: supported. Targets: cmmmech:allanite-concentrate.
+
+All five explicit native inputs are unchanged. The CREATE sidecar and inline event are consistent; 14 acquired Schmitz source hashes match, and the named-record and completed cohort logs have been verified.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| main | https://doi.org/10.1038/s42003-025-08109-5; Complete original eight-page article; Figures 1–3; Results pp. 2–4, Discussion pp. 4–5, Methods pp. 5–6 and acknowledgements/interests p. 7. | supports | The feed is source-designated REE-concentrated crushed allanite ore, Zappall, supplied by WRE. Engineering comparisons and acidic culture leaching are supported. Acid composition and phosphate signaling remain unresolved. Culture transfer precedes ore addition without a documented cell-removal step; final filtration prepares ICP-MS samples. |
+| si | https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs42003-025-08109-5/MediaObjects/42003_2025_8109_MOESM2_ESM.pdf; All six original scientific-supplement pages; Figures S1–S4, including each image panel and caption. | supports | Growth curves belong to a separate plate assay. Figure S2 uses 0.1 g in 1 mL, 1500 rpm and 24 h, and shows greater extraction with nitric acid. Figures S3–S4 are sausage demonstrations, not validated toxicology or lifecycle evidence. The S3 caption repeats nitric acid while image labels distinguish treatments; the record does not rely on that slip. |
+| workbooks | /private/tmp/cmm-round52-allanite-independent/workbooks-independent.json; Independent ZIP/XML parsing of all six original XLSX workbooks; S1 AllData rows 23–25; S2 Figures 2A/2B cell S22 and 2C; S3 Figure3 row 21, T33, T42 and calculation tabs; S6 raw/compressed panels A and B. | supports | S2 cell S22=(R22-R4)/R4 gives 0.5313955. S3 cell T33 similarly uses the wild-type mean and gives 0.73054. These are relative improvements, not absolute extraction fractions. S1 no-bacteria pH values 6.21–6.24 and low REE concentrations are not matched-pH controls. S3 sums 14 elements, omits Er and Sc, and uses mineral-sand row 21; other calculation-tab and volume mappings remain unresolved. S6 has four rows per treatment and its panel B omits the deletion label. These limits are retained. |
+| taxonomy | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=442&amp;mode=Info; Fresh issuing-database lookup: current name, Taxonomy ID 442 and species rank. | supports | NCBITaxon:442 identifies Gluconobacter oxydans at species rank. No authenticated B58 or engineered-stock identity is inferred. |
+| context | research/sources/round52-allanite/20261012T091702Z-provenance.json; Complete paired frozen author assessment and provenance; hashes of 14 Schmitz acquisition artifacts independently verified. | supports | The acquisition identity and source access are accurately recorded. Lu 2026 remains a separate acquired handoff and supplies no accepted observation. The reviewer judges the primary evidence independently, rather than treating the author dossier as approval. |
+| history | history/records/allanite-concentrate/2026-10-12T091702Z-codex-5d49fc.yaml; Complete CREATE sidecar, separate inline event and history reference. | supports | The actual codex / GPT-6 / codex actor, target, UTC session and new-record scope agree. No earlier authorship or scientific-review event is invented. |
+| search | /private/tmp/cmm-round52-allanite-independent/assessment-receipt.json; Live DOI/name notice and counterevidence queries; NCBI and Crossmark lookups; independent current-owner search and inspection of the wider curator receipt. | supports | Crossmark reports that the document is current. Returned search sets contained no affecting notice. The companion 2025 genome-screen study is distinct, while the 2023 preprint overlaps this study. The current-owner search found this record, history and dossier within its declared boundary. Inspection of the wider curator deduplication receipt is not represented as an independent rerun. |
+| gates | /private/tmp/cmm-round52-final-terminal.json; Actual parent final receipt and all four completed command logs independently read and hash-verified; exact native input hashes rechecked. | supports | The batch, named-record, nonempty-corpus, history and render checks passed on unchanged frozen inputs. These checks supplement the scientific assessment. |
+
+## Limits And Additional Notes
+
+- The generic feed designation does not establish mineral-species identity, purity, grade, precise mine origin or a particle-size distribution.
+- The mechanism remains broad culture association and genotype comparison. Acid composition, phosphate signaling and oxygen explanations remain hypotheses.
+- No-bacteria controls are not pH matched. Triplicates from split culture do not establish independent biological culture replication.
+- Methods 24 h versus figure 36 h pH labels, 500 mL after a 1 mL withdrawal, the S3 element-set/arm mapping and the S6 genotype label remain unresolved source limitations.
+- Nitric acid outperforms the biolixiviant in the separate S2 assay. Sausage images do not validate toxicology or lifecycle performance.
+- No product isolation, closed process mass balance, industrial deployment or criticality designation is claimed.
+- Searches are bounded. The wider curator deduplication receipt was inspected, not wholly rerun; unextracted binaries and unavailable historical roots remain limitations.
+- Original raw evidence remains outside Git; only the native immutable paired review is saved.
+- This review creates no curation-history event and performs no Git or GitHub mutation.
+- An unsaved draft was rejected for a short owner repository name. The draft remains outside Git; canonical owner metadata was corrected and all five unchanged source inputs recaptured before this save.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261012T092909Z-allanite-concentrate-round52-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of allanite concentrate
+started_at: '2026-10-12T09:20:17Z'
+finished_at: '2026-10-12T09:29:09Z'
+reviewer:
+  identity: Codex /root/round27_superalloy
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The reviewer authored yusupovite and the Hf/Zr source dossier
+    in this cohort. The parent authored allanite concentrate, its history and source
+    dossier. This reviewer captured explicit native inputs before judging the record,
+    independently inspected primary evidence, and made no target edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The frozen record supports a qualified laboratory comparison of culture-associated
+  REE leaching from the stated concentrate. No corrective finding was identified.
+  Molecular causality, feed characterization, denominator, control, source-label and
+  scale limitations remain explicit.
+source:
+  git_revision: 79ed7d69ea654d1b67bbf74bb931ff70c4c6913e
+  state: working_tree
+  inputs:
+  - path: data/records/allanite-concentrate.yaml
+    sha256: 5514111eec619a045f011710e184dc30c1b5cc8f1981b086b56cc177fcda4687
+    role: target
+  - path: history/records/allanite-concentrate/2026-10-12T091702Z-codex-5d49fc.yaml
+    sha256: 26ff4706b5ca05daf4168238884f8e7d2acad4743b80e0ed89eafed67a545203
+    role: context
+  - path: research/sources/round52-allanite/20261012T091702Z-assessment.md
+    sha256: f4a32f6ae1f1690a9ae17da0107e301d1582c3cc68e9e052798aa13003b90ac0
+    role: context
+  - path: research/sources/round52-allanite/20261012T091702Z-provenance.json
+    sha256: b4af55d7ff78910ad2953f2e5133c39c350fc14ed2e109aca290f2dddf5ca3ae
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:allanite-concentrate
+  path: data/records/allanite-concentrate.yaml
+  label: Allanite concentrate
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/allanite-concentrate.yaml
+    role: maintained scientific record
+scope:
+  description: All maintained record fields, CREATE and inline history, paired source
+    dossiers and schema; independent assessment of the complete 2025 main article,
+    scientific supplement and claim-relevant workbook data.
+  selection: Assigned independent review of the exact target; no scientific approval
+    of the reviewer’s own record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:allanite-concentrate
+  exclusions:
+  - target: Lu 2026, the companion 2025 genome-screen paper and earlier studies as
+      new experiments
+    reason: These are not admitted mechanisms. Only bounded context or overlap checks
+      were made.
+  - target: Primer-by-primer S4 verification, full S5 growth-trace reanalysis and
+      experimental reproduction
+    reason: All six workbooks were parsed, but detailed validation of biological results
+      not claimed in the record was not performed.
+checks:
+- check_id: named
+  name: Independent named record validation
+  command: uv run --locked cmmmech validate data/records/allanite-concentrate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:allanite-concentrate
+  summary: 'Reviewer executed this check in the round52 worktree. Tool session 6701
+    completed with exit 0: Checked 1 record(s); 0 failed. Execution receipt: /private/tmp/cmm-round52-allanite-independent/assessment-receipt.json.'
+- check_id: batch
+  name: Parent-executed completed batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:allanite-concentrate
+  summary: 'Reviewer independently read terminal log /private/tmp/cmm-round52-final-batch.log,
+    SHA256 98c9a3c5b08e68cefe8dc71e984bff78ca3b8320a49f048a43ca0402489f5685; all bytes
+    match actual receipt. uv run --locked --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 22%]
+
+    ........................................................................ [ 45%]
+
+    ........................................................................ [ 67%]
+
+    .............................................................sss........ [ 90%]
+
+    ................................                                         [100%]
+
+    317 passed, 3 skipped in 179.41s (0:02:59)
+
+    Checked 253 record(s); 0 failed.
+
+    Checked 299 history record(s); 0 error(s).
+
+    '
+- check_id: nonempty
+  name: Parent-executed completed nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:allanite-concentrate
+  summary: 'Reviewer independently read terminal log /private/tmp/cmm-round52-final-nonempty.log,
+    SHA256 4a50f2f93e44bfb9e2561b166775c22abe8b3fb410bdcd90d2c75a2ff66d406a; all bytes
+    match actual receipt. Checked 253 record(s); 0 failed.
+
+    '
+- check_id: history
+  name: Parent-executed completed history
+  command: uv run --locked cmmmech validate-history --base 79ed7d69ea654d1b67bbf74bb931ff70c4c6913e
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:allanite-concentrate
+  summary: 'Reviewer independently read terminal log /private/tmp/cmm-round52-final-history.log,
+    SHA256 6fab9a1f2f422f605fd0b242200596b27558aa866fa8b2dffabac4718cbce617; all bytes
+    match actual receipt. Checked 299 history record(s); 0 error(s).
+
+    '
+- check_id: render-check
+  name: Parent-executed completed render-check
+  command: just render-check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:allanite-concentrate
+  summary: 'Reviewer independently read terminal log /private/tmp/cmm-round52-final-render-check.log,
+    SHA256 be156b3acc20d39b6bad41632b10eb7ccfc2c8a7fdeaec3f6236fbc67831aea6; all bytes
+    match actual receipt. uv run python scripts/render_pages.py --check
+
+    pages/ is current
+
+    '
+evidence:
+- evidence_id: main
+  kind: primary_source
+  reference: https://doi.org/10.1038/s42003-025-08109-5
+  locator: Complete original eight-page article; Figures 1–3; Results pp. 2–4, Discussion
+    pp. 4–5, Methods pp. 5–6 and acknowledgements/interests p. 7.
+  accessed_at: '2026-10-12T09:26:25Z'
+  support: supports
+  summary: The feed is source-designated REE-concentrated crushed allanite ore, Zappall,
+    supplied by WRE. Engineering comparisons and acidic culture leaching are supported.
+    Acid composition and phosphate signaling remain unresolved. Culture transfer precedes
+    ore addition without a documented cell-removal step; final filtration prepares
+    ICP-MS samples.
+  snapshot_sha256: f91ba78d4bcd12433c2ba54a15ceb57a8cd5319565296a6465e0e9417463c9d3
+- evidence_id: si
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs42003-025-08109-5/MediaObjects/42003_2025_8109_MOESM2_ESM.pdf
+  locator: All six original scientific-supplement pages; Figures S1–S4, including
+    each image panel and caption.
+  accessed_at: '2026-10-12T09:26:25Z'
+  support: supports
+  summary: Growth curves belong to a separate plate assay. Figure S2 uses 0.1 g in
+    1 mL, 1500 rpm and 24 h, and shows greater extraction with nitric acid. Figures
+    S3–S4 are sausage demonstrations, not validated toxicology or lifecycle evidence.
+    The S3 caption repeats nitric acid while image labels distinguish treatments;
+    the record does not rely on that slip.
+  snapshot_sha256: 06884908703743c59c8071c0cb03b25037ddf21a72e2f16d1b398241c897aada
+- evidence_id: workbooks
+  kind: primary_source
+  reference: /private/tmp/cmm-round52-allanite-independent/workbooks-independent.json
+  locator: Independent ZIP/XML parsing of all six original XLSX workbooks; S1 AllData
+    rows 23–25; S2 Figures 2A/2B cell S22 and 2C; S3 Figure3 row 21, T33, T42 and
+    calculation tabs; S6 raw/compressed panels A and B.
+  accessed_at: '2026-10-12T09:26:25Z'
+  support: supports
+  summary: S2 cell S22=(R22-R4)/R4 gives 0.5313955. S3 cell T33 similarly uses the
+    wild-type mean and gives 0.73054. These are relative improvements, not absolute
+    extraction fractions. S1 no-bacteria pH values 6.21–6.24 and low REE concentrations
+    are not matched-pH controls. S3 sums 14 elements, omits Er and Sc, and uses mineral-sand
+    row 21; other calculation-tab and volume mappings remain unresolved. S6 has four
+    rows per treatment and its panel B omits the deletion label. These limits are
+    retained.
+  snapshot_sha256: 5cf8bed1bf63ec06b5eab5bf029912cf089507cdf3be5ab9be70e082bd1a7119
+- evidence_id: taxonomy
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=442&mode=Info
+  locator: 'Fresh issuing-database lookup: current name, Taxonomy ID 442 and species
+    rank.'
+  accessed_at: '2026-10-12T09:26:25Z'
+  support: supports
+  summary: NCBITaxon:442 identifies Gluconobacter oxydans at species rank. No authenticated
+    B58 or engineered-stock identity is inferred.
+- evidence_id: context
+  kind: record_content
+  reference: research/sources/round52-allanite/20261012T091702Z-provenance.json
+  locator: Complete paired frozen author assessment and provenance; hashes of 14 Schmitz
+    acquisition artifacts independently verified.
+  accessed_at: '2026-10-12T09:26:25Z'
+  support: supports
+  summary: The acquisition identity and source access are accurately recorded. Lu
+    2026 remains a separate acquired handoff and supplies no accepted observation.
+    The reviewer judges the primary evidence independently, rather than treating the
+    author dossier as approval.
+  snapshot_sha256: b4af55d7ff78910ad2953f2e5133c39c350fc14ed2e109aca290f2dddf5ca3ae
+- evidence_id: history
+  kind: record_content
+  reference: history/records/allanite-concentrate/2026-10-12T091702Z-codex-5d49fc.yaml
+  locator: Complete CREATE sidecar, separate inline event and history reference.
+  accessed_at: '2026-10-12T09:26:25Z'
+  support: supports
+  summary: The actual codex / GPT-6 / codex actor, target, UTC session and new-record
+    scope agree. No earlier authorship or scientific-review event is invented.
+  snapshot_sha256: 26ff4706b5ca05daf4168238884f8e7d2acad4743b80e0ed89eafed67a545203
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round52-allanite-independent/assessment-receipt.json
+  locator: Live DOI/name notice and counterevidence queries; NCBI and Crossmark lookups;
+    independent current-owner search and inspection of the wider curator receipt.
+  accessed_at: '2026-10-12T09:26:25Z'
+  support: supports
+  summary: Crossmark reports that the document is current. Returned search sets contained
+    no affecting notice. The companion 2025 genome-screen study is distinct, while
+    the 2023 preprint overlaps this study. The current-owner search found this record,
+    history and dossier within its declared boundary. Inspection of the wider curator
+    deduplication receipt is not represented as an independent rerun.
+  snapshot_sha256: 9013b00d74729df5d4823a6308b1eba60f7b0e344dd020e6ae05aa151e3d5624
+  search_scope: Independent rg --no-ignore --hidden --follow over current data/records,
+    research, reviews and history; fresh web queries for the exact DOI with correction/retraction
+    and allanite/Gluconobacter bioleaching inhibition or contradiction. The curator’s
+    receipt covering current and original checkouts plus 191 available cited raw roots
+    was inspected separately. Nine missing historical roots, unextracted binary content
+    and unrelated machine paths remain outside coverage. No exhaustive absence claim
+    is made.
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round52-final-terminal.json
+  locator: Actual parent final receipt and all four completed command logs independently
+    read and hash-verified; exact native input hashes rechecked.
+  accessed_at: '2026-10-12T09:26:25Z'
+  support: supports
+  summary: The batch, named-record, nonempty-corpus, history and render checks passed
+    on unchanged frozen inputs. These checks supplement the scientific assessment.
+  snapshot_sha256: 5b99f9d171be5aa6cf30e680ccb15098c90864664c7a773aa6e57fa27ce0ab40
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Primary-resource boundary and organism identity
+  outcome: supported
+  target_ids:
+  - cmmmech:allanite-concentrate
+  evidence_ids:
+  - main
+  - taxonomy
+  - search
+  summary: The concentrated geological feed is correctly represented as a primary
+    resource. Generic allanite naming is not promoted to a mineral species, grade,
+    purity or mine identity. Species-level taxon 442 is correct and strain limitations
+    are explicit.
+  dimensions:
+  - name: material_form
+    value: REE-concentrated crushed allanite ore/mineral sand, Zappall/WRE
+    definition: Source-described geological feed; no asserted ideal species or secondary-waste
+      identity
+    evidence_ids:
+    - main
+  - name: criticality
+    value: No designation asserted
+    definition: No element-to-feed inheritance of jurisdiction, list or edition
+    evidence_ids:
+    - main
+  - name: organism
+    value: Gluconobacter oxydans B58 and source-described engineered derivatives;
+      species NCBITaxon:442
+    definition: Species identity does not authenticate experimental stocks
+    evidence_ids:
+    - taxonomy
+    - main
+- assessment_id: science
+  area: evidence
+  topic: Cultures, controls, denominators and measured outcome
+  outcome: supported
+  target_ids:
+  - cmmmech:allanite-concentrate
+  evidence_ids:
+  - main
+  - si
+  - workbooks
+  summary: The bounded genotype-associated mobilization claim matches the main article,
+    supplement and workbooks. Relative improvements, lower absolute extraction, nonzero
+    and unmatched controls, timing and unit conflicts, triplicates from split culture,
+    and separate S2 conditions remain explicit. No isolated product, universal chemical
+    superiority or verified molecular causal pathway is claimed.
+  dimensions:
+  - name: biomass_state
+    value: Culture-generated lixiviant; no pre-ore cell-removal step documented
+    definition: Post-leaching filtration does not establish a cell-free lixiviant
+    evidence_ids:
+    - main
+  - name: conditions
+    value: Reported 20% glucose, production at 30 °C; Methods 24 h versus figure pH
+      labels at 36 h; usual 0.5 g/5 mL, 24 h, room temperature and 200 rpm
+    definition: The 1% and S2 vortexer arms remain separate
+    evidence_ids:
+    - main
+    - si
+  - name: controls
+    value: Wild type, other mutants, no-bacteria/medium arms and a separate nitric-acid
+      comparison
+    definition: No matched-pH or metabolite control; culture association does not
+      isolate a particular acid or cell-contact cause
+    evidence_ids:
+    - main
+    - workbooks
+    - si
+  - name: outcome_scale
+    value: Laboratory ICP-MS leachates and genotype-associated relative improvement
+    definition: No isolated REE recovery, pure-phase conversion fraction, closed mass
+      balance or industrial deployment
+    evidence_ids:
+    - main
+    - workbooks
+- assessment_id: provenance
+  area: provenance
+  topic: Exact contexts, actual history and required checks
+  outcome: supported
+  target_ids:
+  - cmmmech:allanite-concentrate
+  evidence_ids:
+  - context
+  - history
+  - gates
+  summary: All five explicit native inputs are unchanged. The CREATE sidecar and inline
+    event are consistent; 14 acquired Schmitz source hashes match, and the named-record
+    and completed cohort logs have been verified.
+findings: []
+actions: []
+limitations:
+- The generic feed designation does not establish mineral-species identity, purity,
+  grade, precise mine origin or a particle-size distribution.
+- The mechanism remains broad culture association and genotype comparison. Acid composition,
+  phosphate signaling and oxygen explanations remain hypotheses.
+- No-bacteria controls are not pH matched. Triplicates from split culture do not establish
+  independent biological culture replication.
+- Methods 24 h versus figure 36 h pH labels, 500 mL after a 1 mL withdrawal, the S3
+  element-set/arm mapping and the S6 genotype label remain unresolved source limitations.
+- Nitric acid outperforms the biolixiviant in the separate S2 assay. Sausage images
+  do not validate toxicology or lifecycle performance.
+- No product isolation, closed process mass balance, industrial deployment or criticality
+  designation is claimed.
+- Searches are bounded. The wider curator deduplication receipt was inspected, not
+  wholly rerun; unextracted binaries and unavailable historical roots remain limitations.
+notes:
+- Original raw evidence remains outside Git; only the native immutable paired review
+  is saved.
+- This review creates no curation-history event and performs no Git or GitHub mutation.
+- An unsaved draft was rejected for a short owner repository name. The draft remains
+  outside Git; canonical owner metadata was corrected and all five unchanged source
+  inputs recaptured before this save.
+tags:
+- round52
+- allanite-concentrate
+- independent
+- scientific
+```
