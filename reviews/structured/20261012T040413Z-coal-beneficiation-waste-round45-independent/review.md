@@ -1,0 +1,546 @@
+# Independent coal-beneficiation-waste2018 experimental extension review
+
+- Review: 20261012T040413Z-coal-beneficiation-waste-round45-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-12T03:58:50.483273Z
+- Finished UTC: 2026-10-12T04:04:13.447209Z
+- Reviewer: Codex /root/round27_superalloy (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The qualified2018 strain/control and experimental-cascade additions are supported by complete original evidence. Apparent companion-figure overlap, unmatched controls, recipe and missing-feed inconsistencies, solution-concentration denominators and deployment limits are preserved. No corrective finding identified. Previous claims/history are unchanged; all required actual checks passed.
+
+## Scope And Provenance
+
+All new2018 claims, identity integration and actualEDIT; preservation and named earlier independent reviews for unchanged2012/2016/2017 evidence.
+
+Selection: Parent-assigned independent review of frozen changed record.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 2b975ae5327b94ac3c1e6583378408add2b8d1f2.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:coal-beneficiation-waste | data/records/coal-beneficiation-waste.yaml | maintained | Coal beneficiation waste |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent affected-record validation | passed | True | cmmmech:coal-beneficiation-waste | Actual reviewer session57491 terminal0; Checked1record,0failed. Log /private/tmp/cmm-round45-coal-independent/named-validation.log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e |
+| Completed parent-coordinated batch check | passed | True | cmmmech:coal-beneficiation-waste | Actual completed command; complete log independently read and raw-byte checksum verified. /private/tmp/cmm-round45-final-batch.log SHA256 62bea3343bc2121ed3ead74f8e46464aae94c17589352ed4f447dfd52df84d63; terminal receipt /private/tmp/cmm-round45-final-terminal.json SHA256 fa6fd6f5ff0dfd527c16631332529b3cc788ebd3a9922963f902992385ab50f4 |
+| Completed parent-coordinated nonempty check | passed | True | cmmmech:coal-beneficiation-waste | Actual completed command; complete log independently read and raw-byte checksum verified. /private/tmp/cmm-round45-final-nonempty.log SHA256 422762d06cd992924323952fee0ca1e7d56c09a13fca4fc98a425f8f8f911adc; terminal receipt /private/tmp/cmm-round45-final-terminal.json SHA256 fa6fd6f5ff0dfd527c16631332529b3cc788ebd3a9922963f902992385ab50f4 |
+| Completed parent-coordinated history check | passed | True | cmmmech:coal-beneficiation-waste | Actual completed command; complete log independently read and raw-byte checksum verified. /private/tmp/cmm-round45-final-history.log SHA256 3a8b8d5eb09b5e09abfcb139d5e1bff503712d5fdf538c12e52a42557a7cd58e; terminal receipt /private/tmp/cmm-round45-final-terminal.json SHA256 fa6fd6f5ff0dfd527c16631332529b3cc788ebd3a9922963f902992385ab50f4 |
+
+## Scientific And Domain Assessments
+
+### Secondary coal-beneficiation resource and experiment boundaries
+
+identity: supported. Targets: cmmmech:coal-beneficiation-waste.
+
+The existing heterogeneous waste owner remains appropriate.
+
+Methods identify gravity/flotation Lviv-Volyn coal dumps, sampledJune2014 from surface50±5cm after&gt;5years storage. Ge30.0±0.1 andGa22.4±0.1g/t describe that feed, not universal properties. Record distinguishes rawcoal, combustionash, individualGe minerals and elementalGe; no inheritedcriticality. Same family/locality does not prove identical or independent study batches.
+
+### Named-isolate seven-day comparison and sterile comparator
+
+evidence: supported. Targets: cmmmech:coal-beneficiation-waste.
+
+Qualified culture-associated leaching is supported; causal pathway and universal rankings remain unproved.
+
+PrimaryFigure2p30 approximates40–85%Ge versus1–5%K*, withp31ferrous attribution but reagent-unnamedcaption. Figure1five-day iron comparisons lackK*bars; Figure3four-day imposed0.65V uses unspecifiedreferenceelectrode. Salt doses differ and no matchedpH/ferric/sterilization-alteration controls, inoculum dose or biologicalreplicatecount are supplied. Three analytical measurements are not three biological replicates; endpoint durations cannot be pooled.
+
+### Species mapping and apparent companion-source overlap
+
+identity: supported. Targets: cmmmech:coal-beneficiation-waste.
+
+The taxon identifiers and local-isolate limitations are accurate.
+
+NCBI920 and ATCC23270 labels verified independently. NamedLv strains have no maintained strain/genomeCURIE. Catalogue bituminous origin differs from paperbrowncoal. CompanionFigure7B/technologicalFigure2 show matchingbarpattern, not newreplication; adaptation72h versus4daymethods and30±0.5C detail remain separate. CompanionTable1Lvblack37reddump origin conflicts with laternativeblackdump wording.
+
+### Experimental three-vessel cascade and exact solution concentration units
+
+evidence: supported. Targets: cmmmech:coal-beneficiation-waste.
+
+The enlarged experimental observation is supported with denominator and scale limits.
+
+Originalpp33–34Figure4 has three8dm×12dm vessels,20kg5–7mm feedeach, first194Lmedium+6Lpreparation,7days/stage30±2C. Latermakeup/inoculationorder and cycle2 untreatedfeedfraction are unspecified. Table2exactGe values0.78/1.81/3.05 and0.54/0.98/1.36mg/L with stated uncertainties match; Alusesg/L. Transferredliquor/freshbeds/makeup prevent summingstageconcentrations or derivingwhole-feedyield. Unusual223.6±3.79times10^8CFU/cm3 is explicitly source-reported, not independently validated.
+
+### Contradictions, causal inference and deployment
+
+evidence: supported. Targets: cmmmech:coal-beneficiation-waste.
+
+The record preserves relevant uncertainty without converting source overclaims into facts.
+
+CompleteprimarycontainsTables1–2only but refersapparatusfeedtoTable6. FinalpH1.7–2.4 differsfromgeneral≤2. Recipefixedadditives conflict withrecommendation; repeated93.5%doesnotresolve prior2017experiment5/10conflict. Medium-onlycascade/inoculumbenefit lacksnumericpairedcontrols; photosFigure5donotmeasurephaseconversion,safetyorresidualmetal. NoisolatedGeconcentrate, downstreamrecovery, biologicalcausalmechanism orcommercialplant is established.
+
+### Preserved earlier evidence and explicit review reuse
+
+provenance: supported. Targets: cmmmech:coal-beneficiation-waste.
+
+Earlier evidence and correction provenance are intact.
+
+Independent comparison proves allolderlistprefixes/scalars exceptdescription andall3historybytes matchbase. Priorround44reviewcovers2017; round43resolvedreviewcovers2012/2016. Their literature was not fully rereadthisround. New2018context involving2017contradictions agreeswiththepreserved earlier assessment. No2018datawerepooledwitholderstudies.
+
+### Native exact-byte review and required completed checks
+
+provenance: supported. Targets: cmmmech:coal-beneficiation-waste.
+
+Actual required checks passed for unchanged reviewed bytes.
+
+Initial valid nativeinspection precedes assessment; finalinspection addspriorreviews anddossiercontext withoutrecordchanges. Independent namedvalidation andparentactualfullgatesread/hashed. Raw sourcesremainoutsideGit. Reviewer didnotauthorcoalrecord/history/dossier and made no maintainedcontentedit.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| target | data/records/coal-beneficiation-waste.yaml; All exact frozen fields and diff against trusted base | supports | Two qualified2018 experimental scopes and four sources appended; older scientific values preserved except intentional description expansion. |
+| primary2018 | https://kims-imio.com/index.php/main/article/download/179/188/405; Complete original ten pages28–37; all five figures and both tables personally visually inspected | supports | Original feed, culture controls, protocols, stage concentrations, measurement methods and internal inconsistencies were checked directly. No abstract-derived measurements accepted. |
+| companion | https://doi.org/10.30970/sbi.1203.570; Complete fourteen original pages3–16; all seven figures and both tables personally inspected; maintained context Methodspp4–6,Table1,adaptationpp11–13,Figure7B | supports | The red-feed Figure7B bars match the technological Figure2 pattern, supporting apparent overlap rather than independent replication. Companion methods and local-isolate provenance discrepancies are not silently transferred. |
+| taxonomy | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&amp;mode=Info; Official current species node and retained taxonomy JSON | supports | NCBITaxon920 maps Acidithiobacillus ferrooxidans at species rank, not authenticated local isolates, the native consortium or a strain-specific causal effect. |
+| atcc | https://www.atcc.org/products/23270; Current indexed official page and retained full official capture | supports | ATCC23270 is the type strain NCIB8455/DSM14882 with acid bituminous-coal mine effluent origin. Paper brown-coal wording conflicts. Direct fresh web open failed; official indexed result and retained full authority content were inspected. No stock authentication inferred. |
+| previous44 | reviews/structured/20261012T032709Z-coal-beneficiation-waste-round44-independent/review.yaml; Earlier independent2017 scientific review and exact preserved target hash | supports | Reviewer /root/round43_hardmetal inspected all2017 originals. Its target hash8b501cd41eee90e356096b7680166240e30bc9f918de6c450e156c37be5743b4 equals this round trusted-base record. Prior2017 claims and contradictions are preserved; no claim of freshly re-viewing those graphics. |
+| previous43 | reviews/structured/20261012T025133Z-coal-beneficiation-waste-round43-resolution/review.yaml; Earlier independent2012/2016 successor and immutable issue143 resolutions | supports | Earlier independent source-fidelity corrections remain in the exact preserved prefixes/history; this round does not reopen or silently replace those dispositions. |
+| preservation | /private/tmp/cmm-round45-coal-independent/verification.json; Independent YAML-prefix/scalar and prior-history byte comparisons plus56artifact SHA256 checks | supports | All old scientific list values, other scalar fields and three prior history sidecars match the trusted base; description change assessed separately. All56source artifact hashes verified. |
+| history | history/records/coal-beneficiation-waste/2026-10-12T035448Z-codex-16922a.yaml; Actual appended canonical EDIT and separate03:56:15UTC inline event | supports | Actor codex/GPT-6/codex, maintained target, actual session timestamp and scoped2018 evidence addition match. Earlier histories remain immutable. |
+| dedup | /private/tmp/cmm-round45-coal-independent/verification.json; Independently rerun rg --no-ignore --hidden --follow searches | supports | Both searches completed0 with64corpus and8referenced-raw matching files; owner and earlier leads found. No second material owner or independently replicated experiment inferred. |
+| notices | /private/tmp/cmm-round45-coal-independent/web-search.json; Fresh exact-DOI correction/retraction queries and official taxon/strain authority checks | supports | No affecting correction or retraction appeared in returned first result sets. Existing references and later strain studies do not resolve original controls or establish independent replication. All retained official main-landing anchors independently parsed, without a separately named supplement link. |
+| gates | /private/tmp/cmm-round45-final-terminal.json; Completed actual cohort commands and raw-log checksums | supports | All required batch, explicit nonempty and trusted-base history checks terminal0; structural checks do not prove scientific truth. |
+
+## Limits And Additional Notes
+
+- Percentage calculation, complete feed/solution/residue inventory and matched post-incubation physicochemical controls are absent; reportedleaching is not productyield.
+- Missing apparatusfeedTable6, volume bookkeeping, sourceCFUprotocol and fullcyclecontrol data prevent a quantifiedbiological cascadebenefit or reproducibleclosedbalance.
+- Apparent2018figureoverlap and repeated2017recipe leave measurementreuse/sampleindependence unresolved; localstrainauthentication is incomplete.
+- No isolatedGeproduct, post-treatmenttoxicity/residualinventory or commercialdeployment shown.
+- Older unchangedliterature usesexplicitpriorindependentreviews, not a newall-sourcegraphicreview.
+- Searches includehidden/ignored/followed textinboundedcorpora/referencedraws; nine unavailablehistoricalroots and unextractedbinarycontents preclude globalabsenceclaims.
+- An initial inspect command referenced a mistyped nonexistent history path and failed before assessment; successful inspection-v2 captures the actual inputs, with failed outsideGitreceipt retained. Final inspection only adds contextinputs; frozen target unchanged.
+- Theenlargedexperimentalapparatus and sourcequotednumbers are accepted as reportedobservations with limits, not independently reproduced measurements.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261012T040413Z-coal-beneficiation-waste-round45-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent coal-beneficiation-waste2018 experimental extension review
+started_at: '2026-10-12T03:58:50.483273Z'
+finished_at: '2026-10-12T04:04:13.447209Z'
+reviewer:
+  identity: Codex /root/round27_superalloy
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Peer /root/round27_packaging authored this record extension,
+    history and dossier. Reviewer authored separate Theisen-sludge identity record
+    in this cohort, not the coal bytes. Native inspect preceded assessment. Shared
+    acquisition disclosed; independently read full ten-page technological and fourteen-page
+    companion originals, personally inspected all original figures/tables, checked
+    authority evidence, source notices, preserved prior fields/history and actual
+    gates. No maintained edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The qualified2018 strain/control and experimental-cascade additions are supported
+  by complete original evidence. Apparent companion-figure overlap, unmatched controls,
+  recipe and missing-feed inconsistencies, solution-concentration denominators and
+  deployment limits are preserved. No corrective finding identified. Previous claims/history
+  are unchanged; all required actual checks passed.
+source:
+  git_revision: 2b975ae5327b94ac3c1e6583378408add2b8d1f2
+  state: working_tree
+  inputs:
+  - path: data/records/coal-beneficiation-waste.yaml
+    sha256: 62a71592ae8b49f146f154435b6715a939de4127fd2cf141414e6b2496588516
+    role: target
+  - path: history/records/coal-beneficiation-waste/2026-10-12T035448Z-codex-16922a.yaml
+    sha256: 2c0e1e769fb86e46bee88868d3d6b8cee589869a1bc6f39666edca3f37fb3109
+    role: context
+  - path: research/sources/round45-coal-technology/20261012T035805Z-source-investigation.json
+    sha256: d85a3f9becee790f4bfe6a4c5b43fe7e572fdb709dd514ca15c7d807c3059644
+    role: context
+  - path: research/sources/round45-coal-technology/20261012T035805Z-source-investigation.md
+    sha256: 809058484344f544286dcc482a96c854d2895b1e4ee031de70ad57109f132ff7
+    role: context
+  - path: reviews/structured/20261012T025133Z-coal-beneficiation-waste-round43-resolution/review.yaml
+    sha256: dcc454754f219b3d0f1a4ba96f582962907fb087d5f3d478814156cbbc4039fc
+    role: context
+  - path: reviews/structured/20261012T032709Z-coal-beneficiation-waste-round44-independent/review.yaml
+    sha256: be2d665216969f359c395eab639c1635fe12aca4ca79945bd20d4ea7a64e97bd
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:coal-beneficiation-waste
+  path: data/records/coal-beneficiation-waste.yaml
+  label: Coal beneficiation waste
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/coal-beneficiation-waste.yaml
+    role: maintained_record
+scope:
+  description: All new2018 claims, identity integration and actualEDIT; preservation
+    and named earlier independent reviews for unchanged2012/2016/2017 evidence.
+  selection: Parent-assigned independent review of frozen changed record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:coal-beneficiation-waste
+  exclusions:
+  - target: Fresh complete graphical reassessment of unchanged2012/2016/2017literature
+    reason: Prior scientificfieldvalues andhistorybytes are independently proven unchanged;
+      explicit earlier independentreviews supply scientificcontext, no fresh fulloldliteraturereview
+      claimed.
+  - target: Additional companion growth/microscopy arms andlatergenomicstudies as
+      newmechanisms
+    reason: Companionoriginalpages inspected for provenance/overlap, but these extraassays
+      are not accepted maintainedclaims; no newowner or replicatedoutcome imported.
+checks:
+- check_id: named
+  name: Independent affected-record validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 PYTHONDONTWRITEBYTECODE=1
+    uv run --locked cmmmech validate data/records/coal-beneficiation-waste.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual reviewer session57491 terminal0; Checked1record,0failed. Log /private/tmp/cmm-round45-coal-independent/named-validation.log
+    SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+  target_ids:
+  - cmmmech:coal-beneficiation-waste
+- check_id: batch
+  name: Completed parent-coordinated batch check
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed command; complete log independently read and raw-byte
+    checksum verified. /private/tmp/cmm-round45-final-batch.log SHA256 62bea3343bc2121ed3ead74f8e46464aae94c17589352ed4f447dfd52df84d63;
+    terminal receipt /private/tmp/cmm-round45-final-terminal.json SHA256 fa6fd6f5ff0dfd527c16631332529b3cc788ebd3a9922963f902992385ab50f4
+  target_ids:
+  - cmmmech:coal-beneficiation-waste
+- check_id: nonempty
+  name: Completed parent-coordinated nonempty check
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed command; complete log independently read and raw-byte
+    checksum verified. /private/tmp/cmm-round45-final-nonempty.log SHA256 422762d06cd992924323952fee0ca1e7d56c09a13fca4fc98a425f8f8f911adc;
+    terminal receipt /private/tmp/cmm-round45-final-terminal.json SHA256 fa6fd6f5ff0dfd527c16631332529b3cc788ebd3a9922963f902992385ab50f4
+  target_ids:
+  - cmmmech:coal-beneficiation-waste
+- check_id: history
+  name: Completed parent-coordinated history check
+  command: uv run --locked cmmmech validate-history --base 2b975ae5327b94ac3c1e6583378408add2b8d1f2
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed command; complete log independently read and raw-byte
+    checksum verified. /private/tmp/cmm-round45-final-history.log SHA256 3a8b8d5eb09b5e09abfcb139d5e1bff503712d5fdf538c12e52a42557a7cd58e;
+    terminal receipt /private/tmp/cmm-round45-final-terminal.json SHA256 fa6fd6f5ff0dfd527c16631332529b3cc788ebd3a9922963f902992385ab50f4
+  target_ids:
+  - cmmmech:coal-beneficiation-waste
+evidence:
+- evidence_id: target
+  kind: record_content
+  reference: data/records/coal-beneficiation-waste.yaml
+  locator: All exact frozen fields and diff against trusted base
+  accessed_at: '2026-10-12T04:04:13.447209Z'
+  support: supports
+  summary: Two qualified2018 experimental scopes and four sources appended; older
+    scientific values preserved except intentional description expansion.
+  snapshot_sha256: 62a71592ae8b49f146f154435b6715a939de4127fd2cf141414e6b2496588516
+- evidence_id: primary2018
+  kind: primary_source
+  reference: https://kims-imio.com/index.php/main/article/download/179/188/405
+  locator: Complete original ten pages28–37; all five figures and both tables personally
+    visually inspected
+  accessed_at: '2026-10-12T04:04:13.447209Z'
+  support: supports
+  summary: Original feed, culture controls, protocols, stage concentrations, measurement
+    methods and internal inconsistencies were checked directly. No abstract-derived
+    measurements accepted.
+  snapshot_sha256: 429f6fd3d3520f50505dfcd8731c7254d101a361f879567f958b6e2957f9dca9
+- evidence_id: companion
+  kind: primary_source
+  reference: https://doi.org/10.30970/sbi.1203.570
+  locator: Complete fourteen original pages3–16; all seven figures and both tables
+    personally inspected; maintained context Methodspp4–6,Table1,adaptationpp11–13,Figure7B
+  accessed_at: '2026-10-12T04:04:13.447209Z'
+  support: supports
+  summary: The red-feed Figure7B bars match the technological Figure2 pattern, supporting
+    apparent overlap rather than independent replication. Companion methods and local-isolate
+    provenance discrepancies are not silently transferred.
+  snapshot_sha256: bff69dee34916dfc035ec0a50c8e35f5a7e065327730deeb5fc2a9aa95bd5b41
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
+  locator: Official current species node and retained taxonomy JSON
+  accessed_at: '2026-10-12T04:04:13.447209Z'
+  support: supports
+  summary: NCBITaxon920 maps Acidithiobacillus ferrooxidans at species rank, not authenticated
+    local isolates, the native consortium or a strain-specific causal effect.
+  snapshot_sha256: a9018b21b07448df4983bdc7fbada96c6331825223cb00220b4f51109279d4bf
+- evidence_id: atcc
+  kind: authority
+  reference: https://www.atcc.org/products/23270
+  locator: Current indexed official page and retained full official capture
+  accessed_at: '2026-10-12T04:04:13.447209Z'
+  support: supports
+  summary: ATCC23270 is the type strain NCIB8455/DSM14882 with acid bituminous-coal
+    mine effluent origin. Paper brown-coal wording conflicts. Direct fresh web open
+    failed; official indexed result and retained full authority content were inspected.
+    No stock authentication inferred.
+  snapshot_sha256: 5d3a106dcc5756c4e7204d8af8f2320c25f271d16af99c34ef6b1ca7e48dac26
+- evidence_id: previous44
+  kind: record_content
+  reference: reviews/structured/20261012T032709Z-coal-beneficiation-waste-round44-independent/review.yaml
+  locator: Earlier independent2017 scientific review and exact preserved target hash
+  accessed_at: '2026-10-12T04:04:13.447209Z'
+  support: supports
+  summary: Reviewer /root/round43_hardmetal inspected all2017 originals. Its target
+    hash8b501cd41eee90e356096b7680166240e30bc9f918de6c450e156c37be5743b4 equals this
+    round trusted-base record. Prior2017 claims and contradictions are preserved;
+    no claim of freshly re-viewing those graphics.
+  snapshot_sha256: be2d665216969f359c395eab639c1635fe12aca4ca79945bd20d4ea7a64e97bd
+- evidence_id: previous43
+  kind: record_content
+  reference: reviews/structured/20261012T025133Z-coal-beneficiation-waste-round43-resolution/review.yaml
+  locator: Earlier independent2012/2016 successor and immutable issue143 resolutions
+  accessed_at: '2026-10-12T04:04:13.447209Z'
+  support: supports
+  summary: Earlier independent source-fidelity corrections remain in the exact preserved
+    prefixes/history; this round does not reopen or silently replace those dispositions.
+  snapshot_sha256: dcc454754f219b3d0f1a4ba96f582962907fb087d5f3d478814156cbbc4039fc
+- evidence_id: preservation
+  kind: record_content
+  reference: /private/tmp/cmm-round45-coal-independent/verification.json
+  locator: Independent YAML-prefix/scalar and prior-history byte comparisons plus56artifact
+    SHA256 checks
+  accessed_at: '2026-10-12T04:04:13.447209Z'
+  support: supports
+  summary: All old scientific list values, other scalar fields and three prior history
+    sidecars match the trusted base; description change assessed separately. All56source
+    artifact hashes verified.
+  snapshot_sha256: dda3b798535acbe74d56d21119e2e2f13b274f9ac2f1f54b694d3992404025c4
+- evidence_id: history
+  kind: record_content
+  reference: history/records/coal-beneficiation-waste/2026-10-12T035448Z-codex-16922a.yaml
+  locator: Actual appended canonical EDIT and separate03:56:15UTC inline event
+  accessed_at: '2026-10-12T04:04:13.447209Z'
+  support: supports
+  summary: Actor codex/GPT-6/codex, maintained target, actual session timestamp and
+    scoped2018 evidence addition match. Earlier histories remain immutable.
+  snapshot_sha256: 2c0e1e769fb86e46bee88868d3d6b8cee589869a1bc6f39666edca3f37fb3109
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round45-coal-independent/verification.json
+  locator: Independently rerun rg --no-ignore --hidden --follow searches
+  accessed_at: '2026-10-12T04:04:13.447209Z'
+  support: supports
+  summary: Both searches completed0 with64corpus and8referenced-raw matching files;
+    owner and earlier leads found. No second material owner or independently replicated
+    experiment inferred.
+  snapshot_sha256: dda3b798535acbe74d56d21119e2e2f13b274f9ac2f1f54b694d3992404025c4
+  search_scope: 'Current and original scientific dirs plus bounded referenced existing
+    raw roots; hidden and ignored included, symlinks followed; text formats only,
+    nine missing roots excluded. Not machine-wide absence. Queries: 6445[.]27|sbi[.]1203[.]570|technological
+    parameters.*coal|coal-beneficiation-waste; text extensions YAML/YML/JSON/MD/TXT/HTML/XML/CSV/TSV.'
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round45-coal-independent/web-search.json
+  locator: Fresh exact-DOI correction/retraction queries and official taxon/strain
+    authority checks
+  accessed_at: '2026-10-12T04:04:13.447209Z'
+  support: supports
+  summary: No affecting correction or retraction appeared in returned first result
+    sets. Existing references and later strain studies do not resolve original controls
+    or establish independent replication. All retained official main-landing anchors
+    independently parsed, without a separately named supplement link.
+  snapshot_sha256: 551df6734d50798f6b59c4b2b5a162c5fdda608f9eccb2588162c95d73f275e4
+  search_scope: Exact2018DOIs with correction/retraction/erratum; first returned web
+    sets, no date filters or exhaustive citation traversal. Supplement inventory bounded
+    to all acquired official article-landing anchors and complete ten-page main; no
+    broad server crawl.
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round45-final-terminal.json
+  locator: Completed actual cohort commands and raw-log checksums
+  accessed_at: '2026-10-12T04:04:13.447209Z'
+  support: supports
+  summary: All required batch, explicit nonempty and trusted-base history checks terminal0;
+    structural checks do not prove scientific truth.
+  snapshot_sha256: fa6fd6f5ff0dfd527c16631332529b3cc788ebd3a9922963f902992385ab50f4
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Secondary coal-beneficiation resource and experiment boundaries
+  outcome: supported
+  target_ids:
+  - cmmmech:coal-beneficiation-waste
+  evidence_ids:
+  - target
+  - primary2018
+  - preservation
+  - dedup
+  summary: The existing heterogeneous waste owner remains appropriate.
+  details: Methods identify gravity/flotation Lviv-Volyn coal dumps, sampledJune2014
+    from surface50±5cm after>5years storage. Ge30.0±0.1 andGa22.4±0.1g/t describe
+    that feed, not universal properties. Record distinguishes rawcoal, combustionash,
+    individualGe minerals and elementalGe; no inheritedcriticality. Same family/locality
+    does not prove identical or independent study batches.
+- assessment_id: cultures
+  area: evidence
+  topic: Named-isolate seven-day comparison and sterile comparator
+  outcome: supported
+  target_ids:
+  - cmmmech:coal-beneficiation-waste
+  evidence_ids:
+  - primary2018
+  - target
+  summary: Qualified culture-associated leaching is supported; causal pathway and
+    universal rankings remain unproved.
+  details: PrimaryFigure2p30 approximates40–85%Ge versus1–5%K*, withp31ferrous attribution
+    but reagent-unnamedcaption. Figure1five-day iron comparisons lackK*bars; Figure3four-day
+    imposed0.65V uses unspecifiedreferenceelectrode. Salt doses differ and no matchedpH/ferric/sterilization-alteration
+    controls, inoculum dose or biologicalreplicatecount are supplied. Three analytical
+    measurements are not three biological replicates; endpoint durations cannot be
+    pooled.
+- assessment_id: taxon
+  area: identity
+  topic: Species mapping and apparent companion-source overlap
+  outcome: supported
+  target_ids:
+  - cmmmech:coal-beneficiation-waste
+  evidence_ids:
+  - companion
+  - primary2018
+  - taxonomy
+  - atcc
+  - target
+  summary: The taxon identifiers and local-isolate limitations are accurate.
+  details: NCBI920 and ATCC23270 labels verified independently. NamedLv strains have
+    no maintained strain/genomeCURIE. Catalogue bituminous origin differs from paperbrowncoal.
+    CompanionFigure7B/technologicalFigure2 show matchingbarpattern, not newreplication;
+    adaptation72h versus4daymethods and30±0.5C detail remain separate. CompanionTable1Lvblack37reddump
+    origin conflicts with laternativeblackdump wording.
+- assessment_id: cascade
+  area: evidence
+  topic: Experimental three-vessel cascade and exact solution concentration units
+  outcome: supported
+  target_ids:
+  - cmmmech:coal-beneficiation-waste
+  evidence_ids:
+  - primary2018
+  - target
+  summary: The enlarged experimental observation is supported with denominator and
+    scale limits.
+  details: Originalpp33–34Figure4 has three8dm×12dm vessels,20kg5–7mm feedeach, first194Lmedium+6Lpreparation,7days/stage30±2C.
+    Latermakeup/inoculationorder and cycle2 untreatedfeedfraction are unspecified.
+    Table2exactGe values0.78/1.81/3.05 and0.54/0.98/1.36mg/L with stated uncertainties
+    match; Alusesg/L. Transferredliquor/freshbeds/makeup prevent summingstageconcentrations
+    or derivingwhole-feedyield. Unusual223.6±3.79times10^8CFU/cm3 is explicitly source-reported,
+    not independently validated.
+- assessment_id: limits
+  area: evidence
+  topic: Contradictions, causal inference and deployment
+  outcome: supported
+  target_ids:
+  - cmmmech:coal-beneficiation-waste
+  evidence_ids:
+  - primary2018
+  - previous44
+  - target
+  - notices
+  summary: The record preserves relevant uncertainty without converting source overclaims
+    into facts.
+  details: CompleteprimarycontainsTables1–2only but refersapparatusfeedtoTable6. FinalpH1.7–2.4
+    differsfromgeneral≤2. Recipefixedadditives conflict withrecommendation; repeated93.5%doesnotresolve
+    prior2017experiment5/10conflict. Medium-onlycascade/inoculumbenefit lacksnumericpairedcontrols;
+    photosFigure5donotmeasurephaseconversion,safetyorresidualmetal. NoisolatedGeconcentrate,
+    downstreamrecovery, biologicalcausalmechanism orcommercialplant is established.
+- assessment_id: prior
+  area: provenance
+  topic: Preserved earlier evidence and explicit review reuse
+  outcome: supported
+  target_ids:
+  - cmmmech:coal-beneficiation-waste
+  evidence_ids:
+  - previous44
+  - previous43
+  - preservation
+  - history
+  summary: Earlier evidence and correction provenance are intact.
+  details: Independent comparison proves allolderlistprefixes/scalars exceptdescription
+    andall3historybytes matchbase. Priorround44reviewcovers2017; round43resolvedreviewcovers2012/2016.
+    Their literature was not fully rereadthisround. New2018context involving2017contradictions
+    agreeswiththepreserved earlier assessment. No2018datawerepooledwitholderstudies.
+- assessment_id: checks
+  area: provenance
+  topic: Native exact-byte review and required completed checks
+  outcome: supported
+  target_ids:
+  - cmmmech:coal-beneficiation-waste
+  evidence_ids:
+  - target
+  - history
+  - preservation
+  - gates
+  summary: Actual required checks passed for unchanged reviewed bytes.
+  details: Initial valid nativeinspection precedes assessment; finalinspection addspriorreviews
+    anddossiercontext withoutrecordchanges. Independent namedvalidation andparentactualfullgatesread/hashed.
+    Raw sourcesremainoutsideGit. Reviewer didnotauthorcoalrecord/history/dossier and
+    made no maintainedcontentedit.
+findings: []
+actions: []
+limitations:
+- Percentage calculation, complete feed/solution/residue inventory and matched post-incubation
+  physicochemical controls are absent; reportedleaching is not productyield.
+- Missing apparatusfeedTable6, volume bookkeeping, sourceCFUprotocol and fullcyclecontrol
+  data prevent a quantifiedbiological cascadebenefit or reproducibleclosedbalance.
+- Apparent2018figureoverlap and repeated2017recipe leave measurementreuse/sampleindependence
+  unresolved; localstrainauthentication is incomplete.
+- No isolatedGeproduct, post-treatmenttoxicity/residualinventory or commercialdeployment
+  shown.
+- Older unchangedliterature usesexplicitpriorindependentreviews, not a newall-sourcegraphicreview.
+- Searches includehidden/ignored/followed textinboundedcorpora/referencedraws; nine
+  unavailablehistoricalroots and unextractedbinarycontents preclude globalabsenceclaims.
+notes:
+- An initial inspect command referenced a mistyped nonexistent history path and failed
+  before assessment; successful inspection-v2 captures the actual inputs, with failed
+  outsideGitreceipt retained. Final inspection only adds contextinputs; frozen target
+  unchanged.
+- Theenlargedexperimentalapparatus and sourcequotednumbers are accepted as reportedobservations
+  with limits, not independently reproduced measurements.
+links:
+- https://doi.org/10.31643/2018/6445.27
+- https://doi.org/10.30970/sbi.1203.570
+tags:
+- round45
+- coal-beneficiation-waste
+- independent
+- scientific
+```

@@ -229,8 +229,11 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Germanite](data/records/germanite.yaml) | Dated IMA identity and original crystal chemistry | Source space-group disagreement preserved; no accepted microbial mechanism |
 | [Renierite](data/records/renierite.yaml) | Dated IMA identity and original composition study | Coupled composition variation within the species; no inherited criticality |
 | [Lithium-mica ore](data/records/lithium-mica-ore.yaml) | Qualified microbial leaching observations on mixed mica-bearing feeds | Source denominator/protocol conflicts and distinct analytical fractions; no mineral-specific transfer |
-| [Coal beneficiation waste](data/records/coal-beneficiation-waste.yaml) | Community-associated leaching in complete 2012/2016/2017 studies | Missing matched controls and conflicting optimum recipes/results; no complete product yield |
+| [Coal beneficiation waste](data/records/coal-beneficiation-waste.yaml) | Community-associated leaching and 2018 control/apparatus observations | Overlapping studies, inconsistent recipes and incomplete volume accounting; no complete product yield |
 | [Tungsten-nickel-iron alloy scrap](data/records/tungsten-nickel-iron-alloy-scrap.yaml) | Ferric-assisted mechanical separation in a complete 2011 study | Proposed microbial regeneration is untested; purity and pressed-surface size claims remain qualified |
+| [Argyrodite](data/records/argyrodite.yaml) | Dated IMA identity and natural Ezuri microscopy/microprobe context | Historical alburnite and synthetic lithium electrolytes remain distinct; no recovery claim |
+| [Briartite](data/records/briartite.yaml) | Current IMA identity and original natural-mineral observations | Historical Fe/Zn scope and conflicting assay labels retained; zincobriartite is a separate species |
+| [Theisen sludge](data/records/theisen-sludge.yaml) | Historical scrubber-residue identity and sampled-feed analytical context | Synthetic membrane feeds and reused bioleaching evidence remain separate; mechanism gap remains open |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and

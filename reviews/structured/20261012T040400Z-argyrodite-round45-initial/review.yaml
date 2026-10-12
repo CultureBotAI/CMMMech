@@ -1,0 +1,190 @@
+schema_version: 1.0.0
+review_id: 20261012T040400Z-argyrodite-round45-initial
+kind: record
+repository: CultureBotAI/CMMMech
+title: 'Independent argyrodite review: Handbook reference locator'
+started_at: '2026-10-12T04:02:07Z'
+finished_at: '2026-10-12T04:04:00Z'
+reviewer:
+  identity: Codex /root/round27_packaging
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Did not author argyrodite, its history or dossier. Authored
+    only coal extension in this cohort. Native inspect preceded assessment; independently
+    viewed complete twelve-page Ono1995 original and Handbook original PDF.
+skill: .claude/skills/review-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: A confirmed minor source-reference number needs correction. The described
+  natural-versus-synthetic boundary remains valid; this initial observation is not
+  final acceptance.
+source:
+  git_revision: 2b975ae5327b94ac3c1e6583378408add2b8d1f2
+  state: working_tree
+  inputs:
+  - path: data/records/argyrodite.yaml
+    sha256: e686612989f709388625c3d285721f6446d8913ff8a02c44e3be414f53516899
+    role: target
+  - path: history/records/argyrodite/2026-10-12T035954Z-codex-d6c8f5.yaml
+    sha256: e597e55fd185cb2075c934f24e211bcaebfe733186d92ae31fbf94fa77a348c8
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:argyrodite
+  path: data/records/argyrodite.yaml
+  label: Argyrodite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/argyrodite.yaml
+    role: scientific_record
+scope:
+  description: Whole frozen record read; this initial observation isolates the Handbook
+    citation locator while the complete scientific review and final gates are being
+    completed.
+  selection: Parent-assigned independent review.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:argyrodite
+  exclusions:
+  - target: Final source-notice/dedup assessment and corrected-state gate acceptance
+    reason: Deferred to complete successor review; initial actual cohort checks passed.
+checks:
+- check_id: inspect
+  name: Native exact-state input capture
+  command: uv run --locked python scripts/record_review.py inspect --targets /private/tmp/cmm-round45-mineral-independent/argyrodite-targets.json
+    --input history/records/argyrodite/2026-10-12T035954Z-codex-d6c8f5.yaml --input
+    src/cmmmech/schema/cmmmech.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Actual successful native capture; target hash e686612989f709388625c3d285721f6446d8913ff8a02c44e3be414f53516899.
+  target_ids:
+  - cmmmech:argyrodite
+- check_id: batch
+  name: Actual initial cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Parent executed and reviewer read/hashed actual initial cohort log /private/tmp/cmm-round45-final-batch.log
+    SHA256 62bea3343bc2121ed3ead74f8e46464aae94c17589352ed4f447dfd52df84d63. This
+    predates the requested correction.
+  target_ids:
+  - cmmmech:argyrodite
+- check_id: nonempty
+  name: Actual initial cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Parent executed and reviewer read/hashed actual initial cohort log /private/tmp/cmm-round45-final-nonempty.log
+    SHA256 422762d06cd992924323952fee0ca1e7d56c09a13fca4fc98a425f8f8f911adc. This
+    predates the requested correction.
+  target_ids:
+  - cmmmech:argyrodite
+- check_id: history
+  name: Actual initial cohort history
+  command: uv run --locked cmmmech validate-history --base 2b975ae5327b94ac3c1e6583378408add2b8d1f2
+  status: passed
+  required: true
+  exit_code: 0
+  summary: Parent executed and reviewer read/hashed actual initial cohort log /private/tmp/cmm-round45-final-history.log
+    SHA256 3a8b8d5eb09b5e09abfcb139d5e1bff503712d5fdf538c12e52a42557a7cd58e. This
+    predates the requested correction.
+  target_ids:
+  - cmmmech:argyrodite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/argyrodite.yaml
+  locator: Whole record and sources[id=handbook_argyrodite].title
+  accessed_at: '2026-10-12T04:04:00Z'
+  support: supports
+  summary: Record states that Handbook Reference 2 explicitly concerns synthetic Ag8GeS6.
+  snapshot_sha256: e686612989f709388625c3d285721f6446d8913ff8a02c44e3be414f53516899
+- evidence_id: handbook
+  kind: primary_source
+  reference: https://handbookofmineralogy.org/pdfs/argyrodite.pdf
+  locator: Original one-page PDF, References section; reviewer rendered and visually
+    inspected whole page
+  accessed_at: '2026-10-12T04:04:00Z'
+  support: refutes
+  summary: Reference 3 is Eulenberger1977 with explicit synthetic argyrodite in its
+    title. Reference 2 is Berry and Thompson1962, X-ray powder data for ore minerals.
+    The locator should say Reference 3.
+  snapshot_sha256: 3cdf1da26f76a27fda04602141cc33ff252b5bc717c7c0e9d988ea2f4aee71cc
+assessments:
+- assessment_id: locator
+  area: evidence
+  topic: Exact Handbook reference attribution
+  outcome: concern
+  target_ids:
+  - cmmmech:argyrodite
+  evidence_ids:
+  - record
+  - handbook
+  summary: Synthetic-versus-natural boundary is supported but the cited numbered reference
+    is incorrect.
+findings:
+- finding_id: F1
+  issue_key: CMMMech.argyrodite.handbook-synthetic-reference
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Correct the Handbook synthetic-study reference number
+  description: The source title says Reference 2 explicitly concerns synthetic Ag8GeS6.
+    The original References section numbers the Eulenberger1977 synthetic-argyrodite
+    study as 3; number 2 is Berry and Thompson1962 powder data. Change only the locator
+    to Reference 3, retaining the supported material boundary.
+  target_ids:
+  - cmmmech:argyrodite
+  field_paths:
+  - sources[id=handbook_argyrodite].title
+  evidence_ids:
+  - record
+  - handbook
+  rule_id: exact-source-locator
+  native_severity: minor
+  normalization_reason: Nonblocking bibliographic locator defect; mineral identity
+    and the natural/synthetic boundary remain supported.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/argyrodite.yaml
+    role: scientific_record
+actions:
+- action_id: A1
+  description: Correct the maintained source locator to Reference 3; append actual
+    EDIT provenance and preserve initial CREATE and review. If repeated in the initial
+    source dossier, add an explicit correction note rather than overwrite a frozen
+    attestation.
+  finding_ids:
+  - F1
+  target_ids:
+  - cmmmech:argyrodite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/argyrodite.yaml
+    role: scientific_record
+  acceptance_checks:
+  - Original Handbook References visually confirms number 3.
+  - Only supported locator/provenance changes occur and named plus affected cohort/history
+    gates pass.
+  - Save successor disposition with exact predecessor occurrence and corrected input
+    hashes.
+limitations:
+- Partial initial finding observation, not completed scientific acceptance. Actual
+  initial cohort checks passed before any requested correction; corrected-state checks
+  will be required after changes.
+notes:
+- No maintained record edit by reviewer.
+tags:
+- round45
+- independent
+- argyrodite
