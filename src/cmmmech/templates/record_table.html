@@ -1,0 +1,113 @@
+<form id="record-filters" class="record-filters" hidden>
+  <div>
+    <label for="record-query">Search materials</label>
+    <input id="record-query" type="search" placeholder="Name, formula, organism, process…">
+  </div>
+  <div>
+    <label for="record-kind">Material Kind</label>
+    <select id="record-kind">
+      <option value="">All kinds ({{ records|length }})</option>
+      {% for k, count in kinds_counts %}
+      <option value="{{ k }}">{{ k | replace('_', ' ') | capitalize }} ({{ count }})</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div>
+    <label for="record-mechanism">Mechanism Process</label>
+    <select id="record-mechanism">
+      <option value="">All processes</option>
+      {% for proc, count in process_counts %}
+      <option value="{{ proc }}">{{ proc | replace('_', ' ') | capitalize }} ({{ count }})</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div>
+    <label for="record-criticality">Criticality</label>
+    <select id="record-criticality">
+      <option value="">All criticality</option>
+      <option value="critical">Designated Critical</option>
+    </select>
+  </div>
+  <button type="reset">Clear filters</button>
+</form>
+
+<p id="record-count" role="status" aria-live="polite">{{ records|length }} materials</p>
+<p id="record-empty" hidden>No materials match your query or filters. Clear filters to show all.</p>
+
+<div class="record-table-scroll" role="region" aria-label="Materials table" tabindex="0">
+<table id="record-table">
+  <caption>{{ table_caption | default('Curated Materials and Minerals') }}</caption>
+  <thead>
+    <tr>
+      <th scope="col">Material</th>
+      <th scope="col">Kind</th>
+      <th scope="col">Criticality</th>
+      <th scope="col">Mechanisms</th>
+      <th scope="col">Microbial Agents</th>
+      <th scope="col">Identifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for r in records %}
+    <tr data-kind="{{ r.material_kind }}"
+        data-mechanisms="{{ r.mechanism_processes | join(' ') }}"
+        data-critical="{{ 'true' if r.is_critical else 'false' }}"
+        data-search="{{ r.search_text }}">
+      <td>
+        <a href="{{ root }}{{ r.page }}"><strong>{{ r.name }}</strong></a>
+        {% if r.description %}
+        <p class="record-desc">{{ r.description }}</p>
+        {% endif %}
+      </td>
+      <td>
+        <span class="badge">{{ r.material_kind | replace('_', ' ') }}</span>
+      </td>
+      <td>
+        {% if r.is_critical %}
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          {{ r.criticality_summary }}
+        </div>
+        {% else %}
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+        {% endif %}
+      </td>
+      <td>
+        {% if r.mechanisms %}
+        <strong>{{ r.mechanisms|length }}</strong>
+        <div style="margin-top: .2rem;">
+          {% for proc in r.mechanism_processes %}
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">{{ proc | replace('_', ' ') }}</span>
+          {% endfor %}
+        </div>
+        {% else %}
+        <span style="color: var(--muted); font-size: .85rem;">None</span>
+        {% endif %}
+      </td>
+      <td>
+        {% if r.organisms %}
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          {% for org in r.organisms[:3] %}
+          <li>{{ org.label }}</li>
+          {% endfor %}
+          {% if r.organisms|length > 3 %}
+          <li>+{{ r.organisms|length - 3 }} more</li>
+          {% endif %}
+        </ul>
+        {% else %}
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+        {% endif %}
+      </td>
+      <td>
+        {% for id_obj in r.identifiers %}
+        <div><code>{{ id_obj.id }}</code></div>
+        {% else %}
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+        {% endfor %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+<script src="{{ root }}record-browser.js" defer></script>

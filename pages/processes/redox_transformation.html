@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Redox Transformation Mechanisms · CMMMech</title>
+<link rel="stylesheet" href="../style.css">
+<script src="../theme-toggle.js"></script>
+</head>
+<body>
+<header>
+  <a class="brand" href="../index.html">CMMMech</a>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../browse.html">Browse</a>
+    <a href="https://github.com/CultureBotAI/CMMMech">GitHub</a>
+  </nav>
+</header>
+<main>
+<div class="breadcrumbs">
+  <a href="../index.html">CMMMech</a> &gt;
+  <a href="../browse.html">Browse</a> &gt;
+  <span>Redox Transformation</span>
+</div>
+
+<h1>Redox Transformation Mechanisms</h1>
+<p class="lede">Enzymatic or cell-surface oxidation-reduction reactions altering metal valence states.</p>
+
+<form id="record-filters" class="record-filters" hidden>
+  <div>
+    <label for="record-query">Search materials</label>
+    <input id="record-query" type="search" placeholder="Name, formula, organism, process…">
+  </div>
+  <div>
+    <label for="record-kind">Material Kind</label>
+    <select id="record-kind">
+      <option value="">All kinds (24)</option>
+      <option value="element">Element (64)</option>
+      <option value="mineral">Mineral (60)</option>
+      <option value="secondary_resource">Secondary resource (48)</option>
+      <option value="commodity">Commodity (32)</option>
+      <option value="primary_resource">Primary resource (13)</option>
+      <option value="mineral_group">Mineral group (4)</option>
+    </select>
+  </div>
+  <div>
+    <label for="record-mechanism">Mechanism Process</label>
+    <select id="record-mechanism">
+      <option value="">All processes</option>
+      <option value="bioleaching">Bioleaching (92)</option>
+      <option value="biomineralization">Biomineralization (32)</option>
+      <option value="redox_transformation">Redox transformation (24)</option>
+      <option value="biosorption">Biosorption (12)</option>
+      <option value="separation">Separation (7)</option>
+      <option value="recovery">Recovery (5)</option>
+      <option value="other">Other (20)</option>
+    </select>
+  </div>
+  <div>
+    <label for="record-criticality">Criticality</label>
+    <select id="record-criticality">
+      <option value="">All criticality</option>
+      <option value="critical">Designated Critical</option>
+    </select>
+  </div>
+  <button type="reset">Clear filters</button>
+</form>
+
+<p id="record-count" role="status" aria-live="polite">24 materials</p>
+<p id="record-empty" hidden>No materials match your query or filters. Clear filters to show all.</p>
+
+<div class="record-table-scroll" role="region" aria-label="Materials table" tabindex="0">
+<table id="record-table">
+  <caption>Curated Materials and Minerals</caption>
+  <thead>
+    <tr>
+      <th scope="col">Material</th>
+      <th scope="col">Kind</th>
+      <th scope="col">Criticality</th>
+      <th scope="col">Mechanisms</th>
+      <th scope="col">Microbial Agents</th>
+      <th scope="col">Identifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="antimony antimony element antimony (sb), represented as an element distinct from antimonate feed, sorbed antimonite and sulfide-bearing products. a sediment-inoculated laboratory experiment supports transformation through coupled microbial and chemical reactions under sulfidogenic conditions. the united states 2025 critical-mineral designation names the antimony commodity; it does not designate every sb compound, host mineral or secondary resource. chebi:30513 antimony atom redox_transformation united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/antimony.html"><strong>Antimony</strong></a>
+        <p class="record-desc">Antimony (Sb), represented as an element distinct from antimonate feed, sorbed antimonite and sulfide-bearing products. A sediment-inoculated laboratory experiment supports transformation through coupled microbial and chemical reactions under sulfidogenic conditions. The United States 2025 critical-mineral designation names the antimony commodity; it does not designate every Sb compound, host mineral or secondary resource.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <div><code>CHEBI:30513</code></div>
+      </td>
+    </tr>
+    <tr data-kind="secondary_resource"
+        data-mechanisms="redox_transformation"
+        data-critical="false"
+        data-search="biogas-desulfurization sulfur residue biogas-desulfurization-sulfur-residue secondary_resource sulfur-rich material recovered from biogas desulfurization, represented by dried powder obtained from a danish biogas-plant desulfurization unit. its process origin defines this secondary resource; it is not pure sulfur as an element, a natural sulfur mineral, commercial acid or the battery black mass subsequently leached with its conversion liquor. the selected study does not establish universal residue composition or inherited criticality. redox_transformation">
+      <td>
+        <a href="../materials/biogas-desulfurization-sulfur-residue.html"><strong>Biogas-desulfurization sulfur residue</strong></a>
+        <p class="record-desc">Sulfur-rich material recovered from biogas desulfurization, represented by dried powder obtained from a Danish biogas-plant desulfurization unit. Its process origin defines this secondary resource; it is not pure sulfur as an element, a natural sulfur mineral, commercial acid or the battery black mass subsequently leached with its conversion liquor. The selected study does not establish universal residue composition or inherited criticality.</p>
+      </td>
+      <td>
+        <span class="badge">secondary resource</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="mineral"
+        data-mechanisms="redox_transformation"
+        data-critical="false"
+        data-search="chromite chromite mineral chromite is the fe(ii)cr2o4 mineral species, grandfathered in the september 2026 ima list with original-description year 1845. it is distinct from elemental chromium, chromate, chromium-bearing spinels of unspecified composition, mixed chromite ores and processing tailings. the natural specimen called chromite in the experiment below was not compositionally or crystallographically characterized in that paper. its measured fe(ii) change is a specimen-associated observation, not proof of conversion of pure endmember chromite. no criticality designation is inherited from chromium. redox_transformation azospira oryzae ps ncbitaxon:640081">
+      <td>
+        <a href="../materials/chromite.html"><strong>Chromite</strong></a>
+        <p class="record-desc">Chromite is the Fe(II)Cr2O4 mineral species, grandfathered in the September 2026 IMA list with original-description year 1845. It is distinct from elemental chromium, chromate, chromium-bearing spinels of unspecified composition, mixed chromite ores and processing tailings. The natural specimen called chromite in the experiment below was not compositionally or crystallographically characterized in that paper. Its measured Fe(II) change is a specimen-associated observation, not proof of conversion of pure endmember chromite. No criticality designation is inherited from chromium.</p>
+      </td>
+      <td>
+        <span class="badge">mineral</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Azospira oryzae PS</li>
+        </ul>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="chromium chromium element chromium (cr), represented as an element. its identity differs from chromate oxyanions, potassium chromate reagent, chromium-bearing precipitates and chromite mineral species. the dated us designation names the chromium mineral commodity and is mapped to its elemental identity here; it is not inherited by every chromium compound or waste. chebi:28073 chromium atom redox_transformation shewanella oneidensis mr-1 ncbitaxon:211586 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/chromium.html"><strong>Chromium</strong></a>
+        <p class="record-desc">Chromium (Cr), represented as an element. Its identity differs from chromate oxyanions, potassium chromate reagent, chromium-bearing precipitates and chromite mineral species. The dated US designation names the chromium mineral commodity and is mapped to its elemental identity here; it is not inherited by every chromium compound or waste.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Shewanella oneidensis MR-1</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:28073</code></div>
+      </td>
+    </tr>
+    <tr data-kind="mineral"
+        data-mechanisms="redox_transformation"
+        data-critical="false"
+        data-search="ferrihydrite ferrihydrite mineral ferrihydrite is an approved mineral species in the september 2026 ima list, with formula fe(iii)5o7(oh) and approval number 1971-015. the name also occurs in experimental descriptions of poorly crystalline synthetic two-line iron oxyhydroxides; that assay designation does not independently establish ideal ima formula, natural origin or purity. this record concerns a characterized synthetic nanophase substrate, not iron metal, an ore grade or every fe(iii) oxide. the ax17 assay is also represented under iron and the paired ferrihydrite/magnetite record; these are substrate/product perspectives on one experiment, not independent replication. no iron criticality designation is inherited. redox_transformation desulfovulcanus ferrireducens ncbitaxon:2831190">
+      <td>
+        <a href="../materials/ferrihydrite.html"><strong>Ferrihydrite</strong></a>
+        <p class="record-desc">Ferrihydrite is an approved mineral species in the September 2026 IMA list, with formula Fe(III)5O7(OH) and approval number 1971-015. The name also occurs in experimental descriptions of poorly crystalline synthetic two-line iron oxyhydroxides; that assay designation does not independently establish ideal IMA formula, natural origin or purity. This record concerns a characterized synthetic nanophase substrate, not iron metal, an ore grade or every Fe(III) oxide. The Ax17 assay is also represented under iron and the paired ferrihydrite/magnetite record; these are substrate/product perspectives on one experiment, not independent replication. No iron criticality designation is inherited.</p>
+      </td>
+      <td>
+        <span class="badge">mineral</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Desulfovulcanus ferrireducens</li>
+        </ul>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="mineral"
+        data-mechanisms="redox_transformation"
+        data-critical="false"
+        data-search="galena galena mineral galena is the pbs mineral species listed as grandfathered in the september 2026 ima list; its original-description year is unresolved there. it is distinct from elemental lead, anglesite, manufactured pbs reagents and mixed lead ores or flotation concentrates. the experiment below concerns galena within a natural mixed concentrate, not a pure natural endmember. no criticality designation is inherited from lead. redox_transformation acidithiobacillus ferrooxidans ncbitaxon:920">
+      <td>
+        <a href="../materials/galena.html"><strong>Galena</strong></a>
+        <p class="record-desc">Galena is the PbS mineral species listed as grandfathered in the September 2026 IMA list; its original-description year is unresolved there. It is distinct from elemental lead, anglesite, manufactured PbS reagents and mixed lead ores or flotation concentrates. The experiment below concerns galena within a natural mixed concentrate, not a pure natural endmember. No criticality designation is inherited from lead.</p>
+      </td>
+      <td>
+        <span class="badge">mineral</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Acidithiobacillus ferrooxidans</li>
+        </ul>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="mineral"
+        data-mechanisms="redox_transformation"
+        data-critical="false"
+        data-search="jarosite jarosite mineral jarosite is the potassium ferric hydroxysulfate mineral with ideal formula kfe3(so4)2(oh)6, with all three iron atoms ferric. the september 2026 ima list records the species as redefined, 1987 s.p. this record denotes k-jarosite, not the broader jarosite family, natrojarosite, ammoniojarosite, hydroniumjarosite, elemental iron or an industrial jarosite-bearing waste. the experiment below uses a laboratory biosynthesized potassium-jarosite preparation whose bulk composition differs from the ideal endmember. no constituent-element criticality or commercial recovery status is inferred. redox_transformation acidithiobacillus thiooxidans ncbitaxon:930">
+      <td>
+        <a href="../materials/jarosite.html"><strong>Jarosite</strong></a>
+        <p class="record-desc">Jarosite is the potassium ferric hydroxysulfate mineral with ideal formula KFe3(SO4)2(OH)6, with all three iron atoms ferric. The September 2026 IMA list records the species as redefined, 1987 s.p. This record denotes K-jarosite, not the broader jarosite family, natrojarosite, ammoniojarosite, hydroniumjarosite, elemental iron or an industrial jarosite-bearing waste. The experiment below uses a laboratory biosynthesized potassium-jarosite preparation whose bulk composition differs from the ideal endmember. No constituent-element criticality or commercial recovery status is inferred.</p>
+      </td>
+      <td>
+        <span class="badge">mineral</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Acidithiobacillus thiooxidans</li>
+        </ul>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="manganese manganese element the element mn, distinct from its dissolved oxidation states, ligand complexes, oxide minerals, and mn-bearing commodities. the us designation below maps to the explicitly named manganese commodity in the 2025 list; it does not assign criticality to every mn-bearing compound or resource. chebi:18291 manganese atom redox_transformation pseudomonas putida gb-1 ncbitaxon:76869 united states of america usgs final list of critical minerals (critical); european union regulation (eu) 2024/1252, annex ii, section 1(u), manganese (critical)">
+      <td>
+        <a href="../materials/manganese.html"><strong>Manganese</strong></a>
+        <p class="record-desc">The element Mn, distinct from its dissolved oxidation states, ligand complexes, oxide minerals, and Mn-bearing commodities. The US designation below maps to the explicitly named manganese commodity in the 2025 list; it does not assign criticality to every Mn-bearing compound or resource.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical); European Union Regulation (EU) 2024/1252, Annex II, Section 1(u), manganese (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Pseudomonas putida GB-1</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:18291</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="molybdenum molybdenum element the element mo, distinct from molybdate ions, experimental sodium molybdate, molybdenum-blue products, molybdenite and other mo-bearing resources. the canadian designation is the named molybdenum material in its 2024 list; it does not assign criticality to every compound or ore. a laboratory dry1 culture study supports molybdenum-blue formation consistent with molybdate transformation, without an isolated-metal recovery yield or a chemically resolved product phase. chebi:28685 molybdenum atom redox_transformation gamma proteobacterium dr.y1 ncbitaxon:351651 canada canada&#39;s critical minerals list (critical)">
+      <td>
+        <a href="../materials/molybdenum.html"><strong>Molybdenum</strong></a>
+        <p class="record-desc">The element Mo, distinct from molybdate ions, experimental sodium molybdate, molybdenum-blue products, molybdenite and other Mo-bearing resources. The Canadian designation is the named molybdenum material in its 2024 list; it does not assign criticality to every compound or ore. A laboratory DRY1 culture study supports molybdenum-blue formation consistent with molybdate transformation, without an isolated-metal recovery yield or a chemically resolved product phase.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          Canada Canada&#39;s Critical Minerals List (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>gamma proteobacterium DR.Y1</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:28685</code></div>
+      </td>
+    </tr>
+    <tr data-kind="mineral"
+        data-mechanisms="biomineralization redox_transformation"
+        data-critical="false"
+        data-search="ningyoite ningyoite mineral ningyoite is an approved mineral species listed as (u,ca,ce)2(po4)2·1-2h2o in the september 2026 ima compilation, with status a and special-procedure entry 1962 s.p. experimental papers use the calcium u(iv)-phosphate formulations cau(po4)2·h2o or cau(po4)2 for their assigned products; those formulas do not establish every natural specimen&#39;s composition. the mineral is distinct from elemental uranium, uramphite, uraninite and molecular u(iv)-phosphate complexes. the observations below concern laboratory products, not a natural ore feed or an industrial recovery process. no criticality designation is inherited from uranium. biomineralization redox_transformation carboxydothermus ferrireducens desulforamulus reducens mi-1 ncbitaxon:54265 ncbitaxon:349161">
+      <td>
+        <a href="../materials/ningyoite.html"><strong>Ningyoite</strong></a>
+        <p class="record-desc">Ningyoite is an approved mineral species listed as (U,Ca,Ce)2(PO4)2·1-2H2O in the September 2026 IMA compilation, with status A and special-procedure entry 1962 s.p. Experimental papers use the calcium U(IV)-phosphate formulations CaU(PO4)2·H2O or CaU(PO4)2 for their assigned products; those formulas do not establish every natural specimen&#39;s composition. The mineral is distinct from elemental uranium, uramphite, uraninite and molecular U(IV)-phosphate complexes. The observations below concern laboratory products, not a natural ore feed or an industrial recovery process. No criticality designation is inherited from uranium.</p>
+      </td>
+      <td>
+        <span class="badge">mineral</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>2</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biomineralization</span>
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Carboxydothermus ferrireducens</li>
+          <li>Desulforamulus reducens MI-1</li>
+        </ul>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="osmium osmium element osmium (os), distinct from osmium chlorides, oxides, coordination complexes and platinum-group ores or commodities. australia&#39;s 20 february 2024 critical-minerals list includes osmium through its explicitly enumerated platinum-group-elements entry; this grouped designation is not a separate unqualified listing of every osmium-bearing material. curated microbial evidence is a historical cell-extract experiment with qualified product assignments, not a demonstrated industrial recovery process. chebi:30687 osmium atom redox_transformation australia department of industry, science and resources critical minerals list (platinum-group-elements entry, including osmium by footnote 16) (critical)">
+      <td>
+        <a href="../materials/osmium.html"><strong>Osmium</strong></a>
+        <p class="record-desc">Osmium (Os), distinct from osmium chlorides, oxides, coordination complexes and platinum-group ores or commodities. Australia&#39;s 20 February 2024 critical-minerals list includes osmium through its explicitly enumerated platinum-group-elements entry; this grouped designation is not a separate unqualified listing of every osmium-bearing material. Curated microbial evidence is a historical cell-extract experiment with qualified product assignments, not a demonstrated industrial recovery process.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          Australia Department of Industry, Science and Resources Critical Minerals List (platinum-group-elements entry, including osmium by footnote 16) (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <div><code>CHEBI:30687</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="palladium palladium element palladium (pd), chemical element with atomic number 46. this record concerns laboratory reduction of dissolved pd(ii) to cell-associated elemental pd(0), not extraction from a palladium mineral or an industrial recovery operation. chebi:33363 palladium atom redox_transformation desulfovibrio desulfuricans ncbitaxon:876 united states of america u.s. department of the interior final list of critical minerals (critical); european union regulation (eu) 2024/1252, annex ii, section 1(aa), platinum group metals (palladium membership documented in ec2017_groups) (critical)">
+      <td>
+        <a href="../materials/palladium.html"><strong>Palladium</strong></a>
+        <p class="record-desc">Palladium (Pd), chemical element with atomic number 46. This record concerns laboratory reduction of dissolved Pd(II) to cell-associated elemental Pd(0), not extraction from a palladium mineral or an industrial recovery operation.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical); European Union Regulation (EU) 2024/1252, Annex II, Section 1(aa), platinum group metals (palladium membership documented in ec2017_groups) (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Desulfovibrio desulfuricans</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33363</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="platinum platinum element platinum (pt). the element is distinct from its experimental dissolved chloro-complexes, the potassium salts used to prepare them, and platinum-bearing minerals or wastes. the us 2025 designation names the platinum commodity individually; it is mapped here to the element without designating every platinum compound or secondary resource as critical. curated evidence concerns laboratory transformation in the presence of bacterial biomass, with substantial abiotic reduction and no demonstrated isolated-metal yield or industrial use. chebi:33364 platinum atom redox_transformation cupriavidus metallidurans ch34 ncbitaxon:266264 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/platinum.html"><strong>Platinum</strong></a>
+        <p class="record-desc">Platinum (Pt). The element is distinct from its experimental dissolved chloro-complexes, the potassium salts used to prepare them, and platinum-bearing minerals or wastes. The US 2025 designation names the platinum commodity individually; it is mapped here to the element without designating every platinum compound or secondary resource as critical. Curated evidence concerns laboratory transformation in the presence of bacterial biomass, with substantial abiotic reduction and no demonstrated isolated-metal yield or industrial use.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Cupriavidus metallidurans CH34</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33364</code></div>
+      </td>
+    </tr>
+    <tr data-kind="mineral"
+        data-mechanisms="redox_transformation"
+        data-critical="false"
+        data-search="pyrite pyrite mineral pyrite is the fes2 mineral species listed with grandfathered status g in the september 2026 ima compilation. its row does not provide an approval identifier or a known original-description year. the species is distinct from iron, sulfur, marcasite, pyrrhotite, nickel-bearing substituted experimental phases and mixed ores. natural specimen material and synthesized fes2 used in the experiment below are separate assay substrates. no constituent-element criticality designation is inherited. redox_transformation methanococcus voltae a3 ncbitaxon:456320">
+      <td>
+        <a href="../materials/pyrite.html"><strong>Pyrite</strong></a>
+        <p class="record-desc">Pyrite is the FeS2 mineral species listed with grandfathered status G in the September 2026 IMA compilation. Its row does not provide an approval identifier or a known original-description year. The species is distinct from iron, sulfur, marcasite, pyrrhotite, nickel-bearing substituted experimental phases and mixed ores. Natural specimen material and synthesized FeS2 used in the experiment below are separate assay substrates. No constituent-element criticality designation is inherited.</p>
+      </td>
+      <td>
+        <span class="badge">mineral</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Methanococcus voltae A3</li>
+        </ul>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="mineral"
+        data-mechanisms="redox_transformation"
+        data-critical="false"
+        data-search="pyrolusite pyrolusite mineral pyrolusite is the mno2 mineral species in the september 2026 ima list (status a, 1982 s.p.). the special-procedure entry is not a sequential approval accession. the species is distinct from elemental manganese, unspecified mno2 polymorphs and source-labelled pyrolusite ores. the accepted experiment below is an explicitly abiotic reaction of characterized commercial beta-mno2. a microbial ore study was inspected but cannot establish phase-specific microbial causality. no manganese-commodity criticality is inherited. redox_transformation">
+      <td>
+        <a href="../materials/pyrolusite.html"><strong>Pyrolusite</strong></a>
+        <p class="record-desc">Pyrolusite is the MnO2 mineral species in the September 2026 IMA list (status A, 1982 s.p.). The special-procedure entry is not a sequential approval accession. The species is distinct from elemental manganese, unspecified MnO2 polymorphs and source-labelled pyrolusite ores. The accepted experiment below is an explicitly abiotic reaction of characterized commercial beta-MnO2. A microbial ore study was inspected but cannot establish phase-specific microbial causality. No manganese-commodity criticality is inherited.</p>
+      </td>
+      <td>
+        <span class="badge">mineral</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="primary_resource"
+        data-mechanisms="redox_transformation"
+        data-critical="false"
+        data-search="rare-earth-rich deep-sea mud rare-earth-rich-deep-sea-mud primary_resource naturally occurring deep-ocean sediment enriched in rare-earth elements and yttrium, commonly termed rey-rich mud. this record denotes the heterogeneous geological sediment resource, including pelagic clay with rey-bearing biogenic calcium phosphate grains documented in western north pacific samples. it is distinct from individual rare-earth elements, a purified rare-earth commodity, an isolated apatite mineral, phosphorite, ferromanganese nodules and rock-surface ferromanganese crusts. host phases and composition vary among deposits; no single mineral formula or universal grade defines this resource. collection or physical concentration alone does not make the natural feed a secondary resource. no constituent criticality designation is inherited. a field-proxy study provides qualified evidence for an inferred microbial contribution to natural diagenetic iron transformations and rey redistribution; it does not demonstrate a controlled microbial extraction process, a recovered-metal yield, economic reserves or industrial deployment. redox_transformation">
+      <td>
+        <a href="../materials/rare-earth-rich-deep-sea-mud.html"><strong>Rare-earth-rich deep-sea mud</strong></a>
+        <p class="record-desc">Naturally occurring deep-ocean sediment enriched in rare-earth elements and yttrium, commonly termed REY-rich mud. This record denotes the heterogeneous geological sediment resource, including pelagic clay with REY-bearing biogenic calcium phosphate grains documented in western North Pacific samples. It is distinct from individual rare-earth elements, a purified rare-earth commodity, an isolated apatite mineral, phosphorite, ferromanganese nodules and rock-surface ferromanganese crusts. Host phases and composition vary among deposits; no single mineral formula or universal grade defines this resource. Collection or physical concentration alone does not make the natural feed a secondary resource. No constituent criticality designation is inherited. A field-proxy study provides qualified evidence for an inferred microbial contribution to natural diagenetic iron transformations and REY redistribution; it does not demonstrate a controlled microbial extraction process, a recovered-metal yield, economic reserves or industrial deployment.</p>
+      </td>
+      <td>
+        <span class="badge">primary resource</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="rhodium rhodium element rhodium (rh). the element is distinct from the rh(iii) chloride hydrate used as experimental feed, monometallic biomass-supported particles and mixed pdrh nanoparticles. the us 2025 list names the rhodium commodity individually; that designation is mapped to the element without extending it to every rh-bearing compound, mineral or secondary resource. curated evidence concerns laboratory transformation in synthetic solutions, not extraction from ore, purified-metal recovery or industrial deployment. chebi:33359 rhodium atom redox_transformation geobacter sulfurreducens ncbitaxon:35554 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/rhodium.html"><strong>Rhodium</strong></a>
+        <p class="record-desc">Rhodium (Rh). The element is distinct from the Rh(III) chloride hydrate used as experimental feed, monometallic biomass-supported particles and mixed PdRh nanoparticles. The US 2025 list names the rhodium commodity individually; that designation is mapped to the element without extending it to every Rh-bearing compound, mineral or secondary resource. Curated evidence concerns laboratory transformation in synthetic solutions, not extraction from ore, purified-metal recovery or industrial deployment.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>2</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Geobacter sulfurreducens</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33359</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="selenium selenium element selenium (se), chemical element with atomic number 34. the experimental substrate is soluble selenite, distinct from the element identifier, a selenium mineral, or a secondary resource. australia&#39;s dated selenium material designation is mapped to this element without extending it to salts. chebi:27568 selenium atom redox_transformation shewanella oneidensis mr-1 ncbitaxon:211586 australia department of industry, science and resources critical minerals list (critical)">
+      <td>
+        <a href="../materials/selenium.html"><strong>Selenium</strong></a>
+        <p class="record-desc">Selenium (Se), chemical element with atomic number 34. The experimental substrate is soluble selenite, distinct from the element identifier, a selenium mineral, or a secondary resource. Australia&#39;s dated selenium material designation is mapped to this element without extending it to salts.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          Australia Department of Industry, Science and Resources Critical Minerals List (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Shewanella oneidensis MR-1</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:27568</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="silver silver element silver (ag). the element identity is distinct from the silver(i) salts and precipitates used in the laboratory experiment below. the dated us designation concerns the silver mineral commodity; it is mapped here to its elemental identity, not inherited by every silver-bearing material. chebi:30512 silver atom redox_transformation shewanella oneidensis mr-1 ncbitaxon:211586 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/silver.html"><strong>Silver</strong></a>
+        <p class="record-desc">Silver (Ag). The element identity is distinct from the silver(I) salts and precipitates used in the laboratory experiment below. The dated US designation concerns the silver mineral commodity; it is mapped here to its elemental identity, not inherited by every silver-bearing material.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Shewanella oneidensis MR-1</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:30512</code></div>
+      </td>
+    </tr>
+    <tr data-kind="mineral"
+        data-mechanisms="redox_transformation"
+        data-critical="false"
+        data-search="stibnite stibnite mineral stibnite is the sb2s3 mineral species, grandfathered in the september 2026 ima list with original-description year 1832. it is distinct from elemental antimony, dissolved antimony species, mixed antimony ores and mine wastes. the experiment below used commercial stibnite containing quartz, separately from the study&#39;s natural ore samples. no criticality designation is inherited from antimony. redox_transformation paracoccus versutus ncbitaxon:34007">
+      <td>
+        <a href="../materials/stibnite.html"><strong>Stibnite</strong></a>
+        <p class="record-desc">Stibnite is the Sb2S3 mineral species, grandfathered in the September 2026 IMA list with original-description year 1832. It is distinct from elemental antimony, dissolved antimony species, mixed antimony ores and mine wastes. The experiment below used commercial stibnite containing quartz, separately from the study&#39;s natural ore samples. No criticality designation is inherited from antimony.</p>
+      </td>
+      <td>
+        <span class="badge">mineral</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Paracoccus versutus</li>
+        </ul>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="tellurium tellurium element tellurium (te), chemical element with atomic number 52. the experimental substrate here is soluble potassium tellurite, not a tellurium mineral, commodity feed, or secondary resource. chebi:30452 tellurium atom redox_transformation rhodococcus aetherivorans ncbitaxon:191292 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/tellurium.html"><strong>Tellurium</strong></a>
+        <p class="record-desc">Tellurium (Te), chemical element with atomic number 52. The experimental substrate here is soluble potassium tellurite, not a tellurium mineral, commodity feed, or secondary resource.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Rhodococcus aetherivorans</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:30452</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="redox_transformation"
+        data-critical="true"
+        data-search="titanium titanium element the element ti, distinct from titanium dioxide phases, titanium-bearing mineral species, alloy formulations and the titanium-metal commodity. the united states 2025 titanium designation is mapped to this element; it does not designate every titanium compound or establish microbial recovery of metallic titanium. the curated experiment concerns alteration of an oxide film on commercially pure titanium laboratory specimens. chebi:33341 titanium atom redox_transformation shewanella algae ncbitaxon:38313 united states department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/titanium.html"><strong>Titanium</strong></a>
+        <p class="record-desc">The element Ti, distinct from titanium dioxide phases, titanium-bearing mineral species, alloy formulations and the titanium-metal commodity. The United States 2025 Titanium designation is mapped to this element; it does not designate every titanium compound or establish microbial recovery of metallic titanium. The curated experiment concerns alteration of an oxide film on commercially pure titanium laboratory specimens.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Shewanella algae</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33341</code></div>
+      </td>
+    </tr>
+    <tr data-kind="mineral"
+        data-mechanisms="redox_transformation"
+        data-critical="false"
+        data-search="uramphite uramphite mineral uramphite is a hydrated ammonium uranyl phosphate mineral with formula (nh4)(uo2)(po4)·3h2o in the september 2026 ima compilation. its status g denotes a grandfathered species and 1957 is the original-description year, not a modern approval number. the mineral is distinct from elemental uranium, dissolved uranyl salts and the u(iv)-phosphate product ningyoite. the experiment below concerns an abiotic precipitate assigned to uramphite within laboratory growth medium, not a natural mineral specimen or ore. no uranium criticality designation is inherited. redox_transformation carboxydothermus ferrireducens ncbitaxon:54265">
+      <td>
+        <a href="../materials/uramphite.html"><strong>Uramphite</strong></a>
+        <p class="record-desc">Uramphite is a hydrated ammonium uranyl phosphate mineral with formula (NH4)(UO2)(PO4)·3H2O in the September 2026 IMA compilation. Its status G denotes a grandfathered species and 1957 is the original-description year, not a modern approval number. The mineral is distinct from elemental uranium, dissolved uranyl salts and the U(IV)-phosphate product ningyoite. The experiment below concerns an abiotic precipitate assigned to uramphite within laboratory growth medium, not a natural mineral specimen or ore. No uranium criticality designation is inherited.</p>
+      </td>
+      <td>
+        <span class="badge">mineral</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Carboxydothermus ferrireducens</li>
+        </ul>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="mineral"
+        data-mechanisms="redox_transformation"
+        data-critical="false"
+        data-search="uraninite uraninite mineral uraninite is the uo2 mineral species listed with grandfathered status g and original-description year 1845 in the september 2026 ima compilation. it is distinct from elemental uranium, uranyl salts, biomass-bound u(iv) complexes and uranium-bearing ores. the observation below concerns laboratory-formed nanocrystalline uo2 identified as uraninite, not a natural ore feed. no criticality designation is inherited from uranium. redox_transformation shewanella oneidensis mr-1 ncbitaxon:211586">
+      <td>
+        <a href="../materials/uraninite.html"><strong>Uraninite</strong></a>
+        <p class="record-desc">Uraninite is the UO2 mineral species listed with grandfathered status G and original-description year 1845 in the September 2026 IMA compilation. It is distinct from elemental uranium, uranyl salts, biomass-bound U(IV) complexes and uranium-bearing ores. The observation below concerns laboratory-formed nanocrystalline UO2 identified as uraninite, not a natural ore feed. No criticality designation is inherited from uranium.</p>
+      </td>
+      <td>
+        <span class="badge">mineral</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Shewanella oneidensis MR-1</li>
+        </ul>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<script src="../record-browser.js" defer></script></main>
+<footer>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · generated by <code>scripts/render_pages.py</code></p>
+  <p class="fam">
+    <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
+    <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·
+    <a href="https://culturebotai.github.io/CommunityMech/">CommunityMech</a> ·
+    <a href="https://culturebotai.github.io/TraitMech/">TraitMech</a> ·
+    <a href="https://culturebotai.github.io/proteintraitsmech/">ProteinTraitsMech</a> ·
+    <a href="https://culturebotai.github.io/AntibioticMech/">AntibioticMech</a> ·
+    <a href="https://culturebotai.github.io/CellStructureMech/">CellStructureMech</a> ·
+    <a href="https://culturebotai.github.io/NaturalProductMech/">NaturalProductMech</a> ·
+    <a href="https://culturebotai.github.io/DUFMech/">DUFMech</a> ·
+    <a href="https://culturebotai.github.io/PathwayMech/">PathwayMech</a> ·
+    <a href="https://culturebotai.github.io/TaxonMech/">TaxonMech</a> ·
+    <a href="https://culturebotai.github.io/HabitatMech/">HabitatMech</a> ·
+    <a href="https://culturebotai.github.io/AIMech/">AIMech</a> ·
+    <span class="self">CMMMech</span>
+  </p>
+  <p class="fam">
+    <a href="https://github.com/Knowledge-Graph-Hub/kg-microbe">kg-microbe</a> ·
+    <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
+  </p>
+</footer>
+</body>
+</html>

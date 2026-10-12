@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bioseparation Mechanisms · CMMMech</title>
+<link rel="stylesheet" href="../style.css">
+<script src="../theme-toggle.js"></script>
+</head>
+<body>
+<header>
+  <a class="brand" href="../index.html">CMMMech</a>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../browse.html">Browse</a>
+    <a href="https://github.com/CultureBotAI/CMMMech">GitHub</a>
+  </nav>
+</header>
+<main>
+<div class="breadcrumbs">
+  <a href="../index.html">CMMMech</a> &gt;
+  <a href="../browse.html">Browse</a> &gt;
+  <span>Bioseparation</span>
+</div>
+
+<h1>Bioseparation Mechanisms</h1>
+<p class="lede">Selective partition or affinity purification using microbial biomolecules (e.g. lanmodulin).</p>
+
+<form id="record-filters" class="record-filters" hidden>
+  <div>
+    <label for="record-query">Search materials</label>
+    <input id="record-query" type="search" placeholder="Name, formula, organism, process…">
+  </div>
+  <div>
+    <label for="record-kind">Material Kind</label>
+    <select id="record-kind">
+      <option value="">All kinds (7)</option>
+      <option value="element">Element (64)</option>
+      <option value="mineral">Mineral (60)</option>
+      <option value="secondary_resource">Secondary resource (48)</option>
+      <option value="commodity">Commodity (32)</option>
+      <option value="primary_resource">Primary resource (13)</option>
+      <option value="mineral_group">Mineral group (4)</option>
+    </select>
+  </div>
+  <div>
+    <label for="record-mechanism">Mechanism Process</label>
+    <select id="record-mechanism">
+      <option value="">All processes</option>
+      <option value="bioleaching">Bioleaching (92)</option>
+      <option value="biomineralization">Biomineralization (32)</option>
+      <option value="redox_transformation">Redox transformation (24)</option>
+      <option value="biosorption">Biosorption (12)</option>
+      <option value="separation">Separation (7)</option>
+      <option value="recovery">Recovery (5)</option>
+      <option value="other">Other (20)</option>
+    </select>
+  </div>
+  <div>
+    <label for="record-criticality">Criticality</label>
+    <select id="record-criticality">
+      <option value="">All criticality</option>
+      <option value="critical">Designated Critical</option>
+    </select>
+  </div>
+  <button type="reset">Clear filters</button>
+</form>
+
+<p id="record-count" role="status" aria-live="polite">7 materials</p>
+<p id="record-empty" hidden>No materials match your query or filters. Clear filters to show all.</p>
+
+<div class="record-table-scroll" role="region" aria-label="Materials table" tabindex="0">
+<table id="record-table">
+  <caption>Curated Materials and Minerals</caption>
+  <thead>
+    <tr>
+      <th scope="col">Material</th>
+      <th scope="col">Kind</th>
+      <th scope="col">Criticality</th>
+      <th scope="col">Mechanisms</th>
+      <th scope="col">Microbial Agents</th>
+      <th scope="col">Identifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-kind="secondary_resource"
+        data-mechanisms="bioleaching separation"
+        data-critical="false"
+        data-search="basic-oxygen-furnace steel slag basic-oxygen-furnace-steel-slag secondary_resource steelmaking slag identified by primary studies as basic-oxygen-furnace (bof), or linz-donawitz converter, slag. the separately studied feeds are a december 2016 sample from yarborough, scunthorpe, uk, and a sample supplied by an unnamed austrian steelmaking company in the 2022 study. this process-defined secondary resource is distinct from electric-arc-furnace slag or dust, blast-furnace residues, copper smelter slag, constituent elements and individual mineral species. these heterogeneous samples do not define all bof slags. no inherited elemental identifier or criticality designation is assigned. bioleaching separation">
+      <td>
+        <a href="../materials/basic-oxygen-furnace-steel-slag.html"><strong>Basic-oxygen-furnace steel slag</strong></a>
+        <p class="record-desc">Steelmaking slag identified by primary studies as basic-oxygen-furnace (BOF), or Linz-Donawitz converter, slag. The separately studied feeds are a December 2016 sample from Yarborough, Scunthorpe, UK, and a sample supplied by an unnamed Austrian steelmaking company in the 2022 study. This process-defined secondary resource is distinct from electric-arc-furnace slag or dust, blast-furnace residues, copper smelter slag, constituent elements and individual mineral species. These heterogeneous samples do not define all BOF slags. No inherited elemental identifier or criticality designation is assigned.</p>
+      </td>
+      <td>
+        <span class="badge">secondary resource</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>4</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="separation"
+        data-critical="true"
+        data-search="praseodymium praseodymium element the element pr, distinct from dissolved pr(iii), its salts and oxides, pr-containing magnet alloys and ore or waste resources. the us2025 designation applies to the named praseodymium mineral commodity. evidence below concerns cell-free protein chromatography of a synthetic binary solution, not microbial growth on an ore or industrial recovery. chebi:49828 praseodymium atom separation methylobacterium sp. 13mftsu3.1m2 ncbitaxon:1502776 united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/praseodymium.html"><strong>Praseodymium</strong></a>
+        <p class="record-desc">The element Pr, distinct from dissolved Pr(III), its salts and oxides, Pr-containing magnet alloys and ore or waste resources. The US2025 designation applies to the named praseodymium mineral commodity. Evidence below concerns cell-free protein chromatography of a synthetic binary solution, not microbial growth on an ore or industrial recovery.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Methylobacterium sp. 13MFTsu3.1M2</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:49828</code></div>
+      </td>
+    </tr>
+    <tr data-kind="commodity"
+        data-mechanisms="separation"
+        data-critical="true"
+        data-search="rare-earth-element commodities, australian list scope rare-earth-element-commodities commodity this collective commodity family follows australia&#39;s 20 february 2024 rare-earth-elements entry: yttrium and all fifteen lanthanides, including promethium. scandium has a separate entry in that list. this sixteen-member economic grouping differs from the broader seventeen-element chemical definition, which also includes scandium, and from the eu 2020 assessment&#39;s fifteen-member light/heavy split, which excludes both scandium and promethium. inclusion of promethium preserves the australian source&#39;s stated membership and does not assert an ordinary mined promethium supply. this family overlaps individual element records and narrower rare-earth commodity groups; it is not one mineral, alloy or fixed mixture. the mechanism below concerns only a synthetic neodymium/dysprosium solution and does not establish recovery of every family member or treatment of ore, magnets or industrial waste. separation hansschlegelia quercus ncbitaxon:2528245 australia australia&#39;s critical minerals list; rare-earth-elements group, footnote 17 (critical)">
+      <td>
+        <a href="../materials/rare-earth-element-commodities.html"><strong>Rare-earth-element commodities, Australian list scope</strong></a>
+        <p class="record-desc">This collective commodity family follows Australia&#39;s 20 February 2024 rare-earth-elements entry: yttrium and all fifteen lanthanides, including promethium. Scandium has a separate entry in that list. This sixteen-member economic grouping differs from the broader seventeen-element chemical definition, which also includes scandium, and from the EU 2020 assessment&#39;s fifteen-member light/heavy split, which excludes both scandium and promethium. Inclusion of promethium preserves the Australian source&#39;s stated membership and does not assert an ordinary mined promethium supply. This family overlaps individual element records and narrower rare-earth commodity groups; it is not one mineral, alloy or fixed mixture. The mechanism below concerns only a synthetic neodymium/dysprosium solution and does not establish recovery of every family member or treatment of ore, magnets or industrial waste.</p>
+      </td>
+      <td>
+        <span class="badge">commodity</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          Australia Australia&#39;s Critical Minerals List; rare-earth-elements group, footnote 17 (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Hansschlegelia quercus</li>
+        </ul>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="separation"
+        data-critical="true"
+        data-search="scandium scandium element the element sc, distinct from dissolved sc(iii), scandium chloride, scandium oxide, sc-bearing minerals and waste feedstocks. the us2025 designation concerns the named scandium mineral commodity. laboratory evidence below uses an immobilized bacterial protein and synthetic dissolved-metal mixtures; it does not demonstrate living-cell extraction. chebi:33330 scandium atom separation methylorubrum extorquens ncbitaxon:408 united states of america usgs final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/scandium.html"><strong>Scandium</strong></a>
+        <p class="record-desc">The element Sc, distinct from dissolved Sc(III), scandium chloride, scandium oxide, Sc-bearing minerals and waste feedstocks. The US2025 designation concerns the named scandium mineral commodity. Laboratory evidence below uses an immobilized bacterial protein and synthetic dissolved-metal mixtures; it does not demonstrate living-cell extraction.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America USGS Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Methylorubrum extorquens</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:33330</code></div>
+      </td>
+    </tr>
+    <tr data-kind="secondary_resource"
+        data-mechanisms="separation"
+        data-critical="false"
+        data-search="tungsten skarn-processing tailings tungsten-skarn-tailings secondary_resource residual mineral solids generated by processing tungsten-bearing skarn ore. the curated case is historical tailings in the smaltjärnen repository at the closed yxsjöberg tungsten, copper and fluorspar mine in sweden. the processing plant used gravity separation, magnetic separation and flotation. the characterized layered material contains scheelite among mixed silicate, carbonate, sulfide and other minerals; composition and particle liberation vary by sampled layer. this resource is distinct from tungsten as an element, pure scheelite, unprocessed ore, waste rock and a saleable concentrate. hällström et al. document scheelite alteration, hydrous ferric oxide associations and tungsten transport in a field investigation of this repository; those geochemical observations do not establish microbial causation. no criticality designation is inherited from constituents, and the laboratory results below do not characterize all tungsten tailings. separation">
+      <td>
+        <a href="../materials/tungsten-skarn-tailings.html"><strong>Tungsten skarn-processing tailings</strong></a>
+        <p class="record-desc">Residual mineral solids generated by processing tungsten-bearing skarn ore. The curated case is historical tailings in the Smaltjärnen repository at the closed Yxsjöberg tungsten, copper and fluorspar mine in Sweden. The processing plant used gravity separation, magnetic separation and flotation. The characterized layered material contains scheelite among mixed silicate, carbonate, sulfide and other minerals; composition and particle liberation vary by sampled layer. This resource is distinct from tungsten as an element, pure scheelite, unprocessed ore, waste rock and a saleable concentrate. Hällström et al. document scheelite alteration, hydrous ferric oxide associations and tungsten transport in a field investigation of this repository; those geochemical observations do not establish microbial causation. No criticality designation is inherited from constituents, and the laboratory results below do not characterize all tungsten tailings.</p>
+      </td>
+      <td>
+        <span class="badge">secondary resource</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="separation"
+        data-critical="true"
+        data-search="uranium uranium element uranium (u), represented here as an element distinct from the dissolved u(vi) feed and electrode-associated material in a laboratory bioelectrochemical separation study. the united states 2025 designation applies to the named uranium commodity; it does not identify a uranium mineral species or establish the criticality of every uranium compound. chebi:27214 uranium atom separation shewanella oneidensis mr-1 ncbitaxon:211586 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/uranium.html"><strong>Uranium</strong></a>
+        <p class="record-desc">Uranium (U), represented here as an element distinct from the dissolved U(VI) feed and electrode-associated material in a laboratory bioelectrochemical separation study. The United States 2025 designation applies to the named uranium commodity; it does not identify a uranium mineral species or establish the criticality of every uranium compound.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Shewanella oneidensis MR-1</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:27214</code></div>
+      </td>
+    </tr>
+    <tr data-kind="element"
+        data-mechanisms="separation"
+        data-critical="true"
+        data-search="vanadium vanadium element vanadium (v), represented here as an element distinct from the dissolved v(v) feed and electrode-associated material in a laboratory bioelectrochemical separation study. the united states 2025 designation applies to the named vanadium commodity; it does not identify a vanadium mineral species or establish the criticality of every vanadium compound. chebi:27698 vanadium atom separation shewanella oneidensis mr-1 ncbitaxon:211586 united states of america u.s. department of the interior final list of critical minerals (critical)">
+      <td>
+        <a href="../materials/vanadium.html"><strong>Vanadium</strong></a>
+        <p class="record-desc">Vanadium (V), represented here as an element distinct from the dissolved V(V) feed and electrode-associated material in a laboratory bioelectrochemical separation study. The United States 2025 designation applies to the named vanadium commodity; it does not identify a vanadium mineral species or establish the criticality of every vanadium compound.</p>
+      </td>
+      <td>
+        <span class="badge">element</span>
+      </td>
+      <td>
+        <span class="badge badge-critical">Critical</span>
+        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+        </div>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Shewanella oneidensis MR-1</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>CHEBI:27698</code></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<script src="../record-browser.js" defer></script></main>
+<footer>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · generated by <code>scripts/render_pages.py</code></p>
+  <p class="fam">
+    <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
+    <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·
+    <a href="https://culturebotai.github.io/CommunityMech/">CommunityMech</a> ·
+    <a href="https://culturebotai.github.io/TraitMech/">TraitMech</a> ·
+    <a href="https://culturebotai.github.io/proteintraitsmech/">ProteinTraitsMech</a> ·
+    <a href="https://culturebotai.github.io/AntibioticMech/">AntibioticMech</a> ·
+    <a href="https://culturebotai.github.io/CellStructureMech/">CellStructureMech</a> ·
+    <a href="https://culturebotai.github.io/NaturalProductMech/">NaturalProductMech</a> ·
+    <a href="https://culturebotai.github.io/DUFMech/">DUFMech</a> ·
+    <a href="https://culturebotai.github.io/PathwayMech/">PathwayMech</a> ·
+    <a href="https://culturebotai.github.io/TaxonMech/">TaxonMech</a> ·
+    <a href="https://culturebotai.github.io/HabitatMech/">HabitatMech</a> ·
+    <a href="https://culturebotai.github.io/AIMech/">AIMech</a> ·
+    <span class="self">CMMMech</span>
+  </p>
+  <p class="fam">
+    <a href="https://github.com/Knowledge-Graph-Hub/kg-microbe">kg-microbe</a> ·
+    <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
+  </p>
+</footer>
+</body>
+</html>
