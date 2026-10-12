@@ -1,0 +1,165 @@
+id: cmmmech:chalcopyrite-enargite-concentrate
+name: Chalcopyrite-enargite concentrate
+material_kind: primary_resource
+description: >-
+  Mixed copper-sulfide mineral concentrates represented by the D3, Eb and Ea
+  feeds in Oyama et al. (2021), distinct from the constituent chalcopyrite and
+  enargite mineral species, the nearly pure model chalcopyrite tested separately
+  in that paper, and the DC-I/DC-II/DC-III enargite-pyrite concentrates examined
+  in Okibe et al. (2022). Figure 1 reports chalcopyrite/enargite/pyrite contents
+  of 12/21/30 wt% for D3, 17/6.7/36 wt% for Eb and 8/24/10 wt% for Ea;
+  bornite, chalcocite, geerite and other phases also occur. The displayed Ea
+  phase labels total 97%, so the figure is not treated as a closed compositional
+  balance. Mine, batch and beneficiation details are not established; the
+  acknowledgments identify an academic supplier for Ea. This owner denotes
+  concentrated geological feed, not a documented discarded residue, a pure
+  phase or a traded product specification. No mineral identifier or constituent
+  criticality designation is inherited.
+sources:
+  - id: oyama_2021
+    title: >-
+      Oyama K, Takamatsu K, Hayashi K, Aoki Y, Kuroiwa S, Hirajima T and Okibe N
+      (2021). Carbon-Assisted Bioleaching of Chalcopyrite and Three
+      Chalcopyrite/Enargite-Bearing Complex Concentrates. Minerals 11(4):432,
+      DOI 10.3390/min11040432. Complete official v2 PDF, 13 pages, Figures 1-6;
+      original three-page supplement, Figures S1-S4. Sections 2.1-2.5 and 3.2
+      support the mixed-feed assays; model-mineral experiments are separate.
+    url: https://doi.org/10.3390/min11040432
+    accessed_on: '2026-10-12'
+  - id: ncbi_caldus
+    title: >-
+      NCBI Taxonomy 33059, Acidithiobacillus caldus, species; type-strain aliases
+      DSM 8584 and KU. Identifier context only, not authentication of the
+      experimental stock or proof of one member's causal contribution.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33059&mode=Info
+    accessed_on: '2026-10-12'
+  - id: okibe_2022
+    title: >-
+      Okibe et al. (2022). Bioleaching of Enargite/Pyrite-Rich Dirty Concentrate
+      and Arsenic Immobilization. Minerals 12(4):449, DOI 10.3390/min12040449.
+      Sections 2-3, Table 1 and Figures 1-3; retained complete original inspected
+      in the preceding curation and rechecked here for owner/experiment scope.
+    url: https://doi.org/10.3390/min12040449
+    accessed_on: '2026-10-12'
+mechanisms:
+  - id: conditional_carbon_assisted_bioleaching
+    name: Feed-dependent carbon-assisted mixed-culture copper dissolution
+    process: bioleaching
+    microbial: true
+    organisms:
+      - id: NCBITaxon:33059
+        label: Acidithiobacillus caldus
+    description: >-
+      Laboratory inoculated concentrate assays showed feed-dependent associations
+      between activated-carbon dose, solution redox trajectory and dissolved
+      copper. For Eb, Section 3.2.1 reports day-30 soluble-copper fractions of
+      74%, 92% and 100% without carbon, with 0.05% w/v carbon and with 0.3% w/v
+      carbon, respectively. For D3, the carbon-free curve plateaued just above
+      60%, whereas 0.05% carbon approached complete dissolution by day 35.
+      For Ea, the carbon-free endpoint was reported as 54%; 0.3% carbon improved
+      early dissolution but 0.05% gave the higher final soluble-copper outcome.
+      These are source-reported mixed-feed dissolved fractions, referenced to
+      copper in each feed, not isolated-metal yields or measured extraction of
+      individual mineral phases. Parallel no-added-cell comparisons and evolving
+      redox/pH profiles constrain the interpretation; the experiment does not
+      establish a universal carbon optimum or a causal effect of the
+      chalcopyrite/enargite ratio alone.
+    context: >-
+      D3, Eb and Ea were used as received without washing or sterilization,
+      with reported D50 values of 39, 81 and 49 micrometres. Duplicate 500 mL
+      flasks contained 200 mL heterotrophic basal salts medium, 1% w/v feed,
+      5 mM ferrous iron supplied as ferrous sulfate, 0.01% w/v elemental sulfur
+      and 0.01% w/v yeast extract. Initial medium pH was 1.5; sulfuric acid
+      readjustment to 1.5 occurred on days 2 and 3 for D3 and day 4 for Eb,
+      with no readjustment for Ea. Cultures were shaken aerobically at
+      45 degrees C and 150 rpm. Four source-labelled early-stationary-phase
+      cultures, Acidiplasma sp. Fv-Ap, Acidimicrobium ferrooxidans ICP
+      (DSM 10331), Sulfobacillus sibiricus N1 (DSM 17363) and Acidithiobacillus
+      caldus KU (DSM 8584), were harvested, washed and introduced at
+      10^7 cells/mL each, 4 x 10^7 cells/mL total. The structured taxon names
+      one verified species member only; no terminal community or member-specific
+      causal census was performed. Powdered Wako activated carbon was reported
+      as 46.5 micrometres and 1400 square metres/g; D3 received 0 or 0.05% w/v,
+      and Eb/Ea 0, 0.05 or 0.3% w/v. Figure 6 covers approximately 30-35 days
+      depending on feed, rather than a shared endpoint across all feeds.
+      ICP-OES measured total soluble Cu, As and Fe; ferrous iron was measured
+      separately and planktonic cells counted directly. Source-derived percentages
+      are not an independently reconstructed sampling-corrected mass balance.
+      Added iron and sulfur, variable phase assemblages, size, acid dosing and
+      possible unmeasured reagent carryover limit cross-feed comparisons.
+    evidence:
+      - source_ref: oyama_2021
+        supports: support
+        explanation: >-
+          Sections 2.1-2.5 and 3.2, Figures 1, 5 and 6 and Figure S4 support
+          the specified mixed-feed identity, inoculation and conditional copper
+          dissolution. Eb favored 0.3% carbon at its endpoint, whereas Ea favored
+          0.05% at its endpoint despite faster early leaching at 0.3%. D3 tests
+          plotted only 0 and 0.05%; the claim that higher doses did not improve
+          D3 is explicitly attributed to unpublished data and is not adopted
+          as an available measured dose-response. Figure 6 reports duplicate
+          averages/error bars without establishing a statistical effect test.
+      - source_ref: oyama_2021
+        supports: partial
+        explanation: >-
+          Section 3.2 calls the controls sterile, but Section 2.1 explicitly
+          states that the mixed concentrates were not sterilized. They are
+          interpreted as no-added-cell comparators, not verified abiotic systems.
+          Figure 6 includes substantial copper dissolution in control curves
+          for D3 and Ea; low control redox potential does not prove zero
+          dissolution or biological necessity. The article does not provide
+          the same explicit control copper endpoints for every feed. Different
+          pH trajectories and feed-specific acid adjustments prevent a clean
+          estimate of microbial or carbon effects independent of chemistry.
+      - source_ref: oyama_2021
+        supports: partial
+        explanation: >-
+          Figure 5 calculates theoretical Cu atomic shares upon complete
+          dissolution of each mineral, not observed phase-resolved extraction.
+          The model Enormal is defined for chalcopyrite and is not independently
+          validated for every phase in these mixed feeds. Electrochemical
+          galvanic tests, detailed rate analyses, and residue XRD/SEM in
+          Figures 2-4 and S1-S3 concern the separate model-chalcopyrite arm;
+          they do not directly prove the same pathway or passivating phase
+          for D3, Eb or Ea. Reported associations between redox behavior and
+          feed composition are not a controlled mineral-ratio experiment.
+      - source_ref: oyama_2021
+        supports: partial
+        explanation: >-
+          Section 3.2.3 broadly describes roughly 60% arsenic leaching and
+          proposes amorphous Fe-As precipitation for the rest. Figure S4
+          instead shows strongly arm-dependent soluble arsenic, including
+          much lower values in several carbon-free and high-carbon conditions.
+          No uniform 60% arsenic extraction or complementary immobilization
+          yield is adopted. Dissolved total arsenic is not oxidation-state
+          speciation; no mixed-feed secondary-phase identification or closed
+          arsenic balance demonstrates the proposed precipitate. Source iron
+          curves also contain initially added 5 mM Fe and cannot be read as
+          mineral-derived iron alone. Suggested cell attachment, inhibition
+          or flotation-chemical toxicity is not directly discriminated.
+      - source_ref: ncbi_caldus
+        supports: context_only
+        explanation: >-
+          The current official species entry verifies NCBITaxon:33059 and
+          lists DSM 8584 and KU as type-strain aliases. This does not
+          authenticate the experimental culture or identify the remaining
+          community members through the same accession.
+      - source_ref: okibe_2022
+        supports: context_only
+        explanation: >-
+          The existing enargite-pyrite owner concerns different DC-I/DC-II/DC-III
+          compositions at 20% w/v feed with six starting organisms and a
+          60-day design. The 2021 D3/Eb/Ea assays are not pooled with those
+          results. The 2021 introduction's separate 2020 precursor with
+          37.4% enargite and 47.3% pyrite resembles nominal 2022 DC-II; it is
+          not a D3/Eb/Ea composition or evidence of independent replication.
+curation_history:
+  - timestamp: '2026-10-12T11:44:52.561004Z'
+    curator: Codex (GPT-6)
+    action: create
+    summary: >-
+      Created the distinct D3/Eb/Ea mixed-feed owner from complete official
+      main and supplementary evidence, preserving control, quantitative,
+      phase, version and experimental-overlap limits.
+history_refs:
+  - history/records/chalcopyrite-enargite-concentrate/2026-10-12T114445Z-codex-48240b.yaml

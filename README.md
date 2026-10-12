@@ -8,7 +8,7 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 261 material records.
+The catalogue currently contains 264 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
@@ -273,6 +273,9 @@ The catalogue currently contains 261 material records.
 | [Ion-adsorption rare-earth leach residue](data/records/ion-adsorption-rare-earth-leach-residue.yaml) | Fungal/metabolite treatment of a chemically prepared residue | Laboratory preparation, source percentage and control limits; no industrial tailings deployment |
 | [Tetrahedrite concentrate](data/records/tetrahedrite-concentrate.yaml) | Separate acidophile leaching assays on a mixed flotation feed | Abiotic comparison and source unit/composition conflicts; no isolated product |
 | [Enargite-pyrite concentrate](data/records/enargite-pyrite-concentrate.yaml) | Conditional copper mobilization from three high-arsenic feeds | Nonsterile controls, differing carbon responses and conflicting arsenic values |
+| [Chalcopyrite-enargite concentrate](data/records/chalcopyrite-enargite-concentrate.yaml) | Mixed-feed acidophile bioleaching with carbon | Nonsterilized controls and theoretical copper contributions limit causal claims |
+| [Nickeline-bearing ore](data/records/nickeline-bearing-ore.yaml) | Mixed-culture nickel mobilization from two natural feed grades | Ferric-only dissolution and source inconsistencies limit microbial attribution |
+| [Zirconolite](data/records/zirconolite.yaml) | Current mineral identity and natural metamict specimen | No inferred polytype, microbial mechanism or criticality designation |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -336,7 +339,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [fifty-third expansion reviews](research/ingests/round53-20261012-publication.md),
 [fifty-fourth expansion reviews](research/ingests/round54-20261012-publication.md),
 [fifty-fifth expansion reviews](research/ingests/round55-20261012-publication.md),
-[remaining ingest priorities](research/ingests/round55-frontier-20261012.md), and
+[fifty-sixth expansion reviews](research/ingests/round56-20261012-publication.md),
+[remaining ingest priorities](research/ingests/round56-frontier-20261012.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

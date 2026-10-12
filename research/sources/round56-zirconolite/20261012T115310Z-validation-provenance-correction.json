@@ -1,0 +1,37 @@
+{
+  "recorded_at": "2026-10-12T11:53:10.029181Z",
+  "author": "codex (GPT-6; codex)",
+  "scope": "Source-dossier validation provenance correction only; no record, history or scientific change.",
+  "prior_dossier": {
+    "path": "research/sources/round56-zirconolite/20261012T115021Z-source-investigation.json",
+    "sha256": "4c8004579fe99b0d7201f5a56815df66e71b9aa758d4f7adc6830bc8cc3dbe71"
+  },
+  "finding": "The initial dossier validation.command string was reconstructed incorrectly as uv run python scripts/validate_records.py data/records/zirconolite.yaml. That script does not exist in the current repository; do not treat this string as an executed command. Its original validation output remains retained, but it does not establish that incorrect command.",
+  "correction": "Executed a fresh named CLI validation and recorded its exact argv, working directory, actual timestamps, terminal status and raw log hash. This receipt supersedes the initial dossier command provenance without editing the original dossier.",
+  "actual_validation": {
+    "started_at": "2026-10-12T11:53:08.181840Z",
+    "finished_at": "2026-10-12T11:53:10.027798Z",
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "cmmmech",
+      "validate",
+      "data/records/zirconolite.yaml"
+    ],
+    "cwd": "/private/tmp/CMMMech-expansion-round56-20261012",
+    "exit_code": 0,
+    "log": "/private/tmp/cmm-round56-zirconolite-research/named-validation-recheck.log",
+    "log_sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e"
+  },
+  "result": "Checked 1 record(s); 0 failed.",
+  "record": {
+    "path": "data/records/zirconolite.yaml",
+    "sha256": "8e57937517a5c266d8dc6cb2e3ab96cd33de6230c046244a80538496f39dfe60"
+  },
+  "history": {
+    "path": "history/records/zirconolite/2026-10-12T114555Z-codex-d41d0d.yaml",
+    "sha256": "9ff91c20e72eb259a702ed48ff070a89fea201c21e81b9827a0337620b62588e"
+  },
+  "review_boundary": "Detected by the curator before independent final scientific review; request reviewer to capture this additional context. No fake record EDIT event for metadata-only dossier correction."
+}

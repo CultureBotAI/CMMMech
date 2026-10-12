@@ -1,0 +1,523 @@
+# Independent scientific review of nickeline-bearing ore
+
+- Review: 20261012T115400Z-nickeline-bearing-ore-round56-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-12T11:49:42Z
+- Finished UTC: 2026-10-12T11:54:00Z
+- Reviewer: Codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The natural ore identity and narrow culture-associated nickel mobilization are supported by complete primary main and supplement evidence. Control limits, transient dissolution, unresolved source conflicts and phase/kinetic uncertainty remain explicit; no corrective record finding identified.
+
+## Scope And Provenance
+
+Entire frozen record, actualCREATEhistory, paired source dossier and schema; all12originalmain pages and15local-renderedSIpages, including all figures/tables; fresh genus authority and bounded notice/dedup checks.
+
+Selection: Independent review of one newly curated maintained primary-resource owner.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 934bb36319e857321840c0ae145664ca6910c382.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:nickeline-bearing-ore | data/records/nickeline-bearing-ore.yaml | maintained | Nickeline-bearing ore |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named validation | passed | True | cmmmech:nickeline-bearing-ore | Reviewer executed named validation and read terminal log:1checked0failed. |
+| Exact input and evidence preservation | passed | True | cmmmech:nickeline-bearing-ore | Five inspected inputs,82raw artifacts and12external receipt hashes verified; initial record/history/schema capture unchanged when frozen dossiers were added. |
+| Completed cohort batch | passed | True | cmmmech:nickeline-bearing-ore | Root executed command; terminal status and exact log SHA256 verified. No future check inferred. |
+| Completed cohort nonempty | passed | True | cmmmech:nickeline-bearing-ore | Root executed command; terminal status and exact log SHA256 verified. No future check inferred. |
+| Completed cohort history | passed | True | cmmmech:nickeline-bearing-ore | Root executed command; terminal status and exact log SHA256 verified. No future check inferred. |
+| Completed cohort render-check | passed | True | cmmmech:nickeline-bearing-ore | Root executed command; terminal status and exact log SHA256 verified. No future check inferred. |
+
+## Scientific And Domain Assessments
+
+### Natural ore owner and feed arms
+
+identity: supported. Targets: cmmmech:nickeline-bearing-ore.
+
+Patang low-grade and Talmesi high-grade geological feeds justify one primary_resource owner with distinct arms. BulkNi/As values4.93/5%and33.4/50% exactly matchTableS1; they are not pure-phase formulas or universal grades. No constituent criticality, mineral identifier or processing-waste identity is inherited.
+
+### Mixed culture identity and conditions
+
+evidence: supported. Targets: cmmmech:nickeline-bearing-ore.
+
+Record accurately reproduces source-reported mesophilic and moderately thermophilic membership with no strain/community authentication. The latter includesArchaea. Culture volume, inoculum, initialpH, shaking,temperature,grinding and loading series matchMethods/Table1; cultivation versus test amendments,adaptation andcell-countbasis remain explicitly uncertain.
+
+### Culture association versus unique microbial advantage
+
+evidence: supported. Targets: cmmmech:nickeline-bearing-ore.
+
+Initial-pH-only, daily-acid and ferric-only arms are correctly distinguished. Figures1f/3f show near-complete early ferric-only dissolution; culture peaks and later declines prevent universal biological superiority or sustained endpoint claims. Unspecified sterilization/inhibition and biological replication remain explicit.
+
+### Source outcomes and contradictions
+
+quantity: supported. Targets: cmmmech:nickeline-bearing-ore.
+
+The adopted nine-day near-complete low-grade statement is attributed to3.3 and paired with observed declines, not promoted into isolated yield. Record preserves numbering,loading,day,substrate-benefit andSI-locator contradictions. No ambiguous Co/Cu arm-specific endpoint or fitted model is adopted as mechanistic proof.
+
+### Residue and kinetic limits
+
+evidence: supported. Targets: cmmmech:nickeline-bearing-ore.
+
+S7–S12 support altered surfaces and tentative jarosite/scorodite-compatible phase interpretation. LocalEDX and plotted reference-pattern scaling do not measure bulk phase yields or close arsenic balance. Added sulfur precludes an all-feed origin; S13fits do not prove direct enzyme pathways.
+
+### Actual histories and final-byte checks
+
+provenance: supported. Targets: cmmmech:nickeline-bearing-ore.
+
+CanonicalCREATE and distinct inlineevent describe real curation. MainDOI/authors/online-versus-issue dates verified; supplement title matches. All captured inputs and evidence digests match. No maintained input was changed by reviewer; all required cohort checks completed.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/nickeline-bearing-ore.yaml; Entire captured input | supports | Read maintained input and verified unchanged bytes; native capture preserves trusted main base and working-tree provenance. |
+| history | history/records/nickeline-bearing-ore/2026-10-12T114742Z-codex-afabd0.yaml; Entire captured input | supports | Read maintained input and verified unchanged bytes; native capture preserves trusted main base and working-tree provenance. |
+| dossier_json | research/sources/round56-nickel-arsenic-ore/20261012T115044Z-source-investigation.json; Entire captured input | supports | Read maintained input and verified unchanged bytes; native capture preserves trusted main base and working-tree provenance. |
+| dossier_md | research/sources/round56-nickel-arsenic-ore/20261012T115044Z-source-investigation.md; Entire captured input | supports | Read maintained input and verified unchanged bytes; native capture preserves trusted main base and working-tree provenance. |
+| schema | src/cmmmech/schema/cmmmech.yaml; Entire captured input | supports | Read maintained input and verified unchanged bytes; native capture preserves trusted main base and working-tree provenance. |
+| primary | https://doi.org/10.1016/j.chemosphere.2024.143944; Original12pages; methods2.1–2.4; Table1; Figures1–6; results3.1–3.6/conclusion | supports | Independently inspected all twelve original-page renders, full methods/results and source identity. Table1, control types, Figure1f/3f ferric-only early dissolution and declining peaks, Figure6 arm conflicts and model/phase limits checked directly. |
+| supplement | https://ars.els-cdn.com/content/image/1-s2.0-S0045653524028522-mmc1.docx; Original DOCX; TableS1/FiguresS1–S14; all15pages of local derivative | supports | Read complete extracted text/captions and personally viewed all fifteen local-rendered pages. Bulk percentages, particle distributions, original/residue XRD, localEDX, ambiguousS8/S9 time assignment and fitted S13 were checked. Derivative pagination is not publisher pagination. |
+| taxon | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=74968&amp;mode=Info; Current name, rank and lineage | context_only | Fresh official browser verifies74968 is Ferroplasma, genus, withinArchaea. It does not authenticate the experimental mixed culture; record has no consortium CURIE. |
+| notices | /private/tmp/cmm-round56-nickeline-review/primary-web.json; ExactDOI correction/erratum/retraction and nickeline/Boroumand query sets | supports | No affecting notice appeared in these returned results.2024heterotroph paper DOI10.1016/j.jece.2024.112141 was found as a different experimental lead; no abstract mechanism was imported. Curator Crossref relation/update metadata independently inspected. |
+| dedup | /private/tmp/cmm-round56-nickeline-review/dedup.json; Current scientific directories plus broader curator receipts | supports | Reviewer repeated current hidden/ignored-inclusive symlink-following exact-topic text search; only this maintained owner matched. Curator receipts separately cover both checkouts and205 available referenced roots. Oversized broad raw output is explicitly not claimed fully read; narrower exact-token and experiment passes provide the actual assessment. |
+| gates | /private/tmp/cmm-round56-final-terminal.json; Completed batch, nonempty, history and rendered-page checks | supports | All four actual commands completed exit0; log hashes checked. Independent named validation checked1record/0failed. Offline validity is not scientific verification. |
+
+## Limits And Additional Notes
+
+- Unspecified sterilization/adaptation/replication and unmatchedpH trajectories prevent quantitative attribution to particular culture members or a universal microbial advantage.
+- Source test-number/loading/day discrepancies remain; no exact optimum or ambiguousCo/Cu endpoint is harmonized.
+- DissolvedNi peaks may decline; isolated product, closedAs/Ni balances and long-term residue stability remain unestablished.
+- Kinetic fits,SEM/EDX and reference-pattern overlays do not prove direct enzyme causality or bulk secondary-phase yields.
+- Notice/dedup scope is bounded; unavailable raw roots, oversized broad output and unextracted binary limits are disclosed by curator. Heterotroph2024full-primary extension remains deferred.
+- No maintained input changed by independent reviewer. This review does not assert laboratory replication, independent GitHub-account approval or hosted publication.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261012T115400Z-nickeline-bearing-ore-round56-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of nickeline-bearing ore
+started_at: '2026-10-12T11:49:42Z'
+finished_at: '2026-10-12T11:54:00Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Record/history/dossier authored by /root/round43_hardmetal.
+    Root captured exact maintained state before judgment, independently inspected
+    all main and supplementary graphics, methods and evidence, and made no scientific
+    input edit. Batch coordination and README/site rendering are separate from record
+    authorship.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The natural ore identity and narrow culture-associated nickel mobilization
+  are supported by complete primary main and supplement evidence. Control limits,
+  transient dissolution, unresolved source conflicts and phase/kinetic uncertainty
+  remain explicit; no corrective record finding identified.
+source:
+  git_revision: 934bb36319e857321840c0ae145664ca6910c382
+  state: working_tree
+  inputs:
+  - path: data/records/nickeline-bearing-ore.yaml
+    sha256: ed5380b36177b247c2adbb0b63444f8663c7bbad02ea438c29800e05a270a47a
+    role: target
+  - path: history/records/nickeline-bearing-ore/2026-10-12T114742Z-codex-afabd0.yaml
+    sha256: 1367e6b8d34a651f5db58f0c40a569e31b5051653f225a146e9317080435cbb8
+    role: context
+  - path: research/sources/round56-nickel-arsenic-ore/20261012T115044Z-source-investigation.json
+    sha256: 6138d148d0305434bdf72a847a5b9424e829e5c88aebc272e4579641004068c3
+    role: context
+  - path: research/sources/round56-nickel-arsenic-ore/20261012T115044Z-source-investigation.md
+    sha256: 9c581a86bc9bf8e81be1ef88ff6342d6e5c8ea63dd18ea5e8de4a79e18bd3f3b
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:nickeline-bearing-ore
+  path: data/records/nickeline-bearing-ore.yaml
+  label: Nickeline-bearing ore
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/nickeline-bearing-ore.yaml
+    role: maintained_record
+scope:
+  description: Entire frozen record, actualCREATEhistory, paired source dossier and
+    schema; all12originalmain pages and15local-renderedSIpages, including all figures/tables;
+    fresh genus authority and bounded notice/dedup checks.
+  selection: Independent review of one newly curated maintained primary-resource owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:nickeline-bearing-ore
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/nickeline-bearing-ore.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:nickeline-bearing-ore
+  summary: Reviewer executed named validation and read terminal log:1checked0failed.
+- check_id: hashes
+  name: Exact input and evidence preservation
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:nickeline-bearing-ore
+  summary: Five inspected inputs,82raw artifacts and12external receipt hashes verified;
+    initial record/history/schema capture unchanged when frozen dossiers were added.
+- check_id: cohort_batch
+  name: Completed cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:nickeline-bearing-ore
+  evidence_ids:
+  - gates
+  summary: Root executed command; terminal status and exact log SHA256 verified. No
+    future check inferred.
+- check_id: cohort_nonempty
+  name: Completed cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:nickeline-bearing-ore
+  evidence_ids:
+  - gates
+  summary: Root executed command; terminal status and exact log SHA256 verified. No
+    future check inferred.
+- check_id: cohort_history
+  name: Completed cohort history
+  command: uv run --locked cmmmech validate-history --base 934bb36319e857321840c0ae145664ca6910c382
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:nickeline-bearing-ore
+  evidence_ids:
+  - gates
+  summary: Root executed command; terminal status and exact log SHA256 verified. No
+    future check inferred.
+- check_id: cohort_render_check
+  name: Completed cohort render-check
+  command: just render-check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:nickeline-bearing-ore
+  evidence_ids:
+  - gates
+  summary: Root executed command; terminal status and exact log SHA256 verified. No
+    future check inferred.
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/nickeline-bearing-ore.yaml
+  locator: Entire captured input
+  accessed_at: '2026-10-12T11:54:00Z'
+  support: supports
+  summary: Read maintained input and verified unchanged bytes; native capture preserves
+    trusted main base and working-tree provenance.
+  snapshot_sha256: ed5380b36177b247c2adbb0b63444f8663c7bbad02ea438c29800e05a270a47a
+- evidence_id: history
+  kind: record_content
+  reference: history/records/nickeline-bearing-ore/2026-10-12T114742Z-codex-afabd0.yaml
+  locator: Entire captured input
+  accessed_at: '2026-10-12T11:54:00Z'
+  support: supports
+  summary: Read maintained input and verified unchanged bytes; native capture preserves
+    trusted main base and working-tree provenance.
+  snapshot_sha256: 1367e6b8d34a651f5db58f0c40a569e31b5051653f225a146e9317080435cbb8
+- evidence_id: dossier_json
+  kind: record_content
+  reference: research/sources/round56-nickel-arsenic-ore/20261012T115044Z-source-investigation.json
+  locator: Entire captured input
+  accessed_at: '2026-10-12T11:54:00Z'
+  support: supports
+  summary: Read maintained input and verified unchanged bytes; native capture preserves
+    trusted main base and working-tree provenance.
+  snapshot_sha256: 6138d148d0305434bdf72a847a5b9424e829e5c88aebc272e4579641004068c3
+- evidence_id: dossier_md
+  kind: record_content
+  reference: research/sources/round56-nickel-arsenic-ore/20261012T115044Z-source-investigation.md
+  locator: Entire captured input
+  accessed_at: '2026-10-12T11:54:00Z'
+  support: supports
+  summary: Read maintained input and verified unchanged bytes; native capture preserves
+    trusted main base and working-tree provenance.
+  snapshot_sha256: 9c581a86bc9bf8e81be1ef88ff6342d6e5c8ea63dd18ea5e8de4a79e18bd3f3b
+- evidence_id: schema
+  kind: record_content
+  reference: src/cmmmech/schema/cmmmech.yaml
+  locator: Entire captured input
+  accessed_at: '2026-10-12T11:54:00Z'
+  support: supports
+  summary: Read maintained input and verified unchanged bytes; native capture preserves
+    trusted main base and working-tree provenance.
+  snapshot_sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.chemosphere.2024.143944
+  locator: Original12pages; methods2.1–2.4; Table1; Figures1–6; results3.1–3.6/conclusion
+  accessed_at: '2026-10-12T11:54:00Z'
+  support: supports
+  summary: Independently inspected all twelve original-page renders, full methods/results
+    and source identity. Table1, control types, Figure1f/3f ferric-only early dissolution
+    and declining peaks, Figure6 arm conflicts and model/phase limits checked directly.
+  snapshot_sha256: 8a75e85ab6749ab0ef59cef478434b5d42d13b3091b47d6b2921e6a9c056cd25
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S0045653524028522-mmc1.docx
+  locator: Original DOCX; TableS1/FiguresS1–S14; all15pages of local derivative
+  accessed_at: '2026-10-12T11:54:00Z'
+  support: supports
+  summary: Read complete extracted text/captions and personally viewed all fifteen
+    local-rendered pages. Bulk percentages, particle distributions, original/residue
+    XRD, localEDX, ambiguousS8/S9 time assignment and fitted S13 were checked. Derivative
+    pagination is not publisher pagination.
+  snapshot_sha256: cf29abce2b3db348c2b2a9743888d36aa3a2ba2d745ecef7462c94cd81ea20f7
+- evidence_id: taxon
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=74968&mode=Info
+  locator: Current name, rank and lineage
+  accessed_at: '2026-10-12T11:54:00Z'
+  support: context_only
+  summary: Fresh official browser verifies74968 is Ferroplasma, genus, withinArchaea.
+    It does not authenticate the experimental mixed culture; record has no consortium
+    CURIE.
+  snapshot_sha256: 4aca8a913e4b870576c0d45284e7b28360ebda45529ed26a55998a8b820d7d4d
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round56-nickeline-review/primary-web.json
+  locator: ExactDOI correction/erratum/retraction and nickeline/Boroumand query sets
+  accessed_at: '2026-10-12T11:54:00Z'
+  support: supports
+  summary: No affecting notice appeared in these returned results.2024heterotroph
+    paper DOI10.1016/j.jece.2024.112141 was found as a different experimental lead;
+    no abstract mechanism was imported. Curator Crossref relation/update metadata
+    independently inspected.
+  snapshot_sha256: 79b0939e80326e14cacd9a155ba6a7c9b73dd325ff97fc097d05238f30ca24ab
+  search_scope: First returned web result sets only; no pagination or comprehensive
+    notice-absence assertion. Official primary source and original supplement inspected
+    independently of snippets.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round56-nickeline-review/dedup.json
+  locator: Current scientific directories plus broader curator receipts
+  accessed_at: '2026-10-12T11:54:00Z'
+  support: supports
+  summary: Reviewer repeated current hidden/ignored-inclusive symlink-following exact-topic
+    text search; only this maintained owner matched. Curator receipts separately cover
+    both checkouts and205 available referenced roots. Oversized broad raw output is
+    explicitly not claimed fully read; narrower exact-token and experiment passes
+    provide the actual assessment.
+  snapshot_sha256: 2c869fb0b14998e48d49e9eab2ca44f83d3add646e3da8d3d3190665f9ebe69a
+  search_scope: rg --hidden --no-ignore --follow in data/records,research,reviews,history;
+    curator external-root and unavailable-root limits retained. No semantic search
+    of unextracted binary originals or unrelated home/temp directories.
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round56-final-terminal.json
+  locator: Completed batch, nonempty, history and rendered-page checks
+  accessed_at: '2026-10-12T11:54:00Z'
+  support: supports
+  summary: All four actual commands completed exit0; log hashes checked. Independent
+    named validation checked1record/0failed. Offline validity is not scientific verification.
+  snapshot_sha256: 97e5cd970f2fc85dde5596cf2ed0f5381109d1eab25104bb40d3176973a40890
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Natural ore owner and feed arms
+  outcome: supported
+  summary: Patang low-grade and Talmesi high-grade geological feeds justify one primary_resource
+    owner with distinct arms. BulkNi/As values4.93/5%and33.4/50% exactly matchTableS1;
+    they are not pure-phase formulas or universal grades. No constituent criticality,
+    mineral identifier or processing-waste identity is inherited.
+  target_ids:
+  - cmmmech:nickeline-bearing-ore
+  evidence_ids:
+  - record
+  - primary
+  - supplement
+  - dedup
+  dimensions:
+  - name: material_form
+    value: Natural heterogeneous nickeline-bearing ore
+    definition: Two source-specific grades retain carbonate/quartz gangue and distinct
+      geological provenance.
+    evidence_ids:
+    - primary
+    - supplement
+  - name: criticality
+    value: None asserted
+    definition: No authority/jurisdiction/list/edition assignment or transfer from
+      nickel.
+    evidence_ids:
+    - record
+- assessment_id: biology
+  area: evidence
+  topic: Mixed culture identity and conditions
+  outcome: supported
+  summary: Record accurately reproduces source-reported mesophilic and moderately
+    thermophilic membership with no strain/community authentication. The latter includesArchaea.
+    Culture volume, inoculum, initialpH, shaking,temperature,grinding and loading
+    series matchMethods/Table1; cultivation versus test amendments,adaptation andcell-countbasis
+    remain explicitly uncertain.
+  target_ids:
+  - cmmmech:nickeline-bearing-ore
+  evidence_ids:
+  - record
+  - primary
+  - taxon
+  dimensions:
+  - name: organism_and_biomass
+    value: Live mixed acidophiles; source-reported membership
+    definition: No species identifier stands in for a consortium or proves a member-specific
+      causal contribution.
+    evidence_ids:
+    - primary
+    - taxon
+  - name: conditions
+    value: 100mL in250mL flasks;35/45C;initialpH1.8;150rpm
+    definition: Laboratory culture conditions; no assertion of constantpH or fully
+      resolved amendment backgrounds.
+    evidence_ids:
+    - primary
+- assessment_id: controls
+  area: evidence
+  topic: Culture association versus unique microbial advantage
+  outcome: supported
+  summary: Initial-pH-only, daily-acid and ferric-only arms are correctly distinguished.
+    Figures1f/3f show near-complete early ferric-only dissolution; culture peaks and
+    later declines prevent universal biological superiority or sustained endpoint
+    claims. Unspecified sterilization/inhibition and biological replication remain
+    explicit.
+  target_ids:
+  - cmmmech:nickeline-bearing-ore
+  evidence_ids:
+  - record
+  - primary
+  dimensions:
+  - name: controls
+    value: Uninoculated initial-pH, daily-acid and ferric comparisons
+    definition: Not matched evolvingpH trajectories; direct metabolism, acid and ferric
+      contributions cannot be individually quantified.
+    evidence_ids:
+    - primary
+- assessment_id: outcomes
+  area: quantity
+  topic: Source outcomes and contradictions
+  outcome: supported
+  summary: The adopted nine-day near-complete low-grade statement is attributed to3.3
+    and paired with observed declines, not promoted into isolated yield. Record preserves
+    numbering,loading,day,substrate-benefit andSI-locator contradictions. No ambiguous
+    Co/Cu arm-specific endpoint or fitted model is adopted as mechanistic proof.
+  target_ids:
+  - cmmmech:nickeline-bearing-ore
+  evidence_ids:
+  - record
+  - primary
+  - supplement
+  dimensions:
+  - name: outcome
+    value: Liquid-phase nickel mobilization
+    definition: No separately closed sampling-corrected solid/liquid balance or isolated
+      nickel product.
+    evidence_ids:
+    - primary
+  - name: deployment
+    value: Laboratory shake-flask assays
+    definition: Mine-origin inoculum/feed and source sustainability rhetoric do not
+      demonstrate industrial operation.
+    evidence_ids:
+    - primary
+- assessment_id: phases
+  area: evidence
+  topic: Residue and kinetic limits
+  outcome: supported
+  summary: S7–S12 support altered surfaces and tentative jarosite/scorodite-compatible
+    phase interpretation. LocalEDX and plotted reference-pattern scaling do not measure
+    bulk phase yields or close arsenic balance. Added sulfur precludes an all-feed
+    origin; S13fits do not prove direct enzyme pathways.
+  target_ids:
+  - cmmmech:nickeline-bearing-ore
+  evidence_ids:
+  - record
+  - primary
+  - supplement
+- assessment_id: provenance
+  area: provenance
+  topic: Actual histories and final-byte checks
+  outcome: supported
+  summary: CanonicalCREATE and distinct inlineevent describe real curation. MainDOI/authors/online-versus-issue
+    dates verified; supplement title matches. All captured inputs and evidence digests
+    match. No maintained input was changed by reviewer; all required cohort checks
+    completed.
+  target_ids:
+  - cmmmech:nickeline-bearing-ore
+  evidence_ids:
+  - history
+  - record
+  - dossier_json
+  - dossier_md
+  - schema
+  - gates
+findings: []
+actions: []
+limitations:
+- Unspecified sterilization/adaptation/replication and unmatchedpH trajectories prevent
+  quantitative attribution to particular culture members or a universal microbial
+  advantage.
+- Source test-number/loading/day discrepancies remain; no exact optimum or ambiguousCo/Cu
+  endpoint is harmonized.
+- DissolvedNi peaks may decline; isolated product, closedAs/Ni balances and long-term
+  residue stability remain unestablished.
+- Kinetic fits,SEM/EDX and reference-pattern overlays do not prove direct enzyme causality
+  or bulk secondary-phase yields.
+- Notice/dedup scope is bounded; unavailable raw roots, oversized broad output and
+  unextracted binary limits are disclosed by curator. Heterotroph2024full-primary
+  extension remains deferred.
+notes:
+- No maintained input changed by independent reviewer. This review does not assert
+  laboratory replication, independent GitHub-account approval or hosted publication.
+tags:
+- round56
+- nickeline-bearing-ore
+- independent
+- bioleaching
+- primary-resource
+```
