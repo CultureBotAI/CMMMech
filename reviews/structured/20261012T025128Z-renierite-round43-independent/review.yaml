@@ -1,0 +1,319 @@
+schema_version: 1.0.0
+review_id: 20261012T025128Z-renierite-round43-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Renierite
+started_at: '2026-10-12T02:37:04.031678Z'
+finished_at: '2026-10-12T02:51:28.904057Z'
+reviewer:
+  identity: Codex /root/round43_hardmetal
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored the mineral records, histories and source dossier.
+    This reviewer authored none of those bytes and independently inspected source
+    images/text, refreshed primary downloads, checked nomenclature/scope and validated
+    records. Reviewer curated a separate titanium record in this batch.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Dated mineral identity and bounded primary mineralogical context are supported,
+  with specimen, nomenclature and evidence limits preserved. No corrective findings
+  in the whole-record scope.
+source:
+  git_revision: 59e24ec38d9c7b377dcfeade1637b298aab9623e
+  state: working_tree
+  inputs:
+  - path: data/records/renierite.yaml
+    sha256: a1c9a0a102aa07ff9f99dfc7463e9bf2b80fb58af52bbabc533d48604787f58c
+    role: target
+  - path: history/records/renierite/2026-10-12T023456Z-codex-602bee.yaml
+    sha256: ba48e5264f506436d695ca09bc1edb1cee134745483ac37f8e7920fcec36db2c
+    role: context
+  - path: research/sources/round43-ge-minerals/20261012T023445Z-source-investigation.json
+    sha256: 2ea7a4c287e9b9fb1048ec29eb97c6563b961b4c15d2f0422875117ef8f72210
+    role: context
+targets:
+- target_id: cmmmech:renierite
+  path: data/records/renierite.yaml
+  label: Renierite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/renierite.yaml
+    role: scientific_record
+scope:
+  description: Whole new mineral identity record, source-backed description and canonical
+    CREATE provenance.
+  selection: All claims in this assigned new material owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:renierite
+  exclusions:
+  - target: Unasserted extraction experiments, detailed physical-property values and
+      later crystallographic refinements
+    reason: Not claimed by the record; require a separately scoped primary assessment
+      before curation.
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/germanite.yaml data/records/renierite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Reviewer executed to terminal 0 (session 4668), Checked 2 record(s); 0
+    failed. Log /private/tmp/cmm-round43-ge-independent-named.log SHA256 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+  target_ids:
+  - cmmmech:renierite
+- check_id: batch
+  name: Completed parent batch gate
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed to terminal 0; reviewer independently read and hash-verified
+    receipt/log. /private/tmp/cmm-round43-final-v2-batch.log SHA256 3b461ec716372779d864a3273f66a8f5e36a3275912d2edc011da55513defab4.
+    uv run --locked --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 214.77s (0:03:34)
+
+    Checked 220 record(s); 0 failed.
+
+    Checked 259 history record(s); 0 error(s).'
+  target_ids:
+  - cmmmech:renierite
+- check_id: nonempty
+  name: Completed parent nonempty gate
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Parent executed to terminal 0; reviewer independently read and hash-verified
+    receipt/log. /private/tmp/cmm-round43-final-v2-nonempty.log SHA256 5f5111acf2e1d4f13998e3baccfe8b9a433c95528bd47cfbc3572bbbef706f99.
+    Checked 220 record(s); 0 failed.
+  target_ids:
+  - cmmmech:renierite
+- check_id: history
+  name: Completed parent history gate
+  command: uv run --locked cmmmech validate-history --base 59e24ec38d9c7b377dcfeade1637b298aab9623e
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Parent executed to terminal 0; reviewer independently read and hash-verified
+    receipt/log. /private/tmp/cmm-round43-final-v2-history.log SHA256 a7e1e37a7ef921c16b129f63f7319e52d3effcf1660ec0e77c1d93369e0f3063.
+    Checked 259 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:renierite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/renierite.yaml
+  locator: Whole exact current record
+  accessed_at: '2026-10-12T02:51:28.904057Z'
+  support: supports
+  summary: September 2026 IMA gives Renierite, (Cu1+,Zn)11Fe4(Ge4+,As5+)2S16, Rn status
+    and 2007 s.p. The dated special procedure is not an approval-number CURIE. The
+    older Handbook accent and within-species zincian/arsenian endmembers are not separate
+    accepted species.
+  snapshot_sha256: a1c9a0a102aa07ff9f99dfc7463e9bf2b80fb58af52bbabc533d48604787f58c
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September 2026 PDF definitions page 1 and species row page 184
+  accessed_at: '2026-10-12T02:51:28.904057Z'
+  support: supports
+  summary: September 2026 IMA gives Renierite, (Cu1+,Zn)11Fe4(Ge4+,As5+)2S16, Rn status
+    and 2007 s.p. The dated special procedure is not an approval-number CURIE. The
+    older Handbook accent and within-species zincian/arsenian endmembers are not separate
+    accepted species.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://handbookofmineralogy.org/pdfs/renierite.pdf
+  locator: Complete version 1 copyright 2001-2005 one-page entry
+  accessed_at: '2026-10-12T02:51:28.904057Z'
+  support: supports
+  summary: Handbook crystal and occurrence sections support tetragonal/pseudocubic
+    material and Ge-bearing hydrothermal deposits. Bernstein 1986 microscopy and microprobe
+    evidence support distinct mineral intergrowths and coupled Zn-Ge versus Cu-As
+    compositional variation; Table 3 includes ideal compositions and earlier literature,
+    distinguished by footnotes and Figure 4 symbols. No universal specimen formula,
+    pure ore, yield or industrial mechanism is inferred.
+  snapshot_sha256: 5ea985bcbffcd7e96e092ff224e18c53641439ad7ba28d178d30f7362e100e41
+- evidence_id: primary
+  kind: primary_source
+  reference: https://msaweb.org/AmMin/AM71/AM71_210.pdf
+  locator: Bernstein 1986 pp. 210, 212-214, 219-220, including original Figures 1-4
+    and Table 3; chemistry methods, occurrence and conclusions. Other physical-property
+    sections/graphics and 1989 follow-up excluded from scientific assessment.
+  accessed_at: '2026-10-12T02:51:28.904057Z'
+  support: supports
+  summary: Original Table 3 footnotes identify columns 1/12 as ideal endmembers and
+    4L/8L/9L as literature; Figure 4 distinguishes author analyses, literature and
+    ideal line. Page 214 describes ARL-SEMQ microprobe conditions and normalization;
+    pp. 212-213 show intergrowths including germanite. The record correctly separates
+    these from accepted species identity.
+  snapshot_sha256: 9640c05caaa3c043149da77b68fe4efcdf89d6c943e58bf6638515c8400588ce
+- evidence_id: history
+  kind: record_content
+  reference: history/records/renierite/2026-10-12T023456Z-codex-602bee.yaml
+  locator: Whole CREATE sidecar and separate inline event
+  accessed_at: '2026-10-12T02:51:28.904057Z'
+  support: supports
+  summary: Actual actor, model, tool, target and timestamps agree with this uncommitted
+    curation; no claim of past authorship or review-as-curation. Parent trusted-base
+    history gate passed.
+  snapshot_sha256: ba48e5264f506436d695ca09bc1edb1cee134745483ac37f8e7920fcec36db2c
+- evidence_id: inspection
+  kind: record_content
+  reference: /private/tmp/cmm-round43-ge-independent-research/evidence-check.json
+  locator: Original page inspection,42 artifact hash checks and actual acquisition/search
+    details
+  accessed_at: '2026-10-12T02:51:28.904057Z'
+  support: supports
+  summary: Reviewer independently inspected 14 original page images across both mineral
+    reviews, verified 42 declared artifacts and freshly downloaded both primary PDFs
+    which match curator bytes. IMA and Handbook artifacts reused with verified provenance,
+    not claimed fresh reviewer downloads. Native inspect preceded assessment; after
+    inspection-only target-kind metadata correction, recaptured source input hashes
+    are identical.
+  snapshot_sha256: 1e71e2e3c54268faabdb1f18c35ca906838fd2d5f21ac01c216cb8d78b4f08ce
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round43-ge-independent-research/evidence-check.json
+  locator: Three exact title/author/notice and mineral-microbial queries
+  accessed_at: '2026-10-12T02:51:28.904057Z'
+  support: context_only
+  summary: No affecting formal notice or verified mineral-specific microbial experiment
+    was identified in these bounded returned sets. MSA web opens failed internally;
+    direct authorized downloads returned 200 and matched. No absence of all notices
+    or all mechanisms is claimed.
+  snapshot_sha256: 1e71e2e3c54268faabdb1f18c35ca906838fd2d5f21ac01c216cb8d78b4f08ce
+  search_scope: 'web.run 2026-10-12: "Tettenhorst" "Corbato" "germanite" correction
+    erratum; "Bernstein" "Renierite" "1986" erratum correction; "germanite" "renierite"
+    bioleaching microorganisms. First returned sets only; no filters/pagination.'
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round43-ge-independent-research/corpus-dedup-receipt.json
+  locator: Independent current data/records hidden/ignored-inclusive symlink-following
+    search
+  accessed_at: '2026-10-12T02:51:28.904057Z'
+  support: context_only
+  summary: Current accepted record search has exactly these two owners and their explicit
+    crossreferences. Author broader scientific/raw-root search read and hash-checked,
+    not independently rerun; unextracted binaries and missing raw references remain
+    explicit.
+  snapshot_sha256: 629f227a05ef89494c083dd4c91c70810823f4b1de13b0a26fd083d0a0ea2e27
+  search_scope: rg --no-ignore --hidden --follow over complete current data/records.
+    Broader author current/scientific and 135 raw-root boundary and missing paths
+    inspected in curator dossier, not independently rerun. Not a machine-wide absence
+    assertion.
+- evidence_id: checks
+  kind: validation
+  reference: /private/tmp/cmm-round43-final-terminal.json
+  locator: Actual completed parent batch/nonempty/trusted-base history receipt
+  accessed_at: '2026-10-12T02:51:28.904057Z'
+  support: supports
+  summary: All required checks completed successfully and logs independently hash-verified.
+    Structural gates do not prove scientific claims.
+  snapshot_sha256: f3793509763515344bdb4e1474284705fc01318d2ebd6d8ab827e5885f714cb6
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species identity, formula and dated nomenclature
+  outcome: supported
+  target_ids:
+  - cmmmech:renierite
+  summary: September 2026 IMA gives Renierite, (Cu1+,Zn)11Fe4(Ge4+,As5+)2S16, Rn status
+    and 2007 s.p. The dated special procedure is not an approval-number CURIE. The
+    older Handbook accent and within-species zincian/arsenian endmembers are not separate
+    accepted species.
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  - primary
+  dimensions:
+  - name: material
+    value: Mineral species
+    definition: Distinct from germanium element, a bulk ore/feed and the other mineral
+      owner.
+    evidence_ids:
+    - record
+    - ima
+  - name: criticality
+    value: Not asserted
+    definition: No constituent-element designation is inherited into the mineral.
+    evidence_ids:
+    - record
+  - name: mechanism
+    value: Not asserted
+    definition: Mineralogical measurements do not establish microbial extraction,
+      product recovery or deployment.
+    evidence_ids:
+    - record
+    - primary
+- assessment_id: context
+  area: evidence
+  topic: Primary specimen context, intergrowths and limits
+  outcome: supported
+  target_ids:
+  - cmmmech:renierite
+  summary: Handbook crystal and occurrence sections support tetragonal/pseudocubic
+    material and Ge-bearing hydrothermal deposits. Bernstein 1986 microscopy and microprobe
+    evidence support distinct mineral intergrowths and coupled Zn-Ge versus Cu-As
+    compositional variation; Table 3 includes ideal compositions and earlier literature,
+    distinguished by footnotes and Figure 4 symbols. No universal specimen formula,
+    pure ore, yield or industrial mechanism is inferred.
+  evidence_ids:
+  - primary
+  - handbook
+  - inspection
+- assessment_id: provenance
+  area: provenance
+  topic: Exact reviewed state and completed required checks
+  outcome: supported
+  target_ids:
+  - cmmmech:renierite
+  summary: Native inputs were captured before assessment and remain byte-identical.
+    Canonical CREATE history is distinct from inline event and review. Named and parent
+    batch gates passed; no previous history or review rewritten.
+  evidence_ids:
+  - record
+  - history
+  - checks
+  - inspection
+findings: []
+actions: []
+limitations:
+- IMA authority explicitly dated September 2026; Handbook historical context is not
+  present-day production evidence.
+- Physical-property measurements and detailed space-group refinement were not adjudicated;
+  the acquired 1989 follow-up and unviewed later figures remain outside accepted claims.
+- No criticality designation, microbial mechanism, quantitative recovery or industrial
+  deployment is asserted.
+- Bounded notice/dedup searches do not establish universal absence or source-frontier
+  exhaustion.
+tags:
+- round43
+- independent
+- mineral
+- identity

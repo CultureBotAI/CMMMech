@@ -1,0 +1,24 @@
+history_version: 1
+target:
+  kind: record
+  slug: titanium-metal
+  path: data/records/titanium-metal.yaml
+session:
+  id: 2026-10-12T023836Z-codex-e31d46
+  timestamp: '2026-10-12T02:38:36Z'
+  actors:
+  - name: codex
+    type: ai_agent
+    model: GPT-6
+    agent_tool: codex
+events:
+- type: EDIT
+  outcome: changed
+  summary: Preserve average grain size in Baranov2013 evidence.
+  details: 'Addressed independent scientific review CMMMech.titanium-metal.average-grain-size,
+    GitHub issue142: source p134 describes average grain size not exceeding150–200nm, not
+    an individual-particle maximum. Added the average qualifier while preserving source conclusion100–200nm,
+    absent size distribution and prior history. Root owns successor review and batch checks.'
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/142

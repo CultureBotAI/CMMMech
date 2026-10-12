@@ -1,0 +1,386 @@
+schema_version: 1.0.0
+review_id: 20261012T025143Z-lithium-mica-ore-round43-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of lithium-mica ore
+started_at: '2026-10-12T02:42:00Z'
+finished_at: '2026-10-12T02:51:43Z'
+reviewer:
+  identity: Codex /root/round27_packaging
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Authored separate coal-beneficiation-waste record and source
+    dossier. Did not author or edit lithium-mica-ore, its history or source dossier.
+    Personally inspected complete original primary/SI graphics, authorities and exact
+    current record before judgment.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The mixed natural lithium-mica ore record is supported within explicit source
+  limits. Three separate culture-associated assays retain differing conditions, null
+  controls, inconsistent feed assay and endpoints, operational biomass fractions and
+  unresolved phase/causality. No corrective record finding.
+source:
+  git_revision: 59e24ec38d9c7b377dcfeade1637b298aab9623e
+  state: working_tree
+  inputs:
+  - path: data/records/lithium-mica-ore.yaml
+    sha256: 5fefc582ad08ec87d3f37fde1c7b3faf26a096adc86492006302e41da8d1c808
+    role: target
+  - path: history/records/lithium-mica-ore/2026-10-12T023720Z-codex-9e7491.yaml
+    sha256: 136f3aaa105a9ce80427a6895c43124198ee4a038b7622498c7b32210f12cb90
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:lithium-mica-ore
+  path: data/records/lithium-mica-ore.yaml
+  label: Lithium-mica ore
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lithium-mica-ore.yaml
+    role: maintained_record
+scope:
+  description: Whole frozen new record, all three primary2020assays, original main/SI
+    graphics and four asserted speciesIDs.
+  selection: Parent-assigned independent review of peer-authored record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:lithium-mica-ore
+checks:
+- check_id: named
+  name: Independent named record validation
+  command: uv run --locked cmmmech validate data/records/lithium-mica-ore.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:lithium-mica-ore
+  summary: Reviewer executed explicitround43cwd,offlinecache/no-bytecode; Checked
+    1 record(s); 0 failed. Log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- check_id: batch
+  name: Final cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:lithium-mica-ore
+  summary: 'Parent executed; reviewer read full raw-byte log and verified SHA256 3b461ec716372779d864a3273f66a8f5e36a3275912d2edc011da55513defab4.
+    uv run --locked --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 214.77s (0:03:34)
+
+    Checked 220 record(s); 0 failed.
+
+    Checked 259 history record(s); 0 error(s).'
+- check_id: nonempty
+  name: Final cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:lithium-mica-ore
+  summary: Parent executed; reviewer read full raw-byte log and verified SHA256 5f5111acf2e1d4f13998e3baccfe8b9a433c95528bd47cfbc3572bbbef706f99.
+    Checked 220 record(s); 0 failed.
+- check_id: history
+  name: Final cohort history
+  command: uv run --locked cmmmech validate-history --base 59e24ec38d9c7b377dcfeade1637b298aab9623e
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:lithium-mica-ore
+  summary: Parent executed; reviewer read full raw-byte log and verified SHA256 a7e1e37a7ef921c16b129f63f7319e52d3effcf1660ec0e77c1d93369e0f3063.
+    Checked 259 history record(s); 0 error(s).
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/lithium-mica-ore.yaml
+  locator: Whole frozen target, native inspect before judgment
+  accessed_at: '2026-10-12T02:51:43Z'
+  support: supports
+  summary: New natural mixed-feed resource and three separately scoped assay arms
+    reviewed. No target/history changes by reviewer.
+  snapshot_sha256: 5fefc582ad08ec87d3f37fde1c7b3faf26a096adc86492006302e41da8d1c808
+- evidence_id: identity
+  kind: primary_source
+  reference: https://doi.org/10.1038/s41598-020-71596-5
+  locator: Materials p2, Table1 p6, complete original main eight pages
+  accessed_at: '2026-10-12T02:51:43Z'
+  support: supports
+  summary: Natural Beauvoir ore, ball-milled below150μm (~75%below100μm), supplied
+    by Rowson. Primary_resource is appropriate; mixed phases do not identify a pure
+    polylithionite specimen. Table1 3.79%Li2O (~1.76%Li) conflicts with1.21%AASLi.
+    No inherited criticality or industrial deployment.
+  snapshot_sha256: c8cea97c21912c51c9754de3d559f09275c2102612d74e4661688698700d85d2
+- evidence_id: mica
+  kind: authority
+  reference: https://doi.org/10.1346/CCMN.1998.0460513
+  locator: Original Table4 printed589; surrounding Series Names text
+  accessed_at: '2026-10-12T02:51:43Z'
+  support: supports
+  summary: 'Personally inspected original table: lepidolite is trioctahedral micas
+    on or near trilithionite-polylithionite join. Series name denotes incompletely
+    investigated material, not a mineral species ID.'
+  snapshot_sha256: 8661dd8e830f3cab69ee6659ce05b3295df72afd8db6d8b21974da4f454058a3
+- evidence_id: bacteria
+  kind: primary_source
+  reference: https://doi.org/10.1038/s41598-020-71596-5
+  locator: Methods pp2–3; Figures1–4 and discussion pp4–6
+  accessed_at: '2026-10-12T02:51:43Z'
+  support: supports
+  summary: SmolnikLC/SmolnikF species assignment is source-reported stock, two-month
+    adaptation,190mL+10mL inoculum,10g/Lore,30°Cstatic,poorH2SO4/S medium. Same-medium
+    uninoculated controls are reported but not matched to biological pH trajectories.
+    Rich-medium null and control non-detection remain qualified.11mg/L and8.8% are
+    author results; no independently closed mass balance. Methods366days vsResults/Figure336
+    retained.
+  snapshot_sha256: c8cea97c21912c51c9754de3d559f09275c2102612d74e4661688698700d85d2
+- evidence_id: fungus
+  kind: primary_source
+  reference: https://doi.org/10.1038/s41598-020-71596-5
+  locator: Methods p2, Figures1/3/4 and discussion pp5–7
+  accessed_at: '2026-10-12T02:51:43Z'
+  support: supports
+  summary: An-S source reports ISB1674;2gore/200mL+5mL8dayconidia,initialpH5.1,21°Cstatic,autoclavedfeed/media,duplicate
+    controls.0.2%feedextraction differs from77%of extractedLi associated with biomass.
+    Digestion/ashing cannot distinguish intracellular uptake, surface sorption or
+    entrained fines. Acids were not chemically identified; sequential process only
+    proposed.
+  snapshot_sha256: c8cea97c21912c51c9754de3d559f09275c2102612d74e4661688698700d85d2
+- evidence_id: yeast
+  kind: primary_source
+  reference: https://doi.org/10.1038/s41598-020-71596-5
+  locator: Methods p3; Figures1/3/4; distribution/efficiency pp6–7
+  accessed_at: '2026-10-12T02:51:43Z'
+  support: supports
+  summary: CCY20-1-36 source-reported;five-daypreculture,10g/Lore,rich/poor media,21°C,duplicate
+    controls.160rpm versusstatic unresolved.1.1%feedextraction differs from92%ofextractedLi
+    in harvested biomass. Figure3lastpHrise conflicts withproseendpoint. Digested
+    fraction is operational association, not intracellular mechanism or isolated product.
+    Unlike media/temperature/time preclude intrinsic organism ranking.
+  snapshot_sha256: c8cea97c21912c51c9754de3d559f09275c2102612d74e4661688698700d85d2
+- evidence_id: graphics
+  kind: primary_source
+  reference: https://doi.org/10.1038/s41598-020-71596-5
+  locator: All five original SI pages, FigureS1 and S2A–D; all original main Figures1–4
+  accessed_at: '2026-10-12T02:51:43Z'
+  support: supports
+  summary: Personally inspected all13 original main/SI pages. S2A source labels polylithionite/muscovite/kaolinite;B
+    omits muscovite reference and includes sulfur;C includes quartz;D uses two polylithionite
+    references. Unequal count scales/nonideal formulas/no sterile residue or quantitative
+    phases do not establish pure endmember transformation, complete disappearance
+    or de novo quartz. S1 supports hyphal association, not quantified mechanical dissolution.
+    Figure2transformedordinate~0.667 offset is correctly not promoted as kinetics
+    proof.
+  snapshot_sha256: 158b375df557fb4cef4807f28fd943834bfdcb62b7c6305d388e69dd10f23eea
+- evidence_id: taxon920
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920
+  locator: Current original NCBI API JSON;5537 additionally independent live browser
+    read
+  accessed_at: '2026-10-12T02:51:43Z'
+  support: supports
+  summary: 'Retained official response independently checked: ID920, Acidithiobacillus
+    ferrooxidans, SPECIES rank. Does not independently authenticate experimental stock
+    or causal role.'
+  snapshot_sha256: a9018b21b07448df4983bdc7fbada96c6331825223cb00220b4f51109279d4bf
+- evidence_id: taxon930
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930
+  locator: Current original NCBI API JSON;5537 additionally independent live browser
+    read
+  accessed_at: '2026-10-12T02:51:43Z'
+  support: supports
+  summary: 'Retained official response independently checked: ID930, Acidithiobacillus
+    thiooxidans, SPECIES rank. Does not independently authenticate experimental stock
+    or causal role.'
+  snapshot_sha256: 7a464747ec4eb8c102d60bcd04a60dc9af1ac4ded1920a7b77cefe55a0e78851
+- evidence_id: taxon5061
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061
+  locator: Current original NCBI API JSON;5537 additionally independent live browser
+    read
+  accessed_at: '2026-10-12T02:51:43Z'
+  support: supports
+  summary: 'Retained official response independently checked: ID5061, Aspergillus
+    niger, SPECIES rank. Does not independently authenticate experimental stock or
+    causal role.'
+  snapshot_sha256: 999f1fbcf2d36e65af724b7433debd53a28f8799ba386a9b76cb2f9e1b8c3783
+- evidence_id: taxon5537
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5537
+  locator: Current original NCBI API JSON;5537 additionally independent live browser
+    read
+  accessed_at: '2026-10-12T02:51:43Z'
+  support: supports
+  summary: 'Retained official response independently checked: ID5537, Rhodotorula
+    mucilaginosa, SPECIES rank. Does not independently authenticate experimental stock
+    or causal role.'
+  snapshot_sha256: 9bde9b94f9ec4d4abcac0bfd9904a49aef5a4f6f0555f12001b26249e68377c9
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round43-lithium-independent-evidence.json
+  locator: Independent hidden/ignored/followed search and57rawhash checks
+  accessed_at: '2026-10-12T02:51:43Z'
+  support: supports
+  summary: Current and original scientific directories plus13citedexistingrawroots.
+    Exact71596/Beauvoir/owner search finds only current new record within accepted
+    records. Known historical source leads and12missing/malformed cited paths explicitly
+    retained, not machine-wide absence. Four taxon APIs independently read; all57author-artifact
+    hashes match.
+  search_scope: Independent hidden/ignored/followed search and57rawhash checks; Current
+    and original scientific directories plus13citedexistingrawroots. Exact71596/Beauvoir/owner
+    search finds only current new record within accepted records. Known historical
+    source leads and12missing/malformed cited paths explicitly retained, not machine-wide
+    absence. Four taxon APIs independently read; all57author-artifact hashes match.
+  snapshot_sha256: 5c65a4b0c71c65f8200c6eedd33a35ddea7e49fb0b2f029f843a8e11a03553bf
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round43-lithium-independent-evidence.json
+  locator: ExactDOI/title correction/retraction queries, first returned web results,2026-10-12
+  accessed_at: '2026-10-12T02:51:43Z'
+  support: supports
+  summary: No affecting formal notice found in bounded query sets; not exhaustive.
+    Retained Crossref metadata agrees sourceidentity.2025counterstudy original graphics/SI
+    unavailable to author remains deferred; no imported2025measurements or transferred41day
+    claim.2014/2015precursor overlap not reconstructed.
+  search_scope: ExactDOI/title correction/retraction queries, first returned web results,2026-10-12;
+    No affecting formal notice found in bounded query sets; not exhaustive. Retained
+    Crossref metadata agrees sourceidentity.2025counterstudy original graphics/SI
+    unavailable to author remains deferred; no imported2025measurements or transferred41day
+    claim.2014/2015precursor overlap not reconstructed.
+  snapshot_sha256: 5c65a4b0c71c65f8200c6eedd33a35ddea7e49fb0b2f029f843a8e11a03553bf
+- evidence_id: history
+  kind: record_content
+  reference: history/records/lithium-mica-ore/2026-10-12T023720Z-codex-9e7491.yaml
+  locator: CREATE sidecar plus distinct inline event
+  accessed_at: '2026-10-12T02:51:43Z'
+  support: supports
+  summary: Canonical02:37:20Z and inline02:37:16Z actualUTC events both identify codex/GPT-6/codex
+    and the same newmixedfeed change. No earlier historical science or authorship
+    invented.
+  snapshot_sha256: 136f3aaa105a9ce80427a6895c43124198ee4a038b7622498c7b32210f12cb90
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round43-final-terminal.json
+  locator: Completed actual cohort terminal receipt and raw-byte log hashes
+  accessed_at: '2026-10-12T02:51:43Z'
+  support: supports
+  summary: Parent executed final cohort commands; reviewer read logs and verified
+    exact raw-byte hashes. Independently executed named validation1/0. Frozen lithium/history
+    remain inspect-identical.
+  snapshot_sha256: f3793509763515344bdb4e1474284705fc01318d2ebd6d8ab827e5885f714cb6
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mixed geological feed versus mineral species
+  outcome: supported
+  target_ids:
+  - cmmmech:lithium-mica-ore
+  evidence_ids:
+  - identity
+  - mica
+  - graphics
+  - dedup
+  summary: Primary_resource correctly represents a natural mixed ore with source-qualified
+    phase assignments. No commodity/secondary-resource or pure-species inflation.
+  dimensions: []
+- assessment_id: mechanisms
+  area: evidence
+  topic: Separate biological assay contexts and controls
+  outcome: supported
+  target_ids:
+  - cmmmech:lithium-mica-ore
+  evidence_ids:
+  - bacteria
+  - fungus
+  - yeast
+  - taxon920
+  - taxon930
+  - taxon5061
+  - taxon5537
+  summary: Three microbial arms are supported as culture-associated experiments; namedstock
+    vsverifiedspecies, richbacterialnull and uninoculatednon-detection preserved.
+    Controls do not isolate exclusive protonaction or individual organismcausality.
+  dimensions: []
+- assessment_id: quantities
+  area: evidence
+  topic: Outcome denominators and unresolved source conflicts
+  outcome: supported
+  target_ids:
+  - cmmmech:lithium-mica-ore
+  evidence_ids:
+  - identity
+  - bacteria
+  - fungus
+  - yeast
+  - graphics
+  summary: Feedextraction, dissolvedconcentration andshareofextractedLi inharvestedbiomass
+    remain distinct. Massbalance, endpoint,agitation,pH andfit conflicts explicitly
+    retained.
+  dimensions: []
+- assessment_id: products
+  area: evidence
+  topic: No demonstrated intracellular uptake or downstream product
+  outcome: supported
+  target_ids:
+  - cmmmech:lithium-mica-ore
+  evidence_ids:
+  - fungus
+  - yeast
+  - graphics
+  summary: Sorption/mineralcarryover alternatives remain; microscopy/XRD support qualified
+    observations only. Proposed sequential processing and biomass-to-product recovery
+    are not performed operations.
+  dimensions: []
+- assessment_id: provenance
+  area: provenance
+  topic: Independent exact-state assessment and actual checks
+  outcome: supported
+  target_ids:
+  - cmmmech:lithium-mica-ore
+  evidence_ids:
+  - record
+  - history
+  - dedup
+  - notices
+  - gates
+  summary: Reviewer authored different coal record, not this target. Primary/sourceauthority/duplicate/notice
+    evidence independently assessed; exacthistory and completed checks valid.
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- No matched acidity or killed-biomass control; native mechanisms remain qualified.
+- No independently reconciled feed-lithium mass balance, rawnumericaldataset or verified
+  intracellular localization.
+- Different organisms have different assayconditions and durations; no equal-condition
+  ranking.
+- No quantitative phases, matched sterile-residue XRD or confirmed de novo quartz.
+- 2025 primary graphics/SI deferred; precursorstudy overlap not reconstructed.
+- Bounded notice/dedup searches include hiddenignored/followed relevantpaths but not
+  unavailable files or unrelated machine trees.
