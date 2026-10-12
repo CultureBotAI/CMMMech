@@ -1,0 +1,203 @@
+{
+  "recorded_at": "2026-10-12T05:34:52.075405+00:00",
+  "base": "18c9f3dd5005e14142b8a0b7e13bb84870e1731a",
+  "branch": "curate/cmm-expansion-round47-20261012",
+  "counts": {
+    "record_count": 231,
+    "history_count": 274,
+    "structured_review_count": 283,
+    "review_base_count": 48,
+    "covered_records": 231
+  },
+  "record_actions": {
+    "dzhalindite": "CREATE",
+    "cassiterite-polymetallic-sulfide-ore": "CREATE"
+  },
+  "records": [
+    {
+      "slug": "dzhalindite",
+      "action": "CREATE",
+      "record": "data/records/dzhalindite.yaml",
+      "record_sha256": "60435e2806654a3150427a07c17adb27c1b0fac18684dd9354ba939b43a560ee",
+      "histories": [
+        {
+          "path": "history/records/dzhalindite/2026-10-12T052351Z-codex-aca230.yaml",
+          "sha256": "bd5e1200173b40cc0bebdf32228c214b35ad6051d3b1ee8d1836339f994a361e"
+        }
+      ],
+      "review": "reviews/structured/20261012T053054Z-dzhalindite-round47-independent/review.yaml",
+      "review_md": "reviews/structured/20261012T053054Z-dzhalindite-round47-independent/review.md",
+      "review_sha256": "5d4a1c9c70d763563ec8026eed3aa25e77497365ddc3cc433299e79549765683",
+      "review_md_sha256": "7ff91cd61223560026600e788c6d3ac79a8f58ddb81dcf8dde50cad690d6514d",
+      "reviewer": {
+        "identity": "Codex /root/round27_packaging",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Record/history/dossier authored by round27_superalloy. Reviewer authored a separate tin-ore record only, native-inspected this target before judging, personally read all original primary pages and figures plus authority/Handbook originals, and ran independent named validation. No self-certification of the tin-ore record."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [],
+      "dossiers": [
+        {
+          "path": "research/sources/round47-indium-minerals/20261012T052552Z-source-investigation.json",
+          "sha256": "9d44531749a1acda1545c39efaacdd4b8a675b161785c192ddf70450cebd07e4"
+        },
+        {
+          "path": "research/sources/round47-indium-minerals/20261012T052552Z-source-investigation.md",
+          "sha256": "45d946b66f46e2eb3ca880063f35a617ec548df3e17a2d7f168aec94a4644619"
+        }
+      ]
+    },
+    {
+      "slug": "cassiterite-polymetallic-sulfide-ore",
+      "action": "CREATE",
+      "record": "data/records/cassiterite-polymetallic-sulfide-ore.yaml",
+      "record_sha256": "abbdb703ae4d540946590f5d7adf5067fd3fccd38fb27b65811898bfd2eea39f",
+      "histories": [
+        {
+          "path": "history/records/cassiterite-polymetallic-sulfide-ore/2026-10-12T052443Z-codex-dc0f7f.yaml",
+          "sha256": "95b493622057982e11f41806c7bb20b8debd68c3dca163e15c1986d6d0ffde7b"
+        }
+      ],
+      "review": "reviews/structured/20261012T053057Z-cassiterite-polymetallic-sulfide-ore-round47-independent/review.yaml",
+      "review_md": "reviews/structured/20261012T053057Z-cassiterite-polymetallic-sulfide-ore-round47-independent/review.md",
+      "review_sha256": "f44396e782f80ec6ff0091413390816667b1dc3dd61b7d87d6ee75ce96b9ef74",
+      "review_md_sha256": "629162d6c42d6a7f4bba0c3af48b04a5647fe823fad298fbc3034bce06287d54",
+      "reviewer": {
+        "identity": "Codex /root/round43_hardmetal",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Curator /root/round27_packaging authored this record/history/dossier. Reviewer authored only a separate Sn-mineral deferral dossier in round47, did not edit this target or source handoff, and independently read original evidence/graphics and captured native target context before judging the record."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [],
+      "dossiers": [
+        {
+          "path": "research/sources/round47-tin-resources/20261012T052635Z-source-investigation.json",
+          "sha256": "1d6d29bc3d53f84a8a258c077a8b74a0fa67ccd614d61147b7688022046801e8"
+        },
+        {
+          "path": "research/sources/round47-tin-resources/20261012T052635Z-source-investigation.md",
+          "sha256": "5ac6108849ec0ccf512300fbccf35f2fd630f9e58ae427ad2c6a72857f92d2b6"
+        }
+      ]
+    }
+  ],
+  "gate_receipts": {
+    "started_at": "2026-10-12T05:25:12.554061+00:00",
+    "base": "18c9f3dd5005e14142b8a0b7e13bb84870e1731a",
+    "commands": [
+      {
+        "name": "batch",
+        "command": [
+          "just",
+          "check"
+        ],
+        "started_at": "2026-10-12T05:25:12.554474+00:00",
+        "finished_at": "2026-10-12T05:29:36.622895+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round47-final-batch.log",
+        "sha256": "85ba85c6ae6c37eaf08de9cff32bf752bfd53530f8ee6653b90180e4098a30b5"
+      },
+      {
+        "name": "nonempty",
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate",
+          "--require-records"
+        ],
+        "started_at": "2026-10-12T05:29:36.623288+00:00",
+        "finished_at": "2026-10-12T05:29:47.650826+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round47-final-nonempty.log",
+        "sha256": "6127dc337a4794cd0f1fb158f348c4a20223bc3098da0a4adb0b2d278ce742b4"
+      },
+      {
+        "name": "history",
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate-history",
+          "--base",
+          "18c9f3dd5005e14142b8a0b7e13bb84870e1731a"
+        ],
+        "started_at": "2026-10-12T05:29:47.651261+00:00",
+        "finished_at": "2026-10-12T05:29:55.616748+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round47-final-history.log",
+        "sha256": "469f96953d0dcc57034205a455d1f0374b1537438c67118a89cdd87e14ff88de"
+      }
+    ],
+    "exit_code": 0,
+    "finished_at": "2026-10-12T05:29:55.617034+00:00"
+  },
+  "review_check_receipt": {
+    "command": [
+      "just",
+      "review-check",
+      "--base",
+      "18c9f3dd5005e14142b8a0b7e13bb84870e1731a",
+      "--require-reviews"
+    ],
+    "started_at": "2026-10-12T05:31:25.308420+00:00",
+    "finished_at": "2026-10-12T05:34:13.383684+00:00",
+    "exit_code": 0,
+    "log": "/private/tmp/cmm-round47-review-check.log",
+    "sha256": "389d59a8fedb03b5b5c3b6ba8882e6f442c450509e4beb61abbf9a06c16c400f"
+  },
+  "exact_coverage_receipt": {
+    "path": "/private/tmp/cmm-round47-local-coverage.json",
+    "sha256": "f78a8fdc1e9401320bb5dc1089f9f33f183edfe4ca680e75ce984477bed5a802",
+    "counts": {
+      "record_count": 231,
+      "history_count": 274,
+      "structured_review_count": 283,
+      "review_base_count": 48,
+      "covered_records": 231
+    }
+  },
+  "baseline": {
+    "scope": "Reuse the just-completed fresh remote-main full gate at this exact unmodified commit and tree; no redundant test rerun before curation.",
+    "receipt": "/private/tmp/cmm-round46-postmerge-20261012-published-terminal.json",
+    "sha256": "719766b970909effe526a68eb72cb459846f9d0a75becca721f643a7f63a178a"
+  },
+  "deferred_sources": [
+    {
+      "path": "research/sources/round47-sn-minerals/20261012T052503Z-source-investigation.json",
+      "sha256": "7510078cb90aeb46b94fe696e42a670897f74ff9ef20ecf233db5aa6185864b3"
+    },
+    {
+      "path": "research/sources/round47-sn-minerals/20261012T052503Z-source-investigation.md",
+      "sha256": "104cd4a8466a958c8365cbc6d0aeb42d4e547c81ba061f9a330878fd001beda7"
+    }
+  ],
+  "corrected_review_issues": [],
+  "open_source_issues": [
+    103,
+    104,
+    120,
+    129,
+    130,
+    133,
+    134,
+    137,
+    140,
+    151
+  ],
+  "exhausted": false,
+  "governance_snapshot": {
+    "path": "reviews/publication/20261012-round47/current-status.json",
+    "sha256": "af4015315102a886e30f897f52bb02da81cebc57e084564c6b3ec4449413475e"
+  },
+  "preservation_receipt": {
+    "path": "reviews/publication/20261012-round47/preservation-prepublication.json",
+    "sha256": "c01557b7a3276f852e9e8316f6e35f9ffcf0700cd81c98a5a3c0fbc03a3484c3"
+  }
+}

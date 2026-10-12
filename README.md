@@ -8,7 +8,7 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 229 material records.
+The catalogue currently contains 231 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
@@ -241,6 +241,8 @@ The catalogue currently contains 229 material records.
 | [Laforêtite](data/records/laforetite.yaml) | Current IMA identity and original natural-inclusion chemistry and diffraction | Sparse natural sampling and multiphase synthetic comparator remain distinct; no microbial mechanism |
 | [Roquesite](data/records/roquesite.yaml) | Current IMA identity and original natural-inclusion analyses | Natural material and synthetic CuInS2 references remain distinct; no extraction or recovery claim |
 | [Zincobriartite](data/records/zincobriartite.yaml) | Current IMA identity and original approval announcement | Full description remains unpublished in the dated CNMNC notice; historical briartite is not automatically reassigned |
+| [Dzhalindite](data/records/dzhalindite.yaml) | Dated IMA identity and original natural-occurrence microscopy and composition | Failed diffraction, unresolved iron speciation and tentative hypogene origin; no microbial mechanism |
+| [Cassiterite-polymetallic sulfide ore](data/records/cassiterite-polymetallic-sulfide-ore.yaml) | Laboratory culture-associated sulfide alteration and iron mobilization in mixed geological ore | Inconsistent composition tables and iron-based proxy; no verified sulfur balance, recovered tin yield or industrial deployment |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -294,7 +296,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [forty-fourth expansion reviews](research/ingests/round44-20261012-publication.md),
 [forty-fifth expansion reviews](research/ingests/round45-20261012-publication.md),
 [forty-sixth expansion reviews](research/ingests/round46-20261012-publication.md),
-[remaining ingest priorities](research/ingests/round46-frontier-20261012.md), and
+[forty-seventh expansion reviews](research/ingests/round47-20261012-publication.md),
+[remaining ingest priorities](research/ingests/round47-frontier-20261012.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

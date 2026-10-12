@@ -1,0 +1,196 @@
+{
+  "timestamp_utc": "2026-10-12T05:27:25.543702+00:00",
+  "reviewer": "Codex /root/round27_superalloy (GPT-6; codex)",
+  "authorship": "Reviewer authored dzhalindite record/history/source dossier; coordinator authored current helper ports, report/package/config and README. This audit is operational preparation, not independent scientific approval of reviewer-authored data.",
+  "verdict": "pass_with_scope_limits",
+  "scope": "Independent complete static reads of eighteen helpers (sixteen operational plus report/package builders), AST syntax parsing and normalized prior-version diffs. No helper execution, Git mutation, network action or gate rerun.",
+  "findings": [],
+  "unresolved_findings": [],
+  "helpers": [
+    {
+      "path": "/private/tmp/cmm-round47-build-package.py",
+      "sha256": "7359cd4dea529fe413837ca5d4516b5587f77ce79c1f93791201651c7cbffcf0",
+      "reference": "/private/tmp/cmm-round46-build-package.py",
+      "reference_sha256": "e89bc243dbb676ebfc52be8384b73332e630ac12998fca9ea2bbe53c05840c6a",
+      "ast_parse": "passed",
+      "beyond_namespace_base_delta": ""
+    },
+    {
+      "path": "/private/tmp/cmm-round47-build-report.py",
+      "sha256": "d5d5830c6c36e999400776540cf5ee379bb4ba5768584b44bf1f7a9b56e1a882",
+      "reference": "/private/tmp/cmm-round46-build-report.py",
+      "reference_sha256": "2dcf3990348384e92bc7ac7182ccf737ea112723d76a334fd81349b1b91eaf98",
+      "ast_parse": "passed",
+      "beyond_namespace_base_delta": "--- \n+++ \n@@ -12,5 +12,5 @@\n cfg = load('helper-config')\n counts = cfg['counts']\n-final, rc, cov, init, pres, status = [load(n) for n in ['final-terminal', 'review-check-v2-terminal', 'local-coverage-v2', 'initialization', 'preservation-prepublication', 'current-status']]\n+final, rc, cov, init, pres, status = [load(n) for n in ['final-terminal', 'review-check-terminal', 'local-coverage', 'initialization', 'preservation-prepublication', 'current-status']]\n assert final['exit_code'] == rc['exit_code'] == 0 and final['base'] == base\n assert len(final['commands']) == 3\n@@ -58,5 +58,5 @@\n assert status['pin'] == (r / 'scripts/.vendored_canon_ref').read_text().strip()\n compact = {'recorded_at': now, 'observation_timestamp': status['utc'], 'raw_receipt': {'path': str(p / 'cmm-round47-current-status.json'), 'sha256': sha(p / 'cmm-round47-current-status.json')}, 'governance_pin': status['pin'], 'admission': {k: ad[k] for k in ['number', 'html_url', 'state', 'merged', 'merged_at', 'merge_commit_sha']}, 'effective_main_rules': rules, 'ruleset': {k: rs[k] for k in ['id', 'name', 'enforcement', 'bypass_actors', 'conditions', 'rules']}, 'workflows': [{k: w[k] for k in ['id', 'name', 'path', 'state', 'html_url']} for w in wf['workflows']], 'scope': 'Live read-only observation. Workflow presence does not establish credentials or fleet-wide convergence; future integration uses CLAW supported admission/synchronization.'}\n-manifest = {'recorded_at': now, 'base': base, 'branch': init['branch'], 'counts': counts, 'record_actions': cfg['record_actions'], 'records': records, 'gate_receipts': final, 'review_check_receipt': rc, 'exact_coverage_receipt': {'path': str(p / 'cmm-round47-local-coverage-v2.json'), 'sha256': sha(p / 'cmm-round47-local-coverage-v2.json'), 'counts': counts}, 'baseline': {'scope': init['baseline_scope'], 'receipt': init['baseline_receipt'], 'sha256': init['baseline_sha256']}, 'deferred_sources': [{'path': str(q.relative_to(r)), 'sha256': sha(q)} for dirname in cfg['deferred_directories'] for q in sorted((r / dirname).glob('*')) if q.suffix in ['.md', '.json']], 'corrected_review_issues': cfg['corrected_review_issues'], 'open_source_issues': cfg['open_source_issues'], 'exhausted': False}\n+manifest = {'recorded_at': now, 'base': base, 'branch': init['branch'], 'counts': counts, 'record_actions': cfg['record_actions'], 'records': records, 'gate_receipts': final, 'review_check_receipt': rc, 'exact_coverage_receipt': {'path': str(p / 'cmm-round47-local-coverage.json'), 'sha256': sha(p / 'cmm-round47-local-coverage.json'), 'counts': counts}, 'baseline': {'scope': init['baseline_scope'], 'receipt': init['baseline_receipt'], 'sha256': init['baseline_sha256']}, 'deferred_sources': [{'path': str(q.relative_to(r)), 'sha256': sha(q)} for dirname in cfg['deferred_directories'] for q in sorted((r / dirname).glob('*')) if q.suffix in ['.md', '.json']], 'corrected_review_issues': cfg['corrected_review_issues'], 'open_source_issues': cfg['open_source_issues'], 'exhausted': False}\n reviewrows = '\\n'.join(f\"| [{x['slug']}](../../{x['record']}) | {x['action']} | {x['verdict']} | [Markdown](../../{x['review_md']}) / [YAML](../../{x['review']}) |\" for x in records)\n gaterows = '\\n'.join(f\"- `{' '.join(x['command'])}`: exit 0; log SHA-256 `{x['sha256']}`.\" for x in final['commands'])\n@@ -73,5 +73,5 @@\n report = f'''# Round 47 scientific review and publication report\n \n-{cfg['record_summary']} The corpus grows from 224 to {counts['record_count']} records. These changes preserve material identity, source inconsistencies and laboratory limits; no criticality designation or industrial deployment is inferred from a constituent or source rhetoric.\n+{cfg['record_summary']} The corpus grows from 229 to {counts['record_count']} records. These changes preserve material identity, source inconsistencies and laboratory limits; no criticality designation or industrial deployment is inferred from a constituent or source rhetoric.\n \n Worktree: `{r}`; branch: `{init['branch']}`; trusted base: `{base}`. Generated at {now}.\n"
+    },
+    {
+      "path": "/private/tmp/cmm-round47-check-preservation.py",
+      "sha256": "e84240f6df1983c194d368975804f90a55645b43385aed6a021acaa0349d076c",
+      "reference": "/private/tmp/cmm-round46-check-preservation.py",
+      "reference_sha256": "cd9d23f8fbb98b782c21794a994674b82931cbe82899f18f8d2a8c4c7e50dd4d",
+      "ast_parse": "passed",
+      "beyond_namespace_base_delta": ""
+    },
+    {
+      "path": "/private/tmp/cmm-round47-cleanup.py",
+      "sha256": "77354f7c20a21ddce8a3f2724f39c2800c3899b0462fdfaaee36039018d77525",
+      "reference": "/private/tmp/cmm-round46-cleanup.py",
+      "reference_sha256": "7c087da414b92ab1ff2baf726a3b1578c350d2c11cdbc8bfe2415e6fe4406b5a",
+      "ast_parse": "passed",
+      "beyond_namespace_base_delta": ""
+    },
+    {
+      "path": "/private/tmp/cmm-round47-closeout-guards.py",
+      "sha256": "4e2d19e83aa714fa69a652bd10a0034eb50f4de9f988aa477ea06722dfd577da",
+      "reference": "/private/tmp/cmm-round46-closeout-guards.py",
+      "reference_sha256": "4e2d19e83aa714fa69a652bd10a0034eb50f4de9f988aa477ea06722dfd577da",
+      "ast_parse": "passed",
+      "beyond_namespace_base_delta": ""
+    },
+    {
+      "path": "/private/tmp/cmm-round47-closeout.py",
+      "sha256": "77764b25c2b30fa496f3e8b53f13a5bb68bf44e20badc97b5cdcbdbfe5bae63c",
+      "reference": "/private/tmp/cmm-round46-closeout.py",
+      "reference_sha256": "5ec41147c934b36ee77d96d94e0bc1c6659a6a7cce5ef6dd4756a2f8c8f3d1a7",
+      "ast_parse": "passed",
+      "beyond_namespace_base_delta": ""
+    },
+    {
+      "path": "/private/tmp/cmm-round47-commit.py",
+      "sha256": "eea205114f1a7c5eaa4df613a4d30e22234047e1bfa4e2d3e91012b37e80833e",
+      "reference": "/private/tmp/cmm-round46-commit.py",
+      "reference_sha256": "87382bc91a0475b6adedfe0e6f9f3686798a26ab1c95f81d73c83ea738282b16",
+      "ast_parse": "passed",
+      "beyond_namespace_base_delta": "--- \n+++ \n@@ -5,6 +5,6 @@\n def git(*a):return subprocess.check_output(['git',*a],cwd=r,text=True).strip()\n cfg=json.loads((t/'cmm-round47-helper-config.json').read_bytes());manifest=json.loads((r/cfg['manifest_path']).read_bytes());assert git('rev-parse','HEAD')==base and git('branch','--show-current')==branch and not git('diff','--cached','--name-only')\n-for n in ['final-terminal','review-check-v2-terminal']:assert json.loads((t/f'cmm-round47-{n}.json').read_bytes())['exit_code']==0\n-assert json.loads((t/'cmm-round47-local-coverage-v2.json').read_bytes())['passed'];tracked_changes={'README.md'}|{'data/records/'+slug+'.yaml' for slug,action in cfg['record_actions'].items() if action=='EDIT'};assert set(git('diff','--name-only').splitlines())==tracked_changes\n+for n in ['final-terminal','review-check-terminal']:assert json.loads((t/f'cmm-round47-{n}.json').read_bytes())['exit_code']==0\n+assert json.loads((t/'cmm-round47-local-coverage.json').read_bytes())['passed'];tracked_changes={'README.md'}|{'data/records/'+slug+'.yaml' for slug,action in cfg['record_actions'].items() if action=='EDIT'};assert set(git('diff','--name-only').splitlines())==tracked_changes\n audits=list((r/cfg['publication_review_directory']).glob('*independent-final.json'));assert len(audits)==1;a=json.loads(audits[0].read_bytes());assert a['verdict']=='pass' and not a.get('unresolved_findings',[]) and a['counts']==cfg['counts'];assert all(sha(r/p)==h for p,h in a['reviewed_document_sha256'].items())\n paths=sorted(list(tracked_changes)+git('ls-files','--others','--exclude-standard').splitlines());allowed=['data/records/','history/records/','reviews/structured/','reviews/publication/20261012-round47/','research/ingests/round47','research/sources/round47'];assert all(p=='README.md' or any(p.startswith(a) for a in allowed) for p in paths);assert all((r/p).is_file() and not (r/p).is_symlink() and (r/p).suffix in ['.md','.json','.yaml'] for p in paths)\n"
+    },
+    {
+      "path": "/private/tmp/cmm-round47-enqueue.py",
+      "sha256": "238b3226a87c2e723c21f5a1ac26e77c116596c331a2ff77beade433b3991cba",
+      "reference": "/private/tmp/cmm-round46-enqueue.py",
+      "reference_sha256": "810ba1bf25cb4d8a73f42adb36c9e6a189d3c35a6b157efa6bc9ab7dd193d9f3",
+      "ast_parse": "passed",
+      "beyond_namespace_base_delta": ""
+    },
+    {
+      "path": "/private/tmp/cmm-round47-get-status.py",
+      "sha256": "0a5ebf85f99e1e8b83e47455d1823a213d3d5cea9ce894b5abc38bcc802b1b07",
+      "reference": "/private/tmp/cmm-round46-get-status.py",
+      "reference_sha256": "c06408279d3cbfc4a136b57334c3d3738784d480401daf5e366d2b26062b4494",
+      "ast_parse": "passed",
+      "beyond_namespace_base_delta": "--- \n+++ \n@@ -4,5 +4,5 @@\n import subprocess,json\n r=Path('/private/tmp/CMMMech-expansion-round47-20261012');out=Path('/private/tmp/cmm-round47-current-status.json');assert not out.exists()\n-previous=json.loads(Path('/private/tmp/cmm-round45-current-status.json').read_text())\n+previous=json.loads(Path('/private/tmp/cmm-round46-current-status.json').read_text())\n def get(item):\n  k,v=item;e=v['endpoint'];p=subprocess.run(['gh','api',e],cwd=r,text=True,capture_output=True);assert p.returncode==0,(e,p.stderr);return k,{'endpoint':e,'data':json.loads(p.stdout)}\n"
+    },
+    {
+      "path": "/private/tmp/cmm-round47-hosted-audit.py",
+      "sha256": "ad232f0306194356ced3193b8e4bc48d92c7d56fdd52163bd4f59e4caa1106f2",
+      "reference": "/private/tmp/cmm-round46-hosted-audit.py",
+      "reference_sha256": "011186f534f90dbaf804ffcd7195e56c42a3c3ca90fc8f61e98e67b242c67bb0",
+      "ast_parse": "passed",
+      "beyond_namespace_base_delta": ""
+    },
+    {
+      "path": "/private/tmp/cmm-round47-hosted-peer-readonly.py",
+      "sha256": "e722736ec03e5174bbc2f322248585d60952fd93cf341dfd4b2e56bbc4f27252",
+      "reference": "/private/tmp/cmm-round46-hosted-peer-readonly.py",
+      "reference_sha256": "8a2ca547ecc6c11f037969ce59f60cc3a60d2ee76b8aa21917c51b3f84fc4f49",
+      "ast_parse": "passed",
+      "beyond_namespace_base_delta": "--- \n+++ \n@@ -1,3 +1,3 @@\n-\"\"\"Read-only hosted assurance. Run only after parent reports the actual Round46 PR.\"\"\"\n+\"\"\"Read-only hosted assurance. Run only after parent reports the actual Round47 PR.\"\"\"\n from pathlib import Path\n from datetime import datetime,timezone\n@@ -28,10 +28,10 @@\n result={'started_at':started.isoformat(),'reviewer':args.reviewer,'repository':REPO,'read_only':True,'authorship':args.authorship,'findings':[],'passed':False,'verdict':'blocked'}\n try:\n- names=['commit-receipt','publication-package','pr-open','pr-review-posted','helper-config','preflight-20261012-published-terminal','final-terminal','review-check-v2-terminal','local-coverage-v2']\n+ names=['commit-receipt','publication-package','pr-open','pr-review-posted','helper-config','preflight-20261012-published-terminal','final-terminal','review-check-terminal','local-coverage']\n  receipts={n:load(P/f'cmm-round47-{n}.json') for n in names}\n  c,p,opened,posted,cfg,pre,gates,rc,cov=[receipts[n] for n in names]\n  num=opened['number'];head=c['head'];tree=c['tree'];branch=c['branch'];base=c['base']\n  need(num==args.expected_pr and head==args.expected_head,'Parent-announced PR/head mismatch')\n- need(base==BASE and branch=='curate/cmm-expansion-round47-20261012','Wrong Round46 base/branch')\n+ need(base==BASE and branch=='curate/cmm-expansion-round47-20261012','Wrong Round47 base/branch')\n  need(p['repository']==REPO and p['head']==head and p['tree']==tree and p['branch']==branch and p['base']=='main','Package identity mismatch')\n  need(opened['headRefOid']==head and opened['headRefName']==branch and opened['baseRefName']=='main','Opened receipt mismatch')\n"
+    },
+    {
+      "path": "/private/tmp/cmm-round47-initialize.py",
+      "sha256": "5d6ca69c92838c4af7059adf92b32e5e88f2f4f405ceb35a4f552bdff4235c3e",
+      "reference": "/private/tmp/cmm-round46-initialize.py",
+      "reference_sha256": "b0505491e7d20d7646738fc359a8f3e597ee0cc2f74a78d7edbc05a235bc4f1f",
+      "ast_parse": "passed",
+      "beyond_namespace_base_delta": "--- \n+++ \n@@ -6,10 +6,10 @@\n def ident(p):return {'symlink':os.readlink(p)} if p.is_symlink() else {'sha256':sha(p)}\n assert git(main,'rev-parse','HEAD')==base and git(main,'branch','--show-current')=='main' and not git(main,'status','--porcelain=v1','--untracked-files=all');assert git(main,'ls-remote','origin','refs/heads/main').split()[0]==base\n-old=json.loads((t/'cmm-round45-preservation-before.json').read_bytes());repos={}\n+old=json.loads((t/'cmm-round46-preservation-before.json').read_bytes());repos={}\n for key in ['main','skill']:\n  r=Path(old['repositories'][key]['path']);names=[s for s in git(r,'ls-files','--others','-z').split('\\0') if s] if key=='main' else list(old['repositories'][key]['files']);repos[key]={'path':str(r),'head':git(r,'rev-parse','HEAD'),'branch':git(r,'branch','--show-current'),'status':git(r,'status','--porcelain=v1','--untracked-files=all'),'files':{n:ident(r/n) for n in names}}\n  assert repos[key]['files']==old['repositories'][key]['files']\n  if key=='skill':assert all(repos[key][k]==old['repositories'][key][k].strip() for k in ['head','branch','status'])\n-before.write_text(json.dumps({'recorded_at':now(),'repositories':repos},indent=2)+'\\n');baseline=t/'cmm-round45-postmerge-20261012-published-terminal.json';b=json.loads(baseline.read_bytes());assert b['exit_code']==0 and b['merge_commit']==base and b['expected_tree']==git(main,'rev-parse','HEAD^{tree}') and sha(b['log'])==b['log_sha256'];assert any(c['command']==['just','check'] and c['exit_code']==0 for c in b['commands']);assert b['counts']['record_count']==224\n+before.write_text(json.dumps({'recorded_at':now(),'repositories':repos},indent=2)+'\\n');baseline=t/'cmm-round46-postmerge-20261012-published-terminal.json';b=json.loads(baseline.read_bytes());assert b['exit_code']==0 and b['merge_commit']==base and b['expected_tree']==git(main,'rev-parse','HEAD^{tree}') and sha(b['log'])==b['log_sha256'];assert any(c['command']==['just','check'] and c['exit_code']==0 for c in b['commands']);assert b['counts']['record_count']==229\n subprocess.run(['git','-C',str(main),'worktree','add','-b',branch,str(work),base],check=True);sync=subprocess.run(['uv','sync','--quiet','--locked','--extra','dev','--offline'],cwd=work,env=dict(env,UV_CACHE_DIR='/private/tmp/cmmmech-uv-cache',UV_OFFLINE='1'));assert sync.returncode==0\n x={'recorded_at':now(),'worktree':str(work),'branch':branch,'base':base,'tree':git(work,'rev-parse','HEAD^{tree}'),'preservation_snapshot':str(before),'preserved_counts':{k:len(v['files']) for k,v in repos.items()},'baseline_receipt':str(baseline),'baseline_sha256':sha(baseline),'baseline_scope':'Reuse the just-completed fresh remote-main full gate at this exact unmodified commit and tree; no redundant test rerun before curation.','passed':True};out.write_text(json.dumps(x,indent=2)+'\\n');print(json.dumps(x,indent=2))\n"
+    },
+    {
+      "path": "/private/tmp/cmm-round47-isolated-coverage.py",
+      "sha256": "be12032f071424709c2c7dbd83dc74097b67204a0fee39848b6435725552fe05",
+      "reference": "/private/tmp/cmm-round46-isolated-coverage.py",
+      "reference_sha256": "67fa71a9fb6c9e9a642e0df1c8441796b3ec17d6d2cda3f33985b5222541d0de",
+      "ast_parse": "passed",
+      "beyond_namespace_base_delta": ""
+    },
+    {
+      "path": "/private/tmp/cmm-round47-isolated-verification.py",
+      "sha256": "2425d4e9624bab5b0364621677c871c4abbcfcc0d0a63505100de443497f7299",
+      "reference": "/private/tmp/cmm-round46-isolated-verification.py",
+      "reference_sha256": "e24f633e7094c7d9bca0a3bec2095014342135c144bad1a2a5abbb0e13a66649",
+      "ast_parse": "passed",
+      "beyond_namespace_base_delta": ""
+    },
+    {
+      "path": "/private/tmp/cmm-round47-publish.py",
+      "sha256": "5a5ea4745be9ae120d5df1a3df3ab00c5abc1df3fde0cc87f3109f8e79ea18e7",
+      "reference": "/private/tmp/cmm-round46-publish.py",
+      "reference_sha256": "01107403b34f9d3e597210debf0f1d8bfe3eb91a2ece4f604a5d1c69fc0303a4",
+      "ast_parse": "passed",
+      "beyond_namespace_base_delta": ""
+    },
+    {
+      "path": "/private/tmp/cmm-round47-run-final.py",
+      "sha256": "4bbac177c08916af228019b0f43e1081c1732668639845e36626c3bb69f8ae11",
+      "reference": "/private/tmp/cmm-round46-run-final.py",
+      "reference_sha256": "8a4b154f1eb65c2fa1369f8817a90772e1b46221faf18495b21b0f3ff632b9e0",
+      "ast_parse": "passed",
+      "beyond_namespace_base_delta": ""
+    },
+    {
+      "path": "/private/tmp/cmm-round47-run-review-check.py",
+      "sha256": "292b812af93ac4c737bdb8f5fa12b69318fd6bf99afe90687ddfff5eafcc0f72",
+      "reference": "/private/tmp/cmm-round46-run-review-check.py",
+      "reference_sha256": "e57bd84a785fd91cdb6fd593f138d0e7f1ba3d28ca8565aa12d730257726cd92",
+      "ast_parse": "passed",
+      "beyond_namespace_base_delta": ""
+    },
+    {
+      "path": "/private/tmp/cmm-round47-sync-main.py",
+      "sha256": "a97ff3ce5153c4036396b9bfd0d18d7916be7182f1b10836bc40b9084b28149f",
+      "reference": "/private/tmp/cmm-round46-sync-main.py",
+      "reference_sha256": "bc33b97fb3e315fb29303c053f98a4a551e08d33896a4547507b9bb4e8727661",
+      "ast_parse": "passed",
+      "beyond_namespace_base_delta": ""
+    }
+  ],
+  "config_at_audit": {
+    "path": "/private/tmp/cmm-round47-helper-config.json",
+    "sha256": "dedf4e9b4e5cf86991cb8716445816af49ccfe8086f042d485493dbbdcbfc499",
+    "expected_counts": {
+      "record_count": 231,
+      "history_count": 274,
+      "structured_review_count": 283,
+      "review_base_count": 48,
+      "covered_records": 231
+    },
+    "source_issues": [
+      103,
+      104,
+      120,
+      129,
+      130,
+      133,
+      134,
+      137,
+      140,
+      151
+    ],
+    "corrected_review_issues": []
+  },
+  "assessments": [
+    "Current round47 worktree/base/branch/receipt names are correct; explicit normalization removes prior v2 receipt selectors. Historical source-survey preservation tag remains intentionally fixed to its original reviewed object.",
+    "Guarded commit pins exact final audit/manifest files and scoped changes, refuses a dirty staging area, and runs staged whitespace checks. Guarded publish uses reviewed body hashes, exact local head/tree/base and absent owned branch, then verifies PR and COMMENT readback.",
+    "Enqueue requires actual exact-head hosted peer assurance, all required checks passing, validate-strict present, active no-bypass effective native SQUASH/ALLGREEN queue and exact posted COMMENT. It uses match-head-commit and no administrator bypass.",
+    "Cleanup verifies actual merged commit tree/parent and issue states, deletes only the exact owned remote ref with a lease, then detaches that owned worktree and removes its exact local branch.",
+    "Preflight and postmerge verification use fresh isolated clones, retain required historical review bases and verify absence of topic commit. Full just check is run postmerge; preflight reruns nonempty/history/native coverage on the exact squash-shaped tree. No false preflight full-test execution claim.",
+    "Coverage enumerates hidden/ignored files and follows symlinks with cycle prevention; it matches record ID/path/exact bytes to completed scientific reviews and checks all bases.",
+    "Hosted peer reads explicit parent PR/head and actual reviewer/authorship; GET-only GitHub and local reads, exact hosted blob/diff/package/COMMENT/science binding, and genuine pending CI scope. Hosted final audit binds four actual runs/jobs to exact topic and actual merge metadata; unfinished runs remain pending.",
+    "Main synchronization requires byte/state preservation and fast-forward only. Closeout decodes raw log bytes without newline translation and pure guard requires raw hash, actual exact receipts and test summary before posting/readback.",
+    "Report/package templates are guarded on future terminal receipts/current hashes. Config source issue151 remains OPEN and is not an automatic closure target. Current anticipated counts and fixed test/preservation prose must be verified against actual final receipts before final publication audit."
+  ],
+  "limits": [
+    "Current configuration is prospective until actual final scientific/review/coverage receipts and generated artifacts exist.",
+    "No actual hosted PR/CI/merge/cleanup success is established by static reading.",
+    "Parent executes authorized mutations; this audit did not execute them.",
+    "Future edits invalidate these exact helper/config hashes and require affected reassessment."
+  ]
+}
