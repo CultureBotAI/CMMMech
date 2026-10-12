@@ -34,12 +34,12 @@
   <div>
     <label for="record-kind">Material Kind</label>
     <select id="record-kind">
-      <option value="">All kinds (5)</option>
+      <option value="">All kinds (6)</option>
       <option value="element">Element (64)</option>
-      <option value="mineral">Mineral (83)</option>
-      <option value="secondary_resource">Secondary resource (51)</option>
+      <option value="mineral">Mineral (84)</option>
+      <option value="secondary_resource">Secondary resource (52)</option>
       <option value="commodity">Commodity (32)</option>
-      <option value="primary_resource">Primary resource (19)</option>
+      <option value="primary_resource">Primary resource (20)</option>
       <option value="mineral_group">Mineral group (4)</option>
     </select>
   </div>
@@ -48,11 +48,11 @@
     <select id="record-mechanism">
       <option value="">All processes</option>
       <option value="bioleaching">Bioleaching (101)</option>
-      <option value="biomineralization">Biomineralization (32)</option>
+      <option value="biomineralization">Biomineralization (33)</option>
       <option value="redox_transformation">Redox transformation (24)</option>
       <option value="biosorption">Biosorption (12)</option>
       <option value="separation">Separation (8)</option>
-      <option value="recovery">Recovery (5)</option>
+      <option value="recovery">Recovery (6)</option>
       <option value="other">Other (24)</option>
     </select>
   </div>
@@ -66,7 +66,7 @@
   <button type="reset">Clear filters</button>
 </form>
 
-<p id="record-count" role="status" aria-live="polite">5 materials</p>
+<p id="record-count" role="status" aria-live="polite">6 materials</p>
 <p id="record-empty" hidden>No materials match your query or filters. Clear filters to show all.</p>
 
 <div class="record-table-scroll" role="region" aria-label="Materials table" tabindex="0">
@@ -183,6 +183,33 @@
       </td>
       <td>
         <span class="badge">secondary resource</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recovery</span>
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="primary_resource"
+        data-mechanisms="recovery"
+        data-critical="false"
+        data-search="eudialyte concentrate eudialyte-concentrate primary_resource a beneficiated geological feed represented by the tanbreez concentrate from southern greenland characterized by ma and colleagues (2019). the source describes crushing followed by partly magnetic selection; this is an upgraded mixed mineral concentrate, distinct from the uncharacterized crushed eudialyte ore in hunter&#39;s 2020 thesis, a formal eudialyte mineral species or group, elemental zirconium and recovered rare-earth products. table i reports 1.60 wt% total rare earth elements and 6.46 wt% zr in the laboratory feed. qemscan assigns 67.05% of the material to eudialyte, alongside amphibole, nepheline, feldspar and other phases; this classification does not establish a pure species or a universal commercial concentrate specification. the source acknowledges the geological survey of finland as concentrate supplier. no criticality designation is inherited from constituent elements. recovery">
+      <td>
+        <a href="../materials/eudialyte-concentrate.html"><strong>Eudialyte concentrate</strong></a>
+        <p class="record-desc">A beneficiated geological feed represented by the TANBREEZ concentrate from southern Greenland characterized by Ma and colleagues (2019). The source describes crushing followed by partly magnetic selection; this is an upgraded mixed mineral concentrate, distinct from the uncharacterized crushed eudialyte ore in Hunter&#39;s 2020 thesis, a formal eudialyte mineral species or group, elemental zirconium and recovered rare-earth products. Table I reports 1.60 wt% total rare earth elements and 6.46 wt% Zr in the laboratory feed. QEMSCAN assigns 67.05% of the material to eudialyte, alongside amphibole, nepheline, feldspar and other phases; this classification does not establish a pure species or a universal commercial concentrate specification. The source acknowledges the Geological Survey of Finland as concentrate supplier. No criticality designation is inherited from constituent elements.</p>
+      </td>
+      <td>
+        <span class="badge">primary resource</span>
       </td>
       <td>
         <span style="color: var(--muted); font-size: .85rem;">—</span>

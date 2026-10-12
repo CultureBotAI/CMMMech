@@ -1,0 +1,25 @@
+history_version: 1
+target:
+  kind: record
+  slug: allanite-leachate
+  path: data/records/allanite-leachate.yaml
+session:
+  id: 2026-10-12T100026Z-codex-3c88ef
+  timestamp: '2026-10-12T10:00:26Z'
+  actors:
+  - name: codex
+    type: ai_agent
+    model: GPT-6
+    agent_tool: codex
+events:
+- type: CREATE
+  outcome: changed
+  summary: Added prepared allanite leachate and yeast-supernatant oxalate precipitation
+  details: Reviewed Lu2026 original article, relevant original graphics and supplements, and
+    workbook arithmetic. Kept chemical feed preparation separate from microbial reagent production,
+    solution depletion separate from product yield, and source inconsistencies and laboratory
+    limits explicit. Resolves the evidence-assessment work in issue163 subject to independent
+    scientific review.
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/163

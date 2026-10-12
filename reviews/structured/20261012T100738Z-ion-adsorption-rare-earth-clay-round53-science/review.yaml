@@ -1,0 +1,359 @@
+schema_version: 1.0.0
+review_id: 20261012T100738Z-ion-adsorption-rare-earth-clay-round53-science
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent review of Guangxi evidence extension for ion-adsorption rare-earth
+  clay
+started_at: '2026-10-12T10:03:37.587838Z'
+finished_at: '2026-10-12T10:07:38.765295Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The new Guangxi extension, history and dossier were authored
+    by /root/round27_packaging. Root independently inspected the new original evidence
+    and did not edit this extension. Root authored the older Madagascar record; unchanged
+    prior scientific fields are verified against the independent /root/round43_hardmetal
+    round51 final review, not presented as a new independent literature review of
+    root-authored science.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The separately scoped Guangxi culture-broth observation is supported, with
+  source arithmetic, controls, community and scale limits retained. No corrective
+  finding in this final state; earlier Madagascar fields retain their independent
+  review through explicit preservation checks.
+source:
+  git_revision: b85c2c2c753fe83a2fc21f073ee1e49675ae647e
+  state: working_tree
+  inputs:
+  - path: data/records/ion-adsorption-rare-earth-clay.yaml
+    sha256: f406430549ad9e73a0b4bd4be5b5f512fe171d43790bc2692c18d199a82564d5
+    role: target
+  - path: history/records/ion-adsorption-rare-earth-clay/2026-10-12T100204Z-codex-982d74.yaml
+    sha256: 4bc6c32206bbaa7858a4e9e928f8ee061d92d9330d3144c616aee24c5a1c5c73
+    role: context
+  - path: research/sources/round53-ree-clay/20261012T100423Z-source-investigation.json
+    sha256: d0e681802ffbaa85252267cb27a86ba9cdcf0b765c18ea490729c363994c3885
+    role: context
+  - path: research/sources/round53-ree-clay/20261012T100423Z-source-investigation.md
+    sha256: c0e4469e37aa9c8fa10e3c35a9511ecfde40c4e3ec7e024ad5dafb61bcd3d9ef
+    role: context
+  - path: reviews/structured/20261012T083950Z-ion-adsorption-rare-earth-clay-round51-resolution/review.yaml
+    sha256: 5ebfd5cbc53c786b44bd2d8507521b502ac724492669dced24ff65dbbb277a67
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:ion-adsorption-rare-earth-clay
+  path: data/records/ion-adsorption-rare-earth-clay.yaml
+  label: Ion-adsorption rare-earth clay
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/ion-adsorption-rare-earth-clay.yaml
+    role: maintained scientific record
+scope:
+  description: All final record fields and append-only change inspected; fresh scientific
+    review covers Guangxi addition and expanded material boundary. Retained Madagascar
+    science is checked for unchanged content and prior independent review coverage,
+    not newly reassessed.
+  selection: Exact changed target assigned to a different reviewer from the current
+    curator.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:ion-adsorption-rare-earth-clay
+  exclusions:
+  - target: Fresh reanalysis of unchanged Barnett2018 literature and unavailable Li2025
+      sequencingSI
+    reason: Prior scientific review is explicitly relied on; inaccessibleSI is not
+      required for the narrow unassigned-community observation and no sequence-level
+      claim is accepted.
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/ion-adsorption-rare-earth-clay.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:ion-adsorption-rare-earth-clay
+  summary: Root executed; one record checked, zero failed. Log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- check_id: batch
+  name: Completed batch batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:ion-adsorption-rare-earth-clay
+  summary: 'Root executed; actual log /private/tmp/cmm-round53-final-batch.log SHA256
+    5dccf1da78b9111e8714e725ea5b540e319448ec511b2cd3cd161ed16ab3d5a5. ts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 22%]
+
+    ........................................................................ [ 45%]
+
+    ........................................................................ [ 67%]
+
+    .............................................................sss........ [ 90%]
+
+    ................................                                         [100%]
+
+    317 passed, 3 skipped in 137.72s (0:02:17)
+
+    Checked 256 record(s); 0 failed.
+
+    Checked 303 history record(s); 0 error(s).
+
+    '
+- check_id: nonempty
+  name: Completed batch nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:ion-adsorption-rare-earth-clay
+  summary: 'Root executed; actual log /private/tmp/cmm-round53-final-nonempty.log
+    SHA256 f102e7162eedb9bf7d45e2a2fa9b011e7a3bf83fb2c341e1424889b9dd856f34. Checked
+    256 record(s); 0 failed.
+
+    '
+- check_id: history
+  name: Completed batch history
+  command: uv run --locked cmmmech validate-history --base b85c2c2c753fe83a2fc21f073ee1e49675ae647e
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:ion-adsorption-rare-earth-clay
+  summary: 'Root executed; actual log /private/tmp/cmm-round53-final-history.log SHA256
+    60b1330e0225bff7414e09d933725aee3784ed120b5151b881814e9a98ae731c. Checked 303
+    history record(s); 0 error(s).
+
+    '
+- check_id: render-check
+  name: Completed batch render-check
+  command: just render-check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:ion-adsorption-rare-earth-clay
+  summary: 'Root executed; actual log /private/tmp/cmm-round53-final-render-check.log
+    SHA256 be156b3acc20d39b6bad41632b10eb7ccfc2c8a7fdeaec3f6236fbc67831aea6. uv run
+    python scripts/render_pages.py --check
+
+    pages/ is current
+
+    '
+evidence:
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1007/s12613-024-3071-9
+  locator: Final official14-page PDF including cover; article Sections2-4, all11figures
+    and3tables, printed1848-1860; original physical pages4-14 visually inspected,
+    earlier article text read.
+  accessed_at: '2026-10-12T10:07:38.765295Z'
+  support: supports
+  summary: Ground/milled Guangxi feed and cultivated pit-water broth are a distinct
+    experiment within the existing primary-resource class. Method conditions, media
+    salts, chemical comparators, aqueous observations and limited colony annotations
+    support the qualified extension.
+  snapshot_sha256: 2d98c82577a030b2bd50a1a3391b2107b22ace096ecfa28f8c067b989d979311
+- evidence_id: contradictions
+  kind: primary_source
+  reference: http://ijmmm.ustb.edu.cn/en/article/pdf/preview/10.1007/s12613-024-3071-9.pdf
+  locator: Printed1850Table1 versus digestion inventory;1851Eq2; Figures6a,7a,8,9-11.
+  accessed_at: '2026-10-12T10:07:38.765295Z'
+  support: supports
+  summary: Original Eq2 is dimensionally inconsistent; oxide conversion cannot reconcile
+    feed inventory. All50% culture arms underperform salt controls. Column1kg differs
+    from milled stirred assay and Fig7pH conditions. Relative XRD and schematic cannot
+    prove Ce reduction, specific-phase dissolution or pure product. Record preserves
+    these limits.
+  snapshot_sha256: 2d98c82577a030b2bd50a1a3391b2107b22ace096ecfa28f8c067b989d979311
+- evidence_id: provenance
+  kind: record_content
+  reference: research/sources/round53-ree-clay/20261012T100423Z-source-investigation.json
+  locator: Both dossier files, frozen record, actual EDIT sidecar/inline event, acquisition
+    receipts and independently verified27 raw/receipt hashes.
+  accessed_at: '2026-10-12T10:07:38.765295Z'
+  support: supports
+  summary: Official original acquisition resolves prior graphic-access gap. Publisher
+    metadata supplements list is empty despite main-textSI citation; no sequencingSI
+    access or new taxon identity is claimed. Copyrighted originals stay outsideGit.
+  snapshot_sha256: d0e681802ffbaa85252267cb27a86ba9cdcf0b765c18ea490729c363994c3885
+- evidence_id: preservation
+  kind: record_content
+  reference: /private/tmp/cmm-round53-clay-review/evidence-proof.json
+  locator: Exact parent record versus current parsed fields and prior review record
+    hash; unchanged id/name/kind and prior source/mechanism/history list prefixes.
+  accessed_at: '2026-10-12T10:07:38.765295Z'
+  support: supports
+  summary: Only expanded description and appended Guangxi source/mechanism/provenance
+    change scientific scope. Prior Barnett2018 claims are not freshly literature-reviewed;
+    their unchanged bytes/values retain the independent round51 assessment. Root authored
+    the earlier record but did not curate this extension.
+  snapshot_sha256: 0504ba27879a559463c40266f903a9ee0f23b5854541940070ff2682edce8556
+- evidence_id: prior
+  kind: prior_review
+  reference: reviews/structured/20261012T083950Z-ion-adsorption-rare-earth-clay-round51-resolution/review.yaml
+  locator: Independent final round51 scientific assessment and resolved Table4 dossier
+    finding.
+  accessed_at: '2026-10-12T10:07:38.765295Z'
+  support: supports
+  summary: Earlier complete evidence review remains applicable to retained Madagascar
+    fields. Original initial review and its explicit correction remain immutable;
+    this extension neither reopens nor silently supersedes their finding lineage.
+  snapshot_sha256: 5ebfd5cbc53c786b44bd2d8507521b502ac724492669dced24ff65dbbb277a67
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round53-clay-review/dedup-receipt.json
+  locator: Independent exact DOI/new mechanism/Guangxi matching-path search; curator
+    broader dedup receipt inspected separately; exactDOI correction/erratum/retraction
+    and title/supplement web query.
+  accessed_at: '2026-10-12T10:07:38.765295Z'
+  support: supports
+  summary: Matching current record and prior deferred lead are correctly one owner;
+    bornite is an unrelated Guangxi mention. No affecting correction surfaced in bounded
+    returns. Missing sequencingSI is retained, not represented by search snippets.
+  search_scope: Current records/research/reviews/history plus explicit current raw
+    root, rg --no-ignore --hidden --follow. Curator current/original and305 cited-directory
+    screen inspected separately; nine unavailable historical roots, binaries and unrelated
+    filesystem paths remain outside semantic coverage. First returned web relevance
+    sets only.
+  snapshot_sha256: 24defdff05f2ba83e3dc2aace6ae52f9b1390a7f900497c757c9ebb476431294
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round53-final-terminal.json
+  locator: Completed just check, nonempty corpus, append-only history and render checks;
+    all logs independently hash checked.
+  accessed_at: '2026-10-12T10:07:38.765295Z'
+  support: supports
+  summary: Required structural checks passed; scientific support comes from primary
+    evidence, not offline validation.
+  snapshot_sha256: 87d8701e2f43cdccb46f2fd4e788c31593c8be134573a12a2b8d7cb419b3ab36
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: One primary-resource owner with two separate feeds
+  outcome: supported
+  target_ids:
+  - cmmmech:ion-adsorption-rare-earth-clay
+  evidence_ids:
+  - primary
+  - preservation
+  - prior
+  - search
+  summary: Guangxi and Madagascar remain separately scoped experiments; no new mineral-species,
+    waste or elemental owner is inferred.
+  dimensions:
+  - name: material_form
+    value: Natural ion-adsorption clay; original ore for columns, separately milled
+      assay feed
+    definition: Geological resource rather than pure mineral or manufactured residue
+    evidence_ids:
+    - primary
+  - name: criticality
+    value: No designation added
+    definition: No jurisdiction/list/edition is inherited from contained elements
+    evidence_ids:
+    - provenance
+- assessment_id: mechanism
+  area: evidence
+  topic: Association versus causal or taxonomic overreach
+  outcome: supported
+  target_ids:
+  - cmmmech:ion-adsorption-rare-earth-clay
+  evidence_ids:
+  - primary
+  - contradictions
+  - provenance
+  summary: Cultivated broth with measured organic acids and aqueousLa/Ce/Y supports
+    association, while media salts, unmapped members and missing matched controls
+    prevent causal attribution.
+  dimensions:
+  - name: organism_and_biomass
+    value: Unresolved cultivated pit-water communities G1-G3; no new taxonIDs
+    definition: Analytical filtered samples do not make the leaching stage cell-free;18S
+      genus annotations do not identify strains
+    evidence_ids:
+    - primary
+    - provenance
+  - name: conditions_and_controls
+    value: 25°C/200rpm stirred assays and separate1kg column; water and2/4wt% ammonium
+      sulfate comparisons
+    definition: No matched sterile medium/pH comparison or matched abiotic column
+      is established
+    evidence_ids:
+    - primary
+    - contradictions
+- assessment_id: quantity
+  area: quantity
+  topic: Source percentages and phase/scale limits
+  outcome: supported
+  target_ids:
+  - cmmmech:ion-adsorption-rare-earth-clay
+  evidence_ids:
+  - primary
+  - contradictions
+  summary: Printed invalid equation, conflicting feed inventories and source-scale
+    percentages remain qualified. Neither solution concentration nor relative XRD/SEM
+    establishes pure recovered product or redox cause.
+  dimensions:
+  - name: outcome_and_scale
+    value: Laboratory solution mobilization;1kgcolumn, not cited200t priorstudy
+    definition: No independent mass balance, isolated product or industrial deployment
+      inferred
+    evidence_ids:
+    - primary
+    - contradictions
+- assessment_id: provenance
+  area: provenance
+  topic: Independent extension review and retained earlier science
+  outcome: supported
+  target_ids:
+  - cmmmech:ion-adsorption-rare-earth-clay
+  evidence_ids:
+  - provenance
+  - preservation
+  - prior
+  - gates
+  summary: New evidence independently assessed against original graphics, old field
+    prefixes and review proven unchanged, actual source access limits explicit, and
+    final hashes/history pass gates.
+findings: []
+actions: []
+limitations:
+- Invalid printed extraction arithmetic and conflicting feed inventories prevent treating
+  reported percentages as independently validated recovery.
+- Culture medium, salts, pH, biomass and accumulated metabolites are not separately
+  controlled; no matched abiotic column or proof of individual causal members.
+- SequencingSI not acquired; no new species/strain/accession assertions.
+- Phase-specific dissolution, Ce redox and pure-product recovery are not directly
+  demonstrated.
+- Original primary physical pages4-14 were visually inspected and earlier text read;
+  no independent instrument, culture, sequence or full statistical reanalysis.
+- Prior Madagascar science is unchanged and supported by the cited earlier independent
+  review; this reviewer curated that older record and discloses the limited fresh-review
+  scope.
+- Bounded notice/dedup searches cannot establish universal absence.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261012T083950Z-ion-adsorption-rare-earth-clay-round51-resolution
+  relationship: Retained independent scientific evidence for unchanged Madagascar
+    fields; new Guangxi experiment reviewed separately here, no finding disposition
+    change.
+tags:
+- round53
+- clay
+- independent-extension
+- scientific

@@ -1,0 +1,415 @@
+schema_version: 1.0.0
+review_id: 20261012T100714Z-hafnon-round53-science
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of hafnon
+started_at: '2026-10-12T10:00:32Z'
+finished_at: '2026-10-12T10:07:14Z'
+reviewer:
+  identity: Codex /root/round43_hardmetal
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The superalloy agent authored the hafnon record, history and
+    source dossier. This reviewer authored the separate eudialyte-concentrate contribution
+    and did not edit hafnon or its context. Native inspect captured all five exact
+    input files before judgment.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The IMA species identity and qualified body-E natural-occurrence context
+  are supported. The complete 2004 primary paper was independently read and all 16
+  original pages, nine figures and seven tables inspected. The record correctly separates
+  synthetic structural constants, overlapping older microanalyses and inferred geological
+  formation from direct observations. No corrective finding was identified in this
+  whole-record review.
+source:
+  git_revision: b85c2c2c753fe83a2fc21f073ee1e49675ae647e
+  state: working_tree
+  inputs:
+  - path: data/records/hafnon.yaml
+    sha256: 9aa7b20c09e4ba2fb2ad70bec39df64bde4cb7bceb6a9c13c8e0798ad78d80cd
+    role: target
+  - path: history/records/hafnon/2026-10-12T095809Z-codex-8232d0.yaml
+    sha256: 4fa8e2609c372f1f506be7f0dad6e66a3a0c81f854e12d7030a8bb38594c3f8e
+    role: context
+  - path: research/sources/round53-hf-zr/20261012T095957Z-source-investigation.json
+    sha256: bcf873728eb49ca81ba4f1e7bfaca32467a8a6c8d819e2f34a72361c3f291284
+    role: context
+  - path: research/sources/round53-hf-zr/20261012T095957Z-source-investigation.md
+    sha256: f8b063ca7b7446c0e8de8a2b5a883a531558fd98737eb8741fb497ce7b82de6b
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:hafnon
+  path: data/records/hafnon.yaml
+  label: Hafnon
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/hafnon.yaml
+    role: Maintained scientific record
+scope:
+  description: Entire frozen hafnon record, CREATE history, paired source dossier
+    and schema; complete 2004 primary paper, current authority and Handbook, and bounded
+    correction/citation checks.
+  selection: Parent-assigned independent review of one new mineral species owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:hafnon
+checks:
+- check_id: named
+  name: Independent named record validation
+  command: uv run --locked cmmmech validate data/records/hafnon.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:hafnon
+  summary: Executed by this reviewer and completed with one record checked, zero failed.
+    Exact terminal output retained outside Git.
+- check_id: hashes
+  name: Exact captured input and raw source hashes
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:hafnon
+  summary: All five native input hashes and all 30 declared raw-artifact hashes match;
+    dedup receipt and prior 2007 dossier/PDF hashes also verified. All original 2004
+    pages and relevant authority pages inspected independently.
+- check_id: cohort_batch
+  name: Parent-completed cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:hafnon
+  summary: Actual terminal receipt and matching log hashes independently verified.
+    Parent executed these completed batch checks; reviewer did not duplicate the full
+    suite. Exact counts are preserved in the linked receipt.
+- check_id: cohort_nonempty
+  name: Parent-completed cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:hafnon
+  summary: Actual terminal receipt and matching log hashes independently verified.
+    Parent executed these completed batch checks; reviewer did not duplicate the full
+    suite. Exact counts are preserved in the linked receipt.
+- check_id: cohort_history
+  name: Parent-completed cohort history
+  command: uv run --locked cmmmech validate-history --base b85c2c2c753fe83a2fc21f073ee1e49675ae647e
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:hafnon
+  summary: Actual terminal receipt and matching log hashes independently verified.
+    Parent executed these completed batch checks; reviewer did not duplicate the full
+    suite. Exact counts are preserved in the linked receipt.
+- check_id: cohort_render_check
+  name: Parent-completed cohort render-check
+  command: just render-check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:hafnon
+  summary: Actual terminal receipt and matching log hashes independently verified.
+    Parent executed these completed batch checks; reviewer did not duplicate the full
+    suite. Exact counts are preserved in the linked receipt.
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/hafnon.yaml
+  locator: Entire exact frozen input
+  accessed_at: '2026-10-12T10:07:14Z'
+  support: supports
+  summary: Read and verified the bytes captured by native inspect before judgment.
+  snapshot_sha256: 9aa7b20c09e4ba2fb2ad70bec39df64bde4cb7bceb6a9c13c8e0798ad78d80cd
+- evidence_id: history
+  kind: record_content
+  reference: history/records/hafnon/2026-10-12T095809Z-codex-8232d0.yaml
+  locator: Entire exact frozen input
+  accessed_at: '2026-10-12T10:07:14Z'
+  support: supports
+  summary: Read and verified the bytes captured by native inspect before judgment.
+  snapshot_sha256: 4fa8e2609c372f1f506be7f0dad6e66a3a0c81f854e12d7030a8bb38594c3f8e
+- evidence_id: dossier_json
+  kind: record_content
+  reference: research/sources/round53-hf-zr/20261012T095957Z-source-investigation.json
+  locator: Entire exact frozen input
+  accessed_at: '2026-10-12T10:07:14Z'
+  support: supports
+  summary: Read and verified the bytes captured by native inspect before judgment.
+  snapshot_sha256: bcf873728eb49ca81ba4f1e7bfaca32467a8a6c8d819e2f34a72361c3f291284
+- evidence_id: dossier_md
+  kind: record_content
+  reference: research/sources/round53-hf-zr/20261012T095957Z-source-investigation.md
+  locator: Entire exact frozen input
+  accessed_at: '2026-10-12T10:07:14Z'
+  support: supports
+  summary: Read and verified the bytes captured by native inspect before judgment.
+  snapshot_sha256: f8b063ca7b7446c0e8de8a2b5a883a531558fd98737eb8741fb497ce7b82de6b
+- evidence_id: schema
+  kind: record_content
+  reference: src/cmmmech/schema/cmmmech.yaml
+  locator: Entire exact frozen input
+  accessed_at: '2026-10-12T10:07:14Z'
+  support: supports
+  summary: Read and verified the bytes captured by native inspect before judgment.
+  snapshot_sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+- evidence_id: primary
+  kind: primary_source
+  reference: https://revistas.ufrj.br/index.php/amn/article/download/48745/26398
+  locator: Complete original pp.321–336; sampling pp.324–325, methods p.325, occurrence
+    p.326 and Table 2 p.329, overlap pp.326/332, interpretation pp.332–334 and bibliography
+    p.335; all Figures 1–9 and Tables 1–7
+  accessed_at: '2026-10-12T10:07:14Z'
+  support: supports
+  summary: Independently viewed every original page and read the complete primary
+    scientific text. Table 2 locates zirconian hafnon only in the body-E column; Figures
+    3/5 depict hafnian zircon rather than a newly refined pure hafnon phase. Inherited
+    hafnon composition is explicitly attributed to 2003.
+  snapshot_sha256: 1e94c048f54ccddd563040cb139eb397632093859608bfc639d284b1d67485c4
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September 2026 issuing-authority original, page 1 definitions and page
+    88 Hafnon row
+  accessed_at: '2026-10-12T10:07:14Z'
+  support: supports
+  summary: 'Inspected original current row: Hafnon, Hf(SiO4), approved A, IMA 1974-018,
+    Mozambique discovery country. The country field is not the location of every occurrence.'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/hafnon.pdf
+  locator: Complete original one-page version 1.2 (2001)
+  accessed_at: '2026-10-12T10:07:14Z'
+  support: supports
+  summary: Tetragonal identity is supported; calculated density, cell data and powder
+    pattern are expressly synthetic. Older natural chemistry summaries are not treated
+    as newly inspected primary measurements.
+  snapshot_sha256: 861defb6cc208df0aa2561bc9186fc43f9abf0af90685a8f5e1cb82f0724f145
+- evidence_id: publisher
+  kind: authority
+  reference: https://revistas.ufrj.br/index.php/amn/article/view/48745
+  locator: Official article title, authors, issue and PDF link; independently reopened
+    live
+  accessed_at: '2026-10-12T10:07:14Z'
+  support: supports
+  summary: Publisher identity agrees with the acquired 16-page original and printed
+    2004 issue, separate from the portal posting date. The acquired article has nine
+    figures/seven tables; its inspected text and landing expose no additional supplement.
+  snapshot_sha256: 0a0785f0d94a7f950e3c1bc07b92f8c95f146c497dcad67265aa482b18fd97f5
+- evidence_id: bounded_search
+  kind: search
+  reference: /private/tmp/cmm-round53-hafnon-independent/web-check.json
+  locator: Three exact-name/title/IMA queries and live official publisher/IMA opens
+  accessed_at: '2026-10-12T10:07:14Z'
+  support: supports
+  summary: Returned sets contain the source, authority editions and related studies
+    without an affecting correction or retraction notice. This bounded result does
+    not establish universal notice absence.
+  snapshot_sha256: 5c07ae890fa07c2379d51f56a05c4d04a7644ff9e87d4a55fe5c894dad9114f4
+  search_scope: 2026-10-12 first returned web sets for "hafnon" "Pereira" correction
+    erratum 2004; "Estudo mineralógico e químico da cassiterita" correção errata;
+    site:cnmnc.units.it hafnon 1974-018. No pagination or independent Crossmark response.
+    Current September 2026 authority checked from its original rather than older indexed
+    list results.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round53-hf-zr-research/dedup.json
+  locator: Curator cycle-safe dedup receipt; reviewer read scope and verified its
+    pinned digest
+  accessed_at: '2026-10-12T10:07:14Z'
+  support: supports
+  summary: The bounded pre-curation search supports the owner distinction; prior mentions
+    and source gaps are retained rather than counted as prior owners. Reviewer does
+    not claim a new machine-wide inventory.
+  snapshot_sha256: 8fe72ba70ac9a0c4450a8d168e3d599f60116c207737ad8d5ac8a19fa1acd6e6
+  search_scope: 'Hidden/ignored files included; symlinks followed cycle-safely; current/original
+    scientific data/research/reviews/history and their cited raw roots only; text-bearing
+    formats,16MB cap. Unextracted binaries not semantically searched. No machine-wide
+    absence claim. Recorded boundary: 4092 corpus text files, 7607 total text files,
+    177 available cited raw roots; nine missing roots and ten files over 16 MB explicitly
+    listed. No unextracted binary-content absence claim.'
+- evidence_id: verification
+  kind: validation
+  reference: /private/tmp/cmm-round53-hafnon-independent/verification.json
+  locator: Exact byte verification, independent graphics scope, named validation and
+    completed cohort logs
+  accessed_at: '2026-10-12T10:07:14Z'
+  support: supports
+  summary: All claimed input/raw hashes and completed command logs verified. This
+    is deterministic provenance/validation evidence, separate from the scientific
+    judgments above.
+  snapshot_sha256: 7362bfac6e875bd86cbbf3d093db646bdf17f287b84bb6b1c9ffd678a01473dc
+- evidence_id: cohort
+  kind: validation
+  reference: /private/tmp/cmm-round53-final-terminal.json
+  locator: Completed parent cohort terminal receipt and all linked log hashes
+  accessed_at: '2026-10-12T10:07:14Z'
+  support: supports
+  summary: All commands actually finished with exit zero before the review was saved.
+    No future execution or hosted CI pass is inferred.
+  snapshot_sha256: 87d8701e2f43cdccb46f2fd4e788c31593c8be134573a12a2b8d7cb419b3ab36
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: IMA mineral species and natural/synthetic distinction
+  outcome: supported
+  target_ids:
+  - cmmmech:hafnon
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  summary: The maintained owner denotes the approved hafnium silicate species, distinct
+    from zircon, hafnium metal and synthetic hafnium-silicate products. Formula/accession
+    and source scope match current authority. Synthetic structural constants are clearly
+    identified and not imported as natural Brazilian measurements.
+  dimensions:
+  - name: material_form
+    value: Mineral species Hafnon, HfSiO4, IMA 1974-018
+    definition: Current approved species identity, not an element, commodity, concentrate
+      or synthetic experimental preparation.
+    evidence_ids:
+    - ima
+    - record
+  - name: criticality
+    value: No designation asserted
+    definition: No inherited jurisdiction/list/edition claim from elemental hafnium.
+    evidence_ids:
+    - record
+- assessment_id: occurrence
+  area: evidence
+  topic: Sample ownership and natural occurrence
+  outcome: supported
+  target_ids:
+  - cmmmech:hafnon
+  evidence_ids:
+  - primary
+  - record
+  - dossier_md
+  summary: The source examines eight concentrate samples from four areas. The body-E
+    stream pan concentrate is correctly separated from the body-A museum sample. The
+    Table 2 hafnon mark falls only under the open-circle body-E column. No province-wide
+    grade or every-locality occurrence is inferred.
+- assessment_id: methods
+  area: evidence
+  topic: Observational mineralogy and phase-assignment limits
+  outcome: supported
+  target_ids:
+  - cmmmech:hafnon
+  evidence_ids:
+  - primary
+  - record
+  summary: The carbon-coated polished-section LEO S440 BSE/SEM-EDS study is accurately
+    represented as semiquantitative observational mineralogy. Figure labels of hafnian
+    zircon are not used as independent diffraction proof for hafnon. The source-reported
+    occurrence is qualified without importing an unverified composition range or inferring
+    a pure phase refinement.
+- assessment_id: lineage
+  area: provenance
+  topic: Older analyses and nonindependent publication overlap
+  outcome: supported
+  target_ids:
+  - cmmmech:hafnon
+  evidence_ids:
+  - primary
+  - record
+  - dossier_md
+  - dossier_json
+  summary: The 2004 narrative explicitly cites 2002/2003 for the hafnon observation
+    and composition; the record does not count it as independent replication. The
+    unavailable 2003 original and later citation ambiguity remain a source gap, and
+    no inherited numerical measurements are curated.
+- assessment_id: mechanism
+  area: evidence
+  topic: Geological inference and application boundaries
+  outcome: supported
+  target_ids:
+  - cmmmech:hafnon
+  evidence_ids:
+  - primary
+  - record
+  summary: The inclusion relationships and regional geological comparisons support
+    the description of a geological interpretation, not a controlled formation experiment.
+    The record asserts no microbial mechanism, organism, extraction assay, isolated
+    recovery product, deployment or feed-wide grade.
+  dimensions:
+  - name: organism_and_biomass
+    value: Not asserted
+    definition: No biological experimental system in the accepted occurrence evidence.
+    evidence_ids:
+    - primary
+    - record
+  - name: conditions_controls_outcome
+    value: Observational mineralogical characterization; no intervention/control assay
+    definition: Geological paragenesis inference is separate from a measured transformation
+      or extraction mechanism.
+    evidence_ids:
+    - primary
+    - record
+  - name: deployment
+    value: Not asserted
+    definition: Historical mining context does not establish industrial hafnon recovery.
+    evidence_ids:
+    - primary
+    - record
+- assessment_id: provenance
+  area: provenance
+  topic: Frozen inputs and actual validation
+  outcome: supported
+  target_ids:
+  - cmmmech:hafnon
+  evidence_ids:
+  - history
+  - dossier_md
+  - dossier_json
+  - schema
+  - verification
+  - cohort
+  summary: Inline creation and canonical CREATE sidecar correctly record this curation
+    as distinct provenance events. Captured record/history/dossier/schema bytes and
+    all 30 raw artifacts match. Independent named validation and completed parent
+    cohort checks passed. The review is a scientific assessment of these exact working-tree
+    bytes, not a commit or publication assertion.
+findings: []
+actions: []
+limitations:
+- Accepted natural-occurrence evidence is deliberately source-reported and overlaps
+  older 2002/2003 work. This review does not establish a newly independently replicated
+  hafnon identification or a pure-phase diffraction refinement.
+- The complete original 2003 microanalysis/graphics, 1974 natural description and
+  2013 source remain uninspected; numerical chemistry from them is not imported. This
+  review does not independently resolve the later 2007 citation inconsistency.
+- All 16 pages of the 2004 primary, all nine figures/seven tables, IMA pages 1/88
+  and the complete Handbook page were visually inspected. No additional unavailable
+  raw analytical dataset or supplement is claimed inspected.
+- No independent laboratory measurement, experimental replication or recovery assessment
+  was performed. No microbial or criticality claim is inferred from constituent identity.
+- Notice and local dedup searches are bounded. The declared local boundary included
+  hidden/ignored files and followed symlinks, but missing roots, oversized text files
+  and unextracted binaries remain explicit limits.
+notes:
+- No record, history or source-dossier edits were made by this reviewer. No Git/GitHub/governance
+  mutation was performed.
+- The complete 2003, 1974 and 2013 originals were not acquired or claimed reviewed.
+  Their unavailable measurements are not accepted through later citations.
+tags:
+- round53
+- hafnon
+- independent
+- mineral-identity
+- qualified-natural-occurrence

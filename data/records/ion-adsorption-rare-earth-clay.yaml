@@ -3,10 +3,12 @@ name: Ion-adsorption rare-earth clay
 material_kind: primary_resource
 description: >-
   Naturally weathered, rare-earth-bearing clay material, distinct from an individual
-  clay mineral, isolated rare-earth element or processing residue. The curated
-  experiment concerns ferruginous, poorly sorted material from 3.8–4.8 m depth
-  above volcanic breccia in the Ambohimirahavavy Alkaline Complex, Madagascar;
-  its results do not characterize every ion-adsorption deposit.
+  clay mineral, isolated rare-earth element or processing residue. Separate
+  curated experiments concern ferruginous, poorly sorted material from 3.8–4.8 m
+  depth above volcanic breccia in the Ambohimirahavavy Alkaline Complex, Madagascar,
+  and a Guangxi, China ore described as an ion-adsorption feed. Their specimens,
+  communities, preparations and assays remain distinct; neither characterizes
+  every ion-adsorption deposit.
 sources:
   - id: barnett2018
     title: >-
@@ -29,6 +31,15 @@ sources:
   - id: ncbi_bacillus
     title: NCBI Taxonomy, Bacillus genus, taxon 1386; genus context only
     url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1386
+    accessed_on: '2026-10-12'
+  - id: li2025_indigenous
+    title: >-
+      Jiafeng Li, Junmeng Li, Lei Tian, Jian Wang, Yanfei Xiao and Zhiyuan Ma
+      (2025), Extraction of rare earths from ion-adsorption type rare earth ore
+      by indigenous microbial community; International Journal of Minerals,
+      Metallurgy and Materials 32(8), 1848–1860; final publisher edition,
+      Sections 2–4, Figures 1–11 and Tables 1–3
+    url: https://doi.org/10.1007/s12613-024-3071-9
     accessed_on: '2026-10-12'
 mechanisms:
   - id: heterotrophic_acid_associated_mobilization
@@ -88,8 +99,98 @@ mechanisms:
           demonstrated; the paper gives inconsistent Ce correlation statistics.
           Genus-level identifiers do not establish strain identity or each
           organism's exclusive causal contribution.
+  - id: guangxi_indigenous_culture_broth_mobilization
+    name: Guangxi indigenous culture-broth-associated rare-earth mobilization
+    process: bioleaching
+    microbial: true
+    description: >-
+      Cultivated communities from local pit wastewater were applied with their
+      culture solutions to a separate Guangxi ore. La, Ce and Y were detected
+      in leachates, and organic acids were measured in filtered culture liquids.
+      This supports culture-broth-associated mobilization. It does not separate
+      living-cell activity from accumulated metabolites, nutrients, medium salts
+      or abiotic ion exchange, and does not demonstrate a purified rare-earth
+      product, universal microbial advantage or industrial deployment.
+    context: >-
+      Li et al. air-dried the natural feed at 20–35 °C, removed plant debris and
+      mixed it by cone tetrad subdivision. Original ore was used for columns;
+      a separate aliquot ball-milled for 2 min was used for stirred assays.
+      Pit wastewater was first cultivated for 24 h in YEPD at initial pH 6,
+      then transferred three times with 10 vol% preceding culture for 48 h at
+      30 °C and 160 rpm in Czapek (G1), sucrose (G2) or nutrient-broth (G3)
+      media. Table 2's G3 medium contained 10 g/L peptone, 3 g/L beef extract
+      and 5 g/L NaCl; G2 contained 4 g/L ammonium sulfate. Culture preparation
+      began at pH 6 without subsequent adjustment. Stirred assays used 300 mL
+      liquid in 500 mL flasks at 25 °C and 200 rpm. The common comparison used
+      50 vol% culture, 4 mL/g liquid-to-solid ratio and 60 min; later G3 series
+      varied those factors. The column contained 1 kg original ore in five
+      200 g layers, with 70 vol% G3, nominal 5 mL/g and 117 h leaching.
+      Triplicate groups and mean/standard-deviation reporting are stated.
+      Water and 2/4 wt% ammonium sulfate were stirred comparators. A sterile
+      uninoculated medium matched for nutrients, salts and pH was not reported,
+      nor was a matched abiotic column. Ore sterilization and axenic community
+      status were not established. The 18S-based community annotations do not
+      verify species, strains, individual causal roles or the full bacterial
+      community; the cited sequencing supplement was not accessible in this
+      curation. No new taxon or sequence identifiers are asserted.
+    evidence:
+      - source_ref: li2025_indigenous
+        supports: support
+        explanation: >-
+          Sections 2.1–2.4, Figures 1–2 and Tables 1–2 identify the feed and
+          laboratory treatments. Figures 5–8 report organic acids in filtered
+          culture liquid and rare-earth-bearing leachates. These observations
+          support association with the cultivated broth, without a matched
+          sterile-medium control establishing how much mobilization required
+          microbial metabolism during the leaching stage.
+      - source_ref: li2025_indigenous
+        supports: partial
+        explanation: >-
+          Figure 6(a), at the shared 50 vol%, 4 mL/g, 60 min conditions, reports
+          less mobilization for all three culture arms than for the ammonium
+          sulfate comparators; G1 was only about 8–11% on the source's scale.
+          The final 70 vol% G3, 5 mL/g, 60 min series reports La/Ce/Y values of
+          92.49/92.42/94.39%. These are source-reported percentages with an
+          unresolved calculation basis, not independently validated recoveries.
+          They must not be compared with the lower-dose controls as a matched
+          demonstration of biological superiority.
+      - source_ref: li2025_indigenous
+        supports: partial
+        explanation: >-
+          Printed page 1851 Equation 2 gives eta_x = (1 - C_x V) /
+          (1000 omega_x M) times 100%, defining C_x in mg/L, V in L, omega_x
+          as wt% and M in g. The subtraction and scale are not dimensionally
+          consistent with those definitions; no silent replacement formula
+          or reconstructed yield is adopted. Table 1 XRF values for La2O3,
+          CeO2 and Y2O3 also differ from the separately reported elemental
+          digestion inventories in Section 2.1 beyond simple oxide conversion.
+          The operational ammonium-sulfate-extractable fraction and the
+          remaining fraction by subtraction are not mineral-specific assays.
+      - source_ref: li2025_indigenous
+        supports: partial
+        explanation: >-
+          Section 3.4 and Figure 8 show a separate 1 kg column trial, reporting
+          a combined detectable La/Ce/Y leachate concentration peak near
+          390 mg/L at 33.5 h and a final source-scale percentage of 98.88%
+          at 117 h. This is not an all-REE or isolated-product recovery yield.
+          Original versus milled feed, flowing versus closed liquid and
+          differing pH prevent attributing the column/flask difference solely
+          to microorganisms. Figure 7(a)'s stirred pH plot is labeled 4 mL/g,
+          while the compared selected leaching conditions use 5 mL/g.
+      - source_ref: li2025_indigenous
+        supports: partial
+        explanation: >-
+          Figures 9–10 and Section 3.5 show source-assigned bulk phases and
+          broadly similar before/after SEM morphology; the authors explicitly
+          report no significant morphological difference apart from fewer fine
+          particles. Relative XRD peak changes and the schematic in Figure 11
+          do not directly establish phase-specific dissolution, Ce(IV) reduction,
+          Fe–O bond cleavage or an individual genus's mechanism. No such causal
+          or redox pathway is accepted here. The 200 t example in the Introduction
+          belongs to cited prior work, not this study's laboratory column.
 history_refs:
   - history/records/ion-adsorption-rare-earth-clay/2026-10-12T082825Z-codex-0d6399.yaml
+  - history/records/ion-adsorption-rare-earth-clay/2026-10-12T100204Z-codex-982d74.yaml
 curation_history:
   - timestamp: '2026-10-12T08:32:06Z'
     curator: codex
@@ -98,3 +199,12 @@ curation_history:
       Added the natural clay-feed identity and primary-supported laboratory
       mobilization mechanism, preserving nonsterile controls, genus-only
       assignments, chemical comparisons and unresolved causal contributions.
+  - timestamp: '2026-10-12T10:02:31Z'
+    curator: codex
+    action: EDIT
+    summary: >-
+      Added the separate Guangxi indigenous-culture broth experiment from the
+      complete final Li et al. 2025 primary article, preserving chemical
+      comparators, calculation and inventory conflicts, sequencing-access
+      limits and laboratory-only association; earlier Madagascar claims remain
+      unchanged.

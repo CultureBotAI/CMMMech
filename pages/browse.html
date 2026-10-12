@@ -22,7 +22,7 @@
 </div>
 
 <h1>Browse Critical Materials and Minerals</h1>
-<p class="lede">Explore all 253 materials, minerals, and resources with their criticality assessments and microbial transformation mechanisms.</p>
+<p class="lede">Explore all 256 materials, minerals, and resources with their criticality assessments and microbial transformation mechanisms.</p>
 
 <form id="record-filters" class="record-filters" hidden>
   <div>
@@ -32,12 +32,12 @@
   <div>
     <label for="record-kind">Material Kind</label>
     <select id="record-kind">
-      <option value="">All kinds (253)</option>
+      <option value="">All kinds (256)</option>
       <option value="element">Element (64)</option>
-      <option value="mineral">Mineral (83)</option>
-      <option value="secondary_resource">Secondary resource (51)</option>
+      <option value="mineral">Mineral (84)</option>
+      <option value="secondary_resource">Secondary resource (52)</option>
       <option value="commodity">Commodity (32)</option>
-      <option value="primary_resource">Primary resource (19)</option>
+      <option value="primary_resource">Primary resource (20)</option>
       <option value="mineral_group">Mineral group (4)</option>
     </select>
   </div>
@@ -46,11 +46,11 @@
     <select id="record-mechanism">
       <option value="">All processes</option>
       <option value="bioleaching">Bioleaching (101)</option>
-      <option value="biomineralization">Biomineralization (32)</option>
+      <option value="biomineralization">Biomineralization (33)</option>
       <option value="redox_transformation">Redox transformation (24)</option>
       <option value="biosorption">Biosorption (12)</option>
       <option value="separation">Separation (8)</option>
-      <option value="recovery">Recovery (5)</option>
+      <option value="recovery">Recovery (6)</option>
       <option value="other">Other (24)</option>
     </select>
   </div>
@@ -64,7 +64,7 @@
   <button type="reset">Clear filters</button>
 </form>
 
-<p id="record-count" role="status" aria-live="polite">253 materials</p>
+<p id="record-count" role="status" aria-live="polite">256 materials</p>
 <p id="record-empty" hidden>No materials match your query or filters. Clear filters to show all.</p>
 
 <div class="record-table-scroll" role="region" aria-label="Materials table" tabindex="0">
@@ -128,6 +128,35 @@
       <td>
         <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
           <li>Gluconobacter oxydans</li>
+        </ul>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="secondary_resource"
+        data-mechanisms="biomineralization"
+        data-critical="false"
+        data-search="allanite-derived rare-earth leachate allanite-leachate secondary_resource a rare-earth-bearing processing liquor generated from allanite ore, represented here by the chemically purified and reconstituted halleck creek, wyoming feed used by lu et al. (2026). acid leaching, impurity precipitation, ree hydroxide precipitation and hydrochloric-acid redissolution precede the biological-reagent experiment. this processing intermediate is distinct from geological ore, beneficiated allanite concentrate, a pure allanite species and an isolated ree product. its classification reflects chemical processing, not extraction alone. no criticality designation is inherited from its constituents. biomineralization pichia kudriavzevii ncbitaxon:4909">
+      <td>
+        <a href="materials/allanite-leachate.html"><strong>Allanite-derived rare-earth leachate</strong></a>
+        <p class="record-desc">A rare-earth-bearing processing liquor generated from allanite ore, represented here by the chemically purified and reconstituted Halleck Creek, Wyoming feed used by Lu et al. (2026). Acid leaching, impurity precipitation, REE hydroxide precipitation and hydrochloric-acid redissolution precede the biological-reagent experiment. This processing intermediate is distinct from geological ore, beneficiated allanite concentrate, a pure allanite species and an isolated REE product. Its classification reflects chemical processing, not extraction alone. No criticality designation is inherited from its constituents.</p>
+      </td>
+      <td>
+        <span class="badge">secondary resource</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biomineralization</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Pichia kudriavzevii</li>
         </ul>
       </td>
       <td>
@@ -2176,6 +2205,33 @@
       </td>
     </tr>
     <tr data-kind="primary_resource"
+        data-mechanisms="recovery"
+        data-critical="false"
+        data-search="eudialyte concentrate eudialyte-concentrate primary_resource a beneficiated geological feed represented by the tanbreez concentrate from southern greenland characterized by ma and colleagues (2019). the source describes crushing followed by partly magnetic selection; this is an upgraded mixed mineral concentrate, distinct from the uncharacterized crushed eudialyte ore in hunter&#39;s 2020 thesis, a formal eudialyte mineral species or group, elemental zirconium and recovered rare-earth products. table i reports 1.60 wt% total rare earth elements and 6.46 wt% zr in the laboratory feed. qemscan assigns 67.05% of the material to eudialyte, alongside amphibole, nepheline, feldspar and other phases; this classification does not establish a pure species or a universal commercial concentrate specification. the source acknowledges the geological survey of finland as concentrate supplier. no criticality designation is inherited from constituent elements. recovery">
+      <td>
+        <a href="materials/eudialyte-concentrate.html"><strong>Eudialyte concentrate</strong></a>
+        <p class="record-desc">A beneficiated geological feed represented by the TANBREEZ concentrate from southern Greenland characterized by Ma and colleagues (2019). The source describes crushing followed by partly magnetic selection; this is an upgraded mixed mineral concentrate, distinct from the uncharacterized crushed eudialyte ore in Hunter&#39;s 2020 thesis, a formal eudialyte mineral species or group, elemental zirconium and recovered rare-earth products. Table I reports 1.60 wt% total rare earth elements and 6.46 wt% Zr in the laboratory feed. QEMSCAN assigns 67.05% of the material to eudialyte, alongside amphibole, nepheline, feldspar and other phases; this classification does not establish a pure species or a universal commercial concentrate specification. The source acknowledges the Geological Survey of Finland as concentrate supplier. No criticality designation is inherited from constituent elements.</p>
+      </td>
+      <td>
+        <span class="badge">primary resource</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recovery</span>
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="primary_resource"
         data-mechanisms="bioleaching"
         data-critical="false"
         data-search="eudialyte ore eudialyte-ore primary_resource a natural geological feed represented by the eudialyte ore sample from the ilimaussaq complex, greenland, used in hunter&#39;s 2020 doctoral thesis. the sample was jaw-crushed and finely ground for laboratory leaching. its mineral proportions, bulk elemental grade and particle-size distribution are not established in the reviewed experimental account. this resource is distinct from a formally identified eudialyte mineral species, the eudialyte group, an upgraded concentrate, elemental zirconium or rare earths, and a recovered product. a literature crystal structure in the thesis is not characterization of this particular feed. no criticality designation is inherited from its constituent elements. bioleaching acidithiobacillus ferrooxidans ncbitaxon:920">
@@ -2905,6 +2961,30 @@
       </td>
     </tr>
     <tr data-kind="mineral"
+        data-mechanisms=""
+        data-critical="false"
+        data-search="hafnon hafnon mineral hafnon is the hafnium silicate mineral species with ideal formula hfsio4, approved as ima 1974-018. it is distinct from zircon, elemental hafnium and synthetic hafnium-silicate products. the handbook of mineralogy describes the species as tetragonal but explicitly identifies its cell parameters, calculated density and powder pattern as synthetic data; those values are not measurements of a natural brazilian specimen. pereira, ávila and neumann (2004), in their study of cassiterite from eight concentrate samples in the são joão del rei pegmatite province, report zirconian hafnon as an inclusion in cassiterite from a pan concentrate collected in a stream crossing body e of the volta grande mine, minas gerais, brazil. table 2 assigns that occurrence to this sample, rather than to every surveyed locality. the study uses backscattered-electron imaging and semiquantitative sem-eds, and its hafnon discussion explicitly cites the overlapping 2002/2003 work. this is a qualified source-reported natural occurrence, not a new independent replication of the older microanalyses or a pure-phase diffraction refinement. its geological formation interpretation is not a controlled transformation experiment. no occurrence-wide grade, extraction, microbial mechanism, industrial deployment or inherited hafnium criticality designation is assigned. ima:1974-018 hafnon">
+      <td>
+        <a href="materials/hafnon.html"><strong>Hafnon</strong></a>
+        <p class="record-desc">Hafnon is the hafnium silicate mineral species with ideal formula HfSiO4, approved as IMA 1974-018. It is distinct from zircon, elemental hafnium and synthetic hafnium-silicate products. The Handbook of Mineralogy describes the species as tetragonal but explicitly identifies its cell parameters, calculated density and powder pattern as synthetic data; those values are not measurements of a natural Brazilian specimen. Pereira, Ávila and Neumann (2004), in their study of cassiterite from eight concentrate samples in the São João del Rei Pegmatite Province, report zirconian hafnon as an inclusion in cassiterite from a pan concentrate collected in a stream crossing body E of the Volta Grande mine, Minas Gerais, Brazil. Table 2 assigns that occurrence to this sample, rather than to every surveyed locality. The study uses backscattered-electron imaging and semiquantitative SEM-EDS, and its hafnon discussion explicitly cites the overlapping 2002/2003 work. This is a qualified source-reported natural occurrence, not a new independent replication of the older microanalyses or a pure-phase diffraction refinement. Its geological formation interpretation is not a controlled transformation experiment. No occurrence-wide grade, extraction, microbial mechanism, industrial deployment or inherited hafnium criticality designation is assigned.</p>
+      </td>
+      <td>
+        <span class="badge">mineral</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">None</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <div><code>IMA:1974-018</code></div>
+      </td>
+    </tr>
+    <tr data-kind="mineral"
         data-mechanisms="bioleaching"
         data-critical="false"
         data-search="hausmannite hausmannite mineral hausmannite is the grandfathered tetragonal manganese oxide mineral mn2+mn3+2o4, commonly written mn3o4; the ima september 2026 list gives 1828 as its historical entry. it is distinct from elemental manganese, other manganese oxides, manganese oxalate products and mixed natural manganese ores. the curated laboratory experiment used a synthesized oxide preparation identified by the authors as hausmannite, not a natural mineral specimen. no criticality designation is inherited from manganese. bioleaching aspergillus niger ncbitaxon:5061">
@@ -3252,10 +3332,10 @@
     <tr data-kind="primary_resource"
         data-mechanisms="bioleaching"
         data-critical="false"
-        data-search="ion-adsorption rare-earth clay ion-adsorption-rare-earth-clay primary_resource naturally weathered, rare-earth-bearing clay material, distinct from an individual clay mineral, isolated rare-earth element or processing residue. the curated experiment concerns ferruginous, poorly sorted material from 3.8–4.8 m depth above volcanic breccia in the ambohimirahavavy alkaline complex, madagascar; its results do not characterize every ion-adsorption deposit. bioleaching aspergillus bacillus ncbitaxon:5052 ncbitaxon:1386">
+        data-search="ion-adsorption rare-earth clay ion-adsorption-rare-earth-clay primary_resource naturally weathered, rare-earth-bearing clay material, distinct from an individual clay mineral, isolated rare-earth element or processing residue. separate curated experiments concern ferruginous, poorly sorted material from 3.8–4.8 m depth above volcanic breccia in the ambohimirahavavy alkaline complex, madagascar, and a guangxi, china ore described as an ion-adsorption feed. their specimens, communities, preparations and assays remain distinct; neither characterizes every ion-adsorption deposit. bioleaching aspergillus bacillus ncbitaxon:5052 ncbitaxon:1386">
       <td>
         <a href="materials/ion-adsorption-rare-earth-clay.html"><strong>Ion-adsorption rare-earth clay</strong></a>
-        <p class="record-desc">Naturally weathered, rare-earth-bearing clay material, distinct from an individual clay mineral, isolated rare-earth element or processing residue. The curated experiment concerns ferruginous, poorly sorted material from 3.8–4.8 m depth above volcanic breccia in the Ambohimirahavavy Alkaline Complex, Madagascar; its results do not characterize every ion-adsorption deposit.</p>
+        <p class="record-desc">Naturally weathered, rare-earth-bearing clay material, distinct from an individual clay mineral, isolated rare-earth element or processing residue. Separate curated experiments concern ferruginous, poorly sorted material from 3.8–4.8 m depth above volcanic breccia in the Ambohimirahavavy Alkaline Complex, Madagascar, and a Guangxi, China ore described as an ion-adsorption feed. Their specimens, communities, preparations and assays remain distinct; neither characterizes every ion-adsorption deposit.</p>
       </td>
       <td>
         <span class="badge">primary resource</span>
@@ -3264,7 +3344,7 @@
         <span style="color: var(--muted); font-size: .85rem;">—</span>
       </td>
       <td>
-        <strong>1</strong>
+        <strong>2</strong>
         <div style="margin-top: .2rem;">
           <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
         </div>

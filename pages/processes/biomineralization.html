@@ -34,12 +34,12 @@
   <div>
     <label for="record-kind">Material Kind</label>
     <select id="record-kind">
-      <option value="">All kinds (32)</option>
+      <option value="">All kinds (33)</option>
       <option value="element">Element (64)</option>
-      <option value="mineral">Mineral (83)</option>
-      <option value="secondary_resource">Secondary resource (51)</option>
+      <option value="mineral">Mineral (84)</option>
+      <option value="secondary_resource">Secondary resource (52)</option>
       <option value="commodity">Commodity (32)</option>
-      <option value="primary_resource">Primary resource (19)</option>
+      <option value="primary_resource">Primary resource (20)</option>
       <option value="mineral_group">Mineral group (4)</option>
     </select>
   </div>
@@ -48,11 +48,11 @@
     <select id="record-mechanism">
       <option value="">All processes</option>
       <option value="bioleaching">Bioleaching (101)</option>
-      <option value="biomineralization">Biomineralization (32)</option>
+      <option value="biomineralization">Biomineralization (33)</option>
       <option value="redox_transformation">Redox transformation (24)</option>
       <option value="biosorption">Biosorption (12)</option>
       <option value="separation">Separation (8)</option>
-      <option value="recovery">Recovery (5)</option>
+      <option value="recovery">Recovery (6)</option>
       <option value="other">Other (24)</option>
     </select>
   </div>
@@ -66,7 +66,7 @@
   <button type="reset">Clear filters</button>
 </form>
 
-<p id="record-count" role="status" aria-live="polite">32 materials</p>
+<p id="record-count" role="status" aria-live="polite">33 materials</p>
 <p id="record-empty" hidden>No materials match your query or filters. Clear filters to show all.</p>
 
 <div class="record-table-scroll" role="region" aria-label="Materials table" tabindex="0">
@@ -83,6 +83,35 @@
     </tr>
   </thead>
   <tbody>
+    <tr data-kind="secondary_resource"
+        data-mechanisms="biomineralization"
+        data-critical="false"
+        data-search="allanite-derived rare-earth leachate allanite-leachate secondary_resource a rare-earth-bearing processing liquor generated from allanite ore, represented here by the chemically purified and reconstituted halleck creek, wyoming feed used by lu et al. (2026). acid leaching, impurity precipitation, ree hydroxide precipitation and hydrochloric-acid redissolution precede the biological-reagent experiment. this processing intermediate is distinct from geological ore, beneficiated allanite concentrate, a pure allanite species and an isolated ree product. its classification reflects chemical processing, not extraction alone. no criticality designation is inherited from its constituents. biomineralization pichia kudriavzevii ncbitaxon:4909">
+      <td>
+        <a href="../materials/allanite-leachate.html"><strong>Allanite-derived rare-earth leachate</strong></a>
+        <p class="record-desc">A rare-earth-bearing processing liquor generated from allanite ore, represented here by the chemically purified and reconstituted Halleck Creek, Wyoming feed used by Lu et al. (2026). Acid leaching, impurity precipitation, REE hydroxide precipitation and hydrochloric-acid redissolution precede the biological-reagent experiment. This processing intermediate is distinct from geological ore, beneficiated allanite concentrate, a pure allanite species and an isolated REE product. Its classification reflects chemical processing, not extraction alone. No criticality designation is inherited from its constituents.</p>
+      </td>
+      <td>
+        <span class="badge">secondary resource</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biomineralization</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Pichia kudriavzevii</li>
+        </ul>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
     <tr data-kind="mineral"
         data-mechanisms="biomineralization"
         data-critical="false"
