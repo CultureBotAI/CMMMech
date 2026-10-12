@@ -1,0 +1,167 @@
+id: cmmmech:cassiterite-polymetallic-sulfide-ore
+name: Cassiterite-polymetallic sulfide ore
+material_kind: primary_resource
+description: >-
+  A heterogeneous natural tin-bearing geological feed containing cassiterite
+  and sulfide minerals, represented here by the Myanmar ore studied by Wang
+  et al. (2025). The crushed experimental ore contained source-assigned
+  pyrite, cassiterite, quartz, tourmaline and mica. Its mine and deposit are
+  not specified. Crushing does not establish a processing-waste origin.
+  This resource is distinct from cassiterite or pyrrhotite mineral species,
+  elemental tin, a tin commodity and a produced concentrate. The study does
+  not establish extraction from a pure mineral or properties of all ores
+  described by this name. No criticality designation is inherited from tin.
+sources:
+  - id: wang2025
+    title: >-
+      Wang M, Zeng W, Yan Z, Shen L, Yu R, Wu X, Li J, Qiu G, Streit W
+      and Liu Y (2025). The Bio-Desulfurization of Cassiterite-Polymetallic
+      Sulfide Ores Enhanced by a Consortium of Moderately Thermophilic
+      Bacteria. Separations 12(3):61. DOI 10.3390/separations12030061;
+      complete 13-page publisher PDF and XML, Sections 2-5,
+      Figures 1-7 and Tables 1-2.
+    url: https://doi.org/10.3390/separations12030061
+    accessed_on: '2026-10-12'
+  - id: ncbi_ferriphilum
+    title: >-
+      NCBI Taxonomy 178606, Leptospirillum ferriphilum, species;
+      official live taxonomy page. Species mapping does not identify
+      the experimental isolate.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=178606&mode=Info
+    accessed_on: '2026-10-12'
+  - id: ncbi_thermosulfidooxidans
+    title: >-
+      NCBI Taxonomy 28034, Sulfobacillus thermosulfidooxidans, species;
+      official live taxonomy page. Species mapping does not identify
+      the experimental isolate.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=28034&mode=Info
+    accessed_on: '2026-10-12'
+  - id: ncbi_caldus
+    title: >-
+      NCBI Taxonomy 33059, Acidithiobacillus caldus, species;
+      official live taxonomy page. Species mapping does not identify
+      the experimental isolate.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33059&mode=Info
+    accessed_on: '2026-10-12'
+mechanisms:
+  - id: moderately_thermophilic_ore_pretreatment
+    name: Culture-associated sulfide alteration and iron mobilization from mixed tin ore
+    process: bioleaching
+    description: >-
+      Growing mixed and single bacterial cultures were associated with iron
+      mobilization, acidification and altered pyrite-bearing ore residues
+      during laboratory pretreatment. The mixed culture showed an earlier
+      increase in the iron-based dissolution proxy than either iron-oxidizing
+      single culture. This supports conditional biological pretreatment of
+      the mixed feed. It does not establish a sulfur mass balance, a specific
+      molecular route, a sustained final advantage over both single cultures,
+      selective tin recovery or a purified product.
+    context: >-
+      The three named acid-mine-drainage isolates were held by the authors'
+      Central South University laboratory; strain and sequence accessions
+      are not supplied. The species IDs do not identify these isolates or
+      independently verify their community proportions. The Myanmar ore
+      was crushed and sieved below 1 mm and autoclaved at 115 degrees C
+      for 30 min. Iron-free modified 9K medium contained, in g/L,
+      (NH4)2SO4 3, Na2SO4 2.1, MgSO4.7H2O 0.5, K2HPO4 0.05,
+      KCl 0.1 and Ca(NO3)2 0.01, at initial pH 2. The source specifies
+      10% pulp density, 10% v/v inoculum and a 1:1:1 mixed-culture ratio.
+      Mid-log cells were centrifuged and washed twice with sterile water
+      acidified to pH 2 before resuspension. The stated 2e7 cells/mL is
+      described as the population in the inoculation, not unambiguously a
+      final reactor concentration. Assays used 5 L flasks at 45 degrees C
+      and 170 rpm, in triplicate, with figures extending to 20 days.
+      Working volume is unresolved: Section 2.2 describes 150 mL medium,
+      Section 2.4 collects 200 mL culture, and Section 2.5 describes
+      a 100 mL sample from a stirred-tank reactor. These descriptions
+      are not harmonized into a verified reactor scale. Figures include
+      a control and the three single cultures; the control preparation
+      is incompletely described. No killed-cell or pH-trajectory-matched
+      chemical comparison is provided. ICP total iron was measured every
+      two days. The source defines its desulfurization percentage as the
+      measured total-iron concentration divided by the total-iron
+      concentration obtained by aqua-regia digestion of ore. This is an
+      iron-based proxy, not directly measured sulfur removal or isolated
+      tin yield; the concentration and sampling basis does not establish
+      a closed cumulative mass balance.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:178606
+        label: Leptospirillum ferriphilum
+      - id: NCBITaxon:28034
+        label: Sulfobacillus thermosulfidooxidans
+      - id: NCBITaxon:33059
+        label: Acidithiobacillus caldus
+    evidence:
+      - source_ref: wang2025
+        supports: support
+        explanation: >-
+          Sections 2.1-2.3 and 3.1, Figures 1-5 and Table 1 support
+          culture-associated iron mobilization and alteration of the mixed
+          ore. The mixed culture and the two iron-oxidizing single cultures
+          have substantially higher iron signals than the control and the
+          Acidithiobacillus caldus single culture. SEM and XRD show altered
+          residues and decreased pyrite signals. The caldus-only arm has
+          little iron mobilization and less evident residue alteration;
+          its presence in the mixed inoculum alone does not demonstrate
+          its independent causal contribution. Figure 2 shows an early
+          mixed-culture advantage, subsequent convergence of the
+          iron-oxidizing cultures and declining late iron signals.
+      - source_ref: wang2025
+        supports: partial
+        explanation: >-
+          The abstract and conclusion report a 90% proxy value within
+          ten days, whereas Section 3.1 describes the mixed-culture
+          maximum iron signal at day 12. These refer to a threshold and
+          a maximum and are not treated as identical endpoints. Section
+          3.1 says single cultures reached the same percentage at day 14,
+          but the conclusion says six additional days after the ten-day
+          mixed endpoint. Figure 1 also places the mixed cell-count peak
+          later than the day-8 peak stated in the prose. These conflicts,
+          changing pH, secondary precipitation and incompletely specified
+          concentration normalization prevent adoption of an exact
+          biological desulfurization yield or validated kinetic advantage.
+      - source_ref: wang2025
+        supports: partial
+        explanation: >-
+          Original Figure 5 and Tables 1-2 support a changed residue
+          composition but contain unreconciled quantitative problems.
+          Table 1's control phase percentages sum to 115.37%; its mixed
+          residue has 5.74% jarosite, whereas Table 2 lists only 0.005%
+          total Fe for that residue. The source's cassiterite phase
+          percentages and elemental Sn percentages are also inconsistent
+          with one another on a common whole-residue basis. The prose
+          claims single-culture jarosite exceeds 6.43%, but Table 1 lists
+          6.34% and 5.86%. Reported zero pyrite values lack a stated
+          detection limit and do not prove absolute removal. Table 2's
+          Sn change from 3.66% in the control to 4.781% in mixed-culture
+          residue is relative composition, not recovered Sn mass or
+          retention yield. No table is silently repaired or converted
+          into a closed phase, iron, sulfur or tin balance.
+      - source_ref: wang2025
+        supports: context_only
+        explanation: >-
+          Figure 6 reports community and extracted extracellular-polymer
+          patterns, while Figure 7 is a proposed mechanism diagram.
+          Community proportions, electron-transfer proteins, sulfur
+          intermediates and extracellular-polysaccharide explanations
+          do not independently establish molecular causality in this
+          experiment. The sequencing Methods describe a V4 target but
+          list 27F/1492R primers and provide no sequence accession.
+          The source's abstract claims a 30-50% caldus proportion, which
+          does not describe all Figure 6A time points. Section 4.2 and
+          the Conclusions place flotation and practical application
+          in future work. No downstream flotation result, isolated
+          tin product, product-grade assay or industrial deployment
+          is demonstrated.
+curation_history:
+  - timestamp: '2026-10-12T05:23:55Z'
+    curator: codex (GPT-6)
+    action: CREATE
+    summary: >-
+      Added a distinct natural mixed tin-ore resource and narrowly scoped
+      laboratory bioleaching pretreatment after complete primary PDF/XML
+      and original-graphics inspection. Preserved control, normalization,
+      composition and reactor-description limits; adopted no recovery yield.
+history_refs:
+  - history/records/cassiterite-polymetallic-sulfide-ore/2026-10-12T052443Z-codex-dc0f7f.yaml
