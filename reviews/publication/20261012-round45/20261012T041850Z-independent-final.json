@@ -1,0 +1,153 @@
+{
+  "timestamp_utc": "2026-10-12T04:18:50.037566Z",
+  "reviewer": "Codex /root/round43_hardmetal; GPT-6; codex",
+  "authorship": "Authored argyrodite and briartite records, histories and source dossiers. Did not author root README, indium handoff, publication report/manifest/frontier or operational builders. Scientific acceptance of both authored minerals relies on the separate packaging reviewer, including its issue146 predecessor/successor disposition. This operational audit does not independently certify my own mineral science.",
+  "base": "2b975ae5327b94ac3c1e6583378408add2b8d1f2",
+  "verdict": "pass",
+  "findings": [
+    {
+      "finding_id": "F1",
+      "issue_key": "CMMMech.round45.argyrodite-review.evidence-snapshot-reference",
+      "severity": "minor",
+      "status": "resolved",
+      "certainty": "confirmed",
+      "title": "Bind each evidence snapshot hash to its actual referenced artifact",
+      "target": "reviews/structured/20261012T041053Z-argyrodite-round45-resolution/review.yaml",
+      "field_path": "evidence[evidence_id=correction].snapshot_sha256",
+      "description": "The saved successor review names the Ge source dossier as its correction evidence reference but records the hash of the independent correction-proof receipt instead. The reviewer confirmed the mismatch. The exact scientific target and source.inputs hashes remain correct.",
+      "expected_reference": "research/sources/round45-ge-minerals/20261012T040630Z-source-investigation.json",
+      "expected_sha256": "159249cbe58cffb431f9ac9b69a68669a1edbe5518fab2109346ee5ba40c7711",
+      "observed_sha256": "ba61718fc3faedfa41d6b906a86344dd9a35f922fec6aa0d142376df01d73e27",
+      "observed_hash_actual_path": "/private/tmp/cmm-round45-mineral-independent/correction-proof.json",
+      "correction": "Preserve the immutable saved review; save a new native successor that gives the source dossier its own correct hash and separately references the proof receipt with its actual hash. Retain exact original F1/issue146 scientific resolution; record this review-metadata correction explicitly.",
+      "external_issue": "https://github.com/CultureBotAI/CMMMech/issues/147",
+      "previous_occurrence": {
+        "path": "reviews/publication/20261012-round45/20261012T041301Z-independent-initial.json",
+        "sha256": "2b4d5afd5e52106a992740f817af45b0fa702092eab33e9029a611a86e2d862e",
+        "finding_id": "F1",
+        "issue_key": "CMMMech.round45.argyrodite-review.evidence-snapshot-reference"
+      },
+      "disposition": "Independently read the immutable 041446Z native successor, recomputed both separately referenced evidence hashes and all other existing local-file evidence hashes, verified every source input, and confirmed prior observed artifacts unchanged. Exact scientific record/history bytes and issue146 resolution lineage remain intact. Issue147 correction is explicit in the successor notes and links."
+    }
+  ],
+  "unresolved_findings": [],
+  "publication_finding_resolution": {
+    "path": "reviews/publication/20261012-round45/20261012T041600Z-independent-resolution.json",
+    "sha256": "ac82657946785215cecefd47b3c0826cffb84456c85591f8ce51a310df0876aa"
+  },
+  "counts": {
+    "record_count": 224,
+    "history_count": 267,
+    "structured_review_count": 272,
+    "review_base_count": 46,
+    "covered_records": 224
+  },
+  "reviewed_document_sha256": {
+    "README.md": "f330207888a15924ec81fb0baf3873f97b9543c36d3ea9d581168ce5bf3db44d",
+    "research/ingests/round45-frontier-20261012.json": "aa03e3ba68e38bfd8ee25252cf81d6c68abc7f0dc2517cb11e06a0804d8c98ce",
+    "research/ingests/round45-frontier-20261012.md": "7e11055deec6108e30c2d06e519f64e8d9604de07d928fb50430622825072b34",
+    "research/ingests/round45-20261012-publication.md": "904ec80cee9ce3cb1a71088674e682ecfbdebb1e3d38a5300256942730601989",
+    "reviews/publication/20261012-round45/current-status.json": "2e719f1db1030fa47fb178b062dd73b9c3b7ff951ce1b14218e89b34ec51cf7a",
+    "reviews/publication/20261012-round45/preservation-prepublication.json": "a6a35b2c302b8b41ac8c3ad0e31a1838c1d26e514d7e383c258b5991f27a56b8"
+  },
+  "reviewed_helper_sha256": {
+    "/private/tmp/cmm-round45-helper-config.json": "2c32b439356afa069870aceb82a054405a778dc83c3ed8ea158f81692cca1b1a",
+    "/private/tmp/cmm-round45-build-report.py": "4b78066209f6ea8bf6735c2af2aa58d55aaba1b6536136e7072c7573147356f6",
+    "/private/tmp/cmm-round45-build-package.py": "a0f8411dd8ff638deb85477746bb5425ffbc809d2be5cf372a32331a121ae039",
+    "/private/tmp/cmm-round45-commit.py": "600d003681b93aa10267b68c1939810881cd999d180bdbc4fbb76a66dd9321af",
+    "/private/tmp/cmm-round45-run-final-v2.py": "de6caf8d4e722be93b1baf2b50718e70b9554eeb38deb882a1b9d4a5b91c6b6a",
+    "/private/tmp/cmm-round45-hosted-peer-readonly.py": "6a6e0e6cb6b5174437aaad0834f4e06536885bbbbe68286f523193fe49c98ab7"
+  },
+  "receipt_sha256": {
+    "/private/tmp/cmm-round45-final-terminal.json": "fa6fd6f5ff0dfd527c16631332529b3cc788ebd3a9922963f902992385ab50f4",
+    "/private/tmp/cmm-round45-final-v2-terminal.json": "cbc01d1bdbe9d5a339ac9500f027981bba83e9cb73b818c4582720988a9a8401",
+    "/private/tmp/cmm-round45-review-check-terminal.json": "6ce16dcec723676b221bb3756eaa9c3755791b126d6b623f3875b6c3e3a0f03c",
+    "/private/tmp/cmm-round45-review-check-v2-terminal.json": "cd2e3190a39cdece76385a1bedb605e251a1cead58a5e7b1c31c0762f0a931cc",
+    "/private/tmp/cmm-round45-local-coverage.json": "65f396fc440f9fd39bcec58f3cf19d86acfa1e158efb11587af59f6cb1cca52a",
+    "/private/tmp/cmm-round45-local-coverage-v2.json": "29f2148953c366386df67cd8338b599a8d1e0bf6acacc4b3ebacdb6b7d6054c7",
+    "/private/tmp/cmm-round45-initialization.json": "ce66de166216f0f99c169e12933de7a9904c414d660944a1dfcfd6126e1f6a80",
+    "/private/tmp/cmm-round45-current-status.json": "a36815493d0740c60ff89a92f288f6ddb622b63ae6eb20dc39877762cfc1aed6",
+    "/private/tmp/cmm-round45-preservation-prepublication.json": "a6a35b2c302b8b41ac8c3ad0e31a1838c1d26e514d7e383c258b5991f27a56b8",
+    "/private/tmp/cmm-round45-final-gate-delta.json": "c1b002dc7f2953fcb5b649b0aca84617e8f3e8f10b4d7dadd556394e09bfc0f0",
+    "/private/tmp/cmm-round45-hosted-gate-delta.json": "7fa5f276b681275fb0029a1ee7bad83bc4526310cc78cce16596251219464a88",
+    "/private/tmp/cmm-round45-review-gate-delta.json": "e639b9ad63d62a7a9f91f34ff088ff9076b3ed7fc5d5d86c26e003be83c037e4",
+    "/private/tmp/cmm-round45-report-wording-delta.json": "d9451b244ed503bba73babb4b0963119c397b67e1b1f07b10ae1a3fdcda043ef",
+    "/private/tmp/cmm-round45-independent-draft-inspection.json": "72007a31ae6fc0afa56f63acd0cf2cf83d2592e57d081de10d3f3e71dad5497e"
+  },
+  "scientific_reviews": [
+    {
+      "record": "data/records/argyrodite.yaml",
+      "sha256": "7944de7d27f422ff2778c454e466b0c6397367b1af4efcfb7a3a227e886d7190",
+      "review": "reviews/structured/20261012T041446Z-argyrodite-round45-evidence-resolution/review.yaml",
+      "review_sha256": "9a407ad2480e418f59bb9e70a88337cd9e3986bb968af9fdc1e29e3c1243be02",
+      "reviewer": {
+        "identity": "Codex /root/round27_packaging",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Did not author or edit argyrodite, its sidecars or source dossiers. Curated separate coal record. Independently inspected originals and saved initial F1; corrected input capture preceded successor assessment. Source acquisition was shared; source judgment and correction verification independent. This reviewer authored the previous scientific review and is correcting its own evidence-metadata error discovered independently by /root/round43_hardmetal; this is not independent certification of that review-metadata fix. The separate publication reviewer assesses its resolution."
+      },
+      "verdict": "pass_with_limitations"
+    },
+    {
+      "record": "data/records/briartite.yaml",
+      "sha256": "78d179ae37d35050510f0083df0936bee843ff76eab448bef817c12198ed6d51",
+      "review": "reviews/structured/20261012T040624Z-briartite-round45-independent/review.yaml",
+      "review_sha256": "8993dc0f750edb7f0eee41c58d2f5e7f1bf1b44db243412447839b113f039a85",
+      "reviewer": {
+        "identity": "Codex /root/round27_packaging",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Curator /root/round43_hardmetal authored this record and sources. Reviewer authored only separate coal extension and did not edit target/history/dossier. Native inspect preceded judgment; primary originals and authorities independently inspected. Curator-acquired originals reused with explicit provenance."
+      },
+      "verdict": "pass_with_limitations"
+    },
+    {
+      "record": "data/records/coal-beneficiation-waste.yaml",
+      "sha256": "62a71592ae8b49f146f154435b6715a939de4127fd2cf141414e6b2496588516",
+      "review": "reviews/structured/20261012T040413Z-coal-beneficiation-waste-round45-independent/review.yaml",
+      "review_sha256": "fdb67e94abe59260984c853af2cc732b1de5e5513476346a7d50419db5e2a060",
+      "reviewer": {
+        "identity": "Codex /root/round27_superalloy",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Peer /root/round27_packaging authored this record extension, history and dossier. Reviewer authored separate Theisen-sludge identity record in this cohort, not the coal bytes. Native inspect preceded assessment. Shared acquisition disclosed; independently read full ten-page technological and fourteen-page companion originals, personally inspected all original figures/tables, checked authority evidence, source notices, preserved prior fields/history and actual gates. No maintained edits."
+      },
+      "verdict": "pass_with_limitations"
+    },
+    {
+      "record": "data/records/theisen-sludge.yaml",
+      "sha256": "9b06fd03d106e687f5618d9a5faf1601e80b0c88f5fc908e0d5604d5d10a96d5",
+      "review": "reviews/structured/20261012T040404Z-theisen-sludge-round45-independent/review.yaml",
+      "review_sha256": "8f0daef698cee403db08c9c8a14003688c503f1d4554817c84566e73991fd389",
+      "reviewer": {
+        "identity": "Codex /root",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Peer /root/round27_superalloy authored the record, history and source dossier. Reviewer authored none of those bytes, captured native inputs before assessment, read the complete original text and independently viewed all eight original pages. Reviewer coordinates publication and authored a separate deferred indium discovery handoff."
+      },
+      "verdict": "pass_with_limitations"
+    }
+  ],
+  "preservation": "All tracked base scientific files remain unchanged except the authorized coal record. Parent hidden/ignored preservation receipt passed; this review verifies the receipt and manifest bytes, not a new independent full preservation crawl.",
+  "readme_inventory": {
+    "record_files": 224,
+    "links": 224,
+    "duplicates": 0,
+    "hidden_ignored_included": true,
+    "relevant_symlinks_followed": true
+  },
+  "local_links_checked": 316,
+  "deferred_indium_provenance_hash_comparisons": 13,
+  "correction_assessment": "Issue147 provenance F1 independently resolved by exact successor with correct dossier/proof hashes; initial publication finding preserved. Issue146 initial F1 remains immutable; final independent review explicitly resolves its exact occurrence. Initial Ge dossier hashes match successor predecessor pins. Corrected gates rerun all three commands with267histories; initial receipts preserved.",
+  "operational_delta_assessment": "Targeted final-terminal to final-v2-terminal switch verified in report/commit/hosted-peer helpers and exact delta hashes. Final-v2 runner retains full justcheck/nonempty/base-history commands; no weakened checks. Config and generated outputs reflect actual successor counts and issue146.",
+  "limitations": [
+    "No independent acceptance of own authored mineral science.",
+    "Operational docs and receipts inspected; hosted PR/head/CI/queue merge/branch deletion/fresh-main validation have not occurred at this audit point and are not claimed.",
+    "Parent live governance receipt checked for provenance and constraints; workflow presence does not establish credential validity or fleet-wide convergence.",
+    "Source frontier remains open; deferred indium originals and alburnite/zincobriartite full-primary checks remain explicit."
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "timestamp_utc": "2026-10-12T04:16:00.283036Z",
+  "reviewer": "Codex /root/round43_hardmetal; GPT-6; codex",
+  "authorship": "Authored the two mineral records/dossiers, not the independent argyrodite scientific-review bundle being assessed. This finding concerns third-party review provenance, not independent acceptance of my own scientific record.",
+  "base": "2b975ae5327b94ac3c1e6583378408add2b8d1f2",
+  "verdict": "resolved",
+  "scope": "Independent resolution of publication provenance finding only; final publication document audit and refreshed native review/coverage gates remain pending.",
+  "findings": [
+    {
+      "finding_id": "F1",
+      "issue_key": "CMMMech.round45.argyrodite-review.evidence-snapshot-reference",
+      "severity": "minor",
+      "status": "resolved",
+      "certainty": "confirmed",
+      "title": "Bind each evidence snapshot hash to its actual referenced artifact",
+      "target": "reviews/structured/20261012T041053Z-argyrodite-round45-resolution/review.yaml",
+      "field_path": "evidence[evidence_id=correction].snapshot_sha256",
+      "description": "The saved successor review names the Ge source dossier as its correction evidence reference but records the hash of the independent correction-proof receipt instead. The reviewer confirmed the mismatch. The exact scientific target and source.inputs hashes remain correct.",
+      "expected_reference": "research/sources/round45-ge-minerals/20261012T040630Z-source-investigation.json",
+      "expected_sha256": "159249cbe58cffb431f9ac9b69a68669a1edbe5518fab2109346ee5ba40c7711",
+      "observed_sha256": "ba61718fc3faedfa41d6b906a86344dd9a35f922fec6aa0d142376df01d73e27",
+      "observed_hash_actual_path": "/private/tmp/cmm-round45-mineral-independent/correction-proof.json",
+      "correction": "Preserve the immutable saved review; save a new native successor that gives the source dossier its own correct hash and separately references the proof receipt with its actual hash. Retain exact original F1/issue146 scientific resolution; record this review-metadata correction explicitly.",
+      "external_issue": "https://github.com/CultureBotAI/CMMMech/issues/147",
+      "previous_occurrence": {
+        "path": "reviews/publication/20261012-round45/20261012T041301Z-independent-initial.json",
+        "sha256": "2b4d5afd5e52106a992740f817af45b0fa702092eab33e9029a611a86e2d862e",
+        "finding_id": "F1",
+        "issue_key": "CMMMech.round45.argyrodite-review.evidence-snapshot-reference"
+      },
+      "disposition": "Independently read the immutable 041446Z native successor, recomputed both separately referenced evidence hashes and all other existing local-file evidence hashes, verified every source input, and confirmed prior observed artifacts unchanged. Exact scientific record/history bytes and issue146 resolution lineage remain intact. Issue147 correction is explicit in the successor notes and links."
+    }
+  ],
+  "unresolved_findings": [],
+  "successor_review": {
+    "path": "reviews/structured/20261012T041446Z-argyrodite-round45-evidence-resolution/review.yaml",
+    "sha256": "9a407ad2480e418f59bb9e70a88337cd9e3986bb968af9fdc1e29e3c1243be02",
+    "md_sha256": "b80a60f02fffff310495750363b6e212ed2d25d86ebf415e98670ce0bbe58ea8"
+  },
+  "local_evidence_hashes_verified": [
+    "record",
+    "correction",
+    "history",
+    "prior",
+    "dedup",
+    "notices",
+    "gates",
+    "reverse_proof",
+    "review_metadata",
+    "immediate_prior"
+  ],
+  "preserved_prior_artifacts": [
+    {
+      "path": "reviews/structured/20261012T041053Z-argyrodite-round45-resolution/review.yaml",
+      "sha256": "4c1f2e566094c10440ca2b54997dec4db67db7250e386c2582c6be9109dfa37b"
+    },
+    {
+      "path": "research/sources/round45-ge-minerals/20261012T040630Z-source-investigation.json",
+      "sha256": "159249cbe58cffb431f9ac9b69a68669a1edbe5518fab2109346ee5ba40c7711"
+    },
+    {
+      "path": "/private/tmp/cmm-round45-mineral-independent/correction-proof.json",
+      "sha256": "ba61718fc3faedfa41d6b906a86344dd9a35f922fec6aa0d142376df01d73e27"
+    }
+  ],
+  "source_inputs_verified": [
+    {
+      "path": "data/records/argyrodite.yaml",
+      "sha256": "7944de7d27f422ff2778c454e466b0c6397367b1af4efcfb7a3a227e886d7190",
+      "role": "target"
+    },
+    {
+      "path": "history/records/argyrodite/2026-10-12T035954Z-codex-d6c8f5.yaml",
+      "sha256": "e597e55fd185cb2075c934f24e211bcaebfe733186d92ae31fbf94fa77a348c8",
+      "role": "context"
+    },
+    {
+      "path": "history/records/argyrodite/2026-10-12T040537Z-codex-a2857d.yaml",
+      "sha256": "b6a3dcd9ff7321df96d5fe3337849349ae6a7003e45a5310216754fb0338e929",
+      "role": "context"
+    },
+    {
+      "path": "research/sources/round45-ge-minerals/20261012T040630Z-source-investigation.json",
+      "sha256": "159249cbe58cffb431f9ac9b69a68669a1edbe5518fab2109346ee5ba40c7711",
+      "role": "context"
+    },
+    {
+      "path": "reviews/structured/20261012T041053Z-argyrodite-round45-resolution/review.yaml",
+      "sha256": "4c1f2e566094c10440ca2b54997dec4db67db7250e386c2582c6be9109dfa37b",
+      "role": "context"
+    },
+    {
+      "path": "src/cmmmech/schema/cmmmech.yaml",
+      "sha256": "f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c",
+      "role": "context"
+    }
+  ],
+  "scientific_lineage": [
+    {
+      "repository": "CultureBotAI/CMMMech",
+      "review_id": "20261012T041053Z-argyrodite-round45-resolution",
+      "finding_id": "F1"
+    }
+  ]
+}

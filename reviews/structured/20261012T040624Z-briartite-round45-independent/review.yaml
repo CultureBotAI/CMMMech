@@ -1,0 +1,314 @@
+schema_version: 1.0.0
+review_id: 20261012T040624Z-briartite-round45-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Briartite mineral identity
+started_at: '2026-10-12T04:02:11Z'
+finished_at: '2026-10-12T04:06:24Z'
+reviewer:
+  identity: Codex /root/round27_packaging
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Curator /root/round43_hardmetal authored this record and sources.
+    Reviewer authored only separate coal extension and did not edit target/history/dossier.
+    Native inspect preceded judgment; primary originals and authorities independently
+    inspected. Curator-acquired originals reused with explicit provenance.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Current briartite species identity and bounded historical mineralogical context
+  are supported by the dated authority and complete original study. The source table-label
+  and historical Fe-Zn limitations are preserved. No corrective finding.
+source:
+  git_revision: 2b975ae5327b94ac3c1e6583378408add2b8d1f2
+  state: working_tree
+  inputs:
+  - path: data/records/briartite.yaml
+    sha256: 78d179ae37d35050510f0083df0936bee843ff76eab448bef817c12198ed6d51
+    role: target
+  - path: history/records/briartite/2026-10-12T035949Z-codex-155fbb.yaml
+    sha256: b0d50607144b2f7d1481dc058f201366fd30145bec65d0525249af214d5e532c
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:briartite
+  path: data/records/briartite.yaml
+  label: Briartite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/briartite.yaml
+    role: scientific_record
+scope:
+  description: All fields of the exact new mineral record and CREATE history; complete
+    cited1965 original figures/tables, dated authority and historical nomenclature
+    boundary.
+  selection: Assigned independent review of peer-authored record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:briartite
+  exclusions:
+  - target: New extraction mechanism or retrospective reassignment of old specimens
+    reason: No such claim supported or made; this is a mineral-identity record.
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/briartite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:briartite
+  summary: Reviewer executed with explicit round45 cwd and offline/no-bytecode environment.
+    Checked1record;0failed. LogSHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- check_id: batch
+  name: Completed initial cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:briartite
+  summary: 'Parent executed; reviewer independently read raw log and verified SHA256
+    62bea3343bc2121ed3ead74f8e46464aae94c17589352ed4f447dfd52df84d63. uv run --locked
+    --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 127.84s (0:02:07)
+
+    Checked 224 record(s); 0 failed.
+
+    Checked 266 history record(s); 0 error(s).'
+- check_id: nonempty
+  name: Completed initial cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:briartite
+  summary: Parent executed; reviewer independently read raw log and verified SHA256
+    422762d06cd992924323952fee0ca1e7d56c09a13fca4fc98a425f8f8f911adc. Checked 224
+    record(s); 0 failed.
+- check_id: history
+  name: Completed initial cohort history
+  command: uv run --locked cmmmech validate-history --base 2b975ae5327b94ac3c1e6583378408add2b8d1f2
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:briartite
+  summary: Parent executed; reviewer independently read raw log and verified SHA256
+    3a8b8d5eb09b5e09abfcb139d5e1bff503712d5fdf538c12e52a42557a7cd58e. Checked 266
+    history record(s); 0 error(s).
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/briartite.yaml
+  locator: All fields, source titles and actual canonical/inline provenance
+  accessed_at: '2026-10-12T04:06:24Z'
+  support: supports
+  summary: Exact frozen record and linked CREATE are independently read; no record
+    edits by reviewer.
+  snapshot_sha256: 78d179ae37d35050510f0083df0936bee843ff76eab448bef817c12198ed6d51
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Original September2026 PDF definitions page1, Briartite page31 and Zincobriartite
+    page241; original row images visually inspected
+  accessed_at: '2026-10-12T04:06:24Z'
+  support: supports
+  summary: Briartite is approved1965-018, ideal Cu2FeGeS4. Zincobriartite is separately
+    approved2015-094, ideal Cu2ZnGeS4. Dated curator-acquired issuing-authority PDF
+    reused and independently read, not a new reviewer download.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.persee.fr/doc/bulmi_0037-9328_1965_num_88_3_5876
+  locator: All six original public-reader pages432–437; Figures1–5 and TablesI–IV
+    independently visually inspected and complete French text read
+  accessed_at: '2026-10-12T04:06:24Z'
+  support: supports
+  summary: Original mineralogical evidence is polished-section microscopy, reflectance,
+    powder diffraction and electron microprobe on natural inclusions/intergrowths.
+    Small separate grains constrain analyses and structure. Geological occurrence
+    is not a processed ore feed or recovery assay.
+  snapshot_sha256: 2e47eebc78587c217de5711b9d31385c3ac019a3b9b28ddcf4dd78376a834d22
+- evidence_id: chemistry
+  kind: primary_source
+  reference: https://doi.org/10.3406/bulmi.1965.5876
+  locator: Original page435 TablesIII–IV and prose; page436 structural alternatives
+  accessed_at: '2026-10-12T04:06:24Z'
+  support: supports
+  summary: Prose assigns three Kipushi analyses to columns1–3 and Tsumeb to4, while
+    TableIII footnote prints Tsumeb5 and germanite4. TableIV uses1–3 Kipushi,4 Tsumeb.
+    Fe/Zn substitutions and structural alternatives are explicitly uncertain. The
+    record does not turn these rows into an unambiguous assay or reassign every historical
+    Zn-rich grain to the modern Fe species.
+  snapshot_sha256: 50a00df865c3760396a6983b9bbb99761309324114a42834d475826637850389
+- evidence_id: handbook
+  kind: primary_source
+  reference: https://handbookofmineralogy.org/pdfs/briartite.pdf
+  locator: Complete one-page historical entry, formula/chemistry/occurrence/references
+    text
+  accessed_at: '2026-10-12T04:06:24Z'
+  support: supports
+  summary: Historical broad Cu2(Zn,Fe)GeS4 formula and specimen-specific chemistry
+    are context, not replacements for current IMA identity. No bulk extraction claim
+    is made.
+  snapshot_sha256: 61d0075dbd7b2bc51debf02e213370b5addd5cc65dfb6082536b0aca900cdf25
+- evidence_id: nomenclature
+  kind: authority
+  reference: https://doi.org/10.1180/minmag.2016.080.080
+  locator: Official CNMNC Newsletter29, original publisher-hosted PDF page203 text
+    independently opened; Zincobriartite entry
+  accessed_at: '2026-10-12T04:06:24Z'
+  support: supports
+  summary: Newsletter identifies2015-094 as the Zn analogue of briartite and reports
+    original composition with Fe/Ga substitutions. Current ideal formula is dated
+    separately; no historical specimen reassignment is inferred.
+  snapshot_sha256: 235641b986576016638471e9ff0db52cf389dd63f048a00fdf0419a71469346e
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round45-mineral-independent/dedup.json
+  locator: Actual independent command and614 matching lines; no stderr
+  accessed_at: '2026-10-12T04:06:24Z'
+  support: supports
+  summary: Existing germanium/germanite/renierite/ore context is not the same species.
+    Only the new exact Briartite owner resolves in this bounded current corpus; no
+    machine-wide absence claim.
+  snapshot_sha256: 7f03c5891c7ccfeedad0bdbca589361aba1da38e7471f020201e1e4f5e45018b
+  search_scope: Independent rg --no-ignore --hidden --follow over current and original
+    records/research/reviews/history plus the curator-enumerated162 existing historical
+    raw roots and current mineral raw directory. Text-bearing extensions only; nine
+    unavailable historical roots disclosed; unrelated filesystem and undecoded binaries
+    excluded.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round45-mineral-independent/notices-web.json
+  locator: Exact DOI notice queries and species-nomenclature query, first returned
+    result sets on2026-10-12
+  accessed_at: '2026-10-12T04:06:24Z'
+  support: supports
+  summary: Bounded results do not identify an affecting correction/retraction. The
+    relevant nomenclature distinction is confirmed by the current authority and official2016
+    newsletter. Secondary search hits are leads, not independent mineral evidence.
+  snapshot_sha256: 452843a726be9827b5d70f452f3046a325a87675915e6b6c351922afadd39556
+  search_scope: 'web.run queries: "10.2138/am.2014.4557" "argyrodite"; "10.2465/ganko.90.268"
+    correction retraction; "10.3406/bulmi.1965.5876" correction retraction; "briartite"
+    "zincobriartite"2015-094. No pagination/date/domain filters; not exhaustive surveillance.'
+- evidence_id: history
+  kind: record_content
+  reference: history/records/briartite/2026-10-12T035949Z-codex-155fbb.yaml
+  locator: Complete canonical CREATE and distinct actual inline event
+  accessed_at: '2026-10-12T04:06:24Z'
+  support: supports
+  summary: Actor codex/GPT-6/codex, target, timestamp and scope are coherent; no invented
+    extraction activity or prior authorship.
+  snapshot_sha256: b0d50607144b2f7d1481dc058f201366fd30145bec65d0525249af214d5e532c
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round45-final-terminal.json
+  locator: Actual completed initial cohort receipt and all three logs independently
+    read and SHA-256 verified
+  accessed_at: '2026-10-12T04:06:24Z'
+  support: supports
+  summary: Initial full cohort passed308tests/3skips,224records/266histories. This
+    unchanged record is covered by that actual result; an unrelated argyrodite correction
+    is being processed separately.
+  snapshot_sha256: fa6fd6f5ff0dfd527c16631332529b3cc788ebd3a9922963f902992385ab50f4
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Current species and historical composition boundaries
+  outcome: supported
+  target_ids:
+  - cmmmech:briartite
+  evidence_ids:
+  - record
+  - ima
+  - primary
+  - nomenclature
+  - dedup
+  summary: Current dated IMA identity is supported. The broad historical Fe-Zn formulation
+    is retained as historical context and zincobriartite remains separate; elementalGe
+    and mixed ore are not equivalent.
+- assessment_id: measurements
+  area: evidence
+  topic: Original mineralogical observations and conflicting table labels
+  outcome: supported
+  target_ids:
+  - cmmmech:briartite
+  evidence_ids:
+  - primary
+  - chemistry
+  - handbook
+  summary: All original figures/tables support the limited natural-grain description.
+    The TableIII label conflict is real, and no numerical row or uniform bulk composition
+    is asserted.
+- assessment_id: scope
+  area: scope
+  topic: No microbial or recovery extrapolation
+  outcome: supported
+  target_ids:
+  - cmmmech:briartite
+  evidence_ids:
+  - record
+  - primary
+  summary: No organism, biomass, treatment condition, mechanism, yield or deployment
+    is claimed by this identity record. No jurisdiction/list/edition criticality is
+    inherited from constituent metals.
+- assessment_id: provenance
+  area: provenance
+  topic: Independent source review and immutable history
+  outcome: supported
+  target_ids:
+  - cmmmech:briartite
+  evidence_ids:
+  - record
+  - history
+  - gates
+  - notices
+  summary: Reviewer did not author target or source dossier. Native inspect preceded
+    judgment; exact target/history hashes still match and actual named/cohort gates
+    passed.
+findings: []
+actions: []
+limitations:
+- Original table-label conflict and broad historical Fe-Zn chemistry prevent unambiguous
+  adoption of individual numerical rows as modern species measurements.
+- No bulk-resource assay, microbial transformation or extraction/recovery experiment
+  is established.
+- 1965 source inspected as complete original reader-page images and OCR, not a successfully
+  downloaded publisher PDF; PDF export access failure is not concealed.
+- Notice and dedup searches are bounded; nine unavailable historical raw roots and
+  undecoded binaries are outside the text-search claim.
+notes:
+- 'iModulon/gene adapters are not applicable: no taxon, gene, locus or transcriptomic
+  claim.'
+- Separate argyrodite F1 correction does not change this record or its CREATE; actual
+  initial cohort receipt reused honestly.
+links:
+- https://doi.org/10.3406/bulmi.1965.5876
+tags:
+- round45
+- independent
+- scientific
+- briartite

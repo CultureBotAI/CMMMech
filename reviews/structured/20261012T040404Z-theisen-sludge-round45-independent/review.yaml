@@ -1,0 +1,275 @@
+schema_version: 1.0.0
+review_id: 20261012T040404Z-theisen-sludge-round45-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Theisen sludge resource identity
+started_at: '2026-10-12T03:57:10Z'
+finished_at: '2026-10-12T04:04:04Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Peer /root/round27_superalloy authored the record, history and
+    source dossier. Reviewer authored none of those bytes, captured native inputs
+    before assessment, read the complete original text and independently viewed all
+    eight original pages. Reviewer coordinates publication and authored a separate
+    deferred indium discovery handoff.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The historical gas-scrubbing residue and sampled-feed analytical context
+  are supported. Synthetic membrane solutions and reused bioleaching information remain
+  distinct. No corrective findings; original Klink experimental evidence remains an
+  open source gap.
+source:
+  git_revision: 2b975ae5327b94ac3c1e6583378408add2b8d1f2
+  state: working_tree
+  inputs:
+  - path: data/records/theisen-sludge.yaml
+    sha256: 9b06fd03d106e687f5618d9a5faf1601e80b0c88f5fc908e0d5604d5d10a96d5
+    role: target
+  - path: history/records/theisen-sludge/2026-10-12T035605Z-codex-f36615.yaml
+    sha256: 4a8d5aa67b02c5e1b43e01892f785fe0c6e159119c8783d506beadf6261c9aee
+    role: context
+targets:
+- target_id: cmmmech:theisen-sludge
+  path: data/records/theisen-sludge.yaml
+  label: Theisen sludge
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/theisen-sludge.yaml
+    role: scientific_record
+scope:
+  description: Whole new resource identity record and actual CREATE provenance. All
+    original IMWA pages, figures, table and equations inspected to assess both positive
+    claims and excluded extrapolations.
+  selection: Assigned independent review of the peer-curated target.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:theisen-sludge
+  exclusions:
+  - target: Unasserted Klink bioleaching and later membrane-treatment studies
+    reason: Missing complete original experimental evidence is retained as a follow-up;
+      no mechanism is accepted from these leads.
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/theisen-sludge.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:theisen-sludge
+  summary: Reviewer executed to terminal0; one record checked, zero failures. Log
+    SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- check_id: batch
+  name: Completed cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:theisen-sludge
+  summary: 'Coordinator executed; completed raw-byte receipt and log verified. Log
+    SHA256 62bea3343bc2121ed3ead74f8e46464aae94c17589352ed4f447dfd52df84d63. uv run
+    --locked --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 127.84s (0:02:07)
+
+    Checked 224 record(s); 0 failed.
+
+    Checked 266 history record(s); 0 error(s).'
+- check_id: nonempty
+  name: Completed cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:theisen-sludge
+  summary: Coordinator executed; completed raw-byte receipt and log verified. Log
+    SHA256 422762d06cd992924323952fee0ca1e7d56c09a13fca4fc98a425f8f8f911adc. Checked
+    224 record(s); 0 failed.
+- check_id: history
+  name: Completed cohort history
+  command: uv run --locked cmmmech validate-history --base 2b975ae5327b94ac3c1e6583378408add2b8d1f2
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:theisen-sludge
+  summary: Coordinator executed; completed raw-byte receipt and log verified. Log
+    SHA256 3a8b8d5eb09b5e09abfcb139d5e1bff503712d5fdf538c12e52a42557a7cd58e. Checked
+    266 history record(s); 0 error(s).
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/theisen-sludge.yaml
+  locator: Whole frozen target
+  accessed_at: '2026-10-12T04:04:04Z'
+  support: supports
+  summary: Secondary resource, distinct from copper-shale feed and synthetic solutions;
+    optional unsupported claims absent.
+  snapshot_sha256: 9b06fd03d106e687f5618d9a5faf1601e80b0c88f5fc908e0d5604d5d10a96d5
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.imwa.info/docs/imwa_2016/IMWA2016_Meschke_283.pdf
+  locator: Complete eight-page printed article pp1356–1363; especially Introduction,
+    analytical investigation and Figure5A
+  accessed_at: '2026-10-12T04:04:04Z'
+  support: supports
+  summary: Original text and images support scrubber-residue identity, Helbra sampling
+    at4m inMay2015, EDXRF major-element measurements and aqua-regia-extract trace
+    analysis. Figure5A supports qualitative Zn/Pb prominence among measured constituents.
+    The record does not adopt the source’s unit/density inconsistencies or reserve
+    estimates.
+  snapshot_sha256: 3229ef0a16fef1dce2eeff82d306c8c6cd280c95af20fe54fc82027be4bbd6a1
+- evidence_id: boundaries
+  kind: primary_source
+  reference: https://www.imwa.info/docs/imwa_2016/IMWA2016_Meschke_283.pdf
+  locator: Original Figure2, synthetic-feed methods, Figures6–9, Equations1–3, Conclusion
+  accessed_at: '2026-10-12T04:04:04Z'
+  support: supports
+  summary: Figure2 credits Klink2016; it cannot establish independent replication.
+    The membrane feeds are prepared Ge/Mo/Re solutions. Equation2 is permeate-volume
+    recovery, not metal yield. Proposed process integration and future cross-flow
+    tests do not establish deployment.
+  snapshot_sha256: 3229ef0a16fef1dce2eeff82d306c8c6cd280c95af20fe54fc82027be4bbd6a1
+- evidence_id: identity
+  kind: primary_source
+  reference: https://www.ufz.de/index.php?en=20939&pub_id=17775
+  locator: Institutional bibliographic metadata compared with printed original title/author
+    line
+  accessed_at: '2026-10-12T04:04:04Z'
+  support: supports
+  summary: Printed five authors and pp1356–1363 govern the citation. The PDF metadata
+    incorrectly names a different article; institutional indexing adds editor Paul.
+    Those metadata inconsistencies are not propagated. A current live official PDF
+    open corroborates source identity.
+  snapshot_sha256: 9dfc76def792f2d1e3932e5bd18b6c1a40b497d120f2c1af3bfabe484dc42c83
+- evidence_id: history
+  kind: record_content
+  reference: history/records/theisen-sludge/2026-10-12T035605Z-codex-f36615.yaml
+  locator: Whole sidecar and distinct inline event
+  accessed_at: '2026-10-12T04:04:04Z'
+  support: supports
+  summary: Actual actor, model, tool, target, CREATE action and times agree. No prior
+    authorship or unchanged edit invented.
+  snapshot_sha256: 4a8d5aa67b02c5e1b43e01892f785fe0c6e159119c8783d506beadf6261c9aee
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round45-theisen-review-dedup.json
+  locator: Current bounded material/source search
+  accessed_at: '2026-10-12T04:04:04Z'
+  support: supports
+  summary: One maintained Theisen owner; earlier matches document deferred evidence.
+    Broader curator search and missing-root limits read in the source dossier rather
+    than independently rerun.
+  snapshot_sha256: b812f94acddc25decd7e0803b262cbc648849d58cc8bb4afa9543d2062d4e6d3
+  search_scope: rg --no-ignore --hidden --follow over current data/records,research,reviews,history.
+    Curator independently searched145 referenced raw roots with nine missing roots.
+    Unrelated machine trees and unextracted binaries excluded.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round45-theisen-review-web.json
+  locator: Three exact title/name/filename notice searches and direct official original
+    open
+  accessed_at: '2026-10-12T04:04:04Z'
+  support: supports
+  summary: No affecting formal notice identified in bounded returned sets. A later2019
+    membrane paper is a follow-up lead, not accepted original evidence in this review.
+  snapshot_sha256: 0209c4cdf83959ccbfe43eaf2dfa4019966d741ed49fecadaacd9bb30df4b5c5
+  search_scope: web.run first returned sets for three saved exact queries on2026-10-12;
+    no date/domain filters or exhaustive pagination.
+- evidence_id: checks
+  kind: validation
+  reference: /private/tmp/cmm-round45-final-terminal.json
+  locator: Actual completed batch/nonempty/trusted-base-history receipts
+  accessed_at: '2026-10-12T04:04:04Z'
+  support: supports
+  summary: All cohort commands passed and raw log hashes verified; structural validity
+    alone does not prove scientific truth.
+  snapshot_sha256: fa6fd6f5ff0dfd527c16631332529b3cc788ebd3a9922963f902992385ab50f4
+- evidence_id: inspection
+  kind: record_content
+  reference: /private/tmp/cmm-round45-theisen-independent-evidence.json
+  locator: Independent original-page inspection and raw-artifact integrity check
+  accessed_at: '2026-10-12T04:04:04Z'
+  support: supports
+  summary: All35 declared curator artifacts hash-verified; complete primary text and
+    all8 original pages independently inspected. No independent fresh raw PDF download
+    is claimed.
+  snapshot_sha256: 58d79e6aaa093e4a6a83e05c2bf1e437d739feb8e0aec7414a76a84655b4521f
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Processing-derived material and sampled-feed scope
+  outcome: supported
+  target_ids:
+  - cmmmech:theisen-sludge
+  evidence_ids:
+  - record
+  - primary
+  - identity
+  summary: Resource identity and sampling scope are supported without treating all
+    landfill material as compositionally uniform.
+- assessment_id: boundaries
+  area: evidence
+  topic: Assay, source overlap and mechanism boundaries
+  outcome: supported
+  target_ids:
+  - cmmmech:theisen-sludge
+  evidence_ids:
+  - primary
+  - boundaries
+  summary: Distinct analytical fractions, synthetic feeds and reused biological information
+    are retained; no yield, criticality or deployment inference.
+- assessment_id: provenance
+  area: provenance
+  topic: Current exact bytes, source identity, history and review limits
+  outcome: supported
+  target_ids:
+  - cmmmech:theisen-sludge
+  evidence_ids:
+  - record
+  - history
+  - dedup
+  - notices
+  - checks
+  summary: Captured bytes remain unchanged; real history and bounded independent checks
+    support a qualified pass.
+findings: []
+actions: []
+limitations:
+- A single historical landfill sample does not establish uniform feed composition,
+  reserves or extractability.
+- The complete original Klink main/SI evidence remains unavailable in the accepted
+  evidence set; issue140 remains open.
+- No material-specific criticality, microbial mechanism, strain identifier, metal-recovery
+  yield or industrial deployment is asserted.
+- Bounded notice and duplicate searches do not prove universal absence or source exhaustion.
+tags:
+- round45
+- independent
+- secondary_resource
+- identity
