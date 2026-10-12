@@ -8,7 +8,7 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 267 material records.
+The catalogue currently contains 270 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
@@ -279,6 +279,9 @@ The catalogue currently contains 267 material records.
 | [Electroplating sludge](data/records/electroplating-sludge.yaml) | Separate culture-associated and biogenic-liquor leaching assays | Mismatched controls and source calculation/toxicity conflicts; no isolated product |
 | [Copper autoclave slime](data/records/copper-autoclave-slime.yaml) | EPR3-associated tellurium transport from processed refinery residue | Laboratory agar/headspace evidence; gas identity and recovered mass remain unresolved |
 | [Coffinite](data/records/coffinite.yaml) | Mineral identity, natural occurrence and abiotic laboratory formation | Abiotic precipitation is distinct from a deferred microbial-leaching study |
+| [Smithsonite](data/records/smithsonite.yaml) | Ureolytic culture-associated zinc carbonate phase evidence | Phase identification belongs to the traditional dried specimen; sequential zinc depletion is a separate arm |
+| [Spent alkaline and zinc-carbon batteries](data/records/spent-alkaline-zinc-carbon-batteries.yaml) | Microbial acid production, mixed-feed leaching and separate electrolysis | Source yield/purity conflicts, feed denominator and laboratory stage boundaries retained |
+| [Spent SCR catalyst](data/records/spent-selective-catalytic-reduction-catalyst.yaml) | Microbial bioacid arsenic removal and separate chemical V/W leaching | Combined catalyst regeneration, source-unit/time conflicts and control limitations remain explicit |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -344,7 +347,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [fifty-fifth expansion reviews](research/ingests/round55-20261012-publication.md),
 [fifty-sixth expansion reviews](research/ingests/round56-20261012-publication.md),
 [fifty-seventh expansion reviews](research/ingests/round57-20261012-publication.md),
-[remaining ingest priorities](research/ingests/round57-frontier-20261012.md), and
+[fifty-eighth expansion reviews](research/ingests/round58-20261012-publication.md),
+[remaining ingest priorities](research/ingests/round58-frontier-20261012.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

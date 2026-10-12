@@ -1,0 +1,563 @@
+# Independent scientific review of spent alkaline and zinc-carbon batteries
+
+- Review: 20261012T133243Z-spent-alkaline-zinc-carbon-batteries-round58-science
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-12T13:27:07.162060Z
+- Finished UTC: 2026-10-12T13:32:43.492196Z
+- Reviewer: Codex /root/round27_superalloy (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The frozen record accurately separates upstream biological medium production, mixed AA-powder leaching and nonmicrobial electrolysis. All original pages, graphics, table and equations support the stated observations and preserved denominator, control, phase and source-conflict limitations. No corrective record finding identified.
+
+## Scope And Provenance
+
+Entire exact maintained record, CREATE sidecar, author dossier pair and schema; complete primary and every original graphic/table/equation; current species/collection identifiers, bounded notices and dedup, evidence integrity and actual final checks.
+
+Selection: Parent-assigned independent review of one new secondary-resource owner.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base b6014c43b8174904e80f71df22be2251a802b418.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:spent-alkaline-zinc-carbon-batteries | data/records/spent-alkaline-zinc-carbon-batteries.yaml | maintained | Spent alkaline and zinc-carbon batteries |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Reviewer named record validation | passed | True | cmmmech:spent-alkaline-zinc-carbon-batteries | Actually executed in round58; one record checked, zero failed. |
+| Native context and original evidence integrity | passed | True | cmmmech:spent-alkaline-zinc-carbon-batteries | Five captured inputs, 41 raw files and 12 retained receipt hashes independently verified. |
+| Parent completed batch | passed | True | cmmmech:spent-alkaline-zinc-carbon-batteries | Actual completed parent receipt and raw log hash independently verified; not rerun by reviewer. |
+| Parent completed nonempty | passed | True | cmmmech:spent-alkaline-zinc-carbon-batteries | Actual completed parent receipt and raw log hash independently verified; not rerun by reviewer. |
+| Parent completed history | passed | True | cmmmech:spent-alkaline-zinc-carbon-batteries | Actual completed parent receipt and raw log hash independently verified; not rerun by reviewer. |
+| Parent completed render-check | passed | True | cmmmech:spent-alkaline-zinc-carbon-batteries | Actual completed parent receipt and raw log hash independently verified; not rerun by reviewer. |
+
+## Scientific And Domain Assessments
+
+### Distinct mixed secondary-resource owner
+
+identity: supported. Targets: cmmmech:spent-alkaline-zinc-carbon-batteries.
+
+The material is a mixed, dismantled, washed and dried AA alkaline/zinc-carbon feed. The record avoids separate chemistry-specific efficiencies and distinguishes other accepted battery chemistries and button-cell experiments.
+
+### Indirect culture-produced medium and bounded controls
+
+evidence: supported. Targets: cmmmech:spent-alkaline-zinc-carbon-batteries.
+
+Upstream sulfur oxidation and subsequent acid-medium powder leaching are supported. The reported acid comparison supports a limited performance observation, without isolating polythionate causality or proving live-cell contact necessary.
+
+### Prepared-powder endpoint and source discrepancies
+
+evidence: supported. Targets: cmmmech:spent-alkaline-zinc-carbon-batteries.
+
+Source-reported 100% Zn and 65% Mn after two fresh-medium loads remain qualified by the 67% abstract conflict, ambiguous zinc-can feed accounting and lack of cumulative reconstruction. Table 1, Figure 5 and calcination remarks support explicit heterogeneity and phase limits.
+
+### Nonmicrobial electrolysis separated from upstream bioleaching
+
+evidence: supported. Targets: cmmmech:spent-alkaline-zinc-carbon-batteries.
+
+The 6.5 L electrolysis arm supports source-assigned metallic Zn and Mn-oxide deposition with limited recovery and purity, not microbial electrodeposition or integrated whole-feed efficiency.
+
+### Current explicit contexts and actual completed checks
+
+provenance: supported. Targets: cmmmech:spent-alkaline-zinc-carbon-batteries.
+
+CREATE sidecar and distinct actual inline event describe this curation. The author dossier and schema were captured explicitly; source version, access and search boundaries are accurate. All required actual checks are bound to unchanged bytes.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/spent-alkaline-zinc-carbon-batteries.yaml; Entire native-inspected input, read before assessment and unchanged at final save | supports | Exact record and explicit context bytes independently read and verified. |
+| history | history/records/spent-alkaline-zinc-carbon-batteries/2026-10-12T131959Z-codex-734d22.yaml; Entire native-inspected input, read before assessment and unchanged at final save | supports | Exact record and explicit context bytes independently read and verified. |
+| dossier_json | research/sources/round58-batteries/20261012T132504Z-source-investigation.json; Entire native-inspected input, read before assessment and unchanged at final save | supports | Exact record and explicit context bytes independently read and verified. |
+| dossier_md | research/sources/round58-batteries/20261012T132504Z-source-investigation.md; Entire native-inspected input, read before assessment and unchanged at final save | supports | Exact record and explicit context bytes independently read and verified. |
+| schema | src/cmmmech/schema/cmmmech.yaml; Entire native-inspected input, read before assessment and unchanged at final save | supports | Exact record and explicit context bytes independently read and verified. |
+| primary | /private/tmp/cmm-round58-battery-research/raw/falco2014-publisher.pdf; Complete seven original pages, printed 123–129; all seven figures, Table 1 and equations 1–9 personally visually inspected | supports | The complete official primary supports a mixed AA-cell feed, biological acid production, separate powder leaching and electrolysis. Original scale, control comparisons, denominators, calcination, partial extraction and numerical inconsistencies were independently checked. No graphic was inferred solely from extracted text. |
+| dsm | /private/tmp/cmm-round58-battery-research/raw/dsm11478.html; DSMZ current catalogue identity fields, independently read; live official page also returned in fresh search | supports | DSM 11478 is A. thiooxidans, strain Tth04, mine-drainage isolate. This corroborates the label, without authenticating the original stock or proving direct cell contact with powder. |
+| ncbi | /private/tmp/cmm-round58-battery-research/raw/ncbi930.html; NCBI species 930, current name/rank and synonym fields independently read; fresh official search result | supports | NCBITaxon:930 is Acidithiobacillus thiooxidans. A species identifier is correctly distinguished from DSM 11478 and the type strain. |
+| notices | /private/tmp/cmm-round58-battery-review-search.txt; Actual independent live web result set, 12 October 2026 | supports | Exact DOI/title correction, erratum and retraction searches returned no affecting notice in the inspected results. Current official publisher result confirms DOI, title, authors and 2014 issue. Official landing lists PDF/HTML; no separate SI identified in that inventory or the complete paper. |
+| integrity | /private/tmp/cmm-round58-battery-review-checks.json; Five native inputs, all 41 retained raw artifacts and 12 curator receipts; reviewer named validation and search logs | supports | All hashes matched and named validation checked one record with zero failures. Hidden/ignored/followed current and original scientific trees plus available cited raw directories were independently searched. Prior hits are discovery references to other alkaline-battery studies; the selected primary and feed remain distinct from accepted button-cell, NiMH and lithium-ion owners. |
+| named | /private/tmp/cmm-round58-battery-review-named.log; Actual reviewer-executed current named validation | supports | One record checked, zero failed; explicit round58 cwd, offline locked environment and temporary cache. |
+| cohort | /private/tmp/cmm-round58-final-terminal.json; Actual completed parent cohort receipt and every referenced raw log checksum | supports | Required final batch commands actually passed; independently read and hash-verified. Reviewer did not rerun the unchanged whole corpus or claim parent commands as personal execution. |
+
+## Limits And Additional Notes
+
+- No independent experimental replication, authenticated original stock or complete cell-removal assessment. Upstream microbial involvement does not prove direct cell attack during downstream leaching.
+- Feed mix and zinc-can accounting do not supply an unambiguous whole-cell denominator. Liquid replacement, washing, sampling and deposits lack a closed metal mass balance.
+- Commercial-acid comparison lacks numerical series/uncertainty and complete chemical matching. Molecular polythionate contribution and unlimited acid tolerance are not established.
+- Abstract/body Mn extraction, Results/Conclusions product purity and final-pH conflicts are unresolved in the source and explicitly retained. Calcined Mn2O3 does not prove the untreated residue or deposit phase.
+- No battery-grade product, integrated yield, validated long-duration commercial deployment or quantified economic/life-cycle advantage is demonstrated.
+- No separate SI was found within complete paper/official landing inventory; not a universal absence claim. Search boundaries include hidden/ignored and followed symlinks, with binary/unavailable-root limits.
+- Reviewer authored smithsonite only; its independent scientific acceptance is outside this review.
+- No record/history/dossier, Git or GitHub mutation was performed in this battery review. An initial unsaved draft had an invalid owner repository short name; the failed draft/receipt were retained, the owner was corrected to CultureBotAI/CMMMech, and all unchanged scientific inputs were recaptured before the successful save.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261012T133243Z-spent-alkaline-zinc-carbon-batteries-round58-science
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of spent alkaline and zinc-carbon batteries
+started_at: '2026-10-12T13:27:07.162060Z'
+finished_at: '2026-10-12T13:32:43.492196Z'
+reviewer:
+  identity: Codex /root/round27_superalloy
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The packaging agent authored this record/history/dossier. This
+    reviewer authored only the separate smithsonite contribution; no battery scientific
+    inputs were edited. Native inspect captured all five explicit contexts before
+    judging.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The frozen record accurately separates upstream biological medium production,
+  mixed AA-powder leaching and nonmicrobial electrolysis. All original pages, graphics,
+  table and equations support the stated observations and preserved denominator, control,
+  phase and source-conflict limitations. No corrective record finding identified.
+source:
+  git_revision: b6014c43b8174904e80f71df22be2251a802b418
+  state: working_tree
+  inputs:
+  - path: data/records/spent-alkaline-zinc-carbon-batteries.yaml
+    sha256: c05ce0a265b6b0a1afb54607bfce9239454db229e4263374fb29dfd639e369ce
+    role: target
+  - path: history/records/spent-alkaline-zinc-carbon-batteries/2026-10-12T131959Z-codex-734d22.yaml
+    sha256: 4412468af70ef4267bbfc46565ca7a4da4f16b6f704efa4417768423294991e5
+    role: context
+  - path: research/sources/round58-batteries/20261012T132504Z-source-investigation.json
+    sha256: 033d6204750d4419b4daf5b3e784787837ee37f6fb6b5fea1b7e19921e43923d
+    role: context
+  - path: research/sources/round58-batteries/20261012T132504Z-source-investigation.md
+    sha256: 1976a70948fe1f5bf9a3bf3c3df9b6cc375205a9dee4eb5aec07f38233a35901
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:spent-alkaline-zinc-carbon-batteries
+  path: data/records/spent-alkaline-zinc-carbon-batteries.yaml
+  label: Spent alkaline and zinc-carbon batteries
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/spent-alkaline-zinc-carbon-batteries.yaml
+    role: maintained_record
+scope:
+  description: Entire exact maintained record, CREATE sidecar, author dossier pair
+    and schema; complete primary and every original graphic/table/equation; current
+    species/collection identifiers, bounded notices and dedup, evidence integrity
+    and actual final checks.
+  selection: Parent-assigned independent review of one new secondary-resource owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:spent-alkaline-zinc-carbon-batteries
+checks:
+- check_id: named
+  name: Reviewer named record validation
+  command: PYTHONDONTWRITEBYTECODE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1
+    uv run --locked cmmmech validate data/records/spent-alkaline-zinc-carbon-batteries.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-alkaline-zinc-carbon-batteries
+  summary: Actually executed in round58; one record checked, zero failed.
+- check_id: integrity
+  name: Native context and original evidence integrity
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-alkaline-zinc-carbon-batteries
+  summary: Five captured inputs, 41 raw files and 12 retained receipt hashes independently
+    verified.
+- check_id: cohort_batch
+  name: Parent completed batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-alkaline-zinc-carbon-batteries
+  summary: Actual completed parent receipt and raw log hash independently verified;
+    not rerun by reviewer.
+- check_id: cohort_nonempty
+  name: Parent completed nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-alkaline-zinc-carbon-batteries
+  summary: Actual completed parent receipt and raw log hash independently verified;
+    not rerun by reviewer.
+- check_id: cohort_history
+  name: Parent completed history
+  command: uv run --locked cmmmech validate-history --base b6014c43b8174904e80f71df22be2251a802b418
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-alkaline-zinc-carbon-batteries
+  summary: Actual completed parent receipt and raw log hash independently verified;
+    not rerun by reviewer.
+- check_id: cohort_render_check
+  name: Parent completed render-check
+  command: just render-check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-alkaline-zinc-carbon-batteries
+  summary: Actual completed parent receipt and raw log hash independently verified;
+    not rerun by reviewer.
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/spent-alkaline-zinc-carbon-batteries.yaml
+  locator: Entire native-inspected input, read before assessment and unchanged at
+    final save
+  accessed_at: '2026-10-12T13:32:43.492196Z'
+  support: supports
+  summary: Exact record and explicit context bytes independently read and verified.
+  snapshot_sha256: c05ce0a265b6b0a1afb54607bfce9239454db229e4263374fb29dfd639e369ce
+- evidence_id: history
+  kind: record_content
+  reference: history/records/spent-alkaline-zinc-carbon-batteries/2026-10-12T131959Z-codex-734d22.yaml
+  locator: Entire native-inspected input, read before assessment and unchanged at
+    final save
+  accessed_at: '2026-10-12T13:32:43.492196Z'
+  support: supports
+  summary: Exact record and explicit context bytes independently read and verified.
+  snapshot_sha256: 4412468af70ef4267bbfc46565ca7a4da4f16b6f704efa4417768423294991e5
+- evidence_id: dossier_json
+  kind: record_content
+  reference: research/sources/round58-batteries/20261012T132504Z-source-investigation.json
+  locator: Entire native-inspected input, read before assessment and unchanged at
+    final save
+  accessed_at: '2026-10-12T13:32:43.492196Z'
+  support: supports
+  summary: Exact record and explicit context bytes independently read and verified.
+  snapshot_sha256: 033d6204750d4419b4daf5b3e784787837ee37f6fb6b5fea1b7e19921e43923d
+- evidence_id: dossier_md
+  kind: record_content
+  reference: research/sources/round58-batteries/20261012T132504Z-source-investigation.md
+  locator: Entire native-inspected input, read before assessment and unchanged at
+    final save
+  accessed_at: '2026-10-12T13:32:43.492196Z'
+  support: supports
+  summary: Exact record and explicit context bytes independently read and verified.
+  snapshot_sha256: 1976a70948fe1f5bf9a3bf3c3df9b6cc375205a9dee4eb5aec07f38233a35901
+- evidence_id: schema
+  kind: record_content
+  reference: src/cmmmech/schema/cmmmech.yaml
+  locator: Entire native-inspected input, read before assessment and unchanged at
+    final save
+  accessed_at: '2026-10-12T13:32:43.492196Z'
+  support: supports
+  summary: Exact record and explicit context bytes independently read and verified.
+  snapshot_sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+- evidence_id: primary
+  kind: primary_source
+  reference: /private/tmp/cmm-round58-battery-research/raw/falco2014-publisher.pdf
+  locator: Complete seven original pages, printed 123–129; all seven figures, Table
+    1 and equations 1–9 personally visually inspected
+  accessed_at: '2026-10-12T13:32:43.492196Z'
+  support: supports
+  summary: The complete official primary supports a mixed AA-cell feed, biological
+    acid production, separate powder leaching and electrolysis. Original scale, control
+    comparisons, denominators, calcination, partial extraction and numerical inconsistencies
+    were independently checked. No graphic was inferred solely from extracted text.
+  snapshot_sha256: 8b34541f3ab6f4dc62e830ba0adc1a3f8fc3941bca0726f3e4f340f34efad0fa
+- evidence_id: dsm
+  kind: authority
+  reference: /private/tmp/cmm-round58-battery-research/raw/dsm11478.html
+  locator: DSMZ current catalogue identity fields, independently read; live official
+    page also returned in fresh search
+  accessed_at: '2026-10-12T13:32:43.492196Z'
+  support: supports
+  summary: DSM 11478 is A. thiooxidans, strain Tth04, mine-drainage isolate. This
+    corroborates the label, without authenticating the original stock or proving direct
+    cell contact with powder.
+  snapshot_sha256: d309c9d3c6d3948049bc063539fa08492024232363ad1523649cf06d57761325
+- evidence_id: ncbi
+  kind: authority
+  reference: /private/tmp/cmm-round58-battery-research/raw/ncbi930.html
+  locator: NCBI species 930, current name/rank and synonym fields independently read;
+    fresh official search result
+  accessed_at: '2026-10-12T13:32:43.492196Z'
+  support: supports
+  summary: NCBITaxon:930 is Acidithiobacillus thiooxidans. A species identifier is
+    correctly distinguished from DSM 11478 and the type strain.
+  snapshot_sha256: d578a501d163e4c06ddaba48d34a46811d97e5a368373a488f13414bca1cef8f
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round58-battery-review-search.txt
+  locator: Actual independent live web result set, 12 October 2026
+  accessed_at: '2026-10-12T13:32:43.492196Z'
+  support: supports
+  summary: Exact DOI/title correction, erratum and retraction searches returned no
+    affecting notice in the inspected results. Current official publisher result confirms
+    DOI, title, authors and 2014 issue. Official landing lists PDF/HTML; no separate
+    SI identified in that inventory or the complete paper.
+  snapshot_sha256: aef3d311fe1acb9a099b2aada7d35f5f813c650d11b016c30adab2574ea1db58
+  search_scope: 'Four live queries: exact DOI plus correction/retraction/erratum;
+    title and polythionate plus correction; DSM 11478/Tth04 at dsmz.de; NCBI 930/name.
+    First returned sets only; no exhaustive absence claim. No uninspected later paper
+    is treated as experimental counterevidence.'
+- evidence_id: integrity
+  kind: validation
+  reference: /private/tmp/cmm-round58-battery-review-checks.json
+  locator: Five native inputs, all 41 retained raw artifacts and 12 curator receipts;
+    reviewer named validation and search logs
+  accessed_at: '2026-10-12T13:32:43.492196Z'
+  support: supports
+  summary: All hashes matched and named validation checked one record with zero failures.
+    Hidden/ignored/followed current and original scientific trees plus available cited
+    raw directories were independently searched. Prior hits are discovery references
+    to other alkaline-battery studies; the selected primary and feed remain distinct
+    from accepted button-cell, NiMH and lithium-ion owners.
+  snapshot_sha256: 0a45a6d4edd6d73cd8d59c8efbeac31e2164b540d3bda74befac55793e72b861
+  search_scope: Independent rg --hidden --no-ignore --follow in data/records,research,reviews,history
+    of round58 and original Documents checkout, plus declared available cited raw
+    directories. Raw binary suppression/no OCR, missing/non-directory roots and first-hit
+    inspection of large flattened dumps explicitly limit completeness.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round58-battery-review-named.log
+  locator: Actual reviewer-executed current named validation
+  accessed_at: '2026-10-12T13:32:43.492196Z'
+  support: supports
+  summary: One record checked, zero failed; explicit round58 cwd, offline locked environment
+    and temporary cache.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: cohort
+  kind: validation
+  reference: /private/tmp/cmm-round58-final-terminal.json
+  locator: Actual completed parent cohort receipt and every referenced raw log checksum
+  accessed_at: '2026-10-12T13:32:43.492196Z'
+  support: supports
+  summary: Required final batch commands actually passed; independently read and hash-verified.
+    Reviewer did not rerun the unchanged whole corpus or claim parent commands as
+    personal execution.
+  snapshot_sha256: 51a83e37cc6acd134e3a2f8aa0a0fefd08f1917367d8673b442170c7e1e6e13c
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Distinct mixed secondary-resource owner
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-alkaline-zinc-carbon-batteries
+  evidence_ids:
+  - record
+  - primary
+  - integrity
+  summary: The material is a mixed, dismantled, washed and dried AA alkaline/zinc-carbon
+    feed. The record avoids separate chemistry-specific efficiencies and distinguishes
+    other accepted battery chemistries and button-cell experiments.
+  dimensions:
+  - name: material
+    value: Prepared mixed AA primary-cell powder; secondary_resource
+    definition: Methods II.D–F and Figure 1 identify feed processing and mixed chemistries;
+      not elemental Zn, a mineral, or a standardized whole-cell composition.
+    evidence_ids:
+    - primary
+  - name: criticality
+    value: Not asserted
+    definition: No national list, commodity designation or element criticality is
+      imported.
+    evidence_ids:
+    - record
+- assessment_id: bioleaching
+  area: evidence
+  topic: Indirect culture-produced medium and bounded controls
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-alkaline-zinc-carbon-batteries
+  evidence_ids:
+  - record
+  - primary
+  - dsm
+  - ncbi
+  summary: Upstream sulfur oxidation and subsequent acid-medium powder leaching are
+    supported. The reported acid comparison supports a limited performance observation,
+    without isolating polythionate causality or proving live-cell contact necessary.
+  dimensions:
+  - name: organism
+    value: A. thiooxidans DSM 11478/Tth04, species NCBITaxon:930
+    definition: Species and collection label verified separately; experimental stock
+      authentication remains unavailable.
+    evidence_ids:
+    - primary
+    - dsm
+    - ncbi
+  - name: biomass_and_substrate
+    value: Sulfur-grown culture in separate air-lift reactor; prepared spent AA battery
+      powder downstream
+    definition: All cells were not demonstrably removed before leaching; neither sterile
+      filtrate nor direct mineral-cell attack is claimed.
+    evidence_ids:
+    - primary
+    - record
+  - name: conditions
+    value: 26.5 L acid reactor at 30 degrees C; separate 50 L vessel with 2 kg powder/28
+      L medium near pH 0.4 and 200 rpm
+    definition: 10 L selected medium volume is upstream, not battery-leaching volume;
+      physical leaching temperature is unreported.
+    evidence_ids:
+    - primary
+  - name: controls
+    value: S1 commercial sulfuric acid versus S2 biological medium at same initial
+      acid concentration
+    definition: Relative 60% Mn and 40% Zn increases have no underlying series or
+      uncertainty; no fully matched evolving chemistry or sterile sulfur-reactor control.
+    evidence_ids:
+    - primary
+    - record
+- assessment_id: leaching_outcome
+  area: evidence
+  topic: Prepared-powder endpoint and source discrepancies
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-alkaline-zinc-carbon-batteries
+  evidence_ids:
+  - record
+  - primary
+  summary: Source-reported 100% Zn and 65% Mn after two fresh-medium loads remain
+    qualified by the 67% abstract conflict, ambiguous zinc-can feed accounting and
+    lack of cumulative reconstruction. Table 1, Figure 5 and calcination remarks support
+    explicit heterogeneity and phase limits.
+  dimensions:
+  - name: denominator
+    value: Source prepared-powder extraction percentages
+    definition: Not summed load bars, separate chemistry yield, total whole-battery
+      inventory or isolated-metal yield.
+    evidence_ids:
+    - primary
+    - record
+  - name: solid_phase
+    value: Mn/O-rich residue; reported Mn2O3 after 500 degrees C calcination
+    definition: Calcined diffraction assignment is not an established as-leached phase;
+      elemental X-ray spectrum is not crystalline speciation.
+    evidence_ids:
+    - primary
+  - name: replication
+    value: Reactor-step productivity error estimates
+    definition: Not independent leaching replicates; source free-cell decline also
+      limits broad tolerance claims.
+    evidence_ids:
+    - primary
+- assessment_id: recovery
+  area: evidence
+  topic: Nonmicrobial electrolysis separated from upstream bioleaching
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-alkaline-zinc-carbon-batteries
+  evidence_ids:
+  - record
+  - primary
+  summary: The 6.5 L electrolysis arm supports source-assigned metallic Zn and Mn-oxide
+    deposition with limited recovery and purity, not microbial electrodeposition or
+    integrated whole-feed efficiency.
+  dimensions:
+  - name: conditions
+    value: 6.5 L leachate, stainless-steel electrodes 25 cm apart, 100 A/m2, room
+      temperature, atmospheric pressure
+    definition: Distinct external-current operation after biological-medium leaching.
+    evidence_ids:
+    - primary
+  - name: outcomes
+    value: '68 h leachate-stage recovery: 36% Mn and 66% Zn; current efficiency below
+      10%'
+    definition: Stage recoveries are not multiplied into overall extraction. Figure
+      7 is laminar morphology, not purity or diffraction proof.
+    evidence_ids:
+    - primary
+  - name: conflicts
+    value: Zn purity 90%; Mn oxide 82% Results versus 85% Conclusions; final pH 1.8
+      versus 1.5
+    definition: Iron corrosion and 500-degree-C calcination are retained; no battery-grade
+      specification or exact as-deposited phase is asserted.
+    evidence_ids:
+    - primary
+    - record
+  - name: scale
+    value: Source-described pilot apparatus
+    definition: Reported vessel/feed scale supports pilot terminology; commercial
+      deployment, full cost and life-cycle advantages are not demonstrated.
+    evidence_ids:
+    - primary
+    - record
+- assessment_id: provenance
+  area: provenance
+  topic: Current explicit contexts and actual completed checks
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-alkaline-zinc-carbon-batteries
+  evidence_ids:
+  - history
+  - dossier_md
+  - dossier_json
+  - schema
+  - integrity
+  - named
+  - cohort
+  summary: CREATE sidecar and distinct actual inline event describe this curation.
+    The author dossier and schema were captured explicitly; source version, access
+    and search boundaries are accurate. All required actual checks are bound to unchanged
+    bytes.
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- No independent experimental replication, authenticated original stock or complete
+  cell-removal assessment. Upstream microbial involvement does not prove direct cell
+  attack during downstream leaching.
+- Feed mix and zinc-can accounting do not supply an unambiguous whole-cell denominator.
+  Liquid replacement, washing, sampling and deposits lack a closed metal mass balance.
+- Commercial-acid comparison lacks numerical series/uncertainty and complete chemical
+  matching. Molecular polythionate contribution and unlimited acid tolerance are not
+  established.
+- Abstract/body Mn extraction, Results/Conclusions product purity and final-pH conflicts
+  are unresolved in the source and explicitly retained. Calcined Mn2O3 does not prove
+  the untreated residue or deposit phase.
+- No battery-grade product, integrated yield, validated long-duration commercial deployment
+  or quantified economic/life-cycle advantage is demonstrated.
+- No separate SI was found within complete paper/official landing inventory; not a
+  universal absence claim. Search boundaries include hidden/ignored and followed symlinks,
+  with binary/unavailable-root limits.
+notes:
+- Reviewer authored smithsonite only; its independent scientific acceptance is outside
+  this review.
+- No record/history/dossier, Git or GitHub mutation was performed in this battery
+  review. An initial unsaved draft had an invalid owner repository short name; the
+  failed draft/receipt were retained, the owner was corrected to CultureBotAI/CMMMech,
+  and all unchanged scientific inputs were recaptured before the successful save.
+tags:
+- round58
+- independent
+- batteries
+- secondary-resource
+```

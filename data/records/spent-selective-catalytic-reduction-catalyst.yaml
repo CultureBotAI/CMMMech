@@ -1,0 +1,225 @@
+id: cmmmech:spent-selective-catalytic-reduction-catalyst
+name: Spent selective catalytic reduction catalyst
+material_kind: secondary_resource
+description: >-
+  Used vanadia-tungsta/titania catalysts from coal-fired power-plant flue-gas
+  denitrification, represented by separately characterized laboratory feeds.
+  Niu and colleagues studied an arsenic-contaminated honeycomb catalyst from
+  a Xinjiang plant; Su and colleagues separately studied gray and yellow
+  regions of three spent honeycomb catalysts, S3–S5. This manufactured,
+  heterogeneous secondary resource is distinct from refinery hydroprocessing,
+  fluid catalytic cracking and sulfuric-acid-production catalysts, pure
+  constituent oxides, mineral species and elemental vanadium or tungsten.
+  V2O5-WO3/TiO2 is the sources' catalyst formulation notation, not proof of
+  three separately quantified crystalline phases. Fresh catalysts S1–S2 in
+  Su's study are comparators, not spent-resource observations. No criticality
+  designation is inherited from the constituents.
+sources:
+  - id: niu2025
+    title: >-
+      Niu T, Xie X, Zhang X, Ma X, Feng F, Liu D and Tian B (2025).
+      Mild Extraction and Green Regeneration of Arsenic from Spent SCR
+      Catalysts. Nonferrous Metals (Extractive Metallurgy), issue 12:38–45.
+      DOI 10.20237/j.issn.1007-7545.2025.12.004. Complete official eight-page
+      Chinese-language article with English abstract; Methods 1.1–1.6,
+      Tables 1–7 and Figures 1–3. DOI resolves through the Chinese DOI
+      registration service; Crossref lookup returned 404.
+    url: https://doi.org/10.20237/j.issn.1007-7545.2025.12.004
+    accessed_on: '2026-10-12'
+  - id: niu2025_official
+    title: >-
+      Official journal landing page and linked complete original PDF for
+      Niu and colleagues (2025), article 526345ce1bab0e280b71bb99e0bb1f12.
+      Title, authors, DOI and 2 December 2025 publication date agree with
+      the registered citation; this is the same experiment, not another study.
+    url: https://mete.cbpt.cnki.net/portal/journal/portal/client/paper/526345ce1bab0e280b71bb99e0bb1f12
+    accessed_on: '2026-10-12'
+  - id: su2020
+    title: >-
+      Su Q, Yi X, Miao J, Chen Y, Chen J and Wang J (2020).
+      A Comparative Study in Vanadium and Tungsten Leaching from Various
+      Sources of SCR Catalysts with Local Difference. Sustainability
+      12(4):1499. DOI 10.3390/su12041499. Complete official twelve-page
+      PDF and XML; Methods 2.1–2.4, Figures 1–9 and Tables 1–4.
+      Spent-feed evidence is restricted to S3–S5.
+    url: https://doi.org/10.3390/su12041499
+    accessed_on: '2026-10-12'
+  - id: ncbi_atcc19377
+    title: >-
+      NCBI Taxonomy 637390, Acidithiobacillus thiooxidans ATCC 19377;
+      exact strain-labelled taxon checked 12 October 2026. This resolves
+      the designation reported by Niu2025; it is not independent
+      authentication or sequencing of that study's culture.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=637390&mode=Info
+    accessed_on: '2026-10-12'
+mechanisms:
+  - id: thiooxidans_bioacid_arsenic_removal
+    name: Extracellular bioacid leaching of arsenic before catalyst regeneration
+    process: bioleaching
+    description: >-
+      Acidic culture supernatant produced by source-reported Acidithiobacillus
+      thiooxidans ATCC 19377 leached arsenic from a ground spent SCR catalyst.
+      This demonstrates treatment by a microbial lixiviant after cell and
+      sulfur separation, not direct growing-cell attack on the catalyst.
+      Concentrating the supernatant improved arsenic removal in the tested
+      conditions. Subsequent vanadium/tungsten supplementation, drying and
+      calcination formed a separate regeneration stage before laboratory
+      NO-conversion tests. These results do not demonstrate isolated arsenic
+      recovery or an industrial regeneration operation.
+    context: >-
+      Niu2025 Methods 1.1–1.4: the Xinjiang coal-power-plant catalyst was ground
+      and sieved to at most 0.25 mm. A logarithmic-phase culture was inoculated
+      at 5% vol/vol into modified mineral medium with 20 g sulfur per liter,
+      initial pH 2.0–2.5, and grown at 32 +/- 1 degrees C and 150 rpm for
+      6–8 days until pH 0.8. Centrifugation at 7012 g for 10 minutes removed
+      cells and sulfur; the supernatant was designated Ats. C-Ats was prepared
+      by rotary evaporation from 1 liter to 500 mL, a twofold volume
+      concentration called single concentration in the source. Leaching used
+      100 mL liquid in 250 mL flasks. The selected C-Ats treatment used
+      5% mass/volume solids, initial pH 0.6, 50 degrees C, 150 rpm and 8 h.
+      The pH-adjustment reagent and independent verification of supernatant
+      sterility were not specified. Liquid samples were centrifuged and
+      filtered at 0.22 micrometers before ICP-OES. Source tables give means
+      +/- standard deviations, n=3; leaching percentages use initial feed
+      element inventory as denominator. No complete solids/liquids balance,
+      isolated metal product, detection limit for reported zero tungsten
+      loss or long-term reuse cycles were demonstrated.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+    evidence:
+      - source_ref: niu2025
+        supports: support
+        explanation: >-
+          Table 7 and section 2.3.5 report 81.63 +/- 2.51% arsenic leaching
+          for C-Ats versus 44.74 +/- 2.94% for Ats at the stated selected
+          conditions. Ats plus 1 g/L ascorbic acid gave 46.90 +/- 2.30%,
+          and Ats plus 1 g/L humic acid gave 45.57 +/- 3.10%; those small
+          differences alone do not establish separate reduction or chelation
+          mechanisms. All four entries report tungsten loss as zero, with
+          no assay detection limit. The claim of residual arsenic below
+          200 g/t is stated in the abstract and conclusion without a separate
+          residual-solid assay or solids mass balance being presented.
+      - source_ref: niu2025
+        supports: partial
+        explanation: >-
+          Table 2 and section 2.2 compare 8 h, 50 degrees C, 5% mass/volume
+          assays. Ats, sulfuric acid and oxalic acid started at pH 0.8;
+          the alkaline comparator was 2% NaOH. Arsenic leaching was
+          35.30 +/- 1.47%, 1.50 +/- 0.70%, 20.55 +/- 1.83% and
+          80.62 +/- 3.74%, respectively. Tungsten losses were reported as
+          zero, zero, 3.81 +/- 0.31% and 28.93 +/- 0.44%. Thus the alkaline
+          arm removed more arsenic but lost more tungsten; the abstract's
+          unqualified superiority claim for bioacid is not adopted. These
+          chemical comparators do not include uninoculated culture medium
+          processed and concentrated identically. They do not isolate the
+          contributions of acidity, medium constituents and metabolites.
+      - source_ref: niu2025
+        supports: partial
+        explanation: >-
+          Sections 2.2–2.3 propose thiol-containing microbial metabolites
+          attacking arsenic-oxygen bonds, citing earlier Niu2021 work.
+          This paper does not directly identify or quantify those metabolites
+          or demonstrate the proposed molecular reaction. Its explanation
+          that decreasing pH promotes thiol deprotonation is not adopted
+          as established chemistry. Tables 3–6 retain the condition dependence:
+          higher solids loading lowered extraction, while 65 degrees C and
+          10 h individually gave more extraction than the selected 50 degrees C
+          and 8 h conditions. The selected condition is not an unconstrained
+          maximum. Repeated 44.74% Ats means have different reported standard
+          deviations across Tables 3–7 and are not treated as a pooled estimate.
+      - source_ref: niu2025
+        supports: support
+        explanation: >-
+          Methods 1.5–1.6 and Figure 3 distinguish spent catalyst, spent
+          catalyst supplemented with V/W, and bioacid-treated catalyst
+          supplemented with V/W. The last arm reached source-reported
+          100% NO conversion at 300 degrees C in a fixed-bed test using
+          0.1 g of 40–60 mesh material, 100 mL/min total gas, 5% oxygen,
+          0.1% each NH3 and NO, and nitrogen balance. No bioacid-only
+          NO-conversion curve is supplied. The supplementation recipe omits
+          exact loading amounts and final calcination temperature; drying
+          was 110 degrees C for 6 h, followed by a 5 degrees C/min ramp and
+          3 h hold at the unspecified setpoint. Figure 2 shows anatase-like
+          diffraction patterns before and after treatment; missing V2O5/WO3
+          peaks do not establish quantitative phase purity. No independently
+          verified industrial reuse standard or field deployment is asserted.
+      - source_ref: niu2025
+        supports: context_only
+        explanation: >-
+          Table 1 identifies V, W, Ti, Ca, Fe and As in the studied feed and
+          reports arsenic as 986.7 +/- 2.1 g/t. The Ti(K), Ca(K) and W(K)
+          headings have an unexplained K designation under a common g/t
+          unit, including Ti(K) 664.3 +/- 2.3. Those ambiguous entries are
+          not converted into a normalized composition or reconciled by
+          assumption. The industrial origin of the feed does not establish
+          industrial use of the microbial treatment.
+      - source_ref: ncbi_atcc19377
+        supports: context_only
+        explanation: >-
+          The official entry resolves the exact ATCC 19377 taxon designation
+          used in Methods 1.2. It supplies identity context only; no genome
+          or independently authenticated experimental strain is inferred.
+  - id: alkaline_vanadium_tungsten_leaching
+    name: Chemical alkaline leaching of vanadium and tungsten from spent SCR regions
+    process: separation
+    description: >-
+      Sodium hydroxide transferred vanadium and tungsten from separately
+      prepared yellow and gray regions of spent SCR catalysts into solution.
+      The direction of the color-region difference was opposite for the two
+      elements: yellow regions gave more vanadium extraction and gray regions
+      more tungsten extraction. This is a separate abiotic laboratory study,
+      not a control arm of Niu2025 or evidence of microbial metal recovery.
+    context: >-
+      Su2020 Methods 2.1–2.3: only catalysts S3–S5 were spent; S1–S2 were
+      fresh. Deposited solids were removed with 0.5 MPa compressed air,
+      yellow and gray regions were manually separated, transition regions
+      discarded, and samples hammered, vibration-milled, dried and sieved
+      to less than 100 mesh. Methods specify 1.5 mol/L NaOH, 100 degrees C,
+      liquid/solid ratio 15 with no explicit unit, 900 rpm and 120 minutes
+      in a 50 mL Teflon tube in an oil bath; the conclusion instead states
+      240 minutes. That unresolved duration conflict prevents treating
+      either value as uniquely verified. Actual liquid volume and solid
+      mass are not given. Filtered leachates were analyzed by ICP-OES;
+      feed V/W inventories were corrected using wet digestion rather than
+      taken directly from XRF. Replicate counts and uncertainty for the
+      plotted extraction percentages were not supplied.
+    microbial: false
+    evidence:
+      - source_ref: su2020
+        supports: support
+        explanation: >-
+          Figures 2–3 and section 3.1: for spent S3, S4 and S5, yellow/gray
+          vanadium leaching percentages were 66.8/42.1, 68.8/40.0 and
+          67.7/49.0, respectively; tungsten percentages were 38.0/44.6,
+          52.6/57.3 and 44.7/53.2. These are feed-inventory-normalized
+          dissolved fractions, not product purity or isolated recovery
+          yields. Fresh S1–S2 results and the prior studies summarized in
+          Table 1 are not assigned to the spent-feed experiment.
+      - source_ref: su2020
+        supports: partial
+        explanation: >-
+          Table 2 gives oxide-equivalent bulk composition, not mineral-phase
+          fractions. Figure 4 identifies anatase diffraction and notes that
+          undetected V/W phases may be noncrystalline or below detection.
+          Figures 5–9 and Table 4 support associations with surface
+          composition, fitted V oxidation-state fractions and V-W-Ti
+          interactions. The proposed causal explanations for color-dependent
+          extraction were not independently isolated experimentally.
+          Different source feeds, surface sampling and preparation constrain
+          generalization. No downstream V/W product isolation or industrial
+          leaching campaign was reported.
+curation_history:
+  - timestamp: '2026-10-12T13:23:23Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Created a distinct spent SCR catalyst resource from complete official
+      Niu2025 and Su2020 originals. Separated microbial bioacid arsenic removal,
+      subsequent catalyst regeneration and abiotic spent-feed V/W extraction;
+      retained control, detection-limit, composition and duration conflicts.
+      Deferred unavailable earlier microbial originals. Independent review
+      is recorded separately.
+history_refs:
+  - history/records/spent-selective-catalytic-reduction-catalyst/2026-10-12T132257Z-codex-929b65.yaml

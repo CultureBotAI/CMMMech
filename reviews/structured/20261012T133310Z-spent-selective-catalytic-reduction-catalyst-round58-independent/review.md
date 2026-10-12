@@ -1,0 +1,519 @@
+# Independent scientific review of spent SCR catalyst
+
+- Review: 20261012T133310Z-spent-selective-catalytic-reduction-catalyst-round58-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-12T13:27:15.897796Z
+- Finished UTC: 2026-10-12T13:33:10.495343Z
+- Reviewer: Codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Exact record supports qualified microbial-supernatant arsenic leaching and separate chemical V/W extraction from distinct spent SCR feeds. Controls, stages, contradictions and deployment limits are retained. No corrective finding identified within this scope.
+
+## Scope And Provenance
+
+Entire final record/history/dossier/schema; complete8pageNiu and12pageSu originals/allfigures/tables, official identity, bounded notices/dedup and evidence/gate integrity.
+
+Selection: Assigned independent review of new spent SCR owner.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base b6014c43b8174904e80f71df22be2251a802b418.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:spent-selective-catalytic-reduction-catalyst | data/records/spent-selective-catalytic-reduction-catalyst.yaml | maintained | Spent selective catalytic reduction catalyst |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named validation | passed | True | cmmmech:spent-selective-catalytic-reduction-catalyst | Reviewer actually executed1record/0failures. |
+| Exact input and raw evidence verification | passed | True | cmmmech:spent-selective-catalytic-reduction-catalyst | Reviewer executed retained script;42raw+10receipt+5input hashes verified. |
+| Parent cohort batch | passed | True | cmmmech:spent-selective-catalytic-reduction-catalyst | Completed parent execution; terminal and raw log hash independently verified. |
+| Parent cohort nonempty | passed | True | cmmmech:spent-selective-catalytic-reduction-catalyst | Completed parent execution; terminal and raw log hash independently verified. |
+| Parent cohort history | passed | True | cmmmech:spent-selective-catalytic-reduction-catalyst | Completed parent execution; terminal and raw log hash independently verified. |
+| Parent cohort render-check | passed | True | cmmmech:spent-selective-catalytic-reduction-catalyst | Completed parent execution; terminal and raw log hash independently verified. |
+
+## Scientific And Domain Assessments
+
+### Process-defined secondary resource
+
+identity: supported. Targets: cmmmech:spent-selective-catalytic-reduction-catalyst.
+
+Spent SCR catalyst is separated from other catalyst owners, constituent elements/oxides and mineral species; manufactured heterogeneous feed is not a mineral. No criticality is inherited.
+
+### Microbial lixiviant with qualified controls
+
+evidence: supported. Targets: cmmmech:spent-selective-catalytic-reduction-catalyst.
+
+Record correctly describes centrifuged culture supernatant, not direct living-cell attack. Twofold volume concentration and laboratory leaching conditions are accurately retained.
+
+### Treatment stages and source inconsistencies
+
+evidence: supported. Targets: cmmmech:spent-selective-catalytic-reduction-catalyst.
+
+Source thiol deprotonation rationale, abstract superiority and industrial rhetoric are not promoted into facts. Table1 K labels, repeated means/differentSD and selected rather than absolute maximum conditions are preserved.
+
+### Separate abiotic V/W experiment
+
+evidence: supported. Targets: cmmmech:spent-selective-catalytic-reduction-catalyst.
+
+Only spent S3–S5 extraction percentages are admitted. Fresh arms, literature Table1, phase fractions and mechanistic surface-fit causality are not conflated.
+
+### Actual history and exact scientific scope
+
+provenance: supported. Targets: cmmmech:spent-selective-catalytic-reduction-catalyst.
+
+CREATE sidecar and distinct inline event describe actual new record. Full originals and relevant figures checked; earlier Wang2018/Niu2021 were transparently deferred. No required record claim depends on their inaccessible originals.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | /private/tmp/CMMMech-expansion-round58-20261012/data/records/spent-selective-catalytic-reduction-catalyst.yaml; Complete native-inspected input | supports | Read final maintained record, canonical history, paired research dossier and schema. Exact hashes rechecked before saving. |
+| history | /private/tmp/CMMMech-expansion-round58-20261012/history/records/spent-selective-catalytic-reduction-catalyst/2026-10-12T132257Z-codex-929b65.yaml; Complete native-inspected input | supports | Read final maintained record, canonical history, paired research dossier and schema. Exact hashes rechecked before saving. |
+| dossier_md | /private/tmp/CMMMech-expansion-round58-20261012/research/sources/round58-scr/20261012T132601Z-source-investigation.json; Complete native-inspected input | supports | Read final maintained record, canonical history, paired research dossier and schema. Exact hashes rechecked before saving. |
+| dossier_json | /private/tmp/CMMMech-expansion-round58-20261012/research/sources/round58-scr/20261012T132601Z-source-investigation.md; Complete native-inspected input | supports | Read final maintained record, canonical history, paired research dossier and schema. Exact hashes rechecked before saving. |
+| schema | /private/tmp/CMMMech-expansion-round58-20261012/src/cmmmech/schema/cmmmech.yaml; Complete native-inspected input | supports | Read final maintained record, canonical history, paired research dossier and schema. Exact hashes rechecked before saving. |
+| niu | /private/tmp/cmm-round58-scr-research/raw/niu2025-preview; Complete official eight-page article, printed38–45; all7tables,3figures and equations; Methods1.1–1.6, Results2.1–2.4 | supports | Independently read complete Chinese-language original and English abstract; personally inspected all eight original-page renders. Verified culture preparation, centrifugation, concentration, assay denominator and uncertainty, acid/alkali tradeoff and post-leach supplementation/calcination stage. |
+| su | /private/tmp/cmm-round58-scr-research/raw/su2020-primary.pdf; Complete official12-page article; all9figures,4tables, equation1; Methods2.1–2.4, Results3.1–3.4 and conclusion | supports | Independently inspected all12original-page renders and read complete methods/results/graphics. Spent S3–S5 separated from fresh S1–S2. Confirmed dissolved percentages and120/240-minute conflict, phase non-detection and fitted surface-state limits. |
+| taxon | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=637390&amp;mode=Info; Official NCBI entry freshly opened12October2026; retained curator HTML independently read | supports | NCBI637390 resolves Acidithiobacillus thiooxidans ATCC19377. This validates the source-reported designation, not experimental stock authentication or independent culture sequencing. |
+| search | /private/tmp/cmm-round58-scr-review-web.json; Actual two exact-DOI correction/retraction/erratum queries and official taxon opening | supports | Inspected returned primary publisher/original results, no affecting notice identified within these results; this is not universal notice clearance. Curator Chinese DOI resolution/landing and Su Crossref/XML additionally read. |
+| integrity | /private/tmp/cmm-round58-scr-review-integrity.json; Independent verification of42raw files,10receipts,5native inputs and actual rg search | supports | All hashes matched. Current/original scientific roots searched hidden/ignored-inclusive with symlinks followed; only new SCR record/dossier/history matched exact experiment/owner patterns. Earlier cited-root search receipts reviewed with their limits. |
+| named | /private/tmp/cmm-round58-scr-review-named.log; Actual reviewer named command terminal0 | supports | One current record checked; zero failures. |
+| cohort | /private/tmp/cmm-round58-final-terminal.json; Actual completed parent four-command batch receipt and hashed logs | supports | Every exit code is0 and every referenced log hash independently verified; no invented rerun. |
+
+## Limits And Additional Notes
+
+- No experimental replication, stock authentication, metabolite identification or independently verified industrial reuse standard.
+- No processed-medium control, quantifiedW reporting limit, complete leaching massbalance or industrial recovery demonstration; these remain explicit in record.
+- Niu Table1Kunits,exact regenerationloadings/finalcalcinationtemperature and residual-solid assay unresolved;Su120/240minute discrepancy unresolved.
+- No supplement callout found in complete admitted originals/officiallanding/XML within recorded scope; no universal absence claim. Earlier Wang2018/Niu2021 originals remain unavailable and unadmitted.
+- Bounded notice and text searches include hidden/ignored/followed relevant scientific roots; curator unavailable/size/binary limits retained.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261012T133310Z-spent-selective-catalytic-reduction-catalyst-round58-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of spent SCR catalyst
+started_at: '2026-10-12T13:27:15.897796Z'
+finished_at: '2026-10-12T13:33:10.495343Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: round43_hardmetal authored target/history/dossier. Root captured
+    native inputs before judgment and independently checked both complete originals,
+    all original pages/graphics, identity, controls and limits. Root did not edit
+    the reviewed record.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Exact record supports qualified microbial-supernatant arsenic leaching and
+  separate chemical V/W extraction from distinct spent SCR feeds. Controls, stages,
+  contradictions and deployment limits are retained. No corrective finding identified
+  within this scope.
+source:
+  git_revision: b6014c43b8174904e80f71df22be2251a802b418
+  state: working_tree
+  inputs:
+  - path: data/records/spent-selective-catalytic-reduction-catalyst.yaml
+    sha256: 8afd57586e305184911ec6fdadc8f6cee8609389e40bf29912a95e1f84ac397f
+    role: target
+  - path: history/records/spent-selective-catalytic-reduction-catalyst/2026-10-12T132257Z-codex-929b65.yaml
+    sha256: ff9e46b75faea93fb69332f29fafdb74b617d2e00b8ed5e9159930513b98c2a6
+    role: context
+  - path: research/sources/round58-scr/20261012T132601Z-source-investigation.json
+    sha256: 06594f9b992bac78d90688a61c40ae0fdffbd27870b3052c22752e8d6de76636
+    role: context
+  - path: research/sources/round58-scr/20261012T132601Z-source-investigation.md
+    sha256: 342f0e0470c9a802ca33d9f37cb56ba42956e91b2932d13196d8e39f344bff59
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:spent-selective-catalytic-reduction-catalyst
+  path: data/records/spent-selective-catalytic-reduction-catalyst.yaml
+  label: Spent selective catalytic reduction catalyst
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/spent-selective-catalytic-reduction-catalyst.yaml
+    role: maintained_record
+scope:
+  description: Entire final record/history/dossier/schema; complete8pageNiu and12pageSu
+    originals/allfigures/tables, official identity, bounded notices/dedup and evidence/gate
+    integrity.
+  selection: Assigned independent review of new spent SCR owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:spent-selective-catalytic-reduction-catalyst
+checks:
+- check_id: named
+  name: Independent named validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 PYTHONDONTWRITEBYTECODE=1
+    uv run --locked cmmmech validate data/records/spent-selective-catalytic-reduction-catalyst.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-selective-catalytic-reduction-catalyst
+  summary: Reviewer actually executed1record/0failures.
+- check_id: integrity
+  name: Exact input and raw evidence verification
+  command: python /private/tmp/cmm-round58-scr-review-integrity.py
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-selective-catalytic-reduction-catalyst
+  summary: Reviewer executed retained script;42raw+10receipt+5input hashes verified.
+- check_id: batch
+  name: Parent cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-selective-catalytic-reduction-catalyst
+  summary: Completed parent execution; terminal and raw log hash independently verified.
+- check_id: nonempty
+  name: Parent cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-selective-catalytic-reduction-catalyst
+  summary: Completed parent execution; terminal and raw log hash independently verified.
+- check_id: history
+  name: Parent cohort history
+  command: uv run --locked cmmmech validate-history --base b6014c43b8174904e80f71df22be2251a802b418
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-selective-catalytic-reduction-catalyst
+  summary: Completed parent execution; terminal and raw log hash independently verified.
+- check_id: render_check
+  name: Parent cohort render-check
+  command: just render-check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-selective-catalytic-reduction-catalyst
+  summary: Completed parent execution; terminal and raw log hash independently verified.
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: /private/tmp/CMMMech-expansion-round58-20261012/data/records/spent-selective-catalytic-reduction-catalyst.yaml
+  locator: Complete native-inspected input
+  accessed_at: '2026-10-12T13:33:10.495343Z'
+  support: supports
+  summary: Read final maintained record, canonical history, paired research dossier
+    and schema. Exact hashes rechecked before saving.
+  snapshot_sha256: 8afd57586e305184911ec6fdadc8f6cee8609389e40bf29912a95e1f84ac397f
+- evidence_id: history
+  kind: record_content
+  reference: /private/tmp/CMMMech-expansion-round58-20261012/history/records/spent-selective-catalytic-reduction-catalyst/2026-10-12T132257Z-codex-929b65.yaml
+  locator: Complete native-inspected input
+  accessed_at: '2026-10-12T13:33:10.495343Z'
+  support: supports
+  summary: Read final maintained record, canonical history, paired research dossier
+    and schema. Exact hashes rechecked before saving.
+  snapshot_sha256: ff9e46b75faea93fb69332f29fafdb74b617d2e00b8ed5e9159930513b98c2a6
+- evidence_id: dossier_md
+  kind: record_content
+  reference: /private/tmp/CMMMech-expansion-round58-20261012/research/sources/round58-scr/20261012T132601Z-source-investigation.json
+  locator: Complete native-inspected input
+  accessed_at: '2026-10-12T13:33:10.495343Z'
+  support: supports
+  summary: Read final maintained record, canonical history, paired research dossier
+    and schema. Exact hashes rechecked before saving.
+  snapshot_sha256: 06594f9b992bac78d90688a61c40ae0fdffbd27870b3052c22752e8d6de76636
+- evidence_id: dossier_json
+  kind: record_content
+  reference: /private/tmp/CMMMech-expansion-round58-20261012/research/sources/round58-scr/20261012T132601Z-source-investigation.md
+  locator: Complete native-inspected input
+  accessed_at: '2026-10-12T13:33:10.495343Z'
+  support: supports
+  summary: Read final maintained record, canonical history, paired research dossier
+    and schema. Exact hashes rechecked before saving.
+  snapshot_sha256: 342f0e0470c9a802ca33d9f37cb56ba42956e91b2932d13196d8e39f344bff59
+- evidence_id: schema
+  kind: record_content
+  reference: /private/tmp/CMMMech-expansion-round58-20261012/src/cmmmech/schema/cmmmech.yaml
+  locator: Complete native-inspected input
+  accessed_at: '2026-10-12T13:33:10.495343Z'
+  support: supports
+  summary: Read final maintained record, canonical history, paired research dossier
+    and schema. Exact hashes rechecked before saving.
+  snapshot_sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+- evidence_id: niu
+  kind: primary_source
+  reference: /private/tmp/cmm-round58-scr-research/raw/niu2025-preview
+  locator: Complete official eight-page article, printed38–45; all7tables,3figures
+    and equations; Methods1.1–1.6, Results2.1–2.4
+  accessed_at: '2026-10-12T13:33:10.495343Z'
+  support: supports
+  summary: Independently read complete Chinese-language original and English abstract;
+    personally inspected all eight original-page renders. Verified culture preparation,
+    centrifugation, concentration, assay denominator and uncertainty, acid/alkali
+    tradeoff and post-leach supplementation/calcination stage.
+  snapshot_sha256: ab167049330c8ab37ce945b86365893dc5e03fb1026052c3d3f8af599d7ce2e9
+- evidence_id: su
+  kind: primary_source
+  reference: /private/tmp/cmm-round58-scr-research/raw/su2020-primary.pdf
+  locator: Complete official12-page article; all9figures,4tables, equation1; Methods2.1–2.4,
+    Results3.1–3.4 and conclusion
+  accessed_at: '2026-10-12T13:33:10.495343Z'
+  support: supports
+  summary: Independently inspected all12original-page renders and read complete methods/results/graphics.
+    Spent S3–S5 separated from fresh S1–S2. Confirmed dissolved percentages and120/240-minute
+    conflict, phase non-detection and fitted surface-state limits.
+  snapshot_sha256: 4b407a10e74ac886202a790c68c52e509f39ba1d773b47a4974aa620867c8c7d
+- evidence_id: taxon
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=637390&mode=Info
+  locator: Official NCBI entry freshly opened12October2026; retained curator HTML
+    independently read
+  accessed_at: '2026-10-12T13:33:10.495343Z'
+  support: supports
+  summary: NCBI637390 resolves Acidithiobacillus thiooxidans ATCC19377. This validates
+    the source-reported designation, not experimental stock authentication or independent
+    culture sequencing.
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round58-scr-review-web.json
+  locator: Actual two exact-DOI correction/retraction/erratum queries and official
+    taxon opening
+  accessed_at: '2026-10-12T13:33:10.495343Z'
+  support: supports
+  summary: Inspected returned primary publisher/original results, no affecting notice
+    identified within these results; this is not universal notice clearance. Curator
+    Chinese DOI resolution/landing and Su Crossref/XML additionally read.
+  snapshot_sha256: a3db9086f61c6bb542c14ee44a3efb80c96114d3f17c3036c7d12c3ac280f7fa
+  search_scope: 'Queries: "10.20237/j.issn.1007-7545.2025.12.004" correction OR erratum
+    OR retraction; "10.3390/su12041499" correction OR retraction OR erratum. One returned
+    result set each; no exhaustive pagination.'
+- evidence_id: integrity
+  kind: validation
+  reference: /private/tmp/cmm-round58-scr-review-integrity.json
+  locator: Independent verification of42raw files,10receipts,5native inputs and actual
+    rg search
+  accessed_at: '2026-10-12T13:33:10.495343Z'
+  support: supports
+  summary: All hashes matched. Current/original scientific roots searched hidden/ignored-inclusive
+    with symlinks followed; only new SCR record/dossier/history matched exact experiment/owner
+    patterns. Earlier cited-root search receipts reviewed with their limits.
+  snapshot_sha256: 5232d6d176fdb0b2dc16ac5d1fd094ddfb60b4140e5949514868d217d4a87fe8
+  search_scope: Eight current/original data/records,research,reviews,history roots
+    independently searched. Curator193raw-root search read but not rerun wholesale.
+    Nine unavailable roots,14files over16MB, binary semantics and machine-wide search
+    remain excluded.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round58-scr-review-named.log
+  locator: Actual reviewer named command terminal0
+  accessed_at: '2026-10-12T13:33:10.495343Z'
+  support: supports
+  summary: One current record checked; zero failures.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: cohort
+  kind: validation
+  reference: /private/tmp/cmm-round58-final-terminal.json
+  locator: Actual completed parent four-command batch receipt and hashed logs
+  accessed_at: '2026-10-12T13:33:10.495343Z'
+  support: supports
+  summary: Every exit code is0 and every referenced log hash independently verified;
+    no invented rerun.
+  snapshot_sha256: 51a83e37cc6acd134e3a2f8aa0a0fefd08f1917367d8673b442170c7e1e6e13c
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Process-defined secondary resource
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-selective-catalytic-reduction-catalyst
+  evidence_ids:
+  - record
+  - niu
+  - su
+  - integrity
+  summary: Spent SCR catalyst is separated from other catalyst owners, constituent
+    elements/oxides and mineral species; manufactured heterogeneous feed is not a
+    mineral. No criticality is inherited.
+  dimensions:
+  - name: material_form
+    value: Ground spent coal-power SCR honeycomb catalysts
+    definition: Niu Xinjiang feed versus separate Su spent S3–S5 feeds; no pooled
+      batch.
+    evidence_ids:
+    - niu
+    - su
+  - name: criticality
+    value: No claim
+    definition: No jurisdiction/list/edition assertion is made from constituent V/W.
+    evidence_ids:
+    - record
+- assessment_id: bioacid
+  area: evidence
+  topic: Microbial lixiviant with qualified controls
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-selective-catalytic-reduction-catalyst
+  evidence_ids:
+  - record
+  - niu
+  - taxon
+  summary: Record correctly describes centrifuged culture supernatant, not direct
+    living-cell attack. Twofold volume concentration and laboratory leaching conditions
+    are accurately retained.
+  dimensions:
+  - name: organism
+    value: A. thiooxidans ATCC19377,NCBITaxon637390
+    definition: Source-reported strain designation, not independently authenticated
+      stock.
+    evidence_ids:
+    - niu
+    - taxon
+  - name: biomass_state
+    value: Cells and sulfur separated at7012g10min
+    definition: 32+/-1C150rpm6–8d culture; initialpH2.0–2.5 to0.8;5%inoculum;20g/L
+      sulfur. Sterility of separated supernatant unverified.
+    evidence_ids:
+    - niu
+  - name: assay
+    value: 100mL in250mL flask;5%mass/volume solids;initialpH0.6;50C150rpm8h
+    definition: Selected C-Ats assay after1Lto500mL concentration; pH-adjustment reagent
+      unresolved.
+    evidence_ids:
+    - niu
+  - name: controls
+    value: pH0.8 acid comparators and2%NaOH; no processed uninoculated medium
+    definition: Table2 alkali extracts moreAs with moreW loss; Table7 context differs.
+      No isolated metabolite mechanism.
+    evidence_ids:
+    - niu
+  - name: outcome
+    value: C-Ats81.63+/-2.51%As versus Ats44.74+/-2.94%,n3
+    definition: Source leachate concentration*volume/feed element inventory; no complete
+      balance/isolated product. Reported0W has unspecified detection limit.
+    evidence_ids:
+    - niu
+- assessment_id: regeneration
+  area: evidence
+  topic: Treatment stages and source inconsistencies
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-selective-catalytic-reduction-catalyst
+  evidence_ids:
+  - record
+  - niu
+  summary: Source thiol deprotonation rationale, abstract superiority and industrial
+    rhetoric are not promoted into facts. Table1 K labels, repeated means/differentSD
+    and selected rather than absolute maximum conditions are preserved.
+  dimensions:
+  - name: regeneration
+    value: Bioacid treatment plusV/W supplementation,drying,calcination
+    definition: Figure3 lacks bioacid-only NO test. Exact loading and final calcination
+      temperature not supplied.
+    evidence_ids:
+    - niu
+  - name: deployment
+    value: 0.1g laboratory fixed-bed test; source100%NO at300C
+    definition: Industrial feed origin does not establish industrial biological regeneration.
+      ResidualAs<200g/t lacks presented separate solids balance and is not independently
+      certified.
+    evidence_ids:
+    - niu
+- assessment_id: chemical
+  area: evidence
+  topic: Separate abiotic V/W experiment
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-selective-catalytic-reduction-catalyst
+  evidence_ids:
+  - record
+  - su
+  summary: Only spent S3–S5 extraction percentages are admitted. Fresh arms, literature
+    Table1, phase fractions and mechanistic surface-fit causality are not conflated.
+  dimensions:
+  - name: assay
+    value: 1.5mol/L NaOH100C,L/S15,900rpm,50mLTeflon tube
+    definition: L/Sunit and actualmass/volume not supplied; Methods120min conflicts
+      with conclusion240min.
+    evidence_ids:
+    - su
+  - name: outcome
+    value: Yellow regions higherV;gray regions higherW
+    definition: Source inventory-normalized dissolved fractions viaICP-OES and corrected
+      wet-digested feed; no product isolation or uncertainty reconstruction.
+    evidence_ids:
+    - su
+  - name: phase_and_causality
+    value: Anatase-like XRD;V/W phases not detected
+    definition: Non-detection may reflect amorphous/lowcontent;XPS fitted oxidation
+      states/FTIR/Raman associations do not isolate causal effect.
+    evidence_ids:
+    - su
+- assessment_id: provenance
+  area: provenance
+  topic: Actual history and exact scientific scope
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-selective-catalytic-reduction-catalyst
+  evidence_ids:
+  - history
+  - dossier_md
+  - dossier_json
+  - schema
+  - integrity
+  - named
+  - cohort
+  summary: CREATE sidecar and distinct inline event describe actual new record. Full
+    originals and relevant figures checked; earlier Wang2018/Niu2021 were transparently
+    deferred. No required record claim depends on their inaccessible originals.
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- No experimental replication, stock authentication, metabolite identification or
+  independently verified industrial reuse standard.
+- No processed-medium control, quantifiedW reporting limit, complete leaching massbalance
+  or industrial recovery demonstration; these remain explicit in record.
+- Niu Table1Kunits,exact regenerationloadings/finalcalcinationtemperature and residual-solid
+  assay unresolved;Su120/240minute discrepancy unresolved.
+- No supplement callout found in complete admitted originals/officiallanding/XML within
+  recorded scope; no universal absence claim. Earlier Wang2018/Niu2021 originals remain
+  unavailable and unadmitted.
+- Bounded notice and text searches include hidden/ignored/followed relevant scientific
+  roots; curator unavailable/size/binary limits retained.
+tags:
+- round58
+- independent
+- spent-scr-catalyst
+- secondary-resource
+```
