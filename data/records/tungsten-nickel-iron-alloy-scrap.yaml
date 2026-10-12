@@ -1,0 +1,127 @@
+id: cmmmech:tungsten-nickel-iron-alloy-scrap
+name: Tungsten-nickel-iron alloy scrap
+material_kind: secondary_resource
+description: >-
+  Discarded tungsten-nickel-iron heavy-alloy components, represented by
+  decommissioned projectile cores identified as VNZh in the Baranov study.
+  This manufactured secondary resource is distinct from elemental tungsten,
+  cemented tungsten carbide scrap, mining tailings and grinding-fluid sludge.
+  The reported feed composition describes the tested material, not every
+  VNZh grade or tungsten-alloy waste. No criticality designation, standardized
+  product specification or industrial deployment is inferred.
+sources:
+  - id: baranov2011-alloy-scrap
+    title: >-
+      Baranov G.A., Gavrish M.V. and Sanikovich D.D. (2011), Production of
+      nanosized powders during processing of waste based on tungsten-containing
+      alloys and investigation of their granulometric composition (translated
+      title). Visnyk NTUU KPI, Mechanical Engineering, No. 63, pp. 42-46.
+      Complete Russian original, Figures 1-9, and official repository item
+      123456789/6650. The repository confirms issue year 2011 and accession
+      date 2014-02-11; these are distinct dates. No DOI is asserted.
+    url: https://ela.kpi.ua/handle/123456789/6650
+    accessed_on: '2026-10-12'
+mechanisms:
+  - id: ferric_assisted_disintegration_and_powder_separation
+    name: Ferric-assisted disintegration and separation of tungsten-bearing powder
+    process: recovery
+    microbial: false
+    description: >-
+      The study describes mechanical fragment collisions and ferric-sulfate
+      attack on the nickel-iron matrix, followed by filtration of a fine
+      tungsten-bearing solid. The accepted mechanism here is the chemical
+      and mechanical separation. The source also discusses bacteria and
+      biological regeneration of spent solution, without establishing their
+      experimental contribution. The nonmicrobial classification does not
+      assert that the workflow was sterile or exclude possible microbial
+      involvement. Neither complete tungsten recovery nor phase-pure metal
+      powder is established.
+    context: >-
+      Pages 43-44 identify discarded VNZh cores containing reported
+      90.06 percent W, 6 percent Ni and 3.94 percent Fe. A separate reactor
+      processed VK8 cutting inserts reported as 92 percent WC and 8 percent
+      Co; the two feeds are not one mixed arm. The ferric-sulfate solution
+      and modified disintegrator without added grinding bodies are described,
+      but ferric concentration, pH, processing temperature, duration,
+      solid-to-liquid loading, rotation rate, vessel volume and replicated
+      processing runs are not supplied. Subsequent hot pressing and
+      microscopy prepare analytical specimens; their settings are not
+      processing conditions for the scrap-disintegration experiment.
+    evidence:
+      - source_ref: baranov2011-alloy-scrap
+        supports: support
+        explanation: >-
+          Figures 1-4 and pp. 43-44 identify the apparatus, starting scrap,
+          processing slurry, separated powder and spent liquid. The authors
+          assign the matrix-removal description and Figure 4 products to
+          the VNZh feed, including a green nickel-containing filtrate.
+          This supports the reported separation workflow, not a measured
+          dissolved-nickel concentration, isolated nickel product or whole-feed
+          mass balance. Color alone does not identify every dissolved species.
+      - source_ref: baranov2011-alloy-scrap
+        supports: partial
+        explanation: >-
+          Page 44 reports 99.95 percent tungsten in the powder from an
+          analysis by the Ukrgeolbudm testing laboratory. No assay method,
+          analytical denominator, impurity table, uncertainty, product mass
+          or phase-characterization trace accompanies that assertion.
+          It is retained as an incompletely documented composition claim,
+          not adopted as verified metal purity or tungsten recovery yield.
+      - source_ref: baranov2011-alloy-scrap
+        supports: partial
+        explanation: >-
+          Figures 5-9 concern scanning tunneling microscopy of two compacted
+          tungsten-powder specimens: one cold pressed and one subsequently
+          hot pressed at 500 degrees C under an unspecified inert gas.
+          The text reports a 10-ton pressing load and three-minute hold.
+          Filtering and surface-object segmentation precede the displayed
+          size distributions. These are pressed-surface morphological
+          observations, not direct size measurements of the loose recovered
+          powder or a measured yield of nanoparticles.
+      - source_ref: baranov2011-alloy-scrap
+        supports: partial
+        explanation: >-
+          The abstract gives a 7 nm to 1 micrometer range and 90 percent
+          below 400 nm, whereas the body reports 7 nm to 3 micrometers.
+          The conclusion describes principal ranges of 200-500 nm for the
+          hot-pressed specimen and 100-300 nm for the cold-pressed specimen.
+          The authors suggest recrystallization as an explanation for the
+          difference. These inconsistent and preparation-dependent summaries
+          are preserved without selecting a single powder distribution or
+          deriving a new percentage from Figure 9. The stated target scanning
+          resolution of 150 angstroms and image noise/filtering leave the
+          accuracy of the reported 7 nm lower bound unverified.
+      - source_ref: baranov2011-alloy-scrap
+        supports: context_only
+        explanation: >-
+          Page 43 describes the ferric solution as a habitat for source-named
+          Thiobacillus ferrooxidans, and p. 44 proposes restoration of spent
+          solution's oxidizing capacity using thionic bacteria. No strain,
+          authenticated stock, inoculum, culture abundance, iron-oxidation
+          series or tested regeneration cycle is supplied. No matched sterile
+          ferric, acid-only or mechanical-only comparison isolates biological
+          activity. This is insufficient to curate a demonstrated microbial
+          mechanism or transfer the later Chaika hardmetal study's organism,
+          conditions and outcomes into this experiment.
+      - source_ref: baranov2011-alloy-scrap
+        supports: partial
+        explanation: >-
+          The VK8 comparator receives a brief statement that cobalt chemistry
+          is analogous to nickel chemistry. The VNZh tungsten-content claim
+          and compacted-specimen images are not separately demonstrated VK8
+          results and are not assigned to cemented tungsten carbide scrap.
+          No measured cost, throughput, energy comparison or industrial
+          operation supports the paper's broader efficiency and application
+          claims.
+curation_history:
+  - timestamp: '2026-10-12T03:18:37Z'
+    curator: Codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Created the distinct W-Ni-Fe alloy scrap resource from the complete
+      2011 primary article and verified repository identity. Separated
+      demonstrated chemical/mechanical processing from proposed biological
+      regeneration, retained purity and pressed-surface size limitations,
+      and kept the separately processed VK8 comparator outside this owner.
+history_refs:
+  - history/records/tungsten-nickel-iron-alloy-scrap/2026-10-12T031901Z-codex-cb1e07.yaml
