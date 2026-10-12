@@ -1,0 +1,549 @@
+# Independent final scientific review of corrected anatase
+
+- Review: 20261012T070607Z-anatase-round49-science
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-12T07:02:53Z
+- Finished UTC: 2026-10-12T07:06:07Z
+- Reviewer: Codex /root/round43_hardmetal (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Full anatase scientific scope remains supported by independently inspected complete main/SI evidence. Corrected source locator now separates p6332prose21-1271 from originalFigure2e/S621-1272. Exact initialF1 resolved with immutable predecessor, independently verified correction, namedvalidation and actual corrected cohort gates. No new findings.
+
+## Scope And Provenance
+
+Whole corrected record, CREATE/EDIT, initial and successor paired dossiers, exact initial F1 lineage, schema, complete selected main/SI and current authority; independently verified unchanged whole-science scope plus precise correction.
+
+Selection: Assigned independent review of new anatase owner.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base b701555aa8b06a51f94a4d97bed7f3ebf96ab439.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:anatase | data/records/anatase.yaml | maintained | Anatase |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent corrected named validation | passed | True | cmmmech:anatase | Actually executed by reviewer after fresh corrected-state inspect:1checked0failed. LogSHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e |
+| Actual corrected cohort batch | passed | True | cmmmech:anatase | Parent executed and reviewer verified full log SHA256 2fe1617bd854b43526912421128536c98e72fe38cdb4ac12aa03a3cfa540ad06. Corrected corpus241records285histories;317tests passed,3skipped. No prospective execution claim. |
+| Actual corrected cohort nonempty | passed | True | cmmmech:anatase | Parent executed and reviewer verified full log SHA256 aeff9f2686f4db219ad0bd34a9674413afd78b3b66a6c881da6886438291e096. Corrected corpus241records285histories;317tests passed,3skipped. No prospective execution claim. |
+| Actual corrected cohort history | passed | True | cmmmech:anatase | Parent executed and reviewer verified full log SHA256 35fc9dea2cd6e9255875c1d7070f022ced09018f3a7e857938d5ad42b77821bd. Corrected corpus241records285histories;317tests passed,3skipped. No prospective execution claim. |
+| Actual corrected cohort render-check | passed | True | cmmmech:anatase | Parent executed and reviewer verified full log SHA256 be156b3acc20d39b6bad41632b10eb7ccfc2c8a7fdeaec3f6236fbc67831aea6. Corrected corpus241records285histories;317tests passed,3skipped. No prospective execution claim. |
+
+## Scientific And Domain Assessments
+
+### Distinct anatase mineral and manufactured counterpart
+
+identity: supported. Targets: cmmmech:anatase.
+
+Distinct TiO2species and syntheticreagent/cell-template context are explicit; no inheritedcriticality, naturalbiogenesis or recovery.
+
+### Biomass template and abiotic crystalline stage
+
+evidence: supported. Targets: cmmmech:anatase.
+
+37C largelyamorphous deposition and600C crystalline product are separated. R5/INPcontrol supports morphology, not microbialnecessity. Missing biomassdose, precursorstockconcentration, viability and massbalance remain explicit.
+
+### Powder-reference label attribution
+
+evidence: supported. Targets: cmmmech:anatase.
+
+OriginalFigure2e andS6 agree on21-1272; p6332prose says21-1271. Correctedrecord and successor dossier now accurately preserve that unresolved source discrepancy.
+
+### Append-only correction and exact finding resolution
+
+provenance: supported. Targets: cmmmech:anatase.
+
+Original CREATE/dossiers/review are unchanged; only locator sentence and actual appended provenance changed. Exact priorF1 is resolved; GitHubclosure/publication is not claimed.
+
+## Findings
+
+### F1: Anatase powder-card discrepancy misattributes the main figure label
+
+minor / resolved / confirmed; issue key: CMMMech.anatase.powder-card-figure-locator.
+
+Initial record and dossier incorrectly attributed21-1271 to mainFigure2e aswellasprose. Correctedrecord and append-only successor now accurately state p6332prose21-1271 versusFigure2e/S621-1272; genuine source disagreement and qualified phaseassignment remain. Noother scientific field changed.
+
+Disposition: Freshnativeinspect and independently repeated originalFigure2e/p6332/S6visualinspection confirm correction. Exact reverse-byte and structured comparisons preserve allother science and originalhistory/dossiers/review. Independentnamed1/0 and actualcorrectedbatch317/3,241records285histories,nonempty/history/render0 pass. This resolves exact initialF1; publication/issueclosure remain rootworkflow.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/anatase.yaml; All fields; mechanisms[0].evidence[1] powder-reference sentence | supports | Corrected full record independently inspected; precise prose-versus-graphic locator is now accurate, with all other scientific fields unchanged. |
+| history | history/records/anatase/2026-10-12T064814Z-codex-810f65.yaml; Actual CREATE and separate inline event | supports | History describes the creation scope and does not claim independent acceptance. |
+| dossier | research/sources/round49-ti-minerals/20261012T065018Z-source-investigation.md; Anatase section: MainFigure2/prose uses powder card21-1271 sentence | supports | Immutable initial Markdown contains the original F1 error; paired successor explicitly supersedes only that attribution. Original JSON does not repeat the incorrect sentence. |
+| original | https://doi.org/10.1039/C6SC02311H; Complete seven-page original, Figures1–7; page6332 prose versus Figure2e | supports | All main pages visually inspected. Prose says21-1271; original Figure2e says21-1272. The source itself retains a prose/graphic inconsistency. |
+| figure2e | /private/tmp/cmm-round49-ti-research/raw/anatase2016-c6sc02311h-f2.jpg; Original full-resolution Figure2e graph lower-right label | supports | Label unambiguously reads Anatase PDF21-1272. It does not read21-1271. |
+| supplement | /private/tmp/cmm-round49-ti-research/raw/anatase2016-cloud-SC-007-C6SC02311H-s001.pdf; Complete14pages, FiguresS1–S13 andTablesS1–S2; S6onpage7 | supports | All SI pages visually inspected. FigureS6 also says21-1272. Cell-pellet synthesis, 37/80Cincubation and600Ccalcination support separate biological-template and thermal stages; controls do not establish microbial necessity. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Current edition page10Anatase; definitions/terms independently inspected thisround | supports | TiO2,A,1962s.p.,France; the specialprocedure is not a unique approval accession. |
+| validation | /private/tmp/cmm-round49-ti-independent/source-check.json; Independent named validation and all119 raw artifact hash bindings | supports | Original pre-correction named2/0 and119rawhashverification receipt; final named result is separately referenced by correction_proof. |
+| dedup | /private/tmp/cmm-round49-ti-independent/dedup-receipt.json; Independent ignored-inclusive identity/experiment search | supports | Only the assigned new owner matches its exactID. Source/material distinctions retained. |
+| notices | /private/tmp/cmm-round49-ti-independent/web-notices.txt; Returned DOI/title/correction and NCBI562 queries on2026-10-12 | supports | No applicable correction/retraction appeared in the returned search sets; NCBI562 resolves toEscherichia coli species, not stock authentication. |
+| cohort_receipt | /private/tmp/cmm-round49-final-terminal.json; Four actual original-state terminal commands and verified log hashes | supports | Immutable actual original-state gates before correction:241records284histories. Final corrected-state required gates are separately referenced by corrected_gates. |
+| prior | reviews/structured/20261012T065628Z-anatase-round49-initial/review.yaml; Exact original occurrence F1, stable key CMMMech.anatase.powder-card-figure-locator | supports | Independent initial finding preserved unchanged; this successor explicitly resolves its exact occurrence. |
+| edit_history | history/records/anatase/2026-10-12T070029Z-codex-ac9983.yaml; Actual canonical EDIT event and issue156 | supports | EDIT identifies exact correction and preserves earlier CREATE; inlineevent is separate and actual. |
+| correction_md | research/sources/round49-ti-minerals/20261012T070237Z-anatase-locator-correction.md; Complete append-only correction dossier | supports | Precise graphic/prose distinction and superseded initial Markdown occurrence correctly stated; no new science acquisition claimed. |
+| correction_json | research/sources/round49-ti-minerals/20261012T070237Z-anatase-locator-correction.json; All source/context/validation/proof path and hash bindings | supports | All12 linked correction bindings verified independently; source originals unchanged. This hash belongs to this exact dossier, not the separate proof. |
+| correction_proof | /private/tmp/cmm-round49-ti-independent/anatase-independent-correction-proof.json; Independent structural and exact byte reversal; actual corrected named validation | supports | Independent comparison against preserved original reviewed bytes establishes only scientific locator sentence plus appended history changed. All119 original rawbindings reverified; named1/0. |
+| corrected_gates | /private/tmp/cmm-round49-corrected-terminal.json; All four actual corrected terminal commands and logs | supports | 317tests passed3skipped;241records285histories;required nonempty/history/render-check all0. Original gate receipt preserved. |
+
+## Limits And Additional Notes
+
+- The source prose/graphic reference-card discrepancy remains unresolved; neither cardID is independently adopted and no diffraction re-refinement is claimed.
+- No independent stock authentication or viability assay. INP-only/multipleR5 arms support morphology comparisons but do not establish metabolism or microbial necessity; matchedlive/killed andcellfreeprecursor controls are absent from inspectedstudy.
+- Record describes synthetic-reagent materials synthesis and abiotic thermalcrystallization, not naturalmineral extraction or deployment; no Ti recoveredmass/yield inferred.
+- 37Cmaterial is largelyamorphous;80Cweak broadfeature is authorinterpreted nuclei, weaker than600Cproductcharacterization. Proposed molecular intermediates remain interpretations.
+- Notice/dedupsearches bounded as declared; nine unavailablehistoricalroots and unextractedbinaries excluded.
+- Originaldossierwronglocator remains preserved ashistorical evidence and is explicitly superseded by datedcorrection. All7main/14SIpages were inspected in initialreview; exactcorrectedlocators and complete record/context were rechecked for thissuccessor.
+- No record, Git/GitHub or governance mutation by reviewer.
+- Both actual original-state and corrected-state terminalreceipts remain immutable. Correctedbytehash is pinned in freshnativeinspection.
+- Scientificdisposition resolves exactF1/issue156 evidence; no claim issueclosed orPRmerged.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261012T070607Z-anatase-round49-science
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent final scientific review of corrected anatase
+started_at: '2026-10-12T07:02:53Z'
+finished_at: '2026-10-12T07:06:07Z'
+reviewer:
+  identity: Codex /root/round43_hardmetal
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Peer /root/round27_packaging authored original record and correction/history/dossiers.
+    Reviewer authored separate baddeleyite only; independently saved initialF1, then
+    captured fresh corrected target/history/dossier/initial-review/schema inputs before
+    adjudicating correction. No target edits. All original main/SI pages had been
+    independently inspected; Figure2e,p6332andS6 were personally inspected again.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Full anatase scientific scope remains supported by independently inspected
+  complete main/SI evidence. Corrected source locator now separates p6332prose21-1271
+  from originalFigure2e/S621-1272. Exact initialF1 resolved with immutable predecessor,
+  independently verified correction, namedvalidation and actual corrected cohort gates.
+  No new findings.
+source:
+  git_revision: b701555aa8b06a51f94a4d97bed7f3ebf96ab439
+  state: working_tree
+  inputs:
+  - path: data/records/anatase.yaml
+    sha256: 51fd911e8ae158c798c86f59fb25d56689984d7a50a954d1b8e956704ba3bccb
+    role: target
+  - path: history/records/anatase/2026-10-12T064814Z-codex-810f65.yaml
+    sha256: 0235c06c755d2e23ed39210e179588216fc0585127be6af493cb6cacfaad6800
+    role: context
+  - path: history/records/anatase/2026-10-12T070029Z-codex-ac9983.yaml
+    sha256: e158d4b88e167bec4a214ab6afebc72f14615d698326799bc8fc71e62065b7ae
+    role: context
+  - path: research/sources/round49-ti-minerals/20261012T065018Z-source-investigation.json
+    sha256: cb591bbfda47b62ffa39fa1629c28e2a4ad88ca1c7a1bfc34e62e1668234f0ff
+    role: context
+  - path: research/sources/round49-ti-minerals/20261012T065018Z-source-investigation.md
+    sha256: 0777f05cacdeb9fd0ff916a8152e3b43511ee6929f3364eed5dd2ca83d0146e8
+    role: context
+  - path: research/sources/round49-ti-minerals/20261012T070237Z-anatase-locator-correction.json
+    sha256: e3fadeb3f0a7e5936a83193fcd4ce5c5b77b66f452145583c6ca3497cfe3fff5
+    role: context
+  - path: research/sources/round49-ti-minerals/20261012T070237Z-anatase-locator-correction.md
+    sha256: 7885d6ad69b85e22b77e1c8c2b39f2034eac63b4ca7c25d426a8910c6bed292d
+    role: context
+  - path: reviews/structured/20261012T065628Z-anatase-round49-initial/review.md
+    sha256: b2e8fe9e4b63b766f2b22fdda3c3886cb3938d078bfc78a1a0a5e9161164ddc6
+    role: context
+  - path: reviews/structured/20261012T065628Z-anatase-round49-initial/review.yaml
+    sha256: 04ae92ce8da93145582d786a455f9f28e12c72e2644c9b63662fa240063b6492
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:anatase
+  path: data/records/anatase.yaml
+  label: Anatase
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/anatase.yaml
+    role: maintained scientific record
+scope:
+  description: Whole corrected record, CREATE/EDIT, initial and successor paired dossiers,
+    exact initial F1 lineage, schema, complete selected main/SI and current authority;
+    independently verified unchanged whole-science scope plus precise correction.
+  selection: Assigned independent review of new anatase owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:anatase
+checks:
+- check_id: named
+  name: Independent corrected named validation
+  command: uv run --locked cmmmech validate data/records/anatase.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:anatase
+  summary: Actually executed by reviewer after fresh corrected-state inspect:1checked0failed.
+    LogSHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- check_id: batch
+  name: Actual corrected cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:anatase
+  summary: Parent executed and reviewer verified full log SHA256 2fe1617bd854b43526912421128536c98e72fe38cdb4ac12aa03a3cfa540ad06.
+    Corrected corpus241records285histories;317tests passed,3skipped. No prospective
+    execution claim.
+- check_id: nonempty
+  name: Actual corrected cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:anatase
+  summary: Parent executed and reviewer verified full log SHA256 aeff9f2686f4db219ad0bd34a9674413afd78b3b66a6c881da6886438291e096.
+    Corrected corpus241records285histories;317tests passed,3skipped. No prospective
+    execution claim.
+- check_id: history
+  name: Actual corrected cohort history
+  command: uv run --locked cmmmech validate-history --base b701555aa8b06a51f94a4d97bed7f3ebf96ab439
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:anatase
+  summary: Parent executed and reviewer verified full log SHA256 35fc9dea2cd6e9255875c1d7070f022ced09018f3a7e857938d5ad42b77821bd.
+    Corrected corpus241records285histories;317tests passed,3skipped. No prospective
+    execution claim.
+- check_id: render-check
+  name: Actual corrected cohort render-check
+  command: just render-check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:anatase
+  summary: Parent executed and reviewer verified full log SHA256 be156b3acc20d39b6bad41632b10eb7ccfc2c8a7fdeaec3f6236fbc67831aea6.
+    Corrected corpus241records285histories;317tests passed,3skipped. No prospective
+    execution claim.
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/anatase.yaml
+  locator: All fields; mechanisms[0].evidence[1] powder-reference sentence
+  accessed_at: '2026-10-12T07:06:07Z'
+  support: supports
+  summary: Corrected full record independently inspected; precise prose-versus-graphic
+    locator is now accurate, with all other scientific fields unchanged.
+  snapshot_sha256: 51fd911e8ae158c798c86f59fb25d56689984d7a50a954d1b8e956704ba3bccb
+- evidence_id: history
+  kind: record_content
+  reference: history/records/anatase/2026-10-12T064814Z-codex-810f65.yaml
+  locator: Actual CREATE and separate inline event
+  accessed_at: '2026-10-12T06:56:28Z'
+  support: supports
+  summary: History describes the creation scope and does not claim independent acceptance.
+  snapshot_sha256: 0235c06c755d2e23ed39210e179588216fc0585127be6af493cb6cacfaad6800
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round49-ti-minerals/20261012T065018Z-source-investigation.md
+  locator: 'Anatase section: MainFigure2/prose uses powder card21-1271 sentence'
+  accessed_at: '2026-10-12T06:56:28Z'
+  support: supports
+  summary: Immutable initial Markdown contains the original F1 error; paired successor
+    explicitly supersedes only that attribution. Original JSON does not repeat the
+    incorrect sentence.
+  snapshot_sha256: 0777f05cacdeb9fd0ff916a8152e3b43511ee6929f3364eed5dd2ca83d0146e8
+- evidence_id: original
+  kind: primary_source
+  reference: https://doi.org/10.1039/C6SC02311H
+  locator: Complete seven-page original, Figures1–7; page6332 prose versus Figure2e
+  accessed_at: '2026-10-12T06:56:28Z'
+  support: supports
+  summary: All main pages visually inspected. Prose says21-1271; original Figure2e
+    says21-1272. The source itself retains a prose/graphic inconsistency.
+  snapshot_sha256: e022ad627cb847c673dae3c31a86b2cd82a812c01ed8b57c444453e779c4c3e0
+- evidence_id: figure2e
+  kind: primary_source
+  reference: /private/tmp/cmm-round49-ti-research/raw/anatase2016-c6sc02311h-f2.jpg
+  locator: Original full-resolution Figure2e graph lower-right label
+  accessed_at: '2026-10-12T06:56:28Z'
+  support: supports
+  summary: Label unambiguously reads Anatase PDF21-1272. It does not read21-1271.
+  snapshot_sha256: 2001b6710b493f92705bdcd2522deabfaa305a8a79c7d6bf522d0760e57b0899
+- evidence_id: supplement
+  kind: primary_source
+  reference: /private/tmp/cmm-round49-ti-research/raw/anatase2016-cloud-SC-007-C6SC02311H-s001.pdf
+  locator: Complete14pages, FiguresS1–S13 andTablesS1–S2; S6onpage7
+  accessed_at: '2026-10-12T06:56:28Z'
+  support: supports
+  summary: All SI pages visually inspected. FigureS6 also says21-1272. Cell-pellet
+    synthesis, 37/80Cincubation and600Ccalcination support separate biological-template
+    and thermal stages; controls do not establish microbial necessity.
+  snapshot_sha256: 133e3d5066b86ccf51c9aac6cb9ff076dee0f3b851e1f5bf080d6d0722e8da20
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Current edition page10Anatase; definitions/terms independently inspected
+    thisround
+  accessed_at: '2026-10-12T06:56:28Z'
+  support: supports
+  summary: TiO2,A,1962s.p.,France; the specialprocedure is not a unique approval accession.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: validation
+  kind: validation
+  reference: /private/tmp/cmm-round49-ti-independent/source-check.json
+  locator: Independent named validation and all119 raw artifact hash bindings
+  accessed_at: '2026-10-12T06:56:28Z'
+  support: supports
+  summary: Original pre-correction named2/0 and119rawhashverification receipt; final
+    named result is separately referenced by correction_proof.
+  snapshot_sha256: e4bf9bdb2c266b645a2077037fa0e14c9cee9fcf17b886576172694514b056ae
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round49-ti-independent/dedup-receipt.json
+  locator: Independent ignored-inclusive identity/experiment search
+  accessed_at: '2026-10-12T06:56:28Z'
+  support: supports
+  summary: Only the assigned new owner matches its exactID. Source/material distinctions
+    retained.
+  snapshot_sha256: 8f854c3c97fe0499fa9a9675d95f2501d44d09397529ba7b82c4d5d35becb65e
+  search_scope: rg --no-ignore --hidden --follow across current/original records,research,reviews,history
+    plus180 existing cited rawroots;3802textfiles. Nine missing historicalroots and
+    unextractedbinaries excluded explicitly. Terms anatase,brookite,C6SC02311H,8b00213,INP.5R5,8115.*brookite.
+    No machine-wideabsence claim.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round49-ti-independent/web-notices.txt
+  locator: Returned DOI/title/correction and NCBI562 queries on2026-10-12
+  accessed_at: '2026-10-12T06:56:28Z'
+  support: supports
+  summary: No applicable correction/retraction appeared in the returned search sets;
+    NCBI562 resolves toEscherichia coli species, not stock authentication.
+  snapshot_sha256: d6f1f4b1f2c6a91d31674d0aaf09998df73eca4151cccb900d78605a05ca9a22
+  search_scope: 'First returned web result sets, no pagination: exact10.1039/C6SC02311H
+    and10.1021/acsearthspacechem.8b00213 with correction erratum retraction; exact
+    anatase title with control criticism; officialNCBI562 species lookup. Bounded
+    search, not proof of notice absence.'
+- evidence_id: cohort_receipt
+  kind: validation
+  reference: /private/tmp/cmm-round49-final-terminal.json
+  locator: Four actual original-state terminal commands and verified log hashes
+  accessed_at: '2026-10-12T06:56:28Z'
+  support: supports
+  summary: Immutable actual original-state gates before correction:241records284histories.
+    Final corrected-state required gates are separately referenced by corrected_gates.
+  snapshot_sha256: f4b7ce550db56904c8c1720dc9692d93cbb7dc471890f22f2be8b4f6c639f2d1
+- evidence_id: prior
+  kind: record_content
+  reference: reviews/structured/20261012T065628Z-anatase-round49-initial/review.yaml
+  locator: Exact original occurrence F1, stable key CMMMech.anatase.powder-card-figure-locator
+  accessed_at: '2026-10-12T07:06:07Z'
+  support: supports
+  summary: Independent initial finding preserved unchanged; this successor explicitly
+    resolves its exact occurrence.
+  snapshot_sha256: 04ae92ce8da93145582d786a455f9f28e12c72e2644c9b63662fa240063b6492
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/anatase/2026-10-12T070029Z-codex-ac9983.yaml
+  locator: Actual canonical EDIT event and issue156
+  accessed_at: '2026-10-12T07:06:07Z'
+  support: supports
+  summary: EDIT identifies exact correction and preserves earlier CREATE; inlineevent
+    is separate and actual.
+  snapshot_sha256: e158d4b88e167bec4a214ab6afebc72f14615d698326799bc8fc71e62065b7ae
+- evidence_id: correction_md
+  kind: record_content
+  reference: research/sources/round49-ti-minerals/20261012T070237Z-anatase-locator-correction.md
+  locator: Complete append-only correction dossier
+  accessed_at: '2026-10-12T07:06:07Z'
+  support: supports
+  summary: Precise graphic/prose distinction and superseded initial Markdown occurrence
+    correctly stated; no new science acquisition claimed.
+  snapshot_sha256: 7885d6ad69b85e22b77e1c8c2b39f2034eac63b4ca7c25d426a8910c6bed292d
+- evidence_id: correction_json
+  kind: record_content
+  reference: research/sources/round49-ti-minerals/20261012T070237Z-anatase-locator-correction.json
+  locator: All source/context/validation/proof path and hash bindings
+  accessed_at: '2026-10-12T07:06:07Z'
+  support: supports
+  summary: All12 linked correction bindings verified independently; source originals
+    unchanged. This hash belongs to this exact dossier, not the separate proof.
+  snapshot_sha256: e3fadeb3f0a7e5936a83193fcd4ce5c5b77b66f452145583c6ca3497cfe3fff5
+- evidence_id: correction_proof
+  kind: validation
+  reference: /private/tmp/cmm-round49-ti-independent/anatase-independent-correction-proof.json
+  locator: Independent structural and exact byte reversal; actual corrected named
+    validation
+  accessed_at: '2026-10-12T07:06:07Z'
+  support: supports
+  summary: Independent comparison against preserved original reviewed bytes establishes
+    only scientific locator sentence plus appended history changed. All119 original
+    rawbindings reverified; named1/0.
+  snapshot_sha256: 140b6a207352c41e832235f7f1031d60bf92d93636a8f775409e536e7cc5139d
+- evidence_id: corrected_gates
+  kind: validation
+  reference: /private/tmp/cmm-round49-corrected-terminal.json
+  locator: All four actual corrected terminal commands and logs
+  accessed_at: '2026-10-12T07:06:07Z'
+  support: supports
+  summary: 317tests passed3skipped;241records285histories;required nonempty/history/render-check
+    all0. Original gate receipt preserved.
+  snapshot_sha256: eec94ea01cab0d8689e764d5a56028364d6936928f98909f882cafeb7e352d19
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Distinct anatase mineral and manufactured counterpart
+  outcome: supported
+  target_ids:
+  - cmmmech:anatase
+  evidence_ids:
+  - ima
+  - original
+  - supplement
+  summary: Distinct TiO2species and syntheticreagent/cell-template context are explicit;
+    no inheritedcriticality, naturalbiogenesis or recovery.
+- assessment_id: mechanism
+  area: evidence
+  topic: Biomass template and abiotic crystalline stage
+  outcome: supported
+  target_ids:
+  - cmmmech:anatase
+  evidence_ids:
+  - original
+  - supplement
+  summary: 37C largelyamorphous deposition and600C crystalline product are separated.
+    R5/INPcontrol supports morphology, not microbialnecessity. Missing biomassdose,
+    precursorstockconcentration, viability and massbalance remain explicit.
+- assessment_id: locator
+  area: evidence
+  topic: Powder-reference label attribution
+  outcome: supported
+  target_ids:
+  - cmmmech:anatase
+  evidence_ids:
+  - record
+  - figure2e
+  - original
+  - supplement
+  - correction_md
+  - correction_proof
+  summary: OriginalFigure2e andS6 agree on21-1272; p6332prose says21-1271. Correctedrecord
+    and successor dossier now accurately preserve that unresolved source discrepancy.
+- assessment_id: history_preservation
+  area: provenance
+  topic: Append-only correction and exact finding resolution
+  outcome: supported
+  target_ids:
+  - cmmmech:anatase
+  evidence_ids:
+  - prior
+  - history
+  - edit_history
+  - correction_md
+  - correction_json
+  - correction_proof
+  - corrected_gates
+  summary: Original CREATE/dossiers/review are unchanged; only locator sentence and
+    actual appended provenance changed. Exact priorF1 is resolved; GitHubclosure/publication
+    is not claimed.
+findings:
+- finding_id: F1
+  issue_key: CMMMech.anatase.powder-card-figure-locator
+  category: evidence
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Anatase powder-card discrepancy misattributes the main figure label
+  description: Initial record and dossier incorrectly attributed21-1271 to mainFigure2e
+    aswellasprose. Correctedrecord and append-only successor now accurately state
+    p6332prose21-1271 versusFigure2e/S621-1272; genuine source disagreement and qualified
+    phaseassignment remain. Noother scientific field changed.
+  target_ids:
+  - cmmmech:anatase
+  field_paths:
+  - mechanisms[0].evidence[1].explanation
+  evidence_ids:
+  - record
+  - figure2e
+  - original
+  - supplement
+  - prior
+  - edit_history
+  - correction_md
+  - correction_json
+  - correction_proof
+  - corrected_gates
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/anatase.yaml
+    role: maintained scientific record
+  - repository: CultureBotAI/CMMMech
+    path: research/sources/round49-ti-minerals/20261012T065018Z-source-investigation.md
+    role: source dossier occurrence; preserve predecessor and append correction note
+  rule_id: primary-source-exact-locator
+  native_severity: minor
+  normalization_reason: Bounded attribution error; does not overturn the qualified
+    anatase identity or thermal-stage mechanism.
+  disposition_reason: Freshnativeinspect and independently repeated originalFigure2e/p6332/S6visualinspection
+    confirm correction. Exact reverse-byte and structured comparisons preserve allother
+    science and originalhistory/dossiers/review. Independentnamed1/0 and actualcorrectedbatch317/3,241records285histories,nonempty/history/render0
+    pass. This resolves exact initialF1; publication/issueclosure remain rootworkflow.
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261012T065628Z-anatase-round49-initial
+    finding_id: F1
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/156
+actions: []
+limitations:
+- The source prose/graphic reference-card discrepancy remains unresolved; neither
+  cardID is independently adopted and no diffraction re-refinement is claimed.
+- No independent stock authentication or viability assay. INP-only/multipleR5 arms
+  support morphology comparisons but do not establish metabolism or microbial necessity;
+  matchedlive/killed andcellfreeprecursor controls are absent from inspectedstudy.
+- Record describes synthetic-reagent materials synthesis and abiotic thermalcrystallization,
+  not naturalmineral extraction or deployment; no Ti recoveredmass/yield inferred.
+- 37Cmaterial is largelyamorphous;80Cweak broadfeature is authorinterpreted nuclei,
+  weaker than600Cproductcharacterization. Proposed molecular intermediates remain
+  interpretations.
+- Notice/dedupsearches bounded as declared; nine unavailablehistoricalroots and unextractedbinaries
+  excluded.
+- Originaldossierwronglocator remains preserved ashistorical evidence and is explicitly
+  superseded by datedcorrection. All7main/14SIpages were inspected in initialreview;
+  exactcorrectedlocators and complete record/context were rechecked for thissuccessor.
+notes:
+- No record, Git/GitHub or governance mutation by reviewer.
+- Both actual original-state and corrected-state terminalreceipts remain immutable.
+  Correctedbytehash is pinned in freshnativeinspection.
+- Scientificdisposition resolves exactF1/issue156 evidence; no claim issueclosed orPRmerged.
+tags:
+- round49
+- anatase
+- independent
+- science
+- F1-resolution
+```

@@ -1,0 +1,409 @@
+# Independent review of Yanomamite identity and natural specimen evidence
+
+- Review: 20261012T070024Z-yanomamite-round49-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-12T06:52:24.133415Z
+- Finished UTC: 2026-10-12T07:00:24.917069Z
+- Reviewer: Codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Distinct mineral identity and the retained natural-specimen context are supported, with analytical and inferred-origin limits preserved. No corrective finding in the assessed scope.
+
+## Scope And Provenance
+
+Entire maintained record, attached CREATE history and paired dossier; complete original text/graphics and authority identity.
+
+Selection: Independent assignment of a frozen owner curated by another agent.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base b701555aa8b06a51f94a4d97bed7f3ebf96ab439.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:yanomamite | data/records/yanomamite.yaml | maintained | Yanomamite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named validation | passed | True | cmmmech:yanomamite | Actual terminal result and log hash verified: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e. Checked 1 record(s); 0 failed. |
+| Observed cohort batch | passed | True | cmmmech:yanomamite | Actual terminal result and log hash verified: 1db1074bc810e47c3b4f21116276697120dd5cfc8dc480972774dd1780e36337. .... [ 22%]<br>........................................................................ [ 45%]<br>........................................................................ [ 67%]<br>.............................................................sss........ [ 90%]<br>................................                                         [100%]<br>317 passed, 3 skipped in 196.24s (0:03:16)<br>Checked 241 record(s); 0 failed.<br>Checked 284 history record(s); 0 error(s). |
+| Observed cohort nonempty | passed | True | cmmmech:yanomamite | Actual terminal result and log hash verified: aeff9f2686f4db219ad0bd34a9674413afd78b3b66a6c881da6886438291e096. Checked 241 record(s); 0 failed. |
+| Observed cohort history | passed | True | cmmmech:yanomamite | Actual terminal result and log hash verified: 4ce50a7436333c9293c0cb8e7553301f0889055e5e2a2627695ae752857da5dc. Checked 284 history record(s); 0 error(s). |
+| Observed cohort render-check | passed | True | cmmmech:yanomamite | Actual terminal result and log hash verified: be156b3acc20d39b6bad41632b10eb7ccfc2c8a7fdeaec3f6236fbc67831aea6. uv run python scripts/render_pages.py --check<br>pages/ is current |
+
+## Scientific And Domain Assessments
+
+### Distinct mineral owner and authority
+
+identity: supported. Targets: cmmmech:yanomamite.
+
+IMA:1990-052, approved Yanomamite, In(AsO4)(H2O)2; September2026 original row p237 matches.
+
+### Original specimen methods and graphics
+
+evidence: supported. Targets: cmmmech:yanomamite.
+
+Natural crystal chemistry and separate natural/synthetic diffraction support this mineral identity. Three selected single crystals retained scorodite, while selected powder showed no significant scorodite lines. Water is calculated; origin is explicitly speculative with both hydrothermal and supergene hypotheses. No culture or recovery experiment is described.
+
+### Criticality, biology and deployment boundaries
+
+scope: supported. Targets: cmmmech:yanomamite.
+
+No organism, microbial mechanism, criticality designation or extraction performance is inherited from a constituent or inferred occurrence. Quantitative specimen context remains source-qualified.
+
+### Independent exact-state record assessment
+
+provenance: supported. Targets: cmmmech:yanomamite.
+
+Root did not author this target. Exact source inputs, original graphics, source access, history and completed validation were checked; no corrective finding was identified.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/yanomamite.yaml; Entire exact frozen record | supports | All retained scientific fields, source locators, inline event and canonical CREATE reference assessed. |
+| primary | https://doi.org/10.1127/ejm/6/2/0245; Complete original pages245–254, Figures1–6 and Tables1–4 personally read and visually inspected; methods/impurities pp248–250 and alternative origins pp250–251,253 | supports | Natural crystal chemistry and separate natural/synthetic diffraction support this mineral identity. Three selected single crystals retained scorodite, while selected powder showed no significant scorodite lines. Water is calculated; origin is explicitly speculative with both hydrothermal and supergene hypotheses. No culture or recovery experiment is described. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Definitions/license pp1–2 and original species row personally viewed | supports | IMA:1990-052, approved Yanomamite, In(AsO4)(H2O)2; September2026 original row p237 matches. |
+| handbook | https://handbookofmineralogy.org/pdfs/yanomamite.pdf; Complete one-page original entry personally viewed | supports | Secondary authority crosscheck of identity, natural occurrence, analytical qualifications and original citation; not an independent experiment. |
+| provenance | research/sources/round49-in-minerals/20261012T065308Z-source-investigation.json; Paired dossier, canonical CREATE history and five native inspected inputs | supports | Native capture preceded target assessment; expanded capture added the frozen paired dossier. All53 raw artifacts and24 supporting receipts have matching hashes. No DOI, measurement or actor history was invented. |
+| dedup | /private/tmp/cmm-round49-in-review-audit.json; Independent species/ID/DOI/source-filename search across current/original scientific trees and160 referenced raw roots | supports | Hits are the new owners/history/dossier, prior deferred leads, authority lists and contextual citations. No additional accepted owner or same primary experiment was identified in the bounded search. |
+| notices | /private/tmp/cmm-round49-in-review-web.json; Independent exact-DOI/title notice queries and IMA identity queries; Crossref/journal metadata read | supports | Returned results did not surface an affecting notice. Current identity was checked at the issuing authority and retained source claims checked in original pages; this is not an exhaustive absence claim. |
+| gates | /private/tmp/cmm-round49-final-terminal.json; Observed cohort checks completed2026-10-12T06:54:57Z | supports | All four observed cohort commands passed:317 tests,3 skipped;241 records,284 histories. These are the pre-anatase-correction cohort receipts; final corrected-batch publication validation is separate. This target remained unchanged. |
+
+## Limits And Additional Notes
+
+- Water and density estimates are not direct measurements; no numerical density claim is imported.
+- Scorodite impurities and method-specific powder observations prevent a universal purity claim.
+- Origin, indium source and transport are inferred; no geological mechanism is asserted as experimentally demonstrated.
+- Later2002 refinement and earlier occurrence works were not freshly assessed or counted as independent replication.
+- Hidden/ignored-inclusive duplicate and notice searches are bounded; missing historical roots, oversized files and unextracted binary content remain outside semantic coverage.
+- Validation proves structural compliance, not scientific truth; final publication checks follow any other-record corrections.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261012T070024Z-yanomamite-round49-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent review of Yanomamite identity and natural specimen evidence
+started_at: '2026-10-12T06:52:24.133415Z'
+finished_at: '2026-10-12T07:00:24.917069Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Target record, history and paired dossier authored by /root/round27_superalloy.
+    Root captured native inputs before assessment, independently read original text/figures/tables
+    and authority entries, verified hashes and ran named checks; root did not author
+    this target.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Distinct mineral identity and the retained natural-specimen context are supported,
+  with analytical and inferred-origin limits preserved. No corrective finding in the
+  assessed scope.
+source:
+  git_revision: b701555aa8b06a51f94a4d97bed7f3ebf96ab439
+  state: working_tree
+  inputs:
+  - path: data/records/yanomamite.yaml
+    sha256: 581f5ddcb8679302995baf331588601bde7b030416b0d2f50aa7ea25249e9e09
+    role: target
+  - path: history/records/yanomamite/2026-10-12T065000Z-codex-cfbf26.yaml
+    sha256: 11f440bc5898478e64613787ef61cfe818dedc0cd9a3cce6f87f8abe4c5fdcd8
+    role: context
+  - path: research/sources/round49-in-minerals/20261012T065308Z-source-investigation.json
+    sha256: 7ab9b46b85565676f5485889fdb6a6020afb6f3ac730bc81ff1bb0bbdf425350
+    role: context
+  - path: research/sources/round49-in-minerals/20261012T065308Z-source-investigation.md
+    sha256: 5ce879ecd51cc0788c90eccb7d0da7ea1f6d362e77e4d74d97346010b335af7f
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:yanomamite
+  path: data/records/yanomamite.yaml
+  label: Yanomamite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/yanomamite.yaml
+    role: scientific_record
+scope:
+  description: Entire maintained record, attached CREATE history and paired dossier;
+    complete original text/graphics and authority identity.
+  selection: Independent assignment of a frozen owner curated by another agent.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:yanomamite
+  exclusions:
+  - target: Unacquired later or earlier cited studies and raw diffraction re-refinement
+    reason: No claim from those sources or independent structural reproduction is
+      imported.
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/yanomamite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:yanomamite
+  summary: 'Actual terminal result and log hash verified: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e.
+    Checked 1 record(s); 0 failed.'
+- check_id: batch
+  name: Observed cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:yanomamite
+  summary: 'Actual terminal result and log hash verified: 1db1074bc810e47c3b4f21116276697120dd5cfc8dc480972774dd1780e36337.
+    .... [ 22%]
+
+    ........................................................................ [ 45%]
+
+    ........................................................................ [ 67%]
+
+    .............................................................sss........ [ 90%]
+
+    ................................                                         [100%]
+
+    317 passed, 3 skipped in 196.24s (0:03:16)
+
+    Checked 241 record(s); 0 failed.
+
+    Checked 284 history record(s); 0 error(s).'
+- check_id: nonempty
+  name: Observed cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:yanomamite
+  summary: 'Actual terminal result and log hash verified: aeff9f2686f4db219ad0bd34a9674413afd78b3b66a6c881da6886438291e096.
+    Checked 241 record(s); 0 failed.'
+- check_id: history
+  name: Observed cohort history
+  command: uv run --locked cmmmech validate-history --base b701555aa8b06a51f94a4d97bed7f3ebf96ab439
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:yanomamite
+  summary: 'Actual terminal result and log hash verified: 4ce50a7436333c9293c0cb8e7553301f0889055e5e2a2627695ae752857da5dc.
+    Checked 284 history record(s); 0 error(s).'
+- check_id: render-check
+  name: Observed cohort render-check
+  command: just render-check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:yanomamite
+  summary: 'Actual terminal result and log hash verified: be156b3acc20d39b6bad41632b10eb7ccfc2c8a7fdeaec3f6236fbc67831aea6.
+    uv run python scripts/render_pages.py --check
+
+    pages/ is current'
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/yanomamite.yaml
+  locator: Entire exact frozen record
+  accessed_at: '2026-10-12T07:00:24.917069Z'
+  support: supports
+  summary: All retained scientific fields, source locators, inline event and canonical
+    CREATE reference assessed.
+  snapshot_sha256: 581f5ddcb8679302995baf331588601bde7b030416b0d2f50aa7ea25249e9e09
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1127/ejm/6/2/0245
+  locator: Complete original pages245–254, Figures1–6 and Tables1–4 personally read
+    and visually inspected; methods/impurities pp248–250 and alternative origins pp250–251,253
+  accessed_at: '2026-10-12T07:00:24.917069Z'
+  support: supports
+  summary: Natural crystal chemistry and separate natural/synthetic diffraction support
+    this mineral identity. Three selected single crystals retained scorodite, while
+    selected powder showed no significant scorodite lines. Water is calculated; origin
+    is explicitly speculative with both hydrothermal and supergene hypotheses. No
+    culture or recovery experiment is described.
+  snapshot_sha256: 46cf9ce71181752f278262a8c0a8aaad25f7aae16d9a228056d18dd95d8d45bd
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions/license pp1–2 and original species row personally viewed
+  accessed_at: '2026-10-12T07:00:24.917069Z'
+  support: supports
+  summary: IMA:1990-052, approved Yanomamite, In(AsO4)(H2O)2; September2026 original
+    row p237 matches.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://handbookofmineralogy.org/pdfs/yanomamite.pdf
+  locator: Complete one-page original entry personally viewed
+  accessed_at: '2026-10-12T07:00:24.917069Z'
+  support: supports
+  summary: Secondary authority crosscheck of identity, natural occurrence, analytical
+    qualifications and original citation; not an independent experiment.
+  snapshot_sha256: 3eab914338f535b66f9445b1f3978612ff7761527df87a0e4e0f27892e06a673
+- evidence_id: provenance
+  kind: record_content
+  reference: research/sources/round49-in-minerals/20261012T065308Z-source-investigation.json
+  locator: Paired dossier, canonical CREATE history and five native inspected inputs
+  accessed_at: '2026-10-12T07:00:24.917069Z'
+  support: supports
+  summary: Native capture preceded target assessment; expanded capture added the frozen
+    paired dossier. All53 raw artifacts and24 supporting receipts have matching hashes.
+    No DOI, measurement or actor history was invented.
+  snapshot_sha256: 7ab9b46b85565676f5485889fdb6a6020afb6f3ac730bc81ff1bb0bbdf425350
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round49-in-review-audit.json
+  locator: Independent species/ID/DOI/source-filename search across current/original
+    scientific trees and160 referenced raw roots
+  accessed_at: '2026-10-12T07:00:24.917069Z'
+  support: supports
+  summary: Hits are the new owners/history/dossier, prior deferred leads, authority
+    lists and contextual citations. No additional accepted owner or same primary experiment
+    was identified in the bounded search.
+  snapshot_sha256: a012dea53b6694fa6d1e5bc4dbe2ecad88671e4543e9f5191f760ad4bd4f91e5
+  search_scope: Independent rg search includes hidden/ignored files and follows symlinks
+    in both scientific checkouts and 160 curator-referenced raw roots. Files over16MB
+    and unextracted binary content are excluded; missing roots retained from handoff.
+    No machine-wide absence claim.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round49-in-review-web.json
+  locator: Independent exact-DOI/title notice queries and IMA identity queries; Crossref/journal
+    metadata read
+  accessed_at: '2026-10-12T07:00:24.917069Z'
+  support: supports
+  summary: Returned results did not surface an affecting notice. Current identity
+    was checked at the issuing authority and retained source claims checked in original
+    pages; this is not an exhaustive absence claim.
+  snapshot_sha256: ae5048def4a8186844617e9326cd029d4982daceb304ff80d06d72768997a03e
+  search_scope: 2026-10-12 first returned web result sets for exact DOI correction/erratum/retraction,
+    Cadmoindite2004 correction/retraction and exact mineral/IMA queries; no exhaustive
+    pagination. Crossref relation metadata and official Russian journal bibliographic
+    page also read.
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round49-final-terminal.json
+  locator: Observed cohort checks completed2026-10-12T06:54:57Z
+  accessed_at: '2026-10-12T07:00:24.917069Z'
+  support: supports
+  summary: All four observed cohort commands passed:317 tests,3 skipped;241 records,284
+    histories. These are the pre-anatase-correction cohort receipts; final corrected-batch
+    publication validation is separate. This target remained unchanged.
+  snapshot_sha256: f4b7ce550db56904c8c1720dc9692d93cbb7dc471890f22f2be8b4f6c639f2d1
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Distinct mineral owner and authority
+  outcome: supported
+  target_ids:
+  - cmmmech:yanomamite
+  evidence_ids:
+  - record
+  - ima
+  - dedup
+  summary: IMA:1990-052, approved Yanomamite, In(AsO4)(H2O)2; September2026 original
+    row p237 matches.
+- assessment_id: evidence
+  area: evidence
+  topic: Original specimen methods and graphics
+  outcome: supported
+  target_ids:
+  - cmmmech:yanomamite
+  evidence_ids:
+  - primary
+  - handbook
+  summary: Natural crystal chemistry and separate natural/synthetic diffraction support
+    this mineral identity. Three selected single crystals retained scorodite, while
+    selected powder showed no significant scorodite lines. Water is calculated; origin
+    is explicitly speculative with both hydrothermal and supergene hypotheses. No
+    culture or recovery experiment is described.
+- assessment_id: scope
+  area: scope
+  topic: Criticality, biology and deployment boundaries
+  outcome: supported
+  target_ids:
+  - cmmmech:yanomamite
+  evidence_ids:
+  - record
+  - primary
+  summary: No organism, microbial mechanism, criticality designation or extraction
+    performance is inherited from a constituent or inferred occurrence. Quantitative
+    specimen context remains source-qualified.
+  dimensions:
+  - name: identity
+    value: Hydrated indium arsenate mineral species
+    definition: Ideal formula is not elemental indium, bulk greisen or a purity specification.
+    evidence_ids:
+    - record
+    - primary
+  - name: conditions
+    value: Natural Mangabeira specimens; separate synthetic comparator
+    definition: No organism, culture condition, microbial mechanism or industrial
+      deployment is asserted.
+    evidence_ids:
+    - record
+    - primary
+  - name: uncertainty
+    value: Calculated hydration and inferred geological origin
+    definition: The record preserves impurity, alternative-origin and transport limits.
+    evidence_ids:
+    - record
+    - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Independent exact-state record assessment
+  outcome: supported
+  target_ids:
+  - cmmmech:yanomamite
+  evidence_ids:
+  - provenance
+  - notices
+  - gates
+  summary: Root did not author this target. Exact source inputs, original graphics,
+    source access, history and completed validation were checked; no corrective finding
+    was identified.
+findings: []
+actions: []
+limitations:
+- Water and density estimates are not direct measurements; no numerical density claim
+  is imported.
+- Scorodite impurities and method-specific powder observations prevent a universal
+  purity claim.
+- Origin, indium source and transport are inferred; no geological mechanism is asserted
+  as experimentally demonstrated.
+- Later2002 refinement and earlier occurrence works were not freshly assessed or counted
+  as independent replication.
+- Hidden/ignored-inclusive duplicate and notice searches are bounded; missing historical
+  roots, oversized files and unextracted binary content remain outside semantic coverage.
+- Validation proves structural compliance, not scientific truth; final publication
+  checks follow any other-record corrections.
+```

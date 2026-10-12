@@ -8,7 +8,7 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 236 material records.
+The catalogue currently contains 241 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
@@ -248,6 +248,11 @@ The catalogue currently contains 236 material records.
 | [Stannite](data/records/stannite.yaml) | Natural mineral identity and qualified historical microbial leaching assays | Synthetic and natural feeds remain distinct; source condition and concentration ambiguities retained |
 | [Kësterite](data/records/kesterite.yaml) | Natural mineral characterization and synthetic-phase microbial assay | Phase identity and missing matched sterile comparison limit attribution; no recovered tin product |
 | [Tennantite-(In)](data/records/tennantite-in.yaml) | Approved mineral identity and complete natural-specimen characterization | Reused occurrence, calculated properties and source discrepancies; no microbial mechanism |
+| [Baddeleyite](data/records/baddeleyite.yaml) | Natural zirconium-oxide mineral identity and specimen chemistry | Geological origin remains inferred; no microbial mechanism or inherited criticality |
+| [Yanomamite](data/records/yanomamite.yaml) | Natural hydrated indium-arsenate identity and original characterization | Impurities, hydration estimates and inferred alteration remain qualified |
+| [Cadmoindite](data/records/cadmoindite.yaml) | Natural cadmium-indium sulfide identity and original fumarole characterization | Geological formation is inferred; no microbial recovery or deployment claim |
+| [Brookite](data/records/brookite.yaml) | Natural titanium-dioxide mineral identity and specimen structure | Distinct from rutile and anatase; no microbial mechanism asserted |
+| [Anatase](data/records/anatase.yaml) | Engineered bacterial templating followed by thermal crystallization | Calcination is required for the reported phase; no microbial titanium recovery claim |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -304,7 +309,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [forty-seventh expansion reviews](research/ingests/round47-20261012-publication.md),
 [forty-eighth expansion reviews](research/ingests/round48-20261012-publication.md),
 [Pages integration and refreshed validation](research/ingests/round48-20261012-integration.md),
-[remaining ingest priorities](research/ingests/round48-frontier-20261012.md), and
+[forty-ninth expansion reviews](research/ingests/round49-20261012-publication.md),
+[remaining ingest priorities](research/ingests/round49-frontier-20261012.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

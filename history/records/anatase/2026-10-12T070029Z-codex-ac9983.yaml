@@ -1,0 +1,27 @@
+history_version: 1
+target:
+  kind: record
+  slug: anatase
+  path: data/records/anatase.yaml
+session:
+  id: 2026-10-12T070029Z-codex-ac9983
+  timestamp: '2026-10-12T07:00:29Z'
+  actors:
+  - name: codex
+    type: ai_agent
+    model: GPT-6
+    agent_tool: codex
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Corrected the powder-reference locator: page 6332 prose cites 21-1271, while Figure
+    2e and Figure S6 both label 21-1272.'
+  details: Addresses independent finding F1 (CMMMech.anatase.powder-card-figure-locator) and
+    issue 156. Rechecked original Figure 2e, page 6332 prose and Supporting Figure S6. Preserves
+    the phase-assignment discrepancy and all other scientific claims. Original CREATE history,
+    source dossier and initial native review remain unchanged; a separate correction dossier
+    records the corrected state. Named and affected cohort validation and independent successor
+    disposition remain required.
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/156
