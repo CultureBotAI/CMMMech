@@ -1,0 +1,190 @@
+id: cmmmech:rhodochrosite
+name: Rhodochrosite
+material_kind: mineral
+description: >-
+  Rhodochrosite is the manganese carbonate mineral Mn(CO3). The September
+  2026 IMA-CNMNC list gives status A and the entry '1962 s.p.'; this special
+  procedure notation is not a numbered new-mineral accession. The Handbook
+  of Mineralogy places it in the calcite group and describes hydrothermal,
+  metamorphic, carbonatite and sedimentary occurrences. This species owner
+  is distinct from elemental manganese, dissolved Mn(II), mixed manganese
+  ore, kutnohorite and the synthetic colloidal Mn(IV) oxide used in the
+  experiment below. The curated mechanism concerns laboratory formation
+  of rhodochrosite during bacterial reduction of that oxide, not extraction
+  from a natural rhodochrosite feed. No manganese criticality designation,
+  isolated mineral recovery yield or industrial deployment is inherited.
+sources:
+  - id: ima_2026_09
+    title: >-
+      IMA-CNMNC. The New IMA List of Minerals, September 2026.
+      Definitions on PDF page 1 and Rhodochrosite row on page 185:
+      Mn(CO3), A, 1962 s.p. Original-description reference dated 1813.
+      Retained issuing-authority PDF re-inspected after fresh verification
+      that the issuing site's current list link identifies this edition.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-12'
+  - id: handbook_rhodochrosite
+    title: >-
+      Handbook of Mineralogy, Rhodochrosite, Mn2+CO3. Complete original
+      one-page datasheet, version 1, copyright 2001-2005: calcite-group
+      identity and natural-occurrence context. Its cell and powder-pattern
+      data are explicitly labelled synthetic.
+    url: https://handbookofmineralogy.org/pdfs/rhodochrosite.pdf
+    accessed_on: '2026-10-12'
+  - id: johnson2016
+    title: >-
+      Johnson JE, Savalia P, Davis R, Kocar BD, Webb SM, Nealson KH and
+      Fischer WW (2016). Real-Time Manganese Phase Dynamics during
+      Biological and Abiotic Manganese Oxide Reduction. Environmental
+      Science & Technology 50(8):4248-4258. DOI 10.1021/acs.est.5b04834.
+      Complete author-hosted typeset pre-pagination main, pages A-K:
+      methods C-D, Table 1, Figures 1-3, results E-H. Complete 16-page
+      original Supporting Information, Tables S1-S3 and Figures S1-S7,
+      especially control S1 and rhodochrosite XRD S4-S5. SI checksum
+      matches the institutional CaltechAUTHORS repository inventory.
+    url: https://doi.org/10.1021/acs.est.5b04834
+    accessed_on: '2026-10-12'
+  - id: ncbi_mr1
+    title: >-
+      NCBI Taxonomy, taxon 211586, Shewanella oneidensis MR-1,
+      strain-level entry. A name mapping for the reported MR-1 organism,
+      not independent authentication of the experimental inoculum.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586&mode=info
+    accessed_on: '2026-10-12'
+mechanisms:
+  - id: mn_oxide_reduction_associated_rhodochrosite_formation
+    name: Rhodochrosite formation during bacterial manganese oxide reduction
+    process: biomineralization
+    microbial: true
+    organisms:
+      - id: NCBITaxon:211586
+        label: Shewanella oneidensis MR-1
+    description: >-
+      Live MR-1 reduction of synthetic colloidal Mn(IV) oxide in
+      lactate-replete, low-phosphate medium was accompanied by formation
+      of crystalline rhodochrosite. Time-resolved Mn X-ray absorption
+      spectra and diffraction of collected solids support conversion
+      through reduced Mn species followed by carbonate precipitation.
+      Lactate oxidation supplying inorganic carbon and alkalinity is the
+      authors' mechanistic interpretation; inorganic carbon production
+      was not independently quantified here. The study does not establish
+      an enzyme-specific requirement, a unique electron-transfer route,
+      a cell-surface nucleation site or a universally biological origin
+      for rhodochrosite.
+    context: >-
+      A stirred 1 L modified M1 medium contained approximately 6.3 mM
+      freshly synthesized colloidal MnO2, 20 mM lactate and no added
+      phosphate for the carbonate-forming arm. The authors distinguish
+      this poorly ordered oxide from crystalline birnessite or pyrolusite.
+      Medium was deoxygenated with nitrogen for 45 min, adjusted to pH 8,
+      maintained under nitrogen and circulated through the XAS flow cell
+      at about 1 mL/s. MR-1 was grown aerobically in 1 L LB at 25-30
+      degrees C to OD600 about 1.2, centrifuged at 3000 rpm for 5 min,
+      resuspended in a small amount of LB, and added as 5-10 mL cell
+      paste after initial oxide spectra were acquired. That temperature
+      describes precultivation; a separate reaction temperature is not
+      specified. The final cell concentration, full modified-M1 recipe
+      and stock authentication are not supplied; the medium is adapted
+      from a cited cultivation reference. Inoculum-associated carryover
+      therefore also limits a literal phosphate-free interpretation.
+      High cell and oxide concentrations were chosen to complete beamline
+      experiments within about 12-14 h, rather than to reproduce natural
+      sediment conditions. Replicate experiments were performed, but no
+      uniform replicate count or pooled uncertainty is given for every
+      phase time course.
+    evidence:
+      - source_ref: johnson2016
+        supports: support
+        explanation: >-
+          Figure 2B and SI Figures S2, S4 and S5 support rhodochrosite
+          formation in the high-lactate, low-phosphate arm. S4 compares
+          the final solid with rhodochrosite, other carbonates and Mn
+          oxide standards; S5 shows the development of matching peaks
+          in sequentially collected solids. Samples were collected on
+          2 micrometre filters, air-dried and mostly measured by
+          synchrotron XRD 3-4 weeks later. The authors argue against
+          post-sampling oxidation, but do not provide an immediate
+          wet-solid XRD comparison. In-situ XAS complements this delayed
+          diffraction evidence. The description of rhodochrosite as the
+          sole crystalline product does not exclude amorphous material,
+          biomass, adsorbed Mn or dissolved Mn and is not proof of a
+          pure recovered mineral product.
+      - source_ref: johnson2016
+        supports: partial
+        explanation: >-
+          The final high-lactate XAS spectrum is fitted as 73%
+          rhodochrosite standard and 27% aqueous Mn(II) in the results;
+          Figure 2 summarizes this approximately as 75% and 25%.
+          The combined Rh+Mnaq spectrum is subsequently an internal
+          endmember, whose Table S2 contribution reaches 1 at t12.
+          That value is not 100% rhodochrosite or a gravimetric recovery
+          yield. Table S1 distinguishes the pure standard from this
+          internally measured mixture; reference selection and linear
+          combination fitting are model-dependent, with typical component
+          uncertainty about 10% and stated XAS sensitivity of roughly
+          5-10% of total Mn. The free or dissolved Mn interpretation
+          also has limits: the authors note that much of the Mn(II)
+          spectral signal may be associated with residual particles.
+      - source_ref: johnson2016
+        supports: support
+        explanation: >-
+          SI Figure S1 shows substantially unchanged Mn absorption
+          spectra for more than 5 h with colloidal oxide and 20 mM
+          lactate but no MR-1, supporting absence of detectable direct
+          lactate reduction or beam reduction over that interval.
+          This is a bounded no-cell control, not a complete-duration
+          kinetic comparison, a killed-cell assay or a matched
+          inorganic-carbon/pH precipitation control. No genetic or
+          inhibitor experiment resolves direct cellular electron transfer
+          versus soluble mediators in this study.
+      - source_ref: johnson2016
+        supports: partial
+        explanation: >-
+          Table 1 and Figures 2A and 2C demonstrate condition dependence.
+          With 4.3 mM added phosphate and 20 mM lactate, the principal
+          reduced product was a Mn(II)-phosphate phase, spectrally
+          similar but not identical to hureaulite, rather than the
+          rhodochrosite-forming arm. With no added phosphate but only
+          three additions of 0.5 mM lactate, residual Mn(IV) and a
+          feitknechtite-like Mn(III) component persisted alongside
+          Mn(II); no carbonate component was fitted in Table S2.
+          These observations do not support unconditional rhodochrosite
+          formation during bacterial Mn reduction or a uniquely identified
+          obligatory Mn(III) enzymatic intermediate.
+      - source_ref: johnson2016
+        supports: context_only
+        explanation: >-
+          Figure 3 examines distinct abiotic sulfide and ferrous-iron
+          reduction arms in the same base medium. Excess reductant
+          produced Mn(II)-dominated spectra without observed carbonate;
+          these arms lacked the inorganic carbon generated in the
+          biological interpretation. The paper explicitly recognizes
+          that carbonate-bearing abiotic systems could instead form
+          Mn carbonates. Its controls therefore do not establish
+          rhodochrosite as a unique biosignature. Iron-bearing precipitates
+          in the ferrous-iron arm, supported by SI Figures S6-S7, are
+          separate from the biological rhodochrosite product.
+      - source_ref: johnson2016
+        supports: context_only
+        explanation: >-
+          Table S3 reports supernatant Mn measured by ICP-MS in separate
+          replicate reactions after centrifugation and acid dilution.
+          Its low-phosphate replicate was substantially slower than the
+          beamline time course and extended to 24 h; pH is supplied to
+          aid comparison. These solution concentrations are not a
+          simultaneous phase mass balance or mineral recovery yield,
+          and ICP-MS alone does not distinguish free Mn(II) from other
+          Mn species. Main Figure 2B and SI Figure S2 also differ in
+          the year printed on one product trace, 11-26-15 versus
+          11-26-13; that label discrepancy is not silently used to
+          assign independent replicate identities or exact kinetics.
+curation_history:
+  - timestamp: '2026-10-12T14:02:46.669472Z'
+    curator: codex (GPT-6; codex)
+    action: create
+    summary: >-
+      Added authority-grounded rhodochrosite and qualified laboratory
+      formation during MR-1 manganese oxide reduction, preserving
+      phase-model, preparation, control and condition-dependent limits.
+history_refs:
+  - history/records/rhodochrosite/2026-10-12T140249Z-codex-1fba4c.yaml

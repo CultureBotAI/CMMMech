@@ -8,10 +8,14 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 270 material records.
+The catalogue currently contains 274 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Rhodochrosite](data/records/rhodochrosite.yaml) | MR-1-associated carbonate formation from synthetic Mn oxide | Phosphate/carbon conditions and abiotic controls constrain phase attribution |
+| [Spent nickel-cadmium batteries](data/records/spent-nickel-cadmium-batteries.yaml) | Acidophile-associated leaching of NiCd electrode powder | Comparable abiotic extraction and conflicting source descriptions remain explicit |
+| [Pyrite-roasting cinder](data/records/pyrite-roasting-cinder.yaml) | Qualified sulfur solubilization and a separate limited-response ash assay | Missing controls and an unsuccessful model transfer prevent general recovery claims |
+| [Tannery sludge](data/records/tannery-sludge.yaml) | Acidophile-associated chromium solubilization | Inoculum, reagent, sulfate and mass-balance inconsistencies remain unresolved |
 | [Cobalt](data/records/cobalt.yaml) | Acidophilic consortium bioleaching of spent-battery black mass | Laboratory solubilization, not isolated cobalt product |
 | [Neodymium](data/records/neodymium.yaml) | Algal biosorption and *Gluconobacter* biolixiviant bioleaching | Separate magnet-leachate and synthetic mixed-phosphate experiments |
 | [Palladium](data/records/palladium.yaml) | Resting *Desulfovibrio desulfuricans* cells reduce Pd(II) | Defined soluble salt assay; hydrogenase causality remains inferred |
@@ -348,7 +352,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [fifty-sixth expansion reviews](research/ingests/round56-20261012-publication.md),
 [fifty-seventh expansion reviews](research/ingests/round57-20261012-publication.md),
 [fifty-eighth expansion reviews](research/ingests/round58-20261012-publication.md),
-[remaining ingest priorities](research/ingests/round58-frontier-20261012.md), and
+[fifty-ninth expansion reviews](research/ingests/round59-20261012-publication.md),
+[remaining ingest priorities](research/ingests/round59-frontier-20261012.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

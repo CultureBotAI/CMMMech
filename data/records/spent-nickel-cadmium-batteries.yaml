@@ -1,0 +1,91 @@
+id: cmmmech:spent-nickel-cadmium-batteries
+name: Spent nickel-cadmium batteries
+material_kind: secondary_resource
+description: End-of-life nickel-cadmium batteries, represented here by prepared active electrode
+  powder from dismantled cells. The accepted experiment concerns the cathode fraction, not an intact
+  battery or a pooled whole-cell metal inventory. This Ni/Cd secondary-cell resource is distinct
+  from nickel-metal-hydride batteries, mixed alkaline/zinc-carbon primary cells, button-cell powder
+  and lithium-ion black mass. Constituent-element criticality is not inherited.
+sources:
+- id: sedlakova2017
+  title: 'Sedlakova-Kadukova, Marcincakova, Mrazikova, Willner and Fornalczyk (2017). Closing the
+    Loop: Key Role of Iron in Metal-Bearing Waste Recycling. Archives of Metallurgy and Materials
+    62(3):1459–1466. DOI 10.1515/amm-2017-0226. Complete eight-page primary PDF; Methods 2.1–2.4
+    and NiCd Results 3.1.2, especially original Figure 2 on p.1462. Other waste arms are not imported.'
+  url: https://doi.org/10.1515/amm-2017-0226
+  accessed_on: '2026-10-12'
+- id: ncbi920
+  title: 'NCBI Taxonomy 920: Acidithiobacillus ferrooxidans, current species identity; not authentication
+    of the experimental culture.'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
+  accessed_on: '2026-10-12'
+mechanisms:
+- id: acidophilic_cathode_leaching
+  name: Acidophilic culture-associated cathode leaching with ferric comparison
+  process: bioleaching
+  microbial: true
+  organisms:
+  - id: NCBITaxon:920
+    label: Acidithiobacillus ferrooxidans
+  description: A culture-containing acidic leach mobilized Cd and part of the Ni from prepared spent
+    NiCd cathode material. A separate abiotic ferric-sulfate treatment produced comparable reported
+    extraction. The observations support culture-associated leaching but do not establish a microbial
+    advantage, a requirement for live-cell contact, or an independently isolated ferric-oxidation
+    mechanism. Dissolved metals were measured; an isolated Ni or Cd product was not demonstrated.
+  context: 'Methods 2.1–2.4, pp.1460–1461: batteries were opened, rolled electrodes separated, and
+    cathode/anode active powders removed from metal grids, ground and sieved below 40 micrometres.
+    Cathode assays were 6.5% Cd and 47.1% Ni; separately reported anode assays were 38% Cd and 22.2%
+    Ni. Results 3.1.2 assigns the plotted experiment to cathode material; anode composition is not
+    an extraction denominator for that arm. The stated setup used 2 g powder and 200 mL medium in
+    250-mL flasks, initial pH 1.5 adjusted using 10 M H2SO4 or 10% NaOH, with experiments in triplicate
+    and sampling on days 1, 3, 7, 10, 13, 21 and 28. Five-mL leachate samples were filtered and
+    analyzed by atomic absorption. Methods assigns a pure A. ferrooxidans culture in 9K medium and
+    5 mL pure-culture inoculum; culture provenance is Smolnik acid mine drainage through the Slovak
+    Academy of Sciences, with no strain accession or experimental-stock sequence authentication.
+    Figure 2 instead calls the biotic treatment a mixture with A. thiooxidans. That unresolved caption/Methods
+    conflict prevents a definitive culture-composition or species-specific causal conclusion. Dilute
+    sulfuric-acid and ferric-sulfate abiotic treatments were included. The latter is described as
+    44.63 g/L reagent, but its printed hydrated-salt formula is malformed; no elemental-Fe concentration
+    is inferred. Leaching temperature, agitation and a complete sampling-volume correction are not
+    specified for this arm.'
+  evidence:
+  - source_ref: sedlakova2017
+    supports: support
+    explanation: Results 3.1.2 and Figure 2A show Cd dissolution approaching the reported 100% level
+      in both biotic and abiotic ferric treatments over the 28-day series, whereas the dilute-acid
+      comparator is lower. This is a source-reported leaching efficiency for the prepared cathode
+      fraction, not whole-cell or isolated-product recovery. The article does not give a complete
+      efficiency equation, raw analytical series or a closed metal balance for independently reconstructing
+      the percentage.
+  - source_ref: sedlakova2017
+    supports: partial
+    explanation: The abstract and Results 3.1.2 report 55% Ni extraction for both biotic and ferric
+      treatments, but Figure 2B plots those series near 45–47%, below 50%. The prose and original
+      graph are retained as conflicting source statements; neither is silently corrected or adopted
+      as a harmonized yield. Both support partial Ni dissolution and similar biotic/ferric performance,
+      rather than quantitative microbial superiority. Triplicates are stated, but Figure 2 has no
+      displayed error bars or underlying replicate values.
+  - source_ref: sedlakova2017
+    supports: partial
+    explanation: The authors relate poor acid-only dissolution to neutralization and pH rising toward
+      7, and interpret ferric hydrolysis as sustaining acidity. Their oxidative and hydrolytic explanation
+      and generalized equations are not separate measurements of phase-specific Ni oxidation or
+      proof of an exclusive biological pathway. Figures 5 and 6 concern other-feed pH data and a
+      proposed integrated recycling model respectively; they are not a NiCd pH time series or an
+      operated closed-loop industrial plant. References 20–21 are earlier NiCd studies from overlapping
+      authors; independence from those experiments is not established here, and their uninspected
+      original measurements are not pooled with Figure 2.
+  - source_ref: ncbi920
+    supports: context_only
+    explanation: The live authority identifies A. ferrooxidans at species level. It does not resolve
+      the primary paper's pure-versus-mixed-culture conflict, identify a strain, or prove that this
+      organism caused the observed extraction beyond the chemical comparators.
+curation_history:
+- timestamp: '2026-10-12T14:02:02.669630+00:00'
+  curator: Codex (GPT-6; codex)
+  action: CREATE
+  summary: Created the NiCd secondary-resource owner from complete original cathode-leaching evidence,
+    preserving comparable abiotic ferric extraction, culture and numerical conflicts, and recovery/scale
+    limits.
+history_refs:
+- history/records/spent-nickel-cadmium-batteries/2026-10-12T140131Z-codex-21a6a4.yaml
