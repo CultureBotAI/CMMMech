@@ -1,0 +1,372 @@
+{
+  "recorded_at": "2026-10-12T08:49:30.578668+00:00",
+  "base": "466cb14cbc271ba73ba05e89ed188cfd113d06ea",
+  "scientific_base": "466cb14cbc271ba73ba05e89ed188cfd113d06ea",
+  "branch": "curate/cmm-expansion-round51-20261012",
+  "counts": {
+    "record_count": 249,
+    "history_count": 295,
+    "structured_review_count": 305,
+    "review_base_count": 52,
+    "covered_records": 249
+  },
+  "record_actions": {
+    "elpidite": "CREATE",
+    "ion-adsorption-rare-earth-clay": "CREATE",
+    "monazite-ore": "CREATE"
+  },
+  "records": [
+    {
+      "slug": "elpidite",
+      "action": "CREATE",
+      "record": "data/records/elpidite.yaml",
+      "record_sha256": "d4380b722d62b9e66de5be913d7629dce70780fff4e55ec47147eb96ed9baf3e",
+      "histories": [
+        {
+          "path": "history/records/elpidite/2026-10-12T083032Z-codex-077784.yaml",
+          "sha256": "01d42dcf6c7b20b55e37aff37ba526f86a5e2ade4f66149cf9e02f55e2cdd8ea"
+        }
+      ],
+      "review": "reviews/structured/20261012T084041Z-elpidite-round51-science/review.yaml",
+      "review_md": "reviews/structured/20261012T084041Z-elpidite-round51-science/review.md",
+      "review_sha256": "dc2e0d64861e96b16d45c4ccf2d74d8846963cd163d7bd2c6af1fa78d1f7519c",
+      "review_md_sha256": "e2c00a1a5890cb503d5234516feacd6aadca0586d2540b7ecf9593bd900ea081",
+      "reviewer": {
+        "identity": "Codex /root/round27_packaging",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Reviewer authored monazite-ore in this cohort, not elpidite. Elpidite record/history/dossier were authored by /root/round27_superalloy. Reviewer independently captured native inputs, inspected original eleven-page article/all graphics and IMA, and did not edit the target."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [],
+      "dossiers": [
+        {
+          "path": "research/sources/round51-hf-zr/20261012T083417Z-source-investigation.json",
+          "sha256": "d9af738401c786d6be136f2141a4c8f74248bc1a264ced9805d8a46620a8721d"
+        },
+        {
+          "path": "research/sources/round51-hf-zr/20261012T083417Z-source-investigation.md",
+          "sha256": "ac585894f77989140afae42702308f4edcbd38067da9693a14e7492cb7000757"
+        }
+      ]
+    },
+    {
+      "slug": "ion-adsorption-rare-earth-clay",
+      "action": "CREATE",
+      "record": "data/records/ion-adsorption-rare-earth-clay.yaml",
+      "record_sha256": "33422e33022dffdd44c22c4d18fd08ab6c2ff5b293300648182c127e6696cb06",
+      "histories": [
+        {
+          "path": "history/records/ion-adsorption-rare-earth-clay/2026-10-12T082825Z-codex-0d6399.yaml",
+          "sha256": "7ca3a5b0237f741effdec76f4e8394852ecce95a20175ebdbfdf5c9893eb7566"
+        }
+      ],
+      "review": "reviews/structured/20261012T083950Z-ion-adsorption-rare-earth-clay-round51-resolution/review.yaml",
+      "review_md": "reviews/structured/20261012T083950Z-ion-adsorption-rare-earth-clay-round51-resolution/review.md",
+      "review_sha256": "5ebfd5cbc53c786b44bd2d8507521b502ac724492669dced24ff65dbbb277a67",
+      "review_md_sha256": "0dc8df90faf56ae6ac0af11670e4bf4f7f8274e42b7aecc1de1c17d1f9942c04",
+      "reviewer": {
+        "identity": "Codex /root/round43_hardmetal",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Root curator authored clay record, history, original dossier and correction. Reviewer independently inspected all primary pages, figures/tables, original workbook, live taxon pages and source limits, authored the initial F1 finding and checked the correction. Reviewer authored only the unrelated zircon-feed deferral in this cohort. No self-review of scientific curation or record editing."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [
+        {
+          "finding_id": "F1",
+          "issue_key": "CMMMech.ion-adsorption-rare-earth-clay.dossier-table4-eh",
+          "category": "evidence",
+          "severity": "minor",
+          "status": "resolved",
+          "certainty": "confirmed",
+          "title": "Source dossier misstates printed Table4 Eh as an extraction artifact",
+          "description": "The initial source dossier incorrectly called Original medium Eh blank and blamed extraction. The immutable dated correction now explicitly supersedes that bullet, accurately states both PDF and XML print4.38, and preserves uncertainty about the printed value without importing it. Record/history and original dossier/review remain unchanged.",
+          "target_ids": [
+            "cmmmech:ion-adsorption-rare-earth-clay"
+          ],
+          "field_paths": [
+            "research/sources/round51-ree-clay/20261012T083313Z-source-investigation.md#Contradictions-and-extraction-hazards:Table4-bullet"
+          ],
+          "evidence_ids": [
+            "dossier_md",
+            "table4_pixels",
+            "independent_render",
+            "publisher_xml",
+            "record",
+            "correction_md",
+            "correction_json",
+            "predecessor",
+            "cohort"
+          ],
+          "owner_paths": [
+            {
+              "repository": "CultureBotAI/CMMMech",
+              "path": "research/sources/round51-ree-clay/20261012T083313Z-source-investigation.md",
+              "role": "Source dossier; append a dated correction preserving original"
+            }
+          ],
+          "rule_id": "primary-source-exact-observation",
+          "native_severity": "minor",
+          "normalization_reason": "Bounded source-dossier observation error; no wrong record identity, measurement or mechanism depends on the disputed Eh cell.",
+          "disposition_reason": "Independently verified original pixels, XML and exact correction text/hashes. Narrow source-context correction satisfies A1; scientific evidence and record bytes remain fully reassessed and supported.",
+          "previous_occurrences": [
+            {
+              "repository": "CultureBotAI/CMMMech",
+              "review_id": "20261012T083701Z-ion-adsorption-rare-earth-clay-round51-initial",
+              "finding_id": "F1"
+            }
+          ],
+          "external_issues": [
+            "https://github.com/CultureBotAI/CMMMech/issues/160"
+          ]
+        }
+      ],
+      "dossiers": [
+        {
+          "path": "research/sources/round51-ree-clay/20261012T083313Z-source-investigation.json",
+          "sha256": "446709aa78126ef05c4776e7494083d40df1754596a25d06d85b26dc6ec59d93"
+        },
+        {
+          "path": "research/sources/round51-ree-clay/20261012T083313Z-source-investigation.md",
+          "sha256": "5b2011fa49b42b9087d4dd426817ae0f9823bd0c287357a076525fda306d625f"
+        },
+        {
+          "path": "research/sources/round51-ree-clay/20261012T083818Z-table4-correction.json",
+          "sha256": "330f8e74d548ce3b7d93623981591dd7bd2375fcca0add3c4efb7e32ac421a2c"
+        },
+        {
+          "path": "research/sources/round51-ree-clay/20261012T083818Z-table4-correction.md",
+          "sha256": "69fcf2252e215c3f3542774e532b7defa2fb1d7a8da2919ac8b528593e46840b"
+        }
+      ]
+    },
+    {
+      "slug": "monazite-ore",
+      "action": "CREATE",
+      "record": "data/records/monazite-ore.yaml",
+      "record_sha256": "8b2de973c88b9156995737a0b9314600c0b9eaebb1808444db9019fc7213a82b",
+      "histories": [
+        {
+          "path": "history/records/monazite-ore/2026-10-12T082924Z-codex-7eb1e5.yaml",
+          "sha256": "0545df8726c7600df1ec37b900991ef4b9c38d82139fc43ee79e9796b8396758"
+        },
+        {
+          "path": "history/records/monazite-ore/2026-10-12T084248Z-codex-69c8b2.yaml",
+          "sha256": "2ce454580bff1fc72d6c3337c1c1a8dd3e31cfde61391a7115fe81fc8ff3b246"
+        }
+      ],
+      "review": "reviews/structured/20261012T084632Z-monazite-ore-round51-resolution/review.yaml",
+      "review_md": "reviews/structured/20261012T084632Z-monazite-ore-round51-resolution/review.md",
+      "review_sha256": "842fcc8d4f61e86a772862dd22f94aa9b17b7ce0a572d99d190009d22ea9588e",
+      "review_md_sha256": "0528d741274f9db7aeff1a3369879ea982e02d5d7bf5ff1c20010eaa822ac6ce",
+      "reviewer": {
+        "identity": "Codex /root/round27_superalloy",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Peer /root/round27_packaging authored monazite ore and original dossier; coordinator /root authored the locator correction and EDIT. Reviewer authored separate elpidite, independently assessed original primary/SI/graphics/video samples before the initial finding, captured all nine current inputs before successor judgment, rechecked corrected source attribution and exact reversible byte delta, and made no target edits."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [
+        {
+          "finding_id": "F1",
+          "issue_key": "CMMMech.monazite-ore.s12-evidence-locator",
+          "category": "evidence",
+          "severity": "minor",
+          "status": "resolved",
+          "certainty": "confirmed",
+          "title": "Appendix Figure S12 is attached to the wrong microscopy claim",
+          "description": "Initial S12 locator was attached to roughness localization. Corrected record places S12 with the mature-biofilm CLSM cross-section and retains main3E/F for roughness. Main Results1794 and original S12 caption support this correction.",
+          "target_ids": [
+            "cmmmech:monazite-ore"
+          ],
+          "field_paths": [
+            "mechanisms[0].evidence[0].explanation"
+          ],
+          "evidence_ids": [
+            "target",
+            "primary",
+            "appendix",
+            "prior",
+            "edit",
+            "correction_md",
+            "correction_json",
+            "correction_proof",
+            "gates"
+          ],
+          "owner_paths": [
+            {
+              "repository": "CultureBotAI/CMMMech",
+              "path": "data/records/monazite-ore.yaml",
+              "role": "maintained scientific record"
+            }
+          ],
+          "rule_id": "primary-figure-to-claim-fidelity",
+          "native_severity": "minor",
+          "normalization_reason": "Narrow locator mismatch; material identity, biofilm observation and qualitative erosion remain supported.",
+          "disposition_reason": "Fresh nine-input native capture followed by original source reinspection and independent exact reverse-byte proof confirms the narrow correction. Actual EDIT/inline event and append-only correction dossier preserve provenance; corrected named and full cohort/history/render checks passed.",
+          "previous_occurrences": [
+            {
+              "repository": "CultureBotAI/CMMMech",
+              "review_id": "20261012T084101Z-monazite-ore-round51-initial",
+              "finding_id": "F1"
+            }
+          ],
+          "external_issues": [
+            "https://github.com/CultureBotAI/CMMMech/issues/161"
+          ]
+        }
+      ],
+      "dossiers": [
+        {
+          "path": "research/sources/round51-monazite-feed/20261012T083200Z-source-investigation.json",
+          "sha256": "74555edff5a510fa535d6cad0424ef9e9e5a2f9e7a5461d9187aeac902ab6364"
+        },
+        {
+          "path": "research/sources/round51-monazite-feed/20261012T083200Z-source-investigation.md",
+          "sha256": "495fdd139eb4d3e7acf0f15661218dd264cf7ac5572b569b38e9fc9cee4a56d7"
+        },
+        {
+          "path": "research/sources/round51-monazite-feed/20261012T084249Z-locator-correction.json",
+          "sha256": "abf87cd06a71d87f57ad49ef55cff4a5a56525d3e2ca5ce6521aa15568037ee1"
+        },
+        {
+          "path": "research/sources/round51-monazite-feed/20261012T084249Z-locator-correction.md",
+          "sha256": "2b80c9b37a006a3118d81769b614b6e6578fb42effe0538f08b6606f41c2c4c4"
+        }
+      ]
+    }
+  ],
+  "gate_receipts": {
+    "base": "466cb14cbc271ba73ba05e89ed188cfd113d06ea",
+    "exit_code": 0,
+    "commands": [
+      {
+        "name": "batch",
+        "command": [
+          "just",
+          "check"
+        ],
+        "started_at": "2026-10-12T08:43:09.808188+00:00",
+        "finished_at": "2026-10-12T08:45:51.551472+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round51-corrected-batch.log",
+        "sha256": "c0cbef14272165bf6ffb5adc08754dd2d1aa0015bffbec643877011f82c1985f"
+      },
+      {
+        "name": "nonempty",
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate",
+          "--require-records"
+        ],
+        "started_at": "2026-10-12T08:45:51.552007+00:00",
+        "finished_at": "2026-10-12T08:45:58.554494+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round51-corrected-nonempty.log",
+        "sha256": "06b051452e7949992afa10ca6afb43fcde683c0e3fcbd9ec1827b3fc360a702b"
+      },
+      {
+        "name": "history",
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate-history",
+          "--base",
+          "466cb14cbc271ba73ba05e89ed188cfd113d06ea"
+        ],
+        "started_at": "2026-10-12T08:45:58.555053+00:00",
+        "finished_at": "2026-10-12T08:46:02.602113+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round51-corrected-history.log",
+        "sha256": "df80503fb8ec25b085cb361d093a451884dbfcffc44e709429ab4ad637720717"
+      },
+      {
+        "name": "render-check",
+        "command": [
+          "just",
+          "render-check"
+        ],
+        "started_at": "2026-10-12T08:46:02.602722+00:00",
+        "finished_at": "2026-10-12T08:46:05.805364+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round51-corrected-render-check.log",
+        "sha256": "be156b3acc20d39b6bad41632b10eb7ccfc2c8a7fdeaec3f6236fbc67831aea6"
+      }
+    ]
+  },
+  "review_check_receipt": {
+    "command": [
+      "just",
+      "review-check",
+      "--base",
+      "466cb14cbc271ba73ba05e89ed188cfd113d06ea",
+      "--require-reviews"
+    ],
+    "started_at": "2026-10-12T08:47:17.200699+00:00",
+    "finished_at": "2026-10-12T08:48:57.412331+00:00",
+    "exit_code": 0,
+    "log": "/private/tmp/cmm-round51-review-check.log",
+    "sha256": "652073a437d8e21a75badd8c07255199d6d9f864da5c399e5ba1627e70317a24"
+  },
+  "exact_coverage_receipt": {
+    "path": "/private/tmp/cmm-round51-local-coverage.json",
+    "sha256": "89a52099804744f56e690ca20e4bce37e0263374296d13ad23dcb81fa872dd70",
+    "counts": {
+      "record_count": 249,
+      "history_count": 295,
+      "structured_review_count": 305,
+      "review_base_count": 52,
+      "covered_records": 249
+    }
+  },
+  "baseline": {
+    "scope": "Reuse just-completed fresh remote-main full checks at this exact unchanged commit/tree; no redundant rerun.",
+    "receipt": "/private/tmp/cmm-round50-postmerge-20261012-published-terminal.json",
+    "sha256": "7bdde370bba43d304d38dc6818b7f03fd357e93e3afa93335905f49eb99519fa"
+  },
+  "deferred_sources": [
+    {
+      "path": "research/sources/round51-zircon-feed/20261012T082652Z-source-investigation.json",
+      "sha256": "b55d55b0d9682a41eb1deb689af58ccb513e8ddfbb4b5c1653a9103dcda81cf6"
+    },
+    {
+      "path": "research/sources/round51-zircon-feed/20261012T082652Z-source-investigation.md",
+      "sha256": "9af39dc8472754e87904b7832461713a60282282d19b5da22c70a3964824a52f"
+    }
+  ],
+  "corrected_review_issues": [
+    160,
+    161
+  ],
+  "open_source_issues": [
+    103,
+    104,
+    120,
+    129,
+    130,
+    133,
+    134,
+    137,
+    140,
+    153
+  ],
+  "closed_source_issues": [],
+  "exhausted": false,
+  "governance_snapshot": {
+    "path": "reviews/publication/20261012-round51/current-status.json",
+    "sha256": "000a85c185b22e40b45219c4a691f1d9a2f0258dc4498a8a4d4842271e1ddacb"
+  },
+  "preservation_receipt": {
+    "path": "reviews/publication/20261012-round51/preservation-prepublication.json",
+    "sha256": "5ff509f1f3118c9cb3ad64e0143581ff39811afb8ba515d5d69fe95a1c1cad5a"
+  }
+}
