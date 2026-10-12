@@ -8,12 +8,16 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 274 material records.
+The catalogue currently contains 278 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
 | [Rhodochrosite](data/records/rhodochrosite.yaml) | MR-1-associated carbonate formation from synthetic Mn oxide | Phosphate/carbon conditions and abiotic controls constrain phase attribution |
 | [Spent nickel-cadmium batteries](data/records/spent-nickel-cadmium-batteries.yaml) | Acidophile-associated leaching of NiCd electrode powder | Comparable abiotic extraction and conflicting source descriptions remain explicit |
+| [Fluorite](data/records/fluorite.yaml) | Washed-cell-associated flocculation and settling | Physical separation; no mineral dissolution or commodity criticality inherited |
+| [Spent lead-acid battery electrolyte](data/records/spent-lead-acid-battery-electrolyte.yaml) | Culture-associated precipitation from chemically pretreated liquid | Separate chemical polishing; no verified discharge compliance or isolated product yield |
+| [Copper-smelter flue dust](data/records/copper-smelter-flue-dust.yaml) | Mixed-acidophile leaching of acid-pretreated dry dust | Sequential laboratory reactor trials; no matched continuous abiotic train |
+| [Traction-battery hydrometallurgical residue](data/records/traction-battery-hydrometallurgical-residue.yaml) | Culture-associated release from separate nickel/cobalt residues | Feed concentration and cobalt yield conflicts retained |
 | [Pyrite-roasting cinder](data/records/pyrite-roasting-cinder.yaml) | Qualified sulfur solubilization and a separate limited-response ash assay | Missing controls and an unsuccessful model transfer prevent general recovery claims |
 | [Tannery sludge](data/records/tannery-sludge.yaml) | Acidophile-associated chromium solubilization | Inoculum, reagent, sulfate and mass-balance inconsistencies remain unresolved |
 | [Cobalt](data/records/cobalt.yaml) | Acidophilic consortium bioleaching of spent-battery black mass | Laboratory solubilization, not isolated cobalt product |
@@ -353,7 +357,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [fifty-seventh expansion reviews](research/ingests/round57-20261012-publication.md),
 [fifty-eighth expansion reviews](research/ingests/round58-20261012-publication.md),
 [fifty-ninth expansion reviews](research/ingests/round59-20261012-publication.md),
-[remaining ingest priorities](research/ingests/round59-frontier-20261012.md), and
+[sixtieth expansion reviews](research/ingests/round60-20261012-publication.md),
+[remaining ingest priorities](research/ingests/round60-frontier-20261012.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

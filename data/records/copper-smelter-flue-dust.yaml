@@ -1,0 +1,153 @@
+id: cmmmech:copper-smelter-flue-dust
+name: Copper-smelter flue dust
+material_kind: secondary_resource
+description: >-
+  Dry-collected particulate residue from copper smelting and converting,
+  represented here by a blend of dust from reverberatory and converter
+  furnaces at the Sarcheshmeh Copper Complex, Iran. One week's samples
+  were mixed in the production ratio of three parts reverberatory dust
+  to two parts converter dust. This processing-derived feed is distinct
+  from furnace slag, natural copper minerals, copper anode slime and its
+  downstream autoclave residue, and the wet copper-shale blast-furnace
+  gas-scrubbing residue curated as Theisen sludge. The study reported
+  35.8 wt% total copper in the original blend and about 70% of particles
+  finer than 80 micrometers; these are sample-specific assays, not a
+  universal dust specification or recoverable reserve. Acid-preleached
+  dust is an experimental preparation of this owner, not another material
+  record. No criticality-list designation is inherited from copper or
+  other constituents.
+sources:
+  - id: bakhtiari2008
+    title: >-
+      Bakhtiari F, Atashi H, Zivdar M and Seyed Bagheri SA (2008).
+      Continuous copper recovery from a smelter's dust in stirred tank
+      reactors. International Journal of Mineral Processing 86(1–4):50–57.
+      DOI 10.1016/j.minpro.2007.10.003; original available-online date
+      26 November 2007. Complete eight-page public author-copy text,
+      Tables 1–4 and original publisher Figures 1–5; especially sections
+      2.1–2.3 and 3.1–3.2. Local PDF acquisition failed; the research
+      dossier distinguishes web-read text from inspected original figures.
+    url: https://doi.org/10.1016/j.minpro.2007.10.003
+    accessed_on: '2026-10-12'
+  - id: ncbi_ferrooxidans
+    title: NCBI Taxonomy 920, Acidithiobacillus ferrooxidans, species; does not authenticate the experimental isolate.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
+    accessed_on: '2026-10-12'
+  - id: ncbi_thiooxidans
+    title: NCBI Taxonomy 930, Acidithiobacillus thiooxidans, species; does not authenticate the experimental isolate.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info
+    accessed_on: '2026-10-12'
+  - id: ncbi_leptospirillum
+    title: NCBI Taxonomy 180, Leptospirillum ferrooxidans, species; does not authenticate the experimental isolate.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=180&mode=Info
+    accessed_on: '2026-10-12'
+mechanisms:
+  - id: adapted_acidophile_dust_bioleaching
+    name: Mixed-acidophile leaching of acid-pretreated copper-smelter dust
+    process: bioleaching
+    microbial: true
+    organisms:
+      - id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+      - id: NCBITaxon:930
+        label: Acidithiobacillus thiooxidans
+      - id: NCBITaxon:180
+        label: Leptospirillum ferrooxidans
+    description: >-
+      An adapted, source-identified iron- and sulfur-oxidizing mesophilic
+      consortium was associated with greater copper extraction than
+      source-designated sterile shake flasks. The same culture was used
+      in a two-stage aerated continuous stirred-tank experiment on
+      acid-preleached dust. These observations support a laboratory
+      bioleaching treatment, with chemical acid dissolution and microbial
+      contributions not separately quantified in the continuous system.
+      Proposed preferential oxidation of chalcocite and bornite, and
+      chalcopyrite passivation, are interpretations rather than independently
+      isolated mineral-specific mechanisms or individual-species effects.
+    context: >-
+      The feed first underwent sulfuric-acid preleaching in rolling bottles
+      at pH 1.5 and 10% wt/vol pulp. Section 2.1 reports dissolution of
+      65% and 80% of the acid-soluble copper fraction after 60 and 120
+      minutes, respectively; these are not percentages of total feed copper.
+      The subsequent residue contained source-reported copper sulfides and
+      remaining acid-soluble copper. Neither preleach residue mass yield
+      nor a closed combined chemical-and-biological copper balance is given.
+      The mixed culture was isolated from Sarcheshmeh acid mine drainage,
+      identified by reference to an earlier study, and adapted over two
+      months to increasing dust loading, up to 7% wt/vol, and copper up
+      to 20 g/L. No isolate accession, deposit or sequence verification
+      is supplied in this article. Species identifiers resolve reported
+      names only. Adaptation used 200 mL in 500 mL flasks, 9K medium,
+      pH 1.8, 32 degrees C and 150 rpm; those adaptation details do not
+      establish every condition of the separately tabulated control tests.
+      The reactor experiment used two 3 L vessels, each with 2.1 L working
+      volume, about 200 rpm stirring and air at 1 L per L per minute.
+      Startup used 2% wt/vol preleached dust, 9K medium and 10% vol/vol
+      adapted inoculum at pH 1.8 and 32 degrees C. Reactor 2 started on
+      day 8; continuous feeding began around day 63. Feed loading,
+      residence time and temperature were changed sequentially during
+      one 180-day campaign. They were not independently replicated
+      factorial treatments. The system required sulfuric acid and was
+      net acid consuming; from day 114 acid was added to the feed tank.
+      No industrial microbial operation or isolated copper product was
+      demonstrated despite the source's use of the term pilot plant.
+    evidence:
+      - source_ref: bakhtiari2008
+        supports: support
+        explanation: >-
+          Section 2.3 and Table 3 report biological versus sterile-flask
+          copper extractions of 87% versus 39% at 2% wt/vol pulp after
+          16 days, 88% versus 45% at 4% after 23 days, and 81% versus
+          47% at 7% after 30 days. These within-condition comparisons
+          support culture-associated enhancement, while the differing
+          durations prevent a simple loading-only comparison. Sterilization
+          procedure, verification of control sterility, replication and
+          uncertainty for these tests are not specified. The source states
+          explicitly that only biological treatments were then run in the
+          reactors, so these flask controls are not matched continuous
+          abiotic comparators.
+      - source_ref: bakhtiari2008
+        supports: partial
+        explanation: >-
+          Table 4 and section 3.2 report final-stage copper extractions of
+          89.7% for 2% wt/vol feed at 32 degrees C and 2.7 days overall
+          residence time, 90.3% for 4% feed at 32 degrees C and 4 days,
+          and 86.8% for 7% feed at 34 degrees C and 6 days. Residence
+          time is for the two-stage system, not each vessel. These are
+          source-reported extraction values for the preleached experimental
+          feed, not independently reconstructed total-raw-dust recovery
+          or a purified product yield. Table 4 labels its values maxima;
+          Figure 5 shows higher earlier extraction points in the startup
+          interval, so tabulated maxima and plotted time-course values are
+          not treated as interchangeable. Figure 5 uses solid-residue
+          analyses, and aqueous Cu/Fe were measured by atomic absorption;
+          no full uncertainty or copper mass-balance calculation is supplied.
+      - source_ref: bakhtiari2008
+        supports: partial
+        explanation: >-
+          Figures 2–4 and section 3.2 preserve important operational limits.
+          At 7% feed, low redox potential and washout prompted longer
+          residence times, a temporary return to batch operation and a
+          1000 mL pulp exchange between reactors. This intervention is part
+          of the eventual 6-day result. The system lacked condensers for
+          its first 78 days; even afterward the authors estimated about
+          10% volume loss per reactor and added no continuous-run makeup
+          water. Thus rising dissolved concentrations are not direct measures
+          of extraction efficiency. Reactor solids eventually reached 9%
+          wt/vol despite 7% feed. The early unadapted culture also showed
+          no observed growth at 5% dust, according to section 3.1. Redox
+          potential was used as an activity proxy rather than a species-
+          resolved measure of growth. Tables 1–2 report bulk assays and
+          mineral-associated copper proportions without a reconciled
+          phase-to-element balance; no mineral-specific recovery fraction
+          is inferred from those proportions.
+curation_history:
+  - timestamp: '2026-10-12T14:50:48Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Created the dry smelter-dust secondary-resource owner from primary
+      full-text and original-figure evidence, retaining pretreatment,
+      control, taxon, accounting and laboratory-scale limits.
+history_refs:
+  - history/records/copper-smelter-flue-dust/2026-10-12T145039Z-codex-2fa9ea.yaml

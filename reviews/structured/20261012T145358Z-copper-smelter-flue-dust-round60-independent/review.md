@@ -1,0 +1,505 @@
+# Independent scientific review of copper-smelter flue dust
+
+- Review: 20261012T145358Z-copper-smelter-flue-dust-round60-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-12T14:51:32.213268Z
+- Finished UTC: 2026-10-12T14:53:58.977702Z
+- Reviewer: Codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The final record supports qualified laboratory culture-associated copper extraction from acid-preleached dry smelter dust. Controls, feed/assay denominators, source inconsistencies and operational limitations are correctly retained; no corrective finding identified.
+
+## Scope And Provenance
+
+Entire final scientific record, actual CREATE history and schema; full original text/tables, all five original publisher figures, species authorities, bounded notice/dedup search and named validation.
+
+Selection: Independent assigned review of new material owner.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 3ac02ecf15ba53e28b15b2f4afcdcb083d0a226c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:copper-smelter-flue-dust | data/records/copper-smelter-flue-dust.yaml | maintained | Copper-smelter flue dust |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named validation | passed | True | cmmmech:copper-smelter-flue-dust | Actual execution exit0,one record,zero failures. |
+| Input and evidence integrity | passed | True | cmmmech:copper-smelter-flue-dust | All three native input hashes and retained original/raw-evidence hashes rechecked immediately before save. |
+
+## Scientific And Domain Assessments
+
+### Distinct dry copper-smelter dust
+
+identity: supported. Targets: cmmmech:copper-smelter-flue-dust.
+
+Correctly represents process-derived dry-collected dust; original and acid-preleached preparation are one owner. No constituent criticality imported.
+
+### Culture association with separate flask and reactor evidence
+
+evidence: supported. Targets: cmmmech:copper-smelter-flue-dust.
+
+Source-designated sterile flask comparisons support the limited enhancement claim; no continuous abiotic comparison or species-specific pathway is asserted.
+
+### Qualified extraction and operational limits
+
+evidence: supported. Targets: cmmmech:copper-smelter-flue-dust.
+
+Source percentages remain scoped to preleached feed and solid-residue analyses; record preserves graphical/tabular and accounting limits. No product recovery or mineral-specific causal attribution.
+
+### Honest access and current history
+
+provenance: supported. Targets: cmmmech:copper-smelter-flue-dust.
+
+Full text/tables and original graphics support the narrow claims; local PDF-layout gap is disclosed. Canonical CREATE and inline event describe actual current curation.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | /private/tmp/CMMMech-expansion-round60-20261012/data/records/copper-smelter-flue-dust.yaml; Complete exact inspected input | supports | Read and hash rechecked before saving. |
+| history | /private/tmp/CMMMech-expansion-round60-20261012/history/records/copper-smelter-flue-dust/2026-10-12T145039Z-codex-2fa9ea.yaml; Complete exact inspected input | supports | Read and hash rechecked before saving. |
+| schema | /private/tmp/CMMMech-expansion-round60-20261012/src/cmmmech/schema/cmmmech.yaml; Complete exact inspected input | supports | Read and hash rechecked before saving. |
+| primary_text | /private/tmp/cmm-round60-industrial-research/raw/round60-mcp-pdf.txt; Original eight-page author-copy PDF text extracted by web; title, methods, Tables1–4 and results through p55 | supports | Independently read full study across this and rest snapshot. Original PDF binary unavailable; retained snapshots are web extraction, not a local full-PDF inspection. |
+| primary_rest | /private/tmp/cmm-round60-industrial-research/raw/round60-mcp-rest.txt; Remainder pp55–57, conclusions, references and overlapping table/method context | supports | Read residue-based Figure5 description, acid consumption, source-designated pilot terminology and references. No industrial deployment inferred. |
+| figure1 | /private/tmp/cmm-round60-industrial-research/raw/bakhtiari2008-publisher-fig1.jpg; Original publisher Figure1, visually inspected | supports | Inspected apparatus or actual time-course axes/legends/points; Figures2–5 distinguish feed/reactors, startup changes and concentration/extraction. Figure5 early peaks exceed Table4 labelled maxima. |
+| figure2 | /private/tmp/cmm-round60-industrial-research/raw/bakhtiari2008-publisher-fig2.jpg; Original publisher Figure2, visually inspected | supports | Inspected apparatus or actual time-course axes/legends/points; Figures2–5 distinguish feed/reactors, startup changes and concentration/extraction. Figure5 early peaks exceed Table4 labelled maxima. |
+| figure3 | /private/tmp/cmm-round60-industrial-research/raw/bakhtiari2008-publisher-fig3.jpg; Original publisher Figure3, visually inspected | supports | Inspected apparatus or actual time-course axes/legends/points; Figures2–5 distinguish feed/reactors, startup changes and concentration/extraction. Figure5 early peaks exceed Table4 labelled maxima. |
+| figure4 | /private/tmp/cmm-round60-industrial-research/raw/bakhtiari2008-publisher-fig4.jpg; Original publisher Figure4, visually inspected | supports | Inspected apparatus or actual time-course axes/legends/points; Figures2–5 distinguish feed/reactors, startup changes and concentration/extraction. Figure5 early peaks exceed Table4 labelled maxima. |
+| figure5 | /private/tmp/cmm-round60-industrial-research/raw/bakhtiari2008-publisher-fig5.jpg; Original publisher Figure5, visually inspected | supports | Inspected apparatus or actual time-course axes/legends/points; Figures2–5 distinguish feed/reactors, startup changes and concentration/extraction. Figure5 early peaks exceed Table4 labelled maxima. |
+| authority_checks | /private/tmp/cmm-round60-dust-review-checks.json; Official retained NCBI920/930/180 HTML;180 additionally opened live during this review | supports | Species labels match, not authentication of mixed mine-drainage isolates. All retained raw evidence hashes rechecked. |
+| bounded_search | /private/tmp/cmm-round60-dust-review-checks.json; Actual reviewer DOI/notice/control web searches and hidden/ignored/symlink-followed current/original science-root dedup | supports | No affecting notice identified in first returned results. Only the new owner appeared in bounded duplicate search. Binary literature and machine-wide novelty were not searched by this text query. |
+| validation | /private/tmp/cmm-round60-dust-named.log; Actual independently executed named validator | supports | Exit0,1record,0failed. Batch/review gates remain coordinator publication tasks. |
+
+## Limits And Additional Notes
+
+- No independent experimental replication, stock authentication or complete material-balance reconstruction.
+- Original PDF/page-layout acquisition failed; complete original web-extracted text/tables and actual publisher figures were inspected.
+- No matched continuous abiotic comparison, replicated parameter matrix or uncertainty supplied. Source inconsistencies remain explicitly bounded.
+- Notice/dedup searches bounded to described returned sets/roots; no source exhaustion claimed.
+- Batch just check, nonempty/history/review and render checks run subsequently by coordinator.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261012T145358Z-copper-smelter-flue-dust-round60-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of copper-smelter flue dust
+started_at: '2026-10-12T14:51:32.213268Z'
+finished_at: '2026-10-12T14:53:58.977702Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: round43_hardmetal curated this record. Root captured native
+    inputs before scientific assessment, independently read complete original text/tables
+    and all five original graphics, checked identifiers/notice searches and did not
+    edit the target.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The final record supports qualified laboratory culture-associated copper
+  extraction from acid-preleached dry smelter dust. Controls, feed/assay denominators,
+  source inconsistencies and operational limitations are correctly retained; no corrective
+  finding identified.
+source:
+  git_revision: 3ac02ecf15ba53e28b15b2f4afcdcb083d0a226c
+  state: working_tree
+  inputs:
+  - path: data/records/copper-smelter-flue-dust.yaml
+    sha256: 1667faf39bf234c10b4cd88e2ab1ea3d0b1ca77bfd74d10e29fc9c76595091b0
+    role: target
+  - path: history/records/copper-smelter-flue-dust/2026-10-12T145039Z-codex-2fa9ea.yaml
+    sha256: 340449b612ca94f6dd695a895f659492f53f1d2f98ee6cd6229e7426df4dc9fd
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- kind: maintained
+  label: Copper-smelter flue dust
+  owner_paths:
+  - path: data/records/copper-smelter-flue-dust.yaml
+    repository: CultureBotAI/CMMMech
+    role: maintained_record
+  path: data/records/copper-smelter-flue-dust.yaml
+  target_id: cmmmech:copper-smelter-flue-dust
+scope:
+  description: Entire final scientific record, actual CREATE history and schema; full
+    original text/tables, all five original publisher figures, species authorities,
+    bounded notice/dedup search and named validation.
+  selection: Independent assigned review of new material owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:copper-smelter-flue-dust
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/copper-smelter-flue-dust.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:copper-smelter-flue-dust
+  summary: Actual execution exit0,one record,zero failures.
+- check_id: integrity
+  name: Input and evidence integrity
+  status: passed
+  required: true
+  target_ids:
+  - cmmmech:copper-smelter-flue-dust
+  summary: All three native input hashes and retained original/raw-evidence hashes
+    rechecked immediately before save.
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: /private/tmp/CMMMech-expansion-round60-20261012/data/records/copper-smelter-flue-dust.yaml
+  locator: Complete exact inspected input
+  accessed_at: '2026-10-12T14:53:58.977702Z'
+  support: supports
+  summary: Read and hash rechecked before saving.
+  snapshot_sha256: 1667faf39bf234c10b4cd88e2ab1ea3d0b1ca77bfd74d10e29fc9c76595091b0
+- evidence_id: history
+  kind: record_content
+  reference: /private/tmp/CMMMech-expansion-round60-20261012/history/records/copper-smelter-flue-dust/2026-10-12T145039Z-codex-2fa9ea.yaml
+  locator: Complete exact inspected input
+  accessed_at: '2026-10-12T14:53:58.977702Z'
+  support: supports
+  summary: Read and hash rechecked before saving.
+  snapshot_sha256: 340449b612ca94f6dd695a895f659492f53f1d2f98ee6cd6229e7426df4dc9fd
+- evidence_id: schema
+  kind: record_content
+  reference: /private/tmp/CMMMech-expansion-round60-20261012/src/cmmmech/schema/cmmmech.yaml
+  locator: Complete exact inspected input
+  accessed_at: '2026-10-12T14:53:58.977702Z'
+  support: supports
+  summary: Read and hash rechecked before saving.
+  snapshot_sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+- evidence_id: primary_text
+  kind: primary_source
+  reference: /private/tmp/cmm-round60-industrial-research/raw/round60-mcp-pdf.txt
+  locator: Original eight-page author-copy PDF text extracted by web; title, methods,
+    Tables1–4 and results through p55
+  accessed_at: '2026-10-12T14:53:58.977702Z'
+  support: supports
+  summary: Independently read full study across this and rest snapshot. Original PDF
+    binary unavailable; retained snapshots are web extraction, not a local full-PDF
+    inspection.
+  snapshot_sha256: acf65f7a275fc0b858ef58380bd158848e20d3bf29bc463452fc736418ebbc1e
+- evidence_id: primary_rest
+  kind: primary_source
+  reference: /private/tmp/cmm-round60-industrial-research/raw/round60-mcp-rest.txt
+  locator: Remainder pp55–57, conclusions, references and overlapping table/method
+    context
+  accessed_at: '2026-10-12T14:53:58.977702Z'
+  support: supports
+  summary: Read residue-based Figure5 description, acid consumption, source-designated
+    pilot terminology and references. No industrial deployment inferred.
+  snapshot_sha256: 2644626c9f481ff6235ec30931638f55efa53ae6eeb4be23a8a73e6f42fb0889
+- evidence_id: figure1
+  kind: primary_source
+  reference: /private/tmp/cmm-round60-industrial-research/raw/bakhtiari2008-publisher-fig1.jpg
+  locator: Original publisher Figure1, visually inspected
+  accessed_at: '2026-10-12T14:53:58.977702Z'
+  support: supports
+  summary: Inspected apparatus or actual time-course axes/legends/points; Figures2–5
+    distinguish feed/reactors, startup changes and concentration/extraction. Figure5
+    early peaks exceed Table4 labelled maxima.
+  snapshot_sha256: a8e5e5d6ec1259861f363715c681fdf14cb6a8e5df142d0f710bdebb81f1216e
+- evidence_id: figure2
+  kind: primary_source
+  reference: /private/tmp/cmm-round60-industrial-research/raw/bakhtiari2008-publisher-fig2.jpg
+  locator: Original publisher Figure2, visually inspected
+  accessed_at: '2026-10-12T14:53:58.977702Z'
+  support: supports
+  summary: Inspected apparatus or actual time-course axes/legends/points; Figures2–5
+    distinguish feed/reactors, startup changes and concentration/extraction. Figure5
+    early peaks exceed Table4 labelled maxima.
+  snapshot_sha256: d6d67289a393c9e500cbd8c09d003792a8b8312cecd2c68e9c22bfcae6ed69b7
+- evidence_id: figure3
+  kind: primary_source
+  reference: /private/tmp/cmm-round60-industrial-research/raw/bakhtiari2008-publisher-fig3.jpg
+  locator: Original publisher Figure3, visually inspected
+  accessed_at: '2026-10-12T14:53:58.977702Z'
+  support: supports
+  summary: Inspected apparatus or actual time-course axes/legends/points; Figures2–5
+    distinguish feed/reactors, startup changes and concentration/extraction. Figure5
+    early peaks exceed Table4 labelled maxima.
+  snapshot_sha256: d40ef5e938f806a88f4d034677532835ed6fc7ddefd21fa79086a0db657ea9a1
+- evidence_id: figure4
+  kind: primary_source
+  reference: /private/tmp/cmm-round60-industrial-research/raw/bakhtiari2008-publisher-fig4.jpg
+  locator: Original publisher Figure4, visually inspected
+  accessed_at: '2026-10-12T14:53:58.977702Z'
+  support: supports
+  summary: Inspected apparatus or actual time-course axes/legends/points; Figures2–5
+    distinguish feed/reactors, startup changes and concentration/extraction. Figure5
+    early peaks exceed Table4 labelled maxima.
+  snapshot_sha256: 186ded67610f27b4466b051f244cb5301f455a690c494b3aa2dc2a6947b14376
+- evidence_id: figure5
+  kind: primary_source
+  reference: /private/tmp/cmm-round60-industrial-research/raw/bakhtiari2008-publisher-fig5.jpg
+  locator: Original publisher Figure5, visually inspected
+  accessed_at: '2026-10-12T14:53:58.977702Z'
+  support: supports
+  summary: Inspected apparatus or actual time-course axes/legends/points; Figures2–5
+    distinguish feed/reactors, startup changes and concentration/extraction. Figure5
+    early peaks exceed Table4 labelled maxima.
+  snapshot_sha256: 6a6d9ad0333664863ab18d1945f4f109a15014865c527d34c492d89a5d105402
+- evidence_id: authority_checks
+  kind: authority
+  reference: /private/tmp/cmm-round60-dust-review-checks.json
+  locator: Official retained NCBI920/930/180 HTML;180 additionally opened live during
+    this review
+  accessed_at: '2026-10-12T14:53:58.977702Z'
+  support: supports
+  summary: Species labels match, not authentication of mixed mine-drainage isolates.
+    All retained raw evidence hashes rechecked.
+  snapshot_sha256: 5f8e6beee06e98c7aff30a9e9efbe79beb9127b11a7817cf8ad4a3eb230dbc27
+- evidence_id: bounded_search
+  kind: search
+  reference: /private/tmp/cmm-round60-dust-review-checks.json
+  locator: Actual reviewer DOI/notice/control web searches and hidden/ignored/symlink-followed
+    current/original science-root dedup
+  accessed_at: '2026-10-12T14:53:58.977702Z'
+  support: supports
+  summary: No affecting notice identified in first returned results. Only the new
+    owner appeared in bounded duplicate search. Binary literature and machine-wide
+    novelty were not searched by this text query.
+  snapshot_sha256: 5f8e6beee06e98c7aff30a9e9efbe79beb9127b11a7817cf8ad4a3eb230dbc27
+  search_scope: First returned web result sets; exact queries in receipt. Current
+    and original records/research/reviews/history include hidden, ignored and followed
+    symlinks. No machine-wide absence claim.
+- evidence_id: validation
+  kind: validation
+  reference: /private/tmp/cmm-round60-dust-named.log
+  locator: Actual independently executed named validator
+  accessed_at: '2026-10-12T14:53:58.977702Z'
+  support: supports
+  summary: Exit0,1record,0failed. Batch/review gates remain coordinator publication
+    tasks.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+assessments:
+- assessment_id: material
+  area: identity
+  topic: Distinct dry copper-smelter dust
+  outcome: supported
+  target_ids:
+  - cmmmech:copper-smelter-flue-dust
+  evidence_ids:
+  - record
+  - primary_text
+  - bounded_search
+  summary: Correctly represents process-derived dry-collected dust; original and acid-preleached
+    preparation are one owner. No constituent criticality imported.
+  dimensions:
+  - name: material_form
+    value: Three parts reverberatory/two parts converter dust, Sarcheshmeh
+    definition: Week-composite specific feed, distinct slag, anode/autoclave residue
+      and wet Theisen sludge.
+    evidence_ids:
+    - record
+    - primary_text
+    - bounded_search
+  - name: criticality
+    value: No designation asserted
+    definition: No jurisdiction/list/edition inferred from copper content.
+    evidence_ids:
+    - record
+    - primary_text
+    - bounded_search
+- assessment_id: mechanism
+  area: evidence
+  topic: Culture association with separate flask and reactor evidence
+  outcome: supported
+  target_ids:
+  - cmmmech:copper-smelter-flue-dust
+  evidence_ids:
+  - record
+  - primary_text
+  - figure1
+  - authority_checks
+  summary: Source-designated sterile flask comparisons support the limited enhancement
+    claim; no continuous abiotic comparison or species-specific pathway is asserted.
+  dimensions:
+  - name: organisms_and_biomass
+    value: Living source-identified A.ferrooxidans, A.thiooxidans, L.ferrooxidans
+      mixed culture
+    definition: Species mapping only; no strain accessions/authentication. Two-month
+      adaptation to7% dust and20g/L Cu.
+    evidence_ids:
+    - record
+    - primary_text
+    - figure1
+    - authority_checks
+  - name: substrate_and_pretreatment
+    value: pH1.5 acid preleach at10%wt/vol
+    definition: 65/80% at60/120min are fractions of acid-soluble Cu, not total raw-feed
+      recovery; residue mass balance absent.
+    evidence_ids:
+    - record
+    - primary_text
+    - figure1
+    - authority_checks
+  - name: controls
+    value: Biotic/sterile flasks at2/4/7% after16/23/30days; no sterile continuous
+      train
+    definition: Different durations preclude loading-only comparison, and sterility
+      procedure/replication unavailable.
+    evidence_ids:
+    - record
+    - primary_text
+    - figure1
+    - authority_checks
+  - name: conditions
+    value: Two3-L vessels/2.1-L working volumes;2% startup,10% inoculum,32C,pH1.8,200rpm,aeration1L/L/min
+    definition: Sequential loading/residence/temperature changes in one180-day run,
+      not replicated factorial design.
+    evidence_ids:
+    - record
+    - primary_text
+    - figure1
+    - authority_checks
+- assessment_id: outcome
+  area: evidence
+  topic: Qualified extraction and operational limits
+  outcome: supported
+  target_ids:
+  - cmmmech:copper-smelter-flue-dust
+  evidence_ids:
+  - record
+  - primary_text
+  - primary_rest
+  - figure2
+  - figure3
+  - figure4
+  - figure5
+  summary: Source percentages remain scoped to preleached feed and solid-residue analyses;
+    record preserves graphical/tabular and accounting limits. No product recovery
+    or mineral-specific causal attribution.
+  dimensions:
+  - name: outcome
+    value: Source final-stage89.7/90.3/86.8%, at2/4/7% feed and2.7/4/6days overall
+    definition: Whole two-stage residence, not per-vessel duration; Table4 maxima
+      not equated to all-time startup peaks.
+    evidence_ids:
+    - record
+    - primary_text
+    - primary_rest
+    - figure2
+    - figure3
+    - figure4
+    - figure5
+  - name: operational_failures
+    value: 7% instability, batch interruption and1000mL reactor pulp exchange; solids9%
+      with7% feed
+    definition: Eventual6-day result includes intervention, not uninterrupted stable6-day
+      test.
+    evidence_ids:
+    - record
+    - primary_text
+    - primary_rest
+    - figure2
+    - figure3
+    - figure4
+    - figure5
+  - name: concentration_limits
+    value: No condensers first78days, then estimated10%volume loss per reactor without
+      continuous makeup
+    definition: Solution concentrations do not directly measure fraction extracted;
+      phase-to-element balance unresolved.
+    evidence_ids:
+    - record
+    - primary_text
+    - primary_rest
+    - figure2
+    - figure3
+    - figure4
+    - figure5
+  - name: deployment
+    value: Laboratory2.1-L working-volume stages
+    definition: Source term pilot plant retained as terminology, not industrial microbial
+      operation.
+    evidence_ids:
+    - record
+    - primary_text
+    - primary_rest
+    - figure2
+    - figure3
+    - figure4
+    - figure5
+- assessment_id: provenance
+  area: provenance
+  topic: Honest access and current history
+  outcome: supported
+  target_ids:
+  - cmmmech:copper-smelter-flue-dust
+  evidence_ids:
+  - record
+  - history
+  - schema
+  - authority_checks
+  - validation
+  summary: Full text/tables and original graphics support the narrow claims; local
+    PDF-layout gap is disclosed. Canonical CREATE and inline event describe actual
+    current curation.
+  dimensions:
+  - name: access
+    value: Complete web-extracted original text plus five original publisher JPEGs
+    definition: No acquired main-PDF or table-image layout claim; original table extraction
+      sufficient for scoped comparisons.
+    evidence_ids:
+    - record
+    - history
+    - schema
+    - authority_checks
+    - validation
+  - name: review
+    value: Independent root reading after native inspection
+    definition: Curator was round43_hardmetal; root did not edit this record.
+    evidence_ids:
+    - record
+    - history
+    - schema
+    - authority_checks
+    - validation
+findings: []
+actions: []
+limitations:
+- No independent experimental replication, stock authentication or complete material-balance
+  reconstruction.
+- Original PDF/page-layout acquisition failed; complete original web-extracted text/tables
+  and actual publisher figures were inspected.
+- No matched continuous abiotic comparison, replicated parameter matrix or uncertainty
+  supplied. Source inconsistencies remain explicitly bounded.
+- Notice/dedup searches bounded to described returned sets/roots; no source exhaustion
+  claimed.
+- Batch just check, nonempty/history/review and render checks run subsequently by
+  coordinator.
+tags:
+- round60
+- independent
+- copper-smelter-flue-dust
+```

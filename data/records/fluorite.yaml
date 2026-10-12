@@ -1,0 +1,191 @@
+id: cmmmech:fluorite
+name: Fluorite
+material_kind: mineral
+description: >-
+  Fluorite is the calcium fluoride mineral CaF2, listed with grandfathered
+  status G in the IMA-CNMNC September 2026 mineral list. Its original-description
+  year is unresolved in that list; no numbered approval accession is asserted.
+  The Handbook of Mineralogy describes cubic fluorite and natural hydrothermal,
+  sedimentary and igneous occurrences. This mineral owner is distinct from the
+  traded fluorspar commodity and elemental fluorine. The experiments below use
+  ground natural crystals reported as 99% CaF2 and concern bacterial-cell-associated
+  flocculation and settling. They establish neither mineral dissolution nor
+  production of a specified fluorspar grade. No criticality designation is
+  inherited from the commodity or element, and no industrial deployment is claimed.
+sources:
+  - id: ima_2026_09
+    title: >-
+      IMA-CNMNC. The New IMA List of Minerals, September 2026. Definitions on
+      PDF page 1; Fluorite row on page 75: CaF2, G, original year shown as
+      a question mark, country unknown. Fresh issuing-site original inspected.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-12'
+  - id: handbook_fluorite
+    title: >-
+      Handbook of Mineralogy, Fluorite, CaF2. Complete one-page original,
+      version 1, copyright 2001-2005. Natural occurrence and cubic identity;
+      its reference powder pattern is explicitly synthetic.
+    url: https://handbookofmineralogy.org/pdfs/fluorite.pdf
+    accessed_on: '2026-10-12'
+  - id: haas1999
+    title: >-
+      Haas SR, Nascimento FR, Schneider IAH and Gaylarde C (1999).
+      Flocculation of fine fluorite particles with Corynebacterium xerosis.
+      Revista de Microbiologia 30(3), 225-230. DOI
+      10.1590/S0001-37141999000300007. Complete six-page original PDF,
+      all six figures, Table 1 and efficiency equation inspected and
+      cross-checked with official SciELO full text; no separate supplement
+      identified in the inspected article and official inventory.
+    url: https://doi.org/10.1590/S0001-37141999000300007
+    accessed_on: '2026-10-12'
+  - id: rigo2002
+    title: >-
+      Rigo LN, Pinto AM, Denardin ND and Schneider IAH (2002). Flocculation
+      of fine fluorite particles with Corynebacterium xerosis and commercial
+      long chain polymers. Brazilian Journal of Microbiology 33(4), 331-332.
+      DOI 10.1590/S1517-83822002000400010. Complete official SciELO HTML
+      and its original Table 1 graphic inspected; local PDF acquisition
+      failed, so print-layout inspection is not claimed. No separate
+      supplement identified in the official full-text inventory.
+    url: https://doi.org/10.1590/S1517-83822002000400010
+    accessed_on: '2026-10-12'
+  - id: ncbi_xerosis
+    title: >-
+      NCBI Taxonomy, taxon 1725, Corynebacterium xerosis, species. The
+      mapping does not authenticate the unnumbered commercial cultures
+      used by Haas et al. or Rigo et al.; no type-strain ID is substituted.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1725&mode=Info
+    accessed_on: '2026-10-12'
+mechanisms:
+  - id: cell_associated_fluorite_flocculation
+    name: Bacterial-cell-associated flocculation and settling of fluorite particles
+    process: separation
+    microbial: true
+    organisms:
+      - id: NCBITaxon:1725
+        label: Corynebacterium xerosis
+    description: >-
+      Washed bacterial suspensions increased aggregation and settling of
+      fine fluorite particles in laboratory jar tests. Optical microscopy
+      and opposite surface-charge signs are consistent with cell adhesion
+      and bridging, the authors' proposed explanation. The experiments do
+      not isolate a molecular adhesin, extracellular polymer, enzyme or
+      metabolic requirement. Cell viability was not established during
+      flocculation, and microbial involvement here does not imply growth
+      or dissolution of the mineral during the assay.
+    context: >-
+      Haas et al. used natural crystals reported as 99% CaF2 from an unnamed
+      mining company in Criciuma, Santa Catarina, Brazil. Laboratory grinding
+      gave the Table 1 size distribution, with a reported median about
+      12.5 micrometres; no specimen accession, experimental XRD or detailed
+      impurity assay is supplied. The source names Corynebacterium xerosis
+      from Caroline Biological Supply Company, USA, without a strain number
+      or sequence. Cells were cultivated for 72 h in nutrient broth in
+      continuously shaken 300 mL flasks at 37 degrees C, centrifuged, washed
+      twice in distilled water, suspended at 2 g/L and stored at 5 degrees C
+      for use within 48 h. These cultivation conditions do not specify the
+      physical jar-test temperature. Jar tests used 1000 mL suspensions at
+      10 g/L fluorite, 1 min stirring at 250 rpm, then 2 min at 50 rpm and
+      gravity settling. Samples were withdrawn 10 cm below the water surface
+      at specified settling times. The time and dosage series used pH
+      7.0 +/- 0.2; a separate series varied pH. No matched killed-cell,
+      cell-free culture-supernatant or extracellular-polymer control is
+      described. Jar-test replication and uncertainty are not specified
+      in the 1999 paper; its 20-reading averages concern electrophoretic
+      measurements, not 20 replicated settling tests.
+    evidence:
+      - source_ref: haas1999
+        supports: support
+        explanation: >-
+          Figures 1-3 show aggregated particles with cells, faster removal
+          of suspended solids from the sampling level and lower residual
+          turbidity than the no-flocculant comparison. Control particles
+          also settle, increasingly with time. Solids were measured
+          gravimetrically; page 226 defines efficiency as 100 times
+          (initial minus final suspension solids concentration) divided
+          by initial concentration. This sampling-level depletion is
+          neither dissolved-fluoride removal nor an isolated mineral
+          mass yield, impurity separation or product-grade measurement.
+      - source_ref: haas1999
+        supports: partial
+        explanation: >-
+          Figures 4-5 support dosage and pH dependence, with high settling
+          efficiency near neutral pH. The Results prose reports about
+          96% removal at 40 mg/L cells after 1 min and no improvement
+          above that dosage, whereas Figure 4 visibly continues rising
+          toward a plateau at higher plotted concentrations. An exact
+          universal 40 mg/L optimum or 96% outcome is therefore not
+          adopted. Figure 3's with-cell and no-cell traces also begin
+          at different plotted turbidity levels; the prose's 130-to-20
+          NTU reduction is not treated as a shared measured baseline.
+      - source_ref: haas1999
+        supports: partial
+        explanation: >-
+          Figure 6 and the Methods show negative cell and positive
+          fluorite zeta potentials near pH 7 in a separate 1 mmol/L
+          NaNO3 measurement medium. These signs are compatible with
+          electrostatic association but do not establish its exclusive
+          causal role. The favorable pH interval is an empirical
+          suspension result, not proof of selective separation of
+          fluorite from gangue or a cell-specific chemical reaction.
+      - source_ref: rigo2002
+        supports: support
+        explanation: >-
+          The later study compares cells with three commercial polymers
+          and a no-flocculant control using 1000 mL, 10 g/L suspensions
+          initially at pH 6.0 +/- 0.5, the same stated stirring sequence
+          and sampling after 1 min of settling. Cells were prepared
+          similarly, but the 2 g/L stock is explicitly on a dry basis
+          and was used within 24 h. Table 1 reports three replicates
+          as mean and standard deviation: 40 mg/L cells gave 97.3 +/-
+          0.2% solids removal, versus 12.2 +/- 2.1% without flocculant.
+          Corresponding residual turbidities were 33 +/- 16.2 and
+          99 +/- 1.4 NTU; equilibrium pH values were 7.30 +/- 0.10
+          and 6.85 +/- 0.06. Thus the endpoints were not pH-matched,
+          and the reported suspension-solids removal is not a dissolved
+          metal extraction or purified fluorite yield.
+      - source_ref: rigo2002
+        supports: partial
+        explanation: >-
+          Table 1 uses 2 mg/L for each polymer: anionic Nalco 9915 gave
+          99.2 +/- 0.7% solids removal and 31 +/- 1.7 NTU, cationic
+          Nalco 8589 gave 96.6 +/- 1.6% and 43 +/- 12.4 NTU, and
+          nonionic Nalco 4032 gave 50.3 +/- 3.8% and 88 +/- 1.6 NTU.
+          Efficient settling therefore did not require bacterial cells.
+          The authors describe larger bacterial flocs but more variable
+          residual turbidity and unattached cells remaining in water;
+          these observations do not establish microbial superiority.
+          The cell dosage exceeds the polymer dosage, and the source
+          explicitly calls for future large-scale production research.
+          No industrial competitiveness, deployment or recovery rate
+          is inferred from these bench comparisons.
+      - source_ref: rigo2002
+        supports: context_only
+        explanation: >-
+          The later article cites the 1999 study and uses overlapping
+          authorship, commercial culture provenance and source region.
+          It is a separate stated comparison, not an independent-laboratory
+          replication or proof of a newly sampled mineral lot. Its
+          official HTML gives the grinding cutoff as 37 mm alongside
+          400# Tyler, an unresolved unit inconsistency; no corrected
+          size distribution is reconstructed. Neither study measures
+          mineral dissolution, fluoride speciation, cell viability
+          during settling or the composition of an isolated product.
+      - source_ref: ncbi_xerosis
+        supports: context_only
+        explanation: >-
+          Taxon 1725 identifies the currently named species. Neither
+          paper provides an accession that links its experimental stock
+          to the NCBI type strain or a genome, so species mapping does
+          not authenticate the culture or establish strain-level causality.
+curation_history:
+  - timestamp: '2026-10-12T14:46:58.159293Z'
+    curator: codex (GPT-6; codex)
+    action: create
+    summary: >-
+      Added the fluorite mineral owner and qualified cell-associated settling
+      evidence from complete primary sources. Retained polymer and no-cell
+      comparisons, denominator and source conflicts, taxon/phase/scale limits,
+      and separation from the fluorspar commodity.
+history_refs:
+  - history/records/fluorite/2026-10-12T144633Z-codex-8f4754.yaml

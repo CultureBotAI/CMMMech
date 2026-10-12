@@ -1,0 +1,38 @@
+{
+  "recorded_at": "2026-10-12T15:02:22.924768Z",
+  "reviewer": "Codex /root/round27_superalloy; GPT-6; codex",
+  "authorship": "Fluorite curator and independent electrolyte reviewer; did not author the affected traction record or its review. Publication identity audit only.",
+  "verdict": "needs_curation",
+  "findings": [
+    {
+      "finding_id": "F1",
+      "issue_key": "CMMMech.round60.traction-review.canonical-target-id",
+      "severity": "minor",
+      "status": "open",
+      "affected_paths": [
+        "reviews/structured/20261012T150009Z-traction-battery-hydrometallurgical-residue-round60-science/review.yaml"
+      ],
+      "evidence": "targets[0].target_id and scope.reviewed_target_ids[0] contain the bare slug, whereas the maintained record id has the cmmmech: prefix. The real exact-coverage gate therefore accepts only 277 of 278 current records. Native review-schema validity does not establish correct maintained identity.",
+      "acceptance": "Preserve the initial review. Capture all unchanged record/history/dossier/schema contexts in a fresh native inspection; independently reassess and save a completed scientific successor with canonical cmmmech: identity in target and reviewed scope. Preserve failed receipts, update actual review count and selected manifest review, and rerun affected structured-review and exact-coverage gates. No fabricated record EDIT or unchanged scientific tests rerun is required."
+    }
+  ],
+  "unresolved_findings": [
+    "F1"
+  ],
+  "reviewed_document_sha256": {
+    "reviews/structured/20261012T150009Z-traction-battery-hydrometallurgical-residue-round60-science/review.yaml": "2f9b58ab043a7c8e76858fe0da4ce83be4817858d92a9feed4cbab4638071e12",
+    "data/records/traction-battery-hydrometallurgical-residue.yaml": "5a25e40a1c4dfc8fd3ba88ed7b9dcd711219dc07d9ec3e6ecc169040cc52b6b6"
+  },
+  "failed_receipt": {
+    "path": "/private/tmp/cmm-round60-local-coverage.json",
+    "sha256": "22374a5f4cff130888a1645707ffbdd522223d35b346f0b07e76a607fab1a8ff",
+    "record_count": 278,
+    "covered_records": 277
+  },
+  "working_revision": "3ac02ecf15ba53e28b15b2f4afcdcb083d0a226c",
+  "scope": "Exact current review-to-record identity binding; no scientific claim defect found or implied. Coordinator discovered gate failure; this auditor independently read and confirmed the exact cause.",
+  "corrections": [],
+  "unresolved_questions": [
+    "Await fresh canonical-identity scientific successor and affected gate receipts."
+  ]
+}

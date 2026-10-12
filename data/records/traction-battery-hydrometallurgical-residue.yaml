@@ -1,0 +1,101 @@
+id: cmmmech:traction-battery-hydrometallurgical-residue
+name: Traction-battery hydrometallurgical residue
+material_kind: secondary_resource
+description: Residual solids from acid leaching in wet recovery of nickel or cobalt from waste traction-battery
+  cathode materials and other recycled wastes. The curated study used separate nickel-line and cobalt-line
+  residues from an unnamed Chinese enterprise; their compositions are not pooled. The source calls these
+  residues slags, but does not establish molten-slag origin. They are downstream processing residues,
+  distinct from mechanically prepared battery black mass, intact batteries, a pure cathode compound and
+  isolated nickel or cobalt products. Exact incoming battery chemistries and the contribution of other
+  wastes are unspecified. No constituent-element criticality is inherited.
+sources:
+- id: lu2025
+  title: Lu, H., Zhang, H., Chen, X., Wang, L. and Yan, X. (2025). Bioleaching of sludge from acid-leached
+    waste traction batteries used in electric vehicles for the extraction of Ni and Co using optimized
+    microbial consortia. RSC Advances 15, 45979–45985. DOI 10.1039/D5RA07472J; complete Europe PMC XML,
+    Sections 2–3, Tables 1–2, original Figures 1–6 and two-page SI Table S1.
+  url: https://doi.org/10.1039/D5RA07472J
+  accessed_on: '2026-10-12'
+- id: ncbi20261012
+  title: 'NCBI Taxonomy, live species nodes accessed 2026-10-12: Acidithiobacillus ferrooxidans 920, Leptospirillum
+    ferriphilum 178606, Acidithiobacillus thiooxidans 930, Acidithiobacillus caldus 33059 and Sulfobacillus
+    thermotolerans 338644. Species mappings, not authentication of experimental stocks.'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?command=show&id=178606&mode=node
+  accessed_on: '2026-10-12'
+mechanisms:
+- id: acidophile_culture_associated_leaching
+  name: Acidophile culture-associated release from separate nickel and cobalt residues
+  process: bioleaching
+  microbial: true
+  description: Living acidophilic cultures were associated with increased dissolved-metal release from
+    separate acid-leached nickel-line and cobalt-line residues. Single cultures and mixtures were compared.
+    Iron and sulfur metabolism is a proposed explanation; the experiment does not isolate a unique cellular
+    pathway or establish the contribution of each mixture member. The claim is laboratory solution release
+    rather than isolated-product recovery or industrial deployment.
+  organisms:
+  - id: NCBITaxon:920
+    label: Acidithiobacillus ferrooxidans
+  - id: NCBITaxon:178606
+    label: Leptospirillum ferriphilum
+  - id: NCBITaxon:930
+    label: Acidithiobacillus thiooxidans
+  - id: NCBITaxon:33059
+    label: Acidithiobacillus caldus
+  - id: NCBITaxon:338644
+    label: Sulfobacillus thermotolerans
+  context: 'Sections 2.1–2.3: source-reported stocks were A. ferrooxidans ATCC 23270 (Af), L. ferriphilum
+    AS1 6358 (Lf), historical Thiobacillus thiooxidans BJMCC 01101 (Tt), A. caldus CGMCC 1.15711 (Ac)
+    and S. thermotolerans DSM 17362 (St). Seven days of preculture preceded residue addition in 3-L beakers
+    with a 2-L 9K-medium system, 200 mL culture and initial pH 1.9. Stirring suspended the solids; evaporated
+    water was replenished daily and filtered samples analyzed by ICP-MS through day 12. Initial 10% loading
+    denotes 200 g solids per 2 L; 20–50% arms used 400–1000 g. Af, Lf, Tt and the blank CK were tested
+    at 30 degrees C, Ac/St at 40 degrees C; mixtures used 30, 40 or 45 degrees C. MC45-40AS contained
+    equal starting volumes of all five cultures at 45 degrees C; MC40-25St contained equal Af/Lf/Tt/St
+    volumes at 40 degrees C. Starting inoculum proportions do not demonstrate post-growth community composition.
+    No matched 40/45-degree abiotic series, pH/iron-matched controls, replication count or error definition
+    is reported. The text mentions optimization of sulfur and ferrous sulfate without complete final amounts.'
+  evidence:
+  - source_ref: lu2025
+    supports: support
+    explanation: Sections 3.1.1–3.1.4 and Figures 1–4 show higher source-defined leaching ratios in inoculated
+      arms than the 30-degree blank, with mixture composition, temperature and loading affecting the curves.
+      Only the 30-degree single-culture comparison shares the blank temperature. Increasing solids loading
+      generally lowered the final released fraction. Neither an independent temperature effect nor synergy
+      among members is established by all comparisons. No percentage is adopted as a verified whole-process
+      recovery yield.
+  - source_ref: lu2025
+    supports: partial
+    explanation: Section 2.1 reports 0.8214% Ni in nickel residue and 0.4998% Co in cobalt residue, whereas
+      original SI Table S1 reports 7209 ± 56 PPM Ni and 4093 ± 40 PPM Co for those respective feeds. The
+      basis of the disagreement and uncertainty terms is unexplained. No reconciled inventory, normalized
+      concentration observation or corrected extraction yield is inferred. Tables 1–2 and Figure 2 label
+      MC40-25Ac, while portions of the prose and caption call it MC40-25AS; these are not treated as an
+      additional consortium.
+  - source_ref: lu2025
+    supports: partial
+    explanation: The abstract/conclusion assign 75.4% Co release to MC40-25St, Section 3.1.2 states 79.6%,
+      and the loading discussion gives 82.9% at 10% loading. The text also claims a 1.18-fold improvement
+      over a 72.3% single-culture result without consistent arithmetic. These source discrepancies preclude
+      selection of a definitive optimized Co yield. Ni kinetics report 88.4%, while the separate BCR presentation
+      reports 90.3% leached; the record does not silently equate these endpoints.
+  - source_ref: lu2025
+    supports: partial
+    explanation: Section 2.4 and Figures 5–6 use operational BCR acid-soluble, reducible, oxidizable and
+      residual fractions alongside a leached fraction. These are extraction categories, not verified mineral
+      phases or oxidation states. No closed mass balance, recovered solid product, product purity, independent
+      consortium authentication or industrial reactor performance is demonstrated. The supplier being
+      industrial does not change the laboratory deployment scope.
+  - source_ref: ncbi20261012
+    supports: context_only
+    explanation: Live species nodes resolve the five organism CURIEs and the historical Thiobacillus thiooxidans
+      name to A. thiooxidans. ATCC 23270 and DSM 17362 appear among the respective type-strain links,
+      but those links do not authenticate the cultures used. AS1 6358, BJMCC 01101 and CGMCC 1.15711 remain
+      source-reported stock labels without an asserted collection CURIE or inferred causal assignment.
+history_refs:
+- history/records/traction-battery-hydrometallurgical-residue/2026-10-12T144943Z-codex-e18c9e.yaml
+curation_history:
+- timestamp: '2026-10-12T14:49:44.531130+00:00'
+  curator: Codex (GPT-6; codex)
+  action: CREATE
+  summary: Created the distinct downstream wet-processing residue from complete original evidence, retaining
+    feed/yield conflicts, separate residue arms and comparative-control limitations.
