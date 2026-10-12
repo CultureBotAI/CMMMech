@@ -1,0 +1,413 @@
+schema_version: 1.0.0
+review_id: 20261012T112153Z-tetrahedrite-concentrate-round55-science
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of tetrahedrite concentrate
+started_at: '2026-10-12T11:17:56.875524Z'
+finished_at: '2026-10-12T11:21:53Z'
+reviewer:
+  identity: Codex /root/round43_hardmetal
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The superalloy agent authored the record, CREATE history and
+    source dossier. This reviewer authored a separate source-only clay-recovery dossier
+    and did not alter the reviewed record or evidence context. Native inspect captured
+    target/history/schema before judgment, then added both frozen dossier inputs before
+    assessing their claims.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The mixed primary-resource identity and qualified culture-associated laboratory
+  leaching are supported by the complete original article and supplement. The record
+  preserves unit, control, phase-attribution, heterogeneous-transformation and recovery
+  limits. No corrective finding was identified in the exact frozen state.
+source:
+  git_revision: 19d0972767b266f86a256a3f36f0f7177ab4cf25
+  state: working_tree
+  inputs:
+  - path: data/records/tetrahedrite-concentrate.yaml
+    sha256: 283fbf1d2dc0b4a213a83df193daa33c54c65e9e007116c6947d2a2f3518cb7f
+    role: target
+  - path: history/records/tetrahedrite-concentrate/2026-10-12T111707Z-codex-f553c9.yaml
+    sha256: 6160a466245fc8e2485719a01cf18a8fa5bd5ff96e193bb4466c9b2c6ee12ddd
+    role: context
+  - path: research/sources/round55-tetrahedrite/20261012T111906Z-source-investigation.json
+    sha256: aca70251b1474b82748c4af2510a2c417e7c6a5fa3a689152aaa97badfeae63d
+    role: context
+  - path: research/sources/round55-tetrahedrite/20261012T111906Z-source-investigation.md
+    sha256: ed51ee73e99421820d9cbebb3e2d76cb3b82366ec57dacbe914ac601ef8132ba
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:tetrahedrite-concentrate
+  path: data/records/tetrahedrite-concentrate.yaml
+  label: Tetrahedrite concentrate
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/tetrahedrite-concentrate.yaml
+    role: maintained record
+scope:
+  description: Entire frozen record, CREATE history, paired dossier and schema; complete
+    primary scientific methods/results/discussion/conclusions, all main figures and
+    tables and full supplement; current retained IMA authority and live taxonomy/culture
+    catalogue checks.
+  selection: Parent-assigned independent scientific assessment of this new concentrate
+    owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:tetrahedrite-concentrate
+checks:
+- check_id: named
+  name: Independent named validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 PYTHONDONTWRITEBYTECODE=1
+    uv run --locked cmmmech validate data/records/tetrahedrite-concentrate.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:tetrahedrite-concentrate
+  summary: One record checked, zero failed; actually executed by this reviewer.
+- check_id: hashes
+  name: Native inputs and source artifact checksums
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:tetrahedrite-concentrate
+  summary: All five native inputs,57 raw-artifact hashes and seven receipt hashes
+    independently match.
+- check_id: cohort_batch
+  name: Parent-completed cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:tetrahedrite-concentrate
+  summary: Actual terminal result and linked log checksum independently verified;
+    full suite not duplicated by reviewer.
+- check_id: cohort_nonempty
+  name: Parent-completed cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:tetrahedrite-concentrate
+  summary: Actual terminal result and linked log checksum independently verified;
+    full suite not duplicated by reviewer.
+- check_id: cohort_history
+  name: Parent-completed cohort history
+  command: uv run --locked cmmmech validate-history --base 19d0972767b266f86a256a3f36f0f7177ab4cf25
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:tetrahedrite-concentrate
+  summary: Actual terminal result and linked log checksum independently verified;
+    full suite not duplicated by reviewer.
+- check_id: cohort_render_check
+  name: Parent-completed cohort render-check
+  command: just render-check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:tetrahedrite-concentrate
+  summary: Actual terminal result and linked log checksum independently verified;
+    full suite not duplicated by reviewer.
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/tetrahedrite-concentrate.yaml
+  locator: Entire captured input
+  accessed_at: '2026-10-12T11:21:53Z'
+  support: supports
+  summary: Exact input read and rechecked against native inspection.
+  snapshot_sha256: 283fbf1d2dc0b4a213a83df193daa33c54c65e9e007116c6947d2a2f3518cb7f
+- evidence_id: history
+  kind: record_content
+  reference: history/records/tetrahedrite-concentrate/2026-10-12T111707Z-codex-f553c9.yaml
+  locator: Entire captured input
+  accessed_at: '2026-10-12T11:21:53Z'
+  support: supports
+  summary: Exact input read and rechecked against native inspection.
+  snapshot_sha256: 6160a466245fc8e2485719a01cf18a8fa5bd5ff96e193bb4466c9b2c6ee12ddd
+- evidence_id: dossier_json
+  kind: record_content
+  reference: research/sources/round55-tetrahedrite/20261012T111906Z-source-investigation.json
+  locator: Entire captured input
+  accessed_at: '2026-10-12T11:21:53Z'
+  support: supports
+  summary: Exact input read and rechecked against native inspection.
+  snapshot_sha256: aca70251b1474b82748c4af2510a2c417e7c6a5fa3a689152aaa97badfeae63d
+- evidence_id: dossier_md
+  kind: record_content
+  reference: research/sources/round55-tetrahedrite/20261012T111906Z-source-investigation.md
+  locator: Entire captured input
+  accessed_at: '2026-10-12T11:21:53Z'
+  support: supports
+  summary: Exact input read and rechecked against native inspection.
+  snapshot_sha256: ed51ee73e99421820d9cbebb3e2d76cb3b82366ec57dacbe914ac601ef8132ba
+- evidence_id: schema
+  kind: record_content
+  reference: src/cmmmech/schema/cmmmech.yaml
+  locator: Entire captured input
+  accessed_at: '2026-10-12T11:21:53Z'
+  support: supports
+  summary: Exact input read and rechecked against native inspection.
+  snapshot_sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+- evidence_id: main
+  kind: primary_source
+  reference: https://doi.org/10.1007/s40831-025-01089-0
+  locator: Original DNB15-page online-first PDF; scientific text/pages1–12 visually
+    inspected; Figures1–8, graphical abstract and Tables1–2
+  accessed_at: '2026-10-12T11:21:53Z'
+  support: supports
+  summary: Observed mixed feed, preparation, independent culture arms, abiotic comparison
+    and source inconsistencies support the qualified record. Full original scientific
+    text inspected; main reference pages13–15 not separately viewed as images.
+  snapshot_sha256: 5967395754b051635f6aa660c61e1378b39bf7391e2500c0d9d7fa884b32f402
+- evidence_id: si
+  kind: primary_source
+  reference: /private/tmp/cmm-round55-tetrahedrite-research/raw/kupka2025-supplement.pdf
+  locator: All seven original supplement pages and FiguresS1–S12
+  accessed_at: '2026-10-12T11:21:53Z'
+  support: supports
+  summary: Visual inspection confirms geological feed/XRD, heterogeneous grain alteration,
+    repeated main7/SI6–7 images, surface XPS scope, wrong S2 cross-reference and short
+    gas-analysis timecourse. Shorter SI title is linked by publisher and matching
+    authors.
+  snapshot_sha256: 7130190b56a1ae89a3ad4d0005d528a97fd4c5b26227952c11956142817d232c
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Original issuing-authority pages1 and215
+  accessed_at: '2026-10-12T11:21:53Z'
+  support: supports
+  summary: September2026 definitions and seven tetrahedrite suffix-species entries
+    inspected from transparently reused authority bytes. Generic concentrate label
+    does not establish a modern suffix-species identity.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: taxonomy
+  kind: authority
+  reference: /private/tmp/cmm-round55-tetrahedrite-independent/authority-details.json
+  locator: Live NCBI920/160808 and DSM14882/17398 pages read2026-10-12
+  accessed_at: '2026-10-12T11:21:53Z'
+  support: supports
+  summary: Taxon IDs resolve species, DSM14882 is TM and DSM17398 is SS3; NCBI ferrivorans
+    type strain differs from SS3. DSM14882 catalogue cultivation guidance discourages
+    shaking, unlike the experimental protocol. This is a scope limitation, not proof
+    of misidentification.
+  snapshot_sha256: 2cc2cd09de9111a435814346af68e5dfba5a582e5fb15246cbb8adda03f7edca
+- evidence_id: publisher
+  kind: authority
+  reference: /private/tmp/cmm-round55-tetrahedrite-independent/authority-details.json
+  locator: Publisher bibliographic and rights section
+  accessed_at: '2026-10-12T11:21:53Z'
+  support: supports
+  summary: DOI/title/authors match original. Online/version-of-record date23April2025
+    differs from December2025 issue pagination3685–3699; no experiment duplication
+    inferred.
+  snapshot_sha256: 2cc2cd09de9111a435814346af68e5dfba5a582e5fb15246cbb8adda03f7edca
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round55-tetrahedrite-independent/search-and-open.json
+  locator: Actual exact-DOI notice and contradictory-outcome search sets
+  accessed_at: '2026-10-12T11:21:53Z'
+  support: supports
+  summary: No affecting notice identified in returned sets; primary2023 comparison
+    lead has a different feed/pretreatment and remains unassessed in full. Search
+    snippets were not used as accepted quantitative evidence.
+  snapshot_sha256: d4ca16501944bbed8dd771bee2b8e443565cd56d17b5e63e91c1b11576e7c764
+  search_scope: 'Queries: "10.1007/s40831-025-01089-0" correction retraction erratum;
+    "tetrahedrite" "bioleaching" antimony low yield Kupka Aghazadeh. First returned
+    sets only, no pagination or universal absence inference; publisher and authority
+    pages opened separately.'
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round55-tetrahedrite-independent/pre-gate-verification.json
+  locator: Independent hidden/ignored/symlink-followed exact-DOI/feed search and curator
+    broader receipt
+  accessed_at: '2026-10-12T11:21:53Z'
+  support: supports
+  summary: Current and original scientific trees and existing cited raw roots checked
+    with explicit text-extension boundary. Distinct tennantite and enargite feeds
+    and earlier tetrahedrite leads are not this accepted experiment.
+  snapshot_sha256: 61d6e99fc998a2192bd82179a9d1ac830b73110e63fa10a02ad2005b158dc31a
+  search_scope: Current and original scientific trees plus existing curator-referenced
+    raw roots, hidden/ignored included, symlinks followed, textual extensions only.
+    Missing roots and oversized files in curator discovery remain limits; no machine-wide
+    absence claim. Curator broader census lists nine missing roots and twelve oversized
+    logs; no claim that binaries or unrelated machine directories were exhaustively
+    decoded.
+- evidence_id: verification
+  kind: validation
+  reference: /private/tmp/cmm-round55-tetrahedrite-independent/verification.json
+  locator: Exact source/input hashes, visual scope and actual completed gates
+  accessed_at: '2026-10-12T11:21:53Z'
+  support: supports
+  summary: All digests and named/cohort results independently verified; checks do
+    not themselves establish scientific truth.
+  snapshot_sha256: 4b1a615f641a4c4dfd57d80e1ad0f71861ffb78fd432dd0cb2815775c00963dd
+- evidence_id: cohort
+  kind: validation
+  reference: /private/tmp/cmm-round55-final-terminal.json
+  locator: Completed cohort terminal and all command log digests
+  accessed_at: '2026-10-12T11:21:53Z'
+  support: supports
+  summary: Actual completed checks:317passed3skipped,261records309histories; required
+    commands all passed before final save.
+  snapshot_sha256: 942f087efd9017f58ea843f210551ce444e33e8bc79375821abb0c12c2dbf5e4
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Resource and nomenclature boundary
+  outcome: supported
+  target_ids:
+  - cmmmech:tetrahedrite-concentrate
+  evidence_ids:
+  - record
+  - main
+  - si
+  - ima
+  summary: Mixed mined and floated feed is a primary resource, separate from a suffix
+    mineral species, waste or elemental product. Bulk and selected-grain chemistry
+    remain distinct; no repaired assemblage or exact species is inferred.
+  dimensions:
+  - name: material_form
+    value: Mixed primary-resource flotation concentrate
+    definition: Strieborná/Mária Mine feed; source-generic tetrahedrite label, not
+      an IMA species assignment.
+    evidence_ids:
+    - main
+    - ima
+    - record
+  - name: criticality
+    value: Not asserted
+    definition: No jurisdiction/list/edition designation inherited from constituent
+      metals.
+    evidence_ids:
+    - record
+- assessment_id: mechanism
+  area: evidence
+  topic: Condition-specific microbial leaching
+  outcome: supported
+  target_ids:
+  - cmmmech:tetrahedrite-concentrate
+  evidence_ids:
+  - record
+  - main
+  - si
+  - taxonomy
+  summary: Separate washed late-exponential cultures and iron-free basal medium are
+    accurately represented. Greater Cu/sulfate release supports culture-associated
+    leaching; differing pH, iron exposure and potentially heat pretreatment limit
+    causal separation.
+  dimensions:
+  - name: organism_and_biomass
+    value: Living A.ferrooxidans DSM14882 and A.ferrivorans SS3 DSM17398 in separate
+      arms
+    definition: Species/culture labels supported without authenticating experimental
+      stocks or treating the pair as a consortium.
+    evidence_ids:
+    - main
+    - taxonomy
+    - record
+  - name: conditions
+    value: InitialpH1.5;2%pulp;25C;150rpm;120days;triplicate flasks
+    definition: Source conditions with unstated percentage basis, liquid/inoculum
+      volumes and sampling corrections preserved.
+    evidence_ids:
+    - main
+    - record
+  - name: controls
+    value: Acidic uninoculated heat-treated feed/medium
+    definition: No independently matched pH/ferric exposure; identical heat treatment
+      of inoculated feed is not explicit.
+    evidence_ids:
+    - main
+    - record
+- assessment_id: outcomes
+  area: evidence
+  topic: Measurements, counterevidence and recovery
+  outcome: supported
+  target_ids:
+  - cmmmech:tetrahedrite-concentrate
+  evidence_ids:
+  - main
+  - si
+  - record
+  summary: Unit conflicts, lower later dissolvedSb, higher abioticFe/Mn and culture-specific
+    Zn/Ag scope are retained. Residual cores, surface-specific spectra and inferred
+    stoichiometry do not establish pure products or complete phase conversion.
+  dimensions:
+  - name: outcome_basis
+    value: Filtered solution concentrations and heterogeneous solid observations
+    definition: Mobilization/depletion is not isolated metal recovery; fitted or composition-inferred
+      quantities remain separate.
+    evidence_ids:
+    - main
+    - si
+    - record
+  - name: deployment
+    value: Laboratory only
+    definition: Authors acknowledge rates may be too low for practical application;
+      no industrial deployment inferred.
+    evidence_ids:
+    - main
+    - record
+- assessment_id: provenance
+  area: provenance
+  topic: Exact state and source authority
+  outcome: supported
+  target_ids:
+  - cmmmech:tetrahedrite-concentrate
+  evidence_ids:
+  - history
+  - dossier_md
+  - dossier_json
+  - schema
+  - publisher
+  - dedup
+  - verification
+  - cohort
+  summary: Actual CREATE sidecar and inline event describe current curation. Five
+    frozen inputs,57 raw artifacts and seven receipts match; DOI/pagination and original/SI
+    binding checked. Named and parent cohort gates passed.
+findings: []
+actions: []
+limitations:
+- The experimental stocks were not independently sequenced or authenticated. DSM14882
+  catalogue shaking guidance differs from the study protocol; catalogue identity context
+  does not independently replicate or falsify that assay.
+- Source concentration-unit, phase-proportion, Table2 arsenic-statistics and figure-locator
+  inconsistencies remain unresolved. No corrected numerical copper yield or precise
+  phase assignment is asserted.
+- Control heat treatment, pH and ferric exposure are not independently matched; cell
+  density, liquid/inoculum volumes, percentage basis and sampling corrections remain
+  unavailable.
+- XPS is surface-specific, gas stoichiometry relies on Cu-derived reacted-phase estimates
+  and selected composition, and heterogeneous primary cores persist. No isolated product,
+  full mass balance or industrial performance is demonstrated.
+- All main scientific pages1–12 and every main/SI figure/table were independently
+  viewed. Reference pages13–15 were not separately visually inspected; earlier comparison
+  studies remain source-qualified context, not full-primary accepted experiments.
+  Notice/dedup searches are bounded; no machine-wide or universal absence claim.
+notes:
+- No maintained record, history or source-dossier bytes changed by this reviewer.
+  No Git/GitHub/governance mutation.
+- Scientific review of exact working-tree bytes; not a claim of publication or independent
+  experimental replication.
+tags:
+- round55
+- tetrahedrite-concentrate
+- independent
+- bioleaching
+- mixed-primary-resource

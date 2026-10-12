@@ -1,0 +1,217 @@
+{
+  "recorded_at": "2026-10-12T11:24:05.880857+00:00",
+  "base": "19d0972767b266f86a256a3f36f0f7177ab4cf25",
+  "scientific_base": "19d0972767b266f86a256a3f36f0f7177ab4cf25",
+  "branch": "curate/cmm-expansion-round55-20261012",
+  "counts": {
+    "record_count": 261,
+    "history_count": 309,
+    "structured_review_count": 319,
+    "review_base_count": 56,
+    "covered_records": 261
+  },
+  "record_actions": {
+    "tetrahedrite-concentrate": "CREATE",
+    "enargite-pyrite-concentrate": "CREATE"
+  },
+  "records": [
+    {
+      "slug": "tetrahedrite-concentrate",
+      "action": "CREATE",
+      "record": "data/records/tetrahedrite-concentrate.yaml",
+      "record_sha256": "283fbf1d2dc0b4a213a83df193daa33c54c65e9e007116c6947d2a2f3518cb7f",
+      "histories": [
+        {
+          "path": "history/records/tetrahedrite-concentrate/2026-10-12T111707Z-codex-f553c9.yaml",
+          "sha256": "6160a466245fc8e2485719a01cf18a8fa5bd5ff96e193bb4466c9b2c6ee12ddd"
+        }
+      ],
+      "review": "reviews/structured/20261012T112153Z-tetrahedrite-concentrate-round55-science/review.yaml",
+      "review_md": "reviews/structured/20261012T112153Z-tetrahedrite-concentrate-round55-science/review.md",
+      "review_sha256": "f8d5b6a5e35794731bc2de875b101ad28236751dc718a69fae82fd8a1ae0e659",
+      "review_md_sha256": "b37810163ac616fd1861a35008d67aefd8c17c4f39342214a270b5364809b540",
+      "reviewer": {
+        "identity": "Codex /root/round43_hardmetal",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "The superalloy agent authored the record, CREATE history and source dossier. This reviewer authored a separate source-only clay-recovery dossier and did not alter the reviewed record or evidence context. Native inspect captured target/history/schema before judgment, then added both frozen dossier inputs before assessing their claims."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [],
+      "dossiers": [
+        {
+          "path": "research/sources/round55-tetrahedrite/20261012T111906Z-source-investigation.json",
+          "sha256": "aca70251b1474b82748c4af2510a2c417e7c6a5fa3a689152aaa97badfeae63d"
+        },
+        {
+          "path": "research/sources/round55-tetrahedrite/20261012T111906Z-source-investigation.md",
+          "sha256": "ed51ee73e99421820d9cbebb3e2d76cb3b82366ec57dacbe914ac601ef8132ba"
+        }
+      ]
+    },
+    {
+      "slug": "enargite-pyrite-concentrate",
+      "action": "CREATE",
+      "record": "data/records/enargite-pyrite-concentrate.yaml",
+      "record_sha256": "95d205d0feb7212875387fa5ddba9e88f32765eb8e1c502926eb681643f35c1a",
+      "histories": [
+        {
+          "path": "history/records/enargite-pyrite-concentrate/2026-10-12T111529Z-codex-1c9c39.yaml",
+          "sha256": "f89113fd34cbe69078597cb98070375a30acd79edf3e674a126711b8bf1d6233"
+        }
+      ],
+      "review": "reviews/structured/20261012T112042Z-enargite-pyrite-concentrate-round55-independent/review.yaml",
+      "review_md": "reviews/structured/20261012T112042Z-enargite-pyrite-concentrate-round55-independent/review.md",
+      "review_sha256": "19ea17faf5b00372b58293cc8ae3295f48f9a3785964ade52498b47d99345244",
+      "review_md_sha256": "041ae3b75e931e950fdb6c49c0a67954be09a95679af39d0653cfe0ebe6c8051",
+      "reviewer": {
+        "identity": "Codex /root",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Record/history/dossier were authored by /root/round27_packaging. Root independently inspected primary evidence, captured the record with native inspect before final assessment, extended the capture for the frozen dossier and made no scientific input changes. Primary reading began before the formal target assessment; README/site/publication coordination is separate from scientific authorship."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [],
+      "dossiers": [
+        {
+          "path": "research/sources/round55-enargite/20261012T111812Z-source-investigation.json",
+          "sha256": "ca9d672000ff82fb51684684a26e5be52d0ac34cfc5218c55b88082a32c63397"
+        },
+        {
+          "path": "research/sources/round55-enargite/20261012T111812Z-source-investigation.md",
+          "sha256": "a3c9057120f650b52fdb8de7e491a36905014d388eff15f9f4b5389575120ba0"
+        }
+      ]
+    }
+  ],
+  "gate_receipts": {
+    "base": "19d0972767b266f86a256a3f36f0f7177ab4cf25",
+    "exit_code": 0,
+    "commands": [
+      {
+        "name": "batch",
+        "command": [
+          "just",
+          "check"
+        ],
+        "started_at": "2026-10-12T11:18:01.684949+00:00",
+        "finished_at": "2026-10-12T11:20:21.894116+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round55-final-batch.log",
+        "sha256": "368378eebc1e33c512b77ad50f461150276ae68c35cadd33086bb5a1002bb85c"
+      },
+      {
+        "name": "nonempty",
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate",
+          "--require-records"
+        ],
+        "started_at": "2026-10-12T11:20:21.894570+00:00",
+        "finished_at": "2026-10-12T11:20:27.263228+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round55-final-nonempty.log",
+        "sha256": "07ecaf0aaf13688ac91b566cb887c9df5a85979d24fbddaffe83d88993bbd4ea"
+      },
+      {
+        "name": "history",
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate-history",
+          "--base",
+          "19d0972767b266f86a256a3f36f0f7177ab4cf25"
+        ],
+        "started_at": "2026-10-12T11:20:27.263593+00:00",
+        "finished_at": "2026-10-12T11:20:30.250733+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round55-final-history.log",
+        "sha256": "c1801812798f7ab93a42704bf8ace6b2575514ffa80d5cb52c52945780c9ff22"
+      },
+      {
+        "name": "render-check",
+        "command": [
+          "just",
+          "render-check"
+        ],
+        "started_at": "2026-10-12T11:20:30.251368+00:00",
+        "finished_at": "2026-10-12T11:20:32.665562+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round55-final-render-check.log",
+        "sha256": "be156b3acc20d39b6bad41632b10eb7ccfc2c8a7fdeaec3f6236fbc67831aea6"
+      }
+    ]
+  },
+  "review_check_receipt": {
+    "command": [
+      "just",
+      "review-check",
+      "--base",
+      "19d0972767b266f86a256a3f36f0f7177ab4cf25",
+      "--require-reviews"
+    ],
+    "started_at": "2026-10-12T11:22:19.985013+00:00",
+    "finished_at": "2026-10-12T11:23:59.436026+00:00",
+    "exit_code": 0,
+    "log": "/private/tmp/cmm-round55-review-check.log",
+    "sha256": "609696f144095e2ed38214eb0fd3cc16f61bbf80b7c499eff5470f873829e900"
+  },
+  "exact_coverage_receipt": {
+    "path": "/private/tmp/cmm-round55-local-coverage.json",
+    "sha256": "07697db40e71c4ac946cdeba2d2bb348eaed513e15813bc88244b5cdf142b082",
+    "counts": {
+      "record_count": 261,
+      "history_count": 309,
+      "structured_review_count": 319,
+      "review_base_count": 56,
+      "covered_records": 261
+    }
+  },
+  "baseline": {
+    "scope": "Reuse just-completed fresh remote-main full checks at this exact unchanged commit/tree; no redundant rerun.",
+    "receipt": "/private/tmp/cmm-round54-postmerge-20261012-published-terminal.json",
+    "sha256": "8cafacdda0298bdd18138952313b62f0ea1366e8261a4cca69946c867343e6c9"
+  },
+  "deferred_sources": [
+    {
+      "path": "research/sources/round55-clay-recovery/20261012T111459Z-source-investigation.json",
+      "sha256": "1621c233d2d5d70c055e7b55cfa60efc97923fdd617353433bbedd8e56c0cce1"
+    },
+    {
+      "path": "research/sources/round55-clay-recovery/20261012T111459Z-source-investigation.md",
+      "sha256": "215ea0e6240bb01b54cedcf59db3c5828d10de5d724adf7a5f79e0c924c86552"
+    }
+  ],
+  "corrected_review_issues": [],
+  "open_source_issues": [
+    103,
+    104,
+    120,
+    129,
+    130,
+    133,
+    134,
+    137,
+    140,
+    153,
+    165,
+    169
+  ],
+  "closed_source_issues": [],
+  "exhausted": false,
+  "governance_snapshot": {
+    "path": "reviews/publication/20261012-round55/current-status.json",
+    "sha256": "7b7994ae2b775f774e73553663c80fbf40dd0fe3e9f065401d5d4225a4dd9610"
+  },
+  "preservation_receipt": {
+    "path": "reviews/publication/20261012-round55/preservation-prepublication.json",
+    "sha256": "73ab0da18c10624fae019724357bac8eacbadd4419d5eb179b0d4638c7bfef8a"
+  }
+}

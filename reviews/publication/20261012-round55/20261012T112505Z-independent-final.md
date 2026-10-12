@@ -1,0 +1,17 @@
+# Round 55 independent publication readiness audit
+
+UTC: 2026-10-12T11:25:05Z. Reviewer: Codex `/root/round27_packaging`, GPT-6, codex. Working base `19d0972767b266f86a256a3f36f0f7177ab4cf25`.
+
+Verdict: **pass** for current prepublication scope; no unresolved publication finding. Reviewer authored enargite-pyrite-concentrate and its source dossier/history and does not independently approve that science. Root independently reviewed it; a separate independent reviewer assessed tetrahedrite-concentrate. Reviewer did not author README, configuration, publication report/frontier/manifest or operational helpers. Superalloy independently audited the operational helpers and pure guard cases while disclosing its tetrahedrite authorship. This audit assesses document/provenance consistency and relies on separate native scientific reviews.
+
+README, report, frontier, manifest and integration/preservation snapshots agree with two new mixed-feed owners. Actual gates passed 317 tests with 3 skipped in 129.24 seconds, 261 records and 309 histories. Canonical checking accepts 319 review bundles; exact coverage verifies 261/261 records and 56 available review bases. Receipt/log hashes and terminal results match. The baseline is accurately described as exact-base reuse.
+
+- Both independent scientific reviews match final record bytes and bind their histories, source dossier pair and schema. The enargite review is authored by root, not this record curator; no self-acceptance is implied.
+- All 2110 prior base-tracked scientific/provenance files remain unchanged. README has exactly 261 unique record links matching the hidden/ignored-inclusive followed-symlink census. 361 bounded local links resolve; new/changed text and git diff have no whitespace errors.
+- 226 explicit raw path/hash bindings (194 unique) match their actual bytes. Acquisition and notice limits remain declared. Complete supplements do not substitute for missing Han/Zhao main methods; that source-only deferral creates no artificial record/history.
+- Current operational helper hashes match the separate independent static/AST audit and thirteen pure guard cases. This auditor read final configuration and report/commit/package consumers and their guards. Mutation helpers were not executed for this audit. Native queue/CI and exact-head peer requirements remain; cleanup is confined to the owned branch.
+- Governance/admission/rules snapshots match the report. Parent preservation verifies 7,187 original-main hidden/ignored nontracked entries and eight bounded skill entries plus Git state; this audit does not claim a repeated whole-machine walk.
+
+No corrective review issue or source closure is claimed. The timestamped11issue snapshot plus separate new Han2026 issue169 readback document twelve open source issues; this is not a claim of one simultaneous12issue fetch. Variable carbon effects, source quantitative conflicts, mixed communities and feed/control limits remain explicit. Neither concentrate implies isolated product recovery, universal microbial benefit, criticality or industrial deployment. The 2021 comparison source is already fully acquired/inspected; its possible future extension and the unacquired 2025 source remain distinct priorities.
+
+Commit, isolated exact-tree preflight, hosted PR/CI, queue merge, branch deletion, main synchronization and fresh postmerge validation are subsequent operations. This audit does not claim they already occurred. Exact document/helper hashes and evidence receipts are in the paired JSON.
