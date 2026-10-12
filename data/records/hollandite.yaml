@@ -1,0 +1,168 @@
+id: cmmmech:hollandite
+name: Hollandite
+material_kind: mineral
+description: >-
+  Hollandite is the barium manganese oxide mineral with IMA-CNMNC formula Ba(Mn4+6Mn3+2)O16
+  in the September 2026 list, which records redefined status and a 2012 special procedure.
+  The mineral species is distinct from the broader hollandite structure family, elemental
+  manganese, manganese ore and manganese oxalates. No criticality designation is inherited
+  from manganese or barium.
+sources:
+- id: ima_2026_09
+  title: >-
+    IMA-CNMNC. The New IMA List of Minerals, September 2026. Hollandite row, PDF page 95;
+    introductory column definitions and distribution terms.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-12'
+- id: vlasov2023
+  title: >-
+    Vlasov, Zelenskaya, Izatulina, Janson and Frank-Kamenetskaya (2023). Oxalate Crystallization
+    under the Action of Brown Rot Fungi. Crystals 13:432. Complete main article; Methods 2.2-2.3,
+    Tables 2-4 and mineral-specific Figures 3-7.
+  url: https://doi.org/10.3390/cryst13030432
+  accessed_on: '2026-10-12'
+- id: ncbi_fungal_taxonomy
+  title: NCBI Taxonomy. Species nodes 80602, 80637, 85982 and 1333629; current names and species
+    ranks.
+  url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=80602,80637,85982,1333629&retmode=xml
+  accessed_on: '2026-10-12'
+- id: genbank_ky352492_1
+  title: NCBI GenBank KY352492.1. Ribosomal sequence and source strain label Serpula himantioides
+    LE-BIN 1368; identity context only.
+  url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KY352492.1&rettype=gb&retmode=text
+  accessed_on: '2026-10-12'
+- id: genbank_ky433978_1
+  title: NCBI GenBank KY433978.1. Ribosomal sequence and source strain label Coniophora puteana
+    LE-BIN 1370; identity context only.
+  url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KY433978.1&rettype=gb&retmode=text
+  accessed_on: '2026-10-12'
+- id: genbank_ky352493_1
+  title: NCBI GenBank KY352493.1. Ribosomal sequence and source strain label Serpula lacrymans
+    LE-BIN 1192; identity context only.
+  url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KY352493.1&rettype=gb&retmode=text
+  accessed_on: '2026-10-12'
+- id: genbank_ky433983_1
+  title: NCBI GenBank KY433983.1. Ribosomal sequence and source strain label Amyloporia xantha
+    LE-BIN 1029; identity context only.
+  url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KY433983.1&rettype=gb&retmode=text
+  accessed_on: '2026-10-12'
+mechanisms:
+- id: brown_rot_surface_transformation
+  name: Culture-associated manganese oxalate formation on a hollandite-labelled specimen
+  process: biomineralization
+  microbial: true
+  organisms:
+  - id: NCBITaxon:80602
+    label: Serpula himantioides
+  - id: NCBITaxon:80637
+    label: Coniophora puteana
+  - id: NCBITaxon:85982
+    label: Serpula lacrymans
+  - id: NCBITaxon:1333629
+    label: Amyloporia xantha
+  description: >-
+    Three brown-rot fungal cultures incubated with a source-identified hollandite specimen
+    produced surface solids assigned to manganese oxalate phases. The experiment supports
+    culture-associated secondary crystallization on this feed. Source phase assignments, especially
+    the Coniophora puteana dihydrate assignment, have method-dependent limits. It does not
+    establish a measured manganese reduction pathway, complete hollandite conversion, barium
+    recovery or an isolated oxalate yield.
+  context: >-
+    Table 3 describes entangled fibrous, reniform hollandite aggregates from the U. M. Bronzova
+    collection, with possible Fe impurity no greater than 1.35 wt% FeO. Its formula Ba(Mn2+,Mn4+)8O16
+    differs from the current IMA species formula Ba(Mn4+6Mn3+2)O16. The paper reports starting-material
+    PXRD/EDX but no specimen-specific valence or site-occupancy refinement. The assay feed
+    therefore remains source-identified hollandite, not independently demonstrated ideal endmember
+    material. Methods 2.2 describes approximately 1 x 0.5 x 0.5 cm blocks in plastic Petri
+    dishes with 20 mL liquid glucose-peptone medium, initial pH 5.5, room temperature and
+    30 days, in triplicate. Mycelial fragments came from ten-day cultures on glucose-peptone
+    agar. Inoculum amount, substrate sterilization and a separate complete liquid-medium formulation
+    are not specified. The paper names Antrodia xantha; current NCBI taxonomy and its cited
+    ribosomal accession use Amyloporia xantha for LE-BIN 1029. The organisms list includes
+    the tested comparator S. lacrymans; it does not assert identical mineral formation by
+    every listed culture.
+  evidence:
+  - source_ref: vlasov2023
+    supports: support
+    explanation: >-
+      Table 4 lists falottaite and lindbergite by SEM/EDX and PXRD for Serpula himantioides
+      LE-BIN 1368 at pH 3, and lindbergite plus whewellite by both methods for source-named
+      Antrodia xantha LE-BIN 1029 at pH 2. Figures 6a and 7a show source-assigned manganese-oxalate
+      morphologies. The assignments refer to mixed recovered surface products; no quantitative
+      phase fractions or separate manganese mass balance is provided.
+  - source_ref: vlasov2023
+    supports: partial
+    explanation: >-
+      For C. puteana LE-BIN 1370 at pH 5, Table 4 lists falottaite and lindbergite by SEM/EDX
+      but only falottaite by PXRD. Figure 3e instead captions its diffraction trace as falottaite
+      and lindberghite, and Figure 7a names both phases in microscopy. That Table 4/Figure
+      3 conflict prevents claiming an unambiguous diffraction-confirmed C. puteana lindbergite
+      product. S. lacrymans LE-BIN 1192 has dashes including pH; those are not measured zero
+      yields. Source preparation and hydration-state handling are not specified for each arm,
+      and no hollandite-specific sterile product pattern or manganese oxidation-state series
+      is supplied.
+  - source_ref: vlasov2023
+    supports: partial
+    explanation: >-
+      Methods states that fungus-free controls were performed, but the selected mineral-arm
+      results do not provide a matched pH-control series or a quantitative inoculated-versus-uninoculated
+      phase balance. No killed-biomass or cell-free-metabolite comparison isolates a necessary
+      causal step. Oxalate secretion is the proposed explanation, without an arm-specific
+      oxalate time course or molecular intervention in this study. PXRD methods are referred
+      to earlier papers; the displayed patterns include substrate peaks. Culture association
+      and source-assigned phases do not establish quantitative microbial enhancement, complete
+      feed consumption or industrial use.
+  - source_ref: vlasov2023
+    supports: context_only
+    explanation: >-
+      This is one arm of Vlasov et al. (2023), also represented by the humboldtine record
+      and separately curated mineral-feed owners. The shared paper, its XML/PDF and the different
+      material views are not independent replications. Its comparison with earlier Aspergillus
+      niger studies uses different protocols and does not establish superior extraction rates
+      for the present cultures. The natural adit observations concern calcium oxalates on
+      wood/carbonate rock; they do not establish field deployment of this particular feed
+      transformation.
+  - source_ref: ima_2026_09
+    supports: context_only
+    explanation: >-
+      The authority establishes the mineral species name and formula, not the purity, valence,
+      hydration or transformation behavior of the specific experimental material.
+  - source_ref: ncbi_fungal_taxonomy
+    supports: context_only
+    explanation: >-
+      Species taxonomy verifies identifiers and current names. A species TaxID does not identify
+      the experimental strain or demonstrate its mineral-transforming phenotype.
+  - source_ref: genbank_ky352492_1
+    supports: context_only
+    explanation: >-
+      The deposited sequence carries the Serpula himantioides LE-BIN 1368 source label cited
+      by the paper. This label/sequence match is not independent authentication of the experimental
+      culture or direct evidence for the mechanism.
+  - source_ref: genbank_ky433978_1
+    supports: context_only
+    explanation: >-
+      The deposited sequence carries the Coniophora puteana LE-BIN 1370 source label cited
+      by the paper. This label/sequence match is not independent authentication of the experimental
+      culture or direct evidence for the mechanism.
+  - source_ref: genbank_ky352493_1
+    supports: context_only
+    explanation: >-
+      The deposited sequence carries the Serpula lacrymans LE-BIN 1192 source label cited
+      by the paper. This label/sequence match is not independent authentication of the experimental
+      culture or direct evidence for the mechanism.
+  - source_ref: genbank_ky433983_1
+    supports: context_only
+    explanation: >-
+      The deposited sequence carries the Amyloporia xantha LE-BIN 1029 source label cited
+      by the paper. This label/sequence match is not independent authentication of the experimental
+      culture or direct evidence for the mechanism.
+curation_history:
+- timestamp: '2026-10-12T00:16:05Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: >-
+    Added current IMA hollandite identity with narrowly qualified culture-associated manganese
+    oxalates, retaining the feed-formula mismatch, method-dependent phase conflict and absent
+    redox and recovery measurements.
+history_refs:
+- history/records/hollandite/2026-10-12T001609Z-codex-805333.yaml

@@ -47,6 +47,19 @@ sources:
   title: ATCC 1015. Aspergillus niger strain catalogue entry.
   url: https://www.atcc.org/products/1015
   accessed_on: '2026-10-11'
+- id: wei2012
+  title: >-
+    Wei, Hillier and Gadd (2012). Biotransformation of manganese oxides
+    by fungi: solubilization and production of manganese oxalate biominerals.
+    Environmental Microbiology 14(7). Complete nine-page primary PDF,
+    printed pages 1744-1752; Figures 1-6, Tables 1-3 and Experimental
+    procedures. Publisher and bibliographic metadata instead end at 1753.
+  url: https://doi.org/10.1111/j.1462-2920.2012.02776.x
+  accessed_on: '2026-10-12'
+- id: ncbi_himantioides
+  title: NCBI Taxonomy 80602. Serpula himantioides, current species node.
+  url: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/Serpula%20himantioides/dataset_report
+  accessed_on: '2026-10-12'
 mechanisms:
 - id: niger_associated_manganese_oxalate_formation
   name: Lindbergite-assigned formation during fungal culture with manganese nodule powder
@@ -160,6 +173,92 @@ mechanisms:
     explanation: >-
       The catalogue confirms the A. niger ATCC 1015 strain designation.
       It does not independently authenticate the culture used in the paper.
+- id: himantioides_associated_lindbergite_formation
+  name: Lindbergite-assigned formation during fungal culture with synthetic sodium birnessite
+  process: biomineralization
+  microbial: true
+  organisms:
+  - id: NCBITaxon:80602
+    label: Serpula himantioides
+  description: >-
+    Laboratory cultures reported as Serpula himantioides produced recovered
+    crystals assigned to manganese oxalate dihydrate, explicitly called
+    lindbergite, during growth on synthetic sodium-birnessite medium.
+    The authors propose oxide solubilization followed by oxalate precipitation.
+    The evidence supports culture-associated phase formation; it does not
+    isolate an enzyme pathway, establish a quantitative manganese recovery
+    yield or demonstrate industrial deployment.
+  context: >-
+    Sodium birnessite prepared by freeze-drying synthetic Na-buserite was
+    incorporated at 0.5% (w/v) into 20 cm3 malt extract agar in 90 mm
+    plates. A sterile 84 mm cellophane membrane separated the colony
+    from the agar. A 5 mm mycelial disc from the leading edge of a
+    colony maintained for at least 14 days inoculated each plate;
+    incubation was at 25 degrees C in the dark, with at least three
+    replicate plates. The organism was supplied by N. White at the
+    University of Abertay; no culture accession or sequence is given.
+    Diffraction samples were harvested at 5 and 23 days. Table 3 instead
+    reports surface pH beneath S. himantioides colonies at 25 days:
+    2.93 on birnessite medium versus an initial value of 7.26. Those six
+    surface measurements do not establish pH at either diffraction harvest.
+  evidence:
+  - source_ref: wei2012
+    supports: support
+    explanation: >-
+      Figure 4 on printed page 1748 compares recovered crystals from
+      birnessite cultures at 5 and 23 days. Its caption identifies a
+      mixture of manganese oxalate trihydrate and dihydrate at day 5,
+      and only the dihydrate at day 23, using reference patterns
+      012-0663 and 025-0544 respectively. The dihydrate is expressly
+      called lindbergite. Figure 2K-L shows corresponding recovered
+      crystal morphologies; morphology alone does not establish hydration
+      or polymorph. Typical diffraction patterns are from at least three
+      determinations, without clear separation of biological replication
+      from repeated analysis. No unit-cell refinement, water-content assay,
+      quantitative phase fraction or isolated lindbergite mass is supplied.
+  - source_ref: wei2012
+    supports: partial
+    explanation: >-
+      The purification methods on printed page 1751 homogenize the agar
+      with water at 80 degrees C and dry the crystals at least overnight
+      in a vacuum desiccator before microscopy and diffraction. Neither
+      wet in-culture diffraction nor a matched preparation/drying series
+      is reported. Consequently the two recovered patterns do not isolate
+      a live-culture trihydrate-to-dihydrate conversion from possible
+      sample-preparation effects. The unnamed 2012 trihydrate is not
+      retrospectively assigned to falottaite here. The assignment also
+      does not extend to every organism or oxide tested in this paper.
+  - source_ref: wei2012
+    supports: partial
+    explanation: >-
+      Figure 5 and the abiotic methods compare 50 microlitre additions
+      of 0.5 M oxalic acid, citric acid or HCl to 5 mm wells in oxide-amended
+      agar. Both organic acids produced birnessite-clearing haloes; HCl
+      produced no significant halo in the reported test. These separate
+      chemical assays support a possible metabolite-mediated contribution,
+      but are not pH-matched fungal controls and do not report lindbergite
+      identification in their products. No directly measured fungal oxalate
+      concentration, killed-biomass comparison or time-matched uninoculated
+      diffraction series isolates microbial necessity or an exclusive cause.
+  - source_ref: wei2012
+    supports: partial
+    explanation: >-
+      Figure 2I provides an abiotic birnessite morphology comparison, while
+      Tables 1-2 use no-oxide growth controls. Those controls do not supply
+      a phase-specific conversion denominator. Clearing and colour loss,
+      growth-rate ratios and biomass tolerance indices are not dissolved
+      manganese mass balances or product recovery percentages. The 23-day
+      growth and microscopy observations and the 25-day pH and clearing
+      statements are retained as separate sampling descriptions. Figure 6
+      is a conceptual model, including speculative metal sorption, rather
+      than a measured lindbergite sequestration or redox pathway.
+  - source_ref: ncbi_himantioides
+    supports: context_only
+    explanation: >-
+      The authority resolves Serpula himantioides to species TaxID 80602.
+      This does not authenticate the unaccessioned experimental isolate,
+      resolve a phylogenetic lineage within that name, or establish a
+      species-wide mineral-forming phenotype.
 curation_history:
 - timestamp: '2026-10-11T22:59:52Z'
   curator: codex (GPT-6; codex)
@@ -168,5 +267,13 @@ curation_history:
     Added lindbergite identity and source-assigned fungal formation from
     mixed nodule powder, retaining protocol, hydration and yield limits
     and the distinct orthorhombic assignment in a related study.
+- timestamp: '2026-10-12T00:15:41Z'
+  curator: codex (GPT-6; codex)
+  action: EDIT
+  summary: >-
+    Added the separate Wei2012 Serpula himantioides culture arm with
+    source-assigned lindbergite, explicit hot-water and drying limitations,
+    phase-mixture and control boundaries, preserving all prior claims.
 history_refs:
 - history/records/lindbergite/2026-10-11T225957Z-codex-f222f6.yaml
+- history/records/lindbergite/2026-10-12T001526Z-codex-997e03.yaml
