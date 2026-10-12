@@ -1,0 +1,420 @@
+# Independent roquesite natural-mineral identity review
+
+- Review: 20261012T044806Z-roquesite-round46-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-12T04:43:12.824120Z
+- Finished UTC: 2026-10-12T04:48:06.982980Z
+- Reviewer: Codex /root/round27_superalloy (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The natural roquesite identity is supported by current IMA authority and the complete original1963characterization. Synthetic comparator uncertainties, trace-element/map distinction and above100percent analytical totals are accurately retained. No corrective finding identified; all required actual checks passed.
+
+## Scope And Provenance
+
+All fields of this new mineral-identity record and linked CREATE; full original source, authority, controls/synthetic comparison, source limits and provenance.
+
+Selection: Parent-assigned independent exact-state record review.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 94d743a1b8bb3fe595f96e88f4cdb54a4ee72375.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:roquesite | data/records/roquesite.yaml | maintained | Roquesite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent affected-record validation | passed | True | cmmmech:roquesite | Actual command completed0,1checked/0failed; log/private/tmp/cmm-round46-roquesite-independent/named-validation.log SHA2566777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e. |
+| Actual coordinator-cohort batch | passed | True | cmmmech:roquesite | Completed actual command; reviewer independently read terminal log and verified raw-byte hash. /private/tmp/cmm-round46-final-batch.log SHA2568caead3980a6da1e7b4d54ea4895572c931741b48ccd353e542e8edf2b876b53; receipt /private/tmp/cmm-round46-final-terminal.json SHA2564e2d9f922583839cb1e67c765f44ed644126bc8cd7d72691734b7a34d79e8531. |
+| Actual coordinator-cohort nonempty | passed | True | cmmmech:roquesite | Completed actual command; reviewer independently read terminal log and verified raw-byte hash. /private/tmp/cmm-round46-final-nonempty.log SHA256ff7ed8bc3fc67548605ba5d958c3f8057489701d8221b508c7670b58955b7dba; receipt /private/tmp/cmm-round46-final-terminal.json SHA2564e2d9f922583839cb1e67c765f44ed644126bc8cd7d72691734b7a34d79e8531. |
+| Actual coordinator-cohort history | passed | True | cmmmech:roquesite | Completed actual command; reviewer independently read terminal log and verified raw-byte hash. /private/tmp/cmm-round46-final-history.log SHA25617691e066e03358c6eabe98608db086af9b35dcc46fde40810e46ead5f061163; receipt /private/tmp/cmm-round46-final-terminal.json SHA2564e2d9f922583839cb1e67c765f44ed644126bc8cd7d72691734b7a34d79e8531. |
+
+## Scientific And Domain Assessments
+
+### Natural mineral species, approved identifier scope and current renamed status
+
+identity: supported. Targets: cmmmech:roquesite.
+
+The distinct natural CuInS2 mineral owner and IMA identifier are supported.
+
+IMA1962-001 denotes the listed mineral, not a manufactured semiconductor, organism, ore feed or elementalindium. Current Rn status is quoted accurately without inventing a renaming event. Source spelling roquésite and current Roquesite are not split into separate materials.
+
+### Original material and natural/synthetic characterization
+
+evidence: supported. Targets: cmmmech:roquesite.
+
+The original methods and comparison support the qualified natural-specimen identity.
+
+Pages7–8 andTableI/Figure1 separate the Charrier diffraction pattern from a supplied Hahn synthetic comparator. Broad extra central synthetic lines remain unexplained due to limited material; the record neither assigns impurity phases nor calls the comparator a biological product. Figures2–3/TableII preserve intergrowth and optical comparison; exact optical/purity values are not generalized.
+
+### Trace elements, map resolution and analytical totals
+
+evidence: supported. Targets: cmmmech:roquesite.
+
+The record preserves rather than conceals analytical limitations.
+
+Figures4–6/TableIII show spatial qualitative contrasts; page10 expressly notes natural Fe/Zn traces. Figure6Fe darkness does not establish zeroFe or absolute purity. TableIV gives natural101.9 andsynthetic101.6totals, andpage13 explains sulfur-standard/correction difficulty plus possible reference-metal surface oxidation. These are analytical totals, not recovery balances or normalized yields.
+
+### No microbial causality, criticality or industrial outcome inferred
+
+evidence: supported. Targets: cmmmech:roquesite.
+
+The identity-only scope is scientifically appropriate.
+
+No organism, strain, biomass state, biological control, extraction yield or commercial deployment is present in the accepted source scope. Roughly1mg separated mineral in qualitative chromatography is neither elementalindium recovery nor a microbial process. Geological deposit/mining context is not industrial mineral recovery. No current or historical criticality claim is inherited from constituents.
+
+### Composite original access, exact-byte sidecar and validation
+
+provenance: supported. Targets: cmmmech:roquesite.
+
+The actual provenance and record bytes are reviewable.
+
+Originaleightpage JPGscans are complete for the article despite no fullPDF; all graphics were personally inspected. Adjacent article content excluded, OCR iridium corrected by printedindium rather than imported. InlineCREATE and immutablecanonicalsidecar are distinct. External rawfiles remain outsideGit; exact hash checks and offline validation do not claim an exhaustive global literature review.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| target | data/records/roquesite.yaml; All frozen scientific fields, identifiers, sources, inline event and history reference | supports | Entire exact target assessed after native inspect; no maintained edits. |
+| primary | https://doi.org/10.3406/bulmi.1963.5607; Original Picot/Pierrot1963 printedpp7–14, eight Persée JPG scans; Figures1–6 and TablesI–IV | supports | Reviewer independently read complete original text and personally viewed all eight source pages. Natural/synthetic comparison, diffraction, microscopy, microprobe/qualitative assays, analytical excess and specimen occurrence are supported. Adjacent articles onpp7/14 excluded. Exact original artifact hashes verified in verification.json. |
+| authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Original authority PDFpages1 and187 personally viewed; current official landing checked live | supports | Current species Roquesite,CuInS2,Rn,1962-001,France; Rn means renamed. No reason/date of renaming inferred from that status. Original1963 report separately gives21June1962 naming approval. |
+| history | history/records/roquesite/2026-10-12T043821Z-codex-3578d4.yaml; Canonical CREATE and separate04:38:09UTC inline event | supports | Actual actor codex/GPT-6/codex, new maintained mineral target, finished scope and later independent review are truthful. |
+| verification | /private/tmp/cmm-round46-roquesite-independent/verification.json; All47author-manifest artifact checksums and independently rerun bounded dedup | supports | All47retained artifacts match exact author hashes; target context is materially separated from synthetic semiconductor or bulk feed records. |
+| dedup | /private/tmp/cmm-round46-roquesite-independent/verification.json; Independent rerun of author root-list commands using rg --no-ignore --hidden --follow | supports | Current/original scientific trees and166existing cited raw directories yielded10corpus and23raw matching files; prior handoff, authority occurrences and this newly created owner are distinguished. No additional maintained species owner found in that declared boundary. |
+| notices | /private/tmp/cmm-round46-roquesite-independent/live-search.json; Fresh DOI/name notices/counterevidence queries and official original/IMA landing opens | supports | No affecting notice surfaced in the returned sets. Later primary snippets include other host/locality observations, including a2022Charrier report of rare chalcopyrite inclusions. This does not refute the maintained, explicitly original-study bornite observation; no assertion of exclusive host or later quantitative measurements was imported. Full later-source reassessment is outside this review. |
+| gates | /private/tmp/cmm-round46-final-terminal.json; All actual final cohort terminal commands/log raw-byte hashes | supports | All required cohort structural checks passed against the trusted base. Passing validation is not scientific proof. |
+
+## Limits And Additional Notes
+
+- This is mineralogical characterization of limited natural material, not microbial extraction or criticality evidence.
+- Synthetic-pattern extra lines and microprobe calibration/systematic uncertainty remain unresolved in the primary and correctly qualified.
+- No full original PDF was acquired; all eight original public page scans and every figure/table were independently inspected.
+- No separate SI reference appeared in the full article/observed portal inventory; no global supplement-absence claim.
+- Bounded notice/dedup searches are not exhaustive; nine missing raw roots and unextracted binary contents remain outside actual search.
+- Later host associations do not imply an error in explicitly original-study context; later-source extension remains separate.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261012T044806Z-roquesite-round46-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent roquesite natural-mineral identity review
+started_at: '2026-10-12T04:43:12.824120Z'
+finished_at: '2026-10-12T04:48:06.982980Z'
+reviewer:
+  identity: Codex /root/round27_superalloy
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Peer /root/round27_packaging authored roquesite record/history/dossier.
+    Reviewer authored separate laforetite record, not roquesite. Native inspect preceded
+    judgment; complete original scans/figures/tables and authority independently assessed,
+    raw hashes/dedup and actual final gates verified. No maintained record edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The natural roquesite identity is supported by current IMA authority and
+  the complete original1963characterization. Synthetic comparator uncertainties, trace-element/map
+  distinction and above100percent analytical totals are accurately retained. No corrective
+  finding identified; all required actual checks passed.
+source:
+  git_revision: 94d743a1b8bb3fe595f96e88f4cdb54a4ee72375
+  state: working_tree
+  inputs:
+  - path: data/records/roquesite.yaml
+    sha256: 25758f27422dc9bfc8f2eae8928c369ed6b61e34186e58664ff3dacacaf95b29
+    role: target
+  - path: history/records/roquesite/2026-10-12T043821Z-codex-3578d4.yaml
+    sha256: 9591d8de36c10c7263e6a5552770d85778ba90825498004943def8c765d33ca9
+    role: context
+  - path: research/sources/round46-roquesite/20261012T044003Z-source-investigation.json
+    sha256: 419501460491cfe555096e760488499fc2921406ed5c90feee933412586adb74
+    role: context
+  - path: research/sources/round46-roquesite/20261012T044003Z-source-investigation.md
+    sha256: a38174d13630a900ade2bf9b20241f1a4d44940903983ea799f5546b97350d53
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:roquesite
+  path: data/records/roquesite.yaml
+  label: Roquesite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/roquesite.yaml
+    role: maintained_record
+scope:
+  description: All fields of this new mineral-identity record and linked CREATE; full
+    original source, authority, controls/synthetic comparison, source limits and provenance.
+  selection: Parent-assigned independent exact-state record review.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:roquesite
+  exclusions:
+  - target: Later locality/structural studies as new scientific extensions
+    reason: Returned sources considered for conflicts only; their uncurated measurements/mechanisms
+      are not accepted or fully reviewed here.
+checks:
+- check_id: named
+  name: Independent affected-record validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 PYTHONDONTWRITEBYTECODE=1
+    uv run --locked cmmmech validate data/records/roquesite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual command completed0,1checked/0failed; log/private/tmp/cmm-round46-roquesite-independent/named-validation.log
+    SHA2566777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e.
+  target_ids:
+  - cmmmech:roquesite
+- check_id: batch
+  name: Actual coordinator-cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Completed actual command; reviewer independently read terminal log and
+    verified raw-byte hash. /private/tmp/cmm-round46-final-batch.log SHA2568caead3980a6da1e7b4d54ea4895572c931741b48ccd353e542e8edf2b876b53;
+    receipt /private/tmp/cmm-round46-final-terminal.json SHA2564e2d9f922583839cb1e67c765f44ed644126bc8cd7d72691734b7a34d79e8531.
+  target_ids:
+  - cmmmech:roquesite
+- check_id: nonempty
+  name: Actual coordinator-cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Completed actual command; reviewer independently read terminal log and
+    verified raw-byte hash. /private/tmp/cmm-round46-final-nonempty.log SHA256ff7ed8bc3fc67548605ba5d958c3f8057489701d8221b508c7670b58955b7dba;
+    receipt /private/tmp/cmm-round46-final-terminal.json SHA2564e2d9f922583839cb1e67c765f44ed644126bc8cd7d72691734b7a34d79e8531.
+  target_ids:
+  - cmmmech:roquesite
+- check_id: history
+  name: Actual coordinator-cohort history
+  command: uv run --locked cmmmech validate-history --base 94d743a1b8bb3fe595f96e88f4cdb54a4ee72375
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Completed actual command; reviewer independently read terminal log and
+    verified raw-byte hash. /private/tmp/cmm-round46-final-history.log SHA25617691e066e03358c6eabe98608db086af9b35dcc46fde40810e46ead5f061163;
+    receipt /private/tmp/cmm-round46-final-terminal.json SHA2564e2d9f922583839cb1e67c765f44ed644126bc8cd7d72691734b7a34d79e8531.
+  target_ids:
+  - cmmmech:roquesite
+evidence:
+- evidence_id: target
+  kind: record_content
+  reference: data/records/roquesite.yaml
+  locator: All frozen scientific fields, identifiers, sources, inline event and history
+    reference
+  accessed_at: '2026-10-12T04:48:06.982980Z'
+  support: supports
+  summary: Entire exact target assessed after native inspect; no maintained edits.
+  snapshot_sha256: 25758f27422dc9bfc8f2eae8928c369ed6b61e34186e58664ff3dacacaf95b29
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3406/bulmi.1963.5607
+  locator: Original Picot/Pierrot1963 printedpp7–14, eight Persée JPG scans; Figures1–6
+    and TablesI–IV
+  accessed_at: '2026-10-12T04:48:06.982980Z'
+  support: supports
+  summary: Reviewer independently read complete original text and personally viewed
+    all eight source pages. Natural/synthetic comparison, diffraction, microscopy,
+    microprobe/qualitative assays, analytical excess and specimen occurrence are supported.
+    Adjacent articles onpp7/14 excluded. Exact original artifact hashes verified in
+    verification.json.
+  snapshot_sha256: 57d5d48bdff9183303264de39a462effee5e79b82ab6f0ba40fbb9c394b57f14
+- evidence_id: authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Original authority PDFpages1 and187 personally viewed; current official
+    landing checked live
+  accessed_at: '2026-10-12T04:48:06.982980Z'
+  support: supports
+  summary: Current species Roquesite,CuInS2,Rn,1962-001,France; Rn means renamed.
+    No reason/date of renaming inferred from that status. Original1963 report separately
+    gives21June1962 naming approval.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: history
+  kind: record_content
+  reference: history/records/roquesite/2026-10-12T043821Z-codex-3578d4.yaml
+  locator: Canonical CREATE and separate04:38:09UTC inline event
+  accessed_at: '2026-10-12T04:48:06.982980Z'
+  support: supports
+  summary: Actual actor codex/GPT-6/codex, new maintained mineral target, finished
+    scope and later independent review are truthful.
+  snapshot_sha256: 9591d8de36c10c7263e6a5552770d85778ba90825498004943def8c765d33ca9
+- evidence_id: verification
+  kind: record_content
+  reference: /private/tmp/cmm-round46-roquesite-independent/verification.json
+  locator: All47author-manifest artifact checksums and independently rerun bounded
+    dedup
+  accessed_at: '2026-10-12T04:48:06.982980Z'
+  support: supports
+  summary: All47retained artifacts match exact author hashes; target context is materially
+    separated from synthetic semiconductor or bulk feed records.
+  snapshot_sha256: 57d5d48bdff9183303264de39a462effee5e79b82ab6f0ba40fbb9c394b57f14
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round46-roquesite-independent/verification.json
+  locator: Independent rerun of author root-list commands using rg --no-ignore --hidden
+    --follow
+  accessed_at: '2026-10-12T04:48:06.982980Z'
+  support: supports
+  summary: Current/original scientific trees and166existing cited raw directories
+    yielded10corpus and23raw matching files; prior handoff, authority occurrences
+    and this newly created owner are distinguished. No additional maintained species
+    owner found in that declared boundary.
+  snapshot_sha256: 57d5d48bdff9183303264de39a462effee5e79b82ab6f0ba40fbb9c394b57f14
+  search_scope: Case-insensitive roquesite|roqu.sit|CuInS2|10[.]3406/bulmi[.]1963[.]5607|1962-001;
+    current/original data/records,research,reviews,history and author-listed166existing
+    referenced raw roots. Hidden/ignored included, symlinks followed; YAML/YML/JSON/MD/TXT/HTML/XML/CSV/TSV
+    only. Nine missing roots and unextracted image/PDF semantics are not covered.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round46-roquesite-independent/live-search.json
+  locator: Fresh DOI/name notices/counterevidence queries and official original/IMA
+    landing opens
+  accessed_at: '2026-10-12T04:48:06.982980Z'
+  support: supports
+  summary: No affecting notice surfaced in the returned sets. Later primary snippets
+    include other host/locality observations, including a2022Charrier report of rare
+    chalcopyrite inclusions. This does not refute the maintained, explicitly original-study
+    bornite observation; no assertion of exclusive host or later quantitative measurements
+    was imported. Full later-source reassessment is outside this review.
+  snapshot_sha256: a1da0e28636c060e3d9193c4b9aa8fef63a48ff687562710e6cd0f5e5d3e24d2
+  search_scope: Exact DOI with correction/erratum; roquesite Picot Pierrot renamed/retraction/microbial.
+    First returned web sets without date filters or exhaustive citation crawl. Full
+    original article plus observed Persée inventory checked for separate supplement
+    references; none surfaced there, not worldwide absence.
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round46-final-terminal.json
+  locator: All actual final cohort terminal commands/log raw-byte hashes
+  accessed_at: '2026-10-12T04:48:06.982980Z'
+  support: supports
+  summary: All required cohort structural checks passed against the trusted base.
+    Passing validation is not scientific proof.
+  snapshot_sha256: 4e2d9f922583839cb1e67c765f44ed644126bc8cd7d72691734b7a34d79e8531
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Natural mineral species, approved identifier scope and current renamed status
+  outcome: supported
+  target_ids:
+  - cmmmech:roquesite
+  evidence_ids:
+  - target
+  - authority
+  - primary
+  - dedup
+  summary: The distinct natural CuInS2 mineral owner and IMA identifier are supported.
+  details: IMA1962-001 denotes the listed mineral, not a manufactured semiconductor,
+    organism, ore feed or elementalindium. Current Rn status is quoted accurately
+    without inventing a renaming event. Source spelling roquésite and current Roquesite
+    are not split into separate materials.
+- assessment_id: methods
+  area: evidence
+  topic: Original material and natural/synthetic characterization
+  outcome: supported
+  target_ids:
+  - cmmmech:roquesite
+  evidence_ids:
+  - target
+  - primary
+  summary: The original methods and comparison support the qualified natural-specimen
+    identity.
+  details: Pages7–8 andTableI/Figure1 separate the Charrier diffraction pattern from
+    a supplied Hahn synthetic comparator. Broad extra central synthetic lines remain
+    unexplained due to limited material; the record neither assigns impurity phases
+    nor calls the comparator a biological product. Figures2–3/TableII preserve intergrowth
+    and optical comparison; exact optical/purity values are not generalized.
+- assessment_id: analytical
+  area: evidence
+  topic: Trace elements, map resolution and analytical totals
+  outcome: supported
+  target_ids:
+  - cmmmech:roquesite
+  evidence_ids:
+  - target
+  - primary
+  summary: The record preserves rather than conceals analytical limitations.
+  details: Figures4–6/TableIII show spatial qualitative contrasts; page10 expressly
+    notes natural Fe/Zn traces. Figure6Fe darkness does not establish zeroFe or absolute
+    purity. TableIV gives natural101.9 andsynthetic101.6totals, andpage13 explains
+    sulfur-standard/correction difficulty plus possible reference-metal surface oxidation.
+    These are analytical totals, not recovery balances or normalized yields.
+- assessment_id: scope
+  area: evidence
+  topic: No microbial causality, criticality or industrial outcome inferred
+  outcome: supported
+  target_ids:
+  - cmmmech:roquesite
+  evidence_ids:
+  - target
+  - primary
+  - authority
+  summary: The identity-only scope is scientifically appropriate.
+  details: No organism, strain, biomass state, biological control, extraction yield
+    or commercial deployment is present in the accepted source scope. Roughly1mg separated
+    mineral in qualitative chromatography is neither elementalindium recovery nor
+    a microbial process. Geological deposit/mining context is not industrial mineral
+    recovery. No current or historical criticality claim is inherited from constituents.
+- assessment_id: provenance
+  area: provenance
+  topic: Composite original access, exact-byte sidecar and validation
+  outcome: supported
+  target_ids:
+  - cmmmech:roquesite
+  evidence_ids:
+  - history
+  - verification
+  - gates
+  - notices
+  summary: The actual provenance and record bytes are reviewable.
+  details: Originaleightpage JPGscans are complete for the article despite no fullPDF;
+    all graphics were personally inspected. Adjacent article content excluded, OCR
+    iridium corrected by printedindium rather than imported. InlineCREATE and immutablecanonicalsidecar
+    are distinct. External rawfiles remain outsideGit; exact hash checks and offline
+    validation do not claim an exhaustive global literature review.
+findings: []
+actions: []
+limitations:
+- This is mineralogical characterization of limited natural material, not microbial
+  extraction or criticality evidence.
+- Synthetic-pattern extra lines and microprobe calibration/systematic uncertainty
+  remain unresolved in the primary and correctly qualified.
+- No full original PDF was acquired; all eight original public page scans and every
+  figure/table were independently inspected.
+- No separate SI reference appeared in the full article/observed portal inventory;
+  no global supplement-absence claim.
+- Bounded notice/dedup searches are not exhaustive; nine missing raw roots and unextracted
+  binary contents remain outside actual search.
+- Later host associations do not imply an error in explicitly original-study context;
+  later-source extension remains separate.
+```

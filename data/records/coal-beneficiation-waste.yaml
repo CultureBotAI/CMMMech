@@ -7,8 +7,8 @@ description: >-
   Chervonogradska central concentrating factory. This secondary resource is
   distinct from natural coal, coal combustion ash, mine-drainage treatment
   solids, a particular germanium mineral and elemental germanium. The studies
-  describe native-community-associated laboratory leaching of selected dump
-  samples; their compositions and outcomes are not universal waste properties.
+  describe native-community-associated laboratory leaching and an enlarged
+  experimental cascade using selected dump samples; their compositions and outcomes are not universal waste properties.
   Constituent criticality, selective metal products and industrial deployment
   are not inferred.
 sources:
@@ -40,6 +40,40 @@ sources:
     DOI 10.15407/biotech10.04.044; complete official nine-page article,
     Methods pp45-46, Tables 1-7, sole Figure p48 and conclusions p51.
   url: https://doi.org/10.15407/biotech10.04.044
+  accessed_on: '2026-10-12'
+- id: blayda2018
+  title: >-
+    Blayda, Vasyleva, Slyusarenko, Barba and Vodzinskii (2018).
+    Technological Parameters of Coal Mine Dumps Bioleaching for the Rare
+    Metals Extraction. Kompleksnoe Ispolzovanie Mineralnogo Syra 307(4):28-37.
+    DOI 10.31643/2018/6445.27; complete official ten-page original,
+    Methods p29, Figures 1-5 and Tables 1-2; accepted 1 October 2018.
+  url: https://doi.org/10.31643/2018/6445.27
+  accessed_on: '2026-10-12'
+- id: ncbi_ferrooxidans_2026
+  title: >-
+    NCBI Taxonomy species 920, Acidithiobacillus ferrooxidans, checked
+    12 October 2026. Species-name mapping only; does not authenticate
+    the experimental local isolates or identify the native consortium.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920
+  accessed_on: '2026-10-12'
+- id: atcc_23270_2026
+  title: >-
+    ATCC product 23270, Acidithiobacillus ferrooxidans type strain,
+    NCIB 8455/DSM 14882, checked 12 October 2026. Catalogue gives
+    acid bituminous-coal mine effluent as the isolation source;
+    it does not authenticate a stock used in the 2018 experiment.
+  url: https://www.atcc.org/products/23270
+  accessed_on: '2026-10-12'
+- id: blayda2018_isolates
+  title: >-
+    Blayda, T. Vasylieva, Sliusarenko, N. Vasylieva, Baranov and Shuliakova
+    (2018). Isolation and Study of the Main Properties of Acidophilic
+    Chemolithotrophic Bacteria Isolated from the Waste Dumps of Fuel-Energy
+    Complex in Ukraine. Studia Biologica 12(3-4):3-16.
+    DOI 10.30970/sbi.1203.570; original Methods pp4-6, Table 1 and
+    Figure 7B p14 inspected for strain provenance and experiment overlap.
+  url: https://doi.org/10.30970/sbi.1203.570
   accessed_on: '2026-10-12'
 mechanisms:
 - id: native_community_associated_acid_leaching
@@ -270,6 +304,190 @@ mechanisms:
       mechanisms remain separate; their percentages, solution
       concentrations and community descriptions are not pooled into
       a shared yield, authenticated strain or independent replication.
+- id: aged_dump_strain_comparison
+  name: Strain and native-community comparisons in aged coal-waste leaching
+  process: bioleaching
+  microbial: true
+  organisms:
+  - id: NCBITaxon:920
+    label: Acidithiobacillus ferrooxidans
+  description: >-
+    The 2018 paper reports metal leaching by locally identified
+    Acidithiobacillus ferrooxidans cultures, a named type-strain culture
+    and the native community of an aged coal-beneficiation dump.
+    Seven-day plotted treatments exceed the displayed sterile controls.
+    This supports a conditional culture-associated leaching difference;
+    it does not distinguish direct microbial attack from biologically
+    altered acidity and iron chemistry or establish a universal strain ranking.
+  context: >-
+    June 2014 samples came from the surface layer, to 50 plus or minus
+    5 cm depth, of Lviv-Volyn gravity/flotation dumps stored for over
+    five years. The reported feed contained Ge 30.0 plus or minus 0.1
+    and Ga 22.4 plus or minus 0.1 g/t. Native-community densities are
+    cited to an earlier study. Methods specify solid:liquid 1:10,
+    pH at or below 2.0, 30.0 plus or minus 2.0 degrees C and periodic
+    mixing. The 9K mineral background contains (NH4)2SO4 3.0, MgSO4
+    0.5, KCl 0.1 and K2HPO4 0.5 g/L, with calcium nitrate named
+    without its dose. Ferrous and ferric treatments use nominal
+    FeSO4.7H2O 44.5 and Fe2(SO4)3.7H2O 15.0 g/L, respectively.
+    Local labels are Lv red 9, Lv black 37, Lad 5, Lad 27 and DTV 1;
+    the comparator is ATCC 23270. Non-native cultures were reportedly
+    preadapted to substrate in 9K at 1:10 for 72 hours. Control K*
+    is described as sterile substrate with medium but without cultures.
+    Sterilization procedure, initial inoculum dose, vessel working volume,
+    matched pH/redox trajectories and biological replicate count are not
+    supplied. Three repeated analytical measurements and relative
+    standard deviation 0.03-0.05 do not establish three biological runs.
+  evidence:
+  - source_ref: blayda2018
+    supports: support
+    explanation: >-
+      Figure 2 on p30 plots seven-day Ge leaching at approximately
+      40-85 percent across ATCC 23270, Lv black 37, Lv red 9 and the
+      native association, while corresponding K* bars are approximately
+      1-5 percent. Its caption does not name the iron reagent, but
+      adjacent p31 prose identifies the seven-day comparison as ferrous
+      treatment. These are approximate plotted leaching percentages,
+      not exact tabulated yields. Figure 1 separately compares five-day
+      ferrous and ferric treatments for Ge, Ga and Al without displaying
+      K* bars. Neither figure demonstrates isolated product recovery.
+  - source_ref: blayda2018
+    supports: partial
+    explanation: >-
+      The paper gives no explicit percentage calculation or closed
+      solution/residue balance. Sterile K* does not establish matched
+      post-incubation acidity, ferric concentration or substrate alteration
+      by sterilization. Figure 3 compares four-day native-community
+      treatments with different reagents or imposed Eh 0.65 V; its
+      reference electrode is not specified, and no sterile matched-redox
+      series is displayed. It cannot isolate a biological contribution
+      to the redox-treatment advantage. The four-day, five-day and
+      seven-day endpoints must not be ranked as equal-duration outcomes.
+  - source_ref: blayda2018
+    supports: partial
+    explanation: >-
+      The recommended medium repeats the 2017 A2B1C2D3 recipe and
+      93.5 percent four-day Ge claim without its original 16-row dataset.
+      The 2018 p31 fixed KCl 1.0 and NH4Cl 0.9 g/L again differ from
+      the p32 recommended 0.1 and 0.5 g/L. Its optimization subsection
+      gives 30.0 plus or minus 0.5 degrees C, whereas general Methods
+      give plus or minus 2.0. These differences are preserved, not
+      harmonized into a validated recipe or independent replication.
+  - source_ref: blayda2017
+    supports: context_only
+    explanation: >-
+      The existing 2017 Table 3 assigns 93.50 percent to experiment 10,
+      not recommended experiment 5, which reports 82.60 percent on day 4.
+      The later repetition does not resolve that discrepancy. Shared
+      authors, waste family, factors and outcome claims leave measurement
+      reuse and sample-batch independence unresolved despite the 2018
+      aged-feed description differing from the 2017 one-year storage.
+      No percentage is pooled across the 2012, 2016, 2017 and 2018 studies.
+  - source_ref: ncbi_ferrooxidans_2026
+    supports: context_only
+    explanation: >-
+      The verified identifier names the species reported for the isolate
+      treatments, not an authenticated Lv strain or the whole native
+      community. No sequence or collection accession is asserted for
+      Lv red 9, Lv black 37, Lad 5, Lad 27 or DTV 1.
+  - source_ref: atcc_23270_2026
+    supports: context_only
+    explanation: >-
+      The catalogue confirms the named type-strain identity but gives
+      acid bituminous-coal mine effluent as its origin, unlike the paper's
+      brown-coal wording. This provenance discrepancy is not resolved by
+      assuming the experimental stock was independently authenticated.
+  - source_ref: blayda2018_isolates
+    supports: context_only
+    explanation: >-
+      Figure 7B of this same-year companion displays the same pattern
+      of strain, native-community and control bars for red dump material
+      as Figure 2 of the technological paper. This is apparent overlapping
+      evidence, not an additional independent replication. Companion
+      Methods supply different adaptation and temperature detail and
+      describe physiological and PCR-based identification without a
+      deposited sequence accession for these local isolates. Those
+      details are not silently transferred into the technological assay.
+      Its Table 1 calls the Lv black 37 origin red dumps, while later
+      adaptation prose calls black dumps its native substrate. Exact
+      stock provenance and reused raw measurements remain unresolved.
+- id: three_stage_experimental_dump_leaching
+  name: Three-stage experimental leaching of coal-beneficiation waste
+  process: bioleaching
+  microbial: true
+  organisms:
+  - id: NCBITaxon:920
+    label: Acidithiobacillus ferrooxidans
+  description: >-
+    The 2018 paper describes an enlarged experimental cascade processing
+    coal-beneficiation waste with a native community and a preparation
+    containing source-identified A. ferrooxidans Lv black 37 and Lv red 9.
+    Stage liquors contain measurable Ge and several accompanying metals.
+    This is an experimental apparatus observation, with unseparated
+    biological and reagent contributions, rather than industrial deployment
+    or demonstrated purification of a germanium product.
+  context: >-
+    Figure 4 and pp33-34 describe three thermostated cylindrical vessels,
+    each 8 dm diameter and 12 dm high, with 20 kg of 5-7 mm dump material
+    per vessel. The first receives 194 L of the recommended medium and
+    6 L bacterial preparation, giving nominal 200 L and solid:liquid
+    1:10. The medium is stated as KH2PO4 1.0, (NH4)2SO4 2.0, KCl
+    0.1, MgSO4 0.5, NH4Cl 0.5 and Na2S2O3 5.0 g/L, retaining the
+    fixed-additive discrepancies described separately. The preparation
+    is reported as (223.6 plus or minus 3.79) times 10^8 CFU/cm3 and
+    optical density 0.95 plus or minus 0.05, without wavelength or
+    detailed counting protocol. Each stage lasts seven days at 30.0
+    plus or minus 2.0 degrees C. Liquor passes to successive vessels
+    and is made up with fresh medium; later stages also receive 6 L
+    inoculum. The order of volume adjustment relative to those later
+    inoculum additions is unclear. After cycle 1, residues are mixed
+    with untreated dump material for a second cycle; the mixing fraction
+    is unspecified. Later liquor recycling is described at no more than
+    30 volume percent. Table 2 reports solution concentrations, not a
+    cumulative extraction balance. Ge is measured by extraction-photometry
+    as germanomolybdic acid after impurity separation; other solution
+    metals use atomic absorption, with Ga separately measured by
+    rhodamine-C colorimetry. No isotope or oxidation-state speciation is shown.
+  evidence:
+  - source_ref: blayda2018
+    supports: support
+    explanation: >-
+      Table 2 on p34 gives cycle-1 stage I, II and III Ge as 0.78 plus
+      or minus 0.02, 1.81 plus or minus 0.03 and 3.05 plus or minus
+      0.05 mg/L. Cycle-2 values are 0.54 plus or minus 0.02, 0.98
+      plus or minus 0.02 and 1.36 plus or minus 0.03 mg/L. These
+      exact table values are retained as solution concentrations;
+      the second cycle's lower stage-III concentration is not erased.
+      The Al column uses g/L while the other metal columns use mg/L.
+      Transferred liquor, newly contacted feed, make-up solution and
+      mixed residues prevent interpreting stage concentrations as a
+      closed whole-feed yield or summing them as independent recoveries.
+  - source_ref: blayda2018
+    supports: partial
+    explanation: >-
+      A medium-only cascade is said to reproduce laboratory results,
+      and the inoculum addition is said to improve efficiency, but
+      corresponding side-by-side numerical controls are not shown.
+      The experimental feed composition is referred to nonexistent
+      Table 6; this complete paper contains only Tables 1 and 2.
+      The reported final liquor pH 1.7-2.4 also extends above the
+      general pH-at-or-below-2 condition. No complete feed/solution/residue
+      inventory, biological replication or matched sterile cascade is
+      supplied. The claims of enhanced efficiency and safety are
+      therefore not accepted as quantified treatment effects.
+  - source_ref: blayda2018
+    supports: partial
+    explanation: >-
+      The reported liquor is proposed for subsequent ion-exchange
+      processing, but no isolated concentrate, purity or downstream
+      recovery measurement is presented. Figure 5 shows changed particle
+      appearance without mineral diffraction, sterile matched photographs
+      or a phase-specific transformation measurement. No post-treatment
+      residual-metal table, toxicity assay or regulatory comparison
+      establishes ecological safety or suitability for land restoration.
+      Neither the apparatus size nor a flowsheet demonstrates an operating
+      commercial plant. Named isolates do not establish strain-specific
+      causality within the native-community and added-preparation mixture.
 curation_history:
 - timestamp: '2026-10-12T02:37:05Z'
   curator: Codex (GPT-6)
@@ -294,7 +512,16 @@ curation_history:
     native-community observation, retaining exact assay denominators,
     recipe/table conflicts and control limits. Preserved the earlier
     source and mechanism fields, correction events and canonical history.
+- timestamp: '2026-10-12T03:56:15Z'
+  curator: codex (GPT-6; codex)
+  action: EDIT
+  summary: >-
+    Added qualified 2018 strain/control and three-stage experimental
+    leaching evidence, verified species authority, retained apparent
+    companion-study overlap and recipe/mass-balance/scale limitations,
+    and expanded the description for the experimental cascade.
 history_refs:
 - history/records/coal-beneficiation-waste/2026-10-12T023644Z-codex-ef668b.yaml
 - history/records/coal-beneficiation-waste/2026-10-12T024545Z-codex-a1785a.yaml
 - history/records/coal-beneficiation-waste/2026-10-12T031901Z-codex-477e90.yaml
+- history/records/coal-beneficiation-waste/2026-10-12T035448Z-codex-16922a.yaml

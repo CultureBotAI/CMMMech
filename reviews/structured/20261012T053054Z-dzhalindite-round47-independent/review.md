@@ -1,0 +1,429 @@
+# Independent scientific review of dzhalindite identity and natural occurrence
+
+- Review: 20261012T053054Z-dzhalindite-round47-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-12T05:27:23Z
+- Finished UTC: 2026-10-12T05:30:54Z
+- Reviewer: Codex /root/round27_packaging (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Dzhalindite identity and qualified natural occurrence are supported. The record preserves failed diffraction, unresolved iron speciation and indirect formation hypotheses without a microbial or recovery claim. No corrective finding.
+
+## Scope And Provenance
+
+Whole new dzhalindite record, CREATE history and paired source dossier; complete2008 original10pages/all4figures; currentIMA definitions and relevant species rows; completeHandbook page.
+
+Selection: Parent-assigned independent review of another agent’s new record.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 18c9f3dd5005e14142b8a0b7e13bb84870e1731a.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:dzhalindite | data/records/dzhalindite.yaml | maintained | Dzhalindite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named validation | passed | True | cmmmech:dzhalindite | Executed by reviewer in explicit round47 cwd with offline cache and no bytecode. Checked1 record;0 failed. Raw log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e |
+| Completed cohort batch | passed | True | cmmmech:dzhalindite | Parent-executed; independently read and raw-byte hash-verified 85ba85c6ae6c37eaf08de9cff32bf752bfd53530f8ee6653b90180e4098a30b5. uv run --locked --extra dev python scripts/check.py<br>All checks passed!<br>........................................................................ [ 23%]<br>........................................................................ [ 46%]<br>........................................................................ [ 69%]<br>....................................................sss................. [ 92%]<br>.......................                                                  [100%]<br>308 passed, 3 skipped in 243.86s (0:04:03)<br>Checked 231 record(s); 0 failed.<br>Checked 274 history record(s); 0 error(s). |
+| Completed cohort nonempty | passed | True | cmmmech:dzhalindite | Parent-executed; independently read and raw-byte hash-verified 6127dc337a4794cd0f1fb158f348c4a20223bc3098da0a4adb0b2d278ce742b4. Checked 231 record(s); 0 failed. |
+| Completed cohort history | passed | True | cmmmech:dzhalindite | Parent-executed; independently read and raw-byte hash-verified 469f96953d0dcc57034205a455d1f0374b1537438c67118a89cdd87e14ff88de. Checked 274 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Mineral and material boundaries
+
+identity: supported. Targets: cmmmech:dzhalindite.
+
+Current issuing authority supports the mineral identity and special-procedure status; no mineral accession is fabricated. Natural mineral, synthetic hydroxide, indite, elemental indium and mixed feed remain distinct.
+
+### Natural specimen evidence and phase confidence
+
+evidence: supported. Targets: cmmmech:dzhalindite.
+
+The exact primary source supports the stated single-section occurrence, dimensions, microscopy and elemental mapping. Failed diffraction and source-assigned phase identity are explicit; no successful crystal refinement or phase-pure product is invented.
+
+### Formation hypotheses and recovery boundaries
+
+scope: supported. Targets: cmmmech:dzhalindite.
+
+Iron valence/lattice occupancy, hypogene origin and temperature remain hypotheses or indirect evidence. No microbial mechanism, criticality designation, recovered product or industrial application is implied by a natural mineral occurrence.
+
+### Exact-state review and completed checks
+
+provenance: supported. Targets: cmmmech:dzhalindite.
+
+Native inspect captured target, history, both dossier files and schema before judgment; bytes remain frozen. Named and final cohort checks passed; all42 source-artifact hashes match.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/dzhalindite.yaml; All fields of exact frozen record | supports | Species identity and a qualified natural occurrence are supported; no mechanism, organism, extraction yield, industrial claim or inherited criticality is inserted. |
+| primary | https://fmm.ru/images/9/94/NDM_2008_43_Kiseleva_eng.pdf; Complete original ten pages, printed13–22; all four original figures personally viewed; no numbered tables | supports | Independently read all text and original page images. Page14 supports one section at50m depth and30–94 micrometre crystals in late quartz. Figures1–2 show natural grains, zoning and In/Fe maps; Figures3–4 concern a separate Mo-rich stolzite arm and are not attributed to dzhalindite. |
+| limits | https://fmm.ru/images/9/94/NDM_2008_43_Kiseleva_eng.pdf; Printed16–18 and21; microscopy/EDS, failed diffraction, iron and temperature discussion | supports | Page16 explicitly reports failed XRD. Page17 identifies EDS methods and states that iron species are not established; valence/fine-compound versus lattice interpretations remain hypotheses. Temperature arguments use other phases/analogous veins and prior synthetic phase data; no direct fluid-inclusion thermometry on these crystals. Hypogene origin and sphalerite-derived precipitation are inferred, not established reaction mechanisms. The record retains these limits. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September2026 complete authority PDF; original definition page1, Dzhalindite row page60 and Indite row page101 personally viewed | supports | In(OH)3, approved A and1967 special-procedure year directly match. Distinct indite FeIn2S4 and elemental indium are not merged. The shared approval-procedure year is not fabricated into a unique species identifier. Verification uses curator-acquired same-session official bytes and independently checked acquisition hashes. |
+| handbook | https://handbookofmineralogy.org/pdfs/dzhalindite.pdf; Complete one-page official Handbook original, chemistry and occurrence lines | supports | Natural locality context is distinct from synthetic density/space-group information. Historical secondary-origin wording and variable chemistry do not negate the record’s occurrence-specific qualified hypogene interpretation. The1963 original bibliography pagination differs by one page between sources; that unavailable older original is not claimed inspected. |
+| dossier | research/sources/round47-indium-minerals/20261012T052552Z-source-investigation.json; Complete final paired source dossier, acquisition receipts and42-artifact inventory | supports | All42 listed hashes and Markdown hash independently verified. The dossier distinguishes actual full2008 originals from inaccessible1963/1971/Charrier sources; no binary source-access or independent acceptance is inferred from a metadata hit. |
+| history | history/records/dzhalindite/2026-10-12T052351Z-codex-aca230.yaml; Complete CREATE sidecar and separate inline event | supports | Actual codex/GPT-6/codex metadata, new target, timestamps and scope are coherent. Reviewer did not author record, history or source dossier. |
+| dedup | /private/tmp/cmm-round47-dzhalindite-review/dedup-receipt.json; Independent bounded current/original corpus and cited-download search | supports | Current new dzhalindite owner is distinct from elemental indium and prior source/authority mentions. No other accepted owner or previously curated Bugdaya experiment identified within stated text-search bounds. |
+| notices | /private/tmp/cmm-round47-dzhalindite-review/web-notices.json; Two exact live notice/context queries on2026-10-12 | supports | No affecting correction/retraction was identified in the returned sets. Later2011 Bugdaya work and2017 nomenclature review are overlap/context leads, not independent new experiments. Search results are not used as a substitute for the acquired primary originals. |
+| gates | /private/tmp/cmm-round47-final-terminal.json; Actual terminal receipt and raw command logs | supports | Parent executed final cohort gates; reviewer independently read results and verified each raw log hash. Offline validation is separate from the independent scientific judgment. |
+
+## Limits And Additional Notes
+
+- The Bugdaya phase assignment rests on composition, optics and apparent symmetry; XRD failed. This does not invalidate currentIMA mineral identity but limits certainty about the reported grains.
+- Iron speciation and lattice occupancy remain unresolved; apparent zoning is not a valence measurement.
+- Only one natural vein section was described; indirect temperature/formation interpretations do not establish universal origin or a controlled reaction pathway.
+- Older original descriptions and later overlapping studies were not fully reassessed. Source-specific missing supplemental links and notice/dedup results remain bounded.
+- The review relies on independently inspected same-session issuing-authority/source files with verified acquisition hashes, not a second fresh download of every source.
+- Started-at is the recorded completion time of initial native input capture, immediately before independent source assessment. An unsaved draft was rejected for target-kind/repository metadata; corrected metadata was recaptured with identical five input hashes before final save. No scientific record or saved review was edited.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261012T053054Z-dzhalindite-round47-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of dzhalindite identity and natural occurrence
+started_at: '2026-10-12T05:27:23Z'
+finished_at: '2026-10-12T05:30:54Z'
+reviewer:
+  identity: Codex /root/round27_packaging
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Record/history/dossier authored by round27_superalloy. Reviewer
+    authored a separate tin-ore record only, native-inspected this target before judging,
+    personally read all original primary pages and figures plus authority/Handbook
+    originals, and ran independent named validation. No self-certification of the
+    tin-ore record.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Dzhalindite identity and qualified natural occurrence are supported. The
+  record preserves failed diffraction, unresolved iron speciation and indirect formation
+  hypotheses without a microbial or recovery claim. No corrective finding.
+source:
+  git_revision: 18c9f3dd5005e14142b8a0b7e13bb84870e1731a
+  state: working_tree
+  inputs:
+  - path: data/records/dzhalindite.yaml
+    sha256: 60435e2806654a3150427a07c17adb27c1b0fac18684dd9354ba939b43a560ee
+    role: target
+  - path: history/records/dzhalindite/2026-10-12T052351Z-codex-aca230.yaml
+    sha256: bd5e1200173b40cc0bebdf32228c214b35ad6051d3b1ee8d1836339f994a361e
+    role: context
+  - path: research/sources/round47-indium-minerals/20261012T052552Z-source-investigation.json
+    sha256: 9d44531749a1acda1545c39efaacdd4b8a675b161785c192ddf70450cebd07e4
+    role: context
+  - path: research/sources/round47-indium-minerals/20261012T052552Z-source-investigation.md
+    sha256: 45d946b66f46e2eb3ca880063f35a617ec548df3e17a2d7f168aec94a4644619
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:dzhalindite
+  path: data/records/dzhalindite.yaml
+  label: Dzhalindite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/dzhalindite.yaml
+    role: scientific_record
+scope:
+  description: Whole new dzhalindite record, CREATE history and paired source dossier;
+    complete2008 original10pages/all4figures; currentIMA definitions and relevant
+    species rows; completeHandbook page.
+  selection: Parent-assigned independent review of another agent’s new record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:dzhalindite
+  exclusions:
+  - target: Unavailable original1963/1971 papers, Charrier2022 and later Bugdaya studies
+    reason: Not accepted as new primary evidence in this record; no claim of complete
+      visual review or independent replication.
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/dzhalindite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:dzhalindite
+  summary: Executed by reviewer in explicit round47 cwd with offline cache and no
+    bytecode. Checked1 record;0 failed. Raw log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- check_id: batch
+  name: Completed cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:dzhalindite
+  summary: 'Parent-executed; independently read and raw-byte hash-verified 85ba85c6ae6c37eaf08de9cff32bf752bfd53530f8ee6653b90180e4098a30b5.
+    uv run --locked --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 243.86s (0:04:03)
+
+    Checked 231 record(s); 0 failed.
+
+    Checked 274 history record(s); 0 error(s).'
+- check_id: nonempty
+  name: Completed cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:dzhalindite
+  summary: Parent-executed; independently read and raw-byte hash-verified 6127dc337a4794cd0f1fb158f348c4a20223bc3098da0a4adb0b2d278ce742b4.
+    Checked 231 record(s); 0 failed.
+- check_id: history
+  name: Completed cohort history
+  command: uv run --locked cmmmech validate-history --base 18c9f3dd5005e14142b8a0b7e13bb84870e1731a
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:dzhalindite
+  summary: Parent-executed; independently read and raw-byte hash-verified 469f96953d0dcc57034205a455d1f0374b1537438c67118a89cdd87e14ff88de.
+    Checked 274 history record(s); 0 error(s).
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/dzhalindite.yaml
+  locator: All fields of exact frozen record
+  accessed_at: '2026-10-12T05:30:54Z'
+  support: supports
+  summary: Species identity and a qualified natural occurrence are supported; no mechanism,
+    organism, extraction yield, industrial claim or inherited criticality is inserted.
+  snapshot_sha256: 60435e2806654a3150427a07c17adb27c1b0fac18684dd9354ba939b43a560ee
+- evidence_id: primary
+  kind: primary_source
+  reference: https://fmm.ru/images/9/94/NDM_2008_43_Kiseleva_eng.pdf
+  locator: Complete original ten pages, printed13–22; all four original figures personally
+    viewed; no numbered tables
+  accessed_at: '2026-10-12T05:30:54Z'
+  support: supports
+  summary: Independently read all text and original page images. Page14 supports one
+    section at50m depth and30–94 micrometre crystals in late quartz. Figures1–2 show
+    natural grains, zoning and In/Fe maps; Figures3–4 concern a separate Mo-rich stolzite
+    arm and are not attributed to dzhalindite.
+  snapshot_sha256: 7c2e6d292953ec19522ababa8801bd6400babb0c6e57bb1adcc29501d72839fe
+- evidence_id: limits
+  kind: primary_source
+  reference: https://fmm.ru/images/9/94/NDM_2008_43_Kiseleva_eng.pdf
+  locator: Printed16–18 and21; microscopy/EDS, failed diffraction, iron and temperature
+    discussion
+  accessed_at: '2026-10-12T05:30:54Z'
+  support: supports
+  summary: Page16 explicitly reports failed XRD. Page17 identifies EDS methods and
+    states that iron species are not established; valence/fine-compound versus lattice
+    interpretations remain hypotheses. Temperature arguments use other phases/analogous
+    veins and prior synthetic phase data; no direct fluid-inclusion thermometry on
+    these crystals. Hypogene origin and sphalerite-derived precipitation are inferred,
+    not established reaction mechanisms. The record retains these limits.
+  snapshot_sha256: 7c2e6d292953ec19522ababa8801bd6400babb0c6e57bb1adcc29501d72839fe
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September2026 complete authority PDF; original definition page1, Dzhalindite
+    row page60 and Indite row page101 personally viewed
+  accessed_at: '2026-10-12T05:30:54Z'
+  support: supports
+  summary: In(OH)3, approved A and1967 special-procedure year directly match. Distinct
+    indite FeIn2S4 and elemental indium are not merged. The shared approval-procedure
+    year is not fabricated into a unique species identifier. Verification uses curator-acquired
+    same-session official bytes and independently checked acquisition hashes.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://handbookofmineralogy.org/pdfs/dzhalindite.pdf
+  locator: Complete one-page official Handbook original, chemistry and occurrence
+    lines
+  accessed_at: '2026-10-12T05:30:54Z'
+  support: supports
+  summary: Natural locality context is distinct from synthetic density/space-group
+    information. Historical secondary-origin wording and variable chemistry do not
+    negate the record’s occurrence-specific qualified hypogene interpretation. The1963
+    original bibliography pagination differs by one page between sources; that unavailable
+    older original is not claimed inspected.
+  snapshot_sha256: 2b090616e80706a50f3b36c8ea1ae35a86cd1a562f17a581179dbaf723151cd7
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round47-indium-minerals/20261012T052552Z-source-investigation.json
+  locator: Complete final paired source dossier, acquisition receipts and42-artifact
+    inventory
+  accessed_at: '2026-10-12T05:30:54Z'
+  support: supports
+  summary: All42 listed hashes and Markdown hash independently verified. The dossier
+    distinguishes actual full2008 originals from inaccessible1963/1971/Charrier sources;
+    no binary source-access or independent acceptance is inferred from a metadata
+    hit.
+  snapshot_sha256: 9d44531749a1acda1545c39efaacdd4b8a675b161785c192ddf70450cebd07e4
+- evidence_id: history
+  kind: record_content
+  reference: history/records/dzhalindite/2026-10-12T052351Z-codex-aca230.yaml
+  locator: Complete CREATE sidecar and separate inline event
+  accessed_at: '2026-10-12T05:30:54Z'
+  support: supports
+  summary: Actual codex/GPT-6/codex metadata, new target, timestamps and scope are
+    coherent. Reviewer did not author record, history or source dossier.
+  snapshot_sha256: bd5e1200173b40cc0bebdf32228c214b35ad6051d3b1ee8d1836339f994a361e
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round47-dzhalindite-review/dedup-receipt.json
+  locator: Independent bounded current/original corpus and cited-download search
+  accessed_at: '2026-10-12T05:30:54Z'
+  support: supports
+  summary: Current new dzhalindite owner is distinct from elemental indium and prior
+    source/authority mentions. No other accepted owner or previously curated Bugdaya
+    experiment identified within stated text-search bounds.
+  snapshot_sha256: 49589062ba0e2d48071818ddb174b897b3e20eb4fcacee0cc96540da17a04cc5
+  search_scope: rg --no-ignore --hidden --follow, current and original data/records,
+    research, reviews and history; 3668 metadata files and 173 existing referenced
+    raw directories. Pattern dzhalindite|NDM_2008_43_Kiseleva|Kiseleva.{0,25}2008;
+    owner search includes indite/indium. Text-bearing extensions, nine missing historical
+    roots and unextracted binary contents excluded; no unrelated machine search.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round47-dzhalindite-review/web-notices.json
+  locator: Two exact live notice/context queries on2026-10-12
+  accessed_at: '2026-10-12T05:30:54Z'
+  support: supports
+  summary: No affecting correction/retraction was identified in the returned sets.
+    Later2011 Bugdaya work and2017 nomenclature review are overlap/context leads,
+    not independent new experiments. Search results are not used as a substitute for
+    the acquired primary originals.
+  snapshot_sha256: 7d7e9d61d40031931401b55cea85dbafcb72c96e36702623943e20556cefd0a7
+  search_scope: 'web.run queries: "Kiseleva" "2008" "dzhalindite" correction erratum
+    retraction; "dzhalindite" "Bugdaya" identification hypogene. First returned sets
+    only, no date/domain filters or exhaustive pagination. Official museum PDF result
+    corroborates source route; indexed mirrors are discovery context only.'
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round47-final-terminal.json
+  locator: Actual terminal receipt and raw command logs
+  accessed_at: '2026-10-12T05:30:54Z'
+  support: supports
+  summary: Parent executed final cohort gates; reviewer independently read results
+    and verified each raw log hash. Offline validation is separate from the independent
+    scientific judgment.
+  snapshot_sha256: 264eff4b032f55936df899941e62ceab7564406b83baeb4130a6610888068298
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral and material boundaries
+  outcome: supported
+  target_ids:
+  - cmmmech:dzhalindite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  - dedup
+  summary: Current issuing authority supports the mineral identity and special-procedure
+    status; no mineral accession is fabricated. Natural mineral, synthetic hydroxide,
+    indite, elemental indium and mixed feed remain distinct.
+- assessment_id: occurrence
+  area: evidence
+  topic: Natural specimen evidence and phase confidence
+  outcome: supported
+  target_ids:
+  - cmmmech:dzhalindite
+  evidence_ids:
+  - primary
+  - limits
+  - record
+  summary: The exact primary source supports the stated single-section occurrence,
+    dimensions, microscopy and elemental mapping. Failed diffraction and source-assigned
+    phase identity are explicit; no successful crystal refinement or phase-pure product
+    is invented.
+- assessment_id: scope
+  area: scope
+  topic: Formation hypotheses and recovery boundaries
+  outcome: supported
+  target_ids:
+  - cmmmech:dzhalindite
+  evidence_ids:
+  - limits
+  - handbook
+  - record
+  summary: Iron valence/lattice occupancy, hypogene origin and temperature remain
+    hypotheses or indirect evidence. No microbial mechanism, criticality designation,
+    recovered product or industrial application is implied by a natural mineral occurrence.
+- assessment_id: provenance
+  area: provenance
+  topic: Exact-state review and completed checks
+  outcome: supported
+  target_ids:
+  - cmmmech:dzhalindite
+  evidence_ids:
+  - history
+  - dossier
+  - gates
+  - notices
+  summary: Native inspect captured target, history, both dossier files and schema
+    before judgment; bytes remain frozen. Named and final cohort checks passed; all42
+    source-artifact hashes match.
+findings: []
+actions: []
+limitations:
+- The Bugdaya phase assignment rests on composition, optics and apparent symmetry;
+  XRD failed. This does not invalidate currentIMA mineral identity but limits certainty
+  about the reported grains.
+- Iron speciation and lattice occupancy remain unresolved; apparent zoning is not
+  a valence measurement.
+- Only one natural vein section was described; indirect temperature/formation interpretations
+  do not establish universal origin or a controlled reaction pathway.
+- Older original descriptions and later overlapping studies were not fully reassessed.
+  Source-specific missing supplemental links and notice/dedup results remain bounded.
+- The review relies on independently inspected same-session issuing-authority/source
+  files with verified acquisition hashes, not a second fresh download of every source.
+notes:
+- Started-at is the recorded completion time of initial native input capture, immediately
+  before independent source assessment. An unsaved draft was rejected for target-kind/repository
+  metadata; corrected metadata was recaptured with identical five input hashes before
+  final save. No scientific record or saved review was edited.
+tags:
+- round47
+- independent
+- dzhalindite
+- mineral-identity
+- natural-occurrence
+```

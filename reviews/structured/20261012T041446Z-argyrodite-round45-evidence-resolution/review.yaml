@@ -1,0 +1,474 @@
+schema_version: 1.0.0
+review_id: 20261012T041446Z-argyrodite-round45-evidence-resolution
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent argyrodite review with corrected evidence snapshot attribution
+started_at: '2026-10-12T04:12:53Z'
+finished_at: '2026-10-12T04:14:46Z'
+reviewer:
+  identity: Codex /root/round27_packaging
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Did not author or edit argyrodite, its sidecars or source dossiers.
+    Curated separate coal record. Independently inspected originals and saved initial
+    F1; corrected input capture preceded successor assessment. Source acquisition
+    was shared; source judgment and correction verification independent. This reviewer
+    authored the previous scientific review and is correcting its own evidence-metadata
+    error discovered independently by /root/round43_hardmetal; this is not independent
+    certification of that review-metadata fix. The separate publication reviewer assesses
+    its resolution.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'Natural argyrodite identity remains supported and record finding F1 remains
+  resolved through its exact immediate predecessor. This successor corrects my own
+  review-metadata error: the dossier evidence had been paired with the separate reverse-byte-proof
+  checksum. Each local reference now carries its own verified hash. No scientific
+  record or history changed; issue147 tracks the independent publication finding.'
+source:
+  git_revision: 2b975ae5327b94ac3c1e6583378408add2b8d1f2
+  state: working_tree
+  inputs:
+  - path: data/records/argyrodite.yaml
+    sha256: 7944de7d27f422ff2778c454e466b0c6397367b1af4efcfb7a3a227e886d7190
+    role: target
+  - path: history/records/argyrodite/2026-10-12T035954Z-codex-d6c8f5.yaml
+    sha256: e597e55fd185cb2075c934f24e211bcaebfe733186d92ae31fbf94fa77a348c8
+    role: context
+  - path: history/records/argyrodite/2026-10-12T040537Z-codex-a2857d.yaml
+    sha256: b6a3dcd9ff7321df96d5fe3337849349ae6a7003e45a5310216754fb0338e929
+    role: context
+  - path: research/sources/round45-ge-minerals/20261012T040630Z-source-investigation.json
+    sha256: 159249cbe58cffb431f9ac9b69a68669a1edbe5518fab2109346ee5ba40c7711
+    role: context
+  - path: reviews/structured/20261012T041053Z-argyrodite-round45-resolution/review.yaml
+    sha256: 4c1f2e566094c10440ca2b54997dec4db67db7250e386c2582c6be9109dfa37b
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:argyrodite
+  path: data/records/argyrodite.yaml
+  label: Argyrodite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/argyrodite.yaml
+    role: scientific_record
+scope:
+  description: Whole corrected mineral record and CREATE/EDIT history, full1995 original,
+    dated authority, precise historical species boundary and initial finding disposition.
+    Reassesses the exact unchanged record and independently supported source judgment,
+    with an append-only correction of reviewer-authored evidence metadata.
+  selection: Assigned independent peer review and supported-finding successor.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:argyrodite
+  exclusions:
+  - target: Full2014alburnite graphics/measurements and2005Romanian study acceptance
+    reason: Only2014page57primary historical reinterpretation supports a boundary;
+      no numerical/graphical assay from those studies is accepted.
+checks:
+- check_id: named
+  name: Independent corrected named validation
+  command: uv run --locked cmmmech validate data/records/argyrodite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:argyrodite
+  summary: Reviewer executed in explicit round45 cwd with offline/no-bytecode environment;1checked0failed.
+    LogSHA 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- check_id: batch
+  name: Actual corrected cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:argyrodite
+  summary: 'Parent executed; reviewer read full raw log and checked SHA256 5e6d87f0e99f5ff1f24fe8e6cfbe98a38442b4787add02cbf0c5d0f0b5aa1c1d.
+    uv run --locked --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 208.23s (0:03:28)
+
+    Checked 224 record(s); 0 failed.
+
+    Checked 267 history record(s); 0 error(s).'
+- check_id: nonempty
+  name: Actual corrected cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:argyrodite
+  summary: Parent executed; reviewer read full raw log and checked SHA256 422762d06cd992924323952fee0ca1e7d56c09a13fca4fc98a425f8f8f911adc.
+    Checked 224 record(s); 0 failed.
+- check_id: history
+  name: Actual corrected cohort history
+  command: uv run --locked cmmmech validate-history --base 2b975ae5327b94ac3c1e6583378408add2b8d1f2
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:argyrodite
+  summary: Parent executed; reviewer read full raw log and checked SHA256 2b2ddc7d5293ef78a29c990b065cb8b4d1cae9a128977c0c3aaf7fa0053d1e32.
+    Checked 267 history record(s); 0 error(s).
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/argyrodite.yaml
+  locator: All fields of corrected frozen target
+  summary: Distinct natural mineral root; no biochemical mechanism, criticality or
+    recovery outcome extrapolated.
+  accessed_at: '2026-10-12T04:10:53Z'
+  support: supports
+  snapshot_sha256: 7944de7d27f422ff2778c454e466b0c6397367b1af4efcfb7a3a227e886d7190
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Dated original PDF definitions page1 and original Argyrodite page14/Alburnite
+    page6 row images
+  summary: Argyrodite Ag8GeS6 is grandfathered and1886 is original-description year,
+    not approval number. Separate alburnite Ag8GeTe2S4 is approved2012-073. Curator-acquired
+    dated authority independently read, not a claimed new reviewer download.
+  accessed_at: '2026-10-12T04:10:53Z'
+  support: supports
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.2465/ganko.90.268
+  locator: Complete12 original pages268–279, all9 figures and Tables1–4 visually inspected;
+    original English abstract and Japanese methods/discussion read
+  summary: Natural fine-grained Ezuri black ore contains argyrodite identified by
+    reflected-light microscopy and EPMA. Source methods specify JXA-50A and different
+    settings for electrum/fahlore versus other silver minerals; no processing experiment
+    is performed. Figures4–6 concern electrum rather than argyrodite, and sphalerite
+    fluid inclusions do not become argyrodite extraction conditions.
+  accessed_at: '2026-10-12T04:10:53Z'
+  support: supports
+  snapshot_sha256: 0aa5f0ed67b79920a6b8fb04839423543408df696eb349e62f3eb08a03b3efed
+- evidence_id: specimen
+  kind: primary_source
+  reference: https://doi.org/10.2465/ganko.90.268
+  locator: Figure3F page271, EPMA methods page272, SectionIV.5 and Table2 page274;
+    Tables3–4/Figures7–9 are contextual
+  summary: Figure3F independently confirms argyrodite with galena/covellite/chalcopyrite/bornite
+    in barite, specimen81092210. Table2D and prose describe a near-ideal Ag8GeS6 composition
+    with minor Cu,Fe,As. No uniform composition, bulk Ge grade or yield is inferred
+    from one grain/specimen analysis.
+  accessed_at: '2026-10-12T04:10:53Z'
+  support: supports
+  snapshot_sha256: 75e3d06882e8ab656a0dbcae449683cf1a5da057670fcf6e9f27c913c67d1db0
+- evidence_id: handbook
+  kind: primary_source
+  reference: https://handbookofmineralogy.org/pdfs/argyrodite.pdf
+  locator: Complete original one-page PDF, especially numbered References; independently
+    rendered and visually inspected
+  summary: Reference3 Eulenberger1977 explicitly concerns synthetic argyrodite. Reference2
+    is Berry/Thompson1962 powder data. Corrected source title now points to3; structural
+    context is not transferred to the natural Ezuri specimen.
+  accessed_at: '2026-10-12T04:10:53Z'
+  support: supports
+  snapshot_sha256: 3cdf1da26f76a27fda04602141cc33ff252b5bc717c7c0e9d988ea2f4aee71cc
+- evidence_id: alburnite
+  kind: primary_source
+  reference: https://doi.org/10.2138/am.2014.4557
+  locator: Page57 Introduction, public author-posted full-text rendition independently
+    opened; no2014 original graphic inspection claimed
+  summary: The author-posted primary page explicitly describes earlier2004/2005 Te-and-Ge-bearing
+    mineral interpretation as Te-bearing argyrodite. Current IMA assigns the separate
+    alburnite species. This supports the boundary only; Romanian analyses/figures
+    are not imported as Ezuri evidence.
+  accessed_at: '2026-10-12T04:10:53Z'
+  support: supports
+  snapshot_sha256: 235641b986576016638471e9ff0db52cf389dd63f048a00fdf0419a71469346e
+- evidence_id: correction
+  kind: record_content
+  reference: research/sources/round45-ge-minerals/20261012T040630Z-source-investigation.json
+  locator: Corrected successor source dossier and explicit supersession of initial
+    Handbook locator; original/raw artifact manifest
+  summary: This dossier explicitly supersedes the initial wrong Reference2 locator,
+    preserves the earlier dossier, and pins the unchanged scientific targets and source
+    artifacts. Its own SHA256 is now correctly attached; separate proof evidence records
+    reverse-byte reconstruction and85 verified raw hashes.
+  accessed_at: '2026-10-12T04:14:46Z'
+  support: supports
+  snapshot_sha256: 159249cbe58cffb431f9ac9b69a68669a1edbe5518fab2109346ee5ba40c7711
+- evidence_id: history
+  kind: record_content
+  reference: history/records/argyrodite/2026-10-12T040537Z-codex-a2857d.yaml
+  locator: Actual canonical EDIT and distinct inline event; initial CREATE retained
+  summary: Actual codex/GPT-6/codex correction event targets only locator and provenance,
+    links146 and exact initial F1. No invented earlier authorship.
+  accessed_at: '2026-10-12T04:10:53Z'
+  support: supports
+  snapshot_sha256: b6a3dcd9ff7321df96d5fe3337849349ae6a7003e45a5310216754fb0338e929
+- evidence_id: prior
+  kind: record_content
+  reference: reviews/structured/20261012T040400Z-argyrodite-round45-initial/review.yaml
+  locator: Immutable initial observation F1
+  summary: Exact predecessor finding retained and dispositioned; original review not
+    overwritten.
+  accessed_at: '2026-10-12T04:10:53Z'
+  support: supports
+  snapshot_sha256: 6d429c3805ced711504c973055c82c65c44fc846fb7aea4f41cb89a90e67bd44
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round45-mineral-independent/dedup.json
+  locator: Independent bounded current/original scientific-directory and cited-raw-root
+    search
+  summary: Existing element, mixed-resource and synthetic-family context is not the
+    same natural species. The newly added owner is retained separately.614textmatching
+    lines returned with no stderr.
+  accessed_at: '2026-10-12T04:10:53Z'
+  support: supports
+  snapshot_sha256: 7f03c5891c7ccfeedad0bdbca589361aba1da38e7471f020201e1e4f5e45018b
+  search_scope: rg --no-ignore --hidden --follow over both specified checkouts data/records,research,reviews,history
+    plus162 existing cited historical raw roots and current mineral raw directory;
+    text extensions only. Nine unavailable roots disclosed; no decoded-binary or machine-wide
+    absence claim.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round45-mineral-independent/notices-web.json
+  locator: Four exact DOI/species notice and nomenclature queries, first returned
+    web results
+  summary: No affecting formal correction/retraction found in this bounded returned
+    set. Relevant positive counterevidence is the primary2014 reinterpretation and
+    current mineral distinction, explicitly preserved rather than suppressed.
+  accessed_at: '2026-10-12T04:10:53Z'
+  support: supports
+  snapshot_sha256: 452843a726be9827b5d70f452f3046a325a87675915e6b6c351922afadd39556
+  search_scope: 'web.run queries: "10.2138/am.2014.4557" "argyrodite"; "10.2465/ganko.90.268"
+    correction retraction; "10.3406/bulmi.1965.5876" correction retraction; "briartite"
+    "zincobriartite"2015-094. No date/domain filters or pagination; search hits used
+    as leads, direct primary opened separately.'
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round45-final-v2-terminal.json
+  locator: Actual corrected-state final-v2 receipt and all3 raw logs independently
+    read/hashed
+  summary: Final corrected-state full batch, nonempty and trusted-base history gates
+    are complete; exact inspected target/history remain unchanged.
+  accessed_at: '2026-10-12T04:10:53Z'
+  support: supports
+  snapshot_sha256: cbc01d1bdbe9d5a339ac9500f027981bba83e9cb73b818c4582720988a9a8401
+- evidence_id: reverse_proof
+  kind: validation
+  reference: /private/tmp/cmm-round45-mineral-independent/correction-proof.json
+  locator: Independent reverse-byte reconstruction and85 source-artifact checksum
+    checks
+  accessed_at: '2026-10-12T04:14:46Z'
+  support: supports
+  summary: Removing only the appended correction provenance and reversing Reference3→2
+    reconstructs exactly the initial e6866129… record. All85 listed acquisition hashes
+    match; initial source dossiers are unchanged.
+  snapshot_sha256: ba61718fc3faedfa41d6b906a86344dd9a35f922fec6aa0d142376df01d73e27
+- evidence_id: review_metadata
+  kind: record_content
+  reference: reviews/publication/20261012-round45/20261012T041301Z-independent-initial.json
+  locator: Independent publication finding CMMMech.round45.argyrodite-review.evidence-snapshot-reference,
+    issue147
+  accessed_at: '2026-10-12T04:14:46Z'
+  support: supports
+  summary: Peer reviewer correctly found that my prior correction evidence named the
+    dossier but carried the separate proof hash. This successor preserves that prior
+    review, fixes the dossier hash and supplies a separately named proof entry. Final
+    independent publication disposition remains owned by the peer reviewer.
+  snapshot_sha256: 2b4d5afd5e52106a992740f817af45b0fa702092eab33e9029a611a86e2d862e
+- evidence_id: immediate_prior
+  kind: record_content
+  reference: reviews/structured/20261012T041053Z-argyrodite-round45-resolution/review.yaml
+  locator: Immutable immediately preceding scientific resolution review
+  accessed_at: '2026-10-12T04:14:46Z'
+  support: supports
+  summary: F1 scientific disposition and exact corrected record remain valid. The
+    snapshot-reference defect is disclosed and superseded only by this later observation;
+    the old review is not edited.
+  snapshot_sha256: 4c1f2e566094c10440ca2b54997dec4db67db7250e386c2582c6be9109dfa37b
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Current natural mineral versus synthetic family and Te analogue
+  outcome: supported
+  target_ids:
+  - cmmmech:argyrodite
+  evidence_ids:
+  - record
+  - ima
+  - primary
+  - alburnite
+  - dedup
+  summary: The dated authority and original natural-specimen evidence support argyrodite
+    as Ag8GeS6. Synthetic lithium electrolytes, synthetic structural specimens and
+    alburnite are distinct.
+- assessment_id: specimen
+  area: evidence
+  topic: Microscopy, microprobe and specimen scale
+  outcome: supported
+  target_ids:
+  - cmmmech:argyrodite
+  evidence_ids:
+  - primary
+  - specimen
+  summary: All relevant original figures/tables and complete paper support the narrow
+    geological observation. Bulk grade, phase-pure feed, temperature-controlled extraction
+    and recovery outcomes are not inferred.
+- assessment_id: locator
+  area: evidence
+  topic: Corrected precise Handbook reference
+  outcome: supported
+  target_ids:
+  - cmmmech:argyrodite
+  evidence_ids:
+  - record
+  - handbook
+  - correction
+  - prior
+  - reverse_proof
+  summary: The corrected title identifies Reference3. F1 is resolved after original
+    PDF inspection and exact narrow-delta proof; scientific natural/synthetic distinction
+    remains unchanged.
+- assessment_id: scope
+  area: scope
+  topic: Mechanism, criticality and deployment limits
+  outcome: supported
+  target_ids:
+  - cmmmech:argyrodite
+  evidence_ids:
+  - record
+  - primary
+  summary: No organism, biomass, microbial mechanism or extraction/industrial performance
+    is assigned. Criticality requires a separate jurisdiction/list/edition and is
+    not inherited.
+- assessment_id: provenance
+  area: provenance
+  topic: Independent exact-state source review and append-only correction
+  outcome: supported
+  target_ids:
+  - cmmmech:argyrodite
+  evidence_ids:
+  - record
+  - history
+  - prior
+  - correction
+  - gates
+  - notices
+  - reverse_proof
+  summary: Curator and reviewer differ; actual inspect capture, source hashes, prior
+    artifacts, new history and successful corrected-state checks are verified.
+- assessment_id: review_metadata
+  area: provenance
+  topic: Reviewer-authored evidence attribution correction
+  outcome: supported
+  target_ids:
+  - cmmmech:argyrodite
+  evidence_ids:
+  - correction
+  - reverse_proof
+  - review_metadata
+  - immediate_prior
+  summary: Dossier and verification receipt now have distinct literal references with
+    correctly matching SHA256 values. Target and scientific interpretation are unchanged.
+    Separate independent publication review will verify this self-correction.
+findings:
+- finding_id: F1
+  issue_key: CMMMech.argyrodite.handbook-synthetic-reference
+  category: evidence
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Correct the Handbook synthetic-study reference number
+  description: The original source-locator error has been corrected from Reference2
+    to Reference3. Original Handbook PDF independently verifies the replacement. Mineral
+    identity and scientific boundaries remain unchanged.
+  target_ids:
+  - cmmmech:argyrodite
+  field_paths:
+  - sources[id=handbook_argyrodite].title
+  evidence_ids:
+  - record
+  - handbook
+  - correction
+  - prior
+  - history
+  - gates
+  - reverse_proof
+  - immediate_prior
+  rule_id: exact-source-locator
+  native_severity: minor
+  normalization_reason: Nonblocking bibliographic locator defect; mineral identity
+    and the natural/synthetic boundary remain supported.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/argyrodite.yaml
+    role: scientific_record
+  disposition_reason: Original source rechecked; reverse-byte proof establishes only
+    the locator and appended provenance changed. Initial CREATE, dossier and review
+    remain intact; successor dossier explicitly supersedes the old locator. Independent
+    named and corrected-state required gates passed. This successor retains the immediately
+    prior resolved F1 occurrence and corrects only review-evidence attribution, not
+    that scientific disposition.
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261012T041053Z-argyrodite-round45-resolution
+    finding_id: F1
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/146
+actions: []
+limitations:
+- Original Ezuri observation is specimen-level mineralogy; no general composition,
+  bulk Ge assay, recovery yield or industrial process.
+- Full2014original graphics and numerical analyses were not reviewed or adopted; only
+  inspected page57historical interpretation and current IMA species boundary are used.
+- Historical crystal data for synthetic Ag8GeS6 are not measurements of the natural
+  Ezuri grain.
+- Dedup/notices searches are bounded, including hidden/ignored relevant text/symlinks;
+  unavailable roots and undecoded binaries are not claimed searched.
+- Scientific resolution of F1 does not itself claim GitHub issue146 closure or publication.
+notes:
+- No target edit by reviewer; source original pages were viewed during initial assessment
+  and correction-specific bytes rechecked after the new inspect.
+- 'iModulon and taxon/strain adapters are not applicable: no biological identity or
+  molecular mechanism claim.'
+- My prior review mistakenly used the reverse-byte-proof SHA256 for the source-dossier
+  reference. This author correction is explicit and independently checked by the publication
+  reviewer; no claim of independent self-review.
+- Original final-v2 named/cohort evidence is reused because target/history bytes are
+  unchanged; this successor does not claim fresh rerun of corpus checks.
+- Metadata finding key CMMMech.round45.argyrodite-review.evidence-snapshot-reference
+  is tracked in independent publication artifacts, not invented as a second scientific
+  record finding.
+links:
+- https://doi.org/10.2465/ganko.90.268
+- https://github.com/CultureBotAI/CMMMech/issues/146
+- https://github.com/CultureBotAI/CMMMech/issues/147
+tags:
+- round45
+- independent
+- scientific
+- argyrodite
+- resolution
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261012T041053Z-argyrodite-round45-resolution
+  relationship: Append-only successor correcting my evidence snapshot attribution
+    under independent publication finding and issue147; same target and retained F1
+    resolved lineage.

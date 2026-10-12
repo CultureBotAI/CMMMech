@@ -1,0 +1,74 @@
+{
+  "timestamp_utc": "2026-10-12T04:53:10.193615+00:00",
+  "reviewer": "Codex /root/round27_superalloy (GPT-6; codex)",
+  "authorship": "Reviewer authored separate laforetite and original publication finding, not either Ge target/dossier or native successor. This is acceptance verification and provenance review.",
+  "base": "94d743a1b8bb3fe595f96e88f4cdb54a4ee72375",
+  "verdict": "needs_curation",
+  "reviewed_document_sha256": {
+    "reviews/structured/20261012T045116Z-alburnite-round46-context-resolution/review.yaml": "f2cae4904f9ed44bb8474b9ab13fddcb5b3104dbc412e35861113c17de23b66e",
+    "reviews/structured/20261012T045129Z-zincobriartite-round46-context-resolution/review.yaml": "839f78fd0c3ad463473647de65c60613e19b437914d0ecf2a740a7cfa7f168ba"
+  },
+  "observations": [
+    {
+      "review": "reviews/structured/20261012T045116Z-alburnite-round46-context-resolution/review.yaml",
+      "review_sha256": "f2cae4904f9ed44bb8474b9ab13fddcb5b3104dbc412e35861113c17de23b66e",
+      "markdown_sha256": "0f3931491ad05de361888ff2cfbc9ce3922cb4721af061ef725732d7bc29fe93",
+      "captured_inputs": [
+        {
+          "path": "data/records/alburnite.yaml",
+          "sha256": "bb980057adbe887790f25c5a357824179470eba8ca1ae21caab24473c7d50c1a",
+          "role": "target"
+        }
+      ],
+      "missing_required_context": [
+        "current corrected source dossier Markdown",
+        "unchanged source dossier JSON",
+        "canonical CREATE history",
+        "publication correction receipt"
+      ]
+    },
+    {
+      "review": "reviews/structured/20261012T045129Z-zincobriartite-round46-context-resolution/review.yaml",
+      "review_sha256": "839f78fd0c3ad463473647de65c60613e19b437914d0ecf2a740a7cfa7f168ba",
+      "markdown_sha256": "44f93b35f9126ed39c71c1a21465bb222c8fc946bf217b0d18610c909ae766d4",
+      "captured_inputs": [
+        {
+          "path": "data/records/zincobriartite.yaml",
+          "sha256": "b06ce6857cd85a53e1c2c11d4f414552ea9c57146b9f7d3f9e46a54718411782",
+          "role": "target"
+        }
+      ],
+      "missing_required_context": [
+        "current corrected source dossier Markdown",
+        "unchanged source dossier JSON",
+        "canonical CREATE history",
+        "publication correction receipt"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "F1",
+      "stable_key": "CMMMech.round46.ge-dossier-trailing-whitespace",
+      "severity": "minor",
+      "status": "open",
+      "issue": "https://github.com/CultureBotAI/CMMMech/issues/149",
+      "previous_occurrence": {
+        "path": "reviews/publication/20261012-round46/20261012T045029Z-initial-dossier-whitespace-finding.json",
+        "sha256": "bb2d3f51efa23a60fa2a4355c75af34b0a89cb4a1d62179707358ee662d4e4b4",
+        "finding_id": "F1"
+      },
+      "description": "The six-space correction is accurate, but its first two native successor inspections captured only their record targets. Both reviews claim a current captured dossier hash; source.inputs contains no such context. The local inspect contract requires explicit inputs for assessed local source context. Therefore original F1 acceptance remains incomplete, not resolved.",
+      "acceptance": [
+        "Keep both inadequate successor YAML/Markdown bundles immutable.",
+        "Capture each actual record target plus its canonical CREATE history, shared source JSON, corrected source Markdown and correction receipt with explicit native --input flags.",
+        "Reassess unchanged science and corrected context, then save two new immutable per-record native observations with truthful scope and actual hashes.",
+        "Update final overrides and repeat affected structured-review/context and coverage gates; final publication audit must resolve exact initial F1 and this follow-up under issue149."
+      ],
+      "scientific_scope": "No record content or history defect; no artificial EDIT event or new experiment."
+    }
+  ],
+  "unresolved_findings": [
+    "CMMMech.round46.ge-dossier-trailing-whitespace"
+  ]
+}

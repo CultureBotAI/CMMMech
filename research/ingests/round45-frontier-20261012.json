@@ -1,0 +1,357 @@
+{
+  "recorded_at": "2026-10-12T04:18:12.392690+00:00",
+  "base": "2b975ae5327b94ac3c1e6583378408add2b8d1f2",
+  "branch": "curate/cmm-expansion-round45-20261012",
+  "counts": {
+    "record_count": 224,
+    "history_count": 267,
+    "structured_review_count": 272,
+    "review_base_count": 46,
+    "covered_records": 224
+  },
+  "record_actions": {
+    "argyrodite": "CREATE",
+    "briartite": "CREATE",
+    "coal-beneficiation-waste": "EDIT",
+    "theisen-sludge": "CREATE"
+  },
+  "records": [
+    {
+      "slug": "argyrodite",
+      "action": "CREATE",
+      "record": "data/records/argyrodite.yaml",
+      "record_sha256": "7944de7d27f422ff2778c454e466b0c6397367b1af4efcfb7a3a227e886d7190",
+      "histories": [
+        {
+          "path": "history/records/argyrodite/2026-10-12T035954Z-codex-d6c8f5.yaml",
+          "sha256": "e597e55fd185cb2075c934f24e211bcaebfe733186d92ae31fbf94fa77a348c8"
+        },
+        {
+          "path": "history/records/argyrodite/2026-10-12T040537Z-codex-a2857d.yaml",
+          "sha256": "b6a3dcd9ff7321df96d5fe3337849349ae6a7003e45a5310216754fb0338e929"
+        }
+      ],
+      "review": "reviews/structured/20261012T041446Z-argyrodite-round45-evidence-resolution/review.yaml",
+      "review_md": "reviews/structured/20261012T041446Z-argyrodite-round45-evidence-resolution/review.md",
+      "review_sha256": "9a407ad2480e418f59bb9e70a88337cd9e3986bb968af9fdc1e29e3c1243be02",
+      "review_md_sha256": "b80a60f02fffff310495750363b6e212ed2d25d86ebf415e98670ce0bbe58ea8",
+      "reviewer": {
+        "identity": "Codex /root/round27_packaging",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Did not author or edit argyrodite, its sidecars or source dossiers. Curated separate coal record. Independently inspected originals and saved initial F1; corrected input capture preceded successor assessment. Source acquisition was shared; source judgment and correction verification independent. This reviewer authored the previous scientific review and is correcting its own evidence-metadata error discovered independently by /root/round43_hardmetal; this is not independent certification of that review-metadata fix. The separate publication reviewer assesses its resolution."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [
+        {
+          "finding_id": "F1",
+          "issue_key": "CMMMech.argyrodite.handbook-synthetic-reference",
+          "category": "evidence",
+          "severity": "minor",
+          "status": "resolved",
+          "certainty": "confirmed",
+          "title": "Correct the Handbook synthetic-study reference number",
+          "description": "The original source-locator error has been corrected from Reference2 to Reference3. Original Handbook PDF independently verifies the replacement. Mineral identity and scientific boundaries remain unchanged.",
+          "target_ids": [
+            "cmmmech:argyrodite"
+          ],
+          "field_paths": [
+            "sources[id=handbook_argyrodite].title"
+          ],
+          "evidence_ids": [
+            "record",
+            "handbook",
+            "correction",
+            "prior",
+            "history",
+            "gates",
+            "reverse_proof",
+            "immediate_prior"
+          ],
+          "rule_id": "exact-source-locator",
+          "native_severity": "minor",
+          "normalization_reason": "Nonblocking bibliographic locator defect; mineral identity and the natural/synthetic boundary remain supported.",
+          "owner_paths": [
+            {
+              "repository": "CultureBotAI/CMMMech",
+              "path": "data/records/argyrodite.yaml",
+              "role": "scientific_record"
+            }
+          ],
+          "disposition_reason": "Original source rechecked; reverse-byte proof establishes only the locator and appended provenance changed. Initial CREATE, dossier and review remain intact; successor dossier explicitly supersedes the old locator. Independent named and corrected-state required gates passed. This successor retains the immediately prior resolved F1 occurrence and corrects only review-evidence attribution, not that scientific disposition.",
+          "previous_occurrences": [
+            {
+              "repository": "CultureBotAI/CMMMech",
+              "review_id": "20261012T041053Z-argyrodite-round45-resolution",
+              "finding_id": "F1"
+            }
+          ],
+          "external_issues": [
+            "https://github.com/CultureBotAI/CMMMech/issues/146"
+          ]
+        }
+      ],
+      "dossiers": [
+        {
+          "path": "research/sources/round45-ge-minerals/20261012T040254Z-source-investigation.json",
+          "sha256": "78d3abc31e848fc69c88a9ebec36a675a9f3ffee88626411f4a71b60e70e7552"
+        },
+        {
+          "path": "research/sources/round45-ge-minerals/20261012T040254Z-source-investigation.md",
+          "sha256": "7564ddc8a4cc7ac6f61e22fa635bd39b8777119d654bb1546c5308420e289045"
+        },
+        {
+          "path": "research/sources/round45-ge-minerals/20261012T040630Z-source-investigation.json",
+          "sha256": "159249cbe58cffb431f9ac9b69a68669a1edbe5518fab2109346ee5ba40c7711"
+        },
+        {
+          "path": "research/sources/round45-ge-minerals/20261012T040630Z-source-investigation.md",
+          "sha256": "e8eefdd311e54da143c6311fc8a4eb7041b250de53c504922ac79e9130a82ce5"
+        }
+      ]
+    },
+    {
+      "slug": "briartite",
+      "action": "CREATE",
+      "record": "data/records/briartite.yaml",
+      "record_sha256": "78d179ae37d35050510f0083df0936bee843ff76eab448bef817c12198ed6d51",
+      "histories": [
+        {
+          "path": "history/records/briartite/2026-10-12T035949Z-codex-155fbb.yaml",
+          "sha256": "b0d50607144b2f7d1481dc058f201366fd30145bec65d0525249af214d5e532c"
+        }
+      ],
+      "review": "reviews/structured/20261012T040624Z-briartite-round45-independent/review.yaml",
+      "review_md": "reviews/structured/20261012T040624Z-briartite-round45-independent/review.md",
+      "review_sha256": "8993dc0f750edb7f0eee41c58d2f5e7f1bf1b44db243412447839b113f039a85",
+      "review_md_sha256": "994ce2c1e502c9d4ca70ce6508c3f387675ef7a98a7b91be23688a3a5bafe10c",
+      "reviewer": {
+        "identity": "Codex /root/round27_packaging",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Curator /root/round43_hardmetal authored this record and sources. Reviewer authored only separate coal extension and did not edit target/history/dossier. Native inspect preceded judgment; primary originals and authorities independently inspected. Curator-acquired originals reused with explicit provenance."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [],
+      "dossiers": [
+        {
+          "path": "research/sources/round45-ge-minerals/20261012T040254Z-source-investigation.json",
+          "sha256": "78d3abc31e848fc69c88a9ebec36a675a9f3ffee88626411f4a71b60e70e7552"
+        },
+        {
+          "path": "research/sources/round45-ge-minerals/20261012T040254Z-source-investigation.md",
+          "sha256": "7564ddc8a4cc7ac6f61e22fa635bd39b8777119d654bb1546c5308420e289045"
+        },
+        {
+          "path": "research/sources/round45-ge-minerals/20261012T040630Z-source-investigation.json",
+          "sha256": "159249cbe58cffb431f9ac9b69a68669a1edbe5518fab2109346ee5ba40c7711"
+        },
+        {
+          "path": "research/sources/round45-ge-minerals/20261012T040630Z-source-investigation.md",
+          "sha256": "e8eefdd311e54da143c6311fc8a4eb7041b250de53c504922ac79e9130a82ce5"
+        }
+      ]
+    },
+    {
+      "slug": "coal-beneficiation-waste",
+      "action": "EDIT",
+      "record": "data/records/coal-beneficiation-waste.yaml",
+      "record_sha256": "62a71592ae8b49f146f154435b6715a939de4127fd2cf141414e6b2496588516",
+      "histories": [
+        {
+          "path": "history/records/coal-beneficiation-waste/2026-10-12T023644Z-codex-ef668b.yaml",
+          "sha256": "b1ebae42277506d336b2e573d01427b50550f66dfcfcf97c6477ea02f37076c7"
+        },
+        {
+          "path": "history/records/coal-beneficiation-waste/2026-10-12T024545Z-codex-a1785a.yaml",
+          "sha256": "88a77ed35fec0f95f4abf6ca53e55788368ddd041c5ed0d3cee156f1f2477a2a"
+        },
+        {
+          "path": "history/records/coal-beneficiation-waste/2026-10-12T031901Z-codex-477e90.yaml",
+          "sha256": "8a54b1e498a4eaefa575099afcaa4a3b6911e5cb4cd1f1369e39a719fec91f8b"
+        },
+        {
+          "path": "history/records/coal-beneficiation-waste/2026-10-12T035448Z-codex-16922a.yaml",
+          "sha256": "2c0e1e769fb86e46bee88868d3d6b8cee589869a1bc6f39666edca3f37fb3109"
+        }
+      ],
+      "review": "reviews/structured/20261012T040413Z-coal-beneficiation-waste-round45-independent/review.yaml",
+      "review_md": "reviews/structured/20261012T040413Z-coal-beneficiation-waste-round45-independent/review.md",
+      "review_sha256": "fdb67e94abe59260984c853af2cc732b1de5e5513476346a7d50419db5e2a060",
+      "review_md_sha256": "3a715a4208cfbff60e957588ce146dfb23b85e6175be99dcbef6a2ec1af48c89",
+      "reviewer": {
+        "identity": "Codex /root/round27_superalloy",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Peer /root/round27_packaging authored this record extension, history and dossier. Reviewer authored separate Theisen-sludge identity record in this cohort, not the coal bytes. Native inspect preceded assessment. Shared acquisition disclosed; independently read full ten-page technological and fourteen-page companion originals, personally inspected all original figures/tables, checked authority evidence, source notices, preserved prior fields/history and actual gates. No maintained edits."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [],
+      "dossiers": [
+        {
+          "path": "research/sources/round45-coal-technology/20261012T035805Z-source-investigation.json",
+          "sha256": "d85a3f9becee790f4bfe6a4c5b43fe7e572fdb709dd514ca15c7d807c3059644"
+        },
+        {
+          "path": "research/sources/round45-coal-technology/20261012T035805Z-source-investigation.md",
+          "sha256": "809058484344f544286dcc482a96c854d2895b1e4ee031de70ad57109f132ff7"
+        }
+      ]
+    },
+    {
+      "slug": "theisen-sludge",
+      "action": "CREATE",
+      "record": "data/records/theisen-sludge.yaml",
+      "record_sha256": "9b06fd03d106e687f5618d9a5faf1601e80b0c88f5fc908e0d5604d5d10a96d5",
+      "histories": [
+        {
+          "path": "history/records/theisen-sludge/2026-10-12T035605Z-codex-f36615.yaml",
+          "sha256": "4a8d5aa67b02c5e1b43e01892f785fe0c6e159119c8783d506beadf6261c9aee"
+        }
+      ],
+      "review": "reviews/structured/20261012T040404Z-theisen-sludge-round45-independent/review.yaml",
+      "review_md": "reviews/structured/20261012T040404Z-theisen-sludge-round45-independent/review.md",
+      "review_sha256": "8f0daef698cee403db08c9c8a14003688c503f1d4554817c84566e73991fd389",
+      "review_md_sha256": "b6bca3fd3a34efc68b9c789b1ddbaae4f133ac148420a758b938541dc89a78e5",
+      "reviewer": {
+        "identity": "Codex /root",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Peer /root/round27_superalloy authored the record, history and source dossier. Reviewer authored none of those bytes, captured native inputs before assessment, read the complete original text and independently viewed all eight original pages. Reviewer coordinates publication and authored a separate deferred indium discovery handoff."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [],
+      "dossiers": [
+        {
+          "path": "research/sources/round45-theisen-sludge/20261012T035809Z-source-investigation.json",
+          "sha256": "ff4e769112954e2b7bd70973fea32e83f94a13c955831cb694766450f791672d"
+        },
+        {
+          "path": "research/sources/round45-theisen-sludge/20261012T035809Z-source-investigation.md",
+          "sha256": "2555159478638d408b0dfb4acaaad43e45917a033aeda4d6606e75f05b646fd4"
+        }
+      ]
+    }
+  ],
+  "gate_receipts": {
+    "started_at": "2026-10-12T04:06:08.744208+00:00",
+    "base": "2b975ae5327b94ac3c1e6583378408add2b8d1f2",
+    "commands": [
+      {
+        "name": "batch",
+        "command": [
+          "just",
+          "check"
+        ],
+        "started_at": "2026-10-12T04:06:08.744490+00:00",
+        "finished_at": "2026-10-12T04:10:06.887859+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round45-final-v2-batch.log",
+        "sha256": "5e6d87f0e99f5ff1f24fe8e6cfbe98a38442b4787add02cbf0c5d0f0b5aa1c1d"
+      },
+      {
+        "name": "nonempty",
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate",
+          "--require-records"
+        ],
+        "started_at": "2026-10-12T04:10:06.888368+00:00",
+        "finished_at": "2026-10-12T04:10:27.204231+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round45-final-v2-nonempty.log",
+        "sha256": "422762d06cd992924323952fee0ca1e7d56c09a13fca4fc98a425f8f8f911adc"
+      },
+      {
+        "name": "history",
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate-history",
+          "--base",
+          "2b975ae5327b94ac3c1e6583378408add2b8d1f2"
+        ],
+        "started_at": "2026-10-12T04:10:27.205504+00:00",
+        "finished_at": "2026-10-12T04:10:43.677843+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round45-final-v2-history.log",
+        "sha256": "2b2ddc7d5293ef78a29c990b065cb8b4d1cae9a128977c0c3aaf7fa0053d1e32"
+      }
+    ],
+    "exit_code": 0,
+    "finished_at": "2026-10-12T04:10:43.678169+00:00"
+  },
+  "review_check_receipt": {
+    "command": [
+      "just",
+      "review-check",
+      "--base",
+      "2b975ae5327b94ac3c1e6583378408add2b8d1f2",
+      "--require-reviews"
+    ],
+    "started_at": "2026-10-12T04:15:16.220504+00:00",
+    "finished_at": "2026-10-12T04:17:50.267076+00:00",
+    "exit_code": 0,
+    "log": "/private/tmp/cmm-round45-review-check-v2.log",
+    "sha256": "5a69e96e57a829974ce056d73b92ae33c61936458a0ad8cdce8fda6212b3f644"
+  },
+  "exact_coverage_receipt": {
+    "path": "/private/tmp/cmm-round45-local-coverage-v2.json",
+    "sha256": "29f2148953c366386df67cd8338b599a8d1e0bf6acacc4b3ebacdb6b7d6054c7",
+    "counts": {
+      "record_count": 224,
+      "history_count": 267,
+      "structured_review_count": 272,
+      "review_base_count": 46,
+      "covered_records": 224
+    }
+  },
+  "baseline": {
+    "scope": "Reuse the just-completed fresh remote-main full gate at this exact unmodified commit and tree; no redundant test rerun before curation.",
+    "receipt": "/private/tmp/cmm-round44-postmerge-20261012-published-terminal.json",
+    "sha256": "ef5d65fabe991cfed703282af91e5865a91ec99403cf3ddfde54cb9134f1a036"
+  },
+  "deferred_sources": [
+    {
+      "path": "research/sources/round45-indium-minerals/assessment.md",
+      "sha256": "0ea2eb9a767b4da160a0c80f5767113efe12aa1af41e955b763234097affff31"
+    },
+    {
+      "path": "research/sources/round45-indium-minerals/provenance.json",
+      "sha256": "1cf9d601dc39eb293c66d6729ddcbb3a4a55b06b573fde1d779b2cfbfd0fa4d5"
+    }
+  ],
+  "corrected_review_issues": [
+    146,
+    147
+  ],
+  "open_source_issues": [
+    103,
+    104,
+    120,
+    129,
+    130,
+    133,
+    134,
+    137,
+    140
+  ],
+  "exhausted": false,
+  "governance_snapshot": {
+    "path": "reviews/publication/20261012-round45/current-status.json",
+    "sha256": "2e719f1db1030fa47fb178b062dd73b9c3b7ff951ce1b14218e89b34ec51cf7a"
+  },
+  "preservation_receipt": {
+    "path": "reviews/publication/20261012-round45/preservation-prepublication.json",
+    "sha256": "a6a35b2c302b8b41ac8c3ad0e31a1838c1d26e514d7e383c258b5991f27a56b8"
+  }
+}
