@@ -1,0 +1,38 @@
+{
+  "recorded_at": "2026-10-12T14:16:43.087537Z",
+  "reviewer": "Codex /root/round27_superalloy; GPT-6; codex",
+  "authorship": "Authored rhodochrosite and independently reviewed NiCd; did not author README, report or publication helpers. This observation concerns publication navigation only.",
+  "verdict": "needs_curation",
+  "reviewed_document_sha256": {
+    "README.md": "6e0eaf822e71ca53f2bf6e0f2f136a0e9306142ba8c2a23f48d71573d80b0b3e"
+  },
+  "findings": [
+    {
+      "finding_id": "F1",
+      "issue_key": "CMMMech.round59.readme-navigation",
+      "severity": "minor",
+      "status": "open",
+      "path": "README.md",
+      "lines": [
+        354,
+        355
+      ],
+      "description": "README lists round58 as the final historical publication report and points remaining ingest priorities to round58 despite final round59 report/frontier being present.",
+      "acceptance": "Preserve the round58 historical report link; append round59 publication report and select round59 frontier. Verify local links and preserve all scientific inputs."
+    }
+  ],
+  "evidence": {
+    "observed_lines": [
+      "[fifty-eighth expansion reviews](research/ingests/round58-20261012-publication.md),",
+      "[remaining ingest priorities](research/ingests/round58-frontier-20261012.md), and"
+    ],
+    "search": "rg -n --hidden --no-ignore round5[789]|frontier|publication\\ report README.md; full tracked README diff also read",
+    "current_files": [
+      "research/ingests/round59-20261012-publication.md",
+      "research/ingests/round59-frontier-20261012.md"
+    ]
+  },
+  "limits": [
+    "No scientific corrective finding; no Git/GitHub mutation or test rerun."
+  ]
+}

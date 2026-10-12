@@ -1,0 +1,555 @@
+# Independent scientific review of spent nickel-cadmium batteries
+
+- Review: 20261012T141140Z-spent-nickel-cadmium-batteries-round59-science
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-12T14:07:39.285091Z
+- Finished UTC: 2026-10-12T14:11:40.572754Z
+- Reviewer: Codex /root/round27_superalloy (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The frozen NiCd record is supported within its cathode-specific, culture-associated laboratory scope. Original methods and figures confirm the preserved culture and numerical conflicts, comparable ferric chemistry, incomplete mass-balance/replicate information and nondeployment limits. No corrective record defect identified.
+
+## Scope And Provenance
+
+Entire maintained NiCd record, CREATE sidecar, source dossier pair and schema; all eight original primary pages and six figures,Table1/equations; current taxonomy,bounded notices/dedup and actual final gates. Deferred fungal primary is not accepted or independently approved here.
+
+Selection: Parent-assigned independent scientific review of one new resource owner.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base d88bd5c0f89f9f2fcd80debfd9bd3a2b1a7786a5.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:spent-nickel-cadmium-batteries | data/records/spent-nickel-cadmium-batteries.yaml | maintained | Spent nickel-cadmium batteries |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Reviewer named record validation | passed | True | cmmmech:spent-nickel-cadmium-batteries | Actually executed in round59: one checked, zero failed. |
+| Frozen input and retained source integrity | passed | True | cmmmech:spent-nickel-cadmium-batteries | All five explicit native inputs,31 retained raw files and12 acquisition/research receipts matched. |
+| Parent completed batch | passed | True | cmmmech:spent-nickel-cadmium-batteries | Actual parent receipt/log independently read and hash-verified; no duplicate batch execution. |
+| Parent completed nonempty | passed | True | cmmmech:spent-nickel-cadmium-batteries | Actual parent receipt/log independently read and hash-verified; no duplicate batch execution. |
+| Parent completed history | passed | True | cmmmech:spent-nickel-cadmium-batteries | Actual parent receipt/log independently read and hash-verified; no duplicate batch execution. |
+| Parent completed render-check | passed | True | cmmmech:spent-nickel-cadmium-batteries | Actual parent receipt/log independently read and hash-verified; no duplicate batch execution. |
+
+## Scientific And Domain Assessments
+
+### NiCd resource and sampled cathode boundaries
+
+identity: supported. Targets: cmmmech:spent-nickel-cadmium-batteries.
+
+The new secondary resource is distinct from existing battery chemistries. Figure2 is explicitly assigned by Results3.1.2 to prepared cathode material, and the record does not substitute anode or whole-cell composition.
+
+### Organism and live-biomass uncertainty
+
+evidence: supported. Targets: cmmmech:spent-nickel-cadmium-batteries.
+
+Methods twice assign pure A. ferrooxidans/9K to NiCd, while Figure2 caption names a mixture with A. thiooxidans. The record preserves this conflict and correctly limits taxon/causal specificity.
+
+### Conditions and controls
+
+evidence: supported. Targets: cmmmech:spent-nickel-cadmium-batteries.
+
+The retained flask setup and sampling scheme match primary Methods. The record qualifies missing temperature, agitation, sampling-volume correction and malformed ferric reagent formula.
+
+### Partial Ni dissolution and numerical conflict
+
+evidence: supported. Targets: cmmmech:spent-nickel-cadmium-batteries.
+
+Original Figure2A supports similar near-complete reported Cd dissolution in biotic and ferric arms;2B is visibly below50%Ni while abstract/prose claim55%. The record preserves rather than harmonizes this conflict.
+
+### Other-feed and deployment exclusions
+
+evidence: supported. Targets: cmmmech:spent-nickel-cadmium-batteries.
+
+Table1 is literature, Figures1/3/4/5 concern other feeds, and Figure6 is a proposed integrated recycling model. The record makes no industrial deployment claim and retains unresolved overlap with prior coauthor NiCd studies.
+
+### Actual contexts, source access and checks
+
+provenance: supported. Targets: cmmmech:spent-nickel-cadmium-batteries.
+
+Distinct actual inline event and canonical CREATE accurately describe the accepted contribution. Exact dossier/schema contexts were captured before judgment; no maintained content was edited during review.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/spent-nickel-cadmium-batteries.yaml; Entire explicit native-inspected input, unchanged at final save | supports | Read as exact reviewed record or provenance context; author dossier is a handoff, not independent scientific authority. |
+| history | history/records/spent-nickel-cadmium-batteries/2026-10-12T140131Z-codex-21a6a4.yaml; Entire explicit native-inspected input, unchanged at final save | supports | Read as exact reviewed record or provenance context; author dossier is a handoff, not independent scientific authority. |
+| dossier_json | research/sources/round59-batteries/20261012T140439Z-source-investigation.json; Entire explicit native-inspected input, unchanged at final save | supports | Read as exact reviewed record or provenance context; author dossier is a handoff, not independent scientific authority. |
+| dossier_md | research/sources/round59-batteries/20261012T140439Z-source-investigation.md; Entire explicit native-inspected input, unchanged at final save | supports | Read as exact reviewed record or provenance context; author dossier is a handoff, not independent scientific authority. |
+| schema | src/cmmmech/schema/cmmmech.yaml; Entire explicit native-inspected input, unchanged at final save | supports | Read as exact reviewed record or provenance context; author dossier is a handoff, not independent scientific authority. |
+| primary | /private/tmp/cmm-round59-battery-research/raw/sedlakova2017.pdf; Entire original eight-page article, printed1459-1466; all six figures, Table1 and equations1-8 personally inspected; NiCd Methods2.1-2.4/Results3.1.2/Figure2 | supports | Complete main supports cathode-specific culture-associated dissolution, comparable ferric chemistry, pure-versus-mixed culture conflict and source nickel percentage discrepancy. Other feed arms and proposed Figure6 model are correctly excluded from accepted NiCd performance. |
+| ncbi | /private/tmp/cmm-round59-battery-research/raw/ncbi920.html; Current name, rank and taxon920 fields, independently read and corroborated by fresh official live web query | supports | NCBITaxon:920 correctly identifies A. ferrooxidans at species level, not the Smolnik culture stock or an authentication result. |
+| search | /private/tmp/cmm-round59-nicd-review/search.txt; Actual independent live query list and inspected primary/authority results | supports | No affecting correction identified in the bounded returned sets; exact DOI/identity independently corroborated. No extra supplement identified in inspected full paper and official issue inventory. |
+| integrity | /private/tmp/cmm-round59-nicd-review-checks.json; Five native inputs,31 raw artifacts,12 author receipts, reviewer named validation and bounded searches | supports | All pinned hashes independently match. Hidden/ignored/followed scientific-tree and cited-raw searches distinguish accepted NiCd owner from NiMH and alkaline/Li-ion records; potential earlier experiment overlap remains explicitly unresolved. |
+| named | /private/tmp/cmm-round59-nicd-review/named.log; Actually executed reviewer named validation | supports | One record checked, zero failed, explicit round59 cwd and locked offline environment. |
+| cohort | /private/tmp/cmm-round59-final-terminal.json; Actual completed parent batch/nonempty/history/render receipts and every referenced log hash | supports | All four commands completed with exit0;317passed3skipped,274records322histories. Independently verified raw log hashes and read results; not rerun or claimed as reviewer execution. |
+
+## Limits And Additional Notes
+
+- Experimental culture purity/stock identity and the Methods-versus-Figure2 mixture discrepancy remain unresolved.
+- Source Ni55%prose and sub50%graph conflict remains; no raw data permit harmonization or precise uncertainty.
+- No complete extraction equation,sampling correction or phase-resolved metal balance; no isolated metal product.
+- Temperature and agitation for the NiCd arm are unspecified; chemical comparators do not prove live-cell necessity or microbial superiority.
+- Earlier NiCd coauthor experiments may overlap; no pooled independent-replication claim. No industrial demonstration or inherited criticality.
+- Bounded search retained binary suppression and missing raw roots; no exhaustive absence claim. Deferred Netpae fungal study was not fully independently visually reviewed or accepted in this review.
+- No scientific record/history/source-dossier edits or Git/GitHub mutations performed. An unsaved draft used two dimension identifiers containing spaces; the saver rejected it, the failed receipt was retained, and only those identifiers were corrected before the first successful save.
+- Rhodochrosite authorship is disclosed; its scientific acceptance rests on a different independent reviewer.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261012T141140Z-spent-nickel-cadmium-batteries-round59-science
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of spent nickel-cadmium batteries
+started_at: '2026-10-12T14:07:39.285091Z'
+finished_at: '2026-10-12T14:11:40.572754Z'
+reviewer:
+  identity: Codex /root/round27_superalloy
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Packaging authored the NiCd record/history/dossier. This reviewer
+    authored only the separate rhodochrosite contribution and captured all five explicit
+    native inputs before assessing this record.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The frozen NiCd record is supported within its cathode-specific, culture-associated
+  laboratory scope. Original methods and figures confirm the preserved culture and
+  numerical conflicts, comparable ferric chemistry, incomplete mass-balance/replicate
+  information and nondeployment limits. No corrective record defect identified.
+source:
+  git_revision: d88bd5c0f89f9f2fcd80debfd9bd3a2b1a7786a5
+  state: working_tree
+  inputs:
+  - path: data/records/spent-nickel-cadmium-batteries.yaml
+    sha256: 3ab36654c99842e481666088f5cf0b402ba7a2598ffb4bea8a448af021deeffe
+    role: target
+  - path: history/records/spent-nickel-cadmium-batteries/2026-10-12T140131Z-codex-21a6a4.yaml
+    sha256: e1f5208076d0adda92ded1db6fd2bd9e7afd8ab86a282b35bee54feb8820c1c3
+    role: context
+  - path: research/sources/round59-batteries/20261012T140439Z-source-investigation.json
+    sha256: c3d6769f3e34654f5c77278001f01003221fa34d4a8e72985a2af16d76a6c1a7
+    role: context
+  - path: research/sources/round59-batteries/20261012T140439Z-source-investigation.md
+    sha256: d0d995048b8c3680f654c6b2f9625d0058fa7adffc432ea87d9e515329786170
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:spent-nickel-cadmium-batteries
+  path: data/records/spent-nickel-cadmium-batteries.yaml
+  label: Spent nickel-cadmium batteries
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/spent-nickel-cadmium-batteries.yaml
+    role: maintained_record
+scope:
+  description: Entire maintained NiCd record, CREATE sidecar, source dossier pair
+    and schema; all eight original primary pages and six figures,Table1/equations;
+    current taxonomy,bounded notices/dedup and actual final gates. Deferred fungal
+    primary is not accepted or independently approved here.
+  selection: Parent-assigned independent scientific review of one new resource owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:spent-nickel-cadmium-batteries
+checks:
+- check_id: named
+  name: Reviewer named record validation
+  command: uv run --locked cmmmech validate data/records/spent-nickel-cadmium-batteries.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-nickel-cadmium-batteries
+  summary: 'Actually executed in round59: one checked, zero failed.'
+- check_id: integrity
+  name: Frozen input and retained source integrity
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-nickel-cadmium-batteries
+  summary: All five explicit native inputs,31 retained raw files and12 acquisition/research
+    receipts matched.
+- check_id: cohort_batch
+  name: Parent completed batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-nickel-cadmium-batteries
+  summary: Actual parent receipt/log independently read and hash-verified; no duplicate
+    batch execution.
+- check_id: cohort_nonempty
+  name: Parent completed nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-nickel-cadmium-batteries
+  summary: Actual parent receipt/log independently read and hash-verified; no duplicate
+    batch execution.
+- check_id: cohort_history
+  name: Parent completed history
+  command: uv run --locked cmmmech validate-history --base d88bd5c0f89f9f2fcd80debfd9bd3a2b1a7786a5
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-nickel-cadmium-batteries
+  summary: Actual parent receipt/log independently read and hash-verified; no duplicate
+    batch execution.
+- check_id: cohort_render_check
+  name: Parent completed render-check
+  command: just render-check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:spent-nickel-cadmium-batteries
+  summary: Actual parent receipt/log independently read and hash-verified; no duplicate
+    batch execution.
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/spent-nickel-cadmium-batteries.yaml
+  locator: Entire explicit native-inspected input, unchanged at final save
+  accessed_at: '2026-10-12T14:11:40.572754Z'
+  support: supports
+  summary: Read as exact reviewed record or provenance context; author dossier is
+    a handoff, not independent scientific authority.
+  snapshot_sha256: 3ab36654c99842e481666088f5cf0b402ba7a2598ffb4bea8a448af021deeffe
+- evidence_id: history
+  kind: record_content
+  reference: history/records/spent-nickel-cadmium-batteries/2026-10-12T140131Z-codex-21a6a4.yaml
+  locator: Entire explicit native-inspected input, unchanged at final save
+  accessed_at: '2026-10-12T14:11:40.572754Z'
+  support: supports
+  summary: Read as exact reviewed record or provenance context; author dossier is
+    a handoff, not independent scientific authority.
+  snapshot_sha256: e1f5208076d0adda92ded1db6fd2bd9e7afd8ab86a282b35bee54feb8820c1c3
+- evidence_id: dossier_json
+  kind: record_content
+  reference: research/sources/round59-batteries/20261012T140439Z-source-investigation.json
+  locator: Entire explicit native-inspected input, unchanged at final save
+  accessed_at: '2026-10-12T14:11:40.572754Z'
+  support: supports
+  summary: Read as exact reviewed record or provenance context; author dossier is
+    a handoff, not independent scientific authority.
+  snapshot_sha256: c3d6769f3e34654f5c77278001f01003221fa34d4a8e72985a2af16d76a6c1a7
+- evidence_id: dossier_md
+  kind: record_content
+  reference: research/sources/round59-batteries/20261012T140439Z-source-investigation.md
+  locator: Entire explicit native-inspected input, unchanged at final save
+  accessed_at: '2026-10-12T14:11:40.572754Z'
+  support: supports
+  summary: Read as exact reviewed record or provenance context; author dossier is
+    a handoff, not independent scientific authority.
+  snapshot_sha256: d0d995048b8c3680f654c6b2f9625d0058fa7adffc432ea87d9e515329786170
+- evidence_id: schema
+  kind: record_content
+  reference: src/cmmmech/schema/cmmmech.yaml
+  locator: Entire explicit native-inspected input, unchanged at final save
+  accessed_at: '2026-10-12T14:11:40.572754Z'
+  support: supports
+  summary: Read as exact reviewed record or provenance context; author dossier is
+    a handoff, not independent scientific authority.
+  snapshot_sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+- evidence_id: primary
+  kind: primary_source
+  reference: /private/tmp/cmm-round59-battery-research/raw/sedlakova2017.pdf
+  locator: Entire original eight-page article, printed1459-1466; all six figures,
+    Table1 and equations1-8 personally inspected; NiCd Methods2.1-2.4/Results3.1.2/Figure2
+  accessed_at: '2026-10-12T14:11:40.572754Z'
+  support: supports
+  summary: Complete main supports cathode-specific culture-associated dissolution,
+    comparable ferric chemistry, pure-versus-mixed culture conflict and source nickel
+    percentage discrepancy. Other feed arms and proposed Figure6 model are correctly
+    excluded from accepted NiCd performance.
+  snapshot_sha256: 8b8a24268d76b6f1e5c9da729653c130ddf4640723fb8621ba6cb88ec527fa36
+- evidence_id: ncbi
+  kind: authority
+  reference: /private/tmp/cmm-round59-battery-research/raw/ncbi920.html
+  locator: Current name, rank and taxon920 fields, independently read and corroborated
+    by fresh official live web query
+  accessed_at: '2026-10-12T14:11:40.572754Z'
+  support: supports
+  summary: NCBITaxon:920 correctly identifies A. ferrooxidans at species level, not
+    the Smolnik culture stock or an authentication result.
+  snapshot_sha256: c6d264e2f6ed730350be86773d9564c7427f7f089b57ed566d6494e3bd21a4ac
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round59-nicd-review/search.txt
+  locator: Actual independent live query list and inspected primary/authority results
+  accessed_at: '2026-10-12T14:11:40.572754Z'
+  support: supports
+  summary: No affecting correction identified in the bounded returned sets; exact
+    DOI/identity independently corroborated. No extra supplement identified in inspected
+    full paper and official issue inventory.
+  snapshot_sha256: 0b5e10d9d9cc25a8df6b46cc59056ae04905f6db583562466730da690f5d1050
+  search_scope: Exact DOI plus correction/retraction/erratum; exact title plus NiCd;
+    NCBI920/name. First returned result sets and current accessible official issue
+    listing; no exhaustive notice or supplement absence claim.
+- evidence_id: integrity
+  kind: validation
+  reference: /private/tmp/cmm-round59-nicd-review-checks.json
+  locator: Five native inputs,31 raw artifacts,12 author receipts, reviewer named
+    validation and bounded searches
+  accessed_at: '2026-10-12T14:11:40.572754Z'
+  support: supports
+  summary: All pinned hashes independently match. Hidden/ignored/followed scientific-tree
+    and cited-raw searches distinguish accepted NiCd owner from NiMH and alkaline/Li-ion
+    records; potential earlier experiment overlap remains explicitly unresolved.
+  snapshot_sha256: 643aefacd5e40d7ea33a74faae3b4cdff390a86c0665bb912f2b0e4d1d412c48
+  search_scope: rg --hidden --no-ignore --follow in round59 and original Documents
+    data/records,research,reviews,history plus197 available referenced research/raw
+    roots;24 missing listed; raw file-list search retains binary suppression/no OCR.
+    No machine-wide absence claim.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round59-nicd-review/named.log
+  locator: Actually executed reviewer named validation
+  accessed_at: '2026-10-12T14:11:40.572754Z'
+  support: supports
+  summary: One record checked, zero failed, explicit round59 cwd and locked offline
+    environment.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: cohort
+  kind: validation
+  reference: /private/tmp/cmm-round59-final-terminal.json
+  locator: Actual completed parent batch/nonempty/history/render receipts and every
+    referenced log hash
+  accessed_at: '2026-10-12T14:11:40.572754Z'
+  support: supports
+  summary: All four commands completed with exit0;317passed3skipped,274records322histories.
+    Independently verified raw log hashes and read results; not rerun or claimed as
+    reviewer execution.
+  snapshot_sha256: 7eee51f53a10c131323b399689cef799aa029d42633c2b35d9048af0d17304bc
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: NiCd resource and sampled cathode boundaries
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-nickel-cadmium-batteries
+  evidence_ids:
+  - record
+  - primary
+  - integrity
+  summary: The new secondary resource is distinct from existing battery chemistries.
+    Figure2 is explicitly assigned by Results3.1.2 to prepared cathode material, and
+    the record does not substitute anode or whole-cell composition.
+  dimensions:
+  - name: material
+    value: Spent NiCd active cathode powder, below40 micrometres
+    definition: Opened cells, removed grids and separately characterized cathode/anode.
+    evidence_ids:
+    - primary
+  - name: denominator
+    value: Cathode assays6.5%Cd/47.1%Ni; anode38%Cd/22.2%Ni is separate
+    definition: The source-reported extraction percentage is not an intact-battery
+      or isolated-product yield.
+    evidence_ids:
+    - record
+    - primary
+  - name: criticality
+    value: No designation asserted
+    definition: No jurisdiction/list/edition is needed for an absent criticality claim;
+      elemental Ni criticality is not inherited.
+    evidence_ids:
+    - record
+- assessment_id: culture
+  area: evidence
+  topic: Organism and live-biomass uncertainty
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-nickel-cadmium-batteries
+  evidence_ids:
+  - record
+  - primary
+  - ncbi
+  summary: Methods twice assign pure A. ferrooxidans/9K to NiCd, while Figure2 caption
+    names a mixture with A. thiooxidans. The record preserves this conflict and correctly
+    limits taxon/causal specificity.
+  dimensions:
+  - name: identity
+    value: A. ferrooxidans species NCBITaxon:920; no asserted strain accession
+    definition: Smolnik acid mine drainage provenance through the Slovak Academy does
+      not authenticate a pure stock.
+    evidence_ids:
+    - primary
+    - ncbi
+  - name: biomass
+    value: Culture-containing assay,5mL stated pure inoculum versus10mL generic mixed-culture
+      alternative
+    definition: Record presents5mL as Methods-assigned and explicitly preserves contradictory
+      caption. No killed-cell necessity or direct-contact mechanism demonstrated.
+    evidence_ids:
+    - record
+    - primary
+- assessment_id: assay
+  area: evidence
+  topic: Conditions and controls
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-nickel-cadmium-batteries
+  evidence_ids:
+  - primary
+  - record
+  summary: The retained flask setup and sampling scheme match primary Methods. The
+    record qualifies missing temperature, agitation, sampling-volume correction and
+    malformed ferric reagent formula.
+  dimensions:
+  - name: conditions
+    value: 2g prepared powder/200mL medium in250mL flask; initialpH1.5;28-day sampling
+    definition: Triplicates stated;5mL filtered samples analyzed byAAS. Main source
+      does not supply a complete independently reconstructible efficiency equation.
+    evidence_ids:
+    - primary
+  - name: comparators
+    value: Dilute sulfuric acid and ferric-sulfate abiotic arms
+    definition: Real chemical comparisons; ferric hydrolysis/acidity and oxidation
+      not independently isolated. A microbial advantage is not established.
+    evidence_ids:
+    - primary
+    - record
+  - name: reagent
+    value: 44.63g/L as printed ferric reagent
+    definition: Malformed Fe2(SO4).9H2O does not justify an exact elemental-Fe conversion.
+    evidence_ids:
+    - primary
+- assessment_id: outcomes
+  area: evidence
+  topic: Partial Ni dissolution and numerical conflict
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-nickel-cadmium-batteries
+  evidence_ids:
+  - record
+  - primary
+  summary: Original Figure2A supports similar near-complete reported Cd dissolution
+    in biotic and ferric arms;2B is visibly below50%Ni while abstract/prose claim55%.
+    The record preserves rather than harmonizes this conflict.
+  dimensions:
+  - name: nickel
+    value: Approximately45-47% plotted versus55%prose
+    definition: Approximate visual reading is labelled as such; no falsely precise
+      recovered-mass value.
+    evidence_ids:
+    - primary
+    - record
+  - name: uncertainty
+    value: Triplicates stated, no displayed Figure2 error bars/raw replicate values
+    definition: Comparable descriptive performance is not a statistical equivalence
+      test or proof of microbial superiority.
+    evidence_ids:
+    - primary
+  - name: chemical_interpretation
+    value: Proposed ferric hydrolysis and oxidation
+    definition: General equations and pH explanation do not establish phase-specific
+      Ni oxidation; no precise mineral/product recovery asserted.
+    evidence_ids:
+    - primary
+- assessment_id: scope
+  area: evidence
+  topic: Other-feed and deployment exclusions
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-nickel-cadmium-batteries
+  evidence_ids:
+  - record
+  - primary
+  - dossier_md
+  summary: Table1 is literature, Figures1/3/4/5 concern other feeds, and Figure6 is
+    a proposed integrated recycling model. The record makes no industrial deployment
+    claim and retains unresolved overlap with prior coauthor NiCd studies.
+  dimensions:
+  - name: scale
+    value: Laboratoryflask experiment
+    definition: The proposedclosed-loop scheme is not an operatingplant or validatedeconomic/lifecycle
+      result.
+    evidence_ids:
+    - primary
+    - record
+  - name: source_overlap
+    value: References20-21 earlierNiCd studies, originalsnotpooled
+    definition: Their experiment independence cannot be established from this paper
+      alone. The fully acquired fungal candidate is explicitly deferred, not a second
+      accepted mechanism.
+    evidence_ids:
+    - primary
+    - dossier_md
+- assessment_id: provenance
+  area: provenance
+  topic: Actual contexts, source access and checks
+  outcome: supported
+  target_ids:
+  - cmmmech:spent-nickel-cadmium-batteries
+  evidence_ids:
+  - history
+  - dossier_json
+  - dossier_md
+  - schema
+  - integrity
+  - named
+  - cohort
+  summary: Distinct actual inline event and canonical CREATE accurately describe the
+    accepted contribution. Exact dossier/schema contexts were captured before judgment;
+    no maintained content was edited during review.
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- Experimental culture purity/stock identity and the Methods-versus-Figure2 mixture
+  discrepancy remain unresolved.
+- Source Ni55%prose and sub50%graph conflict remains; no raw data permit harmonization
+  or precise uncertainty.
+- No complete extraction equation,sampling correction or phase-resolved metal balance;
+  no isolated metal product.
+- Temperature and agitation for the NiCd arm are unspecified; chemical comparators
+  do not prove live-cell necessity or microbial superiority.
+- Earlier NiCd coauthor experiments may overlap; no pooled independent-replication
+  claim. No industrial demonstration or inherited criticality.
+- Bounded search retained binary suppression and missing raw roots; no exhaustive
+  absence claim. Deferred Netpae fungal study was not fully independently visually
+  reviewed or accepted in this review.
+notes:
+- No scientific record/history/source-dossier edits or Git/GitHub mutations performed.
+  An unsaved draft used two dimension identifiers containing spaces; the saver rejected
+  it, the failed receipt was retained, and only those identifiers were corrected before
+  the first successful save.
+- Rhodochrosite authorship is disclosed; its scientific acceptance rests on a different
+  independent reviewer.
+tags:
+- round59
+- independent
+- nickel-cadmium
+- secondary-resource
+```

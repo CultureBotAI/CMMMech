@@ -1,0 +1,105 @@
+id: cmmmech:tannery-sludge
+name: Tannery sludge
+material_kind: secondary_resource
+description: Chromium-bearing solids from tannery wastewater treatment, represented here by the Xiamen
+  factory sludge tested by Wang et al. (2019). This heterogeneous secondary resource is distinct from
+  untreated tanning liquor, leather shavings, pyrolyzed tannery residue, electroplating sludge and elemental
+  chromium. The experiment does not establish a universal sludge composition or inherit constituent-element
+  criticality.
+sources:
+- id: wang2019
+  title: Wenhao Wang, Jianlei Gao, Yonghong Li and Jingqing Gao (2019). Enhanced Cr bioleaching efficiency
+    from tannery sludge with Acidithiobacillus ferrooxidans and Acidithiobacillus thiooxidans. Desalination
+    and Water Treatment 165:134–140. DOI 10.5004/dwt.2019.24500. Complete official seven-page original,
+    Table 1, Figures 1–4 and Equations 1–8 inspected.
+  url: https://doi.org/10.5004/dwt.2019.24500
+  accessed_on: '2026-10-12'
+- id: ncbi920
+  title: 'NCBI Taxonomy 920: Acidithiobacillus ferrooxidans, species; verifies the species label, not
+    the source-reported CGMCC culture stock.'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
+  accessed_on: '2026-10-12'
+- id: ncbi930
+  title: 'NCBI Taxonomy 930: Acidithiobacillus thiooxidans, species; verifies the species label, not the
+    source-reported CGMCC culture stock.'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info
+  accessed_on: '2026-10-12'
+mechanisms:
+- id: xiamen_acidophile_associated_chromium_leaching
+  name: Acidophile-associated acidification and chromium solubilization
+  process: bioleaching
+  microbial: true
+  description: Acclimatized Acidithiobacillus cultures supplied with ferrous sulfate and elemental sulfur
+    were associated with acidification and aqueous chromium mobilization from one tannery sludge. The
+    combined culture/substrate treatment outperformed the reported comparisons, without isolating species
+    synergy, proving chromium redox transformation or producing an isolated chromium product.
+  context: Wang et al. sampled tannery sludge from a factory in Xiamen, Fujian, China and refrigerated
+    it at 4 °C. Table 1 reports pH 7.10, total solids 12.88% and source-labelled Cr3+ 15.890 g/kg dry
+    weight; ICP-based total chromium analysis does not independently establish that oxidation-state assignment.
+    Source-reported A. ferrooxidans CGMCC NO.0727 and A. thiooxidans CGMCC NO.0759 were cultivated in
+    improved 9K and SM media, then serially acclimatized in sludge to pH 2.0. Batch assays used 250 mL
+    flasks containing 135 mL sludge, acidified initially to pH 6.50 with H2SO4 and conditioned for 12
+    h, at 28 °C and 180 rpm. Figure captions specify 2% (w/w) sludge. Section 2.3 says 15% volume inoculum,
+    whereas Figures 1–2 say 10% (v/v); the exact inoculum fraction is unresolved. The combined arm used
+    a 1:1 culture mixture and source-stated 4.0 g/L FeSO4 plus 3.0 g/L elemental sulfur. Single-culture
+    arms received their corresponding energy substrate; a mixture without added substrates and uninoculated
+    treatments with and without added substrates were also compared. Treatments and analyses were reported
+    in triplicate. Daily 15 mL samples were centrifuged and filtered through 0.45 micrometre membranes
+    before ICP-OES total-Cr analysis; evaporation loss was replenished, while cumulative sampling corrections
+    are not explained.
+  organisms:
+  - id: NCBITaxon:920
+    label: Acidithiobacillus ferrooxidans
+  - id: NCBITaxon:930
+    label: Acidithiobacillus thiooxidans
+  evidence:
+  - source_ref: wang2019
+    supports: support
+    explanation: Methods 2.2–2.4, Figures 1–3 and Discussion p. 139 support conditional culture-associated
+      solubilization. The combined culture/substrate arm reached source-reported 97.1% after seven days
+      and final pH 1.65. Equation 4 defines efficiency as aqueous Cr quantity divided by initial sludge
+      Cr quantity, multiplied by 100; this is dissolved extraction, not isolated product recovery. Figure
+      3 shows much smaller release in uninoculated substrate-added sludge and near-zero release in the
+      no-substrate comparisons. The single-culture/substrate arms are lower than the combined treatment
+      under these conditions.
+  - source_ref: wang2019
+    supports: partial
+    explanation: Uninoculated sludge is not demonstrated sterile; Discussion p. 139 explicitly allows
+      indigenous organisms. Single-culture treatments differ in substrate chemistry from the combined
+      treatment, and no matched-pH acid-only comparison isolates a biological contribution beyond acid
+      generation. Lower pH, higher ORP, falling Fe(II) and increasing sulfate are consistent with the
+      proposed indirect mechanism but do not establish individual species causality, population succession,
+      chromium valence changes or organic-matter breakdown. Figure 4 regressions are associations rather
+      than independent mechanistic proof.
+  - source_ref: wang2019
+    supports: partial
+    explanation: 'Source inconsistencies remain unresolved: inoculum 15% in Methods versus 10% in figure
+      captions; acclimatization labels 4 g/L Fe2+ whereas the batch recipe specifies 4 g/L FeSO4. Section
+      3.2 says sulfate remained unchanged in uninoculated treatments, but Figure 2b shows an increase
+      in the Fe2+ plus sulfur arm and Discussion acknowledges a slight increase. These statements are
+      not silently harmonized or used to reconstruct exact reagent chemistry.'
+  - source_ref: wang2019
+    supports: partial
+    explanation: 'The reported residual sludge value 531 mg/kg and initial 15.890 g/kg dry weight do not
+      yield 97.1% by simple unchanged-solid-mass subtraction. The paper uses an aqueous-inventory denominator
+      and does not provide a complete solid-mass/sampling balance to reconcile the endpoints. The source-reported
+      values remain separate qualified quantities. Its agricultural/landfill suitability conclusion is
+      not adopted: no independent regulatory applicability check, complete toxicity assessment, isolated
+      product or industrial deployment is established.'
+  - source_ref: ncbi920
+    supports: context_only
+    explanation: The current official entry verifies the species identifier/label, not CGMCC NO.0727 stock
+      identity, culture purity or experimental sequencing.
+  - source_ref: ncbi930
+    supports: context_only
+    explanation: The current official entry verifies the species identifier/label, not CGMCC NO.0759 stock
+      identity, culture purity or experimental sequencing.
+curation_history:
+- timestamp: '2026-10-12T14:02:26.884243Z'
+  curator: Codex (GPT-6; codex)
+  action: CREATE
+  summary: Created a distinct tannery wastewater-sludge secondary-resource record from the complete Wang2019
+    primary. Preserved control, inoculum, reagent, sulfate and mass-balance limitations; excluded regulatory
+    suitability, chromium redox and industrial recovery claims.
+history_refs:
+- history/records/tannery-sludge/2026-10-12T140230Z-codex-48e3f9.yaml

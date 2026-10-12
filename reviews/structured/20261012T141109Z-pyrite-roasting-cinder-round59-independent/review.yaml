@@ -1,0 +1,432 @@
+schema_version: 1.0.0
+review_id: 20261012T141109Z-pyrite-roasting-cinder-round59-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of pyrite-roasting cinder
+started_at: '2026-10-12T14:05:48.602940Z'
+finished_at: '2026-10-12T14:11:09.130971Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: round43_hardmetal curated target/history/dossier. Root captured
+    native inputs before assessment, independently checked primary pages/graphics,
+    taxonomy, controls and limitations, and did not edit the record.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Exact final record supports qualified culture-associated sulfur solubilization
+  and a separate limited-response ash assay. Source contradictions and weak controls
+  remain explicit; no corrective finding identified within this scope.
+source:
+  git_revision: d88bd5c0f89f9f2fcd80debfd9bd3a2b1a7786a5
+  state: working_tree
+  inputs:
+  - path: data/records/pyrite-roasting-cinder.yaml
+    sha256: 2f0285c341ab210862675b6e438ed7067234ecbaf4f074a0ee7a2b3799e51838
+    role: target
+  - path: history/records/pyrite-roasting-cinder/2026-10-12T140217Z-codex-e8c8b0.yaml
+    sha256: 701ae3803d3a003a02c9096a823255b5fbc90892bcf76947b9be8b9e7aee9060
+    role: context
+  - path: research/sources/round59-industrial/20261012T140606Z-source-investigation.json
+    sha256: 090458672f1b24c5e363ac2524a8c2e2a373ebd75188fd4299fdced102181684
+    role: context
+  - path: research/sources/round59-industrial/20261012T140606Z-source-investigation.md
+    sha256: bdb58313cb46ea7beb9a192a8732cb0b108a4eff4fc2928ccb89fd1a6db19f44
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:pyrite-roasting-cinder
+  path: data/records/pyrite-roasting-cinder.yaml
+  label: Pyrite-roasting cinder
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/pyrite-roasting-cinder.yaml
+    role: maintained scientific record
+scope:
+  description: Entire final record/history/dossier/schema, complete2013primary, directly
+    relevant2025thesis methods/results/graphics, official identifiers, bounded notices/dedup
+    and actual checks.
+  selection: Assigned independent review of new cinder owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:pyrite-roasting-cinder
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/pyrite-roasting-cinder.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:pyrite-roasting-cinder
+  summary: Actually executed by reviewer;1record0failures.
+- check_id: integrity
+  name: Independent evidence and input verification
+  command: python /private/tmp/cmm-round59-cinder-review-integrity.py
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:pyrite-roasting-cinder
+  summary: 115raw/receipt+5native-input hashes; five taxonomy readbacks; hidden/ignored/followed
+    scientific-root search.
+- check_id: batch
+  name: Completed cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:pyrite-roasting-cinder
+  summary: Actual parent execution and log hash independently checked; no invented
+    rerun.
+- check_id: nonempty
+  name: Completed cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:pyrite-roasting-cinder
+  summary: Actual parent execution and log hash independently checked; no invented
+    rerun.
+- check_id: history
+  name: Completed cohort history
+  command: uv run --locked cmmmech validate-history --base d88bd5c0f89f9f2fcd80debfd9bd3a2b1a7786a5
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:pyrite-roasting-cinder
+  summary: Actual parent execution and log hash independently checked; no invented
+    rerun.
+- check_id: render_check
+  name: Completed cohort render-check
+  command: just render-check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:pyrite-roasting-cinder
+  summary: Actual parent execution and log hash independently checked; no invented
+    rerun.
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: /private/tmp/CMMMech-expansion-round59-20261012/data/records/pyrite-roasting-cinder.yaml
+  locator: Complete native-inspected input
+  accessed_at: '2026-10-12T14:11:09.130971Z'
+  support: supports
+  summary: Exact maintained input read and byte hash rechecked before save.
+  snapshot_sha256: 2f0285c341ab210862675b6e438ed7067234ecbaf4f074a0ee7a2b3799e51838
+- evidence_id: history
+  kind: record_content
+  reference: /private/tmp/CMMMech-expansion-round59-20261012/history/records/pyrite-roasting-cinder/2026-10-12T140217Z-codex-e8c8b0.yaml
+  locator: Complete native-inspected input
+  accessed_at: '2026-10-12T14:11:09.130971Z'
+  support: supports
+  summary: Exact maintained input read and byte hash rechecked before save.
+  snapshot_sha256: 701ae3803d3a003a02c9096a823255b5fbc90892bcf76947b9be8b9e7aee9060
+- evidence_id: dossier_json
+  kind: record_content
+  reference: /private/tmp/CMMMech-expansion-round59-20261012/research/sources/round59-industrial/20261012T140606Z-source-investigation.json
+  locator: Complete native-inspected input
+  accessed_at: '2026-10-12T14:11:09.130971Z'
+  support: supports
+  summary: Exact maintained input read and byte hash rechecked before save.
+  snapshot_sha256: 090458672f1b24c5e363ac2524a8c2e2a373ebd75188fd4299fdced102181684
+- evidence_id: dossier_md
+  kind: record_content
+  reference: /private/tmp/CMMMech-expansion-round59-20261012/research/sources/round59-industrial/20261012T140606Z-source-investigation.md
+  locator: Complete native-inspected input
+  accessed_at: '2026-10-12T14:11:09.130971Z'
+  support: supports
+  summary: Exact maintained input read and byte hash rechecked before save.
+  snapshot_sha256: bdb58313cb46ea7beb9a192a8732cb0b108a4eff4fc2928ccb89fd1a6db19f44
+- evidence_id: schema
+  kind: record_content
+  reference: /private/tmp/CMMMech-expansion-round59-20261012/src/cmmmech/schema/cmmmech.yaml
+  locator: Complete native-inspected input
+  accessed_at: '2026-10-12T14:11:09.130971Z'
+  support: supports
+  summary: Exact maintained input read and byte hash rechecked before save.
+  snapshot_sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+- evidence_id: ermurat
+  kind: primary_source
+  reference: /private/tmp/cmm-round59-industrial-research/raw/ermurat2013.pdf
+  locator: Complete12-page official SciELO original; all12pages visually inspected,
+    all5figures/Table1/Equations1–10 and full text read.
+  accessed_at: '2026-10-12T14:11:09.130971Z'
+  support: supports
+  summary: Verified calcined feed, five culture/substrate arms, eight-week sulfur
+    assay, absent matched controls and model-only iron/growth quantities. Figure5
+    stacks separate temperatures; combined height is not one yield.
+  snapshot_sha256: b624c8f563b9c570fa476d75583df29e65e8f9b2ad32e65f26bc34ad5d5c85af
+- evidence_id: thesis
+  kind: primary_source
+  reference: /private/tmp/cmm-round59-industrial-research/raw/thesis2025.pdf
+  locator: Complete101page thesis available; independently read ash methods/results
+    and relevant context, PDF26–34,41–45,58–60,63; visually inspected26–29,32–33,42–45.
+    Contents/figure-table inventory and appendix headings screened.
+  accessed_at: '2026-10-12T14:11:09.130971Z'
+  support: supports
+  summary: Verified SD-BIO-2 identity, media, consortium, adaptation, transferred
+    conditions, analytical equation limits, ashFigures5.12–5.14 and separate crushed-pyriteFigures5.9–5.11.
+    Sb graph/prose conflict and iron excursion retained. Not a claim to inspect every
+    unrelated thesis page/appendix graphic.
+  snapshot_sha256: b57122da3812e1b0f9ca15f755add8e7257ab4c0da7e0d484c64b9e7919dfbd4
+- evidence_id: identity
+  kind: authority
+  reference: /private/tmp/cmm-round59-cinder-review-integrity.json
+  locator: Independent reading of five official NCBI HTML entries with exact labels/type-strain
+    names; actual115raw/receipt and5native-input hashes
+  accessed_at: '2026-10-12T14:11:09.130971Z'
+  support: supports
+  summary: Species4932/435/28034/178606/33059 resolve names. Type-strain designations
+    do not authenticate source culture stocks. All115retained evidence/receipt hashes
+    and5input hashes matched.
+  snapshot_sha256: 95a02cb381de5681617c96280c330ec8d9acfb4f4b57999a6c90f89855bda0b6
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round59-cinder-review-web.json
+  locator: ExactDOI notice search; exact thesis-title corrections search; NCBI and
+    deposit openings
+  accessed_at: '2026-10-12T14:11:09.130971Z'
+  support: supports
+  summary: No affecting notice identified within actual results. Official Scriptiebank
+    deposit freshly opened; search also found TU Freiberg thesis listing. One NCBI
+    web opening failed; retained fresh official HTML was independently read instead.
+  snapshot_sha256: 3bb7e19c89d3cbc20baa56dd11c561d0f05108c05a9d6b84927f2bb64fd93c03
+  search_scope: First returned result sets, no exhaustive pagination. Exact queries
+    archived. Curator official publisher/Crossref/supplement inventory also read;
+    no universal no-notice or no-supplement assertion.
+- evidence_id: dedup
+  kind: validation
+  reference: /private/tmp/cmm-round59-cinder-review-integrity.json
+  locator: Independent actual rg --no-ignore --hidden -L across eight current/original
+    scientific roots
+  accessed_at: '2026-10-12T14:11:09.130971Z'
+  support: supports
+  summary: Only new cinder record/history/paired dossier match. Curator cited-root
+    search reviewed with9missing paths,14large-file limits; not independently rerun
+    wholesale.
+  snapshot_sha256: 95a02cb381de5681617c96280c330ec8d9acfb4f4b57999a6c90f89855bda0b6
+  search_scope: Current/original records,research,reviews,history. Cited197extant
+    raw roots assessed via curator receipts; text/binary and size bounds retained,
+    not a machine-wide absence claim.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round59-cinder-review-named.log
+  locator: Independent actual named validation
+  accessed_at: '2026-10-12T14:11:09.130971Z'
+  support: supports
+  summary: Exit0;1record,0failed.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round59-final-terminal.json
+  locator: Actual parent batch commands and independently verified log hashes
+  accessed_at: '2026-10-12T14:11:09.130971Z'
+  support: supports
+  summary: justcheck,nonempty,historyagainsttrustedbase andrendercheck allcompletedexit0;317passed3skipped,274records322histories.
+    Structuredreview gate follows saving this observation.
+  snapshot_sha256: 7eee51f53a10c131323b399689cef799aa029d42633c2b35d9048af0d17304bc
+assessments:
+- assessment_id: identity_scope
+  area: identity
+  topic: One process-defined secondary resource
+  outcome: supported
+  target_ids:
+  - cmmmech:pyrite-roasting-cinder
+  evidence_ids:
+  - record
+  - ermurat
+  - thesis
+  - dedup
+  summary: Calcined/roasted residue correctly separated from natural pyrite, unroasted
+    tailings, slag and spent acid catalyst. Distinct experiments are not pooled; no
+    criticality inherited.
+  dimensions:
+  - name: material
+    value: Turkish calcined ash and separately weathered SãoDomingosSD-BIO-2
+    definition: Variable process-defined residue, not uniform mineral formula.
+    evidence_ids:
+    - record
+    - ermurat
+    - thesis
+    - dedup
+  - name: criticality
+    value: No designation asserted
+    definition: No jurisdiction/list/edition claim inferred from constituent elements.
+    evidence_ids:
+    - record
+    - ermurat
+    - thesis
+    - dedup
+- assessment_id: sulfur
+  area: evidence
+  topic: Qualified culture-associated sulfur solubilization
+  outcome: supported
+  target_ids:
+  - cmmmech:pyrite-roasting-cinder
+  evidence_ids:
+  - record
+  - ermurat
+  - identity
+  summary: All source limitations are retained; sulfate in incubated cultures supports
+    a narrow partial observation, not microbial necessity, synergy or isolated recovery.
+  dimensions:
+  - name: organisms
+    value: SourceS.cerevisiae and A.aceti; unidentified bakery/vinegar stocks
+    definition: NCBI species IDs map reported names only.
+    evidence_ids:
+    - record
+    - ermurat
+    - identity
+  - name: conditions
+    value: 5%pulp,25/30/35C,eightweeks;five organic-substrate/culture mixtures
+    definition: Pulp basis, complete medium, quantities, replicate and uncertainty
+      details unavailable.
+    evidence_ids:
+    - record
+    - ermurat
+    - identity
+  - name: controls
+    value: No matched uninoculated or killed-cell arm
+    definition: Added acetic acid/other inputs confound biological contribution.
+    evidence_ids:
+    - record
+    - ermurat
+    - identity
+  - name: outcome
+    value: SourcehighestSd/St0.5;Figure5separate25/35Csegments
+    definition: Dissolvedsulfur/initialtotalsulfur ratio; no full mass balance, purity
+      or ironmaking test.
+    evidence_ids:
+    - record
+    - ermurat
+    - identity
+  - name: model
+    value: pH/ORP-derived iron/specfic-growth quantities
+    definition: No measured iron speciation or cell-growth rate verifies the proposed
+      pathway.
+    evidence_ids:
+    - record
+    - ermurat
+    - identity
+- assessment_id: ash_null
+  area: evidence
+  topic: Limited-response ash assay and inconsistent graph
+  outcome: supported
+  target_ids:
+  - cmmmech:pyrite-roasting-cinder
+  evidence_ids:
+  - record
+  - thesis
+  - identity
+  summary: Record preserves unsuccessful transfer of a crushed-pyrite model without
+    claiming a statistically proven ash null. HigherSbgraphic and calibration/denominator
+    inconsistencies are explicit.
+  dimensions:
+  - name: feed
+    value: SD-BIO-2roastedashbelow250micrometres
+    definition: Gypsum/anglesite/beudantite/quartz assignments, uncertainminorflags;
+      distinctSD-BIO-1slag/SD-BIO-3crushedpyrite.
+    evidence_ids:
+    - record
+    - thesis
+    - identity
+  - name: organisms
+    value: SLAmix:S.thermosulfidooxidansDSM9293T,L.ferriphilumDSM14647,A.caldusDSM8584
+    definition: Source culture collection designations, not independent authentication/individualcausality.
+    evidence_ids:
+    - record
+    - thesis
+    - identity
+  - name: conditions
+    value: 100mL,10%v/vinoculum,2%w/vash,1%w/vsulfur,pH1.66,54mMFeII,42C,ninedays
+    definition: 120rpm explicitly adaptation only; medium trace-metalblankcorrection
+      unresolved.
+    evidence_ids:
+    - record
+    - thesis
+    - identity
+  - name: controls
+    value: Sourcecalledabiotic,sterilitynotverified
+    definition: Cells in separate slag/crushed-pyrite controls not assigned to ash.
+    evidence_ids:
+    - record
+    - thesis
+    - identity
+  - name: outcome
+    value: OverlappingpH/ORP;sourceunsatisfactoryleaching
+    definition: No exactpercentage orstatisticalequalityadopted;Figure5.14Sbabovecontrol,Eq5axesreversed,Eq7normalizationincomplete.
+    evidence_ids:
+    - record
+    - thesis
+    - identity
+- assessment_id: provenance
+  area: provenance
+  topic: Evidence tier, history and review bounds
+  outcome: supported
+  target_ids:
+  - cmmmech:pyrite-roasting-cinder
+  evidence_ids:
+  - history
+  - dossier_json
+  - dossier_md
+  - schema
+  - search
+  - named
+  - gates
+  summary: Thesis is correctly identified as a master thesis; public deposit identity
+    is verified. Actual CREATE and inline event are distinct. Inaccessible Panda/Cui
+    sources remain unadmitted.
+  dimensions:
+  - name: deployment
+    value: Laboratory observations only
+    definition: Industrial feed origin is not industrial biological deployment.
+    evidence_ids:
+    - history
+    - dossier_json
+    - dossier_md
+    - schema
+    - search
+    - named
+    - gates
+  - name: scientific_coverage
+    value: Entire record with relevant full-primary evidence
+    definition: Unrelated thesis model outputs and unacquired originals excluded.
+    evidence_ids:
+    - history
+    - dossier_json
+    - dossier_md
+    - schema
+    - search
+    - named
+    - gates
+findings: []
+actions: []
+limitations:
+- No experimental replication, stock authentication, source raw-data reconstruction,
+  regulatory qualification or industrial demonstration.
+- No matched2013abiotic control; incomplete sulfur balance and methods; iron/growth
+  quantities are model outputs.
+- Thesis graph/prose, calibration and denominator issues remain unresolved; no statistically
+  established null or exact ash recovery imported.
+- Thesis independently reviewed for relevant ash content and explicit comparison boundaries,
+  not every unrelated page/appendix graphic.
+- Bounded notice/dedup/supplement inventory, including stated unavailable/large/binary
+  paths; no literature-exhaustion claim. Deferred journal originals remain excluded.
+tags:
+- round59
+- independent
+- secondary-resource
+- pyrite-roasting-cinder
