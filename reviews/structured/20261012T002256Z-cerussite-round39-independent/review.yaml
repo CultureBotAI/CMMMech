@@ -1,0 +1,478 @@
+schema_version: 1.0.0
+review_id: 20261012T002256Z-cerussite-round39-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of cerussite fungal surface transformation
+started_at: '2026-10-12T00:18:16.714667Z'
+finished_at: '2026-10-12T00:22:56.140606Z'
+reviewer:
+  identity: Codex /root/round27_eaf_slag
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored the target record, history and source dossier.
+    This reviewer authored none of those files, captured canonical inputs before judgment,
+    and independently read the complete primary and visually inspected all 16 original
+    pages, seven figures, five tables and IMA rows. Curator-retained original files
+    and parent-executed cohort gates are disclosed. This reviewer authored the separate
+    vanadinite source-only deferral, which supplies no evidence for this target.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: IMA identity and the qualified cerussite surface transformation are supported.
+  The record differentiates diffraction-supported lead oxalate from the S. lacrymans
+  microscopy-only assignment and preserves the C. puteana coproduct disagreement.
+  No corrective finding was identified.
+source:
+  git_revision: bf1f7000014287805ea7c44341a3ce9e112e6689
+  state: working_tree
+  inputs:
+  - path: data/records/cerussite.yaml
+    sha256: b590131335b71b6d5ad7b9c2fbb34b0df63dce2f45e14c6f57e1d5d69bbf5b1a
+    role: target
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/cerussite/2026-10-12T001552Z-codex-41ac80.yaml
+    sha256: 6ae1f3bb73d7480339c518b1681b95d4a0a973599a139f1aef99f18c6f24387c
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire exact frozen mineral record, every source-linked condition/outcome
+    and identifier, control and null boundaries, CREATE provenance and working-state
+    checks.
+  selection: One independently assigned new round39 mineral-feed owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:cerussite
+  exclusions:
+  - target: Instrument-level diffraction re-refinement and laboratory stock authentication
+    reason: Original plotted patterns, microscopy, metadata and deposited sequence
+      labels were checked; no raw instrument files or physical stocks were supplied.
+  - target: Other mineral-feed arms and the full historical fungal literature as new
+      mechanisms
+    reason: Read as shared-study context and contradictory evidence, not independently
+      admitted or counted as replication.
+targets:
+- target_id: cmmmech:cerussite
+  path: data/records/cerussite.yaml
+  label: Cerussite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cerussite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named record validation
+  command: uv run --locked cmmmech validate data/records/cerussite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: One record checked, zero failed. Executed in /private/tmp/CMMMech-expansion-round39-20261012.
+    Log /private/tmp/cmm-round39-brownrot-independent/cerussite-named.log SHA-256
+    6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e.
+  target_ids:
+  - cmmmech:cerussite
+- check_id: batch
+  name: Final full cohort checks
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent-executed terminal gate independently read and hash-verified: 308
+    passed, 3 skipped in 186.10s. Log /private/tmp/cmm-round39-final-batch.log SHA-256
+    97728f73d7f6f23423c32ceb6fe3e9688ef9fc83a4fbbdb185675bcafef84793. Exact target/history/schema/contract
+    bytes were recaptured unchanged. Structural checks do not establish scientific
+    truth.'
+  target_ids:
+  - cmmmech:cerussite
+- check_id: nonempty
+  name: Explicit nonempty corpus validation
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent-executed terminal gate independently read and hash-verified: 210
+    records checked; zero failed. Log /private/tmp/cmm-round39-final-nonempty.log
+    SHA-256 8088527a34a0b38dfa3a5e7dc9ba7acbb2db5645f2022a0277c19fbc93b5c23f. Exact
+    target/history/schema/contract bytes were recaptured unchanged. Structural checks
+    do not establish scientific truth.'
+  target_ids:
+  - cmmmech:cerussite
+- check_id: history
+  name: Trusted-base append-only history validation
+  command: uv run --locked cmmmech validate-history --base bf1f7000014287805ea7c44341a3ce9e112e6689
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent-executed terminal gate independently read and hash-verified: 242
+    history records checked; zero errors. Log /private/tmp/cmm-round39-final-history.log
+    SHA-256 248ff272d20e51f3c8767e9de06bb1481564fc01d11b353d8e0570f1628918e3. Exact
+    target/history/schema/contract bytes were recaptured unchanged. Structural checks
+    do not establish scientific truth.'
+  target_ids:
+  - cmmmech:cerussite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/cerussite.yaml
+  locator: Entire exact frozen record
+  accessed_at: '2026-10-12T00:22:56.140606Z'
+  support: supports
+  summary: IMA identity and the qualified cerussite surface transformation are supported.
+    The record differentiates diffraction-supported lead oxalate from the S. lacrymans
+    microscopy-only assignment and preserves the C. puteana coproduct disagreement.
+    No corrective finding was identified.
+  snapshot_sha256: b590131335b71b6d5ad7b9c2fbb34b0df63dce2f45e14c6f57e1d5d69bbf5b1a
+- evidence_id: ima
+  kind: primary_source
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Original pages 1-2 and 39; definitions and target row visually inspected
+  accessed_at: '2026-10-12T00:22:56.140606Z'
+  support: supports
+  summary: Cerussite is the grandfathered Pb(CO3) mineral; the IMA year 1845 is the
+    original-description year. Table 3 identifies a museum specimen but gives neither
+    quantitative purity nor accession. It is distinct from hydrocerussite, lead oxalate
+    and battery paste.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: methods
+  kind: primary_source
+  reference: https://doi.org/10.3390/cryst13030432
+  locator: Complete 16-page original and current publisher XML; Methods 2.2-2.3, Tables
+    2-3
+  accessed_at: '2026-10-12T00:22:56.140606Z'
+  support: supports
+  summary: Approximately 1 x 0.5 x 0.5 cm blocks in 20 mL liquid glucose-peptone medium,
+    initial pH 5.5, room temperature, 30 days, triplicate. Live mycelial fragments
+    from ten-day GPA cultures. Inoculum amount, substrate sterilization and separate
+    complete liquid recipe are not specified. Starting substrates were characterized
+    by PXRD/EDX. PXRD procedures refer to earlier papers.
+  snapshot_sha256: 8ec8ad39e4a927059ba0f31ead1fc4e0f7b0ef14dfb995758a3f067e3c0a48da
+- evidence_id: products
+  kind: primary_source
+  reference: https://doi.org/10.3390/cryst13030432
+  locator: Table 3 page 4; Table 4 page 8; Figure 3d page 7; Figures 4d and 5d pages
+    9-10; Section 3.2.2 pages 10-11
+  accessed_at: '2026-10-12T00:22:56.140606Z'
+  support: supports
+  summary: Table 4 assigns anhydrous lead oxalate by SEM/EDX and PXRD for S. himantioides
+    at pH 2, C. puteana at pH 2.5 and source Antrodia xantha at pH 3.5. Figure 3d
+    is the selected C. puteana pattern with substrate reflections; Figure 4d shows
+    source-assigned S. himantioides product morphology. Complete cerussite replacement
+    is not established.
+  snapshot_sha256: 8ec8ad39e4a927059ba0f31ead1fc4e0f7b0ef14dfb995758a3f067e3c0a48da
+- evidence_id: boundaries
+  kind: primary_source
+  reference: https://doi.org/10.3390/cryst13030432
+  locator: Table 3 page 4; Table 4 page 8; Figure 3d page 7; Figures 4d and 5d pages
+    9-10; Section 3.2.2 pages 10-11; Methods control statement
+  accessed_at: '2026-10-12T00:22:56.140606Z'
+  support: supports
+  summary: S. lacrymans at pH 3 has a microscopy-only lead-oxalate assignment, with
+    PXRD listing whewellite. Figure 5d is not independent lead-oxalate diffraction.
+    The C. puteana prose mentions whewellite and weddellite, while Table 4 microscopy
+    lists whewellite plus lead oxalate and PXRD lists lead oxalate alone. The record
+    explicitly retains this unresolved coproduct disagreement. Fungus-free controls
+    are stated, but no arm-specific quantitative control result, pH-matched series,
+    killed-biomass or cell-free causal test is supplied. Proposed oxalate secretion
+    was not isolated by an arm-specific time course or intervention.
+  snapshot_sha256: 8ec8ad39e4a927059ba0f31ead1fc4e0f7b0ef14dfb995758a3f067e3c0a48da
+- evidence_id: context
+  kind: primary_source
+  reference: https://doi.org/10.3390/cryst13030432
+  locator: All remaining original figures/tables; Discussion, Conclusions and data
+    statement
+  accessed_at: '2026-10-12T00:22:56.140606Z'
+  support: supports
+  summary: The adit observations concern calcium oxalates, not field deployment of
+    this feed transformation. Cross-study A. niger comparisons do not establish a
+    matched extraction-rate advantage. Existing humboldtine and new feed owners share
+    this experiment. Seven figures/five tables and no declared supplementary-material
+    or sub-article node were found in the current publisher XML; data availability
+    says not applicable.
+  snapshot_sha256: cf208d803c02e2c136310fbb043be01bb81787092cc65be6df1a1a08985bbdc7
+- evidence_id: taxonomy
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=80602,80637,85982,1333629&retmode=xml
+  locator: Independently acquired official taxonomy XML, four top-level species nodes
+  accessed_at: '2026-10-12T00:22:56.140606Z'
+  support: supports
+  summary: 80602 Serpula himantioides, 80637 Coniophora puteana, 85982 Serpula lacrymans,
+    1333629 Amyloporia xantha; Antrodia xantha is listed as a synonym. Direct XML
+    resolves the browser search extract that juxtaposed the current-name label and
+    synonym authority. Species nodes are not strain-level phenotype evidence.
+  snapshot_sha256: fa6f089a2396efe4e24e9c6a033a8c1be4b24b45b2d3e4d6d2fbc69c595c6a97
+- evidence_id: sequences
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KY352492.1,KY433978.1,KY352493.1,KY433983.1&rettype=gb&retmode=text
+  locator: Independently acquired full GenBank records; VERSION, organism, strain
+    and taxon qualifiers
+  accessed_at: '2026-10-12T00:22:56.140606Z'
+  support: supports
+  summary: KY352492.1 maps to S. himantioides LE-BIN 1368/80602; KY433978.1 to C.
+    puteana LE-BIN 1370/80637; KY352493.1 to S. lacrymans LE-BIN 1192/85982; KY433983.1
+    to Amyloporia xantha LE-BIN 1029/1333629. Labels match Table 2, with the genus
+    synonym explicitly preserved; these are not independent stock authentication.
+  snapshot_sha256: 6bb48df17335a406ea217d88f1876fb3859d41a591fb9874526878f008cd84cc
+- evidence_id: metadata
+  kind: database
+  reference: https://api.crossref.org/works/10.3390/cryst13030432
+  locator: Independent current Crossref JSON and publication headers
+  accessed_at: '2026-10-12T00:22:56.140606Z'
+  support: supports
+  summary: DOI, title and publication 2023-03-02 match. Inspected metadata has empty
+    relation and no update-to or updated-by field; this bounded observation does not
+    prove universal absence of notices.
+  snapshot_sha256: 0023f67098a318e67825ea1d145184a297cf434c84f1fd1d03bc5de2cccd94fb
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round39-brownrot-independent/web-search.json
+  locator: Exact-DOI correction/retraction/erratum and NCBI queries
+  accessed_at: '2026-10-12T00:22:56.140606Z'
+  support: context_only
+  summary: Returned exact-DOI results identified the original; no affecting correction
+    or retraction was identified. Related collection metadata links LE-BIN 1029 to
+    KY433983 but supplies no new experimental replication.
+  snapshot_sha256: bab242d1bd499b09c9172fcb70dd8f3627bca987e9f87e2f19de08494a354ec6
+  search_scope: Returned results during this review for exact DOI 10.3390/cryst13030432
+    plus correction/retraction/erratum and TaxID/accession searches; not an exhaustive
+    literature or notice registry audit.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round39-brownrot-independent/dedup.json
+  locator: Independent matching lines and explicitly enumerated roots
+  accessed_at: '2026-10-12T00:22:56.140606Z'
+  support: supports
+  summary: Current target/feed owners and existing humboldtine share the 2023 source.
+    Galena/anglesite hydrocerussite and other lead/copper material references are
+    different identities. No second maintained target owner identified in the declared
+    scope; references, phases and source formats are not replication.
+  snapshot_sha256: 448c1d53ff296fb1c3c8f6dc7cdbb1cdb475c5af39869a648d0b9af8b2eb6953
+  search_scope: rg --no-ignore --hidden --follow over current/original data,research,reviews,history
+    and 123 referenced raw roots; 147 corpus and 575 raw matching lines; no errors
+    or corpus symlinks. Referenced text searched; binary PDFs/images not universally
+    decoded.
+- evidence_id: history
+  kind: record_content
+  reference: history/records/cerussite/2026-10-12T001552Z-codex-41ac80.yaml
+  locator: Canonical CREATE sidecar and separate inline event
+  accessed_at: '2026-10-12T00:22:56.140606Z'
+  support: supports
+  summary: The codex/GPT-6/codex actor, target, actual UTC event and reviewed scope
+    match the new record. Canonical history and inline CREATE are distinct events.
+    Pending-review wording describes historical authoring state, not a present validation
+    failure.
+  snapshot_sha256: 6ae1f3bb73d7480339c518b1681b95d4a0a973599a139f1aef99f18c6f24387c
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round39-final-terminal.json
+  locator: Actual terminal receipt, all three log hashes and final canonical recapture
+  accessed_at: '2026-10-12T00:22:56.140606Z'
+  support: supports
+  summary: 308 passed, 3 skipped in 186.10s; explicit nonempty 210/0 and history 242/0.
+    Own named validation 1/0. Every initial inspected source input remains byte-identical.
+  snapshot_sha256: 20728d40f719802021b462aceb8dfd1fb07126342f54fcc6de28baa002247d33
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral, feed and organism distinctions
+  outcome: supported
+  summary: Cerussite is the grandfathered Pb(CO3) mineral; the IMA year 1845 is the
+    original-description year. Table 3 identifies a museum specimen but gives neither
+    quantitative purity nor accession. It is distinct from hydrocerussite, lead oxalate
+    and battery paste.
+  target_ids:
+  - cmmmech:cerussite
+  evidence_ids:
+  - ima
+  - record
+  - taxonomy
+  - sequences
+  - dedup
+  dimensions:
+  - name: material
+    value: cerussite
+    definition: Species identity is distinct from element, commodity, product and
+      experimental feed impurity.
+    evidence_ids:
+    - ima
+    - methods
+  - name: organisms
+    value: Four identified species and source-labelled LE-BIN cultures
+    definition: Species TaxIDs and deposited ribosomal sequences verify labels, not
+      isolate authentication.
+    evidence_ids:
+    - taxonomy
+    - sequences
+  - name: criticality
+    value: No criticality designation asserted
+    definition: No jurisdiction/list/edition is inherited from the constituent element.
+    evidence_ids:
+    - record
+- assessment_id: assay
+  area: evidence
+  topic: Culture conditions, observations and controls
+  outcome: supported
+  summary: The complete primary supports a laboratory culture association within the
+    documented conditions, not an isolated necessary biochemical pathway.
+  target_ids:
+  - cmmmech:cerussite
+  evidence_ids:
+  - methods
+  - products
+  - boundaries
+  dimensions:
+  - name: conditions
+    value: 20 mL; initial pH 5.5; room temperature; 30 days; triplicate
+    definition: Source protocol, not a precise temperature or inoculum density invented
+      by curation.
+    evidence_ids:
+    - methods
+  - name: biomass
+    value: Live mycelial fragments from ten-day cultures
+    definition: No killed-cell or cell-free mechanistic separation is supplied.
+    evidence_ids:
+    - methods
+    - boundaries
+  - name: controls
+    value: Fungus-free controls stated; arm-specific quantitative control results
+      absent
+    definition: No matched-pH quantitative enhancement is asserted.
+    evidence_ids:
+    - boundaries
+- assessment_id: quantity
+  area: quantity
+  topic: Phase evidence, denominator and counterevidence
+  outcome: supported
+  summary: Table 4 assigns anhydrous lead oxalate by SEM/EDX and PXRD for S. himantioides
+    at pH 2, C. puteana at pH 2.5 and source Antrodia xantha at pH 3.5. Figure 3d
+    is the selected C. puteana pattern with substrate reflections; Figure 4d shows
+    source-assigned S. himantioides product morphology. Complete cerussite replacement
+    is not established. S. lacrymans at pH 3 has a microscopy-only lead-oxalate assignment,
+    with PXRD listing whewellite. Figure 5d is not independent lead-oxalate diffraction.
+    The C. puteana prose mentions whewellite and weddellite, while Table 4 microscopy
+    lists whewellite plus lead oxalate and PXRD lists lead oxalate alone. The record
+    explicitly retains this unresolved coproduct disagreement.
+  target_ids:
+  - cmmmech:cerussite
+  evidence_ids:
+  - products
+  - boundaries
+  - record
+  dimensions:
+  - name: phase
+    value: Source-assigned anhydrous lead oxalate; three PXRD-supported culture arms
+      and one weaker microscopy-only comparator.
+    definition: Source-assigned phase and analytical tier, not total metal accounting.
+    evidence_ids:
+    - products
+    - boundaries
+  - name: outcome
+    value: Qualitative surface products with reported culture pH
+    definition: No isolated-product mass, purity, recovery percentage or conversion
+      denominator supplied.
+    evidence_ids:
+    - products
+    - boundaries
+- assessment_id: scope
+  area: scope
+  topic: Shared experiment, inference and deployment
+  outcome: supported
+  summary: The record preserves one material view of a shared laboratory experiment.
+    Product formation is not a recovered-metal yield or industrial process demonstration.
+  target_ids:
+  - cmmmech:cerussite
+  evidence_ids:
+  - context
+  - methods
+  - record
+  dimensions:
+  - name: scale
+    value: Laboratory Petri-dish cultures
+    definition: Natural adit observations and literature comparisons are not deployment
+      evidence for this arm.
+    evidence_ids:
+    - context
+    - methods
+  - name: replication
+    value: One shared Vlasov2023 experiment
+    definition: Multiple mineral owners, PDF/XML formats and sequence records do not
+      add independent replications.
+    evidence_ids:
+    - context
+    - dedup
+- assessment_id: provenance
+  area: provenance
+  topic: Exact inputs, histories and completed checks
+  outcome: supported
+  summary: All reviewed source-input hashes were recaptured unchanged; independent
+    named checks and actual parent final cohort checks passed.
+  target_ids:
+  - cmmmech:cerussite
+  evidence_ids:
+  - record
+  - history
+  - metadata
+  - notices
+  - gates
+  dimensions:
+  - name: state
+    value: Working tree at bf1f7000014287805ea7c44341a3ce9e112e6689
+    definition: This is not an attestation to a future commit or hosted PR.
+    evidence_ids:
+    - record
+    - history
+    - gates
+  - name: access
+    value: Complete original main PDF/XML; all original pages and figures/tables
+    definition: No declared supplementary-material nodes in current XML; unrelated
+      referenced papers were not all reacquired.
+    evidence_ids:
+    - methods
+    - context
+    - metadata
+findings: []
+actions: []
+limitations:
+- S. lacrymans at pH 3 has a microscopy-only lead-oxalate assignment, with PXRD listing
+  whewellite. Figure 5d is not independent lead-oxalate diffraction. The C. puteana
+  prose mentions whewellite and weddellite, while Table 4 microscopy lists whewellite
+  plus lead oxalate and PXRD lists lead oxalate alone. The record explicitly retains
+  this unresolved coproduct disagreement.
+- Culture association and selected source-assigned phases do not establish complete
+  feed consumption, a phase-specific metal balance, isolated recovery, exclusive biochemical
+  causality or industrial deployment.
+- The liquid-medium recipe, inoculum amount and substrate sterilization remain unspecified;
+  starting-material purity and selected analytical patterns limit generalization.
+- Four species/sequence labels do not independently authenticate the experimental
+  stock. The source Antrodia name and current Amyloporia synonym relationship are
+  explicit.
+- No affecting notice was identified in the bounded exact-DOI search/current metadata,
+  not a universal absence claim. Full original evidence was reused from disclosed
+  curator acquisitions and independently inspected.
+- Hidden/ignored/followed dedup covers the enumerated corpus and referenced raw text
+  roots, not universal binary decoding or machine-wide absence.
+notes:
+- No target record, history or source dossier was edited by this reviewer. Accurately
+  represented source weaknesses are limitations, not fabricated corrective findings.
+- The first independent API attempt failed under restricted DNS and is retained; a
+  permitted network read then returned all three official resources successfully.
+- Both mineral reviews are separate exact-target observations from the same independent
+  reading; their common source does not imply independent experimental replication.
+links:
+- research/sources/round39-brown-rot-feeds/20261012T001730Z-source-investigation.md
+- https://doi.org/10.3390/cryst13030432
+tags:
+- round39
+- cerussite
+- independent
+- scientific

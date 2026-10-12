@@ -211,11 +211,15 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Uramphite](data/records/uramphite.yaml) | Thermophilic culture transforms a precipitated ammonium uranyl-phosphate analogue | High-loading nulls, dissolved-pathway uncertainty and source discrepancies limit the reduction claim |
 | [Moolooite](data/records/moolooite.yaml) | Fungal culture-associated copper oxalate formation on weathered ore surfaces | Variable hydration, mixed phases and missing matched controls prevent pure-product or exclusive biological claims |
 | [Humboldtine](data/records/humboldtine.yaml) | Fungal culture-associated iron oxalate formation on siderite- and altered pyrrhotite-bearing rocks | Organism-specific nulls, method-dependent phase assignments and control gaps limit causal and recovery claims |
-| [Lindbergite](data/records/lindbergite.yaml) | Fungal formation of a source-assigned manganese oxalate dihydrate from mixed natural nodules | Mixed phases, hydration and polymorph uncertainty, and assay discrepancies prevent a pure-product yield claim |
+| [Lindbergite](data/records/lindbergite.yaml) | Fungal formation of source-assigned manganese oxalate dihydrate from natural nodules and synthetic sodium birnessite | Separate studies retain preparation, hydration, polymorph and control limits; no pure-product yield |
 | [Falottaite](data/records/falottaite.yaml) | Fungal culture-associated manganese oxalate trihydrate assignment in a hausmannite/arsenate assay | Unresolved onset, mixed phases and absent matched abiotic controls prevent phase-specific recovery or arsenic-capacity claims |
 | [Mimetite](data/records/mimetite.yaml) | Fungal transformation of an impure natural mimetite feed with lead oxalate precipitation | Qualitative phase evidence does not establish feed conversion, arsenic fate or recovered-metal yield |
 | [Katsarosite](data/records/katsarosite.yaml) | Zinc-dominant monoclinic oxalate formation during source-identified A. niger culture | Mixed phases, conflicting source conditions and a companion-strain accession mismatch remain explicit |
 | [Hausmannite](data/records/hausmannite.yaml) | Culture-associated manganese mobilization from synthetic hausmannite with and without selenate | Endpoint measurements, conflicting source units and unmatched abiotic controls limit causal and recovery claims |
+| [Malachite](data/records/malachite.yaml) | Brown-rot cultures form source-assigned copper oxalate on synthetic malachite | Species-specific phase detection and missing matched controls prevent quantitative conversion claims |
+| [Cerussite](data/records/cerussite.yaml) | Brown-rot cultures form lead oxalate on a natural cerussite specimen | Microscopy-only assignments and conflicting co-product wording remain explicit |
+| [Fluorapatite](data/records/fluorapatite.yaml) | Brown-rot cultures form calcium oxalate on a chlorine-bearing fluorapatite specimen | Medium calcium and method-dependent phase detection prevent source-exclusive or phosphorus-recovery claims |
+| [Hollandite](data/records/hollandite.yaml) | Brown-rot cultures form source-assigned manganese oxalate phases on a hollandite specimen | Formula and figure/table phase conflicts remain unresolved; no phase-specific recovery yield |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -261,7 +265,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [thirty-sixth expansion reviews](research/ingests/round36-20261011-publication.md),
 [thirty-seventh expansion reviews](research/ingests/round37-20261011-publication.md),
 [thirty-eighth expansion reviews](research/ingests/round38-20261011-publication.md),
-[remaining ingest priorities](research/ingests/round38-frontier-20261011.md), and
+[thirty-ninth expansion reviews](research/ingests/round39-20261012-publication.md),
+[remaining ingest priorities](research/ingests/round39-frontier-20261012.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

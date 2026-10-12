@@ -1,0 +1,518 @@
+# Independent scientific review of hollandite brown-rot surface transformation
+
+- Review: 20261012T002355Z-hollandite-round39-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-12T00:17:02.982923Z
+- Finished UTC: 2026-10-12T00:23:55.071630Z
+- Reviewer: Codex /root/round27_packaging (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Whole frozen hollandite record is supported as a qualified culture-associated surface biomineralization observation. Zero corrective findings; source identity, controls, phase/causal and recovery limitations remain explicit.
+
+## Scope And Provenance
+
+Whole hollandite species identity, specimen, microbial observations, assay conditions, controls, evidence limitations and inline/canonical provenance.
+
+Selection: Parent assigned target curated by another agent.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base bf1f7000014287805ea7c44341a3ce9e112e6689.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:hollandite | data/records/hollandite.yaml | maintained | Hollandite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named-record validation | passed | True | cmmmech:hollandite | Reviewer executed the two named targets: 2 checked, 0 failed. Log /private/tmp/cmm-round39-independent-reviews/named-validation.log SHA256 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042 |
+| Final cohort batch | passed | True | cmmmech:hollandite | Parent executed; reviewer independently read and hash-verified /private/tmp/cmm-round39-final-batch.log SHA256 97728f73d7f6f23423c32ceb6fe3e9688ef9fc83a4fbbdb185675bcafef84793. uv run --locked --extra dev python scripts/check.py<br>All checks passed!<br>........................................................................ [ 23%]<br>........................................................................ [ 46%]<br>........................................................................ [ 69%]<br>....................................................sss................. [ 92%]<br>.......................                                                  [100%]<br>308 passed, 3 skipped in 186.10s (0:03:06)<br>Checked 210 record(s); 0 failed.<br>Checked 242 history record(s); 0 error(s). |
+| Final cohort nonempty | passed | True | cmmmech:hollandite | Parent executed; reviewer independently read and hash-verified /private/tmp/cmm-round39-final-nonempty.log SHA256 8088527a34a0b38dfa3a5e7dc9ba7acbb2db5645f2022a0277c19fbc93b5c23f. Checked 210 record(s); 0 failed. |
+| Final cohort history | passed | True | cmmmech:hollandite | Parent executed; reviewer independently read and hash-verified /private/tmp/cmm-round39-final-history.log SHA256 248ff272d20e51f3c8767e9de06bb1481564fc01d11b353d8e0570f1628918e3. Checked 242 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Species, specimen and organism boundaries
+
+identity: supported. Targets: cmmmech:hollandite.
+
+Authority names/formulas and organism mappings are supported, while specimen identity limitations remain explicit.
+
+### Conditional culture-associated surface crystallization
+
+evidence: supported. Targets: cmmmech:hollandite.
+
+Source-assigned mixed manganese oxalates on a hollandite-labelled specimen, with formula and method-dependent product conflicts retained.
+
+### Controls, conflicting evidence and scale
+
+evidence: supported. Targets: cmmmech:hollandite.
+
+Source weaknesses and internal differences are retained without erasing positive scoped observations. Laboratory assays and natural adit context remain separate.
+
+### Independent exact-byte review and completed required checks
+
+provenance: supported. Targets: cmmmech:hollandite.
+
+Native inspect preceded judgment; reviewer did not author this target. Whole source and original visuals independently checked, target/history frozen hashes retained and actual checks verified.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/hollandite.yaml; Whole frozen target; native inspect before assessment | supports | Whole target assessed independently. Reviewer authored the REE source deferral, not this record, history or brown-rot source dossier. |
+| primary | https://doi.org/10.3390/cryst13030432; Complete 16-page main text; original Figures 1–7; Tables 2–5 original page images and Table 1 contextual text | supports | Independently read source and inspected original pages 3–12. Approximately 1 x 0.5 x 0.5 cm blocks, 20 mL liquid glucose-peptone medium, initial pH5.5, room temperature, 30 days and triplicate. Ten-day agar culture mycelial fragments; no inoculum amount or substrate sterilization specified. Agar recipe is given, but no separate complete liquid formulation. Fungus-free controls are stated without feed-specific quantitative phase balances. Earlier Aspergillus experiments and natural adit observations are distinct. |
+| controls | https://doi.org/10.3390/cryst13030432; Original pages4–5 Methods2.2–2.3; Figures3–7; Discussion4 | supports | No matched-pH series, killed-biomass or cell-free-metabolite comparison identifies a necessary biochemical step. PXRD instrument/method details refer to earlier studies; patterns include substrate peaks. Culture-associated oxalates do not quantify dissolution, microbial enhancement, isolated recovery or industrial operation. No arm-specific oxalate timecourse or intervention proves enzymatic causality. |
+| taxa | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=80602,80637,85982,1333629&amp;retmode=xml; Fresh author-acquired official XML independently parsed; four original GenBank source records | supports | TaxIDs80602/80637/85982/1333629 are species Serpula himantioides, Coniophora puteana, Serpula lacrymans and Amyloporia xantha. Reused original GenBank KY352492.1/KY433978.1/KY352493.1/KY433983.1 carry LE-BIN1368/1370/1192/1029 respectively. The paper uses Antrodia xantha; current name Amyloporia is preserved. Species IDs and sequence labels do not authenticate experimental stocks or establish phenotypes. |
+| notices | /private/tmp/cmm-round39-independent-reviews/notice-search.json; Independent DOI/title notice and competing-result queries; complete main XML/PDF inventory | supports | No formal affecting notice verified among bounded results or fresh Crossref update fields. Seven figures, five tables, zero supplementary-material nodes in current XML, whose bytes match retained primary XML. Main PDF identifies no separate supplement. Earlier cited studies are not transferred into these arms. |
+| dedup | /private/tmp/cmm-round39-independent-reviews/dedup-receipt.json; Reviewer hidden/ignored/followed bounded current corpus and cited downloads | supports | Distinct feed-mineral owners; the existing humboldtine product record and new feed views share one2023 study. Neither mirrors nor material views are independent replications. Current record membership and relevant elemental/resource/product boundaries reviewed. |
+| history | history/records/hollandite/2026-10-12T001609Z-codex-805333.yaml; Whole canonical CREATE sidecar and distinct inline event | supports | Actual codex/GPT-6/codex actor, target and described new material scope agree. Inline and sidecar timestamps are distinct actual sessions; source dossier and review are separate. No earlier history rewritten. |
+| gates | /private/tmp/cmm-round39-final-terminal.json; Final cohort terminal receipt and all actual command logs | supports | Required batch, nonempty and trusted-base history commands executed by parent; reviewer independently read and hash-verified them and checked frozen target bytes. Structural validation is not scientific evidence. |
+| artifacts | /private/tmp/cmm-round39-independent-reviews/evidence-check.json; Independent hash and acquisition-provenance check | supports | 54 author-dossier current/reused artifacts verified against actual bytes, including complete primary and sequence receipts. Fresh XML equals retained original; reused PDF and images are not claimed as new downloads. Shared source acquisition does not replace independent inspection. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Original September2026 row PDFpage95 and introductory definitions | supports | Hollandite Ba(Mn4+6Mn3+2)O16, redefined status Rd and2012special procedure; structure family, elemental manganese and oxalate products remain distinct. No criticality inherited. |
+| feed | https://doi.org/10.3390/cryst13030432; Original Table3continuationpage5 | supports | Entangled fibrous/reniform specimen from U.M.Bronzova collection, possibleFe impurity no greater than1.35wt%FeO. Source formulaBa(Mn2+,Mn4+)8O16 differs from current IMA; PXRD/EDX source identification does not establish specimen valence/site occupancy. Target preserves mismatch without silently reassigning species. |
+| products | https://doi.org/10.3390/cryst13030432; Original Table4page8; Figure3e and Figures6a,7a; Results3.2.2page11 | supports | S.himantioides pH3 has falottaite+lindbergite by both methods; source A.xantha pH2 has lindbergite+whewellite. C.puteana pH5 lists both by microscopy but only falottaite by PXRD; Figure3e caption instead names both. S.lacrymans has dashes includingpH, not measured zero. Record retains conflict and distinguishes morphology from definitive hydration assignment, without unmeasured Mn redox or Ba recovery. |
+
+## Limits And Additional Notes
+
+- Source hollandite formula differs from current IMA; no specimen-specific valence or site-occupancy refinement is supplied.
+- C.puteana Table4 PXRD lists only falottaite, whereas Figure3e caption names falottaite and lindbergite; the record preserves this unresolved source conflict.
+- S.lacrymans dashes do not establish a measured zero yield.
+- No manganese oxidation-state time series, closed metal balance, complete feed conversion or isolated oxalate/barium yield.
+- Room temperature, biomass loading and separate complete liquid recipe are incompletely specified by the source; no invented values supplied.
+- No matched-pH, killed-biomass or cell-free comparison isolates enzyme or metabolite necessity.
+- PXRD methods rely on earlier references and selected patterns include underlying mineral reflections; no independent crystallographic re-refinement performed.
+- Bounded notice/SI search is not exhaustive; unpublished data existence is unresolved.
+- No industrial deployment or isolated-product performance inferred from laboratory observations.
+- Reviewer independently verified54 current/reused artifact hashes. All seven original main figures visually inspected; original Tables2–5 pixels inspected; Table1 prior-literature context read as text.
+- One primary experiment is shared with other material views, not independent replication.
+- No target/history edit or GitHub mutation by reviewer.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261012T002355Z-hollandite-round39-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of hollandite brown-rot surface transformation
+started_at: '2026-10-12T00:17:02.982923Z'
+finished_at: '2026-10-12T00:23:55.071630Z'
+reviewer:
+  identity: Codex /root/round27_packaging
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Target, canonical history and brown-rot dossier authored by
+    /root. Reviewer authored only the separate REE source deferral in this round,
+    and no target bytes. Shared worktree and acquired originals disclosed. Reviewer
+    personally inspected complete claim-bearing text, all seven original figures and
+    relevant original tables after native inspect.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Whole frozen hollandite record is supported as a qualified culture-associated
+  surface biomineralization observation. Zero corrective findings; source identity,
+  controls, phase/causal and recovery limitations remain explicit.
+source:
+  git_revision: bf1f7000014287805ea7c44341a3ce9e112e6689
+  state: working_tree
+  inputs:
+  - path: data/records/hollandite.yaml
+    sha256: 17f916c1157204fcc3492c6c1676f5942446ba135452c9182fae4b9c81f70712
+    role: target
+  - path: history/records/hollandite/2026-10-12T001609Z-codex-805333.yaml
+    sha256: 4bf742b4a91ceb24a5070b6e982a8fd279423807ae2998bf63202c084d285c6c
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Whole hollandite species identity, specimen, microbial observations,
+    assay conditions, controls, evidence limitations and inline/canonical provenance.
+  selection: Parent assigned target curated by another agent.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:hollandite
+  exclusions:
+  - target: Other mineral-feed arms and prior cited Aspergillus studies
+    reason: Used only to check boundaries; no other record is independently accepted
+      by this single-target review.
+targets:
+- target_id: cmmmech:hollandite
+  path: data/records/hollandite.yaml
+  label: Hollandite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/hollandite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named-record validation
+  command: PYTHONDONTWRITEBYTECODE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1
+    uv run --locked cmmmech validate data/records/fluorapatite.yaml data/records/hollandite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Reviewer executed the two named targets: 2 checked, 0 failed. Log /private/tmp/cmm-round39-independent-reviews/named-validation.log
+    SHA256 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042'
+  target_ids:
+  - cmmmech:hollandite
+- check_id: batch
+  name: Final cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed; reviewer independently read and hash-verified /private/tmp/cmm-round39-final-batch.log
+    SHA256 97728f73d7f6f23423c32ceb6fe3e9688ef9fc83a4fbbdb185675bcafef84793. uv run
+    --locked --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 186.10s (0:03:06)
+
+    Checked 210 record(s); 0 failed.
+
+    Checked 242 history record(s); 0 error(s).'
+  target_ids:
+  - cmmmech:hollandite
+- check_id: nonempty
+  name: Final cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Parent executed; reviewer independently read and hash-verified /private/tmp/cmm-round39-final-nonempty.log
+    SHA256 8088527a34a0b38dfa3a5e7dc9ba7acbb2db5645f2022a0277c19fbc93b5c23f. Checked
+    210 record(s); 0 failed.
+  target_ids:
+  - cmmmech:hollandite
+- check_id: history
+  name: Final cohort history
+  command: uv run --locked cmmmech validate-history --base bf1f7000014287805ea7c44341a3ce9e112e6689
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Parent executed; reviewer independently read and hash-verified /private/tmp/cmm-round39-final-history.log
+    SHA256 248ff272d20e51f3c8767e9de06bb1481564fc01d11b353d8e0570f1628918e3. Checked
+    242 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:hollandite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/hollandite.yaml
+  locator: Whole frozen target; native inspect before assessment
+  accessed_at: '2026-10-12T00:23:55.071630Z'
+  support: supports
+  summary: Whole target assessed independently. Reviewer authored the REE source deferral,
+    not this record, history or brown-rot source dossier.
+  snapshot_sha256: 17f916c1157204fcc3492c6c1676f5942446ba135452c9182fae4b9c81f70712
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/cryst13030432
+  locator: Complete 16-page main text; original Figures 1–7; Tables 2–5 original page
+    images and Table 1 contextual text
+  accessed_at: '2026-10-12T00:23:55.071630Z'
+  support: supports
+  summary: Independently read source and inspected original pages 3–12. Approximately
+    1 x 0.5 x 0.5 cm blocks, 20 mL liquid glucose-peptone medium, initial pH5.5, room
+    temperature, 30 days and triplicate. Ten-day agar culture mycelial fragments;
+    no inoculum amount or substrate sterilization specified. Agar recipe is given,
+    but no separate complete liquid formulation. Fungus-free controls are stated without
+    feed-specific quantitative phase balances. Earlier Aspergillus experiments and
+    natural adit observations are distinct.
+  snapshot_sha256: 8ec8ad39e4a927059ba0f31ead1fc4e0f7b0ef14dfb995758a3f067e3c0a48da
+- evidence_id: controls
+  kind: primary_source
+  reference: https://doi.org/10.3390/cryst13030432
+  locator: Original pages4–5 Methods2.2–2.3; Figures3–7; Discussion4
+  accessed_at: '2026-10-12T00:23:55.071630Z'
+  support: supports
+  summary: No matched-pH series, killed-biomass or cell-free-metabolite comparison
+    identifies a necessary biochemical step. PXRD instrument/method details refer
+    to earlier studies; patterns include substrate peaks. Culture-associated oxalates
+    do not quantify dissolution, microbial enhancement, isolated recovery or industrial
+    operation. No arm-specific oxalate timecourse or intervention proves enzymatic
+    causality.
+  snapshot_sha256: c7c3a38dd9e62ede5943013869e76d848bd3adc22fddc8e5475c26c37cb41f6b
+- evidence_id: taxa
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=80602,80637,85982,1333629&retmode=xml
+  locator: Fresh author-acquired official XML independently parsed; four original
+    GenBank source records
+  accessed_at: '2026-10-12T00:23:55.071630Z'
+  support: supports
+  summary: TaxIDs80602/80637/85982/1333629 are species Serpula himantioides, Coniophora
+    puteana, Serpula lacrymans and Amyloporia xantha. Reused original GenBank KY352492.1/KY433978.1/KY352493.1/KY433983.1
+    carry LE-BIN1368/1370/1192/1029 respectively. The paper uses Antrodia xantha;
+    current name Amyloporia is preserved. Species IDs and sequence labels do not authenticate
+    experimental stocks or establish phenotypes.
+  snapshot_sha256: fa6f089a2396efe4e24e9c6a033a8c1be4b24b45b2d3e4d6d2fbc69c595c6a97
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round39-independent-reviews/notice-search.json
+  locator: Independent DOI/title notice and competing-result queries; complete main
+    XML/PDF inventory
+  accessed_at: '2026-10-12T00:23:55.071630Z'
+  support: supports
+  summary: No formal affecting notice verified among bounded results or fresh Crossref
+    update fields. Seven figures, five tables, zero supplementary-material nodes in
+    current XML, whose bytes match retained primary XML. Main PDF identifies no separate
+    supplement. Earlier cited studies are not transferred into these arms.
+  snapshot_sha256: c2a5ff86f50c1b3c4ce1fda839f50b3693a6329d3c9da4650c26edfffea9cea2
+  search_scope: '2026-10-12 web.run queries: exact DOI correction/erratum/retraction;
+    exact title with hollandite/fluorapatite; hollandite with Coniophora/falottaite/lindbergite.
+    First result sets only, no exhaustive notice or SI absence claim.'
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round39-independent-reviews/dedup-receipt.json
+  locator: Reviewer hidden/ignored/followed bounded current corpus and cited downloads
+  accessed_at: '2026-10-12T00:23:55.071630Z'
+  support: supports
+  summary: Distinct feed-mineral owners; the existing humboldtine product record and
+    new feed views share one2023 study. Neither mirrors nor material views are independent
+    replications. Current record membership and relevant elemental/resource/product
+    boundaries reviewed.
+  snapshot_sha256: b9acc50eb3c9fe040e8e87dcb855b6f98471042eb16726d7bb1f9f237160d8e6
+  search_scope: rg --hidden --no-ignore --follow across data/records, research, reviews
+    and history plus122 cited cmm research/raw roots, discovered from1542 text metadata
+    files with cycle prevention. Binary detection retained; not a universal PDF/image
+    decoding or machine-wide novelty claim.
+- evidence_id: history
+  kind: record_content
+  reference: history/records/hollandite/2026-10-12T001609Z-codex-805333.yaml
+  locator: Whole canonical CREATE sidecar and distinct inline event
+  accessed_at: '2026-10-12T00:23:55.071630Z'
+  support: supports
+  summary: Actual codex/GPT-6/codex actor, target and described new material scope
+    agree. Inline and sidecar timestamps are distinct actual sessions; source dossier
+    and review are separate. No earlier history rewritten.
+  snapshot_sha256: 4bf742b4a91ceb24a5070b6e982a8fd279423807ae2998bf63202c084d285c6c
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round39-final-terminal.json
+  locator: Final cohort terminal receipt and all actual command logs
+  accessed_at: '2026-10-12T00:23:55.071630Z'
+  support: supports
+  summary: Required batch, nonempty and trusted-base history commands executed by
+    parent; reviewer independently read and hash-verified them and checked frozen
+    target bytes. Structural validation is not scientific evidence.
+  snapshot_sha256: 20728d40f719802021b462aceb8dfd1fb07126342f54fcc6de28baa002247d33
+- evidence_id: artifacts
+  kind: record_content
+  reference: /private/tmp/cmm-round39-independent-reviews/evidence-check.json
+  locator: Independent hash and acquisition-provenance check
+  accessed_at: '2026-10-12T00:23:55.071630Z'
+  support: supports
+  summary: 54 author-dossier current/reused artifacts verified against actual bytes,
+    including complete primary and sequence receipts. Fresh XML equals retained original;
+    reused PDF and images are not claimed as new downloads. Shared source acquisition
+    does not replace independent inspection.
+  snapshot_sha256: 4b888e7cf2384066586d0dca5054e471d939e4aeeb3672f9f62d4631d823b000
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Original September2026 row PDFpage95 and introductory definitions
+  accessed_at: '2026-10-12T00:23:55.071630Z'
+  support: supports
+  summary: Hollandite Ba(Mn4+6Mn3+2)O16, redefined status Rd and2012special procedure;
+    structure family, elemental manganese and oxalate products remain distinct. No
+    criticality inherited.
+  snapshot_sha256: 8e615288256f63416872bf9bb25abd457a0ed56d12b0ea97c5da2b36e26cfc13
+- evidence_id: feed
+  kind: primary_source
+  reference: https://doi.org/10.3390/cryst13030432
+  locator: Original Table3continuationpage5
+  accessed_at: '2026-10-12T00:23:55.071630Z'
+  support: supports
+  summary: Entangled fibrous/reniform specimen from U.M.Bronzova collection, possibleFe
+    impurity no greater than1.35wt%FeO. Source formulaBa(Mn2+,Mn4+)8O16 differs from
+    current IMA; PXRD/EDX source identification does not establish specimen valence/site
+    occupancy. Target preserves mismatch without silently reassigning species.
+  snapshot_sha256: c7c3a38dd9e62ede5943013869e76d848bd3adc22fddc8e5475c26c37cb41f6b
+- evidence_id: products
+  kind: primary_source
+  reference: https://doi.org/10.3390/cryst13030432
+  locator: Original Table4page8; Figure3e and Figures6a,7a; Results3.2.2page11
+  accessed_at: '2026-10-12T00:23:55.071630Z'
+  support: supports
+  summary: S.himantioides pH3 has falottaite+lindbergite by both methods; source A.xantha
+    pH2 has lindbergite+whewellite. C.puteana pH5 lists both by microscopy but only
+    falottaite by PXRD; Figure3e caption instead names both. S.lacrymans has dashes
+    includingpH, not measured zero. Record retains conflict and distinguishes morphology
+    from definitive hydration assignment, without unmeasured Mn redox or Ba recovery.
+  snapshot_sha256: 060da34e9db69d70f16fe9d523620cabb83b34e0834dfc6b2b57b6813cfe5395
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species, specimen and organism boundaries
+  outcome: supported
+  summary: Authority names/formulas and organism mappings are supported, while specimen
+    identity limitations remain explicit.
+  target_ids:
+  - cmmmech:hollandite
+  evidence_ids:
+  - record
+  - ima
+  - feed
+  - taxa
+  - dedup
+  dimensions:
+  - name: material
+    value: Hollandite mineral species; source-identified fibrous/reniform collection
+      specimen, valence/site occupancy unrefined.
+    definition: Mineral species differs from experimental specimen, element, resource
+      and product.
+    evidence_ids:
+    - ima
+    - feed
+  - name: criticality
+    value: Not asserted
+    definition: No jurisdiction/list/edition inherited from elemental constituents.
+    evidence_ids:
+    - record
+  - name: organisms
+    value: LE-BIN1368/1370/1192/1029; species TaxIDs with current Amyloporia name
+    definition: Sequence source labels identify cited strains, not independent stock
+      authentication.
+    evidence_ids:
+    - primary
+    - taxa
+- assessment_id: mechanism
+  area: evidence
+  topic: Conditional culture-associated surface crystallization
+  outcome: supported
+  summary: Source-assigned mixed manganese oxalates on a hollandite-labelled specimen,
+    with formula and method-dependent product conflicts retained.
+  target_ids:
+  - cmmmech:hollandite
+  evidence_ids:
+  - record
+  - primary
+  - products
+  - controls
+  dimensions:
+  - name: conditions
+    value: 20mL liquid medium; initialpH5.5; room temperature;30days;triplicate; approximately1x0.5x0.5cmblocks
+    definition: Published method, not a new measured optimization.
+    evidence_ids:
+    - primary
+  - name: biomass
+    value: Mycelial fragments from ten-day agar cultures
+    definition: Inoculum amount and complete separate liquid recipe unspecified.
+    evidence_ids:
+    - primary
+  - name: outcome
+    value: Surface manganese oxalate assignments; no quantified redox pathway, dissolution
+      or recovery.
+    definition: Qualitative phase presence and mediumpH are not dissolution or isolated-product
+      yield.
+    evidence_ids:
+    - products
+- assessment_id: limits
+  area: evidence
+  topic: Controls, conflicting evidence and scale
+  outcome: supported
+  summary: Source weaknesses and internal differences are retained without erasing
+    positive scoped observations. Laboratory assays and natural adit context remain
+    separate.
+  target_ids:
+  - cmmmech:hollandite
+  evidence_ids:
+  - controls
+  - products
+  - feed
+  - notices
+  dimensions:
+  - name: controls
+    value: Fungus-free controls stated; no selected-arm quantitative phase balance
+      or matched-pH intervention
+    definition: Culture association does not isolate a necessary acid/enzyme pathway.
+    evidence_ids:
+    - controls
+  - name: scale
+    value: Laboratory feed assay
+    definition: Adit observations and prospective biotechnology discussion do not
+      establish deployment for this feed.
+    evidence_ids:
+    - primary
+    - controls
+- assessment_id: provenance
+  area: provenance
+  topic: Independent exact-byte review and completed required checks
+  outcome: supported
+  summary: Native inspect preceded judgment; reviewer did not author this target.
+    Whole source and original visuals independently checked, target/history frozen
+    hashes retained and actual checks verified.
+  target_ids:
+  - cmmmech:hollandite
+  evidence_ids:
+  - record
+  - history
+  - gates
+  - artifacts
+  - dedup
+findings: []
+actions: []
+limitations:
+- Source hollandite formula differs from current IMA; no specimen-specific valence
+  or site-occupancy refinement is supplied.
+- C.puteana Table4 PXRD lists only falottaite, whereas Figure3e caption names falottaite
+  and lindbergite; the record preserves this unresolved source conflict.
+- S.lacrymans dashes do not establish a measured zero yield.
+- No manganese oxidation-state time series, closed metal balance, complete feed conversion
+  or isolated oxalate/barium yield.
+- Room temperature, biomass loading and separate complete liquid recipe are incompletely
+  specified by the source; no invented values supplied.
+- No matched-pH, killed-biomass or cell-free comparison isolates enzyme or metabolite
+  necessity.
+- PXRD methods rely on earlier references and selected patterns include underlying
+  mineral reflections; no independent crystallographic re-refinement performed.
+- Bounded notice/SI search is not exhaustive; unpublished data existence is unresolved.
+- No industrial deployment or isolated-product performance inferred from laboratory
+  observations.
+notes:
+- Reviewer independently verified54 current/reused artifact hashes. All seven original
+  main figures visually inspected; original Tables2–5 pixels inspected; Table1 prior-literature
+  context read as text.
+- One primary experiment is shared with other material views, not independent replication.
+- No target/history edit or GitHub mutation by reviewer.
+links:
+- https://doi.org/10.3390/cryst13030432
+- https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+```
