@@ -1,0 +1,206 @@
+{
+  "recorded_at": "2026-10-12T04:53:25.956298+00:00",
+  "reviewer": "Codex /root/round27_packaging; GPT-6; codex",
+  "authorship": "Reviewer authored roquesite and the five README rows/count and independently reviewed cassiterite. Reviewer did not author these helper ports, root gate ports, or helper configuration; this audit is operational and does not self-certify roquesite science or README publication readiness.",
+  "scope": "Read-only static adversarial audit of exactly 12 operational helper ports, three root gate ports, current config and finalization delta. No helper body, Git/GitHub mutation, network call, broad scientific/test rerun or publication action executed by this audit.",
+  "worktree": "/private/tmp/CMMMech-expansion-round46-20261012",
+  "reviewed_revision": "94d743a1b8bb3fe595f96e88f4cdb54a4ee72375",
+  "source_state": "working_tree",
+  "verdict": "pass",
+  "passed": true,
+  "findings": [],
+  "unresolved_findings": [],
+  "helpers": [
+    {
+      "source": "/private/tmp/cmm-round45-build-report.py",
+      "source_sha256": "4b78066209f6ea8bf6735c2af2aa58d55aaba1b6536136e7072c7573147356f6",
+      "target": "/private/tmp/cmm-round46-build-report.py",
+      "sha256": "a447c81fa0edeb14e7278a9e9c1935bfc000211e592f98a0a75ec531ceb87840",
+      "syntax_valid": true,
+      "remaining_delta": "--- normalized previous cmm-round45-build-report.py\n+++ cmm-round46-build-report.py\n@@ -11,7 +11,7 @@\n load = lambda n: json.loads((p / f'cmm-round46-{n}.json').read_text())\n cfg = load('helper-config')\n counts = cfg['counts']\n-final, rc, cov, init, pres, status = [load(n) for n in ['final-v2-terminal', 'review-check-v2-terminal', 'local-coverage-v2', 'initialization', 'preservation-prepublication', 'current-status']]\n+final, rc, cov, init, pres, status = [load(n) for n in ['final-terminal', 'review-check-terminal', 'local-coverage', 'initialization', 'preservation-prepublication', 'current-status']]\n assert final['exit_code'] == rc['exit_code'] == 0 and final['base'] == base\n assert len(final['commands']) == 3\n assert all(x['exit_code'] == 0 and sha(x['log']) == x['sha256'] for x in final['commands'])\n@@ -57,7 +57,7 @@\n assert any(x['type'] == 'merge_queue' and x['parameters']['merge_method'] == 'SQUASH' and x['parameters']['grouping_strategy'] == 'ALLGREEN' for x in rules)\n assert status['pin'] == (r / 'scripts/.vendored_canon_ref').read_text().strip()\n compact = {'recorded_at': now, 'observation_timestamp': status['utc'], 'raw_receipt': {'path': str(p / 'cmm-round46-current-status.json'), 'sha256': sha(p / 'cmm-round46-current-status.json')}, 'governance_pin': status['pin'], 'admission': {k: ad[k] for k in ['number', 'html_url', 'state', 'merged', 'merged_at', 'merge_commit_sha']}, 'effective_main_rules': rules, 'ruleset': {k: rs[k] for k in ['id', 'name', 'enforcement', 'bypass_actors', 'conditions', 'rules']}, 'workflows': [{k: w[k] for k in ['id', 'name', 'path', 'state', 'html_url']} for w in wf['workflows']], 'scope': 'Live read-only observation. Workflow presence does not establish credentials or fleet-wide convergence; future integration uses CLAW supported admission/synchronization.'}\n-manifest = {'recorded_at': now, 'base': base, 'branch': init['branch'], 'counts': counts, 'record_actions': cfg['record_actions'], 'records': records, 'gate_receipts': final, 'review_check_receipt': rc, 'exact_coverage_receipt': {'path': str(p / 'cmm-round46-local-coverage-v2.json'), 'sha256': sha(p / 'cmm-round46-local-coverage-v2.json'), 'counts': counts}, 'baseline': {'scope': init['baseline_scope'], 'receipt': init['baseline_receipt'], 'sha256': init['baseline_sha256']}, 'deferred_sources': [{'path': str(q.relative_to(r)), 'sha256': sha(q)} for dirname in cfg['deferred_directories'] for q in sorted((r / dirname).glob('*')) if q.suffix in ['.md', '.json']], 'corrected_review_issues': cfg['corrected_review_issues'], 'open_source_issues': cfg['open_source_issues'], 'exhausted': False}\n+manifest = {'recorded_at': now, 'base': base, 'branch': init['branch'], 'counts': counts, 'record_actions': cfg['record_actions'], 'records': records, 'gate_receipts': final, 'review_check_receipt': rc, 'exact_coverage_receipt': {'path': str(p / 'cmm-round46-local-coverage.json'), 'sha256': sha(p / 'cmm-round46-local-coverage.json'), 'counts': counts}, 'baseline': {'scope': init['baseline_scope'], 'receipt': init['baseline_receipt'], 'sha256': init['baseline_sha256']}, 'deferred_sources': [{'path': str(q.relative_to(r)), 'sha256': sha(q)} for dirname in cfg['deferred_directories'] for q in sorted((r / dirname).glob('*')) if q.suffix in ['.md', '.json']], 'corrected_review_issues': cfg['corrected_review_issues'], 'open_source_issues': cfg['open_source_issues'], 'exhausted': False}\n reviewrows = '\\n'.join(f\"| [{x['slug']}](../../{x['record']}) | {x['action']} | {x['verdict']} | [Markdown](../../{x['review_md']}) / [YAML](../../{x['review']}) |\" for x in records)\n gaterows = '\\n'.join(f\"- `{' '.join(x['command'])}`: exit 0; log SHA-256 `{x['sha256']}`.\" for x in final['commands'])\n findings = []\n@@ -72,7 +72,7 @@\n frontier = cfg['frontier_text']\n report = f'''# Round 46 scientific review and publication report\n \n-{cfg['record_summary']} The corpus grows from 221 to {counts['record_count']} records. These changes preserve material identity, source inconsistencies and laboratory limits; no criticality designation or industrial deployment is inferred from a constituent or source rhetoric.\n+{cfg['record_summary']} The corpus grows from 224 to {counts['record_count']} records. These changes preserve material identity, source inconsistencies and laboratory limits; no criticality designation or industrial deployment is inferred from a constituent or source rhetoric.\n \n Worktree: `{r}`; branch: `{init['branch']}`; trusted base: `{base}`. Generated at {now}.\n \n@@ -89,8 +89,6 @@\n ## Findings and corrections\n \n {corrections}\n-\n-The review-metadata finding retains its [initial publication observation](../../reviews/publication/20261012-round46/20261012T041301Z-independent-initial.md) and [independent resolved disposition](../../reviews/publication/20261012-round46/20261012T041600Z-independent-resolution.md). The earlier saved review remains immutable; the manifest explicitly selects its corrected successor.\n \n {chr(10).join(findings) if findings else 'No unresolved corrective finding remains in the final scientific reviews.'}\n \n"
+    },
+    {
+      "source": "/private/tmp/cmm-round45-build-package.py",
+      "source_sha256": "a0f8411dd8ff638deb85477746bb5425ffbc809d2be5cf372a32331a121ae039",
+      "target": "/private/tmp/cmm-round46-build-package.py",
+      "sha256": "e89bc243dbb676ebfc52be8384b73332e630ac12998fca9ea2bbe53c05840c6a",
+      "syntax_valid": true,
+      "remaining_delta": ""
+    },
+    {
+      "source": "/private/tmp/cmm-round45-commit.py",
+      "source_sha256": "600d003681b93aa10267b68c1939810881cd999d180bdbc4fbb76a66dd9321af",
+      "target": "/private/tmp/cmm-round46-commit.py",
+      "sha256": "2c4630ba97f0b96cacb81eaee1ec8e75909f7b8e7879829a4e3644991d316797",
+      "syntax_valid": true,
+      "remaining_delta": "--- normalized previous cmm-round45-commit.py\n+++ cmm-round46-commit.py\n@@ -4,8 +4,8 @@\n r=Path('/private/tmp/CMMMech-expansion-round46-20261012');t=Path('/private/tmp');base='94d743a1b8bb3fe595f96e88f4cdb54a4ee72375';branch='curate/cmm-expansion-round46-20261012';sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()\n def git(*a):return subprocess.check_output(['git',*a],cwd=r,text=True).strip()\n cfg=json.loads((t/'cmm-round46-helper-config.json').read_bytes());manifest=json.loads((r/cfg['manifest_path']).read_bytes());assert git('rev-parse','HEAD')==base and git('branch','--show-current')==branch and not git('diff','--cached','--name-only')\n-for n in ['final-v2-terminal','review-check-v2-terminal']:assert json.loads((t/f'cmm-round46-{n}.json').read_bytes())['exit_code']==0\n-assert json.loads((t/'cmm-round46-local-coverage-v2.json').read_bytes())['passed'];tracked_changes={'README.md'}|{'data/records/'+slug+'.yaml' for slug,action in cfg['record_actions'].items() if action=='EDIT'};assert set(git('diff','--name-only').splitlines())==tracked_changes\n+for n in ['final-terminal','review-check-terminal']:assert json.loads((t/f'cmm-round46-{n}.json').read_bytes())['exit_code']==0\n+assert json.loads((t/'cmm-round46-local-coverage.json').read_bytes())['passed'];tracked_changes={'README.md'}|{'data/records/'+slug+'.yaml' for slug,action in cfg['record_actions'].items() if action=='EDIT'};assert set(git('diff','--name-only').splitlines())==tracked_changes\n audits=list((r/cfg['publication_review_directory']).glob('*independent-final.json'));assert len(audits)==1;a=json.loads(audits[0].read_bytes());assert a['verdict']=='pass' and not a.get('unresolved_findings',[]) and a['counts']==cfg['counts'];assert all(sha(r/p)==h for p,h in a['reviewed_document_sha256'].items())\n paths=sorted(list(tracked_changes)+git('ls-files','--others','--exclude-standard').splitlines());allowed=['data/records/','history/records/','reviews/structured/','reviews/publication/20261012-round46/','research/ingests/round46','research/sources/round46'];assert all(p=='README.md' or any(p.startswith(a) for a in allowed) for p in paths);assert all((r/p).is_file() and not (r/p).is_symlink() and (r/p).suffix in ['.md','.json','.yaml'] for p in paths)\n for x in manifest['records']:\n"
+    },
+    {
+      "source": "/private/tmp/cmm-round45-publish.py",
+      "source_sha256": "0d388e975d3ba6aa912df6c61ed275e2f62e0a6ee21f98ce452ebbaac7e7a232",
+      "target": "/private/tmp/cmm-round46-publish.py",
+      "sha256": "01107403b34f9d3e597210debf0f1d8bfe3eb91a2ece4f604a5d1c69fc0303a4",
+      "syntax_valid": true,
+      "remaining_delta": ""
+    },
+    {
+      "source": "/private/tmp/cmm-round45-enqueue.py",
+      "source_sha256": "f507f2247a0140feddd41cd2d3f1641da8f3332009b69d0b20e6ecdf0cfd1e33",
+      "target": "/private/tmp/cmm-round46-enqueue.py",
+      "sha256": "810ba1bf25cb4d8a73f42adb36c9e6a189d3c35a6b157efa6bc9ab7dd193d9f3",
+      "syntax_valid": true,
+      "remaining_delta": ""
+    },
+    {
+      "source": "/private/tmp/cmm-round45-cleanup.py",
+      "source_sha256": "f5aad2aece19980c27cdaf955a9beb5a2031a6641250f40e99705cac782cb497",
+      "target": "/private/tmp/cmm-round46-cleanup.py",
+      "sha256": "7c087da414b92ab1ff2baf726a3b1578c350d2c11cdbc8bfe2415e6fe4406b5a",
+      "syntax_valid": true,
+      "remaining_delta": ""
+    },
+    {
+      "source": "/private/tmp/cmm-round45-isolated-verification.py",
+      "source_sha256": "d3e0e51622d5fd66dfb4bdc6b4d38916eafcc4da038e602e9b9c7121ff00394c",
+      "target": "/private/tmp/cmm-round46-isolated-verification.py",
+      "sha256": "e24f633e7094c7d9bca0a3bec2095014342135c144bad1a2a5abbb0e13a66649",
+      "syntax_valid": true,
+      "remaining_delta": ""
+    },
+    {
+      "source": "/private/tmp/cmm-round45-hosted-audit.py",
+      "source_sha256": "e4e8a9ff0c3cd283dbb7cc34838e95495c155bd3dfed776788927b4e02cbe046",
+      "target": "/private/tmp/cmm-round46-hosted-audit.py",
+      "sha256": "011186f534f90dbaf804ffcd7195e56c42a3c3ca90fc8f61e98e67b242c67bb0",
+      "syntax_valid": true,
+      "remaining_delta": ""
+    },
+    {
+      "source": "/private/tmp/cmm-round45-hosted-peer-readonly.py",
+      "source_sha256": "6a6e0e6cb6b5174437aaad0834f4e06536885bbbbe68286f523193fe49c98ab7",
+      "target": "/private/tmp/cmm-round46-hosted-peer-readonly.py",
+      "sha256": "9d8a7cb679f2ee01c9d6d7f8d847bce7bdd9452a9ef310c6a7e76c71272f0f30",
+      "syntax_valid": true,
+      "remaining_delta": "--- normalized previous cmm-round45-hosted-peer-readonly.py\n+++ cmm-round46-hosted-peer-readonly.py\n@@ -1,4 +1,4 @@\n-\"\"\"Read-only hosted assurance. Run only after parent reports the actual Round43 PR.\"\"\"\n+\"\"\"Read-only hosted assurance. Run only after parent reports the actual Round46 PR.\"\"\"\n from pathlib import Path\n from datetime import datetime,timezone\n from concurrent.futures import ThreadPoolExecutor\n@@ -27,12 +27,12 @@\n  return key,{'command':command,'observed_at':datetime.now(timezone.utc).isoformat(),'data':data}\n result={'started_at':started.isoformat(),'reviewer':args.reviewer,'repository':REPO,'read_only':True,'authorship':args.authorship,'findings':[],'passed':False,'verdict':'blocked'}\n try:\n- names=['commit-receipt','publication-package','pr-open','pr-review-posted','helper-config','preflight-20261012-published-terminal','final-v2-terminal','review-check-v2-terminal','local-coverage-v2']\n+ names=['commit-receipt','publication-package','pr-open','pr-review-posted','helper-config','preflight-20261012-published-terminal','final-terminal','review-check-terminal','local-coverage']\n  receipts={n:load(P/f'cmm-round46-{n}.json') for n in names}\n  c,p,opened,posted,cfg,pre,gates,rc,cov=[receipts[n] for n in names]\n  num=opened['number'];head=c['head'];tree=c['tree'];branch=c['branch'];base=c['base']\n  need(num==args.expected_pr and head==args.expected_head,'Parent-announced PR/head mismatch')\n- need(base==BASE and branch=='curate/cmm-expansion-round46-20261012','Wrong Round43 base/branch')\n+ need(base==BASE and branch=='curate/cmm-expansion-round46-20261012','Wrong Round46 base/branch')\n  need(p['repository']==REPO and p['head']==head and p['tree']==tree and p['branch']==branch and p['base']=='main','Package identity mismatch')\n  need(opened['headRefOid']==head and opened['headRefName']==branch and opened['baseRefName']=='main','Opened receipt mismatch')\n  need(git('rev-parse','HEAD').decode().strip()==head and not git('status','--porcelain=v1','--untracked-files=all'),'Local commit not exact/clean')\n"
+    },
+    {
+      "source": "/private/tmp/cmm-round45-sync-main.py",
+      "source_sha256": "970b277b1f345665cb875512fed2da2077421c91693aed90d15146557daf0b8d",
+      "target": "/private/tmp/cmm-round46-sync-main.py",
+      "sha256": "bc33b97fb3e315fb29303c053f98a4a551e08d33896a4547507b9bb4e8727661",
+      "syntax_valid": true,
+      "remaining_delta": ""
+    },
+    {
+      "source": "/private/tmp/cmm-round45-closeout.py",
+      "source_sha256": "9a6100a3b49e94ae1bb78b940c43fbe299cab45896e50f8c822e41605d51e04a",
+      "target": "/private/tmp/cmm-round46-closeout.py",
+      "sha256": "5ec41147c934b36ee77d96d94e0bc1c6659a6a7cce5ef6dd4756a2f8c8f3d1a7",
+      "syntax_valid": true,
+      "remaining_delta": ""
+    },
+    {
+      "source": "/private/tmp/cmm-round45-closeout-guards.py",
+      "source_sha256": "4e2d19e83aa714fa69a652bd10a0034eb50f4de9f988aa477ea06722dfd577da",
+      "target": "/private/tmp/cmm-round46-closeout-guards.py",
+      "sha256": "4e2d19e83aa714fa69a652bd10a0034eb50f4de9f988aa477ea06722dfd577da",
+      "syntax_valid": true,
+      "remaining_delta": ""
+    },
+    {
+      "source": "/private/tmp/cmm-round45-run-review-check-v2.py",
+      "source_sha256": "4f5e7a397e08d3b12b980de9980e239cc255cfa7ac83e59d32f540b3e785527a",
+      "target": "/private/tmp/cmm-round46-run-review-check.py",
+      "sha256": "e57bd84a785fd91cdb6fd593f138d0e7f1ba3d28ca8565aa12d730257726cd92",
+      "syntax_valid": true,
+      "remaining_delta": "--- normalized previous cmm-round45-run-review-check-v2.py\n+++ cmm-round46-run-review-check.py\n@@ -1,6 +1,6 @@\n from pathlib import Path\n from datetime import datetime,timezone\n import subprocess,json,hashlib,os\n-r=Path('/private/tmp/CMMMech-expansion-round46-20261012');t=Path('/private/tmp');cmd=['just','review-check','--base','94d743a1b8bb3fe595f96e88f4cdb54a4ee72375','--require-reviews'];log=t/'cmm-round46-review-check-v2.log';out=t/'cmm-round46-review-check-v2-terminal.json';assert not log.exists() and not out.exists();start=datetime.now(timezone.utc).isoformat()\n+r=Path('/private/tmp/CMMMech-expansion-round46-20261012');t=Path('/private/tmp');cmd=['just','review-check','--base','94d743a1b8bb3fe595f96e88f4cdb54a4ee72375','--require-reviews'];log=t/'cmm-round46-review-check.log';out=t/'cmm-round46-review-check-terminal.json';assert not log.exists() and not out.exists();start=datetime.now(timezone.utc).isoformat()\n with log.open('xb') as f:p=subprocess.run(cmd,cwd=r,env=dict(os.environ,PYTHONDONTWRITEBYTECODE='1',UV_CACHE_DIR='/private/tmp/cmmmech-uv-cache',UV_OFFLINE='1'),stdout=f,stderr=subprocess.STDOUT)\n x=dict(command=cmd,started_at=start,finished_at=datetime.now(timezone.utc).isoformat(),exit_code=p.returncode,log=str(log),sha256=hashlib.sha256(log.read_bytes()).hexdigest());out.write_text(json.dumps(x,indent=2)+'\\n');print(json.dumps(x,indent=2));raise SystemExit(p.returncode)\n"
+    },
+    {
+      "source": "/private/tmp/cmm-round45-isolated-coverage.py",
+      "source_sha256": "5891208ccae1fe5e5d7f0fd6b9c5d2ea72200664af66b657fe0d693e24d677b0",
+      "target": "/private/tmp/cmm-round46-isolated-coverage.py",
+      "sha256": "67fa71a9fb6c9e9a642e0df1c8441796b3ec17d6d2cda3f33985b5222541d0de",
+      "syntax_valid": true,
+      "remaining_delta": ""
+    },
+    {
+      "source": "/private/tmp/cmm-round45-check-preservation.py",
+      "source_sha256": "5d4d812932991d115d35ab1ac7dac8ca1d662848bcb85420ab429e8bd6391e82",
+      "target": "/private/tmp/cmm-round46-check-preservation.py",
+      "sha256": "cd9d23f8fbb98b782c21794a994674b82931cbe82899f18f8d2a8c4c7e50dd4d",
+      "syntax_valid": true,
+      "remaining_delta": ""
+    }
+  ],
+  "reviewed_input_sha256": {
+    "/private/tmp/cmm-round46-helper-port-receipt.json": "d06501d8cd72d972e53a7f42c1008d4013f23f386405dc9e21ef11cd4ecce2e3",
+    "/private/tmp/cmm-round46-root-gate-port.json": "c2c991545e4ac45ba88cd0e5bd2f334f61a2adae4f7b77ee4282451a71d74e4b",
+    "/private/tmp/cmm-round46-helper-independent-normalized-deltas.json": "d3afaebbea41b5f9cc064fb44ef326e968784ee49a295e453ec0ce23c29dd3f6",
+    "/private/tmp/cmm-round46-helper-port.diff": "1488c090bc173568bf3177ab41fee285c64109e3256dfa9c9daf83de7c0f780c",
+    "/private/tmp/cmm-round46-helper-config.json": "00bf69a133ee11810d68ce1bbcaa6f614f140bb5c0882ffcae3961a812aedfbc",
+    "/private/tmp/cmm-round46-config-finalization.json": "66875e110e08039fb48694f7074c952573b84efb68066bc88fc07bcef14f4789"
+  },
+  "config_changes": [
+    "draft_pending",
+    "final_review_overrides",
+    "review_summary"
+  ],
+  "config_counts": {
+    "record_count": 229,
+    "history_count": 272,
+    "structured_review_count": 279,
+    "review_base_count": 47,
+    "covered_records": 229
+  },
+  "count_status": "Expected final configuration, not evidence that future commit/preflight/hosted/postmerge gates have run. Actual completed corpus gate separately verifies229 records and272 histories.",
+  "corrected_review_issues": [
+    149
+  ],
+  "open_source_issues": [
+    103,
+    104,
+    120,
+    129,
+    130,
+    133,
+    134,
+    137,
+    140
+  ],
+  "assessments": [
+    {
+      "area": "port fidelity",
+      "result": "All15 source and target digests match receipts; AST parsing passes without importing/executing helper bodies. Normalized residual diffs contain only current plain receipt selectors, actual baseline224, removal of old round45 metadata-finding paragraph and stale Round43 prose normalization."
+    },
+    {
+      "area": "commit and package",
+      "result": "Exact dedicated base/branch, approved path/extension boundaries, clean index, unique positive final audit, current manifest/dossier/review hashes and whitespace gate precede commit. Package requires successful exact-head/tree isolated preflight and binds body hashes; COMMENT is explicitly local-agent assurance, not separate-account approval."
+    },
+    {
+      "area": "publish and queue",
+      "result": "Owned branch must be absent remotely, main must remain at trusted base, local bytes/HEAD must match receipt, and exact PR/body/COMMENT readback is required. Queue requires exact-head peer assurance, required validate-strict success, active SQUASH/ALLGREEN rules and no bypass actors; no administrative merge bypass."
+    },
+    {
+      "area": "cleanup and preservation",
+      "result": "Actual merged head/tree/parent and clean owned worktree precede lease-protected remote deletion and local owned-ref deletion. Only the dedicated worktree is detached. Main synchronization is fast-forward-only after fresh postmerge receipt and checks original-main hidden/ignored bytes and unrelated skill HEAD/branch/status both before and after."
+    },
+    {
+      "area": "isolated validation and coverage",
+      "result": "New clone paths must not exist; main/tag identities and exact preservation tag are pinned. Topic archive extraction is bounded/filter=data, synthetic commit parent/tree checked, topic object absence checked three times. Exact coverage includes hidden/ignored paths and followed symlinks with cycle prevention; record ID/target/current hash and base availability are checked."
+    },
+    {
+      "area": "hosted read-only checks and closeout",
+      "result": "Hosted peer/audit only read GitHub/Git, require truthful reviewer/authorship, exact hosted commit/tree/base/files and COMMENT, inspect unexpected review/issues, and separately require four actual successful runs/jobs for closeout. Closeout pure guard binds receipts/raw log bytes, then poster targets only the actual already-merged PR and verifies comment readback."
+    },
+    {
+      "area": "configuration",
+      "result": "Five CREATE targets are correct. Two explicit Ge review successors exist; actual config delta is review_summary, final_review_overrides and removing draft_pending. Only149 is a corrective closure; all nine acquisition issues stay open. Config values alone do not certify future results."
+    }
+  ],
+  "limitations": [
+    "This is a static helper/config review, not the final documentation audit or actual exact-commit/PR assurance. Generated report/package bytes and future hosted/main receipts require their planned separate checks.",
+    "No mutation-capable helper was executed. Multi-step external operations may leave partial completed side effects if later readback fails; helpers fail rather than claiming complete success, and recovery must use actual state.",
+    "No additional pure-guard regression run was needed for byte-identical closeout-guards; only static syntax and exact source identity were rechecked.",
+    "File-inventory claims are bounded to explicitly named helper/config inputs; this audit does not claim exhaustive filesystem discovery."
+  ]
+}

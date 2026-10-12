@@ -1,0 +1,74 @@
+{
+  "timestamp_utc": "2026-10-12T04:50:29.667070+00:00",
+  "reviewer": "Codex /root/round27_superalloy (GPT-6; codex)",
+  "authorship": "Reviewer authored separate laforetite record/dossier and independently reviewed roquesite. Ge records/dossier were authored by /root/round43_hardmetal; their scientific reviews by /root. This is an independent publication formatting/provenance observation, not reapproval of reviewer-authored laforetite science.",
+  "base": "94d743a1b8bb3fe595f96e88f4cdb54a4ee72375",
+  "scope": "The two saved Ge native review contents/metadata and their source context; publication formatting at exact frozen dossier bytes.",
+  "verdict": "needs_curation",
+  "reviewed_document_sha256": {
+    "research/sources/round46-ge-minerals/20261012T044233Z-source-investigation.md": "7a30e06c3545c262d214da31dc52c3b714526b82355107f8b243fcb988402848",
+    "reviews/structured/20261012T044819Z-alburnite-round46-independent/review.yaml": "4fb32397ee189656427b2ece107b5be16137b205989072f0edcce6246602f13e",
+    "reviews/structured/20261012T044827Z-zincobriartite-round46-independent/review.yaml": "e48b213319ce67b40db2f25094d8f04e42aa1d62ee8925c4dfba5f8f332c9488"
+  },
+  "scientific_record_sha256": {
+    "data/records/alburnite.yaml": "bb980057adbe887790f25c5a357824179470eba8ca1ae21caab24473c7d50c1a",
+    "data/records/zincobriartite.yaml": "b06ce6857cd85a53e1c2c11d4f414552ea9c57146b9f7d3f9e46a54718411782"
+  },
+  "findings": [
+    {
+      "finding_id": "F1",
+      "stable_key": "CMMMech.round46.ge-dossier-trailing-whitespace",
+      "severity": "minor",
+      "status": "open",
+      "path": "research/sources/round46-ge-minerals/20261012T044233Z-source-investigation.md",
+      "title": "Ge source dossier contains trailing whitespace rejected by publication diff check",
+      "evidence": {
+        "lines": [
+          {
+            "line": 3,
+            "trailing_spaces": 2
+          },
+          {
+            "line": 4,
+            "trailing_spaces": 2
+          },
+          {
+            "line": 5,
+            "trailing_spaces": 2
+          }
+        ],
+        "command": [
+          "git",
+          "diff",
+          "--no-index",
+          "--check",
+          "/dev/null",
+          "/private/tmp/CMMMech-expansion-round46-20261012/research/sources/round46-ge-minerals/20261012T044233Z-source-investigation.md"
+        ],
+        "exit_code": 3,
+        "stdout": "/private/tmp/CMMMech-expansion-round46-20261012/research/sources/round46-ge-minerals/20261012T044233Z-source-investigation.md:3: trailing whitespace.\n+UTC: 2026-10-12T04:42:33.303279+00:00  \n/private/tmp/CMMMech-expansion-round46-20261012/research/sources/round46-ge-minerals/20261012T044233Z-source-investigation.md:4: trailing whitespace.\n+Researcher: Codex (GPT-6; codex), `/root/round43_hardmetal`  \n/private/tmp/CMMMech-expansion-round46-20261012/research/sources/round46-ge-minerals/20261012T044233Z-source-investigation.md:5: trailing whitespace.\n+Worktree: `/private/tmp/CMMMech-expansion-round46-20261012`  \n",
+        "stderr": ""
+      },
+      "description": "The three Markdown metadata lines each end in two spaces. The actual read-only diff check reports all three as trailing whitespace. Both saved Ge scientific observations already pin this exact dossier hash as context, so the publication correction must also preserve their original observations and original input snapshot rather than silently rewriting provenance. The record science and native verdicts are not defective.",
+      "acceptance": [
+        "Remove only these six trailing spaces in the maintained dossier Markdown and prove all other bytes, its JSON companion, both record files and both CREATE histories unchanged.",
+        "Preserve the two initial scientific observations byte-for-byte and retain the original context snapshot with its exact hash.",
+        "Save fresh per-record native scientific observations after reviewing the current corrected context and unchanged scientific target, explicitly referring to the earlier observations; do not invent a record EDIT history for this documentation-only change.",
+        "Repeat affected structured-review/context/coverage and diff checks, then save a final publication audit resolving this exact F1 and its GitHub issue."
+      ],
+      "issue": "Coordinator will create the issue after this immutable initial observation; no issue number assigned here."
+    }
+  ],
+  "unresolved_findings": [
+    "CMMMech.round46.ge-dossier-trailing-whitespace"
+  ],
+  "limits": [
+    "No scientific record defect identified; per-record identity/evidence limits match the dossier and reviewed targets.",
+    "Joint notices summaries describe the shared search receipt; species-specific assessments remain correctly separated.",
+    "Final report/package and all-five exact coverage are separate subsequent checks."
+  ],
+  "original_context_snapshot": {
+    "path": "/private/tmp/cmm-round46-ge-dossier-initial-20261012T045029Z.md",
+    "sha256": "7a30e06c3545c262d214da31dc52c3b714526b82355107f8b243fcb988402848"
+  }
+}

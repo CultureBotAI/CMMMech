@@ -1,0 +1,334 @@
+schema_version: 1.0.0
+review_id: 20261012T044820Z-cassiterite-round46-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of cassiterite biomass electroflotation
+started_at: '2026-10-12T04:41:17Z'
+finished_at: '2026-10-12T04:48:20Z'
+reviewer:
+  identity: Codex /root/round27_packaging
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored cassiterite record/history/dossier. Reviewer authored
+    a separate roquesite record, not this target, captured native inputs before judgment,
+    independently inspected original primary pages/figures and authorities, and executed
+    named validation.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The cassiterite identity and qualified microbial-origin reagent separation
+  are supported. The actual source contradictions, inactive-biomass basis and missing
+  flotation-control/product evidence are retained. No corrective finding.
+source:
+  git_revision: 94d743a1b8bb3fe595f96e88f4cdb54a4ee72375
+  state: working_tree
+  inputs:
+  - path: data/records/cassiterite.yaml
+    sha256: 86599254ca6d4f507061c3ba8f1b6d36507824f7812d7b22067e69daeedbfd63
+    role: target
+  - path: history/records/cassiterite/2026-10-12T044022Z-codex-aeee34.yaml
+    sha256: dbefd7a1769d1c68dab57ea7162389b39d2b4322628a42d201239adaf9517527
+    role: context
+targets:
+- target_id: cmmmech:cassiterite
+  path: data/records/cassiterite.yaml
+  label: Cassiterite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cassiterite.yaml
+    role: scientific_record
+scope:
+  description: Whole new Cassiterite record and actual CREATE history; complete original2013
+    six-page study and all six figures, issuing mineral/taxon authorities, conditions,
+    controls, outcomes and scope.
+  selection: Parent-assigned independent review of a record authored by another agent.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:cassiterite
+  exclusions:
+  - target: 2012 thesis full methods/graphics and2025 mixed-ore source
+    reason: Not accepted record evidence; this review does not claim a complete review
+      of those deferred leads.
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/cassiterite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:cassiterite
+  summary: Reviewer executed with explicit round46 cwd, offline UV and no-bytecode
+    environment;1record checked,0failed. Log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- check_id: batch
+  name: Completed final cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:cassiterite
+  summary: 'Coordinator executed; reviewer read actual raw log and verified SHA256
+    8caead3980a6da1e7b4d54ea4895572c931741b48ccd353e542e8edf2b876b53. uv run --locked
+    --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 236.91s (0:03:56)
+
+    Checked 229 record(s); 0 failed.
+
+    Checked 272 history record(s); 0 error(s).'
+- check_id: nonempty
+  name: Completed final cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:cassiterite
+  summary: Coordinator executed; reviewer read actual raw log and verified SHA256
+    ff7ed8bc3fc67548605ba5d958c3f8057489701d8221b508c7670b58955b7dba. Checked 229
+    record(s); 0 failed.
+- check_id: history
+  name: Completed final cohort history
+  command: uv run --locked cmmmech validate-history --base 94d743a1b8bb3fe595f96e88f4cdb54a4ee72375
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:cassiterite
+  summary: Coordinator executed; reviewer read actual raw log and verified SHA256
+    17691e066e03358c6eabe98608db086af9b35dcc46fde40810e46ead5f061163. Checked 272
+    history record(s); 0 error(s).
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/cassiterite.yaml
+  locator: All fields of exact captured target
+  accessed_at: '2026-10-12T04:48:20Z'
+  support: supports
+  summary: Species identity, experimental feed and biomass stage are differentiated;
+    source disagreements and absence of isolated-product evidence remain explicit.
+  snapshot_sha256: 86599254ca6d4f507061c3ba8f1b6d36507824f7812d7b22067e69daeedbfd63
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1590/S0370-44672013000400016
+  locator: Complete original six-page PDF pp.507–512, original Figures1–6 (both Figure5
+    panels), Materials and methods and conclusions
+  accessed_at: '2026-10-12T04:48:20Z'
+  support: supports
+  summary: Curator-acquired official PDF independently read and all original pages
+    visually inspected. Culture harvesting/washing followed by reported sterilization
+    supports microbial-origin reagent use, without demonstrated viable metabolism.
+    Ground Brazilian feed is reported84.7% pure by XRF; the article does not establish
+    a pure phase inventory.
+  snapshot_sha256: 241742a73364bf46d53c31ae422ddfdf12ed7547f056b85816c217aa76d889d5
+- evidence_id: controls
+  kind: primary_source
+  reference: https://doi.org/10.1590/S0370-44672013000400016
+  locator: Original pp.508–511; Figures2–6 and their axes/captions
+  accessed_at: '2026-10-12T04:48:20Z'
+  support: supports
+  summary: Surface/bubble comparisons include untreated conditions. Contact-angle
+    grains differ from flotation fines, and mineral-free bubble measurements are a
+    separate assay. Figure6 starts at a nonzero biomass dose, so the endpoint does
+    not quantify advantage over a matched no-biomass flotation arm or gangue selectivity.
+  snapshot_sha256: 241742a73364bf46d53c31ae422ddfdf12ed7547f056b85816c217aa76d889d5
+- evidence_id: conflicts
+  kind: primary_source
+  reference: https://doi.org/10.1590/S0370-44672013000400016
+  locator: Both original abstracts p.507, Methods pp.508–509, Figure4 discussion p.510,
+    Figure6/results p.511 and Conclusions p.512
+  accessed_at: '2026-10-12T04:48:20Z'
+  support: supports
+  summary: Abstract pH5 versus main flotation pH3; conditioning2 versus5min; and discordant600mg/L
+    cell-count equivalents are actual source conflicts. Figure6 supports a highest
+    plotted endpoint near64.5% followed by lower higher-dose outcomes. The record
+    does not harmonize those conditions or treat cell numbers as verified viable counts.
+  snapshot_sha256: 241742a73364bf46d53c31ae422ddfdf12ed7547f056b85816c217aa76d889d5
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September2026 original PDF definitions page1 and Cassiterite row page38,
+    visually inspected
+  accessed_at: '2026-10-12T04:48:20Z'
+  support: supports
+  summary: Current formulaSnO2, grandfatheredG and original-description year1832 support
+    mineral identity. No approval number is fabricated and criticality is not inherited
+    from tin.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=37919
+  locator: Official HTML acquired by curator2026-10-12; node37919 species link and
+    Rhodococcus opacus label independently read
+  accessed_at: '2026-10-12T04:48:20Z'
+  support: supports
+  summary: The accession maps to the species, not an experimental strain accession.
+    Reviewer live web extraction was generic and API route failed; this verification
+    relies on the actual same-session official HTML, whose source receipt and bytes
+    were independently checked.
+  snapshot_sha256: 73a0d3f60bfcd0b1f1693362a55ebaa7cb280d205f2d2cc25c984e1ac3581c8c
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round46-cassiterite/20261012T044242Z-source-investigation.json
+  locator: Complete final source handoff and raw provenance inventory
+  accessed_at: '2026-10-12T04:48:20Z'
+  support: supports
+  summary: Dossier accurately scopes all original graphics and the partly inspected2012
+    thesis. All declared artifact hashes independently verified; thesis-only mixed-feed
+    outcomes are not silently imported as accepted evidence or independent replication.
+  snapshot_sha256: e8e5085c897d0899ac9395ed9b81b6a631067173851ca791e7e5e6709e2ab61f
+- evidence_id: history
+  kind: record_content
+  reference: history/records/cassiterite/2026-10-12T044022Z-codex-aeee34.yaml
+  locator: Complete CREATE sidecar and distinct inline event
+  accessed_at: '2026-10-12T04:48:20Z'
+  support: supports
+  summary: Actual codex/GPT-6/codex authorship, target, times and curation scope match.
+    Reviewer did not author record or history.
+  snapshot_sha256: dbefd7a1769d1c68dab57ea7162389b39d2b4322628a42d201239adaf9517527
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round46-cassiterite-independent/dedup.json
+  locator: Independent current/original corpus and referenced raw search,294 matching
+    lines
+  accessed_at: '2026-10-12T04:48:20Z'
+  support: supports
+  summary: Current Cassiterite owner is distinct from elemental tin and source-only/authority
+    mentions. Existing context is not duplicated as another material record.
+  snapshot_sha256: 02cb55c8c1bb937279273ebe2b1bd1d0af1e2bcb98d24e5f3271f465e65f2a4e
+  search_scope: rg --no-ignore --hidden --follow over current and original records/research/reviews/history,166
+    existing referenced raw directories from the fresh inventory and current cassiterite
+    raw directory; text-bearing extensions. Nine missing historical roots disclosed.
+    No unrelated machine trees or exhaustive binary decoding.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round46-cassiterite-independent/notices-web.json
+  locator: ExactDOI notice query, exact-title pH/conditioning query and official source/taxonomy
+    opens
+  accessed_at: '2026-10-12T04:48:20Z'
+  support: supports
+  summary: No affecting notice identified in bounded returned sets. The official Scielo
+    text corroborates primary identity and contradictions. A related2012 thesis is
+    an overlapping-source lead, not independently accepted experiment; no universal
+    notice/source-exhaustion claim.
+  snapshot_sha256: 2683eb79170e1a780a979d04e441c42ffa0e0452b22d169ea692b228c481144d
+  search_scope: 'web.run on2026-10-12: "10.1590/S0370-44672013000400016" correction
+    erratum retraction supplement; "Electroflotation of cassiterite fines" pH conditioning
+    Rhodococcus. First returned sets only, no date/domain filters or exhaustive pagination.
+    DOI open errored; official Scielo returned text and same-session original PDF
+    was independently inspected.'
+- evidence_id: inspection
+  kind: record_content
+  reference: /private/tmp/cmm-round46-cassiterite-independent/evidence.json
+  locator: Independent source/figure/authority reading and11 acquisition receipt hash
+    checks
+  accessed_at: '2026-10-12T04:48:20Z'
+  support: supports
+  summary: Original primary pages and all figures independently reviewed before judgment;
+    all acquisition hashes match. Later complete dossier artifact inventory was also
+    hash-verified.
+  snapshot_sha256: e96e567d287b161bf4acbf5453c8a5bb10eddac1cc439d063decdc6d011337a2
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round46-final-terminal.json
+  locator: Actual complete final cohort receipt and three logs
+  accessed_at: '2026-10-12T04:48:20Z'
+  support: supports
+  summary: Coordinator executed actual terminal checks; reviewer independently verified
+    raw log hashes and read their results. Offline validity does not establish scientific
+    causality.
+  snapshot_sha256: 4e2d9f922583839cb1e67c765f44ed644126bc8cd7d72691734b7a34d79e8531
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral, feed and taxon identity boundaries
+  outcome: supported
+  target_ids:
+  - cmmmech:cassiterite
+  evidence_ids:
+  - record
+  - ima
+  - taxonomy
+  - primary
+  - dedup
+  summary: SnO2 mineral identity is supported by dated IMA authority; the experimental84.7%
+    feed is not silently promoted to pure phase. Species37919 does not identify the
+    collection strain.
+- assessment_id: mechanism
+  area: evidence
+  topic: Prepared microbial-origin reagent and measured separation
+  outcome: supported
+  target_ids:
+  - cmmmech:cassiterite
+  evidence_ids:
+  - primary
+  - controls
+  summary: The supported claim is surface modification and laboratory mineral flotation
+    using post-cultivation sterilized biomass. No living-cell metabolism, specific
+    binding chemistry, tin redox or enzyme mechanism is established.
+- assessment_id: limits
+  area: scope
+  topic: Conflicts, comparisons and endpoint basis
+  outcome: supported
+  target_ids:
+  - cmmmech:cassiterite
+  evidence_ids:
+  - record
+  - conflicts
+  - controls
+  summary: The source pH/time/cell-number conflicts, different size fractions and
+    absent matched flotation/selectivity data constrain causal attribution. About64.5%
+    is a source-reported flotation endpoint, not isolated tin yield, product purity
+    or industrial deployment.
+- assessment_id: provenance
+  area: provenance
+  topic: Exact-byte independent review and completed checks
+  outcome: supported
+  target_ids:
+  - cmmmech:cassiterite
+  evidence_ids:
+  - record
+  - history
+  - dossier
+  - inspection
+  - gates
+  - notices
+  summary: Native inspect preceded assessment. The final record/history remain unchanged,
+    named and actual parent cohort checks passed, and scientific/source evidence was
+    independently read.
+findings: []
+actions: []
+limitations:
+- The source contradicts itself on flotation pH, conditioning duration and biomass-to-cell-count
+  conversion; the reviewer does not repair those values.
+- Post-cultivation sterilization is reported but no viability assay or sterilization
+  temperature is given; no active-metabolic claim follows.
+- Missing zero-biomass flotation arm, gangue-selectivity and closed tin balance prevent
+  a quantified microbial advantage, isolated-metal yield or product-grade conclusion.
+- Taxon verification used actual same-session issuing-source HTML; reviewer live extraction/API
+  limitations are disclosed. The strain accession remains unavailable.
+- Notice and dedup searches are bounded; nine unavailable referenced roots and undecoded
+  binaries are not claimed searched exhaustively.
+tags:
+- round46
+- independent
+- cassiterite
+- microbial-origin
+- separation

@@ -8,6 +8,8 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
+The catalogue currently contains 229 material records.
+
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
 | [Cobalt](data/records/cobalt.yaml) | Acidophilic consortium bioleaching of spent-battery black mass | Laboratory solubilization, not isolated cobalt product |
@@ -234,6 +236,11 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Argyrodite](data/records/argyrodite.yaml) | Dated IMA identity and natural Ezuri microscopy/microprobe context | Historical alburnite and synthetic lithium electrolytes remain distinct; no recovery claim |
 | [Briartite](data/records/briartite.yaml) | Current IMA identity and original natural-mineral observations | Historical Fe/Zn scope and conflicting assay labels retained; zincobriartite is a separate species |
 | [Theisen sludge](data/records/theisen-sludge.yaml) | Historical scrubber-residue identity and sampled-feed analytical context | Synthetic membrane feeds and reused bioleaching evidence remain separate; mechanism gap remains open |
+| [Alburnite](data/records/alburnite.yaml) | Current IMA identity, original approval and qualified natural-occurrence evidence | Arsenic-bearing occurrence remains unresolved; unavailable full-description detail is deferred |
+| [Cassiterite](data/records/cassiterite.yaml) | Laboratory electroflotation using prepared *Rhodococcus opacus* biomass | Post-cultivation sterilization and source condition conflicts; no matched zero-biomass flotation or isolated tin yield |
+| [Laforêtite](data/records/laforetite.yaml) | Current IMA identity and original natural-inclusion chemistry and diffraction | Sparse natural sampling and multiphase synthetic comparator remain distinct; no microbial mechanism |
+| [Roquesite](data/records/roquesite.yaml) | Current IMA identity and original natural-inclusion analyses | Natural material and synthetic CuInS2 references remain distinct; no extraction or recovery claim |
+| [Zincobriartite](data/records/zincobriartite.yaml) | Current IMA identity and original approval announcement | Full description remains unpublished in the dated CNMNC notice; historical briartite is not automatically reassigned |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -285,7 +292,9 @@ edition; none assert timeless status or industrial process deployment. See the
 [forty-second expansion reviews](research/ingests/round42-20261012-publication.md),
 [forty-third expansion reviews](research/ingests/round43-20261012-publication.md),
 [forty-fourth expansion reviews](research/ingests/round44-20261012-publication.md),
-[remaining ingest priorities](research/ingests/round44-frontier-20261012.md), and
+[forty-fifth expansion reviews](research/ingests/round45-20261012-publication.md),
+[forty-sixth expansion reviews](research/ingests/round46-20261012-publication.md),
+[remaining ingest priorities](research/ingests/round46-frontier-20261012.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 
