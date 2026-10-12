@@ -1,0 +1,358 @@
+schema_version: 1.0.0
+review_id: 20261012T060755Z-zircon-round48-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of zircon
+started_at: '2026-10-12T06:03:40.058003Z'
+finished_at: '2026-10-12T06:07:55Z'
+reviewer:
+  identity: Codex /root/round43_hardmetal
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Curator /root authored this record/history/dossier. Reviewer
+    authored separate stannite and kesterite records/dossier in round48, but did not
+    author or edit this target or its source dossier. Native inspect captured target
+    and context before judgment; original evidence and graphics were independently
+    read.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Current zircon mineral identity and the narrowly attributed natural-crystal
+  structural evidence are supported. Complete original pages and Tables1–4 were independently
+  inspected. No corrective finding; no microbial or recovery mechanism has been inferred.
+source:
+  git_revision: 9b397b1f215381208c3381b175b3da8b6fe31399
+  state: working_tree
+  inputs:
+  - path: data/records/zircon.yaml
+    sha256: 6ac2ca98d3a95cfe0d1ae11f8d8d6c5e9e771512e1b485a53a55abdc949816e5
+    role: target
+  - path: history/records/zircon/2026-10-12T055813Z-codex-ee7ded.yaml
+    sha256: 3494f69933fbffcdc74627938373bad3edcbea31fba50924a6efefde5a4bb345
+    role: context
+  - path: research/sources/round48-zirconium/20261012T055936Z-source-investigation.json
+    sha256: f79b3dc21410effe934a776b24396e6f92fd5e2598d5a66ffb009b4afa3d6f59
+    role: context
+  - path: research/sources/round48-zirconium/20261012T055936Z-source-investigation.md
+    sha256: a60c9a98e80bf9f7f053385b4fbdd5bb84d37340324808ba354e6cd5633f52a2
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:zircon
+  path: data/records/zircon.yaml
+  label: Zircon
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/zircon.yaml
+    role: maintained
+scope:
+  description: All frozen zircon fields, CREATE history and both dossier formats;
+    complete six-page original/allfour tables, current mineral authority and bounded
+    notice/dedup searches.
+  selection: Assigned independent peer review of exact frozen maintained owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:zircon
+  exclusions:
+  - target: Unavailable raw measurements, deferred resource/organism studies and broader
+      unacquired literature
+    reason: No new inference, dataset reanalysis or independent replication claimed
+      beyond cited complete originals.
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/zircon.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:zircon
+  summary: Reviewer executed in explicit round48 worktree. Checked 1 record(s); 0
+    failed. LogSHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- check_id: batch
+  name: Completed cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:zircon
+  summary: 'Parent executed; reviewer independently hash-verified receipt/log /private/tmp/cmm-round48-final-batch.log
+    SHA256 41150421ddd753d0cecf6d7a22bebd5a34d52f11b309beb820523a57d1624039. uv run
+    --locked --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 175.55s (0:02:55)
+
+    Checked 236 record(s); 0 failed.
+
+    Checked 279 history record(s); 0 error(s).'
+- check_id: nonempty
+  name: Completed cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:zircon
+  summary: Parent executed; reviewer independently hash-verified receipt/log /private/tmp/cmm-round48-final-nonempty.log
+    SHA256 ed2bc5cf4c32744127edd92734e33277402fc4a6990da56ff6c309c0c4e7673e. Checked
+    236 record(s); 0 failed.
+- check_id: history
+  name: Completed cohort history
+  command: uv run --locked cmmmech validate-history --base 9b397b1f215381208c3381b175b3da8b6fe31399
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:zircon
+  summary: Parent executed; reviewer independently hash-verified receipt/log /private/tmp/cmm-round48-final-history.log
+    SHA256 885e537286de29f10eb43fd520a420768782950c80808f190df3c2dd01832122. Checked
+    279 history record(s); 0 error(s).
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/zircon.yaml
+  locator: All fields of native-inspected frozen target
+  accessed_at: '2026-10-12T06:07:55Z'
+  support: supports
+  summary: Peer-authored maintained record independently assessed; reviewer did not
+    edit it.
+  snapshot_sha256: 6ac2ca98d3a95cfe0d1ae11f8d8d6c5e9e771512e1b485a53a55abdc949816e5
+- evidence_id: history
+  kind: record_content
+  reference: history/records/zircon/2026-10-12T055813Z-codex-ee7ded.yaml
+  locator: Canonical CREATE target, actor, event, issue references and timestamp;
+    separate inline provenance
+  accessed_at: '2026-10-12T06:07:55Z'
+  support: supports
+  summary: Actual codex/GPT-6/codex creation is consistent with this new owner and
+    does not claim independent scientific acceptance.
+  snapshot_sha256: 3494f69933fbffcdc74627938373bad3edcbea31fba50924a6efefde5a4bb345
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round48-zirconium/20261012T055936Z-source-investigation.json
+  locator: Entire paired JSON and Markdown, explicitly captured in native inspect
+  accessed_at: '2026-10-12T06:07:55Z'
+  support: supports
+  summary: Acquisition successes, failures, deferred claims and source hashes independently
+    checked. Every artifact path/hash binding in the JSON was verified; duplicate
+    bindings are counted separately in the proof, not as extra artifacts.
+  snapshot_sha256: f79b3dc21410effe934a776b24396e6f92fd5e2598d5a66ffb009b4afa3d6f59
+- evidence_id: binding
+  kind: validation
+  reference: /private/tmp/cmm-round48-independent/source-check.json
+  locator: Independent target/context hashes, source artifact bindings and named validations
+  accessed_at: '2026-10-12T06:07:55Z'
+  support: supports
+  summary: Each named command executed by this reviewer returned one record checked,
+    zero failures; raw hash bindings and exact captured input bytes matched.
+  snapshot_sha256: 77d88310556e8492c3d338520312183e9b3350eda4ad30fcd6283e0106da3be8
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round48-independent/dedup-receipt.json
+  locator: Independent exact identity/DOI/title/sequence searches across current and
+    original scientific directories and referenced raw roots
+  accessed_at: '2026-10-12T06:07:55Z'
+  support: supports
+  summary: The exact maintained owner is unique in this search; related elements/products
+    and deferred experiments remain separate.
+  snapshot_sha256: 0fcafcab7ec248ff304d1364dd00d90b4c3f4eb434e3a82287873507ca3a759f
+  search_scope: rg --no-ignore --hidden --follow across round48 and original data/records,research,reviews,history;
+    cycle-aware discovery of177 existing referenced raw/research/evidence roots from3720textual
+    metadata files, with nine missing cited roots listed. Exact rutile/zircon IDs,
+    ncomms1768,HQ603786,Hazen/Finger1979 and original zircon title terms; all searches
+    terminal0. Text extensions only; no global or unextracted-binary absence claim.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round48-independent/web-notices.json
+  locator: First returned sets from four independent exact DOI/title/identifier queries
+    on2026-10-12
+  accessed_at: '2026-10-12T06:07:55Z'
+  support: supports
+  summary: No applicable correction/retraction identified within returned results.
+    A newer2025zircon structural paper appeared as a lead, not a reason to treat the1979
+    pressure bounds as current universal maxima or to import unreviewed data.
+  snapshot_sha256: 07d05f5d3d8e880b2e37e3779c1262e66608b91a82c27660de006c0b0bb763c0
+  search_scope: 'web search first relevance-ranked result sets without pagination/date/domain
+    filters: exact10.1038/ncomms1768 with correction erratum retraction; Growth of
+    non-phototrophic microorganisms with criticism control; Crystal structure and
+    compressibility of zircon at high pressure with correction erratum; HQ603786.1
+    Acidithiobacillus. Publisher HTML/metadata and complete originals also inspected.
+    No exhaustive notices-database or citation-crawl claim.'
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round48-final-terminal.json
+  locator: Completed terminal receipt and all three hash-verified command logs
+  accessed_at: '2026-10-12T06:07:55Z'
+  support: supports
+  summary: Actual cohort just check, nonempty validation and trusted-base history
+    validation passed. Captured target/context bytes remain unchanged.
+  snapshot_sha256: 720239d00b63ba44ee95474c1f3ad662a26a88edf01f1dfac2bd43ed0c223fbf
+- evidence_id: ima
+  kind: database
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Fresh September2026 PDF page242 Zircon row visually inspected; shared edition
+    definitions/terms pages1–2 inspected in this round
+  accessed_at: '2026-10-12T06:07:55Z'
+  support: supports
+  summary: Zr(SiO4),grandfatheredG,historicalyear1789,SriLanka. The historical locality
+    is distinct from the SouthAfrican studied specimen; no approval accession or criticality
+    designation invented.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: primary
+  kind: primary_source
+  reference: https://msaweb.org/AmMin/AM64/AM64_196.pdf
+  locator: Complete six-page original printed196–201, all pages/Tables1–4 visually
+    inspected and complete extracted text read
+  accessed_at: '2026-10-12T06:07:55Z'
+  support: supports
+  summary: Hazen and Finger1979 examined two fragments of one nonmetamict gem-quality
+    natural crystal with pressure-dependent single-crystal diffraction. The structural
+    identity and bounded specimen scope match the record.
+  snapshot_sha256: 27dbe36375eeb1e4c728349be02fdc07e367c165d90582396688498a5318f107
+- evidence_id: specimen
+  kind: primary_source
+  reference: /private/tmp/cmm-round48-zirconium-research/raw/hazen1979-p2.png
+  locator: 'Printed197: specimen description, diamond-cell methods, Table1'
+  accessed_at: '2026-10-12T06:07:55Z'
+  support: supports
+  summary: Finsch Pipe nearKimberley;1.2wt%HfO2 and26ppmU are reported specimen values.
+    Two fragments share one parentcrystal. Maximum48.1kbar is an observed pressure,
+    while later structural-transition arguments are predictions/references.
+  snapshot_sha256: 5a848b67e61f9fccd0241bb35e3054132dab73a60124074cb5e0fc761b02412e
+- evidence_id: structure
+  kind: primary_source
+  reference: /private/tmp/cmm-round48-zirconium-research/raw/hazen1979-p3.png
+  locator: 'Printed198: space group andZ, Table2, footnote; Tables3–4 on199–200 and
+    discussion201 also inspected'
+  accessed_at: '2026-10-12T06:07:55Z'
+  support: supports
+  summary: I41/amd andZ4 are explicitly supported. Tabulated refinement uncertainties
+    are retained in source; requested observed/calculated structure factors were not
+    obtained, so no independent re-refinement is claimed. Different equation-of-state
+    compressibilities are not treated as contradictory measured yields.
+  snapshot_sha256: a1ca5e7b2fe6a699711da13ca543679f4b6eaaf6d6ef561c3cb3920361f80c5f
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Natural zircon species rather than elemental or resource identity
+  outcome: supported
+  target_ids:
+  - cmmmech:zircon
+  evidence_ids:
+  - ima
+  - primary
+  - dedup
+  summary: Current zircon identity is supported independently of source specimen chemistry.
+    Zirconium, zirconia, zircon-bearing sand/concentrates and other ZrSiO4polymorphs
+    remain distinct; no constituent-derived criticality.
+- assessment_id: structural
+  area: evidence
+  topic: Complete original supports narrow identity and specimen context
+  outcome: supported
+  target_ids:
+  - cmmmech:zircon
+  evidence_ids:
+  - primary
+  - specimen
+  - structure
+  summary: The record keeps data from this crystal separate from extrapolated transformations
+    and other studies. Missing structure factors do not undermine the original reported
+    identity but prevent independent raw-data refinement.
+  dimensions:
+  - name: specimen
+    value: Two fragments of one natural nonmetamict gem-quality FinschPipe crystal
+    definition: One geological specimen; not independent occurrences or universally
+      pure zircon
+    evidence_ids:
+    - specimen
+  - name: identity_evidence
+    value: Single-crystal diffraction; tetragonalI41/amd,Z4; observedpressuresto48.1kbar
+    definition: Supported characterization without converting high-pressure predictions
+      to observed transformations
+    evidence_ids:
+    - primary
+    - structure
+  - name: composition_scope
+    value: Source specimen1.2wt%HfO2 and26ppmU
+    definition: Reported specimen values, not globalmineralgrade or extractionyield
+    evidence_ids:
+    - specimen
+  - name: mechanism_criticality
+    value: No microbialmechanism, recovery,deployment or criticalityclaim
+    definition: Identity-only scope requires no inferredorganism/biomass or jurisdiction
+      designation
+    evidence_ids:
+    - record
+    - primary
+    - ima
+- assessment_id: scope
+  area: scope
+  topic: Deferred microbial resource evidence remains unaccepted
+  outcome: supported
+  target_ids:
+  - cmmmech:zircon
+  evidence_ids:
+  - record
+  - dossier
+  - primary
+  summary: The record makes no microbial claim or genericzircon-sand grade. Bansal2007
+    and Hedrich2023 are distinct source-discovery leads; inaccessible graphics/SI
+    and incomplete fulltext are not substituted with abstract measurements.
+- assessment_id: provenance
+  area: provenance
+  topic: Current authority, full original and immutable history
+  outcome: supported
+  target_ids:
+  - cmmmech:zircon
+  evidence_ids:
+  - history
+  - dossier
+  - binding
+  - notices
+  - gates
+  summary: All captured inputs and source artifacts match and actual required gates
+    pass. A later2025structuralstudy was only discovered in notice-search results;
+    no extra claim about current maximum pressure or universal structural stability
+    is made.
+findings: []
+actions: []
+limitations:
+- Two fragments are one geological crystal, not independent occurrences; specimencomposition
+  is not resourcegrade.
+- Observed/calculated structure factors offered by the authors were not acquired;
+  no raw diffraction re-refinement or modern structural revision assessment claimed.
+- Unreviewed2025structurallead and incomplete microbial zircon-sand/concentrate originals
+  are outside the accepted scope.
+- Bounded exact-ID/title/notice searches are not proof that no contrary literature
+  or correction exists.
+- Hidden/ignored and relevant followed roots were searched, but nine cited roots were
+  missing and unextracted binaries/unrelated machine paths were outside scope.
+notes:
+- No record correction, new history event, Git/GitHub or governance mutation by reviewer.
+  Shared actual final cohort logs support checks; they do not prove scientific truth.
+- Originals/render files remain outsideGit. Review capture covers both dossierMarkdown
+  andJSON and linked history explicitly.
+tags:
+- round48
+- independent
+- scientific
+- zircon

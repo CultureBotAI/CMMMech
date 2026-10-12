@@ -8,7 +8,7 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 231 material records.
+The catalogue currently contains 236 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
@@ -243,6 +243,11 @@ The catalogue currently contains 231 material records.
 | [Zincobriartite](data/records/zincobriartite.yaml) | Current IMA identity and original approval announcement | Full description remains unpublished in the dated CNMNC notice; historical briartite is not automatically reassigned |
 | [Dzhalindite](data/records/dzhalindite.yaml) | Dated IMA identity and original natural-occurrence microscopy and composition | Failed diffraction, unresolved iron speciation and tentative hypogene origin; no microbial mechanism |
 | [Cassiterite-polymetallic sulfide ore](data/records/cassiterite-polymetallic-sulfide-ore.yaml) | Laboratory culture-associated sulfide alteration and iron mobilization in mixed geological ore | Inconsistent composition tables and iron-based proxy; no verified sulfur balance, recovered tin yield or industrial deployment |
+| [Zircon](data/records/zircon.yaml) | Dated IMA identity and original natural-crystal diffraction | One crystal and measured pressure bounds; zircon-sand microbial studies remain deferred |
+| [Rutile](data/records/rutile.yaml) | Natural-mineral-assisted photocatalytic and microbial iron cycling | Supplied iron and electron donor, with control limitations; no titanium recovery |
+| [Stannite](data/records/stannite.yaml) | Natural mineral identity and qualified historical microbial leaching assays | Synthetic and natural feeds remain distinct; source condition and concentration ambiguities retained |
+| [Kësterite](data/records/kesterite.yaml) | Natural mineral characterization and synthetic-phase microbial assay | Phase identity and missing matched sterile comparison limit attribution; no recovered tin product |
+| [Tennantite-(In)](data/records/tennantite-in.yaml) | Approved mineral identity and complete natural-specimen characterization | Reused occurrence, calculated properties and source discrepancies; no microbial mechanism |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -297,7 +302,9 @@ edition; none assert timeless status or industrial process deployment. See the
 [forty-fifth expansion reviews](research/ingests/round45-20261012-publication.md),
 [forty-sixth expansion reviews](research/ingests/round46-20261012-publication.md),
 [forty-seventh expansion reviews](research/ingests/round47-20261012-publication.md),
-[remaining ingest priorities](research/ingests/round47-frontier-20261012.md), and
+[forty-eighth expansion reviews](research/ingests/round48-20261012-publication.md),
+[Pages integration and refreshed validation](research/ingests/round48-20261012-integration.md),
+[remaining ingest priorities](research/ingests/round48-frontier-20261012.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

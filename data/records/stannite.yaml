@@ -1,0 +1,135 @@
+id: cmmmech:stannite
+name: Stannite
+material_kind: mineral
+description: >-
+  Stannite is the mineral species Cu2FeSnS4, recorded as grandfathered
+  (G) with original-description year 1832 in the September 2026 IMA-CNMNC
+  list. That year is not an IMA approval identifier. It is distinct from
+  elemental tin, tin commodities, mixed mine wastes and ferrokësterite,
+  which shares the ideal formula but has a separate species identity.
+  Černý and colleagues (2001) characterized natural zincian stannite and
+  ferroan kësterite from four Peerless pegmatite nodules using electron
+  microprobe analyses and powder-diffraction unit-cell refinement. They
+  explicitly named the samples by composition; their work does not refine
+  cation ordering or establish every specimen's space group. Haase and
+  colleagues (2022) independently identified stannite by selected-area
+  electron diffraction in selected natural grains from two Czech mine-waste
+  sites. Their weathering textures and compositional series do not establish
+  microbial causation or a recovery process. The laboratory leaching evidence
+  below concerns separately prepared synthetic material and one historically
+  identified Malaysian natural sample. No criticality designation is
+  inherited from tin, copper or zinc.
+sources:
+  - id: ima_2026_09
+    title: >-
+      IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 204,
+      Stannite row (Cu2FeSnS4, G, 1832, UK); page 71, separate Ferrokësterite
+      row; page 1 field definitions and page 2 distribution terms.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-12'
+  - id: cerny_2001
+    title: >-
+      Černý P, Masau M, Ercit TS, Chapman R and Chackowsky LE (2001).
+      Stannite and kesterite from the Peerless pegmatite, Black Hills,
+      South Dakota, USA. Journal of the Czech Geological Society 46(1-2),
+      original printed pages 27-33; the current publisher landing page
+      instead indexes 27-34. Complete seven-page original inspected,
+      including Figures 1-4 and Tables 1-3; methods and compositions on
+      page 28 and composition-based naming limitation on page 29.
+    url: https://www.jgeosci.org/content/JCGS2001_1-2__cerny2.pdf
+    accessed_on: '2026-10-12'
+  - id: haase_2022
+    title: >-
+      Haase P, Kiefer S, Pollok K, Drahota P and Majzlan J (2022).
+      Weathering of stannite-kësterite [Cu2(Fe,Zn)SnS4] and the environmental
+      mobility of the released elements. European Journal of Mineralogy
+      34, 493-506. DOI 10.5194/ejm-34-493-2022. Complete original fourteen
+      pages, Figures 1-8 and Tables 1-4 inspected; Figures 6b and 8b provide
+      the selected stannite diffraction identifications. Supplementary
+      Tables S1-S3 were acquired and inventoried separately; no cells are
+      imported here. The article's historical ferrokësterite formula is
+      not substituted for current IMA nomenclature.
+    url: https://doi.org/10.5194/ejm-34-493-2022
+    accessed_on: '2026-10-12'
+  - id: teh_1979
+    title: >-
+      Teh GH (1979). Recovery of tin by geomicrobiological techniques.
+      Warta Geologi 5(6), 85-91, November-December 1979. Official society
+      issue PDF, article on PDF pages 3-9; complete original article and
+      Figures 1-3 inspected. Experimental and Results text on printed
+      pages 85-87; bacterial assay Figure 1 on page 89. No DOI verified.
+    url: https://gsm.org.my/wp-content/uploads/gsm_file_2/702001-101558-PDF.pdf
+    accessed_on: '2026-10-12'
+  - id: ncbi_ferrooxidans
+    title: >-
+      NCBI Taxonomy 920, Acidithiobacillus ferrooxidans, with historical
+      homotypic synonym Thiobacillus ferrooxidans. Species-name mapping
+      only; it does not identify or genomically authenticate the historical
+      Ranstad experimental strain.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
+    accessed_on: '2026-10-12'
+mechanisms:
+  - id: teh_1979_ferrooxidans_leaching
+    name: Laboratory tin solubilization from stannite in an iron-oxidizing bacterial culture
+    process: bioleaching
+    description: >-
+      Teh reports dissolved tin during inoculated laboratory leaching of
+      synthetic stannite and a natural stannite sample. An iron-oxidizing
+      culture is consistent with ferric-ion-mediated sulfide attack,
+      but the experiment does not resolve direct cell attack from indirect
+      solution chemistry, individual reaction steps, or tin redox changes.
+      The reported soluble fraction is not an isolated tin product.
+    context: >-
+      The culture was described as a pure strain of Thiobacillus ferrooxidans
+      from Kambrischer Alaunschiefer, Ranstad, Sweden, maintained in 9K
+      medium. No strain accession, molecular identification, inoculum
+      density, assay volume, aeration, replication or uncertainty is given.
+      NCBITaxon:920 maps the historical species name only. Synthetic
+      stannite was prepared in evacuated sealed silica tubes and reportedly
+      verified by X-ray diffraction; no pattern or quantitative purity assay
+      is supplied. The separate natural sample came from Hock Leong Mine,
+      Ampang, Selangor, Malaysia; modern phase reidentification is absent.
+      Figure 1 follows 35 days at 32 degrees C, particles below 0.16 mm
+      and 0.5% pulp density. Results prose states initial pH 1.5, whereas
+      Figures 1-2 state pH 2.5; this conflict remains unresolved. The stated
+      0.1% optimum pulp density belongs to a separate optimization claim,
+      not this assay. Ferrous iron was needed in the nutrient medium,
+      especially for iron-poor feeds, but its assay concentration is not
+      specified. Figure 1 includes a synthetic-stannite sterile comparator,
+      but no separate matched sterile natural-stannite arm or matched pH
+      trajectory. Separate autoclaved organic-acid tests used different
+      reagents, pulp density and pH; they do not demonstrate biological
+      production of the organic acids or a matched bacterial comparison.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+    evidence:
+      - source_ref: teh_1979
+        supports: partial
+        explanation: >-
+          Printed pages 85-87 and Figure 1 report tin solubilization measured
+          by atomic absorption and confirmed colorimetrically. The Results
+          report 54.45% Sn extracted from synthetic stannite and 31.30%
+          from the separate natural sample; these are source-attributed
+          percentages, not independently established mass balances or product
+          yields. Figure 1 shows a lower synthetic-stannite sterile trace,
+          supporting an inoculation-associated difference for that material
+          only. The graph's printed concentration scale, labelled tin
+          concentration (x1000 ppm), is not reconciled with the feed loading;
+          no concentrations are digitized or converted. Missing replication,
+          unequal material properties, incomplete controls and contradictory
+          pH statements limit the strength and reproducibility of the
+          microbial attribution. No recovered-product purity, continuous
+          process or industrial deployment was demonstrated.
+curation_history:
+  - timestamp: '2026-10-12T06:00:03Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Added IMA-grounded stannite identity, qualified natural-specimen
+      evidence and the complete 1979 bacterial-leaching study. Preserved
+      synthetic versus natural arms, historical strain identification,
+      pH and graph-scale conflicts, limited controls and non-product yields.
+history_refs:
+  - history/records/stannite/2026-10-12T060009Z-codex-9ad869.yaml

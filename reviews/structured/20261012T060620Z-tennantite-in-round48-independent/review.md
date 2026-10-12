@@ -1,0 +1,390 @@
+# Independent review of Tennantite-(In) mineral identity and specimen evidence
+
+- Review: 20261012T060620Z-tennantite-in-round48-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-12T06:02:44.178843Z
+- Finished UTC: 2026-10-12T06:06:20.299054Z
+- Reviewer: Codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The exact mineral identity and qualified natural-specimen context are supported. Reused material, inferred valence/formation, calculated properties and source discrepancies remain explicit. No corrective finding in the assessed scope.
+
+## Scope And Provenance
+
+All fields of new mineral record, history and paired dossier; primary methods/results, all original figures/tables and relevant CIF/workbook evidence.
+
+Selection: Independent assignment of another curator’s frozen owner.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9b397b1f215381208c3381b175b3da8b6fe31399.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:tennantite-in | data/records/tennantite-in.yaml | maintained | Tennantite-(In) |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named record validation | passed | True | cmmmech:tennantite-in | Executed by the independent reviewer in the round48 worktree: one record checked, zero failures. Log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e |
+| Completed cohort batch | passed | True | cmmmech:tennantite-in | Coordinator-executed actual terminal result independently bound to raw log SHA256 41150421ddd753d0cecf6d7a22bebd5a34d52f11b309beb820523a57d1624039. pts/check.py<br>All checks passed!<br>........................................................................ [ 23%]<br>........................................................................ [ 46%]<br>........................................................................ [ 69%]<br>....................................................sss................. [ 92%]<br>.......................                                                  [100%]<br>308 passed, 3 skipped in 175.55s (0:02:55)<br>Checked 236 record(s); 0 failed.<br>Checked 279 history record(s); 0 error(s). |
+| Completed cohort nonempty | passed | True | cmmmech:tennantite-in | Coordinator-executed actual terminal result independently bound to raw log SHA256 ed2bc5cf4c32744127edd92734e33277402fc4a6990da56ff6c309c0c4e7673e. Checked 236 record(s); 0 failed. |
+| Completed cohort history | passed | True | cmmmech:tennantite-in | Coordinator-executed actual terminal result independently bound to raw log SHA256 885e537286de29f10eb43fd520a420768782950c80808f190df3c2dd01832122. Checked 279 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Exact mineral owner and authority
+
+identity: supported. Targets: cmmmech:tennantite-in.
+
+Current authority and natural single-crystal evidence support a distinct mineral owner. The entire group, element and ore are not assigned the species identifier.
+
+### Natural specimen, original graphics and supplements
+
+evidence: supported. Targets: cmmmech:tennantite-in.
+
+Primary and original supplement evidence supports the retained description. Selected analytical spots, model occupancies and calculated properties are explicitly scoped; uncertainty inconsistencies are preserved.
+
+### Causal and deployment limits
+
+scope: supported. Targets: cmmmech:tennantite-in.
+
+Formal valence and formation sequence remain interpretations. Sample reuse is explicit. No microbial, recovered-product, industrial or inherited criticality claim is added.
+
+### Independent exact-state assessment
+
+provenance: supported. Targets: cmmmech:tennantite-in.
+
+Native inspection preceded judgment and captured exactly record, CREATE history, both dossiers and schema. All remain unchanged; named and completed cohort checks passed.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/tennantite-in.yaml; Entire exact frozen record | supports | Identity, material boundaries, source qualifications and missing microbial/criticality claims examined against the original. |
+| primary | https://doi.org/10.1180/mgm.2025.10140; Pisa accepted preproof: pages1–10 methods/results/discussion; all nine tables and five original figures on pages16–24 personally viewed | supports | Natural grain association, sample reuse, seven selected spots within86 and single-crystal refinement support the qualified mineral record. Table3 uncertainty differs from abstract; calculated powder/density, unmeasured hardness, indirect valence and proposed geological formation are retained as limitations. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September2026 page214 original row personally viewed; field definitions and terms pages1–2 | supports | IMA:2023-011, Tennantite-(In), ideal Cu6(Cu5In)As4S13 and approved status match. Species is distinct from its element, mineral group and mixed ore. |
+| cif | https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0026461X25101400/resource/name/S0026461X25101400sup001.cif; Original chemical, cell, refinement, occupancy and geometry metadata | supports | Natural Pefka source and model assignment atM(1) agree. Analytical, scattering-model and ideal formulas differ and are not collapsed. No independent refinement or valence-sensitive measurement claimed. |
+| workbook | https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0026461X25101400/resource/name/S0026461X25101400sup002.xlsx; Both original workbook XML sheets; all PfV22G specimen rows and selected Pb/As/In/Cu fields independently parsed | supports | Exactly7 selected and79 additional rows share specimen label PfV22G. Independent sampleSD calculation yields Pb0.39274 andAs2.21704, agreeing with Table3 rather than abstract. These checks verify reported source contradictions, not a new recovery metric. |
+| provenance | research/sources/round48-indium-minerals/20261012T060215Z-source-investigation.json; Paired dossier, CREATE sidecar, native inspect and54 listed raw artifact hashes | supports | All54 raw hashes and allfive native input hashes verified. Curator access limits, one reused specimen, pending scientific review at handoff time and source dates are coherent. |
+| dedup | /private/tmp/cmm-round48-tennantite-review-audit-v2.json; Independent current/original corpus and156 referenced raw-root searches | supports | Hits concern this new owner/dossier/history and prior IMA list rows. No other curated owner of this species or accepted same-DOI experiment identified within this bounded search. |
+| notices | /private/tmp/cmm-round48-tennantite-review-web.json; Independent live exact-DOI notice query and exact-name/IMA query; repository landing opened | supports | Returned results corroborate official nomenclature/publication routes and no affecting notice surfaced. No exhaustive absence claim; final typeset original and prior2022 full paper not reassessed. |
+| gates | /private/tmp/cmm-round48-final-terminal.json; Actual completed cohort receipts and raw logs | supports | Batch, nonempty corpus and append-only history checks passed; source truth assessed separately. |
+
+## Limits And Additional Notes
+
+- Complete accepted preproof inspected; final typeset version not inspected.
+- One previously studied specimen and zoned chemistry are not independent occurrence replication.
+- Formal oxidation state, minorPb occupancy and geological sequence remain indirect interpretations.
+- Source discrepancies are retained; this review does not resolve the original publication errors.
+- Bounded notice/dedup searches omit inaccessible roots and unextracted binaries.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261012T060620Z-tennantite-in-round48-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent review of Tennantite-(In) mineral identity and specimen evidence
+started_at: '2026-10-12T06:02:44.178843Z'
+finished_at: '2026-10-12T06:06:20.299054Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Record, history and source dossier authored by /root/round27_superalloy.
+    Root curated the separate zircon record, captured native inputs before judgment,
+    personally checked this primary evidence and original graphics, independently
+    parsed workbook rows and did not author this target.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The exact mineral identity and qualified natural-specimen context are supported.
+  Reused material, inferred valence/formation, calculated properties and source discrepancies
+  remain explicit. No corrective finding in the assessed scope.
+source:
+  git_revision: 9b397b1f215381208c3381b175b3da8b6fe31399
+  state: working_tree
+  inputs:
+  - path: data/records/tennantite-in.yaml
+    sha256: c768abfee1cea31682d06c0afeaa48b6d72219761de566640737f01b8c873ecf
+    role: target
+  - path: history/records/tennantite-in/2026-10-12T060025Z-codex-1a1417.yaml
+    sha256: d7e78cc785a7cab5bce058d457fc97a9ee51be3e2490eeac8603e335aa76f616
+    role: context
+  - path: research/sources/round48-indium-minerals/20261012T060215Z-source-investigation.json
+    sha256: bcd36b57c73864b7bf2dc0ad063a48c01c19f3a712a0fdb2f2b6bd350d083b6b
+    role: context
+  - path: research/sources/round48-indium-minerals/20261012T060215Z-source-investigation.md
+    sha256: 14fa589cd980bd049a3f5c9a856c9616f1d59d8e4d81d3babb9e8372dce44c4d
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:tennantite-in
+  path: data/records/tennantite-in.yaml
+  label: Tennantite-(In)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/tennantite-in.yaml
+    role: scientific_record
+scope:
+  description: All fields of new mineral record, history and paired dossier; primary
+    methods/results, all original figures/tables and relevant CIF/workbook evidence.
+  selection: Independent assignment of another curator’s frozen owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:tennantite-in
+  exclusions:
+  - target: Final typeset PDF, earlier2022 full study and independent raw diffraction
+      refinement
+    reason: Not required for retained narrow accepted-preproof claims; access/version/reuse
+      limits remain explicit.
+checks:
+- check_id: named
+  name: Independent named record validation
+  command: uv run --locked cmmmech validate data/records/tennantite-in.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:tennantite-in
+  summary: 'Executed by the independent reviewer in the round48 worktree: one record
+    checked, zero failures. Log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e'
+- check_id: batch
+  name: Completed cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:tennantite-in
+  summary: 'Coordinator-executed actual terminal result independently bound to raw
+    log SHA256 41150421ddd753d0cecf6d7a22bebd5a34d52f11b309beb820523a57d1624039. pts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 175.55s (0:02:55)
+
+    Checked 236 record(s); 0 failed.
+
+    Checked 279 history record(s); 0 error(s).'
+- check_id: nonempty
+  name: Completed cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:tennantite-in
+  summary: Coordinator-executed actual terminal result independently bound to raw
+    log SHA256 ed2bc5cf4c32744127edd92734e33277402fc4a6990da56ff6c309c0c4e7673e. Checked
+    236 record(s); 0 failed.
+- check_id: history
+  name: Completed cohort history
+  command: uv run --locked cmmmech validate-history --base 9b397b1f215381208c3381b175b3da8b6fe31399
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:tennantite-in
+  summary: Coordinator-executed actual terminal result independently bound to raw
+    log SHA256 885e537286de29f10eb43fd520a420768782950c80808f190df3c2dd01832122. Checked
+    279 history record(s); 0 error(s).
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/tennantite-in.yaml
+  locator: Entire exact frozen record
+  accessed_at: '2026-10-12T06:06:20.299054Z'
+  support: supports
+  summary: Identity, material boundaries, source qualifications and missing microbial/criticality
+    claims examined against the original.
+  snapshot_sha256: c768abfee1cea31682d06c0afeaa48b6d72219761de566640737f01b8c873ecf
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1180/mgm.2025.10140
+  locator: 'Pisa accepted preproof: pages1–10 methods/results/discussion; all nine
+    tables and five original figures on pages16–24 personally viewed'
+  accessed_at: '2026-10-12T06:06:20.299054Z'
+  support: supports
+  summary: Natural grain association, sample reuse, seven selected spots within86
+    and single-crystal refinement support the qualified mineral record. Table3 uncertainty
+    differs from abstract; calculated powder/density, unmeasured hardness, indirect
+    valence and proposed geological formation are retained as limitations.
+  snapshot_sha256: 5b185dfb2748475699577fcab6c8b8cd365ce85304fc8720f0ac1f6cc94b63e2
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September2026 page214 original row personally viewed; field definitions
+    and terms pages1–2
+  accessed_at: '2026-10-12T06:06:20.299054Z'
+  support: supports
+  summary: IMA:2023-011, Tennantite-(In), ideal Cu6(Cu5In)As4S13 and approved status
+    match. Species is distinct from its element, mineral group and mixed ore.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: cif
+  kind: primary_source
+  reference: https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0026461X25101400/resource/name/S0026461X25101400sup001.cif
+  locator: Original chemical, cell, refinement, occupancy and geometry metadata
+  accessed_at: '2026-10-12T06:06:20.299054Z'
+  support: supports
+  summary: Natural Pefka source and model assignment atM(1) agree. Analytical, scattering-model
+    and ideal formulas differ and are not collapsed. No independent refinement or
+    valence-sensitive measurement claimed.
+  snapshot_sha256: b03bafcf51a648519575b42dc5c98f701b4e8a3ad0aa803fe13481307934e9e5
+- evidence_id: workbook
+  kind: primary_source
+  reference: https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0026461X25101400/resource/name/S0026461X25101400sup002.xlsx
+  locator: Both original workbook XML sheets; all PfV22G specimen rows and selected
+    Pb/As/In/Cu fields independently parsed
+  accessed_at: '2026-10-12T06:06:20.299054Z'
+  support: supports
+  summary: Exactly7 selected and79 additional rows share specimen label PfV22G. Independent
+    sampleSD calculation yields Pb0.39274 andAs2.21704, agreeing with Table3 rather
+    than abstract. These checks verify reported source contradictions, not a new recovery
+    metric.
+  snapshot_sha256: 26a4810387162044ce2bcdd7dce09d3586a5da93c5de96dabe6fbd2a9ac595fe
+- evidence_id: provenance
+  kind: record_content
+  reference: research/sources/round48-indium-minerals/20261012T060215Z-source-investigation.json
+  locator: Paired dossier, CREATE sidecar, native inspect and54 listed raw artifact
+    hashes
+  accessed_at: '2026-10-12T06:06:20.299054Z'
+  support: supports
+  summary: All54 raw hashes and allfive native input hashes verified. Curator access
+    limits, one reused specimen, pending scientific review at handoff time and source
+    dates are coherent.
+  snapshot_sha256: bcd36b57c73864b7bf2dc0ad063a48c01c19f3a712a0fdb2f2b6bd350d083b6b
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round48-tennantite-review-audit-v2.json
+  locator: Independent current/original corpus and156 referenced raw-root searches
+  accessed_at: '2026-10-12T06:06:20.299054Z'
+  support: supports
+  summary: Hits concern this new owner/dossier/history and prior IMA list rows. No
+    other curated owner of this species or accepted same-DOI experiment identified
+    within this bounded search.
+  search_scope: rg --no-ignore --hidden --follow; exact species/slug/IMA/DOI pattern;
+    current and original data/records,research,reviews,history and156 curator-cited
+    existing raw roots. Text extensions and16MB file cap; nine missing historical
+    roots and unextracted binaries excluded; no machine-wide absence claim.
+  snapshot_sha256: 4158b0b9783ee12d54089ad53ce458ce5d112ff5625d8064acc3519b3c9ec11a
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round48-tennantite-review-web.json
+  locator: Independent live exact-DOI notice query and exact-name/IMA query; repository
+    landing opened
+  accessed_at: '2026-10-12T06:06:20.299054Z'
+  support: supports
+  summary: Returned results corroborate official nomenclature/publication routes and
+    no affecting notice surfaced. No exhaustive absence claim; final typeset original
+    and prior2022 full paper not reassessed.
+  search_scope: '2026-10-12 web queries: "10.1180/mgm.2025.10140" correction erratum
+    retraction; "Tennantite-(In)" "2023-011". First returned sets, no date/domain
+    filters or exhaustive pagination; public Pisa landing directly opened.'
+  snapshot_sha256: b945e95b8e3b3d259b5247b146648aa8aab2dce64ae0efe904678ef5d8c77c0e
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round48-final-terminal.json
+  locator: Actual completed cohort receipts and raw logs
+  accessed_at: '2026-10-12T06:06:20.299054Z'
+  support: supports
+  summary: Batch, nonempty corpus and append-only history checks passed; source truth
+    assessed separately.
+  snapshot_sha256: 720239d00b63ba44ee95474c1f3ad662a26a88edf01f1dfac2bd43ed0c223fbf
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact mineral owner and authority
+  outcome: supported
+  target_ids:
+  - cmmmech:tennantite-in
+  evidence_ids:
+  - record
+  - ima
+  - dedup
+  summary: Current authority and natural single-crystal evidence support a distinct
+    mineral owner. The entire group, element and ore are not assigned the species
+    identifier.
+- assessment_id: evidence
+  area: evidence
+  topic: Natural specimen, original graphics and supplements
+  outcome: supported
+  target_ids:
+  - cmmmech:tennantite-in
+  evidence_ids:
+  - primary
+  - cif
+  - workbook
+  summary: Primary and original supplement evidence supports the retained description.
+    Selected analytical spots, model occupancies and calculated properties are explicitly
+    scoped; uncertainty inconsistencies are preserved.
+- assessment_id: scope
+  area: scope
+  topic: Causal and deployment limits
+  outcome: supported
+  target_ids:
+  - cmmmech:tennantite-in
+  evidence_ids:
+  - primary
+  - record
+  summary: Formal valence and formation sequence remain interpretations. Sample reuse
+    is explicit. No microbial, recovered-product, industrial or inherited criticality
+    claim is added.
+- assessment_id: provenance
+  area: provenance
+  topic: Independent exact-state assessment
+  outcome: supported
+  target_ids:
+  - cmmmech:tennantite-in
+  evidence_ids:
+  - provenance
+  - notices
+  - gates
+  summary: Native inspection preceded judgment and captured exactly record, CREATE
+    history, both dossiers and schema. All remain unchanged; named and completed cohort
+    checks passed.
+findings: []
+actions: []
+limitations:
+- Complete accepted preproof inspected; final typeset version not inspected.
+- One previously studied specimen and zoned chemistry are not independent occurrence
+  replication.
+- Formal oxidation state, minorPb occupancy and geological sequence remain indirect
+  interpretations.
+- Source discrepancies are retained; this review does not resolve the original publication
+  errors.
+- Bounded notice/dedup searches omit inaccessible roots and unextracted binaries.
+```
