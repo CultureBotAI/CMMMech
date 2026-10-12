@@ -1,0 +1,121 @@
+id: cmmmech:kesterite
+name: Kësterite
+material_kind: mineral
+description: >-
+  Kësterite is the mineral species Cu2ZnSnS4, recorded as grandfathered
+  (G) with original-description year 1956 in the September 2026 IMA-CNMNC
+  list. That year is not an IMA approval identifier. This natural mineral
+  identity is distinct from elemental tin or zinc, mixed ores, synthetic
+  CZTS photovoltaic materials, stannite and ferrokësterite. Historical
+  papers often spell the name kesterite and describe Fe-bearing members.
+  Černý and colleagues (2001) measured four natural Peerless pegmatite
+  nodules, assigning two Zn-dominant specimens to ferroan kesterite from
+  electron-microprobe composition and characterizing powder-diffraction
+  unit cells. They explicitly named specimens by composition and did not
+  refine cation ordering or establish each specimen's space group. Their
+  specimens are compositionally variable natural materials, not pure
+  endmembers. The microbial study below tested separately synthesized
+  material identified by the historical authors as kesterite; it did not
+  test natural kësterite, solar-cell films or industrial feed. No criticality
+  designation is inherited from tin, zinc or copper.
+sources:
+  - id: ima_2026_09
+    title: >-
+      IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 112,
+      Kësterite row (Cu2ZnSnS4, G, 1956, Russia); page 71, separate
+      Ferrokësterite row; page 1 field definitions and page 2 distribution
+      terms. Current diacritics and ideal formula retained.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-12'
+  - id: cerny_2001
+    title: >-
+      Černý P, Masau M, Ercit TS, Chapman R and Chackowsky LE (2001).
+      Stannite and kesterite from the Peerless pegmatite, Black Hills,
+      South Dakota, USA. Journal of the Czech Geological Society 46(1-2),
+      original printed pages 27-33; the current publisher landing page
+      instead indexes 27-34. Complete seven-page original inspected,
+      including Figures 1-4 and Tables 1-3; Table 1 characterizes samples
+      PPK-2 and PPK-3, and page 29 explicitly limits naming to composition.
+    url: https://www.jgeosci.org/content/JCGS2001_1-2__cerny2.pdf
+    accessed_on: '2026-10-12'
+  - id: teh_1979
+    title: >-
+      Teh GH (1979). Recovery of tin by geomicrobiological techniques.
+      Warta Geologi 5(6), 85-91, November-December 1979. Official society
+      issue PDF, article on PDF pages 3-9; complete original article and
+      Figures 1-3 inspected. Synthetic preparation and bacterial culture
+      on printed pages 85-86; reported extraction on page 86 and bacterial
+      assay Figure 1 on page 89. No DOI verified.
+    url: https://gsm.org.my/wp-content/uploads/gsm_file_2/702001-101558-PDF.pdf
+    accessed_on: '2026-10-12'
+  - id: ncbi_ferrooxidans
+    title: >-
+      NCBI Taxonomy 920, Acidithiobacillus ferrooxidans, with historical
+      homotypic synonym Thiobacillus ferrooxidans. Species-name mapping
+      only; it does not identify or genomically authenticate the historical
+      Ranstad experimental strain.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
+    accessed_on: '2026-10-12'
+mechanisms:
+  - id: teh_1979_ferrooxidans_leaching
+    name: Laboratory tin solubilization from synthetic kesterite in an iron-oxidizing bacterial culture
+    process: bioleaching
+    description: >-
+      Teh reports tin solubilization from synthetic kesterite in an
+      inoculated iron-oxidizing bacterial culture. Ferric-ion-mediated
+      sulfide attack is a plausible interpretation, but the experiment
+      does not separate direct cell action from indirect solution chemistry
+      or establish a specific tin redox pathway. No matched sterile
+      kesterite arm is shown, so the bacterial contribution cannot be
+      quantified separately from acid and iron chemistry.
+    context: >-
+      The historical culture was described as a pure Thiobacillus
+      ferrooxidans strain from Kambrischer Alaunschiefer, Ranstad, Sweden,
+      maintained in 9K medium. NCBITaxon:920 maps the species name only;
+      no accession, molecular identification, inoculum density, assay
+      volume, aeration, replication or uncertainty is reported. Synthetic
+      Cu2ZnSnS4 was prepared in evacuated sealed silica tubes and reportedly
+      verified by X-ray diffraction, without a published pattern, cation
+      ordering refinement or quantitative phase-purity assay. No natural
+      kësterite was tested. Figure 1 follows 35 days at 32 degrees C,
+      particles below 0.16 mm and 0.5% pulp density. Results prose states
+      initial pH 1.5, whereas Figures 1-2 state pH 2.5; neither value is
+      silently preferred. A separately stated 0.1% optimum pulp density
+      is not the Figure 1 loading. Ferrous iron was needed in nutrient
+      medium, especially for iron-poor substrates, but its concentration
+      is unspecified. The plotted sterile stannite comparator belongs
+      to a different material and is not a matched kesterite control.
+      Separate organic-acid tests used autoclaved substrates and reagents;
+      they do not establish microbial synthesis of those leachants.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+    evidence:
+      - source_ref: teh_1979
+        supports: partial
+        explanation: >-
+          Printed pages 85-87 and Figure 1 support an inoculated synthetic
+          kesterite leaching assay with soluble tin measured by atomic
+          absorption and confirmed colorimetrically. The reported 72.66%
+          Sn extraction is retained as the author's percentage for this
+          synthetic feed, not a validated natural-mineral recovery yield
+          or isolated metal product. The plotted concentration scale
+          labelled tin concentration (x1000 ppm) is not reconciled with
+          feed loading, and no graph values are converted or digitized.
+          Missing matched sterile control, replication and phase-purity
+          data, along with the pH contradiction, limit causal and
+          quantitative interpretation. No downstream tin isolation,
+          product purity, solar-material recycling or industrial
+          deployment was demonstrated.
+curation_history:
+  - timestamp: '2026-10-12T06:00:03Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Added current kësterite identity, qualified natural-specimen
+      characterization and the historically assigned synthetic-feed
+      bacterial assay. Retained missing matched controls, structural
+      identification limits, conflicting pH and graph-scale ambiguity.
+history_refs:
+  - history/records/kesterite/2026-10-12T060017Z-codex-993c4f.yaml

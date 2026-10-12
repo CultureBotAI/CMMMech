@@ -1,0 +1,863 @@
+{
+  "schema": "cmmmech-source-investigation-v1",
+  "recorded_at_utc": "2026-10-12T06:02:15.566623+00:00",
+  "actor": {
+    "name": "codex",
+    "model": "GPT-6",
+    "tool": "codex"
+  },
+  "worktree": "/private/tmp/CMMMech-expansion-round48-20261012",
+  "trusted_base": "9b397b1f215381208c3381b175b3da8b6fe31399",
+  "baseline": "/private/tmp/cmm-round48-initialization.json, honestly reused exact published-base checks; no new baseline run by this investigator",
+  "selected": {
+    "record": "data/records/tennantite-in.yaml",
+    "kind": "mineral",
+    "species": "Tennantite-(In)",
+    "identifier": "IMA:2023-011",
+    "ideal_formula": "Cu6(Cu5In)As4S13",
+    "authority": "September2026 IMA original PDF page214; field definitions page1, terms page2; approved statusA. Freshly acquired this pass.",
+    "primary": "Voudouris P, Biagioni C, Sejkora J, Musetti S, Melfou M, Mavrogonatos C. DOI10.1180/mgm.2025.10140. Online20August2025; Mineralogical Magazine90(2),417-426 (2026). Complete24-page accepted preproof from Pisa; final typeset PDF not inspected.",
+    "experiment_reuse": "Main page2 explicitly reuses the sample studied by Voudouris etal2022, Ore Geology Reviews140104348; main source reference, not independent verification of the full2022 paper. Supplements/CIF are the same study. No extra occurrence count.",
+    "scope": "Mineral identity and natural Pefka specimen context only; no mechanisms, biological assay, criticality, quantitative observation table, or recovery yield.",
+    "inspection": {
+      "main_text": "Complete24-page extracted text; original pages1-7 and16-24 visually inspected, covering methods, sample reuse, Figures1-5 and Tables1-9. Remaining text/reference pages read as extraction, not claimed visually inspected.",
+      "figures": [
+        "1 BSE natural associated phases, Fe rim, red selected crystal area",
+        "2 measured reflectance with literature comparators",
+        "3 structural-model diagram",
+        "4 Cu-excess plusIn versusFe+Zn+Mn; actual axis clarifies caption shorthand",
+        "5 In versusAs/(As+Sb+Te), selected spots and caption cross-reference slip"
+      ],
+      "tables": [
+        "1 historical species inventory, not used as current inventory",
+        "2 reflectance",
+        "3 selected7spot composition and SDs",
+        "4 single-crystal collection/refinement",
+        "5 site occupancies",
+        "6 bond distances",
+        "7 bond-valence model",
+        "8 CALCULATED powder pattern",
+        "9 tennantite-series comparisons"
+      ],
+      "supplement1": "Publisher CIF actual bytes inspected for specimen identity, analytical versus refined-model formulas, cell/site parameters, inversion-twin model, refinement and embedded res/hkl inventory. No new crystallographic refinement executed; not a claim every reflection was independently remeasured.",
+      "supplement2": "Both original XLSX sheets extracted as exact XML cell tokens. All86 spot rows inspected for keys/composition scope; selected7 and additional79 allPfV22G. All13element sums reproduce row totals within1e-8; sample SD recomputation agrees with Table3 forPb/In/As/Cu. Spreadsheetzeros are retained raw, not interpreted as proof of absolute absence."
+    },
+    "limitations": [
+      "Identity approval is not a criticality designation and does not prove biological extractability.",
+      "Main24-page file is accepted preproof, subject to production changes; no complete final typeset comparison.",
+      "Selected7spot analyses are a targeted subset of86, not independent deposits or bulk resource grade.",
+      "WDS and single-crystal support assignment. In3+ and Fe formal valences are interpretations; no separate valence-sensitive spectroscopy.",
+      "In/Sb scattering similarity limits complete cross-substitution discrimination; authors use chemistry/stereochemistry to support M1 assignment.",
+      "Powder pattern calculated because crystal was too small; density calculated and hardness not measured.",
+      "Pb may reflect associated galena/watanabeite intergrowths; not guaranteed lattice substitution.",
+      "Proposed roquesite-to-tennantiteIn-to-tennantiteFe sequence and sulfur-fugacity/In-availability changes are geological interpretations, not controlled transformations.",
+      "No organism, living/dead biomass, culture/control/replication or industrial deployment assay is present in this source; those fields are inapplicable to the accepted identity claim."
+    ],
+    "source_discrepancies": [
+      "Abstract Pb0.26(2) differs from Table3 SD0.39; XLSX sampleSD0.39274 supports table, not abstract.",
+      "Abstract As14.38(3.00) differs from Table3 SD2.22; XLSX sampleSD2.21704 supports table. No conflicting SD imported into quantitative fields.",
+      "Mainp7 refers selected chemical results to Table2, actually Table3; Figure4 actual xaxis usesCu_excess, clarified as totalCu-10 in text.",
+      "Figure5 says symbols asFigure3, while symbol key appearsFigure4; retained as caption slip, not silently repaired evidence.",
+      "GroupedCconstituent formula p7 prints sum4.00 although stated groups1.38+0.36+0.26 total2.00; not used for numerical valence inference.",
+      "CIF refined-model formula/density differs from microprobe composition/density basis: CIF4.758 vs main calculated4.763; distinguish model from analytical formula, no density imported.",
+      "Main coordinates longitude26deg02min15secE differ from CNMNC2023 announcement26deg02min27secE; no precise coordinates imported.",
+      "Intro historical13species and Table1 including new species differ in scope; no global current count imported.",
+      "OneSb-dominantspot suggested as potential tetrahedrite-(In) is not treated as approved mineral species."
+    ]
+  },
+  "record_sha256": "c768abfee1cea31682d06c0afeaa48b6d72219761de566640737f01b8c873ecf",
+  "history": "history/records/tennantite-in/2026-10-12T060025Z-codex-1a1417.yaml",
+  "history_sha256": "d7e78cc785a7cab5bce058d457fc97a9ee51be3e2490eeac8603e335aa76f616",
+  "search_scope": {
+    "provider": "web.run search_query",
+    "date_utc": "2026-10-12",
+    "queries": [
+      "\"indite\" \"Genkin\" 1963 pdf",
+      "\"10.1051/bsgf/2022019\" pdf Charrier",
+      "\"indite\" natural mineral characterization crystal",
+      "\"Индит и джалиндит\" pdf",
+      "\"bsgf220013\" HAL",
+      "\"Charrier\" \"Marcoux\" \"2022\" hal.science",
+      "\"Yanomamite\" \"Botelho\" \"1994\" pdf",
+      "\"cadmoindite\" \"Kudriavy\" pdf",
+      "\"Indite and dzhalindite\" filetype:pdf -site:rruff.info -site:rruff.geo.arizona.edu -site:handbookofmineralogy.org",
+      "\"Yanomamite\" \"1994\" site:repositorio.unb.br",
+      "\"10.1051/bsgf/2022019\" \"hal\"",
+      "\"Indite\" \"Genkin\" site:znova.ru OR site:minsoc.ru OR site:zrmo.org",
+      "\"cadmoindite\" \"Chaplygin\" filetype:pdf -site:rruff.info -site:handbookofmineralogy.org",
+      "\"10.1180/mgm.2025.10140\" pdf",
+      "\"insu-03871633\" pdf",
+      "\"Tennantite-(In)\" \"pdf\" Biagioni",
+      "\"10.1180/mgm.2025.10140\" correction OR erratum OR retraction",
+      "\"Tennantite-(In)\" disagreement OR revision OR \"2023-011\""
+    ],
+    "coverage": "First returned result sets only; no pagination. Domain/filetype restrictions are exactly those written in each query. Not a systematic or exhaustive review.",
+    "notice_result": "No affecting correction or retraction identified in these returned sets or Crossref relation/update fields; absence of a notice is bounded by this search.",
+    "related_result": "Publisher search result for Crystal structure of Pb-bearing watanabeite from Pefka, Greece explicitly uses the same type material, Pisa20029. It is a related occurrence, not an independent replication; no claims from its uninspected full original graphics were imported."
+  },
+  "dedup": {
+    "utc": "2026-10-12T05:55:51.603699+00:00",
+    "pattern": "indite|dzhalindit|bsgf220013|10\\.1051/bsgf/2022019|yanomamit|cadmoindit|tennantite.?\\(In\\)|tennantite-in|2023-011|10\\.1180/mgm\\.2025\\.10140|1328568|10\\.1016/j\\.oregeorev\\.2021\\.104348",
+    "roots": [
+      "/private/tmp/cmm-round10-b-f-raw",
+      "/private/tmp/cmm-round10-graphite-raw",
+      "/private/tmp/cmm-round10-nb-ta-raw",
+      "/private/tmp/cmm-round10-ti-zr-raw",
+      "/private/tmp/cmm-round11-be-rb-re-raw",
+      "/private/tmp/cmm-round11-he-raw",
+      "/private/tmp/cmm-round11-ir-os-hf-raw",
+      "/private/tmp/cmm-round11-lu-tm-pm-raw",
+      "/private/tmp/cmm-round12-aluminium-boron-raw",
+      "/private/tmp/cmm-round12-carbon-metals-raw",
+      "/private/tmp/cmm-round12-groups-raw",
+      "/private/tmp/cmm-round12-industrial-minerals-raw",
+      "/private/tmp/cmm-round13-grade-raw",
+      "/private/tmp/cmm-round13-mineral-raw",
+      "/private/tmp/cmm-round13-secondary-raw",
+      "/private/tmp/cmm-round14-magnet-raw",
+      "/private/tmp/cmm-round14-mineral-raw",
+      "/private/tmp/cmm-round14-product-raw",
+      "/private/tmp/cmm-round14-secondary-raw",
+      "/private/tmp/cmm-round15-brine-raw",
+      "/private/tmp/cmm-round15-mineral-raw",
+      "/private/tmp/cmm-round16-produced-water-raw",
+      "/private/tmp/cmm-round16-silicate-raw",
+      "/private/tmp/cmm-round16-vivianite-raw",
+      "/private/tmp/cmm-round17-biotite-raw",
+      "/private/tmp/cmm-round17-enstatite-raw",
+      "/private/tmp/cmm-round17-saline-raw",
+      "/private/tmp/cmm-round18-catalyst-raw",
+      "/private/tmp/cmm-round18-dunite-raw",
+      "/private/tmp/cmm-round18-mineral-feeds-raw",
+      "/private/tmp/cmm-round18-products-raw",
+      "/private/tmp/cmm-round19-hydrogenation-catalyst-raw",
+      "/private/tmp/cmm-round19-iron-manganese-raw",
+      "/private/tmp/cmm-round19-manganese-residue-raw",
+      "/private/tmp/cmm-round19-tailings-raw",
+      "/private/tmp/cmm-round20-goethite-raw",
+      "/private/tmp/cmm-round20-laterite-raw",
+      "/private/tmp/cmm-round20-mafic-tailings-raw",
+      "/private/tmp/cmm-round20-nodule-raw",
+      "/private/tmp/cmm-round21-crusts-raw",
+      "/private/tmp/cmm-round21-pcb-raw",
+      "/private/tmp/cmm-round21-ree-mud-raw",
+      "/private/tmp/cmm-round22-concretions-raw",
+      "/private/tmp/cmm-round22-pcb-raw",
+      "/private/tmp/cmm-round22-pv-raw",
+      "/private/tmp/cmm-round22-sulfides-raw",
+      "/private/tmp/cmm-round23-crusts-raw",
+      "/private/tmp/cmm-round23-ghiorse-raw",
+      "/private/tmp/cmm-round23-identity-gaps-raw",
+      "/private/tmp/cmm-round23-lcd-raw",
+      "/private/tmp/cmm-round23-rey-mud-raw",
+      "/private/tmp/cmm-round24-copper-slag-raw",
+      "/private/tmp/cmm-round24-frontier-raw",
+      "/private/tmp/cmm-round24-nimh-raw",
+      "/private/tmp/cmm-round24-sulfuric-raw",
+      "/private/tmp/cmm-round25-bf-dust-raw",
+      "/private/tmp/cmm-round25-button-raw",
+      "/private/tmp/cmm-round25-frontier-raw",
+      "/private/tmp/cmm-round25-oil-ash-raw",
+      "/private/tmp/cmm-round26-eaf-dust-raw",
+      "/private/tmp/cmm-round26-packaging-raw",
+      "/private/tmp/cmm-round26-root-raw",
+      "/private/tmp/cmm-round26-superalloy-raw",
+      "/private/tmp/cmm-round27-eaf-slag-raw",
+      "/private/tmp/cmm-round27-goethite-raw",
+      "/private/tmp/cmm-round27-packaging-raw",
+      "/private/tmp/cmm-round27-root-raw",
+      "/private/tmp/cmm-round27-superalloy-raw",
+      "/private/tmp/cmm-round28-black-shale-research",
+      "/private/tmp/cmm-round28-goethite-research",
+      "/private/tmp/cmm-round28-tatra-research",
+      "/private/tmp/cmm-round28-tire-research",
+      "/private/tmp/cmm-round29-bastnaesite-research",
+      "/private/tmp/cmm-round29-ilmenite-research",
+      "/private/tmp/cmm-round29-tungsten-waste-research",
+      "/private/tmp/cmm-round29-zinc-ore-research",
+      "/private/tmp/cmm-round30-basalt-research",
+      "/private/tmp/cmm-round30-chromite-research",
+      "/private/tmp/cmm-round30-pyrrhotite-research",
+      "/private/tmp/cmm-round30-tungsten-research",
+      "/private/tmp/cmm-round31-chromite-tailings-research",
+      "/private/tmp/cmm-round31-ilmenite-research",
+      "/private/tmp/cmm-round31-kaolin-research",
+      "/private/tmp/cmm-round31-kaolin-waste-research",
+      "/private/tmp/cmm-round31-stibnite-research",
+      "/private/tmp/cmm-round31-tungsten-research",
+      "/private/tmp/cmm-round32-arsenopyrite-research",
+      "/private/tmp/cmm-round32-bornite-research",
+      "/private/tmp/cmm-round32-chromitite-research",
+      "/private/tmp/cmm-round32-molybdenite-research",
+      "/private/tmp/cmm-round33-chalcocite-research",
+      "/private/tmp/cmm-round33-covellite-research",
+      "/private/tmp/cmm-round33-molybdenite-research",
+      "/private/tmp/cmm-round33-pyrite-research",
+      "/private/tmp/cmm-round34-galena-research",
+      "/private/tmp/cmm-round34-greigite-research",
+      "/private/tmp/cmm-round34-mackinawite-research",
+      "/private/tmp/cmm-round34-uraninite-research",
+      "/private/tmp/cmm-round35-anglesite-research",
+      "/private/tmp/cmm-round35-jarosite-research",
+      "/private/tmp/cmm-round35-ningyoite-research",
+      "/private/tmp/cmm-round35-schwertmannite-research",
+      "/private/tmp/cmm-round36-autunite-research",
+      "/private/tmp/cmm-round36-moolooite-research",
+      "/private/tmp/cmm-round36-uramphite-research",
+      "/private/tmp/cmm-round37-falottaite-research",
+      "/private/tmp/cmm-round37-humboldtine-research",
+      "/private/tmp/cmm-round37-lindbergite-research",
+      "/private/tmp/cmm-round37-rhabdophane-research",
+      "/private/tmp/cmm-round38-hausmannite-research",
+      "/private/tmp/cmm-round38-katsarosite-research",
+      "/private/tmp/cmm-round38-mimetite-research",
+      "/private/tmp/cmm-round38-vanadinite-research",
+      "/private/tmp/cmm-round39-brownrot-research",
+      "/private/tmp/cmm-round39-ree-phosphate-research",
+      "/private/tmp/cmm-round39-vanadinite-research",
+      "/private/tmp/cmm-round39-wei-manganese-research",
+      "/private/tmp/cmm-round40-birnessite-research",
+      "/private/tmp/cmm-round40-cobalt-manganese-oxide-research",
+      "/private/tmp/cmm-round40-manganese-ore-oxalates-research",
+      "/private/tmp/cmm-round40-samarium-phosphate-research",
+      "/private/tmp/cmm-round41-biogenic-birnessite-research",
+      "/private/tmp/cmm-round41-cobalt-birnessite-research",
+      "/private/tmp/cmm-round41-lateritic-cobalt-research",
+      "/private/tmp/cmm-round41-manganese-minerals-research",
+      "/private/tmp/cmm-round42-biogenic-selectivity-research",
+      "/private/tmp/cmm-round42-hardmetal-research",
+      "/private/tmp/cmm-round42-lithium-minerals-research",
+      "/private/tmp/cmm-round42-theisen-research",
+      "/private/tmp/cmm-round43-ge-independent-research",
+      "/private/tmp/cmm-round43-ge-minerals-research",
+      "/private/tmp/cmm-round43-germanium-resources-research",
+      "/private/tmp/cmm-round43-hardmetal-research",
+      "/private/tmp/cmm-round43-lithium-mixed-feeds-research",
+      "/private/tmp/cmm-round44-coal-optimization-research",
+      "/private/tmp/cmm-round44-hardmetal-2011-research",
+      "/private/tmp/cmm-round44-lithium-mixed-feeds-research",
+      "/private/tmp/cmm-round45-coal-technology-research",
+      "/private/tmp/cmm-round45-ge-minerals-research",
+      "/private/tmp/cmm-round45-indium-minerals-research",
+      "/private/tmp/cmm-round45-theisen-research",
+      "/private/tmp/cmm-round46-cassiterite-research",
+      "/private/tmp/cmm-round46-ge-minerals-research",
+      "/private/tmp/cmm-round46-laforetite-research",
+      "/private/tmp/cmm-round46-roquesite-research",
+      "/private/tmp/cmm-round47-indium-research",
+      "/private/tmp/cmm-round47-sn-minerals-research",
+      "/private/tmp/cmm-round47-tin-research",
+      "/private/tmp/cmm-round7-ho-er-gd-raw",
+      "/private/tmp/cmm-round7-terbium-raw",
+      "/private/tmp/cmm-round8-sc-pr-raw",
+      "/private/tmp/cmm-round9-cs-sr-raw",
+      "/private/tmp/cmm-round9-ru-rh-raw",
+      "/private/tmp/cmm-round9-si-sn-raw",
+      "/private/tmp/cmmmech-round5-ree-raw",
+      "/private/tmp/cmmmech-round6-mo-w-raw",
+      "/private/tmp/CMMMech-expansion-round48-20261012/data",
+      "/private/tmp/CMMMech-expansion-round48-20261012/research",
+      "/private/tmp/CMMMech-expansion-round48-20261012/reviews",
+      "/private/tmp/CMMMech-expansion-round48-20261012/history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history"
+    ],
+    "files_checked": 6684,
+    "matches": [
+      "/private/tmp/cmm-round14-mineral-raw/ima.txt",
+      "/private/tmp/cmm-round15-mineral-raw/ima2026-09.txt",
+      "/private/tmp/cmm-round16-silicate-raw/ima2026-09.txt",
+      "/private/tmp/cmm-round16-vivianite-raw/ima2026-09.txt",
+      "/private/tmp/cmm-round17-biotite-raw/ima-booklet-2019.txt",
+      "/private/tmp/cmm-round17-enstatite-raw/ima2026-09.txt",
+      "/private/tmp/cmm-round17-enstatite-raw/ima-booklet.txt",
+      "/private/tmp/cmm-round30-pyrrhotite-research/ima-2026-09.txt",
+      "/private/tmp/cmm-round32-bornite-research/ima-extracted.txt",
+      "/private/tmp/cmm-round32-molybdenite-research/raw/ima-text.txt",
+      "/private/tmp/cmm-round33-pyrite-research/ima2026.pdf.txt",
+      "/private/tmp/cmm-round34-mackinawite-research/raw/ima2026.txt",
+      "/private/tmp/cmm-round35-anglesite-research/dedup-pdf-text/2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973.txt",
+      "/private/tmp/cmm-round37-lindbergite-research/raw/ima2026-pdf.txt",
+      "/private/tmp/cmm-round38-katsarosite-research/raw/ima2026.txt",
+      "/private/tmp/cmm-round41-manganese-minerals-research/web-search-receipts.json",
+      "/private/tmp/cmm-round41-manganese-minerals-research/raw/ima2026-09-reused-text.txt",
+      "/private/tmp/cmm-round43-ge-minerals-research/text/ima2026.txt",
+      "/private/tmp/cmm-round45-ge-minerals-research/raw/ima2026.txt",
+      "/private/tmp/cmm-round46-cassiterite-research/ima2026.txt",
+      "/private/tmp/cmm-round46-ge-minerals-research/raw/ima2026.txt",
+      "/private/tmp/cmm-round46-laforetite-research/web-evidence.json",
+      "/private/tmp/cmm-round46-roquesite-research/raw/search-2.json",
+      "/private/tmp/cmm-round46-roquesite-research/raw/search-1.json",
+      "/private/tmp/cmm-round46-roquesite-research/raw/ima2026.txt",
+      "/private/tmp/cmm-round47-indium-research/acquisition-1.json",
+      "/private/tmp/cmm-round47-indium-research/dedup-raw-text.json",
+      "/private/tmp/cmm-round47-indium-research/dossier-receipt.json",
+      "/private/tmp/cmm-round47-indium-research/web-search.json",
+      "/private/tmp/cmm-round47-indium-research/dedup.json",
+      "/private/tmp/cmm-round47-indium-research/raw/ima-page-101.txt",
+      "/private/tmp/cmm-round47-indium-research/raw/ima-page-060.txt",
+      "/private/tmp/cmm-round47-indium-research/raw/fmm-landing.html",
+      "/private/tmp/cmm-round47-indium-research/raw/handbook-indite.txt",
+      "/private/tmp/cmm-round47-indium-research/raw/kiseleva2008.txt",
+      "/private/tmp/cmm-round47-indium-research/raw/handbook-dzhalindite.txt",
+      "/private/tmp/cmm-round47-sn-minerals-research/dedup-raw.txt",
+      "/private/tmp/cmm-round47-sn-minerals-research/raw/ima2026.txt",
+      "/private/tmp/CMMMech-expansion-round48-20261012/data/records/dzhalindite.yaml",
+      "/private/tmp/CMMMech-expansion-round48-20261012/research/ingests/round46-frontier-20261012.md",
+      "/private/tmp/CMMMech-expansion-round48-20261012/research/ingests/round47-20261012-publication.md",
+      "/private/tmp/CMMMech-expansion-round48-20261012/research/ingests/round47-frontier-20261012.md",
+      "/private/tmp/CMMMech-expansion-round48-20261012/research/ingests/round47-frontier-20261012.json",
+      "/private/tmp/CMMMech-expansion-round48-20261012/research/sources/round47-indium-minerals/20261012T052552Z-source-investigation.md",
+      "/private/tmp/CMMMech-expansion-round48-20261012/research/sources/round47-indium-minerals/20261012T052552Z-source-investigation.json",
+      "/private/tmp/CMMMech-expansion-round48-20261012/reviews/publication/20261012-round47/20261012T052725Z-independent-helper-audit.md",
+      "/private/tmp/CMMMech-expansion-round48-20261012/reviews/publication/20261012-round47/20261012T053510Z-independent-final.json",
+      "/private/tmp/CMMMech-expansion-round48-20261012/reviews/publication/20261012-round47/20261012T052725Z-independent-helper-audit.json",
+      "/private/tmp/CMMMech-expansion-round48-20261012/reviews/publication/20261012-round47/20261012T053510Z-independent-final.md",
+      "/private/tmp/CMMMech-expansion-round48-20261012/reviews/structured/20261012T053054Z-dzhalindite-round47-independent/review.md",
+      "/private/tmp/CMMMech-expansion-round48-20261012/reviews/structured/20261012T053054Z-dzhalindite-round47-independent/review.yaml",
+      "/private/tmp/CMMMech-expansion-round48-20261012/history/records/dzhalindite/2026-10-12T052351Z-codex-aca230.yaml",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records/dzhalindite.yaml",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/ingests/round46-frontier-20261012.md",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/ingests/round47-20261012-publication.md",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/ingests/round47-frontier-20261012.md",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/ingests/round47-frontier-20261012.json",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/sources/round47-indium-minerals/20261012T052552Z-source-investigation.md",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/sources/round47-indium-minerals/20261012T052552Z-source-investigation.json",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews/publication/20261012-round47/20261012T052725Z-independent-helper-audit.md",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews/publication/20261012-round47/20261012T053510Z-independent-final.json",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews/publication/20261012-round47/20261012T052725Z-independent-helper-audit.json",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews/publication/20261012-round47/20261012T053510Z-independent-final.md",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews/structured/20261012T053054Z-dzhalindite-round47-independent/review.md",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews/structured/20261012T053054Z-dzhalindite-round47-independent/review.yaml",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history/records/dzhalindite/2026-10-12T052351Z-codex-aca230.yaml"
+    ],
+    "limits": [
+      {
+        "path": "/private/tmp/cmm-round31-chromite-tailings-research/dedup-referenced-raw.txt",
+        "limit": "size_above_16MB"
+      },
+      {
+        "path": "/private/tmp/cmm-round42-lithium-minerals-research/interrupted-broad-dedup-raw-hits.txt",
+        "limit": "size_above_16MB"
+      },
+      {
+        "path": "/private/tmp/cmm-round43-lithium-mixed-feeds-research/dedup-raw-hits.txt",
+        "limit": "size_above_16MB"
+      },
+      {
+        "path": "/private/tmp/cmm-round44-coal-optimization-research/dedup-raw.txt",
+        "limit": "size_above_16MB"
+      },
+      {
+        "path": "/private/tmp/cmm-round44-hardmetal-2011-research/dedup-broad-raw.txt",
+        "limit": "size_above_16MB"
+      },
+      {
+        "path": "/private/tmp/cmm-round44-lithium-mixed-feeds-research/dedup-raw-hits.txt",
+        "limit": "size_above_16MB"
+      },
+      {
+        "path": "/private/tmp/cmm-round45-coal-technology-research/dedup-raw.txt",
+        "limit": "size_above_16MB"
+      },
+      {
+        "path": "/private/tmp/cmm-round47-tin-research/dedup-raw.txt",
+        "limit": "size_above_16MB"
+      }
+    ],
+    "missing_referenced_roots": [
+      "/private/tmp/cmm-round15-phosphate-raw",
+      "/private/tmp/cmm-round17-catalyst-raw",
+      "/private/tmp/cmm-round17-secondary-raw",
+      "/private/tmp/cmm-round26-bof-prior-raw",
+      "/private/tmp/cmm-round26-eaf-dust-dedup-raw",
+      "/private/tmp/cmm-round32-chromitite-raw",
+      "/private/tmp/cmm-round5-magnesium-raw",
+      "/private/tmp/cmm-round6-eu-sm-tb-raw",
+      "/private/tmp/cmm-round6-indium-raw"
+    ],
+    "scope": "Hidden and ignored included, symlinks followed with global cycle/file dedup; corpus and all156 existing cited raw roots; text-bearing formats only, per-file16MB limit; no unextracted binary semantic absence claimed."
+  },
+  "dedup_assessment": "No maintained owner or curated study for this exact species/DOI found in completed current/original scientific text search. Prior references to it were authority-list rows in citedrawfiles. Original indium/dzhalindite/roquesite owners and past deferrals retained. This is bounded:9 referencedroots missing,8 oversized generated searchlogs omitted, initial broadrawrg timedout; optimizedfollowup completed6684unique textfiles. Unextracted binaries not semantically excluded. No machine-wide absence claim.",
+  "acquisitions": [
+    {
+      "url": "https://api.archives-ouvertes.fr/search/?q=doiId_s%3A%2210.1051%2Fbsgf%2F2022019%22&fl=title_s%2Curi_s%2CfileMain_s%2ChalId_s%2ClinkExtUrl_s&wt=json",
+      "path": "/private/tmp/cmm-round48-indium-research/raw/hal-charrier.json",
+      "started_at": "2026-10-12T05:52:34.246418+00:00",
+      "status": 200,
+      "final_url": "https://api.archives-ouvertes.fr/search/?q=doiId_s%3A%2210.1051%2Fbsgf%2F2022019%22&fl=title_s%2Curi_s%2CfileMain_s%2ChalId_s%2ClinkExtUrl_s&wt=json",
+      "content_type": "application/json; charset=utf-8",
+      "size": 617,
+      "sha256": "c5624fb77641c07e3931927fc8033582a267aa0504e06eb7bc977f87a70e01b8",
+      "pdf_signature": false,
+      "finished_at": "2026-10-12T05:52:35.371039+00:00"
+    },
+    {
+      "url": "https://igem.ru/oldsite/biblio/yubiley/genkin.pdf",
+      "path": "/private/tmp/cmm-round48-indium-research/raw/genkin-library.pdf",
+      "started_at": "2026-10-12T05:52:34.247736+00:00",
+      "status": 200,
+      "final_url": "https://igem.ru/oldsite/biblio/yubiley/genkin.pdf",
+      "content_type": "application/pdf",
+      "size": 900026,
+      "sha256": "30b32d1c5e283554f2b5be741d901db0b5fcdf393951b2a3c232ceaf87e225c5",
+      "pdf_signature": true,
+      "finished_at": "2026-10-12T05:52:39.489979+00:00"
+    },
+    {
+      "url": "https://insu.hal.science/insu-03871633/document",
+      "path": "/private/tmp/cmm-round48-indium-research/raw/charrier-hal.pdf",
+      "started_at": "2026-10-12T05:53:38.556349+00:00",
+      "status": 200,
+      "final_url": "https://insu.hal.science/insu-03871633/document",
+      "content_type": "text/html; charset=utf-8",
+      "size": 12508,
+      "sha256": "683add137b01f7b772d7b46d5c69ce7bc58becec97b5f9efd9a682fb64f62450",
+      "pdf_signature": false,
+      "finished_at": "2026-10-12T05:53:39.627780+00:00"
+    },
+    {
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/44518C31D588C23A01BE6F2236BB4203/S0026461X25101400a.pdf/tennantitein_cu6cu5inas4s13_a_new_member_of_the_tetrahedrite_group_from_pefka_greece.pdf",
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-accepted.pdf",
+      "started_at": "2026-10-12T05:53:38.557390+00:00",
+      "status": 200,
+      "final_url": "https://www.cambridge.org/core/journals/mineralogical-magazine/article/abs/tennantitein-cu6cu5inas4s13-a-new-member-of-the-tetrahedrite-group-from-pefka-greece/44518C31D588C23A01BE6F2236BB4203",
+      "content_type": "text/html; charset=utf-8",
+      "size": 1121784,
+      "sha256": "3b2307494cd1f48350d1443bf228afcbbf8a7faf799b75d880b87ca765ac5e44",
+      "pdf_signature": false,
+      "finished_at": "2026-10-12T05:53:39.854965+00:00"
+    },
+    {
+      "url": "https://arpi.unipi.it/retrieve/e9b4903e-16ba-498f-a6ab-e38f6770d7e3/Voudouris%20et%20al.%2C%202025-tennantie-%28In%29.pdf",
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pisa.pdf",
+      "started_at": "2026-10-12T05:54:37.260465+00:00",
+      "status": 200,
+      "final_url": "https://arpi.unipi.it/retrieve/e9b4903e-16ba-498f-a6ab-e38f6770d7e3/Voudouris%20et%20al.%2C%202025-tennantie-%28In%29.pdf",
+      "content_type": "application/pdf;charset=UTF-8",
+      "size": 1296863,
+      "sha256": "5b185dfb2748475699577fcab6c8b8cd365ce85304fc8720f0ac1f6cc94b63e2",
+      "pdf_signature": true,
+      "finished_at": "2026-10-12T05:54:40.039829+00:00"
+    },
+    {
+      "url": "https://arpi.unipi.it/handle/11568/1328568",
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pisa.html",
+      "started_at": "2026-10-12T05:54:37.261334+00:00",
+      "status": 200,
+      "final_url": "https://arpi.unipi.it/handle/11568/1328568",
+      "content_type": "text/html;charset=utf-8",
+      "size": 55404,
+      "sha256": "91892958d74a973a123237816fb79ad8bac7282ff5fc4e12664d89ceb949294b",
+      "pdf_signature": false,
+      "finished_at": "2026-10-12T05:54:38.730320+00:00"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1180/mgm.2025.10140",
+      "path": "/private/tmp/cmm-round48-indium-research/raw/crossref-tennantite.json",
+      "started_at": "2026-10-12T05:54:38.730384+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1180/mgm.2025.10140",
+      "content_type": "application/json",
+      "size": 18693,
+      "sha256": "1b4e8c44cd02ed658c05828eea69a304716921275d0cec1db28af37b593560b0",
+      "pdf_signature": false,
+      "finished_at": "2026-10-12T05:54:39.273804+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1180/mgm.2025.10140.sm001",
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-supplement1.bin",
+      "started_at": "2026-10-12T05:55:29.303933+00:00",
+      "status": 200,
+      "final_url": "https://www.cambridge.org/core/journals/mineralogical-magazine/article/abs/tennantitein-cu6cu5inas4s13-a-new-member-of-the-tetrahedrite-group-from-pefka-greece/44518C31D588C23A01BE6F2236BB4203",
+      "content_type": "text/html; charset=utf-8",
+      "size": 1121783,
+      "sha256": "f5fc41004178b417308f87964a847bd8bca7916a30dac6c2a4e6bdc336e7c3cc",
+      "pdf_signature": false,
+      "finished_at": "2026-10-12T05:55:30.901086+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1180/mgm.2025.10140.sm002",
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-supplement2.bin",
+      "started_at": "2026-10-12T05:55:29.305450+00:00",
+      "status": 200,
+      "final_url": "https://www.cambridge.org/core/journals/mineralogical-magazine/article/abs/tennantitein-cu6cu5inas4s13-a-new-member-of-the-tetrahedrite-group-from-pefka-greece/44518C31D588C23A01BE6F2236BB4203",
+      "content_type": "text/html; charset=utf-8",
+      "size": 1121783,
+      "sha256": "af50bb6c81d2f4d5577410b49752d066acb2154a7f0ad612c9b09fba072a3b97",
+      "pdf_signature": false,
+      "finished_at": "2026-10-12T05:55:30.942744+00:00"
+    },
+    {
+      "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "path": "/private/tmp/cmm-round48-indium-research/raw/ima2026.pdf",
+      "started_at": "2026-10-12T05:55:30.901186+00:00",
+      "status": 200,
+      "final_url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "content_type": "application/pdf",
+      "size": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "pdf_signature": true,
+      "finished_at": "2026-10-12T05:55:32.716089+00:00"
+    },
+    {
+      "url": "https://cnmnc.units.it/",
+      "path": "/private/tmp/cmm-round48-indium-research/raw/ima-landing.html",
+      "started_at": "2026-10-12T05:55:30.942860+00:00",
+      "status": 200,
+      "final_url": "https://cnmnc.units.it/",
+      "content_type": "text/html; charset=UTF-8",
+      "size": 26639,
+      "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9",
+      "pdf_signature": false,
+      "finished_at": "2026-10-12T05:55:31.661050+00:00"
+    },
+    {
+      "url": "https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0026461X25101400/resource/name/S0026461X25101400sup001.cif",
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-supplement1.cif",
+      "started_at": "2026-10-12T05:58:31.744075+00:00",
+      "status": 200,
+      "final_url": "https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0026461X25101400/resource/name/S0026461X25101400sup001.cif",
+      "content_type": "application/vnd.multiad.creator.cif",
+      "size": 79240,
+      "sha256": "b03bafcf51a648519575b42dc5c98f701b4e8a3ad0aa803fe13481307934e9e5",
+      "pdf_signature": false,
+      "finished_at": "2026-10-12T05:58:32.856325+00:00"
+    },
+    {
+      "url": "https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0026461X25101400/resource/name/S0026461X25101400sup002.xlsx",
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-supplement2.xlsx",
+      "started_at": "2026-10-12T05:58:31.745210+00:00",
+      "status": 200,
+      "final_url": "https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0026461X25101400/resource/name/S0026461X25101400sup002.xlsx",
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "size": 25182,
+      "sha256": "26a4810387162044ce2bcdd7dce09d3586a5da93c5de96dabe6fbd2a9ac595fe",
+      "pdf_signature": false,
+      "finished_at": "2026-10-12T05:58:32.295240+00:00"
+    },
+    {
+      "url": "https://ejm.copernicus.org/articles/35/397/2023/",
+      "path": "/private/tmp/cmm-round48-indium-research/raw/cnmnc-newsletter73.html",
+      "started_at": "2026-10-12T05:58:32.295321+00:00",
+      "status": 200,
+      "final_url": "https://ejm.copernicus.org/articles/35/397/2023/",
+      "content_type": "text/html",
+      "size": 178715,
+      "sha256": "bd5ef5e39f6d19b4072a444b3b04a06475fc619c09df954fcf1f54395c05e1ed",
+      "pdf_signature": false,
+      "finished_at": "2026-10-12T05:58:33.530825+00:00"
+    }
+  ],
+  "deferrals": [
+    {
+      "candidate": "Indite",
+      "status": "deferred, no record/history",
+      "new_route": "IGEM official Genkin bibliographyPDF acquired17pages; entry16 confirms1963 ZVMO92(4),445-457. Bibliographyonly, not original natural study. Prior inaccessible originalRRUFF routes not retried unchanged. Original pagination445-457 versus445-458 in later source remains unverified against original pages.",
+      "acceptance": "Acquire legitimate full original or a separate complete natural-specimen study with all relevant original graphics and methods."
+    },
+    {
+      "candidate": "Charrier2022 roquesite extension",
+      "doi": "10.1051/bsgf/2022019",
+      "status": "deferred, existing roquesite unmodified",
+      "new_route": "OfficialHALAPI resolves depositinsu-03871633 and documentURL; documentreturns200HTMLchallenge, notPDF. NewpublisherfullHTML route returned403. Nochallengebypass and no oldpublisherPDFrepeat.",
+      "acceptance": "Complete primary text and original figures/tables plus overlap assessment of actual new natural specimen findings."
+    },
+    {
+      "candidate": "Yanomamite",
+      "doi": "10.1127/ejm/6/2/0245",
+      "status": "sourceleadonly",
+      "limit": "Author-index discovery; webopenfailed. No original graphics inspected; knownRRUFFURLnotattempted. No record."
+    },
+    {
+      "candidate": "Cadmoindite",
+      "status": "sourceleadonly",
+      "limit": "OfficialZRMO2004 landing metadata/abstract only; primary133(4),21-27 byChaplygin etal. No complete original acquired and no record."
+    }
+  ],
+  "rights": {
+    "ima": "CC BY-SA3.0 Unported per originalpage2",
+    "pisa": "Institutional landing says Creative commons without exactvariant; preproof says authorcopyright. Public reading access, no bulk redistribution inferred.",
+    "publisher_supplements": "Public files; exactreuse license not independently established.",
+    "raw_policy": "All original binaries and fulltexts retained outsideGit; only provenance/assessment committed."
+  },
+  "priority_next_actions": [
+    "Independent scientific review of frozen tennantite-in target with exact original authority/main/CIF/XLSX and dossier inputs.",
+    "Keep indite and Charrier2022 source acquisition deferred until complete original evidence is available.",
+    "Optional final-typeset comparison and author clarification of listed preproof discrepancies; current narrow identity record avoids unsupported numerical imports."
+  ],
+  "artifacts": [
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/charrier-hal.pdf",
+      "bytes": 12508,
+      "sha256": "683add137b01f7b772d7b46d5c69ce7bc58becec97b5f9efd9a682fb64f62450"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/cnmnc-newsletter73.html",
+      "bytes": 178715,
+      "sha256": "bd5ef5e39f6d19b4072a444b3b04a06475fc619c09df954fcf1f54395c05e1ed"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/crossref-tennantite.json",
+      "bytes": 18693,
+      "sha256": "1b4e8c44cd02ed658c05828eea69a304716921275d0cec1db28af37b593560b0"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/genkin-library.pdf",
+      "bytes": 900026,
+      "sha256": "30b32d1c5e283554f2b5be741d901db0b5fcdf393951b2a3c232ceaf87e225c5"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/hal-charrier.json",
+      "bytes": 617,
+      "sha256": "c5624fb77641c07e3931927fc8033582a267aa0504e06eb7bc977f87a70e01b8"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/ima-landing.html",
+      "bytes": 26639,
+      "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/ima-page-001.png",
+      "bytes": 269216,
+      "sha256": "149862fcd0ef58fc62d3ca9e8e77337771848ca8936b961d0f62ab19456b1387"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/ima-page-002.png",
+      "bytes": 90856,
+      "sha256": "b13c8b53ef6d72c640b2e1032c2caaff85e715d20b5abd2a238b5a6eeaaaaba9"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/ima-page-214.png",
+      "bytes": 322202,
+      "sha256": "feb9771b9c4440cc382e5c93131d52a4d3f5fd88f3160c7c5d193a42441f2e9c"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/ima2026.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/ima2026.txt",
+      "bytes": 810749,
+      "sha256": "58a39cb3ff4fbce43491adf1c2370411fa29bf041af8d1ddc6d2015954e0031a"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-accepted.pdf",
+      "bytes": 1121784,
+      "sha256": "3b2307494cd1f48350d1443bf228afcbbf8a7faf799b75d880b87ca765ac5e44"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-01.png",
+      "bytes": 278430,
+      "sha256": "54b8695982599040a00e1a2cdad7d880cad0746ca7b22b45f67ddb8d45c13ccb"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-02.png",
+      "bytes": 325519,
+      "sha256": "3e2c4d8376a851785ade6aeaefea361992779926f33c7d3b38bfdd4bca5bfa61"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-03.png",
+      "bytes": 304657,
+      "sha256": "baa00fea1f7ad3926fccf2625528e837e9bec5a7db1ae7d3906ad2bd97a469a2"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-04.png",
+      "bytes": 298323,
+      "sha256": "7c94364994606530972515b9ba350379bf321ff2d7fbef0f2cdf71f70ccd0d75"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-05.png",
+      "bytes": 292268,
+      "sha256": "1c5682326c96abe124dd2c4ba58efd4a66c4d3131d91d9df994e369e94773789"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-06.png",
+      "bytes": 298621,
+      "sha256": "cbf688cb0bba27f7cf0b0e8dd43318fb00e5d030ec1204b40519584f863fcfcb"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-07.png",
+      "bytes": 327507,
+      "sha256": "209c7c6a28f79ea4eaf3678015e9a87bcd7d017d715228d60d240a4523bcd958"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-08.png",
+      "bytes": 324617,
+      "sha256": "e6d770fc3076974dde93e35f8db2759ebafef0da0a76372ca29c7db30725f560"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-09.png",
+      "bytes": 311238,
+      "sha256": "4a4d15d4fdcb736e55f9d1fa24adb833342d90da796603d20aa5f9ed09d2e4da"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-10.png",
+      "bytes": 311841,
+      "sha256": "34f921724f6b5feb4cf0343e2de743743ad864b5446147bb9cac76c629f5a27f"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-11.png",
+      "bytes": 311889,
+      "sha256": "6790ad15923290fce05c9536582fd2e251bec0618367f13d1286ce7d4749ea67"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-12.png",
+      "bytes": 297022,
+      "sha256": "fb4e5361ea7c8a0fc54ef8a0fdc94f2392430cd80c4aff51c3a48774c4b1a1c7"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-13.png",
+      "bytes": 295991,
+      "sha256": "e791a8333b2d8f2226f14d93c2c9bcc71aba752a13827271cbd5da38cb5353cc"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-14.png",
+      "bytes": 309532,
+      "sha256": "1d2e92c894f20a3f2bf1145cfeb3ff78a025d17f6c99c0e282d71a5e5c4c45dc"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-15.png",
+      "bytes": 141766,
+      "sha256": "b9fa6ad98f15f6118752f665c910065a425201adc3c16f14792d7f330985a123"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-16.png",
+      "bytes": 171567,
+      "sha256": "3a2b6df727ae35747b4eb6d1202354e3bcbfc43c5d8236c3b2618c565797fdf8"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-17.png",
+      "bytes": 90084,
+      "sha256": "3e8cde6b3871070b2e8b419b7326c690f38f313630e84d5eed3117bb92cfd67b"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-18.png",
+      "bytes": 166131,
+      "sha256": "749610aa21326c26e7336da63ba83594b401a8db687446279bbd87e220e1966f"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-19.png",
+      "bytes": 149746,
+      "sha256": "28d9640e62f6cbf2ea95619fbaf38808a98ed39832d759e8347b32c9c9da43b5"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-20.png",
+      "bytes": 110819,
+      "sha256": "0bb43e78f9470c89aa3fb158cc06962aee31f7254512ca0441a3322a5b96c72d"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-21.png",
+      "bytes": 320827,
+      "sha256": "22a8dd7d34cee889bd0db3052eafb8d8332382a32a9f9d91fb344e919651913d"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-22.png",
+      "bytes": 105289,
+      "sha256": "6d08c1e1afe55ff17fee600463b96f53de594e90df40820136a5997a2ba77202"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-23.png",
+      "bytes": 219101,
+      "sha256": "f44be8bf8cee423102d39a5ed0927114cfb08c0d4020683a5c620b9b8128103a"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pages/page-24.png",
+      "bytes": 185484,
+      "sha256": "9da250733af22f484e56360182e4abad2a212f873f9d023fe58a8bd03d043dc4"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pisa.html",
+      "bytes": 55404,
+      "sha256": "91892958d74a973a123237816fb79ad8bac7282ff5fc4e12664d89ceb949294b"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pisa.pdf",
+      "bytes": 1296863,
+      "sha256": "5b185dfb2748475699577fcab6c8b8cd365ce85304fc8720f0ac1f6cc94b63e2"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-pisa.txt",
+      "bytes": 59714,
+      "sha256": "0c9553b4642e72f352ad668597abacf399b10d22f97f8e97cc8a3bf80b5c35b7"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-supplement-assessment.json",
+      "bytes": 3633,
+      "sha256": "3896e4c9b3ef267fdc489ba981c26480a80573baa13ff604a8b32d7af5b09b52"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-supplement1.bin",
+      "bytes": 1121783,
+      "sha256": "f5fc41004178b417308f87964a847bd8bca7916a30dac6c2a4e6bdc336e7c3cc"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-supplement1.cif",
+      "bytes": 79240,
+      "sha256": "b03bafcf51a648519575b42dc5c98f701b4e8a3ad0aa803fe13481307934e9e5"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-supplement2-extracted.json",
+      "bytes": 64638,
+      "sha256": "d9fedf75e50aa44493e5aa6f4c548676bbc4a2b5f31d99cb1f1d093e7d593750"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-supplement2.bin",
+      "bytes": 1121783,
+      "sha256": "af50bb6c81d2f4d5577410b49752d066acb2154a7f0ad612c9b09fba072a3b97"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/raw/tennantite-supplement2.xlsx",
+      "bytes": 25182,
+      "sha256": "26a4810387162044ce2bcdd7dce09d3586a5da93c5de96dabe6fbd2a9ac595fe"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/acquisition-1.json",
+      "bytes": 1248,
+      "sha256": "36214ca0a1f87e32b850e195d474e088bceba34566f2b0802900d2f796b40266"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/acquisition-2.json",
+      "bytes": 1366,
+      "sha256": "a582ffeafc51f7219d550f3c3e4b019ec05672ecfaafb5ea4fab26beb1545240"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/acquisition-3.json",
+      "bytes": 1725,
+      "sha256": "f4f9770789e733b5abd6a60f523be8e8086fd0cc59a7a1fb43d70d99dd9a1da7"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/acquisition-4.json",
+      "bytes": 2366,
+      "sha256": "bb80bdb99d2654b11d2251e3a7ad8634dbb32e78055dcf3d6dbc0b659f461b1b"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/acquisition-5.json",
+      "bytes": 1989,
+      "sha256": "91a6bf95124f9951bc74b68bde5107e94e55f3c8cc900260eba72bcfbc3df591"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/dedup-followup.json",
+      "bytes": 16688,
+      "sha256": "d5845e98d0489cba538bbf56dc6bf86bd0ff65a875046007f92ec067d418dacb"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/dedup-selected-hits.json",
+      "bytes": 6972,
+      "sha256": "8d395aadc07b6345113b113325282bb32cbd3af0d220917ba5b58b8396962c3c"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/dedup.json",
+      "bytes": 19290,
+      "sha256": "57c3c602efad2fea059058da947e2d79bd66e0de544c73e379ca2ffdaf72eb7b"
+    },
+    {
+      "path": "/private/tmp/cmm-round48-indium-research/search-log.json",
+      "bytes": 1732,
+      "sha256": "216edc047c605da9bab1a3461429565eaa60a82809041f94955c5f5dc8f66d50"
+    }
+  ]
+}

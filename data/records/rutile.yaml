@@ -1,0 +1,154 @@
+id: cmmmech:rutile
+name: Rutile
+material_kind: mineral
+description: >-
+  Rutile is the mineral species with IMA-approved formula TiO2. The
+  September 2026 IMA list gives grandfathered status G and original
+  description year 1803; the year is not an IMA approval identifier.
+  This mineral is distinct from elemental titanium, traded titanium
+  products, rutile-bearing concentrates and other TiO2 polymorphs or
+  manufactured TiO2 nanoparticles. The curated primary experiment calls
+  its electrode coating natural rutile and reports an average mineral
+  diameter of 40 micrometres, but does not supply a specimen locality,
+  bulk chemical purity or diffraction-based phase-purity determination
+  for that coating. Its observed role is light-assisted electron transfer
+  supporting microbial iron cycling in a laboratory reactor, not
+  demonstrated transformation of rutile or recovery of titanium.
+  No criticality designation is inherited from a constituent element.
+sources:
+  - id: ima_2026_09
+    title: >-
+      IMA-CNMNC. The New IMA List of Minerals, September 2026.
+      Rutile row on PDF page 189; column definitions on page 1
+      and distribution terms on page 2.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-12'
+  - id: lu2012
+    title: >-
+      Lu A, Li Y, Jin S and colleagues (2012). Growth of non-phototrophic
+      microorganisms using solar energy through mineral photocatalysis.
+      Nature Communications 3:768. DOI 10.1038/ncomms1768.
+      Complete original eight-page article, especially Figures 1, 2 and 4,
+      Results on pages 2-5 and Methods on pages 6-7; original twelve-page
+      Supplementary Information, especially Figure S2 and pages 5-11.
+    url: https://doi.org/10.1038/ncomms1768
+    accessed_on: '2026-10-12'
+  - id: ncbi_ferrooxidans
+    title: >-
+      NCBI Taxonomy 920, Acidithiobacillus ferrooxidans, species.
+      Species identity only; not an experimental strain identifier.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920
+    accessed_on: '2026-10-12'
+  - id: genbank_hq603786
+    title: >-
+      NCBI GenBank HQ603786.1, Acidithiobacillus ferrooxidans strain
+      HZ-PKU-1 partial 16S ribosomal RNA gene, 1495 bp. The accession
+      cited by Lu et al. supplies a strain label, not functional-gene
+      evidence. Its isolation-source field says soil, whereas the
+      article describes acid-pit water; that discrepancy remains unresolved.
+    url: https://www.ncbi.nlm.nih.gov/nuccore/HQ603786.1
+    accessed_on: '2026-10-12'
+mechanisms:
+  - id: photocatalytic_support_of_iron_cycling
+    name: Natural-rutile photocatalysis associated with microbial iron cycling
+    process: other
+    description: >-
+      Illuminated rutile on a graphite electrode supplied electrons through
+      an external circuit to a separate chamber containing growing
+      Acidithiobacillus ferrooxidans and an iron-rich medium. Ferrous-iron,
+      electrical-current and cell-count observations support the authors'
+      interpretation that photoelectrons regenerate Fe(II) from Fe(III),
+      supporting further microbial Fe(II) oxidation and growth. Rutile is
+      the photocatalytic component, not the iron feed, and the bacteria
+      are spatially separated from the mineral coating. This is a coupled
+      abiotic-photochemical and microbial process; it does not establish
+      microbial Ti redox chemistry, rutile dissolution, a specific enzyme
+      pathway, isolated-metal recovery or industrial deployment.
+    context: >-
+      The source identifies the isolate by a nearly full-length 16S sequence
+      with 100% reported similarity to A. ferrooxidans and accession
+      HQ603786. NCBITaxon:920 maps the species only. The paper's Shanxi
+      acid-pit-water origin and the accession's soil field are retained
+      without harmonization. Two glass chambers of 350 mL each were
+      separated by a proton-exchange membrane and connected by a wire
+      through a 1000 ohm resistor. The mineral electrode was prepared
+      from 0.54 g powder and 0.06 g acetylene black with approximately
+      0.3 mL polytetrafluoroethylene and ethanol, spread on a 5 by 7 cm
+      graphite electrode and air-dried for 12 h. The photocatalytic
+      chamber contained 12.5 g/L ascorbic acid as a chemical hole scavenger
+      and 2.5 g/L KCl. Thus neither light nor rutile was the sole supplied
+      source of reducing equivalents. The cell chamber contained modified
+      9K medium with 41.7 g/L FeSO4·7H2O and a final inoculum of 3.5e5
+      cells/mL at 10% v/v. Isolation used medium adjusted to pH 2.2 plus
+      or minus 0.02, but a reactor pH trajectory is not supplied. The
+      magnetically stirred reactor was maintained near 30 degrees C;
+      150 rpm in the supplement refers to culture enrichment, not an
+      established reactor stirring speed. Figure 2 follows four days
+      under 380-760 nm light at approximately 13.5 mW/cm2. Figure 4
+      separately varies wavelength or intensity. Cells were counted
+      directly by microscopy, not by the CFU procedure used for another
+      species in this paper. Exact replicate numbers and error-bar
+      definitions for these rutile curves are not supplied.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+    evidence:
+      - source_ref: lu2012
+        supports: support
+        explanation: >-
+          Figures 1-2 and Methods support sustained cell growth and
+          iron cycling in the illuminated, rutile-containing circuit.
+          Dark and rutile-free comparisons also grow initially using
+          medium iron; the illuminated rutile arm continues growing
+          later. Figure 2b reports a positive association of net cell
+          growth with transferred charge, without identifying a molecular
+          electron-transfer pathway. Figure 4 shows a wavelength-dependent
+          response and an intensity response that is not monotonic:
+          growth rises between 2 and 8 mW/cm2 at 420 nm, then falls at
+          16 mW/cm2. These observations support the conditional reactor
+          association, not a universal growth benefit of rutile.
+      - source_ref: lu2012
+        supports: partial
+        explanation: >-
+          Figure 2 labels the comparison rutile-free and open circuit,
+          whereas Methods list a mineral-free anode without explicitly
+          specifying its circuit state. Separate effects of removing
+          mineral and opening the circuit therefore cannot be cleanly
+          assigned from this arm. Its caption's about-fivefold growth
+          statement lacks a specified time-point denominator and is
+          not adopted as a quantitative enhancement factor. The no-cell
+          control additionally replaces ferrous sulfate with 6.1 g/L
+          ferric chloride, so it is not a same-initial-iron-speciation
+          sterile counterpart. Supplementary Figure S2 shows additional
+          rutile-free and dark cell-free curves, but its plotted axis
+          says Fe(III) although the accompanying reduction experiment
+          is discussed in terms of Fe(II) generation. These source limits
+          prevent treating all control curves as interchangeable assays.
+      - source_ref: lu2012
+        supports: partial
+        explanation: >-
+          The Results' 2.1 micrograms/L soluble Ti(IV) value is calculated
+          from solubility assumptions, not a measured titanium-release
+          endpoint. Photon-to-biomass efficiencies are model-based
+          estimates using assumed biomass and energy conversions, not
+          measured titanium recovery. The supplementary calculation
+          contains conflicting oxidation/reduction wording, although its
+          displayed equation does multiply the oxygen-consumption rate
+          by 60 h; no missing time conversion is inferred. Figure 4 and
+          the supplement also differ in their current-density area/unit
+          descriptions. No numerical conversion efficiency or mineral
+          extraction yield is adopted here. The separate sphalerite,
+          goethite, A. faecalis and electrically biased soil-community
+          experiments are not pooled with this rutile/A. ferrooxidans arm.
+curation_history:
+  - timestamp: '2026-10-12T05:58:37Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Added the distinct IMA-grounded rutile mineral with a qualified
+      natural-mineral photocatalysis and microbial iron-cycling association
+      after full primary and supplement inspection; retained control,
+      provenance and quantitative limits without claiming Ti recovery.
+history_refs:
+  - history/records/rutile/2026-10-12T055843Z-codex-ffbafe.yaml
