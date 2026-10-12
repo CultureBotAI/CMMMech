@@ -1,0 +1,21 @@
+# Round56 independent publication readiness audit
+
+UTC: 2026-10-12T12:01:05Z. Reviewer: Codex `/root/round27_superalloy`, GPT-6, codex. Working base `934bb36319e857321840c0ae145664ca6910c382`.
+
+Verdict: **pass** within current prepublication scope; no unresolved publication finding. Reviewer authored zirconolite record, history, original dossier and validation-provenance correction. Packaging independently reviewed that science and all four dossier contexts; root independently verified correction issue172. This audit does not self-approve the authored record/correction science. Reviewer did not author the round56 README, configuration, report, frontier, manifest or operational helpers. It independently assesses parent-authored publication integrity and relies on the three separate native scientific reviews.
+
+README, report, frontier, manifest and integration/preservation snapshots agree with three new owners. Actual gates passed 317 tests with 3 skipped in 170.05 seconds, 264 records and 312 histories. Canonical checking accepts 322 review bundles; exact coverage verifies 264/264 records and 57 available review bases. Receipt/log hashes and terminal results match. The baseline is accurately described as exact-base reuse.
+
+- All three native scientific reviews match final record hashes, required histories, every dossier context and schema. Their reviewers differ from their record authors. Source limitations remain explicit; this is not a new literature review.
+- All 2131 prior base-tracked scientific/provenance files remain unchanged. README has 264 unique links matching a hidden/ignored-inclusive followed-symlink census; 370 bounded local links resolve. All 264 generated index entries match current names, material kinds and mechanism counts, and their pages exist. Actual parent render-check passed; changed site hashes are pinned in JSON.
+- 255 explicit raw path/hash bindings (218 unique) match retained bytes. Missing-root, binary-search, source-access and experiment-overlap boundaries remain declared. Hashing is not scientific acceptance.
+- The 18 operational helpers retain their independently audited hashes and 13 pure guard cases. Config changes since that audit are exactly the correction issue list and summary. No mutator or full gate was executed by this audit. Native requiredCI and exact-head peer gates remain mandatory; cleanup targets only the owned branch.
+- Governance/admission/rules snapshots support the report's bounded status. Parent preservation verifies 7187 original-main hidden/ignored entries and 8 bounded unrelated skill entries plus Git state. No whole-fleet convergence or new configuration is asserted.
+
+Issue172 is locally resolved: the original dossier's nonexistent-script command string remains preserved, with an explicit appended correction and fresh actual successful CLI receipt. Record and CREATE bytes remain unchanged; no scientific EDIT was invented. Packaging's independent review captures both original and correction pairs, and root independently verified the fix. This publication reviewer authored that correction and relies on those independent assessments. The GitHub issue remains open until merge; no premature closure is claimed.
+
+Issue 173 is also resolved locally: the initial F1 observation remains immutable, the historical round55 report stays linked, and the current report/frontier now point to round56. Exact reversal of only the two navigation edits reconstructs the original README hash. All affected links resolve; report and manifest consistently identify both review issues. No scientific artifact changed.
+
+Thirteen source issues, including 171, remain open. Complete Oyama2025 SI does not replace its missing main or resolve S4fit statistics; the newly acquired 2026 primary awaits full assessment. Conditional copper/nickel dissolution is not purified recovery, a universal microbial advantage or industrial deployment. Metamict zirconolite identity is not an assigned2M structure or microbial mechanism.
+
+Commit, isolated preflight, hosted review/CI, native queue merge, owned branch deletion and fresh postmerge validation follow this audit. Exact document/helper/site hashes, issue dispositions and evidence receipts are in the paired JSON.
