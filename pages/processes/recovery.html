@@ -34,10 +34,10 @@
   <div>
     <label for="record-kind">Material Kind</label>
     <select id="record-kind">
-      <option value="">All kinds (6)</option>
+      <option value="">All kinds (7)</option>
       <option value="element">Element (64)</option>
-      <option value="mineral">Mineral (87)</option>
-      <option value="secondary_resource">Secondary resource (55)</option>
+      <option value="mineral">Mineral (88)</option>
+      <option value="secondary_resource">Secondary resource (57)</option>
       <option value="commodity">Commodity (32)</option>
       <option value="primary_resource">Primary resource (25)</option>
       <option value="mineral_group">Mineral group (4)</option>
@@ -47,12 +47,12 @@
     <label for="record-mechanism">Mechanism Process</label>
     <select id="record-mechanism">
       <option value="">All processes</option>
-      <option value="bioleaching">Bioleaching (108)</option>
-      <option value="biomineralization">Biomineralization (33)</option>
+      <option value="bioleaching">Bioleaching (110)</option>
+      <option value="biomineralization">Biomineralization (34)</option>
       <option value="redox_transformation">Redox transformation (25)</option>
       <option value="biosorption">Biosorption (12)</option>
-      <option value="separation">Separation (8)</option>
-      <option value="recovery">Recovery (6)</option>
+      <option value="separation">Separation (9)</option>
+      <option value="recovery">Recovery (7)</option>
       <option value="other">Other (25)</option>
     </select>
   </div>
@@ -66,7 +66,7 @@
   <button type="reset">Clear filters</button>
 </form>
 
-<p id="record-count" role="status" aria-live="polite">6 materials</p>
+<p id="record-count" role="status" aria-live="polite">7 materials</p>
 <p id="record-empty" hidden>No materials match your query or filters. Clear filters to show all.</p>
 
 <div class="record-table-scroll" role="region" aria-label="Materials table" tabindex="0">
@@ -222,6 +222,36 @@
       </td>
       <td>
         <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="secondary_resource"
+        data-mechanisms="bioleaching recovery"
+        data-critical="false"
+        data-search="spent alkaline and zinc-carbon batteries spent-alkaline-zinc-carbon-batteries secondary_resource end-of-life non-button alkaline and zinc-carbon batteries, represented by a mixed aa-cell powder after dismantling, electrolyte washing and drying. this secondary resource is distinct from the curated watch/button-cell powder, nickel-metal-hydride batteries and lithium-ion battery black mass. the selected experiment treats the two primary-cell chemistries together; it does not establish separate chemistry-specific performance or a universal battery composition. constituent-element criticality is not inherited. bioleaching recovery acidithiobacillus thiooxidans ncbitaxon:930">
+      <td>
+        <a href="../materials/spent-alkaline-zinc-carbon-batteries.html"><strong>Spent alkaline and zinc-carbon batteries</strong></a>
+        <p class="record-desc">End-of-life non-button alkaline and zinc-carbon batteries, represented by a mixed AA-cell powder after dismantling, electrolyte washing and drying. This secondary resource is distinct from the curated watch/button-cell powder, nickel-metal-hydride batteries and lithium-ion battery black mass. The selected experiment treats the two primary-cell chemistries together; it does not establish separate chemistry-specific performance or a universal battery composition. Constituent-element criticality is not inherited.</p>
+      </td>
+      <td>
+        <span class="badge">secondary resource</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>2</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recovery</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Acidithiobacillus thiooxidans</li>
+        </ul>
       </td>
       <td>
         <span style="color: var(--muted); font-size: .85rem;">—</span>

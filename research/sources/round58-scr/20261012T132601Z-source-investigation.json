@@ -1,0 +1,791 @@
+{
+  "recorded_at": "2026-10-12T13:26:01.808273+00:00",
+  "investigator": "/root/round43_hardmetal (codex;GPT-6)",
+  "worktree": "/private/tmp/CMMMech-expansion-round58-20261012",
+  "base_revision": "b6014c43b8174904e80f71df22be2251a802b418",
+  "purpose": "One new distinct spentSCR catalyst secondaryresource; no criticality inheritance or industrial deployment. Research and curation handoff, not independent scientific acceptance.",
+  "record": {
+    "path": "data/records/spent-selective-catalytic-reduction-catalyst.yaml",
+    "sha256": "8afd57586e305184911ec6fdadc8f6cee8609389e40bf29912a95e1f84ac397f"
+  },
+  "history": {
+    "path": "history/records/spent-selective-catalytic-reduction-catalyst/2026-10-12T132257Z-codex-929b65.yaml",
+    "sha256": "ff9e46b75faea93fb69332f29fafdb74b617d2e00b8ed5e9159930513b98c2a6"
+  },
+  "sources": [
+    {
+      "key": "niu2025",
+      "doi": "10.20237/j.issn.1007-7545.2025.12.004",
+      "role": [
+        "primary microbial-lixiviant experiment",
+        "secondary-resource identity"
+      ],
+      "decision": "curate scoped bioacid arsenic removal and separate post-treatment regeneration context",
+      "citation": "Niu T, Xie X, Zhang X, Ma X, Feng F, Liu D, Tian B. Mild Extraction and Green Regeneration of Arsenic from Spent SCR Catalysts. Nonferrous Metals (Extractive Metallurgy),2025(12):38–45.",
+      "version": "Complete official original article; all eight pages read and visually inspected, including Figures1–3 and Tables1–7.",
+      "landing_url": "https://mete.cbpt.cnki.net/portal/journal/portal/client/paper/526345ce1bab0e280b71bb99e0bb1f12",
+      "primary_path": "/private/tmp/cmm-round58-scr-research/raw/niu2025-preview",
+      "primary_format": "application/pdf, eight pages; extensionless acquisition path is a PDF, not HTML",
+      "identity": "Original title/authors/printed DOI match official landing and live Chinese DOI resolution; registered2December2025. Crossref returned404, which does not negate the Chinese DOI registration.",
+      "supplement_scope": "No supplement link/callout identified in the complete article or acquired official landing page; no inaccessible known supplement is assumed reviewed.",
+      "license": "Public official reading access; redistribution license not identified. Original retained outside Git."
+    },
+    {
+      "key": "su2020",
+      "doi": "10.3390/su12041499",
+      "role": [
+        "primary abiotic extraction experiment",
+        "secondary-resource identity"
+      ],
+      "decision": "curate S3–S5 spent-feed results only; keep S1–S2 fresh comparators separate",
+      "citation": "Su Q, Yi X, Miao J, Chen Y, Chen J, Wang J. A Comparative Study in Vanadium and Tungsten Leaching from Various Sources of SCR Catalysts with Local Difference. Sustainability12(4):1499,18February2020.",
+      "version": "Complete official12-page PDF plus publisher XML; all pages and Figures1–9/Tables1–4 read and visually inspected.",
+      "primary_url": "https://mdpi-res.com/d_attachment/sustainability/sustainability-12-01499/article_deploy/sustainability-12-01499.pdf",
+      "primary_path": "/private/tmp/cmm-round58-scr-research/raw/su2020-primary.pdf",
+      "identity": "Original bibliographic identity matches fresh Crossref metadata. Crossref relation object empty; no correction marker in inspected XML.",
+      "supplement_scope": "Complete PDF/XML inspected; no supplementary-material callout or linked supplemental asset identified within these artifacts.",
+      "license": "CC BY4.0 in original article; originals nevertheless retained outside Git."
+    },
+    {
+      "key": "ncbi637390",
+      "role": [
+        "organism identity"
+      ],
+      "decision": "exact source-reported strain designation resolves; no independent authentication of culture",
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=637390&mode=Info",
+      "primary_path": "/private/tmp/cmm-round58-scr-research/raw/ncbi637390.html",
+      "identity": "Acidithiobacillus thiooxidans ATCC19377, taxon637390. No accession for the experimental culture or genome inferred."
+    },
+    {
+      "key": "wang2018",
+      "doi": "10.1016/j.scitotenv.2018.05.168",
+      "role": [
+        "deferred primary microbial vanadium-leaching lead"
+      ],
+      "decision": "defer all numerical, organism-specific and molecular mechanism claims pending complete original evidence",
+      "identity": "Wang S,Xie Y,Yan W,Wu X,Wang C,Zhao F. Leaching of vanadium from waste V2O5-WO3/TiO2 catalyst catalyzed by functional microorganisms. Science of the Total Environment639:497–503(2018); PII S0048969718318163; PMID29800843.",
+      "access": "Fresh official CAS article metadata, Crossref, OpenAlex and public Elsevier API inspected. API200 contains coredata only, not full text. ScienceDirect403; CAS HTTPS certificate failed but its public HTTP metadata route succeeded. No full PDF/figures/SI acquired.",
+      "limits": "Publisher API coverDate15October2018 and other date representations are not silently harmonized; exact DOI/title/pages identify the lead. Abstract/citing-paper summaries do not verify original methods. OpenAlex reported closed with no repository PDF, a dated service observation rather than proof of universal unavailability."
+    },
+    {
+      "key": "niu2021",
+      "doi": "10.1016/j.cej.2020.127722",
+      "role": [
+        "deferred regenerated-product bioleaching lead"
+      ],
+      "decision": "defer; do not merge regenerated-feed results or molecular explanation into Niu2025",
+      "identity": "Niu T and colleagues. Deep removal of arsenic from regenerated products of spent V2O5-WO3/TiO2 SCR catalysts and its concurrent activation by bioleaching through a novel mechanism. Chemical Engineering Journal420:127722(2021); online16November2020.",
+      "access": "Official University of Dundee repository landing and Crossref acquired. Its actual linked accepted manuscript https://discovery.dundee.ac.uk/files/55024594/Manuscript_Tianqi_CEJ.pdf and separate https://discovery.dundee.ac.uk/files/55024597/Figures.pdf both returned403; web-reader main route also403.",
+      "limits": "Repository abstract describes already regenerated product after alkali/acid treatment; full original methods, graphics, supplements and experiment relationship remain unverified. Niu2025 cites it as reference15; citation and shared author do not establish independent replication or authorize transplanting results.",
+      "license": "Repository declares CC BY-NC-ND accepted version, but the manuscript and figure bytes were not acquired."
+    }
+  ],
+  "search_scope": {
+    "provider": "web.run public indexed searches and official public HTTP acquisition",
+    "checked_on": "2026-10-12",
+    "exact_retained_queries": [
+      "\"10.20237/j.issn.1007-7545.2025.12.004\" correction erratum supplement",
+      "\"10.1016/j.cej.2020.127722\" supplementary supporting information",
+      "\"10.3390/su12041499\" correction",
+      "Acidithiobacillus thiooxidans ATCC 19377 NCBI taxonomy",
+      "\"su12041499\" (erratum OR correction OR retraction)",
+      "\"2025.12.004\" \"废SCR\" 勘误 撤稿",
+      "\"127722\" \"Niu\" \"correction\"",
+      "\"2018.05.168\" \"correction\""
+    ],
+    "limits": "One returned result set per query; no domain/recency filters on retained queries, no pagination. Earlier initial title/DOI discovery result dumps are archived, but their complete exact query strings were not separately preserved. Notice queries returned low-precision DOI-suffix matches and no relevant correction; this is not an exhaustive notice-clearance claim. No author contact, authentication, document-exchange request, broad home/tmp scan or access bypass.",
+    "supplement_checks": "Complete admitted PDFs plus Su publisherXML and Niu officiallanding inspected; noSI callout/link found in those bounded artifacts. Known earlier-study fulltexts are deferred, not presumed supplement-free."
+  },
+  "deduplication": {
+    "recorded_at": "2026-10-12T13:21:38.472796+00:00",
+    "pattern": "selective\\s+catalytic|DeNOx|SCR\\s+catalyst|spent[- ]scr|denitrification\\s+catalyst|2018\\.05\\.168|su12041499|2025\\.12\\.004|2020\\.127722|Mild Extraction and Green Regeneration|Deep removal of arsenic",
+    "scientific_roots": [
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history",
+      "/private/tmp/CMMMech-expansion-round58-20261012/data/records",
+      "/private/tmp/CMMMech-expansion-round58-20261012/research",
+      "/private/tmp/CMMMech-expansion-round58-20261012/reviews",
+      "/private/tmp/CMMMech-expansion-round58-20261012/history"
+    ],
+    "scientific_text_files": 4380,
+    "referenced_raw_roots": [
+      "/private/tmp/cmm-round10-b-f-raw",
+      "/private/tmp/cmm-round10-graphite-raw",
+      "/private/tmp/cmm-round10-nb-ta-raw",
+      "/private/tmp/cmm-round10-ti-zr-raw",
+      "/private/tmp/cmm-round11-be-rb-re-raw",
+      "/private/tmp/cmm-round11-he-raw",
+      "/private/tmp/cmm-round11-ir-os-hf-raw",
+      "/private/tmp/cmm-round11-lu-tm-pm-raw",
+      "/private/tmp/cmm-round12-aluminium-boron-raw",
+      "/private/tmp/cmm-round12-carbon-metals-raw",
+      "/private/tmp/cmm-round12-groups-raw",
+      "/private/tmp/cmm-round12-industrial-minerals-raw",
+      "/private/tmp/cmm-round13-grade-raw",
+      "/private/tmp/cmm-round13-mineral-raw",
+      "/private/tmp/cmm-round13-secondary-raw",
+      "/private/tmp/cmm-round14-magnet-raw",
+      "/private/tmp/cmm-round14-mineral-raw",
+      "/private/tmp/cmm-round14-product-raw",
+      "/private/tmp/cmm-round14-secondary-raw",
+      "/private/tmp/cmm-round15-brine-raw",
+      "/private/tmp/cmm-round15-mineral-raw",
+      "/private/tmp/cmm-round16-produced-water-raw",
+      "/private/tmp/cmm-round16-silicate-raw",
+      "/private/tmp/cmm-round16-vivianite-raw",
+      "/private/tmp/cmm-round17-biotite-raw",
+      "/private/tmp/cmm-round17-enstatite-raw",
+      "/private/tmp/cmm-round17-saline-raw",
+      "/private/tmp/cmm-round18-catalyst-raw",
+      "/private/tmp/cmm-round18-dunite-raw",
+      "/private/tmp/cmm-round18-mineral-feeds-raw",
+      "/private/tmp/cmm-round18-products-raw",
+      "/private/tmp/cmm-round19-hydrogenation-catalyst-raw",
+      "/private/tmp/cmm-round19-iron-manganese-raw",
+      "/private/tmp/cmm-round19-manganese-residue-raw",
+      "/private/tmp/cmm-round19-tailings-raw",
+      "/private/tmp/cmm-round20-goethite-raw",
+      "/private/tmp/cmm-round20-laterite-raw",
+      "/private/tmp/cmm-round20-mafic-tailings-raw",
+      "/private/tmp/cmm-round20-nodule-raw",
+      "/private/tmp/cmm-round21-crusts-raw",
+      "/private/tmp/cmm-round21-pcb-raw",
+      "/private/tmp/cmm-round21-ree-mud-raw",
+      "/private/tmp/cmm-round22-concretions-raw",
+      "/private/tmp/cmm-round22-pcb-raw",
+      "/private/tmp/cmm-round22-pv-raw",
+      "/private/tmp/cmm-round22-sulfides-raw",
+      "/private/tmp/cmm-round23-crusts-raw",
+      "/private/tmp/cmm-round23-ghiorse-raw",
+      "/private/tmp/cmm-round23-identity-gaps-raw",
+      "/private/tmp/cmm-round23-lcd-raw",
+      "/private/tmp/cmm-round23-rey-mud-raw",
+      "/private/tmp/cmm-round24-copper-slag-raw",
+      "/private/tmp/cmm-round24-frontier-raw",
+      "/private/tmp/cmm-round24-nimh-raw",
+      "/private/tmp/cmm-round24-sulfuric-raw",
+      "/private/tmp/cmm-round25-bf-dust-raw",
+      "/private/tmp/cmm-round25-button-raw",
+      "/private/tmp/cmm-round25-frontier-raw",
+      "/private/tmp/cmm-round25-oil-ash-raw",
+      "/private/tmp/cmm-round26-eaf-dust-raw",
+      "/private/tmp/cmm-round26-packaging-raw",
+      "/private/tmp/cmm-round26-root-raw",
+      "/private/tmp/cmm-round26-superalloy-raw",
+      "/private/tmp/cmm-round27-eaf-slag-raw",
+      "/private/tmp/cmm-round27-goethite-raw",
+      "/private/tmp/cmm-round27-packaging-raw",
+      "/private/tmp/cmm-round27-root-raw",
+      "/private/tmp/cmm-round27-superalloy-raw",
+      "/private/tmp/cmm-round28-black-shale-research",
+      "/private/tmp/cmm-round28-goethite-research",
+      "/private/tmp/cmm-round28-tatra-research",
+      "/private/tmp/cmm-round28-tire-research",
+      "/private/tmp/cmm-round29-bastnaesite-research",
+      "/private/tmp/cmm-round29-ilmenite-research",
+      "/private/tmp/cmm-round29-tungsten-waste-research",
+      "/private/tmp/cmm-round29-zinc-ore-research",
+      "/private/tmp/cmm-round30-basalt-research",
+      "/private/tmp/cmm-round30-chromite-research",
+      "/private/tmp/cmm-round30-pyrrhotite-research",
+      "/private/tmp/cmm-round30-tungsten-research",
+      "/private/tmp/cmm-round31-chromite-tailings-research",
+      "/private/tmp/cmm-round31-ilmenite-research",
+      "/private/tmp/cmm-round31-kaolin-research",
+      "/private/tmp/cmm-round31-kaolin-waste-research",
+      "/private/tmp/cmm-round31-stibnite-research",
+      "/private/tmp/cmm-round31-tungsten-research",
+      "/private/tmp/cmm-round32-arsenopyrite-research",
+      "/private/tmp/cmm-round32-bornite-research",
+      "/private/tmp/cmm-round32-chromitite-research",
+      "/private/tmp/cmm-round32-molybdenite-research",
+      "/private/tmp/cmm-round33-chalcocite-research",
+      "/private/tmp/cmm-round33-covellite-research",
+      "/private/tmp/cmm-round33-molybdenite-research",
+      "/private/tmp/cmm-round33-pyrite-research",
+      "/private/tmp/cmm-round34-galena-research",
+      "/private/tmp/cmm-round34-greigite-research",
+      "/private/tmp/cmm-round34-mackinawite-research",
+      "/private/tmp/cmm-round34-uraninite-research",
+      "/private/tmp/cmm-round35-anglesite-research",
+      "/private/tmp/cmm-round35-jarosite-research",
+      "/private/tmp/cmm-round35-ningyoite-research",
+      "/private/tmp/cmm-round35-schwertmannite-research",
+      "/private/tmp/cmm-round36-autunite-research",
+      "/private/tmp/cmm-round36-moolooite-research",
+      "/private/tmp/cmm-round36-uramphite-research",
+      "/private/tmp/cmm-round37-falottaite-research",
+      "/private/tmp/cmm-round37-humboldtine-research",
+      "/private/tmp/cmm-round37-lindbergite-research",
+      "/private/tmp/cmm-round37-rhabdophane-research",
+      "/private/tmp/cmm-round38-hausmannite-research",
+      "/private/tmp/cmm-round38-katsarosite-research",
+      "/private/tmp/cmm-round38-mimetite-research",
+      "/private/tmp/cmm-round38-vanadinite-research",
+      "/private/tmp/cmm-round39-brownrot-research",
+      "/private/tmp/cmm-round39-ree-phosphate-research",
+      "/private/tmp/cmm-round39-vanadinite-research",
+      "/private/tmp/cmm-round39-wei-manganese-research",
+      "/private/tmp/cmm-round40-birnessite-research",
+      "/private/tmp/cmm-round40-cobalt-manganese-oxide-research",
+      "/private/tmp/cmm-round40-manganese-ore-oxalates-research",
+      "/private/tmp/cmm-round40-samarium-phosphate-research",
+      "/private/tmp/cmm-round41-biogenic-birnessite-research",
+      "/private/tmp/cmm-round41-cobalt-birnessite-research",
+      "/private/tmp/cmm-round41-lateritic-cobalt-research",
+      "/private/tmp/cmm-round41-manganese-minerals-research",
+      "/private/tmp/cmm-round42-biogenic-selectivity-research",
+      "/private/tmp/cmm-round42-hardmetal-research",
+      "/private/tmp/cmm-round42-lithium-minerals-research",
+      "/private/tmp/cmm-round42-theisen-research",
+      "/private/tmp/cmm-round43-ge-independent-research",
+      "/private/tmp/cmm-round43-ge-minerals-research",
+      "/private/tmp/cmm-round43-germanium-resources-research",
+      "/private/tmp/cmm-round43-hardmetal-research",
+      "/private/tmp/cmm-round43-lithium-mixed-feeds-research",
+      "/private/tmp/cmm-round44-coal-optimization-research",
+      "/private/tmp/cmm-round44-hardmetal-2011-research",
+      "/private/tmp/cmm-round44-lithium-mixed-feeds-research",
+      "/private/tmp/cmm-round45-coal-technology-research",
+      "/private/tmp/cmm-round45-ge-minerals-research",
+      "/private/tmp/cmm-round45-indium-minerals-research",
+      "/private/tmp/cmm-round45-theisen-research",
+      "/private/tmp/cmm-round46-cassiterite-research",
+      "/private/tmp/cmm-round46-ge-minerals-research",
+      "/private/tmp/cmm-round46-laforetite-research",
+      "/private/tmp/cmm-round46-roquesite-research",
+      "/private/tmp/cmm-round47-indium-research",
+      "/private/tmp/cmm-round47-sn-minerals-research",
+      "/private/tmp/cmm-round47-tin-research",
+      "/private/tmp/cmm-round48-indium-research",
+      "/private/tmp/cmm-round48-sn-research",
+      "/private/tmp/cmm-round48-ti-research",
+      "/private/tmp/cmm-round48-zirconium-research",
+      "/private/tmp/cmm-round49-in-research",
+      "/private/tmp/cmm-round49-root-research",
+      "/private/tmp/cmm-round49-ti-research",
+      "/private/tmp/cmm-round49-zr-research",
+      "/private/tmp/cmm-round50-ftt-research",
+      "/private/tmp/cmm-round50-in-hf-research",
+      "/private/tmp/cmm-round50-ree-research",
+      "/private/tmp/cmm-round50-xenotime-feed-research",
+      "/private/tmp/cmm-round50-zircon-feed-research",
+      "/private/tmp/cmm-round51-hf-zr-research",
+      "/private/tmp/cmm-round51-monazite-research",
+      "/private/tmp/cmm-round51-ree-clay-research",
+      "/private/tmp/cmm-round51-zircon-feed-research",
+      "/private/tmp/cmm-round52-allanite-research",
+      "/private/tmp/cmm-round52-eudialyte-research",
+      "/private/tmp/cmm-round52-gold-tailings-research",
+      "/private/tmp/cmm-round52-hf-zr-research",
+      "/private/tmp/cmm-round53-allanite-leachate-research",
+      "/private/tmp/cmm-round53-hf-zr-research",
+      "/private/tmp/cmm-round53-ree-clay-research",
+      "/private/tmp/cmm-round53-zircon-feed-research",
+      "/private/tmp/cmm-round54-clay-resources-research",
+      "/private/tmp/cmm-round54-gluconobacter-research",
+      "/private/tmp/cmm-round54-mineral-frontier-research",
+      "/private/tmp/cmm-round54-tennantite-research",
+      "/private/tmp/cmm-round55-clay-recovery-research",
+      "/private/tmp/cmm-round55-enargite-research",
+      "/private/tmp/cmm-round55-tetrahedrite-research",
+      "/private/tmp/cmm-round56-chalcopyrite-enargite-research",
+      "/private/tmp/cmm-round56-enargite-carbon-research",
+      "/private/tmp/cmm-round56-nickel-arsenic-ore-research",
+      "/private/tmp/cmm-round56-zirconolite-research",
+      "/private/tmp/cmm-round57-anode-slime-research",
+      "/private/tmp/cmm-round57-electroplating-research",
+      "/private/tmp/cmm-round57-mineral-research",
+      "/private/tmp/cmm-round7-ho-er-gd-raw",
+      "/private/tmp/cmm-round7-terbium-raw",
+      "/private/tmp/cmm-round8-sc-pr-raw",
+      "/private/tmp/cmm-round9-cs-sr-raw",
+      "/private/tmp/cmm-round9-ru-rh-raw",
+      "/private/tmp/cmm-round9-si-sn-raw"
+    ],
+    "missing_referenced_candidates": [
+      "/private/tmp/cmm-round15-phosphate-raw",
+      "/private/tmp/cmm-round17-catalyst-raw",
+      "/private/tmp/cmm-round17-secondary-raw",
+      "/private/tmp/cmm-round26-bof-prior-raw",
+      "/private/tmp/cmm-round26-eaf-dust-dedup-raw",
+      "/private/tmp/cmm-round32-chromitite-raw",
+      "/private/tmp/cmm-round5-magnesium-raw",
+      "/private/tmp/cmm-round6-eu-sm-tb-raw",
+      "/private/tmp/cmm-round6-indium-raw"
+    ],
+    "unavailable_scientific_roots": [],
+    "total_read_text_files": 8329,
+    "limits": [
+      {
+        "path": "/private/tmp/cmm-round31-chromite-tailings-research/dedup-referenced-raw.txt",
+        "reason": "greater than16MB"
+      },
+      {
+        "path": "/private/tmp/cmm-round42-lithium-minerals-research/interrupted-broad-dedup-raw-hits.txt",
+        "reason": "greater than16MB"
+      },
+      {
+        "path": "/private/tmp/cmm-round43-lithium-mixed-feeds-research/dedup-raw-hits.txt",
+        "reason": "greater than16MB"
+      },
+      {
+        "path": "/private/tmp/cmm-round44-coal-optimization-research/dedup-raw.txt",
+        "reason": "greater than16MB"
+      },
+      {
+        "path": "/private/tmp/cmm-round44-hardmetal-2011-research/dedup-broad-raw.txt",
+        "reason": "greater than16MB"
+      },
+      {
+        "path": "/private/tmp/cmm-round44-lithium-mixed-feeds-research/dedup-raw-hits.txt",
+        "reason": "greater than16MB"
+      },
+      {
+        "path": "/private/tmp/cmm-round45-coal-technology-research/dedup-raw.txt",
+        "reason": "greater than16MB"
+      },
+      {
+        "path": "/private/tmp/cmm-round47-tin-research/dedup-raw.txt",
+        "reason": "greater than16MB"
+      },
+      {
+        "path": "/private/tmp/cmm-round48-ti-research/dedup-raw.txt",
+        "reason": "greater than16MB"
+      },
+      {
+        "path": "/private/tmp/cmm-round48-zirconium-research/dedup-raw.txt",
+        "reason": "greater than16MB"
+      },
+      {
+        "path": "/private/tmp/cmm-round54-clay-resources-research/dedup-raw.txt",
+        "reason": "greater than16MB"
+      },
+      {
+        "path": "/private/tmp/cmm-round54-clay-resources-research/dedup-normalized-raw.txt",
+        "reason": "greater than16MB"
+      },
+      {
+        "path": "/private/tmp/cmm-round55-clay-recovery-research/dedup-raw.txt",
+        "reason": "greater than16MB"
+      },
+      {
+        "path": "/private/tmp/cmm-round56-nickel-arsenic-ore-research/dedup-raw.txt",
+        "reason": "greater than16MB"
+      }
+    ],
+    "hits": [
+      {
+        "path": "/private/tmp/cmm-round24-sulfuric-raw/mikoda2020-companion.txt",
+        "matches": [
+          {
+            "term": "selective catalytic",
+            "context": "0 tons of catalyst from sulfuric\nacid production (Nikiforova et al. 2017); and up to 38,000\ntons of selective catalytic reduction (SCR) waste in China\nitself (Dai et al. 2018). These numbers force researchers to\nfind comprehensive methods of economic and environment-\nf"
+          },
+          {
+            "term": "spent SCR",
+            "context": " L, Ling P, Xiang J (2018) Speciation analysis and leaching\nbehaviors of selected trace elements in spent SCR catalyst.\nChemosphere 207:440–448. https://doi.org/10.1016/j.\nchemosphere.2018.05.119\n59365\nEnviron Sci Pollut Res  (2021) 28:59358–59367\n\nDing Y, Zh"
+          }
+        ],
+        "total_matches": 2
+      },
+      {
+        "path": "/private/tmp/cmm-round24-sulfuric-raw/mikoda2020.html",
+        "matches": [
+          {
+            "term": "spent SCR",
+            "context": "hemosphere; citation_title=Speciation analysis and leaching behaviors of selected trace elements in spent SCR catalyst; citation_author=Z Dai, L Wang, H Tang, Z Sun, W Liu, Y Sun, S Su, S Hu, Y Wang, K Xu, L Liu, P Ling, J Xiang; citation_volume=207; citation"
+          },
+          {
+            "term": "2018.05.168",
+            "context": "olume=639; citation_publication_date=2018; citation_pages=497-503; citation_doi=10.1016/j.scitotenv.2018.05.168; citation_id=CR55\"/>\n    <meta name=\"citation_reference\" content=\"citation_journal_title=Hydrometallurgy; citation_title=Sequential leaching of metal"
+          },
+          {
+            "term": "spent SCR",
+            "context": "K, Liu L, Ling P, Xiang J. Speciation analysis and leaching behaviors of selected trace elements in spent SCR catalyst. Chemosphere. 2018;207:440–8.\" href=\"/article/10.1007/s43452-020-00136-9#ref-CR9\" id=\"ref-link-section-d319798278e564\">9</a>]. The methods c"
+          },
+          {
+            "term": "spent SCR",
+            "context": "K, Liu L, Ling P, Xiang J. Speciation analysis and leaching behaviors of selected trace elements in spent SCR catalyst. Chemosphere. 2018;207:440–8.</p><p class=\"c-article-references__links u-hide-print\"><a data-track=\"click_references\" rel=\"nofollow noopener"
+          },
+          {
+            "term": "2018.05.168",
+            "context": "int\"><a data-track=\"click_references\" rel=\"nofollow noopener\" data-track-label=\"10.1016/j.scitotenv.2018.05.168\" data-track-item_id=\"10.1016/j.scitotenv.2018.05.168\" data-track-value=\"article reference\" data-track-action=\"article reference\" href=\"https://doi.or"
+          },
+          {
+            "term": "2018.05.168",
+            "context": "oopener\" data-track-label=\"10.1016/j.scitotenv.2018.05.168\" data-track-item_id=\"10.1016/j.scitotenv.2018.05.168\" data-track-value=\"article reference\" data-track-action=\"article reference\" href=\"https://doi.org/10.1016%2Fj.scitotenv.2018.05.168\" aria-label=\"Arti"
+          },
+          {
+            "term": "2018.05.168",
+            "context": "rticle reference\" data-track-action=\"article reference\" href=\"https://doi.org/10.1016%2Fj.scitotenv.2018.05.168\" aria-label=\"Article reference 55\" data-doi=\"10.1016/j.scitotenv.2018.05.168\">Article</a>&nbsp;\n    <a data-track=\"click_references\" data-track-actio"
+          },
+          {
+            "term": "2018.05.168",
+            "context": "/10.1016%2Fj.scitotenv.2018.05.168\" aria-label=\"Article reference 55\" data-doi=\"10.1016/j.scitotenv.2018.05.168\">Article</a>&nbsp;\n    <a data-track=\"click_references\" data-track-action=\"google scholar reference\" data-track-value=\"google scholar reference\" data"
+          },
+          {
+            "term": "2018.05.168",
+            "context": "%20by%20functional%20microorganisms&amp;journal=Sci%20Total%20Environ&amp;doi=10.1016%2Fj.scitotenv.2018.05.168&amp;volume=639&amp;pages=497-503&amp;publication_year=2018&amp;author=Wang%2CS&amp;author=Xie%2CY&amp;author=Yan%2CW&amp;author=Wu%2CX&amp;author=Wan"
+          }
+        ],
+        "total_matches": 9
+      },
+      {
+        "path": "/private/tmp/cmm-round24-sulfuric-raw/mikoda2020-companion.html",
+        "matches": [
+          {
+            "term": "selective catalytic",
+            "context": "et al. <a href=\"#CR28\" class=\"usa-link\" aria-describedby=\"CR28\">2017</a>); and up to 38,000 tons of selective catalytic reduction (SCR) waste in China itself (Dai et al. <a href=\"#CR7\" class=\"usa-link\" aria-describedby=\"CR7\">2018</a>). These numbers force researchers t"
+          },
+          {
+            "term": "spent SCR",
+            "context": "K, Liu L, Ling P, Xiang J. Speciation analysis and leaching behaviors of selected trace elements in spent SCR catalyst. Chemosphere. 2018;207:440–448. doi: 10.1016/j.chemosphere.2018.05.119.</cite> [<a href=\"https://doi.org/10.1016/j.chemosphere.2018.05.119\" "
+          }
+        ],
+        "total_matches": 2
+      },
+      {
+        "path": "/private/tmp/cmm-round24-sulfuric-raw/mikoda2020.txt",
+        "matches": [
+          {
+            "term": "spent SCR",
+            "context": " Liu L, Ling P, Xiang J. Speciation analysis and leach-\ning behaviors of selected trace elements in spent SCR catalyst. \nChemosphere. 2018;207:440–8.\n\t10.\t Marafi M, Rana MS. Metal leaching from refinery waste hydro-\nprocessing catalyst. J Environ Sci Heal A."
+          }
+        ],
+        "total_matches": 1
+      },
+      {
+        "path": "/private/tmp/cmm-round9-ru-rh-raw/rh.txt",
+        "matches": [
+          {
+            "term": "selective catalytic",
+            "context": "Palladium Alloy Nanocatalysts\n\narticle-title  A semi-encapsulated PdRh alloy heterojunction for the selective catalytic hydrogenation of nitrophenylacetylene to nitrostyrene"
+          }
+        ],
+        "total_matches": 1
+      },
+      {
+        "path": "/private/tmp/cmm-round9-ru-rh-raw/rh.xml",
+        "matches": [
+          {
+            "term": "selective catalytic",
+            "context": "n-names></name>\n</person-group><article-title>A semi-encapsulated PdRh alloy heterojunction for the selective catalytic hydrogenation of nitrophenylacetylene to nitrostyrene</article-title><source>Dalton Trans.</source><year>2022</year><volume>51</volume><issue>38</iss"
+          }
+        ],
+        "total_matches": 1
+      }
+    ],
+    "scope": "rg --files --hidden --no-ignore -L inventory; original checkout and new round58 worktree scientific trees; referenced raw/research directories identified from their text. Text-bearing formats only,16MB per file, real-path dedup. No broad home/tmp or unextracted-binary semantic search."
+  },
+  "experiment_mapping": "Niu2025 one Xinjiang spentfeed bioacid study; Su2020 separately characterized spentS3–S5 chemical study, not cross-paper controls. Niu2021 regenerated-product lead deferred. Wang2018 reference already appeared in priorraw sulfuric-catalyst bibliography, but no accepted SCR owner/experiment was found in searched corpus; six rawtext hits include those references and unrelated catalytic-hydrogenation strings. No new identifier assigned to mixedfeed.",
+  "inspected_scope": {
+    "niu2025": "All8originalpages, all7tables, all3figures and equation displays, Chinese methods/results/conclusion plus Englishabstract. Pages rendered1.6x.",
+    "su2020": "All12originalpages, all4tables, all9figures, fullmethods/results/conclusion; PDF/XML compared. Pages rendered1.4x.",
+    "earlier_studies": "Metadata only; no2018/2021originalgraphics reviewed. Successful200ElsevierAPI body checked and foundmetadata only."
+  },
+  "source_conflicts_and_limits": [
+    "Niu2025 Table2: NaOH80.62% As extraction exceeds unconcentrated bioacid35.30%, but NaOH loses28.93% W versus reported0 for bioacid. Abstract unqualified bioacid superiority is not adopted.",
+    "Niu2025 Table1 labels Ti(K),Ca(K),W(K) under common g/t units without defining K; Ti(K)664.3 is not corrected into kg/t or treated as a normalized feed inventory.",
+    "Niu2025 Tables2–7 tungsten0 has no reporting detection limit; no exact-zero chemistry, complete tungsten retention, or V/Ti retention is inferred.",
+    "Niu2025 Table7 C-Ats means twofold volume concentration from1L to0.5L, despite source single-concentration phrasing. Its81.63% is a liquid-derived As leaching fraction, not an isolated product.",
+    "Niu2025 residual<200g/t is asserted without a separate residual-solid table or total solids balance. It is not certified against an independently checked current industrial standard.",
+    "Niu2025 mechanistic thiol/metabolite identification is proposed and cites Niu2021. No direct metabolite assay is presented here. Claimed thiol deprotonation promoted by lowerpH is not adopted as established chemistry; equations and molecular interpretation are not imported.",
+    "Niu2025 selected8h/50C conditions are pragmatic rather than absolute maxima;10h and65C arms separately exceed chosen extraction. Same44.74% mean recurs with differingSD across Tables3–7; no pooled estimate generated.",
+    "Niu2025 Figure3 only compares spent, spent+V/W and bioacid-treated+V/W; it does not isolate bioacid-only catalyst performance. V/W loadings and final calcination temperature are unspecified. Original0.1g fixed-bed study is not industrial deployment.",
+    "Su2020 Methods2.2 say120minutes, conclusion says240; no unique dwell time asserted. S1/S2 are fresh and excluded from spent results. Liquid/solid15 lacks explicit unit, and working liquid/solid mass and replicate uncertainty are absent.",
+    "Su2020 Table2 oxide equivalents are not phase fractions; non-detection ofV/W crystalline peaks does not establish pureTiO2. Surface XPS fits and spectral associations do not isolate causal oxidation-state effects."
+  ],
+  "validation": {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "cmmmech",
+      "validate",
+      "data/records/spent-selective-catalytic-reduction-catalyst.yaml"
+    ],
+    "cwd": "/private/tmp/CMMMech-expansion-round58-20261012",
+    "started_at": "2026-10-12T13:23:23.980331+00:00",
+    "finished_at": "2026-10-12T13:23:27.819217+00:00",
+    "exit_code": 0,
+    "log_path": "/private/tmp/cmm-round58-scr-research/named-validation.log",
+    "log_sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e",
+    "output": "Checked 1 record(s); 0 failed.\n"
+  },
+  "schema_decision": "Existingsecondary_resource, bioleaching/separation, microbialflag, organisms and claim-level evidence sufficient. No schema/validator/tests changed; quantitativeprose retained because yields do not fit concentration-observation contract.",
+  "review_status": "Await independent reviewer and parent batch gates; no self-acceptance claimed. Named1recordvalidation passed only.",
+  "followups": [
+    {
+      "priority": 1,
+      "source": "Wang2018",
+      "acceptance": "Acquire complete legitimate original PDF/all relevant figures/tables and any SI. Verify five reported culture arms, actual organisms/community provenance, catalyst feed, pH/loading/time/controls, V denominator and biological versus chemical contributions before extending microbial V extraction in this owner. No abstract numerical import."
+    },
+    {
+      "priority": 2,
+      "source": "Niu2021",
+      "acceptance": "Acquire the institutionally linked accepted manuscript and separate Figures PDF through a legitimate accessible route plus all SI. Establish regenerated-product preparation and relationship to Niu2025 experimentally; only then decide whether this is a context-specific extension or a genuinely separate derived-feed owner. No automatic new record."
+    },
+    {
+      "priority": 3,
+      "source": "Niu2025/Su2020",
+      "acceptance": "Resolve Table1K units, zeroW reporting/detection limits, regeneration loading/calcination details, bioacid processed-medium controls, and120/240minute discrepancy from original supporting data or an authoritative correction. Preserve present uncertainty meanwhile."
+    }
+  ],
+  "raw_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/ncbi637390.html",
+      "bytes": 24025,
+      "sha256": "12cf748d0fa5e62fecf8297c12e3a3255fb6a98a094a0c2f84071e6eff817e03"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/niu2021-crossref.json",
+      "bytes": 23804,
+      "sha256": "5f6b6511f8bf6ca9d1af0576e215ea8d5687a9aef536e966190776245975ac91"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/niu2021-repository.html",
+      "bytes": 106286,
+      "sha256": "89a756c4bf7cf697baf7e7c1dee411f164280341a47faade871fdcbf03684814"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/niu2025-doi-resolution.html",
+      "bytes": 1743,
+      "sha256": "4e4c9ebdc49206e69bb934595499bab06f92233197e6beac221f671e3e2edadd"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/niu2025-landing.html",
+      "bytes": 111311,
+      "sha256": "176059830da74074062e56fcf8687de3dedae31e97819c4455fd5d5947d5f664"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/niu2025-pages/page-01.png",
+      "bytes": 306703,
+      "sha256": "d9307914b792561c6584706a0fa476e92438fbab0e87b471eb0f5127169f842f"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/niu2025-pages/page-02.png",
+      "bytes": 554716,
+      "sha256": "a4f31959b907fe89a63de7946102db7200217029a9a3f51073ba904c7def72e6"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/niu2025-pages/page-03.png",
+      "bytes": 365295,
+      "sha256": "0118caedb188ef70334c94197718600e55b7e1aefa1d9b1100a7fa0004fa0582"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/niu2025-pages/page-04.png",
+      "bytes": 375124,
+      "sha256": "cc86669d8e4087bf98f2347e40fca2f8bdb062ded0b132beb435eb15a8e0f127"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/niu2025-pages/page-05.png",
+      "bytes": 396896,
+      "sha256": "8c3b908b7842034d932fcd9b28fcfa78213512eade4aaa44cff68ab67495d67d"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/niu2025-pages/page-06.png",
+      "bytes": 322312,
+      "sha256": "4c39572ee01d2cd329e235650f979915ec18c78eec7a6a5aaf7a8b550ae5ba6a"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/niu2025-pages/page-07.png",
+      "bytes": 220139,
+      "sha256": "47cad382bdef8de7a6270dc65d6f4011f33586bc9f15eaf2df59f17e0af9cc55"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/niu2025-pages/page-08.png",
+      "bytes": 260581,
+      "sha256": "9b2e4367cc34f5a16e8d6b5d38d9cb89688ceb52b0057f9055373d6d90467478"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/niu2025-preview",
+      "bytes": 3839394,
+      "sha256": "ab167049330c8ab37ce945b86365893dc5e03fb1026052c3d3f8af599d7ce2e9"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/niu2025-text.txt",
+      "bytes": 33990,
+      "sha256": "712e551f0b7c86dea0299cb02bd35a7f631d80e40f1e930cc257d00cfd10cf2b"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/round58-niu2021-pdfweb-web.txt",
+      "bytes": 299,
+      "sha256": "6733389c7bbb6f02a6e58e695678df244f615bba24978ef9f57b2109f188a706"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/round58-notices-web.txt",
+      "bytes": 27935,
+      "sha256": "927d3c235bf865c638d274be2153848ff808dd041bce047977206473a74605ab"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/round58-scr-corrections-final-web.txt",
+      "bytes": 29828,
+      "sha256": "a751a5f390aefaf59c72ebc8d965e6c77ca1f39eed26d33a756ff09ccb558b7e"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/round58-scr-initial-1-web.txt",
+      "bytes": 34861,
+      "sha256": "0552eda37ffde79c693453bb940b08da631fdabbe7c2eb3d53bf73847b689d55"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/round58-scr-niu-web.txt",
+      "bytes": 28642,
+      "sha256": "725c13a4cdc1d608624dd92866573b41a97a5b6149920eb10472a1701160278b"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/round58-scr-routes-web.txt",
+      "bytes": 32411,
+      "sha256": "c7cd64199cdf4141015fd756122cc8080f343a6a4792fb1d0665868cec7fcdb3"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/round58-scr-web3-web.txt",
+      "bytes": 31969,
+      "sha256": "5dc65eee917cf978bdbd692d900ac934b9de487945bed04cb9c848084eaee3bf"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/su2020-crossref.json",
+      "bytes": 16641,
+      "sha256": "73750246b758c2095b13bb342de2dbbe52e4a289c129edc44722b4f8c4493289"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/su2020-pages/page-01.png",
+      "bytes": 227056,
+      "sha256": "11ae13c2fe08bb09ff9cf8d5396bdd66acdd166207a9856d2e3718eb593e6c50"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/su2020-pages/page-02.png",
+      "bytes": 236549,
+      "sha256": "c8efbeabd6a4bba05679eea64f1d597034c4d02308f9471af8ff398c86b20a4a"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/su2020-pages/page-03.png",
+      "bytes": 395663,
+      "sha256": "c403ea22d2d8a93627bb7b045a3e1b3dc3830f73fff90ea4f3891922e92ba36e"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/su2020-pages/page-04.png",
+      "bytes": 202908,
+      "sha256": "e75f57da8312f9e95672199e88c68926bcf61b5cc837ce093c9caae9c19d91d8"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/su2020-pages/page-05.png",
+      "bytes": 238754,
+      "sha256": "0c2a155211dd2ec36552ea0dc0f70302b103e84c4f84983a3a1522a643522bd8"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/su2020-pages/page-06.png",
+      "bytes": 178795,
+      "sha256": "e6f04ddd2418965816fa13ae543400a1bc27098b645d8a1da80ff19ed3460385"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/su2020-pages/page-07.png",
+      "bytes": 240856,
+      "sha256": "d8dad55818c2f0714594e59de403053b6179e36648d2aa0dc3364c46d5ee45fb"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/su2020-pages/page-08.png",
+      "bytes": 182103,
+      "sha256": "92351b23e92f9de5d33234c41b23bc9c4ffeef4797baab33e56357e9be918e67"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/su2020-pages/page-09.png",
+      "bytes": 213867,
+      "sha256": "147e90190deab4f7573be21a92a325ef973da63c049264a7636c2e04314cfd75"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/su2020-pages/page-10.png",
+      "bytes": 191447,
+      "sha256": "74a4b6e75087416c0eeacb64c33f55be8b931f07cd45d695829ea2429265db59"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/su2020-pages/page-11.png",
+      "bytes": 268145,
+      "sha256": "0b748359ee7cd4552ea0f93a82ed623d7ae01e8c7e2056596ddf9dbb03d7034b"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/su2020-pages/page-12.png",
+      "bytes": 146493,
+      "sha256": "a4ed8f112125c35dcf8afe0c3da0fa16b633425a56e9317d72f71192b2f437f2"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/su2020-primary.pdf",
+      "bytes": 3638963,
+      "sha256": "4b407a10e74ac886202a790c68c52e509f39ba1d773b47a4974aa620867c8c7d"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/su2020-primary.xml",
+      "bytes": 100529,
+      "sha256": "3c960ff30927b15548d6fe4989661bc6a302b1d03b5c9cd20f1ab30e058603ad"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/su2020-text.txt",
+      "bytes": 31471,
+      "sha256": "8ac1e11c4503c9e522e8228804a11a89e3b2c7722e98571863b5cce6ee997e83"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/wang2018-cas-http.html",
+      "bytes": 88349,
+      "sha256": "5ead236c1cc9a4e028c8aa9aca946433edc21d846a9480dc91c1851c2e7db4a0"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/wang2018-crossref.json",
+      "bytes": 20328,
+      "sha256": "35d6238940693ef56d60e9635effb471d28ca716ed1b85a992c77096e3c4da36"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/wang2018-elsevier.xml",
+      "bytes": 1862,
+      "sha256": "397308f2bd52cf7fe2de5ce6783d829ee53369bc4416328ba9b58f561a1a8850"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/raw/wang2018-openalex.json",
+      "bytes": 25746,
+      "sha256": "b426aff8f550acd528e6f2f5a0b7710ff53d3cd590209b2e7b579c4472a87248"
+    }
+  ],
+  "receipts": [
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/acquisition-initial.json",
+      "sha256": "f8dbd595f18760e9a9cba9b5a55087d992d987a9e9655bfe34c6cf4f8be31d57"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/acquisition-second.json",
+      "sha256": "85cfec1c240f1a8828d491e289fe69f70ca52b4862aaea1d2294a641481bd7d3"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/acquisition-third.json",
+      "sha256": "606f81fe5b3a5bd83f4a02e760320c9dfeefae13f8673e504bc064e00a8fbb54"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/acquisition-fourth.json",
+      "sha256": "f588609e657aa6cfad45eb005d422e942b07b7ec5e30fc4cad24fecf7d48aafa"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/acquisition-fifth.json",
+      "sha256": "4269580725ce8e268ab16c2b86b9105814c01413a3c8f95ff37c7359c33a37d0"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/acquisition-sixth.json",
+      "sha256": "10644e464090ccf8f4131527eb7b1d4d986ccc556d2083ce12dda5ad565c1121"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/dedup.json",
+      "sha256": "cef78e4c3e94929a5eacad129406805f8f7b2ad0692ec7162645c92f814baf6e"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/dedup-final-before-curation.json",
+      "sha256": "1d86d70507eb845875140158041283df9084a20bb261a119ba1d1e64ba1054f1"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/named-validation.json",
+      "sha256": "d8109757201adbcbf404026128237e0d40b4262445b4126f647874047246bdc3"
+    },
+    {
+      "path": "/private/tmp/cmm-round58-scr-research/named-validation.log",
+      "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e"
+    }
+  ]
+}

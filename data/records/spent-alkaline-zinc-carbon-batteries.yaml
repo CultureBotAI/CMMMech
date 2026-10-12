@@ -1,0 +1,135 @@
+id: cmmmech:spent-alkaline-zinc-carbon-batteries
+name: Spent alkaline and zinc-carbon batteries
+material_kind: secondary_resource
+description: End-of-life non-button alkaline and zinc-carbon batteries, represented by a mixed AA-cell
+  powder after dismantling, electrolyte washing and drying. This secondary resource is distinct
+  from the curated watch/button-cell powder, nickel-metal-hydride batteries and lithium-ion battery
+  black mass. The selected experiment treats the two primary-cell chemistries together; it does
+  not establish separate chemistry-specific performance or a universal battery composition. Constituent-element
+  criticality is not inherited.
+sources:
+- id: falco2014
+  title: Falco, Martínez, Di Nanno, Thomas and Curutchet (2014). Study of a pilot plant for the
+    recovery of metals from spent alkaline and zinc-carbon batteries with biological sulphuric acid
+    and polythionate production. Latin American Applied Research 44(2):123–129. DOI 10.52292/j.laar.2014.429;
+    complete seven-page publisher PDF, Methods II.A–H, Results III.A–C, Figures 1–7 and Table 1.
+  url: https://doi.org/10.52292/j.laar.2014.429
+  accessed_on: '2026-10-12'
+- id: dsm11478
+  title: 'DSMZ catalogue: Acidithiobacillus thiooxidans DSM 11478, strain Tth04. Collection identity
+    does not authenticate the experimental stock.'
+  url: https://www.dsmz.de/collection/catalogue/details/culture/DSM-11478
+  accessed_on: '2026-10-12'
+- id: ncbi930
+  title: 'NCBI Taxonomy 930: Acidithiobacillus thiooxidans, species identity.'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info
+  accessed_on: '2026-10-12'
+mechanisms:
+- id: biogenic_acid_medium_leaching
+  name: Indirect leaching with a sulfur-oxidizing culture medium
+  process: bioleaching
+  microbial: true
+  organisms:
+  - id: NCBITaxon:930
+    label: Acidithiobacillus thiooxidans
+  description: Sulfur-grown Acidithiobacillus thiooxidans DSM 11478 produced an acidified, polythionate-containing
+    medium in a separate air-lift reactor. This medium mobilized Zn and Mn from prepared mixed AA
+    battery powder. Microbial involvement is upstream lixiviant production; direct cell attack on
+    the battery powder and an isolated polythionate-specific causal effect were not demonstrated.
+    Removal or inactivation of all cells before the leaching stage was not established.
+  context: 'Methods II.B–F, pp.124–125: mixed spent AA alkaline and Zn-C cells of different brands
+    were opened; casing, ferrous components, plastic and paper were separated, powder was washed
+    with distilled water and dried overnight at a printed 150 degrees without an explicit temperature-unit
+    letter. Figure 1 also separates a zinc can. Table 1 reports mixed-powder compositions both with
+    and without that can, without transparently binding one of those assays to every extraction
+    denominator. No absolute whole-cell inventory is reconstructed. The culture was maintained at
+    30 degrees C and 180 rpm in mineral salts medium, initially pH 2.5 with 1% m/V elemental sulfur.
+    The 26.5-L total-volume air-lift reactor held sulfur as substrate and attachment support, was
+    maintained at 30 degrees C and was inoculated once; acidified liquid was replaced with fresh
+    mineral medium without reinoculation. The conclusion selects 8 kg sulfur, 10 L medium, 138 L/h
+    air and a 350 mM proton endpoint. These are acid-production settings, not a claim of 10 L battery-leaching
+    volume. The separate 50-L leaching vessel contained 2 kg prepared powder and 28 L biological
+    medium at pH near 0.4, stirred at 200 rpm. Medium was replaced when pH and dissolved-metal measurements
+    plateaued. Leaching-stage temperature and a full sampling/mass-balance correction were not specified.
+    The authors call the integrated apparatus a pilot plant; the stated vessel and feed scales do
+    not establish commercial deployment.'
+  evidence:
+  - source_ref: falco2014
+    supports: support
+    explanation: Figures 1–4 and Methods II.B–C distinguish culture-based acid production from subsequent
+      powder treatment. Figure 4 reports protons, sulfate, polythionates and free cells during the
+      reactor time course. Results III.B, p.127 and Figure 6 report 100% Zn and 65% Mn extraction
+      after two fresh-medium loads. These are source-reported percentages for prepared powder, not
+      isolated-product or whole-battery yields. Figure 6 plots metal-extracted percent despite its
+      concentration caption; the first- and second-load bars are not summed here, and cumulative
+      accounting is not independently reconstructed. The abstract instead reports 67% Mn, an unresolved
+      difference retained without harmonization.
+  - source_ref: falco2014
+    supports: partial
+    explanation: Methods II.F and Results III.B describe S1 commercial sulfuric acid and S2 biological
+      medium at the same stated acid concentration. The prose reports 60% more extracted Mn and
+      40% more Zn in S2 relative to S1, but does not supply the underlying numerical series, uncertainty,
+      matched evolving pH/composition or a sterile sulfur-reactor control. These relative increases
+      are not extraction percentages or evidence that live-cell contact was necessary. Equation
+      6 is a proposed generalized polythionate reaction, not a separately tested molecular pathway.
+      Reactor productivity errors elsewhere refer to successive steps rather than independent battery-leaching
+      replicates.
+  - source_ref: falco2014
+    supports: partial
+    explanation: Table 1 and Figure 5 establish heterogeneous Zn/Mn-containing feed, including residual
+      K in the EDS spectrum despite electrolyte washing. Results III.B characterize remaining solid
+      as Mn/O-rich; the reported Mn2O3 diffraction assignment concerns material calcined at 500
+      degrees C, not a directly established as-leached crystalline phase. Partial Mn extraction
+      remains explicit. Figure 4 also shows free-cell counts declining late in the acid-production
+      run; acid production is not evidence of unrestricted culture tolerance or indefinite performance.
+  - source_ref: dsm11478
+    supports: context_only
+    explanation: The current DSMZ record assigns DSM 11478/Tth04 to Acidithiobacillus thiooxidans
+      and records mine-drainage provenance. This corroborates the reported culture-collection label,
+      without independent authentication of cells used in the 2014 experiment.
+  - source_ref: ncbi930
+    supports: context_only
+    explanation: The species-level NCBI identifier identifies A. thiooxidans; it does not encode
+      the experimental strain or prove its causal contribution.
+- id: downstream_leachate_electrolysis
+  name: Separate electrolysis of the biologically generated leachate
+  process: recovery
+  microbial: false
+  description: An externally powered electrolysis stage deposited a source-assigned metallic Zn
+    cathodic solid and a Mn-oxide anodic solid from an aliquot of the preceding leachate. This stage
+    is electrochemical, not demonstrated microbial electrodeposition. Deposits and source-reported
+    leachate recovery are documented, but the experiment does not establish a closed whole-battery
+    recovery yield, battery-grade products or commercial production.
+  context: Methods II.G–H, p.125 used 6.5 L leaching liquor, two stainless-steel electrodes separated
+    by 25 cm, average current density 100 A/m2, atmospheric pressure and room temperature. Bath
+    samples were analyzed by atomic absorption and pH, and end-of-run solids by acid digestion/atomic
+    absorption, SEM-EDS, diffraction and BET methods. The article does not provide a complete deposit-mass
+    and metal-inventory reconciliation across washing, leaching, liquid replacement, sampling and
+    electrolysis.
+  evidence:
+  - source_ref: falco2014
+    supports: support
+    explanation: Results III.C, pp.127–128 reports 36% Mn and 66% Zn recovery from leaching solution
+      after 68 hours, with metallic Zn described at the cathode and brown Mn oxide at the anode.
+      These leachate-stage percentages are not multiplied by leaching percentages to infer overall
+      recovery. Figure 7 shows the anodic solid's laminar morphology, not a quantitative purity
+      or phase determination.
+  - source_ref: falco2014
+    supports: partial
+    explanation: Current efficiency for both deposits was below 10%. The bath became green and the
+      anode lost mass; the authors attribute the principal Fe impurity to electrode corrosion. The
+      reported Zn deposit purity is 90%; Mn-oxide purity is 82% in Results and 85% in Conclusions.
+      The final electrolysis pH is described as 1.8 and later 1.5. These unresolved differences
+      and low efficiencies are preserved. The Mn2O3 assignment again follows 500-degree-C calcination;
+      it cannot establish an identical crystalline phase in the untreated anodic deposit. Claimed
+      economic and ecological advantages were not a demonstrated full process cost or life-cycle
+      assessment.
+curation_history:
+- timestamp: '2026-10-12T13:19:52.376103+00:00'
+  curator: Codex (GPT-6; codex)
+  action: CREATE
+  summary: Created the mixed spent AA alkaline/zinc-carbon resource from full primary evidence,
+    distinguishing upstream biological medium production, qualified powder leaching and separate
+    electrolysis while retaining source and mass-balance limits.
+history_refs:
+- history/records/spent-alkaline-zinc-carbon-batteries/2026-10-12T131959Z-codex-734d22.yaml

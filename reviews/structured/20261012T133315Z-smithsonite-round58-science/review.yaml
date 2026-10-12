@@ -1,0 +1,421 @@
+schema_version: 1.0.0
+review_id: 20261012T133315Z-smithsonite-round58-science
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of smithsonite
+started_at: '2026-10-12T13:26:57.948505Z'
+finished_at: '2026-10-12T13:33:15.994938Z'
+reviewer:
+  identity: Codex /root/round43_hardmetal
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The superalloy agent authored smithsonite, its CREATE and paired
+    dossier. This reviewer authored the separate spentSCR contribution and changed
+    none of these reviewed inputs. Native inspect captured all five inputs before
+    scientific judgment.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The current mineral owner and qualified culture-associated dry-phase assignment
+  are supported. The record preserves source preparation, missing culture conditions,
+  controls, species/stock limits and aqueous-depletion versus mineral-yield distinctions.
+  No corrective finding in this captured state.
+source:
+  git_revision: b6014c43b8174904e80f71df22be2251a802b418
+  state: working_tree
+  inputs:
+  - path: data/records/smithsonite.yaml
+    sha256: 35d845d7a0ae5608ed5a7c37e7e35b6928e330ef968a3cb65c9cc1bdd9883e85
+    role: target
+  - path: history/records/smithsonite/2026-10-12T132345Z-codex-ba48e7.yaml
+    sha256: d197dd7e86e617ff3f2a0de33d712255026cf63fe1b4006d7f77c33be5ffb376
+    role: context
+  - path: research/sources/round58-mineral/20261012T132617Z-source-investigation.json
+    sha256: 6300a221c4bbc55634f02553e7fbef4c00c2b709a9e6a528b8b70beef0984eef
+    role: context
+  - path: research/sources/round58-mineral/20261012T132617Z-source-investigation.md
+    sha256: 03dd5854674c0cceac21869e769365fedbc784e19124c854f41baadd0ccab211
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:smithsonite
+  path: data/records/smithsonite.yaml
+  label: Smithsonite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/smithsonite.yaml
+    role: maintained record
+scope:
+  description: Full frozen record, CREATE, paired dossier and schema; all ten original
+    primary pages and four figures/two tables, authority originals and live identifiers,
+    bounded notice/dedup checks.
+  selection: Assigned independent review of one newly curated mineral owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:smithsonite
+checks:
+- check_id: named
+  name: Independent named record validation
+  command: uv run --locked cmmmech validate data/records/smithsonite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:smithsonite
+  summary: Actually executed by reviewer in round58; one record checked, zero failed.
+- check_id: integrity
+  name: Frozen input and source integrity
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:smithsonite
+  summary: Five native captured inputs plus39raw and17receipt hashes verified; source
+    PDF/render mapping and exact native state checked.
+- check_id: cohort_batch
+  name: Completed cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:smithsonite
+  summary: Executed by coordinator, actual terminal and all exact log hashes independently
+    checked.317tests passed/3skipped;270records and318histories. Full suite not duplicated
+    by reviewer.
+- check_id: cohort_nonempty
+  name: Completed cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:smithsonite
+  summary: Executed by coordinator, actual terminal and all exact log hashes independently
+    checked.317tests passed/3skipped;270records and318histories. Full suite not duplicated
+    by reviewer.
+- check_id: cohort_history
+  name: Completed cohort history
+  command: uv run --locked cmmmech validate-history --base b6014c43b8174904e80f71df22be2251a802b418
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:smithsonite
+  summary: Executed by coordinator, actual terminal and all exact log hashes independently
+    checked.317tests passed/3skipped;270records and318histories. Full suite not duplicated
+    by reviewer.
+- check_id: cohort_render_check
+  name: Completed cohort render-check
+  command: just render-check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:smithsonite
+  summary: Executed by coordinator, actual terminal and all exact log hashes independently
+    checked.317tests passed/3skipped;270records and318histories. Full suite not duplicated
+    by reviewer.
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/smithsonite.yaml
+  locator: Entire exact captured input
+  accessed_at: '2026-10-12T13:33:15.994938Z'
+  support: supports
+  summary: Read independently and hash-rechecked; uncommitted working-tree provenance
+    retained.
+  snapshot_sha256: 35d845d7a0ae5608ed5a7c37e7e35b6928e330ef968a3cb65c9cc1bdd9883e85
+- evidence_id: history
+  kind: record_content
+  reference: history/records/smithsonite/2026-10-12T132345Z-codex-ba48e7.yaml
+  locator: Entire exact captured input
+  accessed_at: '2026-10-12T13:33:15.994938Z'
+  support: supports
+  summary: Read independently and hash-rechecked; uncommitted working-tree provenance
+    retained.
+  snapshot_sha256: d197dd7e86e617ff3f2a0de33d712255026cf63fe1b4006d7f77c33be5ffb376
+- evidence_id: dossier_json
+  kind: record_content
+  reference: research/sources/round58-mineral/20261012T132617Z-source-investigation.json
+  locator: Entire exact captured input
+  accessed_at: '2026-10-12T13:33:15.994938Z'
+  support: supports
+  summary: Read independently and hash-rechecked; uncommitted working-tree provenance
+    retained.
+  snapshot_sha256: 6300a221c4bbc55634f02553e7fbef4c00c2b709a9e6a528b8b70beef0984eef
+- evidence_id: dossier_md
+  kind: record_content
+  reference: research/sources/round58-mineral/20261012T132617Z-source-investigation.md
+  locator: Entire exact captured input
+  accessed_at: '2026-10-12T13:33:15.994938Z'
+  support: supports
+  summary: Read independently and hash-rechecked; uncommitted working-tree provenance
+    retained.
+  snapshot_sha256: 03dd5854674c0cceac21869e769365fedbc784e19124c854f41baadd0ccab211
+- evidence_id: schema
+  kind: record_content
+  reference: src/cmmmech/schema/cmmmech.yaml
+  locator: Entire exact captured input
+  accessed_at: '2026-10-12T13:33:15.994938Z'
+  support: supports
+  summary: Read independently and hash-rechecked; uncommitted working-tree provenance
+    retained.
+  snapshot_sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.bgtech.2024.100106
+  locator: Complete official ten-page PDF; all methods/results, Figures1–4 and Tables1–2;
+    enlarged original Figure2U
+  accessed_at: '2026-10-12T13:33:15.994938Z'
+  support: supports
+  summary: Qualitative ZnCO3/smithsonite assignment pertains to the traditional10mMZn/100mMurea
+    solid dried105C. Other assays measure aqueous endpoints, with sequential-assay
+    exposure durations differing. Every page/figure/table inspected; neither wet-state
+    identity nor isolated mineral yield established.
+  snapshot_sha256: 7e62e52d603bc7d26d7bc402ba9b653f9bd60c351283aea8603d19aff1f6cbe6
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Original page1 definitions and page201 Smithsonite row; live issuing-home
+    page September2026 link
+  accessed_at: '2026-10-12T13:33:15.994938Z'
+  support: supports
+  summary: Smithsonite Zn(CO3),grandfatheredG,1832 is correctly represented. The year
+    is an original-description year rather than an approval identifier.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://handbookofmineralogy.org/pdfs/smithsonite.pdf
+  locator: Complete one-page original mineral datasheet
+  accessed_at: '2026-10-12T13:33:15.994938Z'
+  support: supports
+  summary: Calcite-group, oxidized-zinc-deposit replacement context supports the natural
+    mineral owner. No natural composition is transferred to the laboratory product.
+  snapshot_sha256: d077075a7130dbea3d9a46bd56c29f052bbb46ab7da2dfce89555735cac1e07f
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1474&mode=info
+  locator: Official species entry, synonym and taxon rank; independently opened live
+  accessed_at: '2026-10-12T13:33:15.994938Z'
+  support: supports
+  summary: NCBI1474 is Sporosarcina pasteurii, with Bacillus pasteurii synonym. This
+    verifies species scope and does not authenticate BNCC337394 or justify using a
+    type-strain accession.
+  snapshot_sha256: 38f831c7baddd904abeb9211dcbbf2f96754bdff1bbc976daf9c769e7bad1ecd
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round58-smithsonite-independent/smithsonite-round58-independent-web.txt
+  locator: Two independent DOI/title notice queries plus official publisher/authority
+    opens
+  accessed_at: '2026-10-12T13:33:15.994938Z'
+  support: supports
+  summary: No affecting correction surfaced in returned source sets. The HEP landing
+    web-reader errored; its retained original PDF, complete pages and publication
+    metadata were inspected. No inaccessible source or supplementary file is claimed
+    reviewed.
+  snapshot_sha256: 35d80f68f6950ba133439b6bb9a8ce4d731ba27fc717f4aa44ad223da9a59a60
+  search_scope: Queries "10.1016/j.bgtech.2024.100106" correction retraction and "Comparison
+    of the efficiency of traditional MICP" corrigendum erratum; one returned set each
+    on12October2026, no date/domain filters or pagination. Opened official HEP landing,
+    IMA home and NCBI1474. Bounded notice check, not universal absence.
+- evidence_id: authorities_live
+  kind: authority
+  reference: /private/tmp/cmm-round58-smithsonite-independent/smithsonite-round58-authorities-web.txt
+  locator: Live IMA home lines72–75 and NCBI1474 identity/rank/synonym
+  accessed_at: '2026-10-12T13:33:15.994938Z'
+  support: supports
+  summary: Current issuing site points to September2026; NCBI species and historical
+    name match the record. Retained local authority bytes and fresh official web readings
+    are distinguished.
+  snapshot_sha256: 17ffbcfa7038e6196e9663973bed198ec7c4c50774c2006eab064026830f4a99
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round58-smithsonite-independent/bounded-dedup.json
+  locator: Independent current/original scientific-tree and curator-cited raw-root
+    query
+  accessed_at: '2026-10-12T13:33:15.994938Z'
+  support: supports
+  summary: Hits were inspected for material and exact experiment context; existing
+    mixed oxidized-zinc-ore/element mentions do not denote this mineral owner. Only
+    current contribution adopts the exact Huang2025 experiment within the inspected
+    boundary.
+  snapshot_sha256: 4cadbb2ff6bfa645aaa1c14776621d8e02cb1166d19ba7a357c37e36e2893cea
+  search_scope: Hidden and ignored included; relevant symlinks followed. Current and
+    original scientific roots plus curator-cited existing raw directories. Binary
+    suppression retained; no OCR or machine-wide absence claim. Pattern smithsonite|bgtech[.]2024[.]100106|BNCC337394.193
+    extant cited raw directories;20 literally absent candidates and four other non-directory
+    file references were excluded. These include punctuation/file-like strings, so
+    the candidate count is not a count of verified lost datasets.
+- evidence_id: verification
+  kind: validation
+  reference: /private/tmp/cmm-round58-smithsonite-independent/verification.json
+  locator: Native inputs, source manifest, named check and completed coordinator receipts
+  accessed_at: '2026-10-12T13:33:15.994938Z'
+  support: supports
+  summary: All declared hashes match; deterministic checks pass but are not experimental
+    replication. Original failed curator attempts remain disclosed and are not mislabeled
+    success.
+  snapshot_sha256: 0d974940f8fe4dd622625abdcbee0ecd6d77262ff5b97173106ac89b860229bb
+- evidence_id: cohort
+  kind: validation
+  reference: /private/tmp/cmm-round58-final-terminal.json
+  locator: Four completed commands and independently hash-verified logs
+  accessed_at: '2026-10-12T13:33:15.994938Z'
+  support: supports
+  summary: Actual317passed/3skipped,270records/318histories; nonempty,history-base
+    and render-check all pass.
+  snapshot_sha256: 51a83e37cc6acd134e3a2f8aa0a0fefd08f1917367d8673b442170c7e1e6e13c
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral identity, natural occurrence and experimental material
+  outcome: supported
+  target_ids:
+  - cmmmech:smithsonite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  - dedup
+  summary: Current smithsonite mineral identity is supported and separated from elementalZn,
+    aqueousZnCl2, hydrozincite and mixedore. The experiment concerns a prepared laboratory
+    solid, not natural-ore extraction.
+  dimensions:
+  - name: material_form
+    value: Smithsonite mineral; experimentally assigned dry precipitate
+    definition: Natural IMA species and manufactured specimen remain conceptually
+      distinct.
+    evidence_ids:
+    - record
+    - ima
+    - primary
+  - name: criticality
+    value: Not asserted
+    definition: No constituent-zinc designation or unspecified jurisdiction/list/edition
+      is inherited.
+    evidence_ids:
+    - record
+- assessment_id: mechanism
+  area: evidence
+  topic: Culture-associated precipitation and causal scope
+  outcome: supported
+  target_ids:
+  - cmmmech:smithsonite
+  evidence_ids:
+  - record
+  - primary
+  - taxonomy
+  summary: Figure2U and Section3.2 support the dry-specimen phase assignment. Prepared
+    cells, urea and ZnCl2 were combined; ureolysis and nucleation mechanisms remain
+    interpretations rather than demonstrated necessity.
+  dimensions:
+  - name: organism
+    value: Source-reported Bacillus pasteurii BNCC337394; species mapping Sporosarcina
+      pasteurii
+    definition: NCBI1474 is species-level only; no culture authentication, sequencing
+      or viability measurement inferred.
+    evidence_ids:
+    - primary
+    - taxonomy
+    - record
+  - name: conditions
+    value: Traditional5mLcell/5mLurea/10mLZn solution,24h; nominal10mMZn and100mMurea
+      for XRD
+    definition: Stock/final concentration ambiguity is preserved; physical assay temperature
+      and detailed culture recipe are not reconstructed from model30C or unavailable
+      prior methods.
+    evidence_ids:
+    - primary
+    - record
+  - name: controls
+    value: Dose/sequence comparisons; no matched uninoculated/killed/no-urea/pH-matched
+      precipitation arms
+    definition: Computational equilibrium is not an abiotic experimental control;
+      culture association is the supported scope.
+    evidence_ids:
+    - primary
+    - record
+  - name: solid_preparation
+    value: 105C drying, grinding,0.1mm sieve,40C desiccation
+    definition: Qualitative dry-product XRD does not establish wet phase, unchanged
+      precursor or quantitative purity.
+    evidence_ids:
+    - primary
+    - record
+- assessment_id: quantitative_scope
+  area: evidence
+  topic: Endpoint depletion, modeling and sequential assays
+  outcome: supported
+  target_ids:
+  - cmmmech:smithsonite
+  evidence_ids:
+  - primary
+  - record
+  summary: The99.89/40.67% endpoints are source-reported aqueous removal at1/10mMZn
+    with100mMurea, not smithsonite yield. The50mMurea delayed assays lack corresponding
+    phase evidence and correctly remain context_only. Nonmonotonic Figure4E and model-versus-test
+    disagreement are retained.
+  dimensions:
+  - name: denominator
+    value: Initial aqueous metal concentration in Equation1
+    definition: No isolated product recovery, phase fraction or mass-balanced mineral
+      yield.
+    evidence_ids:
+    - primary
+    - record
+  - name: timing
+    value: Fixed24h total from initialcells+urea mixing; Zn added aftervariableT1
+    definition: Endpoints have unequal Zn-exposure durations; x-axis is not a Zn-removal
+      kinetic timecourse.
+    evidence_ids:
+    - primary
+    - record
+  - name: deployment
+    value: Laboratory tube assay
+    definition: No industrial process, natural-mineral extraction or field recovery
+      demonstrated.
+    evidence_ids:
+    - primary
+    - record
+- assessment_id: provenance
+  area: provenance
+  topic: Frozen state, source boundaries and actual validation
+  outcome: supported
+  target_ids:
+  - cmmmech:smithsonite
+  evidence_ids:
+  - history
+  - dossier_json
+  - dossier_md
+  - schema
+  - verification
+  - cohort
+  - notices
+  summary: Actual CREATE and separate inline provenance accurately describe the new
+    record. Five frozen native inputs are bound; all39raw/17receipt hashes and actual
+    completed gates are verified. Failed source/identifier probes remain rejected;
+    missing2024culture methods are disclosed without fabricated detail.
+findings: []
+actions: []
+limitations:
+- No independent experimental replication, raw instrument data or wet-state diffraction;
+  qualitative source assignment only.
+- Detailed culture methods in DOI10.1016/j.jenvman.2023.119868 remain unavailable;
+  experimental stock authentication and physical assay temperature are unresolved
+  and correctly omitted.
+- No matched causal precipitation controls; cell-associated observation does not establish
+  urease necessity or cell-surface nucleation.
+- No separate SI was identified in the complete primary article and declared landing
+  inventory; this is not a universal absence claim. Earlier unavailable natural-biotransformation
+  studies were not reassessed.
+- Bounded hidden/ignored/followed searches exclude unextracted binaries and unrelated
+  filesystem roots; missing cited candidates remain disclosed.
+- Independent review concerns smithsonite only; this is not self-review or acceptance
+  of this reviewer’s separate spentSCR record.
