@@ -1,0 +1,150 @@
+id: cmmmech:allanite-leachate
+name: Allanite-derived rare-earth leachate
+material_kind: secondary_resource
+description: >-
+  A rare-earth-bearing processing liquor generated from allanite ore, represented
+  here by the chemically purified and reconstituted Halleck Creek, Wyoming feed
+  used by Lu et al. (2026). Acid leaching, impurity precipitation, REE hydroxide
+  precipitation and hydrochloric-acid redissolution precede the biological-reagent
+  experiment. This processing intermediate is distinct from geological ore,
+  beneficiated allanite concentrate, a pure allanite species and an isolated REE
+  product. Its classification reflects chemical processing, not extraction alone.
+  No criticality designation is inherited from its constituents.
+sources:
+- id: lu2026
+  title: >-
+    Lu J et al. (2026). Bio-based oxalic acid production in Issatchenkia orientalis
+    enables sustainable rare earth recovery. Nature Communications 17:2193.
+    DOI 10.1038/s41467-026-68957-5; original article, Figures 2-4 and Methods,
+    especially Precipitation test, pages 7-9.
+  url: https://doi.org/10.1038/s41467-026-68957-5
+  accessed_on: '2026-10-12'
+- id: lu2026_supplement
+  title: >-
+    Lu et al. (2026), Supplementary Information, 28-page original PDF;
+    Supplementary Methods 1-2, Table 1 (strain construction), Table 3 (single-Nd
+    XRD assignment), Figures S6-S8 (production and separate precipitation arms).
+  url: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-026-68957-5/MediaObjects/41467_2026_68957_MOESM1_ESM.pdf
+  accessed_on: '2026-10-12'
+- id: lu2026_data1
+  title: >-
+    Lu et al. (2026), Supplementary Data 1, original MOESM4 workbook;
+    Raw Data and Volume Additions plus Analysis of OAP-O, OAP-A and OAP-B sheets,
+    including initial volumes, sequential sampling, dilution corrections and
+    calculated removal rows 66-77.
+  url: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-026-68957-5/MediaObjects/41467_2026_68957_MOESM4_ESM.xlsx
+  accessed_on: '2026-10-12'
+- id: lu2026_source_data
+  title: >-
+    Lu et al. (2026), Source Data, original MOESM11 workbook;
+    Fig.2, Fig.3a and 3b, Fig.3c, Fig.3d and Fig. S1 to S8 sheets.
+  url: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-026-68957-5/MediaObjects/41467_2026_68957_MOESM11_ESM.xlsx
+  accessed_on: '2026-10-12'
+- id: ncbi_kudriavzevii
+  title: >-
+    NCBI Taxonomy 4909, Pichia kudriavzevii, species; Issatchenkia orientalis is
+    listed as a heterotypic synonym. This species identifier does not identify
+    engineered strain JL04 or authenticate the experimental stock.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=4909&mode=Info
+  accessed_on: '2026-10-12'
+mechanisms:
+- id: yeast_supernatant_oxalate_precipitation
+  name: Yeast-produced oxalate precipitates REEs from prepared leachate
+  process: biomineralization
+  microbial: true
+  organisms:
+  - id: NCBITaxon:4909
+    label: Pichia kudriavzevii
+  description: >-
+    Oxalate-containing culture supernatant from engineered JL04, derived from
+    source-named Issatchenkia orientalis SD108, induced precipitation and decreased
+    dissolved REE concentrations in a chemically prepared allanite-derived liquor.
+    The REE stage used centrifuged supernatant, not intact yeast or direct microbial
+    ore leaching. The reported over 99% total-REE removal near a source-nominal
+    2.7 g/L oxalic-acid dose is solution depletion under laboratory conditions,
+    not an ore-to-product or isolated-pure-product yield. Industrial deployment
+    and general superiority over commercial oxalic acid were not established.
+  context: >-
+    Halleck Creek ore was density-concentrated, ground to a top size of 150
+    micrometres and HCl-leached at 75 degrees C, 30% solids by weight and a reported
+    acid-to-solid ratio of 0.3:1 for 2 h. Hydrogen peroxide oxidation and staged
+    NaOH additions removed Fe/silica and Al; REEs were precipitated at pH 8,
+    redissolved using 12 M HCl, diluted to 310 mL and filtered to remove manganese
+    hydroxide. Separately, JL04 glucose-fed SC-URA cultures were produced in
+    100 mL bioreactors at 30 degrees C, pH 4 and 10% dissolved-oxygen setting.
+    Culture was centrifuged at 8000 x g for 30 min before use. Real-liquor tests
+    compared source-labelled 22.00 and 42.70 g/L oxalate supernatants with 1 M
+    commercial oxalic acid while mixing and maintaining pH 1.5 with 5 M NaOH.
+    The workbook records sequential reagent additions and 1.5 mL withdrawals;
+    initial liquid volumes were 95 mL in biological-reagent arms and 100 mL in
+    the commercial arm. These dose points are not independent replicates:
+    Methods state n=1 per real-leachate condition. Real-liquor precipitation
+    duration and temperature are not separately specified; overnight room-temperature
+    conditions belong to the synthetic single-salt assays and are not transferred.
+    No matched parental-supernatant or uninoculated-medium real-liquor comparator
+    is documented in the inspected main article and Data 1. Species-level taxonomy
+    does not resolve engineered-strain identity or the effects of the broth matrix.
+  evidence:
+  - source_ref: lu2026
+    supports: support
+    explanation: >-
+      Figure 3b, Results and Precipitation test support dose-associated REE
+      solution depletion by yeast-derived and commercial oxalate. Methods report
+      centrifugation/filtration of precipitates and ICP-OES analysis, but the
+      headline recovery is calculated from residual solution concentrations.
+      The commercial comparator supports similar observed removal in this assay;
+      n=1 does not establish statistical equivalence or replicated performance.
+  - source_ref: lu2026_data1
+    supports: partial
+    explanation: >-
+      Analysis sheets correct concentrations for cumulative reagent volume and
+      sampling. Row 74 gives over 99% total-REE depletion in all three arms near
+      their nominal 2.7 g/L doses. Dose formulas use a fixed 100 mL denominator
+      even for the 95 mL biological arms; these values are not asserted as actual
+      final reactor concentrations. TREE uses the source's 16-element sum, with
+      Sc included among its light REEs. This is not a closed process mass balance.
+  - source_ref: lu2026_data1
+    supports: partial
+    explanation: >-
+      Raw feed rows include Th and U; their high-dose zero cells generate 100%
+      apparent removal without stated per-cell detection or censoring limits.
+      This raises possible co-retention, not proof of absence or product purity.
+      Negative apparent removals, especially for Mg and the first biological-A
+      total-REE point, remain source calculation limitations and are not clamped
+      to zero. OAP-A row 74 reports Mn removal about 6.89%, contrary to the text's
+      blanket less-than-6% statement for Ca, Mg, Mn and Zn. Missing cells are not
+      interpreted as zeros. No universal high-purity mixed-REE product claim is made.
+  - source_ref: lu2026_supplement
+    supports: partial
+    explanation: >-
+      Table 1 and strain-construction methods identify engineered JL04. Figure S8
+      supplies the separate 22 g/L supernatant real-liquor arm. Table 3 and main
+      Figure 3c identify Nd oxalate decahydrate in a synthetic single-Nd experiment;
+      this does not identify the mixed real-liquor precipitate or establish its
+      phase purity. Single-salt Nd/La/Dy assays are separate from the processed ore.
+  - source_ref: lu2026_source_data
+    supports: partial
+    explanation: >-
+      Fig.3a and 3b rows 17-28 and 34-45 reproduce the commercial and biological-A
+      real-liquor curves; Fig. S1 to S8 rows 68-79 contain biological B. Fig.2
+      F11-F12 contain the two 10-day production titers, 38.78 and 40.27 g/L.
+      The 42.70 g/L precipitation reagent is not one of those two values; its
+      batch/time relationship to the displayed production series is not fully
+      resolved and it is not substituted for the 39.53 g/L reported mean.
+  - source_ref: lu2026
+    supports: context_only
+    explanation: >-
+      Figure 4 and the TEA/LCA methods describe modeled large-scale oxalic-acid
+      production, including assumed co-location and electricity credits. These
+      projections are not demonstrated industrial operation, a validated life-cycle
+      result for this particular leachate train or evidence of field deployment.
+curation_history:
+- timestamp: '2026-10-12T10:00:26Z'
+  curator: codex (GPT-6)
+  action: CREATE
+  summary: >-
+    Added the chemically prepared allanite-derived liquor and engineered-yeast
+    supernatant precipitation evidence, preserving source workbook discrepancies,
+    impurity and mass-balance limits, separate assay arms and laboratory scope.
+history_refs:
+- history/records/allanite-leachate/2026-10-12T100026Z-codex-3c88ef.yaml

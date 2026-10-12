@@ -1,0 +1,142 @@
+id: cmmmech:eudialyte-concentrate
+name: Eudialyte concentrate
+material_kind: primary_resource
+description: >-
+  A beneficiated geological feed represented by the TANBREEZ concentrate
+  from southern Greenland characterized by Ma and colleagues (2019).
+  The source describes crushing followed by partly magnetic selection;
+  this is an upgraded mixed mineral concentrate, distinct from the
+  uncharacterized crushed eudialyte ore in Hunter's 2020 thesis, a formal
+  eudialyte mineral species or group, elemental zirconium and recovered
+  rare-earth products. Table I reports 1.60 wt% total rare earth elements
+  and 6.46 wt% Zr in the laboratory feed. QEMSCAN assigns 67.05% of the
+  material to eudialyte, alongside amphibole, nepheline, feldspar and
+  other phases; this classification does not establish a pure species
+  or a universal commercial concentrate specification. The source
+  acknowledges the Geological Survey of Finland as concentrate supplier.
+  No criticality designation is inherited from constituent elements.
+sources:
+  - id: ma2019
+    title: >-
+      Ma Y, Stopic S and Friedrich B (2019). Hydrometallurgical Treatment
+      of an Eudialyte Concentrate for Preparation of Rare Earth Carbonate.
+      Johnson Matthey Technology Review 63(1):2-13.
+      DOI 10.1595/205651318X15270000571362. Complete original twelve-page
+      article inspected, including Figures 1-18 and Tables I-IV.
+      Feed characterization: pp.3-5; laboratory and pilot procedures:
+      pp.6-10; product and limitations: pp.10-12.
+    url: https://doi.org/10.1595/205651318X15270000571362
+    accessed_on: '2026-10-12'
+  - id: rwth_metadata
+    title: >-
+      RWTH Publications record 758718, institutional bibliographic
+      confirmation of Ma, Stopic and Friedrich's article and repository
+      DOI 10.18154/RWTH-2019-03094. The record reports online availability
+      on 4 December 2018, while the journal issue and publisher date are
+      January 2019; these are not separate experiments. The local original
+      PDF was acquired from an indexed open-article mirror after direct
+      repository and publisher downloads failed content checks.
+    url: https://publications.rwth-aachen.de/record/758718
+    accessed_on: '2026-10-12'
+mechanisms:
+  - id: acid_digestion_carbonate_recovery
+    name: Chemical digestion and precipitation of a mixed rare-earth product
+    process: recovery
+    microbial: false
+    description: >-
+      Concentrated hydrochloric acid digestion followed by water leaching
+      mobilized rare earths from the mixed concentrate. Calcium carbonate
+      neutralization removed part of the co-leached impurities, followed
+      by sodium carbonate precipitation and a further dissolution and
+      reprecipitation step to obtain a mixed rare-earth-bearing product.
+      This is a chemical process with laboratory optimization and a
+      reported 36 kg pilot test, not microbial extraction or evidence of
+      industrial operation. Zirconium was treated as an impurity in this
+      REE process; the study does not demonstrate isolated zirconium,
+      hafnium or niobium products.
+    context: >-
+      Laboratory runs used 500 g concentrate and 10 M HCl. The selected
+      HCl:concentrate ratio was 1.25 L/kg with 40 minutes dry digestion,
+      followed by water at 2 L/kg. Digestion had no external heating but
+      reached 70-80 degrees C through an exothermic reaction; only the
+      subsequent water leaching was at approximately 20-25 degrees C.
+      Laboratory parameter comparisons held water leaching at one hour;
+      the pilot selected 30 minutes after a separate time series.
+      Figures 10-14 compare chemical operating conditions, not inoculated
+      and abiotic arms. Replicate numbers and statistical uncertainty
+      are not supplied for these plotted comparisons. The pilot used
+      two 40 L digestion reactors, with 6 kg concentrate per reactor
+      per charge, totaling 36 kg in the described test. Alternating acid
+      and concentrate additions avoided the agglomeration or silica gel
+      observed when either was charged first. Neutralization to about
+      pH 4 with calcium carbonate preceded a single combined filtration
+      in the pilot, whereas the laboratory flow sheet has separate
+      residue separations. Sodium carbonate then raised the enriched
+      liquor to pH 5.7. Details and reagent quantities for the final
+      dissolution and reprecipitation are incomplete, and the final
+      product mass is not reported.
+    evidence:
+      - source_ref: ma2019
+        supports: support
+        explanation: >-
+          Methods, Table I and Figures 1-4 establish a characterized,
+          beneficiated, multiphase feed. XRF, dissolution followed by
+          ICP-MS and QEMSCAN provide chemical and mineralogical context.
+          The source's generic eudialyte classification does not resolve
+          an IMA species for every grain. Extraction from this mixture
+          is not a phase-specific dissolution fraction.
+      - source_ref: ma2019
+        supports: support
+        explanation: >-
+          Figures 10-13 report about 88.8% solution extraction at the
+          selected laboratory conditions; this is distinct from a final
+          product yield. Figure 14 reports Zr, Al and Fe removal of 99.1%,
+          90.0% and 53.1% at about pH 4, accompanied by 2.1% REE loss.
+          Increasing neutralization further also increased REE loss.
+          The chemical conditions, co-leaching and losses are retained;
+          there is no matched microbial comparison in this paper.
+      - source_ref: ma2019
+        supports: partial
+        explanation: >-
+          Sections 3.2 and 4.2, Table III and Figures 7-9 and 15-17
+          document actual pilot equipment and a 36 kg upscaling test.
+          Figure 16 reports principal liquid and residue flows but not
+          a complete element-resolved balance through the final product.
+          Residual eudialyte and operational mixing problems remain;
+          apparatus capacity is not evidence of continuous commercial
+          throughput. The absence of external digestion heating is not
+          an energy or environmental life-cycle assessment.
+      - source_ref: ma2019
+        supports: partial
+        explanation: >-
+          Page 11 reports greater than 98.8% REE precipitation from the
+          enriched liquor and 85.5% overall REE recovery to the final
+          product, on different process denominators. Figure 18 shows
+          the collected product. The approximately 30 wt% REE content
+          is a mixed elemental grade, not 30% or 100% phase purity or
+          an isolated single-element yield. Table IV reports TREE
+          29.95 wt%, while its individually listed rare-earth values
+          sum to 30.40 wt%; this inconsistency is unresolved. Al and
+          Ca remain at 3.31 and 4.18 wt%, respectively. No product
+          diffraction or complete final-product mass balance is supplied,
+          so the source-assigned carbonate identity and reported overall
+          yield are not independently reconstructed here.
+      - source_ref: ma2019
+        supports: context_only
+        explanation: >-
+          The article explicitly builds on the same group's earlier
+          parameter modeling and digestion work. Those cited studies
+          are not counted as independent replications of this pilot.
+          Proposed subsequent solvent extraction and the Figure 16
+          residue route toward Nb, Zr and Hf extraction are downstream
+          plans, not demonstrated products in the reviewed experiment.
+curation_history:
+  - timestamp: '2026-10-12T09:56:19Z'
+    curator: codex (GPT-6)
+    action: CREATE
+    summary: >-
+      Added a distinct characterized concentrate with chemical laboratory
+      and pilot recovery evidence, preserving feed, temperature, product
+      grade, source-total and mass-balance limitations.
+history_refs:
+  - history/records/eudialyte-concentrate/2026-10-12T095619Z-codex-9b0f45.yaml
