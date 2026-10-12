@@ -1,0 +1,432 @@
+schema_version: 1.0.0
+review_id: 20261012T075351Z-oil-sands-froth-treatment-tailings-round50-science
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of oil-sands froth-treatment tailings
+started_at: '2026-10-12T07:45:31Z'
+finished_at: '2026-10-12T07:53:51Z'
+reviewer:
+  identity: Codex /root/round43_hardmetal
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Peer /root/round27_packaging authored the target, history and
+    dossier. Reviewer authored the separate xenotime-concentrate record and zircon-feed
+    deferral only. Native inspect captured five explicit target/context inputs before
+    scientific judgment; reviewer made no edits to the assessed record or provenance.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The frozen resource record is supported as site-specific mixed processing
+  residue with chemical acid-column mobilization and separately qualified community
+  context. Complete retained source claims and original graphics/supplement tables
+  were independently checked; no corrective findings. Microbial recovery, purified
+  yield and deployment are not inferred.
+source:
+  git_revision: 98e787e8d61593797aef1ed29840b2315a0cc6e5
+  state: working_tree
+  inputs:
+  - path: data/records/oil-sands-froth-treatment-tailings.yaml
+    sha256: 0a7ce5b2525c4e3e5a4250d048262ecb4511bc1b7098e8d27241cf081c4d5fed
+    role: target
+  - path: history/records/oil-sands-froth-treatment-tailings/2026-10-12T074034Z-codex-b65c8b.yaml
+    sha256: 93b96ee1dfe220869ced5686487223e6924a77c983038aa3f6c7bb2b335030b4
+    role: context
+  - path: research/sources/round50-ftt/20261012T074205Z-source-investigation.json
+    sha256: e4f4ff1e907e3b2b6cfe5efb79f26f48d2733f544c414433124baaed3ae1195b
+    role: context
+  - path: research/sources/round50-ftt/20261012T074205Z-source-investigation.md
+    sha256: 9bbdd559a927100df17377db669cdebd5511d8591d1924215f23415dd8b040aa
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:oil-sands-froth-treatment-tailings
+  path: data/records/oil-sands-froth-treatment-tailings.yaml
+  label: Oil sands froth treatment tailings
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/oil-sands-froth-treatment-tailings.yaml
+    role: maintained scientific record
+scope:
+  description: Whole frozen record, canonical CREATE and inline provenance, paired
+    source dossier, schema, retained primary claims and counterevidence; independent
+    scientific review with explicitly bounded visual and search scope.
+  selection: Parent-assigned independent review of this new owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:oil-sands-froth-treatment-tailings
+checks:
+- check_id: named
+  name: Independent named record validation
+  command: .venv/bin/cmmmech validate data/records/oil-sands-froth-treatment-tailings.yaml
+    --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:oil-sands-froth-treatment-tailings
+  summary: 'Actually executed by this reviewer: one record checked, zero failures.
+    Log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e'
+- check_id: batch
+  name: Completed cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:oil-sands-froth-treatment-tailings
+  summary: 'Parent executed; reviewer read actual terminal receipt and verified exact
+    log SHA256 dcc7d1261abfca630c5a13f9ed142b85bb1462960ff410d2072f7b14d4c3908a. Final
+    cohort: 317 tests passed, 3 skipped; 246 records, 291 histories; required nonempty,
+    history and render checks passed. No future or hosted execution claimed.'
+- check_id: nonempty
+  name: Completed cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:oil-sands-froth-treatment-tailings
+  summary: 'Parent executed; reviewer read actual terminal receipt and verified exact
+    log SHA256 5599312a3ee08a5df1b1f5d52f06e26aec1513ffe4bc0a5e4ef60dd00ea6e0aa. Final
+    cohort: 317 tests passed, 3 skipped; 246 records, 291 histories; required nonempty,
+    history and render checks passed. No future or hosted execution claimed.'
+- check_id: history
+  name: Completed cohort history
+  command: uv run --locked cmmmech validate-history --base 98e787e8d61593797aef1ed29840b2315a0cc6e5
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:oil-sands-froth-treatment-tailings
+  summary: 'Parent executed; reviewer read actual terminal receipt and verified exact
+    log SHA256 bf614125e66d58201aeb2a712034842703a4c3090392cb57e00cd260c9c6e79a. Final
+    cohort: 317 tests passed, 3 skipped; 246 records, 291 histories; required nonempty,
+    history and render checks passed. No future or hosted execution claimed.'
+- check_id: render-check
+  name: Completed cohort render-check
+  command: just render-check
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - cmmmech:oil-sands-froth-treatment-tailings
+  summary: 'Parent executed; reviewer read actual terminal receipt and verified exact
+    log SHA256 be156b3acc20d39b6bad41632b10eb7ccfc2c8a7fdeaec3f6236fbc67831aea6. Final
+    cohort: 317 tests passed, 3 skipped; 246 records, 291 histories; required nonempty,
+    history and render checks passed. No future or hosted execution claimed.'
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/oil-sands-froth-treatment-tailings.yaml
+  locator: Complete captured file
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: Exact frozen input read and hash-verified against the pre-assessment native
+    capture.
+  snapshot_sha256: 0a7ce5b2525c4e3e5a4250d048262ecb4511bc1b7098e8d27241cf081c4d5fed
+- evidence_id: history
+  kind: record_content
+  reference: history/records/oil-sands-froth-treatment-tailings/2026-10-12T074034Z-codex-b65c8b.yaml
+  locator: Complete captured file
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: Exact frozen input read and hash-verified against the pre-assessment native
+    capture.
+  snapshot_sha256: 93b96ee1dfe220869ced5686487223e6924a77c983038aa3f6c7bb2b335030b4
+- evidence_id: dossier_json
+  kind: record_content
+  reference: research/sources/round50-ftt/20261012T074205Z-source-investigation.json
+  locator: Complete captured file
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: Exact frozen input read and hash-verified against the pre-assessment native
+    capture.
+  snapshot_sha256: e4f4ff1e907e3b2b6cfe5efb79f26f48d2733f544c414433124baaed3ae1195b
+- evidence_id: dossier_md
+  kind: record_content
+  reference: research/sources/round50-ftt/20261012T074205Z-source-investigation.md
+  locator: Complete captured file
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: Exact frozen input read and hash-verified against the pre-assessment native
+    capture.
+  snapshot_sha256: 9bbdd559a927100df17377db669cdebd5511d8591d1924215f23415dd8b040aa
+- evidence_id: schema
+  kind: record_content
+  reference: src/cmmmech/schema/cmmmech.yaml
+  locator: Complete captured file
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: Exact frozen input read and hash-verified against the pre-assessment native
+    capture.
+  snapshot_sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+- evidence_id: verification
+  kind: validation
+  reference: /private/tmp/cmm-round50-independent-science/ftt-verification.json
+  locator: Independent named command and source hash verification
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: Actual named validation and source-byte integrity checks; source verification
+    is separate from scientific judgment.
+  snapshot_sha256: 3ff47c4f0583cd5b9f1cb3c3693b0515f800ecad59fd22445d266fdc05e70acd
+- evidence_id: cohort
+  kind: validation
+  reference: /private/tmp/cmm-round50-corrected-terminal.json
+  locator: Four completed terminal commands and logs
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: Reviewer independently verified all four terminal statuses and exact log
+    hashes, including 317/3 tests, 246 records and 291 histories.
+  snapshot_sha256: e100469f511872754cd380524eb7f2b4077877db7445e203b9fa465925a28568
+- evidence_id: ferry
+  kind: primary_source
+  reference: https://doi.org/10.1186/s12932-025-00106-1
+  locator: Complete18-page PDF available; retained Methods/Results/Discussion, Figures1–6
+    and Tables1–2
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: All six original main figures and both tables personally viewed. Six unreplicated
+    column conditions, staged pH, differing throughput, trace/major units and cumulative
+    mass denominators match. Co arm attribution in prose conflicts with Figure3; NP
+    methods differ. Record preserves both limits rather than selecting a convenient
+    maximum.
+  snapshot_sha256: a8df1b2f31429f599a5f6c3e4186d87a450584b6ea691de5d18a16ae1cbd524c
+- evidence_id: ferry_si
+  kind: primary_source
+  reference: /private/tmp/cmm-round50-ftt-research/raw/ferry2025-supplement.docx
+  locator: Original DOCX methods, TableS1 and FiguresS1–S8
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: All eight original supplementary figures visually inspected and original
+    table/method text read. Throughput values and As exception verified. Nine embedded
+    media files byte-matched to original archive; one SVG is an alternative schematic
+    representation, not a ninth experiment. No whole-DOCX page-layout rendering claimed.
+  snapshot_sha256: b8074723ad047de94b3e52172fa0d1fb05515ef073255a42d8b59f14291c2678
+- evidence_id: lindsay
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.apgeochem.2019.02.001
+  locator: Complete39-page institutional accepted manuscript available; retained Methods/Results,
+    Figures1–6 and Table1
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: All six original figures and Table1 personally viewed. Processing origin,
+    solvent-washed specimens, mixed phases and synthetic-free mineral characterization
+    support the resource boundary. Main chemistry/ABA is contextual, without a microbial
+    extraction test. Fresh-sample year and abstract/results average inconsistencies
+    are accurately retained.
+  snapshot_sha256: f46b0c869a997e36078caa4055fd5ddc18da9dbe34849733e92b4cc2b033c75c
+- evidence_id: lindsay_si
+  kind: primary_source
+  reference: /private/tmp/cmm-round50-ftt-research/raw/lindsay2019-supplement-probe.docx
+  locator: Original TablesS1a–S1b and FiguresS1–S5
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: Both original XML tables read and all five embedded figures viewed; each
+    media byte-matched to DOCX. Elemental TableS1a has an XRD heading and K/P/Mn scale
+    inconsistencies. FigureS5 caption says dV50 but axes dV10, also already documented
+    in dossier; no particle-size statistic or pooled grade is adopted.
+  snapshot_sha256: f3eb67f22b2ce25ba710924716280b517361d3392ab971698cda5bbf2903fc3d
+- evidence_id: balaberda
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.chemosphere.2025.144800
+  locator: Complete13-page main available; Methods2.1–2.5, results3.1–3.3, final discussion;
+    graphical abstract and Figures1–7
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: Graphical abstract and all seven original figures personally viewed, retained
+    scientific text read. First page confirms2026 issue and2025-12-12 online publication.119/80/48
+    sample sets, 36 complete correlations, no interval replicates and16S method are
+    explicit. Final discussion states functions are inferred and methane was not measured.
+    Broad graphical/prose sulfur-cycling language cannot establish a controlled microbial
+    metal-recovery mechanism.
+  snapshot_sha256: e4621f74e3d16e52329493cfee10ad93d686841cc783b2d8db55af3bfaab57bd
+- evidence_id: balaberda_si
+  kind: primary_source
+  reference: /private/tmp/cmm-round50-ftt-research/raw/balaberda2026-supplement-probe.docx
+  locator: TextsS1–S2, all six original tables, FiguresS1–S9
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: All tables/method text read and all nine original graphics viewed. Original
+    embedded media byte bindings verified; TIFF viewed through preserved lossless
+    raster. Naphtha non-measurements treated as non-detects, half-DL imputation, TypeII/III
+    and Tukey/Sidak inconsistencies, uneven dispersion, higher-rank genus labels and
+    sensitivity filter distinctions match record qualifications.
+  snapshot_sha256: 666a6ffc5c475bf737a9bdbcd305a62bde613e08ea27539f2146f887be92df0f
+- evidence_id: bioproject
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=bioproject&id=1363209&retmode=xml
+  locator: Official XML ArchiveID/ProjectDescr/ProjectDataTypeSet
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: Independently read curator-acquired official response and acquisition receipt,
+    verified its hash. PRJNA1363209 matches Biogeochemical Characterization of Froth
+    Treatment Tailings and raw sequence reads. Reviewer web landing lookup returned
+    internal error; no successful fresh landing fetch claimed. Reads were not reanalyzed.
+  snapshot_sha256: 4fe22534b841c07a0769f20f9f97d8bf81001ae0dc93e0c88a04c2577a61a99d
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round50-independent-science/ftt-web.json
+  locator: Exact three DOI correction/erratum returned sets plus official BioProject
+    landing attempt
+  accessed_at: '2026-10-12T07:53:51Z'
+  support: supports
+  summary: Primary publisher/institutional matches confirm identity; no applicable
+    notice appeared among returned results. A search hit for an unrelated ferrihydrite
+    correction is not a notice for Ferry2025. BioProject web landing failed; independently
+    verified official acquisition is separately cited.
+  snapshot_sha256: dbed2f14f4bb5ea7920484d90c87bb08068df20b0b17cf4fa838473eb476dcd5
+  search_scope: On2026-10-12 first returned web sets without pagination for exact10.1186/s12932-025-00106-1,10.1016/j.apgeochem.2019.02.001
+    and10.1016/j.chemosphere.2025.144800 with correction erratum; official PRJNA1363209
+    landing attempted. Bounded notice search, no global absence assertion and no unsupported
+    use of secondary snippets.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Site-specific heterogeneous secondary resource
+  outcome: supported
+  target_ids:
+  - cmmmech:oil-sands-froth-treatment-tailings
+  evidence_ids:
+  - record
+  - ferry
+  - lindsay
+  - lindsay_si
+  - balaberda
+  summary: Plant6 naphtha-process FTT is correctly represented as a processing residue,
+    distinct from constituent elements/minerals, SCT, fluid fine tailings and petcoke.
+    Common site and authors across the three studies are not independent replication
+    or a harmonized feed grade.
+  dimensions:
+  - name: material_form
+    value: 'Secondary resource: naphtha-process froth-treatment tailings from Plant6/MildredLake'
+    definition: Source-specific mixed residue, not a mineral species or economic reserve.
+    evidence_ids:
+    - lindsay
+    - balaberda
+  - name: criticality
+    value: No jurisdiction/list/edition designation asserted
+    definition: Presence of potentially critical constituent elements does not make
+      this waste a listed commodity.
+    evidence_ids:
+    - record
+- assessment_id: chemical_mechanism
+  area: evidence
+  topic: Acid treatment, controls and conditions
+  outcome: supported
+  target_ids:
+  - cmmmech:oil-sands-froth-treatment-tailings
+  evidence_ids:
+  - ferry
+  - ferry_si
+  - record
+  summary: Reported0.05M H2SO4 at approximatelypH1.5,0.33PV/day, six10cm×6cm columns,
+    differing endpoints and missing temperature/common elapsed endpoint remain correctly
+    qualified. Chemical treatment classification does not assert sterile feed. No
+    matched live/sterile comparison or microbial advantage is asserted.
+  dimensions:
+  - name: biomass_and_controls
+    value: Environmental feed; chemical treatment; no matched biological comparison;
+      one column per condition
+    definition: Controls and replication scope of the tested mechanism.
+    evidence_ids:
+    - ferry
+    - ferry_si
+  - name: outcome
+    value: Filtered effluent concentration and cumulative elemental mass per solid
+      mass
+    definition: Measured mobilization; not isolated product, percent recovery or a
+      complete feed inventory balance.
+    evidence_ids:
+    - ferry
+    - ferry_si
+- assessment_id: contradictions
+  area: evidence
+  topic: Counterevidence, units and source disagreements
+  outcome: supported
+  target_ids:
+  - cmmmech:oil-sands-froth-treatment-tailings
+  evidence_ids:
+  - ferry
+  - ferry_si
+  - lindsay
+  - lindsay_si
+  - record
+  summary: The record preserves unwashed NW/PW As greater than washed, NP-3 decreasing
+    despite NP-1/2 increasing, disputed Co arm attribution, assumed washed bitumen
+    absence, operational filtration and relative XRD versus mineral formation. It
+    avoids model-to-identification and mg/L-to-micrograms/L errors. Historical year/chemistry/table
+    conflicts are not silently harmonized.
+- assessment_id: community
+  area: evidence
+  topic: Observational microbes versus functional proof
+  outcome: supported
+  target_ids:
+  - cmmmech:oil-sands-froth-treatment-tailings
+  evidence_ids:
+  - balaberda
+  - balaberda_si
+  - bioproject
+  - record
+  summary: 119 community samples with80 chemistry,48 mineralogy and36 complete correlations
+    support field associations only. No interval replication, imputation of unmeasured
+    naphtha, differing statistical descriptions and unresolved taxonomic ranks constrain
+    inference. Sulfur cycling and methane roles remain literature-based hypotheses;
+    no organism or strain is assigned a metal-recovery yield.
+- assessment_id: scale
+  area: evidence
+  topic: Laboratory mobilization versus deployment
+  outcome: supported
+  target_ids:
+  - cmmmech:oil-sands-froth-treatment-tailings
+  evidence_ids:
+  - ferry
+  - balaberda
+  - record
+  summary: An industrial source site and field community context do not establish
+    industrial deployment of the laboratory acid-column process. No purified product,
+    economic reserve, biological recovery or causal attribution is claimed.
+- assessment_id: provenance
+  area: provenance
+  topic: Exact inputs, original supplements and completed gates
+  outcome: supported
+  target_ids:
+  - cmmmech:oil-sands-froth-treatment-tailings
+  evidence_ids:
+  - history
+  - dossier_md
+  - dossier_json
+  - verification
+  - cohort
+  summary: All148 declared raw artifacts hash-verified; original DOCX media bindings
+    independently checked, with original XML tables read. Five inspected input hashes
+    remain frozen; actual canonical/inline histories and independent named/cohort
+    gates support structural acceptance. No prior artifact was rewritten.
+findings: []
+actions: []
+limitations:
+- Complete main PDFs were available. Reviewer inspected all retained scientific claims,
+  all19 numbered main figures plus graphical abstract, all3 main tables, all22 supplementary
+  figures and all9 supplementary tables. This does not claim visual inspection of
+  every reference-only page of the39-page accepted manuscript.
+- Original DOCX text/tables and embedded graphics were inspected directly and media
+  bytes verified; no successful whole-DOCX page-layout conversion is claimed. Duplicate
+  SVG schematic was byte-verified but not treated as an additional experimental graphic.
+- No raw sequencing reanalysis, independent sample or strain authentication, statistical
+  rerun, digitization of complete plot data, or recovery mass-balance reconstruction
+  was performed.
+- Source discrepancies and nonreplication persist. The record supports a bounded chemical
+  mobilization mechanism and community context, not a demonstrated microbial advantage
+  or industrial recovery.
+- BioProject authority is based on the independently read and hash-verified official
+  XML acquired by the curator; reviewer fresh web landing failed. Notice search is
+  explicitly bounded.
+- Curator dedup includes hidden/ignored/followed scientific trees and referenced raw
+  roots with exclusions stated. No machine-wide absence or whole-field evidence exhaustion
+  is asserted. Local structural gates are separate from scientific confidence and
+  hosted publication.
