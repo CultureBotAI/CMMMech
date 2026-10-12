@@ -148,7 +148,7 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Spent hydrodesulfurization catalyst](data/records/spent-hydrodesulfurization-catalyst.yaml) | Acidophile leaching of raw spent diesel-HDS catalyst | Chemical controls limit microbial advantage; dissolved metals are not isolated products |
 | [Electrolytic manganese metal](data/records/electrolytic-manganese-metal.yaml) | Manufactured commodity identity and producer process descriptions | Conflicting grade specifications; no universal battery qualification or microbial production claim |
 | [Electrolytic manganese dioxide](data/records/electrolytic-manganese-dioxide.yaml) | Manufactured commodity identity and application-specific product context | Distinct from natural mineral species; no inherited criticality or microbial production claim |
-| [Manganese ore](data/records/manganese-ore.yaml) | Two-stage leaching using biologically mobilized iron | Mixed natural ore; historical controls and post-roast product characterization limit claims |
+| [Manganese ore](data/records/manganese-ore.yaml) | Biogenic-iron leaching and a separate fungal transformation study of mixed Nkamouna laterite | Historical controls, incomplete transformation and figure/prose conflicts limit phase-specific and recovery claims |
 | [Iron-ore tailings](data/records/iron-ore-tailings.yaml) | Anaerobic mixed-culture iron mobilization | Same linked experiment as manganese ore; no phase-specific flux or isolated iron recovery |
 | [Electrolytic manganese residue](data/records/electrolytic-manganese-residue.yaml) | Fungal culture-associated manganese mobilization | Accession/strain contradiction and missing solid loading retained |
 | [Automotive wastewater-treatment sludge](data/records/automotive-wastewater-treatment-sludge.yaml) | Two-stage biogenic-acid leaching | Loading and pH dependence; no isolated product or matched chemical-acid control |
@@ -220,6 +220,7 @@ timestamped scientific review; synthetic test fixtures remain separate.
 | [Cerussite](data/records/cerussite.yaml) | Brown-rot cultures form lead oxalate on a natural cerussite specimen | Microscopy-only assignments and conflicting co-product wording remain explicit |
 | [Fluorapatite](data/records/fluorapatite.yaml) | Brown-rot cultures form calcium oxalate on a chlorine-bearing fluorapatite specimen | Medium calcium and method-dependent phase detection prevent source-exclusive or phosphorus-recovery claims |
 | [Hollandite](data/records/hollandite.yaml) | Brown-rot cultures form source-assigned manganese oxalate phases on a hollandite specimen | Formula and figure/table phase conflicts remain unresolved; no phase-specific recovery yield |
+| [Birnessite](data/records/birnessite.yaml) | Fungal transformation of a source-named synthetic sodium form | Same Wei2012 experiment as the lindbergite product arm; uncertain feed polytype and clearing metrics do not establish recovery |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and
@@ -266,7 +267,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [thirty-seventh expansion reviews](research/ingests/round37-20261011-publication.md),
 [thirty-eighth expansion reviews](research/ingests/round38-20261011-publication.md),
 [thirty-ninth expansion reviews](research/ingests/round39-20261012-publication.md),
-[remaining ingest priorities](research/ingests/round39-frontier-20261012.md), and
+[fortieth expansion reviews](research/ingests/round40-20261012-publication.md),
+[remaining ingest priorities](research/ingests/round40-frontier-20261012.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

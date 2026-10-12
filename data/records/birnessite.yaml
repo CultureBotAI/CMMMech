@@ -1,0 +1,147 @@
+id: cmmmech:birnessite
+name: Birnessite
+material_kind: mineral
+description: >-
+  Birnessite is a layered manganese oxide mineral, listed as grandfathered
+  in the September 2026 IMA-CNMNC list with formula
+  (Na,Ca,K)0.6(Mn4+,Mn3+)2O4(H2O)1.5. Its composition and polytype vary.
+  It is distinct from elemental manganese, mixed manganese ore and nodules,
+  the buserite precursor used to prepare some synthetic analogues, and
+  manganese oxalate products. The mechanism below concerns a source-named
+  synthetic sodium form, not a natural ore or every birnessite polytype.
+  No criticality designation is inherited from manganese.
+sources:
+- id: ima_2026_09
+  title: >-
+    IMA-CNMNC. The New IMA List of Minerals, September 2026. Birnessite
+    row, PDF page 26; introductory definitions and distribution terms.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-12'
+- id: birnessite_handbook
+  title: >-
+    Mineralogical Society of America, Handbook of Mineralogy. Birnessite,
+    one-page entry revised 6/2/2021; formula, polytypes, synthetic cell
+    data and original mineral-description references.
+  url: https://www.handbookofmineralogy.org/pdfs/Birnessite.pdf
+  accessed_on: '2026-10-12'
+- id: wei2012
+  title: >-
+    Wei, Hillier and Gadd (2012). Biotransformation of manganese oxides
+    by fungi: solubilization and production of manganese oxalate biominerals.
+    Environmental Microbiology 14(7). Complete nine-page primary PDF,
+    printed pages 1744-1752; Figures 1-6, Tables 1-3 and Experimental
+    procedures. Publisher and bibliographic metadata instead end at 1753.
+  url: https://doi.org/10.1111/j.1462-2920.2012.02776.x
+  accessed_on: '2026-10-12'
+- id: ncbi_niger
+  title: NCBI Taxonomy 5061. Aspergillus niger, current species node.
+  url: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/5061/dataset_report
+  accessed_on: '2026-10-12'
+- id: ncbi_himantioides
+  title: NCBI Taxonomy 80602. Serpula himantioides, current species node.
+  url: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/80602/dataset_report
+  accessed_on: '2026-10-12'
+mechanisms:
+- id: fungal_synthetic_sodium_birnessite_transformation
+  name: Fungal culture-associated clearing and transformation of synthetic sodium birnessite
+  process: bioleaching
+  microbial: true
+  organisms:
+  - id: NCBITaxon:5061
+    label: Aspergillus niger
+  - id: NCBITaxon:80602
+    label: Serpula himantioides
+  description: >-
+    In separate laboratory cultures, growing Aspergillus niger and Serpula
+    himantioides cleared synthetic sodium-birnessite-amended agar and
+    produced new crystals. The observations support dissolution-associated
+    transformation, with manganese oxalate phases assigned in the Serpula
+    arm by powder diffraction. Organic-acid-mediated mobilization and
+    reprecipitation are the authors' mechanistic interpretation; metabolite
+    concentrations and manganese oxidation-state changes were not measured.
+    Neither a dissolved-manganese mass balance, isolated-product yield nor
+    industrial recovery is established.
+  context: >-
+    Wei2012 used A. niger ATCC 201373 and S. himantioides supplied by
+    N. White, University of Abertay, without a strain accession or sequence
+    for the latter. These were separate cultures, not a consortium.
+    Sodium birnessite was supplied by S. Hillier and prepared by freeze-drying
+    synthetic Na-buserite. The paper does not provide a specimen-specific
+    initial composition, quantified phase purity or polytype refinement;
+    its introductory mixed-cation formula is not a measured batch formula.
+    Each 90 mm dish contained 20 cm3 malt extract agar with 0.5% (w/v)
+    oxide and an 84 mm sterile cellophane membrane. A 5 mm leading-edge
+    mycelial disc from cultures maintained for at least 7 days for A. niger
+    or 14 days for S. himantioides was inoculated and grown at 25 degrees C
+    in darkness, with at least three replicate plates. This evidence does
+    not establish equivalent behavior for natural, substituted or otherwise
+    prepared birnessites.
+  evidence:
+  - source_ref: wei2012
+    supports: support
+    explanation: >-
+      Results on printed pages 1745-1746, Table 1 and Figure 1D report
+      birnessite clearing during fungal growth. Figure 2I compares the
+      abiotic feed morphology with crystals after 15 days of A. niger
+      growth (J) and 5 or 23 days of S. himantioides growth (K-L).
+      Table 3 reports initial surface pH 7.26, falling to 3.08 after
+      15 days for A. niger and 2.93 after 25 days for S. himantioides
+      (six surface measurements). The 23-day growth/microscopy sampling
+      and 25-day pH/clearing statements are retained as distinct times.
+  - source_ref: wei2012
+    supports: partial
+    explanation: >-
+      Figure 4 assigns the recovered 5-day S. himantioides material to
+      manganese oxalate trihydrate plus dihydrate (lindbergite), and the
+      23-day material to the dihydrate. These are source assignments from
+      reference-pattern matching, not quantitative phase fractions. Crystals
+      were extracted using 80 degrees C water and vacuum-dried overnight
+      before analysis; no wet-culture or paired drying series excludes
+      preparation-related hydration changes. The trihydrate is not assigned
+      retrospectively to falottaite, and the Serpula diffraction result is
+      not transferred to the A. niger arm. This is the same Wei2012
+      experiment also represented under lindbergite, not independent evidence.
+  - source_ref: wei2012
+    supports: partial
+    explanation: >-
+      Table 1 reports growth and clearing-zone extension ratios and Table 2
+      biomass tolerance indices against no-oxide growth controls. None is
+      an extraction fraction. The narrative's complete solubilization after
+      15 or 25 days rests on clearing rather than a dissolved-Mn balance;
+      newly precipitated solids preclude interpreting it as complete aqueous
+      recovery. Figure 2I supplies an abiotic morphology comparison, but
+      no time-matched sterile diffraction, killed-biomass or pH-matched
+      fungal series establishes microbial necessity or an exclusive cause.
+  - source_ref: wei2012
+    supports: partial
+    explanation: >-
+      Figure 5 and the abiotic-test methods compare 50 microlitre additions
+      of 0.5 M citric acid, oxalic acid or HCl to 5 mm wells in amended
+      agar. The organic acids cleared birnessite, whereas HCl produced
+      no significant halo in that test. These separate chemical assays
+      support a possible organic-metabolite contribution without measuring
+      fungal oxalate production or identifying their products by diffraction.
+      Figure 3 EDX concerns a separate biogenic-MnOx feed; Figure 6 is a
+      conceptual model, including speculative metal sorption, rather than
+      direct evidence for every pathway or recovery application drawn.
+  - source_ref: ncbi_niger
+    supports: context_only
+    explanation: >-
+      TaxID 5061 resolves the reported species name; it does not authenticate
+      ATCC 201373 or establish a species-wide phenotype. That strain differs
+      from the ATCC 1015 cultures used in other curated manganese studies.
+  - source_ref: ncbi_himantioides
+    supports: context_only
+    explanation: >-
+      TaxID 80602 resolves the reported species name, not the unaccessioned
+      experimental isolate or a lineage within that species complex.
+curation_history:
+- timestamp: '2026-10-12T00:48:58Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: >-
+    Added birnessite identity and the Wei2012 synthetic sodium-form feed
+    experiment, retaining separate fungi, phase and preparation uncertainty,
+    control limits and the distinction between clearing and metal recovery.
+history_refs:
+- history/records/birnessite/2026-10-12T004836Z-codex-f35e9c.yaml

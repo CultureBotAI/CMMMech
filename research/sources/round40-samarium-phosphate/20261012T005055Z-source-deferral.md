@@ -1,0 +1,45 @@
+# Samarium phosphate source investigation: Jiang2018 deferred
+
+UTC: 2026-10-12T00:50:55.842510Z
+
+Researcher: Codex /root/round27_packaging (GPT-6; codex). Worktree `/private/tmp/CMMMech-expansion-round40-20261012`, branch `curate/cmm-expansion-round40-20261012`, trusted base `215cb3f4f9940b3785cf8ca20ecb28d2acc89950`. The exact-base baseline is honestly reused in `/private/tmp/cmm-round40-initialization.json`; this report does not claim a fresh baseline execution.
+
+**Decision: source-only deferral.** The complete article text is accessible, but original Figures1–8 remain visually unverified. No record, history or accepted mechanism was created, and the elemental samarium record is unchanged. The coordinator accepted this boundary; an identity-only entry would not repair the missing experimental evidence.
+
+## Identity, edition and source access
+
+[Jiang, Ohnuki and Utsunomiya2018](https://doi.org/10.1080/01490451.2017.1377320), *Biomineralization of Middle Rare Earth Element Samarium in Yeast and Bacteria Systems*, Geomicrobiology Journal35(5):375–384, appeared online15February2018 and in the28May2018 issue. The DOI year2017 is not the publication edition. Crossref and the publisher/institutional metadata agree on identity. The public author upload reports26February2018 and contains a publisher-formatted cover plus10article pages with internal1–10pagination.
+
+The [public authorPDF link](https://www.researchgate.net/profile/Mingyu-Jiang-2/publication/323224076_Biomineralization_of_Middle_Rare_Earth_Element_Samarium_in_Yeast_and_Bacteria_Systems/links/5a93b08445851535bcd94769/Biomineralization-of-Middle-Rare-Earth-Element-Samarium-in-Yeast-and-Bacteria-Systems.pdf) yielded complete text through `web.run`; overlapping opens were assembled into all496extracted lines0–495, including methods, references and eight figure captions. This is **text access, not possession or visual inspection of the PDF**. Direct authorPDF, authorfigurepage and publisherfulltext/PDF downloads returned403HTML, retained with their misleading `.pdf` request filenames and explicit content types in the raw receipts. The screenshot tool returned a citation-only string, with no inspectable image block. The browser tool reported that no browser was available. OpenAlex lists the article as closed without an identified repository fulltext. No table or supplemental citation was found in the extracted main text; unavailable publisher material means separateSI existence is unresolved.
+
+Only the original IMA authority page was visually inspected here: the reused [September2026 master list](https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf), page146, identifies **Monazite-(Sm), Sm(PO4), approved2001-001**. Its exact reused PDF SHA256 is `2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973`. The candidate would be a `mineral`, distinct from elemental Sm, nitrate feed and phosphate/rhabdophane groups. Source-assigned monazite structure cannot be confirmed from Sm/P EDX or nominal formula, and no criticality designation is inherited. Candidate owner `monazite-sm` remains uncreated.
+
+## What the primary text supports for a future review
+
+These are research notes from text, not accepted or visually verified record measurements. Article-page locators exclude the cover.
+
+- Methods, pp2–3: source strains are *S.cerevisiae* X-2180, source-labelled *B.subtilis* IAM1069 and *P.fluorescens* ATCC55241. Grown cells were washed and transferred to synthetic Sm nitrate exposure solutions; biomass determination is not evidence that exposure biomass was oven-killed. The source reports initialSm1e-4mol/L, initialpH3/4/5, biomass0.33–0.86dryg/L, duplicate experiments and stationary exposure through120h.
+- Condition discrepancies remain explicit: resuspension uses0.1M NaCl but the sorption paragraph says0.01M; temperature appears as23±2C and25±1C. Figure1 labels P.fluorescens around0.3dryg/L, while Figure2/comparison prose gives0.6. These may be different series; no pooled concentration, efficiency or normalized rate is curated.
+- Samples at2/24/48/72/96/120h were centrifuged and filtered before ICP-AES. The reported distribution coefficient divides dissolved-Sm depletion by dry biomass concentration times residual filtrateSm, inL/g. Near-detection-limit values are not zero; no numerical limit or curve values have been verified. Cell-free Sm/NaCl controls are stated, but their actual graphical outcomes must be inspected.
+- Microscopy captions/prose, pp7–9: early yeast2h and bacterialpH3 particle nulls accompany later formation claims. TEM/SAED andEXAFS samples were collected after120h atinitialpH5. The source attributes fourSAED spacings to monazite(Sm). EDX composition alone cannot validate that assignment; the statedEXAFS reagent is hydratedSmPO4·nH2O, so localphosphate similarity alone doesnot resolve bulkhydration or a mixed/amorphous contribution. Drying and200kV TEM conditions require attention; reportedXAFS scan stability doesnot establish absence ofTEM preparation/beam effects.
+- A92hpeak is mentioned despite the96hsampling schedule. Particle ranges50–200nm inFigure6discussion and200–500nm inFigure7caption may concern differentfields; images must settle scope rather than a curator forcing agreement. The >98%viability claim cites earlier REE-free2012work, not a viability assay of these Sm-exposed cells. Phosphate release and toxicity stress are proposed causes, not demonstrated enzyme necessity. There is no accepted isolatedmineral yield, closedSm balance or industrial performance.
+
+## Organism and counterevidence boundaries
+
+The current [JCM20035 catalogue](https://www.jcm.riken.jp/cgi-bin/jcm/jcm_number?JCM=20035) explicitly traces its history toIAM1069 and names **Bacillus spizizenii**. A future record must preserve the paper's old *B.subtilis* label and this current mapping rather than assigning the experiment indiscriminately to all B.subtilis. [ATCC55241](https://www.atcc.org/products/55241) is the P.fluorescens BNL-WVC patent deposit; a catalogue identity is not proof of the assayedstock. DSM4266's X2180-1A is not evidence that the article's unsuffixed X-2180 was that lineage. No strainTaxID was invented.
+
+Bounded exactDOI/title correction/retraction andsupplement queries didnot verify an affecting notice; currentCrossref provides no update relation. This is not an exhaustive absence claim. The [priorCe/Yb phase qualification](../round39-ree-phosphate/20261012T001548Z-source-deferral.md) discusses earlier2010/2012experiments; it is not a refutation or reclassification of this2018Sm experiment. No supplementary data from a citing paper are misattributed toJiang.
+
+## Deduplication, artifacts and reuse
+
+The [existing elemental samarium owner](../../../data/records/samarium.yaml) contains a separate Fischer2019 cyanobacterial experiment. Current records, research, reviews andhistory plus123cited research/raw roots were searched using hidden/ignored-inclusive `rg --follow`, with cycle prevention for reference discovery across1567textmetadatafiles. The normalized DOI was already a round39deferredlead; this is an advance in its source assessment, not a claim of first discovery. No accepted Jiang2018experiment or monazite-Sm owner was located within that bounded search. Binary detection remained enabled, so this is not a universal decode of every priorPDF or machine-wide absence claim.
+
+Bulk text, failedresponses, acquired metadata, search logs and authorityrender remain outsideGit in `/private/tmp/cmm-round40-samarium-phosphate-research/raw`. Authorfulltext is copyright2018Informa/Taylor&Francis and authorupload access doesnot establish an open redistributionlicense. PairedJSON records every retainedrawfile size/SHA256 and acquisitionstatus. The sourcePDF bytes were **not** acquired. ReportJSON, acquisitionhashes and unchanged elementalrecordbytes were checked; no namedrecordvalidation or newscientificreview is claimed.
+
+## Prioritized handoff
+
+1. Obtain inspectable original Figures1–8 or the complete article from a legitimate accessible publisher/library or author route. Confirm axes, control series, figure-specific biomass, original SAED indexing and EXAFS comparisons. Do not retry unchanged403routes or bypass access controls.
+2. Resolve phase/hydration/preparation limits and source condition/organism discrepancies. Keep synthetic-feed depletion separate from isolatedproduct recovery. Only then choose a record owner and request independent exact-byte scientific review.
+3. The originalSAED reference [Ni etal1995](https://doi.org/10.2138/am-1995-1-203) and the original2002monazite-Sm description are concrete structural acquisition leads. They were not acquired here and cannot replace Jiang's missingoriginalgraphics or establish microbial causality.
+
+Proposed source-followup title: **Verify original Jiang2018 samarium-phosphate graphics before admission**. A coordinator-reviewable issuebody is retained at `/private/tmp/cmm-round40-samarium-phosphate-research/issue-body-template.md`; this investigation makes no GitHub mutation.
