@@ -1,0 +1,859 @@
+{
+  "timestamp_utc": "2026-10-12T00:53:09.765926+00:00",
+  "actor": {
+    "id": "codex",
+    "model": "GPT-6",
+    "tool": "codex",
+    "agent": "/root/round27_superalloy"
+  },
+  "repository": {
+    "worktree": "/private/tmp/CMMMech-expansion-round40-20261012",
+    "base": "215cb3f4f9940b3785cf8ca20ecb28d2acc89950",
+    "branch": "curate/cmm-expansion-round40-20261012",
+    "baseline_receipt": "/private/tmp/cmm-round40-initialization.json",
+    "working_changes": "Concurrent root birnessite and EAF manganese-ore work; this investigator writes only this source dossier. No record/history or shared-file edits."
+  },
+  "decision": "source_only_deferral",
+  "curator_ready": false,
+  "new_record_or_history": false,
+  "source": {
+    "doi": "10.2138/am-2021-7651",
+    "title": "Oxalate formation by Aspergillus niger on minerals of manganese ores",
+    "authors": [
+      "Olga Frank-Kamenetskaya",
+      "Marina Zelenskaya",
+      "Alina Izatulina",
+      "Vladislav Gurzhiy",
+      "Aleksei Rusakov",
+      "Dmitry Vlasov"
+    ],
+    "journal": "American Mineralogist",
+    "volume": 107,
+    "issue": 1,
+    "pages": "100–109",
+    "publication_date": "2022-01-03",
+    "doi_year_is_not_publication_year": true,
+    "accepted_manuscript_title_variant": "Oxalate formation by Aspergillus niger on manganese ore minerals",
+    "source_roles": [
+      "primary mineral-transformation experiment",
+      "supplementary crystallographic data"
+    ],
+    "experiment_count": 1,
+    "criticality_assessed": false
+  },
+  "identity_candidates": {
+    "existing_owners": [
+      "falottaite",
+      "lindbergite"
+    ],
+    "potential_feed_owners": [
+      "todorokite",
+      "kutnohorite"
+    ],
+    "status": "Not assigned or approved for curation. Natural feed specimens and product phases must be separately scoped; no hydration-only species mapping."
+  },
+  "deduplication": {
+    "at": "2026-10-12T00:45:13.642323+00:00",
+    "base": "215cb3f4f9940b3785cf8ca20ecb28d2acc89950",
+    "commands": [
+      [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-n",
+        "-i",
+        "-g",
+        "*.{yaml,yml,json,md,txt,html,xml,csv,tsv}",
+        "10\\.2138/am-2021-7651|Oxalate formation by Aspergillus niger on minerals|todorokite|kutnohorite|falottaite|lindbergite",
+        "/private/tmp/CMMMech-expansion-round40-20261012/data/records",
+        "/private/tmp/CMMMech-expansion-round40-20261012/research",
+        "/private/tmp/CMMMech-expansion-round40-20261012/reviews",
+        "/private/tmp/CMMMech-expansion-round40-20261012/history",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history"
+      ],
+      [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-n",
+        "-i",
+        "-g",
+        "*.{yaml,yml,json,md,txt,html,xml,csv,tsv}",
+        "10\\.2138/am-2021-7651|Oxalate formation by Aspergillus niger on minerals|todorokite|kutnohorite|falottaite|lindbergite",
+        "/private/tmp/cmm-round10-b-f-raw",
+        "/private/tmp/cmm-round10-graphite-raw",
+        "/private/tmp/cmm-round10-nb-ta-raw",
+        "/private/tmp/cmm-round10-ti-zr-raw",
+        "/private/tmp/cmm-round11-be-rb-re-raw",
+        "/private/tmp/cmm-round11-he-raw",
+        "/private/tmp/cmm-round11-ir-os-hf-raw",
+        "/private/tmp/cmm-round11-lu-tm-pm-raw",
+        "/private/tmp/cmm-round12-aluminium-boron-raw",
+        "/private/tmp/cmm-round12-carbon-metals-raw",
+        "/private/tmp/cmm-round12-groups-raw",
+        "/private/tmp/cmm-round12-industrial-minerals-raw",
+        "/private/tmp/cmm-round13-grade-raw",
+        "/private/tmp/cmm-round13-mineral-raw",
+        "/private/tmp/cmm-round13-secondary-raw",
+        "/private/tmp/cmm-round14-magnet-raw",
+        "/private/tmp/cmm-round14-mineral-raw",
+        "/private/tmp/cmm-round14-product-raw",
+        "/private/tmp/cmm-round14-secondary-raw",
+        "/private/tmp/cmm-round15-brine-raw",
+        "/private/tmp/cmm-round15-mineral-raw",
+        "/private/tmp/cmm-round16-produced-water-raw",
+        "/private/tmp/cmm-round16-silicate-raw",
+        "/private/tmp/cmm-round16-vivianite-raw",
+        "/private/tmp/cmm-round17-biotite-raw",
+        "/private/tmp/cmm-round17-enstatite-raw",
+        "/private/tmp/cmm-round17-saline-raw",
+        "/private/tmp/cmm-round18-catalyst-raw",
+        "/private/tmp/cmm-round18-dunite-raw",
+        "/private/tmp/cmm-round18-mineral-feeds-raw",
+        "/private/tmp/cmm-round18-products-raw",
+        "/private/tmp/cmm-round19-hydrogenation-catalyst-raw",
+        "/private/tmp/cmm-round19-iron-manganese-raw",
+        "/private/tmp/cmm-round19-manganese-residue-raw",
+        "/private/tmp/cmm-round19-tailings-raw",
+        "/private/tmp/cmm-round20-goethite-raw",
+        "/private/tmp/cmm-round20-laterite-raw",
+        "/private/tmp/cmm-round20-mafic-tailings-raw",
+        "/private/tmp/cmm-round20-nodule-raw",
+        "/private/tmp/cmm-round21-crusts-raw",
+        "/private/tmp/cmm-round21-pcb-raw",
+        "/private/tmp/cmm-round21-ree-mud-raw",
+        "/private/tmp/cmm-round22-concretions-raw",
+        "/private/tmp/cmm-round22-pcb-raw",
+        "/private/tmp/cmm-round22-pv-raw",
+        "/private/tmp/cmm-round22-sulfides-raw",
+        "/private/tmp/cmm-round23-crusts-raw",
+        "/private/tmp/cmm-round23-ghiorse-raw",
+        "/private/tmp/cmm-round23-identity-gaps-raw",
+        "/private/tmp/cmm-round23-lcd-raw",
+        "/private/tmp/cmm-round23-rey-mud-raw",
+        "/private/tmp/cmm-round24-copper-slag-raw",
+        "/private/tmp/cmm-round24-frontier-raw",
+        "/private/tmp/cmm-round24-nimh-raw",
+        "/private/tmp/cmm-round24-sulfuric-raw",
+        "/private/tmp/cmm-round25-bf-dust-raw",
+        "/private/tmp/cmm-round25-button-raw",
+        "/private/tmp/cmm-round25-frontier-raw",
+        "/private/tmp/cmm-round25-oil-ash-raw",
+        "/private/tmp/cmm-round26-eaf-dust-raw",
+        "/private/tmp/cmm-round26-packaging-raw",
+        "/private/tmp/cmm-round26-root-raw",
+        "/private/tmp/cmm-round26-superalloy-raw",
+        "/private/tmp/cmm-round27-eaf-slag-raw",
+        "/private/tmp/cmm-round27-goethite-raw",
+        "/private/tmp/cmm-round27-packaging-raw",
+        "/private/tmp/cmm-round27-root-raw",
+        "/private/tmp/cmm-round27-superalloy-raw",
+        "/private/tmp/cmm-round28-black-shale-research",
+        "/private/tmp/cmm-round28-goethite-research",
+        "/private/tmp/cmm-round28-tatra-research",
+        "/private/tmp/cmm-round28-tire-research",
+        "/private/tmp/cmm-round29-bastnaesite-research",
+        "/private/tmp/cmm-round29-ilmenite-research",
+        "/private/tmp/cmm-round29-tungsten-waste-research",
+        "/private/tmp/cmm-round29-zinc-ore-research",
+        "/private/tmp/cmm-round30-basalt-research",
+        "/private/tmp/cmm-round30-chromite-research",
+        "/private/tmp/cmm-round30-pyrrhotite-research",
+        "/private/tmp/cmm-round30-tungsten-research",
+        "/private/tmp/cmm-round31-chromite-tailings-research",
+        "/private/tmp/cmm-round31-ilmenite-research",
+        "/private/tmp/cmm-round31-kaolin-research",
+        "/private/tmp/cmm-round31-kaolin-waste-research",
+        "/private/tmp/cmm-round31-stibnite-research",
+        "/private/tmp/cmm-round31-tungsten-research",
+        "/private/tmp/cmm-round32-arsenopyrite-research",
+        "/private/tmp/cmm-round32-bornite-research",
+        "/private/tmp/cmm-round32-chromitite-research",
+        "/private/tmp/cmm-round32-molybdenite-research",
+        "/private/tmp/cmm-round33-chalcocite-research",
+        "/private/tmp/cmm-round33-covellite-research",
+        "/private/tmp/cmm-round33-molybdenite-research",
+        "/private/tmp/cmm-round33-pyrite-research",
+        "/private/tmp/cmm-round34-galena-research",
+        "/private/tmp/cmm-round34-greigite-research",
+        "/private/tmp/cmm-round34-mackinawite-research",
+        "/private/tmp/cmm-round34-uraninite-research",
+        "/private/tmp/cmm-round35-anglesite-research",
+        "/private/tmp/cmm-round35-jarosite-research",
+        "/private/tmp/cmm-round35-ningyoite-research",
+        "/private/tmp/cmm-round35-schwertmannite-research",
+        "/private/tmp/cmm-round36-autunite-research",
+        "/private/tmp/cmm-round36-moolooite-research",
+        "/private/tmp/cmm-round36-uramphite-research",
+        "/private/tmp/cmm-round37-falottaite-research",
+        "/private/tmp/cmm-round37-humboldtine-research",
+        "/private/tmp/cmm-round37-lindbergite-research",
+        "/private/tmp/cmm-round37-rhabdophane-research",
+        "/private/tmp/cmm-round38-hausmannite-research",
+        "/private/tmp/cmm-round38-katsarosite-research",
+        "/private/tmp/cmm-round38-mimetite-research",
+        "/private/tmp/cmm-round38-vanadinite-research",
+        "/private/tmp/cmm-round39-ree-phosphate-research",
+        "/private/tmp/cmm-round39-vanadinite-research",
+        "/private/tmp/cmm-round39-wei-manganese-research",
+        "/private/tmp/cmm-round7-ho-er-gd-raw",
+        "/private/tmp/cmm-round7-terbium-raw",
+        "/private/tmp/cmm-round8-sc-pr-raw",
+        "/private/tmp/cmm-round9-cs-sr-raw",
+        "/private/tmp/cmm-round9-ru-rh-raw",
+        "/private/tmp/cmm-round9-si-sn-raw"
+      ]
+    ],
+    "exit_codes": [
+      0,
+      0
+    ],
+    "initial_roots": [
+      "/private/tmp/CMMMech-expansion-round40-20261012/data/records",
+      "/private/tmp/CMMMech-expansion-round40-20261012/research",
+      "/private/tmp/CMMMech-expansion-round40-20261012/reviews",
+      "/private/tmp/CMMMech-expansion-round40-20261012/history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history"
+    ],
+    "referenced_raw_roots": [
+      "/private/tmp/cmm-round10-b-f-raw",
+      "/private/tmp/cmm-round10-graphite-raw",
+      "/private/tmp/cmm-round10-nb-ta-raw",
+      "/private/tmp/cmm-round10-ti-zr-raw",
+      "/private/tmp/cmm-round11-be-rb-re-raw",
+      "/private/tmp/cmm-round11-he-raw",
+      "/private/tmp/cmm-round11-ir-os-hf-raw",
+      "/private/tmp/cmm-round11-lu-tm-pm-raw",
+      "/private/tmp/cmm-round12-aluminium-boron-raw",
+      "/private/tmp/cmm-round12-carbon-metals-raw",
+      "/private/tmp/cmm-round12-groups-raw",
+      "/private/tmp/cmm-round12-industrial-minerals-raw",
+      "/private/tmp/cmm-round13-grade-raw",
+      "/private/tmp/cmm-round13-mineral-raw",
+      "/private/tmp/cmm-round13-secondary-raw",
+      "/private/tmp/cmm-round14-magnet-raw",
+      "/private/tmp/cmm-round14-mineral-raw",
+      "/private/tmp/cmm-round14-product-raw",
+      "/private/tmp/cmm-round14-secondary-raw",
+      "/private/tmp/cmm-round15-brine-raw",
+      "/private/tmp/cmm-round15-mineral-raw",
+      "/private/tmp/cmm-round16-produced-water-raw",
+      "/private/tmp/cmm-round16-silicate-raw",
+      "/private/tmp/cmm-round16-vivianite-raw",
+      "/private/tmp/cmm-round17-biotite-raw",
+      "/private/tmp/cmm-round17-enstatite-raw",
+      "/private/tmp/cmm-round17-saline-raw",
+      "/private/tmp/cmm-round18-catalyst-raw",
+      "/private/tmp/cmm-round18-dunite-raw",
+      "/private/tmp/cmm-round18-mineral-feeds-raw",
+      "/private/tmp/cmm-round18-products-raw",
+      "/private/tmp/cmm-round19-hydrogenation-catalyst-raw",
+      "/private/tmp/cmm-round19-iron-manganese-raw",
+      "/private/tmp/cmm-round19-manganese-residue-raw",
+      "/private/tmp/cmm-round19-tailings-raw",
+      "/private/tmp/cmm-round20-goethite-raw",
+      "/private/tmp/cmm-round20-laterite-raw",
+      "/private/tmp/cmm-round20-mafic-tailings-raw",
+      "/private/tmp/cmm-round20-nodule-raw",
+      "/private/tmp/cmm-round21-crusts-raw",
+      "/private/tmp/cmm-round21-pcb-raw",
+      "/private/tmp/cmm-round21-ree-mud-raw",
+      "/private/tmp/cmm-round22-concretions-raw",
+      "/private/tmp/cmm-round22-pcb-raw",
+      "/private/tmp/cmm-round22-pv-raw",
+      "/private/tmp/cmm-round22-sulfides-raw",
+      "/private/tmp/cmm-round23-crusts-raw",
+      "/private/tmp/cmm-round23-ghiorse-raw",
+      "/private/tmp/cmm-round23-identity-gaps-raw",
+      "/private/tmp/cmm-round23-lcd-raw",
+      "/private/tmp/cmm-round23-rey-mud-raw",
+      "/private/tmp/cmm-round24-copper-slag-raw",
+      "/private/tmp/cmm-round24-frontier-raw",
+      "/private/tmp/cmm-round24-nimh-raw",
+      "/private/tmp/cmm-round24-sulfuric-raw",
+      "/private/tmp/cmm-round25-bf-dust-raw",
+      "/private/tmp/cmm-round25-button-raw",
+      "/private/tmp/cmm-round25-frontier-raw",
+      "/private/tmp/cmm-round25-oil-ash-raw",
+      "/private/tmp/cmm-round26-eaf-dust-raw",
+      "/private/tmp/cmm-round26-packaging-raw",
+      "/private/tmp/cmm-round26-root-raw",
+      "/private/tmp/cmm-round26-superalloy-raw",
+      "/private/tmp/cmm-round27-eaf-slag-raw",
+      "/private/tmp/cmm-round27-goethite-raw",
+      "/private/tmp/cmm-round27-packaging-raw",
+      "/private/tmp/cmm-round27-root-raw",
+      "/private/tmp/cmm-round27-superalloy-raw",
+      "/private/tmp/cmm-round28-black-shale-research",
+      "/private/tmp/cmm-round28-goethite-research",
+      "/private/tmp/cmm-round28-tatra-research",
+      "/private/tmp/cmm-round28-tire-research",
+      "/private/tmp/cmm-round29-bastnaesite-research",
+      "/private/tmp/cmm-round29-ilmenite-research",
+      "/private/tmp/cmm-round29-tungsten-waste-research",
+      "/private/tmp/cmm-round29-zinc-ore-research",
+      "/private/tmp/cmm-round30-basalt-research",
+      "/private/tmp/cmm-round30-chromite-research",
+      "/private/tmp/cmm-round30-pyrrhotite-research",
+      "/private/tmp/cmm-round30-tungsten-research",
+      "/private/tmp/cmm-round31-chromite-tailings-research",
+      "/private/tmp/cmm-round31-ilmenite-research",
+      "/private/tmp/cmm-round31-kaolin-research",
+      "/private/tmp/cmm-round31-kaolin-waste-research",
+      "/private/tmp/cmm-round31-stibnite-research",
+      "/private/tmp/cmm-round31-tungsten-research",
+      "/private/tmp/cmm-round32-arsenopyrite-research",
+      "/private/tmp/cmm-round32-bornite-research",
+      "/private/tmp/cmm-round32-chromitite-research",
+      "/private/tmp/cmm-round32-molybdenite-research",
+      "/private/tmp/cmm-round33-chalcocite-research",
+      "/private/tmp/cmm-round33-covellite-research",
+      "/private/tmp/cmm-round33-molybdenite-research",
+      "/private/tmp/cmm-round33-pyrite-research",
+      "/private/tmp/cmm-round34-galena-research",
+      "/private/tmp/cmm-round34-greigite-research",
+      "/private/tmp/cmm-round34-mackinawite-research",
+      "/private/tmp/cmm-round34-uraninite-research",
+      "/private/tmp/cmm-round35-anglesite-research",
+      "/private/tmp/cmm-round35-jarosite-research",
+      "/private/tmp/cmm-round35-ningyoite-research",
+      "/private/tmp/cmm-round35-schwertmannite-research",
+      "/private/tmp/cmm-round36-autunite-research",
+      "/private/tmp/cmm-round36-moolooite-research",
+      "/private/tmp/cmm-round36-uramphite-research",
+      "/private/tmp/cmm-round37-falottaite-research",
+      "/private/tmp/cmm-round37-humboldtine-research",
+      "/private/tmp/cmm-round37-lindbergite-research",
+      "/private/tmp/cmm-round37-rhabdophane-research",
+      "/private/tmp/cmm-round38-hausmannite-research",
+      "/private/tmp/cmm-round38-katsarosite-research",
+      "/private/tmp/cmm-round38-mimetite-research",
+      "/private/tmp/cmm-round38-vanadinite-research",
+      "/private/tmp/cmm-round39-ree-phosphate-research",
+      "/private/tmp/cmm-round39-vanadinite-research",
+      "/private/tmp/cmm-round39-wei-manganese-research",
+      "/private/tmp/cmm-round7-ho-er-gd-raw",
+      "/private/tmp/cmm-round7-terbium-raw",
+      "/private/tmp/cmm-round8-sc-pr-raw",
+      "/private/tmp/cmm-round9-cs-sr-raw",
+      "/private/tmp/cmm-round9-ru-rh-raw",
+      "/private/tmp/cmm-round9-si-sn-raw"
+    ],
+    "missing_referenced_roots": [],
+    "hidden_ignored_included": true,
+    "relevant_symlinks_followed": true,
+    "scope": "Current worktree and original main records/research/reviews/history; existing research/raw directories cited by matching documents plus named round37/38 Mn-oxalate dossiers. Retained text only, not binary PDF/image/archive content without text derivatives. Not machine-wide absence.",
+    "corpus_hit_lines": 1578,
+    "raw_hit_lines": 2377,
+    "corpus_matched_files": 104,
+    "raw_roots_count": 122,
+    "errors": [
+      "",
+      ""
+    ]
+  },
+  "search": {
+    "search_provider": "web search tool",
+    "utc_date": "2026-10-12",
+    "approximate_window_utc": "00:44–00:50",
+    "queries": [
+      "\"10.2138/am-2021-7651\"",
+      "\"Oxalate formation by Aspergillus niger on minerals of manganese ores\" pdf",
+      "\"Oxalate formation\" \"7651\" pdf",
+      "\"Oxalate formation by Aspergillus niger\" \"AM-22-17651\"",
+      "\"7651\" \"Preprint\" Frank-Kamenetskaya",
+      "\"Oxalate formation\" filetype:pdf -site:researchgate.net",
+      "\"10.2138/am-2021-7651\" correction erratum retraction",
+      "\"am-2021-7651.pdf\"",
+      "\"7651\" \"Frank-Kamenetskaya\" pdf -site:researchgate.net -site:ebsco.com",
+      "\"Oxalate formation by Aspergillus niger\" filetype:pdf -site:researchgate.net",
+      "\"am-2021-7651\" \"pdf\" \"rruff\"",
+      "\"Frank-Kamenetskaya\" \"7651\" \"Preprint\"",
+      "\"Oxalate formation by Aspergillus niger on\" \"download\" -site:researchgate.net -site:ebsco.com"
+    ],
+    "bounds": "Returned first result sets only; no exhaustive pagination, broad negative claim or unrelated filesystem scan.",
+    "successful_reader_routes": [
+      "https://www.researchgate.net/profile/Marina-Zelenskaya/publication/363473091_Oxalate_formation_by_Aspergillus_niger_on_minerals_of_manganese_ores/links/637bc3dc37878b3e87cce8bd/Oxalate-formation-by-Aspergillus-niger-on-minerals-of-manganese-ores.pdf",
+      "https://www.academia.edu/67334229/Oxalate_formation_by_Aspergillus_niger_on_manganese_ore_minerals",
+      "https://msaweb.org/MSA/AmMin/toc/articles/?issue=01&vol=107",
+      "https://msaweb.org/MSA/AmMin/papers-in-press/"
+    ],
+    "additional_limitations": [
+      "Coauthor Academia attachment route was restricted; no login or circumventing attempt.",
+      "Publisher members-only route did not expose an accessible original; no membership or purchase attempted.",
+      "RG figure pages provided captions/links, but direct original figure routes returned 403.",
+      "Current MSA supplement link was identified but web reader could not display ZIP; original official HTTP ZIP was downloaded and inspected instead.",
+      "No applicable formal correction/retraction identified in the bounded returned sets; Crossref update-to absent and relation empty. This does not prove global absence of notices."
+    ]
+  },
+  "acquisition_receipts": [
+    {
+      "receipt": "/private/tmp/cmm-round40-manganese-ore-oxalates-research/acquisition-1.json",
+      "sha256": "175c4c10ebc6e10202fe555a32c6c8cce47a53964418a0debda21ad135f33533",
+      "results": [
+        {
+          "name": "rg-main.pdf",
+          "url": "https://www.researchgate.net/profile/Marina-Zelenskaya/publication/363473091_Oxalate_formation_by_Aspergillus_niger_on_minerals_of_manganese_ores/links/637bc3dc37878b3e87cce8bd/Oxalate-formation-by-Aspergillus-niger-on-minerals-of-manganese-ores.pdf",
+          "started_at": "2026-10-12T00:45:29.910419+00:00",
+          "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+          "finished_at": "2026-10-12T00:45:29.935680+00:00"
+        },
+        {
+          "name": "supplement.zip",
+          "url": "https://www.minsocam.org/msa/ammin/toc/2022/Jan2022_data/AM-22-17651.zip",
+          "started_at": "2026-10-12T00:45:29.911049+00:00",
+          "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+          "finished_at": "2026-10-12T00:45:29.935602+00:00"
+        },
+        {
+          "name": "crossref.json",
+          "url": "https://api.crossref.org/works/10.2138%2Fam-2021-7651",
+          "started_at": "2026-10-12T00:45:29.911263+00:00",
+          "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+          "finished_at": "2026-10-12T00:45:29.935866+00:00"
+        },
+        {
+          "name": "openalex.json",
+          "url": "https://api.openalex.org/works/https://doi.org/10.2138/am-2021-7651",
+          "started_at": "2026-10-12T00:45:29.911424+00:00",
+          "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+          "finished_at": "2026-10-12T00:45:29.935736+00:00"
+        },
+        {
+          "name": "spbu.html",
+          "url": "https://pureportal.spbu.ru/en/publications/oxalate-formation-by-aspergillus-niger-on-minerals-of-manganese-ores(1cd96fcd-8c78-415c-9eab-c477fbb9ba0c).html",
+          "started_at": "2026-10-12T00:45:29.911576+00:00",
+          "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+          "finished_at": "2026-10-12T00:45:29.935789+00:00"
+        }
+      ]
+    },
+    {
+      "receipt": "/private/tmp/cmm-round40-manganese-ore-oxalates-research/acquisition-2.json",
+      "sha256": "0fc6b099d36abd539f862cba70a29a7045e4205c8919a1ec37efc869f3afdf95",
+      "results": [
+        {
+          "name": "rg-main.pdf",
+          "url": "https://www.researchgate.net/profile/Marina-Zelenskaya/publication/363473091_Oxalate_formation_by_Aspergillus_niger_on_minerals_of_manganese_ores/links/637bc3dc37878b3e87cce8bd/Oxalate-formation-by-Aspergillus-niger-on-minerals-of-manganese-ores.pdf",
+          "started_at": "2026-10-12T00:45:45.810014+00:00",
+          "error": "<HTTPError 403: 'Forbidden'>",
+          "finished_at": "2026-10-12T00:45:45.953745+00:00"
+        },
+        {
+          "name": "supplement.zip",
+          "url": "https://www.minsocam.org/msa/ammin/toc/2022/Jan2022_data/AM-22-17651.zip",
+          "started_at": "2026-10-12T00:45:45.810922+00:00",
+          "error": "URLError(ConnectionRefusedError(61, 'Connection refused'))",
+          "finished_at": "2026-10-12T00:45:46.096613+00:00"
+        },
+        {
+          "name": "crossref.json",
+          "url": "https://api.crossref.org/works/10.2138%2Fam-2021-7651",
+          "started_at": "2026-10-12T00:45:45.811199+00:00",
+          "status": 200,
+          "final_url": "https://api.crossref.org/works/10.2138%2Fam-2021-7651",
+          "content_type": "application/json",
+          "bytes": 27275,
+          "sha256": "4518a5979fc94e0952f1f2130f7c294dd2eb72922af14937dbbb2add7f72f86a",
+          "path": "/private/tmp/cmm-round40-manganese-ore-oxalates-research/raw/crossref.json",
+          "finished_at": "2026-10-12T00:45:46.298076+00:00"
+        },
+        {
+          "name": "openalex.json",
+          "url": "https://api.openalex.org/works/https://doi.org/10.2138/am-2021-7651",
+          "started_at": "2026-10-12T00:45:45.811388+00:00",
+          "status": 200,
+          "final_url": "https://api.openalex.org/works/https://doi.org/10.2138/am-2021-7651",
+          "content_type": "application/json",
+          "bytes": 20027,
+          "sha256": "15982210e64205a44ade64591dd94a893818151b34ec83409b1dbcc54adec838",
+          "path": "/private/tmp/cmm-round40-manganese-ore-oxalates-research/raw/openalex.json",
+          "finished_at": "2026-10-12T00:45:46.166741+00:00"
+        },
+        {
+          "name": "spbu.html",
+          "url": "https://pureportal.spbu.ru/en/publications/oxalate-formation-by-aspergillus-niger-on-minerals-of-manganese-ores(1cd96fcd-8c78-415c-9eab-c477fbb9ba0c).html",
+          "started_at": "2026-10-12T00:45:45.811615+00:00",
+          "status": 200,
+          "final_url": "https://pureportal.spbu.ru/en/publications/oxalate-formation-by-aspergillus-niger-on-minerals-of-manganese-ores(1cd96fcd-8c78-415c-9eab-c477fbb9ba0c).html",
+          "content_type": "text/html;charset=UTF-8",
+          "bytes": 14750,
+          "sha256": "13bd29920cbca295416dc2ed08afe67449deb4af889a406049f48dde82946904",
+          "path": "/private/tmp/cmm-round40-manganese-ore-oxalates-research/raw/spbu.html",
+          "finished_at": "2026-10-12T00:45:47.673137+00:00"
+        }
+      ]
+    },
+    {
+      "receipt": "/private/tmp/cmm-round40-manganese-ore-oxalates-research/acquisition-3.json",
+      "sha256": "d0a0cc5d9549f039d2aca96b56093497d3edcf6a8993f29b71d6dd56eea6a617",
+      "results": [
+        {
+          "name": "publisher-main.pdf",
+          "url": "https://pubs.geoscienceworld.org/msa/ammin/article-pdf/107/1/100/5493442/am-2021-7651.pdf",
+          "started_at": "2026-10-12T00:46:35.345505+00:00",
+          "error": "<HTTPError 403: 'Forbidden'>",
+          "finished_at": "2026-10-12T00:46:35.455479+00:00"
+        },
+        {
+          "name": "supplement-http.zip",
+          "url": "http://www.minsocam.org/msa/ammin/toc/2022/Jan2022_data/AM-22-17651.zip",
+          "started_at": "2026-10-12T00:46:35.346322+00:00",
+          "status": 200,
+          "final_url": "http://www.minsocam.org/msa/ammin/toc/2022/Jan2022_data/AM-22-17651.zip",
+          "content_type": "application/zip",
+          "bytes": 676356,
+          "sha256": "fd01c809f6a0a4f72da3446075bf11d692fcd3742cc89b012d0f970cf3b6df87",
+          "path": "/private/tmp/cmm-round40-manganese-ore-oxalates-research/raw/supplement-http.zip",
+          "finished_at": "2026-10-12T00:46:37.140987+00:00"
+        },
+        {
+          "name": "supplement-migrated.zip",
+          "url": "https://msaweb.org/msa/ammin/toc/2022/Jan2022_data/AM-22-17651.zip",
+          "started_at": "2026-10-12T00:46:35.346663+00:00",
+          "error": "<HTTPError 406: 'Not Acceptable'>",
+          "finished_at": "2026-10-12T00:46:35.580075+00:00"
+        },
+        {
+          "name": "current-msa-toc.html",
+          "url": "https://msaweb.org/MSA/AmMin/toc/articles/?issue=01&vol=107",
+          "started_at": "2026-10-12T00:46:35.346873+00:00",
+          "error": "<HTTPError 406: 'Not Acceptable'>",
+          "finished_at": "2026-10-12T00:46:35.579988+00:00"
+        }
+      ]
+    },
+    {
+      "receipt": "/private/tmp/cmm-round40-manganese-ore-oxalates-research/acquisition-4.json",
+      "sha256": "ad68783c8e298573dabdc609db7c0b0029e4b5b7cf645dd7d5ba5adb66cc4310",
+      "results": [
+        {
+          "name": "rg-fig2.jpg",
+          "url": "https://www.researchgate.net/profile/Marina-Zelenskaya/publication/363473091/figure/fig1/AS%3A11431281093526687%401667235422016/RD-patterns-of-oxalate-crystals-formed-on-todorokite-surface-after-a-2-b-6-c-8-d.ppm",
+          "started_at": "2026-10-12T00:47:37.832263+00:00",
+          "error": "<HTTPError 403: 'Forbidden'>",
+          "finished_at": "2026-10-12T00:47:37.900499+00:00"
+        },
+        {
+          "name": "rg-fig6.jpg",
+          "url": "https://www.researchgate.net/publication/363473091/figure/download/fig3/AS%3A11431281093555777%401667235423063/Crystal-structures-of-manganese-oxalate-hydrates-a-falottaite-sp-gr-Pcca-viewed.jpg",
+          "started_at": "2026-10-12T00:47:37.833017+00:00",
+          "error": "<HTTPError 403: 'Forbidden'>",
+          "finished_at": "2026-10-12T00:47:37.908875+00:00"
+        },
+        {
+          "name": "publisher-abstract.pdf",
+          "url": "http://www.minsocam.org/MSA/AmMin/TOC/2022/Abstracts/AM107P0100.pdf",
+          "started_at": "2026-10-12T00:47:37.833212+00:00",
+          "status": 200,
+          "final_url": "http://www.minsocam.org/MSA/AmMin/TOC/2022/Abstracts/AM107P0100.pdf",
+          "content_type": "application/pdf",
+          "bytes": 269093,
+          "sha256": "f602ce04e236291880c41094aca76ca54ee5a4fd3c9a807b3fda1bc65bd5a3f5",
+          "path": "/private/tmp/cmm-round40-manganese-ore-oxalates-research/raw/publisher-abstract.pdf",
+          "finished_at": "2026-10-12T00:47:39.151237+00:00"
+        },
+        {
+          "name": "rg-landing.html",
+          "url": "https://www.researchgate.net/publication/363473091_Oxalate_formation_by_Aspergillus_niger_on_minerals_of_manganese_ores",
+          "started_at": "2026-10-12T00:47:37.833373+00:00",
+          "error": "<HTTPError 403: 'Forbidden'>",
+          "finished_at": "2026-10-12T00:47:37.898095+00:00"
+        }
+      ]
+    },
+    {
+      "receipt": "/private/tmp/cmm-round40-manganese-ore-oxalates-research/acquisition-5.json",
+      "sha256": "6727f71b1b29b51870e6b27ec4f86b8ce19f2c28bbec55769f87f66fdc4d8925",
+      "results": [
+        {
+          "name": "academia-main.html",
+          "url": "https://www.academia.edu/67334229/Oxalate_formation_by_Aspergillus_niger_on_manganese_ore_minerals",
+          "started_at": "2026-10-12T00:48:04.662263+00:00",
+          "error": "<HTTPError 403: 'Forbidden'>",
+          "finished_at": "2026-10-12T00:48:05.063968+00:00"
+        }
+      ]
+    }
+  ],
+  "inspection": {
+    "main": {
+      "version": "32-page final accepted manuscript marked Correction 3, not the final published layout",
+      "route": "https://www.researchgate.net/profile/Marina-Zelenskaya/publication/363473091_Oxalate_formation_by_Aspergillus_niger_on_minerals_of_manganese_ores/links/637bc3dc37878b3e87cce8bd/Oxalate-formation-by-Aspergillus-niger-on-minerals-of-manganese-ores.pdf",
+      "readable_text": true,
+      "local_original_pdf_acquired": false,
+      "original_figures_visually_inspected": false,
+      "main_tables_visually_inspected": false,
+      "retained_reader_outputs": [
+        "raw/r40maintext-web-response.txt",
+        "raw/r40maintext2-web-response.txt"
+      ],
+      "coverage": "Selected main methods/results/discussion/table text and captions inspected through public web reader; retained outputs are selected ranges, not a claim that every line or original figure was saved.",
+      "screenshot_limit": "Web screenshot responses exposed a reference but no inspectable image; not counted as visual evidence."
+    },
+    "supplement": {
+      "original": "raw/supplement/AM-22-17651/7651_supp.pdf",
+      "pages": 2,
+      "all_pages_visually_inspected": true,
+      "tables": [
+        "OM1 unit-cell comparisons",
+        "OM2 bond-length comparisons",
+        "OM3 hydrogen-bond comparisons"
+      ],
+      "renders": [
+        "raw/supplement/AM-22-17651/supp-page-01.png",
+        "raw/supplement/AM-22-17651/supp-page-02.png"
+      ],
+      "source_origin": "Official publisher issue supplement, acquired this pass over its public HTTP endpoint; HTTPS connection refused."
+    },
+    "cif": {
+      "original": "raw/supplement/AM-22-17651/7651frank-kamenetskaya.cif",
+      "data_blocks": [
+        "American_Mineralogist",
+        "mnox_1rt_coord"
+      ],
+      "creation_date": "2020-03-18",
+      "journal_year": 2022,
+      "space_group": "P c c a",
+      "IT_number": 54,
+      "formula_sum": "C2 H6 Mg0.15 Mn0.85 O7",
+      "cell_angstrom": [
+        9.7559,
+        6.6259,
+        10.5198
+      ],
+      "cell_volume_angstrom3": 680.02,
+      "Z": 4,
+      "temperature_K": "293(2)",
+      "mu_per_mm": 1.678,
+      "calculated_density_g_per_cm3": 1.88,
+      "scope": "Inspected metadata, symmetry, cell, refinement fields, coordinates/occupancies and data-loop inventory; embedded SHELX model and reflection sections present. No new refinement, exhaustive reflection-row audit or checkCIF validation claimed."
+    },
+    "published_abstract": {
+      "original": "raw/publisher-abstract.pdf",
+      "pages": 1,
+      "text_extracted": true,
+      "role": "Final bibliographic/title and study-scope corroboration only; not a substitute for full experimental evidence."
+    }
+  },
+  "scientific_limits": [
+    "Main experimental interpretations remain provisional pending original figure/table inspection and version reconciliation.",
+    "No quantitative control outcome, mass-balanced mineral extraction, isolated-product recovery or industrial deployment was independently accepted.",
+    "Same official supplement and coauthor manuscript belong to the same publication, not independent experiments.",
+    "SI OM3 compares a chemical lindbergite structure from another publication; it does not independently establish a new fungal lindbergite crystal structure.",
+    "Official CIF supports a specific mixed Mn/Mg trihydrate structure; it does not by itself bind its crystal to each natural feed or establish a transformation pathway."
+  ],
+  "conflict_locators": [
+    {
+      "source": "Accepted main Table 1, extracted lines 720–723, versus official CIF",
+      "status": "Pending original-main visual/version reconciliation; exact CIF fields in inspection.cif."
+    },
+    {
+      "source": "Accepted main Table 3, extracted lines 779–781, versus Discussion line335",
+      "status": "Day-6 todorokite pH text disagreement preserved; no chosen value imported."
+    }
+  ],
+  "license": {
+    "status": "No general redistribution license verified",
+    "scope": "Public reading access and official supplementary download do not establish unrestricted article redistribution. Only original research assessments committed; raw manuscript excerpts, abstracts, tables and CIF stay outside Git. CIF factual-data status does not license all surrounding author material."
+  },
+  "priority": {
+    "rank": 1,
+    "reason": "A real new official CIF and complete SI now reduce phase-identification uncertainty; main visual access and version/control checks remain the immediate dependencies, so repeating denied endpoints adds no evidence."
+  },
+  "acceptance_requirements": [
+    "Acquire legitimate visually inspectable original main Figures 1–7 and Tables 1–3, preferably the final published article; retain version, URL, actual time and checksums.",
+    "Reconcile the accepted-manuscript versus final-publication phase/time assignments and the Table 1 density/absorption/temperature labels against the official CIF; preserve unresolved discrepancies rather than silently repair them.",
+    "Check all main control outcomes, sample preparation and the feed provenance of the separate 45-day crystallographic specimen. Do not transfer that specimen result to both feeds without evidence.",
+    "Verify any proposed new todorokite/kutnohorite owner at the issuing mineral authority and organism/strain accessions at their issuing database; repeat scoped hidden/ignored/symlink-aware experiment dedup.",
+    "Select existing falottaite/lindbergite extension versus a separately justified natural-feed owner; retain heterogeneous composition, ex-situ and thermal-treatment limits, and distinguish observed phases from proposed redox/acid pathways.",
+    "Curate only after evidence acceptance; append canonical history, validate the named target and obtain an independent native scientific review. Do not infer criticality, extraction yield or deployment."
+  ],
+  "validation": "Source dossier JSON parse, manifest hashes, and Markdown local links checked after saving. No record validation or independent record review claimed for this source-only task.",
+  "raw_root": "/private/tmp/cmm-round40-manganese-ore-oxalates-research",
+  "raw_manifest": [
+    {
+      "path": "acquire1.py",
+      "bytes": 1671,
+      "sha256": "b3119527685b20d1488daac1262f1cde0bf592891961580033ab3832400fcaf2"
+    },
+    {
+      "path": "acquire2.py",
+      "bytes": 1671,
+      "sha256": "6d777062cb4f3e533fd5bb567f72891bba0ae3732373f06596d36733cf7f516a"
+    },
+    {
+      "path": "acquire3.py",
+      "bytes": 1373,
+      "sha256": "b59fbf6fa75babe66b1b4b1a2109379c4754bc91ba69dd699f87586abca50bb0"
+    },
+    {
+      "path": "acquire4.py",
+      "bytes": 1659,
+      "sha256": "76b3726bd8da6f6e66331fb34c6039467ae45a0f32d39a506c0fb684bf8c2629"
+    },
+    {
+      "path": "acquire5.py",
+      "bytes": 1096,
+      "sha256": "29d12b690355e484d56df6324843f9b0e72267674bbdc8879d56aa8afc89145f"
+    },
+    {
+      "path": "acquisition-1.json",
+      "bytes": 1828,
+      "sha256": "175c4c10ebc6e10202fe555a32c6c8cce47a53964418a0debda21ad135f33533"
+    },
+    {
+      "path": "acquisition-2.json",
+      "bytes": 2611,
+      "sha256": "0fc6b099d36abd539f862cba70a29a7045e4205c8919a1ec37efc869f3afdf95"
+    },
+    {
+      "path": "acquisition-3.json",
+      "bytes": 1454,
+      "sha256": "d0a0cc5d9549f039d2aca96b56093497d3edcf6a8993f29b71d6dd56eea6a617"
+    },
+    {
+      "path": "acquisition-4.json",
+      "bytes": 1729,
+      "sha256": "ad68783c8e298573dabdc609db7c0b0029e4b5b7cf645dd7d5ba5adb66cc4310"
+    },
+    {
+      "path": "acquisition-5.json",
+      "bytes": 312,
+      "sha256": "6727f71b1b29b51870e6b27ec4f86b8ce19f2c28bbec55769f87f66fdc4d8925"
+    },
+    {
+      "path": "dedup-corpus-hits.txt",
+      "bytes": 411367,
+      "sha256": "475f9e8d64188e26599badc08823bc092a297a61ac1f213da2493ef856ced12d"
+    },
+    {
+      "path": "dedup-corpus-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "dedup-raw-hits.txt",
+      "bytes": 2220031,
+      "sha256": "ec96272b80eb1fd807c89c08904cb40127eb813adb8fd4cf917edbf0c6c990af"
+    },
+    {
+      "path": "dedup-raw-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "dedup-receipt.json",
+      "bytes": 14412,
+      "sha256": "9145a77b74450ccb7b47754caedd40b0cd8c7bced68f48f87b744a15b228bda4"
+    },
+    {
+      "path": "dedup.py",
+      "bytes": 2719,
+      "sha256": "b256af5d20a3f3e49541f41a17f81b2aa88c82d29873569ac5a43fa550695736"
+    },
+    {
+      "path": "primary-inspection-receipt.json",
+      "bytes": 3015,
+      "sha256": "189ec4040951437716bd87504b38f912a193071baf82634a22964fcce8cf81d2"
+    },
+    {
+      "path": "raw/crossref.json",
+      "bytes": 27275,
+      "sha256": "4518a5979fc94e0952f1f2130f7c294dd2eb72922af14937dbbb2add7f72f86a"
+    },
+    {
+      "path": "raw/openalex.json",
+      "bytes": 20027,
+      "sha256": "15982210e64205a44ade64591dd94a893818151b34ec83409b1dbcc54adec838"
+    },
+    {
+      "path": "raw/publisher-abstract.pdf",
+      "bytes": 269093,
+      "sha256": "f602ce04e236291880c41094aca76ca54ee5a4fd3c9a807b3fda1bc65bd5a3f5"
+    },
+    {
+      "path": "raw/r40maintext-web-response.txt",
+      "bytes": 26478,
+      "sha256": "9403e19002e5147964333046d3b0248e10dcaf62d234cc1b86629bbbda3be290"
+    },
+    {
+      "path": "raw/r40maintext2-web-response.txt",
+      "bytes": 25745,
+      "sha256": "9c2dbb69789aac476e1fa89ef9c19e6b659a09ad940486b906ab894b34b5cbc5"
+    },
+    {
+      "path": "raw/r40search1-web-response.txt",
+      "bytes": 28037,
+      "sha256": "943e75e64ced6f234fad6375859bad1100e1954b064ef20f253238ad5c28029c"
+    },
+    {
+      "path": "raw/spbu.html",
+      "bytes": 14750,
+      "sha256": "13bd29920cbca295416dc2ed08afe67449deb4af889a406049f48dde82946904"
+    },
+    {
+      "path": "raw/supplement/AM-22-17651/7651_supp.pdf",
+      "bytes": 605865,
+      "sha256": "b455127ca51b4bae352de09a856645cfd08d38a673b776e1e785d82f95a14a87"
+    },
+    {
+      "path": "raw/supplement/AM-22-17651/7651frank-kamenetskaya.cif",
+      "bytes": 324575,
+      "sha256": "f4602b8f2a096eb9fd787e3dfbbe9c64614d16543bae5bab497963367c02d7ea"
+    },
+    {
+      "path": "raw/supplement/AM-22-17651/supp-page-01.png",
+      "bytes": 105033,
+      "sha256": "614b0a0252cd498d79e84f3bff164b57e49383bde4a64d4ef977486133cdf54b"
+    },
+    {
+      "path": "raw/supplement/AM-22-17651/supp-page-02.png",
+      "bytes": 52849,
+      "sha256": "a36a2d46b0e06a033e950d52375bea60a67609d732380a84de125cbd285d290d"
+    },
+    {
+      "path": "raw/supplement/AM-22-17651/supp-text.txt",
+      "bytes": 1748,
+      "sha256": "0aee699a9be4a4e97633b2c2a5f844ccb96be08d921bae884fcda60a33163ef1"
+    },
+    {
+      "path": "raw/supplement/__MACOSX/._AM-22-17651",
+      "bytes": 552,
+      "sha256": "ca4aa7e0f67c64eb0e8e38c4af3c9bd3b6e70f0ab3c37b0f8e1d36f7e9eefe68"
+    },
+    {
+      "path": "raw/supplement/__MACOSX/AM-22-17651/._7651_supp.pdf",
+      "bytes": 552,
+      "sha256": "66d0d1f6dfe97474dffb5b6dbf46b29c2d33547b42d6c4babfbafcc9d492c94e"
+    },
+    {
+      "path": "raw/supplement/__MACOSX/AM-22-17651/._7651frank-kamenetskaya.cif",
+      "bytes": 552,
+      "sha256": "cd90d9fd321ec7acc3425ae55b43b238b897b3fa4b748d1498e9b93c25f12569"
+    },
+    {
+      "path": "raw/supplement-http.zip",
+      "bytes": 676356,
+      "sha256": "fd01c809f6a0a4f72da3446075bf11d692fcd3742cc89b012d0f970cf3b6df87"
+    },
+    {
+      "path": "save-dossier.py",
+      "bytes": 20320,
+      "sha256": "40cec57f02ce1c3ec4a903abc201f102048ad0a7f5bc36d2cc91d373e98ba371"
+    },
+    {
+      "path": "web-search-and-inspection-log.json",
+      "bytes": 2248,
+      "sha256": "d64cc70c6ac67091787af220e2fb768d8a0b7a01bf170d3bfc10d4ea6522e8c1"
+    }
+  ]
+}

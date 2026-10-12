@@ -1,0 +1,163 @@
+{
+  "recorded_at": "2026-10-12T00:51:29.789828+00:00",
+  "base": "215cb3f4f9940b3785cf8ca20ecb28d2acc89950",
+  "pin": "a5d562962c75a2ad9efd8160b548df5944315422",
+  "raw_receipt": {
+    "path": "/private/tmp/cmm-round40-current-status.json",
+    "sha256": "d7c9ec8bbc3747df415468a05bde102f664ee4f38efb874ac31141323c1124e4"
+  },
+  "source_issue_receipt": {
+    "path": "/private/tmp/cmm-round40-source-issues-created.json",
+    "sha256": "d9c24f27dace5597dfaae8951d46d32d5a34b8f03176d6d3d1b7dd28ba388666"
+  },
+  "endpoints": {
+    "admission": "repos/CultureBotAI/culturebotai-claw/pulls/581",
+    "rules": "repos/CultureBotAI/CMMMech/rules/branches/main",
+    "ruleset_24692449": "repos/CultureBotAI/CMMMech/rulesets/24692449",
+    "workflows": "repos/CultureBotAI/CMMMech/actions/workflows",
+    "issues": "repos/CultureBotAI/CMMMech/issues?state=open&per_page=100"
+  },
+  "admission": {
+    "html_url": "https://github.com/CultureBotAI/culturebotai-claw/pull/581",
+    "state": "closed",
+    "merged": true,
+    "merged_at": "2026-10-08T02:08:09Z",
+    "merge_commit_sha": "849f336e025510316a5f235eb0af8547b8bd50cc"
+  },
+  "effective_rules": [
+    {
+      "type": "pull_request",
+      "parameters": {
+        "required_approving_review_count": 0,
+        "dismiss_stale_reviews_on_push": false,
+        "required_reviewers": [],
+        "require_code_owner_review": false,
+        "dismissal_restriction": {
+          "enabled": false,
+          "allowed_actors": []
+        },
+        "require_last_push_approval": false,
+        "required_review_thread_resolution": false,
+        "require_extra_approval_for_unattributed_changes": true,
+        "allowed_merge_methods": [
+          "merge",
+          "squash",
+          "rebase"
+        ]
+      },
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "CultureBotAI/CMMMech",
+      "ruleset_id": 24692449
+    },
+    {
+      "type": "required_status_checks",
+      "parameters": {
+        "strict_required_status_checks_policy": false,
+        "do_not_enforce_on_create": false,
+        "required_status_checks": [
+          {
+            "context": "validate-strict",
+            "integration_id": 15368
+          }
+        ]
+      },
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "CultureBotAI/CMMMech",
+      "ruleset_id": 24692449
+    },
+    {
+      "type": "merge_queue",
+      "parameters": {
+        "merge_method": "SQUASH",
+        "max_entries_to_build": 3,
+        "min_entries_to_merge": 1,
+        "max_entries_to_merge": 1,
+        "min_entries_to_merge_wait_minutes": 5,
+        "grouping_strategy": "ALLGREEN",
+        "check_response_timeout_minutes": 120
+      },
+      "ruleset_source_type": "Repository",
+      "ruleset_source": "CultureBotAI/CMMMech",
+      "ruleset_id": 24692449
+    }
+  ],
+  "rulesets": [
+    {
+      "id": 24692449,
+      "name": "CLAW merge queue",
+      "enforcement": "active",
+      "bypass_actors": []
+    }
+  ],
+  "workflows": [
+    {
+      "name": "Automatic merge queue admission",
+      "path": ".github/workflows/merge-queue-admission.yaml",
+      "state": "active"
+    },
+    {
+      "name": "PR shepherd",
+      "path": ".github/workflows/pr-shepherd.yml",
+      "state": "active"
+    },
+    {
+      "name": "Validate strictly",
+      "path": ".github/workflows/validate-strict.yaml",
+      "state": "active"
+    },
+    {
+      "name": "Verify merge integrity",
+      "path": ".github/workflows/verify-merge-integrity.yaml",
+      "state": "active"
+    }
+  ],
+  "open_source_issues": [
+    {
+      "number": 130,
+      "title": "Resolve yeast cerium-phosphate phase identity from full primary evidence",
+      "state": "open",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/130"
+    },
+    {
+      "number": 129,
+      "title": "Complete vanadinite original-figure verification before admission",
+      "state": "open",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/129"
+    },
+    {
+      "number": 120,
+      "title": "Complete meta-autunite figure verification before record admission",
+      "state": "open",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/120"
+    },
+    {
+      "number": 104,
+      "title": "Acquire and reconcile full ilmenite bioleaching studies",
+      "state": "open",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/104"
+    },
+    {
+      "number": 103,
+      "title": "Acquire tungsten mining-waste methods before record admission",
+      "state": "open",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/103"
+    },
+    {
+      "number": 133,
+      "title": "Verify original samarium biomineralization figures before record admission",
+      "state": "open",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/133"
+    },
+    {
+      "number": 134,
+      "title": "Complete original-figure and phase verification for manganese-ore oxalates",
+      "state": "open",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/134"
+    }
+  ],
+  "limits": [
+    "New source issues were verified after the initial governance snapshot; separate receipt timestamps retained.",
+    "Workflow presence does not prove shepherd credentials or whole-fleet synchronization.",
+    "Future admission or governed changes use CLAW supported onboard-mech/synchronization; no governance changes made in this batch."
+  ]
+}

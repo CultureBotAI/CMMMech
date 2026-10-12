@@ -1,0 +1,440 @@
+schema_version: 1.0.0
+review_id: 20261012T005518Z-birnessite-round40-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of birnessite fungal transformation
+started_at: '2026-10-12T00:51:28.426844Z'
+finished_at: '2026-10-12T00:55:18.074531Z'
+reviewer:
+  identity: Codex /root/round27_packaging
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Target, canonical history and birnessite dossier authored by
+    /root. Reviewer authored only the separate samarium-phosphate source deferral
+    this round, and no target bytes. Shared worktree and acquired originals disclosed.
+    Reviewer captured native inspect before judgment, independently read the complete
+    nine-page primary text and personally inspected all six original figures and all
+    three tables.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Whole frozen birnessite record is supported as a qualified culture-associated
+  transformation of a source-named synthetic sodium form. Zero corrective findings.
+  Identity, separate organisms, phase-assignment, preparation, control and recovery
+  limits are accurately retained.
+source:
+  git_revision: 215cb3f4f9940b3785cf8ca20ecb28d2acc89950
+  state: working_tree
+  inputs:
+  - path: data/records/birnessite.yaml
+    sha256: fa24ea2d75d61f97f7259f13325a587c181e54dadafde8b82553389143f1d339
+    role: target
+  - path: history/records/birnessite/2026-10-12T004836Z-codex-f35e9c.yaml
+    sha256: 47ff413bf0dab6ae94eb7f7343e5adeafba67cbc33d98852db91a8153ae48422
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Whole birnessite identity, synthetic experimental feed, microbial observations,
+    conditions, controls, outcome limits and inline/canonical provenance.
+  selection: Parent assigned target curated by another agent.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:birnessite
+  exclusions:
+  - target: Other Wei2012 Mn-oxide arms and other material records
+    reason: Inspected to test claim boundaries; no independent acceptance of other
+      records by this observation.
+targets:
+- target_id: cmmmech:birnessite
+  path: data/records/birnessite.yaml
+  label: Birnessite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/birnessite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named-record validation
+  command: PYTHONDONTWRITEBYTECODE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1
+    uv run --locked cmmmech validate data/records/birnessite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Reviewer executed from round40 worktree; 1 checked,0 failed. Log /private/tmp/cmm-round40-birnessite-independent/named-validation.log
+    SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+  target_ids:
+  - cmmmech:birnessite
+- check_id: batch
+  name: Final cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Parent executed; reviewer independently read and raw-byte hash-verified
+    /private/tmp/cmm-round40-final-batch.log SHA256 0665c580872720049264794b273d7ea6e4ee7e888a0a06951c26f725ba6b48db.
+    uv run --locked --extra dev python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 149.21s (0:02:29)
+
+    Checked 211 record(s); 0 failed.
+
+    Checked 244 history record(s); 0 error(s).'
+  target_ids:
+  - cmmmech:birnessite
+- check_id: nonempty
+  name: Final cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Parent executed; reviewer independently read and raw-byte hash-verified
+    /private/tmp/cmm-round40-final-nonempty.log SHA256 8a10f1c1959e9e938e137e67cf47d6b48b4dfd325ea5732a7df10607c6cf4558.
+    Checked 211 record(s); 0 failed.
+  target_ids:
+  - cmmmech:birnessite
+- check_id: history
+  name: Final cohort history
+  command: uv run --locked cmmmech validate-history --base 215cb3f4f9940b3785cf8ca20ecb28d2acc89950
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Parent executed; reviewer independently read and raw-byte hash-verified
+    /private/tmp/cmm-round40-final-history.log SHA256 e478038f34a36fe0187e8927493285080a190fff085e60de5c93d35d18255d30.
+    Checked 244 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:birnessite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/birnessite.yaml
+  locator: Whole frozen target; native inspect before judgment
+  accessed_at: '2026-10-12T00:55:18.074531Z'
+  support: supports
+  summary: Whole target independently assessed; reviewer did not author record, history
+    or birnessite dossier.
+  snapshot_sha256: fa24ea2d75d61f97f7259f13325a587c181e54dadafde8b82553389143f1d339
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1111/j.1462-2920.2012.02776.x
+  locator: Complete nine-page primary; printed1744–1752; Figures1–6 and Tables1–3
+  accessed_at: '2026-10-12T00:55:18.074531Z'
+  support: supports
+  summary: Complete text read; original pages2–8 visually inspected, including all
+    six figures and all three tables. The public mirror PDF is reused from round39,
+    not claimed as a fresh download. Copyright/redistribution license is unresolved;
+    bulk remains outside Git. Publisher metadata1744–1753 differs from PDF, explicitly
+    retained.
+  snapshot_sha256: aa93ca545b5b192196a36112b79276fb47e12f9cd31a2cf520a06b79ec4b08ec
+- evidence_id: feed
+  kind: primary_source
+  reference: https://doi.org/10.1111/j.1462-2920.2012.02776.x
+  locator: 'Printed1750 Methods: metal compounds, organisms and plate preparation'
+  accessed_at: '2026-10-12T00:55:18.074531Z'
+  support: supports
+  summary: Source explicitly names synthetic sodium birnessite prepared by freeze-drying
+    Na-buserite. No specimen-specific initial chemistry, phase purity or polytype
+    refinement establishes all endmember properties. Separate A.niger ATCC201373 and
+    unaccessioned S.himantioides supplied by N.White. 20cm3 MEA,0.5%(w/v) oxide,90mm
+    dish,84mm sterile cellophane,5mm leading-edge mycelial disc,25C dark,at least
+    three plates. Precultures maintained at least7/14days respectively.
+  snapshot_sha256: 8123dadb27ce4cd5700ee911ea42902fe99408b2714d391f7992ef49d8da63a8
+- evidence_id: quantities
+  kind: primary_source
+  reference: https://doi.org/10.1111/j.1462-2920.2012.02776.x
+  locator: Original Tables1–3 and Figures1D,2I–L
+  accessed_at: '2026-10-12T00:55:18.074531Z'
+  support: supports
+  summary: 'Table1 reports dimensionless extension-rate ratios, not fractions recovered:
+    birnessite A.niger0.94 growth/control and0.80 clearing/growth; Serpula0.80 and0.96.
+    Table2 biomass tolerance72.8/196.4% uses no-oxide biomass denominator. Table3
+    birnessite pH7.26 initially,3.08 at15days A.niger and2.93 at25days Serpula; six
+    surface measurements. Microscopy/Table1/2 Serpula23days is not silently changed
+    to25days. Figure2I is abiotic feed morphology; J–L show fungal crystals.'
+  snapshot_sha256: b0bb94e2911fa8874b7077c662c9d5f5ecaa9d37672797e4c09c430b7b280863
+- evidence_id: products
+  kind: primary_source
+  reference: https://doi.org/10.1111/j.1462-2920.2012.02776.x
+  locator: Original Figure4 caption/patterns p1748 and extraction/XRPD methods p1751
+  accessed_at: '2026-10-12T00:55:18.074531Z'
+  support: supports
+  summary: The5-day Serpula product is assigned Mn-oxalate trihydrate plus dihydrate;23-day
+    product dihydrate/lindbergite. These are reference-pattern assignments without
+    quantified fractions. Pattern shown10–30degrees while methods acquisition3–60degrees;
+    no independent re-refinement. 80C hot-water extraction then vacuum drying can
+    affect hydration. Record does not retrospectively name trihydrate falottaite or
+    transfer Serpula diffraction to A.niger. Figure3 EDX is the different biogenic-MnOx
+    arm.
+  snapshot_sha256: 6fae257cd6ad633075d2ce399ed9d419799a09360ec469bfec9511399a1742d3
+- evidence_id: controls
+  kind: primary_source
+  reference: https://doi.org/10.1111/j.1462-2920.2012.02776.x
+  locator: Original Figures5–6 and p1751 abiotic methods
+  accessed_at: '2026-10-12T00:55:18.074531Z'
+  support: supports
+  summary: 50microlitres0.5M citric/oxalic acid in5mm wells produced birnessite clearing;
+    HCl no significant halo. Separate chemical assays do not measure fungal metabolites,
+    pH-match cultures, establish microbial necessity or characterize abiotic products
+    by XRD. No killed-biomass or time-matched sterile diffraction series. Fig6 is
+    a conceptual model with speculative metal sorption. Neither clearing nor growth
+    ratios establish dissolved-Mn mass balance, isolated-product yield or industrial
+    deployment.
+  snapshot_sha256: efbed5f1555edbecd096e455a54672d05b2abeaf6202f4b452af9aaf0d3ee75a
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Original September2026 page26 row and introductory status definitions
+  accessed_at: '2026-10-12T00:55:18.074531Z'
+  support: supports
+  summary: Birnessite is grandfathered G, original1956, formula(Na,Ca,K)0.6(Mn4+,Mn3+)2O4(H2O)1.5.
+    No invented proposal accession. Species identity differs from specimen, buserite
+    precursor, ore/nodule resource and oxalate products. No inherited criticality.
+  snapshot_sha256: fc065a4dfb422359d5f2a499432f764295652deeb7a369d2d01a860e4fb2dfbc
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/Birnessite.pdf
+  locator: Original one-page authority entry, revised6/2/2021
+  accessed_at: '2026-10-12T00:55:18.074531Z'
+  support: supports
+  summary: Independently inspected formula, chemistry and polytype/synthetic cell
+    distinctions; the variable mineral description is not specimen-specific chemistry
+    for Wei2012 material.
+  snapshot_sha256: d22033bef3ca522c7e6207569ab194e30fb9796fe5012a29919806fae4760a20
+- evidence_id: taxa
+  kind: authority
+  reference: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/5061/dataset_report
+  locator: Fresh author-acquired official NCBI JSON5061 and80602, independently parsed
+  accessed_at: '2026-10-12T00:55:18.074531Z'
+  support: supports
+  summary: Official current nodes are species Aspergillus niger and Serpula himantioides.
+    These identify names only; record does not equate species lookup to stock authentication.
+    ATCC201373 appears in original methods; the other isolate has no accession. Distinct
+    from ATCC1015 studies.
+  snapshot_sha256: 6d2d9b2a4b031de6fd14225ddc52dec2a240dadb51d83f12a549e035575e9126
+- evidence_id: taxon-serpula
+  kind: authority
+  reference: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/80602/dataset_report
+  locator: Current official species JSON80602
+  accessed_at: '2026-10-12T00:55:18.074531Z'
+  support: supports
+  summary: TaxID80602 is Serpula himantioides species; it does not identify the N.White
+    isolate or resolve the species complex.
+  snapshot_sha256: 2d8a60cbd3ed1d40f48f210ae49bb6285db7ba00af5cc5bdfb27e56b5405ddda
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round40-birnessite-independent/notice-search-observation.json
+  locator: Independent bounded exact DOI/title notice, SI and related-result queries
+  accessed_at: '2026-10-12T00:55:18.074531Z'
+  support: supports
+  summary: No affecting formal notice verified among returned results. Retained Crossref
+    has empty relation and no update-to/updated-by. Complete main no declared SI citation;
+    no exhaustive unpublished-data or SI absence claim. Later studies use distinct
+    feeds/strains and are not silently pooled.
+  snapshot_sha256: a66b221a28236adbdea8d51e60e3b7209162cdaf423ff22b638c841b25995832
+  search_scope: First returned result sets independently inspected; no date filter.
+    This is a reviewer observation, not a raw provider export.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round40-birnessite-independent/dedup-receipt.json
+  locator: Independent hidden/ignored/followed current corpus and referenced downloads
+  accessed_at: '2026-10-12T00:55:18.074531Z'
+  support: supports
+  summary: Known Wei2012 experiment is already represented as a product view under
+    lindbergite; birnessite is a distinct feed mineral owner, not new experimental
+    replication. Relevant elemental,resource,precursor and product boundaries retained.
+  snapshot_sha256: 5200ba7274bc0e127ce9d505a1679b6c745c566666df570fd2bdb0a57242d439
+  search_scope: rg --hidden --no-ignore --follow across current data/records,research,reviews,history
+    and127 existing cited research/raw roots discovered from1578 text metadata files
+    with cycle prevention. Binary detection retained, not all PDF/image bytes decoded;
+    no machine-wide novelty claim.
+- evidence_id: history
+  kind: record_content
+  reference: history/records/birnessite/2026-10-12T004836Z-codex-f35e9c.yaml
+  locator: Whole canonical CREATE sidecar and distinct inline event
+  accessed_at: '2026-10-12T00:55:18.074531Z'
+  support: supports
+  summary: Actual codex/GPT-6/codex provenance, target and scope agree. Sidecar00:48:36Z
+    and inline00:48:58Z are separate actual events. No earlier histories rewritten.
+  snapshot_sha256: 47ff413bf0dab6ae94eb7f7343e5adeafba67cbc33d98852db91a8153ae48422
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round40-final-terminal.json
+  locator: Actual parent terminal receipt and all three logs
+  accessed_at: '2026-10-12T00:55:18.074531Z'
+  support: supports
+  summary: Reviewer verified raw-byte hashes and terminal0 for just check308passed3skipped149.21s,211records244histories,
+    explicit nonempty211/0 and trusted-base history244/0. Named target independently
+    validated1/0. Structural checks do not establish scientific truth.
+  snapshot_sha256: 77548c3649f35af923b700e7c631a458a6f970f1ef8fd6b657ad81c23b2c7106
+- evidence_id: artifacts
+  kind: record_content
+  reference: /private/tmp/cmm-round40-birnessite-independent/evidence-check.json
+  locator: Independent exact-byte checks
+  accessed_at: '2026-10-12T00:55:18.074531Z'
+  support: supports
+  summary: All five author-declared current/reused primary and authority artifacts,
+    three actual gate logs and all native-inspected inputs match their recorded hashes.
+    Nine primary page-render hashes recorded; claim-bearing pages2–8 personally visually
+    inspected.
+  snapshot_sha256: 02b6eb8a704e630929cfa95f94e4ac7b1a1f3af4bef569aec9dafd1dea31103e
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species versus synthetic experimental feed
+  outcome: supported
+  summary: Authority identity and taxon labels are accurate; feed and stock uncertainty
+    remain explicit.
+  target_ids:
+  - cmmmech:birnessite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  - taxa
+  - taxon-serpula
+  - feed
+  - dedup
+  dimensions:
+  - name: material
+    value: Birnessite mineral; source-named synthetic sodium form prepared from Na-buserite
+    definition: Mineral owner differs from a measured pure endmember batch or natural
+      ore.
+    evidence_ids:
+    - ima
+    - feed
+  - name: criticality
+    value: Unrecorded
+    definition: No jurisdiction/list/edition inherited from manganese.
+    evidence_ids:
+    - record
+  - name: organisms
+    value: Separate A.niger ATCC201373 and unaccessioned S.himantioides cultures
+    definition: Species nodes are not stock authentication or a consortium.
+    evidence_ids:
+    - feed
+    - taxa
+    - taxon-serpula
+- assessment_id: mechanism
+  area: evidence
+  topic: Culture-associated clearing and oxalate transformation
+  outcome: supported
+  summary: Source supports conditional observations while preserving measured-versus-interpreted
+    mechanisms.
+  target_ids:
+  - cmmmech:birnessite
+  evidence_ids:
+  - primary
+  - feed
+  - quantities
+  - products
+  - controls
+  dimensions:
+  - name: biomass
+    value: Growing mycelial cultures from leading-edge discs
+    definition: No resting/dried biomass substituted.
+    evidence_ids:
+    - feed
+  - name: conditions
+    value: 0.5%(w/v) feed in20cm3 MEA,25C dark,at leastthreeplates
+    definition: Primary plate assay; timepoints kept by measurement.
+    evidence_ids:
+    - feed
+    - quantities
+  - name: outcomes
+    value: Clearing, pH and source-assigned Serpula Mn-oxalate phases
+    definition: Not a dissolved-Mn recovery balance or isolated product yield.
+    evidence_ids:
+    - quantities
+    - products
+  - name: controls
+    value: No-oxide fungal growth, abiotic morphology and separate acid-well assays
+    definition: No matched-pH/killed-biomass/time-matched sterile phase series proves
+      exclusive causality.
+    evidence_ids:
+    - controls
+- assessment_id: limits
+  area: evidence
+  topic: Phase, denominator and deployment limits
+  outcome: supported
+  summary: Hydration changes during extraction/drying, unquantified phases, differing
+    times and limited causal comparisons are retained accurately.
+  target_ids:
+  - cmmmech:birnessite
+  evidence_ids:
+  - quantities
+  - products
+  - controls
+  - notices
+  dimensions:
+  - name: scale
+    value: Laboratory plates
+    definition: No industrial deployment or universal natural-birnessite behavior
+      inferred.
+    evidence_ids:
+    - primary
+    - feed
+    - controls
+- assessment_id: provenance
+  area: provenance
+  topic: Independent exact-state observation and completed checks
+  outcome: supported
+  summary: Native inspect preceded assessment. Reviewer did not author target; exact
+    hashes remain unchanged and actual required gates independently verified.
+  target_ids:
+  - cmmmech:birnessite
+  evidence_ids:
+  - record
+  - history
+  - gates
+  - artifacts
+  - dedup
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- No initial specimen chemistry, quantified purity or polytype refinement.
+- No direct fungal metabolite concentration or Mn oxidation-state measurement isolates
+  the proposed organic-acid pathway.
+- No dissolved-Mn mass balance, quantitative phase fractions, isolated-product yield
+  or industrial deployment.
+- 23-day microscopy/biomass and25-day pH/clearing are distinct source sampling descriptions.
+- Hot-water extraction and vacuum drying may alter hydration; no wet-versus-dried
+  phase series.
+- No killed-biomass, matched-pH culture or time-matched sterile diffraction comparisons
+  establish microbial necessity.
+- Serpula-specific diffraction is not transferred to Aspergillus; no retrospective
+  falottaite assignment.
+- Species IDs do not authenticate ATCC201373 or identify the unaccessioned Serpula
+  isolate.
+- Bounded notice/SI search is not exhaustive; mirror redistribution license unresolved,
+  raw source remains outside Git.
+notes:
+- No corrective findings and no target/history edits by this reviewer.
+- This is the same Wei2012 experiment under a different material view, not independent
+  replication.
+- Named validation executed by reviewer; cohort tests executed by parent and independently
+  receipt-verified.
+links:
+- https://doi.org/10.1111/j.1462-2920.2012.02776.x
+- https://www.handbookofmineralogy.org/pdfs/Birnessite.pdf

@@ -1,0 +1,217 @@
+{
+  "recorded_at": "2026-10-12T00:58:25.662283+00:00",
+  "base": "215cb3f4f9940b3785cf8ca20ecb28d2acc89950",
+  "branch": "curate/cmm-expansion-round40-20261012",
+  "counts": {
+    "record_count": 211,
+    "history_count": 244,
+    "structured_review_count": 248,
+    "review_base_count": 41,
+    "covered_records": 211
+  },
+  "record_actions": {
+    "birnessite": "CREATE",
+    "manganese-ore": "EDIT"
+  },
+  "records": [
+    {
+      "slug": "birnessite",
+      "action": "CREATE",
+      "record": "data/records/birnessite.yaml",
+      "record_sha256": "fa24ea2d75d61f97f7259f13325a587c181e54dadafde8b82553389143f1d339",
+      "histories": [
+        {
+          "path": "history/records/birnessite/2026-10-12T004836Z-codex-f35e9c.yaml",
+          "sha256": "47ff413bf0dab6ae94eb7f7343e5adeafba67cbc33d98852db91a8153ae48422"
+        }
+      ],
+      "review": "reviews/structured/20261012T005518Z-birnessite-round40-independent/review.yaml",
+      "review_md": "reviews/structured/20261012T005518Z-birnessite-round40-independent/review.md",
+      "review_sha256": "35b9f4b162ed43b570ddb4ee38c41402e4305bf6ec438c41a0b25bcddc52f459",
+      "review_md_sha256": "42a5da98fcdaa978a9b883fc5b65d813d587fc432aebf9b02e5844912ea99afa",
+      "reviewer": {
+        "identity": "Codex /root/round27_packaging",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Target, canonical history and birnessite dossier authored by /root. Reviewer authored only the separate samarium-phosphate source deferral this round, and no target bytes. Shared worktree and acquired originals disclosed. Reviewer captured native inspect before judgment, independently read the complete nine-page primary text and personally inspected all six original figures and all three tables."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [],
+      "dossiers": [
+        {
+          "path": "research/sources/round40-birnessite/20261012T004934Z-source-investigation.json",
+          "sha256": "e2baa4fddb19b8bf2748aa7d4671118b06606c1ebef4676d2f99eeb00c5e13a0"
+        },
+        {
+          "path": "research/sources/round40-birnessite/20261012T004934Z-source-investigation.md",
+          "sha256": "fe350e4efa61897bc77db5e97ecfcc0adfcb0ee65698029ed84b85f09b25820f"
+        }
+      ]
+    },
+    {
+      "slug": "manganese-ore",
+      "action": "EDIT",
+      "record": "data/records/manganese-ore.yaml",
+      "record_sha256": "cb22ef76d001d8c0a9639b29196bee8535eb0e6c631a7e9a7216783d40dab05f",
+      "histories": [
+        {
+          "path": "history/records/manganese-ore/2026-10-11T114302Z-codex-4e6a73.yaml",
+          "sha256": "e37ff8b35c8eb9f909759b520dfdb3ebf4088543cce3acdb1d6bf98562f4e493"
+        },
+        {
+          "path": "history/records/manganese-ore/2026-10-11T114921Z-codex-7272e2.yaml",
+          "sha256": "5471258f5d4b2aa4097574229940591134ac122f0cbb4c0553e8bc378bc77eea"
+        },
+        {
+          "path": "history/records/manganese-ore/2026-10-12T004836Z-codex-e1610a.yaml",
+          "sha256": "c82c1ae0df16221ad9a00ca3f879e5351b0bf99e9e2facf292a40a6eb683e00d"
+        }
+      ],
+      "review": "reviews/structured/20261012T005436Z-manganese-ore-round40-independent/review.yaml",
+      "review_md": "reviews/structured/20261012T005436Z-manganese-ore-round40-independent/review.md",
+      "review_sha256": "9b9e84a1fbc023c123ae4b60986586ca4c017cb44cbe9631fa5b7a62da15eec9",
+      "review_md_sha256": "35e054c13a70c98f1910284141927c4af5d3f4b55dca5e153876c1ddaa878fa8",
+      "reviewer": {
+        "identity": "Codex /root",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Current extension/history/dossier authored by /root/round27_eaf_slag; root specified existing owner but authored no current manganese record bytes. Shared originals independently inspected after native inspect. Root authored original round19 record; its unchanged older claims are covered by exact preservation and the separate round19_tailings independent resolution review, not presented as a new independent review of root-authored science. Root authored current birnessite, reviewed separately."
+      },
+      "verdict": "pass_with_limitations",
+      "findings": [],
+      "dossiers": [
+        {
+          "path": "research/sources/round40-cobalt-manganese-oxide/20261012T005016Z-source-investigation.json",
+          "sha256": "6fd83e98e36d052ac11eadb6ac8b784172f18d100d9f71e50fe7dcca7985e3cd"
+        },
+        {
+          "path": "research/sources/round40-cobalt-manganese-oxide/20261012T005016Z-source-investigation.md",
+          "sha256": "4ab2acc69f387c9122189f49b1fc7479d90f9947b9d13f743c6229cff1b82444"
+        }
+      ]
+    }
+  ],
+  "gate_receipts": {
+    "started_at": "2026-10-12T00:50:09.786065+00:00",
+    "base": "215cb3f4f9940b3785cf8ca20ecb28d2acc89950",
+    "commands": [
+      {
+        "name": "batch",
+        "command": [
+          "just",
+          "check"
+        ],
+        "started_at": "2026-10-12T00:50:09.786335+00:00",
+        "finished_at": "2026-10-12T00:52:53.401435+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round40-final-batch.log",
+        "sha256": "0665c580872720049264794b273d7ea6e4ee7e888a0a06951c26f725ba6b48db"
+      },
+      {
+        "name": "nonempty",
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate",
+          "--require-records"
+        ],
+        "started_at": "2026-10-12T00:52:53.401855+00:00",
+        "finished_at": "2026-10-12T00:52:59.871479+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round40-final-nonempty.log",
+        "sha256": "8a10f1c1959e9e938e137e67cf47d6b48b4dfd325ea5732a7df10607c6cf4558"
+      },
+      {
+        "name": "history",
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate-history",
+          "--base",
+          "215cb3f4f9940b3785cf8ca20ecb28d2acc89950"
+        ],
+        "started_at": "2026-10-12T00:52:59.872070+00:00",
+        "finished_at": "2026-10-12T00:53:04.378279+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round40-final-history.log",
+        "sha256": "e478038f34a36fe0187e8927493285080a190fff085e60de5c93d35d18255d30"
+      }
+    ],
+    "exit_code": 0,
+    "finished_at": "2026-10-12T00:53:04.378735+00:00"
+  },
+  "review_check_receipt": {
+    "command": [
+      "just",
+      "review-check",
+      "--base",
+      "215cb3f4f9940b3785cf8ca20ecb28d2acc89950",
+      "--require-reviews"
+    ],
+    "started_at": "2026-10-12T00:55:56.919402+00:00",
+    "finished_at": "2026-10-12T00:57:55.337657+00:00",
+    "exit_code": 0,
+    "log": "/private/tmp/cmm-round40-review-check.log",
+    "sha256": "d4dad13bda11729d12614af5ce9a0f90a2d4d4605cca455bc7fab21803a1f4e4"
+  },
+  "exact_coverage_receipt": {
+    "path": "/private/tmp/cmm-round40-local-coverage.json",
+    "sha256": "9a7592af1b6cf1ae01626513b58df65a02c11950c0ac6bbe434820e0f5400363",
+    "counts": {
+      "record_count": 211,
+      "history_count": 244,
+      "structured_review_count": 248,
+      "review_base_count": 41,
+      "covered_records": 211
+    }
+  },
+  "baseline": {
+    "scope": "Reuse the just-completed fresh remote-main full gate at this exact unmodified commit and tree; no redundant test rerun before curation.",
+    "receipt": "/private/tmp/cmm-round39-postmerge-20261012-published-terminal.json",
+    "sha256": "88efeb16b8484a1ae9572305867b7c993c06f2851da12e77c8a933ab3c2f80a2"
+  },
+  "deferred_sources": [
+    {
+      "path": "research/sources/round40-samarium-phosphate/20261012T005055Z-source-deferral.json",
+      "sha256": "0f09edfc500ba6f2da52266899298ade828106ef5d08f65aa2df6fc65ff38930"
+    },
+    {
+      "path": "research/sources/round40-samarium-phosphate/20261012T005055Z-source-deferral.md",
+      "sha256": "133881f5cc96fe8b139694e8feff3cb01fcd4bc2815029f9ddc3183a07cbce5c"
+    },
+    {
+      "path": "research/sources/round40-manganese-ore-oxalates/20261012T005309Z-source-deferral.json",
+      "sha256": "5b1402a886877ef4593f9c80112123775c2fb7809e6cb38acfdd49feab5b01cb"
+    },
+    {
+      "path": "research/sources/round40-manganese-ore-oxalates/20261012T005309Z-source-deferral.md",
+      "sha256": "8d12e510d0df66b0aa0f0cedeff0f19650fd3de59705f1888b32bfce11fe574c"
+    }
+  ],
+  "corrected_review_issues": [
+    135
+  ],
+  "open_source_issues": [
+    103,
+    104,
+    120,
+    129,
+    130,
+    133,
+    134
+  ],
+  "new_source_issues": [
+    133,
+    134
+  ],
+  "governance_snapshot": {
+    "path": "reviews/publication/20261012-round40/current-status.json"
+  },
+  "exhausted": false
+}

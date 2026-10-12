@@ -83,6 +83,95 @@ mechanisms:
       with optimization, scale-up, economics and long-term industrial stability left for future work.
       The 19 L apparatus is bench-scale despite the pilot terminology. This and the iron-ore-tailings
       record represent the same linked experiment.
+- id: fungal_nkamouna_laterite_transformation
+  name: Fungal transformation of mixed Nkamouna manganiferous laterite
+  process: biomineralization
+  microbial: true
+  description: Living Aspergillus niger ATCC 1015 cultures were associated with surface-crust formation
+    and a source-assigned manganese oxalate dihydrate phase in recovered debris from natural cobalt-bearing
+    Nkamouna laterite. Residual source minerals and untransformed particles remained. Qualitative elemental
+    signals associate cobalt and nickel with crusts, but do not establish crystallographic substitution,
+    selective extraction from one host phase, oxidation-state changes or isolated-metal recovery.
+  context: Ferrier et al. used natural laterite obtained directly from Nkamouna, Cameroon, supplied by
+    D. S. Mulroy, and broken into fragments and powder with a mortar and pestle. Powder was sieved below
+    90 micrometers; the mineral preparation was oven-sterilized at 105 degrees C for at least 24 hours.
+    Sterile powder was mixed into molten malt extract agar at approximately 60 degrees C, at 0.2% w/v,
+    with approximately 25 mL per 90-mm plate. Separate fragments were placed in wells in agar; their dimensions
+    and mass per plate are not specified. Plates received a 5-mm plug from the growing edge of an A. niger
+    ATCC 1015 colony and were incubated for 14 days at 25 degrees C in darkness. NCBITaxon:5061 identifies
+    the species; the reported experimental strain is separately grounded by the ATCC catalogue, without
+    verifying the experimental culture by sequencing. Matched uninoculated mineral plates and mineral-free
+    fungal and abiotic plates were included. After biomass removal and surface-pH measurement, powder
+    debris was washed from agar in water at approximately 70 degrees C, allowed to settle, washed twice
+    again, and dried in a desiccator for at least 48 hours. The recovered dry-phase identity does not
+    establish its hydration state in the living culture. These were laboratory plate assays, not an industrial
+    process.
+  organisms:
+  - id: NCBITaxon:5061
+    label: Aspergillus niger
+  evidence:
+  - source_ref: ferrier2022
+    supports: support
+    explanation: 'Introduction and Minerals methods, Table 1 and Figure 5A: the mixed natural feed contains
+      source-assigned lithiophorite and cryptomelane. Partial XRF composition is reported on the table''s
+      mixed oxide/element percentage basis, including 30.91% MnO, 27.56% Fe2O3, 16.24% Al2O3, 5.04% Co
+      and 2.87% Ni; MnO is an oxide-equivalent assay entry, not proof of an MnO mineral phase. No mineral-specific
+      metal inventory or assay uncertainty is supplied. This feed falls within the existing geological
+      manganese-ore resource scope, rather than defining a pure mineral, product grade or separate cobalt
+      element record.'
+  - source_ref: ferrier2022
+    supports: support
+    explanation: Figures 1 and 3 show crusts on inoculated fragments and powder relative to uninoculated
+      controls. Figures 2B and 4B show Mn, Co and Ni signals associated with sampled crusts. Figure 5B,
+      compared with 5A, is assigned by the authors to residual lithiophorite and cryptomelane plus manganese
+      oxalate dihydrate (lindbergite). Results explicitly state that powder transformation was incomplete
+      and many particles showed no morphological change. SEM/EDXA and bulk recovered-powder XRPD support
+      this narrow association, not quantitative phase fractions, a pure product or equal attack on each
+      source mineral.
+  - source_ref: ferrier2022
+    supports: partial
+    explanation: Results and Discussion describe fragment crusts as lacking Al and containing Mg, but
+      the original Figure 2B retains an Al label and displays no labelled Mg peak. Those stronger elemental
+      absence/presence claims remain unresolved. Figure 5 explicitly concerns recovered powder; it is
+      not a separately displayed fragment-crust diffraction result, despite broader Discussion wording.
+      Powder Figure 4B also retains Al, and Ca-rich bipyramidal structures in Figure 4C are inferred as
+      weddellite by morphology/composition without a separately displayed diffraction identification.
+      None of these observations is used to assert complete Al/Fe removal or confirmed Mg incorporation.
+  - source_ref: ferrier2022
+    supports: support
+    explanation: Table 2, not the Table 1 cross-reference in Results, reports 14-day agar-surface pH beneath
+      laterite-grown biomass of 4.09 +/- 0.29 (mean +/- SD, n=5), versus 5.92 +/- 0.04 in uninoculated
+      laterite plates (n=3). Fungal mineral-free controls were 2.85 +/- 0.06 (n=4). The reported 97.7%
+      tolerance index is a dry fungal-biomass ratio to mineral-free growth, and the 1.42 growth-rate ratio
+      uses colony expansion on days 2–5; neither quantity measures ore transformation or metal recovery.
+  - source_ref: ferrier2022
+    supports: partial
+    explanation: Experimental procedures and Discussion provide no pH-matched acid-only, purified-oxalate,
+      killed-biomass or cell-free-metabolite comparison for the Nkamouna experiment. Oxalate-mediated
+      dissolution/precipitation is an interpretation supported by product assignment and the organism's
+      known physiology, not a directly quantified secretion or exclusive molecular pathway. Co(III)-to-Co(II)
+      reduction is proposed without oxidation-state spectroscopy; EDXA does not establish valence or distinguish
+      lattice incorporation from associated phases. Dissolved-metal, residual-feed and recovered-product
+      mass balances are absent. Figure 5 gives typical patterns from several determinations without resolving
+      independent culture versus analytical replication; heating, washing and drying may affect recovered
+      phases.
+  - source_ref: ferrier2022
+    supports: context_only
+    explanation: Figures 6–8 and the separate synthetic Co-birnessite arm are not measurements of natural
+      laterite. Their complete-transformation language and pooled diffraction subsample cannot be transferred
+      to the incomplete Nkamouna result. Figure 8's heading says Nkamouna laterite, while its detailed
+      caption and methods identify synthetic Co-birnessite. The Introduction's attribution of a Mn(III)
+      oxalate intermediate to Wei2012 is not accepted as a measurement in this experiment. No criticality
+      designation or industrial performance is inferred.
+  - source_ref: ncbi_aniger_20261012
+    supports: context_only
+    explanation: Fresh NCBI taxonomy response resolves TaxID 5061 to Aspergillus niger at species rank;
+      it does not authenticate the culture used in the experiment.
+  - source_ref: atcc1015_20261012
+    supports: context_only
+    explanation: The current ATCC 1015 catalogue identifies Aspergillus niger and strain designation A1144
+      3528.7, including CBS 113.46 among aliases. This validates the collection-label mapping, not a separate
+      replication of the laterite assay.
 sources:
 - id: borkar2026
   title: Borkar, Sharma, Rane, Boafo and Eisele (2026). Leaching of Manganese Using Bio-solubilized
@@ -91,6 +180,22 @@ sources:
     12-page primary article and figures inspected.
   url: https://doi.org/10.1007/s42461-026-01506-2
   accessed_on: '2026-10-11'
+- id: ferrier2022
+  title: Ferrier J, Csetenyi L and Gadd GM (2022; online 6 May 2021). Fungal transformation of natural
+    and synthetic cobalt-bearing manganese oxides and implications for cobalt biogeochemistry. Environmental
+    Microbiology 24(2):667–677. DOI10.1111/1462-2920.15526; complete published article, Figures 1–8, Tables
+    1–2 and Experimental procedures.
+  url: https://doi.org/10.1111/1462-2920.15526
+  accessed_on: '2026-10-12'
+- id: ncbi_aniger_20261012
+  title: NCBI Taxonomy 5061 — Aspergillus niger, species rank; current Datasets response checked 12 October
+    2026.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061&mode=Info
+  accessed_on: '2026-10-12'
+- id: atcc1015_20261012
+  title: ATCC 1015 — Aspergillus niger van Tieghem; A1144 3528.7, collection strain context.
+  url: https://www.atcc.org/products/1015
+  accessed_on: '2026-10-12'
 curation_history:
 - timestamp: '2026-10-11T11:43:01.133177+00:00'
   curator: codex (GPT-6; codex)
@@ -103,6 +208,13 @@ curation_history:
   summary: 'Corrected carbonate interpretation after independent review: preserved the conflict between
     Section 3.3 absence prose and Figure 11 rhodochrosite markers over both traces; unresolved detection
     status retained.'
+- timestamp: '2026-10-12T00:48:29.535886+00:00'
+  curator: codex (GPT-6; codex)
+  action: EDIT
+  summary: Appended a source-qualified fungal transformation mechanism for mixed Nkamouna manganiferous
+    laterite, retaining incomplete transformation, original figure/prose conflicts, preparation effects
+    and missing mass-balance/causal controls. Prior identity, mechanism, sources and history remain unchanged.
 history_refs:
 - history/records/manganese-ore/2026-10-11T114302Z-codex-4e6a73.yaml
 - history/records/manganese-ore/2026-10-11T114921Z-codex-7272e2.yaml
+- history/records/manganese-ore/2026-10-12T004836Z-codex-e1610a.yaml

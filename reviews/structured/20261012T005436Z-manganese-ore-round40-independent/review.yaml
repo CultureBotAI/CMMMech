@@ -1,0 +1,339 @@
+schema_version: 1.0.0
+review_id: 20261012T005436Z-manganese-ore-round40-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of the manganese-ore Nkamouna extension
+started_at: '2026-10-12T00:50:13.863943Z'
+finished_at: '2026-10-12T00:54:36.667587Z'
+reviewer:
+  identity: Codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Current extension/history/dossier authored by /root/round27_eaf_slag;
+    root specified existing owner but authored no current manganese record bytes.
+    Shared originals independently inspected after native inspect. Root authored original
+    round19 record; its unchanged older claims are covered by exact preservation and
+    the separate round19_tailings independent resolution review, not presented as
+    a new independent review of root-authored science. Root authored current birnessite,
+    reviewed separately.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The new Ferrier2022 mixed-laterite arm is supported at the stated laboratory
+  and source-assigned phase level. Original figure/prose conflicts, incomplete transformation,
+  preparation effects and missing causal/mass-balance evidence are explicit. Earlier
+  Borkar2026 content is unchanged and retains its prior independent review. No corrective
+  record defect identified.
+source:
+  git_revision: 215cb3f4f9940b3785cf8ca20ecb28d2acc89950
+  state: working_tree
+  inputs:
+  - path: data/records/manganese-ore.yaml
+    sha256: cb22ef76d001d8c0a9639b29196bee8535eb0e6c631a7e9a7216783d40dab05f
+    role: target
+  - path: history/records/manganese-ore/2026-10-12T004836Z-codex-e1610a.yaml
+    sha256: c82c1ae0df16221ad9a00ca3f879e5351b0bf99e9e2facf292a40a6eb683e00d
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:manganese-ore
+  path: data/records/manganese-ore.yaml
+  label: Manganese ore
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/manganese-ore.yaml
+    role: maintained_record
+scope:
+  description: 'Complete final target state: fresh primary scientific assessment of
+    newly appended Ferrier2022 arm, plus proven preservation/prior independent review
+    of earlier Borkar2026 science.'
+  selection: Single assigned changed resource owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:manganese-ore
+  exclusions:
+  - target: New scientific reassessment of unchanged Borkar2026 experiments and raw
+      instrument reprocessing
+    reason: Earlier claims linked to exact-hash independent review; this round freshly
+      assesses the added source. Raw signals not independently reprocessed.
+checks:
+- check_id: named
+  name: Independent named-record validation
+  command: uv run --locked cmmmech validate data/records/manganese-ore.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root executed to terminal0, one record/zero failed; retained /private/tmp/cmm-round40-manganese-named.log.
+  target_ids:
+  - cmmmech:manganese-ore
+- check_id: batch
+  name: Cohort batch
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Root executed and read terminal receipt/log. uv run --locked --extra dev
+    python scripts/check.py
+
+    All checks passed!
+
+    ........................................................................ [ 23%]
+
+    ........................................................................ [ 46%]
+
+    ........................................................................ [ 69%]
+
+    ....................................................sss................. [ 92%]
+
+    .......................                                                  [100%]
+
+    308 passed, 3 skipped in 149.21s (0:02:29)
+
+    Checked 211 record(s); 0 failed.
+
+    Checked 244 history record(s); 0 error(s).'
+  target_ids:
+  - cmmmech:manganese-ore
+- check_id: nonempty
+  name: Cohort nonempty
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root executed and read terminal receipt/log. Checked 211 record(s); 0 failed.
+  target_ids:
+  - cmmmech:manganese-ore
+- check_id: history
+  name: Cohort history
+  command: uv run --locked cmmmech validate-history --base 215cb3f4f9940b3785cf8ca20ecb28d2acc89950
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Root executed and read terminal receipt/log. Checked 244 history record(s);
+    0 error(s).
+  target_ids:
+  - cmmmech:manganese-ore
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/manganese-ore.yaml
+  locator: Complete final YAML and appended EDIT history
+  accessed_at: '2026-10-12T00:53:41.184294Z'
+  support: supports
+  summary: New laterite arm has narrow phase/control/scope claims; all original fields
+    and committed sidecars preserved.
+  snapshot_sha256: cb22ef76d001d8c0a9639b29196bee8535eb0e6c631a7e9a7216783d40dab05f
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1111/1462-2920.15526
+  locator: Full published article pp667–677; all8figures and2tables, Experimental
+    procedures pp674–675
+  accessed_at: '2026-10-12T00:53:41.184294Z'
+  support: supports
+  summary: Read claim-bearing primary text and independently viewed original pages3–10
+    (all eight figures and two tables) in complete cover+11page publisher PDF. Natural
+    mixed laterite, separate synthetic arm, controls, preparation and outcomes match
+    the new record.
+  snapshot_sha256: f20048370ea1e14e33be0b65e90109b205c60c451616df7276eae3972cf2164b
+- evidence_id: conflicts
+  kind: primary_source
+  reference: https://doi.org/10.1111/1462-2920.15526
+  locator: Figures2B,4B,5,8; Results pp669–670 and Discussion p672
+  accessed_at: '2026-10-12T00:53:41.184294Z'
+  support: partial
+  summary: Figure2B labels Al and lacks labelled Mg despite opposite prose. Figure5
+    is recovered powder; fragment-specific diffraction is not separately displayed.
+    Figure8 heading conflicts with detailed synthetic-arm caption. All are preserved
+    or scoped out. No phase-selective attack, Co valence measurement or complete recovery
+    inferred.
+  snapshot_sha256: f20048370ea1e14e33be0b65e90109b205c60c451616df7276eae3972cf2164b
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/5061/dataset_report
+  locator: Current NCBI5061 response
+  accessed_at: '2026-10-12T00:53:41.184294Z'
+  support: supports
+  summary: Current species mapping independently read; species does not authenticate
+    experimental ATCC1015.
+  snapshot_sha256: 6d2d9b2a4b031de6fd14225ddc52dec2a240dadb51d83f12a549e035575e9126
+- evidence_id: strain
+  kind: authority
+  reference: https://www.atcc.org/products/1015
+  locator: ATCC strain designation and aliases
+  accessed_at: '2026-10-12T00:53:41.184294Z'
+  support: supports
+  summary: 'Independently read freshly acquired authoritative HTML: A1144 3528.7 and
+    CBS113.46; live web-reader request failed and is not claimed successful. Collection
+    identity differs from authentication of the experiment.'
+  snapshot_sha256: ed1ff180955dce71c8fba3ede285ef717986a0f868a9de86a42d9b62ae292d99
+- evidence_id: prior
+  kind: prior_review
+  reference: reviews/structured/20261011T115158Z-manganese-ore-round19-resolution/review.yaml
+  locator: Exact-hash prior positive resolution observation
+  accessed_at: '2026-10-12T00:53:41.184294Z'
+  support: supports
+  summary: Earlier Borkar2026 science is not freshly re-reviewed. Removing only current
+    additions restores every prior field, and old sidecars remain byte-identical.
+    Earlier resolved Figure11 finding remains preserved with its explicit lineage.
+  snapshot_sha256: da423eedfe1f96613f40ce5f2026f780787728d5962205578374f89b3cbf0281
+- evidence_id: preservation
+  kind: record_content
+  reference: /private/tmp/cmm-round40-manganese-independent-preservation.json
+  locator: Independent parsed-field and historical sidecar equality calculation
+  accessed_at: '2026-10-12T00:53:41.184294Z'
+  support: supports
+  summary: Root independently re-executed preservation checks, including the exact
+    previous scientific review hash.
+  snapshot_sha256: 658a4cd6aeaac8810987b5a7b5a4911924cecfde79e846ace3766d601a7f44d1
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmm-round40-final-terminal.json
+  locator: Completed cohort commands and exact log checksums
+  accessed_at: '2026-10-12T00:53:41.184294Z'
+  support: supports
+  summary: Batch, required corpus and trusted-base history commands completed successfully;
+    source/target hashes still match inspection.
+  snapshot_sha256: 77548c3649f35af923b700e7c631a458a6f970f1ef8fd6b657ad81c23b2c7106
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round40-manganese-independent-dedup.txt
+  locator: Current records/research/reviews/history; curator bounded122+raw-root receipt
+    also read
+  accessed_at: '2026-10-12T00:53:41.184294Z'
+  support: context_only
+  summary: 'Root searched hidden/ignored current records/research/reviews/history
+    with followed links. Search hits are existing experiment leads and this new extension.
+    Fresh web first-result queries: DOI15526 correction erratum retraction; Fungal
+    transformation Nkamouna aluminium magnesium. No affecting notice identified in
+    inspected results, not exhaustive. Publisher full HTML DOI identity agrees with
+    primary; no declared SI identified in the inspected complete primary/publisher
+    inventory.'
+  snapshot_sha256: d160273de0ef5a09c36e56bc50ecd00debada3e868c82b599b2b5d7a7ec440de
+  search_scope: Hidden and ignored current corpus included with relevant symlinks;
+    referenced raw-root dedup receipt independently read, not fully rerun. Web first
+    returned sets only, no broad absence claim.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Resource/material/criticality boundaries
+  outcome: supported
+  target_ids:
+  - cmmmech:manganese-ore
+  summary: Natural mixed laterite fits the existing broad resource owner and carries
+    no inherited criticality.
+  evidence_ids:
+  - record
+  - primary
+  - search
+  dimensions:
+  - name: material
+    value: Mixed Nkamouna laterite; primary_resource
+    definition: Natural geological feed with source-assigned lithiophorite/cryptomelane;
+      not a new pure mineral or elemental owner.
+    evidence_ids:
+    - record
+    - primary
+  - name: criticality
+    value: Not asserted
+    definition: No authority/jurisdiction/list/edition claim inherited from constituents.
+    evidence_ids:
+    - record
+  - name: organism
+    value: Living A.niger ATCC1015; species5061
+    definition: Collection label checked, experimental culture not sequence-authenticated.
+    evidence_ids:
+    - primary
+    - taxonomy
+    - strain
+  - name: conditions
+    value: 0.2%w/v powder below90micrometres in MEA;25°C dark14days
+    definition: Separate fragment wells,5mm plug;105°C pretreatment and70°C recovery/48h
+      drying retained.
+    evidence_ids:
+    - primary
+  - name: controls
+    value: Matched uninoculated feed and mineral-free fungal/abiotic plates
+    definition: No pH-matched acid-only, killed-biomass or cell-free metabolite series.
+    evidence_ids:
+    - primary
+  - name: outcome
+    value: Partial crust formation and source-assigned lindbergite
+    definition: Residual feed remains; qualitative EDXA association is not lattice
+      substitution, valence or recovery yield.
+    evidence_ids:
+    - primary
+    - conflicts
+  - name: scale
+    value: Laboratory plates
+    definition: Natural industrial-interest deposit is not deployed recovery.
+    evidence_ids:
+    - record
+    - primary
+- assessment_id: science
+  area: evidence
+  topic: Phase, controls, numerical definitions and contradictions
+  outcome: supported
+  target_ids:
+  - cmmmech:manganese-ore
+  summary: Primary methods and original images support narrow culture-associated transformation.
+    Table1 mixed oxide/element basis, Table2 pHSD/replicates, growth and biomass denominators
+    are retained without recovery conversions. Al/Mg and figure-heading conflicts
+    remain explicit.
+  evidence_ids:
+  - record
+  - primary
+  - conflicts
+  - taxonomy
+  - strain
+- assessment_id: provenance
+  area: provenance
+  topic: Current bytes, prior review and append-only history
+  outcome: supported
+  target_ids:
+  - cmmmech:manganese-ore
+  summary: Native inspection and completed gates cover current bytes. Prior fields
+    and committed histories are unchanged; earlier resolved finding is not erased.
+  evidence_ids:
+  - record
+  - prior
+  - preservation
+  - gates
+findings: []
+actions: []
+limitations:
+- Elemental association is not lattice incorporation or oxidation-state determination.
+- No phase-specific mass balance, extraction selectivity, quantitative phase fraction
+  or isolated-metal yield.
+- Fragment Al/Mg prose conflicts with Figure2B; powder diffraction does not supply
+  a separate fragment diffraction trace.
+- Hot recovery, acetone preparation and drying limit in-culture phase hydration inference.
+- No matched pH/metabolite/killed-biomass controls isolate an exclusive cause.
+- Named strain catalogue mapping does not authenticate the culture.
+- Older Borkar2026 science retained by exact preservation and its earlier independent
+  review, not freshly re-read.
+- Bounded notice and duplicate searches do not prove global absence.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261011T115158Z-manganese-ore-round19-resolution
+  relationship: Preserved scientific baseline for unchanged Borkar2026 fields; new
+    observation adds independent Ferrier2022 evidence assessment.
+tags:
+- round40
+- independent
+- scientific-review
+- resource
+- extension
+notes:
+- An unsaved draft failed UTC/target metadata validation; UTC Z formatting and maintained-target
+  ownership were corrected and canonical inspection repeated without changing target
+  or evidence bytes.
