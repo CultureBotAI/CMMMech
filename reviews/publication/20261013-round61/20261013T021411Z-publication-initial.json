@@ -1,0 +1,54 @@
+{
+  "review_id": "20261013T021411Z-publication-initial",
+  "timestamp_utc": "2026-10-13T02:14:11.399013Z",
+  "reviewer": "Codex /root/publication_completion_check",
+  "reviewed_revision": "78ba2f4c84ff84be64b0da23e603f59c761905aa",
+  "branch": "research/cmm-source-followups-round61-20261013",
+  "worktree": "/private/tmp/CMMMech-source-followups-round61-20261013",
+  "working_changes": " M README.md\n M data/records/fluorine.yaml\n M pages/browse.html\n M pages/index.html\n M pages/index.json\n M pages/kinds/commodity.html\n M pages/kinds/element.html\n M pages/kinds/mineral.html\n M pages/kinds/mineral_group.html\n M pages/kinds/primary_resource.html\n M pages/kinds/secondary_resource.html\n M pages/materials/fluorine.html\n M pages/processes/bioleaching.html\n M pages/processes/biomineralization.html\n M pages/processes/biosorption.html\n M pages/processes/other.html\n M pages/processes/recovery.html\n M pages/processes/redox_transformation.html\n M pages/processes/separation.html\n?? history/records/fluorine/2026-10-13T021024Z-codex-6d1850.yaml\n?? research/sources/round61-fluorite/20261013T021048Z-source-investigation.json\n?? research/sources/round61-fluorite/20261013T021048Z-source-investigation.md\n?? research/sources/round61-lead-paste/20261013T020440Z.json\n?? research/sources/round61-lead-paste/20261013T020440Z.md\n?? research/sources/round61-zinc-residue/20261013T020740Z-source-investigation.json\n?? research/sources/round61-zinc-residue/20261013T020740Z-source-investigation.md\n",
+  "scope": "Initial publication metadata review of one exact corroboration statement in the fluorite source dossier. Not a native scientific record review or a final whole-packet audit.",
+  "inputs": [
+    {
+      "path": "/private/tmp/CMMMech-source-followups-round61-20261013/research/sources/round61-fluorite/20261013T021048Z-source-investigation.md",
+      "sha256": "3cc62805d03052dfde6b915a06a5ba14d0e8643d40fa45cfd0c2dc5c503dd341",
+      "bytes": 13549
+    },
+    {
+      "path": "/private/tmp/CMMMech-source-followups-round61-20261013/research/sources/round61-fluorite/20261013T021048Z-source-investigation.json",
+      "sha256": "6ea5da1bf79c6b16b04f31f3979c5e02f807524c5a92445f8f2ce8bcb3f0d640",
+      "bytes": 33657
+    },
+    {
+      "path": "/private/tmp/cmm-round61-fluorite-research/raw/wainwright-elsevier.xml",
+      "sha256": "91b2c1180727e6cbdb6f7a874095b6c6516f0eddd0526a72abbd976a81007595",
+      "bytes": 1824
+    },
+    {
+      "path": "/private/tmp/cmm-round61-fluorite-research/raw/wainwright-crossref.json",
+      "sha256": "f5a023af382d668d75242365c6feeae8b8c5c57a7a34c5e0e050157d91b411ce",
+      "bytes": 4731
+    }
+  ],
+  "findings": [
+    {
+      "id": "ROUND61-PUBLICATION-F1",
+      "severity": "minor",
+      "category": "source_provenance",
+      "status": "open",
+      "target": "research/sources/round61-fluorite/20261013T021048Z-source-investigation.md",
+      "claim": "Crossref and the publisher API independently match title, authors, DOI and March 1984 publication.",
+      "evidence": "The pinned Elsevier API XML contains coredata title, DOI, journal and publication date, but no author element or author value. Crossref independently contains the two authors.",
+      "impact": "The discovery report overstates which bibliographic fields were independently corroborated by the publisher API. This does not challenge the article identity or the scientific record.",
+      "required_correction": "Attribute author verification to Crossref and the original scan; state that the Elsevier API corroborates title, DOI, journal and publication date only. Refresh the source manifest report hash. Preserve this initial review and use a timestamped successor disposition."
+    }
+  ],
+  "corrections": [],
+  "unresolved_questions": [
+    "Author attribution in the API corroboration statement must be corrected. Final source packet, scientific review and gate receipts remain outside this initial disposition."
+  ],
+  "verdict": "needs_curation",
+  "limitations": [
+    "No remote mutation or new live acquisition was performed. This finding uses the retained raw publisher XML and Crossref response.",
+    "Other source dossiers and record changes are not given a final publication verdict by this initial artifact."
+  ]
+}

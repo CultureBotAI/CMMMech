@@ -40,6 +40,15 @@ sources:
     title: 'ATCC 12633 - Pseudomonas putida culture catalog entry'
     url: https://www.atcc.org/products/12633
     accessed_on: '2026-10-11'
+  - id: wainwright_1984
+    title: >-
+      Wainwright and Supharungsun. Release by fungi of F- from insoluble
+      fluorides. Transactions of the British Mycological Society 82(2):289-292
+      (1984). DOI 10.1016/S0007-1536(84)80071-6. Complete original pages
+      289-292, including Methods and Tables 1-4; journal-authorized Cyberliber
+      page scans inspected.
+    url: https://doi.org/10.1016/S0007-1536(84)80071-6
+    accessed_on: '2026-10-13'
 criticality:
   - jurisdiction: Australia
     list_name: Department of Industry, Science and Resources Critical Minerals List
@@ -123,11 +132,97 @@ mechanisms:
           fluoride-release control for the flask cultures. Intracellular
           fluoride concentrations and an isolated fluoride product were
           not measured in these assays.
+  - id: fungal_inorganic_fluoride_release
+    name: Conditional fungal release of fluoride from precipitated calcium fluoride
+    process: bioleaching
+    description: >-
+      Source-labeled fungal isolates produced more electrode-detectable
+      fluoride in filtered liquid culture than uninoculated medium containing
+      supplier-precipitated calcium fluoride. This is a laboratory observation
+      of net fluoride mobilization from an inorganic reagent, not elemental
+      fluorine production, authenticated natural-fluorite dissolution or
+      isolated-product recovery. The paper's separate autoclaved-soil
+      experiment showed no positive calcium-fluoride-associated release for
+      its two tested isolates. The chemical cause of the liquid response was
+      not isolated; an increase in culture pH does not demonstrate acid leaching.
+    context: >-
+      Wainwright and Supharungsun used fungi isolated from fluoride-polluted
+      soils and identified by source labels, without accessioned strain
+      authentication. The CaF2 feed is explicitly precipitated B.D.H. reagent;
+      its natural origin, mineral phase purity and particle characteristics
+      were not established. The liquid assay used modified Czapek-Dox medium,
+      mycelial-disc inocula, 25 degrees C, reciprocal shaking at 100 throws/min
+      and a 14-day endpoint. Table 2 gives separate CaF2-loading, carbon-source
+      and initial-buffer-pH assays for Penicillium sp. I and source-labeled
+      Fusarium culmorum. The general Methods wording specifies 100 mg/cm3
+      CaF2 (10% w/v), but Table 2 reports no growth at 5% and 10%; this
+      unresolved conflict prevents assigning that general dose to every
+      positive assay. Table 2's carbon-source heading specifies 0.3% w/v,
+      its default glucose footnote 0.1% w/v, and Methods mentions 1 g/L malt
+      extract. Results also calls a carbon-source culture F. solani where
+      Table 2 labels F. culmorum. These assay and organism-label conflicts
+      are retained rather than reconciled by inference. Filtered broth and
+      soil-water extracts were mixed 1:1 with TISAB and measured using a
+      fluoride-specific electrode. Liquid table results are excess over
+      uninoculated controls, not absolute dissolved concentrations or feed
+      recovery fractions. No phase analysis, isolated fluoride product or
+      industrial test accompanies the experiment.
+    microbial: true
+    evidence:
+      - source_ref: wainwright_1984
+        supports: support
+        explanation: >-
+          Original pages 289-291, Methods and Tables 1-2, support a conditional
+          inoculation-associated liquid response. Table 2's explicitly labeled
+          2% w/v CaF2 arm reports net fluoride of 28.0 +/- 1.6 and
+          32.7 +/- 1.0 micrograms/cm3 culture filtrate for source-labeled
+          F. culmorum and Penicillium sp. I, respectively. The paper identifies
+          means of triplicates with standard deviations; these are control-
+          subtracted endpoints, not percent dissolution or recovered yield.
+          Both cultures show no growth at the separately tabulated 5% and
+          10% loadings and at buffer pH 2.6 and 3.6. Loading, medium and
+          identity conflicts in the source limit comparisons between tables.
+      - source_ref: wainwright_1984
+        supports: partial
+        explanation: >-
+          Pages 290-292, soil Methods and Table 4, use a distinct assay: 5 g
+          autoclaved unpolluted soil, glucose amendment, 50 mg CaF2 per gram
+          soil, spores of source-labeled F. merismoides or Penicillium sp. I,
+          incubation at 25 degrees C and water-extract fluoride through seven
+          weeks. Neither inoculated CaF2 arm exceeds the corresponding
+          uninoculated control at the reported times. This is evidence against
+          transferring the liquid response to that soil system; it does not
+          prove that no microscopic dissolution occurred. The authors propose
+          adsorption as a limitation of fluoride detection in soil extracts.
+          Cryolite gave a separate small positive Penicillium response and
+          must not be substituted for the CaF2 result or an authenticated
+          mineral-specific outcome.
+      - source_ref: wainwright_1984
+        supports: partial
+        explanation: >-
+          The comparison with uninoculated controls supports net solution
+          mobilization under the reported assay conditions. It does not
+          distinguish growth-associated pH change, ligand chemistry,
+          adsorption/desorption or mineral-surface processes: matched-pH,
+          metabolite-only, killed-biomass and solid-phase comparisons are not
+          reported. The historical isolate labels do not establish modern
+          strain identity. The proposed use of fungi on industrial raw-material
+          piles is prospective discussion, not demonstrated deployment.
 curation_history:
   - timestamp: '2026-10-11T07:25:31Z'
     curator: Codex (GPT-6; Codex)
     action: CREATE
     summary: >-
       Created elemental fluorine identity, Australian2024 criticality and enantioselective recombinant-culture defluorination evidence; retained total-racemate denominator, stress and mechanistic limits.
+  - timestamp: '2026-10-13T02:11:00Z'
+    curator: Codex (GPT-6; Codex)
+    action: EDIT
+    summary: >-
+      Added a separate 1984 fungal net-fluoride-mobilization assay using
+      precipitated CaF2, with original Tables 1-4, loading and isolate-label
+      conflicts, control-subtracted endpoints and a soil null result.
+      Kept natural fluorite, elemental fluorine, recovery and deployment
+      claims distinct; earlier scientific fields are unchanged.
 history_refs:
   - history/records/fluorine/2026-10-11T072439Z-codex-95b027.yaml
+  - history/records/fluorine/2026-10-13T021024Z-codex-6d1850.yaml
