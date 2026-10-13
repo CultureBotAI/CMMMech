@@ -1,0 +1,193 @@
+{
+  "recorded_at": "2026-10-13T02:23:53.231647+00:00",
+  "base": "78ba2f4c84ff84be64b0da23e603f59c761905aa",
+  "worktree": "/private/tmp/CMMMech-source-followups-round61-20261013",
+  "branch": "research/cmm-source-followups-round61-20261013",
+  "record_changes": {
+    "created": [],
+    "updated": [
+      "data/records/fluorine.yaml"
+    ]
+  },
+  "counts": {
+    "passed": true,
+    "record_count": 278,
+    "history_count": 327,
+    "structured_review_count": 338,
+    "review_base_count": 62,
+    "covered_records": 278
+  },
+  "review_verdict": "pass_with_limitations",
+  "scientific_findings": 0,
+  "artifacts": [
+    {
+      "path": "data/records/fluorine.yaml",
+      "sha256": "ee548decac65a7d9718f177dd0e5aaa86ccc48bc02304b83c22c586d5fb1d21b"
+    },
+    {
+      "path": "history/records/fluorine/2026-10-13T021024Z-codex-6d1850.yaml",
+      "sha256": "def7cd8632c782d44df799efdb7eab350c8704728aaee7f61c03dbbc0b4b4403"
+    },
+    {
+      "path": "reviews/structured/20261013T022022Z-fluorine-round61-independent/review.yaml",
+      "sha256": "24e16cfa77caf88925e608c7d94ed59778f1d8d46a8b046518a503b675e84834"
+    },
+    {
+      "path": "reviews/structured/20261013T022022Z-fluorine-round61-independent/review.md",
+      "sha256": "c5d4c6fef900d21df46f3ed35636b6e6272812b47aae19a86f883e1adb92ba67"
+    },
+    {
+      "path": "research/sources/round61-fluorite/20261013T021048Z-source-investigation.json",
+      "sha256": "475964e7639062999630888a8afef6c62cd6fa98188ee15a5a28f3776aeb7b00"
+    },
+    {
+      "path": "research/sources/round61-fluorite/20261013T021048Z-source-investigation.md",
+      "sha256": "3794b358d6f190db4a8fe6ddc69f41c13f680ab1aeb9e9d504aa9b88855aaf7f"
+    },
+    {
+      "path": "research/sources/round61-zinc-residue/20261013T020740Z-source-investigation.json",
+      "sha256": "a14fe11934b7df673f1ae274a085e3d71f3225b942260d7f6b14e3dbab92612b"
+    },
+    {
+      "path": "research/sources/round61-zinc-residue/20261013T020740Z-source-investigation.md",
+      "sha256": "4a4ca27941f267785031015fafae2bc0bfd48674d7dc562513f7176128b4f1fa"
+    },
+    {
+      "path": "research/sources/round61-lead-paste/20261013T020440Z.json",
+      "sha256": "16a7009e06a118e94398fd754832203e9f558faa3570fbd893d4253deb17f22b"
+    },
+    {
+      "path": "research/sources/round61-lead-paste/20261013T020440Z.md",
+      "sha256": "ae6dd1d8b961a6432c68aa8e56ef902718ed65ec2e45c920b71319359f275300"
+    }
+  ],
+  "checks": {
+    "baseline": {
+      "path": "/private/tmp/cmm-round61-baseline.json",
+      "sha256": "880e7b513526c7966820a6a963510c334b80f2373095f9f500992a2b3cd25625",
+      "result": {
+        "command": [
+          "just",
+          "check"
+        ],
+        "worktree": "/private/tmp/CMMMech-source-followups-round61-20261013",
+        "started_at": "2026-10-13T02:02:43.655293+00:00",
+        "finished_at": "2026-10-13T02:07:21.973195+00:00",
+        "exit_code": 0,
+        "elapsed_seconds": 278.3100608000532,
+        "log": "/private/tmp/cmm-round61-baseline.log",
+        "log_sha256": "633750d888cade8859e66a7d036582bcffb040c870208406d1236f0b61de59cc"
+      }
+    },
+    "final-gates": {
+      "path": "/private/tmp/cmm-round61-final-gates.json",
+      "sha256": "22a0336c05b2338117b37a4f19b62781b46185c179d672655c86c986e7b56f9d",
+      "result": {
+        "worktree": "/private/tmp/CMMMech-source-followups-round61-20261013",
+        "base": "78ba2f4c84ff84be64b0da23e603f59c761905aa",
+        "commands": [
+          {
+            "command": [
+              "just",
+              "render"
+            ],
+            "started_at": "2026-10-13T02:11:58.904952+00:00",
+            "finished_at": "2026-10-13T02:12:07.450770+00:00",
+            "exit_code": 0,
+            "elapsed_seconds": 8.545392682310194
+          },
+          {
+            "command": [
+              "just",
+              "render-check"
+            ],
+            "started_at": "2026-10-13T02:12:07.450866+00:00",
+            "finished_at": "2026-10-13T02:12:12.592616+00:00",
+            "exit_code": 0,
+            "elapsed_seconds": 5.141793399583548
+          },
+          {
+            "command": [
+              "just",
+              "check"
+            ],
+            "started_at": "2026-10-13T02:12:12.592704+00:00",
+            "finished_at": "2026-10-13T02:16:57.244972+00:00",
+            "exit_code": 0,
+            "elapsed_seconds": 284.6514388252981
+          },
+          {
+            "command": [
+              "uv",
+              "run",
+              "--locked",
+              "cmmmech",
+              "validate",
+              "--require-records"
+            ],
+            "started_at": "2026-10-13T02:16:57.245146+00:00",
+            "finished_at": "2026-10-13T02:17:09.222899+00:00",
+            "exit_code": 0,
+            "elapsed_seconds": 11.977764398790896
+          },
+          {
+            "command": [
+              "uv",
+              "run",
+              "--locked",
+              "cmmmech",
+              "validate-history",
+              "--base",
+              "78ba2f4c84ff84be64b0da23e603f59c761905aa"
+            ],
+            "started_at": "2026-10-13T02:17:09.222976+00:00",
+            "finished_at": "2026-10-13T02:17:13.997794+00:00",
+            "exit_code": 0,
+            "elapsed_seconds": 4.774861406069249
+          }
+        ],
+        "passed": true,
+        "log": "/private/tmp/cmm-round61-final-gates.log",
+        "log_sha256": "721b27f58af6766e8a5db86a6c08de5c6aeffda7a2d2e51558ca9e8143ba04f5"
+      }
+    },
+    "review-check": {
+      "path": "/private/tmp/cmm-round61-review-check.json",
+      "sha256": "9dce9be5451c7b76584b8883a88736c9e2356dad1376937302b1696f7b854b83",
+      "result": {
+        "command": [
+          "just",
+          "review-check",
+          "--base",
+          "78ba2f4c84ff84be64b0da23e603f59c761905aa",
+          "--require-reviews"
+        ],
+        "started_at": "2026-10-13T02:21:04.178861+00:00",
+        "finished_at": "2026-10-13T02:23:21.625271+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round61-review-check.log",
+        "log_sha256": "3991e133fabf6a679b6832f7b411c323e7879cc3ec8eff3194b8f4ed5a1cc366"
+      }
+    },
+    "local-coverage": {
+      "path": "/private/tmp/cmm-round61-local-coverage.json",
+      "sha256": "9de8851586472866f22dbb82fb3613e73c7d3baa7c37e6a7178ea55948acf97e",
+      "result": {
+        "passed": true,
+        "record_count": 278,
+        "history_count": 327,
+        "structured_review_count": 338,
+        "review_base_count": 62,
+        "covered_records": 278
+      }
+    }
+  },
+  "corrective_issue": 192,
+  "source_issues_open": [
+    186,
+    187,
+    191
+  ],
+  "publication_state": "Local science and gates complete; final independent publication audit, commit, hosted validation and native queue are subsequent steps.",
+  "scope": "One evidence extension; no schema, validator, test or governed-file changes. No exhaustive-source claim."
+}

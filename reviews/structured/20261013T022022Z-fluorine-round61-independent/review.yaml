@@ -1,0 +1,529 @@
+schema_version: 1.0.0
+review_id: 20261013T022022Z-fluorine-round61-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of the fluorine CaF2 culture extension
+started_at: '2026-10-13T02:11:45.538251Z'
+finished_at: '2026-10-13T02:20:22Z'
+reviewer:
+  identity: codex /root/round61_zinc_sources
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from the fluorine curator and fluorite source
+    investigator. Reviewer did not edit this record, its history or fluorite dossier;
+    independently viewed all four original page scans and inspected exact metadata.
+    Earlier zinc research by this reviewer is separate from this target. Parent batch
+    checks are attributed separately.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The new mechanism is supported as conditional, control-subtracted fluoride
+  mobilization in laboratory fungal cultures with precipitated CaF2 reagent. The record
+  retains contradictory dose, carbon and isolate descriptions, distinguishes the soil
+  null and avoids natural-fluorite, mechanistic-causality, recovered-product and deployment
+  claims. Existing scientific fields exactly match the prior independently reviewed
+  baseline. Required checks passed; no new record curation defect was found.
+source:
+  git_revision: 78ba2f4c84ff84be64b0da23e603f59c761905aa
+  state: working_tree
+  inputs:
+  - path: data/records/fluorine.yaml
+    sha256: ee548decac65a7d9718f177dd0e5aaa86ccc48bc02304b83c22c586d5fb1d21b
+    role: target
+  - path: history/records/fluorine/2026-10-13T021024Z-codex-6d1850.yaml
+    sha256: def7cd8632c782d44df799efdb7eab350c8704728aaee7f61c03dbbc0b4b4403
+    role: context
+  - path: research/sources/round61-fluorite/20261013T021048Z-source-investigation.json
+    sha256: 475964e7639062999630888a8afef6c62cd6fa98188ee15a5a28f3776aeb7b00
+    role: context
+  - path: research/sources/round61-fluorite/20261013T021048Z-source-investigation.md
+    sha256: 3794b358d6f190db4a8fe6ddc69f41c13f680ab1aeb9e9d504aa9b88855aaf7f
+    role: context
+  - path: reviews/structured/20261011T073230Z-fluorine-round10-independent/review.yaml
+    sha256: 2479ed4b944f70108169ffd95eeb3481d77369ab6d7e1129c449fd0e3a67645b
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: 'Full field assessment of one maintained record: new source, mechanism
+    and EDIT provenance freshly checked; all previous scientific fields compared to
+    the exact prior reviewed baseline and positively assessed by carrying forward
+    its explicit scientific review. No sampling of target fields.'
+  selection: Assigned exact ID cmmmech:fluorine and maintained path data/records/fluorine.yaml.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:fluorine
+  exclusions:
+  - target: Fresh live revalidation of unchanged ChEBI, Australia authority, NCBI,
+      ATCC and Dodge 2024 literature
+    reason: No such live revalidation is claimed. Exact preserved field values and
+      baseline bytes are linked to the prior independent scientific review, whose
+      evidence and limitations were read.
+  - target: Natural-fluorite Dai/Alharbi leads and other source-investigation records
+    reason: Not accepted as new record evidence; issue 187 remains unresolved for
+      natural mineral work. The fluorite dossier is contextual and its 1984 evidence
+      was independently inspected.
+targets:
+- target_id: cmmmech:fluorine
+  path: data/records/fluorine.yaml
+  label: Fluorine
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/fluorine.yaml
+    role: maintained
+checks:
+- check_id: named
+  name: Named-record validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate data/records/fluorine.yaml
+  status: passed
+  required: true
+  summary: 'Executed by this reviewer: 1 record, 0 failed; terminal exit 0.'
+  target_ids:
+  - cmmmech:fluorine
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named_validation
+- check_id: history
+  name: Trusted-base history validation
+  command: UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache uv run --locked
+    cmmmech validate-history --base 78ba2f4c84ff84be64b0da23e603f59c761905aa
+  status: passed
+  required: true
+  summary: 'Executed by this reviewer: 327 history records, 0 errors; terminal exit
+    0.'
+  target_ids:
+  - cmmmech:fluorine
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - history_validation
+- check_id: batch
+  name: Full batch gate
+  command: just check
+  status: passed
+  required: true
+  summary: 'Executed by parent, not this reviewer. Read actual receipts and log: 317
+    tests passed, 3 skipped; 278 records and 327 histories valid; exit 0. Command
+    ran 02:12:12–02:16:57 UTC.'
+  target_ids:
+  - cmmmech:fluorine
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch_validation
+- check_id: nonempty
+  name: Nonempty corpus
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: 'Executed by parent. Read actual receipt and log: 278 records, 0 failed;
+    exit 0 at 02:17:09 UTC.'
+  target_ids:
+  - cmmmech:fluorine
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch_validation
+- check_id: render
+  name: Generated site and freshness
+  command: just render; just render-check
+  status: passed
+  required: true
+  summary: 'Both commands executed sequentially by parent, each exit 0. Read receipt
+    and log: site rendered and pages/ is current. Scientific acceptance does not derive
+    from generated rendering.'
+  target_ids:
+  - cmmmech:fluorine
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch_validation
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/fluorine.yaml
+  locator: Entire record and change against trusted base 78ba2f4c84ff84be64b0da23e603f59c761905aa
+  accessed_at: '2026-10-13T02:13:31Z'
+  support: supports
+  summary: Read all current fields and source-specific support/partial statements.
+    Exact final target hash is pinned in source.inputs.
+  snapshot_sha256: ee548decac65a7d9718f177dd0e5aaa86ccc48bc02304b83c22c586d5fb1d21b
+- evidence_id: prior_review
+  kind: prior_review
+  reference: reviews/structured/20261011T073230Z-fluorine-round10-independent/review.yaml
+  locator: Identity, criticality, engineered defluorination, provenance and limitations
+  accessed_at: '2026-10-13T02:13:31Z'
+  support: supports
+  summary: Read the existing independent scientific pass_with_limitations. It assessed
+    CHEBI:24061, Australia 20 February 2024 list, NCBITaxon:303, ATCC 12633 and Dodge
+    2024 original/supplement. Those authority and experimental claims are carried
+    forward only for unchanged fields.
+  snapshot_sha256: 2479ed4b944f70108169ffd95eeb3481d77369ab6d7e1129c449fd0e3a67645b
+- evidence_id: preservation
+  kind: validation
+  reference: /private/tmp/cmm-round61-fluorine-independent/unchanged-proof.json
+  locator: Parsed YAML equality after removing only the new source, new mechanism,
+    final inline event and final history ref
+  accessed_at: '2026-10-13T02:12:22.189478Z'
+  support: supports
+  summary: Reviewer asserted complete dictionary equality to the trusted-base record
+    after removing exactly the four added components. Baseline byte hash f9f0566c95807e1017edb90b9ae8d51de700b6129788b1fc8d3052e08cfe10c2
+    exactly equals the prior scientific review target hash.
+  snapshot_sha256: 068ada0fdae15c6a8cb2fdaef1e570f8429e63e2714be2b4b6859b168d422f3b
+- evidence_id: history
+  kind: record_content
+  reference: history/records/fluorine/2026-10-13T021024Z-codex-6d1850.yaml
+  locator: Session, EDIT event, issue link and corresponding inline event
+  accessed_at: '2026-10-13T02:13:31Z'
+  support: supports
+  summary: Sidecar identifies actual Codex actor/model/tool, target and new 1984 CaF2
+    assay. Session started 02:10:24Z, inline EDIT at 02:11:00Z; these are distinct
+    provenance events and do not fabricate older authorship.
+  snapshot_sha256: def7cd8632c782d44df799efdb7eab350c8704728aaee7f61c03dbbc0b4b4403
+- evidence_id: metadata
+  kind: database
+  reference: https://doi.org/10.1016/S0007-1536(84)80071-6
+  locator: Crossref metadata, retained Elsevier XML and Cyberliber wrapper
+  accessed_at: '2026-10-13T02:13:31Z'
+  support: supports
+  summary: Crossref confirms both authors, title and DOI. The publisher XML corroborates
+    title, DOI, journal and March 1984 date but contains no authors. Cyberliber wrapper
+    states British Mycological Society permission. Retained metadata hashes are in
+    the reviewer scientific receipt; reading access is not a redistribution license.
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round61-fluorite/20261013T021048Z-source-investigation.md
+  locator: Corrected historical-study section and paired JSON source/acquisition manifest
+  accessed_at: '2026-10-13T02:19:39Z'
+  support: supports
+  summary: 'Read the dossier and manifest; independently checked the 1984 original
+    scans and matching metadata. Re-read corrected attribution after issue 192: authors
+    are attributed to Crossref, not the author-free publisher XML. Re-inspected both
+    final dossier inputs; the JSON report_sha256 matches the corrected MD and its
+    timestamped correction object accurately records the attribution change. No record/history
+    bytes changed. Other uninspected raw artifacts are not promoted as fresh evidence.'
+  snapshot_sha256: 3794b358d6f190db4a8fe6ddc69f41c13f680ab1aeb9e9d504aa9b88855aaf7f
+- evidence_id: page289
+  kind: primary_source
+  reference: http://www.cybertruffle.org.uk/cyberliber/59351/0082/002/0289b.jpg
+  locator: Methods and introductory material
+  accessed_at: '2026-10-13T02:13:31Z'
+  support: supports
+  summary: Original pixels show supplier-precipitated BDH CaF2; isolate origin; Czapek
+    Dox culture and disc inocula; 100 mg/cm3 wording and malt-extract concentration.
+    Historical source labels are not authenticated strain accessions. Personally viewed
+    retained full image /private/tmp/cmm-round61-fluorite-research/raw/wainwright-page289.jpg.
+  snapshot_sha256: 648118f20ae0ab4450eeae4fb34cfebf0a22b80c0a2e8bd84039acbf655867c3
+- evidence_id: page290
+  kind: primary_source
+  reference: http://www.cybertruffle.org.uk/cyberliber/59351/0082/002/0290b.jpg
+  locator: Methods, Table 1 and Results
+  accessed_at: '2026-10-13T02:13:31Z'
+  support: supports
+  summary: Original pixels show 25 degrees C, reciprocal shaking at 100 throws/min,
+    14 days; fluoride electrode with equal TISAB volume; control-subtracted reporting;
+    soil procedure; triplicate means/SD and narrative F. solani in carbon-source discussion.
+    Personally viewed retained full image /private/tmp/cmm-round61-fluorite-research/raw/wainwright-page290-retry.jpg.
+  snapshot_sha256: 0ca646913a4886cca975449270f73d548f312a9a4f2bb84e8cb9f10e9d24288a
+- evidence_id: page291
+  kind: primary_source
+  reference: http://www.cybertruffle.org.uk/cyberliber/59351/0082/002/0291b.jpg
+  locator: Tables 2–3 and Discussion
+  accessed_at: '2026-10-13T02:13:31Z'
+  support: supports
+  summary: Original Table 2 pixels give 2% w/v CaF2 net culture-filtrate fluoride
+    28.0 ± 1.6 (F. culmorum) and 32.7 ± 1.0 (Penicillium sp. I) micrograms/cm3; no
+    growth 5%/10% and pH 2.6/3.6. Carbon heading 0.3% w/v versus default glucose 0.1%
+    w/v; F. culmorum table label conflicts with preceding F. solani narrative. Table
+    3 concerns other fluoride feeds, not substituted CaF2 results. Personally viewed
+    retained full image /private/tmp/cmm-round61-fluorite-research/raw/wainwright-page291.jpg.
+  snapshot_sha256: d4703fa1315786cfb6c5e7484aa88b534efbdbadb52afd2d80de54e9d512da28
+- evidence_id: page292
+  kind: primary_source
+  reference: http://www.cybertruffle.org.uk/cyberliber/59351/0082/002/0292b.jpg
+  locator: Table 4 and References
+  accessed_at: '2026-10-13T02:13:31Z'
+  support: supports
+  summary: Original Table 4 soil CaF2 means do not exceed uninoculated controls for
+    F. merismoides/Penicillium sp. I through 7 weeks. Separate cryolite/Penicillium
+    arm can exceed control; this is not the CaF2 result. Discussion adsorption hypothesis
+    limits interpretation of water-extract nulls. Personally viewed retained full
+    image /private/tmp/cmm-round61-fluorite-research/raw/wainwright-page292.jpg.
+  snapshot_sha256: b8b7c48cdf805d61630c999c0b9b6b27019029ce2aaebaf7043355b3abf9d3e3
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round61-fluorine-independent/scientific-receipt.json
+  locator: Fresh correction/retraction and contrary-evidence searches
+  accessed_at: '2026-10-13T02:13:31Z'
+  support: context_only
+  summary: No affecting notice was identified in the first returned sets. Unrelated/secondary
+    hits were not used as new mechanism proof; source-internal soil counterevidence
+    was examined in original pixels.
+  search_scope: 'web.run 2026-10-13 queries: "10.1016/S0007-1536(84)80071-6" correction
+    retraction erratum; "Release by fungi" "insoluble fluorides" Wainwright contradiction.
+    First returned sets only, no exhaustive registry or citation-chain clearance.'
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round61-fluorine-independent/dedup.json
+  locator: Scoped repository and cited local source search
+  accessed_at: '2026-10-13T02:13:31Z'
+  support: context_only
+  summary: The scoped search returned 14 matching files in the explicit scientific
+    trees and new source folder. This is bounded duplicate coverage, not a machine-wide
+    absence claim.
+  search_scope: rg --no-ignore --hidden --follow -l matching historical DOI variants,
+    wainwright_1984 and cmmmech:fluorine across data, research, reviews, history and
+    /private/tmp/cmm-round61-fluorite-research/raw; hidden and ignored files included,
+    symlinks followed; exit 0.
+- evidence_id: named_validation
+  kind: validation
+  reference: /private/tmp/cmm-round61-fluorine-independent/named-validation.log
+  locator: Actual reviewer command and terminal exit
+  accessed_at: '2026-10-13T02:13:31Z'
+  support: supports
+  summary: Checked 1 record; 0 failed. Reviewer confirmed exit 0.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: history_validation
+  kind: validation
+  reference: /private/tmp/cmm-round61-fluorine-independent/history-validation.log
+  locator: Actual reviewer trusted-base history command and terminal exit
+  accessed_at: '2026-10-13T02:13:31Z'
+  support: supports
+  summary: Checked 327 history records; 0 errors. Reviewer confirmed exit 0.
+  snapshot_sha256: 6483868f5d405791230721f3300863041cd7eef3ceb7ad36c14301dd67482203
+- evidence_id: batch_validation
+  kind: validation
+  reference: /private/tmp/cmm-round61-final-gates.json
+  locator: All five commands and corresponding retained log
+  accessed_at: '2026-10-13T02:19:39Z'
+  support: supports
+  summary: 'Read parent-executed command receipts and full short log; all five commands
+    exited 0. just check: 317 passed, 3 skipped, 278 valid records and 327 valid histories.
+    Separate nonempty validation: 278 records, 0 failed. Trusted-base history: 327
+    records, 0 errors. Rendering and render freshness also passed. Independently rehashed
+    the log to 721b27f58af6766e8a5db86a6c08de5c6aeffda7a2d2e51558ca9e8143ba04f5.'
+  snapshot_sha256: 22a0336c05b2338117b37a4f19b62781b46185c179d672655c86c986e7b56f9d
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Element, reagent and organism scope
+  outcome: supported
+  summary: The record maintains the fluorine element owner and does not equate precipitated
+    CaF2 reagent with authenticated natural fluorite, fluorspar commodity or elemental
+    fluorine. Historical fungal labels are preserved without invented taxon or strain
+    identifiers.
+  target_ids:
+  - cmmmech:fluorine
+  evidence_ids:
+  - record
+  - prior_review
+  - preservation
+  - page289
+- assessment_id: criticality
+  area: evidence
+  topic: Dated jurisdiction, list and edition carried forward
+  outcome: supported
+  summary: The unchanged Australian DISR Critical Minerals List, 20 February 2024
+    update, Table 1 explicitly lists Fluorine. This mapping is supported by the prior
+    independent review; the record does not transfer a US/EU fluorspar designation
+    to elemental fluorine. No fresh current-list verification is claimed.
+  target_ids:
+  - cmmmech:fluorine
+  evidence_ids:
+  - record
+  - prior_review
+  - preservation
+  dimensions:
+  - name: criticality_scope
+    value: Australia; Department of Industry, Science and Resources Critical Minerals
+      List; 20 February 2024 update, Table 1; critical.
+    definition: Historical dated authority claim, carried forward on exact unchanged
+      fields; not an assertion of a freshly checked 2026 list.
+    evidence_ids:
+    - record
+    - prior_review
+    - preservation
+- assessment_id: previous_mechanism
+  area: evidence
+  topic: Unchanged recombinant C–F cleavage evidence
+  outcome: supported
+  summary: The existing Dodge 2024 laboratory recombinant P. putida mechanism and
+    its source qualifications exactly match the independently reviewed baseline. Racemic
+    20 mM denominator, 9.9 mM fluoride endpoints, species/strain/construct distinction,
+    temperature ambiguity, stress and assay-control limits remain intact.
+  target_ids:
+  - cmmmech:fluorine
+  evidence_ids:
+  - record
+  - prior_review
+  - preservation
+  details: The prior scientific review was read; its evidence is carried forward rather
+    than represented as freshly re-read original 2024 paper or freshly resolved external
+    identifiers.
+- assessment_id: new_mechanism
+  area: evidence
+  topic: Fresh primary support for conditional fungal liquid mobilization
+  outcome: supported
+  summary: Original Methods and Tables 1–4 support the qualified new mechanism and
+    its stated measurements. Source inconsistencies and soil counterevidence are explicitly
+    retained; no unique molecular cause, natural-mineral performance, recovered product
+    or deployment is inferred.
+  target_ids:
+  - cmmmech:fluorine
+  evidence_ids:
+  - record
+  - page289
+  - page290
+  - page291
+  - page292
+  - metadata
+  dimensions:
+  - name: material_form
+    value: Supplier-precipitated BDH CaF2 reagent; elemental fluorine record owner
+    definition: No natural specimen authentication, phase analysis or product purity;
+      CaF2 and aqueous F− remain distinct from F/F2 and natural fluorite.
+    evidence_ids:
+    - record
+    - page289
+  - name: organism_and_biomass
+    value: Living mycelial-disc cultures; source labeled F. culmorum and Penicillium
+      sp. I in Table 2; separate spore-inoculated soil assay
+    definition: F. solani narrative/Table 2 F. culmorum conflict is preserved; no
+      accessioned-stock identity is invented.
+    evidence_ids:
+    - record
+    - page289
+    - page290
+    - page291
+  - name: conditions
+    value: Liquid cultures at 25 degrees C, 100 throws/min, 14 days; Table 2 has a
+      separate 2% w/v CaF2 arm and variable carbon/buffer experiments.
+    definition: General Methods specify 100 mg/cm3, conflicting with no growth at
+      5% and 10% in Table 2. Carbon at 0.3%, default glucose at 0.1%, and malt extract
+      at 1 g/L are retained as assay descriptions; they cannot be normalized to one
+      clean protocol.
+    evidence_ids:
+    - record
+    - page289
+    - page290
+    - page291
+  - name: controls
+    value: Uninoculated controls with reported subtraction; filtered broth/equal TISAB
+      fluoride electrode
+    definition: No matched endpoint-pH, killed-biomass, metabolite-only or solid-phase
+      comparison establishes causal chemistry; an endpoint pH rise does not prove
+      acid leaching.
+    evidence_ids:
+    - record
+    - page290
+    - page291
+  - name: quantity
+    value: 'At 2% w/v CaF2: 28.0 ± 1.6 and 32.7 ± 1.0 micrograms/cm3 culture filtrate
+      for F. culmorum/Penicillium sp. I'
+    definition: Triplicate means ± SD, net excess above uninoculated controls; denominator
+      is culture filtrate volume, not feed mass, absolute dissolved concentration
+      or recovered percentage.
+    evidence_ids:
+    - record
+    - page290
+    - page291
+  - name: soil_counterevidence
+    value: Separate 5 g autoclaved unpolluted soil assay, glucose, 50 mg CaF2/g soil,
+      25 degrees C; F. merismoides or Penicillium sp. I; water-extract fluoride through
+      7 weeks.
+    definition: All CaF2 inoculated means are at or below corresponding controls;
+      adsorption may mask mobilization. Separate cryolite positive is not transferable
+      to CaF2.
+    evidence_ids:
+    - record
+    - page290
+    - page292
+  - name: deployment
+    value: Laboratory liquid and autoclaved-soil assays
+    definition: Industrial pile use is prospective; no extraction plant, isolated
+      usable fluoride product or mass balance proof.
+    evidence_ids:
+    - record
+    - page291
+    - page292
+- assessment_id: provenance
+  area: provenance
+  topic: Actual EDIT history and preservation
+  outcome: supported
+  summary: New inline event and sidecar describe this actual extension; trusted-base
+    history validation passed. Exact old-field preservation was independently proved
+    against the prior review target hash.
+  target_ids:
+  - cmmmech:fluorine
+  evidence_ids:
+  - record
+  - history
+  - preservation
+  - history_validation
+- assessment_id: sources
+  area: consistency
+  topic: Metadata, corrected dossier attribution and bounded searches
+  outcome: supported
+  summary: New DOI/title/authors are verified from exact primary/metadata sources
+    with the publisher XML author gap acknowledged. The corrected dossier is consistent
+    with retained source files. Bounded notice and deduplication searches and original
+    internal counterevidence were checked.
+  target_ids:
+  - cmmmech:fluorine
+  evidence_ids:
+  - metadata
+  - dossier
+  - page289
+  - page292
+  - search
+  - dedup
+findings: []
+actions: []
+limitations:
+- No accessioned fungal stock mapping or modern species authentication; the F. solani/F.
+  culmorum source label conflict remains unresolved.
+- The general 100 mg/cm3 CaF2 dose conflicts with Table 2 no-growth results at 5%
+  and 10%. The carbon concentrations of 0.3% and 0.1%, and malt extract at 1 g/L,
+  prevent assigning one universal protocol or normalized yield.
+- Control-subtracted electrode endpoints establish net aqueous mobilization. Missing
+  matched-pH, metabolite-only, killed-cell, solid-phase and mass-balance evidence
+  prevents identification of a unique chemical cause or recovered-product yield.
+- The soil CaF2 null limits environmental transfer; water-extractable fluoride is
+  not a direct microscopic dissolution measurement. The separate cryolite response
+  is not a CaF2 result.
+- Existing identity, dated criticality and the recombinant 2024 mechanism were assessed
+  through exact field preservation and the prior independent scientific review. Their
+  authorities and full text were not newly read live.
+- Notice and contrary-literature queries cover first returned sets only. Local hidden/ignored
+  searches are scoped to declared scientific trees and cited downloads. No exhaustive
+  literature or machine-wide absence claim is made.
+- New original scans remain outside Git because reading permission is not redistribution
+  permission. Natural-fluorite source gaps under issue 187 remain open; synthetic
+  CaF2 evidence does not close them.
+notes:
+- Working-tree attestation at trusted base 78ba2f4c84ff84be64b0da23e603f59c761905aa.
+  Native inspect preceded assessment; dossier inputs were re-inspected and their corrected
+  attribution reassessed after issue 192. Target record and new history hashes remained
+  unchanged.
+- 'Findings by severity: no confirmed blocker, major, minor or informational record
+  curation defect. Corrections to record/history by reviewer: none. Unresolved scientific
+  questions are explicitly retained as limitations.'
+- Reviewer original page inspection, metadata hashes, search bounds, old-field proof
+  and validation receipts are under /private/tmp/cmm-round61-fluorine-independent.
+  This record review does not dispose of the separate publication review finding under
+  issue 192.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261011T073230Z-fluorine-round10-independent
+  relationship: Scientific assessment carried forward for exactly unchanged prior
+    fields; not new live authority or earlier paper verification.
+links:
+- https://github.com/CultureBotAI/CMMMech/issues/187
+- https://github.com/CultureBotAI/CMMMech/issues/192
