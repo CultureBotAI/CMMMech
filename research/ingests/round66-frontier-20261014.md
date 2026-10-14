@@ -25,6 +25,12 @@ Six mineral owners bring the corpus from 299 to **305**. Selection prioritizes d
 
 The final reviews are independent of the respective record curator and match exact current record bytes. Their source checks and limits are recorded individually; structural validity is not scientific proof. Unresolved source uncertainties remain in records and reviews. The manifest pins records, histories, scientific reviews, dossiers, completed receipts, README and rendered pages.
 
+## Publication correction after hosted review
+
+Correction author: codex `/root` (GPT-6; codex), 2026-10-14 UTC.
+
+The hosted review of initial PR #208 commit `c432eaf91cb071c956d20be490184a9ce41cf73e` identified an unsupported README location claim, tracked in [#209](https://github.com/CultureBotAI/CMMMech/issues/209). Han §3.2 distinguishes black sulfide material on nails from white phosphate solids in acetate medium. The README now says “Barićite-assigned phosphate precipitation in hydrogen-fed G20 cultures.” All six scientific records, histories and scientific review pairs are byte-identical; the original local audit and negative hosted observation remain preserved. The corrected publication package requires a successor review and exact new-commit checks before queue admission. Closure is proposed by the fixing PR, not preclaimed.
+
 ## Issues and source handoffs
 
 Source dossiers: [round66-magnesium](../sources/round66-magnesium/20261014T082237Z-source-investigation.md), [round66-manganese](../sources/round66-manganese/20261014T082408Z-source-investigation.md), [round66-phosphates](../sources/round66-phosphates/20261014T081917Z-source-investigation.md). Raw originals remain outside Git; committed assessments preserve acquisition routes, queries, hashes, rights and bounded inspection scopes. Deduplication includes hidden and ignored files within the named source roots, with relevant symlinks followed. Retained artifacts are distinguished from fresh downloads, and inaccessible or partially inspected originals are not represented as fully read.

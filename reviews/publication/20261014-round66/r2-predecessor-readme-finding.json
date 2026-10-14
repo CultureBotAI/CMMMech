@@ -1,0 +1,40 @@
+{
+  "started_at": "2026-10-14T08:39:40.714063+00:00",
+  "finished_at": "2026-10-14T08:39:40.714080+00:00",
+  "reviewer": "codex /root/round66_magnesium",
+  "scope": "Independent manual read-only exact-commit review of README, PR body and local publication audit while required CI/preflight were pending. Reviewer authored unrelated brucite/dolomite and independently reviewed baricite/bobierrite.",
+  "pr": 208,
+  "head": "c432eaf91cb071c956d20be490184a9ce41cf73e",
+  "tree": "97828165d9a64a2abbc54da7de991bf6e7d5acec",
+  "base": "d57f45621cbe465eb13dfb6cc26cc4197d98f90e",
+  "passed": false,
+  "verdict": "needs_curation",
+  "findings": [
+    {
+      "issue_key": "round66-baricite-readme-spatial",
+      "severity": "minor",
+      "status": "open",
+      "category": "publication_wording",
+      "target": "README.md",
+      "field": "Bari\u0107ite curated-evidence row",
+      "summary": "The row spatially locates phosphate precipitation around iron nails without primary support.",
+      "evidence": "Han 2016 Section 3.2 (author-manuscript PDF page 5) reports black sulfide material on nails, while white solids accumulate in inoculated acetate medium. Phosphate SEM is data not shown and not further characterized (page 6).",
+      "proposed_correction": "Bari\u0107ite-assigned phosphate precipitation in hydrogen-fed G20 cultures.",
+      "acceptance": "Correct the summary, retain record bytes, refresh exact publication manifests/audit for the amended head, and repeat affected validation/hosted checks."
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/private/tmp/CMMMech-expansion-round66-20261014/README.md",
+      "sha256": "b6ebc0ba692704860363e6faffbedb1ea6f2adcbaf7571030ce0a6bdb4e2bb34"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-phosphates-research/han2016.pdf",
+      "sha256": "e64eb5018f28d503a0f065a8cf98f1bf09e2ae165558654b546e7a002eb9f602"
+    }
+  ],
+  "limits": [
+    "This is not a completed hosted CI/preflight audit; required validate-strict and isolated preflight were pending at initial status check.",
+    "No scientific record or source reviewed claim requires change; this is one unsupported spatial phrase in a publication summary."
+  ]
+}

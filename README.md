@@ -13,7 +13,7 @@ The catalogue currently contains 305 material records.
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
 | [Bobierrite](data/records/bobierrite.yaml) | Source-assigned magnesium phosphate in bacterial culture products | Mixed products, phase-label conflicts and processing constrain attribution |
-| [Barićite](data/records/baricite.yaml) | G20-associated phosphate precipitation around iron nails | Source-assigned mixed composition, recipe conflicts and sterile controls limit causal claims |
+| [Barićite](data/records/baricite.yaml) | Barićite-assigned phosphate precipitation in hydrogen-fed G20 cultures | Source-assigned mixed composition, recipe conflicts and sterile controls limit causal claims |
 | [Brucite](data/records/brucite.yaml) | Brucite-rich encrustation of microbial filaments in Prony Bay chimneys | Field association and proposed nucleation do not establish metabolic necessity |
 | [Dolomite](data/records/dolomite.yaml) | Partially ordered dolomite assigned in an anaerobic photosynthetic consortium | Mixed carbonate products, control labels and diffraction-index conflicts remain explicit |
 | [Cryptomelane](data/records/cryptomelane.yaml) | Abiotic thermal transformation and slower acid release of nickel | Mixed phases and fitted rates do not establish permanent immobilization or recovery |
