@@ -1,0 +1,426 @@
+# Independent scientific review of Sauconite
+
+- Review: 20261014T190647Z-sauconite-round79-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T18:57:04.657816Z
+- Finished UTC: 2026-10-14T19:06:47.633370Z
+- Reviewer: codex /root/round68_iron_sulfides (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified identity and source-scoped experimental interpretation supported, with explicit phase/control/denominator limits.
+
+## Scope And Provenance
+
+Whole exact maintained record, canonical history, authority identity and primary claim-bearing methods/results/figures/tables/supplement, controls, contradictory statements and actual checks.
+
+Selection: Assigned frozen clay owner; inspect before assessment, no reviewer owner edits.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base e3ac010053a78aad7650bb2608a1f0110e4cd8bf.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:sauconite | data/records/sauconite.yaml | maintained | Sauconite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named validation | passed | True | cmmmech:sauconite | Actual reviewer execution exit0; one record and zero failures. Per-command interval not independently recorded. |
+| Actual batch gate 1 | passed | True | cmmmech:sauconite | Actual coordinator 2026-10-14T18:59:58.231259+00:00 to 2026-10-14T19:03:19.172821+00:00, terminal receipt/log and owner SHA independently verified. |
+| Actual batch gate 2 | passed | True | cmmmech:sauconite | Actual coordinator 2026-10-14T19:03:19.172845+00:00 to 2026-10-14T19:03:26.957554+00:00, terminal receipt/log and owner SHA independently verified. |
+| Actual batch gate 3 | passed | True | cmmmech:sauconite | Actual coordinator 2026-10-14T19:03:26.957578+00:00 to 2026-10-14T19:03:31.991265+00:00, terminal receipt/log and owner SHA independently verified. |
+| Actual batch gate 4 | passed | True | cmmmech:sauconite | Actual coordinator 2026-10-14T19:03:31.991287+00:00 to 2026-10-14T19:03:35.366099+00:00, terminal receipt/log and owner SHA independently verified. |
+
+## Scientific And Domain Assessments
+
+### Mineral versus experimental phase
+
+identity: supported. Targets: cmmmech:sauconite.
+
+Current authority status and formula correctly distinguish species/name from constituent elements, smectite group and experimental synthetic product. No criticality designation or unverified strain identifier is asserted.
+
+### Abiotic precursor and treatment scope
+
+evidence: supported. Targets: cmmmech:sauconite.
+
+TEOS/ZnCl2/AlCl3 homogeneous gel, pH10 NaOH, washing/redispersion, further NaOH and overnight aging precede Teflon-lined steel autogenous-pressure treatments. Table1 establishes actual100/150°C1,3,7,14days and200°C1,3,7days. No microbial inoculum, natural ore or waste feed.
+
+### Source-assigned sauconite and mixtures
+
+evidence: supported. Targets: cmmmech:sauconite.
+
+All six original figures and three tables support expandable Zn-rich trioctahedral smectite: EG17Å,0601.53–1.54Å, flake/turbostraticTEM plus FTIR/XPS.100°C products have no detected XRD impurity;150°C has hemimorphite and200°C7days also willemite. No detection limit or refined pure-phase fraction; adsorbed/interlayer excessZn/Na not all structural.
+
+### No recovered yield or general temperature rule
+
+quantity: supported. Targets: cmmmech:sauconite.
+
+S10 is100°C14day analytical sample. Table2 composition is not zinc recovery. Source doubled-formula hydroxyl normalization inconsistency correctly avoided for identity; Higashi2002 different-gel little/no100°C crystallization limits generalization. No catalytic performance, microbial route or industrial operation measured.
+
+### Exact scientific owner and actual checks
+
+provenance: supported. Targets: cmmmech:sauconite.
+
+Native inspect preceded judgment; canonical actor/event/history and separateinline provenance checked. Reviewer authoredphlogopite only and did not edit either clay owner. Actual named and appropriate batch receipts bind reviewedbytes; no hosted publication assertion.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/sauconite.yaml; Complete maintained owner. Actual local artifact: /private/tmp/CMMMech-expansion-round79-20261014/data/records/sauconite.yaml | supports | Exact canonical identity, mechanisms, evidence and provenance read independently. |
+| history0 | history/records/sauconite/2026-10-14T185512Z-codex-971963.yaml; Complete canonical history and linked separate inline event. Actual local artifact: /private/tmp/CMMMech-expansion-round79-20261014/history/records/sauconite/2026-10-14T185512Z-codex-971963.yaml | supports | Verified actual codex/GPT-6 actor, target, event and change scope; earlier sidecars preserved. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September 2026 original, PDF p193. Actual local artifact: /private/tmp/cmm-round64-iron-research/ima2026-09.pdf | supports | Exact original mineral row visually checked, status Q1873 for stevensite or G1875 for sauconite; no invented IMA approval accession. |
+| handbook | https://handbookofmineralogy.org/pdfs/sauconite.pdf; Complete one-page authority. Actual local artifact: /private/tmp/cmm-round79-clays-research/sauconite-handbook.pdf | supports | Formula/group and phase-identification caveats read and visually inspected. |
+| primary | https://doi.org/10.11362/jcssjclayscience1960.13.75; Complete original six pages, all Figures1-6 and Tables1-3 individually visually inspected. Actual local artifact: /private/tmp/cmm-round79-clays-research/sauconite.pdf | supports | Complete accepted original independently read; source-assigned experimental phase and limits tested against the record. Failed alternative downloads are not evidence. |
+| named | /private/tmp/cmm-round79-clays-independent/sauconite-validation.log; Actual independent named --require-records execution. Actual local artifact: /private/tmp/cmm-round79-clays-independent/sauconite-validation.log | supports | One record, zero failures; validation does not prove scientific truth. |
+| batch | /private/tmp/cmm-round79-final-gates.json; Actual terminal four-command coordinator gate. Actual local artifact: /private/tmp/cmm-round79-final-gates.json | supports | All command exit codes, trusted base, log digest and exact reviewed owner hash independently verified. |
+| batch_log | /private/tmp/cmm-round79-final-gates.log; Full actual log checked against receipt SHA256. Actual local artifact: /private/tmp/cmm-round79-final-gates.log | supports | Includes just check, strict nonempty validation, canonical history validation and pages check. |
+| dedup | /private/tmp/cmm-round79-clays-independent/dedup.txt; Bounded followed hidden/ignored-inclusive record/research/review/history and current raw text search. Actual local artifact: /private/tmp/cmm-round79-clays-independent/dedup.txt | context_only | Prior contextual smectite references and author dossier retained; this review does not claim machine-wide absence. |
+| notices | /private/tmp/cmm-round79-clays-independent/web-notices.json; Actual bounded 2026-10-14 web query return. Actual local artifact: /private/tmp/cmm-round79-clays-independent/web-notices.json | context_only | No applicable correction/retraction returned for exact DOI/notice queries. Related 2026 field study and2025 environmental-driver work surfaced as unreviewed context, not accepted replication. Higashi2002 contrary low-temperature recipe result retained as reported in accepted sauconite primary. |
+
+## Limits And Additional Notes
+
+- Abiotic synthetic product assigned by combined characterization; XRD nondetection does not exclude amorphous or low-abundance impurity phases.
+- Earlier different-gel low-temperature result is assessed through the accepted original’s explicit comparison, not claimed as independently acquired replication.
+- Printed issue2006, acceptance2007 and J-STAGE online2011 chronology retained; no invented resolution.
+- No microbial evidence, product recovery denominator, refined phase purity or industrial deployment.
+- Bounded notice search and prior contextual overlap assessed; no exhaustive absence claim. Hosted checks and publication are separate future gates.
+- Actual nonempty primary/authority files are bound to exact localpaths and SHA256; bulk originals remain outside Git.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T190647Z-sauconite-round79-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Sauconite
+started_at: '2026-10-14T18:57:04.657816Z'
+finished_at: '2026-10-14T19:06:47.633370Z'
+reviewer:
+  identity: codex /root/round68_iron_sulfides
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Clay owner/history authored by round68_phosphates. Reviewer
+    authored phlogopite, did not edit either clay owner, and independently inspected
+    full accepted originals and all claim-bearing graphics from shared acquisitions.
+    Shared acquisition is not replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified identity and source-scoped experimental interpretation supported,
+  with explicit phase/control/denominator limits.
+source:
+  git_revision: e3ac010053a78aad7650bb2608a1f0110e4cd8bf
+  state: working_tree
+  inputs:
+  - path: data/records/sauconite.yaml
+    sha256: 1f1054d6eca5e5a4a84cce592485a2046a11071564407febe03717228eadca72
+    role: target
+  - path: history/records/sauconite/2026-10-14T185512Z-codex-971963.yaml
+    sha256: 24348f20376982d5c53f7abace552ef6ced789ec6ed134642abb1883862b2db4
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Whole exact maintained record, canonical history, authority identity
+    and primary claim-bearing methods/results/figures/tables/supplement, controls,
+    contradictory statements and actual checks.
+  selection: Assigned frozen clay owner; inspect before assessment, no reviewer owner
+    edits.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:sauconite
+targets:
+- target_id: cmmmech:sauconite
+  path: data/records/sauconite.yaml
+  label: Sauconite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/sauconite.yaml
+    role: maintained
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/sauconite.yaml --require-records
+  status: passed
+  required: true
+  summary: Actual reviewer execution exit0; one record and zero failures. Per-command
+    interval not independently recorded.
+  target_ids:
+  - cmmmech:sauconite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Actual batch gate 1
+  command: just check
+  status: passed
+  required: true
+  summary: Actual coordinator 2026-10-14T18:59:58.231259+00:00 to 2026-10-14T19:03:19.172821+00:00,
+    terminal receipt/log and owner SHA independently verified.
+  target_ids:
+  - cmmmech:sauconite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batch_log
+- check_id: batch1
+  name: Actual batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Actual coordinator 2026-10-14T19:03:19.172845+00:00 to 2026-10-14T19:03:26.957554+00:00,
+    terminal receipt/log and owner SHA independently verified.
+  target_ids:
+  - cmmmech:sauconite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batch_log
+- check_id: batch2
+  name: Actual batch gate 3
+  command: uv run --locked cmmmech validate-history --base e3ac010053a78aad7650bb2608a1f0110e4cd8bf
+  status: passed
+  required: true
+  summary: Actual coordinator 2026-10-14T19:03:26.957578+00:00 to 2026-10-14T19:03:31.991265+00:00,
+    terminal receipt/log and owner SHA independently verified.
+  target_ids:
+  - cmmmech:sauconite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batch_log
+- check_id: batch3
+  name: Actual batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Actual coordinator 2026-10-14T19:03:31.991287+00:00 to 2026-10-14T19:03:35.366099+00:00,
+    terminal receipt/log and owner SHA independently verified.
+  target_ids:
+  - cmmmech:sauconite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batch_log
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/sauconite.yaml
+  locator: 'Complete maintained owner. Actual local artifact: /private/tmp/CMMMech-expansion-round79-20261014/data/records/sauconite.yaml'
+  accessed_at: '2026-10-14T19:06:47.633370Z'
+  support: supports
+  summary: Exact canonical identity, mechanisms, evidence and provenance read independently.
+  snapshot_sha256: 1f1054d6eca5e5a4a84cce592485a2046a11071564407febe03717228eadca72
+- evidence_id: history0
+  kind: record_content
+  reference: history/records/sauconite/2026-10-14T185512Z-codex-971963.yaml
+  locator: 'Complete canonical history and linked separate inline event. Actual local
+    artifact: /private/tmp/CMMMech-expansion-round79-20261014/history/records/sauconite/2026-10-14T185512Z-codex-971963.yaml'
+  accessed_at: '2026-10-14T19:06:47.633370Z'
+  support: supports
+  summary: Verified actual codex/GPT-6 actor, target, event and change scope; earlier
+    sidecars preserved.
+  snapshot_sha256: 24348f20376982d5c53f7abace552ef6ced789ec6ed134642abb1883862b2db4
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'September 2026 original, PDF p193. Actual local artifact: /private/tmp/cmm-round64-iron-research/ima2026-09.pdf'
+  accessed_at: '2026-10-14T19:06:47.633370Z'
+  support: supports
+  summary: Exact original mineral row visually checked, status Q1873 for stevensite
+    or G1875 for sauconite; no invented IMA approval accession.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://handbookofmineralogy.org/pdfs/sauconite.pdf
+  locator: 'Complete one-page authority. Actual local artifact: /private/tmp/cmm-round79-clays-research/sauconite-handbook.pdf'
+  accessed_at: '2026-10-14T19:06:47.633370Z'
+  support: supports
+  summary: Formula/group and phase-identification caveats read and visually inspected.
+  snapshot_sha256: c1ad5decee2b011e054ef13cdafe6ac7828c6eb594dc971c2a5d08e9e96c4198
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.11362/jcssjclayscience1960.13.75
+  locator: 'Complete original six pages, all Figures1-6 and Tables1-3 individually
+    visually inspected. Actual local artifact: /private/tmp/cmm-round79-clays-research/sauconite.pdf'
+  accessed_at: '2026-10-14T19:06:47.633370Z'
+  support: supports
+  summary: Complete accepted original independently read; source-assigned experimental
+    phase and limits tested against the record. Failed alternative downloads are not
+    evidence.
+  snapshot_sha256: 37e303e0d3fb3b8af95000f961b4e72a91580500f1f378427fffead96b89a3a4
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round79-clays-independent/sauconite-validation.log
+  locator: 'Actual independent named --require-records execution. Actual local artifact:
+    /private/tmp/cmm-round79-clays-independent/sauconite-validation.log'
+  accessed_at: '2026-10-14T19:06:47.633370Z'
+  support: supports
+  summary: One record, zero failures; validation does not prove scientific truth.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round79-final-gates.json
+  locator: 'Actual terminal four-command coordinator gate. Actual local artifact:
+    /private/tmp/cmm-round79-final-gates.json'
+  accessed_at: '2026-10-14T19:06:47.633370Z'
+  support: supports
+  summary: All command exit codes, trusted base, log digest and exact reviewed owner
+    hash independently verified.
+  snapshot_sha256: 62fe3b60315ad6ccb525b89faa2edcc4820536ad4f76d9cfd8b6f0fd500058b4
+- evidence_id: batch_log
+  kind: validation
+  reference: /private/tmp/cmm-round79-final-gates.log
+  locator: 'Full actual log checked against receipt SHA256. Actual local artifact:
+    /private/tmp/cmm-round79-final-gates.log'
+  accessed_at: '2026-10-14T19:06:47.633370Z'
+  support: supports
+  summary: Includes just check, strict nonempty validation, canonical history validation
+    and pages check.
+  snapshot_sha256: 14a8a4c1f8beabfe17b2309ffab62d6c32842b054c2b7b74719cf176a10339f6
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round79-clays-independent/dedup.txt
+  locator: 'Bounded followed hidden/ignored-inclusive record/research/review/history
+    and current raw text search. Actual local artifact: /private/tmp/cmm-round79-clays-independent/dedup.txt'
+  accessed_at: '2026-10-14T19:06:47.633370Z'
+  support: context_only
+  summary: Prior contextual smectite references and author dossier retained; this
+    review does not claim machine-wide absence.
+  snapshot_sha256: f56b5845e37fe02ef61f1b6ab02d00a7b33487e7a28b3a6f59db79fa9bc371d1
+  search_scope: rg --no-ignore --hidden --follow -a -n -i stevensite|sauconite|10.1016/j.gca.2025.12.052|jcssjclayscience1960.13.75
+    data/records research reviews history /private/tmp/cmm-round79-clays-research
+    -g *.yaml -g *.md -g *.json -g *.txt; existing author dossier additionally records
+    main checkout/referenced raw inventory
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round79-clays-independent/web-notices.json
+  locator: 'Actual bounded 2026-10-14 web query return. Actual local artifact: /private/tmp/cmm-round79-clays-independent/web-notices.json'
+  accessed_at: '2026-10-14T19:06:47.633370Z'
+  support: context_only
+  summary: No applicable correction/retraction returned for exact DOI/notice queries.
+    Related 2026 field study and2025 environmental-driver work surfaced as unreviewed
+    context, not accepted replication. Higashi2002 contrary low-temperature recipe
+    result retained as reported in accepted sauconite primary.
+  snapshot_sha256: 236a823f787a538b97ee60ab6ec363fd058e6d99b4f8de20e267f30264ee93c9
+  search_scope: Exact two DOI queries plus correction/erratum/retraction; stevensite
+    Arizaleta microbial carbonate dypingite; sauconite Yokoyama Higashi100. First
+    returned result set, not exhaustive notice search.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral versus experimental phase
+  outcome: supported
+  summary: Current authority status and formula correctly distinguish species/name
+    from constituent elements, smectite group and experimental synthetic product.
+    No criticality designation or unverified strain identifier is asserted.
+  target_ids:
+  - cmmmech:sauconite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  - primary
+- assessment_id: recipe
+  area: evidence
+  topic: Abiotic precursor and treatment scope
+  outcome: supported
+  summary: TEOS/ZnCl2/AlCl3 homogeneous gel, pH10 NaOH, washing/redispersion, further
+    NaOH and overnight aging precede Teflon-lined steel autogenous-pressure treatments.
+    Table1 establishes actual100/150°C1,3,7,14days and200°C1,3,7days. No microbial
+    inoculum, natural ore or waste feed.
+  target_ids:
+  - cmmmech:sauconite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: phase
+  area: evidence
+  topic: Source-assigned sauconite and mixtures
+  outcome: supported
+  summary: 'All six original figures and three tables support expandable Zn-rich trioctahedral
+    smectite: EG17Å,0601.53–1.54Å, flake/turbostraticTEM plus FTIR/XPS.100°C products
+    have no detected XRD impurity;150°C has hemimorphite and200°C7days also willemite.
+    No detection limit or refined pure-phase fraction; adsorbed/interlayer excessZn/Na
+    not all structural.'
+  target_ids:
+  - cmmmech:sauconite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: limits
+  area: quantity
+  topic: No recovered yield or general temperature rule
+  outcome: supported
+  summary: S10 is100°C14day analytical sample. Table2 composition is not zinc recovery.
+    Source doubled-formula hydroxyl normalization inconsistency correctly avoided
+    for identity; Higashi2002 different-gel little/no100°C crystallization limits
+    generalization. No catalytic performance, microbial route or industrial operation
+    measured.
+  target_ids:
+  - cmmmech:sauconite
+  evidence_ids:
+  - record
+  - primary
+  - ima
+- assessment_id: provenance
+  area: provenance
+  topic: Exact scientific owner and actual checks
+  outcome: supported
+  summary: Native inspect preceded judgment; canonical actor/event/history and separateinline
+    provenance checked. Reviewer authoredphlogopite only and did not edit either clay
+    owner. Actual named and appropriate batch receipts bind reviewedbytes; no hosted
+    publication assertion.
+  target_ids:
+  - cmmmech:sauconite
+  evidence_ids:
+  - record
+  - history0
+  - named
+  - batch
+  - batch_log
+findings: []
+actions: []
+limitations:
+- Abiotic synthetic product assigned by combined characterization; XRD nondetection
+  does not exclude amorphous or low-abundance impurity phases.
+- Earlier different-gel low-temperature result is assessed through the accepted original’s
+  explicit comparison, not claimed as independently acquired replication.
+- Printed issue2006, acceptance2007 and J-STAGE online2011 chronology retained; no
+  invented resolution.
+- No microbial evidence, product recovery denominator, refined phase purity or industrial
+  deployment.
+- Bounded notice search and prior contextual overlap assessed; no exhaustive absence
+  claim. Hosted checks and publication are separate future gates.
+notes:
+- Actual nonempty primary/authority files are bound to exact localpaths and SHA256;
+  bulk originals remain outside Git.
+```

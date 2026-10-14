@@ -1,0 +1,101 @@
+id: cmmmech:waste-multilayer-ceramic-capacitors
+name: Waste multilayer ceramic capacitors
+material_kind: secondary_resource
+description: >-
+  Discarded multilayer ceramic capacitor components, represented here by
+  components removed from printed circuit boards of twenty post-consumer
+  computers. This feed is distinct from whole printed circuit boards,
+  tantalum capacitors, pure barium titanate and its constituent elements.
+  The characterized batch contained ceramic and metallic phases; neither
+  a universal capacitor composition nor a criticality designation is assigned.
+  The accepted experiment uses chemical deep eutectic solvents and provides
+  no microbial mechanism or industrial deployment evidence.
+sources:
+  - id: masache2025
+    title: >-
+      Masache-Romero, Moreno, Sanchez and Aragon-Tobar (2025). Sustainable
+      Recovery of Cu, Fe, Ni, and Zn from Multilayer Ceramic Capacitors Using
+      a Ternary Deep Eutectic Solvent. Molecules 30:4254.
+      DOI 10.3390/molecules30214254; complete original, Sections 2-5,
+      Tables 1-4 and Figures 1-5.
+    url: https://doi.org/10.3390/molecules30214254
+    accessed_on: '2026-10-14'
+mechanisms:
+  - id: chemical_des_leaching
+    name: Abiotic metal mobilization by choline-chloride-based solvents
+    process: separation
+    microbial: false
+    description: >-
+      Chemical solvent exposure mobilized copper, nickel, iron and zinc from
+      pulverized capacitor components into analyzed solution. The citric-acid
+      binary and citric-acid-containing ternary formulations gave greater
+      copper and zinc release than the glycerol binary formulation; nickel
+      release was strongest with the citric-acid binary formulation. These
+      source-scoped comparative trends do not establish a unique molecular
+      pathway, isolated metal products or a validated overall recovery yield.
+    context: >-
+      A heat gun removed components from the computer boards; its temperature
+      and exposure duration were not specified. Components were pulverized,
+      homogenized and quartered into 100 g fractions, without a reported
+      particle-size distribution. Table 1 reports XRF elemental percentages
+      including Ni 16.1, Fe 5.8, Cu 2.5 and Zn 1.5; this is not a universal
+      feed specification or an independently closed mass balance. Table 2
+      assigns BaTiO3, BaFeO3-x, Fe3O4, CuZn5 and Cu0.81Ni0.19 with qualitative
+      abundance symbols; no diffractogram or quantitative phase fractions
+      accompany that table. Solvents were prepared at 80 degrees C with
+      stirring until homogeneous and cooled to 15 degrees C. Choline chloride
+      to glycerol was 1:2 molar, choline chloride to citric acid was 1:1,
+      and the ternary choline chloride:glycerol:citric acid ratio was 2.4:3.4:1.
+      Laboratory assays used 0.2 g powder with 10 g solvent, 90 degrees C,
+      400 rpm and up to 24 h. This loading is a mass ratio, not an inferred
+      mass-per-volume concentration. Filtered 200 microlitre samples were
+      diluted to 50 mL in 2% HCl and analyzed by atomic absorption spectroscopy.
+      Replicate numbers, error-bar definitions, matched component-only controls
+      and an explicit sampling-loss correction are not supplied in the methods.
+    evidence:
+      - source_ref: masache2025
+        supports: support
+        explanation: >-
+          Sections 4.1-4.4, Tables 1-4 and Figure 5 establish the post-consumer
+          component feed, chemical formulations and assay. Figures 1-4 and
+          Sections 2.2.1-2.2.4 support metal mobilization and the stated broad
+          solvent rankings. Glycerol-only hydrogen-bond-donor formulation
+          showed comparatively weak copper and nickel release, so adding a
+          ternary formulation does not establish universal improvement over
+          either binary solvent. The study did not isolate recovered metals
+          or demonstrate solvent reuse in these experiments.
+      - source_ref: masache2025
+        supports: partial
+        explanation: >-
+          Numerical extraction claims conflict within the source. Section
+          2.2.2 first reports approximately 25% nickel for the ternary and
+          6% for the glycerol binary at 24 h, consistent with Figure 2 and
+          the conclusion, but its next paragraph gives 68% and 16%. The
+          abstract gives a 60% iron maximum whereas Figure 3 and the conclusion
+          indicate about 68% for the citric-acid binary; other iron endpoints
+          also differ between prose and conclusion. Near-complete copper and
+          nickel values are variously rounded to 99% or 100%. No single
+          reconciled extraction percentage is accepted. Section 4.4 lists
+          samples at 0.5, 1, 2, 4, 6 and 24 h, whereas the figures include
+          a 16 h point. These discrepancies prevent reconstruction of an
+          unambiguous time-course dataset from the article alone.
+      - source_ref: masache2025
+        supports: partial
+        explanation: >-
+          Section 3.3 and Table 3 explicitly derive ternary viscosity from
+          a theoretical estimate and other physical properties from literature,
+          rather than measuring the prepared assay solvents. Proposed proton
+          donation, complexation and improved mass transfer remain explanations
+          without direct speciation or kinetic discrimination. Section 3.5
+          proposes further characterization. Energy savings, low toxicity,
+          solvent recyclability and industrial scalability are not established
+          by this laboratory leaching comparison. Results for whole boards or
+          other capacitor chemistries cited in the discussion are not transferred.
+
+curation_history:
+  - timestamp: '2026-10-14T18:49:59.799118+00:00'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: Created a distinct post-consumer MLCC resource and abiotic solvent-leaching mechanism after full primary and graphics inspection; retained conflicting extraction values and evidence limits.
+history_refs:
+  - history/records/waste-multilayer-ceramic-capacitors/2026-10-14T184942Z-codex-c1879b.yaml

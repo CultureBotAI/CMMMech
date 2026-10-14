@@ -1,0 +1,121 @@
+id: cmmmech:stevensite
+name: Stevensite
+material_kind: mineral
+description: Stevensite is a Mg-rich smectite name listed with questionable status Q, original-description
+  year 1873, in the September 2026 IMA list; it is not an approved or grandfathered entry. The listed formula
+  is (Ca,Na)xMg3-ySi4O10(OH)2. The experimental material below is a synthetic, poorly crystalline Mg-rich trioctahedral
+  smectite assigned by the authors as likely stevensite, not independently established phase-pure mineral.
+  This owner is distinct from saponite, hectorite, amorphous Mg-silicate, and its carbonate transformation
+  products. No constituent criticality designation is inherited.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026, Stevensite row, PDF p205; Q means questionable.
+    Retained original re-inspected on the access date.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: handbook_stevensite
+  title: Handbook of Mineralogy. Stevensite, version 1 (2001). Complete one-page identity and smectite-group
+    assignment.
+  url: https://handbookofmineralogy.org/pdfs/stevensite.pdf
+  accessed_on: '2026-10-14'
+- id: arizaleta_2026
+  title: 'Arizaleta et al. (2026). Microbial and abiotic approaches to carbonating stevensite: what works and
+    what doesn’t. Geochimica et Cosmochimica Acta 414:202-216. Complete 15-page version of record from Umeå
+    University repository, diva2:2045678; Figures 1-5 and Tables 1-4. Online publication 24 December 2025.'
+  url: https://doi.org/10.1016/j.gca.2025.12.052
+  accessed_on: '2026-10-14'
+- id: arizaleta_2026_si
+  title: Official 31-page supplementary material to Arizaleta et al. (2026), article S0016703725007446, mmc1.pdf;
+    Figures S1-S7, Tables S1-S7, calculations and PHREEQC input.
+  url: https://ars.els-cdn.com/content/image/1-s2.0-S0016703725007446-mmc1.pdf
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: mat_associated_carbonation
+  name: Community-associated low-abundance carbonate coating on source-assigned stevensite
+  process: biomineralization
+  microbial: true
+  description: A mixed microbial-mat incubation produced a low-abundance dypingite coating on synthetic stevensite
+    in Last Chance Lake water. Dissolution followed by carbonate precipitation is the proposed transformation.
+    Spatial association and comparison arms support a community-associated effect, without isolating a causal
+    taxon, proving biological necessity, or tracing the coating magnesium exclusively to the clay.
+  context: Methods 2.2-2.5 used filtered (0.22 micrometre) lake water amended with BG11 components and mixed
+    mat inoculum from Milk Lake, British Columbia. The mat was collected in June 2018 and waters in August
+    2020; approximately 0.15 g wet mat was inoculated into 200 mL amended water. The uncharacterized community
+    contained cyanobacteria, heterotrophs and diatoms; no isolate-level taxon is assigned. BIO1, BIO2 and BIO3
+    used Milk, Goodenough and Last Chance waters respectively. Incubations were exposed to atmosphere with
+    monthly deionized-water replacement. Dypingite was observed at six months in BIO3. The experiment extended
+    approximately one year; some Milk Lake observations extend to 13 months. No-biofilm clay controls began
+    five months later, were foil-covered and reached seven months, so light and duration were not matched.
+    Biofilm-only controls lacked added clay. BG11 and lake water also supplied magnesium. This was a laboratory
+    experiment, not an industrial carbon-capture or mineral-recovery process.
+  evidence:
+  - source_ref: arizaleta_2026
+    supports: support
+    explanation: Sections 3.3, 4.1 and 4.3, Figure 5 and Table 3 report dypingite associated with BIO3 clay;
+      BIO1 and BIO2 showed no mineralogical change, and BIO3null no additional precipitate. BIO3control produced
+      gaylussite and trona, not the same clay coating. BIO1control formed an unresolved Mg-silicate, which
+      is not assigned to stevensite here. The different control timing and illumination prevent a strict living-cell-necessity
+      inference.
+  - source_ref: arizaleta_2026_si
+    supports: support
+    explanation: Figures S5 and S6 show the weak dypingite diffraction feature and Mg-C-bearing EDS interaction
+      volumes, respectively; the platy coating morphology is shown in main Figure 5. The small sample and very
+      low carbonate abundance prevented quantitative phase analysis. Silicon and sodium in EDS may include
+      underlying clay. The EDS concentration inset in Figure S6 reports lower, not higher, Mg weight percentage
+      in the coating volume than the starting clay; the main text’s Mg-enrichment wording is therefore not
+      adopted.
+  - source_ref: arizaleta_2026
+    supports: partial
+    explanation: 'Section 3.1 assigns likely stevensite using broad diffraction, a 1.53 angstrom 060 reflection,
+      Mg/Si 0.73 and treated basal-spacing changes: 13.95 to 14.53 angstrom with ethylene glycol, and 12.32
+      after heating and glycol treatment. These support the authors’ poorly crystalline smectite interpretation,
+      not a refined pure-phase identification. Section 4.1 proposes photosynthesis, heterotrophy and EPS effects
+      but does not separately measure those causal contributions; Section 4.3 notes that borosilicate vessels
+      may also supply silicon.'
+  - source_ref: arizaleta_2026_si
+    supports: partial
+    explanation: Figures S1-S4 document treated natural/synthetic clay diffraction, biotic bottle photographs
+      and abiotic solid diffraction; Table S1 characterizes digested synthetic clay. Tables S2-S3 contain the
+      abiotic and biotic solution measurements. Quartz is attributed to preparation contamination. Evaporation
+      and sampling complicate concentration comparisons. Main Tables 3 and 4 reverse the final BIO3/BIO3null
+      Mg values (0.70 and 0.95 mmol/L), so no quantitative Mg-removal efficiency or clay-specific carbonate
+      yield is adopted. Theoretical carbon-storage capacity and modeled saturation are not measured capture.
+- id: abiotic_ph_swing_null
+  name: Abiotic dissolution and unsuccessful carbonate precipitation during short pH swings
+  process: other
+  microbial: false
+  description: Acidification dissolved some Mg and Si from synthetic source-assigned stevensite, but subsequent
+    pH increase did not produce a detected carbonate phase in these short abiotic experiments. Reprecipitation
+    or sorption can explain some solution changes without proving a particular new silicate phase.
+  context: Methods 2.3 and Tables 1-2 used approximately 1 g synthetic clay per 100 mL solution, with 10% CO2
+    in nitrogen or hydrochloric acid and subsequent sodium-hydroxide pH adjustment. Goodenough Lake water and
+    deionized-water arms were examined over approximately 28 hours. These abiotic comparisons were not duration-
+    and medium-matched controls for the year-long mat experiment.
+  evidence:
+  - source_ref: arizaleta_2026
+    supports: support
+    explanation: Sections 3.2 and 4.2 and Figures 2-4 report dissolution and no carbonate detected by XRD,
+      SEM or FTIR. Saturation modeling did not constitute observed carbonate formation. The null result is
+      specific to the supplied recipes and duration.
+  - source_ref: arizaleta_2026_si
+    supports: partial
+    explanation: Table S2 preserves the abiotic solution measurements, Table S4 the modeled carbonate saturation
+      indices, and Figures S2 and S4 the synthetic-clay and abiotic solid diffraction. The ABIOswing 207-minute
+      pH is 7.27 in Table 1/Table S2 but 8.21 in Results 3.2.2; initial Goodenough alkalinity is 609 mEq/L
+      in methods but 465 in Table S2/main Table 4. No numerical dissolution efficiency is inferred across those
+      inconsistent entries.
+curation_history:
+- timestamp: '2026-10-14T18:55:06.653612Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created evidence-backed mineral identity with complete primary characterization, explicit experimental
+    phase and control limits, and no inherited criticality or deployment claim.
+- timestamp: '2026-10-14T19:05:11.377487Z'
+  curator: codex (GPT-6; codex)
+  action: EDIT
+  summary: 'Corrected primary section and supplementary figure/table locators for review issue #263, preserving
+    phase assignments, observations, controls and uncertainty. Initial F1 and expanded F1/F2 observations remain
+    immutable.'
+history_refs:
+- history/records/stevensite/2026-10-14T185509Z-codex-e90b96.yaml
+- history/records/stevensite/2026-10-14T190514Z-codex-e3ede2.yaml

@@ -1,0 +1,222 @@
+# Independent stevensite review: EDS source locator finding
+
+- Review: 20261014T190151Z-stevensite-round79-locator-initial
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T18:57:04.656588Z
+- Finished UTC: 2026-10-14T19:01:51.454581Z
+- Reviewer: codex /root/round68_iron_sulfides (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+One confirmed minor EDS locator defect preserved before correction. Whole-record review and actual batch gates remain in progress.
+
+## Scope And Provenance
+
+Initial claim-source locator observation within the assigned independent whole-record review.
+
+Selection: Frozen owner captured by native inspect before assessment.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base e3ac010053a78aad7650bb2608a1f0110e4cd8bf.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:stevensite | data/records/stevensite.yaml | maintained | Stevensite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Native target inspection | passed | True | cmmmech:stevensite | Actual inspect exit 0 before assessment; source input hashes retained above. This is not validation or a completed batch gate. |
+
+## Scientific And Domain Assessments
+
+### EDS claim locator
+
+evidence: concern. Targets: cmmmech:stevensite.
+
+Scientific caution is valid, but the numbered source type is wrong.
+
+## Findings
+
+### F1: Identify the EDS inset as Figure S6, not Table S6
+
+minor / open / confirmed; issue key: stevensite-round79-eds-figure-locator.
+
+The supplement EDS caution is scientifically supported, but its Table S6 locator is incorrect. The mass-percentage inset belongs to Figure S6 on SI page 17; actual Table S6 on pages 12–13 gives modeled saturation indices. Correct the locator without changing the scientific scope.
+
+## Recommended Actions And Acceptance Checks
+
+### A1
+
+Replace Table S6 with Figure S6, append EDIT provenance and save an independently verified successor.
+
+- Exact source locator becomes Figure S6 without broadening the EDS claim.
+- Original review remains immutable; canonical EDIT and inline history are appended.
+- Affected checks pass and successor explicitly resolves this F1 and issue key.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | /private/tmp/CMMMech-expansion-round79-20261014/data/records/stevensite.yaml; mechanisms mat_associated_carbonation evidence explaining supplement EDS. Actual local artifact: /private/tmp/CMMMech-expansion-round79-20261014/data/records/stevensite.yaml | supports | Record incorrectly labels the EDS mass-comparison inset as Table S6. |
+| si | https://ars.els-cdn.com/content/image/1-s2.0-S0016703725007446-mmc1.pdf; Full original SI; p17 Figure S6 (EDS inset), pp12–13 actual Table S6 (carbonate saturation indices). Actual local artifact: /private/tmp/cmm-round79-clays-research/stevensite-si.pdf | supports | Figure S6 inset Mg mass percentages are 15.4 starting clay versus 12.4 dypingite-labeled coating interaction volume. Table S6 concerns model saturation indices and is not this measurement. |
+
+## Limits And Additional Notes
+
+- This is a partial initial observation, not a completed whole-record verdict. Batch checks were still running when this finding was saved.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T190151Z-stevensite-round79-locator-initial
+kind: record
+repository: CultureBotAI/CMMMech
+title: 'Independent stevensite review: EDS source locator finding'
+started_at: '2026-10-14T18:57:04.656588Z'
+finished_at: '2026-10-14T19:01:51.454581Z'
+reviewer:
+  identity: codex /root/round68_iron_sulfides
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Owner and history authored by round68_phosphates; reviewer authored
+    phlogopite and did not edit this owner. Native inspection preceded source assessment.
+skill: .claude/skills/review-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: One confirmed minor EDS locator defect preserved before correction. Whole-record
+  review and actual batch gates remain in progress.
+source:
+  git_revision: e3ac010053a78aad7650bb2608a1f0110e4cd8bf
+  state: working_tree
+  inputs:
+  - path: data/records/stevensite.yaml
+    sha256: dbfb3d06278c111f64dec7da731fb214f18f70d1e12aec11600524d1b957d310
+    role: target
+  - path: history/records/stevensite/2026-10-14T185509Z-codex-e90b96.yaml
+    sha256: de5db16665446a98f5bd9f6fc9f9ea74d18b2f151f287ac6798e69361871a7b0
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Initial claim-source locator observation within the assigned independent
+    whole-record review.
+  selection: Frozen owner captured by native inspect before assessment.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:stevensite
+targets:
+- target_id: cmmmech:stevensite
+  path: data/records/stevensite.yaml
+  label: Stevensite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/stevensite.yaml
+    role: maintained
+checks:
+- check_id: inspect
+  name: Native target inspection
+  command: uv run --locked python scripts/record_review.py inspect --targets /private/tmp/cmm-round79-clays-independent/stevensite-targets.yaml
+  status: passed
+  required: true
+  summary: Actual inspect exit 0 before assessment; source input hashes retained above.
+    This is not validation or a completed batch gate.
+  target_ids:
+  - cmmmech:stevensite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - record
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: /private/tmp/CMMMech-expansion-round79-20261014/data/records/stevensite.yaml
+  locator: 'mechanisms mat_associated_carbonation evidence explaining supplement EDS.
+    Actual local artifact: /private/tmp/CMMMech-expansion-round79-20261014/data/records/stevensite.yaml'
+  accessed_at: '2026-10-14T19:01:51.454581Z'
+  support: supports
+  summary: Record incorrectly labels the EDS mass-comparison inset as Table S6.
+  snapshot_sha256: dbfb3d06278c111f64dec7da731fb214f18f70d1e12aec11600524d1b957d310
+- evidence_id: si
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S0016703725007446-mmc1.pdf
+  locator: 'Full original SI; p17 Figure S6 (EDS inset), pp12–13 actual Table S6 (carbonate
+    saturation indices). Actual local artifact: /private/tmp/cmm-round79-clays-research/stevensite-si.pdf'
+  accessed_at: '2026-10-14T19:01:51.454581Z'
+  support: supports
+  summary: Figure S6 inset Mg mass percentages are 15.4 starting clay versus 12.4
+    dypingite-labeled coating interaction volume. Table S6 concerns model saturation
+    indices and is not this measurement.
+  snapshot_sha256: 8103e2804177db0281f3ec9709deefef9e083e3ad51278a0cf66f2fee196c9a8
+assessments:
+- assessment_id: source_locator
+  area: evidence
+  topic: EDS claim locator
+  outcome: concern
+  target_ids:
+  - cmmmech:stevensite
+  evidence_ids:
+  - record
+  - si
+  summary: Scientific caution is valid, but the numbered source type is wrong.
+findings:
+- finding_id: F1
+  issue_key: stevensite-round79-eds-figure-locator
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Identify the EDS inset as Figure S6, not Table S6
+  description: The supplement EDS caution is scientifically supported, but its Table
+    S6 locator is incorrect. The mass-percentage inset belongs to Figure S6 on SI
+    page 17; actual Table S6 on pages 12–13 gives modeled saturation indices. Correct
+    the locator without changing the scientific scope.
+  target_ids:
+  - cmmmech:stevensite
+  field_paths:
+  - mechanisms[id=mat_associated_carbonation].evidence[1].explanation
+  evidence_ids:
+  - record
+  - si
+  rule_id: claim-source-locator
+  native_severity: minor
+  normalization_reason: Bounded source locator error; the lower Mg weight percentage
+    caution is supported.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/stevensite.yaml
+    role: maintained
+actions:
+- action_id: A1
+  description: Replace Table S6 with Figure S6, append EDIT provenance and save an
+    independently verified successor.
+  finding_ids:
+  - F1
+  target_ids:
+  - cmmmech:stevensite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/stevensite.yaml
+    role: maintained
+  acceptance_checks:
+  - Exact source locator becomes Figure S6 without broadening the EDS claim.
+  - Original review remains immutable; canonical EDIT and inline history are appended.
+  - Affected checks pass and successor explicitly resolves this F1 and issue key.
+limitations:
+- This is a partial initial observation, not a completed whole-record verdict. Batch
+  checks were still running when this finding was saved.
+```

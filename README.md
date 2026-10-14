@@ -8,10 +8,15 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 374 material records.
+The catalogue currently contains 379 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Phlogopite](data/records/phlogopite.yaml) | Fungal-associated surface alteration of a characterized natural mica | No significant potassium-concentration increase over the depleted control; missing aged abiotic controls |
+| [Stevensite](data/records/stevensite.yaml) | Community-associated carbonate coating and separate abiotic null experiments | Questionable IMA status, uncertain synthetic phase assignment, unmatched controls and conflicting solution values |
+| [Sauconite](data/records/sauconite.yaml) | Abiotic hydrothermal formation of a characterized Zn-rich smectite | Temperature-dependent mixed products and unquantified amorphous components; no microbial mechanism |
+| [Waste multilayer ceramic capacitors](data/records/waste-multilayer-ceramic-capacitors.yaml) | Chemical solvent leaching of components from post-consumer computers | Contradictory extraction values and sampling times; no isolated metal products |
+| [Samarium-cobalt magnet scrap](data/records/samarium-cobalt-magnet-scrap.yaml) | Chemical leaching and phase-supported samarium product conversion | Unspecified scrap history, conflicting peroxide recipes and an unreconciled product mass balance |
 | [Chukanovite](data/records/chukanovite.yaml) | Source-assigned carbonate after prolonged goethite reduction in CN32 cultures | Inconclusive diffraction, phosphate-arm conflicts and a separate null result limit phase and pathway claims |
 | [Sepiolite](data/records/sepiolite.yaml) | Controlled abiotic magnesium and silicon release from characterized sepiolite | Nonstoichiometric dissolution, changing pH and modeled secondary phases; no microbial mechanism inferred |
 | [Palygorskite](data/records/palygorskite.yaml) | Controlled CN32 iron reduction followed by a separate technetium reaction | Cleaned specimen and low dissolved iron; the subsequent washed-solid reaction is abiotic |

@@ -1,0 +1,366 @@
+# Independent scientific review of waste multilayer ceramic capacitors
+
+- Review: 20261014T191059Z-waste-multilayer-ceramic-capacitors-round79-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T18:55:59.376651Z
+- Finished UTC: 2026-10-14T19:10:59.788822Z
+- Reviewer: codex /root/round68_phosphates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified independent acceptance of distinct post-consumer MLCC feed and abiotic comparative leaching observations; source numerical conflicts and unmeasured performance claims remain explicit.
+
+## Scope And Provenance
+
+Whole exact maintained owner, linked history, full primary methods/results/claim-bearing graphics and supplement, identity boundaries, controls, denominators, scale and actual checks.
+
+Selection: Assigned canonical cmmmech ID; native inspect before judgment. SmCo initial scoped observation preserved.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base e3ac010053a78aad7650bb2608a1f0110e4cd8bf.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:waste-multilayer-ceramic-capacitors | data/records/waste-multilayer-ceramic-capacitors.yaml | maintained | Waste Multilayer Ceramic Capacitors |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named validation | passed | True | cmmmech:waste-multilayer-ceramic-capacitors | Actual terminal execution 2026-10-14T19:03:45.206570Z to 2026-10-14T19:03:48.918344Z, one record and zero failures. |
+| Completed coordinator batch gate 1 | passed | True | cmmmech:waste-multilayer-ceramic-capacitors | Actual coordinator execution 2026-10-14T19:06:09.205551+00:00 to 2026-10-14T19:10:07.214159+00:00; exact terminal receipt and retained log hash independently verified. |
+| Completed coordinator batch gate 2 | passed | True | cmmmech:waste-multilayer-ceramic-capacitors | Actual coordinator execution 2026-10-14T19:10:07.214183+00:00 to 2026-10-14T19:10:15.684284+00:00; exact terminal receipt and retained log hash independently verified. |
+| Completed coordinator batch gate 3 | passed | True | cmmmech:waste-multilayer-ceramic-capacitors | Actual coordinator execution 2026-10-14T19:10:15.684306+00:00 to 2026-10-14T19:10:21.340376+00:00; exact terminal receipt and retained log hash independently verified. |
+| Completed coordinator batch gate 4 | passed | True | cmmmech:waste-multilayer-ceramic-capacitors | Actual coordinator execution 2026-10-14T19:10:21.340399+00:00 to 2026-10-14T19:10:24.923388+00:00; exact terminal receipt and retained log hash independently verified. |
+
+## Scientific And Domain Assessments
+
+### Distinct post-consumer component resource
+
+identity: supported. Targets: cmmmech:waste-multilayer-ceramic-capacitors.
+
+Twenty computers, heat-gun separation, photos and mixed composition support MLCC feed distinct from wholeboards/tantalumcapacitors/elements; no universal composition or criticality inherited.
+
+### Abiotic solvent comparison
+
+evidence: supported. Targets: cmmmech:waste-multilayer-ceramic-capacitors.
+
+Table4 recipes and0.2g/10g,90C,400rpm,24h verified. AAS measures dissolved metals; loading not converted to w/v. Missing replication/controls/particle size remain explicit.
+
+### Qualitative trends versus source conflicts
+
+quantity: supported. Targets: cmmmech:waste-multilayer-ceramic-capacitors.
+
+Figures1-4 supportCA/ternary greaterCuZn thanGLY andCA strongestNi. Ni25/6 versus68/16,Fe60 versus68 and16h sampling conflict retained. No reconciled percent or isolated-metal yield; source #261 remains open.
+
+### Proposed chemistry and scale
+
+scope: supported. Targets: cmmmech:waste-multilayer-ceramic-capacitors.
+
+Table3 viscosity is estimated/literature-based; §3.5 calls for residue/speciation/reuse work. Complexation/mass-transfer explanations not measured causal pathways; energy/toxicity/reuse/industrial claims withheld.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/waste-multilayer-ceramic-capacitors.yaml; Entire exact maintained owner. Actual local artifact: /private/tmp/CMMMech-expansion-round79-20261014/data/records/waste-multilayer-ceramic-capacitors.yaml | supports | All fields read; material boundary and explicit source limits assessed. |
+| input0 | history/records/waste-multilayer-ceramic-capacitors/2026-10-14T184942Z-codex-c1879b.yaml; Exact prior review or canonical history. Actual local artifact: /private/tmp/CMMMech-expansion-round79-20261014/history/records/waste-multilayer-ceramic-capacitors/2026-10-14T184942Z-codex-c1879b.yaml | supports | Actual actor, event, target and scope checked; append-only provenance retained. |
+| named | /private/tmp/cmm-round79-resource-reviews/waste-multilayer-ceramic-capacitors-named.json; Actual command/interval/log digest. Actual local artifact: /private/tmp/cmm-round79-resource-reviews/waste-multilayer-ceramic-capacitors-named.json | supports | One record passed, zero failures. |
+| dedup | /private/tmp/cmm-round79-resource-reviews/dedup.txt; rg --no-ignore --hidden --follow in current/main data/records research reviews history and frontier raw textual artifacts. Actual local artifact: /private/tmp/cmm-round79-resource-reviews/dedup.txt | context_only | Bounded followed hidden/ignored identity/DOI search; no global absence claim. |
+| notices | /private/tmp/cmm-round79-resource-reviews/notice-search.json; Two exact DOI correction/retraction/erratum queries, first returned sets on2026-10-14. Actual local artifact: /private/tmp/cmm-round79-resource-reviews/notice-search.json | context_only | No applicable notice in bounded results; source contradictions not resolved by presumed errata. |
+| primary | https://doi.org/10.3390/molecules30214254; Complete18-page original, all text and Figures1-5/Tables1-4 inspected. Actual local artifact: /private/tmp/cmm-round79-frontier-research/mlcc2025.pdf | supports | Post-consumer components, chemical recipes and broad comparative trends supported; contradictory endpoints/sampling retained. |
+| xml | https://pmc.ncbi.nlm.nih.gov/articles/PMC12609714/; Full original XML, data/supplement declarations. Actual local artifact: /private/tmp/cmm-round79-frontier-research/mlcc2025.xml | supports | No separate SI announced in inspected article; molecular explanations and viscosity are not measured here. |
+| batch | /private/tmp/cmm-round79-final-gates-corrected.json; All FOUR completed corrected-batch commands; log /private/tmp/cmm-round79-final-gates-corrected.log SHA256 0b57d41c3d48ff58913dbbdd8a8ee381fe01ab9a535c52c3c5c958f1a3e9d29f. Actual local artifact: /private/tmp/cmm-round79-final-gates-corrected.json | supports | Base, worktree, current owner digest, terminal command exits and log digest verified. Structural checks do not substitute for source review. |
+
+## Limits And Additional Notes
+
+- No raw time-course dataset, explicit replication statistics or quantitative feed-phase refinement; no isolated recovered metal.
+- Source #261 remains open for conflicting endpoints and sampling provenance.
+- No supplementary item announced in inspected full original, not an exhaustive absence claim.
+- Bounded exact DOI notice searches are not exhaustive; no claim that all conflicting literature was excluded.
+- Structural gates do not certify science; hosted CI/publication/merge are separate future checks.
+- No taxon or criticality identifier asserted: both accepted experiments are abiotic.
+- Reviewer changed neither resource owner nor canonical history.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T191059Z-waste-multilayer-ceramic-capacitors-round79-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of waste multilayer ceramic capacitors
+started_at: '2026-10-14T18:55:59.376651Z'
+finished_at: '2026-10-14T19:10:59.788822Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer authored stevensite and sauconite only. Resources authored
+    by round68_new_frontier; native inspect preceded assessment. Complete accepted
+    originals and relevant graphics independently read from shared acquisitions, which
+    are not replication. No reviewer owner/history edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified independent acceptance of distinct post-consumer MLCC feed and
+  abiotic comparative leaching observations; source numerical conflicts and unmeasured
+  performance claims remain explicit.
+source:
+  git_revision: e3ac010053a78aad7650bb2608a1f0110e4cd8bf
+  state: working_tree
+  inputs:
+  - path: data/records/waste-multilayer-ceramic-capacitors.yaml
+    sha256: eb82b9234b68ff42b1fbe376d9471c40399a24aeef1e1d5e87d376bead63d5b0
+    role: target
+  - path: history/records/waste-multilayer-ceramic-capacitors/2026-10-14T184942Z-codex-c1879b.yaml
+    sha256: b94bab5bf37a81ce6f63c90d7e74162d457b41e34acb3e603c0d6a55e0d4393b
+    role: context
+scope:
+  description: Whole exact maintained owner, linked history, full primary methods/results/claim-bearing
+    graphics and supplement, identity boundaries, controls, denominators, scale and
+    actual checks.
+  selection: Assigned canonical cmmmech ID; native inspect before judgment. SmCo initial
+    scoped observation preserved.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:waste-multilayer-ceramic-capacitors
+targets:
+- target_id: cmmmech:waste-multilayer-ceramic-capacitors
+  path: data/records/waste-multilayer-ceramic-capacitors.yaml
+  label: Waste Multilayer Ceramic Capacitors
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/waste-multilayer-ceramic-capacitors.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/waste-multilayer-ceramic-capacitors.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Actual terminal execution 2026-10-14T19:03:45.206570Z to 2026-10-14T19:03:48.918344Z,
+    one record and zero failures.
+  target_ids:
+  - cmmmech:waste-multilayer-ceramic-capacitors
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Completed coordinator batch gate 1
+  command: just check
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T19:06:09.205551+00:00 to 2026-10-14T19:10:07.214159+00:00;
+    exact terminal receipt and retained log hash independently verified.
+  target_ids:
+  - cmmmech:waste-multilayer-ceramic-capacitors
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Completed coordinator batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T19:10:07.214183+00:00 to 2026-10-14T19:10:15.684284+00:00;
+    exact terminal receipt and retained log hash independently verified.
+  target_ids:
+  - cmmmech:waste-multilayer-ceramic-capacitors
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch gate 3
+  command: uv run --locked cmmmech validate-history --base e3ac010053a78aad7650bb2608a1f0110e4cd8bf
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T19:10:15.684306+00:00 to 2026-10-14T19:10:21.340376+00:00;
+    exact terminal receipt and retained log hash independently verified.
+  target_ids:
+  - cmmmech:waste-multilayer-ceramic-capacitors
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T19:10:21.340399+00:00 to 2026-10-14T19:10:24.923388+00:00;
+    exact terminal receipt and retained log hash independently verified.
+  target_ids:
+  - cmmmech:waste-multilayer-ceramic-capacitors
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/waste-multilayer-ceramic-capacitors.yaml
+  locator: 'Entire exact maintained owner. Actual local artifact: /private/tmp/CMMMech-expansion-round79-20261014/data/records/waste-multilayer-ceramic-capacitors.yaml'
+  accessed_at: '2026-10-14T19:03:48.919720Z'
+  support: supports
+  summary: All fields read; material boundary and explicit source limits assessed.
+  snapshot_sha256: eb82b9234b68ff42b1fbe376d9471c40399a24aeef1e1d5e87d376bead63d5b0
+- evidence_id: input0
+  kind: record_content
+  reference: history/records/waste-multilayer-ceramic-capacitors/2026-10-14T184942Z-codex-c1879b.yaml
+  locator: 'Exact prior review or canonical history. Actual local artifact: /private/tmp/CMMMech-expansion-round79-20261014/history/records/waste-multilayer-ceramic-capacitors/2026-10-14T184942Z-codex-c1879b.yaml'
+  accessed_at: '2026-10-14T19:03:48.919918Z'
+  support: supports
+  summary: Actual actor, event, target and scope checked; append-only provenance retained.
+  snapshot_sha256: b94bab5bf37a81ce6f63c90d7e74162d457b41e34acb3e603c0d6a55e0d4393b
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round79-resource-reviews/waste-multilayer-ceramic-capacitors-named.json
+  locator: 'Actual command/interval/log digest. Actual local artifact: /private/tmp/cmm-round79-resource-reviews/waste-multilayer-ceramic-capacitors-named.json'
+  accessed_at: '2026-10-14T19:03:48.920060Z'
+  support: supports
+  summary: One record passed, zero failures.
+  snapshot_sha256: f6ff2f9fc34ec1cc7ecd6d488d2807e1ee36d569ccbc7a4cdb17c952f0f82a52
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round79-resource-reviews/dedup.txt
+  locator: 'rg --no-ignore --hidden --follow in current/main data/records research
+    reviews history and frontier raw textual artifacts. Actual local artifact: /private/tmp/cmm-round79-resource-reviews/dedup.txt'
+  accessed_at: '2026-10-14T19:03:48.920211Z'
+  support: context_only
+  summary: Bounded followed hidden/ignored identity/DOI search; no global absence
+    claim.
+  snapshot_sha256: c5dbd7dc3446a8f6990bd0bbd4ea61f6bf3ed4c008a20514c4ce483da3d9e204
+  search_scope: 'rg --no-ignore --hidden --follow in current/main data/records research
+    reviews history and frontier raw textual artifacts. Actual local artifact: /private/tmp/cmm-round79-resource-reviews/dedup.txt'
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round79-resource-reviews/notice-search.json
+  locator: 'Two exact DOI correction/retraction/erratum queries, first returned sets
+    on2026-10-14. Actual local artifact: /private/tmp/cmm-round79-resource-reviews/notice-search.json'
+  accessed_at: '2026-10-14T19:03:48.920492Z'
+  support: context_only
+  summary: No applicable notice in bounded results; source contradictions not resolved
+    by presumed errata.
+  snapshot_sha256: 04dc2abbd5281779960a2cc69f7c82f4f2dcb4f0dfdaf592d46f0cbfa23abafa
+  search_scope: 'Two exact DOI correction/retraction/erratum queries, first returned
+    sets on2026-10-14. Actual local artifact: /private/tmp/cmm-round79-resource-reviews/notice-search.json'
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/molecules30214254
+  locator: 'Complete18-page original, all text and Figures1-5/Tables1-4 inspected.
+    Actual local artifact: /private/tmp/cmm-round79-frontier-research/mlcc2025.pdf'
+  accessed_at: '2026-10-14T19:03:48.920638Z'
+  support: supports
+  summary: Post-consumer components, chemical recipes and broad comparative trends
+    supported; contradictory endpoints/sampling retained.
+  snapshot_sha256: 59629d1a3db2aa5a045921c4e178aeb9f16774fcf221efea5142106cf2b069b9
+- evidence_id: xml
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC12609714/
+  locator: 'Full original XML, data/supplement declarations. Actual local artifact:
+    /private/tmp/cmm-round79-frontier-research/mlcc2025.xml'
+  accessed_at: '2026-10-14T19:03:48.925777Z'
+  support: supports
+  summary: No separate SI announced in inspected article; molecular explanations and
+    viscosity are not measured here.
+  snapshot_sha256: 330bd265919c9df783547a603941af99f7b4cffdb0c981a0e065edaa82b0e2d4
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round79-final-gates-corrected.json
+  locator: 'All FOUR completed corrected-batch commands; log /private/tmp/cmm-round79-final-gates-corrected.log
+    SHA256 0b57d41c3d48ff58913dbbdd8a8ee381fe01ab9a535c52c3c5c958f1a3e9d29f. Actual
+    local artifact: /private/tmp/cmm-round79-final-gates-corrected.json'
+  accessed_at: '2026-10-14T19:10:59.788822Z'
+  support: supports
+  summary: Base, worktree, current owner digest, terminal command exits and log digest
+    verified. Structural checks do not substitute for source review.
+  snapshot_sha256: c6d4ecad7a9199dce703b39ec9ce471779c814ca81f4c2267a46100d2bfff8b7
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Distinct post-consumer component resource
+  outcome: supported
+  summary: Twenty computers, heat-gun separation, photos and mixed composition support
+    MLCC feed distinct from wholeboards/tantalumcapacitors/elements; no universal
+    composition or criticality inherited.
+  evidence_ids:
+  - record
+  - primary
+  target_ids:
+  - cmmmech:waste-multilayer-ceramic-capacitors
+- assessment_id: conditions
+  area: evidence
+  topic: Abiotic solvent comparison
+  outcome: supported
+  summary: Table4 recipes and0.2g/10g,90C,400rpm,24h verified. AAS measures dissolved
+    metals; loading not converted to w/v. Missing replication/controls/particle size
+    remain explicit.
+  evidence_ids:
+  - record
+  - primary
+  target_ids:
+  - cmmmech:waste-multilayer-ceramic-capacitors
+- assessment_id: outcomes
+  area: quantity
+  topic: Qualitative trends versus source conflicts
+  outcome: supported
+  summary: 'Figures1-4 supportCA/ternary greaterCuZn thanGLY andCA strongestNi. Ni25/6
+    versus68/16,Fe60 versus68 and16h sampling conflict retained. No reconciled percent
+    or isolated-metal yield; source #261 remains open.'
+  evidence_ids:
+  - record
+  - primary
+  target_ids:
+  - cmmmech:waste-multilayer-ceramic-capacitors
+- assessment_id: mechanism
+  area: scope
+  topic: Proposed chemistry and scale
+  outcome: supported
+  summary: Table3 viscosity is estimated/literature-based; §3.5 calls for residue/speciation/reuse
+    work. Complexation/mass-transfer explanations not measured causal pathways; energy/toxicity/reuse/industrial
+    claims withheld.
+  evidence_ids:
+  - record
+  - primary
+  - xml
+  target_ids:
+  - cmmmech:waste-multilayer-ceramic-capacitors
+findings: []
+actions: []
+limitations:
+- No raw time-course dataset, explicit replication statistics or quantitative feed-phase
+  refinement; no isolated recovered metal.
+- 'Source #261 remains open for conflicting endpoints and sampling provenance.'
+- No supplementary item announced in inspected full original, not an exhaustive absence
+  claim.
+- Bounded exact DOI notice searches are not exhaustive; no claim that all conflicting
+  literature was excluded.
+- Structural gates do not certify science; hosted CI/publication/merge are separate
+  future checks.
+notes:
+- 'No taxon or criticality identifier asserted: both accepted experiments are abiotic.'
+- Reviewer changed neither resource owner nor canonical history.
+```
