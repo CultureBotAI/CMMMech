@@ -1,0 +1,103 @@
+id: cmmmech:realgar
+name: Realgar
+material_kind: mineral
+description: Realgar is the monoclinic arsenic sulfide mineral, given as AsS in
+  the September 2026 IMA list and represented molecularly as As4S4 in the selected
+  primary study. The IMA entry is grandfathered, with original-description year
+  1747. It is distinct from elemental arsenic, orpiment, amorphous arsenic sulfides
+  and other As4S4 polymorphs. No criticality designation is inherited from arsenic.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 183,
+    Realgar row; page 1 column definitions. Retained original rechecked.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: handbook_realgar
+  title: Handbook of Mineralogy. Realgar, version 1 (2001-2005), one-page
+    species entry with monoclinic cell and X-ray powder data.
+  url: https://handbookofmineralogy.org/pdfs/realgar.pdf
+  accessed_on: '2026-10-14'
+- id: chen2012
+  title: Chen, Yan, Wang, Li and Li (2012). Surface alteration of realgar
+    (As4S4) by Acidithiobacillus ferrooxidans. International Microbiology 15,
+    9-15. Complete original; methods page 10, results pages 11-14,
+    Figures 1-3 and Table 1.
+  url: https://doi.org/10.2436/20.1501.01.154
+  accessed_on: '2026-10-14'
+- id: ncbi_ferrooxidans
+  title: NCBI Taxonomy 920. Acidithiobacillus ferrooxidans, species entry;
+    not an identifier for the experimental strain BY-3.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: by3_realgar_culture_leaching
+  name: Culture-associated realgar alteration and transient arsenic mobilization
+  process: bioleaching
+  microbial: true
+  organisms:
+  - id: NCBITaxon:920
+    label: Acidithiobacillus ferrooxidans
+  description: Living Acidithiobacillus ferrooxidans BY-3 cultures increased the
+    reported peak aqueous arsenic concentration relative to a sterile control
+    during laboratory leaching of a realgar-dominated natural powder with added
+    ferrous sulfate. Surface alteration and changed residual mineral phases were
+    observed. The later decline in aqueous arsenic, including concentrations
+    below the sterile control, limits any claim of sustained extraction.
+    Ferric-mediated dissolution and subsequent arsenic retention by secondary
+    solids are interpretations, not separately isolated molecular pathways.
+  context: The source assigns BY-3 to an abandoned Baiyin, Gansu copper mine
+    isolate and reports collection designation CCTCC-M203071; that designation is
+    retained as a source statement, not an independently resolved strain ID.
+    Inoculum volume, starting cell density and washed-cell status are not given
+    in this article. Shimen, Hunan realgar was purified by a cited traditional
+    method and crushed to 200 mesh, approximately 75 plus or minus 10 micrometres.
+    Methods state 99.01% purity, whereas results and XRD assign 97 wt% realgar
+    and 3 wt% arsenolite; these statements are not silently reconciled. Flasks
+    of 250 mL contained 100 mL 9K medium, 0.5 g mineral and 44.69 g/L
+    FeSO4.7H2O, initially pH 1.7 with sulfuric acid, at 30 degrees C and 150 rpm
+    for 30 days. The basal medium per litre contained 3.0 g (NH4)2SO4, 0.1 g KCl,
+    0.5 g K2HPO4, 0.5 g MgSO4.7H2O and 0.01 g Ca(NO3)2. A sterile uninoculated
+    flask was included under the same stated conditions; experiments were at
+    least duplicated and reported as averages. No pH-matched time-course control,
+    cell-contact separation or arsenolite-only control is reported. This is a
+    laboratory mixed-mineral-feed observation, not an isolated arsenic-product
+    yield or industrial deployment.
+  evidence:
+  - source_ref: chen2012
+    supports: support
+    explanation: Methods page 10 and results page 13 report soluble arsenic by
+      ICP-AES. The culture reached 121.95 mg/L on day 15 compared with 16.44 mg/L
+      in the sterile control, described as a 7.4-fold difference. Subsequently
+      the culture concentration declined and by day 25 was lower than the
+      control. These are the authors' solution concentrations, not a cumulative
+      extraction fraction, mineral-specific arsenic mass balance or isolated
+      recovery. The article supplies no concentration-time figure, numerical
+      uncertainty for these values, or explicit liquid filtration specification.
+  - source_ref: chen2012
+    supports: support
+    explanation: Figures 1-3 and pages 11-14 document cracks or pits after
+      extended culture exposure, starting-material realgar and arsenolite by
+      XRD, and a realgar-associated Raman spectrum. Figure 2 and its discussion
+      assign realgar, dimorphite, magnetite and jarosite to the bioleached
+      residue. The reported 43, 23, 6 and 28 wt% are relative residual-solid
+      phase assignments, not absolute product yields. Raman does not support
+      the authors' tested pararealgar alternative; this does not establish the
+      absence of every possible minor phase.
+  - source_ref: chen2012
+    supports: partial
+    explanation: A sterile control supports a culture-associated difference,
+      but SEM attachment/surface changes do not isolate direct enzymatic attack
+      from chemically mediated dissolution. Added medium iron and the arsenolite
+      impurity prevent attributing all aqueous arsenic specifically to realgar
+      or all secondary iron to the mineral. The proposed adsorption or
+      coprecipitation explanation for declining aqueous arsenic is not tested
+      with a closed arsenic balance or solid-phase arsenic speciation. Table 1
+      converts As/S ratios into normalized formulas inconsistently with its atom
+      percentages; those formulas are not adopted as mineral stoichiometries.
+curation_history:
+- timestamp: '2026-10-14T13:09:55.722574+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created phase-grounded realgar record with sterile-control comparison, purity conflict, arsenolite impurity and later solution decline retained.
+history_refs:
+- history/records/realgar/2026-10-14T130931Z-codex-1ce5df.yaml

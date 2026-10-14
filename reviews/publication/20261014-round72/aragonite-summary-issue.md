@@ -1,0 +1,5 @@
+Independent review of the round72 README found one minor scope error. The aragonite row describes its boundary as “Mixed products, source condition conflicts and incomplete causal controls constrain attribution”. The documented Han2022 phase/run/recipe conflicts belong to the monohydrocalcite assessment; the aragonite owner’s reviewed evidence does not establish that same source-condition conflict.
+
+Correct the aragonite README boundary to: “Mixed products, abiotic precipitation and incomplete causal controls constrain attribution”. Keep the scientific owners and their accepted review bundles unchanged. Independently review the corrected row and preserve the initial finding plus an explicit successor disposition.
+
+Initial document review: `/private/tmp/cmm-round72-summary-peer-20261014T132642Z-initial.{json,md}`. Both observations will be retained in the round72 publication evidence directory. This is a documentation-attribution correction, not a defect in the aragonite scientific record.

@@ -1,0 +1,112 @@
+id: cmmmech:orpiment
+name: Orpiment
+material_kind: mineral
+description: Orpiment is the monoclinic As2S3 mineral species, grandfathered in
+  the September 2026 IMA list, whose original-description year is unspecified.
+  It is distinct from elemental arsenic, realgar and amorphous As2S3. The
+  observation below concerns an XRD-assigned secondary component of arsenopyrite
+  leaching residues, not an isolated orpiment feed or recovered product.
+  No criticality designation is inherited from arsenic.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 160,
+    Orpiment row; page 1 column definitions. Retained original rechecked.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: handbook_orpiment
+  title: Handbook of Mineralogy. Orpiment, version 1 (2001-2005), one-page
+    species entry with monoclinic cell and X-ray powder data.
+  url: https://handbookofmineralogy.org/pdfs/orpiment.pdf
+  accessed_on: '2026-10-14'
+- id: liu2019
+  title: Liu, Li, Zhang, Yang, Xu and Jiang (2019). Formation Process of the
+    Passivating Products from Arsenopyrite Bioleaching by Acidithiobacillus
+    ferrooxidans in 9K Culture Medium. Metals 9, 1320. Complete original,
+    sections 3 and 4, Figures 1-6, Tables 1-2 and Appendix A; previously
+    acquired publisher PDF and XML rechecked.
+  url: https://doi.org/10.3390/met9121320
+  accessed_on: '2026-10-14'
+- id: newman1997
+  title: Newman, Beveridge and Morel (1997). Precipitation of Arsenic
+    Trisulfide by Desulfotomaculum auripigmentum. Applied and Environmental
+    Microbiology 63, 2022-2028. Complete author-deposited original;
+    Identification of precipitate, page 2023, and Figure 2 establish
+    amorphous-product scope rather than crystalline orpiment.
+  url: https://doi.org/10.1128/aem.63.5.2022-2028.1997
+  accessed_on: '2026-10-14'
+- id: ncbi_ferrooxidans
+  title: NCBI Taxonomy 920. Acidithiobacillus ferrooxidans, species-level entry;
+    no experimental strain identifier is supplied by Liu et al.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: arsenopyrite_culture_secondary_orpiment
+  name: Orpiment-assigned secondary phase during arsenopyrite culture leaching
+  process: redox_transformation
+  microbial: true
+  organisms:
+  - id: NCBITaxon:920
+    label: Acidithiobacillus ferrooxidans
+  description: During laboratory arsenopyrite leaching in Acidithiobacillus
+    ferrooxidans culture, the authors assigned orpiment among the crystalline
+    components of washed residual solids using XRD and Rietveld phase analysis.
+    They proposed formation through ferric-mediated arsenopyrite oxidation in
+    a system with biological iron oxidation. This is a culture-associated
+    secondary-phase observation with an inferred chemical pathway, not a
+    demonstration that cells are necessary for orpiment formation. It is the
+    same Liu 2019 experiment curated for the distinct arsenopyrite owner;
+    treating orpiment as its own material does not add an independent experiment.
+  context: The source used high-purity natural Yaogangxian, Hunan arsenopyrite,
+    XRF composition Fe1.00As0.99S0.97 with trace Si, Co and Ni. Wet-milled particles
+    were over 90% below 74 micrometres and loaded at 10 g/L. Cultures in 250 mL
+    flasks contained 100 mL 9K medium plus 15 mL inoculum, at 30 degrees C and
+    160 rpm, initially pH 1.8 adjusted with approximately 3 M sulfuric acid.
+    Medium per litre contained 44.8 g FeSO4.7H2O, 3.0 g (NH4)2SO4,
+    0.50 g K2HPO4.3H2O, 0.1 g KCl, 0.5 g MgSO4.7H2O and 0.01 g Ca(NO3)2.4H2O.
+    Bacteria had been acclimated with arsenopyrite for three months, but strain
+    accession and initial cell density are unspecified. Solids were filtered,
+    washed at least ten times with deionized water and vacuum-dried overnight
+    at 35 degrees C. Separate approximately 15 by 15 by 5 mm cubes were polished
+    and cleaned with acid, methanol and water for microscopy, then fixed,
+    rinsed and ethanol-dehydrated. The paper does not specify replicate count
+    or error-bar definition, matched sterile or matched-pH kinetic controls,
+    or a selective film-removal test. No orpiment-specific isolated yield,
+    arsenic mass balance or industrial deployment is established.
+  evidence:
+  - source_ref: liu2019
+    supports: support
+    explanation: Sections 3.2-3.3 and 4.1.2, Figure 2a-b, identify orpiment
+      alongside realgar, sulfur, jarosite and residual arsenopyrite in a time
+      series including days 1, 3, 5, 9 and 19. The source describes early
+      orpiment formation and declining relative content as leaching progresses.
+      The normalized solid-phase proportions do not quantify absolute orpiment
+      production or destruction. Source phase assignment is based on the
+      diffraction analysis, not inferred here from As2S3 formula or EDS alone.
+  - source_ref: liu2019
+    supports: partial
+    explanation: Figures 4-5 and Table 1 show a dense As/S-rich early surface
+      film on separate cubes, with cracks attributed to drying, and a later
+      porous jarosite-associated overlayer. The proposed orpiment-containing
+      passivating film combines particle XRD with cube morphology/EDS; it is not
+      an orpiment-specific causal intervention. Figure 6 and Table 2 are a
+      proposed pathway and thermodynamic reactions, not directly measured
+      reaction fluxes. The 25 degrees C equilibrium calculation differs from
+      the 30 degrees C culture and the authors acknowledge disagreement with
+      early-stage phase observations. Neither a unique passivating role nor a
+      microbial increment over abiotic orpiment formation is isolated.
+  - source_ref: newman1997
+    supports: context_only
+    explanation: The distinct Desulfotomaculum auripigmentum precipitation
+      experiment is not accepted as crystalline orpiment evidence. Page 2023
+      explicitly reports electron diffraction showing an amorphous precipitate;
+      elemental proportions and Figure 2 support As2S3 composition without
+      establishing the orpiment crystal structure. Its microbial precipitation
+      and aqueous arsenic-removal measurements are not transferred to this
+      mineral-specific mechanism.
+curation_history:
+- timestamp: '2026-10-14T13:09:55.723654+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created orpiment owner for shared-study secondary-phase evidence, retaining missing controls and excluding amorphous bacterial As2S3 as crystal-structure proof.
+history_refs:
+- history/records/orpiment/2026-10-14T130937Z-codex-0f01bd.yaml

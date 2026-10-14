@@ -1,0 +1,417 @@
+schema_version: 1.0.0
+review_id: 20261014T132400Z-monohydrocalcite-round72-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of monohydrocalcite
+started_at: '2026-10-14T13:16:56.854077Z'
+finished_at: '2026-10-14T13:24:00.738181Z'
+reviewer:
+  identity: codex /root/round68_iron_sulfides
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Phosphates agent authored this owner/history. Reviewer authored
+    only realgar/orpiment this round and did not edit the reviewed owners. Shared
+    originals independently read, graphics checked, identifiers and current notices
+    assessed.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The qualified mineral phase record is supported by original evidence. Source
+  and control limitations are preserved; no corrective findings. Named and final batch
+  checks passed.
+source:
+  git_revision: a2f08edab1307aba4281ce1e2a54d84bca88a889
+  state: working_tree
+  inputs:
+  - path: data/records/monohydrocalcite.yaml
+    sha256: 9ee8f966b7703eab13d7e191421a61353f0f20c22ae7f2e69c10f79bfebee8f9
+    role: target
+  - path: history/records/monohydrocalcite/2026-10-14T131520Z-codex-c26f65.yaml
+    sha256: 68ec9623ebe5583fa39812d568fd878f7f8edc48961bbbe6d1fa43a34b76f7db
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Complete maintained owner and linked canonical CREATE, independently
+    reassessed against full primary evidence and authority.
+  selection: Assigned frozen owner; native inspection before assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:monohydrocalcite
+targets:
+- target_id: cmmmech:monohydrocalcite
+  path: data/records/monohydrocalcite.yaml
+  label: Monohydrocalcite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/monohydrocalcite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Named strict validation
+  command: uv run --locked cmmmech validate data/records/aragonite.yaml data/records/monohydrocalcite.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Reviewer independently executed:2 checked, 0 failed.
+  target_ids:
+  - cmmmech:monohydrocalcite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch
+  name: Completed batch checks
+  command: just check; uv run --locked cmmmech validate --require-records; uv run
+    --locked cmmmech validate-history --base a2f08edab1307aba4281ce1e2a54d84bca88a889
+  status: passed
+  required: true
+  summary: Coordinator executed; reviewer verified terminal receipt/log SHA and all
+    exit codes.317 passed, 3 skipped; 341 records, 0 failures; 394 histories, 0 errors.
+  target_ids:
+  - cmmmech:monohydrocalcite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batch_log
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/monohydrocalcite.yaml
+  locator: Entire frozen maintained record
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: supports
+  summary: Every scientific and provenance field independently checked against original
+    evidence.
+  snapshot_sha256: 9ee8f966b7703eab13d7e191421a61353f0f20c22ae7f2e69c10f79bfebee8f9
+- evidence_id: history
+  kind: record_content
+  reference: history/records/monohydrocalcite/2026-10-14T131520Z-codex-c26f65.yaml
+  locator: Entire CREATE sidecar and distinct inline history
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: supports
+  summary: Actual actor, timestamp, target and stated curation scope agree.
+  snapshot_sha256: 68ec9623ebe5583fa39812d568fd878f7f8edc48961bbbe6d1fa43a34b76f7db
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1021/acsomega.2c02443
+  locator: Complete main text, methods, results, discussion, tables and figure captions;
+    complete PMC9435042 JATS
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: supports
+  summary: Independent full-text assessment supports narrow phase observations and
+    preserved causal/control limitations.
+  snapshot_sha256: 5246cb325146aaadfec99a84fa12280559bfdbabab8569c07f6860fbb9fccf74
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions pp.1-2 and Monohydrocalcite p.147
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: supports
+  summary: Correct mineral identity and grandfathered status; original-description
+    year is not an approval accession.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/monohydrocalcite.pdf
+  locator: Full one-page original identity sheet
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: supports
+  summary: Formula and mineral identity are distinct from other carbonate species
+    and elemental calcium.
+  snapshot_sha256: a7ac7c2db0783534f50070ca7dba56b630fa33cd6318fb8c4dad8640f6a3ee31
+- evidence_id: taxon
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1402,2745
+  locator: 'Current NCBI taxon XML: 1402 species and 2745 genus'
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: supports
+  summary: Identifier ranks and labels verified; taxonomy does not authenticate a
+    laboratory stock.
+  snapshot_sha256: 299ffaa876b8e90b7deefd64f4342fbcc696155fc18a997a1fc195ecbd0f3793
+- evidence_id: sequence
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/ON000249.1
+  locator: NCBI GenBank full XML, definition and source qualifiers
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: supports
+  summary: Partial 16S source designation checked; uncultured Halomonas clone WMS2,
+    environmental_sample, taxon 173971; paper species assignment is not authenticated.
+  snapshot_sha256: 249c254a877d150a1e09d21079958f2babfb90377ff399fb25b9b0c7fd57fb5b
+- evidence_id: binding
+  kind: validation
+  reference: /private/tmp/cmm-round72-carbonates-independent/source-hashes.json
+  locator: Actual nonempty artifacts, byte sizes and SHA256; failed HTML image routes
+    explicitly excluded
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: context_only
+  summary: Primary, SI and original graphics bound to actual successful artifacts,
+    independently examined.
+  snapshot_sha256: 7fc7a7cd327f3657b1d2ad46950f8d0edc925b05f0a38fdb94926fc5b324b625
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round72-carbonates-independent/dedup.json
+  locator: Main/worktree scientific trees plus four current/referenced raw roots
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: context_only
+  summary: Ignored and hidden files included and symlinks followed. Related carbonate
+    studies are not independent replication; no global absence claim.
+  snapshot_sha256: bf04900b32e1274b00a8c4ba79a1bd68c5fc95fc04bc799b6347df7a88a60952
+  search_scope: Exact command and every root retained in JSON; record/research/reviews/history
+    in both checkouts and selected referenced raw roots.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round72-carbonates-independent/search.json
+  locator: 2026-10-14 exact DOI correction/retraction queries and organism/phase contradiction
+    searches
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: context_only
+  summary: No applicable notice surfaced in returned windows. This is bounded search
+    evidence, not proof that no notice or conflicting study exists.
+  snapshot_sha256: 00c6d326d7565cdcc4bca97515b3726789a7cce1bf36a87d5e8b80ec4fcd0522
+  search_scope: Four exact queries retained, no domain/date restriction; unrelated
+    taxon/application hits excluded.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round72-carbonates-independent/named.log
+  locator: Reviewer independently executed named strict validation
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: supports
+  summary: Two reviewed records checked, zero failed.
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round72-final-gates.json
+  locator: Coordinator terminal receipt, exact base and commands
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: supports
+  summary: All three actual commands exited 0; shared batch317passed/3skipped,341records/0fail,394histories/0errors.
+    Reviewer verified receipt and log bytes.
+  snapshot_sha256: b5b2d551ac899632844d0d3a3f9dbc95897408e73a7ccec69513cdb22a1352e7
+- evidence_id: batch_log
+  kind: validation
+  reference: /private/tmp/cmm-round72-final-gates.log
+  locator: Complete terminal log
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: supports
+  summary: Exact log SHA matches receipt; structural tests do not establish scientific
+    truth.
+  snapshot_sha256: 55435f8c2e7b77b442f38fee5e21be9920263c32956357e1e1482557ca332c3c
+- evidence_id: si
+  kind: primary_source
+  reference: https://doi.org/10.1021/acsomega.2c02443.s001
+  locator: Original 19-page ao2c02443_si_001.pdf; all pages,TablesS1-S5,FiguresS1-S12
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: supports
+  summary: Actual complete PDF checked. FigureS6 d2/e1/e2 support sole fitted MHC;
+    d3/e3 mixtures. FigureS4 illustrates controls only through14 days.
+  snapshot_sha256: 4a29f04176de8a460244a24bd371d6d5af5c21df8d85079c087161b0be81fa66
+- evidence_id: fig1
+  kind: primary_source
+  reference: https://doi.org/10.1021/acsomega.2c02443
+  locator: Original fig1-0.jpg; corresponding main figure and caption
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: supports
+  summary: Actual JPEG visually inspected; failed HTML alternatives excluded. Phase,thermal
+    and localization observations retained at stated scope.
+  snapshot_sha256: 5b714bdcda85d1992433e41b04d254c61bcb4e247a1415c1f84d203cb49c29c8
+- evidence_id: fig10
+  kind: primary_source
+  reference: https://doi.org/10.1021/acsomega.2c02443
+  locator: Original fig10-1.jpg; corresponding main figure and caption
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: supports
+  summary: Actual JPEG visually inspected; failed HTML alternatives excluded. Phase,thermal
+    and localization observations retained at stated scope.
+  snapshot_sha256: ec21cd9215db7d98d2dc807468839d0aecbb69259870251cb4ac84a805ac6b88
+- evidence_id: fig2
+  kind: primary_source
+  reference: https://doi.org/10.1021/acsomega.2c02443
+  locator: Original fig2-0.jpg; corresponding main figure and caption
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: supports
+  summary: Actual JPEG visually inspected; failed HTML alternatives excluded. Phase,thermal
+    and localization observations retained at stated scope.
+  snapshot_sha256: 2f1f7e96a9ab7323f2474044e71ebb3113801bdcc3b6ddde50470904944610c0
+- evidence_id: fig3
+  kind: primary_source
+  reference: https://doi.org/10.1021/acsomega.2c02443
+  locator: Original fig3-1.jpg; corresponding main figure and caption
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: supports
+  summary: Actual JPEG visually inspected; failed HTML alternatives excluded. Phase,thermal
+    and localization observations retained at stated scope.
+  snapshot_sha256: 5b6fda2c24efef36542303be45e1ffb100177e63a6e5dafdc346a20a3d66ff0d
+- evidence_id: fig4
+  kind: primary_source
+  reference: https://doi.org/10.1021/acsomega.2c02443
+  locator: Original fig4-1.jpg; corresponding main figure and caption
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: supports
+  summary: Actual JPEG visually inspected; failed HTML alternatives excluded. Phase,thermal
+    and localization observations retained at stated scope.
+  snapshot_sha256: a7a4cd5fd2f856f250cf428945c40c6fdce141e63062d748c47e9a8e5ab67ea1
+- evidence_id: fig5
+  kind: primary_source
+  reference: https://doi.org/10.1021/acsomega.2c02443
+  locator: Original fig5-1.jpg; corresponding main figure and caption
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: supports
+  summary: Actual JPEG visually inspected; failed HTML alternatives excluded. Phase,thermal
+    and localization observations retained at stated scope.
+  snapshot_sha256: 1633ee81fa860bf0bb9a496733f89aaf2bc5bd84696e27c484ecd2e532e0a348
+- evidence_id: fig6
+  kind: primary_source
+  reference: https://doi.org/10.1021/acsomega.2c02443
+  locator: Original fig6-0.jpg; corresponding main figure and caption
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: supports
+  summary: Actual JPEG visually inspected; failed HTML alternatives excluded. Phase,thermal
+    and localization observations retained at stated scope.
+  snapshot_sha256: 551c7ba0dddcf14559d80ea5f63db3afc981779afe4cfe1bddec3d88f521b1f7
+- evidence_id: fig7
+  kind: primary_source
+  reference: https://doi.org/10.1021/acsomega.2c02443
+  locator: Original fig7-0.jpg; corresponding main figure and caption
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: supports
+  summary: Actual JPEG visually inspected; failed HTML alternatives excluded. Phase,thermal
+    and localization observations retained at stated scope.
+  snapshot_sha256: b23fbcba24be56edbfe3924ad9daacbecd8619e99e34c5e94efbd9672ea87c08
+- evidence_id: fig8
+  kind: primary_source
+  reference: https://doi.org/10.1021/acsomega.2c02443
+  locator: Original fig8-1.jpg; corresponding main figure and caption
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: supports
+  summary: Actual JPEG visually inspected; failed HTML alternatives excluded. Phase,thermal
+    and localization observations retained at stated scope.
+  snapshot_sha256: aa195db742497c4000587eadddd5e05fff8743b7e41d8acadc31d8e97a3e0789
+- evidence_id: fig9
+  kind: primary_source
+  reference: https://doi.org/10.1021/acsomega.2c02443
+  locator: Original fig9-1.jpg; corresponding main figure and caption
+  accessed_at: '2026-10-14T13:23:10.846935Z'
+  support: supports
+  summary: Actual JPEG visually inspected; failed HTML alternatives excluded. Phase,thermal
+    and localization observations retained at stated scope.
+  snapshot_sha256: 39feb2669e21811a9d8a34d5ed02774a2d834e3e8c0c97d0d105718a07663d50
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Hydrated mineral identity
+  outcome: supported
+  target_ids:
+  - cmmmech:monohydrocalcite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  summary: CaCO3·H2O is distinct from anhydrous calcium carbonates,magnesium carbonates
+    and elemental calcium. No inherited criticality.
+- assessment_id: organism
+  area: grounding
+  topic: WMS2 accession conflict
+  outcome: supported
+  target_ids:
+  - cmmmech:monohydrocalcite
+  evidence_ids:
+  - record
+  - primary
+  - sequence
+  - taxon
+  summary: Current ON000249.1 explicitly says uncultured Halomonas clone WMS2/environmental
+    sample rather than cultured H. utahensis. Genus-only contextual mapping and source-designated
+    phenotype preserve this conflict.
+- assessment_id: conditions
+  area: evidence
+  topic: Exact mineralization recipe and controls
+  outcome: supported
+  target_ids:
+  - cmmmech:monohydrocalcite
+  evidence_ids:
+  - primary
+  - record
+  summary: Section5.3 confirms stated mineralization medium, nominal concentrations,added
+    carbonates,pH7,1% unspecified-basis inoculum,sterile-water controls and triplicate
+    samples. Growth temperature/agitation are not transferred. Missing harvest wash/dry
+    and pH-matched,killed-cell or isolated-enzyme controls remain disclosed.
+- assessment_id: phase
+  area: evidence
+  topic: Supported ratio7/9 phases
+  outcome: supported
+  target_ids:
+  - cmmmech:monohydrocalcite
+  evidence_ids:
+  - primary
+  - fig2
+  - si
+  summary: Original Figure2,Table1 and SI FigureS6 d2/e1/e2 agree on sole fitted MHC
+    at7/day27 and9/day14,27;d3/e3 show mixtures at140days. These are exsitu populations,not
+    tracked crystal conversion or pure product mass yield.
+- assessment_id: conflicts
+  area: evidence
+  topic: Preserved recipe and morphology contradictions
+  outcome: supported
+  target_ids:
+  - cmmmech:monohydrocalcite
+  evidence_ids:
+  - primary
+  - fig2
+  - fig4
+  - si
+  summary: LowestMg0.01M conflicts with ratio0 atCa0.01M. Section2.3 ratio5/day140
+    MHC morphology conflicts with Table1,Fig2 andS6c3 aragonite/HM; disputed arm is
+    excluded. SI control photographs stop14 days; broad main control claim has limited
+    illustration.
+- assessment_id: causality
+  area: scope
+  topic: Molecular and intracellular interpretations
+  outcome: supported
+  target_ids:
+  - cmmmech:monohydrocalcite
+  evidence_ids:
+  - primary
+  - fig1
+  - fig8
+  - fig9
+  - record
+  summary: Growth/ammonia/CA assays correlate with mineralization without proving
+    component necessity. Figure9 selected diffraction is author-interpreted cell-associated/intracellular
+    MHC; it does not prove transport or authenticate strain. Thermal stability or
+    time series do not establish universal transience. Laboratory precipitation is
+    not industrial recovery.
+- assessment_id: provenance
+  area: provenance
+  topic: Exact owner, history and source binding
+  outcome: supported
+  target_ids:
+  - cmmmech:monohydrocalcite
+  evidence_ids:
+  - record
+  - history
+  - binding
+  - dedup
+  - named
+  - batch
+  - batch_log
+  summary: Native inspection preceded judgment; exact owner/history/schema hashes
+    remain unchanged. Canonical CREATE and distinct inline event are accurately attributed.
+    Final batch gates actually passed and their log is bound.
+findings: []
+actions: []
+limitations:
+- No raw diffraction refit or laboratory replication; phase claims remain author assignments
+  among fitted crystalline phases.
+- 'WMS2 species/cultured-stock authentication, lowest-Mg recipe and ratio5/day140
+  phase contradictions remain unresolved. Source follow-up issue #233 is open; no
+  corrective record defect follows from accurately preserving these uncertainties.'
+- Mineralization temperature/agitation and detailed solid washing/drying are not supplied
+  in the relevant methods; control pictures end14 days.
+- Shared primary downloads were independently examined; no primary reacquisition performed.

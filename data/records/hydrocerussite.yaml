@@ -1,0 +1,108 @@
+id: cmmmech:hydrocerussite
+name: Hydrocerussite
+material_kind: mineral
+description: Hydrocerussite is the Pb3(CO3)2(OH)2 mineral species, listed as grandfathered with original-description
+  year 1877 in the September 2026 IMA master list. It is distinct from cerussite, pyromorphite, elemental
+  lead and lead-bearing wastes. The accepted experiment concerns a hydrocerussite-assigned component in
+  processed bacterial-cell products from lead acetate solution, not a pure recovered mineral or an industrial
+  waste assay. The Kato2022 experiment is also contextualized under lead and pyromorphite; these records
+  are not independent replications. No lead-commodity criticality is inherited.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 97, Hydrocerussite row; pages
+    1–2 explain columns, grandfathered status and distribution terms. Reinspected previously acquired
+    official bytes.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: kato2022
+  title: Kato, Y., Kimura, S., Kogure, T. and Suzuki, M. (2022). Deposition of Lead Phosphate by Lead-Tolerant
+    Bacteria Isolated from Fresh Water near an Abandoned Mine. International Journal of Molecular Sciences
+    23(5), 2483. DOI 10.3390/ijms23052483; PMID 35269625; PMC8910126. Complete primary XML, original Figures
+    1–14 and Tables 1–2 inspected.
+  url: https://doi.org/10.3390/ijms23052483
+  accessed_on: '2026-10-14'
+- id: kato2022_si
+  title: Kato et al. (2022), original supplementary archive for DOI 10.3390/ijms23052483. The eight-page
+    ijms-1594131-supplementary.pdf contains Figures S1–S8; S1–S3 are especially relevant to biomass units,
+    sample conditions and solution comparisons. Same experiment, not independent evidence.
+  url: https://mdpi-res.com/d_attachment/ijms/ijms-23-02483/article_deploy/ijms-23-02483-s001.zip
+  accessed_on: '2026-10-14'
+- id: ncbi_pseudomonas
+  title: 'NCBI Taxonomy 286: Pseudomonas, genus. This parent-rank identifier neither identifies KKY-29
+    at strain level nor assigns it to P. koreensis.'
+  url: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/286/dataset_report
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: kky29_associated_carbonate_formation
+  name: Hydrocerussite-assigned formation in KKY-29 cell-associated products
+  process: biomineralization
+  microbial: true
+  description: Laboratory Pseudomonas sp. KKY-29 suspensions exposed to lead acetate produced cell-associated
+    solids whose ex situ powder diffraction was assigned to hydrocerussite together with pyromorphite.
+    This supports qualified culture-associated formation. It does not establish a unique metabolic carbonate
+    source, microbial necessity, hydrocerussite-specific intracellular localization, selective phase yield
+    or isolated lead recovery.
+  context: 'Kato2022 Results 2.1–2.3 and Methods 4.1–4.5: KKY-29 was selected from freshwater isolates
+    collected around abandoned Japanese mines after lead-tolerance and nanoparticle screening. Figure
+    5 and partial 16S comparison place it near P. koreensis; the authors retain Pseudomonas sp., and no
+    stronger strain authentication is adopted. Cells grown in nutrient medium were centrifuged, washed
+    in sterile water and shaken in lead acetate solution for 24 h at 25 degrees C. Results 2.2 selects
+    5.0 mM lead acetate and 1000 mg/L bacterial biomass for further assays; however, the same section
+    and Methods 4.8 also print mg/mL biomass values. SI Figures S2–S3 label biomass in mg/L, while S1
+    labels dry weight in g/mL. These inconsistencies are retained rather than silently repaired. Initial/final
+    pH, shaking speed and the complete synthetic phosphate-medium recipe are not specified for this mineral
+    assay. Powder XRD used freeze-dried cells crushed with a mortar and pestle, so the identified assemblage
+    is a processed sample, without an in situ mineralization time course.'
+  organisms:
+  - id: NCBITaxon:286
+    label: Pseudomonas
+  evidence:
+  - source_ref: kato2022
+    supports: support
+    explanation: Results 2.3 and original Figure 7 show reflections labelled H and compared with calculated
+      hydrocerussite reference peaks, alongside P-labelled pyromorphite reflections. Figure 11 likewise
+      contains hydrocerussite-assigned peaks in processed cell products. The assignment supports a component
+      of a mixed assemblage; no quantitative phase refinement, harvested mineral mass or closed lead balance
+      is supplied.
+  - source_ref: kato2022
+    supports: partial
+    explanation: Results 2.6 assigns phosphate conditions A–D in ascending concentration order, while
+      the Figure 11 caption assigns them in descending order; Figure 10 follows the ascending labels.
+      Results identifies A as pyromorphite and D as hydrocerussite, whereas the Discussion states that
+      phosphorus-free conditions form hydrocerussite and phosphorus-rich conditions form pyromorphite.
+      The original Figure 11 confirms the P/H peak assignments to curves A/D but cannot resolve their
+      conflicting condition labels. No phosphate threshold, optimal condition or direction of phosphate
+      control is adopted.
+  - source_ref: kato2022
+    supports: partial
+    explanation: Figure 6 electron diffraction and the 0.87 nm lattice spacing characterize pyromorphite,
+      not hydrocerussite. Figures 8–9 show sectioned cells with dense particles and membrane-integrity
+      staining interpreted as viability, but do not identify each intracellular particle as hydrocerussite
+      or demonstrate sustained growth or metabolic necessity. Section preparation in Methods 4.7 includes
+      uranyl acetate and lead citrate staining. Respiratory carbonate generation in Discussion/Figure
+      14 remains a proposed pathway; phosphate-gene expression is not direct proof of that carbonate pathway.
+  - source_ref: kato2022_si
+    supports: partial
+    explanation: Original SI Figure S3 includes zero-biomass solution comparisons and shows different
+      remaining supernatant Pb across biomass and lead-dose arms (caption n=3, mean/SD), with little change
+      in the 5 mM arms at 100–500 mg/L. Its caption says the no-metal-solution condition is set to one,
+      although plotted comparison bars are labelled zero biomass; this normalization wording is unresolved.
+      Solution depletion after centrifugation/0.45 micrometre filtration is not a hydrocerussite-specific
+      product yield. No matched sterile or killed-cell diffraction series, phase-resolved mass accounting
+      or control of drying-induced phase changes establishes a unique biological increment in hydrocerussite
+      formation.
+  - source_ref: kato2022
+    supports: partial
+    explanation: The source proposes future bioremediation and metal recovery. The experiments use laboratory
+      lead acetate solution, with no verified industrial deployment, recovered-product purity, long-term
+      stability test or mineral-specific extraction efficiency. The mine-water origin of the isolate does
+      not turn the synthetic-solution assay into a mine-water treatment trial.
+curation_history:
+- timestamp: '2026-10-14T13:10:04.877052+00:00'
+  curator: Codex (GPT-6; codex)
+  action: CREATE
+  summary: Created a distinct hydrocerussite mineral owner from the official species list and complete
+    Kato2022 original text, figures and supplement; retained mixed-phase, unit, phosphate-label, localization,
+    control and recovery limits.
+history_refs:
+- history/records/hydrocerussite/2026-10-14T131007Z-codex-5da18a.yaml

@@ -1,0 +1,570 @@
+# Independent scientific review of hydrocerussite
+
+- Review: 20261014T132400Z-hydrocerussite-round72-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T13:14:09.107570Z
+- Finished UTC: 2026-10-14T13:24:00.738181Z
+- Reviewer: codex /root/round68_iron_sulfides (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The qualified hydrocerussite component in processed KKY-29 products is supported. Source units and phosphate labels remain contradictory; neither an exclusive biological cause nor isolated recovery is established. No corrective findings. Named and actual final batch checks passed.
+
+## Scope And Provenance
+
+Full maintained owner and linked CREATE; independent original-source scientific reassessment.
+
+Selection: Assigned frozen owner; native inspect before judgment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base a2f08edab1307aba4281ce1e2a54d84bca88a889.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:hydrocerussite | data/records/hydrocerussite.yaml | maintained | Hydrocerussite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Named strict validation | passed | True | cmmmech:hydrocerussite | Reviewer executed terminal session 67632; 1 record, 0 failed. |
+| Completed batch checks | passed | True | cmmmech:hydrocerussite | Coordinator executed; reviewer verified receipt and log. All commands exited 0. |
+
+## Scientific And Domain Assessments
+
+### Hydrocerussite species and criticality boundary
+
+identity: supported. Targets: cmmmech:hydrocerussite.
+
+IMA identity is correctly distinct from cerussite,pyromorphite,lead and wastes; no criticality inheritance.
+
+### Genus-level isolate representation
+
+grounding: supported. Targets: cmmmech:hydrocerussite.
+
+KKY-29 remains source-assigned Pseudomonas sp.; near-P. koreensis partial 16S phylogeny is not stronger species or strain authentication.
+
+### Biomass and experimental conditions
+
+evidence: supported. Targets: cmmmech:hydrocerussite.
+
+Washed cells,lead acetate,25C/24h and exsitu freeze-dried/mortar-crushed XRD are accurately scoped. mg/L,mg/mL,g/mL source conflicts are preserved; missing pH/shaker speed/synthetic-medium recipe remain absent.
+
+### Mixed-product diffraction and contradictory labels
+
+evidence: supported. Targets: cmmmech:hydrocerussite.
+
+OriginalFigures7/11 support hydrocerussite-assigned mixed products; sourceResults/figurecaption/Discussion phosphate direction conflict precludes a phase-control threshold. No quantitative phase refinement or yield claimed.
+
+### Cell association versus metabolic necessity
+
+scope: supported. Targets: cmmmech:hydrocerussite.
+
+SAED/lattice evidence identifies pyromorphite. Intracellular dense particles and membrane-integrity staining do not locate hydrocerussite specifically or prove sustained growth/metabolic carbonate production. Lead citrate staining and missing phase-specific controls retained.
+
+### Solution measurement and recovery
+
+quantity: supported. Targets: cmmmech:hydrocerussite.
+
+S3 zero-biomass comparisons and low response at5 mM/lower biomass retained. Centrifuged/filtered supernatant Pb measurements are not hydrocerussite-yield or total recovery. Laboratorylead acetate remains distinct fromindustrial waste treatment.
+
+### Source and history integrity
+
+provenance: supported. Targets: cmmmech:hydrocerussite.
+
+Exacttarget/history native inspection preceded judgment; actual original artifacts and shared study lineage checked, with frozen input hashes unchanged.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/hydrocerussite.yaml; Entire frozen maintained owner | supports | Read every field against original primary evidence and authority; exact bytes remain unchanged. |
+| history | history/records/hydrocerussite/2026-10-14T131007Z-codex-5da18a.yaml; Entire canonical CREATE and distinct inline event | supports | Actual actor, target, chronology and curation summary agree with inspected record. |
+| primary | https://doi.org/10.3390/ijms23052483; Complete JATS; Results2.1-2.7,Discussion,Methods4.1-4.11,Tables1-2 and figure captions; local kato2022.xml | supports | Full original independently read; supports a mixed processed mineral assemblage while preserving units, condition-label and causal limitations. |
+| si | https://mdpi-res.com/d_attachment/ijms/ijms-23-02483/article_deploy/ijms-23-02483-s001.zip; Original eight-page ijms-1594131-supplementary.pdf, allFiguresS1-S8, particularlyS1-S3 | context_only | Actual nonempty PDF independently inspected page by page; 4,095,673 bytes, not failed PMC ZIP route. Biomass axes and no-metal versus zero-biomass caption mismatch confirmed. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Retained full list pages1-2 definitions and page97 Hydrocerussite row | supports | Species Pb3(CO3)2(OH)2,G,1877 confirmed; year is not an approval accession. |
+| taxon | https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/286/dataset_report; NCBI taxonomy dataset result tax_id286 rankGENUS | supports | Pseudomonas genus mapping is appropriate; Fig5 phylogeny does not supply species authentication. |
+| source_binding | /private/tmp/cmm-round72-hydrocerussite-independent/source-hashes.json; Nonempty source artifact inventory with actual sizes and SHA256 | context_only | Independent hashes bind original JATS, exact successful SI PDF, original 14 figures and SI renders; failed HTML/ZIP files excluded from scientific evidence. |
+| dedup | /private/tmp/cmm-round72-hydrocerussite-independent/dedup.txt; Both main/worktree scientific trees and current raw root | context_only | Related lead/pyromorphite studies and mineral mentions do not establish independent experiments. No machine-wide absence claim. |
+| notices | /private/tmp/cmm-round72-hydrocerussite-independent/search.json; Independent current exactDOI notices,KKY29 contradiction and abiotic formation searches | context_only | No relevant correction or retraction surfaced in returned results; search scope bounded. Other organism systems are leads, not direct refutations of this qualified observation. |
+| named | /private/tmp/cmm-round72-hydrocerussite-independent/named.log; Reviewer named validation terminalsession67632 exit0 | supports | One record checked,zero failed; offline structural pass is not scientific proof. |
+| fig1 | https://doi.org/10.3390/ijms23052483; Original Figure1; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g001.jpg | supports | Original graphic visually inspected with its caption and experimental context; no unmeasured mineral-specific yield or cellular pathway inferred. |
+| fig2 | https://doi.org/10.3390/ijms23052483; Original Figure2; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g002.jpg | supports | Original graphic visually inspected with its caption and experimental context; no unmeasured mineral-specific yield or cellular pathway inferred. |
+| fig3 | https://doi.org/10.3390/ijms23052483; Original Figure3; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g003.jpg | supports | Original graphic visually inspected with its caption and experimental context; no unmeasured mineral-specific yield or cellular pathway inferred. |
+| fig4 | https://doi.org/10.3390/ijms23052483; Original Figure4; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g004.jpg | supports | Original graphic visually inspected with its caption and experimental context; no unmeasured mineral-specific yield or cellular pathway inferred. |
+| fig5 | https://doi.org/10.3390/ijms23052483; Original Figure5; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g005.jpg | supports | Original graphic visually inspected with its caption and experimental context; no unmeasured mineral-specific yield or cellular pathway inferred. |
+| fig6 | https://doi.org/10.3390/ijms23052483; Original Figure6; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g006.jpg | supports | Original graphic visually inspected with its caption and experimental context; no unmeasured mineral-specific yield or cellular pathway inferred. |
+| fig7 | https://doi.org/10.3390/ijms23052483; Original Figure7; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g007.jpg | supports | Original graphic visually inspected. Figure7 mixed P/H assignment and Figure11 A/P,D/H patterns agree with narrow record, while source condition mapping remains contradictory. |
+| fig8 | https://doi.org/10.3390/ijms23052483; Original Figure8; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g008.jpg | supports | Original graphic visually inspected with its caption and experimental context; no unmeasured mineral-specific yield or cellular pathway inferred. |
+| fig9 | https://doi.org/10.3390/ijms23052483; Original Figure9; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g009.jpg | supports | Original graphic visually inspected with its caption and experimental context; no unmeasured mineral-specific yield or cellular pathway inferred. |
+| fig10 | https://doi.org/10.3390/ijms23052483; Original Figure10; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g010.jpg | supports | Original graphic visually inspected with its caption and experimental context; no unmeasured mineral-specific yield or cellular pathway inferred. |
+| fig11 | https://doi.org/10.3390/ijms23052483; Original Figure11; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g011.jpg | supports | Original graphic visually inspected. Figure7 mixed P/H assignment and Figure11 A/P,D/H patterns agree with narrow record, while source condition mapping remains contradictory. |
+| fig12 | https://doi.org/10.3390/ijms23052483; Original Figure12; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g012.jpg | supports | Original graphic visually inspected with its caption and experimental context; no unmeasured mineral-specific yield or cellular pathway inferred. |
+| fig13 | https://doi.org/10.3390/ijms23052483; Original Figure13; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g013.jpg | supports | Original graphic visually inspected with its caption and experimental context; no unmeasured mineral-specific yield or cellular pathway inferred. |
+| fig14 | https://doi.org/10.3390/ijms23052483; Original Figure14; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g014.jpg | supports | Original graphic visually inspected with its caption and experimental context; no unmeasured mineral-specific yield or cellular pathway inferred. |
+| batch | /private/tmp/cmm-round72-final-gates.json; Coordinator terminal receipt for exact base; just check, nonempty validation and history validation | supports | All three actual commands exited 0. Reviewer checked terminal receipt and matching log SHA; 317 passed, 3 skipped, 341 records with 0 failures, 394 histories with 0 errors. |
+| batch_log | /private/tmp/cmm-round72-final-gates.log; Complete terminal log | supports | Exact log SHA matches receipt. Structural gates do not prove scientific truth. |
+
+## Limits And Additional Notes
+
+- No raw diffraction refit or experimental replication; source phase assignments are assessed at their stated scope.
+- Original labels/units unresolved; no source correction notice found in bounded searches.
+- Shared primary downloads independently examined; no re-download of mainXML orSI during this review.
+- Source follow-up issue #231 remains open for the paper's units, phosphate labeling, recipe and phase-control gaps; those unresolved source questions do not invalidate the narrow curated observation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T132400Z-hydrocerussite-round72-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of hydrocerussite
+started_at: '2026-10-14T13:14:09.107570Z'
+finished_at: '2026-10-14T13:24:00.738181Z'
+reviewer:
+  identity: codex /root/round68_iron_sulfides
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored this record/history; reviewer authored only realgar/orpiment
+    this round and made no edits to the reviewed owner/history. Shared acquired originals
+    were independently examined, including complete primary text,all 14 graphics,
+    eight-page SI, authorities and exact frozen target bytes.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The qualified hydrocerussite component in processed KKY-29 products is supported.
+  Source units and phosphate labels remain contradictory; neither an exclusive biological
+  cause nor isolated recovery is established. No corrective findings. Named and actual
+  final batch checks passed.
+source:
+  git_revision: a2f08edab1307aba4281ce1e2a54d84bca88a889
+  state: working_tree
+  inputs:
+  - path: data/records/hydrocerussite.yaml
+    sha256: a4d376d672d254c5731f73cafaa70ee8ad40686e82c82c2f4c96453011ba24ec
+    role: target
+  - path: history/records/hydrocerussite/2026-10-14T131007Z-codex-5da18a.yaml
+    sha256: 936306fecd8ab12665911a50e95345be8905768ea092dc7adb62a01f52132fe9
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Full maintained owner and linked CREATE; independent original-source
+    scientific reassessment.
+  selection: Assigned frozen owner; native inspect before judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:hydrocerussite
+targets:
+- target_id: cmmmech:hydrocerussite
+  path: data/records/hydrocerussite.yaml
+  label: Hydrocerussite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/hydrocerussite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Named strict validation
+  command: uv run --locked cmmmech validate data/records/hydrocerussite.yaml --require-records
+  status: passed
+  required: true
+  summary: Reviewer executed terminal session 67632; 1 record, 0 failed.
+  target_ids:
+  - cmmmech:hydrocerussite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch
+  name: Completed batch checks
+  command: just check; uv run --locked cmmmech validate --require-records; uv run
+    --locked cmmmech validate-history --base a2f08edab1307aba4281ce1e2a54d84bca88a889
+  status: passed
+  required: true
+  summary: Coordinator executed; reviewer verified receipt and log. All commands exited
+    0.
+  target_ids:
+  - cmmmech:hydrocerussite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batch_log
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/hydrocerussite.yaml
+  locator: Entire frozen maintained owner
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: supports
+  summary: Read every field against original primary evidence and authority; exact
+    bytes remain unchanged.
+  snapshot_sha256: a4d376d672d254c5731f73cafaa70ee8ad40686e82c82c2f4c96453011ba24ec
+- evidence_id: history
+  kind: record_content
+  reference: history/records/hydrocerussite/2026-10-14T131007Z-codex-5da18a.yaml
+  locator: Entire canonical CREATE and distinct inline event
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: supports
+  summary: Actual actor, target, chronology and curation summary agree with inspected
+    record.
+  snapshot_sha256: 936306fecd8ab12665911a50e95345be8905768ea092dc7adb62a01f52132fe9
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/ijms23052483
+  locator: Complete JATS; Results2.1-2.7,Discussion,Methods4.1-4.11,Tables1-2 and
+    figure captions; local kato2022.xml
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: supports
+  summary: Full original independently read; supports a mixed processed mineral assemblage
+    while preserving units, condition-label and causal limitations.
+  snapshot_sha256: 2739a8c13f82541cd677f82e162468f5513e43bac73e03146c0872da71d75778
+- evidence_id: si
+  kind: primary_source
+  reference: https://mdpi-res.com/d_attachment/ijms/ijms-23-02483/article_deploy/ijms-23-02483-s001.zip
+  locator: Original eight-page ijms-1594131-supplementary.pdf, allFiguresS1-S8, particularlyS1-S3
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: context_only
+  summary: Actual nonempty PDF independently inspected page by page; 4,095,673 bytes,
+    not failed PMC ZIP route. Biomass axes and no-metal versus zero-biomass caption
+    mismatch confirmed.
+  snapshot_sha256: f12a25ac1e5ba726812a04f4de348a493d29a50e8eb9884999fdbd506ab15f55
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Retained full list pages1-2 definitions and page97 Hydrocerussite row
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: supports
+  summary: Species Pb3(CO3)2(OH)2,G,1877 confirmed; year is not an approval accession.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: taxon
+  kind: authority
+  reference: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/286/dataset_report
+  locator: NCBI taxonomy dataset result tax_id286 rankGENUS
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: supports
+  summary: Pseudomonas genus mapping is appropriate; Fig5 phylogeny does not supply
+    species authentication.
+  snapshot_sha256: e589014cd022b2f41c759a79d2adb689b5214b8e7d72495380dc0662c24cff0d
+- evidence_id: source_binding
+  kind: validation
+  reference: /private/tmp/cmm-round72-hydrocerussite-independent/source-hashes.json
+  locator: Nonempty source artifact inventory with actual sizes and SHA256
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: context_only
+  summary: Independent hashes bind original JATS, exact successful SI PDF, original
+    14 figures and SI renders; failed HTML/ZIP files excluded from scientific evidence.
+  snapshot_sha256: 91d93afab4970f1b030fa942f4b419fe2186b04da68d491f0ec5b81cac78c2dc
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round72-hydrocerussite-independent/dedup.txt
+  locator: Both main/worktree scientific trees and current raw root
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: context_only
+  summary: Related lead/pyromorphite studies and mineral mentions do not establish
+    independent experiments. No machine-wide absence claim.
+  snapshot_sha256: e8ba570320c9a269fbfeee7ba07ba763ddb1680b3d8eefd85731bf63f813e43c
+  search_scope: rg --no-ignore --hidden --follow --text -i -l hydrocerussite|ijms23052483|KKY-29
+    over records/research/reviews/history in both checkouts and current primary raw
+    root.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round72-hydrocerussite-independent/search.json
+  locator: Independent current exactDOI notices,KKY29 contradiction and abiotic formation
+    searches
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: context_only
+  summary: No relevant correction or retraction surfaced in returned results; search
+    scope bounded. Other organism systems are leads, not direct refutations of this
+    qualified observation.
+  snapshot_sha256: 2338e71b267969a9e1d6e7d8097c96a07b529205f7dc7d5f7d01c575d2467d7e
+  search_scope: 'Web search2026-10-14: exactDOI+correction/retraction/erratum; KKY29+hydrocerussite+phosphate
+    contradiction; hydrocerussite+bacteria+abiotic formation. First returned windows,no
+    date/domain filters.'
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round72-hydrocerussite-independent/named.log
+  locator: Reviewer named validation terminalsession67632 exit0
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: supports
+  summary: One record checked,zero failed; offline structural pass is not scientific
+    proof.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: fig1
+  kind: primary_source
+  reference: https://doi.org/10.3390/ijms23052483
+  locator: Original Figure1; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g001.jpg
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: supports
+  summary: Original graphic visually inspected with its caption and experimental context;
+    no unmeasured mineral-specific yield or cellular pathway inferred.
+  snapshot_sha256: 2aaf39110f75980043c0bccd3da9a11674a056a9c35f5e267c0a2524a15266c0
+- evidence_id: fig2
+  kind: primary_source
+  reference: https://doi.org/10.3390/ijms23052483
+  locator: Original Figure2; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g002.jpg
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: supports
+  summary: Original graphic visually inspected with its caption and experimental context;
+    no unmeasured mineral-specific yield or cellular pathway inferred.
+  snapshot_sha256: 8ebc9a3971498e9c1b7a60b22b13b40ffaf9e154b0ea21d93a6414b41605d1d1
+- evidence_id: fig3
+  kind: primary_source
+  reference: https://doi.org/10.3390/ijms23052483
+  locator: Original Figure3; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g003.jpg
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: supports
+  summary: Original graphic visually inspected with its caption and experimental context;
+    no unmeasured mineral-specific yield or cellular pathway inferred.
+  snapshot_sha256: 4da3d2d66365d4c00948026d2464638dbee928455db0b97b17e68768a5bd5adc
+- evidence_id: fig4
+  kind: primary_source
+  reference: https://doi.org/10.3390/ijms23052483
+  locator: Original Figure4; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g004.jpg
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: supports
+  summary: Original graphic visually inspected with its caption and experimental context;
+    no unmeasured mineral-specific yield or cellular pathway inferred.
+  snapshot_sha256: 2e830a0a2ab8b71aaed60c5fca29773d711bdd6f30d5dd743f0fb5c10d73af96
+- evidence_id: fig5
+  kind: primary_source
+  reference: https://doi.org/10.3390/ijms23052483
+  locator: Original Figure5; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g005.jpg
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: supports
+  summary: Original graphic visually inspected with its caption and experimental context;
+    no unmeasured mineral-specific yield or cellular pathway inferred.
+  snapshot_sha256: 7f83a0a15bbc4aea40e7a19412033e08b6b57dd6608785d8a8f52d549f7d90af
+- evidence_id: fig6
+  kind: primary_source
+  reference: https://doi.org/10.3390/ijms23052483
+  locator: Original Figure6; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g006.jpg
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: supports
+  summary: Original graphic visually inspected with its caption and experimental context;
+    no unmeasured mineral-specific yield or cellular pathway inferred.
+  snapshot_sha256: 0e4d8df9eb46e8397944ed47168f941ccd89b4ca6311c04394f58337325534da
+- evidence_id: fig7
+  kind: primary_source
+  reference: https://doi.org/10.3390/ijms23052483
+  locator: Original Figure7; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g007.jpg
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: supports
+  summary: Original graphic visually inspected. Figure7 mixed P/H assignment and Figure11
+    A/P,D/H patterns agree with narrow record, while source condition mapping remains
+    contradictory.
+  snapshot_sha256: 7aa1860f5224b97648605ba239ae13ecf418a663a94fc89ca9d011aaea106182
+- evidence_id: fig8
+  kind: primary_source
+  reference: https://doi.org/10.3390/ijms23052483
+  locator: Original Figure8; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g008.jpg
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: supports
+  summary: Original graphic visually inspected with its caption and experimental context;
+    no unmeasured mineral-specific yield or cellular pathway inferred.
+  snapshot_sha256: 81daf5b363fdca5725c5a7766b8869cd2d6ebd939f09b9fbacd7b8e05da5cd51
+- evidence_id: fig9
+  kind: primary_source
+  reference: https://doi.org/10.3390/ijms23052483
+  locator: Original Figure9; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g009.jpg
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: supports
+  summary: Original graphic visually inspected with its caption and experimental context;
+    no unmeasured mineral-specific yield or cellular pathway inferred.
+  snapshot_sha256: da026e8c6eb033890b0a926c3b6c96af880dd0a8b56ed03af7840d044237fbdb
+- evidence_id: fig10
+  kind: primary_source
+  reference: https://doi.org/10.3390/ijms23052483
+  locator: Original Figure10; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g010.jpg
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: supports
+  summary: Original graphic visually inspected with its caption and experimental context;
+    no unmeasured mineral-specific yield or cellular pathway inferred.
+  snapshot_sha256: cfc8891f18f587f271c9ffd3155723294e7e0a7b1bdeb7e9245a843b12757f9a
+- evidence_id: fig11
+  kind: primary_source
+  reference: https://doi.org/10.3390/ijms23052483
+  locator: Original Figure11; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g011.jpg
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: supports
+  summary: Original graphic visually inspected. Figure7 mixed P/H assignment and Figure11
+    A/P,D/H patterns agree with narrow record, while source condition mapping remains
+    contradictory.
+  snapshot_sha256: 21319b22907f384fec61f5f862adb4c173f1236c0434743f66cd532114a3aa38
+- evidence_id: fig12
+  kind: primary_source
+  reference: https://doi.org/10.3390/ijms23052483
+  locator: Original Figure12; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g012.jpg
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: supports
+  summary: Original graphic visually inspected with its caption and experimental context;
+    no unmeasured mineral-specific yield or cellular pathway inferred.
+  snapshot_sha256: 4121201a8776a2533007b3fd80e3a8ee1fcc5df7ff3be59b84d1ef8ee3c7f676
+- evidence_id: fig13
+  kind: primary_source
+  reference: https://doi.org/10.3390/ijms23052483
+  locator: Original Figure13; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g013.jpg
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: supports
+  summary: Original graphic visually inspected with its caption and experimental context;
+    no unmeasured mineral-specific yield or cellular pathway inferred.
+  snapshot_sha256: 9e5c69ddc717828db71c8ad7d4dca4b50d437a2d5a8a9b29887895fdf445fe6d
+- evidence_id: fig14
+  kind: primary_source
+  reference: https://doi.org/10.3390/ijms23052483
+  locator: Original Figure14; /private/tmp/cmm-round72-hydrocerussite-research/ijms-23-02483-g014.jpg
+  accessed_at: '2026-10-14T13:16:27.296954Z'
+  support: supports
+  summary: Original graphic visually inspected with its caption and experimental context;
+    no unmeasured mineral-specific yield or cellular pathway inferred.
+  snapshot_sha256: fda7589af75bf36f7a1faf38d32cf5726597642084dbfd1c9411c9fed877f893
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round72-final-gates.json
+  locator: Coordinator terminal receipt for exact base; just check, nonempty validation
+    and history validation
+  accessed_at: '2026-10-14T13:24:00.738181Z'
+  support: supports
+  summary: All three actual commands exited 0. Reviewer checked terminal receipt and
+    matching log SHA; 317 passed, 3 skipped, 341 records with 0 failures, 394 histories
+    with 0 errors.
+  snapshot_sha256: b5b2d551ac899632844d0d3a3f9dbc95897408e73a7ccec69513cdb22a1352e7
+- evidence_id: batch_log
+  kind: validation
+  reference: /private/tmp/cmm-round72-final-gates.log
+  locator: Complete terminal log
+  accessed_at: '2026-10-14T13:24:00.738181Z'
+  support: supports
+  summary: Exact log SHA matches receipt. Structural gates do not prove scientific
+    truth.
+  snapshot_sha256: 55435f8c2e7b77b442f38fee5e21be9920263c32956357e1e1482557ca332c3c
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Hydrocerussite species and criticality boundary
+  outcome: supported
+  target_ids:
+  - cmmmech:hydrocerussite
+  evidence_ids:
+  - record
+  - ima
+  summary: IMA identity is correctly distinct from cerussite,pyromorphite,lead and
+    wastes; no criticality inheritance.
+- assessment_id: organism
+  area: grounding
+  topic: Genus-level isolate representation
+  outcome: supported
+  target_ids:
+  - cmmmech:hydrocerussite
+  evidence_ids:
+  - record
+  - taxon
+  - primary
+  - fig5
+  summary: KKY-29 remains source-assigned Pseudomonas sp.; near-P. koreensis partial
+    16S phylogeny is not stronger species or strain authentication.
+- assessment_id: assay
+  area: evidence
+  topic: Biomass and experimental conditions
+  outcome: supported
+  target_ids:
+  - cmmmech:hydrocerussite
+  evidence_ids:
+  - record
+  - primary
+  - si
+  summary: Washed cells,lead acetate,25C/24h and exsitu freeze-dried/mortar-crushed
+    XRD are accurately scoped. mg/L,mg/mL,g/mL source conflicts are preserved; missing
+    pH/shaker speed/synthetic-medium recipe remain absent.
+- assessment_id: phase
+  area: evidence
+  topic: Mixed-product diffraction and contradictory labels
+  outcome: supported
+  target_ids:
+  - cmmmech:hydrocerussite
+  evidence_ids:
+  - record
+  - primary
+  - fig7
+  - fig10
+  - fig11
+  summary: OriginalFigures7/11 support hydrocerussite-assigned mixed products; sourceResults/figurecaption/Discussion
+    phosphate direction conflict precludes a phase-control threshold. No quantitative
+    phase refinement or yield claimed.
+- assessment_id: causality
+  area: scope
+  topic: Cell association versus metabolic necessity
+  outcome: supported
+  target_ids:
+  - cmmmech:hydrocerussite
+  evidence_ids:
+  - record
+  - primary
+  - fig6
+  - fig8
+  - fig9
+  - fig14
+  summary: SAED/lattice evidence identifies pyromorphite. Intracellular dense particles
+    and membrane-integrity staining do not locate hydrocerussite specifically or prove
+    sustained growth/metabolic carbonate production. Lead citrate staining and missing
+    phase-specific controls retained.
+- assessment_id: outcome
+  area: quantity
+  topic: Solution measurement and recovery
+  outcome: supported
+  target_ids:
+  - cmmmech:hydrocerussite
+  evidence_ids:
+  - record
+  - primary
+  - si
+  summary: S3 zero-biomass comparisons and low response at5 mM/lower biomass retained.
+    Centrifuged/filtered supernatant Pb measurements are not hydrocerussite-yield
+    or total recovery. Laboratorylead acetate remains distinct fromindustrial waste
+    treatment.
+- assessment_id: provenance
+  area: provenance
+  topic: Source and history integrity
+  outcome: supported
+  target_ids:
+  - cmmmech:hydrocerussite
+  evidence_ids:
+  - record
+  - history
+  - source_binding
+  - dedup
+  summary: Exacttarget/history native inspection preceded judgment; actual original
+    artifacts and shared study lineage checked, with frozen input hashes unchanged.
+findings: []
+actions: []
+limitations:
+- No raw diffraction refit or experimental replication; source phase assignments are
+  assessed at their stated scope.
+- Original labels/units unresolved; no source correction notice found in bounded searches.
+- Shared primary downloads independently examined; no re-download of mainXML orSI
+  during this review.
+- 'Source follow-up issue #231 remains open for the paper''s units, phosphate labeling,
+  recipe and phase-control gaps; those unresolved source questions do not invalidate
+  the narrow curated observation.'
+```

@@ -1,0 +1,329 @@
+schema_version: 1.0.0
+review_id: 20261014T132555Z-albite-round72-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Albite round 72
+started_at: '2026-10-14T13:19:07.258511Z'
+finished_at: '2026-10-14T13:25:55.534988Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The new_frontier peer authored these silicate owners, histories
+    and source dossier. Reviewer authored the separate carbonate pair in this batch,
+    but did not author or modify either reviewed silicate owner/history. Native inspect
+    preceded independent source and field assessment.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Albite identity and bounded abiotic solution-dependent dissolution are supported.
+  The owner accurately preserves sequential-run design, hypothetical surface layers
+  and activated complexes, and separation from microbial activity or recovered product.
+source:
+  git_revision: a2f08edab1307aba4281ce1e2a54d84bca88a889
+  state: working_tree
+  inputs:
+  - path: data/records/albite.yaml
+    sha256: a6dda95dcb942312950b584f345a606d364bfceb0f3c0c9ba47e92230f38b677
+    role: target
+  - path: history/records/albite/2026-10-14T131456Z-codex-bb5a3d.yaml
+    sha256: 50984f6f8a0bdd4ca92be8533dc7fe960cc14a64dab94af0f7534db22c36f79c
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire exact frozen owner and linked CREATE history; all claim-bearing
+    primary methods, figures/tables, identities, limits and bounded notice/conflict
+    search.
+  selection: Assigned independent peer review; exact target resolved and native-inspected
+    before assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:albite
+targets:
+- target_id: cmmmech:albite
+  path: data/records/albite.yaml
+  label: Albite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/albite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Reviewer named frozen-owner validation
+  command: uv run --locked cmmmech validate data/records/albite.yaml data/records/orthoclase.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Independent reviewer execution; two frozen records, zero failures.
+  target_ids:
+  - cmmmech:albite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Completed coordinator batch gate
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T13:17:12.131110+00:00 to 2026-10-14T13:20:48.706062+00:00;
+    terminal receipt and full log hash independently verified.
+  target_ids:
+  - cmmmech:albite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Completed coordinator batch gate
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T13:20:48.706092+00:00 to 2026-10-14T13:20:56.556799+00:00;
+    terminal receipt and full log hash independently verified.
+  target_ids:
+  - cmmmech:albite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Completed coordinator batch gate
+  command: uv run --locked cmmmech validate-history --base a2f08edab1307aba4281ce1e2a54d84bca88a889
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T13:20:56.556822+00:00 to 2026-10-14T13:21:01.412318+00:00;
+    terminal receipt and full log hash independently verified.
+  target_ids:
+  - cmmmech:albite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/albite.yaml
+  locator: Entire frozen owner; native inspect preceded assessment
+  accessed_at: '2026-10-14T13:25:55.534988Z'
+  support: supports
+  summary: Full owner independently read against source evidence. Reviewer made no
+    owner/history edits.
+  snapshot_sha256: a6dda95dcb942312950b584f345a606d364bfceb0f3c0c9ba47e92230f38b677
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions pp.1–2; Albite row PDF p.6; retained official original /private/tmp/cmm-round71-carbonates-research/ima2026-09.pdf
+  accessed_at: '2026-10-14T13:25:55.534988Z'
+  support: supports
+  summary: 'Original row pixels verified: Na(AlSi3O8), G, historical 1815. Historical
+    status is not a numbered approval accession or criticality designation.'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/albite.pdf
+  locator: Complete one-page original, visually read
+  accessed_at: '2026-10-14T13:25:55.534988Z'
+  support: supports
+  summary: Supports triclinic albite, ideal NaAlSi3O8 and plagioclase-series composition
+    range. Real experimental specimens need their own characterization.
+  snapshot_sha256: 5732f5da9f88cc505c2f032729dbd641a71a5faec124731877aba78b854a688b
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.2475/ajs.285.10.963
+  locator: Complete 31-page original /private/tmp/cmm-round72-silicates-research/chou1985-yale.pdf;
+    methods printed pp.969–970, results/discussion pp.971–991; Figures 1–13 and Tables
+    1–2
+  accessed_at: '2026-10-14T13:25:55.534988Z'
+  support: supports
+  summary: Full original text read; all 13 figures and both tables visually inspected,
+    including Table 1 sequential chemistry, Figure 3 release transients, Figures 5–8
+    solute/flow effects and Figures 11–13 model comparisons.
+  snapshot_sha256: 5ad1111f5256e72793497daa6f175693c731f3ce228350201674482dd27c3844
+- evidence_id: limits
+  kind: primary_source
+  reference: https://doi.org/10.2475/ajs.285.10.963
+  locator: Printed pp.972, 978–983 and 990–991; Figures 4, 9–10; Table 2
+  accessed_at: '2026-10-14T13:25:55.534988Z'
+  support: partial
+  summary: Na-depleted layer thickness follows mass balances and assumed surface area,
+    not direct film imaging. Hydrogen versus hydronium feldspar lacks direct discrimination.
+    Prior surface-spectroscopy failures and defect-localized attack remain compatible.
+    Earlier experiments reused in Figure 5 are not independent replicates. Different
+    Hybla K-feldspar behavior is not an albite control.
+  snapshot_sha256: 5ad1111f5256e72793497daa6f175693c731f3ce228350201674482dd27c3844
+- evidence_id: history
+  kind: record_content
+  reference: history/records/albite/2026-10-14T131456Z-codex-bb5a3d.yaml
+  locator: Entire canonical CREATE, inline event and history_refs
+  accessed_at: '2026-10-14T13:25:55.534988Z'
+  support: supports
+  summary: Actual Codex/GPT-6 CREATE actor, UTC timestamp, maintained target and event
+    scope agree. Sidecar is an actual new session, not invented historical authorship.
+  snapshot_sha256: 50984f6f8a0bdd4ca92be8533dc7fe960cc14a64dab94af0f7534db22c36f79c
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round72-silicate-peer/independent-search.json
+  locator: Four actual bounded independent searches on 14 October 2026 and final-journal
+    methods text access
+  accessed_at: '2026-10-14T13:25:55.534988Z'
+  support: context_only
+  summary: No affecting formal notice surfaced in returned result sets; primary-source
+    counterevidence and transfer limits were checked directly. Search snippets were
+    not used as mechanism evidence.
+  snapshot_sha256: 4b4563076390f03284fd107e061197bbad5ee8b93112219688d6661760b542c4
+  search_scope: Exact DOI correction/erratum/retraction queries plus source-title/model-conflict
+    queries; first returned result sets only, no pagination. Not exhaustive.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round72-silicate-peer/dedup.json
+  locator: Scoped hidden/ignored-inclusive rg --no-ignore --hidden --follow search
+    across explicit current/main corpus, history, research, reviews and relevant raw
+    root
+  accessed_at: '2026-10-14T13:25:55.534988Z'
+  support: context_only
+  summary: 660 matched lines include prior contextual mineral/commodity/rock mentions;
+    this review does not claim global novelty. Material species and mixed experimental
+    resources remain distinct.
+  snapshot_sha256: 27870c9f02ea941205875cc8153111821fbdac206460c6e7a6320a2bbc4d28ad
+  search_scope: Explicit roots and command retained in receipt; ignored and hidden
+    files included, relevant symlinks followed.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round72-silicate-peer/named-validation.log
+  locator: Reviewer-executed named validation of the two frozen owners
+  accessed_at: '2026-10-14T13:25:55.534988Z'
+  support: supports
+  summary: Checked 2 records, 0 failed, exit 0. Recorded stdout comes from the completed
+    command; structural success does not establish scientific truth.
+  snapshot_sha256: 0a09ffd65f57bcc429959a059927f08fbec3fbe3f4ceafcea2e987474a11ceb4
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round72-final-gates.json
+  locator: Terminal coordinator receipt and independently rehashed full log
+  accessed_at: '2026-10-14T13:25:55.534988Z'
+  support: supports
+  summary: All three required batch commands exited 0; 317 tests passed, 3 skipped,
+    341 records/0 failed and 394 histories/0 errors. Full log SHA256 55435f8c2e7b77b442f38fee5e21be9920263c32956357e1e1482557ca332c3c.
+  snapshot_sha256: b5b2d551ac899632844d0d3a3f9dbc95897408e73a7ccec69513cdb22a1352e7
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral species, formula and criticality
+  outcome: supported
+  summary: Authority identity is correct and distinct from commodity, rock, other
+    polymorphs or constituent elements. No criticality jurisdiction/list/edition claim
+    is made.
+  target_ids:
+  - cmmmech:albite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  dimensions:
+  - name: material_form
+    value: Triclinic NaAlSi3O8 albite
+    definition: Ideal formula does not certify experimental specimen purity.
+    evidence_ids:
+    - ima
+    - handbook
+    - primary
+  - name: criticality
+    value: No designation asserted
+    definition: No inherited elemental designation or universal noncriticality statement.
+    evidence_ids:
+    - record
+- assessment_id: methods
+  area: evidence
+  topic: Substrate, pretreatment, conditions and controls
+  outcome: supported
+  summary: Handpicked Amelia clevelandite, 50–100 micrometres, repeated acetone/ultrasonic
+    cleaning, overnight 100 degrees C drying; 4 g in a room-temperature/pressure fluidized-bed
+    reactor. Acidic HCl and alkaline hydroxide/chloride media are separately described.
+    pH 3 experiments varied Na, Al, Si and renewal rate.
+  target_ids:
+  - cmmmech:albite
+  evidence_ids:
+  - record
+  - primary
+  dimensions:
+  - name: organism_and_biomass
+    value: 'Not applicable: abiotic experiment'
+    definition: No microorganism, strain, biomass state or biological enhancement
+      is asserted.
+    evidence_ids:
+    - record
+    - primary
+  - name: controls
+    value: Sequential solution changes on the same solid in Table 1/Figure 3; alkaline
+      Na-rich versus Li-rich comparison and added-solute tests. No organism or biological
+      comparator. Handpicking does not supply a new quantitative phase-purity assay.
+    definition: Comparator scope constrains causal and reproducibility claims.
+    evidence_ids:
+    - primary
+    - limits
+  - name: experimental_scope
+    value: Laboratory only
+    definition: No process yield or industrial deployment follows from dissolution
+      or modeled surface change.
+    evidence_ids:
+    - record
+    - primary
+- assessment_id: outcome
+  area: evidence
+  topic: Measured observations versus mechanistic interpretation
+  outcome: supported
+  summary: Initially disproportionate Na release and renewed transients progress toward
+    relatively congruent dissolution; stronger Al inhibition at pH 3 and Na-associated
+    retardation in alkaline solutions are observed. Surface layers, activation complexes
+    and uniform geometry remain interpretations.
+  target_ids:
+  - cmmmech:albite
+  evidence_ids:
+  - record
+  - primary
+  - limits
+- assessment_id: provenance
+  area: provenance
+  topic: Source scope, actual history and required validation
+  outcome: supported
+  summary: Exact original source and owner hashes are retained; history agrees with
+    actual curation scope. Named validation and independently verified coordinator
+    gates pass. Independent bounded searches do not imply literature exhaustion.
+  target_ids:
+  - cmmmech:albite
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - search
+  - dedup
+findings: []
+actions: []
+limitations:
+- The historical experiment is abiotic; it cannot establish microbial enhancement,
+  isolated-product recovery or deployment.
+- Hypothetical layer thickness and molecular complexes are model-dependent. Prior
+  failures to detect a uniform layer and defect-localized dissolution are retained.
+- Sequential medium changes and incorporation of earlier results must not be counted
+  as independent replication; handpicked clevelandite lacks a new quantitative phase-purity
+  assay.
+- The bounded notice/conflict searches do not establish that all later literature
+  has been exhausted.
+notes:
+- No supported corrective finding in this scope; no owner/history edits by reviewer.
+- Structured source adapters for genes or transcriptomic modules are not applicable
+  to these abiotic mineral claims.
+tags:
+- round72
+- albite
+- independent
+- primary-figures
+- abiotic
