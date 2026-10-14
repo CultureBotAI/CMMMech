@@ -1,0 +1,28 @@
+# Round83 isolated verification and cleanup static review
+
+UTC: 2026-10-14T23:02:05.134037Z
+
+Reviewer: codex /root/round68_iron_sulfides
+
+Verdict: pass with limitations; no supported corrective findings. This is an operational static review, not scientific acceptance or runtime execution.
+
+- **isolation**: New unique /private/tmp clone and receipt/archive/log paths refuse existing or symlink destinations; source checkout only read. Only remote main is cloned, tags explicitly fetched. Source tree equality, clean preflight HEAD and live trusted base are required; archive member checks and data filter constrain extraction. New synthetic commit is built within the clone.
+- **provenance**: Historical review-base tag exact annotated object and peeled commit are locally/remotely verified; all saved source revisions are checked as available commit objects by coverage. Three topic-object absence checks surround clone construction and gates. The historical tag name is intentional provenance, not stale cohort labeling.
+- **exact_merge**: Postmerge requires supplied actual main commit, exact reviewed tree and exactly one parent equal trusted base. Cleanup independently requires same actual merged PR head/tree/base/sole-parent and live origin/main before deletion.
+- **checks**: Both modes run locked offline sync, nonempty strict record validation, canonical history against trusted base, full native review-check and exact-current scientific coverage; postmerge additionally runs just check. Final clean tracked/unignored state and tree equality are checked. Preflight does not claim to rerun just check.
+- **coverage**: Filesystem enumeration includes hidden/ignored content and follows links with cycle prevention; positive completed scientific reviews must match canonical ID, target path, reviewed-target scope and actual owner SHA. It supplements, not replaces, canonical semantic validation. Availability checks cover every distinct review source revision.
+- **cleanup**: Only fixed round83 topic branch is eligible; actual MERGED state/exact head and clean current owned worktree are mandatory. Remote deletion uses exact-head force-with-lease, then confirms absence. Local deletion occurs after detach to actual merge and exact old ref match. Issues must have configured states. No original-main checkout mutation or directory removal.
+
+## Exact inputs
+
+- `/private/tmp/cmm-round83-isolated-verification.py` SHA256 `6de68dd6c7872efe1dd681aa9f86526c08432786a635330078ee8ab6539a4cc3`; immutable external copy `/private/tmp/cmm-round83-isolation-peer-20261014T230205Z-sources/cmm-round83-isolated-verification.py`.
+- `/private/tmp/cmm-round83-isolated-coverage.py` SHA256 `882871976dd6dbf640123a93905f1b6495e179bf43810aebcf915ca8c43b8775`; immutable external copy `/private/tmp/cmm-round83-isolation-peer-20261014T230205Z-sources/cmm-round83-isolated-coverage.py`.
+- `/private/tmp/cmm-round83-cleanup.py` SHA256 `12ddb5ed77b89d8fbfa381052e86e16902590d4cdfcd0c74eed01f5ff4cd447f`; immutable external copy `/private/tmp/cmm-round83-isolation-peer-20261014T230205Z-sources/cmm-round83-cleanup.py`.
+- `/private/tmp/cmm-round83-helper-config.json` SHA256 `a9a28e87f915825e3e494b8cfb75608bb78865f5f2fceec44c71ddd88c363dda`; immutable external copy `/private/tmp/cmm-round83-isolation-peer-20261014T230205Z-sources/cmm-round83-helper-config.json`.
+
+## Remaining runtime conditions
+
+- Current helper-config snapshot is intentionally provisional: counts contains record_count=398 only. Forecast histories457/reviews474/bases84 are not verified by this static review. Before runtime acceptance, final reconciled config must include the full expected counts/covered_records; downstream final package audit must rebind it.
+- The coverage helper compares the keys actually provided in config; it is not an independent source for intended census. Its result remains dependent on a complete, reviewed final config.
+- No runtime success is asserted. Required terminal receipts, source/commit/tree bindings, complete native review validation and actual hosted state remain future acceptance gates.
+- Cleanup performs authorized topic-ref deletion only when run by coordinator; this audit did not execute it.
