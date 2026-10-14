@@ -1,0 +1,125 @@
+id: cmmmech:otavite
+name: Otavite
+material_kind: mineral
+description: Otavite is the cadmium carbonate mineral CdCO3 in the calcite group,
+  distinct from elemental cadmium, dissolved Cd ions, cadmium sulfides and
+  unspecified cadmium-bearing precipitates. The September 2026 IMA list gives
+  grandfathered status and original-description year 1906, not a unique approval
+  accession. The curated laboratory study tentatively assigns a cell-associated
+  synthetic precipitate to otavite; it does not establish a pure mineral product
+  or the origin of natural otavite. No cadmium criticality designation is inherited.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Otavite row,
+    PDF page 161; page 1 defines grandfathered status and original-description
+    years. Retained complete original rechecked.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: handbook_otavite
+  title: Handbook of Mineralogy. Otavite, version 1 (2001-2005), complete
+    one-page species entry, crystal data, synthetic powder pattern and calcite
+    group assignment. Identity context, not a microbial experiment.
+  url: https://www.handbookofmineralogy.org/pdfs/otavite.pdf
+  accessed_on: '2026-10-14'
+- id: yang2026
+  title: Yang, Q., Li, X., Cao, J., He, S., He, C., Tu, C., Zhou, K., Liang, X.
+    and Zhan, F. (2026). Urea-Mediated Biomineralization and Adsorption of
+    Heavy-Metal Ions in Solution by the Urease-Producing Bacteria C7-12.
+    Microorganisms 14(1), 171. Complete 17-page original, Figures 1-11,
+    Tables 1-2, and official two-page supplement with Table S1 and Figures S1-S5.
+  url: https://doi.org/10.3390/microorganisms14010171
+  accessed_on: '2026-10-14'
+- id: ncbi_serratia
+  title: NCBI Taxonomy 615. Serratia marcescens, species-rank entry. This
+    mapping does not identify or independently authenticate experimental strain C7-12.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=615&mode=Info
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: c7_12_tentative_otavite_precipitation
+  name: Tentative otavite formation associated with a ureolytic bacterial culture
+  process: biomineralization
+  microbial: true
+  organisms:
+  - id: NCBITaxon:615
+    label: Serratia marcescens
+  description: Urease-producing strain C7-12 removed dissolved cadmium from
+    laboratory broth and developed cell-associated particles whose XRD signal
+    the authors considered most likely otavite. Urea consumption, increasing pH
+    and operational cadmium fractions are consistent with carbonate precipitation
+    occurring alongside adsorption. The phase assignment remains tentative,
+    and neither microbial necessity nor a phase-specific recovery yield was established.
+  context: Yang2026 Sections 2.1-2.8 and 3.1 describe C7-12 isolated among
+    urease-producing bacteria from maize rhizosphere soil in a lead-zinc mining
+    area. The authors assigned Serratia marcescens from a 100% 16S sequence
+    match and reported deposit GDMCC65568; the complete article and supplement
+    supply no sequence accession, and the deposit is retained as author-reported.
+    NCBITaxon:615 maps the species name, not the strain or deposit. LB contained
+    5 g/L yeast extract, 10 g/L peptone and 5 g/L NaCl. The initial screening
+    used 100 mL broth with 30 g/L urea, 2% inoculum, 30 degrees C and 160 rpm
+    for 48 hours. One-factor-at-a-time experiments then selected the separate
+    Table 2 conditions of 1 mg/L initial Cd, 20 g/L urea, 2% inoculum,
+    initial pH 6, 30 degrees C and 48 hours. Experiments were described as
+    triplicated. These are supplied soluble-Cd laboratory cultures, not
+    natural otavite dissolution or ore extraction. The main text does not
+    identify the Cd stock salt or fully describe XRD sample preparation;
+    Section 2.8 identifies a Rigaku Ultima IV instrument. The separate
+    soil-extract experiments are not the phase-specific basis of this mechanism.
+  evidence:
+  - source_ref: yang2026
+    supports: partial
+    explanation: Section 3.3.4 and Figure 7B compare C7-12 before and after
+      Cd treatment at 48 hours. The authors assign two weak reflections at
+      23.49 and 30.28 degrees to CdCO3 using a reference pattern they label
+      ICSD 01-072-1939, and describe the surface substance as most likely
+      otavite. The displayed signal occurs on a substantial bacterial
+      background. No phase fraction, refined structure, isolated pure product
+      or raw diffraction dataset is supplied. Figure 6 shows particles and
+      C, N, O and Cd by SEM-EDS, while Figure 7A shows FTIR changes; these
+      observations alone do not distinguish a crystalline mineral species.
+      The record retains the source's provisional assignment rather than
+      treating CdCO3 composition as conclusive identification.
+  - source_ref: yang2026
+    supports: support
+    explanation: Sections 2.5-2.6 and 3.2, Figures 2-3 and Table 2 support
+      dissolved-Cd removal under the stated culture conditions. Table 2
+      reports 84.61 plus or minus 5.81 percent removal for the optimized
+      single-Cd treatment. The denominator is initial solution Cd, compared
+      with Cd remaining in the centrifuged supernatant measured by flame
+      atomic absorption, not a mass of purified otavite or recovered cadmium.
+      Other one-factor screening percentages refer to different conditions
+      and are not substituted for this table result. No field or industrial
+      deployment is demonstrated.
+  - source_ref: yang2026
+    supports: partial
+    explanation: Figures 2-5 compare Cd concentrations and urea doses,
+      including zero-urea treatment with residual Cd removal; Figures 6-7
+      include cells without added Cd. The inspected complete main and
+      supplement do not describe matched uninoculated, pH-matched chemical,
+      killed-cell or urease-inhibited precipitation controls. Urea-related
+      trends and correlations therefore do not isolate a uniquely biological
+      contribution or demonstrate that viable cells are required at the
+      moment of precipitation. Section 4.2 itself calls for bacterial
+      survival measurements. Enzyme-specific causation and a measured
+      intracellular transport pathway are not established.
+  - source_ref: yang2026
+    supports: partial
+    explanation: Section 2.7, Figure 4 and supplementary Figure S2 define
+      operational fractions from supernatant, flask-wall wash, EDTA-labelled
+      surface extraction and digested pellet. Extracellular precipitation is
+      calculated by subtraction from total Cd; it is not a direct
+      otavite-specific measurement. Section 4.2 acknowledges nonselective
+      extraction and possible speciation changes. These fractions do not
+      establish intracellular localization or quantify how much removed Cd
+      entered otavite. Sections 3.4-3.5 and Figures 8-11 concern distinct
+      soil-solution arms with other source-assigned phases and possible
+      inherited microminerals; their removal rates are not otavite yields.
+      Although Section 3.3.4 invokes a solubility product to suggest
+      environmental stability, Section 4.3 identifies long-term stability
+      testing as future work, so durability is not treated as measured here.
+curation_history:
+- timestamp: '2026-10-14T20:49:08Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created a distinct otavite mineral owner from complete Yang2026 primary and official SI, preserving tentative phase assignment, culture and strain boundaries, unmatched causal controls and solution-removal denominators.
+history_refs:
+- history/records/otavite/2026-10-14T204913Z-codex-40f49f.yaml

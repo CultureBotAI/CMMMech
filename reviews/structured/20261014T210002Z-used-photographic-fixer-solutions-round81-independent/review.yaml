@@ -1,0 +1,411 @@
+schema_version: 1.0.0
+review_id: 20261014T210002Z-used-photographic-fixer-solutions-round81-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of used photographic fixer solutions
+started_at: '2026-10-14T20:51:11.409034Z'
+finished_at: '2026-10-14T21:00:02.717881Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer authored wheatleyite and libethenite only. This target
+    and its CREATE history were authored by round68_new_frontier. Preliminary record
+    reading established scope; successful native inspection preceded scientific field-by-field
+    assessment. Independently read full retained primary text and original claim-bearing
+    graphics, authorities, controls and outcome definitions. Shared source acquisition
+    is disclosed; this is not experimental replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of the distinct used-fixer liquid feed and sequential
+  bacterial conditioning, fungal biomass sorption and abiotic electrowinning. Conflicting
+  feed dilution, eluent recipe and uptake denominators remain explicit; reported product
+  mass and recovery are not independently reconciled.
+source:
+  git_revision: 623b19fe2ac59b8328d0af3002a6c0da4ee064a7
+  state: working_tree
+  inputs:
+  - path: data/records/used-photographic-fixer-solutions.yaml
+    sha256: 7563b9891d5c3395802edc595210856ed3cf1c317db71503ff34d0a7a4b5fbe9
+    role: target
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/used-photographic-fixer-solutions/2026-10-14T204823Z-codex-6c081d.yaml
+    sha256: 604d2547182660d5e4d0d3215528bb9c0a7818548fc489a11210968633e9d91f
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire exact maintained owner, linked canonical CREATE, relevant identity
+    authorities, complete primary text and all experimental graphics, evidence strength,
+    controls, numerical denominators and laboratory scale.
+  selection: Assigned single canonical maintained record. Initial successful native
+    inspection precedes field-by-field assessment; supplemental inspection binds the
+    correct schema and confirms unchanged owner/history/docs.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:used-photographic-fixer-solutions
+targets:
+- target_id: cmmmech:used-photographic-fixer-solutions
+  path: data/records/used-photographic-fixer-solutions.yaml
+  label: used-photographic-fixer-solutions
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/used-photographic-fixer-solutions.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/used-photographic-fixer-solutions.yaml
+    --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual execution 2026-10-14T20:52:38.844545+00:00 to 2026-10-14T20:52:49.051519+00:00;
+    one record, zero failed.
+  target_ids:
+  - cmmmech:used-photographic-fixer-solutions
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch gate 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual coordinator execution 2026-10-14T20:50:36.969271+00:00 to 2026-10-14T20:58:51.320453+00:00;
+    terminal exit 0 independently checked.
+  target_ids:
+  - cmmmech:used-photographic-fixer-solutions
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual coordinator execution 2026-10-14T20:58:51.320489+00:00 to 2026-10-14T20:59:22.394167+00:00;
+    terminal exit 0 independently checked.
+  target_ids:
+  - cmmmech:used-photographic-fixer-solutions
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch gate 3
+  command: uv run --locked cmmmech validate-history --base 623b19fe2ac59b8328d0af3002a6c0da4ee064a7
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual coordinator execution 2026-10-14T20:59:22.394197+00:00 to 2026-10-14T20:59:34.664069+00:00;
+    terminal exit 0 independently checked.
+  target_ids:
+  - cmmmech:used-photographic-fixer-solutions
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual coordinator execution 2026-10-14T20:59:34.664098+00:00 to 2026-10-14T20:59:42.948169+00:00;
+    terminal exit 0 independently checked.
+  target_ids:
+  - cmmmech:used-photographic-fixer-solutions
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/used-photographic-fixer-solutions.yaml
+  locator: 'All fields in exact inspected bytes. Local artifact: /private/tmp/CMMMech-expansion-round81-20261014/data/records/used-photographic-fixer-solutions.yaml'
+  accessed_at: '2026-10-14T21:00:02.717881Z'
+  support: supports
+  summary: Identity, mechanisms, conditions, controls, evidence qualifiers and history
+    links checked.
+  snapshot_sha256: 7563b9891d5c3395802edc595210856ed3cf1c317db71503ff34d0a7a4b5fbe9
+- evidence_id: history
+  kind: record_content
+  reference: history/records/used-photographic-fixer-solutions/2026-10-14T204823Z-codex-6c081d.yaml
+  locator: 'Complete canonical CREATE and corresponding inline event. Local artifact:
+    /private/tmp/CMMMech-expansion-round81-20261014/history/records/used-photographic-fixer-solutions/2026-10-14T204823Z-codex-6c081d.yaml'
+  accessed_at: '2026-10-14T21:00:02.717881Z'
+  support: supports
+  summary: Actual GPT-6/codex actor, current timestamp, target and curation scope
+    agree; no invented historical authorship.
+  snapshot_sha256: 604d2547182660d5e4d0d3215528bb9c0a7818548fc489a11210968633e9d91f
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round81-independent-review/dedup.json
+  locator: 'Actual rg --no-ignore --hidden --follow search for material aliases, DOI
+    and author in current and main records/research/reviews/history plus the two source-cited
+    current raw directories. Complete matching paths in dedup.txt; no stderr. Local
+    artifact: /private/tmp/cmm-round81-independent-review/dedup.json'
+  accessed_at: '2026-10-14T21:00:02.717881Z'
+  support: context_only
+  summary: Related mineral/feed context does not collapse distinct material owners.
+    Bounded ignored-inclusive coverage, not machine-wide absence.
+  snapshot_sha256: e342a6a5e41b8623f57c367adb3f046b7d9a746784e944dfe294b62b5ec117e2
+  search_scope: Actual rg --no-ignore --hidden --follow search for material aliases,
+    DOI and author in current and main records/research/reviews/history plus the two
+    source-cited current raw directories. Complete matching paths in dedup.txt; no
+    stderr.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round81-independent-review/notice-search.json
+  locator: 'Exact DOI correction/erratum/retraction and exact-title/source searches
+    via web on 2026-10-14; first returned sets, no domain or date filters, no pagination.
+    Local artifact: /private/tmp/cmm-round81-independent-review/notice-search.json'
+  accessed_at: '2026-10-14T21:00:02.717881Z'
+  support: context_only
+  summary: No matched corrective notice found in this bounded search. Primary inconsistencies
+    remain unresolved; no universal absence claim.
+  snapshot_sha256: dc68b961d0e563d4dae4cfa55a66072d3fb93a804b87f6ded33a2e92e3dc88b4
+  search_scope: Exact DOI correction/erratum/retraction and exact-title/source searches
+    via web on 2026-10-14; first returned sets, no domain or date filters, no pagination.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round81-independent-review/used-photographic-fixer-solutions/named-validation.json
+  locator: 'Actual named validator receipt with start/finish, command and retained
+    log hash. Local artifact: /private/tmp/cmm-round81-independent-review/used-photographic-fixer-solutions/named-validation.json'
+  accessed_at: '2026-10-14T21:00:02.717881Z'
+  support: supports
+  summary: One record checked, zero failures; structural success is not scientific
+    proof.
+  snapshot_sha256: a423e72fe8123d6fca70199128fcd71b692159c7c97c60555ee7e2fb4657ddb7
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round81-final-gates.json
+  locator: 'All FOUR completed coordinator commands, 2026-10-14T20:50:36.968210+00:00
+    to 2026-10-14T20:59:43.049250+00:00; retained log /private/tmp/cmm-round81-final-gates.log
+    SHA256 be6da2760c4de77f9fa334aa3b47406982628dd290b9b49ecdbb272839e0b6f4. Local
+    artifact: /private/tmp/cmm-round81-final-gates.json'
+  accessed_at: '2026-10-14T21:00:02.717881Z'
+  support: supports
+  summary: Trusted base/worktree, exact command vectors, all exit codes and unchanged
+    owner hashes independently verified.
+  snapshot_sha256: 2c442921cebcdcc981d4e9b0c2300dd3b7665494493391f6c8a8bd62b6fb9de3
+- evidence_id: primary_text
+  kind: primary_source
+  reference: https://doi.org/10.1016/S0032-9592(02)00054-7
+  locator: 'Complete six-page original text, printed pp.855–860, retained derived
+    web-parser lines 0–521; Methods 2.1–2.7, Table 1, Results and Discussion read.
+    Independently reopened the author-shared PDF URL with web tool, which reported
+    6 pages/522 lines. Local file is a text derivative, NOT original PDF bytes. Local
+    artifact: /private/tmp/cmm-round81-resources-research/pethkar2003-web-fulltext.txt'
+  accessed_at: '2026-10-14T21:00:02.717881Z'
+  support: supports
+  summary: Real black-and-white film fixer is treated by bacteria then fungal biomass
+    beads, chemical elution and electrowinning; conflicting concentrations and recipe
+    are visible in original text.
+  snapshot_sha256: a7ac076db69691b44d543dae24beaa6c86d0bfb8995e32e3b3a6c2b85bab6647
+- evidence_id: fig1
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S0032959202000547-gr1.gif
+  locator: 'Original publisher Figure 1 GIF independently visually inspected through
+    retained enlarged PNG; original and derivative remain separate. Local artifact:
+    /private/tmp/cmm-round81-resources-research/pethkar2003-figure1.gif'
+  accessed_at: '2026-10-14T21:00:02.717881Z'
+  support: supports
+  summary: Prepared silver-solution optimization/model plot, not a measured real-fixer
+    recovery curve; graphical ranges and plateaus are kept separate from source prose.
+  snapshot_sha256: cab37e02ddceedf1fb313bf45d4fc94a0fa391f6c91b9f2e74e187bd4c5818f2
+- evidence_id: fig2
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S0032959202000547-gr2.gif
+  locator: 'Original publisher Figure 2 GIF independently visually inspected through
+    retained enlarged PNG; original and derivative remain separate. Local artifact:
+    /private/tmp/cmm-round81-resources-research/pethkar2003-figure2.gif'
+  accessed_at: '2026-10-14T21:00:02.717881Z'
+  support: supports
+  summary: Prepared silver-solution optimization/model plot, not a measured real-fixer
+    recovery curve; graphical ranges and plateaus are kept separate from source prose.
+  snapshot_sha256: 4a0e48f880a265bd32ce71f2a66063678d4a310d10c1b75e47257a93cc535927
+- evidence_id: fig3
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S0032959202000547-gr3.gif
+  locator: 'Original publisher Figure 3 GIF independently visually inspected through
+    retained enlarged PNG; original and derivative remain separate. Local artifact:
+    /private/tmp/cmm-round81-resources-research/pethkar2003-figure3.gif'
+  accessed_at: '2026-10-14T21:00:02.717881Z'
+  support: supports
+  summary: Prepared silver-solution optimization/model plot, not a measured real-fixer
+    recovery curve; graphical ranges and plateaus are kept separate from source prose.
+  snapshot_sha256: da15f3c5552a97ca787368ffc12dfd247a4c5ff83ad80b17b58b5b7f1cecc673
+- evidence_id: fig4
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S0032959202000547-gr4.gif
+  locator: 'Original publisher Figure 4 GIF independently visually inspected through
+    retained enlarged PNG; original and derivative remain separate. Local artifact:
+    /private/tmp/cmm-round81-resources-research/pethkar2003-figure4.gif'
+  accessed_at: '2026-10-14T21:00:02.717881Z'
+  support: supports
+  summary: Prepared silver-solution optimization/model plot, not a measured real-fixer
+    recovery curve; graphical ranges and plateaus are kept separate from source prose.
+  snapshot_sha256: 2b99f9338993a9c99b60d0fec385cee56ec7f75193e3810fedabaa56340a7aa5
+- evidence_id: fig5
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S0032959202000547-gr5.gif
+  locator: 'Original publisher Figure 5 GIF independently visually inspected through
+    retained enlarged PNG; original and derivative remain separate. Local artifact:
+    /private/tmp/cmm-round81-resources-research/pethkar2003-figure5.gif'
+  accessed_at: '2026-10-14T21:00:02.717881Z'
+  support: supports
+  summary: Prepared silver-solution optimization/model plot, not a measured real-fixer
+    recovery curve; graphical ranges and plateaus are kept separate from source prose.
+  snapshot_sha256: 1c7873f34395aa6ac4d3ad0af0384d6dd9e8b7ac1e77460d4651067e58b5aa2b
+- evidence_id: fig6
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S0032959202000547-gr6.gif
+  locator: 'Original publisher Figure 6 GIF independently visually inspected through
+    retained enlarged PNG; original and derivative remain separate. Local artifact:
+    /private/tmp/cmm-round81-resources-research/pethkar2003-figure6.gif'
+  accessed_at: '2026-10-14T21:00:02.717881Z'
+  support: supports
+  summary: Prepared silver-solution optimization/model plot, not a measured real-fixer
+    recovery curve; graphical ranges and plateaus are kept separate from source prose.
+  snapshot_sha256: 7697f59979affbbf8b1815d6db8bdfa5c31d43cfa0a562bc6f0883790d541369
+- evidence_id: bacterium
+  kind: primary_source
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=931
+  locator: 'Complete current NCBI XML independently parsed/read; species-rank TaxId
+    931. Local artifact: /private/tmp/cmm-round81-resources-research/ncbi931.xml'
+  accessed_at: '2026-10-14T21:00:02.717881Z'
+  support: context_only
+  summary: Thiobacillus thioparus species mapping, not experimental strain authentication.
+  snapshot_sha256: 6807ae392c0c45cda5fca6103478179e6ddd10a393c15a39805672e2d5e6bab4
+- evidence_id: fungus
+  kind: primary_source
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=29917
+  locator: 'Complete current NCBI XML independently parsed/read; species-rank TaxId
+    29917. Local artifact: /private/tmp/cmm-round81-resources-research/ncbi29917.xml'
+  accessed_at: '2026-10-14T21:00:02.717881Z'
+  support: context_only
+  summary: Cladosporium cladosporioides species mapping, not experimental strain authentication.
+  snapshot_sha256: a4badb2c1052b7be2bb49b8ee18f215e29c7ac482d485220dd63417aacae636c
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Actual used liquid feed
+  outcome: supported
+  summary: Section 2.2 identifies locally procured used black-and-white photographic
+    fixer. This is distinct from discarded films, prepared silver solutions, unused
+    fixer and developer. No universal composition or inherited criticality asserted.
+  target_ids:
+  - cmmmech:used-photographic-fixer-solutions
+  evidence_ids:
+  - owner
+  - primary_text
+- assessment_id: mechanism
+  area: evidence
+  topic: Separate living culture, harvested biomass and abiotic recovery
+  outcome: supported
+  summary: T. thioparus MCM B-39 culture precedes centrifugation/filtration; separately
+    produced C. cladosporioides number 1 beads sorb silver. Their viability and proprietary
+    matrix are unspecified. Elution and electrowinning are chemical/electrochemical,
+    not microbial metal reduction.
+  target_ids:
+  - cmmmech:used-photographic-fixer-solutions
+  evidence_ids:
+  - primary_text
+  - bacterium
+  - fungus
+  - owner
+- assessment_id: controls
+  area: evidence
+  topic: Actual waste versus synthetic optimization
+  outcome: supported
+  summary: Original specifies an uninoculated fixer control without a separate endpoint.
+    Figures 1–6 concern prepared silver solutions and model fits. No matrix-only/untreated-fixer
+    column or stated independent replicate number supports exclusive causal attribution.
+  target_ids:
+  - cmmmech:used-photographic-fixer-solutions
+  evidence_ids:
+  - primary_text
+  - fig1
+  - fig2
+  - fig3
+  - fig4
+  - fig5
+  - fig6
+  - owner
+- assessment_id: quantity
+  area: quantity
+  topic: Source-reported mass and inconsistent denominators
+  outcome: supported
+  summary: Reported 127 mg metallic silver and 70% overall recovery are accurately
+    attributed but unreconciled. Section 2.2/Table 1/2.7 dilution conflict, sulfate
+    differences, 1% versus 10% ethanol, and biomass versus bead denominators are explicit.
+    Fitted monolayer capacity does not equal cumulative repeated loading.
+  target_ids:
+  - cmmmech:used-photographic-fixer-solutions
+  evidence_ids:
+  - primary_text
+  - fig4
+  - fig5
+  - fig6
+  - owner
+- assessment_id: scale
+  area: scope
+  topic: Laboratory method and unresolved performance
+  outcome: supported
+  summary: The exact laboratory inoculum, nominal feed, column and electrolysis conditions
+    are supported. Product purity, complete process inventory and economics are unestablished.
+    The record does not claim safe/industrial deployment or environmental superiority.
+  target_ids:
+  - cmmmech:used-photographic-fixer-solutions
+  evidence_ids:
+  - primary_text
+  - owner
+- assessment_id: provenance
+  area: provenance
+  topic: Canonical authorship, byte scope and actual gates
+  outcome: supported
+  summary: Current owner/history hashes remain identical to native inspection. Named
+    validation and the four actual completed batch commands pass against trusted base
+    623b19f. Reviewer made no owner or history edits.
+  target_ids:
+  - cmmmech:used-photographic-fixer-solutions
+  evidence_ids:
+  - owner
+  - history
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- The complete original was read through a derived web-parser snapshot and independently
+  reopened online. Original local PDF bytes and full-page visual layout were unavailable;
+  all six publisher graphics were separately obtained and visually checked. Table
+  1 was checked as complete original text, not independently rendered page pixels.
+- Source dilution, sulfate, ethanol, biomass/bead denominators and graphical/text
+  optimization inconsistencies remain unresolved; no repaired inventory or inferred
+  detection-limit zero.
+- No separate reported control endpoint, matched matrix control or explicit replicate
+  count; proprietary bead composition and viability unreported.
+- The 127 mg and 70% are attributed source results, not independently reconciled yield
+  or product-purity evidence.
+- No supplement was identified in the inspected original; this is not an exhaustive
+  live publisher supplement inventory. Bounded notice searches cannot prove no correction
+  exists.
+notes:
+- No owner or history edits by this reviewer; no independent physical experiment performed.
+- A first inspection attempt used a nonexistent schema input path and failed before
+  judgment. Successful native inspection and a later unchanged-input inspection with
+  src/cmmmech/schema/cmmmech.yaml are retained externally; no source or gate receipt
+  was rewritten.
+- Named validation ran independently; all four batch gates ran under coordinator control
+  and their actual terminal receipt, log and unchanged target hash were checked.

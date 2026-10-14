@@ -1,0 +1,9 @@
+# Independent round81 local publication audit
+
+Verdict: **pass with limitations**. Actual audit interval 2026-10-14T21:09:31.054629Z to 2026-10-14T21:10:09.790399Z; reserved filename time is separately disclosed. Worktree `/private/tmp/CMMMech-expansion-round81-20261014`, base `623b19fe2ac59b8328d0af3002a6c0da4ee064a7`, branch `curate/cmm-expansion-round81-20261014`.
+
+Verified 92 exact commit candidates and five concrete independent scientific reviews. Corpus:389 records,447 histories,464 structured reviews,82 available bases and389/389 exact current positive scientific coverage. I authored otavite, independently assessed by phosphate reviewer, and reviewed wheatleyite/libethenite. This operational audit does not self-accept authored science.
+
+Fresh baseline and actual four-command batch, canonical review checker, complete current coverage,22 governed-artifact checks and protected original main/skill snapshots passed. No native scientific corrective finding requires retirement. README D1/#269 has an exact independently checked successor; the issue remains open until PR closure. Source issues120,265,267,268 remain open; live title/body/state checked and PR text does not close them.
+
+All 28 accepted primary/authority bindings match actual nonempty acquired artifacts. Fixer text is explicitly a derived complete web-parser snapshot, independently paired with six original publisher graphics; no local original PDF is invented. Dossiers, current helpers/historical derivation, final configuration, manifest, README/pages and prepared PR text were checked. The earlier static audit’s provisional config remains immutable; final config is independently rebound. No schema, validator, tests or governed edits are included. Historical fleet convergence is distinguished from current CMMMech pin/queue checks; no shepherd model invocation is claimed. Hosted CI/preflight/merge/cleanup remain future work.
