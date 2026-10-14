@@ -1,0 +1,30 @@
+{
+  "recorded_at": "2026-10-14T11:37:32.840803+00:00",
+  "reviewer": "codex GPT-6 /root/round68_iron_sulfides",
+  "scope": "Pre-execution static assembly audit; no production mutation or scientific finding.",
+  "passed": false,
+  "verdict": "needs_curation",
+  "input": "/private/tmp/cmm-round70-build-report-initial-20261014T113732Z.py",
+  "sha256": "307dcf255e44c9728b8de7b5f9c352fec8a3e0c2fdc1608fa758005a6bea2223",
+  "findings": [
+    {
+      "id": "OP1",
+      "severity": "minor",
+      "finding": "Assembly glob expects helper-peer-static-*.json/md but completed peer artifacts use helper-peer-static.json/md. Current assertion would stop assembly.",
+      "correction": "Retain exact existing pair."
+    },
+    {
+      "id": "OP2",
+      "severity": "minor",
+      "finding": "Regression JSON retained without fixture source; exact tested external source should remain inspectable.",
+      "correction": "Retain regression.py alongside receipt."
+    },
+    {
+      "id": "ED1",
+      "severity": "minor",
+      "finding": "PR-body validation coverage parenthesis is unclosed.",
+      "correction": "Close parenthesis before sentence end."
+    }
+  ],
+  "readme_clarity_suggestion": "Gibbsite boundary should explicitly say no measured recovery yield rather than wording that can imply one."
+}

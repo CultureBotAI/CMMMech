@@ -1,0 +1,129 @@
+id: cmmmech:chlorapatite
+name: Chlorapatite
+material_kind: mineral
+description: Chlorapatite is the chlorine-dominant apatite mineral species Ca5(PO4)3Cl, distinct from
+  hydroxylapatite, fluorapatite, pyromorphite, generic apatite and mixed phosphate-rock resources. The
+  September 2026 IMA list marks it renamed with 2010 s.p.; this special-procedure notation is not a new-mineral
+  accession. The accepted experiment used a characterized synthetic analogue as a bacterial nutrient-source
+  comparison. Its findings are not inherited from the pyromorphite dissolution arm or from elemental phosphorus
+  criticality.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Definitions pp 1-2 and Chlorapatite
+    row p43, Rn, 2010 s.p. Official list reopened and retained original row visually inspected 14 October
+    2026.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: chlorapatite_handbook
+  title: Handbook of Mineralogy. Chlorapatite. Complete one-page identity entry; Cl-dominant species and
+    polymorph context, not an exact symmetry assignment to the experimental powder.
+  url: https://www.handbookofmineralogy.org/pdfs/chlorapatite.pdf
+  accessed_on: '2026-10-14'
+- id: topolska_2014
+  title: Topolska, Justyna; Latowski, Dariusz; Kaschabek, Stefan; Manecki, Maciej; Merkel, Broder; Rakovan,
+    John (2014; online 20 July 2013). Pb remobilization by bacterially mediated dissolution of pyromorphite
+    Pb5(PO4)3Cl in presence of phosphate-solubilizing Pseudomonas putida. Environmental Science and Pollution
+    Research 21:1079-1089. DOI 10.1007/s11356-013-1968-3; PMC3880484. Complete 11-page retained original
+    re-read with chlorapatite comparisons in Tables 1-3 and Figures 1-2 independently inspected. Same
+    study also represented under lead and pyromorphite.
+  url: https://doi.org/10.1007/s11356-013-1968-3
+  accessed_on: '2026-10-14'
+- id: ncbi_putida
+  title: NCBI Taxonomy 303, Pseudomonas putida, species. Official XML rechecked 14 October 2026. Species
+    identity does not independently verify strain IBPRS KKP 1136.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=303
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: putida_chlorapatite_nutrient_access
+  name: Bacterial growth with chlorapatite as the added phosphate source
+  process: other
+  description: Pseudomonas putida cultures showed limited growth in phosphate-deficient medium containing
+    synthetic chlorapatite. The observation supports nutrient accessibility in the tested system; it does
+    not quantify bacterial enhancement of chlorapatite dissolution or demonstrate phosphorus recovery.
+  context: Topolska et al. synthesized the source-assigned chlorapatite by heating 0.5 g commercial synthetic
+    hydroxylapatite with 0.5 g CaCl2 at 950 degrees C for 12 h. Table 1 diffraction spacings and Figure
+    1b SEM-EDS support the assigned phase; the reported particle range was 10-80 micrometres. The paper
+    reports pure chlorapatite, but gives neither a quantitative minor-phase detection limit nor a complete
+    chlorapatite wet-chemical analysis; the separately measured Pb5.09(PO4)2.96Cl formula is for pyromorphite
+    only. Portions of 0.05 g were heated at 180 degrees C for 3 h before use; unchanged XRD/SEM-EDS after
+    heating is asserted as data not shown. Experiments used 100 mL medium in 500 mL flasks, triplicates,
+    21 +/- 1 degrees C, 100 rpm and 305 h. MP+ contained 0.5 g/L K2HPO4, 5 g/L disodium succinate, 6.5
+    g/L glycerol, salts and source-reported 30 mM FeEDTA; MP- omitted K2HPO4. Initial pH was adjusted
+    to approximately 7.3. The unusual FeEDTA specification is retained as reported, not silently corrected.
+    E.I control 2 used source-named P. putida IBPRS KKP 1136, earlier identified by numerical taxonomy.
+    Cells were grown to OD600 0.8, centrifuged, resuspended in the experimental solution and inoculated
+    1:100. Optical density was measured at 600 nm with settled mineral particles; source controls included
+    no-mineral cultures and pyromorphite-containing cultures in MP+ and MP-. No killed-cell arm or direct
+    phosphorus tracer was reported.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:303
+    label: Pseudomonas putida
+  evidence:
+  - source_ref: topolska_2014
+    supports: support
+    explanation: Table 2 E.I and Figure 2b-c show growth with chlorapatite in MP-, whereas the no-mineral
+      MP- comparison showed no sustained culture growth. Growth remained much lower than nutrient-rich
+      cultures. The accepted result is the optical-density phenotype, without converting it to viable
+      counts, biomass yield or a phase-specific phosphorus extraction percentage.
+  - source_ref: topolska_2014
+    supports: partial
+    explanation: Figure 2a shows no apparent mineral-dependent growth advantage in phosphate-rich MP+
+      within reported triplicate variability. The chlorapatite comparison therefore concerns phosphate
+      limitation and does not establish a general microbial growth benefit.
+  - source_ref: topolska_2014
+    supports: partial
+    explanation: Table 2 E.II and Table 3 provide solution-chemistry results for chlorapatite only in
+      uninoculated controls. The biotic phosphate and Pb release series and rising-pH observations in
+      Figures 3-5 concern pyromorphite. They cannot be relabeled as a chlorapatite biotic dissolution
+      series. Abiotic phosphorus release can supply the nutrient used by the cultures; enhanced chlorapatite
+      dissolution, acidification and a specific enzyme or chelator are not established.
+  - source_ref: topolska_2014
+    supports: partial
+    explanation: The two mineral substrates differed in composition and particle-size range and were not
+      matched by surface area. Their culture-growth contrast is not a normalized dissolution-rate comparison.
+      The study was a laboratory synthetic-mineral experiment and does not measure soil performance, isolated
+      product recovery or long-term stability.
+  - source_ref: ncbi_putida
+    supports: context_only
+    explanation: NCBI 303 verifies the species label only; it does not authenticate the numerical-taxonomy
+      assignment or stock identity of IBPRS KKP 1136.
+- id: chlorapatite_abiotic_phosphate_release
+  name: Abiotic phosphate release in nutrient-medium controls
+  process: other
+  description: Synthetic chlorapatite released phosphorus into the phosphate-deficient abiotic control.
+    This explicitly nonmicrobial observation provides an alternative supply pathway for the growth experiment.
+  context: Topolska et al. synthesized the source-assigned chlorapatite by heating 0.5 g commercial synthetic
+    hydroxylapatite with 0.5 g CaCl2 at 950 degrees C for 12 h. Table 1 diffraction spacings and Figure
+    1b SEM-EDS support the assigned phase; the reported particle range was 10-80 micrometres. The paper
+    reports pure chlorapatite, but gives neither a quantitative minor-phase detection limit nor a complete
+    chlorapatite wet-chemical analysis; the separately measured Pb5.09(PO4)2.96Cl formula is for pyromorphite
+    only. Portions of 0.05 g were heated at 180 degrees C for 3 h before use; unchanged XRD/SEM-EDS after
+    heating is asserted as data not shown. Experiments used 100 mL medium in 500 mL flasks, triplicates,
+    21 +/- 1 degrees C, 100 rpm and 305 h. MP+ contained 0.5 g/L K2HPO4, 5 g/L disodium succinate, 6.5
+    g/L glycerol, salts and source-reported 30 mM FeEDTA; MP- omitted K2HPO4. Initial pH was adjusted
+    to approximately 7.3. The unusual FeEDTA specification is retained as reported, not silently corrected.
+    E.II control 2 contained no added bacteria. Solution samples were centrifuged and 0.2-micrometre filtered
+    before ICP-MS analysis. Phosphate-rich controls already contained dissolved phosphate; their final
+    total P is not all mineral-derived.
+  microbial: false
+  evidence:
+  - source_ref: topolska_2014
+    supports: support
+    explanation: Table 3 gives final total filtered-solution P of 119 +/- 10.7 micromolar in abiotic MP-
+      with chlorapatite and 2796 +/- 9 micromolar in abiotic MP+ with chlorapatite, reported as triplicate
+      standard deviations. These are endpoint solution concentrations after 305 h, not bacterial release
+      measurements, mineral conversion fractions or isolated P-product yields.
+  - source_ref: topolska_2014
+    supports: partial
+    explanation: Starting phosphate in MP+ contributes to its final P concentration. The study does not
+      report a complete chlorapatite Ca/P mass balance or isolate a recovered phosphorus product. Table
+      3 is part of the same experiment used under lead and pyromorphite, not independent replication.
+curation_history:
+- timestamp: '2026-10-14T11:27:17.455877+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created chlorapatite mineral record with primary experimental evidence, exact phase and assay
+    boundaries, controls and unresolved causal limits.
+history_refs:
+- history/records/chlorapatite/2026-10-14T112720Z-codex-ae98f3.yaml

@@ -1,0 +1,129 @@
+id: cmmmech:hydroxylapatite
+name: Hydroxylapatite
+material_kind: mineral
+description: Hydroxylapatite is the hydroxyl-dominant apatite mineral species Ca5(PO4)3(OH), commonly
+  called hydroxyapatite in experimental literature. The September 2026 IMA list gives renamed status and
+  2010 s.p.; this is a nomenclatural special procedure, not a new-mineral accession. It is distinct from
+  fluorapatite, chlorapatite, generic apatite, mixed phosphate rock and elemental phosphorus or calcium.
+  This record concerns source-assigned nanocrystalline hydroxyapatite in a laboratory biofilm model, without
+  assuming a measured pure end-member composition, criticality designation or industrial recovery.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Definitions pp 1-2 and Hydroxylapatite
+    row p99, Rn, 2010 s.p. Official list reopened and retained original row visually inspected on 14 October
+    2026.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: hydroxylapatite_handbook
+  title: Handbook of Mineralogy. Hydroxylapatite. Complete one-page entry; OH-dominant species identity,
+    not composition analysis of the experimental biofilm.
+  url: https://www.handbookofmineralogy.org/pdfs/hydroxylapatite.pdf
+  accessed_on: '2026-10-14'
+- id: zorzetto_2023
+  title: Zorzetto, Laura; Scoppola, Ernesto; Raguin, Emeline; Blank, Kerstin G.; Fratzl, Peter; Bidan,
+    Cecile M. (2023). Induced Mineralization of Hydroxyapatite in Escherichia coli Biofilms and the Potential
+    Role of Bacterial Alkaline Phosphatase. Chemistry of Materials 35(7):2762-2772. DOI 10.1021/acs.chemmater.2c02969.
+    Complete 11-page publisher original retained by Max Planck; main Figures 1-4 inspected.
+  url: https://doi.org/10.1021/acs.chemmater.2c02969
+  accessed_on: '2026-10-14'
+- id: zorzetto_2023_si
+  title: Zorzetto et al. 2023 supporting information, DOI 10.1021/acs.chemmater.2c02969.s001; ACS Figshare
+    article 22461879, file 39913176, cm2c02969_si_001.pdf. Complete 10-page PDF read and claim-bearing
+    Figures S1,S5-S9 and Tables S3,S10 visually inspected. Separate 180 MB reconstruction video S2 was
+    not acquired; no quantitative segmentation claim is adopted.
+  url: https://doi.org/10.1021/acs.chemmater.2c02969.s001
+  accessed_on: '2026-10-14'
+- id: ncbi_w3110
+  title: NCBI Taxonomy 316407, Escherichia coli str. K-12 substr. W3110, no-rank taxon under E. coli.
+    Official XML checked 14 October 2026; name provenance does not authenticate the transformed stock used
+    in the experiment.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=316407
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: w3110_biofilm_calcium_phosphate
+  name: Biofilm-associated nanocrystalline calcium-phosphate precipitation
+  process: biomineralization
+  description: E. coli W3110 biofilms grown with calcium chloride and beta-glycerophosphate contained
+    diffraction features assigned to hydroxyapatite. Enzyme additions, inhibitor experiments and fixed-biofilm
+    comparisons support a possible phosphatase contribution but do not establish that living cells or
+    a uniquely identified PhoA pathway are necessary.
+  context: Zorzetto et al. used E. coli K-12 W3110 bearing constitutive mCherry plasmid pMP7604. A single
+    colony was grown overnight in LB at 37 degrees C and 250 rpm; nine 5-microlitre droplets of approximately
+    OD600 5.0 suspension were placed on 15-cm plates and incubated at 28 degrees C for 5, 7 or 10 days.
+    The salt-free LB base contained 1.8% w/v agar, 1% tryptone and 0.5% yeast extract. Mineralizing arms
+    added 10 mM sodium beta-glycerophosphate with either 1 or 10 mM CaCl2 (P-Ca 10:1 or 10:10); precursor
+    stocks were 0.22-micrometre filtered and added after base autoclaving. Calcein 4 micromolar was used
+    where required. No culture-pH trajectory is supplied. Except stereomicroscopy samples, the Methods
+    specify fixation with 4% paraformaldehyde in phosphate-buffered saline followed by PBS rinsing. Most
+    diffraction samples were then lyophilized and ground; Figure 4B additionally examines hydrated, non-lyophilized
+    samples. These are laboratory agar/biofilm composites, not isolated mineral product or treated natural
+    ore.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:316407
+    label: Escherichia coli str. K-12 substr. W3110
+  evidence:
+  - source_ref: zorzetto_2023
+    supports: support
+    explanation: 'Results and Figure 3 compare biofilm WAXS against reference hydroxyapatite powder: stronger
+      characteristic reflections develop in P-Ca 10:10 over 5-10 days; the lower-calcium 10:1 arm is reported
+      to show mineral reflections by day 10. Figure 4B supports an apatite-like signal in hydrated samples,
+      reducing reliance on lyophilization alone. Diffraction supports the source phase assignment, but
+      no OH/F/Cl occupancy measurement or quantitative phase-purity refinement of the biofilm is reported.
+      Generic calcium staining alone is not treated as phase identification.'
+  - source_ref: zorzetto_2023_si
+    supports: partial
+    explanation: Figures S5-S6 compare salt-free control biofilms, supplemented agar sampled away from
+      biofilms, near-biofilm residue and single-precursor arms. Phosphate-only supplementation showed
+      no comparable mineral reflections; calcium-only biofilms showed weak features, with yeast-extract
+      P proposed as an alternative phosphate source. These controls and main Figure 4B constrain preparation
+      artifacts but do not provide a phosphate-source tracer or a fixation-free complete mass balance.
+      Salt-free means no added NaCl in the LB base, not chemically ion-free medium.
+  - source_ref: zorzetto_2023
+    supports: partial
+    explanation: Figure 4A shows delayed/weaker mineral reflections with 20 mM L-glutathione in the agar;
+      its preculture also received 5 mM inhibitor. Residual reflections remained at later times. This
+      is not a phoA deletion/complementation test or proof of an exclusive enzyme mechanism. The paper
+      describes an essential and sufficient role more strongly than the controls establish.
+  - source_ref: zorzetto_2023_si
+    supports: partial
+    explanation: Figure S7 shows inhibitor-treated biofilm diameters resembling the salt-free control
+      and larger than the mineralizing P-Ca 10:10 arm without inhibitor at later times. Therefore the
+      general statement that inhibitor treatment did not alter growth cannot be used as evidence of identical
+      biofilm development across the actual mineralizing comparison. Diameter is not viable-cell number
+      or metabolic rate.
+  - source_ref: zorzetto_2023
+    supports: partial
+    explanation: Purified E. coli ALP was applied as 100 microlitres at 20 U/mL in 0.1 M glycine/NaOH
+      buffer, pH 10.4, with 1 mM MgCl2 and 1 mM ZnCl2 onto P-Ca 10:10 agar overnight at 28 degrees C (Figure
+      4B). Mineral-associated signals support precipitation in this enzyme-containing preparation. No
+      matched buffer-only or inactive-enzyme agar arm is shown, so alkalinity, added ions and enzyme action
+      are not independently partitioned.
+  - source_ref: zorzetto_2023_si
+    supports: partial
+    explanation: Figure S9 used five-day salt-free biofilms fixed in 4% PFA/PBS, pooled and resuspended
+      in water, then deposited on new agar for 10 days at 28 degrees C; source-assigned hydroxyapatite
+      appeared on P-Ca 10:10. Table S10 separately compares medium, overnight culture, purified enzyme,
+      fixed biofilm and filtered/sonicated culture material after 3 days in liquid media at 28 degrees
+      C, 120 rpm. Fixed material retained measured phosphatase-assay signal and could mineralize; living-cell
+      necessity is therefore not inferred. Residual phosphate from fixation and assay-specific handling
+      remain possible contributors, and no quantitative recovery fraction is supplied.
+  - source_ref: zorzetto_2023
+    supports: partial
+    explanation: Figures 1-2 locate mineral-associated signals in a heterogeneous biofilm and its surroundings.
+      Scherrer sizes are diffraction-based estimates rather than direct particle dimensions; Table S3
+      local segmented volumes are not whole-biofilm mineral yield. This record adopts neither fitted crystal-size
+      values nor segmented population percentages, and does not infer cell death, cooperative behavior
+      or industrial material performance from these images.
+  - source_ref: ncbi_w3110
+    supports: context_only
+    explanation: NCBI 316407 supplies the W3110 taxon label. It does not establish plasmid carriage, exact
+      laboratory-stock authentication or the mineralization phenotype independently of the experiment.
+curation_history:
+- timestamp: '2026-10-14T11:27:13.959985+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created hydroxylapatite mineral record with primary experimental evidence, exact phase and
+    assay boundaries, controls and unresolved causal limits.
+history_refs:
+- history/records/hydroxylapatite/2026-10-14T112716Z-codex-aed1c2.yaml

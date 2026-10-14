@@ -1,0 +1,309 @@
+schema_version: 1.0.0
+review_id: 20261014T113925Z-gibbsite-round70-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Gibbsite
+started_at: '2026-10-14T11:33:18.974911Z'
+finished_at: '2026-10-14T11:39:25.190237Z'
+reviewer:
+  identity: codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Record and CREATE sidecar authored by /root/round68_iron_sulfides.
+    Root independently inspected source text, claim-bearing original graphics and
+    authorities; root did not edit the scientific record or history. Source downloads
+    are shared. Root authors publication documents and helpers.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Distinct gibbsite identity and abiotic alkaline dissolution are supported.
+  Direct step retreat, bulk monomer spectroscopy, machine-learning reconstruction
+  and constrained simulations remain separate evidence layers. The dimer pathway is
+  qualified, with alternative pathways and no microbial or recovery claim.
+source:
+  git_revision: 1d40bb5d7496a02b937acc1f6ef3aec5af5d32e7
+  state: working_tree
+  inputs:
+  - path: data/records/gibbsite.yaml
+    sha256: 26913622b6ff36f836794270e33c06947c9adec8513ccc238b78075763cb52d8
+    role: target
+  - path: history/records/gibbsite/2026-10-14T113244Z-codex-fd33d9.yaml
+    sha256: ae4e37bd4c8f65a9166804c1a9f05fe2faba53ce1112ec9b87c8f5d007dc422f
+    role: context
+scope:
+  description: Entire final mineral record, canonical history, authority identity
+    and primary abiotic mechanism evidence.
+  selection: Assigned new owner; native inspect before final assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:gibbsite
+targets:
+- target_id: cmmmech:gibbsite
+  path: data/records/gibbsite.yaml
+  label: Gibbsite
+  kind: maintained
+  ownership_note: Maintained record YAML and canonical history own this state.
+checks:
+- check_id: named
+  name: Reviewer named validation
+  command: uv run --locked cmmmech validate data/records/gibbsite.yaml
+  status: passed
+  required: true
+  summary: Reviewer executed named validation in round70 worktree; session72427 exited0.
+    Retained /private/tmp/cmm-round70-gibbsite-named.log reports Checked1record;0failed.
+  target_ids:
+  - cmmmech:gibbsite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - record
+- check_id: batch_0
+  name: Completed batch gate
+  command: just check
+  status: passed
+  required: true
+  summary: Root execution 2026-10-14T11:33:43.296738+00:00 to 2026-10-14T11:37:15.611892+00:00;
+    retained log hash verified.
+  target_ids:
+  - cmmmech:gibbsite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Completed batch gate
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Root execution 2026-10-14T11:37:15.611913+00:00 to 2026-10-14T11:37:23.980116+00:00;
+    retained log hash verified.
+  target_ids:
+  - cmmmech:gibbsite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Completed batch gate
+  command: uv run --locked cmmmech validate-history --base 1d40bb5d7496a02b937acc1f6ef3aec5af5d32e7
+  status: passed
+  required: true
+  summary: Root execution 2026-10-14T11:37:23.980141+00:00 to 2026-10-14T11:37:29.732952+00:00;
+    retained log hash verified.
+  target_ids:
+  - cmmmech:gibbsite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/gibbsite.yaml
+  locator: Entire inspected final record
+  accessed_at: '2026-10-14T11:39:25.190237Z'
+  support: supports
+  summary: Distinct gibbsite identity and abiotic alkaline dissolution are supported.
+    Direct step retreat, bulk monomer spectroscopy, machine-learning reconstruction
+    and constrained simulations remain separate evidence layers. The dimer pathway
+    is qualified, with alternative pathways and no microbial or recovery claim.
+  snapshot_sha256: 26913622b6ff36f836794270e33c06947c9adec8513ccc238b78075763cb52d8
+- evidence_id: history
+  kind: record_content
+  reference: history/records/gibbsite/2026-10-14T113244Z-codex-fd33d9.yaml
+  locator: Entire canonical CREATE sidecar and distinct inline curation event
+  accessed_at: '2026-10-14T11:39:25.190237Z'
+  support: supports
+  summary: Actual actor/model, target, dates and performed work match; no invented
+    prior authorship. Trusted-base append-only validation passed.
+  snapshot_sha256: ae4e37bd4c8f65a9166804c1a9f05fe2faba53ce1112ec9b87c8f5d007dc422f
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round70-final-gates.json
+  locator: Completed commands and retained log hash
+  accessed_at: '2026-10-14T11:39:25.190237Z'
+  support: supports
+  summary: Root verified successful just check, nonempty corpus validation and trusted-base
+    history before saving.
+  snapshot_sha256: 901e0e7e3ecaf5f364fa05b6c1f5dfcfb231dca506ef61e77988b19f9ee39cfb
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1073/pnas.2504109122
+  locator: Complete primary introduction, Results/Discussion, Materials/Methods, main
+    Figures1–5
+  support: supports
+  summary: Independently read complete scientific main text from legitimate JATS and
+    all five original main graphics. Synthetic nanoplates dissolve in static NaOH
+    at20C, with surface-orientation differences and proposed dimer-assisted acute-edge
+    retreat. Bulk NMR is a separate1g/L assay. PMID/PMCID/title match; current direct
+    browser opens challenged/empty, not claimed as successful full-text access.
+  accessed_at: '2026-10-14T11:39:25.190237Z'
+  snapshot_sha256: 31af43decdeaaca6b6bedf6ee518a1387075fde839b9bf3eb16a976cdb6165b4
+- evidence_id: si
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12541406/supplementaryFiles
+  locator: 26-page original SI, complete text; FiguresS1–S6,S8–S21 visually inspected;
+    MoviesS1/S2 sampled13frames each from curator-generated montages
+  support: supports
+  summary: SI confirms phase characterization, rapid0.4M limits, both S4/S5 labelled0.01M,
+    distinct monomer NMR signal and Raman detection limits. Movies show retreat with
+    and without contour overlays, not independent assays; no frame-derived velocity
+    recalculation. FigureS7 symmetry schematic was text/caption checked only.
+  accessed_at: '2026-10-14T11:39:25.190237Z'
+  snapshot_sha256: 47e6aa5d3a11339412ca0b2f882152497cddd862f771e55babf2661f69d075b9
+- evidence_id: limits
+  kind: primary_source
+  reference: https://doi.org/10.1073/pnas.2504109122
+  locator: Main Fig4/5 and modeling Methods; SIpp2–4, FiguresS9,S13,S16–S21
+  support: partial
+  summary: 500 simulated image pairs and synthetic validation errors do not establish
+    experimental atomic ground truth. Manual OH attachment and fixed dimer distance
+    constrain simulations; trajectory-block variation is not independent experiment
+    uncertainty. NMR detects aluminate monomer, not bulk dimers. Pseudo-second-order
+    fitting assumes near-constant OH and area;18percent dissolved mass is not recovery.
+    Predicted rate contrast differs from observed contrast and obtuse-edge monomer
+    pathway remains explicit.
+  accessed_at: '2026-10-14T11:39:25.190237Z'
+  snapshot_sha256: 31af43decdeaaca6b6bedf6ee518a1387075fde839b9bf3eb16a976cdb6165b4
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitionspp1–2 and Gibbsite row PDFp82
+  support: supports
+  summary: Previously acquired official document and row independently inspected.
+    Al(OH)3,A,1962s.p.; special-procedure year is not a numbered mineral accession.
+  accessed_at: '2026-10-14T11:39:25.190237Z'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/gibbsite.pdf
+  locator: Complete one-page entry, version1 2001–2005
+  support: supports
+  summary: Independent full-page image check confirms monoclinic Al(OH)3 and distinct
+    bayerite/doyleite/nordstrandite polymorphs. Mixed bauxite context is not an elemental
+    or commodity identity.
+  accessed_at: '2026-10-14T11:39:25.190237Z'
+  snapshot_sha256: 8f32d4169bb9a66a169489e049600ee1fff04cf511d02b41d6374ddf061cdb03
+- evidence_id: search
+  kind: search
+  reference: https://pubmed.ncbi.nlm.nih.gov/41052339/
+  locator: Independent web queries14Oct2026
+  support: context_only
+  summary: First returned results gave primary bibliographic entries, institutional
+    reports and citing material, not an affecting notice. PNNL2026 page posting is
+    distinct from the2025 article. No global absence of corrections or conflicting
+    evidence asserted.
+  search_scope: '"10.1073/pnas.2504109122" correction erratum retraction; "Mineral
+    dissolution by dimeric complexes" criticism comment. First results, no date/domain
+    filters or pagination.'
+  accessed_at: '2026-10-14T11:39:25.190237Z'
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round70-gibbsite-dedup.txt
+  locator: Scoped repository search and curator source-dossier raw search boundaries
+  support: context_only
+  summary: Gibbsite contextual mentions in bauxite and related materials do not duplicate
+    a mineral-species owner. Hidden/ignored files and relevant symlinks included;
+    no machine-wide absence claim.
+  search_scope: rg --hidden --no-ignore --follow -l -i gibbsite|2504109122 data/records
+    research reviews history. Referenced raw-boundary search retained in Al dossier.
+  accessed_at: '2026-10-14T11:39:25.190237Z'
+  snapshot_sha256: a6eeecf8322d2b05591b4f2ea9ccb916e036b4969503ca2b50a7e6f8adaaab88
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Material form and criticality
+  outcome: supported
+  summary: Gibbsite mineral, synthetic assay nanoplates, aluminium, alumina and heterogeneous
+    bauxite remain distinct. No invented identifier or inherited criticality.
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  - dedup
+  dimensions:
+  - name: criticality
+    value: No authority/jurisdiction/list/edition assertion
+    definition: Omission does not assert global noncriticality.
+    evidence_ids:
+    - record
+  target_ids:
+  - cmmmech:gibbsite
+- assessment_id: mechanism
+  area: evidence
+  topic: Abiotic conditions and observed versus modeled evidence
+  outcome: supported
+  summary: Conditions, source-concentration discrepancies and nonindependent edge
+    observations are accurately scoped. Proposed surface-dimer chemistry is distinguished
+    from the directly measured dissolution.
+  evidence_ids:
+  - record
+  - primary
+  - si
+  - limits
+  dimensions:
+  - name: biomass_state
+    value: No microorganism or biomass; microbial false
+    definition: Lee/Fein2000 remains deferred under issue219.
+    evidence_ids:
+    - record
+    - primary
+  - name: substrate_and_conditions
+    value: Synthetic gibbsite nanoplates on TiO2 in static0.01–0.4M NaOH at20C; separate
+      bulk1g/L assay in0.2M
+    definition: Individual imaging arms use different NaOH concentrations and resolutions;0.4M
+      velocities not measured.
+    evidence_ids:
+    - primary
+    - si
+  - name: outcome_and_scale
+    value: Laboratory retreat, aluminate accumulation and model-supported molecular
+      pathway
+    definition: No ore processing, recovered product or industrial performance demonstrated.
+    evidence_ids:
+    - primary
+    - limits
+  target_ids:
+  - cmmmech:gibbsite
+- assessment_id: provenance
+  area: provenance
+  topic: Exact bytes and immutable history
+  outcome: supported
+  summary: Native inspect precedes final judgment; record and sidecar hashes still
+    match. Named and completed batch gates passed.
+  target_ids:
+  - cmmmech:gibbsite
+  evidence_ids:
+  - record
+  - history
+  - batch
+findings: []
+actions: []
+limitations:
+- No microbial mechanism is accepted; Lee/Fein2000 original remains a source gap in
+  issue219.
+- No independent model rerun, pixel retracking, raw spectral refit or experiment was
+  performed. The review checks source support and faithful qualification.
+- SI S4/S5 condition labels remain unresolved; no inferred correction or pure recovered
+  yield is made.
+- Movie review samples13frames per movie via curator-generated montages, not every
+  frame; SI symmetry schematicS7 was text/caption checked. Other claim-bearing main
+  and SI graphics were independently inspected.
+- Notice/conflict searches are bounded. Main PDF routes had challenge responses; full
+  legitimate JATS, original figure pixels and complete SI support this review.
+notes:
+- No supported corrective defect found in this frozen state. Source limitations remain
+  explicit.
+- Initial saver rejected target kind record; corrected review metadata to maintained
+  and re-inspected identical record/history hashes. No scientific owner or history
+  changed.
+- Raw originals remain outside Git. Whole-batch structured checking and exact coverage
+  follow saving.
+tags:
+- round70
+- independent
+- gibbsite
+- primary-figures

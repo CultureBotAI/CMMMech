@@ -1,0 +1,9 @@
+{
+  "body": "Independent pre-execution review of round70's publication report builder identified three bounded preparation defects:\n\n- OP1: the builder expected timestamp-suffixed peer-audit filenames, but the completed audit used exact unsuffixed filenames. The assertion would stop report assembly.\n- OP2: the report retained the audit-binding regression receipt without the tested fixture source, limiting reproducibility of the publication evidence.\n- ED1: the generated PR description had an unclosed coverage parenthesis.\n\nThe original reviewed helper snapshot and timestamped findings are retained as `cmm-round70-build-report-initial-20261014T113732Z.{py,json}` for inclusion in the publication evidence. These findings concern report preparation, not scientific defects in the five records. No failed helper was executed against GitHub.\n\nAcceptance criteria: use the exact existing peer-audit pair; retain regression source alongside its successful receipt; correct the PR prose; obtain an independent successor audit of the exact corrected helper; and successfully assemble the actual round70 report with matching artifact hashes. Preserve the initial finding and explicit resolution evidence. An additional README clarity suggestion should explicitly state that no gibbsite recovery yield was measured.\n",
+  "number": 221,
+  "state": "OPEN",
+  "title": "Fix round70 publication report assembly and retain review regression evidence",
+  "url": "https://github.com/CultureBotAI/CMMMech/issues/221",
+  "recorded_at": "2026-10-14T11:38:23.626955+00:00",
+  "body_sha256": "80dc1fd740b1e255942fc07afbe42a4985303dcf9e0bdf66e669c5b265faf56b"
+}

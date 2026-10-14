@@ -1,0 +1,63 @@
+{
+  "recorded_at": "2026-10-14T11:40:24.393192+00:00",
+  "reviewer": "codex GPT-6 /root/round68_iron_sulfides",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "unresolved_corrective_findings": 0,
+  "findings": [],
+  "scope": "Successor static audit after issue221 tracking and publication helper/config updates; actual assembly remains pending.",
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round70-build-report.py",
+      "sha256": "92e92b198c982b8cc9783b9840109cae00912adb9deed098bca3804bc50db0e5"
+    },
+    {
+      "path": "/private/tmp/cmm-round70-closeout.py",
+      "sha256": "dfbfd44849583c91713f09f7a626dc89f0d19f3c49c8aa49539a8dac1d26358f"
+    },
+    {
+      "path": "/private/tmp/cmm-round70-helper-config.json",
+      "sha256": "9de69ed2cf66b1485320ef21528636742055156247f635f3cc2b77138fd6a0e4"
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round70-20261014/README.md",
+      "sha256": "90c130b182017a9575bf9af421cd0f99a35fd14f3b709c65aef48451f3df68c1"
+    }
+  ],
+  "supersedes_current_input_binding": [
+    "cmm-round70-closeout-report-peer.json",
+    "helper-config input of cmm-round70-helper-peer-static.json"
+  ],
+  "initial_audit": {
+    "path": "/private/tmp/cmm-round70-build-report-initial-20261014T113732Z.json",
+    "sha256": "9fd8fda290ba416e190a9677f71a34bede70d2d360844f057237db95cdf6099b",
+    "snapshot_path": "/private/tmp/cmm-round70-build-report-initial-20261014T113732Z.py",
+    "snapshot_sha256": "307dcf255e44c9728b8de7b5f9c352fec8a3e0c2fdc1608fa758005a6bea2223"
+  },
+  "provenance_correction": "The initial source snapshot was captured during concurrent preparation edits. It already contains the OP1 exact-filename fix, although OP2 missing fixture-source retention and ED1 unclosed parenthesis remain visible. OP1 was directly observed in the earlier complete tool read; the preserved snapshot is intermediate and alone cannot prove OP1. Initial audit and snapshot remain immutable; this successor corrects the overbroad pre-fix description. No reconstructed file is presented as original.",
+  "resolved": [
+    {
+      "id": "OP1",
+      "evidence": "Current builder uses exact existing static-peer filenames; observation preceded intermediate snapshot."
+    },
+    {
+      "id": "OP2",
+      "evidence": "Current builder explicitly retains audit-binding-regression.py alongside JSON."
+    },
+    {
+      "id": "ED1",
+      "evidence": "Current generated PR-body string closes coverage parenthesis."
+    },
+    {
+      "id": "README-clarity",
+      "evidence": "Gibbsite boundary explicitly says no microbial mechanism or measured recovery yield."
+    }
+  ],
+  "issue": "https://github.com/CultureBotAI/CMMMech/issues/221",
+  "issue_disposition": "Open until actual successful report assembly and final artifact verification. The final local audit must read issue221 CLOSED; source219/220 remain OPEN.",
+  "limitations": [
+    "Earlier peer proofs retain their original historical input hashes; this successor binds the later issue-aware helpers/configuration.",
+    "No publication/GitHub mutation executed.",
+    "Final assembled report, exact working package and all later hosted/merge gates remain unclaimed."
+  ]
+}
