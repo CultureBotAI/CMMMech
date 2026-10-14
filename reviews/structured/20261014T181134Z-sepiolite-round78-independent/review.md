@@ -1,0 +1,439 @@
+# Independent scientific review of Sepiolite
+
+- Review: 20261014T181134Z-sepiolite-round78-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T18:04:03.517094Z
+- Finished UTC: 2026-10-14T18:11:34.607640Z
+- Reviewer: codex /root/round68_new_frontier (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of distinct sepiolite mineral identity and one explicitly abiotic dissolution study. Source-assigned Mg-deficient feed, endpoint/pH/composition conflicts, inferred release denominators and causal limits are retained; no supported corrective finding.
+
+## Scope And Provenance
+
+Whole exact maintained owner and canonical history; accepted identity and claim-bearing primary methods/results/graphics, controls, contradictions, quantitative denominators and actual structural gates.
+
+Selection: Assigned exact owner, native inspect captured before scientific judgment; no reviewer edits to owner or history.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 884152be5ef2accab670b604ddb344f4a55bf1d3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:sepiolite | data/records/sepiolite.yaml | maintained | Sepiolite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named validation | passed | True | cmmmech:sepiolite | Actual reviewer execution, terminal session64716 exit0; two records and zero failures. Exact command interval was not separately captured. |
+| Completed batch gate 1 | passed | True | cmmmech:sepiolite | Actual coordinator execution 2026-10-14T18:07:04.891860+00:00 to 2026-10-14T18:10:27.645303+00:00; terminal result and full log hash independently verified. |
+| Completed batch gate 2 | passed | True | cmmmech:sepiolite | Actual coordinator execution 2026-10-14T18:10:27.645322+00:00 to 2026-10-14T18:10:36.327502+00:00; terminal result and full log hash independently verified. |
+| Completed batch gate 3 | passed | True | cmmmech:sepiolite | Actual coordinator execution 2026-10-14T18:10:36.327520+00:00 to 2026-10-14T18:10:45.575785+00:00; terminal result and full log hash independently verified. |
+| Completed batch gate 4 | passed | True | cmmmech:sepiolite | Actual coordinator execution 2026-10-14T18:10:45.575813+00:00 to 2026-10-14T18:10:53.945672+00:00; terminal result and full log hash independently verified. |
+
+## Scientific And Domain Assessments
+
+### Mineral versus experimental feed
+
+identity: supported. Targets: cmmmech:sepiolite.
+
+IMA grandfathered sepiolite and Handbook identity are distinct from elementalMg or commodities. Source XRD detection limit does not establish absolute purity; bulkMg:Si3.34:6 differs fromideal4:6 and localEDS.
+
+### Abiotic reaction and sampling design
+
+evidence: supported. Targets: cmmmech:sepiolite.
+
+Ground/washed source samples,25C flow/batch conditions, dialysis, chemical citrate/phosphate and seven sacrificial timepoints are correctly scoped. No organisms, microbial citrate production, independent endpointreplicate count or matched blank series is invented.
+
+### Element release and solid-state outcome
+
+evidence: supported. Targets: cmmmech:sepiolite.
+
+Flow/BET-normalized rates and mass-balance Mg-removal estimates remain distinct from isolated recovery. Figure5 normalized concentrations are not raw concentrations; retained needle shape does not establish remaining crystallinity. Figure7 amorphization and EDS depletion do not identify a new crystalline silica product.
+
+### Endpoint,pH and composition disagreements
+
+evidence: supported. Targets: cmmmech:sepiolite.
+
+688versus699h,2.56versus2.57initialpH, Appendix2pH drift and initialEDS versusXRF disagreement are explicit. No single resolved endpoint or constantpH is asserted.
+
+### Mechanistic interpretation and transfer limits
+
+scope: supported. Targets: cmmmech:sepiolite.
+
+Channel-mediated exchange, alteredlayer and dissolution/reprecipitation remain alternatives; modeledsecondary-mineral saturation does not prove precipitation.15percent calculated-rate uncertainty is not total uncertainty in changing reactivearea. Relatedsame-group2018 work is not independent replication or evidence for microbial activity in2020.
+
+### Exact inspected inputs and completed checks
+
+provenance: supported. Targets: cmmmech:sepiolite.
+
+Native inspect preceded judgment; exact owner and canonicalhistory verified unchanged at this observation. Actual named and FOUR batch commands passed. Existing sharedsource lineage retained, no inheritedcriticality or industrialdeployment.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/sepiolite.yaml; Entire frozen maintained owner. Actual local artifact: /private/tmp/CMMMech-expansion-round78-20261014/data/records/sepiolite.yaml | supports | All fields read independently; no reviewer owner edits. |
+| history0 | history/records/sepiolite/2026-10-14T180237Z-codex-e94e10.yaml; Canonical history sidecar and linked inline event. Actual local artifact: /private/tmp/CMMMech-expansion-round78-20261014/history/records/sepiolite/2026-10-14T180237Z-codex-e94e10.yaml | supports | Verified actual actor, event, target and scope; retained earlier history is immutable. |
+| named | /private/tmp/cmm-round78-frontier-reviews/named-validation.log; Actual reviewer terminal validation stdout. Actual local artifact: /private/tmp/cmm-round78-frontier-reviews/named-validation.log | supports | Two records, zero failures; structural validation does not prove scientific truth. |
+| batch | /private/tmp/cmm-round78-final-gates.json; Actual completed coordinator receipt and all FOUR commands; log /private/tmp/cmm-round78-final-gates.log SHA256 60b35b7c12611e384dfd1cd7cd2c92d556efdbebebed28a28f69ffe4d2beb9a2. Actual local artifact: /private/tmp/cmm-round78-final-gates.json | supports | Base, worktree, terminal commands, exact log digest and reviewed owner digest independently checked. |
+| dedup | /private/tmp/cmm-round78-frontier-reviews/sepiolite-dedup.json; Bounded followed hidden/ignored-inclusive search; exact invocation retained in adjacent JSON. Actual local artifact: /private/tmp/cmm-round78-frontier-reviews/sepiolite-dedup.txt | context_only | Identity and normalized DOI/source lineage assessed against existing records and research. No machine-wide absence claim. |
+| notices | /private/tmp/cmm-round78-frontier-reviews/notice-search.json; Own exact-query/coverage memo plus separately hashed current Crossref metadata. Actual local artifact: /private/tmp/cmm-round78-frontier-reviews/notice-search.json | context_only | No applicable notice found in bounded returned results; absence of Crossref relations is not exhaustive proof. Accepted claims use full primary artifacts. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Complete 244-page edition; definitions pages1–2 and target row page197 visually inspected. Actual local artifact: /private/tmp/cmm-round78-silicates-research/ima-current-response.pdf | supports | Chukanovite IMA2005-039 and formula verified; Sepiolite grandfathered status/year1847 is not an approval accession. Neither identity inherits constituent criticality. |
+| primary | https://doi.org/10.1016/j.gca.2019.11.026; Complete48-page official UCL accepted manuscript; Sections3–5, Tables1–4 pages30–34, Figures1–8 pages36–45 and Appendices1–2 pages46–48 visually inspected. Actual local artifact: /private/tmp/cmm-round78-silicates-research/sepiolite2020.pdf | supports | Chemical citrate/phosphate experiments support nonstoichiometric dissolution and solid alteration. Source endpoint,pH and initial-composition conflicts retained; Figure1 schematic right edge is clipped in the accepted PDF but no accepted quantitative result depends on that edge. Actual manuscript, not publisher version of record. |
+| handbook | https://www.handbookofmineralogy.org/pdfs/sepiolite.pdf; Completeone-page official entry visually inspected. Actual local artifact: /private/tmp/cmm-round78-silicates-research/sepiolite-handbook.pdf | supports | Orthorhombic hydrated magnesium-silicate identity corroborates IMA; no specimen purity or microbial effect inferred from the identity entry. |
+
+## Limits And Additional Notes
+
+- Accepted official manuscript has a clipped right edge in Figure1 schematic; full remaining figures,tables and appendices inspected. No quantitative claim depends on that clipped edge.
+- Mg-deficient source feed, XRD detection limit and different initialEDS/XRF ratios limit phasepurity and exactcomposition assumptions.
+- 688versus699h and drifting bufferpH unresolved; no independent endpointreplication or matchedblank series supplied.
+- Release-rate and mass-balance estimates are not isolatedMg recovery; reactive-area changes and molecularroute are unresolved.
+- No organisms or testedmicrobial mechanism; related2018 same-group source is contextual only and not counted as independent replication.
+- Actual nonempty full primary and authority artifacts are bound by localpath and SHA256; source material remains outsideGit.
+- Reviewer authored the two resource owners only; mineral scientific judgment is independent. No owner or history edits by reviewer.
+- Publication preflight, hosted CI and merge are separate future checks, not asserted here.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T181134Z-sepiolite-round78-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Sepiolite
+started_at: '2026-10-14T18:04:03.517094Z'
+finished_at: '2026-10-14T18:11:34.607640Z'
+reviewer:
+  identity: codex /root/round68_new_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Chukanovite was authored by /root and sepiolite by round68_iron_sulfides.
+    This reviewer authored the two secondary-resource records, did not edit either
+    mineral owner or its history, and independently read the complete accepted originals
+    and relevant graphics from shared acquisitions. Shared acquisitions are not replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of distinct sepiolite mineral identity and one explicitly
+  abiotic dissolution study. Source-assigned Mg-deficient feed, endpoint/pH/composition
+  conflicts, inferred release denominators and causal limits are retained; no supported
+  corrective finding.
+source:
+  git_revision: 884152be5ef2accab670b604ddb344f4a55bf1d3
+  state: working_tree
+  inputs:
+  - path: data/records/sepiolite.yaml
+    sha256: fe620233a801d875751cc825bc73fbf089354ebd594c985df51ee3bbfbdf1034
+    role: target
+  - path: history/records/sepiolite/2026-10-14T180237Z-codex-e94e10.yaml
+    sha256: 71a4285a03c99ec5b0550ce01a36cdf71f283dd5db163f7d8301f4ada74a23a4
+    role: context
+scope:
+  description: Whole exact maintained owner and canonical history; accepted identity
+    and claim-bearing primary methods/results/graphics, controls, contradictions,
+    quantitative denominators and actual structural gates.
+  selection: Assigned exact owner, native inspect captured before scientific judgment;
+    no reviewer edits to owner or history.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:sepiolite
+targets:
+- target_id: cmmmech:sepiolite
+  path: data/records/sepiolite.yaml
+  label: Sepiolite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/sepiolite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/chukanovite.yaml data/records/sepiolite.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Actual reviewer execution, terminal session64716 exit0; two records and
+    zero failures. Exact command interval was not separately captured.
+  target_ids:
+  - cmmmech:sepiolite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Completed batch gate 1
+  command: just check
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T18:07:04.891860+00:00 to 2026-10-14T18:10:27.645303+00:00;
+    terminal result and full log hash independently verified.
+  target_ids:
+  - cmmmech:sepiolite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Completed batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T18:10:27.645322+00:00 to 2026-10-14T18:10:36.327502+00:00;
+    terminal result and full log hash independently verified.
+  target_ids:
+  - cmmmech:sepiolite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Completed batch gate 3
+  command: uv run --locked cmmmech validate-history --base 884152be5ef2accab670b604ddb344f4a55bf1d3
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T18:10:36.327520+00:00 to 2026-10-14T18:10:45.575785+00:00;
+    terminal result and full log hash independently verified.
+  target_ids:
+  - cmmmech:sepiolite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_3
+  name: Completed batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T18:10:45.575813+00:00 to 2026-10-14T18:10:53.945672+00:00;
+    terminal result and full log hash independently verified.
+  target_ids:
+  - cmmmech:sepiolite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/sepiolite.yaml
+  locator: 'Entire frozen maintained owner. Actual local artifact: /private/tmp/CMMMech-expansion-round78-20261014/data/records/sepiolite.yaml'
+  accessed_at: '2026-10-14T18:11:34.607640Z'
+  support: supports
+  summary: All fields read independently; no reviewer owner edits.
+  snapshot_sha256: fe620233a801d875751cc825bc73fbf089354ebd594c985df51ee3bbfbdf1034
+- evidence_id: history0
+  kind: record_content
+  reference: history/records/sepiolite/2026-10-14T180237Z-codex-e94e10.yaml
+  locator: 'Canonical history sidecar and linked inline event. Actual local artifact:
+    /private/tmp/CMMMech-expansion-round78-20261014/history/records/sepiolite/2026-10-14T180237Z-codex-e94e10.yaml'
+  accessed_at: '2026-10-14T18:11:34.607640Z'
+  support: supports
+  summary: Verified actual actor, event, target and scope; retained earlier history
+    is immutable.
+  snapshot_sha256: 71a4285a03c99ec5b0550ce01a36cdf71f283dd5db163f7d8301f4ada74a23a4
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round78-frontier-reviews/named-validation.log
+  locator: 'Actual reviewer terminal validation stdout. Actual local artifact: /private/tmp/cmm-round78-frontier-reviews/named-validation.log'
+  accessed_at: '2026-10-14T18:11:34.607640Z'
+  support: supports
+  summary: Two records, zero failures; structural validation does not prove scientific
+    truth.
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round78-final-gates.json
+  locator: 'Actual completed coordinator receipt and all FOUR commands; log /private/tmp/cmm-round78-final-gates.log
+    SHA256 60b35b7c12611e384dfd1cd7cd2c92d556efdbebebed28a28f69ffe4d2beb9a2. Actual
+    local artifact: /private/tmp/cmm-round78-final-gates.json'
+  accessed_at: '2026-10-14T18:11:34.607640Z'
+  support: supports
+  summary: Base, worktree, terminal commands, exact log digest and reviewed owner
+    digest independently checked.
+  snapshot_sha256: 521fb3c1411dc8efa71517369001e35272aeb24dd52f61b50323efd00629c3db
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round78-frontier-reviews/sepiolite-dedup.json
+  locator: 'Bounded followed hidden/ignored-inclusive search; exact invocation retained
+    in adjacent JSON. Actual local artifact: /private/tmp/cmm-round78-frontier-reviews/sepiolite-dedup.txt'
+  accessed_at: '2026-10-14T18:11:34.607640Z'
+  support: context_only
+  summary: Identity and normalized DOI/source lineage assessed against existing records
+    and research. No machine-wide absence claim.
+  snapshot_sha256: ea81bc0a88632ae1eb0081ae931042e212719f42818615ef569892113a0f197c
+  search_scope: rg --no-ignore --hidden --follow -a -n -i sepiolite|gca.2019.11.026
+    data/records research reviews history /private/tmp/cmm-round78-silicates-research
+    -g *.yaml -g *.md -g *.json -g *.txt -g !**/.git/** -g !**/.venv/**
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round78-frontier-reviews/notice-search.json
+  locator: 'Own exact-query/coverage memo plus separately hashed current Crossref
+    metadata. Actual local artifact: /private/tmp/cmm-round78-frontier-reviews/notice-search.json'
+  accessed_at: '2026-10-14T18:11:34.607640Z'
+  support: context_only
+  summary: No applicable notice found in bounded returned results; absence of Crossref
+    relations is not exhaustive proof. Accepted claims use full primary artifacts.
+  snapshot_sha256: 9508323ad7f643959161ddca9e61babc7925b7d6e171ccd990719876ee8381c3
+  search_scope: First result set per exact DOI correction/erratum/retraction query
+    on 2026-10-14, no exhaustive pagination. Current primary declarations and Crossref
+    relation/update fields also inspected.
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'Complete 244-page edition; definitions pages1–2 and target row page197
+    visually inspected. Actual local artifact: /private/tmp/cmm-round78-silicates-research/ima-current-response.pdf'
+  accessed_at: '2026-10-14T18:11:34.607640Z'
+  support: supports
+  summary: Chukanovite IMA2005-039 and formula verified; Sepiolite grandfathered status/year1847
+    is not an approval accession. Neither identity inherits constituent criticality.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.gca.2019.11.026
+  locator: 'Complete48-page official UCL accepted manuscript; Sections3–5, Tables1–4
+    pages30–34, Figures1–8 pages36–45 and Appendices1–2 pages46–48 visually inspected.
+    Actual local artifact: /private/tmp/cmm-round78-silicates-research/sepiolite2020.pdf'
+  accessed_at: '2026-10-14T18:11:34.607640Z'
+  support: supports
+  summary: Chemical citrate/phosphate experiments support nonstoichiometric dissolution
+    and solid alteration. Source endpoint,pH and initial-composition conflicts retained;
+    Figure1 schematic right edge is clipped in the accepted PDF but no accepted quantitative
+    result depends on that edge. Actual manuscript, not publisher version of record.
+  snapshot_sha256: 39731a7815d8913e18afe6a2c5c4cc6609e7a670d3e97cdbbe74adcf6ce38bd1
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/sepiolite.pdf
+  locator: 'Completeone-page official entry visually inspected. Actual local artifact:
+    /private/tmp/cmm-round78-silicates-research/sepiolite-handbook.pdf'
+  accessed_at: '2026-10-14T18:11:34.607640Z'
+  support: supports
+  summary: Orthorhombic hydrated magnesium-silicate identity corroborates IMA; no
+    specimen purity or microbial effect inferred from the identity entry.
+  snapshot_sha256: d95a93a74861404b53a630e40041af70f16852cbe1ff59acaba5b9b868d78543
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral versus experimental feed
+  outcome: supported
+  summary: IMA grandfathered sepiolite and Handbook identity are distinct from elementalMg
+    or commodities. Source XRD detection limit does not establish absolute purity;
+    bulkMg:Si3.34:6 differs fromideal4:6 and localEDS.
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  - primary
+  target_ids:
+  - cmmmech:sepiolite
+- assessment_id: conditions
+  area: evidence
+  topic: Abiotic reaction and sampling design
+  outcome: supported
+  summary: Ground/washed source samples,25C flow/batch conditions, dialysis, chemical
+    citrate/phosphate and seven sacrificial timepoints are correctly scoped. No organisms,
+    microbial citrate production, independent endpointreplicate count or matched blank
+    series is invented.
+  evidence_ids:
+  - record
+  - primary
+  target_ids:
+  - cmmmech:sepiolite
+- assessment_id: release
+  area: evidence
+  topic: Element release and solid-state outcome
+  outcome: supported
+  summary: Flow/BET-normalized rates and mass-balance Mg-removal estimates remain
+    distinct from isolated recovery. Figure5 normalized concentrations are not raw
+    concentrations; retained needle shape does not establish remaining crystallinity.
+    Figure7 amorphization and EDS depletion do not identify a new crystalline silica
+    product.
+  evidence_ids:
+  - record
+  - primary
+  target_ids:
+  - cmmmech:sepiolite
+- assessment_id: conflicts
+  area: evidence
+  topic: Endpoint,pH and composition disagreements
+  outcome: supported
+  summary: 688versus699h,2.56versus2.57initialpH, Appendix2pH drift and initialEDS
+    versusXRF disagreement are explicit. No single resolved endpoint or constantpH
+    is asserted.
+  evidence_ids:
+  - record
+  - primary
+  target_ids:
+  - cmmmech:sepiolite
+- assessment_id: causality
+  area: scope
+  topic: Mechanistic interpretation and transfer limits
+  outcome: supported
+  summary: Channel-mediated exchange, alteredlayer and dissolution/reprecipitation
+    remain alternatives; modeledsecondary-mineral saturation does not prove precipitation.15percent
+    calculated-rate uncertainty is not total uncertainty in changing reactivearea.
+    Relatedsame-group2018 work is not independent replication or evidence for microbial
+    activity in2020.
+  evidence_ids:
+  - record
+  - primary
+  target_ids:
+  - cmmmech:sepiolite
+- assessment_id: provenance
+  area: provenance
+  topic: Exact inspected inputs and completed checks
+  outcome: supported
+  summary: Native inspect preceded judgment; exact owner and canonicalhistory verified
+    unchanged at this observation. Actual named and FOUR batch commands passed. Existing
+    sharedsource lineage retained, no inheritedcriticality or industrialdeployment.
+  evidence_ids:
+  - record
+  - history0
+  - named
+  - batch
+  - dedup
+  - notices
+  target_ids:
+  - cmmmech:sepiolite
+findings: []
+actions: []
+limitations:
+- Accepted official manuscript has a clipped right edge in Figure1 schematic; full
+  remaining figures,tables and appendices inspected. No quantitative claim depends
+  on that clipped edge.
+- Mg-deficient source feed, XRD detection limit and different initialEDS/XRF ratios
+  limit phasepurity and exactcomposition assumptions.
+- 688versus699h and drifting bufferpH unresolved; no independent endpointreplication
+  or matchedblank series supplied.
+- Release-rate and mass-balance estimates are not isolatedMg recovery; reactive-area
+  changes and molecularroute are unresolved.
+- No organisms or testedmicrobial mechanism; related2018 same-group source is contextual
+  only and not counted as independent replication.
+notes:
+- Actual nonempty full primary and authority artifacts are bound by localpath and
+  SHA256; source material remains outsideGit.
+- Reviewer authored the two resource owners only; mineral scientific judgment is independent.
+  No owner or history edits by reviewer.
+- Publication preflight, hosted CI and merge are separate future checks, not asserted
+  here.
+```

@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-14T18:15:24.947589+00:00",
+  "reviewer": "codex /root/round68_iron_sulfides",
+  "independence": "Self-discovered metadata defect in own independent-scientific review artifacts; not independent verification of this correction.",
+  "passed": false,
+  "verdict": "needs_curation",
+  "findings": [
+    {
+      "finding_id": "RM1",
+      "issue_key": "round78-clay-review-canonical-target-id",
+      "severity": "minor",
+      "summary": "Two saved positive clay reviews use unprefixed target IDs instead of canonical owner IDs. Native save accepted them, but exact coverage requires canonical IDs in scope and targets.",
+      "artifacts": [
+        {
+          "slug": "palygorskite",
+          "review": "reviews/structured/20261014T181353Z-palygorskite-round78-independent/review.yaml",
+          "review_sha256": "7b48ba9df5494f7d26a2c38a6ab6ab27e63d3e54c90b0b9bcb3d431dccf340e9",
+          "record": "data/records/palygorskite.yaml",
+          "record_sha256": "5c37105c361d14c20dc66502dfdf19a2537ee9e1a45d92833b7e22237e35ff55",
+          "actual_target_id": "palygorskite",
+          "expected_target_id": "cmmmech:palygorskite"
+        },
+        {
+          "slug": "saponite",
+          "review": "reviews/structured/20261014T181355Z-saponite-round78-independent/review.yaml",
+          "review_sha256": "1c77709450662d62e4e69962f59f9d9837bfcc6a868ec5fda45bcb60d8d1dc4e",
+          "record": "data/records/saponite.yaml",
+          "record_sha256": "edf1d6fe0f38f2339dfcd200989cc7e05e963cf45ee7c79afc4473f0d4c97a5f",
+          "actual_target_id": "saponite",
+          "expected_target_id": "cmmmech:saponite"
+        }
+      ],
+      "acceptance": "Preserve original observations; append exact-ID successors with explicit predecessor lineage and identical record/source inputs; peer verify metadata diff and exact coverage. No owner/history or scientific claims need edits."
+    }
+  ],
+  "coverage_helper": {
+    "path": "/private/tmp/cmm-round78-isolated-coverage.py",
+    "sha256": "ae07161e29f831b1f3f85f4ebb8cb52e088cd03988982f9f2c3f40f691dbe08d"
+  },
+  "scope": "Actual saved review metadata only; no scientific record defect."
+}

@@ -1,0 +1,518 @@
+{
+  "investigated_at": "2026-10-14T18:03:33.072265Z",
+  "researcher": "Codex (GPT-6; round68_new_frontier)",
+  "worktree": "/private/tmp/CMMMech-expansion-round78-20261014",
+  "branch": "curate/cmm-expansion-round78-20261014",
+  "base": "884152be5ef2accab670b604ddb344f4a55bf1d3",
+  "scope": "Two previously deferred distinct secondary-resource identities; no new criticality designation, schema or governance changes.",
+  "skills": [
+    "cmmmech-add-record",
+    "cmmmech-discover-sources"
+  ],
+  "searches": {
+    "provider": "web search",
+    "date": "2026-10-14",
+    "queries": [
+      "bioleaching \"spent\" \"fuel cell\" platinum bacteria",
+      "bioleaching \"lithium iron phosphate\" \"spent\" fungi",
+      "bioleaching \"industrial\" \"sludge\" tungsten waste silicon kerf",
+      "bioleaching \"spent\" \"catalyst\" nickel methanation",
+      "bioleaching \"zinc leach residue\" full text",
+      "bioleaching \"zinc smelter slag\" bacteria",
+      "bioleaching \"silver oxide\" \"batteries\"",
+      "bioleaching \"silicon kerf\" waste",
+      "\"10.3390/pr13072157\"",
+      "\"Leaching of Metals from Waste Silver Oxide-Zinc\" pdf",
+      "\"10.3390/batteries4040051\" supplement correction",
+      "\"Extraction of silver from spent silver oxide\" 2013 DOI",
+      "\"10.3390/pr13072157\" correction erratum retraction supplementary",
+      "\"10.3390/batteries4040051\" correction erratum retraction supplementary",
+      "site.ncbi.nlm.nih.gov/Taxonomy/Browser \"Aspergillus niger\" \"5061\"",
+      "site.ncbi.nlm.nih.gov/Taxonomy/Browser \"Acidithiobacillus thiooxidans\" \"930\""
+    ],
+    "coverage": "First returned result sets; no pagination, date restriction or claim of exhaustive literature coverage."
+  },
+  "deduplication": {
+    "hidden": true,
+    "ignored": true,
+    "follow_symlinks": true,
+    "corpus_bounds": [
+      "data/records",
+      "research",
+      "reviews",
+      "history",
+      "original checkout named text paths"
+    ],
+    "raw_bounds": {
+      "at": "2026-10-14T17:58:51.868968+00:00",
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-n",
+        "-i",
+        "batteries4040051|silver.oxide.zinc|jclepro.2012.11.035|pr13072157|super.?alloy|30167|30168|32083",
+        "/private/tmp/cmm-round25-button-raw",
+        "/private/tmp/cmm-round25-frontier-raw",
+        "/private/tmp/cmm-round25-bf-dust-raw",
+        "/private/tmp/cmm-round26-superalloy-raw",
+        "/private/tmp/cmm-round27-superalloy-raw"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "existing_roots": {
+        "/private/tmp/cmm-round25-button-raw": true,
+        "/private/tmp/cmm-round25-frontier-raw": true,
+        "/private/tmp/cmm-round25-bf-dust-raw": true,
+        "/private/tmp/cmm-round26-superalloy-raw": true,
+        "/private/tmp/cmm-round27-superalloy-raw": true
+      }
+    },
+    "outputs": [
+      "/private/tmp/cmm-round78-frontier-research/preliminary-dedup.txt",
+      "/private/tmp/cmm-round78-frontier-research/second-dedup.txt",
+      "/private/tmp/cmm-round78-frontier-research/buttoncell-dedup.txt",
+      "/private/tmp/cmm-round78-frontier-research/final-identity-dedup.txt",
+      "/private/tmp/cmm-round78-frontier-research/linked-raw-dedup.txt"
+    ],
+    "issues_inventory": "/private/tmp/cmm-round78-initial-issues.json",
+    "result": "Both are previously documented discovery leads, not newly discovered publications. No existing owner within the named material/DOI/stock boundaries. Existing Zn–Mn button-cell description explicitly excludes Ag–Zn chemistry; existing LIB black mass is not split for LFP. Prior superalloy records are assessments only.",
+    "limits": "No machine-wide absence claim. Searches include relevant referencedrawdirectories; binarycontents were inspected only for selected original PDFs, not every historic download."
+  },
+  "acquisitions": [
+    {
+      "url": "https://mdpi-res.com/d_attachment/batteries/batteries-04-00051/article_deploy/batteries-04-00051.pdf",
+      "path": "/private/tmp/cmm-round78-frontier-research/shin2018.pdf",
+      "started_at": "2026-10-14T17:56:21.101368+00:00",
+      "status": 200,
+      "final_url": "https://mdpi-res.com/d_attachment/batteries/batteries-04-00051/article_deploy/batteries-04-00051.pdf",
+      "content_type": "application/pdf",
+      "bytes": 1851069,
+      "sha256": "131123c2eec4e01c0aecf8fbe537697919e8b4cce02e18e5cdc79daf5aed3dc4",
+      "pdf": true,
+      "finished_at": "2026-10-14T17:56:22.007004+00:00"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.3390/batteries4040051",
+      "path": "/private/tmp/cmm-round78-frontier-research/shin2018-crossref.json",
+      "started_at": "2026-10-14T17:56:21.102694+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.3390/batteries4040051",
+      "content_type": "application/json",
+      "bytes": 7491,
+      "sha256": "9fe91e0ac680fddc8a9158adba060440929d446cc4a2b0cfd297ad894ae08178",
+      "pdf": false,
+      "finished_at": "2026-10-14T17:56:21.501528+00:00"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.3390/pr13072157",
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-crossref.json",
+      "started_at": "2026-10-14T17:56:21.103045+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.3390/pr13072157",
+      "content_type": "application/json",
+      "bytes": 15905,
+      "sha256": "3fdbdb41b910c3d98d85051230ed0a17aff37915bb73f3b730782ceba7e7c992",
+      "pdf": false,
+      "finished_at": "2026-10-14T17:56:21.503711+00:00"
+    },
+    {
+      "url": "https://mdpi-res.com/d_attachment/processes/processes-13-02157/article_deploy/processes-13-02157.pdf",
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025.pdf",
+      "started_at": "2026-10-14T17:56:21.103389+00:00",
+      "status": 200,
+      "final_url": "https://mdpi-res.com/d_attachment/processes/processes-13-02157/article_deploy/processes-13-02157.pdf",
+      "content_type": "application/pdf",
+      "bytes": 4192251,
+      "sha256": "2a71888bdcf8281f301b125928cd069ded99153d50e2e41f84d4b637fbccd54f",
+      "pdf": true,
+      "finished_at": "2026-10-14T17:56:21.713183+00:00"
+    },
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5061&retmode=xml",
+      "path": "/private/tmp/cmm-round78-frontier-research/ncbi5061.xml",
+      "started_at": "2026-10-14T17:59:44.456074+00:00",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5061&retmode=xml",
+      "content_type": "text/xml; charset=UTF-8",
+      "bytes": 4988,
+      "sha256": "d668c305ba04f31ca50a1582a5a9c85d6547109cbc132a097d5d2185a8c34ff8",
+      "pdf": false,
+      "finished_at": "2026-10-14T17:59:44.736183+00:00"
+    },
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=930&retmode=xml",
+      "path": "/private/tmp/cmm-round78-frontier-research/ncbi930.xml",
+      "started_at": "2026-10-14T17:59:44.456953+00:00",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=930&retmode=xml",
+      "content_type": "text/xml; charset=UTF-8",
+      "bytes": 4951,
+      "sha256": "1ac710626a004467c8fbe0248715cc6d01360e721fbdb8f681edd536c8fc1cbc",
+      "pdf": false,
+      "finished_at": "2026-10-14T17:59:44.791160+00:00"
+    },
+    {
+      "url": "https://www.mdpi.com/2313-0105/4/4/51",
+      "path": "/private/tmp/cmm-round78-frontier-research/jadhav2018-publisher.html",
+      "started_at": "2026-10-14T17:59:44.457238+00:00",
+      "error": "<HTTPError 403: 'Forbidden'>",
+      "finished_at": "2026-10-14T17:59:44.606703+00:00"
+    },
+    {
+      "url": "https://www.mdpi.com/2227-9717/13/7/2157",
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-publisher.html",
+      "started_at": "2026-10-14T17:59:44.457593+00:00",
+      "error": "<HTTPError 403: 'Forbidden'>",
+      "finished_at": "2026-10-14T17:59:44.626447+00:00"
+    }
+  ],
+  "filename_correction": {
+    "original_alias": "shin2018.pdf",
+    "accepted_path": "jadhav2018.pdf",
+    "explanation": "Initial temporary filename was a mistaken author mnemonic, not bibliographic evidence. Original receipt and alias remain; accepted file is byte-identical and correctly attributed to Jadhav etal. Same correction for CrossrefJSON.",
+    "sha256": "131123c2eec4e01c0aecf8fbe537697919e8b4cce02e18e5cdc79daf5aed3dc4"
+  },
+  "sources": [
+    {
+      "id": "jadhav2018",
+      "doi": "10.3390/batteries4040051",
+      "title": "Leaching of Metals from Waste Silver Oxide-Zinc Button Cell Batteries by Aspergillus niger",
+      "authors": "Jadhav U; Su C-H; Chakankar M; Hocheng H",
+      "published": "2018-10-17",
+      "version": "Version of record, Batteries4(4):51",
+      "license": "CC BY4.0, stated in original and Crossref",
+      "roles": [
+        "resource identity",
+        "primary microbial-filtrate experiment"
+      ],
+      "path": "/private/tmp/cmm-round78-frontier-research/jadhav2018.pdf",
+      "sha256": "131123c2eec4e01c0aecf8fbe537697919e8b4cce02e18e5cdc79daf5aed3dc4",
+      "pages": 7,
+      "inspected": "Complete original text; visually inspected methods/Table1 p2, Figures1–2 p4, Figures3–4 p5, Table2 p6; remaining pages contain introduction/references/license.",
+      "support": "Source-designated Ag–Zn waste-cell powder and filtrate-mediated metal mobilization; limited Hg extraction.",
+      "limitations": [
+        "No model, phase authentication, discharge state or organism strain accession.",
+        "25/30°C culture conflict; 6/8h and100/150rpm assay conflicts.",
+        "Figure2 vsFigure3 differ for nominally identical60°C/150rpm/6h/100mL conditions.",
+        "Citric acid concentration/pH cited to earlier tin study, no independent metabolite assay here.",
+        "No matched sterile medium or chemical acid control; no isolated product."
+      ],
+      "handoff": {
+        "slug": "spent-silver-oxide-zinc-button-cell-batteries",
+        "path": "data/records/spent-silver-oxide-zinc-button-cell-batteries.yaml",
+        "sha256": "684f2410ea1d47f98efb4aceec9bac78c2431d076cb5d9f5af1c58dcf031dccd",
+        "history": [
+          {
+            "path": "history/records/spent-silver-oxide-zinc-button-cell-batteries/2026-10-14T180129Z-codex-f4aacb.yaml",
+            "sha256": "ff96d5859783fefffc76f8e2c3903f060485b6711750d93193d1b08dcf793014"
+          }
+        ]
+      }
+    },
+    {
+      "id": "constantin2025",
+      "doi": "10.3390/pr13072157",
+      "title": "Strategies for Nickel and Cobalt Mobilisation from Ni-Based Superalloy Residue Powders Using a Sustainable and Cost-Effective Bioleaching Method",
+      "authors": "Constantin AD; Hall S; Pourhossein F; Farnaud S",
+      "published": "2025-07-07",
+      "version": "Version of record, Processes13(7):2157",
+      "license": "CC BY4.0, stated in original and Crossref",
+      "roles": [
+        "resource identity",
+        "primary microbial-filtrate experiment"
+      ],
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025.pdf",
+      "sha256": "2a71888bdcf8281f301b125928cd069ded99153d50e2e41f84d4b637fbccd54f",
+      "pages": 21,
+      "inspected": "Complete original text and all Figures1–9/Tables1–3. Visual figure pages5–10,12–13,15–16 and table pages6,14,18; main source has no stated separate SI.",
+      "support": "Three stock-specific industrial residue feeds and laboratory Ni/Co mobilization with biogenic filtrates; early/late agitation differences and null or limited peroxide benefits.",
+      "limitations": [
+        "No commercial-grade/post-consumer identification; three stocks remain one resource family.",
+        "Incomplete aqua-regia denominator; summed Table1 elemental means1007.27 and1007.76g/kg for SAR-Ni andSAR-Re, respectively.",
+        "Unequal initial pH between lixiviants; no matched abiotic control; unnamed culture/consortium.",
+        "SAR-Re cobalt ten-point conversion7.45g/kg conflicts with65.30g/kg feed assay.",
+        "Blanket complete-ferric-reduction claim conflicts withFigure5d; blanket agitation advantage conflicts withstock-specificFigure6.",
+        "10day peroxide method versus7day plot;2mL discussion versus1/3/5/7mL series; concentration conversion unverified.",
+        "No product separation, industrial operation or measured sustainability advantage."
+      ],
+      "handoff": {
+        "slug": "nickel-based-superalloy-residue-powders",
+        "path": "data/records/nickel-based-superalloy-residue-powders.yaml",
+        "sha256": "972a18a44f1b7551771f9d0811ad5071188633322f4d4f4160bd70a9eff5fc65",
+        "history": [
+          {
+            "path": "history/records/nickel-based-superalloy-residue-powders/2026-10-14T180136Z-codex-69e73c.yaml",
+            "sha256": "df8c1170926dd6bc297f605a6a440a9883424598281e98a90c9f7201ccf42187"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ncbi5061",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5061&retmode=xml",
+      "role": "species-name context only",
+      "path": "/private/tmp/cmm-round78-frontier-research/ncbi5061.xml",
+      "sha256": "d668c305ba04f31ca50a1582a5a9c85d6547109cbc132a097d5d2185a8c34ff8",
+      "observed_id": "5061",
+      "observed_label": "Aspergillus niger",
+      "rank": "species",
+      "strain_authentication": false
+    },
+    {
+      "id": "ncbi930",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=930&retmode=xml",
+      "role": "species-name context only",
+      "path": "/private/tmp/cmm-round78-frontier-research/ncbi930.xml",
+      "sha256": "1ac710626a004467c8fbe0248715cc6d01360e721fbdb8f681edd536c8fc1cbc",
+      "observed_id": "930",
+      "observed_label": "Acidithiobacillus thiooxidans",
+      "rank": "species",
+      "strain_authentication": false
+    }
+  ],
+  "supplements_and_updates": "Neither acquired original announces a separate supplement. Constantin data availability says contributions are in article. Current publisher landing requests403; complete online supplement/version inventories could not be independently verified. Crossref relations empty and no update-to; exact DOI correction/retraction/SI first-result searches found no applicable notice. These bounded checks do not prove universal absence.",
+  "reuse": "Raw originals remain outside Git even though both version-of-record licenses are CC BY4.0; committed outputs are original curatorial summaries and checksums, not full articles.",
+  "deferred": [
+    {
+      "doi": "10.1016/j.jclepro.2012.11.035",
+      "candidate": "Earlier bacterial Ag–Zn button-cell filtrate study",
+      "state": "Known round25 lead; indexed abstract/discovery only in this pass. No full original acquired; Table2 in2018 is not independent experimental verification.",
+      "next": "Acquire complete original legitimate publisher/repository copy; inspect ferric chemistry, feed, controls, figures and denominators before adding a bacterial mechanism."
+    },
+    {
+      "doi": "10.1002/jctb.5026",
+      "candidate": "Zinc-leach residue",
+      "state": "Existing acquisition issue186 remainsopen; known original-graphics/thesis gap. No unchanged forbidden endpoints repeated.",
+      "next": "Use a genuinely new legitimate route to full graphics and thesis, resolve5vs50g/L source conflict."
+    },
+    {
+      "doi": "10.1016/j.hydromet.2026.106653",
+      "candidate": "LFP waste black-mass spent-medium leaching",
+      "state": "Publisher abstract/discovery only; existing battery-black-mass owner means possible update, not new owner solely by chemistry.",
+      "next": "Acquire complete original+SI; examine chemistry-specific feed and controls before existing-owner update."
+    },
+    {
+      "doi": "10.1016/j.clet.2023.100709",
+      "candidate": "Spent fuel-cell electrocatalysts",
+      "state": "Open primary discovery lead for abiotic HCl/chlorate leaching, not full evidence assessed.",
+      "next": "Complete exact feed novelty and full original/control review before a scoped resource foundation."
+    },
+    {
+      "doi": "10.1016/j.jclepro.2019.118731",
+      "candidate": "Spent methanation catalyst",
+      "state": "Chemical leaching lead; full evidence not assessed.",
+      "next": "Confirm resource identity and acquire original; do not inherit microbial mechanism from unrelated catalysts."
+    }
+  ],
+  "named_validation": {
+    "command": "uv run --locked cmmmech validate data/records/spent-silver-oxide-zinc-button-cell-batteries.yaml data/records/nickel-based-superalloy-residue-powders.yaml --require-records",
+    "exit_code": 0,
+    "checked": 2,
+    "failed": 0
+  },
+  "review_state": "Owner/history bytes frozen for independent scientific review; batch gate and scientific acceptance are separate and not claimed by this dossier.",
+  "raw_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/acquisition1.json",
+      "bytes": 2254,
+      "sha256": "fc85c8cb33835520126b48551097fd8c3a62d6d54af853122131f28410769739"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/acquisition2.json",
+      "bytes": 1777,
+      "sha256": "976d3475511bac40433e764a2a9507dfe6003840b2a7a5401908b5abfb30baae"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/frozen-records.json",
+      "bytes": 2164,
+      "sha256": "aca9d116f85cff6d21436ebe2f6c3e8e74f2e4e4bded0934ac0418d4562233ac"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/jadhav2018-crossref.json",
+      "bytes": 7491,
+      "sha256": "9fe91e0ac680fddc8a9158adba060440929d446cc4a2b0cfd297ad894ae08178"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/jadhav2018-page01.png",
+      "bytes": 228662,
+      "sha256": "811f029b1c67cbdbb179f7d669bc2e878584a1076de3da3397a1fd9ed5dc218c"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/jadhav2018-page02.png",
+      "bytes": 196793,
+      "sha256": "701413d9c5d391e2a57eafa2290a42efb1efe4153efac18540d0fd5df661b35b"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/jadhav2018-page03.png",
+      "bytes": 202245,
+      "sha256": "3763f19258c4346111315bf2847a8ab893b9a7f5008fa21a2a7e173486eb5732"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/jadhav2018-page04.png",
+      "bytes": 110374,
+      "sha256": "74198cbae120acdf198c87cd9560fe2ea3284a08abfca5c9c186a3eeaf50aecc"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/jadhav2018-page05.png",
+      "bytes": 188953,
+      "sha256": "9cd6d1b7c32c7a3d46cf62bc909e38741fce26104aeba78d96b5810396c5dc9e"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/jadhav2018-page06.png",
+      "bytes": 214169,
+      "sha256": "29d0f5e04f124f0bdbfd8d54ec43f24e44fdb8a60a4a378b9f12be2c9848561f"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/jadhav2018-page07.png",
+      "bytes": 82185,
+      "sha256": "b9d539d9a8c5d41e941c9b665867ce52a0140d310cd4a2289b234cf45b6e07e3"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/jadhav2018.pdf",
+      "bytes": 1851069,
+      "sha256": "131123c2eec4e01c0aecf8fbe537697919e8b4cce02e18e5cdc79daf5aed3dc4"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/linked-raw-dedup.json",
+      "bytes": 793,
+      "sha256": "6ed9984825ca987b1d0efc0daffdff9ab440cc52f112221ef3d61025adccd777"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/ncbi5061.xml",
+      "bytes": 4988,
+      "sha256": "d668c305ba04f31ca50a1582a5a9c85d6547109cbc132a097d5d2185a8c34ff8"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/ncbi930.xml",
+      "bytes": 4951,
+      "sha256": "1ac710626a004467c8fbe0248715cc6d01360e721fbdb8f681edd536c8fc1cbc"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/shin2018-crossref.json",
+      "bytes": 7491,
+      "sha256": "9fe91e0ac680fddc8a9158adba060440929d446cc4a2b0cfd297ad894ae08178"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/shin2018.pdf",
+      "bytes": 1851069,
+      "sha256": "131123c2eec4e01c0aecf8fbe537697919e8b4cce02e18e5cdc79daf5aed3dc4"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-crossref.json",
+      "bytes": 15905,
+      "sha256": "3fdbdb41b910c3d98d85051230ed0a17aff37915bb73f3b730782ceba7e7c992"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-page01.png",
+      "bytes": 238822,
+      "sha256": "9d952993f59b508f57dee4aaa15dc4b7996aa55424c192e70b22f5ebd2b1c9d1"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-page02.png",
+      "bytes": 266934,
+      "sha256": "5feabd84f1a6dbf2ae478bd5ae4714a68fe1b68d9159b8dec88ab81e16d88c8d"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-page03.png",
+      "bytes": 245796,
+      "sha256": "778a1d6fc099dfeb0f7d14fb79ad478feb0eaa9d77dd9b869d5edcdbc0dda15e"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-page04.png",
+      "bytes": 247972,
+      "sha256": "4c1775be52eca6fb0c7b840cf2d2ff8b33c1d99ce1a76f63cbb441b9f5e5aa8a"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-page05.png",
+      "bytes": 212173,
+      "sha256": "9d5c43226450dd916c6320ca1b1bd88b605e8a388a98d6a63ac5b0ae908a62cf"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-page06.png",
+      "bytes": 167089,
+      "sha256": "fcb9925b022740852e02a9abc83ed81546ec522f6c0588483cf347c6b2fd09cd"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-page07.png",
+      "bytes": 182501,
+      "sha256": "7c1ee7a3fbf70ce3f3c156f9095835e6b8c1092fb3855cf85992b8aa11ac0457"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-page08.png",
+      "bytes": 237141,
+      "sha256": "18f4c850cf213bd865d7c5ee638e394d5039624586e8bf3a5dc4479aebece000"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-page09.png",
+      "bytes": 206374,
+      "sha256": "f11b6a82ed593ef774fc9bd54c3327cbd231908238c0813682d703cfaa45e36c"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-page10.png",
+      "bytes": 217110,
+      "sha256": "d33a7b6c4311f42c9ec6f806fd91e380f843f60c00667c0ff5d101a2c8ea0c36"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-page11.png",
+      "bytes": 244474,
+      "sha256": "5379eb4030e9fa7e9847bc5b9d3f230b7fbe7bda1a8fd12ee92f33e24151e380"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-page12.png",
+      "bytes": 252082,
+      "sha256": "73410def3c6fd6392c0f54bed0555398e12f1c93bdc4f3150fb370ffa931b3fd"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-page13.png",
+      "bytes": 185584,
+      "sha256": "eec9d74070deaa4215b765b13a84f95b09ce62f8b3ba21f6a66ab2a00d755e7b"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-page14.png",
+      "bytes": 215365,
+      "sha256": "06be8fd096bb29f7ecdfbb70107b2c37e37c9d5145c523e5f01394d8339a294e"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-page15.png",
+      "bytes": 208588,
+      "sha256": "cdb2f6c02b23f878f19b14426b2716680d52f6a8ec29f262e500bfbf7b87ddb9"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-page16.png",
+      "bytes": 264975,
+      "sha256": "2495fea7b28f9f5697d87790d87fb809612a4ba9ec9eb7817cac7e2bda58d4cd"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-page17.png",
+      "bytes": 240907,
+      "sha256": "056330627073b1f1f2a2b72006b05a878150cae00b447a7010af457472e409b8"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-page18.png",
+      "bytes": 209778,
+      "sha256": "f501c64ef0612c9fefa50ac92569f594a3a1e3590e1eebd1720440365dc1e51a"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-page19.png",
+      "bytes": 193107,
+      "sha256": "8a35de17f8481198c0b27c928aa58c75e58db1054d23f39cf9c970345426a975"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-page20.png",
+      "bytes": 311583,
+      "sha256": "3a8b490a8509f050878a323c50c325c852d2eaae2bd9e55adf8ebefce8a4576d"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025-page21.png",
+      "bytes": 127990,
+      "sha256": "7af95c076ae697678f3326c2e332d2bcd74106fe8cf3723eca78da856d1650dc"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-research/superalloy2025.pdf",
+      "bytes": 4192251,
+      "sha256": "2a71888bdcf8281f301b125928cd069ded99153d50e2e41f84d4b637fbccd54f"
+    }
+  ]
+}

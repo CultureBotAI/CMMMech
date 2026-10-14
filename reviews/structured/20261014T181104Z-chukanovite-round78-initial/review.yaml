@@ -1,0 +1,395 @@
+schema_version: 1.0.0
+review_id: 20261014T181104Z-chukanovite-round78-initial
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Chukanovite
+started_at: '2026-10-14T18:04:03.517094Z'
+finished_at: '2026-10-14T18:11:04.295902Z'
+reviewer:
+  identity: codex /root/round68_new_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Chukanovite was authored by /root and sepiolite by round68_iron_sulfides.
+    This reviewer authored the two secondary-resource records, did not edit either
+    mineral owner or its history, and independently read the complete accepted originals
+    and relevant graphics from shared acquisitions. Shared acquisitions are not replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: Qualified mineral identity and culture-associated goethite product assignment,
+  with source conflicts and distinct lepidocrocite nondetection retained. One minor
+  survey-duration scope error needs correction before acceptance.
+source:
+  git_revision: 884152be5ef2accab670b604ddb344f4a55bf1d3
+  state: working_tree
+  inputs:
+  - path: data/records/chukanovite.yaml
+    sha256: a1e2cd7659029ae657392678810af7c8639c250bfc8fc010128c15bb1559e67f
+    role: target
+  - path: history/records/chukanovite/2026-10-14T180019Z-codex-787c6d.yaml
+    sha256: 40ed1c45c01ebebc510ebbd369af23b20d321c26256944dd6aea6df4284a60b6
+    role: context
+scope:
+  description: Whole exact maintained owner and canonical history; accepted identity
+    and claim-bearing primary methods/results/graphics, controls, contradictions,
+    quantitative denominators and actual structural gates.
+  selection: Assigned exact owner, native inspect captured before scientific judgment;
+    no reviewer edits to owner or history.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:chukanovite
+targets:
+- target_id: cmmmech:chukanovite
+  path: data/records/chukanovite.yaml
+  label: Chukanovite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/chukanovite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/chukanovite.yaml data/records/sepiolite.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Actual reviewer execution, terminal session64716 exit0; two records and
+    zero failures. Exact command interval was not separately captured.
+  target_ids:
+  - cmmmech:chukanovite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Completed batch gate 1
+  command: just check
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T18:07:04.891860+00:00 to 2026-10-14T18:10:27.645303+00:00;
+    terminal result and full log hash independently verified.
+  target_ids:
+  - cmmmech:chukanovite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Completed batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T18:10:27.645322+00:00 to 2026-10-14T18:10:36.327502+00:00;
+    terminal result and full log hash independently verified.
+  target_ids:
+  - cmmmech:chukanovite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Completed batch gate 3
+  command: uv run --locked cmmmech validate-history --base 884152be5ef2accab670b604ddb344f4a55bf1d3
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T18:10:36.327520+00:00 to 2026-10-14T18:10:45.575785+00:00;
+    terminal result and full log hash independently verified.
+  target_ids:
+  - cmmmech:chukanovite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_3
+  name: Completed batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T18:10:45.575813+00:00 to 2026-10-14T18:10:53.945672+00:00;
+    terminal result and full log hash independently verified.
+  target_ids:
+  - cmmmech:chukanovite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/chukanovite.yaml
+  locator: 'Entire frozen maintained owner. Actual local artifact: /private/tmp/CMMMech-expansion-round78-20261014/data/records/chukanovite.yaml'
+  accessed_at: '2026-10-14T18:11:04.295902Z'
+  support: supports
+  summary: All fields read independently; no reviewer owner edits.
+  snapshot_sha256: a1e2cd7659029ae657392678810af7c8639c250bfc8fc010128c15bb1559e67f
+- evidence_id: history0
+  kind: record_content
+  reference: history/records/chukanovite/2026-10-14T180019Z-codex-787c6d.yaml
+  locator: 'Canonical history sidecar and linked inline event. Actual local artifact:
+    /private/tmp/CMMMech-expansion-round78-20261014/history/records/chukanovite/2026-10-14T180019Z-codex-787c6d.yaml'
+  accessed_at: '2026-10-14T18:11:04.295902Z'
+  support: supports
+  summary: Verified actual actor, event, target and scope; retained earlier history
+    is immutable.
+  snapshot_sha256: 40ed1c45c01ebebc510ebbd369af23b20d321c26256944dd6aea6df4284a60b6
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round78-frontier-reviews/named-validation.log
+  locator: 'Actual reviewer terminal validation stdout. Actual local artifact: /private/tmp/cmm-round78-frontier-reviews/named-validation.log'
+  accessed_at: '2026-10-14T18:11:04.295902Z'
+  support: supports
+  summary: Two records, zero failures; structural validation does not prove scientific
+    truth.
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round78-final-gates.json
+  locator: 'Actual completed coordinator receipt and all FOUR commands; log /private/tmp/cmm-round78-final-gates.log
+    SHA256 60b35b7c12611e384dfd1cd7cd2c92d556efdbebebed28a28f69ffe4d2beb9a2. Actual
+    local artifact: /private/tmp/cmm-round78-final-gates.json'
+  accessed_at: '2026-10-14T18:11:04.295902Z'
+  support: supports
+  summary: Base, worktree, terminal commands, exact log digest and reviewed owner
+    digest independently checked.
+  snapshot_sha256: 521fb3c1411dc8efa71517369001e35272aeb24dd52f61b50323efd00629c3db
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round78-frontier-reviews/chukanovite-dedup.json
+  locator: 'Bounded followed hidden/ignored-inclusive search; exact invocation retained
+    in adjacent JSON. Actual local artifact: /private/tmp/cmm-round78-frontier-reviews/chukanovite-dedup.txt'
+  accessed_at: '2026-10-14T18:11:04.295902Z'
+  support: context_only
+  summary: Identity and normalized DOI/source lineage assessed against existing records
+    and research. No machine-wide absence claim.
+  snapshot_sha256: ee0dde2791f6061d38d63304a66d4c6be5fdb951d4fc175d5c1003ab5e851960
+  search_scope: rg --no-ignore --hidden --follow -a -n -i chukanovite|min11020149|min9070434|2005-039
+    data/records research reviews history /private/tmp/cmm-round64-iron-research /private/tmp/cmm-round78-root-research
+    -g *.yaml -g *.md -g *.json -g *.txt -g !**/.git/** -g !**/.venv/**
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round78-frontier-reviews/notice-search.json
+  locator: 'Own exact-query/coverage memo plus separately hashed current Crossref
+    metadata. Actual local artifact: /private/tmp/cmm-round78-frontier-reviews/notice-search.json'
+  accessed_at: '2026-10-14T18:11:04.295902Z'
+  support: context_only
+  summary: No applicable notice found in bounded returned results; absence of Crossref
+    relations is not exhaustive proof. Accepted claims use full primary artifacts.
+  snapshot_sha256: 9508323ad7f643959161ddca9e61babc7925b7d6e171ccd990719876ee8381c3
+  search_scope: First result set per exact DOI correction/erratum/retraction query
+    on 2026-10-14, no exhaustive pagination. Current primary declarations and Crossref
+    relation/update fields also inspected.
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'Complete 244-page edition; definitions pages1–2 and target row page45
+    visually inspected. Actual local artifact: /private/tmp/cmm-round64-iron-research/ima2026-09.pdf'
+  accessed_at: '2026-10-14T18:11:04.295902Z'
+  support: supports
+  summary: Chukanovite IMA2005-039 and formula verified; Sepiolite grandfathered status/year1847
+    is not an approval accession. Neither identity inherits constituent criticality.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: primary2021
+  kind: primary_source
+  reference: https://doi.org/10.3390/min11020149
+  locator: 'Complete43-page original available; Sections2.1–2.3,3.3,4.1–4.3, Tables2–3
+    and Figures6–8 independently checked, including original pages7,9–12. Actual local
+    artifact: /private/tmp/cmm-round64-iron-research/oloughlin2021.pdf'
+  accessed_at: '2026-10-14T18:11:04.295902Z'
+  support: supports
+  summary: Goethite arms support a qualified mixed-phase Mössbauer assignment. Inconclusive
+    XRD, morphology limits, phosphate-arm conflict, rate-unit disagreement and source-proposed
+    route are retained. Unrelated mineral arms were not recast as replication.
+  snapshot_sha256: 9da3ec0eebfa8b05a9aec4398fa45a80748c9f212b153f6010a695a2d6cdb062
+- evidence_id: primary2019
+  kind: primary_source
+  reference: https://doi.org/10.3390/min9070434
+  locator: 'Complete29-page original available; Methods2.1–2.3, Sections3.1,3.3,4.2,
+    Tables1–3 and Figures1,5–6 independently inspected. Additional Figures2–4,7 read
+    as context; source null on page20. Actual local artifact: /private/tmp/cmm-round64-iron-research/oloughlin2019-osti.pdf'
+  accessed_at: '2026-10-14T18:11:04.295902Z'
+  support: supports
+  summary: No chukanovite observed in this distinct lepidocrocite study. Figure1 has
+    differing observation durations; the72-day statement in Section3.1 belongs specifically
+    to the no-exogenous-donor result. Focused formate cultures reach day62. Null is
+    not universal refutation of the long goethite experiment.
+  snapshot_sha256: 50a4aad7a4b7d51938ebe20bf3c63210843b3682d5cc78e9e5d9d6743f6b31f5
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=319224
+  locator: 'TaxId319224, scientific name and strain rank. Actual local artifact: /private/tmp/cmm-round78-root-research/ncbi319224.xml'
+  accessed_at: '2026-10-14T18:11:04.295902Z'
+  support: supports
+  summary: Reported CN-32 strain name resolves, without authenticating the experimental
+    stock.
+  snapshot_sha256: 8de6ac66eb65af66efa3115fce5deaf9132ff4ad27428e909ea9cd13a626707d
+- evidence_id: atcc453
+  kind: authority
+  reference: https://www.atcc.org/products/baa-453
+  locator: 'Current collection name and strain designation. Actual local artifact:
+    /private/tmp/cmm-round78-root-research/atcc453.html'
+  accessed_at: '2026-10-14T18:11:04.295902Z'
+  support: supports
+  summary: BAA-453 corresponds to reported Shewanella putrefaciens CN-32.
+  snapshot_sha256: 553fbce6b00c17f06b17af926bce2135c8156730ad6d2b5e89559ef7521e7beb
+- evidence_id: atcc543
+  kind: authority
+  reference: https://www.atcc.org/products/baa-543
+  locator: 'Current collection name and strain designation. Actual local artifact:
+    /private/tmp/cmm-round78-root-research/atcc543.html'
+  accessed_at: '2026-10-14T18:11:04.295902Z'
+  support: supports
+  summary: The printed BAA-543 resolves to Cellulomonas sp. ES5; record preserves
+    this conflict rather than authenticating or silently replacing the stock.
+  snapshot_sha256: 94b8a2f56dc5bc1f8d39f9ce7d3197e2987a58221480e65baa39596fd15176d6
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral and reported strain identity
+  outcome: supported
+  summary: IMA2005-039 supports distinct Fe2(CO3)(OH)2. Taxon maps the reported CN-32
+    name, while the conflicting ATCC accession remains unresolved rather than repaired
+    by inference.
+  evidence_ids:
+  - record
+  - ima
+  - taxonomy
+  - atcc453
+  - atcc543
+  target_ids:
+  - cmmmech:chukanovite
+- assessment_id: conditions
+  area: evidence
+  topic: Specific goethite experiment and controls
+  outcome: supported
+  summary: Synthetic washed/aged goethite, duplicate100mL cultures,80mMFeIII/75mMformate,
+    initialpH7.5,30C and nominalprinted cell density remain scoped to original. Phosphate-free±AQDS
+    and phosphate+AQDS are distinct unequal-duration arms; no missing phosphate/AQDS-free
+    comparator is invented.
+  evidence_ids:
+  - record
+  - primary2021
+  target_ids:
+  - cmmmech:chukanovite
+- assessment_id: outcome
+  area: evidence
+  topic: Fitted phase versus recovered mass
+  outcome: supported
+  summary: Mössbauer assignments are temperature-dependent relative spectral areas
+    alongside goethite, not mass fraction, recovery or pure yield. Inconclusive XRD
+    and compatible morphology do not independently prove a unique phase or mechanism.
+    HCl-extractable FeII is not dissolved FeII alone.
+  evidence_ids:
+  - record
+  - primary2021
+  target_ids:
+  - cmmmech:chukanovite
+- assessment_id: conflicts
+  area: scope
+  topic: Source conflicts and separate null
+  outcome: supported
+  summary: Phosphate Section3.3 versusTable2/Section4.3 and rate units remain explicit.
+    No exact phosphate yield or rate adopted. Lepidocrocite nondetection limits transfer
+    without refuting the separate long-term goethite observation; proposed time explanation
+    is untested.
+  evidence_ids:
+  - record
+  - primary2021
+  - primary2019
+  target_ids:
+  - cmmmech:chukanovite
+- assessment_id: duration
+  area: evidence
+  topic: Electron-donor survey duration
+  outcome: concern
+  summary: A study-wide72-day survey label overgeneralizes the specific no-exogenous-donor
+    result. Figure1 extends some arms, including NAG and sterile control, to about98days.
+  evidence_ids:
+  - record
+  - primary2019
+  target_ids:
+  - cmmmech:chukanovite
+- assessment_id: provenance
+  area: provenance
+  topic: Exact inspected inputs and completed checks
+  outcome: supported
+  summary: Native inspect preceded judgment; exact owner and canonicalhistory verified
+    unchanged at this observation. Actual named and FOUR batch commands passed. Existing
+    sharedsource lineage retained, no inheritedcriticality or industrialdeployment.
+  evidence_ids:
+  - record
+  - history0
+  - named
+  - batch
+  - dedup
+  - notices
+  target_ids:
+  - cmmmech:chukanovite
+findings:
+- finding_id: F1
+  issue_key: chukanovite-round78-donor-survey-duration
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Do not label the entire electron-donor survey as72days
+  description: Mechanism evidence calls the2019 electron-donor survey72days. Section3.1
+    assigns72days to the no-exogenous-donor result, while Figure1 shows NAG and sterile-control
+    observations continuing to about98days. Replace that survey-wide duration with
+    differing observation durations; retain the separate focused62-day formate cultures
+    and unchanged chukanovite null.
+  target_ids:
+  - cmmmech:chukanovite
+  field_paths:
+  - mechanisms[id=cn32_goethite_associated_chukanovite].evidence[3].explanation
+  evidence_ids:
+  - record
+  - primary2019
+  rule_id: experiment-duration-scope
+  native_severity: minor
+  normalization_reason: Narrow contextual duration error; mineral identity,2021 mechanism
+    and2019 nondetection remain supported.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/chukanovite.yaml
+    role: maintained_record
+actions:
+- action_id: A1
+  description: Narrow the survey-duration wording, append canonical EDIT and inline
+    correction, preserve CREATE and initial review.
+  finding_ids:
+  - F1
+  target_ids:
+  - cmmmech:chukanovite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/chukanovite.yaml
+    role: maintained_record
+  acceptance_checks:
+  - State survey arms had differing observation durations; do not assign72days to
+    all arms.
+  - Preserve62-day formate comparison and bounded nondetection without inventing a
+    precise common endpoint.
+  - Append correction history, pass affected checks and save a linked independent
+    successor against corrected bytes.
+limitations:
+- Actual culture accession unauthenticated; original name maps to current taxonomy
+  but both papers print another organism’s ATCC number.
+- Mixed fitted phase assignment with inconclusive diffraction, limited matched-control
+  metadata and unobserved intermediates; no biological necessity or direct enzymatic
+  pathway established.
+- Phosphate-arm contradiction and μM/day versus mM/day conflict remain unresolved;
+  no phase-specific mass yield or industrial recovery.
+- Complete originals accessed; full relevant claim-bearing methods/tables/graphics
+  inspected, not every unrelated mineral/donor arm re-curated. No exhaustive notice/supplement
+  absence claim.
+notes:
+- Actual nonempty full primary and authority artifacts are bound by localpath and
+  SHA256; source material remains outsideGit.
+- Reviewer authored the two resource owners only; mineral scientific judgment is independent.
+  No owner or history edits by reviewer.
+- Publication preflight, hosted CI and merge are separate future checks, not asserted
+  here.
