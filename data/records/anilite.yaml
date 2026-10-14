@@ -1,0 +1,92 @@
+id: cmmmech:anilite
+name: Anilite
+material_kind: mineral
+description: Anilite is the orthorhombic copper sulfide mineral Cu7S4, distinct from digenite, djurleite,
+  chalcocite, covellite, copper element and mixed ores. The September 2026 IMA list gives approved status
+  and approval 1968-030. The accepted experiment concerns natural anilite-bearing grains with intergrown
+  djurleite, not a certified pure mineral feed. This record curates abiotic ferric-sulfate alteration;
+  it does not inherit copper criticality or establish a microbial mechanism.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026; PDF page 11, mineral row and pages 1–2
+    status definitions.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: handbook
+  title: Handbook of Mineralogy. Anilite; one-page mineral description, orthorhombic crystal data, formula
+    and grinding-induced transformation warning.
+  url: https://handbookofmineralogy.org/pdfs/anilite.pdf
+  accessed_on: '2026-10-14'
+- id: goble1981
+  title: Goble, R.J. (1981). The leaching of copper from anilite and the production of a metastable copper
+    sulfide structure. Canadian Mineralogist 19:583–591; complete nine-page original, Tables 1–4 and Figures
+    1–5.
+  url: https://rruff.info/doclib/cm/vol19/CM19_583.pdf
+  accessed_on: '2026-10-14'
+- id: whiteside1986
+  title: Whiteside, L.S. and Goble, R.J. (1986). Structural and compositional changes in copper sulfides
+    during leaching and dissolution. Canadian Mineralogist 24:247–258; complete twelve-page original,
+    Figures 1–7 and Tables 1–2.
+  url: https://rruff.info/doclib/cm/vol24/CM24_247.pdf
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: abiotic-ferric-sulfate-alteration
+  name: Abiotic copper depletion with a metastable sulfide structure
+  process: redox_transformation
+  microbial: false
+  description: Ferric-sulfate treatment of selected natural anilite-bearing cleavage fragments changed
+    the crystal diffraction pattern and depleted copper relative to sulfur in the remaining solids. Single-crystal
+    precession data distinguish the metastable leached structure from natural yarrowite despite similar
+    composition or powder patterns. This laboratory chemical experiment does not demonstrate microbial
+    leaching, an isolated copper product or industrial recovery.
+  context: 'Goble (1981) pp.584–589 and Table 2: grains from the Yarrow Creek–Spionkop Creek locality,
+    southwestern Alberta, were optically selected, plucked from polished material, checked by Gandolfi
+    diffraction against anilite and examined by precession X-ray photography. Associated copper sulfides
+    were present and djurleite reflections persisted in the starting material. Grains generally approximately
+    50 × 100 × 200 micrometres were immersed in about 5 mL ferric sulfate solution, approximately 10^-3
+    M Fe2(SO4)3·xH2O, pH approximately 5 and 25 degrees C. At intervals the same grain was removed, washed
+    with distilled water and re-examined by X-ray diffraction; the ten-day entry used a larger grain approximately
+    100 × 200 × 200 micrometres. Unleached and leached solids were separately characterized by electron
+    microprobe at 15 kV, approximately 1.5 nA and approximately 2-micrometre beam. No organism or biomass
+    was introduced. No acid-only or iron-free comparison, replicate count, aqueous copper assay or recovered-product
+    mass balance is reported.'
+  evidence:
+  - source_ref: goble1981
+    supports: support
+    explanation: Table 2 and pp.585–589 report little structural change through 10 hours, the major change
+      by 12 hours and no further structural change through 10 days under these conditions. Figures 2–4
+      compare labeled original/leached patterns and geerite. Table 4 microprobe analyses support copper-depleted
+      remaining solids; the precession pattern retains a metastable geerite-like sulfur framework rather
+      than proving natural yarrowite, spionkopite or covellite products.
+  - source_ref: goble1981
+    supports: partial
+    explanation: 'Starting material was not pure anilite: p.585 describes faint djurleite reflections,
+      while Table 4 starting Cu:S ratios 1.82 and 1.84 would imply 32% and 41% djurleite under an ideal
+      two-phase calculation. Its footnote states diffraction suggests much less. These are conflicting
+      abundance estimates, not accepted phase fractions. Leached solid Cu:S summaries also differ slightly
+      between Table 4 and prose rounding. No extraction percentage is derived from these ratios, and depletion
+      in mixed solids does not isolate an anilite-only mass balance.'
+  - source_ref: goble1981
+    supports: partial
+    explanation: Powder patterns, optical appearance and elemental composition alone may confuse the metastable
+      product with natural copper sulfides; Tables 3–4 and the single-crystal discussion are needed together.
+      The proposed structural/bonding interpretation and Figure 5 relationships do not establish stable
+      equilibrium phases. Repeated removal and washing interrupt exposure; this is not a continuous in-situ
+      kinetic experiment. A separate 10^-5 M observation attributed to personal communication is not the
+      Table 2 experiment.
+  - source_ref: whiteside1986
+    supports: context_only
+    explanation: This later shared-author study, pp.248 and 253–258, discusses Goble (1981) and finds
+      related metastable structural paths in synthetic digenite leaching. It explicitly retains phase-identification
+      uncertainty and the need for further single-crystal work. Its synthetic substrates, mounting conditions
+      and concentration series are not independent replication of the natural anilite experiment, nor
+      evidence of a microbial route.
+curation_history:
+- timestamp: '2026-10-14T16:30:35.886892+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created distinct anilite owner from complete primary abiotic leaching evidence; preserved intergrown
+    djurleite, discrepant phase abundance estimates, metastable product identity and missing recovery
+    controls.
+history_refs:
+- history/records/anilite/2026-10-14T163053Z-codex-cc6511.yaml

@@ -1,0 +1,86 @@
+id: cmmmech:illite
+name: Illite group
+material_kind: mineral_group
+description: Illite is represented as a mineral group, as designated in the IMA compendium nomenclature
+  table, rather than an ideal single species or an undifferentiated clay commodity. The experimental material
+  is the source-designated IMt-1 illite preparation. Its measured behavior is not transferred from the
+  separate nontronite and montmorillonite studies that reported mixed illite-like transformation products.
+  No phase-pure endmember, universal formula or constituent criticality designation is asserted.
+sources:
+- id: ima_compendium_2019
+  title: Schertl, Mills and Maresch, editors (2019 copyright). A Compendium of IMA-Approved Mineral Nomenclature,
+    prepared for IMA2018. PDF p34 reproduces Whitney and Evans (2010), Abbreviations for names of rock-forming
+    minerals, DOI 10.2138/am.2010.3371; Table 1 marks chlorite and illite GROUP. Historical nomenclature
+    table, not a 2026 species approval.
+  url: https://cnmnc.units.it/ima_reports/2%20IMA-Nomenclature-e-Booklet-2019-1.pdf
+  accessed_on: '2026-10-14'
+- id: jung_2022
+  title: Jung, Chung, Ko, Moon, Suh and Kim (2022). A microbial driver of clay mineral weathering and
+    bioavailable Fe source under low-temperature conditions. Frontiers in Microbiology 13:980078. DOI
+    10.3389/fmicb.2022.980078; PMCID PMC9441888. Complete ten-page original, Methods pp2-3, Figures 1-6
+    and Tables 1-2.
+  url: https://doi.org/10.3389/fmicb.2022.980078
+  accessed_on: '2026-10-14'
+- id: ncbi_vesiculosa
+  title: NCBI Taxonomy 518738, Shewanella vesiculosa, species; current taxonomy XML inspected 14 October
+    2026. Species mapping does not identify the unnamed experimental isolate as type strain M7.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=518738&mode=Info
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: cold_imt1_reduction
+  name: Low-temperature culture-associated reduction and alteration of IMt-1 illite
+  process: redox_transformation
+  description: Cultures assigned by the authors to Shewanella vesiculosa increased measured iron reduction
+    and operationally dissolved total iron relative to uninoculated IMt-1 controls at low temperature.
+    Diffraction broadening and altered particle surfaces accompany the response. The paper interprets
+    these observations as reductive dissolution and secondary precipitation; exclusive structural-iron
+    provenance and a complete recovery mass balance remain unestablished.
+  context: The Clay Minerals Society IMt-1 material was size-separated below 2 micrometres by gravitational
+    settling and freeze-dried. An unnamed Antarctic isolate from the King Sejong Station area was grown
+    in LB at 15 degrees C for seven days, washed three times, and inoculated at approximately 10^7 CFU/mL.
+    Laboratory bottles contained 100 mL nitrogen-purged M1 medium, 4 g/L IMt-1 and nominal 20 mM sodium
+    lactate, buffered with MOPS to pH 6, at 0 or 4 degrees C for up to 24 weeks. No strain accession or
+    sequence-based verification is supplied. Samples were frozen at minus 70 degrees C and thawed before
+    analysis. Acid/HF digestion followed by phenanthroline measured Fe(II)/total Fe; centrifuged, 0.45-micrometre-filtered
+    liquid was analyzed by ICP-AES for total iron, not specifically Fe(II). Triplicate analytical sets
+    are stated, without clear independent-bottle replication.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:518738
+    label: Shewanella vesiculosa
+  evidence:
+  - source_ref: jung_2022
+    supports: support
+    explanation: Figures 1-2 distinguish inoculated 0/4-degree treatments from no-cell controls. The 4-degree
+      reduction trajectory peaks early and then decreases before recovering; both biotic trajectories
+      end near the source-reported 3.1% reduction at 24 weeks. Dissolved total iron rises through eight
+      weeks and subsequently decreases, so the result is not monotonic accumulation. These conditional
+      assay results establish culture-associated redox/mobilization, not a purified iron product or measured
+      biological uptake.
+  - source_ref: jung_2022
+    supports: partial
+    explanation: Figures 3-5 and Table 2 support broadened illite peaks, changed morphology and source-assigned
+      vivianite in the 4-degree biotic residue after 24 weeks. Limited diffraction peaks plus Fe-P-O EDS
+      do not establish phase purity, quantitative conversion or exclusive origin of product iron. The
+      medium contains phosphate and a metal supplement, and the paper does not provide phase-resolved
+      Fe accounting or a complete recipe. Its claim that IMt-1 is the sole electron acceptor is retained
+      as source design, not experimentally proved exclusivity; Table 1 additionally lists selenate. Proposed
+      electron transfer in Figure 6 is a schematic, not a direct measurement.
+  - source_ref: jung_2022
+    supports: partial
+    explanation: Dithionite produced more operational Fe reduction and dissolved iron than the microbial
+      treatments, but its two-hour duration is not time-matched to the multiweek cultures. Table 1 marks
+      clay and dithionite without medium for that arm, whereas Methods say it was prepared similarly except
+      for cells. The same table lists 2 M lactate/formate without clarifying stock versus final concentrations,
+      in conflict with the prose nominal 20 mM lactate. Figure 4 labels K/(K+Ca), whereas Results use
+      K/(K+2Ca); both chemical and biotic panels show the same final ratio, despite Discussion claiming
+      greater biotic K enrichment. No differential K enrichment, exact complete medium recipe, pure-illite
+      Fe yield or ocean/industrial-scale performance is inferred.
+curation_history:
+- timestamp: '2026-10-14T16:33:06.577518+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created illite-group owner from complete primary microbial experiments with explicit source,
+    phase and assay limitations.
+history_refs:
+- history/records/illite/2026-10-14T163249Z-codex-b0a6a1.yaml

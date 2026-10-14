@@ -8,10 +8,16 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 358 material records.
+The catalogue currently contains 364 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Chlorite group](data/records/chlorite.yaml) | MR-1-associated iron reduction in a natural chlorite preparation | Impurity phases and assay fractions limit phase-specific reduction and recovery claims |
+| [Illite group](data/records/illite.yaml) | Cold-culture-associated iron reduction and alteration of IMt-1 | Medium contradictions, late dissolved-iron decline and unmatched chemical controls remain explicit |
+| [Hopeite](data/records/hopeite.yaml) | Fungal-associated alteration and secondary phosphate precipitation | Starting hopeite formed chemically; shared-study lineage and inconsistent endpoint conditions are retained |
+| [Whitlockite](data/records/whitlockite.yaml) | Culture-associated maturation of amorphous calcium phosphate | Mg-stabilized beta-TCP remains an alternative assignment; no pure-product recovery yield |
+| [Anilite](data/records/anilite.yaml) | Abiotic ferric-sulfate alteration of a natural intergrown sulfide | Mixed starting phases and metastable products prevent phase-specific copper recovery claims |
+| [Digenite](data/records/digenite.yaml) | Abiotic ferric-sulfate leaching and reversible structural changes | Mounting may mediate cycling; solid Cu:S ratios are not aqueous or isolated copper yields |
 | [Vermiculite group](data/records/vermiculite.yaml) | Fungal-associated potassium acquisition from a potassium-exchanged specimen | Abiotic exchange remains an alternative; a source aluminium claim conflicts with its table |
 | [Montmorillonite](data/records/montmorillonite.yaml) | Humic-associated iron reduction in SWy-2 suspensions containing MR-1 | No matched sterile SWy-2 series; nontronite controls and products are not transferred |
 | [Djurleite](data/records/djurleite.yaml) | Culture-associated copper mobilization from a mixed natural separate | Chemical baseline release, missing controls and conflicting inoculum reports limit attribution |

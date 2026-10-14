@@ -1,0 +1,44 @@
+# Round76 copper-sulfide source investigation
+
+UTC 2026-10-14T16:34:19.597057+00:00; codex (GPT-6; codex), author of the two proposed owners. Worktree `/private/tmp/CMMMech-expansion-round76-20261014`, branch `curate/cmm-expansion-round76-20261014`, trusted base `925a93db824261d146a14900b8367c88d25cbd71`. Root's actual baseline passed at16:25:57 UTC. This dossier supports curation; it is not independent scientific acceptance.
+
+## Decisions and identity
+
+[Anilite](../../../data/records/anilite.yaml) and [digenite](../../../data/records/digenite.yaml) now have separate mineral owners, canonical CREATE histories and explicit abiotic mechanisms. No organisms or inherited copper criticality are asserted. Rambergite remains deferred because its complete microbial original and supplement were not acquired. The anilite microbial leads also remain outside the accepted mechanisms.
+
+The [IMA September2026 list](https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf) lists anilite Cu7S4, A,1968-030 on PDFp11; digenite Cu1.8S, A,1962 special procedure onp57; rambergite MnS, A,1995-028 onp181. All three original page images were inspected. The issuing URL was checked live, while the actual PDF is a clearly recorded reuse from round75, SHA`2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973`. [Anilite](https://handbookofmineralogy.org/pdfs/anilite.pdf) and [digenite](https://handbookofmineralogy.org/pdfs/digenite.pdf) Handbook sheets were freshly acquired and visually read. Their grinding warning reinforces why composition or generic copper-sulfide labels cannot substitute for a phase assignment. No speculative mineral CURIE is supplied; approval and special-procedure labels are retained in prose.
+
+## Search and duplicate boundary
+
+The paired JSON contains exact retained web queries, date/provider, acquisition URLs/statuses/bytes/hashes and the complete hidden/ignored-inclusive dedup receipt. `rg --no-ignore --hidden --follow --text` searched records, research, reviews and history in both main and the isolated worktree before creation. Existing djurleite/chalcocite owners distinguish these minerals; round75 deferred anilite and phase-specific digenite claims. No anilite/digenite owner or selected1981/1986 study was found in that searched corpus before these writes. Raw dedup inspected116 readable text/metadata/PDF files from seven explicitly listed copper-sulfide/manganese roots, following symlinks and excluding two PDF-named non-PDF responses. Images were not OCR-searched. This is a defined source boundary, not machine-wide absence.
+
+The final bounded web search reran exact candidate, primary-title, supplement/correction/erratum queries with first-result-set capture in `final-search-results.json`; earlier exploratory captures are not presented as a complete query log. No applicable correction notice was identified in those returned results. The1986 paper itself supplies relevant limits and challenges to earlier phase assignments. A search result or abstract is not full experimental verification.
+
+## Accepted originals and evidence
+
+| Original | Actually inspected | Curation scope |
+|---|---|---|
+| [Goble1981, Canadian Mineralogist19:583–591](https://rruff.info/doclib/cm/vol19/CM19_583.pdf) | Complete9pages, all original-page graphics, Tables1–4/Figures1–5; PDF SHA`b089bca1ade838a159d42ab6b45f604a1bd651a4856ef119ce9d36a519ab4e30` | Natural anilite-bearing grains treated with ferric sulfate; composition and single-crystal structure constrain the alteration claim. |
+| [Whiteside & Goble1986, Canadian Mineralogist24:247–258](https://rruff.info/doclib/cm/vol24/CM24_247.pdf) | Complete12pages, all original-page graphics, Tables1–2/Figures1–7; PDF SHA`e39a23d5d81db52cd7e9e32b6e4c04c78d702005326db95377e047067391832b` | Synthesized digenite leaching and mounted reversible structural cycling; source-defined metastable structural types. |
+
+For anilite, pp584–585/Table2 support optically selected, diffraction-checked natural cleavage grains, ferric sulfate approximately10^-3M, pH about5,25°C and repeated removal/washing. The major structural change occurs by12h; additional exposure through10d does not further change that structure. Figures2–4 and Tables3–4 separate remaining-solid chemistry from structural identification. Table4's stoichiometric djurleite estimates conflict with the much weaker diffraction signal; no pure-feed fraction is adopted. Slight Table4/prose Cu:S rounding differences are preserved as a limitation without deriving recovery percentages. There is no reported acid-only/iron-free control, replicate count, aqueous assay or isolated product. Figure2/3 source layout requires reading graphic labels, not relying on OCR panel order.
+
+For digenite, pp248–250/Figure1 describe synthetic Cu/S material, gentle crushing,150–250µm aggregates, cyanoacrylate/mylar mounting, ferric sulfate10^-5–2M and23±1°C. In-situ XRD comparison differs from separate unmounted microprobe assays; the latter underpin Figure3/Table2 copper percentages. No numerical pH is supplied. Figure4 structural compilation uses13 experiments, while Figure5 reports282 grains in three composition experiments. Phase proportions are approximate and composition does not prove natural products. The weak-arm cycle in Figure2 is accompanied by a noncycling quartz/mylar/glue blank, but pp255/257 explicitly leave mineral–mount coupling unresolved; the electrical-charge explanation is speculation. The chalcocite weak-arm null cannot be relabeled as a digenite no-treatment control. Failed quenching and broad Gandolfi patterns further limit endpoint assignments.
+
+The originals share Goble authorship and an explicit1981→1986 research lineage. They differ in substrate and apparatus and are not two independent microbial confirmations. The complete inspected originals and bounded supplement search did not identify separate associated SI; this is not an exhaustive archival absence claim. Journal metadata was cross-checked against the actual title pages. No unverified DOI is invented for either older original.
+
+## Deferred microbial sources and access failures
+
+| Lead | Observed access | Required next step |
+|---|---|---|
+| [Lee et al.2011](https://doi.org/10.1111/j.1462-2920.2011.02587.x), PMID21951417, PNNL-SA-69040 | PubMed/Crossref/PNNL and OSTI1115855 metadata; Wiley main and advertised TableS1 returned403 HTML; OpenAlex reports no open full text. OSTI report-number query adds no full-text link. | Obtain complete main/actual SI, assess γ-MnS phase data, mutants/controls and competing carbonate products before a rambergite mechanism. OSTI's journal-name mismatch is not propagated. |
+| [Cheng & Hu2007](https://doi.org/10.1016/j.mineng.2007.05.001) and [Cheng et al.2008](https://doi.org/10.1016/S1003-6326(09)60017-0) | Publisher partial sections/abstracts;2008 official journal and Crossref metadata. Advertised journal PDF route returned200 with zero bytes. | Obtain full4/5-page originals and relevant SI; verify phase after grinding, strain/controls, Fe salt versus elemental concentration basis, sulfur-product identification and shared experiment lineage. |
+| Prior digenite leads, Ruan2013 and van der Graaf2020 | Reassessed prior round75 dossier and available snippets; current1986 abiotic original does not resolve those microbial claims. | Full phase-specific assessment; no transfer from mixed ores or chalcocite-labeled patterns. |
+
+`whiteside1986.pdf` is retained404 HTML; the accepted full original is `whiteside1986-doclib.pdf`. The similarly named failed Lee SI response and zero-byte Cheng PDF are explicitly unusable as evidence. No author contact or access-control circumvention occurred. Two proposed source-issue bodies are saved externally for root's live-queue dedup and possible publication.
+
+## Validation, reuse and handoff
+
+Named validation actually passed:2records,0failed, `--require-records`; exact command/log/hash and frozen owner/history hashes are in the paired JSON and external `frozen-records.json`. The canonical CREATE sessions are attached before review. No schema/validator change was needed; yield/ratio data remain qualified prose rather than invented mg/kg observations. Independent review and root's final batch gates remain separate pending actions.
+
+All raw PDFs, failed responses, page images and acquisition helpers remain in `/private/tmp/cmm-round76-sulfides-research`. The paired JSON binds their hashes. Journal redistribution permission was not established; Handbook notices reserve rights. Only source citations and original assessment text are committed, not copyrighted originals or a bulk dataset. Priority is independent review of the exact owners, then lawful completion of the rambergite and microbial-anilite source gaps. No broader mineral-corpus or literature exhaustion is claimed.

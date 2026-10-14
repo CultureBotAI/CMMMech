@@ -1,0 +1,497 @@
+# Independent scientific review of chlorite round76
+
+- Review: 20261014T164103Z-chlorite-round76-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T16:36:28.563507Z
+- Finished UTC: 2026-10-14T16:41:03.164075Z
+- Reviewer: codex /root/round68_phosphates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of a chlorite-group owner with MR-1-associated iron reduction. The owner correctly preserves impurity contributions, weak-acid and bulk-spectral denominators, initial-only supplemental diffraction and biotite-only growth evidence.
+
+## Scope And Provenance
+
+Entire exact owner, identity, mechanisms, conditions, controls, outcomes, source conflicts and canonical history; all claim-bearing original figures/tables and relevant SI.
+
+Selection: Assigned frozen chlorite; all claims examined, not sampled.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 925a93db824261d146a14900b8367c88d25cbd71.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:chlorite | data/records/chlorite.yaml | maintained | Chlorite group |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent reviewer named validation | passed | True | cmmmech:chlorite | Actually executed 2026-10-14T16:36:32.205122+00:00 through 2026-10-14T16:36:36.126976+00:00;1record,0failures. |
+| Coordinator terminal batch gate independently verified | passed | True | cmmmech:chlorite | Coordinator executed 2026-10-14T16:35:01.537264+00:00 through 2026-10-14T16:38:24.063506+00:00; terminal exit and entire log verified against unchanged input manifest. |
+| Coordinator terminal batch gate independently verified | passed | True | cmmmech:chlorite | Coordinator executed 2026-10-14T16:38:24.063528+00:00 through 2026-10-14T16:38:33.692035+00:00; terminal exit and entire log verified against unchanged input manifest. |
+| Coordinator terminal batch gate independently verified | passed | True | cmmmech:chlorite | Coordinator executed 2026-10-14T16:38:33.692058+00:00 through 2026-10-14T16:38:39.168718+00:00; terminal exit and entire log verified against unchanged input manifest. |
+| Coordinator terminal batch gate independently verified | passed | True | cmmmech:chlorite | Coordinator executed 2026-10-14T16:38:39.168737+00:00 through 2026-10-14T16:38:42.769189+00:00; terminal exit and entire log verified against unchanged input manifest. |
+
+## Scientific And Domain Assessments
+
+### identity and claim scope
+
+identity: supported. Targets: cmmmech:chlorite.
+
+Both compendium rows and AIPEA definitions support a group owner. Hydroxide interlayer and species distinction are explicit. Natural Michigamme specimen is not phase-pure clinochlore/chamosite; its source label and Fe-dominant formula conflict are retained without reassignment.
+
+### methods and claim scope
+
+evidence: supported. Targets: cmmmech:chlorite.
+
+The natural abrasion/hand-picked &lt;100µm chlorite preparation retains magnetite and unresolved Fe-bearing impurity. Anaerobic30mM bicarbonate/pH7,10mM lactate,1:40 solids ratio and optional10µM AQDS agree with Methods. SI confirms30°C preculture and two washes; resting-assay temperature/final density are not supplied in inspected main/SI.28day residues are distinct from eight-week biotite growth.
+
+### outcome and claim scope
+
+evidence: supported. Targets: cmmmech:chlorite.
+
+Figure1 supports increased operational weak-acid Fe(II), while Table2/Figure2 support the authors approximate21% starting chlorite Fe(III) reduction estimate. Spectral areas and acid-extractable fractions do not equal whole-feed conversion or recovered product. Aqueous Fe ICP is not oxidation-state-specific; AQDS peak-timing inconsistency is retained. SI S1/S2 show initial powders only despite the main post-reduction-XRD assertion. Predominantly solid-associated reduction and proposed electron transfer remain appropriately qualified.
+
+### Exact reviewed inputs and actual gates
+
+provenance: supported. Targets: cmmmech:chlorite.
+
+Native inspection preceded final judgment; owner and canonical CREATE hashes remain frozen. Named validation plus all four current batch commands actually passed. No curation/history event was appended by reviewer.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/chlorite.yaml; Entire native-inspected frozen owner | supports | All fields read; scientific assessment followed native inspection after preliminary read. No reviewer owner edits. |
+| history | history/records/chlorite/2026-10-14T163245Z-codex-f6c11c.yaml; Canonical CREATE sidecar plus distinct inline event | supports | Verified actor, actual timestamps, exact target and described creation scope; no invented historic authorship. |
+| primary | https://doi.org/10.2138/am.2014.4774CCBY; Complete nine-page original pp1746–1754; Methodspp1747–1748, Figures1–5/Tables1–2, Discussionpp1752–1753 | supports | Read complete main text and viewed every original page. Figure1B/D distinguishes acid-extractable versus aqueous iron, with control and AQDS arms; Figure2C/D and Table2 retain magnetite/unresolved impurity fits and Fe(III) area10.4 to8.2%. Figure3 is later acid extraction; Figure4B is chlorite imaging; Figure5 belongs to biotite growth. Original high-resolution Methods confirms10µM AQDS, not the text-extraction mM artifact. |
+| group | https://cnmnc.units.it/ima_reports/2%20IMA-Nomenclature-e-Booklet-2019-1.pdf; PDFp34, reproduced Whitney/Evans Table1: chlorite and illite rows | supports | Original row pixels explicitly GROUP. Historical nomenclature table, not a claimed2026 mineral approval. |
+| taxonomy | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586; Current acquired authoritative XML; exact TaxId, ScientificName, Rank | supports | Shewanella oneidensis MR-1, strain rank verified independently. Taxonomy does not establish the experimental phenotype. |
+| named | /private/tmp/cmm-round76-clays-independent/named-validation.json; Actual reviewer commands and log | supports | Each target checked separately,1record/0failures; exact start/finish and matching log checksum retained. |
+| batch | /private/tmp/cmm-round76-final-gates.json; Terminal receipt: all FOUR actual commands, unchanged364-record input manifest and matching log | supports | Independently verified worktree/base, four expected command vectors, all exits0, unchanged owners and log SHA256 8bbfc2d4a2a7e38d93f94c3a9f0f7758fb6af775b4217cddf39ece223afe075a. Structural gates are not scientific proof. |
+| dedup | /private/tmp/cmm-round76-clays-independent/dedup.txt; Hidden/ignored-inclusive, symlink-following local search | context_only | Bounded records/research/reviews/history and cited current raw; existing group/species/context mentions checked. No machine-wide absence claim. |
+| notices | /private/tmp/cmm-round76-clays-independent/notice-search.json; Four bounded live query results plus Crossref relation/update fields | context_only | No matching notice surfaced. Follow-up2016sorption and2024freeze-thaw leads were not imported as direct replication. |
+| si | http://www.minsocam.org/MSA/AmMin/TOC/2014/AS2014_Data/BookshawAM-14-801.zip; Complete4774Supplemental.pdf3pages, culturing methods and FiguresS1–S3 | supports | Inspected all pages and graphics. S1/S2 explicitly unaltered powders; S3 and fluorescence/growth counting are biotite only.30°C applies to preculture; resting-assay temperature not explicitly stated. |
+| nomenclature | https://cnmnc.units.it/ima_reports/claynomenclature.pdf; AIPEA2006 Table2pp765–766 | supports | Original table/paragraph pixels verify chlorite hydroxide interlayer, subgroups and dominant-cation nomenclature; record preserves specimen-label ambiguity. |
+
+## Limits And Additional Notes
+
+- Resting-assay temperature and final cell density remain unreported in inspected main/SI; independent-bottle replication is not established by triplicate measurements.
+- Residual magnetite and unresolved Fe-bearing impurity prevent complete phase-specific Fe attribution; Fe-rich clinochlore wording is source context, not a reviewer species diagnosis.
+- Main-text post-reduction XRD assertion cannot be verified from initial-only SI FiguresS1/S2; small aqueous-Fe response and later acid extraction do not establish recovered metal.
+- The same source includes a biotite owner/experiment; its eight-week growth outcome must remain separate from chlorite.
+- Review uses curator-acquired originals independently inspected; it is not a fresh independent experimental replication or a comprehensive literature synthesis.
+- Bounded live notice/conflicting-evidence queries and Crossref metadata did not surface a matching notice; absence is not proved.
+- Criticality jurisdiction/list/edition is not asserted; no designation is inherited from constituents.
+- Analytical validation establishes structure/provenance, not scientific truth. No reviewed owner or canonical history was edited by the reviewer.
+- Start is actual native-inspect invocation; finish is actual completed-review construction after terminal batch receipt verification. Preliminary record read preceded inspect; scientific judgment followed it.
+- Shared source PDFs, XML, taxonomy and nomenclature acquisitions were reused transparently, with exact hashes. All main original pages were visually inspected; no external source bytes were committed.
+- iModulonDB is not applicable: no gene, locus, regulator or transcriptomics claim is asserted.
+- No supported corrective finding was established in this scope. Source limitations remain explicit rather than being converted into invented review defects.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T164103Z-chlorite-round76-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of chlorite round76
+started_at: '2026-10-14T16:36:28.563507Z'
+finished_at: '2026-10-14T16:41:03.164075Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: new_frontier peer authored these clay owners/history. Reviewer
+    authored separate hopeite/whitlockite owners and made no changes to reviewed clay
+    owners or histories. Shared original acquisitions were independently read and
+    visually inspected; this is not independent experimental replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of a chlorite-group owner with MR-1-associated iron
+  reduction. The owner correctly preserves impurity contributions, weak-acid and bulk-spectral
+  denominators, initial-only supplemental diffraction and biotite-only growth evidence.
+source:
+  git_revision: 925a93db824261d146a14900b8367c88d25cbd71
+  state: working_tree
+  inputs:
+  - path: data/records/chlorite.yaml
+    sha256: 2d6c8f12a6df9ee85fe044bb76e61a8a3cd7cf91d204ff83ee29e36f66e5d843
+    role: target
+  - path: history/records/chlorite/2026-10-14T163245Z-codex-f6c11c.yaml
+    sha256: 6969524d531a020272c05a971878c343c78d02e33ed5dd2827cae0c50b259976
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire exact owner, identity, mechanisms, conditions, controls, outcomes,
+    source conflicts and canonical history; all claim-bearing original figures/tables
+    and relevant SI.
+  selection: Assigned frozen chlorite; all claims examined, not sampled.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:chlorite
+targets:
+- target_id: cmmmech:chlorite
+  path: data/records/chlorite.yaml
+  label: Chlorite group
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/chlorite.yaml
+    role: maintained_scientific_record
+checks:
+- check_id: named
+  name: Independent reviewer named validation
+  command: uv run --locked cmmmech validate data/records/chlorite.yaml --require-records
+  status: passed
+  required: true
+  summary: Actually executed 2026-10-14T16:36:32.205122+00:00 through 2026-10-14T16:36:36.126976+00:00;1record,0failures.
+  target_ids:
+  - cmmmech:chlorite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Coordinator terminal batch gate independently verified
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator executed 2026-10-14T16:35:01.537264+00:00 through 2026-10-14T16:38:24.063506+00:00;
+    terminal exit and entire log verified against unchanged input manifest.
+  target_ids:
+  - cmmmech:chlorite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Coordinator terminal batch gate independently verified
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator executed 2026-10-14T16:38:24.063528+00:00 through 2026-10-14T16:38:33.692035+00:00;
+    terminal exit and entire log verified against unchanged input manifest.
+  target_ids:
+  - cmmmech:chlorite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Coordinator terminal batch gate independently verified
+  command: uv run --locked cmmmech validate-history --base 925a93db824261d146a14900b8367c88d25cbd71
+  status: passed
+  required: true
+  summary: Coordinator executed 2026-10-14T16:38:33.692058+00:00 through 2026-10-14T16:38:39.168718+00:00;
+    terminal exit and entire log verified against unchanged input manifest.
+  target_ids:
+  - cmmmech:chlorite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_3
+  name: Coordinator terminal batch gate independently verified
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Coordinator executed 2026-10-14T16:38:39.168737+00:00 through 2026-10-14T16:38:42.769189+00:00;
+    terminal exit and entire log verified against unchanged input manifest.
+  target_ids:
+  - cmmmech:chlorite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/chlorite.yaml
+  locator: Entire native-inspected frozen owner
+  accessed_at: '2026-10-14T16:41:03.164075Z'
+  support: supports
+  summary: All fields read; scientific assessment followed native inspection after
+    preliminary read. No reviewer owner edits.
+  snapshot_sha256: 2d6c8f12a6df9ee85fe044bb76e61a8a3cd7cf91d204ff83ee29e36f66e5d843
+- evidence_id: history
+  kind: record_content
+  reference: history/records/chlorite/2026-10-14T163245Z-codex-f6c11c.yaml
+  locator: Canonical CREATE sidecar plus distinct inline event
+  accessed_at: '2026-10-14T16:41:03.164075Z'
+  support: supports
+  summary: Verified actor, actual timestamps, exact target and described creation
+    scope; no invented historic authorship.
+  snapshot_sha256: 6969524d531a020272c05a971878c343c78d02e33ed5dd2827cae0c50b259976
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.2138/am.2014.4774CCBY
+  locator: Complete nine-page original pp1746–1754; Methodspp1747–1748, Figures1–5/Tables1–2,
+    Discussionpp1752–1753
+  accessed_at: '2026-10-14T16:41:03.164075Z'
+  support: supports
+  summary: Read complete main text and viewed every original page. Figure1B/D distinguishes
+    acid-extractable versus aqueous iron, with control and AQDS arms; Figure2C/D and
+    Table2 retain magnetite/unresolved impurity fits and Fe(III) area10.4 to8.2%.
+    Figure3 is later acid extraction; Figure4B is chlorite imaging; Figure5 belongs
+    to biotite growth. Original high-resolution Methods confirms10µM AQDS, not the
+    text-extraction mM artifact.
+  snapshot_sha256: ec557b281d768351ce5e1a86199ea26f4d0f5ec505c6b5ef43ae25157b76bcb8
+- evidence_id: group
+  kind: authority
+  reference: https://cnmnc.units.it/ima_reports/2%20IMA-Nomenclature-e-Booklet-2019-1.pdf
+  locator: 'PDFp34, reproduced Whitney/Evans Table1: chlorite and illite rows'
+  accessed_at: '2026-10-14T16:41:03.164075Z'
+  support: supports
+  summary: Original row pixels explicitly GROUP. Historical nomenclature table, not
+    a claimed2026 mineral approval.
+  snapshot_sha256: aa78fca8983aa876dd2657e1874aa8f012a3e0236ad6717b675b76d86f8868c5
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586
+  locator: Current acquired authoritative XML; exact TaxId, ScientificName, Rank
+  accessed_at: '2026-10-14T16:41:03.164075Z'
+  support: supports
+  summary: Shewanella oneidensis MR-1, strain rank verified independently. Taxonomy
+    does not establish the experimental phenotype.
+  snapshot_sha256: 242ace15df22ed93abda0ea977cee8da12577ddd18f60c98051af3c58f6c4de4
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round76-clays-independent/named-validation.json
+  locator: Actual reviewer commands and log
+  accessed_at: '2026-10-14T16:41:03.164075Z'
+  support: supports
+  summary: Each target checked separately,1record/0failures; exact start/finish and
+    matching log checksum retained.
+  snapshot_sha256: b9c0490d0470eb316521afb11d6f037cc7b0d9ba0929cf5e70947362db303ce1
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round76-final-gates.json
+  locator: 'Terminal receipt: all FOUR actual commands, unchanged364-record input
+    manifest and matching log'
+  accessed_at: '2026-10-14T16:41:03.164075Z'
+  support: supports
+  summary: Independently verified worktree/base, four expected command vectors, all
+    exits0, unchanged owners and log SHA256 8bbfc2d4a2a7e38d93f94c3a9f0f7758fb6af775b4217cddf39ece223afe075a.
+    Structural gates are not scientific proof.
+  snapshot_sha256: f18e5f6a252ea29194da47a54fe630e7a58a68c3b3591987f8befe1dd12b95ae
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round76-clays-independent/dedup.txt
+  locator: Hidden/ignored-inclusive, symlink-following local search
+  accessed_at: '2026-10-14T16:41:03.164075Z'
+  support: context_only
+  summary: Bounded records/research/reviews/history and cited current raw; existing
+    group/species/context mentions checked. No machine-wide absence claim.
+  snapshot_sha256: 34ba669e65977668657b23d221c3e40c17572f345903be99dda2e7205d0fc2cc
+  search_scope: Current corpus/research/reviews/history, main records and current
+    raw source directory; hidden/ignored included, symlinks followed. No machine-wide
+    absence asserted.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round76-clays-independent/notice-search.json
+  locator: Four bounded live query results plus Crossref relation/update fields
+  accessed_at: '2026-10-14T16:41:03.164075Z'
+  support: context_only
+  summary: No matching notice surfaced. Follow-up2016sorption and2024freeze-thaw leads
+    were not imported as direct replication.
+  snapshot_sha256: d0517e52a95496a80a1f0f81c676049bd2273cf936608ff11b3d6e348df1ee4c
+  search_scope: web.run 2026-10-14; exact two DOI correction/retraction queries plus
+    chlorite/Brookshaw/Shewanella/impurity and illite/Shewanella vesiculosa/reduction2022;
+    no filters, bounded returned results.
+- evidence_id: si
+  kind: primary_source
+  reference: http://www.minsocam.org/MSA/AmMin/TOC/2014/AS2014_Data/BookshawAM-14-801.zip
+  locator: Complete4774Supplemental.pdf3pages, culturing methods and FiguresS1–S3
+  accessed_at: '2026-10-14T16:41:03.164075Z'
+  support: supports
+  summary: Inspected all pages and graphics. S1/S2 explicitly unaltered powders; S3
+    and fluorescence/growth counting are biotite only.30°C applies to preculture;
+    resting-assay temperature not explicitly stated.
+  snapshot_sha256: 758befedc6b8eba664b1d1190dba8126cc8a67c05df048adee9c4bd451c194aa
+- evidence_id: nomenclature
+  kind: authority
+  reference: https://cnmnc.units.it/ima_reports/claynomenclature.pdf
+  locator: AIPEA2006 Table2pp765–766
+  accessed_at: '2026-10-14T16:41:03.164075Z'
+  support: supports
+  summary: Original table/paragraph pixels verify chlorite hydroxide interlayer, subgroups
+    and dominant-cation nomenclature; record preserves specimen-label ambiguity.
+  snapshot_sha256: a323ef7f08484bc311045fbd09fe3eee1b175db923d2d448692eb92fa54baca8
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: identity and claim scope
+  outcome: supported
+  summary: Both compendium rows and AIPEA definitions support a group owner. Hydroxide
+    interlayer and species distinction are explicit. Natural Michigamme specimen is
+    not phase-pure clinochlore/chamosite; its source label and Fe-dominant formula
+    conflict are retained without reassignment.
+  target_ids:
+  - cmmmech:chlorite
+  evidence_ids:
+  - record
+  - group
+  - taxonomy
+  - nomenclature
+  dimensions:
+  - name: criticality
+    value: No jurisdiction/list/edition asserted
+    definition: Constituent status is not inherited by mineral-group owner.
+    evidence_ids:
+    - record
+- assessment_id: methods
+  area: evidence
+  topic: methods and claim scope
+  outcome: supported
+  summary: The natural abrasion/hand-picked <100µm chlorite preparation retains magnetite
+    and unresolved Fe-bearing impurity. Anaerobic30mM bicarbonate/pH7,10mM lactate,1:40
+    solids ratio and optional10µM AQDS agree with Methods. SI confirms30°C preculture
+    and two washes; resting-assay temperature/final density are not supplied in inspected
+    main/SI.28day residues are distinct from eight-week biotite growth.
+  target_ids:
+  - cmmmech:chlorite
+  evidence_ids:
+  - record
+  - primary
+  - taxonomy
+  - si
+  dimensions:
+  - name: material_form
+    value: Natural mixed chlorite-group powder, <100µm; residual magnetite/unresolved
+      impurity
+    definition: Group authority is distinct from experimental specimen purity.
+    evidence_ids:
+    - record
+    - primary
+    - taxonomy
+    - si
+  - name: organism_and_biomass
+    value: Washed resting Shewanella oneidensis MR-1; strain TaxID211586
+    definition: Biotite growth experiments are not chlorite growth evidence.
+    evidence_ids:
+    - record
+    - primary
+    - taxonomy
+    - si
+  - name: conditions_and_controls
+    value: pH7 bicarbonate/lactate, optional10µM AQDS, uninoculated controls; resting
+      temperature/density unreported
+    definition: Assay conditions are limited to exact original reporting.
+    evidence_ids:
+    - record
+    - primary
+    - taxonomy
+    - si
+  - name: outcome_denominators
+    value: Weak-acid-extractable Fe(II)/total acid-extractable Fe and bulk spectral
+      components
+    definition: Neither fraction establishes isolated iron recovery or a phase-resolved
+      mass balance.
+    evidence_ids:
+    - record
+    - primary
+    - taxonomy
+    - si
+  - name: deployment
+    value: Laboratory bottles; no isolated iron product
+    definition: No industrial or field performance inferred.
+    evidence_ids:
+    - record
+    - primary
+    - taxonomy
+    - si
+- assessment_id: outcome
+  area: evidence
+  topic: outcome and claim scope
+  outcome: supported
+  summary: Figure1 supports increased operational weak-acid Fe(II), while Table2/Figure2
+    support the authors approximate21% starting chlorite Fe(III) reduction estimate.
+    Spectral areas and acid-extractable fractions do not equal whole-feed conversion
+    or recovered product. Aqueous Fe ICP is not oxidation-state-specific; AQDS peak-timing
+    inconsistency is retained. SI S1/S2 show initial powders only despite the main
+    post-reduction-XRD assertion. Predominantly solid-associated reduction and proposed
+    electron transfer remain appropriately qualified.
+  target_ids:
+  - cmmmech:chlorite
+  evidence_ids:
+  - record
+  - primary
+  - taxonomy
+  - si
+- assessment_id: provenance
+  area: provenance
+  topic: Exact reviewed inputs and actual gates
+  outcome: supported
+  summary: Native inspection preceded final judgment; owner and canonical CREATE hashes
+    remain frozen. Named validation plus all four current batch commands actually
+    passed. No curation/history event was appended by reviewer.
+  target_ids:
+  - cmmmech:chlorite
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - dedup
+  - notices
+findings: []
+actions: []
+limitations:
+- Resting-assay temperature and final cell density remain unreported in inspected
+  main/SI; independent-bottle replication is not established by triplicate measurements.
+- Residual magnetite and unresolved Fe-bearing impurity prevent complete phase-specific
+  Fe attribution; Fe-rich clinochlore wording is source context, not a reviewer species
+  diagnosis.
+- Main-text post-reduction XRD assertion cannot be verified from initial-only SI FiguresS1/S2;
+  small aqueous-Fe response and later acid extraction do not establish recovered metal.
+- The same source includes a biotite owner/experiment; its eight-week growth outcome
+  must remain separate from chlorite.
+- Review uses curator-acquired originals independently inspected; it is not a fresh
+  independent experimental replication or a comprehensive literature synthesis.
+- Bounded live notice/conflicting-evidence queries and Crossref metadata did not surface
+  a matching notice; absence is not proved.
+- Criticality jurisdiction/list/edition is not asserted; no designation is inherited
+  from constituents.
+- Analytical validation establishes structure/provenance, not scientific truth. No
+  reviewed owner or canonical history was edited by the reviewer.
+notes:
+- Start is actual native-inspect invocation; finish is actual completed-review construction
+  after terminal batch receipt verification. Preliminary record read preceded inspect;
+  scientific judgment followed it.
+- Shared source PDFs, XML, taxonomy and nomenclature acquisitions were reused transparently,
+  with exact hashes. All main original pages were visually inspected; no external
+  source bytes were committed.
+- 'iModulonDB is not applicable: no gene, locus, regulator or transcriptomics claim
+  is asserted.'
+- No supported corrective finding was established in this scope. Source limitations
+  remain explicit rather than being converted into invented review defects.
+tags:
+- round76
+- chlorite
+- independent
+- primary-figures
+- qualified-microbial
+```

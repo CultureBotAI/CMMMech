@@ -1,0 +1,108 @@
+id: cmmmech:digenite
+name: Digenite
+material_kind: mineral
+description: Digenite is a distinct copper sulfide mineral, listed as Cu1.8S by the September 2026 IMA
+  list and as Cu9S5 in the Handbook of Mineralogy. IMA status is approved through 1962 special procedure,
+  not a numbered approval accession. It is distinct from anilite, djurleite, chalcocite, covellite, copper
+  element and mixed copper ores. The curated laboratory study uses synthesized digenite and chemical ferric
+  sulfate; neither constituent criticality nor microbial activity is inferred.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026; PDF page 57, mineral row and pages 1–2
+    status definitions.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: handbook
+  title: Handbook of Mineralogy. Digenite; one-page mineral description, Cu9S5 composition and temperature-dependent
+    crystal data.
+  url: https://handbookofmineralogy.org/pdfs/digenite.pdf
+  accessed_on: '2026-10-14'
+- id: whiteside1986
+  title: Whiteside, L.S. and Goble, R.J. (1986). Structural and compositional changes in copper sulfides
+    during leaching and dissolution. Canadian Mineralogist 24:247–258; complete twelve-page original,
+    Figures 1–7 and Tables 1–2.
+  url: https://rruff.info/doclib/cm/vol24/CM24_247.pdf
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: abiotic-ferric-sulfate-leaching
+  name: Abiotic ferric-sulfate leaching through metastable sulfide structures
+  process: redox_transformation
+  microbial: false
+  description: Ferric-sulfate concentration affected copper depletion and structural evolution of synthesized
+    digenite grains. In-situ diffraction and separate solid microprobe analyses support chemically driven
+    alteration through multiple metastable structures. Reported copper-leached percentages are derived
+    from remaining-solid Cu:S ratios, not measured aqueous recovery or isolated copper yields.
+  context: 'Whiteside and Goble (1986) pp.248–255: research-grade copper and sulfur were sealed in evacuated
+    silica tubes, heated and quenched using referenced synthesis methods; exact heating conditions are
+    not restated. Sintered material was gently crushed between fingers to limit mechanical phase changes
+    and sieved to 150–250 micrometres, with constituent crystallites generally below 50 micrometres. Several
+    hundred grains plus quartz standard were fixed on cyanoacrylate-coated mylar for contact with freshly
+    prepared ferric sulfate in distilled water at about 23 ±1 degrees C. The five stated concentrations
+    were 10^-5,10^-2,10^-1,1 and2 M; solution/mineral volumes were approximately 2.25/0.001 cm3. Numerical
+    pH and an acid-only or iron-free control are not reported. Diffraction monitored 44–50 degrees2theta
+    with wider 35–65-degree scans after changes and Gandolfi comparisons to standards; the mylar peak
+    prevented investigation of 25–34 degrees. Separate grains leached unmounted in sealed containers were
+    washed, embedded, polished and analyzed by wavelength-dispersive electron microprobe at 12 kV and
+    1.2 nA. There was no microbial inoculum or biomass.'
+  evidence:
+  - source_ref: whiteside1986
+    supports: support
+    explanation: Figures 3–4 and Tables 1–2 show concentration-dependent copper depletion and evolving
+      diffraction peaks, with faster change at stronger ferric-sulfate concentrations. Figure 3 explicitly
+      uses microprobe data; Table 2 defines copper-leached values as atomic percentages inferred from
+      changes in Cu:S. Figures 4a–b distinguish anilite and successive structural types; simultaneous
+      structures and later changes prevent assignment of every composition to a pure natural mineral.
+  - source_ref: whiteside1986
+    supports: partial
+    explanation: The structural sequence compiles 13 experiments; Figure 5 separately describes 282 analyzed
+      grains from three experiments. These are not 13 independent copper-recovery measurements. Table
+      2 phase proportions have approximately ±5-percentage-point precision and are based on composition/peak-intensity
+      comparison, not a refined pure-phase mass balance. The claimed near 40% copper removal plateau in
+      Figure 3 is a solid-composition inference, not an isolated recovery yield. Individual grains diverged,
+      and composition samples lacked the mylar/glue mount used for in-situ diffraction, so experimental
+      equivalence is uncertain.
+  - source_ref: whiteside1986
+    supports: partial
+    explanation: Pages253–258 stress that most products are metastable structural variants rather than
+      identified natural yarrowite, spionkopite or covellite. Quenching in distilled water often failed
+      to halt structural changes, and Gandolfi exposures integrated changing structures into broad bands.
+      The hypothesized sulfur packing, bonding and equilibrium interpretation require further single-crystal
+      work; no industrial performance or microbial necessity was tested. This study shares Goble authorship
+      and explicitly builds on his 1981 natural-anilite experiment, rather than providing an independent
+      microbial replication.
+- id: weak-leachate-structural-cycling
+  name: Reversible digenite–anilite structural cycling in a mounted chemical assay
+  process: other
+  microbial: false
+  description: At weak ferric-sulfate concentration, mounted synthetic digenite showed reversible diffraction
+    changes between digenite-like and anilite-like structures. The observation is constrained to this
+    apparatus; neither a microbial cause nor an autonomous mounting-independent mineral oscillator is
+    established.
+  context: Same synthetic grain preparation and mylar/cyanoacrylate apparatus as the chemical leaching
+    experiment, approximately 23 ±1 degrees C. Figure 2 follows 10^-5 M ferric sulfate. XRD peak height,
+    base width and position were tracked, with standard comparisons. Quartz on mylar and glue was monitored
+    as an instrumental blank; other mounting media were tried only in less controlled experiments.
+  evidence:
+  - source_ref: whiteside1986
+    supports: support
+    explanation: Figure 2 and pp.250–251 show gradual growth of anilite-assigned peaks followed by rapid
+      return of the digenite peak after about 100 minutes, with repeated cycling thereafter. The monitored
+      quartz/mylar/glue blank did not cycle, arguing against a simple instrumental fluctuation. These
+      observations support reversible structural behavior in the mounted digenite assay.
+  - source_ref: whiteside1986
+    supports: partial
+    explanation: Pages255 and 257 explicitly leave mounting dependence unresolved. The authors propose
+      interaction through glue/mylar, including speculative electrical charging; this was not measured
+      or established. The very dilute solutions may become ferric-ion depleted, unlike stronger arms.
+      Similarity of unmounted composition results does not verify unmounted structural cycling. The source
+      also reports no compositional or structural change in its separate synthetic chalcocite weak-leachate
+      comparison for up to three years; that null belongs to chalcocite, not a digenite no-treatment control.
+curation_history:
+- timestamp: '2026-10-14T16:30:35.886892+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created distinct digenite owner with abiotic leaching and apparatus-bound reversible structural
+    cycling; preserved mounting confounders, metastable phase uncertainty, source experiment lineage and
+    solid-ratio recovery limits.
+history_refs:
+- history/records/digenite/2026-10-14T163054Z-codex-fe42d0.yaml

@@ -1,0 +1,369 @@
+schema_version: 1.0.0
+review_id: 20261014T164130Z-hopeite-round76-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of hopeite
+started_at: '2026-10-14T16:34:54.495871Z'
+finished_at: '2026-10-14T16:41:30.689269Z'
+reviewer:
+  identity: codex /root/round68_iron_sulfides
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Phosphates agent authored this owner and history. Reviewer authored
+    anilite/digenite only this round, performed native target/history/schema capture
+    before judgment and made no phosphate owner/history edits. Shared acquired originals
+    independently read and their graphics inspected.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Hopeite identity and narrowly qualified fungal-associated alteration/secondary
+  precipitation are supported; pre-inoculation chemical formation, mixed preparations,
+  source contradictions and companion-accession mismatch remain explicit. No corrective
+  finding.
+source:
+  git_revision: 925a93db824261d146a14900b8367c88d25cbd71
+  state: working_tree
+  inputs:
+  - path: data/records/hopeite.yaml
+    sha256: bc522d34581ca173e432c69d171b5419516c9e3b067ca73cc080b872d67bd4ab
+    role: target
+  - path: history/records/hopeite/2026-10-14T163150Z-codex-ee87e0.yaml
+    sha256: 17f80000fc49a527763d8c68034aac293598c20f72082a82642b1d12da9df4a4
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire frozen maintained owner and linked canonical CREATE, independent
+    full-original scientific assessment.
+  selection: Assigned single-record independent review of another curator; exact native
+    input capture before assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:hopeite
+targets:
+- target_id: cmmmech:hopeite
+  path: data/records/hopeite.yaml
+  label: Hopeite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/hopeite.yaml
+    role: maintained record
+checks:
+- check_id: named
+  name: Named assigned-pair nonempty validation
+  command: uv run --locked cmmmech validate data/records/hopeite.yaml data/records/whitlockite.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Reviewer executed;2records/0failed,terminalexit0.
+  target_ids:
+  - cmmmech:hopeite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch
+  name: Actual current batch and history gates
+  command: just check; uv run --locked cmmmech validate --require-records; uv run
+    --locked cmmmech validate-history --base 925a93db824261d146a14900b8367c88d25cbd71;
+    uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Coordinator executed; reviewer verified terminal receipt, all four exit
+    codes, unchanged owner hashes and actual matching log.
+  target_ids:
+  - cmmmech:hopeite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batch_log
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/hopeite.yaml
+  locator: Entire frozen maintained owner
+  accessed_at: '2026-10-14T16:41:30.689269Z'
+  support: supports
+  summary: Exact independently inspected owner; no reviewer scientific edits.
+  snapshot_sha256: bc522d34581ca173e432c69d171b5419516c9e3b067ca73cc080b872d67bd4ab
+- evidence_id: history
+  kind: record_content
+  reference: history/records/hopeite/2026-10-14T163150Z-codex-ee87e0.yaml
+  locator: Entire canonical CREATE and separate inline event
+  accessed_at: '2026-10-14T16:41:30.689269Z'
+  support: supports
+  summary: Actor, UTC chronology, target and scope match this curation; neither claims
+    earlier authorship.
+  snapshot_sha256: 17f80000fc49a527763d8c68034aac293598c20f72082a82642b1d12da9df4a4
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September 2026 original; introductory definitions and PDF page 95
+  accessed_at: '2026-10-14T16:41:30.689269Z'
+  support: supports
+  summary: Original identity row independently visually inspected. Grandfathered G
+    and original-description year are not an approval accession. No criticality designation
+    inherited.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/hopeite.pdf
+  locator: Entire original one-page sheet, formula, crystallography and occurrence
+  accessed_at: '2026-10-14T16:41:30.689269Z'
+  support: supports
+  summary: Independently read and visually inspected original; material identity distinct
+    from elemental commodity or reagent.
+  snapshot_sha256: 720a98610fbaa76d2c5ecab438d37a0d3ea44a03c44f1e556a925c1986774eb4
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5061,129958&retmode=xml
+  locator: Direct Taxon children 5061 and 129958; current acquired XML
+  accessed_at: '2026-10-14T16:41:30.689269Z'
+  support: context_only
+  summary: Species labels and ranks verified; species nodes do not authenticate an
+    experimental strain.
+  snapshot_sha256: 67c21383122188b376a5e28aa230d51b0ac12d24aea762a9cf5d4dcd69183efe
+- evidence_id: bindings
+  kind: validation
+  reference: /private/tmp/cmm-round76-phosphates-independent/source-hashes.json
+  locator: 63 nonempty source and render artifacts with byte sizes and SHA256
+  accessed_at: '2026-10-14T16:41:30.689269Z'
+  support: context_only
+  summary: Actual full PDFs, original XMLs, authority documents and page images bound;
+    no empty or failed download substituted.
+  snapshot_sha256: d209ae5fe517815e823365aa66c062faf84929af21d292ae20a420b926522e29
+- evidence_id: supplements
+  kind: search
+  reference: /private/tmp/cmm-round76-phosphates-independent/supplement-inspection.json
+  locator: Parsed complete original XMLs for all three papers, plus inspected PDF
+    end matter
+  accessed_at: '2026-10-14T16:41:30.689269Z'
+  support: context_only
+  summary: No supplement element or dedicated supplement section identified in these
+    original representations; not a universal absence claim.
+  snapshot_sha256: a392220d63d2e9c1761fbb5a2fe891fd54c50d64d1684d7c2bf595910c2d4f0b
+  search_scope: Complete acquired original JATS/XMLs inspected for supplement elements;
+    original PDF end matter read.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round76-phosphates-independent/dedup.json
+  locator: Current main and isolated worktree records/research/reviews/history, hidden
+    and ignored included with symlinks followed
+  accessed_at: '2026-10-14T16:41:30.689269Z'
+  support: context_only
+  summary: The existing katsarosite owner is a different product of the same 2025
+    experiment, not independent replication. Current phosphate owners remain conceptually
+    distinct.
+  snapshot_sha256: afd48d3554065fbfd92721f0836c71dd3a749c7a658d94959ed9d5195dd46cfa
+  search_scope: rg --no-ignore --hidden --follow --text -l -i hopeite|whitlockite|0089480|cryst9050259|cryst15020118
+    over explicit two-checkout corpus roots; curator cited-raw search receipt also
+    inspected.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round76-phosphates-independent/notice-search.json
+  locator: Three exact DOI correction/erratum/retraction searches on 2026-10-14
+  accessed_at: '2026-10-14T16:41:30.689269Z'
+  support: context_only
+  summary: No affecting notice identified in bounded returned results. Internal source
+    contradictions assessed directly; absence of notices is not universal.
+  snapshot_sha256: 7dfee07e5f4f959d01349d06749a63b66b7c2b71ce7dd80310a450f6f356d64a
+  search_scope: Exact DOI queries retained with full returned results; no date/domain
+    filter or exhaustive pagination.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round76-phosphates-independent/named.log
+  locator: Reviewer-executed named nonempty validation for this assigned pair
+  accessed_at: '2026-10-14T16:41:30.689269Z'
+  support: supports
+  summary: Two records checked; zero failed; terminal exit0. Structural validity is
+    not scientific proof.
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round76-final-gates.json
+  locator: Actual newly executed final round76 batch, after owner freeze
+  accessed_at: '2026-10-14T16:41:30.689269Z'
+  support: supports
+  summary: All four commands exit0, correct trusted base and unchanged owner hashes;
+    receipt and actual retained log independently checked.
+  snapshot_sha256: f18e5f6a252ea29194da47a54fe630e7a58a68c3b3591987f8befe1dd12b95ae
+- evidence_id: batch_log
+  kind: validation
+  reference: /private/tmp/cmm-round76-final-gates.log
+  locator: 'Actual gate log: 317 passed/3 skipped; 364 records; 419 histories; pages
+    current'
+  accessed_at: '2026-10-14T16:41:30.689269Z'
+  support: supports
+  summary: All required batch checks completed; no baseline substituted.
+  snapshot_sha256: 8bbfc2d4a2a7e38d93f94c3a9f0f7758fb6af775b4217cddf39ece223afe075a
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/cryst15020118
+  locator: Complete 19-page original; Methods2.1–2.2, Results3.1–3.2, Discussion4.1–4.3,
+    Figures1–7, Tables1–4 and end matter
+  accessed_at: '2026-10-14T16:41:30.689269Z'
+  support: supports
+  summary: Full original independently read; all original page graphics inspected
+    through contact sheets, with key Tables3 and Figures3/4/6 re-inspected at full
+    page size. Chemical starting crystals and day14 hyphal encrustations are distinct.
+  snapshot_sha256: c9dc293fa0b229b22ba93c9eb7e426f29a74d47abc929f1c0c5d0d1fde95fefa
+- evidence_id: xml
+  kind: primary_source
+  reference: https://doi.org/10.3390/cryst15020118
+  locator: Complete publisher XML, including data-availability statement
+  accessed_at: '2026-10-14T16:41:30.689269Z'
+  support: context_only
+  summary: Corroborates article identity and same-study scope; no additional underlying
+    assay dataset identified.
+  snapshot_sha256: a3cb6bbebb846fabcfe399dd05a449d1e1ad48a3309493bf9ec5523a5c2f33b8
+- evidence_id: strain
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/KF768341.1
+  locator: Complete GenBank record, definition and source qualifiers
+  accessed_at: '2026-10-14T16:41:30.689269Z'
+  support: context_only
+  summary: A. niger Ch 4/07, taxon5061 and grecian marble provenance verified, without
+    asserting culture authentication.
+  snapshot_sha256: 925e0dcf7e8571abe9668ff2d22775b2d4b3d80e7ee04bf303b86ab2d404f757
+- evidence_id: companion
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/OP758843.1
+  locator: Complete GenBank record, definition and source qualifiers
+  accessed_at: '2026-10-14T16:41:30.689269Z'
+  support: context_only
+  summary: The published companion accession resolves to P. granulatum isolate II47-8,
+    not stated P. chrysogenum Cs/21. Owner correctly excludes a verified companion
+    taxon mechanism.
+  snapshot_sha256: 75c2f00fa28e0b3cf54f10a03ac6aba4eb2f3c6d10a8ec09726f9bb1e874c3ba
+- evidence_id: metadata
+  kind: authority
+  reference: https://api.crossref.org/works/10.3390/cryst15020118
+  locator: DOI/title/publication date/relation/update fields
+  accessed_at: '2026-10-14T16:41:30.689269Z'
+  support: context_only
+  summary: Title and 23 January2025 publication match original; empty relation/no
+    update-to is not an exhaustive correction clearance.
+  snapshot_sha256: 194d1b2ca9424d1f0766b90a6f6edf16278541ad229401f2ed3029a497733e18
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Distinct zinc phosphate tetrahydrate
+  outcome: supported
+  target_ids:
+  - cmmmech:hopeite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  summary: IMA and Handbook support orthorhombic hopeite, distinct from parahopeite
+    and zinc reagents. No inherited zinc criticality claim.
+- assessment_id: organism
+  area: identity
+  topic: Accepted A. niger culture separated from mismatched companion accession
+  outcome: supported
+  target_ids:
+  - cmmmech:hopeite
+  evidence_ids:
+  - record
+  - primary
+  - strain
+  - companion
+  - taxonomy
+  summary: Primary reports Ch4/07 and original species identifier/GenBank qualifiers
+    agree. Companion Cs/21 accession mismatch is retained without silently renaming
+    its culture.
+- assessment_id: protocol
+  area: evidence
+  topic: Starting chemical precipitation versus later culture association
+  outcome: supported
+  target_ids:
+  - cmmmech:hopeite
+  evidence_ids:
+  - record
+  - primary
+  summary: 30 mL triplicate Czapek-Dox surface cultures at25 degrees C, initialpH6,
+    ZnSO4.7H2O0–2000 micromol/L and exact recipe match Methods. Hopeite forms immediately
+    after121 degrees C autoclaving before inoculation; duration and spore density
+    not reported. Uninoculated zinc-containing and zinc-free fungal comparisons do
+    not replace killed-cell/cell-free/pH-matched controls.
+- assessment_id: mechanism
+  area: evidence
+  topic: Qualified secondary hopeite formation
+  outcome: supported
+  target_ids:
+  - cmmmech:hopeite
+  evidence_ids:
+  - record
+  - primary
+  summary: Figure6 day14/2000 micromol/L shows rounded large plate crystals, small
+    crystals and tubular hyphal encrustations plus weak labelled hopeite diffraction.
+    Figure3 preinoculation reference-pattern comparison and SEM/EDX support phase
+    assignment, without quantitative purity. Table3 preserves biogenic and abiogenic
+    hopeite together at days14/21; katsarosite appears alongside at21. No isolated
+    recovery, necessity of fungi or molecular pathway inferred.
+- assessment_id: contradictions
+  area: scope
+  topic: Internal conflicts and mixed preparation preserved
+  outcome: supported
+  target_ids:
+  - cmmmech:hopeite
+  evidence_ids:
+  - record
+  - primary
+  - dedup
+  summary: Day14 pH6 agrees in Tables1/3; day28 is2.8 versus2.5, while Discussion4.1
+    says5–6. Discussion mmol differs from Methods micromol/L. Free-Zn after chemical
+    precipitation is not fungal-removal yield; visibility loss at28days is not complete
+    conversion. Shared katsarosite experiment and possible2023 lineage are not replication.
+- assessment_id: deployment
+  area: scope
+  topic: Laboratory association without industrial extrapolation
+  outcome: supported
+  target_ids:
+  - cmmmech:hopeite
+  evidence_ids:
+  - record
+  - primary
+  - xml
+  - supplements
+  summary: Mixed mycelium/crystals, no purified product or closedZn/Pbalance. Proposed
+    remediation is not field deployment. Source data-availability text says no new
+    data despite experimental design; underlying dataset remains unavailable in inspected
+    representations.
+- assessment_id: provenance
+  area: provenance
+  topic: Independent exact-byte scientific review and actual final checks
+  outcome: supported
+  target_ids:
+  - cmmmech:hopeite
+  evidence_ids:
+  - record
+  - history
+  - bindings
+  - named
+  - batch
+  - batch_log
+  - notices
+  summary: Native inspect preceded scientific assessment; reviewer authored anilite/digenite,
+    not either phosphate. Owner/history/schema hashes remain unchanged. Actual named
+    and batch outcomes/logs verified. Bounded searches and all nonempty original bindings
+    retained.
+findings: []
+actions: []
+limitations:
+- No raw assay dataset, quantitative phase fraction or closed zinc/phosphorus recovery
+  balance is available in the inspected original.
+- Culture-associated morphology and diffraction do not establish biological necessity
+  or a molecular pathway; matched killed-cell/cell-free/pH controls are missing.
+- The companion culture accession is inconsistent and later endpoint pH/unit statements
+  conflict; these uncertainties remain in the owner.
+- The katsarosite owner describes the same experiment, not independent replication;
+  the 2023 antecedent is not accepted as independently verified replication here.
+- Bounded correction and supplementary checks do not establish literature-wide absence.
+  This review supplies no new experimental replication.
