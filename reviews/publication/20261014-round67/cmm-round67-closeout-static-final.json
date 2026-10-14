@@ -1,0 +1,47 @@
+{
+  "recorded_at": "2026-10-14T09:37:12.996020+00:00",
+  "passed": true,
+  "verdict": "pass_with_scope_limitations",
+  "reviewer": {
+    "identity": "codex /root/round67_manganese",
+    "model": "GPT-6",
+    "independence": "Independent of closeout-helper author /root. Curator of manganese records and author of frontier report/builder; not an independent review of that own work."
+  },
+  "scope": "Static review of the corrected closeout helper and exact change against the reconstructed initial source. No execution or GitHub publication.",
+  "helper": {
+    "path": "/private/tmp/cmm-round67-closeout.py",
+    "sha256": "6476b214ce96f6ffe9f341537233db12e8f8eca0667aad7364840ccb86097aea"
+  },
+  "prior_observation": {
+    "path": "/private/tmp/cmm-round67-closeout-review-initial-20261014T093557Z.json",
+    "sha256": "274eeaea1fe4dc59952b4d2a6289b0f1e5fde35956e1597f87e2cbdd9fd31b0f"
+  },
+  "prior_observation_markdown": {
+    "path": "/private/tmp/cmm-round67-closeout-review-initial-20261014T093557Z.md",
+    "sha256": "bc1079b220ae57c6a2b607dc96f9974680bc44d4922d75f3655004d652933dd7"
+  },
+  "original_source_snapshot": {
+    "path": "/private/tmp/cmm-round67-closeout-original-reconstructed.py",
+    "sha256": "b5580bb611616b437948149a94862439f987a8677d45ce3e05bcc4455f2656ec",
+    "basis": "Reconstructed exactly from the complete initial tool output; not a contemporaneous initial-byte hash."
+  },
+  "issue": {
+    "path": "/private/tmp/cmm-round67-closeout-issue.json",
+    "sha256": "df46fa22c681ec7143666b29b234c66fb00d9a36f988cfeabee5078c9ea0daac",
+    "number": 211,
+    "state_at_review": "OPEN"
+  },
+  "findings": [
+    {
+      "id": "R67-CLOSEOUT-001",
+      "severity": "medium",
+      "status": "resolved",
+      "resolution": "The corrected helper binds preflight and postmerge identities, successful terminal commands, log hashes, all three topic-absence checks per run, exact expected counts and configuration, completed postmerge 317/3 test result, and cleanup clean_detached_worktree before forming a completion comment. Issue 211 tracks this implemented correction; its actual closure follows the fixing PR."
+    }
+  ],
+  "unresolved_corrective_findings": 0,
+  "limitations": [
+    "Static review does not establish a successful future run, merge, deletion or publication. Actual terminal receipts, remote states and exact GitHub comment readback remain required at execution."
+  ],
+  "diff": "--- /private/tmp/cmm-round67-closeout-original-reconstructed.py\n+++ /private/tmp/cmm-round67-closeout.py\n@@ -6,8 +6,21 @@\n load=lambda n:json.loads((p/f'cmm-round67-{n}.json').read_text())\n sha=lambda q:hashlib.sha256(Path(q).read_bytes()).hexdigest()\n c,cl,post,hosted,sync=[load(n) for n in ['commit-receipt','pr-cleanup','postmerge-merged-terminal','hosted-audit-final','main-preservation-after']]\n-assert cl['local_branch_absent'] and cl['remote_branch_absent'] and sync['passed']\n+cfg=load('helper-config');pre=load('preflight-committed-terminal')\n+expected=dict(record_count=312,history_count=362,structured_review_count=373,review_base_count=68,covered_records=312)\n+assert cfg['counts']==expected and pre['counts']==post['counts']==expected\n+assert cl['local_branch_absent'] and cl['remote_branch_absent'] and cl['clean_detached_worktree'] and sync['passed']\n+assert pre['exit_code']==0 and pre['mode']=='preflight' and pre['trusted_base']==c['base'] and pre['topic_head']==c['head'] and pre['expected_tree']==c['tree']\n+assert sha(pre['log'])==pre['log_sha256']\n assert post['exit_code']==0 and post['merge_commit']==cl['merge'] and post['expected_tree']==c['tree'] and sha(post['log'])==post['log_sha256']\n+assert post['mode']=='postmerge' and post['trusted_base']==c['base'] and post['topic_head']==c['head']\n+for verification in [pre,post]:\n+ assert verification['commands'] and all(x['exit_code'] in x['allowed_exit_codes'] for x in verification['commands'])\n+ assert len(verification['topic_object_checks'])==3 and all(x['absent'] and x['exit_code']!=0 for x in verification['topic_object_checks'])\n+ for command in [['uv','run','--locked','cmmmech','validate','--require-records'],['uv','run','--locked','cmmmech','validate-history','--base',c['base']],['just','review-check','--base',c['base'],'--require-reviews']]:\n+  assert any(x['command']==command and x['exit_code']==0 for x in verification['commands'])\n+assert any(x['command']==['just','check'] and x['exit_code']==0 for x in post['commands'])\n+assert '317 passed, 3 skipped' in Path(post['log']).read_text()\n assert hosted['passed'] and hosted['all_five_hosted_runs_and_jobs_succeeded'] and hosted['merge']==cl['merge'] and hosted['tree']==c['tree']\n assert sync['head']==cl['merge'] and sync['tree']==c['tree'] and sync['main_clean'] and sync['main_nontracked_preserved'] and sync['unrelated_skill_preserved']\n pr=json.loads(subprocess.check_output(['gh','pr','view',str(cl['pr']),'--repo',repo,'--json','state,mergeCommit,headRefOid'],text=True))\n"
+}

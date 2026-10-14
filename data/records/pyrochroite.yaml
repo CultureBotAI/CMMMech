@@ -1,0 +1,115 @@
+id: cmmmech:pyrochroite
+name: Pyrochroite
+material_kind: mineral
+description: Pyrochroite is the manganese(II) hydroxide mineral Mn2+(OH)2, listed as grandfathered in
+  the September 2026 IMA-CNMNC list. The historical year 1864 is not an approval accession. This mineral
+  is distinct from manganese metal, manganese ore and manganese(III) oxide hydroxide species. The experiment
+  below concerns source-assigned pyrochroite in a mixed laboratory product; it does not certify a phase-pure
+  natural mineral or establish criticality by inheritance from manganese.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Pyrochroite row PDF page 179 and feitknechtite
+    row page 67; status and date definitions on pages 1-2.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: buchanan_thesis
+  title: Buchanan, Dawn Melisa. The bioreduction of cobalt and nickel bearing manganese minerals. University
+    of Manchester PhD thesis, cover dated 2021; repository award date 11 January 2022. Chapter 4, printed
+    pages 115-158 (PDF pages 116-159), including Figures 4.1-4.8 and appendix figures/tables; Chapter
+    3 methods.
+  url: https://pure.manchester.ac.uk/ws/portalfiles/portal/261215972/FULL_TEXT.PDF
+  accessed_on: '2026-10-14'
+- id: buchanan_repository
+  title: University of Manchester Research Explorer. Buchanan thesis metadata and original file; award
+    date 11 January 2022. This is a thesis, not evidence of subsequent journal publication.
+  url: https://research.manchester.ac.uk/en/studentTheses/the-bioreduction-of-cobalt-and-nickel-bearing-manganese-minerals/
+  accessed_on: '2026-10-14'
+- id: ncbi_geobacter
+  title: NCBI Taxonomy 35554. Geobacter sulfurreducens, species rank; identity context only, not authentication
+    of the unspecified Manchester laboratory stock.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=35554&mode=Info
+  accessed_on: '2026-10-14'
+- id: pyrochroite_handbook
+  title: Handbook of Mineralogy, Pyrochroite. Mineral Data Publishing 2001-2005 version 1; one-page identity,
+    formula and diffraction entry.
+  url: https://www.handbookofmineralogy.org/pdfs/pyrochroite.pdf
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: geobacter_associated_phase_formation
+  name: Pyrochroite-assigned product during Geobacter-associated manganese oxide reduction
+  process: biomineralization
+  microbial: true
+  organisms:
+  - id: NCBITaxon:35554
+    label: Geobacter sulfurreducens
+  description: A Manchester laboratory culture identified as Geobacter sulfurreducens transformed synthetic
+    cobalt/nickel-bearing manganese oxide into a mixed assemblage assigned by powder XRD to pyrochroite
+    and rhodochrosite, with transient feitknechtite. Pyrochroite-labelled reflections occur at 1, 17 and
+    72 hours. The evidence supports culture-associated formation under the reported anaerobic assay, not
+    direct enzymatic precipitation of this phase, a uniquely resolved pathway, purified manganese hydroxide
+    recovery or industrial deployment.
+  context: Buchanan's laboratory culture collection supplied Geobacter sulfurreducens without a strain
+    accession. Living cells were grown anaerobically at 30 degrees C with acetate/fumarate, harvested
+    in late logarithmic phase and washed three times in 30 mM bicarbonate buffer at pH 7.1 under N2:CO2
+    80:20. The experiment used a 5 mL aliquot of synthetic Co/Ni-asbolane suspension (stock nominally
+    2 mmol/L Mn in 10 mM bicarbonate at circumneutral pH), added sodium acetate at reported 10 mM and
+    cells to final OD600 0.6, incubated anaerobically in the dark at 30 degrees C. The added cell volume
+    and precise final mineral concentration are not reported. The synthetic feed was precipitated from
+    Co/Ni/Mn chlorides with KMnO4/KOH, washed in alkaline NaCl and stored at 4 degrees C. Its asbolane
+    designation is source-assigned; the thesis acknowledges structural uncertainty and mixed Mn oxidation
+    states. No-cell controls contained the same mineral suspension and acetate. Sampling used aseptic
+    anaerobic handling; residual slurry was dried anaerobically before powder XRD. No-cell diffraction
+    patterns, killed-cell mineral controls or a demonstrated drying-independent phase assignment are supplied.
+  evidence:
+  - source_ref: buchanan_thesis
+    supports: support
+    explanation: Chapter 4 Figure 4.2b-d and Results on printed pages 127-130 assign pyrochroite to post-inoculation
+      solids at 1, 17 and 72 hours; Figure 4.2a is the starting material. Rhodochrosite coexists and dominates
+      the displayed 72-hour pattern. The broad chemical reduction interpretation is consistent with changing
+      Mn spectral valence, but the mineral remains a source-assigned component of dried mixed solids.
+  - source_ref: buchanan_thesis
+    supports: partial
+    explanation: Chapter 4 methods and Figure 4.1 (printed pages 123-128) show cell-associated dissolved-metal
+      release above no-cell controls, followed by declining aqueous Mn between 17 and 72 hours. These
+      are centrifuged-supernatant ICP-MS measurements, not direct aqueous valence measurements or isolated
+      product recovery. Biological ICP-MS samples at 1 and 17 hours are described as triplicate, 72 hours
+      as one sacrificial bottle, and controls as duplicate; Figure 4.1 includes 24 hours but its replication
+      is unspecified. Neither aqueous loss nor retained metal establishes allocation to this particular
+      mineral.
+  - source_ref: buchanan_thesis
+    supports: partial
+    explanation: Figure 4.2 (printed page 131) presents labelled mixed-phase patterns without quantitative
+      phase refinement, phase-specific mass balance or a matched no-cell mineral time series. Pyrochroite
+      and feitknechtite have overlapping low-angle peaks, so the accepted claim is the author's assignment,
+      not independently re-refined purity. Figure 4.3 and pages 129-130 show cell-associated particles
+      and heterogeneous elemental spectra; the 17-hour laths are only tentatively linked to the two phases.
+      Elemental co-occurrence does not identify a unique cobalt/nickel host or prove lattice incorporation.
+  - source_ref: buchanan_thesis
+    supports: partial
+    explanation: Figures 4.4-4.8, the tables on printed pages 146-147 and Appendix 4.1-4.2 support a heterogeneous
+      shift toward lower manganese valence. Fitted oxidation-state fractions carry the author's stated
+      10% error and differ substantially between surface-sensitive bulk measurements and spatially restricted
+      transmission SXM. Only one imaged region per time point was possible, and coherent SXM data are
+      absent at 72 hours. These are spectral fractions, not mineral abundances or conversion yields. A
+      sequential one-electron pathway and direct cell-surface cytochrome participation remain interpretations;
+      no enzyme perturbation or phase-specific electron-transfer test was performed.
+  - source_ref: buchanan_thesis
+    supports: partial
+    explanation: 'Source inconsistencies remain unresolved: the tables discussed as 4.1/4.2 are printed
+      as 6.1/6.2; the 17-hour co-located Mn average differs between the main table and appendix/text;
+      regional counts differ across captions; Appendix Table 4.2 says Mn in its caption but tabulates
+      Co. Chapter 3 enrichment acetate wording differs from its medium table. The conclusion prints Mn(VI)
+      where the chapter investigates Mn(IV). No corrected speciation series, growth-medium recipe or unique
+      kinetic pathway is inferred from these discrepancies.'
+  - source_ref: ncbi_geobacter
+    supports: context_only
+    explanation: NCBI 35554 resolves Geobacter sulfurreducens at species rank. It neither identifies the
+      thesis's stock as strain PCA nor establishes mineral transformation by every member of this species.
+curation_history:
+- timestamp: '2026-10-14T09:18:34Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Added Pyrochroite identity and source-qualified culture-associated phase formation, preserving
+    mixed solids, control limits, thesis status and unresolved spectral discrepancies.
+history_refs:
+- history/records/pyrochroite/2026-10-14T091837Z-codex-a462f4.yaml

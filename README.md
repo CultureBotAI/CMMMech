@@ -8,10 +8,17 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 305 material records.
+The catalogue currently contains 312 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Asbolane](data/records/asbolane.yaml) | Geobacter-associated alteration of synthetic Co/Ni-asbolane | Partial aqueous release and mixed products leave metal fate and reduction pathways unresolved |
+| [Pyrochroite](data/records/pyrochroite.yaml) | Source-assigned hydroxide in Geobacter culture products | Mixed dried solids and absent mineral-control series limit phase-specific attribution |
+| [Feitknechtite](data/records/feitknechtite.yaml) | Transient source-assigned phase during manganese oxide reduction | Overlapping reflections and persistent Mn(III) preclude complete-conversion claims |
+| [Newberyite](data/records/newberyite.yaml) | Minor phosphate phase assigned in static Myxococcus cultures | Mixed products and possible struvite aging prevent direct precipitation or yield claims |
+| [Schertelite](data/records/schertelite.yaml) | Minor culture-product assignment and separate abiotic synthesis | Phase mixtures, handling and abiotic alternatives constrain microbial attribution |
+| [Chrysotile](data/records/chrysotile.yaml) | Thermovibrio dissolution assay with no demonstrated Mg/Si release advantage | Inoculum correction and source figure/text inconsistencies remain unresolved |
+| [Riebeckite](data/records/riebeckite.yaml) | Culture-associated iron reduction in UICC crocidolite | Surface versus structural iron and persistent fibres limit interpretation |
 | [Bobierrite](data/records/bobierrite.yaml) | Source-assigned magnesium phosphate in bacterial culture products | Mixed products, phase-label conflicts and processing constrain attribution |
 | [Barićite](data/records/baricite.yaml) | Barićite-assigned phosphate precipitation in hydrogen-fed G20 cultures | Source-assigned mixed composition, recipe conflicts and sterile controls limit causal claims |
 | [Brucite](data/records/brucite.yaml) | Brucite-rich encrustation of microbial filaments in Prony Bay chimneys | Field association and proposed nucleation do not establish metabolic necessity |

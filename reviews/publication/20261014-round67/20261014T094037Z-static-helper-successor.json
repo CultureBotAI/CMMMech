@@ -1,0 +1,71 @@
+{
+  "recorded_at": "2026-10-14T09:40:11.465827+00:00",
+  "passed": true,
+  "verdict": "pass_with_scope_limitations",
+  "reviewer": "codex /root/round67_manganese (GPT-6; codex)",
+  "independence": "Independent of publication-helper author /root. Manganese curator and frontier report author; not independent review of own scientific or report work.",
+  "scope": "Successor static audit of nine current helpers. The unchanged eight match the prior reviewed exact bytes. Re-read complete changed commit helper and verified the one-line selector delta by reconstructing its prior SHA-256. No publication helper executed, no Git/GitHub mutation.",
+  "prior_observation": {
+    "path": "/private/tmp/cmm-round67-static-helper-audit-20261014T092432Z.json",
+    "sha256": "ca5ed600e5a0b535d2a57ba8b786a5084606bee437597f275b3c84c1b4e2b660"
+  },
+  "reviewed_helpers": [
+    {
+      "path": "/private/tmp/cmm-round67-commit.py",
+      "sha256": "1360c462b7dd3dcd96c11720497f6f02b3332f383060abfebe5a5581ed3178e7"
+    },
+    {
+      "path": "/private/tmp/cmm-round67-open-pr.py",
+      "sha256": "4f6ac494367b6d399dbf577c551e5fa99991e34c559b51c2f23aff1f4443e81b"
+    },
+    {
+      "path": "/private/tmp/cmm-round67-post-review.py",
+      "sha256": "c6ab79bbb9c37c3927ac54d20b092ebd386fd9ee13c86f6279e2f6a29c58a1ce"
+    },
+    {
+      "path": "/private/tmp/cmm-round67-enqueue.py",
+      "sha256": "bc4212b076791f0b88699506f9281d32f2acb2c3caf392d2516521f0db0d9a5d"
+    },
+    {
+      "path": "/private/tmp/cmm-round67-cleanup.py",
+      "sha256": "06a0fdcb78fdf8e342d9bf602f9a369a64b45b07c8b0789bcd89ccc3924a2749"
+    },
+    {
+      "path": "/private/tmp/cmm-round67-sync-main.py",
+      "sha256": "79439aea9bcb8f0025e7f7a83f72469d0aa6b23ca668c5981246f6d4d9b1d20b"
+    },
+    {
+      "path": "/private/tmp/cmm-round67-hosted-audit.py",
+      "sha256": "2289c028ba8f24beed422b2ee3ed0f3dc2f6b5b5fb537db331e5b2c14e489147"
+    },
+    {
+      "path": "/private/tmp/cmm-round67-isolated-verification.py",
+      "sha256": "40061f72f189fd105fe7b03965cb40c973ee2bc08acaeb3559d9c5841195911f"
+    },
+    {
+      "path": "/private/tmp/cmm-round67-isolated-coverage.py",
+      "sha256": "3bc02024a55c29cdfb896f2acfb00d98edc7ab33be7d21f3bab2bea896fbca39"
+    }
+  ],
+  "findings": [
+    {
+      "id": "R67-PUBLICATION-SELECTOR-001",
+      "severity": "minor",
+      "status": "resolved",
+      "title": "Broad final-audit artifact selector collided with the closeout peer receipt",
+      "resolution": "Commit helper now selects only *-publication-final.json; final-audit duplicate-output guard uses the same specific suffix. The original helper source is reproduced exactly by reversing this single glob change and matches its previously saved hash. Other eight helper hashes are unchanged.",
+      "verification": "An isolated temporary-directory fixture reproduced the old collision with closeout-static-final.json and demonstrated that the corrected selector excludes the peer receipt while selecting exactly the intended publication audit. Both empty-publication and existing-publication cases passed."
+    }
+  ],
+  "unresolved_corrective_findings": 0,
+  "checks": [
+    "All nine current helper sources parse as Python.",
+    "Eight unchanged helper hashes match the preserved initial review.",
+    "One-line commit-helper reversal matches initial commit-helper hash exactly.",
+    "Specific selector regression passed with a peer final receipt and publication final receipt."
+  ],
+  "publication_ready": false,
+  "limitations": [
+    "This is static/helper-level assurance; successful actual commit, hosted checks, isolated verification, merge, cleanup and preservation still require their own terminal receipts."
+  ]
+}

@@ -1,0 +1,368 @@
+schema_version: 1.0.0
+review_id: 20261014T093255Z-newberyite-round67-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of newberyite
+started_at: '2026-10-14T09:24:57.963615Z'
+finished_at: '2026-10-14T09:32:55.968980Z'
+reviewer:
+  identity: codex /root/round67_new_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Phosphate record, history and dossier authored by /root/round67_phosphates.
+    Reviewer independently read the original claim-bearing methods, figures, tables
+    and chemical study, verified metadata, and made no record/history/dossier edits.
+    Curator supplied raw originals; assessments were independent. Reviewer authored
+    separate chrysotile/riebeckite records reviewed by another agent.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The exact frozen record supports distinct mineral identity and narrowly qualified
+  culture-associated phase evidence. Analytical, handling, timing, causal and deployment
+  limits remain explicit; no corrective defect was established.
+source:
+  git_revision: 4df8fe16fc1625d789d28bb7ec727d48785c1a26
+  state: working_tree
+  inputs:
+  - path: data/records/newberyite.yaml
+    sha256: a8ed2f92ed8621803cf1aee6e6b109083f10c54a422ca5e4e6b517b7cbf7722a
+    role: target
+  - path: history/records/newberyite/2026-10-14T092120Z-codex-1aa8e6.yaml
+    sha256: 94cd719b109d0d35e41aff005780272eb3f5ad216c1c565404b3c7967fc3e487
+    role: context
+  - path: research/sources/round67-phosphates/20261014T092404Z-source-investigation.json
+    sha256: 63eecb2f10c81dcb86054b6eee6379059d492ceb48274a71dbe4f0e5ad37c2eb
+    role: context
+  - path: research/sources/round67-phosphates/20261014T092404Z-source-investigation.md
+    sha256: e39bb24e079485a18da6720bf3caf6484a1105d007240386164ecda0399d8141
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire final record and CREATE sidecar assessed against claim-bearing
+    original evidence.
+  selection: Assigned frozen path. Initial native inspection preceded scientific assessment;
+    subsequent per-record inspection adds history/dossier inputs before final exact-byte
+    judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:newberyite
+targets:
+- target_id: cmmmech:newberyite
+  path: data/records/newberyite.yaml
+  label: Newberyite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/newberyite.yaml
+    role: maintained scientific record
+checks:
+- check_id: named
+  name: Named record validation
+  command: uv run --locked cmmmech validate data/records/newberyite.yaml
+  status: passed
+  required: true
+  summary: Reviewer execution exit 0 in locked offline environment.
+  target_ids:
+  - cmmmech:newberyite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Batch gate 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T09:26:52.988700+00:00 to 2026-10-14T09:30:06.414696+00:00;
+    actual receipt and log hash checked.
+  target_ids:
+  - cmmmech:newberyite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T09:30:06.414787+00:00 to 2026-10-14T09:30:12.029136+00:00;
+    actual receipt and log hash checked.
+  target_ids:
+  - cmmmech:newberyite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Batch gate 3
+  command: uv run --locked cmmmech validate-history --base 4df8fe16fc1625d789d28bb7ec727d48785c1a26
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T09:30:12.029235+00:00 to 2026-10-14T09:30:15.099901+00:00;
+    actual receipt and log hash checked.
+  target_ids:
+  - cmmmech:newberyite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/newberyite.yaml
+  locator: Entire frozen record
+  accessed_at: '2026-10-14T09:32:55.968980Z'
+  support: supports
+  summary: Field-by-field assessment of the inspected working record, including source
+    titles and all evidence qualifiers. Reviewer made no target edits.
+  snapshot_sha256: a8ed2f92ed8621803cf1aee6e6b109083f10c54a422ca5e4e6b517b7cbf7722a
+- evidence_id: history
+  kind: record_content
+  reference: history/records/newberyite/2026-10-14T092120Z-codex-1aa8e6.yaml
+  locator: Complete CREATE sidecar and corresponding inline event
+  accessed_at: '2026-10-14T09:32:55.968980Z'
+  support: supports
+  summary: Actor codex/GPT-6/codex, target, timestamps and described scope agree.
+    Reviewer made no history edits.
+  snapshot_sha256: 94cd719b109d0d35e41aff005780272eb3f5ad216c1c565404b3c7967fc3e487
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September 2026 pages 1-2 definitions and 154 species row
+  accessed_at: '2026-10-14T09:32:55.968980Z'
+  support: supports
+  summary: Reviewer independently rendered and visually read original rows and definitions.
+    Grandfathered status and original-description year are not approval accessions.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: thesis
+  kind: primary_source
+  reference: https://hdl.handle.net/10481/14393
+  locator: Deposited scan title pages; Methods printed 62-75; Table 8 and Figures
+    19-22 printed 107-111; Discussion 137-139
+  accessed_at: '2026-10-14T09:32:55.968980Z'
+  support: partial
+  summary: Reviewer visually read the original claim-bearing pages (PDF pages 71-84,
+    118-122, 148-150) and title pages, not only curator OCR. Static mixed products
+    have source-assigned small peaks/shoulders amid struvite. Washing, drying, timing
+    and lack of phase-specific controls limit causal and quantitative interpretation.
+    The entire 198-page thesis was not exhaustively reviewed.
+  snapshot_sha256: 5724107ec6f91d7728132b98441f5498ab0ff8d5f80318b90b4dcff130c6e0c0
+- evidence_id: frazier
+  kind: primary_source
+  reference: https://msaweb.org/AmMin/AM48/AM48_635.pdf
+  locator: Complete seven original pages 635-641; Table 1 p636, preparation pp638-639,
+    chemical relationships pp640-641
+  accessed_at: '2026-10-14T09:32:55.968980Z'
+  support: supports
+  summary: Read all extracted text and visually inspected every original page. Abiotic
+    synthesis/alteration is not a matched bacterial control. Abstract/body hydrolysis-product
+    conflict and chemically inferred air-alteration products remain explicit.
+  snapshot_sha256: 977255a47ea9842bbb6e69d551ddaa1b299a6ba4475157ec705e03de6d049225
+- evidence_id: catalogue
+  kind: authority
+  reference: https://produccioncientifica.ugr.es/documentos/618f4fc09ff8c939aaca5ab8
+  locator: 'Official university research catalogue: matching title, author, defense
+    university, year and TESEO O47239'
+  accessed_at: '2026-10-14T09:32:55.968980Z'
+  support: supports
+  summary: 'A proposed metadata concern was tested and rejected: university catalogue
+    explicitly identifies defense year 1994. The scan title page dates November 1994,
+    while repository-issued metadata is 1995. Both dates in the record are defensible;
+    no unsupported defense-date correction or issue was made.'
+  snapshot_sha256: 12b8453a1f01d21bbfb257aeca605703d1ceaa08a1715ba7da3eb23fbc8741ef
+- evidence_id: repository_metadata
+  kind: authority
+  reference: https://digibug.ugr.es/handle/10481/14393
+  locator: Matching author/title, handle and issued year 1995
+  accessed_at: '2026-10-14T09:32:55.968980Z'
+  support: supports
+  summary: Read retained official landing HTML metadata and original thesis title
+    pages. Thesis and journal article are not conflated; inaccessible 1994 journal
+    article is not claimed as inspected primary evidence.
+  snapshot_sha256: 5e99c42f550cd5edb309c32e28c7b00ee5d754212ccfec6d57086c32d660eadf
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round67-phosphates-independent-review/dedup.txt
+  locator: Scoped record/research/review/history and cited raw-root search
+  accessed_at: '2026-10-14T09:32:55.968980Z'
+  support: context_only
+  summary: Hidden and ignored files and symlinks were included. Prior bibliography
+    or discovery mentions do not duplicate these maintained species owners. Compressed
+    PDF binary matching is not claimed as full-text coverage.
+  search_scope: rg --no-ignore --hidden --follow -n -i 'newberyite|newberyita|schertelite|schertelita|01490459409377995|10481/14393|AM48_635'
+    data/records research reviews history and raw round67/65/66-phosphates plus round4-phosphorus-cerium-evidence
+    roots; no machinewide absence claim.
+  snapshot_sha256: 31941e0328136ec46964aa2bb62f60a8cef4844561c3164a7131a03de4998dea
+- evidence_id: notices
+  kind: search
+  reference: https://produccioncientifica.ugr.es/documentos/618f4fc09ff8c939aaca5ab8
+  locator: Independent live bounded queries on 2026-10-14 UTC
+  accessed_at: '2026-10-14T09:32:55.968980Z'
+  support: context_only
+  summary: No affecting correction notice surfaced in returned results. Chemical alternatives
+    were verified in the original Frazier paper. Later search leads and review summaries
+    are not adopted as new experimental evidence.
+  search_scope: 'Queries: "10481/14393" Entrena 1994 1995; "Production of Syngenetic
+    Minerals" correction retraction; "Frazier" "schertelite" "1963" correction; "newberyite"
+    "schertelite" "Myxococcus" control; "Entrena Guadix" "1994" tesis defensa; "Producción
+    de estruvita y otras formas cristalinas" fecha. First returned sets, no explicit
+    date/domain filtering or pagination. Official defense catalogue directly opened
+    and independently downloaded. No universal notice-absence assertion.'
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round67-phosphates-independent-review/newberyite-validation.log
+  locator: Entire reviewer-executed named validation log
+  accessed_at: '2026-10-14T09:32:55.968980Z'
+  support: supports
+  summary: Locked offline validation passed with one record and zero failures.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round67-final-gates.json
+  locator: Actual final gate receipt and complete original log
+  accessed_at: '2026-10-14T09:32:55.968980Z'
+  support: supports
+  summary: 'Coordinator just check, nonempty validation and trusted-base history validation
+    all exited zero. Reviewer read commands/results and verified log SHA-256: 317
+    tests passed, 3 skipped, 312 records and 362 history sessions.'
+  snapshot_sha256: 082a605db5c68ab999281d596f4971f8cfef0db72f37635dbe375c1470852de2
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral species, formula and criticality boundaries
+  outcome: supported
+  summary: IMA newberyite Mg(PO3OH)(H2O)3 with grandfathered status and 1879 original-description
+    year. Distinct from elemental constituents, struvite and mixed culture precipitates.
+  target_ids:
+  - cmmmech:newberyite
+  evidence_ids:
+  - record
+  - ima
+  dimensions:
+  - name: material_form
+    value: Mineral species
+    definition: Mixed laboratory products are experimental context rather than species
+      identity.
+    evidence_ids:
+    - record
+    - ima
+  - name: criticality
+    value: No authority/jurisdiction/list/edition designation asserted
+    definition: Constituent criticality is not inherited; omission is not universal
+      noncritical status.
+    evidence_ids:
+    - record
+- assessment_id: culture
+  area: evidence
+  topic: Organism, substrate, handling and comparators
+  outcome: supported
+  summary: The record restricts support to recovered minor phases associated with
+    live static laboratory cultures and preserves taxonomic, vessel and analytical
+    uncertainty.
+  target_ids:
+  - cmmmech:newberyite
+  evidence_ids:
+  - record
+  - thesis
+  dimensions:
+  - name: organism_and_biomass
+    value: Live Myxococcus coralloides D, also named Corallococcus coralloides in
+      Methods
+    definition: Dispersed-growth derivative from serial liquid passage; no deposited
+      strain or sequence accession inferred.
+    evidence_ids:
+    - thesis
+  - name: conditions
+    value: Aerobic static 28 degrees C; CT-2, CT-13 and CT-15 media
+    definition: Casitone and phosphate/Mg medium variants retain initial pH and nominal
+      concentrations; target figures do not resolve vessel assignment.
+    evidence_ids:
+    - thesis
+  - name: pretreatment_and_endpoint
+    value: 20-22 day static harvest; decanting, repeated distilled-water washing,
+      room-temperature drying and grinding for XRD
+    definition: No boiling solid-agar extraction is imported into liquid-culture experiments.
+    evidence_ids:
+    - thesis
+  - name: controls
+    value: No phase-specific sterile/killed-cell results in inspected target-phase
+      sections
+    definition: Shaken cultures harvested at 10-12 days differ in exposure time. Separate
+      struvite cellophane experiments cannot establish minor-phase causality.
+    evidence_ids:
+    - thesis
+  - name: outcome
+    value: Source-assigned peaks and shoulders in a struvite-dominated powder pattern
+    definition: No quantitative refinement, phase-specific mass balance, isolated
+      pure yield or replicate-resolved detection frequency is inferred.
+    evidence_ids:
+    - thesis
+  - name: deployment
+    value: Laboratory mineral-association evidence
+    definition: Natural formation and industrial phosphorus/magnesium recovery are
+      not demonstrated.
+    evidence_ids:
+    - record
+    - thesis
+- assessment_id: interpretation
+  area: evidence
+  topic: Direct biological causality versus alternative chemistry
+  outcome: supported
+  summary: The longer static incubation may permit struvite aging/decomposition to
+    newberyite. Frazier gives other abiotic formation and hannayite-hydrolysis routes,
+    not a complete newberyite synthesis recipe or proof of which route occurred in
+    cultures. No target-specific enzyme/gene or obligatory biological pathway is inferred.
+  target_ids:
+  - cmmmech:newberyite
+  evidence_ids:
+  - record
+  - thesis
+  - frazier
+- assessment_id: provenance
+  area: provenance
+  topic: Exact bytes, genuine metadata and checks
+  outcome: supported
+  summary: Native inspect binds current record, sidecar, dossier pair and schema.
+    The tentative defense-year concern was rejected against explicit independent university
+    evidence; original record hashes remain unchanged.
+  target_ids:
+  - cmmmech:newberyite
+  evidence_ids:
+  - record
+  - history
+  - catalogue
+  - repository_metadata
+  - dedup
+  - notices
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- Source-assigned minority peaks/shoulders are not quantitative phase purity or an
+  isolated product yield.
+- Different harvest durations confound the static/shaken comparison; target-specific
+  biological causality remains unresolved.
+- Water washing and drying may affect unstable hydrate phases; actual phase change
+  in these samples was not measured.
+- Only claim-bearing sections of the 198-page thesis were reviewed; the inaccessible
+  1994 journal article was not treated as inspected evidence.
+- Frazier abstract/body hydrolysis-product wording conflicts; specific body observations
+  are retained without a generalized balanced reaction.
+notes:
+- 'Corrections: none. Tentative defense-date concern rejected by the official university
+  catalogue; 1994 defense and 1995 issued metadata are not a contradiction.'
+- Raw copyrighted originals and rendered figures remain outside Git.
+- Native review-check and whole-corpus exact scientific coverage remain subsequent
+  publication gates.
+tags:
+- round67
+- independent
+- newberyite
+- primary-figures

@@ -1,0 +1,541 @@
+# Independent scientific review of chrysotile
+
+- Review: 20261014T093325Z-chrysotile-round67-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T09:27:59.994739Z
+- Finished UTC: 2026-10-14T09:33:25.676127Z
+- Reviewer: codex /root/round67_phosphates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The exact record defensibly captures chrysotile identity and a controlled microbial dissolution test with no demonstrated Mg/Si enhancement. Original figure/text discrepancies, preparation limits and missing SI remain explicit. No supported curation defect found.
+
+## Scope And Provenance
+
+Full exact record and CREATE sidecar against claim-bearing primary evidence and authority identifiers.
+
+Selection: Assigned two separate mineral records, one per native record observation. Preliminary source/record reading before inspect is disclosed; final field-by-field judgment and figures followed inspect.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 4df8fe16fc1625d789d28bb7ec727d48785c1a26.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:chrysotile | data/records/chrysotile.yaml | maintained | Chrysotile |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Named record validation | passed | True | cmmmech:chrysotile | Reviewer execution in locked offline environment; one record, zero failures. |
+| Coordinator completed batch gate 1 | passed | True | cmmmech:chrysotile | Actual coordinator execution 2026-10-14T09:26:52.988700+00:00 to 2026-10-14T09:30:06.414696+00:00; receipt and original log hash checked independently. |
+| Coordinator completed batch gate 2 | passed | True | cmmmech:chrysotile | Actual coordinator execution 2026-10-14T09:30:06.414787+00:00 to 2026-10-14T09:30:12.029136+00:00; receipt and original log hash checked independently. |
+| Coordinator completed batch gate 3 | passed | True | cmmmech:chrysotile | Actual coordinator execution 2026-10-14T09:30:12.029235+00:00 to 2026-10-14T09:30:15.099901+00:00; receipt and original log hash checked independently. |
+
+## Scientific And Domain Assessments
+
+### Mineral species and specimen boundary
+
+identity: supported. Targets: cmmmech:chrysotile.
+
+IMA chrysotile species is distinct from lizardite, elemental magnesium, collective asbestos and tailings; processed natural sample is not assumed pure ideal end member.
+
+### Thermovibrio organism, biomass, conditions and controls
+
+evidence: supported. Targets: cmmmech:chrysotile.
+
+The source directly supports a tested living-culture dissolution interaction under the recorded conditions, with mineral-free cultures and uninoculated mineral-medium comparators. Species grounding does not establish strain identity.
+
+### Null dissolution enhancement and qualified biomass association
+
+quantity: supported. Targets: cmmmech:chrysotile.
+
+Figure2B and Conclusions show no demonstrated Mg/Si release advantage; Figure3D–F preserves crystallinity with altered tips in both arms. Figure4A overlapping Si/C/N is compatible with biosilicification, not intracellular uptake or quantitative silica recovery. Text values/plot/correction do not transparently reconcile and exact yields are withheld.
+
+### Exact bytes, source identity, history and completed gates
+
+provenance: supported. Targets: cmmmech:chrysotile.
+
+Native-inspected working-tree hashes match final bytes; CREATE sidecar and inline event accurately describe curator work. Named and actual final batch gates passed.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/chrysotile.yaml; Entire inspected record | supports | Final field-by-field judgment used exact native-inspected bytes. Preliminary reading preceded inspect; no target changed during review. |
+| history | history/records/chrysotile/2026-10-14T092135Z-codex-987c6d.yaml; Whole CREATE sidecar and inline curation_history | supports | Actual Codex GPT-6/codex actor, target and creation description agree. Reviewer made no record/history edit. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Definitions pages 1–2; chrysotile page45 and riebeckite page185 | supports | Original retained IMA pages visually inspected: chrysotile Mg3Si2O5(OH)4 Rd2007 s.p.; riebeckite vacancy-Na2(Fe(II)3Fe(III)2)Si8O22(OH)2 Rd2012 s.p. Special-procedure dates are not invented approval accessions. |
+| choi | https://doi.org/10.1128/aem.02048-22; Main Results, Discussion, Conclusions and Materials and Methods; figure captions1–4 | supports | Independently read scientific main body and claim-bearing methods/results/discussion in retained complete PMC HTML/text. Crocidolite culture-associated redox and transient dissolved-Fe increase, and chrysotile null bulk-release enhancement, are reported. Control-subtraction and Mg text/plot discrepancy remain unresolved; no SI tables adopted. |
+| metadata | https://pubmed.ncbi.nlm.nih.gov/37184266/; PubMed XML journal, title, DOI/PMCID and article dates | supports | Original PubMed record confirms author/title, 2023, AEM89(6), e02048-22, DOI10.1128/aem.02048-22 and PMCID10304897. No affecting notice was identified in this retained metadata or bounded live query, not an exhaustive notice guarantee. |
+| taxonomy | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=228745; Official retained species XML TaxId, ScientificName and Rank | supports | Species identity agrees. Type-material synonym lists do not authenticate the experimental stock at strain rank. |
+| dedup | /private/tmp/cmm-round67-phosphate-peer-reviews/dedup.txt; Repository records, research, history and reviews searched with hidden/ignored files included | context_only | Existing chrysotile-asbestos-tailings is a secondary resource and does not duplicate the mineral species. No machinewide or study-novelty absence claim. |
+| search | https://journals.asm.org/doi/10.1128/aem.02048-22; Live independent search first returned result sets on 2026-10-14 UTC | context_only | No affecting correction/retraction or direct independent contradiction surfaced in these result sets. Press-release toxicity/electron-transfer claims were not adopted. Main-study negative controls and persistent crystallinity remain strongest directly reviewed counterevidence. |
+| si_limit | https://github.com/CultureBotAI/CMMMech/issues/210; Prepared issue body, acquisition-alternatives.json and source dossier | context_only | Publisher403 and non-PDF PMC responses are documented access limits. Reviewer did not acquire/read original SI. Issue210 tracks recipes, tables, extraction/beam controls and numerical correction reconciliation; its body agrees with narrow accepted record claims. |
+| named | /private/tmp/cmm-round67-phosphate-peer-reviews/chrysotile-validation.log; Reviewer-executed complete named validation log | supports | Locked offline named validation exit0; one record checked, zero failures. |
+| batch | /private/tmp/cmm-round67-final-gates.json; Actual completed coordinator receipt and SHA-verified original log | supports | just check passed317 tests with3 skips; nonempty validation312 records0 failures; trusted-base history validation362 histories0 errors. Structural success does not establish scientific truth. |
+| figure1 | https://pmc.ncbi.nlm.nih.gov/articles/PMC10304897/; Original Figure 1; all panels visually inspected | supports | Original figure independently visually checked against its caption, axes and main text. Specific accepted/limited interpretations are assessed below. |
+| figure2 | https://pmc.ncbi.nlm.nih.gov/articles/PMC10304897/; Original Figure 2; all panels visually inspected | supports | Original figure independently visually checked against its caption, axes and main text. Specific accepted/limited interpretations are assessed below. |
+| figure3 | https://pmc.ncbi.nlm.nih.gov/articles/PMC10304897/; Original Figure 3; all panels visually inspected | supports | Original figure independently visually checked against its caption, axes and main text. Specific accepted/limited interpretations are assessed below. |
+| figure4 | https://pmc.ncbi.nlm.nih.gov/articles/PMC10304897/; Original Figure 4; all panels visually inspected | supports | Original figure independently visually checked against its caption, axes and main text. Specific accepted/limited interpretations are assessed below. |
+| prep | https://doi.org/10.1016/j.mex.2020.100937; Naturally occurring samples; grinding/filtration; sterilization; Measurements/data treatment | supports | Original methods text establishes Balangero provenance, wet 2-propanol grinding, sequential5/20 micrometre meshes and autoclaving. Curvature/bundling prevented reliable chrysotile length analysis; no universal length fraction or aspect-ratio preservation claimed. |
+| pollastri | https://doi.org/10.2451/2016PM655; Printed pages251–253, preparation and Tables1–3; original pages252–253 visually checked | context_only | Balangero nonideal formula matches Choi citation, and earlier specimen has accompanying minerals. Earlier impurity proportions and cryomilling used for structural refinement are not transferred to the 2023 experimental batch. Full refinement was not independently reanalysed. |
+
+## Limits And Additional Notes
+
+- Official Choi supplement was not acquired or independently assessed; exact recipes, source tables and beam controls remain unverified beyond main-text statements.
+- Chrysotile text Mg values, plotted bars and inoculum/negative-control correction bases remain unresolved; no quantitative yield or rate adopted.
+- Exact culture strain and assay batch impurity proportions are not independently authenticated.
+- Mapped biomass-associated silicon does not uniquely establish intracellular uptake or causation of dissolution.
+- Corrections required from this review: none. No target or history bytes changed.
+- The absent local SI artifact is an acquisition limitation, not a claim that the published supplement does not exist; follow-up issue210 remains open.
+- Raw originals stay outside Git; this review does not authorize future publication or direct author contact.
+- Initial inspect attempt used a wrong schema path and failed; successful inspect with src/cmmmech/schema/cmmmech.yaml captured the source hashes before final assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T093325Z-chrysotile-round67-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of chrysotile
+started_at: '2026-10-14T09:27:59.994739Z'
+finished_at: '2026-10-14T09:33:25.676127Z'
+reviewer:
+  identity: codex /root/round67_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Record, history and source dossier authored by /root/round67_new_frontier.
+    Reviewer independently read originals/figures and judged exact inspected bytes;
+    no target/history/dossier edits. Original acquisitions were shared; assessment
+    was independent. Reviewer authored separate phosphate records, not these targets.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The exact record defensibly captures chrysotile identity and a controlled
+  microbial dissolution test with no demonstrated Mg/Si enhancement. Original figure/text
+  discrepancies, preparation limits and missing SI remain explicit. No supported curation
+  defect found.
+source:
+  git_revision: 4df8fe16fc1625d789d28bb7ec727d48785c1a26
+  state: working_tree
+  inputs:
+  - path: data/records/chrysotile.yaml
+    sha256: a4e8e0dfcb054ce8bd0492938bc24c9383f64f9eea87574bf8f899fb1c3d5b19
+    role: target
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/chrysotile/2026-10-14T092135Z-codex-987c6d.yaml
+    sha256: 9db9fe3ce33fa4d7d54519fd83b10b6f601ed4298c4b4d02d3348d6bd7cb030a
+    role: context
+  - path: research/sources/round67-new-frontier/20261014T092355Z-source-investigation.json
+    sha256: cf7ca63baf04b82b523e11115c6bcdaf0b87f15a9883b46d22d5ca04d64705ca
+    role: context
+  - path: research/sources/round67-new-frontier/20261014T092355Z-source-investigation.md
+    sha256: a27e269302c1bef8ca2e34ed504fbf59375d03ab8e6eaefb89b17f8efba9fb22
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Full exact record and CREATE sidecar against claim-bearing primary
+    evidence and authority identifiers.
+  selection: Assigned two separate mineral records, one per native record observation.
+    Preliminary source/record reading before inspect is disclosed; final field-by-field
+    judgment and figures followed inspect.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:chrysotile
+targets:
+- kind: maintained
+  label: Chrysotile
+  owner_paths:
+  - path: data/records/chrysotile.yaml
+    repository: CultureBotAI/CMMMech
+    role: maintained record
+  path: data/records/chrysotile.yaml
+  target_id: cmmmech:chrysotile
+checks:
+- check_id: named
+  name: Named record validation
+  command: uv run --locked cmmmech validate data/records/chrysotile.yaml
+  status: passed
+  required: true
+  summary: Reviewer execution in locked offline environment; one record, zero failures.
+  target_ids:
+  - cmmmech:chrysotile
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Coordinator completed batch gate 1
+  command: just check
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T09:26:52.988700+00:00 to 2026-10-14T09:30:06.414696+00:00;
+    receipt and original log hash checked independently.
+  target_ids:
+  - cmmmech:chrysotile
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Coordinator completed batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T09:30:06.414787+00:00 to 2026-10-14T09:30:12.029136+00:00;
+    receipt and original log hash checked independently.
+  target_ids:
+  - cmmmech:chrysotile
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Coordinator completed batch gate 3
+  command: uv run --locked cmmmech validate-history --base 4df8fe16fc1625d789d28bb7ec727d48785c1a26
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T09:30:12.029235+00:00 to 2026-10-14T09:30:15.099901+00:00;
+    receipt and original log hash checked independently.
+  target_ids:
+  - cmmmech:chrysotile
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/chrysotile.yaml
+  locator: Entire inspected record
+  accessed_at: '2026-10-14T09:33:25.676127Z'
+  support: supports
+  summary: Final field-by-field judgment used exact native-inspected bytes. Preliminary
+    reading preceded inspect; no target changed during review.
+  snapshot_sha256: a4e8e0dfcb054ce8bd0492938bc24c9383f64f9eea87574bf8f899fb1c3d5b19
+- evidence_id: history
+  kind: record_content
+  reference: history/records/chrysotile/2026-10-14T092135Z-codex-987c6d.yaml
+  locator: Whole CREATE sidecar and inline curation_history
+  accessed_at: '2026-10-14T09:33:25.676127Z'
+  support: supports
+  summary: Actual Codex GPT-6/codex actor, target and creation description agree.
+    Reviewer made no record/history edit.
+  snapshot_sha256: 9db9fe3ce33fa4d7d54519fd83b10b6f601ed4298c4b4d02d3348d6bd7cb030a
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions pages 1–2; chrysotile page45 and riebeckite page185
+  accessed_at: '2026-10-14T09:33:25.676127Z'
+  support: supports
+  summary: 'Original retained IMA pages visually inspected: chrysotile Mg3Si2O5(OH)4
+    Rd2007 s.p.; riebeckite vacancy-Na2(Fe(II)3Fe(III)2)Si8O22(OH)2 Rd2012 s.p. Special-procedure
+    dates are not invented approval accessions.'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: choi
+  kind: primary_source
+  reference: https://doi.org/10.1128/aem.02048-22
+  locator: Main Results, Discussion, Conclusions and Materials and Methods; figure
+    captions1–4
+  accessed_at: '2026-10-14T09:33:25.676127Z'
+  support: supports
+  summary: Independently read scientific main body and claim-bearing methods/results/discussion
+    in retained complete PMC HTML/text. Crocidolite culture-associated redox and transient
+    dissolved-Fe increase, and chrysotile null bulk-release enhancement, are reported.
+    Control-subtraction and Mg text/plot discrepancy remain unresolved; no SI tables
+    adopted.
+  snapshot_sha256: ef77b46faacbab1d69208675a4913bb84e5fe9f42fb17e9d0230c886a3010105
+- evidence_id: metadata
+  kind: database
+  reference: https://pubmed.ncbi.nlm.nih.gov/37184266/
+  locator: PubMed XML journal, title, DOI/PMCID and article dates
+  accessed_at: '2026-10-14T09:33:25.676127Z'
+  support: supports
+  summary: Original PubMed record confirms author/title, 2023, AEM89(6), e02048-22,
+    DOI10.1128/aem.02048-22 and PMCID10304897. No affecting notice was identified
+    in this retained metadata or bounded live query, not an exhaustive notice guarantee.
+  snapshot_sha256: 81ae8f14fd1924234214a554caa62ce56037c1f8f7688ca41f40849ebe8412ab
+- evidence_id: taxonomy
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=228745
+  locator: Official retained species XML TaxId, ScientificName and Rank
+  accessed_at: '2026-10-14T09:33:25.676127Z'
+  support: supports
+  summary: Species identity agrees. Type-material synonym lists do not authenticate
+    the experimental stock at strain rank.
+  snapshot_sha256: 293a3da317edea540d9a5460214f5eddd57d925a6ef3fc9628f95dd000c822ea
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round67-phosphate-peer-reviews/dedup.txt
+  locator: Repository records, research, history and reviews searched with hidden/ignored
+    files included
+  accessed_at: '2026-10-14T09:33:25.676127Z'
+  support: context_only
+  summary: Existing chrysotile-asbestos-tailings is a secondary resource and does
+    not duplicate the mineral species. No machinewide or study-novelty absence claim.
+  search_scope: rg --no-ignore --hidden --follow -n -i 'chrysotile|riebeckite|crocidolite|10.1128/aem.02048-22'
+    data/records research history reviews; relevant owner references inspected.
+  snapshot_sha256: 1e4f2fde32ba5aa2880da6994cb396597b34ee2ec973291c9bd8c885681ee931
+- evidence_id: search
+  kind: search
+  reference: https://journals.asm.org/doi/10.1128/aem.02048-22
+  locator: Live independent search first returned result sets on 2026-10-14 UTC
+  accessed_at: '2026-10-14T09:33:25.676127Z'
+  support: context_only
+  summary: No affecting correction/retraction or direct independent contradiction
+    surfaced in these result sets. Press-release toxicity/electron-transfer claims
+    were not adopted. Main-study negative controls and persistent crystallinity remain
+    strongest directly reviewed counterevidence.
+  search_scope: 'Queries: "10.1128/aem.02048-22" correction retraction erratum; "Thermovibrio
+    ammonificans" chrysotile magnesium silicon biosilicification; "Deferrisoma palaeochoriense"
+    crocidolite reduction contradiction. First batches only; no pagination, domain
+    or date restriction.'
+- evidence_id: si_limit
+  kind: search
+  reference: https://github.com/CultureBotAI/CMMMech/issues/210
+  locator: Prepared issue body, acquisition-alternatives.json and source dossier
+  accessed_at: '2026-10-14T09:33:25.676127Z'
+  support: context_only
+  summary: Publisher403 and non-PDF PMC responses are documented access limits. Reviewer
+    did not acquire/read original SI. Issue210 tracks recipes, tables, extraction/beam
+    controls and numerical correction reconciliation; its body agrees with narrow
+    accepted record claims.
+  search_scope: Reviewed curator acquisition-alternatives.json publisher and PMC URLs
+    plus prepared issue210 and dossier describing EuropePMC failure; no fresh supplement
+    download attempt by this reviewer and no existence-absence inference.
+  snapshot_sha256: 0f50b1c47c7cda2c429e7d0997362ea0502d7cea1f897692ee332574fd1db32e
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round67-phosphate-peer-reviews/chrysotile-validation.log
+  locator: Reviewer-executed complete named validation log
+  accessed_at: '2026-10-14T09:33:25.676127Z'
+  support: supports
+  summary: Locked offline named validation exit0; one record checked, zero failures.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round67-final-gates.json
+  locator: Actual completed coordinator receipt and SHA-verified original log
+  accessed_at: '2026-10-14T09:33:25.676127Z'
+  support: supports
+  summary: just check passed317 tests with3 skips; nonempty validation312 records0
+    failures; trusted-base history validation362 histories0 errors. Structural success
+    does not establish scientific truth.
+  snapshot_sha256: 082a605db5c68ab999281d596f4971f8cfef0db72f37635dbe375c1470852de2
+- evidence_id: figure1
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC10304897/
+  locator: Original Figure 1; all panels visually inspected
+  accessed_at: '2026-10-14T09:33:25.676127Z'
+  support: supports
+  summary: Original figure independently visually checked against its caption, axes
+    and main text. Specific accepted/limited interpretations are assessed below.
+  snapshot_sha256: 2ef74904ffae8eb6b55a23eddb20aeefb5216d71a820044f6299dbbf974ecf5d
+- evidence_id: figure2
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC10304897/
+  locator: Original Figure 2; all panels visually inspected
+  accessed_at: '2026-10-14T09:33:25.676127Z'
+  support: supports
+  summary: Original figure independently visually checked against its caption, axes
+    and main text. Specific accepted/limited interpretations are assessed below.
+  snapshot_sha256: ab24a1e23ab6595b0a5b83af4e22ea0fbe776ac68c48461f483ac416bb57a026
+- evidence_id: figure3
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC10304897/
+  locator: Original Figure 3; all panels visually inspected
+  accessed_at: '2026-10-14T09:33:25.676127Z'
+  support: supports
+  summary: Original figure independently visually checked against its caption, axes
+    and main text. Specific accepted/limited interpretations are assessed below.
+  snapshot_sha256: 58d3275dabe9f119fc1205024c052f176e703a0515e79e4c329b5cdcb019fcd3
+- evidence_id: figure4
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC10304897/
+  locator: Original Figure 4; all panels visually inspected
+  accessed_at: '2026-10-14T09:33:25.676127Z'
+  support: supports
+  summary: Original figure independently visually checked against its caption, axes
+    and main text. Specific accepted/limited interpretations are assessed below.
+  snapshot_sha256: 47ea66313625d6fe997a8b8dfc0ac1652d1d6c981b65dec3a3dc7f40fb4fab08
+- evidence_id: prep
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.mex.2020.100937
+  locator: Naturally occurring samples; grinding/filtration; sterilization; Measurements/data
+    treatment
+  accessed_at: '2026-10-14T09:33:25.676127Z'
+  support: supports
+  summary: Original methods text establishes Balangero provenance, wet 2-propanol
+    grinding, sequential5/20 micrometre meshes and autoclaving. Curvature/bundling
+    prevented reliable chrysotile length analysis; no universal length fraction or
+    aspect-ratio preservation claimed.
+  snapshot_sha256: 7b4f8e87e22944bee69a61fc60cf54a7c7bea1dd103da790f4c461a29d61c50f
+- evidence_id: pollastri
+  kind: primary_source
+  reference: https://doi.org/10.2451/2016PM655
+  locator: Printed pages251–253, preparation and Tables1–3; original pages252–253
+    visually checked
+  accessed_at: '2026-10-14T09:33:25.676127Z'
+  support: context_only
+  summary: Balangero nonideal formula matches Choi citation, and earlier specimen
+    has accompanying minerals. Earlier impurity proportions and cryomilling used for
+    structural refinement are not transferred to the 2023 experimental batch. Full
+    refinement was not independently reanalysed.
+  snapshot_sha256: a17de72112ddacab9fcc4fc946cb058d54c2ef623e2f8ffd96ffae2287bef903
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral species and specimen boundary
+  outcome: supported
+  summary: IMA chrysotile species is distinct from lizardite, elemental magnesium,
+    collective asbestos and tailings; processed natural sample is not assumed pure
+    ideal end member.
+  target_ids:
+  - cmmmech:chrysotile
+  evidence_ids:
+  - record
+  - ima
+  - dedup
+  - prep
+  - pollastri
+  dimensions:
+  - name: material_form
+    value: Prepared Balangero chrysotile in a laboratory assay
+    definition: Nominal5–20 micrometre fraction does not verify every fibre length.
+    evidence_ids:
+    - prep
+  - name: criticality
+    value: No jurisdiction/list/edition asserted
+    definition: No constituent designation inherited; not a universal noncritical
+      verdict.
+    evidence_ids:
+    - record
+- assessment_id: experiment
+  area: evidence
+  topic: Thermovibrio organism, biomass, conditions and controls
+  outcome: supported
+  summary: The source directly supports a tested living-culture dissolution interaction
+    under the recorded conditions, with mineral-free cultures and uninoculated mineral-medium
+    comparators. Species grounding does not establish strain identity.
+  target_ids:
+  - cmmmech:chrysotile
+  evidence_ids:
+  - record
+  - choi
+  - taxonomy
+  - prep
+  dimensions:
+  - name: organism_and_biomass
+    value: Living Thermovibrio ammonificans cultures; speciesNCBITaxon228745
+    definition: Stock/strain identity independently unauthenticated.
+    evidence_ids:
+    - choi
+    - taxonomy
+  - name: conditions
+    value: 1g/L,25mL Mg/Ca-free modifiedSME,75°C,pH5.5,2wt%NaCl,H2/CO2(80:20,0.2MPa),about20mMKNO3,oneweek,n=3
+    definition: Nitrate is terminal electron acceptor; inoculum contributes Mg.
+    evidence_ids:
+    - choi
+  - name: analysis
+    value: Centrifuged0.2-micrometre filtrates versus washed/air-dried microscopy
+      solids
+    definition: Bulk aqueous release and mapped biomass are different endpoints.
+    evidence_ids:
+    - choi
+- assessment_id: outcome
+  area: quantity
+  topic: Null dissolution enhancement and qualified biomass association
+  outcome: supported
+  summary: Figure2B and Conclusions show no demonstrated Mg/Si release advantage;
+    Figure3D–F preserves crystallinity with altered tips in both arms. Figure4A overlapping
+    Si/C/N is compatible with biosilicification, not intracellular uptake or quantitative
+    silica recovery. Text values/plot/correction do not transparently reconcile and
+    exact yields are withheld.
+  target_ids:
+  - cmmmech:chrysotile
+  evidence_ids:
+  - record
+  - choi
+  - figure2
+  - figure3
+  - figure4
+  - si_limit
+  dimensions:
+  - name: deployment
+    value: Laboratory interaction with null enhancement result
+    definition: No detoxification, fibre destruction, purified product or industrial
+      recovery demonstrated.
+    evidence_ids:
+    - choi
+    - figure3
+  - name: numerical_scope
+    value: No exact yield or rate accepted
+    definition: Unavailable SI and inconsistent correction basis remain explicit.
+    evidence_ids:
+    - record
+    - choi
+    - figure2
+    - si_limit
+- assessment_id: provenance
+  area: provenance
+  topic: Exact bytes, source identity, history and completed gates
+  outcome: supported
+  summary: Native-inspected working-tree hashes match final bytes; CREATE sidecar
+    and inline event accurately describe curator work. Named and actual final batch
+    gates passed.
+  target_ids:
+  - cmmmech:chrysotile
+  evidence_ids:
+  - record
+  - history
+  - metadata
+  - search
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- Official Choi supplement was not acquired or independently assessed; exact recipes,
+  source tables and beam controls remain unverified beyond main-text statements.
+- Chrysotile text Mg values, plotted bars and inoculum/negative-control correction
+  bases remain unresolved; no quantitative yield or rate adopted.
+- Exact culture strain and assay batch impurity proportions are not independently
+  authenticated.
+- Mapped biomass-associated silicon does not uniquely establish intracellular uptake
+  or causation of dissolution.
+notes:
+- 'Corrections required from this review: none. No target or history bytes changed.'
+- The absent local SI artifact is an acquisition limitation, not a claim that the
+  published supplement does not exist; follow-up issue210 remains open.
+- Raw originals stay outside Git; this review does not authorize future publication
+  or direct author contact.
+- Initial inspect attempt used a wrong schema path and failed; successful inspect
+  with src/cmmmech/schema/cmmmech.yaml captured the source hashes before final assessment.
+tags:
+- round67
+- independent
+- chrysotile
+- original-figures
+```
