@@ -8,10 +8,15 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 379 material records.
+The catalogue currently contains 384 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Gold](data/records/gold.yaml) | Stock-dependent bacterial particle formation in a comparative laboratory study | Commercial-stock damage and no-visible-particle outcomes; proposed chemistry and no recovered-product yield |
+| [Chernikovite](data/records/chernikovite.yaml) | Diffraction-assigned uranyl phosphate from filtered fungal phosphate-rock broth | Upstream microbial conditioning, recipe and dilution gaps; no phase-pure product yield |
+| [Pyroaurite](data/records/pyroaurite.yaml) | Phase assignment in both inoculated and uninoculated tailings plots | Pre-existing phase, unmatched nutrients and unreplicated plots prevent a microbial-enhancement claim |
+| [Hydrotalcite](data/records/hydrotalcite.yaml) | Mineral identity and field association with source-interpreted biofilms | Mixed-rock phase and isotope measurements do not establish microbial formation |
+| [Waste X-ray films](data/records/waste-x-ray-films.yaml) | Microbial-enzyme stripping and separate thermal silver isolation | Hydrolysate assays and product purity are not total-inventory recovery yields |
 | [Phlogopite](data/records/phlogopite.yaml) | Fungal-associated surface alteration of a characterized natural mica | No significant potassium-concentration increase over the depleted control; missing aged abiotic controls |
 | [Stevensite](data/records/stevensite.yaml) | Community-associated carbonate coating and separate abiotic null experiments | Questionable IMA status, uncertain synthetic phase assignment, unmatched controls and conflicting solution values |
 | [Sauconite](data/records/sauconite.yaml) | Abiotic hydrothermal formation of a characterized Zn-rich smectite | Temperature-dependent mixed products and unquantified amorphous components; no microbial mechanism |

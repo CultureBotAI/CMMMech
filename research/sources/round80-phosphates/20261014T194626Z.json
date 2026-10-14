@@ -1,0 +1,614 @@
+{
+  "timestamp": "2026-10-14T19:46:26.785627+00:00",
+  "worktree": "/private/tmp/CMMMech-expansion-round80-20261014",
+  "trusted_base": "6ea9ddfa2cf6bd74a700186cb3e8251cd51eff58",
+  "scope": "Bounded uranium-phosphate investigation; one accepted candidate pending independent review. No global absence or literature-exhaustion claim.",
+  "skills": [
+    ".claude/skills/cmmmech-add-record/SKILL.md",
+    ".claude/skills/cmmmech-discover-sources/SKILL.md"
+  ],
+  "selected": [
+    {
+      "record": "data/records/chernikovite.yaml",
+      "doi": "10.1039/C8RA01344F",
+      "status": "curated_pending_independent_review",
+      "primary_scope": "Filtered fungal phosphate-rock broth precipitation; source-assigned chernikovite diffraction, distinct whole-culture uranium assay.",
+      "freeze": {
+        "timestamp": "2026-10-14T19:44:48.381853+00:00",
+        "worktree": "/private/tmp/CMMMech-expansion-round80-20261014",
+        "base": "6ea9ddfa2cf6bd74a700186cb3e8251cd51eff58",
+        "files": [
+          {
+            "path": "data/records/chernikovite.yaml",
+            "sha256": "0d213c86c8df4d665d8c70a3b9e180101f972c9856add64c4c84766a778d1bca"
+          },
+          {
+            "path": "history/records/chernikovite/2026-10-14T194426Z-codex-bfb285.yaml",
+            "sha256": "8d7fce32079f32093944d0e5c2fc14c3f2438b0fafda9f68bc5f78ad83d85d2f"
+          }
+        ]
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "candidate": "saléeite",
+      "doi": "10.3389/fmicb.2021.676391",
+      "reason": "Complete original 13-page PDF/XML and all7mainfigures acquired. EDS/FTIR only, explicit saleeite-like assignment and no diffraction or hydration determination; Mg/U/P co-occurrence insufficient for exact species. No record/history."
+    },
+    {
+      "candidate": "meta-autunite",
+      "issue": 120,
+      "doi": "10.2138/am.2008.2836",
+      "reason": "Read exact issue120 and priorround36/69/74 source reports. Existing missingoriginalgraphics remain unresolved; unchanged deniedRG/MSA/FIU routes not downloaded again. A webopen to previously seen FIU9627 returned403 before priorattempt recognition; documented, no successfulacquisition. New CiteseerFIUmirror returned404. No owner/history."
+    },
+    {
+      "candidate": "torbernite",
+      "reason": "Bounded initial searches produced no selected complete primary exactphase experiment; not a claim of literature absence."
+    }
+  ],
+  "queries": {
+    "provider": "web search",
+    "date_utc": "2026-10-14",
+    "exact_queries": [
+      "autunite microbial reduction uranium phosphate full text Shewanella",
+      "torbernite microbial biomineralization fungi uranium phosphate full text",
+      "saleite bacteria uranium phosphate biomineralization original",
+      "\"PMC8313988\" DOI",
+      "\"C8RA01344F\" chernikovite controls supplement",
+      "\"Bacterially enhanced dissolution of meta-autunite\" pdf Smeaton 2008",
+      "\"10.1039/C8RA01344F\" correction erratum retraction chernikovite",
+      "\"10.3389/fmicb.2021.676391\" correction saléeite XRD",
+      "\"saléeite\" \"Bacillus\" mineralization XRD",
+      "site:ncbi.nlm.nih.gov \"Penicillium funiculosum\" taxonomy",
+      "\"chernikovite\" \"Hu\" \"2018\" dissolution stability criticism",
+      "\"10.1039/c8ra01344f\" \"correction\"",
+      "\"10.3389/fmicb.2021.676391\" \"correction\""
+    ],
+    "limits": "Returned top results only; no date or domain filters. Current Crossref metadata and primary publisher landing pages checked. No targeted correction matched in those returns; not proof of absence."
+  },
+  "dedup": {
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-n",
+      "-i",
+      "-g",
+      "*.yaml",
+      "-g",
+      "*.json",
+      "-g",
+      "*.md",
+      "-g",
+      "*.txt",
+      "chernikovite|saleeite|saléeite|c8ra01344f|676391|14eed711",
+      "data/records",
+      "research",
+      "reviews",
+      "history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history",
+      "/private/tmp/cmm-round36-autunite-research",
+      "/private/tmp/cmm-round69-meta-autunite-research",
+      "/private/tmp/cmm-round74-phosphates-research"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "bytes": 167197
+  },
+  "acquisitions": [
+    {
+      "filename": "zhong2021.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8313988/fullTextXML",
+      "started_at": "2026-10-14T19:39:19.917314+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8313988/fullTextXML",
+      "content_type": "application/xml",
+      "bytes": 108773,
+      "sha256": "ca8ae34fc946ec7483075f064a192c7da6e83f6b6dcb8418f71e7103ada7ce86",
+      "pdf": false,
+      "finished_at": "2026-10-14T19:39:21.371613+00:00"
+    },
+    {
+      "filename": "zhong2021.pdf",
+      "url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2021.676391/pdf",
+      "started_at": "2026-10-14T19:39:19.918672+00:00",
+      "status": 200,
+      "final_url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2021.676391/pdf",
+      "content_type": "application/pdf",
+      "bytes": 3906611,
+      "sha256": "b4029aaf5ed0dfe4ccb1901b7159b353390e1268eee5c2768649a965209d8d52",
+      "pdf": true,
+      "finished_at": "2026-10-14T19:39:21.558259+00:00"
+    },
+    {
+      "filename": "hu2018.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9079836/fullTextXML",
+      "started_at": "2026-10-14T19:39:19.919272+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9079836/fullTextXML",
+      "content_type": "application/xml",
+      "bytes": 67953,
+      "sha256": "f0be74daa9345676b11efdda42cb92fa75d1ca60ca1e3fa2dfff7e0171bfbec3",
+      "pdf": false,
+      "finished_at": "2026-10-14T19:39:21.319813+00:00"
+    },
+    {
+      "filename": "hu2018.pdf",
+      "url": "https://pubs.rsc.org/en/content/articlepdf/2018/ra/c8ra01344f",
+      "started_at": "2026-10-14T19:39:19.919555+00:00",
+      "error": "<HTTPError 403: 'Forbidden'>",
+      "finished_at": "2026-10-14T19:39:20.001999+00:00"
+    },
+    {
+      "filename": "crossref-zhong.json",
+      "url": "https://api.crossref.org/works/10.3389/fmicb.2021.676391",
+      "started_at": "2026-10-14T19:39:19.919855+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.3389/fmicb.2021.676391",
+      "content_type": "application/json",
+      "bytes": 19117,
+      "sha256": "fd54c9ea64410be631c9e26d27a38b8407511bfd1cf2ec58bace9fd4e84adffc",
+      "pdf": false,
+      "finished_at": "2026-10-14T19:39:20.290243+00:00"
+    },
+    {
+      "filename": "crossref-hu.json",
+      "url": "https://api.crossref.org/works/10.1039/C8RA01344F",
+      "started_at": "2026-10-14T19:39:19.920165+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1039/C8RA01344F",
+      "content_type": "application/json",
+      "bytes": 17715,
+      "sha256": "5c3529acd9a2f4a40ecf5621c72ed1621bdd91345e2ae07e84a51c6a8bc84d79",
+      "pdf": false,
+      "finished_at": "2026-10-14T19:39:20.295476+00:00"
+    },
+    {
+      "filename": "hu2018-media.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9079836/supplementaryFiles",
+      "started_at": "2026-10-14T19:40:24.389201+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9079836/supplementaryFiles",
+      "content_type": "application/zip",
+      "bytes": 1018058,
+      "sha256": "42498fc51108f139a9a54d473bc32b846d17ab752773e12af9267a46ba1ac568",
+      "pdf": false,
+      "finished_at": "2026-10-14T19:40:39.666582+00:00"
+    },
+    {
+      "filename": "zhong2021-media.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8313988/supplementaryFiles",
+      "started_at": "2026-10-14T19:40:24.390547+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8313988/supplementaryFiles",
+      "content_type": "application/zip",
+      "bytes": 1132559,
+      "sha256": "ea1ab2abd6ee91625e3e3bc14ef8c66d9deb041cea9180e8a405128f35efffee",
+      "pdf": false,
+      "finished_at": "2026-10-14T19:40:41.907888+00:00"
+    },
+    {
+      "filename": "handbook-chernikovite.pdf",
+      "url": "https://www.handbookofmineralogy.org/pdfs/chernikovite.pdf",
+      "started_at": "2026-10-14T19:40:24.391099+00:00",
+      "status": 200,
+      "final_url": "https://www.handbookofmineralogy.org/pdfs/chernikovite.pdf",
+      "content_type": "application/pdf",
+      "bytes": 51645,
+      "sha256": "308ef7c8b1cc82ddfe9c922fc21801d1b06dcba494024c1bef684930c977f913",
+      "pdf": true,
+      "finished_at": "2026-10-14T19:40:24.690083+00:00"
+    },
+    {
+      "filename": "handbook-saleeite.pdf",
+      "url": "https://www.handbookofmineralogy.org/pdfs/saleeite.pdf",
+      "started_at": "2026-10-14T19:40:24.391485+00:00",
+      "status": 200,
+      "final_url": "https://www.handbookofmineralogy.org/pdfs/saleeite.pdf",
+      "content_type": "application/pdf",
+      "bytes": 53799,
+      "sha256": "d36c39b46e1a8ef7b983b51127513ae8aed03900aa7bf2e29aaf194d07e555f1",
+      "pdf": true,
+      "finished_at": "2026-10-14T19:40:24.689960+00:00"
+    },
+    {
+      "filename": "fiu-citeseer.pdf",
+      "url": "https://citeseerx.ist.psu.edu/document?doi=14eed711e60266aed026165f5666cede2c7ed9c5&repid=rep1&type=pdf",
+      "started_at": "2026-10-14T19:40:24.391836+00:00",
+      "error": "<HTTPError 404: 'NOT FOUND'>",
+      "finished_at": "2026-10-14T19:40:32.802408+00:00"
+    },
+    {
+      "filename": "hu2018-rsc-main.pdf",
+      "url": "https://pubs.rsc.org/en/content/getauthorversionpdf/C8RA01344F",
+      "started_at": "2026-10-14T19:41:37.378255+00:00",
+      "error": "<HTTPError 403: 'Forbidden'>",
+      "finished_at": "2026-10-14T19:41:37.468222+00:00"
+    },
+    {
+      "filename": "hu2018-pmc-main.pdf",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9079836/pdf/RA-008-C8RA01344F.pdf",
+      "started_at": "2026-10-14T19:41:37.379104+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9079836/pdf/RA-008-C8RA01344F.pdf",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 1817,
+      "sha256": "cf60ed262fa323d5f73ec53caa99caa38a9f81e6bbdf7612f30bdc42cf4735cd",
+      "pdf": false,
+      "finished_at": "2026-10-14T19:41:37.555417+00:00"
+    },
+    {
+      "filename": "hu2018-esi.pdf",
+      "url": "https://www.rsc.org/suppdata/c8/ra/c8ra01344f/c8ra01344f1.pdf",
+      "started_at": "2026-10-14T19:41:37.379411+00:00",
+      "error": "<HTTPError 404: 'Not Found'>",
+      "finished_at": "2026-10-14T19:41:37.810332+00:00"
+    },
+    {
+      "filename": "ncbi-28572.xml",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=28572&retmode=xml",
+      "started_at": "2026-10-14T19:41:37.379725+00:00",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=28572&retmode=xml",
+      "content_type": "text/xml; charset=UTF-8",
+      "bytes": 4806,
+      "sha256": "ac9f37478e466a21ab7134494e6e9c14143efe1f43cda2ef093e8425c6e1497a",
+      "pdf": false,
+      "finished_at": "2026-10-14T19:41:37.615427+00:00"
+    },
+    {
+      "filename": "hu2018-original.pdf",
+      "url": "https://pdfs.semanticscholar.org/a323/49d1f09fca24fed833f4b29d00eb234866c7.pdf",
+      "started_at": "2026-10-14T19:43:07.321571+00:00",
+      "status": 200,
+      "final_url": "https://pdfs.semanticscholar.org/a323/49d1f09fca24fed833f4b29d00eb234866c7.pdf",
+      "content_type": "application/pdf",
+      "bytes": 896015,
+      "sha256": "6392e979101296d7582afa9761dd613ccc0d2dba77e518eaecd5353ead32c4ff",
+      "pdf": true,
+      "finished_at": "2026-10-14T19:43:07.903469+00:00"
+    }
+  ],
+  "web_access_notes": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8313988/",
+      "result": "recaptcha checking-browser response, not original; legitimate EPMC/Frontiers alternatives used"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9079836/",
+      "result": "recaptcha response, not fulltext; officialEPMC and publicSemanticScholarmirror used"
+    },
+    {
+      "url": "https://pubs.rsc.org/en/content/articlehtml/2018/ra/c8ra01344f",
+      "result": "web403; articlelanding accessible withCCBY3.0license and exactDOI metadata"
+    }
+  ],
+  "primary_assessment": {
+    "hu2018": "Read complete seven-page original and full EPMC XML; visually inspected allsevenpages and allFigures1–7 in originalmedia. Tables1–2 are embeddedwithinFigure7, not missingXMLtables. Figure7b/Table2 specifically filteredbroth precipitation, Figure7a/Table1 calciumoxalate sideproduct; do not transfer towholeculture arm. Source originalPDF has no separate supplementaryscientificfile notice; EPMC supplementaryFiles archive containsmainimages, not separateSI. GuessedRSCESI route404 recorded, not proof noSIexists.",
+    "hu2018_limits": [
+      "No accession/strainauthentication of source Penicillium funiculosum; current28572Talaromyces mapping only.",
+      "Abstract5g/L rock versus Methods unqualifiedingredientmasses; no normalized recipe invented.",
+      "Filteredbroth10mL + uraniumsolution volumeunspecified; nominaladdition concentrations not fixedtotalmassbalance.",
+      "XRDreference pattern assignment supports speciesanalogue but no quantifiedphasepurity, hydrogenrefinement orspecifiedspecificloadingarm.",
+      "Figure2wholecultureheat-killedcontrol and transientUrebound mustnotbecome filteredbrothyield; lowaqueousU not recoveredmineralpercentage.",
+      "Organicacid/phosphatase/autolysis mechanisms inferred; no direct enzyme/metabolite measurements.",
+      "No measuredlongtermstability/industrialdeployment/regulatorycompliance adopted."
+    ],
+    "zhong2021": "Read complete XML main methods/results/discussion and acquired originalPDF; allsevenmainfigures visually inspected (Fig6 individually). Phaseclaim remains tentative; controlaround5% U removal; culturephosphate/sorptionphenomena do not prove precise hydratedspecies. Figure7 is a proposed model, not direct enzyme proof.",
+    "authority": "IMA2026September pages1/42/190 and fullHandbook originals; chernikoviteA1988sp and hydroniumformula, saleeiteG1932Mgdecahydrate. CurrentNCBI28572XML speciesmapping verified."
+  },
+  "counterevidence_handoff": [
+    {
+      "lead": "Citrate-promoted chernikovite dissolution",
+      "route": "https://www.clemson.edu/centers-institutes/neesrwm/publications.html",
+      "status": "Search discovery only, original not assessed; no stability-extension claim adopted."
+    },
+    {
+      "lead": "Microbial adaptations and biogeochemical cycling of uranium in polymetallic tailings",
+      "route": "https://www.sciencedirect.com/science/article/pii/S0304389423026183",
+      "status": "Search-discovered distinct microXRD study; deferred future extension, no claims imported."
+    }
+  ],
+  "reuse_terms": {
+    "hu2018": "Publisher landing: CC BY3.0; originalPDF matches. Raw kept outsideGit.",
+    "zhong2021": "CCBY per originalXML. Raw outsideGit.",
+    "handbook": "Allrightsreserved, sourceonly outsideGit.",
+    "ima": "Retained officialdocument terms; no rawredistribution."
+  },
+  "artifacts": [
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/acquisition-final.json",
+      "bytes": 528,
+      "sha256": "3eab8bc88dcfe730fa36833981c7ebd80bb83632f24d940060d8891ba04fa1c7"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/acquisition-initial.json",
+      "bytes": 2770,
+      "sha256": "29cee6a9460d5f0a66dc56e0a422520413bbecbbed288a137014fe64997719c6"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/acquisition-secondary.json",
+      "bytes": 2341,
+      "sha256": "03d6cc89ab6db8cec2ac74460dda2d0a45231bc4d1dc89c193ebb98c6181e067"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/acquisition-tertiary.json",
+      "bytes": 1630,
+      "sha256": "163f6c7a983a213b5da72da4070f9b6034ecd3c12b0089afaf47212816b517ce"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/crossref-hu.json",
+      "bytes": 17715,
+      "sha256": "5c3529acd9a2f4a40ecf5621c72ed1621bdd91345e2ae07e84a51c6a8bc84d79"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/crossref-zhong.json",
+      "bytes": 19117,
+      "sha256": "fd54c9ea64410be631c9e26d27a38b8407511bfd1cf2ec58bace9fd4e84adffc"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/dedup-candidates.json",
+      "bytes": 891,
+      "sha256": "c73d8c759549aa7c157ae9bd917705aa57c98b9c9e32c5c75e1efc982f1bd296"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/dedup-candidates.txt",
+      "bytes": 167197,
+      "sha256": "d378d660cf8a7b34224e2316bbf2ad77b6fbe5a83e0671e6fab09d2d24c270ee"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/dedup-main.txt",
+      "bytes": 3352521,
+      "sha256": "128322caeb9f80870f87aefe27089dd879042f5ae29c8697defac1c16f76d575"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/frozen-records.json",
+      "bytes": 512,
+      "sha256": "cf55274fddb295cb91c7d3f6b7b199171c768ec2a1da064a1da7b67fe894fbfd"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/handbook-chernikovite.pdf",
+      "bytes": 51645,
+      "sha256": "308ef7c8b1cc82ddfe9c922fc21801d1b06dcba494024c1bef684930c977f913"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/handbook-chernikovite.png",
+      "bytes": 178583,
+      "sha256": "578d12e6011006fdc8d74c0e70ff5785c5e4d0895b5c87f5b6f9e2816ff1601d"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/handbook-chernikovite.txt",
+      "bytes": 2813,
+      "sha256": "66b6c3803181fa59ad659b2a714c63c582461e4b7a8c3eaa03a1e9eaaa42c3c8"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/handbook-saleeite.pdf",
+      "bytes": 53799,
+      "sha256": "d36c39b46e1a8ef7b983b51127513ae8aed03900aa7bf2e29aaf194d07e555f1"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/handbook-saleeite.png",
+      "bytes": 239809,
+      "sha256": "61d596fbeb06a70de7d3d7be8dfd3799519a1826400f6055fe6af04dc2eba75a"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/handbook-saleeite.txt",
+      "bytes": 3775,
+      "sha256": "9d31e00bcca867e6f08314b465758ea0eaf843c0b92d0a2f6994fe3a3d96adf6"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/hu2018-media/c8ra01344f-f1.jpg",
+      "bytes": 85624,
+      "sha256": "43d052376a7aa3e943c3a4c16e7ddc3d400558d5d8e3b84ef56f9e7816da8c62"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/hu2018-media/c8ra01344f-f2.jpg",
+      "bytes": 232889,
+      "sha256": "e6a6eb42e8fe007057b6255c3adbbbfa80f3d5cf0a4f357f52b0a1bb3da63590"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/hu2018-media/c8ra01344f-f3.jpg",
+      "bytes": 161844,
+      "sha256": "6acaf0c300ccbf3e060cc6881dfce55339c53ff232db17db4ea180603788cf94"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/hu2018-media/c8ra01344f-f4.jpg",
+      "bytes": 60334,
+      "sha256": "13ef136c96323ec92ae2294ff427e9904e4365d793082a5b1645852a99ae14cd"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/hu2018-media/c8ra01344f-f5.jpg",
+      "bytes": 203929,
+      "sha256": "b19dfae3117900b9bc5e2400fed5c65073cb10c440e7256a6f443468ec7581c2"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/hu2018-media/c8ra01344f-f6.jpg",
+      "bytes": 116137,
+      "sha256": "338ab9c3fcfde6bba34422539c6b63ed3cfdedcc6361dfcb14f13172f63f4200"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/hu2018-media/c8ra01344f-f7.jpg",
+      "bytes": 179837,
+      "sha256": "57475ec3d3b46ae2924467f9778cd012420ace0e7fec6a41439be87c4ad421be"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/hu2018-media/c8ra01344f-ga.jpg",
+      "bytes": 107619,
+      "sha256": "691ddfd968f65bdd6aad1ca11c0b1f1f9191b1729ccd479cecfd22da1111d13b"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/hu2018-media.zip",
+      "bytes": 1018058,
+      "sha256": "42498fc51108f139a9a54d473bc32b846d17ab752773e12af9267a46ba1ac568"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/hu2018-original.pdf",
+      "bytes": 896015,
+      "sha256": "6392e979101296d7582afa9761dd613ccc0d2dba77e518eaecd5353ead32c4ff"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/hu2018-original.txt",
+      "bytes": 26225,
+      "sha256": "c2ef9429b5e78548c4081759259db231300965cbbe7e65a30c34436762225cf8"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/hu2018-page1.png",
+      "bytes": 206653,
+      "sha256": "959134cf10e0b7ce89d2dc4892b6bfdb5e89b153eb45e87ca8e1da25b2da3fee"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/hu2018-page2.png",
+      "bytes": 234535,
+      "sha256": "d4918214f4317258d0d9dcfb3d66ada4db574e829e1a2a3c05f0aedd2e0dbe77"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/hu2018-page3.png",
+      "bytes": 215781,
+      "sha256": "47fef374ebc12e3795106b773009c5bdfe73458e1cb8d6ddf6fd8f138355ce25"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/hu2018-page4.png",
+      "bytes": 349549,
+      "sha256": "65d1469ee02cab51d7142bef12e83938f3fc8603c6ce3d75867a6b2922c97614"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/hu2018-page5.png",
+      "bytes": 188839,
+      "sha256": "dff4596f0e4cabbc1a5fe3b21698dd497a7e15791cf32c0629e5603bdbaa9ffa"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/hu2018-page6.png",
+      "bytes": 243808,
+      "sha256": "82947682e36f40ef3eee1fd5d7f1daf78fa8fb3554e725257ced4d4829142e61"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/hu2018-page7.png",
+      "bytes": 122952,
+      "sha256": "3d7256c0ab397f5dee2552f36afdd0425a9e61ca5f607a3ed95a51561b1c4227"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/hu2018-pmc-main.pdf",
+      "bytes": 1817,
+      "sha256": "cf60ed262fa323d5f73ec53caa99caa38a9f81e6bbdf7612f30bdc42cf4735cd"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/hu2018.txt",
+      "bytes": 20131,
+      "sha256": "43dd3d56db0fecb60cddee68fed26d9225ae70a00755de5773b48050cd538803"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/hu2018.xml",
+      "bytes": 67953,
+      "sha256": "f0be74daa9345676b11efdda42cb92fa75d1ca60ca1e3fa2dfff7e0171bfbec3"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/ima-page190.png",
+      "bytes": 332101,
+      "sha256": "ea9cd392b85a20efa8385747b06e120214b0a2b1aeb64d1bc164509096d7573f"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/ima-page42.png",
+      "bytes": 275846,
+      "sha256": "e28eb1b183ed0e440ad8a461502278c9b12560bc660fc92be647b5dbef03cfd8"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/ncbi-28572.xml",
+      "bytes": 4806,
+      "sha256": "ac9f37478e466a21ab7134494e6e9c14143efe1f43cda2ef093e8425c6e1497a"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/zhong-figures-1.jpg",
+      "bytes": 201283,
+      "sha256": "124656eed01d10d9b2ba9fa52928637c26798269f9baee152aab87a711d2d2f3"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/zhong-figures-4.jpg",
+      "bytes": 245412,
+      "sha256": "f678c4c2211e68ae7c85f90130c5bfcf71f7c8980fbe1bed6a5177a0389b83bf"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/zhong-figures-7.jpg",
+      "bytes": 55602,
+      "sha256": "cc5fb7dd480af656c48938245fe18b83073249dc001875a47f5410d71a529a4a"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/zhong2021-media/fmicb-12-676391-g001.jpg",
+      "bytes": 157209,
+      "sha256": "7f88c6e0fa305c2d325b97c73cd1e8a5fbde14c24d9e2dac5fdb840e359c8cb3"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/zhong2021-media/fmicb-12-676391-g002.jpg",
+      "bytes": 105936,
+      "sha256": "d61d669f406d756a4e90acb64fa9660f008eef9cdd8ced93a77ffc77b0c0568d"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/zhong2021-media/fmicb-12-676391-g003.jpg",
+      "bytes": 105128,
+      "sha256": "1c4b682136ba547ddb45babe83c37db816b5eb7fb5fc47656269f435a7cc76dc"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/zhong2021-media/fmicb-12-676391-g004.jpg",
+      "bytes": 171568,
+      "sha256": "83871caa14ba246de4f8cd04cf29ce77373853dc6071085f88d69410665f2d82"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/zhong2021-media/fmicb-12-676391-g005.jpg",
+      "bytes": 144907,
+      "sha256": "bfbc631d11488ad7893b9d672e72f22a904c98a69499fb7cba58f775bee06b7d"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/zhong2021-media/fmicb-12-676391-g006.jpg",
+      "bytes": 278585,
+      "sha256": "bc9cfb8e287e61f39a26d309d2fe21377ce5b6e9f354e011e2afc697a58e1ec4"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/zhong2021-media/fmicb-12-676391-g007.jpg",
+      "bytes": 156918,
+      "sha256": "96bb2780ebcce8e92dbaf8fdb1c1bd6e9d6e06d4642a6a461a2d686ba83eff0e"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/zhong2021-media.zip",
+      "bytes": 1132559,
+      "sha256": "ea1ab2abd6ee91625e3e3bc14ef8c66d9deb041cea9180e8a405128f35efffee"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/zhong2021.pdf",
+      "bytes": 3906611,
+      "sha256": "b4029aaf5ed0dfe4ccb1901b7159b353390e1268eee5c2768649a965209d8d52"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/zhong2021.txt",
+      "bytes": 43527,
+      "sha256": "4488280e3bd65afb02fc9f6a6ca1b143bd41855ed5149fd70ffa95e626dd4414"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-phosphates-research/zhong2021.xml",
+      "bytes": 108773,
+      "sha256": "ca8ae34fc946ec7483075f064a192c7da6e83f6b6dcb8418f71e7103ada7ce86"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-iron-research/ima2026-09.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "origin": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "acquisition": "Reused prior retained official bytes; authority URL opened live this round; row42 and definitions rechecked, not a new download."
+    }
+  ],
+  "validation": {
+    "named_command": "uv run --locked cmmmech validate data/records/chernikovite.yaml --require-records",
+    "exit_code": 0,
+    "result": "Checked1record;0failed",
+    "log": "/private/tmp/cmm-round80-phosphates-research/named-validation.log"
+  },
+  "next_actions": [
+    "Independent exact-byte scientificreview of chernikovite; rootbatchgates before finalacceptance.",
+    "Keep120open pending inspectableSmeaton2008originalgraphics; do not equate newchernikovite workwithclosure.",
+    "Require mineral-specificdiffraction/hydration before admitting saléeite association asconfirmedphase.",
+    "Reassess citeddissolution/fieldstudies onlythroughcompleteprimary evidence."
+  ]
+}

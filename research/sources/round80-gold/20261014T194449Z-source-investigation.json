@@ -1,0 +1,400 @@
+{
+  "timestamp": "2026-10-14T19:44:49.683298+00:00",
+  "topic": "Round80 gold element and stock-dependent microbial particle formation",
+  "repository": "CultureBotAI/CMMMech",
+  "base": "6ea9ddfa2cf6bd74a700186cb3e8251cd51eff58",
+  "worktree": "/private/tmp/CMMMech-expansion-round80-20261014",
+  "scope": "Bounded element-owner discovery and claim-level primary review, not a full census of gold bioprocessing literature or current criticality lists. Relevant primary sections and original claim-bearing graphics were inspected; the full Hirth2024 JATS original, four original figure assets and official twelve-page supplement were acquired. Unrelated genetic-dose datasets were not imported.",
+  "query_provider": "web search tool, first returned result sets; no claim of exhaustive pagination",
+  "queries": [
+    {
+      "query": "Reith 2009 Mechanisms gold biomineralization Cupriavidus metallidurans 0904583106 PMC",
+      "date": "2026-10-14"
+    },
+    {
+      "query": "site.ebi.ac.uk chebi gold atom 29287",
+      "date": "2026-10-14"
+    },
+    {
+      "query": "\"0904583106SI.pdf\"",
+      "date": "2026-10-14"
+    },
+    {
+      "query": "\"Influence of Copper Resistance Determinants\" pdf",
+      "date": "2026-10-14"
+    },
+    {
+      "query": "\"Synergistic Toxicity of Copper and Gold Compounds\" pdf",
+      "date": "2026-10-14"
+    },
+    {
+      "query": "\"10.1128/aem.00146-24\" correction retraction",
+      "date": "2026-10-14"
+    },
+    {
+      "query": "\"10.1128/AEM.01679-17\" correction retraction",
+      "date": "2026-10-14"
+    },
+    {
+      "query": "\"Cupriavidus metallidurans\" gold nanoparticles \"commercially available\"",
+      "date": "2026-10-14"
+    }
+  ],
+  "dedup": {
+    "timestamp": "2026-10-14T19:37:44.025968+00:00",
+    "worktree": "/private/tmp/CMMMech-expansion-round80-20261014",
+    "base": "6ea9ddfa2cf6bd74a700186cb3e8251cd51eff58",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-n",
+      "-i",
+      "cmmmech:gold([^a-z-]|$)|gold atom|CHEBI:29287|0904583106|gold biomineralization|delftibactin",
+      "data",
+      "research",
+      "reviews",
+      ".claude"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "",
+    "scope": "Hidden and ignored files included, relevant symlinks followed within named corpus, research, review and local skill trees. No machine-wide absence claim. Source artifacts from current acquisition directory searched separately after download. Generic gold mentions and existing gold-mine-tailings owner do not identify the element owner."
+  },
+  "acquisitions": [
+    {
+      "file": "gold2017-supplementary.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5691418/supplementaryFiles",
+      "requested_at": "2026-10-14T19:41:44.477179+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5691418/supplementaryFiles",
+      "content_type": "application/xml",
+      "bytes": 296,
+      "sha256": "462559c85c828f5b920b9914798b75b6a93782f0e0317d4f5a971350d17bc483",
+      "assessment": "XML error says article is not open access; not a ZIP or acquired supplement."
+    },
+    {
+      "file": "gold2024-supplementary.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11022561/supplementaryFiles",
+      "requested_at": "2026-10-14T19:40:36.606688+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11022561/supplementaryFiles",
+      "content_type": "application/zip",
+      "bytes": 2795358,
+      "sha256": "61fcdc6ba2ec61f45e676483a99af1f311fa57e4b0fdbdf210c3d146d9bbba31"
+    },
+    {
+      "file": "gold2024-oa.xml",
+      "url": "https://pmc.ncbi.nlm.nih.gov/utils/oa/oa.fcgi?id=PMC11022561",
+      "requested_at": "2026-10-14T19:40:36.607451+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "file": "gold2017-supp-pmc.pdf",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5691418/bin/AEM.01679-17_zam999118161s1.pdf",
+      "requested_at": "2026-10-14T19:40:36.607658+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "file": "gold2017-crossref.json",
+      "url": "https://api.crossref.org/works/10.1128%2FAEM.01679-17",
+      "requested_at": "2026-10-14T19:40:36.607817+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1128%2FAEM.01679-17",
+      "content_type": "application/json",
+      "bytes": 16010,
+      "sha256": "18814fd0b4dffdcfdaa55ee915efa2651102473486681b3ccbe89e351459163b"
+    },
+    {
+      "file": "gold2024-crossref.json",
+      "url": "https://api.crossref.org/works/10.1128%2Faem.00146-24",
+      "requested_at": "2026-10-14T19:40:36.790915+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1128%2Faem.00146-24",
+      "content_type": "application/json",
+      "bytes": 17462,
+      "sha256": "17473f5b9a91ae18898bbdd54c91125006542c0d7e39415b28adf2171b75090f"
+    },
+    {
+      "file": "reith2009.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2764933/fullTextXML",
+      "requested_at": "2026-10-14T19:37:27.202829+00:00",
+      "error": "HTTP Error 500: "
+    },
+    {
+      "file": "reith2009.html",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2764933/",
+      "requested_at": "2026-10-14T19:37:27.203639+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2764933/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 21318,
+      "sha256": "68653827a423e4585a88b2d591f2d2f1ac3b1fdd4e40cb1036fcaef03f272582",
+      "assessment": "Challenge/error HTML; not an inspected original despite HTTP200 and a .pdf suffix."
+    },
+    {
+      "file": "gold2013.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3650554/fullTextXML",
+      "requested_at": "2026-10-14T19:37:27.203843+00:00",
+      "error": "HTTP Error 500: "
+    },
+    {
+      "file": "gold2017.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5691418/fullTextXML",
+      "requested_at": "2026-10-14T19:37:27.204052+00:00",
+      "error": "HTTP Error 500: "
+    },
+    {
+      "file": "chebi29287.json",
+      "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29287",
+      "requested_at": "2026-10-14T19:37:27.583439+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29287",
+      "content_type": "application/json",
+      "bytes": 5385,
+      "sha256": "d12cb0945362d7091dffa8390dba03d70964f7fa584f4dd3cd8e55a1359be358"
+    },
+    {
+      "file": "cupriavidus-taxonomy.xml",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=119219,266264",
+      "requested_at": "2026-10-14T19:37:28.372382+00:00",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=119219,266264",
+      "content_type": "text/xml; charset=UTF-8",
+      "bytes": 7858,
+      "sha256": "b1a94754b42654acfeab30b96dd9aa78fb4ccba19cb99204340f90f8680d00b2"
+    },
+    {
+      "file": "reith2009-crossref.json",
+      "url": "https://api.crossref.org/works/10.1073%2Fpnas.0904583106",
+      "requested_at": "2026-10-14T19:37:28.373261+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1073%2Fpnas.0904583106",
+      "content_type": "application/json",
+      "bytes": 14839,
+      "sha256": "357999327e8f9d18d85d953a7bc94515b3bf07072e7e2b49f9b3dbffc1251e61"
+    },
+    {
+      "file": "reith2009-institution.pdf",
+      "url": "https://research.itg.be/files/20227242/2009pnas17757.pdf",
+      "requested_at": "2026-10-14T19:38:33.620228+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "file": "gold2013-oa.xml",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC3650554",
+      "requested_at": "2026-10-14T19:38:33.621239+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "file": "gold2017-oa.xml",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC5691418",
+      "requested_at": "2026-10-14T19:38:33.621527+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "file": "reith2009-efetch.xml",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=2764933",
+      "requested_at": "2026-10-14T19:38:33.621765+00:00",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=2764933",
+      "content_type": "text/xml; charset=UTF-8",
+      "bytes": 12559,
+      "sha256": "0b48a2bc62cdd8e542ca204fc104c73b2145f1b2802a3366e136d858eb7afe12",
+      "assessment": "Metadata-only XML without article body; not accepted mechanism evidence."
+    },
+    {
+      "file": "gold2013-efetch.xml",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3650554",
+      "requested_at": "2026-10-14T19:38:33.848272+00:00",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3650554",
+      "content_type": "text/xml; charset=UTF-8",
+      "bytes": 9304,
+      "sha256": "2905f003d13927174fd50f87ca1cfad18651306b9dcbaabe838b54d9eed4e982",
+      "assessment": "Metadata-only XML without article body; not accepted mechanism evidence."
+    },
+    {
+      "file": "gold2017-efetch.xml",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=5691418",
+      "requested_at": "2026-10-14T19:38:33.895170+00:00",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=5691418",
+      "content_type": "text/xml; charset=UTF-8",
+      "bytes": 14440,
+      "sha256": "93a7805764fe4667e5a311063c2bce587767f1095b2bd0258313b4d8ac29726c",
+      "assessment": "Metadata-only XML without article body; not accepted mechanism evidence."
+    },
+    {
+      "file": "gold2024-halle.pdf",
+      "url": "https://opendata.uni-halle.de/bitstream/1981185920/119500/1/hirth-et-al-2024-a-gold-speciation-that-adds-a-second-layer-to-synergistic-gold-copper-toxicity-in-cupriavidus.pdf",
+      "requested_at": "2026-10-14T19:42:34.870983+00:00",
+      "status": 200,
+      "final_url": "https://opendata.uni-halle.de/bitstream/1981185920/119500/1/hirth-et-al-2024-a-gold-speciation-that-adds-a-second-layer-to-synergistic-gold-copper-toxicity-in-cupriavidus.pdf",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 3601,
+      "sha256": "3dd49345042a18e4c7bd7b4cdb04db61e22892f43410a170a0dc5fc134c9f1bc",
+      "assessment": "Challenge/error HTML; not an inspected original despite HTTP200 and a .pdf suffix."
+    },
+    {
+      "file": "gold2017-monash.pdf",
+      "url": "https://researchmgt.monash.edu/ws/portalfiles/portal/303830249/277952251_oa.pdf",
+      "requested_at": "2026-10-14T19:39:11.718985+00:00",
+      "status": 200,
+      "final_url": "https://researchmgt.monash.edu/ws/portalfiles/portal/303830249/277952251_oa.pdf",
+      "content_type": "application/pdf",
+      "bytes": 2230578,
+      "sha256": "1539a46a052ed14e09004de908bb81766927bc776993830cd3fe1b9ff662b527"
+    },
+    {
+      "file": "gold2024.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11022561/fullTextXML",
+      "requested_at": "2026-10-14T19:39:11.719706+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11022561/fullTextXML",
+      "content_type": "application/xml",
+      "bytes": 257837,
+      "sha256": "9928b8e907af5331eba359ac46f79523ff0907087ea5b606c7a82b48986919bd"
+    },
+    {
+      "file": "gold2017-supp.pdf",
+      "url": "https://journals.asm.org/doi/suppl/10.1128/aem.01679-17/suppl_file/zam999118161s1.pdf",
+      "requested_at": "2026-10-14T19:39:11.719890+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "file": "reith2009-supp.pdf",
+      "url": "https://www.pnas.org/doi/suppl/10.1073/pnas.0904583106/suppl_file/0904583106si.pdf",
+      "requested_at": "2026-10-14T19:39:11.720044+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "accepted_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round80-gold-research/gold2024.xml",
+      "sha256": "9928b8e907af5331eba359ac46f79523ff0907087ea5b606c7a82b48986919bd",
+      "bytes": 257837
+    },
+    {
+      "path": "/private/tmp/cmm-round80-gold-research/gold2024-supplementary.zip",
+      "sha256": "61fcdc6ba2ec61f45e676483a99af1f311fa57e4b0fdbdf210c3d146d9bbba31",
+      "bytes": 2795358
+    },
+    {
+      "path": "/private/tmp/cmm-round80-gold-research/gold2024-assets/aem.00146-24.f002.jpg",
+      "sha256": "5f887f43cd49f6330bda1dd1c48b250af0c5af0742663eee6bda150fee51b913",
+      "bytes": 204507
+    },
+    {
+      "path": "/private/tmp/cmm-round80-gold-research/gold2024-assets/aem.00146-24-s0001.pdf",
+      "sha256": "9dc1d76a3cbd17e752fd8f7ce198bd14a48874ae6eb3762a7c7fd5fa5badef1e",
+      "bytes": 2249709
+    },
+    {
+      "path": "/private/tmp/cmm-round80-gold-research/chebi29287.json",
+      "sha256": "d12cb0945362d7091dffa8390dba03d70964f7fa584f4dd3cd8e55a1359be358",
+      "bytes": 5385
+    },
+    {
+      "path": "/private/tmp/cmm-round80-gold-research/cupriavidus-taxonomy.xml",
+      "sha256": "b1a94754b42654acfeab30b96dd9aa78fb4ccba19cb99204340f90f8680d00b2",
+      "bytes": 7858
+    },
+    {
+      "path": "/private/tmp/cmm-round80-gold-research/gold2024-crossref.json",
+      "sha256": "17473f5b9a91ae18898bbdd54c91125006542c0d7e39415b28adf2171b75090f",
+      "bytes": 17462
+    }
+  ],
+  "authority_checks": {
+    "gold": "EBI OLS4 ChEBI:29287 label gold atom, formula Au and zero charge. This identifier does not identify Au(III) complexes or nanoparticle samples.",
+    "organism": "NCBI efetch:119219 species Cupriavidus metallidurans and266264 CH34 strain. Only species119219 asserted in owner; supplementary TableS4 identifies AE104 as the plasmid-free derivative ofCH34."
+  },
+  "claims": [
+    {
+      "claim": "Culture-associated source-assigned particles with old prepared stock",
+      "source": "10.1128/aem.00146-24",
+      "locators": [
+        "Results: No appearance of gold nanoparticles in the periplasm",
+        "Figure2A and caption",
+        "Methods: Bacterial strains and growth conditions",
+        "Methods: Transmission electron microscopy"
+      ],
+      "limits": "TEM assignment is not a new independent phase/valence or bulk product analysis; no matched cell-free/killed-cell comparison in the accepted microscopy series."
+    },
+    {
+      "claim": "Commercial-stock negative/damage outcome",
+      "source": "10.1128/aem.00146-24",
+      "locators": [
+        "Figure2B-D and caption",
+        "same Results subsection"
+      ],
+      "limits": "70h panelB differs from general72h methods and three-day prose; exposure/recovery arms remain separate. No population-level particle fraction, universal no-formation statement, or recovery yield."
+    },
+    {
+      "claim": "Experimental strain provenance",
+      "source": "official aem.00146-24-s0001.pdf",
+      "locators": [
+        "Supplementary TableS4, PDFp6"
+      ],
+      "limits": "AE104 genotype supported; speciesID does not identify derivative; other mutants not transferred to parent microscopy."
+    }
+  ],
+  "counterevidence": "The accepted2024 experiment itself supplies the directly relevant commercial-stock null/damage comparison. Discussion explicitly permits alternative causal directions between toxicity and lack of nanoparticle formation. Chlorine-preparation route, chloride/hydroxide speciation and respiratory/Cu-homeostasis pathways remain hypotheses in this curated observation.",
+  "correction_search": "Exact DOI correction/retraction web queries and Crossref relation/update fields checked on2026-10-14. No correction matching these two papers was returned and both Crossref relation mappings were empty; bounded search and metadata absence do not prove universal absence.",
+  "decisions": [
+    {
+      "priority": 1,
+      "material": "Gold",
+      "decision": "curate",
+      "reason": "Unambiguous element authority plus complete accessible2024 primary study with positive and negative outcomes."
+    },
+    {
+      "material": "Gold, earlier mechanism detail",
+      "decision": "defer expansion",
+      "reason": "Reith2009 and Wiesemann2013 metadata/search text inspected, but complete originals/supplements not acquired by attempted routes. Wiesemann2017 complete17page institutionalPDF read and Figures6-7/methods inspected as context, but officialSI acquisition unavailable. These earlier experiments are not imported into the accepted owner or counted as independent replications of Hirth2024."
+    }
+  ],
+  "licenses": {
+    "Hirth2024": "CC BY4.0 stated in originalJATS; raw artifacts still outsideGit.",
+    "Wiesemann2017": "AllRightsReserved stated on institutional version; outsideGit, context-only reading.",
+    "authority_data": "Only identifier facts summarized; source-specific terms not separately licensed for bulkredistribution."
+  },
+  "handoff": {
+    "record": "data/records/gold.yaml",
+    "sha256": "3041e16eaa6cdd500a1784cd9c2461511e0c98e37d218bc29abe56b3c4375bb4",
+    "history": [
+      "history/records/gold/2026-10-14T194328Z-codex-3c0536.yaml"
+    ],
+    "schema_need": "None: element/material context plus qualified microbial mechanism and support/partial/context_only evidence fit current contract. Quantities are prose assay conditions, not concentration-table mg/kg observations.",
+    "review": "Independent native inspect/save required on exact final bytes; current owner validation passed. Batch gates and independent assessment are future at this report timestamp."
+  },
+  "limitations": [
+    "Bounded source/discovery search; no exhaustion claim.",
+    "No criticality-list membership or industrial deployment inferred.",
+    "No total elemental recovery, particle purity or mechanistic necessity asserted.",
+    "Missing older evidence does not prevent the narrower complete2024 observation, and is not reported as newly verified."
+  ],
+  "selected_study_dedup": {
+    "timestamp": "2026-10-14T19:45:25.416122+00:00",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-n",
+      "-i",
+      "00146-24|01679-17|01951-12|0904583106|CHEBI:29287|cmmmech:gold([^a-z-]|$)",
+      "data",
+      "research",
+      "reviews",
+      ".claude"
+    ],
+    "exit_code": 0,
+    "matches_excluding_owned_new_record_and_dossier": [],
+    "all_stdout": "research/sources/round80-gold/20261014T194449Z-source-investigation.json:11:      \"query\": \"Reith 2009 Mechanisms gold biomineralization Cupriavidus metallidurans 0904583106 PMC\",\nresearch/sources/round80-gold/20261014T194449Z-source-investigation.json:19:      \"query\": \"\\\"0904583106SI.pdf\\\"\",\nresearch/sources/round80-gold/20261014T194449Z-source-investigation.json:31:      \"query\": \"\\\"10.1128/aem.00146-24\\\" correction retraction\",\nresearch/sources/round80-gold/20261014T194449Z-source-investigation.json:35:      \"query\": \"\\\"10.1128/AEM.01679-17\\\" correction retraction\",\nresearch/sources/round80-gold/20261014T194449Z-source-investigation.json:54:      \"cmmmech:gold([^a-z-]|$)|gold atom|CHEBI:29287|0904583106|gold biomineralization|delftibactin\",\nresearch/sources/round80-gold/20261014T194449Z-source-investigation.json:95:      \"url\": \"https://pmc.ncbi.nlm.nih.gov/articles/PMC5691418/bin/AEM.01679-17_zam999118161s1.pdf\",\nresearch/sources/round80-gold/20261014T194449Z-source-investigation.json:101:      \"url\": \"https://api.crossref.org/works/10.1128%2FAEM.01679-17\",\nresearch/sources/round80-gold/20261014T194449Z-source-investigation.json:104:      \"final_url\": \"https://api.crossref.org/works/10.1128%2FAEM.01679-17\",\nresearch/sources/round80-gold/20261014T194449Z-source-investigation.json:111:      \"url\": \"https://api.crossref.org/works/10.1128%2Faem.00146-24\",\nresearch/sources/round80-gold/20261014T194449Z-source-investigation.json:114:      \"final_url\": \"https://api.crossref.org/works/10.1128%2Faem.00146-24\",\nresearch/sources/round80-gold/20261014T194449Z-source-investigation.json:170:      \"url\": \"https://api.crossref.org/works/10.1073%2Fpnas.0904583106\",\nresearch/sources/round80-gold/20261014T194449Z-source-investigation.json:173:      \"final_url\": \"https://api.crossref.org/works/10.1073%2Fpnas.0904583106\",\nresearch/sources/round80-gold/20261014T194449Z-source-investigation.json:262:      \"url\": \"https://journals.asm.org/doi/suppl/10.1128/aem.01679-17/suppl_file/zam999118161s1.pdf\",\nresearch/sources/round80-gold/20261014T194449Z-source-investigation.json:268:      \"url\": \"https://www.pnas.org/doi/suppl/10.1073/pnas.0904583106/suppl_file/0904583106si.pdf\",\nresearch/sources/round80-gold/20261014T194449Z-source-investigation.json:285:      \"path\": \"/private/tmp/cmm-round80-gold-research/gold2024-assets/aem.00146-24.f002.jpg\",\nresearch/sources/round80-gold/20261014T194449Z-source-investigation.json:290:      \"path\": \"/private/tmp/cmm-round80-gold-research/gold2024-assets/aem.00146-24-s0001.pdf\",\nresearch/sources/round80-gold/20261014T194449Z-source-investigation.json:311:    \"gold\": \"EBI OLS4 ChEBI:29287 label gold atom, formula Au and zero charge. This identifier does not identify Au(III) complexes or nanoparticle samples.\",\nresearch/sources/round80-gold/20261014T194449Z-source-investigation.json:317:      \"source\": \"10.1128/aem.00146-24\",\nresearch/sources/round80-gold/20261014T194449Z-source-investigation.json:328:      \"source\": \"10.1128/aem.00146-24\",\nresearch/sources/round80-gold/20261014T194449Z-source-investigation.json:337:      \"source\": \"official aem.00146-24-s0001.pdf\",\nresearch/sources/round80-gold/20261014T194449Z-source-investigation.md:9:EBI resolves CHEBI:29287 to gold atom (Au, charge zero). NCBI resolves119219 to species Cupriavidus metallidurans;266264 identifies CH34, but the curated experimental strain is its plasmid-free derivative AE104, established by the official supplementary strain table. The owner therefore asserts the species ID and records derivative identity in context.\nresearch/sources/round80-gold/20261014T194449Z-source-investigation.md:13:[Hirth et al.2024](https://doi.org/10.1128/aem.00146-24) has a complete acquired JATS original, original figure assets and official twelve-page supplement. The relevant Results, Methods, Discussion, Figure2 and supplementary TableS4 were inspected. Figure2A shows source-assigned particles after72h with50micromolar of the previously prepared Au(III) stock. PanelsB-D retain the commercial-stock damage/no-visible-particle outcomes at their separate doses and exposure times. The70h caption is preserved rather than replaced by the general72h methods or three-day prose.\ndata/records/gold.yaml:1:id: cmmmech:gold\ndata/records/gold.yaml:9:- id: CHEBI:29287\ndata/records/gold.yaml:13:  title: ChEBI:29287, gold atom; Au, charge zero, resolved through the EBI Ontology Lookup\ndata/records/gold.yaml:15:  url: https://www.ebi.ac.uk/chebi/CHEBI:29287\ndata/records/gold.yaml:24:    toxicity in Cupriavidus metallidurans. Applied and Environmental Microbiology 90(4), e00146-24.\ndata/records/gold.yaml:25:    DOI 10.1128/aem.00146-24; complete JATS original and original graphics.\ndata/records/gold.yaml:26:  url: https://doi.org/10.1128/aem.00146-24\ndata/records/gold.yaml:29:  title: Hirth et al. (2024), supplementary tables and figures, aem.00146-24-s0001.pdf, 12\n",
+    "stderr": "",
+    "scope": "Hidden and ignored files included and relevant symlinks followed in named repository trees. Own new gold record/dossier excluded from novelty inference; no other selected-study references found if the retained other-match list is empty. Earlier referenced download corpus can only be extended from relevant matching reports; no machine-wide claim."
+  }
+}

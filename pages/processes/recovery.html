@@ -34,10 +34,10 @@
   <div>
     <label for="record-kind">Material Kind</label>
     <select id="record-kind">
-      <option value="">All kinds (10)</option>
-      <option value="element">Element (64)</option>
-      <option value="mineral">Mineral (176)</option>
-      <option value="secondary_resource">Secondary resource (75)</option>
+      <option value="">All kinds (11)</option>
+      <option value="element">Element (65)</option>
+      <option value="mineral">Mineral (179)</option>
+      <option value="secondary_resource">Secondary resource (76)</option>
       <option value="commodity">Commodity (32)</option>
       <option value="primary_resource">Primary resource (25)</option>
       <option value="mineral_group">Mineral group (7)</option>
@@ -48,12 +48,12 @@
     <select id="record-mechanism">
       <option value="">All processes</option>
       <option value="bioleaching">Bioleaching (135)</option>
-      <option value="biomineralization">Biomineralization (77)</option>
+      <option value="biomineralization">Biomineralization (79)</option>
       <option value="redox_transformation">Redox transformation (42)</option>
       <option value="biosorption">Biosorption (12)</option>
-      <option value="separation">Separation (12)</option>
-      <option value="recovery">Recovery (10)</option>
-      <option value="other">Other (45)</option>
+      <option value="separation">Separation (13)</option>
+      <option value="recovery">Recovery (11)</option>
+      <option value="other">Other (47)</option>
     </select>
   </div>
   <div>
@@ -66,7 +66,7 @@
   <button type="reset">Clear filters</button>
 </form>
 
-<p id="record-count" role="status" aria-live="polite">10 materials</p>
+<p id="record-count" role="status" aria-live="polite">11 materials</p>
 <p id="record-empty" hidden>No materials match your query or filters. Clear filters to show all.</p>
 
 <div class="record-table-scroll" role="region" aria-label="Materials table" tabindex="0">
@@ -361,6 +361,37 @@
       </td>
       <td>
         <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="secondary_resource"
+        data-mechanisms="recovery separation"
+        data-critical="false"
+        data-search="waste x-ray films waste-x-ray-films secondary_resource used silver-bearing radiographic films obtained from medical facilities, comprising a gelatin-silver emulsion on a polymer base. the curated feeds are discarded x-ray films, not unused film stock, photographic processing liquids, elemental silver or all photographic wastes. laboratory studies distinguish microbial-enzyme stripping of the emulsion from subsequent thermal production of silver metal. no constituent criticality designation or industrial deployment is inherited. recovery separation conidiobolus coronatus bacillus spizizenii atcc 6633 = jcm 2499 ncbitaxon:34488 ncbitaxon:703612">
+      <td>
+        <a href="../materials/waste-x-ray-films.html"><strong>Waste X-ray films</strong></a>
+        <p class="record-desc">Used silver-bearing radiographic films obtained from medical facilities, comprising a gelatin-silver emulsion on a polymer base. The curated feeds are discarded X-ray films, not unused film stock, photographic processing liquids, elemental silver or all photographic wastes. Laboratory studies distinguish microbial-enzyme stripping of the emulsion from subsequent thermal production of silver metal. No constituent criticality designation or industrial deployment is inherited.</p>
+      </td>
+      <td>
+        <span class="badge">secondary resource</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>2</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recovery</span>
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Conidiobolus coronatus</li>
+          <li>Bacillus spizizenii ATCC 6633 = JCM 2499</li>
+        </ul>
       </td>
       <td>
         <span style="color: var(--muted); font-size: .85rem;">—</span>

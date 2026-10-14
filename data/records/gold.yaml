@@ -1,0 +1,101 @@
+id: cmmmech:gold
+name: Gold
+material_kind: element
+description: Gold (Au), represented by its neutral-atom identity. The laboratory Au(III)-chloride
+  solutions and source-assigned cell-associated particles below are experimental forms of
+  this element, not separate ore or waste-feed identities. No criticality-list designation
+  is asserted here.
+identifiers:
+- id: CHEBI:29287
+  label: gold atom
+sources:
+- id: chebi_gold
+  title: ChEBI:29287, gold atom; Au, charge zero, resolved through the EBI Ontology Lookup
+    Service.
+  url: https://www.ebi.ac.uk/chebi/CHEBI:29287
+  accessed_on: '2026-10-14'
+- id: ncbi_species
+  title: 'NCBI Taxonomy 119219: Cupriavidus metallidurans, species; this species identifier
+    does not identify derivative AE104.'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=119219
+  accessed_on: '2026-10-14'
+- id: hirth_2024
+  title: Hirth et al. (2024). A gold speciation that adds a second layer to synergistic gold-copper
+    toxicity in Cupriavidus metallidurans. Applied and Environmental Microbiology 90(4), e00146-24.
+    DOI 10.1128/aem.00146-24; complete JATS original and original graphics.
+  url: https://doi.org/10.1128/aem.00146-24
+  accessed_on: '2026-10-14'
+- id: hirth_2024_si
+  title: Hirth et al. (2024), supplementary tables and figures, aem.00146-24-s0001.pdf, 12
+    pages; Table S4 identifies AE104 and study derivatives.
+  url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11022561/supplementaryFiles
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: ae104_stock_dependent_particles
+  name: Stock-dependent culture-associated formation of source-assigned gold nanoparticles
+  process: biomineralization
+  description: Cupriavidus metallidurans AE104 cells exposed to an aqua-regia-prepared Au(III)
+    solution contained particles interpreted by the authors as periplasmic gold nanoparticles.
+    The commercial Au(III) stock instead produced damaged cells or no visible nanoparticles
+    in the reported microscopy series. This laboratory comparison supports a preparation-dependent
+    outcome, not universal reduction of every gold complex or an isolated-product recovery
+    yield.
+  context: AE104 is the plasmid-free derivative of CH34; the species identifier does not identify
+    this derivative. Cells were cultivated aerobically in Tris-buffered mineral salts medium
+    with 2 g/L sodium gluconate at 30 degrees C. The TEM protocol used two precultures at
+    200 rpm, a 66-fold dilution into fresh medium, and addition of Au(III)-chloride after
+    reaching 180-200 Klett units. Incubation after addition was at 100 rpm and 30 degrees
+    C. Figure 2A reports 50 micromolar of the previously used, aqua-regia-prepared stock for
+    72 h. Commercial HAu(III)Cl4 was Sigma-Aldrich TraceCERT, supplied as 1 g/L Au in hydrochloric
+    acid; Figure 2B-D report 50 micromolar for 70 h, 15 micromolar for 21 h, and 50 micromolar
+    for 30 min. The general methods describe 72 h and additional exposure/recovery experiments;
+    their timings are not substituted for the labeled panels. Samples were fixed with glutaraldehyde
+    and osmium tetroxide, ethanol-dehydrated, uranyl-acetate-stained, resin-embedded and sectioned
+    at 80 nm. Exact final medium pH and a molecular analysis of the two stock solutions are
+    not reported for this microscopy comparison.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:119219
+    label: Cupriavidus metallidurans
+  evidence:
+  - source_ref: hirth_2024
+    supports: support
+    explanation: 'Results, No appearance of gold nanoparticles in the periplasm; Figure 2A
+      and its caption; Methods, Bacterial strains and growth conditions and Transmission electron
+      microscopy: the previous stock gave source-assigned periplasmic particles after 72 h.
+      The original Figure 2 was inspected. The figure is microscopy evidence with an author-assigned
+      particle identity, not a new phase-resolved product-purity or bulk mass-balance measurement.'
+  - source_ref: hirth_2024
+    supports: partial
+    explanation: 'Figure 2B-D and the same Results subsection retain the negative commercial-stock
+      outcome: long exposures damaged cells, whereas the short-exposure panel showed cells
+      without the reported particles. The authors discuss alternative directions of causality
+      between toxicity and failed particle formation. The 70-h figure label differs from the
+      general 72-h protocol and the prose description of three days. The figure does not quantify
+      the fraction of all cells forming particles, a detection limit, or a conversion yield.'
+  - source_ref: hirth_2024
+    supports: partial
+    explanation: Discussion, The procedure used to produce Au(III) solutions has biological
+      consequences, and Conclusion propose stock-speciation, respiratory-chain and copper-homeostasis
+      explanations. The specific chloride/hydroxide species and chlorine-manufacturing route
+      are hypotheses here, not directly measured stock compositions or a demonstrated exclusive
+      pathway. This microscopy comparison supplies no matched cell-free or killed-cell series
+      establishing metabolic necessity. Laboratory particle association does not demonstrate
+      permanent environmental immobilization, isolated gold recovery, or industrial deployment.
+  - source_ref: hirth_2024_si
+    supports: context_only
+    explanation: Supplementary Table S4 (PDF page 6) explicitly identifies AE104 as a plasmid-free
+      derivative of CH34 and lists the genetic derivatives used elsewhere in the paper. These
+      genotypes are not transferred to the parental AE104 microscopy panels; neither the strain
+      table nor the species identifier proves a particular molecular mechanism.
+curation_history:
+- timestamp: '2026-10-14T19:43:25Z'
+  curator: Codex (GPT-6; Codex)
+  action: create
+  summary: Created elemental gold identity and a narrowly scoped AE104 stock-comparison observation
+    from verified identifiers, the complete 2024 original XML, original Figure 2 and official
+    supplementary strain table. Retained the commercial-stock null/damage outcome, timing
+    discrepancy, proposed stock chemistry, microscopy limits and missing causal controls;
+    no criticality or recovery-yield claim.
+history_refs:
+- history/records/gold/2026-10-14T194328Z-codex-3c0536.yaml
