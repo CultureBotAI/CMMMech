@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/private/tmp/cmm-round83-final-package-audit.py", line 119, in <module>
+    h=e.get('snapshot_sha256');need(isinstance(h,str) and re.fullmatch('[a-f0-9]{64}',h) and h!=hashlib.sha256(b'').hexdigest(),'Missing/empty source hash')
+                               ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/cmm-round83-final-package-audit.py", line 15, in need
+    if not c:raise AssertionError(m)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Missing/empty source hash

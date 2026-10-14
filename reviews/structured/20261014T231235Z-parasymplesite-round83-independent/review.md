@@ -1,0 +1,383 @@
+# Independent scientific review of parasymplesite
+
+- Review: 20261014T231235Z-parasymplesite-round83-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T22:55:37.303439Z
+- Finished UTC: 2026-10-14T23:12:35.063953Z
+- Reviewer: codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of parasymplesite phase assignment during bacterial ferrihydrite reduction. No supported corrective defect found; source contradictions and recovery limits remain explicit.
+
+## Scope And Provenance
+
+Complete final owner and attached canonical history; claim-level primary and authority evidence.
+
+Selection: Assigned exact frozen record; native inspection before scientific assessment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6719e1fc18d122bde9ffa947ff70b6b7266622d3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:parasymplesite | data/records/parasymplesite.yaml | maintained | Parasymplesite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Actual batch gate 1 | passed | True | cmmmech:parasymplesite | Coordinator execution 2026-10-14T23:04:05.604526+00:00 through 2026-10-14T23:10:31.938053+00:00; terminal outcome/log independently inspected. |
+| Actual batch gate 2 | passed | True | cmmmech:parasymplesite | Coordinator execution 2026-10-14T23:10:31.938078+00:00 through 2026-10-14T23:10:44.249507+00:00; terminal outcome/log independently inspected. |
+| Actual batch gate 3 | passed | True | cmmmech:parasymplesite | Coordinator execution 2026-10-14T23:10:44.249530+00:00 through 2026-10-14T23:10:50.342054+00:00; terminal outcome/log independently inspected. |
+| Actual batch gate 4 | passed | True | cmmmech:parasymplesite | Coordinator execution 2026-10-14T23:10:50.342103+00:00 through 2026-10-14T23:10:56.883520+00:00; terminal outcome/log independently inspected. |
+| Independent named strict validation | passed | True | cmmmech:parasymplesite | Executed during this review; one record, zero failures. |
+
+## Scientific And Domain Assessments
+
+### Mineral and organism identity
+
+identity: supported. Targets: cmmmech:parasymplesite.
+
+Ferrous arsenate mineral is distinct from scorodite, phosphate vivianite and the ferrihydrite precursor. No constituent criticality is inherited. Verified16S/taxon linkage remains strain-labelled sequence evidence, not named-species resolution or gene-function proof.
+
+### Culture conditions and phase-specific limits
+
+evidence: supported. Targets: cmmmech:parasymplesite.
+
+Record faithfully retains live bacterial culture, commercial reagents/precursor, loading, medium, pH7.5,32°C,200rpm and anaerobic conditions. Source inoculum and radiation contradictions remain explicit. Mixed post-reaction powder supports the authors’ phase assignment but not phase purity, hydration or a quantitative mineral yield.
+
+### Controls, conflicting arm labels and arsenic mobilization
+
+evidence: supported. Targets: cmmmech:parasymplesite.
+
+Sterile solution controls support an effect on iron reduction; no displayed matched sterile diffraction establishes microbial necessity for precipitation. Fig5c symbol mapping conflicts with Abstract/Results, so no quantified calcium effect is accepted. Fig7 aqueous As/As(III), XPS surface fractions and early release are not isolated-product recovery.
+
+### Exact reviewed bytes, native provenance and checks
+
+provenance: supported. Targets: cmmmech:parasymplesite.
+
+Native inspect preceded final assessment and captures owner plus attached CREATE history. Reviewer made no target edits. Actual file validation and final batch gates passed. Source acquisitions are shared, interpretation independent; no experimental replication implied.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/parasymplesite.yaml; Complete final native-inspected owner | supports | Qualified identity, experimental conditions, source conflicts and boundaries independently checked. |
+| history | history/records/parasymplesite/2026-10-14T225458Z-codex-de40e1.yaml; Complete canonical CREATE sidecar | supports | Actual target, actor, timestamp and work agree with distinct inline event. |
+| primary | https://doi.org/10.3390/ijerph19063465; Original14-page PDF; full scientific text and all Figures1–7/Tables1–2 independently inspected, including visual pages4–9. External file /private/tmp/cmm-round83-phosphates-research/chen2022.pdf | supports | Figure5d supports a qualified mixed-solid phase assignment; Figure5c conflicts with caption/text. Methods2.1 and2.6 retain inoculum and radiation discrepancies. Figure7 documents mobilization rather than recovery. |
+| handbook | https://www.handbookofmineralogy.org/pdfs/parasymplesite.pdf; Complete one-page entry, visually inspected | supports | Monoclinic ferrous arsenate octahydrate, vivianite group and symplesite dimorphism support distinct mineral identity. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September2026 page166 exact row and prior inspected introductory definitions | supports | G grandfathered and1954 historical year; no approval CURIE inferred. Retained authority bytes rechecked, not a new download. |
+| genbank | https://www.ncbi.nlm.nih.gov/nuccore/MZ227386.1; Full GenBank XML definition and source qualifiers | supports | JH012-1 partial16S explicitly links taxon1896336; does not identify arrA or arsC genes. |
+| taxonomy | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1896336; Current taxonomy XML node and lineage | supports | Citrobacter sp. is unresolved species label under unclassified Citrobacter, not named species or strain-specific TaxID. |
+| search | https://pubmed.ncbi.nlm.nih.gov/35329158/; Returned web searches and retained Crossref metadata inspected on2026-10-14 | context_only | Exact DOI correction/retraction and parasymplesite/JH012-1 queries found no displayed correction for this study in returned results. Related thiosulfate/scorodite study PMID36280119 is an unassessed separate experiment, not transferred evidence. |
+| dedup | /private/tmp/cmm-round83-parasymplesite-review-dedup.txt; Complete matched-path list from current repository search | context_only | Only current owner/history/dossier matches in bounded maintained roots; no global absence claim. |
+| batch | /private/tmp/cmm-round83-final-gates-corrected.json; Terminal four-command receipt and retained log; exact record hashes preserved | supports | All actual commands exited0 and inputs remained unchanged. |
+
+## Limits And Additional Notes
+
+- Mixed products and unknown post-reaction harvest time limit phase interpretation; dry-solid diffraction does not establish wet-state hydration.
+- Figure5 arm mapping, inoculum and radiation settings require original labelled data or correction to resolve.
+- No phase-specific yield, long-term arsenic retention, field remediation or industrial deployment established.
+- No separate supplement announced in inspected main/XML; bounded notice search is not a universal absence proof. Related PMID36280119 remains unassessed.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T231235Z-parasymplesite-round83-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of parasymplesite
+started_at: '2026-10-14T22:55:37.303439Z'
+finished_at: '2026-10-14T23:12:35.063953Z'
+reviewer:
+  identity: codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Phosphates agent authored the target and history. Root independently
+    read primary scientific text and inspected all7figures/2tables, authority and
+    sequence records, without editing the target. Shared downloads do not imply independent
+    experiments.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 6719e1fc18d122bde9ffa947ff70b6b7266622d3
+  state: working_tree
+  inputs:
+  - path: data/records/parasymplesite.yaml
+    sha256: 52f0b80c651c11a6d2d3c0ed308b146a0b8943b011fd878fa7994fa69900f4cb
+    role: target
+  - path: history/records/parasymplesite/2026-10-14T225458Z-codex-de40e1.yaml
+    sha256: 69fe7d68563befca5d83988ade35317d219dd9308a5978d592d49dbb32d2f2ee
+    role: context
+targets:
+- target_id: cmmmech:parasymplesite
+  path: data/records/parasymplesite.yaml
+  label: Parasymplesite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/parasymplesite.yaml
+    role: maintained_record
+scope:
+  description: Complete final owner and attached canonical history; claim-level primary
+    and authority evidence.
+  selection: Assigned exact frozen record; native inspection before scientific assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:parasymplesite
+summary: Qualified acceptance of parasymplesite phase assignment during bacterial
+  ferrihydrite reduction. No supported corrective defect found; source contradictions
+  and recovery limits remain explicit.
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/parasymplesite.yaml
+  locator: Complete final native-inspected owner
+  accessed_at: '2026-10-14T23:12:35.063953Z'
+  support: supports
+  summary: Qualified identity, experimental conditions, source conflicts and boundaries
+    independently checked.
+  snapshot_sha256: 52f0b80c651c11a6d2d3c0ed308b146a0b8943b011fd878fa7994fa69900f4cb
+- evidence_id: history
+  kind: record_content
+  reference: history/records/parasymplesite/2026-10-14T225458Z-codex-de40e1.yaml
+  locator: Complete canonical CREATE sidecar
+  accessed_at: '2026-10-14T23:12:35.063953Z'
+  support: supports
+  summary: Actual target, actor, timestamp and work agree with distinct inline event.
+  snapshot_sha256: 69fe7d68563befca5d83988ade35317d219dd9308a5978d592d49dbb32d2f2ee
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/ijerph19063465
+  locator: Original14-page PDF; full scientific text and all Figures1–7/Tables1–2
+    independently inspected, including visual pages4–9. External file /private/tmp/cmm-round83-phosphates-research/chen2022.pdf
+  accessed_at: '2026-10-14T23:12:35.063953Z'
+  support: supports
+  summary: Figure5d supports a qualified mixed-solid phase assignment; Figure5c conflicts
+    with caption/text. Methods2.1 and2.6 retain inoculum and radiation discrepancies.
+    Figure7 documents mobilization rather than recovery.
+  snapshot_sha256: a8ddcb5c670b9fc3d2692a6f970fa8aef6cce688bc070bbd6a92ff5a9ee8302e
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/parasymplesite.pdf
+  locator: Complete one-page entry, visually inspected
+  accessed_at: '2026-10-14T23:12:35.063953Z'
+  support: supports
+  summary: Monoclinic ferrous arsenate octahydrate, vivianite group and symplesite
+    dimorphism support distinct mineral identity.
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September2026 page166 exact row and prior inspected introductory definitions
+  accessed_at: '2026-10-14T23:12:35.063953Z'
+  support: supports
+  summary: G grandfathered and1954 historical year; no approval CURIE inferred. Retained
+    authority bytes rechecked, not a new download.
+- evidence_id: genbank
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/MZ227386.1
+  locator: Full GenBank XML definition and source qualifiers
+  accessed_at: '2026-10-14T23:12:35.063953Z'
+  support: supports
+  summary: JH012-1 partial16S explicitly links taxon1896336; does not identify arrA
+    or arsC genes.
+  snapshot_sha256: 3c74b180f546e5aa41c41747c0da747c8dcfe042ebbff842ac10d73bd456f167
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1896336
+  locator: Current taxonomy XML node and lineage
+  accessed_at: '2026-10-14T23:12:35.063953Z'
+  support: supports
+  summary: Citrobacter sp. is unresolved species label under unclassified Citrobacter,
+    not named species or strain-specific TaxID.
+  snapshot_sha256: 379b70e555a5de4147ea3948a576fed4cc38800989405078fb3e91f676e746ec
+- evidence_id: search
+  kind: search
+  reference: https://pubmed.ncbi.nlm.nih.gov/35329158/
+  locator: Returned web searches and retained Crossref metadata inspected on2026-10-14
+  accessed_at: '2026-10-14T23:12:35.063953Z'
+  support: context_only
+  summary: Exact DOI correction/retraction and parasymplesite/JH012-1 queries found
+    no displayed correction for this study in returned results. Related thiosulfate/scorodite
+    study PMID36280119 is an unassessed separate experiment, not transferred evidence.
+  search_scope: 'Exact queries: "10.3390/ijerph19063465" correction retraction; "parasymplesite"
+    "JH012-1". Returned results only, no date filter or exhaustive pagination; primary
+    Crossref relation/update fields checked.'
+  snapshot_sha256: 014497f4cc80ce23b666beae98853c1f4bbffa652a83493f1f1d613400e33e45
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round83-parasymplesite-review-dedup.txt
+  locator: Complete matched-path list from current repository search
+  accessed_at: '2026-10-14T23:12:35.063953Z'
+  support: context_only
+  summary: Only current owner/history/dossier matches in bounded maintained roots;
+    no global absence claim.
+  search_scope: rg --no-ignore --hidden --follow -l -i parasymplesite|MZ227386|10.3390/ijerph19063465
+    data research reviews history .claude. Hidden and ignored files included, relevant
+    links followed.
+  snapshot_sha256: 6f976e99682670c6d4529b0e93b4c80259a02dea31447fd38dc2f18395dbc300
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round83-final-gates-corrected.json
+  locator: Terminal four-command receipt and retained log; exact record hashes preserved
+  accessed_at: '2026-10-14T23:12:35.063953Z'
+  support: supports
+  summary: All actual commands exited0 and inputs remained unchanged.
+  snapshot_sha256: 734feaa48acd723c5eaa2b06f615ee61c800b9df3700e8a36ed501aa335b4cc5
+checks:
+- check_id: batch0
+  name: Actual batch gate 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T23:04:05.604526+00:00 through 2026-10-14T23:10:31.938053+00:00;
+    terminal outcome/log independently inspected.
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:parasymplesite
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Actual batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T23:10:31.938078+00:00 through 2026-10-14T23:10:44.249507+00:00;
+    terminal outcome/log independently inspected.
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:parasymplesite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Actual batch gate 3
+  command: uv run --locked cmmmech validate-history --base 6719e1fc18d122bde9ffa947ff70b6b7266622d3
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T23:10:44.249530+00:00 through 2026-10-14T23:10:50.342054+00:00;
+    terminal outcome/log independently inspected.
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:parasymplesite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Actual batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T23:10:50.342103+00:00 through 2026-10-14T23:10:56.883520+00:00;
+    terminal outcome/log independently inspected.
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:parasymplesite
+  evidence_ids:
+  - batch
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/parasymplesite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Executed during this review; one record, zero failures.
+  target_ids:
+  - cmmmech:parasymplesite
+  evidence_ids:
+  - record
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral and organism identity
+  outcome: supported
+  summary: Ferrous arsenate mineral is distinct from scorodite, phosphate vivianite
+    and the ferrihydrite precursor. No constituent criticality is inherited. Verified16S/taxon
+    linkage remains strain-labelled sequence evidence, not named-species resolution
+    or gene-function proof.
+  target_ids:
+  - cmmmech:parasymplesite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  - taxonomy
+  - genbank
+- assessment_id: experiment
+  area: evidence
+  topic: Culture conditions and phase-specific limits
+  outcome: supported
+  summary: Record faithfully retains live bacterial culture, commercial reagents/precursor,
+    loading, medium, pH7.5,32°C,200rpm and anaerobic conditions. Source inoculum and
+    radiation contradictions remain explicit. Mixed post-reaction powder supports
+    the authors’ phase assignment but not phase purity, hydration or a quantitative
+    mineral yield.
+  target_ids:
+  - cmmmech:parasymplesite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: causality
+  area: evidence
+  topic: Controls, conflicting arm labels and arsenic mobilization
+  outcome: supported
+  summary: Sterile solution controls support an effect on iron reduction; no displayed
+    matched sterile diffraction establishes microbial necessity for precipitation.
+    Fig5c symbol mapping conflicts with Abstract/Results, so no quantified calcium
+    effect is accepted. Fig7 aqueous As/As(III), XPS surface fractions and early release
+    are not isolated-product recovery.
+  target_ids:
+  - cmmmech:parasymplesite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Exact reviewed bytes, native provenance and checks
+  outcome: supported
+  summary: Native inspect preceded final assessment and captures owner plus attached
+    CREATE history. Reviewer made no target edits. Actual file validation and final
+    batch gates passed. Source acquisitions are shared, interpretation independent;
+    no experimental replication implied.
+  target_ids:
+  - cmmmech:parasymplesite
+  evidence_ids:
+  - record
+  - history
+  - batch
+  - dedup
+findings: []
+actions: []
+limitations:
+- Mixed products and unknown post-reaction harvest time limit phase interpretation;
+  dry-solid diffraction does not establish wet-state hydration.
+- Figure5 arm mapping, inoculum and radiation settings require original labelled data
+  or correction to resolve.
+- No phase-specific yield, long-term arsenic retention, field remediation or industrial
+  deployment established.
+- No separate supplement announced in inspected main/XML; bounded notice search is
+  not a universal absence proof. Related PMID36280119 remains unassessed.
+```

@@ -1,0 +1,713 @@
+{
+  "schema": "cmmmech-source-investigation-local-v1",
+  "timestamp": "2026-10-14T22:54:52.271802+00:00",
+  "researcher": "Codex (GPT-6; codex), /root/round68_new_frontier",
+  "worktree": "/private/tmp/CMMMech-expansion-round83-20261014",
+  "base": "6719e1fc18d122bde9ffa947ff70b6b7266622d3",
+  "branch": "curate/cmm-expansion-round83-20261014",
+  "working_changes": "One new secondary-resource owner, one CREATE history, and this source pair; separate root/peer work is not authored here.",
+  "report": "research/sources/round83-resources/20261014T225452Z-source-investigation.md",
+  "report_sha256": "b06629f487b83ae309762cc39a849c9b2f2ce2f8d2c6e7587e84ba24d4409868",
+  "scope": "Bounded aluminium-industry secondary-resource discovery; one supported spent-potlining owner, no quota or microbial claim.",
+  "queries": [
+    {
+      "provider": "web search",
+      "date": "2026-10-14",
+      "queries": [
+        "\"spent potlining\" bioleaching bacteria lithium",
+        "\"aluminum dross\" bioleaching fungi",
+        "\"pickling sludge\" microbial calcium carbonate full text",
+        "\"115043\" \"Kordloo\" aluminum electrolyte full text"
+      ],
+      "result_capture": "Initial returned result set inspected but not separately archived. No pagination beyond returned set.",
+      "coverage": "Returned bounded results only, no exhaustive index pagination; no additional date or domain filter beyond literal query."
+    },
+    {
+      "queries": [
+        "\"Bioremediation of stainless steel pickling sludge\" pdf NSF",
+        "\"Recycling graphite from waste aluminium smelter\" full pdf",
+        "\"aluminum dross\" \"Aspergillus\" OR \"bioleaching\"",
+        "\"Lithium recovery from waste aluminum electrolyte\" repository Lincoln"
+      ],
+      "response_file": "r83-search2.json",
+      "provider": "web search",
+      "date": "2026-10-14",
+      "coverage": "Returned bounded results only, no exhaustive index pagination; no additional date or domain filter beyond literal query."
+    },
+    {
+      "queries": [
+        "\"Recycling graphite\" \"100004\" Sheffield White Rose",
+        "\"134213\" site:par.nsf.gov",
+        "\"spent potlining\" microbial OR bioleaching OR bacteria graphite",
+        "\"115043\" site:repository.lincoln.ac.uk OR site:researchportal.northumbria.ac.uk OR site:eprints.whiterose.ac.uk"
+      ],
+      "response_file": "r83-search3.json",
+      "provider": "web search",
+      "date": "2026-10-14",
+      "coverage": "Returned bounded results only, no exhaustive index pagination; no additional date or domain filter beyond literal query."
+    },
+    {
+      "queries": [
+        "\"Recycling graphite from waste aluminium\" site:eprints.whiterose.ac.uk",
+        "\"Bioremediation of stainless steel pickling sludge\" \"pdf\" -site:sciencedirect.com -site:researchgate.net"
+      ],
+      "response_file": "r83-source-open.json",
+      "provider": "web search",
+      "date": "2026-10-14",
+      "coverage": "Returned bounded results only, no exhaustive index pagination; no additional date or domain filter beyond literal query."
+    },
+    {
+      "queries": [
+        "\"10.1007/s12649-020-00954-1\" correction OR erratum OR retraction",
+        "\"Development of a Combined Leaching and Ion-Exchange System\" correction"
+      ],
+      "response_file": "r83-correction-search.json",
+      "provider": "web search",
+      "date": "2026-10-14",
+      "coverage": "Returned bounded results only, no exhaustive index pagination; no additional date or domain filter beyond literal query."
+    }
+  ],
+  "dedup_receipts": [
+    {
+      "recorded_at": "2026-10-14T22:46:34.347401+00:00",
+      "worktree": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech",
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-n",
+        "-i",
+        "pot[- ]?lin|potliner|Robshaw|s12649-020-00954-1|clpl.2022.100004|met14040460|115043|134213",
+        "data/records",
+        "research/sources",
+        "reviews",
+        "history"
+      ],
+      "exit_code": 0,
+      "boundary": "Current records/research/reviews/history including hidden/ignored files and followed links; all text-compatible file types, no binary-payload semantic claim."
+    },
+    {
+      "recorded_at": "2026-10-14T22:47:01.355915+00:00",
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-n",
+        "-i",
+        "pot[- ]?lin|potliner|Robshaw|s12649-020-00954-1|clpl.2022.100004|met14040460|115043|134213",
+        "/private/tmp/cmm-round25-frontier-raw",
+        "/private/tmp/cmm-round26-root-raw",
+        "/private/tmp/cmm-round27-root-raw",
+        "/private/tmp/cmm-round60-industrial-research",
+        "/private/tmp/cmm-round64-lithium-research",
+        "/private/tmp/cmm-round72-hydrocerussite-research",
+        "/private/tmp/cmm-round77-resources-research"
+      ],
+      "exit_code": 0,
+      "missing_roots": [],
+      "boundaries": "Cited relevant previous raw directories and extracted text/JSON/etc, hidden ignored included and symlinks followed; binary contents not semantically searched."
+    },
+    {
+      "recorded_at": "2026-10-14T22:51:22.711676+00:00",
+      "worktree": "/private/tmp/CMMMech-expansion-round83-20261014",
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-n",
+        "-i",
+        "pot[- ]?lin|potliner|Robshaw|s12649-020-00954-1|clpl.2022.100004|met14040460|115043|134213",
+        "data/records",
+        "research/sources",
+        "reviews",
+        "history"
+      ],
+      "exit_code": 0,
+      "output_sha256": "bffb6442dff97730658515c7271509f713782723fbd8afe451a3087bb0a678c0",
+      "bounds": "Hidden and ignored files included; symlinks followed across maintained record/research/review/history roots. Text-compatible payloads only; no claim to semantic PDF binary search."
+    },
+    {
+      "timestamp": "2026-10-14T22:52:17.168974+00:00",
+      "worktree": "/private/tmp/CMMMech-expansion-round83-20261014",
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-n",
+        "-i",
+        "spent.?pot.?lin|pot[- ]?liner|cathode carbon|spent cathode|smelter.{0,15}lin|exhausted.{0,20}lin|La[- ]?MTS9501|Robshaw|10\\.1007/s12649-020-00954-1|10\\.1016/j\\.clpl\\.2022\\.100004",
+        "data/records",
+        "research",
+        "reviews",
+        "history"
+      ],
+      "exit_code": 0,
+      "sha256": "07630d30685467048530da2ebe77a27b2afaaa8a77c91f5546db7dde3f7d3112"
+    },
+    {
+      "source": "/private/tmp/cmm-round83-initial-issues.json",
+      "sha256": "d3dfd7d3a2490acf58b8693c4da70b50c9070be52885f65791c542fba8272558",
+      "query": "pot.?lin|s12649-020-00954-1|Robshaw|115043|134213|dross",
+      "count_all_items": 274,
+      "matches": [
+        {
+          "number": 202,
+          "title": "Acquire complete Kordloo2025 waste-aluminum-electrolyte bioleaching evidence",
+          "state": "open",
+          "html_url": "https://github.com/CultureBotAI/CMMMech/issues/202",
+          "body": "The round64 lithium investigation verified the identity of Kordloo et al. (2025), *Lithium recovery from waste aluminum electrolyte via bioleaching: Comparative insights into acidic and alkaline pathways using Aspergillus niger and Glutamicibacter nicotianae*, DOI [10.1016/j.wasman.2025.115043](https://doi.org/10.1016/j.wasman.2025.115043), PMID 40749529. This aluminum-production stream is a potential distinct secondary-resource owner, subject to full feed-provenance review.\n\nThe publisher preview and NCBI abstract do not establish complete methods or controls. The public publisher API returned core metadata only despite a full-text response wrapper; OpenAlex reported no accessible full text. No record, mechanism or CREATE history was admitted from abstract results. The source handoff is staged at `research/sources/round64-lithium/20261014T062345Z-source-investigation.{md,json}`; a permanent link will follow publication.\n\nAcceptance work:\n\n- Acquire the complete original article and relevant supplements through a legitimate accessible route; retain source URL, version, acquisition date and hashes.\n- Verify the process generating the electrolyte waste and distinguish it from spent potlining, anodes, natural ores and battery black mass. Repeat hidden/ignored-inclusive material and study deduplication.\n- Check strain/biomass identity, feed characterization, pretreatment, medium, loadings, pH, duration, replication, sterile and chemistry-matched controls, analytical fractions and denominator calculations.\n- Inspect original plots, phase data and kinetic-fit limits. Preserve null results, contradictions and alternative chemical explanations; do not infer a molecular cause from a fitted kinetic model or isolated-product recovery from dissolved lithium.\n- Curate only supported claims in the appropriate maintained owner, with canonical history, an independent exact-state scientific review and required validation. Otherwise retain an evidence-backed deferral.\n\nThis is a source-acquisition follow-up, not a defect in an accepted record. The documented deferral does not close the evidence gap. No author contact or paid access is requested.\n"
+        }
+      ]
+    }
+  ],
+  "accepted_sources": [
+    {
+      "source_id": "robshaw2020",
+      "doi": "10.1007/s12649-020-00954-1",
+      "role": [
+        "real secondary-feed identity",
+        "primary abiotic leaching and separation"
+      ],
+      "artifact": {
+        "path": "/private/tmp/cmm-round83-resources-research/robshaw2020.pdf",
+        "bytes": 1355413,
+        "sha256": "db9c50c8994aff7d6feffb3da1c7db0bd2a63ef8bae3ff3564a5a5bdedecb593"
+      },
+      "source_url": "https://eprints.whiterose.ac.uk/id/eprint/157796/13/Robshaw2020_Article_DevelopmentOfACombinedLeaching.pdf",
+      "version": "Original article with repository cover",
+      "pages": 16,
+      "scientific_pages": 15,
+      "inspection": "Complete text and all main Figures1–6/Tables1–5 visually inspected. Figures2–4 characterize chemical mobilization; Figures5–6 resin loading/elution.",
+      "license": "Article explicitly CC BY4.0; raw retained outside Git."
+    },
+    {
+      "source_id": "robshaw2020_si",
+      "doi_parent": "10.1007/s12649-020-00954-1",
+      "role": [
+        "supplementary primary data",
+        "explicit prior-study context"
+      ],
+      "artifact": {
+        "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-si.pdf",
+        "bytes": 25929468,
+        "sha256": "df37acb92894b01da43f854646a234791ac42bba4ca2e1d042e4a5b4a53fa805"
+      },
+      "source_url": "https://eprints.whiterose.ac.uk/id/eprint/157796/7/T%20J%20Robshaw%20Waste%20Biomass%20Val%20SI%20v2.pdf",
+      "pages": 19,
+      "scientific_pages": 18,
+      "inspection": "Complete text and FiguresS1–S35/TablesS1–S5 visually inspected. S1 prior-work mechanism; S2 conceptual circuit; S3 actual grades; S5–S22 full PXRD; S29–S32 mixing precipitates; S33–S35 second loading arm.",
+      "license": "Repository cover rights-reserved notice; no automatic extension of article license, raw retained outside Git."
+    }
+  ],
+  "acquisition": [
+    {
+      "file": "/private/tmp/cmm-round83-resources-research/robshaw2020.pdf",
+      "url": "https://eprints.whiterose.ac.uk/id/eprint/157796/13/Robshaw2020_Article_DevelopmentOfACombinedLeaching.pdf",
+      "started_at": "2026-10-14T22:46:25.131980+00:00",
+      "status": 200,
+      "final_url": "https://eprints.whiterose.ac.uk/id/eprint/157796/13/Robshaw2020_Article_DevelopmentOfACombinedLeaching.pdf",
+      "content_type": "application/pdf",
+      "bytes": 1355413,
+      "sha256": "db9c50c8994aff7d6feffb3da1c7db0bd2a63ef8bae3ff3564a5a5bdedecb593",
+      "signature": "255044462d312e370a25c7ec8fa20a25",
+      "finished_at": "2026-10-14T22:46:27.211672+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round83-resources-research/robshaw2020-si.pdf",
+      "url": "https://eprints.whiterose.ac.uk/id/eprint/157796/7/T%20J%20Robshaw%20Waste%20Biomass%20Val%20SI%20v2.pdf",
+      "started_at": "2026-10-14T22:46:25.133365+00:00",
+      "status": 200,
+      "final_url": "https://eprints.whiterose.ac.uk/id/eprint/157796/7/T%20J%20Robshaw%20Waste%20Biomass%20Val%20SI%20v2.pdf",
+      "content_type": "application/pdf",
+      "bytes": 25929468,
+      "sha256": "df37acb92894b01da43f854646a234791ac42bba4ca2e1d042e4a5b4a53fa805",
+      "signature": "255044462d312e370a25c7ec8fa20a25",
+      "finished_at": "2026-10-14T22:46:44.830139+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round83-resources-research/robshaw2020-landing.html",
+      "url": "https://eprints.whiterose.ac.uk/id/eprint/157796/",
+      "started_at": "2026-10-14T22:46:25.133792+00:00",
+      "status": 200,
+      "final_url": "https://eprints.whiterose.ac.uk/id/eprint/157796/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 45004,
+      "sha256": "71293ba18d926787edecf17f08d6c93b379f0270b9f71822a011dec486e25cb9",
+      "signature": "3c21444f43545950452068746d6c3e0a",
+      "finished_at": "2026-10-14T22:46:25.983258+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round83-resources-research/crossref2020.json",
+      "url": "https://api.crossref.org/works/10.1007/s12649-020-00954-1",
+      "started_at": "2026-10-14T22:46:25.134151+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1007/s12649-020-00954-1",
+      "content_type": "application/json",
+      "bytes": 22896,
+      "sha256": "ab3bca5bf442d387c248b04956a2d17b987545bfcaaff6bab3b9f6a15e6e6a34",
+      "signature": "7b22737461747573223a226f6b222c22",
+      "finished_at": "2026-10-14T22:46:25.640603+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round83-resources-research/crossref2022.json",
+      "url": "https://api.crossref.org/works/10.1016/j.clpl.2022.100004",
+      "started_at": "2026-10-14T22:46:25.640689+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1016/j.clpl.2022.100004",
+      "content_type": "application/json",
+      "bytes": 14051,
+      "sha256": "7b3cd39e28dc91d98ac6b1fbf82333792a3af8769ddb1815f5c43d047b58795a",
+      "signature": "7b22737461747573223a226f6b222c22",
+      "finished_at": "2026-10-14T22:46:25.982787+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round83-resources-research/openalex2022.json",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.clpl.2022.100004",
+      "started_at": "2026-10-14T22:46:25.982877+00:00",
+      "status": 200,
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.clpl.2022.100004",
+      "content_type": "application/json",
+      "bytes": 21367,
+      "sha256": "fd51984f10ce7bbff22de082c7dd54a0687df6ab5913c0bf5c773f8de254fb3b",
+      "signature": "7b226964223a2268747470733a2f2f6f",
+      "finished_at": "2026-10-14T22:46:26.261953+00:00"
+    }
+  ],
+  "acquisition_failures_or_limits": [
+    {
+      "route": "Web extractor of actual White Rose main PDF",
+      "result": "Timed out; direct public download succeeded, complete original accepted."
+    },
+    {
+      "route": "Web extractor of actual White Rose SI PDF",
+      "result": "File-size limit; direct public download succeeded, complete SI accepted."
+    },
+    {
+      "route": "https://www.sciencedirect.com/science/article/pii/S2666791622000046",
+      "result": "403 on unverified guessed PII; rejected route, not a valid original or proof of its availability. Verified actual PII from Crossref is S2666791622000021; no full2022 claim accepted."
+    },
+    {
+      "route": "Kordloo2025 and stainless-pickling2022 targeted new repository/funder searches",
+      "result": "No complete new primary located in bounded results. Prior denied publisher/TDM routes were not blindly repeated."
+    }
+  ],
+  "boundaries": {
+    "identity": "Real mixed-cut Trimet lining waste, sample grades not separate owners; not graphite mineral/dross/electrolyte/redmud.",
+    "organisms": "None; both mechanisms explicitly abiotic.",
+    "criticality": "Omitted; no dated jurisdiction/list claim assessed.",
+    "controls": "Before/after and staged treatment; no isolated reagent contribution or independent campaign replication established.",
+    "quantitative": "No native concentration observations imported. Source percentages and modeled capacity denominators retained in qualified prose only.",
+    "scale": "Laboratory 2g leaches and5.50mL resin bed, no operational plant claim.",
+    "source_conflicts": [
+      "Acid0.5M versusFigure4 1M",
+      "Acid3h method versusSI TableS2 2h",
+      "Flow1.00 versusFigures5–6/S33 0.50BV/h"
+    ],
+    "recovery": "Reported59.0% from fluoride main-elution peak area/modeltheoreticalcolumnuptake, not originalfeed inventory; impurity precipitation and early wash losses not closed."
+  },
+  "notice_check": {
+    "doi": "10.1007/s12649-020-00954-1",
+    "title": [
+      "Development of a Combined Leaching and Ion-Exchange System for Valorisation of Spent Potlining Waste"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          2,
+          10
+        ]
+      ]
+    },
+    "relation": {},
+    "update_to": null,
+    "update_policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "bounded_notice_check": "Exact DOI/title correction/erratum/retraction queries and inspected original publisher page did not display a correction. This is a dated bounded check, not a guarantee of no future or unindexed notice."
+  },
+  "deferred": [
+    {
+      "doi": "10.1016/j.clpl.2022.100004",
+      "decision": "metadata-only follow-up, not accepted replication",
+      "need": "Complete original/SI, verified feed lineage and controls."
+    },
+    {
+      "doi": "10.1016/j.wasman.2025.115043",
+      "issue": 202,
+      "decision": "prior blocked microbial source remains deferred",
+      "need": "Complete original/SI with exact electrolyte feed/strains/controls."
+    },
+    {
+      "doi": "10.1016/j.chemosphere.2022.134213",
+      "decision": "prior blocked pickling-sludge source remains deferred",
+      "need": "Complete original/SI and exact feed/control assessment."
+    },
+    {
+      "doi": "10.3390/met14040460",
+      "decision": "Unassessed search lead, no experimental claims."
+    },
+    {
+      "material": "Aluminium dross",
+      "decision": "No complete primary selected in this bounded pass; not an absence claim."
+    }
+  ],
+  "owner": {
+    "path": "data/records/spent-potlining.yaml",
+    "sha256": "28a700b73213bd244b8d3c3d5a52c74393e5ef6d5e1d77b23863fcbfa05b67b5"
+  },
+  "histories": [
+    {
+      "path": "history/records/spent-potlining/2026-10-14T225433Z-codex-e675a4.yaml",
+      "sha256": "e8822e5aee64dee6b4019d39c89c202d47ba6c78ef2c3d1e5605e56befd9098d"
+    }
+  ],
+  "named_validation": {
+    "started_at": "2026-10-14T22:54:44.966480+00:00",
+    "finished_at": "2026-10-14T22:54:48.495050+00:00",
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "cmmmech",
+      "validate",
+      "data/records/spent-potlining.yaml",
+      "--require-records"
+    ],
+    "worktree": "/private/tmp/CMMMech-expansion-round83-20261014",
+    "exit_code": 0,
+    "log": "/private/tmp/cmm-round83-resources-research/named-validation.log",
+    "log_sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e",
+    "owner_sha256": "28a700b73213bd244b8d3c3d5a52c74393e5ef6d5e1d77b23863fcbfa05b67b5"
+  },
+  "review_status": "Independent review and final batch checks pending at report save, not implied by source assessment.",
+  "followup_draft": {
+    "path": "/private/tmp/cmm-round83-spent-potlining-source-clarification.md",
+    "bytes": 2840,
+    "sha256": "a6912590d4048ae4abe87412d1022d2ec88fed25946f5c70faa707494f21ac30"
+  },
+  "raw_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/acquisition-1.json",
+      "bytes": 3576,
+      "sha256": "72dc88e3624248a936f189831cecf397447ee7912dd0938c0883619a85650f3d"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/crossref2020.json",
+      "bytes": 22896,
+      "sha256": "ab3bca5bf442d387c248b04956a2d17b987545bfcaaff6bab3b9f6a15e6e6a34"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/crossref2022.json",
+      "bytes": 14051,
+      "sha256": "7b3cd39e28dc91d98ac6b1fbf82333792a3af8769ddb1815f5c43d047b58795a"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/dedup-cited-raw.json",
+      "bytes": 808,
+      "sha256": "a0c4c46aab6d7cbeff9015444c111cd55a2da2ab761076c18705f9bdc50d57dd"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/dedup-cited-raw.txt",
+      "bytes": 122123,
+      "sha256": "b2314747f1115c4b7505e3ca86e5dd729b3c369e5c33372321d1c32d28c821fb"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/dedup-current.json",
+      "bytes": 609,
+      "sha256": "60582b629fae314cd8bb80a9c90e0f30a1f1e8c4e40fd6f2fe7bed1c5242dfbf"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/dedup-current.txt",
+      "bytes": 5025,
+      "sha256": "bffb6442dff97730658515c7271509f713782723fbd8afe451a3087bb0a678c0"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/dedup-synonyms.json",
+      "bytes": 574,
+      "sha256": "5a2fec3ffa2a63c893471ed8a3b3c67bee6beffd4739953f9020305d4650d1ce"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/dedup-synonyms.txt",
+      "bytes": 4330,
+      "sha256": "07630d30685467048530da2ebe77a27b2afaaa8a77c91f5546db7dde3f7d3112"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/dedup-worktree.json",
+      "bytes": 693,
+      "sha256": "d366be3e418925dbcf2c19e061a38cabfda874e0f4aa441248639b591cac7517"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/dedup-worktree.txt",
+      "bytes": 5025,
+      "sha256": "bffb6442dff97730658515c7271509f713782723fbd8afe451a3087bb0a678c0"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/finalize-source-report.py",
+      "bytes": 9160,
+      "sha256": "01b029b4ec8ada41cf80bb3b4922cff1dbc0fc20c8a739aab41b020d55adfc99"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/issue-dedup.json",
+      "bytes": 2678,
+      "sha256": "5f81955cbeb4689e1c715cfee2d80352bf2b7be35d8538b5997c12891fac9e61"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/named-validation.json",
+      "bytes": 591,
+      "sha256": "9b31567a88017edb2cb1200d97521655ade865f0131fd7b82bb20c033e92fc3e"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/named-validation.log",
+      "bytes": 31,
+      "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/notice-check.json",
+      "bytes": 610,
+      "sha256": "c2b28186bdea4f53fdd74e5ace9104c95dcd74b54ac01d1bb5364edd8ab41200"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/openalex2022.json",
+      "bytes": 21367,
+      "sha256": "fd51984f10ce7bbff22de082c7dd54a0687df6ab5913c0bf5c773f8de254fb3b"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/r83-correction-search.json",
+      "bytes": 32747,
+      "sha256": "6f31f4a4211d2caa15e796872c9c0a76a24874e596c631633f9d68dcf71f364e"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/r83-primary-routes.json",
+      "bytes": 1057,
+      "sha256": "088a768dc39b62e61dbda2f2b654ca190a80e515831db4be1f06211f5d7f9ae6"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/r83-search2.json",
+      "bytes": 31664,
+      "sha256": "2759c8907e370aed9fa869050324f850590fce0b07e74e3352a347840430de9d"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/r83-search3.json",
+      "bytes": 34949,
+      "sha256": "52ec3d2076add915b06a23d98aa83213ef049b2e8481dec15aafaaba13c68951"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/r83-source-open.json",
+      "bytes": 28833,
+      "sha256": "5dd3f7627b5151c5f053f1330a44b8f09d0e8130a11f1410f28998fe0f9cd6ad"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-landing.html",
+      "bytes": 45004,
+      "sha256": "71293ba18d926787edecf17f08d6c93b379f0270b9f71822a011dec486e25cb9"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-page1.png",
+      "bytes": 128016,
+      "sha256": "aeb3243fc2ff47b9f3de89a141a3167d146d4a382f465e5007e9fa90ee01107d"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-page10.png",
+      "bytes": 264360,
+      "sha256": "b0530884486c5cb73aae2992e64a1d138b0cdade4ce556ac0915f93a822fb42a"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-page11.png",
+      "bytes": 221254,
+      "sha256": "b56fe9239ffb052cde82fb22a6d9c34bc86519a130705cf19d1595aa597743b3"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-page12.png",
+      "bytes": 244566,
+      "sha256": "68d445fcc4e310a968f4834599242206a5d5ab28ea8e45aa189fbf430aad6672"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-page13.png",
+      "bytes": 252198,
+      "sha256": "e2cd33aeb2d6253938a3c007a5b0d52f9674737f42e756c6e6929b8b0f815bea"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-page14.png",
+      "bytes": 319123,
+      "sha256": "209f203d14f3d158dc4cbe0bfa28b4b48485ce33a2cc0a38f2c33a92e2d0c2a9"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-page15.png",
+      "bytes": 301305,
+      "sha256": "b30eb947b8f9e694a49762ea46bb798481d7edd58ea19aeb68ad2ff01a8083a7"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-page16.png",
+      "bytes": 37003,
+      "sha256": "40a6a2f60e2ae0bb96efdb5d75bbf0b993817048fc9aa60cd3a35c4ad5c870a5"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-page2.png",
+      "bytes": 254091,
+      "sha256": "370375e4833108533755e58ef774f7faf2cf6f868d9ea63a609303539d478a1d"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-page3.png",
+      "bytes": 344207,
+      "sha256": "687a443699b37dbca4ee6671100fcb3db7d00a9437180a8b436abfbcccf66f66"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-page4.png",
+      "bytes": 279942,
+      "sha256": "6c4ea90a7cbf940b480fb0f7ebb8c8ef9d216806a26a78760e994027203032d2"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-page5.png",
+      "bytes": 275191,
+      "sha256": "54d44fcc1f703a60cc1278220a638d3bac1a594f12f2819bbbef43aa3526301a"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-page6.png",
+      "bytes": 281139,
+      "sha256": "a2f895cc453d0151fb9aa2a25d6ad21a042e10e01fa5ca9d612cd48c63f22b12"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-page7.png",
+      "bytes": 198468,
+      "sha256": "d9c036665813bba5e2c084fef2e6aea056d8a67aee8bc7f24db96695a3cc5bf1"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-page8.png",
+      "bytes": 393800,
+      "sha256": "52559f45cc9ff6030a31c23d444c7520641d6110531bf27f999a0bad9f7ea867"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-page9.png",
+      "bytes": 97968,
+      "sha256": "389a5d61f5b18367499ff482fcfbc17c1a5d1481d8fb318cf7b225af9d7195b2"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-si-page1.png",
+      "bytes": 132578,
+      "sha256": "a6776c3d4a1f21805d69a1bb6232fa61808e349df6445118ad4be74e3e7c747e"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-si-page10.png",
+      "bytes": 66702,
+      "sha256": "c1225209e2f861a3ac37643acf10cdedb4f785a15cb2532e058da6368e1e849b"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-si-page11.png",
+      "bytes": 200091,
+      "sha256": "f762eacbf3357afc654927f3dc07912c0547b04a715043f8d1e3c49743d84fb2"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-si-page12.png",
+      "bytes": 363663,
+      "sha256": "ab2e92ee61f7a9a4c184de25b8571a940dd041a1d38e0c2e595dbba9ffc5401b"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-si-page13.png",
+      "bytes": 133889,
+      "sha256": "f41b5302152227b2a7158c41c36750fa3a78ac76c7516a818344ae2f1e935f83"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-si-page14.png",
+      "bytes": 120998,
+      "sha256": "492665b40f94d20ef548664c1127da723738094c184fef4fb424bb4ee44bf478"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-si-page15.png",
+      "bytes": 111282,
+      "sha256": "784892d53eb216f11809882598991d31cc7ef54a41412bb45e3713577b39d82d"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-si-page16.png",
+      "bytes": 83445,
+      "sha256": "cb0866a531660720d3a581b8203ace942caa6ff1bbe0867b556388c57cf1456b"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-si-page17.png",
+      "bytes": 60179,
+      "sha256": "5c3ed0405292f509754d1e7022a7cfe22770336958fd1a07333306509567c981"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-si-page18.png",
+      "bytes": 184980,
+      "sha256": "db0e2103f70717fcbab2d97d19ae8eb93bf65ae31cffe5300a827412d8e71168"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-si-page19.png",
+      "bytes": 124088,
+      "sha256": "567e9384860ec39f8124bc55ec9f6a49e716a16969a1f892c79a1630085a2945"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-si-page2.png",
+      "bytes": 135102,
+      "sha256": "a6fdd6103e4e3257536341226256818a0bd395cbb236970b3024a7a04745202d"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-si-page3.png",
+      "bytes": 434598,
+      "sha256": "48bc3b07b1633525a18d63866cefc6433541e4d7f5e638cb1a2ed56a0121aed9"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-si-page4.png",
+      "bytes": 816973,
+      "sha256": "ddc04b6f1b0207505d3707d7ea29193854b50d49716129f53f8b9db8b318c713"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-si-page5.png",
+      "bytes": 79637,
+      "sha256": "707ccfbfee88691486eccced79f825cc4cd43da8c0b26363d9d52dcefddadc34"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-si-page6.png",
+      "bytes": 85791,
+      "sha256": "8ac9f4fa4718f6c3e7591ea412879b8f84d02719e47a345481bff15a1d90a9d2"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-si-page7.png",
+      "bytes": 91402,
+      "sha256": "e47a60caccfc2adc77ef0eb36a432b8aeb9c60a647fec14072022edefe7fd341"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-si-page8.png",
+      "bytes": 87276,
+      "sha256": "4e34bb4ca696e6120f295d6ea9d4230dd9f09d2f33f1308a6a7f77b74e069900"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-si-page9.png",
+      "bytes": 71260,
+      "sha256": "13253e1636c94287abb5e0ac8fff7cb24e0e686095fcce3b569734f6ac52560d"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-si.pdf",
+      "bytes": 25929468,
+      "sha256": "df37acb92894b01da43f854646a234791ac42bba4ca2e1d042e4a5b4a53fa805"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020-si.txt",
+      "bytes": 17820,
+      "sha256": "2c2f232d4ed03cbbbdb68b705e761086ab9581a23d33d1063bbd23aeb93cc93d"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020.pdf",
+      "bytes": 1355413,
+      "sha256": "db9c50c8994aff7d6feffb3da1c7db0bd2a63ef8bae3ff3564a5a5bdedecb593"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/robshaw2020.txt",
+      "bytes": 66123,
+      "sha256": "d724d704f444c8065570e388028b64f54758481c93a2f09ccb5c9d3a0dc4e054"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/source-report-draft.md",
+      "bytes": 10669,
+      "sha256": "a543b8fc365e437b2c9ccf938a0e6a85ecd3521ae90bebd7bab25e9ddf5447d2"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-resources-research/spent-potlining-draft.yaml",
+      "bytes": 9598,
+      "sha256": "b910275edb455032d712b6f3cd827d8ce1f78ec1ced7497e01608738aac49e21"
+    }
+  ]
+}

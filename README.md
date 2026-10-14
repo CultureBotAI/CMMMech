@@ -8,10 +8,14 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 394 material records.
+The catalogue currently contains 398 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Cuprite](data/records/cuprite.yaml) | Fungal-associated alteration of commercial Cu2O | Agar clearance and shared oxalate assignment do not establish mass-balanced recovery |
+| [Parasymplesite](data/records/parasymplesite.yaml) | Qualified ferrous-arsenate phase assignment during bacterial ferrihydrite reduction | Mixed products, conflicting source arm labels and simultaneous arsenic mobilization |
+| [Bismuthinite](data/records/bismuthinite.yaml) | Abiotic low-temperature synthesis of a diffraction-assigned Bi2S3 phase | Incomplete recipe, inferred growth mechanism and no microbial claim |
+| [Spent potlining](data/records/spent-potlining.yaml) | Chemical leaching and resin separation of mixed aluminium-smelter waste | Source recipe conflicts and model-derived recovery denominator; no overall product yield |
 | [Stolzite](data/records/stolzite.yaml) | Natural W-dominant lead tungstate characterization | Tiny grains prevented structural analysis; supergene origin inferred |
 | [Powellite](data/records/powellite.yaml) | Crystalline natural calcium molybdate and a separate inferred metamict arm | Internal source contradiction retained; radiation causation untested |
 | [Metacinnabar](data/records/metacinnabar.yaml) | Laboratory bacterial-associated sulfide dissolution and mercury volatilization | Mixed feed, sulfur intermediates and conflicting source rate units limit interpretation |

@@ -1,0 +1,87 @@
+{
+  "recorded_at": "2026-10-14T23:20:13.775003Z",
+  "reviewer": "codex /root/round68_phosphates",
+  "scope": "Publication authority-artifact traceability only; no scientific owner finding or native schema failure.",
+  "finding_id": "PT1",
+  "issue_key": "round83.parasymplesite.review-authority-artifact-mapping",
+  "severity": "minor",
+  "status": "open",
+  "review_id": "20261014T231235Z-parasymplesite-round83-independent",
+  "review_path": "reviews/structured/20261014T231235Z-parasymplesite-round83-independent/review.yaml",
+  "review_sha256": "370b81af27947f4a6b5dfd1b58192e1d441593e94bd65850733284e7785bcaee",
+  "finding": "Handbook/IMA authority evidence rows lack per-row snapshot hashes, and GenBank/taxonomy rows have hashes but no local locator; the native input list binds only owner/history. Exact authority paths/hashes are present in the existing source dossier, but the per-evidence mapping is implicit.",
+  "affected_evidence": [
+    {
+      "evidence_id": "handbook",
+      "kind": "authority",
+      "reference": "https://www.handbookofmineralogy.org/pdfs/parasymplesite.pdf",
+      "locator": "Complete one-page entry, visually inspected",
+      "accessed_at": "2026-10-14T23:12:35.063953Z",
+      "support": "supports",
+      "summary": "Monoclinic ferrous arsenate octahydrate, vivianite group and symplesite dimorphism support distinct mineral identity."
+    },
+    {
+      "evidence_id": "ima",
+      "kind": "authority",
+      "reference": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "locator": "September2026 page166 exact row and prior inspected introductory definitions",
+      "accessed_at": "2026-10-14T23:12:35.063953Z",
+      "support": "supports",
+      "summary": "G grandfathered and1954 historical year; no approval CURIE inferred. Retained authority bytes rechecked, not a new download."
+    },
+    {
+      "evidence_id": "genbank",
+      "kind": "authority",
+      "reference": "https://www.ncbi.nlm.nih.gov/nuccore/MZ227386.1",
+      "locator": "Full GenBank XML definition and source qualifiers",
+      "accessed_at": "2026-10-14T23:12:35.063953Z",
+      "support": "supports",
+      "summary": "JH012-1 partial16S explicitly links taxon1896336; does not identify arrA or arsC genes.",
+      "snapshot_sha256": "3c74b180f546e5aa41c41747c0da747c8dcfe042ebbff842ac10d73bd456f167"
+    },
+    {
+      "evidence_id": "taxonomy",
+      "kind": "authority",
+      "reference": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1896336",
+      "locator": "Current taxonomy XML node and lineage",
+      "accessed_at": "2026-10-14T23:12:35.063953Z",
+      "support": "supports",
+      "summary": "Citrobacter sp. is unresolved species label under unclassified Citrobacter, not named species or strain-specific TaxID.",
+      "snapshot_sha256": "379b70e555a5de4147ea3948a576fed4cc38800989405078fb3e91f676e746ec"
+    }
+  ],
+  "proposed_resolution": "Append a publication metadata mapping addendum binding the immutable review hash, source dossier hash and all four exact authority path/URL/hash entries. Do not edit native review, record, history or scientific verdict.",
+  "failure_run": {
+    "exit_code": 1,
+    "log": "/private/tmp/cmm-round83-final-package-audit-run.log",
+    "sha256": "c69d284d7faf270983dd39ba8e2bcb593c8c6978de08f602601d273439b414f2",
+    "auditor": "/private/tmp/cmm-round83-final-package-audit.py",
+    "auditor_sha256": "9c9e0eedf38fd210ea716312b06457f6ecfc753d169db0ada3602796aae474bd"
+  },
+  "source_dossier": {
+    "path": "research/sources/round83-phosphates/20261014T225525Z-source-investigation.json",
+    "sha256": "a822965572a16f6f5f71e20eed593da1816e50b07ab9780a9d78de4a76e4ae97"
+  },
+  "snapshots": [
+    {
+      "path": "/private/tmp/cmm-round83-package-traceability-initial-20261014T232013Z-sources/20261014T225525Z-source-investigation.json",
+      "sha256": "a822965572a16f6f5f71e20eed593da1816e50b07ab9780a9d78de4a76e4ae97"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-package-traceability-initial-20261014T232013Z-sources/cmm-round83-final-package-audit-run.log",
+      "sha256": "c69d284d7faf270983dd39ba8e2bcb593c8c6978de08f602601d273439b414f2"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-package-traceability-initial-20261014T232013Z-sources/cmm-round83-final-package-audit.py",
+      "sha256": "9c9e0eedf38fd210ea716312b06457f6ecfc753d169db0ada3602796aae474bd"
+    },
+    {
+      "path": "/private/tmp/cmm-round83-package-traceability-initial-20261014T232013Z-sources/review.yaml",
+      "sha256": "370b81af27947f4a6b5dfd1b58192e1d441593e94bd65850733284e7785bcaee"
+    }
+  ],
+  "limitations": [
+    "This is an operational audit traceability requirement; snapshot_sha256 is optional in native evidence schema and all native scientific validation already passed.",
+    "The supported science and source availability do not change."
+  ]
+}
