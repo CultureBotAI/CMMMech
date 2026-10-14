@@ -1,0 +1,509 @@
+# Independent scientific review of metacinnabar
+
+- Review: 20261014T220228Z-metacinnabar-round82-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T21:53:29.472149Z
+- Finished UTC: 2026-10-14T22:02:28.468525Z
+- Reviewer: codex /root/round68_phosphates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of metacinnabar identity and coupled thiosulfate-assisted chemical dissolution and bacterial mercury reduction. Mixed-feed and control limits, sulfate proxy, source unit conflicts, partial merA evidence and laboratory scope remain explicit; no purified recovery or global flux claim.
+
+## Scope And Provenance
+
+Entire exact maintained mineral owner and CREATE history, identity/taxon authorities, complete primary article and actual official supplement, organism/conditions/controls, graphical evidence, measured/proxy denominators and source conflicts.
+
+Selection: Assigned canonical single maintained mineral record; successful native inspect before field-by-field assessment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base d26b03c7e8346b0caabb106f1aaf8acc3ed51623.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:metacinnabar | data/records/metacinnabar.yaml | maintained | Metacinnabar |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named strict validation | passed | True | cmmmech:metacinnabar | Actual completed execution; checked one record with zero failures. |
+| Completed coordinator batch gate 1 | passed | True | cmmmech:metacinnabar | Actual 2026-10-14T21:51:56.716709+00:00 to 2026-10-14T22:00:29.305177+00:00; exit0, unchanged inputs. |
+| Completed coordinator batch gate 2 | passed | True | cmmmech:metacinnabar | Actual 2026-10-14T22:00:29.305226+00:00 to 2026-10-14T22:00:57.771048+00:00; exit0, unchanged inputs. |
+| Completed coordinator batch gate 3 | passed | True | cmmmech:metacinnabar | Actual 2026-10-14T22:00:57.771079+00:00 to 2026-10-14T22:01:05.397188+00:00; exit0, unchanged inputs. |
+| Completed coordinator batch gate 4 | passed | True | cmmmech:metacinnabar | Actual 2026-10-14T22:01:05.397219+00:00 to 2026-10-14T22:01:14.509668+00:00; exit0, unchanged inputs. |
+
+## Scientific And Domain Assessments
+
+### Mineral species versus experimental mixed feed
+
+identity: supported. Targets: cmmmech:metacinnabar.
+
+Cubic beta-HgS is authority-grounded. Natural museum material, its pyrite inclusions and local XANES evidence are accurately separated from whole-feed purity or synthetic phase authentication. No invented grandfathered approval ID or inherited criticality.
+
+### Culture, medium and arm boundaries
+
+evidence: supported. Targets: cmmmech:metacinnabar.
+
+Source ATCC8158 and current NCBI931 are correctly scoped. Room-temperature dark aerobic unshaken assay, pH7 medium, 2g/L &lt;250µm natural feed, 30C five-day pregrowth, 1:100 and washed 1:50 inocula and carryover are supported. The 20mM arm and nominal daily100µM comparison remain distinct; Methods actual125–132µM retained.
+
+### Biotic contribution without exclusive necessity
+
+evidence: supported. Targets: cmmmech:metacinnabar.
+
+Live, killed, no-HgS and no-cell evidence supports enhanced transformation, with killed treatment chemistry and EDTA comparator separated. Six-week field and four-week sterile observations do not isolate field microbial necessity; classified-read denominator remains scoped.
+
+### Dissolution proxy and emitted mercury
+
+quantity: supported. Targets: cmmmech:metacinnabar.
+
+Figures3–5 combine sulfate, aqueous and volatile mercury observations. Gold-trap fluorescence and rate integration establish an emitted-Hg observation, not purified recovery. Table1 fraction derives from sulfate differences; whole-feed Hg balance and phase-specific yield absent. Method duplicate versus biological replicate captions are correctly distinguished.
+
+### Genetic potential and unresolved units
+
+evidence: supported. Targets: cmmmech:metacinnabar.
+
+DataS1 partial merA sequence is not expression or necessity. FigureS5 nanograms versus main/TableS3 attograms, and low-arm mM versus micromolar, are explicit. No disputed normalized rate or global-flux extrapolation accepted.
+
+### Laboratory transformation, field association and deployment
+
+scope: supported. Targets: cmmmech:metacinnabar.
+
+Natural/synthetic comparison cannot isolate surface area or iron cause. Mercury volatilization is not remediation success or detoxification, and no industrial or recovered-product claim is made.
+
+### Canonical history and exact working inputs
+
+provenance: supported. Targets: cmmmech:metacinnabar.
+
+Current target/history match inspection, appropriate actor/time/target provenance retained. Independently executed named check and actual four-command batch pass against the trusted base; reviewer made no owner edits.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/metacinnabar.yaml; All exact inspected fields. Artifact: /private/tmp/CMMMech-expansion-round82-20261014/data/records/metacinnabar.yaml | supports | Supported scope, limitations and distinct mineral identity preserved. |
+| history | history/records/metacinnabar/2026-10-14T215020Z-codex-91f7bf.yaml; Complete CREATE sidecar and separate inline event. Artifact: /private/tmp/CMMMech-expansion-round82-20261014/history/records/metacinnabar/2026-10-14T215020Z-codex-91f7bf.yaml | supports | Current actual UTC, GPT-6/codex actor, exact target and stated curation agree; no backdated attribution. |
+| main | https://doi.org/10.3389/fmicb.2015.00596; Complete 11-page primary original read; all Figures 1–7 and Table 1 visually inspected. Methods pp2–4, Results/Discussion pp4–9, especially Figure3/Table1 p7, Figure4/5 p8, Figure6/7 p9. Artifact: /private/tmp/cmm-round82-sulfides-research/vazquez2015.pdf | supports | Natural feed provenance, experimental design and comparative sulfate/aqueous/volatile mercury observations support the narrowed coupled transformation claim. |
+| si | https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2015.00596/full#supplementary-material; Complete official 11-page PDF including cover, all Figures S1–S5, Tables S1–S3 and Data S1 read and visually inspected. S1 PDF4, S2 PDF5, S3 PDF6, DataS1 PDF7, S4 PDF8, S5 PDF9, TableS3 PDF10. Artifact: /private/tmp/cmm-round82-sulfides-research/vazquez2015-media/SupplementaryMaterial.PDF | supports | Unmatched four-week sterile control, sulfur carryover, partial merA sequence and normalized-rate/low-arm unit conflicts verified independently. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Exact September2026 row on PDF141 visually checked; G status/1870 description year and definitions. Artifact: /private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf | context_only | HgS mineral species recognized; grandfathered year is not an invented unique IMA accession. |
+| handbook | https://www.handbookofmineralogy.org/pdfs/metacinnabar.pdf; Complete one-page entry independently read/visually inspected: cubic HgS, powder pattern, natural substitution chemistry, polymorphs. Artifact: /private/tmp/cmm-round82-sulfides-research/metacinnabar-handbook.pdf | context_only | Mineral identity separated from cinnabar/hypercinnabar, mixed feed and unspecified precipitates. |
+| taxonomy | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=931&amp;mode=Info; Current complete XML read; taxon931 species Thiobacillus thioparus and type-material ATCC8158/DSM505. Live NCBI/ATCC/LPSN search independently corroborates culture equivalence. Artifact: /private/tmp/cmm-round82-sulfides-research/taxonomy.xml | context_only | Species mapping and reported culture label supported; authority entry does not authenticate the actual experimental vial. |
+| dedup | /private/tmp/cmm-round82-metacinnabar-review/dedup.json; Actual rg --no-ignore --hidden --follow across current/main records/research/reviews/history and the cited round82 sulfides raw directory. Artifact: /private/tmp/cmm-round82-metacinnabar-review/dedup.json | context_only | Related mercury/sulfide contexts do not make this phase owner duplicate; scoped ignored-inclusive search and source lineage retained. |
+| notices | /private/tmp/cmm-round82-metacinnabar-review/notice-search.json; Exact DOI correction/retraction and title/conflict searches, plus type-strain authority search on2026-10-14; first returned sets, no date/domain filter, not exhaustive. Artifact: /private/tmp/cmm-round82-metacinnabar-review/notice-search.json | context_only | No matched corrective notice in bounded returned results; intrinsic source conflicts retained. |
+| named | /private/tmp/cmm-round82-metacinnabar-review/named-validation.json; Actual independently executed named strict check, 2026-10-14T21:54:16.613747+00:00 to 2026-10-14T21:54:23.717030+00:00; log hash 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e. Artifact: /private/tmp/cmm-round82-metacinnabar-review/named-validation.json | supports | One record, zero failures. |
+| batch | /private/tmp/cmm-round82-final-gates.json; All FOUR completed coordinator commands, 2026-10-14T21:51:56.716133+00:00 to 2026-10-14T22:01:14.630323+00:00; retained log /private/tmp/cmm-round82-final-gates.log SHA256 df800072c55c68b58b2d641a7d4be91fce3688f8d018a528ddaad8490410ddd7. Artifact: /private/tmp/cmm-round82-final-gates.json | supports | Exact command vectors, terminal exits, trusted base/worktree and unchanged target bytes independently verified. |
+
+## Limits And Additional Notes
+
+- Natural museum metacinnabar contains pyritic inclusions; no whole-feed quantitative diffraction or post-sterilization phase-purity demonstration is supplied. Commercial black HgS comparison also differs in surface area and composition.
+- Field community association after six weeks and sterile freshwater control after four weeks are unmatched. The laboratory culture supports a narrower causal contribution; it does not authenticate a field causal strain or an exclusive cellular attack pathway.
+- Inoculum elemental sulfur and low-level thiosulfate carryover, killed-cell chemistry and separate EDTA series complicate attribution. Sulfate differences are a proxy, not recovered mineral or total mercury fraction.
+- Main text/Table S3 attograms conflict with Figure S5 nanograms per cell per day; Table S3 low-arm 40 mM conflicts with 40 micromolar elsewhere. No normalized rate or extrapolated global emissions is adopted.
+- A 285-base-pair merA fragment supports genetic potential without expression, enzymatic activity or necessity tests. No isolated recovery, complete Hg balance, detoxification proof or industrial deployment.
+- Bounded correction searches and current authority checks do not establish universal absence of later corrections. Structural validation cannot prove scientific truth.
+- No owner or canonical history changes were made by this reviewer.
+- An initial unsaved review draft was rejected for a noncanonical target-kind label and UTC suffix format. The first draft/log and native inspection remain external; a canonical-kind reinspection confirmed identical scientific inputs, and the start instant was formatted with Z without changing its value.
+- All four actual coordinator batch commands and retained log hash were checked against unchanged target bytes. Named strict validation was independently executed.
+- Only vazquez2015-media/SupplementaryMaterial.PDF is the official accepted supplement. The curator raw folder also contains an unassigned JA93 file, explicitly excluded from this assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T220228Z-metacinnabar-round82-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of metacinnabar
+started_at: '2026-10-14T21:53:29.472149Z'
+finished_at: '2026-10-14T22:02:28.468525Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer authored meta-ankoleite, not this target or its history.
+    Metacinnabar was curated by round68_iron_sulfides. Primary source preparation
+    preceded record freeze; native exact-byte inspection preceded field-by-field record
+    judgment. Shared acquisition is disclosed, with independent reading of the complete
+    primary/SI and all claim-bearing graphics. No independent experiment was performed.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of metacinnabar identity and coupled thiosulfate-assisted
+  chemical dissolution and bacterial mercury reduction. Mixed-feed and control limits,
+  sulfate proxy, source unit conflicts, partial merA evidence and laboratory scope
+  remain explicit; no purified recovery or global flux claim.
+source:
+  git_revision: d26b03c7e8346b0caabb106f1aaf8acc3ed51623
+  state: working_tree
+  inputs:
+  - path: .claude/skills/review-record/SKILL.md
+    sha256: abe8f0aebf9540aaaf5d2e2c2b43a4b17b7d5963d04e084b65e1ada19f4eb6be
+    role: context
+  - path: data/records/metacinnabar.yaml
+    sha256: aa40d1e1b225aed8bc5c4d505f8642982dea97a85acd4c9db1283b22e8dcf5da
+    role: target
+  - path: docs/record-review-profile.md
+    sha256: 01c6f39d0d097876a0446131270df58bb32fa15804c66487419c171719d3ddc0
+    role: context
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/metacinnabar/2026-10-14T215020Z-codex-91f7bf.yaml
+    sha256: d7817703274fb5a4363c2109df161d6618d2ae2e8a087cb0ffe0eca8b32baac9
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire exact maintained mineral owner and CREATE history, identity/taxon
+    authorities, complete primary article and actual official supplement, organism/conditions/controls,
+    graphical evidence, measured/proxy denominators and source conflicts.
+  selection: Assigned canonical single maintained mineral record; successful native
+    inspect before field-by-field assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:metacinnabar
+targets:
+- target_id: cmmmech:metacinnabar
+  path: data/records/metacinnabar.yaml
+  label: Metacinnabar
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/metacinnabar.yaml
+    role: maintained scientific owner
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/metacinnabar.yaml --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed execution; checked one record with zero failures.
+  target_ids:
+  - cmmmech:metacinnabar
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch gate 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual 2026-10-14T21:51:56.716709+00:00 to 2026-10-14T22:00:29.305177+00:00;
+    exit0, unchanged inputs.
+  target_ids:
+  - cmmmech:metacinnabar
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual 2026-10-14T22:00:29.305226+00:00 to 2026-10-14T22:00:57.771048+00:00;
+    exit0, unchanged inputs.
+  target_ids:
+  - cmmmech:metacinnabar
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch gate 3
+  command: uv run --locked cmmmech validate-history --base d26b03c7e8346b0caabb106f1aaf8acc3ed51623
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual 2026-10-14T22:00:57.771079+00:00 to 2026-10-14T22:01:05.397188+00:00;
+    exit0, unchanged inputs.
+  target_ids:
+  - cmmmech:metacinnabar
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual 2026-10-14T22:01:05.397219+00:00 to 2026-10-14T22:01:14.509668+00:00;
+    exit0, unchanged inputs.
+  target_ids:
+  - cmmmech:metacinnabar
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/metacinnabar.yaml
+  locator: 'All exact inspected fields. Artifact: /private/tmp/CMMMech-expansion-round82-20261014/data/records/metacinnabar.yaml'
+  accessed_at: '2026-10-14T22:02:28.468525Z'
+  support: supports
+  summary: Supported scope, limitations and distinct mineral identity preserved.
+  snapshot_sha256: aa40d1e1b225aed8bc5c4d505f8642982dea97a85acd4c9db1283b22e8dcf5da
+- evidence_id: history
+  kind: record_content
+  reference: history/records/metacinnabar/2026-10-14T215020Z-codex-91f7bf.yaml
+  locator: 'Complete CREATE sidecar and separate inline event. Artifact: /private/tmp/CMMMech-expansion-round82-20261014/history/records/metacinnabar/2026-10-14T215020Z-codex-91f7bf.yaml'
+  accessed_at: '2026-10-14T22:02:28.468525Z'
+  support: supports
+  summary: Current actual UTC, GPT-6/codex actor, exact target and stated curation
+    agree; no backdated attribution.
+  snapshot_sha256: d7817703274fb5a4363c2109df161d6618d2ae2e8a087cb0ffe0eca8b32baac9
+- evidence_id: main
+  kind: primary_source
+  reference: https://doi.org/10.3389/fmicb.2015.00596
+  locator: 'Complete 11-page primary original read; all Figures 1–7 and Table 1 visually
+    inspected. Methods pp2–4, Results/Discussion pp4–9, especially Figure3/Table1
+    p7, Figure4/5 p8, Figure6/7 p9. Artifact: /private/tmp/cmm-round82-sulfides-research/vazquez2015.pdf'
+  accessed_at: '2026-10-14T22:02:28.468525Z'
+  support: supports
+  summary: Natural feed provenance, experimental design and comparative sulfate/aqueous/volatile
+    mercury observations support the narrowed coupled transformation claim.
+  snapshot_sha256: d6f84d1d8505fe9136f3f4f96e02746cc2f12bd18f12753a84f13d8ca87fbbf8
+- evidence_id: si
+  kind: primary_source
+  reference: https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2015.00596/full#supplementary-material
+  locator: 'Complete official 11-page PDF including cover, all Figures S1–S5, Tables
+    S1–S3 and Data S1 read and visually inspected. S1 PDF4, S2 PDF5, S3 PDF6, DataS1
+    PDF7, S4 PDF8, S5 PDF9, TableS3 PDF10. Artifact: /private/tmp/cmm-round82-sulfides-research/vazquez2015-media/SupplementaryMaterial.PDF'
+  accessed_at: '2026-10-14T22:02:28.468525Z'
+  support: supports
+  summary: Unmatched four-week sterile control, sulfur carryover, partial merA sequence
+    and normalized-rate/low-arm unit conflicts verified independently.
+  snapshot_sha256: 2156d38dfc53cf7e6b9ef19285d834fbb388544749c452bbe025691aea2a56f8
+- evidence_id: ima
+  kind: primary_source
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'Exact September2026 row on PDF141 visually checked; G status/1870 description
+    year and definitions. Artifact: /private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf'
+  accessed_at: '2026-10-14T22:02:28.468525Z'
+  support: context_only
+  summary: HgS mineral species recognized; grandfathered year is not an invented unique
+    IMA accession.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: primary_source
+  reference: https://www.handbookofmineralogy.org/pdfs/metacinnabar.pdf
+  locator: 'Complete one-page entry independently read/visually inspected: cubic HgS,
+    powder pattern, natural substitution chemistry, polymorphs. Artifact: /private/tmp/cmm-round82-sulfides-research/metacinnabar-handbook.pdf'
+  accessed_at: '2026-10-14T22:02:28.468525Z'
+  support: context_only
+  summary: Mineral identity separated from cinnabar/hypercinnabar, mixed feed and
+    unspecified precipitates.
+  snapshot_sha256: adbdadc828a02afbdc011b4b7181532b7f7d9b54cb92824f5df2cf0bc13089c5
+- evidence_id: taxonomy
+  kind: primary_source
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=931&mode=Info
+  locator: 'Current complete XML read; taxon931 species Thiobacillus thioparus and
+    type-material ATCC8158/DSM505. Live NCBI/ATCC/LPSN search independently corroborates
+    culture equivalence. Artifact: /private/tmp/cmm-round82-sulfides-research/taxonomy.xml'
+  accessed_at: '2026-10-14T22:02:28.468525Z'
+  support: context_only
+  summary: Species mapping and reported culture label supported; authority entry does
+    not authenticate the actual experimental vial.
+  snapshot_sha256: 22bead59552c1a17a4abf3e1348c2378053912ba0250abb4da6c6ffcc5a9a7c7
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round82-metacinnabar-review/dedup.json
+  locator: 'Actual rg --no-ignore --hidden --follow across current/main records/research/reviews/history
+    and the cited round82 sulfides raw directory. Artifact: /private/tmp/cmm-round82-metacinnabar-review/dedup.json'
+  accessed_at: '2026-10-14T22:02:28.468525Z'
+  support: context_only
+  summary: Related mercury/sulfide contexts do not make this phase owner duplicate;
+    scoped ignored-inclusive search and source lineage retained.
+  snapshot_sha256: 10148d7ec77ab206f35411b1c2646a3917b34555e0a7f78f945e98727c7e1c2f
+  search_scope: Actual rg --no-ignore --hidden --follow across current/main records/research/reviews/history
+    and the cited round82 sulfides raw directory.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round82-metacinnabar-review/notice-search.json
+  locator: 'Exact DOI correction/retraction and title/conflict searches, plus type-strain
+    authority search on2026-10-14; first returned sets, no date/domain filter, not
+    exhaustive. Artifact: /private/tmp/cmm-round82-metacinnabar-review/notice-search.json'
+  accessed_at: '2026-10-14T22:02:28.468525Z'
+  support: context_only
+  summary: No matched corrective notice in bounded returned results; intrinsic source
+    conflicts retained.
+  snapshot_sha256: a8425ed87bb3a970de0edb551ca63ce8e3ebe3b7126c2a2826590dda2b406322
+  search_scope: Exact DOI correction/retraction and title/conflict searches, plus
+    type-strain authority search on2026-10-14; first returned sets, no date/domain
+    filter, not exhaustive.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round82-metacinnabar-review/named-validation.json
+  locator: 'Actual independently executed named strict check, 2026-10-14T21:54:16.613747+00:00
+    to 2026-10-14T21:54:23.717030+00:00; log hash 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e.
+    Artifact: /private/tmp/cmm-round82-metacinnabar-review/named-validation.json'
+  accessed_at: '2026-10-14T22:02:28.468525Z'
+  support: supports
+  summary: One record, zero failures.
+  snapshot_sha256: b8881b4d5f40e50294b7475d5f47de5866c82713758ebe24b5d89a99f66da61b
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round82-final-gates.json
+  locator: 'All FOUR completed coordinator commands, 2026-10-14T21:51:56.716133+00:00
+    to 2026-10-14T22:01:14.630323+00:00; retained log /private/tmp/cmm-round82-final-gates.log
+    SHA256 df800072c55c68b58b2d641a7d4be91fce3688f8d018a528ddaad8490410ddd7. Artifact:
+    /private/tmp/cmm-round82-final-gates.json'
+  accessed_at: '2026-10-14T22:02:28.468525Z'
+  support: supports
+  summary: Exact command vectors, terminal exits, trusted base/worktree and unchanged
+    target bytes independently verified.
+  snapshot_sha256: 1a86c9240ba0fabaf4ea06457e54a319f19f4849b336263b695d4376b661bb5d
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral species versus experimental mixed feed
+  outcome: supported
+  summary: Cubic beta-HgS is authority-grounded. Natural museum material, its pyrite
+    inclusions and local XANES evidence are accurately separated from whole-feed purity
+    or synthetic phase authentication. No invented grandfathered approval ID or inherited
+    criticality.
+  target_ids:
+  - cmmmech:metacinnabar
+  evidence_ids:
+  - owner
+  - ima
+  - handbook
+  - main
+  - si
+- assessment_id: organism
+  area: evidence
+  topic: Culture, medium and arm boundaries
+  outcome: supported
+  summary: Source ATCC8158 and current NCBI931 are correctly scoped. Room-temperature
+    dark aerobic unshaken assay, pH7 medium, 2g/L <250µm natural feed, 30C five-day
+    pregrowth, 1:100 and washed 1:50 inocula and carryover are supported. The 20mM
+    arm and nominal daily100µM comparison remain distinct; Methods actual125–132µM
+    retained.
+  target_ids:
+  - cmmmech:metacinnabar
+  evidence_ids:
+  - owner
+  - main
+  - si
+  - taxonomy
+- assessment_id: controls
+  area: evidence
+  topic: Biotic contribution without exclusive necessity
+  outcome: supported
+  summary: Live, killed, no-HgS and no-cell evidence supports enhanced transformation,
+    with killed treatment chemistry and EDTA comparator separated. Six-week field
+    and four-week sterile observations do not isolate field microbial necessity; classified-read
+    denominator remains scoped.
+  target_ids:
+  - cmmmech:metacinnabar
+  evidence_ids:
+  - main
+  - si
+  - owner
+- assessment_id: quantity
+  area: quantity
+  topic: Dissolution proxy and emitted mercury
+  outcome: supported
+  summary: Figures3–5 combine sulfate, aqueous and volatile mercury observations.
+    Gold-trap fluorescence and rate integration establish an emitted-Hg observation,
+    not purified recovery. Table1 fraction derives from sulfate differences; whole-feed
+    Hg balance and phase-specific yield absent. Method duplicate versus biological
+    replicate captions are correctly distinguished.
+  target_ids:
+  - cmmmech:metacinnabar
+  evidence_ids:
+  - main
+  - si
+  - owner
+- assessment_id: molecular
+  area: evidence
+  topic: Genetic potential and unresolved units
+  outcome: supported
+  summary: DataS1 partial merA sequence is not expression or necessity. FigureS5 nanograms
+    versus main/TableS3 attograms, and low-arm mM versus micromolar, are explicit.
+    No disputed normalized rate or global-flux extrapolation accepted.
+  target_ids:
+  - cmmmech:metacinnabar
+  evidence_ids:
+  - main
+  - si
+  - owner
+- assessment_id: scope
+  area: scope
+  topic: Laboratory transformation, field association and deployment
+  outcome: supported
+  summary: Natural/synthetic comparison cannot isolate surface area or iron cause.
+    Mercury volatilization is not remediation success or detoxification, and no industrial
+    or recovered-product claim is made.
+  target_ids:
+  - cmmmech:metacinnabar
+  evidence_ids:
+  - main
+  - si
+  - owner
+- assessment_id: provenance
+  area: provenance
+  topic: Canonical history and exact working inputs
+  outcome: supported
+  summary: Current target/history match inspection, appropriate actor/time/target
+    provenance retained. Independently executed named check and actual four-command
+    batch pass against the trusted base; reviewer made no owner edits.
+  target_ids:
+  - cmmmech:metacinnabar
+  evidence_ids:
+  - owner
+  - history
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- Natural museum metacinnabar contains pyritic inclusions; no whole-feed quantitative
+  diffraction or post-sterilization phase-purity demonstration is supplied. Commercial
+  black HgS comparison also differs in surface area and composition.
+- Field community association after six weeks and sterile freshwater control after
+  four weeks are unmatched. The laboratory culture supports a narrower causal contribution;
+  it does not authenticate a field causal strain or an exclusive cellular attack pathway.
+- Inoculum elemental sulfur and low-level thiosulfate carryover, killed-cell chemistry
+  and separate EDTA series complicate attribution. Sulfate differences are a proxy,
+  not recovered mineral or total mercury fraction.
+- Main text/Table S3 attograms conflict with Figure S5 nanograms per cell per day;
+  Table S3 low-arm 40 mM conflicts with 40 micromolar elsewhere. No normalized rate
+  or extrapolated global emissions is adopted.
+- A 285-base-pair merA fragment supports genetic potential without expression, enzymatic
+  activity or necessity tests. No isolated recovery, complete Hg balance, detoxification
+  proof or industrial deployment.
+- Bounded correction searches and current authority checks do not establish universal
+  absence of later corrections. Structural validation cannot prove scientific truth.
+notes:
+- No owner or canonical history changes were made by this reviewer.
+- An initial unsaved review draft was rejected for a noncanonical target-kind label
+  and UTC suffix format. The first draft/log and native inspection remain external;
+  a canonical-kind reinspection confirmed identical scientific inputs, and the start
+  instant was formatted with Z without changing its value.
+- All four actual coordinator batch commands and retained log hash were checked against
+  unchanged target bytes. Named strict validation was independently executed.
+- Only vazquez2015-media/SupplementaryMaterial.PDF is the official accepted supplement.
+  The curator raw folder also contains an unassigned JA93 file, explicitly excluded
+  from this assessment.
+```

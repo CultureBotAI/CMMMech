@@ -1,0 +1,145 @@
+id: cmmmech:metacinnabar
+name: Metacinnabar
+material_kind: mineral
+description: >-
+  Metacinnabar is the cubic mercury sulfide mineral beta-HgS, distinct from
+  trigonal cinnabar, hypercinnabar, elemental mercury and unspecified Hg-S
+  precipitates. The September 2026 IMA list gives grandfathered status and
+  original-description year 1870, not a unique approval accession. The curated
+  experiment concerns mercury mobilization and reduction from mineral feed,
+  not microbial formation of this species or a purified recovery product.
+  No mercury or selenium criticality designation is inherited.
+sources:
+  - id: ima_2026_09
+    title: >-
+      IMA-CNMNC. The New IMA List of Minerals, September 2026. Metacinnabar
+      row, PDF page 141; page 1 defines grandfathered status and description
+      years. Retained complete original rechecked.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-14'
+  - id: handbook_metacinnabar
+    title: >-
+      Handbook of Mineralogy. Metacinnabar, version 1 (2001-2005), complete
+      one-page entry: cubic HgS crystal data, synthetic powder pattern and
+      distinction from cinnabar and hypercinnabar.
+    url: https://www.handbookofmineralogy.org/pdfs/metacinnabar.pdf
+    accessed_on: '2026-10-14'
+  - id: vazquez_rodriguez2015
+    title: >-
+      Vazquez-Rodriguez, Hansel, Zhang, Lamborg, Santelli, Webb and Brooks
+      (2015). Microbial- and thiosulfate-mediated dissolution of mercury
+      sulfide minerals and transformation to gaseous mercury. Frontiers in
+      Microbiology 6:596. Complete 11-page original, Methods, Figures 1-7
+      and Table 1; official Supplementary Material, 11 PDF pages including
+      cover, Figures S1-S5, Tables S1-S3 and Data S1.
+    url: https://doi.org/10.3389/fmicb.2015.00596
+    accessed_on: '2026-10-14'
+  - id: ncbi_thioparus
+    title: >-
+      NCBI Taxonomy 931. Thiobacillus thioparus, species-rank entry; type
+      material includes ATCC 8158 and DSM 505. Species mapping does not
+      independently authenticate the experimental culture.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=931&mode=Info
+    accessed_on: '2026-10-14'
+mechanisms:
+  - id: thioparus_associated_hg_mobilization_reduction
+    name: Coupled chemical and bacterial mobilization and reduction of mineral-hosted mercury
+    process: redox_transformation
+    microbial: true
+    organisms:
+      - id: NCBITaxon:931
+        label: Thiobacillus thioparus
+    description: >-
+      Axenic Thiobacillus thioparus ATCC 8158 incubations with source-assigned
+      metacinnabar produced more volatile mercury than killed-cell or
+      no-mineral controls. Sulfate production supports a contribution from
+      microbial sulfur oxidation, while thiosulfate also promoted chemical
+      dissolution. The results support coupled mobilization and Hg(II)
+      reduction under these conditions, without establishing an exclusive
+      molecular pathway or direct cellular attack on a pure mineral phase.
+    context: >-
+      Laboratory aerobic, dark, unshaken incubations at room temperature in
+      100 mL serum vials used pH-7-buffered freshwater medium and 2 g/L ground
+      natural museum metacinnabar, sieved below 250 micrometres and autoclaved
+      under nitrogen. The natural specimen contains pyritic inclusions.
+      Cells were pregrown for five days at 30 degrees C with 20 mM thiosulfate,
+      concentrated and inoculated at 1:100; washed zero-added-thiosulfate
+      assays also used 1:50. Residual elemental sulfur was carried with cells,
+      and 40-100 micromolar thiosulfate arms used inoculum carryover rather
+      than a separate addition. A 20 mM arm and a separate daily-spike
+      comparison with commercial synthetic black HgS were also tested.
+      Controls included no mineral, no cells and autoclave- or formaldehyde-killed
+      cells; killed treatments are not chemically identical to living cells.
+      Gold traps and cold-vapor fluorescence measured volatile Hg; cumulative
+      emissions were interpolated from sampled rates. These laboratory
+      transformations and separate field associations are not industrial
+      deployment, detoxification proof or an isolated mercury recovery yield.
+    evidence:
+      - source_ref: vazquez_rodriguez2015
+        supports: support
+        explanation: >-
+          Pure Culture Incubations and Figures 3-5 show relatively low aqueous
+          Hg with viable cells but higher volatile Hg than killed-cell and
+          no-HgS controls. Figure 5 reports two to four biological replicates,
+          whereas Figures 3-4 use method-duplicate error bars. Aqueous Hg
+          depletion alone therefore is not the evidence for dissolution.
+          Gold-trap emissions, sulfate changes and the controls jointly
+          support the narrower transformation claim.
+      - source_ref: vazquez_rodriguez2015
+        supports: partial
+        explanation: >-
+          Table 1 calculates a microbial dissolution contribution from
+          sulfate differences between live-plus-mineral, live-without-mineral
+          and killed-plus-mineral arms after correcting sulfate carryover.
+          Its reported 48-68 percent is a proxy-derived contribution to
+          dissolution, not the fraction of total mineral or mercury recovered.
+          Supplementary Figure S3 shows substantial sulfate production from
+          inoculum sulfur without mineral. Thus sulfur carryover, pyritic
+          inclusions and chemical dissolution limit mineral-specific mass
+          attribution; no complete Hg mass balance or bulk phase-purity
+          measurement is supplied.
+      - source_ref: vazquez_rodriguez2015
+        supports: support
+        explanation: >-
+          Figure 4 retains substantial Hg release in killed incubations and
+          the effect of thiosulfate; its panel B separately identifies an
+          EDTA-containing series. Figures 6-7 compare natural and higher-surface-area
+          synthetic material during daily thiosulfate additions and show
+          variable volatile-Hg responses. Methods specify actual spikes of
+          125-132 micromolar despite the nominal 100 micromolar figure label.
+          These comparisons do not isolate particle size or iron impurity as
+          the cause and do not establish that biology is necessary for dissolution.
+      - source_ref: vazquez_rodriguez2015
+        supports: partial
+        explanation: >-
+          Figures 1-2 and Supplementary Figures S1-S2 support the authors'
+          beta-HgS assignment through mineral provenance and local sulfur
+          XANES comparisons, with pyrite present; they are not quantitative
+          whole-feed diffraction or proof of pure metacinnabar after sterilization.
+          Six-week field sections developed sulfur oxidation products and
+          Thiobacillus-rich classified reads. The sterile freshwater comparison
+          in S1 lasted four weeks, and differs from field conditions, so this
+          is an association rather than an isolated field causal test.
+      - source_ref: vazquez_rodriguez2015
+        supports: partial
+        explanation: >-
+          The 285-base-pair merA fragment in Supplementary Data S1 establishes
+          genetic potential, not expression, enzyme activity or necessity;
+          no merA mutant or complementation experiment is reported. Main text
+          and Table S3 express cell-normalized rates in attograms, whereas
+          Figure S5 axis/caption says nanograms per cell per day; this unit
+          conflict is left unresolved and no normalized rate is adopted.
+          Table S3 also labels low-thiosulfate scenarios as 40 mM where S4-S5
+          and the main experiment use 40 micromolar. Its global extrapolation
+          is not curated as an observed environmental flux.
+curation_history:
+  - timestamp: '2026-10-14T21:50:30Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Created metacinnabar from complete primary and official supplementary
+      evidence for coupled chemical dissolution and microbial mercury reduction,
+      retaining mixed-feed identity, controls, proxy denominators and unresolved
+      source-unit conflicts without recovery or criticality extrapolation.
+history_refs:
+  - history/records/metacinnabar/2026-10-14T215020Z-codex-91f7bf.yaml
