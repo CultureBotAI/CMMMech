@@ -1,0 +1,302 @@
+schema_version: 1.0.0
+review_id: 20261014T132357Z-realgar-round72-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of realgar
+started_at: '2026-10-14T13:17:15.488133Z'
+finished_at: '2026-10-14T13:23:57.525717Z'
+reviewer:
+  identity: codex /root/round68_new_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The reviewed arsenic-sulfide owners and their histories were
+    curated by /root/round68_iron_sulfides. This reviewer curated only albite and
+    orthoclase in round72 and made no edits to the reviewed owners or histories. Acquired
+    raw sources are shared, but original text, all claim-bearing figures/tables, authorities
+    and exact record bytes were independently examined; this is independent assessment,
+    not independent experimental replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified independent acceptance of realgar identity and culture-associated,
+  transient arsenic mobilization. Original figures, methods and reported peak support
+  the bounded record; late reversal, impurity/purity conflict and unisolated ferric/retention
+  interpretations remain explicit. No corrective defect identified.
+source:
+  git_revision: a2f08edab1307aba4281ce1e2a54d84bca88a889
+  state: working_tree
+  inputs:
+  - path: data/records/realgar.yaml
+    sha256: 6d032608db690eb08faf4c3f116186b7d0c843f2eb1faedcd02ae744aff996d9
+    role: target
+  - path: history/records/realgar/2026-10-14T130931Z-codex-1ce5df.yaml
+    sha256: 9f66912b0e9f4698bf24b75c5606dc320fd047a8cb364d31cfe4abda6ba3b16b
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire maintained record and linked canonical history; independent
+    original-source assessment of all accepted scientific claims.
+  selection: Assigned frozen owner; native inspect before record-level judgment and
+    exact input hashes rechecked at save.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:realgar
+targets:
+- target_id: cmmmech:realgar
+  path: data/records/realgar.yaml
+  label: Realgar
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/realgar.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Named strict validation
+  command: uv run --locked cmmmech validate data/records/realgar.yaml data/records/orpiment.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Reviewer executed;2 records,0 failures.
+  target_ids:
+  - cmmmech:realgar
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Completed batch check 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T13:17:12.131110+00:00 through 2026-10-14T13:20:48.706062+00:00;
+    receipt and log hash independently checked.
+  target_ids:
+  - cmmmech:realgar
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Completed batch check 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T13:20:48.706092+00:00 through 2026-10-14T13:20:56.556799+00:00;
+    receipt and log hash independently checked.
+  target_ids:
+  - cmmmech:realgar
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Completed batch check 3
+  command: uv run --locked cmmmech validate-history --base a2f08edab1307aba4281ce1e2a54d84bca88a889
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T13:20:56.556822+00:00 through 2026-10-14T13:21:01.412318+00:00;
+    receipt and log hash independently checked.
+  target_ids:
+  - cmmmech:realgar
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/realgar.yaml
+  locator: Complete final owner
+  accessed_at: '2026-10-14T13:23:57.525717Z'
+  support: supports
+  summary: Read every field, source reference and frozen byte hash.
+  snapshot_sha256: 6d032608db690eb08faf4c3f116186b7d0c843f2eb1faedcd02ae744aff996d9
+- evidence_id: history
+  kind: record_content
+  reference: history/records/realgar/2026-10-14T130931Z-codex-1ce5df.yaml
+  locator: Entire linked canonical sidecar
+  accessed_at: '2026-10-14T13:23:57.525717Z'
+  support: supports
+  summary: Target, actor, actual timestamp and finished curation/correction details
+    checked against inline history.
+  snapshot_sha256: 9f66912b0e9f4698bf24b75c5606dc320fd047a8cb364d31cfe4abda6ba3b16b
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions pages1-2 and species row 183
+  accessed_at: '2026-10-14T13:23:57.525717Z'
+  support: supports
+  summary: Original retained IMA row visually checked for exact species, formula,
+    status and historical date. No constituent criticality inherited.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/realgar.pdf
+  locator: Complete one-page mineral entry
+  accessed_at: '2026-10-14T13:23:57.525717Z'
+  support: supports
+  summary: Formula and crystallographic identity checked; authority entry is not experimental
+    phase-purity certification.
+  snapshot_sha256: e465fcfd17baf122b2034fd9aba45a71ca911a64918bc968a8f66a46efd4e659
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
+  locator: Species-level920,current name and rank
+  accessed_at: '2026-10-14T13:23:57.525717Z'
+  support: supports
+  summary: Retained source and independent current NCBI browser agree on A.ferrooxidans
+    species; no strain-resolution claim.
+  snapshot_sha256: c6d264e2f6ed730350be86773d9564c7427f7f089b57ed566d6494e3bd21a4ac
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.2436/20.1501.01.154
+  locator: Complete original7pages; methods p10; Figures1–3/Table1 and results pp11–14
+  accessed_at: '2026-10-14T13:23:57.525717Z'
+  support: supports
+  summary: Independently read original and visually inspected SEM, XRD/Raman, EDS
+    table. Verified 121.95mg/L day15 versus16.44 sterile, later belowcontrol byday25;
+    source99.01% purity versus97%realgar/3%arsenolite retained. Ratio/formula inconsistency
+    and unreported mass balance are preserved.
+  snapshot_sha256: 35f563e0e461374ba9cc6525adfa0b07d7f4653ca159b9eded2e7a0127a9df1d
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round72-arsenic-independent/dedup.txt
+  locator: Records/research/reviews/history and referenced current raw source directory
+  accessed_at: '2026-10-14T13:23:57.525717Z'
+  support: context_only
+  summary: Hidden/ignored-inclusive search with relevant symlinks followed; related
+    elemental owner and source lineages distinguished.
+  search_scope: rg --no-ignore --hidden --follow -n -i realgar|orpiment|met9121320|1501.01.154|2022-2028.1997
+    data/records research reviews history and /private/tmp/cmm-round72-arsenic-sulfides-research
+  snapshot_sha256: 47b002948e60732ae235d788fe31c20fa9df831d84d45d25d53301368f045990
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round72-arsenic-independent/notice-search.json
+  locator: Independent exact DOI queries and direct NCBI/MDPI checks
+  accessed_at: '2026-10-14T13:23:57.525717Z'
+  support: context_only
+  summary: No relevant notice surfaced in bounded returned results; ASM erratum relates
+    to another study and MDPI landing returned429. Retained original sources remain
+    assessed.
+  search_scope: Three exact-DOI queries plus correction/retraction/supplement, first
+    batches, no filters; no universal absence claim.
+  snapshot_sha256: 88b7fd4dde4a9d71df8d3cdd5a574a971965a576c46f0fd539f9959d403e6389
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round72-arsenic-independent/named-validation.log
+  locator: Reviewer execution log
+  accessed_at: '2026-10-14T13:23:57.525717Z'
+  support: supports
+  summary: Named validation passed on both frozen owners.
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round72-final-gates.json
+  locator: Completed root batch receipt and matching log
+  accessed_at: '2026-10-14T13:23:57.525717Z'
+  support: supports
+  summary: Required commands completed successfully; exact worktree/base, exit codes
+    and nonempty log checksum independently verified.
+  snapshot_sha256: b5b2d551ac899632844d0d3a3f9dbc95897408e73a7ccec69513cdb22a1352e7
+- evidence_id: artifact_audit
+  kind: validation
+  reference: /private/tmp/cmm-round72-arsenic-independent/source-artifact-audit.json
+  locator: Actual nonempty original PDF/source sizes, hashes and PDF signatures/page
+    counts
+  accessed_at: '2026-10-14T13:23:57.525717Z'
+  support: context_only
+  summary: Checked actual inspected original PDFs and taxonomy capture rather than
+    failed download filenames.
+  snapshot_sha256: 161cf7df1372354f2c833fd3c20a5f7b5a3f113b578aa80ea5761aa21d8823f9
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species, material and organism boundaries
+  outcome: supported
+  summary: Dated IMA and Handbook identities support separate monoclinic mineral owners;
+    no elemental criticality is inherited. NCBI920 identifies A. ferrooxidans at species
+    rank, not a deposited assay strain.
+  evidence_ids:
+  - ima
+  - handbook
+  - taxonomy
+  - record
+  target_ids:
+  - cmmmech:realgar
+- assessment_id: provenance
+  area: provenance
+  topic: History and source lineage
+  outcome: supported
+  summary: Actual CREATE sidecar and inline entry identify this new owner, curator
+    and current source assessment; named checks and shared batch gates bind exact
+    reviewed bytes.
+  evidence_ids:
+  - history
+  - record
+  - named
+  - batch
+  target_ids:
+  - cmmmech:realgar
+- assessment_id: mechanism
+  area: evidence
+  topic: Live culture, substrate and outcome
+  outcome: supported
+  summary: The matched uninoculated flask supports a culture-associated difference
+    under iron-rich9K conditions; peak and late reversal are both retained. SEM attachment
+    does not prove a direct enzyme pathway.
+  evidence_ids:
+  - primary
+  - record
+  details: Methods confirm 0.5g feed/100mL,30°C,150rpm,initialpH1.7,30days and at
+    leastduplicates. Iron in medium and arsenolite confound phase-specific release;
+    phase percentages are residual relative abundances.
+  target_ids:
+  - cmmmech:realgar
+- assessment_id: uncertainty
+  area: evidence
+  topic: Competing explanations and source inconsistencies
+  outcome: supported
+  summary: The record narrows overstrong source interpretations and preserves material/purity
+    and Table1 stoichiometry conflicts.
+  evidence_ids:
+  - primary
+  - record
+  target_ids:
+  - cmmmech:realgar
+- assessment_id: scope
+  area: scope
+  topic: Laboratory evidence and recovery boundary
+  outcome: supported
+  summary: No constituent criticality, extracted-product yield, industrial deployment
+    or anticancer result is inferred.
+  evidence_ids:
+  - record
+  - primary
+  target_ids:
+  - cmmmech:realgar
+findings: []
+actions: []
+limitations:
+- BY-3 collection designation is source-reported; no independently resolved strain
+  accession or starting cell density.
+- Natural powder includes arsenolite and reported purity measures are not reconciled.
+  Total aqueous arsenic is not a realgar-specific yield.
+- No time-matched pH control, contact-separation experiment, closed arsenic balance
+  or direct retention speciation; later culture concentration is below sterile control.
+- No original concentration-time plot, uncertainty or explicit filtration description
+  for quoted soluble As values. No industrial or medical-effect claim is accepted.
+- Independent bounded notice search does not prove absence of every correction or
+  inaccessible supplement; current MDPI page returned429, but original retained fulltext/graphics
+  were assessed.
+notes:
+- No claim of pure-phase recovery, industrial deployment or universal microbial necessity
+  is inferred. Full source files remain outside Git.
+- All evidence hashes bind nonempty actual inspected artifacts. The realgar2012.pdf
+  HTML viewer is not used as PDF evidence; the actual realgar2012-original.pdf is
+  bound.

@@ -1,0 +1,73 @@
+id: cmmmech:albite
+name: Albite
+material_kind: mineral
+description: Albite is the triclinic sodium feldspar mineral with ideal formula NaAlSi3O8. The September
+  2026 IMA list marks it grandfathered (G; historical year 1815), not with a numbered approval accession.
+  It is distinct from the feldspar commodity, the potassium-feldspar family, other plagioclase compositions
+  and mixed ores containing albite. The accepted dissolution evidence concerns source-identified Amelia
+  clevelandite under abiotic laboratory conditions; neither microbial activity nor criticality is inferred
+  from elemental composition.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026; definitions pp.1–2 and Albite row PDF
+    p.6. Previously acquired official original re-inspected 14 October 2026.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: albite_handbook
+  title: 'Handbook of Mineralogy: Albite, 2001 version 1.2, complete one-page entry; triclinic feldspar
+    and plagioclase-series identity, ideal and calcium-substituted compositions.'
+  url: https://www.handbookofmineralogy.org/pdfs/albite.pdf
+  accessed_on: '2026-10-14'
+- id: chou1985
+  title: Chou, L.; Wollast, R. (1985). Steady-state kinetics and dissolution mechanisms of albite. American
+    Journal of Science 285(10):963–993. DOI 10.2475/ajs.285.10.963; complete original, methods pp.969–970,
+    Figures 1–13 and Tables 1–2.
+  url: https://doi.org/10.2475/ajs.285.10.963
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: abiotic_solution_dependent_dissolution
+  name: Solution-dependent abiotic dissolution of Amelia albite
+  process: other
+  microbial: false
+  description: Flow-reactor experiments measured initially nonstoichiometric Na, Al and Si release followed
+    by approximately congruent dissolution after sufficient reaction time. Dissolution depended on solution
+    composition and renewal rate. A sodium-depleted surface layer and activated surface complexes were
+    proposed from these data; their geometry and molecular identities were not directly established.
+  context: The study used handpicked Amelia albite (clevelandite), ground to 50–100 micrometres, repeatedly
+    acetone-cleaned ultrasonically and dried overnight at 100 degrees C. Each dissolution run used 4 g
+    in a fluidized-bed reactor at room temperature and pressure. HCl solutions supplied acidic conditions;
+    Ba-, Li- or Na-hydroxide/chloride solutions supplied alkaline conditions with the corresponding cation
+    held constant. Separate pH 3 experiments varied added Na, Al or Si and solution flow. Table 1 and
+    Figure 3 follow sequential solution changes on the same solid sample, not independent replicates.
+    Handpicking is reported, but this paper does not supply a new quantitative phase-purity assay.
+  evidence:
+  - source_ref: chou1985
+    supports: support
+    explanation: Methods pp.969–970 and Results pp.971–980; Table 1 and Figures 1–8 distinguish the batch
+      back-titration exchange experiment from continuous-flow dissolution. Initial Na release is disproportionately
+      large; renewed transients follow changes in solution chemistry. The alkaline run approaches relatively
+      congruent release, with faster steady dissolution at higher alkaline pH. At pH 3, added Al has a
+      stronger inhibitory effect than Na or Si over the tested ranges; sodium-rich alkaline solutions
+      retard dissolution relative to the lithium-containing comparison.
+  - source_ref: chou1985
+    supports: partial
+    explanation: Figures 4 and 10 estimate hypothetical layer thickness from solution mass balances and
+      assumed reactive surface area; Figures 9 and 11–13 concern thermodynamic or kinetic interpretation,
+      not direct imaging of a uniform film. Discussion pp.980–991 explicitly lacks direct discrimination
+      of hydrogen versus hydronium feldspar and notes prior surface-spectroscopy failures to detect a
+      layer. Preferential attack at defects and a discontinuous layer remain compatible with the observations.
+      The model excludes some smaller solute effects and is not a uniquely demonstrated molecular pathway.
+  - source_ref: chou1985
+    supports: context_only
+    explanation: Figure 5 and later model comparisons incorporate the authors' earlier experiments, so
+      these are not independent replications. The discussion contrasts a different potassium-rich Hybla
+      feldspar that did not reach congruent dissolution; that result is not relabelled as an albite control.
+      No organism, biological enhancement, isolated-product recovery or industrial deployment was tested.
+curation_history:
+- timestamp: '2026-10-14T13:14:52.869476+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created albite from dated mineral authorities and the complete original abiotic dissolution
+    study, preserving model uncertainty, source lineage and species boundaries.
+history_refs:
+- history/records/albite/2026-10-14T131456Z-codex-bb5a3d.yaml

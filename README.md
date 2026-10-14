@@ -8,10 +8,17 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 334 material records.
+The catalogue currently contains 341 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Albite](data/records/albite.yaml) | Controlled abiotic dissolution of characterized clevelandite | Transient sodium release and model-dependent surface interpretation; no microbial mechanism |
+| [Orthoclase](data/records/orthoclase.yaml) | Abiotic alkaline flow-through dissolution of Na-bearing orthoclase | One interrupted experiment, model-dependent projections and no microbial or recovery claim |
+| [Aragonite](data/records/aragonite.yaml) | Carbonate phase formation in bacterial culture experiments | Mixed products, abiotic precipitation and incomplete causal controls constrain attribution |
+| [Monohydrocalcite](data/records/monohydrocalcite.yaml) | Source-assigned hydrated carbonate in bacterial culture products | Conflicting phase labels and strain-accession identity remain explicit |
+| [Realgar](data/records/realgar.yaml) | Acidophile-associated arsenic mobilization from characterized realgar feed | Early enhancement reverses at later sampling; mixed feed and inferred sequestration limit mechanism claims |
+| [Orpiment](data/records/orpiment.yaml) | XRD-assigned secondary phase during arsenopyrite culture leaching | Shared mixed-feed experiment; no phase-specific biological increment or passivation causality |
+| [Hydrocerussite](data/records/hydrocerussite.yaml) | Lead-carbonate phase in processed bacterial cell products | Mixed phases, conflicting phosphate labels and biomass units prevent condition-specific yield claims |
 | [Calcite](data/records/calcite.yaml) | Bacterial carbonate formation in synthetic terbium solution and natural brine | Early terbium removal without added calcium and mixed solids prevent calcite-specific recovery claims |
 | [Vaterite](data/records/vaterite.yaml) | Source-assigned phase in dried brine-treatment solids | Shared experiment, mixed products and no phase-specific yield or transformation time course |
 | [Nepheline](data/records/nepheline.yaml) | Fungal pitting and aluminium mobilization from characterized Bancroft discs | Mixed mineralogy, sparse sampling and conflicting second-strain labels constrain attribution |
@@ -415,7 +422,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [fifty-ninth expansion reviews](research/ingests/round59-20261012-publication.md),
 [sixtieth expansion reviews](research/ingests/round60-20261012-publication.md),
 [round61 source follow-ups](research/ingests/round61-frontier-20261013.md),
-[round62 records and remaining priorities](research/ingests/round62-frontier-20261014.md), and
+[round62 records and remaining priorities](research/ingests/round62-frontier-20261014.md),
+[round72 records and remaining priorities](research/ingests/round72-frontier-20261014.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 
