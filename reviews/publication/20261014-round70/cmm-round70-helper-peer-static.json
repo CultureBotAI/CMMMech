@@ -1,0 +1,125 @@
+{
+  "recorded_at": "2026-10-14T11:36:28.700470+00:00",
+  "reviewer": "codex GPT-6 /root/round68_iron_sulfides",
+  "authorship": "Independent operational peer; authored boehmite/gibbsite scientific owners reviewed separately by root. Did not author publication helpers.",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "unresolved_corrective_findings": 0,
+  "findings": [],
+  "inputs": [
+    {
+      "name": "commit",
+      "path": "/private/tmp/cmm-round70-commit.py",
+      "sha256": "45733d85351b34c6620b1b7f27bc576c75aacbd02c7623c633a3bf4b50b2fc3e",
+      "matches_derivation_hash": true,
+      "transformed_predecessor_difference": "--- \n+++ \n@@ -40,7 +40,7 @@\n m=json.loads((root/'research/ingests/round70-frontier-20261014.json').read_text())\n assert all(sha(root/item['path'])==item['sha256'] for item in m['artifacts'])\n allowed=['README.md','research/ingests/round70-frontier-20261014.md','research/ingests/round70-frontier-20261014.json']\n-prefixes=['pages/','reviews/publication/20261014-round70/','research/sources/round70-silicates/','research/sources/round70-ironoxides/','research/sources/round70-phosphates/','research/sources/round70-meta-autunite-access/']\n+prefixes=['pages/','reviews/publication/20261014-round70/','research/sources/round70-silicates/','research/sources/round70-aluminium-minerals/','research/sources/round70-phosphates/','research/sources/round70-carbonates-handoff/']\n allowed += [a['path'] for a in m['artifacts'] if a['path'].startswith('reviews/structured/')]\n for r in m['records_changed']:\n     allowed += [r['path'],*r['history'],r['review'],r['review'].replace('review.yaml','review.md')]\n"
+    },
+    {
+      "name": "open-pr",
+      "path": "/private/tmp/cmm-round70-open-pr.py",
+      "sha256": "e4c1cfc5274b3e1272f3223d07fec5e1735b5fc95de777b2a69ac182132b62dd",
+      "matches_derivation_hash": true,
+      "transformed_predecessor_difference": ""
+    },
+    {
+      "name": "post-review",
+      "path": "/private/tmp/cmm-round70-post-review.py",
+      "sha256": "169ccf82d91f22762950067beaacbb6c1dc06c21b343711d90b62064d90e3336",
+      "matches_derivation_hash": true,
+      "transformed_predecessor_difference": ""
+    },
+    {
+      "name": "enqueue",
+      "path": "/private/tmp/cmm-round70-enqueue.py",
+      "sha256": "83ee535ccfa734927733330cf70862d52645afd2d56501bfd73905309b2bdf6e",
+      "matches_derivation_hash": true,
+      "transformed_predecessor_difference": ""
+    },
+    {
+      "name": "cleanup",
+      "path": "/private/tmp/cmm-round70-cleanup.py",
+      "sha256": "1fb9dff6aaac7353143fc0a69c596c0abb4768f215017f784e5236074bda7972",
+      "matches_derivation_hash": true,
+      "transformed_predecessor_difference": ""
+    },
+    {
+      "name": "hosted-audit",
+      "path": "/private/tmp/cmm-round70-hosted-audit.py",
+      "sha256": "1460e8a5afe3bb4c6767454c92ad2e4226f28032814215249769cddee2d103df",
+      "matches_derivation_hash": true,
+      "transformed_predecessor_difference": ""
+    },
+    {
+      "name": "isolated-verification",
+      "path": "/private/tmp/cmm-round70-isolated-verification.py",
+      "sha256": "d10510767beb43cede3c217ee2b131f954a0f5e759e5e726b763ec2dd7e43091",
+      "matches_derivation_hash": true,
+      "transformed_predecessor_difference": ""
+    },
+    {
+      "name": "isolated-coverage",
+      "path": "/private/tmp/cmm-round70-isolated-coverage.py",
+      "sha256": "c540fc5c3b05114d1b9958d8941562d322272971d20e864613e244f77bf19d7a",
+      "matches_derivation_hash": true,
+      "transformed_predecessor_difference": ""
+    },
+    {
+      "name": "sync-main",
+      "path": "/private/tmp/cmm-round70-sync-main.py",
+      "sha256": "829d106384cf53d975445202600e00553adaa7056b0ce9d574698d01c94b79f0",
+      "matches_derivation_hash": true,
+      "transformed_predecessor_difference": ""
+    },
+    {
+      "name": "preservation-check",
+      "path": "/private/tmp/cmm-round70-preservation-check.py",
+      "sha256": "3de5668166acac4a2155845eec8fc80b6b161a1b2e0c5a1b8ed5162409850d5a",
+      "matches_derivation_hash": true,
+      "transformed_predecessor_difference": ""
+    },
+    {
+      "name": "integration-check",
+      "path": "/private/tmp/cmm-round70-integration-check.py",
+      "sha256": "fda1f91e168efab67260340d35a5a0bad4f35474a78927ada1429c84824fffc1",
+      "matches_derivation_hash": true,
+      "transformed_predecessor_difference": ""
+    },
+    {
+      "name": "review-check",
+      "path": "/private/tmp/cmm-round70-review-check.py",
+      "sha256": "38532cc205abcc3fecd3ca87b253718d4a20ec44b9e5e3f3186007804ac3704d",
+      "matches_derivation_hash": true,
+      "transformed_predecessor_difference": ""
+    },
+    {
+      "name": "gates",
+      "path": "/private/tmp/cmm-round70-gates.py",
+      "sha256": "539e865c79210847d0692f7fec729cad54650c0a4d7bb84577d1f4b96cd41b5d"
+    },
+    {
+      "name": "helper-config",
+      "path": "/private/tmp/cmm-round70-helper-config.json",
+      "sha256": "00bcf18574b4c5f835959363efb614c88f45900a0a7b12438e0c04a60e044a94"
+    }
+  ],
+  "review_scope": [
+    "Read every listed helper and configuration; static AST syntax check without executing mutations.",
+    "Exact trusted base, branch, worktree, source-directory allowlist and round-specific receipt paths checked.",
+    "Commit requires exact positive local audit, integer zero findings, candidate path-set/hashes and configuration equality. Actual extracted function passed13focused fixtures, including stale bytes, extra/missing input, duplicate input, symlink, failed audit, mismatched counts/issues/base and boolean-zero rejection.",
+    "PR create and review bind exact head/text; queue checks live exact main, required CI, posted review and preflight before native enqueue.",
+    "Fresh clones test synthetic/actual squash tree, remote preservation tag, full current scientific coverage and topic-object absence.",
+    "Hosted helper requires actual sole-parent squash and five distinct exact runs with all jobs successful; no mutation.",
+    "Preservation/sync uses guarded imported round57 library with no __main__ execution. Read the library functions and checked nontracked hidden/ignored coverage, symlink-target handling and collision checks.",
+    "Integration and canonical review checks are read-only except scoped logs/receipts."
+  ],
+  "limitations": [
+    "No GitHub, branch, commit, queue or cleanup mutation executed by this audit.",
+    "Closeout and build-report still being rewritten; intentionally excluded for later review.",
+    "Final working package, native review artifacts, full gate receipts and hosted head are separate later audits.",
+    "Coordinator must wait for successful isolated preflight before posting COMMENT; post-review helper alone does not enforce that ordering. Enqueue independently enforces preflight and live-base binding.",
+    "Static audit does not claim race-free atomicity; actual merge sole parent/tree and fresh postmerge checks remain required."
+  ],
+  "fixture_correction": "Initial local fixture mistakenly set both good and bad issues to empty fixed lists, so its mismatched-issues assertion failed. Corrected only synthetic good fixture to fixed:[999], retained initial fixture snapshot; actual helper unchanged. No helper defect or issue inferred.",
+  "regression_receipt": "/private/tmp/cmm-round70-audit-binding-regression.json",
+  "regression_sha256": "a4313f36beaeb6cbda813771cfbda20eaf01e4d8c886bcb4150b32d12f61f0d7"
+}

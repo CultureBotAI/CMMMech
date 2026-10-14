@@ -1,0 +1,168 @@
+id: cmmmech:anorthite
+name: Anorthite
+material_kind: mineral
+description: Anorthite is the calcium-rich plagioclase feldspar species with ideal endmember formula
+  Ca(Al2Si2O8), grandfathered in the September 2026 IMA list with original-description year 1823.
+  It is distinct from elemental calcium, aluminium or silicon, generic feldspar and mixed rock resources.
+  The bacterial experiment used natural plagioclase reported as approximately An90; the separate fungal
+  experiment used a purchased, source-assigned anorthite feed with unresolved bulk-composition and phase-purity
+  limitations. Neither feed is assumed to be the pure endmember. No constituent criticality is inherited.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Definitions pages 1-2 and anorthite
+    row page 11, G, 1823. Retained original list row visually re-inspected on 14 October 2026.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: anorthite_handbook
+  title: Handbook of Mineralogy. Anorthite, 2001 version 1.2. Complete one-page entry, plagioclase
+    compositional range and endmember chemistry.
+  url: https://www.handbookofmineralogy.org/pdfs/anorthite.pdf
+  accessed_on: '2026-10-14'
+- id: zhou_2011
+  title: Zhou Yuefei, Wang Rucheng and Lu Xiancai (2011). Microbial adhesion accelerates anorthite
+    dissolution, direct evidence from a dialysis experiment [Chinese original title translated]. Scientia
+    Sinica Terrae 41(10):1454-1462. DOI 10.1360/zd-2011-41-10-1454. Complete nine-page Chinese original,
+    sections 1-4, Figures 1-4 and Table 1 inspected. Front page identifies the corresponding English
+    edition, Anorthite dissolution promoted by bacterial adhesion, Science China Earth Sciences 54:204-211,
+    DOI 10.1007/s11430-010-4068-y; these editions are not independent experiments.
+  url: https://doi.org/10.1360/zd-2011-41-10-1454
+  accessed_on: '2026-10-14'
+- id: ma_2024
+  title: Ma Jiongzheng, Guo Jianying, Liu Shengyu, Chang Chengbing and Wen Quanbao (2024). Growth
+    characteristics of Ramichloridium apiculatum and its effect on Ca2+ and Mg2+ leaching from anorthite.
+    The Chinese Journal of Process Engineering 24(8):982-992. DOI 10.12034/j.issn.1009-606X.223330.
+    Complete 11-page original, sections 2-4, Figures 1-15 and Tables 1-2 inspected.
+  url: https://doi.org/10.12034/j.issn.1009-606X.223330
+  accessed_on: '2026-10-14'
+- id: ncbi_polymyxa
+  title: NCBI Taxonomy 1406. Paenibacillus polymyxa, species. Official taxonomy XML inspected on 14
+    October 2026; this is not a strain identifier.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1406
+  accessed_on: '2026-10-14'
+- id: ncbi_ramichloridium
+  title: NCBI Taxonomy 470080. Ramichloridium apiculatum, species. Official taxonomy XML inspected
+    on 14 October 2026; this does not independently authenticate isolate CMS-1.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=470080
+  accessed_on: '2026-10-14'
+- id: genbank_ramichloridium_reference
+  title: NCBI GenBank NR_145091.1. Ramichloridium apiculatum CBS 156.59 ITS region, from TYPE material.
+    Official sequence XML inspected; the paper's phylogenetic reference sequence is not a CMS-1 deposit.
+  url: https://www.ncbi.nlm.nih.gov/nuccore/NR_145091.1
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: polymyxa_anorthite_contact_comparison
+  name: Element-dependent release during bacterial contact with calcium-rich plagioclase
+  process: bioleaching
+  description: Paenibacillus polymyxa cultures were associated with increased Ca, Al and Si release
+    from source-assigned anorthite relative to a water-only mineral control. Direct-contact cultures
+    released more Al and Si but less Ca than cultures with the mineral enclosed in a dialysis bag.
+    This element-dependent response does not establish that attachment universally accelerates dissolution.
+  context: Zhou et al. selected natural plagioclase from layered amphibole gabbro at Daiqianshan, Putian,
+    Fujian, reporting an An component of approximately 90%, not 90% measured mineral purity. The
+    75-180 micrometre feed was washed five times with ethanol and ultrasonication, treated with pH-4
+    HCl for two hours, rinsed and dried at 70 degrees C. Each flask contained 0.80 g mineral and
+    100 mL liquid; feed and modified Bromfield medium were autoclaved at 121 degrees C for 20 minutes.
+    A CGMCC-sourced P. polymyxa stock was precultured in beef-peptone medium; a pellet from 2 mL culture
+    was washed five times before inoculation. The inspected Chinese original does not specify a culture
+    accession or measured starting cell density. Modified Bromfield medium contained sucrose 0.5%,
+    yeast extract 0.02%, KH2PO4 0.05%, (NH4)2SO4 0.1% and MgSO4·7H2O 0.015% by mass per volume.
+    Triplicate arms used water plus mineral without cells or medium, inoculated medium with freely
+    suspended mineral, and inoculated medium with mineral inside a 14 kDa dialysis bag. Flasks ran
+    at 30 degrees C and 100 rpm for 240 hours, with 5 mL samples at 0, 18, 48, 96, 168 and 240 hours.
+    Samples were acidified to pH 1-2 and held for one hour to desorb cell-bound elements before
+    centrifugation and ICP-AES; the measured fraction is not exclusively freely dissolved ions.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:1406
+    label: Paenibacillus polymyxa
+  evidence:
+  - source_ref: zhou_2011
+    supports: support
+    explanation: Figure 2 and section 2.2 show greater endpoint Ca, Al and Si concentrations in both
+      bacterial arms than the water control, with higher Ca through dialysis and higher Al/Si under
+      direct contact. Figures 3-4 show altered surfaces and Raman spectra, supporting alteration of
+      the source-assigned feed. These are laboratory release observations, not recovered-product yields.
+  - source_ref: zhou_2011
+    supports: partial
+    explanation: The water-only comparator lacks growth medium, and there is no matched sterile-medium,
+      killed-cell or pH-matched control. Both bacterial arms initially acidified from about pH 7 to
+      4.3, but their later pH histories diverged. The 14 kDa barrier changes access of cells and large
+      metabolites as well as transport. Therefore the contact comparison does not isolate attachment,
+      proton exchange or chelation as a unique cause. The authors also acknowledge that residual
+      adsorbed protons from acid pretreatment may affect release.
+  - source_ref: zhou_2011
+    supports: partial
+    explanation: Proposed proton-exchange control of Ca and ligand attack on Al-O-Si bonds are
+      interpretations of solution trajectories, fitted kinetics and Raman changes, not direct
+      measurements of individual causal reactions. The reported surface particles are not compositionally
+      identified secondary minerals. Precipitation and adsorption can change solution ratios, so those
+      ratios do not by themselves measure stoichiometric dissolution or a phase-specific mass balance.
+  - source_ref: ncbi_polymyxa
+    supports: context_only
+    explanation: Taxon 1406 resolves the reported species name; it does not establish the identity
+      or phenotype of the experimental CGMCC stock.
+- id: cms1_source_assigned_anorthite_feed_leaching
+  name: Fungal leaching of a compositionally unresolved anorthite-labelled feed
+  process: bioleaching
+  description: Source-identified Ramichloridium apiculatum CMS-1 cultures increased Ca and Mg release
+    from a purchased anorthite-labelled feed. Direct-contact cultures gave greater release than the
+    10 kDa dialysis treatment. These are whole-feed observations; the host phase of released Mg and
+    the phase-specific contribution of anorthite remain unresolved.
+  context: Ma et al. used purchased 38-74 micrometre powder, assigned anorthite by XRD in Figure 1
+    and showing anorthite and quartz assignments in Figure 11. Table 1 bulk XRF reports 30.93% SiO2,
+    24.21% CaO, 19.17% MgO, 16.50% Fe2O3 and 4.06% Al2O3. This is incompatible with pure anorthite
+    endmember chemistry; no quantitative phase composition is supplied. Soil isolate CMS-1 was
+    assigned to R. apiculatum by ITS similarity and phylogeny. Growth screening selected 4 wt%
+    spore suspension, glucose, NH4Cl and initial pH 7.5 among the tested options; the prepared suspension
+    contained 10^6 spores/mL. Leaching used 2 g feed and 100 mL liquid in 250 mL flasks, 30 degrees C,
+    150 rpm and 21 days, with triplicate treatments and sampling every 48 hours. Water-plus-feed and
+    uninoculated-medium-plus-feed arms accompanied the fungal treatment. The direct-contact comparison
+    used a 10 kDa regenerated-cellulose bag enclosing the mineral in the fungal culture. Methods call
+    the leach medium Czapek medium while results state that Mg and Fe were removed relative to the
+    growth medium; the exact final substituted formulation is not fully restated. Feed and liquid were
+    autoclaved at 121.1 degrees C for 20 minutes. Acidified supernatants were analysed by EDTA titration,
+    with Mg calculated from total Ca-plus-Mg minus separately measured Ca.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:470080
+    label: Ramichloridium apiculatum
+  evidence:
+  - source_ref: ma_2024
+    supports: support
+    explanation: Figures 8-10 support culture-associated Ca/Mg release from this feed, with acidification,
+      compared with water and medium controls. Figures 14-15 support greater whole-feed release under
+      direct contact than dialysis. Figures 11-13 document diffraction, surface and infrared changes
+      after treatment. None of these measurements partitions release among constituent mineral phases.
+  - source_ref: ma_2024
+    supports: partial
+    explanation: Table 1 bulk chemistry conflicts with a pure-anorthite interpretation, especially its
+      high Mg/Fe and low Al content; ideal anorthite contains no Mg. The oxide table, source-assigned
+      diffraction peaks and selected-area EDS in Table 2 are not interchangeable measures of purity.
+      A relative increase in quartz peaks does not establish newly precipitated quartz. The reported
+      Ca/Mg enhancements and percentages cannot be transferred to pure anorthite or treated as isolated
+      recovery yields. Phase identification or the reported oxide table requires clarification.
+  - source_ref: ma_2024
+    supports: partial
+    explanation: The barrier excludes large metabolites and alters transport as well as direct contact;
+      matched pH histories, killed-cell controls and a measured organic-acid series are absent. Similar
+      minimum pH in the two fungal arms does not mean identical solution chemistry throughout incubation.
+      Proposed proton exchange, complexation and mechanical disruption are not independently isolated
+      causes. Unlike the bacterial experiment above, Ca release was higher under direct contact, but
+      feed composition, organism and media differ, so these are not matched contradictory experiments.
+      The study does not demonstrate CO2 mineralization, industrial deployment or an isolated product.
+  - source_ref: genbank_ramichloridium_reference
+    supports: context_only
+    explanation: Figure 2 includes NR_145091.1, which resolves to type-derived R. apiculatum CBS 156.59
+      ITS sequence. It supports the named reference, not a deposited CMS-1 sequence. The source-reported
+      isolate identification remains provisional and is not independently authenticated here.
+  - source_ref: ncbi_ramichloridium
+    supports: context_only
+    explanation: Taxon 470080 resolves R. apiculatum at species rank; it is not specific to CMS-1.
+curation_history:
+- timestamp: '2026-10-14T11:30:02Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created anorthite with element-dependent bacterial release and separately scoped fungal
+    mixed-feed evidence, retaining experimental, compositional and taxonomic limitations.
+history_refs:
+- history/records/anorthite/2026-10-14T113002Z-codex-a85178.yaml

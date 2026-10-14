@@ -1,0 +1,793 @@
+{
+  "timestamp": "2026-10-14T11:34:19.354674+00:00",
+  "worktree": "/private/tmp/CMMMech-expansion-round70-20261014",
+  "base": "1d40bb5d7496a02b937acc1f6ef3aec5af5d32e7",
+  "curator": "codex GPT-6 /root/round68_iron_sulfides",
+  "scope": "Two aluminium-mineral owners with explicit abiotic mechanisms; no third mineral forced. Independent scientific review by root follows.",
+  "selected": [
+    {
+      "slug": "boehmite",
+      "path": "data/records/boehmite.yaml",
+      "sha256": "e31bc47bd90bd013882ab16837dd2850321b2549b89dafd0549a8e09d030d876",
+      "history": [
+        {
+          "path": "history/records/boehmite/2026-10-14T112702Z-codex-e9dfd5.yaml",
+          "sha256": "91fe7ffac1dd20a0c20e220bdcf51002d78032dd018d565c73a206deb37aee81"
+        }
+      ]
+    },
+    {
+      "slug": "gibbsite",
+      "path": "data/records/gibbsite.yaml",
+      "sha256": "26913622b6ff36f836794270e33c06947c9adec8513ccc238b78075763cb52d8",
+      "history": [
+        {
+          "path": "history/records/gibbsite/2026-10-14T113244Z-codex-fd33d9.yaml",
+          "sha256": "ae4e37bd4c8f65a9166804c1a9f05fe2faba53ce1112ec9b87c8f5d007dc422f"
+        }
+      ]
+    }
+  ],
+  "query_log": "/private/tmp/cmm-round70-aluminium-research/query-log.json",
+  "dedup": {
+    "repository_roots": [
+      "data/records",
+      "research",
+      "reviews",
+      "history"
+    ],
+    "flags": [
+      "--no-ignore",
+      "--hidden",
+      "--follow"
+    ],
+    "pattern": "gibbsite|hydrargillite|boehmite|böhmite|bayerite|diaspore|00191-6|cca1884|2504109122",
+    "repository_exit_code": 0,
+    "repository_stderr": "",
+    "raw_boundary": {
+      "roots": [
+        "/private/tmp/cmm-expansion-authorities-20261011",
+        "/private/tmp/cmm-next-eu",
+        "/private/tmp/cmm-round10-b-f-raw",
+        "/private/tmp/cmm-round10-graphite-raw",
+        "/private/tmp/cmm-round12-aluminium-boron-raw",
+        "/private/tmp/cmm-round17-enstatite-raw",
+        "/private/tmp/cmm-round18-dunite-raw",
+        "/private/tmp/cmm-round20-goethite-raw",
+        "/private/tmp/cmm-round30-chromite-research/raw",
+        "/private/tmp/cmm-round31-chromite-tailings-research/raw",
+        "/private/tmp/cmm-round6-aluminium-evidence",
+        "/private/tmp/cmm-round65-manganese-research",
+        "/private/tmp/cmm-round67-new-frontier-research",
+        "/private/tmp/cmm-round68-new-frontier-research",
+        "/private/tmp/cmm-round69-silicates-research",
+        "/private/tmp/cmm-round9-graphite-evidence"
+      ],
+      "excluded": [
+        "unbounded /private/tmp",
+        "package-manager cache"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "matching_lines": 123,
+      "final_query": "gibbsite|hydrargillite|boehmite|böhmite|bayerite|diaspore|00191-6|cca1884|2504109122",
+      "final_exit_code": 0,
+      "final_stderr": "",
+      "final_matching_lines": 125
+    },
+    "assessment": "Pre-existing contextual mentions in mixed ores, bauxite and prior source handoffs are not standalone owners. Initial pre-edit and final expanded-query outputs retained; final output includes the two newly authored owners. No exhaustive filesystem-wide absence claim."
+  },
+  "sources": [
+    {
+      "id": "ima202609",
+      "kind": "dated identity authority",
+      "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "inspection": "Definitions pp1-2, original Böhmite row p28 and Gibbsite row p82 visually checked. No external approval CURIE invented.",
+      "rights": "CC BY-SA3.0 per PDF; raw remains outsideGit."
+    },
+    {
+      "id": "handbook",
+      "kind": "identity authority",
+      "urls": [
+        "https://www.handbookofmineralogy.org/pdfs/bohmite.pdf",
+        "https://www.handbookofmineralogy.org/pdfs/gibbsite.pdf"
+      ],
+      "inspection": "Complete one-page entries and original pages inspected. AlO(OH) orthorhombic versus Al(OH)3 monoclinic; distinct from polymorphs, element and commodities.",
+      "rights": "All rights reserved; raw outsideGit."
+    },
+    {
+      "id": "stefanic2011",
+      "doi": "10.5562/cca1884",
+      "url": "https://hrcak.srce.hr/en/file/111417",
+      "kind": "primary experimental",
+      "inspection": "All five original PDF pages, Figures1-4, Tables1-2 and full methods/results/conclusion; no SI link observed on inspected official page or text. Six recipes/five displayed diffraction fits; synthetic abiotic formation only.",
+      "limitations": [
+        "B3 synthesis time/controlled temperature unspecified",
+        "pH and other preparation variables partly confounded",
+        "coherent-domain fits are not aggregate dimensions",
+        "no independent synthesis replicate count or recovered mass yield",
+        "only crystalline phase detection does not quantify amorphous matter or chemical purity"
+      ],
+      "rights": "Openly accessible official fulltext; no reuse license inferred, raw outsideGit."
+    },
+    {
+      "id": "li2025",
+      "doi": "10.1073/pnas.2504109122",
+      "pmid": "41052339",
+      "pmcid": "PMC12541406",
+      "kind": "primary experimental plus computational",
+      "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12541406/fullTextXML",
+      "supplement_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12541406/supplementaryFiles",
+      "inspection": "Complete main JATS sections, five original figure JPGs, complete26-page SI text and all21SI figures. Both13-second movies sampled at one frame/playback second (13frames each; frame0,2,...24). No independent rerun of U-Net or molecular simulations.",
+      "limitations": [
+        "NMR observes Al(OH)4-; not direct dissolved-dimer detection",
+        "atomic reconstruction trained on simulated images with modeled noise/adatom-height adjustment",
+        "DFTB constrains dimer separation and manually attaches hydroxide; trajectory-block uncertainty is not experiment replication",
+        "0.4M individual-edge velocities not measurable",
+        "S4/S5 both caption0.01M; no guessed correction",
+        "early no-etch-pit description and later atomic-resolution etch pit concern different observation scales",
+        "predicted two-order rate contrast differs from approximately one-order observed contrast",
+        "about18percent dissolution supports constant-area approximation and is not recovered-product yield",
+        "model training link described as GitHub points to University Illinois Box; code not acquired or rerun"
+      ],
+      "rights": "PMC JATS license CC BY-NC-ND4.0; sources outsideGit, original curator paraphrases only."
+    },
+    {
+      "id": "lee2000",
+      "doi": "10.1016/S0009-2541(99)00191-6",
+      "kind": "primary microbial lead not accepted",
+      "title": "Experimental study of the effects of Bacillus subtilis on gibbsite dissolution rates under near-neutral pH and nutrient-poor conditions",
+      "bibliography": "Jong-Un Lee and Jeremy B. Fein, Chemical Geology166(3-4),193-202(2000).",
+      "access": "Crossref metadata and publisher abstract inspected; publisher API HTTP200 metadata-only. Exact official ScienceDirect page returned403 in final web open; author public publication page lacked this older item. No full primary methods/figures inspected.",
+      "disposition": "Defer all microbial effects, strains/controls and measurements pending full source.",
+      "issue": "https://github.com/CultureBotAI/CMMMech/issues/219"
+    }
+  ],
+  "deferred": [
+    {
+      "candidate": "bayerite",
+      "reason": "Identity exists, but selected older hydrothermal primary remained abstract-only; do not turn review/background mentions into direct microbial evidence."
+    },
+    {
+      "candidate": "diaspore",
+      "reason": "Mixed-ore contexts and modeled precipitation are insufficient for a new phase-specific microbial mechanism; no complete selected experimental primary acquired."
+    }
+  ],
+  "criticality": "No criticality assertions added. Element/commodity list memberships are not inherited by either mineral species.",
+  "correction_check": "Exact DOI plus correction/erratum/retraction queries returned no explicit notice in inspected bounded results. This is not proof of no correction. Lee Crossref relation empty and no update-to; no source retraction inferred.",
+  "failed_acquisition_warning": "gibbsite2025.pdf and gibbsite2025-si.pdf are1817byte HTML challenge responses, not PDFs and never treated as inspected primaryPDF. Genuine SI is extracted pnas.2504109122.sapp.pdf. Failed publisher403 and NCBI404 routes remain in acquisition receipts. No paywall/access control bypass.",
+  "validation": "Named --require-records validation of boehmite.yaml and gibbsite.yaml passed2records0failed after curation. Full gates and independent review handled by root.",
+  "raw_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/acquire-2.py",
+      "sha256": "4b371bdb47460f13567729b7c017731afddc1ba2ed760d70eb8ef797510e108d",
+      "bytes": 1400
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/acquire-3.py",
+      "sha256": "99f5718cd9eb976bbfb3c35a28d42e0073ace834f1b36ee0daf83d504a1dc094",
+      "bytes": 1476
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/acquisition-1.json",
+      "sha256": "ed67ac47764e81c464205e95dfee019276b83406aa6a96a3ee829baf14e85abf",
+      "bytes": 4114
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/acquisition-2.json",
+      "sha256": "e2a4344551c7ac4e6f1bd6d7384af446938dc8f207308bba21b01d0f83b7d42f",
+      "bytes": 2955
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/acquisition-3.json",
+      "sha256": "2656117134eba4b0b59305f7a2cb451029ba97af636d46759aa0c6e6b5103e85",
+      "bytes": 2696
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/acquisition-4.json",
+      "sha256": "9ec1963b0b3fb9b0b73af15dfdaec7416bed5ca82c011e28db62bcbb41aa5a8a",
+      "bytes": 897
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/acquisition-5.json",
+      "sha256": "3a5d7276505d75d8f325bee35fd4d4f9ee5203e52483b06cd64aa7dfbe4512f8",
+      "bytes": 790
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/acquisition-6.json",
+      "sha256": "afbc20a48835ea37caae396254b69effc8ae153d3325ef9c44e742221b29cffa",
+      "bytes": 317
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/acquisition-7.json",
+      "sha256": "858e1aa705e8fe64d83967ea7455906b37eca834c1fed399af44258622f0ec9b",
+      "bytes": 336
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/bayerite-handbook-p1.png",
+      "sha256": "9d7e88beca3f72d560ceab8e113d3aff57e6c12e0c6e264a8256b50f043ae08e",
+      "bytes": 177042
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/bayerite-handbook.pdf",
+      "sha256": "cf91025f9295baf27e4d6615ffc49f57842df4264a4a929d42d1bb9dbe094d15",
+      "bytes": 54041
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/bayerite-handbook.txt",
+      "sha256": "c92c0a36a3ebf3932c433734e59e0e46a1c8bb5b5bed3703962878cf9d56bbb2",
+      "bytes": 2743
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/boehmite-handbook-p1.png",
+      "sha256": "a8acccd75ffc0f038262565a84a982cc7ca0a3247f7085d311fe3f19cc3ea010",
+      "bytes": 233861
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/boehmite-handbook.pdf",
+      "sha256": "a9cf9bcba5c6085e929f4faaae62a350052d27c52f2753a7286d6c235e06ad45",
+      "bytes": 52505
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/boehmite-handbook.txt",
+      "sha256": "69fbd646ee0a894ff7c7549a0890e44385acf11028a7cccaeb631631cc39ed1e",
+      "bytes": 3678
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/boehmite2011-crossref.json",
+      "sha256": "6d962187dedadb0f7e0331ac7d26508df74b5940bb09f8e8f33d5192dc2e22ce",
+      "bytes": 1769
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/boehmite2011-p1.png",
+      "sha256": "6998314b748599bfb45e19bf8151bf89e12b01d95fe323fcb0c77a1cab48576b",
+      "bytes": 249160
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/boehmite2011-p2.png",
+      "sha256": "7f64a1f6a22e6051749e04fadf93d70161b2ea0638d7050c59801332e6504dd1",
+      "bytes": 275486
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/boehmite2011-p3.png",
+      "sha256": "7e283c5e74cd6e6b2bdb6ad361f2fa8c94c1738f3e56d90dd6ef0a522db0140e",
+      "bytes": 986291
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/boehmite2011-p4.png",
+      "sha256": "a3eac46c05ce98dd06c1497354c90cc2f52e3064e3f4cb885d7a005da006cf29",
+      "bytes": 327381
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/boehmite2011-p5.png",
+      "sha256": "0dce7146bb294cbe22d38f9304d3fb53a84646e55dedf4361c675dac28f13c7b",
+      "bytes": 168482
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/boehmite2011-page.html",
+      "sha256": "ffde55cada38cebc9cfde5d1a26145ba4e65d85371dfbe92b1df549dbe3f5454",
+      "bytes": 27875
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/boehmite2011.pdf",
+      "sha256": "bf4e559a916713cc1c1c38bbf6ba4e0799caa68c1fbbe32e2178a813341348fe",
+      "bytes": 4820963
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/boehmite2011.txt",
+      "sha256": "6ca20162e05231c9d88f145e70ca268be36f724c8ba00f04b3be2a163b7f8a3b",
+      "bytes": 14741
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/build_dossier.py",
+      "sha256": "4b4fc93fce15fdf5844a50c2282fc8495b486119a5c6eace834585953a36146c",
+      "bytes": 14876
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/curate_boehmite.py",
+      "sha256": "24a987644418d34902819243d7ec9ecfb52bf77bb14082c65f7210d69d2a5215",
+      "bytes": 7073
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/curate_gibbsite.py",
+      "sha256": "3a68bbe115d75d79215fb23a6bb1c7f353a9025f36dc82ec1b20cd404fcb52ce",
+      "bytes": 8382
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/dedup-raw-boundary.json",
+      "sha256": "e1c6ec48a9f28b2a22e95afce9041d4e52469d8b01cc627c927d22c27325d00c",
+      "bytes": 1129
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/dedup-referenced-raw-final.txt",
+      "sha256": "13bf835f798c3b05f2df77ec50b7426e2b7299043a3b21a18aa989471f718fb1",
+      "bytes": 742125
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/dedup-referenced-raw-roots.json",
+      "sha256": "b18de2221b1cc7c2c38b5e901cf3ea55e059c7ae695a317c1858a2683b16861e",
+      "bytes": 808
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/dedup-referenced-raw.txt",
+      "sha256": "053107bb46f81690e33df24713679e5c6ebc7c2a7023e6a5d2a46f0b26775273",
+      "bytes": 741984
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/dedup-repository-all-candidates.txt",
+      "sha256": "da5ba26572867ecfd5b4b1f047053ec2961224f3f7d6708af08f948bde3010b5",
+      "bytes": 10733
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/dedup-repository-final-query.txt",
+      "sha256": "988357a713ed3a13fc5bee0570060f7d9536d09a74fff6d2594bc1f2b3621cd2",
+      "bytes": 8028
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/dedup-repository.txt",
+      "sha256": "eea6cdb0a89727427e1ffa9d06e2050ccfb406a0632886ac02e843b42b46f0f3",
+      "bytes": 6148
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/diaspore-handbook-p1.png",
+      "sha256": "f742b83481d16c9f51ab0253ecda4ec31940c5ee6638d566bcb2cde2bbbbdc29",
+      "bytes": 240293
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/diaspore-handbook.pdf",
+      "sha256": "083b8f3b325c63286c00c7158ccdd75600ce20254fd224d37ec72c014689cc0b",
+      "bytes": 51941
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/diaspore-handbook.txt",
+      "sha256": "d1a9363c015da123413ebacf7c7b382bfa9477529fa71795a7a8bb58ee30e65e",
+      "bytes": 3824
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/fein-feed.xml",
+      "sha256": "5ec83e27d5c52580e49693fe007c254c7e35d7c3782024921dd5f44a6e9a2f37",
+      "bytes": 2859
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/fein-home.html",
+      "sha256": "7d8529d26e2346cd7a9e0ee9cd1dd934e1e8e6b84a4feabf40d35daa0bb0dad9",
+      "bytes": 315
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/fein-home.js",
+      "sha256": "41d7ee2f558d07af9743ae0f664a65d977e6141dcd876276609882c8a4b39715",
+      "bytes": 1200
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/fein-lab-home.html",
+      "sha256": "bbd1ec880ecd521159b7e590e97fdf4cbf9ae4cf95a2f82c7c59979f647d1ed9",
+      "bytes": 8425
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/fein-navbar.js",
+      "sha256": "02d67fa8778e6e35e14548d723df28ab60ecaee42eda83796621531921181eab",
+      "bytes": 5986
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/fein-publications.html",
+      "sha256": "b6159ff8d3d549afa0c7fe4693159ee9046210048c60812505658360362d7005",
+      "bytes": 38576
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/fein-site.js",
+      "sha256": "53955fb279918ea741b55c650608dd7e4c53d82f486f569ccccb967becb9cca4",
+      "bytes": 146115
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite-handbook-p1.png",
+      "sha256": "dac3ae7d67ec3dee739f5a4b3694988e9b775647e3d9817a6b8e1dce5a36165c",
+      "bytes": 228292
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite-handbook.pdf",
+      "sha256": "8f32d4169bb9a66a169489e049600ee1fff04cf511d02b41d6374ddf061cdb03",
+      "bytes": 56869
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite-handbook.txt",
+      "sha256": "0a38dd740e2bf083472d4ef8ee2526ab2d169d05f33197d6426de963be2d794e",
+      "bytes": 3585
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-epmc.xml",
+      "sha256": "31af43decdeaaca6b6bedf6ee518a1387075fde839b9bf3eb16a976cdb6165b4",
+      "bytes": 146002
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-main.txt",
+      "sha256": "2d1f6e287b43868cec2f04bc9eea41ffa9ae407f6eaecdcad15b7f06c346d8e7",
+      "bytes": 62577
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-movie-inspection.json",
+      "sha256": "f7106d5bfd63d550c9cf7d701894586e2702161be73ae556bc7d4a4557e8dfe2",
+      "bytes": 1326
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-movie1-montage1.png",
+      "sha256": "e0dda51aa50b9c1204baef176aa3df11fba022e51d7988eb4097ae22e0441d30",
+      "bytes": 460592
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-movie1-montage2.png",
+      "sha256": "ca150f4150e89f8c5208ff81ab6fe5b58b638ab2ca0c9aa135ce49ec6ede3753",
+      "bytes": 46644
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-movie2-montage1.png",
+      "sha256": "3472bd1d8851288ed31c80739cf3af10d2758f914601bf06044561c0379ec2c8",
+      "bytes": 632893
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-movie2-montage2.png",
+      "sha256": "43714f910695cd2cef41d429c17a8d1f091b90d969055fe7179f19e5478146d5",
+      "bytes": 62778
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-pmc.html",
+      "sha256": "5cf2687093947db087611b62575ed4fe878c88cd0d8c2c8fe19b7a5a92e2ee94",
+      "bytes": 250063
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-section-Acknowledgments.txt",
+      "sha256": "90960e0e9b92c5ad3a5c621f934fc12a77a3494d81682694ec94cf4ec8c69543",
+      "bytes": 1471
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-section-Associated-Data.txt",
+      "sha256": "a51aa31b599b74dfa99624bcf83380f4b059adb15ccac0643ff1aa5a6f106502",
+      "bytes": 484
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-section-Contributor-Information.txt",
+      "sha256": "eed480493f532e8124f53165110ca8979e4519e539a056dad94888a3d736b9d6",
+      "bytes": 129
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-section-Data--Materials--and-Software-Availability.txt",
+      "sha256": "357c51648ce8c27f3d0c52b13a1bc4e6e9369fc4da457ce62bb266f524c9e67c",
+      "bytes": 222
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-section-Footnotes.txt",
+      "sha256": "87b9f5ea70dd2ab68d31c430577ea5c1b1efd0307ac12e4c302f13758c28d048",
+      "bytes": 41
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-section-Materials-and-Methods.txt",
+      "sha256": "1f16e30aaca7b6d642415fe83fa8a154a52722c6348ccdb6684fa570e1344f8f",
+      "bytes": 16351
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-section-References.txt",
+      "sha256": "629dacb79f8dc2b6d5380f0eb18637ff1de573ab6207613b139772f44f7b125d",
+      "bytes": 14027
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-section-Results-and-Discussion.txt",
+      "sha256": "93412c04d251f7f021332c303a7cbcc6a3320fdf5f90cb9c3229200be213a76a",
+      "bytes": 24459
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-section-Supplementary-Material.txt",
+      "sha256": "3bdc45b6eaaca7d6082b60501840ab72a323d1cd83f1d3b055e363494912d139",
+      "bytes": 213
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-section-Supporting-Information.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-full.txt",
+      "sha256": "8904cf46574e3cce96fb6479718c291eb56e424eda23fc56ba053b86a72dfa38",
+      "bytes": 22054
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p1.png",
+      "sha256": "42e9a4047b2aff0d78b3fa6d87745675ddf3b5f2593b51f0608cf1f75d7b8bc2",
+      "bytes": 72789
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p10.png",
+      "sha256": "e2d2771b97d5d8eb6b428aac78f3adb688ad201bd94d79a59359600deccc612d",
+      "bytes": 248802
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p11.png",
+      "sha256": "435ff5034d2a4c300667a7df942da0322e6bb093f5e7583206397e527358755f",
+      "bytes": 137982
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p12.png",
+      "sha256": "5d9764df53c644dbef0fe5e5ca0f6416e69d15c0422cf19d76ae77d649124638",
+      "bytes": 37692
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p13.png",
+      "sha256": "f7f906234261e7606b9afd002ecd18568b0b9cd20116145c66c12ea0ff4e3d7e",
+      "bytes": 158963
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p14.png",
+      "sha256": "4f6046b6f3854c2363749031e457159af4df56755ec3914e0c769835bd605a99",
+      "bytes": 130716
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p15.png",
+      "sha256": "ef06d99ecc639d9c41271efe8ac5ec39c9b525717268b435887c8276fc60140b",
+      "bytes": 110872
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p16.png",
+      "sha256": "7e00f1801d299d7731c38856c06a91b6d4c6390a4e1686f3c683a46819d827cc",
+      "bytes": 193311
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p17.png",
+      "sha256": "d796ed527af11cc1bcdf02e16b81574e131cfd0b1ea4c97f77eeb046411a00c4",
+      "bytes": 273796
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p18.png",
+      "sha256": "09ef4342371f9ea7b8075c48e6082a9979cc60f3003f94b3ef5c37e792cbaa28",
+      "bytes": 35450
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p19.png",
+      "sha256": "737b576848849b17f3c8e397d9752c67c434f5ed13fee6c5f38fd1aeb80862d9",
+      "bytes": 404886
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p2.png",
+      "sha256": "76b793afa4f4a4a075227dc429ea286be807f320930cd02045d34404be9b941d",
+      "bytes": 146625
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p20.png",
+      "sha256": "90f02507d9a5a9be7c2e55fcf96728ed6d18504276f250c2d1c0f333bd341e7f",
+      "bytes": 134930
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p21.png",
+      "sha256": "f6195d37ce7ac965f7f24621c6bf0887ab9152904100064deedad085701d4539",
+      "bytes": 40726
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p22.png",
+      "sha256": "0ce9f01de3a8ecd5623db162f5aaddd06d7dc43560ca46a09ba1a631127ea821",
+      "bytes": 104748
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p23.png",
+      "sha256": "a0f74412756e247f3929b491aba680f2e7a42d03f431c72d82398d73776fbf18",
+      "bytes": 208421
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p24.png",
+      "sha256": "4c5de1b5e21ed216940c4858a8b6f80f09d357e4f1f68658365425bcbbfefe24",
+      "bytes": 88282
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p25.png",
+      "sha256": "a795a5fa26bf671575e394c4517c1607c77246a758c5a520fdc5cdf96e9b57ea",
+      "bytes": 25420
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p26.png",
+      "sha256": "d0fba7c7b2148bd969fb166274a81beafd4575f1f0e463a8d7807bde78779f9b",
+      "bytes": 65746
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p3.png",
+      "sha256": "0cfe787dea8d1a8cf95e67c85ae8791aa416c13c06fc860751db71aa380393e5",
+      "bytes": 138877
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p4.png",
+      "sha256": "35e2fe1acc11ffc5d1880b02bf51df06b8c1671808b2b76b7b8a535cf5ceb6e4",
+      "bytes": 87205
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p5.png",
+      "sha256": "7f4f49b53f07a49fd99660fb2f65711b49aa697b5d6b8b83e22e88b6c7d133c6",
+      "bytes": 179804
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p6.png",
+      "sha256": "09ef758d94b0c48efea13fcbab1cd2c66e2af584921af56767d9bdaf28634cc1",
+      "bytes": 36527
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p7.png",
+      "sha256": "5bbd0fb7ad13f2d675f3a98068ab16a85e8b1c52860fec87ff413f831afce439",
+      "bytes": 347952
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p8.png",
+      "sha256": "a20137e466914117c76c661447d19cf58c222384f4bfa0d3b63325bb5f31b560",
+      "bytes": 250979
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si-p9.png",
+      "sha256": "dbc532196a3dcab4dfdcb1ab530fe73c75cd5a229d559a3055be910727f42cd4",
+      "bytes": 285200
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-si.pdf",
+      "sha256": "598a9b446110937c26077b0742c0a81336ae24e9581708250b32a168bc7d358c",
+      "bytes": 1817
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-supplementary/pnas.2504109122.sapp.pdf",
+      "sha256": "47e6aa5d3a11339412ca0b2f882152497cddd862f771e55babf2661f69d075b9",
+      "bytes": 3001762
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-supplementary/pnas.2504109122.sm01.mp4",
+      "sha256": "95106905c549ecd52a67606869a96f7573e0f60b82c37844f6a0b0297eb93e06",
+      "bytes": 521030
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-supplementary/pnas.2504109122.sm02.mp4",
+      "sha256": "ed01ba649ce53f36c9dca55b0f145016ec0558b5ba505b80a78eaa90f5959458",
+      "bytes": 1576084
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-supplementary/pnas.2504109122fig01.gif",
+      "sha256": "8ab29f41415be4b55ac4c59307cb08db167fc303ce8e6a082da18061fc485b5e",
+      "bytes": 19582
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-supplementary/pnas.2504109122fig01.jpg",
+      "sha256": "ce0201ce230a8ba69ec93c02e792a9b082c51d660d25340083e8066e119cbe52",
+      "bytes": 277347
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-supplementary/pnas.2504109122fig02.gif",
+      "sha256": "c031c9a425b48a18b4eb270281bac36b989ddb83e870d50e289a64c298c5786b",
+      "bytes": 16495
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-supplementary/pnas.2504109122fig02.jpg",
+      "sha256": "c647cd95dc8c2cdf979e709c0ea2e881cf3af15f5b58599641f71bb28161ab6c",
+      "bytes": 178038
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-supplementary/pnas.2504109122fig03.gif",
+      "sha256": "727524f5a061f3c79c2e2a38434ef8e9b726da6f068bf85e1fdfa5833e8a39b3",
+      "bytes": 20342
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-supplementary/pnas.2504109122fig03.jpg",
+      "sha256": "0c45ba71be6ea60b8fce677287d9e7b5444f51822de1bcffe04ccb6cd800f9a2",
+      "bytes": 190332
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-supplementary/pnas.2504109122fig04.gif",
+      "sha256": "fe0454f02cca10e80c2d027212894b1019ad9f832712a31f31c37530dc4f37cf",
+      "bytes": 23395
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-supplementary/pnas.2504109122fig04.jpg",
+      "sha256": "331d050eceb145518bbcb01370cc11bf1191ca37d1e92fa282c0d5b9fe81df3b",
+      "bytes": 378148
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-supplementary/pnas.2504109122fig05.gif",
+      "sha256": "edd67865fa4d754f9d0c9eefc2b2174592d39f8ea83ed4b4f1e75b899f34e9e7",
+      "bytes": 17318
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-supplementary/pnas.2504109122fig05.jpg",
+      "sha256": "f554c3d4ad7a4d7db527bf2e1fb4fb8cab9496dec9e8107d8872523faffb4e45",
+      "bytes": 220358
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025-supplementary.zip",
+      "sha256": "10d306b317971f3a727a234acc1555bcb44e0c9b940f1b8375f57f2cd9ebfe54",
+      "bytes": 6011396
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/gibbsite2025.pdf",
+      "sha256": "8684fe5169e3b46ff7dfde636ecdc18648eafda923f70c6d52e7d41ef1aa8435",
+      "bytes": 1817
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/ima-p128.png",
+      "sha256": "65ed903395dc7c60088d75a62b75c96a1f8ba7ccd56bd226fe34fc3011fd466f",
+      "bytes": 259925
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/ima-p128.txt",
+      "sha256": "7b00cd9d8b7b4e4b494fe85e891a712fb072ce634390ff679a480b9642048115",
+      "bytes": 3375
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/ima-p219.png",
+      "sha256": "f05ba38a080ec1e327ab2a7cb6ce26943a004c0f44bd9901a7681bd12b362d17",
+      "bytes": 245577
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/ima-p219.txt",
+      "sha256": "5636352cdda2589cc92b296e143511473eeeffc373bf39721834dba38f58ba36",
+      "bytes": 3260
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/ima-p22.png",
+      "sha256": "3604667a4ac87a9f95caac58439faa22a82cf00716122c75f86839e26903e9c8",
+      "bytes": 246846
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/ima-p22.txt",
+      "sha256": "c060980999b3227ac3089a6458fa2be0062ddcfb116a7894e46f444cf8fbd1bf",
+      "bytes": 3188
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/ima-p28.png",
+      "sha256": "f18f78a993386af3703db8a2821938aa5cf3e91a4702adf277de6215a4598855",
+      "bytes": 260998
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/ima-p28.txt",
+      "sha256": "a427233e7fabe7f7b0a9a272e9b407192f446ee0a2300c9988f541841b0c1c4b",
+      "bytes": 3468
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/ima-p57.png",
+      "sha256": "f82537f61386b94df7a6ff1ced4d1c8b4838838f48f7e3d3b6aaee050028d3ac",
+      "bytes": 270200
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/ima-p57.txt",
+      "sha256": "5ad58f0e5375ec7ba83b7ef63597d3e6217a66c00f35f80ae70ab1ed239917a5",
+      "bytes": 3641
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/ima-p82.png",
+      "sha256": "dee74be18e412f4b336108df6af3153746c5dcbe0f367e578d76e49bdafbaf89",
+      "bytes": 247067
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/ima-p82.txt",
+      "sha256": "67c213f7a5be546126a39df6e3224c15e88f9509dd617bda512c80d0dcda199f",
+      "bytes": 3237
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/ima-p92.png",
+      "sha256": "3e273f3563bcae09a0da87f9f531eb86951ddf66ce90c56950f01c8de87781d3",
+      "bytes": 262241
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/ima-p92.txt",
+      "sha256": "1e2a7db263905397ebea01c71a4ec5571c9403a639445532f739ff65624e61c0",
+      "bytes": 3586
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/lee2000-crossref.json",
+      "sha256": "c9c330a6eb40e607011bf54418e665be04d49618d1ab03bfcd49e417ed9922f5",
+      "bytes": 16557
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/lee2000-elsevier.xml",
+      "sha256": "e24be30c1b47ebe02360a0113459543172840748fc764b225149b0846475e6d4",
+      "bytes": 2045
+    },
+    {
+      "path": "/private/tmp/cmm-round70-aluminium-research/query-log.json",
+      "sha256": "8f3a5a943eb8955e1b1c49ac77b7439f934de3fff18295457e0b67d2e24caccc",
+      "bytes": 1532
+    },
+    {
+      "path": "/private/tmp/cmm-round68-iron-sulfides-research/ima202609.pdf",
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "bytes": 3129886,
+      "reuse": "Previously acquired official September2026PDF; current definitions/rows re-inspected."
+    }
+  ]
+}

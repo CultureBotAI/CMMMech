@@ -8,10 +8,15 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 324 material records.
+The catalogue currently contains 329 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Anorthite](data/records/anorthite.yaml) | Bacterial contact assays and qualified fungal leaching of source-assigned feed | Natural plagioclase and mixed-feed composition prevent pure-endmember or phase-specific yields |
+| [Böhmite](data/records/boehmite.yaml) | Abiotic synthesis from aluminium sec-butoxide | Recipe confounding, fitted domain sizes and unquantified amorphous material; no microbial mechanism |
+| [Gibbsite](data/records/gibbsite.yaml) | Abiotic alkaline dissolution with a proposed dimer-assisted pathway | Model-assisted molecular assignment; no microbial mechanism or measured recovery yield |
+| [Hydroxylapatite](data/records/hydroxylapatite.yaml) | Calcium-phosphate mineralization in supplemented bacterial biofilms | Fixed-biomass formation, enzyme buffers and inhibitor effects limit metabolic necessity claims |
+| [Chlorapatite](data/records/chlorapatite.yaml) | Characterized synthetic substrate, bacterial growth and separate abiotic phosphorus release | No matched bacterial dissolution series establishes an enhancement or recovery yield |
 | [Brushite](data/records/brushite.yaml) | XRD-assigned phosphate in bacterial and cell-free precipitation assays | Abiotic formation and changing phase mixtures prevent a microbial-necessity or recovery-yield claim |
 | [Cattiite](data/records/cattiite.yaml) | Original mineral identity and qualitative abiotic dehydration | Preparation-sensitive polytypes and tentative product identity; no microbial mechanism inferred |
 | [Maghemite](data/records/maghemite.yaml) | Controlled culture-associated reduction of synthetic nanomaghemite | Ascorbate, ionic differences and fitted mixed products limit pathway and yield claims |
