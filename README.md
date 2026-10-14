@@ -8,10 +8,16 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 278 material records.
+The catalogue currently contains 284 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Chromite ore processing residue](data/records/chromite-ore-processing-residue.yaml) | Chromium reduction using separately produced biogenic magnetite | Washed reagent treatment; residual chromium and later rebound limit stabilization claims |
+| [Spent cerium glass-polishing slurry](data/records/spent-cerium-glass-polishing-slurry.yaml) | Chemical recovery of a ceria-rich solid from factory slurry | Explicitly nonmicrobial; oxide composition is distinct from recovery yield |
+| [Carrollite](data/records/carrollite.yaml) | Mixed-culture-associated corrosion of natural mineral crystals | Membrane comparison and surface spectra do not establish a unique pathway or metal yield |
+| [Carnotite](data/records/carnotite.yaml) | Species identity and final-phase detection in a shared mixed-ore study | Abiotic cation exchange and unresolved precursor identity prevent a mineral-specific mechanism claim |
+| [Metatyuyamunite](data/records/metatyuyamunite.yaml) | Species identity and detection before and after the same mixed-ore incubation | Residual detection does not quantify surviving mass or phase-specific transformation |
+| [Fritzscheite](data/records/fritzscheite.yaml) | Species identity and starting-phase context in the same mixed-ore study | Hydration discrepancy and final nondetection do not establish a quantitative extraction yield |
 | [Rhodochrosite](data/records/rhodochrosite.yaml) | MR-1-associated carbonate formation from synthetic Mn oxide | Phosphate/carbon conditions and abiotic controls constrain phase attribution |
 | [Spent nickel-cadmium batteries](data/records/spent-nickel-cadmium-batteries.yaml) | Acidophile-associated leaching of NiCd electrode powder | Comparable abiotic extraction and conflicting source descriptions remain explicit |
 | [Fluorite](data/records/fluorite.yaml) | Washed-cell-associated flocculation and settling | Physical separation; no mineral dissolution or commodity criticality inherited |
@@ -358,7 +364,8 @@ edition; none assert timeless status or industrial process deployment. See the
 [fifty-eighth expansion reviews](research/ingests/round58-20261012-publication.md),
 [fifty-ninth expansion reviews](research/ingests/round59-20261012-publication.md),
 [sixtieth expansion reviews](research/ingests/round60-20261012-publication.md),
-[remaining ingest priorities](research/ingests/round60-frontier-20261012.md), and
+[round61 source follow-ups](research/ingests/round61-frontier-20261013.md),
+[round62 records and remaining priorities](research/ingests/round62-frontier-20261014.md), and
 [current structured record reviews](reviews/structured/).
 Earlier [Markdown reviews](reviews/records/) remain historical evidence.
 

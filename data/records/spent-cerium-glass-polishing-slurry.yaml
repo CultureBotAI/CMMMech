@@ -1,0 +1,106 @@
+id: cmmmech:spent-cerium-glass-polishing-slurry
+name: Spent cerium-based glass-polishing slurry
+material_kind: secondary_resource
+description: >-
+  Used aqueous glass-polishing suspension containing ceria-based abrasive,
+  fine glass particles and other process-derived components. The curated
+  2015 case is waste collected in several portions over six months from
+  the Dioptra optical-glass-polishing factory in Turnov, Czech Republic,
+  which used Cerox-type ceria polishing powders. Sedimentation partially
+  dewatered the waste to approximately 50% water before treatment. Table 1
+  reports dry-solid XRF composition as oxide equivalents, including
+  8.85 wt% CeO2, 1.49 wt% La2O3 and 57.6 wt% SiO2. These are a reported
+  waste-composition example, not universal proportions or quantitative
+  mineral abundances. The mixed used slurry is distinct from pure cerium,
+  reagent ceria, fresh polishing powder and the recovered ceria-rich
+  product. Constituent criticality is not inherited by this resource.
+sources:
+  - id: janos2015
+    title: >-
+      Janos, Kuran, Ederer, Stastny, Vrtoch, Psenicka, Henych, Mazanec and
+      Skoumal (2015). Recovery of Cerium Dioxide from Spent Glass-Polishing
+      Slurry and Its Utilization as a Reactive Sorbent for Fast Degradation
+      of Toxic Organophosphates. Advances in Materials Science and
+      Engineering 2015, Article 241421, eight article pages.
+      DOI 10.1155/2015/241421. Sections 2.1-2.4 and 3,
+      Table 1 and Figures 1-3 establish the waste and chemical recovery.
+    url: https://doi.org/10.1155/2015/241421
+    accessed_on: '2026-10-14'
+mechanisms:
+  - id: chemical_recovery_of_ceria_rich_oxide
+    name: Reductive acid digestion and carbonate-mediated recovery of ceria-rich oxide
+    process: recovery
+    microbial: false
+    description: >-
+      Nitric-acid digestion with hydrogen peroxide transferred rare earths
+      from the used polishing waste into solution while glass-rich solids
+      remained undissolved. The authors interpret peroxide as a reductant
+      that converts cerium to its trivalent soluble form. Carbonate
+      precipitation, separation and calcination then produced a physically
+      isolated ceria-rich solid that retained lanthanum and minor impurities.
+      This is a demonstrated nonmicrobial laboratory recovery sequence,
+      not a bioleaching observation, pure-element isolation or proven
+      industrial recycling operation.
+    context: >-
+      Partially dewatered factory waste was treated with concentrated nitric
+      acid and hydrogen peroxide, each reported at 20% excess over
+      stoichiometry relative to total rare-earth content, with peroxide
+      added in portions. The mixture was stirred at 65-70 degrees C for
+      three hours, cooled until the next day and filtered. The leachate
+      was diluted to 0.2 mol/L total rare earths. Gaseous ammonia first
+      neutralized excess acid to pH above 4, after which carbon dioxide
+      and ammonia precipitated rare-earth carbonates around pH 7.2;
+      the reported CO2:NH3 molar ratio was 5:1. After the pH rose to 9.5,
+      ammonia was stopped, carbon dioxide continued for one hour, and
+      the mixture was left until the next day. The separated precipitate
+      was washed, dried at 110 degrees C, and annealed for two hours at
+      selected temperatures from 200 to 900 degrees C. Solid composition
+      used XRF, total dissolved rare earths complexometric titration,
+      and product characterization XRD, SEM and thermal analysis. The
+      paper does not give a recovery-stage batch mass, complete liquid
+      volumes, replicate count, uncertainty or closed element mass balance.
+      A pure cerous-nitrate-derived B-400 comparison belongs to subsequent
+      product-performance tests; it is not a fresh-versus-spent-waste
+      leaching control. No microbial treatment or living organism was used.
+    evidence:
+      - source_ref: janos2015
+        supports: support
+        explanation: >-
+          Sections 2.1-2.4 and 3, Table 1 and Figures 1-3 support industrial
+          waste provenance and the laboratory isolation of a ceria-rich
+          product. The authors report approximately 70% cerium yield
+          during acid digestion and describe subsequent precipitation,
+          drying and calcination losses as negligible. These are reported
+          approximate outcomes, not independently reconstructed yields
+          with demonstrated uncertainty. Table 1 gives 92.8 wt% CeO2
+          equivalent and 3.75 wt% La2O3 equivalent in the recovered dry
+          solid, compared with 8.85 and 1.49 wt% in the waste. Those
+          assays indicate enrichment, not 92.8% recovery or elemental
+          cerium purity. Product images and XRD confirm separated solids
+          and a ceria-type crystalline phase.
+      - source_ref: janos2015
+        supports: partial
+        explanation: >-
+          Section 3 describes changing waste composition over the sampling
+          period and a much richer historical waste from the same factory;
+          that earlier feed and its different heating requirement are not
+          treated as the present experiment. No matched acid-only or
+          peroxide-omission recovery control resolves each reagent's
+          incremental contribution. Quality-control blanks, duplicate
+          performance measurements and fitted kinetic parameters in
+          Sections 2.5 and 3.1 concern subsequent degradation assays,
+          not replicate metal-recovery trials. The carbonate precursor
+          lacked a unique resolved composition. Product XRD found a
+          fluorite-type ceria structure despite measured lanthanum and
+          other components, which does not establish chemically pure
+          CeO2 or the calcium-fluoride mineral fluorite. Proposed ease
+          of scaling is not demonstrated plant deployment.
+
+curation_history:
+  - timestamp: "2026-10-14T04:38:08.667802+00:00"
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Created a spent mixed glass-polishing slurry resource with a nonmicrobial chemical recovery sequence, separating reported digestion yield, dry oxide-equivalent compositions and laboratory product isolation.
+history_refs:
+  - history/records/spent-cerium-glass-polishing-slurry/2026-10-14T043818Z-codex-68ff6b.yaml

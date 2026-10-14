@@ -1,0 +1,585 @@
+# Independent scientific review of natural-carrollite surface corrosion
+
+- Review: 20261014T045158Z-carrollite-round62-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T04:43:39.001021Z
+- Finished UTC: 2026-10-14T04:51:58.426597Z
+- Reviewer: codex /root/round61_fluorite_sources (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The record accurately represents carrollite as a mineral species and supports the bounded observation of laboratory surface corrosion in the reported mixed-acidophile system. It preserves the membrane-control weakness, incomplete culture resolution, inconsistent sulfur assignments, absent dissolved-metal yields and limits on mechanistic inference. No supported curation defect was found in the exact frozen record. Positive scientific assessment is limited to the claims actually retained.
+
+## Scope And Provenance
+
+Complete field-by-field review of one new maintained record, its CREATE history and cited evidence; no sampling of target fields.
+
+Selection: Assigned exact ID cmmmech:carrollite and maintained path data/records/carrollite.yaml at the supplied frozen SHA256.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 11a0b0f8e2714f1863304faf408da4ce0e7c5b53.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:carrollite | data/records/carrollite.yaml | maintained | Carrollite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Named-record validation | passed | True | cmmmech:carrollite | Checked 1 record(s); 0 failed. Executed by this reviewer; exit 0. |
+| Trusted-base canonical history validation | passed | True | cmmmech:carrollite | Checked 333 history record(s); 0 error(s). Executed by this reviewer; exit 0. |
+| Full batch checks | passed | True | cmmmech:carrollite | Coordinator executed 04:44:05-04:50:52 UTC. Actual log: 317 tests passed, 3 skipped; 284 records and 333 histories valid; exit 0. |
+| Explicit nonempty corpus validation | passed | True | cmmmech:carrollite | Coordinator executed 04:50:52-04:51:09 UTC; 284 records, 0 failed; exit 0. |
+
+## Scientific And Domain Assessments
+
+### Mineral identity and material boundary
+
+identity: supported. Targets: cmmmech:carrollite.
+
+Carrollite is correctly grounded as the CuCo2S4 mineral species, separate from elements, ions and mixed resource feeds. No external concept CURIE or inherited criticality claim is asserted.
+
+### Organism, substrate, conditions and biomass
+
+evidence: supported. Targets: cmmmech:carrollite.
+
+The context accurately reproduces the source conditions and states missing culture resolution and method details rather than inventing them.
+
+### Observed outcome versus kinetics and recovered product
+
+quantity: supported. Targets: cmmmech:carrollite.
+
+The record restricts its outcome to visible crystal-surface pits, cracks and deposits. It correctly avoids extraction percentage, dissolved-metal mass balance, isolated recovery and industrial deployment claims.
+
+### Controls and contradictory sulfur interpretation
+
+evidence: supported. Targets: cmmmech:carrollite.
+
+The record retains the limitations that prevent causal attribution of attachment alone or acceptance of the asserted sulfur pathway. It does not amplify the paper's stronger conclusions.
+
+The EPS iron concentration is introduced by the source as prior literature and is not measured in these crystals. The record labels EPS enrichment, iron recycling and passivation as interpretations. No supported corrective edit is needed to preserve those distinctions.
+
+### Citation and creation history
+
+provenance: supported. Targets: cmmmech:carrollite.
+
+Primary DOI, title and original pagination are consistent with the record. IMA access is honestly a retained-source reinspection. Linked and inline CREATE events have distinct actual timestamps and describe the present work.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/carrollite.yaml; Entire file at source.inputs target SHA256 | supports | All fields read, including both sources, the single mechanism, all four directional evidence entries, inline CREATE event and linked sidecar. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; PDF pages 1-2 column definitions/license; page 38 Carrollite row | supports | Personally viewed original pages 1, 2 and 38. The row gives CuCo2S4, G and 1852; the definitions identify G as grandfathered and that year as original description. Reused complete September 2026 PDF, not a new download. |
+| handbook | https://www.rruff.net/doclib/hom/carrollite.pdf; Both original pages; formula and chemistry section | supports | Personally inspected both pages of the retained official Handbook PDF. Natural substitution and compositional variation are compatible with the mineral species scope and caution against inferring perfect purity from the ideal formula. |
+| primary | https://doi.org/10.1016/S1003-6326(15)63896-1; Complete original seven-page PDF, pages 2718-2724; Sections 2-4; Figures 1-5; Tables 1-2 | supports | Personally read all seven original pages and visually inspected all figures and tables. Official acquisition URL https://tnmsc.csu.edu.cn/EN/PDF/7891; original is retained as /private/tmp/cmm-round62-carrollite-research/raw/yang2015.pdf. Methods specify natural Luanshya crystals, the reported ZY101 mixture, iron-bearing 9K, temperature, pH, volumes and paired exposure arrangements. Figure 2 shows altered surfaces in both 96-hour arrangements; Figure 4 supports the qualified time-series description. No dissolved-metal extraction result is reported for these crystal tests. |
+| controls | https://doi.org/10.1016/S1003-6326(15)63896-1; Section 2.2; Section 3.1; Figures 2 and 4 | partial | The two specimens share the same cultured liquid system; membrane placement is the comparison, not an independently sterile abiotic run. Methods do not report verified bacterial exclusion, matched sterile membrane conditions or independent experimental replication. Qualitative fields cannot separate attachment causality from other arrangement differences. |
+| sulfur | https://doi.org/10.1016/S1003-6326(15)63896-1; Section 3.2; Figure 3; Table 2; Section 3.3 and Figure 5 | partial | Table 2 assigns peaks near 161.5-161.8 eV to sulfide at 0-48 hours, but labels 161.641 eV at 72 hours and 161.606 eV at 96 hours as zero-valent sulfur. Oxidized assignments already occur at 24 hours. The record accurately retains this internal inconsistency and declines the obligatory temporal pathway. Figure 5 labels a layer as passivation without a paired inhibition-rate measurement. |
+| metadata | https://api.crossref.org/works/10.1016/S1003-6326(15)63896-1; Retained Crossref response DOI/title/pages/update-to/relation fields versus original PDF | supports | DOI and title agree with the original. Crossref page range 2718-2754 conflicts with original 2718-2724, which the record correctly uses and explains. Retained response has no update-to field and an empty relation object; metadata alone is not proof of absence of a correction. |
+| notices | /private/tmp/cmm-round62-carrollite-independent-review/web-search.json; Three web.run queries and first returned result sets on 2026-10-14 | context_only | No correction or retraction affecting the target was found within the returned exact DOI/title query results. Broader ZY101 results included mixed-ore studies and unrelated names; these were not treated as crystal-specific yield or strain authentication. |
+| related | https://xuebao.neu.edu.cn/natural/article/html/2015-6-814.htm; Primary HTML Sections 1.1-1.2, Table 1, Section 2.3 and Figure 3 discussion | context_only | The related 2015 surfactant paper concerns a mixed cobalt-ore feed. Its Figure 3 discussion repeats the same four 96-hour sulfur binding-energy values; it does not independently resolve the questionable assignments in the reviewed crystal experiment. Read HTML text and table, not this related paper's original graphics. No quantitative result from it was admitted to the record. |
+| history | history/records/carrollite/2026-10-14T043952Z-codex-03242d.yaml; Target/session/actor/CREATE event compared with inline event | supports | Sidecar targets this exact record and identifies Codex/GPT-6/codex. Actual sidecar session time 04:39:52Z is distinct from inline CREATE time 04:40:05.305919Z. Both describe the new record and its limitations without inventing earlier authorship. |
+| local_search | /private/tmp/cmm-round62-carrollite-independent-review/local-scope-search.txt; Bounded maintained-record/review/history text search | context_only | Only the assigned record and its new history matched the selected identity/formula/DOI terms in these scoped trees. This is a bounded local cross-reference check, not global literature or machinewide absence. |
+| named_validation | /private/tmp/cmm-round62-carrollite-independent-review/named.log; Entire captured terminal output and checks.json command/timestamps | supports | Executed by this reviewer; Checked 1 record(s); 0 failed. |
+| history_validation | /private/tmp/cmm-round62-carrollite-independent-review/history.log; Entire captured terminal output and checks.json command/timestamps | supports | Executed by this reviewer; Checked 333 history record(s); 0 error(s). |
+| batch_validation | /private/tmp/cmm-round62-final-gates.json; All command receipts and entire terminal log at /private/tmp/cmm-round62-final-gates.log | supports | Read actual coordinator-executed receipts and complete log. just render, just check, explicit nonempty validation and trusted-base history validation all exited 0. just check: 317 tests passed, 3 skipped, 284 records valid and 333 histories valid. Explicit nonempty: 284 records, 0 failed. Log SHA256 a94cb9fef74e0ca15a967cea93f42b5809488135e8e614a46d2f9826506895a4. These commands ran against the frozen record bytes before this review was saved; the review does not claim the earlier batch check included this new bundle. |
+
+## Limits And Additional Notes
+
+- The crystal experiment does not independently verify cell exclusion by the membrane or control membrane-associated mass transfer. SEM fields provide qualitative surface observations, not replicated quantitative kinetics or a metal balance.
+- The reported mixed culture is not authenticated to strain accessions or measured community proportions, and individual species contributions are not isolated. No species CURIE is asserted by the record.
+- The original sulfur peak assignments and sparse time points do not establish the proposed obligatory polysulfide sequence. Underlying raw spectra, fitting constraints and independent speciation would be needed to resolve that claim.
+- A selected-field SEM layer does not prove rate inhibition or its precise product identity; EPS iron enrichment and iron recycling are source interpretations rather than specimen-specific measurements.
+- No metal recovery yield, isolated product or industrial deployment is established by this crystal experiment.
+- Notice searching was bounded to exact DOI/title and ZY101 queries, the first returned web result sets and retained Crossref metadata. Publisher live landing attempts failed; the complete official PDF was available and independently inspected. This is not a universal clearance of the literature.
+- Corrections made by this reviewer: none. No record or history bytes were changed. No external issues or comments were posted.
+- Unresolved scientific questions are retained in the record rather than promoted to measured outcomes. Empty findings applies only to this reviewed record state.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T045158Z-carrollite-round62-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of natural-carrollite surface corrosion
+started_at: '2026-10-14T04:43:39.001021Z'
+finished_at: '2026-10-14T04:51:58.426597Z'
+reviewer:
+  identity: codex /root/round61_fluorite_sources
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from the carrollite curator /root/publication_completion_check.
+    Reviewer did not author or edit this record, its history or source dossier, and
+    personally inspected all seven pages of the original experiment including every
+    figure and table. Reviewer curated two unrelated secondary-resource records in
+    this batch; no self-review is claimed.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The record accurately represents carrollite as a mineral species and supports
+  the bounded observation of laboratory surface corrosion in the reported mixed-acidophile
+  system. It preserves the membrane-control weakness, incomplete culture resolution,
+  inconsistent sulfur assignments, absent dissolved-metal yields and limits on mechanistic
+  inference. No supported curation defect was found in the exact frozen record. Positive
+  scientific assessment is limited to the claims actually retained.
+source:
+  git_revision: 11a0b0f8e2714f1863304faf408da4ce0e7c5b53
+  state: working_tree
+  inputs:
+  - path: data/records/carrollite.yaml
+    sha256: f462c9dd2d309a384f4feb93a064202c026cf00d646568338aa04cef3347185d
+    role: target
+  - path: history/records/carrollite/2026-10-14T043952Z-codex-03242d.yaml
+    sha256: 213c789082968e83703e6242880511040da940aaeeb0ab8d2fc4d4ad3f555b20
+    role: context
+  - path: research/sources/round62-carrollite/20261014T043812Z-source-investigation.json
+    sha256: 355e172297c153ca3ed8fcc02d4eae47442a501d28e4fe7e314f162d193cdfc8
+    role: context
+  - path: research/sources/round62-carrollite/20261014T043812Z-source-investigation.md
+    sha256: 0a3bb24bb460599b7e7b2d61edcb4aeae54d8ae436054adbfdcb1b55357a7e18
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Complete field-by-field review of one new maintained record, its CREATE
+    history and cited evidence; no sampling of target fields.
+  selection: Assigned exact ID cmmmech:carrollite and maintained path data/records/carrollite.yaml
+    at the supplied frozen SHA256.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:carrollite
+  exclusions:
+  - target: New curation from mixed-tailings, surfactant-treated mixed-ore or chapter
+      leads
+    reason: Those experiments are not evidence for the crystal-specific mechanism
+      or its yield. Related primary HTML was inspected only for scope and conflicting
+      interpretation; no new result was imported.
+  - target: Global completeness of carrollite literature and latest IMA edition
+    reason: Review checks the specifically cited September 2026 authority and Yang
+      2015 experiment. The authority PDF was re-inspected from retained bytes; no
+      latest-edition or globally exhaustive search claim is made.
+targets:
+- target_id: cmmmech:carrollite
+  path: data/records/carrollite.yaml
+  label: Carrollite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/carrollite.yaml
+    role: maintained scientific record
+checks:
+- check_id: named
+  name: Named-record validation
+  command: PYTHONDONTWRITEBYTECODE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1
+    uv run --locked cmmmech validate data/records/carrollite.yaml
+  status: passed
+  required: true
+  summary: Checked 1 record(s); 0 failed. Executed by this reviewer; exit 0.
+  target_ids:
+  - cmmmech:carrollite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named_validation
+- check_id: history
+  name: Trusted-base canonical history validation
+  command: PYTHONDONTWRITEBYTECODE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1
+    uv run --locked cmmmech validate-history --base 11a0b0f8e2714f1863304faf408da4ce0e7c5b53
+  status: passed
+  required: true
+  summary: Checked 333 history record(s); 0 error(s). Executed by this reviewer; exit
+    0.
+  target_ids:
+  - cmmmech:carrollite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - history_validation
+- check_id: batch
+  name: Full batch checks
+  command: PYTHONDONTWRITEBYTECODE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1
+    just check
+  status: passed
+  required: true
+  summary: 'Coordinator executed 04:44:05-04:50:52 UTC. Actual log: 317 tests passed,
+    3 skipped; 284 records and 333 histories valid; exit 0.'
+  target_ids:
+  - cmmmech:carrollite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch_validation
+- check_id: nonempty
+  name: Explicit nonempty corpus validation
+  command: PYTHONDONTWRITEBYTECODE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1
+    uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator executed 04:50:52-04:51:09 UTC; 284 records, 0 failed; exit
+    0.
+  target_ids:
+  - cmmmech:carrollite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch_validation
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/carrollite.yaml
+  locator: Entire file at source.inputs target SHA256
+  accessed_at: '2026-10-14T04:47:58.051339Z'
+  support: supports
+  summary: All fields read, including both sources, the single mechanism, all four
+    directional evidence entries, inline CREATE event and linked sidecar.
+  snapshot_sha256: f462c9dd2d309a384f4feb93a064202c026cf00d646568338aa04cef3347185d
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: PDF pages 1-2 column definitions/license; page 38 Carrollite row
+  accessed_at: '2026-10-14T04:47:58.051339Z'
+  support: supports
+  summary: Personally viewed original pages 1, 2 and 38. The row gives CuCo2S4, G
+    and 1852; the definitions identify G as grandfathered and that year as original
+    description. Reused complete September 2026 PDF, not a new download.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.rruff.net/doclib/hom/carrollite.pdf
+  locator: Both original pages; formula and chemistry section
+  accessed_at: '2026-10-14T04:47:58.051339Z'
+  support: supports
+  summary: Personally inspected both pages of the retained official Handbook PDF.
+    Natural substitution and compositional variation are compatible with the mineral
+    species scope and caution against inferring perfect purity from the ideal formula.
+  snapshot_sha256: 8a6a7febc0245692dbb4a6302ec99ec8fed7028139e7214892fc0a81c1e84f09
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1016/S1003-6326(15)63896-1
+  locator: Complete original seven-page PDF, pages 2718-2724; Sections 2-4; Figures
+    1-5; Tables 1-2
+  accessed_at: '2026-10-14T04:47:58.051339Z'
+  support: supports
+  summary: Personally read all seven original pages and visually inspected all figures
+    and tables. Official acquisition URL https://tnmsc.csu.edu.cn/EN/PDF/7891; original
+    is retained as /private/tmp/cmm-round62-carrollite-research/raw/yang2015.pdf.
+    Methods specify natural Luanshya crystals, the reported ZY101 mixture, iron-bearing
+    9K, temperature, pH, volumes and paired exposure arrangements. Figure 2 shows
+    altered surfaces in both 96-hour arrangements; Figure 4 supports the qualified
+    time-series description. No dissolved-metal extraction result is reported for
+    these crystal tests.
+  snapshot_sha256: a71bb8c5acd5ed364c983534719c109e7d646fc550c287072413b544dd928013
+- evidence_id: controls
+  kind: primary_source
+  reference: https://doi.org/10.1016/S1003-6326(15)63896-1
+  locator: Section 2.2; Section 3.1; Figures 2 and 4
+  accessed_at: '2026-10-14T04:47:58.051339Z'
+  support: partial
+  summary: The two specimens share the same cultured liquid system; membrane placement
+    is the comparison, not an independently sterile abiotic run. Methods do not report
+    verified bacterial exclusion, matched sterile membrane conditions or independent
+    experimental replication. Qualitative fields cannot separate attachment causality
+    from other arrangement differences.
+  snapshot_sha256: a71bb8c5acd5ed364c983534719c109e7d646fc550c287072413b544dd928013
+- evidence_id: sulfur
+  kind: primary_source
+  reference: https://doi.org/10.1016/S1003-6326(15)63896-1
+  locator: Section 3.2; Figure 3; Table 2; Section 3.3 and Figure 5
+  accessed_at: '2026-10-14T04:47:58.051339Z'
+  support: partial
+  summary: Table 2 assigns peaks near 161.5-161.8 eV to sulfide at 0-48 hours, but
+    labels 161.641 eV at 72 hours and 161.606 eV at 96 hours as zero-valent sulfur.
+    Oxidized assignments already occur at 24 hours. The record accurately retains
+    this internal inconsistency and declines the obligatory temporal pathway. Figure
+    5 labels a layer as passivation without a paired inhibition-rate measurement.
+  snapshot_sha256: a71bb8c5acd5ed364c983534719c109e7d646fc550c287072413b544dd928013
+- evidence_id: metadata
+  kind: database
+  reference: https://api.crossref.org/works/10.1016/S1003-6326(15)63896-1
+  locator: Retained Crossref response DOI/title/pages/update-to/relation fields versus
+    original PDF
+  accessed_at: '2026-10-14T04:47:58.051339Z'
+  support: supports
+  summary: DOI and title agree with the original. Crossref page range 2718-2754 conflicts
+    with original 2718-2724, which the record correctly uses and explains. Retained
+    response has no update-to field and an empty relation object; metadata alone is
+    not proof of absence of a correction.
+  snapshot_sha256: 20fe1d2eebea54f311a09e97a626d98dc899c2ac566ab6db2018295a02166795
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round62-carrollite-independent-review/web-search.json
+  locator: Three web.run queries and first returned result sets on 2026-10-14
+  accessed_at: '2026-10-14T04:47:58.051339Z'
+  support: context_only
+  summary: No correction or retraction affecting the target was found within the returned
+    exact DOI/title query results. Broader ZY101 results included mixed-ore studies
+    and unrelated names; these were not treated as crystal-specific yield or strain
+    authentication.
+  snapshot_sha256: 0a69b002a33ae55e02bed1e66782ba4fbe8a4c29c4a21c9464e5b76fca459550
+  search_scope: 'Queries: "10.1016/S1003-6326(15)63896-1" correction retraction erratum;
+    "Function of microorganism and reaction pathway" carrollite correction; carrollite
+    bioleaching "ZY101". First returned results only; no date/domain filters or pagination.
+    Live DOI-style and volume/issue publisher landing attempts failed. The independently
+    inspected official PDF remained available.'
+- evidence_id: related
+  kind: primary_source
+  reference: https://xuebao.neu.edu.cn/natural/article/html/2015-6-814.htm
+  locator: Primary HTML Sections 1.1-1.2, Table 1, Section 2.3 and Figure 3 discussion
+  accessed_at: '2026-10-14T04:47:58.051339Z'
+  support: context_only
+  summary: The related 2015 surfactant paper concerns a mixed cobalt-ore feed. Its
+    Figure 3 discussion repeats the same four 96-hour sulfur binding-energy values;
+    it does not independently resolve the questionable assignments in the reviewed
+    crystal experiment. Read HTML text and table, not this related paper's original
+    graphics. No quantitative result from it was admitted to the record.
+- evidence_id: history
+  kind: record_content
+  reference: history/records/carrollite/2026-10-14T043952Z-codex-03242d.yaml
+  locator: Target/session/actor/CREATE event compared with inline event
+  accessed_at: '2026-10-14T04:47:58.051339Z'
+  support: supports
+  summary: Sidecar targets this exact record and identifies Codex/GPT-6/codex. Actual
+    sidecar session time 04:39:52Z is distinct from inline CREATE time 04:40:05.305919Z.
+    Both describe the new record and its limitations without inventing earlier authorship.
+  snapshot_sha256: 213c789082968e83703e6242880511040da940aaeeb0ab8d2fc4d4ad3f555b20
+- evidence_id: local_search
+  kind: search
+  reference: /private/tmp/cmm-round62-carrollite-independent-review/local-scope-search.txt
+  locator: Bounded maintained-record/review/history text search
+  accessed_at: '2026-10-14T04:47:58.051339Z'
+  support: context_only
+  summary: Only the assigned record and its new history matched the selected identity/formula/DOI
+    terms in these scoped trees. This is a bounded local cross-reference check, not
+    global literature or machinewide absence.
+  snapshot_sha256: f0403d188fe30d6932b7705cbcd5ac703277809db2023dd04135b56888c41fe7
+  search_scope: rg --no-ignore --hidden --follow -n -i carrollite|CuCo2S4|S1003-6326\(15\)63896-1
+    data/records reviews/structured history/records; hidden and ignored files included
+    and relevant symlinks followed. Other repository trees and raw archives were not
+    searched by this independent check; curator dossier provides separately bounded
+    research dedup.
+- evidence_id: named_validation
+  kind: validation
+  reference: /private/tmp/cmm-round62-carrollite-independent-review/named.log
+  locator: Entire captured terminal output and checks.json command/timestamps
+  accessed_at: '2026-10-14T04:47:31.410242Z'
+  support: supports
+  summary: Executed by this reviewer; Checked 1 record(s); 0 failed.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: history_validation
+  kind: validation
+  reference: /private/tmp/cmm-round62-carrollite-independent-review/history.log
+  locator: Entire captured terminal output and checks.json command/timestamps
+  accessed_at: '2026-10-14T04:47:40.978228Z'
+  support: supports
+  summary: Executed by this reviewer; Checked 333 history record(s); 0 error(s).
+  snapshot_sha256: 3cb702da358e5825d55476751fc643843acd188a0837ef2f6a0aa1527bbe3ea4
+- evidence_id: batch_validation
+  kind: validation
+  reference: /private/tmp/cmm-round62-final-gates.json
+  locator: All command receipts and entire terminal log at /private/tmp/cmm-round62-final-gates.log
+  accessed_at: '2026-10-14T04:51:58.426597Z'
+  support: supports
+  summary: 'Read actual coordinator-executed receipts and complete log. just render,
+    just check, explicit nonempty validation and trusted-base history validation all
+    exited 0. just check: 317 tests passed, 3 skipped, 284 records valid and 333 histories
+    valid. Explicit nonempty: 284 records, 0 failed. Log SHA256 a94cb9fef74e0ca15a967cea93f42b5809488135e8e614a46d2f9826506895a4.
+    These commands ran against the frozen record bytes before this review was saved;
+    the review does not claim the earlier batch check included this new bundle.'
+  snapshot_sha256: b26f9636cadb474165ded2df1ca1ccd65dfbf1876a9cf46f08df4a228b8e50fa
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral identity and material boundary
+  outcome: supported
+  summary: Carrollite is correctly grounded as the CuCo2S4 mineral species, separate
+    from elements, ions and mixed resource feeds. No external concept CURIE or inherited
+    criticality claim is asserted.
+  target_ids:
+  - cmmmech:carrollite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  dimensions:
+  - name: material_form
+    value: Mineral species; source-assigned natural Luanshya crystal specimen
+    definition: Identity and experimental form, not a commodity or element
+    evidence_ids:
+    - ima
+    - primary
+  - name: criticality
+    value: Unrecorded; no list, jurisdiction or edition claim
+    definition: Omission does not mean not critical and avoids inherited element criticality
+    evidence_ids:
+    - record
+- assessment_id: experimental_scope
+  area: evidence
+  topic: Organism, substrate, conditions and biomass
+  outcome: supported
+  summary: The context accurately reproduces the source conditions and states missing
+    culture resolution and method details rather than inventing them.
+  target_ids:
+  - cmmmech:carrollite
+  evidence_ids:
+  - record
+  - primary
+  dimensions:
+  - name: organism_resolution
+    value: Reported ZY101 mixture of Acidithiobacillus ferrooxidans, Acidithiobacillus
+      thiooxidans and Leptospirillum ferrooxidans
+    definition: Source-reported names; no authenticated strain, proportion or individual
+      causal assignment
+    evidence_ids:
+    - primary
+  - name: biomass_state
+    value: Cultured mixed inoculum in the leaching system
+    definition: Not dead-biomass adsorption or proven species-specific metabolism
+    evidence_ids:
+    - primary
+  - name: substrate
+    value: Natural carrollite crystals; Table 1 reports 3.23 mass percent other constituents
+    definition: Source mineral assignment supported by chemical composition and XRD;
+      not perfect bulk purity
+    evidence_ids:
+    - primary
+  - name: conditions
+    value: 300 mL culture plus 2700 mL 9K in a 4 L 316L tank; 45 C; initial pH 1.5;
+      44.3 g/L FeSO4.7H2O in formulation; about 650 mV versus calomel after culturing
+    definition: Faithfully reported laboratory conditions; no conversion to another
+      electrode scale
+    evidence_ids:
+    - primary
+  - name: pretreatment
+    value: Surface pretreatment not specified in the cited experiment
+    definition: Absence of a reported detail is kept explicit; no invented polishing
+      or sterilization
+    evidence_ids:
+    - primary
+- assessment_id: outcomes
+  area: quantity
+  topic: Observed outcome versus kinetics and recovered product
+  outcome: supported
+  summary: The record restricts its outcome to visible crystal-surface pits, cracks
+    and deposits. It correctly avoids extraction percentage, dissolved-metal mass
+    balance, isolated recovery and industrial deployment claims.
+  target_ids:
+  - cmmmech:carrollite
+  evidence_ids:
+  - record
+  - primary
+  - controls
+  dimensions:
+  - name: outcome
+    value: Qualitative surface corrosion; more pronounced direct-exposure fields at
+      96 h
+    definition: SEM observations at the reported sampling times, not measured dissolution-rate
+      enhancement
+    evidence_ids:
+    - primary
+    - controls
+  - name: deployment
+    value: Laboratory crystal experiments
+    definition: Industrial origin of the mineral does not establish deployment of
+      the microbial process
+    evidence_ids:
+    - record
+    - primary
+- assessment_id: causal_limits
+  area: evidence
+  topic: Controls and contradictory sulfur interpretation
+  outcome: supported
+  summary: The record retains the limitations that prevent causal attribution of attachment
+    alone or acceptance of the asserted sulfur pathway. It does not amplify the paper's
+    stronger conclusions.
+  target_ids:
+  - cmmmech:carrollite
+  evidence_ids:
+  - record
+  - controls
+  - sulfur
+  - related
+  dimensions:
+  - name: controls
+    value: Membrane-separated versus direct specimens in a common cultured system
+    definition: Not matched sterile abiotic control; exclusion and mass-transfer equivalence
+      unverified
+    evidence_ids:
+    - controls
+  - name: sulfur_assignments
+    value: Internally inconsistent low-binding-energy assignments retained as partial
+      evidence
+    definition: The record rejects an obligatory temporal sequence while retaining
+      independently visible surface alteration
+    evidence_ids:
+    - sulfur
+  details: The EPS iron concentration is introduced by the source as prior literature
+    and is not measured in these crystals. The record labels EPS enrichment, iron
+    recycling and passivation as interpretations. No supported corrective edit is
+    needed to preserve those distinctions.
+- assessment_id: provenance
+  area: provenance
+  topic: Citation and creation history
+  outcome: supported
+  summary: Primary DOI, title and original pagination are consistent with the record.
+    IMA access is honestly a retained-source reinspection. Linked and inline CREATE
+    events have distinct actual timestamps and describe the present work.
+  target_ids:
+  - cmmmech:carrollite
+  evidence_ids:
+  - record
+  - metadata
+  - history
+  - named_validation
+  - history_validation
+findings: []
+actions: []
+limitations:
+- The crystal experiment does not independently verify cell exclusion by the membrane
+  or control membrane-associated mass transfer. SEM fields provide qualitative surface
+  observations, not replicated quantitative kinetics or a metal balance.
+- The reported mixed culture is not authenticated to strain accessions or measured
+  community proportions, and individual species contributions are not isolated. No
+  species CURIE is asserted by the record.
+- The original sulfur peak assignments and sparse time points do not establish the
+  proposed obligatory polysulfide sequence. Underlying raw spectra, fitting constraints
+  and independent speciation would be needed to resolve that claim.
+- A selected-field SEM layer does not prove rate inhibition or its precise product
+  identity; EPS iron enrichment and iron recycling are source interpretations rather
+  than specimen-specific measurements.
+- No metal recovery yield, isolated product or industrial deployment is established
+  by this crystal experiment.
+- Notice searching was bounded to exact DOI/title and ZY101 queries, the first returned
+  web result sets and retained Crossref metadata. Publisher live landing attempts
+  failed; the complete official PDF was available and independently inspected. This
+  is not a universal clearance of the literature.
+notes:
+- 'Corrections made by this reviewer: none. No record or history bytes were changed.
+  No external issues or comments were posted.'
+- Unresolved scientific questions are retained in the record rather than promoted
+  to measured outcomes. Empty findings applies only to this reviewed record state.
+tags:
+- round62
+- independent
+- carrollite
+- primary-figures
+```

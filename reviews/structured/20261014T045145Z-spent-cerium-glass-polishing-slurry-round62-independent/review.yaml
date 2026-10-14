@@ -1,0 +1,409 @@
+schema_version: 1.0.0
+review_id: 20261014T045145Z-spent-cerium-glass-polishing-slurry-round62-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of spent cerium-based glass-polishing slurry
+started_at: '2026-10-14T04:43:41.869879Z'
+finished_at: '2026-10-14T04:51:45.373624Z'
+reviewer:
+  identity: codex /root/round61_zinc_sources
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from /root/round61_fluorite_sources, who acquired
+    the source dossier and authored this record. This reviewer did not edit this record,
+    its history or dossier. Original retained PDFs, relevant figures/tables and metadata
+    were independently inspected; unrelated uranium-vanadate curation by this reviewer
+    is outside this target. Parent-executed final batch gates are attributed separately.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The used mixed polishing slurry and nonmicrobial laboratory isolation of
+  a ceria-rich product are supported. The record distinguishes author-reported approximate
+  digestion yield from dry oxide-equivalent product composition, preserves missing
+  mass-balance/control information and avoids both microbial and industrial deployment
+  claims. No supported curation defect was found.
+source:
+  git_revision: 11a0b0f8e2714f1863304faf408da4ce0e7c5b53
+  state: working_tree
+  inputs:
+  - path: data/records/spent-cerium-glass-polishing-slurry.yaml
+    sha256: 7fa0a45984674b3e2e944ad0de064a1013ee3abd7cb6bed910db5d3a7d5da750
+    role: target
+  - path: history/records/spent-cerium-glass-polishing-slurry/2026-10-14T043818Z-codex-68ff6b.yaml
+    sha256: 2709b526a60de5572bf7d794f0aec1505676b1e31fff7f2f0c670846110c9ee2
+    role: context
+  - path: research/sources/round62-secondary/20261014T044043Z-source-investigation.json
+    sha256: bbb1ed8c39ed442901b73d91e36bed806e150984e7863eb490d876ca19550f34
+    role: context
+  - path: research/sources/round62-secondary/20261014T044043Z-source-investigation.md
+    sha256: 4d0ef2e47e4897c0972f6ca58b64f7770859e19afd3958c7d0191f4c846944b7
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Full field assessment of one newly maintained resource record, with
+    fresh primary-source review of the exact claims and its actual CREATE provenance.
+    No target-field sampling. Source sections about downstream product performance
+    or separate groundwater arms are inspected only to police transfer of claims.
+  selection: Assigned exact ID cmmmech:spent-cerium-glass-polishing-slurry at maintained
+    path data/records/spent-cerium-glass-polishing-slurry.yaml.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:spent-cerium-glass-polishing-slurry
+  exclusions:
+  - target: New curation, external issue posting and publication
+    reason: Assigned scope is independent local review; maintained record and history
+      remain unchanged by reviewer.
+  - target: Uncurated downstream product performance or new experiments beyond the
+      named study
+    reason: Not required to assess the current waste-transformation/recovery claims
+      and not silently promoted into this record.
+targets:
+- target_id: cmmmech:spent-cerium-glass-polishing-slurry
+  path: data/records/spent-cerium-glass-polishing-slurry.yaml
+  label: Spent cerium glass-polishing slurry
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/spent-cerium-glass-polishing-slurry.yaml
+    role: maintained
+checks:
+- check_id: named
+  name: Reviewer named-record validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 PYTHONDONTWRITEBYTECODE=1
+    uv run --locked cmmmech validate data/records/spent-cerium-glass-polishing-slurry.yaml
+  status: passed
+  required: true
+  summary: 'Executed by this reviewer: Checked 1 record(s); 0 failed. Actual command
+    finished 2026-10-14T04:46:06.578079+00:00; exit 0.'
+  target_ids:
+  - cmmmech:spent-cerium-glass-polishing-slurry
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - local_checks
+- check_id: history
+  name: Reviewer trusted-base append-only history validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 PYTHONDONTWRITEBYTECODE=1
+    uv run --locked cmmmech validate-history --base 11a0b0f8e2714f1863304faf408da4ce0e7c5b53
+  status: passed
+  required: true
+  summary: 'Executed by this reviewer: Checked 333 history record(s); 0 error(s).
+    Actual command finished 2026-10-14T04:46:16.478231+00:00; exit 0.'
+  target_ids:
+  - cmmmech:spent-cerium-glass-polishing-slurry
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - local_checks
+- check_id: batch
+  name: Parent full batch checks
+  command: just check
+  status: passed
+  required: true
+  summary: Parent executed this command, not the reviewer. Reviewer read actual receipt
+    and retained log and verified its SHA-256. 317 tests passed, 3 skipped; 284 records
+    and 333 histories valid; generated-page freshness passed. Actual interval 2026-10-14T04:44:05.207435+00:00
+    to 2026-10-14T04:50:52.392759+00:00; exit 0.
+  target_ids:
+  - cmmmech:spent-cerium-glass-polishing-slurry
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch_checks
+- check_id: nonempty
+  name: Parent nonempty corpus validation
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Parent executed this command, not the reviewer. Reviewer read actual receipt
+    and retained log and verified its SHA-256. 284 records checked; 0 failed. Actual
+    interval 2026-10-14T04:50:52.393005+00:00 to 2026-10-14T04:51:09.920273+00:00;
+    exit 0.
+  target_ids:
+  - cmmmech:spent-cerium-glass-polishing-slurry
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch_checks
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/spent-cerium-glass-polishing-slurry.yaml
+  locator: All fields at the source.inputs target hash
+  accessed_at: '2026-10-14T04:51:45.302916Z'
+  support: supports
+  summary: Read the complete maintained record and compared every claim to the primary
+    methods/results and the schema. It is a new record at the trusted base.
+  snapshot_sha256: 7fa0a45984674b3e2e944ad0de064a1013ee3abd7cb6bed910db5d3a7d5da750
+- evidence_id: history
+  kind: record_content
+  reference: history/records/spent-cerium-glass-polishing-slurry/2026-10-14T043818Z-codex-68ff6b.yaml
+  locator: Actual CREATE session, target, actors, event and linked inline provenance
+  accessed_at: '2026-10-14T04:51:45.302916Z'
+  support: supports
+  summary: Read the sidecar and inline event. The actor/model/tool and current creation
+    timestamps identify this curation; they do not imply older authorship, completed
+    external review or industrial implementation.
+  snapshot_sha256: 2709b526a60de5572bf7d794f0aec1505676b1e31fff7f2f0c670846110c9ee2
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round62-secondary/20261014T044043Z-source-investigation.md
+  locator: Source assessment plus full paired JSON acquisition/curation manifest
+  accessed_at: '2026-10-14T04:51:45.302916Z'
+  support: supports
+  summary: Read the dossier and parsed the manifest, including query/acquisition scope
+    and deferred leads. Independently checked every listed artifact hash and the report
+    hash. The source dossier guided retrieval; it did not substitute for original-figure
+    assessment.
+  snapshot_sha256: 4d0ef2e47e4897c0972f6ca58b64f7770859e19afd3958c7d0191f4c846944b7
+- evidence_id: metadata
+  kind: database
+  reference: https://doi.org/10.1155/2015/241421
+  locator: Primary title/author page and same-day retained Crossref metadata
+  accessed_at: '2026-10-14T04:51:45.302916Z'
+  support: supports
+  summary: DOI, authors, title and publication year match the original. Crossref contains
+    no update-to entry and an empty relation object. The issuing metadata are retained
+    in the raw source inventory; publication dates are distinguished from file/download
+    dates.
+  snapshot_sha256: 8174700afbff133ec4dcf3f59d70564ba0e35005768cf87a4268c94b144d24dc
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round62-resource-reviews/notice-search.json
+  locator: Independent exact-DOI correction/retraction/erratum search
+  accessed_at: '2026-10-14T04:51:45.302916Z'
+  support: context_only
+  summary: No affecting notice was identified in the returned sets. Source-internal
+    negative/limiting results were separately examined. Other-source search hits were
+    not used as uninspected experimental proof.
+  snapshot_sha256: 52ed56b3a6b7ee3995203cc45dc226e7f3ec53e94eee0e63a4013be784bbcfee
+  search_scope: 'web.run exact queries: "10.1016/j.apgeochem.2014.12.001" correction
+    retraction erratum; "10.1155/2015/241421" correction retraction erratum. Initial
+    contrary-context queries: "chromite ore processing residue" "magnetite" "reoxidation";
+    "Recovery of Cerium Dioxide from Spent Glass-Polishing" yield control. First returned
+    sets, no pagination or domain/date filters; not an exhaustive registry or citation-chain
+    clearance.'
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round62-resource-reviews/bounded-record-dedup.txt
+  locator: Bounded current-corpus material/DOI search
+  accessed_at: '2026-10-14T04:51:45.302916Z'
+  support: context_only
+  summary: Hidden/ignored-inclusive, symlink-following current record search returned
+    the two new owners and incidental lexical matches. The dossier separately records
+    wider prior-research/raw-root coverage and missing or timed-out extractions; this
+    review makes no machine-wide absence claim.
+  snapshot_sha256: bbacf69c2d967b188078f2886733d7cd8687e0577b2e55fa1a27a7d696994f7f
+  search_scope: rg --no-ignore --hidden --follow -n -i over data/records/*.yaml for
+    chromite ore processing residue, COPR, spent/polishing slurry variants and the
+    two exact DOIs; no ignore-dependent absence claim.
+- evidence_id: local_checks
+  kind: validation
+  reference: /private/tmp/cmm-round62-resource-reviews/checks.json
+  locator: Reviewer-executed named validations and trusted-base history command
+  accessed_at: '2026-10-14T04:51:45.302916Z'
+  support: supports
+  summary: Both named records validated with 1 checked/0 failed each; trusted-base
+    history validated 333 records with 0 errors. These are structural checks, not
+    a substitute for scientific assessment.
+  snapshot_sha256: 55fde7c203fde0dcad83e1a381124636acc3aeaf44f5f3221a2639fb048d88ee
+- evidence_id: batch_checks
+  kind: validation
+  reference: /private/tmp/cmm-round62-final-gates.json
+  locator: Parent-executed final command receipt and log
+  accessed_at: '2026-10-14T04:51:45.302916Z'
+  support: supports
+  summary: 'Read the actual full-batch receipt and short log, verified every command
+    exit 0 and rehashed the log. The completed review does not rely on the earlier
+    prechange baseline. Full run: just render; just check; separate require-records;
+    trusted-base history. Log SHA-256 a94cb9fef74e0ca15a967cea93f42b5809488135e8e614a46d2f9826506895a4.'
+  snapshot_sha256: b26f9636cadb474165ded2df1ca1ccd65dfbf1876a9cf46f08df4a228b8e50fa
+- evidence_id: janos_primary
+  kind: primary_source
+  reference: https://pdfs.semanticscholar.org/4ad8/d9ff730221af389414d2494e98c988a3c19b.pdf
+  locator: Original article pages1-5; sections2.1-2.4 and3, Table1 and Figures1-3;
+    section2.5 control scope
+  accessed_at: '2026-10-14T04:51:45.302916Z'
+  support: supports
+  summary: Personally viewed original page renders and read recovery methods/results.
+    Table1 explicitly uses dry mass and oxide-equivalent composition. Section3 gives
+    approximately70% digestion yield and negligible subsequent losses as author reports.
+    Figures1-3 show physical isolated solid morphology, thermal behavior and ceria-type
+    diffraction. B-400 and degradation blanks/duplicates belong to later performance
+    assays, not a controlled recovery-stage comparison.
+  snapshot_sha256: 262bfb81b19a6d1bfd16140f8cc61be483688b21e58b0c02bdeea6329e425f31
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Used mixed polishing waste versus elements, reagents and product
+  outcome: supported
+  summary: The actual Dioptra/Cerox factory waste collected over six months, partly
+    dewatered to about50% water, supports a spent-slurry secondary-resource owner.
+    Silica-rich feed and ceria/lanthanum-bearing product are distinct. Current Table1
+    data are not replaced by richer historical waste.
+  target_ids:
+  - cmmmech:spent-cerium-glass-polishing-slurry
+  evidence_ids:
+  - record
+  - janos_primary
+  dimensions:
+  - name: material_form
+    value: secondary_resource; used ceria-based optical-glass-polishing suspension
+    definition: Includes spent abrasive, fine glass and process-derived components;
+      not pure Ce or CeO2.
+    evidence_ids:
+    - record
+    - janos_primary
+- assessment_id: mechanism
+  area: evidence
+  topic: Nonmicrobial chemical recovery and isolated product
+  outcome: supported
+  summary: The source supports acid/peroxide digestion, solid separation, carbonate
+    precipitation and calcination as a laboratory sequence producing an isolated ceria-rich
+    oxide. Peroxide-mediated Ce(IV)-to-Ce(III) chemistry is identified as the authors
+    interpretation; no enzyme, organism or biological step is invented.
+  target_ids:
+  - cmmmech:spent-cerium-glass-polishing-slurry
+  evidence_ids:
+  - janos_primary
+  dimensions:
+  - name: microbial
+    value: 'false'
+    definition: No organism or living-microbe treatment occurs in the curated recovery
+      sequence.
+    evidence_ids:
+    - janos_primary
+  - name: product
+    value: Physically isolated ceria-rich oxide retaining lanthanum and minor impurities
+    definition: Recovery is demonstrated as solid product isolation, not pure elemental
+      cerium or chemically pure CeO2.
+    evidence_ids:
+    - janos_primary
+- assessment_id: conditions
+  area: evidence
+  topic: Exact chemical sequence and separation of control scopes
+  outcome: supported
+  summary: The record matches the primary acid/peroxide20% stoichiometric excess,65-70C/3h
+    digestion,0.2mol/L REE leachate,pH4 neutralization then near7.2 precipitation,CO2:NH3=5:1,pH9.5
+    end transition,110C drying and selected200-900C/2h anneals. B-400 and analytical
+    blanks/duplicates belong to degradation performance and are not recycled into
+    recovery controls.
+  target_ids:
+  - cmmmech:spent-cerium-glass-polishing-slurry
+  evidence_ids:
+  - janos_primary
+  dimensions:
+  - name: controls
+    value: No acid-only or peroxide-omission recovery arm established
+    definition: Reagent-derived performance comparison and pesticide controls do not
+      isolate recovery-stage reagent effects.
+    evidence_ids:
+    - janos_primary
+  - name: scale
+    value: Laboratory; batch mass and full liquid volumes not supplied
+    definition: Factory waste origin and authors scaling proposal do not establish
+      plant operation.
+    evidence_ids:
+    - janos_primary
+- assessment_id: outcome
+  area: quantity
+  topic: Yield versus oxide-equivalent enrichment
+  outcome: supported
+  summary: Approximately70% is an author-reported cerium digestion yield; downstream
+    losses are described as negligible without a closed independently reconstructed
+    mass balance. Table1 gives8.85wt% feed and92.8wt% product CeO2 equivalents on
+    dry mass, not92.8% recovery. Lanthanum and other components remain, and fluorite-type
+    structure is not the CaF2 mineral fluorite.
+  target_ids:
+  - cmmmech:spent-cerium-glass-polishing-slurry
+  evidence_ids:
+  - janos_primary
+  dimensions:
+  - name: measurement_basis
+    value: Dry-mass XRF oxide equivalents; approximate author-reported digestion yield
+    definition: Compositions, product purity and recovery efficiency are not interchanged.
+    evidence_ids:
+    - janos_primary
+  - name: uncertainty
+    value: Recovery replication, uncertainty and closed element balance unreported
+    definition: These limits are explicit rather than inferred from separate performance-test
+      statistics.
+    evidence_ids:
+    - janos_primary
+- assessment_id: criticality
+  area: evidence
+  topic: No inherited criticality or unsupported identifiers
+  outcome: supported
+  summary: No constituent-element criticality designation is assigned to this mixed
+    waste. List/jurisdiction/edition claims are absent; no claim of not-listed status
+    is made. External identifiers are limited to verified source identity and, where
+    present, the correctly scoped organism species.
+  target_ids:
+  - cmmmech:spent-cerium-glass-polishing-slurry
+  evidence_ids:
+  - record
+  - metadata
+  dimensions:
+  - name: criticality
+    value: unrecorded
+    definition: No jurisdiction/list/edition assertion; this is not a negative membership
+      determination.
+    evidence_ids:
+    - record
+- assessment_id: provenance
+  area: provenance
+  topic: New maintained owner and actual CREATE history
+  outcome: supported
+  summary: Native input hashes match the frozen record, sidecar, schema and source
+    pair. The record is new at the trusted base. Inline event and canonical sidecar
+    identify actual curation rather than prior authorship; trusted-base history validation
+    passed.
+  target_ids:
+  - cmmmech:spent-cerium-glass-polishing-slurry
+  evidence_ids:
+  - record
+  - history
+  - local_checks
+  - dossier
+- assessment_id: validation
+  area: schema
+  topic: Structural and final batch requirements
+  outcome: supported
+  summary: Reviewer named validation and trusted-base history checks passed, as did
+    the parent final full-batch and separate nonempty corpus commands. Every target
+    field was assessed within the source scope. These checks complement, but do not
+    replace, the original-evidence assessment.
+  target_ids:
+  - cmmmech:spent-cerium-glass-polishing-slurry
+  evidence_ids:
+  - local_checks
+  - batch_checks
+findings: []
+actions: []
+limitations:
+- Only the named factory waste and the described laboratory chemical route are verified;
+  no universal composition, microbial route or plant deployment is established.
+- The recovery stage lacks reported replicate count, uncertainty, complete liquid
+  volumes, batch mass, matched omission controls and closed element mass balance.
+  Approximate yield remains explicitly author-reported.
+- The isolated product retains lanthanum and minor components; a ceria-type diffraction
+  phase does not prove chemical purity.
+- Original recovery-relevant pages1-5, Table1 and Figures1-3 were visually inspected.
+  Later degradation-performance pages6-8 were not fully visually reviewed because
+  those endpoints are not curated; the appended advertisement is outside scientific
+  scope.
+- Correction/contrary-evidence searches were bounded to first returned sets; no exhaustive
+  assurance against future or unindexed notices is made.
+notes:
+- This new record does not exist at the trusted base; the reviewed state is an uncommitted
+  working-tree attestation, not a claim that these bytes were already committed. Native
+  inspect captured input hashes before scientific assessment.
+- No criticality designation is asserted, so omission is not interpreted as a not-listed
+  determination.
+- 'Raw source integrity was checked against the dossier: all 52 listed artifacts matched
+  their recorded SHA-256. Raw full text and renders remain outside Git.'
