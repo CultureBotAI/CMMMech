@@ -1,0 +1,23 @@
+from pathlib import Path
+from datetime import datetime,timezone
+import json,hashlib,subprocess,yaml
+p=Path('/private/tmp');cfg=json.loads((p/'cmm-round82-helper-config.json').read_text());w=Path(cfg['worktree']);sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();now=lambda:datetime.now(timezone.utc).isoformat();checks=w/'research/ingests/round82-checks-20261014';checks.mkdir(parents=True,exist_ok=True)
+for suffix in ['baseline','final-gates','review-check-final','local-coverage','governed-check','preservation-precommit']:
+ src=p/f'cmm-round82-{suffix}.json';d=json.loads(src.read_text());assert d.get('passed',d.get('exit_code')==0),suffix;dst=checks/(suffix+'.json');assert not dst.exists();dst.write_bytes(src.read_bytes())
+ if 'log' in d:
+  log=Path(d['log']);assert sha(log)==d['log_sha256'];(checks/(suffix+'.log')).write_bytes(log.read_bytes())
+pub=w/'reviews/publication/20261014-round82';pub.mkdir(exist_ok=True,parents=True)
+for n in ['helper-config','helper-derivation','initialization','source-issues-posted']:
+ src=p/f'cmm-round82-{n}.json';dst=pub/(n+'.json');assert not dst.exists();dst.write_bytes(src.read_bytes())
+rows=[]
+for slug in cfg['slugs']:
+ path='data/records/'+slug+'.yaml';rec=yaml.safe_load((w/path).read_text());matches=[]
+ for rp in (w/'reviews/structured').glob('*round82*/review.yaml'):
+  rv=yaml.safe_load(rp.read_text())
+  if rv['completion']=='completed' and rv['scientific_review'] and rv['verdict'] in ['pass','pass_with_limitations'] and rv['scope']['reviewed_target_ids']==[rec['id']] and any(x['path']==path and x['sha256']==sha(w/path) for x in rv['source']['inputs']):matches.append((rp,rv))
+ assert len(matches)==1,(slug,len(matches));rp,rv=matches[0];assert rv['reviewer']['independence']=='independent'
+ rows.append(dict(slug=slug,id=rec['id'],name=rec['name'],material_kind=rec['material_kind'],path=path,sha256=sha(w/path),review=dict(path=str(rp.relative_to(w)),review_id=rv['review_id'],review_sha256=sha(rp),verdict=rv['verdict']),review_markdown=str(rp.with_suffix('.md').relative_to(w)),history_refs=rec['history_refs']))
+paths=set(subprocess.check_output(['git','diff','--name-only'],cwd=w,text=True).splitlines())|set(subprocess.check_output(['git','ls-files','--others','--exclude-standard'],cwd=w,text=True).splitlines());reports=sorted(str(q.relative_to(w)) for q in (w/'research/sources').glob('round82-*/*.md'));m=dict(recorded_at=now(),base=cfg['base'],branch=cfg['branch'],worktree=str(w),state='working_tree',selection=cfg['selection'],records=rows,counts=cfg['counts'],issues=cfg['issues'],source_reports=reports,pre_manifest_inputs=[dict(path=n,sha256=sha(w/n)) for n in sorted(paths)]);dst=w/'research/ingests/round82-frontier-20261014.json';assert not dst.exists();dst.write_text(json.dumps(m,indent=2)+'\n')
+lines=['# Round82: mineral identities and qualified microbial processes','',f"Recorded UTC: {m['recorded_at']}. Trusted base `{cfg['base']}`; branch `{cfg['branch']}`.",'',cfg['selection'],'','| Record | Independent scientific review | Canonical history |','|---|---|---|']
+for r in rows:lines.append(f"| [{r['name']}](../../{r['path']}) | [Markdown](../../{r['review_markdown']}) · [YAML](../../{r['review']['path']}) — {r['review']['verdict']} | "+' · '.join(f'[CREATE](../../{h})' for h in r['history_refs'])+' |')
+lines+=['',cfg['limitations'],'',cfg['issue_summary'],'',f"Actual checks: 317 tests passed, 3 skipped; {cfg['counts']['record_count']} records, {cfg['counts']['history_count']} history entries, {cfg['counts']['structured_review_count']} native bundles, {cfg['counts']['review_base_count']} available bases, and {cfg['counts']['covered_records']}/{cfg['counts']['record_count']} exact current positive scientific coverage. Generated pages are current; all 22 governed artifacts match the immutable CLAW pin. No schema, validator, tests or governed configuration changes. [Receipts and logs](round82-checks-20261014/) retain command outcomes.",'','Source dossiers: '+', '.join(f'[{Path(r).parent.name}](../../{r})' for r in reports)+'. Paired JSON files retain access routes, artifact hashes, source contradictions and search boundaries. Full originals remain outside Git.','','[Publication evidence](../../reviews/publication/20261014-round82/) includes independent review and integration verification. Hosted PR review, isolated squash-shaped verification, queue merge, branch deletion and fresh-main checks remain future steps at this timestamp.','','Original main and unrelated skill worktree preservation includes hidden/ignored bytes, modes and symlink targets, excluding Git administration and external link-target contents. Discovery is bounded and not exhausted.',''];dst.with_suffix('.md').write_text('\n'.join(lines));print(dst)

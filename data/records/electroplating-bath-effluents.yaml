@@ -1,0 +1,133 @@
+id: cmmmech:electroplating-bath-effluents
+name: Electroplating-bath effluents
+material_kind: secondary_resource
+description: Metal-bearing liquids originating from industrial electroplating baths, represented by five
+  Cu, Ni, Pd and Au bath effluents supplied by Galvanica Aricci Srl, Ghisalba, Italy, in Ciani et al.
+  (2026). These compositionally different process liquids are distinct from electroplating wastewater-treatment
+  sludge, metallic electroforming scrap and laboratory metal-salt solutions. The study's Ni(1)+Cu mixture
+  is an experimental combination of two supplied liquids, not a sixth independently sampled waste stream.
+  No criticality designation is inherited from constituent metals.
+sources:
+- id: ciani2026
+  title: 'Ciani, Capelli, Daly, de Philippis and Adessi (2026). Toward Industrial Application of Cyanobacterial
+    Biosorption: Insights From Real Electroplating Effluents. Water Environment Research 98:e70366. DOI
+    10.1002/wer.70366. Complete seven-page original, Table 1, Figures 1-4 and original Supporting Information
+    Tables S1-S4 inspected; PDF versus XML figure-caption units differ.'
+  url: https://doi.org/10.1002/wer.70366
+  accessed_on: '2026-10-14'
+- id: ciani2024
+  title: 'Ciani, Decorosi, Ratti, De Philippis and Adessi (2024). Semi-continuous cultivation of EPS-producing
+    marine cyanobacteria: A green biotechnology to remove dissolved metals obtaining metal-organic materials.
+    New Biotechnology 82:33-42. DOI 10.1016/j.nbt.2024.04.004. Complete ten-page original and four-page
+    supplement; protocol and sequence context, not a second real-effluent experiment.'
+  url: https://doi.org/10.1016/j.nbt.2024.04.004
+  accessed_on: '2026-10-14'
+- id: genbank16som2
+  title: 'NCBI GenBank OQ945751.1: Dactylococcopsis salina 16Som2 partial 16S ribosomal RNA gene; source
+    strain 16Som2 and taxon 3045848. Sequence context, not a whole genome or independent proof of metal-binding
+    function.'
+  url: https://www.ncbi.nlm.nih.gov/nuccore/OQ945751.1
+  accessed_on: '2026-10-14'
+- id: genbankce4
+  title: 'NCBI GenBank OQ945752.1: Cyanothece sp. CE4 partial 16S ribosomal RNA gene; source strain CE
+    4 and taxon 3045849. Sequence context only.'
+  url: https://www.ncbi.nlm.nih.gov/nuccore/OQ945752.1
+  accessed_on: '2026-10-14'
+- id: ncbi3045848
+  title: 'NCBI Taxonomy 3045848: Dactylococcopsis salina 16Som2, strain rank. Current authoritative XML
+    checked with the linked sequence.'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3045848&mode=Info
+  accessed_on: '2026-10-14'
+- id: ncbi3045849
+  title: 'NCBI Taxonomy 3045849: Cyanothece sp. CE4, species rank in the database despite the unresolved
+    species epithet. Current authoritative XML checked with OQ945752.1.'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3045849&mode=Info
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: cyanobacterial_culture_biosorption
+  name: Conditional metal biosorption by pretreated cyanobacterial cultures
+  process: biosorption
+  microbial: true
+  description: Pretreated EPS-producing cyanobacterial cultures confined in dialysis tubing were associated
+    with control-corrected aqueous metal depletion from actual plating-bath effluents in laboratory batch
+    assays. Nickel uptake depended on culture and effluent; palladium and gold uptake was smaller on a
+    molar dry-biomass basis. Biosorption is the source interpretation, without establishing a specific
+    EPS ligand, active metabolism, isolated metal product or industrial deployment.
+  context: Ciani2026 sections 2.1-2.3 and 3.1 used Dactylococcopsis salina 16Som2, Cyanothece sp. CE4
+    and the unresolved Cyanothece-like co-culture Vi22M. One-week seawater-medium cultures were grown
+    at 26±0.5 degrees C, pH 8.5±0.5, continuous 200 micromol photons/m2/s white light and CO2-enriched
+    air. Whole cultures were confined in 12-14 kDa dialysis tubing and pretreated with 0.1 M HCl or NaOH;
+    identically pretreated cultivation medium without biomass served as the abiotic comparator. Section
+    3.1 assigns HCl treatment to Ni(1)+Cu/Ni(2) and NaOH to Pd/Au, but section 3.2 later calls the Ni/Cu
+    pretreatment alkaline; the conflict remains unresolved. Biosorbent dry-weight concentrations were
+    0.6, 1.0 and 0.8 g/L for 16Som2, Vi22M and CE4, respectively. Small dialysis bags (surface/volume
+    3.7/cm) contacted effluent at a biosorbent:effluent volume ratio of 1:10 in 100 mL glass cylinders,
+    25 degrees C, 200 rpm and 24 h. The cylinder size is not a stated working volume. ICP-OES measured
+    residual effluent metals; uptake was normalized against the medium-only comparator per gram biomass
+    dry weight. Drying at 105 degrees C was for analytical dry-weight determination, not documented preparation
+    of a dried biosorbent. Viability after pretreatment, axenicity and individual Vi22M membership were
+    not established. Nominal triplicates have missing and zero entries in the SI.
+  organisms:
+  - id: NCBITaxon:3045848
+    label: Dactylococcopsis salina 16Som2
+  - id: NCBITaxon:3045849
+    label: Cyanothece sp. CE4
+  evidence:
+  - source_ref: ciani2026
+    supports: support
+    explanation: Sections 2.1-2.2, Table 1 and Figure 1 establish the real liquid-feed origin, assay and
+      comparator. The original Cu liquid had pH 1.66 and 29.52 mg/L Cu; preliminary biosorption and chemical
+      neutralization attempts were unsuccessful. Ni(1) and Cu liquids were subsequently mixed 4:1 by volume,
+      giving source-reported pH 2.41, 598 mg/L Ni and 6 mg/L Cu. Ni(2) was a separate liquid with 386.94
+      mg/L Ni and initial pH 4.11. These arms are not pooled or interpreted as dilution-only replicates.
+      Table 1 nd means not detected with an unspecified limit, not zero.
+  - source_ref: ciani2026
+    supports: support
+    explanation: 'Section 3.2, Figure 2 and Table S2 support Ni uptake by 16Som2 from Ni(2): the three
+      SI entries are 168.81, 162.87 and 178.24 mg Ni/g biomass DW, also reported as 2.88, 2.77 and 3.04
+      mmol/g. These are specific uptake values relative to the abiotic comparator, not percentages of
+      feed metal recovered. The authors report no significant Cu removal or improvement from the Ni(1)+Cu
+      mixture; this null interpretation is retained alongside small nonzero SI Cu entries.'
+  - source_ref: ciani2026
+    supports: partial
+    explanation: Section 3.3, Figures 3-4 and Tables S3-S4 support lower, culture-dependent Pd/Au uptake.
+      The original PDF axes and captions use micromol/g DW for these figures, whereas the XML/HTML captions
+      say mmol/g DW. Table S3 gives 16Som2 Pd entries 8.14, 8.09 and 0.00 mg/g, which do not reproduce
+      the main-text 76.2±0.3 micromol/g summary when all three rows are included. Table S1 has a missing
+      CE4 row and S3 a missing Vi22M row despite nominal triplicates. Missing values are not zero, and
+      the unexplained zero row is not silently discarded; the Pd summary is not accepted as a reconciled
+      estimate. The section 3.2 statement that Cu/Zn uptake was always below 20 micromol/g also conflicts
+      with higher entries in Tables S1-S2. These inconsistencies limit quantitative comparisons.
+  - source_ref: ciani2026
+    supports: partial
+    explanation: Sections 3.2-3.3 and conclusions propose EPS binding and metal competition, but the real-feed
+      assays do not directly localize metal, resolve oxidation states, selectively remove EPS or establish
+      a molecular cause. The medium-only control accounts for some abiotic losses but does not identify
+      every removal pathway or provide a reported pH-matched time course. No desorption, isolated metal
+      yield, product purity, reuse-cycle performance or plant treatment is demonstrated.
+  - source_ref: ciani2024
+    supports: context_only
+    explanation: Printed pages 34-37, Figure 2 and supplementary Figure S1 document culture provenance,
+      partial 16S assignments and the earlier assay protocol. The acid pretreatment was deionized water
+      for 16 h, 0.1 M HCl for 30 min and water overnight; this does not establish an analogous NaOH treatment
+      duration in 2026. Equation 5 defines uptake from blank-versus-treatment solution concentrations
+      and biomass mass. The 2024 Cu/Ni/Zn assays used laboratory salt solutions and controlled pH, so
+      their performance and microscopy are not transferred to the real effluents.
+  - source_ref: genbank16som2
+    supports: context_only
+    explanation: The original accession linked by both studies resolves to partial 16S sequence OQ945751.1
+      with strain 16Som2 and taxon 3045848; this supports the named culture linkage without independently
+      demonstrating culture purity or mechanism.
+  - source_ref: genbankce4
+    supports: context_only
+    explanation: OQ945752.1 resolves to Cyanothece sp. CE4 with source strain CE 4 and taxon 3045849.
+      No accession or taxon identifier is invented for the Vi22M co-culture.
+curation_history:
+- timestamp: '2026-10-14T21:48:46.981396+00:00'
+  curator: codex (GPT-6)
+  action: CREATE
+  summary: Curated actual electroplating-bath liquid provenance and conditional cyanobacterial biosorption
+    from complete Ciani2026 original/SI, with related synthetic-protocol context, current sequence/taxon
+    grounding and explicit source contradictions; no isolated recovery or inherited criticality.
+history_refs:
+- history/records/electroplating-bath-effluents/2026-10-14T214900Z-codex-855fac.yaml

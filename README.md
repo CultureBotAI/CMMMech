@@ -8,10 +8,15 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 389 material records.
+The catalogue currently contains 394 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Stolzite](data/records/stolzite.yaml) | Natural W-dominant lead tungstate characterization | Tiny grains prevented structural analysis; supergene origin inferred |
+| [Powellite](data/records/powellite.yaml) | Crystalline natural calcium molybdate and a separate inferred metamict arm | Internal source contradiction retained; radiation causation untested |
+| [Metacinnabar](data/records/metacinnabar.yaml) | Laboratory bacterial-associated sulfide dissolution and mercury volatilization | Mixed feed, sulfur intermediates and conflicting source rate units limit interpretation |
+| [Meta-ankoleite](data/records/meta-ankoleite.yaml) | Qualified yeast-associated uranyl-phosphate diffraction assignment | Overlapping patterns and missing potassium detection prevent unequivocal phase assignment |
+| [Electroplating bath effluents](data/records/electroplating-bath-effluents.yaml) | Cyanobacterial biomass sorption from real industrial liquid feedstocks | Source unit, treatment and replicate conflicts; laboratory assays do not establish deployment |
 | [Wheatleyite](data/records/wheatleyite.yaml) | Transient sodium-copper oxalate assigned during fungal culture | Day-five presence and day-six diffraction nondetection; no phase-specific yield or causal control |
 | [Libethenite](data/records/libethenite.yaml) | Copper-phosphate phase in an uninoculated PCB-leaching control | Inoculated comparison does not establish metabolic suppression or microbial precipitation |
 | [Otavite](data/records/otavite.yaml) | Provisional Cd-carbonate assignment in bacterial culture products | Weak diffraction evidence and solution removal do not establish a mineral yield |

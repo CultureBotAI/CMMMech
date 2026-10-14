@@ -1,0 +1,105 @@
+{
+  "started_at": "2026-10-14T21:56:43.481513+00:00",
+  "finished_at": "2026-10-14T21:56:43.558794+00:00",
+  "reviewer": "codex /root/round68_new_frontier",
+  "independence": "Independent static review of root-authored correction and manifest builder. Reviewer authored the unrelated effluent record; its science is independently reviewed by iron_sulfides.",
+  "scope": "Static verification only; no helper execution, network mutation, scientific owner edit, CI, queue, merge, cleanup or postmerge claim.",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "unresolved_corrective_findings": 0,
+  "previous_occurrence": {
+    "path": "reviews/publication/20261014-round82/20261014T215349Z-helper-static-initial.json",
+    "sha256": "e930d530a1088cc906726fffb3dbe58bcbb160369e20859db2d3e869f3553e67",
+    "finding_id": "OP1",
+    "issue_key": "round82.hosted-audit.pagination-round-label"
+  },
+  "findings": [],
+  "resolutions": [
+    {
+      "finding_id": "OP1",
+      "issue_key": "round82.hosted-audit.pagination-round-label",
+      "issue": 273,
+      "status": "resolved",
+      "before_sha256": "a3e66f9abb3c7e2abecd09b450f089df5f3562e462be707628bfa0afe5944164",
+      "after_sha256": "7c32cfe309062936b89817f20cf2a6ae234b2aa2befb4f7d84229fa1a452f737",
+      "verification": "Exact single replacement of the descriptive Round81 token with Round82. ASTs are identical after reversing only this approved string; no condition or invocation changed. Initial occurrence and all snapshots remain immutable. GitHub issue remains open in the retained creation receipt pending authorized publication."
+    }
+  ],
+  "files": [
+    {
+      "path": "/private/tmp/cmm-round82-hosted-audit-paginated.py",
+      "sha256": "7c32cfe309062936b89817f20cf2a6ae234b2aa2befb4f7d84229fa1a452f737",
+      "snapshot": "reviews/publication/20261014-round82/20261014T215643Z-helper-static-successor-sources/cmm-round82-hosted-audit-paginated.py",
+      "snapshot_sha256": "7c32cfe309062936b89817f20cf2a6ae234b2aa2befb4f7d84229fa1a452f737"
+    },
+    {
+      "path": "/private/tmp/cmm-round82-helper-config.json",
+      "sha256": "0e44a2c4b288a9ea88fa461f7ef48d5fb203c49591c0e660f8b9b3af3b3c7017",
+      "snapshot": "reviews/publication/20261014-round82/20261014T215643Z-helper-static-successor-sources/cmm-round82-helper-config.json",
+      "snapshot_sha256": "0e44a2c4b288a9ea88fa461f7ef48d5fb203c49591c0e660f8b9b3af3b3c7017"
+    },
+    {
+      "path": "/private/tmp/cmm-round82-helper-correction.json",
+      "sha256": "74b23788d6b9ba3d665795a373fe275d7c7b988a2192d02e278cf7475b4c5848",
+      "snapshot": "reviews/publication/20261014-round82/20261014T215643Z-helper-static-successor-sources/cmm-round82-helper-correction.json",
+      "snapshot_sha256": "74b23788d6b9ba3d665795a373fe275d7c7b988a2192d02e278cf7475b4c5848"
+    },
+    {
+      "path": "/private/tmp/cmm-round82-review-issue-posted.json",
+      "sha256": "7911d09651f9997251e267f559509d165919d544c4d6595375a4c587e1b8188b",
+      "snapshot": "reviews/publication/20261014-round82/20261014T215643Z-helper-static-successor-sources/cmm-round82-review-issue-posted.json",
+      "snapshot_sha256": "7911d09651f9997251e267f559509d165919d544c4d6595375a4c587e1b8188b"
+    },
+    {
+      "path": "/private/tmp/cmm-round82-build-manifest.py",
+      "sha256": "1016f2bd8a67bb22df411f5f28840acb262ea489e4f24b781ea02c4dec8f388e",
+      "snapshot": "reviews/publication/20261014-round82/20261014T215643Z-helper-static-successor-sources/cmm-round82-build-manifest.py",
+      "snapshot_sha256": "1016f2bd8a67bb22df411f5f28840acb262ea489e4f24b781ea02c4dec8f388e"
+    }
+  ],
+  "unchanged_initial_inputs": [
+    "/private/tmp/cmm-round82-final-gates.py",
+    "/private/tmp/cmm-round82-review-check-final.py",
+    "/private/tmp/cmm-round82-isolated-coverage.py",
+    "/private/tmp/cmm-round82-isolated-verification.py",
+    "/private/tmp/cmm-round82-commit.py",
+    "/private/tmp/cmm-round82-open-pr.py",
+    "/private/tmp/cmm-round82-enqueue.py",
+    "/private/tmp/cmm-round82-cleanup.py",
+    "/private/tmp/cmm-round82-sync-main.py",
+    "/private/tmp/cmm-round82-post-review.py",
+    "/private/tmp/cmm-round82-helper-derivation.json",
+    "/private/tmp/cmm-round57-recover-original.py",
+    "/private/tmp/cmm-round82-helper-static-transform-check.json"
+  ],
+  "checks": [
+    {
+      "name": "Exact predecessor and issue linkage",
+      "passed": true
+    },
+    {
+      "name": "Exact one-string correction and normalized AST equality",
+      "passed": true
+    },
+    {
+      "name": "All other initially reviewed helpers, derivation and imported library remain unchanged",
+      "passed": true
+    },
+    {
+      "name": "Manifest builder read and parsed without execution",
+      "passed": true,
+      "assessment": "Requires all six check receipts to be successful and verifies any retained log hash; preserves copies without overwrite. Selects exactly one completed positive scientific review per exact record ID and current input hash, requiring independent reviewer identity. The final auditor must additionally verify intended review IDs and histories/source bindings. Manifest includes current unstaged tracked changes plus nonignored new candidates; this is the intended Git commit candidate set, not a claim of gitignore-independent preservation."
+    },
+    {
+      "name": "Publication prose and deferred claims",
+      "passed": true,
+      "assessment": "Current five-record scope matches authored records; hosted review, isolated verification, queue, cleanup and fresh-main claims explicitly remain future. Actual count, 317/3 tests and 22 governed-file prose depend on completed receipts and final reconciled config and must be independently confirmed before assembly/publication."
+    }
+  ],
+  "limitations": [
+    "This successor snapshots the current provisional config: expected counts have not yet been independently certified by full structured-review/coverage receipts. Final package auditor must bind the reconciled final config and actual check outputs.",
+    "No behavioral test was run for the descriptive string change. Unchanged helper behavior remains covered by the initial static assessment; runtime results must come from actual later execution.",
+    "Manifest builder is a coordinator assembly tool; its hash/count/review correctness depends on the separate final package audit. Its candidate enumeration is not used to infer absence of ignored files.",
+    "Issue state is bound to the exact retained issue-creation response, not claimed as a new live GitHub read."
+  ]
+}
