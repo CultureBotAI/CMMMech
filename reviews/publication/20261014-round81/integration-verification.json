@@ -1,0 +1,109 @@
+{
+  "recorded_at": "2026-10-14T20:52:10.441181+00:00",
+  "scope": "Dated CMMMech integration verification; no fleet configuration mutations or model invocation.",
+  "admission": {
+    "mergedAt": "2026-10-08T02:08:09Z",
+    "state": "MERGED",
+    "url": "https://github.com/CultureBotAI/culturebotai-claw/pull/581"
+  },
+  "fleet_convergence": {
+    "body": "## Release Dependency\n\nCMMMech admission adds a consumer to `src/kg_microbe_governance/vendored_artifacts.json`. The supported synchronizer binds the entire installed manifest byte-for-byte to an immutable published CLAW revision. Adding a member therefore requires a coordinated governing release even when all canonical payload bytes stay unchanged.\n\nAt the initial CMMMech main `c32d78e26a15bb67a737700668badaed7da10597`, all 18 applicable governed artifacts and `scripts/.vendored_canon_ref` were missing. The reviewed exact-path admission ledger kept candidate completeness checks honest, but could not make the deployed 13-member fleet audit pass. Native CI was queue-ready; that policy entry alone did not establish remote queue activation. These are historical admission findings, resolved by the bootstrap and convergence evidence below.\n\n## Acceptance\n\n- [x] Independently review the CMMMech registration and exact missing-artifact ledger.\n- [x] Obtain approval for the required CMMMech bootstrap and existing-fleet pin updates before merging admission into a rollout.\n- [x] Publish the immutable CLAW admission revision through normal required checks.\n- [x] Use the matching supported synchronizer to adopt CMMMech's 18 applicable artifacts and canonical pin in an isolated worktree, preserving scientific records and native review artifacts.\n- [x] Re-pin every manifest consumer through reviewed PRs and normal merge gates; do not hand-edit governed copies, relax authoritative equality, or bypass CI.\n- [x] Remove the exact-path admission exception once CMMMech adoption is complete.\n- [x] Prove the committed-main 13-member fleet audit and post-merge checks pass at the same governing revision.\n\nDo not close this issue merely because the registration PR or its candidate CI passes. No scientific curation, paid provider execution, unrelated capability rollout, or cancellation of CommunityMech batch runs is authorized by this tracking issue.\n\n## Published Bootstrap Evidence\n\n- CLAW #581 merged normally through the native queue at `849f336e025510316a5f235eb0af8547b8bd50cc`; this is the coordinated canonical pin.\n- CultureBotAI/CMMMech#9 merged at `842edc17fc603831c6ab56fd0ef1d813416d3ea5`. Its exact reviewed 27-file inventory was checked against the committed head before normal squash merge. Both the original and revised publication scopes were explicitly approved.\n- CMMMech exact-head run `37717640938`: 165 tests passed, three empty-command parametrizations skipped, three unchanged records valid, all 18 governed files match the canonical pin. Post-merge native validation `37717750857` and merge-integrity `37717750933` both passed.\n- Adversarial review rejected a fail-open timestamp-test skip proposal. The shipped bootstrap instead adds real optional inline events consumed by native strict validation, and both canonical timestamp guards run unchanged. Separately approved CultureBotAI/CMMMech#11 subsequently added native sidecar history and append-only enforcement. CLAW #588 reconciles the capability reasons: native history is implemented, while shared review/curation eligibility remains disabled because the standard skill adapters are still absent. This distinction resolves #583 without weakening the shared eligibility gates.\n\n## Final Convergence Evidence\n\n- All 12 existing-Mech repin PRs merged after independent review and passing exact-head and actual merge-group native Linux gates. The per-repository PRs, reviewed heads, merge anchors, and audited main commits are recorded in [CLAW #588](https://github.com/CultureBotAI/culturebotai-claw/pull/588).\n- The supported committed-main audit completed at `2026-10-08T05:08:14.973125Z`: all 13 manifest consumers passed, with zero fleet/repository issues and 243/243 applicable governed artifacts matching bytes and modes at canonical pin `849f336e025510316a5f235eb0af8547b8bd50cc`. Each clean audit root had `HEAD == origin/main`; each rollout merge remained an ancestor of the audited main. Native workflow/snapshot/guide couplings and five protected dated history/review files also passed.\n- Final convergence #588 merged normally at `ba82067da6ee6a48f7bf8de8a355fd4aad468377`. Its actual merged tree exactly matches independently reviewed head `4cf01cf2f4524374d612328060204316c0d49308`. The admission exception is removed. The canonical artifact manifest and all 20 payloads remain unchanged, so no additional fleet pin release is needed.\n- Exact merged-main checks passed: [Tests and history](https://github.com/CultureBotAI/culturebotai-claw/actions/runs/37731925722), [Fleet audit](https://github.com/CultureBotAI/culturebotai-claw/actions/runs/37731925721), and [Merge integrity](https://github.com/CultureBotAI/culturebotai-claw/actions/runs/37731925764). ID-label validation also passed on the reviewed PR head and actual merge group; its push path filters do not apply to these four files.\n- Final local full suite: 5,132 passed and 313 explicit skips. Final exact-head Linux suite: 5,114 passed and 331 explicit skips. Local platform/dependency limitations and the execution-PATH correction are documented in #588; no source workaround, skip relaxation, or CI bypass was used.\n- Review findings #579, #582, and #583 are closed. The original dirty CLAW checkout still matches its retained baseline, including untracked file bytes and modes. Scientific records were untouched by the bootstrap and pin rollout; separately approved concurrent CMMMech history adoption is preserved. CommunityMech batch runs were left untouched.\n- All 15 publication branches are removed and verified absent remotely, locally, and in tracking refs: the 12 existing-Mech repins, CMMMech #9, and CLAW #581/#588. Deletions were guarded by merged-PR identity, exact reviewed heads, remote old-head leases, and local compare-and-delete checks. Worktrees, runtime files, audit/review evidence, and unrelated recovery branches were retained. The final 12-Mech cleanup completed at `2026-10-08T05:49:26.283821Z` with zero blocked or partial failures; no processes or workflows were interrupted. The original CLAW baseline was verified again after all cleanup.\n- Audit claims are bound to the recorded main SHAs. Later unrelated scientific commits and deployments were not independently re-certified by this rollout.\n",
+    "state": "CLOSED",
+    "title": "Complete CMMMech governance adoption and 13-member fleet convergence",
+    "url": "https://github.com/CultureBotAI/culturebotai-claw/issues/580"
+  },
+  "native_queue": {
+    "id": 24692449,
+    "name": "CLAW merge queue",
+    "target": "branch",
+    "source_type": "Repository",
+    "source": "CultureBotAI/CMMMech",
+    "enforcement": "active",
+    "conditions": {
+      "ref_name": {
+        "exclude": [],
+        "include": [
+          "refs/heads/main"
+        ]
+      }
+    },
+    "rules": [
+      {
+        "type": "pull_request",
+        "parameters": {
+          "required_approving_review_count": 0,
+          "dismiss_stale_reviews_on_push": false,
+          "required_reviewers": [],
+          "require_code_owner_review": false,
+          "dismissal_restriction": {
+            "enabled": false,
+            "allowed_actors": []
+          },
+          "require_last_push_approval": false,
+          "required_review_thread_resolution": false,
+          "require_extra_approval_for_unattributed_changes": true,
+          "allowed_merge_methods": [
+            "merge",
+            "squash",
+            "rebase"
+          ]
+        }
+      },
+      {
+        "type": "required_status_checks",
+        "parameters": {
+          "strict_required_status_checks_policy": false,
+          "do_not_enforce_on_create": false,
+          "required_status_checks": [
+            {
+              "context": "validate-strict",
+              "integration_id": 15368
+            }
+          ]
+        }
+      },
+      {
+        "type": "merge_queue",
+        "parameters": {
+          "merge_method": "SQUASH",
+          "max_entries_to_build": 3,
+          "min_entries_to_merge": 1,
+          "max_entries_to_merge": 1,
+          "min_entries_to_merge_wait_minutes": 5,
+          "grouping_strategy": "ALLGREEN",
+          "check_response_timeout_minutes": 120
+        }
+      }
+    ],
+    "node_id": "RRS_lACqUmVwb3NpdG9yec5T1mVXzgF4xuE",
+    "created_at": "2026-10-07T19:30:46.161-07:00",
+    "updated_at": "2026-10-07T19:30:46.234-07:00",
+    "bypass_actors": [],
+    "current_user_can_bypass": "never",
+    "_links": {
+      "self": {
+        "href": "https://api.github.com/repos/CultureBotAI/CMMMech/rulesets/24692449"
+      },
+      "html": {
+        "href": "https://github.com/CultureBotAI/CMMMech/rules/24692449"
+      }
+    }
+  },
+  "pin": "a5d562962c75a2ad9efd8160b548df5944315422",
+  "governed_receipt": {
+    "started_at": "2026-10-14T20:50:28.527259+00:00",
+    "finished_at": "2026-10-14T20:50:34.150081+00:00",
+    "command": [
+      "bash",
+      "scripts/check_vendored_sync.sh"
+    ],
+    "exit_code": 0,
+    "passed": true,
+    "log": "/private/tmp/cmm-round81-governed-check.log",
+    "log_sha256": "3b073aa29da7dc3996edbe18c83d0d6593ba6d03238b663efc40286be4cf428e"
+  },
+  "history": "Installed native canonical sidecars with append-only gates; actual batch validation is separately recorded.",
+  "shepherd": "Current governed workflow inspected: manual workflow_dispatch, default dry_run true, comment-only; no model invocation or fresh credential-readiness claim.",
+  "next_work": "Use CLAW supported admission/synchronization and queue plan/apply/check for future integration. Do not hand-edit vendored artifacts. Verify any newly proposed capability and writer/reviewer credential separation independently before enabling it.",
+  "limits": "CLAW issue580 is historical successful convergence evidence, not a fresh fleetwide audit. This record verifies CMMMech current pin/bytes and queue rules, not all present fleet consumers."
+}

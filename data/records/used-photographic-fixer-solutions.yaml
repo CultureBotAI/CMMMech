@@ -1,0 +1,99 @@
+id: cmmmech:used-photographic-fixer-solutions
+name: Used photographic fixer solutions
+material_kind: secondary_resource
+description: >-
+  Silver-bearing liquid discarded after photographic fixing, represented here
+  by used black-and-white film fixer collected from a local processing unit.
+  This secondary feed is distinct from discarded solid films, unused fixer,
+  developer solutions and prepared silver salts. Its composition is
+  source-specific; constituent criticality is not inherited.
+sources:
+  - id: pethkar2003
+    title: >-
+      Pethkar and Paknikar (2003). Thiosulfate biodegradation-silver biosorption
+      process for the treatment of photofilm processing wastewater. Process
+      Biochemistry 38:855-860. DOI 10.1016/S0032-9592(02)00054-7; complete
+      original text read through the author-shared six-page PDF web rendition,
+      with Table 1 and all six original publisher figures separately checked.
+    url: https://doi.org/10.1016/S0032-9592(02)00054-7
+    accessed_on: '2026-10-14'
+  - id: ncbi_thioparus
+    title: 'NCBI Taxonomy 931: Thiobacillus thioparus, species; does not identify MCM B-39'
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=931
+    accessed_on: '2026-10-14'
+  - id: ncbi_cladosporioides
+    title: 'NCBI Taxonomy 29917: Cladosporium cladosporioides, species; does not authenticate strain number 1'
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=29917
+    accessed_on: '2026-10-14'
+mechanisms:
+  - id: thiosulfate_oxidation_biosorption_then_electrowinning
+    name: Bacterial conditioning and fungal biosorption before chemical silver recovery
+    process: recovery
+    microbial: true
+    organisms:
+      - id: NCBITaxon:931
+        label: Thiobacillus thioparus
+      - id: NCBITaxon:29917
+        label: Cladosporium cladosporioides
+    description: >-
+      Thiobacillus thioparus MCM B-39 treated diluted fixer before silver
+      sorption onto harvested Cladosporium cladosporioides number 1 biomass
+      beads. Chemical elution and electrowinning followed; the final metallic
+      product was not produced by microbial reduction. Bead viability and
+      matrix composition are unresolved in this paper.
+    context: >-
+      Sections 2.1-2.4 describe 25 mL bacterial inoculum at 10^7 cells/mL
+      added to 250 mL nominally 1:10 diluted fixer, pH 6.5, approximately
+      25 degrees C and 120 rpm for four days. Centrifugation and filtration
+      preceded sorption. Section 2.7 then diluted treated liquid to nominal
+      100 mg Ag/L and passed it upwards through 3 g beads in a 10 cm by
+      1 cm internal-diameter column with 20 min retention. The fungal biomass
+      was grown separately, washed and granulated by a proprietary process.
+      Alcoholic cyanide elution and electrolysis at 0.8 V and 224 mA completed
+      the laboratory sequence; scale-up and economics were not established.
+    evidence:
+      - source_ref: pethkar2003
+        supports: support
+        explanation: >-
+          Sections 2.2-2.4, Table 1 and Results pp.857-859 support real-waste
+          origin, thiosulfate depletion with sulfur/sulfate production and
+          subsequent silver recovery. The authors report 127 mg metallic
+          silver and 70% overall recovery. These are source-reported process
+          outcomes, not independently reconciled yields or product-purity
+          measurements. The bacterial step alone did not substantially
+          remove silver.
+      - source_ref: pethkar2003
+        supports: partial
+        explanation: >-
+          Section 2.2 assigns 2.8 g Ag/L and 18.5 g thiosulfate/L before
+          dilution, while Table 1 labels those concentrations as 1:10 diluted;
+          Section 2.7 instead gives about 280 mg Ag/L after bacterial treatment.
+          Sulfate is 32.25 g/L in Table 1 versus 31.16 in Results and 31.2
+          in the abstract. No repaired inventory or detection-limit-derived
+          zero is inferred. Section 2.5 gives 1% ethanol in the eluent but
+          Results gives 10%; the recipe remains unresolved. Cumulative column
+          uptake is expressed per gram biomass in Results versus per gram
+          beads in Methods; bead biomass fraction is unspecified.
+      - source_ref: pethkar2003
+        supports: partial
+        explanation: >-
+          An uninoculated fixer control is specified, but its separate endpoint
+          results are not presented. No matched untreated-fixer column,
+          matrix-only control or independent replicate count is reported.
+          Figures 1-6 concern prepared silver solutions, not real-feed recovery;
+          plotted dose/time ranges and plateaus differ from some textual
+          optimization claims. Fitted monolayer capacity is not cumulative
+          column uptake, and model agreement does not establish a molecular
+          binding mechanism. A complete process mass balance and phase/purity
+          characterization of the recovered metal are unavailable.
+curation_history:
+  - timestamp: '2026-10-14T20:48:15.758449Z'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Created the distinct used-fixer liquid resource and qualified laboratory
+      bacterial conditioning, fungal biomass sorption and abiotic silver
+      recovery sequence. Preserved source dilution, recipe, denominator and
+      control limitations; no criticality or industrial deployment inferred.
+history_refs:
+  - history/records/used-photographic-fixer-solutions/2026-10-14T204823Z-codex-6c081d.yaml

@@ -8,10 +8,15 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 384 material records.
+The catalogue currently contains 389 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Wheatleyite](data/records/wheatleyite.yaml) | Transient sodium-copper oxalate assigned during fungal culture | Day-five presence and day-six diffraction nondetection; no phase-specific yield or causal control |
+| [Libethenite](data/records/libethenite.yaml) | Copper-phosphate phase in an uninoculated PCB-leaching control | Inoculated comparison does not establish metabolic suppression or microbial precipitation |
+| [Otavite](data/records/otavite.yaml) | Provisional Cd-carbonate assignment in bacterial culture products | Weak diffraction evidence and solution removal do not establish a mineral yield |
+| [Cerianite-(Ce)](data/records/cerianite-ce.yaml) | Abiotic thermal conversion of a fungal-conditioned precursor | Mixed fitted phases, nitrogen heating and source inconsistencies remain explicit |
+| [Used photographic fixer solutions](data/records/used-photographic-fixer-solutions.yaml) | Laboratory bacterial pretreatment, fungal biosorption and abiotic silver isolation | Conflicting dilution, eluent and mass-balance descriptions limit quantitative recovery claims |
 | [Gold](data/records/gold.yaml) | Stock-dependent bacterial particle formation in a comparative laboratory study | Commercial-stock damage and no-visible-particle outcomes; proposed chemistry and no recovered-product yield |
 | [Chernikovite](data/records/chernikovite.yaml) | Diffraction-assigned uranyl phosphate from filtered fungal phosphate-rock broth | Upstream microbial conditioning, recipe and dilution gaps; no phase-pure product yield |
 | [Pyroaurite](data/records/pyroaurite.yaml) | Phase assignment in both inoculated and uninoculated tailings plots | Pre-existing phase, unmatched nutrients and unreplicated plots prevent a microbial-enhancement claim |

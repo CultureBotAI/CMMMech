@@ -1,0 +1,87 @@
+id: cmmmech:libethenite
+name: Libethenite
+material_kind: mineral
+description: Libethenite is the copper hydroxide phosphate mineral Cu2(PO4)(OH). The September 2026 IMA
+  list records grandfathered status G and the historical year 1823, not a numbered approval proposal.
+  It is distinct from elemental copper, unspecified copper phosphates and waste printed circuit boards.
+  The experiment below assigned a laboratory filter-residue phase to libethenite in an uninoculated leaching
+  comparator; no natural libethenite ore, pure product or inherited criticality is asserted.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC, The New IMA List of Minerals, September 2026. Libethenite row, PDF page 125; Cu2(PO4)(OH),
+    grandfathered G, historical year 1823.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: handbook_libethenite
+  title: Handbook of Mineralogy. Libethenite, version 1, 2001-2005. Formula, mineral identity and reference
+    powder pattern.
+  url: https://www.handbookofmineralogy.org/pdfs/libethenite.pdf
+  accessed_on: '2026-10-14'
+- id: an2021
+  title: An, Jinsung (2021). Characteristics of Metals Leached from Waste Printed Circuit Boards Using
+    Acidithiobacillus ferrooxidans. Minerals 11(2):224. DOI 10.3390/min11020224; complete eight-page original,
+    Methods 2.1-2.2, Results 3.1-3.3 and Figures 1-4. Same study as the waste-printed-circuit-boards record.
+  url: https://doi.org/10.3390/min11020224
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: uninoculated_board_leach_precipitate
+  name: Libethenite-assigned precipitation in an uninoculated board-leaching comparator
+  process: other
+  microbial: false
+  description: Powder diffraction assigned libethenite to solids retained from waste-computer board leaching
+    in acidic phosphate-containing 0K medium without a deliberate microbial inoculum. The study's separate
+    Acidithiobacillus ferrooxidans arm did not show the corresponding assigned peaks. The accepted formation
+    observation is the uninoculated comparator, not microbial production of libethenite; the experiment
+    does not establish that bacterial metabolism alone prevented its formation. Uninoculated does not
+    mean independently verified sterile.
+  context: 'Washed and oven-dried waste-computer board pieces below 1 cm2 were tested at 5 g in a reported
+    50 mL liquid in 50 mL conical tubes, at 30 degrees C in a shaking incubator for seven days, with three
+    repetitions. Treatments were deionized water, 0K medium, and 0K with 1 mL A. ferrooxidans KCTC4516
+    culture concentrate. 0K was the stated 9K recipe without added FeSO4.7H2O: per liter, 3 g (NH4)2SO4,
+    0.1 g KCl, 0.5 g K2HPO4, 0.5 g MgSO4.7H2O, 0.0144 g Ca(NO3)2.4H2O and 1 mL 10 N H2SO4. Results 3.2
+    describes medium adjustment to pH 2; no board-assay pH series or separate shaking speed is supplied.
+    Daily liquid samples were passed through 0.2 micrometer acetate nitrate membranes for ICP-OES; retained
+    material underwent XRD and SEM-EDS. The exact collection time and replicate selection of the displayed
+    diffraction specimens are not specified. The stated tube/liquid volumes leave headspace unresolved.
+    The comparator inoculum was grown in iron-rich 9K for seven days; washing and equivalent sterile spent-culture
+    additions are unreported, so carried-over chemistry is not excluded.'
+  evidence:
+  - source_ref: an2021
+    supports: support
+    explanation: Section 3.3 and Figure 3b label multiple libethenite reflections in the uninoculated
+      0K filter residue. Figure 3a shows the water comparator and Figure 3c the inoculated comparator
+      without those assigned peaks. The source proposes reaction of copper mobilized from boards with
+      medium anions; no phase-specific composition, refinement, fraction, mineral mass balance or isolated-product
+      yield is reported. The mixed filter residue is not phase-pure libethenite or a natural mineral specimen.
+  - source_ref: an2021
+    supports: partial
+    explanation: The inoculated diffraction trace is a source-reported nondetection, not quantified zero
+      libethenite or proof that all copper solids are absent. No diffraction detection limit or matched
+      killed-cell, washed-cell or spent-medium control isolates metabolic suppression. Figure 1 measures
+      growth and iron oxidation in a separate 9K preculture; it is not direct redox evidence in the board
+      incubation. Figure 2a liquid copper concentrations do not supply a libethenite dissolution or precipitation
+      yield, and no starting board copper inventory was measured for an extraction denominator.
+  - source_ref: an2021
+    supports: partial
+    explanation: Figure 4 labels and caption identify water panels a-b, 0K panels c-d and inoculated panels
+      e-f; several Section 3.3 prose references conflict with those labels. EDS supports elements in mixed
+      retained material, not exclusive libethenite, amorphous iron-oxide or jarosite identities. Methods
+      specifies 5 kV SEM-EDS while the SEM panel labels show 20.0 kV; no quantitative microanalysis is
+      transferred. The source attributes a Zr signal to Pt-coating overlap rather than recovered zirconium.
+      Section 3.2's iron-enhancement prose also conflicts with Figure 2b, so no numerical Fe benefit is
+      adopted.
+  - source_ref: an2021
+    supports: context_only
+    explanation: This control-phase observation shares the same experiment already curated under waste
+      printed circuit boards. It supplies a distinct mineral identity and preserves a precipitation alternative
+      relevant to interpreting solution recovery, not an independent bioleaching replication, industrial
+      process, economic advantage or environmental superiority claim.
+curation_history:
+- timestamp: '2026-10-14T20:49:09.811049+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Added authority-grounded libethenite identity and uninoculated PCB-leach control-phase assignment,
+    retaining the inoculated nondetection, incomplete causal controls, source contradictions and shared
+    PCB experiment lineage.
+history_refs:
+- history/records/libethenite/2026-10-14T204915Z-codex-205524.yaml
