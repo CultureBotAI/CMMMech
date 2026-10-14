@@ -1,0 +1,117 @@
+id: cmmmech:strontianite
+name: Strontianite
+material_kind: mineral
+description: Strontianite is the orthorhombic strontium carbonate mineral SrCO3, an aragonite-group species
+  distinct from Sr-substituted calcite, mixed calcium-strontium carbonates, celestine, elemental strontium
+  and commercial strontium salts. The September 2026 IMA list gives grandfathered status and original-description
+  year 1791, not a numbered approval accession. The curated experiment identifies strontianite in a laboratory
+  bacterial coating on printed polymer; no mineral-specific criticality designation or industrial recovery
+  claim is inferred.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026; definitions pp. 1-2 and Strontianite
+    row PDF p. 207, Sr(CO3), G, 1791. Previously acquired dated authority re-inspected on 14 October 2026.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: handbook
+  title: Handbook of Mineralogy. Strontianite, version 1, 2001-2005; complete one-page identity entry,
+    orthorhombic SrCO3 and aragonite-group membership.
+  url: https://www.handbookofmineralogy.org/pdfs/strontianite.pdf
+  accessed_on: '2026-10-14'
+- id: natalio2024
+  title: Natalio, Filipe and Maria, Raquel (2024). Microbial Biomineralization of Alkaline Earth Metal
+    Carbonates on 3D-Printed Surfaces. ACS Applied Materials & Interfaces 16(5):6327-6336. DOI 10.1021/acsami.3c13665;
+    complete primary text, Experimental Section and Figures 1-4, especially Figure 3 middle panels and
+    Figure 4 Sr panels. PMID 38205804; PMCID PMC10859896.
+  url: https://doi.org/10.1021/acsami.3c13665
+  accessed_on: '2026-10-14'
+- id: natalio2024_si
+  title: Natalio and Maria (2024), Supporting Information, am3c13665_si_001.pdf, all seven pages. Figure
+    S4 on p. S7 documents uninoculated Sr controls; S2 is a blank page. Figshare article 24981775, file
+    43996393.
+  url: https://doi.org/10.1021/acsami.3c13665.s001
+  accessed_on: '2026-10-14'
+- id: dsm33
+  title: 'DSMZ catalogue: Sporosarcina pasteurii DSM 33, type strain, strain designation 22.'
+  url: https://www.dsmz.de/collection/catalogue/details/culture/DSM-33
+  accessed_on: '2026-10-14'
+- id: ncbi1474
+  title: NCBI Taxonomy 1474, Sporosarcina pasteurii, species; species identifier does not uniquely identify
+    DSM 33.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1474&mode=Info
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: pasteurii_pla_coating
+  name: Culture-associated strontianite coating of printed PLA
+  process: biomineralization
+  microbial: true
+  organisms:
+  - id: NCBITaxon:1474
+    label: Sporosarcina pasteurii
+  description: Sporosarcina pasteurii DSM 33 cultures produced a carbonate coating on vertically suspended
+    printed polylactide surfaces in a strontium-supplemented urea medium. Powder X-ray diffraction assigned
+    the detached coating to orthorhombic strontianite, with supporting carbonate FTIR bands. The proposed
+    ureolytic setting and coating formation are distinguished from the unresolved molecular nucleation
+    pathway at the polymer surface; the study does not establish lattice-pure product or a strontium extraction
+    efficiency.
+  context: The source identifies the purchased DSMZ organism as S. pasteurii 33, type strain. Black FDM-printed
+    PLA coupons measured 1.5 x 1.5 x 0.1 cm. Initial culture density was reported as 10^8 cells/mL, with
+    333 mM urea and medium adjusted to pH 8.0 using NaOH. The medium contained casein peptone, soybean
+    peptone and NaCl; the masses listed for those ingredients lack an explicit volume basis. Strontium
+    chloride hexahydrate supplied Sr. The source describes a final alkali-earth-metal concentration of
+    25 g/L, but its wording does not resolve hydrated-salt mass versus elemental-ion mass; no Sr molarity
+    is inferred. Incubation was static at 30 degrees C for one week in 100 mL sterile flasks; working
+    liquid volume is not specified. Uninoculated controls used the corresponding medium, ions and polymer.
+    Samples were washed in distilled water and air-dried at room temperature; detached coatings were characterized
+    by Cu-Kalpha1 powder XRD, FTIR, SEM and polarized microscopy. The study reports triplicate coating-mass
+    experiments, but does not define the uncertainty convention for its reported plus/minus values. Reagent-salt
+    flasks and small coupons are laboratory materials synthesis, not ore processing, radionuclide remediation
+    or industrial deployment.
+  evidence:
+  - source_ref: natalio2024
+    supports: support
+    explanation: Experimental Section, Results and Discussion, Figure 3a-c middle panels and Figure 4a-b
+      Sr panels support coating formation, diffraction-based strontianite assignment, carbonate spectroscopy
+      and coating morphology. Reported coating mass is 36 +/- 3 mg by substrate mass difference, and SEM-derived
+      thickness is 45 +/- 6 micrometres. These are coating measurements, not a pure SrCO3 mass balance
+      or recovered-Sr yield. The 18 +/- 2 nm value is a Debye-Scherrer crystallite-size estimate, not
+      a directly measured particle diameter. Calcium-polymer comparisons in Figures 1-2 and their growth
+      curves are separate experiments and are not assigned to Sr.
+  - source_ref: natalio2024_si
+    supports: support
+    explanation: Figure S4 on p. S7 shows washed and dried PLA surfaces after incubation without S. pasteurii
+      but with the respective Ba, Sr or Mg supplementation and 333 mM urea; no coatings were observed.
+      This is a no-cell comparison, not a matched-pH chemical precipitation or urease-inhibition control.
+      Figures S1-S3 concern calcium carbonate and do not establish Sr-phase identity.
+  - source_ref: natalio2024
+    supports: partial
+    explanation: The statement about finding no entrapped cells occurs in the calcium/polymer discussion
+      and is not transferred to the Sr coating. Biomolecule deposition, epitaxy and polymer surface chemistry
+      remain unresolved explanations for coating nucleation. No enzyme knockout, inhibition series or
+      pH-matched cell-free phase comparison establishes the unique causal pathway. No solution-Sr mass
+      balance, quantified phase purity, coating durability or industrial performance is reported. The
+      printed 25 g/L dosing basis remains ambiguous. The Figure 3a caption gives a 0.375 micrometre scale
+      bar for centimetre-scale coupons; the explicit coupon dimensions, not this inconsistent unit, are
+      used here.
+  - source_ref: natalio2024
+    supports: partial
+    explanation: 'Thermal interpretations are excluded from accepted transformation claims: the Experimental
+      Section specifies heating to 800 degrees C, whereas Figure 4c-d and the discussion extend beyond
+      1000 degrees C. The discussion also invokes a rhombohedral-to-hexagonal transformation despite the
+      diffraction assignment to orthorhombic strontianite. These internal inconsistencies limit the thermal
+      interpretation without erasing the independently reported ambient-condition coating diffraction.'
+curation_history:
+- timestamp: '2026-10-14T12:27:08.168689+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created strontianite mineral identity and primary laboratory biomineralization evidence with
+    explicit phase, control, measurement and deployment limits; independent scientific review pending.
+- timestamp: '2026-10-14T12:33:15.975357+00:00'
+  curator: codex (GPT-6; codex)
+  action: EDIT
+  summary: 'Address independent review and issue 229: confine the no-entrapped-cell observation to its
+    calcium/polymer context rather than transferring it to Sr coatings; preserve supported Sr phase evidence
+    and controls.'
+history_refs:
+- history/records/strontianite/2026-10-14T122711Z-codex-8d2da3.yaml
+- history/records/strontianite/2026-10-14T123317Z-codex-df3ec4.yaml

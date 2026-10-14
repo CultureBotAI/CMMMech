@@ -1,0 +1,204 @@
+id: cmmmech:calcite
+name: Calcite
+material_kind: mineral
+description: >-
+  Calcium carbonate mineral with ideal formula CaCO3, distinct from its
+  polymorphs vaterite and aragonite, calcium as an element, limestone or marble
+  resources, and manufactured calcium carbonate products. The September 2026
+  IMA list gives grandfathered status and original-description year 1836, not
+  a new-mineral approval accession. Curated laboratory experiments identify
+  calcite in bacterial-treatment solids; neither metal-removal percentages nor
+  criticality designations are inherited by this mineral from their target metals.
+sources:
+  - id: ima_2026_09
+    title: >-
+      IMA-CNMNC. The New IMA List of Minerals, September 2026; definitions
+      pp. 1-2 and Calcite row p. 35, Ca(CO3), G, 1836.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-14'
+  - id: handbook_calcite
+    title: >-
+      Handbook of Mineralogy, Calcite, CaCO3; Mineral Data Publishing,
+      version 1, 2001-2005. Mineral identity and polymorphism.
+    url: https://www.handbookofmineralogy.org/pdfs/calcite.pdf
+    accessed_on: '2026-10-14'
+  - id: bian2024
+    title: >-
+      Bian, Dong, Ning, Song and Hu (2024). Recovery of terbium by Lysinibacillus
+      sp. DW018 isolated from ionic rare earth tailings based on microbial
+      induced calcium carbonate precipitation. Frontiers in Microbiology
+      15:1416731. Sections 2.1-2.9, 3.2-3.5 and 4; Figures 1-10, Tables 1-2.
+    url: https://doi.org/10.3389/fmicb.2024.1416731
+    accessed_on: '2026-10-14'
+  - id: ncbi_lysinibacillus
+    title: >-
+      NCBI Taxonomy 400634, Lysinibacillus, genus. Parent-rank context only
+      for the source-designated isolate DW018, not an authenticated strain ID.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=400634&mode=Info
+    accessed_on: '2026-10-14'
+  - id: rehmanji2025
+    title: >-
+      Rehmanji, Skeffington, Hudson-Edwards and Newsome (2025). Circular economy
+      approaches to microbially-induced carbonate precipitation for bioprocessing
+      of geothermal brine for lithium recovery. RSC Advances 15:43263-43274;
+      DOI 10.1039/d5ra06824j. Sections 2.1-2.2, 4.1-4.2 and 4.4-4.7; Figures 1-2.
+    url: https://doi.org/10.1039/d5ra06824j
+    accessed_on: '2026-10-14'
+  - id: rehmanji2025_si
+    title: >-
+      Rehmanji et al. (2025), supporting information to DOI 10.1039/d5ra06824j,
+      27-page RA-015-D5RA06824J-s001.pdf. Tables S1-S2/S5/S7 and Figures S1-S7;
+      actual XRD figure is S7 p. 24, not the main text's S6 reference.
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12590475/supplementaryFiles
+    accessed_on: '2026-10-14'
+  - id: dsm33
+    title: DSMZ catalogue, Sporosarcina pasteurii DSM 33, type strain, strain 22.
+    url: https://www.dsmz.de/collection/catalogue/details/culture/DSM-33
+    accessed_on: '2026-10-14'
+  - id: ncbi_pasteurii
+    title: NCBI Taxonomy 1474, Sporosarcina pasteurii, species.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1474&mode=Info
+    accessed_on: '2026-10-14'
+mechanisms:
+  - id: dw018_calcite_in_terbium_assay
+    name: Calcite formation in a calcium-supplemented DW018 terbium assay
+    process: biomineralization
+    microbial: true
+    organisms:
+      - id: NCBITaxon:400634
+        label: Lysinibacillus
+    description: >-
+      Washed urease-producing Lysinibacillus sp. DW018 biomass produced
+      calcite-assigned diffraction peaks after 2 h in a calcium- and
+      urea-supplemented synthetic Tb(III) solution. SEM-EDS associated Ca and Tb
+      with the cell-bearing product, but does not establish Tb substitution
+      into the calcite lattice, a pure calcite product, or phase-specific Tb
+      uptake. Early solution Tb depletion occurred before the resolved calcite
+      peaks and also without added calcium. Calcite formation therefore does
+      not establish the cause or necessity of the rapid Tb-removal response.
+    context: >-
+      DW018 was isolated from ionic rare-earth tailings in Gannan, China,
+      and assigned by the authors to Lysinibacillus using 16S rRNA analysis;
+      the genus identifier does not identify this strain or establish a
+      species assignment. The experiment used synthetic solution rather than
+      tailings leachate or actual wastewater. Log-phase cells were harvested
+      at 4000 rpm, washed three times in sterile water and resuspended in
+      sterile saline. The standard 30 mL assay had final OD600 1.0, reported
+      400 micromolar Tb(III), 25 mM CaCl2 and 2% urea, at 37 degrees C;
+      the Tb salt counter-ion and percentage basis for urea are not specified.
+      Each experiment was repeated three times. The adsorption comparator
+      replaced both CaCl2 and urea with water; a separate calcium-dose arm
+      included no added Ca. The final recommended no-added-Ca/0.5% urea recipe
+      is distinct from the standard Ca-supplemented calcite experiment.
+      No matched-pH cell-free or killed-biomass phase-control result is
+      reported. XRD solids were centrifuged at 8000 rpm for 10 min, washed,
+      pre-cooled at -20 and -80 degrees C, freeze-dried for 24 h and ground;
+      SEM specimens additionally underwent glutaraldehyde fixation, phosphate
+      buffer washing and ethanol dehydration. Prepared ex situ solids do not
+      establish the unaltered in-solution amorphous precursor or Tb coordination.
+      The supernatant fluorescence assay measured depletion after centrifugation,
+      not a purified Tb product or an industrial recovery operation.
+    evidence:
+      - source_ref: bian2024
+        supports: support
+        explanation: >-
+          Sections 2.5/2.7 and 3.5.1, Figure 7 (p. 8), support the calcite
+          assignment in the 2 h MICP product, contrasted with starting cells,
+          10 min MICP and adsorption traces. Section 3.5.2 and Figure 8 (p. 9)
+          show cell-bearing crystals and Ca/Tb elemental maps. These are one
+          experiment's complementary observations, not independent replications
+          or a quantitative phase analysis. Figure 1 and Section 3.2 support
+          only the authors' genus-level designation for DW018.
+      - source_ref: bian2024
+        supports: partial
+        explanation: >-
+          Sections 2.5, 3.3 and 3.4.3 and Figures 2/5 show rapid supernatant
+          depletion, including strong removal with no added Ca; the reported
+          98.28% at 10 min is solution removal, not calcite-specific recovery.
+          Figure 7 lacks resolved calcite peaks in the 10 min trace. Section
+          3.5.1's inference that absent peaks exclude amorphous compounds is
+          not supported by diffraction and conflicts with Section 3.5.2's
+          proposed amorphous mixed Ca-Tb material. Figure 9 cannot identify
+          that phase, and Figure 8 mapping cannot prove crystal-lattice entry.
+          FTIR shifts in Figure 10 do not establish a unique molecular pathway.
+          Tables 1-2 measure heat-pretreated cell viability and urease activity,
+          whereas Figure 3 measures simultaneous hot reaction; these are not
+          matched proof that living cells or active urease are unnecessary.
+  - id: brine_calcite_mixed_precipitate
+    name: Calcite assigned in ureolytic geothermal-brine treatment solids
+    process: biomineralization
+    microbial: true
+    organisms:
+      - id: NCBITaxon:1474
+        label: Sporosarcina pasteurii
+    description: >-
+      Prepared S. pasteurii DSM 33 biomass with urea generated mixed
+      carbonate-bearing solids during treatment of one natural geothermal
+      brine. The authors assigned calcite together with vaterite and magnesite
+      by powder XRD. This mineral-level observation shares the Rehmanji2025
+      experiment with cmmmech:vaterite and cmmmech:lithium-bearing-geothermal-brine;
+      those records are not independent replications. It does not identify
+      the proportion of Ca, Mg, Mn or Sr entering calcite, demonstrate a pure
+      calcite yield, or recover lithium into a separate product.
+    context: >-
+      DSM 33 cells were grown in TSB with 500 mM urea at 28 degrees C and
+      180 rpm, harvested in mid-log phase at 3200 g for 15 min and PBS-washed.
+      Unsterilized natural brine from an unnamed Cornish geothermal project
+      was treated under reported non-growth conditions: 100 mL in 250 mL
+      flasks, initial OD600 0.05-0.4, 500 mM added urea, 28 degrees C, static
+      for 24 h, in triplicate. The source-designated B. subtilis ATCC-2385
+      comparator and a separate brine-plus-urea/no-added-cell arm provide
+      treatment comparisons, but no matched-pH chemical or killed-cell
+      phase-control series is reported. The comparator strain designation
+      remains unverified. Section 4.6 sampled 15 mL at 24 h, centrifuged at
+      3200 g for 15 min and dried the pellet at 60 degrees C for 24 h for
+      XRD; the reported dry-pellet quantity is not a mass-balance mineral yield.
+      Phase assignments concern processed mixed solids, without quantitative
+      refinement or an in situ phase time course. Cow-urine/CaCl2 assays and
+      spent-yeast biomass cultivation are separate arms. Laboratory flask
+      treatment and slurry tests do not establish industrial deployment.
+    evidence:
+      - source_ref: rehmanji2025
+        supports: support
+        explanation: >-
+          Sections 2.1-2.2, 4.1-4.2 and 4.5-4.7 and Figures 1-2 support
+          prepared biomass, the natural-brine experiment, carbonate-bearing
+          solids and ex situ characterization. The narrow claim is calcite's
+          source-assigned presence in the mixed treatment product.
+      - source_ref: rehmanji2025_si
+        supports: support
+        explanation: >-
+          Figure S7 (p. 24) explicitly labels calcite as phase 2 alongside
+          vaterite and magnesite. Table S1 describes the brine composition;
+          the XRD operating table is on p. 5 with its S5 caption on p. 6.
+          Figure S5 (pp. 21-22) is the separate no-added-cell comparison.
+          These observations are not pure-phase mineral yields.
+      - source_ref: rehmanji2025
+        supports: partial
+        explanation: >-
+          The main text misreferences the XRD plot as S6, which actually
+          shows growth and pH. Its initial 10-minute claim conflicts with
+          Figure 1's hour axis and Section 4.2's hour sampling schedule.
+          Mg/Mn percentage claims do not consistently match Figure 1, whose
+          B. subtilis Mn series also declines. No removal percentage or
+          ten-minute rate is assigned to calcite. Section 4.4 does not
+          clearly specify solid/liquid separation for each ICP-OES metal
+          aliquot, preventing a stronger dissolved-only interpretation.
+      - source_ref: rehmanji2025_si
+        supports: partial
+        explanation: >-
+          Figure S5's inoculated Mn/Sr series differs from Figure 1 and is not
+          pooled with it. Table S7 saturation indices differ from the ranges
+          quoted in Section 2.2, including negative magnesite entries; modeled
+          saturation cannot confirm a mineral phase. Table S2 omits the Li
+          wavelength and S9 labels aqueous Li retention as recovery. No
+          lithium product, mineral-specific incorporation or conversion
+          between mg/L and mg/kg is inferred.
+curation_history:
+  - timestamp: '2026-10-14T12:19:25Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Created mineral identity and two laboratory carbonate-formation mechanisms from complete primary evidence; preserved no-added-calcium Tb removal, mixed-product and coordination limits, source contradictions and shared brine experiment lineage.
+history_refs:
+  - history/records/calcite/2026-10-14T121905Z-codex-bcd6cf.yaml

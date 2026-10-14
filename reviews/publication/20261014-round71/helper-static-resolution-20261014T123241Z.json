@@ -1,0 +1,154 @@
+{
+  "recorded_at": "2026-10-14T12:32:41.476384+00:00",
+  "reviewer": "codex /root/round68_phosphates",
+  "scope": "Read-only adversarial static review of ten prepared round71 publication helpers and snapshot-library dependency. No helper was imported/executed; no Git/GitHub mutation. AST syntax parse only.",
+  "verdict": "pass_with_limitations",
+  "passed": true,
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round71-build-summary.py",
+      "sha256": "0d788ed77d2b5ce487e62f67ee784601029d3fe239705873dbd4a7e74c939c2a",
+      "bytes": 8756,
+      "syntax": "passed"
+    },
+    {
+      "path": "/private/tmp/cmm-round71-commit.py",
+      "sha256": "1a8ccd01a7941580c548a457f4cf018bb4f5365e44a40482c16c78eff6ef287c",
+      "bytes": 4695,
+      "syntax": "passed"
+    },
+    {
+      "path": "/private/tmp/cmm-round71-open-pr.py",
+      "sha256": "e1ae596621cc3fd266a3c5836ca3977d1069ff02e1e83f9e26f2e9569da328b1",
+      "bytes": 2114,
+      "syntax": "passed"
+    },
+    {
+      "path": "/private/tmp/cmm-round71-post-review.py",
+      "sha256": "6ec6977e58d7d352ebc952ed86d7f29bff83896ba779442b4e922e4ee6224705",
+      "bytes": 1984,
+      "syntax": "passed"
+    },
+    {
+      "path": "/private/tmp/cmm-round71-enqueue.py",
+      "sha256": "8dab35755eb8cbf89bf5a444a3dc473c5fd89effbeee34bd6d38a46054df6969",
+      "bytes": 4813,
+      "syntax": "passed"
+    },
+    {
+      "path": "/private/tmp/cmm-round71-cleanup.py",
+      "sha256": "d7e615cbe260ab056eaa43aa791d8b0a4f68af8d10b9ecced72bbcebe08b47d2",
+      "bytes": 3052,
+      "syntax": "passed"
+    },
+    {
+      "path": "/private/tmp/cmm-round71-sync-main.py",
+      "sha256": "4f884ac592c1befc7fbaf367a738ea818f0a91a30a23b5209f02c99b32187e36",
+      "bytes": 4902,
+      "syntax": "passed"
+    },
+    {
+      "path": "/private/tmp/cmm-round71-isolated-verification.py",
+      "sha256": "cdf07dbd1c4eb980d6c44843480dd3ff83c45ba2625439b72cf9fe6e847f35db",
+      "bytes": 9409,
+      "syntax": "passed"
+    },
+    {
+      "path": "/private/tmp/cmm-round71-isolated-coverage.py",
+      "sha256": "f6539d34da78156b3766f0453c64349c4e4749b4212d46e50a6e15bf38dc2b53",
+      "bytes": 3329,
+      "syntax": "passed"
+    },
+    {
+      "path": "/private/tmp/cmm-round71-hosted-audit-paginated.py",
+      "sha256": "bc6e84a154b614b06a679f3fa4bb1839b60f920295133fbd456465d5e45e5172",
+      "bytes": 19033,
+      "syntax": "passed"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-recover-original.py",
+      "sha256": "a7c9487654d05821423a7d95844ac1289e80b5958107f1372cc0d0d3ed07906b",
+      "bytes": 10885,
+      "syntax": "passed"
+    },
+    {
+      "path": "/private/tmp/cmm-round71-helper-config.json",
+      "sha256": "108ec8c5980455765ab7a062be1c5d8c1c527bc5f59b76ca61acf845bf715a17",
+      "role": "expected final batch configuration; not runtime proof"
+    }
+  ],
+  "findings": [
+    {
+      "id": "H1",
+      "severity": "minor",
+      "status": "resolved",
+      "external_issue": "https://github.com/CultureBotAI/CMMMech/issues/228",
+      "path": "/private/tmp/cmm-round71-hosted-audit-paginated.py",
+      "field": "report.pagination_correction",
+      "disposition": "Current receipt prose explicitly attributes pagination correction to round70 issue224 and excludes a round71 first100-file failure. Initial observation preserved; no behavioral change required.",
+      "verified_current_assignment": "report['pagination_correction'] = 'Round71 reuses the round70 pagination correction documented in issue224. Exact complete path set and every hosted blob are bound to the exact reviewed tree, independent of branch retention; no round71 first100-file failure is asserted.'"
+    }
+  ],
+  "checks": [
+    "Every live round-specific path, branch and trusted base is round71/188ce7cb; historical fixed review-base tag is intentionally retained.",
+    "Commit requires exact final-audit candidate path set and SHA256 for every input, current config counts/issues, no symlinks, clean staging and base/branch match. Final audit itself is explicitly excluded from its self-hash input set but included in commit receipt.",
+    "OpenPR binds exact local head/tree/clean state, live main and unique owned branch; post-review requires matching hosted peer head/tree before COMMENT mutation.",
+    "Enqueue binds required CI, reviewed COMMENT, exact preflight identity/log/required commands and immediately observed live main; retains race limitation and native queue.",
+    "Cleanup deletes only owned branch after exact MERGED head/tree/parent and clean worktree, with remote force-with-lease matching expected head; no worktree deletion.",
+    "Original-main sync requires fresh postmerge and five hosted runs, unchanged hidden/ignored-inclusive snapshot and retained tag; fast-forward only and no autostash.",
+    "Fresh clone preflight/postmerge excludes topic commit, retains tag, asserts exact tree/parent, requires canonical checks and coverage; safe unique clone/receipt paths and constrained archive extraction.",
+    "Paginated hosted file API explicitly uses --paginate --slurp; verifies all-page complete exact set, duplicate/missing/extra status checks and every blob against immutable tree:path. Hosted check gates exact five workflow run/job identities.",
+    "Concrete configuration now binds five selected slugs; expected334 records,387 histories,401 reviews,72 review bases,334 covered; corrected review issues227/228/229 and source225/226 open. These values remain expectations until terminal count/coverage and live issue-state checks.",
+    "Current summary builder reread after two pre-execution drafting edits: includes all three issue dispositions and original finding/successor explanation, corrects strontianite no-cell wording, and retains corresponding issue draft evidence."
+  ],
+  "limitations": [
+    "Static input review only; expected configuration counts and disposition lists are not assertions of completed runtime outcomes or actual GitHub closure.",
+    "Prepared report/PR body generation has not yet been executed or reviewed; final package manifest must be assessed against its actual bytes.",
+    "No helper was executed/imported; isolated/hosted identity, required CI, fresh-main validation and issue-state gates remain subsequent runtime requirements.",
+    "Hidden/ignored-inclusive preservation is separately enforced by snapshot library; candidate staging intentionally excludes ignored files. No machinewide absence claim."
+  ],
+  "authorship_disclosure": "Reviewer authored calcite/vaterite and independently reviews nepheline; publication helper author is root.",
+  "previous_observation": {
+    "path": "/private/tmp/cmm-round71-helper-static-20261014T122946Z.json",
+    "sha256": "3323905bab304d2a548cb5dff43cd8046afc562a56a78ab1d6364a05fa71716b",
+    "finding": "H1"
+  },
+  "unresolved_corrective_findings": 0,
+  "config_expected": {
+    "title": "Add five reviewed carbonate, strontium and nepheline records",
+    "counts": {
+      "record_count": 334,
+      "history_count": 387,
+      "structured_review_count": 401,
+      "review_base_count": 72,
+      "covered_records": 334
+    },
+    "issues": {
+      "corrected_review_issues": [
+        227,
+        228,
+        229
+      ],
+      "closed_source_issues": [],
+      "open_source_issues": [
+        225,
+        226
+      ]
+    },
+    "slugs": [
+      "calcite",
+      "vaterite",
+      "nepheline",
+      "strontianite",
+      "celestine"
+    ],
+    "created_slugs": [
+      "calcite",
+      "vaterite",
+      "nepheline",
+      "strontianite",
+      "celestine"
+    ],
+    "updated_slugs": []
+  }
+}
