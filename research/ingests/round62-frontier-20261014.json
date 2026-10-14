@@ -1,0 +1,342 @@
+{
+  "recorded_at": "2026-10-14T05:00:31.029155+00:00",
+  "base": "11a0b0f8e2714f1863304faf408da4ce0e7c5b53",
+  "worktree": "/private/tmp/CMMMech-expansion-round62-20261014",
+  "branch": "curate/cmm-expansion-round62-20261014",
+  "records_created": [
+    {
+      "slug": "chromite-ore-processing-residue",
+      "path": "data/records/chromite-ore-processing-residue.yaml",
+      "sha256": "914ccebc64d0bf486808683d35531b9279b109ebe9eb4b1998b90cc6873571ad",
+      "review": "reviews/structured/20261014T045145Z-chromite-ore-processing-residue-round62-independent/review.yaml",
+      "history": [
+        "history/records/chromite-ore-processing-residue/2026-10-14T043756Z-codex-1ad4c3.yaml"
+      ]
+    },
+    {
+      "slug": "spent-cerium-glass-polishing-slurry",
+      "path": "data/records/spent-cerium-glass-polishing-slurry.yaml",
+      "sha256": "7fa0a45984674b3e2e944ad0de064a1013ee3abd7cb6bed910db5d3a7d5da750",
+      "review": "reviews/structured/20261014T045145Z-spent-cerium-glass-polishing-slurry-round62-independent/review.yaml",
+      "history": [
+        "history/records/spent-cerium-glass-polishing-slurry/2026-10-14T043818Z-codex-68ff6b.yaml"
+      ]
+    },
+    {
+      "slug": "carrollite",
+      "path": "data/records/carrollite.yaml",
+      "sha256": "f462c9dd2d309a384f4feb93a064202c026cf00d646568338aa04cef3347185d",
+      "review": "reviews/structured/20261014T045158Z-carrollite-round62-independent/review.yaml",
+      "history": [
+        "history/records/carrollite/2026-10-14T043952Z-codex-03242d.yaml"
+      ]
+    },
+    {
+      "slug": "carnotite",
+      "path": "data/records/carnotite.yaml",
+      "sha256": "63d935bfde97c442f21101619bd396989a58ec16b49f51920beeccadcfd564ac",
+      "review": "reviews/structured/20261014T045211Z-carnotite-round62-independent/review.yaml",
+      "history": [
+        "history/records/carnotite/2026-10-14T044001Z-codex-dac7b0.yaml"
+      ]
+    },
+    {
+      "slug": "metatyuyamunite",
+      "path": "data/records/metatyuyamunite.yaml",
+      "sha256": "cb978e9a4b8204eb8b17234a1cdd572af342612635d221e610c40be23e3ee674",
+      "review": "reviews/structured/20261014T045211Z-metatyuyamunite-round62-independent/review.yaml",
+      "history": [
+        "history/records/metatyuyamunite/2026-10-14T044010Z-codex-ffd23e.yaml"
+      ]
+    },
+    {
+      "slug": "fritzscheite",
+      "path": "data/records/fritzscheite.yaml",
+      "sha256": "1c3776fd9d274df4d5a99f0d0376ae5666b7d571444dc1c9df129f51d32ed85c",
+      "review": "reviews/structured/20261014T045211Z-fritzscheite-round62-independent/review.yaml",
+      "history": [
+        "history/records/fritzscheite/2026-10-14T044019Z-codex-03207e.yaml"
+      ]
+    }
+  ],
+  "counts": {
+    "passed": true,
+    "record_count": 284,
+    "history_count": 333,
+    "structured_review_count": 344,
+    "review_base_count": 63,
+    "covered_records": 284
+  },
+  "checks": {
+    "baseline": {
+      "path": "/private/tmp/cmm-round62-baseline.json",
+      "sha256": "17a54beb7ddcc3e892d035970986a1b6c7e89e43187ada16d636f67bb7e888ed",
+      "result": {
+        "started_at": "2026-10-14T04:27:45.613320+00:00",
+        "base": "11a0b0f8e2714f1863304faf408da4ce0e7c5b53",
+        "worktree": "/private/tmp/CMMMech-expansion-round62-20261014",
+        "commands": [
+          {
+            "command": [
+              "uv",
+              "sync",
+              "--quiet",
+              "--locked",
+              "--extra",
+              "dev",
+              "--offline"
+            ],
+            "started_at": "2026-10-14T04:27:45.613915+00:00",
+            "finished_at": "2026-10-14T04:27:51.044412+00:00",
+            "exit_code": 0
+          },
+          {
+            "command": [
+              "just",
+              "check"
+            ],
+            "started_at": "2026-10-14T04:27:51.044482+00:00",
+            "finished_at": "2026-10-14T04:36:24.644523+00:00",
+            "exit_code": 0
+          }
+        ],
+        "finished_at": "2026-10-14T04:36:24.644732+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round62-baseline.log",
+        "log_sha256": "9ecf73f9164c5d3ad0c7df1f6c3a03598b3ad84d87b017c61cba9d72a2f17841"
+      }
+    },
+    "final-gates": {
+      "path": "/private/tmp/cmm-round62-final-gates.json",
+      "sha256": "b26f9636cadb474165ded2df1ca1ccd65dfbf1876a9cf46f08df4a228b8e50fa",
+      "result": {
+        "started_at": "2026-10-14T04:43:53.975657+00:00",
+        "base": "11a0b0f8e2714f1863304faf408da4ce0e7c5b53",
+        "worktree": "/private/tmp/CMMMech-expansion-round62-20261014",
+        "commands": [
+          {
+            "command": [
+              "just",
+              "render"
+            ],
+            "started_at": "2026-10-14T04:43:53.977121+00:00",
+            "finished_at": "2026-10-14T04:44:05.207399+00:00",
+            "exit_code": 0
+          },
+          {
+            "command": [
+              "just",
+              "check"
+            ],
+            "started_at": "2026-10-14T04:44:05.207435+00:00",
+            "finished_at": "2026-10-14T04:50:52.392759+00:00",
+            "exit_code": 0
+          },
+          {
+            "command": [
+              "uv",
+              "run",
+              "--locked",
+              "cmmmech",
+              "validate",
+              "--require-records"
+            ],
+            "started_at": "2026-10-14T04:50:52.393005+00:00",
+            "finished_at": "2026-10-14T04:51:09.920273+00:00",
+            "exit_code": 0
+          },
+          {
+            "command": [
+              "uv",
+              "run",
+              "--locked",
+              "cmmmech",
+              "validate-history",
+              "--base",
+              "11a0b0f8e2714f1863304faf408da4ce0e7c5b53"
+            ],
+            "started_at": "2026-10-14T04:51:09.920308+00:00",
+            "finished_at": "2026-10-14T04:51:17.327002+00:00",
+            "exit_code": 0
+          }
+        ],
+        "finished_at": "2026-10-14T04:51:17.327226+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round62-final-gates.log",
+        "log_sha256": "a94cb9fef74e0ca15a967cea93f42b5809488135e8e614a46d2f9826506895a4"
+      }
+    },
+    "review-check": {
+      "path": "/private/tmp/cmm-round62-review-check.json",
+      "sha256": "c866c888ae1b04c0fefeda27958a52f8eb5fce8c474a539f5c5499b8ed1681be",
+      "result": {
+        "started_at": "2026-10-14T04:53:19.370696+00:00",
+        "finished_at": "2026-10-14T04:58:25.149393+00:00",
+        "command": [
+          "just",
+          "review-check",
+          "--base",
+          "11a0b0f8e2714f1863304faf408da4ce0e7c5b53",
+          "--require-reviews"
+        ],
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round62-review-check.log",
+        "log_sha256": "d0c420b9af0b1418e146a87ce35a3f7502381f0911b9267ac481de943cb3399d"
+      }
+    },
+    "local-coverage": {
+      "path": "/private/tmp/cmm-round62-local-coverage.json",
+      "sha256": "fe141a3f54f9c5c859ee1018270f587bebfe6afbf8b293019dc9b8848e7ab3b3",
+      "result": {
+        "passed": true,
+        "record_count": 284,
+        "history_count": 333,
+        "structured_review_count": 344,
+        "review_base_count": 63,
+        "covered_records": 284
+      }
+    },
+    "preservation-prepublication": {
+      "path": "/private/tmp/cmm-round62-preservation-prepublication.json",
+      "sha256": "33d5f77c1feb1f3d5a42d98b33d3be9a8ed1d74ea17f1bc70076cfccc519ed2a",
+      "result": {
+        "recorded_at": "2026-10-14T04:45:19.765159+00:00",
+        "passed": true,
+        "preserved_entry_counts": {
+          "main": 7187,
+          "skill": 7389
+        },
+        "initial_receipt_sha256": "7b027c65bdc44ca6209f548f3008c985c810995864f344ba797554540ae1bd6b",
+        "scope": "Hidden/ignored-inclusive bytes, modes, symlink targets and Git state; original main nontracked files, unrelated skill tracked/nontracked files. Git administrative files and external symlink contents excluded."
+      }
+    }
+  },
+  "artifacts": [
+    {
+      "path": "data/records/chromite-ore-processing-residue.yaml",
+      "sha256": "914ccebc64d0bf486808683d35531b9279b109ebe9eb4b1998b90cc6873571ad"
+    },
+    {
+      "path": "history/records/chromite-ore-processing-residue/2026-10-14T043756Z-codex-1ad4c3.yaml",
+      "sha256": "a33209932c1f6cfa391abcdf7e5edf480c42d716f7d5b235834c6df12be9a1b2"
+    },
+    {
+      "path": "reviews/structured/20261014T045145Z-chromite-ore-processing-residue-round62-independent/review.yaml",
+      "sha256": "70f9fa6a2054079caa779b3db53100375e8c1c9a9b2b67e0d183b834f72f060d"
+    },
+    {
+      "path": "reviews/structured/20261014T045145Z-chromite-ore-processing-residue-round62-independent/review.md",
+      "sha256": "d73f50f5876a6d9c5c5dc4177dd477cc1144b474c6d72eb7679281841d903a08"
+    },
+    {
+      "path": "data/records/spent-cerium-glass-polishing-slurry.yaml",
+      "sha256": "7fa0a45984674b3e2e944ad0de064a1013ee3abd7cb6bed910db5d3a7d5da750"
+    },
+    {
+      "path": "history/records/spent-cerium-glass-polishing-slurry/2026-10-14T043818Z-codex-68ff6b.yaml",
+      "sha256": "2709b526a60de5572bf7d794f0aec1505676b1e31fff7f2f0c670846110c9ee2"
+    },
+    {
+      "path": "reviews/structured/20261014T045145Z-spent-cerium-glass-polishing-slurry-round62-independent/review.yaml",
+      "sha256": "bb32b60500055a2b715736f23ae33c44967adcbead6ddedaa47e536f591953ab"
+    },
+    {
+      "path": "reviews/structured/20261014T045145Z-spent-cerium-glass-polishing-slurry-round62-independent/review.md",
+      "sha256": "7bc76dee16de51ed4ab025e58af9e12f102885f3213773715bdd5e20771e3129"
+    },
+    {
+      "path": "data/records/carrollite.yaml",
+      "sha256": "f462c9dd2d309a384f4feb93a064202c026cf00d646568338aa04cef3347185d"
+    },
+    {
+      "path": "history/records/carrollite/2026-10-14T043952Z-codex-03242d.yaml",
+      "sha256": "213c789082968e83703e6242880511040da940aaeeb0ab8d2fc4d4ad3f555b20"
+    },
+    {
+      "path": "reviews/structured/20261014T045158Z-carrollite-round62-independent/review.yaml",
+      "sha256": "16e713afe879fb84080e6fcd44e65630bf879cae748ae5ba3a231faa5060dd6e"
+    },
+    {
+      "path": "reviews/structured/20261014T045158Z-carrollite-round62-independent/review.md",
+      "sha256": "349a6884ccf1e3825529df1730c7214728ea6e70144da8d03b67deaccb0eb679"
+    },
+    {
+      "path": "data/records/carnotite.yaml",
+      "sha256": "63d935bfde97c442f21101619bd396989a58ec16b49f51920beeccadcfd564ac"
+    },
+    {
+      "path": "history/records/carnotite/2026-10-14T044001Z-codex-dac7b0.yaml",
+      "sha256": "b1003fc0474f2142b0b702873cdd45a5365da849b7b66d0f9251949f196d8576"
+    },
+    {
+      "path": "reviews/structured/20261014T045211Z-carnotite-round62-independent/review.yaml",
+      "sha256": "57e37368a62f296afd05eda1fba7c5553f478fc5c80233566d1024f604c78de9"
+    },
+    {
+      "path": "reviews/structured/20261014T045211Z-carnotite-round62-independent/review.md",
+      "sha256": "067d969d148ba9626650b140c6d73e1906cf27fd823c18363c4c7151d09dc934"
+    },
+    {
+      "path": "data/records/metatyuyamunite.yaml",
+      "sha256": "cb978e9a4b8204eb8b17234a1cdd572af342612635d221e610c40be23e3ee674"
+    },
+    {
+      "path": "history/records/metatyuyamunite/2026-10-14T044010Z-codex-ffd23e.yaml",
+      "sha256": "c035d35c981b8e9bf80257578cc2cf4dd21fd0e7a14425d52ed3a3567e98373e"
+    },
+    {
+      "path": "reviews/structured/20261014T045211Z-metatyuyamunite-round62-independent/review.yaml",
+      "sha256": "a7aafb5192f39740eafb14b7e4e5a6f9584054ee68eee9a56a9996c1449634f6"
+    },
+    {
+      "path": "reviews/structured/20261014T045211Z-metatyuyamunite-round62-independent/review.md",
+      "sha256": "c13e20bdca7b0a7246df34fcacb0e0f1c9fc6829921d6d59c616ed5d22713b6d"
+    },
+    {
+      "path": "data/records/fritzscheite.yaml",
+      "sha256": "1c3776fd9d274df4d5a99f0d0376ae5666b7d571444dc1c9df129f51d32ed85c"
+    },
+    {
+      "path": "history/records/fritzscheite/2026-10-14T044019Z-codex-03207e.yaml",
+      "sha256": "ef75dd910fc275fecd05471808e963b1faf13542d4c9abdf7fdff45355e0d6d2"
+    },
+    {
+      "path": "reviews/structured/20261014T045211Z-fritzscheite-round62-independent/review.yaml",
+      "sha256": "22b2b778f66e2c3a55e7b78d4a00c3fe84c7efdc287acde00ee7a6dfd08b5a8d"
+    },
+    {
+      "path": "reviews/structured/20261014T045211Z-fritzscheite-round62-independent/review.md",
+      "sha256": "e1089457ad183fdb17a1c6445bb95e911aee225de802fb0d11d798647740937a"
+    },
+    {
+      "path": "research/sources/round62-secondary/20261014T044043Z-source-investigation.json",
+      "sha256": "bbb1ed8c39ed442901b73d91e36bed806e150984e7863eb490d876ca19550f34"
+    },
+    {
+      "path": "research/sources/round62-secondary/20261014T044043Z-source-investigation.md",
+      "sha256": "4d0ef2e47e4897c0972f6ca58b64f7770859e19afd3958c7d0191f4c846944b7"
+    },
+    {
+      "path": "research/sources/round62-carrollite/20261014T043812Z-source-investigation.json",
+      "sha256": "355e172297c153ca3ed8fcc02d4eae47442a501d28e4fe7e314f162d193cdfc8"
+    },
+    {
+      "path": "research/sources/round62-carrollite/20261014T043812Z-source-investigation.md",
+      "sha256": "0a3bb24bb460599b7e7b2d61edcb4aeae54d8ae436054adbfdcb1b55357a7e18"
+    },
+    {
+      "path": "research/sources/round62-uranium-vanadates/20261014T044230Z-source-investigation.json",
+      "sha256": "5769a33a38c5e43e78d5b860093f6b1bd06d4e0bc7ca96dde18c0e3b77184a45"
+    },
+    {
+      "path": "research/sources/round62-uranium-vanadates/20261014T044230Z-source-investigation.md",
+      "sha256": "db8f3571737d13f2886912c2bdb08926d758d49d7f864da202af50e92a704040"
+    }
+  ],
+  "source_issues_open": [
+    194,
+    195
+  ],
+  "scope": "Six new material records, six actual CREATE histories, independent scientific reviews, three source dossiers and rendered pages. No schema, validator, test or governed-file changes. No source-exhaustion claim.",
+  "publication_state": "Local scientific review and gates complete. Final independent publication audit, commit, hosted validation and native merge queue remain subsequent actions."
+}
