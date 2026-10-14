@@ -1,0 +1,94 @@
+id: cmmmech:huntite
+name: Huntite
+material_kind: mineral
+description: Huntite is the calcium-magnesium carbonate mineral species CaMg3(CO3)4, grandfathered
+  in the September 2026 IMA-CNMNC list with original-description year 1953. That year is not an approval
+  identifier. Huntite is distinct from dolomite, magnesite, hydrated magnesium carbonates and elemental
+  magnesium. The reported culture products are mixed mineral assemblages, and no constituent-element
+  criticality is inherited.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Pages 1-2 definitions and terms;
+    hydromagnesite page 98, huntite page 97, nesquehonite page 154. Grandfathered description years
+    are not approval identifiers.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: sanchez_roman_2011
+  title: 'Sánchez-Román et al. (2011). Aerobic biomineralization of Mg-rich carbonates: Implications
+    for natural environments. Chemical Geology 281:143-150. DOI 10.1016/j.chemgeo.2010.11.020. Sections
+    2.1-2.6, 3 and 4.1-4.2; Tables 1-6 and Figure 1. Complete original inspected from the University
+    of Granada author-group copy.'
+  url: https://doi.org/10.1016/j.chemgeo.2010.11.020
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: halophile_panel_huntite
+  name: Huntite assigned in low-calcium aerobic halophile culture precipitates
+  process: biomineralization
+  description: The study identifies huntite in mixed precipitates from two low-calcium magnesium-rich
+    agar media inoculated separately with halophilic bacterial cultures. The accepted claim is medium-associated
+    phase formation; no exact strain-specific huntite production rate or pure-product recovery is
+    established.
+  context: Separate surface-inoculated cultures from a panel reported as 21 moderately halophilic
+    bacterial strains, predominantly historical Halomonas labels plus Marinomonas, Marinobacter,
+    Chromohalobacter and Salibacillus, were incubated aerobically at 30 degrees C for up to 30 days.
+    These were separate strain cultures, not one mixed consortium. The agar medium contained 1% yeast
+    extract, 0.5% proteose peptone, 0.1% glucose, 3.5% NaCl (all weight/volume), and 20 g/L Bacto-Agar,
+    initially adjusted to pH 7.2 with 0.1 M KOH. Calcium and magnesium were supplied as acetate salts.
+    End-point surface pH was measured with indicator paper. Uninoculated and dead-cell controls were
+    described for all experiments. Solids were scraped, washed with distilled water and dried at
+    37 degrees C before XRD and SEM-EDX; unchanged morphology after washing does not establish unchanged
+    phase hydration. For the huntite-bearing arms, Table 1 lists C2 as 5.7 mM Ca and 28 mM Mg (reported
+    Mg/Ca 5), and C3 as 5.7 mM Ca and 65 mM Mg (reported Mg/Ca 11.5). Table 3 reports huntite in
+    C2 and C3 alongside dolomite, hydromagnesite and struvite; no huntite is assigned to the other
+    listed media.
+  microbial: true
+  evidence:
+  - source_ref: sanchez_roman_2011
+    supports: support
+    explanation: Table 3 identifies huntite by the reported XRD analysis in C2/C3. Figure 1B shows
+      a C3 huntite spherulite with fibrous/radial structure and a Ca/Mg-bearing EDX spectrum; its
+      caption specifies 30-day incubation for analytical material. Table 5 includes separate huntite
+      carbon-isotope entries for C2 and C3 after the Section 2.5 sorting procedure. Isotope separation
+      and morphology do not independently prove complete phase purity.
+  - source_ref: sanchez_roman_2011
+    supports: partial
+    explanation: Section 2.3 describes uninoculated and dead-cell controls; Section 4.1 explicitly
+      reports no precipitation in those controls. However, Section 3 literally states that no precipitates
+      occurred in any culture experiments, contradicting its surrounding positive results. The record
+      retains this source inconsistency and uses the explicit control statement only as a reported
+      result, not an independently tabulated control measurement. Replicate counts, strain-specific
+      phase replicates and quantitative matched-control spectra are not supplied.
+  - source_ref: sanchez_roman_2011
+    supports: partial
+    explanation: The mineral assemblages in Table 3 and Figure 1 are resolved by medium, not by an
+      independently documented strain-to-phase matrix. Table 2 reports only struvite versus carbonate
+      onset, not phase-specific onset times. Methods and Table 2 disagree on strain names/accessions,
+      including H. pantelleriensis DSM 9661 versus DSM 3051 and the presence of H. halmophila versus
+      H. meridiana; H. eurihalina and H. salina also share a printed ATCC 49509. These conflicts
+      are not silently corrected. No exact taxon identifier or claim that every named strain individually
+      forms the target phase is assigned.
+  - source_ref: sanchez_roman_2011
+    supports: partial
+    explanation: Section 3 describes huntite after struvite in low-calcium C1-C3 media, whereas Table
+      3 assigns huntite only to C2/C3. The broader prose is not used to assert huntite in C1. Table
+      2 has carbonate onset times rather than huntite-specific times, and its struvite entries in
+      other media conflict with some Table 3 assemblages. The source does not support a universal
+      phase sequence or occurrence in every culture.
+  - source_ref: sanchez_roman_2011
+    supports: partial
+    explanation: XRD phase assignments are reported in Table 3, supported by SEM-EDX morphology/composition,
+      but the article does not display the underlying XRD patterns for this phase. Its mineral percentages
+      are not treated as calibrated product purity or recovered-magnesium yield. Surface alkalinization
+      and organic-matter degradation are compatible with the proposed mechanism, but microsite pH,
+      individual metabolic pathways and a specific molecular nucleator were not directly demonstrated.
+      PHREEQC saturation indices are modeled initial bulk conditions, not measured cell-surface conditions;
+      the model input Na/Cl concentrations also differ from those calculated from the stated NaCl
+      recipe. The experiment does not establish industrial deployment or net atmospheric carbon sequestration.
+curation_history:
+- timestamp: '2026-10-14T07:24:42.406309+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created mineral identity and bounded culture-associated phase evidence from inspected
+    primary originals; retained source contradictions, control limits and distinct material scope.
+history_refs:
+- history/records/huntite/2026-10-14T072510Z-codex-776cf0.yaml

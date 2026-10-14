@@ -1,0 +1,108 @@
+id: cmmmech:nesquehonite
+name: Nesquehonite
+material_kind: mineral
+description: Nesquehonite is the hydrated magnesium carbonate mineral species Mg(CO3)(H2O)2·H2O,
+  listed as grandfathered in the September 2026 IMA-CNMNC list with original-description year 1890.
+  That year is not an approval identifier. It is distinct from dypingite, hydromagnesite, elemental
+  magnesium and the magnesite commodity. The evidence below concerns nesquehonite within laboratory
+  precipitates, not magnesium metal or an industrially recovered product; no constituent criticality
+  is inherited.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Pages 1-2 definitions and terms;
+    hydromagnesite page 98, huntite page 97, nesquehonite page 154. Grandfathered description years
+    are not approval identifiers.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: sanz_montero_2019
+  title: Sanz-Montero, Cabestrero and Sánchez-Román (2019). Microbial Mg-rich Carbonates in an Extreme
+    Alkaline Lake (Las Eras, Central Spain). Frontiers in Microbiology 10:148. DOI 10.3389/fmicb.2019.00148.
+    Culture Medium and Microorganisms methods, culture Results, Table 3, Figure 5 and Discussion.
+  url: https://doi.org/10.3389/fmicb.2019.00148
+  accessed_on: '2026-10-14'
+- id: ncbi_desemzia
+  title: 'NCBI Taxonomy 82801: Desemzia incerta, species rank. This species identifier does not identify
+    experimental isolate LE1.'
+  url: https://www.ncbi.nlm.nih.gov/taxonomy/82801
+  accessed_on: '2026-10-14'
+- id: ena_y17300
+  title: ENA accession Y17300.1, Desemzia incerta 16S rRNA gene, strain DSM 20581. The 2019 study
+    cites this as its closest-relative reference sequence, not a deposited LE1 sequence.
+  url: https://www.ebi.ac.uk/ena/browser/view/Y17300.1
+  accessed_on: '2026-10-14'
+- id: power_2007
+  title: Power et al. (2007). Biologically induced mineralization of dypingite by cyanobacteria from
+    an alkaline wetland near Atlin, British Columbia, Canada. Geochemical Transactions 8:13. DOI
+    10.1186/1467-4866-8-13. Sections 3.2-3.5 and 4.3, Figure 5C and Table 2 for the distinct laboratory
+    wetland-water comparison.
+  url: https://doi.org/10.1186/1467-4866-8-13
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: le1_solid_culture_nesquehonite
+  name: Nesquehonite associated with a Desemzia-affiliated solid culture
+  process: biomineralization
+  description: Nesquehonite was identified by XRD among mixed mineral precipitates recovered from
+    solid cultures of the Las Eras isolate LE1, affiliated by partial 16S sequence to Desemzia incerta.
+    It was not detected in the study's liquid-culture assemblage. This supports occurrence in the
+    tested microbial system; the missing reported control outcomes prevent concluding microbial necessity
+    or a measured enhancement.
+  context: LE1 was isolated from the uppermost microbial mat at Las Eras, Spain. The paper reports
+    794-802-base partial 16S sequences and 99.8% similarity to the Desemzia incerta reference Y17300,
+    which ENA identifies as DSM 20581. LE1 is not asserted to be DSM 20581, and the species CURIE
+    expresses the reported affiliation only. LE-1 medium contained 1% yeast extract, 0.5% proteose
+    peptone, 0.1% glucose and 2% NaCl (weight/volume), calcium and magnesium acetates at stated molar
+    Mg/Ca 11, and 20 g/L Bacto-Agar for solid medium. Initial pH was 7.0, adjusted with 0.1 M KOH;
+    medium was autoclaved at 121 degrees C for 20 minutes. Isolation plates were incubated aerobically;
+    culture Results report mineral precipitation after 15 days at 30 degrees C in solid and liquid
+    experiments. Vessel geometry, culture replication and a complete harvest-time series are not
+    specified.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:82801
+    label: Desemzia incerta
+  evidence:
+  - source_ref: sanz_montero_2019
+    supports: support
+    explanation: Culture Results, Table 3 and Figure 5B identify nesquehonite in the solid-culture
+      mixture, with several diffraction peaks labeled Nes. The liquid pattern in Figure 5A and its
+      Table 3 row lack nesquehonite; huntite instead appears in the liquid arm. Hydromagnesite and
+      dypingite are grouped as Hmg and are not reinterpreted as nesquehonite. The accepted outcome
+      is a qualitative phase assignment, not a pure-phase yield.
+  - source_ref: sanz_montero_2019
+    supports: partial
+    explanation: Methods say uninoculated medium and medium with autoclaved cells were included in
+      all experiments, but their mineral outcomes and matched diffraction traces are not reported
+      in the inspected article. Thus control existence is not a demonstrated negative-control result.
+      Table 3 is described as average semiquantitative analysis but its liquid and solid rows sum
+      to 116 and 133.5 respectively; the nesquehonite cell 35 is not accepted as a normalized mass
+      percentage or recovery yield. The text says Mg-calcite occurs only in solid culture, whereas
+      the liquid Table 3 row includes it. No silent normalization or correction is applied.
+  - source_ref: sanz_montero_2019
+    supports: partial
+    explanation: Figures 6-7 predominantly characterize Hmg and other associated phases, not a nesquehonite-specific
+      cell-surface nucleation sequence. Proposed EPS binding, biomass decay, alkalinity changes and
+      Mg dehydration are interpretations, not directly demonstrated molecular steps for nesquehonite.
+      Modeled initial bulk undersaturation is not a cell-scale saturation measurement. Field mat-water-interface
+      occurrences and isotope mixtures are distinct from this culture assay and do not prove LE1
+      causes all natural nesquehonite. The source's stated nesquehonite H2O/Mg ratio of 2 conflicts
+      with the total three waters in its formula and the current IMA formula; that ratio is not adopted.
+      The modeled culture row in Table 1 uses pH 8.2, whereas the preparation method specifies initial
+      pH 7.0; these are not silently treated as the same measured starting state.
+  - source_ref: power_2007
+    supports: partial
+    explanation: In a different six-week laboratory experiment using filtered Atlin wetland water
+      at room temperature with sunlight, the abiotic wetland-water control formed nesquehonite, whereas
+      cyanobacterial enrichment biofilms formed dypingite and had no detected nesquehonite (Section
+      4.3, Figure 5C and Table 2). Nutrient additions were not shown to be matched, and the organisms
+      and water chemistry differ from LE1. This counterexample limits any claim that nesquehonite
+      requires microbes or universally increases in their presence; it does not refute the narrower
+      LE1 culture-associated phase observation.
+curation_history:
+- timestamp: '2026-10-14T07:24:42.406309+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created nesquehonite mineral identity and bounded LE1 culture-associated XRD evidence,
+    distinguishing reference taxonomy, missing control results, non-normalized phase cells and the
+    contrasting Atlin experiment.
+history_refs:
+- history/records/nesquehonite/2026-10-14T072516Z-codex-3ae5b7.yaml

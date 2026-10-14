@@ -1,0 +1,638 @@
+{
+  "assessment_utc": "2026-10-14T07:26:50.416256+00:00",
+  "researcher": "Codex (GPT-6; codex), /root/round65_manganese",
+  "base": "4aed29a1ed91171b9491bc3be2f6f003b2a4289a",
+  "worktree": "/private/tmp/CMMMech-expansion-round65-20261014",
+  "scope": "New ramsdellite identity and abiotic cobalt-sorption record; additional manganese source acquisition and owner-specific handoff. Separate from independent scientific review.",
+  "search": {
+    "date_utc": "2026-10-14",
+    "provider": "web.run search_query",
+    "queries": [
+      "ramsdellite microbial reduction bacteria mineral manganese",
+      "\"ramsdellite\" bacteria dissolution",
+      "\"groutite\" \"bacteria\"",
+      "\"10.1021/acs.est.2c00342\" full text",
+      "\"ramsdellite\" \"Arthrobacter\" primary study",
+      "\"10.1021/acs.est.2c00342\"",
+      "\"cryptomelane\" bacteria leaching original pdf",
+      "\"romanechite\" microbial leaching pdf",
+      "\"ramsdellite\" \"Arthrobacter\" manganese oxidation original",
+      "\"Ligand\" \"bixbyite\" \"2022\" Shewanella",
+      "\"10.2320/matertrans.M-MRA2007888\" correction erratum retraction",
+      "\"Sorption of Co2+\" \"Ramsdellite\" error",
+      "\"10.1021/acs.est.2c00342\" \"Supporting\"",
+      "\"10.1021/acsomega.5c04278\" PMC",
+      "\"Critical Metal Adsorption by Biotic and Abiotic Hydrous Manganese Oxides\" ramsdellite"
+    ],
+    "filters": "No domain, publication-date or recency restriction; default first result set for each query, no further pagination",
+    "scope": "Bounded candidate, correction and counterpart search; not exhaustive. Results led to original sources; review/index/abstract snippets were discovery only."
+  },
+  "deduplication": {
+    "finished_at": "2026-10-14T07:24:32.324165+00:00",
+    "repo_command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-ni",
+      "5c04278|Critical Metal Adsorption by Biotic|ramsdellite|ramsdellit|M-MRA2007888",
+      "data/records",
+      "research",
+      "reviews",
+      "history"
+    ],
+    "repo_initial_patterns_note": "Initial output also searched M-MRA2007888 and Critical Metal Adsorption; final raw uses expanded patterns. Dedicated exact owner and DOI checks returned no current ramsdellite/vernadite record or Boothe2025 DOI before addition. Existing birnessite owns fungal material claims.",
+    "raw_roots": [
+      "/private/tmp/cmm-round64-manganese-research",
+      "/private/tmp/cmm-round41-biogenic-birnessite-research",
+      "/private/tmp/cmm-round42-biogenic-selectivity-research"
+    ],
+    "scope": "Hidden/ignored-inclusive, follows relevant symlinks. Text metadata and decoded PDFs inspected where named; not a machine-wide or every-binary search.",
+    "outputs": {
+      "/private/tmp/cmm-round65-manganese-research/dedup-repo.txt": "995bbfc8ea94ecba71647b139156db3f6c572e297dc5cd96de33407904bb3a68",
+      "/private/tmp/cmm-round65-manganese-research/dedup-raw.txt": "d821410b3643dc11ff70dd855ec0cd3420376af16dd17ade727454b5f4ce091c"
+    },
+    "raw_command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-ni",
+      "ramsdellite|ramsdellit|5c04278|2c00342|00928-6",
+      "/private/tmp/cmm-round64-manganese-research",
+      "/private/tmp/cmm-round41-biogenic-birnessite-research",
+      "/private/tmp/cmm-round42-biogenic-selectivity-research"
+    ]
+  },
+  "curated_record": {
+    "path": "data/records/ramsdellite.yaml",
+    "sha256": "8ae85741406c1dff3a460f8da2bb9c6a6135cf90760727345be491384477d570",
+    "history_path": "history/records/ramsdellite/2026-10-14T072208Z-codex-3bc22b.yaml",
+    "history_sha256": "195b72ed8ff8cd3c9a76e4f400eee59ed0b80ba2c6230d6ccbf97d0d22360485",
+    "validation": "uv run --locked cmmmech validate data/records/ramsdellite.yaml: exit0; one checked, zero failed (2026-10-14 UTC)"
+  },
+  "acquisition": [
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/ima2026-09.pdf",
+      "requested_url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "started_utc": "2026-10-14T07:18:26.807929+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "finished_utc": "2026-10-14T07:18:26.847680+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/sasaki2008.html",
+      "requested_url": "https://www.jstage.jst.go.jp/article/matertrans/49/3/49_M-MRA2007888/_article",
+      "started_utc": "2026-10-14T07:18:26.808838+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "finished_utc": "2026-10-14T07:18:26.847804+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/sasaki2008.pdf",
+      "requested_url": "https://www.jstage.jst.go.jp/article/matertrans/49/3/49_M-MRA2007888/_pdf",
+      "started_utc": "2026-10-14T07:18:26.809098+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "finished_utc": "2026-10-14T07:18:26.847319+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/crossref-sasaki2008.json",
+      "requested_url": "https://api.crossref.org/works/10.2320/matertrans.M-MRA2007888",
+      "started_utc": "2026-10-14T07:18:26.809362+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "finished_utc": "2026-10-14T07:18:26.847043+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/ramsdellite-handbook.pdf",
+      "requested_url": "https://www.handbookofmineralogy.org/pdfs/ramsdellite.pdf",
+      "started_utc": "2026-10-14T07:18:26.809687+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "finished_utc": "2026-10-14T07:18:26.847595+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/min2022.html",
+      "requested_url": "https://pubs.acs.org/doi/10.1021/acs.est.2c00342",
+      "started_utc": "2026-10-14T07:18:26.847129+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "finished_utc": "2026-10-14T07:18:26.848092+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/min2022-si.pdf",
+      "requested_url": "https://acs.figshare.com/ndownloader/files/33848852",
+      "started_utc": "2026-10-14T07:18:26.847391+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "finished_utc": "2026-10-14T07:18:26.848322+00:00",
+      "scope_note": "Unverified initial URL attempt failed before any content retrieval; not evidence. Correct supplement subsequently resolved from DOI-filtered publisher Figshare metadata."
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/ima2026-09.pdf",
+      "requested_url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "started_utc": "2026-10-14T07:18:45.236501+00:00",
+      "status": 200,
+      "final_url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "content_type": "application/pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "finished_utc": "2026-10-14T07:18:47.975417+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/sasaki2008.html",
+      "requested_url": "https://www.jstage.jst.go.jp/article/matertrans/49/3/49_M-MRA2007888/_article",
+      "started_utc": "2026-10-14T07:18:45.237678+00:00",
+      "status": 200,
+      "final_url": "https://www.jstage.jst.go.jp/article/matertrans/49/3/49_M-MRA2007888/_article",
+      "content_type": "text/html;charset=utf-8",
+      "bytes": 79688,
+      "sha256": "73a08b3bb227003db8225ce731711b449eeea96111ead985ec80ce62e5cfad68",
+      "finished_utc": "2026-10-14T07:18:46.629903+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/sasaki2008.pdf",
+      "requested_url": "https://www.jstage.jst.go.jp/article/matertrans/49/3/49_M-MRA2007888/_pdf",
+      "started_utc": "2026-10-14T07:18:45.238024+00:00",
+      "status": 200,
+      "final_url": "https://www.jstage.jst.go.jp/article/matertrans/49/3/49_M-MRA2007888/_pdf",
+      "content_type": "application/pdf;charset=UTF-8",
+      "bytes": 346715,
+      "sha256": "28c4babe0dc984ac07f6660069f0a43f95fc7490ab6b4c560bdbac3db54ebbac",
+      "finished_utc": "2026-10-14T07:18:46.975779+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/crossref-sasaki2008.json",
+      "requested_url": "https://api.crossref.org/works/10.2320/matertrans.M-MRA2007888",
+      "started_utc": "2026-10-14T07:18:45.238337+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.2320/matertrans.M-MRA2007888",
+      "content_type": "application/json",
+      "bytes": 9002,
+      "sha256": "2dcac6526dc70a4f0b8bae71aeb1ab0d6a9f8a9008a58bf3a294449f35c4bc81",
+      "finished_utc": "2026-10-14T07:18:45.585272+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/ramsdellite-handbook.pdf",
+      "requested_url": "https://www.handbookofmineralogy.org/pdfs/ramsdellite.pdf",
+      "started_utc": "2026-10-14T07:18:45.238648+00:00",
+      "status": 200,
+      "final_url": "https://www.handbookofmineralogy.org/pdfs/ramsdellite.pdf",
+      "content_type": "application/pdf",
+      "bytes": 56387,
+      "sha256": "805e754dbfbc173baa2f0415fda0284a5e740d9eefcb16d32cce929059569943",
+      "finished_utc": "2026-10-14T07:18:45.418668+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/min2022.html",
+      "requested_url": "https://pubs.acs.org/doi/10.1021/acs.est.2c00342",
+      "started_utc": "2026-10-14T07:18:45.418746+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "finished_utc": "2026-10-14T07:18:45.489773+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/boothe2025.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12461413/fullTextXML",
+      "started_utc": "2026-10-14T07:19:49.207904+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12461413/fullTextXML",
+      "content_type": "application/xml",
+      "bytes": 148113,
+      "sha256": "7b6cfbb576ebac688d708234e0bfc41f02214db4c5c5da3f47d4244bdb853e05",
+      "finished_utc": "2026-10-14T07:19:50.591407+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/boothe2025-supp.zip",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12461413/supplementaryFiles",
+      "started_utc": "2026-10-14T07:19:49.208927+00:00",
+      "error": "The read operation timed out",
+      "finished_utc": "2026-10-14T07:20:45.891813+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/boothe2025.pdf",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12461413/pdf/ao5c04278.pdf",
+      "started_utc": "2026-10-14T07:19:49.209303+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12461413/pdf/ao5c04278.pdf",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 21364,
+      "sha256": "763e3b4e0e282be9b0e99393e2bfc88105be95a9f1a77a52e05467f704a1c24d",
+      "finished_utc": "2026-10-14T07:19:49.428958+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/crossref-boothe2025.json",
+      "requested_url": "https://api.crossref.org/works/10.1021/acsomega.5c04278",
+      "started_utc": "2026-10-14T07:19:49.209611+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1021/acsomega.5c04278",
+      "content_type": "application/json",
+      "bytes": 13415,
+      "sha256": "50dcee6d633122d5ad8313d7bb5ae0b0f7d014860d399d5c985b01a8d83ba66d",
+      "finished_utc": "2026-10-14T07:19:49.542707+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/min2022-figshare.json",
+      "requested_url": "https://api.figshare.com/v2/articles?resource_doi=10.1021%2Facs.est.2c00342",
+      "started_utc": "2026-10-14T07:19:49.209874+00:00",
+      "status": 200,
+      "final_url": "https://api.figshare.com/v2/articles?resource_doi=10.1021%2Facs.est.2c00342",
+      "content_type": "application/json",
+      "bytes": 1286,
+      "sha256": "d93e6e81af9da29e3dda137945ddba15280973ca216e0caddfa3d3a92b349318",
+      "finished_utc": "2026-10-14T07:19:49.905402+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/pracejus-thesis.pdf",
+      "requested_url": "https://digital.library.adelaide.edu.au/server/api/core/bitstreams/1863f55b-77d9-42b3-a31a-b052d263fc4f/content",
+      "started_utc": "2026-10-14T07:19:49.429041+00:00",
+      "status": 200,
+      "final_url": "https://digital.library.adelaide.edu.au/server/api/core/bitstreams/1863f55b-77d9-42b3-a31a-b052d263fc4f/content",
+      "content_type": "application/pdf;charset=UTF-8",
+      "bytes": 29482441,
+      "sha256": "eed717c2737e90892366054f2f217b9aa15644526711923ec832c52ae08724a1",
+      "finished_utc": "2026-10-14T07:19:56.857986+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/min2022-si.pdf",
+      "requested_url": "https://ndownloader.figshare.com/files/34208390",
+      "started_utc": "2026-10-14T07:22:01.936394+00:00",
+      "status": 200,
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pstorage-acs-6854636/34208390/es2c00342_si_001.pdf",
+      "content_type": "application/pdf",
+      "bytes": 596227,
+      "sha256": "6598e3d8627f7151192df845212486d45f079f90cf55f6d9bdb1a033b98300d4",
+      "finished_utc": "2026-10-14T07:22:03.912799+00:00",
+      "redirect_note": "Transient signed query omitted; stable requested URL retained."
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/min2022-figshare-detail.json",
+      "requested_url": "https://api.figshare.com/v2/articles/19251824",
+      "started_utc": "2026-10-14T07:22:01.937637+00:00",
+      "status": 200,
+      "final_url": "https://api.figshare.com/v2/articles/19251824",
+      "content_type": "application/json",
+      "bytes": 7148,
+      "sha256": "9df8110f60051d8255860d6e77657af1dca75df5881dc99a3f53455fc79d018f",
+      "finished_utc": "2026-10-14T07:22:02.727812+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/boothe2025-supp-retry.zip",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12461413/supplementaryFiles",
+      "started_utc": "2026-10-14T07:22:01.937986+00:00",
+      "error": "The read operation timed out",
+      "finished_utc": "2026-10-14T07:23:38.381694+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/boothe2025-figshare.json",
+      "requested_url": "https://api.figshare.com/v2/articles?resource_doi=10.1021%2Facsomega.5c04278",
+      "started_utc": "2026-10-14T07:24:31.354926+00:00",
+      "status": 200,
+      "final_url": "https://api.figshare.com/v2/articles?resource_doi=10.1021%2Facsomega.5c04278",
+      "content_type": "application/json",
+      "bytes": 2513,
+      "sha256": "929d434dbd9d96b9899abff225ecbb44fa09448c58e1eb6a0bd55a0998680ce8",
+      "finished_utc": "2026-10-14T07:24:32.092427+00:00"
+    },
+    {
+      "file": "/private/tmp/cmm-round65-manganese-research/boothe2025-publisher.pdf",
+      "requested_url": "https://pubs.acs.org/doi/pdf/10.1021/acsomega.5c04278",
+      "started_utc": "2026-10-14T07:24:31.356333+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "finished_utc": "2026-10-14T07:24:31.479398+00:00"
+    },
+    {
+      "requested_url": "https://api.figshare.com/v2/articles/30094603",
+      "file": "/private/tmp/cmm-round65-manganese-research/figshare-30094603.json",
+      "acquired_utc": "2026-10-14T07:25:03.761316+00:00",
+      "sha256": "4bfac7530cc7edf4a3e042834521bb073a86c023af69013db7e925491335090b"
+    },
+    {
+      "requested_url": "https://ndownloader.figshare.com/files/57827326",
+      "file": "/private/tmp/cmm-round65-manganese-research/ao5c04278_si_002.xlsx",
+      "acquired_utc": "2026-10-14T07:25:05.204964+00:00",
+      "sha256": "2361845be8c74f0bef7344a31e8370f5582161a052967b00d86f9bfe1205169f",
+      "bytes": 51672
+    },
+    {
+      "requested_url": "https://api.figshare.com/v2/articles/30094600",
+      "file": "/private/tmp/cmm-round65-manganese-research/figshare-30094600.json",
+      "acquired_utc": "2026-10-14T07:25:06.082943+00:00",
+      "sha256": "e5d610204790e85a7c10cd6eddefc9d3057ce6f01edb0eeed17f55151d7d0b16"
+    },
+    {
+      "requested_url": "https://ndownloader.figshare.com/files/57827323",
+      "file": "/private/tmp/cmm-round65-manganese-research/ao5c04278_si_001.pdf",
+      "acquired_utc": "2026-10-14T07:25:07.933276+00:00",
+      "sha256": "0aa27f17fd5b52f0b27bc4ef131873a7b42a6c0ae00b7cfe13f5f92ff857b3e6",
+      "bytes": 1242160
+    }
+  ],
+  "retained_rechecks": [
+    {
+      "path": "/private/tmp/cmm-round41-biogenic-birnessite-research/raw/sasaki2008.pdf",
+      "sha256": "28c4babe0dc984ac07f6660069f0a43f95fc7490ab6b4c560bdbac3db54ebbac",
+      "rechecked_utc": "2026-10-14T07:26:50.416256+00:00",
+      "acquisition": "Previously acquired; original receipts in cited round41/64 source dossiers, not a fresh acquisition"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/fredrickson2002-alt.pdf",
+      "sha256": "1067300a0280b39b7168e0cae70987c3b6e6016eb59110328f72c4232c11f83e",
+      "rechecked_utc": "2026-10-14T07:26:50.416256+00:00",
+      "acquisition": "Previously acquired; original receipts in cited round41/64 source dossiers, not a fresh acquisition"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/fredrickson2002-alt.txt",
+      "sha256": "847b19dce99bbadd7d03ab91a44b97337bc72826401e7086224ee36f2ffe879b",
+      "rechecked_utc": "2026-10-14T07:26:50.416256+00:00",
+      "acquisition": "Previously acquired; original receipts in cited round41/64 source dossiers, not a fresh acquisition"
+    }
+  ],
+  "raw_files": [
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/acquire.py",
+      "bytes": 1492,
+      "sha256": "8da542b0775e22406697f97669a4a26e0f8e5f06688a5654451c88fb1b1bb2be"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/acquire3.py",
+      "bytes": 882,
+      "sha256": "57306efcf9e325a41bd063060b36d7bef7c4b21121fe80bc883bef7f8855e4ad"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/acquire4.py",
+      "bytes": 519,
+      "sha256": "6b615c62dd2968a4b85f9b6dc5c8294549da73d69d0e88c877e78cd1a604c30a"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/acquire5.py",
+      "bytes": 452,
+      "sha256": "e4483d310d3c41d7867757f50aae3d9dc12bb968d794912667c855f23df434d2"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/acquire6.py",
+      "bytes": 925,
+      "sha256": "d434d54bb433a4fa02ac1f567d99d2c26212172fd7230702f7f04c0adc50e49f"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/acquisition-1.json",
+      "bytes": 2590,
+      "sha256": "0e8031611a245212bd341bd0e26106f203e480fe4ce78c70bef0944a6d437635"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/acquisition-2.json",
+      "bytes": 3018,
+      "sha256": "9c4fadc42a8075418dc0f64200e6fefda020fe3ec704b169d2dec71e43ce89af"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/acquisition-3.json",
+      "bytes": 3155,
+      "sha256": "f968b7030ceae58fb872d330b7750426e4946a29e6e1ea0d4df26275f17a8c01"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/acquisition-4.json",
+      "bytes": 1648,
+      "sha256": "4d4a8062452d390c836809c16b36637fbb39ec8c82dc1f050753b902cdf4db56"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/acquisition-5.json",
+      "bytes": 887,
+      "sha256": "b76122d5b05dfddc2581426d8f74fa01ff370ccd00f56268160ed6799dfdb932"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/acquisition-6.json",
+      "bytes": 1238,
+      "sha256": "a776e3f61c7f749e595cb6c1cf45f9d22b268b095656e766111f39c58eaf9d04"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/ao5c04278_si_001.pdf",
+      "bytes": 1242160,
+      "sha256": "0aa27f17fd5b52f0b27bc4ef131873a7b42a6c0ae00b7cfe13f5f92ff857b3e6"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/ao5c04278_si_002.xlsx",
+      "bytes": 51672,
+      "sha256": "2361845be8c74f0bef7344a31e8370f5582161a052967b00d86f9bfe1205169f"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/boothe-6.txt",
+      "bytes": 742,
+      "sha256": "46628ee8ed250c49b8add1491c91d3f07bea8bf237e29429b5fd9d205462183a"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/boothe-7.txt",
+      "bytes": 52,
+      "sha256": "9ccfd9ce970664ce82b8f09a3b06988994bb18e69ae1049ce234d2fb9b7d3022"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/boothe-Acknowledgments.txt",
+      "bytes": 862,
+      "sha256": "b09cdbfc8d0df03004ec4afd7a1a83894587375047127d43f6c769953c456b73"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/boothe-Associated Data.txt",
+      "bytes": 39,
+      "sha256": "564396603f8fa1d3cc25e354b515ddb2f3d5b4e741b0c07de67b677a1fec97a5"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/boothe-Environmental Implications.txt",
+      "bytes": 5284,
+      "sha256": "4041dccfe56600a7b023e500037d2fcf3315aee82f3177bb9cc70f65611e96e8"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/boothe-Introduction.txt",
+      "bytes": 5957,
+      "sha256": "740811ca45c001fc4e90f303b1c6406e41450416603d1b8208ba4205520679aa"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/boothe-Materials and Methods.txt",
+      "bytes": 7606,
+      "sha256": "f0357af7830cd46b99325ce783043f3bda90172513d330ebce971ce85e473d1c"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/boothe-References.txt",
+      "bytes": 21573,
+      "sha256": "0905d2e182f5682a1e2a92ffb90a2495017772bc7d650d8ede51b50ae44a2e19"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/boothe-Results and Discussion.txt",
+      "bytes": 20016,
+      "sha256": "a316846d7283c8eac25d370572ef08eb9a44140ee51223bed6e419eea5a97ba6"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/boothe-Supplementary Material.txt",
+      "bytes": 24,
+      "sha256": "bca0b3c2e164205b482c86cf5d14fa1f5b53e2a84d65d773c01367b3e868159c"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/boothe2025-figshare.json",
+      "bytes": 2513,
+      "sha256": "929d434dbd9d96b9899abff225ecbb44fa09448c58e1eb6a0bd55a0998680ce8"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/boothe2025.pdf",
+      "bytes": 21364,
+      "sha256": "763e3b4e0e282be9b0e99393e2bfc88105be95a9f1a77a52e05467f704a1c24d"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/boothe2025.xml",
+      "bytes": 148113,
+      "sha256": "7b6cfbb576ebac688d708234e0bfc41f02214db4c5c5da3f47d4244bdb853e05"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/crossref-boothe2025.json",
+      "bytes": 13415,
+      "sha256": "50dcee6d633122d5ad8313d7bb5ae0b0f7d014860d399d5c985b01a8d83ba66d"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/crossref-sasaki2008.json",
+      "bytes": 9002,
+      "sha256": "2dcac6526dc70a4f0b8bae71aeb1ab0d6a9f8a9008a58bf3a294449f35c4bc81"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/dedup-raw.txt",
+      "bytes": 1102868,
+      "sha256": "d821410b3643dc11ff70dd855ec0cd3420376af16dd17ade727454b5f4ce091c"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/dedup-receipt.json",
+      "bytes": 1585,
+      "sha256": "14c3b750e730a04b183fbd34fd8ac926bcc245cfd1467421e88fa0b6d9d191dc"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/dedup-repo.txt",
+      "bytes": 14555,
+      "sha256": "995bbfc8ea94ecba71647b139156db3f6c572e297dc5cd96de33407904bb3a68"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/figshare-30094600.json",
+      "bytes": 8134,
+      "sha256": "e5d610204790e85a7c10cd6eddefc9d3057ce6f01edb0eeed17f55151d7d0b16"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/figshare-30094603.json",
+      "bytes": 8054,
+      "sha256": "4bfac7530cc7edf4a3e042834521bb073a86c023af69013db7e925491335090b"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/ima2026-09-page-1.png",
+      "bytes": 193322,
+      "sha256": "088330b1f4e5baeb0f3eee2f5ae27bd229f7951b5385e30af34a7cb08f6c75b9"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/ima2026-09-page-182.png",
+      "bytes": 194431,
+      "sha256": "f0125b5a8ebc321c9a2f04461644978076fa8217b5a6421ab4384490bea4f4a0"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/ima2026-09-page-2.png",
+      "bytes": 65018,
+      "sha256": "bfeee35039e085aaf94662787a1fdb48e29db2033f9d899ab182a3f17a44c379"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/ima2026-09-page-228.png",
+      "bytes": 200219,
+      "sha256": "faa43dadd5ad0138a011c6f623113c64edd26e96cdade67e631b8d771115f33d"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/ima2026-09.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/ima2026-09.txt",
+      "bytes": 814302,
+      "sha256": "08398c0694de7f245f27cffc75b0d3c63f53ab9ee4c414ccfa32f0993b4fb88e"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/min2022-figshare-detail.json",
+      "bytes": 7148,
+      "sha256": "9df8110f60051d8255860d6e77657af1dca75df5881dc99a3f53455fc79d018f"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/min2022-figshare.json",
+      "bytes": 1286,
+      "sha256": "d93e6e81af9da29e3dda137945ddba15280973ca216e0caddfa3d3a92b349318"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/min2022-si.pdf",
+      "bytes": 596227,
+      "sha256": "6598e3d8627f7151192df845212486d45f079f90cf55f6d9bdb1a033b98300d4"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/min2022-si.txt",
+      "bytes": 4742,
+      "sha256": "18185bc7c83b21b445fa95c3e0d881cf81c7c0261941c67a3eb193714e39c6a7"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/pracejus-thesis.pdf",
+      "bytes": 29482441,
+      "sha256": "eed717c2737e90892366054f2f217b9aa15644526711923ec832c52ae08724a1"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/pracejus-thesis.txt",
+      "bytes": 773319,
+      "sha256": "42804eea5db853c70367ba93eff55de40c178a09bef5b744b9dd08cb1c392916"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/ramsdellite-handbook-page-1.png",
+      "bytes": 175888,
+      "sha256": "d270e726da073be4e309842b47980214e2c0ee4a93feb7b2c22490ca97752aa1"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/ramsdellite-handbook.pdf",
+      "bytes": 56387,
+      "sha256": "805e754dbfbc173baa2f0415fda0284a5e740d9eefcb16d32cce929059569943"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/ramsdellite-handbook.txt",
+      "bytes": 3306,
+      "sha256": "aa81ac87d47a1b3c8d2bdc6d21922aa54567b9cbee8085d4dcdba4ac38b90e33"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/sasaki2008.html",
+      "bytes": 79688,
+      "sha256": "73a08b3bb227003db8225ce731711b449eeea96111ead985ec80ce62e5cfad68"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/sasaki2008.pdf",
+      "bytes": 346715,
+      "sha256": "28c4babe0dc984ac07f6660069f0a43f95fc7490ab6b4c560bdbac3db54ebbac"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/sasaki2008.txt",
+      "bytes": 31502,
+      "sha256": "11bd8c2ce0fd737574ad1a19f3b4a3d7145ef2125413a0c585123d013e421f70"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/search-log.json",
+      "bytes": 1195,
+      "sha256": "a30f6178902f89999eff0d8cc6be8637f4701392a558dfb4585753a67f78ae6a"
+    }
+  ],
+  "limits": [
+    "Sasaki 2008 entire seven-page original text and all eleven figures visually checked; fresh publisher PDF identical to retained original. Publisher HTML declares Supplementary material(0).",
+    "IMA current dated list p182 Ramsdellite G1943 and pp1-2 definitions/terms visually checked; p228 Vernadite Q1944 also inspected.",
+    "No no-sorbent blank displayed in Sasaki 2008; elemental filtered Co does not directly measure oxidation state; no isolated product yield.",
+    "Fungal birnessite comparator differs in phase, area, composition and biomass. This is not evidence of microbial ramsdellite formation.",
+    "Fredrickson2002 selected methods/identity/implications text screened only; full figure/control assessment not completed. Existing owner handoff, no duplicate new mineral.",
+    "Boothe-Lordon2025 full XML acquired and methods/phase passages screened; main figures and complete data not yet scientifically reviewed. No measurements imported.",
+    "Min2022 original remains inaccessible; acquired verified eleven-page SI and metadata cannot replace main methods/results.",
+    "Pracejus 1989 351-page thesis acquired; title, contents and section5.5 screened; appendix methods/raw tables and full figures still need assessment."
+  ],
+  "priorities": [
+    {
+      "priority": 1,
+      "source": "10.1021/acsomega.5c04278; PMC12461413",
+      "action": "Review complete primary figures, PDF/XLSX supplements and sample/control joins; assess abiotic ramsdellite endpoint separately from fungal poorly crystalline phases. Vernadite requires explicit IMA questionable status, not an unqualified approved-species claim."
+    },
+    {
+      "priority": 2,
+      "source": "Fredrickson2002 DOI10.1016/S0016-7037(02)00928-6",
+      "action": "Assess all original figures, extraction fractions and U/Mn mass balance; curate only under existing pyrolusite, birnessite, bixbyite-mn, rhodochrosite or uraninite owners as justified. Bixbyite feed has hausmannite impurity."
+    },
+    {
+      "priority": 3,
+      "source": "Pracejus 1989 University of Adelaide thesis, September1989",
+      "action": "Inspect section5.5 p125 onward, Appendix I.3.2 and Appendix V.2; distinguish normative composition estimates and mixed-ore correlations from phase-specific microbial causality before cryptomelane/romanechite record decisions."
+    },
+    {
+      "priority": 4,
+      "source": "Min2022 DOI10.1021/acs.est.2c00342; SI DOI10.1021/acs.est.2c00342.s001",
+      "action": "Acquire full original legitimately and assess together with retained SI; existing bixbyite-mn owner, no new experimental-polytype record."
+    }
+  ]
+}

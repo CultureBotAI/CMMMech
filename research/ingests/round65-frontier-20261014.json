@@ -1,0 +1,357 @@
+{
+  "recorded_at": "2026-10-14T07:41:36.528271+00:00",
+  "base": "4aed29a1ed91171b9491bc3be2f6f003b2a4289a",
+  "worktree": "/private/tmp/CMMMech-expansion-round65-20261014",
+  "branch": "curate/cmm-expansion-round65-20261014",
+  "records_created": [
+    {
+      "slug": "hydromagnesite",
+      "path": "data/records/hydromagnesite.yaml",
+      "sha256": "97de87c369fc037f3eb70587c1084a876d281c43d1770f8b0dfab9c67cc48748",
+      "review": "reviews/structured/20261014T073653Z-hydromagnesite-round65-independent/review.yaml",
+      "history": [
+        "history/records/hydromagnesite/2026-10-14T072504Z-codex-60b8d8.yaml"
+      ]
+    },
+    {
+      "slug": "huntite",
+      "path": "data/records/huntite.yaml",
+      "sha256": "f8e51059f40b68e74000fb2697a6f49e8bf4a40ea0c49d5f500376a21a9af7ac",
+      "review": "reviews/structured/20261014T073653Z-huntite-round65-independent/review.yaml",
+      "history": [
+        "history/records/huntite/2026-10-14T072510Z-codex-776cf0.yaml"
+      ]
+    },
+    {
+      "slug": "nesquehonite",
+      "path": "data/records/nesquehonite.yaml",
+      "sha256": "9844a1ad9fbf0dd36b813c97a0a6c28d42ed42624c5273459fdd02a47c26035a",
+      "review": "reviews/structured/20261014T073653Z-nesquehonite-round65-independent/review.yaml",
+      "history": [
+        "history/records/nesquehonite/2026-10-14T072516Z-codex-3ae5b7.yaml"
+      ]
+    },
+    {
+      "slug": "greenockite",
+      "path": "data/records/greenockite.yaml",
+      "sha256": "84d912d22b329771ab89264b240e46042a972d56872a6a7fd8cfad771bd36370",
+      "review": "reviews/structured/20261014T073640Z-greenockite-round65-independent/review.yaml",
+      "history": [
+        "history/records/greenockite/2026-10-14T072534Z-codex-082ea8.yaml"
+      ]
+    },
+    {
+      "slug": "hawleyite",
+      "path": "data/records/hawleyite.yaml",
+      "sha256": "fadf767aea3e92bee1921a8edd05577d2d146dcc4bc83f02ee7a49088dc594a7",
+      "review": "reviews/structured/20261014T073647Z-hawleyite-round65-independent/review.yaml",
+      "history": [
+        "history/records/hawleyite/2026-10-14T072554Z-codex-bd0091.yaml"
+      ]
+    },
+    {
+      "slug": "ramsdellite",
+      "path": "data/records/ramsdellite.yaml",
+      "sha256": "8ae85741406c1dff3a460f8da2bb9c6a6135cf90760727345be491384477d570",
+      "review": "reviews/structured/20261014T073608Z-ramsdellite-round65-independent/review.yaml",
+      "history": [
+        "history/records/ramsdellite/2026-10-14T072208Z-codex-3bc22b.yaml"
+      ]
+    }
+  ],
+  "counts": {
+    "passed": true,
+    "record_count": 299,
+    "history_count": 349,
+    "structured_review_count": 360,
+    "review_base_count": 66,
+    "covered_records": 299
+  },
+  "checks": {
+    "baseline": {
+      "path": "/private/tmp/cmm-round65-baseline.json",
+      "sha256": "79f129977ec7e79cdfce3d4dea47bf12c4abbda2428c44825e6f9c6f872024ce",
+      "result": {
+        "started_at": "2026-10-14T07:15:21.580249+00:00",
+        "base": "4aed29a1ed91171b9491bc3be2f6f003b2a4289a",
+        "worktree": "/private/tmp/CMMMech-expansion-round65-20261014",
+        "commands": [
+          {
+            "command": [
+              "uv",
+              "sync",
+              "--quiet",
+              "--locked",
+              "--extra",
+              "dev",
+              "--offline"
+            ],
+            "started_at": "2026-10-14T07:15:21.580902+00:00",
+            "finished_at": "2026-10-14T07:15:24.717451+00:00",
+            "exit_code": 0
+          },
+          {
+            "command": [
+              "just",
+              "check"
+            ],
+            "started_at": "2026-10-14T07:15:24.717513+00:00",
+            "finished_at": "2026-10-14T07:19:42.793666+00:00",
+            "exit_code": 0
+          }
+        ],
+        "finished_at": "2026-10-14T07:19:42.793854+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round65-baseline.log",
+        "log_sha256": "053a4c46809996c3e6f2487e1e8f6edc137b7f6b533be91af6d963499971b026"
+      }
+    },
+    "final-gates": {
+      "path": "/private/tmp/cmm-round65-final-gates.json",
+      "sha256": "811dcaabf3baea69f5b1771dd2a5fb37c1cd0f54bac8efa1c2ffa9162efeec5d",
+      "result": {
+        "started_at": "2026-10-14T07:28:01.822898+00:00",
+        "base": "4aed29a1ed91171b9491bc3be2f6f003b2a4289a",
+        "cwd": "/private/tmp/CMMMech-expansion-round65-20261014",
+        "commands": [
+          {
+            "command": [
+              "just",
+              "check"
+            ],
+            "started_at": "2026-10-14T07:28:01.823828+00:00",
+            "finished_at": "2026-10-14T07:33:23.463399+00:00",
+            "exit_code": 0
+          },
+          {
+            "command": [
+              "uv",
+              "run",
+              "--locked",
+              "cmmmech",
+              "validate",
+              "--require-records"
+            ],
+            "started_at": "2026-10-14T07:33:23.463511+00:00",
+            "finished_at": "2026-10-14T07:33:35.965294+00:00",
+            "exit_code": 0
+          },
+          {
+            "command": [
+              "uv",
+              "run",
+              "--locked",
+              "cmmmech",
+              "validate-history",
+              "--base",
+              "4aed29a1ed91171b9491bc3be2f6f003b2a4289a"
+            ],
+            "started_at": "2026-10-14T07:33:35.965393+00:00",
+            "finished_at": "2026-10-14T07:33:44.524196+00:00",
+            "exit_code": 0
+          }
+        ],
+        "log": "/private/tmp/cmm-round65-final-gates.log",
+        "exit_code": 0,
+        "finished_at": "2026-10-14T07:33:44.524356+00:00",
+        "log_sha256": "c2f30688967af9706c1f7e94d5b7b760572710d7d8d1f7df66a97c6ebcd23675"
+      }
+    },
+    "review-check": {
+      "path": "/private/tmp/cmm-round65-review-check.json",
+      "sha256": "368fad8c129021ce0aeeb74e9ceea3b7569cedcf9c5d7dea3f679820b80772b4",
+      "result": {
+        "started_at": "2026-10-14T07:37:54.133122+00:00",
+        "base": "4aed29a1ed91171b9491bc3be2f6f003b2a4289a",
+        "cwd": "/private/tmp/CMMMech-expansion-round65-20261014",
+        "commands": [
+          {
+            "command": [
+              "just",
+              "review-check",
+              "--base",
+              "4aed29a1ed91171b9491bc3be2f6f003b2a4289a",
+              "--require-reviews"
+            ],
+            "started_at": "2026-10-14T07:37:54.134188+00:00",
+            "finished_at": "2026-10-14T07:41:17.062995+00:00",
+            "exit_code": 0
+          }
+        ],
+        "log": "/private/tmp/cmm-round65-review-check.log",
+        "exit_code": 0,
+        "finished_at": "2026-10-14T07:41:17.063155+00:00",
+        "log_sha256": "a4e8f2b7ea00d5774fa22d3f4223a777156011125fe51a29d6e9141e6edec5a6"
+      }
+    },
+    "local-coverage": {
+      "path": "/private/tmp/cmm-round65-local-coverage.json",
+      "sha256": "b0c960233901645245cf9a9681c74aefa74ac9afa8195d653a7ab406f9bc2275",
+      "result": {
+        "passed": true,
+        "record_count": 299,
+        "history_count": 349,
+        "structured_review_count": 360,
+        "review_base_count": 66,
+        "covered_records": 299
+      }
+    },
+    "preservation-prepublication": {
+      "path": "/private/tmp/cmm-round65-preservation-prepublication.json",
+      "sha256": "b453b75eb4402c417a0a520d123ff1bf3c9baca9cc7bc22adb069fabb92569d4",
+      "result": {
+        "recorded_at": "2026-10-14T07:33:20.542202+00:00",
+        "passed": true,
+        "preserved_entry_counts": {
+          "main": 7187,
+          "skill": 7389
+        },
+        "initial_sha256": "db89445c7492a2a47f0c7c39d38c766d1c35dff12f869884d10195acdb8b4aaa",
+        "scope": "Hidden/ignored-inclusive bytes, modes, symlink targets and Git state; original main nontracked files, unrelated skill tracked/nontracked files. Git administrative files and external symlink contents excluded."
+      }
+    }
+  },
+  "artifacts": [
+    {
+      "path": "data/records/greenockite.yaml",
+      "sha256": "84d912d22b329771ab89264b240e46042a972d56872a6a7fd8cfad771bd36370"
+    },
+    {
+      "path": "data/records/hawleyite.yaml",
+      "sha256": "fadf767aea3e92bee1921a8edd05577d2d146dcc4bc83f02ee7a49088dc594a7"
+    },
+    {
+      "path": "data/records/huntite.yaml",
+      "sha256": "f8e51059f40b68e74000fb2697a6f49e8bf4a40ea0c49d5f500376a21a9af7ac"
+    },
+    {
+      "path": "data/records/hydromagnesite.yaml",
+      "sha256": "97de87c369fc037f3eb70587c1084a876d281c43d1770f8b0dfab9c67cc48748"
+    },
+    {
+      "path": "data/records/nesquehonite.yaml",
+      "sha256": "9844a1ad9fbf0dd36b813c97a0a6c28d42ed42624c5273459fdd02a47c26035a"
+    },
+    {
+      "path": "data/records/ramsdellite.yaml",
+      "sha256": "8ae85741406c1dff3a460f8da2bb9c6a6135cf90760727345be491384477d570"
+    },
+    {
+      "path": "history/records/greenockite/2026-10-14T072534Z-codex-082ea8.yaml",
+      "sha256": "b0d3385a1ad1f08d355f40a0f541ecc8bce453892b5e2980af3515f06da1a577"
+    },
+    {
+      "path": "history/records/hawleyite/2026-10-14T072554Z-codex-bd0091.yaml",
+      "sha256": "71b5f978c277b931ea51c923682aafbec4f16a49660662fa59a6639d4ff67778"
+    },
+    {
+      "path": "history/records/huntite/2026-10-14T072510Z-codex-776cf0.yaml",
+      "sha256": "2c3d87633fa1cd89dc3683ba6ef24c85a25fbeb689946509026293c2a9f3a105"
+    },
+    {
+      "path": "history/records/hydromagnesite/2026-10-14T072504Z-codex-60b8d8.yaml",
+      "sha256": "39eb6bd4fbf04a696643cd3d403ee5168f1f841dc7c4f36d82042cc68dcd64ea"
+    },
+    {
+      "path": "history/records/nesquehonite/2026-10-14T072516Z-codex-3ae5b7.yaml",
+      "sha256": "c890fbddd3c493bc56a7618f8602771936205e27c7999a9a32a81938d84fbdf2"
+    },
+    {
+      "path": "history/records/ramsdellite/2026-10-14T072208Z-codex-3bc22b.yaml",
+      "sha256": "195b72ed8ff8cd3c9a76e4f400eee59ed0b80ba2c6230d6ccbf97d0d22360485"
+    },
+    {
+      "path": "research/sources/round65-cadmium/20261014T072908Z-source-investigation.json",
+      "sha256": "cff940285745fb58fb7fd8fd460a38302cafd1c5b3059a1795e0d747e99c86bc"
+    },
+    {
+      "path": "research/sources/round65-cadmium/20261014T072908Z-source-investigation.md",
+      "sha256": "7ba905b4f3067c68041d5670c25de9f7a15a502f1ca31878e018e9e2c7577b52"
+    },
+    {
+      "path": "research/sources/round65-magnesium-carbonates/20261014T072754Z-source-investigation.json",
+      "sha256": "b342faea63c95cb87f63936bde893a47f9f968f576825fc537e5e331622dbc34"
+    },
+    {
+      "path": "research/sources/round65-magnesium-carbonates/20261014T072754Z-source-investigation.md",
+      "sha256": "2ff909af6a310692b9103c936dfbd7da05abde356219185d00d53af7aea453af"
+    },
+    {
+      "path": "research/sources/round65-manganese/20261014T072650Z-source-investigation.json",
+      "sha256": "8c0f7be0bfe9bedbe0a6cdb01c96d95bacd64c4cc26a024d4a873a46080a389e"
+    },
+    {
+      "path": "research/sources/round65-manganese/20261014T072650Z-source-investigation.md",
+      "sha256": "156e0bb33e2374fc29218b49f71037ffc445880b18225817bdc9a472a56c9d42"
+    },
+    {
+      "path": "research/sources/round65-phosphates/20261014T072921Z-source-investigation.json",
+      "sha256": "ed53ec7213a678adf21b3019937bc62145fabbc934da0d4f064f540309583cc6"
+    },
+    {
+      "path": "research/sources/round65-phosphates/20261014T072921Z-source-investigation.md",
+      "sha256": "51b4fd665ce2bb0fdd40b1c5e38374165a093e874a40b34b4346261e28ce2f1e"
+    },
+    {
+      "path": "reviews/structured/20261014T073608Z-ramsdellite-round65-independent/review.md",
+      "sha256": "5c77519dcd7bf167e71a8c8b59fc31a8a608bc26aa3cfcb551e8c165151ab213"
+    },
+    {
+      "path": "reviews/structured/20261014T073608Z-ramsdellite-round65-independent/review.yaml",
+      "sha256": "76e48bf3830b311f5da688ac0829c84cd8effb3a716f8576e7986c1a83ccbb55"
+    },
+    {
+      "path": "reviews/structured/20261014T073640Z-greenockite-round65-independent/review.md",
+      "sha256": "c881294cfe0727f6a0a80c508c85b6ef4e6be874360f1502e79270f3bac8b652"
+    },
+    {
+      "path": "reviews/structured/20261014T073640Z-greenockite-round65-independent/review.yaml",
+      "sha256": "a19b33965c00e925ed66df29c746e09ebc426cb7f268c7f514624757ff1cb278"
+    },
+    {
+      "path": "reviews/structured/20261014T073647Z-hawleyite-round65-independent/review.md",
+      "sha256": "c6c6e696c4e2cbc2d8ea57e072d2dadbe18213f774389bd3ea52774ff400e82d"
+    },
+    {
+      "path": "reviews/structured/20261014T073647Z-hawleyite-round65-independent/review.yaml",
+      "sha256": "b37c14fa8b6b919bba134645af7280bd8aa7f6e300b30d57c3777b0416e66bbe"
+    },
+    {
+      "path": "reviews/structured/20261014T073653Z-huntite-round65-independent/review.md",
+      "sha256": "9a0f22a2191b09559669ad09c30b7587934ddf1d22b2666c6ee38377189b70ca"
+    },
+    {
+      "path": "reviews/structured/20261014T073653Z-huntite-round65-independent/review.yaml",
+      "sha256": "5a016d01d638e6f24c1dc4447a74693a61447187df263e81749ce8825c801a6a"
+    },
+    {
+      "path": "reviews/structured/20261014T073653Z-hydromagnesite-round65-independent/review.md",
+      "sha256": "94b69573384f5d1cffa5ae9edb622ff3d545df162e58763e258acc52f1a39ed0"
+    },
+    {
+      "path": "reviews/structured/20261014T073653Z-hydromagnesite-round65-independent/review.yaml",
+      "sha256": "4d74e4012c7cd1fb9a8c56cf1071976f752587518bfea210b1cf0534dfe61e51"
+    },
+    {
+      "path": "reviews/structured/20261014T073653Z-nesquehonite-round65-independent/review.md",
+      "sha256": "c7dace8a156baa6cbeeb8cf1a4c5b743e24f1a64ac02d1ef0514bbd179c7e7eb"
+    },
+    {
+      "path": "reviews/structured/20261014T073653Z-nesquehonite-round65-independent/review.yaml",
+      "sha256": "946e57d32ebd184618f5e15bf1ddb50e8afa619a7711dbb35ba26d6e37718e1a"
+    }
+  ],
+  "issues": {
+    "corrected_review_issues": [],
+    "closed_source_issues": [
+      195,
+      199
+    ],
+    "open_source_issues": [
+      198,
+      205
+    ]
+  },
+  "scope": "Six mineral records, six canonical CREATE histories and six independent immutable scientific observations; four source-investigation topics, README and rendered pages. No schema, validator, project-test or governed-file change. Phosphate candidates remain source handoffs.",
+  "publication_state": "Local scientific work and checks complete; independent publication audit, commit, PR and native queue are subsequent gates."
+}

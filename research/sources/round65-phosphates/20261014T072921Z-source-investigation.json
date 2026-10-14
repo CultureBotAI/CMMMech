@@ -1,0 +1,211 @@
+{
+  "recorded_at": "2026-10-14T07:29:21.773034+00:00",
+  "status": "research_handoff_only",
+  "records_created": [],
+  "base": "4aed29a1ed91171b9491bc3be2f6f003b2a4289a",
+  "search": {
+    "provider": "web search",
+    "queries": [
+      "newberyite microbial biomineralization bacteria magnesium phosphate",
+      "bobierrite microbial biomineralization bacteria phosphate",
+      "\"struvite-(K)\" bacteria biomineralization",
+      "\"baricite\" bacteria phosphate biomineralization",
+      "\"barićite\" bacteria mineral",
+      "\"10.3390/ijerph110403689\" correction retraction bobierrite baricite",
+      "\"bobierrite\" bacteria \"boiling\""
+    ],
+    "scope": "2026-10-14 UTC; first returned sets, no explicit date/domain filters or pagination. Exact DOI/title notice search did not identify an affecting notice within returned sets; this is not comprehensive notice clearance."
+  },
+  "dedup": {
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-n",
+      "-i",
+      "bobierrite|baricite|barićite|ijerph110403689|PMC4025044|24699031|10.1016/j.chemgeo.2016.04.022",
+      "data/records",
+      "research",
+      "reviews",
+      "history"
+    ],
+    "exit_code": 0,
+    "log": "/private/tmp/cmm-round65-phosphates-research/dedup-final.txt",
+    "sha256": "36c1a84cca652c51bb6c028dcd8ecb311f5e22c73a2a6ea24f9cb3b39f4089c7",
+    "scope": "Repository data/records, research, reviews and history including hidden/ignored files and followed symlinks. Prior round4 report already screened PMC4025044. Prior round4 external raw downloads were not exhaustively searched; no new-study or machinewide absence claim."
+  },
+  "acquisitions": [
+    {
+      "file": "rivadeneyra2014.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4025044/fullTextXML",
+      "acquired_at": "2026-10-14T07:18:33.409391+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4025044/fullTextXML",
+      "content_type": "application/xml",
+      "size": 94991,
+      "sha256": "7e7eab4eb3e94af069215a1705dda35d086dde9d4bf6e1913b10f5561570356b",
+      "format_valid": true
+    },
+    {
+      "file": "rivadeneyra2014.pdf",
+      "requested_url": "https://mdpi-res.com/d_attachment/ijerph/ijerph-11-03689/article_deploy/ijerph-11-03689.pdf",
+      "acquired_at": "2026-10-14T07:18:33.410519+00:00",
+      "status": 200,
+      "final_url": "https://mdpi-res.com/d_attachment/ijerph/ijerph-11-03689/article_deploy/ijerph-11-03689.pdf",
+      "content_type": "application/pdf",
+      "size": 3716553,
+      "sha256": "e2713ce7f5d8d37f35c9263eca4990addcf3de0d7112250b25b73256db7cc130",
+      "format_valid": true
+    },
+    {
+      "file": "crossref2014.json",
+      "requested_url": "https://api.crossref.org/works/10.3390/ijerph110403689",
+      "acquired_at": "2026-10-14T07:18:33.410762+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.3390/ijerph110403689",
+      "content_type": "application/json",
+      "size": 16187,
+      "sha256": "c884b761b39692d8cde2dff5fb7b7e687eacfd50068620c29f7f03ab0c169d2c",
+      "format_valid": true
+    },
+    {
+      "file": "lin2016.pdf",
+      "requested_url": "https://scholarworks.montana.edu/server/api/core/bitstreams/ff37f57c-bdcf-4459-9df6-f1615c1277e4/content",
+      "acquired_at": "2026-10-14T07:22:04.216349+00:00",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "file": "crossref2016.json",
+      "requested_url": "https://api.crossref.org/works/10.1016/j.chemgeo.2016.04.022",
+      "acquired_at": "2026-10-14T07:22:04.217478+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1016/j.chemgeo.2016.04.022",
+      "content_type": "application/json",
+      "size": 39267,
+      "sha256": "96bed78b1ee69cf9701f5a29bf4b04f02e8a88766448fca7a88ebb4f90c39a74",
+      "format_valid": true
+    }
+  ],
+  "raw_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round65-phosphates-research/acquisition.json",
+      "size": 1423,
+      "sha256": "c8755627b7b4b2012640ae0ec34aaaeab3bc70e1c6aedaef848683881a780f54"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-phosphates-research/acquisition2016.json",
+      "size": 720,
+      "sha256": "54dad09c2fa290377178104181c0f1d6037c09b518d347b77130dcee970bc8ae"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-phosphates-research/crossref2014.json",
+      "size": 16187,
+      "sha256": "c884b761b39692d8cde2dff5fb7b7e687eacfd50068620c29f7f03ab0c169d2c"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-phosphates-research/crossref2016.json",
+      "size": 39267,
+      "sha256": "96bed78b1ee69cf9701f5a29bf4b04f02e8a88766448fca7a88ebb4f90c39a74"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-phosphates-research/dedup-final.txt",
+      "size": 132,
+      "sha256": "36c1a84cca652c51bb6c028dcd8ecb311f5e22c73a2a6ea24f9cb3b39f4089c7"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-phosphates-research/ima-p20.png",
+      "size": 309256,
+      "sha256": "367af6a7e6b7ede1f5363721afa7974954d81137cb514dae9ad0ed495c2e39b0"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-phosphates-research/ima-p20.txt",
+      "size": 3054,
+      "sha256": "e87849ba1b056e43c079e93d5bb95978cd86d01ec0149a4ff04315e6937f9e0b"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-phosphates-research/ima-p27.png",
+      "size": 308672,
+      "sha256": "f6070f5ccad971750fa163917ad06360ece3449743e3436fbb227529602fab07"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-phosphates-research/ima-p27.txt",
+      "size": 3693,
+      "sha256": "eb1e8079ad8a46778eface4c7fb89f98da5a1feb7bc6f76417e0a0238cfcc733"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-phosphates-research/rivadeneyra2014-p10.png",
+      "size": 526572,
+      "sha256": "d0bc518c6e8d1d4365434c01a7513b3431159dd2903a1cb5c8d74763dd564af5"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-phosphates-research/rivadeneyra2014-p11.png",
+      "size": 794697,
+      "sha256": "4f32e3cf544a8157a9000269cb4fc834f94fbc2baf3554d9265cf558e44f0db5"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-phosphates-research/rivadeneyra2014-p7.png",
+      "size": 564580,
+      "sha256": "320f3b063d545fef4e78ee2589b9ed7dfcf39397a3d2ecfc6640c6036a62e9f6"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-phosphates-research/rivadeneyra2014-p8.png",
+      "size": 319477,
+      "sha256": "1f10e03535ea8ea95851ecff83d7674fa2f74ae570899ca7df4ae1f0982cf91b"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-phosphates-research/rivadeneyra2014-p9.png",
+      "size": 298933,
+      "sha256": "cb5e6de4843fcc2e29489e9aad1bbdd433ef160dac52dc1f7782a772395011b1"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-phosphates-research/rivadeneyra2014-pdf.txt",
+      "size": 43822,
+      "sha256": "85ed41be1505e2322b56cd28e52457b55a046707ac7fe4bc19800b3419aaea58"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-phosphates-research/rivadeneyra2014-xml.txt",
+      "size": 39483,
+      "sha256": "0f55d10fe6f12d8657c0c24ee1f66984d16b7a4cdb2204ae38659efa99e79490"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-phosphates-research/rivadeneyra2014.pdf",
+      "size": 3716553,
+      "sha256": "e2713ce7f5d8d37f35c9263eca4990addcf3de0d7112250b25b73256db7cc130"
+    },
+    {
+      "path": "/private/tmp/cmm-round65-phosphates-research/rivadeneyra2014.xml",
+      "size": 94991,
+      "sha256": "7e7eab4eb3e94af069215a1705dda35d086dde9d4bf6e1913b10f5561570356b"
+    }
+  ],
+  "identity_authority": {
+    "path": "/private/tmp/cmm-round64-iron-research/ima2026-09.pdf",
+    "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+    "pages": [
+      20,
+      27
+    ],
+    "scope": "Retained official September 2026 IMA original; row text inspected. These are species identities, not proof of experimental phase assignment."
+  },
+  "candidates": [
+    {
+      "name": "Bobierrite",
+      "decision": "defer mechanism curation",
+      "reason": "Assess recovered-phase versus culture-phase identity and limitations of Figure4/5 assignments."
+    },
+    {
+      "name": "Barićite",
+      "decision": "defer mechanism curation",
+      "reason": "Figure5 dihydrate label conflicts with text/figure4 baricite; source formula differs from dated current authority; inspect full Han2016 alternative."
+    }
+  ],
+  "next_source": {
+    "authors": "Han, Schultz, Zhang, Zhu, Meng and Geesey",
+    "year": 2016,
+    "doi": "10.1016/j.chemgeo.2016.04.022",
+    "full_original_status": "Institutional download returned HTTP429; metadata acquired. Provisional failed filename lin2016.pdf does not identify authorship or successful acquisition."
+  },
+  "reuse": "2014 PDF states CC BY3.0; raw originals remain outside Git. Authority and metadata retained for provenance, not bulk redistribution.",
+  "exhaustion_claim": false
+}
