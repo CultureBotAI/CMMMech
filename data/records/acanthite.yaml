@@ -1,0 +1,108 @@
+id: cmmmech:acanthite
+name: Acanthite
+material_kind: mineral
+description: Acanthite is the monoclinic silver sulfide mineral Ag2S, listed as
+  grandfathered with original-description year 1855 in the September 2026 IMA
+  master list. It is distinct from elemental silver, generic silver-containing
+  nanoparticles and the high-temperature cubic Ag2S form commonly called
+  argentite. A laboratory bacterial study identifies acanthite as a minority
+  particle type within a mixed silver-containing population. No criticality
+  designation is inherited from silver.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 3,
+    Acanthite row; page 1 explains grandfathered status and original-description
+    years. Retained original rechecked.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: handbook_acanthite
+  title: Handbook of Mineralogy. Acanthite, version 1 (2001-2005), one-page
+    species entry; monoclinic crystal data and distinction from high-temperature
+    cubic argentite.
+  url: https://handbookofmineralogy.org/pdfs/acanthite.pdf
+  accessed_on: '2026-10-14'
+- id: klaus1999
+  title: Klaus, Joerger, Olsson and Granqvist (1999). Silver-based crystalline
+    nanoparticles, microbially fabricated. PNAS 96, 13611-13614. Complete
+    original PMC full text, Materials and Methods, Results and Discussion,
+    and original Figures 1-3, especially Figure 3b.
+  url: https://doi.org/10.1073/pnas.96.24.13611
+  accessed_on: '2026-10-14'
+- id: ncbi_stutzeri
+  title: NCBI Taxonomy 316. Stutzerimonas stutzeri, current species entry with
+    Pseudomonas stutzeri as a homotypic synonym; not an identifier for strain
+    AG259 or independent sequence verification of that historical isolate.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=316&mode=Info
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: ag259_associated_acanthite_particles
+  name: Minority acanthite particles associated with silver-exposed bacterial cells
+  process: biomineralization
+  microbial: true
+  organisms:
+  - id: NCBITaxon:316
+    label: Stutzerimonas stutzeri
+  description: The strain reported as Pseudomonas stutzeri AG259 contained a
+    small number of particles assigned to monoclinic Ag2S by combined electron
+    diffraction and energy-dispersive X-ray analysis after growth on
+    silver-nitrate-containing agar. Most of the analyzed silver was assigned
+    to elemental silver, and a third crystal type remained unresolved. This
+    supports culture-associated acanthite occurrence, without establishing an
+    exclusively biological precipitation route, a pure product or a recovery yield.
+  context: AG259 was supplied by J. T. Trevors and described as originally
+    isolated from a silver mine. The species mapping retains the authors'
+    identification under the current NCBI name; no strain-specific accession or
+    sequence is supplied in this study. Cultures were maintained in Lennox L
+    broth and grown on Lennox L agar containing nominally 50 mM AgNO3 at
+    30 degrees C for 48 hours in the dark. The article does not specify assay
+    pH, inoculum density, agar recipe, free dissolved silver concentration,
+    biological replicate count or a matched cell-free, killed-cell or sulfide
+    control series. Growing cells were harvested, fixed for two hours in
+    2.5% glutaraldehyde in distilled water, sedimented at 1500 g for ten minutes
+    and washed three times. Thin-section preparation included ethanol
+    dehydration, epoxy embedding and polymerization at 60 degrees C for two
+    days; some sections were stained with uranyl acetate and lead citrate.
+    TEM operated at 200 kV on titanium grids. The study is a laboratory
+    microscopy observation in processed cells, not an ore-leaching assay,
+    isolated silver-sulfide recovery or industrial deployment.
+  evidence:
+  - source_ref: klaus1999
+    supports: support
+    explanation: Results and Discussion and Figure 3b identify a periplasmic
+      particle type with an Ag-to-S atomic proportion of about 2 to 1 by EDX
+      and diffraction spots assigned to the 030 and minus-1 minus-2 4 planes
+      near the 401 zone axis of monoclinic acanthite. The authors report that
+      the different crystal types were found in both whole cells and thin
+      sections. Phase assignment uses diffraction together with composition;
+      particle shape or nominal Ag2S composition alone is not the basis of
+      this record. Figures 1 and 2 show cellular association and diverse
+      particle morphologies, without assigning every visible particle to acanthite.
+  - source_ref: klaus1999
+    supports: partial
+    explanation: The paragraph describing Figure 3b calls the Ag2S particles
+      a small number, without a counted fraction, bulk phase quantification,
+      isolated product mass or silver mass balance. Figure 3a supports
+      elemental Ag, whereas Figure 3c remains structurally unresolved despite
+      an Ag-rich EDX spectrum. The reported overall particle size range is
+      shared across crystal types and is not an acanthite-specific size
+      distribution. The paper's introductory 25% dry-biomass silver figure
+      comes from another study and is not a yield for AG259 in this experiment.
+  - source_ref: klaus1999
+    supports: partial
+    explanation: The proposed reaction of silver particles with bacterially
+      produced H2S is an interpretation relying on an earlier reference;
+      H2S production, its sulfur source and a causal enzymatic pathway are not
+      measured here. Efflux and silver-binding explanations are also proposed.
+      The absence of a matched chemical-control series and a native-state
+      time course prevents isolating a biological increment or excluding
+      effects of sample processing. Fixed-cell microscopy does not establish
+      that inactive biomass alone produces acanthite. Prospective coating
+      applications and preliminary mixed-particle coating observations do not
+      demonstrate acanthite-specific functionality or industrial recovery.
+curation_history:
+- timestamp: '2026-10-14T17:15:51Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created phase-grounded acanthite record from the complete AG259 primary study, preserving mixed products, minority-phase scope, unresolved strain identity and missing causal controls.
+history_refs:
+- history/records/acanthite/2026-10-14T171634Z-codex-d5f96c.yaml

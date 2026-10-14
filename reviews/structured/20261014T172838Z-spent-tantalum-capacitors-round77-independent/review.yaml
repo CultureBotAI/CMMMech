@@ -1,0 +1,351 @@
+schema_version: 1.0.0
+review_id: 20261014T172838Z-spent-tantalum-capacitors-round77-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of spent tantalum capacitors round77
+started_at: '2026-10-14T17:24:32.462658Z'
+finished_at: '2026-10-14T17:28:38.078437Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: new_frontier peer authored this resource and history. Reviewer
+    authored separate monetite/switzerite owners and independently inspected shared
+    original source files; no reviewed owner/history edits. This is independent assessment,
+    not experimental replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of the distinct capacitor-scrap resource and laboratory
+  base-metal mobilization; Ta nondetection, disputed numerical yields, strain naming,
+  incomplete controls and filtrate uncertainty remain explicit. No supported corrective
+  finding.
+source:
+  git_revision: e5e70cfc93a3aa68a166eba7bbbd3dc1053ce60d
+  state: working_tree
+  inputs:
+  - path: data/records/spent-tantalum-capacitors.yaml
+    sha256: 4d586a10e5166b8c3a49b34770f9584cf96968a8e74031d0a6f4a7d20468398f
+    role: target
+  - path: history/records/spent-tantalum-capacitors/2026-10-14T171606Z-codex-9cbb5b.yaml
+    sha256: d1055b91763cd443417f342fa684389803d2f4ab159b6772a98d25d0d3fdbd98
+    role: context
+scope:
+  description: All frozen owner fields, source-linked mechanisms, identity, conditions,
+    controls, outcomes and history; all claim-bearing original figures/tables and
+    SI.
+  selection: Assigned entire frozen spent-tantalum-capacitors owner, not a sample.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:spent-tantalum-capacitors
+targets:
+- target_id: cmmmech:spent-tantalum-capacitors
+  path: data/records/spent-tantalum-capacitors.yaml
+  label: Spent tantalum capacitors
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/spent-tantalum-capacitors.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent reviewer named strict validation
+  command: uv run --locked cmmmech validate --require-records data/records/spent-tantalum-capacitors.yaml
+  status: passed
+  required: true
+  summary: Executed 2026-10-14T17:25:32.463771+00:00 through 2026-10-14T17:25:37.287869+00:00;1record/0failures.
+  target_ids:
+  - cmmmech:spent-tantalum-capacitors
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Coordinator terminal batch gate independently verified
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator executed 2026-10-14T17:23:26.858795+00:00 through 2026-10-14T17:27:23.423095+00:00;
+    exact command/terminal exit/log hash and frozen owner manifest independently checked.
+  target_ids:
+  - cmmmech:spent-tantalum-capacitors
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Coordinator terminal batch gate independently verified
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator executed 2026-10-14T17:27:23.423128+00:00 through 2026-10-14T17:27:49.001646+00:00;
+    exact command/terminal exit/log hash and frozen owner manifest independently checked.
+  target_ids:
+  - cmmmech:spent-tantalum-capacitors
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Coordinator terminal batch gate independently verified
+  command: uv run --locked cmmmech validate-history --base e5e70cfc93a3aa68a166eba7bbbd3dc1053ce60d
+  status: passed
+  required: true
+  summary: Coordinator executed 2026-10-14T17:27:49.001667+00:00 through 2026-10-14T17:27:55.278097+00:00;
+    exact command/terminal exit/log hash and frozen owner manifest independently checked.
+  target_ids:
+  - cmmmech:spent-tantalum-capacitors
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_3
+  name: Coordinator terminal batch gate independently verified
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Coordinator executed 2026-10-14T17:27:55.278117+00:00 through 2026-10-14T17:27:59.198567+00:00;
+    exact command/terminal exit/log hash and frozen owner manifest independently checked.
+  target_ids:
+  - cmmmech:spent-tantalum-capacitors
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/spent-tantalum-capacitors.yaml
+  locator: Entire native-inspected frozen owner
+  accessed_at: '2026-10-14T17:28:38.078437Z'
+  support: supports
+  summary: All fields read and exact bytes checked. No owner/history mutation by reviewer.
+  snapshot_sha256: 4d586a10e5166b8c3a49b34770f9584cf96968a8e74031d0a6f4a7d20468398f
+- evidence_id: history
+  kind: record_content
+  reference: history/records/spent-tantalum-capacitors/2026-10-14T171606Z-codex-9cbb5b.yaml
+  locator: Canonical CREATE and separate inline history
+  accessed_at: '2026-10-14T17:28:38.078437Z'
+  support: supports
+  summary: All fields read and exact bytes checked. No owner/history mutation by reviewer.
+  snapshot_sha256: d1055b91763cd443417f342fa684389803d2f4ab159b6772a98d25d0d3fdbd98
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/ijerph191610006
+  locator: Complete17-page original, allFigures1–16/Tables1–3; Methods2.1–2.3.2, Results3.2.3
+    and Discussion4.3–4.4
+  accessed_at: '2026-10-14T17:28:38.078437Z'
+  support: supports
+  summary: Independently read complete original text and all rendered pages. Capacitor
+    assays are separate from PCB optimization; proposed acids/ferric iron and fungal
+    metabolites were not uniquely isolated. Main reported percentages and Fe normalization
+    conflict with SI or other table, correctly qualified by owner. Figure16 caption
+    and legend disagree; no clean capacitor-specific pH curve inferred.
+  snapshot_sha256: 8fe7fe9331d0007abf77f935d9e77dc17f78310ffaab3ad3f67e3337fe716b3e
+- evidence_id: si
+  kind: primary_source
+  reference: https://www.mdpi.com/article/10.3390/ijerph191610006/s1
+  locator: Complete five-page official ijerph-1818908-supplementary.pdf; TablesS1–S7;
+    original full-sizep5S6/S7 checked
+  accessed_at: '2026-10-14T17:28:38.078437Z'
+  support: supports
+  summary: S6Cu88.04% differs main92%; nonzeroPb contradicts main null; S7Cu60.91%
+    agrees Results61 but not Discussion65. Spores give lower nonzero mobilization;
+    u/0 tantalum is not measured zero and LOD is unavailable. S1 is composition withoutHF,
+    not analytical detection-limit validation.
+  snapshot_sha256: f097061d64f2fc5718e0bca3171f112082a4ca3dbf6cc0d1b1345becff36b2b9
+- evidence_id: authority
+  kind: authority
+  reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-2182
+  locator: Live authority independently opened; name/DSMnumber/other collection labels;
+    retained current HTML
+  accessed_at: '2026-10-14T17:28:38.078437Z'
+  support: supports
+  summary: DSM2182 currently Aspergillus tubingensis; ATCC10581/CBS121.49 listed.
+    Original A.niger name is kept as source report and not retroactively replaced
+    by an authenticated experimental isolate.
+  snapshot_sha256: 928c107139d2f764996feb0f02efc465d54f992103e384aae25d5f549b1a4868
+- evidence_id: xml
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9408593/fullTextXML
+  locator: Complete JATS Methods/results/discussion and supplement pointer
+  accessed_at: '2026-10-14T17:28:38.078437Z'
+  support: supports
+  summary: Same primary study and source copy, not replication; full text inspected
+    independently.
+  snapshot_sha256: da71afd6f5be7e68edd2855945ae5e4902c31ddd8a265bcaa28c025fd7f0a66c
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round77-capacitor-independent/named.json
+  locator: Actual independent reviewer command/start/finish and matching log
+  accessed_at: '2026-10-14T17:28:38.078437Z'
+  support: supports
+  summary: Named strict validation1/0; retained actual command with UV offline/cache
+    environment.
+  snapshot_sha256: 398d8d292a26d9ad3e258091022c8c2e4a8d017d2585ebe0aae923af6b704723
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round77-final-gates.json
+  locator: All FOUR actual completed commands and input manifest
+  accessed_at: '2026-10-14T17:28:38.078437Z'
+  support: supports
+  summary: Terminal0, unchanged368-record inputs and logSHA3d0864c480bb291e6df142762de8231a7ff9d31f214b8036fcef34256c578a25;
+    structural/provenance gates do not certify science.
+  snapshot_sha256: ed09fc454ea992c39ea4c81de2102ceb1339fe4d7926b12eaf8c9d0de0dc691b
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round77-capacitor-independent/dedup-receipt.json
+  locator: Hidden/ignored-inclusive symlink-following identity/DOI search
+  accessed_at: '2026-10-14T17:28:38.078437Z'
+  support: context_only
+  summary: Current corpus,research,reviews,history and cited round10/round21 raws
+    searched. Existing tantalum element and PCB owners share study lineage; capacitor
+    feed is distinct. Initial absent literalglob caused a bounded search error, then
+    successful complete actual-root command replaced it; no absence claim rests on
+    failure.
+  snapshot_sha256: f2b631e97a2e4ac1e4c2813e85ee6de5bbdd3a4f2e75cf55004965970538fe49
+  search_scope: rg --no-ignore --hidden --follow; current records/research/reviews/history,
+    round10-nb-ta and round21-pcb raw roots; no machine-wide absence assertion.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round77-capacitor-independent/notice-search.json
+  locator: Bounded exact-DOI correction/retraction, strain-authority and follow-up
+    queries
+  accessed_at: '2026-10-14T17:28:38.078437Z'
+  support: context_only
+  summary: No matching notice surfaced in returned sets or Crossref update fields.
+    Metadata-only2023 and Zenodo leads not imported as new experimental evidence.
+  snapshot_sha256: 34668358c0e014361c06a97302fce3e59625f0d5fa9201c76127df3efc96dfdd
+  search_scope: First returned sets, no pagination; current DSMZ page independently
+    opened and exact strain name read. Crossref metadata inspected. No matching formal
+    correction/retraction found within bounded results, not exhaustive absence.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: identity and claim boundaries
+  outcome: supported
+  summary: A secondary resource of visually identified capacitors removed from spent
+    phones is distinct from elementalTa, wholePCBs and recovered product. BulkHFdigestion
+    does not prove device/phase purity. No criticality designation inherited from
+    constituentTa. No ungrounded taxonomyidentifier assigned to consortium or conflicting
+    fungal stock.
+  target_ids:
+  - cmmmech:spent-tantalum-capacitors
+  evidence_ids:
+  - record
+  - primary
+  - authority
+  dimensions:
+  - name: criticality
+    value: No jurisdiction/list/edition assertion
+    definition: Resource identity does not inherit element-list status.
+    evidence_ids:
+    - record
+- assessment_id: methods
+  area: evidence
+  topic: methods and claim boundaries
+  outcome: supported
+  summary: Acidophile source-label consortium, modified9K activation,2%w/v,0.5/0.75mm,30°C150rpm10d
+    and maintainedpH1.8 match source. FinalTa-arm Fe concentration and exact sterilization
+    sentence remain unclear; addedFe prevents scrap-only attribution. Fungal source-labeledDSM2182
+    pre-growth48h and separatefiltrate/spore20d arms are distinct. Missing inoculum/workingvolume/filtrationpore
+    and matchedcontrols remain explicit.
+  target_ids:
+  - cmmmech:spent-tantalum-capacitors
+  evidence_ids:
+  - record
+  - primary
+  - si
+  - authority
+  dimensions:
+  - name: material_form
+    value: Milled visually identified surface-mounted capacitors from spentmobilephones
+    definition: Heterogeneous secondaryfeed; no phase-pureTa material.
+    evidence_ids:
+    - primary
+  - name: organism_and_biomass
+    value: Active mixed acidophiles; fungal spores and unproven-sterile culturefiltrate
+    definition: Species/strain authenticity and member-specific causality unresolved.
+    evidence_ids:
+    - primary
+    - authority
+  - name: controls
+    value: Uninoculated bacterialmedium and HCl-adjusted initialpH fungalcomparator
+    definition: Incomplete arm-specific output and chemical/biotic contributions prevent
+      exclusive mechanism attribution.
+    evidence_ids:
+    - primary
+    - si
+  - name: scale
+    value: Laboratory flasks only
+    definition: No industrialdeployment or productpurity demonstration.
+    evidence_ids:
+    - primary
+- assessment_id: outcomes
+  area: evidence
+  topic: outcomes and claim boundaries
+  outcome: supported
+  summary: Qualified base-metal mobilization and greater fungalfiltrate than spore
+    response are supported by Figures12/14 andS6/S7. Tantalum source nondetection
+    has no numericLOD, is not universalfailure and does not prove purifiedresidue.
+    Main/SI copper and lead contradictions, Table1/2Fe mismatch and Figure16label
+    conflict remain visible. No reconciledyield, massbalance or isolatedproduct is
+    adopted.
+  target_ids:
+  - cmmmech:spent-tantalum-capacitors
+  evidence_ids:
+  - record
+  - primary
+  - si
+- assessment_id: provenance
+  area: provenance
+  topic: provenance and claim boundaries
+  outcome: supported
+  summary: Native inspect preceded scientificjudgment; exact record andCREATE remain
+    frozen. Canonical andinlineevents have distinctactualtimes/author roles. Namedvalidation
+    and allfour rootbatch commands passed with logsverified; no reviewer edit/historyevent.
+  target_ids:
+  - cmmmech:spent-tantalum-capacitors
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - dedup
+  - notices
+findings: []
+actions: []
+limitations:
+- Source numerical/table/label contradictions remain unresolved; review does not reconcile
+  extraction percentages or invent detection limits.
+- Consortium strain provenance/member attribution and actual historical fungal identity
+  lack experimental authentication; present DSMZ label is authoritycontext only.
+- Culturefiltrate is not demonstrated cell-free/sterile; acid/metabolite/biomass causes
+  not isolated.
+- Underlying raw replicates and closed massbalances unavailable; officialmain/SI read,
+  not reanalysis of original instrumentdata.
+- Complete officialSI inspected; alternate Zenodo6984909v2 metadata located but API403
+  prevented bytecomparison. No claim that copies are identical.
+- 2023hybrid follow-up remains outsideaccepted experiment; bounded notice search is
+  not proof that no correction exists.
+- No criticality/list, clinical, industrialdeployment or recoveredproduct assertion.
+- Shared curator-acquired originals independently assessed; no owner/history changes
+  by reviewer.
+notes:
+- Start timestamp is filesystem birthtime of initial-inspect.json from the actual
+  first native inspect invocation. Initial save rejected target-kind/repository metadata
+  before persistence; corrected maintained target/CultureBotAI repository metadata
+  and repeated inspect with unchanged owner/history hashes. Final timestamp follows
+  actual terminal batch verification.
+- All17main/5SI pages visually inspected; claim-bearing p5S6/S7 and mainFigure16/Table3
+  additionally inspected fullsize.
+- Formal review findings are empty; scientific limitations are not manufactured corrective
+  defects.
+tags:
+- round77
+- secondary-resource
+- independent
+- primary-figures

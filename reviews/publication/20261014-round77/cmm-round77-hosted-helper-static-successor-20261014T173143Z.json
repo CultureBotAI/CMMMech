@@ -1,0 +1,39 @@
+{
+  "recorded_at": "2026-10-14T17:31:43.112801+00:00",
+  "reviewer": "codex /root/round68_iron_sulfides",
+  "scope": "Independent static successor for exact pre-execution reporting finding; no hosted helper execution or GitHub mutation.",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "unresolved_corrective_findings": 0,
+  "findings": [],
+  "initial_review": "/private/tmp/cmm-round77-hosted-helper-static-20261014T173103Z.json",
+  "initial_review_sha256": "a1524baa7137557b5e7686d380dc06a3396872393d120a834ffcafac54e81bcc",
+  "resolutions": [
+    {
+      "finding_id": "HP1",
+      "issue_key": "round77-hosted-comment-invented-correction-lineage",
+      "disposition": "resolved",
+      "evidence": "Main draft replaces only the unsupported correction-lineage phrase with retained static operational-review evidence. Module change is comments only; parsed executable AST unchanged. No actual review had been posted with the original wording."
+    }
+  ],
+  "files": [
+    {
+      "path": "/private/tmp/cmm-round77-hosted-peer.py",
+      "before_sha256": "665ebae309f0041591a9003a7bca7af7349b30cf41f20610f829bdb99ab0940b",
+      "after_sha256": "c35a62f3f905ab18da669dc0625c8c50de4c5ef890dca32c5268f859c13b3aaa",
+      "snapshot": "/private/tmp/cmm-round77-hosted-helper-static-20261014T173103Z-sources/cmm-round77-hosted-peer.py",
+      "diff": "--- /private/tmp/cmm-round77-hosted-helper-static-20261014T173103Z-sources/cmm-round77-hosted-peer.py\n+++ /private/tmp/cmm-round77-hosted-peer.py\n@@ -121,7 +121,7 @@\n  draft=Path(str(prefix)+'.md')\n  with draft.open('x') as f:\n   if report['passed']:\n-   f.write('Independent operational review of `'+report['head']+'` (tree `'+report['tree']+'`): qualified pass.\\n\\nChecked the clean committed package, exact PR head/base/title/body, and all '+str(report['file_count'])+' unique changed paths across API pages '+str(report['file_page_lengths'])+'. Every hosted file blob matches the reviewed tree. The final audit, batch manifest, native scientific review hashes, explicit operational-review correction lineage, live issue dispositions and actual squash-shaped preflight were also verified. Required `validate-strict` run ['+str(report['required_ci']['run_id'])+']('+report['required_ci']['url']+') completed successfully for this exact PR head and workflow.\\n\\nScientific review remains in the separately saved native artifacts, with any corrective dispositions retained there. I authored monetite and switzerite, which the iron-sulfides agent independently assessed in separate native scientific review artifacts; this operational check does not claim independent scientific review of my own record. No Git/GitHub changes were made by this reviewer. This is a COMMENT review, not an approval.\\n\\nNative queue/merge and fresh postmerge checks remain the coordinator\u2019s next steps. This read-only observation cannot prevent later branch or metadata changes.\\n')\n+   f.write('Independent operational review of `'+report['head']+'` (tree `'+report['tree']+'`): qualified pass.\\n\\nChecked the clean committed package, exact PR head/base/title/body, and all '+str(report['file_count'])+' unique changed paths across API pages '+str(report['file_page_lengths'])+'. Every hosted file blob matches the reviewed tree. The final audit, batch manifest, native scientific review hashes, retained static operational-review evidence, live issue dispositions and actual squash-shaped preflight were also verified. Required `validate-strict` run ['+str(report['required_ci']['run_id'])+']('+report['required_ci']['url']+') completed successfully for this exact PR head and workflow.\\n\\nScientific review remains in the separately saved native artifacts, with any corrective dispositions retained there. I authored monetite and switzerite, which the iron-sulfides agent independently assessed in separate native scientific review artifacts; this operational check does not claim independent scientific review of my own record. No Git/GitHub changes were made by this reviewer. This is a COMMENT review, not an approval.\\n\\nNative queue/merge and fresh postmerge checks remain the coordinator\u2019s next steps. This read-only observation cannot prevent later branch or metadata changes.\\n')\n   else:f.write('Operational audit '+status+': '+report.get('pending_reason','; '.join(report['findings']))+'\\n\\nDo not post this as acceptance.\\n')\n  print(json.dumps(dict(passed=report['passed'],verdict=report['verdict'],receipt=str(receipt),receipt_sha256=sha(receipt),draft=str(draft),draft_sha256=sha(draft),findings=report['findings'],pending_reason=report.get('pending_reason')),indent=2));return {'passed':0,'pending':3,'failed':1}[status]\n from cmm_round77_peer_checks import review_package, verify_preflight\n"
+    },
+    {
+      "path": "/private/tmp/cmm_round77_peer_checks.py",
+      "before_sha256": "138c914eb286a6043dc08fb278726f50b0dd1a2b5e443ef740a7a72c28f3be3d",
+      "after_sha256": "99ec14113bcf2a043ee8b7b71ea99450d4064c2e3e123003bce45725a92f8710",
+      "snapshot": "/private/tmp/cmm-round77-hosted-helper-static-20261014T173103Z-sources/cmm_round77_peer_checks.py",
+      "diff": "--- /private/tmp/cmm-round77-hosted-helper-static-20261014T173103Z-sources/cmm_round77_peer_checks.py\n+++ /private/tmp/cmm_round77_peer_checks.py\n@@ -63,8 +63,8 @@\n             if role=='corrected_review_issues':\n                 need(('Closes #'+str(n)) in g['body_for_review'] or ('Fixes #'+str(n)) in g['body_for_review'],'Corrected issue lacks explicit PR closing link: '+str(n))\n             issues.append({'number':n,'state':x['state'],'url':x['html_url'],'title':x['title'],'role':role,'body_sha256':g['sha_bytes']((x.get('body') or '').encode())})\n-    # Final audit checks include the retained operational initial/successor pair;\n-    # expose exact issue-linked artifact bytes for independent manual lineage inspection.\n+    # Expose retained static operational-review artifacts for independent inspection.\n+    # If this cohort has corrective issues, require initial/successor evidence below.\n     operational=[]\n     for name in expected:\n         if name.startswith('reviews/publication/20261014-round77/') and name.endswith('.json') and 'helper-static' in name:\n"
+    }
+  ],
+  "limitations": [
+    "Static-only review does not substitute for actual complete exact-head hosted audit and committed preflight.",
+    "Issue number has not yet been assigned at this observed successor time; root may link exact immutable occurrence later."
+  ]
+}

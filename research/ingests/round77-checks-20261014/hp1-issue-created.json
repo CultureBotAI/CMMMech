@@ -1,0 +1,14 @@
+{
+  "recorded_at": "2026-10-14T17:32:05.149724+00:00",
+  "issue": 254,
+  "url": "https://github.com/CultureBotAI/CMMMech/issues/254",
+  "title": "Correct stale correction-lineage claim in round77 hosted review template",
+  "body": "An independent pre-execution review found a minor stale statement in the round77 hosted-review helper's proposed PASS comment: it claimed an \u201cexplicit operational-review correction lineage\u201d inherited from a prior cohort. At the time of the finding, the round77 helper audit contained no corrective findings or correction pair. An adjacent module comment had the same stale scope.\n\nThis is a reporting/provenance defect in an unexecuted comment template, not a scientific-record or runtime-guard defect. No inaccurate comment was posted. The initial observation HP1 and exact source snapshots are preserved in `cmm-round77-hosted-helper-static-20261014T173103Z` and will be retained in the PR publication-review artifacts.\n\nAcceptance criteria:\n\n- Replace the two stale prose statements with wording matching the actual round77 package and issue dispositions.\n- Preserve the initial observation, before/after source hashes, and an independent successor explicitly resolving HP1.\n- Verify that behavioral guards are unchanged and the eventual posted COMMENT matches the corrected, reviewed template at the exact PR head.\n\nThe local correction is under independent review; this issue will close through the reviewed PR after the correction artifacts are committed. No record or history edit is needed.\n",
+  "body_sha256": "3876c93a7b67a19831541db141c467fd3865d3578cf01beb6ad9ab9caf0d52b6",
+  "state": "open",
+  "dedup_page_lengths": [
+    100,
+    100,
+    53
+  ]
+}

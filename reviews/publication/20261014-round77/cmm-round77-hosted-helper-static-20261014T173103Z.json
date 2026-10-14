@@ -1,0 +1,32 @@
+{
+  "recorded_at": "2026-10-14T17:31:03.052784+00:00",
+  "reviewer": "codex /root/round68_iron_sulfides",
+  "scope": "Read-only static review of forthcoming exact-head peer helpers; no top-level execution or hosted acceptance claim.",
+  "passed": false,
+  "verdict": "needs_curation",
+  "files": [
+    {
+      "path": "/private/tmp/cmm-round77-hosted-peer.py",
+      "sha256": "665ebae309f0041591a9003a7bca7af7349b30cf41f20610f829bdb99ab0940b",
+      "snapshot": "/private/tmp/cmm-round77-hosted-helper-static-20261014T173103Z-sources/cmm-round77-hosted-peer.py"
+    },
+    {
+      "path": "/private/tmp/cmm_round77_peer_checks.py",
+      "sha256": "138c914eb286a6043dc08fb278726f50b0dd1a2b5e443ef740a7a72c28f3be3d",
+      "snapshot": "/private/tmp/cmm-round77-hosted-helper-static-20261014T173103Z-sources/cmm_round77_peer_checks.py"
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "HP1",
+      "issue_key": "round77-hosted-comment-invented-correction-lineage",
+      "severity": "minor",
+      "path": "/private/tmp/cmm-round77-hosted-peer.py",
+      "evidence": "PASS COMMENT draft says explicit operational-review correction lineage was verified; current config corrected_review_issues=[] and helper-static audit has findings[] and no initial/successor correction. Adjacent checks module comment also says initial/successor pair.",
+      "correction": "Replace this stale claim with retained static operational-review evidence; no behavior change requested.",
+      "acceptance": "Exact successor wording accurately describes actual round77 artifacts and no unsupported correction verification."
+    }
+  ],
+  "other_assessment": "Complete file pagination and blob/tree binding, exact four-owner manifest and final audit inputs, actual terminal batch/structured gates, live issue states, exact CI workflow/run/jobs and committed synthetic-squash preflight are appropriately scoped; no other supported defect identified in full static read.",
+  "limitation": "Configuration and publication package will still be validated at runtime; static reading is not hosted acceptance."
+}

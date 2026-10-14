@@ -1,0 +1,112 @@
+id: cmmmech:monetite
+name: Monetite
+material_kind: mineral
+description: Monetite is the anhydrous calcium hydrogen-phosphate mineral CaHPO4, written Ca(PO3OH) in
+  the September 2026 IMA list. It is triclinic and distinct from brushite, CaHPO4.2H2O, and from a whole
+  dental resin composite. The IMA entry has grandfathered status G and original-description year 1882,
+  not a unique approval accession. The curated laboratory evidence concerns source-assigned monetite on
+  synthetic brushite-containing composite surfaces following live biofilm or cell-free spent-broth exposure;
+  it does not establish natural occurrence in those specimens or pure-mineral recovery. No criticality
+  designation is inherited from calcium or phosphorus.
+sources:
+- id: ima_2026_09
+  title: 'IMA-CNMNC. The New IMA List of Minerals, September 2026: definitions and Monetite row, PDF page
+    147. Retained original re-inspected on the access date.'
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: handbook_monetite
+  title: Handbook of Mineralogy, Monetite, version 1 (2001-2005). Complete one-page mineral identity and
+    triclinic structure.
+  url: https://www.handbookofmineralogy.org/pdfs/monetite.pdf
+  accessed_on: '2026-10-14'
+- id: ionescu2022
+  title: Ionescu et al. (2022). TEGDMA-Functionalized Dicalcium Phosphate Dihydrate Resin-Based Composites
+    Prevent Secondary Caries in an In Vitro Biofilm Model. Journal of Functional Biomaterials 13:232.
+    Complete 19-page publisher PDF, JATS, all 13 figures and Tables 1-4; mineral claim centered on Methods
+    2.1-2.2, 2.5-2.7.3, Figure 8 and Table 1.
+  url: https://doi.org/10.3390/jfb13040232
+  accessed_on: '2026-10-14'
+- id: ncbi_mutans
+  title: 'NCBI Taxonomy 1309: Streptococcus mutans, species node. This identifier does not itself identify
+    a particular experimental stock.'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1309&mode=Info
+  accessed_on: '2026-10-14'
+- id: atcc_35668
+  title: 'ATCC catalog 35668: Streptococcus mutans Clarke. Culture collection identity corresponding to
+    the strain label reported in Ionescu2022.'
+  url: https://www.atcc.org/products/35668
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: biofilm_associated_surface_monetite
+  name: Monetite-assigned surface phase after biofilm and filtered spent-broth challenge
+  process: biomineralization
+  microbial: true
+  organisms:
+  - id: NCBITaxon:1309
+    label: Streptococcus mutans
+  description: The study assigns monetite alongside residual brushite on RBC-20 and RBC-40 disks after
+    a Streptococcus mutans biofilm challenge and after a separate sterile challenge using filtered broth
+    from the biofilm experiment. Brushite conversion and dissolution followed by reprecipitation are proposed
+    routes, not distinguished kinetically. Monetite formation in the cell-free arm means direct contact
+    with living cells is not required under those tested conditions; it does not exclude effects of microbial
+    metabolites in that broth.
+  context: Laboratory disk assay, distinct from the separate two-week restored-tooth experiment. Experimental
+    resin composites contained 20 or 40 wt.% TEGDMA-functionalized brushite plus respectively 40 or 20
+    wt.% barium glass; total filler was 60 wt.%. RBC-0 had 60 wt.% barium glass and no added brushite.
+    Light-cured 6 mm diameter, 2 mm high polished disks were chemiclave-sterilized and conditioned for
+    one week in daily-changed artificial saliva at pH 7 (1W). After a 24-hour salivary-pellicle incubation
+    at 37 degrees C, S. mutans ATCC 35668 was inoculated in sucrose-supplemented BHI, held statically
+    for four hours at 37 degrees C in 5% CO2, then exposed to modified artificial saliva flowing at 20
+    mL/h for 48 hours. BIO disks were PBS-rinsed, sonicated at reported 40 W for 10 minutes and microbrush-cleaned
+    to remove the biofilm before material analyses. The ACID arm used the same bioreactor setup under
+    sterile conditions with filter-sterile effluent from previous BIO runs, reported pH 4.2 +/- 0.1. It
+    is cell-free spent medium, not fresh inorganic acid or a culture-free chemical provenance control.
+    Nondestructive surface XRD is distinct from the separately described heating during thermogravimetry.
+    No phase-specific recovered mass, phosphorus balance, in situ hydration measurement or industrial
+    deployment is reported.
+  evidence:
+  - source_ref: ionescu2022
+    supports: support
+    explanation: Methods 2.5 and 2.7.3, Results 3.1, Figure 8 and Table 1 (PDF page 12) identify brushite
+      in the 1W RBC-20 and RBC-40 surfaces and additional monetite in both corresponding BIO and ACID
+      surfaces. RBC-0 is X-ray amorphous in all three treatments. The original diffractograms show B and
+      M assignments; the crystalline material remains mixed. Methods says a total of three specimens were
+      analyzed by XRD, without an unambiguous per-arm allocation; the larger microbiology sample counts
+      must not be substituted as diffraction replication.
+  - source_ref: ionescu2022
+    supports: partial
+    explanation: Both BIO and ACID arms contain monetite, so the experiment does not show that living
+      cells or direct attachment are necessary for this phase. Filtered effluent retains microbial products
+      and its composition is not independently matched by a fresh-acid control. Figure 8/Table 1 are qualitative
+      phase assignments, with no Rietveld phase fractions. Table 1 gives monetite a single + in both BIO
+      materials and ++ only in RBC-40 ACID; the general Results statement about more monetite in RBC-40
+      does not establish a quantified BIO-arm difference.
+  - source_ref: ionescu2022
+    supports: partial
+    explanation: Table 2 and Figure 9 estimate residual brushite from thermal mass loss, not monetite
+      yield or phosphorus recovery. Loss of brushite can reflect dissolution as well as transformation.
+      Discussion pages 16-17 proposes brushite decomposition or dissolution/reprecipitation and a contribution
+      beyond acid production, but these pathways are not separately measured. The BIO cleaning treatment,
+      unspecified wet-versus-dried XRD handling and absence of time-resolved phase quantification constrain
+      causality and timing.
+  - source_ref: ionescu2022
+    supports: context_only
+    explanation: The tooth micro-CT outcomes, biomass viability, buffering and biofilm ion analyses are
+      different endpoints and are not monetite-specific clinical efficacy, mineral recovery or proof of
+      the phase-transition mechanism. Data Availability says underlying datasets are available on reasonable
+      request; no separate supplementary experiment is linked in the acquired complete PDF/JATS. The retrieved
+      Europe PMC media archive contains the main figures only.
+  - source_ref: ncbi_mutans
+    supports: context_only
+    explanation: The species node resolves to Streptococcus mutans. The primary Methods and ATCC catalog
+      supply the separate ATCC 35668 label; the species identifier does not prove the laboratory culture
+      authenticity.
+curation_history:
+- timestamp: '2026-10-14T17:19:40.181821Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Added monetite mineral identity and qualified surface phase formation after live S. mutans
+    biofilm and cell-free spent-broth challenge, preserving mixed products, causal controls and unmeasured
+    yield boundaries.
+history_refs:
+- history/records/monetite/2026-10-14T172005Z-codex-a53481.yaml
