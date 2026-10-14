@@ -1,0 +1,741 @@
+{
+  "reviewed_at": "2026-10-14T10:21:54.886964+00:00",
+  "started_at": "2026-10-14T10:21:39.614477+00:00",
+  "reviewer": "codex /root/round68_iron_sulfides",
+  "independence": "Independent operational reviewer of root publication code/report. Authored millerite/polydymite/vaesite; root independently scientifically reviewed these. Cross-reviewers assessed phosphate and silicate owners. This artifact is not a scientific self-review or separate human approval.",
+  "base": "e8a5f936607481446e4897e3bf2e0d10f0556632",
+  "branch": "curate/cmm-expansion-round68-20261014",
+  "state": "working_tree",
+  "worktree": "/private/tmp/CMMMech-expansion-round68-20261014",
+  "scope": "Exact local publication package, gate/log evidence, review coverage, source provenance, source-aligned README/report, issue dispositions and operational fixes. Future GitHub head, queue and merge results are not preclaimed.",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "unresolved_corrective_findings": 0,
+  "counts": {
+    "record_count": 319,
+    "history_count": 369,
+    "structured_review_count": 380,
+    "review_base_count": 69,
+    "covered_records": 319
+  },
+  "issues": {
+    "corrected_review_issues": [
+      214
+    ],
+    "closed_source_issues": [],
+    "open_source_issues": [
+      213,
+      215
+    ]
+  },
+  "issue_states": [
+    {
+      "number": 214,
+      "state": "open",
+      "title": "Bind publication commit gate to the exact independent audit inputs",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/214",
+      "planned_disposition": "corrected_review_issues"
+    },
+    {
+      "number": 213,
+      "state": "open",
+      "title": "Complete maghemite primary-source and supplement assessment before curation",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/213",
+      "planned_disposition": "open_source_issues"
+    },
+    {
+      "number": 215,
+      "state": "open",
+      "title": "Reconcile original run metadata for wollastonite and diopside dissolution studies",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/215",
+      "planned_disposition": "open_source_issues"
+    }
+  ],
+  "findings": [
+    {
+      "issue_key": "round68-publication-audit-binding",
+      "severity": "major",
+      "status": "resolved",
+      "target": "/private/tmp/cmm-round68-commit.py",
+      "problem": "Acceptance uses passed==True OR positive verdict and does not require no unresolved corrective findings or compare the exact input state captured by the independent final audit with the candidate commit files. Rebuilding the manifest after an edit could leave a stale final audit accepted.",
+      "evidence": "Current helper reads final audit into a and checks only a.get(passed) is True or a.get(verdict) in pass/pass_with_limitations. It separately hashes manifest artifacts, without comparing audit input hashes.",
+      "acceptance": "Require explicit audit passed:true, no unresolved corrective findings, matching configured counts/issues, and exact candidate path/hash binding to final-audit working_inputs with documented exclusion of self-referential audit files. A stale audit, passed:false/positive verdict, unresolved finding or mismatched input must fail before git add/commit.",
+      "prior_occurrence": {
+        "path": "/private/tmp/cmm-round68-additional-helper-findings-20261014T101114Z.json",
+        "sha256": "09b15fa69960c9092e70b7b2ab7570d309208e6670747b1a1f3afdf42d29a7ba",
+        "issue_key": "round68-publication-audit-binding"
+      },
+      "issue": 214,
+      "correction_verified": "Actual extracted gate rejects stale/failed/unresolved/mismatched state with18 independent temporary-file cases; root12-case regression also inspected."
+    },
+    {
+      "issue_key": "round68-report-no-fe-wording",
+      "severity": "minor",
+      "status": "resolved",
+      "target": "/private/tmp/cmm-round68-build-report.py",
+      "problem": "The generated vaesite summary uses Fe-free, while the maintained record explicitly limits the experiment to no added Fe stock and does not establish trace-Fe-free medium.",
+      "evidence": "build-report.md text template: vaesite phase found in study Fe-free biotic arm.",
+      "acceptance": "Use No Fe (no added Fe stock) or equivalent bounded wording in generated report.",
+      "prior_occurrence": {
+        "path": "/private/tmp/cmm-round68-additional-helper-findings-20261014T101114Z.json",
+        "sha256": "09b15fa69960c9092e70b7b2ab7570d309208e6670747b1a1f3afdf42d29a7ba",
+        "issue_key": "round68-report-no-fe-wording"
+      },
+      "issue": null,
+      "correction_verified": "README and report generator now use No Fe (no added Fe stock), consistent with the record."
+    }
+  ],
+  "final_scientific_reviews": [
+    {
+      "record": "data/records/millerite.yaml",
+      "sha256": "3211129adad8abf3a53478c9f2652688f216b46ae668ecb61c0496bafe229bdb",
+      "review": "reviews/structured/20261014T101124Z-millerite-round68-independent/review.yaml",
+      "review_sha256": "b99a86524126d8d90b790af84e784d6b439c47badff28043aae38d9082a3cb75",
+      "reviewer": {
+        "identity": "codex /root",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Records/history/dossier authored by /root/round68_iron_sulfides. Root independently read primary originals, visual figures and supplement and made no record/history edits. Shared source artifacts; root corrected a provisional draft image-label interpretation before freeze and authors batch documentation."
+      },
+      "verdict": "pass_with_limitations"
+    },
+    {
+      "record": "data/records/polydymite.yaml",
+      "sha256": "117651006cbaac785ebe9a7c8e93a597ca341e6554e5853831769ecfcd3da5f3",
+      "review": "reviews/structured/20261014T101129Z-polydymite-round68-independent/review.yaml",
+      "review_sha256": "35f3dc57e9a083868252d5da2d0ed4df03f20adf63568095cc2475ee6b138493",
+      "reviewer": {
+        "identity": "codex /root",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Records/history/dossier authored by /root/round68_iron_sulfides. Root independently read primary originals, visual figures and supplement and made no record/history edits. Shared source artifacts; root corrected a provisional draft image-label interpretation before freeze and authors batch documentation."
+      },
+      "verdict": "pass_with_limitations"
+    },
+    {
+      "record": "data/records/vaesite.yaml",
+      "sha256": "18d7c9dbf78c9596d94ed652479193390af53fdf3b81d839896e6d300027ca97",
+      "review": "reviews/structured/20261014T101133Z-vaesite-round68-independent/review.yaml",
+      "review_sha256": "134d193647cc2f3b6d617cb20cd474ea97bf263031a92f164b83bef7385c564b",
+      "reviewer": {
+        "identity": "codex /root",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Records/history/dossier authored by /root/round68_iron_sulfides. Root independently read primary originals, visual figures and supplement and made no record/history edits. Shared source artifacts; root corrected a provisional draft image-label interpretation before freeze and authors batch documentation."
+      },
+      "verdict": "pass_with_limitations"
+    },
+    {
+      "record": "data/records/hannayite.yaml",
+      "sha256": "6a05a0d42bdac6c6a1755ce130733fd9d64e8079471279526157c690159997a4",
+      "review": "reviews/structured/20261014T101416Z-hannayite-round68-independent/review.yaml",
+      "review_sha256": "67810f4c1dc9f70f9b720fa4254cb3d495b3dcf5bd6e1e31c509dbd058aee967",
+      "reviewer": {
+        "identity": "codex /root/round68_new_frontier",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "The phosphate records, histories and dossier were authored by /root/round68_phosphates. Reviewer curated only wollastonite and diopside in this cohort and made no phosphate record/history edits. Original acquisition artifacts and cautions were shared; the reviewer independently read the papers, original figures/tables and exact record fields."
+      },
+      "verdict": "pass_with_limitations"
+    },
+    {
+      "record": "data/records/hazenite.yaml",
+      "sha256": "4b9049e0aad226c9c33e762744aef155584aa6ae783d129d0d0f66ebb20ef7c1",
+      "review": "reviews/structured/20261014T101421Z-hazenite-round68-independent/review.yaml",
+      "review_sha256": "27e94ad0282ed5c6126b5e121b30ee2a13809993f7e962e655f3260a03edab52",
+      "reviewer": {
+        "identity": "codex /root/round68_new_frontier",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "The phosphate records, histories and dossier were authored by /root/round68_phosphates. Reviewer curated only wollastonite and diopside in this cohort and made no phosphate record/history edits. Original acquisition artifacts and cautions were shared; the reviewer independently read the papers, original figures/tables and exact record fields."
+      },
+      "verdict": "pass_with_limitations"
+    },
+    {
+      "record": "data/records/wollastonite.yaml",
+      "sha256": "f8fd6bf3632e0addf0edbf23e39ac1d81070777688b439d66cad323731757ff4",
+      "review": "reviews/structured/20261014T101507Z-wollastonite-round68-independent/review.yaml",
+      "review_sha256": "cfa0c36407409efcee953b984c7cf5949cb2647d54b28a526bccb575c2b99bda",
+      "reviewer": {
+        "identity": "codex /root/round68_phosphates",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Scientific record, history and source dossier authored by /root/round68_new_frontier. Reviewer independently read primary originals, figures and relevant supplements, made independent conflict searches and no record/history edits. Acquisition artifacts and curator cautions were shared."
+      },
+      "verdict": "pass_with_limitations"
+    },
+    {
+      "record": "data/records/diopside.yaml",
+      "sha256": "79084fd1d89a69e71c0efee76a6b961354ea9ca3f6ecbb235ba7068a07c72734",
+      "review": "reviews/structured/20261014T101509Z-diopside-round68-independent/review.yaml",
+      "review_sha256": "ec6a92f0ffc74f4cf1f9682b77921ae1d7c62694454e9d45ed5f4b7f3b43334f",
+      "reviewer": {
+        "identity": "codex /root/round68_phosphates",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Scientific record, history and source dossier authored by /root/round68_new_frontier. Reviewer independently read primary originals, figures and relevant supplements, made independent conflict searches and no record/history edits. Acquisition artifacts and curator cautions were shared."
+      },
+      "verdict": "pass_with_limitations"
+    }
+  ],
+  "working_inputs": [
+    {
+      "path": "README.md",
+      "sha256": "b62cac333c7552eef46052d1ed08353de1044c065c9d9cc3af75c5b7771f419e"
+    },
+    {
+      "path": "data/records/diopside.yaml",
+      "sha256": "79084fd1d89a69e71c0efee76a6b961354ea9ca3f6ecbb235ba7068a07c72734"
+    },
+    {
+      "path": "data/records/hannayite.yaml",
+      "sha256": "6a05a0d42bdac6c6a1755ce130733fd9d64e8079471279526157c690159997a4"
+    },
+    {
+      "path": "data/records/hazenite.yaml",
+      "sha256": "4b9049e0aad226c9c33e762744aef155584aa6ae783d129d0d0f66ebb20ef7c1"
+    },
+    {
+      "path": "data/records/millerite.yaml",
+      "sha256": "3211129adad8abf3a53478c9f2652688f216b46ae668ecb61c0496bafe229bdb"
+    },
+    {
+      "path": "data/records/polydymite.yaml",
+      "sha256": "117651006cbaac785ebe9a7c8e93a597ca341e6554e5853831769ecfcd3da5f3"
+    },
+    {
+      "path": "data/records/vaesite.yaml",
+      "sha256": "18d7c9dbf78c9596d94ed652479193390af53fdf3b81d839896e6d300027ca97"
+    },
+    {
+      "path": "data/records/wollastonite.yaml",
+      "sha256": "f8fd6bf3632e0addf0edbf23e39ac1d81070777688b439d66cad323731757ff4"
+    },
+    {
+      "path": "history/records/diopside/2026-10-14T100554Z-codex-d9c583.yaml",
+      "sha256": "026aba5770043f7856fb1f110e0828ca39afd42578d54d74b298c8667057e3f9"
+    },
+    {
+      "path": "history/records/hannayite/2026-10-14T100352Z-codex-f70b6c.yaml",
+      "sha256": "4ae501aeea931279411f13b69283fef294631c1a0f2a612520e26cb9b7bd0fc7"
+    },
+    {
+      "path": "history/records/hazenite/2026-10-14T100415Z-codex-94f0e4.yaml",
+      "sha256": "1a22046c32dbfe57b6acb9ce8d43ad52565da2aeb9bfad0e0168a6948723105d"
+    },
+    {
+      "path": "history/records/millerite/2026-10-14T100610Z-codex-404936.yaml",
+      "sha256": "313c9903a342c94b63ae7437ea64989d6a2214654eb1e16ac7caa99089f04136"
+    },
+    {
+      "path": "history/records/polydymite/2026-10-14T100614Z-codex-146522.yaml",
+      "sha256": "53e2991b29e8e62c5f8be761d20c1cb9b801e469ff0a7fc157940078f963ebdb"
+    },
+    {
+      "path": "history/records/vaesite/2026-10-14T100617Z-codex-0c8469.yaml",
+      "sha256": "5785fe4b49bc1227f4d36ba8ff48c0de9d92cdbf13ef1ba3eca2995bf67ffe63"
+    },
+    {
+      "path": "history/records/wollastonite/2026-10-14T100551Z-codex-096999.yaml",
+      "sha256": "3e29a95b31c41804939746305e438cb0d6604c0210f5fb4597269138dbe53268"
+    },
+    {
+      "path": "pages/browse.html",
+      "sha256": "c2a84fab3f71ff054f68fca99984c05fc5d73a1ef0384bea4142603c39455697"
+    },
+    {
+      "path": "pages/index.html",
+      "sha256": "f380e71fd7741a4799928f4b5588e8baeae9bf589417a7678e88f51a97a55f69"
+    },
+    {
+      "path": "pages/index.json",
+      "sha256": "827af107887e360ba1ca3daacf56af159a94b89b9976bb9c5b9b738aeeca5b7f"
+    },
+    {
+      "path": "pages/kinds/commodity.html",
+      "sha256": "3c9489c7ed5079d1dbcf2fff82d83375767ee73bc055ca14993f170609740628"
+    },
+    {
+      "path": "pages/kinds/element.html",
+      "sha256": "bf6bd3563772ed3a0dd1a809f31b873fb9295df46d65a997e20bca42d4f0370f"
+    },
+    {
+      "path": "pages/kinds/mineral.html",
+      "sha256": "74ba2722ee7f1342545d49f47712ff164f576427eed6894f5de55c459808a963"
+    },
+    {
+      "path": "pages/kinds/mineral_group.html",
+      "sha256": "1d50c2edf3cde426cfdef8a83a0d4b797cc88deba0b281f48212bcbb9d46d405"
+    },
+    {
+      "path": "pages/kinds/primary_resource.html",
+      "sha256": "1f4464282bca954310212c0f5e9655da43bcd082a1b073dcca8bce8d7b9a6b38"
+    },
+    {
+      "path": "pages/kinds/secondary_resource.html",
+      "sha256": "e3916da5ab550e72f4cd314f86b7e10c07e4148f6b906824ac01bdef45a5b73f"
+    },
+    {
+      "path": "pages/materials/diopside.html",
+      "sha256": "686786233c3470dc4738fd20ee174abe17d6c6e542fbe13679ee660e1d36b784"
+    },
+    {
+      "path": "pages/materials/hannayite.html",
+      "sha256": "eca6a1e91361d278810ee6dd71e8944db32510ea42a2bed172f8aa253501c2be"
+    },
+    {
+      "path": "pages/materials/hazenite.html",
+      "sha256": "f28ecd89f5a47c780524607ad8fca08d9d101d8144cebc41fd44678e75ba628e"
+    },
+    {
+      "path": "pages/materials/millerite.html",
+      "sha256": "cdf913d48fbbdd19f66da08610da7d5d704b052defa48ee673841dd9bd356a8a"
+    },
+    {
+      "path": "pages/materials/polydymite.html",
+      "sha256": "7e263dc452a0c5605c1acc61fd3f4cc022d686ca781088be3dc32f875fc1cfc5"
+    },
+    {
+      "path": "pages/materials/vaesite.html",
+      "sha256": "42c8d1c5d2444e6ac6334d93c2c948c9f320e43bcb4adb9f656e9c4d24b09bdd"
+    },
+    {
+      "path": "pages/materials/wollastonite.html",
+      "sha256": "cf91f9071beda477754127ef17554dcf7607b8a64cfe8273fc0ef78e6f5d0944"
+    },
+    {
+      "path": "pages/processes/bioleaching.html",
+      "sha256": "736b69fea10075c068c129f4c9c7c4d0d097f88edb7fc0003ca25e65d557358e"
+    },
+    {
+      "path": "pages/processes/biomineralization.html",
+      "sha256": "125e242ccb8dd024fedfcec81a432db818cde78f8d7feb96ebd320c886030699"
+    },
+    {
+      "path": "pages/processes/biosorption.html",
+      "sha256": "872a6cf38086c3ccf02b4e4fb54ec6160ceb2fe00280b5b967a2d05388a5fd4d"
+    },
+    {
+      "path": "pages/processes/other.html",
+      "sha256": "af43eb0b22a65bf02efb924caba150ec1d1104283c9278ca55c373f829a6c73c"
+    },
+    {
+      "path": "pages/processes/recovery.html",
+      "sha256": "35a0028d1f9d1f5a432d86577f150b47bb45202f16dcbebf221e5c3086fca0b5"
+    },
+    {
+      "path": "pages/processes/redox_transformation.html",
+      "sha256": "a9271675623d30b73c44f113166b2f908a81a53434266478af7643c55aecd81c"
+    },
+    {
+      "path": "pages/processes/separation.html",
+      "sha256": "ff26c6f03ce737f84c9bdbe6efe78122a7c6b0fab27fc02ff9c4feafe0f1d1f2"
+    },
+    {
+      "path": "research/ingests/round68-frontier-20261014.json",
+      "sha256": "bf2447331ba759eef457bb2ba663faf98067b141bcc1d817d9f6aeef69986e5d"
+    },
+    {
+      "path": "research/ingests/round68-frontier-20261014.md",
+      "sha256": "8f515ac87d7af9c2dc986cd04ad9cba07e7c9cb1dfd7c7932bd30dcc9ab5c72f"
+    },
+    {
+      "path": "research/sources/round68-iron-sulfides/20261014T100850Z-source-investigation.json",
+      "sha256": "039ecdb08848336590e0adb03c47a130743fc331e35c2fa4bf6d9c7491d8e157"
+    },
+    {
+      "path": "research/sources/round68-iron-sulfides/20261014T100850Z-source-investigation.md",
+      "sha256": "11b285872efdcfdaf83ff5b113a1b5f77d49e02f93803e1d802198fbb2e651a3"
+    },
+    {
+      "path": "research/sources/round68-new-frontier/20261014T100801Z-source-investigation.json",
+      "sha256": "25f1230b8e643615f56052f50ad849a9157bfc3c413b0001bb3364e7208e7082"
+    },
+    {
+      "path": "research/sources/round68-new-frontier/20261014T100801Z-source-investigation.md",
+      "sha256": "73fc84741c87d6e35ac067c363493035a49f679bff7bb3f335898f178c44a904"
+    },
+    {
+      "path": "research/sources/round68-phosphates/20261014T100613Z-source-investigation.json",
+      "sha256": "6c62dd036beca798d3894c5a8f64c3888e21efd418f85879968d5b945f0f1b3d"
+    },
+    {
+      "path": "research/sources/round68-phosphates/20261014T100613Z-source-investigation.md",
+      "sha256": "4c50c85b2238f4d2dc6f2aa994f6f8aa0d516db3d8abd6c5ecde274213f07f47"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/20261014T102033Z-closeout-helper-peer.json",
+      "sha256": "5f010921f4e82b99b189f192489d655741c83242372ffc2175c9c336f4386ca3"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/20261014T102033Z-closeout-helper-peer.md",
+      "sha256": "0938d368cd0aefc613ef15bb438b548c1f2320129ee593e49809c27a6e70aa20"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/baseline.json",
+      "sha256": "8cc53f8fa6f92f97e7553f07c980b0684566874c1e5608147b344d9a2a6aefb4"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-additional-helper-findings-20261014T101114Z.json",
+      "sha256": "09b15fa69960c9092e70b7b2ab7570d309208e6670747b1a1f3afdf42d29a7ba"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-audit-binding-issue.json",
+      "sha256": "700d9e13c7456792472e750de97d9b6f418acb2453fae8ccc3e749cf7051b150"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-audit-binding-regression.json",
+      "sha256": "6686c2636ad39d2000df59d0c9c127849ce363284d2c06571694ca365dec1a8a"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-audit-binding-regression.py",
+      "sha256": "96b5103725359dd976c8890833284abfe9a4690a4645554f05e7a316f9a6ccd9"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-build-report-pre-fix.py.txt",
+      "sha256": "7c71146c7de170803245c7de4184608d7bf7a56d0e4ba55d0a2cde77e5193eee"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-build-report-reviewed.py.txt",
+      "sha256": "bf419b3e6228eab927f4b3c708077ee3c5f70b65754f715131b7f6e35bec77f9"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-closeout-reviewed.py.txt",
+      "sha256": "1f8903d7256f2ece1ff409ef65e41cc032e93692599f9307b545b6bee31baf63"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-commit-pre-fix.py.txt",
+      "sha256": "a7a608f3f510f6e84acd70525d5705061dc2e1c0cc2a2b5080ff31b2f8fedaa3"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-commit-reviewed.py.txt",
+      "sha256": "3482c6218030e653ac5bae05d7803f190408875479337503ba8e61d2df204948"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-helper-peer-review.json",
+      "sha256": "a71fd69bbed419ce4585045d111afe126e48c78f423d64f7c739101e04e0a0f1"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-helper-peer-successor.json",
+      "sha256": "78f524292aae2566f0b5508f038db640673d917bf956426a23d2962ffed7c8bb"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-helper-peer-successor.md",
+      "sha256": "cccf64f25750187570e6c5ce05588bb83ac97741dade47304c756e4f062e1f3b"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-readme-peer.json",
+      "sha256": "e27506901d73f4dfe51176a10b65653fc502312a1b85bad477349c375ca4ab4a"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-readme-peer.md",
+      "sha256": "dc1ea30ab0f6222b9e34f69e0989c03b73885cda09f24b4b803434273d13266e"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/final-gates.json",
+      "sha256": "98a8895b0aa6cd7c11a3a0e92d34f985e8d6985a2de3b3a6bcaf7842a578f477"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/integration-status.json",
+      "sha256": "9ec3d6d1d3ef02ce2b2e20dfb9e5b75943180492b629c6da28009aba04f8bbb8"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/local-coverage.json",
+      "sha256": "00ded69a91a047cd65de9fc9d88ac6151aac708d558f488279d7b8aaf8e62aa8"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/preservation-prepublication.json",
+      "sha256": "21635f6876a5e74728aac17287fca546e81c6eaf83d0c5e3cf9abceb8303d0ba"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/review-check.json",
+      "sha256": "f69c493f5a09e2885bc84608edd09197a4d3e05afda4ec45a6c2c86e7103a429"
+    },
+    {
+      "path": "reviews/structured/20261014T101124Z-millerite-round68-independent/review.md",
+      "sha256": "18de4332b1799781a407163917294aa7a66a11a4c509bbfe33d6f854b5c436ed"
+    },
+    {
+      "path": "reviews/structured/20261014T101124Z-millerite-round68-independent/review.yaml",
+      "sha256": "b99a86524126d8d90b790af84e784d6b439c47badff28043aae38d9082a3cb75"
+    },
+    {
+      "path": "reviews/structured/20261014T101129Z-polydymite-round68-independent/review.md",
+      "sha256": "38d0e077cb7163dd199730b2fec7fea79308323f00b5eb1c757c68563688b80e"
+    },
+    {
+      "path": "reviews/structured/20261014T101129Z-polydymite-round68-independent/review.yaml",
+      "sha256": "35f3dc57e9a083868252d5da2d0ed4df03f20adf63568095cc2475ee6b138493"
+    },
+    {
+      "path": "reviews/structured/20261014T101133Z-vaesite-round68-independent/review.md",
+      "sha256": "d8eda4310809a4f0ec8d230e78a8b9275f9442bce10b786c45c25f192a865c3f"
+    },
+    {
+      "path": "reviews/structured/20261014T101133Z-vaesite-round68-independent/review.yaml",
+      "sha256": "134d193647cc2f3b6d617cb20cd474ea97bf263031a92f164b83bef7385c564b"
+    },
+    {
+      "path": "reviews/structured/20261014T101416Z-hannayite-round68-independent/review.md",
+      "sha256": "95a99457732ff53ea88f68b18e794342b4bdf8e1ff54e54ff1e8994275209ddc"
+    },
+    {
+      "path": "reviews/structured/20261014T101416Z-hannayite-round68-independent/review.yaml",
+      "sha256": "67810f4c1dc9f70f9b720fa4254cb3d495b3dcf5bd6e1e31c509dbd058aee967"
+    },
+    {
+      "path": "reviews/structured/20261014T101421Z-hazenite-round68-independent/review.md",
+      "sha256": "51565ac36a91f0999a0f8ab0121fa4c7a5601e221920492600d03df17a9288dd"
+    },
+    {
+      "path": "reviews/structured/20261014T101421Z-hazenite-round68-independent/review.yaml",
+      "sha256": "27e94ad0282ed5c6126b5e121b30ee2a13809993f7e962e655f3260a03edab52"
+    },
+    {
+      "path": "reviews/structured/20261014T101507Z-wollastonite-round68-independent/review.md",
+      "sha256": "fa6b188a5f5fb6cb196493bea0459ba7b2fca2731ed2c63bdfd7d961cb9e178b"
+    },
+    {
+      "path": "reviews/structured/20261014T101507Z-wollastonite-round68-independent/review.yaml",
+      "sha256": "cfa0c36407409efcee953b984c7cf5949cb2647d54b28a526bccb575c2b99bda"
+    },
+    {
+      "path": "reviews/structured/20261014T101509Z-diopside-round68-independent/review.md",
+      "sha256": "31a3c3f7356ff32be284a2d8ca9344eb7536f12436240fbc3392adca701a8e41"
+    },
+    {
+      "path": "reviews/structured/20261014T101509Z-diopside-round68-independent/review.yaml",
+      "sha256": "ec6a92f0ffc74f4cf1f9682b77921ae1d7c62694454e9d45ed5f4b7f3b43334f"
+    }
+  ],
+  "configuration": {
+    "path": "/private/tmp/cmm-round68-helper-config.json",
+    "sha256": "4cab5b66cb12c412496dc41d1955bdb150a446724a5642fb50a06971353b08fe"
+  },
+  "pr_body": {
+    "path": "/private/tmp/cmm-round68-pr-body.md",
+    "sha256": "996ed4c9950cfc527aa6a6e1de374b5892b21f24facd444a4045d01eedf67ec6"
+  },
+  "report": {
+    "path": "research/ingests/round68-frontier-20261014.json",
+    "sha256": "bf2447331ba759eef457bb2ba663faf98067b141bcc1d817d9f6aeef69986e5d"
+  },
+  "receipts": [
+    {
+      "path": "/private/tmp/cmm-round68-baseline.json",
+      "sha256": "8cc53f8fa6f92f97e7553f07c980b0684566874c1e5608147b344d9a2a6aefb4"
+    },
+    {
+      "path": "/private/tmp/cmm-round68-final-gates.json",
+      "sha256": "98a8895b0aa6cd7c11a3a0e92d34f985e8d6985a2de3b3a6bcaf7842a578f477"
+    },
+    {
+      "path": "/private/tmp/cmm-round68-review-check.json",
+      "sha256": "f69c493f5a09e2885bc84608edd09197a4d3e05afda4ec45a6c2c86e7103a429"
+    },
+    {
+      "path": "/private/tmp/cmm-round68-local-coverage.json",
+      "sha256": "00ded69a91a047cd65de9fc9d88ac6151aac708d558f488279d7b8aaf8e62aa8"
+    },
+    {
+      "path": "/private/tmp/cmm-round68-preservation-prepublication.json",
+      "sha256": "21635f6876a5e74728aac17287fca546e81c6eaf83d0c5e3cf9abceb8303d0ba"
+    },
+    {
+      "path": "/private/tmp/cmm-round68-integration-status.json",
+      "sha256": "9ec3d6d1d3ef02ce2b2e20dfb9e5b75943180492b629c6da28009aba04f8bbb8"
+    }
+  ],
+  "helper_inputs": [
+    {
+      "path": "/private/tmp/cmm-round68-gates.py",
+      "sha256": "d4823aa330d614d04dcb383a87d0a8a9388b773871fb040ac0e90bf85c77862c"
+    },
+    {
+      "path": "/private/tmp/cmm-round68-isolated-coverage.py",
+      "sha256": "7515a37ab51fe0006e83d24c562337cc1f73c4387f3f5bb09f7f7ed5174cac52"
+    },
+    {
+      "path": "/private/tmp/cmm-round68-isolated-verification.py",
+      "sha256": "063d19b224511c4b1f6ce2985de9ba84ccdbe697bc7cf8c9dcf521321766b672"
+    },
+    {
+      "path": "/private/tmp/cmm-round68-integration-check.py",
+      "sha256": "6cd989cfa07587de95df862eb9de4037952002c67d5c9b5655bb880581983aca"
+    },
+    {
+      "path": "/private/tmp/cmm-round68-preservation-check.py",
+      "sha256": "fd1bc9f22565ede098959a2205ddd74319f4ac52808a4ce07dd593abe227b934"
+    },
+    {
+      "path": "/private/tmp/cmm-round68-open-pr.py",
+      "sha256": "c5f99270c973cd21469f78606cb24cedbcea20975141e214c99d733bf569388b"
+    },
+    {
+      "path": "/private/tmp/cmm-round68-post-review.py",
+      "sha256": "310b6eae0139e294d5596ce0eedb08f8eaf695ac376445d9ba6b9362a63d27a8"
+    },
+    {
+      "path": "/private/tmp/cmm-round68-enqueue.py",
+      "sha256": "2bc94b0545099ace3ba03852af39a15f4272c410a801dbbdaa4bcdbe968aff0c"
+    },
+    {
+      "path": "/private/tmp/cmm-round68-cleanup.py",
+      "sha256": "69d0954feff79eddd6181fe6d69bcd6c7ed417698972667ed1301d4dbc32669a"
+    },
+    {
+      "path": "/private/tmp/cmm-round68-sync-main.py",
+      "sha256": "36b27be46b20dfa344d129a0aa5e933f1897f5bfc3e04f5dbc9545e609de4b7c"
+    },
+    {
+      "path": "/private/tmp/cmm-round68-hosted-audit.py",
+      "sha256": "d72e2bd018ea02221f54062e515f52c434e56f60d61a0c61e3ce780bbb049cf4"
+    },
+    {
+      "path": "/private/tmp/cmm-round68-commit.py",
+      "sha256": "3482c6218030e653ac5bae05d7803f190408875479337503ba8e61d2df204948"
+    },
+    {
+      "path": "/private/tmp/cmm-round68-build-report.py",
+      "sha256": "bf419b3e6228eab927f4b3c708077ee3c5f70b65754f715131b7f6e35bec77f9"
+    },
+    {
+      "path": "/private/tmp/cmm-round68-closeout.py",
+      "sha256": "1f8903d7256f2ece1ff409ef65e41cc032e93692599f9307b545b6bee31baf63"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-recover-original.py",
+      "sha256": "a7c9487654d05821423a7d95844ac1289e80b5958107f1372cc0d0d3ed07906b"
+    }
+  ],
+  "source_artifact_references_checked": 174,
+  "source_dossiers": [
+    {
+      "path": "research/sources/round68-iron-sulfides/20261014T100850Z-source-investigation.json",
+      "sha256": "039ecdb08848336590e0adb03c47a130743fc331e35c2fa4bf6d9c7491d8e157"
+    },
+    {
+      "path": "research/sources/round68-iron-sulfides/20261014T100850Z-source-investigation.md",
+      "sha256": "11b285872efdcfdaf83ff5b113a1b5f77d49e02f93803e1d802198fbb2e651a3"
+    },
+    {
+      "path": "research/sources/round68-phosphates/20261014T100613Z-source-investigation.json",
+      "sha256": "6c62dd036beca798d3894c5a8f64c3888e21efd418f85879968d5b945f0f1b3d"
+    },
+    {
+      "path": "research/sources/round68-phosphates/20261014T100613Z-source-investigation.md",
+      "sha256": "4c50c85b2238f4d2dc6f2aa994f6f8aa0d516db3d8abd6c5ecde274213f07f47"
+    },
+    {
+      "path": "research/sources/round68-new-frontier/20261014T100801Z-source-investigation.json",
+      "sha256": "25f1230b8e643615f56052f50ad849a9157bfc3c413b0001bb3364e7208e7082"
+    },
+    {
+      "path": "research/sources/round68-new-frontier/20261014T100801Z-source-investigation.md",
+      "sha256": "73fc84741c87d6e35ac067c363493035a49f679bff7bb3f335898f178c44a904"
+    }
+  ],
+  "committed_peer_proofs": [
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-helper-peer-successor.json",
+      "sha256": "78f524292aae2566f0b5508f038db640673d917bf956426a23d2962ffed7c8bb"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-additional-helper-findings-20261014T101114Z.json",
+      "sha256": "09b15fa69960c9092e70b7b2ab7570d309208e6670747b1a1f3afdf42d29a7ba"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-closeout-reviewed.py.txt",
+      "sha256": "1f8903d7256f2ece1ff409ef65e41cc032e93692599f9307b545b6bee31baf63"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-readme-peer.md",
+      "sha256": "dc1ea30ab0f6222b9e34f69e0989c03b73885cda09f24b4b803434273d13266e"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/20261014T102033Z-closeout-helper-peer.md",
+      "sha256": "0938d368cd0aefc613ef15bb438b548c1f2320129ee593e49809c27a6e70aa20"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/20261014T102033Z-closeout-helper-peer.json",
+      "sha256": "5f010921f4e82b99b189f192489d655741c83242372ffc2175c9c336f4386ca3"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-commit-pre-fix.py.txt",
+      "sha256": "a7a608f3f510f6e84acd70525d5705061dc2e1c0cc2a2b5080ff31b2f8fedaa3"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/integration-status.json",
+      "sha256": "9ec3d6d1d3ef02ce2b2e20dfb9e5b75943180492b629c6da28009aba04f8bbb8"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/final-gates.json",
+      "sha256": "98a8895b0aa6cd7c11a3a0e92d34f985e8d6985a2de3b3a6bcaf7842a578f477"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-build-report-reviewed.py.txt",
+      "sha256": "bf419b3e6228eab927f4b3c708077ee3c5f70b65754f715131b7f6e35bec77f9"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/local-coverage.json",
+      "sha256": "00ded69a91a047cd65de9fc9d88ac6151aac708d558f488279d7b8aaf8e62aa8"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-audit-binding-regression.py",
+      "sha256": "96b5103725359dd976c8890833284abfe9a4690a4645554f05e7a316f9a6ccd9"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/baseline.json",
+      "sha256": "8cc53f8fa6f92f97e7553f07c980b0684566874c1e5608147b344d9a2a6aefb4"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-build-report-pre-fix.py.txt",
+      "sha256": "7c71146c7de170803245c7de4184608d7bf7a56d0e4ba55d0a2cde77e5193eee"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-helper-peer-successor.md",
+      "sha256": "cccf64f25750187570e6c5ce05588bb83ac97741dade47304c756e4f062e1f3b"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/preservation-prepublication.json",
+      "sha256": "21635f6876a5e74728aac17287fca546e81c6eaf83d0c5e3cf9abceb8303d0ba"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-helper-peer-review.json",
+      "sha256": "a71fd69bbed419ce4585045d111afe126e48c78f423d64f7c739101e04e0a0f1"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/review-check.json",
+      "sha256": "f69c493f5a09e2885bc84608edd09197a4d3e05afda4ec45a6c2c86e7103a429"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-commit-reviewed.py.txt",
+      "sha256": "3482c6218030e653ac5bae05d7803f190408875479337503ba8e61d2df204948"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-audit-binding-regression.json",
+      "sha256": "6686c2636ad39d2000df59d0c9c127849ce363284d2c06571694ca365dec1a8a"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-audit-binding-issue.json",
+      "sha256": "700d9e13c7456792472e750de97d9b6f418acb2453fae8ccc3e749cf7051b150"
+    },
+    {
+      "path": "reviews/publication/20261014-round68/cmm-round68-readme-peer.json",
+      "sha256": "e27506901d73f4dfe51176a10b65653fc502312a1b85bad477349c375ca4ab4a"
+    }
+  ],
+  "limitations": [
+    "Raw source-reference hashes verify identity/integrity, not independent rereading of all original evidence in this operational interval. Detailed independent scientific reviews provide that evidence assessment.",
+    "Hidden/ignored-inclusive scientific/source inventory supplements commit-candidate enumeration; ignored environments and external raw artifacts are excluded from the commit by explicit scope.",
+    "Species-specific uncertainties and source gaps remain in the records and separate source issues. No claim of global CMM exhaustion.",
+    "Exact-head hosted review, isolated squash preflight, native queue checks, actual merge/branch cleanup and fresh main verification remain subsequent gates."
+  ]
+}

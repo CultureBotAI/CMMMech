@@ -1,0 +1,10 @@
+{
+  "body": "The round68 operational review found a gap in the proposed publication helper: `/private/tmp/cmm-round68-commit.py` accepts a final audit when `passed` is true **or** its verdict is positive, but does not require that corrective findings are resolved or compare the audit's exact reviewed input hashes with the candidate commit state. The separate manifest hash check is useful but does not prove that an independent reviewer inspected a rebuilt manifest or later edits.\n\nNo stale package has been committed or pushed in this round. This is an acceptance-gate defect found before publication.\n\nFix and acceptance criteria:\n\n- Require explicit `passed: true` and `unresolved_corrective_findings: 0`.\n- Require audit counts and issue dispositions to match the reviewed configuration.\n- Have the final independent audit capture a deterministic path/SHA-256 list for every candidate input; exclude only its own final Markdown/JSON to avoid self-reference.\n- Immediately before staging, compare the candidate path/hash set with that captured audit state and reject missing, added or changed inputs.\n- Demonstrate rejection of a failed audit with a positive verdict, unresolved findings and a changed or additional candidate file. Keep the existing base/head/branch, clean index, manifest and exact-head hosted checks.\n\nThe helper is operational tooling outside the repository. Retain the reviewed helper hash and regression evidence in the round68 publication artifacts so the fix remains inspectable. A subsequent passing package audit alone is not evidence that this gap was corrected.\n",
+  "number": 214,
+  "state": "OPEN",
+  "title": "Bind publication commit gate to the exact independent audit inputs",
+  "url": "https://github.com/CultureBotAI/CMMMech/issues/214",
+  "recorded_at": "2026-10-14T10:13:07.073265+00:00",
+  "body_sha256": "3dac9699eb15bf74070aca160d0608daa77b6d53c88544e219091c3c8b85e469",
+  "live_dedup_issue_count": 134
+}

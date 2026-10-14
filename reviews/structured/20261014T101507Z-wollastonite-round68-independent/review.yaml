@@ -1,0 +1,374 @@
+schema_version: 1.0.0
+review_id: 20261014T101507Z-wollastonite-round68-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of wollastonite
+started_at: '2026-10-14T10:06:39.151130Z'
+finished_at: '2026-10-14T10:15:07.163440Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Scientific record, history and source dossier authored by /root/round68_new_frontier.
+    Reviewer independently read primary originals, figures and relevant supplements,
+    made independent conflict searches and no record/history edits. Acquisition artifacts
+    and curator cautions were shared.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Wollastonite is the mineral CaSiO3, distinct from elemental calcium/silicon,
+  commodities, rocks and secondary feeds. IMA special-procedure notation does not
+  identify a polytype of the assayed natural material. Live/dead bacterial dissolution
+  is supported as a tested interaction with limited and uncertain effects. The source
+  interpretation is qualified by conflicting rate summaries and unlike conditions;
+  it is not generalized to all silicates or field biota.
+source:
+  git_revision: e8a5f936607481446e4897e3bf2e0d10f0556632
+  state: working_tree
+  inputs:
+  - path: data/records/wollastonite.yaml
+    sha256: f8fd6bf3632e0addf0edbf23e39ac1d81070777688b439d66cad323731757ff4
+    role: target
+  - path: history/records/wollastonite/2026-10-14T100551Z-codex-096999.yaml
+    sha256: 3e29a95b31c41804939746305e438cb0d6604c0210f5fb4597269138dbe53268
+    role: context
+scope:
+  description: Exact maintained record and CREATE history reviewed against primary
+    claims and identity authorities.
+  selection: Assigned frozen target; native inspect preceded final field-by-field
+    judgment and source assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:wollastonite
+targets:
+- target_id: cmmmech:wollastonite
+  path: data/records/wollastonite.yaml
+  label: Wollastonite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/wollastonite.yaml
+    role: maintained scientific record
+checks:
+- check_id: named
+  name: Named validation
+  command: uv run --locked cmmmech validate data/records/wollastonite.yaml
+  status: passed
+  required: true
+  summary: Reviewer executed in assigned isolated checkout; one record,zero failed.
+  target_ids:
+  - cmmmech:wollastonite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Batch gate 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T10:07:55.959142+00:00 to 2026-10-14T10:10:54.849862+00:00;
+    receipt and full-log hash independently checked.
+  target_ids:
+  - cmmmech:wollastonite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T10:10:54.849953+00:00 to 2026-10-14T10:11:12.359065+00:00;
+    receipt and full-log hash independently checked.
+  target_ids:
+  - cmmmech:wollastonite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Batch gate 3
+  command: uv run --locked cmmmech validate-history --base e8a5f936607481446e4897e3bf2e0d10f0556632
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T10:11:12.359194+00:00 to 2026-10-14T10:11:20.211887+00:00;
+    receipt and full-log hash independently checked.
+  target_ids:
+  - cmmmech:wollastonite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/wollastonite.yaml
+  locator: Entire frozen record
+  accessed_at: '2026-10-14T10:15:07.163440Z'
+  support: supports
+  summary: Read every field; native inspect preceded final independent source assessment;
+    target and CREATE-sidecar hashes rechecked immediately before saving.
+  snapshot_sha256: f8fd6bf3632e0addf0edbf23e39ac1d81070777688b439d66cad323731757ff4
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September 2026 list definitions pp1-2 and Wollastonite row PDF p235
+  accessed_at: '2026-10-14T10:15:07.163440Z'
+  support: supports
+  summary: Original definitions and relevant row visually inspected. Approved status
+    with literal special-procedure notation is retained rather than transformed into
+    an invented approval identifier.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/wollastonite.pdf
+  locator: Complete two-page wollastonite entry
+  accessed_at: '2026-10-14T10:15:07.163440Z'
+  support: supports
+  summary: Identity and mineral context read. Historical Handbook entry is not evidence
+    of exact experimental polytype or complete phase purity.
+  snapshot_sha256: 5b2fd0e146f71c36d76390ebe6b3d1d39feb26cad1edfe33c27b79d7f5aeaf32
+- evidence_id: taxonomy
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=117680,587851&retmode=xml
+  locator: Official XML entries for NCBI 117680 and 587851
+  accessed_at: '2026-10-14T10:15:07.163440Z'
+  support: supports
+  summary: 'Read retained official taxonomy XML: Pseudomonas reactans is species 117680;
+    Pseudomonas aureofaciens maps to Pseudomonas chlororaphis subsp. aureofaciens
+    587851. Neither entry authenticates an experimental strain.'
+  snapshot_sha256: 93b94e19ce481fa896031ca545f347660f567e9dcb813984b2ddc19120e7a089
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round68-phosphate-crossreview/independent-search.json
+  locator: Independent bounded live search 2026-10-14 UTC
+  accessed_at: '2026-10-14T10:15:07.163440Z'
+  support: context_only
+  summary: Correction/retraction and directly relevant conflict searches found the
+    already-inspected 2010 scientific exchange and distinct mixed-slag follow-up.
+    No affecting correction surfaced in this bounded search; no universal absence
+    asserted.
+  search_scope: Queries and first-result-set scope are preserved in independent-search.json;
+    no date/domain filters or pagination.
+  snapshot_sha256: 92e0f81af7b735438fb0e3e17f5517a209bacc133c0c03275623725723bbbf32
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round68-phosphate-crossreview/dedup.txt
+  locator: Scoped hidden/ignored-inclusive repository and raw-root search
+  accessed_at: '2026-10-14T10:15:07.163440Z'
+  support: context_only
+  summary: Existing references and identity boundaries checked across data/records,
+    research, reviews, history and the shared raw evidence directory, with hidden
+    and ignored files included and relevant symlinks followed.
+  search_scope: rg --no-ignore --hidden --follow; wollastonite|diopside; repository
+    records/research/reviews/history plus /private/tmp/cmm-round68-new-frontier-research.
+    No machinewide absence claim.
+  snapshot_sha256: 67149f23653129a2205f516e978ebf4b02a20148e70fe1449c27ea16e202be48
+- evidence_id: history
+  kind: record_content
+  reference: history/records/wollastonite/2026-10-14T100551Z-codex-096999.yaml
+  locator: Complete CREATE session and inline event
+  accessed_at: '2026-10-14T10:15:07.163440Z'
+  support: supports
+  summary: Actual Codex/GPT-6/codex actor, current UTC events and exact target agree.
+    Reviewer made no scientific-record/history edits.
+  snapshot_sha256: 3e29a95b31c41804939746305e438cb0d6604c0210f5fb4597269138dbe53268
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round68-phosphate-crossreview/wollastonite-validation.log
+  locator: Entire reviewer-executed named validation log
+  accessed_at: '2026-10-14T10:15:07.163440Z'
+  support: supports
+  summary: 'Locked offline validation passed: one record, zero failures.'
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round68-final-gates.json
+  locator: Completed command receipt and hashed full log
+  accessed_at: '2026-10-14T10:15:07.163440Z'
+  support: supports
+  summary: Root executed just check, nonempty corpus validation and trusted-base history
+    check successfully. Reviewer verified all exit codes and full-log SHA before saving.
+  snapshot_sha256: 98a8895b0aa6cd7c11a3a0e92d34f985e8d6985a2de3b3a6bcaf7842a578f477
+- evidence_id: primary
+  kind: primary_source
+  reference: https://ajsonline.org/article/61788.pdf
+  locator: Pokrovsky et al. 2009, DOI10.2475/08.2009.05; bacterial methods printed733-735,739;
+    results754-756; conclusions759-760; Appendix2 p761
+  accessed_at: '2026-10-14T10:15:07.163440Z'
+  support: supports
+  summary: Read bacterial scientific methods/results and comparative abiotic context.
+    Visually inspected PDF pages4,9,24-26,31 including Figures5-6, Table3 and FigureA2.
+    Live/dead cells both yield dissolved Ca/Si; experimental contrasts do not establish
+    universal biological inefficacy.
+  snapshot_sha256: 5158679ad9dc3fccb03b615c3b2ef7172d717282770a8a2c532b6258da35b61d
+- evidence_id: source_limits
+  kind: primary_source
+  reference: https://doi.org/10.2475/08.2009.05
+  locator: Methods pp734-735,739; Figures5-6 and Table3 pp754-756
+  accessed_at: '2026-10-14T10:15:07.163440Z'
+  support: partial
+  summary: Mineral mass/volume does not match claimed loading; SP nutrient pH differs
+    from general Table3; live and dead biomass vary; SA/SP silica rate summaries do
+    not match tabulated logs; silica panel units differ. Record explicitly retains
+    these conflicts and avoids adopted numeric enhancement/yield. Eight combinations
+    are not a declared replicate count.
+  snapshot_sha256: 5158679ad9dc3fccb03b615c3b2ef7172d717282770a8a2c532b6258da35b61d
+- evidence_id: comment
+  kind: primary_source
+  reference: https://ajsonline.org/article/61815.pdf
+  locator: Berner2010 DOI10.2475/05.2010.04; complete one-page comment, printed424
+  accessed_at: '2026-10-14T10:15:07.163440Z'
+  support: context_only
+  summary: Read full comment. Criticism concerns extrapolation to basalt, Fe/Al-containing
+    minerals and soil biota; it is not an independent repeat or invalidation of the
+    exact assay.
+  snapshot_sha256: 66e812409265548b16cb176b22be8c038fa2c6347d21cbc23a40fe9812353556
+- evidence_id: reply
+  kind: primary_source
+  reference: https://ajsonline.org/article/61814.pdf
+  locator: Pokrovsky et al.2010 DOI10.2475/05.2010.05; complete two-page reply, printed425-426
+  accessed_at: '2026-10-14T10:15:07.163440Z'
+  support: context_only
+  summary: Read full reply. Authors acknowledge wollastonite as a misleading general
+    proxy for basic igneous rocks; record correctly retains the narrower tested system.
+  snapshot_sha256: fc338978e451575027b414a6e2efe7736d328a63b01bd28ae425d264f29cbaaf
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Material identity and scope
+  outcome: supported
+  summary: Wollastonite is the mineral CaSiO3, distinct from elemental calcium/silicon,
+    commodities, rocks and secondary feeds. IMA special-procedure notation does not
+    identify a polytype of the assayed natural material.
+  target_ids:
+  - cmmmech:wollastonite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  dimensions:
+  - name: criticality
+    value: No jurisdiction/list/edition designation asserted
+    definition: Constituent criticality is not inherited; omission is not a universal
+      noncriticality assertion.
+    evidence_ids:
+    - record
+- assessment_id: experiment
+  area: evidence
+  topic: Organism, substrate, pretreatment, biomass and controls
+  outcome: supported
+  summary: The record keeps the tested organism and natural substrate tied to the
+    specific controlled laboratory system.
+  target_ids:
+  - cmmmech:wollastonite
+  evidence_ids:
+  - record
+  - primary
+  - source_limits
+  - taxonomy
+  dimensions:
+  - name: organism
+    value: Pseudomonas chlororaphis subsp. aureofaciens; source CNMN PsB-03
+    definition: NCBI587851 name mapping only, not strain authentication.
+    evidence_ids:
+    - primary
+    - taxonomy
+  - name: substrate
+    value: Natural source-assigned wollastonite, sterile 50-100 micrometre powder
+    definition: Complete batch phase purity and exact polytype not established.
+    evidence_ids:
+    - primary
+  - name: biomass_state
+    value: Washed live versus 130 degrees C/30 min heat-killed cells
+    definition: 48 h growth at28 degrees C; SP EPS-rich and SA EPS-poor cultures.
+      Biomass densities are not uniformly matched.
+    evidence_ids:
+    - primary
+    - source_limits
+  - name: conditions
+    value: 25 +/-1 degrees C,120 rpm,up to7 days; nutrient medium or0.01M NaCl
+    definition: 0.5g/250mL versus reported2.5g/L discrepancy retained.
+    evidence_ids:
+    - primary
+    - source_limits
+  - name: controls
+    value: Live/dead comparisons; contamination blanks and separate abiotic mixed-flow
+      context
+    definition: No complete matched biomass-free batch kinetic series asserted.
+    evidence_ids:
+    - primary
+  - name: outcome
+    value: Ca/Si concentration slopes and author interpretation
+    definition: Not isolated product mass, recovery yield or robust common enhancement
+      factor.
+    evidence_ids:
+    - primary
+    - source_limits
+- assessment_id: outcome
+  area: evidence
+  topic: Bounded result and competing explanations
+  outcome: supported
+  summary: Live/dead bacterial dissolution is supported as a tested interaction with
+    limited and uncertain effects. The source interpretation is qualified by conflicting
+    rate summaries and unlike conditions; it is not generalized to all silicates or
+    field biota.
+  target_ids:
+  - cmmmech:wollastonite
+  evidence_ids:
+  - record
+  - primary
+  - source_limits
+  - comment
+  - reply
+  dimensions:
+  - name: deployment
+    value: Laboratory experiments only
+    definition: No mineral-product yield, field extrapolation or industrial deployment
+      claimed.
+    evidence_ids:
+    - record
+    - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Reviewed state, source bounds and actual execution
+  outcome: supported
+  summary: Frozen exact bytes, actual CREATE provenance and completed validation receipts
+    support this independently assessed state.
+  target_ids:
+  - cmmmech:wollastonite
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - search
+  - dedup
+findings: []
+actions: []
+limitations:
+- The natural bacterial-assay material has no independently established exact polytype
+  or complete purity.
+- Source loading, pH, unit and rate-summary discrepancies remain unresolved; numerical
+  rates or a pooled enhancement are not adopted.
+- Live/dead biomass and nutrient conditions are not uniformly matched, and independent
+  reactor replication is unclear.
+- This review assessed the bacterial claims, claim-bearing methods/results/figures
+  and the full comment/reply; it did not recalculate the full 42-page paper's unrelated
+  ligand dataset.
+- No field efficacy, carbon sequestration or industrial product recovery is established.
+notes:
+- No supported corrective finding on the inspected frozen state.
+- Bounded search does not certify absence of all other papers or corrections.
+- Raw source artifacts remain outside Git; schema validation is not independent experimental
+  replication.
+tags:
+- round68
+- independent
+- wollastonite
+- primary-figures

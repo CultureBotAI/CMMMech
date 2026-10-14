@@ -1,0 +1,95 @@
+{
+  "reviewed_at": "2026-10-14T10:09:38.232878+00:00",
+  "reviewer": "codex /root/round68_iron_sulfides",
+  "independence": "Authored nickel-sulfide records; did not author the operational helpers. No independent scientific endorsement of own records.",
+  "base": "e8a5f936607481446e4897e3bf2e0d10f0556632",
+  "scope": "Static adversarial review of all 11 named root-owned publication helpers plus AST parse; no execution of publication mutations.",
+  "helpers": [
+    {
+      "path": "/private/tmp/cmm-round68-gates.py",
+      "sha256": "d4823aa330d614d04dcb383a87d0a8a9388b773871fb040ac0e90bf85c77862c",
+      "syntax": "pass",
+      "stale_round_matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round68-isolated-coverage.py",
+      "sha256": "7515a37ab51fe0006e83d24c562337cc1f73c4387f3f5bb09f7f7ed5174cac52",
+      "syntax": "pass",
+      "stale_round_matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round68-isolated-verification.py",
+      "sha256": "063d19b224511c4b1f6ce2985de9ba84ccdbe697bc7cf8c9dcf521321766b672",
+      "syntax": "pass",
+      "stale_round_matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round68-integration-check.py",
+      "sha256": "6cd989cfa07587de95df862eb9de4037952002c67d5c9b5655bb880581983aca",
+      "syntax": "pass",
+      "stale_round_matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round68-preservation-check.py",
+      "sha256": "fd1bc9f22565ede098959a2205ddd74319f4ac52808a4ce07dd593abe227b934",
+      "syntax": "pass",
+      "stale_round_matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round68-open-pr.py",
+      "sha256": "c5f99270c973cd21469f78606cb24cedbcea20975141e214c99d733bf569388b",
+      "syntax": "pass",
+      "stale_round_matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round68-post-review.py",
+      "sha256": "310b6eae0139e294d5596ce0eedb08f8eaf695ac376445d9ba6b9362a63d27a8",
+      "syntax": "pass",
+      "stale_round_matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round68-enqueue.py",
+      "sha256": "2bc94b0545099ace3ba03852af39a15f4272c410a801dbbdaa4bcdbe968aff0c",
+      "syntax": "pass",
+      "stale_round_matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round68-cleanup.py",
+      "sha256": "69d0954feff79eddd6181fe6d69bcd6c7ed417698972667ed1301d4dbc32669a",
+      "syntax": "pass",
+      "stale_round_matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round68-sync-main.py",
+      "sha256": "36b27be46b20dfa344d129a0aa5e933f1897f5bfc3e04f5dbc9545e609de4b7c",
+      "syntax": "pass",
+      "stale_round_matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round68-hosted-audit.py",
+      "sha256": "d72e2bd018ea02221f54062e515f52c434e56f60d61a0c61e3ce780bbb049cf4",
+      "syntax": "pass",
+      "stale_round_matches": []
+    }
+  ],
+  "findings": [],
+  "verdict": "pass_with_limitations",
+  "checks": [
+    "Round68 paths, branch and trusted base match current task",
+    "Exact commit/head/tree checks before normal push and PR creation",
+    "Posted COMMENT bound to exact head and approved final body",
+    "Queue preflight verifies exact base/head/tree, required commands and log hash; checks live main immediately before native queue request",
+    "No administrative merge bypass: SQUASH/ALLGREEN active rules and required validate-strict checked",
+    "Cleanup verifies actual merged tree/base and owned refs, protects remote deletion with exact-head lease",
+    "Fresh clone preflight and postmerge exclude topic object and require retained base/tag availability",
+    "Exact scientific coverage tests target ID/path/hash, completed scientific positive verdict, with native review checker handling contract/finding rules",
+    "Preservation checks compare hidden/ignored files, modes and symlink targets for original main and unrelated dirty worktree",
+    "Postmerge hosted audit pins actual sole parent/tree, five workflow identities and all jobs before original main fast-forward"
+  ],
+  "limitations": [
+    "Static audit does not attest to future receipt contents or currently absent helper configuration",
+    "Exact-head hosted PR audit and actual remote execution remain required",
+    "Cleanup helper itself checks first parent; the later hosted audit explicitly requires the sole parent, and all hosted checks precede main synchronization",
+    "Assertions require ordinary Python execution without optimization; coordinator invokes python3 normally"
+  ]
+}
