@@ -1,0 +1,463 @@
+schema_version: 1.0.0
+review_id: 20261014T063915Z-lepidocrocite-round64-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: 'Independent scientific review of lepidocrocite: retain the survey sterile
+  control'
+started_at: '2026-10-14T06:34:43Z'
+finished_at: '2026-10-14T06:39:15.027835Z'
+reviewer:
+  identity: codex /root/round64_lithium
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from /root/round64_iron, who authored this record
+    and source dossier. This reviewer did not edit lepidocrocite, its history or dossier
+    and independently read original methods, results, tables, figures and authority
+    evidence. The reviewer curated unrelated feroxyhyte; it is outside this observation.
+skill: .claude/skills/review-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The species identity, source-bounded formate experiment, measurements and
+  comparative limitations are supported. One minor completeness finding requires retaining
+  the actual donor-survey sterile-control curve without converting it to an undocumented
+  matched formate control. Named/history checks passed; final batch gates are running
+  and unavailable at this observation, so completion is partial.
+source:
+  git_revision: 0f4d8ff9e4919714e3dd902dc3573e95922a65fb
+  state: working_tree
+  inputs:
+  - path: .claude/skills/review-record/SKILL.md
+    sha256: abe8f0aebf9540aaaf5d2e2c2b43a4b17b7d5963d04e084b65e1ada19f4eb6be
+    role: context
+  - path: data/records/lepidocrocite.yaml
+    sha256: 681ba61c18ac326fffc9ee99ecece212fe5458895c12753cd3206536969313a3
+    role: target
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/lepidocrocite/2026-10-14T062537Z-codex-aae07d.yaml
+    sha256: 80a138638db255697e882670ac57ebb939537ceb662b9fc787cd5ea9e6685fdf
+    role: context
+  - path: research/sources/round64-iron/20261014T062830Z-source-investigation.json
+    sha256: 1240f681667b6eb96a4d55b6d07d4f7664acb905987240579158d45b9e021f39
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: All fields of the exact frozen lepidocrocite record, CREATE provenance
+    and supporting original evidence; no target-field sampling. Scientific assessment
+    is complete, while final batch checks are pending.
+  selection: Exact assignment cmmmech:lepidocrocite at data/records/lepidocrocite.yaml.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:lepidocrocite
+  exclusions:
+  - target: Other mineral records and future primary leads
+    reason: Not targets of this record observation; experiments in other feeds are
+      not silently imported.
+  - target: Full inherited basal-medium and inoculum recipes
+    reason: Referenced originals not acquired; the target preserves this limitation
+      and does not assert their full composition.
+targets:
+- target_id: cmmmech:lepidocrocite
+  path: data/records/lepidocrocite.yaml
+  label: Lepidocrocite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lepidocrocite.yaml
+    role: maintained
+checks:
+- check_id: named
+  name: Reviewer named validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 PYTHONDONTWRITEBYTECODE=1
+    uv run --locked cmmmech validate data/records/lepidocrocite.yaml
+  status: passed
+  required: true
+  summary: Executed by reviewer, 2026-10-14T06:35:48.916305+00:00 to 2026-10-14T06:35:57.667560+00:00;
+    exit 0. Log /private/tmp/cmm-round64-lepidocrocite-review/named.log, SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e.
+  target_ids:
+  - cmmmech:lepidocrocite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - checks
+- check_id: history
+  name: Reviewer history validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 PYTHONDONTWRITEBYTECODE=1
+    uv run --locked cmmmech validate-history --base 0f4d8ff9e4919714e3dd902dc3573e95922a65fb
+  status: passed
+  required: true
+  summary: Executed by reviewer, 2026-10-14T06:35:57.668476+00:00 to 2026-10-14T06:36:13.307717+00:00;
+    exit 0. Log /private/tmp/cmm-round64-lepidocrocite-review/history.log, SHA256
+    c848103fbbc2eba28d3ebd20cfb8ed459ca3780c20c22e2634514ae5c10bae12.
+  target_ids:
+  - cmmmech:lepidocrocite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - checks
+- check_id: batch
+  name: Coordinator final batch gate
+  command: just check
+  status: unavailable
+  required: true
+  summary: The coordinator batch run is still in progress at this observation; no
+    completed final result exists yet. A successor observation must inspect actual
+    final receipts after the proposed correction. No unexecuted command is represented
+    as a reviewer check.
+  target_ids:
+  - cmmmech:lepidocrocite
+- check_id: nonempty
+  name: Coordinator final nonempty gate
+  command: uv run --locked cmmmech validate --require-records
+  status: unavailable
+  required: true
+  summary: The coordinator batch run is still in progress at this observation; no
+    completed final result exists yet. A successor observation must inspect actual
+    final receipts after the proposed correction. No unexecuted command is represented
+    as a reviewer check.
+  target_ids:
+  - cmmmech:lepidocrocite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/lepidocrocite.yaml
+  locator: All fields at captured hash
+  accessed_at: '2026-10-14T06:39:15.027835Z'
+  support: supports
+  summary: Read all fields of the new mineral record. The target is uncommitted in
+    the shared worktree; it was not authored or edited by this reviewer.
+  snapshot_sha256: 681ba61c18ac326fffc9ee99ecece212fe5458895c12753cd3206536969313a3
+- evidence_id: history
+  kind: record_content
+  reference: history/records/lepidocrocite/2026-10-14T062537Z-codex-aae07d.yaml
+  locator: Entire CREATE sidecar and linked inline curation event
+  accessed_at: '2026-10-14T06:39:15.027835Z'
+  support: supports
+  summary: Actor, actual UTC timestamp, target, CREATE details and reference agree
+    with present curation, without claiming older authorship.
+  snapshot_sha256: 80a138638db255697e882670ac57ebb939537ceb662b9fc787cd5ea9e6685fdf
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/min9070434
+  locator: Complete original available as 30-page publisher and 29-page OSTI1560537
+    PDF; Sections 2.1–2.3, 3.1–3.3, Discussion and references; Figures 1–6; Tables
+    1–3
+  accessed_at: '2026-10-14T06:39:15.027835Z'
+  support: supports
+  summary: Independently read original methods, relevant donor results and discussion,
+    and visually inspected all Figures 1–6 plus Tables 1–3. Full-width OSTI Table
+    1 confirms day-62 formate values and assay fractions. Table 2 fits retain ferric
+    as well as ferrous green-rust components. Figure 6 compares the starting and changing
+    phase patterns. This is one experiment across two document copies, not replication.
+  snapshot_sha256: 50a4aad7a4b7d51938ebe20bf3c63210843b3682d5cc78e9e5d9d6743f6b31f5
+- evidence_id: sterile_curve
+  kind: primary_source
+  reference: https://www.osti.gov/servlets/purl/1560537
+  locator: Original PDF page 5, Figure 1 legend and open-circle trace
+  accessed_at: '2026-10-14T06:39:15.027835Z'
+  support: partial
+  summary: Figure 1 explicitly plots a sterile control with Fe(II) near the baseline,
+    separately from the filled-circle no-electron-donor culture. Its exact donor/amendment
+    correspondence to the focused formate chloride/sulfate systems is not specified.
+    This negative comparator is absent from the record control summary. No endpoint
+    was digitized.
+  snapshot_sha256: f8ffdfb2871d0f4dcc187bf453806c7c1dfc59d3606a7eb985a8baa34bd24f12
+- evidence_id: comparative
+  kind: primary_source
+  reference: https://doi.org/10.3389/fmicb.2023.1272245
+  locator: Original methods, Cell growth on akaganeite and lepidocrocite, Figures
+    5–8 and Discussion; supplement Figures S12 and S16
+  accessed_at: '2026-10-14T06:39:15.027835Z'
+  support: supports
+  summary: Read the original methods and relevant results and independently viewed
+    original Figures 5–8 and S12/S16. Ax17 at 55 degrees C with H2 and synthetic nanophase
+    feed has heated/unheated controls and an oxalate extraction limitation. Lepidocrocite
+    Mossbauer spectra remain nearly unchanged; bulk XRD is unavailable. S16 inconsistently
+    says lepidocrocite but depicts/describes akaganeite. The record correctly keeps
+    these as distinct comparative context, not direct refutation or positive phase
+    proof.
+  snapshot_sha256: d36613a038eccc0f05dc944e09ced3920940e32360b765d318484154d54f26c6
+- evidence_id: mineral
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Original PDF pages 1 and 124, status definitions and Lepidocrocite row
+  accessed_at: '2026-10-14T06:39:15.027835Z'
+  support: supports
+  summary: 'Viewed the IMA row and definitions: Fe3+O(OH), status A, 1980 s.p. The
+    date denotes special-procedure history and does not supply an approval-number
+    CURIE. Mineral identity is distinct from constituent iron, commodities and experimental
+    preparations. No criticality claim is imported.'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: taxon
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=319224
+  locator: Live browser identity and same-round official XML ScientificName/TaxId/Rank
+  accessed_at: '2026-10-14T06:39:15.027835Z'
+  support: supports
+  summary: NCBI319224 denotes the named CN-32 strain. The browser indexes no rank
+    whereas fresh XML reports strain; the label and lineage agree. Identity grounding
+    does not authenticate the experimental stock.
+  snapshot_sha256: 8de6ac66eb65af66efa3115fce5deaf9132ff4ad27428e909ea9cd13a626707d
+- evidence_id: atcc_cn32
+  kind: authority
+  reference: https://www.atcc.org/products/baa-453
+  locator: Official same-round HTML, product and strain-designation fields
+  accessed_at: '2026-10-14T06:39:15.027835Z'
+  support: supports
+  summary: Independently read the retained official product record identifying S.
+    putrefaciens CN-32 as BAA-453.
+  snapshot_sha256: 77741f65aa58d00f6406d9033f7f42d90e3211a4d0f4ca3969d9a0fd6c7ef5fe
+- evidence_id: atcc_other
+  kind: authority
+  reference: https://www.atcc.org/products/baa-543
+  locator: Official same-round HTML, product and strain-designation fields
+  accessed_at: '2026-10-14T06:39:15.027835Z'
+  support: supports
+  summary: Independently read the retained official product record identifying BAA-543
+    as Cellulomonas sp. ES5. The original 2019 paper prints this mismatched accession
+    beside CN32; the maintained record explicitly preserves that limitation.
+  snapshot_sha256: db8046e6456b3fa97383e00498b6a58a7245036b5cb18fe523c54575611a51bd
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round64-iron/20261014T062830Z-source-investigation.json
+  locator: Entire curator dossier and retained acquisition manifests
+  accessed_at: '2026-10-14T06:39:15.027835Z'
+  support: supports
+  summary: Checked acquisition and source boundaries and independently verified all
+    71 listed raw/reused artifact hashes. Inherited complete DMM/inoculum recipes
+    were not recovered; no uninspected recipe details were accepted. The characterization
+    reference 28 is an akaganeite paper, as the record acknowledges.
+  snapshot_sha256: 1240f681667b6eb96a4d55b6d07d4f7664acb905987240579158d45b9e021f39
+- evidence_id: search
+  kind: search
+  reference: Web search and hidden/ignored-inclusive local search
+  locator: Reviewer queries and bounded returned sets
+  accessed_at: '2026-10-14T06:39:15.027835Z'
+  support: context_only
+  summary: Exact DOI correction/erratum/retraction searches for both cited papers
+    did not identify an affecting notice in the returned sets. Related primary results
+    include 2013 bound-phosphate and 2021 phosphate experiments, consistent with condition-dependent
+    rather than universal products. MDPI HTML failed; complete retained originals
+    supplied evidence. Live Frontiers article and NCBI identity were accessible. Local
+    search found related phase mentions but no competing maintained owner of the new
+    lepidocrocite record in the selected roots.
+  snapshot_sha256: af0ee6a7de5c62ae75adefee994b340f4aec12d4da15edf0bc8956bea4756c56
+  search_scope: 'Web queries: "10.3390/min9070434" correction OR erratum OR retraction;
+    "10.3389/fmicb.2023.1272245" correction OR erratum OR retraction; lepidocrocite
+    Shewanella putrefaciens CN32 formate abiotic green rust O Loughlin 2019. First
+    returned result sets only, no pagination. Local rg --no-ignore --hidden -l -i
+    lepidocrocite|min9070434|1272245 across data/research/reviews/history and round14
+    mineral, round64 iron and round20 goethite raw roots; 62 files. Hidden and ignored
+    files included; unextracted binaries and unrelated directories excluded. A separate
+    broad /private/tmp filename scan was interrupted with no output and is not an
+    absence basis.'
+- evidence_id: checks
+  kind: validation
+  reference: /private/tmp/cmm-round64-lepidocrocite-review/checks.json
+  locator: Reviewer named-record and trusted-base history validation receipts
+  accessed_at: '2026-10-14T06:39:15.027835Z'
+  support: supports
+  summary: Actual named validation passed (1 record, 0 failed); trusted-base history
+    validation passed (342 histories, 0 errors). These structural checks do not certify
+    scientific truth.
+  snapshot_sha256: 8301a25f1c43e5b3939a8c96baa8d2f7f7f21bfef410408029818d7974610d40
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral species and criticality scope
+  outcome: supported
+  summary: The IMA species, ideal formula and special-procedure date are represented
+    correctly; no elemental criticality or approval identifier is invented.
+  target_ids:
+  - cmmmech:lepidocrocite
+  evidence_ids:
+  - record
+  - mineral
+  dimensions:
+  - name: material_form
+    value: Recognized lepidocrocite species; experimental feed Bayferrox943 commercial
+      material
+    definition: Species identity is kept separate from the experimental preparation
+      and secondary products.
+    evidence_ids:
+    - mineral
+    - primary
+  - name: criticality
+    value: Not asserted
+    definition: No authority, jurisdiction, list or edition is claimed for this mineral.
+    evidence_ids:
+    - record
+- assessment_id: organism
+  area: grounding
+  topic: Named organism versus conflicting stock accession
+  outcome: supported
+  summary: NCBI319224 grounds CN-32 and the record retains the BAA-543 versus BAA-453
+    conflict without claiming authentication.
+  target_ids:
+  - cmmmech:lepidocrocite
+  evidence_ids:
+  - primary
+  - taxon
+  - atcc_cn32
+  - atcc_other
+  dimensions:
+  - name: organism
+    value: Reported S. putrefaciens CN32; NCBITaxon319224 named strain
+    definition: Mapping of the repeated paper name; conflicting collection number
+      remains unresolved.
+    evidence_ids:
+    - taxon
+    - atcc_cn32
+    - atcc_other
+  - name: biomass_state
+    value: Late-log inoculum; culture incubation
+    definition: Living culture setup, not dead biomass or purified enzyme.
+    evidence_ids:
+    - primary
+- assessment_id: mechanism
+  area: evidence
+  topic: Formate experiment and material transformation
+  outcome: supported
+  summary: Original methods and phase data support conditional laboratory culture-associated
+    transformation.
+  target_ids:
+  - cmmmech:lepidocrocite
+  evidence_ids:
+  - primary
+  - record
+  details: Triplicate 200 mL cultures in 250 mL bottles with 80 mM FeIII, 75 mM formate,
+    100 micromolar AQDS, 25 mM NaCl or Na2SO4, initial pH7.5, argon and dark rolling
+    at 30 degrees C. The formate endpoints are day62. Measured total FeII is one-week
+    0.75 M HCl extraction; aqueous FeII is the 0.22 micrometre filtrate. The inherited
+    medium and inoculum recipes and initial material-characterization citation remain
+    limited. No isolated product, direct enzyme pathway or industrial use is asserted.
+- assessment_id: quantities
+  area: quantity
+  topic: FeII analytical fractions, endpoints and modeled phases
+  outcome: supported
+  summary: Table 1 values match exactly; phase fits and simulated carbonate activities
+    are not recast as recovered product or measured carbonate.
+  target_ids:
+  - cmmmech:lepidocrocite
+  evidence_ids:
+  - primary
+  details: Formate/chloride total FeII57.6 +/-0.2 mM versus aqueous0.8 +/-0.1 mM;
+    formate/sulfate total55.1 +/-2.4 versus aqueous0.7 +/-0.1 mM. Green rust retains
+    ferric Fe, so the day55 plateau and disappearance of detectable starting phase
+    are not 100% ferric reduction. No plotted endpoint was digitized.
+- assessment_id: control_scope
+  area: completeness
+  topic: Reported negative controls
+  outcome: concern
+  summary: The existing caveats are sound, but Figure 1 sterile-control evidence is
+    omitted while other comparators are summarized.
+  target_ids:
+  - cmmmech:lepidocrocite
+  evidence_ids:
+  - primary
+  - sterile_curve
+  details: The figure explicitly has a sterile curve near baseline. Its donor and
+    salt correspondence are unspecified, so retaining it does not justify calling
+    it a matched formate chloride/sulfate control. This is a bounded omission, not
+    a reversal of the claimed mechanism.
+- assessment_id: comparative_scope
+  area: scope
+  topic: Contradictory and conditional evidence
+  outcome: supported
+  summary: The record preserves 2023 Ax17 analytical/phase limits and keeps unlike
+    organisms, feeds and methods separate.
+  target_ids:
+  - cmmmech:lepidocrocite
+  evidence_ids:
+  - comparative
+  - primary
+  details: The oxalate null does not establish no reduced phase; S12 largely unchanged
+    spectra and unavailable lepidocrocite bulk XRD constrain interpretation. The ambiguous
+    S16 panel is appropriately withheld from lepidocrocite phase proof. The 2019 Pd/H2/AQDS
+    surrogate can form green rust without cells but is not a formate chemistry match.
+- assessment_id: provenance
+  area: provenance
+  topic: History and uncommitted working state
+  outcome: supported
+  summary: The inspected input hashes and actual CREATE provenance are sound; deterministic
+    checks passed.
+  target_ids:
+  - cmmmech:lepidocrocite
+  evidence_ids:
+  - history
+  - record
+  - checks
+  - dossier
+findings:
+- finding_id: F1
+  issue_key: lepidocrocite-2019-sterile-survey-control-omission
+  category: completeness
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Retain the donor-survey sterile-control curve
+  description: The control summary mentions no-donor cultures and the separate Pd/H2
+    abiotic surrogate but omits Figure 1's explicitly labelled sterile-control FeII
+    curve near baseline. Add this available negative comparator and retain the unknown
+    donor/salt correspondence. The paper does not establish that it is a matched control
+    for the focused formate chloride/sulfate arms, so do not remove the specific matched-control
+    caveat or fabricate endpoint concentrations.
+  target_ids:
+  - cmmmech:lepidocrocite
+  field_paths:
+  - mechanisms[cn32_formate_lepidocrocite_transformation].context
+  - mechanisms[cn32_formate_lepidocrocite_transformation].evidence
+  evidence_ids:
+  - sterile_curve
+  - primary
+  - record
+  rule_id: native-review-record-controls
+  native_severity: minor
+  normalization_reason: 'Native minor maps directly to shared minor: a bounded omitted
+    comparator without materially unsupported quantitative or mechanistic claims.'
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lepidocrocite.yaml
+    role: maintained
+actions:
+- action_id: A1
+  description: Add the Figure 1 sterile-control observation and its unresolved condition
+    matching to the maintained record; append actual correction history and reassess
+    the final bytes.
+  finding_ids:
+  - F1
+  target_ids:
+  - cmmmech:lepidocrocite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lepidocrocite.yaml
+    role: maintained
+  acceptance_checks:
+  - Record retains the near-baseline sterile curve qualitatively, without an invented
+    numerical endpoint.
+  - Record explicitly preserves that its donor/salt matching to focused formate arms
+    is unspecified.
+  - Named validation, trusted-base history, affected batch/review checks and a successor
+    review pass with the final hash.
+limitations:
+- Final coordinator batch/nonempty gates are still running or awaiting completion;
+  this observation does not certify them.
+- Experimental stock identity remains uncertain because the repeated CN32 name conflicts
+  with the printed ATCC accession.
+- Inherited recipe and characterization references are incomplete or mismatched; the
+  record does not reconstruct uninspected details.
+- The survey sterile-control conditions are not sufficiently specified to establish
+  matching to focused formate arms.
+- Bounded notice/search coverage is not a universal absence claim; publisher HTML
+  was unavailable but complete originals were inspected.
+tags:
+- round64
+- lepidocrocite
+- independent
+- controls

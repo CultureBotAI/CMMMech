@@ -34,9 +34,9 @@
   <div>
     <label for="record-kind">Material Kind</label>
     <select id="record-kind">
-      <option value="">All kinds (96)</option>
+      <option value="">All kinds (101)</option>
       <option value="element">Element (64)</option>
-      <option value="mineral">Mineral (96)</option>
+      <option value="mineral">Mineral (101)</option>
       <option value="secondary_resource">Secondary resource (67)</option>
       <option value="commodity">Commodity (32)</option>
       <option value="primary_resource">Primary resource (25)</option>
@@ -48,8 +48,8 @@
     <select id="record-mechanism">
       <option value="">All processes</option>
       <option value="bioleaching">Bioleaching (119)</option>
-      <option value="biomineralization">Biomineralization (38)</option>
-      <option value="redox_transformation">Redox transformation (26)</option>
+      <option value="biomineralization">Biomineralization (39)</option>
+      <option value="redox_transformation">Redox transformation (30)</option>
       <option value="biosorption">Biosorption (12)</option>
       <option value="separation">Separation (10)</option>
       <option value="recovery">Recovery (8)</option>
@@ -66,7 +66,7 @@
   <button type="reset">Clear filters</button>
 </form>
 
-<p id="record-count" role="status" aria-live="polite">96 materials</p>
+<p id="record-count" role="status" aria-live="polite">101 materials</p>
 <p id="record-empty" hidden>No materials match your query or filters. Clear filters to show all.</p>
 
 <div class="record-table-scroll" role="region" aria-label="Materials table" tabindex="0">
@@ -83,6 +83,35 @@
     </tr>
   </thead>
   <tbody>
+    <tr data-kind="mineral"
+        data-mechanisms="redox_transformation"
+        data-critical="false"
+        data-search="akaganeite akaganeite mineral akaganeite is a distinct iron oxyhydroxide mineral species, listed with formula (fe(iii),ni(ii))8(oh,o)16cl1.25·nh2o, renamed status (rn), and ima number 1962-004 in the september 2026 ima master list. the experimental abbreviation beta-feooh identifies the synthetic phase assignment used by the study; it does not establish the ideal ima composition or nickel content of that preparation. this record is separate from iron element, other iron oxyhydroxide species, iron-ore commodities, and mixed waste feeds. no constituent criticality designation is inherited. ima:1962-004 akaganeite redox_transformation geobacter sulfurreducens pca ncbitaxon:243231">
+      <td>
+        <a href="../materials/akaganeite.html"><strong>Akaganeite</strong></a>
+        <p class="record-desc">Akaganeite is a distinct iron oxyhydroxide mineral species, listed with formula (Fe(III),Ni(II))8(OH,O)16Cl1.25·nH2O, renamed status (Rn), and IMA number 1962-004 in the September 2026 IMA master list. The experimental abbreviation beta-FeOOH identifies the synthetic phase assignment used by the study; it does not establish the ideal IMA composition or nickel content of that preparation. This record is separate from iron element, other iron oxyhydroxide species, iron-ore commodities, and mixed waste feeds. No constituent criticality designation is inherited.</p>
+      </td>
+      <td>
+        <span class="badge">mineral</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Geobacter sulfurreducens PCA</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>IMA:1962-004</code></div>
+      </td>
+    </tr>
     <tr data-kind="mineral"
         data-mechanisms=""
         data-critical="false"
@@ -269,6 +298,35 @@
           <li>Aspergillus niger</li>
           <li>Serpula himantioides</li>
           <li>Paraconiothyrium sp. WL-2</li>
+        </ul>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="mineral"
+        data-mechanisms="biomineralization"
+        data-critical="false"
+        data-search="bixbyite-(mn) bixbyite-mn mineral bixbyite-(mn) is the mn(iii)-dominant member of the bixbyite series, with ideal formula mn2o3 under ima-cnmnc decision 21-h. it is listed as redefined by a 2021 special procedure in the september 2026 list. it is distinct from the fe-dominant species bixbyite-(fe), the broader bixbyite structural series, elemental manganese and mno2 minerals. the laboratory culture product below was assigned only as bixbyite-like mn oxide by its authors. its placement here expresses the mn-rich structural analogy, not a retrospective certification of pure natural bixbyite-(mn). no criticality designation is inherited from manganese. biomineralization mesorhizobium australicum ncbitaxon:536018">
+      <td>
+        <a href="../materials/bixbyite-mn.html"><strong>Bixbyite-(Mn)</strong></a>
+        <p class="record-desc">Bixbyite-(Mn) is the Mn(III)-dominant member of the bixbyite series, with ideal formula Mn2O3 under IMA-CNMNC decision 21-H. It is listed as redefined by a 2021 special procedure in the September 2026 list. It is distinct from the Fe-dominant species bixbyite-(Fe), the broader bixbyite structural series, elemental manganese and MnO2 minerals. The laboratory culture product below was assigned only as bixbyite-like Mn oxide by its authors. Its placement here expresses the Mn-rich structural analogy, not a retrospective certification of pure natural bixbyite-(Mn). No criticality designation is inherited from manganese.</p>
+      </td>
+      <td>
+        <span class="badge">mineral</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biomineralization</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Mesorhizobium australicum</li>
         </ul>
       </td>
       <td>
@@ -872,6 +930,35 @@ The species identity and culture-associated phase occurrence are curated here wi
       </td>
       <td>
         <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="mineral"
+        data-mechanisms="redox_transformation"
+        data-critical="false"
+        data-search="feroxyhyte feroxyhyte mineral feroxyhyte is the iron(iii) oxyhydroxide mineral species fe3+o(oh), listed as approved with ima number 1975-032 in the september 2026 ima-cnmnc list. the curated experiment used chemically synthesized feroxyhyte, described as delta-prime feooh, rather than a natural ore. this mineral identity is distinct from other feooh polymorphs, elemental iron and the mixed secondary solids formed during the experiment. no constituent-element criticality or industrial recovery is inferred. ima:1975-032 feroxyhyte redox_transformation shewanella putrefaciens cn-32 ncbitaxon:319224">
+      <td>
+        <a href="../materials/feroxyhyte.html"><strong>Feroxyhyte</strong></a>
+        <p class="record-desc">Feroxyhyte is the iron(III) oxyhydroxide mineral species Fe3+O(OH), listed as approved with IMA number 1975-032 in the September 2026 IMA-CNMNC list. The curated experiment used chemically synthesized feroxyhyte, described as delta-prime FeOOH, rather than a natural ore. This mineral identity is distinct from other FeOOH polymorphs, elemental iron and the mixed secondary solids formed during the experiment. No constituent-element criticality or industrial recovery is inferred.</p>
+      </td>
+      <td>
+        <span class="badge">mineral</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Shewanella putrefaciens CN-32</li>
+        </ul>
+      </td>
+      <td>
+        <div><code>IMA:1975-032</code></div>
       </td>
     </tr>
     <tr data-kind="mineral"
@@ -1501,6 +1588,35 @@ The species identity and bounded starting-phase context are curated without a mi
       </td>
     </tr>
     <tr data-kind="mineral"
+        data-mechanisms="redox_transformation"
+        data-critical="false"
+        data-search="lepidocrocite lepidocrocite mineral lepidocrocite is the fe(iii)o(oh) mineral species listed as approved (a), with 1980 special-procedure history, in the september 2026 ima master list. the 1980 s.p. entry is not an approval-number curie. this species is distinct from goethite, akaganeite, iron element, iron-ore commodities, and the chemically prepared or commercial laboratory feeds discussed below. no iron criticality designation is inherited. redox_transformation shewanella putrefaciens cn-32 ncbitaxon:319224">
+      <td>
+        <a href="../materials/lepidocrocite.html"><strong>Lepidocrocite</strong></a>
+        <p class="record-desc">Lepidocrocite is the Fe(III)O(OH) mineral species listed as approved (A), with 1980 special-procedure history, in the September 2026 IMA master list. The 1980 s.p. entry is not an approval-number CURIE. This species is distinct from goethite, akaganeite, iron element, iron-ore commodities, and the chemically prepared or commercial laboratory feeds discussed below. No iron criticality designation is inherited.</p>
+      </td>
+      <td>
+        <span class="badge">mineral</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Shewanella putrefaciens CN-32</li>
+        </ul>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="mineral"
         data-mechanisms="biomineralization"
         data-critical="false"
         data-search="lindbergite lindbergite mineral lindbergite is the approved manganese oxalate dihydrate mineral, mn(c2o4)(h2o)2, ima 2003-029. the authoritative mineral description assigns monoclinic symmetry and space group c2/c. it is distinct from elemental manganese, natural manganese nodules, the orthorhombic manganese oxalate dihydrate polymorph, and the trihydrate falottaite. no criticality designation is inherited from manganese. biomineralization aspergillus niger serpula himantioides ncbitaxon:5061 ncbitaxon:80602">
@@ -1643,6 +1759,35 @@ The species identity and bounded starting-phase context are curated without a mi
           <li>Coniophora puteana</li>
           <li>Serpula lacrymans</li>
           <li>+1 more</li>
+        </ul>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
+    <tr data-kind="mineral"
+        data-mechanisms="redox_transformation"
+        data-critical="false"
+        data-search="manganite manganite mineral manganite is the manganese(iii) oxide hydroxide mineral mno(oh), listed as grandfathered in the september 2026 ima-cnmnc list. the year 1826 is its historical date, not an ima approval accession. it is distinct from elemental manganese, manganese ore, the mno2 minerals pyrolusite and ramsdellite, and other mnooh polymorphs. the experiment below used laboratory-prepared material assigned to manganite by the source, not natural ore or a certified phase-pure mineral reference. no criticality designation is inherited from manganese. redox_transformation shewanella sp. mr-4 ncbitaxon:60480">
+      <td>
+        <a href="../materials/manganite.html"><strong>Manganite</strong></a>
+        <p class="record-desc">Manganite is the manganese(III) oxide hydroxide mineral MnO(OH), listed as grandfathered in the September 2026 IMA-CNMNC list. The year 1826 is its historical date, not an IMA approval accession. It is distinct from elemental manganese, manganese ore, the MnO2 minerals pyrolusite and ramsdellite, and other MnOOH polymorphs. The experiment below used laboratory-prepared material assigned to manganite by the source, not natural ore or a certified phase-pure mineral reference. No criticality designation is inherited from manganese.</p>
+      </td>
+      <td>
+        <span class="badge">mineral</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Shewanella sp. MR-4</li>
         </ul>
       </td>
       <td>

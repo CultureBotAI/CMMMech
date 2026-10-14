@@ -1,0 +1,520 @@
+schema_version: 1.0.0
+review_id: 20261014T064301Z-bixbyite-mn-round64-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of T-G1-associated bixbyite-like manganese oxide
+  formation
+started_at: '2026-10-14T06:33:28.271452Z'
+finished_at: '2026-10-14T06:43:01.922172Z'
+reviewer:
+  identity: codex /root/round64_iron
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/round64_manganese. Reviewer
+    authored the unrelated akaganeite and lepidocrocite records in this batch, but
+    did not author or edit this record, its canonical history or source dossier. Personally
+    inspected the cited original evidence and authority entries; native inspection
+    preceded the scientific assessment.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The record correctly uses modern bixbyite-(Mn) identity while preserving
+  the original product as only bixbyite-like. Primary methods, all figures and supplementary
+  Table S1 support the narrow acidic culture-associated formation observation. Neutral-pH
+  particle absence, uncertain phase purity/harvest metadata and nonunique enzyme associations
+  remain explicit. No supported curation defect was identified.
+source:
+  git_revision: 0f4d8ff9e4919714e3dd902dc3573e95922a65fb
+  state: working_tree
+  inputs:
+  - path: data/records/bixbyite-mn.yaml
+    sha256: 780ff493d1c916565044bdb1bfc92fda61d70e669e40cb530d6ae4fab03567f6
+    role: target
+  - path: history/records/bixbyite-mn/2026-10-14T062933Z-codex-7c115e.yaml
+    sha256: 0d8f563b690a0c88a97785c6f9985fa466fdcdaf1762002fcfeee167ffd059a3
+    role: context
+  - path: research/sources/round64-manganese/20261014T063052Z-bixbyite-mn-source-investigation.json
+    sha256: 4f305d45750c7c3746678e87b1a01e4291b311c539fa131e017a41e6f0901576
+    role: context
+  - path: research/sources/round64-manganese/20261014T063052Z-bixbyite-mn-source-investigation.md
+    sha256: ddbf8ca17c396eff9587ac495a2a17395304d87b0e19283982e54de02a9034fb
+    role: context
+scope:
+  description: Full field-by-field scientific review of the exact maintained record
+    and linked CREATE history, with independent original-source and authority inspection.
+  selection: Assigned path and frozen SHA256 780ff493d1c916565044bdb1bfc92fda61d70e669e40cb530d6ae4fab03567f6.
+    Native inspect captured record/history/dossier bytes before assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:bixbyite-mn
+  exclusions:
+  - target: Fredrickson2002 and later CN32 ligand-assisted formation mechanisms
+    reason: Dossier leads, not curated claims in the assigned record. Reviewer did
+      not independently complete their full originals/figures/control assessment and
+      imported no measurements from them.
+  - target: Independent raw diffraction reanalysis or new sequence alignment
+    reason: Original plotted diffraction/Raman and submitted sequence metadata were
+      reviewed. Raw instrument data and a fresh phylogenomic species test were not
+      performed.
+targets:
+- target_id: cmmmech:bixbyite-mn
+  path: data/records/bixbyite-mn.yaml
+  label: Bixbyite-(Mn)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/bixbyite-mn.yaml
+    role: maintained scientific record
+checks:
+- check_id: named
+  name: Named record validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 PYTHONDONTWRITEBYTECODE=1
+    uv run --locked cmmmech validate data/records/bixbyite-mn.yaml
+  status: passed
+  required: true
+  summary: Checked 1 record(s); 0 failed. Executed by this reviewer; exit 0; 2026-10-14T06:34:47.483387+00:00
+    to 2026-10-14T06:35:00.089101+00:00.
+  target_ids:
+  - cmmmech:bixbyite-mn
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named_validation
+- check_id: history
+  name: Trusted-base canonical history validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 PYTHONDONTWRITEBYTECODE=1
+    uv run --locked cmmmech validate-history --base 0f4d8ff9e4919714e3dd902dc3573e95922a65fb
+  status: passed
+  required: true
+  summary: Checked 342 history record(s); 0 error(s). Executed by this reviewer; exit
+    0; 2026-10-14T06:35:00.090799+00:00 to 2026-10-14T06:35:12.935432+00:00.
+  target_ids:
+  - cmmmech:bixbyite-mn
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - history_validation
+- check_id: batch
+  name: Full batch checks
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 PYTHONDONTWRITEBYTECODE=1
+    just check
+  status: passed
+  required: true
+  summary: Coordinator command executed 2026-10-14T06:34:30.350112+00:00 to 2026-10-14T06:41:38.259359+00:00;
+    exit 0. Complete receipt and log personally inspected. Assigned record and its
+    reviewed inputs remained frozen; an unrelated lepidocrocite correction landed
+    during this initial batch run, so coordinator is separately repeating the final
+    batch after that correction.
+  target_ids:
+  - cmmmech:bixbyite-mn
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch_validation
+- check_id: nonempty
+  name: Explicit nonempty corpus validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 PYTHONDONTWRITEBYTECODE=1
+    uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator command executed 2026-10-14T06:41:38.259472+00:00 to 2026-10-14T06:42:04.731172+00:00;
+    exit 0. Complete receipt and log personally inspected. Assigned record and its
+    reviewed inputs remained frozen; an unrelated lepidocrocite correction landed
+    during this initial batch run, so coordinator is separately repeating the final
+    batch after that correction.
+  target_ids:
+  - cmmmech:bixbyite-mn
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch_validation
+evidence:
+- evidence_id: named_validation
+  kind: validation
+  reference: /private/tmp/cmm-round64-bixbyite-independent/named.log
+  locator: Entire log; checks.json preserves actual command and UTC start/finish
+  accessed_at: '2026-10-14T06:37:48.823215Z'
+  support: supports
+  summary: Checked 1 record(s); 0 failed. Executed by this independent reviewer.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: history_validation
+  kind: validation
+  reference: /private/tmp/cmm-round64-bixbyite-independent/history.log
+  locator: Entire log; checks.json preserves actual command and UTC start/finish
+  accessed_at: '2026-10-14T06:37:48.823215Z'
+  support: supports
+  summary: Checked 342 history record(s); 0 error(s). Executed by this independent
+    reviewer.
+  snapshot_sha256: c848103fbbc2eba28d3ebd20cfb8ed459ca3780c20c22e2634514ae5c10bae12
+- evidence_id: record
+  kind: record_content
+  reference: data/records/bixbyite-mn.yaml
+  locator: Entire file at the exact source.inputs SHA256
+  accessed_at: '2026-10-14T06:37:48.823215Z'
+  support: supports
+  summary: Every field and all retained evidence entries were compared with the original
+    source and identity authorities.
+  snapshot_sha256: 780ff493d1c916565044bdb1bfc92fda61d70e669e40cb530d6ae4fab03567f6
+- evidence_id: history
+  kind: record_content
+  reference: history/records/bixbyite-mn/2026-10-14T062933Z-codex-7c115e.yaml
+  locator: Complete canonical CREATE session and record inline CREATE entry
+  accessed_at: '2026-10-14T06:37:48.823215Z'
+  support: supports
+  summary: Correct owner, codex/GPT-6 actor and actual distinct CREATE times. Scope
+    accurately describes the new qualified record; no earlier authorship is invented.
+  snapshot_sha256: 0d8f563b690a0c88a97785c6f9985fa466fdcdaf1762002fcfeee167ffd059a3
+- evidence_id: local_search
+  kind: search
+  reference: /private/tmp/cmm-round64-bixbyite-independent/local-search.txt
+  locator: Exact rg command, full returned path set and exit status
+  accessed_at: '2026-10-14T06:37:48.823215Z'
+  support: context_only
+  summary: Hidden and ignored files and relevant symlinks were included. Related raw
+    sources or mixed-resource mentions are not an existing owner for this exact mineral
+    record; no duplicate maintained owner was found within this declared text-search
+    scope.
+  snapshot_sha256: aafc312a166ca5e2797d6ff5a6a983a3a5d2c52fa9fa9312a68c4c1f7c2993a9
+  search_scope: 'Command: [''rg'', ''--no-ignore'', ''--hidden'', ''--follow'', ''-l'',
+    ''-i'', ''bixbyite|10\\.3389/fmicb\\.2015\\.00734|HG932494'', ''data/records'',
+    ''research'', ''reviews'', ''history'', ''/private/tmp/cmm-round38-hausmannite-research'',
+    ''/private/tmp/cmm-round40-cobalt-manganese-oxide-research'', ''/private/tmp/cmm-round41-biogenic-birnessite-research'',
+    ''/private/tmp/cmm-round42-biogenic-selectivity-research'', ''/private/tmp/cmm-round64-manganese-research'']
+    Scoped text search over records, research, reviews, history and the five named
+    raw roots. Binary/unextracted PDFs and unrelated machine caches were not exhaustively
+    searched.'
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Original PDF pages 1-2 and 27; definitions and paired bixbyite rows
+  accessed_at: '2026-10-14T06:37:48.823215Z'
+  support: supports
+  summary: Personally inspected rendered original. Bixbyite-(Mn), Mn2O3, Rd and2021
+    special procedure agree. Bixbyite-(Fe) is separate; special-procedure year is
+    not a sequential approval CURIE.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: nomenclature
+  kind: authority
+  reference: https://doi.org/10.5194/ejm-34-1-2022
+  locator: Newsletter 64 original page 6, section 3.2, IMA 21-H
+  accessed_at: '2026-10-14T06:37:48.823215Z'
+  support: supports
+  summary: Personally inspected original rendered page and opened current publisher
+    entry. The decision makes bixbyite a structural series, defining Mn3+-dominant
+    bixbyite-(Mn) and Fe3+-dominant bixbyite-(Fe); orthorhombic Mn2O3 is included.
+    This authority grounds the owner, not retrospective purity or polytype certification
+    of the 2015 culture product.
+  snapshot_sha256: 0f717e24a2e338ed49b895846427639d1c1a23ee7aba10e53a11153a70b5d727
+- evidence_id: taxon
+  kind: authority
+  reference: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/536018/dataset_report
+  locator: Complete retained Datasets response; tax_id/rank/current_scientific_name
+  accessed_at: '2026-10-14T06:37:48.823215Z'
+  support: supports
+  summary: 'Personally read retained authority response: 536018 is species-rank Mesorhizobium
+    australicum. Record correctly identifies experimental T-G1 separately from WSM2073
+    and does not assert species-wide phenotype.'
+  snapshot_sha256: 0bd1ff9a2e26a3017e74e367be16aff051bc384bb442f0ce4c74807c689bf4a3
+- evidence_id: sequence
+  kind: authority
+  reference: https://www.ebi.ac.uk/ena/browser/view/HG932494.1
+  locator: Retained original ENA/INSDC EMBL response, identification/source/reference/sequence
+    fields
+  accessed_at: '2026-10-14T06:37:48.823215Z'
+  support: supports
+  summary: Personally read submitted 1354 bp partial16S record:sequence version 1,T-G1,
+    isolation from subsurface Mn-rich layer, taxon 536018 and DOI 10.3389/fmicb.2015.00734.
+    This is not a whole-genome or enzyme-pathway authentication.
+  snapshot_sha256: 2b82cd5456d7075fb64400d8814aff88b85c240dee088a4d97c0231051ea290c
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3389/fmicb.2015.00734
+  locator: Complete15-page original; methods pages 2-5, results pages 5-10, discussion
+    pages 10-12; Figures 1-7
+  accessed_at: '2026-10-14T06:37:48.823215Z'
+  support: supports
+  summary: Personally read the complete original text and visually inspected all seven
+    figures on original pages 6-10. Independently opened publisher full text. Liquid
+    phase-characterization conditions are PYG, 0.1/1/10 mM MnSO4, 10 mM MES, pH 5.5,
+    15 C, dark, unshaken. T-G1 was isolated in 2011 from 70 cm soil. Several-month
+    appearance and 90-day stable pH are not a precise Figure 3 harvest/loading assignment.
+  snapshot_sha256: 32713978a598266cc8d0e272b0b01e3b84fcc277be3f33d8876805a61f9f0456
+- evidence_id: phase
+  kind: primary_source
+  reference: https://doi.org/10.3389/fmicb.2015.00734
+  locator: Methods page3; results page 6; Figure 3A-F on page8
+  accessed_at: '2026-10-14T06:37:48.823215Z'
+  support: partial
+  summary: Cell association and Mn-rich particles are shown by SEM/CLSM/EDS. Tentative
+    Raman bands337, 489, 698 cm-1 differ from cited analogues, with carotenoid and
+    additional elemental signals; XRD is compared with bixbyite lines. No refined
+    structure/composition, phase fraction or direct bulk Mn valence is provided. EDS
+    alone does not demonstrate lattice substitution. SEM fixation/PBS/ethanol, direct
+    liquid Raman and air-dried XRD have different preparation limitations.
+  snapshot_sha256: 32713978a598266cc8d0e272b0b01e3b84fcc277be3f33d8876805a61f9f0456
+- evidence_id: controls
+  kind: primary_source
+  reference: https://doi.org/10.3389/fmicb.2015.00734
+  locator: Methods pages 3-5; Figures 1/4-7; discussion pages 11-12
+  accessed_at: '2026-10-14T06:37:48.823215Z'
+  support: partial
+  summary: Figure 1 compares culture with/without added Mn, not sterile mineral formation.
+    Figure 4 shows a low overlapping control for two pHs but does not fully identify
+    preparation or supply a matched months-long phase control. LBB oxidation is not
+    bixbyite-specific mass. The original explicitly reports no solid Mn-oxide particles
+    at pH 7.2 despite oxidation and Mn(III)-trapping signals. Primary/secondary route
+    and preparation effects remain unresolved.
+  snapshot_sha256: 32713978a598266cc8d0e272b0b01e3b84fcc277be3f33d8876805a61f9f0456
+- evidence_id: mechanism
+  kind: primary_source
+  reference: https://doi.org/10.3389/fmicb.2015.00734
+  locator: Figures 5-7, pages 6-12; in-gel, ABTS, qRT-PCR and trapping methods
+  accessed_at: '2026-10-14T06:37:48.823215Z'
+  support: partial
+  summary: Proteinase K inhibition and nonsignificant acidic SOD effect concern cell-free
+    Mn(III) trapping. Acidic laccase-like activity/transcript and neutral-pH stationary
+    superoxide are associations and assay responses, not purified-enzyme or mutant
+    proof of the Figure 3 phase. Figure 6 caption explicitly discloses the blue image-color
+    change. No causal gene or exclusive mineral-forming enzyme is asserted.
+  snapshot_sha256: 32713978a598266cc8d0e272b0b01e3b84fcc277be3f33d8876805a61f9f0456
+- evidence_id: recipes
+  kind: primary_source
+  reference: https://doi.org/10.3389/fmicb.2015.00734
+  locator: Methods pages 3-4 versus discussion page 11
+  accessed_at: '2026-10-14T06:37:48.823215Z'
+  support: partial
+  summary: Record retains100 micromol/L, pH 5.5/7.2 methods versus500 micromol/L,
+    pH 5.5/6.8 discussion. ABTS text 0.5 mM conflicts with printed 300 microlitres
+    of 15 mM in 3 mL (nominal 1.5 mM). No quantitative kinetic normalization is derived
+    from these conflicting recipes.
+  snapshot_sha256: 32713978a598266cc8d0e272b0b01e3b84fcc277be3f33d8876805a61f9f0456
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://doi.org/10.3389/fmicb.2015.00734
+  locator: Complete Data_Sheet_1.DOCX XML text and single Table S1
+  accessed_at: '2026-10-14T06:37:48.823215Z'
+  support: context_only
+  summary: Personally extracted and read original DOCX document.xml; one table contains
+    source soil/porewater chemistry. Its footnote attributes porewater values to Burkhardt
+    2009. It has no laboratory bixbyite yield or new deployment result. No quantitative
+    table values were transferred to this record.
+  snapshot_sha256: 21cbcd22e33390e7384cb4eaeffedee62a571c3ebaf0cf48d18ff612b476c73d
+- evidence_id: metadata
+  kind: database
+  reference: https://api.crossref.org/works/10.3389/fmicb.2015.00734
+  locator: Retained Crossref DOI/title/published/relation/update-to fields and original
+    page 1
+  accessed_at: '2026-10-14T06:37:48.823215Z'
+  support: supports
+  summary: Title,2015 date and DOI agree across original, Crossref and independent
+    current publisher page. Retained response has an empty relation object and no
+    update-to field.
+  snapshot_sha256: ef3d3b27a26149c00dc6ccaa0b0a50572bc9ff9f60665c8178abab3df06fed63
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round64-bixbyite-independent/web-search.json
+  locator: Three independent exact DOI notice, T-G1 phase and accession queries
+  accessed_at: '2026-10-14T06:37:48.823215Z'
+  support: context_only
+  summary: No matching correction/retraction or direct contradictory T-G1 replication
+    was identified in the first returned sets. This is bounded search coverage, not
+    proof of absence. Scientific assessment relies on the original and authority entries,
+    not secondary summaries.
+  snapshot_sha256: b4f6053d45aa15ce584d0deaf7296f5aa61d72d2b362710c1fbdc7c39b678159
+  search_scope: Exact query strings and full response saved in web-search.json. No
+    domain/date filters or pagination; first returned sets only.
+- evidence_id: batch_validation
+  kind: validation
+  reference: /private/tmp/cmm-round64-final-gates.json
+  locator: Complete JSON receipt and referenced full final-gates.log
+  accessed_at: '2026-10-14T06:43:01.922172Z'
+  support: supports
+  summary: 317 tests passed, 3 skipped; 293 records and 343 histories valid. Explicit
+    --require-records and trusted-base history also passed. Checked log SHA256 25e07902430edb5bfa8e05065fa05624a5821c292ddc1cb3955dec856a280b99.
+    The assigned record/source inputs did not change. These initial gates preceded
+    saving this review and overlapped another record correction; no claim that they
+    validated this bundle or the subsequently rerendered final batch.
+  snapshot_sha256: f2af92147f4a25ed646c60e50766925356e9f605d68c9526b0ee195301b4ee5f
+- evidence_id: dossier_audit
+  kind: record_content
+  reference: research/sources/round64-manganese/20261014T063052Z-bixbyite-mn-source-investigation.json
+  locator: Full curator source dossier and independently recomputed raw-file hashes
+  accessed_at: '2026-10-14T06:43:01.922172Z'
+  support: supports
+  summary: Reviewed source boundaries and claim limitations; independently checked
+    all 57 listed raw-file hashes. Complete check receipt /private/tmp/cmm-round64-bixbyite-independent/dossier-checks.json
+    has SHA256 a9113be311cf665588d7ad38b377e001fa48e9d0a38a64dfd679aa089cb8b195. Hash
+    equality establishes preserved evidence bytes, not scientific agreement by itself.
+  snapshot_sha256: 4f305d45750c7c3746678e87b1a01e4291b311c539fa131e017a41e6f0901576
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Modern mineral species versus qualified culture phase
+  outcome: supported
+  summary: The Mn-dominant species owner is valid and separate from the Fe-dominant
+    member and structural series. The record explicitly preserves its experimental
+    link as a qualified bixbyite-like analogue and does not certify pure natural mineral.
+  target_ids:
+  - cmmmech:bixbyite-mn
+  evidence_ids:
+  - record
+  - ima
+  - nomenclature
+  - phase
+  dimensions:
+  - name: material_form
+    value: IMA bixbyite-(Mn); experimental bixbyite-like Mn-rich product
+    definition: Modern species authority does not erase experimental phase uncertainty
+    evidence_ids:
+    - ima
+    - nomenclature
+    - phase
+  - name: criticality
+    value: No jurisdiction/list/edition assertion
+    definition: Manganese criticality is not inherited by this mineral
+    evidence_ids:
+    - record
+  - name: organism_resolution
+    value: M. australicum species node 536018; submitted strain T-G1 partial 16S HG932494.1
+    definition: T-G1 is not WSM2073 or a phylogenomically verified type-strain match
+    evidence_ids:
+    - taxon
+    - sequence
+    - primary
+- assessment_id: system
+  area: evidence
+  topic: Growth system, feed and preparation
+  outcome: supported
+  summary: Living T-G1 PYG cultures and phase-analysis methods are accurately represented.
+    The long-term phase study is separated from short microplate oxidation assays
+    and exact harvest/loading/gas-exchange gaps remain explicit.
+  target_ids:
+  - cmmmech:bixbyite-mn
+  evidence_ids:
+  - record
+  - primary
+  - phase
+  - controls
+  dimensions:
+  - name: biomass_state
+    value: Living isolated T-G1 culture; separate cell-free/protein assays
+    definition: Not purified enzyme mineral production
+    evidence_ids:
+    - primary
+    - mechanism
+  - name: substrate
+    value: Added dissolved MnSO4 in PYG
+    definition: Not leached ore or natural mineral feed
+    evidence_ids:
+    - primary
+  - name: conditions
+    value: 0.1/1/10 mM feed,10 mM MES, pH 5.5, 15 C, dark, unshaken
+    definition: Figure 3 harvest age/loading and vessel gas exchange are unresolved
+    evidence_ids:
+    - primary
+  - name: pretreatment
+    value: SEM fixed/PBS-washed/dehydrated; XRD dried; Raman liquid-particle
+    definition: Different preparations do not establish an in situ phase trajectory
+    evidence_ids:
+    - phase
+- assessment_id: outcome
+  area: quantity
+  topic: Culture-associated phase versus oxidation or recovery
+  outcome: supported
+  summary: Original figures support a qualified phase-presence claim and oxidation
+    assays. Neutral-pH particle absence and lack of an isolated pure-product yield
+    prevent extending oxidation to recovery.
+  target_ids:
+  - cmmmech:bixbyite-mn
+  evidence_ids:
+  - record
+  - phase
+  - controls
+  - supplement
+  dimensions:
+  - name: outcome
+    value: Source-assigned bixbyite-like Mn oxide
+    definition: Not refined mineral purity, phase fraction or Mn recovery
+    evidence_ids:
+    - phase
+  - name: controls
+    value: Substrate-omission and short oxidation controls; no matched long-term phase
+      control
+    definition: Microbial exclusivity and preparation effects unresolved
+    evidence_ids:
+    - controls
+  - name: scale
+    value: Laboratory cultures
+    definition: Source mining-site provenance is not field bixbyite deployment
+    evidence_ids:
+    - primary
+    - supplement
+- assessment_id: mechanistic_scope
+  area: evidence
+  topic: Nonunique biochemical interpretation and conflicting recipes
+  outcome: supported
+  summary: Proteinase K/SOD,transcript/activity and superoxide comparisons remain
+    assay-specific. The record avoids causal enzyme/gene promotion and preserves differing
+    Mn/pH/ABTS recipes.
+  target_ids:
+  - cmmmech:bixbyite-mn
+  evidence_ids:
+  - record
+  - mechanism
+  - recipes
+  dimensions: []
+- assessment_id: provenance
+  area: provenance
+  topic: Original identifiers, history and validation
+  outcome: supported
+  summary: Record/history/dossier hashes, source DOI and submitted accession are consistent;
+    named/history checks passed against frozen bytes.
+  target_ids:
+  - cmmmech:bixbyite-mn
+  evidence_ids:
+  - record
+  - history
+  - metadata
+  - sequence
+  - named_validation
+  - history_validation
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- The culture phase is bixbyite-like, with no refined composition/polytype, phase
+  fractions or direct bulk-valence measurement. Mapping it to the Mn-rich species
+  is explicitly qualified.
+- No matched uninoculated long-incubation XRD/Raman series or in situ phase trajectory
+  establishes exclusive microbial necessity or excludes preparation effects.
+- Figure 3 exact Mn loading, harvest age and vessel gas exchange remain unspecified.
+  Separate short oxidation assays cannot supply those missing phase conditions.
+- No solid Mn-oxide particles at pH 7.2 despite positive LBB/trapping; oxidation is
+  not identical to precipitation or recovery.
+- Protein activity, inhibitor response and transcript association do not identify
+  a unique causal mineral-forming enzyme. Growth-assay and ABTS recipe discrepancies
+  remain unresolved.
+- Partial 16S species assignment and submission metadata do not provide whole-genome
+  authentication or species-wide phenotype.
+- Other complete studies identified in the dossier were outside this record review;
+  current notice and local searches are bounded. Supplement was inspected as original
+  DOCX text/table structure, not a visual page rendering.
+notes:
+- 'Corrections made by this reviewer: none. Record, history and source dossier remain
+  unchanged. No GitHub issue or comment was posted by this reviewer.'
+- An empty findings list applies only to this exact record and declared evidence scope.
+  It is not a claim of exhaustive literature coverage.
+- The review start is the native-inspection input file creation time converted to
+  UTC; the review includes subsequent evidence inspection and checks.
+- The initial coordinator batch gates overlapped a correction to lepidocrocite, an
+  unrelated record. This record and all source.inputs hashes remained unchanged; coordinator
+  will repeat final whole-batch gates after that correction and generated-page refresh.
+  This review does not claim that later run already happened.
+tags:
+- round64
+- independent
+- bixbyite-mn
+- primary-figures

@@ -1,0 +1,169 @@
+id: cmmmech:manganite
+name: Manganite
+material_kind: mineral
+description: >-
+  Manganite is the manganese(III) oxide hydroxide mineral MnO(OH), listed
+  as grandfathered in the September 2026 IMA-CNMNC list. The year 1826
+  is its historical date, not an IMA approval accession. It is distinct
+  from elemental manganese, manganese ore, the MnO2 minerals pyrolusite
+  and ramsdellite, and other MnOOH polymorphs. The experiment below used
+  laboratory-prepared material assigned to manganite by the source, not
+  natural ore or a certified phase-pure mineral reference. No criticality
+  designation is inherited from manganese.
+sources:
+- id: ima_2026_09
+  title: >-
+    IMA-CNMNC. The New IMA List of Minerals, September 2026. Manganite
+    row, PDF page 134; introductory status/date definitions and terms.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: manganite_handbook
+  title: >-
+    Mineralogical Society of America, Handbook of Mineralogy. Manganite,
+    one-page entry, Mineral Data Publishing 2001-2005 version 1; mineral
+    identity, monoclinic structure, composition and polymorphism.
+  url: https://handbookofmineralogy.org/pdfs/manganite.pdf
+  accessed_on: '2026-10-14'
+- id: larsen1998
+  title: >-
+    Larsen, Little, Nealson, Ray, Stone and Tian (1998). Manganite reduction
+    by Shewanella putrefaciens MR-4. American Mineralogist 83:1564-1572.
+    Complete nine-page original, methods, Figures 1-9 and Table 1.
+  url: https://doi.org/10.2138/am-1998-11-1244
+  accessed_on: '2026-10-14'
+- id: larsen1998_original
+  title: >-
+    RRUFF document archive. Complete American Mineralogist 83:1564-1572
+    original PDF of Larsen et al. (1998), AM83_1564.pdf.
+  url: https://www.rruff.net/doclib/am/vol83/AM83_1564.pdf
+  accessed_on: '2026-10-14'
+- id: ncbi_mr4
+  title: >-
+    NCBI Taxonomy 60480, current name Shewanella sp. MR-4, a strain-labelled
+    unclassified Shewanella taxon with species rank; Datasets response.
+  url: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/60480/dataset_report
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: mr4_associated_manganite_reductive_dissolution
+  name: Anaerobic MR-4-associated reductive dissolution of synthetic manganite
+  process: redox_transformation
+  microbial: true
+  organisms:
+  - id: NCBITaxon:60480
+    label: Shewanella sp. MR-4
+  description: >-
+    Living MR-4 cultures increased filtered dissolved manganese from
+    source-assigned synthetic manganite in anaerobic laboratory incubations.
+    The authors interpret this as Mn(III)-to-Mn(II) reductive dissolution.
+    Uninoculated, heat-killed, oxygen-exposed and dialysis-separated
+    comparisons strongly limited release under the tested conditions.
+    This supports a culture-associated process with contact and metabolic
+    dependencies in this assay, not a universal requirement for direct
+    electron transfer, an identified reductase, pure-phase mass balance,
+    isolated manganese product or industrial recovery.
+  context: >-
+    Larsen1998 calls the culture Shewanella putrefaciens MR-4; the current
+    NCBI name is Shewanella sp. MR-4, not an authenticated sequence match
+    to the historical laboratory stock. Cells were serially acclimated,
+    centrifuged and resuspended in defined M1 medium containing 30 mM
+    lactate without the casamino acids used during pregrowth. Standard
+    experiments used 250 mL open flasks inside a 10% H2/90% N2 anaerobic
+    chamber at reported 27 degrees C, medium adjusted to pH 7.4, nominal
+    200 micromol/L MnOOH and 5 x 10^6 cells/mL unless varied. The H2
+    atmosphere means the no-added-carbon arm is not an electron-donor-free
+    system. Manganite was prepared from MnSO4, H2O2 and NH3, heated at
+    95 degrees C for six hours, washed hot and cold and stored frozen.
+    The paper gives needle morphology and a synthesis recipe but no
+    batch-specific diffraction refinement, quantified phase purity or
+    measured composition. Separate pH and temperature arms used sealed
+    50 mL serum bottles and only two sampling times.
+  evidence:
+  - source_ref: larsen1998
+    supports: support
+    explanation: >-
+      Figures 1-3 and Results on pages 1566-1567 show increasing filtered
+      manganese with active cultures and much smaller release in no-cell,
+      killed-cell, oxygen, CCCP and no-contact comparisons. Figure 3
+      groups several negative controls in one symbol series; the no-added-
+      carbon arm still releases manganese before its rate decreases. The
+      dialysis experiment supports a contact dependency under its protocol,
+      not exclusion of every diffusible mediator in other systems. Table 1
+      shows strong inhibition by CCCP and HgCl2, but weak HQNO inhibition
+      and zero reported cyanide inhibition; not all tested inhibitors
+      suppress release. No enzyme, gene or electron-transfer pathway was
+      experimentally identified.
+  - source_ref: larsen1998
+    supports: partial
+    explanation: >-
+      Methods on pages 1565-1566 measure 0.2 micrometre-filtered, acidified
+      samples by flame atomic absorption. This is dissolved-element
+      quantification interpreted as Mn(II), not direct oxidation-state
+      speciation. Three samples per flask and repeated instrument readings
+      measure subsampling/analytical variability; they do not establish
+      three independent culture replicates. The paper reports a repeated
+      standard treatment but Figure 1's duplicate series is labelled
+      100 micromol/L, whereas the methods' repeated treatment is
+      200 micromol/L. Complete eventual reduction is stated with data
+      not shown. No complete manganese/product mass balance or isolated
+      recovery yield is adopted.
+  - source_ref: larsen1998
+    supports: partial
+    explanation: >-
+      Table 1 on page 1568 records inoculated versus no-cell dissolved
+      manganese means of 101.3 versus 103.1 micromol/L at pH 4 and
+      39.4 versus 44.0 micromol/L at pH 5. These acidic arms do not
+      demonstrate a positive microbial increment; acid-driven release
+      predominates. At pH 7.4, means are 12.2 versus 1.2 micromol/L.
+      These selected table means retain their units and arm identities,
+      without being treated as recovery percentages or independent
+      biological replicates. The table omits net-reduction entries for
+      the two acidic arms rather than reporting negative values.
+  - source_ref: larsen1998
+    supports: partial
+    explanation: >-
+      The abstract calls the optimum pH 7.0 and 26 degrees C; methods
+      list pH 7.4 and temperatures 4, 27, 37 and 44 degrees C; Table 1
+      labels the largest measured net temperature response 26 degrees C;
+      the discussion instead says around 35 degrees C. No precise optimal
+      temperature or pH is asserted. Figure 2 specifies a 100-fold cell
+      range, while the results text says 300-fold and gives slightly
+      different sampling times. These discrepancies are not silently
+      reconciled into a kinetic model.
+  - source_ref: larsen1998
+    supports: partial
+    explanation: >-
+      Figure 4 shows manganite-associated manganese release intermediate
+      between the tested birnessite and pyrolusite preparations. The
+      estimated manganite area of 0.9-2.5 m2/g is microscopy-derived,
+      not a direct BET measurement. Different surface areas, morphology,
+      chemistry and crystallinity confound an intrinsic mineral ranking;
+      the authors explicitly call for better area measurements. This
+      comparison does not duplicate a new birnessite or pyrolusite owner.
+  - source_ref: larsen1998
+    supports: partial
+    explanation: >-
+      Figures 5-9 compare uninoculated particles with colonized material
+      using wet fixed ESEM and dehydrated, gold-coated SEM. Cell-associated
+      coatings and close contact support biofilm association, but their
+      composition and causal role in reduction remain undetermined.
+      Polysaccharide chemistry is a proposed interpretation. Figure 8
+      is labelled approximately 75% reduced in its caption but described
+      as greater than 90% in the results; neither is used as a quantified
+      recovery endpoint. Sample washing, fixation and dehydration limit
+      inference about native hydrated surface architecture.
+  - source_ref: ncbi_mr4
+    supports: context_only
+    explanation: >-
+      NCBI 60480 resolves the current strain-labelled name and its placement
+      under unclassified Shewanella. It does not turn the historical
+      S. putrefaciens designation into a verified modern species assignment
+      or establish this phenotype for all Shewanella.
+curation_history:
+- timestamp: '2026-10-14T06:24:24Z'
+  curator: codex (GPT-6; Codex)
+  action: CREATE
+  summary: >-
+    Add mineral identity and source-qualified synthetic manganite reduction
+    by MR-4, retaining controls, source contradictions and scale limits.
+history_refs:
+- history/records/manganite/2026-10-14T062347Z-codex-9f9289.yaml

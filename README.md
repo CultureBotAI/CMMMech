@@ -8,10 +8,15 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 288 material records.
+The catalogue currently contains 293 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Manganite](data/records/manganite.yaml) | MR-4-associated reductive dissolution of synthetic manganite | Acidic controls lack a microbial increment; source temperature and assay conflicts remain explicit |
+| [Bixbyite-(Mn)](data/records/bixbyite-mn.yaml) | T-G1 culture-associated formation of a bixbyite-like phase | Tentative phase assignment; neutral-pH oxidation occurs without observed mineral particles |
+| [Akaganeite](data/records/akaganeite.yaml) | PCA wild-type and mutant reduction of XRD-assigned synthetic feed | pH and autoclaving alter phenotypes; mineral potential is inferred rather than measured |
+| [Lepidocrocite](data/records/lepidocrocite.yaml) | Formate-fed culture-associated reduction and green-rust formation | Strain-accession conflict, incomplete matched controls and distinct analytical fractions constrain interpretation |
+| [Feroxyhyte](data/records/feroxyhyte.yaml) | Conditional culture-associated reduction and secondary mineral formation | Unlike endpoints, caption conflict and partial Fe(III) reduction preclude a complete-recovery claim |
 | [Dypingite](data/records/dypingite.yaml) | Cyanobacterial-enrichment-associated magnesium carbonate formation | Abiotic pH control also forms dypingite; mixed culture and nutrient matching limit attribution |
 | [Scorodite](data/records/scorodite.yaml) | Culture-associated ferric arsenate formation and seeded aqueous removal | Seed contribution and short leachability tests constrain stabilization claims |
 | [Nickel flotation tailings](data/records/nickel-flotation-tailings.yaml) | Laboratory acidophile treatment of nickel-plant flotation waste | Acid-soluble and total-metal denominators differ; solution release is not isolated recovery |

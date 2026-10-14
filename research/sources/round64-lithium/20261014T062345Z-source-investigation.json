@@ -1,0 +1,107 @@
+{
+  "timestamp_utc": "2026-10-14T06:23:45.916833+00:00",
+  "curator": {
+    "name": "codex",
+    "model": "GPT-6",
+    "agent_tool": "codex"
+  },
+  "worktree": "/private/tmp/CMMMech-expansion-round64-20261014",
+  "base": "0f4d8ff9e4919714e3dd902dc3573e95922a65fb",
+  "branch": "curate/cmm-expansion-round64-20261014",
+  "result": "source_only_no_record_changes",
+  "record_paths": [],
+  "history_paths": [],
+  "review_paths": [],
+  "search_log": "/private/tmp/cmm-round64-lithium-research/raw/search-log.json",
+  "dedup_receipt": "/private/tmp/cmm-round64-lithium-research/raw/dedup-scan.json",
+  "issue_dedup_receipt": "/private/tmp/cmm-round64-lithium-research/raw/issue-dedup.json",
+  "raw_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round64-lithium-research/raw/acquisition-limits.json",
+      "sha256": "f7fc11540162633b4be9fd90c4cf6648c27c4c7009c7b314df660eaffaedf7b4",
+      "bytes": 1471
+    },
+    {
+      "path": "/private/tmp/cmm-round64-lithium-research/raw/dedup-file-hits.txt",
+      "sha256": "936020a2f06859b6311e814b0e61ba1bf250fe821f2664902c6ff4b3009ca8d2",
+      "bytes": 293
+    },
+    {
+      "path": "/private/tmp/cmm-round64-lithium-research/raw/dedup-scan.json",
+      "sha256": "ba5eef1f769d619ff1aef0bba5f1606e731e4eb9baf5c88086a976da05c8db09",
+      "bytes": 1369
+    },
+    {
+      "path": "/private/tmp/cmm-round64-lithium-research/raw/final-acquisition.json",
+      "sha256": "2a0016503560dc1d7436540e547694999f818b29077431d1f8d504b5f09c3b8f",
+      "bytes": 651
+    },
+    {
+      "path": "/private/tmp/cmm-round64-lithium-research/raw/issue-dedup.json",
+      "sha256": "a8a887d6fd4f91f35a66198e780470cc6703406d84304eeea4eb5af00885d55c",
+      "bytes": 440
+    },
+    {
+      "path": "/private/tmp/cmm-round64-lithium-research/raw/kordloo-crossref.json",
+      "sha256": "498f1efe1e6ce63d56555fed740f4896ae0a8d239ae93c9ea9a51a28480cb049",
+      "bytes": 18518
+    },
+    {
+      "path": "/private/tmp/cmm-round64-lithium-research/raw/kordloo-openalex.json",
+      "sha256": "9c04c1571a0da8312f0511217d858d96f4b8df36969393439769f962bce0197f",
+      "bytes": 20147
+    },
+    {
+      "path": "/private/tmp/cmm-round64-lithium-research/raw/kordloo-publisher-tdm.xml",
+      "sha256": "7f66e8066449fe072d7a123d5fbe78ced62d6810c9e3591e15f37e5e5dd2966b",
+      "bytes": 1934
+    },
+    {
+      "path": "/private/tmp/cmm-round64-lithium-research/raw/kordloo-pubmed.xml",
+      "sha256": "fb638fd17fea03fe53e35d7678728e68036be5ac182a52f1c5c6cc12e786e078",
+      "bytes": 2276
+    },
+    {
+      "path": "/private/tmp/cmm-round64-lithium-research/raw/search-log.json",
+      "sha256": "13ad93f823f05b8c14ce493075569b815006ed6030c223d00734fe32cbd82cf1",
+      "bytes": 2064
+    }
+  ],
+  "candidates": [
+    {
+      "candidate": "waste aluminum electrolyte",
+      "source": "https://doi.org/10.1016/j.wasman.2025.115043",
+      "pmid": "40749529",
+      "decision": "defer_full_original",
+      "priority": 1,
+      "role": "potential primary microbial experiment and distinct process-defined secondary resource",
+      "access": "publisher preview and fresh registry/coredata/abstract only",
+      "need": "Complete primary article and any supplements; verify exact feed origin versus spent potlining/anode wastes, cultures, pretreatment, conditions, matched controls, denominators, independent replication, phase assignments and whether solution release or isolated product."
+    },
+    {
+      "candidate": "kaolin-processing lithium-mica waste",
+      "source": "https://etheses.bham.ac.uk/id/eprint/6373/",
+      "decision": "defer_access_and_owner_resolution",
+      "priority": 2,
+      "role": "primary doctoral thesis; potential secondary-resource experiments",
+      "access": "repository metadata and indexed contents/captions; full PDF acquisition failed",
+      "need": "Full297page original; Chapters3\u20134 and6.4\u20136.5, figures6.44\u20136.51 onward; distinguish waste concentrate from purchased lepidolite specimen and verify overlap with existing Beauvoir2020 experiment before changing owners."
+    },
+    {
+      "candidate": "amblygonite, montebrasite, triphylite, lithiophilite",
+      "decision": "no_microbe_record_from_this_screen",
+      "role": "mineral identity/extraction leads",
+      "need": "Primary material-specific experiment and authority identity inspection; patent target lists and lepidolite mentions are insufficient. No assertion that such experiments do not exist."
+    },
+    {
+      "candidate": "boron-ore concentration tailings",
+      "decision": "existing_owner",
+      "owner": "data/records/boron-ore-concentration-tailings.yaml",
+      "source": "https://doi.org/10.35229/jaes.1832038",
+      "need": "No duplicate record; older2023/new2025 experiments require separate full-source reassessment if requested."
+    }
+  ],
+  "notices": "Bounded correction searches and Crossref relations, not comprehensive retraction audit.",
+  "criticality": "No new designation sought or inherited.",
+  "validation": "JSON parsed; artifact hashes rechecked; git diff --check. No scientific record validation/review claimed for unchanged corpus."
+}

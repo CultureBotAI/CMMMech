@@ -1,0 +1,381 @@
+{
+  "recorded_at": "2026-10-14T06:54:09.889711+00:00",
+  "base": "0f4d8ff9e4919714e3dd902dc3573e95922a65fb",
+  "worktree": "/private/tmp/CMMMech-expansion-round64-20261014",
+  "branch": "curate/cmm-expansion-round64-20261014",
+  "records_created": [
+    {
+      "slug": "akaganeite",
+      "path": "data/records/akaganeite.yaml",
+      "sha256": "a567761b180d080e7c2310b652338de4cf77d3e7b5db519c3a8d4959048d33e8",
+      "review": "reviews/structured/20261014T064301Z-akaganeite-round64-independent/review.yaml",
+      "history": [
+        "history/records/akaganeite/2026-10-14T062506Z-codex-282c73.yaml"
+      ]
+    },
+    {
+      "slug": "lepidocrocite",
+      "path": "data/records/lepidocrocite.yaml",
+      "sha256": "efab1b0f544b5ba35839d289a82825001fdb3e47615e54a74aa6f352d7d8178f",
+      "review": "reviews/structured/20261014T064938Z-lepidocrocite-round64-successor/review.yaml",
+      "history": [
+        "history/records/lepidocrocite/2026-10-14T062537Z-codex-aae07d.yaml",
+        "history/records/lepidocrocite/2026-10-14T064034Z-codex-ebe35f.yaml"
+      ]
+    },
+    {
+      "slug": "feroxyhyte",
+      "path": "data/records/feroxyhyte.yaml",
+      "sha256": "6d33c03a73ed8b43201efd8608536cf213bf5625af78b85d0326fb0342fc4c61",
+      "review": "reviews/structured/20261014T064248Z-feroxyhyte-round64-independent/review.yaml",
+      "history": [
+        "history/records/feroxyhyte/2026-10-14T062756Z-codex-bd8d5e.yaml"
+      ]
+    },
+    {
+      "slug": "manganite",
+      "path": "data/records/manganite.yaml",
+      "sha256": "a53c5947dbb29076591a28ad0953344af5d5f91c6e7aec3b9640ebfd1ca1f276",
+      "review": "reviews/structured/20261014T064301Z-manganite-round64-independent/review.yaml",
+      "history": [
+        "history/records/manganite/2026-10-14T062347Z-codex-9f9289.yaml"
+      ]
+    },
+    {
+      "slug": "bixbyite-mn",
+      "path": "data/records/bixbyite-mn.yaml",
+      "sha256": "780ff493d1c916565044bdb1bfc92fda61d70e669e40cb530d6ae4fab03567f6",
+      "review": "reviews/structured/20261014T064301Z-bixbyite-mn-round64-independent/review.yaml",
+      "history": [
+        "history/records/bixbyite-mn/2026-10-14T062933Z-codex-7c115e.yaml"
+      ]
+    }
+  ],
+  "counts": {
+    "passed": true,
+    "record_count": 293,
+    "history_count": 343,
+    "structured_review_count": 354,
+    "review_base_count": 65,
+    "covered_records": 293
+  },
+  "checks": {
+    "baseline": {
+      "path": "/private/tmp/cmm-round64-baseline.json",
+      "sha256": "61239258d395c7ca4b8c8e9bc675b004a9ad2e93c7d19fc796eb1a7247e0e8a9",
+      "result": {
+        "started_at": "2026-10-14T06:17:38.141208+00:00",
+        "finished_at": "2026-10-14T06:22:48.018182+00:00",
+        "command": [
+          "just",
+          "check"
+        ],
+        "cwd": "/private/tmp/CMMMech-expansion-round64-20261014",
+        "base": "0f4d8ff9e4919714e3dd902dc3573e95922a65fb",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round64-baseline.log",
+        "log_sha256": "de526ab2ffea675d301afc07364b4317b9f2e4609af6d0efd026ab0ac0b0d945"
+      }
+    },
+    "final-gates": {
+      "path": "/private/tmp/cmm-round64-final-gates.json",
+      "sha256": "f2af92147f4a25ed646c60e50766925356e9f605d68c9526b0ee195301b4ee5f",
+      "result": {
+        "started_at": "2026-10-14T06:34:30.349024+00:00",
+        "base": "0f4d8ff9e4919714e3dd902dc3573e95922a65fb",
+        "cwd": "/private/tmp/CMMMech-expansion-round64-20261014",
+        "commands": [
+          {
+            "command": [
+              "just",
+              "check"
+            ],
+            "started_at": "2026-10-14T06:34:30.350112+00:00",
+            "finished_at": "2026-10-14T06:41:38.259359+00:00",
+            "exit_code": 0
+          },
+          {
+            "command": [
+              "uv",
+              "run",
+              "--locked",
+              "cmmmech",
+              "validate",
+              "--require-records"
+            ],
+            "started_at": "2026-10-14T06:41:38.259472+00:00",
+            "finished_at": "2026-10-14T06:42:04.731172+00:00",
+            "exit_code": 0
+          },
+          {
+            "command": [
+              "uv",
+              "run",
+              "--locked",
+              "cmmmech",
+              "validate-history",
+              "--base",
+              "0f4d8ff9e4919714e3dd902dc3573e95922a65fb"
+            ],
+            "started_at": "2026-10-14T06:42:04.731289+00:00",
+            "finished_at": "2026-10-14T06:42:19.865732+00:00",
+            "exit_code": 0
+          }
+        ],
+        "log": "/private/tmp/cmm-round64-final-gates.log",
+        "exit_code": 0,
+        "finished_at": "2026-10-14T06:42:19.865871+00:00",
+        "log_sha256": "25e07902430edb5bfa8e05065fa05624a5821c292ddc1cb3955dec856a280b99"
+      }
+    },
+    "final-gates-afterfix": {
+      "path": "/private/tmp/cmm-round64-final-gates-afterfix.json",
+      "sha256": "73447cf4c0c558eedcd9eb8060c7d28792fbd52c14d91c7124726c55b412689a",
+      "result": {
+        "started_at": "2026-10-14T06:42:52.888397+00:00",
+        "base": "0f4d8ff9e4919714e3dd902dc3573e95922a65fb",
+        "cwd": "/private/tmp/CMMMech-expansion-round64-20261014",
+        "commands": [
+          {
+            "command": [
+              "just",
+              "check"
+            ],
+            "started_at": "2026-10-14T06:42:52.889308+00:00",
+            "finished_at": "2026-10-14T06:48:18.232131+00:00",
+            "exit_code": 0
+          },
+          {
+            "command": [
+              "uv",
+              "run",
+              "--locked",
+              "cmmmech",
+              "validate",
+              "--require-records"
+            ],
+            "started_at": "2026-10-14T06:48:18.232227+00:00",
+            "finished_at": "2026-10-14T06:48:32.375436+00:00",
+            "exit_code": 0
+          },
+          {
+            "command": [
+              "uv",
+              "run",
+              "--locked",
+              "cmmmech",
+              "validate-history",
+              "--base",
+              "0f4d8ff9e4919714e3dd902dc3573e95922a65fb"
+            ],
+            "started_at": "2026-10-14T06:48:32.375543+00:00",
+            "finished_at": "2026-10-14T06:48:45.301852+00:00",
+            "exit_code": 0
+          }
+        ],
+        "log": "/private/tmp/cmm-round64-final-gates-afterfix.log",
+        "exit_code": 0,
+        "finished_at": "2026-10-14T06:48:45.302006+00:00",
+        "log_sha256": "cc5b352187f1196697bb163e905f2c7575006af7f84b34a4985ff1db875cd051"
+      }
+    },
+    "review-check": {
+      "path": "/private/tmp/cmm-round64-review-check.json",
+      "sha256": "b79b577457cc2982c342f67a41ae12d7b07d3310a88e8a0a9d2354b573dd9828",
+      "result": {
+        "started_at": "2026-10-14T06:50:16.633672+00:00",
+        "base": "0f4d8ff9e4919714e3dd902dc3573e95922a65fb",
+        "cwd": "/private/tmp/CMMMech-expansion-round64-20261014",
+        "commands": [
+          {
+            "command": [
+              "just",
+              "review-check",
+              "--base",
+              "0f4d8ff9e4919714e3dd902dc3573e95922a65fb",
+              "--require-reviews"
+            ],
+            "started_at": "2026-10-14T06:50:16.634526+00:00",
+            "finished_at": "2026-10-14T06:53:41.853118+00:00",
+            "exit_code": 0
+          }
+        ],
+        "log": "/private/tmp/cmm-round64-review-check.log",
+        "exit_code": 0,
+        "finished_at": "2026-10-14T06:53:41.853244+00:00",
+        "log_sha256": "8955b4584ae7cc33d802a78a9655d2756255570f202f0967f8cd4e210d78ebff"
+      }
+    },
+    "local-coverage": {
+      "path": "/private/tmp/cmm-round64-local-coverage.json",
+      "sha256": "dc672a1f7db02693f528e148083af18d6a22851a13f177517e5714e3244ddc18",
+      "result": {
+        "passed": true,
+        "record_count": 293,
+        "history_count": 343,
+        "structured_review_count": 354,
+        "review_base_count": 65,
+        "covered_records": 293
+      }
+    },
+    "preservation-prepublication": {
+      "path": "/private/tmp/cmm-round64-preservation-prepublication.json",
+      "sha256": "ce9ba2872890476aaa952cac913fb2ba0f525533889d290ff5a768fca42e2375",
+      "result": {
+        "recorded_at": "2026-10-14T06:44:04.223680+00:00",
+        "passed": true,
+        "preserved_entry_counts": {
+          "main": 7187,
+          "skill": 7389
+        },
+        "initial_sha256": "30c6eedcd027bc9b46c51fdbe432c1c135658be8ad66f0e6b5ea9ef9ed98f207",
+        "scope": "Hidden/ignored-inclusive bytes, modes, symlink targets and Git state; original main nontracked files, unrelated skill tracked/nontracked files. Git administrative files and external symlink contents excluded."
+      }
+    }
+  },
+  "artifacts": [
+    {
+      "path": "data/records/akaganeite.yaml",
+      "sha256": "a567761b180d080e7c2310b652338de4cf77d3e7b5db519c3a8d4959048d33e8"
+    },
+    {
+      "path": "data/records/bixbyite-mn.yaml",
+      "sha256": "780ff493d1c916565044bdb1bfc92fda61d70e669e40cb530d6ae4fab03567f6"
+    },
+    {
+      "path": "data/records/feroxyhyte.yaml",
+      "sha256": "6d33c03a73ed8b43201efd8608536cf213bf5625af78b85d0326fb0342fc4c61"
+    },
+    {
+      "path": "data/records/lepidocrocite.yaml",
+      "sha256": "efab1b0f544b5ba35839d289a82825001fdb3e47615e54a74aa6f352d7d8178f"
+    },
+    {
+      "path": "data/records/manganite.yaml",
+      "sha256": "a53c5947dbb29076591a28ad0953344af5d5f91c6e7aec3b9640ebfd1ca1f276"
+    },
+    {
+      "path": "history/records/akaganeite/2026-10-14T062506Z-codex-282c73.yaml",
+      "sha256": "1a11b5e12b01578904968ae05dc6fdb15d3b28021e1b41bbed4c44f52fe87332"
+    },
+    {
+      "path": "history/records/bixbyite-mn/2026-10-14T062933Z-codex-7c115e.yaml",
+      "sha256": "0d8f563b690a0c88a97785c6f9985fa466fdcdaf1762002fcfeee167ffd059a3"
+    },
+    {
+      "path": "history/records/feroxyhyte/2026-10-14T062756Z-codex-bd8d5e.yaml",
+      "sha256": "b762f1dac09b715e8c8c31f8d717011af630da47dc076353bc50809e6f974908"
+    },
+    {
+      "path": "history/records/lepidocrocite/2026-10-14T062537Z-codex-aae07d.yaml",
+      "sha256": "80a138638db255697e882670ac57ebb939537ceb662b9fc787cd5ea9e6685fdf"
+    },
+    {
+      "path": "history/records/lepidocrocite/2026-10-14T064034Z-codex-ebe35f.yaml",
+      "sha256": "3dc44218811e71918599322577dfd7e2b9b375e469018fcb7d18d75920fdb3df"
+    },
+    {
+      "path": "history/records/manganite/2026-10-14T062347Z-codex-9f9289.yaml",
+      "sha256": "c6c2eead6bee5ca0cc19ed1656dbc0f0451a2eeda662e97ee7498c478a58d897"
+    },
+    {
+      "path": "research/sources/round64-feroxyhyte/20261014T063035Z-source-investigation.json",
+      "sha256": "4283c790a750e63c5a6fa9abe7096d8951093708f9ff021ab167ef39a3811f8a"
+    },
+    {
+      "path": "research/sources/round64-feroxyhyte/20261014T063035Z-source-investigation.md",
+      "sha256": "e0d8a56517c7618a8a8333aa5ed8bddc2be34e6da0fc098ab296a7cdf6a632d6"
+    },
+    {
+      "path": "research/sources/round64-iron/20261014T062830Z-source-investigation.json",
+      "sha256": "1240f681667b6eb96a4d55b6d07d4f7664acb905987240579158d45b9e021f39"
+    },
+    {
+      "path": "research/sources/round64-iron/20261014T062830Z-source-investigation.md",
+      "sha256": "dbc148fd48d1c9f060b9ff03b5ce720f8ea5d3631f86fafcdb617551cc6833a4"
+    },
+    {
+      "path": "research/sources/round64-lithium/20261014T062345Z-source-investigation.json",
+      "sha256": "701f0fd795b4f1ddab3064a3813634a87ebac8e8d19e06ec2feb83b3d5f2eff9"
+    },
+    {
+      "path": "research/sources/round64-lithium/20261014T062345Z-source-investigation.md",
+      "sha256": "f6141c0fea02b45188e66c9054eeef9148868fe306ae3cae518d7727352381d6"
+    },
+    {
+      "path": "research/sources/round64-manganese/20261014T062554Z-manganite-source-investigation.json",
+      "sha256": "2fa4e3821e9299c56259d8759c9d4cefbdd8540ad9affbc82e2fa2d987e4c2f0"
+    },
+    {
+      "path": "research/sources/round64-manganese/20261014T062554Z-manganite-source-investigation.md",
+      "sha256": "87acbede18e1d633f9ca955706ad024bb8135d86957d16673c93c3f0986a399e"
+    },
+    {
+      "path": "research/sources/round64-manganese/20261014T063052Z-bixbyite-mn-source-investigation.json",
+      "sha256": "4f305d45750c7c3746678e87b1a01e4291b311c539fa131e017a41e6f0901576"
+    },
+    {
+      "path": "research/sources/round64-manganese/20261014T063052Z-bixbyite-mn-source-investigation.md",
+      "sha256": "ddbf8ca17c396eff9587ac495a2a17395304d87b0e19283982e54de02a9034fb"
+    },
+    {
+      "path": "reviews/structured/20261014T063915Z-lepidocrocite-round64-independent/review.md",
+      "sha256": "d3cc9600d5466570c45ce92c18026329b2c9bd21f96717c80e7a68f5e89101e8"
+    },
+    {
+      "path": "reviews/structured/20261014T063915Z-lepidocrocite-round64-independent/review.yaml",
+      "sha256": "05b4c9e41daf18ae7c622985f2bdcdaa45c7d63b16288ec7c8900ef37b920e8b"
+    },
+    {
+      "path": "reviews/structured/20261014T064248Z-feroxyhyte-round64-independent/review.md",
+      "sha256": "0286261a53d67e3c1206054b2eea2e445788ad562003542a3b2a2f330af13625"
+    },
+    {
+      "path": "reviews/structured/20261014T064248Z-feroxyhyte-round64-independent/review.yaml",
+      "sha256": "8cad1e61fb824aeff26582693610f1cae3e548e6a3683a3ce7257b5af79e9329"
+    },
+    {
+      "path": "reviews/structured/20261014T064301Z-akaganeite-round64-independent/review.md",
+      "sha256": "eab6b4dfb695b0d024648d8beed0853293dd2fc8e614d2aeafe36e658d3058d0"
+    },
+    {
+      "path": "reviews/structured/20261014T064301Z-akaganeite-round64-independent/review.yaml",
+      "sha256": "eb0fdfd5f89bd5765d73772d88644b13f65d491e1f7c45cc24cc4e9fd5a1588b"
+    },
+    {
+      "path": "reviews/structured/20261014T064301Z-bixbyite-mn-round64-independent/review.md",
+      "sha256": "6a37ea448c34d67e5cf5dc9da9ab4661772382b437cad4438e4168c4c50f909c"
+    },
+    {
+      "path": "reviews/structured/20261014T064301Z-bixbyite-mn-round64-independent/review.yaml",
+      "sha256": "552b39dc9e7f4ab9150165a9a1c1be90590097faa3a69f31efcea84425933a56"
+    },
+    {
+      "path": "reviews/structured/20261014T064301Z-manganite-round64-independent/review.md",
+      "sha256": "e123d95c31dc08216c0410eda81e6a74df52a9c1450f6f5049f2de1316f2e58c"
+    },
+    {
+      "path": "reviews/structured/20261014T064301Z-manganite-round64-independent/review.yaml",
+      "sha256": "8455f48e3a0192e870542dbcb6c1b8119c39395244d19be32499eba3f0d46eac"
+    },
+    {
+      "path": "reviews/structured/20261014T064938Z-lepidocrocite-round64-successor/review.md",
+      "sha256": "0e93afd0b1f6fc5a0042fa899c6f8470ac6e99abeb115e44119cedb3e2654eb9"
+    },
+    {
+      "path": "reviews/structured/20261014T064938Z-lepidocrocite-round64-successor/review.yaml",
+      "sha256": "a9cda02d1930664461cbfd557da56ef9a916b7fef97146a99ad2d198bb728df8"
+    }
+  ],
+  "issues": {
+    "corrected_review_issues": [
+      203
+    ],
+    "closed_source_issues": [],
+    "open_source_issues": [
+      202
+    ]
+  },
+  "scope": "Five mineral records, canonical CREATE histories plus one review-driven EDIT, six independent immutable scientific observations, four source-investigation topics, README and rendered pages. No schema, validator, project-test or governed-file change. Source incomplete lithium leads remain deferred.",
+  "publication_state": "Local scientific work and checks complete; independent publication audit, commit, PR and native queue are subsequent gates."
+}
