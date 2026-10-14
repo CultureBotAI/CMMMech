@@ -1,0 +1,39 @@
+{
+  "recorded_at": "2026-10-14T09:35:57.226278+00:00",
+  "reviewer": {
+    "identity": "codex /root/round67_manganese",
+    "model": "GPT-6",
+    "independence": "Independent of closeout-helper author /root. Curator of manganese records and author of frontier builder; not an independent review of own scientific records or frontier report."
+  },
+  "scope": "Static review of the closeout helper only. No execution, GitHub publication or Git mutation.",
+  "source": {
+    "path": "/private/tmp/cmm-round67-closeout-original-reconstructed.py",
+    "original_path": "/private/tmp/cmm-round67-closeout.py",
+    "sha256": "b5580bb611616b437948149a94862439f987a8677d45ce3e05bcc4455f2656ec",
+    "snapshot_basis": "Exact original source reconstructed from the complete earlier tool output after a concurrent author edit. SHA computed at reconstruction, not captured contemporaneously with the initial read."
+  },
+  "related_helpers_read": [
+    "/private/tmp/cmm-round67-cleanup.py",
+    "/private/tmp/cmm-round67-isolated-verification.py",
+    "/private/tmp/cmm-round67-publication-final.py"
+  ],
+  "verdict": "needs_changes",
+  "findings": [
+    {
+      "id": "R67-CLOSEOUT-001",
+      "severity": "medium",
+      "title": "Closeout claims exceed its explicit receipt bindings",
+      "evidence": "The helper loads postmerge but not preflight; its body claims both isolated runs verified absent topic objects. Hardcoded 317/3 and 312/362/373/68/312 are not compared with completed postmerge counts/log or config, and clean_detached_worktree is not asserted before the body claims it.",
+      "correction_required": "Bind and hash-check the completed preflight receipt and log; assert topic absence for both runs; compare expected counts with completed verification receipts/config and derive or validate test totals from the completed postmerge log; assert clean_detached_worktree before writing/publishing the body.",
+      "risk": "A stale or mismatched operational receipt could allow the automated PR comment to overstate completed verification. This does not invalidate the seven scientific records."
+    }
+  ],
+  "unresolved_questions": [
+    "Actual publication receipts do not exist yet; runtime success is not assessed."
+  ],
+  "corrections": [],
+  "provenance_correction": {
+    "recorded_at": "2026-10-14T09:36:31.264076+00:00",
+    "detail": "Initial uncommitted draft inadvertently hashed the already-corrected current helper during concurrent editing. Replaced that draft input with a separately retained reconstruction of the source actually reviewed; corrected-current source is reviewed separately."
+  }
+}
