@@ -1,0 +1,104 @@
+id: cmmmech:brushite
+name: Brushite
+material_kind: mineral
+description: Brushite is the hydrated calcium hydrogen phosphate mineral Ca(PO3OH)(H2O)2, commonly written
+  CaHPO4·2H2O. The September 2026 IMA list gives grandfathered status and original-description year 1865,
+  not a unique approval accession. It is distinct from anhydrous monetite, apatite minerals, elemental
+  phosphorus and mixed phosphate fertilizers. The curated laboratory experiment contains brushite-bearing
+  mixtures, including cell-free precipitates, rather than a phase-pure recovered product. No constituent
+  criticality is inherited.
+sources:
+- id: ima_2026_09
+  title: 'IMA-CNMNC. The New IMA List of Minerals, September 2026; definitions pages 1-2 and Brushite
+    row PDF page 32: Ca(PO3OH)(H2O)2, G, 1865. Previously acquired official original re-inspected on 14
+    October 2026.'
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: handbook
+  title: Handbook of Mineralogy. Brushite, version 1, 2001-2005; complete one-page entry, identity and
+    natural mineral context.
+  url: https://www.handbookofmineralogy.org/pdfs/brushite.pdf
+  accessed_on: '2026-10-14'
+- id: heveran2019
+  title: Heveran et al. (2019). Engineered Ureolytic Microorganisms Can Tailor the Morphology and Nanomechanical
+    Properties of Microbial-Precipitated Calcium Carbonate. Scientific Reports 9:14721. DOI 10.1038/s41598-019-51133-9;
+    original 13-page publisher PDF, Methods pp 10-11, Figures 1-4 and Table 2.
+  url: https://doi.org/10.1038/s41598-019-51133-9
+  accessed_on: '2026-10-14'
+- id: heveran2019_si
+  title: Heveran et al. (2019), Supplementary Information to DOI 10.1038/s41598-019-51133-9; original
+    DOCX with Supplementary Figure 1, nanoindentation and representative Raman spectra.
+  url: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41598-019-51133-9/MediaObjects/41598_2019_51133_MOESM1_ESM.docx
+  accessed_on: '2026-10-14'
+- id: ncbi_ecoli
+  title: NCBI Taxonomy 562, Escherichia coli, species; official XML inspected 14 October 2026. Species
+    mapping does not authenticate engineered HB101 derivatives.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=562&mode=Info
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: ureolytic_culture_calcium_phosphate_phase_change
+  name: Brushite-bearing precipitation and culture-associated phase change with cell-free controls
+  process: biomineralization
+  microbial: true
+  organisms:
+  - id: NCBITaxon:562
+    label: Escherichia coli
+  description: Heveran et al. detected brushite and apatite in cell-free medium and nonureolytic Escherichia
+    coli HB101 controls, and initially in the lower-urease HB101/ure-integration culture. Bulk calcium-phosphate
+    diffraction was replaced by calcite-dominated patterns as that culture developed; dissolved phosphorus
+    also returned to solution. This is evidence for a tested culture-associated change in mixed precipitates,
+    not a requirement for cells to form brushite, a measured brushite-specific conversion fraction or
+    an isolated phosphorus product.
+  context: The low-urease E. coli HB101/ure-integration and higher-urease HB101/pBU11 derivatives were
+    compared with source-named Sporosarcina pasteurii ATCC 11859, unmodified nonureolytic E. coli HB101
+    and medium without cells. E. coli precultures grew at 37 degrees C in LB with 50 micromolar NiCl2;
+    the pBU11 preculture also contained ampicillin. Live precultures entered filtered urea-CaCl2 medium
+    at OD600=0.2 in 50 mL conical-vial cultures shaken at 20 degrees C; shaker speed was not specified.
+    The recipe gives 20 g/L urea, 10 g/L NH4Cl and 3 g/L Difco nutrient broth, and lists 25 mmol each
+    of NaHCO3 and CaCl2 without an explicit per-volume denominator for those two entries. E. coli cultures
+    additionally received 5 micromolar NiCl2; identical Ni addition to all other arms is not assumed.
+    Ureolytic cultures were sacrificially sampled at 12 h, 1 d, 2 d and 7 d with three culture replicates
+    initially and four at 7 d; both controls were sampled in triplicate at 1 d, 2 d and 7 d. Solids recovered
+    on 0.22-micrometre filters were dried overnight at room temperature; XRD specimens were additionally
+    rinsed with deionized water and dried on silicon disks. SEM, XRD and selected 7 d Raman/WDS analyses
+    characterized processed solids. The nutrient broth supplies phosphorus, and pH and dissolved Ca/P
+    were tracked. The source calls its solution assay ICP-OES but names an Elan DRC-e instrument; the
+    instrumental-method inconsistency is not silently resolved or used to derive new concentrations.
+  evidence:
+  - source_ref: heveran2019
+    supports: support
+    explanation: Figure 2D-E, accompanying Results p4 and Methods p10 identify brushite/apatite in the
+      cell-free and wild-type controls at the sampled 1 d, 2 d and 7 d times. Figure 2B and Figure 3I-L
+      identify initial calcium-phosphate material in the lower-urease culture and later calcite. The positive
+      cell-free result directly rules out interpreting this experiment as proof that microbial metabolism
+      is necessary for initial brushite precipitation.
+  - source_ref: heveran2019
+    supports: partial
+    explanation: Figures 1G-H, 2B and 3 show phosphorus returning to solution and loss of bulk calcium-phosphate
+      detection as the lower-urease culture evolves. Multiple phosphate phases coexist, cultures are destructively
+      sampled, and rates use differences between replicate means. Dissolved P is not a phase-specific
+      brushite mass balance. The medium and wild-type controls do not show the same P return within 7
+      d, but the study does not isolate an enzyme-specific brushite dissolution pathway or exclude pH-mediated
+      abiotic chemistry.
+  - source_ref: heveran2019
+    supports: partial
+    explanation: Table 2 and pp 7-9 describe weak Raman phosphate signals at some 7 d calcite indentation
+      sites even when bulk XRD no longer detected calcium phosphate. Therefore bulk nondetection is not
+      complete brushite elimination or pure calcite recovery. Raman peak-area ratios are local compositional
+      proxies, not mass fractions; the mineral-size and mechanical-property results concern predominantly
+      calcite and are not assigned to bulk brushite.
+  - source_ref: heveran2019_si
+    supports: context_only
+    explanation: Supplementary Figure 1 is captioned as nanoindentation quality examples and representative
+      Raman spectra for biogenic calcite. The original DOCX was inspected and its load-displacement and
+      SPM image panels could be rendered or extracted; the Raman panel did not render in the available
+      conversion. The main article Table 2 and Raman Results support the retained local-trace interpretation.
+      No quantitative or phase claim depends on the inaccessible supplementary panel.
+curation_history:
+- timestamp: '2026-10-14T10:48:23.520164+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created brushite mineral identity and a controlled primary calcium-phosphate culture record,
+    preserving cell-free precipitation, mixed-phase limits and bulk-versus-local detection differences.
+history_refs:
+- history/records/brushite/2026-10-14T104826Z-codex-77f4f2.yaml

@@ -1,0 +1,147 @@
+id: cmmmech:maghemite
+name: Maghemite
+material_kind: mineral
+description: >-
+  Maghemite is the ferric iron oxide mineral commonly written gamma-Fe2O3,
+  distinct from hematite, magnetite, elemental iron and an unresolved magnetic
+  iron-oxide mixture. The September 2026 IMA list gives the vacancy-bearing
+  formula (Fe3+0.67 vacancy0.33)Fe3+2O4 and status Rd, redefined through a
+  2018 special procedure; this is not an IMA proposal identifier. The curated
+  laboratory study used synthesized nanomaghemite and supports culture-associated
+  reduction toward magnetite-like products, with sulfate-dependent differences
+  and mixed-product limitations. No iron criticality designation, natural-ore
+  extraction yield or industrial deployment is inherited.
+sources:
+- id: ima_2026_09
+  title: >-
+    IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 130,
+    Maghemite row; page 1 status and special-procedure definitions. Previously
+    acquired official PDF rechecked on the access date.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: gao2020
+  title: >-
+    Gao Y, Zhou Y, Xie Q, Chen T (2020). Effects of Sulfate on the Anaerobic
+    Transformation of Maghemite-Magnetite. Geological Journal of China
+    Universities 26(3):286-293. Chinese full text with English abstract;
+    Sections 2-4, Tables 1-3 and Figures 1-6.
+  url: https://doi.org/10.16108/j.issn1006-7493.2019032
+  accessed_on: '2026-10-14'
+- id: genbank_hq022824
+  title: >-
+    GenBank HQ022824.1. Desulfovibrio sp. J01 16S ribosomal RNA gene,
+    partial sequence, 1505 bp; source qualifier strain J01, sludge isolate,
+    taxon 877574. Accession cited by Gao et al. Section 2.2.
+  url: https://www.ncbi.nlm.nih.gov/nuccore/HQ022824.1
+  accessed_on: '2026-10-14'
+- id: ncbi_j01
+  title: >-
+    NCBI Taxonomy 877574. Desulfovibrio sp. J01, species-rank entry within
+    unclassified Desulfovibrio; does not establish a named species assignment.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=877574
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: j01_nanomaghemite_reduction
+  name: Culture-associated nanomaghemite reduction with and without added sulfate
+  process: redox_transformation
+  microbial: true
+  organisms:
+  - id: NCBITaxon:877574
+    label: Desulfovibrio sp. J01
+  description: >-
+    Gao et al. incubated a sulfate-reducing Desulfovibrio isolate with synthetic
+    nanomaghemite in lactate media with or without added sulfate. Both inoculated
+    treatments developed reduced Fe and magnetic and spectroscopic changes
+    interpreted as transformation toward magnetite; the sulfate-containing
+    treatment also developed sulfur-bearing secondary solids and a product
+    closer to magnetite stoichiometry in the authors' fitted model. The paper
+    cites HQ022824.1, which resolves to Desulfovibrio sp. J01; a named
+    Desulfovibrio species is not assigned here. Direct cell-to-mineral electron
+    transfer is a proposed explanation, not an experimentally isolated molecular
+    pathway. The sulfate treatment can include indirect reaction with
+    biologically produced sulfide.
+  context: >-
+    Laboratory four-arm experiment M1-M4, with three parallel bottles per arm:
+    M1 maghemite plus sulfate-free medium MA, M2 plus sulfate medium MB, M3 MA
+    plus cells and M4 MB plus cells. The precursor was commercial goethite,
+    reduced under H2 at 300 degrees C for 3.5 hours to nanomagnetite and then
+    oxidized in air at 300 degrees C for three days. The starting maghemite
+    had a reported Scherrer crystallite size of 28.1 nm and surface area
+    19.46 m2/g. Media were autoclaved at 121 degrees C for 30 minutes and
+    mineral UV-treated for 40 minutes. Each nominal 30 mL serum bottle received
+    27 mL medium, 0.01 g ascorbic acid and 0.22 g mineral; the paper calls this
+    50 mmol/L but does not reconcile that concentration with the stated mass
+    and final 30 mL volume, so no corrected loading is substituted. Cells from
+    3 mL culture were filtered and washed to remove residual sulfate and
+    sulfide, then water brought the volume to 30 mL; the starting cell density
+    is not reported. Preparation used an anoxic glovebox and N2:CO2 80:20
+    flushing, followed by shaking incubation at 37 degrees C for 31 days.
+    Both media contained lactate, ammonium, phosphate and bicarbonate; MB
+    contained Na2SO4 and MgSO4, with a reported medium sulfate concentration
+    of 1.123 g/L before the stated dilution, while MA used chloride salts.
+    Initial pH is not stated; endpoint pH was 7.46, 7.70, 7.19 and 7.33 in
+    M1-M4. Solids were centrifuged, washed with anoxic water, freeze-dried
+    and stored cold in anaerobic bags. No killed-cell, separated-cell,
+    cell-free-metabolite or matched sulfide-only treatment isolates contact
+    transfer. Ascorbate occurs in the sterile and inoculated arms; chloride
+    and sulfate media are not identical in ionic composition. This is a
+    synthetic-powder assay, not natural-ore processing or recovered iron.
+  evidence:
+  - source_ref: gao2020
+    supports: support
+    explanation: >-
+      Sections 3.1-3.5, Tables 1-3 and Figures 1, 2, 4 and 5 support a
+      culture-associated redox and structural change relative to the two
+      uninoculated media controls. Controls retain approximately constant
+      susceptibility and lack fitted surface Fe(II); inoculated solids develop
+      Fe(II) XPS components, larger fitted lattice parameters and altered
+      room-temperature Mossbauer spectra. Table 3 models M3 as cation-deficient
+      and M4 as closer to magnetite stoichiometry. Figure 5 and Section 3.5
+      report susceptibility maxima at day 16 for M3 and day 11 for M4, followed
+      by declines; neither inoculated curve had stabilized by day 31. These
+      are magnetic observations, not transformation percentages or recovery yields.
+  - source_ref: gao2020
+    supports: partial
+    explanation: >-
+      The mineral and causal assignments are qualified. Section 3.2 says no
+      separate phase other than maghemite was resolved by XRD, then infers
+      magnetite-like transformation from lattice shifts; overlapping nanophase
+      diffraction alone does not establish a pure final phase. Mossbauer and
+      XPS are fitted interpretations, and the sulfate arm contains additional
+      paramagnetic and superparamagnetic components. Table 1 reports dissolved
+      Fe(II) 0.822 mg/L and total dissolved Fe 1.032 mg/L only for M4; dashes
+      for the other dissolved-Fe entries denote below detection, not zero,
+      and numerical detection limits are absent. Solid Fe(II) wt% and fitted
+      spectral areas are not purified-product yields. Sulfur XPS suggests
+      sulfide species but does not uniquely identify mackinawite, greigite or
+      pyrite as separate mineral products. Figure 3's English caption repeats
+      Fe fitting labels from Figure 2, whereas its Chinese caption and body
+      describe sulfur components; the sulfur interpretation is bounded to
+      those labels and the actual plotted S spectrum. Table 3's doublet
+      labels and areas are retained as source model assignments, not adopted
+      as independently established phase fractions.
+  - source_ref: gao2020
+    supports: partial
+    explanation: >-
+      Section 4 proposes direct transfer and more cell-mineral contacts when
+      sulfate supports growth, but Figure 6 is a conceptual drawing, not
+      microscopy or a contact-count experiment. Protein is used as a biomass
+      proxy, with no initial growth series, contact exclusion or electron
+      transfer mutant. Sulfide-mediated abiotic reaction, microbial metabolites
+      and interaction with the added ascorbate are not separately apportioned.
+      The stated triplicates have no displayed dispersion in the endpoint
+      tables or susceptibility plot, limiting effect-size precision. Gao
+      cites the same group's Zhou et al. 2019 work as prior work; that
+      unavailable full study is not counted here as independent replication
+      or used to import complete-conversion claims.
+curation_history:
+- timestamp: '2026-10-14T10:43:58Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: >-
+    Created maghemite identity and a qualified primary Gao2020 culture-associated
+    reduction mechanism, preserving strain resolution, control limitations,
+    phase interpretation and source inconsistencies; Ohenhen supporting
+    information and Zhou2019 full-text gaps remain separate research priorities.
+history_refs:
+- history/records/maghemite/2026-10-14T104505Z-codex-f4c1ca.yaml

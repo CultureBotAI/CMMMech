@@ -8,15 +8,20 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 319 material records.
+The catalogue currently contains 324 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Brushite](data/records/brushite.yaml) | XRD-assigned phosphate in bacterial and cell-free precipitation assays | Abiotic formation and changing phase mixtures prevent a microbial-necessity or recovery-yield claim |
+| [Cattiite](data/records/cattiite.yaml) | Original mineral identity and qualitative abiotic dehydration | Preparation-sensitive polytypes and tentative product identity; no microbial mechanism inferred |
+| [Maghemite](data/records/maghemite.yaml) | Controlled culture-associated reduction of synthetic nanomaghemite | Ascorbate, ionic differences and fitted mixed products limit pathway and yield claims |
+| [Whewellite](data/records/whewellite.yaml) | Calcium oxalate in fungal cultures and lichen-bearing rock | Mixed substrate, absent matched sterile outcome and hydration handling constrain attribution |
+| [Weddellite](data/records/weddellite.yaml) | Lichen-associated calcium oxalate with a contrasting culture outcome | Laboratory products were reported as whewellite only; no universal organism-specific exclusion inferred |
 | [Millerite](data/records/millerite.yaml) | Source-assigned crystalline domains in bacterial and abiotic Ni-sulfide precipitates | Mixed phases and differing preparation conditions prevent a pure-product or microbial-necessity claim |
 | [Polydymite](data/records/polydymite.yaml) | Qualified phase assignment in Ni-sulfide precipitation experiments | Possible preparation oxidation and overlap with violarite constrain attribution |
 | [Vaesite](data/records/vaesite.yaml) | XRD and electron diffraction identify a phase in the No Fe (no added Fe stock) biotic arm | Unlike pH and sulfide delivery limit the causal comparison |
 | [Hannayite](data/records/hannayite.yaml) | Mineral identity with primary abiotic crystallization and hydrolysis evidence | No microbial mechanism inferred from chemical synthesis or natural occurrence |
-| [Hazenite](data/records/hazenite.yaml) | Original mineral description and association with cyanobacterial remains | Field association does not establish biological exclusivity or recovery yield |
+| [Hazenite](data/records/hazenite.yaml) | Field association and a supplemented Stappia culture experiment | Isolate-specific diffraction and incomplete matched controls prevent biological exclusivity or recovery-yield claims |
 | [Wollastonite](data/records/wollastonite.yaml) | Controlled bacterial dissolution assays with limited or null effects | Source inconsistencies and published debate restrict kinetic extrapolation |
 | [Diopside](data/records/diopside.yaml) | Controlled dissolution assays with limited or null bacterial effects | Source pH discrepancies and supplementary observations limit generalization |
 | [Asbolane](data/records/asbolane.yaml) | Geobacter-associated alteration of synthetic Co/Ni-asbolane | Partial aqueous release and mixed products leave metal fate and reduction pathways unresolved |
