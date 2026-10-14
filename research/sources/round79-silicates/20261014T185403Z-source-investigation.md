@@ -1,0 +1,23 @@
+# Round79 phlogopite source investigation
+
+UTC: 2026-10-14T18:54:03.696612+00:00
+Curator: codex (GPT-6; codex)
+Base: e3ac010053a78aad7650bb2608a1f0110e4cd8bf
+
+Created one new mineral-species owner, `data/records/phlogopite.yaml`, using the complete [Pinzari2024 original](https://doi.org/10.1016/j.funbio.2024.08.002) and official supplement. This study also grounds the existing muscovite and vermiculite records; its phlogopite arm is a distinct substrate observation, not independent replication. IMA September2026 PDF171 and the complete Handbook establish species identity. No criticality, recovery yield or industrial deployment is inferred.
+
+The complete fourteen-page main text, Figures1–5, Tables1–5 and five-page rendering of the official DOCX supplement were independently inspected. Figure1b1–b3 shows surface alteration. Table3 potassium is 8.64±2.91 versus5.52±1.69 micrograms/g dry mycelium (both groupc; n5, SD), preserving the null contrast. Higher harvested Al/Fe does not establish source-specific intracellular uptake. No aged abiotic mineral or pH-matched control separates fungal enhancement from chemical attack. SI S3 supplies natural specimen provenance, Mg-dominant composition and XRD no-detected-accessory statement; trace purity is unquantified. ITS checking is source-reported; current NCBI71150 establishes species only. Proposed acid-related expression is not intervention-tested causality. No gene-level spreadsheet or raw-read reanalysis is claimed.
+
+All accepted-source raw paths, hashes and claim locators are in the paired JSON. Primary: `/private/tmp/cmm-round73-silicates-research/pinzari2024.pdf`; official supplement: `/private/tmp/cmm-round73-silicates-research/pinzari2024-mmc1.docx`. Existing raw files were re-read, not silently treated as previously reviewed for this owner. Bulk originals remain outsideGit. Current source authority acquisitions and bounded notice/conflict queries are retained under `/private/tmp/cmm-round79-silicates-research`. No affecting correction surfaced in the bounded query and Crossref metadata; this is not a universal absence claim.
+
+The hidden/ignored-inclusive, relevant-symlink-following dedup searched records, research, reviews, history, main research and referenced acquisition roots (see `dedup.json` and `dedup-paths.txt`). It found existing contextual phlogopite mentions and exact shared-study lineage, with no phlogopite owner. Existing chlorite already covers the Fe-rich clinochlore-labelled Brookshaw specimen, so no species fallback was manufactured. The search is bounded, not machine-wide or globally exhaustive.
+
+## Issue256 remains open
+
+Fresh Crossref-advertised Elsevier access for [Balland-Bolou-Bi2019](https://doi.org/10.1016/j.chemgeo.2018.12.020) returned HTTP200 coredata only, not full text. Current OpenAlex adds no distinct accessible route. Prior HAL challenge/publisher403 routes were not blindly retried. [Nejadasadi2021 sepiolite](https://doi.org/10.1007/s42729-021-00602-0) remains missing complete inspectable graphics/methods; current institutional searches and metadata did not resolve it. Existing sepiolite is unchanged.
+
+A legitimate [University of Lorraine thesis](https://docnum.univ-lorraine.fr/public/SCD_T_2010_0016_BALLAND-BOLOU-BI.pdf) was newly acquired in full (354pages; SHA1cffae6a7fb90966013543afd9909a00eb5da62931dfdfcd9b89ad3125a9681a). Its title page and official catalog identify Clarisse Balland Bolou Bi, defended15April2010. Article2 has a different title/version from the2019journal. Screening covered the English experiment text, all its displayed Tables1–3/Figures1–7 and general material-methods page, not all354pages. Chapter2 versus appendix temperature/oxide labels conflict; agitation, surface-area uncertainty, run distinctions and per-mille release denominators need reconciliation. The thesis is a concrete accessible lead; no bacterial claim or numerical result was adopted. Obtaining and comparing the2019original and inspecting the2021sepiolite source remain acceptance conditions for issue256. The new fungal record does not resolve those source obligations.
+
+## Validation and handoff
+
+Canonical CREATE history: `history/records/phlogopite/2026-10-14T185056Z-codex-fba0ec.yaml`. Separate inline event records actual curation. Strict named validation passed1record/0failed. Frozen record/history hashes and log hash are in `/private/tmp/cmm-round79-silicates-research/frozen-records.json`. Parent batch gates and independent scientific acceptance are separate later steps. No schema, validator, README or governed-file changes were made in this lane.

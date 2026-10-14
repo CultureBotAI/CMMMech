@@ -1,0 +1,497 @@
+schema_version: 1.0.0
+review_id: 20261014T191111Z-stevensite-round79-independent-resolution
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Stevensite
+started_at: '2026-10-14T18:57:04.656588Z'
+finished_at: '2026-10-14T19:11:11.837682Z'
+reviewer:
+  identity: codex /root/round68_iron_sulfides
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Clay owner/history authored by round68_phosphates. Reviewer
+    authored phlogopite, did not edit either clay owner, and independently inspected
+    full accepted originals and all claim-bearing graphics from shared acquisitions.
+    Shared acquisition is not replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Corrected source locators verified independently; all preserved F1/F2 occurrences
+  explicitly resolved. Qualified microbial-associated observation and short abiotic
+  null supported with uncertainty retained.
+source:
+  git_revision: e3ac010053a78aad7650bb2608a1f0110e4cd8bf
+  state: working_tree
+  inputs:
+  - path: data/records/stevensite.yaml
+    sha256: 2247c7dccbbac10f83ae567769ffce529f3967150c0bd7811786f1c495470b1a
+    role: target
+  - path: history/records/stevensite/2026-10-14T185509Z-codex-e90b96.yaml
+    sha256: de5db16665446a98f5bd9f6fc9f9ea74d18b2f151f287ac6798e69361871a7b0
+    role: context
+  - path: history/records/stevensite/2026-10-14T190514Z-codex-e3ede2.yaml
+    sha256: dc889f8840324f6e478842896c4d78bacbd2a7520b26940132d82627ea52a15d
+    role: context
+  - path: reviews/structured/20261014T190151Z-stevensite-round79-locator-initial/review.yaml
+    sha256: 9042e1c974a10015efab09dd555e94b0f1087933d04e87a1b0db3b5db21d5945
+    role: context
+  - path: reviews/structured/20261014T190402Z-stevensite-round79-locator-followup/review.yaml
+    sha256: b6f36515531fc1de2c9c94f25952a3043efb5ea3c6163dc2cf2f880ecfa0e468
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Whole exact maintained record, canonical history, authority identity
+    and primary claim-bearing methods/results/figures/tables/supplement, controls,
+    contradictory statements and actual checks.
+  selection: Assigned frozen clay owner; inspect before assessment, no reviewer owner
+    edits.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:stevensite
+targets:
+- target_id: cmmmech:stevensite
+  path: data/records/stevensite.yaml
+  label: Stevensite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/stevensite.yaml
+    role: maintained
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/stevensite.yaml --require-records
+  status: passed
+  required: true
+  summary: Actual reviewer execution exit0; one record and zero failures. Per-command
+    interval not independently recorded.
+  target_ids:
+  - cmmmech:stevensite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Actual batch gate 1
+  command: just check
+  status: passed
+  required: true
+  summary: Actual coordinator 2026-10-14T19:06:09.205551+00:00 to 2026-10-14T19:10:07.214159+00:00,
+    terminal receipt/log and owner SHA independently verified.
+  target_ids:
+  - cmmmech:stevensite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batch_log
+- check_id: batch1
+  name: Actual batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Actual coordinator 2026-10-14T19:10:07.214183+00:00 to 2026-10-14T19:10:15.684284+00:00,
+    terminal receipt/log and owner SHA independently verified.
+  target_ids:
+  - cmmmech:stevensite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batch_log
+- check_id: batch2
+  name: Actual batch gate 3
+  command: uv run --locked cmmmech validate-history --base e3ac010053a78aad7650bb2608a1f0110e4cd8bf
+  status: passed
+  required: true
+  summary: Actual coordinator 2026-10-14T19:10:15.684306+00:00 to 2026-10-14T19:10:21.340376+00:00,
+    terminal receipt/log and owner SHA independently verified.
+  target_ids:
+  - cmmmech:stevensite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batch_log
+- check_id: batch3
+  name: Actual batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Actual coordinator 2026-10-14T19:10:21.340399+00:00 to 2026-10-14T19:10:24.923388+00:00,
+    terminal receipt/log and owner SHA independently verified.
+  target_ids:
+  - cmmmech:stevensite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batch_log
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/stevensite.yaml
+  locator: 'Complete maintained owner. Actual local artifact: /private/tmp/CMMMech-expansion-round79-20261014/data/records/stevensite.yaml'
+  accessed_at: '2026-10-14T19:11:11.837682Z'
+  support: supports
+  summary: Exact canonical identity, mechanisms, evidence and provenance read independently.
+  snapshot_sha256: 2247c7dccbbac10f83ae567769ffce529f3967150c0bd7811786f1c495470b1a
+- evidence_id: history0
+  kind: record_content
+  reference: history/records/stevensite/2026-10-14T185509Z-codex-e90b96.yaml
+  locator: 'Complete canonical history and linked separate inline event. Actual local
+    artifact: /private/tmp/CMMMech-expansion-round79-20261014/history/records/stevensite/2026-10-14T185509Z-codex-e90b96.yaml'
+  accessed_at: '2026-10-14T19:11:11.837682Z'
+  support: supports
+  summary: Verified actual codex/GPT-6 actor, target, event and change scope; earlier
+    sidecars preserved.
+  snapshot_sha256: de5db16665446a98f5bd9f6fc9f9ea74d18b2f151f287ac6798e69361871a7b0
+- evidence_id: history1
+  kind: record_content
+  reference: history/records/stevensite/2026-10-14T190514Z-codex-e3ede2.yaml
+  locator: 'Complete canonical history and linked separate inline event. Actual local
+    artifact: /private/tmp/CMMMech-expansion-round79-20261014/history/records/stevensite/2026-10-14T190514Z-codex-e3ede2.yaml'
+  accessed_at: '2026-10-14T19:11:11.837682Z'
+  support: supports
+  summary: Verified actual codex/GPT-6 actor, target, event and change scope; earlier
+    sidecars preserved.
+  snapshot_sha256: dc889f8840324f6e478842896c4d78bacbd2a7520b26940132d82627ea52a15d
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'September 2026 original, PDF p205. Actual local artifact: /private/tmp/cmm-round64-iron-research/ima2026-09.pdf'
+  accessed_at: '2026-10-14T19:11:11.837682Z'
+  support: supports
+  summary: Exact original mineral row visually checked, status Q1873 for stevensite
+    or G1875 for sauconite; no invented IMA approval accession.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://handbookofmineralogy.org/pdfs/stevensite.pdf
+  locator: 'Complete one-page authority. Actual local artifact: /private/tmp/cmm-round79-clays-research/stevensite-handbook.pdf'
+  accessed_at: '2026-10-14T19:11:11.837682Z'
+  support: supports
+  summary: Formula/group and phase-identification caveats read and visually inspected.
+  snapshot_sha256: cb86ac09e2e62d74f72a43b90688345af7c9613bdc12b6ebe9a798bc47c33b05
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.gca.2025.12.052
+  locator: 'Complete original 15 pages, methods/results/discussion, Figures1-5 and
+    Tables1-4; original main graphics inspected at page and contact-sheet scales.
+    Actual local artifact: /private/tmp/cmm-round79-clays-research/stevensite-diva-fulltext.pdf'
+  accessed_at: '2026-10-14T19:11:11.837682Z'
+  support: supports
+  summary: Complete accepted original independently read; source-assigned experimental
+    phase and limits tested against the record. Failed alternative downloads are not
+    evidence.
+  snapshot_sha256: 2674bc5283402e3cac892ae44496883d8e09629cf806d18a7318ab9bbfc9fc78
+- evidence_id: si
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S0016703725007446-mmc1.pdf
+  locator: 'Complete31-page original acquired; claim-bearing FiguresS1-S7 and TablesS1-S7
+    read/visually checked; carbonate-capacity calculation and PHREEQC listing scoped
+    as model context, not independently rerun. Actual local artifact: /private/tmp/cmm-round79-clays-research/stevensite-si.pdf'
+  accessed_at: '2026-10-14T19:11:11.837682Z'
+  support: supports
+  summary: Treated diffraction, control photographs, weak dypingite diffraction and
+    EDS inset checked; actual FigureS6/table numbering and source discrepancies retained.
+  snapshot_sha256: 8103e2804177db0281f3ec9709deefef9e083e3ad51278a0cf66f2fee196c9a8
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round79-clays-independent/stevensite-validation.log
+  locator: 'Actual independent named --require-records execution. Actual local artifact:
+    /private/tmp/cmm-round79-clays-independent/stevensite-validation.log'
+  accessed_at: '2026-10-14T19:11:11.837682Z'
+  support: supports
+  summary: One record, zero failures; validation does not prove scientific truth.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round79-final-gates-corrected.json
+  locator: 'Actual terminal four-command coordinator gate. Actual local artifact:
+    /private/tmp/cmm-round79-final-gates-corrected.json'
+  accessed_at: '2026-10-14T19:11:11.837682Z'
+  support: supports
+  summary: All command exit codes, trusted base, log digest and exact reviewed owner
+    hash independently verified.
+  snapshot_sha256: c6d4ecad7a9199dce703b39ec9ce471779c814ca81f4c2267a46100d2bfff8b7
+- evidence_id: batch_log
+  kind: validation
+  reference: /private/tmp/cmm-round79-final-gates-corrected.log
+  locator: 'Full actual log checked against receipt SHA256. Actual local artifact:
+    /private/tmp/cmm-round79-final-gates-corrected.log'
+  accessed_at: '2026-10-14T19:11:11.837682Z'
+  support: supports
+  summary: Includes just check, strict nonempty validation, canonical history validation
+    and pages check.
+  snapshot_sha256: 0b57d41c3d48ff58913dbbdd8a8ee381fe01ab9a535c52c3c5c958f1a3e9d29f
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round79-clays-independent/dedup.txt
+  locator: 'Bounded followed hidden/ignored-inclusive record/research/review/history
+    and current raw text search. Actual local artifact: /private/tmp/cmm-round79-clays-independent/dedup.txt'
+  accessed_at: '2026-10-14T19:11:11.837682Z'
+  support: context_only
+  summary: Prior contextual smectite references and author dossier retained; this
+    review does not claim machine-wide absence.
+  snapshot_sha256: f56b5845e37fe02ef61f1b6ab02d00a7b33487e7a28b3a6f59db79fa9bc371d1
+  search_scope: rg --no-ignore --hidden --follow -a -n -i stevensite|sauconite|10.1016/j.gca.2025.12.052|jcssjclayscience1960.13.75
+    data/records research reviews history /private/tmp/cmm-round79-clays-research
+    -g *.yaml -g *.md -g *.json -g *.txt; existing author dossier additionally records
+    main checkout/referenced raw inventory
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round79-clays-independent/web-notices.json
+  locator: 'Actual bounded 2026-10-14 web query return. Actual local artifact: /private/tmp/cmm-round79-clays-independent/web-notices.json'
+  accessed_at: '2026-10-14T19:11:11.837682Z'
+  support: context_only
+  summary: No applicable correction/retraction returned for exact DOI/notice queries.
+    Related 2026 field study and2025 environmental-driver work surfaced as unreviewed
+    context, not accepted replication. Higashi2002 contrary low-temperature recipe
+    result retained as reported in accepted sauconite primary.
+  snapshot_sha256: 236a823f787a538b97ee60ab6ec363fd058e6d99b4f8de20e267f30264ee93c9
+  search_scope: Exact two DOI queries plus correction/erratum/retraction; stevensite
+    Arizaleta microbial carbonate dypingite; sauconite Yokoyama Higashi100. First
+    returned result set, not exhaustive notice search.
+- evidence_id: prior0
+  kind: prior_review
+  reference: reviews/structured/20261014T190151Z-stevensite-round79-locator-initial/review.yaml
+  locator: 'Immutable initial locator observation. Actual local artifact: /private/tmp/CMMMech-expansion-round79-20261014/reviews/structured/20261014T190151Z-stevensite-round79-locator-initial/review.yaml'
+  accessed_at: '2026-10-14T19:11:11.837682Z'
+  support: supports
+  summary: Original findings preserved and exact occurrences resolved below.
+  snapshot_sha256: 9042e1c974a10015efab09dd555e94b0f1087933d04e87a1b0db3b5db21d5945
+- evidence_id: prior1
+  kind: prior_review
+  reference: reviews/structured/20261014T190402Z-stevensite-round79-locator-followup/review.yaml
+  locator: 'Immutable initial locator observation. Actual local artifact: /private/tmp/CMMMech-expansion-round79-20261014/reviews/structured/20261014T190402Z-stevensite-round79-locator-followup/review.yaml'
+  accessed_at: '2026-10-14T19:11:11.837682Z'
+  support: supports
+  summary: Original findings preserved and exact occurrences resolved below.
+  snapshot_sha256: b6f36515531fc1de2c9c94f25952a3043efb5ea3c6163dc2cf2f880ecfa0e468
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral versus experimental phase
+  outcome: supported
+  summary: Current authority status and formula correctly distinguish species/name
+    from constituent elements, smectite group and experimental synthetic product.
+    No criticality designation or unverified strain identifier is asserted.
+  target_ids:
+  - cmmmech:stevensite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  - primary
+- assessment_id: community
+  area: identity
+  topic: Unresolved community and causal taxon
+  outcome: supported
+  summary: MilkLake mixed mat collected2018, filtered2020 lake waters plus BG11,0.15g
+    wetmat/200mL. Morphological cyanobacteria/heterotrophs/diatoms do not establish
+    isolate IDs or causal membership. BG11 and lakewater supplyMg; glass may supplySi.
+  target_ids:
+  - cmmmech:stevensite
+  evidence_ids:
+  - record
+  - primary
+  - si
+- assessment_id: controls
+  area: evidence
+  topic: Association with carbonate and unmatched controls
+  outcome: supported
+  summary: BIO3 source-assigned low-abundance dypingite after6months on synthetic
+    clay; BIO1/BIO2 no phase change; BIO3null no new phase. No-biofilm arms begin5months
+    later, foil-dark and7months versus~12months biotic. BIO3control gaylussite/trona
+    and BIO1control unresolvedMg-silicate are distinct. Observations support community
+    association, not exclusive metabolic necessity.
+  target_ids:
+  - cmmmech:stevensite
+  evidence_ids:
+  - record
+  - primary
+  - si
+- assessment_id: phase
+  area: evidence
+  topic: Qualified synthetic clay and carbonate coating
+  outcome: supported
+  summary: Broad0601.53Å, Mg/Si0.73 and treated basal13.95→14.53→12.32Å support authors’
+    likely-stevensite interpretation, not refined pure phase. Figure5/S5 weak low-abundance
+    carbonate feature plus platy coating and FigureS6 interaction-volume EDS support
+    source-assigned dypingite; not quantitative pure-product mass.
+  target_ids:
+  - cmmmech:stevensite
+  evidence_ids:
+  - record
+  - primary
+  - si
+- assessment_id: 'null'
+  area: evidence
+  topic: Short abiotic dissolution without detected carbonate
+  outcome: supported
+  summary: Approx1g/100mL,10%CO2orHCl/NaOH,~28h; XRD/SEM/FTIR no detectedcarbonate,
+    solutionMg/Si release. Reprecipitation/sorption possibilities retained without
+    proving a new silicate phase. These short abiotic recipes are not matched controls
+    for year-long mats.
+  target_ids:
+  - cmmmech:stevensite
+  evidence_ids:
+  - record
+  - primary
+  - si
+- assessment_id: quantities
+  area: quantity
+  topic: Conflicting measurements and modeled capacity
+  outcome: supported
+  summary: MainTables3/4 BIO3/BIO3null Mg values swap; source pH207min7.27vs8.21 and
+    alkalinity609vs465 conflicts retained. FigureS6 lower Mg weight% in coating volume
+    correctly limits enrichment wording. Evaporation, sampling, underlyingclay and
+    alternativeMg sources preclude recovery efficiency/clay-onlymassbalance. Theoretical
+    carboncapacity/saturation are not measuredcapture.
+  target_ids:
+  - cmmmech:stevensite
+  evidence_ids:
+  - record
+  - primary
+  - si
+- assessment_id: provenance
+  area: provenance
+  topic: Exact scientific owner and actual checks
+  outcome: supported
+  summary: Native inspect preceded judgment; canonical actor/event/history and separateinline
+    provenance checked. Reviewer authoredphlogopite only and did not edit either clay
+    owner. Actual named and appropriate batch receipts bind reviewedbytes; no hosted
+    publication assertion.
+  target_ids:
+  - cmmmech:stevensite
+  evidence_ids:
+  - record
+  - history0
+  - named
+  - batch
+  - batch_log
+findings:
+- finding_id: F1
+  issue_key: stevensite-round79-eds-figure-locator
+  category: evidence
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Identify the EDS inset as Figure S6, not Table S6
+  description: The supplement EDS caution is scientifically supported, but its Table
+    S6 locator is incorrect. The mass-percentage inset belongs to Figure S6 on SI
+    page 17; actual Table S6 on pages 12–13 gives modeled saturation indices. Correct
+    the locator without changing the scientific scope.
+  target_ids:
+  - cmmmech:stevensite
+  field_paths:
+  - mechanisms[id=mat_associated_carbonation].evidence[1].explanation
+  evidence_ids:
+  - record
+  - primary
+  - si
+  - history1
+  - prior0
+  - prior1
+  rule_id: claim-source-locator
+  native_severity: minor
+  normalization_reason: Minor EDS source-locator error; supported scientific caution
+    unchanged.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/stevensite.yaml
+    role: maintained
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261014T190151Z-stevensite-round79-locator-initial
+    finding_id: F1
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261014T190402Z-stevensite-round79-locator-followup
+    finding_id: F1
+  disposition_reason: Independently compared corrected explanation and original FigureS6/tableS6;
+    exact locator now identifies FigureS6 inset, preserving Mg percentage caution.
+    Canonical EDIT and inline event appended; affected validation passed. Both original
+    F1 heads resolved.
+- finding_id: F2
+  issue_key: stevensite-round79-adjacent-source-locators
+  category: evidence
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Correct adjacent source figure, table and section locators
+  description: SI S5 is XRD and S6 is EDS; platy coating morphology is main Figure5.
+    SI S1-S4/TableS1 cover treated diffraction, biotic photographs and digested-clay
+    chemistry, whereas solution sampling/measurements are TablesS2-S3. Abiotic post-reaction
+    diffraction is FigureS4, not biotic-photo FigureS3. Main Section4.1 discusses
+    biotic mechanisms and Section4.2 abiotic interpretation; the owner reverses these
+    in relevant explanations. Correct the narrow locators without changing accepted
+    phase, community, control, uncertainty or outcome assertions.
+  target_ids:
+  - cmmmech:stevensite
+  field_paths:
+  - mechanisms[id=mat_associated_carbonation].evidence
+  - mechanisms[id=abiotic_ph_swing_null].evidence
+  evidence_ids:
+  - record
+  - primary
+  - si
+  - history1
+  - prior0
+  - prior1
+  rule_id: claim-source-locator
+  native_severity: minor
+  normalization_reason: Minor adjacent locator errors across morphology, solution
+    data, diffraction and discussion sections; experimental outcomes and explicitly
+    bounded causal interpretation unchanged.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/stevensite.yaml
+    role: maintained
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261014T190402Z-stevensite-round79-locator-followup
+    finding_id: F2
+  disposition_reason: Independently checked all corrected morphology, diffraction,
+    solution-data and discussion locators against original main/SI. MainFigure5 owns
+    coating morphology; SI S5/S6 own XRD/EDS; S1–S4/TableS1 descriptions and TablesS2–S3
+    measurements are accurately scoped; S4 is post-abiotic XRD; §4.1 biotic and §4.2
+    abiotic discussions. No broader scientific claim added; EDIT and affected checks
+    verified.
+actions: []
+limitations:
+- IMA Q/questionable and source likely synthetic phase remain explicit; no pure-phase
+  or formal approval promotion.
+- Mixed community, unequal control timing/illumination, alternativeMg/Si sources and
+  unmeasured microenvironment/metabolic contributions preclude necessity or causal-taxon
+  proof.
+- Mendeley underlying files not independently acquired/reanalyzed; accepted main/SI
+  support narrow observations, not fitted mass balance or phase refinement.
+- PHREEQC listings and theoretical capacity are contextual; no independent model rerun
+  or quantitative carboncapture claim.
+- Source internal numerical conflicts and verylowcarbonate abundance retained; laboratory
+  observation only.
+- Bounded notice search and prior contextual overlap assessed; no exhaustive absence
+  claim. Hosted checks and publication are separate future gates.
+notes:
+- Actual nonempty primary/authority files are bound to exact localpaths and SHA256;
+  bulk originals remain outside Git.
+- Issue https://github.com/CultureBotAI/CMMMech/issues/263 tracks the coherent locator
+  corrections. Expanded observation retained related_reviews but omitted F1 previous_occurrences;
+  this final explicitly reconciles both preserved F1 heads and F2, rather than treating
+  a clean later review as retirement.
+- Initial partial F2 normalization copied the Mg-only F1 wording; this final supplies
+  its own accurate locator-wide normalization and disposition. Saved observations
+  remain unchanged.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261014T190151Z-stevensite-round79-locator-initial
+  relationship: follow_up
+- repository: CultureBotAI/CMMMech
+  review_id: 20261014T190402Z-stevensite-round79-locator-followup
+  relationship: follow_up
