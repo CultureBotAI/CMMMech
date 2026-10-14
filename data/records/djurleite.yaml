@@ -1,0 +1,144 @@
+id: cmmmech:djurleite
+name: Djurleite
+material_kind: mineral
+description: >-
+  Djurleite is the monoclinic copper sulfide mineral Cu31S16, distinct from
+  chalcocite, digenite, covellite, copper element and a mixed copper ore.
+  The September 2026 IMA list records approved status A and 1967 s.p.; the
+  special-procedure notation is not a numbered approval accession. A natural
+  djurleite-rich separate supports a qualified laboratory culture-associated
+  copper-mobilization observation. Its associated copper minerals, missing
+  uninoculated comparator and inconsistent inoculum reporting prevent a
+  pure-phase extraction yield or an independently isolated microbial effect.
+sources:
+  - id: ima_2026_09
+    title: >-
+      IMA-CNMNC, The New IMA List of Minerals, September 2026; PDF pages 1-2
+      explain status and special procedures, page 58 lists Djurleite, Cu31S16,
+      A, 1967 s.p.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-14'
+  - id: handbook_djurleite
+    title: >-
+      Handbook of Mineralogy, Djurleite, version 1 (2001-2005); Cu31S16,
+      monoclinic crystal data and association with other copper sulfides
+    url: https://handbookofmineralogy.org/pdfs/djurleite.pdf
+    accessed_on: '2026-10-14'
+  - id: fu2014
+    title: >-
+      Fu K, Lin H, Luo D, Jiang W and Zeng P (2014), Comparsion of bioleaching
+      of copper sulphides by Acidithiobacillus ferrooxidans, African Journal
+      of Biotechnology 13(5):664-672; methods page 665, Tables 1-2 and
+      Figures 1-5, including the inoculum contradiction on pages 666 and 669
+    url: https://doi.org/10.5897/AJB2013.13023
+    accessed_on: '2026-10-14'
+  - id: ncbi_ferrooxidans
+    title: >-
+      NCBI Taxonomy, Acidithiobacillus ferrooxidans, Taxonomy ID 920;
+      species-level identity, not authentication of experimental strain Atf.6
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
+    accessed_on: '2026-10-14'
+mechanisms:
+  - id: culture_associated_copper_mobilization
+    name: Culture-associated copper mobilization from a djurleite-rich separate
+    process: bioleaching
+    microbial: true
+    organisms:
+      - id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+    description: >-
+      Fu et al. report copper entering solution during incubation of a
+      djurleite-rich natural separate with a living culture identified as
+      Acidithiobacillus ferrooxidans Atf.6. Inoculum and ferrous-iron series,
+      together with a separate cell-attachment assay, support a conditional
+      culture-associated observation. They do not distinguish direct enzymatic
+      attack from chemical oxidation or establish that all copper came from
+      djurleite. The source-reported 95.12% endpoint is a bulk-specimen copper
+      extraction index, not an isolated-product recovery or phase conversion.
+    context: >-
+      Laboratory shake-flask experiments on handpicked material from Bofang
+      copper mine, Hunan, China. The paper reports XRD identification of
+      djurleite with small amounts of chalcocite, bornite and quartz, but
+      publishes no diffraction trace or quantitative phase refinement.
+      Table 1 reports 71.94% Cu, 1.22% Fe and 20.53% S, and labels purity
+      90.65% without explaining its calculation. The material was milled in
+      porcelain below 74 micrometres and stored under nitrogen. Culture Atf.6
+      was isolated from a Daye copper mine and adapted in stages; no collection
+      accession or sequence authentication is supplied. Late-logarithmic
+      cells were grown in optimized 4.5 K medium containing, per litre,
+      2.0 g (NH4)2SO4, 0.25 g K2HPO4, 0.25 g MgSO4.7H2O, 0.1 g KCl and
+      22.0 g FeSO4.7H2O. Leaching used 250 mL flasks with 100 mL working
+      solution, 20 g/L solids, initial pH 2, 30 degrees C, 160 rpm and
+      48 days. Distilled water replaced evaporation. Inoculum series used
+      0.5, 1.0 and 1.5 x 10^8 cells at nominal zero initial Fe(II); the iron
+      series used 0, 1.5, 2.5 and 4.5 g/L initial Fe(II). Culture-medium
+      carryover into nominal zero-iron leaching is not resolved; washing is
+      described for the separate attachment assay, not clearly for leaching.
+      Page 666 identifies 1.0 x 10^8 cells as best for djurleite, whereas
+      page 669 calls 0.5 x 10^8 cells optimal for the combined assay. This
+      conflict is retained, and the Figure 3 endpoint is not assigned a
+      uniquely verified inoculum. Dissolved copper was measured by atomic
+      absorption spectroscopy and cells counted with a hemocytometer;
+      counting alone does not verify viability. No matched uninoculated
+      leaching time course, sterilization check, replication count, uncertainty
+      estimates, explicit extraction equation or cumulative sampling correction
+      is reported. The outcome is solution mobilization in a laboratory,
+      without a closed copper mass balance or isolated copper product.
+    evidence:
+      - source_ref: fu2014
+        supports: support
+        explanation: >-
+          Methods on page 665 and Figures 1a, 2a and 3a report increasing
+          dissolved-copper extraction indices from the djurleite-rich
+          specimen in inoculated flasks. Page 668 reports 95.12% after
+          48 days at 1.5 g/L initial Fe(II). Figure 2a also shows that higher
+          initial iron was not uniformly beneficial. These are conditional
+          specimen-level observations, not a universal optimum or a
+          quantitative djurleite-only conversion.
+      - source_ref: fu2014
+        supports: partial
+        explanation: >-
+          Page 665 reports 36.45% copper extraction when pH was adjusted to 2,
+          before the reported incubation time course; Figure 1a starts near
+          that value. Substantial initial chemical release and the absence
+          of a matched uninoculated time course prevent attributing the
+          full endpoint or its increment exclusively to microbial activity.
+          Associated chalcocite and bornite are additional copper sources.
+          The paper's direct-attack and ferric-regeneration explanations
+          are proposed mechanisms, without selective inhibition, contact
+          separation or chemistry-matched controls.
+      - source_ref: fu2014
+        supports: partial
+        explanation: >-
+          Pages 666 and 669 conflict on the preferred djurleite inoculum
+          (1.0 versus 0.5 x 10^8 cells). Figure 3c and its discussion label
+          redox potential in eV, without an electrode reference, so no
+          numerical redox threshold is adopted. Figure 3a does not reproduce
+          the initial copper baseline depicted in Figures 1a and 2a; no
+          reconciliation is supplied. The paper repeats Figure 2
+          on pages 667-668 and Table 1 on pages 665 and 671; repeated
+          layouts are not independent experiments. Its cited Fu et al.
+          2013 djurleite paper is related same-group work and is not
+          counted here as independent replication.
+      - source_ref: fu2014
+        supports: partial
+        explanation: >-
+          The separate attachment assay on page 665 used washed cells in
+          50 mL of 0.001 mol/L KCl at pH 2, 30 degrees C and 120 rpm,
+          with 0.5 g mineral of reported 50 micrometre size. Attachment
+          was estimated by subtracting planktonic counts, and Figures 4-5
+          show attachment trends and cells on mineral surfaces. These
+          conditions differ from leaching. Depletion, SEM attachment and
+          adsorption-model fits do not demonstrate direct enzymatic
+          dissolution or prove that attachment caused the copper endpoint.
+curation_history:
+  - timestamp: '2026-10-14T15:41:35Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Created a distinct djurleite mineral owner and qualified natural-mixture
+      culture-associated copper-mobilization observation, retaining chemical
+      baseline release, missing controls, inoculum and figure inconsistencies,
+      unresolved strain lineage and laboratory-only recovery scope.
+history_refs:
+  - history/records/djurleite/2026-10-14T154126Z-codex-2adec1.yaml

@@ -1,0 +1,111 @@
+id: cmmmech:montmorillonite
+name: Montmorillonite
+material_kind: mineral
+description: Montmorillonite is a hydrated smectite mineral with generalized formula (Na,Ca)0.3(Al,Mg)2Si4O10(OH)2·nH2O,
+  distinct from nontronite, generic smectite, mixed-layer illite-smectite and bentonite clay resources.
+  The September 2026 IMA list retains the name as grandfathered, dated 1847; this date is not a numbered
+  approval accession. The curated experiment used processed natural Source Clays SWy-2 rather than an
+  ideal pure endmember. No criticality designation is inherited from aluminium, magnesium or other constituents.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026; definitions pp.1–2 and Montmorillonite
+    row PDF p.147, G, 1847, generalized formula. Retained official original re-inspected 14 October 2026.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: montmorillonite_handbook
+  title: 'Handbook of Mineralogy: Montmorillonite, 2001 version 1.2; complete one-page entry, smectite-group
+    membership, variable composition and identification caution. Original acquired and inspected 14 October
+    2026.'
+  url: https://handbookofmineralogy.org/pdfs/montmorillonite.pdf
+  accessed_on: '2026-10-14'
+- id: liu_2017
+  title: Liu, G.; Qiu, S.; Liu, B.; Pu, Y.; Gao, Z.; Wang, J.; Jin, R.; Zhou, J. (2017). Microbial reduction
+    of Fe(III)-bearing clay minerals in the presence of humic acids. Scientific Reports 7:45354. DOI 10.1038/srep45354.
+    Complete nine-page original; SWy-2 Figure 1d–f, Figure 2b and Methods pp.7–8 re-inspected. Same study
+    as the distinct NAu-2 nontronite record.
+  url: https://doi.org/10.1038/srep45354
+  accessed_on: '2026-10-14'
+- id: liu_2017_si
+  title: Liu et al. (2017), original nineteen-page supplementary information srep45354-s1.pdf, acquired
+    from the complete Europe PMC supplementary archive in round74 and re-inspected; SWy-2 Figures S1c/d
+    and S6, and NAu-2-only scope of S2–S5 and S7–S10 checked.
+  url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5371790/supplementaryFiles
+  accessed_on: '2026-10-14'
+- id: ncbi_mr1
+  title: 'NCBI Taxonomy: Shewanella oneidensis MR-1, taxon 211586, strain rank; current authoritative
+    XML checked 14 October 2026.'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: mr1_humic_swy2_reduction
+  name: Humic-associated enhancement of iron reduction in SWy-2 suspensions containing MR-1
+  process: redox_transformation
+  microbial: true
+  organisms:
+  - id: NCBITaxon:211586
+    label: Shewanella oneidensis MR-1
+  description: Liu2017 observed increasing operational total iron(II) in montmorillonite SWy-2 suspensions
+    containing washed Shewanella oneidensis MR-1 cells. Added humic acids increased iron(II) relative
+    to live suspensions without added humic acid. The result supports a conditional culture-associated
+    reduction phenotype and humic enhancement; it does not establish that every reduced iron atom came
+    from the montmorillonite lattice, that the sterile controls for a different clay apply here, or that
+    a dissolved iron product was recovered. The separate nontronite assays do not establish SWy-2 illite,
+    silica or siderite production.
+  context: The source identifies SWy-2 from the Clay Minerals Society Source Clays Repository as montmorillonite
+    and gives a structural composition, but does not provide a quantitative accessory-phase analysis of
+    the experimental fraction. Bulk material was ground, soaked in 0.01 M NaCl for 24 hours, size-fractionated
+    to 0.5–2.0 micrometres by centrifugation, washed until the AgNO3 chloride test was negative, freeze-dried
+    and ground. MR-1, reported as ATCC 700550, was grown overnight in tryptic soy broth at 30 degrees
+    C, harvested, washed and resuspended in sterile 10 mM PIPES, then held anaerobically. Basic assays
+    used 50 mL serum bottles with 30 mL deoxygenated 10 mM PIPES, 0.03 g SWy-2, 3 mg KCl and 10–200 mg/L
+    Aldrich, Suwannee River or Elliott soil humic acid, inoculated to approximately 10^8 cells/mL and
+    shaken at 30 degrees C in darkness. Figure 1d–f spans up to 120 hours. The reduction-assay electron
+    donor and PIPES pH are not explicitly stated in the inspected original or supplement; pH 7 used for
+    a separate stock/model is not assigned to this assay. Figure 2b additionally labels 1, 5 and 10 g/L
+    SWy-2 arms, although the Methods sentence introducing the expanded loading series names only NAu-2.
+    This is laboratory iron redox chemistry, not demonstrated industrial extraction or microbial growth
+    yield.
+  evidence:
+  - source_ref: liu_2017
+    supports: support
+    explanation: Figure 1d–f and Results pp.2–3 show total iron(II) time courses for SWy-2 with each humic-acid
+      type and concentration, including live zero-humic-acid comparisons. Figure 2b separately varies
+      SWy-2 loading with and without Elliott soil humic acid. Error bars represent SD for n=3; the Methods
+      says experiments were performed at least three times. Total and dissolved iron(II) used the cited
+      phenanthroline assay. These operational iron fractions are not synonymous with isolated dissolved-metal
+      recovery or a phase-specific extraction mass balance.
+  - source_ref: liu_2017_si
+    supports: support
+    explanation: Figure S1c/d reports initial reduction rates and reduction extents for SWy-2. Figure
+      S6 directly shows ethylene-glycolated SWy-2 XRD before exposure and after reduction without or with
+      Elliott soil humic acid. Changes in diffraction support alteration of the processed clay, but neither
+      a refined phase inventory nor complete conversion to a pure product is supplied. No numerical values
+      were digitized from these plots.
+  - source_ref: liu_2017_si
+    supports: partial
+    explanation: The explicit sterile comparison in Figure S5b concerns NAu-2, not SWy-2. No matched sterile
+      SWy-2 time course is presented in the inspected main or supplement. Zero-humic-acid SWy-2 arms still
+      contain MR-1 and therefore are not abiotic controls. NAu-2-specific humic fractionation, electrochemical
+      activity, Fe(II)-complexation experiments and dissolved-versus-solid-associated partitions cannot
+      independently prove those mechanisms for SWy-2. Humic abiotic reducing capacity and accessory-iron
+      contributions are not excluded by the accepted SWy-2 comparisons.
+  - source_ref: liu_2017
+    supports: partial
+    explanation: The detailed microscopy and assignments of illite, silica and tentative siderite in Figure
+      6 and supplementary Figures S7–S10 concern NAu-2. Their products and molecular interpretation are
+      not transferred to this montmorillonite record. Added KCl also prevents interpreting any potassium
+      in a possible product as wholly released from SWy-2. The two mineral records share this publication
+      lineage and are not independent replication of one experiment.
+  - source_ref: ncbi_mr1
+    supports: context_only
+    explanation: Taxon 211586 resolves the named MR-1 strain. The taxonomy entry supports organism identity,
+      not the mineral transformation or independent verification of the culture stock.
+curation_history:
+- timestamp: '2026-10-14T15:42:02.178887+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created montmorillonite from the complete Liu2017 original and supplement, restricting microbial
+    iron reduction to the distinct SWy-2 arms and preserving missing controls, donor/pH and product-transfer
+    limits.
+history_refs:
+- history/records/montmorillonite/2026-10-14T154216Z-codex-d7937f.yaml
