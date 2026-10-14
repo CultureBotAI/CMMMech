@@ -1,0 +1,180 @@
+{
+  "reviewed_at": "2026-10-14T10:14:50.513394+00:00",
+  "reviewer": "codex /root/round68_iron_sulfides",
+  "scope": "Independent static successor and regression against actual corrected commit acceptance function. No Git/GitHub mutation executed. Scientific records unchanged.",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "unresolved_corrective_findings": 0,
+  "prior_observation": {
+    "path": "/private/tmp/cmm-round68-additional-helper-findings-20261014T101114Z.json",
+    "sha256": "09b15fa69960c9092e70b7b2ab7570d309208e6670747b1a1f3afdf42d29a7ba"
+  },
+  "reviewed_helpers": [
+    {
+      "path": "/private/tmp/cmm-round68-commit.py",
+      "sha256": "3482c6218030e653ac5bae05d7803f190408875479337503ba8e61d2df204948"
+    },
+    {
+      "path": "/private/tmp/cmm-round68-build-report.py",
+      "sha256": "bf419b3e6228eab927f4b3c708077ee3c5f70b65754f715131b7f6e35bec77f9"
+    }
+  ],
+  "findings": [
+    {
+      "issue_key": "round68-publication-audit-binding",
+      "severity": "major",
+      "status": "resolved",
+      "target": "/private/tmp/cmm-round68-commit.py",
+      "problem": "Acceptance uses passed==True OR positive verdict and does not require no unresolved corrective findings or compare the exact input state captured by the independent final audit with the candidate commit files. Rebuilding the manifest after an edit could leave a stale final audit accepted.",
+      "evidence": "Current helper reads final audit into a and checks only a.get(passed) is True or a.get(verdict) in pass/pass_with_limitations. It separately hashes manifest artifacts, without comparing audit input hashes.",
+      "acceptance": "Require explicit audit passed:true, no unresolved corrective findings, matching configured counts/issues, and exact candidate path/hash binding to final-audit working_inputs with documented exclusion of self-referential audit files. A stale audit, passed:false/positive verdict, unresolved finding or mismatched input must fail before git add/commit.",
+      "prior_occurrence": {
+        "path": "/private/tmp/cmm-round68-additional-helper-findings-20261014T101114Z.json",
+        "sha256": "09b15fa69960c9092e70b7b2ab7570d309208e6670747b1a1f3afdf42d29a7ba",
+        "issue_key": "round68-publication-audit-binding"
+      },
+      "issue": 214,
+      "correction_verified": "Actual extracted gate rejects stale/failed/unresolved/mismatched state with18 independent temporary-file cases; root12-case regression also inspected."
+    },
+    {
+      "issue_key": "round68-report-no-fe-wording",
+      "severity": "minor",
+      "status": "resolved",
+      "target": "/private/tmp/cmm-round68-build-report.py",
+      "problem": "The generated vaesite summary uses Fe-free, while the maintained record explicitly limits the experiment to no added Fe stock and does not establish trace-Fe-free medium.",
+      "evidence": "build-report.md text template: vaesite phase found in study Fe-free biotic arm.",
+      "acceptance": "Use No Fe (no added Fe stock) or equivalent bounded wording in generated report.",
+      "prior_occurrence": {
+        "path": "/private/tmp/cmm-round68-additional-helper-findings-20261014T101114Z.json",
+        "sha256": "09b15fa69960c9092e70b7b2ab7570d309208e6670747b1a1f3afdf42d29a7ba",
+        "issue_key": "round68-report-no-fe-wording"
+      },
+      "issue": null,
+      "correction_verified": "README and report generator now use No Fe (no added Fe stock), consistent with the record."
+    }
+  ],
+  "independent_regression": {
+    "cases": [
+      {
+        "case": "exact reviewed candidate",
+        "accepted": true,
+        "expected": true,
+        "passed": true
+      },
+      {
+        "case": "false passed with positive verdict",
+        "accepted": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "case": "true passed with negative verdict",
+        "accepted": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "case": "unresolved finding",
+        "accepted": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "case": "boolean masquerading as zero",
+        "accepted": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "case": "list masquerading as zero",
+        "accepted": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "case": "wrong base",
+        "accepted": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "case": "wrong branch",
+        "accepted": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "case": "wrong state",
+        "accepted": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "case": "wrong counts",
+        "accepted": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "case": "wrong issue state plan",
+        "accepted": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "case": "empty input list",
+        "accepted": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "case": "wrong file hash",
+        "accepted": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "case": "duplicate inputs",
+        "accepted": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "case": "additional real file",
+        "accepted": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "case": "missing candidate path",
+        "accepted": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "case": "changed real file bytes",
+        "accepted": false,
+        "expected": false,
+        "passed": true
+      },
+      {
+        "case": "symlink replacement",
+        "accepted": false,
+        "expected": false,
+        "passed": true
+      }
+    ],
+    "actual_function_extracted_by_ast": true,
+    "case_count": 18
+  },
+  "root_regression": {
+    "path": "/private/tmp/cmm-round68-audit-binding-regression.json",
+    "sha256": "6686c2636ad39d2000df59d0c9c127849ce363284d2c06571694ca365dec1a8a",
+    "helper_sha256": "3482c6218030e653ac5bae05d7803f190408875479337503ba8e61d2df204948",
+    "case_count": 12
+  },
+  "limitations": [
+    "Package final audit, native GitHub checks and actual merge remain future gates.",
+    "No claim of atomic protection against concurrent file edits; coordinator must maintain a frozen package between audit and staging."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "reviewed_at": "2026-10-14T10:11:14.854701+00:00",
+  "reviewer": "/root/round68_iron_sulfides",
+  "scope": "Independent static audit of two newly supplied publication helpers; no publication operation executed.",
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round68-commit.py",
+      "sha256": "a7a608f3f510f6e84acd70525d5705061dc2e1c0cc2a2b5080ff31b2f8fedaa3"
+    },
+    {
+      "path": "/private/tmp/cmm-round68-build-report.py",
+      "sha256": "7c71146c7de170803245c7de4184608d7bf7a56d0e4ba55d0a2cde77e5193eee"
+    }
+  ],
+  "findings": [
+    {
+      "issue_key": "round68-publication-audit-binding",
+      "severity": "major",
+      "status": "open",
+      "target": "/private/tmp/cmm-round68-commit.py",
+      "problem": "Acceptance uses passed==True OR positive verdict and does not require no unresolved corrective findings or compare the exact input state captured by the independent final audit with the candidate commit files. Rebuilding the manifest after an edit could leave a stale final audit accepted.",
+      "evidence": "Current helper reads final audit into a and checks only a.get(passed) is True or a.get(verdict) in pass/pass_with_limitations. It separately hashes manifest artifacts, without comparing audit input hashes.",
+      "acceptance": "Require explicit audit passed:true, no unresolved corrective findings, matching configured counts/issues, and exact candidate path/hash binding to final-audit working_inputs with documented exclusion of self-referential audit files. A stale audit, passed:false/positive verdict, unresolved finding or mismatched input must fail before git add/commit."
+    },
+    {
+      "issue_key": "round68-report-no-fe-wording",
+      "severity": "minor",
+      "status": "open",
+      "target": "/private/tmp/cmm-round68-build-report.py",
+      "problem": "The generated vaesite summary uses Fe-free, while the maintained record explicitly limits the experiment to no added Fe stock and does not establish trace-Fe-free medium.",
+      "evidence": "build-report.md text template: vaesite phase found in study Fe-free biotic arm.",
+      "acceptance": "Use No Fe (no added Fe stock) or equivalent bounded wording in generated report."
+    }
+  ],
+  "passed": false
+}

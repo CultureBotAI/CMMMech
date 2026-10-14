@@ -8,10 +8,17 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 312 material records.
+The catalogue currently contains 319 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Millerite](data/records/millerite.yaml) | Source-assigned crystalline domains in bacterial and abiotic Ni-sulfide precipitates | Mixed phases and differing preparation conditions prevent a pure-product or microbial-necessity claim |
+| [Polydymite](data/records/polydymite.yaml) | Qualified phase assignment in Ni-sulfide precipitation experiments | Possible preparation oxidation and overlap with violarite constrain attribution |
+| [Vaesite](data/records/vaesite.yaml) | XRD and electron diffraction identify a phase in the No Fe (no added Fe stock) biotic arm | Unlike pH and sulfide delivery limit the causal comparison |
+| [Hannayite](data/records/hannayite.yaml) | Mineral identity with primary abiotic crystallization and hydrolysis evidence | No microbial mechanism inferred from chemical synthesis or natural occurrence |
+| [Hazenite](data/records/hazenite.yaml) | Original mineral description and association with cyanobacterial remains | Field association does not establish biological exclusivity or recovery yield |
+| [Wollastonite](data/records/wollastonite.yaml) | Controlled bacterial dissolution assays with limited or null effects | Source inconsistencies and published debate restrict kinetic extrapolation |
+| [Diopside](data/records/diopside.yaml) | Controlled dissolution assays with limited or null bacterial effects | Source pH discrepancies and supplementary observations limit generalization |
 | [Asbolane](data/records/asbolane.yaml) | Geobacter-associated alteration of synthetic Co/Ni-asbolane | Partial aqueous release and mixed products leave metal fate and reduction pathways unresolved |
 | [Pyrochroite](data/records/pyrochroite.yaml) | Source-assigned hydroxide in Geobacter culture products | Mixed dried solids and absent mineral-control series limit phase-specific attribution |
 | [Feitknechtite](data/records/feitknechtite.yaml) | Transient source-assigned phase during manganese oxide reduction | Overlapping reflections and persistent Mn(III) preclude complete-conversion claims |

@@ -1,0 +1,97 @@
+"""Assemble completed local publication evidence; never claim future hosted results."""
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json,shutil,subprocess,yaml
+root=Path('/private/tmp/CMMMech-expansion-round68-20261014');tmp=Path('/private/tmp')
+base='e8a5f936607481446e4897e3bf2e0d10f0556632';branch='curate/cmm-expansion-round68-20261014'
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+git=lambda *a:subprocess.check_output(['git',*a],cwd=root,text=True).strip()
+assert git('rev-parse','HEAD')==base and git('branch','--show-current')==branch
+cfg=json.loads((tmp/'cmm-round68-helper-config.json').read_text());counts=cfg['counts']
+checks={}
+pub=root/'reviews/publication/20261014-round68';pub.mkdir(parents=True,exist_ok=True)
+artifacts=[]
+for name in ['baseline','final-gates','review-check','local-coverage','preservation-prepublication','integration-status']:
+ p=tmp/f'cmm-round68-{name}.json';v=json.loads(p.read_text())
+ if name=='integration-status':
+  assert v['admission']['state']=='MERGED' and v['convergence']['state']=='CLOSED' and v['cmm_integration']['state']=='CLOSED'
+  assert v['vendored_result']=='OK: 22 governed artifacts match the pinned claw revision'
+ else:assert v.get('passed',v.get('exit_code')==0),name
+ if 'log' in v:assert sha(Path(v['log']))==v['log_sha256']
+ if 'commands' in v:assert v['commands'] and all(x['exit_code']==0 for x in v['commands'])
+ if name in ['baseline','final-gates','review-check']:assert v['base']==base
+ if name=='local-coverage':assert all(v[k]==x for k,x in counts.items())
+ dest=pub/f'{name}.json';assert not dest.exists();shutil.copyfile(p,dest);artifacts.append(dest)
+ checks[name]={'path':str(dest.relative_to(root)),'sha256':sha(dest)}
+reviews=[(p,yaml.safe_load(p.read_text())) for p in (root/'reviews/structured').rglob('review.yaml')]
+records=[]
+for slug in cfg['slugs']:
+ p=root/'data/records'/f'{slug}.yaml';v=yaml.safe_load(p.read_text());relative=str(p.relative_to(root));digest=sha(p)
+ matches=[(rp,r) for rp,r in reviews if r.get('scientific_review') is True and r.get('completion')=='completed' and r.get('verdict') in ['pass','pass_with_limitations'] and r.get('scope',{}).get('reviewed_target_ids')==[v['id']] and any(t.get('path')==relative and t.get('target_id')==v['id'] for t in r.get('targets',[])) and any(i.get('path')==relative and i.get('sha256')==digest for i in r['source']['inputs'])]
+ assert len(matches)==1,(slug,len(matches));rp,rv=matches[0]
+ assert rv['reviewer']['independence']=='independent' and rv['source']['git_revision']==base
+ assert all(sha(root/i['path'])==i['sha256'] for i in rv['source']['inputs'])
+ assert not any(f.get('severity') in ['blocker','major'] and f['status'] not in ['resolved','rejected'] for f in rv.get('findings',[]))
+ records.append({'slug':slug,'path':relative,'sha256':digest,'review':str(rp.relative_to(root)),'history':v['history_refs']})
+ artifacts += [p,rp,rp.with_name('review.md'),*[root/h for h in v['history_refs']]]
+for directory in ['round68-iron-sulfides','round68-phosphates','round68-new-frontier']:
+ files=sorted((root/'research/sources'/directory).rglob('*'));files=[p for p in files if p.is_file()]
+ assert any(p.suffix=='.md' for p in files) and any(p.suffix=='.json' for p in files),directory
+ artifacts+=files
+changed=set(git('diff','--name-only').splitlines())|set(git('ls-files','--others','--exclude-standard').splitlines())
+assert not any(p.startswith(('src/','tests/','.github/','scripts/','.claude/','docs/')) for p in changed)
+artifacts += [root/p for p in changed if p=='README.md' or p.startswith(('pages/','reviews/structured/'))]
+now=datetime.now(timezone.utc).isoformat();dest=root/'research/ingests/round68-frontier-20261014.json';md=dest.with_suffix('.md');body=tmp/'cmm-round68-pr-body.md'
+assert not any(p.exists() for p in [dest,md,body])
+report={'recorded_at':now,'author':'Codex (GPT-6), /root; coordinator and independent reviewer of Ni trio; phosphate and silicate curators independently cross-reviewed each other. Root authored this report, README and publication helpers.','base':base,'branch':branch,'worktree':str(root),'records_created':records,'counts':counts,'issues':cfg['issues'],'checks':checks,'artifacts':[{'path':str(p.relative_to(root)),'sha256':sha(p)} for p in sorted(set(artifacts))],'scope':'Seven new mineral owners with primary evidence, CREATE history, independent scientific reviews, source dossiers, README and generated pages. No schema, validator or governed-file change.','publication_state':'Local checks completed; exact-head hosted review, isolated squash preflight, queue, actual merge and fresh-main verification are subsequent gates.'}
+rows='\n'.join('| ['+v['slug']+'](../../'+v['path']+') | [Markdown](../../'+v['review'].replace('review.yaml','review.md')+') / [YAML](../../'+v['review']+') |' for v in records)
+issue_lines='\n'.join('- '+kind.replace('_',' ')+': '+(', '.join(f'[#{n}](https://github.com/CultureBotAI/CMMMech/issues/{n})' for n in nums) if nums else 'None.') for kind,nums in cfg['issues'].items())
+md.write_text(f'''# Round 68: nickel sulfides, phosphates and silicate dissolution
+
+UTC {now}. Worktree `{root}`; branch `{branch}`; trusted base `{base}`.
+
+Seven distinct mineral records bring the corpus from 312 to {counts['record_count']}. Selection prioritizes inspectable primary evidence, explicit material identity and useful mechanistic contrasts. The nickel sulfide records share one experiment and are not independent replications. No constituent criticality or industrial deployment is inherited.
+
+- **Millerite:** source-assigned crystalline domains in mixed Ni-sulfide precipitates from bacterial and abiotic preparations. Neither all NiS nor every diffuse diffraction ring establishes millerite.
+- **Polydymite:** a qualified source assignment in mixed precipitates. Possible preparation oxidation and overlap with violarite constrain the causal interpretation.
+- **Vaesite:** XRD and electron diffraction support a phase found in the study's No Fe (no added Fe stock) biotic arm. Unlike pH and sulfide delivery prevent a general microbial-necessity claim.
+- **Hannayite:** distinct mineral identity with primary abiotic crystallization and hydrolysis evidence. No microbial mechanism is invented.
+- **Hazenite:** the original mineral description establishes identity and field association with cyanobacterial remains. Biological exclusivity, metabolism during formation and a recovery yield remain unproven.
+- **Wollastonite:** controlled bacterial dissolution assays with limited/null effects and documented debate over extrapolation beyond the tested systems.
+- **Diopside:** controlled dissolution assays preserve limited/null bacterial effects, source pH inconsistencies and limits of broad kinetic conclusions.
+
+| Record | Independent exact-state scientific review |
+|---|---|
+{rows}
+
+## Evidence and remaining priorities
+
+The [nickel sulfide dossier](../sources/round68-iron-sulfides/), [phosphate dossier](../sources/round68-phosphates/) and [silicate dossier](../sources/round68-new-frontier/) preserve acquisition, identity checks, source conflicts, deferred candidates and next actions. Original PDFs and supplementary files remain outside Git; provenance and hashes identify the inspected artifacts. Search scopes include hidden/ignored files and relevant symlinks, but do not establish global source exhaustion.
+
+Known priorities include maghemite supplementary evidence, controlled hazenite enrichment evidence, brushite primary-source assessment, antigorite acquisition and tremolite–actinolite specimen identity. Older source-access issues including meta-autunite #120 and vanadinite #129 remain unresolved; the coordinator did not claim a new full-source acquisition for them during publication.
+
+{issue_lines}
+
+Corrected review issues listed above are proposed closures by this PR, not claims of already completed closure. Open source questions are not marked resolved by narrowing the accepted record.
+
+## Validation and publication boundaries
+
+`just check` passed 317 tests with 3 skips. Nonempty validation passed {counts['record_count']} records; trusted-base history passed {counts['history_count']} sessions; structured checks passed {counts['structured_review_count']} bundles. Exact current scientific coverage is {counts['covered_records']}/{counts['record_count']}, with {counts['review_base_count']} available review bases. Local baseline, final gates and review-check receipts are retained under [publication evidence](../../reviews/publication/20261014-round68/).
+
+All 22 governed artifacts match CLAW's immutable pin. Admission, convergence and CMMMech integration are complete; the active native queue uses SQUASH/ALLGREEN. The PR shepherd remains the documented manual comment-only capability. Future changes must use CLAW's supported admission/synchronization process. No new governance deployment is performed here.
+
+The original main checkout and unrelated skill worktree were checked against initialization with hidden/ignored bytes, modes, symlink targets and Git state preserved. Before queue admission, verify exact topic/base/tree identity and isolated squash-shaped provenance. After actual merge and owned-branch deletion, repeat validation in a fresh remote-main clone and verify hosted workflows, merged tree/parent and preservation. No future hosted result is preclaimed.
+''')
+dest.write_text(json.dumps(report,indent=2)+'\n')
+fixes=' '.join(f'Fixes #{n}.' for n in cfg['issues']['corrected_review_issues']+cfg['issues']['closed_source_issues'])
+body.write_text(f'''Adds seven evidence-backed mineral records: millerite, polydymite, vaesite, hannayite, hazenite, wollastonite and diopside. Each has canonical history and an independent scientific review of its final bytes. The records preserve mixed-phase uncertainty, abiotic alternatives, null results and source inconsistencies; they make no inherited criticality or industrial recovery claims.
+
+Includes source dossiers, current catalogue summaries and generated pages. No schema, validator or governed-file changes.
+
+Validation: `just check` (317 passed, 3 skipped), `validate --require-records` ({counts['record_count']} records), trusted-base history ({counts['history_count']} sessions), structured review checks ({counts['structured_review_count']} bundles), and exact current review coverage ({counts['covered_records']}/{counts['record_count']}; {counts['review_base_count']} available bases. Governance byte check passes all 22 artifacts.
+
+[Round 68 evidence, review links and remaining priorities](research/ingests/round68-frontier-20261014.md). Source gaps remain explicit. Exact-head hosted review and isolated squash preflight precede native queue admission; fresh-main verification follows the actual merge.
+
+{fixes}
+''')
+print(json.dumps({'report':str(md),'records':len(records),'artifacts':len(report['artifacts'])}))

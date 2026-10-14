@@ -1,0 +1,379 @@
+schema_version: 1.0.0
+review_id: 20261014T101509Z-diopside-round68-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of diopside
+started_at: '2026-10-14T10:06:42.494907Z'
+finished_at: '2026-10-14T10:15:09.757526Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Scientific record, history and source dossier authored by /root/round68_new_frontier.
+    Reviewer independently read primary originals, figures and relevant supplements,
+    made independent conflict searches and no record/history edits. Acquisition artifacts
+    and curator cautions were shared.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Diopside is CaMgSi2O6, separate from the pyroxene group and mixed silicate
+  feeds. The natural experimental crystals have the reported nonideal composition,
+  not an assumed pure end member. Limited or unresolved bacterial enhancement and
+  modest element-dependent fungal effects are retained. Sequential baseline drift,
+  source discrepancies and imperfect controls prevent universal inhibition, uniform
+  null or proven molecular passivation claims.
+source:
+  git_revision: e8a5f936607481446e4897e3bf2e0d10f0556632
+  state: working_tree
+  inputs:
+  - path: data/records/diopside.yaml
+    sha256: 79084fd1d89a69e71c0efee76a6b961354ea9ca3f6ecbb235ba7068a07c72734
+    role: target
+  - path: history/records/diopside/2026-10-14T100554Z-codex-d9c583.yaml
+    sha256: 026aba5770043f7856fb1f110e0828ca39afd42578d54d74b298c8667057e3f9
+    role: context
+scope:
+  description: Exact maintained record and CREATE history reviewed against primary
+    claims and identity authorities.
+  selection: Assigned frozen target; native inspect preceded final field-by-field
+    judgment and source assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:diopside
+targets:
+- target_id: cmmmech:diopside
+  path: data/records/diopside.yaml
+  label: Diopside
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/diopside.yaml
+    role: maintained scientific record
+checks:
+- check_id: named
+  name: Named validation
+  command: uv run --locked cmmmech validate data/records/diopside.yaml
+  status: passed
+  required: true
+  summary: Reviewer executed in assigned isolated checkout; one record,zero failed.
+  target_ids:
+  - cmmmech:diopside
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Batch gate 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T10:07:55.959142+00:00 to 2026-10-14T10:10:54.849862+00:00;
+    receipt and full-log hash independently checked.
+  target_ids:
+  - cmmmech:diopside
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T10:10:54.849953+00:00 to 2026-10-14T10:11:12.359065+00:00;
+    receipt and full-log hash independently checked.
+  target_ids:
+  - cmmmech:diopside
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Batch gate 3
+  command: uv run --locked cmmmech validate-history --base e8a5f936607481446e4897e3bf2e0d10f0556632
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T10:11:12.359194+00:00 to 2026-10-14T10:11:20.211887+00:00;
+    receipt and full-log hash independently checked.
+  target_ids:
+  - cmmmech:diopside
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/diopside.yaml
+  locator: Entire frozen record
+  accessed_at: '2026-10-14T10:15:09.757526Z'
+  support: supports
+  summary: Read every field; native inspect preceded final independent source assessment;
+    target and CREATE-sidecar hashes rechecked immediately before saving.
+  snapshot_sha256: 79084fd1d89a69e71c0efee76a6b961354ea9ca3f6ecbb235ba7068a07c72734
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September 2026 list definitions pp1-2 and Diopside row PDF p57
+  accessed_at: '2026-10-14T10:15:09.757526Z'
+  support: supports
+  summary: Original definitions and relevant row visually inspected. Approved status
+    with literal special-procedure notation is retained rather than transformed into
+    an invented approval identifier.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/diopside.pdf
+  locator: Complete one-page diopside entry
+  accessed_at: '2026-10-14T10:15:09.757526Z'
+  support: supports
+  summary: Identity and mineral context read. Historical Handbook entry is not evidence
+    of exact experimental polytype or complete phase purity.
+  snapshot_sha256: 8588ef216e58bd94742c0dbea25822ca08be5b088f5649a4550d80ad7ee3a6fd
+- evidence_id: taxonomy
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=117680,587851&retmode=xml
+  locator: Official XML entries for NCBI 117680 and 587851
+  accessed_at: '2026-10-14T10:15:09.757526Z'
+  support: supports
+  summary: 'Read retained official taxonomy XML: Pseudomonas reactans is species 117680;
+    Pseudomonas aureofaciens maps to Pseudomonas chlororaphis subsp. aureofaciens
+    587851. Neither entry authenticates an experimental strain.'
+  snapshot_sha256: 93b94e19ce481fa896031ca545f347660f567e9dcb813984b2ddc19120e7a089
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round68-phosphate-crossreview/independent-search.json
+  locator: Independent bounded live search 2026-10-14 UTC
+  accessed_at: '2026-10-14T10:15:09.757526Z'
+  support: context_only
+  summary: Correction/retraction and directly relevant conflict searches found the
+    already-inspected 2010 scientific exchange and distinct mixed-slag follow-up.
+    No affecting correction surfaced in this bounded search; no universal absence
+    asserted.
+  search_scope: Queries and first-result-set scope are preserved in independent-search.json;
+    no date/domain filters or pagination.
+  snapshot_sha256: 92e0f81af7b735438fb0e3e17f5517a209bacc133c0c03275623725723bbbf32
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round68-phosphate-crossreview/dedup.txt
+  locator: Scoped hidden/ignored-inclusive repository and raw-root search
+  accessed_at: '2026-10-14T10:15:09.757526Z'
+  support: context_only
+  summary: Existing references and identity boundaries checked across data/records,
+    research, reviews, history and the shared raw evidence directory, with hidden
+    and ignored files included and relevant symlinks followed.
+  search_scope: rg --no-ignore --hidden --follow; wollastonite|diopside; repository
+    records/research/reviews/history plus /private/tmp/cmm-round68-new-frontier-research.
+    No machinewide absence claim.
+  snapshot_sha256: 67149f23653129a2205f516e978ebf4b02a20148e70fe1449c27ea16e202be48
+- evidence_id: history
+  kind: record_content
+  reference: history/records/diopside/2026-10-14T100554Z-codex-d9c583.yaml
+  locator: Complete CREATE session and inline event
+  accessed_at: '2026-10-14T10:15:09.757526Z'
+  support: supports
+  summary: Actual Codex/GPT-6/codex actor, current UTC events and exact target agree.
+    Reviewer made no scientific-record/history edits.
+  snapshot_sha256: 026aba5770043f7856fb1f110e0828ca39afd42578d54d74b298c8667057e3f9
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round68-phosphate-crossreview/diopside-validation.log
+  locator: Entire reviewer-executed named validation log
+  accessed_at: '2026-10-14T10:15:09.757526Z'
+  support: supports
+  summary: 'Locked offline validation passed: one record, zero failures.'
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round68-final-gates.json
+  locator: Completed command receipt and hashed full log
+  accessed_at: '2026-10-14T10:15:09.757526Z'
+  support: supports
+  summary: Root executed just check, nonempty corpus validation and trusted-base history
+    check successfully. Reviewer verified all exit codes and full-log SHA before saving.
+  snapshot_sha256: 98a8895b0aa6cd7c11a3a0e92d34f985e8d6985a2de3b3a6bcaf7842a578f477
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.nature.com/articles/s41529-021-00199-w.pdf
+  locator: Pokrovsky et al.2021 DOI10.1038/s41529-021-00199-w; scientific body pp1-9,
+    Tables1-2 and Figures1-5
+  accessed_at: '2026-10-14T10:15:09.757526Z'
+  support: supports
+  summary: Read complete scientific methods/results/discussion in retained ten-page
+    publisher PDF. Visually inspected all five main figures and both tables on PDF
+    pages2-6. Sequential bacterial flow-through and duplicate fungal batch experiments
+    are separate systems, neither a mineral recovery demonstration.
+  snapshot_sha256: 91ce97c66a2ddcb7a583f99b56977f2012cc38781ed19ebfc897785e43d3d3ae
+- evidence_id: source_limits
+  kind: primary_source
+  reference: https://doi.org/10.1038/s41529-021-00199-w
+  locator: Table1/Figure2; Table2/Methods; Figure5 and Results/Discussion
+  accessed_at: '2026-10-14T10:15:09.757526Z'
+  support: partial
+  summary: Record preserves nutrient-MES pH8 versus panel pH6.1, D3/D4 endpoints inconsistent
+    with a universal decrease,4-5day versus24h steady-state descriptions, fungal biomass
+    variation and the Figure5 dead/no-fungus control-label conflict. Rounded/etched
+    edges are not silently erased by a broader Discussion statement.
+  snapshot_sha256: 91ce97c66a2ddcb7a583f99b56977f2012cc38781ed19ebfc897785e43d3d3ae
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41529-021-00199-w/MediaObjects/41529_2021_199_MOESM1_ESM.pdf
+  locator: Complete two-page Supplementary Information; FiguresS1-S2
+  accessed_at: '2026-10-14T10:15:09.757526Z'
+  support: partial
+  summary: Read text and visually inspected both complete pages. Sequential blanks/cells
+    show baseline drift; no simultaneously aging blank is shown. Fungal figure gives
+    one example per treatment, not raw replicate data. Supplement does not resolve
+    main pH or biomass inconsistencies.
+  snapshot_sha256: e3e9b91e3c1cd96d44013f21eb21709255155419ee0d70104ebb42b9dcaa61d8
+- evidence_id: vkm
+  kind: database
+  reference: https://vkm.ru/rus/catalog/list/fungi.htm
+  locator: Retained official fungal catalogue; Chaetomium brasiliense F-3649 row
+  accessed_at: '2026-10-14T10:15:09.757526Z'
+  support: supports
+  summary: Verified collection name/code. Record appropriately avoids an unverified
+    current fungal taxon identifier or genomic authentication of the inoculum.
+  snapshot_sha256: a4a4f05cfa797926f3353cd5a2732b3c0542c34cd88876ece685a8de688f8064
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Material identity and scope
+  outcome: supported
+  summary: Diopside is CaMgSi2O6, separate from the pyroxene group and mixed silicate
+    feeds. The natural experimental crystals have the reported nonideal composition,
+    not an assumed pure end member.
+  target_ids:
+  - cmmmech:diopside
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  dimensions:
+  - name: criticality
+    value: No jurisdiction/list/edition designation asserted
+    definition: Constituent criticality is not inherited; omission is not a universal
+      noncriticality assertion.
+    evidence_ids:
+    - record
+- assessment_id: experiment
+  area: evidence
+  topic: Organism, substrate, pretreatment, biomass and controls
+  outcome: supported
+  summary: The record keeps the tested organism and natural substrate tied to the
+    specific controlled laboratory system.
+  target_ids:
+  - cmmmech:diopside
+  evidence_ids:
+  - record
+  - primary
+  - source_limits
+  - taxonomy
+  dimensions:
+  - name: organism
+    value: Pseudomonas reactans NCBI117680; source Chaetomium brasiliense F-3649
+    definition: Bacterial species only; fungal catalogue corroborates code but no
+      current taxon ID or strain authentication is invented.
+    evidence_ids:
+    - taxonomy
+    - vkm
+    - primary
+  - name: substrate
+    value: Natural100-200 micrometre diopside, Ca0.99Mg0.98Fe0.02Cr0.01Si2O6
+    definition: Ultrasonic cleaning; reported fresh BET1045 +/-50 cm2/g.
+    evidence_ids:
+    - primary
+  - name: biomass_state
+    value: Washed and2day-starved bacteria/fungi; fungal dead control132 degrees C/1h
+    definition: Live/dead densities vary; dead nutrient-added counterpart absent.
+    evidence_ids:
+    - primary
+    - source_limits
+  - name: conditions
+    value: Bacterial25mLflow-through,25 +/-0.5 degrees C,0.018-0.022mL/min; fungal19daybatch25
+      +/-1 degrees C
+    definition: Bacterial same-powder sequence contrasts with six fungal reactors
+      across three duplicate conditions.
+    evidence_ids:
+    - primary
+    - supplement
+  - name: controls
+    value: Sequential bacteria-free/low/high/bacteria-free stages; duplicate fungal
+      live/dead arms
+    definition: No simultaneously aging bacterial control or complete fungal nutrient
+      factorial is shown.
+    evidence_ids:
+    - primary
+    - supplement
+  - name: outcome
+    value: Dissolved Ca/Mg/Si and microscopy
+    definition: Fungal silica effect differs from Mg/Ca; microscopy supports attachment
+      and qualified alteration, not isolated product or molecular causality.
+    evidence_ids:
+    - primary
+    - source_limits
+    - supplement
+- assessment_id: outcome
+  area: evidence
+  topic: Bounded result and competing explanations
+  outcome: supported
+  summary: Limited or unresolved bacterial enhancement and modest element-dependent
+    fungal effects are retained. Sequential baseline drift, source discrepancies and
+    imperfect controls prevent universal inhibition, uniform null or proven molecular
+    passivation claims.
+  target_ids:
+  - cmmmech:diopside
+  evidence_ids:
+  - record
+  - primary
+  - source_limits
+  - supplement
+  dimensions:
+  - name: deployment
+    value: Laboratory experiments only
+    definition: No mineral-product yield, field extrapolation or industrial deployment
+      claimed.
+    evidence_ids:
+    - record
+    - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Reviewed state, source bounds and actual execution
+  outcome: supported
+  summary: Frozen exact bytes, actual CREATE provenance and completed validation receipts
+    support this independently assessed state.
+  target_ids:
+  - cmmmech:diopside
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - search
+  - dedup
+findings: []
+actions: []
+limitations:
+- Sequential bacterial exposure and baseline aging are not equivalent to simultaneous
+  matched controls.
+- Table/panel pH, endpoint factors, steady-state timing, biomass and Figure5 label
+  discrepancies remain explicit rather than numerically reconciled.
+- Fungal nutrient/dead controls are incomplete; modest silica differences do not establish
+  a consistent multi-element enhancement.
+- Microscopy does not identify the inhibitory molecule or establish a unique passivation
+  mechanism; no product recovery or deployment is shown.
+- Live browser retrieval failed for the Nature page and NCBI117680; the complete publisher
+  PDF/SI and retained official XML were independently inspected.
+notes:
+- No supported corrective finding on the inspected frozen state.
+- Bounded search does not certify absence of all other papers or corrections.
+- Raw source artifacts remain outside Git; schema validation is not independent experimental
+  replication.
+tags:
+- round68
+- independent
+- diopside
+- primary-figures
