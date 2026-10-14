@@ -1,0 +1,422 @@
+# Independent scientific review of marcasite
+
+- Review: 20261014T145839Z-marcasite-round74-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T14:53:53.061859Z
+- Finished UTC: 2026-10-14T14:58:39.207445Z
+- Reviewer: codex /root/round68_new_frontier (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of orthorhombic marcasite with culture-associated ferric-iron accumulation. The record preserves chemically altered inactive references, ferric-only measurement, missing strain/replication details and internal source contradictions; it claims neither total extraction nor industrial recovery.
+
+## Scope And Provenance
+
+Entire exact maintained owner and canonical history; accepted primary claims, controls, identity, scale and limitations.
+
+Selection: Assigned frozen owner; native inspect before scientific judgment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base a524756f3f4f90d81f89035fa7f85f1e1897b99d.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:marcasite | data/records/marcasite.yaml | maintained | Marcasite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Reviewer named strict validation | passed | True | cmmmech:marcasite | Reviewer executed 2026-10-14T14:54:52.104334+00:00 through 2026-10-14T14:54:56.431036+00:00; two records, zero failures. |
+| Completed batch gate 1 | passed | True | cmmmech:marcasite | Coordinator executed 2026-10-14T14:51:48.096045+00:00 through 2026-10-14T14:55:06.998511+00:00; terminal receipt/log independently verified. |
+| Completed batch gate 2 | passed | True | cmmmech:marcasite | Coordinator executed 2026-10-14T14:55:06.998535+00:00 through 2026-10-14T14:55:15.616870+00:00; terminal receipt/log independently verified. |
+| Completed batch gate 3 | passed | True | cmmmech:marcasite | Coordinator executed 2026-10-14T14:55:15.616892+00:00 through 2026-10-14T14:55:20.937881+00:00; terminal receipt/log independently verified. |
+
+## Scientific And Domain Assessments
+
+### Orthorhombic FeS2 versus pyrite
+
+identity: supported. Targets: cmmmech:marcasite.
+
+IMA/Handbook establish orthorhombic marcasite; source rhombohedral wording is correctly rejected. No element criticality or numbered IMA approval inferred.
+
+### Conditional live-culture ferric response
+
+evidence: supported. Targets: cmmmech:marcasite.
+
+Methods and Figure4/Table1 support more measured Fe(III) in culture arms than inactive references, with lower percentage response as solids loading increases. Source percentages are explicitly assay-based, not verified recovered-product fractions.
+
+### Altered references and incomplete iron accounting
+
+scope: supported. Targets: cmmmech:marcasite.
+
+The record retains boiled inoculum/HgI2, no pH/redox matching, unresolved inoculum carryover and unmeasured Fe(II)/precipitates. This prevents attributing an isolated direct attack pathway or total dissolved iron yield.
+
+### Species naming versus unaccessioned isolate
+
+identity: supported. Targets: cmmmech:marcasite.
+
+NCBI920 synonym resolves historical Thiobacillus to Acidithiobacillus ferrooxidans, but does not authenticate the Siersza mine-water isolate; no strain accession or cell density invented.
+
+### Rate/structure conflicts and broader comparisons
+
+evidence: supported. Targets: cmmmech:marcasite.
+
+Table1 contradicts the body claim of increasing marcasite k1 with loading; abstract and conclusion differ on structure interpretation. These conflicts remain. Bounded searches locate additional comparative studies but their incomplete originals are not treated as validated contrary experiments.
+
+### Exact-byte owner/history and actual validation
+
+provenance: supported. Targets: cmmmech:marcasite.
+
+Native inspect preceded judgment, canonical CREATE and inline events match the actual change, and final hashes remain identical. Named and completed batch checks passed.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/marcasite.yaml; Entire frozen owner | supports | Read all scientific fields, evidence and provenance; no reviewer edits. |
+| history | history/records/marcasite/2026-10-14T144457Z-codex-3ae48d.yaml; Canonical CREATE sidecar and inline event | supports | Verified actual actor/time, exact target and finished scientific limitations; no invented earlier authorship. |
+| primary | https://www.pjoes.com/pdf-87281-21140?filename=21140.pdf; Complete four-page original pp.87–90; all Figures1–4/Table1 and reaction schemes | supports | Independently read the entire original and viewed all four original-page renders. Figure2 compares specimen diffraction with standard; Figure4/Table1 provide ferric-assay response. Boiled inoculum plus HgI2 is an altered reference, not a matched chemical blank. Source rate-direction and structure assertions conflict internally. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Definitions1–2; marcasite row PDF136 | supports | Original species row visually verified; grandfathered description year is not an approval accession. |
+| handbook | https://handbookofmineralogy.org/pdfs/marcasite.pdf; Complete one-page mineral entry | supports | Crystal system, formula and related species independently checked. |
+| named | /private/tmp/cmm-round74-sulfides-review/named-validation.json; Actual reviewer execution | supports | Two named records, zero failures; matching log hash verified. |
+| batch | /private/tmp/cmm-round74-final-gates.json; Terminal root receipt and exact matching log | supports | Independently verified current worktree/base, all three expected commands, terminal success and log checksum. Structural checks do not prove scientific truth. |
+| dedup | /private/tmp/cmm-round74-sulfides-review/dedup.txt; Bounded current records/research/reviews/history | context_only | Ignored and hidden entries included with symlink following. Existing elements, mixed feeds and phase mentions distinguished from these owners. |
+| notices | /private/tmp/cmm-round74-sulfides-review/notice-search.json; Exact title/DOI correction queries plus comparative oxidation search | context_only | No affecting notice surfaced in returned results. Primary publisher previews expose useful follow-ups but unavailable full controls/figures are not imported. |
+| taxonomy | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920; Actual authoritative XML species name and synonym | supports | Acidithiobacillus ferrooxidans at species rank; Thiobacillus ferrooxidans synonym. Type-strain accessions are not transferred to the experimental isolate. |
+
+## Limits And Additional Notes
+
+- Only ferric iron monitored; no total-iron or isolated-product balance.
+- Boiled inoculum and HgI2 alter control chemistry; no matched time-resolved pH/redox comparison.
+- Strain accession, verified purity/cell density, actual liquid volume, shaking speed and replication unavailable.
+- Model fits and uncertainty labels do not establish a unique causal pathway.
+- Opposing rankings in other study previews are leads, not independently accepted measurements.
+- No supplement was linked or referenced in the inspected accepted original; this source-specific check is not a global absence claim. Bounded notice/source search is not exhaustive.
+- Original PDFs and page images remain outside Git; every supporting primary snapshot is nonempty and hashed.
+- No owner/history changes by this reviewer.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T145839Z-marcasite-round74-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of marcasite
+started_at: '2026-10-14T14:53:53.061859Z'
+finished_at: '2026-10-14T14:58:39.207445Z'
+reviewer:
+  identity: codex /root/round68_new_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer authored kaolinite/nontronite only in round74. These
+    sulfide owners/history were authored by round68_iron_sulfides. No peer owner/history
+    edits; complete shared source acquisitions were independently read with all claim-bearing
+    figures, authority rows and limitations. Independent assessment is not experimental
+    replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of orthorhombic marcasite with culture-associated ferric-iron
+  accumulation. The record preserves chemically altered inactive references, ferric-only
+  measurement, missing strain/replication details and internal source contradictions;
+  it claims neither total extraction nor industrial recovery.
+source:
+  git_revision: a524756f3f4f90d81f89035fa7f85f1e1897b99d
+  state: working_tree
+  inputs:
+  - path: data/records/marcasite.yaml
+    sha256: 81f3e00e4b5a22d39bc1bf895ebd5893d71c8e7a088d59fe8c8f1609000efcca
+    role: target
+  - path: history/records/marcasite/2026-10-14T144457Z-codex-3ae48d.yaml
+    sha256: 9e2518ab1b31730888caed403b6c85c591f81abbadc5f244ba98c69c5206ca34
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire exact maintained owner and canonical history; accepted primary
+    claims, controls, identity, scale and limitations.
+  selection: Assigned frozen owner; native inspect before scientific judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:marcasite
+targets:
+- target_id: cmmmech:marcasite
+  path: data/records/marcasite.yaml
+  label: Marcasite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/marcasite.yaml
+    role: maintained_scientific_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/marcasite/2026-10-14T144457Z-codex-3ae48d.yaml
+    role: canonical_history
+checks:
+- check_id: named
+  name: Reviewer named strict validation
+  command: uv run --locked cmmmech validate data/records/marcasite.yaml data/records/violarite.yaml
+  status: passed
+  required: true
+  summary: Reviewer executed 2026-10-14T14:54:52.104334+00:00 through 2026-10-14T14:54:56.431036+00:00;
+    two records, zero failures.
+  target_ids:
+  - cmmmech:marcasite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Completed batch gate 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator executed 2026-10-14T14:51:48.096045+00:00 through 2026-10-14T14:55:06.998511+00:00;
+    terminal receipt/log independently verified.
+  target_ids:
+  - cmmmech:marcasite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Completed batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator executed 2026-10-14T14:55:06.998535+00:00 through 2026-10-14T14:55:15.616870+00:00;
+    terminal receipt/log independently verified.
+  target_ids:
+  - cmmmech:marcasite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Completed batch gate 3
+  command: uv run --locked cmmmech validate-history --base a524756f3f4f90d81f89035fa7f85f1e1897b99d
+  status: passed
+  required: true
+  summary: Coordinator executed 2026-10-14T14:55:15.616892+00:00 through 2026-10-14T14:55:20.937881+00:00;
+    terminal receipt/log independently verified.
+  target_ids:
+  - cmmmech:marcasite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/marcasite.yaml
+  locator: Entire frozen owner
+  accessed_at: '2026-10-14T14:58:39.207445Z'
+  support: supports
+  summary: Read all scientific fields, evidence and provenance; no reviewer edits.
+  snapshot_sha256: 81f3e00e4b5a22d39bc1bf895ebd5893d71c8e7a088d59fe8c8f1609000efcca
+- evidence_id: history
+  kind: record_content
+  reference: history/records/marcasite/2026-10-14T144457Z-codex-3ae48d.yaml
+  locator: Canonical CREATE sidecar and inline event
+  accessed_at: '2026-10-14T14:58:39.207445Z'
+  support: supports
+  summary: Verified actual actor/time, exact target and finished scientific limitations;
+    no invented earlier authorship.
+  snapshot_sha256: 9e2518ab1b31730888caed403b6c85c591f81abbadc5f244ba98c69c5206ca34
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.pjoes.com/pdf-87281-21140?filename=21140.pdf
+  locator: Complete four-page original pp.87–90; all Figures1–4/Table1 and reaction
+    schemes
+  accessed_at: '2026-10-14T14:58:39.207445Z'
+  support: supports
+  summary: Independently read the entire original and viewed all four original-page
+    renders. Figure2 compares specimen diffraction with standard; Figure4/Table1 provide
+    ferric-assay response. Boiled inoculum plus HgI2 is an altered reference, not
+    a matched chemical blank. Source rate-direction and structure assertions conflict
+    internally.
+  snapshot_sha256: caa691e0cb5744572b644c21e2fae7edcd19af916278acf7f5318067d0aeb3ea
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions1–2; marcasite row PDF136
+  accessed_at: '2026-10-14T14:58:39.207445Z'
+  support: supports
+  summary: Original species row visually verified; grandfathered description year
+    is not an approval accession.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://handbookofmineralogy.org/pdfs/marcasite.pdf
+  locator: Complete one-page mineral entry
+  accessed_at: '2026-10-14T14:58:39.207445Z'
+  support: supports
+  summary: Crystal system, formula and related species independently checked.
+  snapshot_sha256: 1afb213232c909b98fc49e40583c23de3635f5d98fff3c988c4132c4d28789be
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round74-sulfides-review/named-validation.json
+  locator: Actual reviewer execution
+  accessed_at: '2026-10-14T14:58:39.207445Z'
+  support: supports
+  summary: Two named records, zero failures; matching log hash verified.
+  snapshot_sha256: 23414ced3ffd27c530a3c186a62349c0f016ee3fe1b76e8b55ec2e1333f1a018
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round74-final-gates.json
+  locator: Terminal root receipt and exact matching log
+  accessed_at: '2026-10-14T14:58:39.207445Z'
+  support: supports
+  summary: Independently verified current worktree/base, all three expected commands,
+    terminal success and log checksum. Structural checks do not prove scientific truth.
+  snapshot_sha256: 54fa72f75c13ce01a699c7b09f54e794c10d9cc6165d8bc93d4d08d37ccb7c35
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round74-sulfides-review/dedup.txt
+  locator: Bounded current records/research/reviews/history
+  accessed_at: '2026-10-14T14:58:39.207445Z'
+  support: context_only
+  summary: Ignored and hidden entries included with symlink following. Existing elements,
+    mixed feeds and phase mentions distinguished from these owners.
+  snapshot_sha256: c458c789d220fd3571631e50ecacfb9e60c3b2a4294be038414744578ef99849
+  search_scope: rg --no-ignore --hidden --follow -n -i -g *.yaml -g *.md -g *.json
+    marcasite|violarite|am.2006.2131|Nowaczyk data/records research reviews history;
+    bounded current worktree roots only, including ignored entries.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round74-sulfides-review/notice-search.json
+  locator: Exact title/DOI correction queries plus comparative oxidation search
+  accessed_at: '2026-10-14T14:58:39.207445Z'
+  support: context_only
+  summary: No affecting notice surfaced in returned results. Primary publisher previews
+    expose useful follow-ups but unavailable full controls/figures are not imported.
+  snapshot_sha256: ab9885e1c5bf58ccf23d19d485e5e3b942a34084ca1889fb62cb11f06ced1374
+  search_scope: 'Web search 2026-10-14, no recency filter, bounded first returned
+    results: exact Nowaczyk title with correction erratum; exact10.2138/am.2006.2131
+    correction erratum retraction; marcasite biooxidation pyrite Garcia2007 comparison.'
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920
+  locator: Actual authoritative XML species name and synonym
+  accessed_at: '2026-10-14T14:58:39.207445Z'
+  support: supports
+  summary: Acidithiobacillus ferrooxidans at species rank; Thiobacillus ferrooxidans
+    synonym. Type-strain accessions are not transferred to the experimental isolate.
+  snapshot_sha256: 24c18c87a7999d4024a1e0a2b780785e1f77cfdc584e3f00737b2a03d9d2b73a
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Orthorhombic FeS2 versus pyrite
+  outcome: supported
+  summary: IMA/Handbook establish orthorhombic marcasite; source rhombohedral wording
+    is correctly rejected. No element criticality or numbered IMA approval inferred.
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  target_ids:
+  - cmmmech:marcasite
+- assessment_id: experiment
+  area: evidence
+  topic: Conditional live-culture ferric response
+  outcome: supported
+  summary: Methods and Figure4/Table1 support more measured Fe(III) in culture arms
+    than inactive references, with lower percentage response as solids loading increases.
+    Source percentages are explicitly assay-based, not verified recovered-product
+    fractions.
+  evidence_ids:
+  - record
+  - primary
+  target_ids:
+  - cmmmech:marcasite
+- assessment_id: controls
+  area: scope
+  topic: Altered references and incomplete iron accounting
+  outcome: supported
+  summary: The record retains boiled inoculum/HgI2, no pH/redox matching, unresolved
+    inoculum carryover and unmeasured Fe(II)/precipitates. This prevents attributing
+    an isolated direct attack pathway or total dissolved iron yield.
+  evidence_ids:
+  - record
+  - primary
+  target_ids:
+  - cmmmech:marcasite
+- assessment_id: organism
+  area: identity
+  topic: Species naming versus unaccessioned isolate
+  outcome: supported
+  summary: NCBI920 synonym resolves historical Thiobacillus to Acidithiobacillus ferrooxidans,
+    but does not authenticate the Siersza mine-water isolate; no strain accession
+    or cell density invented.
+  evidence_ids:
+  - record
+  - primary
+  - taxonomy
+  target_ids:
+  - cmmmech:marcasite
+- assessment_id: conflicts
+  area: evidence
+  topic: Rate/structure conflicts and broader comparisons
+  outcome: supported
+  summary: Table1 contradicts the body claim of increasing marcasite k1 with loading;
+    abstract and conclusion differ on structure interpretation. These conflicts remain.
+    Bounded searches locate additional comparative studies but their incomplete originals
+    are not treated as validated contrary experiments.
+  evidence_ids:
+  - record
+  - primary
+  - notices
+  target_ids:
+  - cmmmech:marcasite
+- assessment_id: checks
+  area: provenance
+  topic: Exact-byte owner/history and actual validation
+  outcome: supported
+  summary: Native inspect preceded judgment, canonical CREATE and inline events match
+    the actual change, and final hashes remain identical. Named and completed batch
+    checks passed.
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  target_ids:
+  - cmmmech:marcasite
+findings: []
+actions: []
+limitations:
+- Only ferric iron monitored; no total-iron or isolated-product balance.
+- Boiled inoculum and HgI2 alter control chemistry; no matched time-resolved pH/redox
+  comparison.
+- Strain accession, verified purity/cell density, actual liquid volume, shaking speed
+  and replication unavailable.
+- Model fits and uncertainty labels do not establish a unique causal pathway.
+- Opposing rankings in other study previews are leads, not independently accepted
+  measurements.
+- No supplement was linked or referenced in the inspected accepted original; this
+  source-specific check is not a global absence claim. Bounded notice/source search
+  is not exhaustive.
+notes:
+- Original PDFs and page images remain outside Git; every supporting primary snapshot
+  is nonempty and hashed.
+- No owner/history changes by this reviewer.
+```

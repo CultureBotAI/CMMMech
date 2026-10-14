@@ -1,0 +1,106 @@
+id: cmmmech:kaolinite
+name: Kaolinite
+material_kind: mineral
+description: Kaolinite is the aluminium phyllosilicate mineral Al2Si2O5(OH)4, distinct from kaolin as
+  a natural clay resource and from halloysite, dickite and nacrite. The September 2026 IMA list records
+  approval by a 1980 special procedure, not a numbered mineral accession. The curated CMS KGa-1b and KGa-2
+  reference specimens differ in ordering and accessory phases; kaolinite-associated iron is not established
+  as exclusively structural iron. No criticality designation is inferred from aluminium or kaolin.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026; definitions pp.1–2 and Kaolinite row
+    PDF p.109, Al2Si2O5(OH)4, A, 1980 s.p. Retained official original re-inspected 14 October 2026.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: kaolinite_handbook
+  title: 'Handbook of Mineralogy: Kaolinite, 2001 version 1.2; complete two-page entry, triclinic mineral
+    identity and composition.'
+  url: https://www.handbookofmineralogy.org/pdfs/kaolinite.pdf
+  accessed_on: '2026-10-14'
+- id: ams_2002
+  title: Ams, D.A.; Maurice, P.A.; Hersman, L.E.; Forsythe, J.H. (2002). Siderophore production by an
+    aerobic Pseudomonas mendocina bacterium in the presence of kaolinite. Chemical Geology 188:161–170.
+    DOI 10.1016/S0009-2541(02)00077-3. Complete ten-page original and Figures 1–5 inspected.
+  url: https://doi.org/10.1016/S0009-2541(02)00077-3
+  accessed_on: '2026-10-14'
+- id: ncbi_mendocina
+  title: 'NCBI Taxonomy taxon 300: Ectopseudomonas mendocina, species rank; authoritative XML checked
+    14 October 2026. Pseudomonas mendocina is the name used by the original study. Species-level naming
+    does not authenticate its unaccessioned experimental isolate.'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=300
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: aerobic_kaolinite_associated_iron_acquisition
+  name: Aerobic acquisition of kaolinite-associated iron with a siderophore response
+  process: bioleaching
+  microbial: true
+  organisms:
+  - id: NCBITaxon:300
+    label: Ectopseudomonas mendocina
+  description: The source-designated Pseudomonas mendocina isolate grew more in the presence of KGa-1b
+    or KGa-2 than in no-added-iron, mineral-free medium. Under the study's iron-limited design this is
+    indirect evidence of access to specimen-associated iron. A separate KGa-2 experiment detected siderophores
+    and an iron-availability-dependent response. The experiments do not directly quantify iron release
+    from kaolinite, identify the iron-host phase, demonstrate siderophores as the necessary cause, or
+    establish an isolated iron or aluminium recovery product.
+  context: Ams2002 used an aerobic holding-pond isolate from the Nevada Test Site without a reported culture
+    accession. Its source identification is retained without claiming modern strain authentication. CMS
+    KGa-1b from Washington County, Georgia, was well ordered with trace halloysite; KGa-2 from Warren
+    County, Georgia, was poorly ordered with trace anatase. Samples were weakly cleaned with 1 M NaCl
+    adjusted to pH 3 and rinsed; this is not evidence of pure endmember or complete accessory-iron removal.
+    Growth assays used 30 mL succinate-based medium in 150 mL Teflon flasks, 0.0571 g KGa-1b or 0.0324
+    g KGa-2, normalized to 24 square metres per litre, at 22 degrees C in darkness for four days. Triplicate
+    arms included each kaolinite, 30 micromolar Fe-EDTA, Fe-EDTA plus KGa-1b, and a no-added-iron/no-mineral
+    control. Population was estimated from optical density at 600 nm, not enumerated directly at each
+    time point. The distinct siderophore assay used KGa-2, Fe-EDTA and no-added-iron controls at 28 degrees
+    C and 50 rpm; sacrificial triplicates were sampled on days 2, 4 and 7, and supernatants were pooled
+    by condition/time for extraction and HPLC. These are laboratory physiological assays, not an industrial
+    kaolin beneficiation demonstration.
+  evidence:
+  - source_ref: ams_2002
+    supports: support
+    explanation: Sections 2.1–2.5 and 3.1, Figures 1–2, distinguish specimen preparation and the growth
+      arms. Kaolinite-containing cultures exceeded the no-added-iron control, whereas Fe-EDTA plus KGa-1b
+      supported the largest population. This supports the source's interpretation of access to solid-associated
+      iron under limitation; it does not assign that iron to the kaolinite lattice. The medium retained
+      possible trace iron below the reported analytical detection range, and inoculum carryover was possible,
+      so no-added-iron does not mean iron-free.
+  - source_ref: ams_2002
+    supports: support
+    explanation: 'Sections 2.5 and 3.2, Figures 3–5, show different total versus per-cell siderophore
+      patterns: KGa-2 cultures had more siderophore per estimated cell than the Fe-EDTA arm but less than
+      the no-added-iron control. Total production was greatest with Fe-EDTA. Pooled extracts and calibration
+      against the source-designated DFAM standard in the absence of a purified isolate-specific standard
+      make these relative HPLC estimates; the plotted millimolar values are not curated as independently
+      authenticated absolute concentrations. Figure 5''s hematite series comes from an earlier experiment
+      and is not a simultaneous kaolinite control.'
+  - source_ref: ams_2002
+    supports: partial
+    explanation: Sections 2.1, 3.1 and 3.3 leave iron distribution among lattice substitution, accessory
+      phases and surface-associated iron unresolved. Cultures with added iron or kaolinite became more
+      alkaline, while the no-added-iron control became more acidic; these are not pH-matched conditions.
+      Aluminium was detected in filtered four-day culture supernatants, but this article's cited earlier
+      abiotic/dissolution comparisons are not an independently inspected matched control series. No quantitative
+      microbial enhancement, stoichiometric kaolinite dissolution, dissimilatory iron reduction, or exclusive
+      siderophore causality is claimed here.
+  - source_ref: ncbi_mendocina
+    supports: context_only
+    explanation: The current species name grounds the paper's organism label at species rank only. Section
+      2.2's historical identification wording and lack of a strain accession limit confidence in the experimental
+      isolate; the taxon identifier does not resolve those limitations.
+curation_history:
+- timestamp: '2026-10-14T14:48:14.855068+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created distinct kaolinite species record from the complete Ams2002 original, preserving indirect
+    iron-access evidence, specimen impurities, pooled relative siderophore assay and unresolved causal/strain
+    limits.
+- timestamp: '2026-10-14T14:59:47.558402+00:00'
+  curator: codex (GPT-6; codex)
+  action: EDIT
+  summary: Corrected unsupported expansion of the calibration-standard abbreviation to source-designated
+    DFAM, preserving relative HPLC and causal limitations; addressed independent review finding and issue
+    242.
+history_refs:
+- history/records/kaolinite/2026-10-14T144817Z-codex-0640c1.yaml
+- history/records/kaolinite/2026-10-14T145950Z-codex-c894e9.yaml

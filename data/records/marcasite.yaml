@@ -1,0 +1,91 @@
+id: cmmmech:marcasite
+name: Marcasite
+material_kind: mineral
+description: Marcasite is the orthorhombic FeS2 mineral species, distinct from cubic pyrite, other iron
+  sulfides, elemental iron and mixed sulfide ores. The September 2026 IMA list records grandfathered status
+  and original-description year 1845; the year is not an approval accession. The accepted experiment used
+  powder characterized as marcasite by composition and diffraction, without a reported refined phase fraction
+  or specific surface area. No constituent criticality is inherited.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026; PDF page 136 Marcasite row, pages 1–2
+    definitions and terms.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: handbook
+  title: Handbook of Mineralogy. Marcasite; one-page mineral description, crystal data and pyrite dimorphism.
+  url: https://handbookofmineralogy.org/pdfs/marcasite.pdf
+  accessed_on: '2026-10-14'
+- id: nowaczyk2000
+  title: Nowaczyk, K. and Domka, F. (2000). Oxidation of Pyrite and Marcasite by Thiobacillus ferrooxidans
+    Bacteria. Polish Journal of Environmental Studies 9(2):87–90. Complete four-page original; Methods
+    pp.88–89, Figures 2–4 and Table 1.
+  url: https://www.pjoes.com/pdf-87281-21140?filename=21140.pdf
+  accessed_on: '2026-10-14'
+- id: ncbi920
+  title: NCBI Taxonomy 920, Acidithiobacillus ferrooxidans; Thiobacillus ferrooxidans is a listed synonym.
+    Current authority resolves species nomenclature, not the experimental isolate.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: culture-associated-marcasite-oxidation
+  name: Culture-associated ferric-iron accumulation during marcasite oxidation
+  process: bioleaching
+  microbial: true
+  organisms:
+  - id: NCBITaxon:920
+    label: Acidithiobacillus ferrooxidans
+  description: Live cultures reported as Thiobacillus ferrooxidans produced greater measured ferric-iron
+    accumulation from marcasite powder than the study's chemically altered inactive-inoculum references.
+    The observation supports conditional culture-associated oxidation and iron mobilization. It does not
+    isolate direct cell attack, quantify total dissolved iron or establish isolated iron-product recovery.
+  context: 'Nowaczyk and Domka (2000), Methods pp.88–89 and figure/table captions: bacteria were isolated
+    from Siersza colliery mine water, with no strain accession, sequence or independent purity test supplied.
+    Precultures used Silverman 9K medium in 50 mL Erlenmeyer flasks in thermostated shakers. Leaching
+    used 350 mL Erlenmeyer flasks with iron-free Silverman medium, 1%, 2% or 3% (wt/vol) mineral and 10%
+    inoculum; the inoculum basis is printed as wt/vol and is not silently converted to a cell density.
+    Conditions were 37 degrees C and initial pH 2.2, with grain size below 0.125 mm. Figure 4 extends
+    to 40 days. The actual liquid volume, shaker speed, inoculum washing and cell concentration are unreported.
+    Quantitative composition was 45.9% Fe and 53.5% S for marcasite; powder XRD was compared with a standard.
+    Fe(III) was measured colorimetrically by the rhodanate method. Reference samples used boiled inoculum
+    and reported 1500 ppm HgI2 as bacteriostat. No time-resolved pH or redox matching is established.'
+  evidence:
+  - source_ref: nowaczyk2000
+    supports: support
+    explanation: Figure 2 compares the examined marcasite powder with a standard diffraction pattern.
+      Figure 4 shows increasing Fe(III)-based leaching response in inoculated arms, with much smaller
+      responses in the corresponding ch reference series. The response decreases as mineral loading increases
+      from 1% to 3% within this design. Table 1 labels marcasite values 28.1%, 18.5% and 10.4% as yield
+      of iron leaching; these are source-reported assay-based percentages, not independently verified
+      total-iron extraction or recovered-product yields.
+  - source_ref: nowaczyk2000
+    supports: partial
+    explanation: Only Fe(III), rather than total dissolved Fe, was monitored. Oxidation-state partitioning,
+      inoculum iron carryover, precipitation and a closed solid/solution iron balance were not independently
+      resolved. Boiling and HgI2 distinguish the reference chemistry from the live cultures, so this is
+      not a matched redox-controlled comparison of biological and abiotic dissolution. Replicate counts,
+      biological variability and the meaning of fitted-parameter uncertainties are not given; model fits
+      do not demonstrate a unique inhibitory mechanism.
+  - source_ref: nowaczyk2000
+    supports: partial
+    explanation: The introduction calls marcasite rhombohedral, contrary to the orthorhombic species identity
+      established by the mineral authority. Page 89 says the marcasite rate increased threefold with loading,
+      while Table 1 decreases its fitted k1 from 14.5 to 5.0 in the printed 10^-3 per day scaling. The
+      table/curve direction is retained without repairing the source. The abstract asserts no structure
+      effect, whereas the conclusion says the results cannot unambiguously verify that relationship. Different
+      surfaces, incomplete sample characterization and absent replication prevent a universal pyrite-versus-marcasite
+      reactivity ranking.
+  - source_ref: ncbi920
+    supports: context_only
+    explanation: Taxon 920 maps the historical species name to Acidithiobacillus ferrooxidans. It does
+      not authenticate the Siersza isolate or establish a strain-specific molecular mechanism. Neither
+      the paper's introductory reaction schemes nor the kinetic fit is direct enzyme evidence, and no
+      industrial application or purified product was demonstrated.
+curation_history:
+- timestamp: '2026-10-14T14:44:37.481657+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created distinct marcasite identity and qualified culture-associated Fe(III) evidence, retaining
+    altered controls, assay limitations and internal source conflicts.
+history_refs:
+- history/records/marcasite/2026-10-14T144457Z-codex-3ae48d.yaml

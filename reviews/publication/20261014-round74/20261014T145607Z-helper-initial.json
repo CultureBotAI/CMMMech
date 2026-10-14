@@ -1,0 +1,95 @@
+{
+  "timestamp": "2026-10-14T14:56:07.425725+00:00",
+  "reviewer": "codex /root/round68_iron_sulfides",
+  "scope": "Read-only static assessment of ten round74 operational helpers and tentative helper config. No top-level helper execution, Git/GitHub mutation or final package acceptance.",
+  "base": "a524756f3f4f90d81f89035fa7f85f1e1897b99d",
+  "passed": false,
+  "verdict": "needs_curation",
+  "files": [
+    {
+      "path": "/private/tmp/cmm-round74-commit.py",
+      "sha256": "12c2dde9e484f8c941b09df6a698fa404d0b39f274cfbb6b632139cc204ad930",
+      "snapshot": "/private/tmp/cmm-round74-helper-peer-20261014T145607Z-sources/cmm-round74-commit.py"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-open-pr.py",
+      "sha256": "9344c7ddc9f89a7a65899fcfe93ad396beb74e9b21c832289322580ce2c0861f",
+      "snapshot": "/private/tmp/cmm-round74-helper-peer-20261014T145607Z-sources/cmm-round74-open-pr.py"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-post-review.py",
+      "sha256": "eb15ce54ea5ca3b9e192a9d9d168eff6872367d82cf6aa935bed28e15833828a",
+      "snapshot": "/private/tmp/cmm-round74-helper-peer-20261014T145607Z-sources/cmm-round74-post-review.py"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-enqueue.py",
+      "sha256": "3827d0b5e686a8ab71587d8776bb40ee80b04c52cde9b46200c9e6daacc9e7f5",
+      "snapshot": "/private/tmp/cmm-round74-helper-peer-20261014T145607Z-sources/cmm-round74-enqueue.py"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-cleanup.py",
+      "sha256": "eed88987b0a259a7272ffbfe21b0ed7702ea44f1b1e11cda8596ce681312be71",
+      "snapshot": "/private/tmp/cmm-round74-helper-peer-20261014T145607Z-sources/cmm-round74-cleanup.py"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sync-main.py",
+      "sha256": "99384a0bf7b1dd3e8a7633f11a63ba86def489fe649ad75e67edab0b78beff03",
+      "snapshot": "/private/tmp/cmm-round74-helper-peer-20261014T145607Z-sources/cmm-round74-sync-main.py"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-isolated-coverage.py",
+      "sha256": "2d78435ef99af4503d0a37f30ec5d5ceaa1880ed60bcf6fa196ec44140b6eef1",
+      "snapshot": "/private/tmp/cmm-round74-helper-peer-20261014T145607Z-sources/cmm-round74-isolated-coverage.py"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-isolated-verification.py",
+      "sha256": "21bacc2e8a0757140519470f56fd4a41491a63c1acd8658f051f8c7ce3b7fef0",
+      "snapshot": "/private/tmp/cmm-round74-helper-peer-20261014T145607Z-sources/cmm-round74-isolated-verification.py"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-hosted-audit-paginated.py",
+      "sha256": "7102deb314ce4bccf1905f9402e43b7034875cca6f8111e9749f81eefc34a267",
+      "snapshot": "/private/tmp/cmm-round74-helper-peer-20261014T145607Z-sources/cmm-round74-hosted-audit-paginated.py"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-review-check-final.py",
+      "sha256": "eff8c11b010fb81393ab52a808fa2a43d459db7c016313a33a860eec2b8c1025",
+      "snapshot": "/private/tmp/cmm-round74-helper-peer-20261014T145607Z-sources/cmm-round74-review-check-final.py"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-helper-config.json",
+      "sha256": "3a155bbd59919a52f998c83bd2f150a75f036cc83fa9fb0f5c4704a93129a4cc",
+      "snapshot": "/private/tmp/cmm-round74-helper-peer-20261014T145607Z-sources/cmm-round74-helper-config.json"
+    }
+  ],
+  "findings": [
+    {
+      "id": "OP1",
+      "severity": "major",
+      "issue_key": "round74-commit-publication-audit-contract",
+      "path": "/private/tmp/cmm-round74-commit.py",
+      "lines": "10\u201311",
+      "summary": "Fresh commit helper weakens the accepted publication audit contract: passed/base/branch/zero alone do not validate verdict, working_tree state, exact integer unresolved count or config counts/issues.",
+      "evidence": "Current source accepts passed=True, unresolved_corrective_findings=False (False==0), verdict needs_curation or absent, state git_commit or absent, and stale/missing counts/issues, provided hashes match. This can commit an audit that does not certify the required current package/status. No helper execution or Git mutation occurred.",
+      "acceptance": "Require passed is True; verdict in pass/pass_with_limitations; state working_tree; type(unresolved_corrective_findings) is int and value0; counts and issues exact current config; retain exact input-set/hash/symlink/base/branch guards. Add focused actual-gate AST regression positive and each negative case before execution."
+    },
+    {
+      "id": "OP2",
+      "severity": "minor",
+      "issue_key": "round74-hosted-audit-stale-round-label",
+      "path": "/private/tmp/cmm-round74-hosted-audit-paginated.py",
+      "summary": "Generated pagination-correction provenance still says Round73 rather than current Round74.",
+      "evidence": "Literal pagination_correction starts Round73 reuses while remainder explicitly refers to no round74 first100-file failure. This is a false current-run label carried from prior helper, not a new100file package defect.",
+      "acceptance": "Change only current-round attribution to Round74, retaining historical round70 issue224 context; verify exact successor diff/hash."
+    }
+  ],
+  "observations": [
+    "Current branch/base and temporary paths consistently point to round74 except OP2 prose.",
+    "Hosted paginated path/blob validator and actual gh --paginate --slurp invocation retained; pending/failure distinct and exact five workflows/jobs required.",
+    "Queue checks exact PR/head, requiredCI, active squashqueue, postedreview, preflight identity/log and live main before enqueue; race disclosed and actual tree/soleparent checked later.",
+    "Cleanup verifies actual merge/head/tree/base, clean owned branch and expected remote SHA before lease-protected deletion; original main sync gated on fresh postmerge/hosted receipts and byte-preservation snapshots.",
+    "Coverage uses current canonical recordID/target/hash and positive completed scientific review, hidden/ignored filesystem traversal and baseavailability.",
+    "Config counts/source issues require final matching acceptance; current audit does not certify future edits.",
+    "Imported snapshot library in sync-main is /private/tmp/cmm-round57-recover-original.py; current wrapper scope is guarded; library audit/retention needed in final package."
+  ]
+}

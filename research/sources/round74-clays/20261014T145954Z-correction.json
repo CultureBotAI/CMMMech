@@ -1,0 +1,61 @@
+{
+  "timestamp_utc": "2026-10-14T14:59:54.506832+00:00",
+  "type": "source-investigation correction successor",
+  "previous": {
+    "md": "research/sources/round74-clays/20261014T145317Z.md",
+    "json": "research/sources/round74-clays/20261014T145317Z.json"
+  },
+  "correction": "Ams2002 section2.5 prints DFAM only. The original report itself used the abbreviation, but its associated initial record expanded it without source-specific verification. Final record now retains source-designated DFAM. This narrows standard identity without changing the relative-assay observation.",
+  "finding": "reviews/structured/20261014T145845Z-kaolinite-round74-initial/review.yaml",
+  "issue": 242,
+  "primary_sha256": "c471e24d70ac62cfee9642ad3430ee2cb06a4a8e8672ae2f12de50cd0306465b",
+  "freeze": {
+    "at": "2026-10-14T14:59:54.505540+00:00",
+    "worktree": "/private/tmp/CMMMech-expansion-round74-20261014",
+    "owners": {
+      "kaolinite": [
+        {
+          "path": "data/records/kaolinite.yaml",
+          "sha256": "dd4561af884adcec68321d5a8241344715d372d3b359df6fed3e99f382a5b3b9"
+        },
+        {
+          "path": "history/records/kaolinite/2026-10-14T144817Z-codex-0640c1.yaml",
+          "sha256": "6a45cce1e713031a90c68edacbf259bcb996fe642afe57bc01d16170b1ffd8f0"
+        },
+        {
+          "path": "history/records/kaolinite/2026-10-14T145950Z-codex-c894e9.yaml",
+          "sha256": "e461cc1e7ba0367f5b154cd703b3f00c0c4430efa4447412fd16320a2dad09bc"
+        }
+      ],
+      "nontronite": [
+        {
+          "path": "data/records/nontronite.yaml",
+          "sha256": "a946556b1dfd735b5c23e8aa7b4d320b82faa839b55c58dabb1c34523f344cde"
+        },
+        {
+          "path": "history/records/nontronite/2026-10-14T145017Z-codex-ebec97.yaml",
+          "sha256": "a85d5ba7918625f7cf6d5196000284c20af769921037b2abcbcff34dfbc71dd4"
+        }
+      ]
+    },
+    "review_finding": "reviews/structured/20261014T145845Z-kaolinite-round74-initial/review.yaml",
+    "issue": 242,
+    "validation": {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "cmmmech",
+        "validate",
+        "data/records/kaolinite.yaml",
+        "data/records/nontronite.yaml"
+      ],
+      "started_at": "2026-10-14T14:59:51.037563+00:00",
+      "finished_at": "2026-10-14T14:59:54.502479+00:00",
+      "exit_code": 0,
+      "output": "Checked 2 record(s); 0 failed.\n"
+    },
+    "previous_freeze": "/private/tmp/cmm-round74-clays-research/frozen-records.json"
+  },
+  "retention": "Initial record bytes, original CREATE and initial source dossier retained. Only owner wording plus appended EDIT/inline provenance changed; nontronite and all sources unchanged."
+}

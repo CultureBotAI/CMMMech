@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-10-14T15:00:11.208702+00:00",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "reviewer": "codex /root/round68_iron_sulfides",
+  "prior_successor": {
+    "path": "/private/tmp/cmm-round74-helper-peer-20261014T145922Z-successor.json",
+    "sha256": "dcaa22c6a8750fca497528c6cdc1302ac2186cfad7ce1950f7c17297f501a987"
+  },
+  "issue": 241,
+  "files": [
+    {
+      "path": "/private/tmp/cmm-round74-commit.py",
+      "sha256": "61a999c5db0186b2ef0faa5c9322e07dd319a99e8de89b95e0c481788414bf67",
+      "snapshot": "/private/tmp/cmm-round74-helper-peer-20261014T150011Z-afterfix-binding-sources/cmm-round74-commit.py"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-affected-gates.py",
+      "sha256": "c4c64033af622350c5aee21303ee72cbf642f9e984384c34e1ca784d94b62d55",
+      "snapshot": "/private/tmp/cmm-round74-helper-peer-20261014T150011Z-afterfix-binding-sources/cmm-round74-affected-gates.py"
+    }
+  ],
+  "findings": [],
+  "unresolved_corrective_findings": 0,
+  "guard_ast_sha256": "feb06ecde1520b6014e753dda5dca67150588d8a65353a67da2bae9ec87cc8ab",
+  "regression": {
+    "path": "/private/tmp/cmm-round74-audit-contract-regression-20261014T145834Z.json",
+    "sha256": "2dd96385a4eb85c5fcee22fc741f2091cf7c7ad2f1e79a08ee9f775f1eb43ccb",
+    "passed": true,
+    "cases": 29,
+    "binding": "Whole helper changed only required receipt suffix after tests; extracted require_final_audit AST exactly identical to tested source snapshot."
+  },
+  "assessment": "Exact helper diff changes only final-gates to final-gates-afterfix, ensuring current correction requires rerun receipt. Affected-gates runner uses current worktree/base and same just check/nonempty validation/history commands, unique receipts/logs and offline environment; not executed by reviewer.",
+  "limitations": [
+    "Final rerun receipt is not yet completed or assessed here. Final package gate must inspect its actual log/outcomes and current exact inputs.",
+    "Later helper changes require further assessment; no helper top-level/Git/network mutation executed."
+  ]
+}

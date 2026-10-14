@@ -1,0 +1,870 @@
+{
+  "timestamp_utc": "2026-10-14T14:50:46.546268+00:00",
+  "round": 74,
+  "curator": "codex GPT-6 /root/round68_iron_sulfides",
+  "working_revision": "a524756f3f4f90d81f89035fa7f85f1e1897b99d",
+  "working_changes": "Two new distinct mineral owners and canonicalCREATE/inline events; no schema/validator change. Independent scientific acceptance remains pending.",
+  "baseline": {
+    "path": "/private/tmp/cmm-round74-baseline.json",
+    "bytes": 1535,
+    "sha256": "23476656eb369aae19aa03b961e059c1459de3857f4e80d7335f64b97385b354"
+  },
+  "frozen_records": [
+    {
+      "path": "/private/tmp/CMMMech-expansion-round74-20261014/data/records/marcasite.yaml",
+      "bytes": 6247,
+      "sha256": "81f3e00e4b5a22d39bc1bf895ebd5893d71c8e7a088d59fe8c8f1609000efcca",
+      "relative_path": "data/records/marcasite.yaml"
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round74-20261014/data/records/violarite.yaml",
+      "bytes": 6243,
+      "sha256": "08cc473bd9baed8ad55db4f058162f72f68186d84fd0d548fb69f6ba7b6b5e3e",
+      "relative_path": "data/records/violarite.yaml"
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round74-20261014/history/records/marcasite/2026-10-14T144457Z-codex-3ae48d.yaml",
+      "bytes": 932,
+      "sha256": "9e2518ab1b31730888caed403b6c85c591f81abbadc5f244ba98c69c5206ca34",
+      "relative_path": "history/records/marcasite/2026-10-14T144457Z-codex-3ae48d.yaml"
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round74-20261014/history/records/violarite/2026-10-14T144514Z-codex-8de5a9.yaml",
+      "bytes": 1074,
+      "sha256": "681122eb18dc4822d5567bcbb2652ccff12c68458d1d9d18dff2b425c65d8b57",
+      "relative_path": "history/records/violarite/2026-10-14T144514Z-codex-8de5a9.yaml"
+    }
+  ],
+  "validation": {
+    "timestamp": "2026-10-14T14:50:46.546268+00:00",
+    "command": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache PYTHONDONTWRITEBYTECODE=1 uv run --locked cmmmech validate data/records/marcasite.yaml data/records/violarite.yaml --require-records",
+    "workdir": "/private/tmp/CMMMech-expansion-round74-20261014",
+    "exit_code": 0,
+    "counts": {
+      "records": 2,
+      "failed": 0
+    },
+    "log": {
+      "path": "/private/tmp/cmm-round74-sulfides-research/named-validation.log",
+      "bytes": 31,
+      "sha256": "4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042"
+    }
+  },
+  "selection": [
+    {
+      "record": "marcasite",
+      "identity": "Orthorhombic FeS2 mineral; pyrite dimorph, distinct from elemental Fe and mixed ores. IMA grandfathered, original-description year1845 is not approval ID.",
+      "primary_url": "https://www.pjoes.com/pdf-87281-21140?filename=21140.pdf",
+      "primary": {
+        "path": "/private/tmp/cmm-round74-sulfides-research/marcasite2000-pjoes.pdf",
+        "bytes": 241743,
+        "sha256": "caa691e0cb5744572b644c21e2fae7edcd19af916278acf7f5318067d0aeb3ea"
+      },
+      "citation": "Nowaczyk K, Domka F.2000. Oxidation of Pyrite and Marcasite by Thiobacillus ferrooxidans Bacteria. PJOES9(2):87–90. No verified DOI.",
+      "inspection": "All four original pages read and individually rendered/viewed, including Figures1–4 and Table1; Fig2 phase pattern, Fig4 kinetics and Table1 support curated claims. Publisher landing checked. No SI reference or link identified in these inspected sources.",
+      "scope": "Conditional culture-associated Fe(III) accumulation from characterized marcasite powder. No unique direct-attack/enzymatic pathway, total-iron recovery or industrial deployment.",
+      "limits": [
+        "Boiled inoculum and1500ppmHgI2 references differ chemically from live arms; not redox-matched biological attribution.",
+        "Fe(III)-only rhodanate assay; oxidation-state partitioning, inoculum carryover, precipitation and closed Fe balance unresolved.",
+        "37C,initialpH2.2,1/2/3%(wt/vol)mineral,10%inoculum printedwt/vol; no strain accession, cellcount, volume, shakerrpm or replication reported.",
+        "XRD/composition support mineral assignment, not independently quantified purity or specific surface area.",
+        "Source calls species rhombohedral; Handbook establishes orthorhombic. Body rate increase contradicts Table1 decrease14.5→5.0 in10^-3/day. Abstract no-structure-effect versus qualified conclusion; no universal ranking.",
+        "Taxon920 maps historical name to Acidithiobacillus ferrooxidans only; does not authenticate isolate."
+      ]
+    },
+    {
+      "record": "violarite",
+      "identity": "Cubic FeNi2S4 species; IMA grandfathered original-description year1924 not approval accession. Distinct from pentlandite, polydymite, greigite and mixed feeds.",
+      "primary_url": "https://www.rruff.net/doclib/am/vol91/AM91_706.pdf",
+      "primary": {
+        "path": "/private/tmp/cmm-round74-sulfides-research/violarite2006-rruff.pdf",
+        "bytes": 449590,
+        "sha256": "2c5463334320df5c582f9c22d4d76c41e2011029fc77476bf73dd466963c48e7"
+      },
+      "citation": "Tenailleau C etal.2006. Transformation of pentlandite to violarite under mild hydrothermal conditions. American Mineralogist91:706–709. DOI10.2138/am.2006.2131. Crossref verified.",
+      "inspection": "Complete four-page letter and original Figures1–4 individually rendered/viewed. Methods, results, discussion and references read. No SI pointer identified in complete letter.",
+      "scope": "Abiotic hydrothermal replacement in two distinct mixed feeds; source-assigned violarite composition broader than ideal FeNi2S4. No organism/biomass or microbial mechanism.",
+      "limits": [
+        "80C MountKeith90wt%pentlandite/9wt%pyrite/minorphases; separate120C synthetic39wt%pentlandite/61wt%pyrrhotite feed. No pure-phase or closed nickel yield inference.",
+        "XRD phase fractions explicitly semiquantitative without independent standard; abstract completion after3days inconsistent with residual refined pentlandite inFig2.",
+        "Methods pH4.0 versusFig2~3.9 and batch wording versus circulating apparatus preserved.",
+        "EBSD unsuccessful on altered violarite/pyrrhotite despite broad abstract phrasing; porous fronts support interpretation not unique in-situ mechanism.",
+        "200–400nm gap may expand during2–3day drying; Fig4 model omits vaesite/polydymite;20C5–10year extrapolation not observed field trajectory."
+      ]
+    }
+  ],
+  "authorities": [
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/ima-current.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "locator": "Original PDFpp1–2 definitions/CCBY-SA3.0 terms,136Marcasite,229Violarite; all four pages visually viewed."
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/marcasite-handbook.pdf",
+      "bytes": 49954,
+      "sha256": "1afb213232c909b98fc49e40583c23de3635f5d98fff3c988c4132c4d28789be",
+      "url": "https://handbookofmineralogy.org/pdfs/marcasite.pdf",
+      "locator": "Complete one-page PDF text and image viewed; orthorhombicPnnm."
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/violarite-handbook.pdf",
+      "bytes": 47393,
+      "sha256": "ed1e0a4a1b80d8b0c2974359d0ddea6359552f28c1b09979485291486fc17a75",
+      "url": "https://handbookofmineralogy.org/pdfs/violarite.pdf",
+      "locator": "Complete one-page PDF text and image viewed; cubicFd3m."
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/ferrooxidans-taxon.xml",
+      "bytes": 4257,
+      "sha256": "24c18c87a7999d4024a1e0a2b780785e1f77cfdc584e3f00737b2a03d9d2b73a",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=920&retmode=xml",
+      "locator": "NCBITaxon920 currentname/synonym verified; no accession for experimental isolate."
+    }
+  ],
+  "criticality": "No new criticality claim; no elemental or commodity designation inherited by these species.",
+  "schema_assessment": "Existingmaterial_kind, microbialboolean, mechanismcontext, evidence support/partial/context_only and history fields express all qualified observations. No behavioral change or new test needed.",
+  "search": {
+    "performed_on": "2026-10-14",
+    "engine": "web search tool",
+    "queries": [
+      "marcasite microbial bioleaching full text iron disulfide pyrite marcasite Acidithiobacillus",
+      "violarite bioleaching bacterial leaching full text pentlandite",
+      "violarite transformation pentlandite bacteria primary experiment pdf",
+      "violarite bioleaching pure mineral Acidithiobacillus full text",
+      "\"marcasite\" \"Garcia\" \"2007\" pdf",
+      "\"Transformation of pentlandite to violarite\" pdf",
+      "\"A new look at microbial leaching\" pdf Edwards 2000",
+      "\"Tenailleau\" \"2006\" \"706\" filetype:pdf",
+      "\"FEM_197_f7\"",
+      "\"A new look at microbial leaching patterns\" \"pdf\" Edwards Hu Hamers Banfield",
+      "\"A new look at microbial leaching patterns\" \"pdf\" -site:researchgate.net -site:scribd.com",
+      "\"A new look at microbial leaching patterns\" pubmed",
+      "\"10.1016/j.mineng.2006.05.005\" pdf",
+      "\"marcasite\" \"87281\"",
+      "\"Nowaczyk\" \"Domka\" \"Marcasite\" correction OR erratum OR retraction",
+      "\"10.2138/am.2006.2131\" correction OR erratum OR retraction",
+      "\"Oxidation of Pyrite and Marcasite\" \"2000\"",
+      "\"violarite\" \"Tenailleau\" \"2006\" criticism dissolution precipitation"
+    ],
+    "bounds": "Returned first result sets, no exhaustive pagination or global coverage claim; no affecting correction/retraction surfaced in bounded exact-title/DOIqueries and inspectedpublisher/Crossrefmetadata. Internal conflicts explicitly retained."
+  },
+  "dedup": {
+    "policy": "rg --no-ignore --hidden --follow across worktree and main records/research/reviews/history; relevant referencedrawroots followed with cycleprevention and embeddedPDFtext extraction.",
+    "receipts": [
+      {
+        "path": "/private/tmp/cmm-round74-sulfides-research/dedup-worktree.txt",
+        "bytes": 14267,
+        "sha256": "5ccb7c079729885d778acf31d70e88d7588afc39cecf74d7fefffc9b1d5cee0b"
+      },
+      {
+        "path": "/private/tmp/cmm-round74-sulfides-research/dedup-main.txt",
+        "bytes": 4044,
+        "sha256": "9f0c91f49bd4dae08710d3c58f9dd0e08f04e93d007929d464279559b119d7d6"
+      },
+      {
+        "path": "/private/tmp/cmm-round74-sulfides-research/dedup-raw.json",
+        "bytes": 9355,
+        "sha256": "9d8cac0aa2d04351f926a41981efeba60034e2095f828bedd72539f64a4e2fc7"
+      },
+      {
+        "path": "/private/tmp/cmm-round74-sulfides-research/dedup-raw.txt",
+        "bytes": 2249,
+        "sha256": "fe46d195bac5c2c79d007f63809f11a0522cc5ae3de55be2c60e360af57d1557"
+      },
+      {
+        "path": "/private/tmp/cmm-round74-sulfides-research/dedup-accepted-experiments.json",
+        "bytes": 2913,
+        "sha256": "74dde022396e9e7fe6a48537da0eabd4b26f0437304ff460180c633a6455e5ed"
+      }
+    ],
+    "scope": "Eight relevant rawroots;30PDFs embeddedtextsearched,10matched, noOCR. PriorMansor2019 citesTenailleau2006/Xia2009; pyrrhotite/galena mixedfeeds containmarcasite; polydymite evidence retainsambiguousviolariteoverlap. Neither was a distinct maintainedowner beforethisaddition; citations and mineralmentions pre-existed. Finalaccepted-experimentcheckaftercreation hasownnewfilehits and an unrelated872811bytes numeric hit. No global absence/exhaustion claim."
+  },
+  "deferred": [
+    {
+      "citation": "Edwards etal.2001. A new look at microbial leaching patterns on sulfide minerals. FEMSMicrobiolEcol34:197–206.",
+      "identifiers": [
+        "10.1016/S0168-6496(00)00094-5",
+        "10.1111/j.1574-6941.2001.tb00770.x",
+        "PMID11137599"
+      ],
+      "disposition": "Same article/experiment with DOI aliases, not two studies. Full publisher minimalHTML and methods/results text acquired, but image sources absent; original main graphics unavailable. Not accepted for new mechanism. Exploratory PMID11137601 was wrong and its XML is retained but excluded; correct PMID XML separately saved. Initial raw filename2000 is not publication-year assertion."
+    },
+    {
+      "citation": "Garcia etal.2007 DOI10.1016/j.mineng.2006.05.005",
+      "disposition": "Metadata/abstract and methods fragment only; ScienceDirect403. Mixed marcasite/pyrite/dolomite feed; no quantitative/mechanism claim accepted."
+    },
+    {
+      "citation": "Oxidation of marcasite and pyrite by iron-oxidizing bacteria and archaea,2007,ScienceDirectPIIS0304386X07000813",
+      "disposition": "Bounded contradiction lead, only abstract/introduction read. May show differing ordering/inocula/surface-area dependence; complete source needed. Not treated as verified refutation."
+    },
+    {
+      "citation": "Pring etal.2005.Regolith2005pp252–255",
+      "url": "https://crcleme.org.au/Pubs/Monographs/regolith2005/Pring_et_al.pdf",
+      "artifact": {
+        "path": "/private/tmp/cmm-round74-sulfides-research/pring2005.pdf",
+        "bytes": 357868,
+        "sha256": "ce4667b89455052968a3be6e0f5611434f6e6b7318ca0260dd0955a190e0ffef"
+      },
+      "disposition": "All four pages and Figures1–3 visually inspected. Related shared authors/feeds/images/experiment lineage with2006, not independent replication.2005uses35days/50(4)%promoted and hydrothermalpH3.5;2006uses33days/40(4)% andpH4.0;bothFig2~3.9. Not pooled and not an accepted quantitative source."
+    },
+    {
+      "citation": "Xia etal.2009 DOI10.1016/j.gca.2009.01.007",
+      "disposition": "Crossref/repository metadata only, no fullprimary acquired; already cited in priorMansor2019raw. Deferred, not novel evidence discovery."
+    }
+  ],
+  "acquisitions": [
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/acquisitions-final.json",
+      "receipt": [
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/marcasite2000-publisher.html",
+          "url": "https://www.pjoes.com/Oxidation-of-Pyrite-and-Marcasite-by-Thiobacillus-ferrooxidans-Bacteria,87281,0,2.html",
+          "attempted_at": "2026-10-14T14:42:56.650482+00:00",
+          "status": 200,
+          "final_url": "https://www.pjoes.com/Oxidation-of-Pyrite-and-Marcasite-by-Thiobacillus-ferrooxidans-Bacteria,87281,0,2.html",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 44470,
+          "sha256": "b93c96be9a2c105cdd55a4a862be090785bf9249e183f0defc2a56a96971c277",
+          "pdf_header": false
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/ferrooxidans-taxon.xml",
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=920&retmode=xml",
+          "attempted_at": "2026-10-14T14:42:56.651234+00:00",
+          "status": 200,
+          "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=920&retmode=xml",
+          "content_type": "text/xml; charset=UTF-8",
+          "bytes": 4257,
+          "sha256": "24c18c87a7999d4024a1e0a2b780785e1f77cfdc584e3f00737b2a03d9d2b73a",
+          "pdf_header": false
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/garcia2007-landing.html",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0892687506001464",
+          "attempted_at": "2026-10-14T14:42:56.651519+00:00",
+          "error": "<HTTPError 403: 'Forbidden'>"
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/ima-current.pdf",
+          "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+          "attempted_at": "2026-10-14T14:42:56.651754+00:00",
+          "status": 200,
+          "final_url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+          "content_type": "application/pdf",
+          "bytes": 3129886,
+          "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+          "pdf_header": true
+        }
+      ]
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/acquisitions-initial.json",
+      "receipt": [
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/edwards2000.html",
+          "url": "https://academic.oup.com/femsec/article/34/3/197/620854",
+          "attempted_at": "2026-10-14T14:38:26.177112+00:00",
+          "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))"
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/edwards2000-minimal.html",
+          "url": "https://oup.silverchair-cdn.com/article-minimal/620854",
+          "attempted_at": "2026-10-14T14:38:26.208813+00:00",
+          "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))"
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/pring2005.pdf",
+          "url": "https://crcleme.org.au/Pubs/Monographs/regolith2005/Pring_et_al.pdf",
+          "attempted_at": "2026-10-14T14:38:26.210058+00:00",
+          "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))"
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/garcia2007-crossref.json",
+          "url": "https://api.crossref.org/works/10.1016/j.mineng.2006.05.005",
+          "attempted_at": "2026-10-14T14:38:26.211201+00:00",
+          "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))"
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/edwards2000-crossref.json",
+          "url": "https://api.crossref.org/works/10.1016/S0168-6496(00)00094-5",
+          "attempted_at": "2026-10-14T14:38:26.212394+00:00",
+          "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))"
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/xia2009-crossref.json",
+          "url": "https://api.crossref.org/works/10.1016/j.gca.2009.01.007",
+          "attempted_at": "2026-10-14T14:38:26.213663+00:00",
+          "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))"
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/violarite-handbook.pdf",
+          "url": "https://handbookofmineralogy.org/pdfs/violarite.pdf",
+          "attempted_at": "2026-10-14T14:38:26.214859+00:00",
+          "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))"
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/marcasite-handbook.pdf",
+          "url": "https://handbookofmineralogy.org/pdfs/marcasite.pdf",
+          "attempted_at": "2026-10-14T14:38:26.216149+00:00",
+          "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))"
+        }
+      ]
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/acquisitions-public.json",
+      "receipt": [
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/edwards2000.html",
+          "url": "https://academic.oup.com/femsec/article/34/3/197/620854",
+          "attempted_at": "2026-10-14T14:38:39.938517+00:00",
+          "error": "<HTTPError 403: 'Forbidden'>"
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/edwards2000-minimal.html",
+          "url": "https://oup.silverchair-cdn.com/article-minimal/620854",
+          "attempted_at": "2026-10-14T14:38:40.077613+00:00",
+          "status": 200,
+          "final_url": "https://oup.silverchair-cdn.com/article-minimal/620854",
+          "content_type": "text/html",
+          "bytes": 143889,
+          "sha256": "6cf3d378534d252f998d592b004df98c7dc3a75795f6b3b3ba6da467cbfd712b",
+          "pdf_header": false
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/pring2005.pdf",
+          "url": "https://crcleme.org.au/Pubs/Monographs/regolith2005/Pring_et_al.pdf",
+          "attempted_at": "2026-10-14T14:38:40.562629+00:00",
+          "status": 200,
+          "final_url": "https://crcleme.org.au/Pubs/Monographs/regolith2005/Pring_et_al.pdf",
+          "content_type": "application/pdf",
+          "bytes": 357868,
+          "sha256": "ce4667b89455052968a3be6e0f5611434f6e6b7318ca0260dd0955a190e0ffef",
+          "pdf_header": true
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/garcia2007-crossref.json",
+          "url": "https://api.crossref.org/works/10.1016/j.mineng.2006.05.005",
+          "attempted_at": "2026-10-14T14:38:43.380335+00:00",
+          "status": 200,
+          "final_url": "https://api.crossref.org/works/10.1016/j.mineng.2006.05.005",
+          "content_type": "application/json",
+          "bytes": 5419,
+          "sha256": "bb4fb91db6c70c12814b9ac5d34ec1d3b15b675812c574b325a944a3bd98a7d2",
+          "pdf_header": false
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/edwards2000-crossref.json",
+          "url": "https://api.crossref.org/works/10.1016/S0168-6496(00)00094-5",
+          "attempted_at": "2026-10-14T14:38:43.708358+00:00",
+          "status": 200,
+          "final_url": "https://api.crossref.org/works/10.1016/S0168-6496(00)00094-5",
+          "content_type": "application/json",
+          "bytes": 1487,
+          "sha256": "19312671150e3507a8fabd2255acddafd607e00a927006499075d66b3af0b06b",
+          "pdf_header": false
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/xia2009-crossref.json",
+          "url": "https://api.crossref.org/works/10.1016/j.gca.2009.01.007",
+          "attempted_at": "2026-10-14T14:38:43.965357+00:00",
+          "status": 200,
+          "final_url": "https://api.crossref.org/works/10.1016/j.gca.2009.01.007",
+          "content_type": "application/json",
+          "bytes": 31312,
+          "sha256": "35a52eef5cbd09795956332cb0ce9b3dcfc33ffa0dcf998d4fc6cf2f6f67017e",
+          "pdf_header": false
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/violarite-handbook.pdf",
+          "url": "https://handbookofmineralogy.org/pdfs/violarite.pdf",
+          "attempted_at": "2026-10-14T14:38:44.414442+00:00",
+          "status": 200,
+          "final_url": "https://handbookofmineralogy.org/pdfs/violarite.pdf",
+          "content_type": "application/pdf",
+          "bytes": 47393,
+          "sha256": "ed1e0a4a1b80d8b0c2974359d0ddea6359552f28c1b09979485291486fc17a75",
+          "pdf_header": true
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/marcasite-handbook.pdf",
+          "url": "https://handbookofmineralogy.org/pdfs/marcasite.pdf",
+          "attempted_at": "2026-10-14T14:38:44.586591+00:00",
+          "status": 200,
+          "final_url": "https://handbookofmineralogy.org/pdfs/marcasite.pdf",
+          "content_type": "application/pdf",
+          "bytes": 49954,
+          "sha256": "1afb213232c909b98fc49e40583c23de3635f5d98fff3c988c4132c4d28789be",
+          "pdf_header": true
+        }
+      ]
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/acquisitions-second.json",
+      "receipt": [
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/edwards2001-wiley.html",
+          "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/j.1574-6941.2001.tb00770.x",
+          "attempted_at": "2026-10-14T14:40:18.180805+00:00",
+          "error": "<HTTPError 403: 'Forbidden'>"
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/edwards2001-crossref.json",
+          "url": "https://api.crossref.org/works/10.1111/j.1574-6941.2001.tb00770.x",
+          "attempted_at": "2026-10-14T14:40:18.254927+00:00",
+          "status": 200,
+          "final_url": "https://api.crossref.org/works/10.1111/j.1574-6941.2001.tb00770.x",
+          "content_type": "application/json",
+          "bytes": 9014,
+          "sha256": "da682e5695b4709712ac0a05ef88c1d1c395d41c7bb95e9ae7a8f3d30203eb24",
+          "pdf_header": false
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/edwards2001-pubmed.xml",
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=11137601&retmode=xml",
+          "attempted_at": "2026-10-14T14:40:18.609144+00:00",
+          "status": 200,
+          "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=11137601&retmode=xml",
+          "content_type": "text/xml; charset=UTF-8",
+          "bytes": 3608,
+          "sha256": "eb21651acf722b7ae58bf59014c7ed32cb5bca263a432f65f3c633f06a398734",
+          "pdf_header": false
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/violarite2006.pdf",
+          "url": "https://rruff.info/uploads/AM91_706.pdf",
+          "attempted_at": "2026-10-14T14:40:19.132005+00:00",
+          "error": "<HTTPError 404: 'Not Found'>"
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/violarite2006-crossref.json",
+          "url": "https://api.crossref.org/works/10.2138/am.2006.2131",
+          "attempted_at": "2026-10-14T14:40:19.651852+00:00",
+          "status": 200,
+          "final_url": "https://api.crossref.org/works/10.2138/am.2006.2131",
+          "content_type": "application/json",
+          "bytes": 2295,
+          "sha256": "d0be43b12e2cf71389249ffa52f31bc71cdedf2117ce9c8047c5f016a12c6b18",
+          "pdf_header": false
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/marcasite2000-pjoes.pdf",
+          "url": "https://www.pjoes.com/pdf-87281-21140?filename=21140.pdf",
+          "attempted_at": "2026-10-14T14:40:19.906586+00:00",
+          "status": 200,
+          "final_url": "https://www.pjoes.com/pdf-87281-21140?filename=21140.pdf",
+          "content_type": "application/pdf",
+          "bytes": 241743,
+          "sha256": "caa691e0cb5744572b644c21e2fae7edcd19af916278acf7f5318067d0aeb3ea",
+          "pdf_header": true
+        }
+      ]
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/acquisitions-third.json",
+      "receipt": [
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/violarite2006-rruff.pdf",
+          "url": "https://rruff.info/doclib/am/vol91/AM91_706.pdf",
+          "attempted_at": "2026-10-14T14:41:37.249643+00:00",
+          "status": 200,
+          "final_url": "https://www.rruff.net/doclib/am/vol91/AM91_706.pdf",
+          "content_type": "application/pdf",
+          "bytes": 449590,
+          "sha256": "2c5463334320df5c582f9c22d4d76c41e2011029fc77476bf73dd466963c48e7",
+          "pdf_header": true
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/violarite2006-arizona.pdf",
+          "url": "https://rruff.geo.arizona.edu/doclib/am/vol91/AM91_706.pdf",
+          "attempted_at": "2026-10-14T14:41:37.250754+00:00",
+          "error": "URLError(TimeoutError('timed out'))"
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/edwards2001-pubmed-correct.xml",
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=11137599&retmode=xml",
+          "attempted_at": "2026-10-14T14:41:37.251409+00:00",
+          "status": 200,
+          "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=11137599&retmode=xml",
+          "content_type": "text/xml; charset=UTF-8",
+          "bytes": 4545,
+          "sha256": "c9deb07c407769d1aeddb6f6c39e68846d358a33bfea020298f1f0768addc946",
+          "pdf_header": false
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/edwards-figure7-attempt.tif",
+          "url": "https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/femsec/34/3/10.1111/j.1574-6941.2001.tb00770.x/2/FEM_197_f7.tif",
+          "attempted_at": "2026-10-14T14:41:37.251216+00:00",
+          "error": "<HTTPError 403: 'Forbidden'>"
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/edwards2001-openalex.json",
+          "url": "https://api.openalex.org/works/https://doi.org/10.1111/j.1574-6941.2001.tb00770.x",
+          "attempted_at": "2026-10-14T14:41:37.320608+00:00",
+          "status": 200,
+          "final_url": "https://api.openalex.org/works/https://doi.org/10.1111/j.1574-6941.2001.tb00770.x",
+          "content_type": "application/json",
+          "bytes": 23247,
+          "sha256": "543f5ccca07928582234429a37dab4152a19a54bba3a76b307b817041ca5f462",
+          "pdf_header": false
+        },
+        {
+          "path": "/private/tmp/cmm-round74-sulfides-research/garcia2007-openalex.json",
+          "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.mineng.2006.05.005",
+          "attempted_at": "2026-10-14T14:41:37.478536+00:00",
+          "status": 200,
+          "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.mineng.2006.05.005",
+          "content_type": "application/json",
+          "bytes": 14989,
+          "sha256": "0c8c4190bd7d3e07528a51084cc2f10abdde945172d45cdc53c3aa9b79aa4171",
+          "pdf_header": false
+        }
+      ]
+    }
+  ],
+  "raw_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/acquire-final.py",
+      "bytes": 1335,
+      "sha256": "3e76b1bbde1e0a1300c6e761dcddb1159a1a79a7640d87fa1a7b03631bb69674"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/acquire-public.py",
+      "bytes": 1478,
+      "sha256": "a31e24bbf78a27311bd9beba8080a0df46f2fb32634fdb8ee26d99c098510ed1"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/acquire-second.py",
+      "bytes": 1335,
+      "sha256": "6fdcf39233fb9ed6ce18aaa870fb27e7f6b1811d1947f5679b30007358ceccff"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/acquire-third.py",
+      "bytes": 1566,
+      "sha256": "e8fd95c61a0bdd9400ad7d14b01486ceefc23ab8ac2ed8c5d0c027369bf2a702"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/acquire.py",
+      "bytes": 1479,
+      "sha256": "3746656536e2a5d221fa5c3de015fd7cc2e86df068439f37d9a7446114352793"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/acquisitions-final.json",
+      "bytes": 1916,
+      "sha256": "cf38c997d0ba54d1be679cbaaf8d57c1a388b5e91f48f125c9861dda6d3d6feb"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/acquisitions-initial.json",
+      "bytes": 2415,
+      "sha256": "feec09e28e0713bd7be9afaa20a66ddb2baf46e3b9b9bb0388fc2656de0e5134"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/acquisitions-public.json",
+      "bytes": 3606,
+      "sha256": "13d6edc7c98b5cefd1ba2b8d0559ae4dc94f6df76d57e612c2e16c682f5158ba"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/acquisitions-second.json",
+      "bytes": 2528,
+      "sha256": "e82805985e2a74295745c6f3bce260b6ce4e9496a66c4231701ee832407ef99c"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/acquisitions-third.json",
+      "bytes": 2695,
+      "sha256": "c16a2c26082793ea4e44702efec6716cc697ea04a7dcb0e3eaa20c0944e34111"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/create-records.py",
+      "bytes": 12328,
+      "sha256": "2ba044c202dc07c0ab380782fe2e41d0402b7f627b60a052730d244dd61e77d6"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/dedup-accepted-experiments.json",
+      "bytes": 2913,
+      "sha256": "74dde022396e9e7fe6a48537da0eabd4b26f0437304ff460180c633a6455e5ed"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/dedup-main.txt",
+      "bytes": 4044,
+      "sha256": "9f0c91f49bd4dae08710d3c58f9dd0e08f04e93d007929d464279559b119d7d6"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/dedup-raw.json",
+      "bytes": 9355,
+      "sha256": "9d8cac0aa2d04351f926a41981efeba60034e2095f828bedd72539f64a4e2fc7"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/dedup-raw.py",
+      "bytes": 1817,
+      "sha256": "a79785087cb63a6bbe57e63af5ce350d600d11605c038e353505c5e68a953fa4"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/dedup-raw.txt",
+      "bytes": 2249,
+      "sha256": "fe46d195bac5c2c79d007f63809f11a0522cc5ae3de55be2c60e360af57d1557"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/dedup-worktree.txt",
+      "bytes": 14267,
+      "sha256": "5ccb7c079729885d778acf31d70e88d7588afc39cecf74d7fefffc9b1d5cee0b"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/edwards2000-crossref.json",
+      "bytes": 1487,
+      "sha256": "19312671150e3507a8fabd2255acddafd607e00a927006499075d66b3af0b06b"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/edwards2000-links.json",
+      "bytes": 57810,
+      "sha256": "4cb9d7182a9e37d5f6ab8a85b4bb9a1b0cc63580e4a0b5a8e699df0f38f442fb"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/edwards2000-minimal.html",
+      "bytes": 143889,
+      "sha256": "6cf3d378534d252f998d592b004df98c7dc3a75795f6b3b3ba6da467cbfd712b"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/edwards2000.txt",
+      "bytes": 44284,
+      "sha256": "5c61d550dbdcff7746bebdf46dbdbbdf08aac54c318d652654a6f36e3606c7d8"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/edwards2001-crossref.json",
+      "bytes": 9014,
+      "sha256": "da682e5695b4709712ac0a05ef88c1d1c395d41c7bb95e9ae7a8f3d30203eb24"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/edwards2001-openalex.json",
+      "bytes": 23247,
+      "sha256": "543f5ccca07928582234429a37dab4152a19a54bba3a76b307b817041ca5f462"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/edwards2001-pubmed-correct.xml",
+      "bytes": 4545,
+      "sha256": "c9deb07c407769d1aeddb6f6c39e68846d358a33bfea020298f1f0768addc946"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/edwards2001-pubmed.xml",
+      "bytes": 3608,
+      "sha256": "eb21651acf722b7ae58bf59014c7ed32cb5bca263a432f65f3c633f06a398734"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/ferrooxidans-taxon.xml",
+      "bytes": 4257,
+      "sha256": "24c18c87a7999d4024a1e0a2b780785e1f77cfdc584e3f00737b2a03d9d2b73a"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/finalize-dossier.py",
+      "bytes": 15860,
+      "sha256": "c9ed82b1b859a36709a6ec57432ccfc05afa07a80a18742dad5d48a068e116d6"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/frozen-records.json",
+      "bytes": 1952,
+      "sha256": "dbd3c2db1b781725a79ebac5de431366620c014ff1184ca84457dd28a39cd383"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/garcia2007-crossref.json",
+      "bytes": 5419,
+      "sha256": "bb4fb91db6c70c12814b9ac5d34ec1d3b15b675812c574b325a944a3bd98a7d2"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/garcia2007-openalex.json",
+      "bytes": 14989,
+      "sha256": "0c8c4190bd7d3e07528a51084cc2f10abdde945172d45cdc53c3aa9b79aa4171"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/ima-current.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/ima-p1.png",
+      "bytes": 253223,
+      "sha256": "ee2b51234cdfbba906c9c3046c1a834fbfd92c5efe39727d7fb00c656cba44d7"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/ima-p1.txt",
+      "bytes": 3600,
+      "sha256": "0d705ef2fdc34dcb70ba807c6a44ecc0335bbd424bcfe970440148ab5a96a935"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/ima-p136.png",
+      "bytes": 269919,
+      "sha256": "e8f826085e1cb099e5a95c38addf40689ff2bf841df705e58aff5a82dc0ce20a"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/ima-p136.txt",
+      "bytes": 3144,
+      "sha256": "74e15e7d79c0b3e87a31dc14b11315d1706783ba5d787f33dac3ea7cd5375f79"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/ima-p2.png",
+      "bytes": 85060,
+      "sha256": "f4fda62885e32b4720e53e9d7132e57303022d89358d81441a85e69b8da0b1aa"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/ima-p2.txt",
+      "bytes": 1102,
+      "sha256": "298fd19ddc6aad1efb7f8b0c28e57a717816c2573db5a04d0a1ff97e2e6ce6a2"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/ima-p229.png",
+      "bytes": 280383,
+      "sha256": "a51906be7c42dc09b659279c592d697e365ed94cca040e0f3d084fd90f9dde2f"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/ima-p229.txt",
+      "bytes": 3300,
+      "sha256": "ace8e34d955cb9e235cee17b0ff7fc778cf79724076d71977928e41c8f6d5c2d"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/marcasite-handbook-p1.png",
+      "bytes": 237762,
+      "sha256": "24243a335c1c3d209ae3ce035aa8ddb3b7952a12d14c9da4cee385c3961fe59d"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/marcasite-handbook.pdf",
+      "bytes": 49954,
+      "sha256": "1afb213232c909b98fc49e40583c23de3635f5d98fff3c988c4132c4d28789be"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/marcasite-handbook.txt",
+      "bytes": 3770,
+      "sha256": "80bc41b37f1827dd0dce4d47ec6859e2fe29317d817d6b73afbb79bea7e87ad6"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/marcasite2000-pjoes-p1.png",
+      "bytes": 227458,
+      "sha256": "fa44f0edce32d5bf4947e47545c6955d07eb1eac45205931af37484cb133a2fe"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/marcasite2000-pjoes-p2.png",
+      "bytes": 260875,
+      "sha256": "2ce5388c338c3c3a2ca94891dea3eb33144931e9b364d300527f920fd6f8a14b"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/marcasite2000-pjoes-p3.png",
+      "bytes": 318513,
+      "sha256": "809da37e821e5e10c1d709afe504b8e1536dfbf96a958c19930506b22d40e4e8"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/marcasite2000-pjoes-p4.png",
+      "bytes": 216228,
+      "sha256": "5505854a46ef3760b567f490c9e7b4e297fb1efb4f5bf59f02a05c88b6a86a9c"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/marcasite2000-pjoes.pdf",
+      "bytes": 241743,
+      "sha256": "caa691e0cb5744572b644c21e2fae7edcd19af916278acf7f5318067d0aeb3ea"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/marcasite2000-pjoes.txt",
+      "bytes": 10829,
+      "sha256": "7002d4ca292812d6e0fb86113be60181c86318345a2dc8583add4605b2474ecd"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/marcasite2000-publisher.html",
+      "bytes": 44470,
+      "sha256": "b93c96be9a2c105cdd55a4a862be090785bf9249e183f0defc2a56a96971c277"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/named-validation.json",
+      "bytes": 587,
+      "sha256": "df9159361c16089ee8883a59d140350ffc74076802d024704f679f36df507e6f"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/named-validation.log",
+      "bytes": 31,
+      "sha256": "4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/pring2005-p1.png",
+      "bytes": 276844,
+      "sha256": "040534d4597b67040f6ee2c69f9de33c973abfd592b933c7a496d795f3cf9554"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/pring2005-p2.png",
+      "bytes": 287092,
+      "sha256": "5c02912d055babbd845cf2d7d40214968147a50c1c4762746bc738aeabffcade"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/pring2005-p3.png",
+      "bytes": 385383,
+      "sha256": "65069ec5b7633a2f8cd9f7cb7909661fc3ca67e8f0887859b2bdb084f0d26ccb"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/pring2005-p4.png",
+      "bytes": 330091,
+      "sha256": "f4095e9ae6959425f9536b31eb4445f73a5f78185756ec8c4c9eb4067f20ed84"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/pring2005.pdf",
+      "bytes": 357868,
+      "sha256": "ce4667b89455052968a3be6e0f5611434f6e6b7318ca0260dd0955a190e0ffef"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/pring2005.txt",
+      "bytes": 16843,
+      "sha256": "e47762dc4e10070b83816bdbcd13b91515193dae3c921198ae574ae467010043"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/violarite-handbook-p1.png",
+      "bytes": 170028,
+      "sha256": "b1c587b8d7988bc5c98b33254b3201ab4eb97f4bc2cccb2e4b8bad687b426f3e"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/violarite-handbook.pdf",
+      "bytes": 47393,
+      "sha256": "ed1e0a4a1b80d8b0c2974359d0ddea6359552f28c1b09979485291486fc17a75"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/violarite-handbook.txt",
+      "bytes": 2587,
+      "sha256": "15d11ddbceef7357e5ca52084f2a4ee7eb6166a047b9d137c38ad443e6eceb00"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/violarite2006-crossref.json",
+      "bytes": 2295,
+      "sha256": "d0be43b12e2cf71389249ffa52f31bc71cdedf2117ce9c8047c5f016a12c6b18"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/violarite2006-p1.png",
+      "bytes": 303794,
+      "sha256": "dd9dde8481071f609d37c8bd21b15a2c63642087af9b20222f117617eb430006"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/violarite2006-p2.png",
+      "bytes": 312356,
+      "sha256": "7bda1ccfacdd2c3fb75e59c708a64b6f4d26996471964389a5e59a27f5eb029b"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/violarite2006-p3.png",
+      "bytes": 484683,
+      "sha256": "9508f6894751018b178d8cb7e70ccfdb07e4cf5a65b60232839b4b70b0d93639"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/violarite2006-p4.png",
+      "bytes": 349335,
+      "sha256": "7a706f6487df081b1b67176483a62fa4ef139beff011b8aae8011cdac2a89281"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/violarite2006-rruff.pdf",
+      "bytes": 449590,
+      "sha256": "2c5463334320df5c582f9c22d4d76c41e2011029fc77476bf73dd466963c48e7"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/violarite2006.txt",
+      "bytes": 21161,
+      "sha256": "63d3c78def066676e0410531676ea58648fc1fa4aa7490c108c5c8d435839293"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-sulfides-research/xia2009-crossref.json",
+      "bytes": 31312,
+      "sha256": "35a52eef5cbd09795956332cb0ce9b3dcfc33ffa0dcf998d4fc6cf2f6f67017e"
+    }
+  ],
+  "source_rights": "IMAtermsCCBY-SA3.0 verified;Handbooksrightsreserved;publishercurrentlandinglicensechecked without assuming historicalPDFlicense. Bulk originals/graphics stayoutsideGit; repository contains curated facts, metadata, hashes and research handoff.",
+  "review_status": "Author sourceinspection completed; independently assigned review and batchgates remain required beforepublication."
+}
