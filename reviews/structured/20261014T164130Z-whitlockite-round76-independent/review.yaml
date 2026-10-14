@@ -1,0 +1,362 @@
+schema_version: 1.0.0
+review_id: 20261014T164130Z-whitlockite-round76-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of whitlockite
+started_at: '2026-10-14T16:34:54.495871Z'
+finished_at: '2026-10-14T16:41:30.728758Z'
+reviewer:
+  identity: codex /root/round68_iron_sulfides
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Phosphates agent authored this owner and history. Reviewer authored
+    anilite/digenite only this round, performed native target/history/schema capture
+    before judgment and made no phosphate owner/history edits. Shared acquired originals
+    independently read and their graphics inspected.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Whitlockite identity and qualified culture-associated calcium-phosphate crystallization
+  are supported, with Mg-stabilized beta-TCP explicitly retained as an alternative.
+  Initial chemical precipitation, negative controls, mixed products and preparation
+  conflicts remain visible. No corrective finding.
+source:
+  git_revision: 925a93db824261d146a14900b8367c88d25cbd71
+  state: working_tree
+  inputs:
+  - path: data/records/whitlockite.yaml
+    sha256: 4f33474f77f746399d5745123eecbbe40da0393466baf71a139f6b61fa68ae88
+    role: target
+  - path: history/records/whitlockite/2026-10-14T163156Z-codex-c280e2.yaml
+    sha256: 9f6ead540a3028c92af5e1107cde46a9ccb0f9ad865262500ca3d095c54aa51d
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire frozen maintained owner and linked canonical CREATE, independent
+    full-original scientific assessment.
+  selection: Assigned single-record independent review of another curator; exact native
+    input capture before assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:whitlockite
+targets:
+- target_id: cmmmech:whitlockite
+  path: data/records/whitlockite.yaml
+  label: Whitlockite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/whitlockite.yaml
+    role: maintained record
+checks:
+- check_id: named
+  name: Named assigned-pair nonempty validation
+  command: uv run --locked cmmmech validate data/records/hopeite.yaml data/records/whitlockite.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Reviewer executed;2records/0failed,terminalexit0.
+  target_ids:
+  - cmmmech:whitlockite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch
+  name: Actual current batch and history gates
+  command: just check; uv run --locked cmmmech validate --require-records; uv run
+    --locked cmmmech validate-history --base 925a93db824261d146a14900b8367c88d25cbd71;
+    uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Coordinator executed; reviewer verified terminal receipt, all four exit
+    codes, unchanged owner hashes and actual matching log.
+  target_ids:
+  - cmmmech:whitlockite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batch_log
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/whitlockite.yaml
+  locator: Entire frozen maintained owner
+  accessed_at: '2026-10-14T16:41:30.728758Z'
+  support: supports
+  summary: Exact independently inspected owner; no reviewer scientific edits.
+  snapshot_sha256: 4f33474f77f746399d5745123eecbbe40da0393466baf71a139f6b61fa68ae88
+- evidence_id: history
+  kind: record_content
+  reference: history/records/whitlockite/2026-10-14T163156Z-codex-c280e2.yaml
+  locator: Entire canonical CREATE and separate inline event
+  accessed_at: '2026-10-14T16:41:30.728758Z'
+  support: supports
+  summary: Actor, UTC chronology, target and scope match this curation; neither claims
+    earlier authorship.
+  snapshot_sha256: 9f6ead540a3028c92af5e1107cde46a9ccb0f9ad865262500ca3d095c54aa51d
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September 2026 original; introductory definitions and PDF page 234
+  accessed_at: '2026-10-14T16:41:30.728758Z'
+  support: supports
+  summary: Original identity row independently visually inspected. Grandfathered G
+    and original-description year are not an approval accession. No criticality designation
+    inherited.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/whitlockite.pdf
+  locator: Entire original one-page sheet, formula, crystallography and occurrence
+  accessed_at: '2026-10-14T16:41:30.728758Z'
+  support: supports
+  summary: Independently read and visually inspected original; material identity distinct
+    from elemental commodity or reagent.
+  snapshot_sha256: 7d7d406606eb860b632de3c941edb7575e228928e88d49c8509062909b8dc658
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5061,129958&retmode=xml
+  locator: Direct Taxon children 5061 and 129958; current acquired XML
+  accessed_at: '2026-10-14T16:41:30.728758Z'
+  support: context_only
+  summary: Species labels and ranks verified; species nodes do not authenticate an
+    experimental strain.
+  snapshot_sha256: 67c21383122188b376a5e28aa230d51b0ac12d24aea762a9cf5d4dcd69183efe
+- evidence_id: bindings
+  kind: validation
+  reference: /private/tmp/cmm-round76-phosphates-independent/source-hashes.json
+  locator: 63 nonempty source and render artifacts with byte sizes and SHA256
+  accessed_at: '2026-10-14T16:41:30.728758Z'
+  support: context_only
+  summary: Actual full PDFs, original XMLs, authority documents and page images bound;
+    no empty or failed download substituted.
+  snapshot_sha256: d209ae5fe517815e823365aa66c062faf84929af21d292ae20a420b926522e29
+- evidence_id: supplements
+  kind: search
+  reference: /private/tmp/cmm-round76-phosphates-independent/supplement-inspection.json
+  locator: Parsed complete original XMLs for all three papers, plus inspected PDF
+    end matter
+  accessed_at: '2026-10-14T16:41:30.728758Z'
+  support: context_only
+  summary: No supplement element or dedicated supplement section identified in these
+    original representations; not a universal absence claim.
+  snapshot_sha256: a392220d63d2e9c1761fbb5a2fe891fd54c50d64d1684d7c2bf595910c2d4f0b
+  search_scope: Complete acquired original JATS/XMLs inspected for supplement elements;
+    original PDF end matter read.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round76-phosphates-independent/dedup.json
+  locator: Current main and isolated worktree records/research/reviews/history, hidden
+    and ignored included with symlinks followed
+  accessed_at: '2026-10-14T16:41:30.728758Z'
+  support: context_only
+  summary: The existing katsarosite owner is a different product of the same 2025
+    experiment, not independent replication. Current phosphate owners remain conceptually
+    distinct.
+  snapshot_sha256: afd48d3554065fbfd92721f0836c71dd3a749c7a658d94959ed9d5195dd46cfa
+  search_scope: rg --no-ignore --hidden --follow --text -l -i hopeite|whitlockite|0089480|cryst9050259|cryst15020118
+    over explicit two-checkout corpus roots; curator cited-raw search receipt also
+    inspected.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round76-phosphates-independent/notice-search.json
+  locator: Three exact DOI correction/erratum/retraction searches on 2026-10-14
+  accessed_at: '2026-10-14T16:41:30.728758Z'
+  support: context_only
+  summary: No affecting notice identified in bounded returned results. Internal source
+    contradictions assessed directly; absence of notices is not universal.
+  snapshot_sha256: 7dfee07e5f4f959d01349d06749a63b66b7c2b71ce7dd80310a450f6f356d64a
+  search_scope: Exact DOI queries retained with full returned results; no date/domain
+    filter or exhaustive pagination.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round76-phosphates-independent/named.log
+  locator: Reviewer-executed named nonempty validation for this assigned pair
+  accessed_at: '2026-10-14T16:41:30.728758Z'
+  support: supports
+  summary: Two records checked; zero failed; terminal exit0. Structural validity is
+    not scientific proof.
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round76-final-gates.json
+  locator: Actual newly executed final round76 batch, after owner freeze
+  accessed_at: '2026-10-14T16:41:30.728758Z'
+  support: supports
+  summary: All four commands exit0, correct trusted base and unchanged owner hashes;
+    receipt and actual retained log independently checked.
+  snapshot_sha256: f18e5f6a252ea29194da47a54fe630e7a58a68c3b3591987f8befe1dd12b95ae
+- evidence_id: batch_log
+  kind: validation
+  reference: /private/tmp/cmm-round76-final-gates.log
+  locator: 'Actual gate log: 317 passed/3 skipped; 364 records; 419 histories; pages
+    current'
+  accessed_at: '2026-10-14T16:41:30.728758Z'
+  support: supports
+  summary: All required batch checks completed; no baseline substituted.
+  snapshot_sha256: 8bbfc2d4a2a7e38d93f94c3a9f0f7758fb6af775b4217cddf39ece223afe075a
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1371/journal.pone.0089480
+  locator: Complete14-page original, Methods, Results/Discussion, all Figures1–11
+    and Tables1–2
+  accessed_at: '2026-10-14T16:41:30.728758Z'
+  support: supports
+  summary: Full text and all fourteen original page renders independently inspected.
+    Culture-associated crystallization is supported, while Mg-stabilized beta-TCP
+    remains the authors explicit alternative.
+  snapshot_sha256: 28b4596def0b2129f97e9005acc9437ce44e7278d1d9a896f995756acaf74dc7
+- evidence_id: xml
+  kind: primary_source
+  reference: https://doi.org/10.1371/journal.pone.0089480
+  locator: Complete official original JATS
+  accessed_at: '2026-10-14T16:41:30.728758Z'
+  support: context_only
+  summary: Corroborates the experiment, phase ambiguity, controls and sample-specific
+    handling; no supplemental element identified.
+  snapshot_sha256: eaa0b5900cf7db15477186f75a69fdb88340227b8775ce737db01e46358f2e51
+- evidence_id: chemical_context
+  kind: primary_source
+  reference: https://doi.org/10.3390/cryst9050259
+  locator: Complete11-page original; Methods, Figure3, Section3.2, all Figures1–4/Tables1–4/end
+    matter
+  accessed_at: '2026-10-14T16:41:30.728758Z'
+  support: context_only
+  summary: 'Independent read of complete text and all original page contact sheets,
+    with Figure3 separately enlarged: no-additive chemical syntheses report whitlockite.
+    Different system and phase-summary graphics, not replication or raw phase patterns.'
+  snapshot_sha256: ec1e401023f0b4db0dce05621eed445d4812b7605877af0c3c853c0ced97852f
+- evidence_id: metadata
+  kind: authority
+  reference: https://api.crossref.org/works/10.1371/journal.pone.0089480
+  locator: DOI/title/publication date/relation/update fields
+  accessed_at: '2026-10-14T16:41:30.728758Z'
+  support: context_only
+  summary: Original identity and26February2014 date agree; no update-to and empty
+    relation do not prove exhaustive absence of notices.
+  snapshot_sha256: 365e55c3ac48113f82e98716b983e8bdd3d6e4a4e107167a8089541bb9b75a84
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral identity separated from experimentally ambiguous product
+  outcome: supported
+  target_ids:
+  - cmmmech:whitlockite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  - primary
+  summary: IMA grandfathered whitlockite formula includes structural vacancy and hydrogen
+    phosphate; Handbook historical Mg/Fe notation is not a different element/resource
+    owner. Crystalline experimental material may instead be Mg-stabilized beta-TCP,
+    explicitly allowed throughout.
+- assessment_id: protocol
+  area: evidence
+  topic: Specific live-culture and medium conditions
+  outcome: supported
+  target_ids:
+  - cmmmech:whitlockite
+  evidence_ids:
+  - record
+  - primary
+  - taxonomy
+  summary: DSM6008 inoculum reported by paper; speciesTaxID129958 does not authenticate
+    strain. Anaerobic500mL bottles/200mLmedium/300mLinitialCO,1atm,70degreesC,150rpm,pH6.8–7
+    and salts/additions match Methods. No inoculum amount or general replicate count
+    inferred. Phase30d, chemistry39d and four independent protein assays21d are separate
+    samples.
+- assessment_id: phase
+  area: evidence
+  topic: Crystalline culture product with explicit beta-TCP alternative
+  outcome: supported
+  target_ids:
+  - cmmmech:whitlockite
+  evidence_ids:
+  - record
+  - primary
+  summary: Figures2–4 sharp culture peaks versus sterile amorphoushump support crystallization.
+    Figures5/6/8 corroborate phosphate/Mg/association/fringes, but Mg also occurs
+    in sterile material and is not unique phase proof. Figure3 comparator and p12
+    text preserve Mg-stabilizedbetaTCP; calcined FTIR and Table2bulkCa/P do not resolve
+    hydrogen-site identity. Nanorods only HAP-like. Relative91.7/100percent crystallinity
+    againstbetaTCP is not phase purity or recovery.
+- assessment_id: controls
+  area: evidence
+  topic: Initial chemical precipitation and useful negative controls
+  outcome: supported
+  target_ids:
+  - cmmmech:whitlockite
+  evidence_ids:
+  - record
+  - primary
+  summary: Figure1 initial NaHCO3-associated precipitation occurs in botharms;30d
+    solids comparable to2h, so not increased microbial yield. Sterile30d control staysamorphous;15d
+    filtered spentmedium control negative; lowCa/Mg/P/bicarbonate modifiedmedium no
+    precipitate in eitherarm. These controls do not identify enzyme or universal biological
+    necessity.
+- assessment_id: limits
+  area: scope
+  topic: Treatment confounders and alternative abiotic route
+  outcome: supported
+  target_ids:
+  - cmmmech:whitlockite
+  evidence_ids:
+  - record
+  - primary
+  - chemical_context
+  summary: Inoculated3washes versus sterile1,39dchemistry2;600degreesC2hMethods versus1hResults.
+    Protein/metabolite analyses negative and Mgchelation/dissolution-reprecipitation
+    proposed only. Izatulina2019 Figure3 no-additive phasefield is separate chemical
+    context, limiting universal biology claims without transferring its raw-phase
+    confidence or organism mechanisms.
+- assessment_id: outcome
+  area: quantity
+  topic: Analytical mixed pellet distinct from purified recovered mineral
+  outcome: supported
+  target_ids:
+  - cmmmech:whitlockite
+  evidence_ids:
+  - record
+  - primary
+  summary: Source biomass and mineral could not be separated; bulk assay not phase-specific
+    mass balance. No closed phosphorus recovery, mineral-purity yield, clinical performance
+    or industrial deployment established.
+- assessment_id: provenance
+  area: provenance
+  topic: Independent exact-byte scientific review and actual final checks
+  outcome: supported
+  target_ids:
+  - cmmmech:whitlockite
+  evidence_ids:
+  - record
+  - history
+  - bindings
+  - named
+  - batch
+  - batch_log
+  - notices
+  summary: Native inspect preceded scientific assessment; reviewer authored anilite/digenite,
+    not either phosphate. Owner/history/schema hashes remain unchanged. Actual named
+    and batch outcomes/logs verified. Bounded searches and all nonempty original bindings
+    retained.
+findings: []
+actions: []
+limitations:
+- No independent re-refinement, hydrogen-site identification or quantitative phase
+  fraction establishes unambiguous pure whitlockite.
+- Calcination and unequal washing complicate comparisons; source1h/2h thermal duration
+  conflict remains unresolved.
+- Sterile/filtrate/modified-medium controls constrain the association, but no killed-cell
+  control or proven biochemical cause is established.
+- The37degreesC model-urine context is not replication of70degreesC culture experiment
+  and supplies phase-summary charts rather than raw diffraction patterns.
+- Bounded correction and supplementary checks do not establish literature-wide absence.
+  This review supplies no new experimental replication.

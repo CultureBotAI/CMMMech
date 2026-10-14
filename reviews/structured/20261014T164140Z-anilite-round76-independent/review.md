@@ -1,0 +1,435 @@
+# Independent scientific review of anilite
+
+- Review: 20261014T164140Z-anilite-round76-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T16:35:28.301645Z
+- Finished UTC: 2026-10-14T16:41:40.395530Z
+- Reviewer: codex /root/round68_new_frontier (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of distinct anilite and explicitly abiotic laboratory transformation evidence. The record preserves feed, structural and measurement limits without unsupported microbial or recovery claims; no supported corrective finding.
+
+## Scope And Provenance
+
+Whole frozen maintained owner and canonical history; complete primary text, claim-bearing graphics and mineral authorities; conditions, controls, outcomes and limits.
+
+Selection: Assigned current owner; successful native inspect before scientific judgment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 925a93db824261d146a14900b8367c88d25cbd71.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:anilite | data/records/anilite.yaml | maintained | Anilite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent reviewer named validation | passed | True | cmmmech:anilite | Actual execution 2026-10-14T16:36:23.810249+00:00 to 2026-10-14T16:36:28.419813+00:00; two records, zero failures. |
+| Completed batch gate 1 | passed | True | cmmmech:anilite | Coordinator command outcome independently checked against terminal receipt and retained log hash; 2026-10-14T16:35:01.537264+00:00 to 2026-10-14T16:38:24.063506+00:00. |
+| Completed batch gate 2 | passed | True | cmmmech:anilite | Coordinator command outcome independently checked against terminal receipt and retained log hash; 2026-10-14T16:38:24.063528+00:00 to 2026-10-14T16:38:33.692035+00:00. |
+| Completed batch gate 3 | passed | True | cmmmech:anilite | Coordinator command outcome independently checked against terminal receipt and retained log hash; 2026-10-14T16:38:33.692058+00:00 to 2026-10-14T16:38:39.168718+00:00. |
+| Completed batch gate 4 | passed | True | cmmmech:anilite | Coordinator command outcome independently checked against terminal receipt and retained log hash; 2026-10-14T16:38:39.168737+00:00 to 2026-10-14T16:38:42.769189+00:00. |
+
+## Scientific And Domain Assessments
+
+### Distinct mineral species versus experimental feed
+
+identity: supported. Targets: cmmmech:anilite.
+
+Authoritative mineral identity is correctly separated from copper element, related sulfides, bulk feeds and transient structural types. No inherited criticality designation.
+
+### Natural mixed feed and chemical treatment
+
+evidence: supported. Targets: cmmmech:anilite.
+
+Grain selection, retained djurleite, about5mL10^-3M ferric sulfate, pH about5,25C and interrupted same-grain diffraction correctly match original Table2/Methods. Ten-day larger grain is disclosed. No microbial inoculum or invented biological mechanism.
+
+### Copper-depleted solids and metastable structure
+
+evidence: supported. Targets: cmmmech:anilite.
+
+Tables2–4 and Figures2–4 support a major diffraction change by12hours and lower remaining-solid Cu:S. Single-crystal evidence distinguishes metastable geerite-like structure from natural yarrowite; no extraction percentage or isolated copper product inferred.
+
+### Conflicting phase abundance and identification limits
+
+scope: supported. Targets: cmmmech:anilite.
+
+Table4 computed32/41% djurleite conflicts with weak diffraction contribution and is retained as disagreement. Powder/optical/composition similarity alone is insufficient, and personal-communication weak-acid observation is not the main experiment.
+
+### Shared-author follow-up and applicability
+
+provenance: supported. Targets: cmmmech:anilite.
+
+WhitesideGoble1986 uses synthetic starting material and different apparatus. It provides qualified context rather than independent natural-anilite or microbial replication.
+
+### Exact owner/history and completed structural gates
+
+provenance: supported. Targets: cmmmech:anilite.
+
+Successful native inspect preceded scientific assessment; frozen target/history bytes are unchanged. Canonical CREATE and inline event describe the actual new owner. Named and actual batch commands passed, without claiming hosted CI or merge completion.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/anilite.yaml; Entire frozen maintained owner | supports | All scientific fields assessed independently; no reviewer changes to owner. |
+| history | history/records/anilite/2026-10-14T163053Z-codex-cc6511.yaml; Canonical CREATE and distinct inline event | supports | Target, actors, timestamps and finished event details match the actual addition; frozen hashes unchanged. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September2026 PDF p11, mineral row; status definitions pp1–2 | supports | Verified distinct species and formula; anilite A/1968-030; digenite A/1962 special procedure, not a fabricated approval number. |
+| handbook | https://handbookofmineralogy.org/pdfs/anilite.pdf; Complete one-page original; independently inspected text and render | supports | Formula and crystal distinctions confirmed; mechanical transformations and association do not equate pure phases with assay feeds. |
+| primary | https://rruff.info/doclib/cm/vol19/CM19_583.pdf; Complete Goble1981 original pp583–591; Methods pp584–585, Figures1–5 and Tables1–4; actual raw/goble1981.pdf | supports | Independently read full primary and all claim-bearing graphics. Natural mixed anilite/djurleite feed, chemical conditions and metastable single-crystal result support qualified abiotic alteration; phase-abundance conflict and no recovery mass balance retained. |
+| whiteside | https://rruff.info/doclib/cm/vol24/CM24_247.pdf; Complete WhitesideGoble1986 original pp247–258; Methods pp248–250; Figures1–7, Tables1–2; actual raw/whiteside1986-doclib.pdf | context_only | Independently read full primary and graphics. Mounted structural and separate unmounted composition experiments, substrate/concentration series and reported control limits inspected; same-author lineage is not independent microbial replication. |
+| named | /private/tmp/cmm-round76-sulfide-review/named.json; Actual reviewer execution and named.log | supports | Two records checked; zero failures; command times and log hash verified. |
+| batch | /private/tmp/cmm-round76-final-gates.json; Actual terminal batch receipt and exact retained log | supports | Verified current base/worktree, every required command exit zero and nonempty log with exact SHA256. These structural checks do not prove scientific truth. |
+| dedup | /private/tmp/cmm-round76-sulfide-review/dedup.txt; Bounded maintained corpus/research/reviews/history and cited round76 raw folder | context_only | Hidden and ignored entries and followed symlinks included; earlier material mentions and shared experiments distinguished from new maintained identity. |
+| notices | /private/tmp/cmm-round76-sulfide-review/notices.json; Exact-title correction/erratum searches and source-lineage assessment | context_only | No affecting notice surfaced in returned first result sets; no exhaustive absence claim. Unavailable2008 microbial anilite original remains deferred, without unsupported microbial transfer. |
+
+## Limits And Additional Notes
+
+- Natural starting material contains djurleite; diffraction and composition-derived abundance estimates disagree.
+- No acid-only comparison, independent replication count, aqueous copper assay or isolated-product mass balance.
+- Metastable product identification requires more than powder pattern or elemental ratio; no equilibrium or industrial claim.
+- Same-author follow-up and inaccessible microbial original are not independent accepted microbial evidence.
+- Every primary/authority hash binds an actual nonempty acquired artifact, not an HTML failure response. Originals and all inspected renders remain outside Git.
+- Review assesses working-tree bytes at the trusted base; no Git/GitHub mutation or hosted runtime result is claimed.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T164140Z-anilite-round76-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of anilite
+started_at: '2026-10-14T16:35:28.301645Z'
+finished_at: '2026-10-14T16:41:40.395530Z'
+reviewer:
+  identity: codex /root/round68_new_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer authored round76 chlorite and illite, not either sulfide.
+    These owners/history were authored by round68_iron_sulfides. Shared acquired originals
+    were independently read; no reviewer owner/history edits and no claim that shared
+    acquisition is independent experimental replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of distinct anilite and explicitly abiotic laboratory
+  transformation evidence. The record preserves feed, structural and measurement limits
+  without unsupported microbial or recovery claims; no supported corrective finding.
+source:
+  git_revision: 925a93db824261d146a14900b8367c88d25cbd71
+  state: working_tree
+  inputs:
+  - path: data/records/anilite.yaml
+    sha256: 97f8f8eb0d55379bfcb9815ca4ea72ea9cbc71b3fbae79f2a951f2ae92f33d50
+    role: target
+  - path: history/records/anilite/2026-10-14T163053Z-codex-cc6511.yaml
+    sha256: 401932e42f1935fbff4397cf56c6d2b6bdb11a8df1a7428a7039c8944849d7ca
+    role: context
+scope:
+  description: Whole frozen maintained owner and canonical history; complete primary
+    text, claim-bearing graphics and mineral authorities; conditions, controls, outcomes
+    and limits.
+  selection: Assigned current owner; successful native inspect before scientific judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:anilite
+targets:
+- target_id: cmmmech:anilite
+  path: data/records/anilite.yaml
+  label: Anilite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/anilite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/anilite/2026-10-14T163053Z-codex-cc6511.yaml
+    role: canonical_history
+checks:
+- check_id: named
+  name: Independent reviewer named validation
+  command: uv run --locked cmmmech validate data/records/anilite.yaml data/records/digenite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual execution 2026-10-14T16:36:23.810249+00:00 to 2026-10-14T16:36:28.419813+00:00;
+    two records, zero failures.
+  target_ids:
+  - cmmmech:anilite
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Completed batch gate 1
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Coordinator command outcome independently checked against terminal receipt
+    and retained log hash; 2026-10-14T16:35:01.537264+00:00 to 2026-10-14T16:38:24.063506+00:00.
+  target_ids:
+  - cmmmech:anilite
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Completed batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Coordinator command outcome independently checked against terminal receipt
+    and retained log hash; 2026-10-14T16:38:24.063528+00:00 to 2026-10-14T16:38:33.692035+00:00.
+  target_ids:
+  - cmmmech:anilite
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Completed batch gate 3
+  command: uv run --locked cmmmech validate-history --base 925a93db824261d146a14900b8367c88d25cbd71
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Coordinator command outcome independently checked against terminal receipt
+    and retained log hash; 2026-10-14T16:38:33.692058+00:00 to 2026-10-14T16:38:39.168718+00:00.
+  target_ids:
+  - cmmmech:anilite
+  evidence_ids:
+  - batch
+- check_id: batch_3
+  name: Completed batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Coordinator command outcome independently checked against terminal receipt
+    and retained log hash; 2026-10-14T16:38:39.168737+00:00 to 2026-10-14T16:38:42.769189+00:00.
+  target_ids:
+  - cmmmech:anilite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/anilite.yaml
+  locator: Entire frozen maintained owner
+  accessed_at: '2026-10-14T16:41:40.395530Z'
+  support: supports
+  summary: All scientific fields assessed independently; no reviewer changes to owner.
+  snapshot_sha256: 97f8f8eb0d55379bfcb9815ca4ea72ea9cbc71b3fbae79f2a951f2ae92f33d50
+- evidence_id: history
+  kind: record_content
+  reference: history/records/anilite/2026-10-14T163053Z-codex-cc6511.yaml
+  locator: Canonical CREATE and distinct inline event
+  accessed_at: '2026-10-14T16:41:40.395530Z'
+  support: supports
+  summary: Target, actors, timestamps and finished event details match the actual
+    addition; frozen hashes unchanged.
+  snapshot_sha256: 401932e42f1935fbff4397cf56c6d2b6bdb11a8df1a7428a7039c8944849d7ca
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September2026 PDF p11, mineral row; status definitions pp1–2
+  accessed_at: '2026-10-14T16:41:40.395530Z'
+  support: supports
+  summary: Verified distinct species and formula; anilite A/1968-030; digenite A/1962
+    special procedure, not a fabricated approval number.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://handbookofmineralogy.org/pdfs/anilite.pdf
+  locator: Complete one-page original; independently inspected text and render
+  accessed_at: '2026-10-14T16:41:40.395530Z'
+  support: supports
+  summary: Formula and crystal distinctions confirmed; mechanical transformations
+    and association do not equate pure phases with assay feeds.
+  snapshot_sha256: c4dbf114ef345fc35d26184128c5eb0562ac793130b17033ccb4a6586424ae8d
+- evidence_id: primary
+  kind: primary_source
+  reference: https://rruff.info/doclib/cm/vol19/CM19_583.pdf
+  locator: Complete Goble1981 original pp583–591; Methods pp584–585, Figures1–5 and
+    Tables1–4; actual raw/goble1981.pdf
+  accessed_at: '2026-10-14T16:41:40.395530Z'
+  support: supports
+  summary: Independently read full primary and all claim-bearing graphics. Natural
+    mixed anilite/djurleite feed, chemical conditions and metastable single-crystal
+    result support qualified abiotic alteration; phase-abundance conflict and no recovery
+    mass balance retained.
+  snapshot_sha256: b089bca1ade838a159d42ab6b45f604a1bd651a4856ef119ce9d36a519ab4e30
+- evidence_id: whiteside
+  kind: primary_source
+  reference: https://rruff.info/doclib/cm/vol24/CM24_247.pdf
+  locator: Complete WhitesideGoble1986 original pp247–258; Methods pp248–250; Figures1–7,
+    Tables1–2; actual raw/whiteside1986-doclib.pdf
+  accessed_at: '2026-10-14T16:41:40.395530Z'
+  support: context_only
+  summary: Independently read full primary and graphics. Mounted structural and separate
+    unmounted composition experiments, substrate/concentration series and reported
+    control limits inspected; same-author lineage is not independent microbial replication.
+  snapshot_sha256: e39a23d5d81db52cd7e9e32b6e4c04c78d702005326db95377e047067391832b
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round76-sulfide-review/named.json
+  locator: Actual reviewer execution and named.log
+  accessed_at: '2026-10-14T16:41:40.395530Z'
+  support: supports
+  summary: Two records checked; zero failures; command times and log hash verified.
+  snapshot_sha256: e135dd6653183918ebd998c09f91dc5134370ca34869663f56334f886776f688
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round76-final-gates.json
+  locator: Actual terminal batch receipt and exact retained log
+  accessed_at: '2026-10-14T16:41:40.395530Z'
+  support: supports
+  summary: Verified current base/worktree, every required command exit zero and nonempty
+    log with exact SHA256. These structural checks do not prove scientific truth.
+  snapshot_sha256: f18e5f6a252ea29194da47a54fe630e7a58a68c3b3591987f8befe1dd12b95ae
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round76-sulfide-review/dedup.txt
+  locator: Bounded maintained corpus/research/reviews/history and cited round76 raw
+    folder
+  accessed_at: '2026-10-14T16:41:40.395530Z'
+  support: context_only
+  summary: Hidden and ignored entries and followed symlinks included; earlier material
+    mentions and shared experiments distinguished from new maintained identity.
+  snapshot_sha256: 8631851d176088661605380951bc207a3a913ab0884e0c70b53ec5dd0ffeef9a
+  search_scope: rg --no-ignore --hidden --follow anilite|digenite|CM19_583|CM24_247
+    in data/records research reviews history and /private/tmp/cmm-round76-sulfides-research;
+    YAML/MD/TXT, bounded paths only.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round76-sulfide-review/notices.json
+  locator: Exact-title correction/erratum searches and source-lineage assessment
+  accessed_at: '2026-10-14T16:41:40.395530Z'
+  support: context_only
+  summary: No affecting notice surfaced in returned first result sets; no exhaustive
+    absence claim. Unavailable2008 microbial anilite original remains deferred, without
+    unsupported microbial transfer.
+  snapshot_sha256: 51b5532d5a281388dfd731c9bf1f3134a3ba3cc8828022ffc95d593a35454f1b
+  search_scope: '2026-10-14 web search: exact1981/1986titles plus correction erratum;
+    actualqueries recorded; sharedauthor lineage and originalfootnote checked.'
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Distinct mineral species versus experimental feed
+  outcome: supported
+  summary: Authoritative mineral identity is correctly separated from copper element,
+    related sulfides, bulk feeds and transient structural types. No inherited criticality
+    designation.
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  target_ids:
+  - cmmmech:anilite
+- assessment_id: conditions
+  area: evidence
+  topic: Natural mixed feed and chemical treatment
+  outcome: supported
+  summary: Grain selection, retained djurleite, about5mL10^-3M ferric sulfate, pH
+    about5,25C and interrupted same-grain diffraction correctly match original Table2/Methods.
+    Ten-day larger grain is disclosed. No microbial inoculum or invented biological
+    mechanism.
+  evidence_ids:
+  - record
+  - primary
+  target_ids:
+  - cmmmech:anilite
+- assessment_id: outcome
+  area: evidence
+  topic: Copper-depleted solids and metastable structure
+  outcome: supported
+  summary: Tables2–4 and Figures2–4 support a major diffraction change by12hours and
+    lower remaining-solid Cu:S. Single-crystal evidence distinguishes metastable geerite-like
+    structure from natural yarrowite; no extraction percentage or isolated copper
+    product inferred.
+  evidence_ids:
+  - record
+  - primary
+  target_ids:
+  - cmmmech:anilite
+- assessment_id: limits
+  area: scope
+  topic: Conflicting phase abundance and identification limits
+  outcome: supported
+  summary: Table4 computed32/41% djurleite conflicts with weak diffraction contribution
+    and is retained as disagreement. Powder/optical/composition similarity alone is
+    insufficient, and personal-communication weak-acid observation is not the main
+    experiment.
+  evidence_ids:
+  - record
+  - primary
+  target_ids:
+  - cmmmech:anilite
+- assessment_id: lineage
+  area: provenance
+  topic: Shared-author follow-up and applicability
+  outcome: supported
+  summary: WhitesideGoble1986 uses synthetic starting material and different apparatus.
+    It provides qualified context rather than independent natural-anilite or microbial
+    replication.
+  evidence_ids:
+  - record
+  - primary
+  - whiteside
+  - dedup
+  - notices
+  target_ids:
+  - cmmmech:anilite
+- assessment_id: provenance
+  area: provenance
+  topic: Exact owner/history and completed structural gates
+  outcome: supported
+  summary: Successful native inspect preceded scientific assessment; frozen target/history
+    bytes are unchanged. Canonical CREATE and inline event describe the actual new
+    owner. Named and actual batch commands passed, without claiming hosted CI or merge
+    completion.
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  target_ids:
+  - cmmmech:anilite
+findings: []
+actions: []
+limitations:
+- Natural starting material contains djurleite; diffraction and composition-derived
+  abundance estimates disagree.
+- No acid-only comparison, independent replication count, aqueous copper assay or
+  isolated-product mass balance.
+- Metastable product identification requires more than powder pattern or elemental
+  ratio; no equilibrium or industrial claim.
+- Same-author follow-up and inaccessible microbial original are not independent accepted
+  microbial evidence.
+notes:
+- Every primary/authority hash binds an actual nonempty acquired artifact, not an
+  HTML failure response. Originals and all inspected renders remain outside Git.
+- Review assesses working-tree bytes at the trusted base; no Git/GitHub mutation or
+  hosted runtime result is claimed.
+```

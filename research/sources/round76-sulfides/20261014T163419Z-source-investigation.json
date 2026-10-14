@@ -1,0 +1,1804 @@
+{
+  "timestamp_utc": "2026-10-14T16:34:19.597057+00:00",
+  "researcher": "codex (GPT-6; codex), author of anilite/digenite; independent review pending",
+  "worktree": "/private/tmp/CMMMech-expansion-round76-20261014",
+  "branch": "curate/cmm-expansion-round76-20261014",
+  "base": "925a93db824261d146a14900b8367c88d25cbd71",
+  "scope": "Distinct copper sulfide minerals anilite and digenite; bounded rambergite microbial lead; no criticality assertion or dataset ingestion.",
+  "decisions": [
+    {
+      "candidate": "anilite",
+      "decision": "curated for independent review",
+      "record": "data/records/anilite.yaml",
+      "accepted_primary": "Goble1981, Canadian Mineralogist19:583–591",
+      "scope": "Abiotic natural mixed-grain ferric-sulfate alteration; metastable structure and djurleite abundance uncertainty."
+    },
+    {
+      "candidate": "digenite",
+      "decision": "curated for independent review",
+      "record": "data/records/digenite.yaml",
+      "accepted_primary": "Whiteside and Goble1986, Canadian Mineralogist24:247–258",
+      "scope": "Abiotic synthetic-grain alteration plus apparatus-bound structural cycling; no microbial or isolated-copper recovery claim."
+    },
+    {
+      "candidate": "rambergite",
+      "decision": "deferred",
+      "doi": "10.1111/j.1462-2920.2011.02587.x",
+      "reason": "Complete main and real SI not acquired; metadata-only phase/mechanism claims not accepted."
+    },
+    {
+      "candidate": "microbial anilite",
+      "decision": "deferred extension",
+      "dois": [
+        "10.1016/j.mineng.2007.05.001",
+        "10.1016/S1003-6326(09)60017-0"
+      ],
+      "reason": "Incomplete originals and missing figures;2008 advertised PDF returned zero bytes."
+    },
+    {
+      "candidate": "microbial digenite",
+      "decision": "prior source gap retained",
+      "dois": [
+        "10.1016/j.mineng.2013.01.002",
+        "10.3390/microorganisms8091275"
+      ],
+      "reason": "Round75 record/discovery handoff distinguishes unavailable primary and ambiguous/mixed-phase context. Current abiotic original does not resolve those claims."
+    }
+  ],
+  "identity": {
+    "authority": "IMA September2026 reused original, live issuing URL checked; Handbook pages downloaded this round",
+    "ima_sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+    "anilite": {
+      "page": 11,
+      "formula": "Cu7S4",
+      "status": "A",
+      "approval": "1968-030"
+    },
+    "digenite": {
+      "page": 57,
+      "formula": "Cu1.8S",
+      "status": "A",
+      "approval": "1962 s.p.; not a numbered approval"
+    },
+    "rambergite": {
+      "page": 181,
+      "formula": "MnS",
+      "status": "A",
+      "approval": "1995-028",
+      "role": "deferred candidate identity only"
+    }
+  },
+  "primary_inspection": [
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/goble1981.pdf",
+      "sha256": "b089bca1ade838a159d42ab6b45f604a1bd651a4856ef119ce9d36a519ab4e30",
+      "pages": 9,
+      "read": "complete text and all9 original page renderings; Tables1–4/Figures1–5",
+      "key_locators": [
+        "pp584–585 material/preparation/Table2",
+        "pp586–588 precession/powder comparison and Table4",
+        "pp589–591 interpretation/references"
+      ],
+      "limitations": [
+        "Natural djurleite intergrowth; Table4 stoichiometric abundance versus diffraction disagreement.",
+        "Microprobe composition is remaining solids, no aqueous recovered-copper measurement.",
+        "Independent chemical controls and replicate count not reported.",
+        "No supplement identified in inspected original or bounded search; no proof all archival supplements absent."
+      ]
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/whiteside1986-doclib.pdf",
+      "sha256": "e39a23d5d81db52cd7e9e32b6e4c04c78d702005326db95377e047067391832b",
+      "pages": 12,
+      "read": "complete text and all12 original page renderings; Tables1–2/Figures1–7",
+      "key_locators": [
+        "pp248–250 synthesis/apparatus/analytics; Figure1",
+        "pp250–251 weak cycling/Figure2",
+        "pp252–255 composition and structural series/Figures3–6/Tables1–2",
+        "pp256–258 interpretation, blank and mounting dependence, references"
+      ],
+      "limitations": [
+        "Common author and explicit1981 experimental lineage; separate substrate/conditions, not independent microbial replication.",
+        "Mounting versus unmounted composition assays differ; quartz blank does not exclude mineral–mount coupling.",
+        "13 compiled structural experiments differ from282 grains/3 composition experiments.",
+        "Solid Cu:S-based percentages are not isolated recovery yields.",
+        "Metastable structural types and natural mineral names must not be conflated.",
+        "No supplement identified in inspected original or bounded search; no claim of exhaustive archival absence."
+      ]
+    }
+  ],
+  "dedup": {
+    "time": "2026-10-14T16:28:40.354689+00:00",
+    "hidden_ignored_included": true,
+    "followed_symlinks": true,
+    "terms": [
+      "anilite",
+      "digenite",
+      "rambergite",
+      "CM19_583",
+      "CM24_247",
+      "The leaching of copper from anilite",
+      "Structural and compositional changes in copper sulfides",
+      "S1003-6326(09)60017-0",
+      "mineng.2007.05.001",
+      "1462-2920.2011.02587"
+    ],
+    "repo_searches": [
+      {
+        "root": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech",
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "--text",
+          "-l",
+          "-i",
+          "-F",
+          "-e",
+          "anilite",
+          "-e",
+          "digenite",
+          "-e",
+          "rambergite",
+          "-e",
+          "CM19_583",
+          "-e",
+          "CM24_247",
+          "-e",
+          "The leaching of copper from anilite",
+          "-e",
+          "Structural and compositional changes in copper sulfides",
+          "-e",
+          "S1003-6326(09)60017-0",
+          "-e",
+          "mineng.2007.05.001",
+          "-e",
+          "1462-2920.2011.02587",
+          "data/records",
+          "research",
+          "reviews",
+          "history"
+        ],
+        "exit": 0,
+        "matched_paths": [
+          "research/sources/round75-sulfides/20261014T154309Z-source-investigation.json",
+          "research/sources/round75-sulfides/20261014T154309Z-source-investigation.md",
+          "research/ingests/round75-frontier-20261014.json",
+          "data/records/djurleite.yaml",
+          "research/sources/round33-chalcocite/20261011T203153Z-source-investigation.md",
+          "data/records/chalcocite.yaml",
+          "research/ingests/round75-frontier-20261014.md"
+        ],
+        "stderr": ""
+      },
+      {
+        "root": "/private/tmp/CMMMech-expansion-round76-20261014",
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "--text",
+          "-l",
+          "-i",
+          "-F",
+          "-e",
+          "anilite",
+          "-e",
+          "digenite",
+          "-e",
+          "rambergite",
+          "-e",
+          "CM19_583",
+          "-e",
+          "CM24_247",
+          "-e",
+          "The leaching of copper from anilite",
+          "-e",
+          "Structural and compositional changes in copper sulfides",
+          "-e",
+          "S1003-6326(09)60017-0",
+          "-e",
+          "mineng.2007.05.001",
+          "-e",
+          "1462-2920.2011.02587",
+          "data/records",
+          "research",
+          "reviews",
+          "history"
+        ],
+        "exit": 0,
+        "matched_paths": [
+          "research/ingests/round75-frontier-20261014.json",
+          "research/sources/round75-sulfides/20261014T154309Z-source-investigation.json",
+          "research/sources/round75-sulfides/20261014T154309Z-source-investigation.md",
+          "research/ingests/round75-frontier-20261014.md",
+          "data/records/djurleite.yaml",
+          "research/sources/round33-chalcocite/20261011T203153Z-source-investigation.md",
+          "data/records/chalcocite.yaml"
+        ],
+        "stderr": ""
+      }
+    ],
+    "raw_files": [
+      {
+        "path": "/private/tmp/cmm-round33-chalcocite-research/validation-receipt.json",
+        "bytes": 496,
+        "sha256": "a828a8d5f2c520af3bf7aec91d807cadcf109346d16cf50c2dcff53495237a1a",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round33-chalcocite-research/worktree-dedup.txt",
+        "bytes": 2329,
+        "sha256": "e4b47d6349a7bdaaee0f14c5e3d70f6729991f804e72251ca02495a389ecd573",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round33-chalcocite-research/original-dedup.txt",
+        "bytes": 2329,
+        "sha256": "66b811890a387c897fad3a3dcfc98b41d32c758880296294d59292c7369832f9",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round33-chalcocite-research/dedup.json",
+        "bytes": 16916,
+        "sha256": "21960eab0880ba6e1230245dd0569e5e3626f5ffce21948d040b25169d0cac13",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round33-chalcocite-research/raw/ima2026-reused.pdf",
+        "bytes": 3129886,
+        "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+        "matches": [
+          "anilite",
+          "digenite",
+          "rambergite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round33-chalcocite-research/raw/acquisition-1.json",
+        "bytes": 2797,
+        "sha256": "c15642f86cd5833c23544c7ec6fcc3c6e5467483beef25683a5b35b21c626ecd",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round33-chalcocite-research/raw/r33chalcocite_open1.json",
+        "bytes": 1086,
+        "sha256": "d1141aee3eea556915a1e66cc40f6f478aa39f1c8aa3105b4de574b7ae01fdd1",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round33-chalcocite-research/raw/r33chalcocite_search2.json",
+        "bytes": 28105,
+        "sha256": "4da050c9291e194d8b8950afed11c3b690e8a2d5576a8a2935d7187e26d1d93e",
+        "matches": [
+          "digenite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-project.html",
+        "bytes": 133389,
+        "sha256": "e477eebcc5d59df8773f4cbfb9a4ff69ae3ca99a971b41f3af927c91ddd69941",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round33-chalcocite-research/raw/r33chalcocite_search1.json",
+        "bytes": 28266,
+        "sha256": "6cb2204a6a58c44644fd05fda974128aa8ac88012bc371c7f46886a34a6e1e1b",
+        "matches": [
+          "digenite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round33-chalcocite-research/raw/lane2025-main.txt",
+        "bytes": 79361,
+        "sha256": "aa08091ff95e3a54e04b676e645e782fd03ae287f85136e28e2ba370efdb3b01",
+        "matches": [
+          "digenite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-main.xml",
+        "bytes": 109699,
+        "sha256": "c6ed400e8ae576250d5c2b31ceea4092b585a896e191b692bc47aee368276bb7",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-pdf.txt",
+        "bytes": 49473,
+        "sha256": "c449f7086222cd7e892a487f9f95bdefbdab55e61ee0bc2870e7c49a41ae9e28",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-main.pdf",
+        "bytes": 3846286,
+        "sha256": "52003e64693bce72bcc0999c21434c8a9718f779e84868022e729d6e647b0cc6",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round33-chalcocite-research/raw/acquisition-2.json",
+        "bytes": 1371,
+        "sha256": "6fd4c8920a8c5d98f1a8550c36d03ad1a4dc4fda2d1d09508e890dea39a37c14",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round33-chalcocite-research/raw/ima-reuse.json",
+        "bytes": 836,
+        "sha256": "9b7ccc480e20443a28369f4d05fe499ada79679dc92562ee1fd6a639654cc7d2",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-crossref.json",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round33-chalcocite-research/raw/lane2025-crossref.json",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round33-chalcocite-research/raw/lane2025-main.pdf",
+        "bytes": 1790801,
+        "sha256": "418390c07516867a592a8e1ebf6c8c95ad648bd0cfd16a5853819a9b5e16afed",
+        "matches": [
+          "digenite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-body.txt",
+        "bytes": 46715,
+        "sha256": "c656cd13264b326ca851920a776f45da48e0f01ac331cc4eb548beb14070a655",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round33-chalcocite-research/raw/wu2019-publisher.html",
+        "bytes": 5508,
+        "sha256": "d08752f4b2c91e144f7bfad5f7929a46f4a524a319dcd9220dc2375a6e1b6b01",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/acquisition-1.json",
+        "bytes": 2055,
+        "sha256": "efb13c4075af2dbaa85e0e8d8b34b3e911fc9aad2943985c70d9422931d1d82e",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/rsc-si-extracted.txt",
+        "bytes": 1194,
+        "sha256": "62bcb637c568f9d1ce515a24bf59cdf7b2caf0b428ea39b955f1c973bc5c07ff",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/ima-extracted.txt",
+        "bytes": 812836,
+        "sha256": "bea515cfb418e6d748be27c8699a771e437f176b3fb986fbca60cf8287a6c04f",
+        "matches": [
+          "anilite",
+          "digenite",
+          "rambergite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/acquisition-4.json",
+        "bytes": 373,
+        "sha256": "9348ff71df28e5abb7b9ad2f055f20239441951f173314cea86e5f19642dfb84",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/rsc2019-body.txt",
+        "bytes": 36006,
+        "sha256": "343bd568bb99c4d10eac80d2849cb2c450c1e2c651500c37f60e906a4aadac32",
+        "matches": [
+          "digenite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/acquisition-3.json",
+        "bytes": 1981,
+        "sha256": "f3dc572dac6ed4d5d070e88cad98601f087f0aef9363beca871e13e3014e289b",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/acquisition-2.json",
+        "bytes": 2531,
+        "sha256": "8d6b2d099b4055ea80c520d269016a220f87015b383838072bff24fc62dbe35e",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/dedup-receipt.json",
+        "bytes": 979700,
+        "sha256": "cf3af494c17ed1c54f99d10b1a45766e87b8463be2f98bd5bcae6e397bd6878a",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/frontiers-extracted.txt",
+        "bytes": 44304,
+        "sha256": "8da74c4b79e0983fbe6ed1b08959c537d483f93124322f66451c3881a69484d9",
+        "matches": [
+          "digenite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/frontiers2021-body.txt",
+        "bytes": 29225,
+        "sha256": "fc17cc4567ca8e3694290a391a9589b71c622d8ce17cfb65792061c6e9412478",
+        "matches": [
+          "digenite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/raw/rsc2019.html",
+        "bytes": 5590,
+        "sha256": "aa584cd076eb512d94789a0b83e0269dcb246898e02c62b2950a96bc5a2dedd1",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/raw/ncbi920-node.html",
+        "bytes": 32373,
+        "sha256": "c6d264e2f6ed730350be86773d9564c7427f7f089b57ed566d6494e3bd21a4ac",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/raw/rsc2019.xml",
+        "bytes": 84903,
+        "sha256": "c3bc31018b6d287b3ebb233ade5c14bd17a7d6871451c62b7132f615040b6254",
+        "matches": [
+          "digenite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/raw/ncbi920-api.json",
+        "bytes": 604,
+        "sha256": "a9018b21b07448df4983bdc7fbada96c6331825223cb00220b4f51109279d4bf",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/raw/crossref-frontiers.json",
+        "bytes": 16451,
+        "sha256": "7f5e36cbcabea3445fb2b964e12fb1a7827b91b013ec34d1ccf3c2b55073a424",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/raw/rsc2019-correction.xml",
+        "bytes": 6286,
+        "sha256": "07b49f0a633bbe51467b4966c6a709803ef8672ffa38023a9f3cc1a530ce0114",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/raw/rsc2019-oa.xml",
+        "bytes": 1584,
+        "sha256": "4318d0a4a7976898257f23c13a4eace3c8dc61ee9f62697549430e7264114f11",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/raw/ima2026.pdf",
+        "bytes": 3129886,
+        "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+        "matches": [
+          "anilite",
+          "digenite",
+          "rambergite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/raw/ncbi920.html",
+        "bytes": 21160,
+        "sha256": "cab22a4e9bc8dce1649fd53a7f40b6dd25313d46a1fe532ab766fc05c0974876",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/raw/crossref-rsc.json",
+        "bytes": 18794,
+        "sha256": "925dc90236ea27fb488ff480c19284edc63e6d64ba90c80e127e0c1cacf06de1",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/raw/frontiers2021.pdf",
+        "bytes": 6826484,
+        "sha256": "02d34d6104607f52393541b7edf207c5148fc29792df285e8a0dc3abb39ec436",
+        "matches": [
+          "digenite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/raw/frontiers2021.xml",
+        "bytes": 89299,
+        "sha256": "cedc1af2784afad2f6af0099e2d0c3e762fbe42bc8aa94da9316e37db59ec08c",
+        "matches": [
+          "digenite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/raw/rsc-supplement/RA-009-C9RA03658J-s001.pdf",
+        "bytes": 125050,
+        "sha256": "f1937ae26ea9e7fd94839a98a9e3c3265dc56515dfbc54287408a917ab01fd71",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round4-mineral-hosts-20261011/ima-home.html",
+        "bytes": 26639,
+        "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round4-mineral-hosts-20261011/acquisition.json",
+        "bytes": 4068,
+        "sha256": "b42da19af059f74af1354b04af8607902b78b53753acc138fb0437e6e4c8f998",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round4-mineral-hosts-20261011/ima-master-2026-09.pdf",
+        "bytes": 3129886,
+        "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+        "matches": [
+          "anilite",
+          "digenite",
+          "rambergite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round4-mineral-hosts-20261011/christel2018.xml",
+        "bytes": 148382,
+        "sha256": "78bc2cc1d5990d5f151e3bb67114f5a850473a1f10eb92f7eca824c503a1039b",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-expansion-copper-20261011/acquisition.json",
+        "bytes": 1372,
+        "sha256": "ef3544a05273dcabee2ed7de5a7238700873e26aedfd13e86052cef1f40ef436",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-expansion-copper-20261011/review-publisher.html",
+        "bytes": 1011662,
+        "sha256": "1fcd65fb91d6b78d8b36f39a6e9e1532a484e6c5070d0f91006e26fccc2d6488",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-expansion-copper-20261011/christel2018.xml",
+        "bytes": 148382,
+        "sha256": "78bc2cc1d5990d5f151e3bb67114f5a850473a1f10eb92f7eca824c503a1039b",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-expansion-copper-20261011/copper-chebi.html",
+        "bytes": 830776,
+        "sha256": "4cfff40a54a4a4a6559a83010b084918f09b40a7039075e0804774ea6116c581",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-expansion-copper-20261011/us2025.html",
+        "bytes": 21581,
+        "sha256": "5775f1dd2de344540ec22d5d4bd86f0ebd9cf399eb593de2f9780138b4731ae6",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round2-zinc-20261011/local-download-search.txt",
+        "bytes": 35627,
+        "sha256": "2be72eb0fa9eaaa577c3f36efef0c569fc0d1f1be481e014ff5fcd566df8f240",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round2-zinc-20261011/acquisition.json",
+        "bytes": 4348,
+        "sha256": "13be472cad5b4bd408230012f5cd9552a9679ab76fa1ee5758c7eac19c54eaa9",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round2-zinc-20261011/fowler1999-pmc.html",
+        "bytes": 21310,
+        "sha256": "3344f24843ef86d9c0f68cfe22f7247a1326bc6f1b666c113e0c51f9b8284b07",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round2-zinc-20261011/chebi-zinc.html",
+        "bytes": 827828,
+        "sha256": "0f6ce01418d63bdaa7493b763823c59f2f831becec622c2eb09f2daf65329a15",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round2-zinc-20261011/taxonomy-ferrooxidans.html",
+        "bytes": 32373,
+        "sha256": "c6d264e2f6ed730350be86773d9564c7427f7f089b57ed566d6494e3bd21a4ac",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round2-zinc-20261011/us2025.html",
+        "bytes": 21581,
+        "sha256": "85ba0bbd9c1f2cd05c87e21d762eda44191c383a367e9e344db2bbf1d5c11765",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/ncbi920.xml",
+        "bytes": 4257,
+        "sha256": "24c18c87a7999d4024a1e0a2b780785e1f77cfdc584e3f00737b2a03d9d2b73a",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/graaf-acquisitions.json",
+        "bytes": 809,
+        "sha256": "76b96d70a13230161dd61f5a06b1c24b29fcd1bb8a35194cad2d199864f3bb9b",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/fu2014-comparison.pdf",
+        "bytes": 475444,
+        "sha256": "410bbe806aa813d8819b9ad805700514f2fd0383c983ada8e109df4538a9427a",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/digenite-handbook.pdf",
+        "bytes": 51406,
+        "sha256": "a560ade7d82f2dd71abfdabace5c4b663d02e4a1f16bb9c94a6c6a6078614ca0",
+        "matches": [
+          "anilite",
+          "digenite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/ima2026-09.pdf",
+        "bytes": 3129886,
+        "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+        "matches": [
+          "anilite",
+          "digenite",
+          "rambergite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/fu2014-comparison.txt",
+        "bytes": 30686,
+        "sha256": "075badc0c18984bf486f2f82b6e14b7b0178567ecb45a2785fe02bf2c8affcf8",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/digenite-handbook.txt",
+        "bytes": 3516,
+        "sha256": "7d129a497a5eb55f76097f47d84908b7e6959e96fec4f80bdda0009e5db2ef68",
+        "matches": [
+          "anilite",
+          "digenite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/frozen-records.json",
+        "bytes": 1169,
+        "sha256": "801fba508a0affcac422c160f80b7213f38c1c294fa7da5d082942076c2d07fd",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/djurleite-draft.yaml",
+        "bytes": 7719,
+        "sha256": "f154a14de5b84bc3944e5e2e590919259f29359af483a935a14cfbfb38638cda",
+        "matches": [
+          "digenite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/fu2014-landing.html",
+        "bytes": 72056,
+        "sha256": "1b4f8a21843614905f6d9d2f7d76a2ecde260bf2a71380e70acc918c6140248e",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/djurleite-handbook.pdf",
+        "bytes": 50946,
+        "sha256": "7d01c626b27199ef825203e285ffb4c09a9ab2d300492f794c18f98aa97b32d4",
+        "matches": [
+          "anilite",
+          "digenite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/fu2014-publisher-acquisition.json",
+        "bytes": 383,
+        "sha256": "4338dc0d1ba8513ac2f3834cb04caf6dbb29741e2e0e8f05fc2f65f78b9a6bb7",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/graaf2020.txt",
+        "bytes": 94553,
+        "sha256": "95ab457643c02871a90e9d2bc9061404e51bf13bba7c13aa9f4534188b813f61",
+        "matches": [
+          "digenite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/authority-acquisitions.json",
+        "bytes": 2272,
+        "sha256": "cf30d045aff62d26d284078a158381ee4fd043d42d56d7ac05f3cdce2535fe49",
+        "matches": [
+          "digenite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/search-log.json",
+        "bytes": 1832,
+        "sha256": "6423dba4a8237ac20482faa75c507b24385ccce957b7f40d4f21098a7edddb5c",
+        "matches": [
+          "anilite",
+          "digenite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/fu2014-publisher.pdf",
+        "bytes": 475444,
+        "sha256": "410bbe806aa813d8819b9ad805700514f2fd0383c983ada8e109df4538a9427a",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/fu2014-crossref.json",
+        "bytes": 2358,
+        "sha256": "bbed9c6b6849d7817ed8c599a37e4fdfcf475e140ad3ed6ac5d074268efc4127",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/dedup.json",
+        "bytes": 15708,
+        "sha256": "a0f439af5d822ed109096a66b56c7b03338ed9e18b48860c6cbee5a313d640e2",
+        "matches": [
+          "anilite",
+          "digenite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/djurleite-handbook.txt",
+        "bytes": 3370,
+        "sha256": "e3e83e6bb882e2754b2091c0bf0d348debcd4c0f1aba402fdb2559403fa28ed9",
+        "matches": [
+          "anilite",
+          "digenite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/ima-reuse.json",
+        "bytes": 399,
+        "sha256": "26039f81171c0161597ad373f23416fc24ed72ef236539e17ac8201bb7915c4f",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/graaf2020.xml",
+        "bytes": 219315,
+        "sha256": "1c9730cadf295f1e75a938ebfbd393f1eef4ef48ae0cfa2063e6a81c8a8c28ed",
+        "matches": [
+          "digenite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/graaf2020.pdf",
+        "bytes": 5088747,
+        "sha256": "e06730ffb9991869cea37717e7e276f6ce5bc88beaef708c38b039412cbbf307",
+        "matches": [
+          "digenite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round75-sulfides-research/fu2014-acquisition.json",
+        "bytes": 525,
+        "sha256": "3a1b06c765f75f9d8aaea68e1609ffe623a84c2549fa484bddaaba1861e12d67",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/unl-fredrickson.html",
+        "bytes": 39506,
+        "sha256": "26f6ff5055f6e8d846ba1152ff59e16c3d1dc75744cfc1ae3adf0c69300dabdb",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/acquisition-1.json",
+        "bytes": 824,
+        "sha256": "7abe724969d16730a9063b847f8dc8efb69dd11f882c34ea17d50ce922c55630",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/manganite-handbook.txt",
+        "bytes": 4080,
+        "sha256": "0c41e909379e98545a326fba8f3b0d04865bdeed2f406fe7ec57141dc664b351",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/larsen1998.pdf",
+        "bytes": 1117148,
+        "sha256": "4b735a42e3aa0e9a5bf1b5b681c01891c1e958bd7a776abd1241e2582357e99f",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/crossref-bohu2015.json",
+        "bytes": 28638,
+        "sha256": "ef3d3b27a26149c00dc6ccaa0b0a50572bc9ff9f60665c8178abab3df06fed63",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/dedup-repo.txt",
+        "bytes": 9361,
+        "sha256": "35c351d4c34b31d9bbab6851fd4b5d807b05f3ba576b66679de0d73120e89922",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/bixbyite-nomenclature.pdf",
+        "bytes": 105306,
+        "sha256": "0f717e24a2e338ed49b895846427639d1c1a23ee7aba10e53a11153a70b5d727",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/proposed-manganite.yaml",
+        "bytes": 8672,
+        "sha256": "85f8136eedbfa466f976a66147fd3434e4b76a1bb0985310e58c78b49c2fa088",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/bixbyite2015.txt",
+        "bytes": 76096,
+        "sha256": "bceed565341fdeaf755f31f84a178529069f40cd9d3c592a4130802e6c0c38dd",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/manganite-handbook.pdf",
+        "bytes": 56897,
+        "sha256": "664264b589f3ff0481b0b26b6923835f2759eaa0d83467a6adda53a53cb2a6e1",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/ncbi-australicum.json",
+        "bytes": 1210,
+        "sha256": "0bd1ff9a2e26a3017e74e367be16aff051bc384bb442f0ce4c74807c689bf4a3",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/crossref-larsen1998.json",
+        "bytes": 2684,
+        "sha256": "249a5000c38b28624cb56dee0937c70d760207fe99739a54d2cafb163018070b",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/bixbyite-dossier-locator.json",
+        "bytes": 187,
+        "sha256": "0569603e3854cd104ebd7ccdac848b8f0dc7a6c113bc638ec76c2d755d6dd021",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/bixbyite-nomenclature.txt",
+        "bytes": 28380,
+        "sha256": "f98386bf3ff252ef7d65b27b32a535abd543a06d244405bd5bf03eb5b60876c5",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/dedup-referenced-raw-stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/bixbyite2015.pdf",
+        "bytes": 6163588,
+        "sha256": "32713978a598266cc8d0e272b0b01e3b84fcc277be3f33d8876805a61f9f0456",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/larsen1998.txt",
+        "bytes": 43525,
+        "sha256": "74c601a6964b5764a5a1d8dc26f51d927fcbaff7c5f23fa06b589c51d3ec83c8",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/bixbyite2015.xml",
+        "bytes": 163474,
+        "sha256": "2a0240c4f748c50c2e5ff1982ad572f0443b02fe5f3895c7d5f37996520e71f8",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/dedup-referenced-raw.txt",
+        "bytes": 4390445,
+        "sha256": "25d1ae0058ea7633c8846741b3cb99598d7157e49ac91c1ee58869236c8ccba2",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/acquisition-5.json",
+        "bytes": 1941,
+        "sha256": "e1e45388bb52e6653c368e1efd134accceeb5bb902b36c060dcd9954b0a31764",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/cnmnc.html",
+        "bytes": 26639,
+        "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/bixbyite2015.html",
+        "bytes": 1100051,
+        "sha256": "0fe12d82f263b054a8a7ba4db36cdd889f29db8d5a3bce6887faa9c9becd4fae",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/fredrickson2002-alt.pdf",
+        "bytes": 495128,
+        "sha256": "1067300a0280b39b7168e0cae70987c3b6e6016eb59110328f72c4232c11f83e",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/acquisition-4.json",
+        "bytes": 2095,
+        "sha256": "6abe8ecf1b91f65f8ca2ab3dc9fb8ce898fac495bf9cf0163bcb9225abaaad22",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/crossref-larsen1997.json",
+        "bytes": 2684,
+        "sha256": "249a5000c38b28624cb56dee0937c70d760207fe99739a54d2cafb163018070b",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/ncbi-mr4.json",
+        "bytes": 792,
+        "sha256": "315dcabedff9c15a032d3f001fc0337cd4a55a80f8a9685698f6d25655e7aaf8",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/ima-2026-09.pdf",
+        "bytes": 3129886,
+        "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+        "matches": [
+          "anilite",
+          "digenite",
+          "rambergite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/dedup-repo-stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/genbank-tg1.txt",
+        "bytes": 3415,
+        "sha256": "2b82cd5456d7075fb64400d8814aff88b85c240dee088a4d97c0231051ea290c",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/acquisition-3.json",
+        "bytes": 1807,
+        "sha256": "ba97149b84afe5543ceff2bd1807fc015228c3af3aaed09c18554d2846e6da6e",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/acquisition-2.json",
+        "bytes": 3111,
+        "sha256": "35be2d2cc3d4e8b830da6764b4239b4f071898a7a7744e37a850909f9eaa2c21",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/ima-2026-09.txt",
+        "bytes": 2240061,
+        "sha256": "80163108f37e9597f047f9bd6bffae3da360654c5a4e13587d736b0267f3f4e7",
+        "matches": [
+          "anilite",
+          "digenite",
+          "rambergite"
+        ]
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/fredrickson2002-alt.txt",
+        "bytes": 72736,
+        "sha256": "847b19dce99bbadd7d03ab91a44b97337bc72826401e7086224ee36f2ffe879b",
+        "matches": []
+      },
+      {
+        "path": "/private/tmp/cmm-round64-manganese-research/bohu-supp/supplement.txt",
+        "bytes": 2924,
+        "sha256": "c330b73b25a67d4c515185d76acdcb7aff5cf651ad605f028bed64760bfa039c",
+        "matches": []
+      }
+    ],
+    "excluded": [
+      {
+        "path": "/private/tmp/cmm-round32-bornite-research/raw/rsc2019.pdf",
+        "bytes": 5587,
+        "sha256": "7cf592d7070d722015fffb48bee112d25d317f845ad72af7c97ce5092c35ab18",
+        "reason": "PDF-named non-PDF"
+      },
+      {
+        "path": "/private/tmp/cmm-expansion-copper-20261011/review-supplement.pdf",
+        "bytes": 1816,
+        "sha256": "a609c84ed2d72f3cd1ab8b921838a214252e578576adce7cc9b27290c7db3cf5",
+        "reason": "PDF-named non-PDF"
+      }
+    ],
+    "raw_roots": [
+      "/private/tmp/cmm-round33-chalcocite-research",
+      "/private/tmp/cmm-round32-bornite-research",
+      "/private/tmp/cmm-round4-mineral-hosts-20261011",
+      "/private/tmp/cmm-expansion-copper-20261011",
+      "/private/tmp/cmm-round2-zinc-20261011",
+      "/private/tmp/cmm-round75-sulfides-research",
+      "/private/tmp/cmm-round64-manganese-research"
+    ]
+  },
+  "searches": [
+    {
+      "provider": "web.run",
+      "date_utc": "2026-10-14",
+      "query": "anilite digenite microbial leaching full text",
+      "filters": "none unless query explicitly restricts domain",
+      "coverage": "first returned result set; no pagination/exhaustiveness claim"
+    },
+    {
+      "provider": "web.run",
+      "date_utc": "2026-10-14",
+      "query": "rambergite Shewanella \"10.1111/j.1462-2920.2011.02587.x\"",
+      "filters": "none unless query explicitly restricts domain",
+      "coverage": "first returned result set; no pagination/exhaustiveness claim"
+    },
+    {
+      "provider": "web.run",
+      "date_utc": "2026-10-14",
+      "query": "\"Goble\" \"anilite\" \"1981\" supplement correction erratum",
+      "filters": "none unless query explicitly restricts domain",
+      "coverage": "first returned result set; no pagination/exhaustiveness claim"
+    },
+    {
+      "provider": "web.run",
+      "date_utc": "2026-10-14",
+      "query": "\"Whiteside\" \"Goble\" \"1986\" leaching correction erratum",
+      "filters": "none unless query explicitly restricts domain",
+      "coverage": "first returned result set; no pagination/exhaustiveness claim"
+    },
+    {
+      "provider": "web.run",
+      "date_utc": "2026-10-14",
+      "query": "\"Whiteside\" \"Goble\" \"1986\" \"CM24\" pdf",
+      "filters": "none unless query explicitly restricts domain",
+      "coverage": "first returned result set; no pagination/exhaustiveness claim"
+    },
+    {
+      "provider": "web.run",
+      "date_utc": "2026-10-14",
+      "query": "\"Bioleaching of anilite\" \"1410\" pdf",
+      "filters": "none unless query explicitly restricts domain",
+      "coverage": "first returned result set; no pagination/exhaustiveness claim"
+    },
+    {
+      "provider": "web.run",
+      "date_utc": "2026-10-14",
+      "query": "\"PNNL-SA-69040\"",
+      "filters": "none unless query explicitly restricts domain",
+      "coverage": "first returned result set; no pagination/exhaustiveness claim"
+    },
+    {
+      "provider": "web.run",
+      "date_utc": "2026-10-14",
+      "query": "\"Structural and compositional changes in copper sulfides\" correction OR erratum OR retraction",
+      "filters": "none unless query explicitly restricts domain",
+      "coverage": "first returned result set; no pagination/exhaustiveness claim"
+    },
+    {
+      "provider": "web.run",
+      "date_utc": "2026-10-14",
+      "query": "\"The leaching of copper from anilite\" correction OR erratum OR retraction",
+      "filters": "none unless query explicitly restricts domain",
+      "coverage": "first returned result set; no pagination/exhaustiveness claim"
+    },
+    {
+      "provider": "web.run",
+      "date_utc": "2026-10-14",
+      "query": "\"Digenite\" site:handbookofmineralogy.org",
+      "filters": "none unless query explicitly restricts domain",
+      "coverage": "first returned result set; no pagination/exhaustiveness claim"
+    }
+  ],
+  "search_limit": "Earlier exploratory web result sets preceded the retained final exact-query log; the final four queries were rerun with exact query/result capture. No reconstruction of unavailable query strings is claimed.",
+  "acquisitions": [
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/cheng2008-journal-pdf-response",
+      "url": "https://tnmsc.csu.edu.cn/EN/PDF/768",
+      "final_url": "https://tnmsc.csu.edu.cn/EN/PDF/768",
+      "time": "2026-10-14T16:27:33.458172+00:00",
+      "status": 200,
+      "content_type": "application/octet-stream;charset=UTF-8",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/digenite-handbook.pdf",
+      "url": "https://handbookofmineralogy.org/pdfs/digenite.pdf",
+      "final_url": "https://handbookofmineralogy.org/pdfs/digenite.pdf",
+      "time": "2026-10-14T16:28:43.836627+00:00",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 51406,
+      "sha256": "a560ade7d82f2dd71abfdabace5c4b663d02e4a1f16bb9c94a6c6a6078614ca0"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/whiteside1986-doclib.pdf",
+      "url": "https://rruff.info/doclib/cm/vol24/CM24_247.pdf",
+      "final_url": "https://www.rruff.net/doclib/cm/vol24/CM24_247.pdf",
+      "time": "2026-10-14T16:27:00.591196+00:00",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 1182438,
+      "sha256": "e39a23d5d81db52cd7e9e32b6e4c04c78d702005326db95377e047067391832b"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/cheng2008-journal.html",
+      "url": "https://tnmsc.csu.edu.cn/EN/Y2008/V18/I06/1410",
+      "final_url": "https://tnmsc.csu.edu.cn/EN/Y2008/V18/I06/1410",
+      "time": "2026-10-14T16:27:00.592395+00:00",
+      "status": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 96794,
+      "sha256": "76865fcec49fd3a10acb7752c9fe224f5d10fe3ecb28dc86c2393cfa139ba011"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/lee2011-osti-reportquery.json",
+      "url": "https://www.osti.gov/api/v1/records?search=PNNL-SA-69040",
+      "final_url": "https://www.osti.gov/api/v1/records?search=PNNL-SA-69040",
+      "time": "2026-10-14T16:27:00.592704+00:00",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 4400,
+      "sha256": "6acdff0d5ebea5b86cb9312f0c4bd4a7c6821f81f874c80da5b8fdd1c499630c"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/osti-query.json",
+      "url": "https://www.osti.gov/api/v1/records?doi=10.1111%2Fj.1462-2920.2011.02587.x",
+      "final_url": "https://www.osti.gov/api/v1/records?doi=10.1111%2Fj.1462-2920.2011.02587.x",
+      "time": "2026-10-14T16:22:31.299230+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 3729,
+      "sha256": "4624921723022c0584a870575c4ab5cf567b52ec3f4df917bfdf01732c3815c9"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/pnnl.html",
+      "url": "https://www.pnnl.gov/publications/manganese-sulfide-formation-concomitant-microbial-manganese-oxide-and-thiosulfate",
+      "final_url": "https://www.pnnl.gov/publications/manganese-sulfide-formation-concomitant-microbial-manganese-oxide-and-thiosulfate",
+      "time": "2026-10-14T16:22:31.300253+00:00",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 77593,
+      "sha256": "c7b048f8b2c818fb67a29e199ccd21f615da66b13955a6e07b97c408a6a19f7b"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/lee2011-crossref.json",
+      "url": "https://api.crossref.org/works/10.1111/j.1462-2920.2011.02587.x",
+      "final_url": "https://api.crossref.org/works/10.1111/j.1462-2920.2011.02587.x",
+      "time": "2026-10-14T16:22:31.300549+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 11022,
+      "sha256": "78d2e599d150fdf4d8e846da0eb15f381ccbc52af07bf0a6a4be748f4a0d04b2"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/lee2011-wiley.html",
+      "url": "https://enviromicro-journals.onlinelibrary.wiley.com/doi/full/10.1111/j.1462-2920.2011.02587.x",
+      "final_url": "https://enviromicro-journals.onlinelibrary.wiley.com/doi/full/10.1111/j.1462-2920.2011.02587.x",
+      "time": "2026-10-14T16:22:31.300824+00:00",
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 5675,
+      "sha256": "33e7f4905754dfd44896180d8ca82e9754f0a582d9e3db9be4b141c9a9970eef"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/goble1981.pdf",
+      "url": "https://rruff.info/doclib/cm/vol19/CM19_583.pdf",
+      "final_url": "https://www.rruff.net/doclib/cm/vol19/CM19_583.pdf",
+      "time": "2026-10-14T16:23:17.597991+00:00",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 632234,
+      "sha256": "b089bca1ade838a159d42ab6b45f604a1bd651a4856ef119ce9d36a519ab4e30"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/goble1981-rruffnet.pdf",
+      "url": "https://www.rruff.net/doclib/cm/vol19/CM19_583.pdf",
+      "final_url": "https://www.rruff.net/doclib/cm/vol19/CM19_583.pdf",
+      "time": "2026-10-14T16:23:17.598728+00:00",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 632234,
+      "sha256": "b089bca1ade838a159d42ab6b45f604a1bd651a4856ef119ce9d36a519ab4e30"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/lee2011-openalex.json",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1111/j.1462-2920.2011.02587.x",
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1111/j.1462-2920.2011.02587.x",
+      "time": "2026-10-14T16:23:17.598921+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 28083,
+      "sha256": "4683a878d80b79e33bc4abb9c0216c48dd2cdae7bb2dfa94c4c71167f7d66c13"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/lee2011-osti-biblio.html",
+      "url": "https://www.osti.gov/biblio/1115855",
+      "final_url": "https://www.osti.gov/biblio/1115855",
+      "time": "2026-10-14T16:23:17.599105+00:00",
+      "status": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 51555,
+      "sha256": "8db510bcdb2c872eeb4eb2a7f0dc589c7965c9826cbbb66135be6bf5e4fcabe4"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/lee2011-si.doc",
+      "url": "https://enviromicro-journals.onlinelibrary.wiley.com/doi/suppl/10.1111/j.1462-2920.2011.02587.x/supinfo/emi_2587_sm_ts1.doc",
+      "final_url": "https://enviromicro-journals.onlinelibrary.wiley.com/doi/suppl/10.1111/j.1462-2920.2011.02587.x/supinfo/emi_2587_sm_ts1.doc",
+      "time": "2026-10-14T16:23:18.038141+00:00",
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 5826,
+      "sha256": "daf1095a575e74d67116d0fd4b39d7def1a1ec63eb77f03e9357a96bd97aad16"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/whiteside1986.pdf",
+      "url": "https://rruff.info/uploads/CM24_247.pdf",
+      "final_url": "https://www.rruff.net/uploads/CM24_247.pdf",
+      "time": "2026-10-14T16:24:36.313478+00:00",
+      "status": 404,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 216,
+      "sha256": "36057b00c90c4774924365b7bfca4d17c2a6c90fa9f05b81825fcbe181ba0497"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/anilite-handbook.pdf",
+      "url": "https://handbookofmineralogy.org/pdfs/anilite.pdf",
+      "final_url": "https://handbookofmineralogy.org/pdfs/anilite.pdf",
+      "time": "2026-10-14T16:24:36.314202+00:00",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 47401,
+      "sha256": "c4dbf114ef345fc35d26184128c5eb0562ac793130b17033ccb4a6586424ae8d"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/cheng2008-crossref.json",
+      "url": "https://api.crossref.org/works/10.1016/S1003-6326(09)60017-0",
+      "final_url": "https://api.crossref.org/works/10.1016/S1003-6326(09)60017-0",
+      "time": "2026-10-14T16:24:36.314481+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 7808,
+      "sha256": "78c3c1b37ef67ff41ea9ad8b2d44e4ddc32800f2aa442782322ab3f65f189369"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/goble1981-crossref-query.json",
+      "url": "https://api.crossref.org/works?query.title=The%20leaching%20of%20copper%20from%20anilite&rows=5",
+      "final_url": "https://api.crossref.org/works?query.title=The%20leaching%20of%20copper%20from%20anilite&rows=5",
+      "time": "2026-10-14T16:24:36.314734+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 18138,
+      "sha256": "d939da39073f5bfced0edda3d15f1379f37907c8db3ece033069eee6a65196e1"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/tnmsc.html",
+      "url": "https://tnmsc.csu.edu.cn/EN/article/showChannelArticle.do?id=29",
+      "final_url": "https://tnmsc.csu.edu.cn/EN/article/showChannelArticle.do?id=29",
+      "time": "2026-10-14T16:24:36.604890+00:00",
+      "status": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 60068,
+      "sha256": "88f738784d92600139ce669af2e8e5b1744b65245af606711561f14695762830"
+    }
+  ],
+  "raw_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/acquire-fifth.py",
+      "bytes": 487,
+      "sha256": "03a8938b22f99e5efc397ad79c1642114d2b8692ef4bfbe3ea330c4c52ced789",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/acquire-final.py",
+      "bytes": 493,
+      "sha256": "13c445c50178990d587cff14b16cbc81167ad18dc40544f192677c8e7f571085",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/acquire-fourth.py",
+      "bytes": 663,
+      "sha256": "9ebc00be22e26419b43b048f3c9f1ad97743f02d610921a452f6b7d8af90ada4",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/acquire-second.py",
+      "bytes": 874,
+      "sha256": "66081328911a004460d8ebdeb8c0f0e7962daa27afb939cd9b22997df869cba2",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/acquire-third.py",
+      "bytes": 850,
+      "sha256": "2ebe8d5cc642599fc13b3646d1c6f7f40db3e6b007e7c8877a3f81d5667c30b8",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/acquire.py",
+      "bytes": 1438,
+      "sha256": "da32e898788a2bb83600c96d3df707a1d963ea0e416ce5c7a281dee8b2cdf1e5",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/acquisition-fifth.json",
+      "bytes": 433,
+      "sha256": "0554cc78305410bce5367a70c371ba1cf9f5ff7b00a2f67a89e79d631285ab26",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/acquisition-final.json",
+      "bytes": 435,
+      "sha256": "a65c514cf39327676c82fbd0c41b7e9134b732a02cefcf3c2ab86799b128bdf2",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/acquisition-fourth.json",
+      "bytes": 1321,
+      "sha256": "b4ff54c71d5320d1419801e05e3011c9616bfb93d79a2d35eb3f4e35c652cc90",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/acquisition-initial.json",
+      "bytes": 2020,
+      "sha256": "9eedaf3ed6e5188fb891db1218ed8726dd5bd96bcd90ac8359ba9da191d2c178",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/acquisition-second.json",
+      "bytes": 2342,
+      "sha256": "cf6fabb41943f538ec7ee0e005fec717c4c99d20f987cb2ada62894ac2d4d0e3",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/acquisition-third.json",
+      "bytes": 2288,
+      "sha256": "eb9e150f31b4facea142c41d0338782934f02befcf7899e2054e713ee84a41c0",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/anilite-handbook-p1.png",
+      "bytes": 132099,
+      "sha256": "c0794fda2b70f7fc534cc7ecd7768c1806def73580075185a5db3a812582a969",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/anilite-handbook.pdf",
+      "bytes": 47401,
+      "sha256": "c4dbf114ef345fc35d26184128c5eb0562ac793130b17033ccb4a6586424ae8d",
+      "content_check": "PDF"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/anilite-handbook.txt",
+      "bytes": 2544,
+      "sha256": "0a66c1ce4168b1090e30fd1597cfd46d0e3b9f83dffb954462f2d0d107ffe06e",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/cheng2008-crossref.json",
+      "bytes": 7808,
+      "sha256": "78c3c1b37ef67ff41ea9ad8b2d44e4ddc32800f2aa442782322ab3f65f189369",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/cheng2008-journal-pdf-response",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "content_check": "empty response; not evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/cheng2008-journal.html",
+      "bytes": 96794,
+      "sha256": "76865fcec49fd3a10acb7752c9fe224f5d10fe3ecb28dc86c2393cfa139ba011",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/curate.py",
+      "bytes": 12866,
+      "sha256": "a113c59eb56d7518ea665d835b7e87c892804f77ac8f973d7ebd7f2a590bad57",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/dedup-run.py",
+      "bytes": 2502,
+      "sha256": "b96680ec25b73caa56d0b07078d633b23c4d3ef46cfec636301c014b57854576",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/dedup.json",
+      "bytes": 30554,
+      "sha256": "77dcbcdf54955d061298b103574212ac8a53fcb9c504755751c220612685ff39",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/digenite-handbook-p1.png",
+      "bytes": 176935,
+      "sha256": "b4dcab7396f04a547741a88061f3c76fe51cd6aad4d6165fba7918312ab32fca",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/digenite-handbook.pdf",
+      "bytes": 51406,
+      "sha256": "a560ade7d82f2dd71abfdabace5c4b663d02e4a1f16bb9c94a6c6a6078614ca0",
+      "content_check": "PDF"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/digenite-handbook.txt",
+      "bytes": 3516,
+      "sha256": "7d129a497a5eb55f76097f47d84908b7e6959e96fec4f80bdda0009e5db2ef68",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/final-search-results.json",
+      "bytes": 28202,
+      "sha256": "43f57c25763aa0f1468831f501c6a5cf34dac1b4d208159b12d378523fa7491f",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/finalize-owners.py",
+      "bytes": 1956,
+      "sha256": "e1d1ea70a651a8aaaacd7a0af5a784b1afd33f9a46ff854d04c9f50e33930ab9",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/frozen-records.json",
+      "bytes": 1279,
+      "sha256": "530e43df6b45e9ad6f40791b3fa71207ce6ebb3343fd8d5c98a00706dcb15af5",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/goble1981-crossref-query.json",
+      "bytes": 18138,
+      "sha256": "d939da39073f5bfced0edda3d15f1379f37907c8db3ece033069eee6a65196e1",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/goble1981-p1.png",
+      "bytes": 464882,
+      "sha256": "3b348bebe18f37d00611a8c6fb453d5041abed05fb9ac170032811a5890a0a68",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/goble1981-p2.png",
+      "bytes": 390268,
+      "sha256": "aa22c1a5e2c32529ea3865ced1d5ea27c972b5f39516039237cd45c5839f29de",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/goble1981-p3.png",
+      "bytes": 410452,
+      "sha256": "bf8592f7b437750b752cea1c64d1077f9a7d44954ce28cfcf7d1f242b00113ee",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/goble1981-p4.png",
+      "bytes": 230791,
+      "sha256": "6c9efff9451d9727ae4c1bf4e855a61247550c7cbd144afdeeb0fd3cbaf0e89f",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/goble1981-p5.png",
+      "bytes": 311483,
+      "sha256": "cfd6095b9715a2837f587b5aa86c9d38856594d495adca13e9ac877049b3aa2a",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/goble1981-p6.png",
+      "bytes": 334814,
+      "sha256": "0284d459d71178e4eb4f32a66b5cae56e3cc5a09eab838cab61a9d5a13683f2d",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/goble1981-p7.png",
+      "bytes": 462975,
+      "sha256": "8260b669f1f2859c9882ee8caf78505fefdaa0622f4dfdb427084276fe027789",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/goble1981-p8.png",
+      "bytes": 550475,
+      "sha256": "74b9041d23f690fc84a7ba633310f0fae4613e671ddb3001ce9d7401a2795eee",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/goble1981-p9.png",
+      "bytes": 147397,
+      "sha256": "e0a3e3d0aea55dc19ef7c4a18bfab2431c6af1c82ff7c05f170d3321de99daf1",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/goble1981-rruffnet.pdf",
+      "bytes": 632234,
+      "sha256": "b089bca1ade838a159d42ab6b45f604a1bd651a4856ef119ce9d36a519ab4e30",
+      "content_check": "PDF"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/goble1981.pdf",
+      "bytes": 632234,
+      "sha256": "b089bca1ade838a159d42ab6b45f604a1bd651a4856ef119ce9d36a519ab4e30",
+      "content_check": "PDF"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/goble1981.txt",
+      "bytes": 28653,
+      "sha256": "ce7ac08ddac4985fd7b31e0cf4b5823413cf0831ba9c6900bafb0a3d00f283c9",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/ima-p11.png",
+      "bytes": 312282,
+      "sha256": "892cebb17ea451f27bac525d665f860370739dc969248e6b3e53a69bdf607249",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/ima-p11.txt",
+      "bytes": 3384,
+      "sha256": "b702c36a984fe3b5684dc9e962f3c0faac0d3b28c3bb3e753f127da658ae0525",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/ima-p181.png",
+      "bytes": 200087,
+      "sha256": "96074338be6b1177457b57b401abfaf129993db35f45d2e418e5621feaeb546b",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/ima-p181.txt",
+      "bytes": 3592,
+      "sha256": "096fa6a0ed9e5e3cc32ee0ef08083f9eaae19f105e937a6bff85f73534242377",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/ima-p57.png",
+      "bytes": 202765,
+      "sha256": "dc8c2da76c1e4b68ceaa4ab53a1fab7e50cf20427cd2f81ca78bf49b9ea92fd5",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/ima-p57.txt",
+      "bytes": 3641,
+      "sha256": "5ad58f0e5375ec7ba83b7ef63597d3e6217a66c00f35f80ae70ab1ed239917a5",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/ima-reuse.json",
+      "bytes": 7860,
+      "sha256": "ce398a33ec5dc72e9692a0460271537459eb9c475ae84905d79e3cdf89d2d5d4",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/ima2026-09.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "content_check": "PDF"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/lee2011-crossref.json",
+      "bytes": 11022,
+      "sha256": "78d2e599d150fdf4d8e846da0eb15f381ccbc52af07bf0a6a4be748f4a0d04b2",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/lee2011-openalex.json",
+      "bytes": 28083,
+      "sha256": "4683a878d80b79e33bc4abb9c0216c48dd2cdae7bb2dfa94c4c71167f7d66c13",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/lee2011-osti-biblio.html",
+      "bytes": 51555,
+      "sha256": "8db510bcdb2c872eeb4eb2a7f0dc589c7965c9826cbbb66135be6bf5e4fcabe4",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/lee2011-osti-reportquery.json",
+      "bytes": 4400,
+      "sha256": "6acdff0d5ebea5b86cb9312f0c4bd4a7c6821f81f874c80da5b8fdd1c499630c",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/lee2011-si.doc",
+      "bytes": 5826,
+      "sha256": "daf1095a575e74d67116d0fd4b39d7def1a1ec63eb77f03e9357a96bd97aad16",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/lee2011-wiley.html",
+      "bytes": 5675,
+      "sha256": "33e7f4905754dfd44896180d8ca82e9754f0a582d9e3db9be4b141c9a9970eef",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/named-validation.log",
+      "bytes": 31,
+      "sha256": "4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/osti-query.json",
+      "bytes": 3729,
+      "sha256": "4624921723022c0584a870575c4ab5cf567b52ec3f4df917bfdf01732c3815c9",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/pnnl.html",
+      "bytes": 77593,
+      "sha256": "c7b048f8b2c818fb67a29e199ccd21f615da66b13955a6e07b97c408a6a19f7b",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/proposed-anilite-microbial-source-issue.md",
+      "bytes": 1982,
+      "sha256": "913b8486060252b67be6f20687309972b54d6fdd5f0eb346b2d75a5c07ee4262",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/proposed-rambergite-source-issue.md",
+      "bytes": 1673,
+      "sha256": "1e2127d1e1780a55ecd45b9920c8d309d6bf23ec47b75bb184d590e13babef7a",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/tnmsc.html",
+      "bytes": 60068,
+      "sha256": "88f738784d92600139ce669af2e8e5b1744b65245af606711561f14695762830",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/whiteside1986-doclib-p1.png",
+      "bytes": 321430,
+      "sha256": "fc4d4fe71eb5aab306c6cdc90e158888ac01adc2caffb00308592af57df58ae0",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/whiteside1986-doclib-p10.png",
+      "bytes": 295408,
+      "sha256": "fcaa311550c8c981351b35c5ee0a712e147ca1dbb3814228ac5c3969e8f83e2e",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/whiteside1986-doclib-p11.png",
+      "bytes": 362635,
+      "sha256": "f0739c4835dd70e35ac1cb71ea1b64cc4c44bd53e20611977bceb38f7c3fdfa3",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/whiteside1986-doclib-p12.png",
+      "bytes": 272964,
+      "sha256": "642c667a2adb7a31f9a93e6b61884eba70a0e0267bd1b292bc5783e63843bf90",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/whiteside1986-doclib-p2.png",
+      "bytes": 353409,
+      "sha256": "f574e115b639873a06878f3e445bf435949dcc249b6791c11a6b7da4954d3cdf",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/whiteside1986-doclib-p3.png",
+      "bytes": 297346,
+      "sha256": "0da8e26dc8ba4c9d6e25d4ca775d14fe074db27a75c0ac3ddb5600bd7efe9975",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/whiteside1986-doclib-p4.png",
+      "bytes": 325959,
+      "sha256": "bf237c1390fb25d7f04d77bfaedf7f1b15ed19e0cdd8dbe9f424d5d55c49fada",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/whiteside1986-doclib-p5.png",
+      "bytes": 236091,
+      "sha256": "9fd09bad337213542726a50636b358647ac4322aca5de81d351919a76fe06519",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/whiteside1986-doclib-p6.png",
+      "bytes": 262233,
+      "sha256": "07af5d149215a9bdff14bb9e67bf9564057906ed3702eab83e8961e87bc0e269",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/whiteside1986-doclib-p7.png",
+      "bytes": 275232,
+      "sha256": "69c69d1feec996ebcf580835dec9bc57ed7afeecadafa413b228495512cb5686",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/whiteside1986-doclib-p8.png",
+      "bytes": 259383,
+      "sha256": "454adf4fb1a6b1f4da0db0fc6e3cb93cb517bb8533ad8b404e4af872da0d82b0",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/whiteside1986-doclib-p9.png",
+      "bytes": 258512,
+      "sha256": "c2a4d547ddd05667ee6f1906aa29cd2105099032f4dc3214a3624f91ad24b7b3",
+      "content_check": "PNG rendering"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/whiteside1986-doclib.pdf",
+      "bytes": 1182438,
+      "sha256": "e39a23d5d81db52cd7e9e32b6e4c04c78d702005326db95377e047067391832b",
+      "content_check": "PDF"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/whiteside1986-doclib.txt",
+      "bytes": 57931,
+      "sha256": "2529da0d7b261b6492b4314ea34f0b7298e311b7cc03e85fb0798a4beee9941a",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/whiteside1986.pdf",
+      "bytes": 216,
+      "sha256": "36057b00c90c4774924365b7bfca4d17c2a6c90fa9f05b81825fcbe181ba0497",
+      "content_check": "text/metadata/helper; see acquisition role"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/write-dossier.py",
+      "bytes": 19673,
+      "sha256": "361141d230af64a74c23d2c42cf3a6fc9fecd51c776ec7acb50fe0964617057e",
+      "content_check": "text/metadata/helper; see acquisition role"
+    }
+  ],
+  "frozen_records": {
+    "time": "2026-10-14T16:31:54.378197+00:00",
+    "worktree": "/private/tmp/CMMMech-expansion-round76-20261014",
+    "base": "925a93db824261d146a14900b8367c88d25cbd71",
+    "records": [
+      {
+        "slug": "anilite",
+        "record": "data/records/anilite.yaml",
+        "sha256": "97f8f8eb0d55379bfcb9815ca4ea72ea9cbc71b3fbae79f2a951f2ae92f33d50",
+        "history": "history/records/anilite/2026-10-14T163053Z-codex-cc6511.yaml",
+        "history_sha256": "401932e42f1935fbff4397cf56c6d2b6bdb11a8df1a7428a7039c8944849d7ca"
+      },
+      {
+        "slug": "digenite",
+        "record": "data/records/digenite.yaml",
+        "sha256": "ebee546a23140d37fd3081c6b9f3303a2188df080c2e0192e53e0228aa217a30",
+        "history": "history/records/digenite/2026-10-14T163054Z-codex-fe42d0.yaml",
+        "history_sha256": "d6b52c80f623ca194da036ab09b916444fa48a70ef97b995213f9b1847e45360"
+      }
+    ],
+    "named_validation": {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "cmmmech",
+        "validate",
+        "data/records/anilite.yaml",
+        "data/records/digenite.yaml",
+        "--require-records"
+      ],
+      "exit_code": 0,
+      "log": "/private/tmp/cmm-round76-sulfides-research/named-validation.log",
+      "log_sha256": "4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042"
+    }
+  },
+  "source_terms": {
+    "journal_originals": "Reuse license not established; original PDFs remain outsideGit.",
+    "handbook": "All rights reserved notice; only citation/paraphrased assessment committed.",
+    "ima": "Reused issuing PDF; only cited identity facts, not redistributed PDF."
+  },
+  "schema_assessment": "Existing material_kind mineral, microbial false, process redox_transformation/other and qualified prose represent these claims without schema/validator changes. Copper depletion percentages are outside mg/kg source-cell observation contract; no observations invented.",
+  "remaining_work": [
+    "Independent scientific review of exact frozen owners and histories.",
+    "Root full batch checks and publication lifecycle.",
+    "Acquire rambergite full primary/SI.",
+    "Acquire and phase-review microbial anilite originals; resolve experiment overlap.",
+    "Do not transfer mixed-ore or chalcocite-labeled digenite evidence."
+  ],
+  "proposed_issue_files": [
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/proposed-rambergite-source-issue.md",
+      "sha256": "1e2127d1e1780a55ecd45b9920c8d309d6bf23ec47b75bb184d590e13babef7a"
+    },
+    {
+      "path": "/private/tmp/cmm-round76-sulfides-research/proposed-anilite-microbial-source-issue.md",
+      "sha256": "913b8486060252b67be6f20687309972b54d6fdd5f0eb346b2d75a5c07ee4262"
+    }
+  ]
+}

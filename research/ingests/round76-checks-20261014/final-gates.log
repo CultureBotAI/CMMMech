@@ -1,0 +1,21 @@
+$ ['just', 'check']
+uv run --locked --extra dev python scripts/check.py
+All checks passed!
+........................................................................ [ 22%]
+........................................................................ [ 45%]
+........................................................................ [ 67%]
+.............................................................sss........ [ 90%]
+................................                                         [100%]
+317 passed, 3 skipped in 187.87s (0:03:07)
+Checked 364 record(s); 0 failed.
+Checked 419 history record(s); 0 error(s).
+
+$ ['uv', 'run', '--locked', 'cmmmech', 'validate', '--require-records']
+Checked 364 record(s); 0 failed.
+
+$ ['uv', 'run', '--locked', 'cmmmech', 'validate-history', '--base', '925a93db824261d146a14900b8367c88d25cbd71']
+Checked 419 history record(s); 0 error(s).
+
+$ ['uv', 'run', '--locked', 'python', 'scripts/render_pages.py', '--check']
+pages/ is current
+

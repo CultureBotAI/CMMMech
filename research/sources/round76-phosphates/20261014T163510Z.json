@@ -1,0 +1,1213 @@
+{
+  "timestamp_utc": "2026-10-14T16:35:10.107737+00:00",
+  "repository": "CultureBotAI/CMMMech",
+  "worktree": "/private/tmp/CMMMech-expansion-round76-20261014",
+  "base": "925a93db824261d146a14900b8367c88d25cbd71",
+  "actor": "codex GPT-6; /root/round68_phosphates",
+  "status": "Curator source investigation and frozen handoff; independent scientific acceptance and final batch gates pending.",
+  "scope": "Two distinct phosphate mineral identities: hopeite and whitlockite. Qualified microbial-associated observations, no inherited criticality or measured recovery yield.",
+  "selection": "Hopeite has direct original microscopy/diffraction and a known chemically precipitated precursor; whitlockite has a controlled culture-versus-sterile phase contrast, but the original explicitly retains Mg-stabilized beta-TCP as an alternative. Authoritative mineral identity does not erase experimental phase ambiguity.",
+  "searches": {
+    "date": "2026-10-14",
+    "provider": "web.run search/open and direct publisher, EuropePMC, Crossref, NCBI routes",
+    "queries": [
+      "hopeite microbial transformation Aspergillus niger zinc phosphate biomineralization",
+      "monetite bacteria biomineralization phosphate full text",
+      "whitlockite bacteria phosphate solubilization biomineralization",
+      "\"10.1371/journal.pone.0089480\" correction retraction whitlockite",
+      "\"10.3390/cryst15020118\" correction retraction",
+      "\"Carboxydothermus hydrogenoformans\" whitlockite beta tricalcium phosphate",
+      "\"hopeite\" \"Aspergillus\" dissolution zinc phosphate solubilization"
+    ],
+    "filters": "No date/domain filters; bounded returned results, no exhaustive literature claim. Individual web-call times not separately captured; exact acquisition times are retained.",
+    "response_snapshot": {
+      "path": "/private/tmp/cmm-round76-phosphates-research/web-searches.json",
+      "sha256": "05f6d97dba3ca747069b98b391ff735334c6fc7a3a68d79a47d1baa6d974a01b",
+      "bytes": 94907
+    }
+  },
+  "dedup": {
+    "receipt": {
+      "path": "/private/tmp/cmm-round76-phosphates-research/dedup-receipt.json",
+      "sha256": "90a87616c8378317e6764a94755ae1129f13cb92cfd8b53493efb7520c4c9af2",
+      "bytes": 27340
+    },
+    "contents": {
+      "recorded_at": "2026-10-14T16:25:05.748748+00:00",
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-n",
+        "-i",
+        "--max-columns",
+        "450",
+        "--max-columns-preview",
+        "hopeite|whitlockite|Carboxydothermus|0089480|cryst9050259|cryst15020118",
+        "/private/tmp/CMMMech-expansion-round76-20261014/data/records",
+        "/private/tmp/CMMMech-expansion-round76-20261014/research",
+        "/private/tmp/CMMMech-expansion-round76-20261014/reviews",
+        "/private/tmp/CMMMech-expansion-round76-20261014/history",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+        "/private/tmp/cmm-round10-b-f-raw",
+        "/private/tmp/cmm-round10-graphite-raw",
+        "/private/tmp/cmm-round10-nb-ta-raw",
+        "/private/tmp/cmm-round10-ti-zr-raw",
+        "/private/tmp/cmm-round11-be-rb-re-raw",
+        "/private/tmp/cmm-round11-he-raw",
+        "/private/tmp/cmm-round11-ir-os-hf-raw",
+        "/private/tmp/cmm-round11-lu-tm-pm-raw",
+        "/private/tmp/cmm-round12-aluminium-boron-raw",
+        "/private/tmp/cmm-round12-carbon-metals-raw",
+        "/private/tmp/cmm-round12-groups-raw",
+        "/private/tmp/cmm-round12-industrial-minerals-raw",
+        "/private/tmp/cmm-round13-grade-raw",
+        "/private/tmp/cmm-round13-mineral-raw",
+        "/private/tmp/cmm-round13-secondary-raw",
+        "/private/tmp/cmm-round14-magnet-raw",
+        "/private/tmp/cmm-round14-mineral-raw",
+        "/private/tmp/cmm-round14-product-raw",
+        "/private/tmp/cmm-round14-secondary-raw",
+        "/private/tmp/cmm-round15-brine-raw",
+        "/private/tmp/cmm-round15-mineral-raw",
+        "/private/tmp/cmm-round16-produced-water-raw",
+        "/private/tmp/cmm-round16-silicate-raw",
+        "/private/tmp/cmm-round16-vivianite-raw",
+        "/private/tmp/cmm-round17-biotite-raw",
+        "/private/tmp/cmm-round17-enstatite-raw",
+        "/private/tmp/cmm-round17-saline-raw",
+        "/private/tmp/cmm-round18-catalyst-raw",
+        "/private/tmp/cmm-round18-dunite-raw",
+        "/private/tmp/cmm-round18-mineral-feeds-raw",
+        "/private/tmp/cmm-round18-products-raw",
+        "/private/tmp/cmm-round19-hydrogenation-catalyst-raw",
+        "/private/tmp/cmm-round19-iron-manganese-raw",
+        "/private/tmp/cmm-round19-manganese-residue-raw",
+        "/private/tmp/cmm-round19-tailings-raw",
+        "/private/tmp/cmm-round20-goethite-raw",
+        "/private/tmp/cmm-round20-laterite-raw",
+        "/private/tmp/cmm-round20-mafic-tailings-raw",
+        "/private/tmp/cmm-round20-nodule-raw",
+        "/private/tmp/cmm-round21-crusts-raw",
+        "/private/tmp/cmm-round21-pcb-raw",
+        "/private/tmp/cmm-round21-ree-mud-raw",
+        "/private/tmp/cmm-round22-concretions-raw",
+        "/private/tmp/cmm-round22-pcb-raw",
+        "/private/tmp/cmm-round22-pv-raw",
+        "/private/tmp/cmm-round22-sulfides-raw",
+        "/private/tmp/cmm-round23-crusts-raw",
+        "/private/tmp/cmm-round23-ghiorse-raw",
+        "/private/tmp/cmm-round23-identity-gaps-raw",
+        "/private/tmp/cmm-round23-lcd-raw",
+        "/private/tmp/cmm-round23-rey-mud-raw",
+        "/private/tmp/cmm-round24-copper-slag-raw",
+        "/private/tmp/cmm-round24-frontier-raw",
+        "/private/tmp/cmm-round24-nimh-raw",
+        "/private/tmp/cmm-round24-sulfuric-raw",
+        "/private/tmp/cmm-round25-bf-dust-raw",
+        "/private/tmp/cmm-round25-button-raw",
+        "/private/tmp/cmm-round25-frontier-raw",
+        "/private/tmp/cmm-round25-oil-ash-raw",
+        "/private/tmp/cmm-round26-eaf-dust-raw",
+        "/private/tmp/cmm-round26-packaging-raw",
+        "/private/tmp/cmm-round26-root-raw",
+        "/private/tmp/cmm-round26-superalloy-raw",
+        "/private/tmp/cmm-round27-eaf-slag-raw",
+        "/private/tmp/cmm-round27-goethite-raw",
+        "/private/tmp/cmm-round27-packaging-raw",
+        "/private/tmp/cmm-round27-root-raw",
+        "/private/tmp/cmm-round27-superalloy-raw",
+        "/private/tmp/cmm-round28-black-shale-research",
+        "/private/tmp/cmm-round28-goethite-research",
+        "/private/tmp/cmm-round28-tatra-research",
+        "/private/tmp/cmm-round28-tire-research",
+        "/private/tmp/cmm-round29-bastnaesite-research",
+        "/private/tmp/cmm-round29-ilmenite-research",
+        "/private/tmp/cmm-round29-tungsten-waste-research",
+        "/private/tmp/cmm-round29-zinc-ore-research",
+        "/private/tmp/cmm-round30-basalt-research",
+        "/private/tmp/cmm-round30-chromite-research",
+        "/private/tmp/cmm-round30-pyrrhotite-research",
+        "/private/tmp/cmm-round30-tungsten-research",
+        "/private/tmp/cmm-round31-chromite-tailings-research",
+        "/private/tmp/cmm-round31-ilmenite-research",
+        "/private/tmp/cmm-round31-kaolin-research",
+        "/private/tmp/cmm-round31-kaolin-waste-research",
+        "/private/tmp/cmm-round31-stibnite-research",
+        "/private/tmp/cmm-round31-tungsten-research",
+        "/private/tmp/cmm-round32-arsenopyrite-research",
+        "/private/tmp/cmm-round32-bornite-research",
+        "/private/tmp/cmm-round32-chromitite-research",
+        "/private/tmp/cmm-round32-molybdenite-research",
+        "/private/tmp/cmm-round33-chalcocite-research",
+        "/private/tmp/cmm-round33-covellite-research",
+        "/private/tmp/cmm-round33-molybdenite-research",
+        "/private/tmp/cmm-round33-pyrite-research",
+        "/private/tmp/cmm-round34-galena-research",
+        "/private/tmp/cmm-round34-greigite-research",
+        "/private/tmp/cmm-round34-mackinawite-research",
+        "/private/tmp/cmm-round34-uraninite-research",
+        "/private/tmp/cmm-round35-anglesite-research",
+        "/private/tmp/cmm-round35-jarosite-research",
+        "/private/tmp/cmm-round35-ningyoite-research",
+        "/private/tmp/cmm-round35-schwertmannite-research",
+        "/private/tmp/cmm-round36-autunite-research",
+        "/private/tmp/cmm-round36-moolooite-research",
+        "/private/tmp/cmm-round36-uramphite-research",
+        "/private/tmp/cmm-round37-falottaite-research",
+        "/private/tmp/cmm-round37-humboldtine-research",
+        "/private/tmp/cmm-round37-lindbergite-research",
+        "/private/tmp/cmm-round37-rhabdophane-research",
+        "/private/tmp/cmm-round38-hausmannite-research",
+        "/private/tmp/cmm-round38-katsarosite-research",
+        "/private/tmp/cmm-round38-mimetite-research",
+        "/private/tmp/cmm-round38-vanadinite-research",
+        "/private/tmp/cmm-round39-brownrot-research",
+        "/private/tmp/cmm-round39-ree-phosphate-research",
+        "/private/tmp/cmm-round39-vanadinite-research",
+        "/private/tmp/cmm-round39-wei-manganese-research",
+        "/private/tmp/cmm-round40-birnessite-research",
+        "/private/tmp/cmm-round40-cobalt-manganese-oxide-research",
+        "/private/tmp/cmm-round40-manganese-ore-oxalates-research",
+        "/private/tmp/cmm-round40-samarium-phosphate-research",
+        "/private/tmp/cmm-round41-biogenic-birnessite-research",
+        "/private/tmp/cmm-round41-cobalt-birnessite-research",
+        "/private/tmp/cmm-round41-lateritic-cobalt-research",
+        "/private/tmp/cmm-round41-manganese-minerals-research",
+        "/private/tmp/cmm-round42-biogenic-selectivity-research",
+        "/private/tmp/cmm-round42-hardmetal-research",
+        "/private/tmp/cmm-round42-lithium-minerals-research",
+        "/private/tmp/cmm-round42-theisen-research",
+        "/private/tmp/cmm-round43-ge-independent-research",
+        "/private/tmp/cmm-round43-ge-minerals-research",
+        "/private/tmp/cmm-round43-germanium-resources-research",
+        "/private/tmp/cmm-round43-hardmetal-research",
+        "/private/tmp/cmm-round43-lithium-mixed-feeds-research",
+        "/private/tmp/cmm-round44-coal-optimization-research",
+        "/private/tmp/cmm-round44-hardmetal-2011-research",
+        "/private/tmp/cmm-round44-lithium-mixed-feeds-research",
+        "/private/tmp/cmm-round45-coal-technology-research",
+        "/private/tmp/cmm-round45-ge-minerals-research",
+        "/private/tmp/cmm-round45-indium-minerals-research",
+        "/private/tmp/cmm-round45-theisen-research",
+        "/private/tmp/cmm-round46-cassiterite-research",
+        "/private/tmp/cmm-round46-ge-minerals-research",
+        "/private/tmp/cmm-round46-laforetite-research",
+        "/private/tmp/cmm-round46-roquesite-research",
+        "/private/tmp/cmm-round47-indium-research",
+        "/private/tmp/cmm-round47-sn-minerals-research",
+        "/private/tmp/cmm-round47-tin-research",
+        "/private/tmp/cmm-round48-indium-research",
+        "/private/tmp/cmm-round48-sn-research",
+        "/private/tmp/cmm-round48-ti-research",
+        "/private/tmp/cmm-round48-zirconium-research",
+        "/private/tmp/cmm-round49-in-research",
+        "/private/tmp/cmm-round49-root-research",
+        "/private/tmp/cmm-round49-ti-research",
+        "/private/tmp/cmm-round49-zr-research",
+        "/private/tmp/cmm-round50-ftt-research",
+        "/private/tmp/cmm-round50-in-hf-research",
+        "/private/tmp/cmm-round50-ree-research",
+        "/private/tmp/cmm-round50-xenotime-feed-research",
+        "/private/tmp/cmm-round50-zircon-feed-research",
+        "/private/tmp/cmm-round51-hf-zr-research",
+        "/private/tmp/cmm-round51-monazite-research",
+        "/private/tmp/cmm-round51-ree-clay-research",
+        "/private/tmp/cmm-round51-zircon-feed-research",
+        "/private/tmp/cmm-round52-allanite-research",
+        "/private/tmp/cmm-round52-eudialyte-research",
+        "/private/tmp/cmm-round52-gold-tailings-research",
+        "/private/tmp/cmm-round52-hf-zr-research",
+        "/private/tmp/cmm-round53-allanite-leachate-research",
+        "/private/tmp/cmm-round53-hf-zr-research",
+        "/private/tmp/cmm-round53-ree-clay-research",
+        "/private/tmp/cmm-round53-zircon-feed-research",
+        "/private/tmp/cmm-round54-clay-resources-research",
+        "/private/tmp/cmm-round54-gluconobacter-research",
+        "/private/tmp/cmm-round54-mineral-frontier-research",
+        "/private/tmp/cmm-round54-tennantite-research",
+        "/private/tmp/cmm-round55-clay-recovery-research",
+        "/private/tmp/cmm-round55-enargite-research",
+        "/private/tmp/cmm-round55-tetrahedrite-research",
+        "/private/tmp/cmm-round56-chalcopyrite-enargite-research",
+        "/private/tmp/cmm-round56-enargite-carbon-research",
+        "/private/tmp/cmm-round56-nickel-arsenic-ore-research",
+        "/private/tmp/cmm-round56-zirconolite-research",
+        "/private/tmp/cmm-round57-anode-slime-research",
+        "/private/tmp/cmm-round57-electroplating-research",
+        "/private/tmp/cmm-round57-mineral-research",
+        "/private/tmp/cmm-round58-battery-research",
+        "/private/tmp/cmm-round58-electroplating-research",
+        "/private/tmp/cmm-round58-mineral-research",
+        "/private/tmp/cmm-round58-scr-research",
+        "/private/tmp/cmm-round59-battery-research",
+        "/private/tmp/cmm-round59-industrial-research",
+        "/private/tmp/cmm-round59-mineral-research",
+        "/private/tmp/cmm-round59-tannery-research",
+        "/private/tmp/cmm-round60-battery-research",
+        "/private/tmp/cmm-round60-industrial-research",
+        "/private/tmp/cmm-round60-mineral-research",
+        "/private/tmp/cmm-round60-resource-research",
+        "/private/tmp/cmm-round61-fluorite-research",
+        "/private/tmp/cmm-round61-lead-paste-research",
+        "/private/tmp/cmm-round61-zinc-research",
+        "/private/tmp/cmm-round62-carrollite-research",
+        "/private/tmp/cmm-round62-mineral-research",
+        "/private/tmp/cmm-round62-secondary-research",
+        "/private/tmp/cmm-round63-arsenates-research",
+        "/private/tmp/cmm-round63-magnesium-research",
+        "/private/tmp/cmm-round63-nickel-resources-research",
+        "/private/tmp/cmm-round64-feroxyhyte-research",
+        "/private/tmp/cmm-round64-iron-research",
+        "/private/tmp/cmm-round64-lithium-research",
+        "/private/tmp/cmm-round64-manganese-research",
+        "/private/tmp/cmm-round65-cadmium-research",
+        "/private/tmp/cmm-round65-magnesium-research",
+        "/private/tmp/cmm-round65-manganese-research",
+        "/private/tmp/cmm-round65-phosphates-research",
+        "/private/tmp/cmm-round66-magnesium-research",
+        "/private/tmp/cmm-round66-manganese-research",
+        "/private/tmp/cmm-round66-phosphates-research",
+        "/private/tmp/cmm-round67-manganese-research",
+        "/private/tmp/cmm-round67-new-frontier-research",
+        "/private/tmp/cmm-round67-phosphates-research",
+        "/private/tmp/cmm-round68-iron-sulfides-research",
+        "/private/tmp/cmm-round68-new-frontier-research",
+        "/private/tmp/cmm-round68-phosphates-research",
+        "/private/tmp/cmm-round69-ironoxides-research",
+        "/private/tmp/cmm-round69-meta-autunite-research",
+        "/private/tmp/cmm-round69-phosphates-research",
+        "/private/tmp/cmm-round69-silicates-research",
+        "/private/tmp/cmm-round7-ho-er-gd-raw",
+        "/private/tmp/cmm-round7-terbium-raw",
+        "/private/tmp/cmm-round70-aluminium-research",
+        "/private/tmp/cmm-round70-carbonates-research",
+        "/private/tmp/cmm-round70-phosphates-research",
+        "/private/tmp/cmm-round70-silicates-research",
+        "/private/tmp/cmm-round71-carbonates-research",
+        "/private/tmp/cmm-round71-silicates-research",
+        "/private/tmp/cmm-round71-strontium-research",
+        "/private/tmp/cmm-round72-arsenic-sulfides-research",
+        "/private/tmp/cmm-round72-carbonates-research",
+        "/private/tmp/cmm-round72-hydrocerussite-research",
+        "/private/tmp/cmm-round72-silicates-research",
+        "/private/tmp/cmm-round73-antimony-minerals-research",
+        "/private/tmp/cmm-round73-carbonates-research",
+        "/private/tmp/cmm-round73-cigs-research",
+        "/private/tmp/cmm-round73-silicates-research",
+        "/private/tmp/cmm-round74-clays-research",
+        "/private/tmp/cmm-round74-phosphates-research",
+        "/private/tmp/cmm-round74-pv-research",
+        "/private/tmp/cmm-round74-sulfides-research",
+        "/private/tmp/cmm-round75-clays-research",
+        "/private/tmp/cmm-round75-crt-research",
+        "/private/tmp/cmm-round75-sulfides-research",
+        "/private/tmp/cmm-round8-sc-pr-raw",
+        "/private/tmp/cmm-round9-cs-sr-raw",
+        "/private/tmp/cmm-round9-ru-rh-raw",
+        "/private/tmp/cmm-round9-si-sn-raw",
+        "-g",
+        "*.yaml",
+        "-g",
+        "*.md",
+        "-g",
+        "*.json",
+        "-g",
+        "*.txt",
+        "-g",
+        "*.xml",
+        "-g",
+        "*.gb"
+      ],
+      "exit_code": 0,
+      "raw_roots": [
+        "/private/tmp/cmm-round10-b-f-raw",
+        "/private/tmp/cmm-round10-graphite-raw",
+        "/private/tmp/cmm-round10-nb-ta-raw",
+        "/private/tmp/cmm-round10-ti-zr-raw",
+        "/private/tmp/cmm-round11-be-rb-re-raw",
+        "/private/tmp/cmm-round11-he-raw",
+        "/private/tmp/cmm-round11-ir-os-hf-raw",
+        "/private/tmp/cmm-round11-lu-tm-pm-raw",
+        "/private/tmp/cmm-round12-aluminium-boron-raw",
+        "/private/tmp/cmm-round12-carbon-metals-raw",
+        "/private/tmp/cmm-round12-groups-raw",
+        "/private/tmp/cmm-round12-industrial-minerals-raw",
+        "/private/tmp/cmm-round13-grade-raw",
+        "/private/tmp/cmm-round13-mineral-raw",
+        "/private/tmp/cmm-round13-secondary-raw",
+        "/private/tmp/cmm-round14-magnet-raw",
+        "/private/tmp/cmm-round14-mineral-raw",
+        "/private/tmp/cmm-round14-product-raw",
+        "/private/tmp/cmm-round14-secondary-raw",
+        "/private/tmp/cmm-round15-brine-raw",
+        "/private/tmp/cmm-round15-mineral-raw",
+        "/private/tmp/cmm-round16-produced-water-raw",
+        "/private/tmp/cmm-round16-silicate-raw",
+        "/private/tmp/cmm-round16-vivianite-raw",
+        "/private/tmp/cmm-round17-biotite-raw",
+        "/private/tmp/cmm-round17-enstatite-raw",
+        "/private/tmp/cmm-round17-saline-raw",
+        "/private/tmp/cmm-round18-catalyst-raw",
+        "/private/tmp/cmm-round18-dunite-raw",
+        "/private/tmp/cmm-round18-mineral-feeds-raw",
+        "/private/tmp/cmm-round18-products-raw",
+        "/private/tmp/cmm-round19-hydrogenation-catalyst-raw",
+        "/private/tmp/cmm-round19-iron-manganese-raw",
+        "/private/tmp/cmm-round19-manganese-residue-raw",
+        "/private/tmp/cmm-round19-tailings-raw",
+        "/private/tmp/cmm-round20-goethite-raw",
+        "/private/tmp/cmm-round20-laterite-raw",
+        "/private/tmp/cmm-round20-mafic-tailings-raw",
+        "/private/tmp/cmm-round20-nodule-raw",
+        "/private/tmp/cmm-round21-crusts-raw",
+        "/private/tmp/cmm-round21-pcb-raw",
+        "/private/tmp/cmm-round21-ree-mud-raw",
+        "/private/tmp/cmm-round22-concretions-raw",
+        "/private/tmp/cmm-round22-pcb-raw",
+        "/private/tmp/cmm-round22-pv-raw",
+        "/private/tmp/cmm-round22-sulfides-raw",
+        "/private/tmp/cmm-round23-crusts-raw",
+        "/private/tmp/cmm-round23-ghiorse-raw",
+        "/private/tmp/cmm-round23-identity-gaps-raw",
+        "/private/tmp/cmm-round23-lcd-raw",
+        "/private/tmp/cmm-round23-rey-mud-raw",
+        "/private/tmp/cmm-round24-copper-slag-raw",
+        "/private/tmp/cmm-round24-frontier-raw",
+        "/private/tmp/cmm-round24-nimh-raw",
+        "/private/tmp/cmm-round24-sulfuric-raw",
+        "/private/tmp/cmm-round25-bf-dust-raw",
+        "/private/tmp/cmm-round25-button-raw",
+        "/private/tmp/cmm-round25-frontier-raw",
+        "/private/tmp/cmm-round25-oil-ash-raw",
+        "/private/tmp/cmm-round26-eaf-dust-raw",
+        "/private/tmp/cmm-round26-packaging-raw",
+        "/private/tmp/cmm-round26-root-raw",
+        "/private/tmp/cmm-round26-superalloy-raw",
+        "/private/tmp/cmm-round27-eaf-slag-raw",
+        "/private/tmp/cmm-round27-goethite-raw",
+        "/private/tmp/cmm-round27-packaging-raw",
+        "/private/tmp/cmm-round27-root-raw",
+        "/private/tmp/cmm-round27-superalloy-raw",
+        "/private/tmp/cmm-round28-black-shale-research",
+        "/private/tmp/cmm-round28-goethite-research",
+        "/private/tmp/cmm-round28-tatra-research",
+        "/private/tmp/cmm-round28-tire-research",
+        "/private/tmp/cmm-round29-bastnaesite-research",
+        "/private/tmp/cmm-round29-ilmenite-research",
+        "/private/tmp/cmm-round29-tungsten-waste-research",
+        "/private/tmp/cmm-round29-zinc-ore-research",
+        "/private/tmp/cmm-round30-basalt-research",
+        "/private/tmp/cmm-round30-chromite-research",
+        "/private/tmp/cmm-round30-pyrrhotite-research",
+        "/private/tmp/cmm-round30-tungsten-research",
+        "/private/tmp/cmm-round31-chromite-tailings-research",
+        "/private/tmp/cmm-round31-ilmenite-research",
+        "/private/tmp/cmm-round31-kaolin-research",
+        "/private/tmp/cmm-round31-kaolin-waste-research",
+        "/private/tmp/cmm-round31-stibnite-research",
+        "/private/tmp/cmm-round31-tungsten-research",
+        "/private/tmp/cmm-round32-arsenopyrite-research",
+        "/private/tmp/cmm-round32-bornite-research",
+        "/private/tmp/cmm-round32-chromitite-research",
+        "/private/tmp/cmm-round32-molybdenite-research",
+        "/private/tmp/cmm-round33-chalcocite-research",
+        "/private/tmp/cmm-round33-covellite-research",
+        "/private/tmp/cmm-round33-molybdenite-research",
+        "/private/tmp/cmm-round33-pyrite-research",
+        "/private/tmp/cmm-round34-galena-research",
+        "/private/tmp/cmm-round34-greigite-research",
+        "/private/tmp/cmm-round34-mackinawite-research",
+        "/private/tmp/cmm-round34-uraninite-research",
+        "/private/tmp/cmm-round35-anglesite-research",
+        "/private/tmp/cmm-round35-jarosite-research",
+        "/private/tmp/cmm-round35-ningyoite-research",
+        "/private/tmp/cmm-round35-schwertmannite-research",
+        "/private/tmp/cmm-round36-autunite-research",
+        "/private/tmp/cmm-round36-moolooite-research",
+        "/private/tmp/cmm-round36-uramphite-research",
+        "/private/tmp/cmm-round37-falottaite-research",
+        "/private/tmp/cmm-round37-humboldtine-research",
+        "/private/tmp/cmm-round37-lindbergite-research",
+        "/private/tmp/cmm-round37-rhabdophane-research",
+        "/private/tmp/cmm-round38-hausmannite-research",
+        "/private/tmp/cmm-round38-katsarosite-research",
+        "/private/tmp/cmm-round38-mimetite-research",
+        "/private/tmp/cmm-round38-vanadinite-research",
+        "/private/tmp/cmm-round39-brownrot-research",
+        "/private/tmp/cmm-round39-ree-phosphate-research",
+        "/private/tmp/cmm-round39-vanadinite-research",
+        "/private/tmp/cmm-round39-wei-manganese-research",
+        "/private/tmp/cmm-round40-birnessite-research",
+        "/private/tmp/cmm-round40-cobalt-manganese-oxide-research",
+        "/private/tmp/cmm-round40-manganese-ore-oxalates-research",
+        "/private/tmp/cmm-round40-samarium-phosphate-research",
+        "/private/tmp/cmm-round41-biogenic-birnessite-research",
+        "/private/tmp/cmm-round41-cobalt-birnessite-research",
+        "/private/tmp/cmm-round41-lateritic-cobalt-research",
+        "/private/tmp/cmm-round41-manganese-minerals-research",
+        "/private/tmp/cmm-round42-biogenic-selectivity-research",
+        "/private/tmp/cmm-round42-hardmetal-research",
+        "/private/tmp/cmm-round42-lithium-minerals-research",
+        "/private/tmp/cmm-round42-theisen-research",
+        "/private/tmp/cmm-round43-ge-independent-research",
+        "/private/tmp/cmm-round43-ge-minerals-research",
+        "/private/tmp/cmm-round43-germanium-resources-research",
+        "/private/tmp/cmm-round43-hardmetal-research",
+        "/private/tmp/cmm-round43-lithium-mixed-feeds-research",
+        "/private/tmp/cmm-round44-coal-optimization-research",
+        "/private/tmp/cmm-round44-hardmetal-2011-research",
+        "/private/tmp/cmm-round44-lithium-mixed-feeds-research",
+        "/private/tmp/cmm-round45-coal-technology-research",
+        "/private/tmp/cmm-round45-ge-minerals-research",
+        "/private/tmp/cmm-round45-indium-minerals-research",
+        "/private/tmp/cmm-round45-theisen-research",
+        "/private/tmp/cmm-round46-cassiterite-research",
+        "/private/tmp/cmm-round46-ge-minerals-research",
+        "/private/tmp/cmm-round46-laforetite-research",
+        "/private/tmp/cmm-round46-roquesite-research",
+        "/private/tmp/cmm-round47-indium-research",
+        "/private/tmp/cmm-round47-sn-minerals-research",
+        "/private/tmp/cmm-round47-tin-research",
+        "/private/tmp/cmm-round48-indium-research",
+        "/private/tmp/cmm-round48-sn-research",
+        "/private/tmp/cmm-round48-ti-research",
+        "/private/tmp/cmm-round48-zirconium-research",
+        "/private/tmp/cmm-round49-in-research",
+        "/private/tmp/cmm-round49-root-research",
+        "/private/tmp/cmm-round49-ti-research",
+        "/private/tmp/cmm-round49-zr-research",
+        "/private/tmp/cmm-round50-ftt-research",
+        "/private/tmp/cmm-round50-in-hf-research",
+        "/private/tmp/cmm-round50-ree-research",
+        "/private/tmp/cmm-round50-xenotime-feed-research",
+        "/private/tmp/cmm-round50-zircon-feed-research",
+        "/private/tmp/cmm-round51-hf-zr-research",
+        "/private/tmp/cmm-round51-monazite-research",
+        "/private/tmp/cmm-round51-ree-clay-research",
+        "/private/tmp/cmm-round51-zircon-feed-research",
+        "/private/tmp/cmm-round52-allanite-research",
+        "/private/tmp/cmm-round52-eudialyte-research",
+        "/private/tmp/cmm-round52-gold-tailings-research",
+        "/private/tmp/cmm-round52-hf-zr-research",
+        "/private/tmp/cmm-round53-allanite-leachate-research",
+        "/private/tmp/cmm-round53-hf-zr-research",
+        "/private/tmp/cmm-round53-ree-clay-research",
+        "/private/tmp/cmm-round53-zircon-feed-research",
+        "/private/tmp/cmm-round54-clay-resources-research",
+        "/private/tmp/cmm-round54-gluconobacter-research",
+        "/private/tmp/cmm-round54-mineral-frontier-research",
+        "/private/tmp/cmm-round54-tennantite-research",
+        "/private/tmp/cmm-round55-clay-recovery-research",
+        "/private/tmp/cmm-round55-enargite-research",
+        "/private/tmp/cmm-round55-tetrahedrite-research",
+        "/private/tmp/cmm-round56-chalcopyrite-enargite-research",
+        "/private/tmp/cmm-round56-enargite-carbon-research",
+        "/private/tmp/cmm-round56-nickel-arsenic-ore-research",
+        "/private/tmp/cmm-round56-zirconolite-research",
+        "/private/tmp/cmm-round57-anode-slime-research",
+        "/private/tmp/cmm-round57-electroplating-research",
+        "/private/tmp/cmm-round57-mineral-research",
+        "/private/tmp/cmm-round58-battery-research",
+        "/private/tmp/cmm-round58-electroplating-research",
+        "/private/tmp/cmm-round58-mineral-research",
+        "/private/tmp/cmm-round58-scr-research",
+        "/private/tmp/cmm-round59-battery-research",
+        "/private/tmp/cmm-round59-industrial-research",
+        "/private/tmp/cmm-round59-mineral-research",
+        "/private/tmp/cmm-round59-tannery-research",
+        "/private/tmp/cmm-round60-battery-research",
+        "/private/tmp/cmm-round60-industrial-research",
+        "/private/tmp/cmm-round60-mineral-research",
+        "/private/tmp/cmm-round60-resource-research",
+        "/private/tmp/cmm-round61-fluorite-research",
+        "/private/tmp/cmm-round61-lead-paste-research",
+        "/private/tmp/cmm-round61-zinc-research",
+        "/private/tmp/cmm-round62-carrollite-research",
+        "/private/tmp/cmm-round62-mineral-research",
+        "/private/tmp/cmm-round62-secondary-research",
+        "/private/tmp/cmm-round63-arsenates-research",
+        "/private/tmp/cmm-round63-magnesium-research",
+        "/private/tmp/cmm-round63-nickel-resources-research",
+        "/private/tmp/cmm-round64-feroxyhyte-research",
+        "/private/tmp/cmm-round64-iron-research",
+        "/private/tmp/cmm-round64-lithium-research",
+        "/private/tmp/cmm-round64-manganese-research",
+        "/private/tmp/cmm-round65-cadmium-research",
+        "/private/tmp/cmm-round65-magnesium-research",
+        "/private/tmp/cmm-round65-manganese-research",
+        "/private/tmp/cmm-round65-phosphates-research",
+        "/private/tmp/cmm-round66-magnesium-research",
+        "/private/tmp/cmm-round66-manganese-research",
+        "/private/tmp/cmm-round66-phosphates-research",
+        "/private/tmp/cmm-round67-manganese-research",
+        "/private/tmp/cmm-round67-new-frontier-research",
+        "/private/tmp/cmm-round67-phosphates-research",
+        "/private/tmp/cmm-round68-iron-sulfides-research",
+        "/private/tmp/cmm-round68-new-frontier-research",
+        "/private/tmp/cmm-round68-phosphates-research",
+        "/private/tmp/cmm-round69-ironoxides-research",
+        "/private/tmp/cmm-round69-meta-autunite-research",
+        "/private/tmp/cmm-round69-phosphates-research",
+        "/private/tmp/cmm-round69-silicates-research",
+        "/private/tmp/cmm-round7-ho-er-gd-raw",
+        "/private/tmp/cmm-round7-terbium-raw",
+        "/private/tmp/cmm-round70-aluminium-research",
+        "/private/tmp/cmm-round70-carbonates-research",
+        "/private/tmp/cmm-round70-phosphates-research",
+        "/private/tmp/cmm-round70-silicates-research",
+        "/private/tmp/cmm-round71-carbonates-research",
+        "/private/tmp/cmm-round71-silicates-research",
+        "/private/tmp/cmm-round71-strontium-research",
+        "/private/tmp/cmm-round72-arsenic-sulfides-research",
+        "/private/tmp/cmm-round72-carbonates-research",
+        "/private/tmp/cmm-round72-hydrocerussite-research",
+        "/private/tmp/cmm-round72-silicates-research",
+        "/private/tmp/cmm-round73-antimony-minerals-research",
+        "/private/tmp/cmm-round73-carbonates-research",
+        "/private/tmp/cmm-round73-cigs-research",
+        "/private/tmp/cmm-round73-silicates-research",
+        "/private/tmp/cmm-round74-clays-research",
+        "/private/tmp/cmm-round74-phosphates-research",
+        "/private/tmp/cmm-round74-pv-research",
+        "/private/tmp/cmm-round74-sulfides-research",
+        "/private/tmp/cmm-round75-clays-research",
+        "/private/tmp/cmm-round75-crt-research",
+        "/private/tmp/cmm-round75-sulfides-research",
+        "/private/tmp/cmm-round8-sc-pr-raw",
+        "/private/tmp/cmm-round9-cs-sr-raw",
+        "/private/tmp/cmm-round9-ru-rh-raw",
+        "/private/tmp/cmm-round9-si-sn-raw"
+      ],
+      "not_existing_referenced_roots": [
+        "/private/tmp/cmm-round15-phosphate-raw",
+        "/private/tmp/cmm-round17-catalyst-raw",
+        "/private/tmp/cmm-round17-secondary-raw",
+        "/private/tmp/cmm-round22-pv-research",
+        "/private/tmp/cmm-round26-bof-prior-raw",
+        "/private/tmp/cmm-round26-eaf-dust-dedup-raw",
+        "/private/tmp/cmm-round32-chromitite-raw",
+        "/private/tmp/cmm-round5-magnesium-raw",
+        "/private/tmp/cmm-round6-eu-sm-tb-raw",
+        "/private/tmp/cmm-round6-indium-raw",
+        "/private/tmp/cmm-round67-mn-raw"
+      ],
+      "scope": "Current worktree record/research/review/history; main records; all existing external research/raw roots explicitly cited by maintained research. Hidden/ignored included and symlinks followed. No machine-wide absence claim.",
+      "output_sha256": "839630cf77921175c1637f4960312f9ebfb4b545354f40201da2672838c4c5e5",
+      "errors": ""
+    },
+    "output": {
+      "path": "/private/tmp/cmm-round76-phosphates-research/dedup-inclusive.txt",
+      "sha256": "839630cf77921175c1637f4960312f9ebfb4b545354f40201da2672838c4c5e5",
+      "bytes": 78549
+    },
+    "errors": {
+      "path": "/private/tmp/cmm-round76-phosphates-research/dedup-inclusive-errors.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "interpretation": "Hidden/ignored-inclusive and symlink-following search before owner creation found contextual hopeite in the existing katsarosite study and bibliographic/authority whitlockite mentions, not separate maintained owners. Reused study explicitly shares experimental lineage; no machine-wide absence asserted."
+  },
+  "acquisition": {
+    "receipt": {
+      "path": "/private/tmp/cmm-round76-phosphates-research/acquisition.json",
+      "sha256": "98a2ead79d52d97f17e048ea6713d0d96932a50835aa81974f552a64c41cb2e5",
+      "bytes": 7420
+    },
+    "new_downloads": [
+      {
+        "name": "haddad2014.pdf",
+        "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0089480&type=printable",
+        "path": "/private/tmp/cmm-round76-phosphates-research/haddad2014.pdf",
+        "started_at": "2026-10-14T16:23:56.486535+00:00",
+        "status": 200,
+        "final_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0089480&type=printable",
+        "content_type": "application/pdf",
+        "bytes": 7749828,
+        "sha256": "28b4596def0b2129f97e9005acc9437ce44e7278d1d9a896f995756acaf74dc7",
+        "signature": "%PDF-1.5\r%��",
+        "finished_at": "2026-10-14T16:23:57.808289+00:00"
+      },
+      {
+        "name": "haddad2014.xml",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3935887/fullTextXML",
+        "path": "/private/tmp/cmm-round76-phosphates-research/haddad2014.xml",
+        "started_at": "2026-10-14T16:23:56.487393+00:00",
+        "status": 200,
+        "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3935887/fullTextXML",
+        "content_type": "application/xml",
+        "bytes": 108731,
+        "sha256": "eaa0b5900cf7db15477186f75a69fdb88340227b8775ce737db01e46358f2e51",
+        "signature": "\n<!DOCTYPE a",
+        "finished_at": "2026-10-14T16:23:58.655583+00:00"
+      },
+      {
+        "name": "crystals2019.pdf",
+        "url": "https://mdpi-res.com/d_attachment/crystals/crystals-09-00259/article_deploy/crystals-09-00259.pdf",
+        "path": "/private/tmp/cmm-round76-phosphates-research/crystals2019.pdf",
+        "started_at": "2026-10-14T16:23:56.487574+00:00",
+        "status": 200,
+        "final_url": "https://mdpi-res.com/d_attachment/crystals/crystals-09-00259/article_deploy/crystals-09-00259.pdf",
+        "content_type": "application/pdf",
+        "bytes": 954769,
+        "sha256": "ec1e401023f0b4db0dce05621eed445d4812b7605877af0c3c853c0ced97852f",
+        "signature": "%PDF-1.4\r%��",
+        "finished_at": "2026-10-14T16:23:56.989961+00:00"
+      },
+      {
+        "name": "crystals2019.xml",
+        "url": "https://mdpi-res.com/d_attachment/crystals/crystals-09-00259/article_deploy/crystals-09-00259.xml",
+        "path": "/private/tmp/cmm-round76-phosphates-research/crystals2019.xml",
+        "started_at": "2026-10-14T16:23:56.487809+00:00",
+        "status": 200,
+        "final_url": "https://mdpi-res.com/d_attachment/crystals/crystals-09-00259/article_deploy/crystals-09-00259.xml",
+        "content_type": "text/xml;charset=UTF-8",
+        "bytes": 90598,
+        "sha256": "9f32593afb8eb4d284caef9d8548eedcfd27cc4931daff659d7a5e1595dfba5e",
+        "signature": "<?xml versio",
+        "finished_at": "2026-10-14T16:23:57.036358+00:00"
+      },
+      {
+        "name": "crossref2014.json",
+        "url": "https://api.crossref.org/works/10.1371/journal.pone.0089480",
+        "path": "/private/tmp/cmm-round76-phosphates-research/crossref2014.json",
+        "started_at": "2026-10-14T16:23:56.488383+00:00",
+        "status": 200,
+        "final_url": "https://api.crossref.org/works/10.1371/journal.pone.0089480",
+        "content_type": "application/json",
+        "bytes": 17737,
+        "sha256": "365e55c3ac48113f82e98716b983e8bdd3d6e4a4e107167a8089541bb9b75a84",
+        "signature": "{\"status\":\"o",
+        "finished_at": "2026-10-14T16:23:56.924328+00:00"
+      },
+      {
+        "name": "crossref2025.json",
+        "url": "https://api.crossref.org/works/10.3390/cryst15020118",
+        "path": "/private/tmp/cmm-round76-phosphates-research/crossref2025.json",
+        "started_at": "2026-10-14T16:23:56.488188+00:00",
+        "status": 200,
+        "final_url": "https://api.crossref.org/works/10.3390/cryst15020118",
+        "content_type": "application/json",
+        "bytes": 25824,
+        "sha256": "194d1b2ca9424d1f0766b90a6f6edf16278541ad229401f2ed3029a497733e18",
+        "signature": "{\"status\":\"o",
+        "finished_at": "2026-10-14T16:23:56.934191+00:00"
+      },
+      {
+        "name": "crossref2019.json",
+        "url": "https://api.crossref.org/works/10.3390/cryst9050259",
+        "path": "/private/tmp/cmm-round76-phosphates-research/crossref2019.json",
+        "started_at": "2026-10-14T16:23:56.924465+00:00",
+        "status": 200,
+        "final_url": "https://api.crossref.org/works/10.3390/cryst9050259",
+        "content_type": "application/json",
+        "bytes": 12708,
+        "sha256": "50199c056b29c4c794996e34317b2ba5e94c89cb796953a238cdf3b2dd0f4748",
+        "signature": "{\"status\":\"o",
+        "finished_at": "2026-10-14T16:23:57.207826+00:00"
+      },
+      {
+        "name": "hopeite-handbook.pdf",
+        "url": "https://www.handbookofmineralogy.org/pdfs/hopeite.pdf",
+        "path": "/private/tmp/cmm-round76-phosphates-research/hopeite-handbook.pdf",
+        "started_at": "2026-10-14T16:23:56.934291+00:00",
+        "status": 200,
+        "final_url": "https://www.handbookofmineralogy.org/pdfs/hopeite.pdf",
+        "content_type": "application/pdf",
+        "bytes": 51945,
+        "sha256": "720a98610fbaa76d2c5ecab438d37a0d3ea44a03c44f1e556a925c1986774eb4",
+        "signature": "%PDF-1.6\r%��",
+        "finished_at": "2026-10-14T16:23:57.207037+00:00"
+      },
+      {
+        "name": "whitlockite-handbook.pdf",
+        "url": "https://www.handbookofmineralogy.org/pdfs/whitlockite.pdf",
+        "path": "/private/tmp/cmm-round76-phosphates-research/whitlockite-handbook.pdf",
+        "started_at": "2026-10-14T16:23:56.990060+00:00",
+        "status": 200,
+        "final_url": "https://www.handbookofmineralogy.org/pdfs/whitlockite.pdf",
+        "content_type": "application/pdf",
+        "bytes": 52655,
+        "sha256": "7d7d406606eb860b632de3c941edb7575e228928e88d49c8509062909b8dc658",
+        "signature": "%PDF-1.6\r%��",
+        "finished_at": "2026-10-14T16:23:57.206917+00:00"
+      },
+      {
+        "name": "ncbi-taxonomy.xml",
+        "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5061,129958&retmode=xml",
+        "path": "/private/tmp/cmm-round76-phosphates-research/ncbi-taxonomy.xml",
+        "started_at": "2026-10-14T16:23:57.036449+00:00",
+        "status": 200,
+        "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5061,129958&retmode=xml",
+        "content_type": "text/xml; charset=UTF-8",
+        "bytes": 8157,
+        "sha256": "67c21383122188b376a5e28aa230d51b0ac12d24aea762a9cf5d4dcd69183efe",
+        "signature": "<?xml versio",
+        "finished_at": "2026-10-14T16:23:57.308654+00:00"
+      },
+      {
+        "name": "genbank-ch4.gb",
+        "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KF768341.1&rettype=gb&retmode=text",
+        "path": "/private/tmp/cmm-round76-phosphates-research/genbank-ch4.gb",
+        "started_at": "2026-10-14T16:23:57.207247+00:00",
+        "status": 200,
+        "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KF768341.1&rettype=gb&retmode=text",
+        "content_type": "text/plain",
+        "bytes": 2709,
+        "sha256": "925e0dcf7e8571abe9668ff2d22775b2d4b3d80e7ee04bf303b86ab2d404f757",
+        "signature": "LOCUS       ",
+        "finished_at": "2026-10-14T16:23:57.436242+00:00"
+      },
+      {
+        "name": "genbank-cs21.gb",
+        "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=OP758843.1&rettype=gb&retmode=text",
+        "path": "/private/tmp/cmm-round76-phosphates-research/genbank-cs21.gb",
+        "started_at": "2026-10-14T16:23:57.207479+00:00",
+        "status": 200,
+        "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=OP758843.1&rettype=gb&retmode=text",
+        "content_type": "text/plain",
+        "bytes": 2473,
+        "sha256": "75c2f00fa28e0b3cf54f10a03ac6aba4eb2f3c6d10a8ec09726f9bb1e874c3ba",
+        "signature": "LOCUS       ",
+        "finished_at": "2026-10-14T16:23:57.446686+00:00"
+      }
+    ],
+    "reused_originals": [
+      {
+        "actual": {
+          "path": "/private/tmp/cmm-round38-katsarosite-research/raw/primary2025.pdf",
+          "sha256": "c9dc293fa0b229b22ba93c9eb7e426f29a74d47abc929f1c0c5d0d1fde95fefa",
+          "bytes": 3323412
+        },
+        "original_acquisition": {
+          "url": "https://mdpi-res.com/d_attachment/crystals/crystals-15-00118/article_deploy/crystals-15-00118.pdf",
+          "path": "/private/tmp/cmm-round38-katsarosite-research/raw/primary2025.pdf",
+          "started_at": "2026-10-11T23:27:00.760477+00:00",
+          "status": 200,
+          "final_url": "https://mdpi-res.com/d_attachment/crystals/crystals-15-00118/article_deploy/crystals-15-00118.pdf",
+          "content_type": "application/pdf",
+          "bytes": 3323412,
+          "sha256": "c9dc293fa0b229b22ba93c9eb7e426f29a74d47abc929f1c0c5d0d1fde95fefa",
+          "finished_at": "2026-10-11T23:27:01.148117+00:00"
+        },
+        "provenance": {
+          "path": "research/sources/round38-katsarosite/20261011T233557Z-source-investigation.json",
+          "sha256": "ab7b2268da01781ee73ddeff67163f2e31e84938aaa3208ca5ee85f42e642866",
+          "bytes": 39053
+        },
+        "reinspected_on": "2026-10-14",
+        "fresh_download": false
+      },
+      {
+        "actual": {
+          "path": "/private/tmp/cmm-round38-katsarosite-research/raw/primary2025-cdn.xml",
+          "sha256": "a3cb6bbebb846fabcfe399dd05a449d1e1ad48a3309493bf9ec5523a5c2f33b8",
+          "bytes": 179689
+        },
+        "original_acquisition": {
+          "url": "https://mdpi-res.com/d_attachment/crystals/crystals-15-00118/article_deploy/crystals-15-00118.xml",
+          "path": "/private/tmp/cmm-round38-katsarosite-research/raw/primary2025-cdn.xml",
+          "started_at": "2026-10-11T23:29:58.404343+00:00",
+          "status": 200,
+          "final_url": "https://mdpi-res.com/d_attachment/crystals/crystals-15-00118/article_deploy/crystals-15-00118.xml",
+          "content_type": "text/xml;charset=UTF-8",
+          "bytes": 179689,
+          "sha256": "a3cb6bbebb846fabcfe399dd05a449d1e1ad48a3309493bf9ec5523a5c2f33b8",
+          "finished_at": "2026-10-11T23:29:58.722389+00:00"
+        },
+        "provenance": {
+          "path": "research/sources/round38-katsarosite/20261011T233557Z-source-investigation.json",
+          "sha256": "ab7b2268da01781ee73ddeff67163f2e31e84938aaa3208ca5ee85f42e642866",
+          "bytes": 39053
+        },
+        "reinspected_on": "2026-10-14",
+        "fresh_download": false
+      },
+      {
+        "actual": {
+          "path": "/private/tmp/cmm-round38-katsarosite-research/raw/ima2026.pdf",
+          "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+          "bytes": 3129886
+        },
+        "original_acquisition": {
+          "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+          "path": "/private/tmp/cmm-round38-katsarosite-research/raw/ima2026.pdf",
+          "started_at": "2026-10-11T23:27:01.016944+00:00",
+          "status": 200,
+          "final_url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+          "content_type": "application/pdf",
+          "bytes": 3129886,
+          "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+          "finished_at": "2026-10-11T23:27:02.986325+00:00"
+        },
+        "provenance": {
+          "path": "research/sources/round38-katsarosite/20261011T233557Z-source-investigation.json",
+          "sha256": "ab7b2268da01781ee73ddeff67163f2e31e84938aaa3208ca5ee85f42e642866",
+          "bytes": 39053
+        },
+        "reinspected_on": "2026-10-14",
+        "fresh_download": false
+      }
+    ],
+    "limitations": [
+      "The web reader failed to open the MDPI2019 page; the official CDN PDF and XML subsequently downloaded completely.",
+      "No new legitimate acquisition route for deferred CRT sources #244 was found or retried this round. No microbial CRT claims imported."
+    ]
+  },
+  "inspection": [
+    {
+      "source": "Sazanova2025 DOI10.3390/cryst15020118",
+      "full_original": {
+        "path": "/private/tmp/cmm-round38-katsarosite-research/raw/primary2025.pdf",
+        "sha256": "c9dc293fa0b229b22ba93c9eb7e426f29a74d47abc929f1c0c5d0d1fde95fefa",
+        "bytes": 3323412
+      },
+      "pages": 19,
+      "read": "Complete primary main text and all original pages, Figures1–7, Tables1–4, Methods/Results/Discussion/data statement. Current contact sheets and prior full-page PNGs inspected.",
+      "graphics": [
+        {
+          "path": "/private/tmp/cmm-round76-phosphates-research/hopeite-contact-01.jpg",
+          "sha256": "020b5d0e72d6af2f5866939ec5d184ecd09feff7f0ea5de862c56fe9a3f35a8e",
+          "bytes": 639982
+        },
+        {
+          "path": "/private/tmp/cmm-round76-phosphates-research/hopeite-contact-05.jpg",
+          "sha256": "9122541e8683728ce292022bf60bd6d7e1a80c6acf8618c01912fda9d7c9c480",
+          "bytes": 441730
+        },
+        {
+          "path": "/private/tmp/cmm-round76-phosphates-research/hopeite-contact-09.jpg",
+          "sha256": "ee1c4294985e1dbca9c11e0ae97b5a38d4ac88df6d2a777c3fb6a2e859f72b7d",
+          "bytes": 483052
+        },
+        {
+          "path": "/private/tmp/cmm-round76-phosphates-research/hopeite-contact-13.jpg",
+          "sha256": "363684b7ec07ab153aec7c8c85b740eb72750efa98a5896f73734b6f1045219b",
+          "bytes": 612419
+        },
+        {
+          "path": "/private/tmp/cmm-round76-phosphates-research/hopeite-contact-17.jpg",
+          "sha256": "0b7361f0f7c65512699a99338a0aa1ca18c4d40b750cded6f6157228d9d98689",
+          "bytes": 544940
+        }
+      ],
+      "locators": [
+        "§2.1–2.4: medium, cultures, sampling and diffraction",
+        "§3.2.1/Figure3: preinoculation chemical Mg-bearing hopeite",
+        "§3.2.2/Figure6/Table3: A.niger secondary hopeite,2000micromol/L,day14",
+        "Tables1/3 and Discussion4.1/4.2: pH and concentration-unit contradictions"
+      ]
+    },
+    {
+      "source": "Haddad2014 DOI10.1371/journal.pone.0089480",
+      "full_original": {
+        "path": "/private/tmp/cmm-round76-phosphates-research/haddad2014.pdf",
+        "sha256": "28b4596def0b2129f97e9005acc9437ce44e7278d1d9a896f995756acaf74dc7",
+        "bytes": 7749828
+      },
+      "pages": 14,
+      "read": "Complete main text and all14 original pages, Figures1–11 and Tables1–2, including all controls, preparation, profile fitting, FTIR, Discussion and references.",
+      "graphics": [
+        {
+          "path": "/private/tmp/cmm-round76-phosphates-research/haddad-contact-01.jpg",
+          "sha256": "8250e90a5cb930b14768205227586e05fc76a5a1e7ca51a721879d277e758425",
+          "bytes": 479092
+        },
+        {
+          "path": "/private/tmp/cmm-round76-phosphates-research/haddad-contact-05.jpg",
+          "sha256": "da142035b2e6d6959af62c7f540606f594981043b89f856fc9861c1496cf6a05",
+          "bytes": 469534
+        },
+        {
+          "path": "/private/tmp/cmm-round76-phosphates-research/haddad-contact-09.jpg",
+          "sha256": "fbbce9ba1421797b5824e4cf5530c8233cee5c3a4e4cca15e6b9bd7f78e32a93",
+          "bytes": 589424
+        },
+        {
+          "path": "/private/tmp/cmm-round76-phosphates-research/haddad-contact-13.jpg",
+          "sha256": "98c4b68f16105e214bf1a797a44e3ee43fd0d34d73eadacd398f94ce43f404f4",
+          "bytes": 301601
+        }
+      ],
+      "locators": [
+        "Methodspp2–10: medium, controls and nonidentical washing/thermal treatments",
+        "Figure1: chemical initial phosphate depletion and later scatter",
+        "Figures2–5: dried and calcined XRD/FTIR contrasts; Table2 separate39day bulk composition",
+        "Figures6–11: granules/biofilm/nanorods; Discussionp12 explicitly whitlockite or Mg-stabilized beta-TCP"
+      ]
+    },
+    {
+      "source": "Izatulina2019 DOI10.3390/cryst9050259",
+      "full_original": {
+        "path": "/private/tmp/cmm-round76-phosphates-research/crystals2019.pdf",
+        "sha256": "ec1e401023f0b4db0dce05621eed445d4812b7605877af0c3c853c0ced97852f",
+        "bytes": 954769
+      },
+      "pages": 11,
+      "read": "Complete original including all Figures1–4/Tables1–4. Only no-additive chemical phase summary accepted as context; not an independent confirmation of the2014 organism or phase purity.",
+      "graphics": [
+        {
+          "path": "/private/tmp/cmm-round76-phosphates-research/crystals2019-contact-01.jpg",
+          "sha256": "1ddb7e349e172f4ebd4ee94d992581ec1a7e5f2d551ad7056036e7ddef431d88",
+          "bytes": 527123
+        },
+        {
+          "path": "/private/tmp/cmm-round76-phosphates-research/crystals2019-contact-05.jpg",
+          "sha256": "3098fdd06a967658fd4250d963aa2166b1d4ec43d74fae2818ab54c41ed43b2e",
+          "bytes": 469705
+        },
+        {
+          "path": "/private/tmp/cmm-round76-phosphates-research/crystals2019-contact-09.jpg",
+          "sha256": "962c0126fea4bb07c80414bd6ede5ff142743b4f1c571b22130e10aec9648edb",
+          "bytes": 462306
+        }
+      ],
+      "locators": [
+        "Methods and§3.2/Figure3:37°C model-urine chemical phase fields",
+        "No raw whitlockite diffraction figure; bacterial labels and media not transferred to a new mechanism"
+      ]
+    },
+    {
+      "source": "IMA September2026 and Handbooks",
+      "read": "Reused original IMA definitions pp1–2 and exact row pixels pp95/234; complete one-page Handbooks and current live NCBI/GenBank records.",
+      "graphics": [
+        {
+          "path": "/private/tmp/cmm-round76-phosphates-research/ima-95.png",
+          "sha256": "1e66bf98e9b66c763f28b3f1b3dead2323bd1e9f090735db30ee26614075491f",
+          "bytes": 347275
+        },
+        {
+          "path": "/private/tmp/cmm-round76-phosphates-research/ima-234.png",
+          "sha256": "6c549e556e0d95649ba6e85ef44c20366ea9d0b65f07f02f8b76ea69b60e3762",
+          "bytes": 378353
+        }
+      ],
+      "identity": "Hopeite Zn3(PO4)2·4H2O/G1826; whitlockite Ca9 vacancy Mg(PO3OH)(PO4)6/G1941. G-years are original-description years, not approval accessions. No latest-edition scan or strain-specific TaxID asserted."
+    }
+  ],
+  "supplement_assessment": {
+    "checked": [
+      {
+        "artifact": {
+          "path": "/private/tmp/cmm-round76-phosphates-research/haddad2014.xml",
+          "sha256": "eaa0b5900cf7db15477186f75a69fdb88340227b8775ce737db01e46358f2e51",
+          "bytes": 108731
+        },
+        "supplement_or_related_article_elements": []
+      },
+      {
+        "artifact": {
+          "path": "/private/tmp/cmm-round76-phosphates-research/crystals2019.xml",
+          "sha256": "9f32593afb8eb4d284caef9d8548eedcfd27cc4931daff659d7a5e1595dfba5e",
+          "bytes": 90598
+        },
+        "supplement_or_related_article_elements": []
+      },
+      {
+        "artifact": {
+          "path": "/private/tmp/cmm-round38-katsarosite-research/raw/primary2025-cdn.xml",
+          "sha256": "a3cb6bbebb846fabcfe399dd05a449d1e1ad48a3309493bf9ec5523a5c2f33b8",
+          "bytes": 179689
+        },
+        "supplement_or_related_article_elements": []
+      }
+    ],
+    "result": "No separate supplement/related-article element in the three inspected full XMLs; originals did not identify a separate SI file. This is a bounded inspected-source result, not universal absence of unpublished underlying data."
+  },
+  "notices": {
+    "crossref": [
+      {
+        "artifact": {
+          "path": "/private/tmp/cmm-round76-phosphates-research/crossref2014.json",
+          "sha256": "365e55c3ac48113f82e98716b983e8bdd3d6e4a4e107167a8089541bb9b75a84",
+          "bytes": 17737
+        },
+        "doi": "10.1371/journal.pone.0089480",
+        "relation": {},
+        "update_to": null,
+        "updated_by": null
+      },
+      {
+        "artifact": {
+          "path": "/private/tmp/cmm-round76-phosphates-research/crossref2025.json",
+          "sha256": "194d1b2ca9424d1f0766b90a6f6edf16278541ad229401f2ed3029a497733e18",
+          "bytes": 25824
+        },
+        "doi": "10.3390/cryst15020118",
+        "relation": {},
+        "update_to": null,
+        "updated_by": null
+      },
+      {
+        "artifact": {
+          "path": "/private/tmp/cmm-round76-phosphates-research/crossref2019.json",
+          "sha256": "50199c056b29c4c794996e34317b2ba5e94c89cb796953a238cdf3b2dd0f4748",
+          "bytes": 12708
+        },
+        "doi": "10.3390/cryst9050259",
+        "relation": {},
+        "update_to": null,
+        "updated_by": null
+      }
+    ],
+    "result": "Bounded correction/retraction queries and inspected Crossref relation/update fields did not locate a matched formal notice. This does not prove that no notice exists."
+  },
+  "claim_limits": {
+    "hopeite": [
+      "Chemical hopeite predates spores; fungal association does not prove necessity. Secondary crystals are spatial/morphological plus diffraction evidence, not a closed Zn/P mass balance.",
+      "Strongest selected observation is2000µM/day14. Day28pH2.8 versus2.5 and Discussion5–6 remain unresolved; Discussionmmol differs from Methodsµmol/L.",
+      "KF768341.1 verifies A.niger Ch4/07 annotation, not experimental reauthentication. OP758843.1 is P.granulatum II47-8 rather than P.chrysogenum Cs/21; companion mechanism not assigned.",
+      "Same experiment as katsarosite owner; no independent replication counted. Paper data statement says no new data despite experimental narrative."
+    ],
+    "whitlockite": [
+      "Authoritative species identity separate from uncertain culture product: Mg-stabilized beta-TCP alternative visible in description/context/evidence.",
+      "Initial ACP precipitation and P removal also abiotic; sterile30day phase-null and filtrate15day null are conditional controls. No matched killed-cell arm.",
+      "30day phase comparison,39day composition and21day/four-culture protein work not merged. Sample washing differs;600°C2h Methods versus1h Results conflict preserved.",
+      "TOPAS profile fitting/lattice parameters do not supply refined phase purity; relative91.7/100% crystallinity is not recovery yield. Calcined FTIR and bulk composition cannot uniquely solve the uncalcined mineral assignment.",
+      "Model-urine2019 chemical whitlockite is distinct context, not replication or a quantitative microbial claim.",
+      "No pure isolated phosphorus product, demonstrated biomolecular cause or industrial/clinical deployment."
+    ]
+  },
+  "deferrals": [
+    {
+      "candidate": "monetite",
+      "reason": "Returned biomedical osteogenesis/antimicrobial leads did not establish a qualified microbial material-transformation study for this bounded cohort."
+    },
+    {
+      "candidate": "2005 AEM DOI10.1128/AEM.71.1.371-381.2005 hopeite terminology",
+      "reason": "A returned older source describes a nominal dihydrate reagent as hopeite, whereas authoritative hopeite is tetrahydrate; no unverified phase/assay claim transferred and no new full-source curation attempted."
+    },
+    {
+      "candidate": "CRT microbial sources #244",
+      "reason": "Existing acquisition gap retained; no repeat blocked route or glass/phosphor identity transfer."
+    }
+  ],
+  "terms": {
+    "primary_articles": "Inspected originals/XML and Crossref state CC BY4.0. Raw originals remain outside Git; curated factual paraphrases and metadata only.",
+    "IMA": "Inspected introduction states CC BY-SA3.0; reused official bytes with prior acquisition provenance.",
+    "Handbook": "Copyrighted Mineral Data Publishing material retained outside Git; identity facts paraphrased.",
+    "NCBI": "Public taxonomy/sequence annotations used for identifiers/provenance; not organism-phenotype validation."
+  },
+  "records": [
+    {
+      "record": {
+        "path": "data/records/hopeite.yaml",
+        "sha256": "bc522d34581ca173e432c69d171b5419516c9e3b067ca73cc080b872d67bd4ab",
+        "bytes": 7737
+      },
+      "history": [
+        {
+          "path": "history/records/hopeite/2026-10-14T163150Z-codex-ee87e0.yaml",
+          "sha256": "17f80000fc49a527763d8c68034aac293598c20f72082a82642b1d12da9df4a4",
+          "bytes": 767
+        }
+      ]
+    },
+    {
+      "record": {
+        "path": "data/records/whitlockite.yaml",
+        "sha256": "4f33474f77f746399d5745123eecbbe40da0393466baf71a139f6b61fa68ae88",
+        "bytes": 9600
+      },
+      "history": [
+        {
+          "path": "history/records/whitlockite/2026-10-14T163156Z-codex-c280e2.yaml",
+          "sha256": "9f6ead540a3028c92af5e1107cde46a9ccb0f9ad865262500ca3d095c54aa51d",
+          "bytes": 840
+        }
+      ]
+    }
+  ],
+  "baseline": {
+    "receipt": {
+      "path": "/private/tmp/cmm-round76-baseline.json",
+      "sha256": "e12be232e7dfd6a1cd28697e9860627427e678ea56fb9507e9aaf1536160ef93",
+      "bytes": 904
+    },
+    "contents": {
+      "started_at": "2026-10-14T16:22:21.419680+00:00",
+      "worktree": "/private/tmp/CMMMech-expansion-round76-20261014",
+      "base": "925a93db824261d146a14900b8367c88d25cbd71",
+      "commands": [
+        {
+          "command": [
+            "uv",
+            "sync",
+            "--quiet",
+            "--locked",
+            "--extra",
+            "dev",
+            "--offline"
+          ],
+          "started_at": "2026-10-14T16:22:21.420363+00:00",
+          "finished_at": "2026-10-14T16:22:23.694236+00:00",
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "just",
+            "check"
+          ],
+          "started_at": "2026-10-14T16:22:23.694256+00:00",
+          "finished_at": "2026-10-14T16:25:57.991163+00:00",
+          "exit_code": 0
+        }
+      ],
+      "log": "/private/tmp/cmm-round76-baseline.log",
+      "finished_at": "2026-10-14T16:25:57.991251+00:00",
+      "passed": true,
+      "log_sha256": "ee9430bcc2fb3f7b883d0e66156f149bf3287877619f12dbd5405e1fb0babdfc"
+    }
+  },
+  "named_validation": {
+    "receipt": {
+      "path": "/private/tmp/cmm-round76-phosphates-research/named-validation.json",
+      "sha256": "4ad14aa7ad472b21721c5fad2dcc6b7d12de79c3aad14839386dc5ed499e0617",
+      "bytes": 982
+    },
+    "contents": {
+      "worktree": "/private/tmp/CMMMech-expansion-round76-20261014",
+      "base": "925a93db824261d146a14900b8367c88d25cbd71",
+      "commands": [
+        {
+          "command": [
+            "uv",
+            "run",
+            "--locked",
+            "cmmmech",
+            "validate",
+            "data/records/hopeite.yaml",
+            "--require-records"
+          ],
+          "started_at": "2026-10-14T16:32:10.856165+00:00",
+          "finished_at": "2026-10-14T16:32:14.550955+00:00",
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "uv",
+            "run",
+            "--locked",
+            "cmmmech",
+            "validate",
+            "data/records/whitlockite.yaml",
+            "--require-records"
+          ],
+          "started_at": "2026-10-14T16:32:14.550984+00:00",
+          "finished_at": "2026-10-14T16:32:18.367178+00:00",
+          "exit_code": 0
+        }
+      ],
+      "passed": true,
+      "log": "/private/tmp/cmm-round76-phosphates-research/named-validation.log",
+      "log_sha256": "c98b3a1890e86f292aaed22429980c976272089417a9226382e6b6c47a9e5764"
+    }
+  },
+  "schema_decision": "Existing mineral/process/evidence fields preserve all supported claims and uncertainty. No schema/validator change or unsupported quantitative observations needed.",
+  "next_actions": [
+    "Independent reviewer must inspect exact frozen owners and original graphics, particularly hopeite precursor/secondary distinction and whitlockite/beta-TCP alternative.",
+    "Future improved phase-specific characterization, original raw diffraction or authors clarifications could resolve the whitlockite assignment; no unsupported certainty is added now.",
+    "Source accession/pH/unit conflicts from the shared2025study remain documented; deduplicate against existing source issues before proposing another issue."
+  ]
+}

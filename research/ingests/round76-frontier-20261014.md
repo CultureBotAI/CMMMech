@@ -1,0 +1,37 @@
+# Round76: reviewed clay, phosphate and copper-sulfide additions
+
+Recorded UTC: 2026-10-14T16:45:55.655559+00:00. Trusted base: `925a93db824261d146a14900b8367c88d25cbd71`. Worktree `/private/tmp/CMMMech-expansion-round76-20261014`; branch `curate/cmm-expansion-round76-20261014`.
+
+Six new identities raise the catalogue from 358 to 364 records. Selection prioritized complete primary experiments, clear identity boundaries and useful transformation coverage. Chlorite and illite remain mineral groups; hopeite, whitlockite, anilite and digenite are mineral owners. The copper-sulfide mechanisms are explicitly abiotic. No constituent criticality or industrial performance is inherited.
+
+| Record | Independent scientific review | Canonical histories |
+|---|---|---|
+| [Anilite](../../data/records/anilite.yaml) | [pass_with_limitations](../../reviews/structured/20261014T164140Z-anilite-round76-independent/review.md) · [YAML](../../reviews/structured/20261014T164140Z-anilite-round76-independent/review.yaml) | [history1](../../history/records/anilite/2026-10-14T163053Z-codex-cc6511.yaml) |
+| [Chlorite group](../../data/records/chlorite.yaml) | [pass_with_limitations](../../reviews/structured/20261014T164103Z-chlorite-round76-independent/review.md) · [YAML](../../reviews/structured/20261014T164103Z-chlorite-round76-independent/review.yaml) | [history1](../../history/records/chlorite/2026-10-14T163245Z-codex-f6c11c.yaml) |
+| [Digenite](../../data/records/digenite.yaml) | [pass_with_limitations](../../reviews/structured/20261014T164145Z-digenite-round76-independent/review.md) · [YAML](../../reviews/structured/20261014T164145Z-digenite-round76-independent/review.yaml) | [history1](../../history/records/digenite/2026-10-14T163054Z-codex-fe42d0.yaml) |
+| [Hopeite](../../data/records/hopeite.yaml) | [pass_with_limitations](../../reviews/structured/20261014T164130Z-hopeite-round76-independent/review.md) · [YAML](../../reviews/structured/20261014T164130Z-hopeite-round76-independent/review.yaml) | [history1](../../history/records/hopeite/2026-10-14T163150Z-codex-ee87e0.yaml) |
+| [Illite group](../../data/records/illite.yaml) | [pass_with_limitations](../../reviews/structured/20261014T164111Z-illite-round76-independent/review.md) · [YAML](../../reviews/structured/20261014T164111Z-illite-round76-independent/review.yaml) | [history1](../../history/records/illite/2026-10-14T163249Z-codex-b0a6a1.yaml) |
+| [Whitlockite](../../data/records/whitlockite.yaml) | [pass_with_limitations](../../reviews/structured/20261014T164130Z-whitlockite-round76-independent/review.md) · [YAML](../../reviews/structured/20261014T164130Z-whitlockite-round76-independent/review.yaml) | [history1](../../history/records/whitlockite/2026-10-14T163156Z-codex-c280e2.yaml) |
+
+All six final owners have independent qualified scientific passes matching their exact current hashes. No supported corrective scientific findings remain. Principal limits are preserved:
+
+- Chlorite reduction uses a natural preparation with residual iron-bearing impurities. Weak-acid extraction and spectral fractions are not recovery yields; the supplement's diffraction patterns characterize starting powders.
+- Illite experiments retain source medium and potassium-ratio inconsistencies, unmatched chemical-reduction durations, and nonmonotonic dissolved iron. The organism is source-assigned at species level.
+- Hopeite formed chemically before fungal inoculation. Secondary crystals are culture-associated; pH, concentration-unit and companion fungal-accession conflicts remain explicit. Its experiment is shared with the existing katsarosite record.
+- Whitlockite-assigned calcium phosphate retains Mg-stabilized beta-TCP as an alternative. Initial precipitation was abiotic; culture-associated crystallization does not establish phase-pure recovery.
+- Anilite grains contain intergrown djurleite with conflicting abundance estimates. Solid copper depletion does not supply an aqueous copper balance or establish pure natural product phases.
+- Digenite evidence uses synthetic material, with mounting-dependent structural cycling and separate diffraction/composition arms. Solid Cu:S-derived percentages are distinct from isolated copper recovery.
+
+Source investigations: [phosphates](../sources/round76-phosphates/20261014T163510Z.md), [clays](../sources/round76-silicates/20261014T163459Z-source-investigation.md), [copper sulfides](../sources/round76-sulfides/20261014T163419Z-source-investigation.md), and [hectorite](../sources/round76-hectorite/20261014T163029Z.md). Paired JSON files retain exact searches, inspected originals and graphics, acquisition failures and hashes. Raw papers remain outside Git.
+
+The helper static review found one minor provenance wording error: its future audit receipt named round75 instead of round76. [Issue #250](https://github.com/CultureBotAI/CMMMech/issues/250) is corrected locally. The immutable initial audit, exact one-string correction and independent successor disposition are retained under [publication reviews](../../reviews/publication/20261014-round76/). No runtime safeguard or scientific owner changed; merge closure remains pending.
+
+Root review also found inaccurate local `raw/` shorthand in two sulfide review evidence locators. [Issue #251](https://github.com/CultureBotAI/CMMMech/issues/251) is corrected by an explicit metadata addendum binding both immutable bundles and complete original paths/checksums. Existing source URLs, target bytes and scientific verdicts remain unchanged. Its correction does not require an invented record edit or history event.
+
+Three source-acquisition issues remain open: [#247 hectorite](https://github.com/CultureBotAI/CMMMech/issues/247), [#248 rambergite](https://github.com/CultureBotAI/CMMMech/issues/248), and [#249 microbial anilite](https://github.com/CultureBotAI/CMMMech/issues/249). Access attempts and narrower accepted claims address the present evidence boundary; unavailable full papers do not become accepted mechanisms. These are follow-up evidence gaps, not unresolved corrective defects in the six accepted records. No review defect was invented to create or close an issue.
+
+Validation completed: `just check` — 317 passed, 3 skipped; strict `--require-records` — 364 records, zero failures; trusted-base history validation — 419 entries, zero errors; structured review check — 433 reviews; exact-hash positive scientific coverage — 364/364 records across 77 available review bases. Generated pages are current. [Retained receipts and logs](round76-checks-20261014/) distinguish scientific review, structural validation and coverage. All 22 governed artifacts match the pinned CLAW revision. No native schema, validator, test or governed-file change was needed.
+
+Original main and the unrelated skill worktree match initialization, including hidden/ignored file snapshots. Git administrative files and external symlink-target contents are outside that inventory. Publication helpers retain exact-head/base, native-queue, provenance-tag, branch-cleanup and fresh-main verification guards; their saved static audit is distinct from later runtime results. The final publication audit and runtime publication steps are subsequent work; this precommit manifest does not assert that they have run.
+
+The [companion JSON](round76-frontier-20261014.json) binds records, reviews, histories and the pre-manifest artifact inventory. Discovery remains active: this bounded search and six accepted additions do not establish that no further CMMs exist.

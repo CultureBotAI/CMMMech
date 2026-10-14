@@ -1,0 +1,104 @@
+{
+  "correction_id": "20261014T164538Z-round76-sulfide-review-locator-correction",
+  "started_at": "2026-10-14T16:45:37.924895+00:00",
+  "finished_at": "2026-10-14T16:45:38.002093+00:00",
+  "reviewer": "codex /root/round68_new_frontier",
+  "kind": "immutable_review_metadata_addendum",
+  "scientific_review": false,
+  "self_correction": true,
+  "scope": "Correct only an ambiguous/nonliteral local artifact locator in two immutable scientific reviews. Original URLs, accepted artifact SHA256 values, record targets, scientific assessments and qualified verdicts are unchanged.",
+  "issue": 251,
+  "issue_url": "https://github.com/CultureBotAI/CMMMech/issues/251",
+  "issue_verification": "Assigned by coordinator; this addendum does not independently assert live issue state.",
+  "finding_id": "RL1",
+  "issue_key": "round76-sulfide-review-local-artifact-locator",
+  "finding": {
+    "severity": "minor",
+    "summary": "The phrase actual raw/<filename> is not a literal relative path in either bounded source/reviewer directory. It was shorthand for the curator/reviewer variable raw, and should instead identify the exact acquired artifact path.",
+    "impact": "Local provenance locator ambiguity only; the original primary URL and nonempty artifact SHA256 already correctly bind the scientific evidence."
+  },
+  "correction": "Use the exact absolute paths listed per evidence row. Both originals have independently rechecked PDF signatures, nonzero sizes and the original accepted SHA256.",
+  "reviews": [
+    {
+      "review_id": "20261014T164140Z-anilite-round76-independent",
+      "review_path": "reviews/structured/20261014T164140Z-anilite-round76-independent/review.yaml",
+      "review_sha256": "bef5c5a4b1774c43b630d87ae832a4cf732c9f61e77996a0bfacc00f22212c1f",
+      "markdown_path": "reviews/structured/20261014T164140Z-anilite-round76-independent/review.md",
+      "markdown_sha256": "e70cfcf415daeb6545894ea7ee38e4cf35bf38be664f7797c83232484d516059",
+      "target_id": "cmmmech:anilite",
+      "target_path": "data/records/anilite.yaml",
+      "target_sha256": "97f8f8eb0d55379bfcb9815ca4ea72ea9cbc71b3fbae79f2a951f2ae92f33d50",
+      "source_git_revision": "925a93db824261d146a14900b8367c88d25cbd71",
+      "scientific_review": true,
+      "original_verdict": "pass_with_limitations",
+      "corrected_evidence_locators": [
+        {
+          "evidence_id": "primary",
+          "original_reference": "https://rruff.info/doclib/cm/vol19/CM19_583.pdf",
+          "original_locator": "Complete Goble1981 original pp583\u2013591; Methods pp584\u2013585, Figures1\u20135 and Tables1\u20134; actual raw/goble1981.pdf",
+          "corrected_locator": "Complete Goble1981 original pp583\u2013591; Methods pp584\u2013585, Figures1\u20135 and Tables1\u20134; actual acquired original /private/tmp/cmm-round76-sulfides-research/goble1981.pdf",
+          "original_snapshot_sha256": "b089bca1ade838a159d42ab6b45f604a1bd651a4856ef119ce9d36a519ab4e30",
+          "actual_artifact": "/private/tmp/cmm-round76-sulfides-research/goble1981.pdf",
+          "bytes": 632234,
+          "verified_sha256": "b089bca1ade838a159d42ab6b45f604a1bd651a4856ef119ce9d36a519ab4e30",
+          "support": "supports"
+        },
+        {
+          "evidence_id": "whiteside",
+          "original_reference": "https://rruff.info/doclib/cm/vol24/CM24_247.pdf",
+          "original_locator": "Complete WhitesideGoble1986 original pp247\u2013258; Methods pp248\u2013250; Figures1\u20137, Tables1\u20132; actual raw/whiteside1986-doclib.pdf",
+          "corrected_locator": "Complete WhitesideGoble1986 original pp247\u2013258; Methods pp248\u2013250; Figures1\u20137, Tables1\u20132; actual acquired original /private/tmp/cmm-round76-sulfides-research/whiteside1986-doclib.pdf",
+          "original_snapshot_sha256": "e39a23d5d81db52cd7e9e32b6e4c04c78d702005326db95377e047067391832b",
+          "actual_artifact": "/private/tmp/cmm-round76-sulfides-research/whiteside1986-doclib.pdf",
+          "bytes": 1182438,
+          "verified_sha256": "e39a23d5d81db52cd7e9e32b6e4c04c78d702005326db95377e047067391832b",
+          "support": "context_only"
+        }
+      ]
+    },
+    {
+      "review_id": "20261014T164145Z-digenite-round76-independent",
+      "review_path": "reviews/structured/20261014T164145Z-digenite-round76-independent/review.yaml",
+      "review_sha256": "a9f3be63bd8fca3df847cf49ecd13d5bf9724b7edf7eeff4c1e11c14ba052582",
+      "markdown_path": "reviews/structured/20261014T164145Z-digenite-round76-independent/review.md",
+      "markdown_sha256": "0a16a910460fb494d3bb7cf88feb1f778d3426b908f4214c1912bbd75c789d7a",
+      "target_id": "cmmmech:digenite",
+      "target_path": "data/records/digenite.yaml",
+      "target_sha256": "ebee546a23140d37fd3081c6b9f3303a2188df080c2e0192e53e0228aa217a30",
+      "source_git_revision": "925a93db824261d146a14900b8367c88d25cbd71",
+      "scientific_review": true,
+      "original_verdict": "pass_with_limitations",
+      "corrected_evidence_locators": [
+        {
+          "evidence_id": "whiteside",
+          "original_reference": "https://rruff.info/doclib/cm/vol24/CM24_247.pdf",
+          "original_locator": "Complete WhitesideGoble1986 original pp247\u2013258; Methods pp248\u2013250; Figures1\u20137, Tables1\u20132; actual raw/whiteside1986-doclib.pdf",
+          "corrected_locator": "Complete WhitesideGoble1986 original pp247\u2013258; Methods pp248\u2013250; Figures1\u20137, Tables1\u20132; actual acquired original /private/tmp/cmm-round76-sulfides-research/whiteside1986-doclib.pdf",
+          "original_snapshot_sha256": "e39a23d5d81db52cd7e9e32b6e4c04c78d702005326db95377e047067391832b",
+          "actual_artifact": "/private/tmp/cmm-round76-sulfides-research/whiteside1986-doclib.pdf",
+          "bytes": 1182438,
+          "verified_sha256": "e39a23d5d81db52cd7e9e32b6e4c04c78d702005326db95377e047067391832b",
+          "support": "supports"
+        }
+      ]
+    }
+  ],
+  "inventory_evidence": {
+    "path": "/private/tmp/cmm-round76-review-locator-inventory-20261014T164538Z.json",
+    "sha256": "099cc9d4d1226be3862c6ec0cac6192c61ea64000a13e67889399182f87c349d",
+    "roots": [
+      "/private/tmp/cmm-round76-sulfides-research",
+      "/private/tmp/cmm-round76-sulfide-review"
+    ],
+    "bounds": "Filesystem enumeration includes hidden and ignored entries and follows relevant symlinks with cycle prevention. The literal raw subdirectory is absent under these two roots only."
+  },
+  "unresolved_questions": [],
+  "unresolved_corrective_findings": 0,
+  "verdict": "metadata_corrected_scientific_verdicts_unchanged",
+  "passed": true,
+  "limitations": [
+    "Author self-correction of review metadata, not a new independent scientific review.",
+    "Original native YAML and generated Markdown bundles remain byte-for-byte immutable.",
+    "No new measurement, mechanism, source, owner/history change or hosted runtime result is asserted."
+  ]
+}

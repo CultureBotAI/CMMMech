@@ -1,0 +1,134 @@
+id: cmmmech:whitlockite
+name: Whitlockite
+material_kind: mineral
+description: Whitlockite is a calcium-magnesium hydrogen phosphate mineral. The September 2026 IMA list
+  gives ideal Ca9 vacancy Mg(PO3OH)(PO4)6 and grandfathered status G with original-description year 1941;
+  the vacancy is a structural site and the year is not an approval accession. It is distinct from beta-tricalcium
+  phosphate, apatite minerals, amorphous calcium phosphate and phosphate resources. The curated microbial
+  experiment reports a whitlockite-assigned product but explicitly retains Mg-stabilized beta-TCP as an
+  alternative assignment; this record does not assert unambiguous phase purity. No constituent criticality
+  is inherited.
+sources:
+- id: ima_2026_09
+  title: 'IMA-CNMNC. The New IMA List of Minerals, September 2026: introductory definitions and Whitlockite
+    row, PDF page 234. Previously acquired original re-inspected on the access date.'
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: handbook_whitlockite
+  title: Handbook of Mineralogy, Whitlockite, version 1 (2001-2005). Complete one-page formula, crystallography
+    and occurrence; historical (Mg,Fe2+) compositional notation.
+  url: https://www.handbookofmineralogy.org/pdfs/whitlockite.pdf
+  accessed_on: '2026-10-14'
+- id: haddad2014
+  title: Haddad, Vali, Paquette and Guiot (2014). The Role of Carboxydothermus hydrogenoformans in the
+    Conversion of Calcium Phosphate from Amorphous to Crystalline State. PLOS ONE 9:e89480. Complete 14-page
+    original, Figures 1-11 and Tables 1-2; Methods and Results/Discussion.
+  url: https://doi.org/10.1371/journal.pone.0089480
+  accessed_on: '2026-10-14'
+- id: izatulina2019
+  title: Izatulina et al. (2019). Bacterial Effect on the Crystallization of Mineral Phases in a Solution
+    Simulating Human Urine. Crystals 9:259. Complete 11-page original, Methods, Figures 1-4 and Tables
+    1-4; different chemical and biological experimental system.
+  url: https://doi.org/10.3390/cryst9050259
+  accessed_on: '2026-10-14'
+- id: ncbi_hydrogenoformans
+  title: 'NCBI Taxonomy 129958: Carboxydothermus hydrogenoformans, species node. The experiment reports
+    DSM 6008; the species node is not a strain identifier.'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=129958&mode=Info
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: hydrogenoformans_associated_phosphate_crystallization
+  name: Culture-associated crystallization of whitlockite-assigned calcium phosphate
+  process: biomineralization
+  microbial: true
+  organisms:
+  - id: NCBITaxon:129958
+    label: Carboxydothermus hydrogenoformans
+  description: An initially abiotic amorphous calcium-phosphate precipitate became crystalline during
+    laboratory culture of C. hydrogenoformans DSM 6008. The dominant granular product was assigned to
+    magnesium whitlockite using diffraction, composition and infrared evidence, but the authors also allow
+    Mg-stabilized beta-TCP. A second nanorod product was only interpreted as hydroxyapatite-like. The
+    experiment supports culture-associated crystallization, not unequivocal pure-whitlockite biosynthesis,
+    a demonstrated molecular mechanism or isolated phosphorus recovery.
+  context: Haddad2014 used anaerobic 500 mL bottles containing 200 mL medium and 300 mL initial 100% CO
+    headspace at 1 atm, 70 degrees C and 150 rpm; initial pH was 6.8-7.0. Basal salts in g/L were KCl
+    0.33, MgCl2.6H2O 0.52, CaCl2.2H2O 0.29, NH4Cl 0.33 and KH2PO4 0.33, with 10 mL/L trace-metal stock.
+    Additions per litre were 20 mL of 5% NaHCO3, 10 mL of 2.5% Na2S.9H2O, 10 mL of 0.5% yeast-extract
+    stock and 1 mL vitamin solution. Exact inoculum amount was not reported. Most phase comparison concerns
+    30-day material; bulk metal/P composition is from a separate 39-day sample and protein assays from
+    four independent 21-day cultures. Samples were washed and dried at 105 degrees C overnight; some inoculated
+    products were subsequently calcined at 600 degrees C. Sterile and inoculated preparations differed
+    in washing and thermal treatment. Mg-stabilized beta-TCP remains an explicit alternative to whitlockite;
+    neither nanorod morphology nor a reference-pattern match alone proves a pure mineral product.
+  evidence:
+  - source_ref: haddad2014
+    supports: support
+    explanation: Figures 2-4 compare dried 30-day inoculated material, its calcined counterpart, commercial
+      beta-TCP and reference whitlockite (JCPDS 01-070-1786) with a dried 30-day sterile control. The
+      inoculated solid has sharp peaks matching the whitlockite reference, whereas the sterile solid remains
+      amorphous by XRD. Figure 5 shows phosphate-band differences for calcined inoculated versus dried
+      sterile material. Figures 6 and 8 show Mg-bearing granules, association with biofilm and lattice
+      fringes. Together these support the source-assigned crystalline product and the culture-associated
+      contrast, subject to the explicit phase ambiguity.
+  - source_ref: haddad2014
+    supports: partial
+    explanation: Results/Discussion page 12 explicitly describes the dominant product as whitlockite or
+      Mg-stabilized beta-TCP. XRD profiles of these phases are similar; infrared characterization uses
+      calcined material, and bulk Table 2 composition is not a phase-specific stoichiometric analysis.
+      The authors report TOPAS profile fitting, lattice parameters and crystallite sizes, but not refined
+      phase fractions or a hydrogen-site determination for the culture product; no independent re-refinement
+      was performed here. Nanorods in Figures 9-11 are interpreted as hydroxyapatite-like, not verified
+      pure hydroxylapatite. Reported 91.7% and 100% values are relative crystallinity estimates against
+      a beta-TCP reference, not mineral purity, conversion yield or recovered phosphorus.
+  - source_ref: haddad2014
+    supports: partial
+    explanation: Figure 1 and Results show initial precipitation and phosphate depletion in both sterile
+      and inoculated medium after NaHCO3 addition. Suspended-solid concentration after 30 days was reported
+      as comparable to that within two hours in either arm. Therefore initial precipitation is not a microbial
+      effect or additional net product yield. Later transient phosphate changes do not close a phase-specific
+      mass balance.
+  - source_ref: haddad2014
+    supports: support
+    explanation: The 30-day sterile medium did not develop the observed crystalline product. A separate
+      control incubated sterile amorphous precipitate for 15 days at 70 degrees C in filtered previously
+      inoculated medium and remained amorphous by XRD. Modified medium with lower Ca/Mg/phosphate/bicarbonate
+      formed no detectable precipitate with or without live culture over 30 days. These are useful conditional
+      controls, not demonstrations of a particular enzyme or a universal biological requirement for whitlockite
+      formation.
+  - source_ref: haddad2014
+    supports: partial
+    explanation: Biofilm-mediated dissolution/reprecipitation and Mg chelation are proposed explanations,
+      not directly measured molecular causes. Biomolecular analyses were negative. No matched killed-cell
+      series is described. Inoculated products were generally washed three times and sterile material
+      once because it dissolved readily; the 39-day chemical assay instead reports two washes. Methods
+      give 600 degrees C for two hours, while Results describe one hour. These treatment differences and
+      conflicting duration are retained rather than equated. General replicate counts and error-bar definitions
+      for phase/time-course comparisons are not clearly specified; the four independent cultures apply
+      specifically to protein assays.
+  - source_ref: izatulina2019
+    supports: context_only
+    explanation: A different 37 degrees C, approximately one-day model-urine experiment reports whitlockite
+      in no-additive chemical syntheses, with the reported phase fields shown in Figure 3 and Section
+      3.2. This limits any claim that microorganisms are universally necessary. The article provides phase-summary
+      charts rather than the raw whitlockite diffraction patterns, and its medium, pH and organism arms
+      are not replication of the 70 degrees C DSM6008 experiment. No mineral-purity or microbial recovery
+      yield is transferred from it.
+  - source_ref: ncbi_hydrogenoformans
+    supports: context_only
+    explanation: The species identifier and name are verified independently; the DSM6008 inoculum provenance
+      is reported by the primary paper, not established by the species TaxID.
+  - source_ref: haddad2014
+    supports: partial
+    explanation: The recovered analytical pellet contained biomass and mixed calcium-phosphate material
+      that could not be physically separated before characterization. Laboratory precipitation and proposed
+      bioceramic applications do not establish purified-whitlockite recovery, clinical performance or
+      industrial deployment.
+curation_history:
+- timestamp: '2026-10-14T16:31:44.836542Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Added authoritative whitlockite identity and explicitly qualified culture-associated crystallization,
+    preserving the Mg-stabilized beta-TCP alternative, abiotic starting precipitation, distinct control
+    arms and sample-treatment inconsistencies.
+history_refs:
+- history/records/whitlockite/2026-10-14T163156Z-codex-c280e2.yaml
