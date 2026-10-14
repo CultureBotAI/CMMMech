@@ -1,0 +1,278 @@
+{
+  "recorded_at": "2026-10-14T10:54:25.541776+00:00",
+  "reviewer": "/root/round68_iron_sulfides",
+  "authorship": "Independent publication-helper reviewer; author of the maghemite record, which root reviews separately. No scientific acceptance is asserted here.",
+  "scope": "Static review of 11 derived round69 publication helpers plus gates and preservation library; deterministic extracted audit gate exercises only. No helper top-level execution, Git/GitHub mutation, publication or gate-result claim.",
+  "base": "19e7b84fdfe6c4ec24f9d2b727afd5f7f3d2902a",
+  "branch": "curate/cmm-expansion-round69-20261014",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "unresolved_corrective_findings": 0,
+  "derivation_manifest": {
+    "path": "/private/tmp/cmm-round69-helper-derivation.json",
+    "sha256": "b997ee40e4e9727586a256e4ecb3e80c6ca27eb0cac4026a5cba8e40bbcae51b"
+  },
+  "helpers": [
+    {
+      "name": "commit",
+      "path": "/private/tmp/cmm-round69-commit.py",
+      "sha256": "8b07d958168e68a5ffb7280b9a5f6093d8a4b95f8da7bec5c96ad08de92c0a6d",
+      "source": "/private/tmp/cmm-round68-commit.py",
+      "source_sha256": "3482c6218030e653ac5bae05d7803f190408875479337503ba8e61d2df204948",
+      "declared_derivation_sha256": "2aca39bec1f336058b7889e0dd301b8e50a2971f737ebcf5dac14833419cac9c",
+      "current_equals_declared_derivation": false,
+      "additional_delta": "--- documented_derivation\n+++ /private/tmp/cmm-round69-commit.py\n@@ -40,9 +40,9 @@\n m=json.loads((root/'research/ingests/round69-frontier-20261014.json').read_text())\n assert all(sha(root/item['path'])==item['sha256'] for item in m['artifacts'])\n allowed=['README.md','research/ingests/round69-frontier-20261014.md','research/ingests/round69-frontier-20261014.json']\n-prefixes=['pages/','reviews/publication/20261014-round69/','research/sources/round69-new-frontier/','research/sources/round69-iron-sulfides/','research/sources/round69-phosphates/']\n+prefixes=['pages/','reviews/publication/20261014-round69/','research/sources/round69-silicates/','research/sources/round69-ironoxides/','research/sources/round69-phosphates/','research/sources/round69-meta-autunite-access/']\n allowed += [a['path'] for a in m['artifacts'] if a['path'].startswith('reviews/structured/')]\n-for r in m['records_created']:\n+for r in m['records_changed']:\n     allowed += [r['path'],*r['history'],r['review'],r['review'].replace('review.yaml','review.md')]\n names=set(git('diff','--name-only').splitlines())|set(git('ls-files','--others','--exclude-standard').splitlines())\n assert names and all(n in allowed or any(n.startswith(p) for p in prefixes) for n in names),names\n"
+    },
+    {
+      "name": "open-pr",
+      "path": "/private/tmp/cmm-round69-open-pr.py",
+      "sha256": "a1e4853722ad0e76636af06594a8ef690a01f0ef852da8d6c6015a3a73645a4f",
+      "source": "/private/tmp/cmm-round68-open-pr.py",
+      "source_sha256": "c5f99270c973cd21469f78606cb24cedbcea20975141e214c99d733bf569388b",
+      "declared_derivation_sha256": "a1e4853722ad0e76636af06594a8ef690a01f0ef852da8d6c6015a3a73645a4f",
+      "current_equals_declared_derivation": true,
+      "additional_delta": ""
+    },
+    {
+      "name": "post-review",
+      "path": "/private/tmp/cmm-round69-post-review.py",
+      "sha256": "4fbd45c2e53de08107014866db6285d1e2b4c5ba8d77ec06dd03d4794e5cbc52",
+      "source": "/private/tmp/cmm-round68-post-review.py",
+      "source_sha256": "310b6eae0139e294d5596ce0eedb08f8eaf695ac376445d9ba6b9362a63d27a8",
+      "declared_derivation_sha256": "4fbd45c2e53de08107014866db6285d1e2b4c5ba8d77ec06dd03d4794e5cbc52",
+      "current_equals_declared_derivation": true,
+      "additional_delta": ""
+    },
+    {
+      "name": "enqueue",
+      "path": "/private/tmp/cmm-round69-enqueue.py",
+      "sha256": "fc4498b613920bd8d993f9d6602467e619b947f2fc476e3a52830c92c4c420f6",
+      "source": "/private/tmp/cmm-round68-enqueue.py",
+      "source_sha256": "2bc94b0545099ace3ba03852af39a15f4272c410a801dbbdaa4bcdbe968aff0c",
+      "declared_derivation_sha256": "fc4498b613920bd8d993f9d6602467e619b947f2fc476e3a52830c92c4c420f6",
+      "current_equals_declared_derivation": true,
+      "additional_delta": ""
+    },
+    {
+      "name": "cleanup",
+      "path": "/private/tmp/cmm-round69-cleanup.py",
+      "sha256": "19e86a6aca4c8215a8ace505559a870514766c863172417d97cb17e88af1415d",
+      "source": "/private/tmp/cmm-round68-cleanup.py",
+      "source_sha256": "69d0954feff79eddd6181fe6d69bcd6c7ed417698972667ed1301d4dbc32669a",
+      "declared_derivation_sha256": "19e86a6aca4c8215a8ace505559a870514766c863172417d97cb17e88af1415d",
+      "current_equals_declared_derivation": true,
+      "additional_delta": ""
+    },
+    {
+      "name": "hosted-audit",
+      "path": "/private/tmp/cmm-round69-hosted-audit.py",
+      "sha256": "4d1769a583c4af66dd42acc66b782a0b76a625a2ee8b3508d2536e22ecfc2546",
+      "source": "/private/tmp/cmm-round68-hosted-audit.py",
+      "source_sha256": "d72e2bd018ea02221f54062e515f52c434e56f60d61a0c61e3ce780bbb049cf4",
+      "declared_derivation_sha256": "4d1769a583c4af66dd42acc66b782a0b76a625a2ee8b3508d2536e22ecfc2546",
+      "current_equals_declared_derivation": true,
+      "additional_delta": ""
+    },
+    {
+      "name": "isolated-verification",
+      "path": "/private/tmp/cmm-round69-isolated-verification.py",
+      "sha256": "1c783fa0d7e6b1df84b52ee60ed36fbf44e33c4f3bcc92afd962494f7528300c",
+      "source": "/private/tmp/cmm-round68-isolated-verification.py",
+      "source_sha256": "063d19b224511c4b1f6ce2985de9ba84ccdbe697bc7cf8c9dcf521321766b672",
+      "declared_derivation_sha256": "1c783fa0d7e6b1df84b52ee60ed36fbf44e33c4f3bcc92afd962494f7528300c",
+      "current_equals_declared_derivation": true,
+      "additional_delta": ""
+    },
+    {
+      "name": "isolated-coverage",
+      "path": "/private/tmp/cmm-round69-isolated-coverage.py",
+      "sha256": "de3f974eed642c034b30f5224c5ae34ff2f84d455845e0319c207c62411f858a",
+      "source": "/private/tmp/cmm-round68-isolated-coverage.py",
+      "source_sha256": "7515a37ab51fe0006e83d24c562337cc1f73c4387f3f5bb09f7f7ed5174cac52",
+      "declared_derivation_sha256": "de3f974eed642c034b30f5224c5ae34ff2f84d455845e0319c207c62411f858a",
+      "current_equals_declared_derivation": true,
+      "additional_delta": ""
+    },
+    {
+      "name": "sync-main",
+      "path": "/private/tmp/cmm-round69-sync-main.py",
+      "sha256": "a05917929e1c065611fd2ed3586cecddc03938ab8dadfcdeae01390738d3bf2c",
+      "source": "/private/tmp/cmm-round68-sync-main.py",
+      "source_sha256": "36b27be46b20dfa344d129a0aa5e933f1897f5bfc3e04f5dbc9545e609de4b7c",
+      "declared_derivation_sha256": "a05917929e1c065611fd2ed3586cecddc03938ab8dadfcdeae01390738d3bf2c",
+      "current_equals_declared_derivation": true,
+      "additional_delta": ""
+    },
+    {
+      "name": "preservation-check",
+      "path": "/private/tmp/cmm-round69-preservation-check.py",
+      "sha256": "c5633b825786861e7bf4de70c3518a9e6be9905adc34c602d27ef380ba634e07",
+      "source": "/private/tmp/cmm-round68-preservation-check.py",
+      "source_sha256": "fd1bc9f22565ede098959a2205ddd74319f4ac52808a4ce07dd593abe227b934",
+      "declared_derivation_sha256": "c5633b825786861e7bf4de70c3518a9e6be9905adc34c602d27ef380ba634e07",
+      "current_equals_declared_derivation": true,
+      "additional_delta": ""
+    },
+    {
+      "name": "integration-check",
+      "path": "/private/tmp/cmm-round69-integration-check.py",
+      "sha256": "974152a400ea781b6b022c866d46ded4d6370b3f6eee2eaf19b3baa0e0bc977c",
+      "source": "/private/tmp/cmm-round68-integration-check.py",
+      "source_sha256": "6cd989cfa07587de95df862eb9de4037952002c67d5c9b5655bb880581983aca",
+      "declared_derivation_sha256": "974152a400ea781b6b022c866d46ded4d6370b3f6eee2eaf19b3baa0e0bc977c",
+      "current_equals_declared_derivation": true,
+      "additional_delta": ""
+    }
+  ],
+  "additional_sources": [
+    {
+      "path": "/private/tmp/cmm-round69-gates.py",
+      "sha256": "bdb220a360292aedea3641ea36ce141c69a6dea0bd6710ba0db379c8bf5b1a01"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-recover-original.py",
+      "sha256": "a7c9487654d05821423a7d95844ac1289e80b5958107f1372cc0d0d3ed07906b"
+    }
+  ],
+  "gate_cases": [
+    {
+      "case": "valid exact package",
+      "accepted": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "case": "failed flag with positive verdict",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "case": "truthy nonboolean pass flag",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "case": "positive flag with negative verdict",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "case": "missing verdict",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "case": "unresolved corrective finding",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "case": "boolean unresolved count",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "case": "missing unresolved count",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "case": "wrong base",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "case": "wrong branch",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "case": "wrong state",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "case": "wrong counts",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "case": "wrong issues",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "case": "empty input manifest",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "case": "duplicate input",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "case": "extra unaudited candidate",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "case": "audited input omitted from candidates",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "case": "wrong file hash",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "case": "changed bytes",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "case": "symlink replacement",
+      "accepted": false,
+      "expected": false,
+      "passed": true
+    }
+  ],
+  "findings": [],
+  "observations": [
+    "All 10 helpers other than commit exactly equal the documented round/base substitution and parse successfully; current source hashes equal the derivation manifest.",
+    "The commit helper has exactly four intentional further edits: silicates and ironoxides source directory names, meta-autunite access dossier directory, and records_changed manifest key. No audit-binding behavior changed.",
+    "An explicit hidden/ignored-independent scan of every named current helper found no round68 string, old trusted base, old counts, issue 214/215/216, or iron-sulfides owner directory. Historical retained review-base tag and round57 snapshot library are intentional provenance references.",
+    "The actual require_final_audit AST passes 20 isolated adversarial fixtures, including truthy nonboolean passed, boolean unresolved count, mismatched identity/counts/issues, exact candidate coverage, changed bytes, and symlinks.",
+    "Publication uses exact owned branch/head; native queue requires current exact-head check/review/preflight and active no-bypass SQUASH ALLGREEN policy. Cleanup checks the owned ref and uses a lease, and main synchronization is FF-only with preservation evidence.",
+    "Hosted audit binds actual squash tree and sole parent to the reviewed tree/base and requires five exact workflows and every job, rather than accepting unrelated latest runs.",
+    "Broad pages/publication/source prefixes are bounded by the final exact-input audit and committed file manifest. No unaudited arbitrary path is admitted by the audit gate."
+  ],
+  "limitations": [
+    "Final configuration, build-report, closeout, PR text and final package are not frozen and are excluded from acceptance here.",
+    "No future hosted success or atomic publication transaction is inferred; exact-head local/preflight/hosted checks remain required.",
+    "No final publication audit or scientific verdict is supplied by this static receipt."
+  ],
+  "review_script": {
+    "path": "/private/tmp/cmm-round69-helper-peer-static.py",
+    "sha256": "70dba2fadd70cfbbd15f5f9b2fe92fb93919aa06e551adb7445de474dba7112f"
+  }
+}

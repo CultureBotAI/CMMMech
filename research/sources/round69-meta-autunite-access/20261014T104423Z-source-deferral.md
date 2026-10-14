@@ -1,0 +1,11 @@
+# Meta-autunite: original graphics remain unverified
+
+UTC 2026-10-14T10:44:23.770166+00:00; researcher codex (GPT-6; root). Trusted base `19e7b84fdfe6c4ec24f9d2b727afd5f7f3d2902a` in the round69 worktree. This is a source-access assessment, not a scientific acceptance review.
+
+[Issue #120](https://github.com/CultureBotAI/CMMMech/issues/120) remains open. The [round36 dossier](../round36-meta-autunite/20261011T222742Z-source-deferral.md) already identified Smeaton et al. (2008), [DOI 10.2138/am.2008.2836](https://doi.org/10.2138/am.2008.2836), and the need to inspect original graphics. This round tested the currently exposed web screenshot and browser routes. The provider returned the seven-page author-deposited PDF's text, but screenshot requests for PDF pages 3 and 4 returned only textual source references. No image payload was received. The figure-image link failed; CUA reported no browser available. Text extraction does not resolve the original-graphics gate.
+
+The known public PDF is [the Smeaton author deposit](https://www.researchgate.net/profile/Christina-Smeaton/publication/233379601_Bacterially_enhanced_dissolution_of_meta-autunite/links/5489c4de0cf225bf669c733d/Bacterially-enhanced-dissolution-of-meta-autunite.pdf). No access restriction was bypassed. Raw provider output remains outside Git at `/private/tmp/cmm-round69-meta-autunite-research/web-captures.json` (SHA-256 `ea378776137e1ca0fd9cd7a86568e01d983f61e14030892b3bd1ddaf4fb5a14b`); it is not a local primary PDF. Reading access does not establish redistribution rights. Exact queries, returned-set bounds and access outcomes are in the paired JSON.
+
+This was a reassessment of a known deferred candidate. Repository searches included hidden and ignored files; the prior dossier and its declared raw-download boundary were consulted. No new identity, mechanism, measurement, record, history event or scientific review is claimed. The brief vanadinite search did not produce a newly inspected original; #129 remains unchanged.
+
+Next: acquire inspectable Figures 1–9, reconcile them with original methods, controls and phase assignments, and commission an independent record review if curation is then supported. Other evidence-complete candidates remain available; this result does not establish discovery exhaustion.

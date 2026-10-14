@@ -1,0 +1,496 @@
+# Independent scientific review of whewellite
+
+- Review: 20261014T105625Z-whewellite-round69-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T10:52:19.321502Z
+- Finished UTC: 2026-10-14T10:56:25.609759Z
+- Reviewer: codex /root/round68_phosphates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Monoclinic calcium oxalate monohydrate whewellite is correctly separated from weddellite, caoxite, calcium/phosphorus elements and mixed apatite-nepheline ore. Culture-associated whewellite and separate natural lichen-associated coexistence with weddellite are supported. Acid production, calcium provenance and microbial necessity are not isolated by these observations.
+
+## Scope And Provenance
+
+Complete frozen scientific record and canonical CREATE history against primary literature and identity authorities.
+
+Selection: Assigned frozen record; native inspect preceded final field-by-field source assessment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 19e7b84fdfe6c4ec24f9d2b727afd5f7f3d2902a.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:whewellite | data/records/whewellite.yaml | maintained | Whewellite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Named validation | passed | True | cmmmech:whewellite | Reviewer executed in assigned worktree; one record and zero failures. |
+| Batch gate 1 | passed | True | cmmmech:whewellite | Coordinator execution 2026-10-14T10:50:52.600522+00:00 to 2026-10-14T10:53:49.563447+00:00; zero exit and full-log hash independently checked. |
+| Batch gate 2 | passed | True | cmmmech:whewellite | Coordinator execution 2026-10-14T10:53:49.563468+00:00 to 2026-10-14T10:53:56.792470+00:00; zero exit and full-log hash independently checked. |
+| Batch gate 3 | passed | True | cmmmech:whewellite | Coordinator execution 2026-10-14T10:53:56.792494+00:00 to 2026-10-14T10:54:01.379195+00:00; zero exit and full-log hash independently checked. |
+
+## Scientific And Domain Assessments
+
+### Material identity and criticality scope
+
+identity: supported. Targets: cmmmech:whewellite.
+
+Monoclinic calcium oxalate monohydrate whewellite is correctly separated from weddellite, caoxite, calcium/phosphorus elements and mixed apatite-nepheline ore.
+
+### Organism, substrate, biomass, conditions and controls
+
+evidence: supported. Targets: cmmmech:whewellite.
+
+Record keeps the culture experiment separate from the natural community and retains the evidence limitations.
+
+### Observed phase outcome and transfer limits
+
+evidence: supported. Targets: cmmmech:whewellite.
+
+Culture-associated whewellite and separate natural lichen-associated coexistence with weddellite are supported. Acid production, calcium provenance and microbial necessity are not isolated by these observations.
+
+### Reviewed bytes, actual provenance and completed checks
+
+provenance: supported. Targets: cmmmech:whewellite.
+
+Exact record/history hashes, independent source assessment and successful named/full gates support this completed review.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/whewellite.yaml; Entire frozen record | supports | Every field independently read following native inspect; target and CREATE-sidecar hashes checked immediately before saving. No reviewer record/history edits. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September 2026 list definitions pp1-2 and Whewellite row p234 | supports | Live official list reopened, definitions read and retained exact row visually checked. Whewellite approved with 1967 special procedure and weddellite grandfathered with 1942 original-description year do not supply new-mineral approval accession identifiers. |
+| handbook | https://www.handbookofmineralogy.org/pdfs/Whewellite.pdf; Complete one-page identity entry | supports | Original entry independently read; mineral hydrate formula and crystal system support material identity without asserting experimentally measured water occupancy. |
+| hydration | https://www.handbookofmineralogy.org/pdfs/weddellite.pdf; Physical Properties, atmospheric dehydration to whewellite | context_only | Handbook supplies a plausible handling limitation. It is not direct evidence that a particular 2019 specimen dehydrated or that the measured phase mixture had a specific precursor sequence. |
+| primary | https://doi.org/10.3390/min9110656; Frank-Kamenetskaya et al.2019, complete 13-page original; methods2.1-2.5; results3.1-3.4; discussion4; Figures1-7 and Tables1-2 | supports | Read complete scientific body and source bibliography context. Independently visually inspected both tables and every main figure. Figure3 separates substrate trace1, natural Farnoldia material trace2 and day5 culture trace3. Table1 is literature context, not new experimental replication. |
+| limits | https://doi.org/10.3390/min9110656; Methods2.2 and2.4-2.5; Results3.3-3.4; Figures3,4,6,7; Discussion4 | partial | No matched uninoculated result or killed-cell arm, organic-acid series, phase-specific mass balance or hydration-control experiment is supplied. Stated close proportions are not a quantitative refinement. Carbon-coated EDX does not independently assign hydrate, ion valence or lattice sites. Methods/figure SEM magnifications and displayed XRD range differ; record does not adopt those conflicting settings. |
+| taxonomy | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061; Official live NCBI taxonomy page and retained XML | context_only | NCBI5061 resolves to Aspergillus niger at species rank, not Ch4/07 stock authentication or a field lichen isolate. |
+| sequence | https://www.ncbi.nlm.nih.gov/nuccore/KF768341.1; Official sequence XML source qualifiers and accession version | context_only | KF768341.1 is A.niger strain Ch 4/07, ribosomal/ITS region, isolation source grecian marble and taxon5061. It is neither a complete genome nor an independently measured mineral-formation phenotype. |
+| search | /private/tmp/cmm-round69-phosphate-crossreview/independent-search.json; Independent live correction/conflict/access search on 2026-10-14 | context_only | Bounded independent queries and retrieval limits are documented. Indexed publisher notes date the retained updated PDF; no affecting notice surfaced, without claiming exhaustive absence. |
+| dedup | /private/tmp/cmm-round69-phosphate-crossreview/dedup.txt; Hidden/ignored-inclusive scoped owner and raw-source search | context_only | Checked relevant names, DOI and sequence across records, research, reviews, history and peer raw root with hidden/ignored files included and symlinks followed. No machinewide novelty claim. |
+| history | history/records/whewellite/2026-10-14T104509Z-codex-bf78cf.yaml; Complete CREATE sidecar and inline event | supports | Actual UTC Codex/GPT-6/codex actor and target-specific CREATE event agree. Reviewer did not edit provenance. |
+| named | /private/tmp/cmm-round69-phosphate-crossreview/whewellite-validation.log; Reviewer-executed named validation log | supports | Locked offline named validation passed one record with zero failures. |
+| batch | /private/tmp/cmm-round69-final-gates.json; Completed command receipt and hashed full log | supports | Root executed just check, nonempty corpus validation and trusted-base history validation. Reviewer checked all zero exits and full-log SHA before saving. |
+
+## Limits And Additional Notes
+
+- No matched sterile/killed-cell experiment or direct organic-acid concentration series is provided for the accepted rock assay.
+- Field mineral co-occurrence does not identify the causal oxalate producer, calcium source or an obligatory phase-transformation sequence.
+- Ex situ phase observations lack quantified dehydration controls, phase mass balance, per-lichen diffraction series and replicate-level raw patterns.
+- Publisher HTML and version-note direct retrieval returned429; retained complete updated primary PDF was independently inspected and indexed official version notes checked. No separate supplementary section is referenced in that PDF; no universal absence of supplementary material is asserted.
+- No recovery yield, industrial deployment or criticality inherited from constituent elements is asserted.
+- No supported corrective finding on the frozen reviewed state.
+- All main figures1-7 and Tables1-2 were independently visually inspected; no image-only quantitative values were invented.
+- Bounded searches do not establish global absence of corrections or conflicting literature; full source artifacts remain outside Git.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T105625Z-whewellite-round69-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of whewellite
+started_at: '2026-10-14T10:52:19.321502Z'
+finished_at: '2026-10-14T10:56:25.609759Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Scientific records, CREATE history and source dossier were authored
+    by /root/round68_new_frontier. Reviewer independently read primary original and
+    all figures/tables, checked authorities, conducted notice/conflict searches, and
+    made no record/history edits; acquisition artifacts and curator caveats were shared.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Monoclinic calcium oxalate monohydrate whewellite is correctly separated
+  from weddellite, caoxite, calcium/phosphorus elements and mixed apatite-nepheline
+  ore. Culture-associated whewellite and separate natural lichen-associated coexistence
+  with weddellite are supported. Acid production, calcium provenance and microbial
+  necessity are not isolated by these observations.
+source:
+  git_revision: 19e7b84fdfe6c4ec24f9d2b727afd5f7f3d2902a
+  state: working_tree
+  inputs:
+  - path: data/records/whewellite.yaml
+    sha256: 4d3ed2ddbd836375aa616aa97c6c2d22aa41870c6675821e968977fd9bc32e3d
+    role: target
+  - path: history/records/whewellite/2026-10-14T104509Z-codex-bf78cf.yaml
+    sha256: acbe07eb93c9d5a4a76be9224b08b6747d1cec2dea384119ea2b6fc312749b93
+    role: context
+scope:
+  description: Complete frozen scientific record and canonical CREATE history against
+    primary literature and identity authorities.
+  selection: Assigned frozen record; native inspect preceded final field-by-field
+    source assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:whewellite
+targets:
+- target_id: cmmmech:whewellite
+  path: data/records/whewellite.yaml
+  label: Whewellite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/whewellite.yaml
+    role: maintained scientific record
+checks:
+- check_id: named
+  name: Named validation
+  command: uv run --locked cmmmech validate data/records/whewellite.yaml
+  status: passed
+  required: true
+  summary: Reviewer executed in assigned worktree; one record and zero failures.
+  target_ids:
+  - cmmmech:whewellite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Batch gate 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T10:50:52.600522+00:00 to 2026-10-14T10:53:49.563447+00:00;
+    zero exit and full-log hash independently checked.
+  target_ids:
+  - cmmmech:whewellite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T10:53:49.563468+00:00 to 2026-10-14T10:53:56.792470+00:00;
+    zero exit and full-log hash independently checked.
+  target_ids:
+  - cmmmech:whewellite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Batch gate 3
+  command: uv run --locked cmmmech validate-history --base 19e7b84fdfe6c4ec24f9d2b727afd5f7f3d2902a
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T10:53:56.792494+00:00 to 2026-10-14T10:54:01.379195+00:00;
+    zero exit and full-log hash independently checked.
+  target_ids:
+  - cmmmech:whewellite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/whewellite.yaml
+  locator: Entire frozen record
+  accessed_at: '2026-10-14T10:56:25.609759Z'
+  support: supports
+  summary: Every field independently read following native inspect; target and CREATE-sidecar
+    hashes checked immediately before saving. No reviewer record/history edits.
+  snapshot_sha256: 4d3ed2ddbd836375aa616aa97c6c2d22aa41870c6675821e968977fd9bc32e3d
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September 2026 list definitions pp1-2 and Whewellite row p234
+  accessed_at: '2026-10-14T10:56:25.609759Z'
+  support: supports
+  summary: Live official list reopened, definitions read and retained exact row visually
+    checked. Whewellite approved with 1967 special procedure and weddellite grandfathered
+    with 1942 original-description year do not supply new-mineral approval accession
+    identifiers.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/Whewellite.pdf
+  locator: Complete one-page identity entry
+  accessed_at: '2026-10-14T10:56:25.609759Z'
+  support: supports
+  summary: Original entry independently read; mineral hydrate formula and crystal
+    system support material identity without asserting experimentally measured water
+    occupancy.
+  snapshot_sha256: 3e4a2fdfc572ef0687884ad04d6af71752a0fcf95623e2833d18f774f80f7f6e
+- evidence_id: hydration
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/weddellite.pdf
+  locator: Physical Properties, atmospheric dehydration to whewellite
+  accessed_at: '2026-10-14T10:56:25.609759Z'
+  support: context_only
+  summary: Handbook supplies a plausible handling limitation. It is not direct evidence
+    that a particular 2019 specimen dehydrated or that the measured phase mixture
+    had a specific precursor sequence.
+  snapshot_sha256: 635da9920a5ba00706dba8815a8432d13e3aa102e67f8be469da6b4400244670
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/min9110656
+  locator: Frank-Kamenetskaya et al.2019, complete 13-page original; methods2.1-2.5;
+    results3.1-3.4; discussion4; Figures1-7 and Tables1-2
+  accessed_at: '2026-10-14T10:56:25.609759Z'
+  support: supports
+  summary: Read complete scientific body and source bibliography context. Independently
+    visually inspected both tables and every main figure. Figure3 separates substrate
+    trace1, natural Farnoldia material trace2 and day5 culture trace3. Table1 is literature
+    context, not new experimental replication.
+  snapshot_sha256: 5c17a54493b9ae681701e9f650c7c89bc0e0153bc5637a3902d4ab7582dab853
+- evidence_id: limits
+  kind: primary_source
+  reference: https://doi.org/10.3390/min9110656
+  locator: Methods2.2 and2.4-2.5; Results3.3-3.4; Figures3,4,6,7; Discussion4
+  accessed_at: '2026-10-14T10:56:25.609759Z'
+  support: partial
+  summary: No matched uninoculated result or killed-cell arm, organic-acid series,
+    phase-specific mass balance or hydration-control experiment is supplied. Stated
+    close proportions are not a quantitative refinement. Carbon-coated EDX does not
+    independently assign hydrate, ion valence or lattice sites. Methods/figure SEM
+    magnifications and displayed XRD range differ; record does not adopt those conflicting
+    settings.
+  snapshot_sha256: 5c17a54493b9ae681701e9f650c7c89bc0e0153bc5637a3902d4ab7582dab853
+- evidence_id: taxonomy
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061
+  locator: Official live NCBI taxonomy page and retained XML
+  accessed_at: '2026-10-14T10:56:25.609759Z'
+  support: context_only
+  summary: NCBI5061 resolves to Aspergillus niger at species rank, not Ch4/07 stock
+    authentication or a field lichen isolate.
+  snapshot_sha256: d668c305ba04f31ca50a1582a5a9c85d6547109cbc132a097d5d2185a8c34ff8
+- evidence_id: sequence
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/KF768341.1
+  locator: Official sequence XML source qualifiers and accession version
+  accessed_at: '2026-10-14T10:56:25.609759Z'
+  support: context_only
+  summary: KF768341.1 is A.niger strain Ch 4/07, ribosomal/ITS region, isolation source
+    grecian marble and taxon5061. It is neither a complete genome nor an independently
+    measured mineral-formation phenotype.
+  snapshot_sha256: 021b02485c20a851a48815ac82e9effc1d46908851abb4b9c35637afde5b6dd3
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round69-phosphate-crossreview/independent-search.json
+  locator: Independent live correction/conflict/access search on 2026-10-14
+  accessed_at: '2026-10-14T10:56:25.609759Z'
+  support: context_only
+  summary: Bounded independent queries and retrieval limits are documented. Indexed
+    publisher notes date the retained updated PDF; no affecting notice surfaced, without
+    claiming exhaustive absence.
+  search_scope: Three exact queries; first returned sets, no date/domain filter or
+    pagination; direct publisher page/notes HTTP429, IMA and NCBI live authority checks.
+  snapshot_sha256: 094cb2fa26c1947af8705e127fa3cdd48b7a98b7c1d8cefa29dccb8b73466cde
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round69-phosphate-crossreview/dedup.txt
+  locator: Hidden/ignored-inclusive scoped owner and raw-source search
+  accessed_at: '2026-10-14T10:56:25.609759Z'
+  support: context_only
+  summary: Checked relevant names, DOI and sequence across records, research, reviews,
+    history and peer raw root with hidden/ignored files included and symlinks followed.
+    No machinewide novelty claim.
+  search_scope: rg --no-ignore --hidden --follow -n -i; whewellite|weddellite|10.3390/min9110656|KF768341;
+    repository records/research/reviews/history plus /private/tmp/cmm-round69-silicates-research.
+  snapshot_sha256: 8f0534dcd4c8803acf909c6ca369746965b717de7337abcfc50101c877860494
+- evidence_id: history
+  kind: record_content
+  reference: history/records/whewellite/2026-10-14T104509Z-codex-bf78cf.yaml
+  locator: Complete CREATE sidecar and inline event
+  accessed_at: '2026-10-14T10:56:25.609759Z'
+  support: supports
+  summary: Actual UTC Codex/GPT-6/codex actor and target-specific CREATE event agree.
+    Reviewer did not edit provenance.
+  snapshot_sha256: acbe07eb93c9d5a4a76be9224b08b6747d1cec2dea384119ea2b6fc312749b93
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round69-phosphate-crossreview/whewellite-validation.log
+  locator: Reviewer-executed named validation log
+  accessed_at: '2026-10-14T10:56:25.609759Z'
+  support: supports
+  summary: Locked offline named validation passed one record with zero failures.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round69-final-gates.json
+  locator: Completed command receipt and hashed full log
+  accessed_at: '2026-10-14T10:56:25.609759Z'
+  support: supports
+  summary: Root executed just check, nonempty corpus validation and trusted-base history
+    validation. Reviewer checked all zero exits and full-log SHA before saving.
+  snapshot_sha256: cd9a4356e01fe397ef5297fd7c12c8013b75529760792b2ba5a41ad3a89df33e
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Material identity and criticality scope
+  outcome: supported
+  summary: Monoclinic calcium oxalate monohydrate whewellite is correctly separated
+    from weddellite, caoxite, calcium/phosphorus elements and mixed apatite-nepheline
+    ore.
+  target_ids:
+  - cmmmech:whewellite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  dimensions:
+  - name: criticality
+    value: No jurisdiction/list/edition designation asserted
+    definition: Constituent criticality is not inherited; this is not a universal
+      noncriticality claim.
+    evidence_ids:
+    - record
+- assessment_id: experiment
+  area: evidence
+  topic: Organism, substrate, biomass, conditions and controls
+  outcome: supported
+  summary: Record keeps the culture experiment separate from the natural community
+    and retains the evidence limitations.
+  target_ids:
+  - cmmmech:whewellite
+  evidence_ids:
+  - record
+  - primary
+  - limits
+  - taxonomy
+  - sequence
+  dimensions:
+  - name: substrate
+    value: Mixed fluorapatite-nepheline ore with minor aegirine, titanite and titanomagnetite
+    definition: Natural surface observations are associated with fluorapatite-rich
+      areas, not assumed phase-pure or isotope-traced calcium sources.
+    evidence_ids:
+    - primary
+  - name: biomass_state
+    value: Natural mixed lichen/fungal biofilms; separate growing A.niger conidial
+      cultures
+    definition: Field taxa are source-morphological identifications and are not assigned
+      isolated causal roles.
+    evidence_ids:
+    - primary
+    - limits
+  - name: controls
+    value: No matched uninoculated or killed-cell outcome
+    definition: Biofilm-free starting rock and separate historical marble studies
+      are not matched controls.
+    evidence_ids:
+    - primary
+    - limits
+  - name: conditions
+    value: Field formation pH, temperature and duration unknown; laboratory20-25 degrees
+      C,2-15days
+    definition: Culture triplicates in15mL Capek-Dox, initialpH5.5 then4.0 day5 and4.5
+      endpoint; no inoculum density, substrate mass or sterilization method supplied.
+    evidence_ids:
+    - primary
+  - name: deployment
+    value: Field association and laboratory model experiment
+    definition: No isolated recovery yield, field intervention efficacy or industrial
+      process is claimed.
+    evidence_ids:
+    - record
+    - primary
+  - name: organism
+    value: A.niger Ch4/07 laboratory inoculum; source-assigned mixed field lichens
+    definition: NCBI5061 and KF768341.1 support species and sequence naming, not authentication
+      of stock or causality in field communities.
+    evidence_ids:
+    - primary
+    - taxonomy
+    - sequence
+  - name: outcome
+    value: Reported whewellite in all three cultures; day5 XRD and day5/day12 microscopy
+    definition: Only displayed pattern and qualitative phase outcome accepted, not
+      phase-pure yield, identical replicate rates or quantitative conversion.
+    evidence_ids:
+    - primary
+    - limits
+- assessment_id: outcome
+  area: evidence
+  topic: Observed phase outcome and transfer limits
+  outcome: supported
+  summary: Culture-associated whewellite and separate natural lichen-associated coexistence
+    with weddellite are supported. Acid production, calcium provenance and microbial
+    necessity are not isolated by these observations.
+  target_ids:
+  - cmmmech:whewellite
+  evidence_ids:
+  - record
+  - primary
+  - limits
+  - hydration
+  dimensions:
+  - name: handling
+    value: Ex situ XRD/SEM with no quantified water-content handling control
+    definition: Potential atmospheric dehydration is contextual, not asserted as an
+      observed event in these samples.
+    evidence_ids:
+    - hydration
+    - limits
+- assessment_id: provenance
+  area: provenance
+  topic: Reviewed bytes, actual provenance and completed checks
+  outcome: supported
+  summary: Exact record/history hashes, independent source assessment and successful
+    named/full gates support this completed review.
+  target_ids:
+  - cmmmech:whewellite
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - search
+  - dedup
+findings: []
+actions: []
+limitations:
+- No matched sterile/killed-cell experiment or direct organic-acid concentration series
+  is provided for the accepted rock assay.
+- Field mineral co-occurrence does not identify the causal oxalate producer, calcium
+  source or an obligatory phase-transformation sequence.
+- Ex situ phase observations lack quantified dehydration controls, phase mass balance,
+  per-lichen diffraction series and replicate-level raw patterns.
+- Publisher HTML and version-note direct retrieval returned429; retained complete
+  updated primary PDF was independently inspected and indexed official version notes
+  checked. No separate supplementary section is referenced in that PDF; no universal
+  absence of supplementary material is asserted.
+- No recovery yield, industrial deployment or criticality inherited from constituent
+  elements is asserted.
+notes:
+- No supported corrective finding on the frozen reviewed state.
+- All main figures1-7 and Tables1-2 were independently visually inspected; no image-only
+  quantitative values were invented.
+- Bounded searches do not establish global absence of corrections or conflicting literature;
+  full source artifacts remain outside Git.
+tags:
+- round69
+- independent
+- whewellite
+- primary-figures
+```
