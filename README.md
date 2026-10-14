@@ -8,10 +8,14 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 364 material records.
+The catalogue currently contains 368 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Acanthite](data/records/acanthite.yaml) | Minority silver-sulfide particles assigned by electron diffraction and composition | Mixed products, processed cells and missing matched controls prevent pure-product or causal yield claims |
+| [Monetite](data/records/monetite.yaml) | Surface phase assigned after biofilm and filtered spent-broth exposure | Phase also appears with cell-free spent broth; mixed solids and cleaning limit mechanistic attribution |
+| [Switzerite](data/records/switzerite.yaml) | Qualified culture-associated phosphate assignment and separate natural-specimen dehydration | Missing culture diffraction and hydration data leave the microbial product assignment uncertain |
+| [Spent tantalum capacitors](data/records/spent-tantalum-capacitors.yaml) | Acidophile- and fungal-filtrate-associated base-metal mobilization | Tantalum nondetection, source-table conflicts and fungal strain nomenclature prevent stronger recovery claims |
 | [Chlorite group](data/records/chlorite.yaml) | MR-1-associated iron reduction in a natural chlorite preparation | Impurity phases and assay fractions limit phase-specific reduction and recovery claims |
 | [Illite group](data/records/illite.yaml) | Cold-culture-associated iron reduction and alteration of IMt-1 | Medium contradictions, late dissolved-iron decline and unmatched chemical controls remain explicit |
 | [Hopeite](data/records/hopeite.yaml) | Fungal-associated alteration and secondary phosphate precipitation | Starting hopeite formed chemically; shared-study lineage and inconsistent endpoint conditions are retained |

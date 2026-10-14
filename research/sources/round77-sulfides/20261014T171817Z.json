@@ -1,0 +1,354 @@
+{
+  "timestamp": "2026-10-14T17:18:17.510253Z",
+  "worktree": "/private/tmp/CMMMech-expansion-round77-20261014",
+  "base": "e5e70cfc93a3aa68a166eba7bbbd3dc1053ce60d",
+  "branch": "curate/cmm-expansion-round77-20261014",
+  "author": "codex (GPT-6; /root/round68_iron_sulfides)",
+  "skills": [
+    "cmmmech-discover-sources",
+    "cmmmech-add-record"
+  ],
+  "selected": [
+    {
+      "id": "cmmmech:acanthite",
+      "record": "data/records/acanthite.yaml",
+      "record_sha256": "dab8e5acec7c1178d06afa237a8ece75e41a28c475fab88c2aa79640925738af",
+      "history": "history/records/acanthite/2026-10-14T171634Z-codex-d5f96c.yaml",
+      "history_sha256": "cca542da10f9d685ad4bcd9db945c2c73ca450c696fca7f3d1b0f8f2f546da2a",
+      "reason": "Explicit monoclinic Ag2S diffraction plus composition in complete primary bacterial experiment, distinct from existing elemental silver owner.",
+      "mechanism_scope": "Culture-associated minority acanthite particles, laboratory, microbial true; no necessity or recovery inference."
+    }
+  ],
+  "search": {
+    "provider": "web search and direct primary/authority access",
+    "date": "2026-10-14",
+    "queries": [
+      "microbial acanthite silver sulfide biogenic XRD bacteria",
+      "berzelianite bacteria biogenic copper selenide XRD",
+      "argentite acanthite microbial transformation silver sulfide mineral full text",
+      "\"acanthite\" \"bacteria\" silver",
+      "\"acanthite\" \"Desulfovibrio\"",
+      "\"berzelianite\" \"bacteria\"",
+      "\"silver sulfide\" \"bacteria\" \"monoclinic\"",
+      "\"berzelianite\" microbial synthesis selenium bacteria fulltext",
+      "\"silver selenide\" bacteria \"orthorhombic\"",
+      "\"acanthite\" \"1999\" \"Klaus\"",
+      "\"Silver-based crystalline nanoparticles\" \"correction\"",
+      "\"Pseudomonas stutzeri AG259\" acanthite sulfide control",
+      "site:ncbi.nlm.nih.gov \"Stutzerimonas stutzeri\" \"316\"",
+      "\"IMA\" \"Acanthite\" \"1855\"",
+      "\"10.1073/pnas.96.24.13611\" retraction correction",
+      "\"AG259\" acanthite \"control\"",
+      "\"AG259\" \"silver sulfide\" \"abiotic\""
+    ],
+    "filters": "No date/domain filters except explicit NCBI query; bounded first returned results; no exhaustive pagination.",
+    "raw_initial_results": "/private/tmp/cmm-round77-sulfides-research/initial-web-results.json"
+  },
+  "dedup": {
+    "flags": "rg --no-ignore --hidden --follow --text",
+    "scope": [
+      "round77 data/records research reviews history",
+      "main checkout data/records research reviews history"
+    ],
+    "referenced_raw_roots": [
+      "/private/tmp/cmm-round2-silver-20261011",
+      "/private/tmp/cmm-round55-tetrahedrite-research",
+      "/private/tmp/cmm-round76-sulfides-research"
+    ],
+    "terms": [
+      "acanthite",
+      "argentite",
+      "berzelianite",
+      "naumannite",
+      "aguilarite",
+      "jalpaite",
+      "stromeyerite",
+      "10.1073/pnas.96.24.13611",
+      "PMC24112",
+      "Silver-based crystalline nanoparticles"
+    ],
+    "findings": [
+      "No pre-existing acanthite owner in searched record corpus; existing silver element owner instead accepts Wang2010 10.1128/JB.01277-09.",
+      "Ignored prior round2-silver ingest explicitly screened Klaus1999 without full-method review; this is completion of that lead, not first discovery.",
+      "Round55 tetrahedrite source search has a contextual mineral-name mention; no accepted acanthite experiment.",
+      "Referenced raw hits were prior dedup/search inventories, not a previously accepted Klaus1999 experiment."
+    ],
+    "limits": "Ignored files and relevant symlinks included within named roots. No machine-wide absence or global source exhaustion claimed."
+  },
+  "sources": [
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/klaus1999.html",
+      "bytes": 128293,
+      "sha256": "ad5c3cb98941d28d86971583fb2ca0cee40c8d434f04f96e56c2631e0c260651",
+      "role": "primary_full_text",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC24112/",
+      "locators": "Complete main article, both Methods subsections, Results and Discussion, Figures1–3 captions, references and article notes"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/figure1.jpg",
+      "bytes": 31092,
+      "sha256": "e19a2462a99e864e426e35448fc3070b939ae0cd3e011c6b927d3d87bf002808",
+      "role": "primary_graphic",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e0b9/24112/21d9b82199ee/pq2392063001.jpg",
+      "locators": "Figure1 cellular particle association; contrast alone is not phase identity"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/figure2.jpg",
+      "bytes": 25601,
+      "sha256": "d797d7ac8cd2ca465f34fc3dda539115939b7aac735fddacc91cfc8eb1426cf0",
+      "role": "primary_graphic",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e0b9/24112/a5df6ea9a34f/pq2392063002.jpg",
+      "locators": "Figure2a–c whole-cell diverse particle shapes; not acanthite-specific"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/figure3.jpg",
+      "bytes": 74806,
+      "sha256": "c135ad1770544bdd39c5daee4c0016d3f4e0da519bff304760f3e3aa101fdb51",
+      "role": "primary_graphic",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e0b9/24112/7fa2dda2af3f/pq2392063003.jpg",
+      "locators": "Figure3a Ag;3b Ag/S EDX plus diffraction;3c structurally unresolved Ag-rich particle"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/handbook-acanthite-browser.pdf",
+      "bytes": 50670,
+      "sha256": "151ce2ca1efb37d65bad753c175c7d9b4baf77888cb2c68193176175ec2c2d96",
+      "role": "mineral_authority",
+      "url": "https://handbookofmineralogy.org/pdfs/acanthite.pdf",
+      "locators": "Complete one-page entry: monoclinic Ag2S; high-temperature cubic argentite distinction"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/ncbi316.xml",
+      "bytes": 11118,
+      "sha256": "6d7c014f034fa6a023da8f3c1029c5a1274e4456dc34902da7b8440ebd4772a4",
+      "role": "taxon_authority",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=316&retmode=xml",
+      "locators": "Current Stutzerimonas stutzeri species, synonym Pseudomonas stutzeri; no AG259-specific identification"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/pubmed10570120.xml",
+      "bytes": 10018,
+      "sha256": "f934c078608b45d2dd0176d411e20d8588a7c3acf78b3e14623bdbca4703051c",
+      "role": "publication_metadata",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=10570120&retmode=xml",
+      "locators": "Verified DOI/title/authors/year; CommentIn10588672, not an erratum"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/crossref-klaus1999.json",
+      "bytes": 6396,
+      "sha256": "693f0a04d9288b3ad9f4369d6805d61ee395f5d6b090e3fe63501e977c85bea9",
+      "role": "publication_metadata",
+      "url": "https://api.crossref.org/works/10.1073/pnas.96.24.13611",
+      "locators": "Verified DOI/title/authors; relation empty, update-to absent; not proof no correction exists"
+    },
+    {
+      "path": "/private/tmp/cmm-round71-carbonates-research/ima2026-09.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "role": "mineral_authority",
+      "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "locators": "PDF pages1 and3, Acanthite Ag2S G1855; complete retained original rechecked, not downloaded this round"
+    }
+  ],
+  "limitations": [
+    "A small, uncounted number of Ag2S particles; most silver assigned elemental Ag and third structure unresolved.",
+    "Nominal50mM AgNO3 in LB agar is not measured free aqueous Ag(I). pH, full agar recipe, inoculum, replicate count and matched cell-free/killed/sulfide controls unreported.",
+    "Whole-cell and thin-section observations are fixed/processed microscopy; native time course and sample-processing control absent.",
+    "H2S/efflux/binding route is a proposed explanation relying on prior papers, not measured causal pathway.",
+    "Species-level current taxonomy maps the historical paper label only; no independently verified AG259 sequence/accession.",
+    "No isolated acanthite yield, metal mass balance, phase-pure product, mineral-specific coating function or industrial deployment.",
+    "Primary PDF endpoint returned1817-byte HTML challenge; accepted main evidence is complete actual128293-byte PMC HTML plus three original JPEGs. EuropePMC XML returned500.",
+    "No supplementary link located in inspected original HTML and its artifact-link inventory; this is a bounded inspected-page statement.",
+    "Crossref metadata and PubMed relation plus exact-title/DOI notice queries found no correction of the accepted source; not an exhaustive retraction database search."
+  ],
+  "deferred": [
+    {
+      "identity": "argentite",
+      "disposition": "No separate owner. Handbook identifies high-temperature cubic form; accepted bacterial diffraction is monoclinic acanthite, not argentite. No relevant distinct experimental owner justified in this bounded cohort."
+    },
+    {
+      "identity": "berzelianite",
+      "leads": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11243547/",
+        "https://doi.org/10.1039/D1RA04626H",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12710604/"
+      ],
+      "disposition": "Discovery-level chemical synthesis/anion exchange leads. Antimicrobial target organisms are not microbial mineral producers. Complete methods/graphics/SI not assessed here; no mechanism or owner accepted."
+    },
+    {
+      "identity": "naumannite",
+      "leads": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7664687/",
+        "https://journals.iucr.org/e/issues/2011/09/00/wm2506/index.html"
+      ],
+      "disposition": "Chemical/identity leads only; not reviewed for record acceptance. No further candidates after root selected acanthite only."
+    }
+  ],
+  "notices": {
+    "crossref_relation": {},
+    "crossref_update_to": null,
+    "pubmed_comment_in": "10588672; DOI10.1073/pnas.96.25.14183, companion commentary, not independent replication or erratum",
+    "counterevidence": "Review and prior-reference discovery points to differing incubation/particle sizes and proposed H2S pathway; no new contrary phase assignment imported without original assessment."
+  },
+  "access_and_reuse": {
+    "main": "Copyright1999 National Academy of Sciences; no reuse license granted in inspected metadata. Bulk original retained outsideGit.",
+    "handbook": "All rights reserved; outsideGit.",
+    "ima": "Official retained artifact rechecked, current CNMNC landing page still links September2026 list.",
+    "acquisition_receipts": [
+      "/private/tmp/cmm-round77-sulfides-research/acquisitions-initial.json",
+      "/private/tmp/cmm-round77-sulfides-research/acquisitions-network.json",
+      "/private/tmp/cmm-round77-sulfides-research/acquisitions-artifacts.json"
+    ],
+    "earlier_tool_failures": [
+      "System Python requests missing, then analysis environment bs4 missing; switched to standard-library urllib/HTMLParser without altering project environment.",
+      "Initial sandbox DNS failures retained; authorized read-only network escalation succeeded."
+    ]
+  },
+  "validation": {
+    "named_command": "uv run --locked cmmmech validate data/records/acanthite.yaml --require-records",
+    "exit_code": 0,
+    "result": "Checked1record;0failed",
+    "log": {
+      "path": "/private/tmp/cmm-round77-sulfides-research/named-validation.log",
+      "bytes": 31,
+      "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e"
+    },
+    "batch_and_independent_review": "Pending root batch and assigned independent reviewer; this dossier is not an acceptance review."
+  },
+  "raw_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/acquire-artifacts.py",
+      "bytes": 1368,
+      "sha256": "78660121c127d24eb2a634ab4a5521fa1994e5645520b390f6b901634245852e"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/acquire.py",
+      "bytes": 1160,
+      "sha256": "0bd8f57fb53d4f8392545a917d3747e569ef04c4287e3a774752418880d1a635"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/acquisitions-artifacts.json",
+      "bytes": 2536,
+      "sha256": "f7cda63ff9ec0af89e2f5597710a2522512e39cb7a0b8c44c46443754b73afec"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/acquisitions-initial.json",
+      "bytes": 801,
+      "sha256": "56761bf18168a0a87ace37eb295e68eb7b3ba1f197c366db2a0ad4e50942c487"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/acquisitions-network.json",
+      "bytes": 1539,
+      "sha256": "c58e9ecf1b77f50887ddbfa6f4a374204d36329c56b21e3b7063a4d242973de6"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/build-dossier.py",
+      "bytes": 15708,
+      "sha256": "ae67548d93d5845767ffd69194b7f34224041bd3bc71a844bd5b3bb683ca8ef5"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/crossref-klaus1999.json",
+      "bytes": 6396,
+      "sha256": "693f0a04d9288b3ad9f4369d6805d61ee395f5d6b090e3fe63501e977c85bea9"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/dedup-main.txt",
+      "bytes": 351,
+      "sha256": "4576f141acb2d3fec775feeac16f42bca5a2d720f6d114b1e76ee6986ace2132"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/dedup-referenced-raw.txt",
+      "bytes": 127,
+      "sha256": "5ff4a8cce5f26d93bd61cd1a81baf4c97ea5b1211e1d739666d59497a14c6b68"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/figure1.jpg",
+      "bytes": 31092,
+      "sha256": "e19a2462a99e864e426e35448fc3070b939ae0cd3e011c6b927d3d87bf002808"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/figure2.jpg",
+      "bytes": 25601,
+      "sha256": "d797d7ac8cd2ca465f34fc3dda539115939b7aac735fddacc91cfc8eb1426cf0"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/figure3.jpg",
+      "bytes": 74806,
+      "sha256": "c135ad1770544bdd39c5daee4c0016d3f4e0da519bff304760f3e3aa101fdb51"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/handbook-acanthite-browser.pdf",
+      "bytes": 50670,
+      "sha256": "151ce2ca1efb37d65bad753c175c7d9b4baf77888cb2c68193176175ec2c2d96"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/handbook-acanthite.png",
+      "bytes": 221857,
+      "sha256": "583c67c6b38cfa2acffbfe09aef8769a3dbfa933c5ae4078d18d3d3958b4d012"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/ima-page1.png",
+      "bytes": 269216,
+      "sha256": "149862fcd0ef58fc62d3ca9e8e77337771848ca8936b961d0f62ab19456b1387"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/ima-page1.txt",
+      "bytes": 3600,
+      "sha256": "0d705ef2fdc34dcb70ba807c6a44ecc0335bbd424bcfe970440148ab5a96a935"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/ima-page3.png",
+      "bytes": 286921,
+      "sha256": "ed98772e0a2eba6e55c8f74b1346f42c61993d60f5c8a61094db9361a046aa47"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/ima-page3.txt",
+      "bytes": 3061,
+      "sha256": "40672c9492ac86853f55019ff77cd26f93a6bb9aff11973f6bf7eefd8fd8836a"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/initial-web-results.json",
+      "bytes": 95238,
+      "sha256": "45d586b1f6011134a91db14c269c4d2509ab4b559d704101b8446c17f8cd1ddd"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/klaus1999-links.json",
+      "bytes": 1373,
+      "sha256": "b0e7bb493bdd41d06a1e1fdc68eb79b00a057e8610e4c8586adb09aeb774bf2f"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/klaus1999.html",
+      "bytes": 128293,
+      "sha256": "ad5c3cb98941d28d86971583fb2ca0cee40c8d434f04f96e56c2631e0c260651"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/klaus1999.pdf",
+      "bytes": 1817,
+      "sha256": "34afa1ce3ef6da3c4ca9b81ee2eb5dcf762505a0990a9e5166dc685690068dda"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/klaus1999.txt",
+      "bytes": 21631,
+      "sha256": "99f748e6288eb7a21844e02b9ba5822cd527b19d9c977a44002dd7277bc09a81"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/named-validation.log",
+      "bytes": 31,
+      "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/ncbi316.xml",
+      "bytes": 11118,
+      "sha256": "6d7c014f034fa6a023da8f3c1029c5a1274e4456dc34902da7b8440ebd4772a4"
+    },
+    {
+      "path": "/private/tmp/cmm-round77-sulfides-research/pubmed10570120.xml",
+      "bytes": 10018,
+      "sha256": "f934c078608b45d2dd0176d411e20d8588a7c3acf78b3e14623bdbca4703051c"
+    }
+  ],
+  "priorities": [
+    "Independent exact-byte record review against complete main/figures and taxonomy.",
+    "If extending mechanism, acquire original Slawson1992 and matched abiotic/sulfide experiments; do not infer causal necessity from current morphology.",
+    "Berzelianite/other polymorphs require separately complete original phase evidence and scope decision; no quota-driven owner."
+  ]
+}
