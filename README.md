@@ -8,10 +8,14 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 284 material records.
+The catalogue currently contains 288 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Dypingite](data/records/dypingite.yaml) | Cyanobacterial-enrichment-associated magnesium carbonate formation | Abiotic pH control also forms dypingite; mixed culture and nutrient matching limit attribution |
+| [Scorodite](data/records/scorodite.yaml) | Culture-associated ferric arsenate formation and seeded aqueous removal | Seed contribution and short leachability tests constrain stabilization claims |
+| [Nickel flotation tailings](data/records/nickel-flotation-tailings.yaml) | Laboratory acidophile treatment of nickel-plant flotation waste | Acid-soluble and total-metal denominators differ; solution release is not isolated recovery |
+| [Nickel-smelter slag](data/records/nickel-smelter-slag.yaml) | Laboratory acidophile treatment of nickel flash-smelting waste | Similar nickel release in uninoculated controls; no demonstrated recovery benefit |
 | [Chromite ore processing residue](data/records/chromite-ore-processing-residue.yaml) | Chromium reduction using separately produced biogenic magnetite | Washed reagent treatment; residual chromium and later rebound limit stabilization claims |
 | [Spent cerium glass-polishing slurry](data/records/spent-cerium-glass-polishing-slurry.yaml) | Chemical recovery of a ceria-rich solid from factory slurry | Explicitly nonmicrobial; oxide composition is distinct from recovery yield |
 | [Carrollite](data/records/carrollite.yaml) | Mixed-culture-associated corrosion of natural mineral crystals | Membrane comparison and surface spectra do not establish a unique pathway or metal yield |

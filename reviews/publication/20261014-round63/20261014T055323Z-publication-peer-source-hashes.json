@@ -1,0 +1,813 @@
+{
+  "recorded_at": "2026-10-14T05:47:50.509608+00:00",
+  "passed": true,
+  "references_checked": 201,
+  "references": [
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/acquire.py",
+      "sha256": "ce4453cc87c9de70a84797d229d4040055208c73f208801450d668dd0986b268"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/acquisitions-identifiers.json",
+      "sha256": "3cec4e452110915a1909447bd692bea3b1caeb03fc841c53ed2479b995aef41a"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/acquisitions-initial.json",
+      "sha256": "ef31b7a5fe4e91ab478e2e0d75fa9ba7ad97ceed7caf5efc2879e9c97b4d62e9"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/curation-validation.json",
+      "sha256": "f36b3161bc132c2688c6a546513dea301a427c0d691619a6ae5ad4df3352c2cd"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/dedup-cited-raw.txt",
+      "sha256": "eefaeb5b7d4d6c11a925c5f9a7b979c6c9bdba7535d587a5055fc1bee161676c"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/dedup-primary-context.json",
+      "sha256": "6ff7c9acad332e04f9ad4bd59e140a2c39a6a7e3371f2f9b498dbc749c922cb9"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/dedup-repository.txt",
+      "sha256": "c9bc5c733dc393f3685b688f3b988a29c9b4aa1cf99d545f3bbbfa6ea7b44aa1"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/dedup.json",
+      "sha256": "04413f433390bdbe3a4298bbd22c34c93a436fd5fe3cbcd724fa1de7b61cda2e"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/dedup.py",
+      "sha256": "d9dde69f376ff79d6383845e34d9520e2159f569c28c2f7b20ea761e7e73e08c"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/dsm1651.html",
+      "sha256": "d12528da599bb39d5b7d4733ed1938db2a9befc57fa4c90b7a6e5a329253872b"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/ima-home.html",
+      "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/ima-september2026-page-001.png",
+      "sha256": "82dcc70cd6a634dbce05f17d72a63b31e44e89d4f240f1f439805b998ced7e43"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/ima-september2026-page-002.png",
+      "sha256": "26663900a1939a8ea198f539eb36458a346a4d661cffbf5ecc50b01fc631f6e4"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/ima-september2026-page-195.png",
+      "sha256": "8124efa803ed3c19c2fe91c38929443aa0070af82a4233901ec6cace03d7fbe6"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/ima-september2026-page-219.png",
+      "sha256": "f05ba38a080ec1e327ab2a7cb6ce26943a004c0f44bd9901a7681bd12b362d17"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/ima-september2026.pdf",
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/ima-september2026.txt",
+      "sha256": "fc3b92c871b1dd13656e0ee2bb89df4d549dfcf634c53f287aab07498b0d63d1"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/ncbi-brierleyi.json",
+      "sha256": "843e15839d47bb28efac15445b5492d03a9d206320247b22f0976fa4a59630d8"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/okibe2020-crossref.json",
+      "sha256": "178778538de9c7d5f05ef44d38e74df272458d3bba3ea2381011826f05d53eff"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/scorodite-handbook-page-001.png",
+      "sha256": "6d529259163818e58b6ac44ed445e06bf9938610cf720411941b74857cd193fa"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/scorodite-handbook.pdf",
+      "sha256": "16ae6cf1e379960b2beecae16080022512785be5739a6263a4fc5cb28c5953fc"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/scorodite-handbook.txt",
+      "sha256": "0b963ff1dd1636d000dc5e4e066add752c8cdd8d42c220feb434aede793d2eef"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-crossref.json",
+      "sha256": "a43cad478bb29df58d2d501843e8faa4557a3af3299caec86019520c124617fe"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-001.png",
+      "sha256": "6e2f7ad438eda0241e5bfe4f325a882bcd4426cd9bd34f6ba7a139b26783d13f"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-002.png",
+      "sha256": "e2bb7d4271ad40be98f2be959666b10d4542c0297dff1bd4e52f51ceef9802ea"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-003.png",
+      "sha256": "9d8edca3d5d646b6374172bd871eb99d94fd56ea3e21865727689bab3de57c4c"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-004.png",
+      "sha256": "30936df9c535ae49a937a08a36db6747979a8c3edb3cb77999277ea4e1ce062a"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-005.png",
+      "sha256": "a7c5032ecf3fa793ed1116da62440a2e8a0f78fac609208e5d2d6345771d9e4c"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-006.png",
+      "sha256": "04deb20070be6e1bb9e63cf571cdd844faa52dc4d9e5e2b172bc03969127221b"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-007.png",
+      "sha256": "c45fbba8d219c2cbb4078558ec4673e99d35747ce2d4ddbdae57543c3559e667"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-008.png",
+      "sha256": "7d293b4012a61525b4077801396e3ba5551ff5d506b6dd2e1a4c1b1e5ce3d3c4"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-009.png",
+      "sha256": "987fa173ca6a50ecc53d511ba72c09833f108130c7a4155d981be7173c18f560"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-010.png",
+      "sha256": "7ef197d8f518d0c255bed789f15e2232f0a55e0da693ec81baac81b7a3d1cb97"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-011.png",
+      "sha256": "3c6003b783107a105670f4b6ddf2060ecf7582efc6f187c56cd32dc79637ae5d"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-012.png",
+      "sha256": "9f834a5e63c614b37daf4604dd9321ee7f8616726fc3d2cee1f6ff71c35e4a1f"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-013.png",
+      "sha256": "81fb8e45d2522d2a0a2e4ecbe094b603c38fe64281e61bf7f17fccb702bf66f2"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-014.png",
+      "sha256": "27108a35930f84e5b4d2aef17d2a9077c3150e3484ff8db47d54180f3ef39dc7"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-015.png",
+      "sha256": "ac29c3c74d83aea99962ce679490a711ee6aa19142f3ac0fb3be75cbfa0f1b93"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-016.png",
+      "sha256": "fc66417f47d1915c0e9649901a202b96a5e2945e5ee67cc00e4925785f197c9d"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-017.png",
+      "sha256": "982e45ab25de91351335cb5fa08343fd91f26492e5183cd30aaf0eaf750eff13"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu.html",
+      "sha256": "fae38920d50c84c3f00d6f9b9b6ed73c7aa54a2cd95cca19998678fd0f7001ef"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu.pdf",
+      "sha256": "5ebd3f94649abeabda2126f87c5400df1dac4a5b6b40873fd5e3e0a09d6bf0c6"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu.txt",
+      "sha256": "84bd6afd4b48ec33eb73c15f7f0b247a3e02fd5b2532a6a28924915663a696d9"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-mdpi.html",
+      "sha256": "3af0109623bd8b6371b9701a97fbb4559fbef657828deced26d565d06fd82a0b"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage-page-001.png",
+      "sha256": "70bf87bccd0a719969397f259c2fb96998ee5a8c0869331cc8b5dfce74bcbe5e"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage-page-002.png",
+      "sha256": "59252fa603799f4e0b1e4439433d0687255ab9277dbedef09e370f2a2e8a956e"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage-page-003.png",
+      "sha256": "cf857a8b9fa2afa5e2804c4e819a04fc78b0a9def1eae3050d730e3459e34209"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage-page-004.png",
+      "sha256": "0df5e50c0b3895ceaf625fc0340eebfa52ec6cb24b2423dbbf0753febbc3343a"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage-page-005.png",
+      "sha256": "930d327500dd35137ed0670dae4f69055bd99f90ce2c12236031a5f281191850"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage-page-006.png",
+      "sha256": "0aa5f6be1573a52622389a89a96b1a2bd703ff7ed19724523ea80ddda8254ecf"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage-page-007.png",
+      "sha256": "e56f372403b666385007f487baa74722f594201843b11d333ab9defca753f759"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage-page-008.png",
+      "sha256": "91b855075bf6419c803ccf5bec84241b25ec7f79a4deb3c3abb603f5410e6de7"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage-page-009.png",
+      "sha256": "359065566329200be6e5e76de53bc6e61dd8e68492babe7d871e0d89fa7278e0"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage.html",
+      "sha256": "f93e9051ebffc8234a5a722b9bd436dc07a78296229c33bbe75c52e7dc7704d8"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage.pdf",
+      "sha256": "a60841e4e543da557b49a5943e208111020419187ce65fc0ead994cb00e23668"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage.txt",
+      "sha256": "ee74487c920a0c32040551879e3caddcb6dd398f2c950c909247621d13f80aeb"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/render-receipt.json",
+      "sha256": "6a5c6536cc7c84bbe2465ac1b0db4253719f64b54a807dc8b2cc7468e63ee71c"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/round63ArsenateAuthorityNotices.json",
+      "sha256": "a5024c3603e8475dd47e6f538d716bfec868b067e4ba996e2cc548b1a9e7cdae"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/round63ArsenateAuthorityOpen.json",
+      "sha256": "41765da1804ff5d45b768880e88fe94dc541c4578154f4e5e4a233833230b0c2"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/round63ArsenatePrimaryOpen1.json",
+      "sha256": "17ab9d5479eea37239ceb9a32415a97b44acea537fdef035ea75ee9b9c717260"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/round63ArsenateSearch1.json",
+      "sha256": "b03b4644d2f13113c1d84830c48d22310b881e85b0bffccaacc0ef352fa92fc8"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/round63ArsenateSearch2.json",
+      "sha256": "352076d762d15f8ea9c8a0fb821c4912b5ffc8cd271aaca0570a3f9ca5b9e0e4"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/source-report-draft.md",
+      "sha256": "67a81cdda617fea4bda586aeaca152a77f4ebfbad588c2256954a940594e8ab0"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/acquire.py",
+      "sha256": "b2a83b2cf00648577300f72883be0521e4b4fe33d49797c504142ce6dc677b6d"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/acquire3.py",
+      "sha256": "31c11ab33faff3cddec623e73e256dc68aa66b5c9d840a32c71273563d9994ca"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/acquire4.py",
+      "sha256": "c9b8ecc1d0895a54e1e547714e455d1b767edc038e009663d9751be6e52c1446"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/acquisition-1.json",
+      "sha256": "9993012804094c59e88479d9224d0ec85bf0a4ee1ecf661c9bd57f3d66412969"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/acquisition-2.json",
+      "sha256": "5122a4fe71fb1b9f194dff171dbeb65465718dd0113284b4ab2e005f84199c94"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/acquisition-3.json",
+      "sha256": "ea650aab7dfae2f83dd7db756e3e6860dc428f84610c38411173ae18294c2660"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/acquisition-4.json",
+      "sha256": "bc4d210667617e2dcd1bbd0def5b5e0785764079788a0addf40497243ddca6cd"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/dedup-cleaned.json",
+      "sha256": "d2ef09413f7c8ad095206d2e3a2fd089a13d9511b0be4569b998d470c767ae9d"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/dedup-context.json",
+      "sha256": "e93105fd9da087a01277ee0daeb4b985d9a86c1e421ce09a409a947db4b6d075"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/dedup.json",
+      "sha256": "dda358e9ab5bb93001bcb3a0563fd6c0c0db26c60c13a16f85d3f924b73a97f0"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/dedup.py",
+      "sha256": "2f7b3865facc76b0c91596d84391da4e5ff675b9ebe245aa6d2ace8b6258c27f"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/dypingite-draft.yaml",
+      "sha256": "5cb4e82a4f5a50621489fbdd18ebaaf8ab0030eb1da3268b95301402550988c8"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/finalize.py",
+      "sha256": "b5d49571d22e8b79fbf1d2898c442b0e503ec03f1bf0def82e5bc2c532a0c7ea"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/named-validation.json",
+      "sha256": "50f054cbefc588a02658ad1f7cf87a45529e4ed316dae76838a28f4ea179720d"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/balci2016-openalex.json",
+      "sha256": "be4cfaa32733e861c9af3888f3676cfa2067c75178436aa1a0ca6ca0c9cfb700"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/ima-202609.pdf",
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/ima-202609.txt",
+      "sha256": "4890869477ac637aa79cbd74fb6c4df9f1c68aab234e28582c5aab07161de099"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/ima-home.html",
+      "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/ima-p001.png",
+      "sha256": "b95a80d0ed61185741894fda95214d30fd6a375deb49e07f84670549a3e60f19"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/ima-p060.png",
+      "sha256": "764a9856b9c84ee693d5e4a4995fd9aa16c4d44f4fa8fc2cf53e92ab13f8942e"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/ima-p098.png",
+      "sha256": "feb7577436c7a8761609a4bcf416af93e183cf374fbc4973d0b5206145e6bab9"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/ima-p154.png",
+      "sha256": "3cba705d735c6e86c16c9e8259a6188f7c7fce465c689740ee10e0ef1153465c"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/mavromatis2012-citeseer.pdf",
+      "sha256": "3a8f097b5bfe9393e3fe1b7369e8d114d36ed8a7aae42ea6ebd23c8fc6125903"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/mavromatis2012-crossref.json",
+      "sha256": "57f13fe93f5f4805ad3f005c7a31354b9e65c1aa87aac3df86db6c98848d5fcf"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/mavromatis2012-openalex.json",
+      "sha256": "35ac95d9da9c35177d154d6105d4e9881b5c98662b5dd0f3c0cf28583da5fbe6"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/mavromatis2012-ucl.html",
+      "sha256": "0ec2956b12d0cd40cb19201242fa098fc2eb73634c31f201830a474e0f5d41ec"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/mavromatis2012.pdf",
+      "sha256": "33946f8c51a8d2fc0bfe8c6cb036c3ccfe6dbb20011516f51834de51167d06fa"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2007-crossref.json",
+      "sha256": "1645e3490658bd9ba0f6a7cf257c0149618c29464468a1db5c4b46dfe270046f"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2007-p01.png",
+      "sha256": "53e6c50f465d318a57da5983a04215ce35dff1a57026832d9ffec48bc24e32c4"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2007-p02.png",
+      "sha256": "33514a64c57e1ca46a86bd69a16aeab070db69931a2ca9582d310cf7bbcef16b"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2007-p03.png",
+      "sha256": "ba7a894cdd6354243d53239648c8726917db16a7739b8886a4f9a78cbe9462c9"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2007-p04.png",
+      "sha256": "5c2b783aa00fdde95efb6bbf84ffee912bd8ada753d4224266b136f9ee03fdc3"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2007-p05.png",
+      "sha256": "1dc88fa35090eb1c0e1c4731c0c80b518dad7c6a7b0fa9b9a1d2794f119031d4"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2007-p06.png",
+      "sha256": "60caf633c9b3936729fc1830e375eec050c773ae52825163827bf9d8e939632c"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2007-p07.png",
+      "sha256": "0a2b2c549a8baee86d9a2f408453b1cdff53ffb75d81f50a3650c7f74d2bacf4"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2007-p08.png",
+      "sha256": "991e8f4dc15b7ea53922599ea7980b25c9265711d4232162720712e2cec9c9d0"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2007-p09.png",
+      "sha256": "4e05bdda4b5860427b7d3dc6d775d6a0f747798280b28e4e7b09f8774256b8fa"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2007-p10.png",
+      "sha256": "8d758866e21dc75633d1874cb165c982a29bd922a93557d7bcec8b20aa68b1b2"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2007-p11.png",
+      "sha256": "ce37b1103ec36108fc08df6cf05c45b82487b2d2ac532b4f1bde3d615ec05f7e"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2007-p12.png",
+      "sha256": "96f1c1b0d19ee91ce8e06801a3f2af411377cb71733cc8ce4e2dbd9d7ae385d6"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2007-p13.png",
+      "sha256": "dac6e4c853423dc0be811f0ea034463813a2e0efdf264269a84fbcf83c880027"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2007-p14.png",
+      "sha256": "af06d655da58ba0dbe2da6a4f1faa3af9808a272a84f702112f705cb4f104dad"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2007-p15.png",
+      "sha256": "25717fd6ca7e033fa84fa58622ab09c1ddee6a7e10d38e29687bd196b0acaeb9"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2007-p16.png",
+      "sha256": "35ec30f445363236083807bb2e0e20a1348a93cea222576dde0dfbf8bac6e243"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2007-supplement.mpg",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2007.pdf",
+      "sha256": "4adde86fabe8e1aa0709b0454c884d5e5434616a923a94f1ade21dd7cd96e8be"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2007.txt",
+      "sha256": "1eaf41d5476f46d0d21ff4b4e89bf544b579ca3c74038b5f1f15cd3b8934a9a0"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2009-p01.png",
+      "sha256": "be24bb01d54232abf5871cdcc5dfd3a4d04b54692add8dfbc81a10a31ba0c7f8"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2009-p02.png",
+      "sha256": "312bf37ef9f636fe8eb4b132d20ddc151b5677446598a00786af5e8f892f7c52"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2009-p03.png",
+      "sha256": "34fc617382d47d8c39c4b4a90f6ad53819c86313f95780a9ce661ae62190a304"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2009-p04.png",
+      "sha256": "b470003c034dc464c56406b7fb0a927ebf8ac6642a5bb0e798069af0629623f5"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2009-p05.png",
+      "sha256": "21ee78be6d6b0db6392199d5b02951ab662c20766341f54e9d904db2fb8b14aa"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2009-p06.png",
+      "sha256": "023e1b3ccab3c55a6560852a5645d6895d4e4fbc0a78b4f927d58c37ba0b6670"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2009-p07.png",
+      "sha256": "00f3eaadedae16dd3f6c58ff9bd61a16029cb55dc5df58dd181cb2e8dcb2a9b2"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2009-p08.png",
+      "sha256": "accbdebaf979ba8e26086111a1daebd3762d8d4f674fe586dddc81fc13ac1a2e"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2009-p09.png",
+      "sha256": "718ae63963e95fe8908d295fe204034ccacadcc2c3ecfbfe378fe5c30479f54f"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2009-p10.png",
+      "sha256": "5100f694b428d5db13b1a18a11f265f2fde9f91766987bd863d718650b2ac404"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2009-p11.png",
+      "sha256": "21711beaa6023f5f0e1cc0aba1dfa35a1d702b50deef6ae8b0fc693f1378cfc7"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2009-p12.png",
+      "sha256": "f744ab699c4570ffce7e2b184126fa790622dbc718cbe630e32edd47865a6d4f"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2009-p13.png",
+      "sha256": "fe7059ab7ed6ad62899d4a2360c09c918c5b0a483c368e3a6ac34ec9409fc564"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2009-p14.png",
+      "sha256": "937739376adece434912b37be395b1018dfce13e929e238dddd653fa6889f2ea"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2009-p15.png",
+      "sha256": "bdc3c24ad364c5bade31891c75ddb296f986b0a14d023f8fe204fef3f7e02357"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2009.pdf",
+      "sha256": "92d52beae6ab9818bc868a775a0a86efdccb43831b599260a74e7f834ba9d01c"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/power2009.txt",
+      "sha256": "1a35f654ce90e8c04ab118c6689c8504ec05df27a820e646506c9f2367a6fea0"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/sanchez2011-crossref.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/sanchez2011-csic.html",
+      "sha256": "4d2ca462093ecd293074e8e9219c8feb057c86b9ed968fa02d49bc01745747ca"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/sanchez2011-openalex.json",
+      "sha256": "fb84202cae7d2a647ba17b814813486ffda23ef726ca88712846b064fe6b05e0"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/sanchez2011-ugr-retry.pdf",
+      "sha256": "9abf3abdd1f78e52677c712757146cbc5b79f3d8ea88518eb0d3eb263db217bb"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-magnesium-research/raw/sanchez2011.pdf",
+      "sha256": "9abf3abdd1f78e52677c712757146cbc5b79f3d8ea88518eb0d3eb263db217bb"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/acquire-authorities.py",
+      "sha256": "66894e77b96d8f23468bc85fdbf94d445173d613062448dda727261b600b1b97"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/acquire-more.py",
+      "sha256": "66d9b79da6b7f0f64f550a101ec1575c1a229491900f5e04b156e947244f9af2"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/acquire-unesp.py",
+      "sha256": "1bca4b3f3b779265f6dca41600e3f023754bcb8a8dc4d21796debb6767c96980"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/acquire.py",
+      "sha256": "2d0af02ec7df62674c3c8fbf16d73f966b2305432635c65faa0533f4b4c71a01"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/acquisition-authorities.json",
+      "sha256": "d5b57fe7dd42d850e088c28793b844eacfac541b322d10e74ced8312d29339c1"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/acquisition-initial.json",
+      "sha256": "798b8863ea7d8018c4a38623bf279379504bfda76e317b62906a956ab7ec6608"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/acquisition-more.json",
+      "sha256": "033865e8c89f95eb0e92e1f854e16bce404ed9ca7c1ade6dd26713c1652a88fa"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/acquisition-sandbox-dns-failures.json",
+      "sha256": "58fae74abff9a4c1fac13ef08093c8e5f54094aec067dc826936c83f02a37aca"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/acquisition-unesp-api.json",
+      "sha256": "f08817cc0f64457d7ec44f6f513c20b8a90b2ee26da88c4448752576e2353a30"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/cameron-source-gap-issue.md",
+      "sha256": "05195ebfc68ed233cef02ea304f80bcd7d2637237c8262c735f8e0e6fd8eb2df"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/dedup-cited-raw-context.json",
+      "sha256": "ffcda08d86e05bd73e8ee6ee952725d724e8d541b9ae895283c0418adb5b93c2"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/dedup-cited-raw.txt",
+      "sha256": "da365a2b26f7783111ef5babe8b4f4fb319d10e7a3ec76584e0c224ad4b7fc78"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/dedup-final.txt",
+      "sha256": "3779cac5e84949d5a119cc9163b76c563459a17053eb05970e3cf94fbaae477d"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/dedup-initial.txt",
+      "sha256": "be437a33c394fea8f653aa28bdeacf8b22fb7b29ef1e18c7223996cf7fc08ed6"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/dedup-repository.txt",
+      "sha256": "35d3b3553f94b9d0f7aacd6582cb723267b3c91f3e08c47ef70419300fe1e2da"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/dedup.json",
+      "sha256": "4850cafcc96e1212c7c26145d7b1dcfca24c1d2acbe3a4ba8e36cc5cf641a3b7"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/dedup.py",
+      "sha256": "c356a08850ba4e6135097ad9dc23c25e04411f6c70112ab031d58034493fb51c"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/issue-dedup.json",
+      "sha256": "ac48d8a09070c3b0a0f501de1ed15b45d5da5c78180c49e2748ad4f2b71d8bce"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/named-validation.json",
+      "sha256": "faf792193b0637d3a60f843016d7e2913f9d712f0e016af690aac04082c6e3b1"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/raw/cameron2021-elsevier.xml",
+      "sha256": "8ecc59bdfa251abbf84809f34a988dd28bd3008b3ddc926259fec1f4e4df2514"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/raw/cameron2021-openalex.json",
+      "sha256": "69fc4e4fa6945a9f0a09f615b9aeb4005dc3c2e46cd9f6f9581f4595ba957e39"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/raw/cameron2021-semantic.json",
+      "sha256": "4cd1872cc93133e23f59b8b4a29d36f89c4d3233229444fe242ecf14cbed91b0"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/raw/com2017-toc.pdf",
+      "sha256": "08865a522173532d948be600778aeb20be8317def83460c16c28ef73a032c5e7"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/raw/crossref-cameron2021.json",
+      "sha256": "73a192bf1f4d4cb62b6e8b3796b1fc01876062f393852632d743c6efad117ecb"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/raw/crossref-munoz2009.json",
+      "sha256": "7a0a1a190460b7b66dd2510f706c189eb75995423be56f7affc4629d9bb8f6ed"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/raw/minefill2024.pdf",
+      "sha256": "9735687b63a92c680c76cd58df8a521cfd2b98a85777b672e747849009936862"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/raw/minefill2024.txt",
+      "sha256": "787fbfedcee18270512412f317ae99022bfafef10d67bdbd0cf126ecd1897516"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/raw/munoz2009-publisher.pdf",
+      "sha256": "64448939424a3a96ceb43e5aa9dc2a30cdbecbbd2fe01eb75099cb1be3dddf2b"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/raw/ncbi920.html",
+      "sha256": "c6d264e2f6ed730350be86773d9564c7427f7f089b57ed566d6494e3bd21a4ac"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/raw/unesp-bundles.json",
+      "sha256": "a629902d62002bc9053bf6f2d8d8b607ed00e07a31ef142d2fed0b1239f0b697"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/raw/unesp-config.json",
+      "sha256": "03e27a402697e6c5aa9aff290c2324f09cb817fdb58090efd01d34355a75cdd2"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/raw/unesp-munoz2009.html",
+      "sha256": "dabcb1e6334fa3be474053d219bdedcdf685cf089ef9865e12de09eb64238e18"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/raw/unesp-publication.json",
+      "sha256": "ee6f78573eb56f0c19e10ee399bd82c514b45e03fe5ff8acd857c4eeb790fd99"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/raw/unesp-thesis-item.json",
+      "sha256": "1de129b5843690a58814fcb8cadaaaa210c9b6ab0966304a005da2b79694f7d6"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/raw/unesp-thesis-original.pdf",
+      "sha256": "be9382b6681d42d7b951e23ad2bff012a4bac2a2c1d929a548461feffdeb1c79"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/raw/unesp-thesis-original.txt",
+      "sha256": "bd4e86bc1980a529f2130746fcb7c81f65e59bb60a2b0dd684563222c575158c"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/raw/unesp-thesis.pdf",
+      "sha256": "dabcb1e6334fa3be474053d219bdedcdf685cf089ef9865e12de09eb64238e18"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-001.png",
+      "sha256": "714873fa27a6bc4f2b0f543e515b78a62c508143876b5da366132ddbb90fe736"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-033.png",
+      "sha256": "5432bbc04b56d97093aac08745bbac43971631f5f19f84db4f016ebdddded8e0"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-036.png",
+      "sha256": "0cd1c74b556036619225292d67557f00a27608843c8ce9dbd4f8dff9e30f8c3b"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-037.png",
+      "sha256": "3129135455bfc75717545495eb84e6268c2dd28272df43febe20ad8ab340a7db"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-038.png",
+      "sha256": "c90323ee88a5b63e7db6cf88b52ee579586f697f1a1dc41883233babecd68b9b"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-039.png",
+      "sha256": "9293307854554834377473407a44ca5d0adbef271cfd1231a5fd8041a05c681e"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-050.png",
+      "sha256": "fee8815b79682936e2a2d8eba842bd41995afdd1890ccd3000790de2f9615213"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-051.png",
+      "sha256": "38291f757d5ceea560d01ef3b4c986e7c63a87119fa9aab7501cf7515704ce80"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-052.png",
+      "sha256": "0e8fb0fa317a17b586bf92bf4ca9fb365f2876a00044a8d0078214269b82203c"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-053.png",
+      "sha256": "090f33d74a69eee94118707d6bc844c3e3a7df821d9037a6d66394f212b32e7f"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-054.png",
+      "sha256": "4d45a3b3c9950f22d734d4aa5c0451b5e6d89a3c9931508139d3eaaea7ff45f6"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-055.png",
+      "sha256": "8276d624801e8058b891d449a21e84b48216da2bb0f98e02d046773dc2f669da"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-056.png",
+      "sha256": "981929bfe3ec7fb26e686f26d8ff1dd97ef1e29cfa4c7fbaea2776bdb93e9da7"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-061.png",
+      "sha256": "483589866aac8bbe149089f9efb8335827be96821966059207d691453880bc1c"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-062.png",
+      "sha256": "a821c0cfdf1e26ee833cb2a7aa9747cdc0502e3ff6c4a8b3ab6449d522815361"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-063.png",
+      "sha256": "d46dd5233b538066ae26cdaea33f5c5a33ec4a9a0685897b13c08b44805dfa49"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-064.png",
+      "sha256": "5945272a10c32e32b2d3ca577a902593ee928682faf9b6287d41891b87cb1836"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-065.png",
+      "sha256": "f25a97cf70feadb802a6a330c0f7f148a878b2aa07a4a556056d6e6d7c3bfa31"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-066.png",
+      "sha256": "253b1173fb0b20ae9b85f9e0f9c5d8b52c12117e55f3bda6e96a096ee70c19a4"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-067.png",
+      "sha256": "dc14cfddb922926de089c5010048305fddc4a4a7a4bb5c255b3edcddeeede66e"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-068.png",
+      "sha256": "51c0c6131b9111fecb886bfdbb584a77ab6341104dd7b87f6bc361cf67cded8f"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-069.png",
+      "sha256": "343c22f3ea713d56bc30214f58b50a2cc861891a41f6beb8fcd777c5ec59ae24"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-070.png",
+      "sha256": "75d9d7e0f27b85836f261fa5b653560bcc08aa8864852aec5c1981cb5b69f9da"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-071.png",
+      "sha256": "41ef626db139558702bde1281e4152188c839cbbdbb6f0188ce34f8290c0e8ef"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/rendered/munoz2010-072.png",
+      "sha256": "08dafff2ca68b13a4e9dd0130e5fee68a40d0599058576ea0eda86b39b877118"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/web-query-batch1.json",
+      "sha256": "82eab87b58f9b6daa1fd32cd19da2fc6b9a6ed5dc5dce1d24ce9d1d5d246fcf5"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/web-query-batch2.json",
+      "sha256": "4d16e8505a99036a3d4c9f9a074540fd0d05af58d9c57c3c00a07de1911f08c3"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/web-query-batch3.json",
+      "sha256": "0fbdd359c478277839e1178441e58ec88196cbd9e11c4fde66c431ade1ecd6d2"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/web-query-batch4.json",
+      "sha256": "a16479c61d8472c12998fd94866c1b370f373fde146df3536efab19670ceb4e5"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/web-query-batch5.json",
+      "sha256": "8271b359977c507a0dc15e31a523ae01f81e2c167046233cc1b614effc1fb794"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/web-query-batch6.json",
+      "sha256": "2fa7447e4f2f55042daece088af27b2816e60b716e1b1dcd68ba7ee91c0c2dab"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-nickel-resources-research/web-query-batch7.json",
+      "sha256": "54243ebd69608d7112fe2de85052bcd191544039b88a2ebeeed4191f2fdcf595"
+    }
+  ],
+  "errors": [],
+  "scope": "Current retained file inventories only; historical acquisition attempts may refer to subsequently replaced zero-byte targets and are not misreported as current hashes."
+}

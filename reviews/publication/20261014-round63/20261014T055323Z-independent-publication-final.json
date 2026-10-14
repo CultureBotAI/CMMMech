@@ -1,0 +1,423 @@
+{
+  "recorded_at": "2026-10-14T05:53:23.859950+00:00",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "reviewer": {
+    "identity": "codex /root/round63_publication_audit",
+    "model": "GPT-6",
+    "independence": "Authored no scientific or maintained publication content; authored preliminary finding and this successor audit only.",
+    "helper_peer": "/root/round63_publication_audit/helper_safety"
+  },
+  "base": "1e3d834112099855c0398459415d0022336055f5",
+  "branch": "curate/cmm-expansion-round63-20261014",
+  "state": "working_tree",
+  "scope": "Independent local publication package audit, not a full repeated primary-science review or hosted acceptance",
+  "counts": {
+    "record_count": 288,
+    "history_count": 337,
+    "structured_review_count": 348,
+    "review_base_count": 64,
+    "covered_records": 288
+  },
+  "source_artifact_references_checked": 201,
+  "findings": [
+    {
+      "finding_id": "queue-base-guard",
+      "issue_key": "CultureBotAI/CMMMech:round63-queue-admission-base-guard",
+      "severity": "major",
+      "priority": "P2",
+      "status": "resolved",
+      "target": "/private/tmp/cmm-round63-enqueue.py",
+      "reviewed_sha256": "2371cec932c85cf48a51d72ddd3b0530efc5edb1d9e8d88b95b087ead34c1dbf",
+      "description": "The queue helper checks the topic head and stored preflight head/tree but does not verify preflight mode/trusted_base or fresh remote main against the reviewed base immediately before admission. A main advance after preflight can be admitted; later cleanup and hosted audit detect parent/tree mismatch only after merge.",
+      "correction": "Require mode=preflight, trusted_base equal commit receipt base, matching successful commands/log and a fresh read-only remote main/base equality observation immediately before enqueue; retain that observation in the queue receipt. A subsequent concurrent update remains a native queue race.",
+      "acceptance": "Inspect revised guard, compile helper, exercise the guard in an isolated mocked command harness with matching and changed base and mismatched preflight identity; no live enqueue required for this regression.",
+      "disposition_reason": "Actual guard functions now check full preflight identity/evidence and live main immediately before admission; maintained profile updated; all 14 isolated regression cases passed and both independent reviewers verified source/receipt hashes.",
+      "previous_observation": "reviews/publication/20261014-round63/20261014T054836Z-publication-queue-finding.json",
+      "previous_observation_sha256": "3b0b55dfd8f5a056591a33c186c0401db0971ec5b3566450b8c96b0bcfae083c",
+      "corrected_helper_sha256": "2ce883a40254d1e8738f8f4ab439d3ebaec0f195db6d557988c76437af323cbe",
+      "evidence": "reviews/publication/20261014-round63/queue-guard-regression.json",
+      "github_issue": 200,
+      "github_state_at_live_read": "OPEN",
+      "github_closure": "Not claimed; Fixes #200 requests closure on the future PR merge."
+    }
+  ],
+  "unresolved_corrective_findings": 0,
+  "corrected_review_issues": [
+    200
+  ],
+  "unresolved_source_issues": [
+    197,
+    198,
+    199
+  ],
+  "report": {
+    "path": "reviews/publication/20261014-round63/20261014T055323Z-independent-publication-final.md",
+    "sha256": "5a59304fe6d7632f628e1e9401bc6c5860948ceec2b0f84dec3513df99863a48"
+  },
+  "working_inputs": [
+    {
+      "path": "README.md",
+      "sha256": "858aba451db63b16f12739af9b068c42288fe0bcfed6065950799ac119e7d2da"
+    },
+    {
+      "path": "data/records/dypingite.yaml",
+      "sha256": "dda0701dc49edb424e05e386bc8bfcd7859e9999b1c376949272c9e6979907c3"
+    },
+    {
+      "path": "data/records/nickel-flotation-tailings.yaml",
+      "sha256": "e212b12420f201e57c320ec9259d35a59c82d9738892b49f87e7ce3abe1a5b97"
+    },
+    {
+      "path": "data/records/nickel-smelter-slag.yaml",
+      "sha256": "7dd113070944069fc2c4c8ab1096407587759570dc0a16c99f4bd53dc7947f71"
+    },
+    {
+      "path": "data/records/scorodite.yaml",
+      "sha256": "a27c51ef3546c8e8454900ec654e76b8b4f338a4f84680c41d3c9125edad8245"
+    },
+    {
+      "path": "docs/record-review-profile.md",
+      "sha256": "01c6f39d0d097876a0446131270df58bb32fa15804c66487419c171719d3ddc0"
+    },
+    {
+      "path": "history/records/dypingite/2026-10-14T053128Z-codex-2f510c.yaml",
+      "sha256": "e3f20a1ce49d303c65f90884e15179e1f4d1eeef621d3b202c39c0eba53f7523"
+    },
+    {
+      "path": "history/records/nickel-flotation-tailings/2026-10-14T053546Z-codex-b3a525.yaml",
+      "sha256": "17091c2d2aeedc5309849ae12502a5f3981251f042f12648f7791ce425a2cfe5"
+    },
+    {
+      "path": "history/records/nickel-smelter-slag/2026-10-14T053537Z-codex-23c8e8.yaml",
+      "sha256": "f6196815c66ec71213557cfa673c1f1b30fbaa3efac3d6a43f1760897bc743b2"
+    },
+    {
+      "path": "history/records/scorodite/2026-10-14T053328Z-codex-cfd8a6.yaml",
+      "sha256": "d611ae52026e77c944a3f1a283aa0ff8615e4a8542d0f90dbe4916b4ca23ab7b"
+    },
+    {
+      "path": "pages/browse.html",
+      "sha256": "818f70ae71c9c902acbd79e15dbeda80254dc77109b50184f74a3ed174f2203a"
+    },
+    {
+      "path": "pages/index.html",
+      "sha256": "4bfca4cfa7d2d547b6f0cb83cc30de94ea72495d821207c644248d185ae9e3e0"
+    },
+    {
+      "path": "pages/index.json",
+      "sha256": "f4c2e4f41e832aef08b1951d9fe64d35d67b85e260ee2beece89087ab41d8a8a"
+    },
+    {
+      "path": "pages/kinds/commodity.html",
+      "sha256": "9e477af036a253845b2a71c56a3d23cf36194ca67061dc2e7d43edf2a3bb7c23"
+    },
+    {
+      "path": "pages/kinds/element.html",
+      "sha256": "c291ccbb30b5be296cdea0328f4e849bbd6f2db70936e5293639f39758f801aa"
+    },
+    {
+      "path": "pages/kinds/mineral.html",
+      "sha256": "e30b5189e745fd5b64d1dc5fd9cf568715e3c965407514e6a64752127d9608d5"
+    },
+    {
+      "path": "pages/kinds/mineral_group.html",
+      "sha256": "06a4c412fcc6e41081d66c40584a84d8dc3492ed5eb4b28de4f797ba97c7a1b3"
+    },
+    {
+      "path": "pages/kinds/primary_resource.html",
+      "sha256": "fd662f47ae764f791256b735bfb6b88d4b9fe65e8d05ca2be7ee21cd67f914b4"
+    },
+    {
+      "path": "pages/kinds/secondary_resource.html",
+      "sha256": "cf02cac1a5f021ea5559ecc5b2f3d31da3b978e8bd023d98efc8237be49bc863"
+    },
+    {
+      "path": "pages/materials/dypingite.html",
+      "sha256": "4f2c9b0b766da41ab924d67ded66493d8ad5da1ef6441596c548f181f64ee1d0"
+    },
+    {
+      "path": "pages/materials/nickel-flotation-tailings.html",
+      "sha256": "bcfbd9d52dce7f0d3bacd1f334733f8de4dc7c56bc569a32771a2bd7dab2830c"
+    },
+    {
+      "path": "pages/materials/nickel-smelter-slag.html",
+      "sha256": "0b56cbeb636252fb6c46912cafee3685b110870b47d03aa77fda54e4d9e9a64f"
+    },
+    {
+      "path": "pages/materials/scorodite.html",
+      "sha256": "0ce3987978a8a12bee67b468e20901ee2bcbe986670a7305d25d7640affe55cf"
+    },
+    {
+      "path": "pages/processes/bioleaching.html",
+      "sha256": "f81014a9e4f2c7b72cc427092429778e0d80ec36afb147ca06d0fd5942cdd2d0"
+    },
+    {
+      "path": "pages/processes/biomineralization.html",
+      "sha256": "c1a5a4d7ca2940cdbc9ede8abb6a65b9673e73dee1a5af5292db4ae3e5c6e4d8"
+    },
+    {
+      "path": "pages/processes/biosorption.html",
+      "sha256": "d62916d28aae70742b5678ddea2a66a7da830efcc9ac395f3d6616766d7aafa6"
+    },
+    {
+      "path": "pages/processes/other.html",
+      "sha256": "d753669f4a54c3ca9cc3cecebabc2a53de337278fe0ca4a483be0a9a610fe0fc"
+    },
+    {
+      "path": "pages/processes/recovery.html",
+      "sha256": "9c9ccbbfe79d80c59bfc783f17bd47ea9c0818d7d1c34621d8899b31382fa2b6"
+    },
+    {
+      "path": "pages/processes/redox_transformation.html",
+      "sha256": "d95deb981e412ec6917ad60664c6e6b8c1ca10802da3a09a3086d92430001eff"
+    },
+    {
+      "path": "pages/processes/separation.html",
+      "sha256": "ffd063fc70c60ac04c06a873b448b7212ef438ec926ab17aeedb5e302ca994c3"
+    },
+    {
+      "path": "research/ingests/round63-frontier-20261014.json",
+      "sha256": "538b410f96c6bdc55895244e61a815e2fd34989807aae32d9a308b937f63ec0c"
+    },
+    {
+      "path": "research/ingests/round63-frontier-20261014.md",
+      "sha256": "096d2e1f39b2a14e05767b141ea7bce6be8c04e7356f9ac430e34bf14d1cbfb2"
+    },
+    {
+      "path": "research/sources/round63-arsenates/20261014T053548Z-source-investigation.json",
+      "sha256": "941678fc8c1fe8d4dc9f9757c7e6cebcc49030675513ceddec5839b7ea555d14"
+    },
+    {
+      "path": "research/sources/round63-arsenates/20261014T053548Z-source-investigation.md",
+      "sha256": "e472bd362bb7c5b0c897d8ae3ea5de8f10e1d4abef53962d4c55fd70924cdede"
+    },
+    {
+      "path": "research/sources/round63-magnesium-carbonates/20261014T053338Z-source-investigation.json",
+      "sha256": "17b542456a9791ac91b013141d9e43ee39370cdd1b88bd3e90ff6f64d0368f3e"
+    },
+    {
+      "path": "research/sources/round63-magnesium-carbonates/20261014T053338Z-source-investigation.md",
+      "sha256": "02285456b7399ac62f07a238acde5e080e0a95400226b58051ae3d9f4bea991c"
+    },
+    {
+      "path": "research/sources/round63-nickel-resources/20261014T053805Z-source-investigation.json",
+      "sha256": "15e6d80afaa639459d5fa8eafd779cbfc9091e45cf16626ae98048215c26418c"
+    },
+    {
+      "path": "research/sources/round63-nickel-resources/20261014T053805Z-source-investigation.md",
+      "sha256": "cef6624fa6a5c07e790eced6ada23f296677caab340e441f4298a4f9ac5b6aa6"
+    },
+    {
+      "path": "reviews/publication/20261014-round63/20261014T054836Z-publication-queue-finding.json",
+      "sha256": "3b0b55dfd8f5a056591a33c186c0401db0971ec5b3566450b8c96b0bcfae083c"
+    },
+    {
+      "path": "reviews/publication/20261014-round63/20261014T054836Z-publication-queue-finding.md",
+      "sha256": "2c7b76e5905711503cc8afc20620ccac414082813a2d2b3550d87c96bb03a29a"
+    },
+    {
+      "path": "reviews/publication/20261014-round63/20261014T055323Z-publication-peer-coverage.json",
+      "sha256": "a238cf21060d5a789f565f395a8877e941f02cd8f7c00090ea7cc5489e279e52"
+    },
+    {
+      "path": "reviews/publication/20261014-round63/20261014T055323Z-publication-peer-issues.json",
+      "sha256": "e33e3a5bb2972a0f97d53c0f13a0e3c1c1946698a791560f41d3f0b02e3c81e5"
+    },
+    {
+      "path": "reviews/publication/20261014-round63/20261014T055323Z-publication-peer-preservation.json",
+      "sha256": "65756c7136bcedc89e02b6050884e2f1bf96c77a55bb4197bc758c18ca001a7c"
+    },
+    {
+      "path": "reviews/publication/20261014-round63/20261014T055323Z-publication-peer-render.json",
+      "sha256": "5c153a232a9ff748542c31f2a62482f380eecc6076e7d3ccbd738f5adab6102d"
+    },
+    {
+      "path": "reviews/publication/20261014-round63/20261014T055323Z-publication-peer-source-hashes.json",
+      "sha256": "315085937b0cbf29c45d705537ff4ba9e924564a76e26334b852d78102865044"
+    },
+    {
+      "path": "reviews/publication/20261014-round63/baseline.json",
+      "sha256": "62585953c2b34f831b4c99967d207a57516f2ae024587e447e4468429ec04bff"
+    },
+    {
+      "path": "reviews/publication/20261014-round63/final-gates.json",
+      "sha256": "f609ce00abe12705c5c76645c1f43d3fdb1461e9e4dc0ca0d963f591a215801d"
+    },
+    {
+      "path": "reviews/publication/20261014-round63/integration-status.json",
+      "sha256": "22f1d069dceaf3cbec465371b9b5cf75045cb8854f04241ea28391ff35459d70"
+    },
+    {
+      "path": "reviews/publication/20261014-round63/preservation-prepublication.json",
+      "sha256": "9a4166df151429c97076ae310111a6fb63d2627059556dd67a5a2e5bd84aa750"
+    },
+    {
+      "path": "reviews/publication/20261014-round63/queue-guard-regression.json",
+      "sha256": "9e37b372df472994d85727b0f7f1156020540ba5448224619c3b9509f0062ccd"
+    },
+    {
+      "path": "reviews/publication/20261014-round63/review-check.json",
+      "sha256": "0843122e5467c794b228f849c214a90a227ea1d36d3d26658654e592450c31ca"
+    },
+    {
+      "path": "reviews/structured/20261014T054234Z-dypingite-round63-independent/review.md",
+      "sha256": "c5bedbe95d20f005ce6c40d13c567d2f74b5ed9e2d99361b0614501113fae262"
+    },
+    {
+      "path": "reviews/structured/20261014T054234Z-dypingite-round63-independent/review.yaml",
+      "sha256": "fc34f90bb8629b37018a627652b232bcddc1afa7c435bf415f02827a3d071fff"
+    },
+    {
+      "path": "reviews/structured/20261014T054310Z-scorodite-round63-independent/review.md",
+      "sha256": "ace4a69b6b09eb7d6196d5f1b578adafd452167ebe17b133331cbb26b11e6887"
+    },
+    {
+      "path": "reviews/structured/20261014T054310Z-scorodite-round63-independent/review.yaml",
+      "sha256": "023548761d62c824babd31830afca1bbee96f982678b0767fbf13cfe264add57"
+    },
+    {
+      "path": "reviews/structured/20261014T054545Z-nickel-flotation-tailings-round63-independent/review.md",
+      "sha256": "4f317f062462927aef4520945ffa007458d6e9a16bc80494bb3997b6acdaee32"
+    },
+    {
+      "path": "reviews/structured/20261014T054545Z-nickel-flotation-tailings-round63-independent/review.yaml",
+      "sha256": "67e4a6ffbd81b587a4f695b3be046981a4b09ed1378149e6d2da5e3c9c735377"
+    },
+    {
+      "path": "reviews/structured/20261014T054545Z-nickel-smelter-slag-round63-independent/review.md",
+      "sha256": "13a9dd5733da8faa8c0e2b68b045e45f0734ab7e0d6406caf06a566d73a8f051"
+    },
+    {
+      "path": "reviews/structured/20261014T054545Z-nickel-smelter-slag-round63-independent/review.yaml",
+      "sha256": "83723ee9d91efda463940887c7ba76cc2510d1b356669637e3824b1a94afe35d"
+    }
+  ],
+  "helper_inputs": [
+    {
+      "path": "/private/tmp/cmm-round63-commit.py",
+      "sha256": "11545955e9aa59266857dcfc2370440cb905e6e341c38874e5e49fc6111df385"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-open-pr.py",
+      "sha256": "69be8625e6365f24698722f206c564381f8fa3f0e4ed81c497fcf01b342f2ec5"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-post-review.py",
+      "sha256": "77a4795b8560270dfd6ce297c803fa9d9fc993218605a56a01c12ae2ecc9a2d9"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-enqueue.py",
+      "sha256": "2ce883a40254d1e8738f8f4ab439d3ebaec0f195db6d557988c76437af323cbe"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-cleanup.py",
+      "sha256": "6a45341b62a3eea3ef961127f825f6880681538648b045a9f8b3dd451bd146c5"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-isolated-verification.py",
+      "sha256": "bcfc48ac11a718c3502457bf1a66c24bacab663e844f3be8d82650220c153dc1"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-isolated-coverage.py",
+      "sha256": "a5b9f2880818776e2e03e2cd5e8b6a7319f93215162832ce6fc9d78101cdc85f"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-sync-main.py",
+      "sha256": "ef1a8bd614450c3849273d2e9ba03a283ccb8ef3be19b0e9ca204ab90ebabc64"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-hosted-audit.py",
+      "sha256": "d24f9d26a1e4d979960fc53e3555590745097e11f1c3971e139d2401355b1f34"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-build-report.py",
+      "sha256": "77ae74d5b738c6d1882b85a7d44e52080de2b2fb909e811b61556af9c91d18fc"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-queue-guard-test.py",
+      "sha256": "c907c1158a9ed4892800b1418a19127aac7ecba848ce6e686782bca14927b113"
+    }
+  ],
+  "receipts": [
+    {
+      "path": "/private/tmp/cmm-round63-baseline.json",
+      "sha256": "62585953c2b34f831b4c99967d207a57516f2ae024587e447e4468429ec04bff"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-final-gates.json",
+      "sha256": "f609ce00abe12705c5c76645c1f43d3fdb1461e9e4dc0ca0d963f591a215801d"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-review-check.json",
+      "sha256": "0843122e5467c794b228f849c214a90a227ea1d36d3d26658654e592450c31ca"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-local-coverage.json",
+      "sha256": "a1c92f068309959628ea5cd8c974d87a519c991aeadb8500643584f5bb72a8ea"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-preservation-prepublication.json",
+      "sha256": "9a4166df151429c97076ae310111a6fb63d2627059556dd67a5a2e5bd84aa750"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-publication-peer-preservation.json",
+      "sha256": "65756c7136bcedc89e02b6050884e2f1bf96c77a55bb4197bc758c18ca001a7c"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-publication-peer-coverage.json",
+      "sha256": "a238cf21060d5a789f565f395a8877e941f02cd8f7c00090ea7cc5489e279e52"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-publication-peer-render.json",
+      "sha256": "5c153a232a9ff748542c31f2a62482f380eecc6076e7d3ccbd738f5adab6102d"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-publication-peer-source-hashes.json",
+      "sha256": "315085937b0cbf29c45d705537ff4ba9e924564a76e26334b852d78102865044"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-publication-peer-issues.json",
+      "sha256": "e33e3a5bb2972a0f97d53c0f13a0e3c1c1946698a791560f41d3f0b02e3c81e5"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-integration-status.json",
+      "sha256": "22f1d069dceaf3cbec465371b9b5cf75045cb8854f04241ea28391ff35459d70"
+    }
+  ],
+  "committed_peer_proofs": [
+    {
+      "path": "reviews/publication/20261014-round63/20261014T055323Z-publication-peer-preservation.json",
+      "sha256": "65756c7136bcedc89e02b6050884e2f1bf96c77a55bb4197bc758c18ca001a7c"
+    },
+    {
+      "path": "reviews/publication/20261014-round63/20261014T055323Z-publication-peer-coverage.json",
+      "sha256": "a238cf21060d5a789f565f395a8877e941f02cd8f7c00090ea7cc5489e279e52"
+    },
+    {
+      "path": "reviews/publication/20261014-round63/20261014T055323Z-publication-peer-render.json",
+      "sha256": "5c153a232a9ff748542c31f2a62482f380eecc6076e7d3ccbd738f5adab6102d"
+    },
+    {
+      "path": "reviews/publication/20261014-round63/20261014T055323Z-publication-peer-source-hashes.json",
+      "sha256": "315085937b0cbf29c45d705537ff4ba9e924564a76e26334b852d78102865044"
+    },
+    {
+      "path": "reviews/publication/20261014-round63/20261014T055323Z-publication-peer-issues.json",
+      "sha256": "e33e3a5bb2972a0f97d53c0f13a0e3c1c1946698a791560f41d3f0b02e3c81e5"
+    }
+  ],
+  "pr_body": {
+    "path": "/private/tmp/cmm-round63-pr-body.md",
+    "sha256": "4b9bd90cc32203e96170f057a3b2b39d0171db9e46904d800d6bd9572c1c3ec6"
+  },
+  "pending_publication_gates": [
+    "commit and push",
+    "exact-head hosted peer assurance",
+    "isolated squash preflight",
+    "COMMENT review and native queue",
+    "actual merge and owned-branch deletion",
+    "fresh remote main and five hosted workflows",
+    "guarded original-main fast-forward"
+  ]
+}

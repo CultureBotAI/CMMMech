@@ -58,6 +58,14 @@ Before queue admission:
 4. Verify an isolated squash-shaped checkout without the topic branch. Fetch
    tags explicitly and require saved review validation to pass. After the actual
    merge and branch deletion, repeat in a fresh checkout of remote `main`.
+5. Before enqueueing, verify that the successful preflight receipt identifies
+   preflight mode and the exact reviewed base, topic commit and tree. Check its
+   required command outcomes and retained log hash. Immediately before the
+   queue request, read live `main` and require it to equal the reviewed base;
+   retain that observation in the queue receipt. If it moved, stop admission
+   and refresh the review scope and preflight. This read is not atomic base
+   locking: retain the native queue checks and verify the actual merged tree
+   and parent, followed by fresh remote-main provenance checks.
 
 Consumers must fetch the retained references before checking provenance:
 

@@ -1,0 +1,28 @@
+{
+  "recorded_at": "2026-10-14T05:48:36.639903+00:00",
+  "reviewer": "codex /root/round63_publication_audit",
+  "helper_peer": "/root/round63_publication_audit/helper_safety",
+  "base": "1e3d834112099855c0398459415d0022336055f5",
+  "state": "working_tree",
+  "verdict": "needs_curation",
+  "passed": false,
+  "scope": "Preliminary local publication-helper inspection only",
+  "findings": [
+    {
+      "finding_id": "queue-base-guard",
+      "issue_key": "CultureBotAI/CMMMech:round63-queue-admission-base-guard",
+      "severity": "major",
+      "priority": "P2",
+      "status": "open",
+      "target": "/private/tmp/cmm-round63-enqueue.py",
+      "reviewed_sha256": "2371cec932c85cf48a51d72ddd3b0530efc5edb1d9e8d88b95b087ead34c1dbf",
+      "description": "The queue helper checks the topic head and stored preflight head/tree but does not verify preflight mode/trusted_base or fresh remote main against the reviewed base immediately before admission. A main advance after preflight can be admitted; later cleanup and hosted audit detect parent/tree mismatch only after merge.",
+      "correction": "Require mode=preflight, trusted_base equal commit receipt base, matching successful commands/log and a fresh read-only remote main/base equality observation immediately before enqueue; retain that observation in the queue receipt. A subsequent concurrent update remains a native queue race.",
+      "acceptance": "Inspect revised guard, compile helper, exercise the guard in an isolated mocked command harness with matching and changed base and mismatched preflight identity; no live enqueue required for this regression."
+    }
+  ],
+  "report": {
+    "path": "reviews/publication/20261014-round63/20261014T054836Z-publication-queue-finding.md",
+    "sha256": "2c7b76e5905711503cc8afc20620ccac414082813a2d2b3550d87c96bb03a29a"
+  }
+}

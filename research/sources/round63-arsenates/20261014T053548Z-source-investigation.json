@@ -1,0 +1,658 @@
+{
+  "schema": "cmmmech-source-investigation-v1",
+  "timestamp_utc": "2026-10-14T05:35:48.880327+00:00",
+  "researcher": {
+    "name": "codex",
+    "model": "GPT-6",
+    "agent_tool": "codex",
+    "agent": "/root/publication_completion_check"
+  },
+  "base_revision": "1e3d834112099855c0398459415d0022336055f5",
+  "branch": "curate/cmm-expansion-round63-20261014",
+  "worktree": "/private/tmp/CMMMech-expansion-round63-20261014",
+  "scope": "One new scorodite mineral owner using complete Tanaka and Okibe 2018 primary evidence; no criticality inheritance. Concurrent dypingite/nickel work excluded from investigator ownership.",
+  "report": {
+    "path": "/private/tmp/CMMMech-expansion-round63-20261014/research/sources/round63-arsenates/20261014T053548Z-source-investigation.md",
+    "bytes": 15348,
+    "sha256": "e472bd362bb7c5b0c897d8ae3ea5de8f10e1d4abef53962d4c55fd70924cdede"
+  },
+  "curated_files": [
+    {
+      "path": "/private/tmp/CMMMech-expansion-round63-20261014/data/records/scorodite.yaml",
+      "bytes": 8600,
+      "sha256": "a27c51ef3546c8e8454900ec654e76b8b4f338a4f84680c41d3c9125edad8245"
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round63-20261014/history/records/scorodite/2026-10-14T053328Z-codex-cfd8a6.yaml",
+      "bytes": 811,
+      "sha256": "d611ae52026e77c944a3f1a283aa0ff8615e4a8542d0f90dbe4916b4ca23ab7b"
+    }
+  ],
+  "validation": {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "cmmmech",
+      "validate",
+      "data/records/scorodite.yaml",
+      "--require-records"
+    ],
+    "cwd": "/private/tmp/CMMMech-expansion-round63-20261014",
+    "started_at": "2026-10-14T05:33:55.696472+00:00",
+    "finished_at": "2026-10-14T05:34:05.212216+00:00",
+    "exit_code": 0,
+    "stdout": "Checked 1 record(s); 0 failed.\n",
+    "stderr": ""
+  },
+  "baseline": {
+    "path": "/private/tmp/cmm-round63-baseline.json",
+    "bytes": 904,
+    "sha256": "62585953c2b34f831b4c99967d207a57516f2ae024587e447e4468429ec04bff"
+  },
+  "acquisitions": [
+    {
+      "name": "tanaka2018-kyushu.pdf",
+      "url": "https://catalog.lib.kyushu-u.ac.jp/opac_download_md/4737404/4737404.pdf",
+      "started_at": "2026-10-14T05:25:53.834359+00:00",
+      "status": 200,
+      "final_url": "https://catalog.lib.kyushu-u.ac.jp/opac_download_md/4737404/4737404.pdf",
+      "content_type": "application/pdf",
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu.pdf",
+      "bytes": 3828655,
+      "sha256": "5ebd3f94649abeabda2126f87c5400df1dac4a5b6b40873fd5e3e0a09d6bf0c6",
+      "signature": "%PDF-1.5\n%����\n1 0 obj\n<< /Metadata 4 0 R /Names 6 0 R /OpenAction 41 0 R /Outli",
+      "finished_at": "2026-10-14T05:25:59.793477+00:00"
+    },
+    {
+      "name": "tanaka2018-kyushu.html",
+      "url": "https://catalog.lib.kyushu-u.ac.jp/opac_detail_md/?lang=1&amode=MD100000&bibid=4737404",
+      "started_at": "2026-10-14T05:25:53.835508+00:00",
+      "status": 200,
+      "final_url": "https://catalog.lib.kyushu-u.ac.jp/opac_detail_md/?lang=1&amode=MD100000&bibid=4737404",
+      "content_type": "text/html; charset=utf-8",
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu.html",
+      "bytes": 80812,
+      "sha256": "fae38920d50c84c3f00d6f9b9b6ed73c7aa54a2cd95cca19998678fd0f7001ef",
+      "signature": "\n\n\n\n\n\t\n\n\n<!DOCTYPE html>\n<html lang=\"ja\">\n<head>\n\n\t<!-- meta -->\n\t<meta charset=",
+      "finished_at": "2026-10-14T05:25:55.564304+00:00"
+    },
+    {
+      "name": "tanaka2018-crossref.json",
+      "url": "https://api.crossref.org/works/10.3390/min8010023",
+      "started_at": "2026-10-14T05:25:53.835854+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.3390/min8010023",
+      "content_type": "application/json",
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-crossref.json",
+      "bytes": 14514,
+      "sha256": "a43cad478bb29df58d2d501843e8faa4557a3af3299caec86019520c124617fe",
+      "signature": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"index",
+      "finished_at": "2026-10-14T05:25:54.253237+00:00"
+    },
+    {
+      "name": "tanaka2018-mdpi.html",
+      "url": "https://www.mdpi.com/2075-163X/8/1/23",
+      "started_at": "2026-10-14T05:25:53.836138+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden",
+      "final_url": "https://www.mdpi.com/2075-163X/8/1/23",
+      "content_type": "text/html",
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-mdpi.html",
+      "bytes": 398,
+      "sha256": "3af0109623bd8b6371b9701a97fbb4559fbef657828deced26d565d06fd82a0b",
+      "signature": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n ",
+      "finished_at": "2026-10-14T05:25:53.966340+00:00"
+    },
+    {
+      "name": "tanaka2020-jstage.html",
+      "url": "https://www.jstage.jst.go.jp/article/matertrans/61/2/61_M-M2019858/_article/-char/en",
+      "started_at": "2026-10-14T05:25:53.836426+00:00",
+      "status": 200,
+      "final_url": "https://www.jstage.jst.go.jp/article/matertrans/61/2/61_M-M2019858/_article/-char/en",
+      "content_type": "text/html;charset=utf-8",
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage.html",
+      "bytes": 78557,
+      "sha256": "f93e9051ebffc8234a5a722b9bd436dc07a78296229c33bbe75c52e7dc7704d8",
+      "signature": "<!DOCTYPE html>\r\n<html lang=\"en\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\">",
+      "finished_at": "2026-10-14T05:25:55.303824+00:00"
+    },
+    {
+      "name": "tanaka2020-jstage.pdf",
+      "url": "https://www.jstage.jst.go.jp/article/matertrans/61/2/61_M-M2019858/_pdf",
+      "started_at": "2026-10-14T05:25:53.966385+00:00",
+      "status": 200,
+      "final_url": "https://www.jstage.jst.go.jp/article/matertrans/61/2/61_M-M2019858/_pdf",
+      "content_type": "application/pdf;charset=UTF-8",
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage.pdf",
+      "bytes": 2255073,
+      "sha256": "a60841e4e543da557b49a5943e208111020419187ce65fc0ead994cb00e23668",
+      "signature": "%PDF-1.4\r%����\r\n136 0 obj\r<</Linearized 1/L 2255073/O 138/E 55704/N 9/T 2252232/",
+      "finished_at": "2026-10-14T05:26:03.405384+00:00"
+    },
+    {
+      "name": "ima-home.html",
+      "url": "https://cnmnc.units.it/index.php",
+      "started_at": "2026-10-14T05:25:54.253296+00:00",
+      "status": 200,
+      "final_url": "https://cnmnc.units.it/index.php",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/ima-home.html",
+      "bytes": 26639,
+      "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9",
+      "signature": "<!DOCTYPE html><!-- HTML5 -->\r\n<html prefix=\"og: http://ogp.me/ns#\" lang=\"en-GB\"",
+      "finished_at": "2026-10-14T05:25:55.014819+00:00"
+    },
+    {
+      "name": "ima-september2026.pdf",
+      "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "started_at": "2026-10-14T05:25:55.014869+00:00",
+      "status": 200,
+      "final_url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "content_type": "application/pdf",
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/ima-september2026.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "signature": "%PDF-1.7\r%����\r\n854 0 obj\r<</Linearized 1/L 3129886/O 856/E 271120/N 244/T 31127",
+      "finished_at": "2026-10-14T05:25:58.022336+00:00"
+    },
+    {
+      "name": "scorodite-handbook.pdf",
+      "url": "https://handbookofmineralogy.org/pdfs/scorodite.pdf",
+      "started_at": "2026-10-14T05:25:55.303879+00:00",
+      "status": 200,
+      "final_url": "https://handbookofmineralogy.org/pdfs/scorodite.pdf",
+      "content_type": "application/pdf",
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/scorodite-handbook.pdf",
+      "bytes": 52783,
+      "sha256": "16ae6cf1e379960b2beecae16080022512785be5739a6263a4fc5cb28c5953fc",
+      "signature": "%PDF-1.6\r%����\r\n7 0 obj\r<</Linearized 1/L 52783/O 9/E 48425/N 1/T 52498/H [ 528 ",
+      "finished_at": "2026-10-14T05:25:55.459500+00:00"
+    },
+    {
+      "name": "ncbi-brierleyi.json",
+      "url": "https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/41673/dataset_report",
+      "started_at": "2026-10-14T05:28:24.596390+00:00",
+      "status": 200,
+      "final_url": "https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/41673/dataset_report",
+      "content_type": "application/json",
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/ncbi-brierleyi.json",
+      "bytes": 1108,
+      "sha256": "843e15839d47bb28efac15445b5492d03a9d206320247b22f0976fa4a59630d8",
+      "signature": "{\"reports\":[{\"taxonomy\":{\"tax_id\":41673,\"rank\":\"SPECIES\",\"cu",
+      "finished_at": "2026-10-14T05:28:25.253309+00:00"
+    },
+    {
+      "name": "dsm1651.html",
+      "url": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-1651",
+      "started_at": "2026-10-14T05:28:24.597303+00:00",
+      "status": 200,
+      "final_url": "https://www.dsmz.de/collection/catalogue/details/culture/DSM-1651",
+      "content_type": "text/html; charset=utf-8",
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/dsm1651.html",
+      "bytes": 48697,
+      "sha256": "d12528da599bb39d5b7d4733ed1938db2a9befc57fa4c90b7a6e5a329253872b",
+      "signature": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n    <meta charset",
+      "finished_at": "2026-10-14T05:28:26.697908+00:00"
+    },
+    {
+      "name": "okibe2020-crossref.json",
+      "url": "https://api.crossref.org/works/10.2320/matertrans.M-M2019858",
+      "started_at": "2026-10-14T05:28:24.597935+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.2320/matertrans.M-M2019858",
+      "content_type": "application/json",
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/okibe2020-crossref.json",
+      "bytes": 7651,
+      "sha256": "178778538de9c7d5f05ef44d38e74df272458d3bba3ea2381011826f05d53eff",
+      "signature": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.",
+      "finished_at": "2026-10-14T05:28:25.026608+00:00"
+    }
+  ],
+  "dedup": {
+    "receipt": {
+      "path": "/private/tmp/cmm-round63-arsenates-research/dedup.json",
+      "bytes": 123687,
+      "sha256": "04413f433390bdbe3a4298bbd22c34c93a436fd5fe3cbcd724fa1de7b61cda2e"
+    },
+    "bounds": "Repository scientific/instruction trees and top-level /private/tmp/cmm* directory tokens explicitly cited by their text files; hidden and ignored entries included and symlinks followed. md/json/yaml/yml/txt files up to 8 MB. Non-directory tokens can denote missing paths or receipt files and are not all asserted to be missing directories. Other home/temp/worktree roots, binary-only PDF contents and unrelated environments were not exhaustively searched.",
+    "repository_matches": 49,
+    "cited_raw_matches": 326,
+    "existing_cited_directory_roots": 379,
+    "non_directory_tokens": 1488,
+    "method": "rg --no-ignore --hidden --follow, selected text extensions, 8 MB maximum; no machine-wide absence claim",
+    "finding": "No pre-existing scorodite owner in selected scope; prior literature citations and qualified phase mentions exist"
+  },
+  "assessment": {
+    "tanaka2018": {
+      "doi": "10.3390/min8010023",
+      "authors": [
+        "Masahito Tanaka",
+        "Naoko Okibe"
+      ],
+      "publication_date": "2018-01-15",
+      "state": "complete original text and all original page graphics visually inspected",
+      "pdf_pages_inspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "article_pages": 16,
+      "cover_pages": 1,
+      "figures": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "tables": [
+        1,
+        2,
+        3
+      ],
+      "appendix_tables": [
+        "A1",
+        "A2"
+      ],
+      "separate_supplement": "None cited in complete PDF; blocked publisher landing prevents exhaustive availability determination",
+      "license": "CC BY 4.0, original final page",
+      "claim_boundaries": [
+        "unseeded culture XRD phase evidence",
+        "seeded solution-removal percentage is not isolated recovery or newly precipitated mineral mass",
+        "chemical seed control not matched",
+        "alternative amorphous and jarosite phases",
+        "nonideal hydration and associated organics",
+        "TCLP Table 2 +/-0.20 versus narrative +/-0.08 mg/L conflict",
+        "short laboratory tests, no permanent stability or industrial deployment"
+      ]
+    },
+    "ima": {
+      "edition": "September 2026",
+      "state": "fresh official PDF acquired, relevant original pages visually inspected",
+      "pages_inspected": [
+        1,
+        2,
+        195
+      ],
+      "rendered_not_inspected": [
+        219
+      ],
+      "formula": "Fe3+(AsO4)(H2O)2",
+      "status": "G",
+      "original_description_year": 1818,
+      "approval_number": null,
+      "license": "CC BY-SA 3.0"
+    },
+    "handbook": {
+      "state": "one original page visually inspected",
+      "license": "All rights reserved, Mineral Data Publishing"
+    },
+    "organism": {
+      "taxon": "NCBITaxon:41673",
+      "rank": "species",
+      "label": "Acidianus brierleyi",
+      "strain_reported": "DSM 1651T",
+      "strain_authority": "DSMZ DSM 1651 catalogue",
+      "bounds": "Catalogue association is not independent authentication of experimental stock"
+    },
+    "okibe2020": {
+      "doi": "10.2320/matertrans.M-M2019858",
+      "authors": [
+        "Naoko Okibe",
+        "Ryohei Nishi",
+        "Yuta Era",
+        "Takeharu Sugiyama"
+      ],
+      "state": "deferred; complete PDF acquired and all nine pages rendered, introductory and methods text partly inspected, no original image pages visually assessed",
+      "accepted_claims": false,
+      "raw_basename_alias": "tanaka2020-jstage is an early filename alias, not authorship",
+      "license": "not established"
+    },
+    "other_leads": [
+      {
+        "doi": "10.1021/es902063t",
+        "state": "abstract/metadata only; no complete original acquired"
+      },
+      {
+        "doi": "10.1021/es980541c",
+        "state": "abstract/metadata only; full original needed for reductive-mobilization mechanism"
+      },
+      {
+        "pii": "S0883292715300500",
+        "state": "discovery metadata only"
+      }
+    ]
+  },
+  "review_status": "Curator source assessment and named validation only; independent scientific review pending",
+  "raw_inventory": [
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/acquire.py",
+      "bytes": 2078,
+      "sha256": "ce4453cc87c9de70a84797d229d4040055208c73f208801450d668dd0986b268"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/acquisitions-identifiers.json",
+      "bytes": 1971,
+      "sha256": "3cec4e452110915a1909447bd692bea3b1caeb03fc841c53ed2479b995aef41a"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/acquisitions-initial.json",
+      "bytes": 6138,
+      "sha256": "ef31b7a5fe4e91ab478e2e0d75fa9ba7ad97ceed7caf5efc2879e9c97b4d62e9"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/curation-validation.json",
+      "bytes": 397,
+      "sha256": "f36b3161bc132c2688c6a546513dea301a427c0d691619a6ae5ad4df3352c2cd"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/dedup-cited-raw.txt",
+      "bytes": 10278272,
+      "sha256": "eefaeb5b7d4d6c11a925c5f9a7b979c6c9bdba7535d587a5055fc1bee161676c"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/dedup-primary-context.json",
+      "bytes": 4400,
+      "sha256": "6ff7c9acad332e04f9ad4bd59e140a2c39a6a7e3371f2f9b498dbc749c922cb9"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/dedup-repository.txt",
+      "bytes": 12027,
+      "sha256": "c9bc5c733dc393f3685b688f3b988a29c9b4aa1cf99d545f3bbbfa6ea7b44aa1"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/dedup.json",
+      "bytes": 123687,
+      "sha256": "04413f433390bdbe3a4298bbd22c34c93a436fd5fe3cbcd724fa1de7b61cda2e"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/dedup.py",
+      "bytes": 2439,
+      "sha256": "d9dde69f376ff79d6383845e34d9520e2159f569c28c2f7b20ea761e7e73e08c"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/dsm1651.html",
+      "bytes": 48697,
+      "sha256": "d12528da599bb39d5b7d4733ed1938db2a9befc57fa4c90b7a6e5a329253872b"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/ima-home.html",
+      "bytes": 26639,
+      "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/ima-september2026-page-001.png",
+      "bytes": 228854,
+      "sha256": "82dcc70cd6a634dbce05f17d72a63b31e44e89d4f240f1f439805b998ced7e43"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/ima-september2026-page-002.png",
+      "bytes": 78398,
+      "sha256": "26663900a1939a8ea198f539eb36458a346a4d661cffbf5ecc50b01fc631f6e4"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/ima-september2026-page-195.png",
+      "bytes": 256945,
+      "sha256": "8124efa803ed3c19c2fe91c38929443aa0070af82a4233901ec6cace03d7fbe6"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/ima-september2026-page-219.png",
+      "bytes": 245577,
+      "sha256": "f05ba38a080ec1e327ab2a7cb6ce26943a004c0f44bd9901a7681bd12b362d17"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/ima-september2026.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/ima-september2026.txt",
+      "bytes": 811235,
+      "sha256": "fc3b92c871b1dd13656e0ee2bb89df4d549dfcf634c53f287aab07498b0d63d1"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/ncbi-brierleyi.json",
+      "bytes": 1108,
+      "sha256": "843e15839d47bb28efac15445b5492d03a9d206320247b22f0976fa4a59630d8"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/okibe2020-crossref.json",
+      "bytes": 7651,
+      "sha256": "178778538de9c7d5f05ef44d38e74df272458d3bba3ea2381011826f05d53eff"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/scorodite-handbook-page-001.png",
+      "bytes": 231142,
+      "sha256": "6d529259163818e58b6ac44ed445e06bf9938610cf720411941b74857cd193fa"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/scorodite-handbook.pdf",
+      "bytes": 52783,
+      "sha256": "16ae6cf1e379960b2beecae16080022512785be5739a6263a4fc5cb28c5953fc"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/scorodite-handbook.txt",
+      "bytes": 3663,
+      "sha256": "0b963ff1dd1636d000dc5e4e066add752c8cdd8d42c220feb434aede793d2eef"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-crossref.json",
+      "bytes": 14514,
+      "sha256": "a43cad478bb29df58d2d501843e8faa4557a3af3299caec86019520c124617fe"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-001.png",
+      "bytes": 73634,
+      "sha256": "6e2f7ad438eda0241e5bfe4f325a882bcd4426cd9bd34f6ba7a139b26783d13f"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-002.png",
+      "bytes": 257481,
+      "sha256": "e2bb7d4271ad40be98f2be959666b10d4542c0297dff1bd4e52f51ceef9802ea"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-003.png",
+      "bytes": 276394,
+      "sha256": "9d8edca3d5d646b6374172bd871eb99d94fd56ea3e21865727689bab3de57c4c"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-004.png",
+      "bytes": 227528,
+      "sha256": "30936df9c535ae49a937a08a36db6747979a8c3edb3cb77999277ea4e1ce062a"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-005.png",
+      "bytes": 196677,
+      "sha256": "a7c5032ecf3fa793ed1116da62440a2e8a0f78fac609208e5d2d6345771d9e4c"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-006.png",
+      "bytes": 129249,
+      "sha256": "04deb20070be6e1bb9e63cf571cdd844faa52dc4d9e5e2b172bc03969127221b"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-007.png",
+      "bytes": 475859,
+      "sha256": "c45fbba8d219c2cbb4078558ec4673e99d35747ce2d4ddbdae57543c3559e667"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-008.png",
+      "bytes": 188856,
+      "sha256": "7d293b4012a61525b4077801396e3ba5551ff5d506b6dd2e1a4c1b1e5ce3d3c4"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-009.png",
+      "bytes": 509312,
+      "sha256": "987fa173ca6a50ecc53d511ba72c09833f108130c7a4155d981be7173c18f560"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-010.png",
+      "bytes": 222808,
+      "sha256": "7ef197d8f518d0c255bed789f15e2232f0a55e0da693ec81baac81b7a3d1cb97"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-011.png",
+      "bytes": 66512,
+      "sha256": "3c6003b783107a105670f4b6ddf2060ecf7582efc6f187c56cd32dc79637ae5d"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-012.png",
+      "bytes": 194404,
+      "sha256": "9f834a5e63c614b37daf4604dd9321ee7f8616726fc3d2cee1f6ff71c35e4a1f"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-013.png",
+      "bytes": 79637,
+      "sha256": "81fb8e45d2522d2a0a2e4ecbe094b603c38fe64281e61bf7f17fccb702bf66f2"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-014.png",
+      "bytes": 226052,
+      "sha256": "27108a35930f84e5b4d2aef17d2a9077c3150e3484ff8db47d54180f3ef39dc7"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-015.png",
+      "bytes": 124418,
+      "sha256": "ac29c3c74d83aea99962ce679490a711ee6aa19142f3ac0fb3be75cbfa0f1b93"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-016.png",
+      "bytes": 242197,
+      "sha256": "fc66417f47d1915c0e9649901a202b96a5e2945e5ee67cc00e4925785f197c9d"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu-page-017.png",
+      "bytes": 295144,
+      "sha256": "982e45ab25de91351335cb5fa08343fd91f26492e5183cd30aaf0eaf750eff13"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu.html",
+      "bytes": 80812,
+      "sha256": "fae38920d50c84c3f00d6f9b9b6ed73c7aa54a2cd95cca19998678fd0f7001ef"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu.pdf",
+      "bytes": 3828655,
+      "sha256": "5ebd3f94649abeabda2126f87c5400df1dac4a5b6b40873fd5e3e0a09d6bf0c6"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-kyushu.txt",
+      "bytes": 41284,
+      "sha256": "84bd6afd4b48ec33eb73c15f7f0b247a3e02fd5b2532a6a28924915663a696d9"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2018-mdpi.html",
+      "bytes": 398,
+      "sha256": "3af0109623bd8b6371b9701a97fbb4559fbef657828deced26d565d06fd82a0b"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage-page-001.png",
+      "bytes": 324841,
+      "sha256": "70bf87bccd0a719969397f259c2fb96998ee5a8c0869331cc8b5dfce74bcbe5e"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage-page-002.png",
+      "bytes": 324426,
+      "sha256": "59252fa603799f4e0b1e4439433d0687255ab9277dbedef09e370f2a2e8a956e"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage-page-003.png",
+      "bytes": 345366,
+      "sha256": "cf857a8b9fa2afa5e2804c4e819a04fc78b0a9def1eae3050d730e3459e34209"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage-page-004.png",
+      "bytes": 297412,
+      "sha256": "0df5e50c0b3895ceaf625fc0340eebfa52ec6cb24b2423dbbf0753febbc3343a"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage-page-005.png",
+      "bytes": 431916,
+      "sha256": "930d327500dd35137ed0670dae4f69055bd99f90ce2c12236031a5f281191850"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage-page-006.png",
+      "bytes": 291479,
+      "sha256": "0aa5f6be1573a52622389a89a96b1a2bd703ff7ed19724523ea80ddda8254ecf"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage-page-007.png",
+      "bytes": 246457,
+      "sha256": "e56f372403b666385007f487baa74722f594201843b11d333ab9defca753f759"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage-page-008.png",
+      "bytes": 302973,
+      "sha256": "91b855075bf6419c803ccf5bec84241b25ec7f79a4deb3c3abb603f5410e6de7"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage-page-009.png",
+      "bytes": 88560,
+      "sha256": "359065566329200be6e5e76de53bc6e61dd8e68492babe7d871e0d89fa7278e0"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage.html",
+      "bytes": 78557,
+      "sha256": "f93e9051ebffc8234a5a722b9bd436dc07a78296229c33bbe75c52e7dc7704d8"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage.pdf",
+      "bytes": 2255073,
+      "sha256": "a60841e4e543da557b49a5943e208111020419187ce65fc0ead994cb00e23668"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/raw/tanaka2020-jstage.txt",
+      "bytes": 38872,
+      "sha256": "ee74487c920a0c32040551879e3caddcb6dd398f2c950c909247621d13f80aeb"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/render-receipt.json",
+      "bytes": 1169,
+      "sha256": "6a5c6536cc7c84bbe2465ac1b0db4253719f64b54a807dc8b2cc7468e63ee71c"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/round63ArsenateAuthorityNotices.json",
+      "bytes": 25172,
+      "sha256": "a5024c3603e8475dd47e6f538d716bfec868b067e4ba996e2cc548b1a9e7cdae"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/round63ArsenateAuthorityOpen.json",
+      "bytes": 19448,
+      "sha256": "41765da1804ff5d45b768880e88fe94dc541c4578154f4e5e4a233833230b0c2"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/round63ArsenatePrimaryOpen1.json",
+      "bytes": 23639,
+      "sha256": "17ab9d5479eea37239ceb9a32415a97b44acea537fdef035ea75ee9b9c717260"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/round63ArsenateSearch1.json",
+      "bytes": 30947,
+      "sha256": "b03b4644d2f13113c1d84830c48d22310b881e85b0bffccaacc0ef352fa92fc8"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/round63ArsenateSearch2.json",
+      "bytes": 29730,
+      "sha256": "352076d762d15f8ea9c8a0fb821c4912b5ffc8cd271aaca0570a3f9ca5b9e0e4"
+    },
+    {
+      "path": "/private/tmp/cmm-round63-arsenates-research/source-report-draft.md",
+      "bytes": 15329,
+      "sha256": "67a81cdda617fea4bda586aeaca152a77f4ebfbad588c2256954a940594e8ab0"
+    }
+  ]
+}

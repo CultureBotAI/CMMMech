@@ -1,0 +1,483 @@
+schema_version: 1.0.0
+review_id: 20261014T054310Z-scorodite-round63-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of scorodite
+started_at: '2026-10-14T05:36:32.918175Z'
+finished_at: '2026-10-14T05:43:10.861281Z'
+reviewer:
+  identity: codex /root/round61_zinc_sources
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from /root/publication_completion_check, who
+    researched and authored scorodite. This reviewer did not edit the target, history
+    or dossier. It independently read the complete original and all 17 PDF pages,
+    figures/tables and Appendix A, checked current identity authorities and performed
+    named/history validation. The reviewer authored unrelated dypingite; that record
+    is outside this review.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Scorodite identity and laboratory culture-associated phase formation are
+  supported. The record accurately distinguishes unseeded XRD evidence from seeded
+  solution-removal percentages, chemical comparators from matched microbial controls,
+  nonideal hydration from mineral identity, and an 18-hour leach test from long-term
+  stabilization. No supported curation defect was found. Reviewer named/history checks
+  and coordinator final batch gates passed; the record remains qualified by its source
+  and experimental limitations.
+source:
+  git_revision: 1e3d834112099855c0398459415d0022336055f5
+  state: working_tree
+  inputs:
+  - path: data/records/scorodite.yaml
+    sha256: a27c51ef3546c8e8454900ec654e76b8b4f338a4f84680c41d3c9125edad8245
+    role: target
+  - path: history/records/scorodite/2026-10-14T053328Z-codex-cfd8a6.yaml
+    sha256: d611ae52026e77c944a3f1a283aa0ff8615e4a8542d0f90dbe4916b4ca23ab7b
+    role: context
+  - path: research/sources/round63-arsenates/20261014T053548Z-source-investigation.json
+    sha256: 941678fc8c1fe8d4dc9f9757c7e6cebcc49030675513ceddec5839b7ea555d14
+    role: context
+  - path: research/sources/round63-arsenates/20261014T053548Z-source-investigation.md
+    sha256: e472bd362bb7c5b0c897d8ae3ea5de8f10e1d4abef53962d4c55fd70924cdede
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Full field assessment of one frozen newly curated mineral record and
+    actual CREATE provenance. All target claims were checked against the complete
+    2018 primary, relevant original graphics and identifier authorities. No target-field
+    sampling.
+  selection: Assigned exact ID cmmmech:scorodite and maintained path data/records/scorodite.yaml.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:scorodite
+  exclusions:
+  - target: Other arsenate experiments and literature leads
+    reason: The 2020, 2010 and 1999 studies are deferred source leads, not accepted
+      claims in this record; no full-method assessment of those studies is claimed.
+  - target: Record curation and external publication
+    reason: Reviewer may save review artifacts; target/history/dossier mutations and
+      external posts are not performed.
+targets:
+- target_id: cmmmech:scorodite
+  path: data/records/scorodite.yaml
+  label: Scorodite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/scorodite.yaml
+    role: maintained
+checks:
+- check_id: named
+  name: Reviewer named-record validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 PYTHONDONTWRITEBYTECODE=1
+    uv run --locked cmmmech validate data/records/scorodite.yaml
+  status: passed
+  required: true
+  summary: 'Executed by this reviewer, finished 2026-10-14T05:37:39.957730+00:00:
+    Checked 1 record(s); 0 failed.'
+  target_ids:
+  - cmmmech:scorodite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - local_checks
+- check_id: history
+  name: Reviewer trusted-base history validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 PYTHONDONTWRITEBYTECODE=1
+    uv run --locked cmmmech validate-history --base 1e3d834112099855c0398459415d0022336055f5
+  status: passed
+  required: true
+  summary: 'Executed by this reviewer, finished 2026-10-14T05:37:53.997794+00:00:
+    Checked 337 history record(s); 0 error(s).'
+  target_ids:
+  - cmmmech:scorodite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - local_checks
+- check_id: baseline
+  name: Coordinator pre-curation baseline
+  command: just check
+  status: passed
+  required: false
+  summary: Parent baseline at trusted base passed 317 tests, 3 skipped, 284 records
+    and 333 histories before creation. Reviewer read receipt/log and verified log
+    SHA256483599e39c1778aeaf4c0fb691cbc662a7b96ad8338da7f333ba9e1bea4847cb. This does
+    not certify the edited batch.
+  target_ids:
+  - cmmmech:scorodite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - baseline
+- check_id: batch
+  name: Coordinator final batch checks
+  command: just check
+  status: passed
+  required: true
+  summary: Executed by the coordinator, not this reviewer, from 2026-10-14T05:36:14.996595+00:00
+    to 2026-10-14T05:41:32.473108+00:00; exit0. 317 tests passed, 3 skipped; 288 records
+    and 337 histories valid; check.py reported all checks passed. Reviewer inspected
+    the receipt and complete log and verified its SHA256.
+  target_ids:
+  - cmmmech:scorodite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch_checks
+- check_id: nonempty
+  name: Coordinator final nonempty corpus
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Executed by the coordinator, not this reviewer, from 2026-10-14T05:41:32.473142+00:00
+    to 2026-10-14T05:41:51.860503+00:00; exit0. Checked 288 record(s); 0 failed. Reviewer
+    inspected the receipt and complete log and verified its SHA256.
+  target_ids:
+  - cmmmech:scorodite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch_checks
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/scorodite.yaml
+  locator: All fields at captured target hash
+  accessed_at: '2026-10-14T05:40:28.826267Z'
+  support: supports
+  summary: Read every field and checked source-bounded claims, material identity and
+    limitations.
+  snapshot_sha256: a27c51ef3546c8e8454900ec654e76b8b4f338a4f84680c41d3c9125edad8245
+- evidence_id: history
+  kind: record_content
+  reference: history/records/scorodite/2026-10-14T053328Z-codex-cfd8a6.yaml
+  locator: CREATE session, actors, target and linked inline event
+  accessed_at: '2026-10-14T05:40:28.826267Z'
+  support: supports
+  summary: Actual UTC event and codex/GPT-6/codex actor metadata describe the present
+    creation; no invented historical authorship or review event.
+  snapshot_sha256: d611ae52026e77c944a3f1a283aa0ff8615e4a8542d0f90dbe4916b4ca23ab7b
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round63-arsenates/20261014T053548Z-source-investigation.md
+  locator: Complete Markdown and paired JSON
+  accessed_at: '2026-10-14T05:40:28.826267Z'
+  support: supports
+  summary: Read curator source assessment, acquisition boundaries and manifest. Independently
+    verified all 63 raw artifact hashes and report hash; the dossier did not substitute
+    for primary evidence.
+  snapshot_sha256: e472bd362bb7c5b0c897d8ae3ea5de8f10e1d4abef53962d4c55fd70924cdede
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/min8010023
+  locator: Complete 16-page article plus institutional cover; all 17 PDF pages visually
+    inspected, Figures 1-4, Tables 1-3, Appendix A
+  accessed_at: '2026-10-14T05:40:28.826267Z'
+  support: supports
+  summary: Read complete text and all original pages. Sections2.1-2.2 establish unseeded
+    seed production; Figure1a supplies phase evidence. Sections2.3-2.6, Table3 and
+    Figure3 establish conditions, assays and solution-removal basis. Figures1b/c and2
+    establish hydration/organic/morphological observations. Table2 and narrative/conclusion
+    preserve the +/-0.20 versus +/-0.08 contradiction. AppendixA2 is prior literature,
+    not new measurements.
+  snapshot_sha256: 5ebd3f94649abeabda2126f87c5400df1dac4a5b6b40873fd5e3e0a09d6bf0c6
+- evidence_id: mineral_identity
+  kind: database
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA September2026 PDF page195 and page1 definitions; Handbook scorodite
+    entry
+  accessed_at: '2026-10-14T05:40:28.826267Z'
+  support: supports
+  summary: 'Independently viewed Scorodite row: Fe3+(AsO4)(H2O)2, grandfathered,1818
+    description year. The one-page Handbook corroborates formula, orthorhombic mineral
+    and dimorphism with parascorodite. No approval-number CURIE is invented.'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: database
+  reference: https://handbookofmineralogy.org/pdfs/scorodite.pdf
+  locator: Entire one-page species entry visually inspected
+  accessed_at: '2026-10-14T05:40:28.826267Z'
+  support: supports
+  summary: Supports mineral formula and parascorodite dimorphism; not evidence that
+    laboratory material is pure or ideally hydrated.
+  snapshot_sha256: 16ae6cf1e379960b2beecae16080022512785be5739a6263a4fc5cb28c5953fc
+- evidence_id: taxonomy
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=41673
+  locator: Live species page, rank and type-strain cross-reference; retained same-day
+    NCBI taxonomy JSON
+  accessed_at: '2026-10-14T05:40:28.826267Z'
+  support: supports
+  summary: NCBI41673 resolves to Acidianus brierleyi, species rank and archaeal lineage.
+    The DSM1651 type-strain association agrees with the record; species identity does
+    not authenticate the experimental culture.
+  snapshot_sha256: 843e15839d47bb28efac15445b5492d03a9d206320247b22f0976fa4a59630d8
+- evidence_id: strain
+  kind: database
+  reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-1651
+  locator: Live DSM catalogue Name/DSM No/type strain fields and retained HTML
+  accessed_at: '2026-10-14T05:40:28.826267Z'
+  support: supports
+  summary: DSM1651 is Acidianus brierleyi type strain. The record correctly treats
+    catalogue identity as grounding rather than independent stock authentication.
+  snapshot_sha256: d12528da599bb39d5b7d4733ed1938db2a9befc57fa4c90b7a6e5a329253872b
+- evidence_id: metadata
+  kind: database
+  reference: https://doi.org/10.3390/min8010023
+  locator: Original title page and retained current Crossref record
+  accessed_at: '2026-10-14T05:40:28.826267Z'
+  support: supports
+  summary: Tanaka and Okibe, Minerals8(1),23,15January2018 and DOI agree. No update-to
+    relation is present in the retained Crossref response; bounded negative metadata
+    evidence only.
+  snapshot_sha256: a43cad478bb29df58d2d501843e8faa4557a3af3299caec86019520c124617fe
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round63-scorodite-review/web-receipt.json
+  locator: Independent notice/counterevidence search and live authority opens
+  accessed_at: '2026-10-14T05:40:28.826267Z'
+  support: context_only
+  summary: No affecting correction notice was identified in the returned sets. Other
+    primary abstracts concerning Cu inhibition and altered mineral feeds were treated
+    as unassessed future leads, not detailed experimental verification or direct refutations
+    of this bounded 2018 claim.
+  snapshot_sha256: b5520a768e1d7d5427538cf73da21da94b57e3bd8a9a0d7d23a10dcbcb91c17d
+  search_scope: 'Exact queries: "10.3390/min8010023" correction retraction erratum;
+    "scorodite" "Acidianus brierleyi" dissolution control. First returned web sets,
+    no pagination or domain/date filter; no exhaustive clearance.'
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round63-scorodite-review/dedup.txt
+  locator: Bounded current record identity/DOI search
+  accessed_at: '2026-10-14T05:40:28.826267Z'
+  support: context_only
+  summary: Hidden/ignored-inclusive, symlink-following record scan found the new scorodite
+    owner and mentions of impurities or deferred sources, not another accepted owner.
+    Source dossier supplies wider prior-raw-root scope.
+  snapshot_sha256: c8e301fb152c9ce22587e62c2cfde23a7c44888a591bf611ff14320ddec395de
+  search_scope: rg --no-ignore --hidden --follow -n -i scorodite|10.3390/min8010023
+    data/records. Repository science/report bounds in source dossier; not a global
+    absence claim.
+- evidence_id: local_checks
+  kind: validation
+  reference: /private/tmp/cmm-round63-scorodite-review/checks.json
+  locator: Reviewer named validation and trusted-base history receipts
+  accessed_at: '2026-10-14T05:40:28.826267Z'
+  support: supports
+  summary: Named validation checked1 record,0failed; history checked337 sidecars,0errors
+    against base1e3d834112099855c0398459415d0022336055f5. These are structural checks,
+    not proof of scientific truth.
+  snapshot_sha256: 3abf8fb8958b6cc713cc3c15052ea87c46ed90121e0f23bf7916d0c6500fb079
+- evidence_id: baseline
+  kind: validation
+  reference: /private/tmp/cmm-round63-baseline.json
+  locator: Parent pre-curation baseline receipt and log
+  accessed_at: '2026-10-14T05:40:28.826267Z'
+  support: context_only
+  summary: Reviewer verified the actual baseline log hash and results. Baseline predates
+    target creation and is not a final edited-batch gate.
+  snapshot_sha256: 62585953c2b34f831b4c99967d207a57516f2ae024587e447e4468429ec04bff
+- evidence_id: batch_checks
+  kind: validation
+  reference: /private/tmp/cmm-round63-final-gates.json
+  locator: Coordinator final command receipt and full retained log
+  accessed_at: '2026-10-14T05:43:10.861281Z'
+  support: supports
+  summary: Coordinator executed render, just check, explicit nonempty validation and
+    trusted-base history; all exit0. Test summary317passed/3skipped, corpus288/0,
+    history337/0. Reviewer verified log SHA25690bf3a83eebaa7ca2d2378b9c1fd4862c324ca57cf55aaefd60a1ec5de53285c
+    and confirmed every native input hash still matches the reviewed bytes.
+  snapshot_sha256: f609ce00abe12705c5c76645c1f43d3fdb1461e9e4dc0ca0d963f591a215801d
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral species and current authority
+  outcome: supported
+  summary: Scorodite is supported as the distinct ferric arsenate species; the record
+    separates its dimorph, amorphous precipitates, elements and mixed wastes. Grandfathering
+    year is not an accession.
+  target_ids:
+  - cmmmech:scorodite
+  evidence_ids:
+  - record
+  - mineral_identity
+  - handbook
+  dimensions:
+  - name: material_form
+    value: mineral; FeAsO4.2H2O
+    definition: Ideal species identity differs from the bulk composition of synthesized
+      solids.
+    evidence_ids:
+    - record
+    - mineral_identity
+    - handbook
+- assessment_id: organism
+  area: scope
+  topic: Living reported culture and species versus strain
+  outcome: supported
+  summary: The paper explicitly supplies DSM1651T; live authority checks support the
+    species and strain association. Living culture involvement is appropriate, with
+    no invented strain-level taxon ID or gene-specific causal pathway.
+  target_ids:
+  - cmmmech:scorodite
+  evidence_ids:
+  - primary
+  - taxonomy
+  - strain
+  dimensions:
+  - name: organism
+    value: Acidianus brierleyi; NCBITaxon:41673; DSM1651T reported
+    definition: Species CURIE and reported culture designation are distinct.
+    evidence_ids:
+    - primary
+    - taxonomy
+    - strain
+  - name: biomass_state
+    value: Living culture in laboratory medium
+    definition: Not a claim of direct enzymatic involvement in every precipitation
+      step.
+    evidence_ids:
+    - primary
+    - taxonomy
+    - strain
+- assessment_id: conditions
+  area: evidence
+  topic: Unseeded phase formation and seeded comparisons
+  outcome: supported
+  summary: The unseeded14-day preparation is linked explicitly to Figure1a phase identification.
+    Medium, salts, initial pH,70C,100rpm,200mL in500mL flasks and subsequent seed
+    dosing/duplicates match the source. No culture-filter parameter is invented from
+    the TCLP protocol.
+  target_ids:
+  - cmmmech:scorodite
+  evidence_ids:
+  - primary
+  dimensions:
+  - name: substrate
+    value: Synthetic dissolved Fe(II) and As(III) feeds
+    definition: Not a demonstrated real refinery-effluent trial.
+    evidence_ids:
+    - primary
+  - name: controls
+    value: Unseeded cultures and unlike chemical seed synthesis
+    definition: Chemical comparator differs in medium, arsenic valence, concentrations
+      and duration; microbial necessity is not isolated.
+    evidence_ids:
+    - primary
+- assessment_id: quantities
+  area: quantity
+  topic: Source denominators and distinct observations
+  outcome: supported
+  summary: Table3 selected3.3mM/4.5mM rows correctly retain11% and95% at24days with
+    amorphous/scorodite assignments; jarosite59% rows and prior2014 attribution are
+    accurate. Percentages concern solution depletion and do not quantify new seed-corrected
+    mineral mass. TCLP parameters and uncertainty disagreement are faithfully preserved.
+  target_ids:
+  - cmmmech:scorodite
+  evidence_ids:
+  - primary
+  dimensions:
+  - name: outcome
+    value: Phase presence and solution arsenic removal
+    definition: Not isolated-product mass or metal recovery yield.
+    evidence_ids:
+    - primary
+  - name: leachability_basis
+    value: 18h acetate test, pH4.9,5%w/v,25C,30rpm; mg/L leachate
+    definition: Different liquid and denominator from reactor effluent or long-term
+      release.
+    evidence_ids:
+    - primary
+- assessment_id: uncertainty
+  area: evidence
+  topic: Phase mixtures, mechanistic uncertainty and stability limits
+  outcome: supported
+  summary: The record retains nonideal hydration, associated organics, bulk Fe/As
+    imbalance, alternative jarosite/amorphous outcomes, missing matched abiotic series
+    and limited endpoint diffraction coverage. It does not convert thermodynamic calculations
+    or prospective continuous operation into demonstrated mechanism or deployment.
+  target_ids:
+  - cmmmech:scorodite
+  evidence_ids:
+  - primary
+  - search
+  dimensions:
+  - name: deployment
+    value: Laboratory synthetic-solution study
+    definition: Industrial system remains prospective.
+    evidence_ids:
+    - primary
+    - search
+  - name: criticality
+    value: Unrecorded
+    definition: No constituent-element designation inherited; omission is not not-listed.
+    evidence_ids:
+    - primary
+    - search
+- assessment_id: provenance
+  area: provenance
+  topic: Exact current state and actual CREATE event
+  outcome: supported
+  summary: Native inspect hashes match frozen record, history, source pair and schema.
+    All63 manifest files match; source identities and access limits are transparent.
+    Inline and sidecar events correctly describe this creation and trusted-base history
+    passes.
+  target_ids:
+  - cmmmech:scorodite
+  evidence_ids:
+  - record
+  - history
+  - dossier
+  - local_checks
+- assessment_id: schema
+  area: schema
+  topic: Named structural validity
+  outcome: supported
+  summary: Reviewer named record validation and trusted-base history passed. Coordinator
+    final just check, explicit nonempty corpus and history validation also passed.
+    Actual receipts and log were inspected and attributed to their executor. Structural
+    checks complement the independent original-evidence assessment.
+  target_ids:
+  - cmmmech:scorodite
+  evidence_ids:
+  - local_checks
+  - batch_checks
+findings: []
+actions: []
+limitations:
+- The experiment supports formation associated with a reported living culture, but
+  a matched uninoculated/killed-cell series is not supplied. Chemical seeds were made
+  under different chemistry and duration.
+- Seeded cultures do not separately quantify new scorodite mass, and original endpoint
+  XRD patterns are not shown for every Table 3 treatment. The unseeded seed-production
+  XRD supplies the clearest phase evidence.
+- Nonideal hydration, associated organic material, bulk Fe/As ratios above one, alternative
+  phases and the unresolved TCLP uncertainty discrepancy remain scientific limitations
+  already represented in the record.
+- An 18-hour acetate leach test cannot establish permanent sequestration, effluent
+  compliance or industrial deployment. Separate reference-list studies were not promoted
+  into new accepted observations.
+- Publisher landing access was blocked in the curator acquisition. The complete institutional
+  original including Appendix A was independently inspected; no exhaustive supplementary-inventory
+  clearance is claimed.
+notes:
+- Native inspect captured the exact working-tree target/history/dossier/schema hashes
+  before scientific assessment. New owner absence is bounded to the trusted base and
+  hidden/ignored/symlink-inclusive record search, not a global literature novelty
+  claim.
+- No criticality list claim is present. Omission is unrecorded, not not-listed. NCBITaxon:41673
+  grounds a species, while DSM 1651T remains the paper-reported strain designation.
+- All 63 source-manifest artifacts and its report hash matched. Full originals and
+  renders remain outside Git. No target, sidecar or dossier corrections were performed
+  by this reviewer.
+- The scientific assessment was drafted while final batch gates ran. No partial observation
+  was saved. This single completed observation was saved only after the final receipts
+  were inspected and frozen input hashes rechecked; no record/history/dossier bytes
+  changed.
