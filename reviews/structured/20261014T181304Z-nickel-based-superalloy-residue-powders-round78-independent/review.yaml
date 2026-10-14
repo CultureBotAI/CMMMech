@@ -1,0 +1,347 @@
+schema_version: 1.0.0
+review_id: 20261014T181304Z-nickel-based-superalloy-residue-powders-round78-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Nickel-based superalloy residue powders round78
+started_at: '2026-10-14T18:06:47.580556Z'
+finished_at: '2026-10-14T18:13:04.108609Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: new_frontier peer authored the reviewed resource and history.
+    Reviewer authored separate palygorskite/saponite owners, independently assessed
+    shared primary originals, and made no reviewed owner/history edits. This is independent
+    assessment, not experimental replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of three stock-specific Ni-based superalloy residues
+  within one resource owner and laboratory culture-filtrate Ni/Co mobilization. Partial
+  feed digestion, impossible nominal inventory sums, unmatched chemical controls,
+  and stock/time-dependent results remain explicit.
+source:
+  git_revision: 884152be5ef2accab670b604ddb344f4a55bf1d3
+  state: working_tree
+  inputs:
+  - path: data/records/nickel-based-superalloy-residue-powders.yaml
+    sha256: 972a18a44f1b7551771f9d0811ad5071188633322f4d4f4160bd70a9eff5fc65
+    role: target
+  - path: history/records/nickel-based-superalloy-residue-powders/2026-10-14T180136Z-codex-69e73c.yaml
+    sha256: df8c1170926dd6bc297f605a6a440a9883424598281e98a90c9f7201ccf42187
+    role: context
+scope:
+  description: Entire frozen resource owner, source identity, organism/biomass, conditions,
+    controls, results, contradictory evidence, scale and provenance; all claim-bearing
+    original figures/tables.
+  selection: Assigned full owner, not a sample.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:nickel-based-superalloy-residue-powders
+targets:
+- target_id: cmmmech:nickel-based-superalloy-residue-powders
+  path: data/records/nickel-based-superalloy-residue-powders.yaml
+  label: Nickel-based superalloy residue powders
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/nickel-based-superalloy-residue-powders.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent reviewer named strict validation
+  command: uv run --locked cmmmech validate data/records/spent-silver-oxide-zinc-button-cell-batteries.yaml
+    data/records/nickel-based-superalloy-residue-powders.yaml --require-records
+  status: passed
+  required: true
+  summary: Reviewer actually executed this two-record command and observed terminal
+    exit 0 and Checked 2 record(s); 0 failed. Start/finish timestamps were not separately
+    captured; retained terminal log is bound.
+  target_ids:
+  - cmmmech:nickel-based-superalloy-residue-powders
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Coordinator terminal batch gate independently verified
+  command: just check
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T18:07:04.891860+00:00 through 2026-10-14T18:10:27.645303+00:00;
+    terminal exit and retained log verified. This resource hash matches the initial
+    batch inputs and remains unchanged.
+  target_ids:
+  - cmmmech:nickel-based-superalloy-residue-powders
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Coordinator terminal batch gate independently verified
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T18:10:27.645322+00:00 through 2026-10-14T18:10:36.327502+00:00;
+    terminal exit and retained log verified. This resource hash matches the initial
+    batch inputs and remains unchanged.
+  target_ids:
+  - cmmmech:nickel-based-superalloy-residue-powders
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Coordinator terminal batch gate independently verified
+  command: uv run --locked cmmmech validate-history --base 884152be5ef2accab670b604ddb344f4a55bf1d3
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T18:10:36.327520+00:00 through 2026-10-14T18:10:45.575785+00:00;
+    terminal exit and retained log verified. This resource hash matches the initial
+    batch inputs and remains unchanged.
+  target_ids:
+  - cmmmech:nickel-based-superalloy-residue-powders
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_3
+  name: Coordinator terminal batch gate independently verified
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T18:10:45.575813+00:00 through 2026-10-14T18:10:53.945672+00:00;
+    terminal exit and retained log verified. This resource hash matches the initial
+    batch inputs and remains unchanged.
+  target_ids:
+  - cmmmech:nickel-based-superalloy-residue-powders
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/nickel-based-superalloy-residue-powders.yaml
+  locator: Entire native-inspected frozen owner
+  accessed_at: '2026-10-14T18:13:04.108609Z'
+  support: supports
+  summary: All owner fields read, exact bytes verified; no reviewer owner edits.
+  snapshot_sha256: 972a18a44f1b7551771f9d0811ad5071188633322f4d4f4160bd70a9eff5fc65
+- evidence_id: history
+  kind: record_content
+  reference: history/records/nickel-based-superalloy-residue-powders/2026-10-14T180136Z-codex-69e73c.yaml
+  locator: Canonical CREATE plus distinct inline event
+  accessed_at: '2026-10-14T18:13:04.108609Z'
+  support: supports
+  summary: Actual GPT-6/codex provenance, record ID, operation and refs checked; no
+    reviewer history edits.
+  snapshot_sha256: df8c1170926dd6bc297f605a6a440a9883424598281e98a90c9f7201ccf42187
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/pr13072157
+  locator: Complete 21-page original; Methods 2.1–2.4, Tables 1–3 and Figures 1–9;
+    every original page visually inspected.
+  accessed_at: '2026-10-14T18:13:04.108609Z'
+  support: supports
+  summary: Equation 3 percentages use an explicitly incomplete aqua-regia feed inventory.
+    Table 1 mean sums are 1007.27 and 1007.76 g/kg for SAR-Ni/SAR-Re, precluding a
+    closed mass balance. Figure 5d does not show complete ferric reduction. Figure
+    6 early agitation gains do not extend to every stock or late endpoint; the SAR-Re
+    cobalt ten-point conversion is inconsistent with 65.30 g/kg feed. Figure 9 supports
+    no general Ni benefit from peroxide and no consistent final Co improvement; methods
+    ten days versus plotted seven, dose volumes versus nominal concentrations and
+    an absent two-mL arm remain unresolved. Proposed surface precipitation and economic/environmental
+    benefits are not demonstrated.
+  snapshot_sha256: 2a71888bdcf8281f301b125928cd069ded99153d50e2e41f84d4b637fbccd54f
+- evidence_id: authority
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930
+  locator: Current live NCBI browser independently opened; curator-acquired original
+    full taxonomy XML read
+  accessed_at: '2026-10-14T18:13:04.108609Z'
+  support: supports
+  summary: Current species identifier resolves the stated species label; it does not
+    identify/authenticate the experimental strain or consortium membership.
+  snapshot_sha256: 1ac710626a004467c8fbe0248715cc6d01360e721fbdb8f681edd536c8fc1cbc
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round78-resource-independent/named-validation.log
+  locator: Actual independent reviewer two-record terminal output
+  accessed_at: '2026-10-14T18:13:04.108609Z'
+  support: supports
+  summary: Checked 2 record(s); 0 failed. This is structural validation, not independent
+    experimental confirmation.
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round78-final-gates.json
+  locator: All FOUR actual commands and initial batch frozen owner inputs
+  accessed_at: '2026-10-14T18:13:04.108609Z'
+  support: supports
+  summary: Initial batch terminal0 with input manifest unchanged at completion; log
+    SHA256 60b35b7c12611e384dfd1cd7cd2c92d556efdbebebed28a28f69ffe4d2beb9a2. A later
+    separate chukanovite correction does not change these two resource owners. Publication
+    must separately use the eventual corrected-batch receipt.
+  snapshot_sha256: 521fb3c1411dc8efa71517369001e35272aeb24dd52f61b50323efd00629c3db
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round78-resource-independent/reviewer-dedup.json
+  locator: Actual independent command with hidden/ignored files and followed links
+  accessed_at: '2026-10-14T18:13:04.108609Z'
+  support: context_only
+  summary: Existing discovery leads and different battery/alloy feeds were checked.
+    Resource identity and same-study lineage remain distinct.
+  snapshot_sha256: c7c0b804dc8cbdc852b45756e74663cd80c36a8bc34ab63a3e60b171c53123d9
+  search_scope: Current and main records/research/reviews/history, curator current
+    raw and cited round25-button/frontier/bf-dust and round26/27-superalloy raw roots.
+    No exhaustive binary OCR or machine-wide absence claim.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round78-resource-independent/notice-search.json
+  locator: Exact DOI correction/retraction queries, current Crossref fields, live
+    publisher and NCBI opens
+  accessed_at: '2026-10-14T18:13:04.108609Z'
+  support: context_only
+  summary: No applicable notice found in the bounded returned sets or current Crossref
+    relation/update fields. Publisher opens returned429; no exhaustive live supplement/Crossmark
+    absence claim.
+  snapshot_sha256: c51504c66af49340a4914a9eb1cfd67dde018b638fd95372b1b9c1e7b6a3cc70
+  search_scope: First returned web result sets only; independent live opens and current
+    local Crossref metadata. An unrelated broad author listing correction label was
+    not attributed to this article.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: identity and claim boundaries
+  outcome: supported
+  summary: Supplier-provided SAR-Ni30167, SAR-In32083 and SAR-Re30168 residues are
+    one resource family with separate experiments, not authenticated alloy grades
+    or three artificially separate materials. Service history and post-consumer provenance
+    are unknown. No criticality is inherited from Ni/Co constituents, and supplier
+    industrial origin is not industrial deployment of bioleaching.
+  target_ids:
+  - cmmmech:nickel-based-superalloy-residue-powders
+  evidence_ids:
+  - record
+  - primary
+  - authority
+  dimensions:
+  - name: criticality
+    value: No jurisdiction/list/edition assertion
+    definition: Secondary-resource identity does not inherit element criticality.
+    evidence_ids:
+    - record
+- assessment_id: methods
+  area: evidence
+  topic: methods and claim boundaries
+  outcome: supported
+  summary: 35 g portions were milled with eight 20 mm balls, 300 rpm for ten minutes
+    and sieved below 250 µm. The laboratory 1% w/v filtrate assays at 30°C and 130
+    rpm use separate Bio-acid, Bio-ferric and combined arms. Acidithiobacillus thiooxidans
+    belongs only to the named Bio-acid culture; the separate consortium has no verified
+    constituent identifier. Initial acidities differ and there are no matched fresh
+    chemical controls. General versus arm-specific recipes, initial pH and filtration
+    dimensions are preserved without reconstructing an unsupported unified recipe.
+  target_ids:
+  - cmmmech:nickel-based-superalloy-residue-powders
+  evidence_ids:
+  - record
+  - primary
+  - authority
+  dimensions:
+  - name: material_form
+    value: Three named supplier residue stocks, milled and sieved below 250 µm; partial
+      bulk digestion and unknown grade/service history.
+    definition: Experimental feed identity is narrower than a pure compound or whole-device
+      inventory.
+    evidence_ids:
+    - primary
+  - name: organism_and_biomass
+    value: 0.2 µm-filtered culture lixiviants; A. thiooxidans only in Bio-acid, unnamed
+      separate consortium in other arms.
+    definition: Taxon identifiers are species scoped, not authenticated strain claims.
+    evidence_ids:
+    - primary
+    - authority
+  - name: controls
+    value: Comparator biological lixiviants differ in acid/iron chemistry; no matched
+      chemical control isolates a microbial increment.
+    definition: Limits exclusive microbial/mechanistic attribution.
+    evidence_ids:
+    - primary
+  - name: scale
+    value: Laboratory flask assays only
+    definition: No recovered product purity or industrial deployment demonstrated.
+    evidence_ids:
+    - primary
+- assessment_id: outcomes
+  area: evidence
+  topic: outcomes and claim boundaries
+  outcome: supported
+  summary: Equation 3 percentages use an explicitly incomplete aqua-regia feed inventory.
+    Table 1 mean sums are 1007.27 and 1007.76 g/kg for SAR-Ni/SAR-Re, precluding a
+    closed mass balance. Figure 5d does not show complete ferric reduction. Figure
+    6 early agitation gains do not extend to every stock or late endpoint; the SAR-Re
+    cobalt ten-point conversion is inconsistent with 65.30 g/kg feed. Figure 9 supports
+    no general Ni benefit from peroxide and no consistent final Co improvement; methods
+    ten days versus plotted seven, dose volumes versus nominal concentrations and
+    an absent two-mL arm remain unresolved. Proposed surface precipitation and economic/environmental
+    benefits are not demonstrated.
+  target_ids:
+  - cmmmech:nickel-based-superalloy-residue-powders
+  evidence_ids:
+  - record
+  - primary
+  - authority
+- assessment_id: provenance
+  area: provenance
+  topic: History and exact-byte review evidence
+  outcome: supported
+  summary: Initial native inspect preceded scientific judgment. Corrected target metadata
+    and added history context were re-inspected without changing owner/history bytes.
+    Named validation and all four initial batch commands passed; resource hashes remain
+    frozen. Reviewer authored other clay records, not these resources.
+  target_ids:
+  - cmmmech:nickel-based-superalloy-residue-powders
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - dedup
+  - notices
+findings: []
+actions: []
+limitations:
+- Incomplete aqua-regia inventory, mean sums above 1000 g/kg and inconsistent percentage-to-mass
+  conversion prevent an exact closed yield balance.
+- Unidentified culture stocks/consortium and unmatched acid/iron conditions do not
+  establish species-specific causal contributions.
+- Peroxide dose/time inconsistencies and stock-dependent early/late agitation outcomes
+  remain unresolved; no general optimized protocol or industrial/environmental advantage
+  is accepted.
+- Neither complete original announces separate SI; live publisher access was unavailable,
+  so the review does not prove an exhaustive current supplemental inventory.
+- No original instrument data, raw replicates or closed mass-balance reanalysis was
+  available; all original text and page graphics were independently assessed.
+- Bounded notice searches do not prove that no correction or conflicting study exists.
+  No criticality, industrial deployment, isolated product or environmental superiority
+  is asserted.
+notes:
+- Actual start was recorded before the initial native inspect. Re-inspection corrected
+  target metadata to maintained/CultureBotAI repository and added history context;
+  scientific bytes were unchanged.
+- All seven battery-paper pages or all 21 superalloy-paper pages were visually inspected,
+  including every claim-bearing table and figure. Shared curator-acquired originals
+  were independently read.
+- No corrective record finding was supported. Source limitations remain explicit rather
+  than being converted into manufactured review issues.
+tags:
+- round78
+- secondary-resource
+- independent
+- primary-figures

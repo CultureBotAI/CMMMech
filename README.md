@@ -8,10 +8,16 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 368 material records.
+The catalogue currently contains 374 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Chukanovite](data/records/chukanovite.yaml) | Source-assigned carbonate after prolonged goethite reduction in CN32 cultures | Inconclusive diffraction, phosphate-arm conflicts and a separate null result limit phase and pathway claims |
+| [Sepiolite](data/records/sepiolite.yaml) | Controlled abiotic magnesium and silicon release from characterized sepiolite | Nonstoichiometric dissolution, changing pH and modeled secondary phases; no microbial mechanism inferred |
+| [Palygorskite](data/records/palygorskite.yaml) | Controlled CN32 iron reduction followed by a separate technetium reaction | Cleaned specimen and low dissolved iron; the subsequent washed-solid reaction is abiotic |
+| [Saponite](data/records/saponite.yaml) | Community-associated formation of source-assigned saponitic material | Poor ordering, unresolved bulk diffraction and incomplete causal controls qualify the phase assignment |
+| [Spent silver-oxide–zinc button-cell batteries](data/records/spent-silver-oxide-zinc-button-cell-batteries.yaml) | Fungal spent-medium leaching of a distinct battery chemistry | Conflicting conditions and extraction curves; aqueous mobilization is not isolated product recovery |
+| [Nickel-based superalloy residue powders](data/records/nickel-based-superalloy-residue-powders.yaml) | Laboratory leaching of three industrial residue stocks | Incomplete digest denominators, unmatched initial chemistry and source conflicts limit comparative yields |
 | [Acanthite](data/records/acanthite.yaml) | Minority silver-sulfide particles assigned by electron diffraction and composition | Mixed products, processed cells and missing matched controls prevent pure-product or causal yield claims |
 | [Monetite](data/records/monetite.yaml) | Surface phase assigned after biofilm and filtered spent-broth exposure | Phase also appears with cell-free spent broth; mixed solids and cleaning limit mechanistic attribution |
 | [Switzerite](data/records/switzerite.yaml) | Qualified culture-associated phosphate assignment and separate natural-specimen dehydration | Missing culture diffraction and hydration data leave the microbial product assignment uncertain |

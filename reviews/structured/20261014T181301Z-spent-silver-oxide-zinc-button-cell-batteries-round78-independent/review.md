@@ -1,0 +1,443 @@
+# Independent scientific review of Spent silver-oxide–zinc button-cell batteries round78
+
+- Review: 20261014T181301Z-spent-silver-oxide-zinc-button-cell-batteries-round78-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T18:06:47.580556Z
+- Finished UTC: 2026-10-14T18:13:01.514804Z
+- Reviewer: codex /root/round68_phosphates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of market-collected Ag–Zn button-cell powder as a distinct secondary resource and filtered fungal spent-medium mobilization. Conflicting temperature/speed/time protocols and Figure 2/3 yields remain explicit; no isolated product or industrial deployment is established.
+
+## Scope And Provenance
+
+Entire frozen resource owner, source identity, organism/biomass, conditions, controls, results, contradictory evidence, scale and provenance; all claim-bearing original figures/tables.
+
+Selection: Assigned full owner, not a sample.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 884152be5ef2accab670b604ddb344f4a55bf1d3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:spent-silver-oxide-zinc-button-cell-batteries | data/records/spent-silver-oxide-zinc-button-cell-batteries.yaml | maintained | Spent silver-oxide–zinc button-cell batteries |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent reviewer named strict validation | passed | True | cmmmech:spent-silver-oxide-zinc-button-cell-batteries | Reviewer actually executed this two-record command and observed terminal exit 0 and Checked 2 record(s); 0 failed. Start/finish timestamps were not separately captured; retained terminal log is bound. |
+| Coordinator terminal batch gate independently verified | passed | True | cmmmech:spent-silver-oxide-zinc-button-cell-batteries | Actual coordinator execution 2026-10-14T18:07:04.891860+00:00 through 2026-10-14T18:10:27.645303+00:00; terminal exit and retained log verified. This resource hash matches the initial batch inputs and remains unchanged. |
+| Coordinator terminal batch gate independently verified | passed | True | cmmmech:spent-silver-oxide-zinc-button-cell-batteries | Actual coordinator execution 2026-10-14T18:10:27.645322+00:00 through 2026-10-14T18:10:36.327502+00:00; terminal exit and retained log verified. This resource hash matches the initial batch inputs and remains unchanged. |
+| Coordinator terminal batch gate independently verified | passed | True | cmmmech:spent-silver-oxide-zinc-button-cell-batteries | Actual coordinator execution 2026-10-14T18:10:36.327520+00:00 through 2026-10-14T18:10:45.575785+00:00; terminal exit and retained log verified. This resource hash matches the initial batch inputs and remains unchanged. |
+| Coordinator terminal batch gate independently verified | passed | True | cmmmech:spent-silver-oxide-zinc-button-cell-batteries | Actual coordinator execution 2026-10-14T18:10:45.575813+00:00 through 2026-10-14T18:10:53.945672+00:00; terminal exit and retained log verified. This resource hash matches the initial batch inputs and remains unchanged. |
+
+## Scientific And Domain Assessments
+
+### identity and claim boundaries
+
+identity: supported. Targets: cmmmech:spent-silver-oxide-zinc-button-cell-batteries.
+
+The market-collected, dismantled and dried powder is distinct from whole devices, pure silver oxide, elemental Ag/Zn and existing zinc–manganese button cells. Table 1 bulk digested inventory does not establish phase purity, commercial model or discharge state. No resource criticality inherited from constituents.
+
+### methods and claim boundaries
+
+evidence: supported. Targets: cmmmech:spent-silver-oxide-zinc-button-cell-batteries.
+
+Unaccessioned FIRDI Aspergillus niger is bounded to species, without importing an earlier paper's strain. The 0.22 µm-filtered culture liquid is used for chemical mobilization separately from living growth. Source culture 25/30°C, assay 6/8 h, 100/150 rpm and parameter-range discrepancies remain explicit. Citrate concentration/pH are a source report citing an earlier study, not newly measured here. Matched fresh-medium/acid controls and organism-specific causal increment are unavailable.
+
+### outcomes and claim boundaries
+
+evidence: supported. Targets: cmmmech:spent-silver-oxide-zinc-button-cell-batteries.
+
+Table 1 gives 290±0.82 mg/g Zn, 35.86±0.31 Ag and 6.30±0.06 Hg in the powder. Figure 1 supports approximately 80% Zn, 41% Ag and 2% Hg at six hours in the baseline assay. Figure 2 reports near-complete Zn/Ag at 60°C, 150 rpm, six hours, 100 mL while Figure 3 gives approximately 70% under those nominal settings. The combined optimum is correctly retained as a source claim, not a reconciled protocol. No purified metal, complete mass balance or environmental superiority is adopted.
+
+### History and exact-byte review evidence
+
+provenance: supported. Targets: cmmmech:spent-silver-oxide-zinc-button-cell-batteries.
+
+Initial native inspect preceded scientific judgment. Corrected target metadata and added history context were re-inspected without changing owner/history bytes. Named validation and all four initial batch commands passed; resource hashes remain frozen. Reviewer authored other clay records, not these resources.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/spent-silver-oxide-zinc-button-cell-batteries.yaml; Entire native-inspected frozen owner | supports | All owner fields read, exact bytes verified; no reviewer owner edits. |
+| history | history/records/spent-silver-oxide-zinc-button-cell-batteries/2026-10-14T180129Z-codex-f4aacb.yaml; Canonical CREATE plus distinct inline event | supports | Actual GPT-6/codex provenance, record ID, operation and refs checked; no reviewer history edits. |
+| primary | https://doi.org/10.3390/batteries4040051; Complete seven-page original; Methods 2.1–2.5, Tables 1–2, Figures 1–4; all original page graphics independently inspected. | supports | Table 1 gives 290±0.82 mg/g Zn, 35.86±0.31 Ag and 6.30±0.06 Hg in the powder. Figure 1 supports approximately 80% Zn, 41% Ag and 2% Hg at six hours in the baseline assay. Figure 2 reports near-complete Zn/Ag at 60°C, 150 rpm, six hours, 100 mL while Figure 3 gives approximately 70% under those nominal settings. The combined optimum is correctly retained as a source claim, not a reconciled protocol. No purified metal, complete mass balance or environmental superiority is adopted. |
+| authority | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061; Current live NCBI browser independently opened; curator-acquired original full taxonomy XML read | supports | Current species identifier resolves the stated species label; it does not identify/authenticate the experimental strain or consortium membership. |
+| named | /private/tmp/cmm-round78-resource-independent/named-validation.log; Actual independent reviewer two-record terminal output | supports | Checked 2 record(s); 0 failed. This is structural validation, not independent experimental confirmation. |
+| batch | /private/tmp/cmm-round78-final-gates.json; All FOUR actual commands and initial batch frozen owner inputs | supports | Initial batch terminal0 with input manifest unchanged at completion; log SHA256 60b35b7c12611e384dfd1cd7cd2c92d556efdbebebed28a28f69ffe4d2beb9a2. A later separate chukanovite correction does not change these two resource owners. Publication must separately use the eventual corrected-batch receipt. |
+| dedup | /private/tmp/cmm-round78-resource-independent/reviewer-dedup.json; Actual independent command with hidden/ignored files and followed links | context_only | Existing discovery leads and different battery/alloy feeds were checked. Resource identity and same-study lineage remain distinct. |
+| notices | /private/tmp/cmm-round78-resource-independent/notice-search.json; Exact DOI correction/retraction queries, current Crossref fields, live publisher and NCBI opens | context_only | No applicable notice found in the bounded returned sets or current Crossref relation/update fields. Publisher opens returned429; no exhaustive live supplement/Crossmark absence claim. |
+
+## Limits And Additional Notes
+
+- Culture and assay conditions conflict internally; the apparently optimal protocol and quantitative endpoint cannot be reconciled from this paper.
+- Citrate/pH characterization cites earlier work; no complete current metabolite profile or matched chemical control proves a unique mechanism.
+- Table 2 summarizes an earlier bacterial study; its original was not accepted here as independent mechanism evidence.
+- Neither complete original announces separate SI; live publisher access was unavailable, so the review does not prove an exhaustive current supplemental inventory.
+- No original instrument data, raw replicates or closed mass-balance reanalysis was available; all original text and page graphics were independently assessed.
+- Bounded notice searches do not prove that no correction or conflicting study exists. No criticality, industrial deployment, isolated product or environmental superiority is asserted.
+- Actual start was recorded before the initial native inspect. Re-inspection corrected target metadata to maintained/CultureBotAI repository and added history context; scientific bytes were unchanged.
+- All seven battery-paper pages or all 21 superalloy-paper pages were visually inspected, including every claim-bearing table and figure. Shared curator-acquired originals were independently read.
+- No corrective record finding was supported. Source limitations remain explicit rather than being converted into manufactured review issues.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T181301Z-spent-silver-oxide-zinc-button-cell-batteries-round78-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Spent silver-oxide–zinc button-cell batteries
+  round78
+started_at: '2026-10-14T18:06:47.580556Z'
+finished_at: '2026-10-14T18:13:01.514804Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: new_frontier peer authored the reviewed resource and history.
+    Reviewer authored separate palygorskite/saponite owners, independently assessed
+    shared primary originals, and made no reviewed owner/history edits. This is independent
+    assessment, not experimental replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of market-collected Ag–Zn button-cell powder as a distinct
+  secondary resource and filtered fungal spent-medium mobilization. Conflicting temperature/speed/time
+  protocols and Figure 2/3 yields remain explicit; no isolated product or industrial
+  deployment is established.
+source:
+  git_revision: 884152be5ef2accab670b604ddb344f4a55bf1d3
+  state: working_tree
+  inputs:
+  - path: data/records/spent-silver-oxide-zinc-button-cell-batteries.yaml
+    sha256: 684f2410ea1d47f98efb4aceec9bac78c2431d076cb5d9f5af1c58dcf031dccd
+    role: target
+  - path: history/records/spent-silver-oxide-zinc-button-cell-batteries/2026-10-14T180129Z-codex-f4aacb.yaml
+    sha256: ff96d5859783fefffc76f8e2c3903f060485b6711750d93193d1b08dcf793014
+    role: context
+scope:
+  description: Entire frozen resource owner, source identity, organism/biomass, conditions,
+    controls, results, contradictory evidence, scale and provenance; all claim-bearing
+    original figures/tables.
+  selection: Assigned full owner, not a sample.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:spent-silver-oxide-zinc-button-cell-batteries
+targets:
+- target_id: cmmmech:spent-silver-oxide-zinc-button-cell-batteries
+  path: data/records/spent-silver-oxide-zinc-button-cell-batteries.yaml
+  label: Spent silver-oxide–zinc button-cell batteries
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/spent-silver-oxide-zinc-button-cell-batteries.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent reviewer named strict validation
+  command: uv run --locked cmmmech validate data/records/spent-silver-oxide-zinc-button-cell-batteries.yaml
+    data/records/nickel-based-superalloy-residue-powders.yaml --require-records
+  status: passed
+  required: true
+  summary: Reviewer actually executed this two-record command and observed terminal
+    exit 0 and Checked 2 record(s); 0 failed. Start/finish timestamps were not separately
+    captured; retained terminal log is bound.
+  target_ids:
+  - cmmmech:spent-silver-oxide-zinc-button-cell-batteries
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Coordinator terminal batch gate independently verified
+  command: just check
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T18:07:04.891860+00:00 through 2026-10-14T18:10:27.645303+00:00;
+    terminal exit and retained log verified. This resource hash matches the initial
+    batch inputs and remains unchanged.
+  target_ids:
+  - cmmmech:spent-silver-oxide-zinc-button-cell-batteries
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Coordinator terminal batch gate independently verified
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T18:10:27.645322+00:00 through 2026-10-14T18:10:36.327502+00:00;
+    terminal exit and retained log verified. This resource hash matches the initial
+    batch inputs and remains unchanged.
+  target_ids:
+  - cmmmech:spent-silver-oxide-zinc-button-cell-batteries
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Coordinator terminal batch gate independently verified
+  command: uv run --locked cmmmech validate-history --base 884152be5ef2accab670b604ddb344f4a55bf1d3
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T18:10:36.327520+00:00 through 2026-10-14T18:10:45.575785+00:00;
+    terminal exit and retained log verified. This resource hash matches the initial
+    batch inputs and remains unchanged.
+  target_ids:
+  - cmmmech:spent-silver-oxide-zinc-button-cell-batteries
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_3
+  name: Coordinator terminal batch gate independently verified
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T18:10:45.575813+00:00 through 2026-10-14T18:10:53.945672+00:00;
+    terminal exit and retained log verified. This resource hash matches the initial
+    batch inputs and remains unchanged.
+  target_ids:
+  - cmmmech:spent-silver-oxide-zinc-button-cell-batteries
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/spent-silver-oxide-zinc-button-cell-batteries.yaml
+  locator: Entire native-inspected frozen owner
+  accessed_at: '2026-10-14T18:13:01.514804Z'
+  support: supports
+  summary: All owner fields read, exact bytes verified; no reviewer owner edits.
+  snapshot_sha256: 684f2410ea1d47f98efb4aceec9bac78c2431d076cb5d9f5af1c58dcf031dccd
+- evidence_id: history
+  kind: record_content
+  reference: history/records/spent-silver-oxide-zinc-button-cell-batteries/2026-10-14T180129Z-codex-f4aacb.yaml
+  locator: Canonical CREATE plus distinct inline event
+  accessed_at: '2026-10-14T18:13:01.514804Z'
+  support: supports
+  summary: Actual GPT-6/codex provenance, record ID, operation and refs checked; no
+    reviewer history edits.
+  snapshot_sha256: ff96d5859783fefffc76f8e2c3903f060485b6711750d93193d1b08dcf793014
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/batteries4040051
+  locator: Complete seven-page original; Methods 2.1–2.5, Tables 1–2, Figures 1–4;
+    all original page graphics independently inspected.
+  accessed_at: '2026-10-14T18:13:01.514804Z'
+  support: supports
+  summary: Table 1 gives 290±0.82 mg/g Zn, 35.86±0.31 Ag and 6.30±0.06 Hg in the powder.
+    Figure 1 supports approximately 80% Zn, 41% Ag and 2% Hg at six hours in the baseline
+    assay. Figure 2 reports near-complete Zn/Ag at 60°C, 150 rpm, six hours, 100 mL
+    while Figure 3 gives approximately 70% under those nominal settings. The combined
+    optimum is correctly retained as a source claim, not a reconciled protocol. No
+    purified metal, complete mass balance or environmental superiority is adopted.
+  snapshot_sha256: 131123c2eec4e01c0aecf8fbe537697919e8b4cce02e18e5cdc79daf5aed3dc4
+- evidence_id: authority
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061
+  locator: Current live NCBI browser independently opened; curator-acquired original
+    full taxonomy XML read
+  accessed_at: '2026-10-14T18:13:01.514804Z'
+  support: supports
+  summary: Current species identifier resolves the stated species label; it does not
+    identify/authenticate the experimental strain or consortium membership.
+  snapshot_sha256: d668c305ba04f31ca50a1582a5a9c85d6547109cbc132a097d5d2185a8c34ff8
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round78-resource-independent/named-validation.log
+  locator: Actual independent reviewer two-record terminal output
+  accessed_at: '2026-10-14T18:13:01.514804Z'
+  support: supports
+  summary: Checked 2 record(s); 0 failed. This is structural validation, not independent
+    experimental confirmation.
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round78-final-gates.json
+  locator: All FOUR actual commands and initial batch frozen owner inputs
+  accessed_at: '2026-10-14T18:13:01.514804Z'
+  support: supports
+  summary: Initial batch terminal0 with input manifest unchanged at completion; log
+    SHA256 60b35b7c12611e384dfd1cd7cd2c92d556efdbebebed28a28f69ffe4d2beb9a2. A later
+    separate chukanovite correction does not change these two resource owners. Publication
+    must separately use the eventual corrected-batch receipt.
+  snapshot_sha256: 521fb3c1411dc8efa71517369001e35272aeb24dd52f61b50323efd00629c3db
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round78-resource-independent/reviewer-dedup.json
+  locator: Actual independent command with hidden/ignored files and followed links
+  accessed_at: '2026-10-14T18:13:01.514804Z'
+  support: context_only
+  summary: Existing discovery leads and different battery/alloy feeds were checked.
+    Resource identity and same-study lineage remain distinct.
+  snapshot_sha256: c7c0b804dc8cbdc852b45756e74663cd80c36a8bc34ab63a3e60b171c53123d9
+  search_scope: Current and main records/research/reviews/history, curator current
+    raw and cited round25-button/frontier/bf-dust and round26/27-superalloy raw roots.
+    No exhaustive binary OCR or machine-wide absence claim.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round78-resource-independent/notice-search.json
+  locator: Exact DOI correction/retraction queries, current Crossref fields, live
+    publisher and NCBI opens
+  accessed_at: '2026-10-14T18:13:01.514804Z'
+  support: context_only
+  summary: No applicable notice found in the bounded returned sets or current Crossref
+    relation/update fields. Publisher opens returned429; no exhaustive live supplement/Crossmark
+    absence claim.
+  snapshot_sha256: c51504c66af49340a4914a9eb1cfd67dde018b638fd95372b1b9c1e7b6a3cc70
+  search_scope: First returned web result sets only; independent live opens and current
+    local Crossref metadata. An unrelated broad author listing correction label was
+    not attributed to this article.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: identity and claim boundaries
+  outcome: supported
+  summary: The market-collected, dismantled and dried powder is distinct from whole
+    devices, pure silver oxide, elemental Ag/Zn and existing zinc–manganese button
+    cells. Table 1 bulk digested inventory does not establish phase purity, commercial
+    model or discharge state. No resource criticality inherited from constituents.
+  target_ids:
+  - cmmmech:spent-silver-oxide-zinc-button-cell-batteries
+  evidence_ids:
+  - record
+  - primary
+  - authority
+  dimensions:
+  - name: criticality
+    value: No jurisdiction/list/edition assertion
+    definition: Secondary-resource identity does not inherit element criticality.
+    evidence_ids:
+    - record
+- assessment_id: methods
+  area: evidence
+  topic: methods and claim boundaries
+  outcome: supported
+  summary: Unaccessioned FIRDI Aspergillus niger is bounded to species, without importing
+    an earlier paper's strain. The 0.22 µm-filtered culture liquid is used for chemical
+    mobilization separately from living growth. Source culture 25/30°C, assay 6/8
+    h, 100/150 rpm and parameter-range discrepancies remain explicit. Citrate concentration/pH
+    are a source report citing an earlier study, not newly measured here. Matched
+    fresh-medium/acid controls and organism-specific causal increment are unavailable.
+  target_ids:
+  - cmmmech:spent-silver-oxide-zinc-button-cell-batteries
+  evidence_ids:
+  - record
+  - primary
+  - authority
+  dimensions:
+  - name: material_form
+    value: Market-collected dismantled Ag–Zn button-cell powder, dried at 60°C; no
+      authenticated pure phase or commercial model.
+    definition: Experimental feed identity is narrower than a pure compound or whole-device
+      inventory.
+    evidence_ids:
+    - primary
+  - name: organism_and_biomass
+    value: Filtered spent medium from source-labelled Aspergillus niger, unspecified
+      strain; living growth and leaching are separate.
+    definition: Taxon identifiers are species scoped, not authenticated strain claims.
+    evidence_ids:
+    - primary
+    - authority
+  - name: controls
+    value: No matched sterile fresh-medium, equivalent chemical-acid or pH control
+      reported.
+    definition: Limits exclusive microbial/mechanistic attribution.
+    evidence_ids:
+    - primary
+  - name: scale
+    value: Laboratory flask assays only
+    definition: No recovered product purity or industrial deployment demonstrated.
+    evidence_ids:
+    - primary
+- assessment_id: outcomes
+  area: evidence
+  topic: outcomes and claim boundaries
+  outcome: supported
+  summary: Table 1 gives 290±0.82 mg/g Zn, 35.86±0.31 Ag and 6.30±0.06 Hg in the powder.
+    Figure 1 supports approximately 80% Zn, 41% Ag and 2% Hg at six hours in the baseline
+    assay. Figure 2 reports near-complete Zn/Ag at 60°C, 150 rpm, six hours, 100 mL
+    while Figure 3 gives approximately 70% under those nominal settings. The combined
+    optimum is correctly retained as a source claim, not a reconciled protocol. No
+    purified metal, complete mass balance or environmental superiority is adopted.
+  target_ids:
+  - cmmmech:spent-silver-oxide-zinc-button-cell-batteries
+  evidence_ids:
+  - record
+  - primary
+  - authority
+- assessment_id: provenance
+  area: provenance
+  topic: History and exact-byte review evidence
+  outcome: supported
+  summary: Initial native inspect preceded scientific judgment. Corrected target metadata
+    and added history context were re-inspected without changing owner/history bytes.
+    Named validation and all four initial batch commands passed; resource hashes remain
+    frozen. Reviewer authored other clay records, not these resources.
+  target_ids:
+  - cmmmech:spent-silver-oxide-zinc-button-cell-batteries
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - dedup
+  - notices
+findings: []
+actions: []
+limitations:
+- Culture and assay conditions conflict internally; the apparently optimal protocol
+  and quantitative endpoint cannot be reconciled from this paper.
+- Citrate/pH characterization cites earlier work; no complete current metabolite profile
+  or matched chemical control proves a unique mechanism.
+- Table 2 summarizes an earlier bacterial study; its original was not accepted here
+  as independent mechanism evidence.
+- Neither complete original announces separate SI; live publisher access was unavailable,
+  so the review does not prove an exhaustive current supplemental inventory.
+- No original instrument data, raw replicates or closed mass-balance reanalysis was
+  available; all original text and page graphics were independently assessed.
+- Bounded notice searches do not prove that no correction or conflicting study exists.
+  No criticality, industrial deployment, isolated product or environmental superiority
+  is asserted.
+notes:
+- Actual start was recorded before the initial native inspect. Re-inspection corrected
+  target metadata to maintained/CultureBotAI repository and added history context;
+  scientific bytes were unchanged.
+- All seven battery-paper pages or all 21 superalloy-paper pages were visually inspected,
+  including every claim-bearing table and figure. Shared curator-acquired originals
+  were independently read.
+- No corrective record finding was supported. Source limitations remain explicit rather
+  than being converted into manufactured review issues.
+tags:
+- round78
+- secondary-resource
+- independent
+- primary-figures
+```

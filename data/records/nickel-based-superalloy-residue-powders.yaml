@@ -1,0 +1,106 @@
+id: cmmmech:nickel-based-superalloy-residue-powders
+name: Nickel-based superalloy residue powders
+material_kind: secondary_resource
+description: Source-designated industrial superalloy residue powders considered as secondary metal feeds,
+  distinct from nickel or cobalt elements, certified alloy grades and recovered metal products. The accepted
+  primary study tested three supplied stocks SAR-Ni 30167, SAR-In 32083 and SAR-Re 30168 within one resource
+  family. Their feed compositions and leaching responses remain separate; no one stock represents all
+  superalloys. Laboratory culture-filtrate experiments do not establish post-consumer provenance, industrial
+  deployment or complete feed recovery.
+sources:
+- id: constantin_2025
+  title: Constantin AD, Hall S, Pourhossein F, Farnaud S (2025). Strategies for Nickel and Cobalt Mobilisation
+    from Ni-Based Superalloy Residue Powders Using a Sustainable and Cost-Effective Bioleaching Method.
+    Processes 13(7):2157. DOI 10.3390/pr13072157; complete 21-page original, Sections 2–4, Tables 1–3
+    and Figures 1–9.
+  url: https://doi.org/10.3390/pr13072157
+  accessed_on: '2026-10-14'
+- id: ncbi_930
+  title: NCBI Taxonomy 930, current species name Acidithiobacillus thiooxidans. Species-level context
+    only; not authentication of the source's unnamed culture or identification of its separate iron/sulfur-oxidizing
+    consortium.
+  url: https://www.ncbi.nlm.nih.gov/datasets/taxonomy/930/
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: biogenic_lixiviant_mobilization
+  name: Nickel and cobalt mobilization with biogenic acid and ferric filtrates
+  process: bioleaching
+  description: Filtered culture media containing biogenic acid, ferric iron or both mobilized nickel and
+    cobalt from three superalloy residue stocks. The acid-containing arms generally gave greater measured
+    release than the less acidic ferric-only arm. Proton attack and ferric oxidation are proposed contributors,
+    but differing initial pH and the absence of matched sterile chemical controls prevent a unique causal
+    allocation or quantified microbial increment. The accepted result is laboratory dissolution into sampled
+    liquor, not isolation of nickel or cobalt products.
+  context: AAS Ltd., Sheffield, UK supplied residues sourced from nickel- and cobalt-based superalloy
+    bars. Exact commercial grades, prior service histories and manufacturing operations for each stock
+    are not identified. Approximately 35 g per stock was ball-milled with stainless-steel balls at 300
+    rpm for ten minutes; the fraction below 250 micrometres was used. The Bangor Acidophile Culture Collection
+    supplied source-named A. thiooxidans for Bio-acid production and an unresolved iron/sulfur oxidizing
+    consortium for Bio-ferric and combined media. No strain accessions or consortium-member identities
+    are reported. Culture production used mineral medium, sulfur and/or ferrous iron, initial pH adjusted
+    to 1.8 with sulfuric acid, 30 degrees C and 130 rpm, followed by 0.2 micrometre filtration. The opening
+    medium description and the subsequent arm-specific recipes are not completely aligned; no single inferred
+    recipe is substituted for them. Comparisons used 1% w/v powder in 100 mL filtrate in 250 mL flasks
+    at 30 degrees C and 130 rpm for seven days. Bio-acid and combined arms began at nominal pH 1.0, while
+    Bio-ferric had 45 mM ferric iron at pH 1.8. Separate Bio-acid series tested 130, 200 and 270 rpm.
+    Triplicate assays, evaporation replacement with sterile water, 0.22 micrometre leachate filtration,
+    ICP-OES, pH, redox potential and ferrozine iron measurements are described. Sampling-loss correction
+    is not explicit. The 0.1 M acid label in Table 3 is not an independent measurement of total biogenic
+    acid or the fraction added chemically.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:930
+    label: Acidithiobacillus thiooxidans
+  evidence:
+  - source_ref: constantin_2025
+    supports: support
+    explanation: Sections 2.1–2.4, Figures 1–5 and Tables 1–2 establish the three feed stocks, culture-filtrate
+      preparation and observed Ni/Co release. A. thiooxidans is assigned only to the Bio-acid arm; the
+      organism entry does not identify or causally assign the consortium arms. Bio-acid and combined media
+      outperformed ferric-only medium under different initial acidities, especially for SAR-In 32083.
+      Figure 5d shows only partial ferric reduction in that stock's ferric-only arm, contrary to the adjacent
+      blanket statement of complete reduction for all three stocks. Acidolysis, passivation and secondary
+      precipitation remain interpretations, not directly demonstrated surface phases or molecular pathways.
+  - source_ref: constantin_2025
+    supports: partial
+    explanation: Section 3.1 acknowledges incomplete aqua-regia feed digestion, and Figure 2 confirms
+      residual material. Equation 3 normalizes extraction using that digested feed concentration. Table
+      1's listed elemental means also sum above 1000 g/kg for SAR-Ni 30167 and SAR-Re 30168, so they are
+      not a closed total-feed mass balance. These limitations prevent interpreting the source percentages
+      as verified fractions of the entire original feed. XRF labels do not establish mineral species,
+      alloy-grade identity or quantitative phase purity.
+  - source_ref: constantin_2025
+    supports: support
+    explanation: 'Figure 6 and Section 3.3 support faster early mobilization at 270 rpm for SAR-Ni 30167
+      and SAR-Re 30168: the source reports about 60% Ni and 70% Co after one day for the first stock,
+      and about 60% Ni and 50% Co after two days for the second, on its own extraction denominator. This
+      is not a universal endpoint advantage: SAR-In nickel performs worse at 270 rpm than 130 rpm by day
+      seven, and SAR-Re cobalt at 130 rpm overtakes the faster-mixed arm later. The paper''s broader statement
+      that lower speed overtakes for both metals is not supported across every Figure 6 panel. The cited
+      conversion of a ten-percentage-point SAR-Re cobalt increase to approximately 7.45 g/kg does not
+      follow from Table 1''s 65.30 g/kg cobalt inventory; it is not imported.'
+  - source_ref: constantin_2025
+    supports: partial
+    explanation: Figure 9 compares no-added-peroxide Bio-acid with 1, 3, 5 and 7 mL additions of nominal
+      30% peroxide at 270 rpm. Nickel release was not improved across the tested stocks, and SAR-Re cobalt
+      also showed no general benefit. Some early cobalt values for the other stocks increased, without
+      a consistent final advantage. Section 2.3 describes ten days but Figure 9 ends at seven; Section
+      3.4 mentions a 2 mL SAR-In condition absent from the specified and plotted series. The paper's volume-to-millimolar
+      equivalence is not treated as a verified concentration conversion. No optimized peroxide recipe
+      or general passivation-removal mechanism is accepted from these inconsistencies. No purified product,
+      full economic/life-cycle assessment or industrial demonstration is reported; Section 3.5's favorable
+      deployment claims remain proposals. Table 3 summarizes other studies, not independent controls for
+      these feeds.
+  - source_ref: ncbi_930
+    supports: context_only
+    explanation: The authority confirms the species-level name and identifier used for the Bio-acid culture.
+      It does not authenticate that stock, identify the separate consortium or establish the mechanism
+      for every member of the species.
+curation_history:
+- timestamp: '2026-10-14T18:01:44.935187Z'
+  curator: Codex (GPT-6; codex)
+  action: CREATE
+  summary: Created the source-qualified secondary-resource owner; preserved conflicting conditions, incomplete
+    balances, controls, null results and laboratory scope.
+history_refs:
+- history/records/nickel-based-superalloy-residue-powders/2026-10-14T180136Z-codex-69e73c.yaml

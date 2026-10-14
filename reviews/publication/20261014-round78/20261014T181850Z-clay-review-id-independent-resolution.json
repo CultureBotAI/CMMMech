@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-10-14T18:16:35.536659Z",
+  "finished_at": "2026-10-14T18:18:50.817292Z",
+  "reviewer": "codex /root/round68_new_frontier",
+  "model": "GPT-6",
+  "independence": "Independent metadata verification: reviewer did not author either clay owner or either original/successor review. Reviewer authored two secondary-resource owners and reviewed chukanovite/sepiolite; no clay science reassessment is claimed.",
+  "scope": "Read-only parsed metadata comparison and exact current file/hash verification of palygorskite and saponite canonical-ID successors. No owner/history edits, experiment reproduction, new literature review, global coverage or hosted-CI claim.",
+  "base": "884152be5ef2accab670b604ddb344f4a55bf1d3",
+  "state": "working_tree",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "scientific_review": false,
+  "unresolved_corrective_findings": 0,
+  "findings": [],
+  "dispositions": [
+    {
+      "finding_id": "RM1",
+      "issue_key": "round78-clay-review-canonical-target-id",
+      "external_issue": "https://github.com/CultureBotAI/CMMMech/issues/258",
+      "status": "resolved",
+      "previous_observation": "reviews/publication/20261014-round78/20261014T181524Z-clay-review-id-initial.json",
+      "previous_observation_sha256": "c8b7740b23978ef4a72614e85f2e19b75e59d80ca35a0eec7461f70bece66ab2",
+      "reason": "All target identifiers now exactly match canonical YAML owner IDs in targets, scope, checks and assessments. Original scientific evidence, assessment text, verdict and source inputs remain unchanged after identifier normalization. Added context binds immutable originals and RM1; related_reviews retains exact original identities. Both successors explicitly disclose author self-correction, retain original owner-independent science, and delegate independent metadata verification. Exact parsed comparison and every retained input hash passed.",
+      "successors": [
+        {
+          "path": "reviews/structured/20261014T181620Z-palygorskite-round78-canonical-id-successor/review.yaml",
+          "sha256": "2d45b0396166a563ee22a124ddcb928cf3c3ca7d8e9034d8ae0ef2150b5d8007",
+          "original": "reviews/structured/20261014T181353Z-palygorskite-round78-independent/review.yaml",
+          "original_sha256": "7b48ba9df5494f7d26a2c38a6ab6ab27e63d3e54c90b0b9bcb3d431dccf340e9",
+          "target_id": "cmmmech:palygorskite",
+          "record_sha256": "5c37105c361d14c20dc66502dfdf19a2537ee9e1a45d92833b7e22237e35ff55"
+        },
+        {
+          "path": "reviews/structured/20261014T181622Z-saponite-round78-canonical-id-successor/review.yaml",
+          "sha256": "2dd58d90dadda2e7bf41e2363fda77220b4fd4a838199f17778933566684272c",
+          "original": "reviews/structured/20261014T181355Z-saponite-round78-independent/review.yaml",
+          "original_sha256": "1c77709450662d62e4e69962f59f9d9837bfcc6a868ec5fda45bcb60d8d1dc4e",
+          "target_id": "cmmmech:saponite",
+          "record_sha256": "edf1d6fe0f38f2339dfcd200989cc7e05e963cf45ee7c79afc4473f0d4c97a5f"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "Actual parsed metadata comparison",
+      "command": ".venv/bin/python /private/tmp/cmm-round78-frontier-reviews/check-clay-metadata.py",
+      "exit_code": 0,
+      "result": "Two original/successor pairs passed: canonical IDs, original evidence/science equivalence, unchanged inputs, precise related-review lineage and disclosure."
+    },
+    {
+      "name": "Current hashes immediately before save",
+      "result": "All original/successor review files, owner/history/schema inputs and RM1 artifacts matched the independently read comparison."
+    }
+  ],
+  "files": [
+    {
+      "path": "reviews/structured/20261014T181353Z-palygorskite-round78-independent/review.yaml",
+      "sha256": "7b48ba9df5494f7d26a2c38a6ab6ab27e63d3e54c90b0b9bcb3d431dccf340e9",
+      "bytes": 14553,
+      "role": "original_review"
+    },
+    {
+      "path": "reviews/structured/20261014T181353Z-palygorskite-round78-independent/review.md",
+      "sha256": "93ecf6a9330a79a19588be196f359c2fdc749a237b0eab23371622c12005bd5e",
+      "bytes": 24173,
+      "role": "original_render"
+    },
+    {
+      "path": "reviews/structured/20261014T181620Z-palygorskite-round78-canonical-id-successor/review.yaml",
+      "sha256": "2d45b0396166a563ee22a124ddcb928cf3c3ca7d8e9034d8ae0ef2150b5d8007",
+      "bytes": 16309,
+      "role": "successor_review"
+    },
+    {
+      "path": "reviews/structured/20261014T181620Z-palygorskite-round78-canonical-id-successor/review.md",
+      "sha256": "c3b3a0da4d40f2a3692adec8743aae875c075c3a4e9c4ac25e32776de9fa67d2",
+      "bytes": 26702,
+      "role": "successor_render"
+    },
+    {
+      "path": "data/records/palygorskite.yaml",
+      "sha256": "5c37105c361d14c20dc66502dfdf19a2537ee9e1a45d92833b7e22237e35ff55",
+      "bytes": 9011,
+      "role": "bound_source_input"
+    },
+    {
+      "path": "history/records/palygorskite/2026-10-14T180310Z-codex-9cb144.yaml",
+      "sha256": "36b2a91f8f2a504e07c14aa10c877952b482d33cd6746f3bfb00213f1b8a25b0",
+      "bytes": 983,
+      "role": "bound_source_input"
+    },
+    {
+      "path": "reviews/publication/20261014-round78/20261014T181524Z-clay-review-id-initial.json",
+      "sha256": "c8b7740b23978ef4a72614e85f2e19b75e59d80ca35a0eec7461f70bece66ab2",
+      "bytes": 2160,
+      "role": "bound_source_input"
+    },
+    {
+      "path": "src/cmmmech/schema/cmmmech.yaml",
+      "sha256": "f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c",
+      "bytes": 8300,
+      "role": "bound_source_input"
+    },
+    {
+      "path": "reviews/structured/20261014T181355Z-saponite-round78-independent/review.yaml",
+      "sha256": "1c77709450662d62e4e69962f59f9d9837bfcc6a868ec5fda45bcb60d8d1dc4e",
+      "bytes": 15027,
+      "role": "original_review"
+    },
+    {
+      "path": "reviews/structured/20261014T181355Z-saponite-round78-independent/review.md",
+      "sha256": "0e0267efe81236168d138a340cbfcad6ceda098806e8a53777f273f1db464413",
+      "bytes": 24897,
+      "role": "original_render"
+    },
+    {
+      "path": "reviews/structured/20261014T181622Z-saponite-round78-canonical-id-successor/review.yaml",
+      "sha256": "2dd58d90dadda2e7bf41e2363fda77220b4fd4a838199f17778933566684272c",
+      "bytes": 16767,
+      "role": "successor_review"
+    },
+    {
+      "path": "reviews/structured/20261014T181622Z-saponite-round78-canonical-id-successor/review.md",
+      "sha256": "16dc8ad18a308540e27917f6e992fed6b045f0e5446758f70a04aaa88cfd85da",
+      "bytes": 27402,
+      "role": "successor_render"
+    },
+    {
+      "path": "data/records/saponite.yaml",
+      "sha256": "edf1d6fe0f38f2339dfcd200989cc7e05e963cf45ee7c79afc4473f0d4c97a5f",
+      "bytes": 7886,
+      "role": "bound_source_input"
+    },
+    {
+      "path": "history/records/saponite/2026-10-14T180316Z-codex-c3277b.yaml",
+      "sha256": "1cd47bb281ea80a176bad75652e82c4c0eecf3c9875e7eb3ef03535b8992b0d5",
+      "bytes": 954,
+      "role": "bound_source_input"
+    },
+    {
+      "path": "reviews/publication/20261014-round78/20261014T181524Z-clay-review-id-initial.md",
+      "sha256": "a823bbf24ae24a455f6844794f01ec0ca1152711b6fb735a6297b041c324659d",
+      "bytes": 843,
+      "role": "original_RM1_render"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-reviews/check-clay-metadata.py",
+      "sha256": "feaaddd4f453bc7bbe40e78d10101dd88141f2e0f67bbbabeef698aedf6ae91f",
+      "bytes": 4604,
+      "role": "reviewer_external_check"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-reviews/clay-metadata-comparison.json",
+      "sha256": "b448812bff8cff8bdb872acbac4ed1c9f6566ada881a8edd788080c2ea7c95c6",
+      "bytes": 20930,
+      "role": "reviewer_external_check"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-reviews/metadata-checker-preparation.json",
+      "sha256": "baddc8417d6314a2012d82aa1212acb690095120fbe6387574b8f5ccf8e1fec3",
+      "bytes": 478,
+      "role": "reviewer_external_check"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-reviews/check-clay-metadata-initial.py",
+      "sha256": "57ea05b2d57d3ed9f116216b66ad76564ee3b56f524ce900ae800ebf749f70f9",
+      "bytes": 4134,
+      "role": "reviewer_external_check"
+    },
+    {
+      "path": "/private/tmp/cmm-round78-frontier-reviews/metadata-review-started.json",
+      "sha256": "963674ee79bae14749a1f2ce16ab345a75de2eb335f3bd3b16e0b37753553da1",
+      "bytes": 50,
+      "role": "reviewer_external_check"
+    }
+  ],
+  "limits": [
+    "Scientific support relies on the preserved independent original reviews; this observation does not repeat their literature assessment.",
+    "Exact whole-corpus coverage and native review validation remain separate coordinator gates; selecting these explicit canonical successors is necessary.",
+    "Initial comparison checker rejected an appended metadata-disclosure limitation under an overly strict unchanged-limits assumption; manual inspection confirmed the intended disclosure/title additions. The initial checker and honest preparation receipt remain external and bound; no record defect was inferred."
+  ],
+  "notes": [
+    "Native successor reviewer.independence remains independent of the owner author; its basis expressly discloses that metadata self-correction itself was not independently verified by that author. This artifact supplies the separate independent metadata check.",
+    "Original immutable observations and source evidence were not rewritten. Only this new disposition pair is saved by the metadata reviewer."
+  ]
+}

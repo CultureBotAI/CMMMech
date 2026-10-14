@@ -1,0 +1,110 @@
+id: cmmmech:saponite
+name: Saponite
+material_kind: mineral
+description: Saponite is an IMA-listed smectite-group mineral with variable Mg-Fe-Al composition, written (Ca,Na)0.3(Mg,Fe)3(Si,Al)4O10(OH)2.4H2O
+  in the September 2026 list. It has grandfathered status G and original-description year 1840, not a unique
+  approval accession. The laboratory material below is the authors' saponite assignment for poorly ordered
+  Mg-Al silicate associated with mixed microbial cultures. Its diffuse electron diffraction and lack of resolved
+  bulk XRD peaks do not independently establish a well-crystallized, phase-pure saponite product. This owner
+  is distinct from the smectite group and from co-precipitated carbonates; no constituent criticality designation
+  is inherited.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026, Saponite row, PDF p192 and list definitions.
+    Retained original re-inspected on the access date.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: handbook_saponite
+  title: Handbook of Mineralogy. Saponite, version 1.2 (2001). Complete one-page identity; identifies smectite-group
+    membership and additional analytical requirements for positive smectite identification.
+  url: https://www.handbookofmineralogy.org/pdfs/saponite.pdf
+  accessed_on: '2026-10-14'
+- id: del_buey_2023
+  title: 'del Buey, Sanz-Montero and Sanchez-Roman (2023). Bioinduced precipitation of smectites and carbonates
+    in photosynthetic diatom-rich microbial mats: Effect of culture medium. Applied Clay Science 238:106932.
+    Complete 12-page original, Figures 1-8 and Table 1; official supplementary DOCX, Figures S1-S5 and Tables
+    S1-S3. Main PDF acquired from the University of Granada repository, handle 10481/112264.'
+  url: https://doi.org/10.1016/j.clay.2023.106932
+  accessed_on: '2026-10-14'
+- id: del_buey_2023_si
+  title: Official supplementary material to del Buey et al. (2023), article S0169131723001199, mmc1.docx. Complete
+    original package; original microscopy and control diffractogram inspected, chart data and table cells read
+    from native XML.
+  url: https://ars.els-cdn.com/content/image/1-s2.0-S0169131723001199-mmc1.docx
+  accessed_on: '2026-10-14'
+- id: ncbi_diatoms
+  title: NCBI Taxonomy 2836, Bacillariophyta (diatoms), phylum. Broad mapping for unidentified pennate diatoms
+    in a mixed community, not a strain identification or causal assignment to every member.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2836&mode=Info
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: mat_associated_saponitic_precipitation
+  name: Community-associated precipitation of source-assigned saponitic material
+  process: biomineralization
+  microbial: true
+  organisms:
+  - id: NCBITaxon:2836
+    label: Bacillariophyta
+  description: Liquid cultures derived from Caballo Alba microbial mats developed Mg-Al-Si-rich layers and
+    pseudomorphs on degraded diatom frustules, assigned by the authors to saponite; some cyanobacteria-like
+    filaments were also coated. Dissolution of biogenic silica followed by silicate precipitation is the proposed
+    route. Spatial association and culture controls support a community effect but do not isolate a particular
+    strain, metabolism or living-cell requirement.
+  context: Mats collected in March 2019 from Caballo Alba lake, Segovia, Spain, inoculated modified ASN-III
+    liquid and 20 g/L agar semi-solid media. Methods report 1 mL inoculum, triplicate experiments, 30 degrees
+    C, seven months and dark/light conditions without an explicit photoperiod or separate light/dark mineral
+    outcomes. No additional water was added. Initial pH was adjusted to 7.4; liquid culture endpoints were
+    pH 8.0-8.3 versus 7.6 in the uninoculated liquid control. The medium supplied Mg, Al and dissolved silicate
+    as well as Ca and bicarbonate, so the diatom frustule is not the only available silicon source. The inoculum
+    was a mixed community containing at least two unnamed pennate-diatom morphotypes, cyanobacteria and other
+    bacteria, not a pure isolate. SEM preparations were fixed, ethanol-dehydrated and dried; TEM used powdered
+    material suspended in butanol. No in-situ phase time series, phase-specific mass yield or recovery process
+    was measured.
+  evidence:
+  - source_ref: del_buey_2023
+    supports: support
+    explanation: Methods 2.1-2.4 and Figures 3-6 show partly corroded frustules, Mg enrichment, Mg-Al-Si-bearing
+      layers, and diatom-shaped pseudomorphs in liquid cultures. Figure 7 shows comparatively preserved frustules
+      embedded in EPS in the semi-solid cultures. These observations support the source's culture-dependent
+      association and dissolution/precipitation interpretation, not direct tracking of individual atoms or
+      proof that EPS alone caused the difference.
+  - source_ref: del_buey_2023
+    supports: partial
+    explanation: The assignment is based on morphology and TEM/SEM EDS composition, including a reported saponitic
+      structural-formula range. Figure 6C/E shows diffuse rings and its caption calls the aggregates amorphous;
+      bulk XRD did not resolve clay peaks. No treated-clay diffraction series or refined phase fraction is
+      supplied. Accordingly, the material is retained as source-assigned saponitic, poorly ordered Mg-Al silicate
+      rather than independently confirmed phase-pure crystalline saponite.
+  - source_ref: del_buey_2023_si
+    supports: partial
+    explanation: Original Figures S2 and S4 corroborate the coated frustules/filaments and flaky Mg-Si-Al material.
+      Figure S5 resolves halite and source-assigned coalingite in the uninoculated liquid control. The main
+      text reports no clay mineral detected in controls, but control XRD alone cannot exclude amorphous Mg-silicate
+      when the biotic material is itself XRD-undetected. No killed-inoculum, isolated-frustule, pH-matched
+      or specific-metabolism control is described; the study does not establish a living-cell requirement or
+      exclusive biological necessity.
+  - source_ref: del_buey_2023
+    supports: partial
+    explanation: Table 1 records substantial Si and Al depletion even in the no-inoculum control, as well as
+      lower final Si in cultures. The printed 99.2-99.6% Si-consumption range does not match all three culture
+      cells; the Al culture value spans rows and its replication is unclear. These solution measurements are
+      not a saponite mass balance. The main text also cross-refers to Figure S3 for a control observation although
+      S3 is a community chart; S5 is the actual control diffractogram. No exact uptake efficiency or phase
+      yield is adopted.
+  - source_ref: del_buey_2023
+    supports: partial
+    explanation: The interpretation invokes photosynthesis, decaying biomass, EPS differences and local Mg
+      binding, but these contributions are not separately measured. Light/dark methods are not linked to separate
+      outcome arms. Carbonate diffraction, isotopic data and saturation modeling cannot establish the saponite
+      phase or a saponite-specific metabolism. Reported community percentages include chloroplast assignments
+      within 16S profiles; they are not a quantitative census of diatom species. This is laboratory evidence,
+      with no industrial extraction or demonstrated field-scale manufacture.
+curation_history:
+- timestamp: '2026-10-14T18:02:49.045937Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created saponite identity owner with a qualified mixed-community precipitation experiment, complete
+    original and supplementary evidence, explicit amorphous/phase-assignment uncertainty and non-causal control
+    boundaries.
+history_refs:
+- history/records/saponite/2026-10-14T180316Z-codex-c3277b.yaml
