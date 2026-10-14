@@ -1,0 +1,947 @@
+{
+  "timestamp": "2026-10-14T13:59:48.659299+00:00",
+  "scope": "Bounded round73 antimony mineral owner investigation; one accepted candidate, no quota or global exhaustion claim",
+  "worktree": "/private/tmp/CMMMech-expansion-round73-20261014",
+  "branch": "curate/cmm-expansion-round73-20261014",
+  "base": "ea4b9370fdb3d1ab23e5f43f6f9fe5f8d46a31e3",
+  "baseline": {
+    "started_at": "2026-10-14T13:49:53.206851+00:00",
+    "worktree": "/private/tmp/CMMMech-expansion-round73-20261014",
+    "base": "ea4b9370fdb3d1ab23e5f43f6f9fe5f8d46a31e3",
+    "commands": [
+      {
+        "command": [
+          "uv",
+          "sync",
+          "--quiet",
+          "--locked",
+          "--extra",
+          "dev",
+          "--offline"
+        ],
+        "started_at": "2026-10-14T13:49:53.207206+00:00",
+        "finished_at": "2026-10-14T13:49:55.221083+00:00",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "just",
+          "check"
+        ],
+        "started_at": "2026-10-14T13:49:55.221101+00:00",
+        "finished_at": "2026-10-14T13:52:59.130064+00:00",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate",
+          "--require-records"
+        ],
+        "started_at": "2026-10-14T13:52:59.130089+00:00",
+        "finished_at": "2026-10-14T13:53:07.298453+00:00",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate-history",
+          "--base",
+          "ea4b9370fdb3d1ab23e5f43f6f9fe5f8d46a31e3"
+        ],
+        "started_at": "2026-10-14T13:53:07.298480+00:00",
+        "finished_at": "2026-10-14T13:53:11.905878+00:00",
+        "exit_code": 0
+      }
+    ],
+    "finished_at": "2026-10-14T13:53:11.906014+00:00",
+    "exit_code": 0,
+    "log": "/private/tmp/cmm-round73-baseline.log",
+    "log_sha256": "ca98c5fceab9359b28a40ff1acd68dc7ca6d18958730cd901c7befcf1cbaed2b"
+  },
+  "accepted": {
+    "record": "data/records/senarmontite.yaml",
+    "material_identity": "Cubic Sb2O3 species; IMA September2026 row page197 statusRn, year1851; Handbook dimorphous with valentinite. No constituent criticality inherited.",
+    "primary": "10.1128/AEM.01970-15",
+    "locators": [
+      "Complete Methods, Results and Discussion; Table1; original Figures1–7 independently read by curator",
+      "Figure3B: displayed mixed-product CP-enrichment diffraction with Sen labels; trace sylvite/arcanite from medium",
+      "Enrichment Results: CP/HS source proportions and secondary CP72/28 mixture, not feed recovery fractions",
+      "Growth Results/Figures6–7: strain assays with senarmontite data not shown, tartrate-only comparators",
+      "Radioisotope Results: white precipitate also in uninoculated tubes; no mineral phase identified"
+    ],
+    "limits": [
+      "Dried60C48h processed solids; no in-situ phase series",
+      "Unresolved community not attributed to later pure isolates",
+      "Pure-strain phase data not displayed; current NCBI identities unresolved species",
+      "No demonstrated direct enzymatic crystallization or necessity of cells under all conditions",
+      "Tartrate supports growth; Sb-autotrophy not established by growth curves",
+      "Nominal isolate1mM tartrate formulation differs from Figure7 initialabout0.5mM; no imposed uniform dose or derived balance",
+      "No measured culture-pH series, senarmontite-specific mass balance, isolated recovery or industrial deployment"
+    ]
+  },
+  "deferred": [
+    {
+      "candidate": "valentinite; alternate senarmontite respiration evidence",
+      "doi": "10.1021/es404098z",
+      "title": "Abin and Hollibaugh2014, Dissimilatory Antimonate Reduction and Production of Antimony Trioxide Microcrystals by a Novel Microorganism",
+      "status": "Previously deferred round4 lead; original main remains unavailable. Thesis publicly indexed, not successfully downloaded. Original ACS SI acquired459499B; Fig2 EDS inspected but morphology/EDS cannot establish polymorph or full control scope.",
+      "next": "Acquire legitimate complete final article or author thesis26852 chapter2 including all XRD/controls, compare chapter to journal and exact SI rather than assume identical; verify MLFW-2 taxonomy before curation.",
+      "urls": [
+        "https://doi.org/10.1021/es404098z",
+        "https://openscholar.uga.edu/record/26852",
+        "https://openscholar.uga.edu/record/26852/files/abin_christopher_a_201805_phd.pdf",
+        "https://openscholar.uga.edu/nanna/record/26852/files/abin_christopher_a_201805_phd.pdf?registerDownload=1&version=1&withMetadata=0&withWatermark=0",
+        "https://api.figshare.com/v2/articles/2335393",
+        "https://ndownloader.figshare.com/files/3973006"
+      ]
+    },
+    {
+      "candidate": "valentinite/senarmontite",
+      "doi": "10.1016/j.jhazmat.2021.125100",
+      "title": "Yamamura et al.2021, Production of two morphologically different antimony trioxides by a novel antimonate-reducing bacterium, Geobacter sp. SVR",
+      "status": "Verified Crossref, Elsevier metadata and OpenAlex locations; no accessible full primary located in bounded routes. Abstract pH-dependent polymorph/kinetic claims not imported.",
+      "next": "Acquire complete main plus relevant SI and identify phase methods, organism/controls and mass balance before accepting either polymorph mechanism."
+    },
+    {
+      "candidate": "valentinite/senarmontite abiotic foundation",
+      "doi": "10.1016/j.gca.2013.01.033",
+      "title": "Biver and Shotyk2013, Stibiconite, senarmontite and valentinite: Dissolution rates at pH2–11 and isoelectric points",
+      "status": "Discovery abstract only; no kinetic values accepted.",
+      "next": "Full original methods/phase characterization required."
+    },
+    {
+      "candidate": "cervantite",
+      "status": "Not advanced after defensible senarmontite source selected; identity mentions and thermal-transformation leads do not establish microbial behavior.",
+      "next": "Prioritize complete phase-characterized primary evidence if this owner is pursued."
+    }
+  ],
+  "search": {
+    "provider": "web search tool",
+    "date": "2026-10-14",
+    "coverage": "First returned result sets, no pagination/date/domain filters. Direct primary routes and references followed where useful. Not an exhaustive literature search.",
+    "queries": [
+      "senarmontite valentinite microbial dissolution primary bacteria antimony oxide",
+      "cervantite microbial bioleaching antimony oxide transformation",
+      "senarmontite valentinite transformation dissolution experimental open access",
+      "\"Production of two morphologically different antimony trioxides\" pdf",
+      "\"senarmontite\" \"bacterium\" \"2014\"",
+      "\"Biver\" \"2013\" \"senarmontite\" pdf",
+      "\"Geobacter\" \"SVR\" \"antimony\" 2021 repository",
+      "Abin Hollibaugh 2014 antimonate respiration senarmontite valentinite pdf",
+      "\"10.1016/j.jhazmat.2021.125100\" pdf repository",
+      "\"antimonate\" \"valentinite\" \"PMC\"",
+      "\"Yamamura\" \"125100\" manuscript",
+      "\"abin_christopher_a_201805_phd.pdf\"",
+      "\"Dissimilatory Antimonate Reduction\" filetype:pdf",
+      "\"Desulfuribacillus stibiiarsenatis\" NCBI taxonomy MLFW-2",
+      "\"10.1021/es404098z\" correction retraction",
+      "\"10.1016/j.jhazmat.2021.125100\" correction retraction",
+      "\"senarmontite\" \"MLFW-2\" pH control",
+      "\"abin_christopher_a_201805_phd\" uga",
+      "\"Dissimilatory Antimonate\" \"pdf\" Abin Hollibaugh",
+      "\"Genetic and transcriptomic insights\" Abin download",
+      "\"10.1128/AEM.01970-15\" correction erratum retraction",
+      "\"Terry\" \"senarmontite\" \"tartrate\"",
+      "\"senarmontite\" \"valentinite\" \"10.1016/j.gca.2013.01.033\" pdf"
+    ],
+    "corrections": "No verified correction/retraction surfaced in these returned query sets; Crossref update-to absent and relation empty for three queried studies. This does not establish universal absence."
+  },
+  "dedup": {
+    "checked_at": "2026-10-14T13:57:40.590254+00:00",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-n",
+      "-i",
+      "senarmontite|sénarmontite|valentinite|cervantite|es404098z|10\\.1128/AEM\\.01970-15|jhazmat\\.2021\\.125100",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history",
+      "/private/tmp/cmm-round4-antimony-evidence-20261011",
+      "/private/tmp/cmm-round31-stibnite-research",
+      "/private/tmp/cmm-bes-ingest",
+      "/private/tmp/cmm-round72-arsenic-sulfides-research"
+    ],
+    "exit_code": 0,
+    "stdout": "/private/tmp/cmm-round73-antimony-minerals-research/dedup-final-raw-main.txt",
+    "stdout_sha256": "643dab8dc7416403bbf50212e80869637f24a8c914dde776106895a6acba9f9f",
+    "stderr": "",
+    "scope": "Main hidden/ignored-inclusive records/research/reviews/history and explicit referenced Sb/As raw roots, following symlinks. Not a machine-wide search."
+  },
+  "dedup_worktree": {
+    "command": "rg --no-ignore --hidden --follow -n -i senarmontite|valentinite|cervantite|01970-15|es404098z|125100 data/records research reviews history",
+    "result_path": "/private/tmp/cmm-round73-antimony-minerals-research/dedup-worktree.txt",
+    "notes": "Before owner creation: no existing Sb oxide mineral owner in searched trees. Abin2014 is a known deferred lead from round4; round72 says these candidates not pursued; bare125100 also matches irrelevant digest substrings. Existing elemental Sb/Johnson2021 and stibnite/Loni2020 are distinct materials/experiments."
+  },
+  "authority": {
+    "path": "/private/tmp/cmm-round31-stibnite-research/raw/ima-2026-09.pdf",
+    "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+    "pages": [
+      1,
+      2,
+      39,
+      46,
+      197,
+      226
+    ],
+    "scope": "Rechecked retained September2026 original; not a fresh acquisition."
+  },
+  "taxonomy": {
+    "current": [
+      {
+        "id": "NCBITaxon:1554528",
+        "label": "Hydrogenophaga sp. IDSBO-1",
+        "sequence": "KM199760.1"
+      },
+      {
+        "id": "NCBITaxon:1554529",
+        "label": "Variovorax sp. IDSBO-4",
+        "sequence": "KM199761.1"
+      }
+    ],
+    "difference": "Paper species assignments from99%16S are retained only as source-proposed; current NCBI strain-specific entries used."
+  },
+  "acquisitions": [
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/abin2018-thesis.pdf",
+      "requested_url": "https://openscholar.uga.edu/record/26852/files/abin_christopher_a_201805_phd.pdf",
+      "acquired_at": "2026-10-14T13:49:44.829759+00:00",
+      "status": 202,
+      "final_url": "https://openscholar.uga.edu/record/26852/files/abin_christopher_a_201805_phd.pdf",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "magic": "",
+      "fitness": "failed acquisition; not evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/abin2014-acs.html",
+      "requested_url": "https://pubs.acs.org/doi/full/10.1021/es404098z",
+      "acquired_at": "2026-10-14T13:49:44.831330+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "fitness": "failed acquisition; not evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/abin2014-figshare-search.json",
+      "requested_url": "https://api.figshare.com/v2/articles?resource_doi=10.1021/es404098z",
+      "acquired_at": "2026-10-14T13:49:44.830815+00:00",
+      "status": 200,
+      "final_url": "https://api.figshare.com/v2/articles?resource_doi=10.1021/es404098z",
+      "content_type": "application/json",
+      "bytes": 1184,
+      "sha256": "b78a89a27134ebe4a4462d3adfdc93e186a60e0c32c024b26aea680d987097d4",
+      "magic": "[{\"id\": 2335393, \"title\": \"Dis",
+      "fitness": "acquired artifact; see claim-specific assessment"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/yamamura2021-api.xml",
+      "requested_url": "https://api.elsevier.com/content/article/pii/S0304389421000649?httpAccept=text/xml",
+      "acquired_at": "2026-10-14T13:49:44.831082+00:00",
+      "status": 200,
+      "final_url": "https://api.elsevier.com/content/article/pii/S0304389421000649?httpAccept=text/xml",
+      "content_type": "text/xml;charset=UTF-8",
+      "bytes": 1881,
+      "sha256": "820328b1fac5a096c69a55771560fcae5f16034ccb7b7825903b4479e8405050",
+      "magic": "<full-text-retrieval-response ",
+      "fitness": "metadata only, not full article"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/abin2014-crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.1021/es404098z",
+      "acquired_at": "2026-10-14T13:49:44.831490+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1021/es404098z",
+      "content_type": "application/json",
+      "bytes": 12756,
+      "sha256": "92d806d156a2207e2b65f7878b82d510ad4f55ce2a9734edd75e3cb865608ab1",
+      "magic": "{\"status\":\"ok\",\"message-type\":",
+      "fitness": "acquired artifact; see claim-specific assessment"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/yamamura2021-crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.1016/j.jhazmat.2021.125100",
+      "acquired_at": "2026-10-14T13:49:44.944932+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1016/j.jhazmat.2021.125100",
+      "content_type": "application/json",
+      "bytes": 22878,
+      "sha256": "0e652809ef5a873783cb8d7689c90777e2bc7c1a8b48f8cde37ab945dd1af8fb",
+      "magic": "{\"status\":\"ok\",\"message-type\":",
+      "fitness": "acquired artifact; see claim-specific assessment"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/senarmontite-handbook.pdf",
+      "requested_url": "https://www.handbookofmineralogy.org/pdfs/senarmontite.pdf",
+      "acquired_at": "2026-10-14T13:49:45.254931+00:00",
+      "status": 200,
+      "final_url": "https://www.handbookofmineralogy.org/pdfs/senarmontite.pdf",
+      "content_type": "application/pdf",
+      "bytes": 53172,
+      "sha256": "55788d3c73387b85e4ede65ab788163f5dd82808af136d03f5dd9f1b26be584f",
+      "magic": "%PDF-1.6\r%����\r\n7 0 obj\r<</Lin",
+      "fitness": "acquired artifact; see claim-specific assessment"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/valentinite-handbook.pdf",
+      "requested_url": "https://www.handbookofmineralogy.org/pdfs/valentinite.pdf",
+      "acquired_at": "2026-10-14T13:49:45.270575+00:00",
+      "status": 200,
+      "final_url": "https://www.handbookofmineralogy.org/pdfs/valentinite.pdf",
+      "content_type": "application/pdf",
+      "bytes": 55235,
+      "sha256": "6f5ef538fddee396bdee34976a542d9bd38a4fd4fe5b0d0c4657e86f9cdcea5f",
+      "magic": "%PDF-1.6\r%����\r\n7 0 obj\r<</Lin",
+      "fitness": "acquired artifact; see claim-specific assessment"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/abin2018-thesis-nanna.pdf",
+      "requested_url": "https://openscholar.uga.edu/nanna/record/26852/files/abin_christopher_a_201805_phd.pdf?registerDownload=1&version=1&withMetadata=0&withWatermark=0",
+      "acquired_at": "2026-10-14T13:50:40.774779+00:00",
+      "status": 202,
+      "final_url": "https://openscholar.uga.edu/nanna/record/26852/files/abin_christopher_a_201805_phd.pdf?registerDownload=1&version=1&withMetadata=0&withWatermark=0",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "magic": "",
+      "fitness": "failed acquisition; not evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/abin2014-figshare-detail.json",
+      "requested_url": "https://api.figshare.com/v2/articles/2335393",
+      "acquired_at": "2026-10-14T13:50:40.775624+00:00",
+      "status": 200,
+      "final_url": "https://api.figshare.com/v2/articles/2335393",
+      "content_type": "application/json",
+      "bytes": 5855,
+      "sha256": "cc22f7343276303c8a676eb648640aa07a08f904dbb7e34efd2be0cc45d9ca9b",
+      "magic": "{\"files\": [{\"id\": 3973006, \"na",
+      "fitness": "acquired artifact; see claim-specific assessment"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/abin2014-uga-record.html",
+      "requested_url": "https://openscholar.uga.edu/record/26852",
+      "acquired_at": "2026-10-14T13:50:40.775874+00:00",
+      "status": 202,
+      "final_url": "https://openscholar.uga.edu/record/26852",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "magic": "",
+      "fitness": "failed acquisition; not evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/yamamura2021-openalex.json",
+      "requested_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.jhazmat.2021.125100",
+      "acquired_at": "2026-10-14T13:50:40.776402+00:00",
+      "status": 200,
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.jhazmat.2021.125100",
+      "content_type": "application/json",
+      "bytes": 19573,
+      "sha256": "a1f0aded03772d314b71c72b2567f48a219da22443b5b1cc1470e5f9e669060a",
+      "magic": "{\"id\":\"https://openalex.org/W3",
+      "fitness": "acquired artifact; see claim-specific assessment"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/aem2015-epmc.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1128/AEM.01970-15&format=json",
+      "acquired_at": "2026-10-14T13:50:40.776538+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1128/AEM.01970-15&format=json",
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 1083,
+      "sha256": "2fb4a4aa802bffd480a761ea4ce8f87a876e11f31e74174879ec979572adfe2d",
+      "magic": "{\"version\":\"6.9\",\"hitCount\":1,",
+      "fitness": "EuropePMC JSON index despite filename; not primary full text"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/abin2014-si.pdf",
+      "requested_url": "https://ndownloader.figshare.com/files/3973006",
+      "acquired_at": "2026-10-14T13:53:02.675984+00:00",
+      "status": 200,
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pstorage-acs-6854636/3973006/es404098z_si_001.pdf",
+      "content_type": "application/pdf",
+      "bytes": 459499,
+      "sha256": "0ad3e598b5b40595c3375de9c500d9eb23b2b1ccced7a8f8dc7a90eaceab13a4",
+      "magic": "%PDF-1.5\r%����\r\n123 0 obj\r<</L",
+      "final_url_note": "Ephemeral signed query removed; exact public request URL retained.",
+      "fitness": "acquired artifact; see claim-specific assessment"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4644646/fullTextXML",
+      "acquired_at": "2026-10-14T13:53:02.677124+00:00",
+      "error": "HTTP Error 500: ",
+      "fitness": "failed acquisition; not evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4644646/",
+      "acquired_at": "2026-10-14T13:53:02.677656+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4644646/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 214043,
+      "sha256": "a67440e9b81876b4062330904ff2568500ae63299c6efa914220b1832b7a3a25",
+      "magic": "\n<!DOCTYPE html>\n<html lang=\"e",
+      "fitness": "acquired artifact; see claim-specific assessment"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/warashina2024.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11206593/fullTextXML",
+      "acquired_at": "2026-10-14T13:53:02.678285+00:00",
+      "error": "HTTP Error 500: ",
+      "fitness": "failed acquisition; not evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/abin2018-legacy.pdf",
+      "requested_url": "https://getd.libs.uga.edu/pdfs/abin_christopher_a_201805_phd.pdf",
+      "acquired_at": "2026-10-14T13:53:02.678591+00:00",
+      "status": 202,
+      "final_url": "https://openscholar.uga.edu/search?ln=en&p=abin_christopher_a_201805_phd.pdf",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "magic": "",
+      "fitness": "failed acquisition; not evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/uga-api-record.json",
+      "requested_url": "https://openscholar.uga.edu/api/records/26852",
+      "acquired_at": "2026-10-14T13:53:03.241118+00:00",
+      "error": "HTTP Error 404: Not Found",
+      "fitness": "failed acquisition; not evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015-fig1.jpg",
+      "requested_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/84af/4644646/4673e3779626/zam9991167890001.jpg",
+      "acquired_at": "2026-10-14T13:54:47.043872+00:00",
+      "status": 200,
+      "final_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/84af/4644646/4673e3779626/zam9991167890001.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 66071,
+      "sha256": "b11ec72e9e9fb139010289dbc0fa3b8b24fa9ecfe0090ca18205c25a710f6ebb",
+      "magic": "����\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0001,\u0001,\u0000\u0000��\u0000C\u0000\u0003\u0002\u0002\u0002\u0002",
+      "fitness": "acquired artifact; see claim-specific assessment"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015-fig2.jpg",
+      "requested_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/84af/4644646/116b0586ebe0/zam9991167890002.jpg",
+      "acquired_at": "2026-10-14T13:54:47.042245+00:00",
+      "status": 200,
+      "final_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/84af/4644646/116b0586ebe0/zam9991167890002.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 80345,
+      "sha256": "5cc82ac49d6a036609d657ea401cc22209f108adf345bf58d4fa37799fb04634",
+      "magic": "����\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0001,\u0001,\u0000\u0000��\u0000C\u0000\u0003\u0002\u0002\u0002\u0002",
+      "fitness": "acquired artifact; see claim-specific assessment"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015-fig3.jpg",
+      "requested_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/84af/4644646/2e226e1e0ae0/zam9991167890003.jpg",
+      "acquired_at": "2026-10-14T13:54:47.043230+00:00",
+      "status": 200,
+      "final_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/84af/4644646/2e226e1e0ae0/zam9991167890003.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 90250,
+      "sha256": "d39e902e20a9aa94b2a27f6ee5120b418df0cfc41b08c527f6a4b7d4cf12609c",
+      "magic": "����\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0001,\u0001,\u0000\u0000��\u0000C\u0000\u0003\u0002\u0002\u0002\u0002",
+      "fitness": "acquired artifact; see claim-specific assessment"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015-fig4.jpg",
+      "requested_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/84af/4644646/58dc6edb5d8b/zam9991167890004.jpg",
+      "acquired_at": "2026-10-14T13:54:47.043471+00:00",
+      "status": 200,
+      "final_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/84af/4644646/58dc6edb5d8b/zam9991167890004.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 74360,
+      "sha256": "ca9ffcae0e92937c264ee323a74ed3383cf041a0e0f0e546de8063b8db453c2e",
+      "magic": "����\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0001,\u0001,\u0000\u0000��\u0000C\u0000\u0003\u0002\u0002\u0002\u0002",
+      "fitness": "acquired artifact; see claim-specific assessment"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015-fig5.jpg",
+      "requested_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/84af/4644646/744a34f16b45/zam9991167890005.jpg",
+      "acquired_at": "2026-10-14T13:54:47.043686+00:00",
+      "status": 200,
+      "final_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/84af/4644646/744a34f16b45/zam9991167890005.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 46390,
+      "sha256": "8e731d43f86857c11d941e2d5e4b542d6956b3fb9b02f9b1323ae979cb8af21c",
+      "magic": "����\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0001,\u0001,\u0000\u0000��\u0000C\u0000\u0003\u0002\u0002\u0002\u0002",
+      "fitness": "acquired artifact; see claim-specific assessment"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015-fig6.jpg",
+      "requested_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/84af/4644646/6b29fe80c964/zam9991167890006.jpg",
+      "acquired_at": "2026-10-14T13:54:47.315103+00:00",
+      "status": 200,
+      "final_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/84af/4644646/6b29fe80c964/zam9991167890006.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 95376,
+      "sha256": "79a08b6de2d055c204bb91b2acb1ac0e13da379da40643a5c11fcfcc5116e500",
+      "magic": "����\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0001,\u0001,\u0000\u0000��\u0000C\u0000\u0003\u0002\u0002\u0002\u0002",
+      "fitness": "acquired artifact; see claim-specific assessment"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015-fig7.jpg",
+      "requested_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/84af/4644646/445c43bcd359/zam9991167890007.jpg",
+      "acquired_at": "2026-10-14T13:54:47.318241+00:00",
+      "status": 200,
+      "final_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/84af/4644646/445c43bcd359/zam9991167890007.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 72277,
+      "sha256": "49e72447f656b32ff5a0701426aa01766214622ee108ce77d0988f5a79708132",
+      "magic": "����\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0001,\u0001,\u0000\u0000��\u0000C\u0000\u0003\u0002\u0002\u0002\u0002",
+      "fitness": "acquired artifact; see claim-specific assessment"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015.pdf",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4644646/pdf/zam8478.pdf",
+      "acquired_at": "2026-10-14T13:54:47.322402+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4644646/pdf/zam8478.pdf",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 21357,
+      "sha256": "2a02b6d6d520b8ed957b6358346276004a3e57d02bb48ffb988855d8ac27f559",
+      "magic": "<!doctype html><html lang=\"en-",
+      "fitness": "HTML challenge, not a PDF; not evidence"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015-crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.1128/AEM.01970-15",
+      "acquired_at": "2026-10-14T13:54:47.322636+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1128/AEM.01970-15",
+      "content_type": "application/json",
+      "bytes": 13227,
+      "sha256": "abf59b64b2b3001f31fb65f8b920ad98b199ca6fd68166501db9231307642160",
+      "magic": "{\"status\":\"ok\",\"message-type\":",
+      "fitness": "acquired artifact; see claim-specific assessment"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015-sequences.xml",
+      "requested_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KM199760,KM199761&rettype=gb&retmode=xml",
+      "acquired_at": "2026-10-14T13:54:47.330563+00:00",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KM199760,KM199761&rettype=gb&retmode=xml",
+      "content_type": "text/xml",
+      "bytes": 16031,
+      "sha256": "8b33613f7743a122bbb5679ab5e324ce7f334a680d16ca05d2ea42a79f1a3029",
+      "magic": "<?xml version=\"1.0\" encoding=\"",
+      "fitness": "acquired artifact; see claim-specific assessment"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015-taxa.xml",
+      "requested_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1554528,1554529&retmode=xml",
+      "acquired_at": "2026-10-14T13:55:49.633396+00:00",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1554528,1554529&retmode=xml",
+      "content_type": "text/xml; charset=UTF-8",
+      "bytes": 4626,
+      "sha256": "1dd00fa74ed244eb0849409f09fd831407a4e20e4911e68e2c87c17b876473db",
+      "magic": "<?xml version=\"1.0\" ?>\n<!DOCTY",
+      "fitness": "acquired artifact; see claim-specific assessment"
+    }
+  ],
+  "raw_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/abin2014-crossref.json",
+      "bytes": 12756,
+      "sha256": "92d806d156a2207e2b65f7878b82d510ad4f55ce2a9734edd75e3cb865608ab1"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/abin2014-figshare-detail.json",
+      "bytes": 5855,
+      "sha256": "cc22f7343276303c8a676eb648640aa07a08f904dbb7e34efd2be0cc45d9ca9b"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/abin2014-figshare-search.json",
+      "bytes": 1184,
+      "sha256": "b78a89a27134ebe4a4462d3adfdc93e186a60e0c32c024b26aea680d987097d4"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/abin2014-si-p1.png",
+      "bytes": 1144653,
+      "sha256": "edffba2f3a3aff7aaa5ce5e099c1bac73335c941b3181b96a23a586b479f0591"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/abin2014-si-p2.png",
+      "bytes": 396914,
+      "sha256": "416000d354d7049582cabc3ac43b0632cef1c899d7c83a38c60d52e69700d9b9"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/abin2014-si-p3.png",
+      "bytes": 228869,
+      "sha256": "be18c98d5340b376002fc21ba1e46326290a856d415c5902f54c1644d28ac715"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/abin2014-si-p4.png",
+      "bytes": 8635,
+      "sha256": "7c57acd6da585ab232055146eb0f72f2eb74a030000e79ef0eb8ea5972bd713a"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/abin2014-si.pdf",
+      "bytes": 459499,
+      "sha256": "0ad3e598b5b40595c3375de9c500d9eb23b2b1ccced7a8f8dc7a90eaceab13a4"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/abin2014-si.txt",
+      "bytes": 1542,
+      "sha256": "02829de782a53b81d64f4a296cc825d8a174c4df1b207497ccac651f6d637163"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/abin2014-uga-record.html",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/abin2018-legacy.pdf",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/abin2018-thesis-nanna.pdf",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/abin2018-thesis.pdf",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/acquire1.py",
+      "bytes": 1667,
+      "sha256": "fe4b42a4abc30b54e07849417f6f580a709adf2f6110a7b320723951bbece25c"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/acquire2.py",
+      "bytes": 1041,
+      "sha256": "f035baacb53bf8b6b2181976178fe88cf938c22e4f1a4308b11813f7d4021a16"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/acquire3.py",
+      "bytes": 1426,
+      "sha256": "b68c2ae00f6fd88a8df6da854e22ea9ab20d09175ecc01691cd3b44dad2c17a3"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/acquire4.py",
+      "bytes": 2029,
+      "sha256": "672d44cfff9fe6ba42632da1a4dbd9d989457859acd16e5a3520370525af54a3"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/acquire5.py",
+      "bytes": 984,
+      "sha256": "8d729e278f7c07f36996d6de3e5270d4b4cd8497873de3b37342b8917f8ce097"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/acquisition1.json",
+      "bytes": 4070,
+      "sha256": "e018f91ba02ecb2029ea605961007d0cd10b772ffa1ac754d6802ea84222e1ac"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/acquisition2.json",
+      "bytes": 2830,
+      "sha256": "bcad3ad63d00479dcbd81e23a5f6ba984ed38f43a2cb5c021e5b5a13f84f2c24"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/acquisition3.json",
+      "bytes": 2654,
+      "sha256": "b9db6949a65ab1bc25f7be8028d255b888a3c979450ab0d94edcd1ab561ef5e8"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/acquisition4.json",
+      "bytes": 6455,
+      "sha256": "b48cbc63531f2ab2f669d73e435595da3c6c283ca958256ff0e370bcfdd2619d"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/acquisition5.json",
+      "bytes": 615,
+      "sha256": "55b5cd8ff868b430eda10c946f6dd1a8bb5bdcda3dc12efb3f2a6986adabb898"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/aem2015-epmc.xml",
+      "bytes": 1083,
+      "sha256": "2fb4a4aa802bffd480a761ea4ce8f87a876e11f31e74174879ec979572adfe2d"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/build-dossier.py",
+      "bytes": 15215,
+      "sha256": "4e15787605dfa7298e9ced29e55ceecc40625d7d0e92c0b2052e7bb9d990d353"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/dedup-final-raw-main.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/dedup-final-raw-main.txt",
+      "bytes": 563130,
+      "sha256": "643dab8dc7416403bbf50212e80869637f24a8c914dde776106895a6acba9f9f"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/dedup-final.json",
+      "bytes": 1204,
+      "sha256": "cef9156db5b41555735df9cb4a7f6e0b4a40bc741b8e392b2021da1e4abe68b4"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/dedup-initial.txt",
+      "bytes": 1343,
+      "sha256": "f4412217123a4ed11e7f6b066d42b2d35e9e52c716539879c43a3be77907d1a0"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/dedup-raw.txt",
+      "bytes": 511,
+      "sha256": "47ffb7af808be80bc3a7dabcf90033dd6f9512c593033d75a73f775877e62057"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/dedup-worktree.txt",
+      "bytes": 6875,
+      "sha256": "df00414e6734908a867f19a5630316262284bfccee80267ba42874aa9924050a"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/frozen-records.json",
+      "bytes": 394,
+      "sha256": "204c8d7c784a5d8eba49961daf9802444a659e1561dcddd8ddc3501d0b5666a4"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/ima-p1.png",
+      "bytes": 253223,
+      "sha256": "ee2b51234cdfbba906c9c3046c1a834fbfd92c5efe39727d7fb00c656cba44d7"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/ima-p1.txt",
+      "bytes": 3600,
+      "sha256": "0d705ef2fdc34dcb70ba807c6a44ecc0335bbd424bcfe970440148ab5a96a935"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/ima-p197.png",
+      "bytes": 267872,
+      "sha256": "33d07b0a5711cf3001a08377f449ce0bf03207eac82a626bd257acc35430cd7c"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/ima-p197.txt",
+      "bytes": 3170,
+      "sha256": "c22eda475650b81e414993e4641385a5461b94a0d6fffb2797339861d3c78e4d"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/ima-p2.png",
+      "bytes": 85060,
+      "sha256": "f4fda62885e32b4720e53e9d7132e57303022d89358d81441a85e69b8da0b1aa"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/ima-p2.txt",
+      "bytes": 1102,
+      "sha256": "298fd19ddc6aad1efb7f8b0c28e57a717816c2573db5a04d0a1ff97e2e6ce6a2"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/ima-p226.png",
+      "bytes": 265257,
+      "sha256": "360ded6bcded9ce24e156977abac0742782f484b2a09c68404de3eff9c4485a6"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/ima-p226.txt",
+      "bytes": 3074,
+      "sha256": "4951721eb9219e6ba7b4f556b590d604c0a8e63bdde3677cad01d110abd99b86"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/ima-p39.png",
+      "bytes": 285514,
+      "sha256": "a2a3af7920facc9e0c77d41b44f253d985cae644ee5e59fcf8d1e1d13a48e54d"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/ima-p39.txt",
+      "bytes": 3529,
+      "sha256": "9eb6428d4b70b53b56fcad14516203664b5c15b3642025ef42dd022d8ea937a4"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/ima-p46.png",
+      "bytes": 277785,
+      "sha256": "fdb228b00f62d03b2ff6e4b0b9ca409a0e2f0fcd24fb77d14b80ac2a486a1b0b"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/ima-p46.txt",
+      "bytes": 3347,
+      "sha256": "02742c07cbbf28355f6a7aa7f2c8acc2b7c9b9023788485cd1048ccf5ca627d1"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/retained-ima-recheck.json",
+      "bytes": 305,
+      "sha256": "9cf2df042a7ee3fe043feee22385439aaaac9a2f9120616f3c39d01b6ce25b97"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/search1.json",
+      "bytes": 30785,
+      "sha256": "524a3dbd9702503e20430b87408290283ff429709ddab977d55dba3a1184657e"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/search2.json",
+      "bytes": 27535,
+      "sha256": "3b47a9e2b3db0bab993d80ec67e626a3a3efc853d39bee9bc6d4c2fd0c585302"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/search3.json",
+      "bytes": 30075,
+      "sha256": "f33713109d6a678d23dd6fa8c22c692147061f64933dfd002eb637a7ab19271c"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/senarmontite-draft.yaml",
+      "bytes": 8791,
+      "sha256": "57f394dd1b98ea1e88771fce3415efb7ab50b27b5afc57211c41efc7a8240b26"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/senarmontite-handbook-p1.png",
+      "bytes": 197832,
+      "sha256": "dac81643979c19008fcf6d582a0c7a5f9c205acf7356ea59b28985a3ff5f050f"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/senarmontite-handbook.pdf",
+      "bytes": 53172,
+      "sha256": "55788d3c73387b85e4ede65ab788163f5dd82808af136d03f5dd9f1b26be584f"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/senarmontite-handbook.txt",
+      "bytes": 2537,
+      "sha256": "215278a96a3c9cf0b7118779a9689eac4d502d389e123bc04dfc56af445666c9"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015-crossref.json",
+      "bytes": 13227,
+      "sha256": "abf59b64b2b3001f31fb65f8b920ad98b199ca6fd68166501db9231307642160"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015-fig1.jpg",
+      "bytes": 66071,
+      "sha256": "b11ec72e9e9fb139010289dbc0fa3b8b24fa9ecfe0090ca18205c25a710f6ebb"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015-fig2.jpg",
+      "bytes": 80345,
+      "sha256": "5cc82ac49d6a036609d657ea401cc22209f108adf345bf58d4fa37799fb04634"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015-fig3.jpg",
+      "bytes": 90250,
+      "sha256": "d39e902e20a9aa94b2a27f6ee5120b418df0cfc41b08c527f6a4b7d4cf12609c"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015-fig4.jpg",
+      "bytes": 74360,
+      "sha256": "ca9ffcae0e92937c264ee323a74ed3383cf041a0e0f0e546de8063b8db453c2e"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015-fig5.jpg",
+      "bytes": 46390,
+      "sha256": "8e731d43f86857c11d941e2d5e4b542d6956b3fb9b02f9b1323ae979cb8af21c"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015-fig6.jpg",
+      "bytes": 95376,
+      "sha256": "79a08b6de2d055c204bb91b2acb1ac0e13da379da40643a5c11fcfcc5116e500"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015-fig7.jpg",
+      "bytes": 72277,
+      "sha256": "49e72447f656b32ff5a0701426aa01766214622ee108ce77d0988f5a79708132"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015-sequences.xml",
+      "bytes": 16031,
+      "sha256": "8b33613f7743a122bbb5679ab5e324ce7f334a680d16ca05d2ea42a79f1a3029"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015-taxa.xml",
+      "bytes": 4626,
+      "sha256": "1dd00fa74ed244eb0849409f09fd831407a4e20e4911e68e2c87c17b876473db"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015.html",
+      "bytes": 214043,
+      "sha256": "a67440e9b81876b4062330904ff2568500ae63299c6efa914220b1832b7a3a25"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015.pdf",
+      "bytes": 21357,
+      "sha256": "2a02b6d6d520b8ed957b6358346276004a3e57d02bb48ffb988855d8ac27f559"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/terry2015.txt",
+      "bytes": 82237,
+      "sha256": "44418e31d747bd950d6834400b10148fe87be986d2029f1fe90a473a0acd260c"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/valentinite-handbook-p1.png",
+      "bytes": 230598,
+      "sha256": "61ee25c108abf9a0d1fa02da27559cc34ed619b95ce20114123f96a5d2d4e70e"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/valentinite-handbook.pdf",
+      "bytes": 55235,
+      "sha256": "6f5ef538fddee396bdee34976a542d9bd38a4fd4fe5b0d0c4657e86f9cdcea5f"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/valentinite-handbook.txt",
+      "bytes": 2970,
+      "sha256": "ef44e9f34c61751214be342e9cfaa5a8367b2d1f492eff9cf76eebf48fc85fde"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/yamamura2021-api.xml",
+      "bytes": 1881,
+      "sha256": "820328b1fac5a096c69a55771560fcae5f16034ccb7b7825903b4479e8405050"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/yamamura2021-crossref.json",
+      "bytes": 22878,
+      "sha256": "0e652809ef5a873783cb8d7689c90777e2bc7c1a8b48f8cde37ab945dd1af8fb"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-antimony-minerals-research/yamamura2021-openalex.json",
+      "bytes": 19573,
+      "sha256": "a1f0aded03772d314b71c72b2567f48a219da22443b5b1cc1470e5f9e669060a"
+    }
+  ],
+  "frozen_inputs": {
+    "frozen_at": "2026-10-14T13:58:06.471889+00:00",
+    "files": [
+      {
+        "path": "data/records/senarmontite.yaml",
+        "sha256": "3056e0f17442949bbbc0d02d2cee6364b68c520b46aeeec2c0262d3a520adaf7"
+      },
+      {
+        "path": "history/records/senarmontite/2026-10-14T135727Z-codex-173d19.yaml",
+        "sha256": "c4c13b74831db26b3152ee3eaa41e865c5b047eb22372a4fa3e56a04b89b2beb"
+      }
+    ]
+  },
+  "named_validation": {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "cmmmech",
+      "validate",
+      "data/records/senarmontite.yaml"
+    ],
+    "environment": {
+      "UV_OFFLINE": "1",
+      "UV_CACHE_DIR": "/private/tmp/cmmmech-uv-cache",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "result": "Checked1 record(s);0failed; exit0",
+    "gate_scope": "Named validation only. Root baseline receipt passed before writes; full final batch and independent scientific reviews remain parent responsibilities."
+  },
+  "reuse": "Primary main/figures and ACS SI read through public routes, redistribution not inferred. Handbook rights reserved; raw fulltexts remain outsideGit. IMA retained original declares CC-BY-SA3.0. Dossier contains curation assessment and hashes only.",
+  "schema": "Existing mineral, biomineralization and evidence fields sufficient; no schema/validator changes or mirrored tests.",
+  "remaining": "Independent scientific review and final batch checks. Source-access gaps are not record defects. No Git/GitHub mutation by this curator."
+}

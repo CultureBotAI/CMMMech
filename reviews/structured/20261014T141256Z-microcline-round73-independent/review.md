@@ -1,0 +1,464 @@
+# Independent scientific review of Microcline round 73
+
+- Review: 20261014T141256Z-microcline-round73-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T14:04:08.561023Z
+- Finished UTC: 2026-10-14T14:12:56.700155Z
+- Reviewer: codex /root/round68_phosphates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The microcline identity, heterogeneous field-specimen association and distinct laboratory null are supported. The record retains accessory apatite/albite, source phosphorus and qualitative-weathering discrepancies, and shared field lineage without claiming phase-specific extraction or recovery.
+
+## Scope And Provenance
+
+Entire frozen owner and linked CREATE history, claim-bearing primary methods/results/figures/tables and relevant supplement, authorities, uncertainty and bounded notice/conflict search.
+
+Selection: Assigned independent peer review; native inspect captured exact inputs before assessment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base ea4b9370fdb3d1ab23e5f43f6f9fe5f8d46a31e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:microcline | data/records/microcline.yaml | maintained | Microcline |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent reviewer named validation | passed | True | cmmmech:microcline | Actual reviewer execution 2026-10-14T14:10:04.170814+00:00 to 2026-10-14T14:10:07.762240+00:00; checked two frozen records, zero failed. |
+| Terminal coordinator batch gate | passed | True | cmmmech:microcline | Coordinator execution independently verified through terminal receipt, exit codes, trusted base and full log hash. |
+| Terminal coordinator batch gate | passed | True | cmmmech:microcline | Coordinator execution independently verified through terminal receipt, exit codes, trusted base and full log hash. |
+| Terminal coordinator batch gate | passed | True | cmmmech:microcline | Coordinator execution independently verified through terminal receipt, exit codes, trusted base and full log hash. |
+
+## Scientific And Domain Assessments
+
+### Species identity, material form and criticality
+
+identity: supported. Targets: cmmmech:microcline.
+
+Authority identity and ideal composition are correctly distinguished from experimental specimen composition, related minerals and commodities. No criticality designation, jurisdiction, list or edition is asserted.
+
+### Organism, substrate, preparation, conditions and controls
+
+evidence: supported. Targets: cmmmech:microcline.
+
+Natural heterogeneous 5–10 mm specimens, four 15-second ultrasonic cleanings and approximately two hours at 150 C before field exposure in punctured 8 mL bottles for 3–12 months. Field chemistry was measured, not fixed. A distinct laboratory assay used four 40 mL microcosms/material, 4 g chips, 50:50 groundwater/DI water, native sediment inoculum, 1 mM supplied DHBA and three months at 25 C in darkness.
+
+### Measured outcome, null evidence and proposed mechanism
+
+evidence: supported. Targets: cmmmech:microcline.
+
+Supported field association does not identify a taxon or microbial necessity. Accessory apatite in albite prevents allocating nutrient release solely to microcline. The laboratory increased biomass is not increased Si dissolution; the record expressly retains that null. No phase-specific rate, isolated product or industrial result is inferred.
+
+### Exact inputs, actual history and required gates
+
+provenance: supported. Targets: cmmmech:microcline.
+
+Frozen owner and original-source hashes are retained. CREATE scope is accurate; reviewer named validation and independently verified terminal batch gates passed. This independent record review does not authorize publication.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/microcline.yaml; Entire exact owner; native inspect before assessment | supports | The entire owner was independently read against original evidence; reviewer made no owner or history edit. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Definitions pp.1–2 and Microcline row PDF p.144; retained official original /private/tmp/cmm-round71-carbonates-research/ima2026-09.pdf; row pixels independently read | supports | K(AlSi3O8), grandfathered G, historical 1830; not a numbered approval accession. |
+| handbook | https://www.handbookofmineralogy.org/pdfs/microcline.pdf; Complete one-page original /private/tmp/cmm-round73-silicates-research/microcline-handbook.pdf; text and pixels checked | supports | Triclinic microcline and perthitic albite intergrowths are distinguished from a chemically pure experimental endmember. |
+| primary | https://doi.org/10.2138/am-1998-11-1241; Complete nine-page original /private/tmp/cmm-round72-silicates-research/rogers1998.pdf; pp.1533–1538, Tables 1–2 and all Figures 1–7 | supports | All original text and graphics assessed. South Dakota microcline has apatite within intergrown albite; Ontario specimen is homogeneous and P-poor. Punctured-bottle field exposures, chip preparation, enrichment cultures and surface observations are retained; separate acidic abiotic tests are not matched sterile field controls. |
+| lab | https://doi.org/10.1016/j.chemgeo.2003.09.001; Complete eighteen-page original /private/tmp/cmm-round72-silicates-research/rogers2004.pdf; Methods 2.5, Results 3.1/3.3, Tables 1–5, all Figures 1–10 | supports | All original text and graphics assessed. Field feldspar account explicitly reuses earlier lineage; new field glasses are separate. Laboratory microcline biomass increased without a Si increment, with weathering minus in Table 5. Four microcosms per material, native inoculum, supplied DHBA, air/iron and Tween-derived P, distinct blank subtractions and live-plus-dead counts constrain interpretation. |
+| limits | https://doi.org/10.2138/am-1998-11-1241; Abstract versus Table 1; 1998 Figure 6 versus 2004 Section 3.1; 2004Table 5 | partial | Phosphorus values conflict between the abstract and tables, and extensive versus light qualitative etching differs across accounts. The owner adopts no exact P grade or universal extent, preserves the Ontario null and laboratory Si null, and does not infer pure-phase rates or isolated recovery. |
+| history | history/records/microcline/2026-10-14T135842Z-codex-cf0f92.yaml; Entire canonical CREATE plus inline CREATE/history_refs | supports | Actual actor, UTC timestamp, target and scope agree with the curation; no invented historical authorship or self-review event. |
+| search | /private/tmp/cmm-round73-microcline-peer/independent-search.json; Four actual bounded DOI notice/conflict searches on 14 Oct 2026, first returned sets only | context_only | No affecting formal notice surfaced in the returned sets; primary source contradictions were directly assessed. Search snippets were not promoted to mechanism evidence. |
+| dedup | /private/tmp/cmm-round73-microcline-peer/dedup.json; Independent rg --no-ignore --hidden --follow across explicit current/main corpus and research, current reviews/history and relevant raw roots | context_only | 705 matching lines include context, existing source leads and this new owner. No duplicate-owner or global novelty claim is based on snippets; mineral species, constituent elements and experimental mixed resources remain distinct. |
+| named | /private/tmp/cmm-round73-microcline-peer/named-validation.json; Actual reviewer command, times, exit 0 and log hash | supports | Two named records passed, zero failed. Structural validation does not prove scientific truth. |
+| batch | /private/tmp/cmm-round73-final-gates.json; Terminal coordinator receipt; base and full log independently rehashed | supports | All required batch commands exit 0; log SHA256 6f0959c6f85b73ed48e499e1ce34c11716b1b7c632ad991aeaa1b463dd52c2e5. Receipt and log were read before saving this completed assessment. Actual log:317 tests passed,3 skipped;347 records,0 failed;401 histories,0 errors. |
+
+## Limits And Additional Notes
+
+- The heterogeneous South Dakota specimen contains apatite within albite intergrowths; no pure-microcline or phase-specific extraction inference is justified.
+- Field observations are associative and the 2004 feldspar summary shares the 1998 lineage; laboratory microcline shows no corresponding Si enhancement.
+- Primary phosphorus-value and qualitative etching discrepancies remain unresolved; no exact grade or universal extent is adopted.
+- The bounded searches do not establish that every later study or correction has been exhausted.
+- No supported corrective finding in this review scope; reviewer did not edit the owner or history.
+- Review start is the actual filesystem creation time of the native inspect output redirected by the reviewer command; output completion precedes the scientific assessment. The filesystem timing basis is retained rather than inventing an earlier start.
+- Native inspection: /private/tmp/cmm-round73-microcline-peer/inspect.json; source hash inventory: /private/tmp/cmm-round73-microcline-peer/source-hashes.json.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T141256Z-microcline-round73-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Microcline round 73
+started_at: '2026-10-14T14:04:08.561023Z'
+finished_at: '2026-10-14T14:12:56.700155Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The new_frontier peer authored this silicate owner, history
+    and source dossier. Reviewer authored the separate artinite and lansfordite owners
+    in this batch, but did not author or edit either reviewed silicate owner/history.
+    Native inspect preceded the scientific assessment.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The microcline identity, heterogeneous field-specimen association and distinct
+  laboratory null are supported. The record retains accessory apatite/albite, source
+  phosphorus and qualitative-weathering discrepancies, and shared field lineage without
+  claiming phase-specific extraction or recovery.
+source:
+  git_revision: ea4b9370fdb3d1ab23e5f43f6f9fe5f8d46a31e3
+  state: working_tree
+  inputs:
+  - path: data/records/microcline.yaml
+    sha256: cf98d9198bacd849620259155e00c36fcd6b13e063887b674f2e2921551622fb
+    role: target
+  - path: history/records/microcline/2026-10-14T135842Z-codex-cf0f92.yaml
+    sha256: 86e1ba2f34f4a2ad9a03d05ace450598eb341cb6743505c9240e3ce2fb29caa4
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire frozen owner and linked CREATE history, claim-bearing primary
+    methods/results/figures/tables and relevant supplement, authorities, uncertainty
+    and bounded notice/conflict search.
+  selection: Assigned independent peer review; native inspect captured exact inputs
+    before assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:microcline
+targets:
+- target_id: cmmmech:microcline
+  path: data/records/microcline.yaml
+  label: Microcline
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/microcline.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent reviewer named validation
+  command: uv run --locked cmmmech validate --require-records data/records/microcline.yaml
+    data/records/muscovite.yaml
+  status: passed
+  required: true
+  summary: Actual reviewer execution 2026-10-14T14:10:04.170814+00:00 to 2026-10-14T14:10:07.762240+00:00;
+    checked two frozen records, zero failed.
+  target_ids:
+  - cmmmech:microcline
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Terminal coordinator batch gate
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution independently verified through terminal receipt,
+    exit codes, trusted base and full log hash.
+  target_ids:
+  - cmmmech:microcline
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Terminal coordinator batch gate
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution independently verified through terminal receipt,
+    exit codes, trusted base and full log hash.
+  target_ids:
+  - cmmmech:microcline
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Terminal coordinator batch gate
+  command: uv run --locked cmmmech validate-history --base ea4b9370fdb3d1ab23e5f43f6f9fe5f8d46a31e3
+  status: passed
+  required: true
+  summary: Coordinator execution independently verified through terminal receipt,
+    exit codes, trusted base and full log hash.
+  target_ids:
+  - cmmmech:microcline
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/microcline.yaml
+  locator: Entire exact owner; native inspect before assessment
+  accessed_at: '2026-10-14T14:12:56.700155Z'
+  support: supports
+  summary: The entire owner was independently read against original evidence; reviewer
+    made no owner or history edit.
+  snapshot_sha256: cf98d9198bacd849620259155e00c36fcd6b13e063887b674f2e2921551622fb
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions pp.1–2 and Microcline row PDF p.144; retained official original
+    /private/tmp/cmm-round71-carbonates-research/ima2026-09.pdf; row pixels independently
+    read
+  accessed_at: '2026-10-14T14:12:56.700155Z'
+  support: supports
+  summary: K(AlSi3O8), grandfathered G, historical 1830; not a numbered approval accession.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/microcline.pdf
+  locator: Complete one-page original /private/tmp/cmm-round73-silicates-research/microcline-handbook.pdf;
+    text and pixels checked
+  accessed_at: '2026-10-14T14:12:56.700155Z'
+  support: supports
+  summary: Triclinic microcline and perthitic albite intergrowths are distinguished
+    from a chemically pure experimental endmember.
+  snapshot_sha256: bd122fa9bcdfb3cc338aceff86d8b5b637daf0e21088524a45d853b6f7ba5c59
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.2138/am-1998-11-1241
+  locator: Complete nine-page original /private/tmp/cmm-round72-silicates-research/rogers1998.pdf;
+    pp.1533–1538, Tables 1–2 and all Figures 1–7
+  accessed_at: '2026-10-14T14:12:56.700155Z'
+  support: supports
+  summary: All original text and graphics assessed. South Dakota microcline has apatite
+    within intergrown albite; Ontario specimen is homogeneous and P-poor. Punctured-bottle
+    field exposures, chip preparation, enrichment cultures and surface observations
+    are retained; separate acidic abiotic tests are not matched sterile field controls.
+  snapshot_sha256: 9c2f4d8c0deace3c84d294f484168d2df245213c40ac82b47cb45174b94e77f5
+- evidence_id: lab
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.chemgeo.2003.09.001
+  locator: Complete eighteen-page original /private/tmp/cmm-round72-silicates-research/rogers2004.pdf;
+    Methods 2.5, Results 3.1/3.3, Tables 1–5, all Figures 1–10
+  accessed_at: '2026-10-14T14:12:56.700155Z'
+  support: supports
+  summary: All original text and graphics assessed. Field feldspar account explicitly
+    reuses earlier lineage; new field glasses are separate. Laboratory microcline
+    biomass increased without a Si increment, with weathering minus in Table 5. Four
+    microcosms per material, native inoculum, supplied DHBA, air/iron and Tween-derived
+    P, distinct blank subtractions and live-plus-dead counts constrain interpretation.
+  snapshot_sha256: 06244978b661d9ae6e320de86077cde46d7205749f691b1aca78da158c9e9ab2
+- evidence_id: limits
+  kind: primary_source
+  reference: https://doi.org/10.2138/am-1998-11-1241
+  locator: Abstract versus Table 1; 1998 Figure 6 versus 2004 Section 3.1; 2004Table
+    5
+  accessed_at: '2026-10-14T14:12:56.700155Z'
+  support: partial
+  summary: Phosphorus values conflict between the abstract and tables, and extensive
+    versus light qualitative etching differs across accounts. The owner adopts no
+    exact P grade or universal extent, preserves the Ontario null and laboratory Si
+    null, and does not infer pure-phase rates or isolated recovery.
+  snapshot_sha256: 9c2f4d8c0deace3c84d294f484168d2df245213c40ac82b47cb45174b94e77f5
+- evidence_id: history
+  kind: record_content
+  reference: history/records/microcline/2026-10-14T135842Z-codex-cf0f92.yaml
+  locator: Entire canonical CREATE plus inline CREATE/history_refs
+  accessed_at: '2026-10-14T14:12:56.700155Z'
+  support: supports
+  summary: Actual actor, UTC timestamp, target and scope agree with the curation;
+    no invented historical authorship or self-review event.
+  snapshot_sha256: 86e1ba2f34f4a2ad9a03d05ace450598eb341cb6743505c9240e3ce2fb29caa4
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round73-microcline-peer/independent-search.json
+  locator: Four actual bounded DOI notice/conflict searches on 14 Oct 2026, first
+    returned sets only
+  accessed_at: '2026-10-14T14:12:56.700155Z'
+  support: context_only
+  summary: No affecting formal notice surfaced in the returned sets; primary source
+    contradictions were directly assessed. Search snippets were not promoted to mechanism
+    evidence.
+  snapshot_sha256: 7bf00fcbb2c3ebe3aa41768e8cf8461175c32ecef3acc6b06f8c87e246ff5dce
+  search_scope: Exact queries and returned primary leads retained; no pagination or
+    exhaustive absence claim.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round73-microcline-peer/dedup.json
+  locator: Independent rg --no-ignore --hidden --follow across explicit current/main
+    corpus and research, current reviews/history and relevant raw roots
+  accessed_at: '2026-10-14T14:12:56.700155Z'
+  support: context_only
+  summary: 705 matching lines include context, existing source leads and this new
+    owner. No duplicate-owner or global novelty claim is based on snippets; mineral
+    species, constituent elements and experimental mixed resources remain distinct.
+  snapshot_sha256: ba068bcaad9d9c99f0abbb459944b961f10369e25cf47fa9582e8a579678a163
+  search_scope: Exact explicit roots, text globs, exit 0 and empty stderr retained;
+    hidden and ignored files included, relevant symlinks followed.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round73-microcline-peer/named-validation.json
+  locator: Actual reviewer command, times, exit 0 and log hash
+  accessed_at: '2026-10-14T14:12:56.700155Z'
+  support: supports
+  summary: Two named records passed, zero failed. Structural validation does not prove
+    scientific truth.
+  snapshot_sha256: 30bd51539cf81778f9f0e352c44dc09be4daa8e4407a8bd24c8b9c08eaf93342
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round73-final-gates.json
+  locator: Terminal coordinator receipt; base and full log independently rehashed
+  accessed_at: '2026-10-14T14:12:56.700155Z'
+  support: supports
+  summary: All required batch commands exit 0; log SHA256 6f0959c6f85b73ed48e499e1ce34c11716b1b7c632ad991aeaa1b463dd52c2e5.
+    Receipt and log were read before saving this completed assessment. Actual log:317
+    tests passed,3 skipped;347 records,0 failed;401 histories,0 errors.
+  snapshot_sha256: 484909cb53410de5f4e1def132320739ec1c26f81c24f575fa23e9c03aa31791
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species identity, material form and criticality
+  outcome: supported
+  summary: Authority identity and ideal composition are correctly distinguished from
+    experimental specimen composition, related minerals and commodities. No criticality
+    designation, jurisdiction, list or edition is asserted.
+  target_ids:
+  - cmmmech:microcline
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  dimensions:
+  - name: material_form
+    value: Triclinic KAlSi3O8 microcline; heterogeneous experimental specimens
+    definition: Ideal identity does not certify the purity or exact composition of
+      an experimental specimen.
+    evidence_ids:
+    - ima
+    - handbook
+    - primary
+  - name: criticality
+    value: No designation asserted
+    definition: No inheritance from a constituent element or commodity; absence of
+      a claim is not universal noncriticality.
+    evidence_ids:
+    - record
+- assessment_id: methods
+  area: evidence
+  topic: Organism, substrate, preparation, conditions and controls
+  outcome: supported
+  summary: Natural heterogeneous 5–10 mm specimens, four 15-second ultrasonic cleanings
+    and approximately two hours at 150 C before field exposure in punctured 8 mL bottles
+    for 3–12 months. Field chemistry was measured, not fixed. A distinct laboratory
+    assay used four 40 mL microcosms/material, 4 g chips, 50:50 groundwater/DI water,
+    native sediment inoculum, 1 mM supplied DHBA and three months at 25 C in darkness.
+  target_ids:
+  - cmmmech:microcline
+  evidence_ids:
+  - record
+  - primary
+  - lab
+  - limits
+  dimensions:
+  - name: organism_and_biomass
+    value: Unresolved indigenous groundwater/sediment microbial community; no species
+      or strain identifier asserted.
+    definition: Biological scope is limited to the source-supported community or living
+      culture.
+    evidence_ids:
+    - record
+    - primary
+    - lab
+    - limits
+  - name: controls
+    value: Contrasting natural specimens and separate abiotic acid tests in 1998;
+      distinct sterile/blank corrections and laboratory null in 2004. No matched sterile
+      field microcline arm.
+    definition: Comparator design limits causal interpretation.
+    evidence_ids:
+    - record
+    - primary
+    - lab
+    - limits
+  - name: deployment
+    value: Field association and laboratory assays only
+    definition: No industrial deployment or isolated product recovery is demonstrated.
+    evidence_ids:
+    - record
+    - primary
+- assessment_id: outcome
+  area: evidence
+  topic: Measured outcome, null evidence and proposed mechanism
+  outcome: supported
+  summary: Supported field association does not identify a taxon or microbial necessity.
+    Accessory apatite in albite prevents allocating nutrient release solely to microcline.
+    The laboratory increased biomass is not increased Si dissolution; the record expressly
+    retains that null. No phase-specific rate, isolated product or industrial result
+    is inferred.
+  target_ids:
+  - cmmmech:microcline
+  evidence_ids:
+  - record
+  - primary
+  - lab
+  - limits
+- assessment_id: provenance
+  area: provenance
+  topic: Exact inputs, actual history and required gates
+  outcome: supported
+  summary: Frozen owner and original-source hashes are retained. CREATE scope is accurate;
+    reviewer named validation and independently verified terminal batch gates passed.
+    This independent record review does not authorize publication.
+  target_ids:
+  - cmmmech:microcline
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - search
+  - dedup
+findings: []
+actions: []
+limitations:
+- The heterogeneous South Dakota specimen contains apatite within albite intergrowths;
+  no pure-microcline or phase-specific extraction inference is justified.
+- Field observations are associative and the 2004 feldspar summary shares the 1998
+  lineage; laboratory microcline shows no corresponding Si enhancement.
+- Primary phosphorus-value and qualitative etching discrepancies remain unresolved;
+  no exact grade or universal extent is adopted.
+- The bounded searches do not establish that every later study or correction has been
+  exhausted.
+notes:
+- No supported corrective finding in this review scope; reviewer did not edit the
+  owner or history.
+- Review start is the actual filesystem creation time of the native inspect output
+  redirected by the reviewer command; output completion precedes the scientific assessment.
+  The filesystem timing basis is retained rather than inventing an earlier start.
+- 'Native inspection: /private/tmp/cmm-round73-microcline-peer/inspect.json; source
+  hash inventory: /private/tmp/cmm-round73-microcline-peer/source-hashes.json.'
+tags:
+- round73
+- microcline
+- independent
+- primary-figures
+- qualified-microbial
+```

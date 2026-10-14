@@ -1,0 +1,183 @@
+{
+  "timestamp": "2026-10-14T13:59:07.346843+00:00",
+  "base": "ea4b9370fdb3d1ab23e5f43f6f9fe5f8d46a31e3",
+  "record": "data/records/end-of-life-cigs-photovoltaic-modules.yaml",
+  "owner_sha256": "a93ae850040479094386d847ae1b23d30a4f299acc3bc282f8fe12b874e5c9d4",
+  "history": [
+    "history/records/end-of-life-cigs-photovoltaic-modules/2026-10-14T135848Z-codex-1f7db2.yaml"
+  ],
+  "selection": "A separate documented end-of-life thin-film resource with complete primary chemical-leaching evidence. No microbial or criticality claim.",
+  "raw_root": "/private/tmp/cmm-round73-cigs-research",
+  "sources": [
+    {
+      "role": "primary_support",
+      "doi": "10.3390/materproc2021005051",
+      "path": "/private/tmp/cmm-round73-cigs-research/cigs2021-res.pdf",
+      "sha256": "894a709becf47c12213d048798455c5ff0f2a22a5749f88e8501529ca06a036e",
+      "bytes": 1969337,
+      "inspection": "All six pages, Figures1\u20134, Tables1\u20134, methods/results/references; original rendered pages visually inspected.",
+      "license": "CC BY4 stated in publisher PDF"
+    },
+    {
+      "role": "screened_followup_only",
+      "doi": "10.3390/recycling10030086",
+      "path": "/private/tmp/cmm-round73-cigs-research/cigs2025-main.pdf",
+      "sha256": "3e74480e85ac4bfc8ec078b58f97e77d275b35bce38de17f69d385bb7d55bd4b",
+      "inspection": "Complete main text read; original graphic panels not fully independently inspected. Not evidence for this owner.",
+      "limits": "NICE Solar panel lacks explicit used/decommissioned provenance in methods. Unspiked R1 and 1g indium-spiked R2 must remain distinct; Methods 200 rpm versus Table 1: 500 rpm, peroxide35% versus30%, acidic leach versus reportedpH2\u20133, and solution depletion versus isolated-product yield need resolution."
+    },
+    {
+      "role": "context_screen_only",
+      "title": "Ioanna Teknetzi2023 Chalmers licentiate thesis",
+      "path": "/private/tmp/cmm-round73-cigs-research/teknetzi2023-thesis.pdf",
+      "sha256": "d9b19ab60c9b9be87f9b05d8fc5ccedfb0c0e7f3673fff2839d5d3ec3bcc0cf3",
+      "inspection": "Title/abstract/publication list and selected methods only; not complete thesis review. Canonical filename corrects provisional acquisition filename gustafsson2023-thesis.pdf, whose bytes are identical.",
+      "limits": "Factory-supplied flexible cells do not establish actual end-of-life provenance. No owner claim imported."
+    }
+  ],
+  "acquisition_receipts": [
+    {
+      "path": "/private/tmp/cmm-round73-cigs-research/acquisition-initial.json",
+      "sha256": "502337d6f1ec39241c9326b23060426643a17487400407da4c982167f13a3223"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-cigs-research/acquisition-second.json",
+      "sha256": "e9670a5f15767fd107974f53d21f025e2564b912fa6b43e682bc4a8e264bdaff"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-cigs-research/thesis-identity.json",
+      "sha256": "edbb3694ec2a86bc6950aba444159ecf0d715498301a02228b7c23e8d9287ffe"
+    }
+  ],
+  "dedup_searches": [
+    {
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-i",
+        "-n",
+        "CIGS|copper.indium.gallium.selenide|materproc2021005051|recycling10030086",
+        "data",
+        "research",
+        "reviews",
+        "history",
+        "docs",
+        ".claude"
+      ],
+      "cwd": "/private/tmp/CMMMech-expansion-round73-20261014",
+      "exit_code": 0,
+      "output": "/private/tmp/cmm-round73-cigs-research/dedup-worktree.txt",
+      "sha256": "cb09c9ec3d6a0dbbf2f4aa5eec61c3adedec3d9f16497e97078c2bd905c51024"
+    },
+    {
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-i",
+        "-n",
+        "CIGS|copper.indium.gallium.selenide|materproc2021005051|recycling10030086",
+        "data",
+        "research",
+        "reviews",
+        "history",
+        "docs",
+        ".claude"
+      ],
+      "cwd": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech",
+      "exit_code": 0,
+      "output": "/private/tmp/cmm-round73-cigs-research/dedup-main.txt",
+      "sha256": "7fa24f4f58dd73d96eabec282c529be97e96c539159efb4bb8ed2f85af335192"
+    },
+    {
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-i",
+        "-l",
+        "CIGS|copper.indium.gallium.selenide|materproc2021005051|recycling10030086",
+        "/private/tmp/cmm-round22-pv-raw"
+      ],
+      "exit_code": 0,
+      "output": "/private/tmp/cmm-round73-cigs-research/cmm-round22-pv-raw-matches.txt",
+      "sha256": "45b819c3beb21e810f5d2f2acd07310b44a890155e64b7b15b9e513dd19b4e5d"
+    },
+    {
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-i",
+        "-l",
+        "CIGS|copper.indium.gallium.selenide|materproc2021005051|recycling10030086",
+        "/private/tmp/cmm-round22-pv-independent"
+      ],
+      "exit_code": 0,
+      "output": "/private/tmp/cmm-round73-cigs-research/cmm-round22-pv-independent-matches.txt",
+      "sha256": "b8dd1e01071377e34af5518961ea0a7fda7ed77816375f9adce04583591df1a1"
+    },
+    {
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-i",
+        "-l",
+        "CIGS|copper.indium.gallium.selenide|materproc2021005051|recycling10030086",
+        "/private/tmp/cmm-round10-ti-zr-raw"
+      ],
+      "exit_code": 1,
+      "output": "/private/tmp/cmm-round73-cigs-research/cmm-round10-ti-zr-raw-matches.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-i",
+        "-l",
+        "CIGS|copper.indium.gallium.selenide|materproc2021005051|recycling10030086",
+        "/private/tmp/cmm-round57-anode-slime-research"
+      ],
+      "exit_code": 0,
+      "output": "/private/tmp/cmm-round73-cigs-research/cmm-round57-anode-slime-research-matches.txt",
+      "sha256": "3190ce6c31f17993bb440bcd22e4e16b51370d286c57a6cf6762d2fdc39dd2a0"
+    }
+  ],
+  "dedup_conclusion": "No existing CIGS end-of-life owner found within the listed hidden/ignored-inclusive boundaries; existing crystalline-silicon owner explicitly excludes CIGS. Prior round22 PV reports defer CIGS. Search hits and DOI lineage reviewed; not a global absence or exhaustion claim.",
+  "web_search": {
+    "date": "2026-10-14",
+    "queries": [
+      "\"10.3390/materproc2021005051\" correction erratum supplementary retraction",
+      "\"Hydrometallurgical Treatment\" \"CIGS\" supplementary Theocharis",
+      "\"CIGS\" \"bioleaching\" primary study"
+    ],
+    "scope": "First returned web result windows, no date/domain filters or exhaustive pagination. Publisher result corroborated primary identity. No correction/retraction or SI notice found in inspected original, Crossref relation metadata or returned result windows; this is bounded, not proof of absence. Direct publisher HTML/PDF initially blocked403/429; official mdpi-res PDF acquired200. No CIGS microbial result accepted from review snippets."
+  },
+  "validation": {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "cmmmech",
+      "validate",
+      "data/records/end-of-life-cigs-photovoltaic-modules.yaml"
+    ],
+    "exit_code": 0,
+    "output_sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e"
+  },
+  "limits": [
+    "No universal module composition or industrial deployment.",
+    "No ontology ID invented for a composite resource.",
+    "Additional full-source CIGS studies remain research candidates."
+  ]
+}

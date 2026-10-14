@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-10-14T14:09:01.647084+00:00",
+  "scope": "Corrective successor of initial artinite curation; lansfordite unchanged",
+  "issue": "https://github.com/CultureBotAI/CMMMech/issues/236",
+  "finding": "CMMMech.artinite.daily-shaking-duration",
+  "initial_review": "reviews/structured/20261014T140422Z-artinite-round73-initial/review.yaml",
+  "initial_review_sha256": "12ea998cf2dfcba703afb6b905486fdabeb906ee30b0e026ab61e0fbf6f77fd6",
+  "initial_freeze": {
+    "path": "/private/tmp/cmm-round73-carbonates-research/frozen-records.json",
+    "sha256": "e9b2058a6778c4dfc29b1748abfdc418b86624f2f02bcb624f838a1cb7af49ef"
+  },
+  "inputs": [
+    {
+      "path": "data/records/artinite.yaml",
+      "sha256": "54de7013ba0cef8aa1976fa8bb5e9ddcbc7979bff33c6db137e20d02223235c4"
+    },
+    {
+      "path": "data/records/lansfordite.yaml",
+      "sha256": "0a98ebec9f1fb285661945880c01eab366c38440659f02ca0ae284f42c1ee80f"
+    },
+    {
+      "path": "history/records/artinite/2026-10-14T135947Z-codex-a1da31.yaml",
+      "sha256": "b532a5a513ae03f4be3e5b0b4e094de0dbc28910997b353156035a19de3d34de"
+    },
+    {
+      "path": "history/records/artinite/2026-10-14T140827Z-codex-dbfd84.yaml",
+      "sha256": "1015c069a28e772c0d78d5058cab880ce5aed5b67ff5d5890ab3bff2ca27b978"
+    },
+    {
+      "path": "history/records/lansfordite/2026-10-14T135948Z-codex-fa83c2.yaml",
+      "sha256": "116dd6f3802dc42a8b7f64da74fe33e401a319864f9133daba7392d3fce03eee"
+    }
+  ],
+  "correction": "Both contexts now distinguish initial one-minute shaking before storage from subsequent daily workday shaking whose duration was not reported. Primary Lothenbach2026 p176 sections2.2/2.3. No phase, temperature, biological scope or outcome changed.",
+  "validation": {
+    "command": "uv run --locked cmmmech validate --require-records data/records/artinite.yaml data/records/lansfordite.yaml",
+    "exit_code": 0,
+    "log": "/private/tmp/cmm-round73-carbonates-research/corrected-named-validation.log",
+    "log_sha256": "4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042",
+    "stdout": "Checked 2 record(s); 0 failed.\n",
+    "timing": "Command start was not separately retained; completion observed before this timestamp."
+  },
+  "initial_dossier": [
+    {
+      "path": "research/sources/round73-carbonates/20261014T140249Z-source-investigation.md",
+      "sha256": "a550c64eebebf7506916db6442ca29d25681e494f58e8a81ef2a3faf566b6d8e"
+    },
+    {
+      "path": "research/sources/round73-carbonates/20261014T140249Z-source-investigation.json",
+      "sha256": "2bf2267d1a700b1023c031e312b7cf75d33f70abdeb619d03cef4e7a7ab1f6ec"
+    }
+  ]
+}

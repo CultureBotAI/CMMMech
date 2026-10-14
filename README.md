@@ -8,10 +8,16 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 341 material records.
+The catalogue currently contains 347 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Microcline](data/records/microcline.yaml) | Weathering associated with field colonization of a heterogeneous specimen | Inclusion-rich versus P-poor samples differ; laboratory growth did not produce a matching Si increase |
+| [Muscovite](data/records/muscovite.yaml) | Fungal-associated alteration of a characterized mineral surface | Potassium in mycelium was not significantly above the K-depleted control; no recovery yield |
+| [Senarmontite](data/records/senarmontite.yaml) | Minor antimony-oxide phase in mixed enrichment-culture precipitates | Tartrate, mixed phases and incomplete isolate diffraction limit causal and recovery claims |
+| [Artinite](data/records/artinite.yaml) | Separate abiotic water-dissolution and concentrated precipitation experiments | Impurities, evolving mixed phases and conflicting Raman labels remain explicit |
+| [Lansfordite](data/records/lansfordite.yaml) | Abiotic synthesis plus a qualified occurrence in decaying cactus | One field sample, unresolved microbial cause and differing dehydration products |
+| [End-of-life CIGS photovoltaic modules](data/records/end-of-life-cigs-photovoltaic-modules.yaml) | Chemical leaching of thermally separated coated glass | Synthetic separation tests do not establish whole-module product recovery |
 | [Albite](data/records/albite.yaml) | Controlled abiotic dissolution of characterized clevelandite | Transient sodium release and model-dependent surface interpretation; no microbial mechanism |
 | [Orthoclase](data/records/orthoclase.yaml) | Abiotic alkaline flow-through dissolution of Na-bearing orthoclase | One interrupted experiment, model-dependent projections and no microbial or recovery claim |
 | [Aragonite](data/records/aragonite.yaml) | Carbonate phase formation in bacterial culture experiments | Mixed products, abiotic precipitation and incomplete causal controls constrain attribution |

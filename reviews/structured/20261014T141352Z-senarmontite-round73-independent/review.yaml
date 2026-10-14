@@ -1,0 +1,378 @@
+schema_version: 1.0.0
+review_id: 20261014T141352Z-senarmontite-round73-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of senarmontite
+started_at: '2026-10-14T14:04:12.457620Z'
+finished_at: '2026-10-14T14:13:52.757101Z'
+reviewer:
+  identity: codex /root/round68_new_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: This reviewer authored only microcline/muscovite in round73.
+    Senarmontite and its history were curated by round68_iron_sulfides; this reviewer
+    made no owner/history changes. Shared original acquisitions were independently
+    examined, including full text, all original figures, authority records and exact
+    owner bytes. This is independent assessment, not new experimental replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified independent acceptance of cubic senarmontite as a source-assigned
+  laboratory precipitate in mixed enrichment products and more weakly documented isolate
+  assays. Record correctly preserves phase/oxidation-state boundaries, current strain
+  mappings, tartrate confounding, abiotic precipitation context and unavailable isolate
+  diffraction. No supported corrective defect.
+source:
+  git_revision: ea4b9370fdb3d1ab23e5f43f6f9fe5f8d46a31e3
+  state: working_tree
+  inputs:
+  - path: data/records/senarmontite.yaml
+    sha256: 3056e0f17442949bbbc0d02d2cee6364b68c520b46aeeec2c0262d3a520adaf7
+    role: target
+  - path: docs/record-review-profile.md
+    sha256: 01c6f39d0d097876a0446131270df58bb32fa15804c66487419c171719d3ddc0
+    role: context
+  - path: history/records/senarmontite/2026-10-14T135727Z-codex-173d19.yaml
+    sha256: c4c13b74831db26b3152ee3eaa41e865c5b047eb22372a4fa3e56a04b89b2beb
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire exact maintained owner and canonical history; all accepted scientific
+    claims and evidence limitations.
+  selection: Assigned frozen record; native inspect before judgment, then history-inclusive
+    capture and exact byte rechecks.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:senarmontite
+targets:
+- target_id: cmmmech:senarmontite
+  path: data/records/senarmontite.yaml
+  label: Senarmontite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/senarmontite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/senarmontite/2026-10-14T135727Z-codex-173d19.yaml
+    role: canonical_history
+checks:
+- check_id: named
+  name: Named strict validation
+  command: uv run --locked cmmmech validate data/records/senarmontite.yaml
+  status: passed
+  required: true
+  summary: Reviewer executed; one record, zero failures.
+  target_ids:
+  - cmmmech:senarmontite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Completed batch check 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator executed 2026-10-14T14:09:29.404080+00:00 through 2026-10-14T14:12:30.340524+00:00;
+    receipt/log independently verified.
+  target_ids:
+  - cmmmech:senarmontite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Completed batch check 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator executed 2026-10-14T14:12:30.340549+00:00 through 2026-10-14T14:12:38.319722+00:00;
+    receipt/log independently verified.
+  target_ids:
+  - cmmmech:senarmontite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Completed batch check 3
+  command: uv run --locked cmmmech validate-history --base ea4b9370fdb3d1ab23e5f43f6f9fe5f8d46a31e3
+  status: passed
+  required: true
+  summary: Coordinator executed 2026-10-14T14:12:38.319742+00:00 through 2026-10-14T14:12:43.263330+00:00;
+    receipt/log independently verified.
+  target_ids:
+  - cmmmech:senarmontite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/senarmontite.yaml
+  locator: Entire frozen owner
+  accessed_at: '2026-10-14T14:13:52.757101Z'
+  support: supports
+  summary: Read every scientific claim, context, evidence link and history reference.
+  snapshot_sha256: 3056e0f17442949bbbc0d02d2cee6364b68c520b46aeeec2c0262d3a520adaf7
+- evidence_id: history
+  kind: record_content
+  reference: history/records/senarmontite/2026-10-14T135727Z-codex-173d19.yaml
+  locator: Entire canonical CREATE sidecar and inline event
+  accessed_at: '2026-10-14T14:13:52.757101Z'
+  support: supports
+  summary: Verified target, actual actor/time and finished details; no prior authorship
+    invented.
+  snapshot_sha256: c4c13b74831db26b3152ee3eaa41e865c5b047eb22372a4fa3e56a04b89b2beb
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1128/AEM.01970-15
+  locator: Complete PMC original; Methods, all Results/Discussion, Table1, Figures1–7
+  accessed_at: '2026-10-14T14:13:52.757101Z'
+  support: supports
+  summary: Independently read original methods/results/discussion and all seven original
+    images. Figure3B identifies senarmontite in a mixed dried enrichment precipitate.
+    Isolate-specific diffraction is reported but not displayed. The nominal PDF download
+    is an HTML challenge and is not used; this hash binds the actual complete primary
+    HTML.
+  snapshot_sha256: a67440e9b81876b4062330904ff2568500ae63299c6efa914220b1832b7a3a25
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions pages1–2 and Senarmontite row PDF197
+  accessed_at: '2026-10-14T14:13:52.757101Z'
+  support: supports
+  summary: Visually verified cubic-species label/formula/status Rn/year1851; no constituent
+    criticality inherited. Retained original rechecked, not newly downloaded.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/senarmontite.pdf
+  locator: Complete one-page entry
+  accessed_at: '2026-10-14T14:13:52.757101Z'
+  support: supports
+  summary: Cubic Sb2O3 distinct from valentinite; diffraction identity differs from
+    oxidation-state conversion.
+  snapshot_sha256: 55788d3c73387b85e4ede65ab788163f5dd82808af136d03f5dd9f1b26be584f
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1554528
+  locator: Both NCBI1554528/1554529 records in acquired authoritative XML
+  accessed_at: '2026-10-14T14:13:52.757101Z'
+  support: supports
+  summary: Strain-named unresolved species entries map Hydrogenophaga sp. IDSBO-1
+    and Variovorax sp. IDSBO-4; paper species-level proposals are correctly not adopted.
+  snapshot_sha256: 1dd00fa74ed244eb0849409f09fd831407a4e20e4911e68e2c87c17b876473db
+- evidence_id: sequence
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/KM199760.1
+  locator: GenBank KM199760.1/KM199761.1 source features
+  accessed_at: '2026-10-14T14:13:52.757101Z'
+  support: supports
+  summary: Both strain and taxon links verified in actual sequence XML; 16S similarity
+    is not a causal precipitation enzyme test.
+  snapshot_sha256: 8b33613f7743a122bbb5679ab5e324ce7f334a680d16ca05d2ea42a79f1a3029
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round73-senarmontite-review/dedup.txt
+  locator: Bounded records/research/reviews/history search
+  accessed_at: '2026-10-14T14:13:52.757101Z'
+  support: context_only
+  summary: Hidden and ignored files included, relevant symlinks followed; element
+    and related oxide sources distinguished.
+  snapshot_sha256: 2d4be7c259af17802b79a87f181db8bab3aa3ef60cd217e85bea66185c883eec
+  search_scope: rg --no-ignore --hidden --follow -n -i -g *.yaml -g *.md -g *.json
+    senarmontite|AEM.01970-15|1554528|1554529 data/records research reviews history
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round73-senarmontite-review/notice-search.json
+  locator: Exact DOI and source/material queries
+  accessed_at: '2026-10-14T14:13:52.757101Z'
+  support: context_only
+  summary: No correction or retraction surfaced in these returned results. Related
+    polymorph studies are deferred sources, not contrary experimental evidence inspected
+    here.
+  snapshot_sha256: e20f0a407912b380a562594cc55e1dd1e07887fe4258cefd402bd018924157bb
+  search_scope: web search 2026-10-14; exact DOI with correction erratum retraction
+    senarmontite; senarmontite Terry microbial precipitate controls; first results/no
+    recency filter, not exhaustive
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round73-senarmontite-review/named-validation.json
+  locator: Actual reviewer command/output
+  accessed_at: '2026-10-14T14:13:52.757101Z'
+  support: supports
+  summary: Reviewer named validation completed0; one owner, zero failures.
+  snapshot_sha256: 773151bdd78132157a9d60b6ae02358a9edf686c35bc60213780cd6cd58bc7c5
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round73-final-gates.json
+  locator: Terminal coordinator receipt and matching log
+  accessed_at: '2026-10-14T14:13:52.757101Z'
+  support: supports
+  summary: Exact worktree/base, three command identities, terminal0 and actual log
+    checksum independently verified. Offline checks do not prove scientific truth.
+  snapshot_sha256: 484909cb53410de5f4e1def132320739ec1c26f81c24f575fa23e9c03aa31791
+- evidence_id: figure1
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC4644646/#F1
+  locator: Original Figure1 image plus caption in primary
+  accessed_at: '2026-10-14T14:13:52.757101Z'
+  support: supports
+  summary: Original JPEG visually inspected, with graph/phase/phylogenetic scope checked
+    against text; no phase-pure yield inferred.
+  snapshot_sha256: b11ec72e9e9fb139010289dbc0fa3b8b24fa9ecfe0090ca18205c25a710f6ebb
+- evidence_id: figure2
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC4644646/#F2
+  locator: Original Figure2 image plus caption in primary
+  accessed_at: '2026-10-14T14:13:52.757101Z'
+  support: supports
+  summary: Original JPEG visually inspected, with graph/phase/phylogenetic scope checked
+    against text; no phase-pure yield inferred.
+  snapshot_sha256: 5cc82ac49d6a036609d657ea401cc22209f108adf345bf58d4fa37799fb04634
+- evidence_id: figure3
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC4644646/#F3
+  locator: Original Figure3 image plus caption in primary
+  accessed_at: '2026-10-14T14:13:52.757101Z'
+  support: supports
+  summary: Original JPEG visually inspected, with graph/phase/phylogenetic scope checked
+    against text; no phase-pure yield inferred.
+  snapshot_sha256: d39e902e20a9aa94b2a27f6ee5120b418df0cfc41b08c527f6a4b7d4cf12609c
+- evidence_id: figure4
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC4644646/#F4
+  locator: Original Figure4 image plus caption in primary
+  accessed_at: '2026-10-14T14:13:52.757101Z'
+  support: supports
+  summary: Original JPEG visually inspected, with graph/phase/phylogenetic scope checked
+    against text; no phase-pure yield inferred.
+  snapshot_sha256: ca9ffcae0e92937c264ee323a74ed3383cf041a0e0f0e546de8063b8db453c2e
+- evidence_id: figure5
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC4644646/#F5
+  locator: Original Figure5 image plus caption in primary
+  accessed_at: '2026-10-14T14:13:52.757101Z'
+  support: supports
+  summary: Original JPEG visually inspected, with graph/phase/phylogenetic scope checked
+    against text; no phase-pure yield inferred.
+  snapshot_sha256: 8e731d43f86857c11d941e2d5e4b542d6956b3fb9b02f9b1323ae979cb8af21c
+- evidence_id: figure6
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC4644646/#F6
+  locator: Original Figure6 image plus caption in primary
+  accessed_at: '2026-10-14T14:13:52.757101Z'
+  support: supports
+  summary: Original JPEG visually inspected, with graph/phase/phylogenetic scope checked
+    against text; no phase-pure yield inferred.
+  snapshot_sha256: 79a08b6de2d055c204bb91b2acb1ac0e13da379da40643a5c11fcfcc5116e500
+- evidence_id: figure7
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC4644646/#F7
+  locator: Original Figure7 image plus caption in primary
+  accessed_at: '2026-10-14T14:13:52.757101Z'
+  support: supports
+  summary: Original JPEG visually inspected, with graph/phase/phylogenetic scope checked
+    against text; no phase-pure yield inferred.
+  snapshot_sha256: 49e72447f656b32ff5a0701426aa01766214622ee108ce77d0988f5a79708132
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Cubic mineral versus salts, polymorphs and constituent element
+  outcome: supported
+  summary: IMA/Handbook support cubic Sb2O3 identity distinct from valentinite and
+    dissolved antimony tartrate; criticality is not inherited.
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  target_ids:
+  - cmmmech:senarmontite
+- assessment_id: enrichment
+  area: evidence
+  topic: Mixed enrichment precipitation and preparation
+  outcome: supported
+  summary: Primary Figure3B supports senarmontite-labelled peaks in a predominantly
+    mopungite product; processing at60°C48h and unshown secondary/HeapSeep data are
+    explicitly limited. Reported phase proportions are not recovered fractions of
+    feed.
+  evidence_ids:
+  - primary
+  - figure2
+  - figure3
+  - record
+  target_ids:
+  - cmmmech:senarmontite
+- assessment_id: isolates
+  area: evidence
+  topic: Conditional isolate association and taxon resolution
+  outcome: supported
+  summary: Live isolate assays report senarmontite but do not display their diffraction;
+    current deposited strain entries and substrate controls support the qualified
+    association without transferring isolate identities into communities.
+  evidence_ids:
+  - primary
+  - figure4
+  - figure5
+  - figure6
+  - figure7
+  - taxonomy
+  - sequence
+  - record
+  target_ids:
+  - cmmmech:senarmontite
+- assessment_id: causality
+  area: scope
+  topic: No universal necessity, autotrophy or recovery claim
+  outcome: supported
+  summary: Tartrate independently supports growth; white precipitate in a separate
+    cell-free radiotracer arm has no assigned phase. The record avoids claiming abiotic
+    senarmontite, direct enzymatic crystallization, phase-specific yield or industrial
+    recovery.
+  evidence_ids:
+  - primary
+  - figure6
+  - figure7
+  - record
+  target_ids:
+  - cmmmech:senarmontite
+- assessment_id: provenance
+  area: provenance
+  topic: Exact-byte history and checks
+  outcome: supported
+  summary: Native inspection, explicit canonical CREATE/inline event and actual named/batch
+    checks bind final owner bytes; corpus checks are structural evidence only.
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  target_ids:
+  - cmmmech:senarmontite
+findings: []
+actions: []
+limitations:
+- Isolate-specific XRD and HeapSeep/secondary enrichment patterns are not displayed;
+  reported assignment remains explicitly partial.
+- XRD identifies processed mixed precipitates, not an isolated pure product or complete
+  antimony mass balance.
+- Heat-sterilized/unamended controls are reported with data not shown; a separate
+  cell-free white precipitate is not mineralogically assigned.
+- Nominal Methods dosing differs from Figure7 initial antimony-tartrate concentration;
+  no uniform dose or calculated Sb recovery is imposed.
+- Strain-sp. NCBI labels are retained; historical species proposals and candidate
+  AioA context do not demonstrate a specific precipitation pathway.
+- Bounded notice search is not exhaustive; other deferred studies were not imported.
+  No separate supplement was listed in inspected main text.
+notes:
+- Actual complete primary HTML and all seven original figureJPEGs are bound; the downloaded
+  terry2015.pdf is an HTML challenge and excluded.
+- No record/history changes by reviewer; source originals remain outsideGit.

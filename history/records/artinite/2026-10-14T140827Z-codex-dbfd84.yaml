@@ -1,0 +1,25 @@
+history_version: 1
+target:
+  kind: record
+  slug: artinite
+  path: data/records/artinite.yaml
+session:
+  id: 2026-10-14T140827Z-codex-dbfd84
+  timestamp: '2026-10-14T14:08:27Z'
+  actors:
+  - name: codex
+    type: ai_agent
+    model: GPT-6
+    agent_tool: codex
+events:
+- type: EDIT
+  outcome: changed
+  summary: Correct initial versus daily shaking duration in both artinite contexts.
+  details: Address independent finding F1 CMMMech.artinite.daily-shaking-duration in review
+    20261014T140422Z-artinite-round73-initial and issue 236. Lothenbach2026 p176 sections2.2/2.3
+    specifies one minute before storage and subsequent daily workday shaking without a duration.
+    Corrected both mechanism contexts; original CREATE and initial review preserved; no phase,
+    temperature, outcome or biological scope change.
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/236

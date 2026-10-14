@@ -1,0 +1,357 @@
+# Independent scientific review of lansfordite
+
+- Review: 20261014T141436Z-lansfordite-round73-final
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T14:14:24.201033Z
+- Finished UTC: 2026-10-14T14:14:36.238334Z
+- Reviewer: codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified scientific acceptance with explicit source and causal limits; all required gates passed.
+
+## Scope And Provenance
+
+Full maintained record and history; independent primary-source scientific reassessment.
+
+Selection: Assigned frozen owner, native inspect before final assessment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base ea4b9370fdb3d1ab23e5f43f6f9fe5f8d46a31e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:lansfordite | data/records/lansfordite.yaml | maintained | Lansfordite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| named validation | passed | True | cmmmech:lansfordite | Actual execution completed with exit0. |
+| history validation | passed | True | cmmmech:lansfordite | Actual execution completed with exit0. |
+| Completed batch gate | passed | True | cmmmech:lansfordite | Receipt/log verified, exit0. |
+| Completed batch gate | passed | True | cmmmech:lansfordite | Receipt/log verified, exit0. |
+| Completed batch gate | passed | True | cmmmech:lansfordite | Receipt/log verified, exit0. |
+
+## Scientific And Domain Assessments
+
+### Mineral species boundary
+
+identity: supported. Targets: cmmmech:lansfordite.
+
+Pentahydrate species distinct from nesquehonite and magnesium commodity; no inherited criticality.
+
+### Laboratory preparation and dehydration
+
+evidence: supported. Targets: cmmmech:lansfordite.
+
+CO2 pressure,slurry,filtration and temperatures match primary source; qualitative needles and morphology retained without universal thermal thresholds.
+
+### Decay-associated occurrence
+
+evidence: supported. Targets: cmmmech:lansfordite.
+
+One winter cactus is a qualified field association; no sterile comparator,causal isolate or measured mineral pocket temperature.
+
+### Different dehydration outcomes
+
+scope: supported. Targets: cmmmech:lansfordite.
+
+Hill synthetic nesquehonite and Garvie natural amorphization are both retained without treating unlike conditions as matched refutations; no recovery yield.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/lansfordite.yaml; Complete maintained owner and distinct inline events | supports | Compared all assertions to original methods, results, authority rows and graphics. |
+| history0 | history/records/lansfordite/2026-10-14T135948Z-codex-fa83c2.yaml; Canonical immutable sidecar | supports | Actual actor, event, UTC and target agree with the curation change. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Official September2026 list definitions and PDF page 121 | supports | Grandfathered species formula and original-description year confirmed; no approval-number or criticality inference. |
+| handbook | https://www.handbookofmineralogy.org/pdfs/lansfordite.pdf; Complete mineral entry | supports | Mineral identity distinct from neighbouring magnesium carbonate phases. |
+| main | https://doi.org/10.1180/minmag.1982.046.341.08; Complete5page original; pp453–454,TableI,Figures1–5 | supports | Synthesis at0C versus mixed15C products, qualitative pseudomorphous dehydration and separate thermal ramp inspected; no universal endpoint claimed. |
+| field | https://doi.org/10.2138/am-2003-11-1231; Complete10page original; methods1880,decay1881–1882,lansfordite1882,Figure4; allFigures1–8/Table1 | supports | One winter cactus occurrence and air amorphization are supported. Isotopes and fungal hyphae on other minerals do not identify a lansfordite-producing microbe. |
+| namedcheck | /private/tmp/cmm-round73-carbonates-independent/lansfordite-final-named.log; Actual reviewer execution, terminal exit0 | supports | Named record or trusted-base history validation passed; offline validation does not prove science. |
+| historycheck | /private/tmp/cmm-round73-carbonates-independent/lansfordite-final-history.log; Actual reviewer execution, terminal exit0 | supports | Named record or trusted-base history validation passed; offline validation does not prove science. |
+| batch | /private/tmp/cmm-round73-final-gates.json; Actual coordinator finalbatch terminal receipt and retained log | supports | just check,require-records and trusted-base history completed successfully for corrected cohort. |
+
+## Limits And Additional Notes
+
+- No experimental replication,raw diffraction refit or measurement uncertainty reconstruction.
+- Source contradictions are preserved,not repaired. No criticality designation or industrial deployment inferred.
+- Current exactDOI correction/erratum/retraction searches on2026-10-14 returned original publisher pages and related references but no applicable notice; first returned windows only,no exhaustive pagination.
+- Raw originals independently read from shared curator downloads,not independently downloaded.
+- Initial owner-only inspection retained separately; this observation adds exact canonical history inputs after reading those files.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T141436Z-lansfordite-round73-final
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of lansfordite
+started_at: '2026-10-14T14:14:24.201033Z'
+finished_at: '2026-10-14T14:14:36.238334Z'
+reviewer:
+  identity: codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Record and canonical histories authored by round68_phosphates;
+    reviewer authored CIGS and made no edits to either carbonate owner/history. Shared
+    acquired originals were independently read and visually inspected.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified scientific acceptance with explicit source and causal limits; all
+  required gates passed.
+source:
+  git_revision: ea4b9370fdb3d1ab23e5f43f6f9fe5f8d46a31e3
+  state: working_tree
+  inputs:
+  - path: data/records/lansfordite.yaml
+    sha256: 0a98ebec9f1fb285661945880c01eab366c38440659f02ca0ae284f42c1ee80f
+    role: target
+  - path: history/records/lansfordite/2026-10-14T135948Z-codex-fa83c2.yaml
+    sha256: 116dd6f3802dc42a8b7f64da74fe33e401a319864f9133daba7392d3fce03eee
+    role: context
+scope:
+  description: Full maintained record and history; independent primary-source scientific
+    reassessment.
+  selection: Assigned frozen owner, native inspect before final assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:lansfordite
+targets:
+- target_id: cmmmech:lansfordite
+  path: data/records/lansfordite.yaml
+  label: Lansfordite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lansfordite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: named validation
+  command: uv run --locked cmmmech validate data/records/lansfordite.yaml
+  status: passed
+  required: true
+  summary: Actual execution completed with exit0.
+  target_ids:
+  - cmmmech:lansfordite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - namedcheck
+- check_id: history
+  name: history validation
+  command: uv run --locked cmmmech validate-history --base ea4b9370fdb3d1ab23e5f43f6f9fe5f8d46a31e3
+  status: passed
+  required: true
+  summary: Actual execution completed with exit0.
+  target_ids:
+  - cmmmech:lansfordite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - historycheck
+- check_id: batch0
+  name: Completed batch gate
+  command: just check
+  status: passed
+  required: true
+  summary: Receipt/log verified, exit0.
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:lansfordite
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Completed batch gate
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Receipt/log verified, exit0.
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:lansfordite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed batch gate
+  command: uv run --locked cmmmech validate-history --base ea4b9370fdb3d1ab23e5f43f6f9fe5f8d46a31e3
+  status: passed
+  required: true
+  summary: Receipt/log verified, exit0.
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:lansfordite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/lansfordite.yaml
+  locator: Complete maintained owner and distinct inline events
+  accessed_at: '2026-10-14T14:14:36.215771Z'
+  support: supports
+  summary: Compared all assertions to original methods, results, authority rows and
+    graphics.
+  snapshot_sha256: 0a98ebec9f1fb285661945880c01eab366c38440659f02ca0ae284f42c1ee80f
+- evidence_id: history0
+  kind: record_content
+  reference: history/records/lansfordite/2026-10-14T135948Z-codex-fa83c2.yaml
+  locator: Canonical immutable sidecar
+  accessed_at: '2026-10-14T14:14:36.218504Z'
+  support: supports
+  summary: Actual actor, event, UTC and target agree with the curation change.
+  snapshot_sha256: 116dd6f3802dc42a8b7f64da74fe33e401a319864f9133daba7392d3fce03eee
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Official September2026 list definitions and PDF page 121
+  accessed_at: '2026-10-14T14:14:36.218699Z'
+  support: supports
+  summary: Grandfathered species formula and original-description year confirmed;
+    no approval-number or criticality inference.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/lansfordite.pdf
+  locator: Complete mineral entry
+  accessed_at: '2026-10-14T14:14:36.229089Z'
+  support: supports
+  summary: Mineral identity distinct from neighbouring magnesium carbonate phases.
+  snapshot_sha256: 3d41b51b6b0a74a874f9cfe8fd6a0190b278e0a27dd03374b133d280052ae87a
+- evidence_id: main
+  kind: primary_source
+  reference: https://doi.org/10.1180/minmag.1982.046.341.08
+  locator: Complete5page original; pp453–454,TableI,Figures1–5
+  accessed_at: '2026-10-14T14:14:36.230124Z'
+  support: supports
+  summary: Synthesis at0C versus mixed15C products, qualitative pseudomorphous dehydration
+    and separate thermal ramp inspected; no universal endpoint claimed.
+  snapshot_sha256: d9a464ed95276ea7e89760d20cd814c6b287f52d2640a7e9acdded00f2b11015
+- evidence_id: field
+  kind: primary_source
+  reference: https://doi.org/10.2138/am-2003-11-1231
+  locator: Complete10page original; methods1880,decay1881–1882,lansfordite1882,Figure4;
+    allFigures1–8/Table1
+  accessed_at: '2026-10-14T14:14:36.234467Z'
+  support: supports
+  summary: One winter cactus occurrence and air amorphization are supported. Isotopes
+    and fungal hyphae on other minerals do not identify a lansfordite-producing microbe.
+  snapshot_sha256: 8acb24d9c38bdae0dcf342195bd92670b78dd57f7370aec20007324456771131
+- evidence_id: namedcheck
+  kind: validation
+  reference: /private/tmp/cmm-round73-carbonates-independent/lansfordite-final-named.log
+  locator: Actual reviewer execution, terminal exit0
+  accessed_at: '2026-10-14T14:14:36.237742Z'
+  support: supports
+  summary: Named record or trusted-base history validation passed; offline validation
+    does not prove science.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: historycheck
+  kind: validation
+  reference: /private/tmp/cmm-round73-carbonates-independent/lansfordite-final-history.log
+  locator: Actual reviewer execution, terminal exit0
+  accessed_at: '2026-10-14T14:14:36.237867Z'
+  support: supports
+  summary: Named record or trusted-base history validation passed; offline validation
+    does not prove science.
+  snapshot_sha256: cbe1c412b034fed957a71444acd4ab863bafc724db0b5a2c01ee4aa66af71fbd
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round73-final-gates.json
+  locator: Actual coordinator finalbatch terminal receipt and retained log
+  accessed_at: '2026-10-14T14:14:36.238246Z'
+  support: supports
+  summary: just check,require-records and trusted-base history completed successfully
+    for corrected cohort.
+  snapshot_sha256: 484909cb53410de5f4e1def132320739ec1c26f81c24f575fa23e9c03aa31791
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral species boundary
+  outcome: supported
+  target_ids:
+  - cmmmech:lansfordite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  summary: Pentahydrate species distinct from nesquehonite and magnesium commodity;
+    no inherited criticality.
+- assessment_id: abiotic
+  area: evidence
+  topic: Laboratory preparation and dehydration
+  outcome: supported
+  target_ids:
+  - cmmmech:lansfordite
+  evidence_ids:
+  - record
+  - main
+  summary: CO2 pressure,slurry,filtration and temperatures match primary source; qualitative
+    needles and morphology retained without universal thermal thresholds.
+- assessment_id: field
+  area: evidence
+  topic: Decay-associated occurrence
+  outcome: supported
+  target_ids:
+  - cmmmech:lansfordite
+  evidence_ids:
+  - record
+  - field
+  summary: One winter cactus is a qualified field association; no sterile comparator,causal
+    isolate or measured mineral pocket temperature.
+- assessment_id: contradiction
+  area: scope
+  topic: Different dehydration outcomes
+  outcome: supported
+  target_ids:
+  - cmmmech:lansfordite
+  evidence_ids:
+  - record
+  - main
+  - field
+  summary: Hill synthetic nesquehonite and Garvie natural amorphization are both retained
+    without treating unlike conditions as matched refutations; no recovery yield.
+findings: []
+actions: []
+limitations:
+- No experimental replication,raw diffraction refit or measurement uncertainty reconstruction.
+- Source contradictions are preserved,not repaired. No criticality designation or
+  industrial deployment inferred.
+- Current exactDOI correction/erratum/retraction searches on2026-10-14 returned original
+  publisher pages and related references but no applicable notice; first returned
+  windows only,no exhaustive pagination.
+- Raw originals independently read from shared curator downloads,not independently
+  downloaded.
+notes:
+- Initial owner-only inspection retained separately; this observation adds exact canonical
+  history inputs after reading those files.
+tags:
+- round73
+- lansfordite
+- independent
+- final
+```
