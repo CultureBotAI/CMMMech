@@ -1,0 +1,544 @@
+{
+  "timestamp_utc": "2026-10-14T15:47:02.147864+00:00",
+  "repository": "CultureBotAI/CMMMech",
+  "worktree": "/private/tmp/CMMMech-expansion-round75-20261014",
+  "base": "4cb10d22d5542370cf5fac27288907ec0d42308c",
+  "actor": "codex GPT-6; /root/round68_phosphates",
+  "scope": "One lead-bearing CRT-glass secondary resource, with complete abiotic primary evidence; microbial candidates remain deferred.",
+  "selection": "Full primary completeness and explicit process denominators outweigh superficial microbial keyword matches; glass is not phosphor powder.",
+  "searches": {
+    "provider": "web.run search/open/find/click; Crossref/OpenAlex/EuropePMC and publisher/repository routes",
+    "date": "2026-10-14",
+    "queries": [
+      "\"CRT glass\" bioleaching",
+      "\"cathode ray tube\" \"bioleaching\" glass lead full text",
+      "\"cathode ray tube\" glass \"Aspergillus\"",
+      "\"CRT glass\" fungi lead bioleaching Aspergillus",
+      "\"Pant\" \"Serratia plymuthica\" \"2014\" CRT",
+      "\"cathode ray tube\" \"Serratia\" bioleaching PDF",
+      "\"Pant\" \"bioleaching\" \"glass\" 2014",
+      "\"10.1016/j.hydromet.2014.02.016\" pdf",
+      "\"Metal leaching from cathode ray tube waste\" pdf",
+      "\"Metal leaching\" \"cathode\" Pant EDTA full text",
+      "\"Assessment of biotechnological strategies\" pdf Beolchini",
+      "\"10.1016/j.wasman.2011.10.014\" pdf",
+      "\"Metal leaching from cathode ray tube waste\" repository",
+      "\"Assessment of biotechnological strategies for the valorization of metal bearing wastes\"",
+      "\"10.1016/j.wasman.2011.10.014\" site:iris.univpm.it",
+      "\"10.1016/j.hydromet.2014.02.016\" site:sciencedirect.com",
+      "\"Chemical–Electrochemical Process Concept for Lead Recovery\" pdf",
+      "\"Assessment of biotechnological strategies\" \"pdf\" -review -References -scispace -researchgate",
+      "\"10.3390/ma14061546\" correction retraction supplementary",
+      "\"Metal leaching from cathode ray tube\" correction retraction",
+      "\"10.3390/ma14061546\" \"10%\""
+    ],
+    "coverage": "Bounded top-result queries; no exhaustive bibliographic or machine-wide search. Search1–10 raw response snapshots retained. Search timestamps were not separately captured for every web invocation; acquisition timestamps are exact in receipts."
+  },
+  "dedup": {
+    "observed_at_utc": "2026-10-14T15:44:11.977635+00:00",
+    "project_command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-ni",
+      "cathode.?ray|CRT.{0,30}glass|funnel.{0,20}glass|panel.{0,20}glass|ma14061546|hydromet\\.2014\\.02\\.016|wasman\\.2011\\.10\\.014",
+      "/private/tmp/CMMMech-expansion-round75-20261014/data/records",
+      "/private/tmp/CMMMech-expansion-round75-20261014/research",
+      "/private/tmp/CMMMech-expansion-round75-20261014/reviews",
+      "/private/tmp/CMMMech-expansion-round75-20261014/history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history"
+    ],
+    "project_exit_code": 1,
+    "project_stderr": "",
+    "project_output": "/private/tmp/cmm-round75-crt-research/dedup-final-project.txt",
+    "project_matches": 0,
+    "raw_command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-ni",
+      "cathode.?ray|CRT.{0,30}glass|funnel.{0,20}glass|panel.{0,20}glass|ma14061546|hydromet\\.2014\\.02\\.016|wasman\\.2011\\.10\\.014",
+      "/private/tmp/CMMMech-expansion-round28-20261011/data/records",
+      "/private/tmp/cmm-round4-phosphorus-cerium-evidence-20261011",
+      "/private/tmp/cmm-round52-allanite-research/raw",
+      "/private/tmp/cmm-round75-crt-research"
+    ],
+    "raw_exit_code": 0,
+    "raw_stderr": "",
+    "raw_output": "/private/tmp/cmm-round75-crt-research/dedup-final-raw.txt",
+    "raw_matches": 91,
+    "boundary": "Current worktree and main records/research/reviews/history; relevant existing lamp-source raw directories cited by matching reports; current CRT downloads. Hidden/ignored included and symlinks followed. No machine-wide search; current raw self-hits are expected."
+  },
+  "acquisitions": [
+    {
+      "receipt": {
+        "path": "/private/tmp/cmm-round75-crt-research/acquisition-initial.json",
+        "sha256": "b1c21080128acca86cd15d6fc3107b9a6bf2b1b2aaec3f0423916764e62346e9",
+        "bytes": 1564
+      },
+      "contents": [
+        {
+          "requested": "https://api.crossref.org/works/10.1016/j.hydromet.2014.02.016",
+          "final": "https://api.crossref.org/works/10.1016/j.hydromet.2014.02.016",
+          "started_at": "2026-10-14T15:37:38.172319+00:00",
+          "finished_at": "2026-10-14T15:37:38.566264+00:00",
+          "status": 200,
+          "content_type": "application/json",
+          "path": "/private/tmp/cmm-round75-crt-research/pant2014-crossref.json",
+          "bytes": 16084,
+          "sha256": "dcfc94d063ac0ce64fe7ed0332c1fa79e82d62b11f03d33c9904fdce317125d1"
+        },
+        {
+          "requested": "https://api.openalex.org/works/https://doi.org/10.1016/j.hydromet.2014.02.016",
+          "final": "https://api.openalex.org/works/https://doi.org/10.1016/j.hydromet.2014.02.016",
+          "started_at": "2026-10-14T15:37:38.566395+00:00",
+          "finished_at": "2026-10-14T15:37:38.878243+00:00",
+          "status": 200,
+          "content_type": "application/json",
+          "path": "/private/tmp/cmm-round75-crt-research/pant2014-openalex.json",
+          "bytes": 13424,
+          "sha256": "1969ab47ba802f5e8f5a8cffb80ad0417c15f9a942b3de2f32d351599acd2367"
+        },
+        {
+          "requested": "https://doi.org/10.1016/j.hydromet.2014.02.016",
+          "final": "https://linkinghub.elsevier.com/retrieve/pii/S0304386X14000565",
+          "started_at": "2026-10-14T15:37:38.878319+00:00",
+          "finished_at": "2026-10-14T15:37:39.357701+00:00",
+          "status": 200,
+          "content_type": "text/html;charset=UTF-8",
+          "path": "/private/tmp/cmm-round75-crt-research/pant2014-doi.html",
+          "bytes": 2709,
+          "sha256": "a43511979c5243d4161e73732575081d03acbceec852427413fc642d2cfe6ea5"
+        }
+      ]
+    },
+    {
+      "receipt": {
+        "path": "/private/tmp/cmm-round75-crt-research/acquisition-second.json",
+        "sha256": "e6bfcfb6c134ca43aaaa657d5327b723a6131964f098b94d9959c86c313002bd",
+        "bytes": 3668
+      },
+      "contents": [
+        {
+          "requested": "https://api.elsevier.com/content/article/PII:S0304386X14000565?httpAccept=text/xml",
+          "final": "https://api.elsevier.com/content/article/PII:S0304386X14000565?httpAccept=text/xml",
+          "started_at": "2026-10-14T15:39:05.905022+00:00",
+          "finished_at": "2026-10-14T15:39:06.437487+00:00",
+          "status": 200,
+          "content_type": "text/xml;charset=UTF-8",
+          "path": "/private/tmp/cmm-round75-crt-research/pant2014-tdm.xml",
+          "bytes": 1835,
+          "sha256": "b7e9250bea8de3201f45cefab98af088d9f97ef10b8bb30c777bcb42bcb71322"
+        },
+        {
+          "requested": "https://api.crossref.org/works/10.1016/j.wasman.2011.10.014",
+          "final": "https://api.crossref.org/works/10.1016/j.wasman.2011.10.014",
+          "started_at": "2026-10-14T15:39:05.905923+00:00",
+          "finished_at": "2026-10-14T15:39:06.363194+00:00",
+          "status": 200,
+          "content_type": "application/json",
+          "path": "/private/tmp/cmm-round75-crt-research/beolchini2012-crossref.json",
+          "bytes": 15197,
+          "sha256": "a85cc4d73063572afc5138a21f97d627ec8d776481d61ebb7de3a755c7328881"
+        },
+        {
+          "requested": "https://api.elsevier.com/content/article/PII:S0956053X11004739?httpAccept=text/xml",
+          "final": "https://api.elsevier.com/content/article/PII:S0956053X11004739?httpAccept=text/xml",
+          "started_at": "2026-10-14T15:39:05.906280+00:00",
+          "finished_at": "2026-10-14T15:39:06.565942+00:00",
+          "status": 200,
+          "content_type": "text/xml;charset=UTF-8",
+          "path": "/private/tmp/cmm-round75-crt-research/beolchini2012-tdm.xml",
+          "bytes": 1826,
+          "sha256": "59565119c5a62c75a1130f0efe7dbc5ed7682d8ffe3f1cb843c23fcc777dd270"
+        },
+        {
+          "requested": "https://iris.univpm.it/handle/11566/66558",
+          "final": "https://iris.univpm.it/handle/11566/66558",
+          "started_at": "2026-10-14T15:39:05.906586+00:00",
+          "finished_at": "2026-10-14T15:39:08.193445+00:00",
+          "status": 200,
+          "content_type": "text/html;charset=utf-8",
+          "path": "/private/tmp/cmm-round75-crt-research/beolchini2012-iris.html",
+          "bytes": 44579,
+          "sha256": "9ccee538d2359d0056847eb6a8708e195046831f2ae5817ce7003a2204d3a266"
+        },
+        {
+          "requested": "https://pdfs.semanticscholar.org/1b7e/a8c4d6d6679509a036e1d0503f1b7cb7f543.pdf",
+          "final": "https://pdfs.semanticscholar.org/1b7e/a8c4d6d6679509a036e1d0503f1b7cb7f543.pdf",
+          "started_at": "2026-10-14T15:39:06.363339+00:00",
+          "finished_at": "2026-10-14T15:39:06.799087+00:00",
+          "status": 200,
+          "content_type": "application/pdf",
+          "path": "/private/tmp/cmm-round75-crt-research/imre2021.pdf",
+          "bytes": 2188188,
+          "sha256": "366cb28dce44df644bbae7f0f7a20a8cc2a3bdd547ba4d28ac75ca91f71519fa"
+        },
+        {
+          "requested": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8004233/fullTextXML",
+          "final": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8004233/fullTextXML",
+          "started_at": "2026-10-14T15:39:06.437583+00:00",
+          "finished_at": "2026-10-14T15:39:07.673869+00:00",
+          "status": 200,
+          "content_type": "application/xml",
+          "path": "/private/tmp/cmm-round75-crt-research/imre2021.xml",
+          "bytes": 105108,
+          "sha256": "b74d87eb1d195f0bc275a0ac35dbedb910ec3f9b2a767dda82efe075d2a2665c"
+        },
+        {
+          "requested": "https://api.crossref.org/works/10.3390/ma14061546",
+          "final": "https://api.crossref.org/works/10.3390/ma14061546",
+          "started_at": "2026-10-14T15:39:06.566036+00:00",
+          "finished_at": "2026-10-14T15:39:06.955296+00:00",
+          "status": 200,
+          "content_type": "application/json",
+          "path": "/private/tmp/cmm-round75-crt-research/imre2021-crossref.json",
+          "bytes": 14374,
+          "sha256": "a8f4fcc706f5340c4248c8e9a098d22680dd4b56ff1ce02950c05a66cdb0a890"
+        }
+      ]
+    },
+    {
+      "receipt": {
+        "path": "/private/tmp/cmm-round75-crt-research/acquisition-author-route.json",
+        "sha256": "77781eb4a85e5dad5034b2e079c21620d2071b8c718b8e262251097849279c5b",
+        "bytes": 220
+      },
+      "contents": {
+        "url": "https://www.academia.edu/25148252/Assessment_of_biotechnological_strategies_for_the_valorization_of_metal_bearing_wastes",
+        "at": "2026-10-14T15:40:06.211259+00:00",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    }
+  ],
+  "accepted": [
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/imre2021.pdf",
+      "sha256": "366cb28dce44df644bbae7f0f7a20a8cc2a3bdd547ba4d28ac75ca91f71519fa",
+      "bytes": 2188188,
+      "doi": "10.3390/ma14061546",
+      "url": "https://pdfs.semanticscholar.org/1b7e/a8c4d6d6679509a036e1d0503f1b7cb7f543.pdf",
+      "original_publisher_url": "https://www.mdpi.com/1996-1944/14/6/1546/pdf",
+      "inspected": "Complete 12-page original visually inspected, Figures 1–8 and Tables 1–4; corroborating official EuropePMC XML. No supplementary-material element/link in inspected originals.",
+      "license": "CC BY 4.0 stated on original first page and Crossref. Raw retained outside Git."
+    }
+  ],
+  "evidence_locators": [
+    {
+      "locator": "Table1; Sections2.1–2.2; Figures1–3",
+      "claims": "Lead-bearing waste-glass composition22.08wt%PbO, thermal/carbonate and acid-dissolution preparation, acid-concentration comparison and9.25g/LPb leachate."
+    },
+    {
+      "locator": "Sections2.3–2.4,3.2; Figures4–7; Table2",
+      "claims": "Electrolyte and operation parameters; deposition quantified after nitric-acid dissolution; deposition denominator electrolyte Pb; chosen low-energy condition is not maximum extraction."
+    },
+    {
+      "locator": "Section3.3; Figure8; Tables3–4; Section4; abstract",
+      "claims": "Modeled rather than actual throughput; discrepancies between time, mass-flow and complete-recovery statements retained explicitly."
+    }
+  ],
+  "deferred": [
+    {
+      "doi": "10.1016/j.hydromet.2014.02.016",
+      "title": "Metal leaching from cathode ray tube waste using combination of Serratia plymuthica and EDTA",
+      "status": "Crossref/OpenAlex/DOI landing and Elsevier TDM metadata verified; closed OA status, ResearchGate request-only, original methods/figures/SI not acquired. HTTP200 TDM response is only 1835-byte metadata, not full text.",
+      "routes": [
+        "https://doi.org/10.1016/j.hydromet.2014.02.016",
+        "https://api.elsevier.com/content/article/doi/10.1016/j.hydromet.2014.02.016?httpAccept=text/xml",
+        "https://www.researchgate.net/publication/260992181_Metal_Leaching_from_Cathode_Ray_Tube_Waste_using_Combination_of_Serratia_plymuthica_and_EDTA"
+      ],
+      "next_action": "Acquire complete legitimate original/SI and establish glass/component provenance, organism/strain, live versus cell-free and EDTA-only comparators, conditions and soluble-metal versus isolated-product denominators before adding microbial evidence.",
+      "rights": "Original redistribution rights unknown; no full original retained or redistributed."
+    },
+    {
+      "doi": "10.1016/j.wasman.2011.10.014",
+      "title": "Assessment of biotechnological strategies for the valorization of metal bearing wastes",
+      "pmid": "22088958",
+      "status": "Crossref and institutional metadata verified. IRIS has no attached files; OGS publisher file unavailable/request-copy. Elsevier HTTP200 TDM response is 1826-byte metadata. Public author Academia viewer exposed original OCR text but original graphical/PDF bytes were not acquired; direct public-page fetch returned403. No measurements accepted from OCR alone.",
+      "routes": [
+        "https://iris.univpm.it/handle/11566/66558",
+        "https://ricerca.ogs.it/handle/20.500.14083/15349",
+        "https://www.academia.edu/25148252/Assessment_of_biotechnological_strategies_for_the_valorization_of_metal_bearing_wastes"
+      ],
+      "identity_boundary": "Fluorescent powders recovered from CRT-glass recycling are a separate feed, not the glass itself and not the existing fluorescent-lamp-phosphor owner.",
+      "next_action": "Acquire and inspect complete original figures/tables/SI, characterize CRT fluorescent-powder feed and microbial/control design, then consider a separate resource owner.",
+      "rights": "Access to OCR does not establish redistribution rights for original; raw metadata and excerpts outside Git only."
+    }
+  ],
+  "limitations": [
+    "Experimental CRT component/supplier/device history unspecified; no source-specific funnel or panel assertion.",
+    "Source distinguishes glass PbO composition, dissolved Pb concentration, electrodeposition fraction of initial electrolyte Pb, charge efficiency and isolated deposit purity; denominators not merged.",
+    "Two-hour electrochemical methods versus one-hour conclusion; approximately10% feed-lead metal statement and all-remaining-dissolved wording not reconciled with dissolution curves.",
+    "Environmental model10kg/h is not operating plant; Table3carbonate input ratio and Table4lead output disagree with direct lab narrative; water class row also disagrees with accompanying text. No accepted environmental-superiority claim.",
+    "Electrolyte composition matches final leachate, but authentic versus reconstituted identity is not explicit; replicate count and impurity assay detail unavailable.",
+    "No complete microbial original accepted, no criticality assessment or taxon claim. No quantitative concentration observations because reported units/yields are outside native exact mg/kg-cell contract.",
+    "Bounded queries and Crossref relation/update fields found no matched correction/retraction notice; this is not proof that none exists. No author requests, paywalls or access controls bypassed."
+  ],
+  "frozen_files": [
+    {
+      "path": "data/records/cathode-ray-tube-glass.yaml",
+      "sha256": "f56443bdc8ab1501589248bbb76dde08193743236983dd2ab7c9b7757e89e670",
+      "bytes": 6772
+    },
+    {
+      "path": "history/records/cathode-ray-tube-glass/2026-10-14T154456Z-codex-6992dd.yaml",
+      "sha256": "531e1a3b4ecccf3794125a1e2ab1e8f7d419d5cb05865e7a5b5fad89184dbdb3",
+      "bytes": 869
+    }
+  ],
+  "named_validation": {
+    "command": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache PYTHONDONTWRITEBYTECODE=1 uv run --locked cmmmech validate data/records/cathode-ray-tube-glass.yaml --require-records",
+    "exit_code": 0,
+    "result": "Checked1record;0failed",
+    "log": {
+      "path": "/private/tmp/cmm-round75-crt-research/named-validation.log",
+      "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e",
+      "bytes": 31
+    },
+    "time_note": "Actual command completed before this report; exact start was not separately captured."
+  },
+  "raw_inventory": [
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/acquire-initial.py",
+      "sha256": "6736885436dfdb18e4689b83085ce7284bfca82380a1f8c456cf76ee47707bcf",
+      "bytes": 1151
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/acquire-second.py",
+      "sha256": "68adfe896c55e1b99ce5888de89cb4dc6857eac6a282b05987c1a62fcce261cd",
+      "bytes": 1664
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/acquisition-author-route.json",
+      "sha256": "77781eb4a85e5dad5034b2e079c21620d2071b8c718b8e262251097849279c5b",
+      "bytes": 220
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/acquisition-initial.json",
+      "sha256": "b1c21080128acca86cd15d6fc3107b9a6bf2b1b2aaec3f0423916764e62346e9",
+      "bytes": 1564
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/acquisition-second.json",
+      "sha256": "e6bfcfb6c134ca43aaaa657d5327b723a6131964f098b94d9959c86c313002bd",
+      "bytes": 3668
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/beolchini2012-crossref.json",
+      "sha256": "a85cc4d73063572afc5138a21f97d627ec8d776481d61ebb7de3a755c7328881",
+      "bytes": 15197
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/beolchini2012-iris.html",
+      "sha256": "9ccee538d2359d0056847eb6a8708e195046831f2ae5817ce7003a2204d3a266",
+      "bytes": 44579
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/beolchini2012-tdm.xml",
+      "sha256": "59565119c5a62c75a1130f0efe7dbc5ed7682d8ffe3f1cb843c23fcc777dd270",
+      "bytes": 1826
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/dedup-final-project.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/dedup-final-raw.txt",
+      "sha256": "f2085989dd06ce75492b82ec34f1c34e93738a72734d80e6620746b81ed932e6",
+      "bytes": 409584
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/dedup-final.json",
+      "sha256": "89efcb4939d4aa209fdac5f01ab2b2c16379492a131402a51b5f964ee7e15482",
+      "bytes": 1947
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/dedup-initial.json",
+      "sha256": "0ef090e31995ff84bb1ec28f4b23184c140fbce985c824030c3aba4667bd363b",
+      "bytes": 1089
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/dedup-initial.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/finish-dedup.py",
+      "sha256": "c231cbc6ebda617d21587a66044d5f9a0dcfdcfd41c3864ee3ae529a30abb953",
+      "bytes": 2268
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/imre2021-crossref.json",
+      "sha256": "a8f4fcc706f5340c4248c8e9a098d22680dd4b56ff1ce02950c05a66cdb0a890",
+      "bytes": 14374
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/imre2021-p1.png",
+      "sha256": "857d1dfc43e69c9721faff5ca2ea68c5373455ce3a61d4944827cf369a7c46bf",
+      "bytes": 236107
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/imre2021-p10.png",
+      "sha256": "577771697f7a689abdfa5387d52c9071609a6c5aa931c4d4b024408d1bf05a24",
+      "bytes": 149855
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/imre2021-p11.png",
+      "sha256": "37c345c17bda9e7111ddfbbbb2f4b7f72289d68e8e87e2fdfe9daf085dff4b99",
+      "bytes": 241947
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/imre2021-p12.png",
+      "sha256": "497ce67872b3561eccdc2eb57346964086c81b2dd0952588364f6d76ece56b44",
+      "bytes": 190409
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/imre2021-p2.png",
+      "sha256": "6611aefa3bb60d0e8c1aa15cfe9543015d2297e570de69cc6c08a48ba7da454d",
+      "bytes": 223045
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/imre2021-p3.png",
+      "sha256": "a6665e3f012b3f742923403ba3fec9714ac4826d9748a60fcbeec542db881540",
+      "bytes": 209569
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/imre2021-p4.png",
+      "sha256": "1f8ce1b94b2ff35df1c9c459e94cbbbcd054dd917eab00087b22bccd23bccc87",
+      "bytes": 141346
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/imre2021-p5.png",
+      "sha256": "9a26ea925f616726e15c3b079ff67f5fe5af6a16b8f47443bcf3f09a1eb37bcc",
+      "bytes": 142307
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/imre2021-p6.png",
+      "sha256": "e451f477bcd5499ed5c887832af972f83986f0517b71cfdd1c7a3c70f036eb1b",
+      "bytes": 127184
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/imre2021-p7.png",
+      "sha256": "b7c2d51a5d7354c572c9b5a48bc73991dcf3eaf4402eafc4e04f2bce6f3c0654",
+      "bytes": 111275
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/imre2021-p8.png",
+      "sha256": "6bd5e606e1589850c66e94fe3efe42ee1d68dea4f22e1a148eaf85a1c13b50f1",
+      "bytes": 163848
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/imre2021-p9.png",
+      "sha256": "d650fd63502882e0a65db5ec52c44217af70433408634e5c7503d428de7ed01a",
+      "bytes": 141593
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/imre2021.pdf",
+      "sha256": "366cb28dce44df644bbae7f0f7a20a8cc2a3bdd547ba4d28ac75ca91f71519fa",
+      "bytes": 2188188
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/imre2021.txt",
+      "sha256": "140acbe53e40c25f608326efc02f25513fc990c9436f05a84273378478c0ee36",
+      "bytes": 35727
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/imre2021.xml",
+      "sha256": "b74d87eb1d195f0bc275a0ac35dbedb910ec3f9b2a767dda82efe075d2a2665c",
+      "bytes": 105108
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/named-validation.log",
+      "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e",
+      "bytes": 31
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/pant2014-crossref.json",
+      "sha256": "dcfc94d063ac0ce64fe7ed0332c1fa79e82d62b11f03d33c9904fdce317125d1",
+      "bytes": 16084
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/pant2014-doi.html",
+      "sha256": "a43511979c5243d4161e73732575081d03acbceec852427413fc642d2cfe6ea5",
+      "bytes": 2709
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/pant2014-openalex.json",
+      "sha256": "1969ab47ba802f5e8f5a8cffb80ad0417c15f9a942b3de2f32d351599acd2367",
+      "bytes": 13424
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/pant2014-tdm.xml",
+      "sha256": "b7e9250bea8de3201f45cefab98af088d9f97ef10b8bb30c777bcb42bcb71322",
+      "bytes": 1835
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/phosphor-dedup.txt",
+      "sha256": "6f3703cee502add1b088004a49f8565194bafa50c99584e5379fc94b857d3f42",
+      "bytes": 3453548
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/search-1.json",
+      "sha256": "206d8407fd8a7e5f4c7a7917de94ec099591f91ca5315f6388f2fa17ee7baf66",
+      "bytes": 34048
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/search-10.json",
+      "sha256": "41bf255222926e680778c4bcbd181f0734b2e58aba7a296512a10298844e5317",
+      "bytes": 22265
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/search-2.json",
+      "sha256": "ce998d5efe04809c28eb27628c6e9dec660c07de652707cc7cb28c42ec4de4ca",
+      "bytes": 28716
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/search-3.json",
+      "sha256": "cb37072fe8ed3ce4ac667a9a43c3cd1b281f424ccef4c32cf31be12f1be7cf9e",
+      "bytes": 29818
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/search-4.json",
+      "sha256": "6b057622f7d09f1d87b52801b54fb04b37ae4f27745aca82f966f1c41e7a1f0b",
+      "bytes": 30212
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/search-5.json",
+      "sha256": "b7fab7d9ea585bf658e46f8d2a59db88cfde4d5af56dd7ef3c9e08fe7beb095d",
+      "bytes": 33618
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/search-6.json",
+      "sha256": "3e01b248aec7eb815ba2e21fd315747566e8f0afa6103886bb638759db39b331",
+      "bytes": 31274
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/search-7.json",
+      "sha256": "2a6dac3a8cc2ea2264c2600efe867a32ea1ec5f095cf59fd2ae9017a23d63c1e",
+      "bytes": 13876
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/search-8.json",
+      "sha256": "a7a8bfa00e0590500e0217f3011c076dfa1517313794e6d0b31341793e829854",
+      "bytes": 27407
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/search-9.json",
+      "sha256": "2b8a20aa5be83b438cc1545b89915278ef5f3f0db11759735e11ff4aede47c8e",
+      "bytes": 7406
+    },
+    {
+      "path": "/private/tmp/cmm-round75-crt-research/write-dossier.py",
+      "sha256": "f3faf0505404c75901c211f7c4efa217ba5f06afe2f8a216c31c3c2055b2d129",
+      "bytes": 14447
+    }
+  ],
+  "schema_assessment": "Existing secondary_resource/recovery/microbial:false and qualified evidence prose suffice; no schema/validator changes.",
+  "review_handoff": "Independent exact-byte scientific review required; this source dossier is not acceptance. Root coordinates batch checks and reviewer saves after actual gate receipt."
+}

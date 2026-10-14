@@ -1,0 +1,479 @@
+# Independent scientific review of montmorillonite round75
+
+- Review: 20261014T155141Z-montmorillonite-round75-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T15:45:43.258811Z
+- Finished UTC: 2026-10-14T15:51:41.602540Z
+- Reviewer: codex /root/round68_phosphates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The mineral owner accurately restricts microbial/humic-associated Fe(II) observations and XRD alteration to SWy-2, with source-matched conditions and explicit exclusion of NAu-2-only sterile controls, product assignments and mechanisms.
+
+## Scope And Provenance
+
+Entire new owner, source/identity/method/outcome/contradiction assertions, canonical history and full claim-bearing primary/supplement graphics.
+
+Selection: Independently assigned frozen montmorillonite owner; no sampled claims.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 4cb10d22d5542370cf5fac27288907ec0d42308c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:montmorillonite | data/records/montmorillonite.yaml | maintained | Montmorillonite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent reviewer named validation | passed | True | cmmmech:montmorillonite | Actual reviewer command exited0 and checked2records/0failures; log retained. |
+| Coordinator terminal batch gate independently verified | passed | True | cmmmech:montmorillonite | Verified actual terminal receipt, unchanged final owner hash, trusted base, zero exit and complete log hash. |
+| Coordinator terminal batch gate independently verified | passed | True | cmmmech:montmorillonite | Verified actual terminal receipt, unchanged final owner hash, trusted base, zero exit and complete log hash. |
+| Coordinator terminal batch gate independently verified | passed | True | cmmmech:montmorillonite | Verified actual terminal receipt, unchanged final owner hash, trusted base, zero exit and complete log hash. |
+| Coordinator terminal batch gate independently verified | passed | True | cmmmech:montmorillonite | Verified actual terminal receipt, unchanged final owner hash, trusted base, zero exit and complete log hash. |
+
+## Scientific And Domain Assessments
+
+### Identity and scope
+
+identity: supported. Targets: cmmmech:montmorillonite.
+
+IMA G1847 and Handbook support montmorillonite mineral scope, generalized variable formula and smectite membership. Natural processed SWy-2 is not proved phase-pure, generic bentonite, nontronite or isolated illite.
+
+### Methods and scope
+
+evidence: supported. Targets: cmmmech:montmorillonite.
+
+Original pp7–8 verify size fraction0.5–2µm afterNaCl conditioning, MR-1 culture/washing, anaerobic PIPES assays,0.03gSWy-2/30mL,3mgKCl and humic concentrations. Source gives neither reduction-assay donor nor PIPES pH; stock/model pH is not transferred. Figure2b supports expanded loadings despite the Methods sentence naming NAu-2 only.
+
+### Outcomes and scope
+
+evidence: supported. Targets: cmmmech:montmorillonite.
+
+Figures1d–f/2b and S1c/d support humic-enhanced operational totalFe(II) relative to living zero-HA assays. S6 supports altered diffraction, not complete phase conversion. SI S5b explicitly identifies NAu-2 and cannot establish a SWy-2 sterile comparison. Detailed NAu-2 illite/silica/tentative siderite and Fe(II) partitioning are correctly excluded. No values were digitized or recovered-product yield inferred.
+
+### Provenance and scope
+
+provenance: supported. Targets: cmmmech:montmorillonite.
+
+Native inspection preceded scientific assessment after preliminary owner read. Exact owners and linked CREATE sessions remain unchanged, current named validation and terminal batch checks passed; published-source lineage and bounded search preserved.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/montmorillonite.yaml; Entire frozen owner after native inspect | supports | All scientific fields, sources, inline CREATE and sidecar attachment read; exact hash unchanged. |
+| history | history/records/montmorillonite/2026-10-14T154216Z-codex-d7937f.yaml; Entire canonical CREATE sidecar and inline event linkage | supports | Actor, actual timestamp, target, summary and sidecar reference agree; no invented retrospective provenance. |
+| primary | https://doi.org/10.1038/srep45354; Complete9-page original read and all pages visually inspected; Figure1d–f, Figure2b, Methodspp7–8; separate NAu-2 Figures3–6 checked for nontransfer | supports | Processed SWy-2 preparation, washed MR-1 suspension,0.03g/30mL basic assay,3mgKCl,10–200mg/L humic acids,30C dark,120h time courses, SDn3 and phenanthroline measurement checked. Methods naming only NAu-2 in expanded-loading sentence is explicitly distinguished from Figure2b SWy-2 labels. |
+| si | https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5371790/supplementaryFiles; Complete19-page original srep45354-s1.pdf, all pages visually inspected; S1c/d and S6 are SWy-2; S5b sterile labels and S7–S10 microscopy are NAu-2 | supports | SWy-2 rates/extents and XRD are directly shown. All sterile/HA fractionation/complexation and detailed product assignments checked as separate NAu-2 arms; no transfer to SWy-2. SI modelpH7 is not evidence of reduction-assay pH. |
+| handbook | https://handbookofmineralogy.org/pdfs/montmorillonite.pdf; Complete one-page original; independently read text and pixels | supports | IMA G1847 and Handbook support montmorillonite mineral scope, generalized variable formula and smectite membership. Natural processed SWy-2 is not proved phase-pure, generic bentonite, nontronite or isolated illite. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Retained official September2026 PDF, definitions pp1–2; relevant row pixels separately inspected; montmorillonite row PDFp147 | supports | Grandfathered names and formulas verified without turning historical dates into approval accessions. |
+| taxa | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=71150,211586&amp;retmode=xml; Current-round authoritative XML independently read, exact TaxId/ScientificName/Rank and synonyms | supports | 71150 is Paxillus involutus species; 211586 is Shewanella oneidensis MR-1 strain, synonymous with ATCC700550. Taxonomy does not independently authenticate the experimental stock. |
+| search | /private/tmp/cmm-round75-clay-peer-search.json; Four actual independent web queries: both exact DOIs with correction/retraction/erratum, vermiculite/Paxillus/abiotic, SWy-2/humic/sterile | context_only | No affecting formal notice located in bounded returned sets. Related Pinzari2022 institutional abstract explicitly reports abiotic exchange but original is restricted; it is not an independently verified replication. |
+| dedup | /private/tmp/cmm-round75-clay-peer-dedup.txt; rg --no-ignore --hidden --follow -l across current records/research/reviews/history and round73-silicates/round74-clays/round75-clays raw roots | context_only | Existing muscovite and nontronite records own other arms of the same studies; new owners preserve shared experiment lineage and distinct identities. Search included ignored/hidden files and relevant symlinks, not unrelated machine directories. |
+| named | /private/tmp/cmm-round75-clay-peer-validation.log; Actual reviewer uv run --locked cmmmech validate data/records/vermiculite.yaml data/records/montmorillonite.yaml --require-records; exit0 | supports | Two exact owners passed independent named structural validation. |
+| batch | /private/tmp/cmm-round75-final-gates.json; Terminal root receipt independently verified: base, exit0, all three command exits and complete log SHA256 | supports | Required final batch commands passed. Retained log SHA256 c6b5357c7bcc3003495533f942055076b5c6e8320007a4af9741592c69d98270. Structural validation is not evidence of scientific truth. |
+
+## Limits And Additional Notes
+
+- Experimental fraction is natural SWy-2 without quantitative accessory-phase analysis; not every reduced iron atom can be assigned exclusively to the montmorillonite lattice.
+- Assay donor and PIPES pH are not explicitly stated; Figure2b loading series has a methods-label limitation.
+- No matched sterile SWy-2 time course; humic abiotic reduction and accessory iron contributions remain unexcluded.
+- NAu-2-specific HA mechanisms, Fe(II) partitioning and microscopic products are not independent SWy-2 evidence.
+- Related source arms share a publication lineage; not independent replications.
+- Bounded notice/conflict searches are not exhaustive; no recomputation of published statistics or raw XRD refinement.
+- Review start is filesystem birth time of the retained native-inspection capture. Finish is actual construction time after independent terminal gate verification. Preliminary owner read preceded inspect; scientific judgment followed inspect.
+- External source originals reused from prior acquisition are explicitly identified; this review does not claim newly downloading them. Current-round taxonomy and authority acquisitions were independently read.
+- No corrective finding was established in this scope. Source limitations are preserved without inventing a review issue or editing accepted owner bytes.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T155141Z-montmorillonite-round75-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of montmorillonite round75
+started_at: '2026-10-14T15:45:43.258811Z'
+finished_at: '2026-10-14T15:51:41.602540Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: new_frontier peer authored these clay owners/history/dossier.
+    Reviewer authored separate CRT-glass owner and did not edit either reviewed clay
+    owner or history. Prior reviews of muscovite/nontronite did not author these new
+    owners.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The mineral owner accurately restricts microbial/humic-associated Fe(II)
+  observations and XRD alteration to SWy-2, with source-matched conditions and explicit
+  exclusion of NAu-2-only sterile controls, product assignments and mechanisms.
+source:
+  git_revision: 4cb10d22d5542370cf5fac27288907ec0d42308c
+  state: working_tree
+  inputs:
+  - path: data/records/montmorillonite.yaml
+    sha256: 18a12dbbf85672774f92d75c4ce43f26418ecae404db489f765def16a22ae86d
+    role: target
+  - path: history/records/montmorillonite/2026-10-14T154216Z-codex-d7937f.yaml
+    sha256: 9006e341b4ebb96ea99c0e45d05f9e1ca09d65d5ad35738a0dccaf3ab785e243
+    role: context
+  - path: research/sources/round75-clays/20261014T154437Z.json
+    sha256: 0141dd6bd02f2859075f97606336d30b8436bbd6bbea1e66dbaa3ee80461a597
+    role: context
+scope:
+  description: Entire new owner, source/identity/method/outcome/contradiction assertions,
+    canonical history and full claim-bearing primary/supplement graphics.
+  selection: Independently assigned frozen montmorillonite owner; no sampled claims.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:montmorillonite
+targets:
+- target_id: cmmmech:montmorillonite
+  path: data/records/montmorillonite.yaml
+  label: Montmorillonite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/montmorillonite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent reviewer named validation
+  command: uv run --locked cmmmech validate data/records/vermiculite.yaml data/records/montmorillonite.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Actual reviewer command exited0 and checked2records/0failures; log retained.
+  target_ids:
+  - cmmmech:montmorillonite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Coordinator terminal batch gate independently verified
+  command: just check
+  status: passed
+  required: true
+  summary: Verified actual terminal receipt, unchanged final owner hash, trusted base,
+    zero exit and complete log hash.
+  target_ids:
+  - cmmmech:montmorillonite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Coordinator terminal batch gate independently verified
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Verified actual terminal receipt, unchanged final owner hash, trusted base,
+    zero exit and complete log hash.
+  target_ids:
+  - cmmmech:montmorillonite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Coordinator terminal batch gate independently verified
+  command: uv run --locked cmmmech validate-history --base 4cb10d22d5542370cf5fac27288907ec0d42308c
+  status: passed
+  required: true
+  summary: Verified actual terminal receipt, unchanged final owner hash, trusted base,
+    zero exit and complete log hash.
+  target_ids:
+  - cmmmech:montmorillonite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_3
+  name: Coordinator terminal batch gate independently verified
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Verified actual terminal receipt, unchanged final owner hash, trusted base,
+    zero exit and complete log hash.
+  target_ids:
+  - cmmmech:montmorillonite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/montmorillonite.yaml
+  locator: Entire frozen owner after native inspect
+  accessed_at: '2026-10-14T15:51:41.602540Z'
+  support: supports
+  summary: All scientific fields, sources, inline CREATE and sidecar attachment read;
+    exact hash unchanged.
+  snapshot_sha256: 18a12dbbf85672774f92d75c4ce43f26418ecae404db489f765def16a22ae86d
+- evidence_id: history
+  kind: record_content
+  reference: history/records/montmorillonite/2026-10-14T154216Z-codex-d7937f.yaml
+  locator: Entire canonical CREATE sidecar and inline event linkage
+  accessed_at: '2026-10-14T15:51:41.602540Z'
+  support: supports
+  summary: Actor, actual timestamp, target, summary and sidecar reference agree; no
+    invented retrospective provenance.
+  snapshot_sha256: 9006e341b4ebb96ea99c0e45d05f9e1ca09d65d5ad35738a0dccaf3ab785e243
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1038/srep45354
+  locator: Complete9-page original read and all pages visually inspected; Figure1d–f,
+    Figure2b, Methodspp7–8; separate NAu-2 Figures3–6 checked for nontransfer
+  accessed_at: '2026-10-14T15:51:41.602540Z'
+  support: supports
+  summary: Processed SWy-2 preparation, washed MR-1 suspension,0.03g/30mL basic assay,3mgKCl,10–200mg/L
+    humic acids,30C dark,120h time courses, SDn3 and phenanthroline measurement checked.
+    Methods naming only NAu-2 in expanded-loading sentence is explicitly distinguished
+    from Figure2b SWy-2 labels.
+  snapshot_sha256: e400e983c37063a6f85d9ee6e3ae3861c5d0731e3299564e3c7933a691225286
+- evidence_id: si
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5371790/supplementaryFiles
+  locator: Complete19-page original srep45354-s1.pdf, all pages visually inspected;
+    S1c/d and S6 are SWy-2; S5b sterile labels and S7–S10 microscopy are NAu-2
+  accessed_at: '2026-10-14T15:51:41.602540Z'
+  support: supports
+  summary: SWy-2 rates/extents and XRD are directly shown. All sterile/HA fractionation/complexation
+    and detailed product assignments checked as separate NAu-2 arms; no transfer to
+    SWy-2. SI modelpH7 is not evidence of reduction-assay pH.
+  snapshot_sha256: c1fed5c32020eabd7ce7305229c76e05a29505fbbcfb13c0245d0c03ab19f74a
+- evidence_id: handbook
+  kind: authority
+  reference: https://handbookofmineralogy.org/pdfs/montmorillonite.pdf
+  locator: Complete one-page original; independently read text and pixels
+  accessed_at: '2026-10-14T15:51:41.602540Z'
+  support: supports
+  summary: IMA G1847 and Handbook support montmorillonite mineral scope, generalized
+    variable formula and smectite membership. Natural processed SWy-2 is not proved
+    phase-pure, generic bentonite, nontronite or isolated illite.
+  snapshot_sha256: 1b36b36622bf991d876e21848e9937fee407d5271c1d951184aa4b4600f6734b
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Retained official September2026 PDF, definitions pp1–2; relevant row pixels
+    separately inspected; montmorillonite row PDFp147
+  accessed_at: '2026-10-14T15:51:41.602540Z'
+  support: supports
+  summary: Grandfathered names and formulas verified without turning historical dates
+    into approval accessions.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: taxa
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=71150,211586&retmode=xml
+  locator: Current-round authoritative XML independently read, exact TaxId/ScientificName/Rank
+    and synonyms
+  accessed_at: '2026-10-14T15:51:41.602540Z'
+  support: supports
+  summary: 71150 is Paxillus involutus species; 211586 is Shewanella oneidensis MR-1
+    strain, synonymous with ATCC700550. Taxonomy does not independently authenticate
+    the experimental stock.
+  snapshot_sha256: b22d8923524aabae5195025e96998ef0e71740d2da30f8258bc0fceccfb1f57a
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round75-clay-peer-search.json
+  locator: 'Four actual independent web queries: both exact DOIs with correction/retraction/erratum,
+    vermiculite/Paxillus/abiotic, SWy-2/humic/sterile'
+  accessed_at: '2026-10-14T15:51:41.602540Z'
+  support: context_only
+  summary: No affecting formal notice located in bounded returned sets. Related Pinzari2022
+    institutional abstract explicitly reports abiotic exchange but original is restricted;
+    it is not an independently verified replication.
+  snapshot_sha256: f605a769e4987e5230f300ae55e7814728bd3cb7501947a855a9deb5f1fe5211
+  search_scope: Bounded first returned result sets only; exact query strings and output
+    retained. No exhaustive notice or literature absence claim.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round75-clay-peer-dedup.txt
+  locator: rg --no-ignore --hidden --follow -l across current records/research/reviews/history
+    and round73-silicates/round74-clays/round75-clays raw roots
+  accessed_at: '2026-10-14T15:51:41.602540Z'
+  support: context_only
+  summary: Existing muscovite and nontronite records own other arms of the same studies;
+    new owners preserve shared experiment lineage and distinct identities. Search
+    included ignored/hidden files and relevant symlinks, not unrelated machine directories.
+  snapshot_sha256: eaf593a97b01f3ce1f86e6dd0584734093c472000790bf9091a5ab93c06c29d1
+  search_scope: Explicit current project roots plus retained original source roots;
+    hidden/ignored included and relevant symlinks followed.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round75-clay-peer-validation.log
+  locator: Actual reviewer uv run --locked cmmmech validate data/records/vermiculite.yaml
+    data/records/montmorillonite.yaml --require-records; exit0
+  accessed_at: '2026-10-14T15:51:41.602540Z'
+  support: supports
+  summary: Two exact owners passed independent named structural validation.
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round75-final-gates.json
+  locator: 'Terminal root receipt independently verified: base, exit0, all three command
+    exits and complete log SHA256'
+  accessed_at: '2026-10-14T15:51:41.602540Z'
+  support: supports
+  summary: Required final batch commands passed. Retained log SHA256 c6b5357c7bcc3003495533f942055076b5c6e8320007a4af9741592c69d98270.
+    Structural validation is not evidence of scientific truth.
+  snapshot_sha256: 181ca72cfa526f2d6e43b7472b32024d250ce34583cadf1d400e2a2a1e394879
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Identity and scope
+  outcome: supported
+  summary: IMA G1847 and Handbook support montmorillonite mineral scope, generalized
+    variable formula and smectite membership. Natural processed SWy-2 is not proved
+    phase-pure, generic bentonite, nontronite or isolated illite.
+  target_ids:
+  - cmmmech:montmorillonite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  - taxa
+  dimensions:
+  - name: criticality
+    value: No jurisdiction/list/edition claim asserted
+    definition: Criticality is not inherited from constituent elements or related
+      commodities.
+    evidence_ids:
+    - record
+- assessment_id: methods
+  area: evidence
+  topic: Methods and scope
+  outcome: supported
+  summary: Original pp7–8 verify size fraction0.5–2µm afterNaCl conditioning, MR-1
+    culture/washing, anaerobic PIPES assays,0.03gSWy-2/30mL,3mgKCl and humic concentrations.
+    Source gives neither reduction-assay donor nor PIPES pH; stock/model pH is not
+    transferred. Figure2b supports expanded loadings despite the Methods sentence
+    naming NAu-2 only.
+  target_ids:
+  - cmmmech:montmorillonite
+  evidence_ids:
+  - record
+  - primary
+  - si
+  - taxa
+  dimensions:
+  - name: material_form
+    value: Mineral species; processed natural CMS SWy-2
+    definition: Identity does not establish quantitative accessory-phase purity.
+    evidence_ids:
+    - record
+    - primary
+    - si
+    - taxa
+  - name: organism_and_biomass
+    value: Washed living Shewanella oneidensis MR-1, NCBITaxon211586, source ATCC700550
+    definition: Current taxon is strain rank but not a transformation assay.
+    evidence_ids:
+    - record
+    - primary
+    - si
+    - taxa
+  - name: controls
+    value: Living zero-humic-acid SWy-2 comparisons; no presented matched sterile
+      SWy-2 time course
+    definition: NAu-2 sterile/control arms cannot be transferred.
+    evidence_ids:
+    - record
+    - primary
+    - si
+    - taxa
+  - name: deployment
+    value: Laboratory operational iron redox phenotype
+    definition: No isolated dissolved-metal recovery, phase-specific balance or industrial
+      deployment.
+    evidence_ids:
+    - record
+    - primary
+    - si
+    - taxa
+- assessment_id: outcomes
+  area: evidence
+  topic: Outcomes and scope
+  outcome: supported
+  summary: Figures1d–f/2b and S1c/d support humic-enhanced operational totalFe(II)
+    relative to living zero-HA assays. S6 supports altered diffraction, not complete
+    phase conversion. SI S5b explicitly identifies NAu-2 and cannot establish a SWy-2
+    sterile comparison. Detailed NAu-2 illite/silica/tentative siderite and Fe(II)
+    partitioning are correctly excluded. No values were digitized or recovered-product
+    yield inferred.
+  target_ids:
+  - cmmmech:montmorillonite
+  evidence_ids:
+  - record
+  - primary
+  - si
+- assessment_id: provenance
+  area: provenance
+  topic: Provenance and scope
+  outcome: supported
+  summary: Native inspection preceded scientific assessment after preliminary owner
+    read. Exact owners and linked CREATE sessions remain unchanged, current named
+    validation and terminal batch checks passed; published-source lineage and bounded
+    search preserved.
+  target_ids:
+  - cmmmech:montmorillonite
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - dedup
+  - search
+findings: []
+actions: []
+limitations:
+- Experimental fraction is natural SWy-2 without quantitative accessory-phase analysis;
+  not every reduced iron atom can be assigned exclusively to the montmorillonite lattice.
+- Assay donor and PIPES pH are not explicitly stated; Figure2b loading series has
+  a methods-label limitation.
+- No matched sterile SWy-2 time course; humic abiotic reduction and accessory iron
+  contributions remain unexcluded.
+- NAu-2-specific HA mechanisms, Fe(II) partitioning and microscopic products are not
+  independent SWy-2 evidence.
+- Related source arms share a publication lineage; not independent replications.
+- Bounded notice/conflict searches are not exhaustive; no recomputation of published
+  statistics or raw XRD refinement.
+notes:
+- Review start is filesystem birth time of the retained native-inspection capture.
+  Finish is actual construction time after independent terminal gate verification.
+  Preliminary owner read preceded inspect; scientific judgment followed inspect.
+- External source originals reused from prior acquisition are explicitly identified;
+  this review does not claim newly downloading them. Current-round taxonomy and authority
+  acquisitions were independently read.
+- No corrective finding was established in this scope. Source limitations are preserved
+  without inventing a review issue or editing accepted owner bytes.
+tags:
+- round75
+- montmorillonite
+- independent
+- primary-figures
+- qualified-microbial
+```

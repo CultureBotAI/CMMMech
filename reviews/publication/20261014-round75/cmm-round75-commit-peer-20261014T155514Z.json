@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-10-14T15:55:14.438026+00:00",
+  "reviewer": "codex /root/round68_iron_sulfides",
+  "independence": "Root authored this round75 commit adaptation. Reviewer did not edit it and only read/parsed source and captured snapshots. Reviewer authored djurleite and six separate operational constant adaptations; this audit does not accept those scientific contents.",
+  "scope": "Narrow static review of exact commit helper/source diff, strict final-audit guard, current cohort slugs and actual coverage receipt. No top-level execution, Git/GitHub mutation or repository edits.",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "unresolved_corrective_findings": 0,
+  "findings": [],
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round75-commit.py",
+      "sha256": "d4c652191325743f4424d58b9f76a4aaebf125be969762ceccd662220c30277c",
+      "snapshot": "/private/tmp/cmm-round75-commit-peer-20261014T155514Z-snapshots/cmm-round75-commit.py"
+    },
+    {
+      "path": "/private/tmp/cmm-round74-commit.py",
+      "sha256": "61a999c5db0186b2ef0faa5c9322e07dd319a99e8de89b95e0c481788414bf67",
+      "snapshot": "/private/tmp/cmm-round75-commit-peer-20261014T155514Z-snapshots/cmm-round74-commit.py"
+    },
+    {
+      "path": "/private/tmp/cmm-round75-helper-config.json",
+      "sha256": "c0bdf3114bfb358f712bfe434053d5757f33daafe13f11a197399f216ba23a9f",
+      "snapshot": "/private/tmp/cmm-round75-commit-peer-20261014T155514Z-snapshots/cmm-round75-helper-config.json"
+    },
+    {
+      "path": "/private/tmp/cmm-round75-local-coverage.json",
+      "sha256": "51b9f47c430c5487b456a6448eca7caac02f5a15750d4f042a4c1682a02c3280",
+      "snapshot": "/private/tmp/cmm-round75-commit-peer-20261014T155514Z-snapshots/cmm-round75-local-coverage.json"
+    }
+  ],
+  "diff": "--- /private/tmp/cmm-round74-commit.py\n+++ /private/tmp/cmm-round75-commit.py\n@@ -1,7 +1,7 @@\n from pathlib import Path\n from datetime import datetime,timezone\n import json,subprocess,hashlib\n-w=Path('/private/tmp/CMMMech-expansion-round74-20261014');p=Path('/private/tmp');base='a524756f3f4f90d81f89035fa7f85f1e1897b99d';branch='curate/cmm-expansion-round74-20261014'\n+w=Path('/private/tmp/CMMMech-expansion-round75-20261014');p=Path('/private/tmp');base='4cb10d22d5542370cf5fac27288907ec0d42308c';branch='curate/cmm-expansion-round75-20261014'\n def require_final_audit(audit, root, candidate_names, audit_path, base, branch, config):\n     if audit.get('passed') is not True or audit.get('verdict') not in ('pass', 'pass_with_limitations'):\n         raise RuntimeError('Final publication audit did not pass')\n@@ -28,7 +28,7 @@\n def git(*a):return subprocess.check_output(['git',*a],cwd=w,text=True).strip()\n assert git('rev-parse','HEAD')==base and git('branch','--show-current')==branch\n assert not git('diff','--cached','--name-only')\n-cfg=json.loads((p/'cmm-round74-helper-config.json').read_text())\n+cfg=json.loads((p/'cmm-round75-helper-config.json').read_text())\n auditp=Path(cfg['publication_peer_review']);audit=json.loads(auditp.read_text())\n names=set(git('diff','--name-only').splitlines())|set(git('ls-files','--others','--exclude-standard').splitlines())\n require_final_audit(audit,w,names,auditp,base,branch,cfg)\n@@ -37,9 +37,9 @@\n assert {x['path'] for x in audit['working_inputs']}==names-exclusions\n for x in audit['working_inputs']:assert sha(w/x['path'])==x['sha256'] and not (w/x['path']).is_symlink()\n assert all((w/n).is_file() and not (w/n).is_symlink() for n in names)\n-assert all(n in ['README.md','research/ingests/round74-frontier-20261014.md','research/ingests/round74-frontier-20261014.json'] or n.startswith(('pages/','reviews/structured/','reviews/publication/20261014-round74/','research/sources/round74-')) or n in ['data/records/'+s+'.yaml' for s in cfg['slugs']] or any(n.startswith('history/records/'+s+'/') for s in cfg['slugs']) for n in names)\n-for suffix in ['final-gates-afterfix','review-check-final','local-coverage']:\n- g=json.loads((p/('cmm-round74-'+suffix+'.json')).read_text());assert g.get('passed',g.get('exit_code')==0),suffix\n+assert all(n in ['README.md','research/ingests/round75-frontier-20261014.md','research/ingests/round75-frontier-20261014.json'] or n.startswith(('pages/','reviews/structured/','reviews/publication/20261014-round75/','research/sources/round75-','research/ingests/round75-checks-20261014/')) or n in ['data/records/'+s+'.yaml' for s in cfg['slugs']] or any(n.startswith('history/records/'+s+'/') for s in cfg['slugs']) for n in names)\n+for suffix in ['final-gates','review-check-final','local-coverage']:\n+ g=json.loads((p/('cmm-round75-'+suffix+'.json')).read_text());assert g.get('passed',g.get('exit_code')==0),suffix\n  if 'log' in g:assert sha(Path(g['log']))==g['log_sha256']\n files=[{'path':n,'sha256':sha(w/n)} for n in sorted(names)]\n subprocess.run(['git','diff','--check'],cwd=w,check=True)\n@@ -50,4 +50,4 @@\n head=git('rev-parse','HEAD');tree=git('rev-parse','HEAD^{tree}')\n assert git('rev-parse','HEAD^')==base and not git('status','--porcelain=v1','--untracked-files=all')\n r={'timestamp':datetime.now(timezone.utc).isoformat(),'worktree':str(w),'base':base,'branch':branch,'head':head,'tree':tree,'files':files,'publication_audit':str(auditp.relative_to(w)),'publication_audit_sha256':sha(auditp)}\n-f=p/'cmm-round74-commit-receipt.json';assert not f.exists();f.write_text(json.dumps(r,indent=2)+'\\n');print(json.dumps({'head':head,'tree':tree,'files':len(files)}))\n+f=p/'cmm-round75-commit-receipt.json';assert not f.exists();f.write_text(json.dumps(r,indent=2)+'\\n');print(json.dumps({'head':head,'tree':tree,'files':len(files)}))\n",
+  "exact_only_allowed_deltas": true,
+  "require_final_audit_text_unchanged": true,
+  "require_final_audit_ast_unchanged": true,
+  "assessments": [
+    "Actual diff is limited to round/base substitutions, actual final-gates receipt name and precise research/ingests/round75-checks-20261014/ addition. Historical strict guard implementation remains byte-identical.",
+    "Final audit must have passed exactly true, permitted positive verdict, unresolved corrective findings strict integer zero excluding bool, exact trusted base/branch/state, and config-equal counts/issues. Nonempty working_inputs must equal all commit candidate paths excluding only own final JSON/MD, without duplicate paths, absent files, symlinks or stale SHA256.",
+    "Candidate union is current tracked changes plus untracked nonignored files; this intentionally identifies commit candidates, not a claim that ignored material is absent. It is bound to final-audit exact set. Allowlist permits README, fixed round75 ingest pair, pages, native reviews, round75 publication/source/checks directories, exactly the four configured record slugs and their history prefixes. Existing unrelated data-record owners, schema, validator, workflows and governance paths are outside this allowlist. Broader pages/review prefixes still require exact final-audit input approval.",
+    "Execution first requires expected clean base/branch and empty index; repeats input hashes and type checks, requires actual final batch/native review/coverage receipts and log hashes, stages explicit candidate paths, verifies staged path set, and records reviewed file hashes and final parent/tree. Commit is not pushed by this helper.",
+    "Current counts are independently backed by actual local coverage:358 records,413 histories,427 reviews,76 available bases,358 exact covered. Config slugs match the four frozen owners."
+  ],
+  "limitations": [
+    "Current config is prepublication and has no publication_peer_review path yet, so helper deliberately cannot execute now. Final audit path and any tracked locator-issue disposition must be configured before final-package freeze and must match the final audit exactly.",
+    "The strict guard is unchanged, so no new fixture tests were added or run. This static pass does not replace final package review, native review gate, exact-head hosted review or committed preflight.",
+    "Guard assumes coordinated-session execution without Python optimization, trusted local config and stable files while committing; no generalized hostile concurrent filesystem guarantee is claimed."
+  ]
+}

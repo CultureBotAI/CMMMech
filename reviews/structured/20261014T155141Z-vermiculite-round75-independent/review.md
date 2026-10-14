@@ -1,0 +1,482 @@
+# Independent scientific review of vermiculite round75
+
+- Review: 20261014T155141Z-vermiculite-round75-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T15:45:43.258811Z
+- Finished UTC: 2026-10-14T15:51:41.602540Z
+- Reviewer: codex /root/round68_phosphates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The group-scoped owner correctly retains potassium-exchanged specimen provenance, measured harvested-mycelium potassium and surface alteration, while excluding uniquely fungal release, significant aluminium uptake and industrial recovery claims.
+
+## Scope And Provenance
+
+Entire new owner, source/identity/method/outcome/contradiction assertions, canonical history and full claim-bearing primary/supplement graphics.
+
+Selection: Independently assigned frozen vermiculite owner; no sampled claims.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 4cb10d22d5542370cf5fac27288907ec0d42308c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:vermiculite | data/records/vermiculite.yaml | maintained | Vermiculite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent reviewer named validation | passed | True | cmmmech:vermiculite | Actual reviewer command exited0 and checked2records/0failures; log retained. |
+| Coordinator terminal batch gate independently verified | passed | True | cmmmech:vermiculite | Verified actual terminal receipt, unchanged final owner hash, trusted base, zero exit and complete log hash. |
+| Coordinator terminal batch gate independently verified | passed | True | cmmmech:vermiculite | Verified actual terminal receipt, unchanged final owner hash, trusted base, zero exit and complete log hash. |
+| Coordinator terminal batch gate independently verified | passed | True | cmmmech:vermiculite | Verified actual terminal receipt, unchanged final owner hash, trusted base, zero exit and complete log hash. |
+| Coordinator terminal batch gate independently verified | passed | True | cmmmech:vermiculite | Verified actual terminal receipt, unchanged final owner hash, trusted base, zero exit and complete log hash. |
+
+## Scientific And Domain Assessments
+
+### Identity and scope
+
+identity: supported. Targets: cmmmech:vermiculite.
+
+Handbook explicitly treats vermiculite as a group name with unspecified individual minerals, while IMA retains a G1824 entry. Record preserves both without inventing one ideal endmember or inheriting criticality.
+
+### Methods and scope
+
+evidence: supported. Targets: cmmmech:vermiculite.
+
+The specimen was deliberately K-exchanged rather than a naturally K-rich feed. Flake handling, 30mL agar, cellophane, three5mm inoculum plugs,21days/25C/dark and five elemental replicates match primary methods/SI. Species taxon71150 is not a strain accession. Phosphorus balancing does not imply nitrogen equivalence; residual agar/cellophane potassium is explicit.
+
+### Outcomes and scope
+
+evidence: supported. Targets: cmmmech:vermiculite.
+
+Table3 K25.11±4.31µg/g dry mycelium versus depleted5.52±1.69 and complete304.11±11.05, with distinct b/c/a groups, supports the narrow concentration comparison. It is not mineral-release fraction, intracellular-specific uptake or recovered product. Figure1c supports altered exposed surfaces; before-images are not matched aged abiotic controls. Dry-biomass groups overlap. Aluminium significance conflict and absent K-transporter upregulation in Discussion4.2 are accurately preserved.
+
+### Provenance and scope
+
+provenance: supported. Targets: cmmmech:vermiculite.
+
+Native inspection preceded scientific assessment after preliminary owner read. Exact owners and linked CREATE sessions remain unchanged, current named validation and terminal batch checks passed; published-source lineage and bounded search preserved.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/vermiculite.yaml; Entire frozen owner after native inspect | supports | All scientific fields, sources, inline CREATE and sidecar attachment read; exact hash unchanged. |
+| history | history/records/vermiculite/2026-10-14T154205Z-codex-c140d7.yaml; Entire canonical CREATE sidecar and inline event linkage | supports | Actor, actual timestamp, target, summary and sidecar reference agree; no invented retrospective provenance. |
+| primary | https://doi.org/10.1016/j.funbio.2024.08.002; Complete14-page original read and every page visually inspected; Methods2.1–2.7, Tables1–5, Figures1–5, Discussion4.1–4.2; Table3 original pixels and Figure1c especially | supports | ATCC200175, K-exchanged BM1941,89, 21-day25C dark assay, five biological elemental/biomass replicates, no-mineral fungal controls, mycelial K means/SD and statistical groups checked. Groupb aluminium in Table3 contradicts Discussion; record explicitly rejects that significant-Al claim. |
+| si | https://ars.els-cdn.com/content/image/1-s2.0-S1878614624001065-mmc1.docx; Original DOCX text and all five rendered derivative pages independently inspected; MethodsS1–S3 and FiguresS1–S2; derivative PDF is not independent evidence | supports | Verified KCl4.42g/100mL14-day exchange, structural formula, flake preparation, phosphorus balancing, residual medium K and ITS procedure. No matched aged fungus-free mineral arm exists in this five-condition design. Gene-list spreadsheets/raw reads were not reanalysed; no individual gene-specific causal claim is accepted. |
+| handbook | https://handbookofmineralogy.org/pdfs/vermiculite.pdf; Complete one-page original; independently read text and pixels | supports | Handbook explicitly treats vermiculite as a group name with unspecified individual minerals, while IMA retains a G1824 entry. Record preserves both without inventing one ideal endmember or inheriting criticality. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Retained official September2026 PDF, definitions pp1–2; relevant row pixels separately inspected; vermiculite row PDFp228 | supports | Grandfathered names and formulas verified without turning historical dates into approval accessions. |
+| taxa | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=71150,211586&amp;retmode=xml; Current-round authoritative XML independently read, exact TaxId/ScientificName/Rank and synonyms | supports | 71150 is Paxillus involutus species; 211586 is Shewanella oneidensis MR-1 strain, synonymous with ATCC700550. Taxonomy does not independently authenticate the experimental stock. |
+| search | /private/tmp/cmm-round75-clay-peer-search.json; Four actual independent web queries: both exact DOIs with correction/retraction/erratum, vermiculite/Paxillus/abiotic, SWy-2/humic/sterile | context_only | No affecting formal notice located in bounded returned sets. Related Pinzari2022 institutional abstract explicitly reports abiotic exchange but original is restricted; it is not an independently verified replication. |
+| dedup | /private/tmp/cmm-round75-clay-peer-dedup.txt; rg --no-ignore --hidden --follow -l across current records/research/reviews/history and round73-silicates/round74-clays/round75-clays raw roots | context_only | Existing muscovite and nontronite records own other arms of the same studies; new owners preserve shared experiment lineage and distinct identities. Search included ignored/hidden files and relevant symlinks, not unrelated machine directories. |
+| named | /private/tmp/cmm-round75-clay-peer-validation.log; Actual reviewer uv run --locked cmmmech validate data/records/vermiculite.yaml data/records/montmorillonite.yaml --require-records; exit0 | supports | Two exact owners passed independent named structural validation. |
+| batch | /private/tmp/cmm-round75-final-gates.json; Terminal root receipt independently verified: base, exit0, all three command exits and complete log SHA256 | supports | Required final batch commands passed. Retained log SHA256 c6b5357c7bcc3003495533f942055076b5c6e8320007a4af9741592c69d98270. Structural validation is not evidence of scientific truth. |
+
+## Limits And Additional Notes
+
+- One K-exchanged specimen and one source-reported fungal strain; mineral-group scope does not universalize its behavior.
+- No matched aged fungus-free mineral treatment; abiotic exchange and acidified medium are plausible contributors.
+- Harvested mycelial concentrations do not resolve intracellular versus surface-associated ions or microscopic mineral carryover, and are not an extraction mass balance.
+- Table3 aluminium groups conflict with Discussion; only the supported K comparison is accepted.
+- Gene-expression findings remain source-reported associations, not enzyme-specific intervention evidence. Original DOCX/main graphics inspected; supplementary gene workbooks and GEO raw reads not reanalysed.
+- Pinzari2022 full original remains unavailable in this review and is not counted as independent replication.
+- Review start is filesystem birth time of the retained native-inspection capture. Finish is actual construction time after independent terminal gate verification. Preliminary owner read preceded inspect; scientific judgment followed inspect.
+- External source originals reused from prior acquisition are explicitly identified; this review does not claim newly downloading them. Current-round taxonomy and authority acquisitions were independently read.
+- No corrective finding was established in this scope. Source limitations are preserved without inventing a review issue or editing accepted owner bytes.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T155141Z-vermiculite-round75-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of vermiculite round75
+started_at: '2026-10-14T15:45:43.258811Z'
+finished_at: '2026-10-14T15:51:41.602540Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: new_frontier peer authored these clay owners/history/dossier.
+    Reviewer authored separate CRT-glass owner and did not edit either reviewed clay
+    owner or history. Prior reviews of muscovite/nontronite did not author these new
+    owners.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The group-scoped owner correctly retains potassium-exchanged specimen provenance,
+  measured harvested-mycelium potassium and surface alteration, while excluding uniquely
+  fungal release, significant aluminium uptake and industrial recovery claims.
+source:
+  git_revision: 4cb10d22d5542370cf5fac27288907ec0d42308c
+  state: working_tree
+  inputs:
+  - path: data/records/vermiculite.yaml
+    sha256: ac406ac0fcd6d79a68ad824d0c04496eea5d6f71bb308bb63fa47dcefff7009b
+    role: target
+  - path: history/records/vermiculite/2026-10-14T154205Z-codex-c140d7.yaml
+    sha256: 3bef89b48168b8e46af8c8e3918529593523cb20478ac5edb8a5b138ddd99ec8
+    role: context
+  - path: research/sources/round75-clays/20261014T154437Z.json
+    sha256: 0141dd6bd02f2859075f97606336d30b8436bbd6bbea1e66dbaa3ee80461a597
+    role: context
+scope:
+  description: Entire new owner, source/identity/method/outcome/contradiction assertions,
+    canonical history and full claim-bearing primary/supplement graphics.
+  selection: Independently assigned frozen vermiculite owner; no sampled claims.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:vermiculite
+targets:
+- target_id: cmmmech:vermiculite
+  path: data/records/vermiculite.yaml
+  label: Vermiculite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/vermiculite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent reviewer named validation
+  command: uv run --locked cmmmech validate data/records/vermiculite.yaml data/records/montmorillonite.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Actual reviewer command exited0 and checked2records/0failures; log retained.
+  target_ids:
+  - cmmmech:vermiculite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Coordinator terminal batch gate independently verified
+  command: just check
+  status: passed
+  required: true
+  summary: Verified actual terminal receipt, unchanged final owner hash, trusted base,
+    zero exit and complete log hash.
+  target_ids:
+  - cmmmech:vermiculite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Coordinator terminal batch gate independently verified
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Verified actual terminal receipt, unchanged final owner hash, trusted base,
+    zero exit and complete log hash.
+  target_ids:
+  - cmmmech:vermiculite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Coordinator terminal batch gate independently verified
+  command: uv run --locked cmmmech validate-history --base 4cb10d22d5542370cf5fac27288907ec0d42308c
+  status: passed
+  required: true
+  summary: Verified actual terminal receipt, unchanged final owner hash, trusted base,
+    zero exit and complete log hash.
+  target_ids:
+  - cmmmech:vermiculite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_3
+  name: Coordinator terminal batch gate independently verified
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Verified actual terminal receipt, unchanged final owner hash, trusted base,
+    zero exit and complete log hash.
+  target_ids:
+  - cmmmech:vermiculite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/vermiculite.yaml
+  locator: Entire frozen owner after native inspect
+  accessed_at: '2026-10-14T15:51:41.602540Z'
+  support: supports
+  summary: All scientific fields, sources, inline CREATE and sidecar attachment read;
+    exact hash unchanged.
+  snapshot_sha256: ac406ac0fcd6d79a68ad824d0c04496eea5d6f71bb308bb63fa47dcefff7009b
+- evidence_id: history
+  kind: record_content
+  reference: history/records/vermiculite/2026-10-14T154205Z-codex-c140d7.yaml
+  locator: Entire canonical CREATE sidecar and inline event linkage
+  accessed_at: '2026-10-14T15:51:41.602540Z'
+  support: supports
+  summary: Actor, actual timestamp, target, summary and sidecar reference agree; no
+    invented retrospective provenance.
+  snapshot_sha256: 3bef89b48168b8e46af8c8e3918529593523cb20478ac5edb8a5b138ddd99ec8
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.funbio.2024.08.002
+  locator: Complete14-page original read and every page visually inspected; Methods2.1–2.7,
+    Tables1–5, Figures1–5, Discussion4.1–4.2; Table3 original pixels and Figure1c
+    especially
+  accessed_at: '2026-10-14T15:51:41.602540Z'
+  support: supports
+  summary: ATCC200175, K-exchanged BM1941,89, 21-day25C dark assay, five biological
+    elemental/biomass replicates, no-mineral fungal controls, mycelial K means/SD
+    and statistical groups checked. Groupb aluminium in Table3 contradicts Discussion;
+    record explicitly rejects that significant-Al claim.
+  snapshot_sha256: 146249ea23baeccaad3820839067d54924eab233bddcd47b1e42bba863d70729
+- evidence_id: si
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S1878614624001065-mmc1.docx
+  locator: Original DOCX text and all five rendered derivative pages independently
+    inspected; MethodsS1–S3 and FiguresS1–S2; derivative PDF is not independent evidence
+  accessed_at: '2026-10-14T15:51:41.602540Z'
+  support: supports
+  summary: Verified KCl4.42g/100mL14-day exchange, structural formula, flake preparation,
+    phosphorus balancing, residual medium K and ITS procedure. No matched aged fungus-free
+    mineral arm exists in this five-condition design. Gene-list spreadsheets/raw reads
+    were not reanalysed; no individual gene-specific causal claim is accepted.
+  snapshot_sha256: be068382201e67f41c68894589ab8584ab03f76b70578ceb5bf3b89cbba98c42
+- evidence_id: handbook
+  kind: authority
+  reference: https://handbookofmineralogy.org/pdfs/vermiculite.pdf
+  locator: Complete one-page original; independently read text and pixels
+  accessed_at: '2026-10-14T15:51:41.602540Z'
+  support: supports
+  summary: Handbook explicitly treats vermiculite as a group name with unspecified
+    individual minerals, while IMA retains a G1824 entry. Record preserves both without
+    inventing one ideal endmember or inheriting criticality.
+  snapshot_sha256: 2d7c72d42db94d49ab3210b1ab90a691614dfcd0217f05522a96ca5029f9774f
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Retained official September2026 PDF, definitions pp1–2; relevant row pixels
+    separately inspected; vermiculite row PDFp228
+  accessed_at: '2026-10-14T15:51:41.602540Z'
+  support: supports
+  summary: Grandfathered names and formulas verified without turning historical dates
+    into approval accessions.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: taxa
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=71150,211586&retmode=xml
+  locator: Current-round authoritative XML independently read, exact TaxId/ScientificName/Rank
+    and synonyms
+  accessed_at: '2026-10-14T15:51:41.602540Z'
+  support: supports
+  summary: 71150 is Paxillus involutus species; 211586 is Shewanella oneidensis MR-1
+    strain, synonymous with ATCC700550. Taxonomy does not independently authenticate
+    the experimental stock.
+  snapshot_sha256: b22d8923524aabae5195025e96998ef0e71740d2da30f8258bc0fceccfb1f57a
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round75-clay-peer-search.json
+  locator: 'Four actual independent web queries: both exact DOIs with correction/retraction/erratum,
+    vermiculite/Paxillus/abiotic, SWy-2/humic/sterile'
+  accessed_at: '2026-10-14T15:51:41.602540Z'
+  support: context_only
+  summary: No affecting formal notice located in bounded returned sets. Related Pinzari2022
+    institutional abstract explicitly reports abiotic exchange but original is restricted;
+    it is not an independently verified replication.
+  snapshot_sha256: f605a769e4987e5230f300ae55e7814728bd3cb7501947a855a9deb5f1fe5211
+  search_scope: Bounded first returned result sets only; exact query strings and output
+    retained. No exhaustive notice or literature absence claim.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round75-clay-peer-dedup.txt
+  locator: rg --no-ignore --hidden --follow -l across current records/research/reviews/history
+    and round73-silicates/round74-clays/round75-clays raw roots
+  accessed_at: '2026-10-14T15:51:41.602540Z'
+  support: context_only
+  summary: Existing muscovite and nontronite records own other arms of the same studies;
+    new owners preserve shared experiment lineage and distinct identities. Search
+    included ignored/hidden files and relevant symlinks, not unrelated machine directories.
+  snapshot_sha256: eaf593a97b01f3ce1f86e6dd0584734093c472000790bf9091a5ab93c06c29d1
+  search_scope: Explicit current project roots plus retained original source roots;
+    hidden/ignored included and relevant symlinks followed.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round75-clay-peer-validation.log
+  locator: Actual reviewer uv run --locked cmmmech validate data/records/vermiculite.yaml
+    data/records/montmorillonite.yaml --require-records; exit0
+  accessed_at: '2026-10-14T15:51:41.602540Z'
+  support: supports
+  summary: Two exact owners passed independent named structural validation.
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round75-final-gates.json
+  locator: 'Terminal root receipt independently verified: base, exit0, all three command
+    exits and complete log SHA256'
+  accessed_at: '2026-10-14T15:51:41.602540Z'
+  support: supports
+  summary: Required final batch commands passed. Retained log SHA256 c6b5357c7bcc3003495533f942055076b5c6e8320007a4af9741592c69d98270.
+    Structural validation is not evidence of scientific truth.
+  snapshot_sha256: 181ca72cfa526f2d6e43b7472b32024d250ce34583cadf1d400e2a2a1e394879
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Identity and scope
+  outcome: supported
+  summary: Handbook explicitly treats vermiculite as a group name with unspecified
+    individual minerals, while IMA retains a G1824 entry. Record preserves both without
+    inventing one ideal endmember or inheriting criticality.
+  target_ids:
+  - cmmmech:vermiculite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  - taxa
+  dimensions:
+  - name: criticality
+    value: No jurisdiction/list/edition claim asserted
+    definition: Criticality is not inherited from constituent elements or related
+      commodities.
+    evidence_ids:
+    - record
+- assessment_id: methods
+  area: evidence
+  topic: Methods and scope
+  outcome: supported
+  summary: The specimen was deliberately K-exchanged rather than a naturally K-rich
+    feed. Flake handling, 30mL agar, cellophane, three5mm inoculum plugs,21days/25C/dark
+    and five elemental replicates match primary methods/SI. Species taxon71150 is
+    not a strain accession. Phosphorus balancing does not imply nitrogen equivalence;
+    residual agar/cellophane potassium is explicit.
+  target_ids:
+  - cmmmech:vermiculite
+  evidence_ids:
+  - record
+  - primary
+  - si
+  - taxa
+  dimensions:
+  - name: material_form
+    value: Mineral group; K-exchanged natural BM1941,89 specimen
+    definition: Authority name and experimental specimen are distinct.
+    evidence_ids:
+    - record
+    - primary
+    - si
+    - taxa
+  - name: organism_and_biomass
+    value: Living Paxillus involutus source-reported ATCC200175, species NCBITaxon71150
+    definition: Taxon scope does not independently authenticate strain.
+    evidence_ids:
+    - record
+    - primary
+    - si
+    - taxa
+  - name: controls
+    value: Fungal positive and depleted mineral-free controls; no matched aged fungus-free
+      K-vermiculite arm
+    definition: Abiotic K exchange and acidification cannot be uniquely apportioned.
+    evidence_ids:
+    - record
+    - primary
+    - si
+    - taxa
+  - name: deployment
+    value: Plant-free laboratory microcosm; no isolated K product
+    definition: No plant nutrient transfer or industrial extraction is demonstrated.
+    evidence_ids:
+    - record
+    - primary
+    - si
+    - taxa
+- assessment_id: outcomes
+  area: evidence
+  topic: Outcomes and scope
+  outcome: supported
+  summary: Table3 K25.11±4.31µg/g dry mycelium versus depleted5.52±1.69 and complete304.11±11.05,
+    with distinct b/c/a groups, supports the narrow concentration comparison. It is
+    not mineral-release fraction, intracellular-specific uptake or recovered product.
+    Figure1c supports altered exposed surfaces; before-images are not matched aged
+    abiotic controls. Dry-biomass groups overlap. Aluminium significance conflict
+    and absent K-transporter upregulation in Discussion4.2 are accurately preserved.
+  target_ids:
+  - cmmmech:vermiculite
+  evidence_ids:
+  - record
+  - primary
+  - si
+- assessment_id: provenance
+  area: provenance
+  topic: Provenance and scope
+  outcome: supported
+  summary: Native inspection preceded scientific assessment after preliminary owner
+    read. Exact owners and linked CREATE sessions remain unchanged, current named
+    validation and terminal batch checks passed; published-source lineage and bounded
+    search preserved.
+  target_ids:
+  - cmmmech:vermiculite
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - dedup
+  - search
+findings: []
+actions: []
+limitations:
+- One K-exchanged specimen and one source-reported fungal strain; mineral-group scope
+  does not universalize its behavior.
+- No matched aged fungus-free mineral treatment; abiotic exchange and acidified medium
+  are plausible contributors.
+- Harvested mycelial concentrations do not resolve intracellular versus surface-associated
+  ions or microscopic mineral carryover, and are not an extraction mass balance.
+- Table3 aluminium groups conflict with Discussion; only the supported K comparison
+  is accepted.
+- Gene-expression findings remain source-reported associations, not enzyme-specific
+  intervention evidence. Original DOCX/main graphics inspected; supplementary gene
+  workbooks and GEO raw reads not reanalysed.
+- Pinzari2022 full original remains unavailable in this review and is not counted
+  as independent replication.
+notes:
+- Review start is filesystem birth time of the retained native-inspection capture.
+  Finish is actual construction time after independent terminal gate verification.
+  Preliminary owner read preceded inspect; scientific judgment followed inspect.
+- External source originals reused from prior acquisition are explicitly identified;
+  this review does not claim newly downloading them. Current-round taxonomy and authority
+  acquisitions were independently read.
+- No corrective finding was established in this scope. Source limitations are preserved
+  without inventing a review issue or editing accepted owner bytes.
+tags:
+- round75
+- vermiculite
+- independent
+- primary-figures
+- qualified-microbial
+```

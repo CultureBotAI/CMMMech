@@ -8,10 +8,14 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 354 material records.
+The catalogue currently contains 358 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Vermiculite group](data/records/vermiculite.yaml) | Fungal-associated potassium acquisition from a potassium-exchanged specimen | Abiotic exchange remains an alternative; a source aluminium claim conflicts with its table |
+| [Montmorillonite](data/records/montmorillonite.yaml) | Humic-associated iron reduction in SWy-2 suspensions containing MR-1 | No matched sterile SWy-2 series; nontronite controls and products are not transferred |
+| [Djurleite](data/records/djurleite.yaml) | Culture-associated copper mobilization from a mixed natural separate | Chemical baseline release, missing controls and conflicting inoculum reports limit attribution |
+| [Waste lead-bearing CRT glass](data/records/cathode-ray-tube-glass.yaml) | Abiotic thermal treatment, acid leaching and partial lead electrodeposition | Glass component is unspecified; recovery denominators, treatment times and modeled flows differ |
 | [Kaolinite](data/records/kaolinite.yaml) | Aerobic growth and siderophore responses with reference clay specimens | Indirect iron-access evidence; host phase and causal role of siderophores remain unresolved |
 | [Nontronite](data/records/nontronite.yaml) | Humic-assisted microbial iron reduction and partial clay transformation | Sterile controls support iron reduction; mixed products and missing assay recipe details constrain interpretation |
 | [Marcasite](data/records/marcasite.yaml) | Culture-associated ferric-iron accumulation from characterized powder | Altered inactive controls and Fe(III)-only assay prevent total-iron recovery claims |

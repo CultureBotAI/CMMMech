@@ -1,0 +1,109 @@
+{
+  "artifact_kind": "operational_metadata_correction",
+  "timestamp_utc": "2026-10-14T15:54:18.265013+00:00",
+  "author": "codex /root/round68_phosphates, GPT-6",
+  "independence": "Author correction of reviewer-authored operational wording; scientific clay assessments remain the existing independent reviews.",
+  "repository": "CultureBotAI/CMMMech",
+  "worktree": "/private/tmp/CMMMech-expansion-round75-20261014",
+  "base": "4cb10d22d5542370cf5fac27288907ec0d42308c",
+  "scope": "Append-only correction of one receipt-locator word in each of two immutable scientific review bundles.",
+  "issue_key": "CMMMech.round75.review-locator-check-count",
+  "severity": "minor",
+  "finding": "Both evidence batch locators say all three command exits, but the actual batch contains four commands. Every command was correctly enumerated as passed in each original checks list, with retained receipt and log hashes.",
+  "correction": "Read all four command exits in each affected evidence locator. No canonical YAML or rendered Markdown is overwritten.",
+  "reviews": [
+    {
+      "review_id": "20261014T155141Z-vermiculite-round75-independent",
+      "yaml_path": "reviews/structured/20261014T155141Z-vermiculite-round75-independent/review.yaml",
+      "yaml_sha256": "b939eef289ef0a3a939ada649de817ab8249503abf73d3202193e6a83255ad82",
+      "markdown_path": "reviews/structured/20261014T155141Z-vermiculite-round75-independent/review.md",
+      "markdown_sha256": "ce7f6f34a8fcfdadbede52daa8b52fa903aa0dfbce5fd9381c3b752d9bd9370d",
+      "field": "evidence[evidence_id=batch].locator",
+      "original_text": "Terminal root receipt independently verified: base, exit0, all three command exits and complete log SHA256",
+      "corrected_text": "Terminal root receipt independently verified: base, exit0, all four command exits and complete log SHA256",
+      "owner_path": "data/records/vermiculite.yaml",
+      "owner_sha256": "ac406ac0fcd6d79a68ad824d0c04496eea5d6f71bb308bb63fa47dcefff7009b",
+      "verdict_unchanged": "pass_with_limitations",
+      "canonical_findings": []
+    },
+    {
+      "review_id": "20261014T155141Z-montmorillonite-round75-independent",
+      "yaml_path": "reviews/structured/20261014T155141Z-montmorillonite-round75-independent/review.yaml",
+      "yaml_sha256": "4ed2f7867b4cf8a5509be4934540c453412ff0db2b43d87b668251f0acee3634",
+      "markdown_path": "reviews/structured/20261014T155141Z-montmorillonite-round75-independent/review.md",
+      "markdown_sha256": "0fc9650d920df0c59f3c9f9556513f14a144d5c1b8bc743cc7e4f785e4044aed",
+      "field": "evidence[evidence_id=batch].locator",
+      "original_text": "Terminal root receipt independently verified: base, exit0, all three command exits and complete log SHA256",
+      "corrected_text": "Terminal root receipt independently verified: base, exit0, all four command exits and complete log SHA256",
+      "owner_path": "data/records/montmorillonite.yaml",
+      "owner_sha256": "18a12dbbf85672774f92d75c4ce43f26418ecae404db489f765def16a22ae86d",
+      "verdict_unchanged": "pass_with_limitations",
+      "canonical_findings": []
+    }
+  ],
+  "actual_receipt": {
+    "path": "/private/tmp/cmm-round75-final-gates.json",
+    "sha256": "181ca72cfa526f2d6e43b7472b32024d250ce34583cadf1d400e2a2a1e394879",
+    "log": "/private/tmp/cmm-round75-final-gates.log",
+    "log_sha256": "c6b5357c7bcc3003495533f942055076b5c6e8320007a4af9741592c69d98270",
+    "started_at": "2026-10-14T15:46:37.831327+00:00",
+    "finished_at": "2026-10-14T15:50:14.550718+00:00",
+    "exit_code": 0,
+    "commands": [
+      {
+        "command": [
+          "just",
+          "check"
+        ],
+        "started_at": "2026-10-14T15:46:37.831759+00:00",
+        "finished_at": "2026-10-14T15:49:58.473523+00:00",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate",
+          "--require-records"
+        ],
+        "started_at": "2026-10-14T15:49:58.473544+00:00",
+        "finished_at": "2026-10-14T15:50:06.580384+00:00",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "cmmmech",
+          "validate-history",
+          "--base",
+          "4cb10d22d5542370cf5fac27288907ec0d42308c"
+        ],
+        "started_at": "2026-10-14T15:50:06.580404+00:00",
+        "finished_at": "2026-10-14T15:50:11.366201+00:00",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "python",
+          "scripts/render_pages.py",
+          "--check"
+        ],
+        "started_at": "2026-10-14T15:50:11.366222+00:00",
+        "finished_at": "2026-10-14T15:50:14.495763+00:00",
+        "exit_code": 0
+      }
+    ]
+  },
+  "scientific_record_changes": false,
+  "scientific_assessment_changes": false,
+  "prior_canonical_finding_disposition_changes": false,
+  "provenance_note": "The original reviews contain no findings. This metadata addendum does not invent, retire or resolve a canonical finding, change a scientific verdict, or create a curation-history event.",
+  "verification": "Both original YAML hashes, generated Markdown hashes, four listed review checks, four actual command exits, receipt/log hashes and unchanged final owner hashes verified before writing this addendum."
+}

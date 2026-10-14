@@ -1,0 +1,347 @@
+schema_version: 1.0.0
+review_id: 20261014T155030Z-djurleite-round75-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of djurleite
+started_at: '2026-10-14T15:47:16.622950Z'
+finished_at: '2026-10-14T15:50:30.455770Z'
+reviewer:
+  identity: codex /root/round68_new_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer authored vermiculite and montmorillonite, not djurleite.
+    Djurleite owner/history were curated by round68_iron_sulfides; no reviewer changes
+    to those inputs. Independently inspected acquired full original and all figures/tables
+    plus authorities; shared acquisition is disclosed and is not experimental replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of distinct djurleite and a laboratory culture-associated
+  copper-mobilization observation from impure natural material. Existing qualifications
+  correctly limit causal, quantitative, strain and deployment claims; no supported
+  corrective finding.
+source:
+  git_revision: 4cb10d22d5542370cf5fac27288907ec0d42308c
+  state: working_tree
+  inputs:
+  - path: data/records/djurleite.yaml
+    sha256: 5535b966be63e1c98e20698f9eb4615f1917d3db7159276fbfb158ad3c81101f
+    role: target
+  - path: history/records/djurleite/2026-10-14T154126Z-codex-2adec1.yaml
+    sha256: 2d6d3332e136d69afb221e19c0248a157210a8844069a80cd901f968432675c6
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Whole frozen maintained owner and canonical history; accepted full
+    primary evidence, experimental conditions/controls, material and organism identity,
+    outcome and limits.
+  selection: Assigned frozen djurleite record; native inspection before judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:djurleite
+targets:
+- target_id: cmmmech:djurleite
+  path: data/records/djurleite.yaml
+  label: Djurleite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/djurleite.yaml
+    role: maintained_scientific_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/djurleite/2026-10-14T154126Z-codex-2adec1.yaml
+    role: canonical_history
+checks:
+- check_id: named
+  name: Independent reviewer named validation
+  command: uv run --locked cmmmech validate data/records/djurleite.yaml
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-14T15:48:16.745109+00:00 to 2026-10-14T15:48:20.918772+00:00;
+    one record, zero failures.
+  target_ids:
+  - cmmmech:djurleite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Completed batch gate 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T15:46:37.831759+00:00 to 2026-10-14T15:49:58.473523+00:00;
+    terminal outcome and log hash independently verified.
+  target_ids:
+  - cmmmech:djurleite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Completed batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T15:49:58.473544+00:00 to 2026-10-14T15:50:06.580384+00:00;
+    terminal outcome and log hash independently verified.
+  target_ids:
+  - cmmmech:djurleite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Completed batch gate 3
+  command: uv run --locked cmmmech validate-history --base 4cb10d22d5542370cf5fac27288907ec0d42308c
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T15:50:06.580404+00:00 to 2026-10-14T15:50:11.366201+00:00;
+    terminal outcome and log hash independently verified.
+  target_ids:
+  - cmmmech:djurleite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_3
+  name: Completed batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T15:50:11.366222+00:00 to 2026-10-14T15:50:14.495763+00:00;
+    terminal outcome and log hash independently verified.
+  target_ids:
+  - cmmmech:djurleite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/djurleite.yaml
+  locator: Entire maintained owner
+  accessed_at: '2026-10-14T15:50:30.455770Z'
+  support: supports
+  summary: Exact inspected scientific and provenance fields independently assessed;
+    no reviewer owner edits.
+  snapshot_sha256: 5535b966be63e1c98e20698f9eb4615f1917d3db7159276fbfb158ad3c81101f
+- evidence_id: history
+  kind: record_content
+  reference: history/records/djurleite/2026-10-14T154126Z-codex-2adec1.yaml
+  locator: CREATE sidecar and inline change event
+  accessed_at: '2026-10-14T15:50:30.455770Z'
+  support: supports
+  summary: Actor, target, action and timestamps checked against the actual new owner;
+    inline event and sidecar remain distinct.
+  snapshot_sha256: 2d6d3332e136d69afb221e19c0248a157210a8844069a80cd901f968432675c6
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.5897/AJB2013.13023
+  locator: Full original pp.664–672; Methods p.665; Figures1–5 and Tables1–2, including
+    duplicated Figure2/Table1 layouts
+  accessed_at: '2026-10-14T15:50:30.455770Z'
+  support: supports
+  summary: Read full primary text and visually inspected all nine original page renders.
+    Mixed-specimen dissolution and separate attachment assays support qualified observations;
+    missing controls, inoculum and graph inconsistencies remain explicit.
+  snapshot_sha256: 410bbe806aa813d8819b9ad805700514f2fd0383c983ada8e109df4538a9427a
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: PDF p.58 Djurleite row; definitions pp.1–2
+  accessed_at: '2026-10-14T15:50:30.455770Z'
+  support: supports
+  summary: Species formula Cu31S16 and A/1967 s.p. verified; the special-procedure
+    year is not fabricated as a numbered approval accession.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://handbookofmineralogy.org/pdfs/djurleite.pdf
+  locator: Complete mineral entry
+  accessed_at: '2026-10-14T15:50:30.455770Z'
+  support: supports
+  summary: Monoclinic species, formula and related copper-sulfide associations independently
+    checked; actual assay feed remains impure.
+  snapshot_sha256: 7d01c626b27199ef825203e285ffb4c09a9ab2d300492f794c18f98aa97b32d4
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920
+  locator: Authoritative TaxId920 XML scientific name, rank and synonyms
+  accessed_at: '2026-10-14T15:50:30.455770Z'
+  support: supports
+  summary: Acidithiobacillus ferrooxidans at species rank, with historical Thiobacillus
+    synonym. Authority type-strain entries do not authenticate the experimental Atf.6
+    isolate.
+  snapshot_sha256: 24c18c87a7999d4024a1e0a2b780785e1f77cfdc584e3f00737b2a03d9d2b73a
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round75-djurleite-review/named-validation.json
+  locator: Actual reviewer command and log
+  accessed_at: '2026-10-14T15:50:30.455770Z'
+  support: supports
+  summary: 'Named strict validation: one record and zero failures; times, exit code
+    and log hash verified.'
+  snapshot_sha256: 2c377cc4e26b53cfe31da48adc6f84f6fd12ba5deb98b59ad98869295ea8c215
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round75-final-gates.json
+  locator: Actual completed root batch receipt and log
+  accessed_at: '2026-10-14T15:50:30.455770Z'
+  support: supports
+  summary: Verified exact worktree/base, required just check, nonempty validation
+    and history-base commands, every terminal exit and matching retained log hash.
+    Structural checks do not establish scientific truth.
+  snapshot_sha256: 181ca72cfa526f2d6e43b7472b32024d250ce34583cadf1d400e2a2a1e394879
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round75-djurleite-review/dedup.txt
+  locator: Bounded specified records/research/reviews/history and source download
+    paths
+  accessed_at: '2026-10-14T15:50:30.455770Z'
+  support: context_only
+  summary: Hidden/ignored entries and followed symlinks included; earlier context
+    mentions distinguished from a new maintained mineral owner and repeated experiment
+    lineage.
+  snapshot_sha256: b49c9a21ac4581ebacd4751e7851c19dc6810474ceeb6e82f77871f053de7dbd
+  search_scope: rg --no-ignore --hidden --follow -n -i -g *.yaml -g *.md -g *.json
+    -g *.txt djurleite|AJB2013.13023|10.1016/j.mineng.2012.09.018 data/records research
+    reviews history /private/tmp/cmm-round75-sulfides-research; specified bounded
+    paths only.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round75-djurleite-review/notice-search.json
+  locator: Exact DOI/title notice searches and related-study search; publisher metadata
+    inspected
+  accessed_at: '2026-10-14T15:50:30.455770Z'
+  support: context_only
+  summary: No affecting notice surfaced in the bounded returned results. Same-group
+    studies remain unresolved source leads, not independent accepted replication;
+    no supplement is exposed by the inspected original/publisher record.
+  snapshot_sha256: e6207f83681b6ff182a6b9a8410e0b00329e689e50abc2f9fcf8dfdc61b2d8fd
+  search_scope: 'Web search 2026-10-14: exact 10.5897/AJB2013.13023 correction erratum
+    retraction; Bioleaching of djurleite Fu2013 LD-1; exact accepted title. Opened
+    primary publisher landing page; related ScienceDirect comparison route failed403.
+    No exhaustive notice/supplement absence claim.'
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral species versus mixed assay feed
+  outcome: supported
+  summary: Authoritative monoclinic Cu31S16 is distinguished from related copper sulfides,
+    copper element and bulk ore. The paper reports associated chalcocite/bornite/quartz
+    with unexplained purity calculation and unshown XRD; the record does not elevate
+    these to pure-phase conversion.
+  evidence_ids:
+  - record
+  - primary
+  - ima
+  - handbook
+  target_ids:
+  - cmmmech:djurleite
+- assessment_id: organism
+  area: identity
+  topic: Species scope and strain uncertainty
+  outcome: supported
+  summary: Source Atf.6 remains an unauthenticated experimental isolate; NCBI920 is
+    species-level only. Neither a type culture nor the LD-1 label in related work
+    is silently substituted.
+  evidence_ids:
+  - record
+  - primary
+  - taxonomy
+  target_ids:
+  - cmmmech:djurleite
+- assessment_id: conditions
+  area: evidence
+  topic: Preparation, culture and separate assay arms
+  outcome: supported
+  summary: Late-log inoculum and medium, milled natural feed, flask volume, solids,
+    initial pH, temperature, agitation and iron series match the original. Washing
+    and KCl attachment conditions are kept separate from leaching, preserving unresolved
+    iron carryover.
+  evidence_ids:
+  - record
+  - primary
+  target_ids:
+  - cmmmech:djurleite
+- assessment_id: outcome
+  area: evidence
+  topic: Aqueous copper observation and denominator limits
+  outcome: supported
+  summary: Source 95.12% at48days/1.5gL iron is explicitly a bulk-specimen extraction
+    index, not isolated copper recovery, mineral-specific conversion or microbial-only
+    increment. Large preincubation chemical release and absent matched uninoculated
+    time course prevent stronger causal attribution.
+  evidence_ids:
+  - record
+  - primary
+  target_ids:
+  - cmmmech:djurleite
+- assessment_id: conflicts
+  area: scope
+  topic: Contradictions and controls constrain interpretation
+  outcome: supported
+  summary: The owner retains 1.0 versus0.5×10^8 inoculum statements, inconsistent
+    initial graph baseline, redox-unit/reference problems and absent replication,
+    uncertainty and closed mass balance. Hemocytometer counts do not demonstrate viability.
+    Attachment/SEM/model fits do not isolate direct enzymatic dissolution.
+  evidence_ids:
+  - record
+  - primary
+  target_ids:
+  - cmmmech:djurleite
+- assessment_id: lineage
+  area: provenance
+  topic: Repeated graphics, related work and deployment
+  outcome: supported
+  summary: Repeated Figure2/Table1 layouts are not independent experiments; related
+    same-group papers are not counted as replication. No industrial deployment or
+    inherited criticality claim is made.
+  evidence_ids:
+  - record
+  - primary
+  - dedup
+  - notices
+  target_ids:
+  - cmmmech:djurleite
+- assessment_id: provenance
+  area: provenance
+  topic: Exact owner/history and completed checks
+  outcome: supported
+  summary: Native inspect preceded assessment; owner/history hashes are unchanged.
+    Canonical CREATE and inline event truthfully describe the current addition. Actual
+    named and batch structural checks passed.
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  target_ids:
+  - cmmmech:djurleite
+findings: []
+actions: []
+limitations:
+- Reported XRD is not shown, associated copper minerals contribute and the purity
+  calculation is unexplained.
+- No matched uninoculated leaching time course, replication/error estimates, closed
+  copper balance or isolated product recovery.
+- Inoculum optimum and initial graph baseline conflict; redox-unit/reference and inoculum
+  iron carryover remain unresolved.
+- Species taxonomy does not authenticate Atf.6 or establish identity with related
+  LD-1 strains.
+- Attachment assay uses different preparation and conditions; correlation does not
+  identify a direct attack pathway.
+- Related source follow-ups and bounded notice/supplement checks are not exhaustive;
+  inaccessible related originals were not imported.
+notes:
+- Every supporting primary/authority evidence binding is an actual nonempty local
+  artifact; page renders/raw originals remain outside Git.
+- No record/history changes by reviewer; current source state remains a working tree
+  anchored to the trusted base.
