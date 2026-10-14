@@ -1,0 +1,53 @@
+{
+  "reviewed_at": "2026-10-14T14:12:48.355605+00:00",
+  "reviewer": "codex /root/round68_iron_sulfides",
+  "passed": false,
+  "verdict": "needs_correction",
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round73-final-package-audit.py",
+      "sha256": "2b119cef0fa730d5d0532ec1dcea83ba15259db77557b1841c1b547d368fdc94",
+      "snapshot": "/private/tmp/cmm-round73-publication-peer-initial-20261014T141248Z-sources/cmm-round73-final-package-audit.py"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-hosted-peer.py",
+      "sha256": "38163c19410c3779bde45ea39e1df036aec236aa20aa72e7e107515cadc51de7",
+      "snapshot": "/private/tmp/cmm-round73-publication-peer-initial-20261014T141248Z-sources/cmm-round73-hosted-peer.py"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-helper-config.json",
+      "sha256": "3dba45dc4d0bfe9f531167a735b5a45d0579ffa47aa777473a3e201d13093620",
+      "snapshot": "/private/tmp/cmm-round73-publication-peer-initial-20261014T141248Z-sources/cmm-round73-helper-config.json"
+    },
+    {
+      "path": "/private/tmp/cmm-round73-build-summary.py",
+      "sha256": "c167baa79d406a51c5b7c148d9e677abfd5a4eaa2f52142457672e1f4b88d73b",
+      "snapshot": "/private/tmp/cmm-round73-publication-peer-initial-20261014T141248Z-sources/cmm-round73-build-summary.py"
+    }
+  ],
+  "findings": [
+    {
+      "id": "OP2",
+      "severity": "minor",
+      "status": "open",
+      "helper": "/private/tmp/cmm-round73-final-package-audit.py",
+      "field": "for i in old_static[files] loop, snapshot=Path(i[snapshot])",
+      "description": "The final package auditor unconditionally requires snapshot on every initial static file entry. The imported round57 snapshot-library entry intentionally has helper/sha256/scope but no snapshot key. Thus the frozen auditor raises KeyError before final acceptance even when the package is valid.",
+      "evidence": {
+        "initial_audit": "/private/tmp/cmm-round73-helper-static-20261014T140400Z.json",
+        "sha256": "7d6ea10789fce7147b95f740a9044a8ceae6f53fa1497e202e729f409f84a190",
+        "entry": {
+          "helper": "/private/tmp/cmm-round57-recover-original.py",
+          "sha256": "a7c9487654d05821423a7d95844ac1289e80b5958107f1372cc0d0d3ed07906b",
+          "scope": "Read imported snapshot-library definitions and __main__guard; runpy(snapshot_library) does not run historical main."
+        }
+      },
+      "proposed_correction": "Distinguish snapshotted round73 helpers from the explicit imported library entry; bind the library to its recorded exact path/hash without inventing a source snapshot, and retain the full original audit unchanged.",
+      "acceptance": "Focused execution of the actual static-input verification block accepts the declared imported library shape and rejects changed library bytes, missing current-round snapshot, and changed current-round snapshot."
+    }
+  ],
+  "limitations": [
+    "Read-only static inspection; full publication helper not executed.",
+    "Independent library has no original snapshot, but its original path and SHA256 were recorded in the initial audit."
+  ]
+}

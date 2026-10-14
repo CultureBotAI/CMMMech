@@ -1,0 +1,45 @@
+{
+  "recorded_at": "2026-10-14T14:13:49.400731+00:00",
+  "passed": true,
+  "helper": "/private/tmp/cmm-round73-final-package-audit.py",
+  "helper_sha256": "2b119cef0fa730d5d0532ec1dcea83ba15259db77557b1841c1b547d368fdc94",
+  "fixture_source_sha256": "bb999e4e4f8614bfec7a35dc5f11f14eb5e2bd29c115f202989a17bb2b653f3e",
+  "test_scope": "Executes actual AST-selected original-input validation loop only; no top-level helper, Git, network or publication action.",
+  "cases": [
+    {
+      "name": "declared library and all thirteen real snapshots accepted",
+      "expected_accept": true,
+      "accepted": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "changed imported library rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "error": "AssertionError: Helper changed outside OP1 reviewed scope /private/tmp/cmm-round57-recover-original.py"
+    },
+    {
+      "name": "missing round73 snapshot rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "error": "AssertionError: Unexpected snapshot-less static input"
+    },
+    {
+      "name": "changed round73 snapshot digest rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "error": "AssertionError: Initial helper snapshot changed"
+    },
+    {
+      "name": "changed current round73 helper rejected",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "error": "AssertionError: Helper changed outside OP1 reviewed scope /private/tmp/cmm-round73-commit.py"
+    }
+  ]
+}

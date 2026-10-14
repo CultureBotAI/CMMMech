@@ -1,0 +1,123 @@
+{
+  "reviewed_at": "2026-10-14T14:04:00.846300+00:00",
+  "reviewer": "codex /root/round68_iron_sulfides",
+  "authorship": "Root-derived publication helpers; reviewer authored senarmontite and separately reviewed CIGS science, not these helpers.",
+  "scope": "Independent read-only static audit of13round73helpers plus imported snapshot library; no publication mutation executed. Config/build-report/closeout/finalauditor/hostedpeer not yet frozen or in this scope.",
+  "base": "ea4b9370fdb3d1ab23e5f43f6f9fe5f8d46a31e3",
+  "branch": "curate/cmm-expansion-round73-20261014",
+  "passed": false,
+  "verdict": "needs_correction",
+  "findings": [
+    {
+      "id": "OP1",
+      "severity": "minor",
+      "status": "open",
+      "helper": "/private/tmp/cmm-round73-hosted-audit-paginated.py",
+      "field": "report.pagination_correction",
+      "description": "The round73 helper writes a receipt sentence starting Round71 reuses the round70 pagination correction. This stale round label misattributes the current helper lineage, although actual request pagination/path/blob checks and round73base/branch constants are correct.",
+      "proposed_correction": "Change only narrative Round71 to Round73; retain genuine round70issue224 lineage and no fabricated round73first100failure.",
+      "acceptance": "Exact source diff limited to narrative correction; AST parse; successor audit hashes current helper. No live GitHub action required."
+    }
+  ],
+  "files": [
+    {
+      "helper": "/private/tmp/cmm-round73-commit.py",
+      "sha256": "b7a7550944a02c51f85da5c77df0614f78d5ee32eb631e5f1edcc84a66c82217",
+      "snapshot": "/private/tmp/cmm-round73-helper-static-20261014T140400Z-sources/cmm-round73-commit.py",
+      "syntax": "AST parse PASS; top-level not executed"
+    },
+    {
+      "helper": "/private/tmp/cmm-round73-open-pr.py",
+      "sha256": "9fa8434557ff4ff2d460e2bc5ee4b8d201e25688948f1735efa617e73e164ba2",
+      "snapshot": "/private/tmp/cmm-round73-helper-static-20261014T140400Z-sources/cmm-round73-open-pr.py",
+      "syntax": "AST parse PASS; top-level not executed"
+    },
+    {
+      "helper": "/private/tmp/cmm-round73-post-review.py",
+      "sha256": "0c7708c104cabefcbecfa1e2bb1fecc38871f56e744ac69ee90f12b1c404db57",
+      "snapshot": "/private/tmp/cmm-round73-helper-static-20261014T140400Z-sources/cmm-round73-post-review.py",
+      "syntax": "AST parse PASS; top-level not executed"
+    },
+    {
+      "helper": "/private/tmp/cmm-round73-enqueue.py",
+      "sha256": "b57673e7e74302d9983374fec465a3225fef858936bbbab8227fcd6b6006befc",
+      "snapshot": "/private/tmp/cmm-round73-helper-static-20261014T140400Z-sources/cmm-round73-enqueue.py",
+      "syntax": "AST parse PASS; top-level not executed"
+    },
+    {
+      "helper": "/private/tmp/cmm-round73-cleanup.py",
+      "sha256": "deaed2665ac4236e0733771e880406143c29b0f0fc319ca6c54aa002ce81c960",
+      "snapshot": "/private/tmp/cmm-round73-helper-static-20261014T140400Z-sources/cmm-round73-cleanup.py",
+      "syntax": "AST parse PASS; top-level not executed"
+    },
+    {
+      "helper": "/private/tmp/cmm-round73-sync-main.py",
+      "sha256": "6e1d4ac83b2d399025c798c0c34511cbed20817573973ef875cd5d0d43a9e9fb",
+      "snapshot": "/private/tmp/cmm-round73-helper-static-20261014T140400Z-sources/cmm-round73-sync-main.py",
+      "syntax": "AST parse PASS; top-level not executed"
+    },
+    {
+      "helper": "/private/tmp/cmm-round73-isolated-coverage.py",
+      "sha256": "3438313595fa2b42da55f997b679c1ce20cbbf88143c1db925bed3d701ec3eac",
+      "snapshot": "/private/tmp/cmm-round73-helper-static-20261014T140400Z-sources/cmm-round73-isolated-coverage.py",
+      "syntax": "AST parse PASS; top-level not executed"
+    },
+    {
+      "helper": "/private/tmp/cmm-round73-isolated-verification.py",
+      "sha256": "7e119834c0b3bcca7ed8692cc3ee91f4ad0b171d5a2272788f6c1a1c18217026",
+      "snapshot": "/private/tmp/cmm-round73-helper-static-20261014T140400Z-sources/cmm-round73-isolated-verification.py",
+      "syntax": "AST parse PASS; top-level not executed"
+    },
+    {
+      "helper": "/private/tmp/cmm-round73-hosted-audit-paginated.py",
+      "sha256": "20679685e47715fc8cd02384a7f18752fb30a57ec9c75df259c0acbd2a167025",
+      "snapshot": "/private/tmp/cmm-round73-helper-static-20261014T140400Z-sources/cmm-round73-hosted-audit-paginated.py",
+      "syntax": "AST parse PASS; top-level not executed"
+    },
+    {
+      "helper": "/private/tmp/cmm-round73-integration-check.py",
+      "sha256": "667c210c03732eb09ac50ca18060c712f228d4d59665023b9004bb90534ab24b",
+      "snapshot": "/private/tmp/cmm-round73-helper-static-20261014T140400Z-sources/cmm-round73-integration-check.py",
+      "syntax": "AST parse PASS; top-level not executed"
+    },
+    {
+      "helper": "/private/tmp/cmm-round73-preservation-check.py",
+      "sha256": "576001415793fff89a5aca7b3fe80587b5f4c6d33147d03155d77e8a820b2362",
+      "snapshot": "/private/tmp/cmm-round73-helper-static-20261014T140400Z-sources/cmm-round73-preservation-check.py",
+      "syntax": "AST parse PASS; top-level not executed"
+    },
+    {
+      "helper": "/private/tmp/cmm-round73-review-check-final.py",
+      "sha256": "18bdae3cb50ee98147df5a0fcb5f8acd0e248c3fc83be14a3a367227bb5e2855",
+      "snapshot": "/private/tmp/cmm-round73-helper-static-20261014T140400Z-sources/cmm-round73-review-check-final.py",
+      "syntax": "AST parse PASS; top-level not executed"
+    },
+    {
+      "helper": "/private/tmp/cmm-round73-gates.py",
+      "sha256": "c3f36811c477ebfdda19392c4bab26f4fed5e2925461ac02b1161d49cf01f6f2",
+      "snapshot": "/private/tmp/cmm-round73-helper-static-20261014T140400Z-sources/cmm-round73-gates.py",
+      "syntax": "AST parse PASS; top-level not executed"
+    },
+    {
+      "helper": "/private/tmp/cmm-round57-recover-original.py",
+      "sha256": "a7c9487654d05821423a7d95844ac1289e80b5958107f1372cc0d0d3ed07906b",
+      "scope": "Read imported snapshot-library definitions and __main__guard; runpy(snapshot_library) does not run historical main."
+    }
+  ],
+  "supported_checks": [
+    "Exactbase/branch/root/outputprefix values round73; no priorroundscientificcohort assertions in reviewed generichelpers.",
+    "Commit gate requires positivefinalaudit,int0unresolved,exactbase/branch/state/counts/issues and exactcandidatepathSHA256coverage; selectedscope permitsnewowners/history/reviews/fournewsourceprefixes/pages.",
+    "OpenPR cleanownedhead/tree/base,scopebranch uniqueness andbody exactchecks; no unrelatedcheckout switch.",
+    "Enqueue requiresliveexactheadandrequiredCI,nativeSQUASHALLGREENqueuewithoutbypass,liveexactCOMMENT,preflightidentity/log/commands andcurrentmainbase.",
+    "Freshclone preflight/postmerge verifies topicabsence,reviewbases/tag,exacttree/parent,canonicalchecker and exactcoverage; postmergejustcheck; operations isolated.",
+    "Hosted pulls/files uses actual --paginate --slurp,duplicate/path/count/status/blobguards; actualsoleparent/tree andfiveexactruns/jobs required forPASS.",
+    "Cleanup verifiesactualmerge/head/tree/baseandconfiguredissuestates,usesexactremotelease,detachesonlyownedworktree,deletesonlyownedtopic.",
+    "Sync-main requirespostmerge+hostedPASS,preservationmatch andff-only,withhiddenignorednontrackedcollisionchecks andunrelatedskillpreservation.",
+    "All13helpers ASTparsed without importing/executing mutation top-level."
+  ],
+  "limitations": [
+    "Static verification is not successful execution; live receipts,configcounts/issues,finalscientificcoverage and packagebytes remain required later.",
+    "Post-review readiness relies on completedexactheadhostedpeer gating; parent ordering must ensurepreflight beforeCOMMENT.",
+    "Snapshot library intentionally retainshistoricalconstants inside unused main; only genericread/preservationfunctionsare imported."
+  ]
+}
