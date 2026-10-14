@@ -1,0 +1,101 @@
+{
+  "recorded_at": "2026-10-14T12:29:46.907093+00:00",
+  "reviewer": "codex /root/round68_phosphates",
+  "scope": "Read-only adversarial static review of ten prepared round71 publication helpers and snapshot-library dependency. No helper was imported/executed; no Git/GitHub mutation. AST syntax parse only.",
+  "verdict": "pass_with_limitations",
+  "passed": true,
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round71-build-summary.py",
+      "sha256": "f662a40965ed88638c018a5f179c35c1f7e50726f33a4eaba041fc462fe5a021",
+      "bytes": 8255,
+      "syntax": "passed"
+    },
+    {
+      "path": "/private/tmp/cmm-round71-commit.py",
+      "sha256": "1a8ccd01a7941580c548a457f4cf018bb4f5365e44a40482c16c78eff6ef287c",
+      "bytes": 4695,
+      "syntax": "passed"
+    },
+    {
+      "path": "/private/tmp/cmm-round71-open-pr.py",
+      "sha256": "e1ae596621cc3fd266a3c5836ca3977d1069ff02e1e83f9e26f2e9569da328b1",
+      "bytes": 2114,
+      "syntax": "passed"
+    },
+    {
+      "path": "/private/tmp/cmm-round71-post-review.py",
+      "sha256": "6ec6977e58d7d352ebc952ed86d7f29bff83896ba779442b4e922e4ee6224705",
+      "bytes": 1984,
+      "syntax": "passed"
+    },
+    {
+      "path": "/private/tmp/cmm-round71-enqueue.py",
+      "sha256": "8dab35755eb8cbf89bf5a444a3dc473c5fd89effbeee34bd6d38a46054df6969",
+      "bytes": 4813,
+      "syntax": "passed"
+    },
+    {
+      "path": "/private/tmp/cmm-round71-cleanup.py",
+      "sha256": "d7e615cbe260ab056eaa43aa791d8b0a4f68af8d10b9ecced72bbcebe08b47d2",
+      "bytes": 3052,
+      "syntax": "passed"
+    },
+    {
+      "path": "/private/tmp/cmm-round71-sync-main.py",
+      "sha256": "4f884ac592c1befc7fbaf367a738ea818f0a91a30a23b5209f02c99b32187e36",
+      "bytes": 4902,
+      "syntax": "passed"
+    },
+    {
+      "path": "/private/tmp/cmm-round71-isolated-verification.py",
+      "sha256": "cdf07dbd1c4eb980d6c44843480dd3ff83c45ba2625439b72cf9fe6e847f35db",
+      "bytes": 9409,
+      "syntax": "passed"
+    },
+    {
+      "path": "/private/tmp/cmm-round71-isolated-coverage.py",
+      "sha256": "f6539d34da78156b3766f0453c64349c4e4749b4212d46e50a6e15bf38dc2b53",
+      "bytes": 3329,
+      "syntax": "passed"
+    },
+    {
+      "path": "/private/tmp/cmm-round71-hosted-audit-paginated.py",
+      "sha256": "8adc26745f01212f297622de62bad9a903703f2812a98667296d96488d42cdbd",
+      "bytes": 18990,
+      "syntax": "passed"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-recover-original.py",
+      "sha256": "a7c9487654d05821423a7d95844ac1289e80b5958107f1372cc0d0d3ed07906b",
+      "role": "sync-main transitive snapshot library; main guard prevents execution during run_path import"
+    }
+  ],
+  "findings": [
+    {
+      "id": "H1",
+      "severity": "minor",
+      "status": "open",
+      "path": "/private/tmp/cmm-round71-hosted-audit-paginated.py",
+      "field": "report.pagination_correction",
+      "finding": "Receipt prose says successor fixes preserved original first100-file response limit without saying this defect was round70; round71 reuses that earlier correction.",
+      "correction": "Describe reuse of round70 pagination correction; no logic change needed."
+    }
+  ],
+  "checks": [
+    "Every live round-specific path, branch and trusted base is round71/188ce7cb; historical fixed review-base tag is intentionally retained.",
+    "Commit requires exact final-audit candidate path set and SHA256 for every input, current config counts/issues, no symlinks, clean staging and base/branch match. Final audit itself is explicitly excluded from its self-hash input set but included in commit receipt.",
+    "OpenPR binds exact local head/tree/clean state, live main and unique owned branch; post-review requires matching hosted peer head/tree before COMMENT mutation.",
+    "Enqueue binds required CI, reviewed COMMENT, exact preflight identity/log/required commands and immediately observed live main; retains race limitation and native queue.",
+    "Cleanup deletes only owned branch after exact MERGED head/tree/parent and clean worktree, with remote force-with-lease matching expected head; no worktree deletion.",
+    "Original-main sync requires fresh postmerge and five hosted runs, unchanged hidden/ignored-inclusive snapshot and retained tag; fast-forward only and no autostash.",
+    "Fresh clone preflight/postmerge excludes topic commit, retains tag, asserts exact tree/parent, requires canonical checks and coverage; safe unique clone/receipt paths and constrained archive extraction.",
+    "Paginated hosted file API explicitly uses --paginate --slurp; verifies all-page complete exact set, duplicate/missing/extra status checks and every blob against immutable tree:path. Hosted check gates exact five workflow run/job identities."
+  ],
+  "limitations": [
+    "Helper-config.json was not yet present when read; concrete counts, target list and issue dispositions require final-package inspection. Prepared builder output was not yet generated or assessed.",
+    "Static review does not establish actual hosted identity/CI/preflight or authorize a premature passing runtime receipt.",
+    "Git candidate enumeration excludes ignored files by design; separate preservation snapshots explicitly include hidden/ignored files. No machinewide absence claim."
+  ],
+  "authorship_disclosure": "Reviewer authored calcite/vaterite and independently reviews nepheline; publication helper author is root."
+}

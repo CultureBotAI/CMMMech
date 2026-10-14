@@ -1,0 +1,560 @@
+# Independent scientific review of celestine
+
+- Review: 20261014T123807Z-celestine-round71-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T12:24:02Z
+- Finished UTC: 2026-10-14T12:38:07.742969Z
+- Reviewer: codex /root/round68_new_frontier (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Celestine identity and the bounded GL24 cell-surface mineralization evidence are supported. Complete original scanned pages and Figures 1–7 support the recorded mixed celestine/strontianite assignment, time course, control and measurement limits. No supported corrective defect remains; phase purity, exclusive biological causation and industrial recovery are not established.
+
+## Scope And Provenance
+
+Entire maintained record and linked canonical history; independent original-source assessment of all accepted scientific claims.
+
+Selection: Assigned frozen owner; native inspect before record-level judgment and exact input hashes rechecked at save. Source preparation began before final owner freeze.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 188ce7cb6f6dd1b7966b527546d80f9b4fb7fcec.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:celestine | data/records/celestine.yaml | maintained | Celestine |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Named strict validation | passed | True | cmmmech:celestine | Reviewer executed;2 records,0 failures. |
+| Completed batch check 1 | passed | True | cmmmech:celestine | Coordinator execution 2026-10-14T12:34:24.446228+00:00 through 2026-10-14T12:37:22.682639+00:00; receipt and log hash independently checked. |
+| Completed batch check 2 | passed | True | cmmmech:celestine | Coordinator execution 2026-10-14T12:37:22.682665+00:00 through 2026-10-14T12:37:28.535953+00:00; receipt and log hash independently checked. |
+| Completed batch check 3 | passed | True | cmmmech:celestine | Coordinator execution 2026-10-14T12:37:28.535980+00:00 through 2026-10-14T12:37:31.693947+00:00; receipt and log hash independently checked. |
+
+## Scientific And Domain Assessments
+
+### Species versus commodity and mixed product
+
+identity: supported. Targets: cmmmech:celestine.
+
+IMA approved species SrSO4 and Handbook orthorhombic barite-group identity agree. Celestite source spelling is an alias; elemental Sr, baryte commodity and strontianite are distinct. No inherited criticality.
+
+### GL24 identification
+
+grounding: supported. Targets: cmmmech:celestine.
+
+Source uses Synechococcus GL24 isolated from Fayetteville Green Lake. Record correctly avoids inventing a modern species or exact strain CURIE.
+
+### Experimental conditions and sampling
+
+evidence: supported. Targets: cmmmech:celestine.
+
+Complete methods support filter sterilization, Sr nitrate/base sulfate/bicarbonate salts, culture age and density, 9mL tubes, 22°C illumination, destructive time points and uninoculated comparator. Mixed-cation experiments remain separately scoped.
+
+### Claim-bearing microscopy and diffraction
+
+evidence: supported. Targets: cmmmech:celestine.
+
+Figures1–4 and original results support cell-associated Sr/S patches and limited celestine/strontianite assignments. Record preserves later carbonate dominance, does not equate Sr/S ratio with quantitative phase composition or assert pure celestine conversion.
+
+### Cells versus exclusive pathway
+
+scope: supported. Targets: cmmmech:celestine.
+
+No mineralization or pH change in uninoculated control supports culture association. Lack of killed-cell, isolated-S-layer and matched-pH experiments limits exclusive mechanism attribution, retained in owner.
+
+### Analytical sampling and Sr removal
+
+quantity: supported. Targets: cmmmech:celestine.
+
+Five EDS determinations are not biological replicates. Acidified cell-free-supernatant ICP measurements and Figure5 do not assign all removed Sr to celestine; shed S-layers and mixed phases are preserved.
+
+### Discussion versus measured outcomes
+
+scope: supported. Targets: cmmmech:celestine.
+
+Figures6–7 concern structure and calcium/gypsum context, and the proposed photosynthesis/S-layer causal narrative is not directly measured. Laboratory mineralization remains distinct from industrial recovery.
+
+### Canonical history and source integrity
+
+provenance: supported. Targets: cmmmech:celestine.
+
+Inspected exact owner and linked CREATE; source artifacts are nonempty actual scanned originals and authority PDFs. Hidden/ignored-inclusive dedup distinguishes existing elemental strontium owner and overlapping study lineage.
+
+### Validation and completed required checks
+
+schema: supported. Targets: cmmmech:celestine.
+
+Named strict validation and final batch receipt pass against the stated worktree and base; successful checks establish contract integrity, not scientific truth.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/celestine.yaml; Complete final owner | supports | Read every field, source reference and frozen byte hash. |
+| history | history/records/celestine/2026-10-14T122714Z-codex-4687d5.yaml; Entire linked canonical sidecar | supports | Target, actor, actual timestamp and finished curation/correction details checked against inline history. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Definitions pages1-2 and species row PDF39: Celestine, Sr(SO4), A, 1967 s.p. | supports | Original retained IMA row visually checked for exact species, formula, status and historical date. No constituent criticality inherited. |
+| handbook | https://www.handbookofmineralogy.org/pdfs/celestine.pdf; Complete one-page mineral entry | supports | Formula and crystallographic identity checked; authority entry is not experimental phase-purity certification. |
+| page447 | https://doi.org/10.1128/aem.60.2.447-453.1994; Complete original scanned page 447; local schultze1994-page447.png | supports | Original page independently read, including applicable methods, figures, captions, results, discussion or bibliography; retained acquisition manifest identifies original PMC image route. |
+| page448 | https://doi.org/10.1128/aem.60.2.447-453.1994; Complete original scanned page 448; local schultze1994-page448.png | supports | Original page independently read, including applicable methods, figures, captions, results, discussion or bibliography; retained acquisition manifest identifies original PMC image route. |
+| page449 | https://doi.org/10.1128/aem.60.2.447-453.1994; Complete original scanned page 449; local schultze1994-page449.png | supports | Original page independently read, including applicable methods, figures, captions, results, discussion or bibliography; retained acquisition manifest identifies original PMC image route. |
+| page450 | https://doi.org/10.1128/aem.60.2.447-453.1994; Complete original scanned page 450; local schultze1994-page450.png | supports | Original page independently read, including applicable methods, figures, captions, results, discussion or bibliography; retained acquisition manifest identifies original PMC image route. |
+| page451 | https://doi.org/10.1128/aem.60.2.447-453.1994; Complete original scanned page 451; local schultze1994-page451.png | supports | Original page independently read, including applicable methods, figures, captions, results, discussion or bibliography; retained acquisition manifest identifies original PMC image route. |
+| page452 | https://doi.org/10.1128/aem.60.2.447-453.1994; Complete original scanned page 452; local schultze1994-page452.png | supports | Original page independently read, including applicable methods, figures, captions, results, discussion or bibliography; retained acquisition manifest identifies original PMC image route. |
+| page453 | https://doi.org/10.1128/aem.60.2.447-453.1994; Complete original scanned page 453; local schultze1994-page453.png | supports | Original page independently read, including applicable methods, figures, captions, results, discussion or bibliography; retained acquisition manifest identifies original PMC image route. |
+| scan_manifest | https://pmc.ncbi.nlm.nih.gov/articles/PMC201332/; Original scanned-page acquisition receipt for pp447–453 | supports | All seven nonempty original page images were acquired and independently inspected; failed PMC PDF download is excluded. |
+| dedup | /private/tmp/cmm-round71-strontium-independent/dedup.txt; Records/research/reviews/history and referenced current raw source directory | context_only | Hidden/ignored-inclusive search with relevant symlinks followed; related elemental owner and source lineages distinguished. |
+| notices | /private/tmp/cmm-round71-strontium-independent/notice-search.json; Independent current exact-DOI searches and ASM correction-list follow-up | context_only | No relevant notice surfaced in bounded returned results. Original ASM issue correction entries concern other studies; this is not a universal absence claim. |
+| named | /private/tmp/cmm-round71-strontium-independent/named-validation.log; Reviewer execution log | supports | Named validation passed on both frozen owners. |
+| batch | /private/tmp/cmm-round71-final-gates.json; Completed root batch receipt and matching log | supports | Required commands completed successfully; exact worktree/base, exit codes and nonempty log checksum independently verified. |
+| artifact_audit | /private/tmp/cmm-round71-strontium-independent/source-artifact-audit-final.json; Actual nonempty artifact sizes, hashes and PDF signatures/page counts | context_only | Checked actual inspected PDF/XML/image sources rather than failed download filenames. |
+
+## Limits And Additional Notes
+
+- Early precipitates contain both celestine and strontianite. Selected-area diffraction and local EDS support the authors phase assignment, not a modern full-pattern quantitative phase fraction or pure-product yield.
+- Nine destructive time points use one culture tube each; five EDS determinations are analytical measurements, not biological replication. A single uninoculated comparator does not replace killed-cell, isolated-S-layer or matched-pH interventions.
+- GL24 is a source-defined isolate without an independently verified sequence or strain taxon identifier. Proposed effects on photosynthesis and S-layer replacement are not direct causal or viability measurements.
+- Supernatant Sr removal can include several mineral or surface pools and detached S-layers; it is not celestine recovery. No jurisdictional criticality or deployment claim is made.
+- Notice search is bounded to returned exact-DOI results and original issue contents; no claim of exhaustive historical notice absence.
+- No claim of pure-phase recovery, industrial deployment or universal microbial necessity is inferred. Full source files remain outside Git.
+- All evidence hashes bind nonempty actual inspected artifacts. Failed PMC PDF placeholders are not scientific evidence.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T123807Z-celestine-round71-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of celestine
+started_at: '2026-10-14T12:24:02Z'
+finished_at: '2026-10-14T12:38:07.742969Z'
+reviewer:
+  identity: codex /root/round68_new_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The reviewed strontium-mineral owners and their histories were
+    curated by /root/round68_iron_sulfides. This reviewer curated only nepheline in
+    round71 and made no edits to the reviewed owners or histories. Acquired raw sources
+    are shared, but original text, figures, complete relevant supplement, authorities
+    and exact record bytes were independently examined; this is independent assessment,
+    not independent experimental replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Celestine identity and the bounded GL24 cell-surface mineralization evidence
+  are supported. Complete original scanned pages and Figures 1–7 support the recorded
+  mixed celestine/strontianite assignment, time course, control and measurement limits.
+  No supported corrective defect remains; phase purity, exclusive biological causation
+  and industrial recovery are not established.
+source:
+  git_revision: 188ce7cb6f6dd1b7966b527546d80f9b4fb7fcec
+  state: working_tree
+  inputs:
+  - path: data/records/celestine.yaml
+    sha256: 3c07da892ba97f7eff25b90eeada40cc55174eacf8e93831bfe8b429c39585a3
+    role: target
+  - path: history/records/celestine/2026-10-14T122714Z-codex-4687d5.yaml
+    sha256: 9b8bfbda8e89d60fb6faa6ff669e11b64ad22bb4422b266ddf81207b0c113bae
+    role: context
+scope:
+  description: Entire maintained record and linked canonical history; independent
+    original-source assessment of all accepted scientific claims.
+  selection: Assigned frozen owner; native inspect before record-level judgment and
+    exact input hashes rechecked at save. Source preparation began before final owner
+    freeze.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:celestine
+targets:
+- target_id: cmmmech:celestine
+  path: data/records/celestine.yaml
+  label: Celestine
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/celestine.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Named strict validation
+  command: uv run --locked cmmmech validate data/records/celestine.yaml data/records/strontianite.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Reviewer executed;2 records,0 failures.
+  target_ids:
+  - cmmmech:celestine
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Completed batch check 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T12:34:24.446228+00:00 through 2026-10-14T12:37:22.682639+00:00;
+    receipt and log hash independently checked.
+  target_ids:
+  - cmmmech:celestine
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Completed batch check 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T12:37:22.682665+00:00 through 2026-10-14T12:37:28.535953+00:00;
+    receipt and log hash independently checked.
+  target_ids:
+  - cmmmech:celestine
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Completed batch check 3
+  command: uv run --locked cmmmech validate-history --base 188ce7cb6f6dd1b7966b527546d80f9b4fb7fcec
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T12:37:28.535980+00:00 through 2026-10-14T12:37:31.693947+00:00;
+    receipt and log hash independently checked.
+  target_ids:
+  - cmmmech:celestine
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/celestine.yaml
+  locator: Complete final owner
+  accessed_at: '2026-10-14T12:38:07.742969Z'
+  support: supports
+  summary: Read every field, source reference and frozen byte hash.
+  snapshot_sha256: 3c07da892ba97f7eff25b90eeada40cc55174eacf8e93831bfe8b429c39585a3
+- evidence_id: history
+  kind: record_content
+  reference: history/records/celestine/2026-10-14T122714Z-codex-4687d5.yaml
+  locator: Entire linked canonical sidecar
+  accessed_at: '2026-10-14T12:38:07.742969Z'
+  support: supports
+  summary: Target, actor, actual timestamp and finished curation/correction details
+    checked against inline history.
+  snapshot_sha256: 9b8bfbda8e89d60fb6faa6ff669e11b64ad22bb4422b266ddf81207b0c113bae
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'Definitions pages1-2 and species row PDF39: Celestine, Sr(SO4), A, 1967
+    s.p.'
+  accessed_at: '2026-10-14T12:38:07.742969Z'
+  support: supports
+  summary: Original retained IMA row visually checked for exact species, formula,
+    status and historical date. No constituent criticality inherited.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/celestine.pdf
+  locator: Complete one-page mineral entry
+  accessed_at: '2026-10-14T12:38:07.742969Z'
+  support: supports
+  summary: Formula and crystallographic identity checked; authority entry is not experimental
+    phase-purity certification.
+  snapshot_sha256: 3b98ca4a5d71cf22b2746949d3ac6261d7433cdeb4fec108a19aab95be3830b2
+- evidence_id: page447
+  kind: primary_source
+  reference: https://doi.org/10.1128/aem.60.2.447-453.1994
+  locator: Complete original scanned page 447; local schultze1994-page447.png
+  accessed_at: '2026-10-14T12:38:07.742969Z'
+  support: supports
+  summary: Original page independently read, including applicable methods, figures,
+    captions, results, discussion or bibliography; retained acquisition manifest identifies
+    original PMC image route.
+  snapshot_sha256: 6dafc097861409192fb313a43bce4cb5493ddab20eba6a806235bba2e5abe0c5
+- evidence_id: page448
+  kind: primary_source
+  reference: https://doi.org/10.1128/aem.60.2.447-453.1994
+  locator: Complete original scanned page 448; local schultze1994-page448.png
+  accessed_at: '2026-10-14T12:38:07.742969Z'
+  support: supports
+  summary: Original page independently read, including applicable methods, figures,
+    captions, results, discussion or bibliography; retained acquisition manifest identifies
+    original PMC image route.
+  snapshot_sha256: 024ab2c9ec753a04606f37da9bbd388b6d250aca21d132511a899ec21d0cad79
+- evidence_id: page449
+  kind: primary_source
+  reference: https://doi.org/10.1128/aem.60.2.447-453.1994
+  locator: Complete original scanned page 449; local schultze1994-page449.png
+  accessed_at: '2026-10-14T12:38:07.742969Z'
+  support: supports
+  summary: Original page independently read, including applicable methods, figures,
+    captions, results, discussion or bibliography; retained acquisition manifest identifies
+    original PMC image route.
+  snapshot_sha256: 2885aea4b9944c521ba258efa603e2f7b0de9b7774b5a698e0175a8e4472e56a
+- evidence_id: page450
+  kind: primary_source
+  reference: https://doi.org/10.1128/aem.60.2.447-453.1994
+  locator: Complete original scanned page 450; local schultze1994-page450.png
+  accessed_at: '2026-10-14T12:38:07.742969Z'
+  support: supports
+  summary: Original page independently read, including applicable methods, figures,
+    captions, results, discussion or bibliography; retained acquisition manifest identifies
+    original PMC image route.
+  snapshot_sha256: 428fc10bc5a44d8c5ab54129fa6c901290b292af8d4379fc1aeb2b87f9e96adb
+- evidence_id: page451
+  kind: primary_source
+  reference: https://doi.org/10.1128/aem.60.2.447-453.1994
+  locator: Complete original scanned page 451; local schultze1994-page451.png
+  accessed_at: '2026-10-14T12:38:07.742969Z'
+  support: supports
+  summary: Original page independently read, including applicable methods, figures,
+    captions, results, discussion or bibliography; retained acquisition manifest identifies
+    original PMC image route.
+  snapshot_sha256: d9bd96b88e78dea4cf1fb2598834a7ab6723f94037e0f32ce34b8c43677037fb
+- evidence_id: page452
+  kind: primary_source
+  reference: https://doi.org/10.1128/aem.60.2.447-453.1994
+  locator: Complete original scanned page 452; local schultze1994-page452.png
+  accessed_at: '2026-10-14T12:38:07.742969Z'
+  support: supports
+  summary: Original page independently read, including applicable methods, figures,
+    captions, results, discussion or bibliography; retained acquisition manifest identifies
+    original PMC image route.
+  snapshot_sha256: a11c5605e80f528fba8d7d9afd2b06226aa685f2521ebd58719f0c8b55e834bb
+- evidence_id: page453
+  kind: primary_source
+  reference: https://doi.org/10.1128/aem.60.2.447-453.1994
+  locator: Complete original scanned page 453; local schultze1994-page453.png
+  accessed_at: '2026-10-14T12:38:07.742969Z'
+  support: supports
+  summary: Original page independently read, including applicable methods, figures,
+    captions, results, discussion or bibliography; retained acquisition manifest identifies
+    original PMC image route.
+  snapshot_sha256: 395a6c66cf6e8c58d02f63634032ff7b653adca27a7cd1a951916820d41d1907
+- evidence_id: scan_manifest
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC201332/
+  locator: Original scanned-page acquisition receipt for pp447–453
+  accessed_at: '2026-10-14T12:38:07.742969Z'
+  support: supports
+  summary: All seven nonempty original page images were acquired and independently
+    inspected; failed PMC PDF download is excluded.
+  snapshot_sha256: f491376ba48be9e666749510b51905fd05ce900d449966df141934e271217512
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round71-strontium-independent/dedup.txt
+  locator: Records/research/reviews/history and referenced current raw source directory
+  accessed_at: '2026-10-14T12:38:07.742969Z'
+  support: context_only
+  summary: Hidden/ignored-inclusive search with relevant symlinks followed; related
+    elemental owner and source lineages distinguished.
+  search_scope: rg --no-ignore --hidden --follow -n -i strontianite|celestine|celestite|3c13665|447-453.1994
+    data/records research reviews history and /private/tmp/cmm-round71-strontium-research
+  snapshot_sha256: 0fe7f0389a6ce3f70e639d95ef4e3aab135caffa73070c798359464b3837944c
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round71-strontium-independent/notice-search.json
+  locator: Independent current exact-DOI searches and ASM correction-list follow-up
+  accessed_at: '2026-10-14T12:38:07.742969Z'
+  support: context_only
+  summary: No relevant notice surfaced in bounded returned results. Original ASM issue
+    correction entries concern other studies; this is not a universal absence claim.
+  search_scope: Exact DOI plus correction retraction, no filters, first returned result
+    batches; direct ASM volume60issue2 contents inspection.
+  snapshot_sha256: e6dbf9f12b240f5dad8f371bf35e31d21c6ab9bf26a38bff5044e616432b23e7
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round71-strontium-independent/named-validation.log
+  locator: Reviewer execution log
+  accessed_at: '2026-10-14T12:38:07.742969Z'
+  support: supports
+  summary: Named validation passed on both frozen owners.
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round71-final-gates.json
+  locator: Completed root batch receipt and matching log
+  accessed_at: '2026-10-14T12:38:07.742969Z'
+  support: supports
+  summary: Required commands completed successfully; exact worktree/base, exit codes
+    and nonempty log checksum independently verified.
+  snapshot_sha256: 0373e95dc7899e0d2e3cb655ed0be6b3aba46920988dde89cccfb9276e71c5c8
+- evidence_id: artifact_audit
+  kind: validation
+  reference: /private/tmp/cmm-round71-strontium-independent/source-artifact-audit-final.json
+  locator: Actual nonempty artifact sizes, hashes and PDF signatures/page counts
+  accessed_at: '2026-10-14T12:38:07.742969Z'
+  support: context_only
+  summary: Checked actual inspected PDF/XML/image sources rather than failed download
+    filenames.
+  snapshot_sha256: f577ce26b730b0b1833c51cd8eac5926fef7352d20525773dde7fb6bf973e3c8
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species versus commodity and mixed product
+  outcome: supported
+  summary: IMA approved species SrSO4 and Handbook orthorhombic barite-group identity
+    agree. Celestite source spelling is an alias; elemental Sr, baryte commodity and
+    strontianite are distinct. No inherited criticality.
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  target_ids:
+  - cmmmech:celestine
+- assessment_id: isolate
+  area: grounding
+  topic: GL24 identification
+  outcome: supported
+  summary: Source uses Synechococcus GL24 isolated from Fayetteville Green Lake. Record
+    correctly avoids inventing a modern species or exact strain CURIE.
+  evidence_ids:
+  - record
+  - page447
+  - page448
+  target_ids:
+  - cmmmech:celestine
+- assessment_id: conditions
+  area: evidence
+  topic: Experimental conditions and sampling
+  outcome: supported
+  summary: Complete methods support filter sterilization, Sr nitrate/base sulfate/bicarbonate
+    salts, culture age and density, 9mL tubes, 22°C illumination, destructive time
+    points and uninoculated comparator. Mixed-cation experiments remain separately
+    scoped.
+  evidence_ids:
+  - record
+  - page447
+  - page448
+  target_ids:
+  - cmmmech:celestine
+- assessment_id: phase
+  area: evidence
+  topic: Claim-bearing microscopy and diffraction
+  outcome: supported
+  summary: Figures1–4 and original results support cell-associated Sr/S patches and
+    limited celestine/strontianite assignments. Record preserves later carbonate dominance,
+    does not equate Sr/S ratio with quantitative phase composition or assert pure
+    celestine conversion.
+  evidence_ids:
+  - record
+  - page448
+  - page449
+  - page450
+  target_ids:
+  - cmmmech:celestine
+- assessment_id: causality
+  area: scope
+  topic: Cells versus exclusive pathway
+  outcome: supported
+  summary: No mineralization or pH change in uninoculated control supports culture
+    association. Lack of killed-cell, isolated-S-layer and matched-pH experiments
+    limits exclusive mechanism attribution, retained in owner.
+  evidence_ids:
+  - record
+  - page448
+  - page450
+  - page451
+  - page452
+  target_ids:
+  - cmmmech:celestine
+- assessment_id: quantity
+  area: quantity
+  topic: Analytical sampling and Sr removal
+  outcome: supported
+  summary: Five EDS determinations are not biological replicates. Acidified cell-free-supernatant
+    ICP measurements and Figure5 do not assign all removed Sr to celestine; shed S-layers
+    and mixed phases are preserved.
+  evidence_ids:
+  - record
+  - page448
+  - page450
+  - page451
+  target_ids:
+  - cmmmech:celestine
+- assessment_id: scope
+  area: scope
+  topic: Discussion versus measured outcomes
+  outcome: supported
+  summary: Figures6–7 concern structure and calcium/gypsum context, and the proposed
+    photosynthesis/S-layer causal narrative is not directly measured. Laboratory mineralization
+    remains distinct from industrial recovery.
+  evidence_ids:
+  - record
+  - page451
+  - page452
+  - page453
+  target_ids:
+  - cmmmech:celestine
+- assessment_id: provenance
+  area: provenance
+  topic: Canonical history and source integrity
+  outcome: supported
+  summary: Inspected exact owner and linked CREATE; source artifacts are nonempty
+    actual scanned originals and authority PDFs. Hidden/ignored-inclusive dedup distinguishes
+    existing elemental strontium owner and overlapping study lineage.
+  evidence_ids:
+  - record
+  - history
+  - artifact_audit
+  - dedup
+  - scan_manifest
+  target_ids:
+  - cmmmech:celestine
+- assessment_id: checks
+  area: schema
+  topic: Validation and completed required checks
+  outcome: supported
+  summary: Named strict validation and final batch receipt pass against the stated
+    worktree and base; successful checks establish contract integrity, not scientific
+    truth.
+  evidence_ids:
+  - named
+  - batch
+  target_ids:
+  - cmmmech:celestine
+findings: []
+actions: []
+limitations:
+- Early precipitates contain both celestine and strontianite. Selected-area diffraction
+  and local EDS support the authors phase assignment, not a modern full-pattern quantitative
+  phase fraction or pure-product yield.
+- Nine destructive time points use one culture tube each; five EDS determinations
+  are analytical measurements, not biological replication. A single uninoculated comparator
+  does not replace killed-cell, isolated-S-layer or matched-pH interventions.
+- GL24 is a source-defined isolate without an independently verified sequence or strain
+  taxon identifier. Proposed effects on photosynthesis and S-layer replacement are
+  not direct causal or viability measurements.
+- Supernatant Sr removal can include several mineral or surface pools and detached
+  S-layers; it is not celestine recovery. No jurisdictional criticality or deployment
+  claim is made.
+- Notice search is bounded to returned exact-DOI results and original issue contents;
+  no claim of exhaustive historical notice absence.
+notes:
+- No claim of pure-phase recovery, industrial deployment or universal microbial necessity
+  is inferred. Full source files remain outside Git.
+- All evidence hashes bind nonempty actual inspected artifacts. Failed PMC PDF placeholders
+  are not scientific evidence.
+```

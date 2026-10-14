@@ -1,0 +1,601 @@
+# Independent final scientific review of nepheline and strain-label resolution
+
+- Review: 20261014T123801Z-nepheline-round71-final-resolution
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T12:33:03.665837Z
+- Finished UTC: 2026-10-14T12:38:01.852487Z
+- Reviewer: codex /root/round68_phosphates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Nepheline identity and bounded fungal weathering of mixed Bancroft discs are supported. Minor Figure2.25 identifier transcription is corrected with explicit immutable lineage; sparse sampling,mixed mineralogy,causal controls and historical strain conflict remain visible.
+
+## Scope And Provenance
+
+Entire corrected owner and both histories;complete relevant original specimen/disc chapter, all claim-bearing figures/tables,current authority and bounded conflict search. Prior full assessment continued with exact correction recheck.
+
+Selection: Assigned peer target;native inspect preceded initial and successor assessments.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 188ce7cb6f6dd1b7966b527546d80f9b4fb7fcec.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:nepheline | data/records/nepheline.yaml | maintained | Nepheline |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Named corrected-owner validation | passed | True | cmmmech:nepheline | Reviewer execution on corrected frozen owner;one record,zero failures. |
+| Completed coordinator batch gate | passed | True | cmmmech:nepheline | Coordinator execution 2026-10-14T12:34:24.446228+00:00 to 2026-10-14T12:37:22.682639+00:00; full log SHA independently verified. |
+| Completed coordinator batch gate | passed | True | cmmmech:nepheline | Coordinator execution 2026-10-14T12:37:22.682665+00:00 to 2026-10-14T12:37:28.535953+00:00; full log SHA independently verified. |
+| Completed coordinator batch gate | passed | True | cmmmech:nepheline | Coordinator execution 2026-10-14T12:37:28.535980+00:00 to 2026-10-14T12:37:31.693947+00:00; full log SHA independently verified. |
+
+## Scientific And Domain Assessments
+
+### Mineral species and criticality
+
+identity: supported. Targets: cmmmech:nepheline.
+
+Nepheline is a feldspathoid mineral species, distinct from feldspar commodity, nepheline syenite/phonolite rocks and constituent elements. No jurisdiction/list/edition criticality claim is made.
+
+### Organism, substrate, conditions and controls
+
+evidence: supported. Targets: cmmmech:nepheline.
+
+Source supports the bounded laboratory disc-weathering observation with stated pretreatment and limited design.
+
+### Observed effect, causal limits and deployment
+
+evidence: supported. Targets: cmmmech:nepheline.
+
+CMI31821 greater pitting than blank and pitting/aluminium covariance are supported. No digitized exact yield, pure-phase Al balance, isolated product or industrial deployment is asserted.
+
+### Exact source label correction and retained uncertainty
+
+evidence: supported. Targets: cmmmech:nepheline.
+
+The owner now quotes CMI234300 from Figure2.25 and retains CMI243400 in text/Table2.8. Accepted CMI31821 mechanism is unchanged;no source identity resolution is invented.
+
+### Authentic histories, immutable finding and validated final bytes
+
+provenance: supported. Targets: cmmmech:nepheline.
+
+Native successor inspection, preserved CREATE, new actual EDIT and passing required checks bind corrected bytes. Original finding remains immutable and explicitly resolved.
+
+## Findings
+
+### F1: Correct original Figure2.25 identifier retained
+
+minor / resolved / confirmed; issue key: nepheline-round71-figure-strain-label.
+
+Curator corrected legend quote231300 to234300 in owner and source dossier, appended actual EDIT history, and retained text243400 conflict. Independent high-resolution recheck and successor inspection verify intended scope.
+
+Disposition: Both triangle-series labels read234300; corrected record preserves unresolved text243400 disagreement. Exact owner comparison shows only the transcription and new inline/history provenance changed. Required checks pass; no remaining corrective defect found.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/nepheline.yaml; Entire corrected frozen owner | supports | Independent full scientific assessment plus exact correction verification; accepted CMI31821 observations unchanged. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Definitions pp1-2; Nepheline row PDF154. Independent fresh original /private/tmp/cmm-round71-carbonates-research/ima2026-09.pdf | supports | Na3K(Al4Si4O16), redefined status Rd,2018s.p., original1801 description. No invented mineral accession or constituent criticality. |
+| king | https://hdl.handle.net/10044/1/37745; Complete340-page original retained at /private/tmp/cmm-round71-silicates-research/king1985.pdf. Reviewed scope Chapter2 printed83-133/PDF91-141, especially specimen Tables2.4/2.7/2.8, methods Tables2.10-2.11 and disc section2.3.4/Figures2.21-2.26. | supports | Original doctoral research supports mixed Bancroft specimen weathering by historical A.niger CMI31821. Independently read specimen/disc text and visually checked all cited figures/tables; did not claim full340-page assessment. |
+| king_limits | https://hdl.handle.net/10044/1/37745; Tables2.4/2.7, section2.3.4 and Figure2.25; comparison Figure2.26 | partial | Different nepheline fraction estimates, coexisting Al-bearing phases, one destructive disc/timepoint, a single stated blank/material and one generic plotted blank constrain quantitative/phase-specific inference. Acid,pH,killed-cell controls do not isolate molecular causes. Other rocks and reactor/model/economic chapters are not transferred. |
+| legend | /private/tmp/cmm-round71-nepheline-review/figure2-25-highres.png; Original PDF page138/printed130 at4x, Figure2.25 both triangle legend entries | supports | Both entries read CMI234300. Table2.8 and section2.3.4 give CMI243400. Corrected record preserves this unresolved conflict without attributing uncertain second-strain performance. |
+| taxon | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061; Retained official XML top Taxon /private/tmp/cmm-round71-silicates-research/aspergillus-niger-5061.xml | context_only | Top Taxon5061 is Aspergillus niger at species rank. It does not authenticate historical CMI31821 or resolve the second-strain conflict. |
+| search | /private/tmp/cmm-round71-nepheline-review/independent-search.json; Independent bounded notice/conflict searches and official metadata checks | context_only | No affecting notice surfaced within two exact searches/first returned sets. Official Imperial metadata corroborates1985 thesis identity;1987 journal lead is not assumed independent replication. Latest direct handle open failed; official landing and complete acquired original supply evidence. |
+| dedup | /private/tmp/cmm-round71-nepheline-review/dedup.json; Hidden/ignored-inclusive search receipt, stdout dedup.txt and empty stderr | context_only | Search followed relevant symlinks across records,research,reviews,history and recorded raw roots. Existing commodity/rock/product mentions are distinct from the mineral species. No global novelty claim. |
+| create | history/records/nepheline/2026-10-14T122145Z-codex-7b6ec5.yaml; Entire canonical sidecar, associated inline event and history_refs | supports | Actual Codex/GPT-6 actor, UTC event and owned target agree with CREATE or narrow transcription EDIT. Original CREATE preserved; reviewer did not edit owner/history. |
+| edit | history/records/nepheline/2026-10-14T122920Z-codex-fba5aa.yaml; Entire canonical sidecar, associated inline event and history_refs | supports | Actual Codex/GPT-6 actor, UTC event and owned target agree with CREATE or narrow transcription EDIT. Original CREATE preserved; reviewer did not edit owner/history. |
+| prior | reviews/structured/20261014T122841Z-nepheline-round71-strain-label-finding/review.yaml; Initial immutable partial scientific observation F1, issue227 | supports | Original frozen owner and Figure2.25 evidence preserved before curator correction. Successor resolves this exact occurrence. |
+| comparison | /private/tmp/cmm-round71-nepheline-review/correction-comparison.json; Parsed pre-fix versus corrected owner field comparison | supports | Only legend identifier231300 to234300 changed scientifically;one inline EDIT and one linked sidecar were appended. Original CREATE and accepted CMI31821 claims remain exact. |
+| named | /private/tmp/cmm-round71-nepheline-review/successor-validation.log; Reviewer-executed corrected-owner named validation | supports | Checked1record;0failed. Structural validation does not prove scientific truth. |
+| batch | /private/tmp/cmm-round71-final-gates.json; Terminal coordinator receipt and full log with independently verified SHA256 | supports | All required batch command exit codes are zero and full log SHA matches. Actual command timings retained in checks. |
+
+## Limits And Additional Notes
+
+- This is original doctoral research, not a journal replication. Full340-page source was acquired but reviewed claim scope is Chapter2 specimen/disc sections;reactor/model/economic chapters and1987 article are not adopted.
+- Chemical and microprobe nepheline estimates differ;coexisting Al-bearing phases prevent phase-specific released-Al balance.
+- One destructively sampled disc/timepoint and a generic plotted blank do not establish replicated uncertainty intervals.
+- No matchedpH,acid or killed-cell controls separate proton,ligand and physical pathways;gel and attachedhyphae do not uniquely prove molecular mechanism.
+- Corrected Figure2.25 CMI234300 still conflicts with text/Table2.8 CMI243400. No second-strain performance or modern authentication is claimed.
+- Disc incubation temperature,agitation and exact liquid volume are not restated;separate screening/optimization conditions are not transferred.
+- Bounded searches are not global exhaustion;current NCBI browser shell and handle access limitations are documented,with retained original/XML independently verified.
+- No constituent criticality,isolatedproduct recovery,precise plotted yield or industrial deployment claim.
+- F1/#227 resolved;initial partial needs_curation bundle is preserved. No reviewer owner/history edits.
+- All cited Tables2.4,2.7,2.8,2.10-2.11 and Figures2.21-2.26 visually inspected;Figure2.25 was additionally rendered at4x to resolve small legend digits.
+- No mg/kg observation is introduced from specimen percentage composition or filtered-liquid assay.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T123801Z-nepheline-round71-final-resolution
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent final scientific review of nepheline and strain-label resolution
+started_at: '2026-10-14T12:33:03.665837Z'
+finished_at: '2026-10-14T12:38:01.852487Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Peer authored owner,history,dossier and correction. Reviewer
+    independently assessed original Chapter2 specimen/disc evidence, all cited figures/tables
+    and authorities, discovered transcription defect and verified correction without
+    owner/history edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Nepheline identity and bounded fungal weathering of mixed Bancroft discs
+  are supported. Minor Figure2.25 identifier transcription is corrected with explicit
+  immutable lineage; sparse sampling,mixed mineralogy,causal controls and historical
+  strain conflict remain visible.
+source:
+  git_revision: 188ce7cb6f6dd1b7966b527546d80f9b4fb7fcec
+  state: working_tree
+  inputs:
+  - path: data/records/nepheline.yaml
+    sha256: 264d82b8366d9fceb9d8d31a2b6f8972f12ccb63806046aac919ca1db863d9bd
+    role: target
+  - path: history/records/nepheline/2026-10-14T122145Z-codex-7b6ec5.yaml
+    sha256: 6e45559fc52435e6f5d9eaed265d177649b3110a8de1a81bd15554e030c3e3f5
+    role: context
+  - path: history/records/nepheline/2026-10-14T122920Z-codex-fba5aa.yaml
+    sha256: 7491d770c18b638932c044e015f09565b59bd8578f2c346b52c73d1691d878c5
+    role: context
+  - path: reviews/structured/20261014T122841Z-nepheline-round71-strain-label-finding/review.yaml
+    sha256: f5048b5aa88c355db295459a8a1ea2978aa84b5b43e04b6696bc0bcb257a8638
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire corrected owner and both histories;complete relevant original
+    specimen/disc chapter, all claim-bearing figures/tables,current authority and
+    bounded conflict search. Prior full assessment continued with exact correction
+    recheck.
+  selection: Assigned peer target;native inspect preceded initial and successor assessments.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:nepheline
+targets:
+- target_id: cmmmech:nepheline
+  path: data/records/nepheline.yaml
+  label: Nepheline
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/nepheline.yaml
+    role: maintained scientific record
+checks:
+- check_id: named
+  name: Named corrected-owner validation
+  command: uv run --locked cmmmech validate data/records/nepheline.yaml
+  status: passed
+  required: true
+  summary: Reviewer execution on corrected frozen owner;one record,zero failures.
+  target_ids:
+  - cmmmech:nepheline
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Completed coordinator batch gate
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T12:34:24.446228+00:00 to 2026-10-14T12:37:22.682639+00:00;
+    full log SHA independently verified.
+  target_ids:
+  - cmmmech:nepheline
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Completed coordinator batch gate
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T12:37:22.682665+00:00 to 2026-10-14T12:37:28.535953+00:00;
+    full log SHA independently verified.
+  target_ids:
+  - cmmmech:nepheline
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Completed coordinator batch gate
+  command: uv run --locked cmmmech validate-history --base 188ce7cb6f6dd1b7966b527546d80f9b4fb7fcec
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T12:37:28.535980+00:00 to 2026-10-14T12:37:31.693947+00:00;
+    full log SHA independently verified.
+  target_ids:
+  - cmmmech:nepheline
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/nepheline.yaml
+  locator: Entire corrected frozen owner
+  accessed_at: '2026-10-14T12:38:01.852487Z'
+  support: supports
+  summary: Independent full scientific assessment plus exact correction verification;
+    accepted CMI31821 observations unchanged.
+  snapshot_sha256: 264d82b8366d9fceb9d8d31a2b6f8972f12ccb63806046aac919ca1db863d9bd
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions pp1-2; Nepheline row PDF154. Independent fresh original /private/tmp/cmm-round71-carbonates-research/ima2026-09.pdf
+  accessed_at: '2026-10-14T12:38:01.852487Z'
+  support: supports
+  summary: Na3K(Al4Si4O16), redefined status Rd,2018s.p., original1801 description.
+    No invented mineral accession or constituent criticality.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: king
+  kind: primary_source
+  reference: https://hdl.handle.net/10044/1/37745
+  locator: Complete340-page original retained at /private/tmp/cmm-round71-silicates-research/king1985.pdf.
+    Reviewed scope Chapter2 printed83-133/PDF91-141, especially specimen Tables2.4/2.7/2.8,
+    methods Tables2.10-2.11 and disc section2.3.4/Figures2.21-2.26.
+  accessed_at: '2026-10-14T12:38:01.852487Z'
+  support: supports
+  summary: Original doctoral research supports mixed Bancroft specimen weathering
+    by historical A.niger CMI31821. Independently read specimen/disc text and visually
+    checked all cited figures/tables; did not claim full340-page assessment.
+  snapshot_sha256: efe06523c80a2b0586ff6b54011fd0e486a7a499b65c3f756155ed743b065b3e
+- evidence_id: king_limits
+  kind: primary_source
+  reference: https://hdl.handle.net/10044/1/37745
+  locator: Tables2.4/2.7, section2.3.4 and Figure2.25; comparison Figure2.26
+  accessed_at: '2026-10-14T12:38:01.852487Z'
+  support: partial
+  summary: Different nepheline fraction estimates, coexisting Al-bearing phases, one
+    destructive disc/timepoint, a single stated blank/material and one generic plotted
+    blank constrain quantitative/phase-specific inference. Acid,pH,killed-cell controls
+    do not isolate molecular causes. Other rocks and reactor/model/economic chapters
+    are not transferred.
+  snapshot_sha256: efe06523c80a2b0586ff6b54011fd0e486a7a499b65c3f756155ed743b065b3e
+- evidence_id: legend
+  kind: primary_source
+  reference: /private/tmp/cmm-round71-nepheline-review/figure2-25-highres.png
+  locator: Original PDF page138/printed130 at4x, Figure2.25 both triangle legend entries
+  accessed_at: '2026-10-14T12:38:01.852487Z'
+  support: supports
+  summary: Both entries read CMI234300. Table2.8 and section2.3.4 give CMI243400.
+    Corrected record preserves this unresolved conflict without attributing uncertain
+    second-strain performance.
+  snapshot_sha256: 6acb400aaa9d6a7dd121b988b9a5fb752ace6d552206bef1ce7b1659b99a967f
+- evidence_id: taxon
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061
+  locator: Retained official XML top Taxon /private/tmp/cmm-round71-silicates-research/aspergillus-niger-5061.xml
+  accessed_at: '2026-10-14T12:38:01.852487Z'
+  support: context_only
+  summary: Top Taxon5061 is Aspergillus niger at species rank. It does not authenticate
+    historical CMI31821 or resolve the second-strain conflict.
+  snapshot_sha256: d668c305ba04f31ca50a1582a5a9c85d6547109cbc132a097d5d2185a8c34ff8
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round71-nepheline-review/independent-search.json
+  locator: Independent bounded notice/conflict searches and official metadata checks
+  accessed_at: '2026-10-14T12:38:01.852487Z'
+  support: context_only
+  summary: No affecting notice surfaced within two exact searches/first returned sets.
+    Official Imperial metadata corroborates1985 thesis identity;1987 journal lead
+    is not assumed independent replication. Latest direct handle open failed; official
+    landing and complete acquired original supply evidence.
+  snapshot_sha256: 19726d0456e26539109a3d03e22969329f08fc5f5a2339b5621d9d2ff7f712ec
+  search_scope: Two exact queries, no filters/pagination; official Imperial landing
+    and NCBI browser, supported by independently rehashed original thesis and official
+    XML. Not exhaustive.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round71-nepheline-review/dedup.json
+  locator: Hidden/ignored-inclusive search receipt, stdout dedup.txt and empty stderr
+  accessed_at: '2026-10-14T12:38:01.852487Z'
+  support: context_only
+  summary: Search followed relevant symlinks across records,research,reviews,history
+    and recorded raw roots. Existing commodity/rock/product mentions are distinct
+    from the mineral species. No global novelty claim.
+  snapshot_sha256: 5450dfb3fdd89036617394d5bfca328fe1fad226eb5b5e6172912a834d232c40
+  search_scope: rg --no-ignore --hidden --follow -n -i nepheline|elaeolite|10044/1/37745;
+    explicit bounded roots in receipt;398matches at execution.
+- evidence_id: create
+  kind: record_content
+  reference: history/records/nepheline/2026-10-14T122145Z-codex-7b6ec5.yaml
+  locator: Entire canonical sidecar, associated inline event and history_refs
+  accessed_at: '2026-10-14T12:38:01.852487Z'
+  support: supports
+  summary: Actual Codex/GPT-6 actor, UTC event and owned target agree with CREATE
+    or narrow transcription EDIT. Original CREATE preserved; reviewer did not edit
+    owner/history.
+  snapshot_sha256: 6e45559fc52435e6f5d9eaed265d177649b3110a8de1a81bd15554e030c3e3f5
+- evidence_id: edit
+  kind: record_content
+  reference: history/records/nepheline/2026-10-14T122920Z-codex-fba5aa.yaml
+  locator: Entire canonical sidecar, associated inline event and history_refs
+  accessed_at: '2026-10-14T12:38:01.852487Z'
+  support: supports
+  summary: Actual Codex/GPT-6 actor, UTC event and owned target agree with CREATE
+    or narrow transcription EDIT. Original CREATE preserved; reviewer did not edit
+    owner/history.
+  snapshot_sha256: 7491d770c18b638932c044e015f09565b59bd8578f2c346b52c73d1691d878c5
+- evidence_id: prior
+  kind: record_content
+  reference: reviews/structured/20261014T122841Z-nepheline-round71-strain-label-finding/review.yaml
+  locator: Initial immutable partial scientific observation F1, issue227
+  accessed_at: '2026-10-14T12:38:01.852487Z'
+  support: supports
+  summary: Original frozen owner and Figure2.25 evidence preserved before curator
+    correction. Successor resolves this exact occurrence.
+  snapshot_sha256: f5048b5aa88c355db295459a8a1ea2978aa84b5b43e04b6696bc0bcb257a8638
+- evidence_id: comparison
+  kind: record_content
+  reference: /private/tmp/cmm-round71-nepheline-review/correction-comparison.json
+  locator: Parsed pre-fix versus corrected owner field comparison
+  accessed_at: '2026-10-14T12:38:01.852487Z'
+  support: supports
+  summary: Only legend identifier231300 to234300 changed scientifically;one inline
+    EDIT and one linked sidecar were appended. Original CREATE and accepted CMI31821
+    claims remain exact.
+  snapshot_sha256: 9311e6e5f90a5868fa6700eb0160298fcbaf736d80d04a0cc4493dae09e4c88f
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round71-nepheline-review/successor-validation.log
+  locator: Reviewer-executed corrected-owner named validation
+  accessed_at: '2026-10-14T12:38:01.852487Z'
+  support: supports
+  summary: Checked1record;0failed. Structural validation does not prove scientific
+    truth.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round71-final-gates.json
+  locator: Terminal coordinator receipt and full log with independently verified SHA256
+  accessed_at: '2026-10-14T12:38:01.852487Z'
+  support: supports
+  summary: All required batch command exit codes are zero and full log SHA matches.
+    Actual command timings retained in checks.
+  snapshot_sha256: 0373e95dc7899e0d2e3cb655ed0be6b3aba46920988dde89cccfb9276e71c5c8
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral species and criticality
+  outcome: supported
+  summary: Nepheline is a feldspathoid mineral species, distinct from feldspar commodity,
+    nepheline syenite/phonolite rocks and constituent elements. No jurisdiction/list/edition
+    criticality claim is made.
+  target_ids:
+  - cmmmech:nepheline
+  evidence_ids:
+  - record
+  - ima
+  dimensions:
+  - name: material_form
+    value: Na3K(Al4Si4O16) mineral species
+    definition: An ideal authority formula does not certify purity of experimental
+      discs.
+    evidence_ids:
+    - ima
+    - king
+  - name: criticality
+    value: No designation asserted
+    definition: No inherited element/commodity designation or universal noncriticality
+      statement.
+    evidence_ids:
+    - record
+- assessment_id: assay
+  area: evidence
+  topic: Organism, substrate, conditions and controls
+  outcome: supported
+  summary: Source supports the bounded laboratory disc-weathering observation with
+    stated pretreatment and limited design.
+  target_ids:
+  - cmmmech:nepheline
+  evidence_ids:
+  - record
+  - king
+  - king_limits
+  - taxon
+  dimensions:
+  - name: organism
+    value: Historical A.niger CMI31821;one pregrown3-4mm pellet/disc
+    definition: Growing cultures;NCBI5061 species mapping does not authenticate historical
+      stock.
+    evidence_ids:
+    - king
+    - taxon
+  - name: substrate
+    value: Bancroft nepheline-rich mixed specimen
+    definition: Chemical78.81±0.6wt% versus microprobe84.0±8.5wt% nepheline;albite,sodalite,biotite,magnetite
+      remain.
+    evidence_ids:
+    - king
+    - king_limits
+  - name: pretreatment
+    value: 1cm×4mm discs;600mesh polished face;silicone other faces;brief methanol
+      flame
+    definition: Surface treatments are part of the assay, not pristine natural weathering.
+    evidence_ids:
+    - king
+  - name: conditions
+    value: LM1 sucrose10g/L,(NH4)2CO3 1.5g/L,KH2PO4 0.1g/L,MgSO4·7H2O0.8g/L,pH6.5,Cu/Zn/Fe0.01mg/L
+      each
+    definition: Medium just wets face and is replenished for evaporation;disc subsection
+      does not restate temperature,agitation or exact volume;other experiments are
+      not transferred.
+    evidence_ids:
+    - king
+  - name: controls
+    value: Five discs/material/strain;one destructively sampled at1,2,4,6,8weeks;one
+      blank/material
+    definition: One plotted generic blank and no matchedacid,pH,killed-cell controls;not
+      replicated effect-size estimates.
+    evidence_ids:
+    - king
+    - king_limits
+- assessment_id: outcome
+  area: evidence
+  topic: Observed effect, causal limits and deployment
+  outcome: supported
+  summary: CMI31821 greater pitting than blank and pitting/aluminium covariance are
+    supported. No digitized exact yield, pure-phase Al balance, isolated product or
+    industrial deployment is asserted.
+  target_ids:
+  - cmmmech:nepheline
+  evidence_ids:
+  - record
+  - king
+  - king_limits
+  dimensions:
+  - name: outcome
+    value: Pitting measured through reported silica gel to fresh material;Al in filtered
+      residual liquid
+    definition: Whole-disc release with coexisting Al-bearing phases does not resolve
+      every host phase or recovered yield.
+    evidence_ids:
+    - king
+    - king_limits
+  - name: mechanism
+    value: Culture-associated weathering with attached hyphae and gel
+    definition: Acid-mediated interpretation is plausible;proton,ligand and physical
+      pathways are not separately demonstrated.
+    evidence_ids:
+    - king
+    - king_limits
+  - name: deployment
+    value: Laboratory Petri-disc experiment only
+    definition: Reactor/model/economics chapters excluded;no industrial inference.
+    evidence_ids:
+    - king
+    - record
+- assessment_id: correction
+  area: evidence
+  topic: Exact source label correction and retained uncertainty
+  outcome: supported
+  summary: The owner now quotes CMI234300 from Figure2.25 and retains CMI243400 in
+    text/Table2.8. Accepted CMI31821 mechanism is unchanged;no source identity resolution
+    is invented.
+  target_ids:
+  - cmmmech:nepheline
+  evidence_ids:
+  - record
+  - legend
+  - prior
+  - edit
+  - king
+  - comparison
+- assessment_id: provenance
+  area: provenance
+  topic: Authentic histories, immutable finding and validated final bytes
+  outcome: supported
+  summary: Native successor inspection, preserved CREATE, new actual EDIT and passing
+    required checks bind corrected bytes. Original finding remains immutable and explicitly
+    resolved.
+  target_ids:
+  - cmmmech:nepheline
+  evidence_ids:
+  - record
+  - create
+  - edit
+  - prior
+  - named
+  - batch
+  - search
+  - dedup
+findings:
+- finding_id: F1
+  issue_key: nepheline-round71-figure-strain-label
+  category: evidence
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Correct original Figure2.25 identifier retained
+  description: Curator corrected legend quote231300 to234300 in owner and source dossier,
+    appended actual EDIT history, and retained text243400 conflict. Independent high-resolution
+    recheck and successor inspection verify intended scope.
+  target_ids:
+  - cmmmech:nepheline
+  field_paths:
+  - mechanisms[0].evidence[1].explanation
+  evidence_ids:
+  - record
+  - legend
+  - king
+  - prior
+  - edit
+  - comparison
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/nepheline.yaml
+    role: maintained scientific record
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/227
+  rule_id: native-review-primary-figure-transcription
+  native_severity: minor
+  normalization_reason: 'Minor retained: exact source identifier is wrong, but the
+    record already excludes its uncertain performance and preserves the accepted CMI31821
+    claim.'
+  disposition_reason: Both triangle-series labels read234300; corrected record preserves
+    unresolved text243400 disagreement. Exact owner comparison shows only the transcription
+    and new inline/history provenance changed. Required checks pass; no remaining
+    corrective defect found.
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261014T122841Z-nepheline-round71-strain-label-finding
+    finding_id: F1
+actions: []
+limitations:
+- This is original doctoral research, not a journal replication. Full340-page source
+  was acquired but reviewed claim scope is Chapter2 specimen/disc sections;reactor/model/economic
+  chapters and1987 article are not adopted.
+- Chemical and microprobe nepheline estimates differ;coexisting Al-bearing phases
+  prevent phase-specific released-Al balance.
+- One destructively sampled disc/timepoint and a generic plotted blank do not establish
+  replicated uncertainty intervals.
+- No matchedpH,acid or killed-cell controls separate proton,ligand and physical pathways;gel
+  and attachedhyphae do not uniquely prove molecular mechanism.
+- Corrected Figure2.25 CMI234300 still conflicts with text/Table2.8 CMI243400. No
+  second-strain performance or modern authentication is claimed.
+- Disc incubation temperature,agitation and exact liquid volume are not restated;separate
+  screening/optimization conditions are not transferred.
+- Bounded searches are not global exhaustion;current NCBI browser shell and handle
+  access limitations are documented,with retained original/XML independently verified.
+- No constituent criticality,isolatedproduct recovery,precise plotted yield or industrial
+  deployment claim.
+notes:
+- F1/#227 resolved;initial partial needs_curation bundle is preserved. No reviewer
+  owner/history edits.
+- All cited Tables2.4,2.7,2.8,2.10-2.11 and Figures2.21-2.26 visually inspected;Figure2.25
+  was additionally rendered at4x to resolve small legend digits.
+- No mg/kg observation is introduced from specimen percentage composition or filtered-liquid
+  assay.
+tags:
+- round71
+- nepheline
+- independent
+- primary-figures
+- finding-resolution
+```

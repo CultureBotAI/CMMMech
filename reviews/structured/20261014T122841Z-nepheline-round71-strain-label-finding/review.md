@@ -1,0 +1,296 @@
+# Nepheline original figure strain-label transcription finding
+
+- Review: 20261014T122841Z-nepheline-round71-strain-label-finding
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T12:23:31.979626Z
+- Finished UTC: 2026-10-14T12:28:41.508728Z
+- Reviewer: codex /root/round68_phosphates (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+One minor exact-transcription error needs correction: original Figure2.25 says CMI234300, not CMI231300. The broader second-strain identity conflict and accepted CMI31821 result are unaffected. Final batch gates and full successor acceptance remain pending.
+
+## Scope And Provenance
+
+Targeted original Figure2.25 strain-label finding within an independent full-record assessment; initial disposition before owner correction.
+
+Selection: Frozen owner inspected before evidence assessment; higher-resolution reinspection discovered the defect.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 188ce7cb6f6dd1b7966b527546d80f9b4fb7fcec.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:nepheline | data/records/nepheline.yaml | maintained | Nepheline |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Named validation | passed | True | cmmmech:nepheline | Checked1record;0failed. |
+| Pending completed batch gate | unavailable | True | cmmmech:nepheline | Coordinator final batch receipt not yet available; this is an initial corrective observation, not completed scientific acceptance. |
+| Pending completed batch gate | unavailable | True | cmmmech:nepheline | Coordinator final batch receipt not yet available; this is an initial corrective observation, not completed scientific acceptance. |
+| Pending completed batch gate | unavailable | True | cmmmech:nepheline | Coordinator final batch receipt not yet available; this is an initial corrective observation, not completed scientific acceptance. |
+
+## Scientific And Domain Assessments
+
+### Source figure legend versus record caveat
+
+evidence: concern. Targets: cmmmech:nepheline.
+
+The record correctly preserves a strain disagreement but misquotes one identifier in the source legend.
+
+## Findings
+
+### F1: Figure2.25 legend identifier was transcribed incorrectly
+
+minor / open / confirmed; issue key: nepheline-round71-figure-strain-label.
+
+Replace the quoted legend CMI231300 with CMI234300. Retain text/Table2.8 CMI243400 and unresolved identity; do not assign second-strain performance. Correct matching source dossier transcription and append canonical EDIT history.
+
+## Recommended Actions And Acceptance Checks
+
+### A1
+
+Curator correct owner and dossier quote, append actual EDIT history, and reviewer save immutable successor with explicit occurrence lineage.
+
+- Verify original Figure2.25 both triangle labels at sufficient resolution.
+- Correct only mistaken legend identifier while retaining unresolved source conflict; save canonical EDIT history.
+- Repeat named and batch validation, inspect new hashes and save successor linking this exact finding.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/nepheline.yaml; mechanisms[0].evidence[1].explanation, second-strain legend statement | refutes | Frozen record quotes the figure legend as CMI 231300. The original clearly prints CMI 234300. |
+| primary | https://hdl.handle.net/10044/1/37745; King1985 original PDF page138 / printed130, Figure2.25 legend; raw /private/tmp/cmm-round71-silicates-research/king1985.pdf | supports | High-resolution original triangle-series labels read CMI 234300. Table2.8 and section2.3.4 give CMI243400; their disagreement remains unresolved. |
+| render | /private/tmp/cmm-round71-nepheline-review/figure2-25-highres.png; Complete PDF page138 rendered at4x; both open and filled triangle legend entries | supports | Independent high-resolution visual check resolves the third digit as4, not1. No plot values are digitized. |
+| named | /private/tmp/cmm-round71-nepheline-review/named-validation.log; Reviewer-executed locked named validation | context_only | One record passes structural validation; this does not verify figure transcription. |
+
+## Limits And Additional Notes
+
+- This initial partial observation is not final scientific acceptance; final batch checks are pending.
+- Figure legend CMI234300 still differs from text/Table2.8 CMI243400; source strain identity is not resolved by correcting its transcription.
+- Owner/history were not changed by reviewer; current frozen hashes remain exact. Initial saver rejected an assessment enum and owner repository shorthand; corrected review metadata only before any bundle was saved.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T122841Z-nepheline-round71-strain-label-finding
+kind: record
+repository: CultureBotAI/CMMMech
+title: Nepheline original figure strain-label transcription finding
+started_at: '2026-10-14T12:23:31.979626Z'
+finished_at: '2026-10-14T12:28:41.508728Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Peer authored record/history. Reviewer independently inspected
+    original specimen/disc chapter and high-resolution claim-bearing figures, without
+    owner edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: 'One minor exact-transcription error needs correction: original Figure2.25
+  says CMI234300, not CMI231300. The broader second-strain identity conflict and accepted
+  CMI31821 result are unaffected. Final batch gates and full successor acceptance
+  remain pending.'
+source:
+  git_revision: 188ce7cb6f6dd1b7966b527546d80f9b4fb7fcec
+  state: working_tree
+  inputs:
+  - path: data/records/nepheline.yaml
+    sha256: d5b71f26fb7ae031187185e427fc79ee1b56cdf5aa87fd6ae44f36dfb537cb20
+    role: target
+  - path: history/records/nepheline/2026-10-14T122145Z-codex-7b6ec5.yaml
+    sha256: 6e45559fc52435e6f5d9eaed265d177649b3110a8de1a81bd15554e030c3e3f5
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Targeted original Figure2.25 strain-label finding within an independent
+    full-record assessment; initial disposition before owner correction.
+  selection: Frozen owner inspected before evidence assessment; higher-resolution
+    reinspection discovered the defect.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:nepheline
+targets:
+- target_id: cmmmech:nepheline
+  path: data/records/nepheline.yaml
+  label: Nepheline
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/nepheline.yaml
+    role: maintained scientific record
+checks:
+- check_id: named
+  name: Named validation
+  command: uv run --locked cmmmech validate data/records/nepheline.yaml
+  status: passed
+  required: true
+  summary: Checked1record;0failed.
+  target_ids:
+  - cmmmech:nepheline
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch
+  name: Pending completed batch gate
+  command: just check
+  status: unavailable
+  required: true
+  summary: Coordinator final batch receipt not yet available; this is an initial corrective
+    observation, not completed scientific acceptance.
+  target_ids:
+  - cmmmech:nepheline
+  evidence_ids: []
+- check_id: nonempty
+  name: Pending completed batch gate
+  command: uv run --locked cmmmech validate --require-records
+  status: unavailable
+  required: true
+  summary: Coordinator final batch receipt not yet available; this is an initial corrective
+    observation, not completed scientific acceptance.
+  target_ids:
+  - cmmmech:nepheline
+  evidence_ids: []
+- check_id: history
+  name: Pending completed batch gate
+  command: uv run --locked cmmmech validate-history --base 188ce7cb6f6dd1b7966b527546d80f9b4fb7fcec
+  status: unavailable
+  required: true
+  summary: Coordinator final batch receipt not yet available; this is an initial corrective
+    observation, not completed scientific acceptance.
+  target_ids:
+  - cmmmech:nepheline
+  evidence_ids: []
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/nepheline.yaml
+  locator: mechanisms[0].evidence[1].explanation, second-strain legend statement
+  accessed_at: '2026-10-14T12:28:41.508728Z'
+  support: refutes
+  summary: Frozen record quotes the figure legend as CMI 231300. The original clearly
+    prints CMI 234300.
+  snapshot_sha256: d5b71f26fb7ae031187185e427fc79ee1b56cdf5aa87fd6ae44f36dfb537cb20
+- evidence_id: primary
+  kind: primary_source
+  reference: https://hdl.handle.net/10044/1/37745
+  locator: King1985 original PDF page138 / printed130, Figure2.25 legend; raw /private/tmp/cmm-round71-silicates-research/king1985.pdf
+  accessed_at: '2026-10-14T12:28:41.508728Z'
+  support: supports
+  summary: High-resolution original triangle-series labels read CMI 234300. Table2.8
+    and section2.3.4 give CMI243400; their disagreement remains unresolved.
+  snapshot_sha256: efe06523c80a2b0586ff6b54011fd0e486a7a499b65c3f756155ed743b065b3e
+- evidence_id: render
+  kind: primary_source
+  reference: /private/tmp/cmm-round71-nepheline-review/figure2-25-highres.png
+  locator: Complete PDF page138 rendered at4x; both open and filled triangle legend
+    entries
+  accessed_at: '2026-10-14T12:28:41.508728Z'
+  support: supports
+  summary: Independent high-resolution visual check resolves the third digit as4,
+    not1. No plot values are digitized.
+  snapshot_sha256: 6acb400aaa9d6a7dd121b988b9a5fb752ace6d552206bef1ce7b1659b99a967f
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round71-nepheline-review/named-validation.log
+  locator: Reviewer-executed locked named validation
+  accessed_at: '2026-10-14T12:28:41.508728Z'
+  support: context_only
+  summary: One record passes structural validation; this does not verify figure transcription.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+assessments:
+- assessment_id: transcription
+  area: evidence
+  topic: Source figure legend versus record caveat
+  outcome: concern
+  summary: The record correctly preserves a strain disagreement but misquotes one
+    identifier in the source legend.
+  target_ids:
+  - cmmmech:nepheline
+  evidence_ids:
+  - record
+  - primary
+  - render
+findings:
+- finding_id: F1
+  issue_key: nepheline-round71-figure-strain-label
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Figure2.25 legend identifier was transcribed incorrectly
+  description: Replace the quoted legend CMI231300 with CMI234300. Retain text/Table2.8
+    CMI243400 and unresolved identity; do not assign second-strain performance. Correct
+    matching source dossier transcription and append canonical EDIT history.
+  target_ids:
+  - cmmmech:nepheline
+  field_paths:
+  - mechanisms[0].evidence[1].explanation
+  evidence_ids:
+  - record
+  - primary
+  - render
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/nepheline.yaml
+    role: maintained scientific record
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/227
+  rule_id: native-review-primary-figure-transcription
+  native_severity: minor
+  normalization_reason: 'Minor retained: exact source identifier is wrong, but the
+    record already excludes its uncertain performance and preserves the accepted CMI31821
+    claim.'
+actions:
+- action_id: A1
+  description: Curator correct owner and dossier quote, append actual EDIT history,
+    and reviewer save immutable successor with explicit occurrence lineage.
+  finding_ids:
+  - F1
+  target_ids:
+  - cmmmech:nepheline
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/nepheline.yaml
+    role: maintained scientific record
+  acceptance_checks:
+  - Verify original Figure2.25 both triangle labels at sufficient resolution.
+  - Correct only mistaken legend identifier while retaining unresolved source conflict;
+    save canonical EDIT history.
+  - Repeat named and batch validation, inspect new hashes and save successor linking
+    this exact finding.
+limitations:
+- This initial partial observation is not final scientific acceptance; final batch
+  checks are pending.
+- Figure legend CMI234300 still differs from text/Table2.8 CMI243400; source strain
+  identity is not resolved by correcting its transcription.
+notes:
+- Owner/history were not changed by reviewer; current frozen hashes remain exact.
+  Initial saver rejected an assessment enum and owner repository shorthand; corrected
+  review metadata only before any bundle was saved.
+tags:
+- round71
+- nepheline
+- independent
+- figure-transcription
+```

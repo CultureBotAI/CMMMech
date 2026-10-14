@@ -8,10 +8,15 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 329 material records.
+The catalogue currently contains 334 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Calcite](data/records/calcite.yaml) | Bacterial carbonate formation in synthetic terbium solution and natural brine | Early terbium removal without added calcium and mixed solids prevent calcite-specific recovery claims |
+| [Vaterite](data/records/vaterite.yaml) | Source-assigned phase in dried brine-treatment solids | Shared experiment, mixed products and no phase-specific yield or transformation time course |
+| [Nepheline](data/records/nepheline.yaml) | Fungal pitting and aluminium mobilization from characterized Bancroft discs | Mixed mineralogy, sparse sampling and conflicting second-strain labels constrain attribution |
+| [Strontianite](data/records/strontianite.yaml) | Bacterial carbonate coating on printed polymer | Ambiguous salt dosing, unresolved nucleation pathway and no recovered-strontium mass balance |
+| [Celestine](data/records/celestine.yaml) | Mixed Sr-mineral nucleation on cyanobacterial surface layers | Changing sulfate/carbonate mixtures and incomplete causal controls prevent pure-phase recovery claims |
 | [Anorthite](data/records/anorthite.yaml) | Bacterial contact assays and qualified fungal leaching of source-assigned feed | Natural plagioclase and mixed-feed composition prevent pure-endmember or phase-specific yields |
 | [Böhmite](data/records/boehmite.yaml) | Abiotic synthesis from aluminium sec-butoxide | Recipe confounding, fitted domain sizes and unquantified amorphous material; no microbial mechanism |
 | [Gibbsite](data/records/gibbsite.yaml) | Abiotic alkaline dissolution with a proposed dimer-assisted pathway | Model-assisted molecular assignment; no microbial mechanism or measured recovery yield |
