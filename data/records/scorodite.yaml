@@ -1,0 +1,163 @@
+id: cmmmech:scorodite
+name: Scorodite
+material_kind: mineral
+description: >-
+  Scorodite is the ferric arsenate mineral FeAsO4.2H2O, listed as
+  Fe3+(AsO4)(H2O)2 in the September 2026 IMA list. It is grandfathered,
+  with original-description year 1818; that year is not an approval number.
+  Scorodite is distinct from its dimorph parascorodite, amorphous ferric
+  arsenate, elemental arsenic or iron, and mixed arsenic-bearing wastes.
+  Laboratory culture-associated precipitation can transfer arsenic from
+  solution into scorodite-bearing solids. The evidence below does not
+  establish permanent environmental sequestration, a saleable recovery
+  product or industrial deployment. No criticality designation is inherited
+  from a constituent element.
+sources:
+- id: ima_2026_09
+  title: >-
+    IMA-CNMNC. The New IMA List of Minerals, September 2026. Scorodite row,
+    PDF page 195; column definitions and distribution terms on pages 1-2.
+    Original list freshly acquired and relevant pages visually inspected.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: handbook_scorodite
+  title: >-
+    Handbook of Mineralogy. Scorodite, one-page species entry. Formula,
+    orthorhombic structure and dimorphism with parascorodite.
+  url: https://handbookofmineralogy.org/pdfs/scorodite.pdf
+  accessed_on: '2026-10-14'
+- id: tanaka2018
+  title: >-
+    Tanaka and Okibe (2018). Factors to Enable Crystallization of
+    Environmentally Stable Bioscorodite from Dilute As(III)-Contaminated
+    Waters. Minerals 8(1), 23. Complete original article, Sections 2-4,
+    Figures 1-4, Tables 1-3 and Appendix A; the institutional PDF has one
+    cover page followed by all 16 article pages.
+  url: https://doi.org/10.3390/min8010023
+  accessed_on: '2026-10-14'
+- id: tanaka2018_original
+  title: >-
+    Kyushu University institutional copy of Tanaka and Okibe (2018),
+    including original figures and tables. This is the same study as
+    tanaka2018, not independent experimental evidence.
+  url: https://catalog.lib.kyushu-u.ac.jp/opac_download_md/4737404/4737404.pdf
+  accessed_on: '2026-10-14'
+- id: ncbi_brierleyi
+  title: >-
+    NCBI Taxonomy. Acidianus brierleyi, taxon 41673, species rank.
+    Taxonomic grounding only, not an assay or strain-specific identifier.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=41673
+  accessed_on: '2026-10-14'
+- id: dsm1651
+  title: >-
+    DSMZ catalogue. Acidianus brierleyi DSM 1651, type strain. Catalogue
+    identity supports the reported strain designation, not independent
+    authentication of the experimental stock.
+  url: https://www.dsmz.de/collection/catalogue/details/culture/DSM-1651
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: brierleyi_associated_scorodite_crystallization
+  name: Scorodite precipitation in Acidianus brierleyi cultures
+  process: biomineralization
+  microbial: true
+  organisms:
+  - id: NCBITaxon:41673
+    label: Acidianus brierleyi
+  description: >-
+    Living cultures reported as Acidianus brierleyi DSM 1651T produced
+    scorodite-bearing precipitates from synthetic Fe(II)- and
+    As(III)-containing acidic solutions. Culture-associated oxidation and
+    precipitation provide a route for transferring arsenic into solids;
+    the experiments do not establish an exclusive enzymatic pathway or
+    prove that cells are necessary for every precipitation step. Scorodite
+    made without added seeds was identified by original X-ray diffraction.
+    Additional seeded cultures showed condition-dependent solution arsenic
+    removal, with amorphous material or jarosite under other conditions.
+  context: >-
+    Sections 2.1-2.2 describe unseeded production of bioscorodite seed
+    material in 200 mL heterotrophic basal salts medium in 500 mL flasks,
+    initially pH 1.5 with sulfuric acid, containing 18 mM Fe(II) as
+    FeSO4.7H2O, 13 mM As(III) as NaAsO2 and 0.02% w/v yeast extract.
+    Cultures were incubated for 14 days at 70 degrees C and 100 rpm.
+    Subsequent crystallization experiments used the same flask volume,
+    temperature and agitation, initial pH 1.5 or 1.2, 3.3-20 mM As(III),
+    4.5-28 mM Fe(II), an initial cell density of 1.0 x 10^7 cells/mL and
+    0.15% w/v bioscorodite or chemical scorodite seeds where indicated.
+    Initial pH was specified, not maintained as a constant. Experiments
+    were conducted in duplicate. Dissolved Fe(II), As(III), total soluble
+    Fe and As, cell counts, pH and redox potential were monitored. Solid
+    analyses included XRD, FTIR, thermogravimetry and electron microscopy.
+    These are laboratory synthetic-solution experiments.
+  evidence:
+  - source_ref: tanaka2018
+    supports: support
+    explanation: >-
+      Sections 2.1-2.2 explicitly state that production of the seed
+      crystals did not involve seed feeding. Figure 1a shows XRD of
+      the collected biogenic material assigned to scorodite using
+      JCPDS 37-0468. This supplies direct phase evidence for material
+      produced in the stated culture, without pre-existing scorodite
+      seeds. Figure 2 shows its rounded, hollow particle aggregates;
+      morphology alone is not the mineral identification.
+  - source_ref: tanaka2018
+    supports: support
+    explanation: >-
+      Table 3 reports 3.3 mM initial As(III), 4.5 mM Fe(II), initial
+      pH 1.5 and 24 days: without added seeds, 11% arsenic removal
+      and amorphous material; with 0.15% w/v bioscorodite seeds, 95%
+      arsenic removal and a scorodite assignment. These percentages
+      concern disappearance of initial solution arsenic, not an
+      isolated-product yield or a measured fraction of newly formed
+      scorodite. Table 3 also reports jarosite and 59% arsenic removal
+      at 3.3 mM As(III) with 13.5 or 20 mM Fe(II), demonstrating that
+      solution removal does not by itself identify scorodite.
+  - source_ref: tanaka2018
+    supports: partial
+    explanation: >-
+      The chemical seed preparation is not a matched abiotic control:
+      it starts with 267 mM As(V) and 358 mM Fe(II) in deionized water
+      for seven days, rather than the culture medium, lower feed
+      concentrations, As(III) and 14-day biogenic preparation. A matched
+      uninoculated or killed-cell culture series is not reported.
+      Seeded experiments contain pre-existing arsenic-bearing material;
+      final phase identification and microscopy do not separately
+      quantify seed and newly precipitated mineral masses. Original
+      endpoint XRD patterns are not provided for every Table 3 arm.
+      The 99% removal row at 13 mM As(III), 18 mM Fe(II) and 14 days
+      is explicitly attributed there to Okibe et al. 2014 and is not
+      treated as a new measurement of the 2018 experiment.
+  - source_ref: tanaka2018
+    supports: partial
+    explanation: >-
+      Figure 1b thermogravimetry gives inferred hydration values of
+      1.55 H2O for bioscorodite and 1.91 H2O for chemical scorodite,
+      compared with the ideal mineral formula's two waters. FTIR and
+      thermal results indicate associated organic material. Final
+      products also have bulk Fe/As ratios above one under some
+      conditions. These observations limit claims of pure, perfectly
+      stoichiometric products; the proposed sulfate incorporation is
+      not independently established by those bulk ratios.
+  - source_ref: tanaka2018
+    supports: partial
+    explanation: >-
+      Section 2.4 tests leachability in acetate buffer at pH 4.9,
+      5% w/v solids, 25 degrees C and 30 rpm for 18 hours, in duplicate.
+      Table 2 reports 0.59 +/- 0.20 mg/L arsenic in the leachate of the
+      final bioscorodite-seeded product grown at initial pH 1.5, whereas
+      narrative text and the conclusion give 0.59 +/- 0.08 mg/L for
+      that endpoint. The uncertainty discrepancy remains unresolved;
+      no error statistic is inferred. These leachate concentrations
+      are not reactor effluent concentrations, extraction yields or
+      proof of long-term environmental stability. The source's
+      proposed continuous treatment system is prospective, not
+      demonstrated industrial deployment.
+curation_history:
+- timestamp: '2026-10-14T05:33:20.718862+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: >-
+    Created scorodite mineral identity and qualified laboratory culture-associated
+    precipitation evidence, retaining phase, seed, control, composition and
+    short-term leachability limitations without inherited criticality.
+history_refs:
+- history/records/scorodite/2026-10-14T053328Z-codex-cfd8a6.yaml

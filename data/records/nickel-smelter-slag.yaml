@@ -1,0 +1,127 @@
+id: cmmmech:nickel-smelter-slag
+name: Nickel smelter slag
+material_kind: secondary_resource
+description: >-
+  Mixed solid residue from pyrometallurgical smelting in nickel extraction,
+  distinct from nickel ore, flotation concentrate, flotation tailings and
+  an individual constituent mineral. The curated case is the flash-furnace
+  slag supplied by Votorantim Metais from its Serra de Fortaleza-MG nickel
+  extraction operation in Brazil for a 2010 doctoral thesis. The source
+  reports original particles of 100-500 micrometres and a dominant
+  fayalite/forsterite-type iron-magnesium silicate diffraction pattern;
+  that assignment does not make the bulk slag a pure mineral. Table 7
+  reports total Ni 0.26%, Cu 0.27% and Co 0.06%, versus aqua-regia-soluble
+  Ni 0.07%, Cu 0.06% and Co 0.06%. The latter is an operational digestion
+  fraction, not water solubility. These feed-specific assays do not define
+  every nickel slag. No constituent criticality status or industrial
+  microbial deployment is inferred.
+sources:
+  - id: munoz_blandon2010
+    title: >-
+      Nury Alexandra Munoz Blandon (2010). Recuperacao de niquel e outros
+      metais a partir de diferentes fontes (rejeitos minerais de processo
+      industrial e pentlandita (Ni,Fe)9S8) por lixiviacao bacteriana e acida.
+      Doctoral thesis, UNESP, Instituto de Quimica, Araraquara.
+      Official repository handle 11449/100745, issued 15 July 2010;
+      repository accession in 2014 is not the experiment's publication year.
+      Original 125-page PDF; source pp. 33, 36-39 and 50-58,
+      Tables 1-2 and 7-9, Figures 4-9. Repository title wording differs
+      slightly from the thesis front matter.
+    url: https://hdl.handle.net/11449/100745
+    accessed_on: '2026-10-14'
+  - id: ncbi_ferrooxidans
+    title: >-
+      NCBI Taxonomy 920, Acidithiobacillus ferrooxidans, species entry.
+      Resolves the source species name; it does not authenticate the
+      experimental LR isolate or identify it with the listed type strain.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=info
+    accessed_on: '2026-10-14'
+mechanisms:
+  - id: lr_associated_leaching_with_nickel_null
+    name: Acidophile inoculation during slag leaching with little nickel advantage
+    process: bioleaching
+    microbial: true
+    organisms:
+      - id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+    description: >-
+      Acidic leaching of slag was tested with source-labelled
+      A. ferrooxidans LR, an isolate reported from acidic uranium-ore
+      leachate at Lagoa Real, Bahia. Inoculation generally sustained a
+      higher redox potential, but nickel release was similar to the
+      corresponding uninoculated controls. The record documents microbial
+      involvement in the assay and its limited metal-leaching benefit,
+      not an established microbial enhancement of nickel recovery.
+      Iron oxidation and secondary jarosite formation are consistent with
+      the redox and diffraction observations; adsorption, passivation and
+      the location of nickel within the silicate matrix remain proposed
+      explanations for limited extraction. Dissolved metal was measured,
+      without isolation of a nickel product.
+    context: >-
+      Laboratory duplicate 250 mL Erlenmeyer flasks contained 150 mL T&K
+      medium, 5% w/v original-size slag and 5% v/v inoculum, incubated at
+      30 degrees C and 150 rpm for 14 days. The nominally no-added-iron
+      medium and the medium with 120 mmol/L Fe(II) each had an
+      uninoculated counterpart. A third pair used previously grown
+      culture containing approximately 120 mmol/L Fe(III), compared with
+      culture described as sterile. T&K preculture medium was pH 1.8;
+      experimental pH drifted upward and was corrected with sulfuric acid,
+      as indicated in Figure 7, rather than remaining on an identical
+      trajectory in all arms. Solution Ni and Cu used flame atomic
+      absorption; redox used a platinum electrode against Ag/AgCl with
+      saturated KCl. Total-feed assays used HF/microwave digestion,
+      whereas the separate soluble fraction used aqua regia. The washed
+      cells described for separate Warburg respirometry are not stated
+      to have been used in these leaching flasks: inoculum carryover is
+      not blank-corrected, and no added iron is not proof of no iron.
+      No LR strain accession or independent authentication is supplied.
+    evidence:
+      - source_ref: munoz_blandon2010
+        supports: support
+        explanation: >-
+          Pages 33 and 36-39, Tables 1-2 and Figures 4 and 7-9 establish
+          feed provenance, culture and flask treatment. Table 9 on page 56
+          reports day-14 Ni extraction relative to total feed Ni as
+          inoculated/control pairs of 13/13%, 12/12% and 11/10% for the
+          no-added-iron, ferrous and grown-ferric-culture treatments,
+          respectively. Corresponding total-Cu percentages are 8/5%,
+          8/7% and 4/4%. These source-reported values indicate a small
+          or absent treatment difference under this design; they are
+          not a statistically demonstrated equivalence or general
+          impossibility of biological slag leaching. Percentages against
+          the smaller aqua-regia-soluble fraction in the adjacent columns
+          must not be presented as total-metal recovery.
+      - source_ref: munoz_blandon2010
+        supports: partial
+        explanation: >-
+          Figures 7-9 show elevated redox in inoculated arms, persistent
+          dominant silicate peaks and minor peaks assigned to jarosite.
+          These observations do not prove a unique nickel-release pathway
+          or quantify secondary-phase mass. Separate respirometry on
+          page 52 used washed cells, pH 2.2 glycine buffer and different
+          loading; its oxygen consumption is not evidence of enhanced
+          nickel release in the 14-day flasks. Duplicate assays are stated,
+          but plotted dispersion, statistical tests, a complete metal
+          mass balance and a killed-cell or inoculum-broth control are
+          not provided for the leaching results.
+      - source_ref: munoz_blandon2010
+        supports: context_only
+        explanation: >-
+          Table 8 reports greater Ni extraction in a separate 48-hour
+          chemical acid test at pH 0.5 than in the microbial flasks.
+          Its loading, pH control and duration differ, so this is not a
+          matched test of microbial efficiency. Static acid-curing
+          experiments later in the thesis contain concentration-unit
+          and total-versus-soluble reporting inconsistencies; their
+          numerical yields are not assigned to this mechanism. Neither
+          industrial origin of the feed nor proposed static processing
+          establishes industrial bioleaching deployment.
+
+curation_history:
+  - timestamp: '2026-10-14T05:35:29.026392+00:00'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Created a process-defined nickel slag resource with source-labelled LR leaching assays, preserving negligible nickel advantage, analytical fractions and laboratory scope.
+history_refs:
+  - history/records/nickel-smelter-slag/2026-10-14T053537Z-codex-23c8e8.yaml

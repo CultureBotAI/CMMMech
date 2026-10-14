@@ -1,0 +1,316 @@
+{
+  "recorded_at": "2026-10-14T05:52:04.824626+00:00",
+  "base": "1e3d834112099855c0398459415d0022336055f5",
+  "worktree": "/private/tmp/CMMMech-expansion-round63-20261014",
+  "branch": "curate/cmm-expansion-round63-20261014",
+  "records_created": [
+    {
+      "slug": "dypingite",
+      "path": "data/records/dypingite.yaml",
+      "sha256": "dda0701dc49edb424e05e386bc8bfcd7859e9999b1c376949272c9e6979907c3",
+      "review": "reviews/structured/20261014T054234Z-dypingite-round63-independent/review.yaml",
+      "history": [
+        "history/records/dypingite/2026-10-14T053128Z-codex-2f510c.yaml"
+      ]
+    },
+    {
+      "slug": "scorodite",
+      "path": "data/records/scorodite.yaml",
+      "sha256": "a27c51ef3546c8e8454900ec654e76b8b4f338a4f84680c41d3c9125edad8245",
+      "review": "reviews/structured/20261014T054310Z-scorodite-round63-independent/review.yaml",
+      "history": [
+        "history/records/scorodite/2026-10-14T053328Z-codex-cfd8a6.yaml"
+      ]
+    },
+    {
+      "slug": "nickel-flotation-tailings",
+      "path": "data/records/nickel-flotation-tailings.yaml",
+      "sha256": "e212b12420f201e57c320ec9259d35a59c82d9738892b49f87e7ce3abe1a5b97",
+      "review": "reviews/structured/20261014T054545Z-nickel-flotation-tailings-round63-independent/review.yaml",
+      "history": [
+        "history/records/nickel-flotation-tailings/2026-10-14T053546Z-codex-b3a525.yaml"
+      ]
+    },
+    {
+      "slug": "nickel-smelter-slag",
+      "path": "data/records/nickel-smelter-slag.yaml",
+      "sha256": "7dd113070944069fc2c4c8ab1096407587759570dc0a16c99f4bd53dc7947f71",
+      "review": "reviews/structured/20261014T054545Z-nickel-smelter-slag-round63-independent/review.yaml",
+      "history": [
+        "history/records/nickel-smelter-slag/2026-10-14T053537Z-codex-23c8e8.yaml"
+      ]
+    }
+  ],
+  "counts": {
+    "passed": true,
+    "record_count": 288,
+    "history_count": 337,
+    "structured_review_count": 348,
+    "review_base_count": 64,
+    "covered_records": 288
+  },
+  "checks": {
+    "baseline": {
+      "path": "/private/tmp/cmm-round63-baseline.json",
+      "sha256": "62585953c2b34f831b4c99967d207a57516f2ae024587e447e4468429ec04bff",
+      "result": {
+        "started_at": "2026-10-14T05:23:41.298993+00:00",
+        "base": "1e3d834112099855c0398459415d0022336055f5",
+        "worktree": "/private/tmp/CMMMech-expansion-round63-20261014",
+        "commands": [
+          {
+            "command": [
+              "uv",
+              "sync",
+              "--quiet",
+              "--locked",
+              "--extra",
+              "dev",
+              "--offline"
+            ],
+            "started_at": "2026-10-14T05:23:41.300669+00:00",
+            "finished_at": "2026-10-14T05:23:44.611340+00:00",
+            "exit_code": 0
+          },
+          {
+            "command": [
+              "just",
+              "check"
+            ],
+            "started_at": "2026-10-14T05:23:44.611408+00:00",
+            "finished_at": "2026-10-14T05:30:14.419124+00:00",
+            "exit_code": 0
+          }
+        ],
+        "finished_at": "2026-10-14T05:30:14.419293+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round63-baseline.log",
+        "log_sha256": "483599e39c1778aeaf4c0fb691cbc662a7b96ad8338da7f333ba9e1bea4847cb"
+      }
+    },
+    "final-gates": {
+      "path": "/private/tmp/cmm-round63-final-gates.json",
+      "sha256": "f609ce00abe12705c5c76645c1f43d3fdb1461e9e4dc0ca0d963f591a215801d",
+      "result": {
+        "started_at": "2026-10-14T05:36:03.754614+00:00",
+        "base": "1e3d834112099855c0398459415d0022336055f5",
+        "worktree": "/private/tmp/CMMMech-expansion-round63-20261014",
+        "commands": [
+          {
+            "command": [
+              "just",
+              "render"
+            ],
+            "started_at": "2026-10-14T05:36:03.755481+00:00",
+            "finished_at": "2026-10-14T05:36:14.996566+00:00",
+            "exit_code": 0
+          },
+          {
+            "command": [
+              "just",
+              "check"
+            ],
+            "started_at": "2026-10-14T05:36:14.996595+00:00",
+            "finished_at": "2026-10-14T05:41:32.473108+00:00",
+            "exit_code": 0
+          },
+          {
+            "command": [
+              "uv",
+              "run",
+              "--locked",
+              "cmmmech",
+              "validate",
+              "--require-records"
+            ],
+            "started_at": "2026-10-14T05:41:32.473142+00:00",
+            "finished_at": "2026-10-14T05:41:51.860503+00:00",
+            "exit_code": 0
+          },
+          {
+            "command": [
+              "uv",
+              "run",
+              "--locked",
+              "cmmmech",
+              "validate-history",
+              "--base",
+              "1e3d834112099855c0398459415d0022336055f5"
+            ],
+            "started_at": "2026-10-14T05:41:51.860560+00:00",
+            "finished_at": "2026-10-14T05:42:01.927327+00:00",
+            "exit_code": 0
+          }
+        ],
+        "finished_at": "2026-10-14T05:42:01.927455+00:00",
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round63-final-gates.log",
+        "log_sha256": "90bf3a83eebaa7ca2d2378b9c1fd4862c324ca57cf55aaefd60a1ec5de53285c"
+      }
+    },
+    "review-check": {
+      "path": "/private/tmp/cmm-round63-review-check.json",
+      "sha256": "0843122e5467c794b228f849c214a90a227ea1d36d3d26658654e592450c31ca",
+      "result": {
+        "started_at": "2026-10-14T05:46:24.917212+00:00",
+        "finished_at": "2026-10-14T05:51:23.649356+00:00",
+        "base": "1e3d834112099855c0398459415d0022336055f5",
+        "command": [
+          "just",
+          "review-check",
+          "--base",
+          "1e3d834112099855c0398459415d0022336055f5",
+          "--require-reviews"
+        ],
+        "exit_code": 0,
+        "log": "/private/tmp/cmm-round63-review-check.log",
+        "log_sha256": "286e5bf735e2f31109286525a493d023245b6e5656455693ccecc33f1be4c742"
+      }
+    },
+    "local-coverage": {
+      "path": "/private/tmp/cmm-round63-local-coverage.json",
+      "sha256": "a1c92f068309959628ea5cd8c974d87a519c991aeadb8500643584f5bb72a8ea",
+      "result": {
+        "passed": true,
+        "record_count": 288,
+        "history_count": 337,
+        "structured_review_count": 348,
+        "review_base_count": 64,
+        "covered_records": 288
+      }
+    },
+    "preservation-prepublication": {
+      "path": "/private/tmp/cmm-round63-preservation-prepublication.json",
+      "sha256": "9a4166df151429c97076ae310111a6fb63d2627059556dd67a5a2e5bd84aa750",
+      "result": {
+        "recorded_at": "2026-10-14T05:30:03.914179+00:00",
+        "passed": true,
+        "preserved_entry_counts": {
+          "main": 7187,
+          "skill": 7389
+        },
+        "initial_sha256": "9a8290258a8aedfe6912620a1270b8bef18f71c9883e51eb2966b6442debb9af",
+        "scope": "Hidden/ignored-inclusive bytes, modes, symlink targets and Git state; original main nontracked files, unrelated skill tracked/nontracked files. Git administrative files and external symlink contents excluded."
+      }
+    }
+  },
+  "artifacts": [
+    {
+      "path": "data/records/dypingite.yaml",
+      "sha256": "dda0701dc49edb424e05e386bc8bfcd7859e9999b1c376949272c9e6979907c3"
+    },
+    {
+      "path": "history/records/dypingite/2026-10-14T053128Z-codex-2f510c.yaml",
+      "sha256": "e3f20a1ce49d303c65f90884e15179e1f4d1eeef621d3b202c39c0eba53f7523"
+    },
+    {
+      "path": "reviews/structured/20261014T054234Z-dypingite-round63-independent/review.yaml",
+      "sha256": "fc34f90bb8629b37018a627652b232bcddc1afa7c435bf415f02827a3d071fff"
+    },
+    {
+      "path": "reviews/structured/20261014T054234Z-dypingite-round63-independent/review.md",
+      "sha256": "c5bedbe95d20f005ce6c40d13c567d2f74b5ed9e2d99361b0614501113fae262"
+    },
+    {
+      "path": "data/records/scorodite.yaml",
+      "sha256": "a27c51ef3546c8e8454900ec654e76b8b4f338a4f84680c41d3c9125edad8245"
+    },
+    {
+      "path": "history/records/scorodite/2026-10-14T053328Z-codex-cfd8a6.yaml",
+      "sha256": "d611ae52026e77c944a3f1a283aa0ff8615e4a8542d0f90dbe4916b4ca23ab7b"
+    },
+    {
+      "path": "reviews/structured/20261014T054310Z-scorodite-round63-independent/review.yaml",
+      "sha256": "023548761d62c824babd31830afca1bbee96f982678b0767fbf13cfe264add57"
+    },
+    {
+      "path": "reviews/structured/20261014T054310Z-scorodite-round63-independent/review.md",
+      "sha256": "ace4a69b6b09eb7d6196d5f1b578adafd452167ebe17b133331cbb26b11e6887"
+    },
+    {
+      "path": "data/records/nickel-flotation-tailings.yaml",
+      "sha256": "e212b12420f201e57c320ec9259d35a59c82d9738892b49f87e7ce3abe1a5b97"
+    },
+    {
+      "path": "history/records/nickel-flotation-tailings/2026-10-14T053546Z-codex-b3a525.yaml",
+      "sha256": "17091c2d2aeedc5309849ae12502a5f3981251f042f12648f7791ce425a2cfe5"
+    },
+    {
+      "path": "reviews/structured/20261014T054545Z-nickel-flotation-tailings-round63-independent/review.yaml",
+      "sha256": "67e4a6ffbd81b587a4f695b3be046981a4b09ed1378149e6d2da5e3c9c735377"
+    },
+    {
+      "path": "reviews/structured/20261014T054545Z-nickel-flotation-tailings-round63-independent/review.md",
+      "sha256": "4f317f062462927aef4520945ffa007458d6e9a16bc80494bb3997b6acdaee32"
+    },
+    {
+      "path": "data/records/nickel-smelter-slag.yaml",
+      "sha256": "7dd113070944069fc2c4c8ab1096407587759570dc0a16c99f4bd53dc7947f71"
+    },
+    {
+      "path": "history/records/nickel-smelter-slag/2026-10-14T053537Z-codex-23c8e8.yaml",
+      "sha256": "f6196815c66ec71213557cfa673c1f1b30fbaa3efac3d6a43f1760897bc743b2"
+    },
+    {
+      "path": "reviews/structured/20261014T054545Z-nickel-smelter-slag-round63-independent/review.yaml",
+      "sha256": "83723ee9d91efda463940887c7ba76cc2510d1b356669637e3824b1a94afe35d"
+    },
+    {
+      "path": "reviews/structured/20261014T054545Z-nickel-smelter-slag-round63-independent/review.md",
+      "sha256": "13a9dd5733da8faa8c0e2b68b045e45f0734ab7e0d6406caf06a566d73a8f051"
+    },
+    {
+      "path": "research/sources/round63-magnesium-carbonates/20261014T053338Z-source-investigation.json",
+      "sha256": "17b542456a9791ac91b013141d9e43ee39370cdd1b88bd3e90ff6f64d0368f3e"
+    },
+    {
+      "path": "research/sources/round63-magnesium-carbonates/20261014T053338Z-source-investigation.md",
+      "sha256": "02285456b7399ac62f07a238acde5e080e0a95400226b58051ae3d9f4bea991c"
+    },
+    {
+      "path": "research/sources/round63-nickel-resources/20261014T053805Z-source-investigation.json",
+      "sha256": "15e6d80afaa639459d5fa8eafd779cbfc9091e45cf16626ae98048215c26418c"
+    },
+    {
+      "path": "research/sources/round63-nickel-resources/20261014T053805Z-source-investigation.md",
+      "sha256": "cef6624fa6a5c07e790eced6ada23f296677caab340e441f4298a4f9ac5b6aa6"
+    },
+    {
+      "path": "research/sources/round63-arsenates/20261014T053548Z-source-investigation.json",
+      "sha256": "941678fc8c1fe8d4dc9f9757c7e6cebcc49030675513ceddec5839b7ea555d14"
+    },
+    {
+      "path": "research/sources/round63-arsenates/20261014T053548Z-source-investigation.md",
+      "sha256": "e472bd362bb7c5b0c897d8ae3ea5de8f10e1d4abef53962d4c55fd70924cdede"
+    },
+    {
+      "path": "docs/record-review-profile.md",
+      "sha256": "01c6f39d0d097876a0446131270df58bb32fa15804c66487419c171719d3ddc0"
+    },
+    {
+      "path": "reviews/publication/20261014-round63/queue-guard-regression.json",
+      "sha256": "9e37b372df472994d85727b0f7f1156020540ba5448224619c3b9509f0062ccd"
+    },
+    {
+      "path": "reviews/publication/20261014-round63/20261014T054836Z-publication-queue-finding.json",
+      "sha256": "3b0b55dfd8f5a056591a33c186c0401db0971ec5b3566450b8c96b0bcfae083c"
+    },
+    {
+      "path": "reviews/publication/20261014-round63/20261014T054836Z-publication-queue-finding.md",
+      "sha256": "2c7b76e5905711503cc8afc20620ccac414082813a2d2b3550d87c96bb03a29a"
+    }
+  ],
+  "issues": {
+    "corrected_review_issues": [
+      200
+    ],
+    "closed_source_issues": [],
+    "open_source_issues": [
+      197,
+      198,
+      199
+    ]
+  },
+  "scope": "Four new records, actual CREATE histories, independent scientific reviews, three bounded source dossiers and rendered pages. Publication finding 200 corrected in the session queue helper and the maintained publication profile, with regression evidence. No schema, validator, project-test or governed-file changes. No source-exhaustion claim.",
+  "publication_state": "Local scientific review and gates complete. Final independent publication audit, commit, hosted validation and native merge queue remain subsequent actions."
+}

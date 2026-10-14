@@ -1,0 +1,108 @@
+{
+  "recorded_at": "2026-10-14T05:50:58.346540+00:00",
+  "passed": true,
+  "helper_path": "/private/tmp/cmm-round63-enqueue.py",
+  "helper_sha256": "2ce883a40254d1e8738f8f4ab439d3ebaec0f195db6d557988c76437af323cbe",
+  "harness_path": "/private/tmp/cmm-round63-queue-guard-test.py",
+  "harness_sha256": "c907c1158a9ed4892800b1418a19127aac7ecba848ce6e686782bca14927b113",
+  "guard_source": {
+    "require_preflight_identity": "def require_preflight_identity(preflight, commit):\n expected={'exit_code':0,'mode':'preflight','trusted_base':commit['base'],'topic_head':commit['head'],'expected_tree':commit['tree']}\n if any(preflight.get(k)!=v for k,v in expected.items()):\n  raise RuntimeError('Preflight identity differs from the reviewed commit')\n commands=preflight.get('commands',[])\n if not commands or any(x['exit_code'] not in x['allowed_exit_codes'] for x in commands):\n  raise RuntimeError('Preflight command evidence is missing or failed')\n for command in [\n  ['uv','run','--locked','cmmmech','validate','--require-records'],\n  ['uv','run','--locked','cmmmech','validate-history','--base',commit['base']],\n  ['just','review-check','--base',commit['base'],'--require-reviews']]:\n  if not any(x['command']==command and x['exit_code']==0 for x in commands):\n   raise RuntimeError('Required preflight gate is missing')\n if hashlib.sha256(Path(preflight['log']).read_bytes()).hexdigest()!=preflight['log_sha256']:\n  raise RuntimeError('Preflight log differs from its receipt')",
+    "require_live_base": "def require_live_base(live_ref, commit):\n if live_ref.get('ref')!='refs/heads/main' or live_ref.get('object',{}).get('sha')!=commit['base']:\n  raise RuntimeError('Live main moved from the reviewed base; refresh preflight before queue admission')"
+  },
+  "wired_call_order": {
+    "require_preflight_identity": 44,
+    "live_main_read": 45,
+    "require_live_base": 47,
+    "merge_call": 48
+  },
+  "cases": [
+    {
+      "case": "matching_preflight_and_live_base",
+      "expected_admission": true,
+      "mock_admission_reached": true,
+      "passed": true
+    },
+    {
+      "case": "reject_exit_code",
+      "expected_admission": false,
+      "mock_admission_reached": false,
+      "passed": true
+    },
+    {
+      "case": "reject_mode",
+      "expected_admission": false,
+      "mock_admission_reached": false,
+      "passed": true
+    },
+    {
+      "case": "reject_trusted_base",
+      "expected_admission": false,
+      "mock_admission_reached": false,
+      "passed": true
+    },
+    {
+      "case": "reject_topic_head",
+      "expected_admission": false,
+      "mock_admission_reached": false,
+      "passed": true
+    },
+    {
+      "case": "reject_expected_tree",
+      "expected_admission": false,
+      "mock_admission_reached": false,
+      "passed": true
+    },
+    {
+      "case": "reject_log_sha256",
+      "expected_admission": false,
+      "mock_admission_reached": false,
+      "passed": true
+    },
+    {
+      "case": "reject_missing_commands",
+      "expected_admission": false,
+      "mock_admission_reached": false,
+      "passed": true
+    },
+    {
+      "case": "reject_failed_command",
+      "expected_admission": false,
+      "mock_admission_reached": false,
+      "passed": true
+    },
+    {
+      "case": "reject_missing_required_gate",
+      "expected_admission": false,
+      "mock_admission_reached": false,
+      "passed": true
+    },
+    {
+      "case": "reject_missing_log",
+      "expected_admission": false,
+      "mock_admission_reached": false,
+      "passed": true
+    },
+    {
+      "case": "reject_moved_main",
+      "expected_admission": false,
+      "mock_admission_reached": false,
+      "passed": true
+    },
+    {
+      "case": "reject_wrong_ref",
+      "expected_admission": false,
+      "mock_admission_reached": false,
+      "passed": true
+    },
+    {
+      "case": "reject_missing_live_sha",
+      "expected_admission": false,
+      "mock_admission_reached": false,
+      "passed": true
+    }
+  ],
+  "scope": "Executes the actual helper guard functions extracted by AST, with synthetic receipts and a temporary log. Confirms real helper call ordering before merge. No live GitHub mutation, enqueue or subprocess execution occurs.",
+  "limitations": [
+    "Live main equality is a read-before-enqueue guard, not atomic base locking. Native queue and actual merge tree/parent checks remain required."
+  ]
+}
