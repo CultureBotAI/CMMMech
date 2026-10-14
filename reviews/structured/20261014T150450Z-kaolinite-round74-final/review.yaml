@@ -1,0 +1,479 @@
+schema_version: 1.0.0
+review_id: 20261014T150450Z-kaolinite-round74-final
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent final review of Kaolinite round74 after DFAM correction
+started_at: '2026-10-14T15:02:50.325102Z'
+finished_at: '2026-10-14T15:04:50.461922Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The new_frontier peer authored the clay records, histories and
+    dossier. Reviewer authored separate variscite/strengite records in this batch
+    but did not author or edit the reviewed clay owners or histories. Native inspect
+    preceded scientific assessment.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The corrected owner retains the source-designated DFAM label, resolving the
+  unsupported calibration-standard expansion. The bounded kaolinite-associated iron
+  acquisition and relative siderophore observations remain supported with the recorded
+  specimen, strain, pH and causal limitations.
+source:
+  git_revision: a524756f3f4f90d81f89035fa7f85f1e1897b99d
+  state: working_tree
+  inputs:
+  - path: data/records/kaolinite.yaml
+    sha256: dd4561af884adcec68321d5a8241344715d372d3b359df6fed3e99f382a5b3b9
+    role: target
+  - path: history/records/kaolinite/2026-10-14T144817Z-codex-0640c1.yaml
+    sha256: 6a45cce1e713031a90c68edacbf259bcb996fe642afe57bc01d16170b1ffd8f0
+    role: context
+  - path: history/records/kaolinite/2026-10-14T145950Z-codex-c894e9.yaml
+    sha256: e461cc1e7ba0367f5b154cd703b3f00c0c4430efa4447412fd16320a2dad09bc
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire corrected owner, preserved CREATE and appended EDIT history;
+    original full primary review retained and unchanged fields rechecked. Focused
+    correction reassessment visually re-read original Section 2.5 p165, verified exact
+    parsed differences, and bound fresh affected validation and terminal after-fix
+    batch checks.
+  selection: Independent successor for the exact kaolinite F1 occurrence in 20261014T145845Z-kaolinite-round74-initial;
+    no reviewer edits to the owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:kaolinite
+targets:
+- target_id: cmmmech:kaolinite
+  path: data/records/kaolinite.yaml
+  label: Kaolinite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/kaolinite.yaml
+    role: maintained scientific record
+checks:
+- check_id: named
+  name: Reviewer named validation
+  command: uv run --locked cmmmech validate data/records/kaolinite.yaml data/records/nontronite.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Actual reviewer execution 2026-10-14T15:03:11.138019+00:00 to 2026-10-14T15:03:15.626843+00:00;
+    two records checked, zero failures.
+  target_ids:
+  - cmmmech:kaolinite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Coordinator terminal batch gate
+  command: just check
+  status: passed
+  required: true
+  summary: Independently verified terminal after-fix receipt, trusted base, three
+    zero exit codes and full log hash. This gate follows the DFAM correction; structural
+    checks do not prove scientific truth.
+  target_ids:
+  - cmmmech:kaolinite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Coordinator terminal batch gate
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Independently verified terminal after-fix receipt, trusted base, three
+    zero exit codes and full log hash. This gate follows the DFAM correction; structural
+    checks do not prove scientific truth.
+  target_ids:
+  - cmmmech:kaolinite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Coordinator terminal batch gate
+  command: uv run --locked cmmmech validate-history --base a524756f3f4f90d81f89035fa7f85f1e1897b99d
+  status: passed
+  required: true
+  summary: Independently verified terminal after-fix receipt, trusted base, three
+    zero exit codes and full log hash. This gate follows the DFAM correction; structural
+    checks do not prove scientific truth.
+  target_ids:
+  - cmmmech:kaolinite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/kaolinite.yaml
+  locator: Entire frozen owner captured by native inspect
+  accessed_at: '2026-10-14T15:04:50.461922Z'
+  support: supports
+  summary: Entire corrected owner re-read after native inspect; independent parsed
+    comparison confirms only the literal source label and appended provenance changed.
+  snapshot_sha256: dd4561af884adcec68321d5a8241344715d372d3b359df6fed3e99f382a5b3b9
+- evidence_id: history
+  kind: record_content
+  reference: history/records/kaolinite/2026-10-14T144817Z-codex-0640c1.yaml
+  locator: Entire canonical CREATE, inline event and history_refs
+  accessed_at: '2026-10-14T14:56:58.969273Z'
+  support: supports
+  summary: Actual actor, timestamps, target and change description agree; no fabricated
+    earlier authorship.
+  snapshot_sha256: 6a45cce1e713031a90c68edacbf259bcb996fe642afe57bc01d16170b1ffd8f0
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Retained official original; definitions pp.1–2 and Kaolinite row PDF p.109;
+    row pixels inspected
+  accessed_at: '2026-10-14T14:56:58.969273Z'
+  support: supports
+  summary: Al2Si2O5(OH)4, A,1980 s.p.; mineral identity distinguished from kaolin
+    resource.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/kaolinite.pdf
+  locator: Complete two-page original /private/tmp/cmm-round74-clays-research/kaolinite-handbook.pdf;
+    all pages visually inspected
+  accessed_at: '2026-10-14T14:56:58.969273Z'
+  support: supports
+  summary: Triclinic kaolinite, formula and related polymorphs corroborated.
+  snapshot_sha256: 607a5c78a02107c6eee0718443bd118e9af4b89fcee8929249e001e160c1c93a
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1016/S0009-2541(02)00077-3
+  locator: Complete ten-page original /private/tmp/cmm-round74-clays-research/ams2002.pdf;
+    Sections2.1–2.5 and3.1–3.3, Figures1–5; all pages visually inspected
+  accessed_at: '2026-10-14T14:56:58.969273Z'
+  support: supports
+  summary: Weakly cleaned KGa-1b/KGa-2 specimens, separate22 C growth and28 C siderophore
+    assays, no-added-iron controls, optical-density population estimates, pooled extracts
+    and surrogate DFAM standard were checked against the original.
+  snapshot_sha256: c471e24d70ac62cfee9642ad3430ee2cb06a4a8e8672ae2f12de50cd0306465b
+- evidence_id: limits
+  kind: primary_source
+  reference: https://doi.org/10.1016/S0009-2541(02)00077-3
+  locator: p163 isolate identification/unknown Fe distribution; p165 pooling/relative
+    calibration; pp166–168 pH changes and earlier hematite lineage
+  accessed_at: '2026-10-14T14:56:58.969273Z'
+  support: partial
+  summary: Source-associated iron access is indirect. Unknown iron host, weak historical
+    identification, unaccessioned isolate, possible trace medium iron, differing culture
+    pH, relative siderophore concentrations and earlier-study controls are accurately
+    retained. No direct iron-release rate or siderophore necessity is asserted.
+  snapshot_sha256: c471e24d70ac62cfee9642ad3430ee2cb06a4a8e8672ae2f12de50cd0306465b
+- evidence_id: taxon
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=300
+  locator: Current official XML /private/tmp/cmm-round74-clays-research/ncbi-mendocina.xml
+    independently read; live browser route returned sparse Taxonomy Browser shell
+  accessed_at: '2026-10-14T14:56:58.969273Z'
+  support: supports
+  summary: Taxon300 is species Ectopseudomonas mendocina with Pseudomonas mendocina
+    synonym. This does not independently identify the experimental isolate or assign
+    a culture-collection accession.
+  snapshot_sha256: 80a1b335fcdbb60fa7e951798caede9ed56a0f47f8f12e95d93830717c85864f
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round74-clays-peer/independent-search.json
+  locator: Four actual bounded DOI notice/conflict queries, with two additional exact
+    Liu notice queries retained separately
+  accessed_at: '2026-10-14T14:56:58.969273Z'
+  support: context_only
+  summary: Inspected returned results and publisher/PMC metadata did not identify
+    an affecting formal notice; related primary studies were treated as leads, not
+    imported mechanism evidence.
+  snapshot_sha256: ddaf515d56bb8fb210475082ee2ac6ee01aab8c4f05070dfb1f5b72a4f24b8de
+  search_scope: Exact queries and outputs retained in independent-search.json and
+    independent-search-additional.json; no exhaustive search or all-notices absence
+    claim.
+- evidence_id: search_extra
+  kind: search
+  reference: /private/tmp/cmm-round74-clays-peer/independent-search-additional.json
+  locator: Additional exact Liu notice queries and live NCBI browser routes
+  accessed_at: '2026-10-14T14:56:58.969273Z'
+  support: context_only
+  summary: Original Nature/PMC/PubMed article metadata returned; no correction was
+    identified in these returned sets. Taxon300 browser text was sparse, so the acquired
+    authoritative XML is the identity evidence.
+  snapshot_sha256: 7ec2b058057dfcc0fc4a0be3d6bc470605f1c7fc5a73ed1f747280df26659a68
+  search_scope: Two exact Liu DOI/title correction/retraction queries and two NCBI
+    browser opens, first returned result sets only; no exhaustive notice search.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round74-clays-peer/dedup.json
+  locator: rg --no-ignore --hidden --follow across explicit current/main records/research/reviews/history
+    and current source raw root
+  accessed_at: '2026-10-14T14:56:58.969273Z'
+  support: context_only
+  summary: 533 matching lines include existing mixed resource records, prior leads
+    and new owners. Mineral species are distinguished from kaolin resources and other
+    clay species; no all-filesystem novelty assertion.
+  snapshot_sha256: fe2d67665fea20c8585a75ec9b5861276fd049086b48c9f3a1f5960bfae6f8f1
+  search_scope: Explicit roots, text globs, command, exit0 and empty stderr retained;
+    hidden/ignored files and relevant symlinks included.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round74-clays-peer/named-corrected-validation.json
+  locator: Actual reviewer command/timestamps, exit0 and independently checked log
+    hash
+  accessed_at: '2026-10-14T15:04:50.461922Z'
+  support: supports
+  summary: Two exact final owners passed reviewer structural validation after the
+    kaolinite correction.
+  snapshot_sha256: 7648a235ddd5a46510105be125768b78427b3922433e32c46302484dd351c257
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round74-final-gates-afterfix.json
+  locator: Terminal coordinator receipt independently read; trusted base, three command
+    outcomes and complete log hash verified
+  accessed_at: '2026-10-14T15:04:50.461922Z'
+  support: supports
+  summary: All required after-fix batch commands passed; log SHA256 102d1d9b06c39d69827fb8e04883dc96f7f3f15672632ae322aa08ce83ee07f5.
+  snapshot_sha256: d80a346ff868a42c3469d0f3170e823560e5aacb174c6655e1b1a4ae77ebebb1
+- evidence_id: edit
+  kind: record_content
+  reference: history/records/kaolinite/2026-10-14T145950Z-codex-c894e9.yaml
+  locator: Entire appended canonical EDIT and matching inline event
+  accessed_at: '2026-10-14T15:04:50.461922Z'
+  support: supports
+  summary: Actual correction event names the source label, preserves prior CREATE
+    and links issue 242.
+  snapshot_sha256: e461cc1e7ba0367f5b154cd703b3f00c0c4430efa4447412fd16320a2dad09bc
+- evidence_id: initial_review
+  kind: record_content
+  reference: reviews/structured/20261014T145845Z-kaolinite-round74-initial/review.yaml
+  locator: Exact preserved initial review, F1
+  accessed_at: '2026-10-14T15:04:50.461922Z'
+  support: supports
+  summary: The original open finding remains immutable and is resolved through an
+    explicit previous occurrence link.
+  snapshot_sha256: b958bd1013cbea50fb488c5ed1eb548788bba9c08307cca49a39627cecf16d80
+- evidence_id: comparison
+  kind: record_content
+  reference: /private/tmp/cmm-round74-clays-peer/independent-correction-comparison.json
+  locator: Independent parsed comparison of original and corrected owners
+  accessed_at: '2026-10-14T15:04:50.461922Z'
+  support: supports
+  summary: Only the DFAM label, appended inline EDIT and canonical EDIT reference
+    changed; no other scientific field changed.
+  snapshot_sha256: dcfb3f27d97d1e87466234582759a263e9d8d4716741fe2c7fc4ecbe0af850d1
+- evidence_id: corrected_inspect
+  kind: record_content
+  reference: /private/tmp/cmm-round74-clays-peer/inspect-corrected-owner.json
+  locator: Native inspect performed before correction assessment
+  accessed_at: '2026-10-14T15:04:50.461922Z'
+  support: supports
+  summary: Corrected owner, original CREATE, new EDIT and schema hashes captured before
+    judgment.
+  snapshot_sha256: 10a7e714a21452d9bd33638c07de289841d914708d50578b3c14ab8812945d7c
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Material identity, external identifiers and criticality
+  outcome: supported
+  summary: Current IMA and Handbook identity are correctly separated from experimental
+    specimen heterogeneity and resource identity. No criticality list, jurisdiction
+    or edition is asserted.
+  target_ids:
+  - cmmmech:kaolinite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  - taxon
+  dimensions:
+  - name: material_form
+    value: Mineral species; source-characterized natural reference specimens
+    definition: Ideal formula does not establish experimental purity.
+    evidence_ids:
+    - record
+    - ima
+    - handbook
+    - primary
+  - name: criticality
+    value: No designation asserted
+    definition: No inheritance from constituent element or related commodity.
+    evidence_ids:
+    - record
+- assessment_id: methods
+  area: evidence
+  topic: Organism, biomass, substrate, preparation, conditions and controls
+  outcome: supported
+  summary: A source-designated aerobic holding-pond P. mendocina isolate was grown
+    on CMS KGa-1b/KGa-2 under iron limitation. Weak pH3/NaCl cleaning, autoclaving
+    with medium, 30mL succinate-based assays, matched nominal clay surface area, triplicate22
+    C growth and separate28 C/50rpm siderophore experiments were checked. No-added-iron
+    is not iron-free. All reported numeric recipe details in the owner match the source.
+    The corrected evidence explanation now retains only the source-designated DFAM
+    standard. Original p165 was visually rechecked; no salt form or absolute calibration
+    has been inferred.
+  target_ids:
+  - cmmmech:kaolinite
+  evidence_ids:
+  - record
+  - primary
+  - limits
+  - taxon
+  - comparison
+  - edit
+  - initial_review
+  dimensions:
+  - name: organism_and_biomass
+    value: Living historical source isolate, species-level NCBITaxon300; no accession
+      or independent strain authentication.
+    definition: Biological identity scope is limited to the experimentally reported
+      culture.
+    evidence_ids:
+    - record
+    - primary
+    - limits
+    - taxon
+  - name: controls
+    value: No-added-iron/no-mineral culture and Fe-EDTA arms; iron-bearing mineral
+      impurities and pH divergence constrain attribution.
+    definition: Comparator scope constrains causal claims.
+    evidence_ids:
+    - record
+    - primary
+    - limits
+    - taxon
+  - name: deployment
+    value: Laboratory assays only
+    definition: No isolated product recovery or industrial deployment is established.
+    evidence_ids:
+    - record
+    - primary
+- assessment_id: outcomes
+  area: evidence
+  topic: Measured outcomes and mechanistic uncertainty
+  outcome: supported
+  summary: Growth above the mineral-free control supports access to specimen-associated
+    iron, not exclusive lattice dissolution. Siderophore per estimated cell and total
+    production differ, and pooled extracts quantified against DFAM are relative estimates.
+    No pH-matched dissolution series or uniquely causal siderophore perturbation is
+    supplied; earlier hematite/Maurice results are not adopted as matched current
+    controls.
+  target_ids:
+  - cmmmech:kaolinite
+  evidence_ids:
+  - record
+  - primary
+  - limits
+  - taxon
+- assessment_id: provenance
+  area: provenance
+  topic: Exact owner, history, evidence and required checks
+  outcome: supported
+  summary: The corrected owner was captured by native inspect before reassessment.
+    Original CREATE and initial finding are preserved; a new canonical EDIT and inline
+    event document the correction. Independent parsed comparison and fresh named/after-fix
+    batch gates cover the final bytes.
+  target_ids:
+  - cmmmech:kaolinite
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - search
+  - search_extra
+  - dedup
+  - edit
+  - initial_review
+  - comparison
+  - corrected_inspect
+findings:
+- finding_id: F1
+  issue_key: CMMMech.kaolinite.dfam-standard-expansion
+  category: evidence
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Retain the source-designated DFAM calibration standard without an unverified
+    salt expansion
+  description: Ams2002 Section2.5 p165 names its surrogate HPLC standard only as DFAM.
+    The acquired original does not expand the abbreviation or verify the mesylate
+    salt form. The initial owner evidence explanation expanded it to desferrioxamine
+    mesylate. Use the literal source-designated DFAM standard and retain the existing
+    relative-calibration limitation; do not infer a specific chemical form.
+  target_ids:
+  - cmmmech:kaolinite
+  field_paths:
+  - mechanisms[id=aerobic_kaolinite_associated_iron_acquisition].evidence[1].explanation
+  evidence_ids:
+  - record
+  - primary
+  - limits
+  - initial_review
+  - comparison
+  - edit
+  - named
+  - batch
+  rule_id: standard-identity-match-primary-methods
+  native_severity: minor
+  normalization_reason: Bounded unsupported calibration-standard expansion; mineral
+    identity and qualitative biological outcomes remain supported.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/kaolinite.yaml
+    role: maintained_record
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/242
+  disposition_reason: The curator replaced the unverified expansion with source-designated
+    DFAM, matching Ams2002 Section 2.5 p165. Independent original-page inspection
+    and parsed comparison confirm the correction is limited to that label plus appended
+    history. Original CREATE and initial review remain unchanged; fresh named validation
+    and terminal after-fix batch gates passed.
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261014T145845Z-kaolinite-round74-initial
+    finding_id: F1
+actions: []
+limitations:
+- Iron host among kaolinite lattice, accessory phases and surface-associated material
+  is unresolved; growth is indirect evidence rather than phase-specific iron release.
+- Historical isolate identification is weak and lacks an accession; current taxon
+  naming does not authenticate the isolate.
+- Siderophore supernatants were pooled and estimates use a surrogate standard; no
+  independent absolute concentration or causal necessity is established.
+- Culture pH diverges among arms and cited earlier dissolution controls were not independently
+  verified as part of this assay.
+- No supplement is identified within the acquired original; bounded searches do not
+  establish exhaustive absence of later studies or notices.
+notes:
+- This successor preserves the exact initial finding and source evidence; it does
+  not overwrite the earlier needs_curation verdict. Issue 242 is scientifically resolved
+  here, while GitHub disposition is handled by the publication coordinator.
+- The entire corrected record and new history were read. Original full primary/authority
+  assessment is retained; unchanged scientific fields were compared byte/structure-wise,
+  and the affected source method was visually re-read. No new or repeated broad literature
+  search is claimed.
+- Reviewer authored separate variscite/strengite owners but did not author or edit
+  kaolinite or its history. Initial finding was independently confirmed after curator
+  self-check.
+- Review start is the filesystem birth time of corrected native inspection; finish
+  is actual successor construction time after terminal gate verification.
+- Source inventory and original search boundaries remain those of the saved initial
+  review; independent comparison and after-fix checks are additional evidence.
+tags:
+- round74
+- kaolinite
+- independent
+- primary-figures
+- qualified-microbial

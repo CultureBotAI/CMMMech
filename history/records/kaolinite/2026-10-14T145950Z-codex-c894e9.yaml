@@ -1,0 +1,24 @@
+history_version: 1
+target:
+  kind: record
+  slug: kaolinite
+  path: data/records/kaolinite.yaml
+session:
+  id: 2026-10-14T145950Z-codex-c894e9
+  timestamp: '2026-10-14T14:59:50Z'
+  actors:
+  - name: codex
+    type: ai_agent
+    model: GPT-6
+    agent_tool: codex
+events:
+- type: EDIT
+  outcome: changed
+  summary: Retain source DFAM abbreviation without unsupported chemical expansion
+  details: After saved independent minor finding, replaced the expanded calibration-standard
+    identity with the exact source-designated DFAM label in Ams2002 section2.5. No assay result,
+    relative-concentration limitation, organism or material scope changed. Preserved initial
+    CREATE and appended actual EDIT history.
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/242

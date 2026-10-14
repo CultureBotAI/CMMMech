@@ -1,0 +1,85 @@
+id: cmmmech:strengite
+name: Strengite
+material_kind: mineral
+description: Strengite is the orthorhombic ferric phosphate dihydrate mineral Fe3+(PO4)(H2O)2, conventionally
+  FePO4·2H2O. The September 2026 IMA-CNMNC list records grandfathered status G and original-description
+  year 1877, which is not an approval identifier. It is distinct from its monoclinic dimorph phosphosiderite,
+  ferrous phosphate vivianite, amorphous iron phosphate and iron metal. The curated mechanism is an abiotic
+  foundation for phosphate-phase transformation; no microbial mechanism or constituent-derived criticality
+  is assigned.
+sources:
+- id: ima_2026_09
+  title: 'IMA-CNMNC. The New IMA List of Minerals, September 2026. Definitions pages 1–2 and Strengite
+    row PDF page 207: Fe3+(PO4)(H2O)2, G, 1877. Previously acquired official original re-inspected 14
+    October 2026.'
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: handbook_strengite
+  title: Handbook of Mineralogy, Strengite, version 1, 2001–2005. Formula, orthorhombic identity and dimorphism
+    with phosphosiderite.
+  url: https://www.handbookofmineralogy.org/pdfs/strengite.pdf
+  accessed_on: '2026-10-14'
+- id: roncal2009
+  title: Roncal-Herrero, T.; Rodríguez-Blanco, J. D.; Benning, L. G.; Oelkers, E. H. (2009). Precipitation
+    of Iron and Aluminum Phosphates Directly from Aqueous Solution as a Function of Temperature from 50
+    to 200 °C. Crystal Growth & Design 9(12):5197–5205. DOI 10.1021/cg900654m. Complete nine-page published
+    original from the coauthor site; Figures 1–10 and Tables 1–5 inspected.
+  url: https://doi.org/10.1021/cg900654m
+  accessed_on: '2026-10-14'
+- id: roncal2009_author_copy
+  title: Published original supplied on coauthor Juan Diego Rodríguez-Blanco’s phosphate-research page.
+    This is the same 2009 journal article embedded at PDF pages 38–46 of Teresa Roncal-Herrero’s 2009
+    Toulouse thesis, not a second experiment.
+  url: https://jrodriguezblanco.wordpress.com/wp-content/uploads/2015/07/2009-roncal-herrero-et-al-2009.pdf
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: abiotic_strengite_precursor_crystallization
+  name: Abiotic crystallization of strengite in a mixed phosphate assemblage
+  process: other
+  microbial: false
+  description: An amorphous ferric-phosphate precursor produced a mixed strengite/phosphosiderite assemblage
+    in the 100 degrees C experiment. XRD and microscopy characterize the nine-day solid. Internal disagreements
+    about crystallization timing prevent assignment of a precise onset or completion time; no isolated
+    pure-strengite recovery is established.
+  context: Abiotic batch experiments mixed 5 mL of 0.1 M Fe(NO3)3·9H2O solution with 5 mL of 0.1 M KH2PO4
+    plus 0.09 M KOH. For the 100 degrees C arm, solutions were preheated to 98 degrees C, mixed in preheated
+    Teflon-lined reactors, sealed immediately and placed in the oven; reactors were shaken three times
+    per day. The reported mixed-fluid pH of about 1.6 was measured at 25 degrees C, not in situ at 100
+    degrees C. Samples were quenched to 25 degrees C before analysis; solids were centrifuged, washed
+    three times with Milli-Q water and dried at room temperature. There was no inoculated arm, microbial
+    taxon or biological control. This was a laboratory precipitation experiment, not demonstrated industrial
+    phosphorus recovery.
+  evidence:
+  - source_ref: roncal2009
+    supports: support
+    explanation: Methods p.5198; Table 1, Figure 2, Section 3.2 and Figures 7–10 support the iron series.
+      Figure 7b XRD and Figure 8a SEM identify both strengite and phosphosiderite in the nine-day, 100
+      degrees C sample. The 12-hour solids at 50 or 100 degrees C were amorphous; higher-temperature 150/200
+      degrees C, 12-hour solids were ferric giniite rather than strengite.
+  - source_ref: roncal2009
+    supports: partial
+    explanation: Section 3 p.5199 says amorphous iron phosphate persisted for at least nine days, whereas
+      Section 3.2 p.5200 says transformation occurred within five days. Table 1 and Figures 2, 7–8 and
+      10 document a nine-day mixed crystalline product. The record preserves that endpoint without silently
+      choosing an exact crystallization time from the conflicting prose.
+  - source_ref: roncal2009
+    supports: partial
+    explanation: No refined strengite/phosphosiderite fractions, phase-specific product yield or replicate-based
+      recovery uncertainty are given. Section 3 and Tables 2–3 use measured aqueous concentrations to
+      calculate saturation indices, but the PHREEQC comparison lacked data for phosphosiderite and ferric
+      giniite. Predicted strengite stability does not prove that it was the only or actual phase in every
+      temperature arm. Solution depletion into amorphous precursor is not a strengite-specific recovery
+      yield.
+  - source_ref: roncal2009_author_copy
+    supports: context_only
+    explanation: The full author-hosted original supplies the inspected graphics and methods. The same
+      paper is reproduced in the thesis; neither reproduction nor the separate aluminum arm curated under
+      variscite is an independent replication of strengite formation.
+curation_history:
+- timestamp: '2026-10-14T14:47:29.470484+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created strengite identity and a qualified abiotic mixed-phase precipitation mechanism from
+    the complete 2009 original; preserved phase, timing, modeling and shared-experiment limitations.
+history_refs:
+- history/records/strengite/2026-10-14T144735Z-codex-695fd6.yaml
