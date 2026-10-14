@@ -1,0 +1,265 @@
+{
+  "recorded_at": "2026-10-14T08:36:17.755741+00:00",
+  "started_at": "2026-10-14T08:36:17.026998+00:00",
+  "finished_at": "2026-10-14T08:36:17.755741+00:00",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "reviewer": "Codex (GPT-6; codex), /root/round66_phosphates",
+  "authorship_disclosure": "Reviewer authored bobierrite/baricite records and phosphate dossier, and independently reviewed brucite/dolomite. Frontier report/manifest and PR body were authored by /root/round66_manganese; config by coordinator. This is an independent report/package text-and-hash audit, not a claim of independent scientific review of the reviewer's own phosphate curation. Six separate exact-record scientific review artifacts supply that coverage.",
+  "scientific_review": false,
+  "base": "d57f45621cbe465eb13dfb6cc26cc4197d98f90e",
+  "worktree": "/private/tmp/CMMMech-expansion-round66-20261014",
+  "inputs": [
+    {
+      "path": "/private/tmp/CMMMech-expansion-round66-20261014/research/ingests/round66-frontier-20261014.md",
+      "sha256": "ab38f50209fed66d85418416c53648f6b7d92987871012883987f8890de72937"
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round66-20261014/research/ingests/round66-frontier-20261014.json",
+      "sha256": "501c6f5461612a91f70551d72e35f513863c9034b86c22bce7e3a4b32939e342"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-pr-body.md",
+      "sha256": "597539c2eb50cfdc7d1ee747d1542707951517e45252f922c41f94aea4ff9235"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-helper-config.json",
+      "sha256": "b665e7f6e4a8d1701fc2890e7404bf9d0988981ba04cfd12994650f514bf2254"
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round66-20261014/.github/workflows/pr-shepherd.yml",
+      "sha256": "3230756053abfa76afb6f65c3615106617273246a00598758d1b37ded82d687b"
+    }
+  ],
+  "findings": [
+    {
+      "id": "round66-draft-title-scope",
+      "severity": "minor",
+      "status": "resolved",
+      "affected_path": "/private/tmp/cmm-round66-helper-config.json",
+      "field": "title",
+      "original": "Add six reviewed phosphate, carbonate and manganese mineral records",
+      "correction": "Add six reviewed phosphate, magnesium and manganese mineral records",
+      "reason": "Brucite is a hydroxide rather than a carbonate. The corrected magnesium grouping covers it without implying a mineral-class equivalence.",
+      "acceptance": "Current exact config title checked; no scientific record bytes changed; no new regression test warranted for draft wording. Root accepted correction before publication; no issue required."
+    }
+  ],
+  "checks": [
+    {
+      "name": "reviewed base",
+      "passed": true,
+      "detail": "Report and current worktree HEAD identify the trusted reviewed main base; this remains a working-tree audit."
+    },
+    {
+      "name": "all pinned maintained artifacts",
+      "passed": true,
+      "detail": "Independently rehashed all 59 manifest artifacts, including six records, histories, exact-state review pairs, source dossiers, receipts, README and pages."
+    },
+    {
+      "name": "corrected title",
+      "passed": true,
+      "detail": "Former carbonate grouping omitted hydroxide brucite; root corrected the draft title. Scientific records and tests unchanged."
+    },
+    {
+      "name": "counts",
+      "passed": true,
+      "detail": "Manifest, helper config and completed coverage receipt agree on305records/355histories/366reviews/67bases/305covered."
+    },
+    {
+      "name": "record membership",
+      "passed": true,
+      "detail": "Exactly the six authorized new species owners, with no invented phase owner or new criticality designation."
+    },
+    {
+      "name": "review coverage bobierrite",
+      "passed": true,
+      "detail": "Exact target bytes, independent completed scientific verdict, trusted source base, maintained target identity and canonical history references match."
+    },
+    {
+      "name": "review coverage baricite",
+      "passed": true,
+      "detail": "Exact target bytes, independent completed scientific verdict, trusted source base, maintained target identity and canonical history references match."
+    },
+    {
+      "name": "review coverage brucite",
+      "passed": true,
+      "detail": "Exact target bytes, independent completed scientific verdict, trusted source base, maintained target identity and canonical history references match."
+    },
+    {
+      "name": "review coverage dolomite",
+      "passed": true,
+      "detail": "Exact target bytes, independent completed scientific verdict, trusted source base, maintained target identity and canonical history references match."
+    },
+    {
+      "name": "review coverage cryptomelane",
+      "passed": true,
+      "detail": "Exact target bytes, independent completed scientific verdict, trusted source base, maintained target identity and canonical history references match."
+    },
+    {
+      "name": "review coverage romanechite",
+      "passed": true,
+      "detail": "Exact target bytes, independent completed scientific verdict, trusted source base, maintained target identity and canonical history references match."
+    },
+    {
+      "name": "receipt baseline",
+      "passed": true,
+      "detail": "Retained original receipt hash matches manifest."
+    },
+    {
+      "name": "log baseline",
+      "passed": true,
+      "detail": "Referenced full command log hash independently recomputed."
+    },
+    {
+      "name": "exit statuses baseline",
+      "passed": true,
+      "detail": "Every completed command reports exit0; no running process or planned gate counted as successful."
+    },
+    {
+      "name": "receipt final-gates",
+      "passed": true,
+      "detail": "Retained original receipt hash matches manifest."
+    },
+    {
+      "name": "log final-gates",
+      "passed": true,
+      "detail": "Referenced full command log hash independently recomputed."
+    },
+    {
+      "name": "exit statuses final-gates",
+      "passed": true,
+      "detail": "Every completed command reports exit0; no running process or planned gate counted as successful."
+    },
+    {
+      "name": "receipt review-check",
+      "passed": true,
+      "detail": "Retained original receipt hash matches manifest."
+    },
+    {
+      "name": "log review-check",
+      "passed": true,
+      "detail": "Referenced full command log hash independently recomputed."
+    },
+    {
+      "name": "exit statuses review-check",
+      "passed": true,
+      "detail": "Every completed command reports exit0; no running process or planned gate counted as successful."
+    },
+    {
+      "name": "receipt local-coverage",
+      "passed": true,
+      "detail": "Retained original receipt hash matches manifest."
+    },
+    {
+      "name": "receipt preservation-prepublication",
+      "passed": true,
+      "detail": "Retained original receipt hash matches manifest."
+    },
+    {
+      "name": "receipt integration-status",
+      "passed": true,
+      "detail": "Retained original receipt hash matches manifest."
+    },
+    {
+      "name": "receipt daye-source-issue",
+      "passed": true,
+      "detail": "Retained original receipt hash matches manifest."
+    },
+    {
+      "name": "source issue scope",
+      "passed": true,
+      "detail": "#205 closure is prospective fixing-PR scope, while #194/#198/#207 remain open. Source access/interpretation gaps are not fabricated record defects."
+    },
+    {
+      "name": "new issue exact body",
+      "passed": true,
+      "detail": "Fresh issue receipt identifies open #207 with exact prepared body."
+    },
+    {
+      "name": "initial issue inventory",
+      "passed": true,
+      "detail": "Initial inventory counts match report and manifest, explicitly before new #207."
+    },
+    {
+      "name": "supported integration state",
+      "passed": true,
+      "detail": "Read coordinator current read-only authority receipt and governed-sync log; no stale pending-admission claim remains."
+    },
+    {
+      "name": "governed log",
+      "passed": true,
+      "detail": "All22 governed artifacts match pinned CLAW revision in retained result."
+    },
+    {
+      "name": "shepherd scope",
+      "passed": true,
+      "detail": "Independently inspected workflow trigger, permissions and restricted tool allowlist; dispatch-only/comment-only status agrees with report. No governed file changed."
+    },
+    {
+      "name": "narrow implementation scope",
+      "passed": true,
+      "detail": "Git working changes are curation/history/reviews/research/README/pages; no schema, validator, project-test, dependency or governed workflow edits."
+    },
+    {
+      "name": "publication state honesty",
+      "passed": true,
+      "detail": "Local scientific/check completion is distinguished from future commit/hosted-check/queue/merge/delete verification."
+    },
+    {
+      "name": "scientific summary scope",
+      "passed": true,
+      "detail": "Read complete report and PR body and compared species summaries to final records/dossiers: mineral/element distinctions, qualified phase assignments, source contradictions, no inherited criticality, no unsupported recovery or deployment claims."
+    }
+  ],
+  "review_coverage": [
+    {
+      "record": "data/records/bobierrite.yaml",
+      "review": "reviews/structured/20261014T083149Z-bobierrite-round66-independent/review.yaml",
+      "reviewer": "codex /root/round66_magnesium",
+      "verdict": "pass_with_limitations",
+      "record_sha256": "593352892fe231fe888b0282b2068cd673a545be0a63ca02bd80f5a9ea84e53d"
+    },
+    {
+      "record": "data/records/baricite.yaml",
+      "review": "reviews/structured/20261014T083153Z-baricite-round66-independent/review.yaml",
+      "reviewer": "codex /root/round66_magnesium",
+      "verdict": "pass_with_limitations",
+      "record_sha256": "8d0b77267485c73ab254b440c3f32c4322bd1d8dd46c48d212c316ef2eebe7ed"
+    },
+    {
+      "record": "data/records/brucite.yaml",
+      "review": "reviews/structured/20261014T083043Z-brucite-round66-independent/review.yaml",
+      "reviewer": "codex /root/round66_phosphates",
+      "verdict": "pass_with_limitations",
+      "record_sha256": "11095b47730de3b30212460c07c363b28df0000b4400252957a397b9d8cc5bc0"
+    },
+    {
+      "record": "data/records/dolomite.yaml",
+      "review": "reviews/structured/20261014T083048Z-dolomite-round66-independent/review.yaml",
+      "reviewer": "codex /root/round66_phosphates",
+      "verdict": "pass_with_limitations",
+      "record_sha256": "b3e67d9b6f08bd30e658cb05a566818a21b9f81530dc3ec9672db2ea91b8a29c"
+    },
+    {
+      "record": "data/records/cryptomelane.yaml",
+      "review": "reviews/structured/20261014T083041Z-cryptomelane-round66-independent/review.yaml",
+      "reviewer": "codex /root",
+      "verdict": "pass_with_limitations",
+      "record_sha256": "8f3ceff3c9ac3b8f9d08cb0168e1d57d9a92ed03e13957b50c803e91296a6131"
+    },
+    {
+      "record": "data/records/romanechite.yaml",
+      "review": "reviews/structured/20261014T083046Z-romanechite-round66-independent/review.yaml",
+      "reviewer": "codex /root",
+      "verdict": "pass_with_limitations",
+      "record_sha256": "d3f4c0ab0c19ac3b8881248c867cdca60268e176aa1ae7a04770777270ac2ac8"
+    }
+  ],
+  "limitations": [
+    "No new independent literature reassessment of reviewer-authored phosphate records is claimed by this package audit. Their independent reviews were authored by another agent.",
+    "Raw source figures, missing illustrated Daye main and unresolved scientific/control/phase questions retain their per-record dispositions.",
+    "Hosted checks, isolated squash-shaped preflight, queue admission, actual merge/tree verification, branch deletion and fresh remote-main checks remain subsequent coordinator publication gates.",
+    "Integration and issue state checked against the coordinator's captured current authority receipts; this audit did not perform new external mutations or a second live GitHub query."
+  ],
+  "summary": "Exact local package is internally consistent and honestly bounded; one minor draft title wording finding was corrected before publication. No unresolved package defect found."
+}

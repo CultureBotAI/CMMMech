@@ -1,0 +1,106 @@
+id: cmmmech:baricite
+name: Barićite
+material_kind: mineral
+description: Barićite is a hydrated magnesium phosphate mineral species. The September 2026 IMA list gives
+  the approved formula Mg3(PO4)2(H2O)8 and approval number 1975-027. It remains distinct from bobierrite,
+  elemental magnesium or phosphorus, and mixed recovered precipitates. The historical experimental source
+  uses baricite and a mixed (Mg,Fe) formula; its phase assignment is retained as reported, not a measurement
+  proving the current ideal composition. No criticality designation is inherited from constituents.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Pages 1-2 definitions and terms; barićite
+    page 20, bobierrite page 27. Retained official original re-inspected on 14 October 2026.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: han_2016
+  title: Han et al. (2016). Mineral formation during bacterial sulfate reduction in the presence of different
+    electron donors and carbon sources. Chemical Geology 435:49-59. DOI 10.1016/j.chemgeo.2016.04.022.
+    Complete ScholarWorks author manuscript, Sections 2-4, Tables 1-3, Figures 1-3; six publisher supplements
+    (SI Tables 1-3 and Figures 1-3).
+  url: https://doi.org/10.1016/j.chemgeo.2016.04.022
+  accessed_on: '2026-10-14'
+- id: ncbi_g20
+  title: NCBI Taxonomy 207559, Oleidesulfovibrio alaskensis G20. Live taxonomy XML verifies strain rank,
+    parent species 58180 and equivalent name Desulfovibrio alaskensis G20 on 14 October 2026.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=207559&mode=Info
+  accessed_on: '2026-10-14'
+- id: rivadeneyra_2014
+  title: Rivadeneyra et al. (2014). Precipitation of Phosphate Minerals by Microorganisms Isolated from
+    a Fixed-Biofilm Reactor Used for the Treatment of Domestic Wastewater. International Journal of Environmental
+    Research and Public Health 11:3689-3704. DOI 10.3390/ijerph110403689; Sections 2.3-2.8, Tables 2-3
+    and Figures 4-5. Complete publisher PDF and PMC4025044 XML inspected.
+  url: https://doi.org/10.3390/ijerph110403689
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: g20_baricite_assignment
+  name: Barićite-assigned mixed precipitates in hydrogen-fed sulfate-reducing cultures
+  process: biomineralization
+  description: Hydrogen-fed G20 cultures in acetate-containing, nutrient-enriched marine pore-water medium
+    formed recovered solids assigned by XRD to barićite, a magnesium-phosphate decahydrate, calcite and
+    elemental sulfur. Sterile counterparts contained mainly amorphous material and calcite. The evidence
+    supports culture-associated phase selection in this laboratory system, without demonstrating enhanced
+    net magnesium removal or a unique molecular nucleation mechanism.
+  context: The living strain is called Desulfovibrio alaskensis G20 in Han et al.; NCBI now resolves it
+    as Oleidesulfovibrio alaskensis G20. Each 120-mL serum bottle contained 100 mL synthetic medium and
+    an iron finishing nail, with a one-hour sterile hydrogen purge and butyl-rubber closure. Two drops
+    of fresh G20 culture were added per inoculated bottle; drop volume and cell density were not specified.
+    Duplicate inoculated and duplicate uninoculated bottles were incubated anaerobically at 25 degrees
+    C for 10 months. Main Table 1 gives acetate 47 mM, sulfate 22.3 mM, magnesium 50.7 mM, calcium 8.22
+    mM, ammonium 10.58 mM and phosphate 0.89 mM, with 7.2 mM NaHCO3 and 1 mL/L Wolf vitamin solution.
+    Magnesium was supplied as MgCl2.6H2O and phosphate as Na2HPO4. Initial pH was adjusted to give 7.5
+    after autoclaving; endpoint pH was 8.3 in both acetate cultures versus 7.7 and 7.9 in sterile counterparts.
+    Vitamins were filter-sterilized and added after cooling. Solids were filtered, dried overnight at
+    30 degrees C in nitrogen and analyzed within a week.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:207559
+    label: Oleidesulfovibrio alaskensis G20
+  evidence:
+  - source_ref: han_2016
+    supports: support
+    explanation: Author-manuscript PDF pages 3-5 and 7, Sections 2.1-2.3 and 3.2, Table 2 and Figure 1c-d
+      document the medium, duplicate cultures, sterile controls and XRD assignments. Rietveld fits assign
+      barićite 30.6 and 27.8 wt% of the reported mineral assemblages in samples 1_103 and 2_35, respectively,
+      with other phases and reported zero amorphous contribution in these fits. These are fitted phase
+      proportions, with rounding and no confidence intervals, not magnesium/phosphorus recovery percentages
+      or a pure-product yield.
+  - source_ref: han_2016
+    supports: partial
+    explanation: All media already contained trace white solids before incubation. Black material formed
+      on iron nails only in inoculated bottles, consistent with sulfide formation, but sulfate and sulfide
+      concentrations were not measured. Growth, dissolved inorganic carbon and phosphate depletion also
+      were not measured. Matched-pH or cell-free metabolite controls were not presented. The iron nail
+      is a reactive experimental component; its contribution to dissolved iron and phase composition was
+      not independently resolved. SEM observations for acetate-derived phosphate crystals are stated as
+      data not shown and not further characterized, so no independent crystal-specific Mg/Fe analysis
+      is inferred.
+  - source_ref: han_2016
+    supports: partial
+    explanation: Main Table 2 and SI Figure 1 show similar magnesium depletion in inoculated and sterile
+      acetate media, so this experiment does not establish a microbial advantage in net magnesium removal.
+      Total alkalinity was measured for only one endpoint bottle per acetate condition. No isolated phase-specific
+      mass balance, purification yield, fertilizer performance, natural cold-seep production or industrial
+      deployment is established.
+  - source_ref: han_2016
+    supports: partial
+    explanation: SI Table 1 uses phosphate 0.089 mM whereas main Table 1 gives 0.89 mM; it also differs
+      in iron and formate-medium sodium inputs. The SI model therefore cannot be treated as an exact independent
+      reproduction of the stated recipe. Figure 1 calls the co-occurring decahydrate Mg2(PO4)3.10H2O whereas
+      Table 2 and Results use Mg3(PO4)2.10H2O. These internal inconsistencies are retained without silently
+      correcting the source or naming the decahydrate as a separate verified mineral. Model saturation
+      predictions are not measured phase occurrence or proof of biochemical causation.
+  - source_ref: rivadeneyra_2014
+    supports: context_only
+    explanation: An earlier, different wastewater-isolate agar study assigns baricite and bobierrite to
+      recovered spherulites, but Figure 5 instead labels the companion phosphate as Mg3(PO4)2.2H2O. Boiling-water
+      extraction and lack of a strain-to-phase map further limit that observation. It is not an independent
+      replication of the G20 hydrogen/acetate system and does not resolve the present phase-composition
+      uncertainty.
+curation_history:
+- timestamp: '2026-10-14T08:16:55.696577+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created distinct phosphate mineral identity and qualified primary culture-phase assignments;
+    retained processing, control, taxonomic and source consistency limits.
+history_refs:
+- history/records/baricite/2026-10-14T081704Z-codex-5fa318.yaml
