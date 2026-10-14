@@ -1,0 +1,84 @@
+{
+  "recorded_at": "2026-10-14T07:34:29.468598+00:00",
+  "passed": true,
+  "helper": "/private/tmp/cmm-round65-enqueue.py",
+  "helper_sha256": "cdfa83fdbab5db6e5772ae63b5b206a28c7141287b0ed5fb349de7eebe4c3221",
+  "scope": "Extracted only pure guard function ASTs; no imports or module-level mutations from enqueue helper executed. Synthetic fixtures test rejection paths; not a real hosted/preflight success.",
+  "cases": [
+    {
+      "name": "valid exact preflight accepted",
+      "passed": true,
+      "expected_rejection": false
+    },
+    {
+      "name": "reject wrong exit_code",
+      "passed": true,
+      "expected_rejection": true
+    },
+    {
+      "name": "reject wrong mode",
+      "passed": true,
+      "expected_rejection": true
+    },
+    {
+      "name": "reject wrong trusted_base",
+      "passed": true,
+      "expected_rejection": true
+    },
+    {
+      "name": "reject wrong topic_head",
+      "passed": true,
+      "expected_rejection": true
+    },
+    {
+      "name": "reject wrong expected_tree",
+      "passed": true,
+      "expected_rejection": true
+    },
+    {
+      "name": "reject wrong log_sha256",
+      "passed": true,
+      "expected_rejection": true
+    },
+    {
+      "name": "reject wrong commands",
+      "passed": true,
+      "expected_rejection": true
+    },
+    {
+      "name": "reject missing gate 0",
+      "passed": true,
+      "expected_rejection": true
+    },
+    {
+      "name": "reject missing gate 1",
+      "passed": true,
+      "expected_rejection": true
+    },
+    {
+      "name": "reject missing gate 2",
+      "passed": true,
+      "expected_rejection": true
+    },
+    {
+      "name": "reject failed gate",
+      "passed": true,
+      "expected_rejection": true
+    },
+    {
+      "name": "matching live main accepted",
+      "passed": true,
+      "expected_rejection": false
+    },
+    {
+      "name": "moved live main rejected",
+      "passed": true,
+      "expected_rejection": true
+    },
+    {
+      "name": "wrong live ref rejected",
+      "passed": true,
+      "expected_rejection": true
+    }
+  ]
+}

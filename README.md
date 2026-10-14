@@ -8,10 +8,16 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 293 material records.
+The catalogue currently contains 299 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Hydromagnesite](data/records/hydromagnesite.yaml) | Mixed carbonate precipitation in separate bacterial cultures | Phase-table and strain-assignment conflicts prevent pure-phase or strain-specific yield claims |
+| [Huntite](data/records/huntite.yaml) | Source-assigned component in two culture-medium arms | Mixed products and unresolved phase assignments constrain attribution |
+| [Nesquehonite](data/records/nesquehonite.yaml) | LE1 culture-associated magnesium carbonate precipitation | Missing control outcomes, phase arithmetic and an abiotic counterexample limit causal claims |
+| [Greenockite](data/records/greenockite.yaml) | Hexagonal CdS component assigned in X513 culture products | Mixed phases, analytical limits and dosing conditions remain explicit |
+| [Hawleyite](data/records/hawleyite.yaml) | Cubic CdS particles assigned in the same X513 study | Source phase-index and sulfide-accounting limitations prevent a pure recovered-product claim |
+| [Ramsdellite](data/records/ramsdellite.yaml) | Abiotic cobalt sorption by chemically synthesized powder | Explicitly nonmicrobial; feed and capacity discrepancies remain unresolved |
 | [Manganite](data/records/manganite.yaml) | MR-4-associated reductive dissolution of synthetic manganite | Acidic controls lack a microbial increment; source temperature and assay conflicts remain explicit |
 | [Bixbyite-(Mn)](data/records/bixbyite-mn.yaml) | T-G1 culture-associated formation of a bixbyite-like phase | Tentative phase assignment; neutral-pH oxidation occurs without observed mineral particles |
 | [Akaganeite](data/records/akaganeite.yaml) | PCA wild-type and mutant reduction of XRD-assigned synthetic feed | pH and autoclaving alter phenotypes; mineral potential is inferred rather than measured |
