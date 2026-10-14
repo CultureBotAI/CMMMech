@@ -1,0 +1,390 @@
+{
+  "schema": "cmmmech-source-investigation-handoff-v1",
+  "timestamp": "2026-10-14T06:30:52.235157+00:00",
+  "researcher": {
+    "actor": "codex",
+    "model": "GPT-6",
+    "tool": "codex",
+    "agent": "/root/round64_manganese"
+  },
+  "revision": "0f4d8ff9e4919714e3dd902dc3573e95922a65fb",
+  "worktree": "/private/tmp/CMMMech-expansion-round64-20261014",
+  "branch": "curate/cmm-expansion-round64-20261014",
+  "record": {
+    "path": "data/records/bixbyite-mn.yaml",
+    "sha256": "780ff493d1c916565044bdb1bfc92fda61d70e669e40cb530d6ae4fab03567f6",
+    "history": "history/records/bixbyite-mn/2026-10-14T062933Z-codex-7c115e.yaml"
+  },
+  "decision": "curated with explicit phase, assay, control and scale limitations; independent scientific review pending",
+  "search": {
+    "provider": "web.run search_query",
+    "date_utc": "2026-10-14",
+    "queries": [
+      "\"bixbyite\" microbial reduction",
+      "\"bixbyite\" \"microbial\" \"Mn2O3\" Fredrickson 2002 DOI",
+      "\"Bixbyite-(Mn)\" IMA 2026",
+      "\"Characterization of pH dependent\" \"2015\" \"00734\"",
+      "\"10.3389/fmicb.2015.00734\" correction retraction",
+      "\"Mesorhizobium australicum\" NCBI taxonomy T-G1",
+      "\"bixbyite-like\" \"T-G1\" \"control\"",
+      "\"10.3389/fmicb.2015.00734\" erratum",
+      "\"Characterization of pH dependent Mn(II)\" correction",
+      "\"Bohu\" \"bixbyite\" \"retraction\""
+    ],
+    "filters": "none",
+    "coverage": "first returned result sets, no pagination; bounded primary-source and counterevidence search, not exhaustive"
+  },
+  "dedup": {
+    "repository": "rg --no-ignore --hidden over data/research/reviews/history/.claude/docs; material names, study DOIs and accession searched",
+    "referenced_raw_roots": [
+      "/private/tmp/cmm-round38-hausmannite-research",
+      "/private/tmp/cmm-round40-cobalt-manganese-oxide-research",
+      "/private/tmp/cmm-round41-biogenic-birnessite-research",
+      "/private/tmp/cmm-round42-biogenic-selectivity-research"
+    ],
+    "limits": "Retained searchable text/JSON/HTML scanned; no machine-wide or unextracted-PDF absence claim. Selected new originals separately extracted, full relevant methods/results/SI read and all original figures inspected. No existing bixbyite species owner or this T-G1 study was found within maintained record/research/review boundaries before addition."
+  },
+  "primary": {
+    "doi": "10.3389/fmicb.2015.00734",
+    "pmcid": "PMC4505141",
+    "year": 2015,
+    "original": "15-page Frontiers publisher PDF, Europe PMC complete XML, original Figures1–7, complete Data_Sheet_1.DOCX acquired via supplementaryFiles ZIP",
+    "license": "CC BY stated in original PDF final page",
+    "supplement": "Only TableS1 field soil/porewater chemistry; porewater reused from Burkhardt2009; no new laboratory yield dataset",
+    "phase": "Tentative bixbyite-like Mn oxide, Mn-rich EDS/Raman/XRD; no quantified purity or exact matched mineral harvest mapping",
+    "scale": "laboratory, no isolated recovery or industrial deployment"
+  },
+  "authorities": [
+    {
+      "name": "IMA2026-09",
+      "locator": "p27 bixbyite-(Mn)/(Fe); pp1–2 dictionary/terms",
+      "interpretation": "Mn2O3, redefined2021 special procedure; no sequential approvalCURIE invented"
+    },
+    {
+      "name": "CNMNC Newsletter64",
+      "doi": "10.5194/ejm-34-1-2022",
+      "locator": "p6 section3.2 IMA21-H",
+      "interpretation": "bixbyite is series, Mn3+-dominant member distinct from Fe3+-dominant; no specific culture polytype assigned"
+    },
+    {
+      "id": "NCBITaxon:536018",
+      "label": "Mesorhizobium australicum",
+      "scope": "species name, not type strain or a genome-authenticated isolate"
+    },
+    {
+      "id": "HG932494.1",
+      "scope": "1354bp partial16S, strainT-G1, taxon536018 and thispaper; authors99%similarity toWSM2073 not whole-genome species proof"
+    }
+  ],
+  "limits": [
+    "Exact F3 Mn loading/harvest age and vessel gas exchange unresolved",
+    "Solid phase at pH5.5 versus positive dissolved oxidation but no particles atpH7.2",
+    "Long-term sterile XRD/Raman series not provided; F4 control doesnot establish purephase microbialnecessity",
+    "Air-dried XRD and fixed/pH7.4PBS-washed/dehydrated SEM differ from direct Raman/hydrated CLSM",
+    "LBB KMnO4calibration measures oxidizing equivalents, not bixbyite yield",
+    "ProteinaseK and other oxidation/protein assays not a purifiedenzyme or genetic test of mineral formation",
+    "Source100uM/pH7.2 methods versus500uM/pH6.8 discussion; ABTS0.5mM versus printed mixture implying1.5mM; quantitative rates not adopted",
+    "Field soil/porewater context not native bixbyite occurrence or deployment"
+  ],
+  "other_candidates": [
+    {
+      "doi": "10.1016/S0016-7037(02)00928-6",
+      "state": "complete16page original acquired via repository; phase/initialmethod sections screened, not allfigures/counterevidence independently verified",
+      "next_action": "study-specific curation of CN32/uranium redox competition and impure synthetic bixbyite only after complete figures/controls review; not imported here"
+    },
+    {
+      "doi": "10.1021/acs.est.2c00342",
+      "state": "publisher abstract/snippet and SI description available; publisher full page403; complete primary+SI not acquired",
+      "next_action": "obtain original and SI to assess CN32 cell-free ligands and bixbyite-like formation; do not infer equivalence toT-G1"
+    }
+  ],
+  "corrections": "No identifiable correction/retraction in exact-title/DOI returned sets; Crossref relation empty/no update-to. Not proof of absence. Internal phase and recipe limitations preserved.",
+  "raw_files": [
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bixbyite2015.pdf",
+      "bytes": 6163588,
+      "sha256": "32713978a598266cc8d0e272b0b01e3b84fcc277be3f33d8876805a61f9f0456"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bixbyite2015.xml",
+      "bytes": 163474,
+      "sha256": "2a0240c4f748c50c2e5ff1982ad572f0443b02fe5f3895c7d5f37996520e71f8"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bixbyite2015.txt",
+      "bytes": 76096,
+      "sha256": "bceed565341fdeaf755f31f84a178529069f40cd9d3c592a4130802e6c0c38dd"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bixbyite2015.html",
+      "bytes": 1100051,
+      "sha256": "0fe12d82f263b054a8a7ba4db36cdd889f29db8d5a3bce6887faa9c9becd4fae"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bixbyite2015-supp.docx",
+      "bytes": 21367,
+      "sha256": "45e365bd1672cba6974bd1acea52929f272fcfb198d9de633ed886d51021f395"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bixbyite2015-supp-retry.zip",
+      "bytes": 1106071,
+      "sha256": "210c69568eb9b38c95b61ebd478193177c2c73f022dde3306f07ec6d6f9482e0"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bixbyite-nomenclature.pdf",
+      "bytes": 105306,
+      "sha256": "0f717e24a2e338ed49b895846427639d1c1a23ee7aba10e53a11153a70b5d727"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bixbyite-nomenclature.txt",
+      "bytes": 28380,
+      "sha256": "f98386bf3ff252ef7d65b27b32a535abd543a06d244405bd5bf03eb5b60876c5"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bixbyite-nomenclature-page-6.png",
+      "bytes": 108827,
+      "sha256": "c9c08aca2b519238cd4dd61bec88a8a8601e3d65c5d39d2cf616e3a963c2cd9a"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/ima-2026-09.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/ima-2026-09.txt",
+      "bytes": 2240061,
+      "sha256": "80163108f37e9597f047f9bd6bffae3da360654c5a4e13587d736b0267f3f4e7"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/ima-page-27.png",
+      "bytes": 254142,
+      "sha256": "318611038a36a91db6cc294453323d90bdec816d7ac9145acd04d5360be25fc6"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/ima-2026-09-page-1.png",
+      "bytes": 193322,
+      "sha256": "088330b1f4e5baeb0f3eee2f5ae27bd229f7951b5385e30af34a7cb08f6c75b9"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/ima-2026-09-page-2.png",
+      "bytes": 65018,
+      "sha256": "bfeee35039e085aaf94662787a1fdb48e29db2033f9d899ab182a3f17a44c379"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/ncbi-australicum.json",
+      "bytes": 1210,
+      "sha256": "0bd1ff9a2e26a3017e74e367be16aff051bc384bb442f0ce4c74807c689bf4a3"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/genbank-tg1.txt",
+      "bytes": 3415,
+      "sha256": "2b82cd5456d7075fb64400d8814aff88b85c240dee088a4d97c0231051ea290c"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/crossref-bohu2015.json",
+      "bytes": 28638,
+      "sha256": "ef3d3b27a26149c00dc6ccaa0b0a50572bc9ff9f60665c8178abab3df06fed63"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/acquisition-3.json",
+      "bytes": 1807,
+      "sha256": "ba97149b84afe5543ceff2bd1807fc015228c3af3aaed09c18554d2846e6da6e"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/acquisition-4.json",
+      "bytes": 2095,
+      "sha256": "6abe8ecf1b91f65f8ca2ab3dc9fb8ce898fac495bf9cf0163bcb9225abaaad22"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/acquisition-5.json",
+      "bytes": 1941,
+      "sha256": "e1e45388bb52e6653c368e1efd134accceeb5bb902b36c060dcd9954b0a31764"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/fredrickson2002-alt.pdf",
+      "bytes": 495128,
+      "sha256": "1067300a0280b39b7168e0cae70987c3b6e6016eb59110328f72c4232c11f83e"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/fredrickson2002-alt.txt",
+      "bytes": 72736,
+      "sha256": "847b19dce99bbadd7d03ab91a44b97337bc72826401e7086224ee36f2ffe879b"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/unl-fredrickson.html",
+      "bytes": 39506,
+      "sha256": "26f6ff5055f6e8d846ba1152ff59e16c3d1dc75744cfc1ae3adf0c69300dabdb"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/dedup-repo.txt",
+      "bytes": 9361,
+      "sha256": "35c351d4c34b31d9bbab6851fd4b5d807b05f3ba576b66679de0d73120e89922"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/dedup-referenced-raw.txt",
+      "bytes": 4390445,
+      "sha256": "25d1ae0058ea7633c8846741b3cb99598d7157e49ac91c1ee58869236c8ccba2"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-page-1.png",
+      "bytes": 224520,
+      "sha256": "9d3e6168bc2b1ffc3e59b0c84ca026a810a732e8cfbfa946fef224e491425cf4"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-page-2.png",
+      "bytes": 330936,
+      "sha256": "ae9b02fcc4752c10030286ccd2ab2fce72e20d1660cf82c24c7c1dc8c86e876b"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-page-3.png",
+      "bytes": 320913,
+      "sha256": "eb4bc238c649ad1b74b50a76e2767ead04baf21e29752cc73d5c0455fada3ce9"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-page-4.png",
+      "bytes": 303069,
+      "sha256": "06810a8ea0aead434becf92fcd3c2be006fe29660049d234ea8c9d469d4e3cd1"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-page-5.png",
+      "bytes": 302106,
+      "sha256": "008db9e06022c18a45454f530182114442718f75c7121e33207d9bad5fd419fe"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-page-6.png",
+      "bytes": 442633,
+      "sha256": "774134e585da101231ef1c48bb6ce3994fa546d305328236659da7bce967147f"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-page-7.png",
+      "bytes": 177108,
+      "sha256": "6473730f5c4ef319599dde0b7ea2155f4d72575ffd884504e918f42c9f159087"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-page-8.png",
+      "bytes": 289377,
+      "sha256": "ba20f3800ebbf03cc30b04cfe16e76d0c9bcdff447bbef1160f36d91d33fdfb9"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-page-9.png",
+      "bytes": 367843,
+      "sha256": "0af3d159f6b2f2fb96cef5b4c4bd0dcd38c4d1209069682c249c7c91b42e56d0"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-page-10.png",
+      "bytes": 223847,
+      "sha256": "8655d18776a66f4700266924243b9ce7915e81fb326f2d5d6820ec10cb904f00"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-page-11.png",
+      "bytes": 329316,
+      "sha256": "c13a60ec72a7d00bf7081caab3c7250bb5f4e4f460817c2c7f14cd5bc4d1bd01"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-page-12.png",
+      "bytes": 288908,
+      "sha256": "a707c6ffb5617e98b51a2cf1213a117a8e009cc309eafd82a5c59ea210dffe99"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-page-13.png",
+      "bytes": 278405,
+      "sha256": "5effbf9db5940a3d08e7915cbf90dcc15a43e5628800571eecc816bb53850d36"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-page-14.png",
+      "bytes": 290916,
+      "sha256": "66fc78e53996f71d7371e75efbe2fe4eefd6e80db68c653a729a29e8e16d5568"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-page-15.png",
+      "bytes": 55787,
+      "sha256": "a26a463120b5a36633d7217b0d27f43d278c4fe44faa50e4bd88424f0d36b613"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-supp/Data_Sheet_1.DOCX",
+      "bytes": 690555,
+      "sha256": "21cbcd22e33390e7384cb4eaeffedee62a571c3ebaf0cf48d18ff612b476c73d"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-supp/fmicb-06-00734-g001.gif",
+      "bytes": 19955,
+      "sha256": "93bf8b3cbe55a507dc8ccc98bafd9084645505e97e506cf4112c4fb8b117adb7"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-supp/fmicb-06-00734-g001.jpg",
+      "bytes": 89798,
+      "sha256": "ea1d0c7af08a7a3cc52d2f9e2fe6dc36cf918299de0f25a054c01f6b79beb3a0"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-supp/fmicb-06-00734-g002.gif",
+      "bytes": 16908,
+      "sha256": "99b62860fa17236903943025a07080defe0060cdb47273718e0a3c20248cf830"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-supp/fmicb-06-00734-g002.jpg",
+      "bytes": 106430,
+      "sha256": "422e92651ca52889f6278cabad0a6e8c7c6d8746421548c9f8daa6678360b91f"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-supp/fmicb-06-00734-g003.gif",
+      "bytes": 19444,
+      "sha256": "3c93bda54625bfca6d340be393a9ff32bc88424c47a476388083595cd3e4f324"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-supp/fmicb-06-00734-g003.jpg",
+      "bytes": 127893,
+      "sha256": "93181149a62258256d89628bb98c74034cb53306284fa461222c78e2a4aee32f"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-supp/fmicb-06-00734-g004.gif",
+      "bytes": 14031,
+      "sha256": "ae4fc911374b66dbb4c16e8044afa6b0b9f87601fa654bb8c80b9ddae074413e"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-supp/fmicb-06-00734-g004.jpg",
+      "bytes": 65079,
+      "sha256": "dfa5f3256c33f5d081b1c1ea860244c4f22205c6099e4b30e2e006ba11a1314b"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-supp/fmicb-06-00734-g005.gif",
+      "bytes": 14099,
+      "sha256": "7ab0d49772a5c4855321564266e2bfffae8f8ad31730f59ef461806e01723342"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-supp/fmicb-06-00734-g005.jpg",
+      "bytes": 59403,
+      "sha256": "adf5f2d5949d0f85fc59b242b012d89d322f1d6b345d80338218c96f9abaf744"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-supp/fmicb-06-00734-g006.gif",
+      "bytes": 21236,
+      "sha256": "423be62a6dc8c3be36078c067f3c68dbc8c6d20281192722a0b352ecb84088a2"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-supp/fmicb-06-00734-g006.jpg",
+      "bytes": 104769,
+      "sha256": "2f0574076d18bed63a42c4d0e9dfec032586401392ce99037fd017c5e32c38a1"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-supp/fmicb-06-00734-g007.gif",
+      "bytes": 17481,
+      "sha256": "9059cb67e7504e8642adf18980487627bd36076e140f3575a08f673d7e66804f"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-supp/fmicb-06-00734-g007.jpg",
+      "bytes": 136603,
+      "sha256": "c965a87a4e1804fc77a58000a2cfd5743ea7c31d04de7efc237c41d2f026d98d"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-supp/image1.jpeg",
+      "bytes": 643561,
+      "sha256": "fede2914aa93ec2cff871e9c8cdec1e6877657e50bb011bac05e20581a38118c"
+    },
+    {
+      "path": "/private/tmp/cmm-round64-manganese-research/bohu-supp/supplement.txt",
+      "bytes": 2924,
+      "sha256": "c330b73b25a67d4c515185d76acdcb7aff5cf651ad605f028bed64760bfa039c"
+    }
+  ],
+  "validation": "Single-record validation completed: one checked, zero failed, exit0."
+}

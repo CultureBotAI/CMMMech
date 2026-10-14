@@ -1,0 +1,129 @@
+id: cmmmech:lepidocrocite
+name: Lepidocrocite
+material_kind: mineral
+description: Lepidocrocite is the Fe(III)O(OH) mineral species listed as approved (A), with 1980
+  special-procedure history, in the September 2026 IMA master list. The 1980 s.p. entry is not
+  an approval-number CURIE. This species is distinct from goethite, akaganeite, iron element,
+  iron-ore commodities, and the chemically prepared or commercial laboratory feeds discussed below.
+  No iron criticality designation is inherited.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF pages 1-2 status/number
+    definitions and distribution terms; page 5 Akaganeite, page 124 Lepidocrocite. Fresh official
+    PDF inspected.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: oloughlin_2019
+  title: 'O''Loughlin EJ, Gorski CA, Flynn TM and Scherer MM (2019). Electron Donor Utilization
+    and Secondary Mineral Formation during the Bioreduction of Lepidocrocite by Shewanella putrefaciens
+    CN32. Minerals 9:434. DOI 10.3390/min9070434. Original complete publisher PDF and OSTI 1560537
+    copy: Sections 2.1-2.3 and 3.1-3.3, Tables 1-3, Figures 1-6, Discussion. The 29-page OSTI
+    copy preserves the full-width Table 1 cropped in the 30-page publisher copy.'
+  url: https://doi.org/10.3390/min9070434
+  accessed_on: '2026-10-14'
+- id: ncbi_cn32
+  title: NCBI Taxonomy 319224, Shewanella putrefaciens CN-32; live taxonomy XML reports strain
+    rank. Grounds the strain name reported by the paper, not independent authentication of its
+    experimental stock.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=319224
+  accessed_on: '2026-10-14'
+- id: atcc_cn32
+  title: ATCC BAA-453, Shewanella putrefaciens, strain designation CN-32 [OCM 576, SMCC 576W].
+    The accession differs from BAA-543 printed in the experimental paper.
+  url: https://www.atcc.org/products/baa-453
+  accessed_on: '2026-10-14'
+- id: atcc_es5
+  title: ATCC BAA-543, Cellulomonas sp., strain designation ES5. Verifies that the BAA-543 accession
+    printed beside CN32 in the experimental paper does not resolve to the named strain.
+  url: https://www.atcc.org/products/baa-543
+  accessed_on: '2026-10-14'
+- id: sklute_2023
+  title: Sklute et al. (2023). Fe(III) (oxyhydr)oxide reduction by the thermophilic iron-reducing
+    bacterium Desulfovulcanus ferrireducens. Frontiers in Microbiology 14:1272245. Methods, Cell
+    growth on akaganeite and lepidocrocite, Figures 5-8, Discussion; previously acquired original
+    XML and supplement reinspected for bounded comparative context.
+  url: https://doi.org/10.3389/fmicb.2023.1272245
+  accessed_on: '2026-10-14'
+mechanisms:
+- id: cn32_formate_lepidocrocite_transformation
+  name: Formate-fed culture-associated lepidocrocite transformation to green-rust phases
+  process: redox_transformation
+  microbial: true
+  organisms:
+  - id: NCBITaxon:319224
+    label: Shewanella putrefaciens CN-32
+  description: In the culture reported as Shewanella putrefaciens CN32, formate consumption accompanied
+    Fe(II) accumulation and loss of detectable starting lepidocrocite with carbonate-green-rust
+    formation. Chloride- and sulfate-amended cultures followed different phase trajectories. The
+    evidence supports laboratory culture-associated reduction and secondary mineral formation;
+    it does not demonstrate a uniquely biological pathway, fully reduced iron, a pure isolated
+    recovery product, or industrial operation.
+  context: The primary feed was commercial lepidocrocite, Bayferrox 943, supplied at 80 mM Fe(III).
+    The focused formate experiments used triplicate 250 mL serum bottles containing 200 mL defined
+    mineral medium, 75 mM formate, 100 micromolar AQDS electron shuttle, and either 25 mM NaCl
+    or 25 mM Na2SO4. Medium was adjusted initially to pH 7.5 and autoclaved before filter-sterilized
+    donor/AQDS addition, sealed and argon-sparged. Late-log inoculum gave a reported 5 x 10^9
+    cells/mL; cultures were rolled in the dark at 30 degrees C for 62 days. The named CN32 strain
+    maps to NCBI 319224 and ATCC BAA-453, while the paper prints ATCC BAA-543, which the authority
+    identifies as Cellulomonas sp. ES5. This accession conflict is unresolved; the taxon records
+    the paper's repeated strain name, not a verified chain of custody. The paper delegates the
+    full basal-medium and inoculum recipes to earlier studies and cites an akaganeite paper for
+    lepidocrocite characterization; no exact inherited recipe, surface area or chemical purity
+    is assumed. Contemporaneous Figure 6 starting patterns and phase standards support the substrate
+    assignment. The separate donor survey includes both a no-donor culture and a sterile control.
+    Figure 1 plots the sterile-control total Fe(II) curve near baseline, but does not specify
+    its donor and salt identity. It therefore supplies a reported negative comparator without
+    establishing a chemistry-matched cell-free counterpart for each focused formate/AQDS chloride
+    and sulfate arm.
+  evidence:
+  - source_ref: oloughlin_2019
+    supports: support
+    explanation: Sections 2.1-2.2 and 3.3, Table 1, Figures 5-6 and Tables 2-3 link formate consumption,
+      acid-extractable Fe(II), rising pH and mineral changes. At day 62 the chloride and sulfate
+      formate arms report respectively 57.6 +/- 0.2 and 55.1 +/- 2.4 mM total Fe(II), versus 0.8
+      +/- 0.1 and 0.7 +/- 0.1 mM aqueous Fe(II). Total Fe(II) is the 0.75 M HCl, one-week extract
+      measured by ferrozine; aqueous Fe(II) is measured on 0.22 micrometre filtrate. These fractions
+      are not interchangeable. pXRD and Mossbauer analysis identify carbonate green rust and no
+      detected residual lepidocrocite at the endpoint; the sulfate arm also has earlier sulfate-green-rust
+      reflections. Nondetection does not quantify a zero residue or guarantee product purity.
+  - source_ref: oloughlin_2019
+    supports: partial
+    explanation: 'The statement that reduction was complete by day 55 means Fe(II) accumulation
+      had plateaued, not that all starting Fe(III) became Fe(II): green rust retains Fe(III).
+      The separate 72-day survey produced 3.6 mM Fe(II) without an exogenous donor and less than
+      7 mM with several ineffective donors, so absence of the preferred donor is not an absolute
+      zero. Figure 1 also includes a distinct near-baseline sterile-control curve; no numerical
+      sterile endpoint is adopted, and its unspecified donor/salt conditions prevent treating
+      it as the matched focused-formate control. The H2/Pd/AQDS/carbonate abiotic surrogate produced
+      more Fe(II) than the H2 biological treatments and also carbonate green rust; it is not a
+      chemistry-matched formate control. Product identity alone is therefore not a unique biosignature.
+      AQDS exposure and missing matched cell-free formate controls limit attribution to direct
+      cell-mineral transfer or a specific enzyme. Table 2 fitted spectral areas are not mass-based
+      mineral recovery yields. Modeled carbonate activities in Section 2.3 were not measured carbonate
+      concentrations.'
+  - source_ref: sklute_2023
+    supports: context_only
+    explanation: The separate Ax17 study used 55 degrees C, hydrogen and synthetic nanophase lepidocrocite,
+      not the CN32/formate commercial feed. It reports dark nonmagnetic material with amorphous
+      Fe-rich nanospheres but no significant oxalate-extractable Fe(II) increase over controls;
+      lepidocrocite Mossbauer spectra remained nearly unchanged, the main text states bulk XRD
+      was unavailable, and small amounts of green rust could only not be excluded. These analytical
+      and phase limits show that transformation products and recoverable Fe(II) cannot be generalized
+      across organisms, media, feeds or extraction methods; they do not directly refute the CN32
+      formate result. Supplementary Figure S16 inconsistently names lepidocrocite in its caption
+      while describing akaganeite/NaCl and being assigned to akaganeite in the main text; that
+      ambiguous panel is not treated as measured lepidocrocite XRD evidence.
+curation_history:
+- timestamp: '2026-10-14T06:25:01.132038+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created distinct mineral identity with primary laboratory transformation evidence,
+    authority-checked organism grounding, assay fractions, controls and unresolved source limitations.
+- timestamp: '2026-10-14T06:41:15.704793+00:00'
+  curator: codex (GPT-6; codex)
+  action: EDIT
+  summary: Address independent review F1 by retaining the Figure 1 sterile-control comparator
+    while preserving unspecified donor/salt identity and the focused formate-control limitation.
+history_refs:
+- history/records/lepidocrocite/2026-10-14T062537Z-codex-aae07d.yaml
+- history/records/lepidocrocite/2026-10-14T064034Z-codex-ebe35f.yaml
