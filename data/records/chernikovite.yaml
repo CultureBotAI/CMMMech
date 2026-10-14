@@ -1,0 +1,146 @@
+id: cmmmech:chernikovite
+name: Chernikovite
+material_kind: mineral
+description: >-
+  Chernikovite is a hydrated hydronium uranyl phosphate mineral, represented
+  as (H3O)(UO2)(PO4)(H2O)3 in the September 2026 IMA list. Its status A and
+  1988 s.p. entry indicate approval by a special procedure, not a numbered
+  1988 proposal identifier. The Handbook describes a tetragonal member of
+  the meta-autunite group. This species is distinct from calcium autunite,
+  meta-autunite, dissolved uranium and phosphate-rock feedstock. The study
+  below identifies a laboratory precipitate by comparison with a
+  chernikovite powder pattern; it does not examine a natural chernikovite
+  ore or establish a phase-pure product. No uranium criticality designation
+  is inherited by the mineral.
+sources:
+  - id: ima_2026_09
+    title: >-
+      IMA-CNMNC. The New IMA List of Minerals, September 2026. Chernikovite
+      row, PDF page 42; status and special-procedure definitions on page 1.
+      Retained official original rechecked; official URL opened live.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-14'
+  - id: handbook_chernikovite
+    title: >-
+      Handbook of Mineralogy. Chernikovite, version 1, 2001-2005.
+      One-page mineral description, formula, structure and references.
+    url: https://www.handbookofmineralogy.org/pdfs/chernikovite.pdf
+    accessed_on: '2026-10-14'
+  - id: hu2018
+    title: >-
+      Hu et al. (2018). Utilization of phosphate rock as a sole source of
+      phosphorus for uranium biomineralization mediated by Penicillium
+      funiculosum. RSC Advances 8, 13459-13465. DOI 10.1039/C8RA01344F.
+      Complete seven-page original, Figures 1-7 and Tables 1-2 embedded
+      within Figure 7 inspected; full XML and original figure files
+      independently acquired through Europe PMC.
+    url: https://doi.org/10.1039/C8RA01344F
+    accessed_on: '2026-10-14'
+  - id: ncbi_funiculosus
+    title: >-
+      NCBI Taxonomy 28572, Talaromyces funiculosus, species; Penicillium
+      funiculosum is listed as a basionym. Current taxonomy XML inspected.
+      This name mapping does not verify the study's unaccessioned isolate.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=28572
+    accessed_on: '2026-10-14'
+mechanisms:
+  - id: fungal_broth_uranyl_phosphate_precipitation
+    name: Chernikovite-assigned precipitation using fungal phosphate-rock broth
+    process: biomineralization
+    microbial: true
+    organisms:
+      - id: NCBITaxon:28572
+        label: Talaromyces funiculosus
+    description: >-
+      Broth conditioned by the fungus reported as Penicillium funiculosum
+      supplied phosphate released during incubation with phosphate rock.
+      After filtration to remove hyphae and rock particles, addition of
+      uranium produced a precipitate whose diffraction pattern the authors
+      assigned to chernikovite. The microbial contribution is upstream
+      conditioning of the broth; precipitation was examined in the filtered
+      broth and does not demonstrate a requirement for living cells during
+      crystal formation. This is a laboratory uranium immobilization
+      experiment, not uranium reduction, ore extraction or industrial
+      production of a recovered mineral.
+    context: >-
+      The isolate came from Guangdong uranium-mine tailings mud and was
+      identified by the Guangdong Institute of Microbiology; no strain
+      deposit or sequence accession is supplied. The phosphate rock was
+      reported to contain 13% phosphorus and was ground to 150 mesh, but
+      its mineral composition was not established. The source describes
+      200 mL modified Pikovskaya broth in 500 mL flasks, adjusted initially
+      to pH 6, with glucose and phosphate rock. Its abstract states a rock
+      loading of 5 g/L; the Methods lists ingredient masses without an
+      explicit per-liter denominator. Cultures received 2 mL spore
+      suspension at OD600 0.2 and were shaken at 30 degrees C and 140 rpm;
+      live and sterilized-spore groups each had three parallel samples.
+      For the separate filtered-broth experiment, a 0.22 micrometer filter
+      removed hyphae and rock, then 10 mL filtrate was added to 50 mL
+      flasks containing uranium solutions labelled 25, 50, 250, 500, 750
+      and 1000 mg/L. These are source-reported addition concentrations;
+      the uranium-solution volume and resulting dilution are not stated.
+      After 12 h at 30 degrees C and 140 rpm, centrifuged supernatants
+      were assayed by ICP-MS for uranium and the molybdenum-blue method
+      for phosphate. Solids were washed eight times before analysis.
+      The exact uranium-loading arm used for the diffraction specimen
+      and its drying or humidity history are not specified.
+    evidence:
+      - source_ref: hu2018
+        supports: support
+        explanation: >-
+          Experimental design on pages 13460-13461 and the XRD results
+          on pages 13463-13464 distinguish three arms: rock dissolution,
+          whole-culture biomineralization and mineralization with filtered
+          fermentation broth. Figure 7b and its embedded Table 2 compare
+          the last arm's precipitate with chernikovite reference pattern
+          PDF 29-0670, including the low-angle 001 reflection and multiple
+          higher-angle reflections. Figure 4 supplies its infrared
+          spectrum; Figures 5c and 6c show the filtered-broth solid and
+          its uranium/phosphorus signals. This supports the authors'
+          phase assignment beyond elemental co-occurrence alone. Their
+          H2(UO2)2(PO4)2·8H2O notation has the same overall elemental
+          composition as the doubled hydronium formula in the Handbook;
+          the experiment does not independently refine hydrogen positions
+          or quantify phase purity.
+      - source_ref: hu2018
+        supports: partial
+        explanation: >-
+          Figure 3 and the corresponding results on pages 13462-13463
+          show decreasing soluble phosphate and low residual uranium at
+          lower additions, with appreciably more residual uranium at the
+          highest addition. Neither solution depletion nor this diffraction
+          assignment provides an isolated chernikovite yield, a mineral
+          mass balance or proof that every uranium-loading arm made the
+          same phase. The filtered-broth arm lacks a reported matched
+          inorganic-phosphate or pH-matched unconditioned-broth comparator;
+          its replicate count is not separately specified. Specific
+          phosphatase, organic-acid and autolysis mechanisms were proposed,
+          rather than established by direct enzyme, metabolite or pathway
+          measurements. Filtration is described as removing hyphae and
+          particles; independent sterility verification is unreported.
+      - source_ref: hu2018
+        supports: context_only
+        explanation: >-
+          Figure 2 concerns a different arm with live fungus, rock and
+          initially 25 mg/L uranium, compared with a sterilized-spore
+          control labelled heat-killed hypha in the figure. Both arms
+          initially lost substantial aqueous uranium; only the live arm
+          subsequently showed the larger decline, with a transient rebound
+          near day 12 as pH fell. The text reports 47.3 micrograms/L
+          supernatant uranium at day 22, but this is not a chernikovite
+          yield and cannot be transferred to the filtered-broth experiment.
+          Figures 5b and 6b show associated solids without a corresponding
+          whole-culture phase-specific diffraction assignment. Long-term
+          stability, environmental deployment and regulatory compliance
+          are not established by these laboratory observations.
+curation_history:
+  - timestamp: '2026-10-14T19:44:23Z'
+    curator: codex
+    action: created
+    summary: >-
+      Added authority-grounded chernikovite identity and a phase-assigned
+      filtered fungal-broth precipitation experiment, preserving distinct
+      control arms, source recipe and dilution gaps, taxon resolution,
+      phase-purity limits and the absence of an isolated-product yield.
+history_refs:
+  - history/records/chernikovite/2026-10-14T194426Z-codex-bfb285.yaml

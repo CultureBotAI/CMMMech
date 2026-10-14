@@ -1,0 +1,343 @@
+schema_version: 1.0.0
+review_id: 20261014T195435Z-waste-x-ray-films-round80-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of waste X-ray films
+started_at: '2026-10-14T19:46:28.711992Z'
+finished_at: '2026-10-14T19:54:35.313009Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer authored chernikovite only; waste-film record and history
+    authored by round68_new_frontier. Preliminary target read established scope, then
+    native inspect preceded field-by-field judgment. Both complete primary originals
+    and all claim-bearing figures/tables independently inspected from shared raw acquisitions;
+    no replication or owner/history edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of medical waste-film identity, fungal enzyme stripping
+  and bacterial enzyme stripping followed by separate abiotic smelting. Controls,
+  conflicting enzyme doses and distinct stripping, silver-inventory and product-purity
+  denominators remain explicit. No supported corrective finding.
+source:
+  git_revision: 6ea9ddfa2cf6bd74a700186cb3e8251cd51eff58
+  state: working_tree
+  inputs:
+  - path: data/records/waste-x-ray-films.yaml
+    sha256: 5085f4a2df0909cfed6e4c1f822b378ed667eabd3269e3729139a862677e9906
+    role: target
+  - path: history/records/waste-x-ray-films/2026-10-14T194146Z-codex-1b7408.yaml
+    sha256: 972b4b9d18fcaa5afeb76e83d1ace17c0377ba51a9449fb3b4f2a419c274580f
+    role: context
+scope:
+  description: Entire exact maintained record, linked CREATE history, original methods/results
+    and graphics, source identity, strain nomenclature, controls, quantities and scale.
+  selection: Assigned single canonical record; inspect-before-judgment. Review start
+    records the completed native inspection file timestamp.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:waste-x-ray-films
+targets:
+- target_id: cmmmech:waste-x-ray-films
+  path: data/records/waste-x-ray-films.yaml
+  label: Waste X-ray films
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/waste-x-ray-films.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named record validation
+  command: uv run --locked cmmmech validate data/records/waste-x-ray-films.yaml --require-records
+  status: passed
+  required: true
+  summary: Actual reviewer tool session 69869 terminal exit 0; one record, zero failures.
+    Exact execution start/finish interval was not separately captured.
+  target_ids:
+  - cmmmech:waste-x-ray-films
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Completed coordinator batch gate 1
+  command: just check
+  status: passed
+  required: true
+  summary: Actual coordinator command terminal exit 0; completed batch 2026-10-14T19:46:57.082630+00:00
+    to 2026-10-14T19:54:07.329034+00:00 independently bound to retained receipt and
+    log.
+  target_ids:
+  - cmmmech:waste-x-ray-films
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Completed coordinator batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Actual coordinator command terminal exit 0; completed batch 2026-10-14T19:46:57.082630+00:00
+    to 2026-10-14T19:54:07.329034+00:00 independently bound to retained receipt and
+    log.
+  target_ids:
+  - cmmmech:waste-x-ray-films
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch gate 3
+  command: uv run --locked cmmmech validate-history --base 6ea9ddfa2cf6bd74a700186cb3e8251cd51eff58
+  status: passed
+  required: true
+  summary: Actual coordinator command terminal exit 0; completed batch 2026-10-14T19:46:57.082630+00:00
+    to 2026-10-14T19:54:07.329034+00:00 independently bound to retained receipt and
+    log.
+  target_ids:
+  - cmmmech:waste-x-ray-films
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Actual coordinator command terminal exit 0; completed batch 2026-10-14T19:46:57.082630+00:00
+    to 2026-10-14T19:54:07.329034+00:00 independently bound to retained receipt and
+    log.
+  target_ids:
+  - cmmmech:waste-x-ray-films
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/waste-x-ray-films.yaml
+  locator: 'All fields in exact frozen owner. Actual local artifact: /private/tmp/CMMMech-expansion-round80-20261014/data/records/waste-x-ray-films.yaml'
+  accessed_at: '2026-10-14T19:54:35.313009Z'
+  support: supports
+  summary: Resource boundary, mechanisms, controls and limits verified.
+  snapshot_sha256: 5085f4a2df0909cfed6e4c1f822b378ed667eabd3269e3729139a862677e9906
+- evidence_id: history
+  kind: record_content
+  reference: history/records/waste-x-ray-films/2026-10-14T194146Z-codex-1b7408.yaml
+  locator: 'Full canonical CREATE sidecar. Actual local artifact: /private/tmp/CMMMech-expansion-round80-20261014/history/records/waste-x-ray-films/2026-10-14T194146Z-codex-1b7408.yaml'
+  accessed_at: '2026-10-14T19:54:35.313009Z'
+  support: supports
+  summary: Actual GPT-6/codex actor, timestamp, target and descriptive scope agree
+    with inline CREATE; no invented earlier work.
+  snapshot_sha256: 972b4b9d18fcaa5afeb76e83d1ace17c0377ba51a9449fb3b4f2a419c274580f
+- evidence_id: shankar
+  kind: primary_source
+  reference: https://nepjol.info/index.php/KUSET/article/download/3311/2851
+  locator: 'Complete ten-page original pp.60–69, Methods61–63, all Figures1–4 and
+    Table1, outcomes68; figure pixels independently inspected. Actual local artifact:
+    /private/tmp/cmm-round80-resources-research/shankar2010.pdf'
+  accessed_at: '2026-10-14T19:54:35.313009Z'
+  support: supports
+  summary: Crude fungal enzyme preparation, operational turbidity-based stripping,
+    dose conflict, cycle count and sludge/film denominators support the bounded record.
+  snapshot_sha256: d49b032f914ce09c349f2d046713be2ec641fda11b7625e7a7572c0a5042a565
+- evidence_id: nakiboglu
+  kind: primary_source
+  reference: https://acikerisim.balikesir.edu.tr/bitstreams/2aa318e5-ec84-4407-b611-8ecd7586b136/download
+  locator: 'Complete five-page original pp.349–353; Experimental350–351, Figure1,
+    Tables1–2 and product analysis352. Short binary prefix before PDF header retained
+    unmodified. Actual local artifact: /private/tmp/cmm-round80-resources-research/nakiboglu2001.pdf'
+  accessed_at: '2026-10-14T19:54:35.313009Z'
+  support: supports
+  summary: Culture-derived extract strips films; 1100 C borax smelting is separate.
+    Product mass/purity/95% confidence N=5 and trace-impurity table are distinct from
+    process yield.
+  snapshot_sha256: 9092e38d203fee739f86e5d939275a60ee4fa1f9f92b7908f291441655afbbbc
+- evidence_id: fungus
+  kind: primary_source
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=34488
+  locator: 'Complete retained authority response independently read, with live ATCC/NCBI
+    search corroboration. Actual local artifact: /private/tmp/cmm-round80-resources-research/conidiobolus34488.xml'
+  accessed_at: '2026-10-14T19:54:35.313009Z'
+  support: context_only
+  summary: Taxon 34488 is Conidiobolus coronatus species; no claim this verifies source
+    ATCC PTA-4132 stock.
+  snapshot_sha256: c3b83834405e24744c98c59fe09ce98f5f32f2285395a46b99073d503c53f329
+- evidence_id: bacterium
+  kind: primary_source
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=703612
+  locator: 'Complete retained authority response independently read, with live ATCC/NCBI
+    search corroboration. Actual local artifact: /private/tmp/cmm-round80-resources-research/bacillus703612.xml'
+  accessed_at: '2026-10-14T19:54:35.313009Z'
+  support: context_only
+  summary: Current XML has strain rank and exact Bacillus spizizenii ATCC 6633 = JCM
+    2499 label.
+  snapshot_sha256: 08437dce8a72de14fb03fccb6c6c840e839a4c53bf84d6186dae6be231f698b4
+- evidence_id: collection
+  kind: primary_source
+  reference: https://www.atcc.org/products/6633
+  locator: 'Complete retained authority response independently read, with live ATCC/NCBI
+    search corroboration. Actual local artifact: /private/tmp/cmm-round80-resources-research/atcc6633.html'
+  accessed_at: '2026-10-14T19:54:35.313009Z'
+  support: context_only
+  summary: ATCC 6633 NRS 231 deposited as Bacillus subtilis; current nomenclature
+    verified, not historical-stock authentication.
+  snapshot_sha256: e9c6fce068224e61891bd0219b3fa294c06b3c8a98d16bcc2ca37b8d60754478
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round80-film-review/dedup.txt
+  locator: 'rg --no-ignore --hidden --follow in assigned checkout records, research,
+    reviews and history for waste-film aliases, DOI and Nakiboglu names; bounded scope.
+    Actual local artifact: /private/tmp/cmm-round80-film-review/dedup.txt'
+  accessed_at: '2026-10-14T19:54:35.313009Z'
+  support: context_only
+  summary: Ignored and hidden paths included; related background and current source
+    dossier do not imply duplicate material owners.
+  snapshot_sha256: 3c2ed0b9fec5cc2131de23d63ff912478c0ecd4fe86b043d45c87fabfaff18c0
+  search_scope: rg --no-ignore --hidden --follow in assigned checkout records, research,
+    reviews and history for waste-film aliases, DOI and Nakiboglu names; bounded scope.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round80-film-review/notice-search.json
+  locator: 'Exact-title correction/erratum searches and authority queries through
+    web search on 2026-10-14; top returned sets, no filter. Guessed neighboring publisher
+    page rejected; correct film page resolved by search. Actual local artifact: /private/tmp/cmm-round80-film-review/notice-search.json'
+  accessed_at: '2026-10-14T19:54:35.313009Z'
+  support: context_only
+  summary: No matched corrective notice in this bounded search; primary inconsistencies
+    remain unresolved.
+  snapshot_sha256: 97b6d4e5476e2e0597985882f159725971ea9a6f163e1ffe28be7a58039c7a2a
+  search_scope: Exact-title correction/erratum searches and authority queries through
+    web search on 2026-10-14; top returned sets, no filter. Guessed neighboring publisher
+    page rejected; correct film page resolved by search.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round80-film-review/named-validation.json
+  locator: 'Actual terminal named-validation command receipt; retained log hash checked.
+    Actual local artifact: /private/tmp/cmm-round80-film-review/named-validation.json'
+  accessed_at: '2026-10-14T19:54:35.313009Z'
+  support: supports
+  summary: Checked 1 record; 0 failed.
+  snapshot_sha256: 52b42881805ba65e583f839baa5905477f968ffb75d0d653acf29f4c1bbee029
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round80-final-gates.json
+  locator: 'All FOUR completed coordinator commands; retained log /private/tmp/cmm-round80-final-gates.log
+    SHA256 50f9fa7297735813ca50e796a55f87b48a9d733251018e8eb71abb49891ed105. Actual
+    local artifact: /private/tmp/cmm-round80-final-gates.json'
+  accessed_at: '2026-10-14T19:54:35.313009Z'
+  support: supports
+  summary: Terminal exits, trusted base/worktree and current record hashes verified.
+    No science implied by validation.
+  snapshot_sha256: 9684770752e7d97d6dfc884fc40bccefd5b86149df855803d223aa44903ff550
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Distinct medical silver-bearing waste resource
+  outcome: supported
+  summary: Both originals identify used radiographic films from medical facilities;
+    polymer/gelatin feed is distinct from elemental silver, unused stock and processing
+    liquid. No inherited criticality or universal feed composition.
+  evidence_ids:
+  - record
+  - shankar
+  - nakiboglu
+  target_ids:
+  - cmmmech:waste-x-ray-films
+- assessment_id: biology
+  area: evidence
+  topic: Organisms and cell-free preparations
+  outcome: supported
+  summary: Source C. coronatus culture makes crude extracellular preparation; bacterial
+    historical ATCC 6633 maps to current B. spizizenii strain label. Current names
+    do not authenticate the original stocks. Cells are not applied directly to films.
+  evidence_ids:
+  - shankar
+  - nakiboglu
+  - fungus
+  - bacterium
+  - collection
+  target_ids:
+  - cmmmech:waste-x-ray-films
+- assessment_id: controls
+  area: evidence
+  topic: Controls and conflicting assay arms
+  outcome: supported
+  summary: Fungal zero-enzyme curve near baseline, pH/temperature response and protein/hydroxyproline
+    release support proteolysis; source 0.9 versus 1.35/2.7 U/mL discrepancy retained.
+    Four table cycles include first use. Bacterial enzyme-free comparator absent;
+    capacity-denominator inconsistency not silently repaired.
+  evidence_ids:
+  - shankar
+  - nakiboglu
+  - record
+  target_ids:
+  - cmmmech:waste-x-ray-films
+- assessment_id: quantity
+  area: quantity
+  topic: Stripping versus silver inventory and product purity
+  outcome: supported
+  summary: Turbidity-normalized hydrolysis, sludge 3.87% and film 0.2% are different
+    denominators. Bacterial 0.4013 g product and 99.16 ± 0.11% at 95% confidence,
+    N=5 are product analyses, not recovery percentage or five process replicates.
+    Table 2 does not establish semiconductor-grade material.
+  evidence_ids:
+  - shankar
+  - nakiboglu
+  - record
+  target_ids:
+  - cmmmech:waste-x-ray-films
+- assessment_id: scale
+  area: scope
+  topic: Biological stripping and abiotic smelting
+  outcome: supported
+  summary: Bacterial preparation is followed by borax-assisted 1100 degrees C thermal
+    isolation. Fungal paper lacks isolated-metal protocol despite its broad claim.
+    Laboratory provenance does not establish industrial deployment or environmental
+    superiority.
+  evidence_ids:
+  - shankar
+  - nakiboglu
+  - record
+  target_ids:
+  - cmmmech:waste-x-ray-films
+- assessment_id: provenance
+  area: provenance
+  topic: Canonical history and verified checks
+  outcome: supported
+  summary: Owner/hash and CREATE linkage are unchanged from inspection. Named validation
+    and four completed batch checks pass on the supplied trusted base; no record change
+    made by reviewer.
+  evidence_ids:
+  - history
+  - record
+  - named
+  - batch
+  target_ids:
+  - cmmmech:waste-x-ray-films
+findings: []
+actions: []
+limitations:
+- No independent authentication of historical culture stocks; current taxonomy only
+  maps the supplied names/designations.
+- Crude preparations and incomplete matched controls do not prove a purified single-enzyme
+  pathway; the record preserves those limits.
+- No initial silver inventory or whole-process mass balance; 99.16% denotes product
+  purity, not recovery yield, and N=5 is not five independent recovery runs.
+- Source dose and capacity discrepancies remain explicit; no separate supplement was
+  announced in the inspected originals, not an exhaustive live SI inventory.
+- Bounded notice searches are not proof of absence. Structural gates do not certify
+  scientific truth or future hosted publication.
+notes:
+- No owner or canonical history edits by this reviewer.
+- Named validation executed by reviewer; four batch gates executed by coordinator
+  and their completed receipt/log independently verified.

@@ -1,0 +1,377 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/CMMMech
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+review_id: 20261014T195430Z-pyroaurite-round80-independent
+title: Independent scientific review of pyroaurite
+started_at: '2026-10-14T19:49:57.969377Z'
+finished_at: '2026-10-14T19:54:30.613644Z'
+reviewer:
+  identity: codex /root/round68_new_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The carbonate owner and history were authored by round68_iron_sulfides.
+    This reviewer authored the unrelated waste-X-ray-film owner and did not edit this
+    target/history. The reviewer independently read complete primary methods/results,
+    all main figures/tables, relevant supplement and mineral authorities. Shared acquisition
+    artifacts do not constitute independent scientific replication.
+source:
+  git_revision: 6ea9ddfa2cf6bd74a700186cb3e8251cd51eff58
+  state: working_tree
+  inputs:
+  - path: data/records/pyroaurite.yaml
+    sha256: a7f28d78b8aa86b21844344d3b85d4e74b1fa9d6f5a85ad57f91676ebe56ee02
+    role: target
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/pyroaurite/2026-10-14T194304Z-codex-3b9b9f.yaml
+    sha256: 47d25aa66659f1a3a76a3fe764cfe3a94910afd483686cafcaca56b5832c80f3
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- kind: maintained
+  label: Pyroaurite
+  owner_paths:
+  - path: data/records/pyroaurite.yaml
+    repository: CultureBotAI/CMMMech
+    role: maintained_record
+  path: data/records/pyroaurite.yaml
+  target_id: cmmmech:pyroaurite
+scope:
+  description: Whole frozen mineral owner, linked CREATE history, authority identity,
+    full accepted primary evidence, experimental and observational limitations, source
+    contradictions and exact validation provenance.
+  selection: Assigned exact frozen owner; native inspect completed before assessment
+    and judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:pyroaurite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/pyroaurite.yaml
+  locator: 'Whole inspected owner. Actual local artifact: /private/tmp/CMMMech-expansion-round80-20261014/data/records/pyroaurite.yaml'
+  accessed_at: '2026-10-14T19:54:30.613644Z'
+  support: supports
+  summary: Exact source, mechanism, evidence and provenance fields checked; unchanged.
+  snapshot_sha256: a7f28d78b8aa86b21844344d3b85d4e74b1fa9d6f5a85ad57f91676ebe56ee02
+- evidence_id: history
+  kind: record_content
+  reference: history/records/pyroaurite/2026-10-14T194304Z-codex-3b9b9f.yaml
+  locator: 'Canonical CREATE sidecar; separately assessed inline event. Actual local
+    artifact: /private/tmp/CMMMech-expansion-round80-20261014/history/records/pyroaurite/2026-10-14T194304Z-codex-3b9b9f.yaml'
+  accessed_at: '2026-10-14T19:54:30.613644Z'
+  support: supports
+  summary: Actual GPT-6/codex actor, target, timestamps and bounded change description
+    verified. Inline event and sidecar timestamps are distinct actual provenance,
+    not falsely equated.
+  snapshot_sha256: 47d25aa66659f1a3a76a3fe764cfe3a94910afd483686cafcaca56b5832c80f3
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'Current September 2026 edition: definitions pp.1–2 and pyroaurite row
+    p.179; row visually inspected. Actual local artifact: /private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf'
+  accessed_at: '2026-10-14T19:54:30.613644Z'
+  support: supports
+  summary: Species formula and current status verified. Historical year/special procedure
+    is not invented as a sequential approval identifier.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/pyroaurite.pdf
+  locator: 'Complete one-page original, formula/chemistry/powder pattern/group; visually
+    inspected. Actual local artifact: /private/tmp/cmm-round80-carbonates-research/pyroaurite-handbook.pdf'
+  accessed_at: '2026-10-14T19:54:30.613644Z'
+  support: supports
+  summary: Mineral context checked; nearly overlapping LDH diffraction patterns and
+    historical nomenclature do not establish experimental sample purity or replace
+    current IMA identity.
+  snapshot_sha256: ff87b11c940e2d3b392fed5600fe8bddede23cbbd8919fcc217aea530fede0d8
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/min7100191
+  locator: 'Complete 18-page published v2 original; Sections2–4, Table1, Figures1–7,
+    all graphics visually inspected. Actual local artifact: /private/tmp/cmm-round80-carbonates-research/pyroaurite2017.pdf'
+  accessed_at: '2026-10-14T19:54:30.613644Z'
+  support: supports
+  summary: Full methods/results/discussion independently checked against exact narrow
+    record assertions; fitted phase abundance is not recovered yield and proposed
+    microbial causation is not proven.
+  snapshot_sha256: 9efb8d5244c58f15e834d3f162cd6db98268eb92be6ab1ed1096e9b034aa5e36
+- evidence_id: si
+  kind: primary_source
+  reference: https://mdpi-res.com/d_attachment/minerals/minerals-07-00191/article_deploy/minerals-07-00191-s001.pdf
+  locator: 'Complete nonempty five-page original; FigureS1 and TablesS1–S5, all pages
+    visually inspected. Actual local artifact: /private/tmp/cmm-round80-carbonates-research/pyroaurite2017-si.pdf'
+  accessed_at: '2026-10-14T19:54:30.613644Z'
+  support: supports
+  summary: Individual fitted abundances, depths, Rwp values, weather and creek-water
+    analyte labels independently checked. Same experiment, not replication.
+  snapshot_sha256: c3eda6540b7cdbd575e1e94f93a3009e068a47cf347c14b1810687ea4e72a92a
+- evidence_id: crossref
+  kind: database
+  reference: https://api.crossref.org/works/10.3390/min7100191
+  locator: 'Actual current DOI/title/author metadata, relation and update-to fields.
+    Actual local artifact: /private/tmp/cmm-round80-carbonates-research/crossref-pyroaurite.json'
+  accessed_at: '2026-10-14T19:54:30.613644Z'
+  support: context_only
+  summary: Identity matches primary. No relation/update-to notice was present in this
+    bounded metadata snapshot.
+  snapshot_sha256: 32b8a905036e4f6e62d07ea08080226e57dd82699ddc06bc5c30d9e538b7b912
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round80-carbonates-independent/notice-search.json
+  locator: 'Exact DOI correction/erratum/retraction queries and actual result sets.
+    Actual local artifact: /private/tmp/cmm-round80-carbonates-independent/notice-search.json'
+  accessed_at: '2026-10-14T19:54:30.613644Z'
+  support: context_only
+  summary: No affecting notice returned in bounded result sets; two direct publisher
+    opens returned internal errors, so complete acquired originals support science.
+    Not a global absence claim.
+  snapshot_sha256: 54565a242daf4a145736c6ee750ded176de2ffdc190a38787760ae72344d4ee9
+  search_scope: Two exact DOI correction/erratum/retraction queries on 2026-10-14;
+    first returned result sets, plus retained current Crossref snapshots.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round80-carbonates-independent/dedup.json
+  locator: 'Current records/research/reviews/history; full command and scope in adjacent
+    dedup.json. Actual local artifact: /private/tmp/cmm-round80-carbonates-independent/dedup.txt'
+  accessed_at: '2026-10-14T19:54:30.613644Z'
+  support: context_only
+  summary: Related phase mentions in brucite and chromite-ore-processing-residue do
+    not transfer their mechanisms or identify the current study. Curator referenced-raw
+    dedup scope was also inspected. No machine-wide absence claim.
+  snapshot_sha256: 1a3f20204ea569dd65c8f018ec54806ece095125a445a3f83380afe5e121ff1a
+  search_scope: rg --no-ignore --hidden --follow for mineral names and both normalized
+    DOI strings over declared textual boundaries, excluding .git/.venv; hidden/ignored
+    files included.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round80-carbonates-independent/named-validation.log
+  locator: 'Actual reviewer command; terminal session57361 exit0. Actual local artifact:
+    /private/tmp/cmm-round80-carbonates-independent/named-validation.log'
+  accessed_at: '2026-10-14T19:54:30.613644Z'
+  support: supports
+  summary: Two explicitly named records validated, zero failures; command interval
+    was not separately clocked. Structural validity is not science.
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round80-final-gates.json
+  locator: 'Actual terminal coordinator receipt; four commands; log /private/tmp/cmm-round80-final-gates.log
+    SHA256 50f9fa7297735813ca50e796a55f87b48a9d733251018e8eb71abb49891ed105. Actual
+    local artifact: /private/tmp/cmm-round80-final-gates.json'
+  accessed_at: '2026-10-14T19:54:30.613644Z'
+  support: supports
+  summary: All four command results, retained log digest and unchanged inspected owner/history
+    inputs independently verified. No hosted publication claim.
+  snapshot_sha256: 9684770752e7d97d6dfc884fc40bccefd5b86149df855803d223aa44903ff550
+checks:
+- check_id: named
+  name: Independent named strict record validation
+  command: uv run --locked cmmmech validate data/records/pyroaurite.yaml data/records/hydrotalcite.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Actual reviewer execution passed 2 records, 0 failures.
+  target_ids:
+  - cmmmech:pyroaurite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Actual batch gate 1
+  command: just check
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T19:46:57.083011+00:00 through 2026-10-14T19:53:35.124735+00:00;
+    terminal exit and log independently verified.
+  target_ids:
+  - cmmmech:pyroaurite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Actual batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T19:53:35.124766+00:00 through 2026-10-14T19:53:53.342568+00:00;
+    terminal exit and log independently verified.
+  target_ids:
+  - cmmmech:pyroaurite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Actual batch gate 3
+  command: uv run --locked cmmmech validate-history --base 6ea9ddfa2cf6bd74a700186cb3e8251cd51eff58
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T19:53:53.342601+00:00 through 2026-10-14T19:54:00.273564+00:00;
+    terminal exit and log independently verified.
+  target_ids:
+  - cmmmech:pyroaurite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Actual batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-14T19:54:00.273595+00:00 through 2026-10-14T19:54:07.222248+00:00;
+    terminal exit and log independently verified.
+  target_ids:
+  - cmmmech:pyroaurite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+summary: Qualified acceptance of pyroaurite species identity and its occurrence in
+  an inoculated field-trial arm. The record correctly withholds microbial enhancement,
+  pure-product yield and industrial performance. No supported corrective defect found.
+limitations:
+- Unreplicated plots and nutrient-unmatched open-field controls cannot isolate microbial
+  pyroaurite enhancement.
+- Source-fitted minor-phase abundance and morphology do not yield an isolated product
+  or phase-specific mass balance; original diffraction profiles are not supplied in
+  the inspected main/SI.
+- Figure/depth/analyte-label inconsistencies are explicitly retained; no uncurated
+  correction or numerical conversion is inferred.
+- Culture recovery is not a complete microbial census, and related hydromagnesite/laboratory
+  outcomes are not transferred.
+- Bounded DOI notice searches and current Crossref snapshots are not proof that every
+  correction or conflicting publication has been found.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species, group and material boundaries
+  outcome: supported
+  summary: Mg6Fe3+2(OH)16(CO3)·4H2O pyroaurite has current IMA Rd/1865 identity; this
+    does not denote hydrotalcite, generic layered double hydroxides or the mixed tailings
+    feed.
+  target_ids:
+  - cmmmech:pyroaurite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+- assessment_id: design
+  area: evidence
+  topic: Field design and unmatched controls
+  outcome: supported
+  summary: Two unreplicated 1×1×0.5 m plots received 40.5 L 0.22 M sulfuric acid in
+    creek water. At two weeks, Bio received 2 L local consortium plus 18 L BG-11/creek-water
+    medium, while Chem received 20 L creek water. Nine additional weeks gives eleven
+    total. Equal liquid volumes do not match nutrients; open plots are not sterile.
+    Triplicate depth subsamples are not replicated treatment plots. No resolved taxon
+    or strain is assigned.
+  target_ids:
+  - cmmmech:pyroaurite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: phase
+  area: evidence
+  topic: Pre-existing phase and endpoint denominator
+  outcome: supported
+  summary: Table1 already contains 1.3–2.6 wt% pyroaurite in untreated depth intervals.
+    Final 2–4 cm averages are Chem 2.6 and Bio 2.5 wt%; TablesS4–S5 individual values
+    are Chem 2.6/2.5/2.5 and Bio 2.9/3.2/1.3. Those source-fitted phase proportions
+    establish occurrence, not increased microbial production, pure-phase recovery,
+    statistically replicated enhancement or a phase-specific mass balance. Figures2/5
+    provide field/morphology context, not independent quantitative identification.
+  target_ids:
+  - cmmmech:pyroaurite
+  evidence_ids:
+  - record
+  - primary
+  - si
+- assessment_id: preparation
+  area: evidence
+  topic: Analytical handling and unavailable underlying patterns
+  outcome: supported
+  summary: Air drying, fluorite addition, ethanol milling, drying and Rietveld/Pawley
+    fitting are retained. Complete original and five-page SI provide fitted abundance/Rwp
+    tables, not the underlying diffraction profiles. Patterns/refinements were therefore
+    not reproduced. Low-abundance uncertainty and chemically driven dissolution/reprecipitation
+    remain material alternatives.
+  target_ids:
+  - cmmmech:pyroaurite
+  evidence_ids:
+  - record
+  - primary
+  - si
+- assessment_id: contradictions
+  area: evidence
+  topic: Source label, depth and nutrient conflicts
+  outcome: supported
+  summary: Figure7 visibly labels A Control/B Chem/C Bio; adjacent discussion swaps
+    A/C. The curated interpretation follows table/graph rather than that prose. Two-week
+    hydromagnesite 2–4 cm prose conflicts with Methods/Table1/SI2–17 cm, so it is
+    not transferred. SI TableS1 uses elemental nutrient bases PO4-P/NO2-N/NO3-N versus
+    main ion labels; no concentration conversion or new observation was invented.
+  target_ids:
+  - cmmmech:pyroaurite
+  evidence_ids:
+  - record
+  - primary
+  - si
+- assessment_id: microbial
+  area: scope
+  topic: Association, null field outcomes and scale
+  outcome: supported
+  summary: Microbial true denotes the deliberately inoculated arm, not necessity or
+    pyroaurite-specific causation. No obvious surface crust or macroscopic microbial
+    growth developed; later BG-11 recovery establishes culturable cyanobacteria under
+    that assay only. The prior four-week laboratory crust and hydromagnesite response
+    are not pyroaurite effects here. Field deployment is an experiment, not commercial
+    carbon removal or Mg recovery.
+  target_ids:
+  - cmmmech:pyroaurite
+  evidence_ids:
+  - record
+  - primary
+  - si
+- assessment_id: provenance
+  area: provenance
+  topic: Exact native inputs, history and completed checks
+  outcome: supported
+  summary: Native inspect captured the trusted base and exact target/context bytes
+    before judgment. Owner/history remain unchanged. Actual reviewer named validation
+    and all four coordinator batch commands passed. Criticality is omitted rather
+    than inherited from constituents; there is no criticality-list assertion to validate.
+  target_ids:
+  - cmmmech:pyroaurite
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - dedup
+  - notices
+findings: []
+actions: []
+notes:
+- The formal start timestamp was captured before native inspect and judgment, after
+  preliminary owner/source reading; no earlier time was invented.
+- All accepted primary files are nonempty, exact original bytes with complete graphics
+  inspected. Hashes and absolute paths bind the actual inspected artifacts; authority
+  pages are not experimental sample identifiers.
+- No owner/history edits by this reviewer. Hosted CI, isolated publication preflight
+  and merge remain separate future checks.
+- 'iModulon or gene adapters are not applicable: no named gene, transcriptome, pathway
+  accession or resolved strain mechanism is asserted.'
