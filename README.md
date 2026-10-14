@@ -8,10 +8,16 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 299 material records.
+The catalogue currently contains 305 material records.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Bobierrite](data/records/bobierrite.yaml) | Source-assigned magnesium phosphate in bacterial culture products | Mixed products, phase-label conflicts and processing constrain attribution |
+| [Barićite](data/records/baricite.yaml) | Barićite-assigned phosphate precipitation in hydrogen-fed G20 cultures | Source-assigned mixed composition, recipe conflicts and sterile controls limit causal claims |
+| [Brucite](data/records/brucite.yaml) | Brucite-rich encrustation of microbial filaments in Prony Bay chimneys | Field association and proposed nucleation do not establish metabolic necessity |
+| [Dolomite](data/records/dolomite.yaml) | Partially ordered dolomite assigned in an anaerobic photosynthetic consortium | Mixed carbonate products, control labels and diffraction-index conflicts remain explicit |
+| [Cryptomelane](data/records/cryptomelane.yaml) | Abiotic thermal transformation and slower acid release of nickel | Mixed phases and fitted rates do not establish permanent immobilization or recovery |
+| [Romanèchite](data/records/romanechite.yaml) | Mineral identity and mixed-ore leaching context | Normative phase allocation and acid additions prevent mineral-specific microbial yield claims |
 | [Hydromagnesite](data/records/hydromagnesite.yaml) | Mixed carbonate precipitation in separate bacterial cultures | Phase-table and strain-assignment conflicts prevent pure-phase or strain-specific yield claims |
 | [Huntite](data/records/huntite.yaml) | Source-assigned component in two culture-medium arms | Mixed products and unresolved phase assignments constrain attribution |
 | [Nesquehonite](data/records/nesquehonite.yaml) | LE1 culture-associated magnesium carbonate precipitation | Missing control outcomes, phase arithmetic and an abiotic counterexample limit causal claims |

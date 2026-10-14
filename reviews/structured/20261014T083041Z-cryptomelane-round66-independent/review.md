@@ -1,0 +1,448 @@
+# Independent scientific review of cryptomelane
+
+- Review: 20261014T083041Z-cryptomelane-round66-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T08:26:23.697285Z
+- Finished UTC: 2026-10-14T08:30:41.547594Z
+- Reviewer: codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The frozen record supports potassium-bearing mineral identity and a narrowly scoped abiotic thermal transformation/acid-release experiment. Phase, denominator, kinetic-fit and analogue limits are explicit; no supported curation defect was found.
+
+## Scope And Provenance
+
+Exact final record and CREATE sidecar assessed against claimed original evidence.
+
+Selection: Assigned frozen path; inspect preceded final field-by-field judgment. Preliminary source assessment and initial record read occurred earlier and are disclosed.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base d57f45621cbe465eb13dfb6cc26cc4197d98f90e.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:cryptomelane | data/records/cryptomelane.yaml | maintained | Cryptomelane |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Named record validation | passed | True | cmmmech:cryptomelane | Reviewer execution exit0; locked offline environment. |
+| Batch gate 1 | passed | True | cmmmech:cryptomelane | Coordinator execution 2026-10-14T08:26:37.417759+00:00 to 2026-10-14T08:30:04.266682+00:00; receipt and log hash checked. |
+| Batch gate 2 | passed | True | cmmmech:cryptomelane | Coordinator execution 2026-10-14T08:30:04.266767+00:00 to 2026-10-14T08:30:11.880507+00:00; receipt and log hash checked. |
+| Batch gate 3 | passed | True | cmmmech:cryptomelane | Coordinator execution 2026-10-14T08:30:11.880596+00:00 to 2026-10-14T08:30:17.021271+00:00; receipt and log hash checked. |
+
+## Scientific And Domain Assessments
+
+### K-bearing mineral versus sodium-rich structural analogue
+
+identity: supported. Targets: cmmmech:cryptomelane.
+
+IMA ideal K(Mn4+7Mn3+)O16 and literal 1982 s.p. ? notation are preserved. Neither mixed manganese ore nor sodium-rich analogue is equated with the species.
+
+### Abiotic material, conditions and comparators
+
+evidence: supported. Targets: cmmmech:cryptomelane.
+
+No organism or biomass is assigned to the thermal experiment. Unheated and lower-temperature materials are comparators; unspecified dissolution/batch replication and acid-only blank remain limitations.
+
+### Measured release versus modeled rate and phase interpretation
+
+quantity: supported. Targets: cmmmech:cryptomelane.
+
+Main/SI phase discrepancy, minor NiMnO3, absent Ni500 EXAFS fit and covarying morphology constrain lattice attribution. Spectral coefficients are not gravimetric yields; the headline 396-fold comparison is a fitted Kabai-coefficient ratio.
+
+### Exact bytes, source identity and execution evidence
+
+provenance: supported. Targets: cmmmech:cryptomelane.
+
+CREATE sidecar, inline event, named validation and actual batch gates agree with the inspected working changes.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/cryptomelane.yaml; Entire frozen record | supports | Field-by-field assessment after native inspect; record and CREATE sidecar remain unchanged. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September 2026 pages 1–2 and 51 | supports | Original retained authority row and field definitions visually inspected. Approved status A and special-procedure notation are retained without inventing a YYYY-NNN accession. |
+| handbook | https://handbookofmineralogy.org/pdfs/cryptomelane.pdf; Complete one-page entry | supports | Original identity, formula and crystal data visually inspected; mineral identity does not inherit commodity criticality. |
+| history | history/records/cryptomelane/2026-10-14T082208Z-codex-853a2a.yaml; Complete CREATE session and corresponding inline event | supports | Actual codex/GPT-6/codex actor, target and timestamps agree. No historical authorship was inferred and reviewer made no record or sidecar edit. |
+| dedup | /private/tmp/cmm-round66-mn-root-review/dedup.txt; Scoped repository inventory including hidden and ignored files | context_only | Maintained owners, prior research and history references checked. Related manganese owners and prior handoffs are not mistaken for duplicate species records. |
+| named | /private/tmp/cmm-round66-mn-root-review/cryptomelane-validation.log; Entire reviewer-executed named validation log | supports | Locked offline named validation passed with one record and zero failures. |
+| batch | /private/tmp/cmm-round66-final-gates.json; Actual final gate receipt and original log | supports | Coordinator just check, nonempty validation and trusted-base history validation passed. Reviewer checked command results, receipt identity and log hash. |
+| yin | https://doi.org/10.1016/j.gca.2022.07.014; Accepted manuscript: title/abstract, full Methods/Results/Discussion/Conclusions, Tables 1–2 and all ten main figures | supports | Read manuscript scientific body and inspected all ten original figure panels. K-bearing synthetic birnessite powders aged in sealed dark storage were heated in air; source-assigned cryptomelane products show slower acid release. Ni500 contains minor NiMnO3; complete dissolution occurs after about 50 days. Bibliography was not exhaustively followed. |
+| yin_si | https://ars.els-cdn.com/content/image/1-s2.0-S0016703722003635-mmc1.docx; All four original tables and five embedded figures | partial | Reviewer acquired the confirmed-PII publisher supplement and independently read original table XML and visually inspected all five embedded TIFF figures after display conversion. Table S2 gives HB400 coefficients 0.91 cryptomelane/0.09 birnessite, qualifying main-text full conversion. Table S1 printed HB300 Mn(IV) total disagrees with component sum; no corrected value is invented. Figure S5 concerns Ni200, not Ni500. |
+| grangeon | https://doi.org/10.1186/s12932-015-0028-y; Full scientific body, all twelve figures, Table 1 and both additional files | context_only | Read main text and visually inspected pages 1–14, all figures and relevant supplements. Sodium-rich precursor aged ten years at pH 3/4 produces cryptomelane-like domains; pH 8/10 remains layered. A K-bearing structural model does not establish K-dominant composition. Type-2/3 intermediates are inferred; heterogeneous tunnel structures and preparation sensitivity remain explicit. |
+| metadata | https://api.crossref.org/works/10.1016/j.gca.2022.07.014; Crossref metadata, White Rose landing and manuscript title page | supports | DOI, title, authors, journal and 2022 publication agree. Correct publisher PII S0016703722003635 matches the complete supplement; one unsuccessful alternative candidate URL is not used as source identity. |
+| notices | https://eprints.whiterose.ac.uk/id/eprint/189846/; Live independent bounded queries on 2026-10-14 UTC | context_only | No affecting notice surfaced in returned correction/retraction searches. Grangeon versus Yin aging results differ in feed chemistry and crystallinity, so they are condition-dependent context, not a direct refutation. |
+
+## Limits And Additional Notes
+
+- Main-text full-conversion wording is qualified by spectral fitting and mixed phases.
+- Ni500 phase-specific nickel allocation and sole causal mechanism remain unresolved.
+- Fitted dissolution coefficients are not universal instantaneous rates or recovery yields.
+- Grangeon uses a sodium-rich structural analogue; new NSR2026 and GCA2025 search leads remain unassessed.
+- Reviewer corrections: none. Frozen hashes remain unchanged.
+- Raw copyrighted originals and figures remain outside Git.
+- Native review-check and exact corpus scientific coverage are subsequent publication gates.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T083041Z-cryptomelane-round66-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of cryptomelane
+started_at: '2026-10-14T08:26:23.697285Z'
+finished_at: '2026-10-14T08:30:41.547594Z'
+reviewer:
+  identity: codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Record, history and Mn dossier authored by /root/round66_manganese.
+    Reviewer independently read originals and made no record/history edits. Reviewer
+    shared newly acquired Yin2022 SI with curator; acquisition was shared, assessment
+    independent. Root authored batch documentation.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The frozen record supports potassium-bearing mineral identity and a narrowly
+  scoped abiotic thermal transformation/acid-release experiment. Phase, denominator,
+  kinetic-fit and analogue limits are explicit; no supported curation defect was found.
+source:
+  git_revision: d57f45621cbe465eb13dfb6cc26cc4197d98f90e
+  state: working_tree
+  inputs:
+  - path: data/records/cryptomelane.yaml
+    sha256: 8f3ceff3c9ac3b8f9d08cb0168e1d57d9a92ed03e13957b50c803e91296a6131
+    role: target
+  - path: history/records/cryptomelane/2026-10-14T082208Z-codex-853a2a.yaml
+    sha256: 5d6b0f5b040dfe7d7ac2bdd570712472327d470ef155a99ee980296859fe7c90
+    role: context
+scope:
+  description: Exact final record and CREATE sidecar assessed against claimed original
+    evidence.
+  selection: Assigned frozen path; inspect preceded final field-by-field judgment.
+    Preliminary source assessment and initial record read occurred earlier and are
+    disclosed.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:cryptomelane
+targets:
+- kind: maintained
+  label: Cryptomelane
+  owner_paths:
+  - path: data/records/cryptomelane.yaml
+    repository: CultureBotAI/CMMMech
+    role: maintained_record
+  path: data/records/cryptomelane.yaml
+  target_id: cmmmech:cryptomelane
+checks:
+- check_id: named
+  name: Named record validation
+  command: uv run --locked cmmmech validate data/records/cryptomelane.yaml
+  status: passed
+  required: true
+  summary: Reviewer execution exit0; locked offline environment.
+  target_ids:
+  - cmmmech:cryptomelane
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Batch gate 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T08:26:37.417759+00:00 to 2026-10-14T08:30:04.266682+00:00;
+    receipt and log hash checked.
+  target_ids:
+  - cmmmech:cryptomelane
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T08:30:04.266767+00:00 to 2026-10-14T08:30:11.880507+00:00;
+    receipt and log hash checked.
+  target_ids:
+  - cmmmech:cryptomelane
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Batch gate 3
+  command: uv run --locked cmmmech validate-history --base d57f45621cbe465eb13dfb6cc26cc4197d98f90e
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T08:30:11.880596+00:00 to 2026-10-14T08:30:17.021271+00:00;
+    receipt and log hash checked.
+  target_ids:
+  - cmmmech:cryptomelane
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/cryptomelane.yaml
+  locator: Entire frozen record
+  accessed_at: '2026-10-14T08:30:41.547594Z'
+  support: supports
+  summary: Field-by-field assessment after native inspect; record and CREATE sidecar
+    remain unchanged.
+  snapshot_sha256: 8f3ceff3c9ac3b8f9d08cb0168e1d57d9a92ed03e13957b50c803e91296a6131
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September 2026 pages 1–2 and 51
+  accessed_at: '2026-10-14T08:30:41.547594Z'
+  support: supports
+  summary: Original retained authority row and field definitions visually inspected.
+    Approved status A and special-procedure notation are retained without inventing
+    a YYYY-NNN accession.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://handbookofmineralogy.org/pdfs/cryptomelane.pdf
+  locator: Complete one-page entry
+  accessed_at: '2026-10-14T08:30:41.547594Z'
+  support: supports
+  summary: Original identity, formula and crystal data visually inspected; mineral
+    identity does not inherit commodity criticality.
+  snapshot_sha256: 02e8d4eae6186b3540a9da96ff2e8a0a457ce0c20d0cd532ee671ea1b3a77a07
+- evidence_id: history
+  kind: record_content
+  reference: history/records/cryptomelane/2026-10-14T082208Z-codex-853a2a.yaml
+  locator: Complete CREATE session and corresponding inline event
+  accessed_at: '2026-10-14T08:30:41.547594Z'
+  support: supports
+  summary: Actual codex/GPT-6/codex actor, target and timestamps agree. No historical
+    authorship was inferred and reviewer made no record or sidecar edit.
+  snapshot_sha256: 5d6b0f5b040dfe7d7ac2bdd570712472327d470ef155a99ee980296859fe7c90
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round66-mn-root-review/dedup.txt
+  locator: Scoped repository inventory including hidden and ignored files
+  accessed_at: '2026-10-14T08:30:41.547594Z'
+  support: context_only
+  summary: Maintained owners, prior research and history references checked. Related
+    manganese owners and prior handoffs are not mistaken for duplicate species records.
+  search_scope: rg --no-ignore --hidden --follow -n -i 'cryptomelane|roman.chite|GCA.2022.07.014'
+    data/records research history; no machinewide absence claim.
+  snapshot_sha256: ecc92eb86dbed18cb7ab623cdcd7de45a23a4b7cf5a20fcb8fc43e2ca7621979
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round66-mn-root-review/cryptomelane-validation.log
+  locator: Entire reviewer-executed named validation log
+  accessed_at: '2026-10-14T08:30:41.547594Z'
+  support: supports
+  summary: Locked offline named validation passed with one record and zero failures.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round66-final-gates.json
+  locator: Actual final gate receipt and original log
+  accessed_at: '2026-10-14T08:30:41.547594Z'
+  support: supports
+  summary: Coordinator just check, nonempty validation and trusted-base history validation
+    passed. Reviewer checked command results, receipt identity and log hash.
+  snapshot_sha256: f770d6a65bb5b55e55ec2ef08ddfa02330dab31a1f87a26af94b2b92150a28dc
+- evidence_id: yin
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.gca.2022.07.014
+  locator: 'Accepted manuscript: title/abstract, full Methods/Results/Discussion/Conclusions,
+    Tables 1–2 and all ten main figures'
+  accessed_at: '2026-10-14T08:30:41.547594Z'
+  support: supports
+  summary: Read manuscript scientific body and inspected all ten original figure panels.
+    K-bearing synthetic birnessite powders aged in sealed dark storage were heated
+    in air; source-assigned cryptomelane products show slower acid release. Ni500
+    contains minor NiMnO3; complete dissolution occurs after about 50 days. Bibliography
+    was not exhaustively followed.
+  snapshot_sha256: e979254fb8855f456149dfd373f30fbd99bce95b7d1c1621f48e6fab85a6a14b
+- evidence_id: yin_si
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S0016703722003635-mmc1.docx
+  locator: All four original tables and five embedded figures
+  accessed_at: '2026-10-14T08:30:41.547594Z'
+  support: partial
+  summary: Reviewer acquired the confirmed-PII publisher supplement and independently
+    read original table XML and visually inspected all five embedded TIFF figures
+    after display conversion. Table S2 gives HB400 coefficients 0.91 cryptomelane/0.09
+    birnessite, qualifying main-text full conversion. Table S1 printed HB300 Mn(IV)
+    total disagrees with component sum; no corrected value is invented. Figure S5
+    concerns Ni200, not Ni500.
+  snapshot_sha256: d4d010e9e82f53afa3d4321e8945422f599c26f292dc384c43a18a2182297218
+- evidence_id: grangeon
+  kind: primary_source
+  reference: https://doi.org/10.1186/s12932-015-0028-y
+  locator: Full scientific body, all twelve figures, Table 1 and both additional files
+  accessed_at: '2026-10-14T08:30:41.547594Z'
+  support: context_only
+  summary: Read main text and visually inspected pages 1–14, all figures and relevant
+    supplements. Sodium-rich precursor aged ten years at pH 3/4 produces cryptomelane-like
+    domains; pH 8/10 remains layered. A K-bearing structural model does not establish
+    K-dominant composition. Type-2/3 intermediates are inferred; heterogeneous tunnel
+    structures and preparation sensitivity remain explicit.
+  snapshot_sha256: 26c1298b199680348e24b0a1583df56055a4f7ff27254536d6ec9954eea55df9
+- evidence_id: metadata
+  kind: database
+  reference: https://api.crossref.org/works/10.1016/j.gca.2022.07.014
+  locator: Crossref metadata, White Rose landing and manuscript title page
+  accessed_at: '2026-10-14T08:30:41.547594Z'
+  support: supports
+  summary: DOI, title, authors, journal and 2022 publication agree. Correct publisher
+    PII S0016703722003635 matches the complete supplement; one unsuccessful alternative
+    candidate URL is not used as source identity.
+  snapshot_sha256: 85c312e5cece878529afe40f8ef60d97b2ddd334e86b614078f21f435301d4ed
+- evidence_id: notices
+  kind: search
+  reference: https://eprints.whiterose.ac.uk/id/eprint/189846/
+  locator: Live independent bounded queries on 2026-10-14 UTC
+  accessed_at: '2026-10-14T08:30:41.547594Z'
+  support: context_only
+  summary: No affecting notice surfaced in returned correction/retraction searches.
+    Grangeon versus Yin aging results differ in feed chemistry and crystallinity,
+    so they are condition-dependent context, not a direct refutation.
+  search_scope: 'Queries: "10.1186/s12932-015-0028-y" correction retraction cryptomelane;
+    "cryptomelane formation" "2015" sodium potassium Grangeon; "10.1016/j.gca.2022.07.014"
+    correction erratum retraction; "cryptomelane" "Yin" "2022" dissolution nickel.
+    First result sets, no explicit domain/date filters or pagination. Not universal
+    notice absence.'
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: K-bearing mineral versus sodium-rich structural analogue
+  outcome: supported
+  summary: IMA ideal K(Mn4+7Mn3+)O16 and literal 1982 s.p. ? notation are preserved.
+    Neither mixed manganese ore nor sodium-rich analogue is equated with the species.
+  target_ids:
+  - cmmmech:cryptomelane
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  - grangeon
+  dimensions:
+  - name: criticality
+    value: No jurisdiction/list/edition designation asserted
+    definition: Omission is not a universal noncritical classification.
+    evidence_ids:
+    - record
+- assessment_id: experiment
+  area: evidence
+  topic: Abiotic material, conditions and comparators
+  outcome: supported
+  summary: No organism or biomass is assigned to the thermal experiment. Unheated
+    and lower-temperature materials are comparators; unspecified dissolution/batch
+    replication and acid-only blank remain limitations.
+  target_ids:
+  - cmmmech:cryptomelane
+  evidence_ids:
+  - record
+  - yin
+  - yin_si
+  dimensions:
+  - name: biomass_state
+    value: None; microbial:false
+    definition: Chemically synthesized potassium-bearing powders, not biological products.
+    evidence_ids:
+    - yin
+  - name: conditions
+    value: Eight-year powders; approximately 0.1 g heated in air, 10 degrees C/min
+      and 2 h holds
+    definition: Source condition range 50–500 degrees C.
+    evidence_ids:
+    - yin
+  - name: substrate_and_assay
+    value: 0.0400 g solid in 250 mL 2 M HCl at 37 degrees C
+    definition: 0.22 micrometre filtered aliquots measured by AAS; not biological
+      uptake.
+    evidence_ids:
+    - yin
+- assessment_id: outcome
+  area: quantity
+  topic: Measured release versus modeled rate and phase interpretation
+  outcome: supported
+  summary: Main/SI phase discrepancy, minor NiMnO3, absent Ni500 EXAFS fit and covarying
+    morphology constrain lattice attribution. Spectral coefficients are not gravimetric
+    yields; the headline 396-fold comparison is a fitted Kabai-coefficient ratio.
+  target_ids:
+  - cmmmech:cryptomelane
+  evidence_ids:
+  - record
+  - yin
+  - yin_si
+  dimensions:
+  - name: denominator
+    value: Dissolved fraction normalized to final complete dissolution
+    definition: Not independent feed mass balance or recovered-product yield.
+    evidence_ids:
+    - yin
+  - name: deployment
+    value: Laboratory reagent assay
+    definition: No industrial treatment, biological availability or permanent immobilization
+      demonstrated.
+    evidence_ids:
+    - yin
+- assessment_id: provenance
+  area: provenance
+  topic: Exact bytes, source identity and execution evidence
+  outcome: supported
+  summary: CREATE sidecar, inline event, named validation and actual batch gates agree
+    with the inspected working changes.
+  target_ids:
+  - cmmmech:cryptomelane
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - dedup
+  - metadata
+  - notices
+findings: []
+actions: []
+limitations:
+- Main-text full-conversion wording is qualified by spectral fitting and mixed phases.
+- Ni500 phase-specific nickel allocation and sole causal mechanism remain unresolved.
+- Fitted dissolution coefficients are not universal instantaneous rates or recovery
+  yields.
+- Grangeon uses a sodium-rich structural analogue; new NSR2026 and GCA2025 search
+  leads remain unassessed.
+notes:
+- 'Reviewer corrections: none. Frozen hashes remain unchanged.'
+- Raw copyrighted originals and figures remain outside Git.
+- Native review-check and exact corpus scientific coverage are subsequent publication
+  gates.
+tags:
+- round66
+- independent
+- cryptomelane
+- primary-figures
+```

@@ -1,0 +1,882 @@
+{
+  "assessment_utc": "2026-10-14T08:24:08.941989+00:00",
+  "researcher": "Codex (GPT-6; codex), /root/round66_manganese",
+  "base": "d57f45621cbe465eb13dfb6cc26cc4197d98f90e",
+  "worktree": "/private/tmp/CMMMech-expansion-round66-20261014",
+  "scope": "Two distinct mineral owners: cryptomelane with abiotic potassium-bearing transformation/acid-release evidence; Romanèchite identity and bounded mixed-ore context without a mineral-specific microbial mechanism. Separate from independent scientific review.",
+  "search": {
+    "queries": [
+      "cryptomelane bacteria manganese reduction Sasaki mineral",
+      "\"cryptomelane\" \"microbial\" reduction original",
+      "\"romanechite\" \"Pracejus\" bacteria",
+      "\"romanechite\" \"bacteria\" dissolution",
+      "\"romanechite\" fungi leaching",
+      "\"cryptomelane formation\" \"Grangeon\" 2015 correction retraction",
+      "\"Bohu\" \"03844-15\" pdf",
+      "\"Biological Low-pH\" filetype:pdf",
+      "\"10.1128/AEM.03844-15\" correction retraction",
+      "\"10.1016/j.gca.2022.07.014\" supplement correction",
+      "\"Effect and fate of Ni\" supplement",
+      "\"Effect and fate of Ni\" \"mmc1\"",
+      "\"10.1016/j.gca.2022.07.014\" \"Supporting\"",
+      "\"Effect and fate of Ni during aging\" sciencedirect"
+    ],
+    "provider": "web.run search_query",
+    "date_utc": "2026-10-14",
+    "filters": "No domain or recency restrictions; first result set per query, no further pagination",
+    "limits": "Bounded candidate and notice search, not exhaustive; no identified correction notice is not proof none exists. Original sources, not snippets, support accepted claims."
+  },
+  "deduplication": {
+    "output": "/private/tmp/cmm-round66-manganese-research/dedup.txt",
+    "sha256": "5afb568e499c92b7ace4380370399ad38a8c081d916e50ad418566f8843da858",
+    "scope": "Hidden and ignored files included within these named roots, following relevant symlinks; not a machine-wide binary-content search. No current exact owner found before creation; existing mixed-ore mentions retained as prior context. Pracejus is a known prior lead, not a newly discovered study.",
+    "command_summary": "rg --hidden --no-ignore --follow -ni <cryptomelane|romanechite|romanèchite|5c04278|2c00342 and exact candidate DOI patterns> data/records research reviews history .claude docs /private/tmp/cmm-round64-manganese-research /private/tmp/cmm-round65-manganese-research",
+    "command_capture_note": "This summarizes the initial bounded searches; a complete per-command initial receipt was not retained. The original output hash remains pinned. A precise post-curation rerun is attached below and is not represented as pre-creation evidence.",
+    "post_curation_recheck": {
+      "checked_at": "2026-10-14T08:29:29.520332+00:00",
+      "command": [
+        "rg",
+        "--hidden",
+        "--no-ignore",
+        "--follow",
+        "-ni",
+        "cryptomelane|romanechite|romanèchite|5c04278|2c00342|s12932-015-0028|AEM.03844-15|gca.2022.07.014",
+        "data/records",
+        "research",
+        "reviews",
+        "history",
+        ".claude",
+        "docs",
+        "/private/tmp/cmm-round64-manganese-research",
+        "/private/tmp/cmm-round65-manganese-research"
+      ],
+      "cwd": "/private/tmp/CMMMech-expansion-round66-20261014",
+      "exit_code": 0,
+      "stdout": "/private/tmp/cmm-round66-manganese-research/dedup-post-curation.txt",
+      "stdout_sha256": "957e9439a16ce473239dffe23451f4caa3587c478d35d74db8cd3b1770a064ce",
+      "stderr": "/private/tmp/cmm-round66-manganese-research/dedup-post-curation.stderr.txt",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "outcome": "The new cryptomelane and Romanèchite owners and prior contextual references are present; this rerun does not claim that the newly created owners were absent."
+    }
+  },
+  "records": [
+    {
+      "record": "data/records/cryptomelane.yaml",
+      "history": "history/records/cryptomelane/2026-10-14T082208Z-codex-853a2a.yaml",
+      "sha256": "8f3ceff3c9ac3b8f9d08cb0168e1d57d9a92ed03e13957b50c803e91296a6131",
+      "history_sha256": "5d6b0f5b040dfe7d7ac2bdd570712472327d470ef155a99ee980296859fe7c90"
+    },
+    {
+      "record": "data/records/romanechite.yaml",
+      "history": "history/records/romanechite/2026-10-14T082212Z-codex-849047.yaml",
+      "sha256": "d3f4c0ab0c19ac3b8881248c867cdca60268e176aa1ae7a04770777270ac2ac8",
+      "history_sha256": "76ccc29fb7d202720fa20fa1badb7c3bfa9dca7de6de2538039554e486dbaf35"
+    }
+  ],
+  "validation": {
+    "checked_at": "2026-10-14T08:24:13.921263+00:00",
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "cmmmech",
+      "validate",
+      "data/records/cryptomelane.yaml",
+      "data/records/romanechite.yaml"
+    ],
+    "exit_code": 0,
+    "stdout": "Checked 2 record(s); 0 failed.\n",
+    "stderr": ""
+  },
+  "baseline": {
+    "receipt": "/private/tmp/cmm-round66-baseline.json",
+    "sha256": "deb2c798bb499fccf54c0d3d7b49f6be70719701c39c49fcae0bff41e7d57903",
+    "result": "Root confirmed baseline just check passed before creation, 317 passed and 3 skipped."
+  },
+  "acquisition": [
+    {
+      "file": "/private/tmp/cmm-round66-manganese-research/grangeon2015.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4556320/fullTextXML",
+      "time": "2026-10-14T08:12:20.553500+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4556320/fullTextXML",
+      "content_type": "application/xml",
+      "bytes": 158340,
+      "sha256": "96c5dcc5f7c37330dab917f19af9eb5f35da9f52486624f7482e8a49c5e32574",
+      "signature": "b'\\n<!DOCTYPE a'",
+      "receipt_file": "/private/tmp/cmm-round66-manganese-research/acquisition.json"
+    },
+    {
+      "file": "/private/tmp/cmm-round66-manganese-research/grangeon2015.pdf",
+      "requested_url": "https://geochemicaltransactions.biomedcentral.com/counter/pdf/10.1186/s12932-015-0028-y.pdf",
+      "time": "2026-10-14T08:12:23.002981+00:00",
+      "status": 200,
+      "final_url": "https://link.springer.com/content/pdf/10.1186/s12932-015-0028-y.pdf",
+      "content_type": "application/pdf",
+      "bytes": 3465253,
+      "sha256": "26c1298b199680348e24b0a1583df56055a4f7ff27254536d6ec9954eea55df9",
+      "signature": "b'%PDF-1.6\\n%\\xe2\\xe3'",
+      "redirect_note": "Transient cookie-check query omitted; stable requested URL retained.",
+      "receipt_file": "/private/tmp/cmm-round66-manganese-research/acquisition.json"
+    },
+    {
+      "file": "/private/tmp/cmm-round66-manganese-research/cryptomelane-handbook.pdf",
+      "requested_url": "https://handbookofmineralogy.org/pdfs/cryptomelane.pdf",
+      "time": "2026-10-14T08:12:27.739753+00:00",
+      "status": 200,
+      "final_url": "https://handbookofmineralogy.org/pdfs/cryptomelane.pdf",
+      "content_type": "application/pdf",
+      "bytes": 58619,
+      "sha256": "02e8d4eae6186b3540a9da96ff2e8a0a457ce0c20d0cd532ee671ea1b3a77a07",
+      "signature": "b'%PDF-1.6\\r%\\xe2\\xe3'",
+      "receipt_file": "/private/tmp/cmm-round66-manganese-research/acquisition.json"
+    },
+    {
+      "file": "/private/tmp/cmm-round66-manganese-research/romanechite-handbook.pdf",
+      "requested_url": "https://handbookofmineralogy.org/pdfs/romanechite.pdf",
+      "time": "2026-10-14T08:12:28.227414+00:00",
+      "status": 200,
+      "final_url": "https://handbookofmineralogy.org/pdfs/romanechite.pdf",
+      "content_type": "application/pdf",
+      "bytes": 58316,
+      "sha256": "0e72cd702c3cd9d08bde7bf55297d7b6078609881910870fbe76094d6ea669c8",
+      "signature": "b'%PDF-1.6\\r%\\xe2\\xe3'",
+      "receipt_file": "/private/tmp/cmm-round66-manganese-research/acquisition.json"
+    },
+    {
+      "file": "/private/tmp/cmm-round66-manganese-research/sasaki2009-report.pdf",
+      "requested_url": "https://www.saga-ls.jp/site_files/file/Publication/Experiment%20Report/H21/N/090871N_sasaki.pdf",
+      "time": "2026-10-14T08:12:28.367637+00:00",
+      "error": "HTTP Error 404: Not Found",
+      "receipt_file": "/private/tmp/cmm-round66-manganese-research/acquisition.json"
+    },
+    {
+      "file": "/private/tmp/cmm-round66-manganese-research/grangeon2015-crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.1186/s12932-015-0028-y",
+      "time": "2026-10-14T08:12:29.363353+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1186/s12932-015-0028-y",
+      "content_type": "application/json",
+      "bytes": 40022,
+      "sha256": "3d330eb602271c0971e51f7fd9bbed2fda767ee638bb2537a65b8e01d75394da",
+      "signature": "b'{\"status\":\"o'",
+      "receipt_file": "/private/tmp/cmm-round66-manganese-research/acquisition.json"
+    },
+    {
+      "file": "/private/tmp/cmm-round66-manganese-research/boh2016-crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.1128/AEM.03844-15",
+      "time": "2026-10-14T08:12:29.744230+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1128/AEM.03844-15",
+      "content_type": "application/json",
+      "bytes": 17861,
+      "sha256": "441ba5586d3b1fb9da4dabc2b2141073c67690e2e42d0e45b8cfb479ef82e860",
+      "signature": "b'{\"status\":\"o'",
+      "receipt_file": "/private/tmp/cmm-round66-manganese-research/acquisition.json"
+    },
+    {
+      "file": "/private/tmp/cmm-round66-manganese-research/boh2016-epmc.json",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1128%2FAEM.03844-15&format=json",
+      "time": "2026-10-14T08:12:30.180958+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1128%2FAEM.03844-15&format=json",
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 1136,
+      "sha256": "f9f5b91c2722b29791e4b0bc10817d629e5034662376d9c9d656f7fc4220dbec",
+      "signature": "b'{\"version\":\"'",
+      "receipt_file": "/private/tmp/cmm-round66-manganese-research/acquisition.json"
+    },
+    {
+      "file": "/private/tmp/cmm-round66-manganese-research/ima-home.html",
+      "requested_url": "https://cnmnc.units.it/",
+      "time": "2026-10-14T08:12:31.023412+00:00",
+      "status": 200,
+      "final_url": "https://cnmnc.units.it/",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 26639,
+      "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9",
+      "signature": "b'<!DOCTYPE ht'",
+      "receipt_file": "/private/tmp/cmm-round66-manganese-research/acquisition.json"
+    },
+    {
+      "file": "/private/tmp/cmm-round66-manganese-research/grangeon2015-si1.doc",
+      "requested_url": "https://static-content.springer-cdn.com/esm/art%3A10.1186%2Fs12932-015-0028-y/MediaObjects/12932_2015_28_MOESM1_ESM.doc",
+      "time": "2026-10-14T08:13:36.152969+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "receipt_file": "/private/tmp/cmm-round66-manganese-research/acquisition2.json"
+    },
+    {
+      "file": "/private/tmp/cmm-round66-manganese-research/grangeon2015-si2.doc",
+      "requested_url": "https://static-content.springer-cdn.com/esm/art%3A10.1186%2Fs12932-015-0028-y/MediaObjects/12932_2015_28_MOESM2_ESM.doc",
+      "time": "2026-10-14T08:13:36.203673+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "receipt_file": "/private/tmp/cmm-round66-manganese-research/acquisition2.json"
+    },
+    {
+      "file": "/private/tmp/cmm-round66-manganese-research/bohu2016.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4959070/fullTextXML",
+      "time": "2026-10-14T08:13:36.205921+00:00",
+      "error": "HTTP Error 500: ",
+      "receipt_file": "/private/tmp/cmm-round66-manganese-research/acquisition2.json"
+    },
+    {
+      "file": "/private/tmp/cmm-round66-manganese-research/bohu2016.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4959070/",
+      "time": "2026-10-14T08:13:37.081131+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4959070/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 21315,
+      "sha256": "a91df54aa3ee69fdd5c86697913fdb36728e1db60328c158bfcd27e879bbd202",
+      "signature": "b'<!doctype ht'",
+      "receipt_file": "/private/tmp/cmm-round66-manganese-research/acquisition2.json"
+    },
+    {
+      "file": "/private/tmp/cmm-round66-manganese-research/bohu2016.pdf",
+      "requested_url": "https://journals.asm.org/doi/pdf/10.1128/AEM.03844-15",
+      "time": "2026-10-14T08:13:37.324211+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "receipt_file": "/private/tmp/cmm-round66-manganese-research/acquisition2.json"
+    },
+    {
+      "file": "/private/tmp/cmm-round66-manganese-research/grangeon2015-si1.doc",
+      "requested_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12932-015-0028-y/MediaObjects/12932_2015_28_MOESM1_ESM.doc",
+      "time": "2026-10-14T08:14:09.980356+00:00",
+      "status": 200,
+      "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12932-015-0028-y/MediaObjects/12932_2015_28_MOESM1_ESM.doc",
+      "content_type": "application/octet-stream",
+      "bytes": 40960,
+      "sha256": "513ba24ccaffcffb621bddbb38053a1a1abdb4251328e32de4253639bbe1b157",
+      "signature": "b'\\xd0\\xcf\\x11\\xe0\\xa1\\xb1\\x1a\\xe1\\x00\\x00\\x00\\x00'",
+      "receipt_file": "/private/tmp/cmm-round66-manganese-research/acquisition3.json"
+    },
+    {
+      "file": "/private/tmp/cmm-round66-manganese-research/grangeon2015-si2.doc",
+      "requested_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12932-015-0028-y/MediaObjects/12932_2015_28_MOESM2_ESM.doc",
+      "time": "2026-10-14T08:14:10.282145+00:00",
+      "status": 200,
+      "final_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12932-015-0028-y/MediaObjects/12932_2015_28_MOESM2_ESM.doc",
+      "content_type": "application/octet-stream",
+      "bytes": 93696,
+      "sha256": "b4eabda5ad18155a5dd2cc0eef011f41a10dcd31e4d8a2cac777de3a4d1ff429",
+      "signature": "b'\\xd0\\xcf\\x11\\xe0\\xa1\\xb1\\x1a\\xe1\\x00\\x00\\x00\\x00'",
+      "receipt_file": "/private/tmp/cmm-round66-manganese-research/acquisition3.json"
+    },
+    {
+      "file": "/private/tmp/cmm-round66-manganese-research/nickel2022.pdf",
+      "requested_url": "https://eprints.whiterose.ac.uk/id/eprint/189846/3/GCA-D-21-00834R1_AAM.pdf",
+      "time": "2026-10-14T08:15:16.686622+00:00",
+      "status": 200,
+      "final_url": "https://eprints.whiterose.ac.uk/id/eprint/189846/3/GCA-D-21-00834R1_AAM.pdf",
+      "content_type": "application/pdf",
+      "bytes": 1489636,
+      "sha256": "e979254fb8855f456149dfd373f30fbd99bce95b7d1c1621f48e6fab85a6a14b",
+      "signature": "b'%PDF-1.7\\n%\\xc7\\xec'",
+      "receipt_file": "/private/tmp/cmm-round66-manganese-research/acquisition4.json"
+    },
+    {
+      "file": "/private/tmp/cmm-round66-manganese-research/bohu2016-epmc-full.html",
+      "requested_url": "https://europepmc.org/articles/PMC4959070",
+      "time": "2026-10-14T08:15:19.256128+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "receipt_file": "/private/tmp/cmm-round66-manganese-research/acquisition4.json"
+    },
+    {
+      "file": "/private/tmp/cmm-round66-manganese-research/bohu2016-usgs.html",
+      "requested_url": "https://pubs.usgs.gov/publication/70173848",
+      "time": "2026-10-14T08:15:19.358656+00:00",
+      "status": 200,
+      "final_url": "https://pubs.usgs.gov/publication/70173848",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 53688,
+      "sha256": "66a259ce1ceff2d4d1f8fefbf9fe613b3961327caee7ef8ebf5aaa55f1c6de98",
+      "signature": "b'\\n\\n<!DOCTYPE '",
+      "receipt_file": "/private/tmp/cmm-round66-manganese-research/acquisition4.json"
+    },
+    {
+      "file": "/private/tmp/cmm-round66-manganese-research/nickel2022-crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.1016/j.gca.2022.07.014",
+      "time": "2026-10-14T08:16:36.396003+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1016/j.gca.2022.07.014",
+      "content_type": "application/json",
+      "bytes": 31369,
+      "sha256": "85c312e5cece878529afe40f8ef60d97b2ddd334e86b614078f21f435301d4ed",
+      "signature": "b'{\"status\":\"o'",
+      "receipt_file": "/private/tmp/cmm-round66-manganese-research/acquisition5.json"
+    },
+    {
+      "file": "/private/tmp/cmm-round66-manganese-research/nickel2022-landing.html",
+      "requested_url": "https://www.sciencedirect.com/science/article/pii/S0016703722003477",
+      "time": "2026-10-14T08:16:36.843434+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "identity_note": "Unverified exploratory PII route failed; actual source PII S0016703722003635 subsequently confirmed by Crossref. Not evidence.",
+      "receipt_file": "/private/tmp/cmm-round66-manganese-research/acquisition5.json"
+    },
+    {
+      "file": "/private/tmp/cmm-round66-manganese-research/bohu2016-publisher.html",
+      "requested_url": "https://journals.asm.org/doi/10.1128/aem.03844-15",
+      "time": "2026-10-14T08:16:36.909916+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "receipt_file": "/private/tmp/cmm-round66-manganese-research/acquisition5.json"
+    },
+    {
+      "name": "yin2022-si-docx",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703722003635-mmc1.docx",
+      "started_at": "2026-10-14T08:17:43.731179+00:00",
+      "scope": "Candidate asset URL using Crossref-confirmed PII; not asserted as authoritative SI until content verified",
+      "status": 200,
+      "final_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703722003635-mmc1.docx",
+      "content_type": "application/word",
+      "path": "/private/tmp/cmm-round66-mn-root-review/yin2022-si-docx",
+      "bytes": 4432294,
+      "sha256": "d4d010e9e82f53afa3d4321e8945422f599c26f292dc384c43a18a2182297218",
+      "magic": "b'PK\\x03\\x04\\x14\\x00\\x06\\x00\\x08\\x00\\x00\\x00!\\x00I\\x12O\\x1f\\xa6\\x01'",
+      "acquisition_actor": "Root independent reviewer downloaded; curator subsequently read all tables/captions and visually inspected all five figures."
+    },
+    {
+      "name": "yin2022-si-pdf",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703722003635-mmc1.pdf",
+      "started_at": "2026-10-14T08:17:43.732024+00:00",
+      "scope": "Candidate asset URL using Crossref-confirmed PII; not asserted as authoritative SI until content verified",
+      "error": "HTTP Error 404: Not Found",
+      "acquisition_actor": "Root independent reviewer downloaded; curator subsequently read all tables/captions and visually inspected all five figures."
+    },
+    {
+      "name": "yin2022-si-doc",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0016703722003635-mmc1.doc",
+      "started_at": "2026-10-14T08:17:43.732317+00:00",
+      "scope": "Candidate asset URL using Crossref-confirmed PII; not asserted as authoritative SI until content verified",
+      "error": "HTTP Error 404: Not Found",
+      "acquisition_actor": "Root independent reviewer downloaded; curator subsequently read all tables/captions and visually inspected all five figures."
+    }
+  ],
+  "retained_rechecks": [
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/ima2026-09.pdf",
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "rechecked_utc": "2026-10-14T08:24:08.941989+00:00",
+      "provenance": "Round65 official acquisition, retained unchanged; not a fresh download. Original receipts in research/sources/round65-manganese/20261014T072650Z-source-investigation.json."
+    },
+    {
+      "path": "/private/tmp/cmm-round65-manganese-research/pracejus-thesis.pdf",
+      "sha256": "eed717c2737e90892366054f2f217b9aa15644526711923ec832c52ae08724a1",
+      "rechecked_utc": "2026-10-14T08:24:08.941989+00:00",
+      "provenance": "Round65 official acquisition, retained unchanged; not a fresh download. Original receipts in research/sources/round65-manganese/20261014T072650Z-source-investigation.json."
+    }
+  ],
+  "raw_files": [
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/acquisition.json",
+      "bytes": 4437,
+      "sha256": "15bd99618e4bc07ba1657a21c59f9d6542480b8f52db4da0e8b7e86da6a7d7cd"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/acquisition2.json",
+      "bytes": 1720,
+      "sha256": "89981cfdc343f2665430c14653c614a9b1563752cd68ba750aa88df342ccf66d"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/acquisition3.json",
+      "bytes": 1421,
+      "sha256": "af25e12f4634c2f4b7838c52451750ac0ad0b485fb5b042f3832a2e519b2cfcf"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/acquisition4.json",
+      "bytes": 1257,
+      "sha256": "921feffde5aaad4c9582447849941d554f7bc9878dbf304b27ce9ce7f9d02282"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/acquisition5.json",
+      "bytes": 1029,
+      "sha256": "5504dcf20e362d9d8c2261779c554bcf914d50202defd5b093f4a94b4fbf38e5"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/boh2016-crossref.json",
+      "bytes": 17861,
+      "sha256": "441ba5586d3b1fb9da4dabc2b2141073c67690e2e42d0e45b8cfb479ef82e860"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/boh2016-epmc.json",
+      "bytes": 1136,
+      "sha256": "f9f5b91c2722b29791e4b0bc10817d629e5034662376d9c9d656f7fc4220dbec"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/bohu2016-usgs.html",
+      "bytes": 53688,
+      "sha256": "66a259ce1ceff2d4d1f8fefbf9fe613b3961327caee7ef8ebf5aaa55f1c6de98"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/bohu2016.html",
+      "bytes": 21315,
+      "sha256": "a91df54aa3ee69fdd5c86697913fdb36728e1db60328c158bfcd27e879bbd202"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/cryptomelane-handbook-p1.png",
+      "bytes": 179591,
+      "sha256": "122f2a4c5818dc33fb74ae65bb4fd0120b0e92385f9ecfc3456fd6b7704e66a4"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/cryptomelane-handbook.pdf",
+      "bytes": 58619,
+      "sha256": "02e8d4eae6186b3540a9da96ff2e8a0a457ce0c20d0cd532ee671ea1b3a77a07"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/cryptomelane-handbook.txt",
+      "bytes": 3549,
+      "sha256": "373b593bbdc8c8fae6bd519094b6cba05a348be4913615d177c1170e90c3ca95"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/curated.json",
+      "bytes": 445,
+      "sha256": "d2727a66dff442ed13db323c014a8d9e76fd0b173dae39eaf2490ca02249a390"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/dedup.txt",
+      "bytes": 4320060,
+      "sha256": "5afb568e499c92b7ace4380370399ad38a8c081d916e50ad418566f8843da858"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015-crossref.json",
+      "bytes": 40022,
+      "sha256": "3d330eb602271c0971e51f7fd9bbed2fda767ee638bb2537a65b8e01d75394da"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015-p1.png",
+      "bytes": 161072,
+      "sha256": "92b11b61c094870a4739434c88bbd28369128b71deb3eae941d74c7b8460c555"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015-p10.png",
+      "bytes": 395272,
+      "sha256": "cc25194e38dd1efc4cd7573203d6091448a7ee61e3cdf5dcc287859a7afc8966"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015-p11.png",
+      "bytes": 332744,
+      "sha256": "fdaac912a3fad2c391d2d86a09808023feeef57a7d531c1e7258c6ef3c6b227e"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015-p12.png",
+      "bytes": 323536,
+      "sha256": "931e4dac8f526dbea7d27e0775c7d02039d8daf8812a9f782247086db8732a22"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015-p13.png",
+      "bytes": 195801,
+      "sha256": "ad30f215cb53337c67f11a407870e8bc7bd8126c468057038d12fc2745968bb2"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015-p14.png",
+      "bytes": 192298,
+      "sha256": "15a135951253740d1e156ce6784587f5cae4cf6cad750c4485de0c20bee3018a"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015-p15.png",
+      "bytes": 180295,
+      "sha256": "d7cfb775640a86de2f068f45d773e1692fd42b70c4a901177d1187bd32db0b6e"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015-p16.png",
+      "bytes": 52248,
+      "sha256": "7ecdc708099f733df2688ca2dce72fba2e79ba12a4edd58675b4795d4e24b7bd"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015-p2.png",
+      "bytes": 273258,
+      "sha256": "8ac8f7cfe8fd8b819682a6934663ba56a74911a401c7f808c471e38cfc88f906"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015-p3.png",
+      "bytes": 255980,
+      "sha256": "1343f73c5b8c1d354cb14100f664429f4a3d08480c3cc4ab7f9fa22dacc578d1"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015-p4.png",
+      "bytes": 251114,
+      "sha256": "ca356226148386ef4e3928c7cfa4519996ef1d6bd0366af76c9672e5f264b3c5"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015-p5.png",
+      "bytes": 166273,
+      "sha256": "3a700792c0c63177ca8d742da3db12296f8efc178f07699c41c223519f6b4e5d"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015-p6.png",
+      "bytes": 277866,
+      "sha256": "d7fcdaad4f16be907892a23c9bb1d38b693502cd1cd0b49d688959a0cb48a038"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015-p7.png",
+      "bytes": 315046,
+      "sha256": "2af836a94c070fba1247958be6ae8fdd3375a19b3968324c5cba37d4dc9059b3"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015-p8.png",
+      "bytes": 391896,
+      "sha256": "822e9aafc46717544ab8d7120dbe4c4981e889cc997395ee41dd698b53ae10dc"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015-p9.png",
+      "bytes": 322927,
+      "sha256": "493abd5b6b57264261f13e500635576f13f22df31f592c9002e30e2f70e8a085"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015-si1.doc",
+      "bytes": 40960,
+      "sha256": "513ba24ccaffcffb621bddbb38053a1a1abdb4251328e32de4253639bbe1b157"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015-si1.txt",
+      "bytes": 1170,
+      "sha256": "7708cf771b5e0a5b51be57b49f2a59dc61f4e28500636c730282027d2e787fa3"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015-si2-image-5885.png",
+      "bytes": 69336,
+      "sha256": "815ddb8c93ba6acbd34ba0d4a966e77238a6e5a0c4f52190a45ee4a573e9d456"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015-si2.doc",
+      "bytes": 93696,
+      "sha256": "b4eabda5ad18155a5dd2cc0eef011f41a10dcd31e4d8a2cac777de3a4d1ff429"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015-si2.html",
+      "bytes": 2930,
+      "sha256": "477651f494144fa4ddc6a1e10ee8064dba176e08184b9f3b565b380bbd118d12"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015.pdf",
+      "bytes": 3465253,
+      "sha256": "26c1298b199680348e24b0a1583df56055a4f7ff27254536d6ec9954eea55df9"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015.txt",
+      "bytes": 66264,
+      "sha256": "2435f16a9038d70d80399c00db25ce591fa451fd4aa51211b788942e97550ba3"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/grangeon2015.xml",
+      "bytes": 158340,
+      "sha256": "96c5dcc5f7c37330dab917f19af9eb5f35da9f52486624f7482e8a49c5e32574"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/ima-home.html",
+      "bytes": 26639,
+      "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/ima-p1.png",
+      "bytes": 228854,
+      "sha256": "82dcc70cd6a634dbce05f17d72a63b31e44e89d4f240f1f439805b998ced7e43"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/ima-p186.png",
+      "bytes": 258625,
+      "sha256": "005a83f9b6cc766dc3cd652bae6cfeba4e5e8c34bd897bc1921477b06552d875"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/ima-p2.png",
+      "bytes": 78398,
+      "sha256": "26663900a1939a8ea198f539eb36458a346a4d661cffbf5ecc50b01fc631f6e4"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/ima-p51.png",
+      "bytes": 259033,
+      "sha256": "21b9916058d162ede040b46a9790e8a99958638d72733b5a9f2366759f26ce8e"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/nickel2022-crossref.json",
+      "bytes": 31369,
+      "sha256": "85c312e5cece878529afe40f8ef60d97b2ddd334e86b614078f21f435301d4ed"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/nickel2022-p33.png",
+      "bytes": 46164,
+      "sha256": "f169f0b06788c9005f30edec47b37f8f636c0fb80c1e6219bca18737e93a62a2"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/nickel2022-p34.png",
+      "bytes": 144802,
+      "sha256": "db232b133f51fa40d615f40f825272aa653abb6537faa84c36bbf25ff318fcfa"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/nickel2022-p35.png",
+      "bytes": 302465,
+      "sha256": "2d171dcd962ae8e41baaacddf8cf8f113b2d0364e12532d63a77e9fa873cab5b"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/nickel2022-p36.png",
+      "bytes": 129788,
+      "sha256": "51ec4b70eb70e13d10f39e2498f3efceacd33197bcf3b2cb6f12022346d7a6e0"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/nickel2022-p37.png",
+      "bytes": 371415,
+      "sha256": "2251df075860d57aedf7c9ec90981712cbb2b530a4e42c25b95bc98f3e6d71dd"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/nickel2022-p38.png",
+      "bytes": 181059,
+      "sha256": "4b4bfc2dcd11ee090bd40eb794cb3cd4ae3a630bcae82cffe6bed452d1b9b33c"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/nickel2022-p39.png",
+      "bytes": 284418,
+      "sha256": "0ddce909998fabb15e7b86536cc7332da50417dd094b71a40534753a44d6a211"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/nickel2022-p40.png",
+      "bytes": 188199,
+      "sha256": "5c24a2fcf22cd43df43073b1e0e4c8e4cbfab6a7139284d867a1efd0d5799e38"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/nickel2022-p41.png",
+      "bytes": 115823,
+      "sha256": "7d9650f15684cb993429d0ecfd7aa927ed14567bc467d6c71ef4bbff9b70a00c"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/nickel2022-p42.png",
+      "bytes": 286803,
+      "sha256": "2763d0d704af8514de4754d2f2fddd05da18ed13fe7b179d6c18e5c9f00f1d87"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/nickel2022-p43.png",
+      "bytes": 290993,
+      "sha256": "3fce322b78621e0977584224090a238f5ef15f170e0fda08cb2176719f4edbae"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/nickel2022-p44.png",
+      "bytes": 66092,
+      "sha256": "078a06d96c850fbb2ae32ecab79bfdcc3137a9cf592b88eedafb23797140d172"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/nickel2022.pdf",
+      "bytes": 1489636,
+      "sha256": "e979254fb8855f456149dfd373f30fbd99bce95b7d1c1621f48e6fab85a6a14b"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/nickel2022.txt",
+      "bytes": 74503,
+      "sha256": "33c9cf64059f04b4482ff4a99aa16474ceb289380cf04af3e0cd8348088d39d8"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/pracejus-p1.png",
+      "bytes": 80500,
+      "sha256": "e4e906d7f89be81e4572952a83ee5b81734cde43e134823f6b54b596b8684499"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/pracejus-p115.png",
+      "bytes": 241527,
+      "sha256": "63a31b72d17aa1966419753843b4ad8b68bf3624febd6be8fded8e625c940aee"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/pracejus-p116.png",
+      "bytes": 321163,
+      "sha256": "a0e4b20f922539e18cf44bdb7bfbdb59e068b149f003d124575b2a0a6b74e7b1"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/pracejus-p117.png",
+      "bytes": 289356,
+      "sha256": "a53c20655926568404d84834a399721ef71d657781189d65adbd636451cb66ff"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/pracejus-p118.png",
+      "bytes": 313683,
+      "sha256": "068e442b8be3942a325d55210c85218e48471da39bbee8fda1d1e6ffb0bf4d84"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/pracejus-p119.png",
+      "bytes": 312391,
+      "sha256": "2d147d00f20af7909738464c6517342c3a5c2c7ac8fbc37d34eb3b2e4ec44305"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/pracejus-p125.png",
+      "bytes": 108191,
+      "sha256": "6a7055012cdde5ea699bcb067902d28dec92a16725914a0048277567367479d9"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/pracejus-p126.png",
+      "bytes": 165502,
+      "sha256": "999779f7ad457b0ee742361c1b39cbca920dba16823de4ee2cd9d1266eb20f96"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/pracejus-p127.png",
+      "bytes": 160218,
+      "sha256": "208d042c6d080983908d7c09908a71e8035306600dd192c25b7dc6ddd56ac404"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/pracejus-p128.png",
+      "bytes": 290501,
+      "sha256": "373a3c97b35bbb839d0ded3ed8a6f2c9cf7cf776da61a28ff9515244fe338121"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/pracejus-p129.png",
+      "bytes": 247444,
+      "sha256": "327e167d31231790637f673bad8016c88b0d742a30fe72e5ea6ea2ce8a9373da"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/pracejus-p130.png",
+      "bytes": 263214,
+      "sha256": "795a2cb3885fbad899b92f97ee7716a27c98220f188a279de8e38f2e7bc4cea6"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/pracejus-p131.png",
+      "bytes": 328429,
+      "sha256": "42502792e1b9c3aaee2dbefb3b2f41bb2e6644b652a85166977e24e1509adf85"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/pracejus-p150.png",
+      "bytes": 302446,
+      "sha256": "2998d549a0bf770dba370ddebfbbebef84988ce15a2e2ff26bd32ba08334d9f0"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/pracejus-p151.png",
+      "bytes": 199496,
+      "sha256": "ea7abcdc52ce7cb8dc47f65071b0f5b148bc323cdec17b480b67192fb9966359"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/pracejus-p152.png",
+      "bytes": 244352,
+      "sha256": "e77c8c2f4a411349e91c32aac233d048f039f5b88ae6de591d1404141ac9a13b"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/pracejus-p2.png",
+      "bytes": 84103,
+      "sha256": "f82e14e666633b00445b83377398aaa41ba39407f2ab02ee893536c17d7a43fa"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/pracejus-p275.png",
+      "bytes": 158834,
+      "sha256": "b39c36753d22dd7647b13735929d9ae2a0db3e2f1f4023df0b1bc2b87b7310aa"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/pracejus-p322.png",
+      "bytes": 467032,
+      "sha256": "8ef4531749196a3bb6a772550d35611a08165433191a36b889a0c6b6fc9b51c8"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/pracejus-p323.png",
+      "bytes": 468689,
+      "sha256": "130d43b4d5295baaed566029a8e28ee4a55f80dc2e700c938bcfa457e0ee9868"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/pracejus-p327.png",
+      "bytes": 308376,
+      "sha256": "665b8ea04d0378a36306de8637b393991e206f2ca6810ddf954f22cf8a766cc4"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/pracejus-p328.png",
+      "bytes": 321653,
+      "sha256": "6160ce0de15ecc83eb6224fb36452341d82f5bfdeb6bcb5a71130dbfb79923db"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/record-validation.json",
+      "bytes": 299,
+      "sha256": "128e06199ebebe498acd5598280601559a0c5e3cf7368ac501b3b1e11958302d"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/romanechite-handbook-p1.png",
+      "bytes": 190649,
+      "sha256": "e431b7d7bd061cdde5ad78d1282835008090689d3f6d7aac17be4ed5d0680ccb"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/romanechite-handbook.pdf",
+      "bytes": 58316,
+      "sha256": "0e72cd702c3cd9d08bde7bf55297d7b6078609881910870fbe76094d6ea669c8"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/romanechite-handbook.txt",
+      "bytes": 3794,
+      "sha256": "e3502a45d349152430d682a4650e7b6d2cb579b9c51374f6d8152e4858b149ae"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-mn-root-review/yin2022-si-docx",
+      "bytes": 4432294,
+      "sha256": "d4d010e9e82f53afa3d4321e8945422f599c26f292dc384c43a18a2182297218"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-mn-root-review/yin2022-si-text.txt",
+      "bytes": 10352,
+      "sha256": "5565affbd055c9b9f24d35c9e67121b435c88864d0b9dda0e838d8fc336e0a35"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-mn-root-review/yin-si-image1.png",
+      "bytes": 87044,
+      "sha256": "2252235a09c9ae1169cffe8896788ac0c6a9419ac74fc914a592f7912d53c1b3"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-mn-root-review/yin-si-image2.png",
+      "bytes": 807754,
+      "sha256": "2bf494938347afe5de1b7fee1862bc010f5abeb739c0a19cf297ea52c4250f36"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-mn-root-review/yin-si-image3.png",
+      "bytes": 972388,
+      "sha256": "4b0a9a974892991af870c1d905b83b0cd52401f0aa8f9a918e807ae790e71a0e"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-mn-root-review/yin-si-image4.png",
+      "bytes": 834528,
+      "sha256": "3d2fe8e8572733eebf83134d1508eab04bad8c69773b98e76a66f3b40dad8c7c"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-mn-root-review/yin-si-image5.png",
+      "bytes": 1024406,
+      "sha256": "e3b7e46b1efd716093cfa802faf4e81794f938fe35f5ace96f1541935c94a568"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-mn-root-review/yin-si-acquisition.json",
+      "bytes": 1416,
+      "sha256": "da3e66953b1438c132a3318811539647d369c98b2baa277d20fcb55cd9b7259e"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/dedup-post-curation.txt",
+      "bytes": 4421463,
+      "sha256": "957e9439a16ce473239dffe23451f4caa3587c478d35d74db8cd3b1770a064ce"
+    },
+    {
+      "path": "/private/tmp/cmm-round66-manganese-research/dedup-post-curation.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "inspection": {
+    "Yin2022": "Entire accepted manuscript text, all ten figures and both tables inspected; all five supplement figures and four tables inspected. SI title/authors match original. Main and SI discrepancies explicitly preserved.",
+    "Grangeon2015": "Full 16-page original, twelve figures, Table1 and both publisher-linked supplements inspected. Na-rich analogue is not compositional confirmation of K-dominant mineral cryptomelane.",
+    "Pracejus1989": "Bounded thesis scope: title; printed90–94/PDF115–119 norm; printed125–127/PDF150–152 leaching discussion/figures; AI-16/PDF275 methods; AV.2-1/2/PDF327–328 raw tables. All relevant text read and methods/figures/raw tables visually inspected. No claim to have read all351pages.",
+    "identity": "September2026 IMA pp1–2,51,186 and both one-page Handbook entries visually checked; fresh official homepage still links September2026 list.",
+    "Bohu2016": "Metadata and partial publisher original HTML methods/table screened; full original figures and supplement not acquired/assessed. No quantitative or mechanism claim accepted from this lead."
+  },
+  "licenses": {
+    "ima": "CC BY-SA3.0 in original pp1–2",
+    "handbook": "Mineral Data Publishing copyright",
+    "Grangeon2015": "CC BY4.0; data CC0 per original",
+    "Yin2022": "Repository accepted manuscript cover CC BY-NC-ND4.0; supplement-specific redistribution permission not established",
+    "Pracejus1989": "Repository access does not establish a redistribution license",
+    "policy": "Copyright originals remain outside Git; committed files contain original factual summaries, stable URLs and checksums."
+  },
+  "priorities": [
+    {
+      "priority": 1,
+      "source": "Bohu2016 DOI10.1128/AEM.03844-15, PMID26969702, PMC4959070",
+      "action": "Acquire full original and SI legitimately; verify environmental Ba-bearing phase identification separately from culture products, organism causality, mineralogy and the assay unit/basis tensions. Possible update to Romanèchite or existing manganese oxide owner; not automatic new phase."
+    },
+    {
+      "priority": 2,
+      "source": "NSR2026 Crystallinity-dependent transformation of layered manganese oxides; https://academic.oup.com/nsr/article/13/14/nwag392/8722937",
+      "action": "Root-discovered fresh primary lead; acquire original and supplements and compare phase/precursor/kinetic model with Grangeon2015/Yin2022. Not yet assessed."
+    },
+    {
+      "priority": 3,
+      "source": "Boothe-Lordon2025 DOI10.1021/acsomega.5c04278, PMC12461413; Min2022 DOI10.1021/acs.est.2c00342",
+      "action": "Continue prior round65 full-original/figure/supplement assessment; avoid duplicate existing birnessite/ramsdellite/bixbyite owners. Vernadite remains IMA Q, not an unqualified approved species."
+    },
+    {
+      "priority": 4,
+      "source": "Sasaki report090871N; Pracejus1990 journal counterpart",
+      "action": "Find legitimate alternative to report404 and acquire complete journal counterpart; do not treat thesis/journal overlap as independent replication."
+    }
+  ]
+}

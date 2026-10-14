@@ -1,0 +1,515 @@
+# Independent scientific review of dolomite mineral and microbial evidence
+
+- Review: 20261014T083048Z-dolomite-round66-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-14T08:25:29.846878Z
+- Finished UTC: 2026-10-14T08:30:48.944227Z
+- Reviewer: codex /root/round66_phosphates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The frozen record supports a distinct dolomite species owner and a carefully bounded light+1mM Mn biofilm observation. Original supplemental diffraction and microscopy support the accepted arm; substantial source-control/index/gas conflicts and incomplete main-figure access are explicitly preserved. No supported curation defect was found.
+
+## Scope And Provenance
+
+Field-by-field scientific review of one frozen mineral record and CREATE sidecar against exact primary/authority originals, controls and access limits.
+
+Selection: Assigned frozen path; native inspect captured working-tree base and hashes before final assessment. Preparatory primary reading preceded inspect; started_at is completed inspect receipt timestamp.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base d57f45621cbe465eb13dfb6cc26cc4197d98f90e.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:dolomite | data/records/dolomite.yaml | maintained | Dolomite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Named record validation | passed | True | cmmmech:dolomite | Reviewer execution exit0; complete named log retained. |
+| Completed batch gate 1 | passed | True | cmmmech:dolomite | Coordinator execution 2026-10-14T08:26:37.417759+00:00 to 2026-10-14T08:30:04.266682+00:00; receipt and log SHA256 independently checked. |
+| Completed batch gate 2 | passed | True | cmmmech:dolomite | Coordinator execution 2026-10-14T08:30:04.266767+00:00 to 2026-10-14T08:30:11.880507+00:00; receipt and log SHA256 independently checked. |
+| Completed batch gate 3 | passed | True | cmmmech:dolomite | Coordinator execution 2026-10-14T08:30:11.880596+00:00 to 2026-10-14T08:30:17.021271+00:00; receipt and log SHA256 independently checked. |
+
+## Scientific And Domain Assessments
+
+### Dolomite species versus disordered precursors and rock
+
+identity: supported. Targets: cmmmech:dolomite.
+
+The owner is the mineral CaMg(CO3)2, not dolostone, dolomite group, Mg-calcite or elemental magnesium. Source-assigned ordered phase is qualified rather than generalized to every Mg-rich precipitate.
+
+### Community, substrate and controlled laboratory context
+
+evidence: supported. Targets: cmmmech:dolomite.
+
+The record accurately specifies mixed washed enrichments, light+1mM Mn arm,27C,two weeks,12h light/dark and sulfide-reduced modified FGL. Initial enrichment additives are separated from later experiments; main/SI gas conflict remains explicit.
+
+### Diffraction assignment, causation and deployment limits
+
+quantity: supported. Targets: cmmmech:dolomite.
+
+Original supplementary XRD and microscopy support the narrow light/Mn culture observation. Qualified assignment, incomplete ordering and source contradictions remain explicit; fitted fractions are not yield, pure product or independent replicate counts.
+
+### History, reviewed bytes and validation
+
+provenance: supported. Targets: cmmmech:dolomite.
+
+Canonical history, exact frozen target bytes, named validation and completed batch gates are supported. Source omissions and adverse interpretations remain visible rather than being treated as missing curation defects.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/dolomite.yaml; Entire frozen record | supports | Independent field-by-field read of the mineral identity, evidence-linked mechanism, controls, uncertainties and deployment limits. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September 2026 definitions pp.1-2 and species row p.58 | supports | Reused official original independently rehashed; species row visually inspected. CaMg(CO3)2, grandfathered status G, original-description year 1792. The year is not an approval accession. |
+| handbook | https://www.handbookofmineralogy.org/pdfs/dolomite.pdf; Complete one-page identity entry, version1 | supports | Independent complete text and page-image inspection confirms formula and mineral species/group distinction. Physical/mineral composition examples are not criticality designations. |
+| history | history/records/dolomite/2026-10-14T081920Z-codex-c678dd.yaml; Complete canonical CREATE session and linked inline history | supports | Correct actual actor codex/GPT-6/codex, target, timestamps and bounded creation description. Reviewer made no record/history changes. |
+| dedup | /private/tmp/cmm-round66-magnesium-independent-review/dedup.txt; Maintained records, research, reviews and histories including hidden/ignored paths and followed symlinks | context_only | Independent bounded search returned222 matching lines, with no stderr. Existing handoffs and incidental mentions are retained; no duplicate maintained species owner found within this scope. No claim about unsearched filesystem roots or unextracted binary contents. |
+| notices | https://hdl.handle.net/1721.1/126802; Independent live exact-DOI notice and adverse-interpretation searches on2026-10-14 UTC | context_only | The inspected returned sets contained no affecting correction or retraction. Primary landing results agree with cited identities. Aquino2024 DOI10.1029/2023GC011010 and a2021 sabkha study emerged as further leads; full originals/supplements were not independently assessed here, so no new numerical or causal claim is imported from them. |
+| named | /private/tmp/cmm-round66-magnesium-independent-review/dolomite-validation.log; Complete reviewer-executed named validation output | supports | Locked offline named record validation passed, exit0, Checked1 record(s);0failed. |
+| batch | /private/tmp/cmm-round66-final-gates.json; Completed coordinator receipt and retained command log | supports | Receipt reports successful just check, explicit nonempty corpus and trusted-base history validation. Reviewer checked actual exit statuses, trusted base argument, complete log hash and unchanged inspect inputs. |
+| primary | https://hdl.handle.net/1721.1/126802; Complete8-page accepted manuscript text and captions; Methods, Results, Discussion | supports | Main scientific text and captions independently read. Anoxic biofilms are a mixed Fayetteville Green Lake enrichment. Main text reports uninoculated-control null results after two weeks and explicitly imperfect ordering. Manuscript contains no embedded main Figures1-2; detailed main-image measurements were not imported. |
+| supplement | https://doi.org/10.1130/2019187; Complete22-page official GSA supplement; Sections1-6, original FiguresDR2-DR10 and TableDR1 | supports | Complete methods/captions/table text read; FiguresDR2-DR10 and TableDR1 visually inspected. Light+1mM Mn arm is consistently named; DR2/3 compare its diffraction to a standard and identify ordering-related features, TableDR1 fits multiple ordered dolomite phases, DR4A-C and DR5 show cell/EPS mineral association. Rietveld fractions are not recovery efficiencies. |
+| limits | https://doi.org/10.1130/2019187; DR2/3 indexing; DR4,DR7/8 controls; DR9 timing; TableDR1 | partial | Reviewer confirms dark Mn/no-Mn mismatch across plot and table, 021/012/112 index discrepancies, cell-surface absence versus EPS minerals in dark/no-Mn images, and main-text miscitation of DR4D/E. DR5/8 scale text and DR9 two-week/two-month wording also conflict; no derived size or late-stage rate is curated. Raw patterns/uncertainties and complete sterile traces are not supplied in inspected artifacts. Main80%N2/15%CO2 versus SI80%N2/20%CO2 is preserved in the record. |
+| metadata | https://api.crossref.org/works/10.1130/G45821.1; Crossref metadata, MIT landing and official GSA supplement metadata | supports | Title, Daye/Higgins/Bosak authors, journal47:509-512 and DOI agree. Official supplementary metadata points to parentDOI and one2019187.pdf file; independently computed MD5 matches550e9f35b5f6303eaa898e1ec18dc810. No update-to and empty relation in Crossref is not proof of notice absence. |
+| supplement_metadata | https://api.figshare.com/v2/articles/12541187; Official supplement record and file checksum | supports | DOI10.1130/2019187 IsSupplementTo10.1130/G45821.1; complete22-page original matches official file MD5 and title. CC BY-NC4.0 metadata retained, not assumed unrestricted reuse. |
+
+## Limits And Additional Notes
+
+- Accepted main manuscript has text/captions but lacks embedded main Figures1-2; complete illustrated main remains a concrete follow-up.
+- Phase assignment retains author interpretation; no raw-pattern/refinement uncertainty or independent crystallographic reanalysis is available.
+- Dark-control labels, crystallographic indices, gas composition and some supplementary image captions conflict; definitive quantitative arm comparisons remain unresolved.
+- Mixed-community contributions and the molecular role of Mn are not independently isolated.
+- Fitted phase fractions are not Mg recovery, purity or biological replicate counts; no industrial deployment is established.
+- Broader dolomite literature and bounded correction searches are not exhaustive.
+- Corrections by this reviewer: none. Frozen record, history and captured context inputs remain byte-identical.
+- Findings by severity: no blocker, major or minor curation defect supported by this independent review. Source uncertainties are retained limitations, not invented remediation issues.
+- Raw originals and images remain outside Git. No copyrighted primary source was vendored.
+- Shared structured review-check and exact all-record coverage remain subsequent coordinator publication gates.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261014T083048Z-dolomite-round66-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of dolomite mineral and microbial evidence
+started_at: '2026-10-14T08:25:29.846878Z'
+finished_at: '2026-10-14T08:30:48.944227Z'
+reviewer:
+  identity: codex /root/round66_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Records, canonical histories and magnesium source dossier authored
+    by /root/round66_magnesium. Reviewer independently read primary originals, visual
+    figures/tables, authority rows and metadata, ran named checks and searched adverse
+    evidence. Reviewer authored phosphate records separately and made no magnesium
+    record/history edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The frozen record supports a distinct dolomite species owner and a carefully
+  bounded light+1mM Mn biofilm observation. Original supplemental diffraction and
+  microscopy support the accepted arm; substantial source-control/index/gas conflicts
+  and incomplete main-figure access are explicitly preserved. No supported curation
+  defect was found.
+source:
+  git_revision: d57f45621cbe465eb13dfb6cc26cc4197d98f90e
+  state: working_tree
+  inputs:
+  - path: data/records/dolomite.yaml
+    sha256: b3e67d9b6f08bd30e658cb05a566818a21b9f81530dc3ec9672db2ea91b8a29c
+    role: target
+  - path: history/records/dolomite/2026-10-14T081920Z-codex-c678dd.yaml
+    sha256: da8b7b1b9a36fe246fa35ad671fa09b3b07c4f9dae6c0a1d588f413e1f09959b
+    role: context
+  - path: research/sources/round66-magnesium/20261014T082237Z-source-investigation.json
+    sha256: dae1a1e9937c9bc09c65478ad95dd853f170249d7c7e76f7d20ae1b2a6210f98
+    role: context
+  - path: research/sources/round66-magnesium/20261014T082237Z-source-investigation.md
+    sha256: 47c082088ee3bb329f0c91d948fcc3fa11b01f4f6db3c31655b106c693ae925a
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Field-by-field scientific review of one frozen mineral record and CREATE
+    sidecar against exact primary/authority originals, controls and access limits.
+  selection: Assigned frozen path; native inspect captured working-tree base and hashes
+    before final assessment. Preparatory primary reading preceded inspect; started_at
+    is completed inspect receipt timestamp.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:dolomite
+  exclusions:
+  - target: Uncurated literature leads and expanded mechanisms
+    reason: Search-level handoffs only; not accepted as verified new claims or analyzed
+      datasets.
+targets:
+- target_id: cmmmech:dolomite
+  path: data/records/dolomite.yaml
+  label: Dolomite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/dolomite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Named record validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache UV_OFFLINE=1 PYTHONDONTWRITEBYTECODE=1
+    uv run --locked cmmmech validate data/records/dolomite.yaml
+  status: passed
+  required: true
+  summary: Reviewer execution exit0; complete named log retained.
+  target_ids:
+  - cmmmech:dolomite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch_0
+  name: Completed batch gate 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T08:26:37.417759+00:00 to 2026-10-14T08:30:04.266682+00:00;
+    receipt and log SHA256 independently checked.
+  target_ids:
+  - cmmmech:dolomite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_1
+  name: Completed batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T08:30:04.266767+00:00 to 2026-10-14T08:30:11.880507+00:00;
+    receipt and log SHA256 independently checked.
+  target_ids:
+  - cmmmech:dolomite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Completed batch gate 3
+  command: uv run --locked cmmmech validate-history --base d57f45621cbe465eb13dfb6cc26cc4197d98f90e
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-14T08:30:11.880596+00:00 to 2026-10-14T08:30:17.021271+00:00;
+    receipt and log SHA256 independently checked.
+  target_ids:
+  - cmmmech:dolomite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/dolomite.yaml
+  locator: Entire frozen record
+  accessed_at: '2026-10-14T08:30:48.944227Z'
+  support: supports
+  summary: Independent field-by-field read of the mineral identity, evidence-linked
+    mechanism, controls, uncertainties and deployment limits.
+  snapshot_sha256: b3e67d9b6f08bd30e658cb05a566818a21b9f81530dc3ec9672db2ea91b8a29c
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September 2026 definitions pp.1-2 and species row p.58
+  accessed_at: '2026-10-14T08:30:48.944227Z'
+  support: supports
+  summary: Reused official original independently rehashed; species row visually inspected.
+    CaMg(CO3)2, grandfathered status G, original-description year 1792. The year is
+    not an approval accession.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/dolomite.pdf
+  locator: Complete one-page identity entry, version1
+  accessed_at: '2026-10-14T08:30:48.944227Z'
+  support: supports
+  summary: Independent complete text and page-image inspection confirms formula and
+    mineral species/group distinction. Physical/mineral composition examples are not
+    criticality designations.
+  snapshot_sha256: 8bdc0dcd52f6067111c152988f16b96a6bccd3e025b302d451035ec1d43853ad
+- evidence_id: history
+  kind: record_content
+  reference: history/records/dolomite/2026-10-14T081920Z-codex-c678dd.yaml
+  locator: Complete canonical CREATE session and linked inline history
+  accessed_at: '2026-10-14T08:30:48.944227Z'
+  support: supports
+  summary: Correct actual actor codex/GPT-6/codex, target, timestamps and bounded
+    creation description. Reviewer made no record/history changes.
+  snapshot_sha256: da8b7b1b9a36fe246fa35ad671fa09b3b07c4f9dae6c0a1d588f413e1f09959b
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round66-magnesium-independent-review/dedup.txt
+  locator: Maintained records, research, reviews and histories including hidden/ignored
+    paths and followed symlinks
+  accessed_at: '2026-10-14T08:30:48.944227Z'
+  support: context_only
+  summary: Independent bounded search returned222 matching lines, with no stderr.
+    Existing handoffs and incidental mentions are retained; no duplicate maintained
+    species owner found within this scope. No claim about unsearched filesystem roots
+    or unextracted binary contents.
+  search_scope: rg --no-ignore --hidden --follow -n -i 'brucite|dolomite|G45821.1|fmicb.2017.00057'
+    data/records research reviews history
+  snapshot_sha256: 9ac3d136142da29d7a94ec3e28cdfaa97a85ec8d273784dac6a127676e957403
+- evidence_id: notices
+  kind: search
+  reference: https://hdl.handle.net/1721.1/126802
+  locator: Independent live exact-DOI notice and adverse-interpretation searches on2026-10-14
+    UTC
+  accessed_at: '2026-10-14T08:30:48.944227Z'
+  support: context_only
+  summary: The inspected returned sets contained no affecting correction or retraction.
+    Primary landing results agree with cited identities. Aquino2024 DOI10.1029/2023GC011010
+    and a2021 sabkha study emerged as further leads; full originals/supplements were
+    not independently assessed here, so no new numerical or causal claim is imported
+    from them.
+  search_scope: 'Queries: "10.1130/G45821.1" correction erratum retraction; "10.3389/fmicb.2017.00057"
+    correction retraction; "Formation of ordered dolomite in anaerobic photosynthetic
+    biofilms" criticism ordering; "Prony" "brucite" "abiotic" filaments. First returned
+    sets only, no explicit domain/date filters or pagination. Not an exhaustive notice
+    or counterevidence search.'
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round66-magnesium-independent-review/dolomite-validation.log
+  locator: Complete reviewer-executed named validation output
+  accessed_at: '2026-10-14T08:30:48.944227Z'
+  support: supports
+  summary: Locked offline named record validation passed, exit0, Checked1 record(s);0failed.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round66-final-gates.json
+  locator: Completed coordinator receipt and retained command log
+  accessed_at: '2026-10-14T08:30:48.944227Z'
+  support: supports
+  summary: Receipt reports successful just check, explicit nonempty corpus and trusted-base
+    history validation. Reviewer checked actual exit statuses, trusted base argument,
+    complete log hash and unchanged inspect inputs.
+  snapshot_sha256: f770d6a65bb5b55e55ec2ef08ddfa02330dab31a1f87a26af94b2b92150a28dc
+- evidence_id: primary
+  kind: primary_source
+  reference: https://hdl.handle.net/1721.1/126802
+  locator: Complete8-page accepted manuscript text and captions; Methods, Results,
+    Discussion
+  accessed_at: '2026-10-14T08:30:48.944227Z'
+  support: supports
+  summary: Main scientific text and captions independently read. Anoxic biofilms are
+    a mixed Fayetteville Green Lake enrichment. Main text reports uninoculated-control
+    null results after two weeks and explicitly imperfect ordering. Manuscript contains
+    no embedded main Figures1-2; detailed main-image measurements were not imported.
+  snapshot_sha256: 7cf02a9bf50fba399104e2006e6329069616b5e4005069cf6dcc2ef260d042c5
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://doi.org/10.1130/2019187
+  locator: Complete22-page official GSA supplement; Sections1-6, original FiguresDR2-DR10
+    and TableDR1
+  accessed_at: '2026-10-14T08:30:48.944227Z'
+  support: supports
+  summary: Complete methods/captions/table text read; FiguresDR2-DR10 and TableDR1
+    visually inspected. Light+1mM Mn arm is consistently named; DR2/3 compare its
+    diffraction to a standard and identify ordering-related features, TableDR1 fits
+    multiple ordered dolomite phases, DR4A-C and DR5 show cell/EPS mineral association.
+    Rietveld fractions are not recovery efficiencies.
+  snapshot_sha256: ba981a2f56b663736cd827d5526af15b3cd7fa4685c42d1f52870de9d287f198
+- evidence_id: limits
+  kind: primary_source
+  reference: https://doi.org/10.1130/2019187
+  locator: DR2/3 indexing; DR4,DR7/8 controls; DR9 timing; TableDR1
+  accessed_at: '2026-10-14T08:30:48.944227Z'
+  support: partial
+  summary: Reviewer confirms dark Mn/no-Mn mismatch across plot and table, 021/012/112
+    index discrepancies, cell-surface absence versus EPS minerals in dark/no-Mn images,
+    and main-text miscitation of DR4D/E. DR5/8 scale text and DR9 two-week/two-month
+    wording also conflict; no derived size or late-stage rate is curated. Raw patterns/uncertainties
+    and complete sterile traces are not supplied in inspected artifacts. Main80%N2/15%CO2
+    versus SI80%N2/20%CO2 is preserved in the record.
+  snapshot_sha256: ba981a2f56b663736cd827d5526af15b3cd7fa4685c42d1f52870de9d287f198
+- evidence_id: metadata
+  kind: database
+  reference: https://api.crossref.org/works/10.1130/G45821.1
+  locator: Crossref metadata, MIT landing and official GSA supplement metadata
+  accessed_at: '2026-10-14T08:30:48.944227Z'
+  support: supports
+  summary: Title, Daye/Higgins/Bosak authors, journal47:509-512 and DOI agree. Official
+    supplementary metadata points to parentDOI and one2019187.pdf file; independently
+    computed MD5 matches550e9f35b5f6303eaa898e1ec18dc810. No update-to and empty relation
+    in Crossref is not proof of notice absence.
+  snapshot_sha256: 09f9496660c3f8b7b81a64aa6dcc8dff3d39f141b25aaa4dcabff67d1802f665
+- evidence_id: supplement_metadata
+  kind: database
+  reference: https://api.figshare.com/v2/articles/12541187
+  locator: Official supplement record and file checksum
+  accessed_at: '2026-10-14T08:30:48.944227Z'
+  support: supports
+  summary: DOI10.1130/2019187 IsSupplementTo10.1130/G45821.1; complete22-page original
+    matches official file MD5 and title. CC BY-NC4.0 metadata retained, not assumed
+    unrestricted reuse.
+  snapshot_sha256: af25972e9bade6ed1973e2f55bf47efa99ec979b9843d814f65584497c20e5d5
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Dolomite species versus disordered precursors and rock
+  outcome: supported
+  summary: The owner is the mineral CaMg(CO3)2, not dolostone, dolomite group, Mg-calcite
+    or elemental magnesium. Source-assigned ordered phase is qualified rather than
+    generalized to every Mg-rich precipitate.
+  target_ids:
+  - cmmmech:dolomite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  - supplement
+  dimensions:
+  - name: material_form
+    value: Mixed laboratory carbonate precipitates containing a source-assigned, incompletely
+      ordered dolomite phase
+    definition: Not phase-pure stoichiometric recovered product.
+    evidence_ids:
+    - primary
+    - supplement
+  - name: criticality
+    value: No authority/jurisdiction/list/edition claim
+    definition: No critical status is inherited from constituent elements.
+    evidence_ids:
+    - record
+- assessment_id: conditions
+  area: evidence
+  topic: Community, substrate and controlled laboratory context
+  outcome: supported
+  summary: The record accurately specifies mixed washed enrichments, light+1mM Mn
+    arm,27C,two weeks,12h light/dark and sulfide-reduced modified FGL. Initial enrichment
+    additives are separated from later experiments; main/SI gas conflict remains explicit.
+  target_ids:
+  - cmmmech:dolomite
+  evidence_ids:
+  - record
+  - primary
+  - supplement
+  - limits
+  dimensions:
+  - name: organism_and_biomass
+    value: Mixed anoxygenic photosynthetic biofilm with Chlorobium affiliation
+    definition: No pure named species, gene or unique causal producer is established.
+    evidence_ids:
+    - primary
+    - supplement
+  - name: substrate_and_pretreatment
+    value: Synthetic MFGL with approximately2mM Mg,1mM Ca,44mM bicarbonate and50micromolar
+      Na2S
+    definition: Inocula washed three times with anoxic water; later medium lacks added
+      sulfate/DCMU/ascorbate.
+    evidence_ids:
+    - supplement
+  - name: controls
+    value: Triplicated comparisons include dark, no-added-Mn and uninoculated Mn arms
+    definition: Original arm labels are inconsistent across some results; no definitive
+      quantitative all-arm phase comparison adopted.
+    evidence_ids:
+    - primary
+    - supplement
+    - limits
+- assessment_id: outcome
+  area: quantity
+  topic: Diffraction assignment, causation and deployment limits
+  outcome: supported
+  summary: Original supplementary XRD and microscopy support the narrow light/Mn culture
+    observation. Qualified assignment, incomplete ordering and source contradictions
+    remain explicit; fitted fractions are not yield, pure product or independent replicate
+    counts.
+  target_ids:
+  - cmmmech:dolomite
+  evidence_ids:
+  - record
+  - primary
+  - supplement
+  - limits
+  dimensions:
+  - name: outcome
+    value: Source-assigned dolomite with detectable ordering-related diffraction features
+    definition: Raw diffraction/refinement reanalysis and complete main graphics remain
+      unavailable.
+    evidence_ids:
+    - supplement
+    - limits
+  - name: deployment
+    value: Controlled laboratory enrichment
+    definition: No industrial recovery or direct ancient-ocean reconstruction is established.
+    evidence_ids:
+    - record
+    - primary
+- assessment_id: provenance
+  area: provenance
+  topic: History, reviewed bytes and validation
+  outcome: supported
+  summary: Canonical history, exact frozen target bytes, named validation and completed
+    batch gates are supported. Source omissions and adverse interpretations remain
+    visible rather than being treated as missing curation defects.
+  target_ids:
+  - cmmmech:dolomite
+  evidence_ids:
+  - record
+  - history
+  - metadata
+  - dedup
+  - notices
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- Accepted main manuscript has text/captions but lacks embedded main Figures1-2; complete
+  illustrated main remains a concrete follow-up.
+- Phase assignment retains author interpretation; no raw-pattern/refinement uncertainty
+  or independent crystallographic reanalysis is available.
+- Dark-control labels, crystallographic indices, gas composition and some supplementary
+  image captions conflict; definitive quantitative arm comparisons remain unresolved.
+- Mixed-community contributions and the molecular role of Mn are not independently
+  isolated.
+- Fitted phase fractions are not Mg recovery, purity or biological replicate counts;
+  no industrial deployment is established.
+- Broader dolomite literature and bounded correction searches are not exhaustive.
+notes:
+- 'Corrections by this reviewer: none. Frozen record, history and captured context
+  inputs remain byte-identical.'
+- 'Findings by severity: no blocker, major or minor curation defect supported by this
+  independent review. Source uncertainties are retained limitations, not invented
+  remediation issues.'
+- Raw originals and images remain outside Git. No copyrighted primary source was vendored.
+- Shared structured review-check and exact all-record coverage remain subsequent coordinator
+  publication gates.
+tags:
+- round66
+- independent
+- dolomite
+- primary-figures
+```
