@@ -1,0 +1,26 @@
+history_version: 1
+target:
+  kind: record
+  slug: coquimbite
+  path: data/records/coquimbite.yaml
+session:
+  id: 2026-10-15T152112Z-codex-b92da9
+  timestamp: '2026-10-15T15:21:12Z'
+  actors:
+  - name: codex
+    type: ai_agent
+    model: GPT-6
+    agent_tool: codex
+events:
+- type: EDIT
+  outcome: changed
+  summary: Corrected unsupported reflection-threshold discrepancy.
+  details: Addressed independent finding coquimbite-round97-equivalent-reflection-thresholds
+    and issue 353. Removed the false discrepancy between printed Fo > 4 sigma(Fo) and CIF
+    I > 2 sigma(I), whose conventional relationship follows I = F squared and sigma(I) approximately
+    2 F sigma(F). Preserved same-study provenance and no raw-intensity re-refinement claim.
+    The original CREATE and initial dossier remain unchanged; a linked corrective dossier
+    records the retraction and precise locators.
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/353

@@ -1,0 +1,637 @@
+# Independent scientific review of Coquimbite and explicit resolution of reflection-threshold finding
+
+- Review: 20261015T153242Z-coquimbite-round97-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T15:14:48.429795Z
+- Finished UTC: 2026-10-15T15:32:42.711774Z
+- Reviewer: codex /root/round97_resources (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of the current Al-essential coquimbite identity and sample-specific structural evidence. The false reflection-threshold discrepancy is corrected with actual EDIT/history and immutable successor dossier; initial F1 and GitHub353 are explicitly resolved.
+
+## Scope And Provenance
+
+Complete exact assigned owner/history, accepted primary full text, relevant graphics/supplements and current authorities, with bounded correction and conflicting-evidence searches.
+
+Selection: Parent-assigned independent per-record scientific review after owner freeze.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9272005a590c9fa1e5fbb75b30f914ce38c3924a.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:coquimbite | data/records/coquimbite.yaml | maintained | Coquimbite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent primary evidence and authority assessment | passed | True | cmmmech:coquimbite | Complete original text and claim-bearing graphics/metadata independently read; source-specific outcomes, uncertainty and interpretation checked against exact owner. |
+| Independent affected-file validation | passed | True | cmmmech:coquimbite | Checked 1 record; 0 failed on the exact frozen target. |
+| Coordinator completed batch command 1 | passed | True | cmmmech:coquimbite | Actual completed coordinator receipt, retained log hash and exact current owner input verified independently. |
+| Coordinator completed batch command 2 | passed | True | cmmmech:coquimbite | Actual completed coordinator receipt, retained log hash and exact current owner input verified independently. |
+| Coordinator completed batch command 3 | passed | True | cmmmech:coquimbite | Actual completed coordinator receipt, retained log hash and exact current owner input verified independently. |
+| Coordinator completed batch command 4 | passed | True | cmmmech:coquimbite | Actual completed coordinator receipt, retained log hash and exact current owner input verified independently. |
+
+## Scientific And Domain Assessments
+
+### Current species identity versus historical formula
+
+identity: supported. Targets: cmmmech:coquimbite.
+
+Al-essential current definition and group boundaries are supported.
+
+IMA19-F approvedOctober2019 and currentSeptember2026 list support AlFe(III)3(SO4)6(H2O)12·6H2O. Historical Al-free formula is not current; paracoquimbite is compositionally distinct and aluminocoquimbite has different topology. Museum numbers are specimen identifiers, not material-wide CURIEs.
+
+### Empirical chemistry, structural model and sampling denominator
+
+quantity: supported. Targets: cmmmech:coquimbite.
+
+Measured composition, calculated water and ideal formula remain distinct.
+
+Twenty WDS spots at15kV10nA10micrometre beam give empiricalAl0.96Fe3.11S5.97O24·18H2O. H2O29.10wt% is calculated from18structural waters. Table3/CIF mixedsiteAl0.946(7)Fe0.054(7) is a model occupancy, not independent bulk assay. Natural intergrowth contains krausite; Figure2 maps do not establish whole-rock purity.
+
+### Static identity evidence and causality
+
+scope: supported. Targets: cmmmech:coquimbite.
+
+An identity-focused record does not manufacture microbial causality.
+
+Natural Monte Arsiccio specimen characterized by powder confirmation, microprobe, Raman/IR and single-crystal diffraction. No microbial inoculum, substrate conversion assay, biomass or recovery mechanism is established; mechanisms omitted appropriately. Al-stabilization discussion is not imported as tested process.
+
+### Exact initial F1 and issue353 resolution
+
+consistency: supported. Targets: cmmmech:coquimbite.
+
+Conventional threshold notation no longer appears as a false contradiction.
+
+PrintedTable2 Fo&gt;4sigma(Fo) and CIF I&gt;2sigma(I) conventionally correspond and both report1307 reflections; correction removes unsupported discrepancy. Initial review/dossier are immutable, author appended actualEDIT and successor dossier, independent comparison and actual gates verify the exact final state.
+
+### Criticality, identifiers and deployment boundary
+
+scope: supported. Targets: cmmmech:coquimbite.
+
+No unsupported jurisdictional criticality or deployment claim is present.
+
+Neither mineral inherits a constituent element criticality status. No criticality assertion requiring jurisdiction/list/edition is made, no taxon/strain ID is invented and no laboratory result is promoted to industrial deployment.
+
+### Exact inputs, immutable history and checks
+
+provenance: supported. Targets: cmmmech:coquimbite.
+
+Current owner and authentic CREATE/EDIT provenance are traceable.
+
+Native inspect binds exact maintained record, canonical history and dossier inputs at trusted base9272005a590c9fa1e5fbb75b30f914ce38c3924a. Actual inline and sidecar events are distinct and honest. Completed coordinator gates are checked through actual receipt and log; whole-corpus structured review checking follows final save.
+
+## Findings
+
+### F1: Remove false unresolved discrepancy between conventional F and I thresholds
+
+minor / resolved / confirmed; issue key: coquimbite-round97-equivalent-reflection-thresholds.
+
+sources[3].title and the original dossier call Fo &gt; 4sigma(Fo) versus I &gt; 2sigma(I) an unresolved reporting discrepancy. IUCr guidance explicitly gives these conventional paired multipliers, with the standard uncertainty propagation explaining the relation. Both source artifacts give 1307 qualifying reflections. The asserted contradiction is unsupported; retain exact source values without implying a failed reconciliation or independent replication.
+
+Disposition: Author removed the false unresolved-discrepancy statement from sources[3].title, retained same-study provenance, and appended actual inline/canonical EDIT. Independent comparison verifies unchanged identity/composition and preserved original CREATE/dossier; correction dossier explains conventional threshold transformation. Current named and completed batch checks pass. This resolves GitHub353 without claiming independent re-refinement.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/coquimbite.yaml; Complete current owner; exact inputs captured by native inspect before assessment. | supports | Material form, source claims, mechanisms/absence, quantities, limits and provenance inspected. |
+| history0 | history/records/coquimbite/2026-10-15T151128Z-codex-a9121b.yaml; Complete canonical session plus distinct inline event/history_refs. | supports | Actual codex/GPT-6 actor, target, timestamp and described CREATE/EDIT scope; preserved append-only provenance. |
+| history1 | history/records/coquimbite/2026-10-15T152112Z-codex-b92da9.yaml; Complete canonical session plus distinct inline event/history_refs. | supports | Actual codex/GPT-6 actor, target, timestamp and described CREATE/EDIT scope; preserved append-only provenance. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Definitions PDF pages1–2 and exact species row PDF 49; independently rendered/visually checked. Raw /private/tmp/cmm-round97-sulfates-research/ima.pdf | supports | September2026 accepted species/formula and Rd special-procedure year verified; redefinition year is not a new-mineral identifier. |
+| search | Independent bounded notice/identity and related-study web searches; Actual query list and assessed routes /private/tmp/cmm-round97-sulfates-independent-resources/search-observations.json | context_only | No affecting experimental notice surfaced in bounded results. Newsletter52 Petrovite corrigendum was actually checked. Later structural/thermal leads remain outside accepted measured evidence; inaccessible browser routes explicitly retained. |
+| named | uv run --locked cmmmech validate data/records/coquimbite.yaml; Actual independent named-validation log /private/tmp/cmm-round97-sulfates-independent-resources/coquimbite-final-validation.log | supports | One record checked, zero failed. Structural validation does not prove science. |
+| batch | /private/tmp/cmm-round97-final-gates.json; Actual terminal receipt and retained log /private/tmp/cmm-round97-final-gates.log SHA256 c77281964ad285ffee5008c717a42255f422b948372d973513341d1a08aebaf3 | supports | Verified all recorded exits0, exact base/worktree and current target input hash; parent executed full suite, reviewer verified completed receipt/log without duplicate execution. |
+| dossier | research/sources/round97-sulfates/20261015T151307Z-source-investigation.md; Original acquisition/lineage dossier and paired JSON; native-inspected context inputs. | context_only | Original dossier supplies raw access provenance and deferred frontier. Its initial threshold interpretation is explicitly superseded by the preserved corrective dossier and final review, not silently overwritten. |
+| primary | https://doi.org/10.1180/mgm.2020.15; Complete8-page original read through references; printed278/PDF4 chemistry/Table2, printed279/PDF5 Table3 and refined sites, printed280–281/PDF6–7 Table7/Figure5 and conclusion visually checked; Figure2 PDF3 maps checked. Raw /private/tmp/cmm-round97-sulfates-research/coquimbite-original.pdf | supports | Natural Monte Arsiccio sample supports essential Al, empirical versus ideal formula and related-but-distinct mineral structures. Water derives from structural stoichiometry;20microprobe spots are not20independent specimens. |
+| cif | https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S0026461X20000158/resource/name/S0026461X20000158sup001.cif; Complete acquired624290-byte deposited file; data_shelx identity/formula/symmetry/refinement metadata and atom occupancies independently inspected; embedded structure factors not re-refined. Raw /private/tmp/cmm-round97-sulfates-research/coquimbite-supplement.cif | supports | Same study/specimen as article; Al0.946(7)/Fe0.054(7) mixed site and1307 qualifying reflections. No independent replication or raw-intensity reanalysis claim. |
+| newsletter | https://doi.org/10.5194/ejm-32-1-2020; Section3 IMA19-F, independently opened official HTML and read saved source. | supports | October2019 approval establishes Al-essential formula, group boundaries and Smithsonian neotype12548, distinct from Monte Arsiccio Pisa19914 sample. |
+| corrigendum | https://doi.org/10.5194/ejm-32-1-2020-corrigendum; Complete one-page official31January2020 notice independently read; downloaded actualHTTP200 PDF. Raw /private/tmp/cmm-round97-sulfates-independent-resources/newsletter52-corrigendum.pdf | supports | Corrigendum changes Petrovite particulars, not coquimbite19-F; no affecting nomenclature correction inferred. |
+| initial-review | reviews/structured/20261015T151902Z-coquimbite-round97-threshold-initial/review.yaml; Exact immutable initial F1 occurrence and original input hashes. | context_only | Confirmed minor unsupported discrepancy statement is retained as historical observation and explicitly resolved here. |
+| iucr | https://journals.iucr.org/services/cif/checking/autolist.html; Official page independently opened on2026-10-15; relevant passages assessed in initial F1 and checked against correction. | supports | REFLE01 gives conventional intensity/squared-amplitude multiplier2 versus amplitude4. |
+| uncertainty | https://www.iucr.org/resources/commissions/crystallographic-nomenclature/statdes/if2f.html; Official page independently opened on2026-10-15; relevant passages assessed in initial F1 and checked against correction. | supports | Standard propagated amplitude uncertainty explains threshold convention, with weak-reflection caveats; no universal exact raw-data equality asserted. |
+| comparison | /private/tmp/cmm-round97-sulfates-independent-resources/coquimbite-correction-comparison.json; Independent parsed old/current field comparison and immutable-context hash checks. | supports | Only erroneous CIF source-title wording and actual appended provenance changed in owner; scientific identity/composition fields and original CREATE/dossier remain unchanged. |
+| correction | research/sources/round97-sulfates/20261015T152218Z-reflection-threshold-correction.md; Complete corrective successor dossier; pairedJSON inspected as native context. | supports | Corrects initial threshold interpretation explicitly, with IUCr guidance and issue353, preserving original source dossier. |
+
+## Limits And Additional Notes
+
+- A single natural specimen and its same-study CIF establish the accepted identity evidence; no independent experimental replication is inferred.
+- No raw-intensity re-refinement, covariance recomputation or universal weak-reflection equivalence was performed.
+- Older Al-free definitions are historical; empirical composition and restrained structural model do not establish exact ideal bulk purity.
+- Later coquimbite2025 structural/magnetic and2023thermochemical studies remain deferred full-source assessments; current identity review imports no later measurements.
+- Shared source acquisition is disclosed; original text, claim-bearing graphics and authority passages were assessed independently after native target inspection. Reviewer made no sulfate owner/history edits.
+- Originals and raw working evidence remain outside Git; committed review is an evidence-linked summary.
+- Final batch execution is by coordinator; this reviewer verified actual terminal receipt, retained log and target input hash rather than claiming independent duplicate suite execution.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T153242Z-coquimbite-round97-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Coquimbite and explicit resolution of reflection-threshold
+  finding
+started_at: '2026-10-15T15:14:48.429795Z'
+finished_at: '2026-10-15T15:32:42.711774Z'
+reviewer:
+  identity: codex /root/round97_resources
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The sulfate author curated these owners; I authored separate
+    poultry/fish bone records. I independently inspected the frozen target before
+    judgment, read original evidence and authorities, and did not edit sulfate owners
+    or histories.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of the current Al-essential coquimbite identity and
+  sample-specific structural evidence. The false reflection-threshold discrepancy
+  is corrected with actual EDIT/history and immutable successor dossier; initial F1
+  and GitHub353 are explicitly resolved.
+source:
+  git_revision: 9272005a590c9fa1e5fbb75b30f914ce38c3924a
+  state: working_tree
+  inputs:
+  - path: data/records/coquimbite.yaml
+    sha256: 6af5c6bfe863f716aa767b8b6182d3a9d025b5033fb9d5bf62f5f7e56f8c3176
+    role: target
+  - path: history/records/coquimbite/2026-10-15T151128Z-codex-a9121b.yaml
+    sha256: 10ac1593bbb2c289b683fd7138acba51c3d92895b0bf282a82bcecf98d1f2ad8
+    role: context
+  - path: history/records/coquimbite/2026-10-15T152112Z-codex-b92da9.yaml
+    sha256: 515078939bfa26ebc72718936db9bcd3844cbd1f585b7252dbc6f7aca7d51986
+    role: context
+  - path: research/sources/round97-sulfates/20261015T151307Z-source-investigation.json
+    sha256: 571b83403a0b9a034e92b3900ce242d2a616057e4fe194bd1ea319f124b679af
+    role: context
+  - path: research/sources/round97-sulfates/20261015T151307Z-source-investigation.md
+    sha256: 82cf93ee26c3fe29b0c7776f3d793d4d69c40a464230d295b423057798754151
+    role: context
+  - path: research/sources/round97-sulfates/20261015T152218Z-reflection-threshold-correction.json
+    sha256: 88d4abe59b7cb70d1ec0627b9e2b744d3e6c96b9b1f9af2f095bf3ec26a3ffd4
+    role: context
+  - path: research/sources/round97-sulfates/20261015T152218Z-reflection-threshold-correction.md
+    sha256: 2d4c7b36bba674b8fcd0391c0d45f58faa533397c5bbe7459bda20f7f6bb520f
+    role: context
+scope:
+  description: Complete exact assigned owner/history, accepted primary full text,
+    relevant graphics/supplements and current authorities, with bounded correction
+    and conflicting-evidence searches.
+  selection: Parent-assigned independent per-record scientific review after owner
+    freeze.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:coquimbite
+targets:
+- target_id: cmmmech:coquimbite
+  path: data/records/coquimbite.yaml
+  label: Coquimbite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/coquimbite.yaml
+    role: maintained_record
+checks:
+- check_id: science
+  name: Independent primary evidence and authority assessment
+  required: true
+  status: passed
+  summary: Complete original text and claim-bearing graphics/metadata independently
+    read; source-specific outcomes, uncertainty and interpretation checked against
+    exact owner.
+  target_ids:
+  - cmmmech:coquimbite
+  evidence_ids:
+  - primary
+  - ima
+  - search
+- check_id: named
+  name: Independent affected-file validation
+  command: uv run --locked cmmmech validate data/records/coquimbite.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Checked 1 record; 0 failed on the exact frozen target.
+  target_ids:
+  - cmmmech:coquimbite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Coordinator completed batch command 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed coordinator receipt, retained log hash and exact current
+    owner input verified independently.
+  target_ids:
+  - cmmmech:coquimbite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Coordinator completed batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed coordinator receipt, retained log hash and exact current
+    owner input verified independently.
+  target_ids:
+  - cmmmech:coquimbite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Coordinator completed batch command 3
+  command: uv run --locked cmmmech validate-history --base 9272005a590c9fa1e5fbb75b30f914ce38c3924a
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed coordinator receipt, retained log hash and exact current
+    owner input verified independently.
+  target_ids:
+  - cmmmech:coquimbite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Coordinator completed batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed coordinator receipt, retained log hash and exact current
+    owner input verified independently.
+  target_ids:
+  - cmmmech:coquimbite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/coquimbite.yaml
+  locator: Complete current owner; exact inputs captured by native inspect before
+    assessment.
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: supports
+  summary: Material form, source claims, mechanisms/absence, quantities, limits and
+    provenance inspected.
+  snapshot_sha256: 6af5c6bfe863f716aa767b8b6182d3a9d025b5033fb9d5bf62f5f7e56f8c3176
+- evidence_id: history0
+  kind: record_content
+  reference: history/records/coquimbite/2026-10-15T151128Z-codex-a9121b.yaml
+  locator: Complete canonical session plus distinct inline event/history_refs.
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: supports
+  summary: Actual codex/GPT-6 actor, target, timestamp and described CREATE/EDIT scope;
+    preserved append-only provenance.
+  snapshot_sha256: 10ac1593bbb2c289b683fd7138acba51c3d92895b0bf282a82bcecf98d1f2ad8
+- evidence_id: history1
+  kind: record_content
+  reference: history/records/coquimbite/2026-10-15T152112Z-codex-b92da9.yaml
+  locator: Complete canonical session plus distinct inline event/history_refs.
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: supports
+  summary: Actual codex/GPT-6 actor, target, timestamp and described CREATE/EDIT scope;
+    preserved append-only provenance.
+  snapshot_sha256: 515078939bfa26ebc72718936db9bcd3844cbd1f585b7252dbc6f7aca7d51986
+- evidence_id: ima
+  kind: database
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions PDF pages1–2 and exact species row PDF 49; independently rendered/visually
+    checked. Raw /private/tmp/cmm-round97-sulfates-research/ima.pdf
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: supports
+  summary: September2026 accepted species/formula and Rd special-procedure year verified;
+    redefinition year is not a new-mineral identifier.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: search
+  kind: search
+  reference: Independent bounded notice/identity and related-study web searches
+  locator: Actual query list and assessed routes /private/tmp/cmm-round97-sulfates-independent-resources/search-observations.json
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: context_only
+  summary: No affecting experimental notice surfaced in bounded results. Newsletter52
+    Petrovite corrigendum was actually checked. Later structural/thermal leads remain
+    outside accepted measured evidence; inaccessible browser routes explicitly retained.
+  snapshot_sha256: 2aa05634d2f7bd211ade54c28fb56e5f424a1a16eeee1f14515452813b7157e1
+  search_scope: Seven actual queries on 2026-10-15, first returned results without
+    exhaustive pagination. Official publisher follow-up included Newsletter52, its
+    corrigendum and IUCr guidance; MDPI thermal landing429 and later DOI opens inaccessible.
+    No universal absence claim.
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/coquimbite.yaml
+  locator: Actual independent named-validation log /private/tmp/cmm-round97-sulfates-independent-resources/coquimbite-final-validation.log
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: supports
+  summary: One record checked, zero failed. Structural validation does not prove science.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round97-final-gates.json
+  locator: Actual terminal receipt and retained log /private/tmp/cmm-round97-final-gates.log
+    SHA256 c77281964ad285ffee5008c717a42255f422b948372d973513341d1a08aebaf3
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: supports
+  summary: Verified all recorded exits0, exact base/worktree and current target input
+    hash; parent executed full suite, reviewer verified completed receipt/log without
+    duplicate execution.
+  snapshot_sha256: 7ef2eac39d3fdd22ce6960e65fce05a6f51b1e541fcd9a5b8830dfa0bdc6b8f5
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round97-sulfates/20261015T151307Z-source-investigation.md
+  locator: Original acquisition/lineage dossier and paired JSON; native-inspected
+    context inputs.
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: context_only
+  summary: Original dossier supplies raw access provenance and deferred frontier.
+    Its initial threshold interpretation is explicitly superseded by the preserved
+    corrective dossier and final review, not silently overwritten.
+  snapshot_sha256: 82cf93ee26c3fe29b0c7776f3d793d4d69c40a464230d295b423057798754151
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1180/mgm.2020.15
+  locator: Complete8-page original read through references; printed278/PDF4 chemistry/Table2,
+    printed279/PDF5 Table3 and refined sites, printed280–281/PDF6–7 Table7/Figure5
+    and conclusion visually checked; Figure2 PDF3 maps checked. Raw /private/tmp/cmm-round97-sulfates-research/coquimbite-original.pdf
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: supports
+  summary: Natural Monte Arsiccio sample supports essential Al, empirical versus ideal
+    formula and related-but-distinct mineral structures. Water derives from structural
+    stoichiometry;20microprobe spots are not20independent specimens.
+  snapshot_sha256: fc34e62d3a8c1cc6051e92acf206ed96ca28d3f0a8b8e286eafaa79ae6f1d2b6
+- evidence_id: cif
+  kind: primary_source
+  reference: https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S0026461X20000158/resource/name/S0026461X20000158sup001.cif
+  locator: Complete acquired624290-byte deposited file; data_shelx identity/formula/symmetry/refinement
+    metadata and atom occupancies independently inspected; embedded structure factors
+    not re-refined. Raw /private/tmp/cmm-round97-sulfates-research/coquimbite-supplement.cif
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: supports
+  summary: Same study/specimen as article; Al0.946(7)/Fe0.054(7) mixed site and1307
+    qualifying reflections. No independent replication or raw-intensity reanalysis
+    claim.
+  snapshot_sha256: 9bd5ef8b8243a33d585d565c341bb1621ea53793875aa4a62f9cf3f79fc0db88
+- evidence_id: newsletter
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-32-1-2020
+  locator: Section3 IMA19-F, independently opened official HTML and read saved source.
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: supports
+  summary: October2019 approval establishes Al-essential formula, group boundaries
+    and Smithsonian neotype12548, distinct from Monte Arsiccio Pisa19914 sample.
+  snapshot_sha256: 2b10d708deda199f4125ae7eff4065a45eb5d227e4ee8ae4780473b5aac0697f
+- evidence_id: corrigendum
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-32-1-2020-corrigendum
+  locator: Complete one-page official31January2020 notice independently read; downloaded
+    actualHTTP200 PDF. Raw /private/tmp/cmm-round97-sulfates-independent-resources/newsletter52-corrigendum.pdf
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: supports
+  summary: Corrigendum changes Petrovite particulars, not coquimbite19-F; no affecting
+    nomenclature correction inferred.
+  snapshot_sha256: 3c88b86625d2874d06038fadc6cb641e6d92aa2f979319f1373b5c50653fe993
+- evidence_id: initial-review
+  kind: record_content
+  reference: reviews/structured/20261015T151902Z-coquimbite-round97-threshold-initial/review.yaml
+  locator: Exact immutable initial F1 occurrence and original input hashes.
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: context_only
+  summary: Confirmed minor unsupported discrepancy statement is retained as historical
+    observation and explicitly resolved here.
+  snapshot_sha256: dbb2e1ab038ad31c535b025fa45e39db9082266eb56e2dc2d38c3aad80358f20
+- evidence_id: iucr
+  kind: primary_source
+  reference: https://journals.iucr.org/services/cif/checking/autolist.html
+  locator: Official page independently opened on2026-10-15; relevant passages assessed
+    in initial F1 and checked against correction.
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: supports
+  summary: REFLE01 gives conventional intensity/squared-amplitude multiplier2 versus
+    amplitude4.
+- evidence_id: uncertainty
+  kind: primary_source
+  reference: https://www.iucr.org/resources/commissions/crystallographic-nomenclature/statdes/if2f.html
+  locator: Official page independently opened on2026-10-15; relevant passages assessed
+    in initial F1 and checked against correction.
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: supports
+  summary: Standard propagated amplitude uncertainty explains threshold convention,
+    with weak-reflection caveats; no universal exact raw-data equality asserted.
+- evidence_id: comparison
+  kind: record_content
+  reference: /private/tmp/cmm-round97-sulfates-independent-resources/coquimbite-correction-comparison.json
+  locator: Independent parsed old/current field comparison and immutable-context hash
+    checks.
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: supports
+  summary: Only erroneous CIF source-title wording and actual appended provenance
+    changed in owner; scientific identity/composition fields and original CREATE/dossier
+    remain unchanged.
+  snapshot_sha256: 01e07fa716d8aeb0f4fc945ada3ae5b6cd8b2915152674ec486ab4865f2e86b4
+- evidence_id: correction
+  kind: record_content
+  reference: research/sources/round97-sulfates/20261015T152218Z-reflection-threshold-correction.md
+  locator: Complete corrective successor dossier; pairedJSON inspected as native context.
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: supports
+  summary: Corrects initial threshold interpretation explicitly, with IUCr guidance
+    and issue353, preserving original source dossier.
+  snapshot_sha256: 2d4c7b36bba674b8fcd0391c0d45f58faa533397c5bbe7459bda20f7f6bb520f
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Current species identity versus historical formula
+  outcome: supported
+  summary: Al-essential current definition and group boundaries are supported.
+  details: IMA19-F approvedOctober2019 and currentSeptember2026 list support AlFe(III)3(SO4)6(H2O)12·6H2O.
+    Historical Al-free formula is not current; paracoquimbite is compositionally distinct
+    and aluminocoquimbite has different topology. Museum numbers are specimen identifiers,
+    not material-wide CURIEs.
+  target_ids:
+  - cmmmech:coquimbite
+  evidence_ids:
+  - owner
+  - ima
+  - newsletter
+  - corrigendum
+  - primary
+- assessment_id: quantity
+  area: quantity
+  topic: Empirical chemistry, structural model and sampling denominator
+  outcome: supported
+  summary: Measured composition, calculated water and ideal formula remain distinct.
+  details: Twenty WDS spots at15kV10nA10micrometre beam give empiricalAl0.96Fe3.11S5.97O24·18H2O.
+    H2O29.10wt% is calculated from18structural waters. Table3/CIF mixedsiteAl0.946(7)Fe0.054(7)
+    is a model occupancy, not independent bulk assay. Natural intergrowth contains
+    krausite; Figure2 maps do not establish whole-rock purity.
+  target_ids:
+  - cmmmech:coquimbite
+  evidence_ids:
+  - owner
+  - primary
+  - cif
+- assessment_id: mechanism
+  area: scope
+  topic: Static identity evidence and causality
+  outcome: supported
+  summary: An identity-focused record does not manufacture microbial causality.
+  details: Natural Monte Arsiccio specimen characterized by powder confirmation, microprobe,
+    Raman/IR and single-crystal diffraction. No microbial inoculum, substrate conversion
+    assay, biomass or recovery mechanism is established; mechanisms omitted appropriately.
+    Al-stabilization discussion is not imported as tested process.
+  target_ids:
+  - cmmmech:coquimbite
+  evidence_ids:
+  - owner
+  - primary
+  - cif
+- assessment_id: resolution
+  area: consistency
+  topic: Exact initial F1 and issue353 resolution
+  outcome: supported
+  summary: Conventional threshold notation no longer appears as a false contradiction.
+  details: PrintedTable2 Fo>4sigma(Fo) and CIF I>2sigma(I) conventionally correspond
+    and both report1307 reflections; correction removes unsupported discrepancy. Initial
+    review/dossier are immutable, author appended actualEDIT and successor dossier,
+    independent comparison and actual gates verify the exact final state.
+  target_ids:
+  - cmmmech:coquimbite
+  evidence_ids:
+  - owner
+  - primary
+  - cif
+  - iucr
+  - uncertainty
+  - initial-review
+  - comparison
+  - correction
+  - named
+  - batch
+- assessment_id: criticality
+  area: scope
+  topic: Criticality, identifiers and deployment boundary
+  outcome: supported
+  summary: No unsupported jurisdictional criticality or deployment claim is present.
+  details: Neither mineral inherits a constituent element criticality status. No criticality
+    assertion requiring jurisdiction/list/edition is made, no taxon/strain ID is invented
+    and no laboratory result is promoted to industrial deployment.
+  target_ids:
+  - cmmmech:coquimbite
+  evidence_ids:
+  - owner
+  - ima
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Exact inputs, immutable history and checks
+  outcome: supported
+  summary: Current owner and authentic CREATE/EDIT provenance are traceable.
+  details: Native inspect binds exact maintained record, canonical history and dossier
+    inputs at trusted base9272005a590c9fa1e5fbb75b30f914ce38c3924a. Actual inline
+    and sidecar events are distinct and honest. Completed coordinator gates are checked
+    through actual receipt and log; whole-corpus structured review checking follows
+    final save.
+  target_ids:
+  - cmmmech:coquimbite
+  evidence_ids:
+  - owner
+  - dossier
+  - named
+  - batch
+  - history0
+  - history1
+findings:
+- finding_id: F1
+  issue_key: coquimbite-round97-equivalent-reflection-thresholds
+  category: provenance
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Remove false unresolved discrepancy between conventional F and I thresholds
+  description: sources[3].title and the original dossier call Fo > 4sigma(Fo) versus
+    I > 2sigma(I) an unresolved reporting discrepancy. IUCr guidance explicitly gives
+    these conventional paired multipliers, with the standard uncertainty propagation
+    explaining the relation. Both source artifacts give 1307 qualifying reflections.
+    The asserted contradiction is unsupported; retain exact source values without
+    implying a failed reconciliation or independent replication.
+  target_ids:
+  - cmmmech:coquimbite
+  field_paths:
+  - sources[3].title
+  evidence_ids:
+  - owner
+  - primary
+  - cif
+  - iucr
+  - uncertainty
+  - initial-review
+  - comparison
+  - correction
+  - named
+  - batch
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/coquimbite.yaml
+    role: maintained_record
+  rule_id: exact-source-interpretation
+  native_severity: minor
+  normalization_reason: A bounded provenance interpretation defect; mineral identity
+    and measured composition are not changed by removing the false discrepancy.
+  disposition_reason: Author removed the false unresolved-discrepancy statement from
+    sources[3].title, retained same-study provenance, and appended actual inline/canonical
+    EDIT. Independent comparison verifies unchanged identity/composition and preserved
+    original CREATE/dossier; correction dossier explains conventional threshold transformation.
+    Current named and completed batch checks pass. This resolves GitHub353 without
+    claiming independent re-refinement.
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261015T151902Z-coquimbite-round97-threshold-initial
+    finding_id: F1
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/353
+actions: []
+limitations:
+- A single natural specimen and its same-study CIF establish the accepted identity
+  evidence; no independent experimental replication is inferred.
+- No raw-intensity re-refinement, covariance recomputation or universal weak-reflection
+  equivalence was performed.
+- Older Al-free definitions are historical; empirical composition and restrained structural
+  model do not establish exact ideal bulk purity.
+- Later coquimbite2025 structural/magnetic and2023thermochemical studies remain deferred
+  full-source assessments; current identity review imports no later measurements.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261015T151902Z-coquimbite-round97-threshold-initial
+  relationship: follow_up
+notes:
+- Shared source acquisition is disclosed; original text, claim-bearing graphics and
+  authority passages were assessed independently after native target inspection. Reviewer
+  made no sulfate owner/history edits.
+- Originals and raw working evidence remain outside Git; committed review is an evidence-linked
+  summary.
+- Final batch execution is by coordinator; this reviewer verified actual terminal
+  receipt, retained log and target input hash rather than claiming independent duplicate
+  suite execution.
+```

@@ -1,0 +1,84 @@
+{
+  "timestamp": "2026-10-15T15:04:16.785524+00:00",
+  "repository": "CultureBotAI/CMMMech",
+  "base": "9272005a590c9fa1e5fbb75b30f914ce38c3924a",
+  "worktree": "/private/tmp/CMMMech-expansion-round97-20261015",
+  "queries": [
+    {
+      "provider": "web search",
+      "query": "\"10.1111/1462-2920.12612\" pdf",
+      "coverage": "Returned first result set; no pagination/exhaustiveness claim"
+    },
+    {
+      "provider": "web search",
+      "query": "Ceci vanadinite fungal transformation 2015 full text",
+      "coverage": "Returned first result set; no pagination/exhaustiveness claim"
+    },
+    {
+      "provider": "web search",
+      "query": "\"Transformation of vanadinite\" \"dundee\" pdf",
+      "coverage": "Returned first result set; no pagination/exhaustiveness claim"
+    },
+    {
+      "provider": "web search",
+      "query": "\"Transformation of vanadinite\" \"iris\"",
+      "coverage": "Returned first result set; no pagination/exhaustiveness claim"
+    },
+    {
+      "provider": "web search",
+      "query": "patronite bioleaching bacteria mineral primary study",
+      "coverage": "Returned first result set; no pagination/exhaustiveness claim"
+    },
+    {
+      "provider": "web search",
+      "query": "roscoelite bioleaching fungi vanadium mineral",
+      "coverage": "Returned first result set; no pagination/exhaustiveness claim"
+    }
+  ],
+  "dedup": {
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-l",
+      "-i",
+      "vanadinite|roscoelite|10[.]3390/min16020197",
+      "/private/tmp/CMMMech-expansion-round97-20261015/data/records",
+      "/private/tmp/CMMMech-expansion-round97-20261015/research",
+      "/private/tmp/CMMMech-expansion-round97-20261015/reviews",
+      "/private/tmp/CMMMech-expansion-round97-20261015/history",
+      "/private/tmp/cmm-round38-vanadinite-research",
+      "/private/tmp/cmm-round39-vanadinite-research"
+    ],
+    "exit_code": 0,
+    "missing_roots": [],
+    "paths_log": "/private/tmp/cmm-round97-vanadium-research/dedup-paths.txt",
+    "sha256": "2cb4bcbcd78d688eff5c65bca5f001240620e87846fcd3398966533c277fb626",
+    "scope": "Hidden/ignored included; relevant symlinks followed; text searches do not decode every binary. Prior reports, current maintained owners and referenced vanadinite downloads only."
+  },
+  "sources": [
+    {
+      "doi": "10.1111/1462-2920.12612",
+      "url": "https://www.researchgate.net/profile/Anna-Persiani/publication/265296984_Transformation_of_vanadinite_Pb5VO43Cl_by_fungi/links/578f6b8708ae35e97c427333/Transformation-of-vanadinite-Pb5VO43Cl-by-fungi.pdf",
+      "result": "Web reader returned 17-page text. Screenshot requests at zero-based pages2 and5 returned reference-only outputs, no inspectable image. No original PDF download claimed. No newly verified graphics.",
+      "decision": "Retain source-only deferral; issue129 remains open. No record/history created."
+    },
+    {
+      "doi": "10.3390/min16020197",
+      "url": "https://www.mdpi.com/2075-163X/16/2/197",
+      "result": "Search lead already curated in metalliferous-black-shale and molybdenite. Full study not freshly reassessed.",
+      "decision": "Duplicate experiment, not new microbial evidence for a roscoelite owner. Prospective phase-specific identity/claims require separate primary assessment."
+    }
+  ],
+  "new_record_count": 0,
+  "limits": [
+    "No claim that vanadium-mineral frontier is exhausted.",
+    "No newly evaluated complete primary experiment or acceptance review in this followup.",
+    "Existing source deficiencies are not repaired by metadata/text retrieval."
+  ],
+  "next_actions": [
+    "Acquire inspectable original graphics described by issue129 through a genuinely new legitimate route.",
+    "Assess roscoelite primary structural/mineral identity evidence and distinguish host-phase dissolution from bulk shale outcomes before creating any owner."
+  ]
+}

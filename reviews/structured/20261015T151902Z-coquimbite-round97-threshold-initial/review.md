@@ -1,0 +1,308 @@
+# Independent initial coquimbite reflection-threshold interpretation finding
+
+- Review: 20261015T151902Z-coquimbite-round97-threshold-initial
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T15:14:48.429795Z
+- Finished UTC: 2026-10-15T15:19:02.804038Z
+- Reviewer: codex /root/round97_resources (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Confirmed minor provenance interpretation defect: conventional amplitude and intensity reflection thresholds are incorrectly called an unresolved reporting discrepancy. Full independent scientific assessment continues; final batch gates remain pending.
+
+## Scope And Provenance
+
+Exact frozen-owner threshold interpretation and source provenance assessment; full scientific review is continuing.
+
+Selection: Parent-assigned independent review of frozen coquimbite owner.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9272005a590c9fa1e5fbb75b30f914ce38c3924a.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:coquimbite | data/records/coquimbite.yaml | maintained | Coquimbite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Original Table 2, CIF and IUCr convention | passed | True | cmmmech:coquimbite | Visually read original PDF page 4 / printed 278 Table 2 and exact CIF lines 117–119; independently opened current official IUCr REFLE01 and statistical-descriptor guidance. |
+| Named structural validation | passed | True | cmmmech:coquimbite | Checked 1 record; 0 failed. Actual successful retry used the approved offline cache environment after an initial default-cache permission failure. |
+| Final batch and canonical history checks | unavailable | True | cmmmech:coquimbite | Coordinator final batch receipt not yet available; no passing result inferred. |
+
+## Scientific And Domain Assessments
+
+### Reflection threshold convention and source interpretation
+
+provenance: concern. Targets: cmmmech:coquimbite.
+
+The difference in notation and multiplier alone is not a reporting contradiction. The primary sources report the same selected reflection count and conventionally equivalent criteria.
+
+## Findings
+
+### F1: Remove false unresolved discrepancy between conventional F and I thresholds
+
+minor / open / confirmed; issue key: coquimbite-round97-equivalent-reflection-thresholds.
+
+sources[3].title and the original dossier call Fo &gt; 4sigma(Fo) versus I &gt; 2sigma(I) an unresolved reporting discrepancy. IUCr guidance explicitly gives these conventional paired multipliers, with the standard uncertainty propagation explaining the relation. Both source artifacts give 1307 qualifying reflections. The asserted contradiction is unsupported; retain exact source values without implying a failed reconciliation or independent replication.
+
+## Recommended Actions And Acceptance Checks
+
+### A1
+
+Correct the owner source description and append an actual inline EDIT with canonical history. Preserve the initial source dossier and add a corrective successor dossier explaining the conventional threshold relation. Retain this observation and resolve its exact occurrence in a later independent review.
+
+- Owner no longer calls conventional threshold notation a discrepancy.
+- Original source dossier and initial review remain immutable; correction identifies them.
+- Exact final owner/history/dossier inputs are reinspected and relevant named, history and batch gates pass.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/coquimbite.yaml; sources[3].title; original source dossier threshold paragraph. Exact native inspect source inputs. | refutes | Owner labels Fo &gt; 4sigma(Fo) versus I &gt; 2sigma(I) an unresolved reporting discrepancy. |
+| primary | https://doi.org/10.1180/mgm.2020.15; PDF page 4, printed 278, Table 2; original page visually checked. Raw /private/tmp/cmm-round97-sulfates-research/coquimbite-original.pdf | supports | Table 2 gives 1307 reflections at Fo &gt; 4sigma(Fo) and R=0.0219. |
+| cif | https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S0026461X20000158/resource/name/S0026461X20000158sup001.cif; _reflns_number_gt and _reflns_threshold_expression, lines117–119. Raw /private/tmp/cmm-round97-sulfates-research/coquimbite-supplement.cif | supports | Publisher CIF gives the same 1307 reflections at I &gt; 2sigma(I). |
+| iucr | https://journals.iucr.org/services/cif/checking/autolist.html; REFLE01, lines614–640 of independently opened current official page on 2026-10-15. Author retained browser snapshot /private/tmp/cmm-round97-sulfates-research/iucr-web-response.json | supports | IUCr guidance pairs conventional multipliers 2 for intensity or squared amplitude with 4 for amplitude. |
+| uncertainty | https://www.iucr.org/resources/commissions/crystallographic-nomenclature/statdes/if2f.html; Statistical descriptors: Refinement on I, F squared or F, lines395–403 of independently opened official page. | supports | The standard propagated uncertainty u(F)=u(F squared)/(2F) explains the conventional factor-two threshold transformation. The source cautions about weak-reflection behavior; no re-refinement or universal exact data equality is claimed. |
+| named | uv run --locked cmmmech validate data/records/coquimbite.yaml; Actual named validation log /private/tmp/cmm-round97-sulfates-independent-resources/coquimbite-initial-validation.log | supports | Structural validation passes, but does not adjudicate crystallographic interpretation. |
+
+## Limits And Additional Notes
+
+- This is an initial scoped finding; complete scientific review and final batch acceptance remain pending.
+- Reviewer has not rerun crystallographic refinement or inferred raw-intensity equivalence beyond the conventional threshold relation.
+- No owner corrections performed by this independent reviewer.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T151902Z-coquimbite-round97-threshold-initial
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent initial coquimbite reflection-threshold interpretation finding
+started_at: '2026-10-15T15:14:48.429795Z'
+finished_at: '2026-10-15T15:19:02.804038Z'
+reviewer:
+  identity: codex /root/round97_resources
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The sulfate author curated these owners. I authored separate
+    bone-resource records, native-inspected the frozen sulfate owner before assessment,
+    and have not edited it.
+skill: .claude/skills/review-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: 'Confirmed minor provenance interpretation defect: conventional amplitude
+  and intensity reflection thresholds are incorrectly called an unresolved reporting
+  discrepancy. Full independent scientific assessment continues; final batch gates
+  remain pending.'
+source:
+  git_revision: 9272005a590c9fa1e5fbb75b30f914ce38c3924a
+  state: working_tree
+  inputs:
+  - path: data/records/coquimbite.yaml
+    sha256: 0065ed172cce35f5cb5c465fa171121b0f734caaaa0e0c4e4feacd6f80c1ab52
+    role: target
+  - path: history/records/coquimbite/2026-10-15T151128Z-codex-a9121b.yaml
+    sha256: 10ac1593bbb2c289b683fd7138acba51c3d92895b0bf282a82bcecf98d1f2ad8
+    role: context
+  - path: research/sources/round97-sulfates/20261015T151307Z-source-investigation.json
+    sha256: 571b83403a0b9a034e92b3900ce242d2a616057e4fe194bd1ea319f124b679af
+    role: context
+  - path: research/sources/round97-sulfates/20261015T151307Z-source-investigation.md
+    sha256: 82cf93ee26c3fe29b0c7776f3d793d4d69c40a464230d295b423057798754151
+    role: context
+scope:
+  description: Exact frozen-owner threshold interpretation and source provenance assessment;
+    full scientific review is continuing.
+  selection: Parent-assigned independent review of frozen coquimbite owner.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:coquimbite
+targets:
+- target_id: cmmmech:coquimbite
+  path: data/records/coquimbite.yaml
+  label: Coquimbite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/coquimbite.yaml
+    role: maintained_record
+checks:
+- check_id: threshold
+  name: Original Table 2, CIF and IUCr convention
+  required: true
+  status: passed
+  summary: Visually read original PDF page 4 / printed 278 Table 2 and exact CIF lines
+    117–119; independently opened current official IUCr REFLE01 and statistical-descriptor
+    guidance.
+  target_ids:
+  - cmmmech:coquimbite
+  evidence_ids:
+  - primary
+  - cif
+  - iucr
+  - uncertainty
+- check_id: named
+  name: Named structural validation
+  command: uv run --locked cmmmech validate data/records/coquimbite.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Checked 1 record; 0 failed. Actual successful retry used the approved offline
+    cache environment after an initial default-cache permission failure.
+  target_ids:
+  - cmmmech:coquimbite
+  evidence_ids:
+  - named
+- check_id: final-batch
+  name: Final batch and canonical history checks
+  required: true
+  status: unavailable
+  summary: Coordinator final batch receipt not yet available; no passing result inferred.
+  target_ids:
+  - cmmmech:coquimbite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/coquimbite.yaml
+  locator: sources[3].title; original source dossier threshold paragraph. Exact native
+    inspect source inputs.
+  accessed_at: '2026-10-15T15:19:02.804038Z'
+  support: refutes
+  summary: Owner labels Fo > 4sigma(Fo) versus I > 2sigma(I) an unresolved reporting
+    discrepancy.
+  snapshot_sha256: 0065ed172cce35f5cb5c465fa171121b0f734caaaa0e0c4e4feacd6f80c1ab52
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1180/mgm.2020.15
+  locator: PDF page 4, printed 278, Table 2; original page visually checked. Raw /private/tmp/cmm-round97-sulfates-research/coquimbite-original.pdf
+  accessed_at: '2026-10-15T15:19:02.804038Z'
+  support: supports
+  summary: Table 2 gives 1307 reflections at Fo > 4sigma(Fo) and R=0.0219.
+  snapshot_sha256: fc34e62d3a8c1cc6051e92acf206ed96ca28d3f0a8b8e286eafaa79ae6f1d2b6
+- evidence_id: cif
+  kind: primary_source
+  reference: https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S0026461X20000158/resource/name/S0026461X20000158sup001.cif
+  locator: _reflns_number_gt and _reflns_threshold_expression, lines117–119. Raw /private/tmp/cmm-round97-sulfates-research/coquimbite-supplement.cif
+  accessed_at: '2026-10-15T15:19:02.804038Z'
+  support: supports
+  summary: Publisher CIF gives the same 1307 reflections at I > 2sigma(I).
+  snapshot_sha256: 9bd5ef8b8243a33d585d565c341bb1621ea53793875aa4a62f9cf3f79fc0db88
+- evidence_id: iucr
+  kind: primary_source
+  reference: https://journals.iucr.org/services/cif/checking/autolist.html
+  locator: REFLE01, lines614–640 of independently opened current official page on
+    2026-10-15. Author retained browser snapshot /private/tmp/cmm-round97-sulfates-research/iucr-web-response.json
+  accessed_at: '2026-10-15T15:19:02.804038Z'
+  support: supports
+  summary: IUCr guidance pairs conventional multipliers 2 for intensity or squared
+    amplitude with 4 for amplitude.
+- evidence_id: uncertainty
+  kind: primary_source
+  reference: https://www.iucr.org/resources/commissions/crystallographic-nomenclature/statdes/if2f.html
+  locator: 'Statistical descriptors: Refinement on I, F squared or F, lines395–403
+    of independently opened official page.'
+  accessed_at: '2026-10-15T15:19:02.804038Z'
+  support: supports
+  summary: The standard propagated uncertainty u(F)=u(F squared)/(2F) explains the
+    conventional factor-two threshold transformation. The source cautions about weak-reflection
+    behavior; no re-refinement or universal exact data equality is claimed.
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/coquimbite.yaml
+  locator: Actual named validation log /private/tmp/cmm-round97-sulfates-independent-resources/coquimbite-initial-validation.log
+  accessed_at: '2026-10-15T15:19:02.804038Z'
+  support: supports
+  summary: Structural validation passes, but does not adjudicate crystallographic
+    interpretation.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+assessments:
+- assessment_id: threshold
+  area: provenance
+  topic: Reflection threshold convention and source interpretation
+  outcome: concern
+  target_ids:
+  - cmmmech:coquimbite
+  evidence_ids:
+  - owner
+  - primary
+  - cif
+  - iucr
+  - uncertainty
+  summary: The difference in notation and multiplier alone is not a reporting contradiction.
+    The primary sources report the same selected reflection count and conventionally
+    equivalent criteria.
+findings:
+- finding_id: F1
+  issue_key: coquimbite-round97-equivalent-reflection-thresholds
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Remove false unresolved discrepancy between conventional F and I thresholds
+  description: sources[3].title and the original dossier call Fo > 4sigma(Fo) versus
+    I > 2sigma(I) an unresolved reporting discrepancy. IUCr guidance explicitly gives
+    these conventional paired multipliers, with the standard uncertainty propagation
+    explaining the relation. Both source artifacts give 1307 qualifying reflections.
+    The asserted contradiction is unsupported; retain exact source values without
+    implying a failed reconciliation or independent replication.
+  target_ids:
+  - cmmmech:coquimbite
+  field_paths:
+  - sources[3].title
+  evidence_ids:
+  - owner
+  - primary
+  - cif
+  - iucr
+  - uncertainty
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/coquimbite.yaml
+    role: maintained_record
+  rule_id: exact-source-interpretation
+  native_severity: minor
+  normalization_reason: A bounded provenance interpretation defect; mineral identity
+    and measured composition are not changed by removing the false discrepancy.
+actions:
+- action_id: A1
+  description: Correct the owner source description and append an actual inline EDIT
+    with canonical history. Preserve the initial source dossier and add a corrective
+    successor dossier explaining the conventional threshold relation. Retain this
+    observation and resolve its exact occurrence in a later independent review.
+  finding_ids:
+  - F1
+  target_ids:
+  - cmmmech:coquimbite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/coquimbite.yaml
+    role: maintained_record
+  acceptance_checks:
+  - Owner no longer calls conventional threshold notation a discrepancy.
+  - Original source dossier and initial review remain immutable; correction identifies
+    them.
+  - Exact final owner/history/dossier inputs are reinspected and relevant named, history
+    and batch gates pass.
+limitations:
+- This is an initial scoped finding; complete scientific review and final batch acceptance
+  remain pending.
+- Reviewer has not rerun crystallographic refinement or inferred raw-intensity equivalence
+  beyond the conventional threshold relation.
+- No owner corrections performed by this independent reviewer.
+```

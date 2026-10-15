@@ -1,0 +1,399 @@
+{
+  "review_id": "20261015T153755Z-runtime-static-successor",
+  "kind": "static_operational_review",
+  "repository": "CultureBotAI/CMMMech",
+  "reviewer": "codex /root/round97_phosphates",
+  "model": "GPT-6",
+  "independence": "Independent of sulfate-agent helper corrections and root archive corrections; no helper edits by this reviewer.",
+  "started_at": "2026-10-15T15:36:02.990239+00:00",
+  "finished_at": "2026-10-15T15:37:55.558869Z",
+  "reviewed_base": "9272005a590c9fa1e5fbb75b30f914ce38c3924a",
+  "source_state": "working_tree plus exact frozen external helper/test bytes",
+  "scope": "Successor assessment of initial OP97-01/02/03 against final corrected helper bytes, original snapshot hashes and independently executed isolated regressions. Also includes root archive handoff/source-retention diff.",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "previous_reviews": [
+    {
+      "review_id": "20261015T152425Z-runtime-static-initial",
+      "path": "reviews/publication/20261015-round97/20261015T152425Z-runtime-static-initial.json",
+      "sha256": "af7c2e7157468d3af1ebbf585ccb4cadb6c56d560e70f292db401bebe5217ac0",
+      "markdown_path": "reviews/publication/20261015-round97/20261015T152425Z-runtime-static-initial.md",
+      "markdown_sha256": "d9e8bebc81beb41af12589d35f5178b8bf9c5e96ad956c4cae760669641ed79a"
+    }
+  ],
+  "findings": [
+    {
+      "id": "OP97-01",
+      "severity": "minor",
+      "status": "resolved",
+      "title": "Hosted receipt repeats previous-cohort authorship and round label",
+      "locators": [
+        "/private/tmp/cmm-round97-hosted-five.py:166",
+        "/private/tmp/cmm-round97-hosted-five.py:377"
+      ],
+      "description": "The future round97 receipt says root authored bassanite and reviewed wood ash, which belong to the preceding cohort. Its Markdown heading remains Round96. A copied helper should not emit false authorship for the present six-record cohort.",
+      "acceptance": "Replace authorship with accurate round97 operational scope and fix the heading; retain actual role limits and hash the corrected helper.",
+      "issue_number": 354,
+      "disposition_reason": "Current hosted-five authorship now describes root coordination of four mineral species and two bone residues authored/reviewed by distinct agents, and Markdown heading is Round97. No bassanite/wood-ash authorship is emitted for this cohort.",
+      "previous_occurrences": [
+        {
+          "repository": "CultureBotAI/CMMMech",
+          "review_id": "20261015T152425Z-runtime-static-initial",
+          "finding_id": "OP97-01",
+          "path": "reviews/publication/20261015-round97/20261015T152425Z-runtime-static-initial.json",
+          "sha256": "af7c2e7157468d3af1ebbf585ccb4cadb6c56d560e70f292db401bebe5217ac0"
+        }
+      ],
+      "issue_url": "https://github.com/CultureBotAI/CMMMech/issues/354"
+    },
+    {
+      "id": "OP97-02",
+      "severity": "major",
+      "status": "resolved",
+      "title": "Mutating helpers do not reject occupied dangling receipt paths before acting",
+      "locators": [
+        "/private/tmp/cmm-round97-publish.py:3,7-10",
+        "/private/tmp/cmm-round97-enqueue.py:4,25-27",
+        "/private/tmp/cmm-round97-cleanup.py:4,14-23",
+        "/private/tmp/cmm-round97-sync-main.py:4,26-28"
+      ],
+      "description": "These four helpers guard output only with not Path.exists(), then perform push/PR creation, queue admission, branch deletion or main fast-forward and write receipts with write_text. A dangling symlink is an occupied path for which exists() is false, so the promised early no-overwrite/refuse-existing-path behavior is bypassed; write_text follows it. A bounded synthetic test reproduced those Path semantics without running any helper or external mutation. Existing regular receipts are rejected; no exploit or actual corruption is claimed.",
+      "acceptance": "Before any mutation reject exists() OR is_symlink(); use exclusive receipt creation so a collision introduced later cannot overwrite a receipt. Apply consistently to maintained receipt writers and add a targeted harmless guard regression check.",
+      "issue_number": 355,
+      "disposition_reason": "Shared ensure_unoccupied rejects existing files, directories and dangling symlinks before action. ExclusiveReceipt atomically reserves an exclusive open descriptor before mutation, checks its inode, writes through that descriptor, fsyncs terminal results and preserves explicit failure receipts. Commit/publish/enqueue/cleanup/sync use the guard; inspected tests cover all five occupied-output paths, late collision and replaced symlink without changing a victim.",
+      "previous_occurrences": [
+        {
+          "repository": "CultureBotAI/CMMMech",
+          "review_id": "20261015T152425Z-runtime-static-initial",
+          "finding_id": "OP97-02",
+          "path": "reviews/publication/20261015-round97/20261015T152425Z-runtime-static-initial.json",
+          "sha256": "af7c2e7157468d3af1ebbf585ccb4cadb6c56d560e70f292db401bebe5217ac0"
+        }
+      ],
+      "issue_url": "https://github.com/CultureBotAI/CMMMech/issues/355"
+    },
+    {
+      "id": "OP97-03",
+      "severity": "major",
+      "status": "resolved",
+      "title": "Publish does not bind current external PR metadata to prepared/committed bytes",
+      "locators": [
+        "/private/tmp/cmm-round97-publish.py:3,7-10",
+        "/private/tmp/cmm-round97-commit.py:46-50,76"
+      ],
+      "description": "Commit records a helper-config hash in its bindings, but publish loads the current config title without comparing that hash and first reads PR body only after pushing. Its post-create comparison confirms agreement with the current body, not the prepared/reviewed body. Thus changing config title or body after preparation can publish changed metadata with an unchanged reviewed Git HEAD. This is a static stale-input gap, not a claim that the current draft metadata has changed.",
+      "acceptance": "Bind the reviewed body and config hashes in an immutable preparation/commit or dedicated publication handoff, validate those bindings and exact branch/base/head/tree before the first remote mutation, and use the bound bytes for creation. Recheck body/config bindings before queue admission.",
+      "issue_number": 356,
+      "disposition_reason": "Shared verified_handoff checks current config/body/runtime-helper hashes against both prepared and committed bindings, preparation digest/base/file map, and commit config identity. Publish verifies exact branch/base/head/tree and live main before reserving output/pushing, rechecks the handoff after push, and submits verified body bytes through stdin. Enqueue repeats these original bindings and requires matching preflight/creation receipt digests; preflight retains and rechecks bindings. Stale config, body, helper and prepared inputs fail before fake subprocess calls in the inspected tests.",
+      "previous_occurrences": [
+        {
+          "repository": "CultureBotAI/CMMMech",
+          "review_id": "20261015T152425Z-runtime-static-initial",
+          "finding_id": "OP97-03",
+          "path": "reviews/publication/20261015-round97/20261015T152425Z-runtime-static-initial.json",
+          "sha256": "af7c2e7157468d3af1ebbf585ccb4cadb6c56d560e70f292db401bebe5217ac0"
+        }
+      ],
+      "issue_url": "https://github.com/CultureBotAI/CMMMech/issues/356"
+    }
+  ],
+  "unresolved_findings": [],
+  "helpers": [
+    {
+      "name": "commit",
+      "path": "/private/tmp/cmm-round97-commit.py",
+      "sha256": "e21c662afacc9873072b60a7f3e12d2aa227562dd4fa8ff3cdf73caf567d74a7",
+      "bytes": 7800,
+      "initial_sha256": "7180b1d8d90c1a196fe7294cd0d0a939cd2135b09330264be1fe3087d97382c3",
+      "changed": true,
+      "ast_parses": true
+    },
+    {
+      "name": "publish",
+      "path": "/private/tmp/cmm-round97-publish.py",
+      "sha256": "b56940f438ce4756df11e5d507e8c2d9da173b6f53a70d11b34fafd9c16b3131",
+      "bytes": 2387,
+      "initial_sha256": "699e5f44c2e4620bbcc3ac027fe1adad826ac03fd634aaeaaa1273f4991bf4e4",
+      "changed": true,
+      "ast_parses": true
+    },
+    {
+      "name": "enqueue",
+      "path": "/private/tmp/cmm-round97-enqueue.py",
+      "sha256": "94bfec10b3d523968b6e5a0f92cdc8f459224af320356ec5e14fd3abca6bd07d",
+      "bytes": 4969,
+      "initial_sha256": "68ce274f0ce33cfbd2a2e640beefd8e73b212bc71610d4118068a89479fef939",
+      "changed": true,
+      "ast_parses": true
+    },
+    {
+      "name": "cleanup",
+      "path": "/private/tmp/cmm-round97-cleanup.py",
+      "sha256": "7fbdab84a12361c860b61e929e163a737878d2d81ed00e9d0b5601d4456294b2",
+      "bytes": 2502,
+      "initial_sha256": "7f9a8a5e30e2c870ff3e4e1dfb1342f84b40dc90ebd60cbbbd2fd184a2642f4a",
+      "changed": true,
+      "ast_parses": true
+    },
+    {
+      "name": "sync-main",
+      "path": "/private/tmp/cmm-round97-sync-main.py",
+      "sha256": "f2dcefcc0dc802d9846a121a54965ff5acb893b14433d2b399c0ec4413b1b332",
+      "bytes": 3978,
+      "initial_sha256": "9c0a520ddec77f79ba79861fc1be4a131f460216af466bf50e1cd8c729996ddb",
+      "changed": true,
+      "ast_parses": true
+    },
+    {
+      "name": "isolated-coverage",
+      "path": "/private/tmp/cmm-round97-isolated-coverage.py",
+      "sha256": "2976fa37edb6f1fd50dd5aaf600133a07149388fe098fef68c03354b51afd844",
+      "bytes": 3329,
+      "initial_sha256": "2976fa37edb6f1fd50dd5aaf600133a07149388fe098fef68c03354b51afd844",
+      "changed": false,
+      "ast_parses": true
+    },
+    {
+      "name": "isolated-verification",
+      "path": "/private/tmp/cmm-round97-isolated-verification.py",
+      "sha256": "ecc70523a1420583317a27b9f45a0b46500feaadfc7f611e1a25b8ac9eae30f4",
+      "bytes": 10446,
+      "initial_sha256": "7957840d8bc2300b88e2aec2d9930c1625396f17ec3585f2df56d9c46c95274a",
+      "changed": true,
+      "ast_parses": true
+    },
+    {
+      "name": "hosted-five",
+      "path": "/private/tmp/cmm-round97-hosted-five.py",
+      "sha256": "cae146f2d5afae7d02b16bf1e6714fce29665e52966cb3846c189cecbe1e1557",
+      "bytes": 24418,
+      "initial_sha256": "d014573c717a084d2be7fdd5b10cca9aa25193b2d538a12f28729f471e4dc723",
+      "changed": true,
+      "ast_parses": true
+    },
+    {
+      "name": "preservation-check",
+      "path": "/private/tmp/cmm-round97-preservation-check.py",
+      "sha256": "5ba7e641845710767b9d35c9a4460ef2639fd42d24946c8d2befac9edc1b0038",
+      "bytes": 1383,
+      "initial_sha256": "5ba7e641845710767b9d35c9a4460ef2639fd42d24946c8d2befac9edc1b0038",
+      "changed": false,
+      "ast_parses": true
+    },
+    {
+      "name": "review-check-final",
+      "path": "/private/tmp/cmm-round97-review-check-final.py",
+      "sha256": "f19787384f01c3c8b4dfe911584f04be12faa4321fc80a2eeac6eda1d5a6ca4a",
+      "bytes": 948,
+      "initial_sha256": "f19787384f01c3c8b4dfe911584f04be12faa4321fc80a2eeac6eda1d5a6ca4a",
+      "changed": false,
+      "ast_parses": true
+    },
+    {
+      "name": "final-gates",
+      "path": "/private/tmp/cmm-round97-final-gates.py",
+      "sha256": "d1c4db7a2728a74d789445eecbfa7fcc765a9ff4686add9b124830d955503754",
+      "bytes": 2499,
+      "initial_sha256": "d1c4db7a2728a74d789445eecbfa7fcc765a9ff4686add9b124830d955503754",
+      "changed": false,
+      "ast_parses": true
+    },
+    {
+      "name": "archive",
+      "path": "/private/tmp/cmm-round97-archive.py",
+      "sha256": "7b29bd83d095a849431155d33c9d620bc32b93e5b25f065a150c4df17fcf3cdd",
+      "bytes": 5648,
+      "initial_sha256": "6fc1d557f8a4674717592e673ef3552fc069c76ee36cc547724ef0c915cdf625",
+      "changed": true,
+      "ast_parses": true
+    },
+    {
+      "name": "shared-guards",
+      "path": "/private/tmp/cmm_round97_guards.py",
+      "sha256": "681dc8476e6bf868a67b11258121840db49cf9c8a9f204b59dae349004c0c6c7",
+      "bytes": 4719,
+      "new": true,
+      "ast_parses": true
+    }
+  ],
+  "correction_evidence": {
+    "original_snapshots": {
+      "path": "/private/tmp/cmm-round97-helper-fixes/before.json",
+      "sha256": "4a279f61af7c752f2f9d15f4b3143a4ecba2d2f5029ef2a1a2b7f8a78d630619",
+      "content": {
+        "at": "2026-10-15T15:28:33.244760+00:00",
+        "files": [
+          {
+            "name": "commit",
+            "path": "/private/tmp/cmm-round97-commit.py",
+            "snapshot": "/private/tmp/cmm-round97-helper-fixes/originals/cmm-round97-commit.py",
+            "sha256": "7180b1d8d90c1a196fe7294cd0d0a939cd2135b09330264be1fe3087d97382c3"
+          },
+          {
+            "name": "publish",
+            "path": "/private/tmp/cmm-round97-publish.py",
+            "snapshot": "/private/tmp/cmm-round97-helper-fixes/originals/cmm-round97-publish.py",
+            "sha256": "699e5f44c2e4620bbcc3ac027fe1adad826ac03fd634aaeaaa1273f4991bf4e4"
+          },
+          {
+            "name": "enqueue",
+            "path": "/private/tmp/cmm-round97-enqueue.py",
+            "snapshot": "/private/tmp/cmm-round97-helper-fixes/originals/cmm-round97-enqueue.py",
+            "sha256": "68ce274f0ce33cfbd2a2e640beefd8e73b212bc71610d4118068a89479fef939"
+          },
+          {
+            "name": "cleanup",
+            "path": "/private/tmp/cmm-round97-cleanup.py",
+            "snapshot": "/private/tmp/cmm-round97-helper-fixes/originals/cmm-round97-cleanup.py",
+            "sha256": "7f9a8a5e30e2c870ff3e4e1dfb1342f84b40dc90ebd60cbbbd2fd184a2642f4a"
+          },
+          {
+            "name": "sync-main",
+            "path": "/private/tmp/cmm-round97-sync-main.py",
+            "snapshot": "/private/tmp/cmm-round97-helper-fixes/originals/cmm-round97-sync-main.py",
+            "sha256": "9c0a520ddec77f79ba79861fc1be4a131f460216af466bf50e1cd8c729996ddb"
+          },
+          {
+            "name": "hosted-five",
+            "path": "/private/tmp/cmm-round97-hosted-five.py",
+            "snapshot": "/private/tmp/cmm-round97-helper-fixes/originals/cmm-round97-hosted-five.py",
+            "sha256": "d014573c717a084d2be7fdd5b10cca9aa25193b2d538a12f28729f471e4dc723"
+          },
+          {
+            "name": "isolated-verification",
+            "path": "/private/tmp/cmm-round97-isolated-verification.py",
+            "snapshot": "/private/tmp/cmm-round97-helper-fixes/originals/cmm-round97-isolated-verification.py",
+            "sha256": "7957840d8bc2300b88e2aec2d9930c1625396f17ec3585f2df56d9c46c95274a"
+          }
+        ]
+      }
+    },
+    "initial_archive_snapshot": {
+      "path": "/private/tmp/cmm-round97-archive-before-handoff-hardening.py",
+      "sha256": "6fc1d557f8a4674717592e673ef3552fc069c76ee36cc547724ef0c915cdf625"
+    },
+    "author_final_receipt": {
+      "path": "/private/tmp/cmm-round97-helper-fixes/final-fixes-receipt.json",
+      "sha256": "4eb58b7331d938238e90d9af9d03250cfae953f12ef74c721a3835c885eef4ed",
+      "content": {
+        "finished_at": "2026-10-15T15:35:25.017128+00:00",
+        "supersedes_helper_hashes_and_test_receipt": "/private/tmp/cmm-round97-helper-fixes/fixes-receipt.json",
+        "passed": true,
+        "changes_since_v2": [
+          "Included isolated-coverage.py in exact publication bindings.",
+          "Root archive now validates verified_handoff before mkdir; root-owned source is included in bound helper set.",
+          "Test output path is configurable by CMM97_TEST_RECEIPT and otherwise timestamped, allowing independent reruns without overwriting prior receipts."
+        ],
+        "tests": 8,
+        "test_receipt": "/private/tmp/cmm-round97-helper-fixes/regression-results-v3.json",
+        "test_receipt_sha256": "c0c2545cdd0ce8e525776e40406252f488bdf4d347481fb817c1f7a3fa2e31c1",
+        "test_log": "/private/tmp/cmm-round97-helper-fixes/regression-v3.log",
+        "test_log_sha256": "451280854fc857f45afdd5f7117eb6d0c48978cb13a1b4b8c20e15328c075059",
+        "test_path": "/private/tmp/cmm-round97-helper-fixes/test_runtime.py",
+        "test_sha256": "f21e5c2810b4b6f24a19fba4bdd3de6d9e0ab6f39f1ce32ef142463001527a23",
+        "helper_hashes": {
+          "cmm-round97-commit.py": "e21c662afacc9873072b60a7f3e12d2aa227562dd4fa8ff3cdf73caf567d74a7",
+          "cmm-round97-publish.py": "b56940f438ce4756df11e5d507e8c2d9da173b6f53a70d11b34fafd9c16b3131",
+          "cmm-round97-enqueue.py": "94bfec10b3d523968b6e5a0f92cdc8f459224af320356ec5e14fd3abca6bd07d",
+          "cmm-round97-cleanup.py": "7fbdab84a12361c860b61e929e163a737878d2d81ed00e9d0b5601d4456294b2",
+          "cmm-round97-sync-main.py": "f2dcefcc0dc802d9846a121a54965ff5acb893b14433d2b399c0ec4413b1b332",
+          "cmm-round97-hosted-five.py": "cae146f2d5afae7d02b16bf1e6714fce29665e52966cb3846c189cecbe1e1557",
+          "cmm-round97-isolated-verification.py": "ecc70523a1420583317a27b9f45a0b46500feaadfc7f611e1a25b8ac9eae30f4",
+          "cmm-round97-archive.py": "7b29bd83d095a849431155d33c9d620bc32b93e5b25f065a150c4df17fcf3cdd",
+          "cmm-round97-isolated-coverage.py": "2976fa37edb6f1fd50dd5aaf600133a07149388fe098fef68c03354b51afd844",
+          "cmm_round97_guards.py": "681dc8476e6bf868a67b11258121840db49cf9c8a9f204b59dae349004c0c6c7"
+        },
+        "scope": "Exact final helper bytes tested solely against fresh synthetic files and mocked subprocess calls. No actual Git/GitHub publication executed."
+      }
+    },
+    "author_regression_receipt": {
+      "path": "/private/tmp/cmm-round97-helper-fixes/regression-results-v3.json",
+      "sha256": "c0c2545cdd0ce8e525776e40406252f488bdf4d347481fb817c1f7a3fa2e31c1",
+      "content": {
+        "finished_at": "2026-10-15T15:35:11.549713+00:00",
+        "passed": true,
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "scope": "Isolated regression checks: only synthetic files and mocked subprocess calls.\n\nHelper source is compiled with only absolute task-root literals redirected into\nfresh temporary fixtures; every subprocess entry point is patched fail-closed.\nNo actual Git/GitHub/network command is executed.\n",
+        "test_sha256": "f21e5c2810b4b6f24a19fba4bdd3de6d9e0ab6f39f1ce32ef142463001527a23",
+        "helper_hashes": {
+          "cmm-round97-commit.py": "e21c662afacc9873072b60a7f3e12d2aa227562dd4fa8ff3cdf73caf567d74a7",
+          "cmm-round97-publish.py": "b56940f438ce4756df11e5d507e8c2d9da173b6f53a70d11b34fafd9c16b3131",
+          "cmm-round97-enqueue.py": "94bfec10b3d523968b6e5a0f92cdc8f459224af320356ec5e14fd3abca6bd07d",
+          "cmm-round97-cleanup.py": "7fbdab84a12361c860b61e929e163a737878d2d81ed00e9d0b5601d4456294b2",
+          "cmm-round97-sync-main.py": "f2dcefcc0dc802d9846a121a54965ff5acb893b14433d2b399c0ec4413b1b332",
+          "cmm-round97-hosted-five.py": "cae146f2d5afae7d02b16bf1e6714fce29665e52966cb3846c189cecbe1e1557",
+          "cmm-round97-isolated-verification.py": "ecc70523a1420583317a27b9f45a0b46500feaadfc7f611e1a25b8ac9eae30f4",
+          "cmm-round97-archive.py": "7b29bd83d095a849431155d33c9d620bc32b93e5b25f065a150c4df17fcf3cdd",
+          "cmm-round97-isolated-coverage.py": "2976fa37edb6f1fd50dd5aaf600133a07149388fe098fef68c03354b51afd844",
+          "cmm_round97_guards.py": "681dc8476e6bf868a67b11258121840db49cf9c8a9f204b59dae349004c0c6c7"
+        }
+      }
+    },
+    "independent_regression_receipt": {
+      "path": "/private/tmp/cmm-round97-bones-independent/helper-regression-independent.json",
+      "sha256": "0570d6be5ede2bf8774b4af124f5df6aa9aea52c23d0dee19e9bef3d1710b9ed",
+      "content": {
+        "reviewer": "codex /root/round97_phosphates",
+        "started_at": "2026-10-15T15:36:02.990239+00:00",
+        "finished_at": "2026-10-15T15:36:03.907470+00:00",
+        "passed": true,
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "test_path": "/private/tmp/cmm-round97-helper-fixes/test_runtime.py",
+        "test_sha256": "f21e5c2810b4b6f24a19fba4bdd3de6d9e0ab6f39f1ce32ef142463001527a23",
+        "helper_hashes": {
+          "cmm-round97-commit.py": "e21c662afacc9873072b60a7f3e12d2aa227562dd4fa8ff3cdf73caf567d74a7",
+          "cmm-round97-publish.py": "b56940f438ce4756df11e5d507e8c2d9da173b6f53a70d11b34fafd9c16b3131",
+          "cmm-round97-enqueue.py": "94bfec10b3d523968b6e5a0f92cdc8f459224af320356ec5e14fd3abca6bd07d",
+          "cmm-round97-cleanup.py": "7fbdab84a12361c860b61e929e163a737878d2d81ed00e9d0b5601d4456294b2",
+          "cmm-round97-sync-main.py": "f2dcefcc0dc802d9846a121a54965ff5acb893b14433d2b399c0ec4413b1b332",
+          "cmm-round97-hosted-five.py": "cae146f2d5afae7d02b16bf1e6714fce29665e52966cb3846c189cecbe1e1557",
+          "cmm-round97-isolated-verification.py": "ecc70523a1420583317a27b9f45a0b46500feaadfc7f611e1a25b8ac9eae30f4",
+          "cmm-round97-archive.py": "7b29bd83d095a849431155d33c9d620bc32b93e5b25f065a150c4df17fcf3cdd",
+          "cmm-round97-isolated-coverage.py": "2976fa37edb6f1fd50dd5aaf600133a07149388fe098fef68c03354b51afd844",
+          "cmm_round97_guards.py": "681dc8476e6bf868a67b11258121840db49cf9c8a9f204b59dae349004c0c6c7"
+        },
+        "scope": "Independent execution of the inspected isolated test definitions with original main block disabled; only disposable synthetic roots and mocked subprocess calls. No runtime publication helper against actual paths, Git/GitHub mutation or full suite rerun. Original author receipts preserved.",
+        "log_path": "/private/tmp/cmm-round97-bones-independent/helper-regression-independent.log",
+        "log_sha256": "4a4196b575f09bf8d26e218c403e6ce8a1f9a72a170b3333d2927c80a70d40fe"
+      }
+    },
+    "independent_regression_log": {
+      "path": "/private/tmp/cmm-round97-bones-independent/helper-regression-independent.log",
+      "sha256": "4a4196b575f09bf8d26e218c403e6ce8a1f9a72a170b3333d2927c80a70d40fe",
+      "text": "test_commit_check_only_has_no_git_mutation_or_receipt (independent_review_fixture.RuntimeTests.test_commit_check_only_has_no_git_mutation_or_receipt) ... ok\ntest_exclusive_receipt_never_overwrites_and_retains_failure (independent_review_fixture.RuntimeTests.test_exclusive_receipt_never_overwrites_and_retains_failure) ... ok\ntest_late_collision_before_push (independent_review_fixture.RuntimeTests.test_late_collision_before_push) ... ok\ntest_occupied_outputs_fail_before_any_subprocess (independent_review_fixture.RuntimeTests.test_occupied_outputs_fail_before_any_subprocess) ... ok\ntest_publish_normal_bound_stdin_and_exclusive_receipt (independent_review_fixture.RuntimeTests.test_publish_normal_bound_stdin_and_exclusive_receipt) ... ok\ntest_recheck_between_push_and_create (independent_review_fixture.RuntimeTests.test_recheck_between_push_and_create) ... ok\ntest_stale_inputs_fail_before_publish_or_enqueue_subprocess (independent_review_fixture.RuntimeTests.test_stale_inputs_fail_before_publish_or_enqueue_subprocess) ... ok\ntest_verified_handoff_normal_and_missing_binding (independent_review_fixture.RuntimeTests.test_verified_handoff_normal_and_missing_binding) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.595s\n\nOK\n"
+    },
+    "test_definition": {
+      "path": "/private/tmp/cmm-round97-helper-fixes/test_runtime.py",
+      "sha256": "f21e5c2810b4b6f24a19fba4bdd3de6d9e0ab6f39f1ce32ef142463001527a23",
+      "source_text": "\"\"\"Isolated regression checks: only synthetic files and mocked subprocess calls.\n\nHelper source is compiled with only absolute task-root literals redirected into\nfresh temporary fixtures; every subprocess entry point is patched fail-closed.\nNo actual Git/GitHub/network command is executed.\n\"\"\"\nimport ast,contextlib,datetime,hashlib,io,json,os,shutil,subprocess,sys,tempfile,unittest\nfrom pathlib import Path\nfrom unittest.mock import patch\nsys.path.insert(0,'/private/tmp')\nimport cmm_round97_guards as guards\nT=Path('/private/tmp'); RESULTS=[]\ndef sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()\ndef fixture(root):\n for name in guards.PUBLICATION_FILES:\n  if name.endswith('.py'):shutil.copy2(T/name,root/name)\n cfg={'base':'b'*40,'branch':'owned-test','title':'Bound title','counts':{'record_count':1}}\n (root/'cmm-round97-helper-config.json').write_text(json.dumps(cfg))\n (root/'cmm-round97-pr-body.md').write_text('Bound body.\\n')\n bindings=guards.publication_bindings(root)\n prepared={'passed':True,'base':cfg['base'],'head':cfg['base'],'files':{'data/records/test.yaml':'a'*64},'bindings':bindings,'publication_bindings':bindings}\n pp=root/'cmm-round97-publication-prepared.json';pp.write_text(json.dumps(prepared))\n commit={'base':cfg['base'],'branch':cfg['branch'],'head':'c'*40,'tree':'d'*40,'worktree':str(root/'CMMMech-expansion-round97-20261015'),'files':list(prepared['files']),'hashes':prepared['files'],'bindings':bindings,'publication_bindings':bindings,'preparation_sha256':sha(pp)}\n (root/'cmm-round97-commit-receipt.json').write_text(json.dumps(commit))\n return commit,cfg,bindings\nclass Roots(ast.NodeTransformer):\n def __init__(self,root):self.root=str(root)\n def visit_Constant(self,node):\n  if isinstance(node.value,str) and node.value.startswith('/private/tmp'):\n   return ast.copy_location(ast.Constant(self.root+node.value[len('/private/tmp'):]),node)\n  return node\ndef execute(name,root,argv=None,init=None):\n path=T/f'cmm-round97-{name}.py';tree=ast.fix_missing_locations(Roots(root).visit(ast.parse(path.read_text())))\n ns={'__name__':'__main__','__file__':str(root/path.name)}\n if init:ns.update(init)\n with patch.object(sys,'argv',[str(path),*(argv or [])]),contextlib.redirect_stdout(io.StringIO()):\n  exec(compile(tree,str(path), 'exec'),ns)\n return ns\nclass RuntimeTests(unittest.TestCase):\n def test_occupied_outputs_fail_before_any_subprocess(self):\n  outputs={'commit':'commit-receipt','publish':'pr-created','enqueue':'queue-receipt','cleanup':'pr-cleanup','sync-main':'main-sync'}\n  for name,out in outputs.items():\n   for kind in ['regular','dangling','directory']:\n    with self.subTest(helper=name,kind=kind),tempfile.TemporaryDirectory(prefix='cmm97-test-',dir='/private/tmp') as d:\n     root=Path(d);p=root/f'cmm-round97-{out}.json';target=root/'uncreated'\n     if kind=='regular':p.write_text('PRESERVE')\n     elif kind=='dangling':p.symlink_to(target)\n     else:p.mkdir()\n     with patch('subprocess.run',side_effect=AssertionError('forbidden subprocess')) as run,patch('subprocess.check_output',side_effect=AssertionError('forbidden subprocess')) as read:\n      with self.assertRaises(FileExistsError):execute(name,root,['123'] if name in ['enqueue','cleanup'] else [])\n      self.assertEqual(run.call_count+read.call_count,0)\n     self.assertFalse(target.exists())\n     if kind=='regular':self.assertEqual(p.read_text(),'PRESERVE')\n def test_stale_inputs_fail_before_publish_or_enqueue_subprocess(self):\n  for helper in ['publish','enqueue']:\n   for name in ['cmm-round97-helper-config.json','cmm-round97-pr-body.md','cmm-round97-cleanup.py','cmm-round97-publication-prepared.json']:\n    with self.subTest(helper=helper,input=name),tempfile.TemporaryDirectory(prefix='cmm97-test-',dir='/private/tmp') as d:\n     root=Path(d);fixture(root);p=root/name\n     if name.endswith('.json'):\n      data=json.loads(p.read_text());data['title']='CHANGED';p.write_text(json.dumps(data))\n     else:p.write_text(p.read_text()+'changed\\n')\n     with patch('subprocess.run',side_effect=AssertionError('forbidden subprocess')) as run,patch('subprocess.check_output',side_effect=AssertionError('forbidden subprocess')) as read:\n      with self.assertRaises(ValueError):execute(helper,root,['123'] if helper=='enqueue' else [])\n      self.assertEqual(run.call_count+read.call_count,0)\n def test_verified_handoff_normal_and_missing_binding(self):\n  with tempfile.TemporaryDirectory(prefix='cmm97-test-',dir='/private/tmp') as d:\n   root=Path(d);c,cfg,b=fixture(root)\n   self.assertEqual(guards.verified_handoff(root),(c,cfg,'Bound body.\\n',b))\n   c['bindings'].pop('cmm-round97-pr-body.md');(root/'cmm-round97-commit-receipt.json').write_text(json.dumps(c))\n   with self.assertRaises(ValueError):guards.verified_handoff(root)\n def fake_publish(self,root,hook=None):\n  c,cfg,b=fixture(root);actions=[];state={'pushed':False}\n  def read(cmd,**kwargs):\n   if cmd[:3]==['git','branch','--show-current']:return c['branch']+'\\n'\n   if cmd[:2]==['git','rev-parse']:return (c['tree'] if cmd[2]=='HEAD^{tree}' else c['head'])+'\\n'\n   if cmd[:2]==['git','rev-list']:return c['head']+' '+c['base']+'\\n'\n   if cmd[:2]==['git','status']:return ''\n   if cmd[:2]==['git','ls-remote']:\n    if cmd[-1]=='refs/heads/main':return c['base']+'\\trefs/heads/main\\n'\n    if hook=='occupy' and not state['pushed']:(root/'cmm-round97-pr-created.json').write_text('CONCURRENT')\n    return (c['head']+'\\trefs/heads/'+c['branch']+'\\n') if state['pushed'] else ''\n   if cmd[:3]==['gh','pr','view']:return json.dumps({'number':123,'url':'https://example.test/123','headRefOid':c['head'],'baseRefOid':c['base'],'state':'OPEN','title':cfg['title'],'body':'Bound body.\\n'})\n   raise AssertionError('Unexpected read '+repr(cmd))\n  def run(cmd,**kwargs):\n   if cmd[:2]==['git','push']:\n    actions.append('push');state['pushed']=True\n    if hook=='body_after_push':(root/'cmm-round97-pr-body.md').write_text('changed after push')\n    return subprocess.CompletedProcess(cmd,0,'','')\n   if cmd[:3]==['gh','pr','create']:\n    actions.append('create');self.assertEqual(kwargs['input'],'Bound body.\\n');self.assertEqual(cmd[-2:],['--body-file','-'])\n    return subprocess.CompletedProcess(cmd,0,'https://example.test/123\\n','')\n   raise AssertionError('Unexpected action '+repr(cmd))\n  return c,cfg,b,actions,read,run\n def test_publish_normal_bound_stdin_and_exclusive_receipt(self):\n  with tempfile.TemporaryDirectory(prefix='cmm97-test-',dir='/private/tmp') as d:\n   root=Path(d);c,cfg,b,actions,read,run=self.fake_publish(root)\n   with patch('subprocess.check_output',side_effect=read),patch('subprocess.run',side_effect=run):execute('publish',root)\n   self.assertEqual(actions,['push','create']);result=json.loads((root/'cmm-round97-pr-created.json').read_text());self.assertEqual(result['publication_bindings'],b);self.assertEqual(result['pr']['title'],cfg['title'])\n def test_recheck_between_push_and_create(self):\n  with tempfile.TemporaryDirectory(prefix='cmm97-test-',dir='/private/tmp') as d:\n   root=Path(d);c,cfg,b,actions,read,run=self.fake_publish(root,'body_after_push')\n   with patch('subprocess.check_output',side_effect=read),patch('subprocess.run',side_effect=run):\n    with self.assertRaises(ValueError):execute('publish',root)\n   self.assertEqual(actions,['push']);self.assertEqual(json.loads((root/'cmm-round97-pr-created.json').read_text())['state'],'failed')\n def test_late_collision_before_push(self):\n  with tempfile.TemporaryDirectory(prefix='cmm97-test-',dir='/private/tmp') as d:\n   root=Path(d);c,cfg,b,actions,read,run=self.fake_publish(root,'occupy')\n   with patch('subprocess.check_output',side_effect=read),patch('subprocess.run',side_effect=run):\n    with self.assertRaises(FileExistsError):execute('publish',root)\n   self.assertEqual(actions,[]);self.assertEqual((root/'cmm-round97-pr-created.json').read_text(),'CONCURRENT')\n def test_exclusive_receipt_never_overwrites_and_retains_failure(self):\n  with tempfile.TemporaryDirectory(prefix='cmm97-test-',dir='/private/tmp') as d:\n   root=Path(d);out=root/'receipt';victim=root/'victim';victim.write_text('PRESERVE')\n   with guards.ExclusiveReceipt(out) as receipt:receipt.finish({'passed':True})\n   with self.assertRaises(FileExistsError):\n    with guards.ExclusiveReceipt(out):pass\n   failed=root/'failed'\n   with self.assertRaises(RuntimeError):\n    with guards.ExclusiveReceipt(failed):raise RuntimeError('mock failure')\n   self.assertEqual(json.loads(failed.read_text())['state'],'failed')\n   replaced=root/'replaced'\n   with self.assertRaises(RuntimeError):\n    with guards.ExclusiveReceipt(replaced) as receipt:\n     replaced.unlink();replaced.symlink_to(victim);receipt.finish({'overwrite':True})\n   self.assertEqual(victim.read_text(),'PRESERVE')\n def test_commit_check_only_has_no_git_mutation_or_receipt(self):\n  with tempfile.TemporaryDirectory(prefix='cmm97-test-',dir='/private/tmp') as d:\n   root=Path(d);path=T/'cmm-round97-commit.py';tree=ast.fix_missing_locations(Roots(root).visit(ast.parse(path.read_text())));ns={'__name__':'fixture_module','__file__':str(path)};exec(compile(tree,str(path),'exec'),ns)\n   ns['collect']=lambda:({},[],{},{});ns['T']=root\n   with patch.object(sys,'argv',[str(path),'--check-only']),patch('subprocess.run',side_effect=AssertionError('forbidden')),patch('subprocess.check_output',side_effect=AssertionError('forbidden')),contextlib.redirect_stdout(io.StringIO()):ns['main']()\n   self.assertFalse((root/'cmm-round97-commit-receipt.json').exists())\n\nif __name__=='__main__':\n suite=unittest.defaultTestLoader.loadTestsFromTestCase(RuntimeTests)\n result=unittest.TextTestRunner(verbosity=2).run(suite)\n receipt={'finished_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'passed':result.wasSuccessful(),'tests':result.testsRun,'failures':len(result.failures),'errors':len(result.errors),'scope':__doc__,'test_sha256':sha(__file__),'helper_hashes':{n:sha(T/n) for n in guards.PUBLICATION_FILES if n.endswith('.py')}}\n path=Path(os.environ.get('CMM97_TEST_RECEIPT','/private/tmp/cmm-round97-helper-fixes/regression-results-'+datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')+'.json'))\n with path.open('x') as stream:json.dump(receipt,stream,indent=2);stream.write('\\n')\n raise SystemExit(0 if result.wasSuccessful() else 1)\n"
+    },
+    "independent_runner": {
+      "path": "/private/tmp/cmm-round97-bones-independent/run_helper_tests.py",
+      "sha256": "57f60bd2077cdb2e741a6c3d4aee40ac9c39f0e8a7d2847b3bc7927a74bc4cb7",
+      "source_text": "from pathlib import Path\nimport runpy,unittest,io,json,hashlib,datetime,ast\nT=Path('/private/tmp');D=T/'cmm-round97-bones-independent';test=T/'cmm-round97-helper-fixes/test_runtime.py'\nstart=datetime.datetime.now(datetime.timezone.utc).isoformat();sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()\n# Import the reviewed test definitions without its __main__ receipt writer.\nns=runpy.run_path(str(test),run_name='independent_review_fixture')\nsuite=unittest.defaultTestLoader.loadTestsFromTestCase(ns['RuntimeTests']);log=io.StringIO();result=unittest.TextTestRunner(stream=log,verbosity=2).run(suite)\nfiles=ns['guards'].PUBLICATION_FILES\nhelpers={n:sha(T/n) for n in files if n.endswith('.py')}\nfor n in helpers:ast.parse((T/n).read_text())\nreceipt={'reviewer':'codex /root/round97_phosphates','started_at':start,'finished_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'passed':result.wasSuccessful(),'tests':result.testsRun,'failures':len(result.failures),'errors':len(result.errors),'test_path':str(test),'test_sha256':sha(test),'helper_hashes':helpers,'scope':'Independent execution of the inspected isolated test definitions with original main block disabled; only disposable synthetic roots and mocked subprocess calls. No runtime publication helper against actual paths, Git/GitHub mutation or full suite rerun. Original author receipts preserved.'}\nlp=D/'helper-regression-independent.log';rp=D/'helper-regression-independent.json'\nwith lp.open('x') as f:f.write(log.getvalue())\nreceipt['log_path']=str(lp);receipt['log_sha256']=sha(lp)\nwith rp.open('x') as f:json.dump(receipt,f,indent=2);f.write('\\n')\nprint(json.dumps(receipt,indent=2));raise SystemExit(0 if result.wasSuccessful() else 1)\n"
+    }
+  },
+  "assessments": [
+    "All thirteen reviewed helper files parse as Python. Unchanged helpers retain the initial hashes. Seven sulfate-edited originals match preserved snapshots and initial review hashes; initial archive snapshot also matches. Initial lineage is retained as a historical substitution-only snapshot, not falsely relabeled current.",
+    "Independent target regressions: 8 tests,0 failures,0 errors. They exercise occupied outputs for commit/publish/enqueue/cleanup/sync; stale config/body/helper/prepared inputs for publish/enqueue; missing bindings; normal bound-stdin publication; changed body after fake push; late collision; failure and path-replacement handling; and read-only commit check-only. Every subprocess entry is mocked, and files are confined to disposable fixtures.",
+    "The root-owned archive now verifies the current prepared/commit handoff before mkdir, reconciles preflight/postmerge/hosted/cleanup/sync base/head/tree/merge and PR identities, checks log hashes and command outcomes, and retains all twelve helper sources plus shared guards. This closes the limited archival caveats in the initial review; no separate scientific claim or original finding is overwritten.",
+    "Existing exact base/head/tree and sole-parent checks, branch-only lease cleanup, original-main hidden/ignored file/mode/symlink preservation, retained tag checks and fresh-clone topic-object absence gates remain intact.",
+    "Publication binding set includes the directly executed isolated-coverage helper and shared guard, in addition to config/body and mutating/verification/archive helpers. Runtime handoffs must be generated only after all these bytes are frozen."
+  ],
+  "limitations": [
+    "This is static/helper-regression acceptance, not acceptance of a live PR, actual publication, merge result or current hosted workflow success. Fresh final counts, package audit, immutable preparation, commit, hosted peer review, preflight, queue and postmerge evidence remain mandatory.",
+    "Native queue live-base observation is not atomic locking. Actual merge tree/sole parent, five hosted workflow roles and fresh remote-main checks still govern completion.",
+    "A failed action after a completed remote step preserves a failed receipt; coordinator must reconcile it rather than rerun blindly. Tests do not simulate every possible external provider failure or malicious receipt forgery.",
+    "No full suite rerun was duplicated for external helper changes. The independently reviewed scientific owners remain unchanged and have separate saved native reviews.",
+    "The helper contract intentionally uses exact hashes: any subsequent helper/body/config edit invalidates these exact-byte results and requires affected re-review and fresh handoff/test evidence."
+  ],
+  "notes": [
+    "Earlier corrected-source reading informed this re-review; the recorded start is the actual independent final-byte regression start.",
+    "Test definition, runner, actual independent log and both regression receipts are embedded here so meaningful test evidence survives removal of temporary files. Helper source retention is handled by the archived publication evidence.",
+    "GitHub issues are eligible for evidence-backed resolution by the coordinator; this review did not post issue comments, close issues or execute publication."
+  ]
+}

@@ -8,13 +8,19 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 465 material records.
+The catalogue currently contains 471 material records.
 
-The [latest curation report](research/ingests/round96-frontier-20261015.md) links
+The [latest curation report](research/ingests/round97-frontier-20261015.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Coquimbite](data/records/coquimbite.yaml) | Current aluminium-essential species identity and natural-crystal structure | Historical formula superseded; no microbial transformation claim |
+| [Eosphorite](data/records/eosphorite.yaml) | Natural-crystal chemistry and neutron diffraction with corrected hydrogen assignments | One specimen, model omissions and source labeling limits |
+| [Fish-bone residues](data/records/fish-bone-residues.yaml) | Culture-associated phosphorus mobilization in columns and broth | Low-dose null, inoculum phosphorus, unmatched controls and timing conflicts |
+| [Phosphoferrite](data/records/phosphoferrite.yaml) | Qualified abiotic thermal oxidation of a natural specimen | Later indexing corrections; hydrogen release remains an untested hypothesis |
+| [Poultry-bone residues](data/records/poultry-bone-residues.yaml) | Culture-associated phosphorus mobilization from cooked bone feed | Mixed phosphorus inputs, unresolved dose labels and no isolated product yield |
+| [Rozenite](data/records/rozenite.yaml) | Transient sulfate hydrate observed during melanterite heating | Mixed starting phases, possible grinding effect and protocol-dependent transitions |
 | [Bassanite](data/records/bassanite.yaml) | EPS- and saline-culture-associated mixed sulfate precipitation | Workup can affect hydration; phase proportions are not isolated recovery yields |
 | [Childrenite](data/records/childrenite.yaml) | Natural-crystal structure and measured composition | Main-text/CIF metadata conflicts and model composition remain distinct |
 | [Ferricopiapite](data/records/ferricopiapite.yaml) | Abiotic synthesis, structure and calorimetry | Minor impurity and nonideal composition; no microbial formation claim |
