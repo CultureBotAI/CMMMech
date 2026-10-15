@@ -1,0 +1,98 @@
+id: cmmmech:hauerite
+name: Hauerite
+material_kind: mineral
+description: >-
+  Hauerite is the cubic manganese disulfide mineral MnS2, with pyrite-type
+  structure and grandfathered status in the September 2026 IMA list. It is
+  distinct from the MnS minerals alabandite and rambergite and from elemental
+  manganese. The accepted experiment measures sulfur products during sterile
+  ferric-chloride oxidation of source-identified hauerite. It does not establish
+  a hauerite-specific microbial process, manganese recovery or inherited
+  criticality.
+sources:
+- id: ima_2026_09
+  title: >-
+    IMA-CNMNC. The New IMA List of Minerals, September 2026; Hauerite row,
+    PDF page 90, and definitions on pages 1-2. MnS2, status G, year 1846.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-15'
+- id: handbook
+  title: >-
+    Handbook of Mineralogy. Hauerite, version 1 (2001-2005), complete one-page
+    entry; cubic Pa-3 MnS2, pyrite group, natural compositions and diffraction.
+  url: https://handbookofmineralogy.org/pdfs/hauerite.pdf
+  accessed_on: '2026-10-15'
+- id: schippers1999
+  title: >-
+    Schippers, A. and Sand, W. (1999). Bacterial Leaching of Metal Sulfides
+    Proceeds by Two Indirect Mechanisms via Thiosulfate or via Polysulfides
+    and Sulfur. Applied and Environmental Microbiology 65(1), 319-321.
+    Complete publisher web-rendered original text and Table 1 inspected;
+    all three original publisher figures acquired separately. Local text
+    snapshot is derived web-parser output, not a downloaded original PDF.
+  url: https://journals.asm.org/doi/full/10.1128/aem.65.1.319-321.1999
+  accessed_on: '2026-10-15'
+mechanisms:
+- id: sterile-ferric-chloride-oxidation
+  name: Abiotic oxidation of hauerite with predominantly elemental sulfur products
+  process: redox_transformation
+  microbial: false
+  description: >-
+    Pulverized hauerite exposed to acidic ferric chloride produced predominantly
+    elemental sulfur among the reported sulfur products. The authors interpret
+    this behavior through a proposed polysulfide pathway for acid-soluble
+    sulfides. The directly accepted observation is the sterile chemical
+    experiment and its product distribution, not demonstrated biological
+    oxidation of hauerite or isolated manganese recovery.
+  context: >-
+    Experimental paragraph preceding Table 1: sulfides were crushed,
+    pulverized and heat-sterilized under nitrogen. Each shake flask received
+    1 g mineral and 50 mL sterile 10 mM FeCl3 at pH 1.9; Table 1 specifies
+    28 degrees C. Hauerite was sampled at 5 h, unlike the 24 h endpoint for
+    most other minerals. The source does not give hauerite provenance, grain
+    size, surface area, sterilization temperature/duration or shaking speed.
+    Reduced sulfur compounds were measured by HPLC with diode-array
+    detection, sulfate by ion chromatography, metals by atomic absorption,
+    iron species photometrically and pH by electrode. No organism was added
+    to this arm.
+  evidence:
+  - source_ref: schippers1999
+    supports: support
+    explanation: >-
+      Table 1 and footnote a identify hauerite as MnS2 with disulfide
+      structure and greater than 99% purity calculated from ICP elemental
+      composition. The authors report no XRD-detected impurities in this
+      material, but do not display its diffraction pattern or provide a
+      detection limit. Elemental-composition purity is not a refined phase
+      fraction or proof of absolute purity.
+  - source_ref: schippers1999
+    supports: support
+    explanation: >-
+      Table 1, hauerite row and footnote b, reports at 5 h: S8 93.6%,
+      sulfate 3.7%, tetrathionate 1.2% and pentathionate 1.5%, with traces
+      of hexathionate. Values are means of three parallel experiments;
+      standard deviations are reported as less than 15% without individual
+      uncertainties. These percentages describe the reported sulfur-product
+      distribution. They are not the percentage of original mineral dissolved,
+      manganese extracted, or isolated product recovered; the explicit
+      calculation formula and closed sulfur/manganese balance are not supplied.
+  - source_ref: schippers1999
+    supports: partial
+    explanation: >-
+      The discussion after Table 1 and Figures 2-3 propose proton/ferric attack
+      and polysulfide intermediates to explain the elemental-sulfur-dominated
+      endpoint. They do not directly demonstrate each intermediate on hauerite
+      or isolate the respective contributions of protons and ferric ions with
+      a hauerite-specific no-ferric control. Figure 1 is a separate ZnS assay
+      with Thiobacillus thiooxidans R20 and sterile controls; its cell dose,
+      time series and microbial effect cannot be transferred to hauerite.
+curation_history:
+- timestamp: '2026-10-15T12:45:08Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: >-
+    Created the distinct hauerite owner from current mineral authorities and
+    original sterile oxidation evidence, preserving sulfur-product denominators,
+    phase-purity limits and the absence of a hauerite-specific microbial assay.
+history_refs:
+- history/records/hauerite/2026-10-15T124510Z-codex-1fe60f.yaml

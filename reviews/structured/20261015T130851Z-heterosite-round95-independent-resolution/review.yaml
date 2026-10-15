@@ -1,0 +1,496 @@
+schema_version: 1.0.0
+review_id: 20261015T130851Z-heterosite-round95-independent-resolution
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Heterosite and F1 resolution
+started_at: '2026-10-15T12:49:49Z'
+finished_at: '2026-10-15T13:08:51.640333Z'
+reviewer:
+  identity: codex /root/round68_iron_sulfides
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Phosphate agent authored these owners. I authored separate hauerite/melanterite,
+    independently inspected assigned owner/history before judgment and current correction,
+    read actual original evidence and did not edit the reviewed records.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of distinct natural heterosite identity and explicitly
+  synthetic, abiotic sorbent preparation/lithiation. F1/#339 is resolved through exact
+  locator correction; analytical-basis, purity, null and long-term limitations remain.
+source:
+  git_revision: 73d4b1c42541ee7ca139effae00b94ddb1c8a631
+  state: working_tree
+  inputs:
+  - path: data/records/heterosite.yaml
+    sha256: 916efa4c559606a0ddaf4bf1a85519ba9ef66c8eae0f3c9e51657ee2a07fc95a
+    role: target
+  - path: history/records/heterosite/2026-10-15T124517Z-codex-52e820.yaml
+    sha256: cd714f8c462c7748ff19c70b2532b660f3445267f249b0ed10959677297f418a
+    role: context
+  - path: history/records/heterosite/2026-10-15T125918Z-codex-8e2475.yaml
+    sha256: 8d7fab3ef98dc1fced31d1caa96c8d7601b0f04bbdd5e9643ae74777788bc818
+    role: context
+  - path: research/sources/round95-minerals/20261015T124811Z-source-investigation.json
+    sha256: 6a9ff2663726c0e0328ba5fcbfabeb9b3bf46c65405a8032fca3599b947ab8f6
+    role: context
+  - path: research/sources/round95-minerals/20261015T124811Z-source-investigation.md
+    sha256: d28aca6c349f10487efa700f65bf05f31603784041ef7153bd993d2547af42aa
+    role: context
+  - path: research/sources/round95-minerals/20261015T130043Z-heterosite-locator-correction.json
+    sha256: ddafd0d3e48aad07380892b25bdbdd2264cf862b5422121391b21dea9e5d7ad9
+    role: context
+  - path: research/sources/round95-minerals/20261015T130043Z-heterosite-locator-correction.md
+    sha256: 118c1311ac2c56daf5298fb366d1ad3be08e6297d7db19cc2d1b0c40ee87e252
+    role: context
+  - path: reviews/structured/20261015T125439Z-heterosite-round95-initial-locator/review.yaml
+    sha256: ba7957a16c5ac537b0fe23767a00f33adcda2137388994feb902368ded041861
+    role: context
+scope:
+  description: Full exact final owner/history, bounded accepted primary evidence and
+    source limitations.
+  selection: Root-assigned independent scientific target.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:heterosite
+targets:
+- target_id: cmmmech:heterosite
+  path: data/records/heterosite.yaml
+  label: Heterosite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/heterosite.yaml
+    role: maintained scientific record
+checks:
+- check_id: science
+  name: Independent original evidence, graphics and authority assessment
+  required: true
+  status: passed
+  summary: Full accepted claim-bearing original methods/results/figures/tables and
+    relevant supplements, identity authorities and bounded notice/lineage searches
+    independently assessed.
+  target_ids:
+  - cmmmech:heterosite
+  evidence_ids:
+  - ima
+  - handbook
+  - eventoff
+  - nomenclature
+  - reich
+  - workbook
+- check_id: named
+  name: Independent affected-file validation
+  command: uv run --locked cmmmech validate data/records/heterosite.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual named1/0 result on exact current owner.
+  target_ids:
+  - cmmmech:heterosite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Actual corrected coordinator batch command 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified terminal receipt/log, exact trusted base and unchanged current
+    owner; no duplicate full-suite invocation.
+  target_ids:
+  - cmmmech:heterosite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Actual corrected coordinator batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified terminal receipt/log, exact trusted base and unchanged current
+    owner; no duplicate full-suite invocation.
+  target_ids:
+  - cmmmech:heterosite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Actual corrected coordinator batch command 3
+  command: uv run --locked cmmmech validate-history --base 73d4b1c42541ee7ca139effae00b94ddb1c8a631
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified terminal receipt/log, exact trusted base and unchanged current
+    owner; no duplicate full-suite invocation.
+  target_ids:
+  - cmmmech:heterosite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Actual corrected coordinator batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified terminal receipt/log, exact trusted base and unchanged current
+    owner; no duplicate full-suite invocation.
+  target_ids:
+  - cmmmech:heterosite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/heterosite.yaml
+  locator: 'Entire exact owner; native inspection captured before initial judgment
+    and current correction assessment. Artifact: /private/tmp/CMMMech-expansion-round95-20261015/data/records/heterosite.yaml'
+  accessed_at: '2026-10-15T13:08:51.640333Z'
+  support: supports
+  snapshot_sha256: 916efa4c559606a0ddaf4bf1a85519ba9ef66c8eae0f3c9e51657ee2a07fc95a
+  summary: Identity, claimed experiments, quantities, controls, limits and provenance
+    independently assessed; no reviewer owner edits.
+- evidence_id: history0
+  kind: record_content
+  reference: history/records/heterosite/2026-10-15T124517Z-codex-52e820.yaml
+  locator: 'Complete canonical history sidecar and corresponding distinct inline event/history_ref.
+    Artifact: /private/tmp/CMMMech-expansion-round95-20261015/history/records/heterosite/2026-10-15T124517Z-codex-52e820.yaml'
+  accessed_at: '2026-10-15T13:08:51.640333Z'
+  support: supports
+  snapshot_sha256: cd714f8c462c7748ff19c70b2532b660f3445267f249b0ed10959677297f418a
+  summary: Actual codex/GPT-6 actor, timestamp, target and bounded change verified.
+    Original CREATE remains unchanged.
+- evidence_id: history1
+  kind: record_content
+  reference: history/records/heterosite/2026-10-15T125918Z-codex-8e2475.yaml
+  locator: 'Complete canonical history sidecar and corresponding distinct inline event/history_ref.
+    Artifact: /private/tmp/CMMMech-expansion-round95-20261015/history/records/heterosite/2026-10-15T125918Z-codex-8e2475.yaml'
+  accessed_at: '2026-10-15T13:08:51.640333Z'
+  support: supports
+  snapshot_sha256: 8d7fab3ef98dc1fced31d1caa96c8d7601b0f04bbdd5e9643ae74777788bc818
+  summary: Actual codex/GPT-6 actor, timestamp, target and bounded change verified.
+    Original CREATE remains unchanged.
+- evidence_id: ima
+  kind: database
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'September 2026 list; definitions page1 and exact alunite PDF9/heterosite
+    PDF93 rows visually inspected. Artifact: /private/tmp/cmm-round95-minerals-research/ima-live.pdf'
+  accessed_at: '2026-10-15T13:08:51.640333Z'
+  support: supports
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  summary: Heterosite Fe3+(PO4), G1826, and alunite KAl3(SO4)2(OH)6, Rd1987 s.p.,
+    are distinct mineral species. Historical description/redefinition dates are not
+    approval IDs; no element criticality transferred.
+- evidence_id: handbook
+  kind: database
+  reference: https://handbookofmineralogy.org/pdfs/heterosite.pdf
+  locator: 'Complete one-page entry, crystal data, natural chemistry, occurrence and
+    references visually checked. Artifact: /private/tmp/cmm-round95-minerals-research/heterosite-handbook.pdf'
+  accessed_at: '2026-10-15T13:08:51.640333Z'
+  support: supports
+  snapshot_sha256: cff625d5e57d9056ceb703da8fa9982cd059c6fa2396ca4ebae23be5ca3b926d
+  summary: Corroborates mineral identity and natural substitution; historical terminology
+    does not override current IMA nomenclature.
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round95-minerals/20261015T124811Z-source-investigation.json
+  locator: 'Immutable author source dossier and accepted-artifact inventory; actual
+    files checked separately. Artifact: /private/tmp/CMMMech-expansion-round95-20261015/research/sources/round95-minerals/20261015T124811Z-source-investigation.json'
+  accessed_at: '2026-10-15T13:08:51.640333Z'
+  support: context_only
+  snapshot_sha256: 6a9ff2663726c0e0328ba5fcbfabeb9b3bf46c65405a8032fca3599b947ab8f6
+  summary: Acquisition routes, partial access and primary evidence boundaries are
+    preserved. Dossier assertions alone do not establish scientific acceptance.
+- evidence_id: notice
+  kind: search
+  reference: Exact accepted DOI correction/erratum/retraction searches and publisher
+    version notes
+  locator: 'Retained bounded actual web results and publisher article-version page.
+    Artifact: /private/tmp/cmm-round95-minerals-independent/notice-search.json'
+  accessed_at: '2026-10-15T13:08:51.640333Z'
+  support: context_only
+  snapshot_sha256: 960e7f94195ae2c0137efa60313475073eb324abc8c832bd13e207d66ea62a4c
+  summary: No affecting formal correction surfaced in inspected results. Alunite current
+    v2 must be distinguished from stale hidden PDF text; no global absence claim.
+  search_scope: Retained bounded actual web results and publisher article-version
+    page.
+- evidence_id: lineage
+  kind: search
+  reference: Scoped hidden/ignored/followed identity and DOI deduplication
+  locator: 'rg --no-ignore --hidden --follow across data/records, research, reviews
+    and history, plus bounded report-referenced raw directories. Artifact: /private/tmp/cmm-round95-minerals-independent/doi-dedup.txt'
+  accessed_at: '2026-10-15T13:08:51.640333Z'
+  support: context_only
+  snapshot_sha256: 8ce8d059e6a75306c60c81866e3cc9a87a46ef99f0da0eb597b0c3a8007c05c7
+  summary: Shared studies and earlier triphylite oxidation/nomenclature are retained
+    as prior lineage, not represented as newly independent experiments.
+  search_scope: rg --no-ignore --hidden --follow across data/records, research, reviews
+    and history, plus bounded report-referenced raw directories.
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round95-final-gates.json
+  locator: 'Actual corrected four-command terminal receipt; log /private/tmp/cmm-round95-final-gates.log
+    SHA256 8af96132050dff9ff0ef15780e2e987eda035e2ec4aa602dc739a44cbb762e9c. Artifact:
+    /private/tmp/cmm-round95-final-gates.json'
+  accessed_at: '2026-10-15T13:08:51.640333Z'
+  support: supports
+  snapshot_sha256: d65e106a86d228618023d81978f5b45c360f9f83fb92c2672bec46743c5313df
+  summary: Independently verified actual four exits0, trusted base, 317 passed/3 skipped,459
+    records/525 histories and all459 unchanged owner hashes; no full-suite reviewer
+    rerun.
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/heterosite.yaml
+  locator: 'Actual independent affected-file validation terminal result. Artifact:
+    /private/tmp/cmm-round95-minerals-independent/heterosite-corrected-named-validation.json'
+  accessed_at: '2026-10-15T13:08:51.640333Z'
+  support: supports
+  snapshot_sha256: 2c32dc6f2000bcff1ba0f81b72f8d0d18dcd10d4a1a678c2323816088ee08743
+  summary: Checked1record;0failed for these exact owner bytes. Earlier unsupported
+    --strict CLI drafting attempt is preserved separately and is not counted as validation.
+- evidence_id: eventoff
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/am/vol57/AM57_45.pdf
+  locator: 'Complete seven-page original; experimental printed46, Tables2–4 printed47–48,
+    Figure1 printed49 independently read/visually checked. Artifact: /private/tmp/cmm-round95-minerals-research/eventoff1972.pdf'
+  accessed_at: '2026-10-15T13:08:51.640333Z'
+  support: supports
+  snapshot_sha256: 86aecf4e56e7c55ace92fd57f0b720c4eb29e684f7063830905aff0928e6f740
+  summary: Natural Fletcher Quarry specimen (Fe0.65Mn0.35)PO4 and effectively empty
+    lithium site establish identity separately from the engineered sorbent. Separate
+    NAPS structure-factor Table1 document01668 was not acquired; no independent refinement.
+- evidence_id: nomenclature
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-35-427-2023
+  locator: 'Complete retained11-page original, current species sections4–6 and Tables1–3;
+    Table2 printed432 visually rechecked. Reused prior original study. Artifact: /private/tmp/cmm-round93-minerals-research/nomenclature2023.pdf'
+  accessed_at: '2026-10-15T13:08:51.640333Z'
+  support: supports
+  snapshot_sha256: 56c78875cb5f9d046ac05540c2bf401bad9ebbf9a3899bd83d84075a497dd088
+  summary: Retains heterosite and discredits ferrisicklerite/sicklerite. Previously
+    curated triphylite oxidation is not claimed as a new experiment; no supplementary
+    calculated Li percentage adopted.
+- evidence_id: reich
+  kind: primary_source
+  reference: https://publikationen.bibliothek.kit.edu/1000172429/153604117
+  locator: 'Complete18-page institutional publisher original; section2 and subsection2.1
+    PDF3, all Figures1–12/Tables1–3 independently inspected. Artifact: /private/tmp/cmm-round95-minerals-research/reich2024.pdf'
+  accessed_at: '2026-10-15T13:08:51.640333Z'
+  support: supports
+  snapshot_sha256: 26a6095b8aef3e0e8ea227dcd3a08b7772de169695b423d5a52d36c91b156286
+  summary: Commercial carbon-coated LFP400 is chemically delithiated and relithiated
+    in separate solution/brine assays. Natural mineral identity is not proof of natural-ore
+    extraction. Residual Li, nonideal chemistry, shifted peaks and unidentified64.35-degree
+    reflection preclude ideal phase-purity assumptions.
+- evidence_id: workbook
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S0011916424005940-mmc1.xlsx
+  locator: 'All14 original worksheets parsed as native ZIP/XML cells, headers and
+    claim-bearing rows; no embedded formulas/charts/media. Fig.9a/Fig.10 and Fig.9b/Fig.10
+    kinetics; Fig.10/Fig.11a+b and Fig.10/Fig.11c+d isotherms. Artifact: /private/tmp/cmm-round95-minerals-research/reich2024-si.xlsx'
+  accessed_at: '2026-10-15T13:08:51.640333Z'
+  support: supports
+  snapshot_sha256: 46bd87542e761a260399a1f180bdf8642ef3a696712450ef3f3062137ee4598a
+  summary: Kinetic headers use fluid OES while isotherms use digestion OES. Bruchsal
+    K9/K10=26.7575/23.6771mg/g and synthetic M11=1.31724mg/g retain their separate
+    definitions. Zero/<LOQ residual entries and load-labelled blank rows with zero
+    solid mass do not establish exact depletion or a closed recovery balance.
+- evidence_id: workbook_parse
+  kind: record_content
+  reference: Independent native workbook-cell inspection
+  locator: 'Actual extracted worksheet values, method headers and units. Artifact:
+    /private/tmp/cmm-round95-minerals-independent/reich-workbook-independent.json'
+  accessed_at: '2026-10-15T13:08:51.640333Z'
+  support: context_only
+  snapshot_sha256: a34533b914f4b4e4d5a9898f5631c741fe877fa78e97d7253587732a3fa21fc0
+  summary: Independent parse records original static cells; missing normalization
+    formulas are not invented.
+- evidence_id: prior
+  kind: record_content
+  reference: reviews/structured/20261015T125439Z-heterosite-round95-initial-locator/review.yaml
+  locator: 'Immutable initial F1 / heterosite-round95-methods-section-locator. Artifact:
+    /private/tmp/CMMMech-expansion-round95-20261015/reviews/structured/20261015T125439Z-heterosite-round95-initial-locator/review.yaml'
+  accessed_at: '2026-10-15T13:08:51.640333Z'
+  support: supports
+  snapshot_sha256: ba7957a16c5ac537b0fe23767a00f33adcda2137388994feb902368ded041861
+  summary: Original minor nonexistent methods-subsection range preserved; the scoped
+    initial review was saved before the first batch finished.
+- evidence_id: before
+  kind: record_content
+  reference: Actual preserved original owner
+  locator: 'Actual pre-correction owner copied by author before authorized fix. Artifact:
+    /private/tmp/cmm-round95-minerals-research/heterosite-before-correction.yaml'
+  accessed_at: '2026-10-15T13:08:51.640333Z'
+  support: supports
+  snapshot_sha256: ab138bec6a2ec7951640720e6063b42ea253c92409fca4a64cf9b350343c87d4
+  summary: Original bytes match the initial native target SHA; used for independent
+    parsed field comparison.
+- evidence_id: comparison
+  kind: record_content
+  reference: Independent actual before/after comparison
+  locator: 'Parsed comparison of retained original versus corrected owner and appended
+    history. Artifact: /private/tmp/cmm-round95-minerals-independent/heterosite-correction-independent.json'
+  accessed_at: '2026-10-15T13:08:51.640333Z'
+  support: supports
+  snapshot_sha256: efa63a81c59d51002aa04fb85fbf72d5f03bb14257063859df35cb0a0acd4874
+  summary: Only sources[id=reich2024].title locator and appended inline EDIT/history_ref
+    changed; scientific statements and original CREATE match.
+- evidence_id: correction
+  kind: record_content
+  reference: research/sources/round95-minerals/20261015T130043Z-heterosite-locator-correction.json
+  locator: 'Immutable correction addendum, original dossier hashes, initial occurrence
+    and exact narrow change. Artifact: /private/tmp/CMMMech-expansion-round95-20261015/research/sources/round95-minerals/20261015T130043Z-heterosite-locator-correction.json'
+  accessed_at: '2026-10-15T13:08:51.640333Z'
+  support: supports
+  snapshot_sha256: ddafd0d3e48aad07380892b25bdbdd2264cf862b5422121391b21dea9e5d7ad9
+  summary: Original source pair is retained; current title correctly says section2
+    and subsection2.1 on PDF3.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Natural mineral versus synthetic sorbent
+  outcome: supported
+  summary: Distinct ferric phosphate identity is supported independently of the engineered
+    assay.
+  target_ids:
+  - cmmmech:heterosite
+  evidence_ids:
+  - owner
+  - ima
+  - handbook
+  - eventoff
+  - nomenclature
+  details: Mn-bearing natural heterosite and ideal Fe3+(PO4) are compatible; purpurite
+    and lithium-bearing triphylite remain distinct. No constituent criticality, organism
+    or strain attribution.
+- assessment_id: experiment
+  area: scope
+  topic: Pretreatment, matrices and unequal experimental arms
+  outcome: supported
+  summary: The record accurately separates synthetic preparation, natural pretreated
+    brine and synthetic brine assays.
+  target_ids:
+  - cmmmech:heterosite
+  evidence_ids:
+  - owner
+  - reich
+  - workbook
+  details: Approximately1g/200mL nominal25C preparation with selected0.1Mpersulfate;
+    selected0.5Mthiosulfate lithiation. Screening45min versus HCl24h, variable kinetics
+    and Bruchsal3h/stirred versus synthetic4h/shaken isotherms are not equivalent
+    conditions. Nominal treatment temperature and pH-measurement temperature need
+    not match. No microbes or industrial deployment.
+- assessment_id: quantities
+  area: quantity
+  topic: Fluid, digestion and sorbent-normalized measurements
+  outcome: supported
+  summary: Source-reported loadings retain distinct denominators and cannot be equated
+    with isolated product yield.
+  target_ids:
+  - cmmmech:heterosite
+  evidence_ids:
+  - reich
+  - workbook
+  - workbook_parse
+  details: 42–43mgLi/gprecursor selected persulfate kinetics versus1–3water screening;
+    brine kinetics about23mg/g at3h versus separate24–27mg/g isotherms. Synthetic
+    brine about1.0kinetic versus1.3mg/g isotherm at2g/L. Solid Li43→1.7mg/g and remaining
+    phases do not prove complete extraction. Blanks, zeros and <LOQ limits remain
+    explicit.
+- assessment_id: 'null'
+  area: evidence
+  topic: Conditional null and long-term counterevidence
+  outcome: supported
+  summary: Null high-temperature pure-LiCl uptake and prolonged brine degradation
+    constrain the favorable early observations.
+  target_ids:
+  - cmmmech:heterosite
+  evidence_ids:
+  - reich
+  - workbook
+  details: Seven-day60/80C pureLiCl differs from25C; thiosulfate instability and pH
+    confound a temperature-only causal inference. Gypsum/sulfur, sodium/sulfur enrichment
+    and Fe/P release exclude stable universal cycling claims.
+- assessment_id: resolution
+  area: provenance
+  topic: Exact F1 correction and immutable lineage
+  outcome: supported
+  summary: Corrected locator and appended actual EDIT resolve the saved minor finding
+    while preserving science.
+  target_ids:
+  - cmmmech:heterosite
+  evidence_ids:
+  - prior
+  - before
+  - comparison
+  - correction
+  - reich
+  - history0
+  - history1
+  - named
+  - batch
+findings:
+- finding_id: F1
+  issue_key: heterosite-round95-methods-section-locator
+  category: evidence
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Reich2024 methods locator corrected to actual section sequence
+  description: Current source title cites section2 and subsection2.1 on PDF3; nonexistent
+    sections2.2/2.3 are no longer asserted. All scientific values and limits remain
+    unchanged.
+  target_ids:
+  - cmmmech:heterosite
+  field_paths:
+  - sources[id=reich2024].title
+  evidence_ids:
+  - reich
+  - prior
+  - before
+  - comparison
+  - correction
+  - batch
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/heterosite.yaml
+    role: maintained scientific record
+  rule_id: exact-primary-locator
+  native_severity: minor
+  normalization_reason: Bounded source-navigation defect, not unsupported identity
+    or quantitative claim.
+  disposition_reason: Fresh native inspection, independently parsed actual original/final
+    files, direct original PDF section sequence and exact current validation establish
+    the narrow correction. Original CREATE, initial review and source dossier remain
+    immutable. Corrected final batch covers the final owner and EDIT.
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261015T125439Z-heterosite-round95-initial-locator
+    finding_id: F1
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/339
+actions: []
+limitations:
+- Natural Eventoff1972 identity and synthetic Reich2024 sorbent are separate; separate
+  NAPS structure-factor Table1 remains unacquired, without any independent re-refinement
+  claim.
+- Primary sorbent phase assignment, residual Li/secondary phases and fluid-versus-digestion
+  analytical bases limit purity, recovery and durability claims.
+- Workbook blank normalization and censoring need source clarification; missing formulas
+  are not reconstructed as authoritative calculations.
+- No microbial process, element-derived criticality, purified lithium product, controlled
+  industrial deployment or long-term repeated-cycle performance established.
+- Initial unsaved alias/target-kind drafting rejections and unsupported --strict command
+  attempt remain externally preserved; only actual successful canonical saves and
+  valid named commands count.
+- Initial review was scoped while the first batch was pending; this successor uses
+  the independently verified corrected final batch.
+- Searches include hidden/ignored/followed maintained paths and bounded cited raw
+  roots; no machinewide/global absence claim.

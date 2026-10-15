@@ -1,0 +1,52 @@
+{
+  "recorded_at": "2026-10-15T13:04:49.201322+00:00",
+  "passed": true,
+  "finding_id": "OP2",
+  "issue_key": "cmmmech.round95.report-heterosite-material-form",
+  "scope": "Authorized minimal README/builder correction by independent reviewer of root-authored summaries; this same actor applied and compared the edits. Root independently confirmed the original powder experiment. Final generated-report check remains pending.",
+  "predecessors": [
+    {
+      "path": "/private/tmp/cmm-round95-report-static-initial-20261015T130252Z.json",
+      "sha256": "b50c9490c962bd1860451966253e9d3cc927aa3daef61117a72c2ca04b64a10d"
+    },
+    {
+      "path": "/private/tmp/cmm-round95-report-static-expanded-20261015T130412Z.json",
+      "sha256": "49d58b5635bcaf7943d3992ce58a6e8f256ba51b6f71fe5aad60af07d89a9f70"
+    }
+  ],
+  "changes": [
+    {
+      "path": "/private/tmp/CMMMech-expansion-round95-20261015/README.md",
+      "before_sha256": "5b656cb157060c4cb9e875a1502fc262dfee851a8a529a7b1ec8d17439258a60",
+      "after_sha256": "d668cdd8d1a80a2372b2230099df79c20d5479548aa5c03afdf571dfd47434fe",
+      "allowed_exact_replacements": [
+        [
+          "Synthetic electrode transformation and lithium uptake",
+          "Synthetic heterosite-structure powder preparation and lithium uptake"
+        ],
+        [
+          "Natural species, engineered electrode and distinct brines retain separate scope",
+          "Natural species, engineered powder and distinct brines retain separate scope"
+        ]
+      ],
+      "diff": "--- /private/tmp/CMMMech-expansion-round95-20261015/README.md before\n+++ /private/tmp/CMMMech-expansion-round95-20261015/README.md after\n@@ -466,7 +466,7 @@\n | [Annabergite](data/records/annabergite.yaml) | Synthetic analogue precipitation and acid calorimetry | Natural species and synthetic endmember remain distinct; no recovered nickel |\n | [Erythrite](data/records/erythrite.yaml) | Synthetic analogue precipitation and acid calorimetry | No demonstrated microbial transformation or recovered cobalt |\n | [Hauerite](data/records/hauerite.yaml) | Sterile ferric-chloride oxidation of characterized material | Sulfur-product distribution is not manganese recovery or a microbial assay |\n-| [Heterosite](data/records/heterosite.yaml) | Synthetic electrode transformation and lithium uptake | Natural species, engineered electrode and distinct brines retain separate scope |\n+| [Heterosite](data/records/heterosite.yaml) | Synthetic heterosite-structure powder preparation and lithium uptake | Natural species, engineered powder and distinct brines retain separate scope |\n | [Melanterite](data/records/melanterite.yaml) | Mixed-phase assignment in an HJ-2 culture experiment | Taxonomic conflict and specimen-preparation gap prevent stronger causal claims |\n | [Spent steel-pickling liquors](data/records/spent-steel-pickling-liquors.yaml) | Culture-associated Fe(II) oxidation in diluted plant liquor | Recipe, strain and product-phase conflicts retained; no isolated iron recovery |\n \n"
+    },
+    {
+      "path": "/private/tmp/cmm-round95-build-report.py",
+      "before_sha256": "da37504553856069f13e51637c7da7d292c9fd092b7da853d5ff86e5d2dc06aa",
+      "after_sha256": "0f54d03345aff3a924a3820c5c66a595fac00a3adc4c31612efc30e377393630",
+      "allowed_exact_replacements": [
+        [
+          "synthetic heterosite electrode transformation and lithium uptake",
+          "synthetic heterosite-structure powder preparation and lithium uptake"
+        ]
+      ],
+      "diff": "--- /private/tmp/cmm-round95-build-report.py before\n+++ /private/tmp/cmm-round95-build-report.py after\n@@ -11,7 +11,7 @@\n for slug in cfg['slugs']:\n  path='data/records/'+slug+'.yaml';d=yaml.safe_load((W/path).read_text());c=next(x for x in cv['records'] if x['path']==path);v=sorted([x for x in c['matching_scientific_reviews'] if 'round95' in x['review_id']],key=lambda x:x['review_id'])[-1];review=yaml.safe_load((W/v['path']).read_text());assert review['reviewer']['independence']=='independent' and sha(W/path)==c['sha256'];selection[slug]={'review_id':v['review_id'],'path':v['path'],'sha256':sha(W/v['path'])};records.append({'slug':slug,'id':d['id'],'name':d['name'],'path':path,'sha256':sha(W/path),'history_refs':d['history_refs'],'review':{**v,'markdown':v['path'].replace('.yaml','.md')}})\n (T/'cmm-round95-hosted-scientific-selection.json').write_text(json.dumps({'base':cfg['base'],'reviews':selection},indent=2)+'\\n')\n-selectiontext='Seven distinct material owners: alunite in chemically roasted mixed ore; annabergite and erythrite identity plus synthetic analogue precipitation and calorimetry; sterile ferric oxidation of hauerite; synthetic heterosite electrode transformation and lithium uptake; melanterite phase assignment in an HJ-2 culture experiment; and culture-associated Fe(II) oxidation in diluted spent steel-pickling liquor. Natural mineral species, engineered experimental forms and secondary resources remain conceptually separate. Abiotic evidence is explicitly nonmicrobial. No inherited criticality, isolated metal recovery or industrial treatment is inferred.'\n+selectiontext='Seven distinct material owners: alunite in chemically roasted mixed ore; annabergite and erythrite identity plus synthetic analogue precipitation and calorimetry; sterile ferric oxidation of hauerite; synthetic heterosite-structure powder preparation and lithium uptake; melanterite phase assignment in an HJ-2 culture experiment; and culture-associated Fe(II) oxidation in diluted spent steel-pickling liquor. Natural mineral species, engineered experimental forms and secondary resources remain conceptually separate. Abiotic evidence is explicitly nonmicrobial. No inherited criticality, isolated metal recovery or industrial treatment is inferred.'\n validation='Baseline and corrected final just check passed (317 tests, 3 skipped). Strict nonempty records, canonical append-only history, generated pages and native structured reviews passed. All current records match completed positive scientific reviews by exact ID, path and SHA-256; all seven final scientific reviews are independent. No schema, validator, test or governed-artifact change was needed.'\n remaining=['Resolve source-clarification issues before strengthening culture identities, phase assignments, product yields or operational conditions; accepted owners already preserve these limitations.','Assess later original studies, including the 2026 same-sample arsenate structural follow-up DOI10.1007/s00710-025-00963-9; shared sample lineage is not independent synthesis replication.','Continue bounded discovery and existing source-acquisition work. This seven-owner batch does not establish frontier exhaustion.','Verify PR-shepherd credentials and a controlled dry run through CLAW-supported processes; installed manual/comment-only workflow still has zero observed runs.']\n report={'recorded_at':datetime.now(timezone.utc).isoformat(),'worktree':str(W),'branch':cfg['branch'],'base':cfg['base'],'state':'working_tree','counts':{k:cv[k] for k in cfg['counts']},'records':records,'source_reports':sorted(str(x.relative_to(W)) for x in (W/'research/sources').glob('round95-*/*.md')),'issues':issues,'corrective_issues':corrective,'selection':selectiontext,'validation':validation,'remaining_priorities':remaining,'scope_limits':'Local curation and review complete. Hosted PR/queue/merge and fresh-main checks are subsequent publication gates. Originals and rendered primary graphics remain outside Git. No frontier exhaustion claim.'}\n"
+    }
+  ],
+  "all_scientific_inputs_unchanged": true,
+  "science_file_count": 2055,
+  "science_inventory_sha256": "e00e9ce97876013591fabf8c983ef3cb2ddadd88627294c13e76390e284c12d0",
+  "generated_report_checked": false,
+  "issue_number": null
+}

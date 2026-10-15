@@ -1,0 +1,353 @@
+schema_version: 1.0.0
+review_id: 20261015T130851Z-alunite-round95-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Alunite
+started_at: '2026-10-15T12:49:49Z'
+finished_at: '2026-10-15T13:08:51.793472Z'
+reviewer:
+  identity: codex /root/round68_iron_sulfides
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Phosphate agent authored these owners. I authored separate hauerite/melanterite,
+    independently inspected assigned owner/history before judgment and current correction,
+    read actual original evidence and did not edit the reviewed records.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of distinct alunite identity and abiotic CaO-assisted
+  treatment/water leaching of mixed ore. Soluble-potassium denominator, separate mixed
+  product, source phase/caption conflicts and limited controls remain explicit; no
+  corrective owner finding.
+source:
+  git_revision: 73d4b1c42541ee7ca139effae00b94ddb1c8a631
+  state: working_tree
+  inputs:
+  - path: data/records/alunite.yaml
+    sha256: 01229aba97fb91d213e43667a0ffd04db50d3bc235a80d83589bc154b6d88aa3
+    role: target
+  - path: history/records/alunite/2026-10-15T124518Z-codex-048843.yaml
+    sha256: 8259bdf298c86822a66a478f8cd40ff5f8285c2c2f44e02e8d566572a03e551c
+    role: context
+  - path: research/sources/round95-minerals/20261015T124811Z-source-investigation.json
+    sha256: 6a9ff2663726c0e0328ba5fcbfabeb9b3bf46c65405a8032fca3599b947ab8f6
+    role: context
+  - path: research/sources/round95-minerals/20261015T124811Z-source-investigation.md
+    sha256: d28aca6c349f10487efa700f65bf05f31603784041ef7153bd993d2547af42aa
+    role: context
+scope:
+  description: Full exact final owner/history, bounded accepted primary evidence and
+    source limitations.
+  selection: Root-assigned independent scientific target.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:alunite
+targets:
+- target_id: cmmmech:alunite
+  path: data/records/alunite.yaml
+  label: Alunite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/alunite.yaml
+    role: maintained scientific record
+checks:
+- check_id: science
+  name: Independent original evidence, graphics and authority assessment
+  required: true
+  status: passed
+  summary: Full accepted claim-bearing original methods/results/figures/tables and
+    relevant supplements, identity authorities and bounded notice/lineage searches
+    independently assessed.
+  target_ids:
+  - cmmmech:alunite
+  evidence_ids:
+  - ima
+  - handbook
+  - zhong
+  - supplement
+- check_id: named
+  name: Independent affected-file validation
+  command: uv run --locked cmmmech validate data/records/alunite.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual named1/0 result on exact current owner.
+  target_ids:
+  - cmmmech:alunite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Actual corrected coordinator batch command 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified terminal receipt/log, exact trusted base and unchanged current
+    owner; no duplicate full-suite invocation.
+  target_ids:
+  - cmmmech:alunite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Actual corrected coordinator batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified terminal receipt/log, exact trusted base and unchanged current
+    owner; no duplicate full-suite invocation.
+  target_ids:
+  - cmmmech:alunite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Actual corrected coordinator batch command 3
+  command: uv run --locked cmmmech validate-history --base 73d4b1c42541ee7ca139effae00b94ddb1c8a631
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified terminal receipt/log, exact trusted base and unchanged current
+    owner; no duplicate full-suite invocation.
+  target_ids:
+  - cmmmech:alunite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Actual corrected coordinator batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified terminal receipt/log, exact trusted base and unchanged current
+    owner; no duplicate full-suite invocation.
+  target_ids:
+  - cmmmech:alunite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/alunite.yaml
+  locator: 'Entire exact owner; native inspection captured before initial judgment
+    and current correction assessment. Artifact: /private/tmp/CMMMech-expansion-round95-20261015/data/records/alunite.yaml'
+  accessed_at: '2026-10-15T13:08:51.793472Z'
+  support: supports
+  snapshot_sha256: 01229aba97fb91d213e43667a0ffd04db50d3bc235a80d83589bc154b6d88aa3
+  summary: Identity, claimed experiments, quantities, controls, limits and provenance
+    independently assessed; no reviewer owner edits.
+- evidence_id: history0
+  kind: record_content
+  reference: history/records/alunite/2026-10-15T124518Z-codex-048843.yaml
+  locator: 'Complete canonical history sidecar and corresponding distinct inline event/history_ref.
+    Artifact: /private/tmp/CMMMech-expansion-round95-20261015/history/records/alunite/2026-10-15T124518Z-codex-048843.yaml'
+  accessed_at: '2026-10-15T13:08:51.793472Z'
+  support: supports
+  snapshot_sha256: 8259bdf298c86822a66a478f8cd40ff5f8285c2c2f44e02e8d566572a03e551c
+  summary: Actual codex/GPT-6 actor, timestamp, target and bounded change verified.
+    Original CREATE remains unchanged.
+- evidence_id: ima
+  kind: database
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'September 2026 list; definitions page1 and exact alunite PDF9/heterosite
+    PDF93 rows visually inspected. Artifact: /private/tmp/cmm-round95-minerals-research/ima-live.pdf'
+  accessed_at: '2026-10-15T13:08:51.793472Z'
+  support: supports
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  summary: Heterosite Fe3+(PO4), G1826, and alunite KAl3(SO4)2(OH)6, Rd1987 s.p.,
+    are distinct mineral species. Historical description/redefinition dates are not
+    approval IDs; no element criticality transferred.
+- evidence_id: handbook
+  kind: database
+  reference: https://handbookofmineralogy.org/pdfs/alunite.pdf
+  locator: 'Complete one-page entry, crystal data, natural chemistry, occurrence and
+    references visually checked. Artifact: /private/tmp/cmm-round95-minerals-research/alunite-handbook.pdf'
+  accessed_at: '2026-10-15T13:08:51.793472Z'
+  support: supports
+  snapshot_sha256: 438da5b25d757e3eca39df5c0db41d5ea40758d217a7eb66e00941cc267fd320
+  summary: Corroborates mineral identity and natural substitution; historical terminology
+    does not override current IMA nomenclature.
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round95-minerals/20261015T124811Z-source-investigation.json
+  locator: 'Immutable author source dossier and accepted-artifact inventory; actual
+    files checked separately. Artifact: /private/tmp/CMMMech-expansion-round95-20261015/research/sources/round95-minerals/20261015T124811Z-source-investigation.json'
+  accessed_at: '2026-10-15T13:08:51.793472Z'
+  support: context_only
+  snapshot_sha256: 6a9ff2663726c0e0328ba5fcbfabeb9b3bf46c65405a8032fca3599b947ab8f6
+  summary: Acquisition routes, partial access and primary evidence boundaries are
+    preserved. Dossier assertions alone do not establish scientific acceptance.
+- evidence_id: notice
+  kind: search
+  reference: Exact accepted DOI correction/erratum/retraction searches and publisher
+    version notes
+  locator: 'Retained bounded actual web results and publisher article-version page.
+    Artifact: /private/tmp/cmm-round95-minerals-independent/notice-search.json'
+  accessed_at: '2026-10-15T13:08:51.793472Z'
+  support: context_only
+  snapshot_sha256: 960e7f94195ae2c0137efa60313475073eb324abc8c832bd13e207d66ea62a4c
+  summary: No affecting formal correction surfaced in inspected results. Alunite current
+    v2 must be distinguished from stale hidden PDF text; no global absence claim.
+  search_scope: Retained bounded actual web results and publisher article-version
+    page.
+- evidence_id: lineage
+  kind: search
+  reference: Scoped hidden/ignored/followed identity and DOI deduplication
+  locator: 'rg --no-ignore --hidden --follow across data/records, research, reviews
+    and history, plus bounded report-referenced raw directories. Artifact: /private/tmp/cmm-round95-minerals-independent/doi-dedup.txt'
+  accessed_at: '2026-10-15T13:08:51.793472Z'
+  support: context_only
+  snapshot_sha256: 8ce8d059e6a75306c60c81866e3cc9a87a46ef99f0da0eb597b0c3a8007c05c7
+  summary: Shared studies and earlier triphylite oxidation/nomenclature are retained
+    as prior lineage, not represented as newly independent experiments.
+  search_scope: rg --no-ignore --hidden --follow across data/records, research, reviews
+    and history, plus bounded report-referenced raw directories.
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round95-final-gates.json
+  locator: 'Actual corrected four-command terminal receipt; log /private/tmp/cmm-round95-final-gates.log
+    SHA256 8af96132050dff9ff0ef15780e2e987eda035e2ec4aa602dc739a44cbb762e9c. Artifact:
+    /private/tmp/cmm-round95-final-gates.json'
+  accessed_at: '2026-10-15T13:08:51.793472Z'
+  support: supports
+  snapshot_sha256: d65e106a86d228618023d81978f5b45c360f9f83fb92c2672bec46743c5313df
+  summary: Independently verified actual four exits0, trusted base, 317 passed/3 skipped,459
+    records/525 histories and all459 unchanged owner hashes; no full-suite reviewer
+    rerun.
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/alunite.yaml
+  locator: 'Actual independent affected-file validation terminal result. Artifact:
+    /private/tmp/cmm-round95-minerals-independent/named-validation.json'
+  accessed_at: '2026-10-15T13:08:51.793472Z'
+  support: supports
+  snapshot_sha256: 1563e6e81a6ebe6157281b1ecce938ffc48003a8ad9f5ab1c26c025d223b6f5e
+  summary: Checked1record;0failed for these exact owner bytes. Earlier unsupported
+    --strict CLI drafting attempt is preserved separately and is not counted as validation.
+- evidence_id: zhong
+  kind: primary_source
+  reference: https://mdpi-res.com/metals/metals-09-00337/article_deploy/metals-09-00337-v2.pdf
+  locator: 'Complete current13-page v2 original; sections2–4, all Figures1–8/Tables1–2
+    independently read/visually checked. Artifact: /private/tmp/cmm-round95-minerals-research/alunite2019-v2.pdf'
+  accessed_at: '2026-10-15T13:08:51.793472Z'
+  support: supports
+  snapshot_sha256: e506fb7c5be6af7ed8bdac826dc8e16f219a5a100666bb869aeb7e5286af4963
+  summary: Mixed natural alunite-bearing ore was thermally treated with CaO and water-leached.
+    Approximately81%solubleK belongs to0.1ratio700C2h; the separately evaporated mixed
+    product belongs to0.2ratio. Neither establishes a pure K product or industrial
+    process.
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://mdpi-res.com/d_attachment/metals/metals-09-00337/article_deploy/metals-09-00337-s001.pdf?version=1553598414
+  locator: 'Complete official one-page SI; FigureS1 and oxide table printedTable1
+    (announcedTableS1 in main) visually checked. Artifact: /private/tmp/cmm-round95-minerals-research/alunite2019-si.pdf'
+  accessed_at: '2026-10-15T13:08:51.793472Z'
+  support: supports
+  snapshot_sha256: c8d13ee6db29e5d8b5a4f27b80798b9a3c37cb648f1b97c75ca1bb1ea64ff0bf
+  summary: Feed contains alunite, quartz and kaolinite. K2O8.93wt%/Al2O3 33.84wt%
+    agree with main elementalK7.49wt%/Al17.91wt%; these describe mixed ore, not pure
+    alunite.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species and mixed natural feed
+  outcome: supported
+  summary: Current mineral authority and original feed diffraction support a distinct
+    alunite owner.
+  target_ids:
+  - cmmmech:alunite
+  evidence_ids:
+  - owner
+  - ima
+  - handbook
+  - supplement
+  details: Alunite is not the entire alunite group or arbitrary aluminium sulfate;
+    quartz/kaolinite prevent pure-endmember inference. No inherited criticality or
+    taxonomy claim.
+- assessment_id: conditions
+  area: scope
+  topic: Abiotic conditions and controls
+  outcome: supported
+  summary: Thermal/leaching conditions and distinct product/microscopy experiments
+    are accurately separated.
+  target_ids:
+  - cmmmech:alunite
+  evidence_ids:
+  - zhong
+  - supplement
+  - owner
+  details: 1g <74micrometre ore and CaO ratios0–0.6, drying110C24h,8MPa pressing,N2
+    600–900C2h,leaching30C1h1:10g/mL. No-CaO comparison exists, but benefits vary
+    with temperature. Figure7 .4ratio800C30min differs from the2h assay. Replication,error
+    bars and leachpH unavailable; no microbial causality.
+- assessment_id: denominator
+  area: quantity
+  topic: Solution fraction versus mixed product
+  outcome: supported
+  summary: The record preserves initial-ore-potassium denominator and avoids transfer
+    to isolated-product yield.
+  target_ids:
+  - cmmmech:alunite
+  evidence_ids:
+  - zhong
+  - supplement
+  details: Approximately81%solubleK at700C/.1ratio versus stated27%noCaO is a selected
+    condition, not universal benefit. Product .2ratio/700C/2h and80Cevaporation contains
+    multiple sulfate phases;40.42wt%K2O equivalent is neither elementalK nor K2SO4purity
+    or isolatedmassyield.
+- assessment_id: conflicts
+  area: evidence
+  topic: Source phase labels and proposed microscopic pathway
+  outcome: supported
+  summary: Source inconsistencies constrain reconstruction and are retained without
+    negating the narrower leaching comparison.
+  target_ids:
+  - cmmmech:alunite
+  evidence_ids:
+  - zhong
+  - notice
+  details: Written K2Ca2(SO4)3 called syngenite remains unresolved; AlO6/AlO4 tetrahedral/octahedral
+    labels invert between abstract/conclusion and discussion; Figure6 caption .4 conflicts
+    with multiple displayed ratios. Current visible v2Figure3 correctly reads CaO/.2
+    despite stale hidden text; no false visible conflict is manufactured. Local EDS
+    and unreacted-core interpretation do not establish atomistic causality or a gas/element
+    mass balance.
+- assessment_id: provenance
+  area: provenance
+  topic: Actual source version and immutable history
+  outcome: supported
+  summary: Current publisher original/SI and exact CREATE/named/final gates are bound.
+  target_ids:
+  - cmmmech:alunite
+  evidence_ids:
+  - history0
+  - dossier
+  - notice
+  - named
+  - batch
+  details: Earlier PDF version retained as context; complete currentv2andoriginalSI
+    support accepted claims. No unsupported formal-retraction absence or global search
+    exhaustion statement.
+findings: []
+actions: []
+limitations:
+- Mixed alunite/quartz/kaolinite feed; no intrinsic pure-mineral rate or isolated
+  pure product yield.
+- Source phase-name/formula, coordination-language and Figure6-caption questions remain
+  unresolved; author clarification is separate from record correction.
+- No reported leachpH or independent experimental replication; no industrial demonstration
+  or microbial component.
+- Current v2 visible graphics control the assessment; stale hidden PDF text does not
+  constitute a visible experimental contradiction.
+- Initial unsupported --strict command attempt remains externally preserved and is
+  not treated as validation; actual named command passed.
+- Searches include hidden/ignored/followed maintained paths and bounded cited raw
+  roots; no machinewide/global absence claim.

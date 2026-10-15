@@ -1,0 +1,97 @@
+id: cmmmech:annabergite
+name: Annabergite
+material_kind: mineral
+description: Annabergite is the grandfathered hydrated nickel arsenate mineral with ideal composition Ni3(AsO4)2·8H2O,
+  a vivianite-group member. It is distinct from elemental nickel, other end members, mixed-metal natural specimens
+  and synthetic laboratory analogues. The experiments curated here used synthetic material; natural crystals
+  can contain substitutions and color alone does not determine end-member identity. No criticality designation
+  or microbial extraction claim is inferred from the constituent metal.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Annabergite row, PDF page 11; page 1 defines
+    G as grandfathered and 1852 is an original-description year, not a modern approval identifier.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-15'
+- id: majzlan_2024
+  title: Majzlan, Reichstein, Haase, Stevko, Sejkora and Dachs (2024). Thermodynamics of vivianite-group arsenates
+    M3(AsO4)2·8H2O (M is Ni, Co, Mg, Zn, Cu) and chemical variability in the natural arsenates of this group.
+    European Journal of Mineralogy 36, 31–54. DOI:10.5194/ejm-36-31-2024. Sections 1.2, 2.1, 3, 4.1 and 4.2;
+    Tables 2–3 and Figures 3–4.
+  url: https://ejm.copernicus.org/articles/36/31/2024/
+  accessed_on: '2026-10-15'
+- id: majzlan_2024_supplement
+  title: Majzlan et al. (2024), official supplement to DOI:10.5194/ejm-36-31-2024. figures-SI.pdf, Figure S1
+    (page 1) and Figure S4 (page 4), with composition-labeled lattice trends and FTIR spectra; companion files
+    belong to the same experiment.
+  url: https://ejm.copernicus.org/articles/36/31/2024/ejm-36-31-2024-supplement.zip
+  accessed_on: '2026-10-15'
+mechanisms:
+- id: abiotic_arsenate_precipitation
+  name: Laboratory precipitation and aging of a synthetic annabergite analogue
+  process: other
+  microbial: false
+  description: Majzlan et al. prepared the nominal Ni100 end member by combining aqueous metal nitrate and
+    arsenate solutions and aging the isolated solid. Powder diffraction refinements and FTIR were reported
+    to support crystalline vivianite-type material. This supports formation of a synthetic analogue under the
+    stated laboratory recipe, not extraction from natural ore or a recovered-metal yield.
+  context: 'Sections 1.2 and 2.1, printed pages 33–34 (PDF pages 3–4): the Ni–Co series used 750 mL of metal-nitrate
+    solution with total Ni+Co 0.014 M and 250 mL of 0.02 M arsenate made from Na2HAsO4·7H2O. Both starting
+    solutions were adjusted to pH 6 and heated to 80 °C; arsenate was added at 2 mL/min with stirring. Solids
+    were filtered, washed, resuspended in 250 mL deionized water and aged in sealed glass bottles at 80 °C
+    for one year before filtering, washing and room-temperature drying. Later one-month aging is a separate
+    author-reported observation, not silently substituted for the characterized series. Ni100 and Co100 denote
+    metal-site atomic proportions, not product mass purity or recovery percentages. No organisms, biomass or
+    inoculated comparison were used. Synthesis replicate counts and isolated mass yields are not supplied for
+    this claim.'
+  evidence:
+  - source_ref: majzlan_2024
+    supports: support
+    explanation: Sections 2.1, 3 and 4.1; Table 2 on printed page 37 (PDF page 7), Ni100 row; Figures 3–4 on
+      printed page 36. The authors report crystalline, phase-pure members of the Ni–Co series and give fitted
+      C2/m lattice parameters and metal proportions. The nominal end member is distinguished from the intervening
+      solid solutions.
+  - source_ref: majzlan_2024_supplement
+    supports: support
+    explanation: figures-SI.pdf Figure S4, page 4, contains the Ni100 end-member FTIR trace; Figure S1, page
+      1, gives Ni–Co lattice trends. These are supporting characterization from the same study, not independent
+      replication or an elemental mass balance.
+  - source_ref: majzlan_2024
+    supports: partial
+    explanation: Sections 2.1 and 4.1 distinguish input metal ratios from product composition and report failed
+      Ni–Cu and Ni–Zn syntheses containing olivenite or adamite. The available powder data did not support
+      refinement of complete atomic positions/site occupancies. Those failures and characterization limits
+      prevent extrapolating this recipe to arbitrary metal mixtures or universal phase-pure recovery.
+- id: abiotic_acid_calorimetry_dissolution
+  name: Acid dissolution of the synthetic analogue during calorimetry
+  process: other
+  microbial: false
+  description: The synthetic annabergite end member dissolved in hydrochloric acid during a heat-flow measurement.
+    The reported dissolution observation is laboratory acid chemistry; its enthalpy is not a microbial effect,
+    environmental dissolution rate, equilibrium concentration or isolated nickel product yield.
+  context: 'Section 3, printed page 35 (PDF page 5), and Section 4.2, printed page 37 (PDF page 7): approximately
+    10 mg sample pellets were dropped into 25 g of 5 N HCl in an isothermal calorimeter at 298.15 K after overnight
+    stabilization. Table 3 identifies the solvent as 5 N HCl at 25 °C and gives two calorimetric measurements
+    for each end member. This assay is separate from the ICP-OES digestion with 15 mL of 0.5 M HCl, where some
+    Ni-rich specimens were heated to 70 °C for 10 minutes. Neither protocol is a natural-ore bioleaching experiment.'
+  evidence:
+  - source_ref: majzlan_2024
+    supports: support
+    explanation: Section 3 and Section 4.2 report rapid, reproducible dissolution in the calorimetric solvent;
+      Table 3 on printed page 38 (PDF page 8) contains the Ni100 dissolution-enthalpy row with its number of
+      measurements. This supports the bounded dissolution observation, without assigning a timed rate or metal-recovery
+      fraction.
+  - source_ref: majzlan_2024
+    supports: partial
+    explanation: The paper derives thermodynamic solubility products from calorimetry and discusses differing
+      results and incongruent dissolution in earlier literature. Those derived constants are not direct measurements
+      of a recovered product or proof of equilibration in a microbial system; the older experiments have not
+      been independently adopted here.
+curation_history:
+- timestamp: '2026-10-15T12:42:43Z'
+  curator: codex (GPT-6)
+  action: create
+  summary: Created annabergite mineral owner with separately scoped synthetic precipitation and calorimetric
+    acid dissolution from complete Majzlan2024 primary and supplement; verified dated IMA identity and retained
+    natural/synthetic, control, yield and access limits.
+history_refs:
+- history/records/annabergite/2026-10-15T124246Z-codex-46f2c6.yaml

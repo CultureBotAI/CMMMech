@@ -1,0 +1,61 @@
+{
+  "recorded_at": "2026-10-15T12:58:08.360080Z",
+  "reviewer": "codex /root/round68_new_frontier",
+  "scope": "Initial narrow operational finding in full-source static inspection; no helper top-level execution, API or Git/GitHub mutation. Remainder of full operational audit in progress.",
+  "passed": false,
+  "verdict": "needs_curation",
+  "findings": [
+    {
+      "finding_id": "OP1",
+      "issue_key": "CMMMech.round95.hosted-review-authorship-cohort",
+      "severity": "minor",
+      "status": "open",
+      "scientific_record_defect": false,
+      "summary": "Round94 authored-record identity and reviewer provenance remain in the round95 hosted helpers.",
+      "occurrences": [
+        {
+          "path": "/private/tmp/cmm-round95-hosted-peer.py",
+          "lines": [
+            86,
+            93,
+            135
+          ],
+          "details": "Own-authored special guard still tests petroleum-coke, which is outside EXPECTED_SLUGS; result authorship and limitation still name petroleum-coke/phosphates and hydroniumjarosite/ammoniojarosite. Thus current spent-steel-pickling-liquors does not exercise intended independent-root-review guard."
+        },
+        {
+          "path": "/private/tmp/cmm-round95-hosted-five.py",
+          "lines": [
+            166
+          ],
+          "details": "Authorship reports the round94 assignment instead of actual round95 resource authorship and hauerite/melanterite review scope."
+        }
+      ],
+      "acceptance_checks": [
+        "Require current spent-steel-pickling-liquors to bind actual independent root reviewer, not this author. Keep generic independent verdict/target/source guards.",
+        "Replace all stale authorship and limitation labels with truthful round95 role assignments; retain COMMENT exact-byte producer/consumer binding.",
+        "Verify actual guard accepts expected root reviewer and rejects own-author or wrong reviewer on current owned slug; use AST-extracted pure condition without API execution.",
+        "Retain exact initial helper snapshots and independent successor hash/diff disposition; final runtime still required."
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "/private/tmp/cmm-round95-hosted-peer.py",
+      "snapshot": "/private/tmp/cmm-round95-helper-static-initial-20261015T125808Z-sources/cmm-round95-hosted-peer.py",
+      "sha256": "ecd81d2c6ef69b8b23fbcc2a0991e72e0709e9a075eb4f388d2df61bcecb636d"
+    },
+    {
+      "path": "/private/tmp/cmm-round95-hosted-five.py",
+      "snapshot": "/private/tmp/cmm-round95-helper-static-initial-20261015T125808Z-sources/cmm-round95-hosted-five.py",
+      "sha256": "ed1d8d5f2d65871b69b242fa6e83100d85b16b1202047a87f5ccd6253473c105"
+    },
+    {
+      "path": "/private/tmp/cmm-round95-helper-config.json",
+      "snapshot": "/private/tmp/cmm-round95-helper-static-initial-20261015T125808Z-sources/cmm-round95-helper-config.json",
+      "sha256": "358d62f292c75990dae0fe028495b4ae43e22b056b95ecbd10b3ea5392d72e9d"
+    }
+  ],
+  "limitations": [
+    "Counts remain provisional by explicit coordinator notice and are not a separate finding. No scientific owner defect asserted."
+  ]
+}

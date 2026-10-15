@@ -1,0 +1,80 @@
+{
+  "recorded_at": "2026-10-15T12:59:07.438783Z",
+  "author": "codex /root/round68_new_frontier",
+  "issue_key": "CMMMech.round95.hosted-review-authorship-cohort",
+  "passed": true,
+  "scientific_review": false,
+  "self_correction": true,
+  "independent_resolution_pending": true,
+  "files": [
+    {
+      "path": "/private/tmp/cmm-round95-hosted-peer.py",
+      "before": {
+        "path": "/private/tmp/cmm-round95-helper-static-initial-20261015T125808Z-sources/cmm-round95-hosted-peer.py",
+        "sha256": "ecd81d2c6ef69b8b23fbcc2a0991e72e0709e9a075eb4f388d2df61bcecb636d"
+      },
+      "after": {
+        "path": "/private/tmp/cmm-round95-hosted-authorship-correction-20261015T125907Z-sources/cmm-round95-hosted-peer.py",
+        "sha256": "ecb0d59d6178cef9b6ea265c0f65b51658fbd15eeff3d6baafb091b71c32a14c"
+      },
+      "diff": "/private/tmp/cmm-round95-hosted-authorship-correction-20261015T125907Z-sources/hosted-peer.diff"
+    },
+    {
+      "path": "/private/tmp/cmm-round95-hosted-five.py",
+      "before": {
+        "path": "/private/tmp/cmm-round95-helper-static-initial-20261015T125808Z-sources/cmm-round95-hosted-five.py",
+        "sha256": "ed1d8d5f2d65871b69b242fa6e83100d85b16b1202047a87f5ccd6253473c105"
+      },
+      "after": {
+        "path": "/private/tmp/cmm-round95-hosted-authorship-correction-20261015T125907Z-sources/cmm-round95-hosted-five.py",
+        "sha256": "cbdd8a287f009e343a70afee5b1bf745d59bcca795621926b4d2a6303e23f090"
+      },
+      "diff": "/private/tmp/cmm-round95-hosted-authorship-correction-20261015T125907Z-sources/hosted-five.diff"
+    }
+  ],
+  "actual_ast_cases": [
+    {
+      "case": "expected root",
+      "slug": "spent-steel-pickling-liquors",
+      "reviewer": "codex /root",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "case": "own author",
+      "slug": "spent-steel-pickling-liquors",
+      "reviewer": "codex /root/round68_new_frontier",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "case": "wrong phosphate",
+      "slug": "spent-steel-pickling-liquors",
+      "reviewer": "codex /root/round68_phosphates",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "case": "unidentified reviewer",
+      "slug": "spent-steel-pickling-liquors",
+      "reviewer": "",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "case": "other owner outside specific guard",
+      "slug": "hauerite",
+      "reviewer": "codex /root/round68_new_frontier",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    }
+  ],
+  "original_predicate_demonstration": "Original specific guard admits the current owned slug with this author because it tests a different slug. Corrected guard rejects that case.",
+  "scope": "Actual AST-extracted condition executed only; no helper top-level, network or mutation. Generic independence/hash guards remain unchanged; nonowned case is accepted only by this specific guard.",
+  "separate_preparation_change": "Expected histories/reviews updated from524/541 to525/542 per coordinator final expected census; runtime must match actual final config."
+}

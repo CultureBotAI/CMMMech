@@ -1,0 +1,143 @@
+id: cmmmech:melanterite
+name: Melanterite
+material_kind: mineral
+description: >-
+  Melanterite is the monoclinic ferrous sulfate heptahydrate mineral,
+  FeSO4·7H2O, grandfathered in the September 2026 IMA list. It is distinct
+  from dissolved ferrous sulfate, other sulfate hydrates and ferric oxides.
+  The accepted primary study assigns minor melanterite in a mixed solid
+  from a nitrate/Fe(II) microcosm containing Comamonas strain HJ-2. This
+  is a qualified culture-associated phase observation, not proof of
+  metabolically necessary crystallization, pure-mineral production or
+  iron recovery. The strain's species identification is unresolved.
+sources:
+- id: ima_2026_09
+  title: >-
+    IMA-CNMNC. The New IMA List of Minerals, September 2026; Melanterite row,
+    PDF page 139, and definitions on pages 1-2. Fe(SO4)(H2O)6·H2O,
+    status G, year 1850.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-15'
+- id: handbook
+  title: >-
+    Handbook of Mineralogy. Melanterite, version 1 (2001-2005), complete
+    one-page entry; ferrous sulfate heptahydrate, monoclinic P21/c.
+  url: https://handbookofmineralogy.org/pdfs/melanterite.pdf
+  accessed_on: '2026-10-15'
+- id: peng2023
+  title: >-
+    Peng, R., Shen, J., Li, S. and Liu, H. (2023; online 2022).
+    Sediment-isolated Comamonas terrigena strain HJ-2: a novel
+    nitrate-dependent ferrous-oxidizing bacterium with multifunction on
+    pollutant transformation. Letters in Applied Microbiology 76(1),
+    ovac022. Complete publisher HTML, Figures 1-5, and official supporting
+    DOCX with Methodology S1, Figures S1-S3 and Tables S1-S8 inspected.
+  url: https://academic.oup.com/lambio/article/76/1/ovac022/6953919
+  accessed_on: '2026-10-15'
+- id: genbank_hj2
+  title: >-
+    NCBI GenBank MZ701937.1, 16S rRNA sequence of strain HJ-2;
+    current record names Comamonas thiooxydans, TaxId 363952, conflicting
+    with the article's C. terrigena assignment. Sequence record inspected
+    without treating its species label as a resolved experimental identity.
+  url: https://www.ncbi.nlm.nih.gov/nuccore/MZ701937.1
+  accessed_on: '2026-10-15'
+- id: genbank_nbrc14951
+  title: >-
+    NCBI GenBank AB680720.1, Comamonas testosteroni NBRC 14951,
+    16S rRNA sequence; this is the article's cited comparison accession,
+    and agrees with the name in supporting Figure S1 rather than the main text.
+  url: https://www.ncbi.nlm.nih.gov/nuccore/AB680720.1
+  accessed_on: '2026-10-15'
+mechanisms:
+- id: hj2-culture-associated-phase-assignment
+  name: Minor melanterite assigned in mixed solids from an HJ-2 iron microcosm
+  process: biomineralization
+  microbial: true
+  description: >-
+    The authors assign melanterite alongside goethite, lepidocrocite and
+    hematite in precipitates from Fe(II), nitrate and HJ-2 cells. Microbial
+    participation denotes the presence of cultured cells in this experiment;
+    it does not establish that cells caused melanterite crystallization.
+    Unreported solid preparation and lack of comparator XRD leave residual
+    ferrous sulfate crystallization during processing unresolved.
+  context: >-
+    Materials and Methods: HJ-2 was isolated from Hanjiang riparian sediment
+    after FeS/oxygen gradient enrichment and LB purification. Log-phase
+    LB-grown cells were centrifuged at 8000 g, 4 degrees C for 8 min, washed
+    twice in 10 mM PIPES at pH 7 and resuspended. Experiments used 100 mL
+    anaerobic glass bottles, 10 mM PIPES, nominal 5% inoculum and 30 degrees C;
+    actual liquid volume, inoculum basis and cell density are not specified.
+    Two parallel experiments per group and uninoculated controls are reported.
+    Figure 2 uses FeSO4 and NaNO3; the reported initial Fe(II) and nitrate
+    concentrations are each 3.64 mmol/L. XRD used a Bruker D8-FOCUS,
+    but solid collection time, washing, drying, oxygen exposure and phase
+    quantification method are not specified. The 144 h solution endpoint
+    is not an established XRD collection time.
+  evidence:
+  - source_ref: peng2023
+    supports: partial
+    explanation: >-
+      Results section on Fe(II) oxidation coupled with nitrate reduction
+      and supporting Figure S2 assign melanterite (reference PDF 01-0255)
+      in a mixed diffraction pattern. The figure labels melanterite 13.35%,
+      goethite 55.52%, lepidocrocite 15.35% and hematite 15.76%. No refinement
+      details, uncertainty, internal standard or absolute phase-mass basis
+      are given. These are source-reported phase labels, not a validated
+      melanterite yield or isolated-product purity. The named mineral remains
+      a provisional phase assignment in this experimental mixture.
+  - source_ref: peng2023
+    supports: context_only
+    explanation: >-
+      Figure 2 and its results report Fe(II) declining from 3.64 to
+      0.84 mmol/L within 144 h with cells and nitrate, while the no-cell
+      and no-nitrate comparators change little. These solution concentrations
+      do not quantify conversion into melanterite. Supporting Figure S2
+      supplies no corresponding control-solid patterns. The claim that
+      melanterite proves incorporation of Fe(II) into ferric precipitates
+      is not established by assigning a separate ferrous sulfate phase.
+      Figure 1 SEM/EDS demonstrates Fe-bearing material but cannot itself
+      identify melanterite or its formation mechanism.
+  - source_ref: peng2023
+    supports: partial
+    explanation: >-
+      Figure 3 and the nitrite experiment show Fe(II) consumption with
+      nitrite both with and without cells, reaching the reported zero by
+      480 h. This preserves a substantial abiotic route in the coupled iron
+      system and prevents attributing all Fe oxidation to a cellular enzyme.
+      Methodology S1 and Tables S3-S7 are gene annotations, not expression,
+      knockout or enzyme assays demonstrating melanterite formation.
+      No closed iron mass balance, isolated melanterite recovery or industrial
+      application is demonstrated.
+  - source_ref: peng2023
+    supports: partial
+    explanation: >-
+      The main identification paragraph calls HJ-2 C. terrigena and claims
+      100% 16S similarity to NBRC 14951 (AB680720.1). Supporting Figure S1
+      instead labels that neighbor C. testosteroni and separates it from
+      the plotted C. terrigena strains. The article reports CCTCC AB 2021274,
+      but no independently resolved culture-deposit record is accepted here.
+      HJ-2 is retained as the study strain without a species-level organism ID.
+  - source_ref: genbank_hj2
+    supports: context_only
+    explanation: >-
+      The current MZ701937.1 record names Comamonas thiooxydans strain HJ-2,
+      whereas the article names C. terrigena. This accession conflict remains
+      unresolved; it does not license silently renaming the experimental strain.
+  - source_ref: genbank_nbrc14951
+    supports: context_only
+    explanation: >-
+      AB680720.1 currently identifies Comamonas testosteroni NBRC 14951,
+      agreeing with Figure S1 and conflicting with the main identification
+      paragraph. A matching comparison-strain label does not resolve HJ-2's
+      species assignment or establish any type-strain identity for it.
+curation_history:
+- timestamp: '2026-10-15T12:45:08Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: >-
+    Created melanterite from current mineral authorities and the complete
+    HJ-2 original plus supplement, retaining provisional mixed-phase scope,
+    unresolved crystallization causality and contradictory strain identification.
+history_refs:
+- history/records/melanterite/2026-10-15T124511Z-codex-f47746.yaml

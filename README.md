@@ -8,9 +8,9 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 452 material records.
+The catalogue currently contains 459 material records.
 
-The [latest curation report](research/ingests/round94-frontier-20261015.md) links
+The [latest curation report](research/ingests/round95-frontier-20261015.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
@@ -461,6 +461,14 @@ the new records, independent reviews, source dossiers and remaining evidence gap
 | [Smithsonite](data/records/smithsonite.yaml) | Ureolytic culture-associated zinc carbonate phase evidence | Phase identification belongs to the traditional dried specimen; sequential zinc depletion is a separate arm |
 | [Spent alkaline and zinc-carbon batteries](data/records/spent-alkaline-zinc-carbon-batteries.yaml) | Microbial acid production, mixed-feed leaching and separate electrolysis | Source yield/purity conflicts, feed denominator and laboratory stage boundaries retained |
 | [Spent SCR catalyst](data/records/spent-selective-catalytic-reduction-catalyst.yaml) | Microbial bioacid arsenic removal and separate chemical V/W leaching | Combined catalyst regeneration, source-unit/time conflicts and control limitations remain explicit |
+
+| [Alunite](data/records/alunite.yaml) | Chemical roasting and potassium leaching of a mixed ore | Laboratory reagent and phase-identity conflicts retained; no microbial claim |
+| [Annabergite](data/records/annabergite.yaml) | Synthetic analogue precipitation and acid calorimetry | Natural species and synthetic endmember remain distinct; no recovered nickel |
+| [Erythrite](data/records/erythrite.yaml) | Synthetic analogue precipitation and acid calorimetry | No demonstrated microbial transformation or recovered cobalt |
+| [Hauerite](data/records/hauerite.yaml) | Sterile ferric-chloride oxidation of characterized material | Sulfur-product distribution is not manganese recovery or a microbial assay |
+| [Heterosite](data/records/heterosite.yaml) | Synthetic heterosite-structure powder preparation and lithium uptake | Natural species, engineered powder and distinct brines retain separate scope |
+| [Melanterite](data/records/melanterite.yaml) | Mixed-phase assignment in an HJ-2 culture experiment | Taxonomic conflict and specimen-preparation gap prevent stronger causal claims |
+| [Spent steel-pickling liquors](data/records/spent-steel-pickling-liquors.yaml) | Culture-associated Fe(II) oxidation in diluted plant liquor | Recipe, strain and product-phase conflicts retained; no isolated iron recovery |
 
 Experimental salts, alloys, mineral species and secondary resources retain
 their distinct identities. Criticality entries identify a jurisdiction and

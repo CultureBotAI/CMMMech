@@ -1,0 +1,41 @@
+{
+  "recorded_at": "2026-10-15T13:02:52.206147+00:00",
+  "passed": false,
+  "verdict": "needs_curation",
+  "scope": "Read-only pre-execution publication-report review; no helper execution or owner edit. Reviewer authored heterosite/alunite, so this is a narrative/input consistency check, not independent acceptance of those records.",
+  "input": {
+    "path": "/private/tmp/cmm-round95-build-report.py",
+    "sha256": "da37504553856069f13e51637c7da7d292c9fd092b7da853d5ff86e5d2dc06aa",
+    "snapshot": "/private/tmp/cmm-round95-report-static-initial-20261015T130252Z.py"
+  },
+  "findings": [
+    {
+      "finding_id": "OP2",
+      "issue_key": "cmmmech.round95.report-heterosite-material-form",
+      "severity": "minor",
+      "status": "open",
+      "field": "selectiontext",
+      "exact_text": "synthetic heterosite electrode transformation and lithium uptake",
+      "description": "The report builder calls the accepted heterosite experiment an electrode transformation. The accepted experiment chemically treats commercial crystalline LFP powder and uses the delithiated powder as a sorbent. Electrode work occurs in the introduction as prior-study context; the curated experiment did not use an assembled electrode or applied electrochemical cell. This report wording overstates the experimental material form.",
+      "proposed_correction": "synthetic heterosite-structure powder preparation and lithium uptake",
+      "evidence": [
+        {
+          "path": "/private/tmp/CMMMech-expansion-round95-20261015/data/records/heterosite.yaml",
+          "sha256": "916efa4c559606a0ddaf4bf1a85519ba9ef66c8eae0f3c9e51657ee2a07fc95a",
+          "locator": "mechanism context and description: commercial carbon-coated IBUvolt LFP400; persulfate preparation and thiosulfate-assisted uptake"
+        },
+        {
+          "path": "/private/tmp/cmm-round95-minerals-research/reich2024.pdf",
+          "sha256": "26a6095b8aef3e0e8ea227dcd3a08b7772de169695b423d5a52d36c91b156286",
+          "locator": "PDF pages 2\u20133, study aim and section 2/2.1; Figure 1 PDF page 4 explicitly labels initial LiFePO4 powder"
+        }
+      ],
+      "acceptance": "Correct only report-selection wording; preserve initial builder snapshot and check the actual generated MD/JSON use the qualified powder wording. No owner/history edit or scientific gate rerun is needed."
+    }
+  ],
+  "other_observations": [
+    "Seven configured owner IDs, final expected counts459/525/542/96/459 and source ledger340\u2013343 match the current intended batch. Final coverage/native receipts and generated report remain pending; no runtime pass is claimed.",
+    "PR body does not contain this electrode wording; its validation and independent-review assertions remain gated until actual completed receipts exist.",
+    "Retained live integration receipt supports exact main base, SQUASH/ALLGREEN/validate-strict, historical admission/convergence states and zero observed shepherd runs; precommit preservation receipt reports7426 baseline nontracked entries preserved."
+  ]
+}

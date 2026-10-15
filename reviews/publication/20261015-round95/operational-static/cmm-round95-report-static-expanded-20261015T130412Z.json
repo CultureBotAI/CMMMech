@@ -1,0 +1,43 @@
+{
+  "recorded_at": "2026-10-15T13:04:12.887241+00:00",
+  "passed": false,
+  "scope": "Expanded immutable initial observation before authorized correction.",
+  "previous_observation": {
+    "path": "/private/tmp/cmm-round95-report-static-initial-20261015T130252Z.json",
+    "sha256": "b50c9490c962bd1860451966253e9d3cc927aa3daef61117a72c2ca04b64a10d"
+  },
+  "finding_id": "OP2",
+  "issue_key": "cmmmech.round95.report-heterosite-material-form",
+  "severity": "minor",
+  "status": "open",
+  "inputs": [
+    {
+      "path": "/private/tmp/CMMMech-expansion-round95-20261015/README.md",
+      "sha256": "5b656cb157060c4cb9e875a1502fc262dfee851a8a529a7b1ec8d17439258a60",
+      "snapshot": "/private/tmp/cmm-round95-report-static-expanded-20261015T130412Z.README.md"
+    },
+    {
+      "path": "/private/tmp/cmm-round95-build-report.py",
+      "sha256": "da37504553856069f13e51637c7da7d292c9fd092b7da853d5ff86e5d2dc06aa",
+      "snapshot": "/private/tmp/cmm-round95-report-static-initial-20261015T130252Z.py"
+    }
+  ],
+  "occurrences": [
+    {
+      "path": "README.md",
+      "locator": "line469 Heterosite row",
+      "text": "Synthetic electrode transformation and lithium uptake; Natural species, engineered electrode and distinct brines retain separate scope"
+    },
+    {
+      "path": "/private/tmp/cmm-round95-build-report.py",
+      "locator": "selectiontext",
+      "text": "synthetic heterosite electrode transformation and lithium uptake"
+    }
+  ],
+  "description": "Both root-authored summary surfaces describe the accepted chemical powder experiments as an electrode transformation. The maintained owner and primary section2/2.1/Figure1 instead describe LFP/FePO4 powders and chemical preparation/uptake.",
+  "acceptance": [
+    "Correct the README row to synthetic heterosite-structure powder preparation and lithium uptake, with engineered powder in the boundary.",
+    "Correct builder selectiontext to the same qualified powder wording; verify later generated report.",
+    "Preserve before/after snapshots and exact minimal diffs. No owner, canonical history, native-review or existing gate-input edits."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "recorded_at": "2026-10-15T12:59:38.383616+00:00",
+  "issue": {
+    "body": "# Clarify Reich2024 loading denominators and censored lithium residuals\n\nSource: Reich R, Eiche E, Kolb J (2024), *Delithiation and lithiation of LiFePO4: Implications for direct Li extraction from synthetic solutions and geothermal brines*, DOI **10.1016/j.desal.2024.117883**.\n\nThe complete eighteen-page original and official fourteen-sheet XLSX are available and independently inspected. This is a source-data clarification, separate from the minor record locator correction tracked for this round. The record already distinguishes synthetic heterosite-structure sorbent uptake from natural mineral extraction and purified lithium recovery.\n\nSection 2 (page 3) defines Q=(C0\u2212CEqu)V/m, with m described as experiment or digestion mass. The workbook mixes fluid-OES and digestion-OES measurements. Its static cells contain no reconstructible formulas. Please clarify the exact conversion and blank subtraction used for each reported Li-loading series, including the experiment/digestion mass and solution volume used:\n\n- `Fig. 9a, Fig. 10` K3 is fluid OES; K13 is 23.384093834 mg/g at 180 min. Blank rows20\u201322 have zero experimental and digestion masses (E/J) yet load-labelled K values.\n- `Fig. 9b, Fig. 10` K3 is fluid OES; K15 is 0.951698740 mg/g at 240 min. Blank rows20\u201322 likewise have zero experimental mass and nonzero load-labelled K entries.\n- `Fig. 10, Fig. 11a+b` K3 is digestion OES; K9/K10 are 26.757516254/23.677131690 mg/g. Residual-liquid J14:J18 are encoded as zero.\n- `Fig. 10, Fig. 11c+d` M3 is digestion OES; M11 is 1.317236396 mg/g at 2.0008 g/L. Residual-liquid L15:L20 are `<LOQ`.\n\nThe paper's >99% wording must be distinguished from exactly zero residual Li, an isolated product yield, and a closed liquid/solid balance. Request underlying measured concentrations, dilution factors, original-solid and digestion masses, blank convention, censoring/detection thresholds, and a reconciled calculation sheet sufficient to reproduce the reported loads and any percentage recovery. This draft does not assert that a particular alternative calculation is authoritative or that the load-labelled blanks prove erroneous data.\n\nOriginal: https://publikationen.bibliothek.kit.edu/1000172429/153604117 (SHA25626a6095b8aef3e0e8ea227dcd3a08b7772de169695b423d5a52d36c91b156286). Official supplement: https://ars.els-cdn.com/content/image/1-s2.0-S0011916424005940-mmc1.xlsx (SHA25646bd87542e761a260399a1f180bdf8642ef3a696712450ef3f3062137ee4598a).\n\nAcceptance: obtain public primary source-linked raw values/calculation conventions or clarification, reproduce selected capacities with their proper bases, then reassess whether the already bounded owner needs amendment. No author contact was performed. Root's all-state snapshots and hidden/ignored/followed maintained-root DOI search identified no earlier source issue for this DOI before this round; root should repeat live duplicate checking before posting.\n",
+    "number": 343,
+    "state": "OPEN",
+    "title": "Clarify Reich2024 loading denominators and censored lithium residuals",
+    "url": "https://github.com/CultureBotAI/CMMMech/issues/343"
+  },
+  "kind": "source",
+  "body_sha256": "0a027c46af25870a52b3bde807f5ac056ed4bd143e203168fc4324881f53a382",
+  "dedup": {
+    "issue_count": 236,
+    "doi": "10.1016/j.desal.2024.117883",
+    "matches": [
+      {
+        "body": "# Correct heterosite Reich2024 methods locator\n\nThe frozen owner `data/records/heterosite.yaml` describes the complete Reich, Eiche & Kolb (2024), DOI 10.1016/j.desal.2024.117883 original as having \u201cmethods sections 2.1\u20132.3\u201d. PDF page 3 actually contains section 2 Materials and methods and only subsection 2.1 Experimental, then section 3 Results.\n\nIndependent native initial: `reviews/structured/20261015T125439Z-heterosite-round95-initial-locator/review.yaml`, F1, stable key `heterosite-round95-methods-section-locator`. Original owner SHA256 `ab138bec6a2ec7951640720e6063b42ea253c92409fca4a64cf9b350343c87d4`; complete primary SHA256 `26a6095b8aef3e0e8ea227dcd3a08b7772de169695b423d5a52d36c91b156286`.\n\nAcceptance: correct only this source locator; preserve supported experiments/denominators and immutable CREATE/initial review; append actual EDIT provenance, validate final bytes and save a successor explicitly resolving F1. Current batch is running against unchanged original inputs; correction waits its terminal receipt.\n",
+        "number": 339,
+        "state": "OPEN",
+        "title": "Correct heterosite experimental-methods section locator",
+        "url": "https://github.com/CultureBotAI/CMMMech/issues/339"
+      }
+    ],
+    "disposition": "No earlier source clarification. Issue339, where present, concerns only the maintained record locator and has separate acceptance."
+  }
+}
