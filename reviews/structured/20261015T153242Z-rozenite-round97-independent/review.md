@@ -1,0 +1,480 @@
+# Independent scientific review of Rozenite
+
+- Review: 20261015T153242Z-rozenite-round97-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T15:14:48.429795Z
+- Finished UTC: 2026-10-15T15:32:42.711774Z
+- Reviewer: codex /root/round97_resources (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of distinct rozenite mineral identity and source-specific abiotic transient-phase behavior. Mixed starting powder, inferred grinding effects, protocol-dependent temperatures and missing replication/yield remain explicit; no corrective owner finding.
+
+## Scope And Provenance
+
+Complete exact assigned owner/history, accepted primary full text, relevant graphics/supplements and current authorities, with bounded correction and conflicting-evidence searches.
+
+Selection: Parent-assigned independent per-record scientific review after owner freeze.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9272005a590c9fa1e5fbb75b30f914ce38c3924a.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:rozenite | data/records/rozenite.yaml | maintained | Rozenite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent primary evidence and authority assessment | passed | True | cmmmech:rozenite | Complete original text and claim-bearing graphics/metadata independently read; source-specific outcomes, uncertainty and interpretation checked against exact owner. |
+| Independent affected-file validation | passed | True | cmmmech:rozenite | Checked 1 record; 0 failed on the exact frozen target. |
+| Coordinator completed batch command 1 | passed | True | cmmmech:rozenite | Actual completed coordinator receipt, retained log hash and exact current owner input verified independently. |
+| Coordinator completed batch command 2 | passed | True | cmmmech:rozenite | Actual completed coordinator receipt, retained log hash and exact current owner input verified independently. |
+| Coordinator completed batch command 3 | passed | True | cmmmech:rozenite | Actual completed coordinator receipt, retained log hash and exact current owner input verified independently. |
+| Coordinator completed batch command 4 | passed | True | cmmmech:rozenite | Actual completed coordinator receipt, retained log hash and exact current owner input verified independently. |
+
+## Scientific And Domain Assessments
+
+### Mineral species and experimental substrate
+
+identity: supported. Targets: cmmmech:rozenite.
+
+Distinct ferrous sulfate tetrahydrate is correctly grounded.
+
+Ideal Fe(II)(SO4)·4H2O, monoclinic, Rd1963s.p.; no invented material CURIE. The experiment begins with natural melanterite-derived mixed powder, not pure rozenite or an element/commodity record.
+
+### Abiotic protocol, pretreatment and controls
+
+scope: supported. Targets: cmmmech:rozenite.
+
+The exact experimental system and its limits are retained.
+
+Agate grinding, corundum holder, air-XRPD25–775C in25C steps,5min equilibration,10–82degrees2theta,0.0263degree steps and stated257s/step. About50%RH applies to the RT–50C discussion, not a full controlled humidity series. No inoculum, biomass, microbial causality, controlled grinding comparison or independent heating replicate count is supplied.
+
+### Phase weight fractions and transient outcome
+
+quantity: supported. Targets: cmmmech:rozenite.
+
+Refined phase proportions are not isolated-product yield.
+
+The starting78%melanterite/22%rozenite fractions refer to analyzed powder. Figures2/3/7 support transient rozenite, persistence at75C and loss by100C. No recovery percentage, isolated mass or kinetic rate is inferred; exact high-temperature thresholds are protocol-specific.
+
+### Interpreted steps and contrasting measurement protocols
+
+evidence: supported. Targets: cmmmech:rozenite.
+
+Measured phase tracking remains separate from atomic interpretation.
+
+Grinding origin is proposed using reported mine absence. Water-ligand replacement and hydrogen-bond rearrangement are inferred structural explanations, not direct stepwise observations. Separate13mg nitrogen TG/DTA at10C/min gives roughly70C event versus50C XRPD completion. Infrared pellet/powder/crystal arrangements have saturation and pellet effects. The source other-phase75/100C onset wording does not change the shared rozenite endpoint.
+
+### Criticality, identifiers and deployment boundary
+
+scope: supported. Targets: cmmmech:rozenite.
+
+No unsupported jurisdictional criticality or deployment claim is present.
+
+Neither mineral inherits a constituent element criticality status. No criticality assertion requiring jurisdiction/list/edition is made, no taxon/strain ID is invented and no laboratory result is promoted to industrial deployment.
+
+### Exact inputs, immutable history and checks
+
+provenance: supported. Targets: cmmmech:rozenite.
+
+Current owner and authentic CREATE/EDIT provenance are traceable.
+
+Native inspect binds exact maintained record, canonical history and dossier inputs at trusted base9272005a590c9fa1e5fbb75b30f914ce38c3924a. Actual inline and sidecar events are distinct and honest. Completed coordinator gates are checked through actual receipt and log; whole-corpus structured review checking follows final save.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/rozenite.yaml; Complete current owner; exact inputs captured by native inspect before assessment. | supports | Material form, source claims, mechanisms/absence, quantities, limits and provenance inspected. |
+| history0 | history/records/rozenite/2026-10-15T151134Z-codex-dcaa82.yaml; Complete canonical session plus distinct inline event/history_refs. | supports | Actual codex/GPT-6 actor, target, timestamp and described CREATE/EDIT scope; preserved append-only provenance. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Definitions PDF pages1–2 and exact species row PDF 188; independently rendered/visually checked. Raw /private/tmp/cmm-round97-sulfates-research/ima.pdf | supports | September2026 accepted species/formula and Rd special-procedure year verified; redefinition year is not a new-mineral identifier. |
+| search | Independent bounded notice/identity and related-study web searches; Actual query list and assessed routes /private/tmp/cmm-round97-sulfates-independent-resources/search-observations.json | context_only | No affecting experimental notice surfaced in bounded results. Newsletter52 Petrovite corrigendum was actually checked. Later structural/thermal leads remain outside accepted measured evidence; inaccessible browser routes explicitly retained. |
+| named | uv run --locked cmmmech validate data/records/rozenite.yaml; Actual independent named-validation log /private/tmp/cmm-round97-sulfates-independent-resources/rozenite-final-validation.log | supports | One record checked, zero failed. Structural validation does not prove science. |
+| batch | /private/tmp/cmm-round97-final-gates.json; Actual terminal receipt and retained log /private/tmp/cmm-round97-final-gates.log SHA256 c77281964ad285ffee5008c717a42255f422b948372d973513341d1a08aebaf3 | supports | Verified all recorded exits0, exact base/worktree and current target input hash; parent executed full suite, reviewer verified completed receipt/log without duplicate execution. |
+| dossier | research/sources/round97-sulfates/20261015T151307Z-source-investigation.md; Original acquisition/lineage dossier and paired JSON; native-inspected context inputs. | context_only | Original dossier supplies raw access provenance and deferred frontier. Its initial threshold interpretation is explicitly superseded by the preserved corrective dossier and final review, not silently overwritten. |
+| primary | https://doi.org/10.3390/min11040392; Complete15-page original read through terminal references; Methods p3, Table1/Figure1 p4, Figures2–3 pp5–6, Figures6–8 pp8–10 and discussion p12 visually checked. Raw /private/tmp/cmm-round97-sulfates-research/melanterite-thermal.pdf | supports | Natural Fornovolasco powder, initially78wt% melanterite/22wt% rozenite, heated in air. Rozenite persists75C but disappears in100C pattern. Phase fractions and proposed structural rearrangements are separately qualified. |
+| handbook | https://handbookofmineralogy.org/pdfs/rozenite.pdf; Complete one-page entry; formula, monoclinic crystal data and natural/synthetic scopes. Raw /private/tmp/cmm-round97-sulfates-research/rozenite-handbook.pdf | supports | Ferrous sulfate tetrahydrate mineral is distinct from melanterite and szomolnokite; synthetic cell/density values are not natural-sample measurements. |
+
+## Limits And Additional Notes
+
+- No independent raw-pattern Rietveld refinement or reconstruction of individual atomic steps was performed.
+- Original article announces no separate supplement, but MDPI live landing was429; exhaustive live supplement/raw-pattern inventory is not claimed.
+- Protocol-specific natural mixed powder experiment supplies no universal stability boundary, microbial mechanism, isolated recovery yield or industrial deployment.
+- Later rozenite2023 structural study and Jani2015 humidity study surfaced as future context; originals were not newly adopted in this bounded review.
+- Shared source acquisition is disclosed; original text, claim-bearing graphics and authority passages were assessed independently after native target inspection. Reviewer made no sulfate owner/history edits.
+- Originals and raw working evidence remain outside Git; committed review is an evidence-linked summary.
+- Final batch execution is by coordinator; this reviewer verified actual terminal receipt, retained log and target input hash rather than claiming independent duplicate suite execution.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T153242Z-rozenite-round97-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Rozenite
+started_at: '2026-10-15T15:14:48.429795Z'
+finished_at: '2026-10-15T15:32:42.711774Z'
+reviewer:
+  identity: codex /root/round97_resources
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The sulfate author curated these owners; I authored separate
+    poultry/fish bone records. I independently inspected the frozen target before
+    judgment, read original evidence and authorities, and did not edit sulfate owners
+    or histories.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of distinct rozenite mineral identity and source-specific
+  abiotic transient-phase behavior. Mixed starting powder, inferred grinding effects,
+  protocol-dependent temperatures and missing replication/yield remain explicit; no
+  corrective owner finding.
+source:
+  git_revision: 9272005a590c9fa1e5fbb75b30f914ce38c3924a
+  state: working_tree
+  inputs:
+  - path: data/records/rozenite.yaml
+    sha256: 103c00774c7184fa48782fd9acd831330f1f800fd7cfcfd2741abed72a92400f
+    role: target
+  - path: history/records/rozenite/2026-10-15T151134Z-codex-dcaa82.yaml
+    sha256: e6b7bdd26c5c3881dcf6e10006d49331fdec24ce6d64fbe352e672e3f15162d2
+    role: context
+  - path: research/sources/round97-sulfates/20261015T151307Z-source-investigation.json
+    sha256: 571b83403a0b9a034e92b3900ce242d2a616057e4fe194bd1ea319f124b679af
+    role: context
+  - path: research/sources/round97-sulfates/20261015T151307Z-source-investigation.md
+    sha256: 82cf93ee26c3fe29b0c7776f3d793d4d69c40a464230d295b423057798754151
+    role: context
+  - path: research/sources/round97-sulfates/20261015T152218Z-reflection-threshold-correction.json
+    sha256: 88d4abe59b7cb70d1ec0627b9e2b744d3e6c96b9b1f9af2f095bf3ec26a3ffd4
+    role: context
+  - path: research/sources/round97-sulfates/20261015T152218Z-reflection-threshold-correction.md
+    sha256: 2d4c7b36bba674b8fcd0391c0d45f58faa533397c5bbe7459bda20f7f6bb520f
+    role: context
+scope:
+  description: Complete exact assigned owner/history, accepted primary full text,
+    relevant graphics/supplements and current authorities, with bounded correction
+    and conflicting-evidence searches.
+  selection: Parent-assigned independent per-record scientific review after owner
+    freeze.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:rozenite
+targets:
+- target_id: cmmmech:rozenite
+  path: data/records/rozenite.yaml
+  label: Rozenite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/rozenite.yaml
+    role: maintained_record
+checks:
+- check_id: science
+  name: Independent primary evidence and authority assessment
+  required: true
+  status: passed
+  summary: Complete original text and claim-bearing graphics/metadata independently
+    read; source-specific outcomes, uncertainty and interpretation checked against
+    exact owner.
+  target_ids:
+  - cmmmech:rozenite
+  evidence_ids:
+  - primary
+  - ima
+  - search
+- check_id: named
+  name: Independent affected-file validation
+  command: uv run --locked cmmmech validate data/records/rozenite.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Checked 1 record; 0 failed on the exact frozen target.
+  target_ids:
+  - cmmmech:rozenite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Coordinator completed batch command 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed coordinator receipt, retained log hash and exact current
+    owner input verified independently.
+  target_ids:
+  - cmmmech:rozenite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Coordinator completed batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed coordinator receipt, retained log hash and exact current
+    owner input verified independently.
+  target_ids:
+  - cmmmech:rozenite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Coordinator completed batch command 3
+  command: uv run --locked cmmmech validate-history --base 9272005a590c9fa1e5fbb75b30f914ce38c3924a
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed coordinator receipt, retained log hash and exact current
+    owner input verified independently.
+  target_ids:
+  - cmmmech:rozenite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Coordinator completed batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed coordinator receipt, retained log hash and exact current
+    owner input verified independently.
+  target_ids:
+  - cmmmech:rozenite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/rozenite.yaml
+  locator: Complete current owner; exact inputs captured by native inspect before
+    assessment.
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: supports
+  summary: Material form, source claims, mechanisms/absence, quantities, limits and
+    provenance inspected.
+  snapshot_sha256: 103c00774c7184fa48782fd9acd831330f1f800fd7cfcfd2741abed72a92400f
+- evidence_id: history0
+  kind: record_content
+  reference: history/records/rozenite/2026-10-15T151134Z-codex-dcaa82.yaml
+  locator: Complete canonical session plus distinct inline event/history_refs.
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: supports
+  summary: Actual codex/GPT-6 actor, target, timestamp and described CREATE/EDIT scope;
+    preserved append-only provenance.
+  snapshot_sha256: e6b7bdd26c5c3881dcf6e10006d49331fdec24ce6d64fbe352e672e3f15162d2
+- evidence_id: ima
+  kind: database
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions PDF pages1–2 and exact species row PDF 188; independently rendered/visually
+    checked. Raw /private/tmp/cmm-round97-sulfates-research/ima.pdf
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: supports
+  summary: September2026 accepted species/formula and Rd special-procedure year verified;
+    redefinition year is not a new-mineral identifier.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: search
+  kind: search
+  reference: Independent bounded notice/identity and related-study web searches
+  locator: Actual query list and assessed routes /private/tmp/cmm-round97-sulfates-independent-resources/search-observations.json
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: context_only
+  summary: No affecting experimental notice surfaced in bounded results. Newsletter52
+    Petrovite corrigendum was actually checked. Later structural/thermal leads remain
+    outside accepted measured evidence; inaccessible browser routes explicitly retained.
+  snapshot_sha256: 2aa05634d2f7bd211ade54c28fb56e5f424a1a16eeee1f14515452813b7157e1
+  search_scope: Seven actual queries on 2026-10-15, first returned results without
+    exhaustive pagination. Official publisher follow-up included Newsletter52, its
+    corrigendum and IUCr guidance; MDPI thermal landing429 and later DOI opens inaccessible.
+    No universal absence claim.
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/rozenite.yaml
+  locator: Actual independent named-validation log /private/tmp/cmm-round97-sulfates-independent-resources/rozenite-final-validation.log
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: supports
+  summary: One record checked, zero failed. Structural validation does not prove science.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round97-final-gates.json
+  locator: Actual terminal receipt and retained log /private/tmp/cmm-round97-final-gates.log
+    SHA256 c77281964ad285ffee5008c717a42255f422b948372d973513341d1a08aebaf3
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: supports
+  summary: Verified all recorded exits0, exact base/worktree and current target input
+    hash; parent executed full suite, reviewer verified completed receipt/log without
+    duplicate execution.
+  snapshot_sha256: 7ef2eac39d3fdd22ce6960e65fce05a6f51b1e541fcd9a5b8830dfa0bdc6b8f5
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round97-sulfates/20261015T151307Z-source-investigation.md
+  locator: Original acquisition/lineage dossier and paired JSON; native-inspected
+    context inputs.
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: context_only
+  summary: Original dossier supplies raw access provenance and deferred frontier.
+    Its initial threshold interpretation is explicitly superseded by the preserved
+    corrective dossier and final review, not silently overwritten.
+  snapshot_sha256: 82cf93ee26c3fe29b0c7776f3d793d4d69c40a464230d295b423057798754151
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/min11040392
+  locator: Complete15-page original read through terminal references; Methods p3,
+    Table1/Figure1 p4, Figures2–3 pp5–6, Figures6–8 pp8–10 and discussion p12 visually
+    checked. Raw /private/tmp/cmm-round97-sulfates-research/melanterite-thermal.pdf
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: supports
+  summary: Natural Fornovolasco powder, initially78wt% melanterite/22wt% rozenite,
+    heated in air. Rozenite persists75C but disappears in100C pattern. Phase fractions
+    and proposed structural rearrangements are separately qualified.
+  snapshot_sha256: 8ce0f570ecdcbc11b3854a4ba1bbdbfef1b534a5a34ba6336e785881d5e52c14
+- evidence_id: handbook
+  kind: database
+  reference: https://handbookofmineralogy.org/pdfs/rozenite.pdf
+  locator: Complete one-page entry; formula, monoclinic crystal data and natural/synthetic
+    scopes. Raw /private/tmp/cmm-round97-sulfates-research/rozenite-handbook.pdf
+  accessed_at: '2026-10-15T15:32:42.711774Z'
+  support: supports
+  summary: Ferrous sulfate tetrahydrate mineral is distinct from melanterite and szomolnokite;
+    synthetic cell/density values are not natural-sample measurements.
+  snapshot_sha256: 6388e8d61c9b06643c5244270ef006b53420d939d6bec70b974d3b7c4bb7d1f6
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral species and experimental substrate
+  outcome: supported
+  summary: Distinct ferrous sulfate tetrahydrate is correctly grounded.
+  details: Ideal Fe(II)(SO4)·4H2O, monoclinic, Rd1963s.p.; no invented material CURIE.
+    The experiment begins with natural melanterite-derived mixed powder, not pure
+    rozenite or an element/commodity record.
+  target_ids:
+  - cmmmech:rozenite
+  evidence_ids:
+  - owner
+  - ima
+  - handbook
+  - primary
+- assessment_id: conditions
+  area: scope
+  topic: Abiotic protocol, pretreatment and controls
+  outcome: supported
+  summary: The exact experimental system and its limits are retained.
+  details: Agate grinding, corundum holder, air-XRPD25–775C in25C steps,5min equilibration,10–82degrees2theta,0.0263degree
+    steps and stated257s/step. About50%RH applies to the RT–50C discussion, not a
+    full controlled humidity series. No inoculum, biomass, microbial causality, controlled
+    grinding comparison or independent heating replicate count is supplied.
+  target_ids:
+  - cmmmech:rozenite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: quantity
+  area: quantity
+  topic: Phase weight fractions and transient outcome
+  outcome: supported
+  summary: Refined phase proportions are not isolated-product yield.
+  details: The starting78%melanterite/22%rozenite fractions refer to analyzed powder.
+    Figures2/3/7 support transient rozenite, persistence at75C and loss by100C. No
+    recovery percentage, isolated mass or kinetic rate is inferred; exact high-temperature
+    thresholds are protocol-specific.
+  target_ids:
+  - cmmmech:rozenite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: limits
+  area: evidence
+  topic: Interpreted steps and contrasting measurement protocols
+  outcome: supported
+  summary: Measured phase tracking remains separate from atomic interpretation.
+  details: Grinding origin is proposed using reported mine absence. Water-ligand replacement
+    and hydrogen-bond rearrangement are inferred structural explanations, not direct
+    stepwise observations. Separate13mg nitrogen TG/DTA at10C/min gives roughly70C
+    event versus50C XRPD completion. Infrared pellet/powder/crystal arrangements have
+    saturation and pellet effects. The source other-phase75/100C onset wording does
+    not change the shared rozenite endpoint.
+  target_ids:
+  - cmmmech:rozenite
+  evidence_ids:
+  - owner
+  - primary
+  - search
+- assessment_id: criticality
+  area: scope
+  topic: Criticality, identifiers and deployment boundary
+  outcome: supported
+  summary: No unsupported jurisdictional criticality or deployment claim is present.
+  details: Neither mineral inherits a constituent element criticality status. No criticality
+    assertion requiring jurisdiction/list/edition is made, no taxon/strain ID is invented
+    and no laboratory result is promoted to industrial deployment.
+  target_ids:
+  - cmmmech:rozenite
+  evidence_ids:
+  - owner
+  - ima
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Exact inputs, immutable history and checks
+  outcome: supported
+  summary: Current owner and authentic CREATE/EDIT provenance are traceable.
+  details: Native inspect binds exact maintained record, canonical history and dossier
+    inputs at trusted base9272005a590c9fa1e5fbb75b30f914ce38c3924a. Actual inline
+    and sidecar events are distinct and honest. Completed coordinator gates are checked
+    through actual receipt and log; whole-corpus structured review checking follows
+    final save.
+  target_ids:
+  - cmmmech:rozenite
+  evidence_ids:
+  - owner
+  - dossier
+  - named
+  - batch
+  - history0
+findings: []
+actions: []
+limitations:
+- No independent raw-pattern Rietveld refinement or reconstruction of individual atomic
+  steps was performed.
+- Original article announces no separate supplement, but MDPI live landing was429;
+  exhaustive live supplement/raw-pattern inventory is not claimed.
+- Protocol-specific natural mixed powder experiment supplies no universal stability
+  boundary, microbial mechanism, isolated recovery yield or industrial deployment.
+- Later rozenite2023 structural study and Jani2015 humidity study surfaced as future
+  context; originals were not newly adopted in this bounded review.
+notes:
+- Shared source acquisition is disclosed; original text, claim-bearing graphics and
+  authority passages were assessed independently after native target inspection. Reviewer
+  made no sulfate owner/history edits.
+- Originals and raw working evidence remain outside Git; committed review is an evidence-linked
+  summary.
+- Final batch execution is by coordinator; this reviewer verified actual terminal
+  receipt, retained log and target input hash rather than claiming independent duplicate
+  suite execution.
+```

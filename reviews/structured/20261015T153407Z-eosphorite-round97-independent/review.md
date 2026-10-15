@@ -1,0 +1,501 @@
+# Independent scientific review of Eosphorite
+
+- Review: 20261015T153407Z-eosphorite-round97-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T15:16:05.815953Z
+- Finished UTC: 2026-10-15T15:34:07.641121Z
+- Reviewer: codex /root/round97_sulfates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of the distinct Mn-dominant mineral and specimen-specific 20 K neutron structure. Corrected older hydrogen assignment, calculated water, one-crystal sampling, fluorine and label ambiguity are preserved; no corrective owner finding.
+
+## Scope And Provenance
+
+Full exact assigned owner/history/dossier and all accepted primary sources with bounded correction searches.
+
+Selection: Root-assigned independent scientific review of each newly curated phosphate record.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9272005a590c9fa1e5fbb75b30f914ce38c3924a.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:eosphorite | data/records/eosphorite.yaml | maintained | Eosphorite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent primary evidence and identity assessment | passed | True | cmmmech:eosphorite | Full originals, relevant figures/tables/deposit and authority rows independently inspected. |
+| Independent affected-file validation | passed | True | cmmmech:eosphorite | Actual named validation1/0 on this frozen owner. |
+| Completed coordinator batch command 1 | passed | True | cmmmech:eosphorite | Actual terminal result and target record binding independently verified; reviewed history/dossier hashes remain unchanged. |
+| Completed coordinator batch command 2 | passed | True | cmmmech:eosphorite | Actual terminal result and target record binding independently verified; reviewed history/dossier hashes remain unchanged. |
+| Completed coordinator batch command 3 | passed | True | cmmmech:eosphorite | Actual terminal result and target record binding independently verified; reviewed history/dossier hashes remain unchanged. |
+| Completed coordinator batch command 4 | passed | True | cmmmech:eosphorite | Actual terminal result and target record binding independently verified; reviewed history/dossier hashes remain unchanged. |
+
+## Scientific And Domain Assessments
+
+### Mineral identity and specimen scope
+
+identity: supported. Targets: cmmmech:eosphorite.
+
+Current Mn-dominant species is correctly separated from childrenite.
+
+IMA September2026 gives Mn2+Al(PO4)(OH)2(H2O), G,1878. Neither the ideal formula nor a single natural crystal represents all compositions of the solid-solution series. No external material CURIE is invented.
+
+### One-crystal chemistry and occupancy
+
+quantity: supported. Targets: cmmmech:eosphorite.
+
+The numerical quantities retain their actual denominator.
+
+22 microprobe points are within one crystal; Mn0.940/Fe0.061 apfu uses oneP, water is calculated under anion assumptions. The refined Fe0.056(1) site fraction is distinct from bulk analysis. The main table stars F alongside stoichiometric assumptions; owner does not claim independent water/F measurement.
+
+### Hydrogen positions and contradictory legacy model
+
+evidence: supported. Targets: cmmmech:eosphorite.
+
+The stronger neutron model is adopted with relevant conflicts preserved.
+
+At20K O3 is hydroxyl, O4 has statistical hydroxyl/water configurations and mirror-related half-occupied H2 positions. No extra Mn/Fe ordering was detected for this lowFe specimen, not all eosphorites. The 1993 O3-water/O4-hydroxyl assignment and two-water printing are not silently carried forward.2013 Table5/text H1 versus H2 angle label is not imported numerically.
+
+### No mechanism from structural characterization
+
+scope: supported. Targets: cmmmech:eosphorite.
+
+The owner accurately remains an identity/structure record.
+
+No microbial taxon, extraction, biogenic formation, industrial use or mineral criticality follows from these structural experiments. Main plus deposited printout are one dataset, and1993 is a different specimen rather than replication of the2013hydrogen model.
+
+### Review independence, exact hashes and curation history
+
+provenance: supported. Targets: cmmmech:eosphorite.
+
+Frozen owner and provenance are coherent.
+
+Reviewer authored sulfate records, not these phosphate owners. Canonical and inline CREATE events agree; no owner/history edits occurred during this independent review. Baseline source investigation is scoped and the independent named checks passed. All four coordinator batch commands completed successfully; terminal receipt/log and target record binding were independently verified, with unchanged review input hashes.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/eosphorite.yaml; Complete frozen owner independently read after inspect before assessment; local artifact /private/tmp/CMMMech-expansion-round97-20261015/data/records/eosphorite.yaml | supports | Exact scientific and provenance fields assessed; reviewer did not author or edit this owner. |
+| history | history/records/eosphorite/2026-10-15T151234Z-codex-a11c19.yaml; Complete canonical CREATE, inline CREATE and history_ref; local artifact /private/tmp/CMMMech-expansion-round97-20261015/history/records/eosphorite/2026-10-15T151234Z-codex-a11c19.yaml | supports | Actual codex/GPT-6 authorship, timestamps and described scope agree; no invented earlier curation. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September2026 status definitionsPDF1 and exact rowPDF63 independently read/visually checked; local artifact /private/tmp/cmm-round97-phosphates-research/ima2026.pdf | supports | Current exact species formula and nomenclatural status verified; no commodity or criticality designation inferred. |
+| gatta | https://doi.org/10.2138/am.2013.4438; Complete five-page original pp1297-1301; Figures1-2 and Tables1-5 checked; methods/Table1 p1298/PDF2, Table3 and Figure2 p1299/PDF3, model comparisons p1300/PDF4; local artifact /private/tmp/cmm-round97-phosphates-research/eosphorite2013.pdf | supports | Natural Chamachhu crystal split into chemical/neutron fragments; 22 WDS spots, Mn0.940 and Fe0.061 apfu on one P; calculated water. At20 K, Cmca mixed M occupancy Fe0.056(1), H2 about half occupied. C2cb trial has lower R but unphysical displacements/correlations. Failed O/F modelling and short-contact angle-label ambiguity remain bounded. |
+| deposit | https://www.rruff.net/odr/view/downloadfile/80830; Same bundle PDF6-21, printed AM-13-706 CIF; full printed fields inspected, formula/refinement/occupancy pages6-9 visually checked; local artifact /private/tmp/cmm-round97-phosphates-research/eosphorite2013.pdf | supports | F-free model formula H3.99AlFe0.06Mn0.94O7P, Cmca,20(2)K, all873reflections refined, threshold860 used for reported greater-than R; Fe0.0565(11), H2 occupancy0.507(3). Same study, not independent replication. Conventional F versus intensity threshold notation is not a contradiction. |
+| hoyos | https://doi.org/10.1180/minmag.1993.057.387.16; Complete eight-page original pp329-336; methods329-330, Table2-3 p331/PDF3, framework Figures1-2 pp332-333/PDF4-5 visually checked; optical sections and references read; local artifact /private/tmp/cmm-round97-phosphates-research/eosphorite1993.pdf | supports | Dealer-supplied Taquaral natural specimen differs from2013crystal. General Cmca model agrees, but hydroxyl/water assignment is revised by later neutron evidence. Printed two-water formula is not substituted for current authority. Optical observations do not prove laser operation or an extraction mechanism. |
+| dossier | research/sources/round97-phosphates/20261015T151528Z-source-investigation.json; Complete author source investigation and provenance hashes; primary bytes independently checked; local artifact /private/tmp/CMMMech-expansion-round97-20261015/research/sources/round97-phosphates/20261015T151528Z-source-investigation.json | context_only | Scope, acquired originals, deferred evidence and source lineage are explicit; source dossier is not an acceptance review. |
+| search | Exact DOI/title correction/erratum queries and public publisher/author metadata; Four exact queries on2026-10-15; direct DOI failures separately retained in resolve-results.json and successful metadata in authority-results.json; local artifact /private/tmp/cmm-round97-phosphates-independent/search-notices.json | context_only | No additional affecting formal notice surfaced within these routes. Known2013H-site correction and1980indexing revision are explicitly assessed. Later studies surfaced as leads only; no claim of exhaustive notice or source coverage. |
+| metadata | Primary publisher/author metadata for all three asserted DOIs; Successful Unimi2013 and Cambridge1993/1980 page opens after direct DOI tool routes failed; local artifact /private/tmp/cmm-round97-phosphates-independent/authority-results.json | context_only | DOIs match title/authors/publication year in originals and current metadata. Cambridge2018posting is not a new experiment. |
+| dedup | rg --no-ignore --hidden -L -n -i selected names and DOI patterns data/records research reviews history; Complete retained current maintained-text hits; local artifact /private/tmp/cmm-round97-phosphates-independent/dedup-current.txt | context_only | Hidden and ignored files plus relevant symlinks included; existing childrenite context and authority/search mentions do not denote duplicate selected owners. The frozen new owner is present; no machine-wide absence claim. |
+| named | uv run --locked cmmmech validate data/records/eosphorite.yaml; Actual separate one-record checks; both terminal exits0 and respective log hashes retained; local artifact /private/tmp/cmm-round97-phosphates-independent/named-validation.json | supports | One record checked, zero failed for this owner; deterministic validation does not establish scientific truth. |
+| batch | /private/tmp/cmm-round97-final-gates.json; Actual terminal four-command receipt and log; local artifact /private/tmp/cmm-round97-final-gates.json | supports | Verified exact base/worktree, four exit0, log SHA256 c77281964ad285ffee5008c717a42255f422b948372d973513341d1a08aebaf3, current record input binding and inputs_unchanged. Reviewed history/dossier bytes independently rechecked against native inspect.317 tests passed,3 skipped;471 records0failed,540 histories0errors; pages current. Root executed batch; reviewer verified receipt/log. |
+
+## Limits And Additional Notes
+
+- No raw-intensity re-refinement, independent assay replication or new experimental measurements were performed.
+- Browser DOI redirect requests failed; primary originals, successful current publisher/author metadata and exact bibliographies were inspected. Absence of additional notices is claimed only within the retained query routes.
+- No microbial causality, inherited criticality, extraction or recovery yield, or industrial deployment is asserted.
+- An initial inspect invocation supplied a history directory and failed before assessment. The successful retry used each exact regular history file and both dossier files; no failed inspection is treated as a review.
+- 1993 author-available anisotropic parameters were not obtained; 2013 supplement was inspected as archived CIF printout, not an independently retrieved native CIF.
+- Exact disputed H1/H2 angle and independent F quantification remain uncurated; scientific acceptance is limited to the claims actually retained.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T153407Z-eosphorite-round97-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Eosphorite
+started_at: '2026-10-15T15:16:05.815953Z'
+finished_at: '2026-10-15T15:34:07.641121Z'
+reviewer:
+  identity: codex /root/round97_sulfates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The phosphate agent authored this owner. I authored separate
+    coquimbite/rozenite and independently inspected the assigned owner, history, full
+    primary originals/deposit and authority without editing these phosphate records.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of the distinct Mn-dominant mineral and specimen-specific
+  20 K neutron structure. Corrected older hydrogen assignment, calculated water, one-crystal
+  sampling, fluorine and label ambiguity are preserved; no corrective owner finding.
+source:
+  git_revision: 9272005a590c9fa1e5fbb75b30f914ce38c3924a
+  state: working_tree
+  inputs:
+  - path: data/records/eosphorite.yaml
+    sha256: 34b8e2dd6b45092f8ae92161ca6ccd0455c03735585aaedbbae63854c3ed60cd
+    role: target
+  - path: history/records/eosphorite/2026-10-15T151234Z-codex-a11c19.yaml
+    sha256: b3b82c4aa98d5b9ad25555b140578878cdaf4dd745f2d9a53331856a4b59ca32
+    role: context
+  - path: research/sources/round97-phosphates/20261015T151528Z-source-investigation.json
+    sha256: 91233d83e0bb773c7ae7b455feb8e3ec4e5ceece68ed85e400e243484ed75fb1
+    role: context
+  - path: research/sources/round97-phosphates/20261015T151528Z-source-investigation.md
+    sha256: 11f3c9a3c3dc492bf97539b3e0097bb8d9fab16a197ec80225a1328ec3b7a356
+    role: context
+scope:
+  description: Full exact assigned owner/history/dossier and all accepted primary
+    sources with bounded correction searches.
+  selection: Root-assigned independent scientific review of each newly curated phosphate
+    record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:eosphorite
+targets:
+- target_id: cmmmech:eosphorite
+  path: data/records/eosphorite.yaml
+  label: Eosphorite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/eosphorite.yaml
+    role: maintained scientific record
+checks:
+- check_id: science
+  name: Independent primary evidence and identity assessment
+  required: true
+  status: passed
+  summary: Full originals, relevant figures/tables/deposit and authority rows independently
+    inspected.
+  target_ids:
+  - cmmmech:eosphorite
+  evidence_ids:
+  - ima
+  - gatta
+  - deposit
+  - hoyos
+  - search
+  - metadata
+- check_id: named
+  name: Independent affected-file validation
+  command: uv run --locked cmmmech validate data/records/eosphorite.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual named validation1/0 on this frozen owner.
+  target_ids:
+  - cmmmech:eosphorite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch command 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal result and target record binding independently verified;
+    reviewed history/dossier hashes remain unchanged.
+  target_ids:
+  - cmmmech:eosphorite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal result and target record binding independently verified;
+    reviewed history/dossier hashes remain unchanged.
+  target_ids:
+  - cmmmech:eosphorite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch command 3
+  command: uv run --locked cmmmech validate-history --base 9272005a590c9fa1e5fbb75b30f914ce38c3924a
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal result and target record binding independently verified;
+    reviewed history/dossier hashes remain unchanged.
+  target_ids:
+  - cmmmech:eosphorite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal result and target record binding independently verified;
+    reviewed history/dossier hashes remain unchanged.
+  target_ids:
+  - cmmmech:eosphorite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/eosphorite.yaml
+  locator: Complete frozen owner independently read after inspect before assessment;
+    local artifact /private/tmp/CMMMech-expansion-round97-20261015/data/records/eosphorite.yaml
+  accessed_at: '2026-10-15T15:24:45.648872Z'
+  support: supports
+  snapshot_sha256: 34b8e2dd6b45092f8ae92161ca6ccd0455c03735585aaedbbae63854c3ed60cd
+  summary: Exact scientific and provenance fields assessed; reviewer did not author
+    or edit this owner.
+- evidence_id: history
+  kind: record_content
+  reference: history/records/eosphorite/2026-10-15T151234Z-codex-a11c19.yaml
+  locator: Complete canonical CREATE, inline CREATE and history_ref; local artifact
+    /private/tmp/CMMMech-expansion-round97-20261015/history/records/eosphorite/2026-10-15T151234Z-codex-a11c19.yaml
+  accessed_at: '2026-10-15T15:24:45.648872Z'
+  support: supports
+  snapshot_sha256: b3b82c4aa98d5b9ad25555b140578878cdaf4dd745f2d9a53331856a4b59ca32
+  summary: Actual codex/GPT-6 authorship, timestamps and described scope agree; no
+    invented earlier curation.
+- evidence_id: ima
+  kind: database
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September2026 status definitionsPDF1 and exact rowPDF63 independently read/visually
+    checked; local artifact /private/tmp/cmm-round97-phosphates-research/ima2026.pdf
+  accessed_at: '2026-10-15T15:24:45.648872Z'
+  support: supports
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  summary: Current exact species formula and nomenclatural status verified; no commodity
+    or criticality designation inferred.
+- evidence_id: gatta
+  kind: primary_source
+  reference: https://doi.org/10.2138/am.2013.4438
+  locator: Complete five-page original pp1297-1301; Figures1-2 and Tables1-5 checked;
+    methods/Table1 p1298/PDF2, Table3 and Figure2 p1299/PDF3, model comparisons p1300/PDF4;
+    local artifact /private/tmp/cmm-round97-phosphates-research/eosphorite2013.pdf
+  accessed_at: '2026-10-15T15:24:45.648872Z'
+  support: supports
+  snapshot_sha256: d3f5508fcce72f646440d43eb86a48975f78968cc72352507d2d9ec32e05fb6e
+  summary: Natural Chamachhu crystal split into chemical/neutron fragments; 22 WDS
+    spots, Mn0.940 and Fe0.061 apfu on one P; calculated water. At20 K, Cmca mixed
+    M occupancy Fe0.056(1), H2 about half occupied. C2cb trial has lower R but unphysical
+    displacements/correlations. Failed O/F modelling and short-contact angle-label
+    ambiguity remain bounded.
+- evidence_id: deposit
+  kind: primary_source
+  reference: https://www.rruff.net/odr/view/downloadfile/80830
+  locator: Same bundle PDF6-21, printed AM-13-706 CIF; full printed fields inspected,
+    formula/refinement/occupancy pages6-9 visually checked; local artifact /private/tmp/cmm-round97-phosphates-research/eosphorite2013.pdf
+  accessed_at: '2026-10-15T15:24:45.648872Z'
+  support: supports
+  snapshot_sha256: d3f5508fcce72f646440d43eb86a48975f78968cc72352507d2d9ec32e05fb6e
+  summary: F-free model formula H3.99AlFe0.06Mn0.94O7P, Cmca,20(2)K, all873reflections
+    refined, threshold860 used for reported greater-than R; Fe0.0565(11), H2 occupancy0.507(3).
+    Same study, not independent replication. Conventional F versus intensity threshold
+    notation is not a contradiction.
+- evidence_id: hoyos
+  kind: primary_source
+  reference: https://doi.org/10.1180/minmag.1993.057.387.16
+  locator: Complete eight-page original pp329-336; methods329-330, Table2-3 p331/PDF3,
+    framework Figures1-2 pp332-333/PDF4-5 visually checked; optical sections and references
+    read; local artifact /private/tmp/cmm-round97-phosphates-research/eosphorite1993.pdf
+  accessed_at: '2026-10-15T15:24:45.648872Z'
+  support: supports
+  snapshot_sha256: 718e4aa0f573f3d6d5370acf6a52dc69b903a25a0feebd70845814e275691610
+  summary: Dealer-supplied Taquaral natural specimen differs from2013crystal. General
+    Cmca model agrees, but hydroxyl/water assignment is revised by later neutron evidence.
+    Printed two-water formula is not substituted for current authority. Optical observations
+    do not prove laser operation or an extraction mechanism.
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round97-phosphates/20261015T151528Z-source-investigation.json
+  locator: Complete author source investigation and provenance hashes; primary bytes
+    independently checked; local artifact /private/tmp/CMMMech-expansion-round97-20261015/research/sources/round97-phosphates/20261015T151528Z-source-investigation.json
+  accessed_at: '2026-10-15T15:24:45.648872Z'
+  support: context_only
+  snapshot_sha256: 91233d83e0bb773c7ae7b455feb8e3ec4e5ceece68ed85e400e243484ed75fb1
+  summary: Scope, acquired originals, deferred evidence and source lineage are explicit;
+    source dossier is not an acceptance review.
+- evidence_id: search
+  kind: search
+  reference: Exact DOI/title correction/erratum queries and public publisher/author
+    metadata
+  locator: Four exact queries on2026-10-15; direct DOI failures separately retained
+    in resolve-results.json and successful metadata in authority-results.json; local
+    artifact /private/tmp/cmm-round97-phosphates-independent/search-notices.json
+  accessed_at: '2026-10-15T15:24:45.648872Z'
+  support: context_only
+  snapshot_sha256: 4a3c4a52d8382b30f001bc95b11fcf7e8e91d875361345abae4b00d9d669c881
+  summary: No additional affecting formal notice surfaced within these routes. Known2013H-site
+    correction and1980indexing revision are explicitly assessed. Later studies surfaced
+    as leads only; no claim of exhaustive notice or source coverage.
+  search_scope: Exact DOI/title queries with correction/erratum, current Cambridge
+    metadata and Unimi author repository; complete accepted originals inspected locally.
+- evidence_id: metadata
+  kind: database
+  reference: Primary publisher/author metadata for all three asserted DOIs
+  locator: Successful Unimi2013 and Cambridge1993/1980 page opens after direct DOI
+    tool routes failed; local artifact /private/tmp/cmm-round97-phosphates-independent/authority-results.json
+  accessed_at: '2026-10-15T15:24:45.648872Z'
+  support: context_only
+  snapshot_sha256: 4967903e4552d223ce4310f617bdcd76e6fcf3705ac8801d01be4f8a1048c55b
+  summary: DOIs match title/authors/publication year in originals and current metadata.
+    Cambridge2018posting is not a new experiment.
+- evidence_id: dedup
+  kind: search
+  reference: rg --no-ignore --hidden -L -n -i selected names and DOI patterns data/records
+    research reviews history
+  locator: Complete retained current maintained-text hits; local artifact /private/tmp/cmm-round97-phosphates-independent/dedup-current.txt
+  accessed_at: '2026-10-15T15:24:45.648872Z'
+  support: context_only
+  snapshot_sha256: 4d9496644552b4157ee9df91a65360825b04072e3b3778b77c8b1f64d67d7822
+  summary: Hidden and ignored files plus relevant symlinks included; existing childrenite
+    context and authority/search mentions do not denote duplicate selected owners.
+    The frozen new owner is present; no machine-wide absence claim.
+  search_scope: WT data/records,research,reviews,history; selected names and threeDOIs;
+    binary PDFs not textsearched. Author prior-download receipt inspected as context,
+    not represented as independently rerun.
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/eosphorite.yaml
+  locator: Actual separate one-record checks; both terminal exits0 and respective
+    log hashes retained; local artifact /private/tmp/cmm-round97-phosphates-independent/named-validation.json
+  accessed_at: '2026-10-15T15:24:45.648872Z'
+  support: supports
+  snapshot_sha256: 985f7c2e9db01a915034bd8be8e18e419acba0262a7b2780faf1a3d1bd913d1c
+  summary: One record checked, zero failed for this owner; deterministic validation
+    does not establish scientific truth.
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round97-final-gates.json
+  locator: Actual terminal four-command receipt and log; local artifact /private/tmp/cmm-round97-final-gates.json
+  accessed_at: '2026-10-15T15:34:07.641121Z'
+  support: supports
+  snapshot_sha256: 7ef2eac39d3fdd22ce6960e65fce05a6f51b1e541fcd9a5b8830dfa0bdc6b8f5
+  summary: Verified exact base/worktree, four exit0, log SHA256 c77281964ad285ffee5008c717a42255f422b948372d973513341d1a08aebaf3,
+    current record input binding and inputs_unchanged. Reviewed history/dossier bytes
+    independently rechecked against native inspect.317 tests passed,3 skipped;471
+    records0failed,540 histories0errors; pages current. Root executed batch; reviewer
+    verified receipt/log.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral identity and specimen scope
+  outcome: supported
+  summary: Current Mn-dominant species is correctly separated from childrenite.
+  details: IMA September2026 gives Mn2+Al(PO4)(OH)2(H2O), G,1878. Neither the ideal
+    formula nor a single natural crystal represents all compositions of the solid-solution
+    series. No external material CURIE is invented.
+  evidence_ids:
+  - owner
+  - ima
+  - gatta
+  - hoyos
+  target_ids:
+  - cmmmech:eosphorite
+- assessment_id: quantity
+  area: quantity
+  topic: One-crystal chemistry and occupancy
+  outcome: supported
+  summary: The numerical quantities retain their actual denominator.
+  details: 22 microprobe points are within one crystal; Mn0.940/Fe0.061 apfu uses
+    oneP, water is calculated under anion assumptions. The refined Fe0.056(1) site
+    fraction is distinct from bulk analysis. The main table stars F alongside stoichiometric
+    assumptions; owner does not claim independent water/F measurement.
+  evidence_ids:
+  - owner
+  - gatta
+  - deposit
+  target_ids:
+  - cmmmech:eosphorite
+- assessment_id: model
+  area: evidence
+  topic: Hydrogen positions and contradictory legacy model
+  outcome: supported
+  summary: The stronger neutron model is adopted with relevant conflicts preserved.
+  details: At20K O3 is hydroxyl, O4 has statistical hydroxyl/water configurations
+    and mirror-related half-occupied H2 positions. No extra Mn/Fe ordering was detected
+    for this lowFe specimen, not all eosphorites. The 1993 O3-water/O4-hydroxyl assignment
+    and two-water printing are not silently carried forward.2013 Table5/text H1 versus
+    H2 angle label is not imported numerically.
+  evidence_ids:
+  - owner
+  - gatta
+  - deposit
+  - hoyos
+  target_ids:
+  - cmmmech:eosphorite
+- assessment_id: scope
+  area: scope
+  topic: No mechanism from structural characterization
+  outcome: supported
+  summary: The owner accurately remains an identity/structure record.
+  details: No microbial taxon, extraction, biogenic formation, industrial use or mineral
+    criticality follows from these structural experiments. Main plus deposited printout
+    are one dataset, and1993 is a different specimen rather than replication of the2013hydrogen
+    model.
+  evidence_ids:
+  - owner
+  - gatta
+  - deposit
+  - hoyos
+  target_ids:
+  - cmmmech:eosphorite
+- assessment_id: history
+  area: provenance
+  topic: Review independence, exact hashes and curation history
+  outcome: supported
+  summary: Frozen owner and provenance are coherent.
+  details: Reviewer authored sulfate records, not these phosphate owners. Canonical
+    and inline CREATE events agree; no owner/history edits occurred during this independent
+    review. Baseline source investigation is scoped and the independent named checks
+    passed. All four coordinator batch commands completed successfully; terminal receipt/log
+    and target record binding were independently verified, with unchanged review input
+    hashes.
+  target_ids:
+  - cmmmech:eosphorite
+  evidence_ids:
+  - history
+  - dossier
+  - named
+  - dedup
+  - search
+  - metadata
+  - batch
+findings: []
+actions: []
+limitations:
+- No raw-intensity re-refinement, independent assay replication or new experimental
+  measurements were performed.
+- Browser DOI redirect requests failed; primary originals, successful current publisher/author
+  metadata and exact bibliographies were inspected. Absence of additional notices
+  is claimed only within the retained query routes.
+- No microbial causality, inherited criticality, extraction or recovery yield, or
+  industrial deployment is asserted.
+- An initial inspect invocation supplied a history directory and failed before assessment.
+  The successful retry used each exact regular history file and both dossier files;
+  no failed inspection is treated as a review.
+- 1993 author-available anisotropic parameters were not obtained; 2013 supplement
+  was inspected as archived CIF printout, not an independently retrieved native CIF.
+- Exact disputed H1/H2 angle and independent F quantification remain uncurated; scientific
+  acceptance is limited to the claims actually retained.
+```
