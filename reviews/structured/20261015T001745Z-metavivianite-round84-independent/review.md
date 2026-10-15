@@ -1,0 +1,393 @@
+# Independent scientific review of metavivianite
+
+- Review: 20261015T001745Z-metavivianite-round84-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T00:09:31.457701Z
+- Finished UTC: 2026-10-15T00:17:45.347085Z
+- Reviewer: codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance: mixed abiotic synthesis is supported; bacterial metavivianite-like assignment remains explicitly provisional. No supported corrective defect found.
+
+## Scope And Provenance
+
+Complete maintained owner and linked CREATE session, with all accepted claims assessed against their precise source scope.
+
+Selection: Named frozen record selected after author handoff; native inspection before assessment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 57b84777066e9c0c43adcc92602dbd1021f52b48.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:metavivianite | data/records/metavivianite.yaml | maintained | Metavivianite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named validation | passed | True | cmmmech:metavivianite | Actual independent run, one record and zero failures. |
+| Actual batch gate 1 | passed | True | cmmmech:metavivianite | Terminal outcome and retained log checked; actual interval 2026-10-15T00:10:06.369132+00:00 to 2026-10-15T00:15:51.105025+00:00 |
+| Actual batch gate 2 | passed | True | cmmmech:metavivianite | Terminal outcome and retained log checked; actual interval 2026-10-15T00:15:51.105057+00:00 to 2026-10-15T00:16:02.832452+00:00 |
+| Actual batch gate 3 | passed | True | cmmmech:metavivianite | Terminal outcome and retained log checked; actual interval 2026-10-15T00:16:02.832478+00:00 to 2026-10-15T00:16:08.502535+00:00 |
+| Actual batch gate 4 | passed | True | cmmmech:metavivianite | Terminal outcome and retained log checked; actual interval 2026-10-15T00:16:08.502569+00:00 to 2026-10-15T00:16:14.599798+00:00 |
+
+## Scientific And Domain Assessments
+
+### Mineral identity and criticality boundary
+
+identity: supported. Targets: cmmmech:metavivianite.
+
+Metavivianite is an approved mixed-valence phosphate species. Historical formula and modern ideal composition are distinguished. No taxon is invented for an enrichment; no element-level criticality is inherited.
+
+### Direct synthesis versus oxidation routes
+
+evidence: supported. Targets: cmmmech:metavivianite.
+
+Recipe, timing, temperature, mixed products, unavailable pH/replication and S60/S65 discrepancy accurately constrain chemical synthesis. No quantitative mineral yield or microbial attribution is asserted.
+
+### Provisional enrichment intermediate and independent counterexample
+
+evidence: supported. Targets: cmmmech:metavivianite.
+
+Culture-associated oxidation is supported while species-level phase formation remains provisional. The later reddish mixture is not recovered metavivianite. Controls support culture/nitrate dependence without proving an exclusive enzyme pathway; Miot remains a separate context-only comparison.
+
+### History, exact bytes and offline validation
+
+provenance: supported. Targets: cmmmech:metavivianite.
+
+Native inspect captured owner and history before assessment. Reviewer did not author or edit these inputs. Named and actual batch gates pass; shared downloads do not imply replicated experiments.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/metavivianite.yaml; Complete native-inspected record; exact external/local artifact /private/tmp/CMMMech-expansion-round84-20261014/data/records/metavivianite.yaml | supports | Identity, source-specific conditions and provisional phase interpretation independently checked. |
+| history | history/records/metavivianite/2026-10-15T000832Z-codex-fec0c5.yaml; Complete CREATE sidecar; exact external/local artifact /private/tmp/CMMMech-expansion-round84-20261014/history/records/metavivianite/2026-10-15T000832Z-codex-fec0c5.yaml | supports | Actual target, actor and change agree with separate inline event. |
+| chiba | https://doi.org/10.2465/jmps.200417; Original five-page article; full scientific text and all Figures1-4/Tables1-2 inspected, graphical pages2-4; exact external/local artifact /private/tmp/cmm-round84-phosphates-research/chiba2020.pdf | supports | Direct hot-solution synthesis supports mixed metavivianite/vivianite/spheniscidite; S60/S65 source conflict retained. Dry-heating and water-aging comparisons can bypass this mineral; XANES is bulk mixed-phase evidence. |
+| erbs | https://doi.org/10.3929/ethz-a-004796330; Complete thesis acquired; selected Chapter2 printed17-38 scientific text, especially22-38, and all Figures2.1-2.10/Tables2.1-2.2 independently inspected; exact external/local artifact /private/tmp/cmm-round84-phosphates-research/eth-api-thesis.pdf | supports | Bremen enrichment, bicarbonate/phosphate/nitrate/Fe conditions, small inoculum, controls and mixed outcomes agree. FeIII spectral areas26/38 percent are not mineral phase yield or modern ideal composition. The source explicitly lacks diffraction confirmation. |
+| miot | https://doi.org/10.1111/j.1472-4669.2009.00203.x; Selected full-main-paper Methods pp374-375 and Figure2 p377 with adjacent Results; exact external/local artifact /private/tmp/cmm-round84-phosphates-research/miot2009.pdf | context_only | BoFeN1 medium and anoxic powder preparation support a scoped, separate diffraction counterexample. Four-day/one-year products do not establish metavivianite; this does not directly replicate or refute Erbs enrichment. Unavailable supplement/XAS fits are not imported. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Reused September2026 official list; named row page143 visually inspected, status definitions already checked; exact external/local artifact /private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf | supports | Current ideal formula and approved1973-049 species support identity; no elemental criticality is inherited. |
+| handbook | https://www.handbookofmineralogy.org/pdfs/metavivianite.pdf; Complete one-page entry text and graphic inspected; exact external/local artifact /private/tmp/cmm-round84-phosphates-research/metavivianite-handbook.pdf | supports | Triclinic species and historical variable formula are correctly separated from current IMA formula. |
+| dedup | local maintained roots; Exact matched-path receipt; exact external/local artifact /private/tmp/cmm-round84-metavivianite-review-dedup.txt | context_only | Only current owner/history/dossier matches in this bounded search. Hidden and ignored files included; no whole-machine absence claim. |
+| batch | /private/tmp/cmm-round84-final-gates.json; Actual terminal four-command batch receipt and bound log; exact external/local artifact /private/tmp/cmm-round84-final-gates.json | supports | All required commands exited0; record inputs stable. |
+| named | uv run --locked cmmmech validate data/records/metavivianite.yaml; Independently executed named validation; exact external/local artifact /private/tmp/cmm-round84-metavivianite-named.log | supports | One record, zero failures. |
+
+## Limits And Additional Notes
+
+- No new instrument fitting or laboratory replication performed. Mineral-specific yield, pure product and industrial recovery are not established.
+- Erbs lacks diffraction confirmation and an identified culture; source spectral areas cannot settle modern species identity.
+- Chiba S60/S65 label conflict and missing reaction pH/replication remain unresolved.
+- Miot supporting FiguresS1-S2/DataS1 were not acquired; this review accepts only main-paper XRD comparison, not supplemental fits.
+- Independent web queries on2026-10-15: exact Chiba DOI correction erratum retraction; exact Miot DOI correction retraction; Erbs metavivianite2004. Returned results had originals/related sources but no formalnotice. No date filter or exhaustive pagination; negative conclusion bounded.
+- No correction required in this scope. Future source follow-up must preserve current uncertainty, with fresh history/review if scientific bytes change.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T001745Z-metavivianite-round84-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of metavivianite
+started_at: '2026-10-15T00:09:31.457701Z'
+finished_at: '2026-10-15T00:17:45.347085Z'
+reviewer:
+  identity: codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Phosphates agent authored the record/history. Root independently
+    read original claim-bearing scientific text, inspected all Chiba figures/tables
+    and ETH chapter2 figures/tables, selected Miot XRD methods/figure and mineral
+    authorities; made no target edits. Acquisitions shared, interpretation independent.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 57b84777066e9c0c43adcc92602dbd1021f52b48
+  state: working_tree
+  inputs:
+  - path: data/records/metavivianite.yaml
+    sha256: 08f50a56a622fceb4f76c6312a05e32b57150e525bd2340baa10b75f09aad1d9
+    role: target
+  - path: history/records/metavivianite/2026-10-15T000832Z-codex-fec0c5.yaml
+    sha256: 51beb165f024845a386ce74e71822af5870e46ebcbf0fe40413f91b544ba4acf
+    role: context
+targets:
+- target_id: cmmmech:metavivianite
+  path: data/records/metavivianite.yaml
+  label: Metavivianite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/metavivianite.yaml
+    role: scientific_record
+scope:
+  description: Complete maintained owner and linked CREATE session, with all accepted
+    claims assessed against their precise source scope.
+  selection: Named frozen record selected after author handoff; native inspection
+    before assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:metavivianite
+summary: 'Qualified acceptance: mixed abiotic synthesis is supported; bacterial metavivianite-like
+  assignment remains explicitly provisional. No supported corrective defect found.'
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/metavivianite.yaml
+  locator: Complete native-inspected record; exact external/local artifact /private/tmp/CMMMech-expansion-round84-20261014/data/records/metavivianite.yaml
+  accessed_at: '2026-10-15T00:17:45.347085Z'
+  support: supports
+  summary: Identity, source-specific conditions and provisional phase interpretation
+    independently checked.
+  snapshot_sha256: 08f50a56a622fceb4f76c6312a05e32b57150e525bd2340baa10b75f09aad1d9
+- evidence_id: history
+  kind: record_content
+  reference: history/records/metavivianite/2026-10-15T000832Z-codex-fec0c5.yaml
+  locator: Complete CREATE sidecar; exact external/local artifact /private/tmp/CMMMech-expansion-round84-20261014/history/records/metavivianite/2026-10-15T000832Z-codex-fec0c5.yaml
+  accessed_at: '2026-10-15T00:17:45.347085Z'
+  support: supports
+  summary: Actual target, actor and change agree with separate inline event.
+  snapshot_sha256: 51beb165f024845a386ce74e71822af5870e46ebcbf0fe40413f91b544ba4acf
+- evidence_id: chiba
+  kind: primary_source
+  reference: https://doi.org/10.2465/jmps.200417
+  locator: Original five-page article; full scientific text and all Figures1-4/Tables1-2
+    inspected, graphical pages2-4; exact external/local artifact /private/tmp/cmm-round84-phosphates-research/chiba2020.pdf
+  accessed_at: '2026-10-15T00:17:45.347085Z'
+  support: supports
+  summary: Direct hot-solution synthesis supports mixed metavivianite/vivianite/spheniscidite;
+    S60/S65 source conflict retained. Dry-heating and water-aging comparisons can
+    bypass this mineral; XANES is bulk mixed-phase evidence.
+  snapshot_sha256: 112e385df89292ddaa7785c50a46ec33e00f1e78d6e1b89f409d820409122820
+- evidence_id: erbs
+  kind: primary_source
+  reference: https://doi.org/10.3929/ethz-a-004796330
+  locator: Complete thesis acquired; selected Chapter2 printed17-38 scientific text,
+    especially22-38, and all Figures2.1-2.10/Tables2.1-2.2 independently inspected;
+    exact external/local artifact /private/tmp/cmm-round84-phosphates-research/eth-api-thesis.pdf
+  accessed_at: '2026-10-15T00:17:45.347085Z'
+  support: supports
+  summary: Bremen enrichment, bicarbonate/phosphate/nitrate/Fe conditions, small inoculum,
+    controls and mixed outcomes agree. FeIII spectral areas26/38 percent are not mineral
+    phase yield or modern ideal composition. The source explicitly lacks diffraction
+    confirmation.
+  snapshot_sha256: 9108aafcee47f5adfaeac094a98194f21f006aee1126185984fa7244a018135d
+- evidence_id: miot
+  kind: primary_source
+  reference: https://doi.org/10.1111/j.1472-4669.2009.00203.x
+  locator: Selected full-main-paper Methods pp374-375 and Figure2 p377 with adjacent
+    Results; exact external/local artifact /private/tmp/cmm-round84-phosphates-research/miot2009.pdf
+  accessed_at: '2026-10-15T00:17:45.347085Z'
+  support: context_only
+  summary: BoFeN1 medium and anoxic powder preparation support a scoped, separate
+    diffraction counterexample. Four-day/one-year products do not establish metavivianite;
+    this does not directly replicate or refute Erbs enrichment. Unavailable supplement/XAS
+    fits are not imported.
+  snapshot_sha256: dc09378b0ca506155406e84e9bf6d31a81039589b345d92aa6b64c651f209fec
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Reused September2026 official list; named row page143 visually inspected,
+    status definitions already checked; exact external/local artifact /private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf
+  accessed_at: '2026-10-15T00:17:45.347085Z'
+  support: supports
+  summary: Current ideal formula and approved1973-049 species support identity; no
+    elemental criticality is inherited.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/metavivianite.pdf
+  locator: Complete one-page entry text and graphic inspected; exact external/local
+    artifact /private/tmp/cmm-round84-phosphates-research/metavivianite-handbook.pdf
+  accessed_at: '2026-10-15T00:17:45.347085Z'
+  support: supports
+  summary: Triclinic species and historical variable formula are correctly separated
+    from current IMA formula.
+  snapshot_sha256: 286360239761e73e755f8690ba369a5298f6f8936b7262a4b1bd30800830eef6
+- evidence_id: dedup
+  kind: search
+  reference: local maintained roots
+  locator: Exact matched-path receipt; exact external/local artifact /private/tmp/cmm-round84-metavivianite-review-dedup.txt
+  accessed_at: '2026-10-15T00:17:45.347085Z'
+  support: context_only
+  summary: Only current owner/history/dossier matches in this bounded search. Hidden
+    and ignored files included; no whole-machine absence claim.
+  snapshot_sha256: fc5fb2021362239996cb9fd2b12f2e5220962a1045456fabd6859040e3d81407
+  search_scope: rg --no-ignore --hidden --follow -l -i metavivianite|10.2465/jmps.200417|10.3929/ethz-a-004796330
+    data research reviews history .claude
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round84-final-gates.json
+  locator: Actual terminal four-command batch receipt and bound log; exact external/local
+    artifact /private/tmp/cmm-round84-final-gates.json
+  accessed_at: '2026-10-15T00:17:45.347085Z'
+  support: supports
+  summary: All required commands exited0; record inputs stable.
+  snapshot_sha256: 1ca4fa2e94577c45db1dba50d1894b3d89984bc911cfccf4fc59725ebf155eba
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/metavivianite.yaml
+  locator: Independently executed named validation; exact external/local artifact
+    /private/tmp/cmm-round84-metavivianite-named.log
+  accessed_at: '2026-10-15T00:17:45.347085Z'
+  support: supports
+  summary: One record, zero failures.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/metavivianite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual independent run, one record and zero failures.
+  target_ids:
+  - cmmmech:metavivianite
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Actual batch gate 1
+  command: just check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal outcome and retained log checked; actual interval 2026-10-15T00:10:06.369132+00:00
+    to 2026-10-15T00:15:51.105025+00:00
+  target_ids:
+  - cmmmech:metavivianite
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Actual batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal outcome and retained log checked; actual interval 2026-10-15T00:15:51.105057+00:00
+    to 2026-10-15T00:16:02.832452+00:00
+  target_ids:
+  - cmmmech:metavivianite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Actual batch gate 3
+  command: uv run --locked cmmmech validate-history --base 57b84777066e9c0c43adcc92602dbd1021f52b48
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal outcome and retained log checked; actual interval 2026-10-15T00:16:02.832478+00:00
+    to 2026-10-15T00:16:08.502535+00:00
+  target_ids:
+  - cmmmech:metavivianite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Actual batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal outcome and retained log checked; actual interval 2026-10-15T00:16:08.502569+00:00
+    to 2026-10-15T00:16:14.599798+00:00
+  target_ids:
+  - cmmmech:metavivianite
+  evidence_ids:
+  - batch
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral identity and criticality boundary
+  outcome: supported
+  summary: Metavivianite is an approved mixed-valence phosphate species. Historical
+    formula and modern ideal composition are distinguished. No taxon is invented for
+    an enrichment; no element-level criticality is inherited.
+  target_ids:
+  - cmmmech:metavivianite
+  evidence_ids:
+  - owner
+  - ima
+  - handbook
+- assessment_id: abiotic
+  area: evidence
+  topic: Direct synthesis versus oxidation routes
+  outcome: supported
+  summary: Recipe, timing, temperature, mixed products, unavailable pH/replication
+    and S60/S65 discrepancy accurately constrain chemical synthesis. No quantitative
+    mineral yield or microbial attribution is asserted.
+  target_ids:
+  - cmmmech:metavivianite
+  evidence_ids:
+  - owner
+  - chiba
+- assessment_id: microbial
+  area: evidence
+  topic: Provisional enrichment intermediate and independent counterexample
+  outcome: supported
+  summary: Culture-associated oxidation is supported while species-level phase formation
+    remains provisional. The later reddish mixture is not recovered metavivianite.
+    Controls support culture/nitrate dependence without proving an exclusive enzyme
+    pathway; Miot remains a separate context-only comparison.
+  target_ids:
+  - cmmmech:metavivianite
+  evidence_ids:
+  - owner
+  - erbs
+  - miot
+- assessment_id: provenance
+  area: provenance
+  topic: History, exact bytes and offline validation
+  outcome: supported
+  summary: Native inspect captured owner and history before assessment. Reviewer did
+    not author or edit these inputs. Named and actual batch gates pass; shared downloads
+    do not imply replicated experiments.
+  target_ids:
+  - cmmmech:metavivianite
+  evidence_ids:
+  - owner
+  - history
+  - named
+  - batch
+  - dedup
+findings: []
+actions: []
+limitations:
+- No new instrument fitting or laboratory replication performed. Mineral-specific
+  yield, pure product and industrial recovery are not established.
+- Erbs lacks diffraction confirmation and an identified culture; source spectral areas
+  cannot settle modern species identity.
+- Chiba S60/S65 label conflict and missing reaction pH/replication remain unresolved.
+- Miot supporting FiguresS1-S2/DataS1 were not acquired; this review accepts only
+  main-paper XRD comparison, not supplemental fits.
+- 'Independent web queries on2026-10-15: exact Chiba DOI correction erratum retraction;
+  exact Miot DOI correction retraction; Erbs metavivianite2004. Returned results had
+  originals/related sources but no formalnotice. No date filter or exhaustive pagination;
+  negative conclusion bounded.'
+notes:
+- No correction required in this scope. Future source follow-up must preserve current
+  uncertainty, with fresh history/review if scientific bytes change.
+```

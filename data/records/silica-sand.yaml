@@ -1,0 +1,142 @@
+id: cmmmech:silica-sand
+name: Natural silica-sand feed
+material_kind: primary_resource
+description: >-
+  Naturally occurring quartz-rich sand or disaggregated sandstone used as an
+  industrial-mineral feed, represented here by two distinct English quarry
+  samples. Yahaya's Silica 2 was a purple-red Oakamoor/Moneystone rock sample
+  disaggregated to sand-grade powder; Silica 3 was yellow, uncemented Lower
+  Greensand from Grandcourt near King's Lynn. The latter's XRD was dominated
+  by quartz with minor phases assigned as kaolinite and feldspar. These are
+  heterogeneous geological feeds, not the mineral species quartz, elemental
+  silicon, spent foundry sand or a purity-defined silica product. The two
+  samples' compositions and assay outcomes are not pooled. No constituent's
+  criticality designation is transferred to this resource.
+sources:
+- id: yahaya2012
+  title: >-
+    Yahaya, S. Bacterial removal of iron impurities to increase the quality
+    and value of industrial minerals. Newcastle University PhD thesis,
+    repository issue year 2012; cover and declaration dated September 2011.
+    Complete 297-page official PDF acquired; this claim assessment covers
+    Chapter 2 methods and Chapter 5 silica microcosms, including all its
+    figures and tables. The deposited artifact visibly retains tracked edits,
+    comments and overlapping section/figure numbers. Printed pages and figure
+    subjects below disambiguate locators; this is not a clean journal edition.
+  url: https://theses.ncl.ac.uk/jspui/handle/10443/1346
+  accessed_on: '2026-10-15'
+- id: ncbi_putrefaciens
+  title: >-
+    NCBI Taxonomy 24, Shewanella putrefaciens, current species-level record.
+    This identifier resolves the species name, not a verified genome or the
+    identity of the thesis's particular stored culture.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=24&mode=Info
+  accessed_on: '2026-10-15'
+- id: jcm_cip8040
+  title: >-
+    RIKEN JCM catalogue, Shewanella putrefaciens JCM 20190T, listing CIP 80.40
+    among equivalent type-strain collection designations. This corroborates
+    the thesis spelling CIP8040 as a culture designation; it does not verify
+    that the experimental culture was independently sequence-confirmed.
+  url: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_number?JCM=20190
+  accessed_on: '2026-10-15'
+mechanisms:
+- id: resting_shewanella_silica_sand_iron_reduction
+  name: Resting-cell-associated reduction of iron in natural silica sand
+  process: redox_transformation
+  microbial: true
+  organisms:
+  - id: NCBITaxon:24
+    label: Shewanella putrefaciens
+  description: >-
+    Washed, viable Shewanella putrefaciens cells designated CIP8040 were
+    associated with increased HCl-extractable Fe(II) in anaerobic silica-sand
+    microcosms relative to the displayed blank. This is consistent with
+    reduction of feed-associated Fe(III), with lactate supplied as an electron
+    donor. It does not establish a particular iron-mineral source, a unique
+    electron-transfer pathway, dissolved-only iron release, isolated iron
+    recovery or industrial deployment.
+  context: >-
+    The accepted core experiment used the source's Silica 3 from Grandcourt,
+    collected in July 2008; its feed identity is distinct from Oakamoor
+    Silica 2. Chapter 2 describes a nongrowth assay with washed stationary-phase
+    cells, 80 mL minimal saline medium containing 0.9% NaCl and normally
+    10 mM lactate, in sealed, sterilized bottles purged with oxygen-free N2.
+    Working pH was described as approximately 7.1-7.3, with dark incubation
+    and 60 rpm shaking. The cell-density comparison used 2.5 g Silica 3,
+    3.5 or 7 mL stock suspension and 30 degrees C; the stock concentration
+    was reported as 1.2 plus or minus 0.4 times 10^8 cells or CFU per mL,
+    not the final reactor cell density. Its figure reports standard errors
+    for three replicates. The separate AQDS comparison used 2.4 g Silica 3
+    and 4 mL stock cells at 30 degrees C, with or without the generally
+    specified 100 micromolar AQDS. These arms are not pooled as identical
+    assays. General methods describe blanks as cell-free or cell-and-donor-free
+    without clearly mapping the two formulations to every figure; therefore
+    a fully matched lactate-containing abiotic control is not assumed.
+    For Fe(II) analysis, 1 mL unfiltered sample was mixed with 1 mL 2 M HCl
+    for about 24 hours, filtered at 0.2 micrometres and analyzed using
+    1,10-phenanthroline at 510 nm. The endpoint includes acid-extractable
+    solid-associated as well as soluble Fe(II). These laboratory microcosms
+    do not establish a complete mass balance or a recovered product yield.
+  evidence:
+  - source_ref: yahaya2012
+    supports: support
+    explanation: >-
+      Chapter 2 sections 2.2.2, 2.4.3-2.4.5 and 2.5.7, printed pages 31-40
+      (PDF pages 50-59), establish the separate feeds, cell preparation and
+      extraction assay. Chapter 5 cell-density comparison, printed pages
+      110-111 (PDF pages 129-130; Figure 5.2), shows greater extractable
+      Fe(II) with 7 mL than with 3.5 mL CIP8040 suspension and a lower,
+      nonzero blank. The text reports day-one concentrations of 0.24 and
+      0.12 mmol/L respectively. These are assay concentrations, not rates
+      or percentages recovered. The differing inoculum volumes and incompletely
+      specified blank composition limit a unique causal interpretation.
+  - source_ref: yahaya2012
+    supports: partial
+    explanation: >-
+      Chapter 5 printed pages 111-115 (PDF pages 130-134), AQDS-presence
+      comparison Figure 5.3 and the AQDS/NOM/no-shuttle comparison Figure 5.5,
+      show little early AQDS benefit and only modest later differences in
+      Silica 3. The Figure 5.3 text reports 0.224 mmol/L with AQDS and
+      0.186 mmol/L without it after 15 days. This does not support a universal
+      requirement for, or large enhancement by, the added shuttle. Figure 5.4
+      is excluded from a feed-specific quantitative inference because its
+      surrounding discussion concerns Silica 3 while its caption says Silica
+      Sand 2. Proposed direct contact, pore accessibility and cell-surface
+      inhibition were not independently established by these comparisons.
+  - source_ref: yahaya2012
+    supports: partial
+    explanation: >-
+      Chapter 5 printed pages 109-110 (PDF pages 128-129), strain-screen
+      Figure 5.1, instead concerns 2.5 g Oakamoor Silica 2 with 10 mM lactate
+      and 100 micromolar AQDS at a caption-specified 20 degrees C. Its four
+      displayed curves include a much lower response for source-designated
+      S. loihica than for the other tested cultures. This separate screen
+      cannot establish identical behavior across strains or be transferred
+      quantitatively to the Grandcourt 30-degree-C experiment. The generic
+      culture list is not used to invent an additional tested silica strain.
+  - source_ref: yahaya2012
+    supports: partial
+    explanation: >-
+      Chapter 5 printed pages 121-126 (PDF pages 140-145), Figures 5.10-5.15
+      and Tables 5.1-5.2, constrain the mineralogical interpretation. Before/
+      after XRD of Silica 3 did not show an obvious new crystalline product;
+      FTIR changes also occurred in the blank. Local EDX lists Fe in the
+      blank but not the biotreated table, without a detection limit or bulk
+      recovery balance. This is not complete iron removal. SEM images show
+      surface differences but do not identify a uniquely dissolved iron phase.
+      The displayed Mossbauer spectrum is of untreated Silica 3 only, not a
+      measured before/after oxidation-state conversion. None of these
+      observations establishes purified silica quality or a specific genetic
+      mechanism. The deposited document's editorial uncertainties further
+      warrant preserving these narrow interpretations.
+curation_history:
+- timestamp: '2026-10-15T00:06:20.077904+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: >-
+    Curated the distinct natural silica-sand resource and a bounded primary
+    resting-cell iron-redox assay, preserving quarry-specific conditions,
+    extraction endpoint, controls, null effects and deposited-source limits.
+history_refs:
+- history/records/silica-sand/2026-10-15T000631Z-codex-5ebae5.yaml

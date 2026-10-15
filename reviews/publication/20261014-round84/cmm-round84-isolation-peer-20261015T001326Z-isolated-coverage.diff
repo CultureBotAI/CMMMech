@@ -1,0 +1,11 @@
+--- /private/tmp/cmm-round83-isolated-coverage.py
++++ /private/tmp/cmm-round84-isolated-coverage.py
+@@ -37,7 +37,7 @@
+  p=subprocess.run(['git','-C',str(root),'cat-file','-t',rev],capture_output=True,text=True)
+  base_checks.append({'revision':rev,'available_commit':p.returncode==0 and p.stdout.strip()=='commit'})
+ result={'recorded_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'root':str(root),'record_count':len(records),'history_count':len(histories),'structured_review_count':len(reviews),'review_base_count':len(bases),'bases':base_checks,'covered_records':sum(bool(x['matching_scientific_reviews']) for x in coverage),'records':coverage,'scope':'Hidden/ignored-inclusive filesystem enumeration follows relevant symlinks with cycle prevention. Current record ID, target path, reviewed target scope and exact SHA256 must match completed positive scientific reviews; context-only successors cannot substitute. This supplements the canonical review checker.'}
+-expected=json.loads(Path('/private/tmp/cmm-round83-helper-config.json').read_text())['counts']
++expected=json.loads(Path('/private/tmp/cmm-round84-helper-config.json').read_text())['counts']
+ result['passed']=all(result[k]==v for k,v in expected.items()) and all(b['available_commit'] for b in base_checks) and all(x['matching_scientific_reviews'] for x in coverage)
+ output=Path(args.output)
+ if output.exists():raise SystemExit('Refusing to overwrite coverage receipt: '+str(output))
