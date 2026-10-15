@@ -1,0 +1,330 @@
+schema_version: 1.0.0
+review_id: 20261015T162817Z-szomolnokite-round98-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Szomolnokite
+started_at: '2026-10-15T16:20:16.175247Z'
+finished_at: '2026-10-15T16:28:17.471140Z'
+reviewer:
+  identity: codex /root/round98_resources
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The sulfate curator authored this record. I authored the separate
+    ponded-coal-ash resource owner, independently read the exact sulfate inputs and
+    primary evidence, and made no sulfate record/history edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of current mineral identity and source-scoped abiotic
+  transient-phase behavior. Experimental uncertainty, source conflicts and missing
+  validation/scale evidence are retained; no corrective owner finding.
+source:
+  git_revision: 56be9949049d47fc9e065b8c016e25bc247752e6
+  state: working_tree
+  inputs:
+  - path: data/records/szomolnokite.yaml
+    sha256: a7c9be09fd8e8cb544ca1e8251205ac1c085ef1fa62194e9009b0633543b7f59
+    role: target
+  - path: history/records/szomolnokite/2026-10-15T161635Z-codex-2c23f0.yaml
+    sha256: 6de7316e1755a0d6776d13822ceda783da434d321dc233d29e11ec076afaecda
+    role: context
+  - path: research/sources/round98-sulfates/20261015T161746Z-source-investigation.md
+    sha256: 7a1fb8ba39085f9e727b63f695f5178f00573dc0929bf6eb055dcc70524c36ec
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire exact assigned owner/history, full primary original and relevant
+    figures/tables, current nomenclature and bounded notice/dedup checks.
+  selection: Parent-assigned independent per-record review after curator freeze.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:szomolnokite
+targets:
+- target_id: cmmmech:szomolnokite
+  path: data/records/szomolnokite.yaml
+  label: Szomolnokite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/szomolnokite.yaml
+    role: maintained_record
+checks:
+- check_id: science
+  name: Independent original evidence and authority assessment
+  required: true
+  status: passed
+  summary: Original methods, results, claim-bearing graphics and current authority/nomenclature
+    checked against the frozen target; source limitations retained.
+  target_ids:
+  - cmmmech:szomolnokite
+  evidence_ids:
+  - primary
+  - ima
+  - search
+- check_id: named
+  name: Independent named strict validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/szomolnokite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: One record checked; zero failed, independently executed on frozen target.
+  target_ids:
+  - cmmmech:szomolnokite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch check 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual completed coordinator receipt, retained log hash and unchanged
+    target input; not a claimed independent duplicate execution.
+  target_ids:
+  - cmmmech:szomolnokite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch check 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual completed coordinator receipt, retained log hash and unchanged
+    target input; not a claimed independent duplicate execution.
+  target_ids:
+  - cmmmech:szomolnokite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch check 3
+  command: uv run --locked cmmmech validate-history --base 56be9949049d47fc9e065b8c016e25bc247752e6
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual completed coordinator receipt, retained log hash and unchanged
+    target input; not a claimed independent duplicate execution.
+  target_ids:
+  - cmmmech:szomolnokite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch check 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual completed coordinator receipt, retained log hash and unchanged
+    target input; not a claimed independent duplicate execution.
+  target_ids:
+  - cmmmech:szomolnokite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/szomolnokite.yaml
+  locator: Complete exact maintained owner captured by native inspect before assessment.
+  accessed_at: '2026-10-15T16:28:17.471140Z'
+  support: supports
+  summary: Identity, source-scoped mechanism, quantitative limits and provenance inspected.
+  snapshot_sha256: a7c9be09fd8e8cb544ca1e8251205ac1c085ef1fa62194e9009b0633543b7f59
+- evidence_id: history
+  kind: record_content
+  reference: history/records/szomolnokite/2026-10-15T161635Z-codex-2c23f0.yaml
+  locator: Complete canonical CREATE plus separate inline event/history_refs.
+  accessed_at: '2026-10-15T16:28:17.471140Z'
+  support: supports
+  summary: Actual codex/GPT-6 actor, target, time and described work agree; immutable
+    existing history is not rewritten.
+  snapshot_sha256: 6de7316e1755a0d6776d13822ceda783da434d321dc233d29e11ec076afaecda
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions pages1–2 and exact species row PDFpage210 independently verified
+    in official web reader and local rendered page.
+  accessed_at: '2026-10-15T16:28:17.471140Z'
+  support: supports
+  summary: Dated accepted species, formula and G/Rd status checked; historical year/special
+    procedure is not a new-mineral accession.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: search
+  kind: search
+  reference: Independent bounded notices, nomenclature and related-source investigation
+  locator: /private/tmp/cmm-round98-sulfates-independent/search-observations.json;
+    hidden/ignored/followed maintained and cited raw roots in dedup.json.
+  accessed_at: '2026-10-15T16:28:17.471140Z'
+  support: context_only
+  summary: No affecting notice surfaced in returned searches. Newsletter52 corrigendum
+    corrects Petrovite only; source limitations not erased.
+  search_scope: 'Queries: "10.2138/am.2009.3179" correction erratum; "10.3390/min11040392"
+    correction retraction; paracoquimbite "19-F" IMA; szomolnokite melanterite dehydration
+    "75" "100"; first returned web sets on 2026-10-15, no date/domain filters or exhaustive
+    pagination. Independent rg --no-ignore --hidden --follow across records, research,
+    reviews, history and cited round95/96/97/98 sulfate raw directories; exact command/results
+    in dedup.json.'
+  snapshot_sha256: 84ddb8fa9f67c9bf8ac4501ac183a040f69aafe80032d6ead8b5150c0839dce8
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/szomolnokite.yaml
+  locator: /private/tmp/cmm-round98-sulfates-independent/szomolnokite-validation.log
+  accessed_at: '2026-10-15T16:28:17.471140Z'
+  support: supports
+  summary: Independent strict validation passed; this does not establish scientific
+    correctness.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round98-final-gates.json
+  locator: Completed coordinator receipt and retained log /private/tmp/cmm-round98-final-gates.log
+    SHA256 3cbfb275299b89e9ed4f64d2c4ddc456d383da3bbecc7145ca7600a532ec4bbe
+  accessed_at: '2026-10-15T16:28:17.471140Z'
+  support: supports
+  summary: Exact base, command exits, input-map identity and actual log hash verified;
+    whole-corpus scientific-review check follows review saving.
+  snapshot_sha256: d75dfd3bf78265dd50a250045bc62898f2680e05a2b44c19235c1674b7b2909d
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round98-sulfates/20261015T161746Z-source-investigation.md
+  locator: Paired source investigation with raw-file acquisition receipts and deferred
+    evidence.
+  accessed_at: '2026-10-15T16:28:17.471140Z'
+  support: context_only
+  summary: Source acquisition/experiment lineage understood independently; dossier
+    is not accepted as a substitute for original reading.
+  snapshot_sha256: 7a1fb8ba39085f9e727b63f695f5178f00573dc0929bf6eb055dcc70524c36ec
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/min11040392
+  locator: Complete15-page original read; Methods p3, Table1 p4, Figures2–3 pp5–6,
+    Figure7 p9, Figures8–9 and discussion pp10–12 checked; independent renders in
+    this review directory.
+  accessed_at: '2026-10-15T16:28:17.471140Z'
+  support: supports
+  summary: Natural melanterite-rich powder gives transient szomolnokite; source onset/disappearance
+    disagreements and air-versus-nitrogen conditions retained.
+  snapshot_sha256: 8ce0f570ecdcbc11b3854a4ba1bbdbfef1b534a5a34ba6336e785881d5e52c14
+- evidence_id: handbook
+  kind: database
+  reference: https://handbookofmineralogy.org/pdfs/szomolnokite.pdf
+  locator: Complete one-page version1 entry; formula/crystal data and synthetic measurement
+    qualifiers.
+  accessed_at: '2026-10-15T16:28:17.471140Z'
+  support: supports
+  summary: Monoclinic ferrous monohydrate is distinct from rozenite and melanterite;
+    synthetic diffraction does not become natural-sample chemistry.
+  snapshot_sha256: eb5e76cd9ff922d3257ec27c6a05744e9255b49ac25bdd27fc0e612d93fdc6fb
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral versus specimen and shared experiment
+  outcome: supported
+  summary: Distinct ferrous sulfate monohydrate is grounded accurately.
+  details: IMA G1891; idealFe(II)(SO4)·H2O. Experimental starting powder is78wt%melanterite/22wt%rozenite,
+    not pure szomolnokite. Same2021original already informs rozenite; separate owner
+    is not independent replication. No materialCURIE invented.
+  target_ids:
+  - cmmmech:szomolnokite
+  evidence_ids:
+  - owner
+  - primary
+  - ima
+  - handbook
+- assessment_id: protocol
+  area: scope
+  topic: Abiotic experimental conditions and controls
+  outcome: supported
+  summary: The stated protocol and missing controls/replication remain explicit.
+  details: Agate grinding, corundum holder, air-XRPD25–775°C/25°Csteps/5min equilibration,10–82°2theta,0.0263°steps,
+    stated257s/step. RH≈50% applies to early interval, not complete controlled humidity.
+    No inoculum or microbial cause. Separate13mg nitrogen10°C/min TG/DTA is not the
+    airXRPD experiment.
+  target_ids:
+  - cmmmech:szomolnokite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: outcome
+  area: quantity
+  topic: Phase assignment and threshold limits
+  outcome: supported
+  summary: Source-supported transient diffraction behavior is correctly qualified.
+  details: Weak broadened100°Cszomolnokite peaks, declining Figure7fraction and onlyFeOHSO4identified200°C
+    are supported.75/100°Conset and100–150/200°Cdisappearance wording conflicts remain.
+    Phase fractions/mass loss are not isolated-product recovery; no universal stability
+    threshold inferred.
+  target_ids:
+  - cmmmech:szomolnokite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: cause
+  area: evidence
+  topic: Oxidation interpretation and contrasting aliquot
+  outcome: supported
+  summary: The record distinguishes observed phases from a proven pathway.
+  details: Atmospheric-oxygen oxidation is proposed;300°Cnitrogen aliquot still gives
+    szomolnokite+FeOHSO4. The qualitative comparison does not quantifyO2uptake. Alternative
+    anhydrousFeSO4route was not observed in the chosen natural specimen. KBrpellet
+    and detector-saturation limits remain.
+  target_ids:
+  - cmmmech:szomolnokite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: criticality
+  area: scope
+  topic: Criticality, organisms and scale
+  outcome: supported
+  summary: No unsupported criticality or deployment claim is present.
+  details: Criticality is unrecorded, not declared absent; no constituent designation
+    inherited. Abiotic mechanism has microbialfalse and no organismIDs. Laboratory
+    specimen/synthesis is not industry deployment or metal recovery.
+  target_ids:
+  - cmmmech:szomolnokite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Exact inputs and truthful history
+  outcome: supported
+  summary: Frozen maintained owner and CREATE provenance are auditable.
+  details: Nativeinspect source hashes checked against current bytes at trustedbase.
+    Independent review author curated separate ponded-ash owner only. Inline and canonicalCREATE
+    are distinct. Completed root batch receipt/log checked; reviewchecker follows
+    saving.
+  target_ids:
+  - cmmmech:szomolnokite
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- No raw-pattern re-refinement or direct atomic-mechanism reconstruction; the source-assigned
+  phases and explicit limits are assessed.
+- 2021original announces no separate supplement; an exhaustive live inventory/raw
+  diffraction archive was not established.
+- One natural mixed powder and protocol-dependent endpoints cannot establish universal
+  stability, microbial causation, isolated recovery or deployment.
+notes:
+- Shared acquisition is disclosed; originals and authorities were independently inspected
+  after native target capture. This reviewer made no sulfate owner/history edits.
+- Raw source artifacts stay outside Git; the review persists evidence-linked assessment
+  rather than copyrighted originals.
+- Whole-corpus commands were executed by coordinator; actual completed receipt, log
+  hash and current target hashes were verified without duplicate-suite claims.

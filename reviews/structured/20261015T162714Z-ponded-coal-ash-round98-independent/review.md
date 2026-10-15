@@ -1,0 +1,534 @@
+# Independent scientific review of Ponded mixed coal ash
+
+- Review: 20261015T162714Z-ponded-coal-ash-round98-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T16:27:14.037752Z
+- Finished UTC: 2026-10-15T16:27:14.059465Z
+- Reviewer: codex /root/round98_phosphates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of distinct ponded mixed coal ash with laboratory culture-associated metal mobilization. Missing causal controls, unresolved percentage denominator and model/source conflicts remain explicit; no corrective owner finding.
+
+## Scope And Provenance
+
+Complete exact assigned owner/history/dossier, full accepted primary original and taxon/culture authority; final-byte assessment follows earlier independently inspected source material.
+
+Selection: Root-assigned independent scientific review of the new mixed-coal-ash secondary-resource record.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 56be9949049d47fc9e065b8c016e25bc247752e6.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:ponded-coal-ash | data/records/ponded-coal-ash.yaml | maintained | Ponded mixed coal ash |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent full primary evidence and identity assessment | passed | True | cmmmech:ponded-coal-ash | Complete original and all figures/tables independently assessed; taxon/culture scopes and bounded notice searches verified. |
+| Independent affected-file validation | passed | True | cmmmech:ponded-coal-ash | Actual one-record validation passed for the frozen owner. |
+| Completed coordinator batch command 1 | passed | True | cmmmech:ponded-coal-ash | Actual terminal result, log digest and frozen owner/history/dossier bindings independently verified. |
+| Completed coordinator batch command 2 | passed | True | cmmmech:ponded-coal-ash | Actual terminal result, log digest and frozen owner/history/dossier bindings independently verified. |
+| Completed coordinator batch command 3 | passed | True | cmmmech:ponded-coal-ash | Actual terminal result, log digest and frozen owner/history/dossier bindings independently verified. |
+| Completed coordinator batch command 4 | passed | True | cmmmech:ponded-coal-ash | Actual terminal result, log digest and frozen owner/history/dossier bindings independently verified. |
+
+## Scientific And Domain Assessments
+
+### Mixed secondary resource and exact source context
+
+identity: supported. Targets: cmmmech:ponded-coal-ash.
+
+Distinct mixed pond feed is correctly scoped.
+
+Section 2.2 specifies mixed fly and bottom ash from a Philippine CFB plant using imported/local coal, sampled from its pond. No plant identity, fly:bottom ratio or pond age is given. Record does not split component yields or inherit commodity/element criticality. Prior fly-ash owner has a different feed and study.
+
+### Species identifiers and source-designated cultures
+
+identity: supported. Targets: cmmmech:ponded-coal-ash.
+
+Identifiers corroborate species and catalogue labels, with strain limits retained.
+
+NCBI species 119978/930 and ATCC 35403/19377 map correctly; DSMZ provision is a paper statement and ATCC/DSM correspondences do not independently authenticate experimental stocks. The source reports cultured inocula, not dead biomass or a demonstrated separate response of either organism; mixing ratio, stock verification and organism-specific growth remain unresolved.
+
+### Chemical acid, sulfur and missing causal controls
+
+evidence: supported. Targets: cmmmech:ponded-coal-ash.
+
+Qualified culture-associated mobilization avoids unsupported microbial attribution.
+
+Source adjusts ash/medium from pH 6.5–8 to 2 with 1 M sulfuric acid before added sulfur/inoculum. All displayed runs have inoculum and sulfur. There is no matched uninoculated, acid-only or sulfur-free series and no direct sulfur balance. Final pH decline is consistent with acid leaching but does not resolve microbial sulfur oxidation or each species contribution. Measured filtered-liquor metals are not isolated product recovery.
+
+### Pretreatment, design and assay boundaries
+
+evidence: supported. Targets: cmmmech:ponded-coal-ash.
+
+Experimental context is accurately retained.
+
+105 C/24 h drying, stated #200 mesh with inconsistent 0.075-micrometre value, 10-day inoculum culture, 30 C/160 rpm, 100 mL medium in 250 mL flasks, 1–5 g ash, 1–5 mL inoculum, 1–3 g added sulfur, 121 C/15 min autoclaving, 17 Box-Behnken runs and duplicate runs, 15-day endpoint, 0.45-micrometre filtration and nitric-acid-preserved ICP-OES agree with Sections 2.2–2.5/Tables 1–2. Industrial feed origin does not establish industrial treatment.
+
+### Observed percentages, denominators and modeled optima
+
+quantity: supported. Targets: cmmmech:ponded-coal-ash.
+
+Source maxima and unresolved denominator are kept distinct.
+
+Table 3 maxima are Zn 56.69% and Cu 69.32% at run 13, Mn 70.68% at run 15, Cr 79.86% and Fe 70.74% at run 17. They are not one optimum. Initial feed digestion, leached-percent equation, blanks, raw liquor concentrations and full balance are absent; Section 3.1 total concentrations do not establish denominator validity. Figure 2/Section 3.2 pH range is 0.61–1.39 after initial chemical pH 2.
+
+### Source inconsistencies and statistical limits
+
+evidence: supported. Targets: cmmmech:ponded-coal-ash.
+
+Conflicts are preserved without asserting a validated optimum.
+
+Zn 59.69% prose conflicts with Table 3/abstract/conclusion 56.69%; modeled Zn 56.88% Table 5 conflicts with abstract 56.38%. Table 5 Zn/Mn at 1 g sulfur conflicts with conclusion general 3 g optimum. Inoculum main effects are nonsignificant; Fe/Cu model lack-of-fit p 0.0417/0.0416 contradict broad adequacy wording. Table 5 is modeled numerical optimization, without a separately described validation experiment.
+
+### Canonical history, independent review and exact validation
+
+provenance: supported. Targets: cmmmech:ponded-coal-ash.
+
+Frozen scientific and provenance bytes are coherent.
+
+Canonical/inline CREATE are distinct actual events with consistent scope and linked owner; no invented older authorship. This reviewer authored phosphate records, not this coal owner, and made no changes here. Native inspect captured exact current target/history/dossier hashes before assessment; actual named and completed coordinator gates were then independently reconciled.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/ponded-coal-ash.yaml; Complete frozen bytes independently inspected; local artifact /private/tmp/CMMMech-expansion-round98-20261015/data/records/ponded-coal-ash.yaml | supports | Exact owner and canonical CREATE assessed; reviewer authored separate phosphate records and made no edits to this owner/history. |
+| history | history/records/ponded-coal-ash/2026-10-15T161610Z-codex-6e98b8.yaml; Complete frozen bytes independently inspected; local artifact /private/tmp/CMMMech-expansion-round98-20261015/history/records/ponded-coal-ash/2026-10-15T161610Z-codex-6e98b8.yaml | supports | Exact owner and canonical CREATE assessed; reviewer authored separate phosphate records and made no edits to this owner/history. |
+| primary | https://jestec.taylors.edu.my/Special%20Issue%208_SOMCHE_2014/SOMCHE%202014_8_2015_036_045.pdf; Complete 10-page publisher original; Sections 2.1–2.5 and 3.1–3.5, Figures 1–2, Tables 1–5; all claim-bearing figures/tables visually inspected on PDF pages 2–8; local artifact /private/tmp/cmm-round98-resources-research/pangayao2015.pdf | supports | Mixed Philippine CFB pond fly/bottom ash, acidified sulfur medium with source-named mixed cultures, 15-day filtered-liquor ICP-OES experiment. Methods, observed maxima, model outputs and conflicting text were checked directly. No separate supplement is announced in the inspected original. |
+| ncbi | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=119978 ; https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930; Both retained NCBI efetch records plus independent current browser/indexed NCBI species pages; local artifact /private/tmp/cmm-round98-resources-research/ncbi-taxa.xml | supports | 119978 maps to Acidithiobacillus albertensis and 930 to Acidithiobacillus thiooxidans, both species. These identifiers do not identify the experimental stocks or prove separate causal contributions. |
+| atcc | https://www.atcc.org/products/35403 ; https://www.atcc.org/products/19377; Independent official indexed catalogue pages, strain-designation fields; local artifact /private/tmp/cmm-round98-pondash-independent/web-results.json | context_only | ATCC 35403 lists DSM 14366 under A. albertensis; ATCC 19377 lists NCIB 8343 and DSM 14887 under A. thiooxidans. Catalogue mappings corroborate labels; they do not authenticate the paper stocks. |
+| dossier | research/sources/round98-resources/20261015T161904Z-source-investigation.json; Full author dossier and acquisition/dedup/validation records inspected; local artifact /private/tmp/CMMMech-expansion-round98-20261015/research/sources/round98-resources/20261015T161904Z-source-investigation.json | context_only | Dossier preserves source access, complete original checks, narrow material scope, missing denominator/controls and deferred related lineage; it is context, not an independent scientific review. |
+| search | Exact title/author correction, erratum and retraction queries; primary publisher original and official taxonomy/culture pages; Retained actual independent browser responses and query strings; local artifact /private/tmp/cmm-round98-pondash-independent/web-results.json | context_only | No affecting formal notice surfaced in the bounded exact-name/title queries. Related 2016 dissertation metadata and 2018/2019 local-isolate studies are leads, not verified independent replication of this experiment. No DOI is asserted for the 2015 special-issue paper. |
+| dedup | rg --no-ignore --hidden --follow -n -i selected pond/mixed-ash/Pangayao identifiers data/records research reviews history; Independent full retained 94-line current maintained-text result; local artifact /private/tmp/cmm-round98-pondash-independent/dedup-current.txt | context_only | Hidden/ignored-inclusive, followed search finds this owner and prior deferred source mentions. Existing coal-fly-ash owner concerns separately collected fly ash and another experiment; no duplicate mixed pond-feed owner appears within the declared boundary. Prior raw-download search is author evidence inspected but not independently repeated. |
+| named | uv run --locked cmmmech validate data/records/ponded-coal-ash.yaml; Actual independent named check, terminal exit 0 and retained complete log; local artifact /private/tmp/cmm-round98-pondash-independent/named-validation.json | supports | One record checked, zero failed; this deterministic check does not establish scientific truth. |
+| batch | /private/tmp/cmm-round98-final-gates.json; Coordinator actual terminal four-command receipt; log and source hashes independently reconciled; local artifact /private/tmp/cmm-round98-final-gates.json | supports | All four expected commands completed exit 0 at the exact trusted base/worktree. Frozen owner binding, inputs_unchanged and current owner/history/dossier hashes verified. Root ran these gates; reviewer verified actual receipt/log, not a planned invocation. |
+
+## Limits And Additional Notes
+
+- No experimental replication, raw assay reanalysis, percent-denominator reconstruction or model refitting was performed.
+- The primary lacks matched uninoculated/acid-only/sulfur-free controls, sulfur balance, explicit percent calculation and full metal balance. Its limited mobilization observation is retained without microbial partitioning, validated optimum, isolated product or scale-up claim.
+- Catalogue correspondence does not authenticate the source stocks or their mixing ratio. NCBI identifiers are species scoped, not unique experimental-strain identifiers.
+- Direct ATCC page routes had access errors earlier; current indexed official ATCC catalogue pages and independent NCBI pages plus retained NCBI efetch XML were inspected.
+- No additional formal correction/retraction surfaced within the retained exact author/title queries. Related dissertation and local-isolate papers were not accepted as full-text independent replication; source coverage is bounded.
+- The 2015 paper reports a mesh/unit inconsistency and discordant percentage/model text. These remain source limitations explicitly reflected in the owner; no unreported corrected particle size, denominator or fitted result was substituted.
+- Actual final assessment timestamps cover this native artifact assembly and exact binding reconciliation; full-source reading and inspect occurred earlier in the same review task.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T162714Z-ponded-coal-ash-round98-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Ponded mixed coal ash
+started_at: '2026-10-15T16:27:14.037752Z'
+finished_at: '2026-10-15T16:27:14.059465Z'
+reviewer:
+  identity: codex /root/round98_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Resource agent authored this owner. I authored separate ludlamite/regerite
+    records and independently inspected the assigned coal owner, history, dossier,
+    complete primary original and identity sources without editing its scientific
+    or provenance bytes.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of distinct ponded mixed coal ash with laboratory culture-associated
+  metal mobilization. Missing causal controls, unresolved percentage denominator and
+  model/source conflicts remain explicit; no corrective owner finding.
+source:
+  git_revision: 56be9949049d47fc9e065b8c016e25bc247752e6
+  state: working_tree
+  inputs:
+  - path: data/records/ponded-coal-ash.yaml
+    sha256: 5d5712cdde4b4afd85e499953016b93b9bf64ab0d286d2f26f94020d65f08d70
+    role: target
+  - path: history/records/ponded-coal-ash/2026-10-15T161610Z-codex-6e98b8.yaml
+    sha256: da01b8d962ae9c24a410a5bcd656698d5b4d0fc48d5aa29b79bc70ffc469a1a0
+    role: context
+  - path: research/sources/round98-resources/20261015T161904Z-source-investigation.json
+    sha256: dab73d3c4afdfc0fd9cc78d8a32f0f22c7f86a6c089dae90b819d0a09aa257e2
+    role: context
+  - path: research/sources/round98-resources/20261015T161904Z-source-investigation.md
+    sha256: 70dfab7ee53ce685c9f7a570a656c83d0f23f15aaee51e3e84dcf1d63bc540aa
+    role: context
+scope:
+  description: Complete exact assigned owner/history/dossier, full accepted primary
+    original and taxon/culture authority; final-byte assessment follows earlier independently
+    inspected source material.
+  selection: Root-assigned independent scientific review of the new mixed-coal-ash
+    secondary-resource record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:ponded-coal-ash
+targets:
+- target_id: cmmmech:ponded-coal-ash
+  path: data/records/ponded-coal-ash.yaml
+  label: Ponded mixed coal ash
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/ponded-coal-ash.yaml
+    role: maintained scientific record
+checks:
+- check_id: science
+  name: Independent full primary evidence and identity assessment
+  required: true
+  status: passed
+  summary: Complete original and all figures/tables independently assessed; taxon/culture
+    scopes and bounded notice searches verified.
+  target_ids:
+  - cmmmech:ponded-coal-ash
+  evidence_ids:
+  - primary
+  - ncbi
+  - atcc
+  - search
+  - dedup
+- check_id: named
+  name: Independent affected-file validation
+  command: uv run --locked cmmmech validate data/records/ponded-coal-ash.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual one-record validation passed for the frozen owner.
+  target_ids:
+  - cmmmech:ponded-coal-ash
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch command 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal result, log digest and frozen owner/history/dossier bindings
+    independently verified.
+  target_ids:
+  - cmmmech:ponded-coal-ash
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal result, log digest and frozen owner/history/dossier bindings
+    independently verified.
+  target_ids:
+  - cmmmech:ponded-coal-ash
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch command 3
+  command: uv run --locked cmmmech validate-history --base 56be9949049d47fc9e065b8c016e25bc247752e6
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal result, log digest and frozen owner/history/dossier bindings
+    independently verified.
+  target_ids:
+  - cmmmech:ponded-coal-ash
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal result, log digest and frozen owner/history/dossier bindings
+    independently verified.
+  target_ids:
+  - cmmmech:ponded-coal-ash
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/ponded-coal-ash.yaml
+  locator: Complete frozen bytes independently inspected; local artifact /private/tmp/CMMMech-expansion-round98-20261015/data/records/ponded-coal-ash.yaml
+  accessed_at: '2026-10-15T16:27:14.049303Z'
+  support: supports
+  summary: Exact owner and canonical CREATE assessed; reviewer authored separate phosphate
+    records and made no edits to this owner/history.
+  snapshot_sha256: 5d5712cdde4b4afd85e499953016b93b9bf64ab0d286d2f26f94020d65f08d70
+- evidence_id: history
+  kind: record_content
+  reference: history/records/ponded-coal-ash/2026-10-15T161610Z-codex-6e98b8.yaml
+  locator: Complete frozen bytes independently inspected; local artifact /private/tmp/CMMMech-expansion-round98-20261015/history/records/ponded-coal-ash/2026-10-15T161610Z-codex-6e98b8.yaml
+  accessed_at: '2026-10-15T16:27:14.049303Z'
+  support: supports
+  summary: Exact owner and canonical CREATE assessed; reviewer authored separate phosphate
+    records and made no edits to this owner/history.
+  snapshot_sha256: da01b8d962ae9c24a410a5bcd656698d5b4d0fc48d5aa29b79bc70ffc469a1a0
+- evidence_id: primary
+  kind: primary_source
+  reference: https://jestec.taylors.edu.my/Special%20Issue%208_SOMCHE_2014/SOMCHE%202014_8_2015_036_045.pdf
+  locator: Complete 10-page publisher original; Sections 2.1–2.5 and 3.1–3.5, Figures
+    1–2, Tables 1–5; all claim-bearing figures/tables visually inspected on PDF pages
+    2–8; local artifact /private/tmp/cmm-round98-resources-research/pangayao2015.pdf
+  accessed_at: '2026-10-15T16:27:14.049303Z'
+  support: supports
+  summary: Mixed Philippine CFB pond fly/bottom ash, acidified sulfur medium with
+    source-named mixed cultures, 15-day filtered-liquor ICP-OES experiment. Methods,
+    observed maxima, model outputs and conflicting text were checked directly. No
+    separate supplement is announced in the inspected original.
+  snapshot_sha256: c5577283fd151ef3773c6808ae87feccdc5d6c98f6376c95362923d215e91a07
+- evidence_id: ncbi
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=119978 ;
+    https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930
+  locator: Both retained NCBI efetch records plus independent current browser/indexed
+    NCBI species pages; local artifact /private/tmp/cmm-round98-resources-research/ncbi-taxa.xml
+  accessed_at: '2026-10-15T16:27:14.049303Z'
+  support: supports
+  summary: 119978 maps to Acidithiobacillus albertensis and 930 to Acidithiobacillus
+    thiooxidans, both species. These identifiers do not identify the experimental
+    stocks or prove separate causal contributions.
+  snapshot_sha256: 7112e9d77a0205f27b26923ee2dcbc41a45a126c2415cb7d6886c21a26c4a1f7
+- evidence_id: atcc
+  kind: database
+  reference: https://www.atcc.org/products/35403 ; https://www.atcc.org/products/19377
+  locator: Independent official indexed catalogue pages, strain-designation fields;
+    local artifact /private/tmp/cmm-round98-pondash-independent/web-results.json
+  accessed_at: '2026-10-15T16:27:14.049303Z'
+  support: context_only
+  summary: ATCC 35403 lists DSM 14366 under A. albertensis; ATCC 19377 lists NCIB
+    8343 and DSM 14887 under A. thiooxidans. Catalogue mappings corroborate labels;
+    they do not authenticate the paper stocks.
+  snapshot_sha256: 6e3629e1deda98cb3511afb47c4cdb4d739f899a74df6b16fb1a23470ebe3355
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round98-resources/20261015T161904Z-source-investigation.json
+  locator: Full author dossier and acquisition/dedup/validation records inspected;
+    local artifact /private/tmp/CMMMech-expansion-round98-20261015/research/sources/round98-resources/20261015T161904Z-source-investigation.json
+  accessed_at: '2026-10-15T16:27:14.049303Z'
+  support: context_only
+  summary: Dossier preserves source access, complete original checks, narrow material
+    scope, missing denominator/controls and deferred related lineage; it is context,
+    not an independent scientific review.
+  snapshot_sha256: dab73d3c4afdfc0fd9cc78d8a32f0f22c7f86a6c089dae90b819d0a09aa257e2
+- evidence_id: search
+  kind: search
+  reference: Exact title/author correction, erratum and retraction queries; primary
+    publisher original and official taxonomy/culture pages
+  locator: Retained actual independent browser responses and query strings; local
+    artifact /private/tmp/cmm-round98-pondash-independent/web-results.json
+  accessed_at: '2026-10-15T16:27:14.049303Z'
+  support: context_only
+  summary: No affecting formal notice surfaced in the bounded exact-name/title queries.
+    Related 2016 dissertation metadata and 2018/2019 local-isolate studies are leads,
+    not verified independent replication of this experiment. No DOI is asserted for
+    the 2015 special-issue paper.
+  snapshot_sha256: 6e3629e1deda98cb3511afb47c4cdb4d739f899a74df6b16fb1a23470ebe3355
+  search_scope: Queries retained in web-results.json plus earlier same-title search;
+    only primary original and NCBI/ATCC identity evidence accepted, no exhaustive
+    notice or related-literature coverage claim.
+- evidence_id: dedup
+  kind: search
+  reference: rg --no-ignore --hidden --follow -n -i selected pond/mixed-ash/Pangayao
+    identifiers data/records research reviews history
+  locator: Independent full retained 94-line current maintained-text result; local
+    artifact /private/tmp/cmm-round98-pondash-independent/dedup-current.txt
+  accessed_at: '2026-10-15T16:27:14.049303Z'
+  support: context_only
+  summary: Hidden/ignored-inclusive, followed search finds this owner and prior deferred
+    source mentions. Existing coal-fly-ash owner concerns separately collected fly
+    ash and another experiment; no duplicate mixed pond-feed owner appears within
+    the declared boundary. Prior raw-download search is author evidence inspected
+    but not independently repeated.
+  snapshot_sha256: 2024c0f6792b2c23dd07b1506c2ecb52fd1ef14d80558d449f95894bca405b42
+  search_scope: Round98 worktree data/records, research, reviews and history; selected
+    names, source author and PDF identifier. No machine-wide or binary-PDF-text absence
+    claim.
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/ponded-coal-ash.yaml
+  locator: Actual independent named check, terminal exit 0 and retained complete log;
+    local artifact /private/tmp/cmm-round98-pondash-independent/named-validation.json
+  accessed_at: '2026-10-15T16:27:14.049303Z'
+  support: supports
+  summary: One record checked, zero failed; this deterministic check does not establish
+    scientific truth.
+  snapshot_sha256: 5e98bd553a1c26675b803a986e45deaccb3831b70a378ef98737384e175b79f0
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round98-final-gates.json
+  locator: Coordinator actual terminal four-command receipt; log and source hashes
+    independently reconciled; local artifact /private/tmp/cmm-round98-final-gates.json
+  accessed_at: '2026-10-15T16:27:14.049303Z'
+  support: supports
+  summary: All four expected commands completed exit 0 at the exact trusted base/worktree.
+    Frozen owner binding, inputs_unchanged and current owner/history/dossier hashes
+    verified. Root ran these gates; reviewer verified actual receipt/log, not a planned
+    invocation.
+  snapshot_sha256: d75dfd3bf78265dd50a250045bc62898f2680e05a2b44c19235c1674b7b2909d
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mixed secondary resource and exact source context
+  outcome: supported
+  summary: Distinct mixed pond feed is correctly scoped.
+  details: Section 2.2 specifies mixed fly and bottom ash from a Philippine CFB plant
+    using imported/local coal, sampled from its pond. No plant identity, fly:bottom
+    ratio or pond age is given. Record does not split component yields or inherit
+    commodity/element criticality. Prior fly-ash owner has a different feed and study.
+  evidence_ids:
+  - owner
+  - primary
+  - dedup
+  target_ids:
+  - cmmmech:ponded-coal-ash
+- assessment_id: organisms
+  area: identity
+  topic: Species identifiers and source-designated cultures
+  outcome: supported
+  summary: Identifiers corroborate species and catalogue labels, with strain limits
+    retained.
+  details: NCBI species 119978/930 and ATCC 35403/19377 map correctly; DSMZ provision
+    is a paper statement and ATCC/DSM correspondences do not independently authenticate
+    experimental stocks. The source reports cultured inocula, not dead biomass or
+    a demonstrated separate response of either organism; mixing ratio, stock verification
+    and organism-specific growth remain unresolved.
+  evidence_ids:
+  - owner
+  - primary
+  - ncbi
+  - atcc
+  target_ids:
+  - cmmmech:ponded-coal-ash
+- assessment_id: causality
+  area: evidence
+  topic: Chemical acid, sulfur and missing causal controls
+  outcome: supported
+  summary: Qualified culture-associated mobilization avoids unsupported microbial
+    attribution.
+  details: Source adjusts ash/medium from pH 6.5–8 to 2 with 1 M sulfuric acid before
+    added sulfur/inoculum. All displayed runs have inoculum and sulfur. There is no
+    matched uninoculated, acid-only or sulfur-free series and no direct sulfur balance.
+    Final pH decline is consistent with acid leaching but does not resolve microbial
+    sulfur oxidation or each species contribution. Measured filtered-liquor metals
+    are not isolated product recovery.
+  evidence_ids:
+  - owner
+  - primary
+  target_ids:
+  - cmmmech:ponded-coal-ash
+- assessment_id: conditions
+  area: evidence
+  topic: Pretreatment, design and assay boundaries
+  outcome: supported
+  summary: Experimental context is accurately retained.
+  details: '105 C/24 h drying, stated #200 mesh with inconsistent 0.075-micrometre
+    value, 10-day inoculum culture, 30 C/160 rpm, 100 mL medium in 250 mL flasks,
+    1–5 g ash, 1–5 mL inoculum, 1–3 g added sulfur, 121 C/15 min autoclaving, 17 Box-Behnken
+    runs and duplicate runs, 15-day endpoint, 0.45-micrometre filtration and nitric-acid-preserved
+    ICP-OES agree with Sections 2.2–2.5/Tables 1–2. Industrial feed origin does not
+    establish industrial treatment.'
+  evidence_ids:
+  - owner
+  - primary
+  target_ids:
+  - cmmmech:ponded-coal-ash
+- assessment_id: quantity
+  area: quantity
+  topic: Observed percentages, denominators and modeled optima
+  outcome: supported
+  summary: Source maxima and unresolved denominator are kept distinct.
+  details: Table 3 maxima are Zn 56.69% and Cu 69.32% at run 13, Mn 70.68% at run
+    15, Cr 79.86% and Fe 70.74% at run 17. They are not one optimum. Initial feed
+    digestion, leached-percent equation, blanks, raw liquor concentrations and full
+    balance are absent; Section 3.1 total concentrations do not establish denominator
+    validity. Figure 2/Section 3.2 pH range is 0.61–1.39 after initial chemical pH
+    2.
+  evidence_ids:
+  - owner
+  - primary
+  target_ids:
+  - cmmmech:ponded-coal-ash
+- assessment_id: conflicts
+  area: evidence
+  topic: Source inconsistencies and statistical limits
+  outcome: supported
+  summary: Conflicts are preserved without asserting a validated optimum.
+  details: Zn 59.69% prose conflicts with Table 3/abstract/conclusion 56.69%; modeled
+    Zn 56.88% Table 5 conflicts with abstract 56.38%. Table 5 Zn/Mn at 1 g sulfur
+    conflicts with conclusion general 3 g optimum. Inoculum main effects are nonsignificant;
+    Fe/Cu model lack-of-fit p 0.0417/0.0416 contradict broad adequacy wording. Table
+    5 is modeled numerical optimization, without a separately described validation
+    experiment.
+  evidence_ids:
+  - owner
+  - primary
+  target_ids:
+  - cmmmech:ponded-coal-ash
+- assessment_id: provenance
+  area: provenance
+  topic: Canonical history, independent review and exact validation
+  outcome: supported
+  summary: Frozen scientific and provenance bytes are coherent.
+  details: Canonical/inline CREATE are distinct actual events with consistent scope
+    and linked owner; no invented older authorship. This reviewer authored phosphate
+    records, not this coal owner, and made no changes here. Native inspect captured
+    exact current target/history/dossier hashes before assessment; actual named and
+    completed coordinator gates were then independently reconciled.
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - named
+  - batch
+  target_ids:
+  - cmmmech:ponded-coal-ash
+findings: []
+actions: []
+limitations:
+- No experimental replication, raw assay reanalysis, percent-denominator reconstruction
+  or model refitting was performed.
+- The primary lacks matched uninoculated/acid-only/sulfur-free controls, sulfur balance,
+  explicit percent calculation and full metal balance. Its limited mobilization observation
+  is retained without microbial partitioning, validated optimum, isolated product
+  or scale-up claim.
+- Catalogue correspondence does not authenticate the source stocks or their mixing
+  ratio. NCBI identifiers are species scoped, not unique experimental-strain identifiers.
+- Direct ATCC page routes had access errors earlier; current indexed official ATCC
+  catalogue pages and independent NCBI pages plus retained NCBI efetch XML were inspected.
+- No additional formal correction/retraction surfaced within the retained exact author/title
+  queries. Related dissertation and local-isolate papers were not accepted as full-text
+  independent replication; source coverage is bounded.
+- The 2015 paper reports a mesh/unit inconsistency and discordant percentage/model
+  text. These remain source limitations explicitly reflected in the owner; no unreported
+  corrected particle size, denominator or fitted result was substituted.
+- Actual final assessment timestamps cover this native artifact assembly and exact
+  binding reconciliation; full-source reading and inspect occurred earlier in the
+  same review task.
+```
