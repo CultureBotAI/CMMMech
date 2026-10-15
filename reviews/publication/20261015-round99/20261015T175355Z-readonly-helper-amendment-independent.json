@@ -1,0 +1,72 @@
+{
+  "review_id": "20261015T175355Z-readonly-helper-amendment-independent",
+  "kind": "readonly_hosted_helper_amendment",
+  "repository": "CultureBotAI/CMMMech",
+  "reviewed_base": "beb757591995399e079d8892e8e27f8130f6bc5c",
+  "started_at": "2026-10-15T17:53:11.895111+00:00",
+  "finished_at": "2026-10-15T17:53:55.218299+00:00",
+  "reviewer": "codex /root/round99_sulfates",
+  "model": "GPT-6",
+  "independence": "Independent of resource-agent readonly-helper adaptation; read exact original/current sources and diff, reran inspected pure tests, and checked actual committed-intent runtime review/amendment artifacts. I authored the separate independent commit-helper review, not either helper implementation.",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "findings": [],
+  "unresolved_findings": [],
+  "prior_review": {
+    "path": "reviews/publication/20261015-round99/20261015T171421Z-readonly-hosted-helper-independent.json",
+    "sha256": "dee3ce52e9628d9c63fa79edfbadf1459559a1a767cbeb1cc6eaeba6770a479e"
+  },
+  "amended_helper": {
+    "path": "/private/tmp/cmm-round99-readonly-hosted-audit.py",
+    "before_sha256": "53b239882b539b7a8611a6d2fff424c6db0541485d7efa141af0e4a03cb6f61d",
+    "after_sha256": "db39d01a26ef083951b025facce73d7d68112e3333c98f7119b31f49c183fbda",
+    "original_copy": "/private/tmp/cmm-round99-readonly-hosted-audit-before-whitespace.py"
+  },
+  "tests": {
+    "passed": true,
+    "tests_run": 19,
+    "failures": 0,
+    "errors": 0,
+    "independently_executed": true,
+    "receipt": {
+      "path": "/private/tmp/cmm-round99-readonly-amendment-independent/independent-regression.json",
+      "sha256": "5bee88bd0565a59b6edad121daffd41d67e924c83ab4111668c0b7fb3de5f0e5"
+    },
+    "log": {
+      "path": "/private/tmp/cmm-round99-readonly-amendment-independent/independent-regression.log",
+      "sha256": "82bc7b9aced31049a99df8e8a3a3be2d20415ce20aaf10bf48836ca150ac0281"
+    },
+    "test": {
+      "path": "/private/tmp/cmm-round99-resources-research/test_readonly_amendment.py",
+      "sha256": "f686ca86a82b7ce857f0e448e3e8cc48d58e3df70f8e4bfa351de01a417419b6"
+    },
+    "actual_chain": {
+      "passed": true,
+      "prior": {
+        "path": "reviews/publication/20261015-round99/20261015T172841Z-runtime-static-independent.json",
+        "sha256": "91c0d3e4a62bfcc1754c77ad90f64b889f30a45ed089aad0f433c8c60f53eb20"
+      },
+      "amendment": {
+        "path": "reviews/publication/20261015-round99/20261015T175203Z-commit-helper-amendment.json",
+        "sha256": "f09dc94772e2416a96f96c52e9ff219761f87cef1145b694a52c03433482c9d4"
+      },
+      "helper_count": 13,
+      "all_current_hashes_match": true
+    }
+  },
+  "issue": "https://github.com/CultureBotAI/CMMMech/issues/363",
+  "diff": "--- /private/tmp/cmm-round99-readonly-hosted-audit-before-whitespace.py\n+++ /private/tmp/cmm-round99-readonly-hosted-audit.py\n@@ -17,13 +17,32 @@\n  if not test:raise ValueError(message)\n def validsha(value):return isinstance(value,str) and re.fullmatch('[0-9a-f]{40}',value) is not None\n \n+def runtime_amended_hashes(op,oprel,opsha,amendment,base):\n+ # Exactly one reviewed commit.py amendment; the other twelve helpers retain original acceptance.\n+ need(len(op['helpers'])==13,'Original runtime helper inventory is not thirteen')\n+ original={item['path']:item['sha256'] for item in op['helpers']}\n+ need(len(original)==13,'Duplicate original runtime helper path')\n+ commit_path=str(T/'cmm-round99-commit.py')\n+ need(commit_path in original,'Original runtime lacks commit helper')\n+ need(amendment.get('kind')=='runtime_commit_helper_amendment' and amendment.get('reviewed_base')==base,'Wrong runtime amendment scope/base')\n+ need(amendment.get('reviewer')=='codex /root/round99_sulfates' and amendment.get('independence'),'Runtime amendment not independently authored')\n+ need(amendment.get('passed') is True and not amendment.get('unresolved_findings') and all(f.get('status')=='resolved' for f in amendment.get('findings',[])),'Runtime amendment not accepted')\n+ need(amendment.get('prior_review')=={'path':oprel,'sha256':opsha},'Runtime amendment prior review mismatch')\n+ amended=amendment['amended_helper']\n+ need(amended['path']==commit_path and amended['before_sha256']==original[commit_path],'Runtime amendment changes wrong helper or lineage')\n+ after=amended['after_sha256'];need(isinstance(after,str) and re.fullmatch('[0-9a-f]{64}',after) and after!=original[commit_path],'Invalid amended commit digest')\n+ unchanged=amendment['unchanged_helpers'];expected={p:h for p,h in original.items() if p!=commit_path}\n+ need(len(unchanged)==12 and {x['path']:x['sha256'] for x in unchanged}==expected,'Runtime amendment changes or omits another helper')\n+ need(amendment.get('tests',{}).get('passed') is True and amendment.get('issue')=='https://github.com/CultureBotAI/CMMMech/issues/363','Runtime amendment tests/issue not bound')\n+ return {**original,commit_path:after}\n+\n def main():\n  parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--pr',type=int,required=True);parser.add_argument('--head',required=True);parser.add_argument('--manual-disposition',type=Path);args=parser.parse_args()\n  need(args.pr>0 and validsha(args.head),'Actual positive PR number and exact head are required')\n  peer=T/'cmm-round99-hosted-peer.json';ensure_unoccupied(peer)\n  stamp=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'-'+uuid.uuid4().hex[:8]\n  out=T/f'cmm-round99-hosted-observation-{stamp}';out.mkdir()\n- result={'started_at':now(),'pr':args.pr,'head':args.head,'passed':False,'pending':[],'findings':[],'raw_directory':str(out),'authorship':'codex /root/round99_sulfates authored the sulfate owners in this batch, independently reviewed the vanadium owners; the coordinator mechanically adapted this read-only audit helper, which receives a separate independent helper review. Exact independent science acceptance is derived below from the committed final report; runtime helper acceptance is derived from its committed independent operational review. This hosted audit does not claim independent scientific review of my own owners or independent code review of this audit helper.','scope':'Read-only current hosted PR, complete changed-file blob comparison, exact current required CI attempt/jobs, conversation and annotations, local preflight and publication handoffs. Native queue, actual merge and postmerge verification remain future gates.'}\n+ result={'started_at':now(),'pr':args.pr,'head':args.head,'passed':False,'pending':[],'findings':[],'raw_directory':str(out),'authorship':'codex /root/round99_sulfates authored the sulfate owners in this batch, independently reviewed the vanadium owners; the coordinator mechanically adapted this read-only audit helper and the resource agent added exact commit-amendment chaining; both receive separate independent helper reviews. Exact independent science acceptance is derived below from the committed final report; runtime helper acceptance is derived from its committed independent operational review. This hosted audit does not claim independent scientific review of my own owners or independent code review of this audit helper.','scope':'Read-only current hosted PR, complete changed-file blob comparison, exact current required CI attempt/jobs, conversation and annotations, local preflight and publication handoffs. Native queue, actual merge and postmerge verification remain future gates.'}\n  initial_bindings={}\n  def track(p):\n   item=binding(p);initial_bindings[str(p)]=item['sha256'];return item\n@@ -112,11 +131,20 @@\n   need(op['passed'] and not op['unresolved_findings'] and all(x['status'] in ['resolved','rejected','accepted_risk'] for x in op['findings']),'Runtime helpers not independently accepted')\n   need('round99_vanadium' in op['reviewer'] and op.get('independence'),'Wrong independent runtime reviewer')\n   need(digest(W/oprel)==commit['hashes'][oprel],'Runtime review changed')\n+  amendments=[]\n+  for rel in commit['files']:\n+   if rel.startswith('reviews/publication/20261015-round99/') and rel.endswith('.json'):\n+    candidate=load(W/rel)\n+    if candidate.get('kind')=='runtime_commit_helper_amendment':amendments.append((rel,candidate))\n+  need(len(amendments)==1,'Missing/ambiguous commit helper amendment')\n+  amrel,amendment=amendments[0];need(digest(W/amrel)==commit['hashes'][amrel],'Runtime amendment changed')\n+  expected_helpers=runtime_amended_hashes(op,oprel,digest(W/oprel),amendment,BASE)\n   reviewed_helpers={}\n   for item in op['helpers']:\n-   hp=Path(item['path']);need(hp.parent==T and hp.name not in reviewed_helpers and digest(hp)==item['sha256'],'Runtime helper review stale/duplicate');reviewed_helpers[hp.name]=item['sha256'];track(hp)\n+   hp=Path(item['path']);expected=expected_helpers[str(hp)]\n+   need(hp.parent==T and hp.name not in reviewed_helpers and digest(hp)==expected,'Runtime helper review stale/duplicate');reviewed_helpers[hp.name]=expected;track(hp)\n   need(all(name in reviewed_helpers and reviewed_helpers[name]==value for name,value in pub.items() if name.endswith('.py')),'Published runtime helper lacks exact independent acceptance')\n-  reliance.append(track(W/oprel));result['independent_reliance']=reliance\n+  reliance.extend([track(W/oprel),track(W/amrel)]);result['independent_reliance']=reliance\n   jobs={'pr':lambda:api(f'repos/{REPO}/pulls/{PR}','pr'),'commit':lambda:api(f'repos/{REPO}/git/commits/{HEAD}','hosted-commit'),'files':lambda:pages(f'repos/{REPO}/pulls/{PR}/files?per_page=100','files'),'checks':lambda:pages(f'repos/{REPO}/commits/{HEAD}/check-runs?filter=latest&per_page=100','checks','check_runs'),'rules':lambda:api(f'repos/{REPO}/rules/branches/main','rules'),'main':lambda:api(f'repos/{REPO}/git/ref/heads/main','main')}\n   with concurrent.futures.ThreadPoolExecutor(max_workers=5) as ex:fetched={k:f.result() for k,f in {k:ex.submit(fn) for k,fn in jobs.items()}.items()}\n   pr=fetched['pr'];hc=fetched['commit'];files,filepages=fetched['files']\n",
+  "assessments": [
+    "Only a pure runtime-amendment acceptance function, the specific runtime-review reconciliation block and accurate helper-authorship text changed. Original readonly helper bytes match the original independent audit; existing hosted GET, file/blob, exact head/tree/base, CI attempt/jobs, conversations, preflight, receipt and closing revalidation code remains unchanged.",
+    "The consumer still requires exactly one current original static operational review. It additionally requires exactly one committed runtime_commit_helper_amendment; missing or ambiguous amendments fail. It checks exact committed amendment bytes and retains both review artifacts in closing input bindings. No latest-by-time or broad replacement selection exists.",
+    "The original inventory must contain thirteen unique paths including the exact commit.py path. The amendment must name the same base and independent reviewer, accepted state, original review path/hash, original commit digest, valid changed digest, passing tests and issue363. Its unchanged inventory must be exactly the other twelve original hashes; duplicates, omissions or altered entries fail.",
+    "Current helper bytes are checked against the original mapping with only commit.py replaced by the accepted amendment digest. All publication-bound runtime Python helpers must match that mapping. The actual current original audit and saved amendment were passed through the pure function, producing all thirteen matching current helper hashes.",
+    "Independently reran nineteen inspected pure AST-extracted acceptance tests covering exact pass, wrong prior path/hash/base/reviewer, missing independence, unresolved/open findings, failing tests, wrong issue, wrong helper/old hash, invalid or unchanged new digest, changed/omitted/duplicate other helpers, duplicate original inventory and unpassed amendment. All passed without main execution, Git/network calls or mutation."
+  ],
+  "limitations": [
+    "This audit covers the exact narrow readonly adaptation. It does not claim a live hosted audit or successful publication; actual PR/head, CI, preflight and closing identities remain required.",
+    "The pure-function tests do not execute the complete hosted main function. The explicit one-amendment selection, committed-byte bindings and retained gate paths were statically inspected.",
+    "The review artifacts are attestations bound by exact bytes and author identity fields, not cryptographic proof of reviewer identity. No new trust authority or broad exception list was introduced.",
+    "Any further helper changes require a new exact-byte review. Original independent audit artifacts remain immutable."
+  ]
+}

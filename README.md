@@ -8,13 +8,18 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 476 material records.
+The catalogue currently contains 481 material records.
 
-The [latest curation report](research/ingests/round98-frontier-20261015.md) links
+The [latest curation report](research/ingests/round99-frontier-20261015.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Cavansite](data/records/cavansite.yaml) | Natural-crystal thermal dehydration | Refined water occupancy, disputed hydrogen assignments and protocol dependence |
+| [Kornelite](data/records/kornelite.yaml) | Abiotic synthesis and provisional culture-associated phase labels | Variable hydration, mixed patterns and no matched sterile mineralogical control |
+| [Petroleum oily sludge](data/records/petroleum-oily-sludge.yaml) | Qualified culture-associated residual metal concentration changes | Unresolved sampled fraction, conflicting recipes and missing metal mass balance |
+| [Quenstedtite](data/records/quenstedtite.yaml) | Natural-crystal identity and structure | Variable hydration, conflicting refinement metadata and no demonstrated transformation |
+| [Roscoelite](data/records/roscoelite.yaml) | Abiotic synthesis of a diffraction-assigned mica | Mixed bulk valence, oxide inclusions and uncontrolled atmosphere |
 | [Ludlamite](data/records/ludlamite.yaml) | Qualified air-heating oxidation of natural crystals | Lower-temperature diffraction retention; unidentified ferric product at the higher setting |
 | [Paracoquimbite](data/records/paracoquimbite.yaml) | Abiotic precipitation and synthetic-crystal structure | Inaccessible supplement and phase-stability model limits; no microbial formation claim |
 | [Ponded mixed coal ash](data/records/ponded-coal-ash.yaml) | Culture-associated metal mobilization from mixed fly and bottom ash | Added acid, missing matched controls, conflicting maxima and unvalidated model optimization |

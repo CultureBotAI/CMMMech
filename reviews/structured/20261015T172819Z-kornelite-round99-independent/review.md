@@ -1,0 +1,485 @@
+# Independent scientific review of Kornelite
+
+- Review: 20261015T172819Z-kornelite-round99-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T17:18:01.908004Z
+- Finished UTC: 2026-10-15T17:28:19.545744Z
+- Reviewer: codex /root/round99_resources (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of current mineral identity and carefully scoped original evidence. Scientific uncertainty and source contradictions remain explicit; no corrective owner finding.
+
+## Scope And Provenance
+
+Entire exact owner and linked history; original claim-bearing methods, results, figures/tables, authority and bounded counterevidence checks. The thesis assessment is confined to relevant quenstedtite sections and printed CIF/checkCIF, not the entire thesis or independent structure refinement.
+
+Selection: Parent-assigned independent per-record assessment after curator freeze.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base beb757591995399e079d8892e8e27f8130f6bc5c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:kornelite | data/records/kornelite.yaml | maintained | Kornelite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent original evidence and authority assessment | passed | True | cmmmech:kornelite | Original claim-bearing methods, graphics, limitations and current identity authority checked against frozen target. |
+| Independent strict two-record validation | passed | True | cmmmech:kornelite | Independently executed; two records checked, zero failed. |
+| Completed coordinator batch check 1 | passed | True | cmmmech:kornelite | Verified completed coordinator receipt, log hash and unchanged assigned target. This is not a claimed duplicate independent execution. |
+| Completed coordinator batch check 2 | passed | True | cmmmech:kornelite | Verified completed coordinator receipt, log hash and unchanged assigned target. This is not a claimed duplicate independent execution. |
+| Completed coordinator batch check 3 | passed | True | cmmmech:kornelite | Verified completed coordinator receipt, log hash and unchanged assigned target. This is not a claimed duplicate independent execution. |
+| Completed coordinator batch check 4 | passed | True | cmmmech:kornelite | Verified completed coordinator receipt, log hash and unchanged assigned target. This is not a claimed duplicate independent execution. |
+
+## Scientific And Domain Assessments
+
+### Current mineral/hydration boundary
+
+identity: supported. Targets: cmmmech:kornelite.
+
+Identity is correctly separated from other ferric sulfates.
+
+IMA idealFe(III)2(SO4)3(H2O)6·1.75H2O, monoclinicP21/n, G1888; year is not accession. Historical7–8water formula and channel variability are preserved; no CURIE invented.
+
+### Abiotic substrate, preparation and product
+
+scope: supported. Targets: cmmmech:kornelite.
+
+Actual chemical experiment is accurately scoped.
+
+2.5g amorphous analytical-grade ferric sulfate in1.17mL water; closed75°C48h then9days; vessel opened and slowly cooled. Ferricopiapite first assignment and later kornelite do not prove a direct solid-state conversion. Unknown cooling duration/pH/yield/replication remain;35EMPspots are not35syntheses.
+
+### Model-dependent water and thermochemistry
+
+quantity: supported. Targets: cmmmech:kornelite.
+
+Quantitative uncertainty and internal source conflict are retained.
+
+SCchannel1.71(5)/1.75(5) versus powder1.55(2); TGtotal7.47/7.98 depends endpoint. Disorder vs incommensurability unresolved. Table6coefficient6.53 conflicts6.75 expected from adoptedformula/Table5; no enthalpyadopted. Figure6entropy-dependent calculated boundaries are not measured universal stability. Deposit unavailable; no raw refinementclaim.
+
+### AY5 substrate, biomass, conditions and causal limits
+
+evidence: supported. Targets: cmmmech:kornelite.
+
+Provisional culture-associated phase observation is defensible.
+
+Living AY5 in glycerol/Widdel-Bak sulfate/phosphate/reductant medium, FeSO4 supplying100mg/LFe;1L28°C100rpm25mL/minN2. Sequential reactor pHhistory and closed dark batch transfers are not independent fresh inoculations. Centrifugation13100g15min15°C plus waterwash; oxygen/dryingworkup unspecified. Fig5Aday2pH7;Fig6Aday3/4pH6;S2Aday2/4pH6.5;S3Aday1/2pH5.5 support labels only. No sterile/killedmineralogicalarm, quantitativephase/refinement/hydration/FeIIIassay; elementalEDS notspecies. The partial evidence and explicit uncertainty prevent direct biologicalprecipitation or ironrecovery inference.
+
+### Criticality and deployment boundaries
+
+scope: supported. Targets: cmmmech:kornelite.
+
+No unsupported designation or scale claim is present.
+
+Criticality is unrecorded, not asserted absent or inherited from iron. Laboratory/specimen evidence is not industrial deployment, ore/waste extraction or isolated recovery.
+
+### Exact input and actual review provenance
+
+provenance: supported. Targets: cmmmech:kornelite.
+
+Frozen owner/history and bounded validation are auditable.
+
+Nativeinspect currenthashes matched exactowner/history/dossier/schema. InlineCREATE and canonicalCREATE are distinct actual events. This reviewer authored another material, notthissulfateowner. Coordinator batchreceiptchecked without claimingindependentexecution.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/kornelite.yaml; Entire maintained record captured by native inspect. | supports | Material identity, source scope, uncertainty and provenance inspected. |
+| history | history/records/kornelite/2026-10-15T171449Z-codex-6a5cfa.yaml; Canonical CREATE and distinct inline event. | supports | Actual actor/time/target/work agree; no immutable history rewriting. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Definitions pages1–2 and species PDFpage115; official page and local rendered source independently inspected. | supports | Accepted species formula and G status checked; description year is not an accession. |
+| search | Independent bounded notice and conflicting-evidence investigation; /private/tmp/cmm-round99-resources-research/sulfate-peer-search.json and sulfate-peer-dedup.json; hidden/ignored/followed explicit roots. | context_only | No attributable affecting correction surfaced; absence is bounded to returned searches. Local dedup includes ignored files and source contexts. |
+| named | uv run --locked cmmmech validate data/records/kornelite.yaml data/records/quenstedtite.yaml; /private/tmp/cmm-round99-resources-research/sulfate-peer-validation.log | supports | Independent validation passed; not proof of scientific correctness. |
+| batch | /private/tmp/cmm-round99-final-gates.json; Completed coordinator receipt; log /private/tmp/cmm-round99-final-gates.log SHA256 6b50e673bf8464f508b0d24e93a59356c74dab8f8c082c3a5cc73c5b7c17b574 | supports | Actual required commands, successful exits, log hash and unchanged sulfate owner inputs checked. Whole-corpus review check follows saving. |
+| dossier | research/sources/round99-sulfates/20261015T171550Z-source-investigation.md; Paired dossier/acquisition receipts and source-gap dispositions. | context_only | Curator handoff is context, not a substitute for original-source inspection. |
+| primary | https://doi.org/10.2138/am.2009.3179; Complete9-page original, especially printed1621 synthesis/Table1,1622Fig1a/2,1623–1625 refined hydration/Tables2/4–6,1626–1627model limits. | supports | Chemical synthesis and diffraction support the characterized mineral; independent read of reused round98 original is disclosed. |
+| ay5 | https://doi.org/10.3390/microorganisms9122558; Original11pages; methods2.1–2.4, Figure5A(p6),6A(p7); original3-page supplement S1–S3 independently read/rendered. | partial | Mixed culture precipitates carry provisional kornelite peak labels without phase-specific chemistry or causal sterile controls. |
+| ay5_supplement | https://mdpi-res.com/d_attachment/microorganisms/microorganisms-09-02558/article_deploy/microorganisms-09-02558-s001.zip; Original supplement PDF pages2–3, FiguresS2A/S3A; zip and extracted source independently checked. | partial | Kornelite labels at specified pH/time arms support only a qualified phase association. |
+| ncbi | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=876; Live taxonomy page and retained species info snapshot. | supports | NCBITaxon876 is Desulfovibrio desulfuricans species; it does not authenticate isolate AY5. |
+
+## Limits And Additional Notes
+
+- Ackermann2009 deposit AM-09-052 was unavailable; raw detailed-coordinate reproducibility is not verified.
+- AY5 kornelite is a provisional database match in mixed patterns, not confirmed hydrated phase chemistry or a proven metabolic precipitation route. Oxygen exposure/drying and matched abiotic controls are unreported.
+- Later unlabeled patterns do not establish quantitative disappearance or absence; pH6.5 prose/peak-label tension remains.
+- No recovered iron product balance, criticality designation, microbial causal rate or industrial deployment is established.
+- Shared acquisitions are disclosed; original sources were independently inspected after native target capture. This reviewer made no sulfate owner/history edits.
+- Primary files remain outside Git; saved factual assessments do not redistribute full originals.
+- Coordinator executed whole-corpus gates; actual completed receipt/log and exact target bytes were verified. Native whole-corpus review checking follows saving, and later unrelated owner corrections require their affected rechecks.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T172819Z-kornelite-round99-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Kornelite
+started_at: '2026-10-15T17:18:01.908004Z'
+finished_at: '2026-10-15T17:28:19.545744Z'
+reviewer:
+  identity: codex /root/round99_resources
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The sulfate curator authored this owner/history. I curated the
+    separate petroleum-oily-sludge owner, independently inspected the exact sulfate
+    inputs, primary originals and authorities, and made no sulfate owner/history changes.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of current mineral identity and carefully scoped original
+  evidence. Scientific uncertainty and source contradictions remain explicit; no corrective
+  owner finding.
+source:
+  git_revision: beb757591995399e079d8892e8e27f8130f6bc5c
+  state: working_tree
+  inputs:
+  - path: data/records/kornelite.yaml
+    sha256: e07c2e47d5c1737f02e2046ec5347584a7e2cc25df530044073dfc8073d78d5d
+    role: target
+  - path: history/records/kornelite/2026-10-15T171449Z-codex-6a5cfa.yaml
+    sha256: efcb61248f1f31d71290337b527282d225b3593fc96f46e7442a261090b857a3
+    role: context
+  - path: research/sources/round99-sulfates/20261015T171550Z-source-investigation.md
+    sha256: 495d8c791d55c2444b36bebd8425dd48c636ff516f3dbf54537c205d3f1239f9
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire exact owner and linked history; original claim-bearing methods,
+    results, figures/tables, authority and bounded counterevidence checks. The thesis
+    assessment is confined to relevant quenstedtite sections and printed CIF/checkCIF,
+    not the entire thesis or independent structure refinement.
+  selection: Parent-assigned independent per-record assessment after curator freeze.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:kornelite
+targets:
+- target_id: cmmmech:kornelite
+  path: data/records/kornelite.yaml
+  label: Kornelite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/kornelite.yaml
+    role: maintained_record
+checks:
+- check_id: science
+  name: Independent original evidence and authority assessment
+  required: true
+  status: passed
+  summary: Original claim-bearing methods, graphics, limitations and current identity
+    authority checked against frozen target.
+  target_ids:
+  - cmmmech:kornelite
+  evidence_ids:
+  - primary
+  - ima
+  - search
+- check_id: named
+  name: Independent strict two-record validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/kornelite.yaml data/records/quenstedtite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Independently executed; two records checked, zero failed.
+  target_ids:
+  - cmmmech:kornelite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch check 1
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified completed coordinator receipt, log hash and unchanged assigned
+    target. This is not a claimed duplicate independent execution.
+  target_ids:
+  - cmmmech:kornelite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch check 2
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified completed coordinator receipt, log hash and unchanged assigned
+    target. This is not a claimed duplicate independent execution.
+  target_ids:
+  - cmmmech:kornelite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch check 3
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base beb757591995399e079d8892e8e27f8130f6bc5c
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified completed coordinator receipt, log hash and unchanged assigned
+    target. This is not a claimed duplicate independent execution.
+  target_ids:
+  - cmmmech:kornelite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch check 4
+  required: true
+  status: passed
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified completed coordinator receipt, log hash and unchanged assigned
+    target. This is not a claimed duplicate independent execution.
+  target_ids:
+  - cmmmech:kornelite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/kornelite.yaml
+  locator: Entire maintained record captured by native inspect.
+  accessed_at: '2026-10-15T17:28:19.545744Z'
+  support: supports
+  summary: Material identity, source scope, uncertainty and provenance inspected.
+  snapshot_sha256: e07c2e47d5c1737f02e2046ec5347584a7e2cc25df530044073dfc8073d78d5d
+- evidence_id: history
+  kind: record_content
+  reference: history/records/kornelite/2026-10-15T171449Z-codex-6a5cfa.yaml
+  locator: Canonical CREATE and distinct inline event.
+  accessed_at: '2026-10-15T17:28:19.545744Z'
+  support: supports
+  summary: Actual actor/time/target/work agree; no immutable history rewriting.
+  snapshot_sha256: efcb61248f1f31d71290337b527282d225b3593fc96f46e7442a261090b857a3
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions pages1–2 and species PDFpage115; official page and local rendered
+    source independently inspected.
+  accessed_at: '2026-10-15T17:28:19.545744Z'
+  support: supports
+  summary: Accepted species formula and G status checked; description year is not
+    an accession.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: search
+  kind: search
+  reference: Independent bounded notice and conflicting-evidence investigation
+  locator: /private/tmp/cmm-round99-resources-research/sulfate-peer-search.json and
+    sulfate-peer-dedup.json; hidden/ignored/followed explicit roots.
+  accessed_at: '2026-10-15T17:28:19.545744Z'
+  support: context_only
+  summary: No attributable affecting correction surfaced; absence is bounded to returned
+    searches. Local dedup includes ignored files and source contexts.
+  search_scope: 'Queries: "10.3390/microorganisms9122558" correction retraction kornelite;
+    "kornelite" "AY5" oxidation sterile; "Quenstedtite" "Westland" correction 2012;
+    "10.2138/am.2009.3179" erratum. First returned web sets on 2026-10-15; no filters
+    or exhaustive pagination. rg --no-ignore --hidden --follow across records/research/reviews/history
+    and round97/98/99 cited sulfate raw directories; explicit results and accessibility
+    retained.'
+  snapshot_sha256: fe6d4716da3704211ced662fbefdbceba8c440726c77b55bd7279a5ac075ecd7
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/kornelite.yaml data/records/quenstedtite.yaml
+  locator: /private/tmp/cmm-round99-resources-research/sulfate-peer-validation.log
+  accessed_at: '2026-10-15T17:28:19.545744Z'
+  support: supports
+  summary: Independent validation passed; not proof of scientific correctness.
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round99-final-gates.json
+  locator: Completed coordinator receipt; log /private/tmp/cmm-round99-final-gates.log
+    SHA256 6b50e673bf8464f508b0d24e93a59356c74dab8f8c082c3a5cc73c5b7c17b574
+  accessed_at: '2026-10-15T17:28:19.545744Z'
+  support: supports
+  summary: Actual required commands, successful exits, log hash and unchanged sulfate
+    owner inputs checked. Whole-corpus review check follows saving.
+  snapshot_sha256: 800a6c96a2a0b7b295bb6da45e37135a079eab19856f91c566fc43965ad2f390
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round99-sulfates/20261015T171550Z-source-investigation.md
+  locator: Paired dossier/acquisition receipts and source-gap dispositions.
+  accessed_at: '2026-10-15T17:28:19.545744Z'
+  support: context_only
+  summary: Curator handoff is context, not a substitute for original-source inspection.
+  snapshot_sha256: 495d8c791d55c2444b36bebd8425dd48c636ff516f3dbf54537c205d3f1239f9
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.2138/am.2009.3179
+  locator: Complete9-page original, especially printed1621 synthesis/Table1,1622Fig1a/2,1623–1625
+    refined hydration/Tables2/4–6,1626–1627model limits.
+  accessed_at: '2026-10-15T17:28:19.545744Z'
+  support: supports
+  summary: Chemical synthesis and diffraction support the characterized mineral; independent
+    read of reused round98 original is disclosed.
+  snapshot_sha256: 113a577071a54ba6504f23daa2d06fe03e7cc0158fabeba22a502ce7624c3241
+- evidence_id: ay5
+  kind: primary_source
+  reference: https://doi.org/10.3390/microorganisms9122558
+  locator: Original11pages; methods2.1–2.4, Figure5A(p6),6A(p7); original3-page supplement
+    S1–S3 independently read/rendered.
+  accessed_at: '2026-10-15T17:28:19.545744Z'
+  support: partial
+  summary: Mixed culture precipitates carry provisional kornelite peak labels without
+    phase-specific chemistry or causal sterile controls.
+  snapshot_sha256: 4d3f039c173cb8049b2c69d8cc66741caa8954f0e66c4e0820379f22dc26a788
+- evidence_id: ay5_supplement
+  kind: primary_source
+  reference: https://mdpi-res.com/d_attachment/microorganisms/microorganisms-09-02558/article_deploy/microorganisms-09-02558-s001.zip
+  locator: Original supplement PDF pages2–3, FiguresS2A/S3A; zip and extracted source
+    independently checked.
+  accessed_at: '2026-10-15T17:28:19.545744Z'
+  support: partial
+  summary: Kornelite labels at specified pH/time arms support only a qualified phase
+    association.
+  snapshot_sha256: 5041ead64a1378e94a43320ea3c668ad0b1d0753633e30513a36fbce8bda45c1
+- evidence_id: ncbi
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=876
+  locator: Live taxonomy page and retained species info snapshot.
+  accessed_at: '2026-10-15T17:28:19.545744Z'
+  support: supports
+  summary: NCBITaxon876 is Desulfovibrio desulfuricans species; it does not authenticate
+    isolate AY5.
+  snapshot_sha256: 36699a8dc21d8c8d714d8814af048e68e2a8f608f71a75a79cadfe0c6e040aff
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Current mineral/hydration boundary
+  outcome: supported
+  summary: Identity is correctly separated from other ferric sulfates.
+  details: IMA idealFe(III)2(SO4)3(H2O)6·1.75H2O, monoclinicP21/n, G1888; year is
+    not accession. Historical7–8water formula and channel variability are preserved;
+    no CURIE invented.
+  target_ids:
+  - cmmmech:kornelite
+  evidence_ids:
+  - owner
+  - ima
+  - primary
+- assessment_id: chemical
+  area: scope
+  topic: Abiotic substrate, preparation and product
+  outcome: supported
+  summary: Actual chemical experiment is accurately scoped.
+  details: 2.5g amorphous analytical-grade ferric sulfate in1.17mL water; closed75°C48h
+    then9days; vessel opened and slowly cooled. Ferricopiapite first assignment and
+    later kornelite do not prove a direct solid-state conversion. Unknown cooling
+    duration/pH/yield/replication remain;35EMPspots are not35syntheses.
+  target_ids:
+  - cmmmech:kornelite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: hydration
+  area: quantity
+  topic: Model-dependent water and thermochemistry
+  outcome: supported
+  summary: Quantitative uncertainty and internal source conflict are retained.
+  details: SCchannel1.71(5)/1.75(5) versus powder1.55(2); TGtotal7.47/7.98 depends
+    endpoint. Disorder vs incommensurability unresolved. Table6coefficient6.53 conflicts6.75
+    expected from adoptedformula/Table5; no enthalpyadopted. Figure6entropy-dependent
+    calculated boundaries are not measured universal stability. Deposit unavailable;
+    no raw refinementclaim.
+  target_ids:
+  - cmmmech:kornelite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: culture
+  area: evidence
+  topic: AY5 substrate, biomass, conditions and causal limits
+  outcome: supported
+  summary: Provisional culture-associated phase observation is defensible.
+  details: Living AY5 in glycerol/Widdel-Bak sulfate/phosphate/reductant medium, FeSO4
+    supplying100mg/LFe;1L28°C100rpm25mL/minN2. Sequential reactor pHhistory and closed
+    dark batch transfers are not independent fresh inoculations. Centrifugation13100g15min15°C
+    plus waterwash; oxygen/dryingworkup unspecified. Fig5Aday2pH7;Fig6Aday3/4pH6;S2Aday2/4pH6.5;S3Aday1/2pH5.5
+    support labels only. No sterile/killedmineralogicalarm, quantitativephase/refinement/hydration/FeIIIassay;
+    elementalEDS notspecies. The partial evidence and explicit uncertainty prevent
+    direct biologicalprecipitation or ironrecovery inference.
+  target_ids:
+  - cmmmech:kornelite
+  evidence_ids:
+  - owner
+  - ay5
+  - ay5_supplement
+  - ncbi
+- assessment_id: criticality
+  area: scope
+  topic: Criticality and deployment boundaries
+  outcome: supported
+  summary: No unsupported designation or scale claim is present.
+  details: Criticality is unrecorded, not asserted absent or inherited from iron.
+    Laboratory/specimen evidence is not industrial deployment, ore/waste extraction
+    or isolated recovery.
+  target_ids:
+  - cmmmech:kornelite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Exact input and actual review provenance
+  outcome: supported
+  summary: Frozen owner/history and bounded validation are auditable.
+  details: Nativeinspect currenthashes matched exactowner/history/dossier/schema.
+    InlineCREATE and canonicalCREATE are distinct actual events. This reviewer authored
+    another material, notthissulfateowner. Coordinator batchreceiptchecked without
+    claimingindependentexecution.
+  target_ids:
+  - cmmmech:kornelite
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- Ackermann2009 deposit AM-09-052 was unavailable; raw detailed-coordinate reproducibility
+  is not verified.
+- AY5 kornelite is a provisional database match in mixed patterns, not confirmed hydrated
+  phase chemistry or a proven metabolic precipitation route. Oxygen exposure/drying
+  and matched abiotic controls are unreported.
+- Later unlabeled patterns do not establish quantitative disappearance or absence;
+  pH6.5 prose/peak-label tension remains.
+- No recovered iron product balance, criticality designation, microbial causal rate
+  or industrial deployment is established.
+notes:
+- Shared acquisitions are disclosed; original sources were independently inspected
+  after native target capture. This reviewer made no sulfate owner/history edits.
+- Primary files remain outside Git; saved factual assessments do not redistribute
+  full originals.
+- Coordinator executed whole-corpus gates; actual completed receipt/log and exact
+  target bytes were verified. Native whole-corpus review checking follows saving,
+  and later unrelated owner corrections require their affected rechecks.
+```

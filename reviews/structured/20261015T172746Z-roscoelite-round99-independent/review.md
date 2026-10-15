@@ -1,0 +1,474 @@
+# Independent scientific review of Roscoelite
+
+- Review: 20261015T172746Z-roscoelite-round99-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T17:20:58.043643Z
+- Finished UTC: 2026-10-15T17:27:46.691769Z
+- Reviewer: codex /root/round99_sulfates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Identity and source-scoped abiotic transformation are supported with explicit measurement and transfer limits.
+
+## Scope And Provenance
+
+Entire exact maintained owner and CREATE history, claim-bearing original methods/results/graphics and relevant deposits, dated authority and bounded notice/duplicate checks.
+
+Selection: Parent-assigned independent per-record review after author freeze.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base beb757591995399e079d8892e8e27f8130f6bc5c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:roscoelite | data/records/roscoelite.yaml | maintained | Roscoelite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent original evidence assessment | passed | True | cmmmech:roscoelite | Exact target and claim-bearing primary evidence/authority inspected; findings separately recorded. |
+| Independent named strict validation | passed | True | cmmmech:roscoelite | Two records checked; zero failed. |
+| Completed coordinator batch check 1 | passed | True | cmmmech:roscoelite | Actual completed receipt and log verified against frozen current input; whole-corpus check executed by coordinator. |
+| Completed coordinator batch check 2 | passed | True | cmmmech:roscoelite | Actual completed receipt and log verified against frozen current input; whole-corpus check executed by coordinator. |
+| Completed coordinator batch check 3 | passed | True | cmmmech:roscoelite | Actual completed receipt and log verified against frozen current input; whole-corpus check executed by coordinator. |
+| Completed coordinator batch check 4 | passed | True | cmmmech:roscoelite | Actual completed receipt and log verified against frozen current input; whole-corpus check executed by coordinator. |
+
+## Scientific And Domain Assessments
+
+### Exact mineral and authority scope
+
+identity: supported. Targets: cmmmech:roscoelite.
+
+Current ideal mineral identity is distinct from nonideal synthetic samples.
+
+IMA A/1998 s.p. denotes special-procedure entry, not a discovery year or numbered original approval. Blake original natural locality and vanadium correction agree. Mineral is not elemental V, generic mica or mixed ore.
+
+### Actual synthesis conditions and source sample
+
+scope: supported. Targets: cmmmech:roscoelite.
+
+Individual Table 3 runs are correctly transcribed.
+
+K silicate/V-Al silicate gels, initially V4+, dried below100C, sealed2-5mm gold tubes with retained water. Runs300/18000/48;400/20000/25;450/36000/48;500/38000/48;500/33000/48;500/24000/24;600/35000/72 in C/psi/h. General methods pressure envelope and broader p314 prose are not invented additional runs. Residual organics/NH4Cl weakly reduce an uncontrolled atmosphere.
+
+### Diffraction identity versus bulk valence
+
+evidence: supported. Targets: cmmmech:roscoelite.
+
+A roscoelite-assigned mica is supported without phase-purity or site-valence inflation.
+
+Table 6 specifically syntheticrun 1 indexed as1M vs published natural data. Table 8 specificallyrun 4 contains VO2/V2O3 estimates after oxidation correction. Tiny opaque V-oxide flake-fringe spots despite powder nondetection prevent unequivocal all-valence attribution to mica. No independent site-specific spectroscopy or reversible equilibrium measurement was imported.
+
+### Yield and replication
+
+quantity: supported. Targets: cmmmech:roscoelite.
+
+No unreported extraction yield or condition replication is introduced.
+
+Seven different runs in one study are not independent replication; exact gel proportions, quantitative phase fractions and mass-balanced product yield are not reported. Ideal V3+ formula does not overwrite actual mixed bulk chemistry.
+
+### Criticality, biological and scale scope
+
+scope: supported. Targets: cmmmech:roscoelite.
+
+No unsupported criticality or industrial inference present.
+
+Criticality is unrecorded, not claimed absent; no constituent list designation inherited. Abiotic mechanism microbialfalse with no organismIDs, live biomass or biological controls. Mineral observations are laboratory research, not industrial deployment.
+
+### Exact frozen owner and truthful history
+
+provenance: supported. Targets: cmmmech:roscoelite.
+
+Working-tree provenance is explicit and auditable.
+
+Nativeinspect captured trustedbasebeb757591995399e079d8892e8e27f8130f6bc5c and exact owner/history/dossier/schema bytes. Independent reviewer has no owner authorship. Canonical/inlineCREATE separate. Named check independently executed; coordinator whole-corpus evidence added only after actual terminal receipt verified.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/roscoelite.yaml; Entire exact owner captured with native inspect before assessment. | supports | Identity, evidence explanations, conditions, limits and provenance inspected. |
+| history | history/records/roscoelite/2026-10-15T171521Z-codex-b3357c.yaml; Complete canonical CREATE, inline event and history_refs. | supports | Actual actor, timestamp, target and described work agree; inline and canonical histories are distinct. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Status definitions and exact roscoelite row on PDF page 187. | supports | Dated accepted species, ideal formula and status verified independently from official PDF. |
+| search | Independent bounded notice and duplicate search; /private/tmp/cmm-round99-vanadium-independent/search-observations.json; dedup.json and dedup-followup.json. | context_only | No affecting correction notice surfaced in returned sets. Generic older mineral mentions and discovery leads are not duplicate curated records. |
+| named | uv run --locked cmmmech validate data/records/roscoelite.yaml data/records/cavansite.yaml; /private/tmp/cmm-round99-vanadium-independent/named-validation.log | supports | Independently executed combined strict validation: 2 checked, 0 failed. This does not establish scientific truth. |
+| dossier | research/sources/round99-vanadium/20261015T171641Z.md; Paired source-discovery dossier and frozen hashes. | supports | Acquisition provenance, source/version limitations, methods, deferred leads and owner/history mapping checked. |
+| blake | https://doi.org/10.2475/ajs.s3-12.67.31; Blake 1876 pp31-32, both pages visually inspected. | supports | Natural Granite Creek mica, initial chromium misidentification corrected to vanadium; incomplete acid extraction is historical qualitative evidence. |
+| ito | https://doi.org/10.2465/minerj1953.4.299; Ito 1965 pp300-301 methods; Table 3 p304; Table 6 p307; Fig4 p311; wet chemistry/Table 8 pp311-312; discussion p314. Claim-bearing pages visually inspected. | supports | All seven synthesis rows checked, powder run 1 and chemistry run 4 distinguished, uncontrolled weakly reducing atmosphere and oxide inclusions retained. |
+| batch | /private/tmp/cmm-round99-final-gates.json; Completed coordinator receipt; retained log /private/tmp/cmm-round99-final-gates.log SHA256 6b50e673bf8464f508b0d24e93a59356c74dab8f8c082c3a5cc73c5b7c17b574 | supports | Verified exact base, terminal exits, unchanged target hashes and actual log hash. just check: 317 passed/3 skipped; strict corpus:481 checked/0failed; history:550/0; pages current. These are coordinator executions, not independently rerun suites. |
+
+## Limits And Additional Notes
+
+- Detailed modern structural/EELS full text was unavailable to the curator; metadata/challenge pages are not treated as inspected primary results.
+- Bulk wet chemistry and microscopic inclusions do not isolate mica-site V3+/V4+; no independent reanalysis or diffraction reindexing performed.
+- No organism, microbial mechanism, ore extraction balance, isolated V recovery or industrial deployment established.
+- Raw primary sources were acquired by the curator and independently inspected by this reviewer; current IMA authority copy was independently acquired in my sulfate lane. No claim of independent experimental replication.
+- Whole-corpus gates are coordinator executions; their actual completed receipt/log and reviewed input hashes must be checked before saving. Review corpus check follows artifact persistence.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T172746Z-roscoelite-round99-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Roscoelite
+started_at: '2026-10-15T17:20:58.043643Z'
+finished_at: '2026-10-15T17:27:46.691769Z'
+reviewer:
+  identity: codex /root/round99_sulfates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The vanadium-lane agent authored this owner. I curated separate
+    kornelite/quenstedtite records, independently inspected the frozen vanadium target
+    and original evidence, and made no vanadium owner/history edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Identity and source-scoped abiotic transformation are supported with explicit
+  measurement and transfer limits.
+source:
+  git_revision: beb757591995399e079d8892e8e27f8130f6bc5c
+  state: working_tree
+  inputs:
+  - path: data/records/roscoelite.yaml
+    sha256: b942d0a106934228147c4196969077a759939c2925e608254058b4ad1b353c47
+    role: target
+  - path: history/records/roscoelite/2026-10-15T171521Z-codex-b3357c.yaml
+    sha256: 66e87bb938e3a2af92b9be9ff665132fbca97e07f96d5b0e6e9807172c703c1b
+    role: context
+  - path: research/sources/round99-vanadium/20261015T171641Z.json
+    sha256: 5f051b9604062eb52ed64d0fdf9391486130ef92cb57e41d9da2a57210093b6a
+    role: context
+  - path: research/sources/round99-vanadium/20261015T171641Z.md
+    sha256: 5158c229141bb43e36ff7f9d8c85622a1db402d5854b361b76f4f92e8c2922d3
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire exact maintained owner and CREATE history, claim-bearing original
+    methods/results/graphics and relevant deposits, dated authority and bounded notice/duplicate
+    checks.
+  selection: Parent-assigned independent per-record review after author freeze.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:roscoelite
+targets:
+- target_id: cmmmech:roscoelite
+  path: data/records/roscoelite.yaml
+  label: Roscoelite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/roscoelite.yaml
+    role: maintained_record
+checks:
+- check_id: science
+  name: Independent original evidence assessment
+  required: true
+  status: passed
+  summary: Exact target and claim-bearing primary evidence/authority inspected; findings
+    separately recorded.
+  target_ids:
+  - cmmmech:roscoelite
+  evidence_ids:
+  - owner
+  - ima
+  - search
+  - blake
+  - ito
+- check_id: named
+  name: Independent named strict validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/roscoelite.yaml data/records/cavansite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Two records checked; zero failed.
+  target_ids:
+  - cmmmech:roscoelite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch check 1
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed receipt and log verified against frozen current input;
+    whole-corpus check executed by coordinator.
+  target_ids:
+  - cmmmech:roscoelite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch check 2
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed receipt and log verified against frozen current input;
+    whole-corpus check executed by coordinator.
+  target_ids:
+  - cmmmech:roscoelite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch check 3
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base beb757591995399e079d8892e8e27f8130f6bc5c
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed receipt and log verified against frozen current input;
+    whole-corpus check executed by coordinator.
+  target_ids:
+  - cmmmech:roscoelite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch check 4
+  required: true
+  status: passed
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed receipt and log verified against frozen current input;
+    whole-corpus check executed by coordinator.
+  target_ids:
+  - cmmmech:roscoelite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/roscoelite.yaml
+  locator: Entire exact owner captured with native inspect before assessment.
+  accessed_at: '2026-10-15T17:26:49.172460Z'
+  support: supports
+  summary: Identity, evidence explanations, conditions, limits and provenance inspected.
+  snapshot_sha256: b942d0a106934228147c4196969077a759939c2925e608254058b4ad1b353c47
+- evidence_id: history
+  kind: record_content
+  reference: history/records/roscoelite/2026-10-15T171521Z-codex-b3357c.yaml
+  locator: Complete canonical CREATE, inline event and history_refs.
+  accessed_at: '2026-10-15T17:26:49.172460Z'
+  support: supports
+  summary: Actual actor, timestamp, target and described work agree; inline and canonical
+    histories are distinct.
+  snapshot_sha256: 66e87bb938e3a2af92b9be9ff665132fbca97e07f96d5b0e6e9807172c703c1b
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Status definitions and exact roscoelite row on PDF page 187.
+  accessed_at: '2026-10-15T17:26:49.172460Z'
+  support: supports
+  summary: Dated accepted species, ideal formula and status verified independently
+    from official PDF.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: search
+  kind: search
+  reference: Independent bounded notice and duplicate search
+  locator: /private/tmp/cmm-round99-vanadium-independent/search-observations.json;
+    dedup.json and dedup-followup.json.
+  accessed_at: '2026-10-15T17:26:49.172460Z'
+  support: context_only
+  summary: No affecting correction notice surfaced in returned sets. Generic older
+    mineral mentions and discovery leads are not duplicate curated records.
+  snapshot_sha256: 7519f73ddcc63deb0b7b4a9b1e71afcaa46aa58f43ece87aa1029a3bebbc718c
+  search_scope: Queries and official URLs in the retained search receipt. rg --no-ignore
+    --hidden --follow across data/history/research/reviews, round99 raw and referenced
+    round38/39/97 roots. Search scope bounded; no exhaustive literature or fleet absence
+    claim.
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/roscoelite.yaml data/records/cavansite.yaml
+  locator: /private/tmp/cmm-round99-vanadium-independent/named-validation.log
+  accessed_at: '2026-10-15T17:26:49.172460Z'
+  support: supports
+  summary: 'Independently executed combined strict validation: 2 checked, 0 failed.
+    This does not establish scientific truth.'
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round99-vanadium/20261015T171641Z.md
+  locator: Paired source-discovery dossier and frozen hashes.
+  accessed_at: '2026-10-15T17:26:49.172460Z'
+  support: supports
+  summary: Acquisition provenance, source/version limitations, methods, deferred leads
+    and owner/history mapping checked.
+  snapshot_sha256: 5158c229141bb43e36ff7f9d8c85622a1db402d5854b361b76f4f92e8c2922d3
+- evidence_id: blake
+  kind: primary_source
+  reference: https://doi.org/10.2475/ajs.s3-12.67.31
+  locator: Blake 1876 pp31-32, both pages visually inspected.
+  accessed_at: '2026-10-15T17:26:49.172460Z'
+  support: supports
+  summary: Natural Granite Creek mica, initial chromium misidentification corrected
+    to vanadium; incomplete acid extraction is historical qualitative evidence.
+  snapshot_sha256: 62bc958ed46ea01cc655526ffc7da3d29c33f373124c80061fe38f098714aeef
+- evidence_id: ito
+  kind: primary_source
+  reference: https://doi.org/10.2465/minerj1953.4.299
+  locator: Ito 1965 pp300-301 methods; Table 3 p304; Table 6 p307; Fig4 p311; wet
+    chemistry/Table 8 pp311-312; discussion p314. Claim-bearing pages visually inspected.
+  accessed_at: '2026-10-15T17:26:49.172460Z'
+  support: supports
+  summary: All seven synthesis rows checked, powder run 1 and chemistry run 4 distinguished,
+    uncontrolled weakly reducing atmosphere and oxide inclusions retained.
+  snapshot_sha256: 710483df8b93b1e0da3f03d7476bce8c5b5309d9eac35e38d0c9fa190c407c21
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round99-final-gates.json
+  locator: Completed coordinator receipt; retained log /private/tmp/cmm-round99-final-gates.log
+    SHA256 6b50e673bf8464f508b0d24e93a59356c74dab8f8c082c3a5cc73c5b7c17b574
+  accessed_at: '2026-10-15T17:27:46.691769Z'
+  support: supports
+  summary: 'Verified exact base, terminal exits, unchanged target hashes and actual
+    log hash. just check: 317 passed/3 skipped; strict corpus:481 checked/0failed;
+    history:550/0; pages current. These are coordinator executions, not independently
+    rerun suites.'
+  snapshot_sha256: 800a6c96a2a0b7b295bb6da45e37135a079eab19856f91c566fc43965ad2f390
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact mineral and authority scope
+  outcome: supported
+  summary: Current ideal mineral identity is distinct from nonideal synthetic samples.
+  details: IMA A/1998 s.p. denotes special-procedure entry, not a discovery year or
+    numbered original approval. Blake original natural locality and vanadium correction
+    agree. Mineral is not elemental V, generic mica or mixed ore.
+  target_ids:
+  - cmmmech:roscoelite
+  evidence_ids:
+  - owner
+  - ima
+  - blake
+- assessment_id: conditions
+  area: scope
+  topic: Actual synthesis conditions and source sample
+  outcome: supported
+  summary: Individual Table 3 runs are correctly transcribed.
+  details: K silicate/V-Al silicate gels, initially V4+, dried below100C, sealed2-5mm
+    gold tubes with retained water. Runs300/18000/48;400/20000/25;450/36000/48;500/38000/48;500/33000/48;500/24000/24;600/35000/72
+    in C/psi/h. General methods pressure envelope and broader p314 prose are not invented
+    additional runs. Residual organics/NH4Cl weakly reduce an uncontrolled atmosphere.
+  target_ids:
+  - cmmmech:roscoelite
+  evidence_ids:
+  - owner
+  - ito
+- assessment_id: outcome
+  area: evidence
+  topic: Diffraction identity versus bulk valence
+  outcome: supported
+  summary: A roscoelite-assigned mica is supported without phase-purity or site-valence
+    inflation.
+  details: Table 6 specifically syntheticrun 1 indexed as1M vs published natural data.
+    Table 8 specificallyrun 4 contains VO2/V2O3 estimates after oxidation correction.
+    Tiny opaque V-oxide flake-fringe spots despite powder nondetection prevent unequivocal
+    all-valence attribution to mica. No independent site-specific spectroscopy or
+    reversible equilibrium measurement was imported.
+  target_ids:
+  - cmmmech:roscoelite
+  evidence_ids:
+  - owner
+  - ito
+- assessment_id: quantity
+  area: quantity
+  topic: Yield and replication
+  outcome: supported
+  summary: No unreported extraction yield or condition replication is introduced.
+  details: Seven different runs in one study are not independent replication; exact
+    gel proportions, quantitative phase fractions and mass-balanced product yield
+    are not reported. Ideal V3+ formula does not overwrite actual mixed bulk chemistry.
+  target_ids:
+  - cmmmech:roscoelite
+  evidence_ids:
+  - owner
+  - ito
+- assessment_id: criticality
+  area: scope
+  topic: Criticality, biological and scale scope
+  outcome: supported
+  summary: No unsupported criticality or industrial inference present.
+  details: Criticality is unrecorded, not claimed absent; no constituent list designation
+    inherited. Abiotic mechanism microbialfalse with no organismIDs, live biomass
+    or biological controls. Mineral observations are laboratory research, not industrial
+    deployment.
+  target_ids:
+  - cmmmech:roscoelite
+  evidence_ids:
+  - owner
+  dimensions:
+  - name: material_form
+    value: mineral species
+    definition: Identity distinct from element/commodity/secondaryresource
+    evidence_ids:
+    - owner
+    - ima
+  - name: criticality
+    value: not asserted
+    definition: No jurisdiction/list/edition claim imported
+    evidence_ids:
+    - owner
+  - name: biomass
+    value: not applicable; abiotic
+    definition: No organism or biomass participates in recorded experiment
+    evidence_ids:
+    - owner
+- assessment_id: provenance
+  area: provenance
+  topic: Exact frozen owner and truthful history
+  outcome: supported
+  summary: Working-tree provenance is explicit and auditable.
+  details: Nativeinspect captured trustedbasebeb757591995399e079d8892e8e27f8130f6bc5c
+    and exact owner/history/dossier/schema bytes. Independent reviewer has no owner
+    authorship. Canonical/inlineCREATE separate. Named check independently executed;
+    coordinator whole-corpus evidence added only after actual terminal receipt verified.
+  target_ids:
+  - cmmmech:roscoelite
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- Detailed modern structural/EELS full text was unavailable to the curator; metadata/challenge
+  pages are not treated as inspected primary results.
+- Bulk wet chemistry and microscopic inclusions do not isolate mica-site V3+/V4+;
+  no independent reanalysis or diffraction reindexing performed.
+- No organism, microbial mechanism, ore extraction balance, isolated V recovery or
+  industrial deployment established.
+notes:
+- Raw primary sources were acquired by the curator and independently inspected by
+  this reviewer; current IMA authority copy was independently acquired in my sulfate
+  lane. No claim of independent experimental replication.
+- Whole-corpus gates are coordinator executions; their actual completed receipt/log
+  and reviewed input hashes must be checked before saving. Review corpus check follows
+  artifact persistence.
+```
