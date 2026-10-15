@@ -1,0 +1,110 @@
+{
+  "recorded_at": "2026-10-15T14:11:27.430850+00:00",
+  "reviewer": "codex /root/round68_phosphates (GPT-6)",
+  "scientific_review": false,
+  "scope": "Independent source-dossier locator correction and digest reconciliation; no owner/history/native-review edits.",
+  "passed": true,
+  "verdict": "pass",
+  "findings": [
+    {
+      "finding_id": "D1",
+      "issue_key": "cmmmech.round96.sulfates.dossier-storage-page",
+      "severity": "minor",
+      "status": "resolved",
+      "issue": "https://github.com/CultureBotAI/CMMMech/issues/350",
+      "previous_occurrences": [
+        {
+          "path": "reviews/publication/20261015-round96/20261015T140848Z-sulfate-dossier-locator-initial.json",
+          "sha256": "414ab2bc76dbd87bee7ee81590ac221898fbc625c4fabab95caddd7796a884f1",
+          "finding_id": "D1"
+        }
+      ],
+      "disposition": "Exact one-locator Markdown replacement matches original printed181/PDF7; parsed paired JSON differs only in markdown_report.sha256. Byte count unchanged; author addendum explicitly preserves before/after/source provenance."
+    }
+  ],
+  "before": [
+    {
+      "path": "/private/tmp/CMMMech-expansion-round96-20261015/research/sources/round96-sulfates/20261015T135702Z-source-investigation.md",
+      "sha256": "9cb6acc4560c9d4a2aaebde4d71468aabd1ff434e78ad5b9b91f62281618b87c",
+      "bytes": 11693
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round96-20261015/research/sources/round96-sulfates/20261015T135702Z-source-investigation.json",
+      "sha256": "d47f1cdf462f4c8ae93268a3740644ec6c2ad02e0949dd7a1573f973d1165710",
+      "bytes": 20343
+    }
+  ],
+  "after": [
+    {
+      "path": "/private/tmp/CMMMech-expansion-round96-20261015/research/sources/round96-sulfates/20261015T135702Z-source-investigation.md",
+      "sha256": "6174f1c8e8cdfe7a77845afed46ebb2e74e488ca55774c33b3afe99492f67182",
+      "bytes": 11693
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round96-20261015/research/sources/round96-sulfates/20261015T135702Z-source-investigation.json",
+      "sha256": "13464c2d0f8d7e051ca26389738125558ab399069f409ad0c6f04d609d134b80",
+      "bytes": 20343
+    }
+  ],
+  "retained_originals": [
+    {
+      "path": "/private/tmp/CMMMech-expansion-round96-20261015/reviews/publication/20261015-round96/20261015T140848Z-sulfate-dossier-original.md",
+      "sha256": "9cb6acc4560c9d4a2aaebde4d71468aabd1ff434e78ad5b9b91f62281618b87c",
+      "bytes": 11693
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round96-20261015/reviews/publication/20261015-round96/20261015T140848Z-sulfate-dossier-original.json",
+      "sha256": "d47f1cdf462f4c8ae93268a3740644ec6c2ad02e0949dd7a1573f973d1165710",
+      "bytes": 20343
+    }
+  ],
+  "author_correction": {
+    "path": "/private/tmp/CMMMech-expansion-round96-20261015/research/sources/round96-sulfates/20261015T140958Z-storage-locator-correction.json",
+    "sha256": "b757771161bc07446e8150ce6adb95214a71ec02913d7e1857b2eb050d085bef",
+    "bytes": 6787
+  },
+  "primary": {
+    "path": "/private/tmp/cmm-round96-sulfates-research/majzlan2006.pdf",
+    "sha256": "30a51717d1f744b5f505371bcd07c36fe70cf25f0b2b442e51037bb770a3aed8",
+    "bytes": 174426
+  },
+  "unchanged_owner_history_inputs": [
+    {
+      "slug": "ferricopiapite",
+      "record": {
+        "path": "/private/tmp/CMMMech-expansion-round96-20261015/data/records/ferricopiapite.yaml",
+        "sha256": "df34f6122b7f9df480fdc8a083a202702c560a7e32f735f3e114e7a2732c105e",
+        "bytes": 7145
+      },
+      "history": {
+        "path": "/private/tmp/CMMMech-expansion-round96-20261015/history/records/ferricopiapite/2026-10-15T135519Z-codex-3fe033.yaml",
+        "sha256": "a89299fc2e59119da79b2fd03d59876a432eb27e0b8b4f11904aacd3b2a81f9f",
+        "bytes": 866
+      }
+    },
+    {
+      "slug": "rhomboclase",
+      "record": {
+        "path": "/private/tmp/CMMMech-expansion-round96-20261015/data/records/rhomboclase.yaml",
+        "sha256": "d54486e50f28fa146887884efeb703d932a435b4fd0dc7643e886dfb63a667c1",
+        "bytes": 6889
+      },
+      "history": {
+        "path": "/private/tmp/CMMMech-expansion-round96-20261015/history/records/rhomboclase/2026-10-15T135523Z-codex-ea2c4d.yaml",
+        "sha256": "46a76ff60a805b57efcc739d7ad676a0e5927f09373f67617c0a1cb7e2bdca30",
+        "bytes": 903
+      }
+    }
+  ],
+  "checks": [
+    "Original primary printed181/PDF7 visually read independently.",
+    "Exact full Markdown string-replacement comparison passed.",
+    "Complete parsed JSON comparison passed after normalizing only markdown_report.sha256.",
+    "Corrected markdown_report path/bytes/hash equals actual Markdown.",
+    "Initial observation/source/owner/history hashes independently rechecked unchanged."
+  ],
+  "limits": [
+    "Operational/source-traceability resolution, not a new scientific review or a new test-suite execution.",
+    "GitHub issue disposition is coordinated by root; this file does not post or close the issue."
+  ]
+}

@@ -1,0 +1,517 @@
+schema_version: 1.0.0
+review_id: 20261015T141453Z-bassanite-round96-independent-resolution
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific bassanite review and F1 resolution
+started_at: '2026-10-15T13:59:54.978740Z'
+finished_at: '2026-10-15T14:14:53.111461Z'
+reviewer:
+  identity: codex /root/round68_iron_sulfides
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored bassanite; I authored separate ferricopiapite/rhomboclase.
+    Native inspection preceded judgment; I independently read actual originals/graphics
+    and did not edit this owner.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of distinct natural bassanite identity and two explicitly
+  bounded bacterial-EPS/culture-associated mixed-precipitate observations. F1/#348
+  resolved; no isolated recovery, verified universal strain mechanism or in-situ hydrate-formation
+  timing inferred.
+source:
+  git_revision: 4ef2e0dd88837ef729839ffde8ed828bcbb59cda
+  state: working_tree
+  inputs:
+  - path: data/records/bassanite.yaml
+    sha256: 014fbfc5c3711dfc6b82edd424aa388ecaf21c82a821ecea9bbb411393827919
+    role: target
+  - path: history/records/bassanite/2026-10-15T135824Z-codex-dbc4f2.yaml
+    sha256: 9178a34a147187491d7fb1b0106773378463fe43c907c3ca53ab016209016559
+    role: context
+  - path: history/records/bassanite/2026-10-15T140438Z-codex-39a1f2.yaml
+    sha256: e3f0777396cbbe34e3f77d05e85c0025c5786093dd88b592cc8740bbb34b3e33
+    role: context
+  - path: research/sources/round96-bassanite/20261015T140728Z-source-investigation.json
+    sha256: c6e261ef6f43aa3423823a2c826c99835a7a969114c6125869e660cbc858a139
+    role: context
+  - path: research/sources/round96-bassanite/20261015T140728Z-source-investigation.md
+    sha256: 8bba8392fa18934684175b9ddd83caf7e93854a21385777226d4e78d2a2ce1fe
+    role: context
+  - path: reviews/structured/20261015T140245Z-bassanite-round96-page-count-initial/review.yaml
+    sha256: 5a110e7e60311536e80b06226e9df62c124d7a8265f5ce810adcb54c861b9400
+    role: context
+scope:
+  description: Full exact final bassanite owner/history and all accepted claim-bearing
+    primary/authority evidence; explicit resolution of prior F1.
+  selection: Parent-assigned independent scientific review, exact current owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:bassanite
+targets:
+- target_id: cmmmech:bassanite
+  path: data/records/bassanite.yaml
+  label: Bassanite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/bassanite.yaml
+    role: maintained scientific record
+checks:
+- check_id: science
+  name: Independent full original/authority and claim-bearing graphic assessment
+  required: true
+  status: passed
+  summary: Actual accepted originals, original graphics/tables, bounded supplement/access/notice
+    and identity scope checked independently.
+  target_ids:
+  - cmmmech:bassanite
+  evidence_ids:
+  - ima
+  - handbook
+  - allen
+  - aldisi
+  - silva
+  - silva_fig3
+  - silva_fig5
+- check_id: named
+  name: Independent exact-owner validation
+  command: uv run --locked cmmmech validate data/records/bassanite.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Checked1record;0failed on corrected owner.
+  target_ids:
+  - cmmmech:bassanite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Actual completed coordinator batch command 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal receipt/log and current input hashes independently verified; no
+    speculative or duplicate execution.
+  target_ids:
+  - cmmmech:bassanite
+  evidence_ids:
+  - batch
+  - batch_log
+- check_id: batch2
+  name: Actual completed coordinator batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal receipt/log and current input hashes independently verified; no
+    speculative or duplicate execution.
+  target_ids:
+  - cmmmech:bassanite
+  evidence_ids:
+  - batch
+  - batch_log
+- check_id: batch3
+  name: Actual completed coordinator batch command 3
+  command: uv run --locked cmmmech validate-history --base 4ef2e0dd88837ef729839ffde8ed828bcbb59cda
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal receipt/log and current input hashes independently verified; no
+    speculative or duplicate execution.
+  target_ids:
+  - cmmmech:bassanite
+  evidence_ids:
+  - batch
+  - batch_log
+- check_id: batch4
+  name: Actual completed coordinator batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal receipt/log and current input hashes independently verified; no
+    speculative or duplicate execution.
+  target_ids:
+  - cmmmech:bassanite
+  evidence_ids:
+  - batch
+  - batch_log
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/bassanite.yaml
+  locator: 'Complete exact final owner, native-inspected before final assessment.
+    Artifact: /private/tmp/CMMMech-expansion-round96-20261015/data/records/bassanite.yaml'
+  accessed_at: '2026-10-15T14:14:53.111461Z'
+  support: supports
+  snapshot_sha256: 014fbfc5c3711dfc6b82edd424aa388ecaf21c82a821ecea9bbb411393827919
+  summary: Natural mineral identity and two bounded mixed-precipitate mechanisms;
+    corrected five-page source description.
+- evidence_id: history0
+  kind: record_content
+  reference: history/records/bassanite/2026-10-15T135824Z-codex-dbc4f2.yaml
+  locator: 'Complete canonical sidecar and separate inline event/history_ref. Artifact:
+    /private/tmp/CMMMech-expansion-round96-20261015/history/records/bassanite/2026-10-15T135824Z-codex-dbc4f2.yaml'
+  accessed_at: '2026-10-15T14:14:53.111461Z'
+  support: supports
+  snapshot_sha256: 9178a34a147187491d7fb1b0106773378463fe43c907c3ca53ab016209016559
+  summary: Actual codex/GPT-6 actor, timestamp and target verified; CREATE immutable
+    and narrow EDIT accurately described.
+- evidence_id: history1
+  kind: record_content
+  reference: history/records/bassanite/2026-10-15T140438Z-codex-39a1f2.yaml
+  locator: 'Complete canonical sidecar and separate inline event/history_ref. Artifact:
+    /private/tmp/CMMMech-expansion-round96-20261015/history/records/bassanite/2026-10-15T140438Z-codex-39a1f2.yaml'
+  accessed_at: '2026-10-15T14:14:53.111461Z'
+  support: supports
+  snapshot_sha256: e3f0777396cbbe34e3f77d05e85c0025c5786093dd88b592cc8740bbb34b3e33
+  summary: Actual codex/GPT-6 actor, timestamp and target verified; CREATE immutable
+    and narrow EDIT accurately described.
+- evidence_id: ima
+  kind: database
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'Current September2026 list definitions PDF1–2 and Bassanite row PDF21
+    visually inspected. Artifact: /private/tmp/cmm-round96-sulfates-research/ima2026-09.pdf'
+  accessed_at: '2026-10-15T14:14:53.111461Z'
+  support: supports
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  summary: Ca(SO4)·0.5H2O, G1910; historical year is not an approval identifier. Distinct
+    from gypsum/anhydrite and manufactured plaster specifications.
+- evidence_id: handbook
+  kind: database
+  reference: https://www.handbookofmineralogy.org/pdfs/bassanite.pdf
+  locator: 'Complete one-page original, natural occurrence, formula and synthetic
+    diffraction context. Artifact: /private/tmp/cmm-round96-bassanite-research/bassanite-handbook.pdf'
+  accessed_at: '2026-10-15T14:14:53.111461Z'
+  support: supports
+  snapshot_sha256: 9e7eb69905656ba0f41c209793cdc6d900dd6f2c530856459ee2c7ab818112c0
+  summary: Authority corroborates identity without asserting natural microbial origin
+    or pure experimental products.
+- evidence_id: allen
+  kind: primary_source
+  reference: https://msaweb.org/AmMin/AM38/AM38_1266.pdf
+  locator: 'Complete three pages printed1266–1268, optical/chemical/spectrographic
+    analysis, calculated mineral fractions, natural-origin argument and acknowledgment
+    of X-ray verification; all three pages visually inspected. Artifact: /private/tmp/cmm-round96-bassanite-research/allen1953-msaweb.pdf'
+  accessed_at: '2026-10-15T14:14:53.111461Z'
+  support: supports
+  snapshot_sha256: 82af2c41d702e1d916214e37eb6dc4885dfa62cfb04941b6394bb012e0268010
+  summary: Natural drill-core specimens establish identity separately. The 97.3% calculated
+    mineral amount relies on gypsum/celestite assumptions and is not a modern direct
+    purity refinement.
+- evidence_id: aldisi
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.scitotenv.2023.165820
+  locator: 'Complete actual five-page original, sections2.1–2.3, Table1 and Figures1–3,
+    results/discussion and terminal references; all five pages visually inspected.
+    Artifact: /private/tmp/cmm-round96-bassanite-research/aldisi2023-content.pdf'
+  accessed_at: '2026-10-15T14:14:53.111461Z'
+  support: supports
+  snapshot_sha256: 3b7d5fbc7a81d6e9ddd6b2bdef5a3cd637d1c995bb86730c13ba585aca4b0183
+  summary: 35C evaporation with extracted EPS yields mixed processed sulfate solids
+    after washing/40C drying. No-EPS and alternative-EPS controls, label discrepancies
+    and partial rehydration are retained; no in-situ nucleation, necessity or yield
+    claim.
+- evidence_id: silva
+  kind: primary_source
+  reference: https://doi.org/10.1155/2015/816102
+  locator: 'Complete official EuropePMC original JATS, Methods2.1–2.5/Results/discussion
+    and all six native tables read; filename is a historical acquisition label, actual
+    author Silva-Castro2015. Artifact: /private/tmp/cmm-round96-bassanite-research/sanchez2015.xml'
+  accessed_at: '2026-10-15T14:14:53.111461Z'
+  support: supports
+  snapshot_sha256: 4826cdf2056e14aa1edaf7de7ab16ab2496079ce47f85372383f83dde22d011a
+  summary: Solid brine agar sulfate phase assignments are distinct from liquid carbonate/depletion
+    experiments. Table5 repeats SM5; partial16S89–99% does not authenticate every
+    species/strain. No supplementary-material element appears in the inspected full
+    text.
+- evidence_id: silva_html
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC4529937/
+  locator: 'Complete retained official PMC HTML used with original JATS and graphic
+    links. Artifact: /private/tmp/cmm-round96-bassanite-research/silva2015-pmc.html'
+  accessed_at: '2026-10-15T14:14:53.111461Z'
+  support: supports
+  snapshot_sha256: 0bc8b708674d45d2fc7e6903115091776d13bf1127e4c002eedc7ca2a526638e
+  summary: Corroborating representation of the same study, not a second experiment;
+    no full-original PDF acquisition is falsely claimed.
+- evidence_id: silva_fig3
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bad2/4529937/edaa3d9e4976/BMRI2015-816102.003.jpg
+  locator: 'Complete original Figure3 image visually inspected, solid-medium diffraction
+    rows with bassanite labels and separate carbonate liquid arms. Artifact: /private/tmp/cmm-round96-bassanite-research/silva2015-original-fig3.jpg'
+  accessed_at: '2026-10-15T14:14:53.111461Z'
+  support: supports
+  snapshot_sha256: 14da79642670a9fc22b6a7767eef89c404bd2f11241d1c1ca22b7b1b5c6aee41
+  summary: Phase-labelled mixed end products are supported, without equivalent displayed
+    phase-resolved controls or isolate-specific yields.
+- evidence_id: silva_fig5
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/bad2/4529937/c5ff718b7d6e/BMRI2015-816102.005.jpg
+  locator: 'Complete original Figure5 sulfate morphology/EDS panels visually inspected.
+    Artifact: /private/tmp/cmm-round96-bassanite-research/silva2015-original-fig5.jpg'
+  accessed_at: '2026-10-15T14:14:53.111461Z'
+  support: supports
+  snapshot_sha256: 02a3ae90c9a5d162a6e5b0e508641f98197e1338c5b797503387689f69951b90
+  summary: Sulfate morphologies/elemental spectra do not alone discriminate hydrate
+    species or demonstrate cell-directed bassanite nucleation.
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round96-bassanite/20261015T140728Z-source-investigation.json
+  locator: 'Complete final author dossier, exact accepted-source inventory and acquisition
+    failures. Artifact: /private/tmp/CMMMech-expansion-round96-20261015/research/sources/round96-bassanite/20261015T140728Z-source-investigation.json'
+  accessed_at: '2026-10-15T14:14:53.111461Z'
+  support: context_only
+  snapshot_sha256: c6e261ef6f43aa3423823a2c826c99835a7a969114c6125869e660cbc858a139
+  summary: Five-page Al Disi count matches the original; incomplete earlier workup
+    method and deferred abiotic source are not accepted as inspected original evidence.
+- evidence_id: prior
+  kind: record_content
+  reference: reviews/structured/20261015T140245Z-bassanite-round96-page-count-initial/review.yaml
+  locator: 'Exact preserved initial F1 occurrence and original owner input digest.
+    Artifact: /private/tmp/CMMMech-expansion-round96-20261015/reviews/structured/20261015T140245Z-bassanite-round96-page-count-initial/review.yaml'
+  accessed_at: '2026-10-15T14:14:53.111461Z'
+  support: supports
+  snapshot_sha256: 5a110e7e60311536e80b06226e9df62c124d7a8265f5ce810adcb54c861b9400
+  summary: Initial minor page-count finding preserved; earlier partial observation
+    did not claim final scientific acceptance.
+- evidence_id: before
+  kind: record_content
+  reference: Actual retained pre-correction bassanite owner
+  locator: 'Full original owner bytes matching initial native source-input SHA. Artifact:
+    /private/tmp/cmm-round96-bassanite-independent/bassanite-initial-owner.yaml'
+  accessed_at: '2026-10-15T14:14:53.111461Z'
+  support: supports
+  snapshot_sha256: 40dfae29b5849b4531c22f46057be4f607b941bc5857a7481611be3cd3952a9c
+  summary: Original six-page phrase and original CREATE/inline provenance preserved
+    for independent comparison.
+- evidence_id: comparison
+  kind: record_content
+  reference: Independent parsed original/current comparison
+  locator: 'Actual independently executed comparison of initial/current YAML; exact
+    before/after hashes. Artifact: /private/tmp/cmm-round96-bassanite-independent/independent-correction-comparison.json'
+  accessed_at: '2026-10-15T14:14:53.111461Z'
+  support: supports
+  snapshot_sha256: 3e32a2c71d9d4acd48dcb99b55b56dde269651733b618f37b5ce626a544c2aeb
+  summary: Only sources[3].title six→five and appended inline EDIT/history_ref differ;
+    all mechanism values/control qualifications and original CREATE remain unchanged.
+- evidence_id: notice
+  kind: search
+  reference: Bounded current primary DOI/title correction and retraction searches
+  locator: 'Retained actual searches for both experimental DOIs plus Al Disi supplement/title
+    and Allen/Kramer1953; no exhaustive pagination. Live PMC challenge was not bypassed.
+    Artifact: /private/tmp/cmm-round96-bassanite-independent/notice-search.json'
+  accessed_at: '2026-10-15T14:14:53.111461Z'
+  support: context_only
+  snapshot_sha256: bea3d867fab1fa098a44c75865c436baeec4b533d0391b7d59355ba5a76aa59b
+  summary: No affecting notice surfaced within inspected results; accepted evidence
+    comes from actual available originals, not search snippets.
+  search_scope: Retained actual searches for both experimental DOIs plus Al Disi supplement/title
+    and Allen/Kramer1953; no exhaustive pagination. Live PMC challenge was not bypassed.
+- evidence_id: lineage
+  kind: search
+  reference: Hidden/ignored/followed maintained lineage search
+  locator: 'rg --no-ignore --hidden --follow across data/records, research, reviews
+    and history for bassanite and the accepted DOI strings; bounded maintained scope,
+    not machinewide. Artifact: /private/tmp/cmm-round96-bassanite-independent/maintained-lineage.txt'
+  accessed_at: '2026-10-15T14:14:53.111461Z'
+  support: context_only
+  snapshot_sha256: 613336c8aecb7ccdbfcd8c0e3c323f3de3c1230a23130b37a7adb7723e612531
+  summary: Existing gypsum/anhydrite records contain a different cyanobacterial study
+    and cannot be transferred as replication or direct refutation of these experiments.
+  search_scope: rg --no-ignore --hidden --follow across data/records, research, reviews
+    and history for bassanite and the accepted DOI strings; bounded maintained scope,
+    not machinewide.
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/bassanite.yaml
+  locator: 'Actual independent corrected-owner named validation, exit0, checked1/0.
+    Artifact: /private/tmp/cmm-round96-bassanite-independent/named-corrected.log'
+  accessed_at: '2026-10-15T14:14:53.111461Z'
+  support: supports
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+  summary: Structural validation passed on exact current owner; validation does not
+    establish scientific truth.
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round96-final-gates.json
+  locator: 'Actual terminal four-command receipt; log /private/tmp/cmm-round96-final-gates.log
+    SHA256 9a887ac8ef25d2230360d96f1da24b7b79216d078d3323e9c8b3a11405c19ba4. Artifact:
+    /private/tmp/cmm-round96-final-gates.json'
+  accessed_at: '2026-10-15T14:14:53.111461Z'
+  support: supports
+  snapshot_sha256: 47e870f8d4b80ea7f723c8edd38e0cda0d9d238afecd48690a98fe6f49f5c638
+  summary: Independently verified base/worktree, four exits0, 317passed/3skipped,465records/533histories
+    and all465 unchanged owner inputs. No duplicate full-suite invocation.
+- evidence_id: batch_log
+  kind: validation
+  reference: /private/tmp/cmm-round96-final-gates.log
+  locator: 'Complete actual terminal command log, hash independently recomputed. Artifact:
+    /private/tmp/cmm-round96-final-gates.log'
+  accessed_at: '2026-10-15T14:14:53.111461Z'
+  support: supports
+  snapshot_sha256: 9a887ac8ef25d2230360d96f1da24b7b79216d078d3323e9c8b3a11405c19ba4
+  summary: Supports coordinator gate summaries and exact corrected-state validation/history/render
+    checks.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Natural hemihydrate identity versus mixed laboratory products
+  outcome: supported
+  summary: Bassanite is correctly distinguished from gypsum, anhydrite, calcium and
+    commercial plaster.
+  target_ids:
+  - cmmmech:bassanite
+  evidence_ids:
+  - owner
+  - ima
+  - handbook
+  - allen
+  details: Natural chemistry/optics and acknowledged X-ray verification support identity;
+    impurity-corrected calculated fractions are not direct modern purity estimates.
+    Historical1910 is not an accession. No criticality designation asserted.
+- assessment_id: eps
+  area: scope
+  topic: Extracted bacterial polymers, conditions and controls
+  outcome: supported
+  summary: The microbial flag is explicitly limited to bacterial origin of EPS, without
+    requiring growing cells in precipitation.
+  target_ids:
+  - cmmmech:bassanite
+  evidence_ids:
+  - owner
+  - aldisi
+  details: 50mg dryEPS/50mL synthetic3.16-times evaporated seawater, open100mL bottle,35C5–6d,
+    triplicate; harvested solids washed and40C dried. No-EPS gypsum versus DF112/DF2141
+    mixed bassanite/anhydrite and mostly-gypsum other-EPS arms. Z27/S27/S7D1 label
+    conflict remains unresolved. Neither workup timing nor water-activity/Ca-binding
+    causal mechanism is proved.
+- assessment_id: hydration
+  area: evidence
+  topic: Incomplete conversion and semiquantitative phase denominator
+  outcome: supported
+  summary: Partial gypsum appearance after hydration constrains complete-conversion
+    and pure-product claims.
+  target_ids:
+  - cmmmech:bassanite
+  evidence_ids:
+  - owner
+  - aldisi
+  details: 0.2g mixed precipitate/5mL water,30C7d retains bassanite/anhydrite. EPS
+    removal is not quantified. Higher-dose calcite is a different mixture. Table1
+    semiquantitative processed-phase proportions are not isolated bassanite mass yield.
+- assessment_id: cultures
+  area: scope
+  topic: Culture association, strain identity and unequal assay systems
+  outcome: supported
+  summary: The record preserves medium-level mixed sulfate observations without transferring
+    liquid carbonate depletion or cell morphology.
+  target_ids:
+  - cmmmech:bassanite
+  evidence_ids:
+  - owner
+  - silva
+  - silva_fig3
+  - silva_fig5
+  details: Real-brine SM1–SM6 differing nutrient recipes,18g/Lagar,pH7.2,112C20min
+    sterilization, aerobic25C30d. Triplicate/repeated experiments and uninoculated/dead-cell
+    controls are reported; equivalent control diffractograms and isolate-specific
+    phase outcomes are unavailable. Partial16S89–99% and duplicatedSM5 do not permit
+    invented strain CURIE or correctedSM6 percentage. Earlier referenced mineral-preparation
+    original remains unacquired.
+- assessment_id: provenance
+  area: provenance
+  topic: F1/#348 exact correction and preserved initial occurrence
+  outcome: supported
+  summary: The five-page description and append-only EDIT resolve the saved minor
+    finding.
+  target_ids:
+  - cmmmech:bassanite
+  evidence_ids:
+  - owner
+  - aldisi
+  - prior
+  - before
+  - comparison
+  - history0
+  - history1
+  - dossier
+  - named
+  - batch
+  details: Complete actual PDF has five printed pages including terminal references,
+    so no missing sixth page is implied. Independent parsed comparison confirms no
+    change to mechanism/control/quantity fields. Initial CREATE and native review
+    remain immutable; final owner and EDIT are covered by the actual final batch.
+findings:
+- finding_id: F1
+  issue_key: bassanite-round96-aldisi-original-page-count
+  category: provenance
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Al Disi2023 original page count corrected to five
+  description: Current sources[3].title accurately describes the complete five-page
+    original. The source was complete before correction; no sixth page or additional
+    experiment is inferred.
+  target_ids:
+  - cmmmech:bassanite
+  field_paths:
+  - sources[3].title
+  evidence_ids:
+  - aldisi
+  - prior
+  - before
+  - comparison
+  - history1
+  - dossier
+  - batch
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/bassanite.yaml
+    role: maintained scientific record
+  rule_id: exact-source-provenance
+  native_severity: minor
+  normalization_reason: Bounded bibliographic count defect without changing phase
+    assignment, measured results or control interpretation.
+  disposition_reason: Fresh native inspection, complete original inspection and independently
+    parsed comparison confirm only six→five plus actual appended provenance. Corrected
+    named1/0 and final four batch commands passed on unchanged owner inputs; original
+    CREATE and F1 observation remain preserved.
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261015T140245Z-bassanite-round96-page-count-initial
+    finding_id: F1
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/348
+actions: []
+limitations:
+- Extracted bacterial EPS origin is distinct from live-cell necessity; natural mineral
+  occurrence is not evidence of microbial origin.
+- Mixed semiquantitative phase estimates, washing/drying and rehydration constrain
+  phase purity, formation timing and complete conversion; no isolated bassanite yield
+  or industrial deployment.
+- Al Disi control-strain labels remain inconsistent and water-activity/calcium-binding
+  hypotheses are not directly established.
+- Silva-Castro partial16S matches, duplicateSM5, medium-level reporting and missing
+  referenced workup original prevent strain-resolved or workup-independent conclusions.
+- 'All accepted claim-bearing graphics were inspected: Al Disi Figures1–3/Table1 and
+  Silva-Castro original Figures3/5 plus all six native tables. Other Silva-Castro
+  carbonate graphics are not used as bassanite evidence.'
+- No separate supplement notice was found in inspected full originals/JATS; failed
+  package/earlier-method routes are not a complete external supplement-inventory claim.
+- Initial review was a scoped partial finding while full assessment/final gates continued.
+  An unsaved alias-containing initial draft was rejected and preserved externally
+  before the sole successful initial save; no immutable observation was rewritten.
+- Bounded current notice and hidden/ignored/followed maintained lineage searches do
+  not establish global absence. All evidence hashes were rechecked at final preparation;
+  accessed_at records that final check, while review start records actual inspection
+  start.

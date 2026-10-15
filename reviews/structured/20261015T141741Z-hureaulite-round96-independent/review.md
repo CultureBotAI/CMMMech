@@ -1,0 +1,449 @@
+# Independent hureaulite scientific review
+
+- Review: 20261015T141741Z-hureaulite-round96-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T14:01:40.279042Z
+- Finished UTC: 2026-10-15T14:17:41.366537Z
+- Reviewer: codex /root/round68_new_frontier (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified independent acceptance of hureaulite identity, abiotic synthesis and bounded laboratory charge-storage evidence; no supported corrective record defect.
+
+## Scope And Provenance
+
+Whole exact owner and CREATE provenance against complete primary main/SI, authorities, related evidence and actual checks.
+
+Selection: Assigned independent mineral review; one immutable bundle per owner.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 4ef2e0dd88837ef729839ffde8ed828bcbb59cda.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:hureaulite | data/records/hureaulite.yaml | maintained | hureaulite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named strict validation | passed | True | cmmmech:hureaulite | Actual independently executed pair check passed 2/0; exact owner unchanged. |
+| Full suite | passed | True | cmmmech:hureaulite | Actual terminal batch receipt and complete log hash verified; exact owner input unchanged. |
+| Strict corpus | passed | True | cmmmech:hureaulite | Actual terminal batch receipt and complete log hash verified; exact owner input unchanged. |
+| Canonical histories | passed | True | cmmmech:hureaulite | Actual terminal batch receipt and complete log hash verified; exact owner input unchanged. |
+| Rendered pages | passed | True | cmmmech:hureaulite | Actual terminal batch receipt and complete log hash verified; exact owner input unchanged. |
+
+## Scientific And Domain Assessments
+
+### Natural species and synthetic phase assignment
+
+identity: supported. Targets: cmmmech:hureaulite.
+
+IMA Mn2+5(PO3OH)2(PO4)2(H2O)4, renamed status Rn/2007 s.p. and Handbook synthetic C2/c label resolve. Laboratory reagent-derived hureaulite-assigned powder differs from mined natural substituted hureaulite, lithiophilite and a merely hureaulite-like product. No inherited criticality.
+
+### Abiotic reaction and characterization
+
+evidence: supported. Targets: cmmmech:hureaulite.
+
+5 wt% SDS solution, SDS/Mn 1.8, 70 C one hour, dropwise K2HPO4 at Mn/K2HPO4 1 then 24 hours 70 C and washed room-temperature-dried powder are accurate. Powder XRD/reference-pattern and spectroscopy support assignment, not quantified phase purity or product yield; absent SDS-free comparison and unknown absolute volume/pH/replication stay explicit.
+
+### Electrode recipe and capacitance denominator
+
+quantity: supported. Targets: cmmmech:hureaulite.
+
+70:20:10 active powder/carbon/PTFE, 100 micrometre film, 7 mg/cm2 active loading and reference electrodes are accurate. 184 F/g at 5 mV/s in 3 M KOH versus 16 F/g in 5 M LiNO3 and 15 F/g in 1 M Na2SO4 are three-electrode active-material-normalized values. Figure 8d cycling is explicitly not universal stability; no complete-device energy or metal recovery claim.
+
+### Model interpretation and controls
+
+evidence: supported. Targets: cmmmech:hureaulite.
+
+Electrolytes alter several variables simultaneously. No proved pH-only cause, directly measured ion occupancy, unique Grotthuss/MnII–MnIII pathway, blank subtraction, post-cycling mineralogy or dissolved-Mn balance is inferred. Trasatti–Dunn components and one-electron active depth are fitted/modelled. The separate two-electrode cell uses 5 M KOH and must not inherit all three-electrode conditions.
+
+### Concentration, unit and reference labels
+
+consistency: supported. Targets: cmmmech:hureaulite.
+
+Main Table 1 says 1 M K3PO4 while Methods/Figures 3 and 6 say 3 M; original Fig3b/d visually confirms 3 M. Equations omit displayed Wh/second conversion; SI page 11 surface units and S13 Ag/AgCl device label conflict. Record retains these and adopts no disputed energy/power/active-depth value.
+
+### Actual creation, scope and checks
+
+provenance: supported. Targets: cmmmech:hureaulite.
+
+Exact owner and canonical CREATE hashes match native inspection. Actual codex/GPT-6 actor and inline event are separate provenance. Completed batch and named checks establish validity, not scientific truth.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/hureaulite.yaml; Complete exact maintained owner; native inspect before target assessment. Local artifact: /private/tmp/CMMMech-expansion-round96-20261015/data/records/hureaulite.yaml | supports | Exact final owner independently assessed, with no author edits by this reviewer. |
+| history | history/records/hureaulite/2026-10-15T135927Z-codex-d231b7.yaml; Complete canonical CREATE plus separate inline event in owner. Local artifact: /private/tmp/CMMMech-expansion-round96-20261015/history/records/hureaulite/2026-10-15T135927Z-codex-d231b7.yaml | supports | Correct target, actual codex/GPT-6 actor and creation provenance; no earlier authorship invented. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; PDF page 97 hureaulite Rn/2007 s.p. and page 1 definitions, exact rows visually checked; current CNMNC homepage independently reopened. Local artifact: /private/tmp/cmm-round95-minerals-research/ima-live.pdf | supports | Mineral species name, ideal formula and status resolve. No constituent-element criticality is transferred. |
+| handbook | https://www.handbookofmineralogy.org/pdfs/hureaulite.pdf; Complete one-page Handbook entry. Local artifact: /private/tmp/cmm-round96-minerals-research/hureaulite-handbook.pdf | supports | Natural mineral scope and historical structure assignment checked against the newer specimen-specific primary report. |
+| metadata | https://api.crossref.org/works/10.3390/pr12081622; Current retrieved DOI metadata, publication identity, license and relation/update fields. Local artifact: /private/tmp/cmm-round96-minerals-research/crossref-hureaulite2024.json | context_only | Exact article identity verified. No update-to or updated-by field in retrieved metadata; this is not exhaustive notice absence. |
+| search | Bounded independent exact DOI/title correction and related-material searches; Actual retained web results; original publisher and unrelated results distinguished. Local artifact: /private/tmp/cmm-round96-minerals-independent/bounded-web-search.json | context_only | No affecting formal correction or direct contradictory experiment surfaced in these bounded results. |
+| named | Independent named strict validation; Actual independently executed command and terminal 2 records / 0 failures. Local artifact: /private/tmp/cmm-round96-minerals-independent/named-validation.log | supports | Both exact reviewed owners passed named schema checks. |
+| batch | /private/tmp/cmm-round96-final-gates.json; Actual four-command terminal batch; log /private/tmp/cmm-round96-final-gates.log SHA256 9a887ac8ef25d2230360d96f1da24b7b79216d078d3323e9c8b3a11405c19ba4. Local artifact: /private/tmp/cmm-round96-final-gates.json | supports | Full suite, strict corpus, history against trusted base and rendered pages passed; current owner hash unchanged. |
+| main | https://mdpi-res.com/d_attachment/processes/processes-12-01622/article_deploy/processes-12-01622.pdf; Complete eighteen-page official original; Methods 2.1–2.3, all Figures 1–8 and Table 1, especially original Figure 3 page 7 and Table 1 page 9. Local artifact: /private/tmp/cmm-round96-minerals-research/hureaulite2024-official.pdf | supports | Supports abiotic powder preparation and active-material-normalized electrochemical response; no microbial, ore extraction, recovered metal or deployment demonstration. |
+| si | https://mdpi-res.com/d_attachment/processes/processes-12-01622/article_deploy/processes-12-01622-s001.zip; Complete eleven-page official supplementary PDF; all Figures S1–S13 and equations/methods pages 3–4 and 11 visually read. Local artifact: /private/tmp/cmm-round96-minerals-research/hureaulite-si/processes-3073306-supplementary.pdf | partial | Deconvolution and calculated active thickness are model-based, not direct proton/Mn oxidation-state measurements. Inconsistent surface units and Figure S13 reference label are retained. |
+
+## Limits And Additional Notes
+
+- Phase assignment lacks quantitative purity/yield and matched surfactant-free controls; no microbial or ore-recovery evidence adopted.
+- Mechanistic deconvolution, proton transfer and active thickness remain interpretations, with no operando ion/oxidation-state or post-cycling phase proof.
+- Unresolved original electrolyte/unit/reference labels constrain exact energy, power and cross-device comparisons.
+- Bounded correction/counterevidence search is not universal absence. Original MDPI landing reopen returned 429, but complete accepted official main/SI bytes were available and independently read.
+- Whole-corpus native review checker and final exact-hash coverage run separately after these bundles are saved.
+- Source reading began during curation preparation; actual target judgment began after retained native inspection at the recorded start.
+- No scientific self-acceptance for the separately authored wood-ash owner. No Git/GitHub or owner mutations performed.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T141741Z-hureaulite-round96-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent hureaulite scientific review
+started_at: '2026-10-15T14:01:40.279042Z'
+finished_at: '2026-10-15T14:17:41.366537Z'
+reviewer:
+  identity: codex /root/round68_new_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Phosphate agent authored this record/history. This reviewer
+    authored only wood-ash in this cohort, independently inspected this exact target
+    and primary/SI/authorities, and made no owner edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified independent acceptance of hureaulite identity, abiotic synthesis
+  and bounded laboratory charge-storage evidence; no supported corrective record defect.
+source:
+  git_revision: 4ef2e0dd88837ef729839ffde8ed828bcbb59cda
+  state: working_tree
+  inputs:
+  - path: data/records/hureaulite.yaml
+    sha256: 3da462e28671a908cea2f5c0d7f431579f93514e1215b0c05eba69aaf507b075
+    role: target
+  - path: history/records/hureaulite/2026-10-15T135927Z-codex-d231b7.yaml
+    sha256: 30c1ac57cbacfa84621415714c2c21b7e549dba19aeffdc0d1b3989440d3b5d9
+    role: context
+targets:
+- target_id: cmmmech:hureaulite
+  path: data/records/hureaulite.yaml
+  label: hureaulite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/hureaulite.yaml
+    role: maintained_record
+scope:
+  description: Whole exact owner and CREATE provenance against complete primary main/SI,
+    authorities, related evidence and actual checks.
+  selection: Assigned independent mineral review; one immutable bundle per owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:hureaulite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/hureaulite.yaml
+  locator: 'Complete exact maintained owner; native inspect before target assessment.
+    Local artifact: /private/tmp/CMMMech-expansion-round96-20261015/data/records/hureaulite.yaml'
+  accessed_at: '2026-10-15T14:17:41.366537Z'
+  support: supports
+  snapshot_sha256: 3da462e28671a908cea2f5c0d7f431579f93514e1215b0c05eba69aaf507b075
+  summary: Exact final owner independently assessed, with no author edits by this
+    reviewer.
+- evidence_id: history
+  kind: record_content
+  reference: history/records/hureaulite/2026-10-15T135927Z-codex-d231b7.yaml
+  locator: 'Complete canonical CREATE plus separate inline event in owner. Local artifact:
+    /private/tmp/CMMMech-expansion-round96-20261015/history/records/hureaulite/2026-10-15T135927Z-codex-d231b7.yaml'
+  accessed_at: '2026-10-15T14:17:41.366537Z'
+  support: supports
+  snapshot_sha256: 30c1ac57cbacfa84621415714c2c21b7e549dba19aeffdc0d1b3989440d3b5d9
+  summary: Correct target, actual codex/GPT-6 actor and creation provenance; no earlier
+    authorship invented.
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'PDF page 97 hureaulite Rn/2007 s.p. and page 1 definitions, exact rows
+    visually checked; current CNMNC homepage independently reopened. Local artifact:
+    /private/tmp/cmm-round95-minerals-research/ima-live.pdf'
+  accessed_at: '2026-10-15T14:17:41.366537Z'
+  support: supports
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  summary: Mineral species name, ideal formula and status resolve. No constituent-element
+    criticality is transferred.
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/hureaulite.pdf
+  locator: 'Complete one-page Handbook entry. Local artifact: /private/tmp/cmm-round96-minerals-research/hureaulite-handbook.pdf'
+  accessed_at: '2026-10-15T14:17:41.366537Z'
+  support: supports
+  snapshot_sha256: 3ccd01d619192544b0fd6f2b9027c1bd58863e566a6b4af3941feec72721d01a
+  summary: Natural mineral scope and historical structure assignment checked against
+    the newer specimen-specific primary report.
+- evidence_id: metadata
+  kind: database
+  reference: https://api.crossref.org/works/10.3390/pr12081622
+  locator: 'Current retrieved DOI metadata, publication identity, license and relation/update
+    fields. Local artifact: /private/tmp/cmm-round96-minerals-research/crossref-hureaulite2024.json'
+  accessed_at: '2026-10-15T14:17:41.366537Z'
+  support: context_only
+  snapshot_sha256: e13197e3efc41230ba3c41b5870f5257a225a945bf70075bfe76dd4f0f0c869b
+  summary: Exact article identity verified. No update-to or updated-by field in retrieved
+    metadata; this is not exhaustive notice absence.
+- evidence_id: search
+  kind: search
+  reference: Bounded independent exact DOI/title correction and related-material searches
+  locator: 'Actual retained web results; original publisher and unrelated results
+    distinguished. Local artifact: /private/tmp/cmm-round96-minerals-independent/bounded-web-search.json'
+  accessed_at: '2026-10-15T14:17:41.366537Z'
+  support: context_only
+  snapshot_sha256: 72e3e87aecf0b07d95124f93cde6f7aacbf3e0a085f40d699ca6e9ab235d7168
+  summary: No affecting formal correction or direct contradictory experiment surfaced
+    in these bounded results.
+  search_scope: 2026-10-15 exact DOI with correction/erratum/retraction; childrenite
+    Homolka Cmca/Bba2/Raman and hureaulite electrochemical proton-transfer criticism
+    queries. Maintained data/records, research, reviews and history searched with
+    rg --no-ignore --hidden --follow. Related rhodochrosite hureaulite-like phase
+    is explicitly not an identification of this mineral. No machine-wide or exhaustive
+    raw-PDF claim. MDPI landing reopen returned 429; accepted official full PDF and
+    SI remained readable.
+- evidence_id: named
+  kind: validation
+  reference: Independent named strict validation
+  locator: 'Actual independently executed command and terminal 2 records / 0 failures.
+    Local artifact: /private/tmp/cmm-round96-minerals-independent/named-validation.log'
+  accessed_at: '2026-10-15T14:17:41.366537Z'
+  support: supports
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+  summary: Both exact reviewed owners passed named schema checks.
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round96-final-gates.json
+  locator: 'Actual four-command terminal batch; log /private/tmp/cmm-round96-final-gates.log
+    SHA256 9a887ac8ef25d2230360d96f1da24b7b79216d078d3323e9c8b3a11405c19ba4. Local
+    artifact: /private/tmp/cmm-round96-final-gates.json'
+  accessed_at: '2026-10-15T14:17:41.366537Z'
+  support: supports
+  snapshot_sha256: 47e870f8d4b80ea7f723c8edd38e0cda0d9d238afecd48690a98fe6f49f5c638
+  summary: Full suite, strict corpus, history against trusted base and rendered pages
+    passed; current owner hash unchanged.
+- evidence_id: main
+  kind: primary_source
+  reference: https://mdpi-res.com/d_attachment/processes/processes-12-01622/article_deploy/processes-12-01622.pdf
+  locator: 'Complete eighteen-page official original; Methods 2.1–2.3, all Figures
+    1–8 and Table 1, especially original Figure 3 page 7 and Table 1 page 9. Local
+    artifact: /private/tmp/cmm-round96-minerals-research/hureaulite2024-official.pdf'
+  accessed_at: '2026-10-15T14:17:41.366537Z'
+  support: supports
+  snapshot_sha256: 762e4b34f3d7b54bfb4b646dab631458e8b391550c77b4172997b7599ecc2745
+  summary: Supports abiotic powder preparation and active-material-normalized electrochemical
+    response; no microbial, ore extraction, recovered metal or deployment demonstration.
+- evidence_id: si
+  kind: primary_source
+  reference: https://mdpi-res.com/d_attachment/processes/processes-12-01622/article_deploy/processes-12-01622-s001.zip
+  locator: 'Complete eleven-page official supplementary PDF; all Figures S1–S13 and
+    equations/methods pages 3–4 and 11 visually read. Local artifact: /private/tmp/cmm-round96-minerals-research/hureaulite-si/processes-3073306-supplementary.pdf'
+  accessed_at: '2026-10-15T14:17:41.366537Z'
+  support: partial
+  snapshot_sha256: 01b46726573b1f27807bf6d7c88ff794ee1fb021b08662806d5dc4ca36a590a2
+  summary: Deconvolution and calculated active thickness are model-based, not direct
+    proton/Mn oxidation-state measurements. Inconsistent surface units and Figure
+    S13 reference label are retained.
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/childrenite.yaml data/records/hureaulite.yaml
+    --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual independently executed pair check passed 2/0; exact owner unchanged.
+  target_ids:
+  - cmmmech:hureaulite
+  evidence_ids:
+  - named
+  - owner
+- check_id: batch0
+  name: Full suite
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal batch receipt and complete log hash verified; exact owner
+    input unchanged.
+  target_ids:
+  - cmmmech:hureaulite
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Strict corpus
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal batch receipt and complete log hash verified; exact owner
+    input unchanged.
+  target_ids:
+  - cmmmech:hureaulite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Canonical histories
+  command: uv run --locked cmmmech validate-history --base 4ef2e0dd88837ef729839ffde8ed828bcbb59cda
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal batch receipt and complete log hash verified; exact owner
+    input unchanged.
+  target_ids:
+  - cmmmech:hureaulite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Rendered pages
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal batch receipt and complete log hash verified; exact owner
+    input unchanged.
+  target_ids:
+  - cmmmech:hureaulite
+  evidence_ids:
+  - batch
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Natural species and synthetic phase assignment
+  outcome: supported
+  summary: IMA Mn2+5(PO3OH)2(PO4)2(H2O)4, renamed status Rn/2007 s.p. and Handbook
+    synthetic C2/c label resolve. Laboratory reagent-derived hureaulite-assigned powder
+    differs from mined natural substituted hureaulite, lithiophilite and a merely
+    hureaulite-like product. No inherited criticality.
+  target_ids:
+  - cmmmech:hureaulite
+  evidence_ids:
+  - owner
+  - ima
+  - handbook
+  - main
+- assessment_id: synthesis
+  area: evidence
+  topic: Abiotic reaction and characterization
+  outcome: supported
+  summary: 5 wt% SDS solution, SDS/Mn 1.8, 70 C one hour, dropwise K2HPO4 at Mn/K2HPO4
+    1 then 24 hours 70 C and washed room-temperature-dried powder are accurate. Powder
+    XRD/reference-pattern and spectroscopy support assignment, not quantified phase
+    purity or product yield; absent SDS-free comparison and unknown absolute volume/pH/replication
+    stay explicit.
+  target_ids:
+  - cmmmech:hureaulite
+  evidence_ids:
+  - owner
+  - main
+  - si
+- assessment_id: measurement
+  area: quantity
+  topic: Electrode recipe and capacitance denominator
+  outcome: supported
+  summary: 70:20:10 active powder/carbon/PTFE, 100 micrometre film, 7 mg/cm2 active
+    loading and reference electrodes are accurate. 184 F/g at 5 mV/s in 3 M KOH versus
+    16 F/g in 5 M LiNO3 and 15 F/g in 1 M Na2SO4 are three-electrode active-material-normalized
+    values. Figure 8d cycling is explicitly not universal stability; no complete-device
+    energy or metal recovery claim.
+  target_ids:
+  - cmmmech:hureaulite
+  evidence_ids:
+  - owner
+  - main
+  - si
+- assessment_id: cause
+  area: evidence
+  topic: Model interpretation and controls
+  outcome: supported
+  summary: Electrolytes alter several variables simultaneously. No proved pH-only
+    cause, directly measured ion occupancy, unique Grotthuss/MnII–MnIII pathway, blank
+    subtraction, post-cycling mineralogy or dissolved-Mn balance is inferred. Trasatti–Dunn
+    components and one-electron active depth are fitted/modelled. The separate two-electrode
+    cell uses 5 M KOH and must not inherit all three-electrode conditions.
+  target_ids:
+  - cmmmech:hureaulite
+  evidence_ids:
+  - owner
+  - main
+  - si
+- assessment_id: conflicts
+  area: consistency
+  topic: Concentration, unit and reference labels
+  outcome: supported
+  summary: Main Table 1 says 1 M K3PO4 while Methods/Figures 3 and 6 say 3 M; original
+    Fig3b/d visually confirms 3 M. Equations omit displayed Wh/second conversion;
+    SI page 11 surface units and S13 Ag/AgCl device label conflict. Record retains
+    these and adopts no disputed energy/power/active-depth value.
+  target_ids:
+  - cmmmech:hureaulite
+  evidence_ids:
+  - owner
+  - main
+  - si
+- assessment_id: provenance
+  area: provenance
+  topic: Actual creation, scope and checks
+  outcome: supported
+  summary: Exact owner and canonical CREATE hashes match native inspection. Actual
+    codex/GPT-6 actor and inline event are separate provenance. Completed batch and
+    named checks establish validity, not scientific truth.
+  target_ids:
+  - cmmmech:hureaulite
+  evidence_ids:
+  - owner
+  - history
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- Phase assignment lacks quantitative purity/yield and matched surfactant-free controls;
+  no microbial or ore-recovery evidence adopted.
+- Mechanistic deconvolution, proton transfer and active thickness remain interpretations,
+  with no operando ion/oxidation-state or post-cycling phase proof.
+- Unresolved original electrolyte/unit/reference labels constrain exact energy, power
+  and cross-device comparisons.
+- Bounded correction/counterevidence search is not universal absence. Original MDPI
+  landing reopen returned 429, but complete accepted official main/SI bytes were available
+  and independently read.
+- Whole-corpus native review checker and final exact-hash coverage run separately
+  after these bundles are saved.
+notes:
+- Source reading began during curation preparation; actual target judgment began after
+  retained native inspection at the recorded start.
+- No scientific self-acceptance for the separately authored wood-ash owner. No Git/GitHub
+  or owner mutations performed.
+```

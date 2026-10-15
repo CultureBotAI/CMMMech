@@ -1,0 +1,1 @@
+After independent successor review, the original-main preservation receipt prerequisite was restored and strengthened with live baseline-file checks. The final fixture suite adds a preservation-binding rejection and passes16 scenarios. Prior15-case evidence remains retained. The actual complete prepared-state check follows final publication-package review.
