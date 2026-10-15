@@ -1,0 +1,52 @@
+{
+  "created_at": "2026-10-15T21:28:29.970333+00:00",
+  "kind": "local operational correction successor",
+  "reviewer": "codex /root/round100_vanadium (GPT-6; codex)",
+  "previous_assessment": "/private/tmp/cmm-round103-helper-audit/20261015T212520Z-template-guard-assessment.json",
+  "finding_id": "receipt-reservation-before-mutations",
+  "disposition": "Correction implemented and isolated regression passed; independent root patch/test assessment remains pending.",
+  "fix": "Both helpers exclusively reserve their final receipt before configuration reads and before side effects; success/failure is recorded through the reserved handle. Pre-existing regular or symlink receipts are left intact.",
+  "changes": [
+    {
+      "helper": "/private/tmp/cmm-round103-push-pr.py",
+      "before_sha256": "b0d386a6d6af4186d87c3c16ef100875f0effff80baa12a23fb9cc08e8758860",
+      "after_sha256": "c7700556d68ae42d7476c8662096e10c2eb82d93094b48547a665561f0ae08e0",
+      "before_snapshot": "/private/tmp/cmm-round103-helper-audit/push-pr-before-receipt-fix.py"
+    },
+    {
+      "helper": "/private/tmp/cmm-round103-archive.py",
+      "before_sha256": "c92c23ec75ad03658137c129e209c15d7027b013bbbe750275465172355b5920",
+      "after_sha256": "23d4715d04c7922e08b9c9848d0f3cff9b15fd6432e16ce6c0f2fc2e7de2d7a3",
+      "before_snapshot": "/private/tmp/cmm-round103-helper-audit/archive-before-receipt-fix.py"
+    }
+  ],
+  "tests": {
+    "count": 16,
+    "passed": true,
+    "scope": "All original/corrected helper AST copies relocate both /private/tmp and original main to per-case TemporaryDirectory. subprocess.run is stubbed for the entire execution. No real Git/GH subprocess, repository, network or external ref is touched. Occupied regular/valid-symlink/dangling-symlink bytes and identity are preserved. Original-before cases reproduce effects-before-failure; corrected-after cases prevent them. Empty-path success and missing-config failure both retain terminal receipts."
+  },
+  "artifacts": [
+    {
+      "path": "/private/tmp/cmm-round103-helper-audit/test-receipt-guards.py",
+      "sha256": "576fcb9092f8ca5bcadf6beb87be20314914c6b140cae0456d6d16225382dda2"
+    },
+    {
+      "path": "/private/tmp/cmm-round103-helper-audit/receipt-guard-regression.json",
+      "sha256": "1515c18807880e008c3e916d808c0678291d3a71eaeaa0321afe2f9906c0bcfe"
+    },
+    {
+      "path": "/private/tmp/cmm-round103-helper-audit/receipt-fix-changes.json",
+      "sha256": "3adb58d7aedb7a3f21922ed4af7e51f974325f7c91b200dfecabd6bdf40c3bc2"
+    },
+    {
+      "path": "/private/tmp/cmm-round103-helper-audit/push-pr-receipt-fix.diff",
+      "sha256": "2b92046d8a4cb025366c6aa84aa28a70b404a9c1582a77f0b36f5dcf1ffe0a95"
+    },
+    {
+      "path": "/private/tmp/cmm-round103-helper-audit/archive-receipt-fix.diff",
+      "sha256": "8bd5a3cd070267993e67fd06a8b887d0dc9bf16e56bb36c2bb945a48898892a6"
+    }
+  ],
+  "execution_boundary": "Only AST-relocated copies ran inside per-case temporary directories with every subprocess.run stubbed. No real Git/GH process or checkout mutation. No real publication helper executed.",
+  "remaining": "All concrete round103 runtime bindings, final counts and archive narrative remain to be resolved from actual publication evidence and independently checked."
+}

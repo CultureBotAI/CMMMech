@@ -1,0 +1,7 @@
+Adds seven reviewed records: autunite, inyoite, rhabdophane-(Ce), rhabdophane-(La), szaibelyite, torbernite and spent vanadium flow-battery electrolyte, bringing the corpus to 508. Each has primary-source provenance, canonical CREATE history, generated pages and an independent exact-file scientific review. Synthetic/natural specimens, hydration states, abiotic transformations, product recovery and capacity regeneration remain distinct; source contradictions are retained.
+
+Validation: `just check` (317 passed, 3 skipped), strict `--require-records` validation, append-only history, page freshness and native review checks. Whole-corpus coverage binds 508 current records, 579 histories, 596 native reviews and 104 available review bases. No schema, validator, governed-file or repository code change was needed.
+
+Publication review corrected receipt reservation in temporary push/archive/issue helpers, with 24 isolated regression cases and saved independent dispositions. Closes #391. Source follow-ups #385–390 remain open; existing microbial source gaps are unchanged.
+
+See [the curation report](research/ingests/round103-frontier-20261015.md) for all owners, per-record reviews, source dossiers and check receipts, and `reviews/publication/20261015-round103/` for publication audits. Queue admission requires a separate exact committed-head review and isolated squash verification; post-merge validation and branch cleanup follow the native queue.

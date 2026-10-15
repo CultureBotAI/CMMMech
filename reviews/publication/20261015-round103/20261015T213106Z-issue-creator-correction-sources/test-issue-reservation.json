@@ -1,0 +1,57 @@
+{
+  "saved_at_utc": "2026-10-15T21:30:27.088285+00:00",
+  "helper_sha256": "55a838aead9338efd18e5bc8ad933aaecf4d5503d91579e92a6e1c3748320a99",
+  "passed": true,
+  "cases": [
+    {
+      "case": "normal",
+      "passed": true,
+      "subprocess_calls": 12,
+      "exception": null
+    },
+    {
+      "case": "occupied_regular",
+      "passed": true,
+      "subprocess_calls": 0,
+      "exception": "FileExistsError"
+    },
+    {
+      "case": "existing_symlink",
+      "passed": true,
+      "subprocess_calls": 0,
+      "exception": "FileExistsError"
+    },
+    {
+      "case": "dangling_symlink",
+      "passed": true,
+      "subprocess_calls": 0,
+      "exception": "FileExistsError"
+    },
+    {
+      "case": "racing_creator",
+      "passed": true,
+      "subprocess_calls": 0,
+      "exception": "FileExistsError"
+    },
+    {
+      "case": "rerun",
+      "passed": true,
+      "subprocess_calls": 0,
+      "exception": "FileExistsError"
+    },
+    {
+      "case": "partial_create_failure",
+      "passed": true,
+      "subprocess_calls": 3,
+      "exception": "AssertionError"
+    },
+    {
+      "case": "post_create_verification_failure",
+      "passed": true,
+      "subprocess_calls": 2,
+      "exception": "AssertionError"
+    }
+  ],
+  "real_successful_receipt_unchanged_sha256": "ffc84e4e262426139f495b574581e9432ae865ded02f47645e5e2ac169b97564",
+  "scope": "Exact helper bytes executed only with temporary path mapping and all subprocess calls mocked. No network/GitHub mutations; original real #385\u2013390 receipt unchanged."
+}

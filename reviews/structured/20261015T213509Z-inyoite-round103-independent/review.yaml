@@ -1,0 +1,429 @@
+schema_version: 1.0.0
+review_id: 20261015T213509Z-inyoite-round103-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Inyoite
+started_at: '2026-10-15T21:23:57.694680Z'
+finished_at: '2026-10-15T21:35:09.343874Z'
+reviewer:
+  identity: codex /root/round100_sulfates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The separate borate curator /root/round100_pentagonite authored
+    this owner. I authored the Ce/La rhabdophane lane, independently inspected these
+    frozen borate bytes and primary sources, and changed neither borate owner nor
+    history.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 44d5b468519eb862b32ef54bf7c066bc0f79ba62
+  state: working_tree
+  inputs:
+  - path: data/records/inyoite.yaml
+    sha256: 4804dad05c88116db1ff401d6ff9bcf44f8066685e48a5c37c63cdc918d0c6bf
+    role: target
+  - path: history/records/inyoite/2026-10-15T212044Z-codex-310aa1.yaml
+    sha256: 48d0a99ec543879428cab1f8541e3a30ebd37944fd5dfea0d1d2106520bbbc3e
+    role: context
+  - path: research/sources/round103-borates/20261015T212242Z-source-investigation.json
+    sha256: f0a6b7b739980bb8b994b2297dc7e335d2db70aa344ee315883343a841b9e0e2
+    role: context
+  - path: research/sources/round103-borates/20261015T212242Z-source-investigation.md
+    sha256: e06285969e3af803b178469b2744433d3d16a53dabdb2968f9bcdfdd052a9ec2
+    role: context
+scope:
+  description: Full frozen maintained owner and canonical CREATE session; dated species
+    authority; claim-bearing original methods, results, figures, tables and accessible
+    supplements; bounded source-conflict and correction checks.
+  selection: Parent-assigned independent review after author freeze.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:inyoite
+targets:
+- target_id: cmmmech:inyoite
+  path: data/records/inyoite.yaml
+  label: Inyoite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/inyoite.yaml
+    role: maintained scientific record
+checks:
+- check_id: science
+  name: Independent primary-evidence assessment
+  required: true
+  status: passed
+  summary: The exact frozen owner and history were inspected before assessment; authority
+    rows and claim-bearing original evidence were independently checked, retaining
+    source conflicts and access limits.
+  target_ids:
+  - cmmmech:inyoite
+  evidence_ids:
+  - owner
+  - ima
+  - search
+- check_id: named
+  name: Independent named record validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/inyoite.yaml data/records/szaibelyite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual independent reviewer execution checked 2 records; 0 failed.
+  target_ids:
+  - cmmmech:inyoite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch gate 1
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified the actual completed coordinator receipt, retained log hash and
+    unchanged frozen owner/history/dossier bytes. Coordinator executed the corpus
+    gate; this reviewer checked its evidence after completion.
+  target_ids:
+  - cmmmech:inyoite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch gate 2
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified the actual completed coordinator receipt, retained log hash and
+    unchanged frozen owner/history/dossier bytes. Coordinator executed the corpus
+    gate; this reviewer checked its evidence after completion.
+  target_ids:
+  - cmmmech:inyoite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch gate 3
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base 44d5b468519eb862b32ef54bf7c066bc0f79ba62
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified the actual completed coordinator receipt, retained log hash and
+    unchanged frozen owner/history/dossier bytes. Coordinator executed the corpus
+    gate; this reviewer checked its evidence after completion.
+  target_ids:
+  - cmmmech:inyoite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch gate 4
+  required: true
+  status: passed
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified the actual completed coordinator receipt, retained log hash and
+    unchanged frozen owner/history/dossier bytes. Coordinator executed the corpus
+    gate; this reviewer checked its evidence after completion.
+  target_ids:
+  - cmmmech:inyoite
+  evidence_ids:
+  - batch
+summary: Inyoite species identity and a single-crystal abiotic pressure transition
+  are supported; source pressure-volume conflicts, unsolved high-pressure structure
+  and absent recovered diffraction are correctly bounded.
+limitations:
+- The complete accepted Revision_1 manuscript and official linked supplements were
+  inspected; the publisher version-of-record PDF was not acquired. Maximum-pressure,
+  2.00-GPa volume and file 10 pressure-comment discrepancies remain unresolved.
+- The high-pressure atomic structure, boron coordination change and transition reversibility
+  are not established; no post-decompression Bragg reflections or isolated product
+  yield is shown.
+- The historical Mount Blanco specimens and the modern museum crystal are different
+  material. Modern specimen collection locality and a new quantitative chemical assay
+  are not reported.
+- No microbial activity, ore-processing performance, boron recovery, concrete performance
+  or commodity criticality is supported by this record. Notice/counterevidence and
+  duplicate searches are bounded.
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/inyoite.yaml
+  locator: Complete maintained record; native inspect before assessment and final
+    hash recheck.
+  accessed_at: '2026-10-15T21:35:09.343874Z'
+  support: supports
+  summary: Exact frozen identity, experimental scope, uncertainties and provenance
+    independently reviewed.
+  snapshot_sha256: 4804dad05c88116db1ff401d6ff9bcf44f8066685e48a5c37c63cdc918d0c6bf
+- evidence_id: history
+  kind: record_content
+  reference: history/records/inyoite/2026-10-15T212044Z-codex-310aa1.yaml
+  locator: Complete canonical CREATE session; separate inline curation_history and
+    linked history_refs.
+  accessed_at: '2026-10-15T21:35:09.343874Z'
+  support: supports
+  summary: UTC creation metadata, codex actor, GPT-6 model, target and summaries agree
+    with current curation; no invented historic authorship or reviewer edits.
+  snapshot_sha256: 48d0a99ec543879428cab1f8541e3a30ebd37944fd5dfea0d1d2106520bbbc3e
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round103-borates/20261015T212242Z-source-investigation.md
+  locator: Frozen paired JSON/Markdown source investigation and underlying access
+    receipts.
+  accessed_at: '2026-10-15T21:35:09.343874Z'
+  support: supports
+  summary: Compared documented access/version limits, source conflicts and material
+    boundaries against the actual originals.
+  snapshot_sha256: e06285969e3af803b178469b2744433d3d16a53dabdb2968f9bcdfdd052a9ec2
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September 2026 list, definitions pp. 1-2; visually inspected exact Inyoite
+    row on PDF p. 102.
+  accessed_at: '2026-10-15T21:35:09.343874Z'
+  support: supports
+  summary: Official dated PDF bytes reused with verified hash; live official authority
+    homepage checked on review date. Grandfathered status and description year are
+    distinct from an approval number.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round103-borates-independent/search-results.json
+  locator: Actual returned web query sets and institutional/authority page responses;
+    dedup paths and issue scope in independent-evidence.json.
+  accessed_at: '2026-10-15T21:35:09.343874Z'
+  support: context_only
+  summary: No formal notice affecting these claims surfaced in the bounded returned
+    sets. Current open-issue title/body inventory contains 105 entries and no exact
+    candidate/alias/DOI match. Hidden/ignored-inclusive local search finds these two
+    new maintained owners and contextual references, not another owner of either species.
+  snapshot_sha256: b9c1744677e17d8f0c79bff1762562a6ac73a013b6456c61f4c1809c2c9bddd3
+  search_scope: 'Three exact DOI searches: 10.1007/s00269-021-01173-3 correction erratum;
+    10.2113/gscanmin.39.1.111 correction retraction; 10.3749/canmin.46.3.671 correction.
+    Live opens of Unimi handle 2434/898884, CNMNC homepage and HAL tel-01027512v1
+    (HAL web-tool response failed; author-acquired complete thesis remains inspectable).
+    rg --no-ignore --hidden --follow on species/alias/DOI strings across records,
+    research, reviews, history, local skills, current issue snapshot and bounded round10/12/101/102/103
+    raw roots; 54 matching paths. Issue comments, all closed issues, whole-machine
+    files and exhaustive binary-PDF semantics were not searched. Scientific evidence
+    comes from originals, not secondary search snippets.'
+- evidence_id: audit
+  kind: search
+  reference: /private/tmp/cmm-round103-borates-independent/independent-evidence.json
+  locator: Reviewer primary-file hashes, initial inspect timestamp, named-validation
+    log and expanded de-duplication result hash.
+  accessed_at: '2026-10-15T21:35:09.343874Z'
+  support: context_only
+  summary: Retains actual inspection and bounded search provenance; independently
+    parsed official supplemental DOCX and CIF metadata are saved separately.
+  snapshot_sha256: 8ee1b67077987fa507099d10c1a85770eccafe2cd8b289931cffa0708d14802b
+  search_scope: Local read-only source/identity audit; no Git/GitHub mutation or external
+    author contact.
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/inyoite.yaml data/records/szaibelyite.yaml
+  locator: /private/tmp/cmm-round103-borates-independent/named-validation.log
+  accessed_at: '2026-10-15T21:35:09.343874Z'
+  support: supports
+  summary: Independent execution checked 2 records with 0 failures. Structural validation
+    does not prove scientific truth.
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round103-final-gates.json
+  locator: Completed coordinator receipt; retained log /private/tmp/cmm-round103-final-gates.log,
+    SHA256 f4f7cd3987bee8509a9d87fce2c0ac9fcdb731dc67a221a8b06b6c0052d1ed1a.
+  accessed_at: '2026-10-15T21:35:09.343874Z'
+  support: supports
+  summary: Four actual terminal zero exits, trusted base and unchanged inputs verified
+    after completion; frozen owner/history/dossier bytes independently rehashed.
+  snapshot_sha256: ef3d0446342aee65fbc39d26d23478afef6891e4ef86fc083805c990b0f9f1c3
+- evidence_id: schaller
+  kind: primary_source
+  reference: https://pubs.usgs.gov/bul/0610/report.pdf
+  locator: Schaller 1916, USGS Bulletin 610, inyoite/meyerhofferite investigation
+    pp. 35-55; claim-bearing pp. 35-40 and Plates I-II visually inspected.
+  accessed_at: '2026-10-15T21:35:09.343874Z'
+  support: supports
+  summary: Mount Blanco locality, glassy inyoite cores and fibrous/prismatic alteration
+    textures are distinct from the modern museum specimen. Printed p.39 states 0.1037
+    g and that boric acid was not determined.
+  snapshot_sha256: 7e1672996db798f23fd008b7a51474b70a6c2a13c93172e0053cae2e229fcf63
+- evidence_id: comboni
+  kind: primary_source
+  reference: https://air.unimi.it/bitstream/2434/898884/6/inyoite_15-12-2021_revision_1.pdf
+  locator: Complete 23-page institutional Revision_1 accepted manuscript; methods/results
+    pp.3-9, all Figures 1-5 and Tables 1-5 plus embedded Table S1 visually checked.
+    Live Unimi handle confirms accepted postprint versus restricted publisher version.
+  accessed_at: '2026-10-15T21:35:09.343874Z'
+  support: supports
+  summary: Single-crystal helium-DAC diffraction supports a pressure-bracketed transition
+    with lower volume and an unsolved high-pressure structure. Original disagreements
+    and absent post-decompression reflections remain explicit.
+  snapshot_sha256: 0e33da5e97074ad925289129d2ac8cae34c48de76bf888b458ed541594f04548
+- evidence_id: supplements
+  kind: primary_source
+  reference: https://doi.org/10.1007/s00269-021-01173-3
+  locator: Official publisher-linked supplement 1 DOCX Table S1 and strain information;
+    all 12 supplement 2-13 CIFs independently parsed. Expanded text/scalar metadata
+    and per-file hashes retained in supplement-independent.json.
+  accessed_at: '2026-10-15T21:35:09.343874Z'
+  support: supports
+  summary: CIFs describe the starting P21/n polymorph near 293 K, ending at 8.25 GPa;
+    at 2.00 GPa the CIF gives 923.96(11) rather than manuscript Table 1 944.0(1).
+    File 10 pressure comment disagrees with its cell metrics and is not silently normalized;
+    no solved inyoite-II structure is supplied.
+  snapshot_sha256: 592fcd8cc784211294d4b359e2fdee99be6fad6a4691bcdd39e5decc9ee59e7f
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Accepted species versus historical and laboratory specimens
+  outcome: supported
+  summary: Species identity and sample provenance remain distinct.
+  details: IMA lists CaB3O3(OH)5(H2O)3·H2O, G status and 1914 description year. The
+    independent 1916 investigation supports Mount Blanco near Death Valley and inferred
+    meyerhofferite alteration; its very small chemical analysis did not directly measure
+    boron. The 2022 introduction attributes Kramer to Schaller, but the new pressure
+    crystal has unreported collection locality. These localities are not substituted
+    for one another. Inyoite-II is an experimental label, not another asserted natural
+    approved species.
+  target_ids:
+  - cmmmech:inyoite
+  evidence_ids:
+  - owner
+  - ima
+  - schaller
+  - comboni
+- assessment_id: protocol
+  area: scope
+  topic: Measured pressure transition and sampling bracket
+  outcome: supported
+  summary: The record supports a narrow abiotic laboratory observation.
+  details: One approximately 20 x 15 x 10 micrometre museum crystal was characterized
+    by single-crystal diffraction and compressed in a membrane-driven DAC at ESRF
+    ID15B with helium medium and ruby calibration, uncertainty 0.05 GPa; CIFs record
+    approximately 293 K. Table 1 and Figures 2-3 bracket the change between 8.25(5)
+    and 8.86(5) GPa, with volumes 824.75(6) and 762(2) cubic angstroms. The approximately
+    7.6% sampled volume drop is not an equilibrium transition pressure, replicate
+    statistic or recovery yield.
+  target_ids:
+  - cmmmech:inyoite
+  evidence_ids:
+  - owner
+  - comboni
+  - supplements
+- assessment_id: model
+  area: evidence
+  topic: High-pressure phase and structural interpretation
+  outcome: supported
+  summary: Unsolved structure and non-recovery are correctly retained.
+  details: Too few sufficiently intense reflections prevent solving inyoite-II. Monoclinic
+    metrics and extinctions suggest P21/n but do not determine its atomic structure.
+    Starting-phase non-hydrogen refinements and O-O distances support deformation
+    interpretation; H positions were not located. Boron three-to-four coordination
+    is an analogy-based hypothesis. Repeated ambient-pressure measurements after decompression
+    produced no reflections, so reversibility or a recovered crystalline product is
+    not established.
+  target_ids:
+  - cmmmech:inyoite
+  evidence_ids:
+  - owner
+  - comboni
+  - supplements
+- assessment_id: conflict
+  area: evidence
+  topic: Pressure-volume inconsistencies and access limits
+  outcome: supported
+  summary: The owner preserves material source conflicts without fabricated corrections.
+  details: Abstract 19.80(5) GPa disagrees with body 18.9 and Table 1 endpoint 18.91(5);
+    Table 1 at 2.00 GPa, 944.0(1) disagrees with matching CIF 923.96(11). File 10
+    starts with a 7.23-GPa comment but its cell volume 864.61(10) matches the manuscript
+    5.19-GPa row; dossier and follow-up retain this extra deposit metadata conflict.
+    The owner imports no reconciled dataset or fitted high-pressure structure. Publisher
+    final PDF was not acquired; institutional Revision_1 and official supplements
+    are the actual assessed versions.
+  target_ids:
+  - cmmmech:inyoite
+  evidence_ids:
+  - owner
+  - dossier
+  - comboni
+  - supplements
+- assessment_id: scope
+  area: scope
+  topic: Material, criticality and biological/deployment boundaries
+  outcome: supported
+  summary: Species and abiotic observations carry no inherited commodity designation.
+  details: 'The maintained object is a mineral species; historical natural specimens,
+    experimental crystal/separates and products are distinguished. Criticality is
+    unrecorded, not declared absent: no authority, jurisdiction, list or edition is
+    inherited from boron/borates. The mechanism explicitly sets microbial:false; organism,
+    strain and biomass state are not applicable. Laboratory diffraction or thermal
+    loss does not establish microbial causation, an isolated elemental product, industrial
+    deployment or processing economics.'
+  target_ids:
+  - cmmmech:inyoite
+  evidence_ids:
+  - owner
+  - ima
+  dimensions:
+  - name: material_form
+    value: mineral species; experimental feed explicitly distinguished
+    definition: Species identity is not identical to every substituted specimen or
+      experimental product.
+    evidence_ids:
+    - owner
+    - ima
+  - name: criticality
+    value: not asserted
+    definition: No jurisdiction/list/edition designation is attached or inherited.
+    evidence_ids:
+    - owner
+  - name: biomass
+    value: not applicable; microbial:false
+    definition: The recorded experiments are abiotic.
+    evidence_ids:
+    - owner
+- assessment_id: provenance
+  area: provenance
+  topic: Exact working-tree bytes and current canonical CREATE
+  outcome: supported
+  summary: Independent review and current provenance are supported.
+  details: Native inspect captured the trusted base and exact owner/history/dossier
+    hashes before assessment. Final frozen bytes match. Inline creation events and
+    canonical CREATE actors/timestamps/targets describe current work without inventing
+    earlier authorship. This reviewer made no owner/history changes. Independent named
+    validation passed; coordinator batch checks were adopted only after actual terminal
+    receipt and log-hash verification.
+  target_ids:
+  - cmmmech:inyoite
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - audit
+  - named
+  - batch
+findings: []
+actions: []
+notes:
+- No supported corrective owner defect was identified at blocker, major, minor or
+  informational severity. No corrections were applied by this reviewer; source gaps
+  remain limitations rather than fabricated closure.
+- This is independent evidence assessment, not independent experimental replication.
+  Author-acquired originals were independently read; the exact authority PDF reuse
+  and live institutional/authority page checks are stated honestly.
+- Source-follow-up drafts about inyoite pressure-volume metadata and szaibélyite protocol/specimen
+  provenance match inspected originals; they propose evidence acquisition, not automatic
+  source correction or new publication claims. No issue creation or author contact
+  was performed by this reviewer.
+- The actual review start is the initial native-inspect receipt timestamp. Batch checks
+  were executed by the coordinator and their results were independently verified after
+  completion. Run the structured-review corpus checker after saving both immutable
+  pairs.

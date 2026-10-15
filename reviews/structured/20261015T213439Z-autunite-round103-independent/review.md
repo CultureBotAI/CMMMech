@@ -1,0 +1,440 @@
+# Independent scientific review of Autunite
+
+- Review: 20261015T213439Z-autunite-round103-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T21:21:22.178148Z
+- Finished UTC: 2026-10-15T21:34:39.257396Z
+- Reviewer: codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of the distinct mineral identity and bounded synthetic-crystal evidence. No corrective owner finding supported.
+
+## Scope And Provenance
+
+Exact complete owner/history with current authority, full original and relevant dependent evidence.
+
+Selection: Assigned frozen owner captured using native inspect before scientific judgment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 44d5b468519eb862b32ef54bf7c066bc0f79ba62.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:autunite | data/records/autunite.yaml | maintained | Autunite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named validation | passed | True | cmmmech:autunite | Actual independent validation: two records, zero failed. |
+| Completed batch gate 1 | passed | True | cmmmech:autunite | Actual coordinator receipt/log verified; did not repeat the full suite. |
+| Completed batch gate 2 | passed | True | cmmmech:autunite | Actual coordinator receipt/log verified; did not repeat the full suite. |
+| Completed batch gate 3 | passed | True | cmmmech:autunite | Actual coordinator receipt/log verified; did not repeat the full suite. |
+| Completed batch gate 4 | passed | True | cmmmech:autunite | Actual coordinator receipt/log verified; did not repeat the full suite. |
+
+## Scientific And Domain Assessments
+
+### Material identity and criticality scope
+
+identity: supported. Targets: cmmmech:autunite.
+
+Distinct mineral species, not element, ion, commodity, group or other hydrate. Current IMA formula/status are dated. No criticality or external species accession is invented.
+
+### Specimen and experimental scope
+
+scope: supported. Targets: cmmmech:autunite.
+
+Complete five-page original and Figures 1-2/Tables 1,2,5 visually inspected. Four-month synthetic growth in calcium-bearing silica gel, capillary growth-solution preservation, Pnma refinement and 86.0(7)% Ca occupancy are supported. Oxonium compensation, constrained hydrogen network and seven-water dehydration product are interpretations.
+
+### Measured structure versus interpretation
+
+evidence: supported. Targets: cmmmech:autunite.
+
+Identity-only owner has no accepted microbial or recovery mechanism. Constrained hydrogen positions are not fully independent observations; structural comparisons and proposed dehydration do not establish kinetics, product yield or deployment.
+
+### Hydration, occupancy and dependent data
+
+quantity: supported. Targets: cmmmech:autunite.
+
+Ideal species formula is distinguished from refined sample occupancy; numbers from separate phases are not transferred. No industrial, criticality or isolated recovery endpoint is inferred.
+
+### Exact owner, history and validation
+
+provenance: supported. Targets: cmmmech:autunite.
+
+Captured working-tree hashes remain unchanged, with an available main-history base. Canonical CREATE and inline history describe actual curation. Named and batch checks completed.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/autunite.yaml; Complete exact maintained owner. Artifact: /private/tmp/CMMMech-expansion-round103-20261015/data/records/autunite.yaml | supports | Frozen mineral identity and qualified evidence independently assessed; no reviewer owner edits. |
+| history | history/records/autunite/2026-10-15T211817Z-codex-071f44.yaml; Canonical CREATE and inline event compared. Artifact: /private/tmp/CMMMech-expansion-round103-20261015/history/records/autunite/2026-10-15T211817Z-codex-071f44.yaml | supports | Actual actor, timestamp, target and scope are consistent; separate provenance formats retained. |
+| named | Independent strict named validation; Complete command receipt and bound log. Artifact: /private/tmp/cmm-round103-uranyl-independent/named.json | supports | Two records checked; zero failures. Structural validation does not prove scientific truth. |
+| batch | /private/tmp/cmm-round103-final-gates.json; Four actual final batch commands; bound log f4f7cd3987bee8509a9d87fce2c0ac9fcdb731dc67a221a8b06b6c0052d1ed1a. Artifact: /private/tmp/cmm-round103-final-gates.json | supports | Verified actual successful exits and unchanged record hashes; no reconstructed execution. |
+| search | Exact DOI correction/erratum/retraction search; Returned result window, 2026-10-15. Artifact: /private/tmp/cmm-round103-uranyl-independent/web-search.json | context_only | No applicable notice surfaced in these bounded result windows. This is not an exhaustive absence claim. |
+| dedup | Local material-identity comparison; rg --no-ignore --hidden --follow across data/records, research/sources, reviews/structured and history/records. Artifact: /private/tmp/cmm-round103-uranyl-independent/dedup.txt | context_only | Reviewed matches distinguish this species from existing hydrate/group mentions; hidden and ignored entries and relevant symlinks included within named roots. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September 2026 legend page 1 and exact species row page 18 visually inspected. Artifact: /private/tmp/cmm-round103-uranium-research/ima202609.pdf | supports | Autunite is G/1852 with eleven waters; torbernite is A/1980 s.p. with twelve. Status years are not invented numbered approvals. |
+| primary | https://doi.org/10.2138/am-2003-0128; All original pages; methods, refinement, tables, figures, discussion and references. Artifact: /private/tmp/cmm-round103-uranium-research/autunite2003.pdf | supports | Complete five-page original and Figures 1-2/Tables 1,2,5 visually inspected. Four-month synthetic growth in calcium-bearing silica gel, capillary growth-solution preservation, Pnma refinement and 86.0(7)% Ca occupancy are supported. Oxonium compensation, constrained hydrogen network and seven-water dehydration product are interpretations. |
+| deposit | https://msaweb.org/MSA/AmMin/TOC/2003/Jan2003_data/AM-03-021.zip; Publisher deposit Table 3 DOC text and complete decoded Table 4 XLS inspected. Artifact: /private/tmp/cmm-round103-uranium-research/autunite2003-deposit.zip | supports | Sixteen atomic-site rows. Independent recount of decoded XLS yields 4318 unique indexed reflection blocks matching main Table 1; dependent experiment, not replication or re-refinement. |
+| deposit_count | Independent decoded-deposit count; Count and explicit decoding limit. Artifact: /private/tmp/cmm-round103-uranyl-independent/deposit-audit.json | supports | Complete curator-decoded sheet was recounted independently; original ZIP and DOC inspected, but no independent XLS decoder or diffraction refinement was run. |
+| erratum1899 | Canadian Mineralogist 2004 page 1899; Complete one-page original visually checked. Artifact: /private/tmp/cmm-round103-uranium-research/erratum2004-1899.pdf | context_only | Generic erratum lead concerns a different paper (Mouska gold or Penikat platinum-group minerals), not either reviewed uranyl structure. |
+| erratum1900 | Canadian Mineralogist 2004 page 1900; Complete one-page original visually checked. Artifact: /private/tmp/cmm-round103-uranium-research/erratum2004-1900.pdf | context_only | Generic erratum lead concerns a different paper (Mouska gold or Penikat platinum-group minerals), not either reviewed uranyl structure. |
+
+## Limits And Additional Notes
+
+- No new laboratory experiment or diffraction re-refinement. Synthetic crystal results do not independently establish every natural occurrence.
+- Searches and primary-paper lineage checks are bounded; historical cited experiments were not all acquired. No universal absence of corrections or contrary literature is claimed.
+- Passing scientific review covers only exact captured owner bytes; batch structural validity is a separate conclusion.
+- Proposed seven-water dehydration product remains distinct from six-water meta-autunite in current IMA; unacquired microbial meta-autunite primary figures remain tracked separately in issue 120.
+- All primary article pages and figures/tables were visually inspected; deposits and absent supplementary material have explicit access/analysis limits.
+- No original source PDF, image or workbook is added to Git. No new schema or validator behavior is required.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T213439Z-autunite-round103-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Autunite
+started_at: '2026-10-15T21:21:22.178148Z'
+finished_at: '2026-10-15T21:34:39.257396Z'
+reviewer:
+  identity: codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored the separate spent-electrolyte record; /root/round100_vanadium
+    authored these uranyl owners. Root independently inspected captured owners and
+    original primary pages; no owner/history edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of the distinct mineral identity and bounded synthetic-crystal
+  evidence. No corrective owner finding supported.
+source:
+  git_revision: 44d5b468519eb862b32ef54bf7c066bc0f79ba62
+  state: working_tree
+  inputs:
+  - path: data/records/autunite.yaml
+    sha256: 51632221cbd54db94cdd7295abf5218a4ed3838de1b9e8f50f92846845cf55ce
+    role: target
+  - path: history/records/autunite/2026-10-15T211817Z-codex-071f44.yaml
+    sha256: 6a8adf0616f306efb01d07fcc016034563edfb8c96d1a55e59d885c572b1c28f
+    role: context
+  - path: research/sources/round103-uranium/20261015T211755Z-source-investigation.json
+    sha256: 299b117b85c6dbb3a253ecea8b6f4e0489492caeea579182602ed2e603d15e87
+    role: context
+  - path: research/sources/round103-uranium/20261015T211755Z-source-investigation.md
+    sha256: b043caa304906a797b0c8370ced95c94e0c64ab5bc10a52ea3ab12fdd38a9997
+    role: context
+scope:
+  description: Exact complete owner/history with current authority, full original
+    and relevant dependent evidence.
+  selection: Assigned frozen owner captured using native inspect before scientific
+    judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:autunite
+targets:
+- target_id: cmmmech:autunite
+  path: data/records/autunite.yaml
+  label: Autunite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/autunite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/autunite.yaml data/records/torbernite.yaml
+    --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Actual independent validation: two records, zero failed.'
+  target_ids:
+  - cmmmech:autunite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed batch gate 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual coordinator receipt/log verified; did not repeat the full suite.
+  target_ids:
+  - cmmmech:autunite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual coordinator receipt/log verified; did not repeat the full suite.
+  target_ids:
+  - cmmmech:autunite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed batch gate 3
+  command: uv run --locked cmmmech validate-history --base 44d5b468519eb862b32ef54bf7c066bc0f79ba62
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual coordinator receipt/log verified; did not repeat the full suite.
+  target_ids:
+  - cmmmech:autunite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual coordinator receipt/log verified; did not repeat the full suite.
+  target_ids:
+  - cmmmech:autunite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/autunite.yaml
+  locator: 'Complete exact maintained owner. Artifact: /private/tmp/CMMMech-expansion-round103-20261015/data/records/autunite.yaml'
+  accessed_at: '2026-10-15T21:34:39.257396Z'
+  support: supports
+  snapshot_sha256: 51632221cbd54db94cdd7295abf5218a4ed3838de1b9e8f50f92846845cf55ce
+  summary: Frozen mineral identity and qualified evidence independently assessed;
+    no reviewer owner edits.
+- evidence_id: history
+  kind: record_content
+  reference: history/records/autunite/2026-10-15T211817Z-codex-071f44.yaml
+  locator: 'Canonical CREATE and inline event compared. Artifact: /private/tmp/CMMMech-expansion-round103-20261015/history/records/autunite/2026-10-15T211817Z-codex-071f44.yaml'
+  accessed_at: '2026-10-15T21:34:39.257396Z'
+  support: supports
+  snapshot_sha256: 6a8adf0616f306efb01d07fcc016034563edfb8c96d1a55e59d885c572b1c28f
+  summary: Actual actor, timestamp, target and scope are consistent; separate provenance
+    formats retained.
+- evidence_id: named
+  kind: validation
+  reference: Independent strict named validation
+  locator: 'Complete command receipt and bound log. Artifact: /private/tmp/cmm-round103-uranyl-independent/named.json'
+  accessed_at: '2026-10-15T21:34:39.257396Z'
+  support: supports
+  snapshot_sha256: a639c472ca28025da13df1d4e31d45af811b50810cf99baaf07d84131937aace
+  summary: Two records checked; zero failures. Structural validation does not prove
+    scientific truth.
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round103-final-gates.json
+  locator: 'Four actual final batch commands; bound log f4f7cd3987bee8509a9d87fce2c0ac9fcdb731dc67a221a8b06b6c0052d1ed1a.
+    Artifact: /private/tmp/cmm-round103-final-gates.json'
+  accessed_at: '2026-10-15T21:34:39.257396Z'
+  support: supports
+  snapshot_sha256: ef3d0446342aee65fbc39d26d23478afef6891e4ef86fc083805c990b0f9f1c3
+  summary: Verified actual successful exits and unchanged record hashes; no reconstructed
+    execution.
+- evidence_id: search
+  kind: search
+  reference: Exact DOI correction/erratum/retraction search
+  locator: 'Returned result window, 2026-10-15. Artifact: /private/tmp/cmm-round103-uranyl-independent/web-search.json'
+  accessed_at: '2026-10-15T21:34:39.257396Z'
+  support: context_only
+  snapshot_sha256: 8c90c7391aec73b5233ddcfbe30ee5576e25e48b316ee20274e46b92fc75caa1
+  summary: No applicable notice surfaced in these bounded result windows. This is
+    not an exhaustive absence claim.
+  search_scope: Two exact-DOI queries with correction erratum retraction; first returned
+    result windows only. Curator source dossier includes independent earlier queries
+    and two acquired generic errata.
+- evidence_id: dedup
+  kind: search
+  reference: Local material-identity comparison
+  locator: 'rg --no-ignore --hidden --follow across data/records, research/sources,
+    reviews/structured and history/records. Artifact: /private/tmp/cmm-round103-uranyl-independent/dedup.txt'
+  accessed_at: '2026-10-15T21:34:39.257396Z'
+  support: context_only
+  snapshot_sha256: 0f93a96a00ea48c2a4b7d17cca71b17408bad9d886cc7581ea29ecea390dcbe6
+  summary: Reviewed matches distinguish this species from existing hydrate/group mentions;
+    hidden and ignored entries and relevant symlinks included within named roots.
+  search_scope: Named worktree roots, case-sensitive autunite|torbernite; bounded
+    scope, not a machine-wide absence claim.
+- evidence_id: ima
+  kind: database
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'September 2026 legend page 1 and exact species row page 18 visually inspected.
+    Artifact: /private/tmp/cmm-round103-uranium-research/ima202609.pdf'
+  accessed_at: '2026-10-15T21:34:39.257396Z'
+  support: supports
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  summary: Autunite is G/1852 with eleven waters; torbernite is A/1980 s.p. with twelve.
+    Status years are not invented numbered approvals.
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.2138/am-2003-0128
+  locator: 'All original pages; methods, refinement, tables, figures, discussion and
+    references. Artifact: /private/tmp/cmm-round103-uranium-research/autunite2003.pdf'
+  accessed_at: '2026-10-15T21:34:39.257396Z'
+  support: supports
+  snapshot_sha256: 7a863e88b5975e643c7a71c5a5f7cd4fa08c21f8c811fba480878bfb1086957b
+  summary: Complete five-page original and Figures 1-2/Tables 1,2,5 visually inspected.
+    Four-month synthetic growth in calcium-bearing silica gel, capillary growth-solution
+    preservation, Pnma refinement and 86.0(7)% Ca occupancy are supported. Oxonium
+    compensation, constrained hydrogen network and seven-water dehydration product
+    are interpretations.
+- evidence_id: deposit
+  kind: primary_source
+  reference: https://msaweb.org/MSA/AmMin/TOC/2003/Jan2003_data/AM-03-021.zip
+  locator: 'Publisher deposit Table 3 DOC text and complete decoded Table 4 XLS inspected.
+    Artifact: /private/tmp/cmm-round103-uranium-research/autunite2003-deposit.zip'
+  accessed_at: '2026-10-15T21:34:39.257396Z'
+  support: supports
+  snapshot_sha256: d71bb74810a79b74b5b1e312030dafca07ce3686ea53fcaf7b914183b2841ed5
+  summary: Sixteen atomic-site rows. Independent recount of decoded XLS yields 4318
+    unique indexed reflection blocks matching main Table 1; dependent experiment,
+    not replication or re-refinement.
+- evidence_id: deposit_count
+  kind: validation
+  reference: Independent decoded-deposit count
+  locator: 'Count and explicit decoding limit. Artifact: /private/tmp/cmm-round103-uranyl-independent/deposit-audit.json'
+  accessed_at: '2026-10-15T21:34:39.257396Z'
+  support: supports
+  snapshot_sha256: 58c59cc4402699dcfd365519520ab5ea6fe1d9c3e67479d3bee1dc2a03703819
+  summary: Complete curator-decoded sheet was recounted independently; original ZIP
+    and DOC inspected, but no independent XLS decoder or diffraction refinement was
+    run.
+- evidence_id: erratum1899
+  kind: primary_source
+  reference: Canadian Mineralogist 2004 page 1899
+  locator: 'Complete one-page original visually checked. Artifact: /private/tmp/cmm-round103-uranium-research/erratum2004-1899.pdf'
+  accessed_at: '2026-10-15T21:34:39.257396Z'
+  support: context_only
+  snapshot_sha256: 85fcaa44b26b7ac7a6ff704ee79c1f746f33341f3004904ea116966f8bf41d93
+  summary: Generic erratum lead concerns a different paper (Mouska gold or Penikat
+    platinum-group minerals), not either reviewed uranyl structure.
+- evidence_id: erratum1900
+  kind: primary_source
+  reference: Canadian Mineralogist 2004 page 1900
+  locator: 'Complete one-page original visually checked. Artifact: /private/tmp/cmm-round103-uranium-research/erratum2004-1900.pdf'
+  accessed_at: '2026-10-15T21:34:39.257396Z'
+  support: context_only
+  snapshot_sha256: 1016a0aeb557eecc43bc02f60890d21f79bd876a9ac859bb5711ea591a612ffc
+  summary: Generic erratum lead concerns a different paper (Mouska gold or Penikat
+    platinum-group minerals), not either reviewed uranyl structure.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Material identity and criticality scope
+  outcome: supported
+  summary: Distinct mineral species, not element, ion, commodity, group or other hydrate.
+    Current IMA formula/status are dated. No criticality or external species accession
+    is invented.
+  target_ids:
+  - cmmmech:autunite
+  evidence_ids:
+  - owner
+  - ima
+  - dedup
+- assessment_id: specimen
+  area: scope
+  topic: Specimen and experimental scope
+  outcome: supported
+  summary: Complete five-page original and Figures 1-2/Tables 1,2,5 visually inspected.
+    Four-month synthetic growth in calcium-bearing silica gel, capillary growth-solution
+    preservation, Pnma refinement and 86.0(7)% Ca occupancy are supported. Oxonium
+    compensation, constrained hydrogen network and seven-water dehydration product
+    are interpretations.
+  target_ids:
+  - cmmmech:autunite
+  evidence_ids:
+  - primary
+  - owner
+- assessment_id: causality
+  area: evidence
+  topic: Measured structure versus interpretation
+  outcome: supported
+  summary: Identity-only owner has no accepted microbial or recovery mechanism. Constrained
+    hydrogen positions are not fully independent observations; structural comparisons
+    and proposed dehydration do not establish kinetics, product yield or deployment.
+  target_ids:
+  - cmmmech:autunite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: quantities
+  area: quantity
+  topic: Hydration, occupancy and dependent data
+  outcome: supported
+  summary: Ideal species formula is distinguished from refined sample occupancy; numbers
+    from separate phases are not transferred. No industrial, criticality or isolated
+    recovery endpoint is inferred.
+  target_ids:
+  - cmmmech:autunite
+  evidence_ids:
+  - owner
+  - primary
+  - ima
+  - deposit
+  - deposit_count
+- assessment_id: provenance
+  area: provenance
+  topic: Exact owner, history and validation
+  outcome: supported
+  summary: Captured working-tree hashes remain unchanged, with an available main-history
+    base. Canonical CREATE and inline history describe actual curation. Named and
+    batch checks completed.
+  target_ids:
+  - cmmmech:autunite
+  evidence_ids:
+  - history
+  - owner
+  - named
+  - batch
+  - search
+findings: []
+actions: []
+limitations:
+- No new laboratory experiment or diffraction re-refinement. Synthetic crystal results
+  do not independently establish every natural occurrence.
+- Searches and primary-paper lineage checks are bounded; historical cited experiments
+  were not all acquired. No universal absence of corrections or contrary literature
+  is claimed.
+- Passing scientific review covers only exact captured owner bytes; batch structural
+  validity is a separate conclusion.
+- Proposed seven-water dehydration product remains distinct from six-water meta-autunite
+  in current IMA; unacquired microbial meta-autunite primary figures remain tracked
+  separately in issue 120.
+notes:
+- All primary article pages and figures/tables were visually inspected; deposits and
+  absent supplementary material have explicit access/analysis limits.
+- No original source PDF, image or workbook is added to Git. No new schema or validator
+  behavior is required.
+```

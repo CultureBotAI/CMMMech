@@ -1,0 +1,175 @@
+{
+  "created_at": "2026-10-15T21:25:20.971951+00:00",
+  "reviewer": "codex /root/round100_vanadium (GPT-6; codex)",
+  "scope": "Static read-only review of prior helper patterns plus self-check of exact round103 binding-only adaptations. Independent final concrete binding review remains required. No helper executed.",
+  "authorization": "Existing user authorization covers publication; pending clearance is technical, not a new permission request.",
+  "verdict": "Templates prepared; concrete execution bindings and one bounded receipt-occupation defect remain for coordinator disposition.",
+  "actual_inventory_before_new_review_saves": {
+    "records": 508,
+    "histories": 579,
+    "structured_reviews": 589,
+    "review_bases": 103
+  },
+  "provisional_final_counts": {
+    "records": 508,
+    "histories": 579,
+    "structured_reviews": 596,
+    "review_bases": 104,
+    "exact_scientific_coverage": 508
+  },
+  "guard_assessment": {
+    "exact_commit_tree_base": "Queue binds exact preflight mode/base/head/tree, required commands, coverage/log/helper/config hashes, live clean topic state and current main. All head/tree/PR/preflight sentinels must be replaced only from actual results.",
+    "head_and_repo_refs": "Queue retains explicit main/head branch and both repository full-name assertions.",
+    "latest_hosted_attempt": "Collector retains all matching run pages, newest run/attempt selection, attempt jobs/checks/annotations and final re-list; independent semantic review still needed.",
+    "queue_merge_linkage": "Collector retains exact merged tree/base parent and queue base-ancestry checks.",
+    "branch_cleanup": "Remote expected-head force-with-lease and local expected-old-OID update-ref after detach/worktree-owner check are retained. Harmless branch config retained.",
+    "main_preservation": "Finalizer retains exact current-round preservation digest, hidden/ignored hashes/modes/symlink identity, newly tracked collision check and --no-overwrite-ignore fast-forward. Inventory has 9309 entries.",
+    "retained_tag": "Prior evidence tag object fc4040c3abcd28f0a9cc52467e308100144ad1fd and peeled c0adc2c0763e1515ed07dc712b024974d98fb342 unchanged.",
+    "receipt_exclusivity": "Coverage/preflight/queue/cleanup/commit/finalizer reserve exclusive output paths before dependent operations. Push-PR and archive final receipt slots are only opened after mutations; see finding.",
+    "semantic_hosted_verdict": "Known intentional limit retained: finalizer loads/hashes hosted assessment but coordinator must semantically assess PASS before invocation."
+  },
+  "findings": [
+    {
+      "id": "receipt-reservation-before-mutations",
+      "severity": "minor",
+      "status": "open",
+      "certainty": "supported by static control flow; no real helper executed",
+      "affected_helpers": [
+        "/private/tmp/cmm-round103-push-pr.py",
+        "/private/tmp/cmm-round103-archive.py"
+      ],
+      "description": "Push-PR creates the remote branch and PR before attempting exclusive creation of pr-created.json. Archive populates the ignored main archive before attempting exclusive creation of archive-receipt.json. A pre-existing final receipt path can therefore cause failure after externally visible or local archival effects. Existing path refusal prevents receipt overwrite but is too late to prevent those effects.",
+      "recommended_fix": "Reserve each output receipt with open(x) before the first mutation, retain a try/finally terminal receipt through that already-owned handle, and preserve existing files. For push-PR include explicit repo/source identity checks in later binding review.",
+      "acceptance": "Isolated stub test with occupied receipt must fail without reaching any push/PR creation or archive-write operation; empty receipt path still permits controlled success/failure receipt writing. No real Git/GitHub mutation for regression."
+    }
+  ],
+  "limits": [
+    "The final live-main read is not atomic with queue admission; native queue checks and actual merged-tree/parent checks remain necessary.",
+    "Latest run/attempt observations are non-atomic; a later re-run can supersede the collector snapshot.",
+    "Local worktree-owner check and ref CAS cannot atomically lock all concurrent worktree registration; expected-old-OID deletion protects ref changes, and later absence/preservation checks remain bounded observations.",
+    "Actual counts/coverage, title, issue dispositions, PR number/head/tree, preflight path and archive summary remain unresolved templates. No scientific or publication PASS implied."
+  ],
+  "artifacts": [
+    {
+      "name": "isolated-coverage",
+      "original_path": "/private/tmp/cmm-round102-isolated-coverage.py",
+      "original_snapshot": "/private/tmp/cmm-round103-helper-audit/round102-isolated-coverage-original.py",
+      "original_sha256": "eadfdb3a154e892d147a05618fcbc0b7a51922eb1f8d6f590817fc8ae4ca9e8c",
+      "adapted_path": "/private/tmp/cmm-round103-isolated-coverage.py",
+      "adapted_sha256": "499119c09560d1caa1f27ae04476ebefea09740104788e74ffbce0eb49779a34",
+      "ast_parse": "passed",
+      "unresolved_binding_lines": []
+    },
+    {
+      "name": "isolated-verification",
+      "original_path": "/private/tmp/cmm-round102-isolated-verification.py",
+      "original_snapshot": "/private/tmp/cmm-round103-helper-audit/round102-isolated-verification-original.py",
+      "original_sha256": "94f1fc379602c715e53acc9d9df1e27525540e12e887719a6a3b2da8393994a2",
+      "adapted_path": "/private/tmp/cmm-round103-isolated-verification.py",
+      "adapted_sha256": "041e6039177f42fd21542153664376c19a74379e5262f99a30295351f142d079",
+      "ast_parse": "passed",
+      "unresolved_binding_lines": []
+    },
+    {
+      "name": "queue",
+      "original_path": "/private/tmp/cmm-round102-queue.py",
+      "original_snapshot": "/private/tmp/cmm-round103-helper-audit/round102-queue-original.py",
+      "original_sha256": "b59509041ecdcdd53af3e8b5f215aacc27048df4b2821010622803b89ec516f9",
+      "adapted_path": "/private/tmp/cmm-round103-queue.py",
+      "adapted_sha256": "5307341ff988c7d09825180a468028f36b99f5e61d90008eb53aa55ecb7afc02",
+      "ast_parse": "passed",
+      "unresolved_binding_lines": [
+        "T=Path('/private/tmp');W=T/'CMMMech-expansion-round103-20261015';REPO='CultureBotAI/CMMMech';BASE='44d5b468519eb862b32ef54bf7c066bc0f79ba62';HEAD='ROUND103_TOPIC_HEAD';TREE='ROUND103_TOPIC_TREE';BRANCH='curate/cmm-expansion-round103-20261015'",
+        " c=json.loads((T/'cmm-round103-commit-receipt.json').read_text());pr0=json.loads((T/'cmm-round103-pr-created.json').read_text())['pr'];pre=T/'ROUND103_PREFLIGHT_RECEIPT.json';p=json.loads(pre.read_text());assert p['exit_code']==0 and p['mode']=='preflight' and p['trusted_base']==BASE and p['topic_head']==HEAD and p['expected_tree']==TREE",
+        " pr=api(f'repos/{REPO}/pulls/ROUND103_PR_NUMBER');assert pr['base']['ref']=='main' and pr['head']['ref']==BRANCH and pr['base']['repo']['full_name']==REPO and pr['head']['repo']['full_name']==REPO;assert pr['state']=='open' and not pr['draft'] and pr['head']['sha']==HEAD and pr['base']['sha']==BASE and pr['title']==pr0['title'] and pr['body']==pr0['body']",
+        " files=[x for page in paged(f'repos/{REPO}/pulls/ROUND103_PR_NUMBER/files?per_page=100') for x in page];assert sorted(x['filename'] for x in files)==c['files']",
+        " checks=json.loads(run(['gh','pr','checks','ROUND103_PR_NUMBER','--repo',REPO,'--required','--json','name,state,link']));assert checks and all(x['state']=='SUCCESS' for x in checks) and any(x['name']=='validate-strict' for x in checks)",
+        " posted=json.loads((T/'cmm-round103-posted-review.json').read_text());review=api(f'repos/{REPO}/pulls/ROUND103_PR_NUMBER/reviews/{posted[\"id\"]}');assert review['commit_id']==HEAD and review['state']=='COMMENTED' and review['body']==posted['body']",
+        " comments=[x for page in paged(f'repos/{REPO}/issues/ROUND103_PR_NUMBER/comments?per_page=100') for x in page];inline=[x for page in paged(f'repos/{REPO}/pulls/ROUND103_PR_NUMBER/comments?per_page=100') for x in page];reviews=[x for page in paged(f'repos/{REPO}/pulls/ROUND103_PR_NUMBER/reviews?per_page=100') for x in page];assert not comments and not inline and [x['id'] for x in reviews]==[posted['id']], 'New discussion requires assessment'",
+        " r['queue_output']=run(['gh','pr','merge','ROUND103_PR_NUMBER','--repo',REPO,'--match-head-commit',HEAD]);r['exit_code']=0"
+      ]
+    },
+    {
+      "name": "cleanup",
+      "original_path": "/private/tmp/cmm-round102-cleanup.py",
+      "original_snapshot": "/private/tmp/cmm-round103-helper-audit/round102-cleanup-original.py",
+      "original_sha256": "ef8cf449992a12cfa7e3a3110cadfd2896f19b287c7a7fabe71834edf1ef22b2",
+      "adapted_path": "/private/tmp/cmm-round103-cleanup.py",
+      "adapted_sha256": "48324da3e1d895562d9686128928e17c0ec6900ce83a664d17abb9de3fa4f172",
+      "ast_parse": "passed",
+      "unresolved_binding_lines": [
+        "T=Path('/private/tmp');W=T/'CMMMech-expansion-round103-20261015';REPO='CultureBotAI/CMMMech';BASE='44d5b468519eb862b32ef54bf7c066bc0f79ba62';HEAD='ROUND103_TOPIC_HEAD';TREE='ROUND103_TOPIC_TREE';BRANCH='curate/cmm-expansion-round103-20261015';MERGE=sys.argv[1];assert re.fullmatch('[0-9a-f]{40}',MERGE)",
+        " p=api('pulls/ROUND103_PR_NUMBER');assert p['merged'] and p['state']=='closed' and p['merge_commit_sha']==MERGE and p['head']['sha']==HEAD",
+        " r['issues']={str(n):api(f'issues/{n}') for n in [120,'ROUND103_ADDITIONAL_OPEN_ISSUES','ROUND103_CLOSED_ISSUES']}",
+        " assert all(r['issues'][str(n)]['state']=='open' for n in [120,'ROUND103_ADDITIONAL_OPEN_ISSUES'])",
+        " assert all(r['issues'][str(n)]['state']=='closed' for n in ['ROUND103_CLOSED_ISSUES'])"
+      ]
+    },
+    {
+      "name": "push-pr",
+      "original_path": "/private/tmp/cmm-round102-push-pr.py",
+      "original_snapshot": "/private/tmp/cmm-round103-helper-audit/round102-push-pr-original.py",
+      "original_sha256": "c4389e50ad4a77616077f57ee5eb853b9d22778efc116216f6b98f5639dd821f",
+      "adapted_path": "/private/tmp/cmm-round103-push-pr.py",
+      "adapted_sha256": "b0d386a6d6af4186d87c3c16ef100875f0effff80baa12a23fb9cc08e8758860",
+      "ast_parse": "passed",
+      "unresolved_binding_lines": []
+    },
+    {
+      "name": "commit",
+      "original_path": "/private/tmp/cmm-round102-commit.py",
+      "original_snapshot": "/private/tmp/cmm-round103-helper-audit/round102-commit-original.py",
+      "original_sha256": "7a2d906b45fb6ddd093edab2af9f90f35eb678bb74b17793b2b0fa5ea1f3147b",
+      "adapted_path": "/private/tmp/cmm-round103-commit.py",
+      "adapted_sha256": "a6cec65a23ddcb41598f8b8ad7101b74f1c96a5fffe093a54eee14fb6c3260cb",
+      "ast_parse": "passed",
+      "unresolved_binding_lines": []
+    },
+    {
+      "name": "hosted-final-collector",
+      "original_path": "/private/tmp/cmm-round102-hosted-final-collector.py",
+      "original_snapshot": "/private/tmp/cmm-round103-helper-audit/round102-hosted-final-collector-original.py",
+      "original_sha256": "9c9471e9b2017fbee83214ff8f736e45dd2067393ecc21bf171db393a702acb6",
+      "adapted_path": "/private/tmp/cmm-round103-hosted-final-collector.py",
+      "adapted_sha256": "1710a363f9b47b9272c59aee466ba83dac33c2638aaef43e9cc6b550a892501e",
+      "ast_parse": "passed",
+      "unresolved_binding_lines": [
+        "topic='ROUND103_TOPIC_HEAD'",
+        "pr=api('pr',repo+'/pulls/ROUND103_PR_NUMBER')",
+        "assert merge['tree']['sha']=='ROUND103_TOPIC_TREE'",
+        "thread_query='''query($endCursor: String) { repository(owner:\"CultureBotAI\",name:\"CMMMech\") { pullRequest(number:ROUND103_PR_NUMBER) { number headRefOid baseRefOid merged mergeCommit { oid } reviewThreads(first:100,after:$endCursor) { pageInfo { hasNextPage endCursor } nodes { id isResolved isOutdated path line comments(first:100) { pageInfo { hasNextPage endCursor } nodes { id databaseId body url createdAt updatedAt author { login } commit { oid } originalCommit { oid } } } } } } } }'''",
+        "surface_specs=[('issue-comments',repo+'/issues/ROUND103_PR_NUMBER/comments?per_page=100'),('reviews',repo+'/pulls/ROUND103_PR_NUMBER/reviews?per_page=100'),('inline-comments',repo+'/pulls/ROUND103_PR_NUMBER/comments?per_page=100'),('pr-events',repo+'/issues/ROUND103_PR_NUMBER/events?per_page=100')]",
+        "with ThreadPoolExecutor(max_workers=4) as pool:issues=list(pool.map(issue,[120,'ROUND103_ADDITIONAL_OPEN_ISSUES','ROUND103_CLOSED_ISSUES']))",
+        "final_pr=api('pr-final',repo+'/pulls/ROUND103_PR_NUMBER')"
+      ]
+    },
+    {
+      "name": "finalize",
+      "original_path": "/private/tmp/cmm-round102-finalize.py",
+      "original_snapshot": "/private/tmp/cmm-round103-helper-audit/round102-finalize-original.py",
+      "original_sha256": "e3017a05de6558c1d00dd57c34afd9ea47c924fa10bcf5a405aeda1b344970bf",
+      "adapted_path": "/private/tmp/cmm-round103-finalize.py",
+      "adapted_sha256": "e39bd47b43a8ef5478bbccea7f1e484906d945997026ce796d8e3472b53fe623",
+      "ast_parse": "passed",
+      "unresolved_binding_lines": [
+        "T=Path('/private/tmp');M=Path('/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech');BASE='44d5b468519eb862b32ef54bf7c066bc0f79ba62';HEAD='ROUND103_TOPIC_HEAD';TREE='ROUND103_TOPIC_TREE';BRANCH='curate/cmm-expansion-round103-20261015'"
+      ]
+    },
+    {
+      "name": "archive",
+      "original_path": "/private/tmp/cmm-round102-archive.py",
+      "original_snapshot": "/private/tmp/cmm-round103-helper-audit/round102-archive-original.py",
+      "original_sha256": "c805ad4fd71c519b44b06e0b177eb85e143e904a751a29d3326fb2b3c7c996e1",
+      "adapted_path": "/private/tmp/cmm-round103-archive.py",
+      "adapted_sha256": "c92c23ec75ad03658137c129e209c15d7027b013bbbe750275465172355b5920",
+      "ast_parse": "passed",
+      "unresolved_binding_lines": [
+        "Validation and issue dispositions: ROUND103_FINAL_VALIDATION_AND_ISSUE_SUMMARY. Populate from actual terminal local, isolated and hosted evidence before execution; no earlier round results are inherited."
+      ]
+    }
+  ],
+  "config_path": "/private/tmp/cmm-round103-helper-config.json",
+  "config_sha256": "2cb8cce2fc6a83b3bebfe3cd3c806ea80b2ae7005d86787feddc9a43c404f511",
+  "preservation_inventory": "/private/tmp/cmm-round103-preservation-before.json",
+  "preservation_sha256": "c2e1c47a348bfffcf18fed9749d39cae6a7767d7e71baa338f3cc3a20d7e0407"
+}

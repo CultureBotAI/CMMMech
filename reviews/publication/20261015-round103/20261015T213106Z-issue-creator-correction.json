@@ -1,0 +1,103 @@
+{
+  "saved_at_utc": "2026-10-15T21:31:06.622316Z",
+  "actor": "codex (GPT-6), /root/round100_pentagonite",
+  "kind": "implementation and regression evidence; independent acceptance pending",
+  "issue_key": "cmmmech:round103-issue-create-reservation",
+  "github_issue": "https://github.com/CultureBotAI/CMMMech/issues/391",
+  "previous_occurrence": {
+    "json": "reviews/publication/20261015-round103/20261015T212926Z-preparation-initial.json",
+    "md": "reviews/publication/20261015-round103/20261015T212926Z-preparation-initial.md",
+    "snapshots": "reviews/publication/20261015-round103/20261015T212926Z-preparation-initial-sources"
+  },
+  "scope": "Narrow correction of previously reproduced pre-mutation receipt-reservation failure in the temporary issue creator. No scientific owner/history/schema change.",
+  "changes": [
+    "Exclusively opens aggregate output before any external mutation; explicit occupied/symlink refusal plus open(x) handles races.",
+    "Journals active mutation response and post-create verification response, preserving known URL/number on failed verification and verified earlier issues on later failure.",
+    "Writes terminal failed receipt on exceptions using the exclusively reserved file descriptor; successful output remains the established array of six verified issues."
+  ],
+  "files": [
+    {
+      "path": "/private/tmp/cmm-round103-create-issues.py",
+      "sha256": "55a838aead9338efd18e5bc8ad933aaecf4d5503d91579e92a6e1c3748320a99",
+      "snapshot": "reviews/publication/20261015-round103/20261015T213106Z-issue-creator-correction-sources/cmm-round103-create-issues.py"
+    },
+    {
+      "path": "/private/tmp/cmm-round103-ree-review/test-issue-reservation.py",
+      "sha256": "da2e490b7bf9aa2b55992364cd062d80e88c98eed2e5987f4de32ab468460179",
+      "snapshot": "reviews/publication/20261015-round103/20261015T213106Z-issue-creator-correction-sources/test-issue-reservation.py"
+    },
+    {
+      "path": "/private/tmp/cmm-round103-ree-review/test-issue-reservation.json",
+      "sha256": "b37936166de9beb44bd5d927ecf2861c1f46d651d8192845268d56003aecbee0",
+      "snapshot": "reviews/publication/20261015-round103/20261015T213106Z-issue-creator-correction-sources/test-issue-reservation.json"
+    }
+  ],
+  "regression": {
+    "saved_at_utc": "2026-10-15T21:30:27.088285+00:00",
+    "helper_sha256": "55a838aead9338efd18e5bc8ad933aaecf4d5503d91579e92a6e1c3748320a99",
+    "passed": true,
+    "cases": [
+      {
+        "case": "normal",
+        "passed": true,
+        "subprocess_calls": 12,
+        "exception": null
+      },
+      {
+        "case": "occupied_regular",
+        "passed": true,
+        "subprocess_calls": 0,
+        "exception": "FileExistsError"
+      },
+      {
+        "case": "existing_symlink",
+        "passed": true,
+        "subprocess_calls": 0,
+        "exception": "FileExistsError"
+      },
+      {
+        "case": "dangling_symlink",
+        "passed": true,
+        "subprocess_calls": 0,
+        "exception": "FileExistsError"
+      },
+      {
+        "case": "racing_creator",
+        "passed": true,
+        "subprocess_calls": 0,
+        "exception": "FileExistsError"
+      },
+      {
+        "case": "rerun",
+        "passed": true,
+        "subprocess_calls": 0,
+        "exception": "FileExistsError"
+      },
+      {
+        "case": "partial_create_failure",
+        "passed": true,
+        "subprocess_calls": 3,
+        "exception": "AssertionError"
+      },
+      {
+        "case": "post_create_verification_failure",
+        "passed": true,
+        "subprocess_calls": 2,
+        "exception": "AssertionError"
+      }
+    ],
+    "real_successful_receipt_unchanged_sha256": "ffc84e4e262426139f495b574581e9432ae865ded02f47645e5e2ac169b97564",
+    "scope": "Exact helper bytes executed only with temporary path mapping and all subprocess calls mocked. No network/GitHub mutations; original real #385\u2013390 receipt unchanged."
+  },
+  "real_receipt": {
+    "path": "/private/tmp/cmm-round103-source-issues.json",
+    "sha256": "ffc84e4e262426139f495b574581e9432ae865ded02f47645e5e2ac169b97564",
+    "unchanged": true
+  },
+  "disposition": "Correction implemented and eight isolated regressions passed. The actor implemented this fix after identifying it; this artifact does not claim independent acceptance. Coordinator and separate peer review requested.",
+  "limitations": [
+    "No real issue creation replay was performed. #385\u2013390 retain their original successful receipt.",
+    "A failed mutation may have an ambiguous external result; the terminal receipt retains available stdout/stderr and active stage for manual reconciliation and blocks automatic rerun.",
+    "Process termination beyond Python exception handling may retain in-progress state; exclusive reservation still blocks replay. No distributed transaction guarantee is asserted."
+  ]
+}

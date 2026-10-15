@@ -8,13 +8,20 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 501 material records.
+The catalogue currently contains 508 material records.
 
-The [latest curation report](research/ingests/round102-frontier-20261015.md) links
+The [latest curation report](research/ingests/round103-frontier-20261015.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Autunite](data/records/autunite.yaml) | Current mineral identity and synthetic-crystal structure | Partial calcium occupancy and constrained hydrogen model; proposed hydrate remains distinct |
+| [Inyoite](data/records/inyoite.yaml) | Natural identity and laboratory high-pressure diffraction | Conflicting pressure and cell-volume values across manuscript and deposits |
+| [Rhabdophane-(Ce)](data/records/rhabdophane-ce.yaml) | Natural identity and abiotic hydrothermal replacement | Run-mass and low-pH conversion discrepancies; no microbial recovery claim |
+| [Rhabdophane-(La)](data/records/rhabdophane-la.yaml) | Natural identity and synthetic thermal transformation | Corrected formula-calculation guidance and specimen-specific hydration |
+| [Spent vanadium flow-battery electrolyte](data/records/spent-vanadium-flow-battery-electrolyte.yaml) | Abiotic salt recovery and separate electrochemical regeneration | Conflicting pH and arm-specific capacity values; product and capacity metrics differ |
+| [Szaibélyite](data/records/szaibelyite.yaml) | Natural-crystal identity and abiotic thermal breakdown | Impure separates, conflicting atmosphere/ramp descriptions and distinct locality arms |
+| [Torbernite](data/records/torbernite.yaml) | Current mineral identity and synthetic-crystal structure | Separate hydration states and constrained hydrogen model; reflection deposit unacquired |
 | [Borax](data/records/borax.yaml) | Laboratory-recrystallized borax structure and abiotic thermal dehydration | Distinct powder and single-crystal protocols; conflicting DSC range |
 | [Carbonatite-associated rare-earth ore](data/records/carbonatite-associated-rare-earth-ore.yaml) | Culture pretreatment followed by acid leaching of a real ore | Missing matched sterile-medium pretreatment; bulk extraction is not a mineral-specific recovery yield |
 | [Navajoite](data/records/navajoite.yaml) | Original identity and later diffraction reassessment | Mixed or reidentified specimens, inherited chemical analysis and unresolved structure |
