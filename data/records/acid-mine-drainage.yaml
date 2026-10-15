@@ -1,0 +1,178 @@
+id: cmmmech:acid-mine-drainage
+name: Acid mine drainage
+material_kind: secondary_resource
+description: >-
+  Acidic, metal- and sulfate-bearing drainage generated when mining exposes
+  sulfide-bearing materials to oxidation. This record denotes the heterogeneous
+  liquid mine-derived feed, distinct from natural ore, individual dissolved
+  elements, coal-mine-drainage treatment solids, and isolated precipitate phases.
+  The characterized Brazilian copper-mine and South African mining-facility
+  waters below are separate source-specific samples, not a universal composition
+  or interchangeable reactor feed. No constituent criticality designation or
+  industrial recovery performance is transferred to this resource.
+sources:
+  - id: silva2019
+    title: >-
+      Silva et al. (2019). Covellite (CuS) Production from a Real Acid Mine
+      Drainage Treated with Biogenic H2S. Metals 9(2), 206. Complete retained
+      publisher PDF/XML; Sections 2.1-2.3, Figures 1-5 and Tables 1-4.
+      Publisher version notes identify the 22 February 2019 updated version;
+      the composition and yield limitations are preserved.
+    url: https://doi.org/10.3390/met9020206
+    accessed_on: '2026-10-15'
+  - id: silva_versions
+    title: >-
+      Publisher article version notes for Silva et al. (2019): original
+      9 February and updated version of record 22 February 2019, with later
+      HTML updates. Version metadata does not establish a separate experiment.
+    url: https://www.mdpi.com/2075-4701/9/2/206/notes
+    accessed_on: '2026-10-15'
+  - id: akinpelu2021
+    title: >-
+      Akinpelu et al. (2021). Performance of microbial community dominated by
+      Bacillus spp. in acid mine drainage remediation systems: A focus on the
+      high removal efficiency of SO4(2-), Al(3+), Cd(2+), Cu(2+), Mn(2+), Pb(2+),
+      and Sr(2+). Heliyon 7(6), e07241. Complete six-page published original,
+      Sections 2.1-2.5 and 3.1-3.2, Figures 1-3 and Tables 1-5.
+    url: https://doi.org/10.1016/j.heliyon.2021.e07241
+    accessed_on: '2026-10-15'
+  - id: akinpelu_supplement
+    title: >-
+      Official EuropePMC supplementary archive for PMC8215182, including
+      mmc1.docx Table S1 biochemical test results and original main figures.
+      Test responses are distinct from direct sulfate-reduction enzyme assays.
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8215182/supplementaryFiles
+    accessed_on: '2026-10-15'
+  - id: cited_sequence_study
+    title: >-
+      ENA public read-run inventory for cited SRA study SRP149893, resolving
+      PRJNA474088, SRR7269217, SRX4172875 and SAMN09291489 as wastewater-metagenome
+      material. This returned inventory alone does not map both paper labels Sa
+      and Sb to separate runs or authenticate a causal consortium member.
+    url: https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRP149893&result=read_run&fields=study_accession,study_title,experiment_accession,run_accession,scientific_name,sample_accession&format=tsv
+    accessed_on: '2026-10-15'
+mechanisms:
+  - id: biogenic_sulfide_precipitation
+    name: Off-line precipitation using gas from a sulfidogenic consortium
+    process: separation
+    microbial: true
+    description: >-
+      Gas generated in a separate inoculated sulfate-reducing reactor was
+      sparged into real copper-mine drainage, producing a filterable solid
+      assigned to the covellite crystalline phase. The microorganisms supplied
+      the upstream sulfidogenic system; direct cell contact with the product
+      and a benefit over matched chemical sulfide were not established.
+      The same Silva2019 experiment is represented from its mineral-product
+      perspective in cmmmech:covellite; these records are not independent
+      replication. Collected solid is not a quantified copper recovery yield
+      or a verified high-purity commercial product.
+    context: >-
+      Laboratory study. One-litre drainage samples from an unnamed copper mine
+      in Para State, Brazil had initial pH 5.1 and source-reported soluble Cu
+      325 mg/L, Mn 10.50 mg/L and Zn 0.12 mg/L. Separate exposures lasted 48 or
+      96 h; solids were vacuum-filtered and dried at 60 degrees C overnight.
+      Upstream, a mixed acidophilic sulfate-reducing consortium from anaerobic
+      northern-Chile river sediment occupied a 2.3 L reactor, with 1-2 mm porous
+      glass beads occupying 40% of its volume. Reactor conditions were pH 4.5,
+      30 degrees C, 40 rpm and 150 mL/min N2/CO2 (70/30). Its Cu-free synthetic
+      drainage feed was pH 2.5, with 13.86 mM sulfate, 5 mM glycerol and 0.01%
+      w/v yeast extract. These reactor settings and synthetic feed are not
+      downstream bottle conditions or real-water composition. Quantitative H2S
+      delivery, downstream temperature/mixing, independent replication and
+      matched uninoculated or reagent-H2S comparators are not supplied.
+    evidence:
+      - source_ref: silva2019
+        supports: support
+        explanation: >-
+          Sections 2.1-2.3 and Figure 1 separate the inoculated gas generator
+          from real-water precipitation. Figures 2-3 and 5 and Table 2 support
+          solid collection and the authors' covellite phase assignment. This
+          supports a laboratory separation route using biogenic gas, not a
+          universal biological requirement, direct mineral biosynthesis by a
+          named strain, or industrial deployment.
+      - source_ref: silva2019
+        supports: partial
+        explanation: >-
+          No final aqueous copper concentration, isolated solid mass or closed
+          copper balance is supplied. Table 3 reports Cu/S wt% pairs
+          87.67/73.99 and 70.97/106.08, whose sums exceed 100%; its mass-entry
+          ratios are described elsewhere as molar ratios. These unresolved
+          entries do not establish bulk purity or stoichiometric yield.
+          Final pH 2.1, settling and color changes cannot quantify recovery or
+          identify the proposed intermediate species. The isolated CuS98 label
+          in Section 3.1 conflicts with consistent 96 h arm labels.
+      - source_ref: silva_versions
+        supports: context_only
+        explanation: >-
+          The retained original and prior full-text v2 reconciliation are
+          distinguished in the source dossier; the updated-version metadata
+          is not treated as a correction of the composition or mass-balance gaps.
+  - id: enriched_community_treatment
+    name: Concentration changes during treatment with an enriched community
+    process: other
+    microbial: true
+    description: >-
+      A living mixed community enriched from real drainage was present during
+      laboratory treatment associated with decreasing sulfate and metal
+      concentrations. Sulfate reduction and metal-sulfide precipitation are
+      proposed by the authors, but the reported concentration comparisons,
+      community profiles and biochemical tests do not independently establish
+      a specific precipitate, enzyme, causal species, microbial enhancement
+      over controls, or isolated metal recovery.
+    context: >-
+      Akinpelu2021 used screened drainage from an unnamed mining facility in
+      Mpumalanga, South Africa, stored at 4 degrees C; Table 1 gives raw pH
+      2.9 +/- 0.2 and sulfate 8080 +/- 10 mg/L. Anaerobic Postgate-medium
+      enrichment preceded reactor adaptation for 21 d at 35 degrees C and
+      250 rpm, with source-described pH 7-7.5, 10% inoculum and 0.8 L medium
+      in a 1 L working volume; the exact volume accounting is incomplete.
+      Seventy percent of broth was replaced weekly during adaptation. The
+      source describes daily 100 mL raw-water additions for seven days as
+      continuous operation, followed by 14 d static batch operation. Effluent
+      withdrawal, hydraulic residence time and cumulative sampling/feed mass
+      accounting are not specified sufficiently to reconstruct a balance.
+      A consortium-free control is mentioned, but numerical control outcomes
+      are absent from the inspected main figures/tables and Table S1.
+      Measurements are called triplicate; independent biological reactor
+      replication and the meaning of every reported +/- value remain unclear.
+    evidence:
+      - source_ref: akinpelu2021
+        supports: partial
+        explanation: >-
+          Sections 2.1-2.3 and 3.2, Figures 2-3 and Table 5 support the reported
+          culture-associated concentration comparison. Table 5 reports raw
+          versus post-treatment Cu 0.46 +/- 0.05 versus 0.04 +/- 0.001 mg/L and
+          Fe 2308 +/- 5.51 versus 260.3 +/- 2.78 mg/L. These are source-reported
+          concentrations, not mass yields; the exact Table 5 treatment day and
+          sampled phase are unresolved. ICP-OES after 1% HNO3 treatment does
+          not itself establish the table's ionic oxidation-state labels.
+          Medium-derived ions, dilution, precipitation and sampling losses are
+          not reconciled. Figures 1-3 provide no mineral-phase characterization,
+          and no collected product mass or purity is reported.
+      - source_ref: akinpelu_supplement
+        supports: partial
+        explanation: >-
+          Table S1 supplies pooled biochemical responses, including hydrogen
+          sulfide production, without member-resolved causality or a matched
+          sulfate-reduction enzyme assay. Community abundance and culturable
+          biochemical identifications do not show that a particular Bacillus
+          species or metallo-aminopeptidase caused the observed metal changes.
+      - source_ref: cited_sequence_study
+        supports: context_only
+        explanation: >-
+          The current public inventory returns one wastewater-metagenome run
+          for the cited study. It supports accession provenance only; the
+          mapping to both raw and treated sample labels and organism-specific
+          causal assignments remains unresolved. No species/strain CURIE is
+          assigned to this mixed community.
+curation_history:
+  - timestamp: '2026-10-15T19:32:44Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Curated the mine-derived liquid resource and two qualified laboratory
+      microbial treatment studies from full primary evidence and supplements.
+      Preserved control, composition, mass-balance and sequence-mapping gaps;
+      linked the prior covellite representation of the same 2019 experiment.
+history_refs:
+  - history/records/acid-mine-drainage/2026-10-15T193244Z-codex-81a0ec.yaml

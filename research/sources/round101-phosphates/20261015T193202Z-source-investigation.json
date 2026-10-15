@@ -1,0 +1,454 @@
+{
+  "title": "Round 101: phosphophyllite and laueite source investigation",
+  "investigated_at_utc": "2026-10-15T19:32:02.633779Z",
+  "curator": {
+    "actor": "codex",
+    "model": "GPT-6",
+    "tool": "codex"
+  },
+  "trusted_base": "e8cfa60c53e4c94c6093e23fe983cc71fb59e12f",
+  "worktree": "/private/tmp/CMMMech-expansion-round101-20261015",
+  "scope": "Two distinct natural metal-bearing phosphate species, with primary structural/compositional evidence. Identity-only curation; no inferred criticality or microbial process.",
+  "raw_root": "/private/tmp/cmm-round101-phosphates-research",
+  "status": "Curator evidence handoff; independent scientific review required.",
+  "selection": [
+    {
+      "rank": 1,
+      "name": "Phosphophyllite",
+      "target": "data/records/phosphophyllite.yaml",
+      "reason": "New Zn-Fe phosphate identity supported by a complete natural-crystal refinement, deposited diffraction table and independent locality-composition study. Natural substitution limits are recoverable from primary evidence."
+    },
+    {
+      "rank": 2,
+      "name": "Laueite",
+      "target": "data/records/laueite.yaml",
+      "reason": "New Mn-Fe phosphate identity with a complete original structure and a modern natural composite-crystal study. Explicitly preserves older competing oxidation-state interpretation and deposited model-quality alerts."
+    }
+  ],
+  "deduplication": {
+    "maintained_roots": [
+      "data/records",
+      "research/sources",
+      "reviews",
+      "history"
+    ],
+    "flags": [
+      "--no-ignore",
+      "--hidden",
+      "--follow"
+    ],
+    "exact_receipt": {
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-n",
+        "-i",
+        "phosphophyllite|laueite|10\\.1180/mgm\\.2025\\.21|AM62_812|AM62_818|AM50_1884|AM54_1312",
+        "data/records",
+        "research/sources",
+        "reviews",
+        "history"
+      ],
+      "cwd": "/private/tmp/CMMMech-expansion-round101-20261015",
+      "exit_code": 0,
+      "stdout": "research/sources/round84-phosphates/20261015T001048Z-source-investigation.json:35:      \"\\\"phosphophyllite\\\" \\\"bacteria\\\"\",\nresearch/sources/round88-minerals/20261015T051426Z-source-investigation.json:76:      \"\\\"phosphophyllite\\\" microbial\",\nresearch/sources/round88-minerals/20261015T051426Z-source-investigation.json:81:      \"\\\"phosphophyllite\\\" \\\"bacteria\\\"\",\n",
+      "stderr": "",
+      "interpretation": "Name hits are prior source-discovery query logs and authority inventories, not maintained owners for either selected species. Publication paths and 2025 DOI have no previous accepted experiment owner in the scoped matches."
+    },
+    "raw_receipt": {
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-l",
+        "-i",
+        "phosphophyllite|ferrostrunzite|strunzite|laueite|reddingite",
+        "/private/tmp/cmm-round16-vivianite-raw",
+        "/private/tmp/cmm-round68-phosphates-research",
+        "/private/tmp/cmm-round69-phosphates-research",
+        "/private/tmp/cmm-round77-phosphates-research",
+        "/private/tmp/cmm-round80-phosphates-research",
+        "/private/tmp/cmm-round81-phosphates-research",
+        "/private/tmp/cmm-round82-phosphates-research",
+        "/private/tmp/cmm-round83-phosphates-research",
+        "/private/tmp/cmm-round84-phosphates-research",
+        "/private/tmp/cmm-round85-phosphates-research",
+        "/private/tmp/cmm-round86-minerals-research",
+        "/private/tmp/cmm-round87-minerals-research",
+        "/private/tmp/cmm-round88-minerals-research",
+        "/private/tmp/cmm-round97-phosphates-research",
+        "/private/tmp/cmm-round98-phosphates-research"
+      ],
+      "exit_code": 0,
+      "stdout": "/private/tmp/cmm-round87-minerals-research/dedup-11.txt\n/private/tmp/cmm-round68-phosphates-research/rruff-home.html\n/private/tmp/cmm-round16-vivianite-raw/ima2026-09.txt\n/private/tmp/cmm-round84-phosphates-research/selected-cited-raw-dedup.txt\n/private/tmp/cmm-round77-phosphates-research/dedup-inclusive.txt\n/private/tmp/cmm-round87-minerals-research/dedup-8.txt\n/private/tmp/cmm-round84-phosphates-research/selected-raw-dedup.txt\n/private/tmp/cmm-round84-phosphates-research/chiba2020-landing.html\n/private/tmp/cmm-round83-phosphates-research/retained-search-results.json\n/private/tmp/cmm-round84-phosphates-research/write-dossier.py\n/private/tmp/cmm-round84-phosphates-research/chiba2020.txt\n/private/tmp/cmm-round97-phosphates-research/rruff-references.html\n/private/tmp/cmm-round84-phosphates-research/chiba2020-crossref.json\n/private/tmp/cmm-round77-phosphates-research/switzerite-handbook.txt\n/private/tmp/cmm-round69-phosphates-research/dedup.txt\n/private/tmp/cmm-round88-minerals-research/build-dossier.py\n/private/tmp/cmm-round69-phosphates-research/cattiite-dedup.txt\n/private/tmp/cmm-round97-phosphates-research/phosphoferrite1980.txt\n/private/tmp/cmm-round98-phosphates-research/ludlamite.yaml\n/private/tmp/cmm-round97-phosphates-research/rruff-new-home.html\n/private/tmp/cmm-round98-phosphates-research/dedup-raw-bounded.txt\n/private/tmp/cmm-round98-phosphates-research/ima2026.txt\n/private/tmp/cmm-round98-phosphates-research/dedup-maintained.txt\n/private/tmp/cmm-round97-phosphates-research/phosphoferrite1971.txt\n/private/tmp/cmm-round98-phosphates-research/query-log.txt\n/private/tmp/cmm-round98-phosphates-research/moore1971.txt\n/private/tmp/cmm-round98-phosphates-research/dedup-raw.txt\n/private/tmp/cmm-round98-phosphates-research/write_dossier.py\n/private/tmp/cmm-round86-minerals-research/dedup-raw-1.txt\n",
+      "stderr": "",
+      "not_present_roots": [],
+      "scope": "Selected phosphate/mineral raw roots referenced by matching record/source/review dossiers; generic inherited full-tree raw inventories excluded."
+    },
+    "issue_receipt": {
+      "snapshot": "/private/tmp/cmm-round101-integration-status.json",
+      "count": 257,
+      "hits": []
+    },
+    "issue_snapshot_sha256": "5279c3ff9bbb79570e7077d35ed9b6261e2c3c63b7bbfe2643b02632ba37fb88",
+    "interpretation": "No prior maintained owner for either selected mineral in this scoped hidden/ignored/followed search. Phosphophyllite was a broad microbial search lead in rounds 84 and 88. Reddingite is a deferred round98 lead and remains distinct from the existing phosphoferrite owner. Generic authority lists, query logs and related-species mentions do not constitute accepted owners. All 257 all-state issues were searched by candidate names in their snapshot title/body content; no candidate hit. This is not a machine-wide absence claim or a search of every issue comment."
+  },
+  "search": {
+    "date": "2026-10-15",
+    "provider": "web.run search_query",
+    "queries": [
+      "phosphophyllite crystal structure mineral primary paper pdf",
+      "ferrostrunzite strunzite original description crystal structure pdf",
+      "laueite reddingite crystal structure mineral primary paper pdf",
+      "\"strunzite\" \"The crystal structure\" Fanfani 1978 pdf",
+      "\"Laueite\" \"crystal structure\" Moore 1965 pdf",
+      "\"reddingite\" \"crystal structure\" pdf mineral",
+      "\"Phosphophyllite\" Hill 1977 812 817 pdf",
+      "\"phosphophyllite\" \"Hill\" 1977 correction erratum",
+      "\"laueite\" \"2025\" \"Grey\" correction retraction",
+      "\"phosphophyllite\" microbial bioleaching dissolution",
+      "\"laueite\" microbial bacteria dissolution",
+      "\"phosphophyllite\" \"variation in composition\" erratum correction retraction",
+      "\"10.1180/mgm.2025.21\" correction retraction",
+      "\"laueite\" \"crystal structure\" \"1965\" correction",
+      "\"phosphophyllite\" \"Laubmann\" \"Steinmetz\" 1920 523 pdf",
+      "laueite Mineralogical Magazine 79 2015 309 structure",
+      "\"Laueite\" \"1954\" \"256\" doi"
+    ],
+    "filters": "none",
+    "coverage": "First returned result sets; no pagination; bounded discovery, counterevidence and microbial queries, not exhaustive. Selected primary references were followed.",
+    "observed_results": [
+      "Hill 1977 and Dunn/Norberg 1977 complete official originals; Moore 1965 complete official original.",
+      "Grey et al. 2025 DOI 10.1180/mgm.2025.21 complete original and publisher-linked supplements.",
+      "Baur 1969 full original preserves competing Mn(III) interpretation; no newly identified formal correction/retraction notice in returned sets.",
+      "Phosphophyllite coatings, hydrothermal pigment synthesis and 1992 synthesis are separate abiotic leads, not evidence of a microbial process; full primary experiments not curated in this pass.",
+      "Returned laueite Mars nodules paper uses inferred mineral composition and equilibrium modelling; no species-resolved microbial experiment was identified in this bounded search.",
+      "Historical phosphophyllite original 1920/1915 publisher metadata discrepancy surfaced; current IMA 1920 accepted, original discovery article not used to assert modern chemistry.",
+      "Current IMA secondary reference resolves to Grey et al. 2015 crystallographic Al ordering, DOI 10.1180/minmag.2015.079.2.09. Search and publisher abstracts are leads only; no new numerical Al-ordering claim curated from unavailable full original. Separate approved 2015 laueite-supergroup nomenclature DOI 10.1180/minmag.2015.079.2.02 is a group scheme, not a new laueite species accession."
+    ]
+  },
+  "acquisition_manifest": {
+    "created_at": "2026-10-15T19:28:33.887415+00:00",
+    "acquisitions": [
+      {
+        "name": "ima.pdf",
+        "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+        "started_at": "2026-10-15T19:21:48.097296+00:00",
+        "status": 200,
+        "final_url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+        "content_type": "application/pdf",
+        "bytes": 3129886,
+        "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+        "pdf": true,
+        "finished_at": "2026-10-15T19:21:50.108431+00:00"
+      },
+      {
+        "name": "hill1977.pdf",
+        "url": "https://msaweb.org/AmMin/AM62/AM62_812.pdf",
+        "started_at": "2026-10-15T19:21:48.099290+00:00",
+        "status": 200,
+        "final_url": "https://msaweb.org/AmMin/AM62/AM62_812.pdf",
+        "content_type": "application/pdf",
+        "bytes": 468394,
+        "sha256": "7780b73fdadbdfbd62dec71505ce539a9dd1a3a9629ffde5a876792ccb0fbb00",
+        "pdf": true,
+        "finished_at": "2026-10-15T19:21:48.414252+00:00"
+      },
+      {
+        "name": "hill1977-supplement.pdf",
+        "url": "https://msaweb.org/MSA/AmMin/Supplemental_Data/Vol%2062%20p0812%20AM-77-046.pdf",
+        "started_at": "2026-10-15T19:21:48.099646+00:00",
+        "status": 200,
+        "final_url": "https://msaweb.org/MSA/AmMin/Supplemental_Data/Vol%2062%20p0812%20AM-77-046.pdf",
+        "content_type": "application/pdf",
+        "bytes": 871591,
+        "sha256": "1965bfc8dc2d639465ddfbf9d5886bde6525bba187be21bec78362dae2b995bc",
+        "pdf": true,
+        "finished_at": "2026-10-15T19:21:48.431842+00:00"
+      },
+      {
+        "name": "dunn1977.pdf",
+        "url": "https://msaweb.org/AmMin/AM62/AM62_818.pdf",
+        "started_at": "2026-10-15T19:21:48.099940+00:00",
+        "status": 200,
+        "final_url": "https://msaweb.org/AmMin/AM62/AM62_818.pdf",
+        "content_type": "application/pdf",
+        "bytes": 79671,
+        "sha256": "886190ba8fdaf99b234b1a8382b3690320c23edfedf87ecb06d72386788bc7f1",
+        "pdf": true,
+        "finished_at": "2026-10-15T19:21:48.357131+00:00"
+      },
+      {
+        "name": "moore1965.pdf",
+        "url": "https://msaweb.org/AmMin/AM50/AM50_1884.pdf",
+        "started_at": "2026-10-15T19:21:48.357182+00:00",
+        "status": 200,
+        "final_url": "https://msaweb.org/AmMin/AM50/AM50_1884.pdf",
+        "content_type": "application/pdf",
+        "bytes": 356969,
+        "sha256": "9a86eac54b03c2379d7af756880b7c95b31ff20d782e80d2369638456067c024",
+        "pdf": true,
+        "finished_at": "2026-10-15T19:21:48.619249+00:00"
+      },
+      {
+        "name": "laueite2025.pdf",
+        "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/D7720F7C7EF94EFD713E886A7738F6FF/S0026461X25000210a.pdf/laueitestewartite-epitaxy-a-single-crystal-diffraction-study.pdf",
+        "started_at": "2026-10-15T19:21:48.414303+00:00",
+        "status": 200,
+        "final_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/D7720F7C7EF94EFD713E886A7738F6FF/S0026461X25000210a.pdf/laueitestewartite-epitaxy-a-single-crystal-diffraction-study.pdf",
+        "content_type": "application/pdf",
+        "bytes": 1122097,
+        "sha256": "46e1c78eab118f3f64ab4f09614e606d7e4307cdb1712d895c3c6dad52d9dad3",
+        "pdf": true,
+        "finished_at": "2026-10-15T19:21:48.931091+00:00"
+      },
+      {
+        "name": "laueite2025.html",
+        "url": "https://www.cambridge.org/core/journals/mineralogical-magazine/article/laueitestewartite-epitaxy-a-singlecrystal-diffraction-study/D7720F7C7EF94EFD713E886A7738F6FF",
+        "started_at": "2026-10-15T19:21:48.431891+00:00",
+        "status": 200,
+        "final_url": "https://www.cambridge.org/core/journals/mineralogical-magazine/article/laueitestewartite-epitaxy-a-singlecrystal-diffraction-study/D7720F7C7EF94EFD713E886A7738F6FF",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 964656,
+        "sha256": "7fad5037488dcf304b0856ea8a84406989a7dc9539e144fe366b1ecaccedd1ee",
+        "pdf": false,
+        "finished_at": "2026-10-15T19:21:48.883832+00:00"
+      },
+      {
+        "name": "phosphophyllite-handbook.pdf",
+        "url": "https://www.handbookofmineralogy.org/pdfs/phosphophyllite.pdf",
+        "started_at": "2026-10-15T19:21:48.619449+00:00",
+        "status": 200,
+        "final_url": "https://www.handbookofmineralogy.org/pdfs/phosphophyllite.pdf",
+        "content_type": "application/pdf",
+        "bytes": 52761,
+        "sha256": "c5d2518ed5c9f70f67423d1b98b45124a32b635cc009fa9adfffd113701cc7a1",
+        "pdf": true,
+        "finished_at": "2026-10-15T19:21:48.894094+00:00"
+      },
+      {
+        "name": "laueite-handbook.pdf",
+        "url": "https://www.handbookofmineralogy.org/pdfs/laueite.pdf",
+        "started_at": "2026-10-15T19:21:48.883885+00:00",
+        "status": 200,
+        "final_url": "https://www.handbookofmineralogy.org/pdfs/laueite.pdf",
+        "content_type": "application/pdf",
+        "bytes": 53746,
+        "sha256": "b0d91870f2cf997befe61fa9eb91b8ac9e27b1fc50fc52cb9066dd69a5c3231a",
+        "pdf": true,
+        "finished_at": "2026-10-15T19:21:49.029127+00:00"
+      },
+      {
+        "url": "https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0026461X25000210/resource/name/S0026461X25000210sup001.pdf",
+        "name": "S0026461X25000210sup001.pdf",
+        "queried_at": "2026-10-15T19:24:41.343184+00:00",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0026461X25000210/resource/name/S0026461X25000210sup002.pdf",
+        "name": "S0026461X25000210sup002.pdf",
+        "queried_at": "2026-10-15T19:24:41.343946+00:00",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0026461X25000210/resource/name/S0026461X25000210sup003.cif",
+        "name": "S0026461X25000210sup003.cif",
+        "queried_at": "2026-10-15T19:24:41.344258+00:00",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0026461X25000210/resource/name/S0026461X25000210sup004.cif",
+        "name": "S0026461X25000210sup004.cif",
+        "queried_at": "2026-10-15T19:24:41.344515+00:00",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://msaweb.org/AmMin/AM54/AM54_1312.pdf",
+        "name": "baur1969.pdf",
+        "queried_at": "2026-10-15T19:24:41.468592+00:00",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://api.crossref.org/works/10.1180/mgm.2025.21",
+        "name": "grey2025-crossref.json",
+        "queried_at": "2026-10-15T19:24:41.470903+00:00",
+        "status": 200,
+        "final_url": "https://api.crossref.org/works/10.1180/mgm.2025.21",
+        "content_type": "application/json",
+        "bytes": 5088,
+        "sha256": "ed48bc9defa97e79724b65ed3e183374d48fbebac97c67b46cf0e21d3594c2f9"
+      },
+      {
+        "url": "https://cnmnc.units.it/master_list",
+        "name": "ima-master-page.html",
+        "queried_at": "2026-10-15T19:24:41.474147+00:00",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "name": "laueite-sup001.pdf",
+        "url": "https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S0026461X25000210/resource/name/S0026461X25000210sup001.pdf",
+        "queried_at": "2026-10-15T19:25:48.214298+00:00",
+        "status": 200,
+        "final_url": "https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S0026461X25000210/resource/name/S0026461X25000210sup001.pdf",
+        "content_type": "application/pdf",
+        "bytes": 125915,
+        "sha256": "6bc96dba01ec8ecc61f94d674825c99ebcc477396b9e2017f07eb317c2009ced"
+      },
+      {
+        "name": "laueite-sup002.pdf",
+        "url": "https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S0026461X25000210/resource/name/S0026461X25000210sup002.pdf",
+        "queried_at": "2026-10-15T19:25:48.217720+00:00",
+        "status": 200,
+        "final_url": "https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S0026461X25000210/resource/name/S0026461X25000210sup002.pdf",
+        "content_type": "application/pdf",
+        "bytes": 150794,
+        "sha256": "c8620d3898a6e3490781058119a8c2625657d7c89c0f3d5856ef96094987cd0c"
+      },
+      {
+        "name": "laueite-sup003.cif",
+        "url": "https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S0026461X25000210/resource/name/S0026461X25000210sup003.cif",
+        "queried_at": "2026-10-15T19:25:48.218328+00:00",
+        "status": 200,
+        "final_url": "https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S0026461X25000210/resource/name/S0026461X25000210sup003.cif",
+        "content_type": "application/cif",
+        "bytes": 79914,
+        "sha256": "591f6f3b304ec2e626f39ddb0742b2059715d016cfd7625acd9fccef273e9cb5"
+      },
+      {
+        "name": "laueite-sup004.cif",
+        "url": "https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S0026461X25000210/resource/name/S0026461X25000210sup004.cif",
+        "queried_at": "2026-10-15T19:25:48.222877+00:00",
+        "status": 200,
+        "final_url": "https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S0026461X25000210/resource/name/S0026461X25000210sup004.cif",
+        "content_type": "application/cif",
+        "bytes": 223452,
+        "sha256": "f2693dc7b953cf2516e2af602bf9368303494adfb33ef26b9820250238462815"
+      },
+      {
+        "name": "baur1969.pdf",
+        "url": "https://rruff.info/doclib/am/vol54/AM54_1312.pdf",
+        "queried_at": "2026-10-15T19:25:48.223231+00:00",
+        "status": 200,
+        "final_url": "https://www.rruff.net/doclib/am/vol54/AM54_1312.pdf",
+        "content_type": "application/pdf",
+        "bytes": 755758,
+        "sha256": "ae64276d41dd2274299ba7ebc2a6e875b7839f7bb79e0d5baae2fd319085b5e1"
+      },
+      {
+        "name": "ima-home.html",
+        "url": "https://cnmnc.units.it/",
+        "queried_at": "2026-10-15T19:25:49.760450+00:00",
+        "status": 200,
+        "final_url": "https://cnmnc.units.it/",
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 26639,
+        "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9"
+      },
+      {
+        "name": "hill1992.html",
+        "url": "https://pubs.rsc.org/en/content/articlelanding/1992/jm/jm9920201123",
+        "queried_at": "2026-10-15T19:25:49.786022+00:00",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "inspection": "PDFs extracted with pymupdf and all primary article pages rendered in contact sheets; all four Grey 2025 supplements read, reports visually inspected; Hill deposited Table 1 presence/structure inspected without re-refinement.",
+    "raw_root": "/private/tmp/cmm-round101-phosphates-research"
+  },
+  "authority": {
+    "authority": "IMA-CNMNC",
+    "edition": "September 2026",
+    "current_edition_check": "Official CNMNC homepage, acquired 2026-10-15, links the September 2026 updated list. No assumption based solely on a cached filename.",
+    "phosphophyllite": {
+      "pdf_page": 172,
+      "status": "G",
+      "historical_year": "1920",
+      "formula": "Zn2Fe2+(PO4)2(H2O)4",
+      "country": "Germany"
+    },
+    "laueite": {
+      "pdf_page": 121,
+      "status": "G",
+      "historical_year": "1954",
+      "formula": "Mn2+Fe3+2(PO4)2(OH)2(H2O)6·2H2O",
+      "country": "Germany"
+    },
+    "identifier_policy": "Grandfathered years are historical fields, not invented modern IMA approval accessions. No additional external species CURIE is asserted. Specimen numbers and diffraction datasets are not species IDs.",
+    "criticality": "No criticality claim is made for either host mineral. Elemental Zn, Mn, Fe and P or commodity-list entries do not automatically designate these minerals."
+  },
+  "claim_assessments": {
+    "phosphophyllite": {
+      "accepted_scope": "Grandfathered monoclinic Zn-Fe phosphate species, P21/c natural-crystal structure, documented locality-dependent Mn substitution.",
+      "hill1977": {
+        "original": "American Mineralogist 62:812-817; all six pages, Tables 2-4 and Figure 1 inspected, with deposited Table 1 in AM-77-046.",
+        "specimen": "One Potosi, Bolivia cleavage fragment, reported volume 5.6e-6 cm3; provenance and full prior chemistry attributed by the author to Hill 1976, not a new bulk assay in 1977.",
+        "methods": "Zr-filtered MoKa single-crystal diffraction at 24 degrees C; 6285 measured reflections, 2482 unique corrected structure factors, 1999 observations selected at I > 2 sigma(I); full matrix refinement including H positions.",
+        "outcome": "P21/c structure refined to reported R 0.032 and weighted R 0.035 for selected reflections. Tetrahedral Zn/P sheets and Fe octahedra distinguish the structure from related zinc phosphates. The earlier model controversy was addressed by 3D data; previous 2D projection was not wholly discarded.",
+        "limitations": "One natural crystal, not all localities or a pure synthetic population. Bond/hydrogen positions have the source-stated X-ray uncertainties. No re-refinement of deposited structure factors was performed.",
+        "deposit": "Twelve-page PDF includes the original article, separator at page 8, deposit title at page 9, observed/calculated structure-factor Table 1 on pages 10-11 and end page 12. This is the same experiment, not an independent replication."
+      },
+      "dunn_norberg1977": {
+        "original": "American Mineralogist 62:818, complete single-page original.",
+        "methods": "Partial ARL-SEMQ microprobe analyses of eleven Hagendorf and three Potosi specimens, 15 kV, 150 nA, specified oxide/mineral standards and computer corrections; water measured by Penfield method for one Potosi sample.",
+        "outcome": "Hagendorf specimens showed variable Fe/Mn substitution; Potosi specimens had little Mn. Borderline Hagendorf NMNH 814317 Mn:Fe 51:49 is a weight ratio, not atomic occupancy, and the authors explicitly declined a new Mn species given analytical uncertainty.",
+        "limits": "Individual analytical table offered on request was not present in the article and was not acquired. Published ranges and the three-analysis Potosi mean cannot be treated as fourteen complete specimen assays. No chemical solubility limit or absence of a Mn analogue throughout nature is inferred."
+      },
+      "excluded_claims": [
+        "Microbial activity or mineral-specific bioleaching",
+        "Industrial recovery performance",
+        "All-locality ideal endmember purity",
+        "Full chemical identity from the erroneous first-description formula",
+        "A synthesis or corrosion-coating mechanism based on abstract-only or secondary leads"
+      ]
+    },
+    "laueite": {
+      "accepted_scope": "Grandfathered Mn-Fe phosphate identity, P-1 structure, qualified natural laueite/stewartite epitaxy context and preserved specimen/model limitations.",
+      "moore1965": {
+        "original": "American Mineralogist 50:1884-1892, all nine pages, Tables 1-3 and Figures 1-4 inspected.",
+        "specimen": "Clear reddish-orange wedge crystal 0.16 x 0.32 x 0.50 mm from Palermo No. 1 Quarry, North Groton, New Hampshire, associated with other secondary phosphates on siderite/ludlamite.",
+        "methods": "637 visually estimated independent intensities from Weissenberg levels, absorption corrections and least-squares refinement; final reported R 0.122, no observations omitted in final refinement.",
+        "limits": "Hydrogen atoms were not located and OH/water assignments were not directly determined. Hypothetical stewartite/strunzite models and heating of other minerals must not become laueite experiments. Historical strunzite-as-polymorph language is narrowed by later water-content distinction, not repeated as modern identity."
+      },
+      "baur1969": {
+        "original": "American Mineralogist 54:1312-1323, all twelve pages, Tables 1-5 and Figures 1-4 inspected.",
+        "independence": "New pseudolaueite diffraction study; laueite bond distances reuse Moore 1965 coordinates and older chemical data. Not an independent laueite assay.",
+        "counterevidence": "Pages 1321-1322 propose appreciable Mn(III) from short/distorted Mn-site bonds while admitting smaller substituents complicate the inference. The current IMA formula remains Mn(II); neither the older hypothesis nor 2025 site calculations directly establish oxidation states for every specimen."
+      },
+      "grey2025": {
+        "original": "Mineralogical Magazine 89:234-241, DOI 10.1180/mgm.2025.21; all eight pages, Tables 1-5 and Figures 1-6, plus four supplements acquired and inspected.",
+        "metadata": "Publisher and Crossref confirm authors/title/pages/DOI; online manuscript date March 24, 2025 is not the specimen collection date. Specimen collected in late 1970s at the 84 m level, Hagendorf-Sud mine.",
+        "methods": "Composite rhomb was mixed laueite/stewartite by Gandolfi powder diffraction. Separate peak integration extracted major laueite and minor enclosed stewartite; the minor enclosed component had Rint 0.28 and non-positive displacement parameters, so its refinement was not reported in the article. A separate protruding stewartite blade was also measured and twinning included. Laueite data at 270 K, CuK wavelength 1.54184 A, 1252 independent reflections, Rint 0.149 and 1128 above 3 sigma(I).",
+        "composition": "SEM-EDS metal totals scaled to three: Mn0.66Mg0.17Fe2.17 for laueite, Mn0.92Fe2.08 for stewartite. Table 3 simplified laueite scattering model refines 0.93(2)Mn + 0.07Mg, not the EDS site allocation Mn0.66Mg0.17Fe0.17. Ferric assignment and adjusted OH/water formula derive from bond-valence/charge-balance arguments; no direct oxidation-state or hydrogen assay is presented.",
+        "observed_epitaxy": "Indexed {010}/{100} parallel faces and structure orientation support laueite on stewartite with epitaxy plane {010}; Figures 1, 2 and 4. Stewartite B-1 is an explicitly transformed comparison setting, not a new mineral or the laueite symmetry.",
+        "hypotheses": "Figure 5 is one possible interface protonation/occupancy model; Figure 6 and pages 239-240 suggest heterosite-cluster nucleation and changed cavity solution chemistry. Neither a controlled transformation experiment nor a time-resolved solution assay is reported.",
+        "supplement1_laueite": "Six-page checkCIF report: no supplied structure factors for that check, three A-level alerts (Fe1 and O2 displacement parameters, Fe2 anisotropy), one B-level missing-H/isolated-O alert, nine C and thirteen G alerts; Rint 0.149, goodness of fit 3.36, formula/Z reporting alerts. Empty response placeholders are not resolutions. Some formula/Z alerts reflect reporting/normalization and do not alone prove an incorrect species.",
+        "supplement2_stewartite": "Four-page report has two A alerts about nonstandard B-1 recognition and two B missing-H alerts; the paper explicitly explains the transformed setting. Do not transplant those setting warnings into laueite identity.",
+        "supplements3_4": "Laueite and stewartite CIFs inspected: cell/symmetry, reflection counts, formula metadata and site loops. No H atom coordinates in the listed structural models; generic hydrogen-treatment metadata is not evidence of resolved H positions. No new crystallographic refinement or independent checkCIF run performed.",
+        "editorial_discrepancies": "The article bibliography misprints Moore 1965 terminal water count as 6H2O; original Moore title and current IMA both have 2H2O after six coordinated waters. Page 237 initially references Fig. 3 for indexed faces, whereas the actual indexed-face image is Fig. 4. Curation uses the actual originals/figures, not those apparent citation slips."
+      },
+      "excluded_claims": [
+        "Pure single-phase rhomb",
+        "Direct elemental oxidation-state assay from EDS",
+        "EDS composition identical to refined occupancy",
+        "Experimental proof of proposed cavity chemistry or heterosite nucleation",
+        "Microbial activity, extraction yield or industrial deployment"
+      ]
+    }
+  },
+  "access_and_reuse": {
+    "raw_policy": "Publisher/archive originals, CIFs, extracted text and rendered pages retained outside checkout. Committed dossier contains paraphrased assessment, citations and checksums only.",
+    "grey2025_license": "Publisher explicitly states CC BY 4.0 for the article; supplements linked as associated files. They remain outside checkout in this pass.",
+    "other_licenses": "Free reading access is not assumed to authorize redistribution. Handbook explicitly reserves reproduction rights; older articles have no open redistribution assertion in this dossier.",
+    "failures_preserved": "Initial percent-encoded Cambridge supplementary routes returned HTTP 403; identical public colon-form routes with ordinary browser headers returned the actual PDF/CIF bytes. MSA Baur1969 route returned 403; RRUFF archive succeeded. Guessed CNMNC /master_list returned 404; official homepage and linked September PDF succeeded. RSC 1992 landing returned 403 and its experiment remains deferred."
+  },
+  "follow_up": [
+    "Independent scientific reviews of exact owners and canonical CREATE histories after named validation.",
+    "Acquire the full IMA-cited Grey et al. 2015 Al-ordering study (DOI 10.1180/minmag.2015.079.2.09) before adding quantitative Al site-ordering claims; present search/abstract access alone is not used as experimental verification.",
+    "Acquire complete Thomas and Weller 1992 phosphophyllite synthesis/thermal paper (DOI 10.1039/JM9920201123) and supporting data before any transformation mechanism; keep it distinct from natural-crystal identity.",
+    "Resolve laueite specimen-specific Mn/Fe oxidation state, EDS/refinement site differences, missing hydrogen positions and deposited displacement-parameter alerts with stronger direct measurements or expert re-refinement; do not silently repair source data.",
+    "If specimen-level quantitative phosphophyllite observations are needed, obtain Dunn/Norberg individual analyses rather than reconstructing them from ranges/means.",
+    "Strunzite, ferrostrunzite and reddingite remain separate candidates needing complete selected originals and contemporary identity review; no draft owners created for them."
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "recorded_at": "2026-10-15T19:46:08.207580+00:00",
+  "reviewer": "codex /root/round100_pentagonite; GPT-6",
+  "scope": "Independent exact correction and validation-receipt review of the bounded redox category display finding. No scientific owner editing or new literature acceptance.",
+  "previous_occurrence": {
+    "path": "reviews/publication/20261015-round101/20261015T193803Z-redox-display-initial.json",
+    "sha256": "a8f65277674f32aa56dcd27a6b15c47cf797d213741f18c0e8bb48618a1e8bf8",
+    "issue_key": "CMMMech:publication-redox-blurb-microbial-scope"
+  },
+  "issue_url": "https://github.com/CultureBotAI/CMMMech/issues/373",
+  "finding": {
+    "issue_key": "CMMMech:publication-redox-blurb-microbial-scope",
+    "severity": "minor",
+    "status": "resolved",
+    "disposition_reason": "Maintained blurb and generated category now describe redox neutrally and explicitly defer microbial involvement to each record. Replacing only this exact string restores both initial audited byte hashes, proving no counting/member logic or other page content changed in the correction."
+  },
+  "reviewed_files": {
+    "scripts/render_pages.py": "5f19c2ffb75edbd9be144b6d8b338a74e49467b4acd3b5d2a2bea7622bc8254d",
+    "pages/processes/redox_transformation.html": "394a40b1ab5ddfe5c1bfec678e87f452b5477915f7b903de1e01e92b9bca7f57",
+    "data/records/montroseite.yaml": "6db8dd6407d289895446e73a87fee295318c1bbe01d6b7fd2d668948f9f5e203",
+    "data/records/paramontroseite.yaml": "31759cf0806da0ef377764711654fd27859582ccf26462f638f3690c40f3c783",
+    "data/records/anilite.yaml": "97f8f8eb0d55379bfcb9815ca4ea72ea9cbc71b3fbae79f2a951f2ae92f33d50"
+  },
+  "evidence": {
+    "checks_receipt": "/private/tmp/cmm-round101-display-checks.json",
+    "receipt_sha256": "d437844a07dfddfb351b45b79e7b7ebf73e043bac56ab6ebcd5a2844281deaf9",
+    "log": "/private/tmp/cmm-round101-display-checks.log",
+    "log_sha256": "5f64cb0ef10574faee6b91e5ba9f28629eba0312e43443d8ae46cc7f531849aa",
+    "commands": [
+      {
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "python",
+          "scripts/render_pages.py"
+        ],
+        "started_at": "2026-10-15T19:44:24.943355+00:00",
+        "finished_at": "2026-10-15T19:44:46.498734+00:00",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "--extra",
+          "dev",
+          "ruff",
+          "check",
+          "scripts/render_pages.py"
+        ],
+        "started_at": "2026-10-15T19:44:46.498764+00:00",
+        "finished_at": "2026-10-15T19:44:46.756068+00:00",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "--extra",
+          "dev",
+          "pytest",
+          "-q",
+          "tests/test_render_pages.py"
+        ],
+        "started_at": "2026-10-15T19:44:46.756099+00:00",
+        "finished_at": "2026-10-15T19:45:09.229458+00:00",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "uv",
+          "run",
+          "--locked",
+          "python",
+          "scripts/render_pages.py",
+          "--check"
+        ],
+        "started_at": "2026-10-15T19:45:09.229491+00:00",
+        "finished_at": "2026-10-15T19:45:27.109743+00:00",
+        "exit_code": 0
+      }
+    ],
+    "all494_owner_hashes_independently_rechecked_against_final_gate_receipt": true,
+    "counts_unchanged": {
+      "redox_records": 57,
+      "redox_mechanisms": 60,
+      "explicit_abiotic_mechanisms": 15
+    }
+  },
+  "findings": [],
+  "verdict": "pass_with_limitations",
+  "limitations": [
+    "This disposition covers only the linked redox display issue; unrelated site copy is outside scope.",
+    "The completed full just check preceded this one-string correction; the four affected checks including nine existing render tests passed afterward. Exact-commit CI remains a publication gate.",
+    "No GitHub issue state mutation was performed by this reviewer; resolved denotes the inspected local correction."
+  ]
+}
