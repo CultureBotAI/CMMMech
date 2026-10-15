@@ -1,0 +1,21 @@
+from pathlib import Path
+import importlib.util,copy,tempfile,sys,json,hashlib,datetime
+p=Path('/private/tmp/cmm-round96-commit.py');spec=importlib.util.spec_from_file_location('publication_commit',p);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
+base='a'*40;cfg={'base':base,'counts':dict(record_count=1,history_count=1,structured_review_count=1,review_base_count=1,covered_records=1)};records={'data/records/example.yaml':'1'*64};histories={'history/records/example/session.yaml':'2'*64};reviews={'reviews/structured/example/review.yaml':'3'*64};actual=dict(records,**histories,**reviews);bindings={'cmm-round96-commit.py':'4'*64};commands=[['just','check'],['uv','run','--locked','cmmmech','validate','--require-records'],['uv','run','--locked','cmmmech','validate-history','--base',base],['uv','run','--locked','python','scripts/render_pages.py','--check']]
+g={'base':base,'worktree':str(m.W),'exit_code':0,'inputs_unchanged':True,'commands':[dict(command=x,exit_code=0) for x in commands],'record_inputs':records};rv={'base':base,'exit_code':0,'command':['just','review-check','--base',base,'--require-reviews']};cv=dict(cfg['counts'],passed=True,root=str(m.W),records=[dict(path=k,sha256=v,matching_scientific_reviews=['fixture']) for k,v in records.items()],bases=[dict(available_commit=True)]);prep=dict(passed=True,base=base,head=base,files=actual,record_inputs=records,history_inputs=histories,review_inputs=reviews,bindings=bindings)
+def arguments():return json.loads(json.dumps([cfg,g,rv,cv,prep,actual,records,histories,reviews,bindings]))
+results=[];m.guard(*arguments());results.append({'case':'valid fixture contract','passed':True})
+cases=[('changed record after gates',lambda a:a[6].update({'data/records/example.yaml':'f'*64})),('added unreviewed record',lambda a:a[6].update({'data/records/new.yaml':'f'*64})),('changed history after preparation',lambda a:a[7].update({'history/records/example/session.yaml':'f'*64})),('changed review after preparation',lambda a:a[8].update({'reviews/structured/example/review.yaml':'f'*64})),('wrong count despite passed flag',lambda a:a[3].update(record_count=2)),('wrong gate base',lambda a:a[1].update(base='b'*40)),('failed required command',lambda a:a[1]['commands'][0].update(exit_code=1)),('missing required command',lambda a:a[1]['commands'].pop()),('missing coverage',lambda a:a[3]['records'][0].update(matching_scientific_reviews=[])),('changed untracked publication document',lambda a:a[5].update({'README.md':'f'*64})),('changed helper since preparation',lambda a:a[9].update({'cmm-round96-commit.py':'f'*64})),('unavailable review base',lambda a:a[3]['bases'][0].update(available_commit=False)),('wrong review-check base',lambda a:a[2].update(base='b'*40))]
+for name,change in cases:
+ a=arguments();change(a)
+ try:m.guard(*a)
+ except AssertionError:results.append(dict(case=name,passed=True))
+ else:raise AssertionError('Guard failed to reject: '+name)
+with tempfile.TemporaryDirectory(prefix='cmm-round96-guard-test-',dir='/private/tmp') as tmp:
+ original=m.T;m.T=Path(tmp);(m.T/'cmm-round96-commit-receipt.json').write_text('existing receipt');called=[]
+ m.collect=lambda:called.append(True);original_argv=sys.argv;sys.argv=['commit-test']
+ try:m.main()
+ except AssertionError:assert not called;results.append(dict(case='existing receipt rejected before collection or mutation',passed=True))
+ else:raise AssertionError('Existing receipt did not block')
+ finally:m.T=original;sys.argv=original_argv
+out=Path('/private/tmp/cmm-round96-commit-guard-tests.json');assert not out.exists();d=dict(recorded_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),helper_sha256=hashlib.sha256(p.read_bytes()).hexdigest(),tests_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),passed=True,cases=results,scope='Deterministic publication-contract fixtures and no-mutation collision guard; not execution of Git staging/commit or a substitute for actual prepared-state preflight.');out.write_text(json.dumps(d,indent=2)+'\n');print(len(results),'guard scenarios passed')

@@ -1,0 +1,29 @@
+# Round96 phosphate source investigation: childrenite and hureaulite
+
+Recorded 2026-10-15T14:03:15.280632+00:00 by codex (GPT-6), `/root/round68_phosphates`, at trusted base `4ef2e0dd88837ef729839ffde8ed828bcbb59cda` in `/private/tmp/CMMMech-expansion-round96-20261015`. Parent supplied and we verified the actual baseline PASS. Named strict validation subsequently passed one record with zero failures for each new owner. Independent scientific review and parent final batch gates remain separate.
+
+## Search, access and novelty
+
+Search used hidden/ignored-inclusive, relevant-symlink-following `rg` over records, research, reviews and history in current main and the isolated worktree, plus the five explicitly bounded prior raw roots listed in the JSON. It found no prior owner or adopted matching2024 study within those bounds before creation. Rhodochrosite contains a comparison to material similar but not identical to hureaulite; its biological mechanism is not transferable. Prior phosphosiderite evidence belongs to the existing strengite experiment, not a new independent study. Exact queries, original outputs, DOI lineage and checksums are retained in the paired JSON. The supplied issue inventory is OPEN-only, not an all-state search; no candidate/DOI match was found there.
+
+Childrenite is supported by the complete official Toupal2024 original (DOI10.5194/ejm-36-1-2024), all six figures/three tables and the official three-member CIF/workbook/cover supplement. Hureaulite is supported by the complete Garcia2024 original (DOI10.3390/pr12081622), all eight figures/Table1 and its actual eleven-page official supplement with FiguresS1–S13. The rejected www.mdpi requests returned403; the official mdpi-res article/XML and direct supplement routes succeeded. Incorrect derived supplement URLs returned404 and remain excluded. Sandbox DNS failure was followed by an authorized network retry; it is not represented as publisher refusal.
+
+## Childrenite: natural-crystal identity
+
+The September2026 IMA row43 records childrenite, Fe2+Al(PO4)(OH)2(H2O), G1823. The current primary investigated two natural grains collected11July2020 at two Homolka outcrops. Twenty microprobe spots are within those two grains, not twenty independent samples. Main Table1p4 and native TableS1 give Fe/(Fe+Mn)0.51–0.86. GrainA single-crystal data and Raman support Cmca symmetry and a divalent bond-valence interpretation; this is not a direct Fe-valence assay of all natural childrenite. Tables2–3p5 and Figures2–6pp6–8 were checked alongside the older Handbook Bba2/possible-monoclinic entry.
+
+The main/CIF disagreement is retained: temperature293(2)/273(2)K, measured reflections5682/5429 and analyticalSi approximately0.01/0.04. CIF Fe/Ca scattering/model-sum fields are not the measured Fe/Mn/Ca chemistry. Agreement on unit cell, Cmca,602 observed reflections and R1=.0295 supports the narrow identity claim without resolving these metadata differences. Water was calculated; totals above100% were interpreted by authors as beam dehydration, not tested thermal transformation. Probable uraninite inclusions remain tentative. Glue and missing bending bands limit Raman interpretation. No microbial process, formation experiment or recovery assay is asserted.
+
+## Hureaulite: synthetic material and bounded electrode measurements
+
+The September2026 IMA row97 records hureaulite Mn2+5(PO3OH)2(PO4)2(H2O)4 as Rn2007s.p.; this is renamed status, not a new2024 approval. Natural Fe-bearing material in the Handbook is distinguished from the synthetic reagent powder in Garcia2024. Main methodspp2–3, Figures1–2 and SIS1 support the source-assigned C2/c product from5wt%SDS/MnCl2·4H2O at70C, followed by K2HPO4 and24h treatment, washing and room-temperature drying. Absolute batch amounts, synthesis pH, yield, SDS-free control and phase-fraction analysis are unavailable.
+
+The composite has70:20:10 powder/carbon/PTFE and7mg active material percm2. Figure3 reports184F/g at5mV/s in3MKOH, versus16/15F/g in the neutral electrolyte arms, and about100F/g at100mV/s. These use the active-powder denominator. The two-electrode5MKOH Swagelok cell is a separate configuration. Cycling loss is retained. No electrode blank, replicate uncertainty, postcycling mineralogy or dissolvedMn balance supports stronger causal or recovery claims.
+
+Table1 labelsK3PO4 as1M while methods/plots use3M. Main energy/power equations omit an explicit seconds-to-hours conversion despiteWh/kg labels; no exact energy/power or superiority claim is adopted. SI surface-area units and the S13two-electrode/AgAgCl axis also conflict. Dunn/Trasatti partitions and depth estimates are models; they do not prove the proposed proton pathway or Mn redox. These issues warrant source clarification while the narrow phase/measurement observations remain useful.
+
+## Deferred leads and limits
+
+Yin2012 reflux synthesis and Sronsri2020 hureaulite-to-lithiophilite transformation were located but complete originals were not acquired through the attempted routes; their abstract conditions were not imported. Chinese authorpage/linkedPDF access differs and possible shared2013posting is not independent evidence. Phosphosiderite was not selected because its available mixed-phase experiment is already represented under strengite. This bounded survey does not establish frontier exhaustion.
+
+Exact-title/DOI correction and erratum searches plus official article/Crossref metadata did not surface a notice within inspected routes. That is not a global absence claim. Complete accepted source checksums, acquisition times/failures, source URLs, license limits and frozen record/history bindings are in the JSON. Raw sources stay outside Git. Independent reviewers may identify additional limitations; named validation alone does not accept the science.

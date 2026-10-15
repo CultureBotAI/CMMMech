@@ -1,0 +1,366 @@
+# Independent final wood-ash scientific review and statistical-wording resolution
+
+- Review: 20261015T141435Z-wood-ash-round96-independent-resolution
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T14:08:50Z
+- Finished UTC: 2026-10-15T14:14:35.912942Z
+- Reviewer: codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The exact final owner supports a limited fungal-treatment-associated solution-phosphate increase, while retaining no significant total-P or plant-P gain, nonaxenic and unmatched-pH controls, unresolved ash provenance and proposed causal mechanisms. Minor F1 is explicitly resolved; all corrected batch gates passed.
+
+## Scope And Provenance
+
+Complete final owner and history assessment with independent correction verification and actual corrected batch gates.
+
+Selection: Independent cross-review of the newly curated wood-ash owner.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 4ef2e0dd88837ef729839ffde8ed828bcbb59cda.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:wood-ash | data/records/wood-ash.yaml | maintained | Wood ash |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Primary-source and identity check | passed | True | cmmmech:wood-ash | Read complete original publisher HTML, all five native tables, Figures1–4, and NCBI80663 species authority. |
+| Named strict validation | passed | True | cmmmech:wood-ash | Author ran corrected named strict validation1/0; root independently checked final exact bytes, precise change and terminal whole-corpus validation. |
+| Completed just check | passed | True | cmmmech:wood-ash | Actual coordinator receipt and retained log verified; all record inputs unchanged through checks. |
+| Strict nonempty corpus | passed | True | cmmmech:wood-ash | Actual coordinator receipt and retained log verified; all record inputs unchanged through checks. |
+| Append-only history | passed | True | cmmmech:wood-ash | Actual coordinator receipt and retained log verified; all record inputs unchanged through checks. |
+| Generated pages | passed | True | cmmmech:wood-ash | Actual coordinator receipt and retained log verified; all record inputs unchanged through checks. |
+
+## Scientific And Domain Assessments
+
+### Secondary resource and experimental organisms
+
+identity: supported. Targets: cmmmech:wood-ash.
+
+Distinct hardened wood-combustion resource; sample-specific ground ash and live seedling-associated fungi. No constituent criticality is inherited; no strain mapping invented.
+
+### Solution phosphate versus total and plant phosphorus
+
+evidence: supported. Targets: cmmmech:wood-ash.
+
+Final description now states absence of a statistically significant increase, matching the primary comparisons without asserting numerical equality. Narrow solution-phosphate observation and qualified causal limits remain supported.
+
+Living mycorrhizal seedlings in nonaxenic, unmatched-pH pots; high-N elemental endpoints; 120days, six g/L ash, five replicates. Extracted soil solution concentration is not a recovery rate. Oxalate and selective Ca transport are proposals; plant uptake and total source budgets do not establish isolated product or industrial deployment.
+
+## Findings
+
+### F1: Qualify the null phosphorus comparison statistically
+
+minor / resolved / confirmed; issue key: wood-ash-round96-statistical-null-wording.
+
+Initial lead wording could imply numerical equality. The independent final owner comparison verifies the precise statistical-null wording, unchanged numerical evidence, appended actual EDIT and preserved CREATE. Whole-corpus/history checks passed.
+
+Disposition: Changed phrase matches Figure2d and Table4 statistical groups. Exact final owner and both histories were native-inspected and independently checked; no unresolved corrective defect remains in scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| primary | https://doi.org/10.1111/j.1574-6941.2003.tb01051.x; Complete original HTML, sections2–4 and Tables1–5; artifact /private/tmp/cmm-round96-resources-research/mahmood2003.html | supports | Table4 has plant-P fractions4.3±0.2 versus4.4±0.1 in the same statistical group. Solution-phosphate elevation is supported; total mobilisation has no significant increase. |
+| figure2 | https://academic.oup.com/femsec/article/43/1/121/510286; Original Figure2 paneld; artifact /private/tmp/cmm-round96-resources-research/mahmood2003-fig2.jpeg | supports | All +Ash plant-P arms share the letterx; bars need not be numerically identical to support a nonsignificant comparison. |
+| taxonomy | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=80663; Official NCBI XML TaxId, ScientificName and Rank; artifact /private/tmp/cmm-round96-resources-research/ncbi-80663.xml | supports | 80663 is Piloderma croceum at species rank, not an isolate identifier. |
+| named | uv run --locked cmmmech validate data/records/wood-ash.yaml; Actual independent command log; artifact /private/tmp/cmm-round96-wood-named-initial.log | supports | Named validation passed one record, zero failures. |
+| named-final | Corrected author named validation; /private/tmp/cmm-round96-resources-research/named-validation-corrected.log | supports | Named strict one record zero failed. |
+| correction | Independent final owner comparison; /private/tmp/CMMMech-expansion-round96-20261015/data/records/wood-ash.yaml | supports | Root independently parsed initial/final owners: only statistical-null phrase plus appended EDIT/history_ref differ. Original CREATE unchanged. |
+| gates | Corrected round96 batch gates; /private/tmp/cmm-round96-final-gates.json | supports | Four terminal successful commands, unchanged inputs; retained log SHA256 9a887ac8ef25d2230360d96f1da24b7b79216d078d3323e9c8b3a11405c19ba4 |
+
+## Limits And Additional Notes
+
+- No industrial process, isolated recovery product or fungus-exclusive dissolution is demonstrated.
+- Ash fraction and wood blend remain unresolved; species authority does not identify Piloderma sp.1 or experimental isolates.
+- Correction/retraction searches were bounded to exact DOI/title queries and returned results; no exhaustive global absence claim. The full2001 predecessor graphics remain inaccessible and are not accepted as new mechanism evidence.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T141435Z-wood-ash-round96-independent-resolution
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent final wood-ash scientific review and statistical-wording resolution
+started_at: '2026-10-15T14:08:50Z'
+finished_at: '2026-10-15T14:14:35.912942Z'
+reviewer:
+  identity: codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The frontier agent authored wood ash; root inspected frozen
+    bytes and independently checked the complete primary HTML, all five tables and
+    four original figures, without editing this owner.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The exact final owner supports a limited fungal-treatment-associated solution-phosphate
+  increase, while retaining no significant total-P or plant-P gain, nonaxenic and
+  unmatched-pH controls, unresolved ash provenance and proposed causal mechanisms.
+  Minor F1 is explicitly resolved; all corrected batch gates passed.
+source:
+  git_revision: 4ef2e0dd88837ef729839ffde8ed828bcbb59cda
+  state: working_tree
+  inputs:
+  - path: data/records/wood-ash.yaml
+    sha256: 95b555c5a2a665dcb44fc245b59b3c639b6c008d3536f760cf02bb3c02dbf920
+    role: target
+  - path: history/records/wood-ash/2026-10-15T135430Z-codex-e412cf.yaml
+    sha256: 33f6e78bc4f496b1c1dadaf338442535848c5a9cdfa2dc5068654eeb6d32564a
+    role: context
+  - path: history/records/wood-ash/2026-10-15T140730Z-codex-ad47b7.yaml
+    sha256: 0a18967f0b2c7f85574e1a2859cdc8ba4af4e387fbb6ee1c6eefb034756c3cb9
+    role: context
+scope:
+  description: Complete final owner and history assessment with independent correction
+    verification and actual corrected batch gates.
+  selection: Independent cross-review of the newly curated wood-ash owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:wood-ash
+targets:
+- target_id: cmmmech:wood-ash
+  path: data/records/wood-ash.yaml
+  label: Wood ash
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/wood-ash.yaml
+    role: maintained record
+checks:
+- check_id: science
+  name: Primary-source and identity check
+  required: true
+  status: passed
+  summary: Read complete original publisher HTML, all five native tables, Figures1–4,
+    and NCBI80663 species authority.
+  target_ids:
+  - cmmmech:wood-ash
+  evidence_ids:
+  - primary
+  - figure2
+  - taxonomy
+- check_id: named
+  name: Named strict validation
+  command: uv run --locked cmmmech validate data/records/wood-ash.yaml --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Author ran corrected named strict validation1/0; root independently checked
+    final exact bytes, precise change and terminal whole-corpus validation.
+  target_ids:
+  - cmmmech:wood-ash
+  evidence_ids:
+  - named-final
+  - correction
+- check_id: batch-0
+  name: Completed just check
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual coordinator receipt and retained log verified; all record inputs
+    unchanged through checks.
+  target_ids:
+  - cmmmech:wood-ash
+  evidence_ids:
+  - gates
+- check_id: batch-1
+  name: Strict nonempty corpus
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual coordinator receipt and retained log verified; all record inputs
+    unchanged through checks.
+  target_ids:
+  - cmmmech:wood-ash
+  evidence_ids:
+  - gates
+- check_id: batch-2
+  name: Append-only history
+  command: uv run --locked cmmmech validate-history --base 4ef2e0dd88837ef729839ffde8ed828bcbb59cda
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual coordinator receipt and retained log verified; all record inputs
+    unchanged through checks.
+  target_ids:
+  - cmmmech:wood-ash
+  evidence_ids:
+  - gates
+- check_id: batch-3
+  name: Generated pages
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual coordinator receipt and retained log verified; all record inputs
+    unchanged through checks.
+  target_ids:
+  - cmmmech:wood-ash
+  evidence_ids:
+  - gates
+evidence:
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1111/j.1574-6941.2003.tb01051.x
+  locator: Complete original HTML, sections2–4 and Tables1–5; artifact /private/tmp/cmm-round96-resources-research/mahmood2003.html
+  accessed_at: '2026-10-15T14:05:55.210218Z'
+  support: supports
+  snapshot_sha256: 574120109b9006dddcf7a36942dc304c0d66995f783c8df5dfc19f53390af99b
+  summary: Table4 has plant-P fractions4.3±0.2 versus4.4±0.1 in the same statistical
+    group. Solution-phosphate elevation is supported; total mobilisation has no significant
+    increase.
+- evidence_id: figure2
+  kind: primary_source
+  reference: https://academic.oup.com/femsec/article/43/1/121/510286
+  locator: Original Figure2 paneld; artifact /private/tmp/cmm-round96-resources-research/mahmood2003-fig2.jpeg
+  accessed_at: '2026-10-15T14:05:55.210218Z'
+  support: supports
+  snapshot_sha256: dc8052950f3c9152046c5f6ac1c10c0d0201aedc85f43be461aa4444e4682219
+  summary: All +Ash plant-P arms share the letterx; bars need not be numerically identical
+    to support a nonsignificant comparison.
+- evidence_id: taxonomy
+  kind: primary_source
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=80663
+  locator: Official NCBI XML TaxId, ScientificName and Rank; artifact /private/tmp/cmm-round96-resources-research/ncbi-80663.xml
+  accessed_at: '2026-10-15T14:05:55.210218Z'
+  support: supports
+  snapshot_sha256: deba69f4320f5968025cfe520edac4cdbe2cd6dcdde46ded67e0f17d1fb32a34
+  summary: 80663 is Piloderma croceum at species rank, not an isolate identifier.
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/wood-ash.yaml
+  locator: Actual independent command log; artifact /private/tmp/cmm-round96-wood-named-initial.log
+  accessed_at: '2026-10-15T14:05:55.210218Z'
+  support: supports
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+  summary: Named validation passed one record, zero failures.
+- evidence_id: named-final
+  kind: validation
+  reference: Corrected author named validation
+  locator: /private/tmp/cmm-round96-resources-research/named-validation-corrected.log
+  accessed_at: '2026-10-15T14:14:35.912942Z'
+  support: supports
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+  summary: Named strict one record zero failed.
+- evidence_id: correction
+  kind: record_content
+  reference: Independent final owner comparison
+  locator: /private/tmp/CMMMech-expansion-round96-20261015/data/records/wood-ash.yaml
+  accessed_at: '2026-10-15T14:14:35.912942Z'
+  support: supports
+  snapshot_sha256: 95b555c5a2a665dcb44fc245b59b3c639b6c008d3536f760cf02bb3c02dbf920
+  summary: 'Root independently parsed initial/final owners: only statistical-null
+    phrase plus appended EDIT/history_ref differ. Original CREATE unchanged.'
+- evidence_id: gates
+  kind: validation
+  reference: Corrected round96 batch gates
+  locator: /private/tmp/cmm-round96-final-gates.json
+  accessed_at: '2026-10-15T14:14:35.912942Z'
+  support: supports
+  snapshot_sha256: 47e870f8d4b80ea7f723c8edd38e0cda0d9d238afecd48690a98fe6f49f5c638
+  summary: Four terminal successful commands, unchanged inputs; retained log SHA256
+    9a887ac8ef25d2230360d96f1da24b7b79216d078d3323e9c8b3a11405c19ba4
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Secondary resource and experimental organisms
+  outcome: supported
+  target_ids:
+  - cmmmech:wood-ash
+  evidence_ids:
+  - primary
+  - taxonomy
+  summary: Distinct hardened wood-combustion resource; sample-specific ground ash
+    and live seedling-associated fungi. No constituent criticality is inherited; no
+    strain mapping invented.
+- assessment_id: mechanism
+  area: evidence
+  topic: Solution phosphate versus total and plant phosphorus
+  outcome: supported
+  target_ids:
+  - cmmmech:wood-ash
+  evidence_ids:
+  - primary
+  - figure2
+  - correction
+  summary: Final description now states absence of a statistically significant increase,
+    matching the primary comparisons without asserting numerical equality. Narrow
+    solution-phosphate observation and qualified causal limits remain supported.
+  details: Living mycorrhizal seedlings in nonaxenic, unmatched-pH pots; high-N elemental
+    endpoints; 120days, six g/L ash, five replicates. Extracted soil solution concentration
+    is not a recovery rate. Oxalate and selective Ca transport are proposals; plant
+    uptake and total source budgets do not establish isolated product or industrial
+    deployment.
+findings:
+- finding_id: F1
+  issue_key: wood-ash-round96-statistical-null-wording
+  category: evidence
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Qualify the null phosphorus comparison statistically
+  description: Initial lead wording could imply numerical equality. The independent
+    final owner comparison verifies the precise statistical-null wording, unchanged
+    numerical evidence, appended actual EDIT and preserved CREATE. Whole-corpus/history
+    checks passed.
+  target_ids:
+  - cmmmech:wood-ash
+  field_paths:
+  - mechanisms[0].description
+  evidence_ids:
+  - primary
+  - figure2
+  - correction
+  - gates
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/wood-ash.yaml
+    role: maintained record
+  rule_id: preserve-null-outcome-scope
+  native_severity: minor
+  normalization_reason: Bounded wording precision; the record already retains correct
+    numbers and statistical context.
+  disposition_reason: Changed phrase matches Figure2d and Table4 statistical groups.
+    Exact final owner and both histories were native-inspected and independently checked;
+    no unresolved corrective defect remains in scope.
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261015T140555Z-wood-ash-round96-statistical-wording-initial
+    finding_id: F1
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/349
+actions: []
+limitations:
+- No industrial process, isolated recovery product or fungus-exclusive dissolution
+  is demonstrated.
+- Ash fraction and wood blend remain unresolved; species authority does not identify
+  Piloderma sp.1 or experimental isolates.
+- Correction/retraction searches were bounded to exact DOI/title queries and returned
+  results; no exhaustive global absence claim. The full2001 predecessor graphics remain
+  inaccessible and are not accepted as new mechanism evidence.
+```

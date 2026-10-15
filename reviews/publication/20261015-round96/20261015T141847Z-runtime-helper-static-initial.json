@@ -1,0 +1,128 @@
+{
+  "recorded_at": "2026-10-15T14:18:47.999593Z",
+  "reviewer": "codex /root/round68_iron_sulfides (GPT-6)",
+  "independence": "Root adapted helpers; reviewer authored ferricopiapite/rhomboclase and independently reviewed bassanite. This is separate static operational assessment.",
+  "scope": "Complete source reading of five external Python helpers plus config; AST parse only, actual producer/schema and preservation context inspected. No top-level helper execution, network observation, Git/GitHub mutation or runtime-success claim.",
+  "scientific_review": false,
+  "verdict": "needs_curation",
+  "passed": false,
+  "unresolved_corrective_findings": 2,
+  "base": "4ef2e0dd88837ef729839ffde8ed828bcbb59cda",
+  "branch": "curate/cmm-expansion-round96-20261015",
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round96-enqueue.py",
+      "sha256": "fc5c058cff9c6abc45ad780eaaf3a07b3e2ce65cb057d524d49387f0d0356496",
+      "bytes": 4221,
+      "snapshot": {
+        "path": "/private/tmp/CMMMech-expansion-round96-20261015/reviews/publication/20261015-round96/20261015T141847Z-runtime-helper-static-initial-sources/cmm-round96-enqueue.py",
+        "sha256": "fc5c058cff9c6abc45ad780eaaf3a07b3e2ce65cb057d524d49387f0d0356496",
+        "bytes": 4221
+      }
+    },
+    {
+      "path": "/private/tmp/cmm-round96-cleanup.py",
+      "sha256": "63b96029520086cbfc6d720b6bb2d875179b61c5adc2b471f80401135c37ccb0",
+      "bytes": 2149,
+      "snapshot": {
+        "path": "/private/tmp/CMMMech-expansion-round96-20261015/reviews/publication/20261015-round96/20261015T141847Z-runtime-helper-static-initial-sources/cmm-round96-cleanup.py",
+        "sha256": "63b96029520086cbfc6d720b6bb2d875179b61c5adc2b471f80401135c37ccb0",
+        "bytes": 2149
+      }
+    },
+    {
+      "path": "/private/tmp/cmm-round96-sync-main.py",
+      "sha256": "5bf24b272955c7aae58ac73181bee938472dab5e342699da443af6abbabe7602",
+      "bytes": 3827,
+      "snapshot": {
+        "path": "/private/tmp/CMMMech-expansion-round96-20261015/reviews/publication/20261015-round96/20261015T141847Z-runtime-helper-static-initial-sources/cmm-round96-sync-main.py",
+        "sha256": "5bf24b272955c7aae58ac73181bee938472dab5e342699da443af6abbabe7602",
+        "bytes": 3827
+      }
+    },
+    {
+      "path": "/private/tmp/cmm-round96-hosted-five.py",
+      "sha256": "26bdb1c3a36fcffbe06d02587cc8a6c144060a33eb0cb73d684166aa0de25ae0",
+      "bytes": 24387,
+      "snapshot": {
+        "path": "/private/tmp/CMMMech-expansion-round96-20261015/reviews/publication/20261015-round96/20261015T141847Z-runtime-helper-static-initial-sources/cmm-round96-hosted-five.py",
+        "sha256": "26bdb1c3a36fcffbe06d02587cc8a6c144060a33eb0cb73d684166aa0de25ae0",
+        "bytes": 24387
+      }
+    },
+    {
+      "path": "/private/tmp/cmm-round96-commit.py",
+      "sha256": "5adcd6b089f81744707ac2ef847fd768dcd4ea75114d9e34ff62bc93f3fe7b6f",
+      "bytes": 1973,
+      "snapshot": {
+        "path": "/private/tmp/CMMMech-expansion-round96-20261015/reviews/publication/20261015-round96/20261015T141847Z-runtime-helper-static-initial-sources/cmm-round96-commit.py",
+        "sha256": "5adcd6b089f81744707ac2ef847fd768dcd4ea75114d9e34ff62bc93f3fe7b6f",
+        "bytes": 1973
+      }
+    },
+    {
+      "path": "/private/tmp/cmm-round96-helper-config.json",
+      "sha256": "07f9f84214e6576f8a092222789a397e0e7c69898933e00994db132896d53527",
+      "bytes": 486,
+      "snapshot": {
+        "path": "/private/tmp/CMMMech-expansion-round96-20261015/reviews/publication/20261015-round96/20261015T141847Z-runtime-helper-static-initial-sources/cmm-round96-helper-config.json",
+        "sha256": "07f9f84214e6576f8a092222789a397e0e7c69898933e00994db132896d53527",
+        "bytes": 486
+      }
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "C1",
+      "issue_key": "round96-commit-gate-current-input-binding",
+      "severity": "major",
+      "status": "open",
+      "path": "/private/tmp/cmm-round96-commit.py",
+      "lines": [
+        6,
+        8,
+        9,
+        17
+      ],
+      "description": "The commit helper accepts generic success flags/log hashes from four earlier receipts, then stages current files without checking the final-gates record_inputs, current review/coverage inputs, base/worktree identity or config census. An owner edit after a passing gate still satisfies these guards and can be committed under stale validation. Missing success keys also default to success. This is a helper contract defect, not evidence that the currently frozen scientific files changed.",
+      "evidence": "Read entire source; the only receipt checks are d.get(exit_code,0)==0, d.get(passed,True) and optional log digest at lines6\u20138. No record_inputs or coverage current-input comparison exists before git add/commit.",
+      "acceptance": [
+        "Require the actual expected per-receipt schema/success fields and trusted base/worktree/count identities before staging.",
+        "Recompute exact final-gate owner input digests and bind the actual review/coverage input census/selected current reviews to current bytes.",
+        "Preserve initial helper snapshot and independently assess a narrow successor; no new scientific finding or unnecessary suite rerun."
+      ]
+    },
+    {
+      "finding_id": "C2",
+      "issue_key": "round96-commit-existing-receipt-precondition",
+      "severity": "minor",
+      "status": "open",
+      "path": "/private/tmp/cmm-round96-commit.py",
+      "lines": [
+        15,
+        17,
+        20
+      ],
+      "description": "The existing commit-receipt path is rejected only after git add and git commit. An already-existing receipt with a base checkout can cause a successful mutation followed by an assertion, leaving the new commit without its own accepted receipt.",
+      "evidence": "Output-path assertion appears on line20 after mutation lines15/17. Other reviewed mutators reject their output path up front.",
+      "acceptance": [
+        "Reject an existing or symlink output receipt before any staging/commit mutation.",
+        "Retain exclusive creation at final write so a late collision cannot silently overwrite evidence."
+      ]
+    }
+  ],
+  "positive_checks": [
+    "Cleanup checks exact current topic branch/head and clean WT, live remote ref expected old SHA, exact actual merge tree/sole parent; detach/delete scope is owned branch only.",
+    "Sync checks actual postmerge identity/log/required validation outcomes, original 7,493 nontracked file hashes/modes/symlink targets, immutable tag and backup manifest, exact remote main/sole parent/tree, incoming-versus-hidden/ignored path collisions and ff-only/no-autostash before and after.",
+    "Enqueue checks exact preflight base/head/tree/counts/log, required validation commands, local clean exact head, current PR title/body/pathset/required checks/COMMENT and native squash queue rules; records immediately prior live main.",
+    "Hosted-five reads current PR/head/tree/sole parent, complete paginated files/blobs, exact five current workflow roles/attempt-specific jobs and closing identities. Pending runs remain pending, explicit issue states are caller supplied, unique receipts preserve observations.",
+    "No round95 cohort/count text found in the six bounded files using hidden/ignored-inclusive literal search. Historical retained tag is intentionally unchanged.",
+    "Config six slugs/current base/branch and forecast465/533/550/97/465 agree with assigned cohort; final review/coverage receipt completion remains a runtime prerequisite."
+  ],
+  "limitations": [
+    "Full package scientific currentness and all pending runtime actions are not established by this static review.",
+    "Hosted-five presently declares root as executor/coordinator. A different executing reviewer must use truthful explicit attribution before runtime.",
+    "Enqueue review listing uses one100-item page, sufficient for this new PR expected small review inventory but not general exhaustive pagination.",
+    "Exact source-reading start was not independently timestamped; recorded_at is final observation/save time."
+  ]
+}

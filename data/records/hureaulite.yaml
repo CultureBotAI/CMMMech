@@ -1,0 +1,119 @@
+id: cmmmech:hureaulite
+name: Hureaulite
+material_kind: mineral
+description: Hureaulite is the manganese(II) hydrogen phosphate hydrate mineral with current IMA formula
+  Mn2+5(PO3OH)2(PO4)2(H2O)4. The September 2026 list records renamed status, 2007 s.p.; this is not a
+  new-species approval number. Natural material can contain iron and other substitutions. Garcia Guajardo
+  et al. (2024) prepared a synthetic manganese phosphate assigned to monoclinic C2/c hureaulite by powder
+  diffraction and vibrational spectroscopy, then tested composite electrodes made from that powder. The
+  synthetic reagent-derived material is distinguished from mined natural hureaulite, from lithiophilite
+  and from a merely hureaulite-like phase. Its laboratory charge-storage behavior is not microbial transformation,
+  extraction of manganese from ore, recovery of an isolated metal product or industrial deployment. Charge-partition
+  and proton-transfer explanations are model-based interpretations, and the exact redox reaction remains
+  unresolved. No constituent-element criticality is inherited.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Hureaulite row, PDF page 97, Mn2+5(PO3OH)2(PO4)2(H2O)4,
+    Rn, 2007 s.p.; status definitions page 1.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-15'
+- id: handbook_hureaulite
+  title: Handbook of Mineralogy. Hureaulite. Complete one-page entry; natural Fe-bearing chemistry and
+    monoclinic identity, with C2/c cell data explicitly labelled synthetic.
+  url: https://www.handbookofmineralogy.org/pdfs/hureaulite.pdf
+  accessed_on: '2026-10-15'
+- id: garcia2024
+  title: Garcia Guajardo CI, Zuniga Martinez JA, Berlanga Perez R, Lopez Pavon LA, Lucio Porto R (2024).
+    Synthesis of Hureaulite Mn5(H2O)4(PO3OH)2(PO4)2 with an Open 3D Network Structure as Electrode Material
+    for Electrochemical Capacitors. Processes 12:1622. Complete eighteen-page publisher original and JATS;
+    methods sections 2.1-2.3 pages 2-3, Figures 1-8 and Table 1 inspected.
+  url: https://doi.org/10.3390/pr12081622
+  accessed_on: '2026-10-15'
+- id: garcia2024_si
+  title: Official supplementary ZIP containing processes-3073306-supplementary.pdf, eleven pages. All
+    Figures S1-S13, Trasatti-Dunn method pages 3-4 and active-thickness/areal-capacitance equations page
+    11 inspected.
+  url: https://mdpi-res.com/d_attachment/processes/processes-12-01622/article_deploy/processes-12-01622-s001.zip
+  accessed_on: '2026-10-15'
+mechanisms:
+- id: abiotic-synthesis-of-hureaulite-assigned-powder
+  name: Abiotic preparation of a hureaulite-assigned manganese phosphate
+  process: other
+  microbial: false
+  description: A reagent solution containing manganese chloride, sodium dodecyl sulfate and potassium
+    hydrogen phosphate produced a filtered, washed powder assigned to hureaulite. Diffraction and Raman/FTIR
+    support the assignment, without a quantified phase-purity fraction or isolated-product yield.
+  context: 'Garcia2024 section 2.1, page 2: a 5 wt% sodium dodecyl sulfate solution received MnCl2·4H2O
+    to a nominal SDS/Mn molar ratio of 1.8. It was held at 70 degrees C for one hour before dropwise K2HPO4
+    addition to a nominal Mn/K2HPO4 molar ratio of 1, followed by 24 hours at 70 degrees C. Solids were
+    filtered, washed repeatedly with water and acetone and dried at room temperature. Absolute reagent
+    amounts, solution volume, reaction pH, yield and independent batch replication are not reported. No
+    matched preparation without surfactant is shown, so a causal morphology benefit of SDS is not independently
+    established.'
+  evidence:
+  - source_ref: garcia2024
+    supports: support
+    explanation: Section 2.1 and Figures 1a and 2, pages 2 and 4-5, show the synthesis, reference-pattern
+      comparison to JCPDS 01-076-0804 and vibrational spectra. Figure 2a shows interconnected plates;
+      the reported approximately 40 nm thickness is a morphological estimate, not a whole-particle diameter
+      or measured size distribution.
+  - source_ref: garcia2024_si
+    supports: partial
+    explanation: Figure S1, page 1, supports the reported low specific surface area context; the main
+      text reports approximately 4 m2/g. The acquired supplement does not supply a quantitative phase
+      refinement, elemental mass balance or a surfactant-free morphology control.
+- id: abiotic-electrochemical-charge-storage
+  name: Laboratory charge storage in composite electrodes containing synthetic hureaulite
+  process: other
+  microbial: false
+  description: Composite electrodes exhibited electrolyte- and scan-rate-dependent charge storage. The
+    authors interpret voltammogram deconvolution as electric double-layer, pseudocapacitive and diffusion-dependent
+    contributions and propose proton transfer coupled to possible manganese redox. The measurements establish
+    electrochemical response, not direct proof of ion occupancy, a specific oxidation-state pathway or
+    unchanged post-cycling mineralogy.
+  context: 'Garcia2024 section 2.3, pages 2-3: active powder/carbon black/PTFE mass ratio 70:20:10, ethanol-assisted
+    films approximately 100 micrometres thick pressed on a stainless-steel grid at 1 GPa, reported active-material
+    loading 7 mg/cm2. Three-electrode measurements used a Pt counter electrode and Hg/HgO reference in
+    alkaline electrolytes or Ag/AgCl in neutral electrolytes. A separate symmetric two-electrode Swagelok
+    cell used a fiberglass separator wetted with 0.5 mL 5 M KOH. Active-material-normalized results exclude
+    the mass of the binder, conductive additive and complete device. Electrode blank subtraction, independent
+    replicate counts and uncertainty intervals are not established in the inspected report. The different
+    electrolytes change several factors together and are not a matched pH-only causal test.'
+  evidence:
+  - source_ref: garcia2024
+    supports: support
+    explanation: Figure 3c and Results pages 6-8 report 184 F/g at 5 mV/s in 3 M KOH versus 16 and 15
+      F/g in 5 M LiNO3 and 1 M Na2SO4, respectively. In 3 M KOH the value declines to about 100 F/g at
+      100 mV/s. These are active-material-normalized three-electrode capacitances, not metal recovery
+      yields or complete-device energy densities. Figure 8d and text page 15 show capacitance loss in
+      both two- and three-electrode cells over 5000 cycles; no universal stability or industrial service-life
+      claim is made.
+  - source_ref: garcia2024_si
+    supports: partial
+    explanation: Figures S2-S4 show rate-dependent voltammograms, and the methods on pages 3-4 explain
+      the fitted charge partitions plotted in Figures S5-S12 and main Figures 4-7. These mathematical
+      partitions and the one-electron assumption in the page-11 active-thickness calculation do not independently
+      identify the diffusing ion or prove the proposed Grotthuss/Mn2+-Mn3+ reaction. No post-cycling phase
+      analysis or dissolved-manganese balance is provided in the accepted main/SI.
+  - source_ref: garcia2024
+    supports: partial
+    explanation: Table 1, page 9, labels the K3PO4 comparison as 1 M, whereas methods and Figures 3 and
+      6 use 3 M. Equations 2-3, page 3, label energy in Wh/kg and time in seconds but do not display the
+      required time-unit conversion; exact energy/power values and cross-material superiority are not
+      adopted. The manuscript itself says a specific faradaic reaction is difficult to assign (pages 14-15).
+  - source_ref: garcia2024_si
+    supports: partial
+    explanation: Page 11 gives inconsistent specific-surface-area units between the active-thickness and
+      areal-capacitance definitions. Figure S13 labels the horizontal axis versus Ag/AgCl while describing
+      the two-electrode Swagelok device. These unresolved source labels preclude treating the modelled
+      active depth or device reference potential as independently verified measurements.
+curation_history:
+- timestamp: '2026-10-15T13:56:06.161852Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Added a distinct mineral identity from primary evidence and authority checks, preserving natural
+    versus synthetic material scope, source conflicts and limits; no microbial or inherited criticality
+    claim.
+
+history_refs:
+- history/records/hureaulite/2026-10-15T135927Z-codex-d231b7.yaml

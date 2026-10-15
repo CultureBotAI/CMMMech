@@ -8,13 +8,19 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 459 material records.
+The catalogue currently contains 465 material records.
 
-The [latest curation report](research/ingests/round95-frontier-20261015.md) links
+The [latest curation report](research/ingests/round96-frontier-20261015.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Bassanite](data/records/bassanite.yaml) | EPS- and saline-culture-associated mixed sulfate precipitation | Workup can affect hydration; phase proportions are not isolated recovery yields |
+| [Childrenite](data/records/childrenite.yaml) | Natural-crystal structure and measured composition | Main-text/CIF metadata conflicts and model composition remain distinct |
+| [Ferricopiapite](data/records/ferricopiapite.yaml) | Abiotic synthesis, structure and calorimetry | Minor impurity and nonideal composition; no microbial formation claim |
+| [Hureaulite](data/records/hureaulite.yaml) | Synthetic electrode material with laboratory electrochemical response | Conflicting electrolyte/units; proton and Mn-redox mechanisms remain proposed |
+| [Rhomboclase](data/records/rhomboclase.yaml) | Abiotic synthesis, structure and calorimetry | Nonideal sulfate/proton content and modeled stability; no recovery yield |
+| [Wood ash](data/records/wood-ash.yaml) | Fungal-treatment-associated soil-solution phosphate increase | No significant total- or plant-P benefit; background microbes and roots remain |
 | [Amblygonite](data/records/amblygonite.yaml) | Qualified heating of a characterized F/OH phosphate specimen | Conflicting aliquot composition; no pure-species threshold or lithium recovery |
 | [Ammoniojarosite](data/records/ammoniojarosite.yaml) | Formation during culture-associated iron oxidation | Mixed/null phases, source temperature conflict and unmatched abiotic comparisons |
 | [Argentojarosite](data/records/argentojarosite.yaml) | Silver precipitation after biological ferric-sulfate preparation | Later precipitation is labeled abiotic; no direct bacterial necessity or recovery balance |

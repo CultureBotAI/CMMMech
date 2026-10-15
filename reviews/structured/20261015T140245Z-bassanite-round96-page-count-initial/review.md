@@ -1,0 +1,253 @@
+# Independent initial bassanite source-page-count finding
+
+- Review: 20261015T140245Z-bassanite-round96-page-count-initial
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T13:59:54.978740Z
+- Finished UTC: 2026-10-15T14:02:45.494097Z
+- Reviewer: codex /root/round68_iron_sulfides (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+One confirmed minor source-description defect: the accepted Al Disi2023 original is five pages, while the owner states six. Scientific mechanism assessment is continuing; no false missing-source claim or final acceptance is made.
+
+## Scope And Provenance
+
+Scoped exact-owner source completeness/page-count assessment; full independent science continues separately.
+
+Selection: Root-assigned bassanite review after author freeze.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 4ef2e0dd88837ef729839ffde8ed828bcbb59cda.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:bassanite | data/records/bassanite.yaml | maintained | Bassanite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Original source page count and terminal references | passed | True | cmmmech:bassanite | Independently parsed PDF page count5, read original allfive pages and visually inspected claim-bearing figures/table and terminal references. |
+| Independent named validation | passed | True | cmmmech:bassanite | Checked1record;0failed. |
+| Current final batch and append-only history gates | unavailable | True | cmmmech:bassanite | Coordinator final batch receipt is not yet available; no passing gate is inferred. |
+
+## Scientific And Domain Assessments
+
+### Original artifact completeness and bibliography
+
+provenance: concern. Targets: cmmmech:bassanite.
+
+The complete acquired PDF is five pages; owner source metadata says six. Exact inspected completeness should be described accurately.
+
+## Findings
+
+### F1: Correct Al Disi2023 original page count from six to five
+
+minor / open / confirmed; issue key: bassanite-round96-aldisi-original-page-count.
+
+sources[3].title says complete six-page original; actual original SHA3b7d5fbc7a81d6e9ddd6b2bdef5a3cd637d1c995bb86730c13ba585aca4b0183 contains five pages printed1–5 and terminal references. This is a bounded source-description error; full article is acquired and no sixth page should be sought on this basis.
+
+## Recommended Actions And Acceptance Checks
+
+### A1
+
+Change only the source page-count phrase to five-page original and append actual inline EDIT and canonical sidecar; retain this initial review and CREATE. Correct source dossier count wherever applicable without overwriting a frozen observation.
+
+- Source description matches the exact five-page original.
+- Scientific fields unchanged apart from provenance event/history_ref.
+- Final named/history/batch checks pass and independent successor resolves this exact F1 occurrence.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/bassanite.yaml; sources[3].title; entire initial frozen owner captured through native inspect. Artifact: /private/tmp/cmm-round96-bassanite-independent/bassanite-initial-owner.yaml | refutes | Source metadata asserts a complete six-page original. |
+| primary | https://doi.org/10.1016/j.scitotenv.2023.165820; Entire original PDF, five actual pages printed1–5 including article-end references; Figures1–3/Table1 read visually. Artifact: /private/tmp/cmm-round96-bassanite-research/aldisi2023-content.pdf | supports | The actual deposited complete original has five pages, verified with PyMuPDF and matching page renders; no missing sixth page is implied. |
+| named | uv run --locked cmmmech validate data/records/bassanite.yaml; Actual independent named validation, exit0, checked1/0. Artifact: /private/tmp/cmm-round96-bassanite-independent/named-initial.log | supports | Initial owner passes structural validation, which does not verify bibliographic page counts. |
+
+## Limits And Additional Notes
+
+- Scoped initial observation; full record acceptance and final batch gates remain pending.
+- No author corrections were performed by reviewer.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T140245Z-bassanite-round96-page-count-initial
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent initial bassanite source-page-count finding
+started_at: '2026-10-15T13:59:54.978740Z'
+finished_at: '2026-10-15T14:02:45.494097Z'
+reviewer:
+  identity: codex /root/round68_iron_sulfides
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored bassanite. I authored separate ferricopiapite/rhomboclase;
+    native-inspected this frozen owner before judgment and did not edit it.
+skill: .claude/skills/review-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: 'One confirmed minor source-description defect: the accepted Al Disi2023
+  original is five pages, while the owner states six. Scientific mechanism assessment
+  is continuing; no false missing-source claim or final acceptance is made.'
+source:
+  git_revision: 4ef2e0dd88837ef729839ffde8ed828bcbb59cda
+  state: working_tree
+  inputs:
+  - path: data/records/bassanite.yaml
+    sha256: 40dfae29b5849b4531c22f46057be4f607b941bc5857a7481611be3cd3952a9c
+    role: target
+  - path: history/records/bassanite/2026-10-15T135824Z-codex-dbc4f2.yaml
+    sha256: 9178a34a147187491d7fb1b0106773378463fe43c907c3ca53ab016209016559
+    role: context
+scope:
+  description: Scoped exact-owner source completeness/page-count assessment; full
+    independent science continues separately.
+  selection: Root-assigned bassanite review after author freeze.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:bassanite
+targets:
+- target_id: cmmmech:bassanite
+  path: data/records/bassanite.yaml
+  label: Bassanite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/bassanite.yaml
+    role: maintained_record
+checks:
+- check_id: page-count
+  name: Original source page count and terminal references
+  required: true
+  status: passed
+  summary: Independently parsed PDF page count5, read original allfive pages and visually
+    inspected claim-bearing figures/table and terminal references.
+  target_ids:
+  - cmmmech:bassanite
+  evidence_ids:
+  - primary
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/bassanite.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Checked1record;0failed.
+  target_ids:
+  - cmmmech:bassanite
+  evidence_ids:
+  - named
+- check_id: final-batch
+  name: Current final batch and append-only history gates
+  required: true
+  status: unavailable
+  summary: Coordinator final batch receipt is not yet available; no passing gate is
+    inferred.
+  target_ids:
+  - cmmmech:bassanite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/bassanite.yaml
+  locator: 'sources[3].title; entire initial frozen owner captured through native
+    inspect. Artifact: /private/tmp/cmm-round96-bassanite-independent/bassanite-initial-owner.yaml'
+  accessed_at: '2026-10-15T14:02:45.494097Z'
+  support: refutes
+  snapshot_sha256: 40dfae29b5849b4531c22f46057be4f607b941bc5857a7481611be3cd3952a9c
+  summary: Source metadata asserts a complete six-page original.
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.scitotenv.2023.165820
+  locator: 'Entire original PDF, five actual pages printed1–5 including article-end
+    references; Figures1–3/Table1 read visually. Artifact: /private/tmp/cmm-round96-bassanite-research/aldisi2023-content.pdf'
+  accessed_at: '2026-10-15T14:02:45.494097Z'
+  support: supports
+  snapshot_sha256: 3b7d5fbc7a81d6e9ddd6b2bdef5a3cd637d1c995bb86730c13ba585aca4b0183
+  summary: The actual deposited complete original has five pages, verified with PyMuPDF
+    and matching page renders; no missing sixth page is implied.
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/bassanite.yaml
+  locator: 'Actual independent named validation, exit0, checked1/0. Artifact: /private/tmp/cmm-round96-bassanite-independent/named-initial.log'
+  accessed_at: '2026-10-15T14:02:45.494097Z'
+  support: supports
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+  summary: Initial owner passes structural validation, which does not verify bibliographic
+    page counts.
+assessments:
+- assessment_id: page-count
+  area: provenance
+  topic: Original artifact completeness and bibliography
+  outcome: concern
+  target_ids:
+  - cmmmech:bassanite
+  evidence_ids:
+  - owner
+  - primary
+  summary: The complete acquired PDF is five pages; owner source metadata says six.
+    Exact inspected completeness should be described accurately.
+findings:
+- finding_id: F1
+  issue_key: bassanite-round96-aldisi-original-page-count
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Correct Al Disi2023 original page count from six to five
+  description: sources[3].title says complete six-page original; actual original SHA3b7d5fbc7a81d6e9ddd6b2bdef5a3cd637d1c995bb86730c13ba585aca4b0183
+    contains five pages printed1–5 and terminal references. This is a bounded source-description
+    error; full article is acquired and no sixth page should be sought on this basis.
+  target_ids:
+  - cmmmech:bassanite
+  field_paths:
+  - sources[3].title
+  evidence_ids:
+  - owner
+  - primary
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/bassanite.yaml
+    role: maintained_record
+  rule_id: exact-source-provenance
+  native_severity: minor
+  normalization_reason: Minor bibliographic count defect, without changing phase assignment,
+    measured outcomes or controls.
+actions:
+- action_id: A1
+  description: Change only the source page-count phrase to five-page original and
+    append actual inline EDIT and canonical sidecar; retain this initial review and
+    CREATE. Correct source dossier count wherever applicable without overwriting a
+    frozen observation.
+  finding_ids:
+  - F1
+  target_ids:
+  - cmmmech:bassanite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/bassanite.yaml
+    role: maintained_record
+  acceptance_checks:
+  - Source description matches the exact five-page original.
+  - Scientific fields unchanged apart from provenance event/history_ref.
+  - Final named/history/batch checks pass and independent successor resolves this
+    exact F1 occurrence.
+limitations:
+- Scoped initial observation; full record acceptance and final batch gates remain
+  pending.
+- No author corrections were performed by reviewer.
+```
