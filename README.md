@@ -8,13 +8,18 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 409 material records.
+The catalogue currently contains 414 material records.
 
-The [latest curation report](research/ingests/round85-frontier-20261015.md) links
+The [latest curation report](research/ingests/round86-frontier-20261015.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Churchite-(Y)](data/records/churchite-y.yaml) | Abiotic synthesis and ion-induced loss of crystalline order | Synthetic material, modeled dose and untested retention or recovery performance |
+| [Hemimorphite](data/records/hemimorphite.yaml) | Abiotic mineral leaching and a microbial-associated precursor | Poorly ordered precursor is not confirmed crystalline hemimorphite |
+| [Heterogenite](data/records/heterogenite.yaml) | Abiotic leaching of a characterized mixed cobalt ore | Bulk cobalt dissolution is not a mineral-specific recovery yield |
+| [Municipal sewage sludge](data/records/municipal-sewage-sludge.yaml) | Culture-associated phosphorus and metal mobilization | Nutrient inputs, control growth and source percentage inconsistencies |
+| [Willemite](data/records/willemite.yaml) | Lichen-associated field alteration and separate abiotic leaching | Field association does not isolate a microbial causal mechanism |
 | [Wurtzite](data/records/wurtzite.yaml) | Mixed ZnS precipitation in sulfate-reducing cultures | Unresolved communities, mixed phases and no mineral-specific recovery yield |
 | [Hydrozincite](data/records/hydrozincite.yaml) | Field microbial-associated zinc carbonate precipitation | Community association and sterile-organic morphology counterexamples |
 | [Zincite](data/records/zincite.yaml) | Fungal-conditioned ZnO transformation and separate abiotic dissolution | Residual zincite, source dose conflicts and no isolated recovery yield |

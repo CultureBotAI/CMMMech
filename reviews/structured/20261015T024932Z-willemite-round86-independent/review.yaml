@@ -1,0 +1,352 @@
+schema_version: 1.0.0
+review_id: 20261015T024932Z-willemite-round86-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of willemite
+started_at: '2026-10-15T02:33:30.265410Z'
+finished_at: '2026-10-15T02:49:32.566631Z'
+reviewer:
+  identity: codex /root/round68_new_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer authored municipal-sewage-sludge, not either zinc record/history/dossier.
+    Curator-shared acquisition is disclosed; original text, all claim-bearing graphics/tables
+    and current authority/taxon artifacts were independently assessed after native
+    inspection. No laboratory replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of distinct willemite identity, lichen-associated alteration
+  of a source-assigned phase in mixed slag, and separate abiotic synthetic-feed Zn
+  leaching. Neither experiment establishes phase-specific recovered product or industrial
+  deployment.
+source:
+  git_revision: 6a579d90978267cf5d145bca05b4c97e5ba4d629
+  state: working_tree
+  inputs:
+  - path: data/records/willemite.yaml
+    sha256: ebea085928aa811ca788d5ae8dc8151d4cb9dc64cd40e9d16cbb3de33e0e81e7
+    role: target
+  - path: history/records/willemite/2026-10-15T023035Z-codex-0f6e07.yaml
+    sha256: bbc4bc5b0bee0f4a0728eef230c38cb928323c3650c447c2460cb3b73d436063
+    role: context
+scope:
+  description: Whole exact maintained owner and linked canonical CREATE; original
+    literature and source limits assessed as specified in evidence.
+  selection: Assigned single canonical target captured through native inspect before
+    judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:willemite
+targets:
+- target_id: cmmmech:willemite
+  path: data/records/willemite.yaml
+  label: Willemite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/willemite.yaml
+    role: maintained scientific record
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/willemite.yaml data/records/hemimorphite.yaml
+    --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual2records/0failed; receipt/log verified.
+  target_ids:
+  - cmmmech:willemite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch gate 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual terminal coordinator execution, not a claimed independent
+    rerun.
+  target_ids:
+  - cmmmech:willemite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual terminal coordinator execution, not a claimed independent
+    rerun.
+  target_ids:
+  - cmmmech:willemite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch gate 3
+  command: uv run --locked cmmmech validate-history --base 6a579d90978267cf5d145bca05b4c97e5ba4d629
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual terminal coordinator execution, not a claimed independent
+    rerun.
+  target_ids:
+  - cmmmech:willemite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual terminal coordinator execution, not a claimed independent
+    rerun.
+  target_ids:
+  - cmmmech:willemite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/willemite.yaml
+  locator: 'Whole exact input captured by native inspect before judgment. Actual local
+    artifact: /private/tmp/CMMMech-expansion-round86-20261015/data/records/willemite.yaml'
+  accessed_at: '2026-10-15T02:48:35.653089Z'
+  support: supports
+  summary: Exact frozen owner and canonical CREATE/inline provenance agree; no reviewer
+    edits.
+  snapshot_sha256: ebea085928aa811ca788d5ae8dc8151d4cb9dc64cd40e9d16cbb3de33e0e81e7
+- evidence_id: history
+  kind: record_content
+  reference: history/records/willemite/2026-10-15T023035Z-codex-0f6e07.yaml
+  locator: 'Whole exact input captured by native inspect before judgment. Actual local
+    artifact: /private/tmp/CMMMech-expansion-round86-20261015/history/records/willemite/2026-10-15T023035Z-codex-0f6e07.yaml'
+  accessed_at: '2026-10-15T02:48:35.653089Z'
+  support: supports
+  summary: Exact frozen owner and canonical CREATE/inline provenance agree; no reviewer
+    edits.
+  snapshot_sha256: bbc4bc5b0bee0f4a0728eef230c38cb928323c3650c447c2460cb3b73d436063
+- evidence_id: field
+  kind: primary_source
+  reference: https://doi.org/10.3390/met5031591
+  locator: 'Complete eighteen-page original text and all Figures 1–10/Tables 1–2 independently
+    inspected. Methods printed1593–1595; Figure2 printed1596, Figures4–5 printed1597;
+    source causal limitation Section4.1 printed1601–1602 and no mineralized oxalate
+    Section4.2. Actual local artifact: /private/tmp/cmm-round86-minerals-research/sueoka2015.pdf'
+  accessed_at: '2026-10-15T02:48:35.653089Z'
+  support: supports
+  summary: Mixed-slag microscopy and Zn distributions support the record's field association;
+    the paper cannot isolate S. exutum from other microbes or abiotic alteration.
+  snapshot_sha256: 56084a06bae6bb92beeb816587ce83132a3e6788f8b87a334d7558373e4c94db
+- evidence_id: chemical
+  kind: primary_source
+  reference: https://doi.org/10.3390/met12122031
+  locator: 'Complete twenty-page original and all Figures1–17/Tables1–3 independently
+    inspected. Methods/Table1 PDF3–4, Equation1 PDF4, Figures2–3 PDF5; Figure16/Table3
+    PDF17 and Figure17 PDF18 are the separate concentrate arm. Actual local artifact:
+    /private/tmp/cmm-round86-minerals-research/willemite2022.pdf'
+  accessed_at: '2026-10-15T02:48:35.653089Z'
+  support: supports
+  summary: The stated16min79.78% aqueous Zn/feed-Zn result, synthetic-feed conditions,
+    composition conflict and different silica products in the separate concentrate
+    arm are correctly qualified.
+  snapshot_sha256: 61515b8beb61fee33715541ef127460deb959a9981d1bf89710f250577d1aa4a
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'September2026 original; definitions PDF1 and exact row PDF235 visually
+    checked. Actual local artifact: /private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf'
+  accessed_at: '2026-10-15T02:48:35.653089Z'
+  support: context_only
+  summary: Mineral identity and dated status only, no criticality designation; live
+    index access is not asserted.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/willemite.pdf
+  locator: 'Complete one-page datasheet text and original render independently checked.
+    Actual local artifact: /private/tmp/cmm-round86-minerals-research/willemite-handbook.pdf'
+  accessed_at: '2026-10-15T02:48:35.653089Z'
+  support: context_only
+  summary: Formula, crystal data and natural occurrence support distinct mineral identity.
+  snapshot_sha256: ddef8d9e9a461a40dc1add19b8c6ba58e8c58fc475a804348b5ccb03dea6999c
+- evidence_id: taxonomy
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=373707
+  locator: 'Current retrieved original NCBI XML TaxId, ScientificName, rank and synonyms/merged
+    IDs inspected. Actual local artifact: /private/tmp/cmm-round86-minerals-research/stereocaulon-taxonomy.xml'
+  accessed_at: '2026-10-15T02:48:35.653089Z'
+  support: context_only
+  summary: Stereocaulon exutum species mapping is correct; the field specimens were
+    identified by morphology/color chemistry, without authenticated sequence or strain
+    accession.
+  snapshot_sha256: d111ecee43a5c2d9a43ae8e0366511a717375f09238ba9aa6cc3af1f53865a9c
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round86-zinc-review/exact-doi-dedup.txt
+  locator: 'Exact four DOI query via rg --no-ignore --hidden -L over data/records,research,reviews,history.
+    Actual local artifact: /private/tmp/cmm-round86-zinc-review/exact-doi-dedup.txt'
+  accessed_at: '2026-10-15T02:48:35.653089Z'
+  support: context_only
+  summary: Only current target/dossier occurrences in this bounded exact DOI query;
+    wider curator material/cited-raw assessment independently read. No exhaustive
+    absence claim.
+  snapshot_sha256: 1819173568bb0e773fbf1ac9098019fc3d6a81482621d49de5e6ee4467375cc9
+  search_scope: Exact four accepted-study DOI strings, current worktree data/records,
+    research, reviews and history, using rg --no-ignore --hidden -L; bounded query
+    with retained output.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round86-zinc-review/evidence-assessment.json
+  locator: 'Four exact DOI correction/retraction queries, four current Crossref relation/update
+    metadata, publisher versions web results; methods and scope recorded. Actual local
+    artifact: /private/tmp/cmm-round86-zinc-review/evidence-assessment.json'
+  accessed_at: '2026-10-15T02:48:35.653089Z'
+  support: context_only
+  summary: No separate formal corrective notice surfaced in bounded results; not proof
+    of absence. Publisher PDF/HTML updates and inaccessible Xu notes are disclosed.
+  snapshot_sha256: bbccefc9020f783ada4753ffdbd83d0eb0bf10e3a09a0a87a30312fc095eb549
+  search_scope: Four accepted-study exact DOI correction/retraction web queries, their
+    retrieved Crossref relation/update metadata and publisher version notes; bounded
+    returned results, not exhaustive notice absence.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round86-zinc-review/named-validation.json
+  locator: 'Actual independent named check 2026-10-15T02:34:47.405103+00:00 to 2026-10-15T02:34:55.208193+00:00;
+    log /private/tmp/cmm-round86-zinc-review/named-validation.log SHA256 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042.
+    Actual local artifact: /private/tmp/cmm-round86-zinc-review/named-validation.json'
+  accessed_at: '2026-10-15T02:48:35.653089Z'
+  support: supports
+  summary: Two records, zero failures; actual exit0 and retained log verified.
+  snapshot_sha256: 5b6b7ae5b982221e844a122f0fa372eae2a069f591255aae76ecab4178d28ce5
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round86-final-gates.json
+  locator: 'Actual FOUR coordinator commands 2026-10-15T02:38:30.480480+00:00 to 2026-10-15T02:47:49.096395+00:00;
+    log /private/tmp/cmm-round86-final-gates.log SHA256 b2ced490afd5c19f314cc545a9c33d806424d96397e41f6cdf10e95eb099429c.
+    Actual local artifact: /private/tmp/cmm-round86-final-gates.json'
+  accessed_at: '2026-10-15T02:48:35.653089Z'
+  support: supports
+  summary: Receipt, exact commands/base/worktree, log hash and unchanged owner inputs
+    independently verified; reviewer did not rerun global checks.
+  snapshot_sha256: 3ec871c723db50601e97218a1ae032d225aabe4336f6eabc626b85aa0e87bd00
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species and experimental-form boundary
+  outcome: supported
+  summary: IMA G1830 Zn2(SiO4) and Handbook agree. Willemite is distinct from hemimorphite/zincite/zinc
+    and from mixed slag or ore; no synthetic stoichiometric purity is inferred.
+  target_ids:
+  - cmmmech:willemite
+  evidence_ids:
+  - owner
+  - ima
+  - handbook
+  - chemical
+- assessment_id: conditions
+  area: evidence
+  topic: Microbial state, substrate and controls
+  outcome: supported
+  summary: Field lichen-associated hyphae and mixed slag were sampled2011–2013, not
+    incubated for that duration. No matched sterile exposure or isolated phase balance
+    establishes a necessary fungal effect. Separate chemical tests used2g/1.6L in2L
+    autoclave,53–57µm,393K,1g/LH2SO4,800rpm and usually1.2MPa air.
+  target_ids:
+  - cmmmech:willemite
+  evidence_ids:
+  - owner
+  - field
+  - chemical
+  - taxonomy
+- assessment_id: quantity
+  area: quantity
+  topic: Outcome denominator and phase evidence
+  outcome: supported
+  summary: 79.78% at16min is source-reported aqueous Zn relative to assayed feed Zn
+    with sampling-volume correction, not recovered metal or mineral conversion. Table1
+    Zn48.7–49.5wt% and SiO2 34.8–36.5wt% conflict with idealZn2SiO4; the record retains
+    this. Figure3 residual willemite/cristobalite is not pooled with separate concentrate
+    quartz Figures16–17.
+  target_ids:
+  - cmmmech:willemite
+  evidence_ids:
+  - owner
+  - chemical
+- assessment_id: uncertainty
+  area: evidence
+  topic: Causality and model limits
+  outcome: supported
+  summary: Field XRD was reported without displayed patterns; etch pits and maps support
+    a source-assigned local association only. Organic acids and chelation are proposed;
+    no mineralized oxalate found. Chemical model fit is not unique molecular proof;
+    replicate uncertainty unspecified for the accepted synthetic series.
+  target_ids:
+  - cmmmech:willemite
+  evidence_ids:
+  - owner
+  - field
+  - chemical
+- assessment_id: scope
+  area: scope
+  topic: Criticality, lineage and deployment
+  outcome: supported
+  summary: No criticality designation is inherited from Zn. Field association, abiotic
+    laboratory extraction and reference/precursor evidence stay separate; neither
+    isolated recovered product nor industrial deployment is asserted.
+  target_ids:
+  - cmmmech:willemite
+  evidence_ids:
+  - owner
+  - ima
+  - field
+  - chemical
+- assessment_id: provenance
+  area: provenance
+  topic: Exact hashes, history and checks
+  outcome: supported
+  summary: Native inspect precedes judgment; exact owner/CREATE and actual GPT-6/codex
+    actor match. Raw primary artifacts are nonempty original PDFs with verified hashes.
+    Named and actual four-command batch gates passed. No target edits by reviewer.
+  target_ids:
+  - cmmmech:willemite
+  evidence_ids:
+  - owner
+  - history
+  - named
+  - batch
+  - dedup
+  - notices
+findings: []
+actions: []
+limitations:
+- Field microbial association lacks a matched sterile exposure and phase-specific
+  dissolution balance; other microbes and abiotic weathering are not excluded.
+- Synthetic-feed composition and claimed purity conflict; no corrected composition
+  or phase-specific recovered yield is invented.
+- No independent laboratory replication by reviewer; exact assays and fitted model
+  retain source uncertainty.
+- Bounded notice search is not exhaustive; structural validation cannot prove scientific
+  truth.
+notes:
+- Every primary/authority/database row binds an actual nonempty local artifact; no
+  failed download or guessed path is accepted.
+- No scientific owner, canonical history or prior review was edited by this reviewer.
+- An unsaved first willemite draft failed the native saver because search evidence
+  omitted the explicit search_scope field. Preserved original drafts and rejection
+  metadata remain external; both documents now specify the actual bounded scope. Scientific
+  judgments and reviewed inputs are unchanged.
+- A second unsaved willemite draft rejection required review_id to match the refreshed
+  finished UTC timestamp. Identifier and timestamp were aligned before the sole persisted
+  bundle.

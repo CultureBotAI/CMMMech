@@ -1,0 +1,263 @@
+# Independent initial table-locator finding for Churchite-(Y)
+
+- Review: 20261015T023705Z-churchite-y-round86-table-locator-initial
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T02:33:58.756962Z
+- Finished UTC: 2026-10-15T02:37:05.387717Z
+- Reviewer: codex /root/round68_iron_sulfides (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Confirmed minor source-locator error in two irradiation references; Table4 rather than Table3 contains the supported Y fluence/dpa result. Full final scientific acceptance and batch validation remain pending.
+
+## Scope And Provenance
+
+Narrow initial observation of both irradiation table-locator occurrences against original JATS, HTML and Figure13; preserves exact pre-correction bytes.
+
+Selection: Assigned owner; native inspect completed before formal finding assessment.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6a579d90978267cf5d145bca05b4c97e5ba4d629.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:churchite-y | data/records/churchite-y.yaml | maintained | Churchite-(Y) |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Final batch gates | unavailable | True | cmmmech:churchite-y | Coordinator has not supplied a completed terminal batch receipt for this reviewed state; no passing validation claim made. |
+
+## Scientific And Domain Assessments
+
+### Exact primary table identity
+
+provenance: concern. Targets: cmmmech:churchite-y.
+
+Both table references misdirect a reader to rhabdophane fit parameters. Original Table4 and Figure13 support the numerical Y result.
+
+## Findings
+
+### F1: Point Y-churchite irradiation values to Table4, not Table3
+
+minor / open / confirmed; issue key: churchite-y-round86-irradiation-table-locator.
+
+The xenon_irradiation_amorphization description and its first evidence explanation cite Table3 for Y critical fluence. Original Table3 is rhabdophane curve-fit parameters; Table4 is the hydrous/anhydrous comparison and contains YPO4·2H2O3.1x10^13ions/cm2 and0.03dpa. Correct both locators while preserving supported numbers and scientific limits.
+
+## Recommended Actions And Acceptance Checks
+
+### A1
+
+Correct both Table3 references to Table4, append canonical EDIT and inline correction; preserve CREATE and initial review. Align any dossier locator that repeats the error.
+
+- Both irradiation locators identify Table4; unrelated Table2 synthesis references remain unchanged.
+- Source values and scientific boundaries unchanged; exact correction is independently compared.
+- Affected checks pass and final successor explicitly resolves this F1 issue key with exact previous occurrence.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/churchite-y.yaml; Exact inspected owner, irradiation mechanism description and first evidence explanation. Actual local artifact: /private/tmp/CMMMech-expansion-round86-20261015/data/records/churchite-y.yaml | supports | Two references name Table3 for the Y critical amorphization result. |
+| primary | https://doi.org/10.1021/acs.inorgchem.6c01299; Complete original JATS, table-wrap tbl3 and tbl4, Figure13. Actual local artifact: /private/tmp/cmm-round86-ree-phosphates-research/paper.xml | supports | Table3 contains rhabdophane curve-fit parameters. Table4 contains the Y-churchite3.1x10^13ions/cm2 and0.03dpa row; original Figure13 agrees. |
+| html | https://pmc.ncbi.nlm.nih.gov/articles/PMC13250987/; Original publisher-deposited full HTML, tbl3/tbl4 and labels. Actual local artifact: /private/tmp/cmm-round86-ree-phosphates-research/paper-pmc.html | supports | Independently confirms the numbered table identity, not an extraction-numbering assumption. |
+| figure13 | https://doi.org/10.1021/acs.inorgchem.6c01299; Original Figure13 pixels, Y bottom row, final two panels. Actual local artifact: /private/tmp/cmm-round86-ree-phosphates-research/ic6c01299_0013.jpg | supports | 3.1x10^13ions/cm2 and0.03dpa are visibly labelled; numerical values remain supported. |
+
+## Limits And Additional Notes
+
+- This is a scoped initial finding, not a final record acceptance or completed batch gate.
+- No independent experimental replication or reanalysis of raw diffraction/irradiation data.
+- The first external unsaved draft was rejected for YAML aliases created by reused Python owner-path objects. Same-source normalized dump removes serialization aliases without changing findings; rejected draft is retained externally.
+- A second external draft used a string scope.exclusions item rejected by the closed schema. Pending-scope limitation remains explicitly in scope.description, summary and limitations; invalid drafts retained, no native bundle rewritten.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T023705Z-churchite-y-round86-table-locator-initial
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent initial table-locator finding for Churchite-(Y)
+started_at: '2026-10-15T02:33:58.756962Z'
+finished_at: '2026-10-15T02:37:05.387717Z'
+reviewer:
+  identity: codex /root/round68_iron_sulfides
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored churchite-Y. Reviewer authored heterogenite only
+    and has not edited churchite owner/history; exact native capture preceded formal
+    finding assessment. Source reading before capture was preparation.
+skill: .claude/skills/review-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Confirmed minor source-locator error in two irradiation references; Table4
+  rather than Table3 contains the supported Y fluence/dpa result. Full final scientific
+  acceptance and batch validation remain pending.
+source:
+  git_revision: 6a579d90978267cf5d145bca05b4c97e5ba4d629
+  state: working_tree
+  inputs:
+  - path: data/records/churchite-y.yaml
+    sha256: 5d4560f2f71d0e79f280c99919c9aa07c62fbca47f723611b8becbb9090e5cc5
+    role: target
+  - path: history/records/churchite-y/2026-10-15T022915Z-codex-15c673.yaml
+    sha256: a8aab753161921cc013fef6a34bba1c258eb708bee2c6f310b28f3129de6f975
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Narrow initial observation of both irradiation table-locator occurrences
+    against original JATS, HTML and Figure13; preserves exact pre-correction bytes.
+  selection: Assigned owner; native inspect completed before formal finding assessment.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:churchite-y
+targets:
+- target_id: cmmmech:churchite-y
+  path: data/records/churchite-y.yaml
+  label: Churchite-(Y)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/churchite-y.yaml
+    role: maintained_record
+checks:
+- check_id: batch_pending
+  name: Final batch gates
+  status: unavailable
+  required: true
+  summary: Coordinator has not supplied a completed terminal batch receipt for this
+    reviewed state; no passing validation claim made.
+  target_ids:
+  - cmmmech:churchite-y
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/churchite-y.yaml
+  locator: 'Exact inspected owner, irradiation mechanism description and first evidence
+    explanation. Actual local artifact: /private/tmp/CMMMech-expansion-round86-20261015/data/records/churchite-y.yaml'
+  accessed_at: '2026-10-15T02:35:06.527373Z'
+  support: supports
+  summary: Two references name Table3 for the Y critical amorphization result.
+  snapshot_sha256: 5d4560f2f71d0e79f280c99919c9aa07c62fbca47f723611b8becbb9090e5cc5
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1021/acs.inorgchem.6c01299
+  locator: 'Complete original JATS, table-wrap tbl3 and tbl4, Figure13. Actual local
+    artifact: /private/tmp/cmm-round86-ree-phosphates-research/paper.xml'
+  accessed_at: '2026-10-15T02:35:06.527373Z'
+  support: supports
+  summary: Table3 contains rhabdophane curve-fit parameters. Table4 contains the Y-churchite3.1x10^13ions/cm2
+    and0.03dpa row; original Figure13 agrees.
+  snapshot_sha256: 16e50844f4ca5f42ebaeefa83e2b4a50892a61ae38636ed28c44e8ecf6e9a1a1
+- evidence_id: html
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC13250987/
+  locator: 'Original publisher-deposited full HTML, tbl3/tbl4 and labels. Actual local
+    artifact: /private/tmp/cmm-round86-ree-phosphates-research/paper-pmc.html'
+  accessed_at: '2026-10-15T02:35:06.527373Z'
+  support: supports
+  summary: Independently confirms the numbered table identity, not an extraction-numbering
+    assumption.
+  snapshot_sha256: 9e1026c44ae7423fdfc77a1fe3b99586918ead1fa80072b4a88da9ae271a74e0
+- evidence_id: figure13
+  kind: primary_source
+  reference: https://doi.org/10.1021/acs.inorgchem.6c01299
+  locator: 'Original Figure13 pixels, Y bottom row, final two panels. Actual local
+    artifact: /private/tmp/cmm-round86-ree-phosphates-research/ic6c01299_0013.jpg'
+  accessed_at: '2026-10-15T02:35:06.527373Z'
+  support: supports
+  summary: 3.1x10^13ions/cm2 and0.03dpa are visibly labelled; numerical values remain
+    supported.
+  snapshot_sha256: 41893521cb1ded35e1d23376767f556d23abb27e4b9d392c88400c7229f3e3a5
+assessments:
+- assessment_id: locator
+  area: provenance
+  topic: Exact primary table identity
+  outcome: concern
+  summary: Both table references misdirect a reader to rhabdophane fit parameters.
+    Original Table4 and Figure13 support the numerical Y result.
+  target_ids:
+  - cmmmech:churchite-y
+  evidence_ids:
+  - record
+  - primary
+  - html
+  - figure13
+findings:
+- finding_id: F1
+  issue_key: churchite-y-round86-irradiation-table-locator
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Point Y-churchite irradiation values to Table4, not Table3
+  description: The xenon_irradiation_amorphization description and its first evidence
+    explanation cite Table3 for Y critical fluence. Original Table3 is rhabdophane
+    curve-fit parameters; Table4 is the hydrous/anhydrous comparison and contains
+    YPO4·2H2O3.1x10^13ions/cm2 and0.03dpa. Correct both locators while preserving
+    supported numbers and scientific limits.
+  target_ids:
+  - cmmmech:churchite-y
+  field_paths:
+  - mechanisms[id=xenon_irradiation_amorphization].description
+  - mechanisms[id=xenon_irradiation_amorphization].evidence[0].explanation
+  evidence_ids:
+  - record
+  - primary
+  - html
+  - figure13
+  rule_id: primary-source-locator
+  native_severity: minor
+  normalization_reason: A bounded table-number error; the numeric result and phase
+    assignment remain supported by actual Table4 and Figure13.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/churchite-y.yaml
+    role: maintained_record
+actions:
+- action_id: A1
+  description: Correct both Table3 references to Table4, append canonical EDIT and
+    inline correction; preserve CREATE and initial review. Align any dossier locator
+    that repeats the error.
+  finding_ids:
+  - F1
+  target_ids:
+  - cmmmech:churchite-y
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/churchite-y.yaml
+    role: maintained_record
+  acceptance_checks:
+  - Both irradiation locators identify Table4; unrelated Table2 synthesis references
+    remain unchanged.
+  - Source values and scientific boundaries unchanged; exact correction is independently
+    compared.
+  - Affected checks pass and final successor explicitly resolves this F1 issue key
+    with exact previous occurrence.
+limitations:
+- This is a scoped initial finding, not a final record acceptance or completed batch
+  gate.
+- No independent experimental replication or reanalysis of raw diffraction/irradiation
+  data.
+notes:
+- The first external unsaved draft was rejected for YAML aliases created by reused
+  Python owner-path objects. Same-source normalized dump removes serialization aliases
+  without changing findings; rejected draft is retained externally.
+- A second external draft used a string scope.exclusions item rejected by the closed
+  schema. Pending-scope limitation remains explicitly in scope.description, summary
+  and limitations; invalid drafts retained, no native bundle rewritten.
+```

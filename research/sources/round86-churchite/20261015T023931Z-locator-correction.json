@@ -1,0 +1,74 @@
+{
+  "recorded_at": "2026-10-15T02:39:31.906807+00:00",
+  "author": "codex /root",
+  "kind": "source_dossier_correction",
+  "predecessors": [
+    {
+      "path": "research/sources/round86-churchite/20261015T023351Z-source-investigation.json",
+      "sha256": "3e45b1b5e1f00da4cc9c3d813d214a6fa11ef1da4af6ffd091708bff91d4bfb6"
+    },
+    {
+      "path": "research/sources/round86-churchite/20261015T023351Z-source-investigation.md",
+      "sha256": "a839c74bddb416e633412d93b09fcc03663d9af59587221b16e9ed34c52c5f43"
+    }
+  ],
+  "finding": {
+    "review": "20261015T023705Z-churchite-y-round86-table-locator-initial",
+    "finding_id": "F1",
+    "issue_key": "churchite-y-round86-irradiation-table-locator"
+  },
+  "companion": {
+    "path": "/private/tmp/cmm-round86-churchite-independent/20261015T023840Z-dossier-locator-occurrence.json",
+    "sha256": "043629496e61e3e7bdcd2ade1de55828f31057bdfdb0de2b0742bfe3b836f088"
+  },
+  "corrections": [
+    {
+      "path": "research/sources/round86-churchite/20261015T023351Z-source-investigation.md",
+      "locator": "line23",
+      "old": "Figure13 Y row agrees with Table3",
+      "corrected": "Figure13 Y row agrees with Table4"
+    },
+    {
+      "path": "research/sources/round86-churchite/20261015T023351Z-source-investigation.json",
+      "locator": "claims[1].locators[3]",
+      "old": "Table3",
+      "corrected": "Table4"
+    }
+  ],
+  "basis": "Original JATS Table4, Fc and Tc of Hydrous and Anhydrous Rare-Earth Phosphates, contains YPO4\u00b72H2O 3.1\u00d710^13 ions/cm\u00b2 and 0.03 modeled dpa. Table3 contains rhabdophane curve-fit parameters. No measurement or conclusion changed.",
+  "source": {
+    "path": "/private/tmp/cmm-round86-ree-phosphates-research/paper.xml",
+    "sha256": "16e50844f4ca5f42ebaeefa83e2b4a50892a61ae38636ed28c44e8ecf6e9a1a1"
+  },
+  "owner_correction": {
+    "recorded_at": "2026-10-15T02:38:10.481794+00:00",
+    "old_sha256": "5d4560f2f71d0e79f280c99919c9aa07c62fbca47f723611b8becbb9090e5cc5",
+    "new_sha256": "ee661848a3792061d51c715c74a2f749b36a22831612bd617f44f2db64934384",
+    "history": "history/records/churchite-y/2026-10-15T023818Z-codex-b0368d.yaml",
+    "history_sha256": "b5de7c6b70f4eb55d3388ae7b6f018ab11f5137b80173b0713dbc9294d249312",
+    "command": [
+      "just",
+      "new-history",
+      "--slug",
+      "churchite-y",
+      "--actor-type",
+      "ai_agent",
+      "--actor-name",
+      "codex",
+      "--model",
+      "GPT-6",
+      "--agent-tool",
+      "codex",
+      "--event",
+      "EDIT",
+      "--outcome",
+      "changed",
+      "--summary",
+      "Correct churchite irradiation source table locators",
+      "--details",
+      "Independent review 20261015T023705Z-churchite-y-round86-table-locator-initial finding F1 (churchite-y-round86-irradiation-table-locator) demonstrated that original Table 4, not Table 3, contains the Y-churchite critical fluence and modeled dpa. Changed the two locators only; preserved numerical values, synthesis references, source limits, CREATE history and initial review. Companion dossier correction preserves its immutable original. Final named and batch validation and independent successor review follow."
+    ],
+    "exit_code": 0
+  },
+  "status": "Corrected by explicit addendum; immutable original dossier and initial review preserved. Independent successor verification and final gates pending at this timestamp."
+}
