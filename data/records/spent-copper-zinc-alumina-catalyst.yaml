@@ -1,0 +1,83 @@
+id: cmmmech:spent-copper-zinc-alumina-catalyst
+name: Spent copper-zinc-alumina catalyst
+material_kind: secondary_resource
+description: Used CuO-ZnO-Al2O3 catalyst material from synthesis-gas processing, including low-temperature
+  carbon monoxide conversion. This composition-defined secondary resource is distinct from fresh catalyst,
+  its constituent oxides, elemental copper/zinc and spent refinery hydroprocessing catalysts. The selected
+  Polish-market sample had 35.1 wt% Cu, 29.9 wt% Zn and 9.2 wt% Al by AAS; these are sample measurements,
+  not a universal formulation. Its plant and service history are unspecified. No constituent criticality
+  is inherited.
+sources:
+- id: malecki_2018
+  title: Małecki and Gargul (2018). Low-Waste Recycling of Spent CuO-ZnO-Al2O3 Catalysts. Metals 8(3):177.
+    DOI 10.3390/met8030177; complete published eight-page PDF, §§2-4, Table 1, Figures 1-4.
+  url: https://doi.org/10.3390/met8030177
+  accessed_on: '2026-10-15'
+mechanisms:
+- id: coal_reduction
+  name: Laboratory coal reduction with slag-forming additions
+  process: recovery
+  description: Coal-assisted melting produced a copper-rich alloy, with substantial copper remaining outside
+    the alloy. Zinc transfer to dust was inferred from an incomplete balance, not measured as a collected
+    zinc product.
+  context: Four laboratory variants used 100 g uncrushed spent catalyst and 10 g coal in graphite crucibles,
+    with different SiO2/CaO/NaOH/Na2CO3 additions. Variant I used 50 g SiO2 and 15 g CaO at 1300 degrees
+    C for 45 minutes; variants II-IV used 1250-1300 degrees C for 50-90 minutes. Graphite also provided
+    reducing conditions.
+  microbial: false
+  evidence:
+  - source_ref: malecki_2018
+    supports: support
+    explanation: '§§3.1-3.2 and Table 1: variant I yielded 26 g alloy containing 23.2 g Cu and 2.5 g Zn;
+      66.1% of feed Cu entered alloy. Reported Cu-to-alloy yields across four arms were 50.4-66.1%. Copper
+      also remained in slag, and unmelted fines were observed in variants I/II. The alloy is not pure
+      copper, and arms must not be pooled.'
+  - source_ref: malecki_2018
+    supports: partial
+    explanation: Table 1 labels the unbalanced zinc remainder as dust and gives 68.2-71.6% yield, but
+      §3.2.1 states its amount could not be identified and §5 describes the zinc-dust yield as estimated
+      from the alloy/slag difference. Unmelted fractions are omitted from that table. These values do
+      not establish isolated zinc recovery or a closed mass balance. Viscous slag and copper losses limited
+      the tested routes; industrial throughput and emissions performance were not demonstrated.
+- id: sequential_alkaline_acid_leaching
+  name: Sequential alkaline zinc and acid copper leaching
+  process: separation
+  description: Sequential NaOH and H2SO4 leaching separated aqueous zinc and copper fractions from a zinc-aluminate/carbon
+    residue. Reported overall metal accounting includes retained solids and must not be read as isolated-metal
+    recovery.
+  context: Feed was fragmented below 90 micrometres. NaOH at 200 g/dm3, 75 degrees C for 120 minutes preceded
+    H2SO4 at 180 g/dm3, 60 degrees C for 120 minutes; both used the reported liquid/solid ratio 10, whose
+    units are not specified. A small, unquantified H2O2 addition was used during acid leaching. Each stage
+    was filtered; fine particles made filtration difficult.
+  microbial: false
+  evidence:
+  - source_ref: malecki_2018
+    supports: support
+    explanation: '§§4.1-4.2 and Figure 4: the 100 g laboratory feed produced separate 0.8 dm3 liquids,
+      reported at 23 g/dm3 Zn and 43 g/dm3 Cu, plus 33 g residue. The reported balance assigns 18.5 g
+      Zn (61.9%) and 34.5 g Cu (98%) to leachates. Volume-times-concentration differs slightly from rounded
+      balance masses. Residue diffraction identifies ZnAl2O4 and carbon; air heating at 600 degrees C
+      removed about 10% of residue mass.'
+  - source_ref: malecki_2018
+    supports: partial
+    explanation: The stated 97.5% Zn and 96% Al overall yields count zinc/aluminium retained in residue
+      as products, whereas only 61.9% Zn was reported leached. Residue was not established as pure zinc
+      aluminate, and no downstream electrolysis, precipitation, catalyst reuse or isolated metal yield
+      was demonstrated. The unknown peroxide dose and undefined liquid/solid units limit reproduction.
+      The §4.1 statement about insoluble copper/zinc oxides is inconsistent with the reported aqueous
+      separation and residue analysis; the narrower measured fractions are retained. Laboratory tests
+      do not establish a waste-free industrial process.
+curation_history:
+- timestamp: '2026-10-15T22:14:11.578484+00:00'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Created a distinct spent-catalyst resource with source-scoped abiotic laboratory evidence and
+    explicit yield, composition and scale limits.
+- timestamp: '2026-10-15T22:21:05.307363+00:00'
+  curator: Codex (GPT-6; Codex)
+  action: EDIT
+  summary: Corrected nonexistent table/section locators and attributed the inferred zinc-dust balance
+    to the actual source passages.
+history_refs:
+- history/records/spent-copper-zinc-alumina-catalyst/2026-10-15T221413Z-codex-ea1989.yaml
+- history/records/spent-copper-zinc-alumina-catalyst/2026-10-15T222107Z-codex-589fe1.yaml

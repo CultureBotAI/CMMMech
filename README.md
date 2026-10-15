@@ -8,9 +8,9 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 508 material records.
+The catalogue currently contains 515 material records.
 
-The [latest curation report](research/ingests/round103-frontier-20261015.md) links
+The [latest curation report](research/ingests/round104-frontier-20261015.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
