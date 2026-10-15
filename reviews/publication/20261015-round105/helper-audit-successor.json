@@ -1,0 +1,492 @@
+{
+  "recorded_at": "2026-10-15T23:12:32.460072+00:00",
+  "reviewer": {
+    "identity": "codex /root/round104_uranium",
+    "model": "GPT-6",
+    "independence": "independent",
+    "basis": "Different agent from coordinator/fixer /root; no helper edits by reviewer."
+  },
+  "reviewed_revision": "ee4ea8c2efa351a688946660c9ddc70560c3e86e",
+  "scope": "Successor assessment of the exact corrected publication-guards.py, finalize.py and cleanup.py, unchanged companion helpers and provisional config.",
+  "predecessor": {
+    "path": "reviews/publication/20261015-round105/helper-audit.json",
+    "sha256": "4b77ee461a57b1fc5b60784f61c97cce7a66993771df06678cb08fbb67a4b572"
+  },
+  "issue": "https://github.com/CultureBotAI/CMMMech/issues/407",
+  "helper_hashes": {
+    "/private/tmp/cmm-round105-commit.py": "9e8be149450b57a88266899aa25e2c06d655c948f5975d2c25ceea1950428f63",
+    "/private/tmp/cmm-round105-push-pr.py": "fb48de55bcacdbe2737f0c9610c74bab8c59ab28f74307cda9cb63d900c9d182",
+    "/private/tmp/cmm-round105-queue.py": "cb82f239f5f9baabd03c94bf79a12d95936b71dd23f7978827556bea26e482b1",
+    "/private/tmp/cmm-round105-cleanup.py": "a9f8b7a8b4c9ca39852fef3611a7a8c811946be3d0d54837b2ab924efeb20e14",
+    "/private/tmp/cmm-round105-finalize.py": "f34da7771b23f7bd6997f7f02ab3d4401cce96aca0f4f19ff6713d3ae1b5a97b",
+    "/private/tmp/cmm-round105-publication-guards.py": "2b235986eab5bb9ca7f1ef56c4d7dc2a3a1a50b6e548c1e3a15cd16e5628bc54",
+    "/private/tmp/cmm-round105-isolated-verification.py": "6fd45e79f046d09983628f74ee018642b2d9ac5a3fb8af305096b74bf4366494",
+    "/private/tmp/cmm-round105-isolated-coverage.py": "c55b6a821cea71931cd977823f0c5c8304e46cff3d0e01ff490be13f494e7bb7",
+    "/private/tmp/cmm-round105-helper-config.json": "897d5d6ef43df93687e674ed3c8d106f457d028c5f85679d76ddd2ba84cc765b"
+  },
+  "correction_diff": {
+    "path": "reviews/publication/20261015-round105/helper-fixes.diff",
+    "sha256": "ef750be8662432f0687a28fe37a041436df3470adaa87c7a102ab46321bf191e"
+  },
+  "findings": [
+    {
+      "finding_id": "PUB105-1",
+      "severity": "minor",
+      "disposition": "resolved",
+      "evidence": "The actual finalize caller binds current helper/config digests before invoking the new postmerge validator. It requires successful complete nonduplicated required gates with correct cwd, matching counts/coverage root and success, and log/coverage hashes. Inert actual-caller probes reject each missing gate, failed gates even when allowed, malformed identity/mode/digests, wrong coverage, and changed current helper/config files before main operations."
+    },
+    {
+      "finding_id": "PUB105-2",
+      "severity": "minor",
+      "disposition": "resolved",
+      "evidence": "Cleanup now checks exact CMMMech origin before any API or mutation. Inert actual-caller probes reject a wrong origin before API calls or deletion; valid flow remains accepted and moved remote/local refs remain rejected before deletion. Finalization additionally checks origin before main mutations."
+    }
+  ],
+  "checks": [
+    {
+      "name": "Coordinator pure regressions and source-order checks",
+      "passed": true,
+      "case_count": 33,
+      "receipt": "/private/tmp/cmm-round105-guard-regression.json",
+      "sha256": "ae0fb5a584747a9d9f91d2129d7874e87e1d40a60c176e75998d1f5169fdf49c"
+    },
+    {
+      "name": "Independent exact-caller AST regressions",
+      "passed": true,
+      "case_count": 33,
+      "receipt": "/private/tmp/cmm-round105-helper-audit/independent-successor2-probes.json",
+      "sha256": "dd2ed09b5ae29637bf73d544e4bded56291d4864dbab71f23bf4289ff098ae78"
+    },
+    {
+      "name": "Eight exact Python helper syntax parses",
+      "passed": true
+    },
+    {
+      "name": "Predecessor review unchanged",
+      "passed": true
+    }
+  ],
+  "probe_results": [
+    {
+      "name": "valid exact caller evidence",
+      "expected": "accepted",
+      "observed": "accepted",
+      "git_calls": [
+        [
+          "remote",
+          "get-url",
+          "origin"
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "empty gate list",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "failed hash-valid coverage",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "wrong coverage count",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "wrong receipt counts",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "wrong coverage root",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "wrong receipt config_sha256",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "wrong receipt helper_sha256",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "wrong trusted_base",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "wrong topic_head",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "wrong expected_tree",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "wrong mode",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "failed receipt",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "wrong log digest",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "missing required gate 0",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "failed required gate even allowed 0",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "missing required gate 1",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "failed required gate even allowed 1",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "missing required gate 2",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "failed required gate even allowed 2",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "missing required gate 3",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "failed required gate even allowed 3",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "duplicate required gate",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "wrong gate cwd",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "changed current helper-config.json",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "changed current publication-guards.py",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "changed current isolated-verification.py",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "changed current isolated-coverage.py",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [],
+      "passed": true
+    },
+    {
+      "name": "wrong origin before main operations",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [
+        [
+          "remote",
+          "get-url",
+          "origin"
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "correct origin and exact refs",
+      "expected": "accepted",
+      "observed": "accepted",
+      "git_calls": [
+        [
+          "remote",
+          "get-url",
+          "origin"
+        ],
+        [
+          "rev-parse",
+          "HEAD"
+        ],
+        [
+          "branch",
+          "--show-current"
+        ],
+        [
+          "status",
+          "--porcelain=v1",
+          "--untracked-files=all"
+        ],
+        [
+          "rev-parse",
+          "refs/heads/curate/cmm-expansion-round105-20261015"
+        ],
+        [
+          "ls-remote",
+          "origin",
+          "refs/heads/curate/cmm-expansion-round105-20261015"
+        ],
+        [
+          "push",
+          "origin",
+          "--force-with-lease=refs/heads/curate/cmm-expansion-round105-20261015:ROUND105_TOPIC_HEAD",
+          ":refs/heads/curate/cmm-expansion-round105-20261015"
+        ],
+        [
+          "ls-remote",
+          "origin",
+          "refs/heads/curate/cmm-expansion-round105-20261015"
+        ],
+        [
+          "checkout",
+          "--detach",
+          "ROUND105_TOPIC_HEAD"
+        ],
+        [
+          "rev-parse",
+          "refs/heads/curate/cmm-expansion-round105-20261015"
+        ],
+        [
+          "branch",
+          "--show-current"
+        ],
+        [
+          "worktree",
+          "list",
+          "--porcelain"
+        ],
+        [
+          "update-ref",
+          "-d",
+          "refs/heads/curate/cmm-expansion-round105-20261015",
+          "ROUND105_TOPIC_HEAD"
+        ],
+        [
+          "show-ref",
+          "--verify",
+          "--quiet",
+          "refs/heads/curate/cmm-expansion-round105-20261015"
+        ],
+        [
+          "rev-parse",
+          "HEAD"
+        ],
+        [
+          "status",
+          "--porcelain=v1",
+          "--untracked-files=all"
+        ],
+        [
+          "rev-parse",
+          "refs/tags/review-base/cmm-source-survey-20261009"
+        ],
+        [
+          "rev-parse",
+          "refs/tags/review-base/cmm-source-survey-20261009^{}"
+        ]
+      ],
+      "api_call_count": 12,
+      "mocked_mutations": [
+        [
+          "push",
+          "origin",
+          "--force-with-lease=refs/heads/curate/cmm-expansion-round105-20261015:ROUND105_TOPIC_HEAD",
+          ":refs/heads/curate/cmm-expansion-round105-20261015"
+        ],
+        [
+          "checkout",
+          "--detach",
+          "ROUND105_TOPIC_HEAD"
+        ],
+        [
+          "update-ref",
+          "-d",
+          "refs/heads/curate/cmm-expansion-round105-20261015",
+          "ROUND105_TOPIC_HEAD"
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "wrong origin rejects before any API or mutation",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [
+        [
+          "remote",
+          "get-url",
+          "origin"
+        ]
+      ],
+      "api_call_count": 0,
+      "mocked_mutations": [],
+      "passed": true
+    },
+    {
+      "name": "moved remote ref rejects before deletion",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [
+        [
+          "remote",
+          "get-url",
+          "origin"
+        ],
+        [
+          "rev-parse",
+          "HEAD"
+        ],
+        [
+          "branch",
+          "--show-current"
+        ],
+        [
+          "status",
+          "--porcelain=v1",
+          "--untracked-files=all"
+        ],
+        [
+          "rev-parse",
+          "refs/heads/curate/cmm-expansion-round105-20261015"
+        ],
+        [
+          "ls-remote",
+          "origin",
+          "refs/heads/curate/cmm-expansion-round105-20261015"
+        ]
+      ],
+      "api_call_count": 3,
+      "mocked_mutations": [],
+      "passed": true
+    },
+    {
+      "name": "moved local ref rejects before deletion",
+      "expected": "rejected",
+      "observed": "rejected",
+      "git_calls": [
+        [
+          "remote",
+          "get-url",
+          "origin"
+        ],
+        [
+          "rev-parse",
+          "HEAD"
+        ],
+        [
+          "branch",
+          "--show-current"
+        ],
+        [
+          "status",
+          "--porcelain=v1",
+          "--untracked-files=all"
+        ],
+        [
+          "rev-parse",
+          "refs/heads/curate/cmm-expansion-round105-20261015"
+        ]
+      ],
+      "api_call_count": 3,
+      "mocked_mutations": [],
+      "passed": true
+    }
+  ],
+  "verdict": "pass_with_limitations",
+  "summary": "Both supported initial findings are corrected and independently verified. No unresolved corrective finding remains within this bounded helper audit.",
+  "limitations": [
+    "Topic/tree/PR/preflight placeholders and provisional counts still await coordinator binding; issue lists are now explicitly bound to all [133,397,403,404,405,406,407,408,409], open excluding 407, closed 407. This artifact does not assert that issue 407 is already closed or that unbound scripts are publication-ready.",
+    "Exact final bindings require another check against the commit/PR receipts before queue admission.",
+    "The probes use fixture receipts and mocked Git/API functions; they do not claim a real merge, hosted validation or branch deletion.",
+    "Actual preflight, queue, hosted-attempt and fresh postmerge clone evidence remains required by the publication process.",
+    "This review supplements the unchanged scientific owner assessments; no record or corpus check was rerun for helper-only changes."
+  ]
+}

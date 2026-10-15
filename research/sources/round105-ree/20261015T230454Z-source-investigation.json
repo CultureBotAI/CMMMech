@@ -1,0 +1,1653 @@
+{
+  "id": "round105-ree-source-investigation",
+  "timestamp_utc": "2026-10-15T23:04:54.053707+00:00",
+  "researcher": {
+    "name": "codex",
+    "model": "GPT-6",
+    "agent_tool": "codex",
+    "agent": "/root/round104_ree"
+  },
+  "worktree": "/private/tmp/CMMMech-expansion-round105-20261015",
+  "branch": "curate/cmm-expansion-round105-20261015",
+  "base_revision": "ee4ea8c2efa351a688946660c9ddc70560c3e86e",
+  "decision": "one_new_mineral_owner_pending_independent_review; two bounded source-only handoffs",
+  "accepted_record": {
+    "timestamp_utc": "2026-10-15T23:03:07Z",
+    "record": "data/records/monazite-sm.yaml",
+    "record_sha256": "1a6f15007e6fe0bb333add148b0a82111b7ad3ccd12eb516ed53aaa6da37da1d",
+    "history": "history/records/monazite-sm/2026-10-15T230258Z-codex-052a2d.yaml",
+    "history_sha256": "3a0f43c3b73f8e6b28b63f70af1aee26de6b730ae96dc8550bea8636bd6e969b",
+    "earlier_failed_attempts": "new-history correctly refused missing target; no sidecar produced. A subsequent insertion assertion and nonexistent-target validation also failed before target creation. Created target, then canonical history, then inline event/reference."
+  },
+  "selection": "Monazite-(Sm) has a complete original natural-mineral description and an exact approved IMA identity. It is a new maintained mineral owner, distinct from elemental samarium and existing monazite species. Florencite-(Nd) identity is official but full primary evidence was not acquired; it remains research-only. The 2026 microbial paper is a distinct La/Gd experiment and cannot support the Sm owner.",
+  "identity": {
+    "name": "Monazite-(Sm)",
+    "ideal_formula": "Sm(PO4)",
+    "material_kind": "mineral",
+    "identifier": "IMA:2001-001",
+    "authority_edition": "IMA-CNMNC September 2026",
+    "authority_pdf_pages": [
+      1,
+      146
+    ],
+    "conflict": "Masau2002 page1650 prints IMA2000-001. Current official row gives2001-001. Current authority selected; original discrepancy retained explicitly, not silently corrected or claimed resolved by an erratum.",
+    "authority_reuse": {
+      "original_path": "/private/tmp/cmm-round104-ree-research/ima.pdf",
+      "copied_path": "/private/tmp/cmm-round105-ree-research/ima-reused-2026-09.pdf",
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "access": "Official PDF acquired in earlier session, bytes verified and pages1/146 re-inspected this session. Fresh official homepage links this September2026 edition; no fresh PDF download claimed."
+    }
+  },
+  "primary": {
+    "doi": "10.2113/gscanmin.40.6.1649",
+    "title": "MONAZITE-(Sm), A NEW MEMBER OF THE MONAZITE GROUP FROM THE ANNIE CLAIM #3 GRANITIC PEGMATITE, SOUTHEASTERN MANITOBA",
+    "publication_date_parts": [
+      [
+        2002,
+        12,
+        1
+      ]
+    ],
+    "authors": [
+      "Morgan Masau",
+      "Petr Cerny",
+      "Mark A. Cooper",
+      "Ron Chapman",
+      "Joel D. Grice"
+    ],
+    "url": "https://www.rruff.net/doclib/cm/vol40/CM40_1649.pdf",
+    "artifact": {
+      "path": "/private/tmp/cmm-round105-ree-research/monazite-sm2002.pdf",
+      "bytes": 243823,
+      "sha256": "66c52d669dc08e452db3fd87ce271a454d766be93b4ffa15c02174f92387110d"
+    },
+    "access": "Complete seven-page original PDF, extracted text read through references; original pages2-5 visually inspected including Figures1-3 and Tables1-2.",
+    "supplement_scope": "No supplementary-material pointer identified in the complete acquired seven-page original. Publisher supplementary inventory was not independently obtained; this is not a claim that no external or archival underlying data exist.",
+    "claims": [
+      {
+        "claim": "Natural Sm-dominant monazite from Annie Claim#3 pegmatite",
+        "locators": [
+          "pp1650-1652",
+          "Table1",
+          "Figure1"
+        ],
+        "limits": "Substantial Gd/Ce/Th/Ca, not an ideal pure end-member or bulk ore."
+      },
+      {
+        "claim": "WDS chemistry and single-crystal/Gandolfi diffraction support identity and P21/n symmetry",
+        "locators": [
+          "Experimental p1650",
+          "p1652",
+          "Table2 p1653"
+        ],
+        "limits": "Characterization rather than a controlled formation, extraction or microbial experiment."
+      },
+      {
+        "claim": "13.02wt% Sm2O3 average of three characterization grains;14.29wt% separate high-Sm analysis",
+        "locators": [
+          "Table1 notes p1652",
+          "p1651"
+        ],
+        "limits": "Maximum not obtained on extracted XRD/physical grains; oxide wt% not elemental concentration or recovery yield."
+      },
+      {
+        "claim": "Density and hardness not measured",
+        "locators": [
+          "p1651"
+        ],
+        "limits": "Published density values are calculated."
+      },
+      {
+        "claim": "Selective complexation during pegmatite evolution proposed",
+        "locators": [
+          "pp1653-1654",
+          "Figures2-3"
+        ],
+        "limits": "Authors note incomplete REE data/disequilibrium and request experiments; no accepted mechanism fabricated."
+      }
+    ],
+    "notice_checks": {
+      "crossref_relation": {},
+      "crossref_update_to": null,
+      "search_result": "No affecting correction/retraction found in the inspected exact-DOI/title queries; bounded first result sets, not exhaustive absence."
+    }
+  },
+  "microbial_prior_deferral": {
+    "issue": 133,
+    "url": "https://github.com/CultureBotAI/CMMMech/issues/133",
+    "doi": "10.1080/01490451.2017.1377320",
+    "report": "research/sources/round40-samarium-phosphate/20261012T005055Z-source-deferral.md",
+    "disposition": "Not resolved by this natural-mineral identity. Original Jiang figures/phase and preparation controls still missing; no microbial statement or organism mapping imported."
+  },
+  "florencite_nd_deferral": {
+    "identity": "IMA September2026 p74: NdAl3(PO4)2(OH)6, status A, source field1971-xxx. Placeholder does not establish a unique numbered approval identifier.",
+    "original": "Milton DJ and Bastron H (1971), Churchite and Florencite (Nd) from Sausalito, California, Mineralogical Record2:166-168.",
+    "status": "Search index text only; old RRUFF and bounded current-host routes404. No original PDF bytes or figures inspected.",
+    "secondary_primary_lead": "Fitzpatrick J (1986), Powder X-Ray Diffraction Data of Florencite-(Nd), Powder Diffraction1(4):330, DOI10.1017/S0885715600012021. Publisher/USGS preview only; nominal PDF request redirects to preview HTML. Online2013 date is not print1986 edition.",
+    "decision": "No record/history created. Obtain legitimate full original and original diffraction data before admission. No more unchanged failed-route retries."
+  },
+  "micro2026_handoff": {
+    "paper_doi": "10.1016/j.gca.2026.02.015",
+    "title": "Synergistic interfacial and multi-omics regulation of La3+/Gd3+ biomineralization by Micromonospora auratinigra",
+    "paper_access": "Publisher preview/section snippets only via web search; direct acquisition403. Full methods, strain authority, microscopy/mineral identity, controls and omics supplement not verified. No accepted measurements or mechanism claims.",
+    "dataset": {
+      "id": "wxdnxzm8g8",
+      "version": 1,
+      "name": "Synergistic Interfacial and Multi-omics Regulation of La3+/Gd3+ Biomineralization by Micromonospora auratinigra",
+      "description": "Synergistic Interfacial and Multi-omics Regulation of La3+/Gd3+ Biomineralization by Micromonospora auratinigra Research Data",
+      "doi": "10.17632/wxdnxzm8g8.1",
+      "publish_date": "2026-01-19T20:12:39.127Z",
+      "last_modification_date": "2026-01-19T14:11:42.980Z",
+      "is_confidential": false,
+      "customer": {
+        "id": "7377952c-6404-4428-bbfc-77242cfc301e",
+        "name": "Mendeley Guests"
+      },
+      "owner": {
+        "id": "9e69fd4f-3dd3-4006-abcb-8a2cc11c8305",
+        "first_name": "chenyu",
+        "last_name": "yin",
+        "display_name": "chenyu yin",
+        "$ref": "/profiles/9e69fd4f-3dd3-4006-abcb-8a2cc11c8305"
+      },
+      "categories": [
+        {
+          "id": "data.elsevier.com/vocabulary/OmniScience/Concept-186166919",
+          "label": "Microbiology"
+        }
+      ],
+      "licence": {
+        "id": "01d9c749-3c4d-4431-9df3-620b2dcfe144",
+        "short_name": "CC BY 4.0",
+        "full_name": "Creative Commons Attribution 4.0 International",
+        "description": "You can share, copy and modify this dataset so long as you give appropriate credit, provide a link to the CC BY license, and indicate if changes were made, but you may not do so in a way that suggests the rights holder has endorsed you or your use of the dataset. Note that further permission may be required for any content within the dataset that is identified as belonging to a third party.",
+        "url": "http://creativecommons.org/licenses/by/4.0",
+        "category": "Creative",
+        "customer_id": null
+      },
+      "institutions": [],
+      "funders": [],
+      "organisational_unit_names": [],
+      "contributors": [
+        {
+          "id": "9e69fd4f-3dd3-4006-abcb-8a2cc11c8305",
+          "first_name": "chenyu",
+          "last_name": "yin",
+          "$ref": "/profiles/9e69fd4f-3dd3-4006-abcb-8a2cc11c8305"
+        }
+      ],
+      "related_links": [],
+      "custom_metadata": {},
+      "is_metadata_only": false
+    },
+    "folders": [
+      {
+        "id": "2b68a76f-7f3b-4854-b250-ef038eaa8462",
+        "name": "Figures",
+        "parent_id": "247ea10f-1fe7-499f-b4ab-bcb2dff99815",
+        "created_date": "2026-01-19T14:08:55.976"
+      },
+      {
+        "id": "f36a0b6b-4f7c-4226-b055-13b577be297c",
+        "name": "Figures (new)",
+        "parent_id": "247ea10f-1fe7-499f-b4ab-bcb2dff99815",
+        "created_date": "2026-01-19T14:08:55.978"
+      },
+      {
+        "id": "7ef8d3d5-284b-4bcb-9511-7383654e78e5",
+        "name": "GCA补充图片（新）",
+        "parent_id": "247ea10f-1fe7-499f-b4ab-bcb2dff99815",
+        "created_date": "2026-01-19T14:08:55.98"
+      },
+      {
+        "id": "247ea10f-1fe7-499f-b4ab-bcb2dff99815",
+        "name": "Research Data",
+        "created_date": "2026-01-19T14:08:55.973"
+      }
+    ],
+    "enumeration": {
+      "observed_unique_files": 62,
+      "observed_folder_counts": {
+        "Figures": 33,
+        "Figures (new)": 22,
+        "GCA补充图片（新）": 5,
+        "Research Data": 2
+      },
+      "files": [
+        {
+          "id": "a86f9918-3aa8-43a4-bb58-0279dfb4e118",
+          "filename": "Research Data-2.xlsx",
+          "folder": "Research Data",
+          "size": 1439220,
+          "advertised_sha256": "b2316e164cf88aa7dbdd7d2a15ed747f53bf15abeb538ba4adcfe04d59ac32a7",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/a86f9918-3aa8-43a4-bb58-0279dfb4e118/file_downloaded",
+          "downloaded": true
+        },
+        {
+          "id": "af133b56-4025-4d6f-9800-f031a4abb0bb",
+          "filename": "Research Data.xlsx",
+          "folder": "Research Data",
+          "size": 1230806,
+          "advertised_sha256": "954d4e7020c37d071273ae73fe57900c714ad98d0f3dbde67ea82c32ff622792",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/af133b56-4025-4d6f-9800-f031a4abb0bb/file_downloaded",
+          "downloaded": true
+        },
+        {
+          "id": "9d785517-d810-4806-af42-ee1b15347586",
+          "filename": "Fig. 6-A.tif",
+          "folder": "Figures",
+          "size": 446786,
+          "advertised_sha256": "2a8db393ef0884d78b3af9ba32a4a26c6a3a73b3a45ba21b493e31b3e99eec46",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/9d785517-d810-4806-af42-ee1b15347586/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "d8c3e7da-9a02-4585-bf5e-69156e1f8127",
+          "filename": "Fig. 6-B.tif",
+          "folder": "Figures",
+          "size": 398946,
+          "advertised_sha256": "038ea6ae41abcc124243fcf9b8e717e4467765fd2ca43c356d573ecffb730022",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/d8c3e7da-9a02-4585-bf5e-69156e1f8127/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "cbe24ab7-ede5-4b3c-9816-d0cbb2704443",
+          "filename": "Fig. 6-C.tif",
+          "folder": "Figures",
+          "size": 438020,
+          "advertised_sha256": "6bf2c41819031dbe516f55b4ca24df3ae7e6527076d3f9467b8611db492ed7a5",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/cbe24ab7-ede5-4b3c-9816-d0cbb2704443/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "062f8a1f-67df-4bf6-aa55-66449611d74f",
+          "filename": "Fig. 6-D.tif",
+          "folder": "Figures",
+          "size": 334230,
+          "advertised_sha256": "0a36dc11046b34a97b21a74cf8094af0020a88463ffbda75a8ae790c6b296797",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/062f8a1f-67df-4bf6-aa55-66449611d74f/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "6ca623cd-b6db-405d-83d2-f80f018ffcf7",
+          "filename": "Fig. 6-E.tif",
+          "folder": "Figures",
+          "size": 421604,
+          "advertised_sha256": "3168eeb29de16176a3e2edbc9a2354b20b678faa015202edd6b6808275637ed4",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/6ca623cd-b6db-405d-83d2-f80f018ffcf7/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "71753883-52c3-4675-9377-af7876227341",
+          "filename": "Fig. 6-F.tif",
+          "folder": "Figures",
+          "size": 372128,
+          "advertised_sha256": "be84d268f366350f9088bc977c4021fc57267b9cd3f2b9cd1570223ea15dc7f8",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/71753883-52c3-4675-9377-af7876227341/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "29f38341-1086-4376-924c-52230cfa0197",
+          "filename": "Fig. 7-A.tif",
+          "folder": "Figures",
+          "size": 4308140,
+          "advertised_sha256": "b21df59b12f172b936ce7dc5711f7877111782799a1a20b6e2f1a7316c4f92dc",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/29f38341-1086-4376-924c-52230cfa0197/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "77552e19-e785-40ed-b334-438b2fbaac04",
+          "filename": "Fig. 7-B.tif",
+          "folder": "Figures",
+          "size": 4210034,
+          "advertised_sha256": "2d63cc49904a5fb0814068844483eff2ed369f92c866e2e8652b108430221588",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/77552e19-e785-40ed-b334-438b2fbaac04/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "dd4772f8-62b1-4450-8164-b27bc2dee793",
+          "filename": "Fig. 7-C.tif",
+          "folder": "Figures",
+          "size": 19041534,
+          "advertised_sha256": "8b7c462aaed7fe631854bdfed506fe41cec8d1bcff06dad08f4675df32c3f788",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/dd4772f8-62b1-4450-8164-b27bc2dee793/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "bd24b0a5-5f65-4622-a259-55cb0c987ac1",
+          "filename": "Fig. 7-D.tif",
+          "folder": "Figures",
+          "size": 4597192,
+          "advertised_sha256": "3957dfa0ddd7dcf0982f7b0a1fb09507b48697fa6c889c1a021df93953b5ec12",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/bd24b0a5-5f65-4622-a259-55cb0c987ac1/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "86c16925-040f-42de-9966-5debf5c9041a",
+          "filename": "Fig. 7-E.tif",
+          "folder": "Figures",
+          "size": 3394836,
+          "advertised_sha256": "205b1eedab094749559078470e37b0d39f3dbbfede4ad9427bb333df6a0417dd",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/86c16925-040f-42de-9966-5debf5c9041a/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "fbcbbf01-8c8b-4ba3-9992-5a870129cd22",
+          "filename": "Fig. 7-F.tif",
+          "folder": "Figures",
+          "size": 18709244,
+          "advertised_sha256": "0be60cc459b1864c53ee8ed95a5298dd9be11bc0f53ef73a44a7d039fee6dc0e",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/fbcbbf01-8c8b-4ba3-9992-5a870129cd22/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "13fe6d52-ee6c-41de-9334-db045544ac58",
+          "filename": "Fig. 7-G.tif",
+          "folder": "Figures",
+          "size": 4079606,
+          "advertised_sha256": "1b68da988bf460187178024508c5eccf6cd8a194c8f6734d55448b4066001f8d",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/13fe6d52-ee6c-41de-9334-db045544ac58/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "579e6f1d-3e75-4e97-a938-b4aa9f3d1ed6",
+          "filename": "Fig. 7-H.tif",
+          "folder": "Figures",
+          "size": 3838030,
+          "advertised_sha256": "698cc8bccffb790a9e4d260d0f161a4cf86bfc5e0c58dea380cfbb4e22310475",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/579e6f1d-3e75-4e97-a938-b4aa9f3d1ed6/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "cc5a006d-ee4b-489a-b0f0-34642e1a83ae",
+          "filename": "Fig. 7-I.tif",
+          "folder": "Figures",
+          "size": 19091134,
+          "advertised_sha256": "47c6e95ec15dd33ee98445ab656575de00b1dc3e7792a880547f659266aae677",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/cc5a006d-ee4b-489a-b0f0-34642e1a83ae/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "bc1c916d-203b-4c11-a468-baf9c8935073",
+          "filename": "Fig. S4-Gd-C.png",
+          "folder": "Figures",
+          "size": 46185,
+          "advertised_sha256": "24841ebff2006a3095a3cff12fb2d4174fafb12749b032d96cafd11f8ce3c4c2",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/bc1c916d-203b-4c11-a468-baf9c8935073/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "e64ef023-81f0-4f63-b03f-af9c4085317d",
+          "filename": "Fig. S4-Gd-Gd.png",
+          "folder": "Figures",
+          "size": 24493,
+          "advertised_sha256": "956e8f8ea1af17bf52d9b096359dbd402c52b69c11a744897e7634fba425ed4f",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/e64ef023-81f0-4f63-b03f-af9c4085317d/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "dfb49221-da3d-4826-8893-6c5a905f05c0",
+          "filename": "Fig. S4-Gd-N.png",
+          "folder": "Figures",
+          "size": 11978,
+          "advertised_sha256": "8e06dd8a8e5322b354b1696cb1b85b9df18080c1b60aa69849187c000d543ac0",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/dfb49221-da3d-4826-8893-6c5a905f05c0/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "e109d445-fb8f-427d-ad40-a480cef9949e",
+          "filename": "Fig. S4-Gd-O.png",
+          "folder": "Figures",
+          "size": 24173,
+          "advertised_sha256": "3569fb7b6b3b915eaab3fb2d212dc83c09d087af5c5e3ce79bd56018a06062d1",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/e109d445-fb8f-427d-ad40-a480cef9949e/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "f361a9eb-ab96-484c-a497-6058d6cd9b44",
+          "filename": "Fig. S4-Gd-P.png",
+          "folder": "Figures",
+          "size": 39599,
+          "advertised_sha256": "55adb4a6ec1eefa6d49fd075ca054271048353ef12ffcfa8835be23f591543af",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/f361a9eb-ab96-484c-a497-6058d6cd9b44/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "1e6311b1-9304-40bc-b85d-cdc25f8db6ca",
+          "filename": "Fig. S4-Gd.tif",
+          "folder": "Figures",
+          "size": 1231838,
+          "advertised_sha256": "1cd029a89c555fcc7d5df65845f0819a6fb40e03833fe31b6bd6dfa53a2bab01",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/1e6311b1-9304-40bc-b85d-cdc25f8db6ca/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "08bf067e-97a9-421f-9ca7-a255df6451dc",
+          "filename": "Fig. S4-La-C.png",
+          "folder": "Figures",
+          "size": 58868,
+          "advertised_sha256": "87414438e8d977a9b0e970b81e62500d86ea8ed8ebf44c938b410df2263c51b2",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/08bf067e-97a9-421f-9ca7-a255df6451dc/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "414ea626-6b5d-41f3-9680-d30a4cd8b3f5",
+          "filename": "Fig. S4-La+Gd-C.png",
+          "folder": "Figures",
+          "size": 43969,
+          "advertised_sha256": "2beef6456ed502880468140a56f4dd0b2ca98f8d74f5c7effdf5d21d4fe039fb",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/414ea626-6b5d-41f3-9680-d30a4cd8b3f5/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "5f5d3cb5-4e6a-4986-9ddd-c8701078b3e7",
+          "filename": "Fig. S4-La+Gd-Gd.png",
+          "folder": "Figures",
+          "size": 15461,
+          "advertised_sha256": "4de16e4ac5294eb314d7d69cfeed9ecb88a395d0fba8dc68f37de78e88ea0049",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/5f5d3cb5-4e6a-4986-9ddd-c8701078b3e7/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "0fe89a21-fd0c-4792-94d8-720555bc4709",
+          "filename": "Fig. S4-La+Gd-La.png",
+          "folder": "Figures",
+          "size": 20649,
+          "advertised_sha256": "fc231a472725ab6637897634e08b4cbe4dae785152b9633af2c0ec50b9cf334e",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/0fe89a21-fd0c-4792-94d8-720555bc4709/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "e34ed799-74c7-46b3-aeac-045ebde7b17f",
+          "filename": "Fig. S4-La+Gd-N.png",
+          "folder": "Figures",
+          "size": 9666,
+          "advertised_sha256": "9d2baabb12e0eada1bfcce9a23ca887d38a60059869a3868d8622ae64edb7911",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/e34ed799-74c7-46b3-aeac-045ebde7b17f/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "59c26d6f-49c1-4efe-9843-b250dd498285",
+          "filename": "Fig. S4-La+Gd-O.png",
+          "folder": "Figures",
+          "size": 20042,
+          "advertised_sha256": "31e2fd96e9ab7d565567ed452fcebd415cb5e6e51780bfa269e4e02ce616297f",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/59c26d6f-49c1-4efe-9843-b250dd498285/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "eec8be62-5a89-4688-9d0f-6e0fcb68f3c0",
+          "filename": "Fig. S4-La+Gd-P.png",
+          "folder": "Figures",
+          "size": 28665,
+          "advertised_sha256": "1ffedb3b51aaa5a1d5a86611ca243fbabd3370fa5be9c6adf8d978c12769642b",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/eec8be62-5a89-4688-9d0f-6e0fcb68f3c0/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "efc68dff-de47-4730-b5c9-10e27a989add",
+          "filename": "Fig. S4-La+Gd.tif",
+          "folder": "Figures",
+          "size": 1231838,
+          "advertised_sha256": "a7da631ad4919fcace7160e5141c391abd1dad1991b5b06239515e8942a58799",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/efc68dff-de47-4730-b5c9-10e27a989add/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "617896d8-fe5d-4fcd-9b95-ff5e1634eb48",
+          "filename": "Fig. S4-La-N.png",
+          "folder": "Figures",
+          "size": 13779,
+          "advertised_sha256": "33e9d289b2244fcd7f1b1da39a14f1245c0949065f38c99c7a7e11ea780bd88d",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/617896d8-fe5d-4fcd-9b95-ff5e1634eb48/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "d10ac228-b95c-4efb-9b45-c7d54a41cd89",
+          "filename": "Fig. S4-La-O.png",
+          "folder": "Figures",
+          "size": 30712,
+          "advertised_sha256": "57165165148d27a68f98ff79b7a2fd3f972febcc83e8704b0378c435edde44c7",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/d10ac228-b95c-4efb-9b45-c7d54a41cd89/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "35b110e5-d657-4f4b-8884-f0a00699ff63",
+          "filename": "Fig. S4-La-P.png",
+          "folder": "Figures",
+          "size": 42239,
+          "advertised_sha256": "452fc0517528f5c724690e4311cabe8ab7800231c897873338becb13f10fd4d1",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/35b110e5-d657-4f4b-8884-f0a00699ff63/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "842c8880-e60b-4c6d-b45d-1d4ec59737be",
+          "filename": "Fig. S4-La.tif",
+          "folder": "Figures",
+          "size": 1231838,
+          "advertised_sha256": "8bedc19c2969c09fbc7bd3ca0aa3f64c75407ae7f130e92a6f5e7656e2a40bd5",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/842c8880-e60b-4c6d-b45d-1d4ec59737be/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "a64c3870-a45f-467b-bcfc-a159ce68f3a3",
+          "filename": "Fig. Enlarged TEM images.png",
+          "folder": "GCA补充图片（新）",
+          "size": 12732827,
+          "advertised_sha256": "3477e814ba0b4a6368c734e4d49cb42669e1276a8e44a372a1130f888042e62a",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/a64c3870-a45f-467b-bcfc-a159ce68f3a3/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "d612c9db-0bfe-4c0b-9e9e-0120b5fd8d9a",
+          "filename": "Fig. FTIR at different pH values.png",
+          "folder": "GCA补充图片（新）",
+          "size": 880624,
+          "advertised_sha256": "df3df41d4736370a69e16078cfa37542a4d23c461d4e74054f2dabf4e5d375b2",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/d612c9db-0bfe-4c0b-9e9e-0120b5fd8d9a/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "3f145561-457a-4916-a734-a33cda38f981",
+          "filename": "Fig. FTIR of functional group shielding-01.png",
+          "folder": "GCA补充图片（新）",
+          "size": 362221,
+          "advertised_sha256": "2c12f1650d868c3ac5d954884e1f8e2428534270f5b857add02892a376833147",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/3f145561-457a-4916-a734-a33cda38f981/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "95da2d33-c533-40e1-83ce-88c16a3c8a85",
+          "filename": "Fig. Visual MINTEQ.png",
+          "folder": "GCA补充图片（新）",
+          "size": 90005,
+          "advertised_sha256": "a7745680e2f923a8a18f0a001082a074deafc7fa8965fc2bfd587b2a13f9988f",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/95da2d33-c533-40e1-83ce-88c16a3c8a85/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "0adcce66-6dc1-4f80-acf5-d42b54590226",
+          "filename": "Fig. zeta potential.png",
+          "folder": "GCA补充图片（新）",
+          "size": 82826,
+          "advertised_sha256": "d9532cfca3e38741de8e6d89ee89f49871b1c7166cc8b070e181fdf9c810bc04",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/0adcce66-6dc1-4f80-acf5-d42b54590226/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "84a56b1d-4dd0-43a3-9797-0280ebfd2399",
+          "filename": "Fig.6A.tif",
+          "folder": "Figures (new)",
+          "size": 1231838,
+          "advertised_sha256": "e8d9dcdc25054acd52a5e35243350c536e24e557c9a01a4e53896338dca09ba5",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/84a56b1d-4dd0-43a3-9797-0280ebfd2399/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "a11b24a7-dfac-44b1-a6a5-32d3b2ed02db",
+          "filename": "Fig.6B.tif",
+          "folder": "Figures (new)",
+          "size": 1231838,
+          "advertised_sha256": "93badd1a67141666f71b296703ea3217891501fba5f6eee55f6e68ebc9ab8512",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/a11b24a7-dfac-44b1-a6a5-32d3b2ed02db/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "51cf468c-e58e-44d4-a618-c4031f910a44",
+          "filename": "Fig.6D.tif",
+          "folder": "Figures (new)",
+          "size": 1231838,
+          "advertised_sha256": "d4cf8914f65cfd62a144b45fddbf07ad4750613c7816e7aa1ba6af9d7dce9786",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/51cf468c-e58e-44d4-a618-c4031f910a44/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "6dc44fec-dd8f-4f66-bd28-ab4b0cba909b",
+          "filename": "Fig.6E.tif",
+          "folder": "Figures (new)",
+          "size": 1231838,
+          "advertised_sha256": "d38e99988506f69c9a6f1e6a2856f583c3d772ca792f1e3c9405d7c97fa4814b",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/6dc44fec-dd8f-4f66-bd28-ab4b0cba909b/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "0f9e7df7-fa00-4bba-9bf7-e12bd8d28132",
+          "filename": "Fig.6G.tif",
+          "folder": "Figures (new)",
+          "size": 1231838,
+          "advertised_sha256": "c21cfe21c0c107d2fef94e15bfd1ad03cc670490f264a61b99012b28afeb98ee",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/0f9e7df7-fa00-4bba-9bf7-e12bd8d28132/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "d982248e-8cfc-49b4-8e57-09ac8d6f4b4e",
+          "filename": "Fig.6H.tif",
+          "folder": "Figures (new)",
+          "size": 1231838,
+          "advertised_sha256": "33056d907c4b62fe5d429684b3307b9a5a52429d43e250a2bdbfad179290dda9",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/d982248e-8cfc-49b4-8e57-09ac8d6f4b4e/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "d0665d4a-364a-4630-bc98-ded70953403a",
+          "filename": "Fig.S4A.tif",
+          "folder": "Figures (new)",
+          "size": 1231838,
+          "advertised_sha256": "0401a4dea236b7da1b37534446301f235c27b3a8deac9ed230f7396d305d9692",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/d0665d4a-364a-4630-bc98-ded70953403a/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "3d5a7c79-e7f7-41e4-943c-f3f0e22180e9",
+          "filename": "Fig.S4B..tif",
+          "folder": "Figures (new)",
+          "size": 1231838,
+          "advertised_sha256": "99dfa3251f1b84c01cc82360040117f6dea247a668923943126f41314b251d7e",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/3d5a7c79-e7f7-41e4-943c-f3f0e22180e9/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "a61b0565-1c0c-4462-90f0-3aaf073d564b",
+          "filename": "Fig.S4C.png",
+          "folder": "Figures (new)",
+          "size": 84139,
+          "advertised_sha256": "c3eb905fbdc2f93e55321ac301a7fe8f747f6cd04100ccf267fd128495c50229",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/a61b0565-1c0c-4462-90f0-3aaf073d564b/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "84d0526c-d3ad-463d-bf4c-954980120db2",
+          "filename": "Fig.S4 Gd-C.png",
+          "folder": "Figures (new)",
+          "size": 52202,
+          "advertised_sha256": "cf9c7f1a1b2470c7fe42b7b148049b03ec072129ea1934c5214f98b3c8a1113e",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/84d0526c-d3ad-463d-bf4c-954980120db2/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "e95dcbad-adf9-4839-8fb5-b661b410733e",
+          "filename": "Fig.S4 Gd-Gd.png",
+          "folder": "Figures (new)",
+          "size": 31192,
+          "advertised_sha256": "b19d345d03789e2a2dd508bee3c2a1ebf073f2ea82a9dcc559681c09768a86c5",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/e95dcbad-adf9-4839-8fb5-b661b410733e/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "ad216cb9-f0a6-445b-a2aa-d3416076e6ab",
+          "filename": "Fig.S4 Gd-O.png",
+          "folder": "Figures (new)",
+          "size": 29566,
+          "advertised_sha256": "331a80fcac1e5f1c7d3b209f9fda87991bfe70b2b9b278165a664f931cbcfa67",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/ad216cb9-f0a6-445b-a2aa-d3416076e6ab/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "cfcb54b9-a30d-4532-9943-b7d8ff7bb7b8",
+          "filename": "Fig.S4 Gd-P.png",
+          "folder": "Figures (new)",
+          "size": 47866,
+          "advertised_sha256": "b14011e231a6eb5000a7c3a1da77b4979cf06490b8b2b5754fffa37122caf830",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/cfcb54b9-a30d-4532-9943-b7d8ff7bb7b8/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "4b6e460c-f67e-49a1-8ce6-53ede15e7793",
+          "filename": "Fig.S4 La-C.png",
+          "folder": "Figures (new)",
+          "size": 48509,
+          "advertised_sha256": "9a7e457de6ed57b3be778c39006daa9521d0fce06fd47349a982db8d2bd22e94",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/4b6e460c-f67e-49a1-8ce6-53ede15e7793/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "dcb3769d-88b2-42de-a5dc-94c36a38c804",
+          "filename": "Fig.S4 La+Gd-C.png",
+          "folder": "Figures (new)",
+          "size": 58195,
+          "advertised_sha256": "f6fac13b7a75c6c67644edefe3b7ffbbfa7c965484de81478a9985f73c8cff1a",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/dcb3769d-88b2-42de-a5dc-94c36a38c804/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "ff10b28d-8465-4a96-98fa-572e94a44dbe",
+          "filename": "Fig.S4 La+Gd-Gd.png",
+          "folder": "Figures (new)",
+          "size": 24932,
+          "advertised_sha256": "3a2f128d9f42f592b360ad53e46779eb24804284cebc16e7380f5a67b243d096",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/ff10b28d-8465-4a96-98fa-572e94a44dbe/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "c46f9632-74e5-4394-bae0-d93f9990cdec",
+          "filename": "Fig.S4 La+Gd-La.png",
+          "folder": "Figures (new)",
+          "size": 29759,
+          "advertised_sha256": "28d372989a1cae65f014cd06cdd2678e41670815419c36e46b2824d65ba94f54",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/c46f9632-74e5-4394-bae0-d93f9990cdec/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "c5c2a3ea-e53e-461b-a0ad-e53a65f4b31c",
+          "filename": "Fig.S4 La+Gd-O.png",
+          "folder": "Figures (new)",
+          "size": 38417,
+          "advertised_sha256": "60333621428e4fbf643f3e22ba02ed2dcff9f140b309730dab57e96b026f6ad1",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/c5c2a3ea-e53e-461b-a0ad-e53a65f4b31c/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "d4360286-5753-48b2-8275-3419ec4efeef",
+          "filename": "Fig.S4 La+Gd-P.png",
+          "folder": "Figures (new)",
+          "size": 52026,
+          "advertised_sha256": "d17199333a550202b647c352b2e8890f6030f2534a479acbc70526fd027e35d8",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/d4360286-5753-48b2-8275-3419ec4efeef/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "5d031699-a46f-4f94-a02b-7454acf5e17b",
+          "filename": "Fig.S4 La-La.png",
+          "folder": "Figures (new)",
+          "size": 40154,
+          "advertised_sha256": "324add69166f0f7d1a9805e65152d281e6eeab315f7dae4f4254657094b02399",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/5d031699-a46f-4f94-a02b-7454acf5e17b/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "f540c1a1-327d-48ff-9a18-51a4eab1110d",
+          "filename": "Fig.S4 La-O.png",
+          "folder": "Figures (new)",
+          "size": 30471,
+          "advertised_sha256": "0e5ce2eb03140c4f1677d7323f4c61af09ac63155bd5fba6af7dbcb049a7f311",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/f540c1a1-327d-48ff-9a18-51a4eab1110d/file_downloaded",
+          "downloaded": false
+        },
+        {
+          "id": "8608b53c-c763-4e85-b821-b75550cebc67",
+          "filename": "Fig.S4 La-P.png",
+          "folder": "Figures (new)",
+          "size": 48014,
+          "advertised_sha256": "dbb3712d81e4f75ad4963ea32485a3c50df67b2ba39ad41812eabd926ee35297",
+          "download_url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/8608b53c-c763-4e85-b821-b75550cebc67/file_downloaded",
+          "downloaded": false
+        }
+      ],
+      "pagination": "Public client JS documents $start offset and $limit1000; continuation only when response length1000. Root response0, each of four folder responses below1000. Four listed folders exhausted for this snapshot; no machine-wide or future-version completeness claim.",
+      "client_route": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/files?folder_id=<id>&version=1&$start=0&$limit=1000",
+      "accept_header": "application/vnd.mendeley-public-dataset.1+json",
+      "route_evidence": "Public bundle.js shows allowAnonymous true; previously failing /versions/1/files route was not retried."
+    },
+    "downloaded": "Only Research Data.xlsx and Research Data-2.xlsx;2,670,026 bytes total; both advertised SHA256 hashes verified. ZIP105,573,562 bytes was described by metadata but not downloaded. Other60files were enumerated, not visually inspected.",
+    "workbooks": [
+      {
+        "filename": "mendeley-Research-Data-2.xlsx",
+        "sha256": "b2316e164cf88aa7dbdd7d2a15ed747f53bf15abeb538ba4adcfe04d59ac32a7",
+        "sheets": [
+          {
+            "name": "Sheet1",
+            "dimension": {
+              "ref": "A1:T4"
+            },
+            "xml_rows": 4,
+            "cells": 80
+          },
+          {
+            "name": "Data 9",
+            "dimension": {
+              "ref": "A1:D9"
+            },
+            "xml_rows": 9,
+            "cells": 36
+          },
+          {
+            "name": "Data 10",
+            "dimension": {
+              "ref": "A1:P7470"
+            },
+            "xml_rows": 7470,
+            "cells": 112051
+          },
+          {
+            "name": "Data 11",
+            "dimension": {
+              "ref": "A1:D7470"
+            },
+            "xml_rows": 7470,
+            "cells": 29880
+          },
+          {
+            "name": "Data 12",
+            "dimension": {
+              "ref": "A1:O14"
+            },
+            "xml_rows": 14,
+            "cells": 210
+          }
+        ]
+      },
+      {
+        "filename": "mendeley-Research-Data.xlsx",
+        "sha256": "954d4e7020c37d071273ae73fe57900c714ad98d0f3dbde67ea82c32ff622792",
+        "sheets": [
+          {
+            "name": "Sheet1",
+            "dimension": {
+              "ref": "A1:T8"
+            },
+            "xml_rows": 8,
+            "cells": 160
+          },
+          {
+            "name": "Data 1",
+            "dimension": {
+              "ref": "A1:D15"
+            },
+            "xml_rows": 15,
+            "cells": 60
+          },
+          {
+            "name": "Data 2",
+            "dimension": {
+              "ref": "A1:I53"
+            },
+            "xml_rows": 50,
+            "cells": 449
+          },
+          {
+            "name": "Data 3",
+            "dimension": {
+              "ref": "A1:M27"
+            },
+            "xml_rows": 27,
+            "cells": 351
+          },
+          {
+            "name": "Data 4",
+            "dimension": {
+              "ref": "A1:E7470"
+            },
+            "xml_rows": 7470,
+            "cells": 37350
+          },
+          {
+            "name": "Data 5",
+            "dimension": {
+              "ref": "A1:EO1607"
+            },
+            "xml_rows": 1607,
+            "cells": 130109
+          },
+          {
+            "name": "Data 6",
+            "dimension": {
+              "ref": "A1:L17"
+            },
+            "xml_rows": 15,
+            "cells": 76
+          },
+          {
+            "name": "Data 7",
+            "dimension": {
+              "ref": "A1:K26"
+            },
+            "xml_rows": 24,
+            "cells": 200
+          },
+          {
+            "name": "Data 8",
+            "dimension": {
+              "ref": "A1:E18"
+            },
+            "xml_rows": 16,
+            "cells": 76
+          }
+        ]
+      }
+    ],
+    "inspection": "Read XLSX ZIP/XML workbook relationships, all sheet names/dimensions and first35 populated/represented XML cells of each sheet; this is schema reconnaissance, not complete workbook review, spreadsheet rendering or reanalysis.12data sheets plus2index sheets. Original row/cell tokens preserved outside Git.",
+    "schema_findings": [
+      "Data1 includes average content in micrograms/gram; no analytical fraction, sample identity or feed mapping is admitted without full article context.",
+      "Data2/3 include adsorption capacity, biomass/pH/time series; Data7/8 include transformed kinetic/isotherm fitting columns. These must not be treated as independent measurements or pooled yields.",
+      "Data4/5 and Data10/11 are spectral arrays; Data12 contains VisualMINTEQ-type speciation labels. Modeling must remain distinct from observation.",
+      "Data9 has pH/zeta1/zeta2/zeta3 columns; replicate meaning and units require primary-method reconciliation.",
+      "Data5 cellM1 contains unexpected text Frederik Southam Balfour; do not silently repair or assume a scientific column meaning.",
+      "Figures and Figures(new) contain overlapping names; final-paper mapping and revision correspondence unresolved."
+    ],
+    "earlier_same_title_dataset": {
+      "url": "https://data.mendeley.com/datasets/6trx96yjt9/2",
+      "doi": "10.17632/6trx96yjt9.2",
+      "contributor": "Lili Wang",
+      "published": "2025-10-30",
+      "access": "Public indexed landing-page metadata only; files not enumerated or acquired this session. Same-title relationship needs explicit reconciliation; not assumed independent replicate evidence."
+    },
+    "issue_relationship": "Issue397 concerns2024 M.saelicesensis KLBMP9669 and mentions the distinct2026 forward lead. No2024access route retried. A2026-specific followup should cross-link397 and avoid merging organisms/experiments.",
+    "rank": "Next priority source handoff; acquire full2026methods/figures/SI, reconcile two deposits and figure revisions, then evaluate La/Gd owners. No monazite species assignment from nominal phosphate composition alone."
+  },
+  "dedup": {
+    "maintained_and_main_ignored": {
+      "timestamp_utc": "2026-10-15T23:02:11.233629+00:00",
+      "cwd": "/private/tmp/CMMMech-expansion-round105-20261015",
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-l",
+        "-i",
+        "florencite.?\\(?Nd|monazite.?\\(?Sm|40.6.1649|MR2_166|wxdnxzm8g8|2026.02.015",
+        "data",
+        "research",
+        "reviews",
+        "history",
+        ".claude",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports"
+      ],
+      "returncode": 0,
+      "stdout_sha256": "0a42b12fc5eb9ab648a8c0a1767b3cda5d7cf2150fa4149751378971e197ad08",
+      "matched_paths_count": 37,
+      "stderr": "",
+      "scope": "Maintained roots and original-main ignored reports, including hidden/ignored files and followed symlinks. Binary contents not comprehensively decoded."
+    },
+    "owners": {
+      "timestamp_utc": "2026-10-15T23:02:11.265157+00:00",
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-l",
+        "-i",
+        "cmmmech:(monazite-sm|florencite-nd)|IMA:2001-001",
+        "data/records"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "",
+      "hidden_ignored_included": true,
+      "symlinks_followed": true
+    },
+    "prior_raw": {
+      "timestamp_utc": "2026-10-15T23:01:09.502659+00:00",
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-l",
+        "-i",
+        "florencite.?\\(?Nd|monazite.?\\(?Sm|40.6.1649|MR2_166|wxdnxzm8g8|2026.02.015",
+        "/private/tmp/cmm-round40-samarium-phosphate-research/raw",
+        "/private/tmp/cmm-round104-ree-research",
+        "/private/tmp/cmm-round86-ree-phosphates-research",
+        "/private/tmp/cmm-round50-ree-research"
+      ],
+      "returncode": 0,
+      "matched_paths": [
+        "/private/tmp/cmm-round40-samarium-phosphate-research/raw/ima-page-146.txt",
+        "/private/tmp/cmm-round86-ree-phosphates-research/paper-text.txt",
+        "/private/tmp/cmm-round40-samarium-phosphate-research/raw/kyushu.html",
+        "/private/tmp/cmm-round86-ree-phosphates-research/paper.xml",
+        "/private/tmp/cmm-round86-ree-phosphates-research/epmc-ic6c01299_si_001.pdf.txt",
+        "/private/tmp/cmm-round104-ree-research/dedup-specific.txt",
+        "/private/tmp/cmm-round86-ree-phosphates-research/paper-pmc.html",
+        "/private/tmp/cmm-round86-ree-phosphates-research/round86_churchite_search.json",
+        "/private/tmp/cmm-round50-ree-research/raw/ima2026.txt",
+        "/private/tmp/cmm-round40-samarium-phosphate-research/raw/jiang2018-web-text-assembled.txt",
+        "/private/tmp/cmm-round86-ree-phosphates-research/ima-2026-09.pdf.txt",
+        "/private/tmp/cmm-round104-ree-research/finalize-dossier.py",
+        "/private/tmp/cmm-round104-ree-research/proposed-source-issues.json",
+        "/private/tmp/cmm-round86-ree-phosphates-research/round86_churchite_checks.json",
+        "/private/tmp/cmm-round104-ree-research/acquisition05.json",
+        "/private/tmp/cmm-round40-samarium-phosphate-research/raw/web-search-3.txt",
+        "/private/tmp/cmm-round104-ree-research/acquire04.py",
+        "/private/tmp/cmm-round40-samarium-phosphate-research/raw/web-primary-ending.txt",
+        "/private/tmp/cmm-round40-samarium-phosphate-research/raw/web-access-3.txt",
+        "/private/tmp/cmm-round104-ree-research/dedup-final.txt",
+        "/private/tmp/cmm-round40-samarium-phosphate-research/raw/search-log.json",
+        "/private/tmp/cmm-round104-ree-research/micro2026-mendeley.html",
+        "/private/tmp/cmm-round104-ree-research/acquisition04.json",
+        "/private/tmp/cmm-round40-samarium-phosphate-research/raw/web-access-4.txt",
+        "/private/tmp/cmm-round40-samarium-phosphate-research/raw/web-access-2.txt",
+        "/private/tmp/cmm-round40-samarium-phosphate-research/raw/web-access-1.txt",
+        "/private/tmp/cmm-round104-ree-research/micro2026-crossref.json",
+        "/private/tmp/cmm-round40-samarium-phosphate-research/raw/openalex.json",
+        "/private/tmp/cmm-round104-ree-research/florencite1980.txt",
+        "/private/tmp/cmm-round104-ree-research/ima.txt"
+      ],
+      "stderr": "",
+      "sha256": "aef0b7aaea73390329e4ef704386fb4089d046dcb184cb5e1c078075b047a73e",
+      "scope": "Specified prior relevant raw roots, hidden and ignored included, symlinks followed; no unextracted binary-content completeness claim."
+    },
+    "issues": {
+      "inventory": {
+        "path": "/private/tmp/cmm-round105-issues-initial.json",
+        "bytes": 594863,
+        "sha256": "6e05da22e80dc0b7a2d4fdff176d9132a68964c028f28af3fe823ec0c3d84157"
+      },
+      "count": 286,
+      "scope": "All-state title/body inventory supplied by coordinator; comments not searched.",
+      "relevant": [
+        {
+          "number": 397,
+          "title": "Acquire primary La-phosphate biomineralization evidence for Micromonospora saelicesensis KLBMP 9669",
+          "state": "OPEN",
+          "url": "https://github.com/CultureBotAI/CMMMech/issues/397"
+        },
+        {
+          "number": 262,
+          "title": "Resolve SmCo magnet-scrap peroxide recipe and supplementary samarium mass balance",
+          "state": "OPEN",
+          "url": "https://github.com/CultureBotAI/CMMMech/issues/262"
+        },
+        {
+          "number": 260,
+          "title": "Correct SmCo precipitation methods locator and retain review lineage",
+          "state": "CLOSED",
+          "url": "https://github.com/CultureBotAI/CMMMech/issues/260"
+        },
+        {
+          "number": 133,
+          "title": "Verify original samarium biomineralization figures before record admission",
+          "state": "OPEN",
+          "url": "https://github.com/CultureBotAI/CMMMech/issues/133"
+        },
+        {
+          "number": 34,
+          "title": "Accept individually reviewed rare-earth records and publication checks",
+          "state": "CLOSED",
+          "url": "https://github.com/CultureBotAI/CMMMech/issues/34"
+        }
+      ]
+    },
+    "conclusion": "No maintained monazite-sm or florencite-nd owner found before this addition within the stated hidden/ignored/followed search. Prior candidate deferrals are explicitly retained; this is not a first-discovery claim."
+  },
+  "search": {
+    "provider": "web.run searches plus public official metadata and documented anonymous dataset client endpoints",
+    "queries": [
+      "\"florencite-(Nd)\" 1971 166",
+      "\"monazite-(Sm)\" 2002 1649",
+      "\"10.1016/j.gca.2026.02.015\"",
+      "\"wxdnxzm8g8\"",
+      "\"Churchite and Florencite\" Milton Bastron PDF",
+      "\"florencite\" \"166\" \"Milton\" pdf",
+      "\"Monazite-(Sm)\" \"1649\" filetype:pdf",
+      "\"Synergistic interfacial\" \"auratinigra\" dataset mendeley",
+      "\"Churchite and Florencite\" Milton Bastron USGS",
+      "\"Powder X-ray diffraction data of florencite\" USGS",
+      "\"MR2_166.pdf\"",
+      "\"Churchite and florencite\" \"pdf\" -site:rruff.info -site:ftp.idu.ac.id",
+      "site:rruff.net \"Churchite and Florencite\"",
+      "\"Churchite\" \"Bastron\" \"mineralogicalrecord\"",
+      "\"Monazite-(Sm)\" \"2000-001\" \"2001-001\"",
+      "\"10.2113/gscanmin.40.6.1649\" correction erratum retraction",
+      "\"10.1016/j.gca.2026.02.015\" correction erratum retraction",
+      "\"Synergistic interfacial\" \"auratinigra\" supplementary data",
+      "\"Churchite and Florencite\" \"1971\" \"Milton\" site:usgs.gov"
+    ],
+    "coverage": "First returned sets; no recency filter or deep pagination. Search snapshots for first rounds retained; later exact queries recorded here. No affecting correction surfaced; not exhaustive absence."
+  },
+  "validation": {
+    "named_record": {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "cmmmech",
+        "validate",
+        "data/records/monazite-sm.yaml"
+      ],
+      "cwd": "/private/tmp/CMMMech-expansion-round105-20261015",
+      "exit_code": 0,
+      "output": "Checked 1 record(s); 0 failed.",
+      "observed_tool_chunk": "341a7b",
+      "record_sha256": "1a6f15007e6fe0bb333add148b0a82111b7ad3ccd12eb516ed53aaa6da37da1d"
+    },
+    "baseline": "Coordinator signaled terminal PASS before owner creation. Whole-corpus/history/review gates and independent review are coordinator-owned and not claimed complete here."
+  },
+  "reuse_and_licensing": {
+    "monazite_original": "Public RRUFF mirror access; no redistribution permission inferred. Original PDF, extracted text and rendered pages remain outside Git. Maintained content is authored scientific summary and provenance.",
+    "ima": "Official authority states terms on page2; master bytes retained externally.",
+    "mendeley": "Snapshot explicitly CC BY4.0, contributor chenyu yin, version1. Dataset may contain third-party exceptions; summaries/file identifiers only committed. No original workbook/image redistributed.",
+    "preview": "Publisher previews are not full text; failed or HTML responses retain truthful types despite request filenames."
+  },
+  "acquisition": [
+    {
+      "name": "florencite-nd1971.pdf",
+      "url": "https://rruff.info/uploads/MR2_166.pdf",
+      "started_at": "2026-10-15T22:56:55.151604+00:00",
+      "error": "<HTTPError 404: 'Not Found'>",
+      "finished_at": "2026-10-15T22:56:55.927065+00:00"
+    },
+    {
+      "name": "monazite-sm2002.pdf",
+      "url": "https://www.rruff.net/doclib/cm/vol40/CM40_1649.pdf",
+      "started_at": "2026-10-15T22:56:55.152425+00:00",
+      "status": 200,
+      "final_url": "https://www.rruff.net/doclib/cm/vol40/CM40_1649.pdf",
+      "content_type": "application/pdf",
+      "bytes": 243823,
+      "sha256": "66c52d669dc08e452db3fd87ce271a454d766be93b4ffa15c02174f92387110d",
+      "finished_at": "2026-10-15T22:56:55.817798+00:00"
+    },
+    {
+      "name": "monazite-sm2002-crossref.json",
+      "url": "https://api.crossref.org/works/10.2113/gscanmin.40.6.1649",
+      "started_at": "2026-10-15T22:56:55.153376+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.2113/gscanmin.40.6.1649",
+      "content_type": "application/json",
+      "bytes": 2311,
+      "sha256": "4823c5aed8d38bea7930e949cf3d2a8ba0cc45c0c06c2fd98918a1c603c416cf",
+      "finished_at": "2026-10-15T22:56:55.566993+00:00"
+    },
+    {
+      "name": "florencite-nd1986-publisher.html",
+      "url": "https://www.cambridge.org/core/journals/powder-diffraction/article/abs/powder-xray-diffraction-data-of-florencitend/F4046EA06CC7D0468DAFDB025E067B12",
+      "started_at": "2026-10-15T22:56:55.153605+00:00",
+      "status": 200,
+      "final_url": "https://www.cambridge.org/core/journals/powder-diffraction/article/abs/powder-xray-diffraction-data-of-florencitend/F4046EA06CC7D0468DAFDB025E067B12",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 741779,
+      "sha256": "f5b891c770dfeb1e0903a1fb422d87dcf4cb4c0cfd7417c7de319923fe223e3b",
+      "finished_at": "2026-10-15T22:56:55.745078+00:00"
+    },
+    {
+      "name": "micro2026-publisher.html",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0016703726001080",
+      "started_at": "2026-10-15T22:56:55.567070+00:00",
+      "error": "<HTTPError 403: 'Forbidden'>",
+      "finished_at": "2026-10-15T22:56:55.623304+00:00"
+    },
+    {
+      "name": "micro2026-mendeley.html",
+      "url": "https://data.mendeley.com/datasets/wxdnxzm8g8/1",
+      "started_at": "2026-10-15T22:56:55.623354+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/datasets/wxdnxzm8g8/1",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 117923,
+      "sha256": "de72c16a39be368314df16b2022c19302cd32ed1b7857ada9e4d95082221c9c8",
+      "finished_at": "2026-10-15T22:56:56.323638+00:00"
+    },
+    {
+      "name": "ima-home.html",
+      "url": "https://cnmnc.units.it/",
+      "started_at": "2026-10-15T22:56:55.745113+00:00",
+      "status": 200,
+      "final_url": "https://cnmnc.units.it/",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 26639,
+      "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9",
+      "finished_at": "2026-10-15T22:56:56.487334+00:00"
+    },
+    {
+      "name": "florencite-nd1971-current.pdf",
+      "url": "https://www.rruff.net/doclib/mr/vol2/MR2_166.pdf",
+      "started_at": "2026-10-15T22:57:25.030121+00:00",
+      "error": "<HTTPError 404: 'Not Found'>",
+      "finished_at": "2026-10-15T22:57:25.682616+00:00"
+    },
+    {
+      "name": "florencite-nd1986.pdf",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F4046EA06CC7D0468DAFDB025E067B12/S0885715600012021a.pdf/div-class-title-powder-x-ray-diffraction-data-of-florencite-nd-div.pdf",
+      "started_at": "2026-10-15T22:57:25.031133+00:00",
+      "status": 200,
+      "final_url": "https://www.cambridge.org/core/journals/powder-diffraction/article/abs/powder-xray-diffraction-data-of-florencitend/F4046EA06CC7D0468DAFDB025E067B12",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 741779,
+      "sha256": "54fda218a9a9c9cfa3dbab9c1916a016c6d47f5c32f07733c60d59641e427d31",
+      "finished_at": "2026-10-15T22:57:27.111054+00:00"
+    },
+    {
+      "name": "mendeley-bundle.js",
+      "url": "https://data.mendeley.com/datasets/bundle.js?8533f74fd5ffa7f3d44f",
+      "started_at": "2026-10-15T22:57:25.031342+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/datasets/bundle.js?8533f74fd5ffa7f3d44f",
+      "content_type": "application/javascript; charset=UTF-8",
+      "bytes": 654883,
+      "sha256": "6dc1ed58657b306832db9f82de114a9f40f7db88f5ce494c10b3a558ad725658",
+      "finished_at": "2026-10-15T22:57:26.922086+00:00"
+    },
+    {
+      "name": "mendeley-api-docs.html",
+      "url": "https://data.mendeley.com/api/docs",
+      "started_at": "2026-10-15T22:57:25.031616+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/api/docs/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 411392,
+      "sha256": "009dfd3d078f711783fbdd8ba3bd4272dbcf415ae4398e9b3d97306638f79661",
+      "finished_at": "2026-10-15T22:57:26.141951+00:00"
+    },
+    {
+      "name": "mendeley-snapshot.json",
+      "url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/snapshot/1",
+      "started_at": "2026-10-15T22:59:35.897104+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/snapshot/1",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 1738,
+      "sha256": "43deca2ce4e662e8c6ff80936d86def80bc3b8bbe6849ac8135ed828283bbca6",
+      "finished_at": "2026-10-15T22:59:36.207094+00:00"
+    },
+    {
+      "name": "mendeley-files-root.json",
+      "url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/files?folder_id=root&version=1&$start=0&$limit=1000",
+      "started_at": "2026-10-15T22:59:35.897936+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/files?folder_id=root&version=1&$start=0&$limit=1000",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "finished_at": "2026-10-15T22:59:36.190769+00:00"
+    },
+    {
+      "name": "mendeley-folders.json",
+      "url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/folders/1",
+      "started_at": "2026-10-15T22:59:35.898836+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/folders/1",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 598,
+      "sha256": "babdb73ea61a2e6e741141e760574f217fb47af9c5a5f0844a5f0c01265e7814",
+      "finished_at": "2026-10-15T22:59:36.221062+00:00"
+    },
+    {
+      "name": "mendeley-zip-metadata.json",
+      "url": "https://data.mendeley.com/api/datasets-v2/datasets/wxdnxzm8g8/zip?version=1",
+      "started_at": "2026-10-15T22:59:35.899181+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/api/datasets-v2/datasets/wxdnxzm8g8/zip?version=1",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 295,
+      "sha256": "572ecd828c92572f48bf1727684cca475c9e73b150e576eb5327606bf74212ad",
+      "finished_at": "2026-10-15T22:59:36.211544+00:00"
+    },
+    {
+      "name": "florencite-nd1971-newhost.pdf",
+      "url": "https://www.rruff.net/uploads/MR2_166.pdf",
+      "started_at": "2026-10-15T22:59:36.190806+00:00",
+      "error": "<HTTPError 404: 'Not Found'>",
+      "finished_at": "2026-10-15T22:59:36.616654+00:00"
+    },
+    {
+      "name": "mendeley-files-2b68a76f-7f3b-4854-b250-ef038eaa8462.json",
+      "url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/files?folder_id=2b68a76f-7f3b-4854-b250-ef038eaa8462&version=1&$start=0&$limit=1000",
+      "started_at": "2026-10-15T23:00:00.065997+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/files?folder_id=2b68a76f-7f3b-4854-b250-ef038eaa8462&version=1&$start=0&$limit=1000",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 24913,
+      "sha256": "a2be2c92fad48ab89cdfb763385e354bfd9c4e1e584c035b8823068634bddea1",
+      "finished_at": "2026-10-15T23:00:00.480920+00:00"
+    },
+    {
+      "name": "mendeley-files-f36a0b6b-4f7c-4226-b055-13b577be297c.json",
+      "url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/files?folder_id=f36a0b6b-4f7c-4226-b055-13b577be297c&version=1&$start=0&$limit=1000",
+      "started_at": "2026-10-15T23:00:00.067755+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/files?folder_id=f36a0b6b-4f7c-4226-b055-13b577be297c&version=1&$start=0&$limit=1000",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 16585,
+      "sha256": "8adb246714a6b4676de4908f58259584a88c7173a87e3cc161de22ca247cc1d5",
+      "finished_at": "2026-10-15T23:00:00.480668+00:00"
+    },
+    {
+      "name": "mendeley-files-7ef8d3d5-284b-4bcb-9511-7383654e78e5.json",
+      "url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/files?folder_id=7ef8d3d5-284b-4bcb-9511-7383654e78e5&version=1&$start=0&$limit=1000",
+      "started_at": "2026-10-15T23:00:00.068301+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/files?folder_id=7ef8d3d5-284b-4bcb-9511-7383654e78e5&version=1&$start=0&$limit=1000",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 3856,
+      "sha256": "a4c0e50306a9e87344b307553c9ac0ad80e456a08f7114d251e201a87c0f3aae",
+      "finished_at": "2026-10-15T23:00:00.340203+00:00"
+    },
+    {
+      "name": "mendeley-files-247ea10f-1fe7-499f-b4ab-bcb2dff99815.json",
+      "url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/files?folder_id=247ea10f-1fe7-499f-b4ab-bcb2dff99815&version=1&$start=0&$limit=1000",
+      "started_at": "2026-10-15T23:00:00.068887+00:00",
+      "status": 200,
+      "final_url": "https://data.mendeley.com/public-api/datasets/wxdnxzm8g8/files?folder_id=247ea10f-1fe7-499f-b4ab-bcb2dff99815&version=1&$start=0&$limit=1000",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 1633,
+      "sha256": "393ca6f846db5591f00b0e9e9ed3f978cea7ee80420219b84053a43b51c58e9a",
+      "finished_at": "2026-10-15T23:00:00.339085+00:00"
+    },
+    {
+      "name": "florencite-nd1971-doclib.pdf",
+      "url": "https://www.rruff.net/doclib/mr/MR2_166.pdf",
+      "started_at": "2026-10-15T23:00:00.339151+00:00",
+      "error": "<HTTPError 404: 'Not Found'>",
+      "finished_at": "2026-10-15T23:00:00.865781+00:00"
+    },
+    {
+      "name": "mendeley-Research-Data-2.xlsx",
+      "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/a86f9918-3aa8-43a4-bb58-0279dfb4e118/file_downloaded",
+      "started_at": "2026-10-15T23:00:56.506304+00:00",
+      "status": 200,
+      "final_url": "https://prod-dcd-datasets-public-files-eu-west-1.s3.eu-west-1.amazonaws.com/1e407d56-669b-4c96-8dbc-728eb04a79ec",
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "bytes": 1439220,
+      "sha256": "b2316e164cf88aa7dbdd7d2a15ed747f53bf15abeb538ba4adcfe04d59ac32a7",
+      "finished_at": "2026-10-15T23:00:58.323657+00:00"
+    },
+    {
+      "name": "mendeley-Research-Data.xlsx",
+      "url": "https://data.mendeley.com/public-files/datasets/wxdnxzm8g8/files/af133b56-4025-4d6f-9800-f031a4abb0bb/file_downloaded",
+      "started_at": "2026-10-15T23:00:56.506910+00:00",
+      "status": 200,
+      "final_url": "https://prod-dcd-datasets-public-files-eu-west-1.s3.eu-west-1.amazonaws.com/4b57dc5a-14ef-4e1e-b870-1b73458b66f2",
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "bytes": 1230806,
+      "sha256": "954d4e7020c37d071273ae73fe57900c714ad98d0f3dbde67ea82c32ff622792",
+      "finished_at": "2026-10-15T23:00:58.321473+00:00"
+    }
+  ],
+  "raw_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/acquire01.py",
+      "bytes": 1614,
+      "sha256": "fa1b28ac96ae156b8c656a1b817e58f0ac838bc7ad311d3c676522bcb04c38c5"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/acquire02.py",
+      "bytes": 1433,
+      "sha256": "b65ba019d823cf99330c732b80a3f87b94c339212e815fcd9e78b20a9c13e031"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/acquire03.py",
+      "bytes": 1727,
+      "sha256": "939124394f286dbc4d6c4d51dec92888f04e30842b6abd8982fbb7241167b670"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/acquire04.py",
+      "bytes": 2112,
+      "sha256": "27c0a019091992a5ed1a75fd969d0041552721437b50e508ada98131bcac89b8"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/acquire05.py",
+      "bytes": 1517,
+      "sha256": "2d8e64797e198e1b105229b11983cbae8f069735c4a0612ccbf780bcdf7e6602"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/acquisition01.json",
+      "bytes": 2982,
+      "sha256": "deaf97c41d408f9df5f57ba3e1e928598ab311ab67084e1f93f1febc273ba072"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/acquisition02.json",
+      "bytes": 1909,
+      "sha256": "bb9d15b24bb383d7d1d6d3bb613d01fe1de01f625c2e0102bdc08310b2b58529"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/acquisition03.json",
+      "bytes": 6766,
+      "sha256": "5f3c77a1129d5f93100f1825fe972c9cccde14deabb1e8e883c6e25dd0ab6961"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/acquisition04.json",
+      "bytes": 5821,
+      "sha256": "907d0d1f6618107f3476f4112084f132a2b3340ffaa874a1493212fe1e4494f6"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/acquisition05.json",
+      "bytes": 2879,
+      "sha256": "44e26341350a88b62f1d974aecaf2c0b8fe44e09e6d2447e7c3e85178d01c6ab"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/build-dossier.py",
+      "bytes": 22000,
+      "sha256": "b6a84c1802bcb82847527bd4e016ca8f292810db1ba28520f763548f3d7a94ae"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/curation.json",
+      "bytes": 618,
+      "sha256": "e5e553c30a7bc23610c2c77969b380be4d1e623de2f2c75d0d51eb161b2a11be"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/dedup-initial.txt",
+      "bytes": 11268765,
+      "sha256": "c71dc9f29132ae10698e75f685868fb96b6a818238518ddce81fedbfa3c4da12"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/dedup-paths-final.json",
+      "bytes": 778,
+      "sha256": "d861ea02c21cbd8b0ac61e8facd9aa58499ae81df361fbcddb729f65b573a7b2"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/dedup-paths-final.txt",
+      "bytes": 5018,
+      "sha256": "0a42b12fc5eb9ab648a8c0a1767b3cda5d7cf2150fa4149751378971e197ad08"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/dedup-prior-raw-errors.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/dedup-prior-raw.json",
+      "bytes": 2963,
+      "sha256": "a5bed386e076c798d1cd4fcb688dcf49939d0c456af5458782f033ebcd3960c2"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/dedup-prior-raw.txt",
+      "bytes": 2012,
+      "sha256": "aef0b7aaea73390329e4ef704386fb4089d046dcb184cb5e1c078075b047a73e"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/florencite-nd1986-publisher.html",
+      "bytes": 741779,
+      "sha256": "f5b891c770dfeb1e0903a1fb422d87dcf4cb4c0cfd7417c7de319923fe223e3b"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/florencite-nd1986.pdf",
+      "bytes": 741779,
+      "sha256": "54fda218a9a9c9cfa3dbab9c1916a016c6d47f5c32f07733c60d59641e427d31"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/ima-home.html",
+      "bytes": 26639,
+      "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/ima-p1.txt",
+      "bytes": 3600,
+      "sha256": "0d705ef2fdc34dcb70ba807c6a44ecc0335bbd424bcfe970440148ab5a96a935"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/ima-p146.txt",
+      "bytes": 3102,
+      "sha256": "a822e35320230348f97a8a10682f7b1fc842c46b1a4cc7a5b971cde9f86df0b1"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/ima-p74.txt",
+      "bytes": 3269,
+      "sha256": "c9fba20ac6a077d898557d7d2fd6bbb5f348a37d3c79c9552df3a0e09cee6113"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/ima-reused-2026-09.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/issue-dedup.json",
+      "bytes": 10454,
+      "sha256": "1935f3f0dd0f4f7f9944e075530ca62172dfab359d19ff251f9697deb4f15574"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/mendeley-Research-Data-2.xlsx",
+      "bytes": 1439220,
+      "sha256": "b2316e164cf88aa7dbdd7d2a15ed747f53bf15abeb538ba4adcfe04d59ac32a7"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/mendeley-Research-Data.xlsx",
+      "bytes": 1230806,
+      "sha256": "954d4e7020c37d071273ae73fe57900c714ad98d0f3dbde67ea82c32ff622792"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/mendeley-api-docs.html",
+      "bytes": 411392,
+      "sha256": "009dfd3d078f711783fbdd8ba3bd4272dbcf415ae4398e9b3d97306638f79661"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/mendeley-bundle.js",
+      "bytes": 654883,
+      "sha256": "6dc1ed58657b306832db9f82de114a9f40f7db88f5ce494c10b3a558ad725658"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/mendeley-enumerated-files.json",
+      "bytes": 54240,
+      "sha256": "ef88e2fa4af1ad10fc2c151560e7d07faf593df6962046e041c93d05cf855391"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/mendeley-files-247ea10f-1fe7-499f-b4ab-bcb2dff99815.json",
+      "bytes": 1633,
+      "sha256": "393ca6f846db5591f00b0e9e9ed3f978cea7ee80420219b84053a43b51c58e9a"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/mendeley-files-2b68a76f-7f3b-4854-b250-ef038eaa8462.json",
+      "bytes": 24913,
+      "sha256": "a2be2c92fad48ab89cdfb763385e354bfd9c4e1e584c035b8823068634bddea1"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/mendeley-files-7ef8d3d5-284b-4bcb-9511-7383654e78e5.json",
+      "bytes": 3856,
+      "sha256": "a4c0e50306a9e87344b307553c9ac0ad80e456a08f7114d251e201a87c0f3aae"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/mendeley-files-f36a0b6b-4f7c-4226-b055-13b577be297c.json",
+      "bytes": 16585,
+      "sha256": "8adb246714a6b4676de4908f58259584a88c7173a87e3cc161de22ca247cc1d5"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/mendeley-files-root.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/mendeley-folders.json",
+      "bytes": 598,
+      "sha256": "babdb73ea61a2e6e741141e760574f217fb47af9c5a5f0844a5f0c01265e7814"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/mendeley-snapshot.json",
+      "bytes": 1738,
+      "sha256": "43deca2ce4e662e8c6ff80936d86def80bc3b8bbe6849ac8135ed828283bbca6"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/mendeley-workbook-inspection.json",
+      "bytes": 43558,
+      "sha256": "418fba338486a2316563ede082656b4732126c3d934c647037895266f087d9f7"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/mendeley-zip-metadata.json",
+      "bytes": 295,
+      "sha256": "572ecd828c92572f48bf1727684cca475c9e73b150e576eb5327606bf74212ad"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/micro2026-mendeley.html",
+      "bytes": 117923,
+      "sha256": "de72c16a39be368314df16b2022c19302cd32ed1b7857ada9e4d95082221c9c8"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/monazite-sm-draft.yaml",
+      "bytes": 2836,
+      "sha256": "4231597ffabf72377899ac4574b415a1ec1368d643ea8e3322aed7b1cdf9a0c3"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/monazite-sm2002-crossref.json",
+      "bytes": 2311,
+      "sha256": "4823c5aed8d38bea7930e949cf3d2a8ba0cc45c0c06c2fd98918a1c603c416cf"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/monazite-sm2002.pdf",
+      "bytes": 243823,
+      "sha256": "66c52d669dc08e452db3fd87ce271a454d766be93b4ffa15c02174f92387110d"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/monazite-sm2002.txt",
+      "bytes": 27456,
+      "sha256": "d754baf618e3bdea36da6d3f3df28effc824fc6533a927b707b8864c507b6e77"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/owner-dedup.json",
+      "bytes": 349,
+      "sha256": "9b6675ea2288668da624688e986a38bc340409cc99a54d896c5d4665cddda031"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/renders/ima-p1.png",
+      "bytes": 214335,
+      "sha256": "0c4e65ff317ff2f017f7e602e3241240abf6549f9645e879bf95a0af6eaf6583"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/renders/ima-p146.png",
+      "bytes": 223863,
+      "sha256": "069ad0de25fb7a60f8144853dce68e91af763e5aea6c6f931b958663947f7dc0"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/renders/ima-p74.png",
+      "bytes": 227768,
+      "sha256": "d8948e9156a21cff712515b0eaa9c23399e33d5297b70753b517b8e0a8c5ae57"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/renders/monazite-sm2002-p1.png",
+      "bytes": 163560,
+      "sha256": "ee1ef4991117b3f32613748a36233179fdf9270e9919157bd008efd899319d63"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/renders/monazite-sm2002-p2.png",
+      "bytes": 194177,
+      "sha256": "cb59137e7b90c263790322e7739ffd2c9d7d1d1d06429f1325de1f812cc9b45f"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/renders/monazite-sm2002-p3.png",
+      "bytes": 258703,
+      "sha256": "b40e60775827204f549491bd5dcfe1eb2fdab164d9a9b5cfa32d42c315fd152e"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/renders/monazite-sm2002-p4.png",
+      "bytes": 179769,
+      "sha256": "a8fc49d9452f498fa50d0356eb5d579721b59b71635e050fdf485c01f5633a04"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/renders/monazite-sm2002-p5.png",
+      "bytes": 175371,
+      "sha256": "1d4736595be4cb16bfbbd1318d463b3a1059035b4c23af9fae45d354393c326d"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/renders/monazite-sm2002-p6.png",
+      "bytes": 213720,
+      "sha256": "5ee1ccbf90375a869b5fb51c8fdc4d62fadcb5f19e02c27f534414fedf3848b8"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/renders/monazite-sm2002-p7.png",
+      "bytes": 151420,
+      "sha256": "eb37e9546c5915d53a4cbeb2ac36abf2787c697607dcd17cd4c7bfacc13310a4"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/round105primaryopen.json",
+      "bytes": 29993,
+      "sha256": "558e30f9bdaa6269d9764c1fd3028a44ecd272f4d9f499aaf9fe754cda8d382f"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/round105search1.json",
+      "bytes": 24487,
+      "sha256": "a995aaaa1bf75eb8eb9672e1fbb1e38719c31a1e79dcd8de8df8e3258720bfdc"
+    },
+    {
+      "path": "/private/tmp/cmm-round105-ree-research/round105search2.json",
+      "bytes": 25003,
+      "sha256": "534d1a8a48d4bc3f25fcc1b7b38d21bcaf25cb08a1e6f6845bba52cf4f1405a3"
+    }
+  ],
+  "remaining_priorities": [
+    "Independent exact-byte scientific review of newSmowner.",
+    "Full2026M.auratinigra paper/SI and two-deposit/figure correspondence before La/Gd curation.",
+    "Jiang2018 original graphics remain issue133; newSmidentity does not close the mechanism gap.",
+    "FlorenciteNd full original/diffraction acquisition before owner admission.",
+    "2026 Rafiuddin etal DOI10.1021/acs.inorgchem.6c01299 includes a synthetic Sm-monazite arm; prior rawfiles exist in round86, but this session did not evaluate that arm or import its mechanisms."
+  ]
+}

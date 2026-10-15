@@ -1,0 +1,352 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/CMMMech
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+review_id: 20261015T231259Z-monazite-sm-round105-independent
+title: Independent scientific review of Monazite-(Sm)
+started_at: '2026-10-15T23:08:15.192117Z'
+finished_at: '2026-10-15T23:12:59.391395Z'
+reviewer:
+  identity: codex /root/round104_borates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/round104_ree; no edits to
+    this owner/history/dossier. Reviewer authored unrelated inderborite/inderite in
+    this batch. Shared original acquisition is disclosed; the original primary paper,
+    figures/tables and dated authority were independently read after native target
+    capture.
+source:
+  git_revision: ee4ea8c2efa351a688946660c9ddc70560c3e86e
+  state: working_tree
+  inputs:
+  - path: data/records/monazite-sm.yaml
+    sha256: 1a6f15007e6fe0bb333add148b0a82111b7ad3ccd12eb516ed53aaa6da37da1d
+    role: target
+  - path: history/records/monazite-sm/2026-10-15T230258Z-codex-052a2d.yaml
+    sha256: 3a0f43c3b73f8e6b28b63f70af1aee26de6b730ae96dc8550bea8636bd6e969b
+    role: context
+  - path: research/sources/round105-ree/20261015T230454Z-source-investigation.json
+    sha256: bc434225781d7b3daf592010559e6ae0f5b18dd0d9b934b823f41d0ff6c3ee5a
+    role: context
+  - path: research/sources/round105-ree/20261015T230454Z-source-investigation.md
+    sha256: b47fedc63295b8eff82a226a4047368cdf2dce259c5188e18965d1781030e198
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:monazite-sm
+  path: data/records/monazite-sm.yaml
+  label: Monazite-(Sm)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/monazite-sm.yaml
+    role: maintained_scientific_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/monazite-sm/2026-10-15T230258Z-codex-052a2d.yaml
+    role: canonical_history
+scope:
+  description: Complete frozen monazite-sm owner, exact identity, natural-characterization
+    statements, evidence boundaries and canonical/inline provenance. Broader REE discovery
+    handoffs and later publication surfaces are excluded.
+  selection: Assigned exact maintained record; native source inspection captured before
+    primary-source judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:monazite-sm
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/monazite-sm.yaml
+  locator: Complete native-inspected owner; actual local artifact /private/tmp/CMMMech-expansion-round105-20261015/data/records/monazite-sm.yaml
+  accessed_at: '2026-10-15T23:12:59.391395Z'
+  support: supports
+  summary: Exact current mineral identity, composition distinction, evidence boundaries
+    and inline CREATE rechecked.
+  snapshot_sha256: 1a6f15007e6fe0bb333add148b0a82111b7ad3ccd12eb516ed53aaa6da37da1d
+- evidence_id: history
+  kind: record_content
+  reference: history/records/monazite-sm/2026-10-15T230258Z-codex-052a2d.yaml
+  locator: Complete canonical CREATE; actual local artifact /private/tmp/CMMMech-expansion-round105-20261015/history/records/monazite-sm/2026-10-15T230258Z-codex-052a2d.yaml
+  accessed_at: '2026-10-15T23:12:59.391395Z'
+  support: supports
+  summary: Target, actor codex/GPT-6/codex and actual timestamps match curation. Canonical
+    session precedes the distinct inline addition; neither claims completed independent
+    review.
+  snapshot_sha256: 3a0f43c3b73f8e6b28b63f70af1aee26de6b730ae96dc8550bea8636bd6e969b
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.2113/gscanmin.40.6.1649
+  locator: Complete original Masau et al.2002 article, printed pp1649–1655; all seven
+    PDF pages visually inspected, including Table1 p1652, Table2 p1653 and Figures1–3
+    pp1651–1653. Methods and original approval number p1650; density/sample distinction
+    p1651; geological limits pp1653–1654. Acquired original at https://www.rruff.net/doclib/cm/vol40/CM40_1649.pdf;
+    actual local artifact /private/tmp/cmm-round105-ree-research/monazite-sm2002.pdf
+  accessed_at: '2026-10-15T23:12:59.391395Z'
+  support: supports
+  summary: Natural Sm-dominant monazite characterization supports the qualified owner.
+    No controlled extraction, microbial mechanism or industrial recovery is established.
+  snapshot_sha256: 66c52d669dc08e452db3fd87ce271a454d766be93b4ffa15c02174f92387110d
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Reused official September2026 PDF; definitions p1 and Monazite-(Sm) row
+    p146 visually checked. Actual local artifact /private/tmp/cmm-round105-ree-research/ima-reused-2026-09.pdf
+  accessed_at: '2026-10-15T23:12:59.391395Z'
+  support: supports
+  summary: Sm(PO4), approved status A, IMA2001-001 and Canada confirmed; the original
+    paper prints2000-001 and the owner explicitly preserves that conflict.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: crossref
+  kind: authority
+  reference: https://api.crossref.org/works/10.2113/gscanmin.40.6.1649
+  locator: Curator-acquired current Crossref response independently read; actual local
+    artifact /private/tmp/cmm-round105-ree-research/monazite-sm2002-crossref.json
+  accessed_at: '2026-10-15T23:12:59.391395Z'
+  support: context_only
+  summary: DOI, authors,2002 date,40(6):1649–1655 agree with the actual original.
+    Empty relation/no update-to field is bounded metadata, not proof that no notices
+    exist.
+  snapshot_sha256: 4823c5aed8d38bea7930e949cf3d2a8ba0cc45c0c06c2fd98918a1c603c416cf
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round105-ree/20261015T230454Z-source-investigation.json
+  locator: Native-inspected paired JSON/Markdown dossier; only accepted monazite owner,
+    source provenance and associated limits assessed. Other source handoffs are outside
+    this record review.
+  accessed_at: '2026-10-15T23:12:59.391395Z'
+  support: context_only
+  summary: Shared acquisition and curator hypotheses were treated as a guide, then
+    the original primary/authority bytes were independently inspected.
+  snapshot_sha256: bc434225781d7b3daf592010559e6ae0f5b18dd0d9b934b823f41d0ff6c3ee5a
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round105-monazite-sm-review/search-notes.json
+  locator: Exact DOI notice query and two-number query, actual web returned sets summarized
+    in reviewer notes; no complete raw provider response retained.
+  accessed_at: '2026-10-15T23:12:59.391395Z'
+  support: context_only
+  summary: No affecting correction identified in these returned sets; the approval-number
+    discrepancy remains unresolved rather than silently repaired.
+  snapshot_sha256: 5b8c95a2949bde43ac06b8d764e7ab5891a6a2f7b6c714f9cc93013bfd82fc02
+  search_scope: Two exact web queries on2026-10-15 listed in search-notes.json; Crossref
+    relation fields separately inspected. Not exhaustive; secondary snippets not scientific
+    support.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round105-monazite-sm-review/dedup-paths.txt
+  locator: Actual hidden/ignored/followed bounded local result; review source scope
+    excludes original-main re-search because this is an independent exact-owner review,
+    not new discovery.
+  accessed_at: '2026-10-15T23:12:59.391395Z'
+  support: context_only
+  summary: The current owner/history and contextual source handoffs were found; no
+    second maintained Sm-monazite owner in searched directories.
+  snapshot_sha256: 76f3d0dd0b11780c858dfe1bc44e225e242ad44b8e8ae4e53ed77eb6f4271c8c
+  search_scope: rg --no-ignore --hidden --follow -l -i monazite.{0,4}sm|gscanmin\.40\.6\.1649|IMA:2001-001
+    data/records research reviews history in round105 WT. Unextracted binary text
+    and whole filesystem excluded. Curator broader dedup retained separately.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round105-monazite-sm-review/named-validation.json
+  locator: Actual independent subprocess receipt with command,times,stdout/exit0 and
+    exact owner hash.
+  accessed_at: '2026-10-15T23:12:59.391395Z'
+  support: supports
+  summary: One record checked, zero failed.
+  snapshot_sha256: fd375c97f45b88ba82f74354eddbcfde10815850ee3ec1c848339acd33e94387
+- evidence_id: baseline
+  kind: validation
+  reference: /private/tmp/cmm-round105-baseline.json
+  locator: Coordinator baseline actual terminal receipt and independently verified
+    log SHA256 b645e9bb36941a7ad0778de7b38e0cb16672c96d19df6af5300702978f721433.
+  accessed_at: '2026-10-15T23:12:59.391395Z'
+  support: context_only
+  summary: Offline locked sync and just check completed with zero exits before new
+    curation; baseline is context, not final-state validation.
+  snapshot_sha256: f998d0c50d56ae46fcff2ac1dd3a9dbefaeefd4a59647f154a34fc2d7633db56
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round105-final-gates.json
+  locator: Actual coordinator terminal receipt; log /private/tmp/cmm-round105-final-gates.log
+    SHA256 c0e64dd942a197f0a2581fc8ec2c07de67ccafc9671e062bd7fe41df518eea87. Receipt
+    bytes, expected base/worktree, owner hash, command exits and log digest independently
+    verified.
+  accessed_at: '2026-10-15T23:12:59.391395Z'
+  support: supports
+  summary: Final batch checks passed for the frozen owner. Native review persistence
+    and later hosted/publication gates remain separate.
+  snapshot_sha256: 8f74fec36404e77b00f4ed09b762585431cdf4bded30b8d6f592b09cf4acd244
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/monazite-sm.yaml --require-records
+  status: passed
+  required: true
+  summary: Checked 1 record(s); 0 failed. Executed 2026-10-15T23:09:44.533633Z through
+    2026-10-15T23:09:51.843087Z.
+  target_ids:
+  - cmmmech:monazite-sm
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Actual final batch command 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-15T23:06:00.819903+00:00 through 2026-10-15T23:12:12.376180+00:00;
+    actual terminal receipt and matching log digest verified.
+  target_ids:
+  - cmmmech:monazite-sm
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Actual final batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-15T23:12:12.377226+00:00 through 2026-10-15T23:12:23.685881+00:00;
+    actual terminal receipt and matching log digest verified.
+  target_ids:
+  - cmmmech:monazite-sm
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Actual final batch command 3
+  command: uv run --locked cmmmech validate-history --base ee4ea8c2efa351a688946660c9ddc70560c3e86e
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-15T23:12:23.687026+00:00 through 2026-10-15T23:12:30.179138+00:00;
+    actual terminal receipt and matching log digest verified.
+  target_ids:
+  - cmmmech:monazite-sm
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Actual final batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-15T23:12:30.180066+00:00 through 2026-10-15T23:12:35.767567+00:00;
+    actual terminal receipt and matching log digest verified.
+  target_ids:
+  - cmmmech:monazite-sm
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+summary: Qualified acceptance of the distinct Sm-dominant natural mineral record.
+  The primary data support its careful analytical and geological statements; no supported
+  corrective defect found.
+limitations:
+- The original approval number2000-001 conflicts with current official2001-001. The
+  maintained record follows the dated authority and retains the discrepancy; this
+  review does not independently reconstruct the original approval decision.
+- Natural characterization and geological interpretations establish no microbial mechanism,
+  extraction/recovery yield or industrial deployment. Criticality remains unassessed.
+- Shared-source acquisition is disclosed. Bounded correction and duplicate searches
+  are not exhaustive. The seven-page original has no inspected supplement pointer;
+  this is not a comprehensive publisher supplement inventory.
+- The prior Jiang2018 microbial/phase deferral remains separate and unresolved. No
+  new primary microbial claims were evaluated or imported.
+- Structural validation and saved-review validity do not certify scientific truth.
+  Hosted checks, exact committed-head review and merge are outside this working-tree
+  scientific observation.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact mineral versus element, commodity, mixed ore and other monazites
+  outcome: supported
+  summary: IMA approved Sm-dominant Sm(PO4) species and2001-001 are correctly grounded.
+    The paper’s2000-001 is explicitly retained as a source discrepancy. No jurisdiction/list/edition
+    criticality is asserted or inherited from samarium.
+  target_ids:
+  - cmmmech:monazite-sm
+  evidence_ids:
+  - record
+  - ima
+  - primary
+- assessment_id: specimen
+  area: evidence
+  topic: Natural analytical sample, chemistry and diffraction
+  outcome: supported
+  summary: Methods show WDS electron-microprobe and single-crystal/Gandolfi diffraction.
+    Systematic absences are consistent with monoclinic P21/n. The natural species
+    contains substantial Gd, Ce, Th and Ca; ideal SmPO4 does not imply pure-endmember
+    experimental material.
+  target_ids:
+  - cmmmech:monazite-sm
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: quantities
+  area: evidence
+  topic: Three-grain average versus separate highest-Sm composition
+  outcome: supported
+  summary: Table1 footnote identifies column1 as the average of three grains used
+    for physical,optical and crystal data, with13.02wt% Sm2O3. Column2 has14.29wt%;
+    p1651 says that extreme composition was not on extracted grains. The owner preserves
+    this distinction and avoids ore-grade or recovery-yield interpretation. Density
+    and hardness could not be measured; density is calculated.
+  target_ids:
+  - cmmmech:monazite-sm
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: mechanism
+  area: evidence
+  topic: Geological interpretation versus experimentally demonstrated process
+  outcome: supported
+  summary: Selective complexation is presented as the authors’ proposed explanation.
+    The paper explicitly calls for experiments and notes incomplete REE data and disequilibrium.
+    No organism/strain, biomass state, biological pretreatment or control, extraction
+    outcome, recovered product or deployment claim is admitted. Omitted microbial_mechanisms
+    is appropriate.
+  target_ids:
+  - cmmmech:monazite-sm
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Frozen source inputs and actual checks
+  outcome: supported
+  summary: Native inspect bound base, owner, CREATE, schema and paired dossier before
+    primary-source judgment. Current bytes remain unchanged. Independent named validation
+    and coordinator terminal batch/history checks passed; canonical review save/check
+    and hosted publication follow separately.
+  target_ids:
+  - cmmmech:monazite-sm
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - dedup
+findings: []
+actions: []
+notes:
+- Actual UTC review start is the native-inspection capture completion, before independent
+  source judgment. Complete paper text and all seven page renders, both tables and
+  all three figures were inspected; IMA pages1 and146 checked.
+- No record or history edit was required. Source conflicts already qualified are limitations,
+  not invented corrective findings.
+- The broader paired source dossier was captured for provenance; this review does
+  not approve its unrelated florencite or microbial-data handoffs.
+- The first unsaved serialization used YAML aliases for repeated target/evidence lists
+  and was rejected before persistence. Regenerated literal lists preserve the same
+  assessed inputs and content; no earlier native review was overwritten.
