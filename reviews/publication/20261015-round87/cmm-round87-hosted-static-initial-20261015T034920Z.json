@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-10-15T03:49:20.330781Z",
+  "reviewer": "codex /root/round68_iron_sulfides",
+  "scope": "Independent static reading of exact external hosted peer and evidence module; no top-level execution or live audit. Three-owner cohort still provisional.",
+  "passed": false,
+  "verdict": "needs_correction",
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round87-hosted-peer.py",
+      "sha256": "1f718c777b55057a78413164d96f5f5c8c38385a0609b90573915db7a1208e6f"
+    },
+    {
+      "path": "/private/tmp/cmm_round87_peer_checks.py",
+      "sha256": "2b604b672732057f211aa8cf183785532838578c4964f11b1c4bf4388a624867"
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round87-20261015/schema/record_review.yaml",
+      "sha256": "229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb"
+    }
+  ],
+  "snapshot": {
+    "path": "/private/tmp/cmm-round87-hosted-static-initial-20261015T034920Z-peer_checks.py",
+    "sha256": "2b604b672732057f211aa8cf183785532838578c4964f11b1c4bf4388a624867"
+  },
+  "findings": [
+    {
+      "finding_id": "HP1",
+      "issue_key": "round87-hosted-native-finding-status",
+      "severity": "minor",
+      "status": "open",
+      "path": "/private/tmp/cmm_round87_peer_checks.py",
+      "line": 53,
+      "description": "verify_native_lineage accepts resolved or dismissed for retiring earlier open/deferred findings, but native schema enumerates resolved, rejected and accepted_risk as terminal dispositions and does not permit dismissed. A schema-valid rejected correction will fail the host audit. Current cohort has no such disposition yet; no false scientific acceptance is alleged.",
+      "acceptance": "Use explicit valid terminal native statuses with justified policy; test the actual extracted function on rejected status with valid prior binding and on invalid dismissed. Preserve initial source and observation; no Git/GH or scientific mutation."
+    }
+  ],
+  "other_assessments": [
+    "Full actual API pagination, exact file count/pathset/blob identities and duplicate guards are present.",
+    "PR metadata/head/base/tree/sole parent, exact final audit candidate hashes, native scientific independence/history, issues, conversation inventory and terminal synthetic-squash checks are scoped.",
+    "Current configuration is provisional; no runtime or passing publication verdict is claimed.",
+    "The accepted native review IDs must be finalized in the actual manifest; current helper uses that exact committed manifest."
+  ]
+}

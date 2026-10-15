@@ -1,0 +1,16 @@
+--- /private/tmp/cmm-round87-final-package-audit.py
++++ /private/tmp/cmm-round87-final-package-audit-scoped.py
+@@ -143,7 +143,12 @@
+ oldmod=T/'cmm-round87-hosted-static-initial-20261015T034920Z-peer_checks.py';newmod=T/'cmm_round87_peer_checks.py'
+ oldbuild=T/'cmm-round87-hosted-static-expanded-20261015T035023Z-build-manifest.py';newbuild=T/'cmm-round87-build-manifest.py'
+ need(oldbuild.read_text().replace("('resolved','dismissed')","('resolved','rejected')")==newbuild.read_text(),'Builder correction exceeds declared single predicate')
+-module=newmod.read_text();need('dismissed' not in module and 'rejected' in module,'Module status guard stale')
++def native_status_guards_are_current(source):
++    functions=[n for n in ast.parse(source).body if isinstance(n,ast.FunctionDef) and n.name=='verify_native_lineage']
++    if len(functions)!=1:return False
++    comparisons=[n for n in ast.walk(functions[0]) if isinstance(n,ast.Compare) and isinstance(n.left,ast.Subscript) and isinstance(n.left.value,ast.Name) and n.left.value.id=='f' and isinstance(n.left.slice,ast.Constant) and n.left.slice.value=='status' and len(n.ops)==1 and isinstance(n.ops[0],ast.In)]
++    return len(comparisons)==2 and all(len(n.comparators)==1 and isinstance(n.comparators[0],ast.Tuple) and [x.value for x in n.comparators[0].elts if isinstance(x,ast.Constant)]==['resolved','rejected'] and len(n.comparators[0].elts)==2 for n in comparisons)
++need(native_status_guards_are_current(newmod.read_text()),'Native-lineage status guard stale')
+ resolution=dict(issue=298,issue_key=f['issue_key'],initial=bind(hp0),expanded=bind(hp1),successor=bind(hp2),scope='Operational-only valid disposition guard correction. Immutable initial, expanded observation, exact code snapshots, independent successor and25 focused cases retained; scientific owners/history unchanged.')
+ 
+ posted=json.loads((T/'cmm-round87-issues-posted.json').read_text());live=[]

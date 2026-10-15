@@ -1,0 +1,829 @@
+{
+  "schema_version": "1.0.0",
+  "assessed_at": "2026-10-15T03:52:56.424778+00:00",
+  "worktree": "/private/tmp/CMMMech-expansion-round87-20261015",
+  "trusted_base": "9deef8843b7efcf2dd2586c2a13f47b72231e336",
+  "scope": "One new simonkolleite species owner. Abiotic reagent synthesis and thermal transformation; no microbial or criticality claim.",
+  "selected_records": [
+    {
+      "record_id": "cmmmech:simonkolleite",
+      "path": "data/records/simonkolleite.yaml",
+      "sha256": "13efe05b52e50e21a5ad1dae6b131b6723ee8248676dcce93d72d87aa2b495b9",
+      "decision": "Curated for independent review, not self-accepted"
+    }
+  ],
+  "frozen_record_manifest": {
+    "frozen_at": "2026-10-15T03:52:07.558802+00:00",
+    "worktree": "/private/tmp/CMMMech-expansion-round87-20261015",
+    "base": "9deef8843b7efcf2dd2586c2a13f47b72231e336",
+    "record_id": "cmmmech:simonkolleite",
+    "files": [
+      {
+        "path": "data/records/simonkolleite.yaml",
+        "sha256": "13efe05b52e50e21a5ad1dae6b131b6723ee8248676dcce93d72d87aa2b495b9",
+        "bytes": 10252
+      },
+      {
+        "path": "history/records/simonkolleite/2026-10-15T035130Z-codex-bd84c9.yaml",
+        "sha256": "e7064d555fa000f4f6d8cfe3c9297e32410b613875efcd695026bfb0a072a443",
+        "bytes": 840
+      }
+    ],
+    "validation": {
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "cmmmech",
+        "validate",
+        "data/records/simonkolleite.yaml",
+        "--require-records"
+      ],
+      "exit_code": 0,
+      "log": "/private/tmp/cmm-round87-minerals-research/named-validation.log",
+      "log_sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e"
+    }
+  },
+  "search": {
+    "recorded_at": "2026-10-15T03:48:09.830009+00:00",
+    "provider": "web.run search_query",
+    "executed_date_utc": "2026-10-15",
+    "filters": "none",
+    "coverage": "Returned top search results only; no exhaustive pagination claim. RSC full HTML open returned403; White Rose and official PMC/EPMC full originals acquired.",
+    "queries": [
+      "\"10.1039/D3NA00108C\"",
+      "parahopeite microbial mineral formation bacteria full text",
+      "\"D3NA00108C\" pdf",
+      "\"Controlling simonkolleite crystallisation\" PMC",
+      "parahopeite synthesis dissolution bacteria phosphate primary study",
+      "\"D3NA00108C\" correction OR erratum OR retraction",
+      "\"simonkolleite\" bacteria precipitation biological",
+      "\"parahopeite\" fungal OR bacteria OR microbial",
+      "\"10.1039/d3na00108c\" \"correction\"",
+      "\"Controlling simonkolleite crystallisation\" \"retraction\"",
+      "\"10.1039/d3na00108c\" supplementary information"
+    ],
+    "results_assessed": [
+      {
+        "doi": "10.1039/d3na00108c",
+        "decision": "selected",
+        "reason": "Complete 16-page original plus repository cover, full JATS and all16 figures available; abiotic precipitation/thermal transformation, meaningful species identity."
+      },
+      {
+        "material": "parahopeite",
+        "doi": "10.1186/s40659-022-00382-6",
+        "decision": "deferred",
+        "reason": "Search preview reports trace parahopeite in Atacama soil; bacterial lithium nanoparticle study does not establish parahopeite transformation. Full original not acquired in this bounded cohort."
+      },
+      {
+        "material": "parahopeite",
+        "title": "The crystallization of Parahopeite",
+        "decision": "deferred",
+        "reason": "Historical crystallization article found through Cambridge metadata; no full-source assessment or new owner claim in this cohort."
+      },
+      {
+        "doi": "10.3390/nano14242005",
+        "decision": "deferred extension",
+        "reason": "New same-species synthesis lead from citing search, not required for current original-based owner; industrial-scale language not imported without primary assessment."
+      },
+      {
+        "doi": "10.3390/molecules27196161",
+        "decision": "out of accepted scope",
+        "reason": "Antibacterial nanohybrid is not microbial extraction/formation evidence."
+      },
+      {
+        "doi": "10.1016/j.apsusc.2018.03.164",
+        "decision": "out of accepted scope",
+        "reason": "Implant-surface and antifungal response metadata does not establish microbial formation."
+      }
+    ]
+  },
+  "dedup": {
+    "checked_at": "2026-10-15T03:42:30.019058+00:00",
+    "scope": "Current worktree and original main maintained roots; relevant previously cited source roots including hidden/ignored and followed symlinks; textual rg search. Binary PDF content is assessed separately. No machine-wide absence claim.",
+    "checks": [
+      {
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "-n",
+          "-i",
+          "simonkolleite|parahopeite|D3NA00108C|s40659-022-00382-6",
+          "/private/tmp/CMMMech-expansion-round87-20261015/data/records"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "output": "/private/tmp/cmm-round87-minerals-research/dedup-0.txt",
+        "sha256": "d4705b1cb595756617216b617d7f83b8126be24ea166661b7b551b8f2027916e",
+        "matches": 2
+      },
+      {
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "-n",
+          "-i",
+          "simonkolleite|parahopeite|D3NA00108C|s40659-022-00382-6",
+          "/private/tmp/CMMMech-expansion-round87-20261015/research"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "output": "/private/tmp/cmm-round87-minerals-research/dedup-1.txt",
+        "sha256": "039781ffe3d218d12007b8cb5b83ce58df5973e3f3d292e0aa20c6c1535d204e",
+        "matches": 7
+      },
+      {
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "-n",
+          "-i",
+          "simonkolleite|parahopeite|D3NA00108C|s40659-022-00382-6",
+          "/private/tmp/CMMMech-expansion-round87-20261015/reviews"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "output": "/private/tmp/cmm-round87-minerals-research/dedup-2.txt",
+        "sha256": "c8e0baea8673e9e02f0e04a3ab2f306523ef17d441b3f2b1cd18ef59865a8976",
+        "matches": 3
+      },
+      {
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "-n",
+          "-i",
+          "simonkolleite|parahopeite|D3NA00108C|s40659-022-00382-6",
+          "/private/tmp/CMMMech-expansion-round87-20261015/history"
+        ],
+        "exit_code": 1,
+        "stderr": "",
+        "output": "/private/tmp/cmm-round87-minerals-research/dedup-3.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "matches": 0
+      },
+      {
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "-n",
+          "-i",
+          "simonkolleite|parahopeite|D3NA00108C|s40659-022-00382-6",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "output": "/private/tmp/cmm-round87-minerals-research/dedup-4.txt",
+        "sha256": "14505c6416bfe90f662f7707ebfbf356da26df01a6cef17783bffe1582b0222b",
+        "matches": 2
+      },
+      {
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "-n",
+          "-i",
+          "simonkolleite|parahopeite|D3NA00108C|s40659-022-00382-6",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "output": "/private/tmp/cmm-round87-minerals-research/dedup-5.txt",
+        "sha256": "f68d8881140f328ff8b92720d456ad37aff7cb3593d7e59ca9ce6d1ab083402b",
+        "matches": 7
+      },
+      {
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "-n",
+          "-i",
+          "simonkolleite|parahopeite|D3NA00108C|s40659-022-00382-6",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "output": "/private/tmp/cmm-round87-minerals-research/dedup-6.txt",
+        "sha256": "0b9f28d31b60048e326dffdd070036766989166df4a688160a1f26fb301bd1aa",
+        "matches": 3
+      },
+      {
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "-n",
+          "-i",
+          "simonkolleite|parahopeite|D3NA00108C|s40659-022-00382-6",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history"
+        ],
+        "exit_code": 1,
+        "stderr": "",
+        "output": "/private/tmp/cmm-round87-minerals-research/dedup-7.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "matches": 0
+      },
+      {
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "-n",
+          "-i",
+          "simonkolleite|parahopeite|D3NA00108C|s40659-022-00382-6",
+          "/private/tmp/cmm-round86-minerals-research"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "output": "/private/tmp/cmm-round87-minerals-research/dedup-8.txt",
+        "sha256": "ec3e73e907026200383e0f92a735e9fd2c6a895e8917d6b72b263c15882759e1",
+        "matches": 21
+      },
+      {
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "-n",
+          "-i",
+          "simonkolleite|parahopeite|D3NA00108C|s40659-022-00382-6",
+          "/private/tmp/cmm-round76-phosphates-research"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "output": "/private/tmp/cmm-round87-minerals-research/dedup-9.txt",
+        "sha256": "7fcea356313f798f9df7587bdc691624b0694c6ff007fd641bb713299859bf4d",
+        "matches": 51
+      },
+      {
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "-n",
+          "-i",
+          "simonkolleite|parahopeite|D3NA00108C|s40659-022-00382-6",
+          "/private/tmp/cmm-round29-zinc-ore-research"
+        ],
+        "exit_code": 1,
+        "stderr": "",
+        "output": "/private/tmp/cmm-round87-minerals-research/dedup-10.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "matches": 0
+      },
+      {
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "-n",
+          "-i",
+          "simonkolleite|parahopeite|D3NA00108C|s40659-022-00382-6",
+          "/private/tmp/cmm-round79-clays-research"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "output": "/private/tmp/cmm-round87-minerals-research/dedup-11.txt",
+        "sha256": "ede1d2f43631b320e4d0c21f7db105afe77f8bc41dd3887c08f09653fdbe5e2c",
+        "matches": 12
+      },
+      {
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "-n",
+          "-i",
+          "simonkolleite|parahopeite|D3NA00108C|s40659-022-00382-6",
+          "/private/tmp/cmm-round85-phosphates-research"
+        ],
+        "exit_code": 1,
+        "stderr": "",
+        "output": "/private/tmp/cmm-round87-minerals-research/dedup-12.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "matches": 0
+      }
+    ],
+    "issue_hits": []
+  },
+  "prior_pdf_dedup": [
+    {
+      "path": "/private/tmp/cmm-round86-minerals-research/willemite2022.pdf",
+      "sha256": "61515b8beb61fee33715541ef127460deb959a9981d1bf89710f250577d1aa4a",
+      "pages": 20,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round86-minerals-research/hemimorphite2017.pdf",
+      "sha256": "e22004bd73f7e75d1f8547ca388dfdc43787a70b2914d8d568d3995754658b6c",
+      "pages": 10,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round86-minerals-research/willemite-handbook.pdf",
+      "sha256": "ddef8d9e9a461a40dc1add19b8c6ba58e8c58fc475a804348b5ccb03dea6999c",
+      "pages": 1,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round86-minerals-research/medas2018.pdf",
+      "sha256": "32071969c68b1925ab922fc7517f55e8bc611cb46d637b31b44685576fc99df7",
+      "pages": 9,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round86-minerals-research/hemimorphite-handbook.pdf",
+      "sha256": "35a916908d9b12f2eefea513e3eb65c28000559d998ca1417026677ed7e98395",
+      "pages": 1,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round86-minerals-research/sueoka2015.pdf",
+      "sha256": "56084a06bae6bb92beeb816587ce83132a3e6788f8b87a334d7558373e4c94db",
+      "pages": 18,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round76-phosphates-research/whitlockite-handbook.pdf",
+      "sha256": "7d7d406606eb860b632de3c941edb7575e228928e88d49c8509062909b8dc658",
+      "pages": 1,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round76-phosphates-research/hopeite-handbook.pdf",
+      "sha256": "720a98610fbaa76d2c5ecab438d37a0d3ea44a03c44f1e556a925c1986774eb4",
+      "pages": 1,
+      "matches": [
+        {
+          "page": 1,
+          "line": "Dimorphous with parahopeite."
+        }
+      ]
+    },
+    {
+      "path": "/private/tmp/cmm-round76-phosphates-research/haddad2014.pdf",
+      "sha256": "28b4596def0b2129f97e9005acc9437ce44e7278d1d9a896f995756acaf74dc7",
+      "pages": 14,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round76-phosphates-research/crystals2019.pdf",
+      "sha256": "ec1e401023f0b4db0dce05621eed445d4812b7605877af0c3c853c0ced97852f",
+      "pages": 11,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round29-zinc-ore-research/raw/demirci2025.pdf",
+      "sha256": "b4a5bb6855b9c8a48c61bd925646d110f8df84634b0879ee20c69632281792d8",
+      "pages": 9,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round79-clays-research/stevensite-handbook.pdf",
+      "sha256": "cb86ac09e2e62d74f72a43b90688345af7c9613bdc12b6ebe9a798bc47c33b05",
+      "pages": 1,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round79-clays-research/stevensite-elsevier.pdf",
+      "error": "Failed to open file '/private/tmp/cmm-round79-clays-research/stevensite-elsevier.pdf' as type pdf."
+    },
+    {
+      "path": "/private/tmp/cmm-round79-clays-research/sauconite.pdf",
+      "sha256": "37e303e0d3fb3b8af95000f961b4e72a91580500f1f378427fffead96b89a3a4",
+      "pages": 6,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round79-clays-research/stevensite2026.pdf",
+      "sha256": "b9db70c2aed0f789fa9120aac863f204c0d595062ba52a5aec1ec7ba1d8d7441",
+      "pages": 1,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round79-clays-research/stevensite-diva-fulltext.pdf",
+      "sha256": "2674bc5283402e3cac892ae44496883d8e09629cf806d18a7318ab9bbfc9fc78",
+      "pages": 15,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round79-clays-research/stevensite-si.pdf",
+      "sha256": "8103e2804177db0281f3ec9709deefef9e083e3ad51278a0cf66f2fee196c9a8",
+      "pages": 31,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round79-clays-research/stevensite-sd.pdf",
+      "sha256": "98c0690741241db6e732d7908b8e057c55e1f8cfd89bab1aadb69ab06abedd4a",
+      "pages": 2,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round79-clays-research/dolomite2026.pdf",
+      "sha256": "01cd5c8526bbf3dfed6b969f797d3ec0b30ffb8eef5390808bf27dcf0684256d",
+      "pages": 13,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round79-clays-research/sauconite-handbook.pdf",
+      "sha256": "c1ad5decee2b011e054ef13cdafe6ac7828c6eb594dc971c2a5d08e9e96c4198",
+      "pages": 1,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round79-clays-research/burne2016.pdf",
+      "sha256": "499db59f967e1744cbaa9b62bc199eb2ede80f15922c64634ef8c01ec4ebe3ca",
+      "pages": 133,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round79-clays-research/stevensite-author-encoded.pdf",
+      "sha256": "55fe569604204fc1797badce3486022206ca79f21f9b6bf410db48b4a8391815",
+      "pages": 1,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite-handbook.pdf",
+      "sha256": "47115d10b7dbd3fcc2714f06aad0466eca248a8d77ca9dae5a80d6c3947a0d10",
+      "pages": 1,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-pmc.pdf",
+      "sha256": "2a6526704617e617ec5814710d5164351ffee5056b1c60c4ab846a78e97f3266",
+      "pages": 1,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-publisher.pdf",
+      "sha256": "146cf8aa89a01beca75d81ab5503ef5cb5eb954666b7f5dc8deb8dc9a954f8ea",
+      "pages": 1,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2022-main.pdf",
+      "sha256": "73b757ddf82caf6ba67ae6d2757f42232b7a04a9cc5c5f9ea08e19ce61fbfcab",
+      "pages": 1,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2022-nsf.pdf",
+      "sha256": "5023f49d8f539e7bdc3f26a04c7da0bb2bcaddbce576a7b6fe03731d39f348f1",
+      "pages": 13,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite-handbook.pdf",
+      "sha256": "5627deedc4f239c16927f925d8ec621f05b5b3152e7da2da9928885fc25e79fe",
+      "pages": 1,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2020-main.pdf",
+      "sha256": "0e57e247e141666ad937ee68ce704dbbc18e06b26e386b96f9f27b2930c7a454",
+      "pages": 10,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2000-pmc.pdf",
+      "sha256": "e77adf40563eb29601f4e80dfabf691acf6897f17ced019f04486d865da6d321",
+      "pages": 1,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2022-si/SC-013-D1SC06667F-s012.pdf",
+      "sha256": "ec14ab5c79462b2d9211a0f3ebf3d54489cf2493de77209b0f06b48eb9db5f51",
+      "pages": 21,
+      "matches": []
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2020-si/jof-06-00210-s001.pdf",
+      "sha256": "2e24be842766e0bceaff123b99258564dbf113993ac0d607fa642b83188b90cb",
+      "pages": 6,
+      "matches": []
+    }
+  ],
+  "acquisition_attempts": [
+    {
+      "path": "/private/tmp/cmm-round87-minerals-research/simonkolleite2023.pdf",
+      "url": "https://eprints.whiterose.ac.uk/197511/1/d3na00108c.pdf",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "accessed_at": "2026-10-15T03:40:52.712133+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-minerals-research/simonkolleite2023.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10153477/fullTextXML",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "accessed_at": "2026-10-15T03:40:52.788412+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-minerals-research/simonkolleite2023-supplements.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10153477/supplementaryFiles",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "accessed_at": "2026-10-15T03:40:52.790041+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-minerals-research/simonkolleite-handbook.pdf",
+      "url": "https://www.handbookofmineralogy.org/pdfs/simonkolleite.pdf",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "accessed_at": "2026-10-15T03:40:52.791246+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-minerals-research/simonkolleite2023.pdf",
+      "url": "https://eprints.whiterose.ac.uk/197511/1/d3na00108c.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 2032542,
+      "sha256": "54c0e0eae009ecf769acb2447cf6a7772b02b562a2b37e934d8431108f062c00",
+      "accessed_at": "2026-10-15T03:41:33.264630+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-minerals-research/simonkolleite2023.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10153477/fullTextXML",
+      "status": 200,
+      "content_type": "application/xml",
+      "bytes": 131238,
+      "sha256": "297c9a200e88e9f3e8fae678dfdcdd8c21a0fa3405670db3b851760f676a160a",
+      "accessed_at": "2026-10-15T03:41:38.769677+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-minerals-research/simonkolleite2023-supplements.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10153477/supplementaryFiles",
+      "status": 200,
+      "content_type": "application/zip",
+      "bytes": 1388178,
+      "sha256": "b5fbee3ca7c43c6714f1c89fc4c4ea4576a4f9e1d79970abfa95cb1efdd24382",
+      "accessed_at": "2026-10-15T03:41:40.024560+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-minerals-research/simonkolleite-handbook.pdf",
+      "url": "https://www.handbookofmineralogy.org/pdfs/simonkolleite.pdf",
+      "error": "HTTP Error 406: Not Acceptable",
+      "accessed_at": "2026-10-15T03:42:04.460500+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-minerals-research/cod9004683.cif",
+      "url": "https://www.crystallography.net/cod/9004683.cif",
+      "accessed_at": "2026-10-15T03:45:10.196872+00:00",
+      "status": 200,
+      "content_type": "chemical/x-cif",
+      "bytes": 4244,
+      "sha256": "f54be79f6bbb0599b4703ca16cb3b84f5fe9d7d1bf5c0d53fc148bcf3df9cbc5"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-minerals-research/qu2023-crossref.json",
+      "url": "https://api.crossref.org/works/10.1039/d3na00108c",
+      "accessed_at": "2026-10-15T03:45:11.095442+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 17537,
+      "sha256": "928fddda0de8e9645005869d8cbf572fb37c14b39b16310ae6fa5e433d53ee7a"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-minerals-research/qu2023-pubmed.xml",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=37143811&retmode=xml",
+      "accessed_at": "2026-10-15T03:45:11.452119+00:00",
+      "status": 200,
+      "content_type": "text/xml; charset=UTF-8",
+      "bytes": 29169,
+      "sha256": "8112a9a68809e6e5f573cc561e1c29a1372263a94e39275ce12a6ba90b0a803b"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-minerals-research/rsc-landing.html",
+      "url": "https://pubs.rsc.org/en/content/articlelanding/2023/na/d3na00108c",
+      "accessed_at": "2026-10-15T03:45:11.855872+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://handbookofmineralogy.org/pdfs/simonkolleite.pdf",
+      "path": "/private/tmp/cmm-round87-minerals-research/simonkolleite-handbook.pdf",
+      "sha256": "dee993d5df82d744662930ad3d5271aa2667809fe27f8860b382d193fcd64890",
+      "accessed_at": "2026-10-15T03:43:27.782430+00:00"
+    }
+  ],
+  "accepted_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round87-minerals-research/simonkolleite2023.pdf",
+      "bytes": 2032542,
+      "sha256": "54c0e0eae009ecf769acb2447cf6a7772b02b562a2b37e934d8431108f062c00",
+      "url": "https://eprints.whiterose.ac.uk/197511/1/d3na00108c.pdf",
+      "accessed_at": "2026-10-15T03:41:33.264630+00:00",
+      "role": "primary_source",
+      "locator": "Repository cover PDF1; complete original PDF2-17; Methods PDF4-5, Table1; all Figures1-16; claim-bearing phase PDF6 and thermal PDF12-14."
+    },
+    {
+      "path": "/private/tmp/cmm-round87-minerals-research/simonkolleite2023.xml",
+      "bytes": 131238,
+      "sha256": "297c9a200e88e9f3e8fae678dfdcdd8c21a0fa3405670db3b851760f676a160a",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10153477/fullTextXML",
+      "accessed_at": "2026-10-15T03:41:38.769677+00:00",
+      "role": "primary_source",
+      "locator": "Complete official JATS of the same experiment, PMCID PMC10153477.1; no independent replication."
+    },
+    {
+      "path": "/private/tmp/cmm-round87-minerals-research/simonkolleite2023-supplements.zip",
+      "bytes": 1388178,
+      "sha256": "b5fbee3ca7c43c6714f1c89fc4c4ea4576a4f9e1d79970abfa95cb1efdd24382",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10153477/supplementaryFiles",
+      "accessed_at": "2026-10-15T03:41:40.024560+00:00",
+      "role": "primary_figure_archive",
+      "locator": "33 main figure JPG/GIF assets; despite endpoint name, no separate supplementary document. All original figures also inspected in complete PDF."
+    },
+    {
+      "path": "/private/tmp/cmm-round87-minerals-research/simonkolleite-handbook.pdf",
+      "bytes": 82614,
+      "sha256": "dee993d5df82d744662930ad3d5271aa2667809fe27f8860b382d193fcd64890",
+      "url": "https://handbookofmineralogy.org/pdfs/simonkolleite.pdf",
+      "accessed_at": "2026-10-15T03:43:27.782430+00:00",
+      "role": "authority",
+      "locator": "Complete single-page Simonkolleite entry, printed511; ideal formula and natural occurrence."
+    },
+    {
+      "path": "/private/tmp/cmm-round87-minerals-research/cod9004683.cif",
+      "bytes": 4244,
+      "sha256": "f54be79f6bbb0599b4703ca16cb3b84f5fe9d7d1bf5c0d53fc148bcf3df9cbc5",
+      "url": "https://www.crystallography.net/cod/9004683.cif",
+      "accessed_at": "2026-10-15T03:45:10.196872+00:00",
+      "role": "database_context",
+      "locator": "Mineral name and provenance of the diffraction reference used by Qu2023; not an experimental sample measurement. CIF formula-sum H20 is not used to replace the IMA ideal formula."
+    },
+    {
+      "path": "/private/tmp/cmm-round87-minerals-research/qu2023-crossref.json",
+      "bytes": 17537,
+      "sha256": "928fddda0de8e9645005869d8cbf572fb37c14b39b16310ae6fa5e433d53ee7a",
+      "url": "https://api.crossref.org/works/10.1039/d3na00108c",
+      "accessed_at": "2026-10-15T03:45:11.095442+00:00",
+      "role": "notice_metadata",
+      "locator": "DOI/title/authors; no update-to or relation notice in acquired metadata."
+    },
+    {
+      "path": "/private/tmp/cmm-round87-minerals-research/qu2023-pubmed.xml",
+      "bytes": 29169,
+      "sha256": "8112a9a68809e6e5f573cc561e1c29a1372263a94e39275ce12a6ba90b0a803b",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=37143811&retmode=xml",
+      "accessed_at": "2026-10-15T03:45:11.452119+00:00",
+      "role": "notice_metadata",
+      "locator": "PMID37143811 metadata; no CommentsCorrections elements in acquired record."
+    },
+    {
+      "path": "/private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "inspected_at": "2026-10-15T03:52:56.424778+00:00",
+      "role": "authority",
+      "locator": "Definitions PDF1 and exact Simonkolleite row PDF200: A, 1983-019, Zn5(OH)8Cl2.H2O.",
+      "provenance": "Reused previously acquired official September2026 original, not downloaded in this round."
+    }
+  ],
+  "inspection": {
+    "completed_at": "2026-10-15T03:48:09.878955+00:00",
+    "artifacts": [
+      {
+        "path": "/private/tmp/cmm-round87-minerals-research/simonkolleite2023.pdf",
+        "bytes": 2032542,
+        "sha256": "54c0e0eae009ecf769acb2447cf6a7772b02b562a2b37e934d8431108f062c00"
+      },
+      {
+        "path": "/private/tmp/cmm-round87-minerals-research/simonkolleite2023.xml",
+        "bytes": 131238,
+        "sha256": "297c9a200e88e9f3e8fae678dfdcdd8c21a0fa3405670db3b851760f676a160a"
+      },
+      {
+        "path": "/private/tmp/cmm-round87-minerals-research/simonkolleite2023-supplements.zip",
+        "bytes": 1388178,
+        "sha256": "b5fbee3ca7c43c6714f1c89fc4c4ea4576a4f9e1d79970abfa95cb1efdd24382"
+      },
+      {
+        "path": "/private/tmp/cmm-round87-minerals-research/simonkolleite-handbook.pdf",
+        "bytes": 82614,
+        "sha256": "dee993d5df82d744662930ad3d5271aa2667809fe27f8860b382d193fcd64890"
+      },
+      {
+        "path": "/private/tmp/cmm-round87-minerals-research/cod9004683.cif",
+        "bytes": 4244,
+        "sha256": "f54be79f6bbb0599b4703ca16cb3b84f5fe9d7d1bf5c0d53fc148bcf3df9cbc5"
+      },
+      {
+        "path": "/private/tmp/cmm-round87-minerals-research/qu2023-crossref.json",
+        "bytes": 17537,
+        "sha256": "928fddda0de8e9645005869d8cbf572fb37c14b39b16310ae6fa5e433d53ee7a"
+      },
+      {
+        "path": "/private/tmp/cmm-round87-minerals-research/qu2023-pubmed.xml",
+        "bytes": 29169,
+        "sha256": "8112a9a68809e6e5f573cc561e1c29a1372263a94e39275ce12a6ba90b0a803b"
+      },
+      {
+        "path": "/private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf",
+        "bytes": 3129886,
+        "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+        "reuse": "Previously acquired dated official original; inspected again this round, not a fresh acquisition."
+      }
+    ],
+    "fulltext_inspected": "All original text across PDF2-17 and exact main graphics, with coverPDF1; all17 rendered pages available. Contact sheets1/5/9/13 plus full detailpages4/6/13/14/17.",
+    "figures_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "tables_inspected": [
+      1
+    ],
+    "claim_bearing_locators": {
+      "methods": "PDF4-5; Table1; Figure3",
+      "phase": "PDF5-6; Figures4-5",
+      "growth_and_null": "PDF6-11; Figures6-11; no recovered40%productday1",
+      "thermal": "PDF11-14; Figures12-16",
+      "authority": "IMA PDF1definitions/200row; completeHandbookpage511"
+    },
+    "supplement_inventory": {
+      "jats_supplementary_material_nodes": 0,
+      "archive": "simonkolleite2023-supplements.zip",
+      "content": "33 JPG/GIF main-article figure assets; no supplementary PDF or table file; no separate SI announcement in inspected completePDF/JATS. Publisher landing returned403, so no exhaustive live publisher inventory claimed."
+    },
+    "notice_checks": {
+      "crossref_relation": {},
+      "crossref_update_fields": "No update-to/update-by/assertion keys in acquired record",
+      "pubmed_comments_corrections": [],
+      "web": "Exact DOI/title correction/erratum/retraction queries returned original/citing pages, no matched correction notice in inspected returned set. Not a universal absence claim."
+    },
+    "important_source_discrepancies": [
+      "Methods solution mL versus Table1 grams",
+      "Room-temperature heading versus40\u00b0C actual setting",
+      "Table1 lacks two-day and ten-day product cases shown in figures",
+      "Methods800\u00b0C versus Results/graph900\u00b0C maximum",
+      "Figure13 uses15-day precursor whereasFigure14 uses10-day precursor",
+      "Intro scrap metal versus purchasedgrains Methods;ConclusionZnO vsmetal feed",
+      "SEM n200 is particle sample not independent reactionreplication",
+      "Figure16washingdependentmassloss limits purity assumptions"
+    ],
+    "excluded_inferences": [
+      "No microbialclaim",
+      "No criticalityinheritance",
+      "No industrialscrapdeployment",
+      "No overallZnrecoveryyield",
+      "No quantitativephasepurity",
+      "No directmolecularpathwayorprecursorkineticsproof"
+    ],
+    "licenses": {
+      "qu2023": "Original PDF/JATS CC BY3.0; WhiteRoselanding download label CC BY4.0 differs. Originaldocumentlicense retained; no fulltext committed.",
+      "ima_handbook": "Reading provenance only; bulk originals remainoutsideGit.",
+      "cod": "CIF attribution notice inspected; no bulkredistribution."
+    }
+  },
+  "baseline_receipt": {
+    "path": "/private/tmp/cmm-round87-baseline.json",
+    "sha256": "9cd3390f6dfbdd473ec778586049ce7f2694ee0c6152844af5b4ad8c9fade9cd"
+  },
+  "validation": {
+    "path": "/private/tmp/cmm-round87-minerals-research/named-validation.log",
+    "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e"
+  },
+  "source_followup": {
+    "path": "/private/tmp/cmm-round87-simonkolleite-source-followup.md",
+    "sha256": "1ea18f04eb18663b9c2d170b89f5923c6d1a4034dabd7b50fe888555b53d70bd",
+    "disposition": "Draft provided to parent for deduplicated issue publication; no external posting by curator."
+  },
+  "schema_assessment": "Existing material_kind mineral, explicit microbial:false and process other support the actual evidence; no schema/validator change demonstrated.",
+  "review_handoff": "Independent review by frontier agent after native inspect; root owns whole-batch gates. This source investigation is not a saved scientific acceptance.",
+  "limitations": [
+    "No separate supplement announced in the inspected original PDF/JATS; the publisher landing itself returned403, so no exhaustive online supplement-availability claim.",
+    "No microbial transformation is established by the accepted experiment. Antibacterial/coating application search results do not supply that missing mechanism.",
+    "Parahopeite remains a bounded deferred candidate; no general exhaustion claim.",
+    "Scientific source contradictions remain visible in the owner and issue draft; no density conversion, phase-purity percentage, zinc recovery yield or industrial deployment is inferred."
+  ]
+}

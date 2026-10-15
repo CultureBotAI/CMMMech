@@ -1,0 +1,108 @@
+{
+  "at": "2026-10-15T03:48:40.494920+00:00",
+  "passed": true,
+  "cases": [
+    {
+      "name": "clean_current_manifest",
+      "expected_accept": true,
+      "passed": true,
+      "resolved_occurrences": 0
+    },
+    {
+      "name": "exact_resolution",
+      "expected_accept": true,
+      "passed": true,
+      "resolved_occurrences": 1
+    },
+    {
+      "name": "transitive_resolution",
+      "expected_accept": true,
+      "passed": true,
+      "resolved_occurrences": 1
+    },
+    {
+      "name": "missing_disposition",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Earlier open finding omitted by selected final review"
+    },
+    {
+      "name": "unresolved_final",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Selected review has unresolved findings"
+    },
+    {
+      "name": "changed_stable_key",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Prior finding identity/key differs"
+    },
+    {
+      "name": "changed_occurrence_id",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Prior finding identity/key differs"
+    },
+    {
+      "name": "foreign_repository",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Unexpected external occurrence requires explicit assessment"
+    },
+    {
+      "name": "changed_target",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Prior target differs"
+    },
+    {
+      "name": "cyclic_or_unbound_chain",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Successor does not bind exact prior native bytes"
+    },
+    {
+      "name": "missing_predecessor",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Prior native occurrence missing"
+    },
+    {
+      "name": "duplicate_issue_key",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Duplicate selected stable issue key"
+    },
+    {
+      "name": "wrong_predecessor_hash",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Successor does not bind exact prior native bytes"
+    },
+    {
+      "name": "missing_predecessor_hash",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Successor does not bind exact prior native bytes"
+    },
+    {
+      "name": "missing_markdown",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Prior Markdown counterpart missing"
+    },
+    {
+      "name": "selected_final_outside_commit",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Selected review not in committed current package"
+    }
+  ],
+  "case_count": 16,
+  "source": "/private/tmp/cmm_round87_peer_checks.py",
+  "source_sha256": "2b604b672732057f211aa8cf183785532838578c4964f11b1c4bf4388a624867",
+  "fixture_source": "/private/tmp/cmm-round87-lineage-fixtures.py",
+  "fixture_sha256": "8140747dcab218f82a50fb7056600bf6ea8f05bf39b83d03f4775d76986f2d3d",
+  "scope": "Actual verify_native_lineage AST extracted without top-level helper execution; temporary synthetic files only. Does not exercise hosted APIs or imply publication acceptance."
+}

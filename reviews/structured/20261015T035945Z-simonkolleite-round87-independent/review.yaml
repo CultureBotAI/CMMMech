@@ -1,0 +1,355 @@
+schema_version: 1.0.0
+review_id: 20261015T035945Z-simonkolleite-round87-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of simonkolleite
+started_at: '2026-10-15T03:53:08.438519Z'
+finished_at: '2026-10-15T03:59:45.432343Z'
+reviewer:
+  identity: codex /root/round68_new_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer authored secondary-aluminium-dross, not simonkolleite
+    owner/history/dossier. Curator-acquired sources are shared, but complete originals
+    and all claim-bearing figures/tables and authorities were independently assessed
+    after native inspection. No laboratory replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of distinct simonkolleite identity, abiotic purchased-Zn
+  precipitation and separate thermal phase transformation, retaining source inconsistencies
+  and limits on purity, causality and recovery.
+source:
+  git_revision: 9deef8843b7efcf2dd2586c2a13f47b72231e336
+  state: working_tree
+  inputs:
+  - path: data/records/simonkolleite.yaml
+    sha256: 13efe05b52e50e21a5ad1dae6b131b6723ee8248676dcce93d72d87aa2b495b9
+    role: target
+  - path: history/records/simonkolleite/2026-10-15T035130Z-codex-bd84c9.yaml
+    sha256: e7064d555fa000f4f6d8cfe3c9297e32410b613875efcd695026bfb0a072a443
+    role: context
+scope:
+  description: Whole exact maintained record, canonical CREATE and original evidence
+    supporting both abiotic mechanisms.
+  selection: Assigned single canonical record captured through native inspect before
+    judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:simonkolleite
+targets:
+- target_id: cmmmech:simonkolleite
+  path: data/records/simonkolleite.yaml
+  label: Simonkolleite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/simonkolleite.yaml
+    role: maintained scientific record
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/simonkolleite.yaml --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual one record and zero failures.
+  target_ids:
+  - cmmmech:simonkolleite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch gate 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal coordinator gate verified; not an independent duplicate
+    run.
+  target_ids:
+  - cmmmech:simonkolleite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal coordinator gate verified; not an independent duplicate
+    run.
+  target_ids:
+  - cmmmech:simonkolleite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch gate 3
+  command: uv run --locked cmmmech validate-history --base 9deef8843b7efcf2dd2586c2a13f47b72231e336
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal coordinator gate verified; not an independent duplicate
+    run.
+  target_ids:
+  - cmmmech:simonkolleite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal coordinator gate verified; not an independent duplicate
+    run.
+  target_ids:
+  - cmmmech:simonkolleite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/simonkolleite.yaml
+  locator: 'Whole input captured by native inspect before judgment. Actual local artifact:
+    /private/tmp/CMMMech-expansion-round87-20261015/data/records/simonkolleite.yaml'
+  accessed_at: '2026-10-15T03:59:45.432343Z'
+  support: supports
+  summary: Exact owner and canonical CREATE bytes, target, actor and distinct inline
+    event verified; reviewer made no owner edits.
+  snapshot_sha256: 13efe05b52e50e21a5ad1dae6b131b6723ee8248676dcce93d72d87aa2b495b9
+- evidence_id: history
+  kind: record_content
+  reference: history/records/simonkolleite/2026-10-15T035130Z-codex-bd84c9.yaml
+  locator: 'Whole input captured by native inspect before judgment. Actual local artifact:
+    /private/tmp/CMMMech-expansion-round87-20261015/history/records/simonkolleite/2026-10-15T035130Z-codex-bd84c9.yaml'
+  accessed_at: '2026-10-15T03:59:45.432343Z'
+  support: supports
+  summary: Exact owner and canonical CREATE bytes, target, actor and distinct inline
+    event verified; reviewer made no owner edits.
+  snapshot_sha256: e7064d555fa000f4f6d8cfe3c9297e32410b613875efcd695026bfb0a072a443
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1039/d3na00108c
+  locator: 'Complete published-version original with repository cover: 17 PDF pages,
+    article pages 2–17. All Figures 1–16 and Table 1 visually inspected. Methods/Table
+    1 PDF 4–5; phase Figure 4 PDF 6; time series Figures 8–10 PDF 8–11; thermal Figures
+    13–16 PDF 12–14. Actual local artifact: /private/tmp/cmm-round87-minerals-research/simonkolleite2023.pdf'
+  accessed_at: '2026-10-15T03:59:45.432343Z'
+  support: supports
+  summary: Original text and all claim-bearing graphics support qualified abiotic
+    precipitation and thermal transformation. Purchased grains, recipe/sample conflicts,
+    no day 1 precipitate at 40%, morphology versus phase/purity, and thermal residue
+    denominator are accurately retained.
+  snapshot_sha256: 54c0e0eae009ecf769acb2447cf6a7772b02b562a2b37e934d8431108f062c00
+- evidence_id: jats
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10153477/fullTextXML
+  locator: 'Official full-text JATS, source identity and supplementary-material nodes
+    inspected; this is the same original study. Actual local artifact: /private/tmp/cmm-round87-minerals-research/simonkolleite2023.xml'
+  accessed_at: '2026-10-15T03:59:45.432343Z'
+  support: context_only
+  summary: The XML corroborates the original methods and labelled figure scope. It
+    is not an independent experiment; no separate SI document is announced in the
+    inspected complete originals.
+  snapshot_sha256: 297c9a200e88e9f3e8fae678dfdcdd8c21a0fa3405670db3b851760f676a160a
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'September 2026 list definitions PDF 1 and exact Simonkolleite row PDF
+    200 visually inspected. Actual local artifact: /private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf'
+  accessed_at: '2026-10-15T03:59:45.432343Z'
+  support: context_only
+  summary: Approved A/1983-019, ideal Zn5(OH)8Cl2.H2O. Mineral identity does not imply
+    synthetic sample purity, microbial origin or criticality.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://handbookofmineralogy.org/pdfs/simonkolleite.pdf
+  locator: 'Complete single-page entry, printed 511, original graphic independently
+    inspected. Actual local artifact: /private/tmp/cmm-round87-minerals-research/simonkolleite-handbook.pdf'
+  accessed_at: '2026-10-15T03:59:45.432343Z'
+  support: context_only
+  summary: Formula, crystal data and weathering of zinc-bearing slag at Richelsdorf
+    support mineral identity; they do not convert the purchased-feed experiment into
+    waste recycling.
+  snapshot_sha256: dee993d5df82d744662930ad3d5271aa2667809fe27f8860b382d193fcd64890
+- evidence_id: cod
+  kind: database
+  reference: https://www.crystallography.net/cod/9004683.cif
+  locator: 'CIF data 9004683, mineral name, publication DOI 10.3749/gscanmin.40.3.939
+    and source title inspected. Actual local artifact: /private/tmp/cmm-round87-minerals-research/cod9004683.cif'
+  accessed_at: '2026-10-15T03:59:45.432343Z'
+  support: context_only
+  summary: The exact reference label used in Figure 4 resolves to a simonkolleite
+    structural entry. Formula is grounded to IMA/Handbook; no experimental purity
+    or yield is inferred from this reference pattern.
+  snapshot_sha256: f54be79f6bbb0599b4703ca16cb3b84f5fe9d7d1bf5c0d53fc148bcf3df9cbc5
+- evidence_id: assessment
+  kind: search
+  reference: /private/tmp/cmm-round87-simonkolleite-review/evidence-assessment.json
+  locator: 'Two exact DOI/title correction/supplement web queries plus current source
+    metadata and original-source inspection. Actual local artifact: /private/tmp/cmm-round87-simonkolleite-review/evidence-assessment.json'
+  accessed_at: '2026-10-15T03:59:45.432343Z'
+  support: context_only
+  summary: No separate formal correction surfaced within inspected first-result sets.
+    Direct publisher HTML open failed, but complete repository published-version PDF
+    was inspected. No exhaustive absence claim.
+  snapshot_sha256: 5fc9d57bfc802852d8c66229b7895e073b1b3f4815fbaaaacf76a0c50b4c4f82
+  search_scope: Bounded web searches recorded verbatim in the artifact; local material/DOI
+    query used rg --no-ignore --hidden -L over data/records,research,reviews,history;
+    curator referenced-download bounds separately assessed.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round87-simonkolleite-review/dedup.txt
+  locator: 'Hidden/ignored and relevant symlink-inclusive material/DOI query, actual
+    command and bounds in evidence-assessment.json. Actual local artifact: /private/tmp/cmm-round87-simonkolleite-review/dedup.txt'
+  accessed_at: '2026-10-15T03:59:45.432343Z'
+  support: context_only
+  summary: Current distinct owner and source dossier occurrences were assessed; related
+    zincite, hydrozincite and zinc records are not interchangeable with this species.
+  snapshot_sha256: 80e61d093200c46bfe2f3c2e9da18ee70cce9ed55e030e392c254f92002610fb
+  search_scope: rg --no-ignore --hidden -L -ni with simonkolleite and exact DOI over
+    data/records,research,reviews,history; bounded current checkout, not machine-wide.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round87-simonkolleite-review/named-validation.json
+  locator: 'Actual independent named command 2026-10-15T03:54:16.761841+00:00 to 2026-10-15T03:54:22.575912+00:00;
+    log /private/tmp/cmm-round87-simonkolleite-review/named-validation.log SHA256
+    6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e. Actual local
+    artifact: /private/tmp/cmm-round87-simonkolleite-review/named-validation.json'
+  accessed_at: '2026-10-15T03:59:45.432343Z'
+  support: supports
+  summary: One record, zero failures; actual exit0 and retained log verified.
+  snapshot_sha256: d039f32167ee70fe5fcfeea8652f83ed217d74b8315a437b94dae2436d1e15e4
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round87-final-gates.json
+  locator: 'Actual FOUR coordinator commands 2026-10-15T03:53:37.426856+00:00 to 2026-10-15T03:59:28.557512+00:00;
+    log /private/tmp/cmm-round87-final-gates.log SHA256 a8afdbc30428c1a0e44c20c1ae7de706d1dc20a3549a39917a1b697b5b0faad7.
+    Actual local artifact: /private/tmp/cmm-round87-final-gates.json'
+  accessed_at: '2026-10-15T03:59:45.432343Z'
+  support: supports
+  summary: Verified exact commands, base/worktree, terminal outcomes, log bytes and
+    unchanged owner inputs; no claimed independent rerun.
+  snapshot_sha256: 44a4c7f881c6e50b617e8d9df7c1abf51c1f149bcdeaba1625be12a62721a962
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species, analogue and feed identity
+  outcome: supported
+  summary: Mineral formula/IMA number agree with authorities. Synthetic analogue from
+    purchased 99.8% Zn grains remains distinct from natural slag occurrence, zinc
+    metal, zincite and hydrozincite. Introductory scrap wording is explicitly contradicted
+    by Methods.
+  target_ids:
+  - cmmmech:simonkolleite
+  evidence_ids:
+  - owner
+  - primary
+  - ima
+  - handbook
+  - cod
+- assessment_id: conditions
+  area: evidence
+  topic: Biological status, arm boundaries and controls
+  outcome: supported
+  summary: Both mechanisms are abiotic. The 40°C, 3 g/15 mL series and 160°C, 2 g/10
+    mL autoclave arm stay separate; Table 1 grams are not converted to volumes. Day2/day
+    10 results are not silently inserted into the listed grid. No matched reagent-free/pH
+    controls or synthesis-replicate count is asserted; n=200 is crystal measurement.
+  target_ids:
+  - cmmmech:simonkolleite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: phase
+  area: evidence
+  topic: Observed phases and morphology versus proposed pathways
+  outcome: supported
+  summary: Ten-day 10%XRD and SEM support a source-assigned simonkolleite product.
+    Precursor complexation, Ostwald ripening and oriented attachment are inferred,
+    not isolated causal mechanisms. No recoverable 40% precipitate on day 1 is preserved;
+    both series aggregate by day 15.
+  target_ids:
+  - cmmmech:simonkolleite
+  evidence_ids:
+  - owner
+  - primary
+  - cod
+- assessment_id: thermal
+  area: quantity
+  topic: Thermal conversion and mass denominator
+  outcome: supported
+  summary: Figure 14 shows staged phase change through chloride-bearing intermediate
+    to ZnO-assigned diffraction at 600°C, not quantified full conversion. Figure 13
+    is a different 15-day synthesis than Figure 14 ten-day sample. About 67% is remaining
+    thermal mass, not feed-Zn recovery. The 800/900°C conflict and unmeasured gas
+    paths remain explicit.
+  target_ids:
+  - cmmmech:simonkolleite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: scope
+  area: scope
+  topic: Criticality, purity and deployment
+  outcome: supported
+  summary: No jurisdiction/list criticality is asserted. Washing-dependent mass loss
+    limits purity; no overall Zn balance, isolated recovery efficiency, microbial
+    activity, waste-recycling operation or industrial deployment follows from this
+    chemical demonstration.
+  target_ids:
+  - cmmmech:simonkolleite
+  evidence_ids:
+  - owner
+  - primary
+  - ima
+- assessment_id: provenance
+  area: provenance
+  topic: Exact reviewed bytes, history and checks
+  outcome: supported
+  summary: Native inspect precedes judgment; exact owner/CREATE are unchanged, actual
+    GPT-6/codex metadata is coherent, and independent named plus completed four-command
+    coordinator gates passed. Every source evidence row binds a nonempty inspected
+    artifact.
+  target_ids:
+  - cmmmech:simonkolleite
+  evidence_ids:
+  - owner
+  - history
+  - named
+  - batch
+  - assessment
+  - dedup
+findings: []
+actions: []
+limitations:
+- Source methods/table/results conflict in volumes versus masses, run times, room-temperature
+  heading versus 40°C and 800 versus 900°C thermal endpoint. These are disclosed source
+  limitations, not repaired measurements.
+- No complete Zn balance, quantified purity, matched causal controls or independent
+  synthesis replicate count; n=200 measures crystals.
+- Morphological and gas-release pathways are interpretations; no evolved-gas assay
+  or intervention establishes them uniquely.
+- No separate SI document is announced in inspected complete original/JATS; the supplemental-assets
+  route contains main figures. Bounded notice searches are not exhaustive.
+- Scientific assessment is not laboratory replication, and structural validation does
+  not prove truth.
+notes:
+- Source clarification https://github.com/CultureBotAI/CMMMech/issues/299 remains
+  open; it records unresolved original protocol questions already qualified in the
+  owner, not a corrective native finding.
+- No owner/history or saved native review was changed by this reviewer.
+- All source digests bind actual nonempty files. The complete PDF is 17 pages including
+  repository cover; article itself is 16 pages.
+- The first unsaved saver attempt rejected a duplicated owner evidence ID in the provenance
+  assessment. Exact rejected input and error are retained externally; IDs were deduplicated
+  before the sole saved bundle, with science and inspected owner/history bytes unchanged.

@@ -1,0 +1,91 @@
+{
+  "timestamp": "2026-10-15T03:53:25.612097Z",
+  "reviewer": "codex /root/round68_iron_sulfides",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "unresolved_corrective_findings": 0,
+  "scope": "Independent source-diff and actual-AST verification of external hosted helper and manifest builder; no top-level execution, Git/GH mutations or publication acceptance.",
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round87-hosted-peer.py",
+      "sha256": "1f718c777b55057a78413164d96f5f5c8c38385a0609b90573915db7a1208e6f"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-hosted-static-initial-20261015T034920Z-peer_checks.py",
+      "sha256": "2b604b672732057f211aa8cf183785532838578c4964f11b1c4bf4388a624867"
+    },
+    {
+      "path": "/private/tmp/cmm_round87_peer_checks.py",
+      "sha256": "5d9fc844507d96693d5b3b8e9092b698248ea06cb339de2076e37160fed10fe1"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-hosted-static-expanded-20261015T035023Z-build-manifest.py",
+      "sha256": "b2564ee3e322b0f92e0331594e24a615e240202df01f0a23b30fadcd7b794251"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-build-manifest.py",
+      "sha256": "f254392f50592cc4eb94c0193e41dd7b99d2ca7b6a7b5c8df721529698f21d93"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-hosted-lineage-correction.json",
+      "sha256": "b0c9ade9d3ce396c6adab8448fb985f4755ac1c3ac23eccd0a3cefe59e67facb"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-builder-status-correction.json",
+      "sha256": "bd62ff6572ccf77a97f9774277d217aabb34fb1f6fc4c3207a60716f53bd9f5c"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-hp1-posted.json",
+      "sha256": "0ccde25a570a61631c5d232a85ddc493683fe8c91dcd818c7ccfac4b39cee9a4"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-lineage-fixtures-corrected.py",
+      "sha256": "c1da9615031f872ccf9fc64f086423706c99793c9c0333cea1248cfd0f3edc0d"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-lineage-fixtures-corrected.json",
+      "sha256": "da3d6bb920f730f36f8f0a27e4255f86e604d2b1c63954a5f4128f97c2e38b4e"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-lineage-peer-run-20261015T035237Z.json",
+      "sha256": "f68807ef55f5c3d0d3ee0f50ea809fdc79878c50d0e7bdc989de3d5e4b079f40"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-builder-status-peer-fixtures.json",
+      "sha256": "7a859ba5fd34d66815a89029b6a34da29f13666500f0b5982f2c3a67e8fd8d97"
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "HP1",
+      "issue_key": "round87-hosted-native-finding-status",
+      "severity": "minor",
+      "status": "resolved",
+      "external_issue": "https://github.com/CultureBotAI/CMMMech/issues/298",
+      "previous_occurrences": [
+        {
+          "path": "/private/tmp/cmm-round87-hosted-static-initial-20261015T034920Z.json",
+          "sha256": "f665037043d422bd71642dcb75dfd82dca172c09d32e7c7709fc436735d5489e"
+        },
+        {
+          "path": "/private/tmp/cmm-round87-hosted-static-expanded-20261015T035023Z.json",
+          "sha256": "84abb9116ff54c4f708d7161ec8468a471fe126f2ef86054a9884e95e8001948"
+        }
+      ],
+      "disposition": "Both actual selectors now admit resolved/rejected and reject unsupported or unresolved dispositions. Hosted final-finding whitelist is explicit, including when no current predecessor is selected. Full native lineage/hash checks remain. The reviewer independently reran19 actual-AST lineage cases and six actual builder-predicate cases;25/25 passed."
+    }
+  ],
+  "tests": {
+    "lineage_cases": 19,
+    "builder_status_cases": 6,
+    "total": 25,
+    "passed": 25,
+    "no_top_level_execution": true
+  },
+  "timing_note": "A follow-up concern about the final-finding guard came from the earlier source view. Rereading current SHA5d9fc844 confirmed it was already corrected; concern withdrawn, no second code defect or fabricated issue. Initial module line-number53 typo is corrected to50 in the expanded immutable occurrence.",
+  "limitations": [
+    "Runtime package/config/issues and actual exact-head CI/preflight do not exist yet and remain future gates.",
+    "No scientific owner/review was altered or independently accepted by this operational audit.",
+    "The stricter publication policy excludes accepted_risk despite its native schema validity; the rule is explicit and fixtures reject it."
+  ]
+}

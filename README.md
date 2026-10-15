@@ -8,13 +8,16 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 414 material records.
+The catalogue currently contains 417 material records.
 
-The [latest curation report](research/ingests/round86-frontier-20261015.md) links
+The [latest curation report](research/ingests/round87-frontier-20261015.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Alabandite](data/records/alabandite.yaml) | Bacterial biomass flotation of a characterized mixed ore | Mineral fractions are not recovery yields; no demonstrated overall improvement |
+| [Secondary aluminium dross](data/records/secondary-aluminium-dross.yaml) | Abiotic roasting and caustic extraction of real plant residue | Conflicting recipes and a solid-balance estimate; no isolated alumina yield |
+| [Simonkolleite](data/records/simonkolleite.yaml) | Abiotic synthesis from zinc metal and thermal transformation | Purchased feed, conflicting run descriptions and no recovered-zinc yield |
 | [Churchite-(Y)](data/records/churchite-y.yaml) | Abiotic synthesis and ion-induced loss of crystalline order | Synthetic material, modeled dose and untested retention or recovery performance |
 | [Hemimorphite](data/records/hemimorphite.yaml) | Abiotic mineral leaching and a microbial-associated precursor | Poorly ordered precursor is not confirmed crystalline hemimorphite |
 | [Heterogenite](data/records/heterogenite.yaml) | Abiotic leaching of a characterized mixed cobalt ore | Bulk cobalt dissolution is not a mineral-specific recovery yield |

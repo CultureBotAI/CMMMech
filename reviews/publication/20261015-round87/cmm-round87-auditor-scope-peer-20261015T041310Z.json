@@ -1,0 +1,74 @@
+{
+  "timestamp": "2026-10-15T04:13:10.508150Z",
+  "reviewer": "codex /root/round68_iron_sulfides",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "unresolved_corrective_findings": 0,
+  "scope": "Independent bounded successor assessment of operational auditor-only false positive A1; no full package audit execution or scientific record change.",
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round87-auditor-scope-initial-20261015T041052Z.json",
+      "sha256": "5260a5c8370a996a00e9743dd4a54f3e3fbf7173d6946b4c3da2880e48d86c1e"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-final-package-audit.py",
+      "sha256": "9c8c6495e9e14f0c4fe34f8541d3a49e3379f86d956ba6d60cbb2b1f3858b793"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-final-package-audit-runtime.log",
+      "sha256": "4e1997d2edbaf69f1acc8904d3a2ecfb708883fa1a649e3fd300f455093e1d32"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-final-package-audit-scoped.py",
+      "sha256": "7c7cf885302b87b3b70743aa90edd88dd83fbd836a8f198e49307c72b02e9ce3"
+    },
+    {
+      "path": "/private/tmp/cmm_round87_peer_checks.py",
+      "sha256": "5d9fc844507d96693d5b3b8e9092b698248ea06cb339de2076e37160fed10fe1"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-final-auditor-scope-bound.diff",
+      "sha256": "46bce65f752f0d0d45ac9f64b7f83a21fb724e1bca48f8404cf08d950864b920"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-final-auditor-scope-fixtures-bound.json",
+      "sha256": "5a347816a778407eaa8b477dc414b2008263f5d3a6604da6cac2fe874a4741e0"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-auditor-scope-independent-fixtures.py",
+      "sha256": "c72985c34bd5b3f1aecf34e5eb20e17af0047a169419290d09a0c3bf1996db55"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-auditor-scope-independent-fixtures-20261015T041232Z.json",
+      "sha256": "bf0bfa2e7d0b58e53d913cb9bdeaf3648cc168b3335c87db582576b19f4749bd"
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "A1",
+      "issue_key": "round87-final-auditor-native-status-scope",
+      "severity": "minor",
+      "status": "resolved",
+      "external_issue": "https://github.com/CultureBotAI/CMMMech/issues/298",
+      "previous_occurrences": [
+        {
+          "path": "/private/tmp/cmm-round87-auditor-scope-initial-20261015T041052Z.json",
+          "sha256": "5260a5c8370a996a00e9743dd4a54f3e3fbf7173d6946b4c3da2880e48d86c1e"
+        }
+      ],
+      "disposition": "Exact original failure came from an unrelated GitHub non-dismissed review-state message. Scoped successor parses only verify_native_lineage and requires exactly two actual f[status] membership predicates with resolved/rejected literal tuples. Complete original-to-successor diff changes this guard and explicit A1 output/evidence accounting only. Both native guards remain unchanged and correct. Six author actual-AST cases and ten independently executed actual-predicate cases pass, including unrelated dismissed text accepted and invalid statuses/missing predicates rejected."
+    }
+  ],
+  "checks": {
+    "original_and_failed_log_preserved": true,
+    "exact_diff_verified": true,
+    "author_focused_cases": 6,
+    "independently_executed_actual_ast_cases": 10,
+    "top_level_auditor_executed": false
+  },
+  "prior_review_disclosure": "My earlier static PASS on original auditor SHA9c8c6495 did not detect this overly broad substring check. That observation remains immutable and is superseded for this specific guard by this supported runtime finding and independent correction assessment.",
+  "limitations": [
+    "Static/dedicated-predicate disposition does not constitute final package runtime acceptance. Coordinator must retain listed exact external artifacts before successor runtime; its new binding block fails closed if any are missing.",
+    "No native scientific finding/history event or count/issue-role change is warranted for this auditor-only correction. No Git/GitHub mutation or full validation rerun occurred."
+  ]
+}

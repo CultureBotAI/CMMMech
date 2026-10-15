@@ -1,0 +1,20 @@
+Title: Clarify the Qu2023 simonkolleite run inventory, solution units and thermal protocol
+
+The new simonkolleite record can retain the narrowly supported abiotic phase observations from Qu et al. (2023), DOI [10.1039/D3NA00108C](https://doi.org/10.1039/d3na00108c), while leaving the following reproducibility questions open. This is an upstream source-clarification task, not evidence that the current qualified record is incorrect.
+
+The complete published-version article was acquired from [White Rose](https://eprints.whiterose.ac.uk/197511/1/d3na00108c.pdf), 17 PDF pages including a repository cover, SHA256 `54c0e0eae009ecf769acb2447cf6a7772b02b562a2b37e934d8431108f062c00`. The official full JATS at [Europe PMC](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10153477/fullTextXML), SHA256 `297c9a200e88e9f3e8fae678dfdcdd8c21a0fa3405670db3b851760f676a160a`, corroborates the wording. All main Figures 1–16 and Table 1 were inspected. The Europe PMC supplementaryFiles archive contains main figure images, not a separate methods supplement; no separate SI was announced in the inspected article. This is a bounded access assessment, not a claim that additional author data cannot exist.
+
+Confirmed discrepancies:
+
+- Methods give 15 mL solution for the 40 °C experiments and 10 mL for the 160 °C arm, while Table 1 labels those same entries as grams (repository PDF page 4). No density allowing these to be equated is supplied. The section heading also says room temperature while the actual setting is 40 °C.
+- Methods/Table 1 list 1, 3, 5, 7 and 15 days. Figures 4–5 and 14 instead use a ten-day 10% product; Figure 9 starts with a two-day 40% sample after the stated one-day nonprecipitation result (PDF pages 4, 6, 9–10 and 13). These may be additional runs, but their provenance is not documented in the listed matrix.
+- Characterisation Methods specify TGA to 800 °C, whereas Results, Figure 13 and the Figure 14a axis use 900 °C (PDF pages 5 and 11–13). The Figure 13 morphology sample is labelled 15-day synthesis, while Figure 14 uses a ten-day product. Staged 100/250/400/600 °C runs lack separately specified hold/ramp details.
+- Introduction describes scrap zinc, but Methods specify purchased 99.8% zinc grains; the Conclusion additionally says oxidation of ZnO despite the metal feed in Methods (PDF pages 4 and 14). No real-scrap processing claim should be inferred.
+
+Acceptance criteria:
+
+1. Locate a published correction, deposited run log, supplementary protocol or other attributable primary clarification that maps each figure to its synthesis run, feed provenance, solution amount/unit, concentration, duration and heating program. Do not silently normalize conflicting units or assume that the ten-day and fifteen-day samples are identical.
+2. Verify any clarification against the original figure/data identifiers, retain its source/version/access date and hashes, and preserve the original account in the dossier.
+3. Reassess only the affected record fields through a new canonical EDIT and independent scientific successor if the clarification warrants a change. Until then retain the stated uncertainties; do not convert thermal residue mass or diffraction-peak disappearance into zinc recovery yield or quantitative phase purity.
+
+Deduplication: the current round87 all-state issue inventory was checked by material name and DOI with no matching issue found. Maintained records/research/reviews/history in both the isolated worktree and original checkout were searched with hidden and ignored files included and relevant symlinks followed, together with the cited round76/79/85/86 and round29 raw roots. Prior simonkolleite content was a deferred round86 source lead, not an accepted owner of this experiment.
