@@ -1,0 +1,254 @@
+schema_version: 1.0.0
+review_id: 20261015T104245Z-corkite-round93-acquisition-count-initial
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent corkite initial acquisition-count finding
+started_at: '2026-10-15T10:34:55.110931Z'
+finished_at: '2026-10-15T10:42:45.655506Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Iron-sulfides agent authored corkite; reviewer authored separate
+    lithium phosphate owners and has not edited corkite. Native inspect preceded assessment;
+    author subsequently confirmed no alternate successful download.
+skill: .claude/skills/review-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: One minor provenance overstatement:23of24 announced dataset files were acquired,
+  not24. The original and successful refinement data support the narrow science; final
+  corrected-owner acceptance remains pending.
+source:
+  git_revision: e0bffe8eb1c6e359f35d9c52c74a95a4efdc2b9d
+  state: working_tree
+  inputs:
+  - path: data/records/corkite.yaml
+    sha256: cea8fbcca0aac128e0626704539c0191450e98e598b0a52434c1b09a106be6db
+    role: target
+  - path: history/records/corkite/2026-10-15T103309Z-codex-16a298.yaml
+    sha256: df0be1bb78c51caa7f3eed824d0f754b670f1c236d314d4823c020ecb5a452d7
+    role: context
+  - path: research/sources/round93-sulfates/20261015T103631Z-source-investigation.json
+    sha256: dcaf5a3c96534b2a5568228e07013ed323aa8edf4dee3f044f850edc94d185b9
+    role: context
+  - path: research/sources/round93-sulfates/20261015T103631Z-source-investigation.md
+    sha256: 5fd5c217f4d63e92f866c461095be813e08153b59602b14b852ec342d3b71054
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:corkite
+  path: data/records/corkite.yaml
+  label: Corkite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/corkite.yaml
+    role: maintained_record
+scope:
+  description: Scoped initial acquisition-provenance observation for corkite and its
+    directly accompanying dossier, preserving frozen owner bytes before author correction.
+  selection: Explicit root-assigned corkite target.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:corkite
+checks:
+- check_id: named
+  name: Actual named record validation
+  required: true
+  status: passed
+  summary: Checked1record;0failed.
+  command: uv run --locked cmmmech validate --require-records data/records/corkite.yaml
+  exit_code: 0
+  target_ids:
+  - cmmmech:corkite
+  evidence_ids:
+  - validation
+- check_id: batch0
+  name: Actual root batch command
+  required: true
+  status: passed
+  summary: Completed before correction; structural success does not resolve the acquisition-count
+    finding.
+  command: just check
+  exit_code: 0
+  target_ids:
+  - cmmmech:corkite
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Actual root batch command
+  required: true
+  status: passed
+  summary: Completed before correction; structural success does not resolve the acquisition-count
+    finding.
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  target_ids:
+  - cmmmech:corkite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Actual root batch command
+  required: true
+  status: passed
+  summary: Completed before correction; structural success does not resolve the acquisition-count
+    finding.
+  command: uv run --locked cmmmech validate-history --base e0bffe8eb1c6e359f35d9c52c74a95a4efdc2b9d
+  exit_code: 0
+  target_ids:
+  - cmmmech:corkite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Actual root batch command
+  required: true
+  status: passed
+  summary: Completed before correction; structural success does not resolve the acquisition-count
+    finding.
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  target_ids:
+  - cmmmech:corkite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/corkite.yaml
+  locator: sources[id=ferrenti_dataset].title
+  accessed_at: '2026-10-15T10:42:45.655506Z'
+  support: supports
+  summary: Claims all24 distinct linked files were acquired.
+  snapshot_sha256: cea8fbcca0aac128e0626704539c0191450e98e598b0a52434c1b09a106be6db
+- evidence_id: requests
+  kind: primary_source
+  reference: https://doi.org/10.34863/pq8p-sj50
+  locator: Actual acquisition receipt /private/tmp/cmm-round93-sulfates-research/acquisition-dataset-files.json;
+    24 request entries,23 successful files and one404.
+  accessed_at: '2026-10-15T10:42:45.655506Z'
+  support: supports
+  summary: The requested Undried_corkite_Raman.ngs failed; all23 successful files
+    exist and match their source hashes.
+  snapshot_sha256: b94b0735b1fa67514e6680244874b8a0a9c37e6cc4654cf6e93cd16a9909cc8e
+- evidence_id: landing
+  kind: primary_source
+  reference: https://doi.org/10.34863/pq8p-sj50
+  locator: Actual public dataset landing /private/tmp/cmm-round93-sulfates-research/corkite-dataset-landing.html;
+    Figure2 Undried_corkite_Raman.ngs link.
+  accessed_at: '2026-10-15T10:42:45.655506Z'
+  support: supports
+  summary: The failed link is an announced raw file, not an acquired artifact. Its
+    text counterpart and the two Fe refinement files were acquired.
+  snapshot_sha256: 17bc626da46641c900f5487a045f31b137706f619474d6d2a50aaf50ca036400
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round93-sulfates/20261015T103631Z-source-investigation.json
+  locator: assessment.corkite_dataset; paired Markdown acquisition paragraph repeats
+    the count.
+  accessed_at: '2026-10-15T10:42:45.655506Z'
+  support: supports
+  summary: The report repeats24 successful downloads, although its accepted-artifact
+    entries themselves only contain successful bytes.
+  snapshot_sha256: dcaf5a3c96534b2a5568228e07013ed323aa8edf4dee3f044f850edc94d185b9
+- evidence_id: validation
+  kind: validation
+  reference: Actual reviewer named validation
+  locator: /private/tmp/cmm-round93-corkite-independent/named-validation.log
+  accessed_at: '2026-10-15T10:42:45.655506Z'
+  support: supports
+  summary: Actual completed named check passed before the scoped finding was saved.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: batch
+  kind: validation
+  reference: Root actual initial round93 batch gates
+  locator: /private/tmp/cmm-round93-initial-gates.json; log /private/tmp/cmm-round93-initial-gates.log
+    SHA256 93e8686db07b65d1fd2c5c636df051e0e00707251abae92a4ebc65c23b745d11
+  accessed_at: '2026-10-15T10:42:45.655506Z'
+  support: supports
+  summary: Completed original-owner batch; all four commands exited0. Scientific correction
+    is still pending.
+  snapshot_sha256: 62efc465f83b93012e3be8c6a1c2e57104ad45e459a7696ced9b53cef26464ea
+assessments:
+- assessment_id: acquisition
+  area: provenance
+  topic: Successful-source acquisition accounting
+  outcome: concern
+  summary: A failed raw-file request was counted as a successful acquired file; the
+    limitation must be explicit.
+  target_ids:
+  - cmmmech:corkite
+  evidence_ids:
+  - owner
+  - requests
+  - landing
+  - dossier
+findings:
+- finding_id: F1
+  issue_key: cmmmech.corkite.round93.dataset-acquisition-count
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Report23 successful dataset files and one failed link
+  description: The source title and report say all24 distinct linked files were acquired.
+    The actual request inventory has23 successful files and HTTP404 for Figure2/Undried_corkite_Raman.ngs;
+    no alternate acquisition exists. Narrow the acquired count, explicitly disclose
+    the missing proprietary file, and preserve the original failed receipt. The text
+    Raman data and claim-bearing main graphics remain available; this does not change
+    the mineral identity or demonstrated experimental results.
+  target_ids:
+  - cmmmech:corkite
+  field_paths:
+  - sources[3].title
+  - research/sources/round93-sulfates/20261015T103631Z-source-investigation.json:assessment.corkite_dataset
+  - research/sources/round93-sulfates/20261015T103631Z-source-investigation.md:acquisition
+    paragraph
+  evidence_ids:
+  - owner
+  - requests
+  - landing
+  - dossier
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/corkite.yaml
+    role: maintained_record
+  rule_id: actual-acquisition-not-request-count
+  native_severity: minor
+  normalization_reason: Bounded source-access accounting defect; no unsupported transformation
+    result or identity change was found.
+actions:
+- action_id: A1
+  description: Correct owner acquisition wording, append canonical EDIT/inline provenance,
+    and retain an explicit dossier correction addendum and exact successor review.
+  finding_ids:
+  - F1
+  target_ids:
+  - cmmmech:corkite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/corkite.yaml
+    role: maintained_record
+  acceptance_checks:
+  - Say23of24 files acquired and identify the404 Raman.ngs link without claiming it
+    was inspected.
+  - Preserve successful source hashes, original owner/review/dossier observations
+    and failed acquisition receipt.
+  - Validate changed owner/history; save exact predecessor-linked successor after
+    affected final gates.
+limitations:
+- Initial scoped finding; final corrected whole-record review and successor disposition
+  remain pending.
+- No proprietary binary reprocessing or independent refinement was performed.
+- Earlier inspect preparation used a repository URL in owner_paths; canonical repository
+  spelling was recaptured before persistence, with exact scientific bytes unchanged.
+- An unsaved YAML serialization attempt repeated a shared owner-path object using
+  anchors; the saver rejected that formatting before persistence. Re-serialized without
+  anchors; scientific inputs and findings unchanged.
+- Unsaved schema-format drafts used UTC +00:00 and, for corkite, a colon in the proposed
+  issue key; normalized to native Z timestamps and permitted key characters before
+  persistence, without changing the observation.

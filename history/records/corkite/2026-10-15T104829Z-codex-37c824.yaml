@@ -1,0 +1,24 @@
+history_version: 1
+target:
+  kind: record
+  slug: corkite
+  path: data/records/corkite.yaml
+session:
+  id: 2026-10-15T104829Z-codex-37c824
+  timestamp: '2026-10-15T10:48:29Z'
+  actors:
+  - name: codex
+    type: ai_agent
+    model: GPT-6
+    agent_tool: codex
+events:
+- type: EDIT
+  outcome: changed
+  summary: Corrected linked dataset acquisition count and missing-file scope.
+  details: The original acquisition manifest records 23 successful files and HTTP 404 for
+    Figure 2/Undried_corkite_Raman.ngs among 24 requests. Narrowed only the source access
+    statement; scientific interpretations unchanged. Preserved initial review, CREATE history
+    and original source dossier; issue 328.
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/328

@@ -1,0 +1,161 @@
+schema_version: 1.0.0
+review_id: 20261015T104230Z-lithiophilite-round93-initial-locator
+kind: record
+repository: CultureBotAI/CMMMech
+title: 'Independent lithiophilite initial review: original Table2 page locator'
+started_at: '2026-10-15T10:42:30.460725Z'
+finished_at: '2026-10-15T10:42:30.460725Z'
+reviewer:
+  identity: codex /root/round68_iron_sulfides
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Phosphates agent authored owner/history. This reviewer authored
+    separate beudantite/corkite and captured the lithium target via native inspect
+    before independent source assessment; no owner edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Preserved a confirmed minor Table2 page-locator defect. Full positive acceptance
+  awaits completed remaining assessment, correction and final batch gates.
+source:
+  git_revision: e0bffe8eb1c6e359f35d9c52c74a95a4efdc2b9d
+  state: working_tree
+  inputs:
+  - path: data/records/lithiophilite.yaml
+    sha256: 0b369fe4625037e8ed26617e42dd74f7b2af0d6eafc44eb748e675bccdf8bde4
+    role: target
+  - path: history/records/lithiophilite/2026-10-15T103105Z-codex-02555a.yaml
+    sha256: 2e0864e91e21bda823cda40c8edb8452bfee363adb8a7badf855155d067d0d0f
+    role: context
+targets:
+- target_id: cmmmech:lithiophilite
+  path: data/records/lithiophilite.yaml
+  label: Lithiophilite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lithiophilite.yaml
+    role: maintained scientific owner
+scope:
+  description: Scoped initial observation of the original Table2 locator in the Losey
+    evidence entry.
+  selection: Assigned exact frozen lithiophilite owner.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:lithiophilite
+checks:
+- check_id: source_locator
+  name: Original PDF text and image cross-check
+  required: true
+  status: passed
+  summary: Complete original text and all page contact sheets inspected; page1108/PDF4
+    directly inspected at full resolution.
+  target_ids:
+  - cmmmech:lithiophilite
+  evidence_ids:
+  - original
+  - graphic
+- check_id: final_pending
+  name: Corrected final owner and batch checks
+  required: true
+  status: unavailable
+  summary: Initial batch remains running and no corrective edit is yet authorized;
+    final positive whole-record acceptance pending.
+  target_ids:
+  - cmmmech:lithiophilite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/lithiophilite.yaml
+  locator: mechanisms[0].evidence[2].explanation; actual artifact /private/tmp/CMMMech-expansion-round93-20261015/data/records/lithiophilite.yaml
+  accessed_at: '2026-10-15T10:42:30.460725Z'
+  support: supports
+  snapshot_sha256: 0b369fe4625037e8ed26617e42dd74f7b2af0d6eafc44eb748e675bccdf8bde4
+  summary: Losey2004 Tables 1–2 are located at pages1107 and1109 in the maintained
+    explanation.
+- evidence_id: original
+  kind: primary_source
+  reference: https://doi.org/10.2113/gscanmin.42.4.1105
+  locator: Complete eleven-page original, printed page1108/PDF4 Table2 (electron-microprobe
+    results); Table1 on1107/PDF3. Actual artifact /private/tmp/cmm-round93-minerals-research/losey2004.pdf
+  accessed_at: '2026-10-15T10:42:30.460725Z'
+  support: refutes
+  snapshot_sha256: 90fa49d1d8a5ae06ae4592894c13016cf5061a4a8673189248058ce3695acb1f
+  summary: Original page1108 visibly contains Table2 and Table3; page1109 contains
+    Table4. The owner page locator for Table2 is wrong by one page, without altering
+    the scientific conclusions.
+- evidence_id: graphic
+  kind: primary_source
+  reference: https://doi.org/10.2113/gscanmin.42.4.1105
+  locator: Independent visual inspection of original PDF4 rendering; actual artifact
+    /private/tmp/cmm-round93-minerals-research/losey2004-p4.png
+  accessed_at: '2026-10-15T10:42:30.460725Z'
+  support: supports
+  snapshot_sha256: eb7c2daaedf40b62067f75084f966d035d005aab2f2eb575a924ecbee886deef
+  summary: Page heading1108 and Table2 label are directly visible.
+assessments:
+- assessment_id: locator
+  area: consistency
+  topic: Exact primary table/page location
+  outcome: concern
+  summary: Evidence exists, but the record directs the reader to the wrong printed
+    page for Table2.
+  target_ids:
+  - cmmmech:lithiophilite
+  evidence_ids:
+  - owner
+  - original
+  - graphic
+findings:
+- finding_id: F1
+  issue_key: lithiophilite-round93-losey-table2-page
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Correct the original page locator for Losey Table2
+  description: The explanation locates Tables1–2 on pages1107 and1109. Table1 is on1107,
+    but Table2 is on1108. Replace only the incorrect page locator; preserve all scientific
+    limitations and source identity.
+  target_ids:
+  - cmmmech:lithiophilite
+  field_paths:
+  - mechanisms[0].evidence[2].explanation
+  evidence_ids:
+  - owner
+  - original
+  - graphic
+  rule_id: exact-primary-locator
+  native_severity: minor
+  normalization_reason: A bounded citation-locator defect; material identity, measurements
+    and interpretation are not challenged by this finding.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lithiophilite.yaml
+    role: maintained scientific owner
+actions:
+- action_id: A1
+  description: Correct the maintained page locator, append actual inline EDIT and
+    canonical sidecar, and save an independent successor resolving this exact finding
+    after final gates.
+  finding_ids:
+  - F1
+  target_ids:
+  - cmmmech:lithiophilite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lithiophilite.yaml
+    role: maintained scientific owner
+  acceptance_checks:
+  - Table1 remains1107 and Table2 is1108 in the corrected explanation.
+  - No unrelated scientific value or limit changes.
+  - Original native observation and CREATE remain immutable; final named/history checks
+    and final batch gates pass.
+  - Successor explicitly cites this occurrence and reviewed original evidence.
+limitations:
+- Actual scoped observation interval is recorded; the broader original-reading preparation
+  started earlier without a separate exact UTC start capture.
+- Initial minor observation is not final whole-record acceptance.

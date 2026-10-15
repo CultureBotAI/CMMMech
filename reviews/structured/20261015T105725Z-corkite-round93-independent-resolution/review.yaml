@@ -1,0 +1,400 @@
+schema_version: 1.0.0
+review_id: 20261015T105725Z-corkite-round93-independent-resolution
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent corkite scientific review and acquisition-count resolution
+started_at: '2026-10-15T10:34:55.110931Z'
+finished_at: '2026-10-15T10:57:25.912420Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Iron-sulfides agent authored and corrected corkite; this reviewer
+    authored separate lithium phosphate records, did not modify corkite, and captured
+    exact native inspection before judging both original and corrected owners.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified mineral identity and abiotic mixed-powder synthesis/thermal alteration
+  are supported; F1 acquisition overstatement is explicitly resolved. Symmetry, recipe
+  scale, missing raw file, impurity and product-balance limits remain.
+source:
+  git_revision: e0bffe8eb1c6e359f35d9c52c74a95a4efdc2b9d
+  state: working_tree
+  inputs:
+  - path: data/records/corkite.yaml
+    sha256: 6ac28cbe83b7eb4fbdedb43df6e260d0d7882e7672b60899136b996d6b025326
+    role: target
+  - path: history/records/corkite/2026-10-15T103309Z-codex-16a298.yaml
+    sha256: df0be1bb78c51caa7f3eed824d0f754b670f1c236d314d4823c020ecb5a452d7
+    role: context
+  - path: history/records/corkite/2026-10-15T104829Z-codex-37c824.yaml
+    sha256: d991a7c7a21ff938d9325c2f57f4cceaf8912d713a972b2f67464ffe62a5ab6b
+    role: context
+  - path: research/sources/round93-sulfates/20261015T103631Z-source-investigation.json
+    sha256: dcaf5a3c96534b2a5568228e07013ed323aa8edf4dee3f044f850edc94d185b9
+    role: context
+  - path: research/sources/round93-sulfates/20261015T103631Z-source-investigation.md
+    sha256: 5fd5c217f4d63e92f866c461095be813e08153b59602b14b852ec342d3b71054
+    role: context
+  - path: research/sources/round93-sulfates/20261015T104946Z-corkite-acquisition-correction.json
+    sha256: 9e67585891fb7046109d0f18835c1515d0f03f08910325ac4912d887837cfb92
+    role: context
+  - path: research/sources/round93-sulfates/20261015T104946Z-corkite-acquisition-correction.md
+    sha256: e41cca6dace20f580917aaeb5612eb726ad0198e066f952c85fc17a971def2b3
+    role: context
+  - path: reviews/structured/20261015T104245Z-corkite-round93-acquisition-count-initial/review.yaml
+    sha256: b1776ad163cdeb9df3261a84cb8037eec108f1fca6c17a06ba3026eff438b58a
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:corkite
+  path: data/records/corkite.yaml
+  label: Corkite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/corkite.yaml
+    role: maintained_record
+scope:
+  description: Full final corkite record and CREATE/EDIT, original and correction
+    dossier inputs, exact initial review and all accepted claim-bearing original evidence.
+  selection: Explicit root-assigned independent corkite target.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:corkite
+checks:
+- check_id: science
+  name: Independent full original and authority assessment
+  required: true
+  status: passed
+  summary: Complete original and all Figures1–5/Tables1–4 viewed;23 successful dataset
+    hashes verified and both Fe refinement metadata read; IMA and Handbook checked.
+  target_ids:
+  - cmmmech:corkite
+  evidence_ids:
+  - primary
+  - rminus
+  - rplus
+  - ima
+  - handbook
+  - acquisition
+- check_id: named
+  name: Actual corrected named validation
+  required: true
+  status: passed
+  summary: Checked1record;0failed.
+  command: uv run --locked cmmmech validate --require-records data/records/corkite.yaml
+  exit_code: 0
+  target_ids:
+  - cmmmech:corkite
+  evidence_ids:
+  - named
+- check_id: resolve
+  name: Exact initial finding resolution
+  required: true
+  status: passed
+  summary: Only explicit acquisition count/source limit and appended provenance changed;
+    exact F1 predecessor linked.
+  target_ids:
+  - cmmmech:corkite
+  evidence_ids:
+  - prior
+  - correction
+- check_id: batch0
+  name: Actual corrected batch command1
+  required: true
+  status: passed
+  summary: Verified terminal execution and exact log hash.
+  command: just check
+  exit_code: 0
+  target_ids:
+  - cmmmech:corkite
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Actual corrected batch command2
+  required: true
+  status: passed
+  summary: Verified terminal execution and exact log hash.
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  target_ids:
+  - cmmmech:corkite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Actual corrected batch command3
+  required: true
+  status: passed
+  summary: Verified terminal execution and exact log hash.
+  command: uv run --locked cmmmech validate-history --base e0bffe8eb1c6e359f35d9c52c74a95a4efdc2b9d
+  exit_code: 0
+  target_ids:
+  - cmmmech:corkite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Actual corrected batch command4
+  required: true
+  status: passed
+  summary: Verified terminal execution and exact log hash.
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  target_ids:
+  - cmmmech:corkite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.jssc.2022.123620
+  locator: 'Complete nine-page original; Sections2.1–2.3, Figures1–5 and Tables1–4;
+    Actual local artifact: /private/tmp/cmm-round93-sulfates-research/corkite2023.pdf'
+  accessed_at: '2026-10-15T10:57:25.912420Z'
+  support: supports
+  summary: Independently read all original text and viewed all original page graphics.
+    Chemical synthesis, mixed phases, alternate symmetry fits and distinct thermal
+    preparations are bounded accurately.
+  snapshot_sha256: a14e7e270594f173c99c1e559cea15f0453ef0b56ac9893fb59bd94347059412
+- evidence_id: rminus
+  kind: primary_source
+  reference: https://doi.org/10.34863/pq8p-sj50
+  locator: 'Figure1/Fe-corkite_R-3m_refinement.pro; Actual local artifact: /private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure
+    1/Fe-corkite_R-3m_refinement.pro'
+  accessed_at: '2026-10-15T10:57:25.912420Z'
+  support: supports
+  summary: 'Actual source refinement: Rwp2.6123, modeled corkite90.438% and precursor9.562%,
+    Fe occupancy0.829855. No independent re-refinement or closed mass balance.'
+  snapshot_sha256: 88794b02d75f013ffa012534e640981e38a2e85d72b8d7222f00922041fdd74a
+- evidence_id: rplus
+  kind: primary_source
+  reference: https://doi.org/10.34863/pq8p-sj50
+  locator: 'Figure1/Fe-corkite_R3m_refinement.pro; Actual local artifact: /private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure
+    1/Fe-corkite_R3m_refinement.pro'
+  accessed_at: '2026-10-15T10:57:25.912420Z'
+  support: supports
+  summary: Alternative R3m fit is also close, Rwp2.5085, modeled corkite90.017% and
+    precursor9.983%. This supports the explicit diffraction-only symmetry uncertainty.
+  snapshot_sha256: 280bbbadab9305f0a49885d44bfddec2e89086676c244f8b71ae05745716c342
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'PDFpage1 definitions and page50 exact Corkite row; Actual local artifact:
+    /private/tmp/cmm-round93-sulfates-research/ima2026-09.pdf'
+  accessed_at: '2026-10-15T10:57:25.912420Z'
+  support: supports
+  summary: Exact sulfate-phosphate hydroxide formula and redefinition1987 verified;
+    no criticality is inferred from lead or phosphorus.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://handbookofmineralogy.org/pdfs/corkite.pdf
+  locator: 'Complete one-page entry, printed126; Actual local artifact: /private/tmp/cmm-round93-sulfates-research/corkite-handbook.pdf'
+  accessed_at: '2026-10-15T10:57:25.912420Z'
+  support: supports
+  summary: Natural mineral identity and historical R3m assignment are distinguished
+    from synthetic authors preferred R-3m model.
+  snapshot_sha256: 71722b97b527c9eec50cbe50d9b05e0e8fbaa16a85782d741e9d582ecb2a76a0
+- evidence_id: acquisition
+  kind: primary_source
+  reference: https://doi.org/10.34863/pq8p-sj50
+  locator: 'Request inventory; Figure2/Undried_corkite_Raman.ngs failure; Actual local
+    artifact: /private/tmp/cmm-round93-sulfates-research/acquisition-dataset-files.json'
+  accessed_at: '2026-10-15T10:57:25.912420Z'
+  support: supports
+  summary: 24 announced linked requests yielded23 verified successful files; the proprietary
+    NGS file returned404. The text Raman counterpart and actual main graphics are
+    available; missing bytes are not claimed as inspected.
+  snapshot_sha256: b94b0735b1fa67514e6680244874b8a0a9c37e6cc4654cf6e93cd16a9909cc8e
+- evidence_id: prior
+  kind: prior_review
+  reference: reviews/structured/20261015T104245Z-corkite-round93-acquisition-count-initial/review.yaml
+  locator: 'Exact initial review F1 and issue key; Actual local artifact: /private/tmp/CMMMech-expansion-round93-20261015/reviews/structured/20261015T104245Z-corkite-round93-acquisition-count-initial/review.yaml'
+  accessed_at: '2026-10-15T10:57:25.912420Z'
+  support: supports
+  summary: Initial minor acquisition-count overstatement preserved immutably before
+    correction.
+  snapshot_sha256: b1776ad163cdeb9df3261a84cb8037eec108f1fca6c17a06ba3026eff438b58a
+- evidence_id: correction
+  kind: record_content
+  reference: Independent parsed owner correction comparison
+  locator: '/private/tmp/cmm-round93-corkite-independent/correction-comparison.json;
+    Actual local artifact: /private/tmp/cmm-round93-corkite-independent/correction-comparison.json'
+  accessed_at: '2026-10-15T10:57:25.912420Z'
+  support: supports
+  summary: Reversing only the explicit source wording and appended provenance reconstructs
+    the retained original parsed owner. Original source dossier remains immutable
+    and correction is separately bound.
+  snapshot_sha256: ef504d6d8e0979a0df45d3b5471efefccebb9c3404621d0cb63dbe148f868db6
+- evidence_id: named
+  kind: validation
+  reference: Actual reviewer corrected named validation
+  locator: '/private/tmp/cmm-round93-corkite-independent/named-validation-corrected.log;
+    Actual local artifact: /private/tmp/cmm-round93-corkite-independent/named-validation-corrected.log'
+  accessed_at: '2026-10-15T10:57:25.912420Z'
+  support: supports
+  summary: Changed owner passed named strict validation1/0.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: batch
+  kind: validation
+  reference: Actual corrected round93 terminal four-command gate
+  locator: '/private/tmp/cmm-round93-final-gates.json; log /private/tmp/cmm-round93-final-gates.log
+    SHA256 efc4d81c12b0a2d142f10d38e0c4e29aa1ff803d533f2bcbaf8b4e62020d437a; Actual
+    local artifact: /private/tmp/cmm-round93-final-gates.json'
+  accessed_at: '2026-10-15T10:57:25.912420Z'
+  support: supports
+  summary: Actual all-four-command success binds final owner/history; initial receipt
+    remains historical.
+  snapshot_sha256: 00514e030fe956f3d0911d6085903163a88908d960ce5c30d914c4f737abba9d
+- evidence_id: search
+  kind: search
+  reference: Reviewer bounded correction/counterevidence and acquisition search
+  locator: '/private/tmp/cmm-round93-corkite-independent/scope-search.json; Actual
+    local artifact: /private/tmp/cmm-round93-corkite-independent/scope-search.json'
+  accessed_at: '2026-10-15T10:57:25.912420Z'
+  support: context_only
+  summary: Exact DOI correction/erratum/retraction and corkite Ferrenti thermal queries
+    did not expose an attributable notice in returned results. Hidden/ignored/followed
+    cited raw and dossier scope found no alternate successful NGS acquisition; author
+    independently confirmed the failed route.
+  snapshot_sha256: 3da12d46d3228a6b282a22d0e7696a9420faf50e9e68f45bb90f133c94e8e050
+  search_scope: Bounded exact DOI and author/mineral queries; cited raw dataset and
+    dossier roots only. Not an exhaustive literature or filesystem absence claim.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral identity and synthetic/natural distinction
+  outcome: supported
+  summary: Current IMA identity and historical natural structure are correctly distinguished
+    from source-assigned mixed synthetic material.
+  target_ids:
+  - cmmmech:corkite
+  evidence_ids:
+  - ima
+  - handbook
+  - primary
+  details: PbFe3(SO4)(PO4)(OH)6; not beudantite/plumbojarosite or elemental lead.
+    No taxon, biological mechanism, constituent criticality or industrial deployment
+    claimed.
+- assessment_id: synthesis
+  area: evidence
+  topic: Conditional chemical synthesis and modeled fractions
+  outcome: supported
+  summary: Hydrothermal formation is directly supported at the source conditions,
+    with competing and incomplete outcomes explicit.
+  target_ids:
+  - cmmmech:corkite
+  evidence_ids:
+  - primary
+  - rminus
+  - rplus
+  details: 98°C four days; stated mol ratios retained without inventing batch mass/mmol
+    scale,70% vessel fill and three acid drops not converted to an exact acidity.
+    Shorter treatment minimal corkite and longer competing products retained.9.5wt%
+    precursor is a modeled phase fraction, not yield or absolute purity.
+- assessment_id: symmetry
+  area: evidence
+  topic: Alternative structure models
+  outcome: supported
+  summary: The similar R3m/R-3m fit quality and authors vibrational interpretation
+    are accurately qualified.
+  target_ids:
+  - cmmmech:corkite
+  evidence_ids:
+  - primary
+  - rminus
+  - rplus
+  - handbook
+  details: The reviewer did not run Topas or re-refine. Table2 Fe0.830 occupancy and
+    fixed other sites do not establish exact batch stoichiometry. Table1 Z/density
+    ambiguity is not adopted as measured density.
+- assessment_id: thermal
+  area: quantity
+  topic: Thermal stage, atmosphere and denominator
+  outcome: supported
+  summary: Different air anneals and N2 thermal measurement are separated, with incomplete
+    high-temperature phase evidence retained.
+  target_ids:
+  - cmmmech:corkite
+  evidence_ids:
+  - primary
+  details: 150°C magnetic preparation differs from200°C spectroscopy and N2 TGA50–600°C10°C/min100mL/min.
+    Approximately2% mixed-sample loss near173°C and larger event above330°C are source
+    interpretations; no pure water partition or recovered Fe2O3/Pb yield. Temperature-specific
+    XRD is described but not shown; no Pb/P/S balance.
+- assessment_id: provenance
+  area: provenance
+  topic: Immutable observation and precise acquisition accounting
+  outcome: supported
+  summary: The source count now reports actual successful files, retains the failure
+    and resolves the original finding with exact lineage.
+  target_ids:
+  - cmmmech:corkite
+  evidence_ids:
+  - acquisition
+  - prior
+  - correction
+  - named
+  - batch
+  details: Original CREATE, dossier and native F1 remain unchanged; a real EDIT and
+    correction addendum describe the limited change.23 successful source files hash-verified,
+    missing Raman.ngs not represented as inspected.
+findings:
+- finding_id: F1
+  issue_key: cmmmech.corkite.round93.dataset-acquisition-count
+  category: provenance
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Dataset acquisition count and missing NGS file are now explicit
+  description: The original24-acquired claim is corrected to23 successful acquisitions
+    from24 announced links, with the failed Raman.ngs link explicitly disclosed. Other
+    source and scientific statements remain unchanged.
+  target_ids:
+  - cmmmech:corkite
+  field_paths:
+  - sources[3].title
+  evidence_ids:
+  - acquisition
+  - prior
+  - correction
+  - batch
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/corkite.yaml
+    role: maintained_record
+  rule_id: actual-acquisition-not-request-count
+  native_severity: minor
+  normalization_reason: Bounded source-access accounting defect; no unsupported transformation
+    result or identity change was found.
+  disposition_reason: Independent source inventory/hash verification, retained original-to-final
+    comparison, append-only history and corrected full batch establish the narrow
+    correction. The original failed request and native occurrence remain preserved.
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261015T104245Z-corkite-round93-acquisition-count-initial
+    finding_id: F1
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/328
+actions: []
+limitations:
+- The missing proprietary Raman.ngs raw file remains unavailable; no raw Raman reprocessing
+  or independent structural refinement was performed.
+- Synthetic powder contains modeled precursor and possibly unmodeled material; no
+  closed elemental mass balance or isolated-product yield.
+- Space-group alternatives fit similarly; natural Handbook assignment and synthetic
+  authors interpretation are distinct.
+- Stated reagent mol labels lack actual batch scale; no invented scale, replicated
+  synthesis count or control arm.
+- Post-anneal XRD claims beyond200°C are reported in text but patterns are not displayed;
+  no chemically pure recovered oxide is established.
+- Original initial-save formatting rejections were corrected before sole successful
+  persistence and remain externally preserved; they did not alter science or the saved
+  finding.
+- Bounded correction/counterevidence searches do not establish exhaustive absence.

@@ -1,0 +1,695 @@
+# Independent scientific review of Lithiophilite — exact F1 resolution
+
+- Review: 20261015T105738Z-lithiophilite-round93-resolution
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T10:50:46.174862Z
+- Finished UTC: 2026-10-15T10:57:38.092231Z
+- Reviewer: codex /root/round68_iron_sulfides (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of the corrected lithiophilite record; exact minor F1 resolved with unchanged scientific scope. Shared experiments, imperfect controls, local-solid denominators and updated nomenclature are preserved.
+
+## Scope And Provenance
+
+Full exact maintained record, primary methods/results/figures/tables/SI, authoritative species identity, histories and current validation.
+
+Selection: Assigned frozen owner; native inspection preceded scientific judgment and was refreshed after correction.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base e0bffe8eb1c6e359f35d9c52c74a95a4efdc2b9d.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:lithiophilite | data/records/lithiophilite.yaml | maintained | Lithiophilite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent exact-owner strict validation | passed | True | cmmmech:lithiophilite | Actual independent run1record/0failures; log hash verified. |
+| Full local suite | passed | True | cmmmech:lithiophilite | Coordinator actual terminal receipt, exact owner input and log hash independently verified; no rerun or future result claimed. |
+| Strict complete record validation | passed | True | cmmmech:lithiophilite | Coordinator actual terminal receipt, exact owner input and log hash independently verified; no rerun or future result claimed. |
+| Canonical history validation | passed | True | cmmmech:lithiophilite | Coordinator actual terminal receipt, exact owner input and log hash independently verified; no rerun or future result claimed. |
+| Generated page freshness | passed | True | cmmmech:lithiophilite | Coordinator actual terminal receipt, exact owner input and log hash independently verified; no rerun or future result claimed. |
+
+## Scientific And Domain Assessments
+
+### Species, specimen and authority scope
+
+identity: supported. Targets: cmmmech:lithiophilite.
+
+Current Fe2+-dominant triphylite and Mn2+-dominant lithiophilite are separate species. Losey natural crystals contain Fe/Mn/Mg substitutions; near-boundary Trip50 is not a clean endmember. Li2O used for matrix correction and fixed site occupancy cannot independently quantify lithium. Pbnm/Pmnb settings do not define separate species.
+
+### Biomass, organism and deployment
+
+scope: supported. Targets: cmmmech:lithiophilite.
+
+All accepted experiments are abiotic. No taxon/strain or microbial causality is asserted; no constituent criticality or industrial deployment is inferred. Natural pegmatite identity and synthetic assay material remain distinct.
+
+### Synthetic LiMnPO4 arm and unmatched comparator
+
+evidence: supported. Targets: cmmmech:lithiophilite.
+
+Tri74 uses49.7mg fine synthetic powder,10.5mg KMnO4,1mL0.1NHCl,120°C28days. The700°C2day step makes Li3PO4 precursor and is not a documented final LiMnPO4 firing schedule. Natural triphylite arms differ in oxidant dose,time,grain size and provenance; a same-conditions phrase does not make a matched species comparison.
+
+### Conditional null and measurement limits
+
+quantity: supported. Targets: cmmmech:lithiophilite.
+
+Table4/Results report unchanged phase/lattice and Rwp12.4%. This refutes detected bulk phase conversion in that arm. No direct Mn-valence or solution-Li assay establishes zero oxidation, zero dissolution or universal resistance. Reference-card/b-parameter inconsistencies remain explicit; fitted diffraction agreement is not purity or recovery yield.
+
+### Natural-crystal identity separate from assay
+
+evidence: supported. Targets: cmmmech:lithiophilite.
+
+Trip06/Trip27 natural Mn-rich crystals belong to the structural series and differ from synthetic Tri74. Assumed Li content, fixed occupancies and unresolved structure-factor access are retained. Corrected Table2 printed1108 has been directly verified.
+
+### Source arithmetic and quantitative exclusions
+
+consistency: supported. Targets: cmmmech:lithiophilite.
+
+Complete official workbook inspected without executing macros or accepting cached values blindly. Calculation B34 uses B24*29.88/2 while neighboring restored-weight quantities include B14. Table3 adopts4.73; the alternative scaling calculation is only a source clarification question. Neither mineral record uses it as yield or independently measured lithium.
+
+### Histories, native target and actual gates
+
+provenance: supported. Targets: cmmmech:lithiophilite.
+
+Exact current owner/history inputs were captured through native inspect; original history and observations remain immutable. Independent named validation and actual completed corrected batch receipt are bound. Canonical whole-corpus review checking and publication coverage remain later coordinator gates.
+
+### Exact F1 retirement and immutable correction scope
+
+consistency: supported. Targets: cmmmech:lithiophilite.
+
+F1 is explicitly resolved with matching stable key, canonical target, exact predecessor hash and original printed page. The preserved initial pending-check sentence is transparently corrected as timing prose; it does not imply an owner defect or a missing final gate.
+
+## Findings
+
+### F1: Correct the original page locator for Losey Table2
+
+minor / resolved / confirmed; issue key: lithiophilite-round93-losey-table2-page.
+
+The explanation locates Tables1–2 on pages1107 and1109. Table1 is on1107, but Table2 is on1108. Replace only the incorrect page locator; preserve all scientific limitations and source identity.
+
+Disposition: Original printed Table2 is on1108/PDF4, while Table1 is on1107/PDF3. The corrected owner changes1109 to1108 only in mechanisms[0].evidence[2], with actual appended inline EDIT and canonical EDIT. Independent parsed comparison, original graphics, named validation and completed corrected four-command batch verify issue327 acceptance; no scientific quantity or interpretation changed.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/lithiophilite.yaml; Complete current native-inspected owner. Actual local artifact: /private/tmp/CMMMech-expansion-round93-20261015/data/records/lithiophilite.yaml | supports | Final exact owner and evidence scope independently reassessed; no reviewer owner edits. |
+| history0 | history/records/lithiophilite/2026-10-15T103105Z-codex-02555a.yaml; Complete canonical history and matching distinct inline event. Actual local artifact: /private/tmp/CMMMech-expansion-round93-20261015/history/records/lithiophilite/2026-10-15T103105Z-codex-02555a.yaml | supports | Actual GPT-6/codex author provenance; CREATE remains immutable and any EDIT is appended. |
+| history1 | history/records/lithiophilite/2026-10-15T104454Z-codex-88c6a3.yaml; Complete canonical history and matching distinct inline event. Actual local artifact: /private/tmp/CMMMech-expansion-round93-20261015/history/records/lithiophilite/2026-10-15T104454Z-codex-88c6a3.yaml | supports | Actual GPT-6/codex author provenance; CREATE remains immutable and any EDIT is appended. |
+| losey | https://doi.org/10.2113/gscanmin.42.4.1105; Complete eleven-page original, all Figures1–7 and Tables1–5; Table1 printed1107/PDF3 and Table2 printed1108/PDF4 directly inspected. Actual local artifact: /private/tmp/cmm-round93-minerals-research/losey2004.pdf | supports | Natural substituted crystal series, original specimen identities and space-group setting are supported; lithium was assumed/constrained, not independently measured. CISTI-deposited structure factors were not acquired. |
+| oxidation | https://doi.org/10.1007/s00710-012-0250-6; Complete fifteen-page original, all Tables1–9 and Figures1–5. Table1 p503; Tables4–5 pp506–507; Tables7–9 pp508–510; Figures3–5 pp511–512; Methods/Discussion complete. Actual local artifact: /private/tmp/cmm-round93-minerals-research/oxidation2013.pdf | supports | Distinct Tri77 powder, Tri87 cuboid and Tri74 synthetic-powder arms, controls, preparation and denominators checked. Local lithium depletion and a conditional diffraction null are not recovered-product yields. |
+| nomenclature | https://doi.org/10.5194/ejm-35-427-2023; Complete eleven-page original, all Figures1–5, Tables1–3 and Algorithm1; especially Table3 printed435/PDF9. Actual local artifact: /private/tmp/cmm-round93-minerals-research/nomenclature2023.pdf | supports | Approved revised nomenclature discredits ferrisicklerite/sicklerite and explicitly reassigns the same2013 Tri77/Tri87 compositions to heterosite; this is not new experimental replication. |
+| si_archive | https://ejm.copernicus.org/articles/35/427/2023/ejm-35-427-2023-supplement.zip; Official two-member supplement archive, title-page PDF and native workbook both inspected. Actual local artifact: /private/tmp/cmm-round93-minerals-research/nomenclature2023-supplement.zip | supports | Actual supplementary objects are available; workbook numerical inspection is distinguished from rendering or executing an Excel session. |
+| si_workbook | https://ejm.copernicus.org/articles/35/427/2023/ejm-35-427-2023-supplement.zip; Native Data_diagram and Calculation cells, formulas and cached values; third sheet empty. Calculation B14/B24/B32–B34 independently inspected. Actual local artifact: /private/tmp/cmm-round93-minerals-research/nomenclature2023-supplement/Supplement.xlsx | context_only | B34 weight-basis question is retained as source clarification #329. No alternative computed Li2O value is accepted as an authoritative correction or recovery measurement. |
+| si_cover | https://ejm.copernicus.org/articles/35/427/2023/ejm-35-427-2023-supplement.zip; Complete one-page official supplement cover, visually inspected. Actual local artifact: /private/tmp/cmm-round93-minerals-research/nomenclature2023-supplement/ejm-35-427-2023-supplement-title-page.pdf | context_only | Supplement identity matches the2023 nomenclature paper. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September2026 original master list; page1 status/year definitions and pages127/220 species rows visually inspected. Actual local artifact: /private/tmp/cmm-round93-minerals-research/ima-live.pdf | supports | Lithiophilite G1878 and triphylite G1834 are distinct mineral species; years are original-description years, not approval accession IDs. No constituent-element criticality is inherited. |
+| handbook | https://www.handbookofmineralogy.org/pdfs/lithiophilite.pdf; Complete one-page Handbook original, chemistry and crystallographic setting. Actual local artifact: /private/tmp/cmm-round93-minerals-research/lithiophilite-handbook.pdf | supports | Pmnb and Pbnm are settings of orthorhombic space group62; natural substitution does not establish endmember purity of experimental material. |
+| notice_search | /private/tmp/cmm-round93-lithium-independent/web-notice-results.json; Retained independent exact-DOI correction/erratum searches and returned source results. Actual local artifact: /private/tmp/cmm-round93-lithium-independent/web-notice-results.json | context_only | No affecting notice was identified within the returned bounded results. This is not universal absence; original conflicts and nomenclatural changes were explicitly considered. |
+| lineage_search | /private/tmp/cmm-round93-lithium-independent/lineage-search.txt; Maintained-root identity/DOI search with hidden/ignored files and relevant symlinks included. Actual local artifact: /private/tmp/cmm-round93-lithium-independent/lineage-search.txt | context_only | Matches include current records/dossier/history/reviews and round64 lithium screening; no independent study replication is inferred from repeated use of these papers. |
+| si_check | /private/tmp/cmm-round93-lithium-independent/si-calculation-check.json; Independent native workbook cell/formula check. Actual local artifact: /private/tmp/cmm-round93-lithium-independent/si-calculation-check.json | context_only | B34 uses normalized Li apfu without the weight-basis factor applied in neighboring cells; alternative factor restoration is a diagnostic question, not a silently corrected measurement. Source issue329 tracks clarification. |
+| named | /private/tmp/cmm-round93-lithium-independent/final-named-validation.json; Independent exact-final-owner named strict validation and captured log hash. Actual local artifact: /private/tmp/cmm-round93-lithium-independent/final-named-validation.json | supports | Each owner independently checked1record/0failures; checks were run after the lithiophilite edit, not inferred from author validation. |
+| batch | /private/tmp/cmm-round93-final-gates.json; Actual corrected four-command terminal receipt; log SHA256 efc4d81c12b0a2d142f10d38e0c4e29aa1ff803d533f2bcbaf8b4e62020d437a. Actual local artifact: /private/tmp/cmm-round93-final-gates.json | supports | All four commands exited0 with exact owners unchanged:317passed/3skipped,446records,510histories against trusted base, and generated pages current. |
+| initial_review | reviews/structured/20261015T104230Z-lithiophilite-round93-initial-locator/review.yaml; Immutable initial native observation, exact F1 and stable issue key. Actual local artifact: /private/tmp/CMMMech-expansion-round93-20261015/reviews/structured/20261015T104230Z-lithiophilite-round93-initial-locator/review.yaml | context_only | Original minor page-locator finding retained; this successor explicitly resolves it with original source evidence and final exact bytes. |
+| old_owner | /private/tmp/cmm-round93-minerals-research/lithiophilite-before-locator-correction.yaml; Actual retained pre-correction owner bytes, matching initial native SHA. Actual local artifact: /private/tmp/cmm-round93-minerals-research/lithiophilite-before-locator-correction.yaml | context_only | Original evidence entry said1109 for Table2; only that locator and appended provenance changed. |
+| comparison | /private/tmp/cmm-round93-lithium-independent/independent-lithiophilite-correction.json; Independent parsed old/new comparison. Actual local artifact: /private/tmp/cmm-round93-lithium-independent/independent-lithiophilite-correction.json | supports | Exact one-field page1109→1108 plus appended inline/canonical EDIT; science otherwise unchanged. |
+| addendum | research/sources/round93-minerals/20261015T104618Z-lithiophilite-locator-correction.json; Immutable author dossier correction addendum, original pair preserved. Actual local artifact: /private/tmp/CMMMech-expansion-round93-20261015/research/sources/round93-minerals/20261015T104618Z-lithiophilite-locator-correction.json | supports | Explicitly binds the source-locator correction and original observation without rewriting historical evidence. |
+| initial_batch | /private/tmp/cmm-round93-initial-gates.json; Actual first batch terminal timestamp10:40:40Z, original owner bytes and relocated unchanged log. Actual local artifact: /private/tmp/cmm-round93-initial-gates.json | context_only | The initial native draft incorrectly said the initial batch remained running; it had already completed before10:42:30 save. Corrected final-batch acceptance was still pending. This successor corrects that timing statement without modifying the initial review. |
+
+## Limits And Additional Notes
+
+- Natural substituted crystals, synthetic LiMnPO4 assay and distinct powder/cuboid experiments are not pooled as equivalent feeds or independent replication.
+- No microbial cause, isolated lithium product, absolute phase purity, aqueous mass balance or industrial deployment is established.
+- The original2013 reference-card/lattice values and unmatched comparison wording are retained as source limits; no exact disputed lattice value is silently corrected.
+- Losey deposited structure factors/anisotropic parameters were not acquired. No additional supplement was inferred from an abstract; bounded notice searches do not prove universal absence.
+- Source workbook basis issue329 remains a clarification question; neither4.73 nor an alternative rescaled Li2O weight fraction is adopted as measured extraction.
+- Whole-corpus native review-check and exact current review coverage follow saved reviews and are separate publication gates.
+- Shared acquisition is disclosed; sources and graphics were independently assessed after native target inspection. No owner/history edits were made by this reviewer.
+- Formal final verification interval begins with the timestamped exact-current native-inspection/named-check wrapper; broad source reading began earlier without an exact separate start-time record.
+- Complete article graphics/tables and authority pages were visually inspected. Workbook native formulas/cached values were read, not a rendered Excel recalculation.
+- Issue327: https://github.com/CultureBotAI/CMMMech/issues/327. Source-only workbook clarification remains open as issue329.
+- The initial partial review pending-check prose was stale for the first batch: it had completed10:40:40Z before the10:42:30Z initial save. That review made no final positive acceptance claim. Current acceptance binds the subsequent corrected batch.
+- Earlier rejected drafts were external and unsaved (YAML alias and target formatting); proper canonical target inspection was recaptured before the sole initial native save.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T105738Z-lithiophilite-round93-resolution
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Lithiophilite — exact F1 resolution
+started_at: '2026-10-15T10:50:46.174862Z'
+finished_at: '2026-10-15T10:57:38.092231Z'
+reviewer:
+  identity: codex /root/round68_iron_sulfides
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Phosphates agent authored this owner and histories. This reviewer
+    authored separate beudantite/corkite, independently inspected the lithium sources
+    and native targets, and made no lithium owner edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of the corrected lithiophilite record; exact minor F1
+  resolved with unchanged scientific scope. Shared experiments, imperfect controls,
+  local-solid denominators and updated nomenclature are preserved.
+source:
+  git_revision: e0bffe8eb1c6e359f35d9c52c74a95a4efdc2b9d
+  state: working_tree
+  inputs:
+  - path: data/records/lithiophilite.yaml
+    sha256: f587f195a1f357f0700f860fd4d83122303fd53a393881b68d7549def94e9e1f
+    role: target
+  - path: history/records/lithiophilite/2026-10-15T103105Z-codex-02555a.yaml
+    sha256: 2e0864e91e21bda823cda40c8edb8452bfee363adb8a7badf855155d067d0d0f
+    role: context
+  - path: history/records/lithiophilite/2026-10-15T104454Z-codex-88c6a3.yaml
+    sha256: d851a9146e3caed53b362ee70ff57e5880415dc9f93582129444578bc1c168ad
+    role: context
+  - path: research/sources/round93-minerals/20261015T104618Z-lithiophilite-locator-correction.json
+    sha256: 42586dc4ddb9b75cde77d94c0e092eb88bff2a63e7f33af68f13e2c7560e2727
+    role: context
+  - path: reviews/structured/20261015T104230Z-lithiophilite-round93-initial-locator/review.yaml
+    sha256: 71bba81e648a1ec849b639fac4e3bd333bd1cf4385fd749180664a19388b39b1
+    role: context
+targets:
+- target_id: cmmmech:lithiophilite
+  path: data/records/lithiophilite.yaml
+  label: Lithiophilite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lithiophilite.yaml
+    role: maintained scientific owner
+scope:
+  description: Full exact maintained record, primary methods/results/figures/tables/SI,
+    authoritative species identity, histories and current validation.
+  selection: Assigned frozen owner; native inspection preceded scientific judgment
+    and was refreshed after correction.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:lithiophilite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/lithiophilite.yaml
+  locator: 'Complete current native-inspected owner. Actual local artifact: /private/tmp/CMMMech-expansion-round93-20261015/data/records/lithiophilite.yaml'
+  accessed_at: '2026-10-15T10:57:38.092231Z'
+  support: supports
+  summary: Final exact owner and evidence scope independently reassessed; no reviewer
+    owner edits.
+  snapshot_sha256: f587f195a1f357f0700f860fd4d83122303fd53a393881b68d7549def94e9e1f
+- evidence_id: history0
+  kind: record_content
+  reference: history/records/lithiophilite/2026-10-15T103105Z-codex-02555a.yaml
+  locator: 'Complete canonical history and matching distinct inline event. Actual
+    local artifact: /private/tmp/CMMMech-expansion-round93-20261015/history/records/lithiophilite/2026-10-15T103105Z-codex-02555a.yaml'
+  accessed_at: '2026-10-15T10:57:38.092231Z'
+  support: supports
+  summary: Actual GPT-6/codex author provenance; CREATE remains immutable and any
+    EDIT is appended.
+  snapshot_sha256: 2e0864e91e21bda823cda40c8edb8452bfee363adb8a7badf855155d067d0d0f
+- evidence_id: history1
+  kind: record_content
+  reference: history/records/lithiophilite/2026-10-15T104454Z-codex-88c6a3.yaml
+  locator: 'Complete canonical history and matching distinct inline event. Actual
+    local artifact: /private/tmp/CMMMech-expansion-round93-20261015/history/records/lithiophilite/2026-10-15T104454Z-codex-88c6a3.yaml'
+  accessed_at: '2026-10-15T10:57:38.092231Z'
+  support: supports
+  summary: Actual GPT-6/codex author provenance; CREATE remains immutable and any
+    EDIT is appended.
+  snapshot_sha256: d851a9146e3caed53b362ee70ff57e5880415dc9f93582129444578bc1c168ad
+- evidence_id: losey
+  kind: primary_source
+  reference: https://doi.org/10.2113/gscanmin.42.4.1105
+  locator: 'Complete eleven-page original, all Figures1–7 and Tables1–5; Table1 printed1107/PDF3
+    and Table2 printed1108/PDF4 directly inspected. Actual local artifact: /private/tmp/cmm-round93-minerals-research/losey2004.pdf'
+  accessed_at: '2026-10-15T10:57:38.092231Z'
+  support: supports
+  summary: Natural substituted crystal series, original specimen identities and space-group
+    setting are supported; lithium was assumed/constrained, not independently measured.
+    CISTI-deposited structure factors were not acquired.
+  snapshot_sha256: 90fa49d1d8a5ae06ae4592894c13016cf5061a4a8673189248058ce3695acb1f
+- evidence_id: oxidation
+  kind: primary_source
+  reference: https://doi.org/10.1007/s00710-012-0250-6
+  locator: 'Complete fifteen-page original, all Tables1–9 and Figures1–5. Table1 p503;
+    Tables4–5 pp506–507; Tables7–9 pp508–510; Figures3–5 pp511–512; Methods/Discussion
+    complete. Actual local artifact: /private/tmp/cmm-round93-minerals-research/oxidation2013.pdf'
+  accessed_at: '2026-10-15T10:57:38.092231Z'
+  support: supports
+  summary: Distinct Tri77 powder, Tri87 cuboid and Tri74 synthetic-powder arms, controls,
+    preparation and denominators checked. Local lithium depletion and a conditional
+    diffraction null are not recovered-product yields.
+  snapshot_sha256: d27a8b32769235e0f9ea24721e61c7eb3abd65567ce58a1ef16b56ec0984a154
+- evidence_id: nomenclature
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-35-427-2023
+  locator: 'Complete eleven-page original, all Figures1–5, Tables1–3 and Algorithm1;
+    especially Table3 printed435/PDF9. Actual local artifact: /private/tmp/cmm-round93-minerals-research/nomenclature2023.pdf'
+  accessed_at: '2026-10-15T10:57:38.092231Z'
+  support: supports
+  summary: Approved revised nomenclature discredits ferrisicklerite/sicklerite and
+    explicitly reassigns the same2013 Tri77/Tri87 compositions to heterosite; this
+    is not new experimental replication.
+  snapshot_sha256: 56c78875cb5f9d046ac05540c2bf401bad9ebbf9a3899bd83d84075a497dd088
+- evidence_id: si_archive
+  kind: primary_source
+  reference: https://ejm.copernicus.org/articles/35/427/2023/ejm-35-427-2023-supplement.zip
+  locator: 'Official two-member supplement archive, title-page PDF and native workbook
+    both inspected. Actual local artifact: /private/tmp/cmm-round93-minerals-research/nomenclature2023-supplement.zip'
+  accessed_at: '2026-10-15T10:57:38.092231Z'
+  support: supports
+  summary: Actual supplementary objects are available; workbook numerical inspection
+    is distinguished from rendering or executing an Excel session.
+  snapshot_sha256: da90d526d9f907c976b8de3048a1d3613a4e71420bd5cab9839d5568d152c47c
+- evidence_id: si_workbook
+  kind: primary_source
+  reference: https://ejm.copernicus.org/articles/35/427/2023/ejm-35-427-2023-supplement.zip
+  locator: 'Native Data_diagram and Calculation cells, formulas and cached values;
+    third sheet empty. Calculation B14/B24/B32–B34 independently inspected. Actual
+    local artifact: /private/tmp/cmm-round93-minerals-research/nomenclature2023-supplement/Supplement.xlsx'
+  accessed_at: '2026-10-15T10:57:38.092231Z'
+  support: context_only
+  summary: 'B34 weight-basis question is retained as source clarification #329. No
+    alternative computed Li2O value is accepted as an authoritative correction or
+    recovery measurement.'
+  snapshot_sha256: e7f0db24d5e1d6b362137256107231640552c3051a7c05e96f6086c8d3428cb9
+- evidence_id: si_cover
+  kind: primary_source
+  reference: https://ejm.copernicus.org/articles/35/427/2023/ejm-35-427-2023-supplement.zip
+  locator: 'Complete one-page official supplement cover, visually inspected. Actual
+    local artifact: /private/tmp/cmm-round93-minerals-research/nomenclature2023-supplement/ejm-35-427-2023-supplement-title-page.pdf'
+  accessed_at: '2026-10-15T10:57:38.092231Z'
+  support: context_only
+  summary: Supplement identity matches the2023 nomenclature paper.
+  snapshot_sha256: d0231b26d634a640d7ae9395b4212b3c23e5c5d7eb96fa8403b7147be4d24cc5
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'September2026 original master list; page1 status/year definitions and
+    pages127/220 species rows visually inspected. Actual local artifact: /private/tmp/cmm-round93-minerals-research/ima-live.pdf'
+  accessed_at: '2026-10-15T10:57:38.092231Z'
+  support: supports
+  summary: Lithiophilite G1878 and triphylite G1834 are distinct mineral species;
+    years are original-description years, not approval accession IDs. No constituent-element
+    criticality is inherited.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/lithiophilite.pdf
+  locator: 'Complete one-page Handbook original, chemistry and crystallographic setting.
+    Actual local artifact: /private/tmp/cmm-round93-minerals-research/lithiophilite-handbook.pdf'
+  accessed_at: '2026-10-15T10:57:38.092231Z'
+  support: supports
+  summary: Pmnb and Pbnm are settings of orthorhombic space group62; natural substitution
+    does not establish endmember purity of experimental material.
+  snapshot_sha256: efa54d068304941e5229b874aa3b9998dcc977239f1d3f6f74a895e6e051d505
+- evidence_id: notice_search
+  kind: search
+  reference: /private/tmp/cmm-round93-lithium-independent/web-notice-results.json
+  locator: 'Retained independent exact-DOI correction/erratum searches and returned
+    source results. Actual local artifact: /private/tmp/cmm-round93-lithium-independent/web-notice-results.json'
+  accessed_at: '2026-10-15T10:57:38.092231Z'
+  support: context_only
+  summary: No affecting notice was identified within the returned bounded results.
+    This is not universal absence; original conflicts and nomenclatural changes were
+    explicitly considered.
+  snapshot_sha256: 9377b97ee638b08f402400c3f9861a78bcbddc34015fcc98cc49b9d9a26febd2
+  search_scope: Exact DOI queries for10.2113/gscanmin.42.4.1105,10.1007/s00710-012-0250-6
+    and10.5194/ejm-35-427-2023 with correction/erratum; returned official or institutional
+    originals assessed.
+- evidence_id: lineage_search
+  kind: search
+  reference: /private/tmp/cmm-round93-lithium-independent/lineage-search.txt
+  locator: 'Maintained-root identity/DOI search with hidden/ignored files and relevant
+    symlinks included. Actual local artifact: /private/tmp/cmm-round93-lithium-independent/lineage-search.txt'
+  accessed_at: '2026-10-15T10:57:38.092231Z'
+  support: context_only
+  summary: Matches include current records/dossier/history/reviews and round64 lithium
+    screening; no independent study replication is inferred from repeated use of these
+    papers.
+  snapshot_sha256: 57bbad5056cb4312a90d3fb0d283fee7df579869f30e9efc90043f9c41f226b7
+  search_scope: rg --hidden --no-ignore --follow -l -i triphylite|lithiophilite|gscanmin.42.4.1105|s00710-012-0250-6|ejm-35-427-2023
+    data/records research reviews history; bounded supplied raw original roots inspected.
+- evidence_id: si_check
+  kind: validation
+  reference: /private/tmp/cmm-round93-lithium-independent/si-calculation-check.json
+  locator: 'Independent native workbook cell/formula check. Actual local artifact:
+    /private/tmp/cmm-round93-lithium-independent/si-calculation-check.json'
+  accessed_at: '2026-10-15T10:57:38.092231Z'
+  support: context_only
+  summary: B34 uses normalized Li apfu without the weight-basis factor applied in
+    neighboring cells; alternative factor restoration is a diagnostic question, not
+    a silently corrected measurement. Source issue329 tracks clarification.
+  snapshot_sha256: e7c34585e9f99f9893876712a2b4cac7d987aa4ba8e3cb1e1f3f3943f6fd8b16
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round93-lithium-independent/final-named-validation.json
+  locator: 'Independent exact-final-owner named strict validation and captured log
+    hash. Actual local artifact: /private/tmp/cmm-round93-lithium-independent/final-named-validation.json'
+  accessed_at: '2026-10-15T10:57:38.092231Z'
+  support: supports
+  summary: Each owner independently checked1record/0failures; checks were run after
+    the lithiophilite edit, not inferred from author validation.
+  snapshot_sha256: 8d5024a597be34736e458e68dcf452fc350be5b15e637d39e291a7f6a844ec24
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round93-final-gates.json
+  locator: 'Actual corrected four-command terminal receipt; log SHA256 efc4d81c12b0a2d142f10d38e0c4e29aa1ff803d533f2bcbaf8b4e62020d437a.
+    Actual local artifact: /private/tmp/cmm-round93-final-gates.json'
+  accessed_at: '2026-10-15T10:57:38.092231Z'
+  support: supports
+  summary: All four commands exited0 with exact owners unchanged:317passed/3skipped,446records,510histories
+    against trusted base, and generated pages current.
+  snapshot_sha256: 00514e030fe956f3d0911d6085903163a88908d960ce5c30d914c4f737abba9d
+- evidence_id: initial_review
+  kind: prior_review
+  reference: reviews/structured/20261015T104230Z-lithiophilite-round93-initial-locator/review.yaml
+  locator: 'Immutable initial native observation, exact F1 and stable issue key. Actual
+    local artifact: /private/tmp/CMMMech-expansion-round93-20261015/reviews/structured/20261015T104230Z-lithiophilite-round93-initial-locator/review.yaml'
+  accessed_at: '2026-10-15T10:57:38.092231Z'
+  support: context_only
+  summary: Original minor page-locator finding retained; this successor explicitly
+    resolves it with original source evidence and final exact bytes.
+  snapshot_sha256: 71bba81e648a1ec849b639fac4e3bd333bd1cf4385fd749180664a19388b39b1
+- evidence_id: old_owner
+  kind: record_content
+  reference: /private/tmp/cmm-round93-minerals-research/lithiophilite-before-locator-correction.yaml
+  locator: 'Actual retained pre-correction owner bytes, matching initial native SHA.
+    Actual local artifact: /private/tmp/cmm-round93-minerals-research/lithiophilite-before-locator-correction.yaml'
+  accessed_at: '2026-10-15T10:57:38.092231Z'
+  support: context_only
+  summary: Original evidence entry said1109 for Table2; only that locator and appended
+    provenance changed.
+  snapshot_sha256: 0b369fe4625037e8ed26617e42dd74f7b2af0d6eafc44eb748e675bccdf8bde4
+- evidence_id: comparison
+  kind: validation
+  reference: /private/tmp/cmm-round93-lithium-independent/independent-lithiophilite-correction.json
+  locator: 'Independent parsed old/new comparison. Actual local artifact: /private/tmp/cmm-round93-lithium-independent/independent-lithiophilite-correction.json'
+  accessed_at: '2026-10-15T10:57:38.092231Z'
+  support: supports
+  summary: Exact one-field page1109→1108 plus appended inline/canonical EDIT; science
+    otherwise unchanged.
+  snapshot_sha256: 5b901554a4440333c5af3384fed4a0b0bc187401e01ae56f91aad6afc4d3e4fe
+- evidence_id: addendum
+  kind: record_content
+  reference: research/sources/round93-minerals/20261015T104618Z-lithiophilite-locator-correction.json
+  locator: 'Immutable author dossier correction addendum, original pair preserved.
+    Actual local artifact: /private/tmp/CMMMech-expansion-round93-20261015/research/sources/round93-minerals/20261015T104618Z-lithiophilite-locator-correction.json'
+  accessed_at: '2026-10-15T10:57:38.092231Z'
+  support: supports
+  summary: Explicitly binds the source-locator correction and original observation
+    without rewriting historical evidence.
+  snapshot_sha256: 42586dc4ddb9b75cde77d94c0e092eb88bff2a63e7f33af68f13e2c7560e2727
+- evidence_id: initial_batch
+  kind: validation
+  reference: /private/tmp/cmm-round93-initial-gates.json
+  locator: 'Actual first batch terminal timestamp10:40:40Z, original owner bytes and
+    relocated unchanged log. Actual local artifact: /private/tmp/cmm-round93-initial-gates.json'
+  accessed_at: '2026-10-15T10:57:38.092231Z'
+  support: context_only
+  summary: The initial native draft incorrectly said the initial batch remained running;
+    it had already completed before10:42:30 save. Corrected final-batch acceptance
+    was still pending. This successor corrects that timing statement without modifying
+    the initial review.
+  snapshot_sha256: 62efc465f83b93012e3be8c6a1c2e57104ad45e459a7696ced9b53cef26464ea
+checks:
+- check_id: named
+  name: Independent exact-owner strict validation
+  command: uv run --locked cmmmech validate --require-records data/records/lithiophilite.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual independent run1record/0failures; log hash verified.
+  target_ids:
+  - cmmmech:lithiophilite
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Full local suite
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Coordinator actual terminal receipt, exact owner input and log hash independently
+    verified; no rerun or future result claimed.
+  target_ids:
+  - cmmmech:lithiophilite
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Strict complete record validation
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Coordinator actual terminal receipt, exact owner input and log hash independently
+    verified; no rerun or future result claimed.
+  target_ids:
+  - cmmmech:lithiophilite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Canonical history validation
+  command: uv run --locked cmmmech validate-history --base e0bffe8eb1c6e359f35d9c52c74a95a4efdc2b9d
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Coordinator actual terminal receipt, exact owner input and log hash independently
+    verified; no rerun or future result claimed.
+  target_ids:
+  - cmmmech:lithiophilite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Generated page freshness
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Coordinator actual terminal receipt, exact owner input and log hash independently
+    verified; no rerun or future result claimed.
+  target_ids:
+  - cmmmech:lithiophilite
+  evidence_ids:
+  - batch
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species, specimen and authority scope
+  outcome: supported
+  summary: Current Fe2+-dominant triphylite and Mn2+-dominant lithiophilite are separate
+    species. Losey natural crystals contain Fe/Mn/Mg substitutions; near-boundary
+    Trip50 is not a clean endmember. Li2O used for matrix correction and fixed site
+    occupancy cannot independently quantify lithium. Pbnm/Pmnb settings do not define
+    separate species.
+  target_ids:
+  - cmmmech:lithiophilite
+  evidence_ids:
+  - owner
+  - losey
+  - ima
+  - handbook
+  - nomenclature
+- assessment_id: biology
+  area: scope
+  topic: Biomass, organism and deployment
+  outcome: supported
+  summary: All accepted experiments are abiotic. No taxon/strain or microbial causality
+    is asserted; no constituent criticality or industrial deployment is inferred.
+    Natural pegmatite identity and synthetic assay material remain distinct.
+  target_ids:
+  - cmmmech:lithiophilite
+  evidence_ids:
+  - owner
+  - losey
+  - oxidation
+- assessment_id: conditions
+  area: evidence
+  topic: Synthetic LiMnPO4 arm and unmatched comparator
+  outcome: supported
+  summary: Tri74 uses49.7mg fine synthetic powder,10.5mg KMnO4,1mL0.1NHCl,120°C28days.
+    The700°C2day step makes Li3PO4 precursor and is not a documented final LiMnPO4
+    firing schedule. Natural triphylite arms differ in oxidant dose,time,grain size
+    and provenance; a same-conditions phrase does not make a matched species comparison.
+  target_ids:
+  - cmmmech:lithiophilite
+  evidence_ids:
+  - owner
+  - oxidation
+- assessment_id: quantity
+  area: quantity
+  topic: Conditional null and measurement limits
+  outcome: supported
+  summary: Table4/Results report unchanged phase/lattice and Rwp12.4%. This refutes
+    detected bulk phase conversion in that arm. No direct Mn-valence or solution-Li
+    assay establishes zero oxidation, zero dissolution or universal resistance. Reference-card/b-parameter
+    inconsistencies remain explicit; fitted diffraction agreement is not purity or
+    recovery yield.
+  target_ids:
+  - cmmmech:lithiophilite
+  evidence_ids:
+  - owner
+  - oxidation
+- assessment_id: natural
+  area: evidence
+  topic: Natural-crystal identity separate from assay
+  outcome: supported
+  summary: Trip06/Trip27 natural Mn-rich crystals belong to the structural series
+    and differ from synthetic Tri74. Assumed Li content, fixed occupancies and unresolved
+    structure-factor access are retained. Corrected Table2 printed1108 has been directly
+    verified.
+  target_ids:
+  - cmmmech:lithiophilite
+  evidence_ids:
+  - owner
+  - losey
+  - handbook
+- assessment_id: supplement
+  area: consistency
+  topic: Source arithmetic and quantitative exclusions
+  outcome: supported
+  summary: Complete official workbook inspected without executing macros or accepting
+    cached values blindly. Calculation B34 uses B24*29.88/2 while neighboring restored-weight
+    quantities include B14. Table3 adopts4.73; the alternative scaling calculation
+    is only a source clarification question. Neither mineral record uses it as yield
+    or independently measured lithium.
+  target_ids:
+  - cmmmech:lithiophilite
+  evidence_ids:
+  - si_workbook
+  - si_check
+  - nomenclature
+- assessment_id: provenance
+  area: provenance
+  topic: Histories, native target and actual gates
+  outcome: supported
+  summary: Exact current owner/history inputs were captured through native inspect;
+    original history and observations remain immutable. Independent named validation
+    and actual completed corrected batch receipt are bound. Canonical whole-corpus
+    review checking and publication coverage remain later coordinator gates.
+  target_ids:
+  - cmmmech:lithiophilite
+  evidence_ids:
+  - owner
+  - history0
+  - history1
+  - named
+  - batch
+- assessment_id: resolution
+  area: consistency
+  topic: Exact F1 retirement and immutable correction scope
+  outcome: supported
+  summary: F1 is explicitly resolved with matching stable key, canonical target, exact
+    predecessor hash and original printed page. The preserved initial pending-check
+    sentence is transparently corrected as timing prose; it does not imply an owner
+    defect or a missing final gate.
+  target_ids:
+  - cmmmech:lithiophilite
+  evidence_ids:
+  - initial_review
+  - comparison
+  - addendum
+  - losey
+  - initial_batch
+  - batch
+findings:
+- finding_id: F1
+  issue_key: lithiophilite-round93-losey-table2-page
+  category: evidence
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Correct the original page locator for Losey Table2
+  description: The explanation locates Tables1–2 on pages1107 and1109. Table1 is on1107,
+    but Table2 is on1108. Replace only the incorrect page locator; preserve all scientific
+    limitations and source identity.
+  target_ids:
+  - cmmmech:lithiophilite
+  field_paths:
+  - mechanisms[0].evidence[2].explanation
+  evidence_ids:
+  - owner
+  - losey
+  - initial_review
+  - old_owner
+  - comparison
+  - addendum
+  - named
+  - batch
+  rule_id: exact-primary-locator
+  native_severity: minor
+  normalization_reason: A bounded citation-locator defect; material identity, measurements
+    and interpretation are not challenged by this finding.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lithiophilite.yaml
+    role: maintained scientific owner
+  disposition_reason: Original printed Table2 is on1108/PDF4, while Table1 is on1107/PDF3.
+    The corrected owner changes1109 to1108 only in mechanisms[0].evidence[2], with
+    actual appended inline EDIT and canonical EDIT. Independent parsed comparison,
+    original graphics, named validation and completed corrected four-command batch
+    verify issue327 acceptance; no scientific quantity or interpretation changed.
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261015T104230Z-lithiophilite-round93-initial-locator
+    finding_id: F1
+actions: []
+limitations:
+- Natural substituted crystals, synthetic LiMnPO4 assay and distinct powder/cuboid
+  experiments are not pooled as equivalent feeds or independent replication.
+- No microbial cause, isolated lithium product, absolute phase purity, aqueous mass
+  balance or industrial deployment is established.
+- The original2013 reference-card/lattice values and unmatched comparison wording
+  are retained as source limits; no exact disputed lattice value is silently corrected.
+- Losey deposited structure factors/anisotropic parameters were not acquired. No additional
+  supplement was inferred from an abstract; bounded notice searches do not prove universal
+  absence.
+- Source workbook basis issue329 remains a clarification question; neither4.73 nor
+  an alternative rescaled Li2O weight fraction is adopted as measured extraction.
+- Whole-corpus native review-check and exact current review coverage follow saved
+  reviews and are separate publication gates.
+notes:
+- Shared acquisition is disclosed; sources and graphics were independently assessed
+  after native target inspection. No owner/history edits were made by this reviewer.
+- Formal final verification interval begins with the timestamped exact-current native-inspection/named-check
+  wrapper; broad source reading began earlier without an exact separate start-time
+  record.
+- Complete article graphics/tables and authority pages were visually inspected. Workbook
+  native formulas/cached values were read, not a rendered Excel recalculation.
+- 'Issue327: https://github.com/CultureBotAI/CMMMech/issues/327. Source-only workbook
+  clarification remains open as issue329.'
+- 'The initial partial review pending-check prose was stale for the first batch: it
+  had completed10:40:40Z before the10:42:30Z initial save. That review made no final
+  positive acceptance claim. Current acceptance binds the subsequent corrected batch.'
+- Earlier rejected drafts were external and unsaved (YAML alias and target formatting);
+  proper canonical target inspection was recaptured before the sole initial native
+  save.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261015T104230Z-lithiophilite-round93-initial-locator
+  relationship: follow_up
+```

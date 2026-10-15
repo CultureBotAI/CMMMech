@@ -1,0 +1,84 @@
+--- /private/tmp/cmm-round93-hosted-preparation-20261015T104224Z.py
++++ /private/tmp/cmm-round93-hosted-peer.py
+@@ -6,7 +6,7 @@
+ parser=argparse.ArgumentParser();parser.add_argument('--pr',required=True,type=int);parser.add_argument('--head',required=True);parser.add_argument('--tree',required=True);args=parser.parse_args();N=args.pr
+ TRUSTED_BASE='e0bffe8eb1c6e359f35d9c52c74a95a4efdc2b9d'
+ EXPECTED_SLUGS={'beudantite','corkite','lithiophilite','pig-manure','thallium','triphylite'}
+-EXPECTED_COUNTS={'record_count':446,'history_count':508,'structured_review_count':525,'review_base_count':94,'covered_records':446}
++EXPECTED_COUNTS={'record_count':446,'history_count':510,'structured_review_count':527,'review_base_count':94,'covered_records':446}
+ now=lambda:datetime.now(timezone.utc).isoformat().replace('+00:00','Z');sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest();digest=lambda x:hashlib.sha256(json.dumps(x,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+ start=now();stamp=datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'-'+uuid.uuid4().hex[:6];out=T/f'cmm-round93-hosted-audit-{stamp}.json';result={'started_at':start,'pr':N,'passed':False,'findings':[],'pending':[]};calls=[]
+ def need(condition,message):
+@@ -30,6 +30,30 @@
+ def binding(p):return {'path':str(p),'sha256':sha(p)}
+ def check_log_receipt(p):
+  d=load(p);need(d['exit_code']==0 and sha(d['log'])==d['log_sha256'],'Failed/unbound gate '+str(p));return d
++def verify_native_lineage(selected, changed_reviews, reader, hash_reader):
++ """Require schema-valid terminal findings and exact hashed predecessor retirement."""
++ retired=set();dispositions=[]
++ for v in selected:
++  for f in v.get('findings',[]):
++   need(f['status'] in ('resolved','rejected'),'Selected finding is not terminal resolved/rejected')
++   need(f.get('issue_key'),'Selected terminal finding lacks stable key')
++   need(f.get('disposition_reason') and f.get('previous_occurrences'),'Terminal finding lacks explicit predecessor/reason')
++   for prev in f['previous_occurrences']:
++    need(prev.get('repository','CultureBotAI/CMMMech')=='CultureBotAI/CMMMech','Foreign predecessor requires separate assessment')
++    path='reviews/structured/'+prev['review_id']+'/review.yaml';prior=reader(path)
++    need(prior['review_id']==prev['review_id'],'Prior review identity mismatch')
++    pf=next((x for x in prior.get('findings',[]) if x['finding_id']==prev['finding_id']),None)
++    need(pf is not None and pf.get('issue_key')==f.get('issue_key') and bool(set(pf.get('target_ids',[])) & set(f.get('target_ids',[]))),'Prior finding identity/key/target mismatch')
++    h=hash_reader(path)
++    bound=any(i['path']==path and i['sha256']==h for i in v['source']['inputs']) or any(e.get('snapshot_sha256')==h and (e.get('reference') in (path,prev['review_id']) or path in e.get('locator','')) for e in v.get('evidence',[]))
++    need(bound,'Predecessor artifact is not exact-hash bound')
++    retired.add((prev['review_id'],prev['finding_id']));dispositions.append({'review_id':v['review_id'],'finding_id':f['finding_id'],'status':f['status'],'previous_review':prev['review_id'],'previous_finding':prev['finding_id'],'previous_sha256':h,'issue_key':f['issue_key']})
++ for v in changed_reviews:
++  for f in v.get('findings',[]):
++   if f['status'] in ('open','deferred','accepted_risk'):
++    need((v['review_id'],f['finding_id']) in retired,'Current-package predecessor has no selected explicit terminal disposition')
++ return dispositions
++
+ def conversation_inventory():
+  _,reviews=pages(f'repos/{repo}/pulls/{N}/reviews');_,comments=pages(f'repos/{repo}/issues/{N}/comments');_,inline=pages(f'repos/{repo}/pulls/{N}/comments');threads=[];cursor=None
+  while True:
+@@ -53,18 +77,19 @@
+  expected_ids={slug:row['review_id'] for slug,row in selection['reviews'].items()}
+  for r in report['records']:
+   rp=W/r['path'];vpath=W/r['review']['path'];v=y(vpath);record=y(rp);need(sha(rp)==r['sha256'] and record['id']==r['id'] and record['history_refs']==r['history_refs'],'Owner/report/history refs mismatch '+r['slug']);need(v['review_id']==expected_ids[r['slug']]==r['review']['review_id'] and sha(vpath)==r['review']['review_sha256']==selection['reviews'][r['slug']]['sha256'] and r['review']['path']==selection['reviews'][r['slug']]['path'],'Wrong final scientific review '+r['slug'])
+-  need(v['completion']=='completed' and v['scientific_review'] is True and v['verdict'] in ['pass','pass_with_limitations'] and v['reviewer']['independence']=='independent','Scientific acceptance invalid');need(not v['findings'],'Unexpected corrective finding requiring explicit review')
++  need(v['completion']=='completed' and v['scientific_review'] is True and v['verdict'] in ['pass','pass_with_limitations'] and v['reviewer']['independence']=='independent','Scientific acceptance invalid')
+   need(r['id'] in v['scope']['reviewed_target_ids'] and any(t['target_id']==r['id'] and t['path']==r['path'] for t in v['targets']) and any(i['path']==r['path'] and i['sha256']==r['sha256'] for i in v['source']['inputs']),'Owner target/hash/scope mismatch')
+   need(v['source']['git_revision']==c['base'] and v['source']['state']=='working_tree','Review base/state mismatch')
+   for i in v['source']['inputs']:need(sha(W/i['path'])==i['sha256'],'Selected review input changed '+i['path'])
+   for h in r['history_refs']:need(any(i['path']==h and i['sha256']==sha(W/h) for i in v['source']['inputs']),'Canonical history input unbound')
+-  need(record['curation_history'] and all(e['action']=='CREATE' for e in record['curation_history']),'Unexpected owner edit history')
++  need(record['curation_history'] and record['curation_history'][0]['action']=='CREATE' and all(e['action']=='EDIT' for e in record['curation_history'][1:]),'Unexpected owner history action sequence')
+   if r['slug']=='pig-manure':need(v['reviewer']['identity']=='codex /root/round68_phosphates','Own authored owner lacks separate reviewer')
+   need(any(e['kind']=='primary_source' and e['support']=='supports' for e in v['evidence']),'No supporting primary evidence selected')
+   for e in v['evidence']:
+    if e['kind']!='primary_source':continue
+    loc=e.get('locator','');m=re.search(r'(?:Actual local artifact|Artifact):\s*(/private/tmp/.*)$',loc,re.I);need(m is not None,'No exact raw primary locator '+e['evidence_id']);p=Path(m.group(1).strip());need(p.is_file() and p.stat().st_size>0 and sha(p)==e['snapshot_sha256'],'Primary source binding fails '+str(p));primary.append({'review_id':v['review_id'],'evidence_id':e['evidence_id'],**binding(p),'bytes':p.stat().st_size})
+   selected.append({'slug':r['slug'],'id':r['id'],'owner':binding(rp),'history':[binding(W/h) for h in r['history_refs']],'review':binding(vpath),'markdown':binding(vpath.with_suffix('.md')),'review_id':v['review_id'],'reviewer':v['reviewer'],'verdict':v['verdict']})
++ result['native_finding_dispositions']=verify_native_lineage([y(x['review']['path']) for x in selected],[y(W/p) for p in paths if p.startswith('reviews/structured/') and p.endswith('/review.yaml')],lambda p:y(W/p),lambda p:sha(W/p))
+  result.update(selected_scientific_reviews=selected,primary_evidence_bindings=primary,report=binding(reportp),authorship='Authored pig-manure; its independent phosphate-agent scientific review is relied upon. Independently reviewed thallium and beudantite. This is operational package/hosted verification, not fresh scientific self-acceptance.')
+  gates=check_log_receipt(T/'cmm-round93-final-gates.json');need(gates['base']==c['base'] and gates['inputs_unchanged'] and all(x['exit_code']==0 for x in gates['commands']),'Final gate mismatch');need(len(gates['record_inputs'])==cfg['counts']['record_count'] and all(sha(W/p)==h for p,h in gates['record_inputs'].items()),'Final gate owner hash set mismatch')
+  requirements=[['just','check'],['uv','run','--locked','cmmmech','validate','--require-records'],['uv','run','--locked','cmmmech','validate-history','--base',c['base']],['uv','run','--locked','python','scripts/render_pages.py','--check']];need([x['command'] for x in gates['commands']]==requirements,'Missing final batch command');need('317 passed, 3 skipped' in Path(gates['log']).read_text(),'Actual full-suite summary absent')
+@@ -96,6 +121,10 @@
+  for n,filename in issue_receipts.items():
+   issue=api(f'repos/{repo}/issues/{n}');op=W/'reviews/publication/20261015-round93'/filename;old=load(op);expected=old['issue'];need(issue['state']=='open' and expected['number']==n and issue['title']==expected['title'] and issue['body']==expected['body'] and hashlib.sha256(issue['body'].encode()).hexdigest()==old['body_sha256'],'Source issue changed '+str(n));issues.append(issue)
+  result['live_issues']=issues
++ corrective_path=T/'cmm-round93-corrective-issue-ledger.json';corrective_ledger=load(corrective_path);need(isinstance(corrective_ledger,list) and len(corrective_ledger)==len({x['number'] for x in corrective_ledger}),'Malformed corrective ledger');need({x['number'] for x in report['corrective_issues']}=={x['number'] for x in corrective_ledger},'Report corrective issue set differs');corrective=[]
++ for row in corrective_ledger:
++  n=row['number'];need(row['state']=='CLOSED' and n not in issue_receipts,'Corrective/source issue class mismatch');initialp=W/'reviews/publication/20261015-round93'/row['initial_receipt'];closedp=W/'reviews/publication/20261015-round93'/row['closure_receipt'];initial=load(initialp);closed=load(closedp);live=api(f'repos/{repo}/issues/{n}');need(closed['passed'] and closed['issue']['number']==n and closed['issue']['state']=='CLOSED' and live['number']==n and live['state']=='closed','Corrective closure incomplete');need(closed['initial_receipt_sha256']==sha(initialp),'Closure initial receipt hash differs');need(live['title']==initial['issue']['title']==closed['issue']['title'] and live['body']==initial['issue']['body']==closed['issue']['body'],'Corrective live content differs');corrective.append({'number':n,'live':live,'initial':binding(initialp),'closure':binding(closedp)})
++ result['corrective_issues']=corrective;input_bindings.extend([binding(T/'cmm-round93-issue-ledger.json'),binding(corrective_path),binding(body)])
+  pp=T/'cmm-round93-preflight-committed-terminal.json'
+  if not pp.exists():result['pending'].append('Committed isolated preflight not yet terminal')
+  else:
+@@ -106,7 +135,7 @@
+  result['passed']=not result['pending'];result['status']='passed' if result['passed'] else 'pending';result['limitations']=['Operational current-head acceptance relies on separate independent science for the authored pig-manure record. No source or immutable review was modified.','Queue admission, merge-group checks, actual merge tree/parent, owned branch cleanup, fresh-main provenance and original-main synchronization remain future gates.','All reads were bounded to the exact committed package and hosted PR. No new literature or full-suite execution occurred.']
+  if result['passed']:
+   counts=cfg['counts'];issue_labels=', '.join('#'+str(n) for n in sorted(issue_receipts))
+-  comment=f"Independent operational review of exact head `{c['head']}` (tree `{c['tree']}`).\n\nVerified all {len(paths)} paginated changed-file blobs, the sole reviewed-base parent, live title/body, all review/comment/thread surfaces, and six exact independent scientific reviews with owner/history/source bindings. Completed local checks and isolated squash-shaped preflight passed: {counts['record_count']} records, {counts['history_count']} history sessions, {counts['structured_review_count']} native reviews, {counts['review_base_count']} available bases and {counts['covered_records']} current records covered. The local full suite passed 317 tests with 3 skipped. Required `validate-strict` passed for this exact PR head/current Actions attempt: {wr['html_url']}.\n\nI authored pig-manure and rely on its separate phosphate-agent scientific acceptance; this operational review does not self-accept that science. I independently reviewed thallium and beudantite. No supported unresolved corrective finding was found. Source clarification issues {issue_labels} remain open with their limitations represented.\n\nNative queue and merge-group checks, actual merged tree/parent, owned-branch cleanup, fresh-main provenance and protected-state verification remain required. This is a COMMENT, not an approval.\n"
++  comment=f"Independent operational review of exact head `{c['head']}` (tree `{c['tree']}`).\n\nVerified all {len(paths)} paginated changed-file blobs, the sole reviewed-base parent, live title/body, all review/comment/thread surfaces, and six exact independent scientific reviews with owner/history/source bindings. Completed local checks and isolated squash-shaped preflight passed: {counts['record_count']} records, {counts['history_count']} history sessions, {counts['structured_review_count']} native reviews, {counts['review_base_count']} available bases and {counts['covered_records']} current records covered. The local full suite passed 317 tests with 3 skipped. Required `validate-strict` passed for this exact PR head/current Actions attempt: {wr['html_url']}.\n\nI authored pig-manure and rely on its separate phosphate-agent scientific acceptance; this operational review does not self-accept that science. I independently reviewed thallium and beudantite. No supported unresolved corrective finding was found. Source clarification issues {issue_labels} remain open with their limitations represented. Corrective review issues {', '.join('#'+str(x['number']) for x in corrective_ledger)} are closed with retained original findings and verified dispositions.\n\nNative queue and merge-group checks, actual merged tree/parent, owned-branch cleanup, fresh-main provenance and protected-state verification remain required. This is a COMMENT, not an approval.\n"
+   q=T/'cmm-round93-hosted-review-comment.md';need(not q.exists() or q.read_text()==comment,'Existing COMMENT differs; preserve before revising');q.write_text(comment);result['comment_draft']=binding(q)
+ except Exception as exc:
+  result['passed']=False;result['status']='needs_attention';result['error']=str(exc)

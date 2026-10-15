@@ -1,0 +1,21 @@
+{
+  "recorded_at": "2026-10-15T10:40:30.810517+00:00",
+  "issue": {
+    "body": "Independent publication review found a minor operational assurance gap in the round93 external `post-review.py` helper. Stable key: `CMMMech.round93.post-review-comment-binding`; observation OP1.\n\nThe helper verifies the accepted peer receipt and live PR, but its initial version reads a fixed COMMENT file without requiring that file's path and SHA-256 to equal the peer receipt's `comment_draft` binding. Changed comment bytes could therefore be posted without acceptance by that peer review. This is a posting-consumer gap, separate from #323's closeout/receipt-copy contract. No unreviewed comment was posted.\n\nAcceptance: bind the exact COMMENT path and bytes to the accepted peer producer before request creation or POST; recheck before mutation; preserve that binding in the posted receipt. Independently exercise the valid case and mismatched path/hash/content cases without network mutations. Save the initial observation, corrected helper and verification disposition with the publication evidence. Do not change any scientific owner or governed artifact for this fix.\n\nThe initial helper and independent observation are preserved externally as `cmm-round93-comment-binding-initial-20261015T103919Z.{py,json,md}` and will be retained in the publication package. Initial helper SHA-256: `956284c23cfa64095d9466f88d42b396411227bb8a0dd31d2fa3e85a68fdb213`.\n",
+    "number": 326,
+    "state": "OPEN",
+    "title": "Bind the posted PR review comment to its accepted peer receipt",
+    "url": "https://github.com/CultureBotAI/CMMMech/issues/326"
+  },
+  "issue_key": "CMMMech.round93.post-review-comment-binding",
+  "initial_helper_sha256": "956284c23cfa64095d9466f88d42b396411227bb8a0dd31d2fa3e85a68fdb213",
+  "prior_issue_checked": {
+    "body": "The independent operational review of PR #322 found two defects in the external round92 publication helpers before either helper was executed:\n\n1. `/private/tmp/cmm-round92-finalize.py` assumes that the hosted peer JSON has a same-name Markdown companion. The frozen peer helper actually emits a unique JSON receipt and `cmm-round92-hosted-review-comment.md`. Finalization would copy earlier files into its destination and then fail on the nonexistent companion, preventing its guarded retry.\n2. `/private/tmp/cmm-round92-closeout.py` checks broad success and merge/tree fields but needs exact input bindings for all completion claims before posting: head/base, preflight and published-main results, coverage counts, retained provenance, branch cleanup, and preservation of the 7,249 baseline nontracked entries.\n\nThese are publication-helper findings, not scientific record defects. The affected helpers are external session files and have not been executed; the 77-file PR candidate remains unchanged.\n\nRequired resolution:\n\n- Preserve the original helper bytes and independent findings.\n- Consume the actual peer receipt/comment artifacts and verify their recorded hashes.\n- Validate every source and unique target before creating the durable report directory.\n- Bind all stated completion claims to the exact reviewed commit/tree/base, actual merge, successful commands and measured counts before any GitHub comment.\n- Independently review the fix, execute only after required runtime evidence exists, and retain the verification in the durable publication report.\n",
+    "number": 323,
+    "state": "CLOSED",
+    "title": "Harden round92 publication closeout inputs before posting completion",
+    "url": "https://github.com/CultureBotAI/CMMMech/issues/323"
+  },
+  "body_sha256": "eb810489346bbb33664b57ce7bd1f1ce17a2f25a28a4c09f261fd31e0e6ac524",
+  "inventory_entries": 221
+}

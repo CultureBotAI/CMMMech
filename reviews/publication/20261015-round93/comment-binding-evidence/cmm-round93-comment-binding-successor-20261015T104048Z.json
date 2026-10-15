@@ -1,0 +1,77 @@
+{
+  "started_at": "2026-10-15T10:40:48.344614+00:00",
+  "finished_at": "2026-10-15T10:40:48.351979+00:00",
+  "passed": true,
+  "verdict": "resolved",
+  "scientific_review": false,
+  "scope": "Independent bounded static successor plus actual AST-extracted COMMENT guards in isolated temporary fixtures. No top-level helper, Git or GitHub mutation executed.",
+  "files": [
+    {
+      "path": "/private/tmp/cmm-round93-post-review.py",
+      "sha256": "51e755e796c5ec37876f54a956567ffd09ec1327e7d761ae95319047bf2a0327",
+      "snapshot": "/private/tmp/cmm-round93-comment-binding-successor-20261015T104048Z.py"
+    }
+  ],
+  "previous_occurrences": [
+    {
+      "path": "/private/tmp/cmm-round93-comment-binding-initial-20261015T103919Z.json",
+      "sha256": "ff2a36bbde757e3734fedc21a22b8599b0d4edc268c0a783bda9ae4ef9065fe9",
+      "finding_id": "OP1",
+      "issue_key": "CMMMech.round93.post-review-comment-binding"
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "OP1",
+      "issue_key": "CMMMech.round93.post-review-comment-binding",
+      "severity": "minor",
+      "status": "resolved",
+      "summary": "Fixed-path/non-symlink and exact SHA guards precede request creation; closing hash and captured-text equality guard verified independently. Actual six focused guards pass."
+    }
+  ],
+  "checks": [
+    {
+      "case": "valid",
+      "expected_accept": true,
+      "actual_accept": true,
+      "passed": true
+    },
+    {
+      "case": "wrong_path",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    },
+    {
+      "case": "wrong_hash",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    },
+    {
+      "case": "changed_file_after_first_guard",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    },
+    {
+      "case": "captured_text_mismatch",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    },
+    {
+      "case": "symlink",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    }
+  ],
+  "fixture_source": {
+    "path": "/private/tmp/cmm-round93-comment-binding-check.py",
+    "sha256": "5e38604e708672b56597a65836380b176b7318646590dba0fe3084956dc45aff"
+  },
+  "limitations": [
+    "Static and extracted-guard verification only. Actual peer receipt and unchanged COMMENT remain runtime prerequisites; no posted review claimed."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "recorded_at": "2026-10-15T10:51:45.741652+00:00",
+  "issue": {
+    "body": "Independent static review of the new round93 external finalizer found an operational receipt-binding gap (OP1; stable key `round93-finalize-hosted-receipt-binding`). Its initial assertions accepted a peer receipt for the wrong PR number and five arbitrary successful workflow-role entries. The hosted-five producer already verifies the actual API observations; this finding concerns the final report consumer, not an observed hosted failure or a scientific-record defect.\n\nBefore runtime, bind the peer to the actual PR and the hosted producer's input hashes to the current commit/config/queue/preflight/peer/comment receipts. Require the five specific workflow roles and reconcile their run/event/head/attempt/job identities with the retained raw producer responses. Keep the copy-plan prevalidation and original-main preservation guards.\n\nAcceptance: independent negative cases must reject mismatched PR, input hashes and role/run/job identities while accepting a coherent fixture; preserve the initial observation, fixed helper and successor evidence. Actual postmerge finalization remains a later runtime gate. This is distinct from #326, which concerns posting the COMMENT before finalization.\n\nInitial evidence: `cmm-round93-finalize-static-initial-20261015T105005Z.{json,md}` and the independently retained original helper snapshot. No finalization was executed before review.\n",
+    "number": 330,
+    "state": "OPEN",
+    "title": "Bind final publication report to exact hosted receipts and workflow identities",
+    "url": "https://github.com/CultureBotAI/CMMMech/issues/330"
+  },
+  "issue_key": "round93-finalize-hosted-receipt-binding",
+  "body_sha256": "b3f4a1491b3e799d95560c762138924d686e604a1e4e618fc3d4a35514d1de26",
+  "inventory_entries": 225
+}

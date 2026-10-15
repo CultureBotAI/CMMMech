@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-10-15T10:42:12.241522+00:00",
+  "issue": {
+    "body": "Independent publication review found a minor operational assurance gap in the round93 external `post-review.py` helper. Stable key: `CMMMech.round93.post-review-comment-binding`; observation OP1.\n\nThe helper verifies the accepted peer receipt and live PR, but its initial version reads a fixed COMMENT file without requiring that file's path and SHA-256 to equal the peer receipt's `comment_draft` binding. Changed comment bytes could therefore be posted without acceptance by that peer review. This is a posting-consumer gap, separate from #323's closeout/receipt-copy contract. No unreviewed comment was posted.\n\nAcceptance: bind the exact COMMENT path and bytes to the accepted peer producer before request creation or POST; recheck before mutation; preserve that binding in the posted receipt. Independently exercise the valid case and mismatched path/hash/content cases without network mutations. Save the initial observation, corrected helper and verification disposition with the publication evidence. Do not change any scientific owner or governed artifact for this fix.\n\nThe initial helper and independent observation are preserved externally as `cmm-round93-comment-binding-initial-20261015T103919Z.{py,json,md}` and will be retained in the publication package. Initial helper SHA-256: `956284c23cfa64095d9466f88d42b396411227bb8a0dd31d2fa3e85a68fdb213`.\n",
+    "closedAt": "2026-10-15T10:42:10Z",
+    "number": 326,
+    "state": "CLOSED",
+    "title": "Bind the posted PR review comment to its accepted peer receipt",
+    "url": "https://github.com/CultureBotAI/CMMMech/issues/326"
+  },
+  "passed": true,
+  "initial_receipt_sha256": "2bc6d1563808db666757b07b1af17e0a7d5ef3616e7dca0b25820028a260f7ef",
+  "successor": "/private/tmp/cmm-round93-comment-binding-successor-20261015T104048Z.json",
+  "successor_sha256": "1a9de2fb5013166f3fbaca41dde170dbb3286b3f9f6a8756854cd8a2946bbaf2",
+  "comment_sha256": "28dd9a25cafc92ecd0b92dae6022772b705804edb32a2b49b8bca7301e1a752e",
+  "evidence_manifest": "reviews/publication/20261015-round93/comment-binding-evidence/manifest.json"
+}

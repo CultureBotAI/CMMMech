@@ -1,0 +1,129 @@
+id: cmmmech:corkite
+name: Corkite
+material_kind: mineral
+description: Corkite is the lead ferric sulfate-phosphate hydroxide mineral with ideal formula PbFe3(SO4)(PO4)(OH)6,
+  distinct from arsenate-bearing beudantite, plumbojarosite, pyromorphite and elemental lead. The September
+  2026 IMA list records its redefinition by special procedure in 1987. Ferrenti et al. (2023) synthesized
+  corkite-bearing powders and characterized their structure and thermal behavior. The best products remained
+  mixed with approximately 9.5 weight percent Pb5(PO4)3Cl; refined phase fractions are not synthesis yield
+  or absolute purity. The authors favor centrosymmetric R-3m from combined diffraction and vibrational
+  evidence, whereas the Handbook lists R3m for natural material. Both diffraction models fit similarly,
+  and substitution, disorder and sample differences remain relevant. The accepted processes are laboratory
+  abiotic synthesis and thermal alteration, without microbial activity, recovered-metal product or industrial
+  demonstration. Criticality is not inherited from constituent elements.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Definitions PDF page 1; Corkite row
+    page 50, ideal PbFe3+3(SO4)(PO4)(OH)6, Rd, 1987 special procedure. Complete current authority and
+    row visually inspected.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-15'
+- id: handbook
+  title: Handbook of Mineralogy, Corkite. Complete one-page entry, printed page 126; ideal formula, natural
+    composition and noncentrosymmetric R3m cell assignment. This historical natural-specimen context is
+    distinguished from the synthetic R-3m assignment in Ferrenti et al.
+  url: https://handbookofmineralogy.org/pdfs/corkite.pdf
+  accessed_on: '2026-10-15'
+- id: ferrenti2023
+  title: Ferrenti AM, Meschke V, Ghosh S, Davis J, Drichko N, Toberer ES and McQueen TM (2023). Hydrothermal
+    synthesis of ordered corkite, PbFe3(PO4)(SO4)(OH)6, a S = 5/2 kagomé antiferromagnet. Journal of Solid
+    State Chemistry 317:123620. DOI 10.1016/j.jssc.2022.123620, published online in 2022. Complete nine-page
+    original; Sections 2.1-2.3, Figures 1-3 and Tables 1-4. Figures 4-5 concern magnetic measurements
+    and are not independent synthesis replication.
+  url: https://doi.org/10.1016/j.jssc.2022.123620
+  accessed_on: '2026-10-15'
+- id: ferrenti_dataset
+  title: Ferrenti et al. Public PARADIM dataset accompanying the corkite study, DOI 10.34863/pq8p-sj50.
+    Original diffraction, refinement, spectroscopy, thermal, magnetic and heat-capacity files. Of 24
+    distinct linked files, 23 were acquired; Figure 2/Undried_corkite_Raman.ngs returned HTTP 404 and was
+    not inspected. Fe R3m/R-3m refinement text was inspected as supporting data, not independently re-refined. This is the same experimental lineage as the article.
+  url: https://doi.org/10.34863/pq8p-sj50
+  accessed_on: '2026-10-15'
+mechanisms:
+- id: abiotic_hydrothermal_formation
+  name: Abiotic formation of corkite-bearing mixed powder
+  process: other
+  microbial: false
+  description: Hydrothermal treatment of prepared lead phosphate-chloride and iron phosphate/sulfate/chloride
+    reagents formed a diffraction-assigned corkite phase together with residual Pb5(PO4)3Cl. This is a
+    chemical synthesis experiment, not microbial precipitation, ore extraction or product recovery.
+  context: Section 2.1 reports a ground mixture of 0.95 mol Pb5(PO4)3Cl, 2.00 mol FePO4, 1.67 mol Fe2(SO4)3·9H2O
+    and 9.67 mol FeCl3·6H2O in a Teflon-lined vessel, approximately 70 percent filled with water, with
+    three drops of approximately 5 M H2SO4. It was sealed and heated at 98 degrees C for four days, with
+    100 degrees C per hour heating/cooling ramps. These amounts are the source's mol labels; actual batch
+    mass, vessel capacity and drop volume are not given, and no alternative mmol scale is inferred. Pb5(PO4)3Cl
+    and FePO4 precursors were separately prepared by high-temperature solid-state treatments. Concentrated
+    sodium acetate washes removed PbSO4 impurity, while 1 M KOH only partly removed Pb5(PO4)3Cl and also
+    attacked the target material. No organism, biomass or culture-derived reagent was used. The study
+    compares reaction conditions but does not state independent replicate counts for each synthesis condition.
+  evidence:
+  - source_ref: ferrenti2023
+    supports: support
+    explanation: Section 2.1 pages 2-3, Figure 1c page 2 and Section 2.3 page 4 report best results with
+      a 5 percent deficiency of the lead precursor and a two-phase refined Pb5(PO4)3Cl impurity fraction
+      of 9.5(1) weight percent; Figure 1 caption rounds corkite content to approximately 91 percent. This
+      fraction is relative to modeled phases and does not quantify isolated yield, amorphous content or
+      elemental mass balance. Some other preparations had an additional weak unassigned complex Pb/Fe-phosphate
+      reflection near 8.8 degrees 2theta. Reactions shorter than four days produced only minimal corkite;
+      longer treatments decreased corkite and increased other products. These null and competing outcomes
+      limit any claim of complete conversion or universal phase stability.
+  - source_ref: ferrenti2023
+    supports: partial
+    explanation: Section 2.3, Figures 1-2 and Tables 1-4 support the source-assigned corkite structure
+      with a = 7.3078(3), c = 16.855(2) angstrom. R-3m and R3m powder refinements have similar Rwp values,
+      2.61 and 2.51 percent, respectively; diffraction alone does not distinguish inversion symmetry.
+      The authors favor R-3m using IR/Raman mutual exclusion and discuss phosphate/sulfate disorder. Refined
+      Fe occupancy in Table 2 is 0.830(6), and most other occupancies were fixed rather than independently
+      measured. The ideal formula is therefore not proof of exact batch stoichiometry. Table 1's Z/density
+      entries are not used to infer an independently verified density or phase yield.
+  - source_ref: ferrenti_dataset
+    supports: support
+    explanation: Figure 1 Fe-corkite_R-3m_refinement.pro and Fe-corkite_R3m_refinement.pro contain the
+      two alternative space-group refinements and the separate P63/m Pb5(PO4)3Cl component. These are
+      archived source fits supporting the reported mixed-phase interpretation, not new experimental replication
+      or an independent refinement performed during curation.
+- id: abiotic_thermal_alteration
+  name: Abiotic dehydration, dehydroxylation and decomposition of synthetic corkite-bearing powder
+  process: other
+  microbial: false
+  description: Heating the synthetic mixed powder changed its hydroxyl-related vibrational bands and caused
+    staged mass loss. The authors interpret the lower-temperature events as dehydration and partial dehydroxylation
+    and the higher-temperature event as corkite decomposition. Thermal measurements are not an extracted
+    lead product or a microbial transformation.
+  context: Sections 2.2-2.3 used separate ex situ overnight air anneals, including 150 degrees C for magnetic
+    measurements and 200 degrees C for spectroscopy, and TGA/DTA heating under 100 mL/min N2 from 50 to
+    600 degrees C at 10 degrees C/min. These atmospheres, durations and preparations are not treated as
+    identical conditions. Samples retained the precursor impurity; total mass loss is measured relative
+    to the analyzed mixed sample. Independent replicate thermal runs and uncertainty of each inferred
+    water-loss partition are not specified.
+  evidence:
+  - source_ref: ferrenti2023
+    supports: support
+    explanation: Figure 2a-b page 5 shows strongly diminished hydroxyl bands after 200 degrees C annealing,
+      while Section 2.3 reports no clear powder diffraction change up to that temperature. Figure 3 page
+      6 shows a lower-temperature endotherm near 173 degrees C within an approximately 2 percent total
+      mass loss and a larger event above 330 degrees C. The division into hydration water and partial
+      dehydroxylation is an interpretation, not separately isolated water species or a measured fraction
+      of pure corkite converted.
+  - source_ref: ferrenti2023
+    supports: partial
+    explanation: Section 2.3 page 6 reports corkite plus Fe2O3 after 300 degrees C, an amorphous pattern
+      with no observable corkite reflections after 400 degrees C, and an Fe2O3 assignment after 600 degrees
+      C. Those temperature-specific diffraction patterns are described but not displayed in the article,
+      and no lead/phosphorus/sulfur product mass balance is supplied. The source's pure-Fe2O3 wording
+      is not accepted as proof of a chemically pure recovered product. Its contrast with an earlier high-temperature
+      corkite report is a literature discrepancy, not a controlled replication under matched conditions.
+curation_history:
+- timestamp: '2026-10-15T10:32:38.354778Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Added primary-supported mineral identity and abiotic mixed-powder synthesis and thermal alteration,
+    retaining phase fractions, preparation, stoichiometry and product-balance limitations.
+- timestamp: '2026-10-15T10:48:25.661142Z'
+  curator: codex (GPT-6; codex)
+  action: EDIT
+  summary: Corrected the dataset acquisition scope to 23 of 24 linked files; the missing Raman file
+    returned HTTP 404 and was not inspected. Scientific interpretations are unchanged; addresses issue 328.
+history_refs:
+- history/records/corkite/2026-10-15T103309Z-codex-16a298.yaml
+- history/records/corkite/2026-10-15T104829Z-codex-37c824.yaml

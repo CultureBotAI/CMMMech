@@ -1,0 +1,106 @@
+id: cmmmech:thallium
+name: Thallium
+material_kind: element
+description: Thallium (Tl) is an element. Its neutral-atom identifier does not denote dissolved Tl(I),
+  a thallium mineral or a secondary resource. The curated laboratory study concerns release of aqueous
+  thallium from a synthetic, nonideal Tl(I)-bearing jarosite during bacterial ferric-iron reduction. No
+  criticality designation or industrial recovery is inferred.
+identifiers:
+- id: CHEBI:30440
+  label: thallium atom
+sources:
+- id: chebi_thallium
+  title: ChEBI:30440, thallium atom. Current official API verifies the neutral Tl atom and zero charge.
+  url: https://www.ebi.ac.uk/chebi/CHEBI:30440
+  accessed_on: '2026-10-15'
+- id: smeaton2012
+  title: 'Smeaton CM, Walshe GE, Fryer BJ and Weisener CG (2012). Reductive Dissolution of Tl(I)-Jarosite
+    by Shewanella putrefaciens: Providing New Insights into Tl Biogeochemistry. Environmental Science
+    & Technology 46:11086-11094. Bibliographic identity and abstract verified; final journal PDF was not
+    acquired.'
+  url: https://doi.org/10.1021/es302292d
+  accessed_on: '2026-10-15'
+- id: smeaton2012_chapter4
+  title: Smeaton CM (2012), University of Windsor PhD dissertation, Investigating the Susceptibility of
+    Jarosite Minerals to Reductive Dissolution by a Dissimilatory Metal Reducing Bacterium (Shewanella
+    putrefaciens CN32). Chapter 4, printed pages 113-148 (PDF 138-173), main text, Figures 4.1-4.3, Tables
+    S4.1-S4.4 and Figures S4.1-S4.7. Author primary account of the same experiment, not independent replication.
+  url: https://www.collectionscanada.gc.ca/obj/thesescanada/vol2/002/NR78584.PDF
+  accessed_on: '2026-10-15'
+- id: smeaton2012_si
+  title: Original ACS supporting information for DOI 10.1021/es302292d, 13-page PDF, sections S1-S4, Tables
+    S1-S4 and Figures S1-S6. Official DOI-matched ACS Figshare article 2477893, file 4120573.
+  url: https://doi.org/10.1021/es302292d.s001
+  accessed_on: '2026-10-15'
+- id: ncbi_cn32
+  title: 'NCBI Taxonomy 319224: Shewanella putrefaciens CN-32, strain rank, parent species 24. Current
+    official XML checked; experiment calls this CN32 (ATCC BAA-453).'
+  url: https://www.ncbi.nlm.nih.gov/datasets/taxonomy/319224/
+  accessed_on: '2026-10-15'
+mechanisms:
+- id: cn32_associated_tl_mobilization
+  name: Thallium mobilization accompanying CN32-associated jarosite reduction
+  process: redox_transformation
+  microbial: true
+  organisms:
+  - id: NCBITaxon:319224
+    label: Shewanella putrefaciens CN-32
+  description: Washed living CN32 cells were associated with ferrous-iron production and greater aqueous
+    thallium release from synthetic Tl-bearing jarosite than cell-free and autoclaved-cell mineral controls.
+    The reduced element demonstrated by the ferrozine assay is iron; direct thallium reduction is not
+    established. Substantial thallium also dissolved abiotically. This supports a laboratory mobilization
+    process, not thallium immobilization or isolated-product recovery.
+  context: Synthetic nonideal Tl-jarosite, 0.0561 +/- 0.0097 g per tube, was exposed to 15 mL modified
+    M1 medium in 20 mL tubes at 28 degrees C with 20 rpm end-over-end rotation in a 95% nitrogen/5% hydrogen
+    anaerobic chamber. Medium contained 24 mM sodium lactate and 20 mM PIPES, initially pH 7.3, without
+    added phosphate. Cells were grown aerobically at 32 degrees C, washed and divided into viable and
+    autoclaved preparations; the reported 1.65 g wet cells per 2 L is not dry biomass. Mineral-containing
+    tubes were sampled destructively in triplicate through nominal 893 hours; mineral-free live and cell-free
+    controls were sampled in duplicate. Replicate tubes share prepared inoculum and do not establish independent
+    culture-batch replication. Thallium was measured by ICP-OES after 0.2 micrometre filtration; this
+    is a filtered elemental concentration, not a recovered product or a direct oxidation-state measurement.
+  evidence:
+  - source_ref: smeaton2012_chapter4
+    supports: support
+    explanation: Chapter 4 methods/results and Figure 4.1 show approximately 4.6 mM filtered Fe(II) and
+      3.2 mM filtered Tl in living-cell mineral tubes by the nominal 893-hour endpoint, versus approximately
+      2.1 mM Tl in cell-free mineral controls. Autoclaved-cell tubes release less Tl and show negligible
+      Fe(II), as do cell-free Fe(II) controls. These are concentrations from this synthetic feed, not
+      extraction yields. Different pH trajectories and possible dead-cell surface effects preclude attributing
+      the entire between-arm difference to a single direct electron-transfer pathway.
+  - source_ref: smeaton2012_si
+    supports: partial
+    explanation: SI S1-S2, Table S2 and Figures S3-S6 constrain substrate and product interpretation.
+      The main account gives (H3O)0.29Tl0.71Fe2.74(SO4)2(OH)5.22(H2O)0.78, whereas SI S1 prints (OH)6;
+      this discrepancy is retained rather than assigning a pure mineral endmember. PIPES sulfur prevents
+      independent tracking of sulfate release. Table S2 includes stoichiometrically estimated acetate,
+      bicarbonate and sulfate despite its measured-concentrations heading. Secondary saturation indices
+      are model predictions. Local Tl/S/O enrichment in Figure S5 does not identify a pure sulfate phase
+      or quantify a recovered fraction; its caption incorrectly names O and Fe. Fe/O-rich particles likewise
+      lack phase-specific identification.
+  - source_ref: smeaton2012_chapter4
+    supports: partial
+    explanation: The separate 72-hour mineral-free sorption experiment used about 35 micromolar Tl in
+      0.1 M NaCl with live cells, autoclaved cells and cell-free controls near nominal pH 5 and 6.2/6.3.
+      The authors report no significant between-arm Tl depletion difference. This limited null result
+      does not establish absence of sorption at the millimolar concentrations of the dissolution assay
+      or in other environmental systems. Methods, results and supporting table labels disagree on pH;
+      final pH is not identical across arms. No statistically stronger conclusion is inferred from the
+      printed data.
+  - source_ref: smeaton2012_si
+    supports: partial
+    explanation: Table S1 contains mismatched pH labels and a contradictory significance notation. Reported
+      biomass-to-cell-count conversions also differ within the source. ATP luminescence is a biomass/viability
+      proxy, not a direct viable-cell count; some prose time/value assignments disagree with Figure 4.1.
+      Proposed ATPase uptake/efflux and specific detoxification mechanisms were not tested by expression
+      or perturbation experiments. The source also uses 853/863 hours in passages alongside the nominal
+      893-hour assay; no silent harmonization or industrial performance claim is made.
+curation_history:
+- timestamp: '2026-10-15T10:31:23.406244+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Added the thallium element with qualified CN32-associated mobilization from synthetic Tl-jarosite;
+    preserved abiotic release, separate sorption null, source/version conflicts and lack of recovery or
+    direct Tl-redox evidence.
+history_refs:
+- history/records/thallium/2026-10-15T103127Z-codex-63abfe.yaml

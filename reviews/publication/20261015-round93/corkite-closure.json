@@ -1,0 +1,18 @@
+{
+  "recorded_at": "2026-10-15T11:03:13.046899+00:00",
+  "passed": true,
+  "issue": {
+    "body": "Independent record review identified a minor provenance defect under stable issue key `cmmmech.corkite.round93.dataset-acquisition-count`.\n\nThe `sources[id=ferrenti_dataset].title` entry in `data/records/corkite.yaml` says all 24 distinct linked dataset files were acquired. The actual acquisition receipt contains 24 requests, 23 successful files and a 404 response for `Figure2/Undried_corkite_Raman.ngs`. The associated source dossier repeats the overstatement. The curator confirmed that no alternate successful acquisition route is available in this investigation.\n\nThis does not invalidate the accepted refinement or thermal claims: their inspected originals and successful files remain available. It does overstate the evidence acquired and must be corrected before publication.\n\nAcceptance:\n\n- State that 23 of 24 linked files were acquired and identify the unavailable `.ngs` file without treating failed response bytes as data.\n- Correct the associated acquisition narrative while preserving request/success/failure provenance and the actual successful source hashes.\n- Append canonical EDIT and inline history for the owner correction.\n- Independently inspect the final owner, history and source report; save a successor native review explicitly resolving the stable issue key and exact previous finding occurrence.\n- Revalidate the final record/corpus, history, generated pages and review coverage before closing this issue.\n\nThe initial native occurrence path and final verification disposition are added with the saved artifacts. No missing file is represented as acquired, and no scientific measurement is repaired by guessing.\n\nSaved initial review: `reviews/structured/20261015T104245Z-corkite-round93-acquisition-count-initial/review.yaml`; review ID `20261015T104245Z-corkite-round93-acquisition-count-initial`; finding `F1`.\n",
+    "closedAt": "2026-10-15T11:03:11Z",
+    "number": 328,
+    "state": "CLOSED",
+    "title": "Correct corkite dataset acquisition count and document the unavailable Raman file",
+    "url": "https://github.com/CultureBotAI/CMMMech/issues/328"
+  },
+  "initial_receipt_sha256": "889c7188e0ba9ff282501b06927e59f081e760e36770b86af96864b89e36cdfc",
+  "review": "reviews/structured/20261015T105725Z-corkite-round93-independent-resolution/review.yaml",
+  "review_sha256": "8922e845d628f01e14eee2b5a3c85e198b9b89f71ad4781c902afe4415093efc",
+  "owner": "data/records/corkite.yaml",
+  "owner_sha256": "6ac28cbe83b7eb4fbdedb43df6e260d0d7882e7672b60899136b996d6b025326",
+  "comment_sha256": "672dd1417b8221209b68b2892235ec6b1e4c330b549b4b13acf7937185d61903"
+}

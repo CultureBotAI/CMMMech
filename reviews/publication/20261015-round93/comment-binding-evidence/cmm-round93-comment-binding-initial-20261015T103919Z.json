@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-10-15T10:39:19.457270+00:00",
+  "scientific_review": false,
+  "passed": false,
+  "scope": "Read-only integration review of producer COMMENT receipt and posting consumer; helper not executed.",
+  "files": [
+    {
+      "path": "/private/tmp/cmm-round93-post-review.py",
+      "sha256": "956284c23cfa64095d9466f88d42b396411227bb8a0dd31d2fa3e85a68fdb213",
+      "snapshot": "/private/tmp/cmm-round93-comment-binding-initial-20261015T103919Z.py"
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "OP1",
+      "issue_key": "CMMMech.round93.post-review-comment-binding",
+      "severity": "minor",
+      "status": "open",
+      "summary": "Posting consumer reads a fixed COMMENT file but does not compare its exact bytes/path with the accepted peer comment_draft binding.",
+      "locator": "cmm-round93-post-review.py bodypath/body read and request construction; no a[comment_draft] check in supplied source.",
+      "impact": "Changes to COMMENT bytes after independent acceptance could be posted as if covered by that receipt. Existing Git/PR/CI checks do not bind the review text.",
+      "acceptance_checks": [
+        "Before writing the request or making POST, require actual bodypath equals peer comment_draft.path and actual SHA256 equals peer comment_draft.sha256.",
+        "Keep exact producer bytes unchanged and preserve this original source snapshot; static successor confirms narrow guard and correct execution order."
+      ]
+    }
+  ],
+  "limitations": [
+    "Preparation-time static finding only; no publication or mismatch was observed and no helper was executed."
+  ]
+}

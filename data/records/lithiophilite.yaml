@@ -1,0 +1,111 @@
+id: cmmmech:lithiophilite
+name: Lithiophilite
+material_kind: mineral
+description: Lithiophilite is the lithium manganese(II) phosphate mineral LiMn2+(PO4), listed by IMA-CNMNC
+  in September 2026 as grandfathered with original-description year 1878, not an approval identifier.
+  It is distinct from Fe2+-dominant triphylite, synthetic battery materials of unspecified phase and oxidized
+  lithium-deficient group members. Losey2004 measured natural Mn-rich crystals from the Bennett Quarry,
+  Maine, and Fillow Quarry, Branchville, Connecticut, using microprobe and single-crystal diffraction
+  in orthorhombic space group 62 (Pbnm setting; Handbook Pmnb is another setting). Natural samples contain
+  substitutional Fe and are not pure endmembers. Lithium in that study was constrained or assumed rather
+  than independently measured. The separate Schmid-Beurmann2013 oxidation assay used a laboratory-synthesized,
+  diffraction-assigned LiMnPO4 powder and found no detected phase or lattice change under one specified
+  treatment. That conditional null does not establish universal resistance to lithium dissolution. Neither
+  source demonstrates microbial transformation, isolated lithium recovery or inherited criticality.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 127, Lithiophilite row LiMn2+(PO4),
+    G, 1878; page 1 defines grandfathered status and original-description year.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-15'
+- id: handbook_lithiophilite
+  title: Handbook of Mineralogy. Lithiophilite, Li(Mn2+,Fe2+)PO4. Complete one-page identity, orthorhombic
+    Pmnb structure, chemistry and natural occurrence entry.
+  url: https://www.handbookofmineralogy.org/pdfs/lithiophilite.pdf
+  accessed_on: '2026-10-15'
+- id: losey2004
+  title: Losey A, Rakovan J, Hughes JM, Francis CA, Dyar MD (2004). Structural variation in the lithiophilite-triphylite
+    series and other olivine-group structures. Canadian Mineralogist 42:1105-1115. Complete eleven-page
+    original, Tables 1-5 and Figures 1-7; underlying CISTI-deposited structure factors and anisotropic
+    parameters were not acquired.
+  url: https://doi.org/10.2113/gscanmin.42.4.1105
+  accessed_on: '2026-10-15'
+- id: schmid_beurmann2013
+  title: Schmid-Beurmann P, Ottolini L, Hatert F, Geisler T, Huyskens M, Kahlenberg V (2013; online 2012).
+    Topotactic formation of ferrisicklerite from natural triphylite under hydrothermal conditions. Mineralogy
+    and Petrology 107:501-515. Complete fifteen-page original, Tables 1-9 and Figures 1-5. Historical
+    product nomenclature is qualified using Lyalina2023.
+  url: https://doi.org/10.1007/s00710-012-0250-6
+  accessed_on: '2026-10-15'
+- id: lyalina2023
+  title: Lyalina LM, Selivanova EA, Hatert F (2023). Nomenclature of the triphylite group of minerals.
+    European Journal of Mineralogy 35:427-437. Complete original, Tables 1-3, Figures 1-5 and Algorithm
+    1; official supplement title page and native Supplement.xlsx inspected. The October 2022 CNMNC-approved
+    scheme discredits ferrisicklerite and sicklerite; Table 3 recalculates the same 2013 samples rather
+    than reporting a new oxidation experiment.
+  url: https://doi.org/10.5194/ejm-35-427-2023
+  accessed_on: '2026-10-15'
+mechanisms:
+- id: conditional-null-for-abiotic-oxidative-phase-conversion
+  name: No detected phase conversion in one abiotic oxidation treatment
+  process: redox_transformation
+  description: A synthetic, diffraction-assigned lithiophilite powder retained its reported phase and
+    lattice parameters after a particular permanganate-acid hydrothermal treatment. The finding limits
+    an oxidation claim for this arm; it does not demonstrate that no lithium entered solution, that no
+    minor surface reaction occurred, or that all lithiophilite is chemically inert. The same study's natural-triphylite
+    transformation is curated separately in cmmmech:triphylite, with unmatched conditions explicitly preserved.
+  context: Methods page 502 describes synthesis from Li3PO4, Mn2P2O7 and MnO and powder-diffraction identification
+    of LiMnPO4. The stated 700 degrees C for 2 days refers to preparation of the Li3PO4 precursor, not
+    an established final LiMnPO4 firing schedule. Table 1 assigns Tri-74 to 49.7 mg of synthetic powder,
+    10.5 mg KMnO4 and 1 mL of 0.1 N HCl in a closed 3-cm3 Teflon-lined vessel at 120 degrees C for 28
+    days, without oxygen buffering. The source describes the fine synthetic grains as less than 10 micrometres.
+    Products were separated, water-washed and dried at 50 degrees C. No microbes, matched acid-only control,
+    independent replicate number or before/after dissolved-lithium balance is reported.
+  microbial: false
+  evidence:
+  - source_ref: schmid_beurmann2013
+    supports: refute
+    explanation: This evidence refutes detected bulk phase conversion in Tri-74, not every possible redox
+      or dissolution process. Table 1 (page 503), Table 4 (page 506), Results page 511 and Discussion
+      page 513 report retained lithiophilite, no detected phase-composition or lattice-parameter change,
+      and a Rietveld fit with Rwp of 12.4%. The authors infer that manganese was not oxidized to the trivalent
+      state under their test. No direct Mn-valence measurement or solution lithium assay is presented
+      for this arm, so that inference is not strengthened into proof of zero oxidation or zero lithium
+      release.
+  - source_ref: schmid_beurmann2013
+    supports: partial
+    explanation: The natural-triphylite Tri-77/Tri-87 arms used approximately 20-21 mg KMnO4 for 8 days,
+      compared with 10.5 mg for 28 days in Tri-74; particle form and composition also differed. Their
+      outcomes therefore cannot establish a matched intrinsic species effect. The lithiophilite reference-card
+      numbers differ between Methods and Table 1, and its b parameter differs slightly between Tables
+      4 and 5; no exact lattice value or phase-purity percentage is adopted here. The absence of detected
+      bulk changes does not supply a lithium extraction denominator or product yield.
+  - source_ref: losey2004
+    supports: context_only
+    explanation: Tables 1-2 (pages 1107 and 1108), Figures 1-7 and Methods pages 1108-1109 establish the
+      natural-crystal structural series. The Mn-rich Trip06 and Trip27 specimens are distinct from the
+      synthesized Tri-74 powder. Assumed Li2O and fixed Li occupancy limit independent lithium quantification;
+      the near-equal Fe/Mn Trip50 crystal is not treated as an unambiguous lithiophilite endmember. These
+      crystal refinements are identity evidence, not a measured biological mechanism or lithium diffusion
+      assay.
+  - source_ref: lyalina2023
+    supports: context_only
+    explanation: Tables 1-3 and the approved classification algorithm preserve lithiophilite as the Li-Mn2+
+      species while discrediting historical sicklerite/ferrisicklerite intermediate names. Valence and
+      lithium-site occupancy matter for oxidized members, so total Fe/Mn composition or a commercial LiMnPO4
+      label alone does not assign every specimen. This nomenclatural assessment is separate from the 2013
+      experimental null.
+curation_history:
+- timestamp: '2026-10-15T10:30:56.463535+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Added current mineral identity and a narrowly scoped abiotic hydrothermal experiment, preserving
+    natural-versus-synthetic provenance, conditional nulls, shared study lineage and updated nomenclature.
+- timestamp: '2026-10-15T10:44:52.591233Z'
+  curator: codex (GPT-6; codex)
+  action: EDIT
+  summary: Corrected Losey2004 Table2 source locator from page1109 to1108 after independent finding F1
+    and issue327; scientific statements unchanged.
+history_refs:
+- history/records/lithiophilite/2026-10-15T103105Z-codex-02555a.yaml
+- history/records/lithiophilite/2026-10-15T104454Z-codex-88c6a3.yaml

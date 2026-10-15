@@ -1,0 +1,5 @@
+Independent original-source review found a minor locator error in `data/records/lithiophilite.yaml`, field `mechanisms[0].evidence[2].explanation`. It locates Losey et al. (2004) Tables 1–2 on pages 1107/1109. The original has Table 1 on 1107 and Table 2 on 1108 (PDF page 4). The supported scientific result is unchanged.
+
+Acceptance: correct only the inaccurate page locator, append canonical EDIT and inline history, validate the final owner/history/corpus/pages, and save an independent successor review explicitly resolving stable key `lithiophilite-round93-losey-table2-page` and the exact initial F1 occurrence. Preserve initial observations rather than rewriting them.
+
+Initial review: `reviews/structured/20261015T104230Z-lithiophilite-round93-initial-locator/review.yaml`; F1. The successor should also clarify that the first batch check had completed at 10:40:40Z, despite stale pending wording in the initial review; final checks after the owner correction were still pending. No passing final check is inferred from that draft wording.
