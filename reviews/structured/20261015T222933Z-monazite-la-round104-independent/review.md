@@ -1,0 +1,513 @@
+# Independent scientific review of Monazite-(La)
+
+- Review: 20261015T222933Z-monazite-la-round104-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T22:19:27Z
+- Finished UTC: 2026-10-15T22:29:33.365497Z
+- Reviewer: codex /root/round104_uranium (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of the exact mineral owner and its bounded evidence. No supported corrective record defect was found; analytical, source-label and experimental-transfer limits remain explicit.
+
+## Scope And Provenance
+
+Entire frozen owner and CREATE history, current IMA identity, claim-bearing primary methods/results and original figures/tables, relevant supplements, and bounded correction/conflict searches.
+
+Selection: Coordinator-assigned independent assessment of one frozen maintained owner.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6b6ccf160a457ceb5ebc265b55bbc5d515964707.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:monazite-la | data/records/monazite-la.yaml | maintained | Monazite-(La) |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent scientific evidence assessment | passed | True | cmmmech:monazite-la | Claim-bearing original evidence, specimen distinctions, relevant supplement and current authority rows checked. |
+| Independent named-file validation | passed | True | cmmmech:monazite-la | Actual reviewer execution checked two records with zero failures. |
+| Verified coordinator batch gate 1 | passed | True | cmmmech:monazite-la | Actual terminal receipt and retained log inspected; this is not duplicate reviewer execution. |
+| Verified coordinator batch gate 2 | passed | True | cmmmech:monazite-la | Actual terminal receipt and retained log inspected; this is not duplicate reviewer execution. |
+| Verified coordinator batch gate 3 | passed | True | cmmmech:monazite-la | Actual terminal receipt and retained log inspected; this is not duplicate reviewer execution. |
+| Verified coordinator batch gate 4 | passed | True | cmmmech:monazite-la | Actual terminal receipt and retained log inspected; this is not duplicate reviewer execution. |
+
+## Scientific And Domain Assessments
+
+### Distinct La mineral and authority scope
+
+identity: supported. Targets: cmmmech:monazite-la.
+
+Distinct La mineral and authority scope is supported within the stated limits.
+
+The current IMA row and primary characterization support the named species, distinct from the Ce counterpart, elemental lanthanum, mixed ores and other mineral phases. No unsupported external species identifier is asserted.
+
+### Criticality, biological attribution and deployment boundaries
+
+scope: supported. Targets: cmmmech:monazite-la.
+
+Criticality, biological attribution and deployment boundaries is supported within the stated limits.
+
+No dated criticality assertion is inherited from lanthanum or commodity groups; omission means unrecorded. No microbial causality or industrial deployment is asserted. A mineral characterization or synthetic phase product is not an isolated-element recovery measurement.
+
+### Exact state and present-session CREATE
+
+provenance: supported. Targets: cmmmech:monazite-la.
+
+Exact state and present-session CREATE is supported within the stated limits.
+
+Native capture and unchanged-byte comparison identify the reviewed working changes above the trusted base. Canonical history and inline CREATE describe actual present-session work. Named validation and coordinator batch receipts were independently checked.
+
+### Synthetic crystal versus natural mineral comparator
+
+evidence: supported. Targets: cmmmech:monazite-la.
+
+Synthetic crystal versus natural mineral comparator is supported within the stated limits.
+
+Ni et al. explicitly source the La crystal from the synthetic rare-earth series. Their natural monazite is Ce-dominant Kangankunde material. The owner limits the crystallographic result accordingly and does not claim natural La chemistry or an uninspected deposit result.
+
+### La-specific abiotic preparation arms
+
+evidence: supported. Targets: cmmmech:monazite-la.
+
+La-specific abiotic preparation arms is supported within the stated limits.
+
+Figure 4B assigns La rhabdophane conversion to 1 M H3PO4 at 210 degrees C for one hour. Figure S7 and methods independently delimit La chloride/fluoride routes at 230 degrees C for one hour. The preparation and diffraction parameters are supported; unknown La loading, independent replication and quantitative purity/recovery are retained. The Nd pH series, transition onset, time/TEM and durability results are not transferred to La.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/monazite-la.yaml; Entire owner including description, source references, optional mechanism, inline CREATE and history reference. | supports | Inspected exact material identity, evidence boundaries, present-session event and scoped omissions. |
+| history | history/records/monazite-la/2026-10-15T221420Z-codex-154236.yaml; Canonical CREATE session, actor, target and described work. | supports | Actual actor/model/time and target align with current curation; inline and canonical history remain distinct. |
+| dossier | research/sources/round104-ree/20261015T221616Z-source-investigation.json; Source assessment, acquisition receipts and companion Markdown. | context_only | Author research is contextual; primary sources were independently assessed. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Definitions and exact rendered PDF page 146 row. | supports | Renamed La-dominant mineral and ideal formula are correctly scoped. The special-procedure date is not a sequential approval accession or criticality designation. |
+| search | Independent bounded primary-source and local searches; /private/tmp/cmm-round104-la-independent/search.json and local-search.json; acquired Crossref metadata. | context_only | Exact DOI/title correction queries returned no specific formal notice within their results; three Crossref records had empty relation metadata and no update-to field. This is not exhaustive absence proof. |
+| named | /private/tmp/cmm-round104-la-independent/named-validation.json; Actual independent tool execution, terminal exit 0, chunk 2e473f. | supports | Both exact La owners passed strict validation: 2 checked, 0 failed. |
+| batch | /private/tmp/cmm-round104-final-gates.json; Terminal coordinator receipt and hash-verified retained log. | supports | Reviewer verified actual completed batch commands rather than rerunning the entire suite. |
+| structure1995 | https://doi.org/10.2138/am-1995-1-203; Original pp. 21–26; Table 1 and methods p. 22 visually inspected; structure discussion pp. 23–26. | supports | Synthetic LaPO4 is separate from the natural Ce-dominant comparator. Monoclinic P21/n and nine-coordinate RE sites are supported; deposited Tables 4–5 were not inspected. |
+| hydrothermal2025 | https://doi.org/10.1126/sciadv.adt3518; Complete EuropePMC XML; Figure 4B original image independently viewed; Reagents, Microwave-assisted reaction and Powder XRD methods; Nd-only controls and durability sections. | supports | La precursor conversion at 210 degrees C for one hour is supported, with separate salt routes in methods. Missing La mass/yield and controls remain unknown; Nd tests do not establish La behavior. |
+| supplement2025 | https://doi.org/10.1126/sciadv.adt3518; Original 24-page supplement: Figure S2 p. 3, Figure S7 p. 7, Table S4 p. 10, Figures S10–S11 p. 11 and captions S18–S20. | supports | La precursor and separate LaCl3/LaF3 product traces independently checked. Nd pH and repeated-caption contradictions are real source limits and are excluded from La claims. |
+
+## Limits And Additional Notes
+
+- No experimental replication, structural re-refinement, or raw-signal reanalysis was performed.
+- The scope covers record claims and relevant source sections, not certification of all claims in every cited publication.
+- Bounded correction searches and incomplete deposits cannot establish absence of all conflicting evidence.
+- Whole-corpus review-bundle validation follows saving these append-only observations.
+- The 1995 deposited refinement/reflection tables and 2025 non-La crystal deposits were not inspected.
+- Full original XML and relevant original figures/supplement were inspected; the publisher PDF route remained unavailable.
+- No measured La loading, mass balance, biological activity, real-waste performance or industrial deployment is established.
+- Initial native inspection preceded detailed assessment; expanded capture retained unchanged owner/history/schema hashes and added the author dossier before final reassessment. Working-tree provenance is not a committed-byte attestation.
+- Shared downloads were independently read and selected original figures visually inspected. This does not claim a fresh acquisition of every source or a review of this reviewer’s uranyl owners.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T222933Z-monazite-la-round104-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Monazite-(La)
+started_at: '2026-10-15T22:19:27Z'
+finished_at: '2026-10-15T22:29:33.365497Z'
+reviewer:
+  identity: codex /root/round104_uranium
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from La curator /root/round104_ree. This reviewer
+    authored only the uranyl pair and independently inspected shared primary artifacts;
+    no La record or history edits were made.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of the exact mineral owner and its bounded evidence.
+  No supported corrective record defect was found; analytical, source-label and experimental-transfer
+  limits remain explicit.
+source:
+  git_revision: 6b6ccf160a457ceb5ebc265b55bbc5d515964707
+  state: working_tree
+  inputs:
+  - path: data/records/florencite-la.yaml
+    sha256: 7a391c97383d69fbdd9b7507fb6441fab03b432c689a6ab8773a5ef75b72c3e1
+    role: related_context
+  - path: data/records/monazite-la.yaml
+    sha256: c85a83609a45fc37a0be5e1f6876e0ecd38fe83a884a4104b9b9e89a69242598
+    role: target
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/florencite-la/2026-10-15T221411Z-codex-f6f86c.yaml
+    sha256: 0956023286edd7b8f886a6d739a734bd91ab181203f0c76cf1ae7238814e80bc
+    role: context
+  - path: history/records/monazite-la/2026-10-15T221420Z-codex-154236.yaml
+    sha256: 33138c7bef4e1078410f143f53ae06c76d7cf6aecc4dd6b27fa6afc4547537ae
+    role: context
+  - path: research/sources/round104-ree/20261015T221616Z-source-investigation.json
+    sha256: 4d2390f94336800fe31c3c4bfa04c7e8b67fd3de5936114b6e57ba00d8b804ee
+    role: context
+  - path: research/sources/round104-ree/20261015T221616Z-source-investigation.md
+    sha256: 0dda06d1fa7496d97a0fb113bb4dc648fa02393cb80441e8057f5457fa6c2edd
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire frozen owner and CREATE history, current IMA identity, claim-bearing
+    primary methods/results and original figures/tables, relevant supplements, and
+    bounded correction/conflict searches.
+  selection: Coordinator-assigned independent assessment of one frozen maintained
+    owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:monazite-la
+targets:
+- target_id: cmmmech:monazite-la
+  path: data/records/monazite-la.yaml
+  label: Monazite-(La)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/monazite-la.yaml
+    role: maintained_record
+checks:
+- check_id: science
+  name: Independent scientific evidence assessment
+  status: passed
+  required: true
+  summary: Claim-bearing original evidence, specimen distinctions, relevant supplement
+    and current authority rows checked.
+  target_ids:
+  - cmmmech:monazite-la
+  evidence_ids:
+  - ima
+  - search
+- check_id: named
+  name: Independent named-file validation
+  status: passed
+  required: true
+  summary: Actual reviewer execution checked two records with zero failures.
+  target_ids:
+  - cmmmech:monazite-la
+  command: uv run --locked cmmmech validate data/records/florencite-la.yaml data/records/monazite-la.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Verified coordinator batch gate 1
+  status: passed
+  required: true
+  summary: Actual terminal receipt and retained log inspected; this is not duplicate
+    reviewer execution.
+  target_ids:
+  - cmmmech:monazite-la
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Verified coordinator batch gate 2
+  status: passed
+  required: true
+  summary: Actual terminal receipt and retained log inspected; this is not duplicate
+    reviewer execution.
+  target_ids:
+  - cmmmech:monazite-la
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Verified coordinator batch gate 3
+  status: passed
+  required: true
+  summary: Actual terminal receipt and retained log inspected; this is not duplicate
+    reviewer execution.
+  target_ids:
+  - cmmmech:monazite-la
+  command: uv run --locked cmmmech validate-history --base 6b6ccf160a457ceb5ebc265b55bbc5d515964707
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Verified coordinator batch gate 4
+  status: passed
+  required: true
+  summary: Actual terminal receipt and retained log inspected; this is not duplicate
+    reviewer execution.
+  target_ids:
+  - cmmmech:monazite-la
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/monazite-la.yaml
+  locator: Entire owner including description, source references, optional mechanism,
+    inline CREATE and history reference.
+  accessed_at: '2026-10-15T22:29:33.365497Z'
+  support: supports
+  summary: Inspected exact material identity, evidence boundaries, present-session
+    event and scoped omissions.
+  snapshot_sha256: c85a83609a45fc37a0be5e1f6876e0ecd38fe83a884a4104b9b9e89a69242598
+- evidence_id: history
+  kind: record_content
+  reference: history/records/monazite-la/2026-10-15T221420Z-codex-154236.yaml
+  locator: Canonical CREATE session, actor, target and described work.
+  accessed_at: '2026-10-15T22:29:33.365497Z'
+  support: supports
+  summary: Actual actor/model/time and target align with current curation; inline
+    and canonical history remain distinct.
+  snapshot_sha256: 33138c7bef4e1078410f143f53ae06c76d7cf6aecc4dd6b27fa6afc4547537ae
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round104-ree/20261015T221616Z-source-investigation.json
+  locator: Source assessment, acquisition receipts and companion Markdown.
+  accessed_at: '2026-10-15T22:29:33.365497Z'
+  support: context_only
+  summary: Author research is contextual; primary sources were independently assessed.
+  snapshot_sha256: 4d2390f94336800fe31c3c4bfa04c7e8b67fd3de5936114b6e57ba00d8b804ee
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions and exact rendered PDF page 146 row.
+  accessed_at: '2026-10-15T22:29:33.365497Z'
+  support: supports
+  summary: Renamed La-dominant mineral and ideal formula are correctly scoped. The
+    special-procedure date is not a sequential approval accession or criticality designation.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: search
+  kind: search
+  reference: Independent bounded primary-source and local searches
+  locator: /private/tmp/cmm-round104-la-independent/search.json and local-search.json;
+    acquired Crossref metadata.
+  accessed_at: '2026-10-15T22:29:33.365497Z'
+  support: context_only
+  summary: Exact DOI/title correction queries returned no specific formal notice within
+    their results; three Crossref records had empty relation metadata and no update-to
+    field. This is not exhaustive absence proof.
+  snapshot_sha256: 3986a8b4fc71abfbd714c12c65ed970072ed0b8d69fd4c0f2fab1662c290c81f
+  search_scope: Six live DOI/title correction/erratum/retraction queries, first returned
+    relevance-ranked results, no exhaustive pagination; direct DOI fetch failures
+    retained. Wiley publisher HTML subsequently opened successfully; 2025 complete
+    EuropePMC XML was inspected locally. Hidden/ignored-inclusive symlink-following
+    rg covered data, research, reviews, history and .claude, yielding 29 matching
+    lines in the frozen working tree. No machine-wide absence claim.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round104-la-independent/named-validation.json
+  locator: Actual independent tool execution, terminal exit 0, chunk 2e473f.
+  accessed_at: '2026-10-15T22:29:33.365497Z'
+  support: supports
+  summary: 'Both exact La owners passed strict validation: 2 checked, 0 failed.'
+  snapshot_sha256: aab72eb4cbe357b53aba10e097d25bc39675c5c5c534e7a299ce958bfa259112
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round104-final-gates.json
+  locator: Terminal coordinator receipt and hash-verified retained log.
+  accessed_at: '2026-10-15T22:29:33.365497Z'
+  support: supports
+  summary: Reviewer verified actual completed batch commands rather than rerunning
+    the entire suite.
+  snapshot_sha256: 822243b9b5b4a25ad7b6211a7e3879ae145ed74ad25a3c87f80f6f61e06e72c4
+- evidence_id: structure1995
+  kind: primary_source
+  reference: https://doi.org/10.2138/am-1995-1-203
+  locator: Original pp. 21–26; Table 1 and methods p. 22 visually inspected; structure
+    discussion pp. 23–26.
+  accessed_at: '2026-10-15T22:29:33.365497Z'
+  support: supports
+  summary: Synthetic LaPO4 is separate from the natural Ce-dominant comparator. Monoclinic
+    P21/n and nine-coordinate RE sites are supported; deposited Tables 4–5 were not
+    inspected.
+  snapshot_sha256: d1e4aba888865b3a7cf56409dc14f058db8f6f866095315f073964d44c7a6d24
+- evidence_id: hydrothermal2025
+  kind: primary_source
+  reference: https://doi.org/10.1126/sciadv.adt3518
+  locator: Complete EuropePMC XML; Figure 4B original image independently viewed;
+    Reagents, Microwave-assisted reaction and Powder XRD methods; Nd-only controls
+    and durability sections.
+  accessed_at: '2026-10-15T22:29:33.365497Z'
+  support: supports
+  summary: La precursor conversion at 210 degrees C for one hour is supported, with
+    separate salt routes in methods. Missing La mass/yield and controls remain unknown;
+    Nd tests do not establish La behavior.
+  snapshot_sha256: 9ec9c737e16e6f11f5353bdf4a490d715eaf4cb4b0a89586ddab33f1d5e0fbff
+- evidence_id: supplement2025
+  kind: primary_source
+  reference: https://doi.org/10.1126/sciadv.adt3518
+  locator: 'Original 24-page supplement: Figure S2 p. 3, Figure S7 p. 7, Table S4
+    p. 10, Figures S10–S11 p. 11 and captions S18–S20.'
+  accessed_at: '2026-10-15T22:29:33.365497Z'
+  support: supports
+  summary: La precursor and separate LaCl3/LaF3 product traces independently checked.
+    Nd pH and repeated-caption contradictions are real source limits and are excluded
+    from La claims.
+  snapshot_sha256: 72e5a2bd528c54c6d4e4af7734748a8d74bc4027c4a1e367d60b283752b3e8e5
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Distinct La mineral and authority scope
+  outcome: supported
+  summary: Distinct La mineral and authority scope is supported within the stated
+    limits.
+  details: The current IMA row and primary characterization support the named species,
+    distinct from the Ce counterpart, elemental lanthanum, mixed ores and other mineral
+    phases. No unsupported external species identifier is asserted.
+  target_ids:
+  - cmmmech:monazite-la
+  evidence_ids:
+  - ima
+  - owner
+- assessment_id: scope
+  area: scope
+  topic: Criticality, biological attribution and deployment boundaries
+  outcome: supported
+  summary: Criticality, biological attribution and deployment boundaries is supported
+    within the stated limits.
+  details: No dated criticality assertion is inherited from lanthanum or commodity
+    groups; omission means unrecorded. No microbial causality or industrial deployment
+    is asserted. A mineral characterization or synthetic phase product is not an isolated-element
+    recovery measurement.
+  target_ids:
+  - cmmmech:monazite-la
+  evidence_ids:
+  - owner
+  - ima
+  dimensions:
+  - name: criticality
+    value: Unrecorded
+    definition: No jurisdiction/list/edition claim is made; this is not a noncriticality
+      assertion.
+    evidence_ids:
+    - owner
+  - name: organism_biomass
+    value: None asserted
+    definition: The accepted evidence contains no microbial mechanism or biomass treatment.
+    evidence_ids:
+    - owner
+- assessment_id: provenance
+  area: provenance
+  topic: Exact state and present-session CREATE
+  outcome: supported
+  summary: Exact state and present-session CREATE is supported within the stated limits.
+  details: Native capture and unchanged-byte comparison identify the reviewed working
+    changes above the trusted base. Canonical history and inline CREATE describe actual
+    present-session work. Named validation and coordinator batch receipts were independently
+    checked.
+  target_ids:
+  - cmmmech:monazite-la
+  evidence_ids:
+  - owner
+  - history
+  - named
+  - batch
+- assessment_id: structure
+  area: evidence
+  topic: Synthetic crystal versus natural mineral comparator
+  outcome: supported
+  summary: Synthetic crystal versus natural mineral comparator is supported within
+    the stated limits.
+  details: Ni et al. explicitly source the La crystal from the synthetic rare-earth
+    series. Their natural monazite is Ce-dominant Kangankunde material. The owner
+    limits the crystallographic result accordingly and does not claim natural La chemistry
+    or an uninspected deposit result.
+  target_ids:
+  - cmmmech:monazite-la
+  evidence_ids:
+  - structure1995
+  - owner
+- assessment_id: mechanism
+  area: evidence
+  topic: La-specific abiotic preparation arms
+  outcome: supported
+  summary: La-specific abiotic preparation arms is supported within the stated limits.
+  details: Figure 4B assigns La rhabdophane conversion to 1 M H3PO4 at 210 degrees
+    C for one hour. Figure S7 and methods independently delimit La chloride/fluoride
+    routes at 230 degrees C for one hour. The preparation and diffraction parameters
+    are supported; unknown La loading, independent replication and quantitative purity/recovery
+    are retained. The Nd pH series, transition onset, time/TEM and durability results
+    are not transferred to La.
+  target_ids:
+  - cmmmech:monazite-la
+  evidence_ids:
+  - hydrothermal2025
+  - supplement2025
+  - owner
+  dimensions:
+  - name: material_form
+    value: Synthetic La rhabdophane precursor and separate LaCl3/LaF3 reagents
+    definition: Separate experimental arms from one study; neither is natural ore
+      or real nuclear waste.
+    evidence_ids:
+    - hydrothermal2025
+    - supplement2025
+  - name: conditions
+    value: 1 M H3PO4; precursor 210 degrees C, salts 230 degrees C; each one hour
+    definition: Microwave-assisted laboratory hydrothermal preparations, with hardware
+      and reagent details in owner context.
+    evidence_ids:
+    - hydrothermal2025
+  - name: controls
+    value: No matched La pH, acid-free or conventional-heating control established
+    definition: Detailed comparison series are Nd-specific and do not identify a La
+      molecular cause.
+    evidence_ids:
+    - hydrothermal2025
+  - name: outcome
+    value: PXRD-assigned synthetic monazite powders
+    definition: Phase identification is not a quantitative element recovery yield
+      or proof of purity below detection.
+    evidence_ids:
+    - hydrothermal2025
+    - supplement2025
+findings: []
+actions: []
+limitations:
+- No experimental replication, structural re-refinement, or raw-signal reanalysis
+  was performed.
+- The scope covers record claims and relevant source sections, not certification of
+  all claims in every cited publication.
+- Bounded correction searches and incomplete deposits cannot establish absence of
+  all conflicting evidence.
+- Whole-corpus review-bundle validation follows saving these append-only observations.
+- The 1995 deposited refinement/reflection tables and 2025 non-La crystal deposits
+  were not inspected.
+- Full original XML and relevant original figures/supplement were inspected; the publisher
+  PDF route remained unavailable.
+- No measured La loading, mass balance, biological activity, real-waste performance
+  or industrial deployment is established.
+notes:
+- Initial native inspection preceded detailed assessment; expanded capture retained
+  unchanged owner/history/schema hashes and added the author dossier before final
+  reassessment. Working-tree provenance is not a committed-byte attestation.
+- Shared downloads were independently read and selected original figures visually
+  inspected. This does not claim a fresh acquisition of every source or a review of
+  this reviewer’s uranyl owners.
+```

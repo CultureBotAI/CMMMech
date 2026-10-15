@@ -1,0 +1,421 @@
+# Initial independent scientific review of spent copper-zinc-alumina catalyst
+
+- Review: 20261015T222010Z-spent-copper-zinc-alumina-catalyst-round104-initial
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T22:16:16.728848Z
+- Finished UTC: 2026-10-15T22:20:10.307117Z
+- Reviewer: codex /root/round104_borates (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The resource identity and qualified laboratory mechanisms are supported. One confirmed minor source-locator/attribution defect requires an owner correction. Final batch gates have not yet run, so this is not acceptance.
+
+## Scope And Provenance
+
+Whole frozen initial resource and CREATE history against the complete eight-page primary paper; final batch gates pending.
+
+Selection: Parent-assigned adversarial review of a newly authored resource.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6b6ccf160a457ceb5ebc265b55bbc5d515964707.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:spent-copper-zinc-alumina-catalyst | data/records/spent-copper-zinc-alumina-catalyst.yaml | maintained | Spent copper zinc alumina catalyst |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent primary-source assessment | failed | True | cmmmech:spent-copper-zinc-alumina-catalyst | One confirmed minor citation-accuracy finding requires correction; underlying bounded mechanisms are supported. |
+| Named owner validation | passed | True | cmmmech:spent-copper-zinc-alumina-catalyst | One checked, zero failed. |
+| Initial history validation | passed | True | cmmmech:spent-copper-zinc-alumina-catalyst | 586 history records checked, zero errors. |
+| Final batch just check and strict corpus validation | unavailable | True | cmmmech:spent-copper-zinc-alumina-catalyst | Final batch gates have not been run for this finding state; coordinator will run them after correction. Baseline PASS does not substitute. |
+
+## Scientific And Domain Assessments
+
+### Used catalyst resource versus elements and minerals
+
+identity: supported. Targets: cmmmech:spent-copper-zinc-alumina-catalyst.
+
+Secondary-resource identity is supported.
+
+Paper pp.1-2 describes spent CuO-ZnO-Al2O3 catalysts on the Polish market, 4.5mm x3.5mm rolls. AAS35.1%Cu,29.9%Zn,9.2%Al pertains to the selected sample; plant/service history is unavailable and not invented. No IMA identity, constituent criticality or microbes are inherited.
+
+### Four separate laboratory reduction arms
+
+evidence: supported. Targets: cmmmech:spent-copper-zinc-alumina-catalyst.
+
+Qualified alloy recovery and incomplete zinc balance are supported.
+
+Four100g-feed arms with10g coal and different fluxes/temperatures/times are retained. Table1 reports26/25/25/20g alloys, Cu masses23.2/22.1/22.0/17.7g and Cu yields66.1/63.0/62.7/50.4%. VariantI has17.5g unmelted fines;II7.5g. The table omits these fractions. Zn dust percentages are balance estimates, not weighed isolated recovery; no purity/industrial-performance guarantee follows.
+
+### Aqueous fractions and residue-inclusive accounting
+
+quantity: supported. Targets: cmmmech:spent-copper-zinc-alumina-catalyst.
+
+Leachate transfer is distinguished from overall product accounting.
+
+Sections4.1-4.2 support &lt;90µm feed,NaOH200g/dm3/75°C/120min then H2SO4180g/dm3/60°C/120min, reported l/s10 with unspecified units, and unquantified peroxide. 0.8dm3×23g/dm3=18.4gZn versus rounded18.5g balance;0.8×43=34.4gCu versus34.5g. Only61.9%Zn enters liquid;97.5%Zn/96%Al count retained residue. Figure4 assignsZnAl2O4 pluscarbon; no pure isolatedmetal/downstreamreuse demonstrated.
+
+### Exact citation locators and attribution
+
+provenance: concern. Targets: cmmmech:spent-copper-zinc-alumina-catalyst.
+
+Source-locator edits are required.
+
+The owner names Table2,Section3.3 andSection4.3 that do not exist in the complete published PDF; dust-observation wording should cite actualSection3.2.1 andSection5 instead of attributing a statement to nonexistentSection3.3.
+
+### History, exact state and independent authorship
+
+provenance: supported. Targets: cmmmech:spent-copper-zinc-alumina-catalyst.
+
+Initial provenance and independent review are explicit.
+
+Root authored this resource; reviewer authored hydroboracite only and did not edit this owner. Inspect captured initial bytes before assessment. Canonical CREATE and inline event are distinct. Scientific review remains incomplete as a release acceptance because correction and final batch gates are pending.
+
+## Findings
+
+### F1: Correct nonexistent Małecki table/section locators and dust attribution
+
+minor / open / confirmed; issue key: spent-cu-zn-al-2018-source-locators.
+
+The source title cites Tables1-2 although only Table1 exists; coal-reduction evidence cites Sections3.1-3.3 andSection3.3, and leaching evidence citesSections4.1-4.3/Table2. The published article instead hasSections3.1/3.2,3.2.1-3.2.4,4.1/4.2 and5. ItsSection3.2.1 says the dust amount could not be identified;Section5 explains balance-estimated zinc-to-dust yield. Correct the exact locators and replace the unsupported attribution to a nonexistent section. This is a bounded citation defect, not a change to material identity or qualified recovery conclusions.
+
+## Recommended Actions And Acceptance Checks
+
+### A1
+
+Correct the owner source title to Table1; citeSections3.1-3.2/Table1 for smelting,Section3.2.1 and5 for unquantified/estimated dust, andSections4.1-4.2/Figure4 for leaching. Append actual EDIT history and preserve this observation.
+
+- Verify every replacement locator against the complete eight-page PDF.
+- Keep zinc dust as estimated and distinguish aqueous yields from residue-inclusive accounting.
+- Run affected owner/history checks and final batch gates.
+- Save a successor review of final bytes with this exact finding occurrence and stable issue key.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/spent-copper-zinc-alumina-catalyst.yaml; Whole captured owner; source list and both evidence groups. | partial | Frozen owner has supported resource/mechanism scope but incorrect primary-source locators. |
+| history | history/records/spent-copper-zinc-alumina-catalyst/2026-10-15T221413Z-codex-ea1989.yaml; Whole CREATE sidecar and owner inline event/history_refs. | supports | Actual actor, target, timing and description agree; curation provenance is distinct from scientific acceptance. |
+| primary | https://doi.org/10.3390/met8030177; Complete published eight-page PDF. All pages visually inspected, especially p.4 Sections3.2.1-3.2.4, p.5 Table1/Section4.1, p.6 Section4.2/Figure4 and p.7 Section5. | supports | Only Table1 is present. There is no Section3.3 or4.3. Section3.2.1 says dust amount could not be identified; Section5 calls Zn dust yield an estimate from alloy/slag inventories. |
+| named | uv run --locked cmmmech validate data/records/spent-copper-zinc-alumina-catalyst.yaml; /private/tmp/cmm-round104-resource-independent/copper-named.log | supports | One record checked, zero failed; independently executed by this reviewer. |
+| history_check | uv run --locked cmmmech validate-history --base 6b6ccf160a457ceb5ebc265b55bbc5d515964707; /private/tmp/cmm-round104-resource-independent/history-initial.log | supports | 586 sidecars checked, zero errors; this is the initial pre-correction state. |
+| search | Independent DOI correction/retraction search and local identity/source dedup; /private/tmp/cmm-round104-resource-independent/search.json; /private/tmp/cmm-round104-resource-independent/dedup.json | context_only | No relevant formal notice surfaced in bounded results. Existing metal/general catalyst scope is distinct; local matching source contexts were not mistaken for independent studies. |
+
+## Limits And Additional Notes
+
+- Unweighed dust and unmelted fines prevent a closed zinc balance.
+- Unspecified liquid/solid units, peroxide amount and replicate uncertainties limit transfer.
+- Final batch gates remain required; no release acceptance or source correction is claimed.
+- Only review artifacts are written by this reviewer; source acquisition was performed by the author and primary bytes were independently inspected.
+- No Git/GitHub mutation, author contact or owner edit was performed.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T222010Z-spent-copper-zinc-alumina-catalyst-round104-initial
+kind: record
+repository: CultureBotAI/CMMMech
+title: Initial independent scientific review of spent copper-zinc-alumina catalyst
+started_at: '2026-10-15T22:16:16.728848Z'
+finished_at: '2026-10-15T22:20:10.307117Z'
+reviewer:
+  identity: codex /root/round104_borates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored this resource. I authored only hydroboracite in
+    this round and independently inspected this resource and the full primary original
+    without editing the owner.
+skill: .claude/skills/review-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The resource identity and qualified laboratory mechanisms are supported.
+  One confirmed minor source-locator/attribution defect requires an owner correction.
+  Final batch gates have not yet run, so this is not acceptance.
+source:
+  git_revision: 6b6ccf160a457ceb5ebc265b55bbc5d515964707
+  state: working_tree
+  inputs:
+  - path: data/records/spent-copper-zinc-alumina-catalyst.yaml
+    sha256: f35f876ca7f0dd97f6b979a0c10082f56f6e28e36f0214e1a94e606f9fc550cb
+    role: target
+  - path: history/records/spent-copper-zinc-alumina-catalyst/2026-10-15T221413Z-codex-ea1989.yaml
+    sha256: cfc0e8b8cb9986a32ec23a39e7432396054f17e5c05b8375ec6ccf18da381187
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Whole frozen initial resource and CREATE history against the complete
+    eight-page primary paper; final batch gates pending.
+  selection: Parent-assigned adversarial review of a newly authored resource.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:spent-copper-zinc-alumina-catalyst
+targets:
+- target_id: cmmmech:spent-copper-zinc-alumina-catalyst
+  path: data/records/spent-copper-zinc-alumina-catalyst.yaml
+  label: Spent copper zinc alumina catalyst
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/spent-copper-zinc-alumina-catalyst.yaml
+    role: maintained scientific record
+checks:
+- check_id: scientific
+  name: Independent primary-source assessment
+  required: true
+  status: failed
+  summary: One confirmed minor citation-accuracy finding requires correction; underlying
+    bounded mechanisms are supported.
+  target_ids:
+  - cmmmech:spent-copper-zinc-alumina-catalyst
+  evidence_ids:
+  - owner
+  - primary
+- check_id: named
+  name: Named owner validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/spent-copper-zinc-alumina-catalyst.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: One checked, zero failed.
+  target_ids:
+  - cmmmech:spent-copper-zinc-alumina-catalyst
+  evidence_ids:
+  - named
+- check_id: history
+  name: Initial history validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base 6b6ccf160a457ceb5ebc265b55bbc5d515964707
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 586 history records checked, zero errors.
+  target_ids:
+  - cmmmech:spent-copper-zinc-alumina-catalyst
+  evidence_ids:
+  - history_check
+- check_id: final_batch
+  name: Final batch just check and strict corpus validation
+  required: true
+  status: unavailable
+  summary: Final batch gates have not been run for this finding state; coordinator
+    will run them after correction. Baseline PASS does not substitute.
+  target_ids:
+  - cmmmech:spent-copper-zinc-alumina-catalyst
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/spent-copper-zinc-alumina-catalyst.yaml
+  locator: Whole captured owner; source list and both evidence groups.
+  accessed_at: '2026-10-15T22:20:10.307117Z'
+  support: partial
+  summary: Frozen owner has supported resource/mechanism scope but incorrect primary-source
+    locators.
+  snapshot_sha256: f35f876ca7f0dd97f6b979a0c10082f56f6e28e36f0214e1a94e606f9fc550cb
+- evidence_id: history
+  kind: record_content
+  reference: history/records/spent-copper-zinc-alumina-catalyst/2026-10-15T221413Z-codex-ea1989.yaml
+  locator: Whole CREATE sidecar and owner inline event/history_refs.
+  accessed_at: '2026-10-15T22:20:10.307117Z'
+  support: supports
+  summary: Actual actor, target, timing and description agree; curation provenance
+    is distinct from scientific acceptance.
+  snapshot_sha256: cfc0e8b8cb9986a32ec23a39e7432396054f17e5c05b8375ec6ccf18da381187
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/met8030177
+  locator: Complete published eight-page PDF. All pages visually inspected, especially
+    p.4 Sections3.2.1-3.2.4, p.5 Table1/Section4.1, p.6 Section4.2/Figure4 and p.7
+    Section5.
+  accessed_at: '2026-10-15T22:20:10.307117Z'
+  support: supports
+  summary: Only Table1 is present. There is no Section3.3 or4.3. Section3.2.1 says
+    dust amount could not be identified; Section5 calls Zn dust yield an estimate
+    from alloy/slag inventories.
+  snapshot_sha256: 6c99b814d54a601e10654d1d38a3e6b78e929d6684021999b926e9dd3e50ee16
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/spent-copper-zinc-alumina-catalyst.yaml
+  locator: /private/tmp/cmm-round104-resource-independent/copper-named.log
+  accessed_at: '2026-10-15T22:20:10.307117Z'
+  support: supports
+  summary: One record checked, zero failed; independently executed by this reviewer.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: history_check
+  kind: validation
+  reference: uv run --locked cmmmech validate-history --base 6b6ccf160a457ceb5ebc265b55bbc5d515964707
+  locator: /private/tmp/cmm-round104-resource-independent/history-initial.log
+  accessed_at: '2026-10-15T22:20:10.307117Z'
+  support: supports
+  summary: 586 sidecars checked, zero errors; this is the initial pre-correction state.
+  snapshot_sha256: e06c2e2b9d1aad63a22bac4cd03ab3d8a2c77d41aa6f69f6640aaf7b303a9d74
+- evidence_id: search
+  kind: search
+  reference: Independent DOI correction/retraction search and local identity/source
+    dedup
+  locator: /private/tmp/cmm-round104-resource-independent/search.json; /private/tmp/cmm-round104-resource-independent/dedup.json
+  accessed_at: '2026-10-15T22:20:10.307117Z'
+  support: context_only
+  summary: No relevant formal notice surfaced in bounded results. Existing metal/general
+    catalyst scope is distinct; local matching source contexts were not mistaken for
+    independent studies.
+  snapshot_sha256: ec76f368b5ab00b8c6c1d9400802f5e07ff9a1f7c4794edef6f21e19b8a952f8
+  search_scope: Three exact DOI correction/erratum/retraction queries, first returned
+    web result sets only. rg --no-ignore --hidden --follow covered current WT records/research/reviews/history/skills,
+    current cited raw root and all-state277 issue titles/bodies. Comments, unrelated
+    paths and exhaustive binary PDF indexing excluded.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Used catalyst resource versus elements and minerals
+  outcome: supported
+  summary: Secondary-resource identity is supported.
+  details: Paper pp.1-2 describes spent CuO-ZnO-Al2O3 catalysts on the Polish market,
+    4.5mm x3.5mm rolls. AAS35.1%Cu,29.9%Zn,9.2%Al pertains to the selected sample;
+    plant/service history is unavailable and not invented. No IMA identity, constituent
+    criticality or microbes are inherited.
+  target_ids:
+  - cmmmech:spent-copper-zinc-alumina-catalyst
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: smelting
+  area: evidence
+  topic: Four separate laboratory reduction arms
+  outcome: supported
+  summary: Qualified alloy recovery and incomplete zinc balance are supported.
+  details: Four100g-feed arms with10g coal and different fluxes/temperatures/times
+    are retained. Table1 reports26/25/25/20g alloys, Cu masses23.2/22.1/22.0/17.7g
+    and Cu yields66.1/63.0/62.7/50.4%. VariantI has17.5g unmelted fines;II7.5g. The
+    table omits these fractions. Zn dust percentages are balance estimates, not weighed
+    isolated recovery; no purity/industrial-performance guarantee follows.
+  target_ids:
+  - cmmmech:spent-copper-zinc-alumina-catalyst
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: leaching
+  area: quantity
+  topic: Aqueous fractions and residue-inclusive accounting
+  outcome: supported
+  summary: Leachate transfer is distinguished from overall product accounting.
+  details: Sections4.1-4.2 support <90µm feed,NaOH200g/dm3/75°C/120min then H2SO4180g/dm3/60°C/120min,
+    reported l/s10 with unspecified units, and unquantified peroxide. 0.8dm3×23g/dm3=18.4gZn
+    versus rounded18.5g balance;0.8×43=34.4gCu versus34.5g. Only61.9%Zn enters liquid;97.5%Zn/96%Al
+    count retained residue. Figure4 assignsZnAl2O4 pluscarbon; no pure isolatedmetal/downstreamreuse
+    demonstrated.
+  target_ids:
+  - cmmmech:spent-copper-zinc-alumina-catalyst
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: locators
+  area: provenance
+  topic: Exact citation locators and attribution
+  outcome: concern
+  summary: Source-locator edits are required.
+  details: The owner names Table2,Section3.3 andSection4.3 that do not exist in the
+    complete published PDF; dust-observation wording should cite actualSection3.2.1
+    andSection5 instead of attributing a statement to nonexistentSection3.3.
+  target_ids:
+  - cmmmech:spent-copper-zinc-alumina-catalyst
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: history_scope
+  area: provenance
+  topic: History, exact state and independent authorship
+  outcome: supported
+  summary: Initial provenance and independent review are explicit.
+  details: Root authored this resource; reviewer authored hydroboracite only and did
+    not edit this owner. Inspect captured initial bytes before assessment. Canonical
+    CREATE and inline event are distinct. Scientific review remains incomplete as
+    a release acceptance because correction and final batch gates are pending.
+  target_ids:
+  - cmmmech:spent-copper-zinc-alumina-catalyst
+  evidence_ids:
+  - owner
+  - history
+  - named
+  - history_check
+findings:
+- finding_id: F1
+  issue_key: spent-cu-zn-al-2018-source-locators
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Correct nonexistent Małecki table/section locators and dust attribution
+  description: The source title cites Tables1-2 although only Table1 exists; coal-reduction
+    evidence cites Sections3.1-3.3 andSection3.3, and leaching evidence citesSections4.1-4.3/Table2.
+    The published article instead hasSections3.1/3.2,3.2.1-3.2.4,4.1/4.2 and5. ItsSection3.2.1
+    says the dust amount could not be identified;Section5 explains balance-estimated
+    zinc-to-dust yield. Correct the exact locators and replace the unsupported attribution
+    to a nonexistent section. This is a bounded citation defect, not a change to material
+    identity or qualified recovery conclusions.
+  target_ids:
+  - cmmmech:spent-copper-zinc-alumina-catalyst
+  field_paths:
+  - sources[0].title
+  - mechanisms[0].evidence[0].explanation
+  - mechanisms[0].evidence[1].explanation
+  - mechanisms[1].evidence[0].explanation
+  evidence_ids:
+  - owner
+  - primary
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/spent-copper-zinc-alumina-catalyst.yaml
+    role: maintained scientific record
+  rule_id: primary-evidence-exact-locators
+  native_severity: minor
+  normalization_reason: 'Native minor retained: scientific bounds are already appropriate;
+    cited locations are inaccurate.'
+actions:
+- action_id: A1
+  description: Correct the owner source title to Table1; citeSections3.1-3.2/Table1
+    for smelting,Section3.2.1 and5 for unquantified/estimated dust, andSections4.1-4.2/Figure4
+    for leaching. Append actual EDIT history and preserve this observation.
+  finding_ids:
+  - F1
+  target_ids:
+  - cmmmech:spent-copper-zinc-alumina-catalyst
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/spent-copper-zinc-alumina-catalyst.yaml
+    role: maintained scientific record
+  acceptance_checks:
+  - Verify every replacement locator against the complete eight-page PDF.
+  - Keep zinc dust as estimated and distinguish aqueous yields from residue-inclusive
+    accounting.
+  - Run affected owner/history checks and final batch gates.
+  - Save a successor review of final bytes with this exact finding occurrence and
+    stable issue key.
+limitations:
+- Unweighed dust and unmelted fines prevent a closed zinc balance.
+- Unspecified liquid/solid units, peroxide amount and replicate uncertainties limit
+  transfer.
+- Final batch gates remain required; no release acceptance or source correction is
+  claimed.
+notes:
+- Only review artifacts are written by this reviewer; source acquisition was performed
+  by the author and primary bytes were independently inspected.
+- No Git/GitHub mutation, author contact or owner edit was performed.
+```

@@ -1,0 +1,120 @@
+id: cmmmech:monazite-la
+name: Monazite-(La)
+material_kind: mineral
+description: >-
+  Monazite-(La) is the lanthanum-dominant anhydrous phosphate mineral
+  with ideal formula La(PO4), distinct from monazite-(Ce), the monazite
+  group, hydrated rhabdophane-(La), elemental lanthanum and mixed
+  monazite ores. The September 2026 IMA list records renamed status
+  and a 1966 special procedure, not a numbered approval accession.
+  Ni et al. (1995) resolved a synthetic LaPO4 crystal in monoclinic
+  P21/n monazite with nine-coordinate rare-earth sites. Their natural
+  monazite comparator was Ce-dominant, not natural monazite-(La).
+  Zhoujin et al. (2025) separately produced synthetic La monazite by
+  abiotic microwave-assisted hydrothermal treatment. Characterization
+  of synthetic analogues does not demonstrate microbial formation,
+  recovery from an ore or waste, or industrial operation. Criticality
+  is not inherited from the lanthanum constituent.
+sources:
+- id: ima_2026_09
+  title: >-
+    IMA-CNMNC. The New IMA List of Minerals, September 2026.
+    PDF page 146 Monazite-(La): La(PO4), Rn, 1966 s.p., Kazakhstan.
+    Status definitions pages 1-2; renamed status and special-procedure
+    year do not provide a numbered mineral approval identifier.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-15'
+- id: ni1995
+  title: >-
+    Ni Y, Hughes JM and Mariano AN (1995). Crystal chemistry of
+    the monazite and xenotime structures. American Mineralogist
+    80:21-26. DOI 10.2138/am-1995-1-203. Complete original;
+    synthetic crystal provenance and diffraction methods pages
+    22-23; Table 1 La(PO4) column is separate from the natural
+    Ce-dominant monazite column; structure discussion pages 23-26.
+    Deposited Tables 4-5 were not inspected and no deposited
+    refinement or reflection values are imported.
+  url: https://www.msaweb.org/MSA/AmMin/TOC/Articles_Free/1995/Ni_p21-26_95.pdf
+  accessed_on: '2026-10-15'
+- id: zhoujin2025
+  title: >-
+    Zhoujin Y, Tisdale HB, Keerthisinghe N, Morrison G, Smith MD,
+    Hadermann J, Besmann TM, Amoroso J and zur Loye HC (2025).
+    A low-temperature, one-step synthesis for monazite can transform
+    monazite into a readily usable advanced nuclear waste form.
+    Science Advances 11:eadt3518. DOI 10.1126/sciadv.adt3518.
+    Complete original XML, original figures and supplementary
+    Tables S1-S11/Figures S1-S29 acquired. La-specific evidence:
+    Figure 4B, Figure S2, Figure S7 and Materials and Methods,
+    Reagents/Microwave-assisted reaction/Powder XRD. The detailed
+    pH, time, in-situ transition and durability studies use NdPO4.
+  url: https://doi.org/10.1126/sciadv.adt3518
+  accessed_on: '2026-10-15'
+mechanisms:
+- id: abiotic_microwave_phosphate_conversion
+  name: Abiotic microwave-assisted formation of synthetic La monazite
+  process: other
+  microbial: false
+  description: >-
+    Synthetic La rhabdophane was treated in 1 M phosphoric acid
+    at 210 degrees C for one hour using microwave-assisted
+    hydrothermal heating, producing a powder assigned to monazite
+    by X-ray diffraction. Separate reagent routes using LaCl3
+    or LaF3 at 230 degrees C for one hour also produced source-assigned
+    monazite powders. These are laboratory preparation and mineral
+    transformation experiments; neither an isolated-lanthanum
+    recovery yield nor performance with real nuclear waste was measured.
+  context: >-
+    The series used a CEM Discover 2.0 instrument, an infrared
+    temperature sensor, stirring and 35-mL Pyrex tubes. The initial
+    La oxide reagent was supplied as 99.9% La2O3. The rhabdophane
+    preparation used 8 mL of 1 M H3PO4 at 100 degrees C for
+    30 minutes; the subsequent monazite preparation used 210 degrees C
+    for one hour. The methods also describe direct monazite preparation
+    from starting reagents, but Figure 4B specifically labels the
+    precursor-conversion series. Figure S7 shows the separate
+    LaCl3 and LaF3 routes, whose methods specify 8 mL of 1 M H3PO4
+    and 230 degrees C for one hour. Products were filtered and
+    washed with water and acetone. PXRD used Cu Kalpha radiation
+    over 5-65 degrees 2theta. La starting amounts, independent
+    replicate counts and quantitative La phase-purity or product
+    yields are not specified. The diffraction assignment does not
+    prove complete purity below analytical detection. No matched
+    La acid-free, conventionally heated or pH-series comparison is
+    reported in the acquired source. The detailed proton-assisted
+    pathway, low-temperature onset and chemical-durability tests
+    concern Nd material and are not transferred to La.
+  evidence:
+  - source_ref: zhoujin2025
+    supports: support
+    explanation: >-
+      The La-labeled powder trace in Figure 4B and its caption
+      support conversion of synthetic La rhabdophane in 1 M H3PO4
+      at 210 degrees C for one hour. Figure S2 identifies the
+      La precursor preparation; Figure S7 and the microwave
+      methods independently identify the two starting-salt routes
+      at 230 degrees C. These are distinct arms of one study,
+      not independent replications.
+  - source_ref: zhoujin2025
+    supports: partial
+    explanation: >-
+      Methods do not give a La-specific starting mass or a
+      mass-balanced yield. The 100-mg loading, HCl pH series and
+      fitted phase fractions belong to Nd rhabdophane. Supplement
+      Table S4 lists pH 0.83 where Figure S11 says 0.65, and
+      Figures S18-S20 repeat a 6.38 caption despite different
+      patterns; these unresolved labels are not used to construct
+      a La pH response. The study's in-situ Nd observations and
+      proposed proton pathway are not direct proof of a La
+      molecular mechanism. Chemical durability of Nd powder
+      does not establish La or transuranic waste-form performance.
+curation_history:
+- timestamp: '2026-10-15T22:12:58Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: >-
+    Added distinct La monazite identity and primary-supported
+    synthetic microwave preparation, separating precursor and salt
+    routes and excluding Nd-only results and unverified microbial leads.
+history_refs:
+- history/records/monazite-la/2026-10-15T221420Z-codex-154236.yaml

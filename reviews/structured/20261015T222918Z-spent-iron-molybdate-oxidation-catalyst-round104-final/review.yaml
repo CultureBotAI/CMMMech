@@ -1,0 +1,459 @@
+schema_version: 1.0.0
+review_id: 20261015T222918Z-spent-iron-molybdate-oxidation-catalyst-round104-final
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of spent iron-molybdate oxidation catalyst
+started_at: '2026-10-15T22:16:19.418364Z'
+finished_at: '2026-10-15T22:29:18.680957Z'
+reviewer:
+  identity: codex /root/round104_borates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored both catalyst resources. I authored only hydroboracite
+    in this round and independently assessed the full primary sources and all figures/SI
+    without editing this owner.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The distinct spent-catalyst resource and three laboratory mechanisms are
+  supported. Both primary reports and the Russo SI were independently read and visually
+  inspected completely. The owner preserves source ratio/yield/purity ambiguities
+  and does not claim overall isolated recovery, microbial causation or industrial
+  deployment.
+source:
+  git_revision: 6b6ccf160a457ceb5ebc265b55bbc5d515964707
+  state: working_tree
+  inputs:
+  - path: data/records/spent-iron-molybdate-oxidation-catalyst.yaml
+    sha256: 4011a75d4fede3ab20e8317630fe4adfa770c16485a797962fc81a92549a9b7f
+    role: target
+  - path: history/records/spent-iron-molybdate-oxidation-catalyst/2026-10-15T221416Z-codex-01b74e.yaml
+    sha256: 73fd9e630efc9cf7b91cfbce5f795b42c8510dbd637c550d93c8c90dd31f5352
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Whole record and CREATE history, complete ten-page Farhan VOR, seven-page
+    Russo early-online primary and five-page official SI; final batch validation receipt
+    verified before save.
+  selection: Parent-assigned independent adversarial review of the new maintained
+    resource.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:spent-iron-molybdate-oxidation-catalyst
+targets:
+- target_id: cmmmech:spent-iron-molybdate-oxidation-catalyst
+  path: data/records/spent-iron-molybdate-oxidation-catalyst.yaml
+  label: Spent iron molybdate oxidation catalyst
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/spent-iron-molybdate-oxidation-catalyst.yaml
+    role: maintained scientific record
+checks:
+- check_id: science
+  name: Independent complete primary-source scientific assessment
+  required: true
+  status: passed
+  summary: Complete sources, figures, tables, methods and SI inspected; no supported
+    owner defect identified. Source limitations remain explicit.
+  target_ids:
+  - cmmmech:spent-iron-molybdate-oxidation-catalyst
+  evidence_ids:
+  - owner
+  - russo
+  - russo_si
+  - farhan
+- check_id: named
+  name: Named owner validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/spent-iron-molybdate-oxidation-catalyst.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: One checked, zero failed.
+  target_ids:
+  - cmmmech:spent-iron-molybdate-oxidation-catalyst
+  evidence_ids:
+  - named
+- check_id: history
+  name: History validation against retained base
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base 6b6ccf160a457ceb5ebc265b55bbc5d515964707
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 586 checked, zero errors; unchanged owner/history bytes verified again
+    at save.
+  target_ids:
+  - cmmmech:spent-iron-molybdate-oxidation-catalyst
+  evidence_ids:
+  - history_check
+- check_id: batch_1
+  name: 'Final batch validation: just check'
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Coordinator executed this exact batch command to terminal exit 0; reviewer
+    independently verified the receipt, log digest and unchanged hashes for every
+    record in the corpus.
+  target_ids:
+  - cmmmech:spent-iron-molybdate-oxidation-catalyst
+  evidence_ids:
+  - batch_1
+- check_id: batch_2
+  name: 'Final batch validation: uv run --locked cmmmech validate --require-records'
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Coordinator executed this exact batch command to terminal exit 0; reviewer
+    independently verified the receipt, log digest and unchanged hashes for every
+    record in the corpus.
+  target_ids:
+  - cmmmech:spent-iron-molybdate-oxidation-catalyst
+  evidence_ids:
+  - batch_2
+- check_id: batch_3
+  name: 'Final batch validation: uv run --locked cmmmech validate-history --base 6b6ccf160a457ceb5ebc265b55bbc5d515964707'
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base 6b6ccf160a457ceb5ebc265b55bbc5d515964707
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Coordinator executed this exact batch command to terminal exit 0; reviewer
+    independently verified the receipt, log digest and unchanged hashes for every
+    record in the corpus.
+  target_ids:
+  - cmmmech:spent-iron-molybdate-oxidation-catalyst
+  evidence_ids:
+  - batch_3
+- check_id: batch_4
+  name: 'Final batch validation: uv run --locked python scripts/render_pages.py --check'
+  required: true
+  status: passed
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Coordinator executed this exact batch command to terminal exit 0; reviewer
+    independently verified the receipt, log digest and unchanged hashes for every
+    record in the corpus.
+  target_ids:
+  - cmmmech:spent-iron-molybdate-oxidation-catalyst
+  evidence_ids:
+  - batch_4
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/spent-iron-molybdate-oxidation-catalyst.yaml
+  locator: Complete captured owner including three mechanisms, source qualifiers and
+    provenance.
+  accessed_at: '2026-10-15T22:29:18.680957Z'
+  support: supports
+  summary: Source-scoped laboratory claims preserve two different feeds and multiple
+    reported ambiguities.
+  snapshot_sha256: 4011a75d4fede3ab20e8317630fe4adfa770c16485a797962fc81a92549a9b7f
+- evidence_id: history
+  kind: record_content
+  reference: history/records/spent-iron-molybdate-oxidation-catalyst/2026-10-15T221416Z-codex-01b74e.yaml
+  locator: Whole CREATE sidecar and inline event/history_refs.
+  accessed_at: '2026-10-15T22:29:18.680957Z'
+  support: supports
+  summary: Actor, timestamp, target and change agree; a curation event is not scientific
+    acceptance.
+  snapshot_sha256: 73fd9e630efc9cf7b91cfbce5f795b42c8510dbd637c550d93c8c90dd31f5352
+- evidence_id: russo
+  kind: primary_source
+  reference: https://doi.org/10.1021/acssuschemeng.3c04318
+  locator: Complete institutional ACS-typeset early-online PDF, seven pages A-G; Experimental
+    Section p. B, composition p. C/Table 1, leaching pp. D-E/Figures 4-5, downstream
+    paragraph p. E and kinetics pp. E-F/Figure 6.
+  accessed_at: '2026-10-15T22:29:18.680957Z'
+  support: supports
+  summary: Read and visually inspected all seven pages. The inspected object has provisional
+    A-G pagination, not final journal pages 15644-15650; it supports qualified dissolution
+    and does not supply a quantified isolated-product balance.
+  snapshot_sha256: 3d8458fc058c5acf2e23a1b19c39a3cf43c32ada0e96f2d3b39ad2be45c7669d
+- evidence_id: russo_si
+  kind: primary_source
+  reference: https://doi.org/10.1021/acssuschemeng.3c04318.s001
+  locator: Official ACS Figshare 24315602 version 1, file 42697970; all five pages
+    and Figures S1-S5.
+  accessed_at: '2026-10-15T22:29:18.680957Z'
+  support: supports
+  summary: Read and visually inspected all five pages. Feed C/H, FTIR and heated XRD
+    do not identify each organic compound. Figure S4 marks the early loss while prose
+    names a different interval, so no exact threshold or organic mass fraction is
+    adopted.
+  snapshot_sha256: ad5c76995a3c338566261d9f995fbb7b4718ce1de5dd1813f29af7cf34db9250
+- evidence_id: farhan
+  kind: primary_source
+  reference: https://doi.org/10.1038/s41598-026-47825-8
+  locator: Complete ten-page published PDF; pp. 2-4 Experimental and Equations 1-2,
+    p. 5 Figure 3, p. 6 Figure 4/Results, p. 7 Figure 5, p. 8 Discussion/Conclusions.
+  accessed_at: '2026-10-15T22:29:18.680957Z'
+  support: supports
+  summary: Read and visually inspected every page. Ratio and yield summaries conflict;
+    the owner retains them. Equation 2 measures solution-depletion recovery from clarified
+    liquor, and microscopy does not establish an independently verified bulk product
+    specification.
+  snapshot_sha256: da16bc72150be70b9eb55aa620382f4492328596003afb6ba816aeb987dddd60
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/spent-iron-molybdate-oxidation-catalyst.yaml
+  locator: /private/tmp/cmm-round104-resource-independent/iron-named.log
+  accessed_at: '2026-10-15T22:29:18.680957Z'
+  support: supports
+  summary: One record checked, zero failed, independently executed by this reviewer.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: history_check
+  kind: validation
+  reference: uv run --locked cmmmech validate-history --base 6b6ccf160a457ceb5ebc265b55bbc5d515964707
+  locator: /private/tmp/cmm-round104-resource-independent/history-initial.log
+  accessed_at: '2026-10-15T22:29:18.680957Z'
+  support: supports
+  summary: 586 sidecars checked, zero errors, at the initial review state; this owner
+    and its CREATE history are unchanged.
+  snapshot_sha256: e06c2e2b9d1aad63a22bac4cd03ab3d8a2c77d41aa6f69f6640aaf7b303a9d74
+- evidence_id: search
+  kind: search
+  reference: Independent exact DOI correction/retraction queries and local identity/source
+    dedup
+  locator: /private/tmp/cmm-round104-resource-independent/search.json; /private/tmp/cmm-round104-resource-independent/dedup.json
+  accessed_at: '2026-10-15T22:29:18.680957Z'
+  support: context_only
+  summary: No relevant formal notice surfaced in the bounded returned result sets.
+    Local material identity is a used oxidation catalyst, distinct from mineral and
+    Ni/Co-Mo hydroprocessing owners.
+  snapshot_sha256: ec76f368b5ab00b8c6c1d9400802f5e07ff9a1f7c4794edef6f21e19b8a952f8
+  search_scope: Three exact DOI correction/erratum/retraction web queries, first returned
+    result sets only; not an exhaustive notice search. rg --no-ignore --hidden --follow
+    included current WT records, research, reviews, history and skills, current cited
+    raw source root, and 277 all-state issue titles/bodies. Issue comments, unrelated
+    paths and exhaustive binary-PDF indexing excluded.
+- evidence_id: batch_1
+  kind: validation
+  reference: just check
+  locator: /private/tmp/cmm-round104-final-gates.log
+  accessed_at: '2026-10-15T22:29:18.680957Z'
+  support: supports
+  summary: Coordinator executed this exact batch command to terminal exit 0; reviewer
+    independently verified the receipt, log digest and unchanged hashes for every
+    record in the corpus.
+  snapshot_sha256: a6598ae7cb344192969b92e3b874fdafb5762891c500b0d525e672d231181ebb
+- evidence_id: batch_2
+  kind: validation
+  reference: uv run --locked cmmmech validate --require-records
+  locator: /private/tmp/cmm-round104-final-gates.log
+  accessed_at: '2026-10-15T22:29:18.680957Z'
+  support: supports
+  summary: Coordinator executed this exact batch command to terminal exit 0; reviewer
+    independently verified the receipt, log digest and unchanged hashes for every
+    record in the corpus.
+  snapshot_sha256: a6598ae7cb344192969b92e3b874fdafb5762891c500b0d525e672d231181ebb
+- evidence_id: batch_3
+  kind: validation
+  reference: uv run --locked cmmmech validate-history --base 6b6ccf160a457ceb5ebc265b55bbc5d515964707
+  locator: /private/tmp/cmm-round104-final-gates.log
+  accessed_at: '2026-10-15T22:29:18.680957Z'
+  support: supports
+  summary: Coordinator executed this exact batch command to terminal exit 0; reviewer
+    independently verified the receipt, log digest and unchanged hashes for every
+    record in the corpus.
+  snapshot_sha256: a6598ae7cb344192969b92e3b874fdafb5762891c500b0d525e672d231181ebb
+- evidence_id: batch_4
+  kind: validation
+  reference: uv run --locked python scripts/render_pages.py --check
+  locator: /private/tmp/cmm-round104-final-gates.log
+  accessed_at: '2026-10-15T22:29:18.680957Z'
+  support: supports
+  summary: Coordinator executed this exact batch command to terminal exit 0; reviewer
+    independently verified the receipt, log digest and unchanged hashes for every
+    record in the corpus.
+  snapshot_sha256: a6598ae7cb344192969b92e3b874fdafb5762891c500b0d525e672d231181ebb
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Process-defined secondary resource
+  outcome: supported
+  summary: Used oxidation-catalyst identity is distinct and supported.
+  details: Russo describes formaldehyde/methanol oxidation catalyst from Orim; Farhan
+    describes a separate unnamed chemical-industry end-user feed. Iron molybdate and
+    excess molybdenum oxide are constituents, not justification for an IMA species
+    ID. Elemental Mo, molybdenite, fresh catalyst and spent refinery hydroprocessing
+    catalysts remain separate. No external material/taxon identifier is asserted.
+  target_ids:
+  - cmmmech:spent-iron-molybdate-oxidation-catalyst
+  evidence_ids:
+  - owner
+  - russo
+  - farhan
+- assessment_id: criticality
+  area: scope
+  topic: Criticality and organism scope
+  outcome: supported
+  summary: Generic source criticality wording and acid origin are not overextended.
+  details: No criticality claim is assigned without jurisdiction/list/edition evidence.
+    Tartaric acid recovered from winery waste is an abiotic reagent in these experiments;
+    no microbial taxon, biomass, enzymatic process or microbial recovery is claimed.
+  target_ids:
+  - cmmmech:spent-iron-molybdate-oxidation-catalyst
+  evidence_ids:
+  - owner
+  - russo
+  - farhan
+- assessment_id: russo_feed
+  area: evidence
+  topic: Russo feed and selected conditions
+  outcome: supported
+  summary: Composition, denominators and conditions are source-specific.
+  details: Total-digestion ICP-OES reports 58.01 +/-2.71 wt% Mo and 13.81 +/-0.54
+    wt% Fe; Table 1 is EDX atom%, not bulk wt%. Three aqua-regia digestion trials
+    and a 350-degree-C hotplate setting are not leach replicates or measured leach
+    temperature. Selected leaching is 1.3 M tartaric acid, 75 g/L, 25 degrees C, 60
+    min, 300 rpm in a 25 mL flask with condenser. Acid is 99.90% and blanks Mo/Fe
+    below LOD.
+  target_ids:
+  - cmmmech:spent-iron-molybdate-oxidation-catalyst
+  evidence_ids:
+  - owner
+  - russo
+- assessment_id: russo_outcome
+  area: quantity
+  topic: Dissolution, uncertainty and proposed downstream route
+  outcome: supported
+  summary: Reported leaching is retained without product-yield inflation.
+  details: 87.36 +/-2.94% Mo is reported at selected conditions. Figure 5 caption
+    defines analytical error; three digestions do not prove three replicates per arm.
+    Iron tracks Mo and text explicitly rejects selectivity. Lower loading bound differs
+    33 versus 30 g/L. Equation 1 lacks an explicit feed-mass denominator, so no independent
+    reconstruction is claimed. Proposed calcium tartrate at pH 7 and NH4Cl/HCl at
+    pH 2 plus 90 degrees C do not supply isolated-product purity or a closed balance.
+  target_ids:
+  - cmmmech:spent-iron-molybdate-oxidation-catalyst
+  evidence_ids:
+  - owner
+  - russo
+- assessment_id: russo_models
+  area: evidence
+  topic: Kinetics and feed characterization
+  outcome: supported
+  summary: Model fit and characterization are bounded.
+  details: The paper fits chemical-reaction, product-layer and film-diffusion equations;
+    similar fits are not unique molecular proof. The SI reports 1.72% C and 0.67%
+    H, C-H bands, heating to 400 degrees C and changed diffraction; this does not
+    identify each organic species. Figure S4 and thermal prose differ in the interval
+    associated with 4.65% loss. The owner expressly avoids assigning a threshold or
+    exact organic fraction.
+  target_ids:
+  - cmmmech:spent-iron-molybdate-oxidation-catalyst
+  evidence_ids:
+  - owner
+  - russo
+  - russo_si
+- assessment_id: farhan_feed
+  area: evidence
+  topic: Separate ammoniacal experiment
+  outcome: supported
+  summary: Feed, controls and preparation are traceable.
+  details: Farhan pellets below 200 mesh have 52.59 +/-0.80 wt% Mo, 12.98 +/-0.43
+    Fe and 0.07 +/-0.03 Al from duplicate digestions. Experiments use 1.5 g in 15
+    mL, 30 mL vials, 20 degrees C, 300 rpm, 60 min, duplicate conditions. Leach liquor
+    plus NH4OH washes enter analysis. Water (~11% Mo/~8% Fe), ammonia alone (64-89%
+    Mo at 1-5 M, Fe below 1.5%) and mixed system (>91% Mo at total 2 M, about 4.5%
+    Fe at nominal 1:1) are separate arms.
+  target_ids:
+  - cmmmech:spent-iron-molybdate-oxidation-catalyst
+  evidence_ids:
+  - owner
+  - farhan
+- assessment_id: farhan_ratios
+  area: quantity
+  topic: Reagent and result conflicts
+  outcome: supported
+  summary: Conflicts prevent an invented exact transferable recipe.
+  details: The paper interchanges NH4OH:(NH4)2SO4 and NH3:NH4+ despite two ammonium
+    ions per salt. Figure 4/ratio section gives ~95% Mo at >=3:1 while abstract/discussion
+    summarize ~92%. The 500 mL liquor at reported total NH3 2 M and reagent ratio
+    3:1 is settled for 12 h and filtered; 48.2 g/L Mo and <7 mg/L Fe characterize
+    this liquor. Iron settling is observed, but the proposed iron pentaammine and
+    printed reaction equations are not directly verified stoichiometry.
+  target_ids:
+  - cmmmech:spent-iron-molybdate-oxidation-catalyst
+  evidence_ids:
+  - owner
+  - farhan
+- assessment_id: asc
+  area: quantity
+  topic: Antisolvent outcome and product characterization
+  outcome: supported
+  summary: Crystallization-step depletion and unresolved purity are distinguished.
+  details: 12 mL total aqueous/ethanol, 20 degrees C, ethanol at zero time; maximum
+    95.3% at 45 min/400 rpm, then 30 min settle, 5 mL ethanol wash and overnight 30-degree-C
+    drying. Equation 2 computes initial-versus-mother-liquor Mo inventories, not overall
+    spent-feed recovery. Duplicate ASC means carry standard error. Abstract A/O 1:2,
+    Results selects 2 and Figure 5 time/speed/product captions use 1.5. XRD assigns
+    ammonium heptamolybdate tetrahydrate. SEM-EDX-associated >99.9% purity is not
+    accepted as an independently verified bulk assay.
+  target_ids:
+  - cmmmech:spent-iron-molybdate-oxidation-catalyst
+  evidence_ids:
+  - owner
+  - farhan
+- assessment_id: scale
+  area: scope
+  topic: Transfer and industrial deployment
+  outcome: supported
+  summary: Laboratory scope and independent feeds are retained.
+  details: Industry supplied feed; no industrial recovery deployment, scale-up economic
+    demonstration or closed ammonia/ethanol/acid recycling loop was measured. Russo
+    and Farhan use distinct feeds and conditions, so percentages cannot be combined
+    or ranked as matched controls. No additional harvest/product ratio is calculated.
+  target_ids:
+  - cmmmech:spent-iron-molybdate-oxidation-catalyst
+  evidence_ids:
+  - owner
+  - russo
+  - farhan
+- assessment_id: provenance
+  area: provenance
+  topic: Source objects and curation history
+  outcome: supported
+  summary: Exact source state and independent authorship are explicit.
+  details: Reviewer did not author or edit this owner. Native inspect captured owner/CREATE/schema
+    before assessment. Current bytes are verified unchanged before save. Institutional
+    Russo early-online A-G object is identified accurately; five-page official SI
+    is companion evidence, not an independent experiment. Source publication chronology
+    and actual access are separate. Canonical CREATE and inline event agree.
+  target_ids:
+  - cmmmech:spent-iron-molybdate-oxidation-catalyst
+  evidence_ids:
+  - owner
+  - history
+  - named
+  - history_check
+  - russo
+  - russo_si
+findings: []
+actions: []
+limitations:
+- Sources use separate spent feeds, so yields are not directly comparable or combinable.
+- Russo inspected PDF has early-online A-G pagination; final-page PDF was not acquired,
+  although final journal metadata are known.
+- Ambiguous ratio definitions, inconsistent A/O optima and unavailable bulk product
+  assay prevent a definitive optimized Farhan recovery recipe.
+- Source experiments remain laboratory studies; complete product/feed balances, recycling
+  performance and industrial economics are not established.
+- Bounded notice search cannot establish universal absence of corrections or contrary
+  studies.
+notes:
+- No Git/GitHub changes or author contact were performed by this reviewer.
+- Primary bytes were acquired by the curator, then independently read and visually
+  inspected by this reviewer.

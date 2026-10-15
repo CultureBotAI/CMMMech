@@ -1,0 +1,586 @@
+# Independent scientific review of Hydroboracite
+
+- Review: 20261015T222859Z-hydroboracite-round104-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T22:17:21.560852Z
+- Finished UTC: 2026-10-15T22:28:59.749177Z
+- Reviewer: codex /root/round104_ree (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Hydroboracite identity and two narrow abiotic laboratory transformations are supported. Mixed feed, thermal endpoint conflict, separate pressure arms, unsolved high-pressure structure and inconsistent CIF metadata are correctly retained.
+
+## Scope And Provenance
+
+Full frozen owner and CREATE sidecar; primary species authority, original thermal/pressure methods/results/figures/tables, all four accessible deposits, bounded conflict/notice searches and exact-byte validation.
+
+Selection: Parent-assigned independent review after curator freeze.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6b6ccf160a457ceb5ebc265b55bbc5d515964707.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:hydroboracite | data/records/hydroboracite.yaml | maintained | Hydroboracite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent primary-evidence assessment | passed | True | cmmmech:hydroboracite | Original authority row, full primary methods/results, relevant figures/tables and deposits independently assessed against frozen record bytes. |
+| Independent named record validation | passed | True | cmmmech:hydroboracite | Actual reviewer execution: 1 record, 0 failed. |
+| Independent history validation | passed | True | cmmmech:hydroboracite | Actual reviewer execution checked 586 histories without errors; later unrelated catalyst EDIT is covered by final coordinator batch. |
+| Completed coordinator batch gate 1 | passed | True | cmmmech:hydroboracite | Actual terminal receipt, expected command, log hash, trusted base and frozen owner bytes independently verified after completion. |
+| Completed coordinator batch gate 2 | passed | True | cmmmech:hydroboracite | Actual terminal receipt, expected command, log hash, trusted base and frozen owner bytes independently verified after completion. |
+| Completed coordinator batch gate 3 | passed | True | cmmmech:hydroboracite | Actual terminal receipt, expected command, log hash, trusted base and frozen owner bytes independently verified after completion. |
+| Completed coordinator batch gate 4 | passed | True | cmmmech:hydroboracite | Actual terminal receipt, expected command, log hash, trusted base and frozen owner bytes independently verified after completion. |
+
+## Scientific And Domain Assessments
+
+### Species, specimen and phase identity
+
+identity: supported. Targets: cmmmech:hydroboracite.
+
+Identity is supported without importing commodity status.
+
+IMA September 2026 establishes hydroboracite formula and grandfathered status. The 1978 natural specimen supports P2/c and two formula units per cell. Geometric hydrogen assignment is distinguished from experimentally refined H positions. Elemental boron, commodity borates and other borate species are separate objects; the laboratory label hydroboracite-II is not asserted to be an IMA-approved natural species.
+
+### Natural-feed heating, diffraction and water loss
+
+evidence: supported. Targets: cmmmech:hydroboracite.
+
+Thermal observations are adequately bounded.
+
+The Table 1 column 8 natural Büyük Günevi/Yolbaşı sample is not chemically pure. Ovens at 100/150/200 °C and overnight furnace settings 250–600 °C are supported; atmosphere, ramp, exact hours and replicate uncertainties are unknown. Source-reported water losses of 22.37%, 24.46% and 25.26% at 400/500/600 °C are not recovery yields. The owner preserves conflict between the prose 500 °C complete-water-loss claim and continued loss at 600 °C, and residual peaks in the 400–600 °C patterns. Unknown phase attribution and impurity content preclude assigning every bulk change intrinsically to hydroboracite.
+
+### Two pressure arms and measured transition brackets
+
+evidence: supported. Targets: cmmmech:hydroboracite.
+
+Separate crystals and sampling uncertainty remain explicit.
+
+Approximately 20 × 5 × 4 micrometre natural Bigadiç crystals were measured separately in helium DACs at ESRF ID15B, with ruby ±0.05 GPa and room temperature/293 K. First-arm endpoints 14.40(5)/14.72(5) GPa and second-arm endpoints 14.08(5)/14.51(5) GPa are sampled brackets, not an equilibrium transition threshold. The 0.9(6)% comparison combines first-arm 14.40 GPa with second-arm 14.51 GPa. Source abstract/results/conclusion interval disagreements are preserved. High-pressure symmetry and atomic structure remain unsolved; original crystalline state was not recovered.
+
+### Crystal-model and chemical characterization limits
+
+evidence: supported. Targets: cmmmech:hydroboracite.
+
+Deposit inconsistencies are documented rather than silently repaired.
+
+Independent atom-site summation of all three CIFs gives two non-hydrogen formula units despite Z=1. Their declared densities therefore remain unused. The files match starting-phase first-arm cell metrics, not a solved high-pressure phase. H sites are absent; hydrogen-bond deformation is inferred from non-H geometry. Supplementary tables report modeled geometry and equation-of-state analysis, not concentration/recovery assays. Structural agreement cannot substitute for the unavailable full chemical characterization of the two natural crystals.
+
+### Criticality, biological and deployment boundaries
+
+scope: supported. Targets: cmmmech:hydroboracite.
+
+Laboratory transformations do not establish extraction or deployment.
+
+Criticality is unrecorded, not declared absent: no jurisdiction, list or edition is inherited from boron/borates. Both mechanisms explicitly set microbial:false; organism, strain and biomass are not applicable. There is no isolated boron product, mass-balanced recovery, microbial experiment, industrial operation or shielding-concrete performance test. Source solubility ratios lacking assay conditions are not adopted.
+
+### Current CREATE and exact reviewed bytes
+
+provenance: supported. Targets: cmmmech:hydroboracite.
+
+Provenance and validation are supported.
+
+Native inspect captured exact owner/history/schema hashes before scientific assessment. Final hashes remain unchanged. Inline event and canonical CREATE sidecar accurately describe current codex/GPT-6 work without historical authorship invention. I authored the La lane, not this borate owner, and made no owner or history changes. Independently executed validation and final coordinator receipt adoption are explicitly distinguished.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/hydroboracite.yaml; Entire owner; native inspect before judgment and final exact-byte recheck. | supports | Frozen material identity, two abiotic mechanisms, source qualifications and provenance independently inspected. |
+| history | history/records/hydroboracite/2026-10-15T221240Z-codex-885932.yaml; Complete canonical CREATE session, inline event and history_refs. | supports | Current codex/GPT-6 authorship, UTC timestamp, target and limited claims match this round; reviewer made no owner or history edits. |
+| dossier | research/sources/round104-borates/20261015T221506Z-source-investigation.md; Paired source investigation and raw acquisition/version receipts. | supports | Author-acquired originals were independently checked; read-only review does not claim fresh independent downloads. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September 2026 list pp. 1-2 definitions and exact Hydroboracite row on p. 97 visually inspected. | supports | CaMg[B3O4(OH)3]2(H2O)3, grandfathered G and description year 1834 support identity; year is not an approval number. |
+| sabelli | https://www.rruff.net/doclib/cm/vol16/CM16_75.pdf; Complete six-page original; pp. 75-78, Table 2 and hydrogen-location discussion, Figures 1-3; claim-bearing scans visually checked. | supports | Natural Bigadiç crystal is monoclinic P2/c, Z=2. Diffuse residual maxima led to geometrically assigned H coordinates, which were not independently refined. Separate CISTI structure-factor deposit remains unacquired. |
+| thermal | https://dergipark.org.tr/tr/download/article-file/44391; Complete 26-page English PDF text; Table 1 column 8, Table 3, heating protocol pp. 107-109, Graphs 4-12 visually inspected. | supports | Mixed natural feed contains 46.39% B2O3 and 4.46% SiO2. Phase-loss and source-reported water-loss endpoints differ; original high-temperature traces retain unassigned peaks. Current MTA/Dergipark metadata confirm 1973 but differ in page ranges. |
+| pressure | https://air.unimi.it/retrieve/d1a62dd8-230d-4e02-91d4-1823aa222c6e/hydroboracite_08-01-2026-unmarked.pdf; Complete 33-page accepted manuscript text; methods pp. 4-7, Table 1 pp. 10-11, results pp. 12-18 and supplementary pp. 20-30; original tables and claim-bearing figures visually checked. | supports | Two separate natural-crystal arms support a disruptive pressure transition with unsolved product structure. Table brackets, conflicting summary intervals, cross-arm volume comparison, missing chemistry/H positions and failed recovery remain explicit. |
+| deposits | https://doi.org/10.1007/s00269-026-01339-x; All three official CIF atom-site loops independently parsed; DOCX independently extracted into 11 tables and compared with embedded supplementary pages. | supports | Each CIF independently sums multiplicity × occupancy to Ca2Mg2B12O34 despite Z=1; no H rows. Cell metrics map to starting-phase first-arm points 0.32, 14.40 and 7.35 GPa. No hydroboracite-II atomic model is deposited. |
+| search | /private/tmp/cmm-round104-hydroboracite-independent/search-results.json; Saved returned web results for three exact queries on the review date, plus hidden/ignored/followed local search. | context_only | No formal notice affecting these claims surfaced in the bounded returned sets. Primary institutional metadata distinguishes accepted manuscript from restricted publisher PDF; external search snippets do not replace full primary evidence. |
+| audit | /private/tmp/cmm-round104-hydroboracite-independent/independent-evidence.json; Initial inspect timestamp, unchanged owner/history hash checks, independently computed CIF contents, supplement extraction and source reuse hashes. | context_only | Records reviewer actions and actual source/access limits, without attributing author downloads to reviewer. |
+| named | uv run --locked cmmmech validate data/records/hydroboracite.yaml; /private/tmp/cmm-round104-hydroboracite-independent/named-validation.log | supports | Actual independent execution: 1 record checked, 0 failed. Structural validation does not prove scientific truth. |
+| history_check | uv run --locked cmmmech validate-history --base 6b6ccf160a457ceb5ebc265b55bbc5d515964707; /private/tmp/cmm-round104-hydroboracite-independent/history-validation.log | supports | Actual independent execution before the coordinator added an unrelated catalyst EDIT: 586 history records, 0 errors. Final coordinator history gate separately covers the final batch. |
+| batch | /private/tmp/cmm-round104-final-gates.json; Completed coordinator receipt and retained log /private/tmp/cmm-round104-final-gates.log; log SHA256 a6598ae7cb344192969b92e3b874fdafb5762891c500b0d525e672d231181ebb. | supports | Four actual terminal zero exits, trusted base, expected command set, unchanged input assertion and this frozen owner hash were independently verified after completion. |
+
+## Limits And Additional Notes
+
+- Publisher version-of-record PDF and the 1978 separate CISTI structure-factor deposit were not acquired; the actual 2026 assessed text is the complete institutional accepted manuscript plus official CIF/DOCX supplements.
+- Heating atmosphere, ramp, exact overnight duration, replicate uncertainty and quantitative residual-phase identification remain unknown. Continued source-reported water loss after the stated complete-loss temperature is unresolved.
+- Pressure-summary intervals and cross-arm volume comparison remain source ambiguities. High-pressure structure, H positions, full specimen chemistry and recovered crystalline product are not established.
+- All three CIFs have formula-unit/density inconsistencies; their affected scalar fields are not adopted. Source correction needs original or corrected deposits.
+- No microbial transformation, isolated boron recovery, industrial deployment, concrete performance or commodity criticality follows from these observations. Search coverage is bounded.
+- No supported corrective owner defect was found at blocker, major, minor or informational severity. No owner/history correction was made; external-source gaps remain explicit limitations.
+- Independent evidence assessment is not independent experimental replication. Author-acquired originals were reused with verified hashes and independently inspected.
+- Start timestamp is the actual native-inspect receipt filesystem timestamp. Finish follows completed batch-receipt verification. Validation does not prove scientific truth.
+- Source clarification about pressure brackets, cross-arm volume comparison and CIF formula metadata is follow-up research, not a claim that the original publication has been corrected. Root handles GitHub issue and publication actions.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T222859Z-hydroboracite-round104-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Hydroboracite
+started_at: '2026-10-15T22:17:21.560852Z'
+finished_at: '2026-10-15T22:28:59.749177Z'
+reviewer:
+  identity: codex /root/round104_ree
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The separate /root/round104_borates agent authored this owner
+    and CREATE history. I authored the La lane, independently inspected frozen borate
+    bytes and original evidence, and changed neither this owner nor its history.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 6b6ccf160a457ceb5ebc265b55bbc5d515964707
+  state: working_tree
+  inputs:
+  - path: data/records/hydroboracite.yaml
+    sha256: db1e645ae3e36e7b9a77826fa9a6b1542f9a7603406dabef9cafac97d552b5a9
+    role: target
+  - path: history/records/hydroboracite/2026-10-15T221240Z-codex-885932.yaml
+    sha256: d4795279450b0e658c4dbb837fc1d65502f63a5022cd9d05f0cca72f9215f17e
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+  - path: research/sources/round104-borates/20261015T221506Z-source-investigation.md
+    sha256: 07a034e23fd562ae06cb302b1a056d17934a18a897b89607d19762046adbd15b
+    role: context
+scope:
+  description: Full frozen owner and CREATE sidecar; primary species authority, original
+    thermal/pressure methods/results/figures/tables, all four accessible deposits,
+    bounded conflict/notice searches and exact-byte validation.
+  selection: Parent-assigned independent review after curator freeze.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:hydroboracite
+targets:
+- target_id: cmmmech:hydroboracite
+  path: data/records/hydroboracite.yaml
+  label: Hydroboracite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/hydroboracite.yaml
+    role: maintained scientific record
+checks:
+- check_id: science
+  name: Independent primary-evidence assessment
+  required: true
+  status: passed
+  summary: Original authority row, full primary methods/results, relevant figures/tables
+    and deposits independently assessed against frozen record bytes.
+  target_ids:
+  - cmmmech:hydroboracite
+  evidence_ids:
+  - owner
+  - ima
+  - sabelli
+  - thermal
+  - pressure
+  - deposits
+  - search
+- check_id: named
+  name: Independent named record validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/hydroboracite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Actual reviewer execution: 1 record, 0 failed.'
+  target_ids:
+  - cmmmech:hydroboracite
+  evidence_ids:
+  - named
+- check_id: history
+  name: Independent history validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base 6b6ccf160a457ceb5ebc265b55bbc5d515964707
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual reviewer execution checked 586 histories without errors; later unrelated
+    catalyst EDIT is covered by final coordinator batch.
+  target_ids:
+  - cmmmech:hydroboracite
+  evidence_ids:
+  - history_check
+- check_id: batch1
+  name: Completed coordinator batch gate 1
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt, expected command, log hash, trusted base and frozen
+    owner bytes independently verified after completion.
+  target_ids:
+  - cmmmech:hydroboracite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch gate 2
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt, expected command, log hash, trusted base and frozen
+    owner bytes independently verified after completion.
+  target_ids:
+  - cmmmech:hydroboracite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch gate 3
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base 6b6ccf160a457ceb5ebc265b55bbc5d515964707
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt, expected command, log hash, trusted base and frozen
+    owner bytes independently verified after completion.
+  target_ids:
+  - cmmmech:hydroboracite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch gate 4
+  required: true
+  status: passed
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt, expected command, log hash, trusted base and frozen
+    owner bytes independently verified after completion.
+  target_ids:
+  - cmmmech:hydroboracite
+  evidence_ids:
+  - batch
+summary: Hydroboracite identity and two narrow abiotic laboratory transformations
+  are supported. Mixed feed, thermal endpoint conflict, separate pressure arms, unsolved
+  high-pressure structure and inconsistent CIF metadata are correctly retained.
+limitations:
+- Publisher version-of-record PDF and the 1978 separate CISTI structure-factor deposit
+  were not acquired; the actual 2026 assessed text is the complete institutional accepted
+  manuscript plus official CIF/DOCX supplements.
+- Heating atmosphere, ramp, exact overnight duration, replicate uncertainty and quantitative
+  residual-phase identification remain unknown. Continued source-reported water loss
+  after the stated complete-loss temperature is unresolved.
+- Pressure-summary intervals and cross-arm volume comparison remain source ambiguities.
+  High-pressure structure, H positions, full specimen chemistry and recovered crystalline
+  product are not established.
+- All three CIFs have formula-unit/density inconsistencies; their affected scalar
+  fields are not adopted. Source correction needs original or corrected deposits.
+- No microbial transformation, isolated boron recovery, industrial deployment, concrete
+  performance or commodity criticality follows from these observations. Search coverage
+  is bounded.
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/hydroboracite.yaml
+  locator: Entire owner; native inspect before judgment and final exact-byte recheck.
+  accessed_at: '2026-10-15T22:28:59.749177Z'
+  support: supports
+  summary: Frozen material identity, two abiotic mechanisms, source qualifications
+    and provenance independently inspected.
+  snapshot_sha256: db1e645ae3e36e7b9a77826fa9a6b1542f9a7603406dabef9cafac97d552b5a9
+- evidence_id: history
+  kind: record_content
+  reference: history/records/hydroboracite/2026-10-15T221240Z-codex-885932.yaml
+  locator: Complete canonical CREATE session, inline event and history_refs.
+  accessed_at: '2026-10-15T22:28:59.749177Z'
+  support: supports
+  summary: Current codex/GPT-6 authorship, UTC timestamp, target and limited claims
+    match this round; reviewer made no owner or history edits.
+  snapshot_sha256: d4795279450b0e658c4dbb837fc1d65502f63a5022cd9d05f0cca72f9215f17e
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round104-borates/20261015T221506Z-source-investigation.md
+  locator: Paired source investigation and raw acquisition/version receipts.
+  accessed_at: '2026-10-15T22:28:59.749177Z'
+  support: supports
+  summary: Author-acquired originals were independently checked; read-only review
+    does not claim fresh independent downloads.
+  snapshot_sha256: 07a034e23fd562ae06cb302b1a056d17934a18a897b89607d19762046adbd15b
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September 2026 list pp. 1-2 definitions and exact Hydroboracite row on
+    p. 97 visually inspected.
+  accessed_at: '2026-10-15T22:28:59.749177Z'
+  support: supports
+  summary: CaMg[B3O4(OH)3]2(H2O)3, grandfathered G and description year 1834 support
+    identity; year is not an approval number.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: sabelli
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/cm/vol16/CM16_75.pdf
+  locator: Complete six-page original; pp. 75-78, Table 2 and hydrogen-location discussion,
+    Figures 1-3; claim-bearing scans visually checked.
+  accessed_at: '2026-10-15T22:28:59.749177Z'
+  support: supports
+  summary: Natural Bigadiç crystal is monoclinic P2/c, Z=2. Diffuse residual maxima
+    led to geometrically assigned H coordinates, which were not independently refined.
+    Separate CISTI structure-factor deposit remains unacquired.
+  snapshot_sha256: df9f918e81ba5f1094cce97b5afcb55de637bde2c9d88bafb58ff441ce5b9611
+- evidence_id: thermal
+  kind: primary_source
+  reference: https://dergipark.org.tr/tr/download/article-file/44391
+  locator: Complete 26-page English PDF text; Table 1 column 8, Table 3, heating protocol
+    pp. 107-109, Graphs 4-12 visually inspected.
+  accessed_at: '2026-10-15T22:28:59.749177Z'
+  support: supports
+  summary: Mixed natural feed contains 46.39% B2O3 and 4.46% SiO2. Phase-loss and
+    source-reported water-loss endpoints differ; original high-temperature traces
+    retain unassigned peaks. Current MTA/Dergipark metadata confirm 1973 but differ
+    in page ranges.
+  snapshot_sha256: fe8a0c19ecc92f7810a9137663637fdc64692642c9481d40bea224c6dfdbe304
+- evidence_id: pressure
+  kind: primary_source
+  reference: https://air.unimi.it/retrieve/d1a62dd8-230d-4e02-91d4-1823aa222c6e/hydroboracite_08-01-2026-unmarked.pdf
+  locator: Complete 33-page accepted manuscript text; methods pp. 4-7, Table 1 pp.
+    10-11, results pp. 12-18 and supplementary pp. 20-30; original tables and claim-bearing
+    figures visually checked.
+  accessed_at: '2026-10-15T22:28:59.749177Z'
+  support: supports
+  summary: Two separate natural-crystal arms support a disruptive pressure transition
+    with unsolved product structure. Table brackets, conflicting summary intervals,
+    cross-arm volume comparison, missing chemistry/H positions and failed recovery
+    remain explicit.
+  snapshot_sha256: 43e4482849df9afc5530626aa0a059084128c6750f45a112343931664a42311d
+- evidence_id: deposits
+  kind: primary_source
+  reference: https://doi.org/10.1007/s00269-026-01339-x
+  locator: All three official CIF atom-site loops independently parsed; DOCX independently
+    extracted into 11 tables and compared with embedded supplementary pages.
+  accessed_at: '2026-10-15T22:28:59.749177Z'
+  support: supports
+  summary: Each CIF independently sums multiplicity × occupancy to Ca2Mg2B12O34 despite
+    Z=1; no H rows. Cell metrics map to starting-phase first-arm points 0.32, 14.40
+    and 7.35 GPa. No hydroboracite-II atomic model is deposited.
+  snapshot_sha256: 760c8098970e8ed3e79cb88bec1d9fead6a5957c8c91ebab20dce31cd82c4e01
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round104-hydroboracite-independent/search-results.json
+  locator: Saved returned web results for three exact queries on the review date,
+    plus hidden/ignored/followed local search.
+  accessed_at: '2026-10-15T22:28:59.749177Z'
+  support: context_only
+  summary: No formal notice affecting these claims surfaced in the bounded returned
+    sets. Primary institutional metadata distinguishes accepted manuscript from restricted
+    publisher PDF; external search snippets do not replace full primary evidence.
+  snapshot_sha256: 1957d26c10a75664a40b6afd7587672a0868c820ae57d7e289446bb22d170714
+  search_scope: 'Queries: "hydroboracite" "01339" correction erratum retraction; "hydroboracite"
+    "Demircioğlu" 1973; "hydroboracite" "Sabelli" correction retraction. Returned
+    results only, no exhaustive pagination. Local rg --no-ignore --hidden --follow
+    covered W data/research/reviews/history/.claude, 277 all-state issue titles/bodies
+    and current borate raw root. Issue comments, whole-machine files and exhaustive
+    binary-PDF semantics were not searched.'
+- evidence_id: audit
+  kind: search
+  reference: /private/tmp/cmm-round104-hydroboracite-independent/independent-evidence.json
+  locator: Initial inspect timestamp, unchanged owner/history hash checks, independently
+    computed CIF contents, supplement extraction and source reuse hashes.
+  accessed_at: '2026-10-15T22:28:59.749177Z'
+  support: context_only
+  summary: Records reviewer actions and actual source/access limits, without attributing
+    author downloads to reviewer.
+  snapshot_sha256: 53ab6070ab4ff16f947fbb1c551e235d3fbd7a505ecc999f861b8ad4e9879704
+  search_scope: Read-only primary-evidence and exact-byte audit; no Git/GitHub mutation,
+    author contact, or owner correction.
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/hydroboracite.yaml
+  locator: /private/tmp/cmm-round104-hydroboracite-independent/named-validation.log
+  accessed_at: '2026-10-15T22:28:59.749177Z'
+  support: supports
+  summary: 'Actual independent execution: 1 record checked, 0 failed. Structural validation
+    does not prove scientific truth.'
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: history_check
+  kind: validation
+  reference: uv run --locked cmmmech validate-history --base 6b6ccf160a457ceb5ebc265b55bbc5d515964707
+  locator: /private/tmp/cmm-round104-hydroboracite-independent/history-validation.log
+  accessed_at: '2026-10-15T22:28:59.749177Z'
+  support: supports
+  summary: 'Actual independent execution before the coordinator added an unrelated
+    catalyst EDIT: 586 history records, 0 errors. Final coordinator history gate separately
+    covers the final batch.'
+  snapshot_sha256: e06c2e2b9d1aad63a22bac4cd03ab3d8a2c77d41aa6f69f6640aaf7b303a9d74
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round104-final-gates.json
+  locator: Completed coordinator receipt and retained log /private/tmp/cmm-round104-final-gates.log;
+    log SHA256 a6598ae7cb344192969b92e3b874fdafb5762891c500b0d525e672d231181ebb.
+  accessed_at: '2026-10-15T22:28:59.749177Z'
+  support: supports
+  summary: Four actual terminal zero exits, trusted base, expected command set, unchanged
+    input assertion and this frozen owner hash were independently verified after completion.
+  snapshot_sha256: 822243b9b5b4a25ad7b6211a7e3879ae145ed74ad25a3c87f80f6f61e06e72c4
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species, specimen and phase identity
+  outcome: supported
+  summary: Identity is supported without importing commodity status.
+  details: IMA September 2026 establishes hydroboracite formula and grandfathered
+    status. The 1978 natural specimen supports P2/c and two formula units per cell.
+    Geometric hydrogen assignment is distinguished from experimentally refined H positions.
+    Elemental boron, commodity borates and other borate species are separate objects;
+    the laboratory label hydroboracite-II is not asserted to be an IMA-approved natural
+    species.
+  target_ids:
+  - cmmmech:hydroboracite
+  evidence_ids:
+  - owner
+  - ima
+  - sabelli
+- assessment_id: thermal
+  area: evidence
+  topic: Natural-feed heating, diffraction and water loss
+  outcome: supported
+  summary: Thermal observations are adequately bounded.
+  details: The Table 1 column 8 natural Büyük Günevi/Yolbaşı sample is not chemically
+    pure. Ovens at 100/150/200 °C and overnight furnace settings 250–600 °C are supported;
+    atmosphere, ramp, exact hours and replicate uncertainties are unknown. Source-reported
+    water losses of 22.37%, 24.46% and 25.26% at 400/500/600 °C are not recovery yields.
+    The owner preserves conflict between the prose 500 °C complete-water-loss claim
+    and continued loss at 600 °C, and residual peaks in the 400–600 °C patterns. Unknown
+    phase attribution and impurity content preclude assigning every bulk change intrinsically
+    to hydroboracite.
+  target_ids:
+  - cmmmech:hydroboracite
+  evidence_ids:
+  - owner
+  - thermal
+- assessment_id: pressure
+  area: evidence
+  topic: Two pressure arms and measured transition brackets
+  outcome: supported
+  summary: Separate crystals and sampling uncertainty remain explicit.
+  details: Approximately 20 × 5 × 4 micrometre natural Bigadiç crystals were measured
+    separately in helium DACs at ESRF ID15B, with ruby ±0.05 GPa and room temperature/293
+    K. First-arm endpoints 14.40(5)/14.72(5) GPa and second-arm endpoints 14.08(5)/14.51(5)
+    GPa are sampled brackets, not an equilibrium transition threshold. The 0.9(6)%
+    comparison combines first-arm 14.40 GPa with second-arm 14.51 GPa. Source abstract/results/conclusion
+    interval disagreements are preserved. High-pressure symmetry and atomic structure
+    remain unsolved; original crystalline state was not recovered.
+  target_ids:
+  - cmmmech:hydroboracite
+  evidence_ids:
+  - owner
+  - pressure
+- assessment_id: deposits
+  area: evidence
+  topic: Crystal-model and chemical characterization limits
+  outcome: supported
+  summary: Deposit inconsistencies are documented rather than silently repaired.
+  details: Independent atom-site summation of all three CIFs gives two non-hydrogen
+    formula units despite Z=1. Their declared densities therefore remain unused. The
+    files match starting-phase first-arm cell metrics, not a solved high-pressure
+    phase. H sites are absent; hydrogen-bond deformation is inferred from non-H geometry.
+    Supplementary tables report modeled geometry and equation-of-state analysis, not
+    concentration/recovery assays. Structural agreement cannot substitute for the
+    unavailable full chemical characterization of the two natural crystals.
+  target_ids:
+  - cmmmech:hydroboracite
+  evidence_ids:
+  - owner
+  - pressure
+  - deposits
+- assessment_id: scope
+  area: scope
+  topic: Criticality, biological and deployment boundaries
+  outcome: supported
+  summary: Laboratory transformations do not establish extraction or deployment.
+  details: 'Criticality is unrecorded, not declared absent: no jurisdiction, list
+    or edition is inherited from boron/borates. Both mechanisms explicitly set microbial:false;
+    organism, strain and biomass are not applicable. There is no isolated boron product,
+    mass-balanced recovery, microbial experiment, industrial operation or shielding-concrete
+    performance test. Source solubility ratios lacking assay conditions are not adopted.'
+  target_ids:
+  - cmmmech:hydroboracite
+  evidence_ids:
+  - owner
+  - ima
+  - thermal
+  - pressure
+  dimensions:
+  - name: material_form
+    value: mineral species; natural mixed thermal feed and individual pressure crystals
+      distinguished
+    definition: Authority identity does not imply pure composition of every experimental
+      specimen.
+    evidence_ids:
+    - owner
+    - thermal
+    - pressure
+  - name: criticality
+    value: not asserted
+    definition: No authority/jurisdiction/list/edition designation inherited.
+    evidence_ids:
+    - owner
+  - name: biomass
+    value: not applicable; microbial:false
+    definition: Both maintained mechanisms are abiotic laboratory experiments.
+    evidence_ids:
+    - owner
+- assessment_id: provenance
+  area: provenance
+  topic: Current CREATE and exact reviewed bytes
+  outcome: supported
+  summary: Provenance and validation are supported.
+  details: Native inspect captured exact owner/history/schema hashes before scientific
+    assessment. Final hashes remain unchanged. Inline event and canonical CREATE sidecar
+    accurately describe current codex/GPT-6 work without historical authorship invention.
+    I authored the La lane, not this borate owner, and made no owner or history changes.
+    Independently executed validation and final coordinator receipt adoption are explicitly
+    distinguished.
+  target_ids:
+  - cmmmech:hydroboracite
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - audit
+  - named
+  - history_check
+  - batch
+findings: []
+actions: []
+notes:
+- No supported corrective owner defect was found at blocker, major, minor or informational
+  severity. No owner/history correction was made; external-source gaps remain explicit
+  limitations.
+- Independent evidence assessment is not independent experimental replication. Author-acquired
+  originals were reused with verified hashes and independently inspected.
+- Start timestamp is the actual native-inspect receipt filesystem timestamp. Finish
+  follows completed batch-receipt verification. Validation does not prove scientific
+  truth.
+- Source clarification about pressure brackets, cross-arm volume comparison and CIF
+  formula metadata is follow-up research, not a claim that the original publication
+  has been corrected. Root handles GitHub issue and publication actions.
+```
