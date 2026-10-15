@@ -1,0 +1,16 @@
+Source: Almojadah SS and Harmer SL (2025), *Separation of arsenopyrite/loellingite and pyrite through bio-flotation by selective attachment of Leptospirillum ferrooxidans*, Minerals Engineering 230:109440, https://doi.org/10.1016/j.mineng.2025.109440. Complete original: https://researchnow-admin.flinders.edu.au/ws/portalfiles/portal/159178863/Almojadah_Separation_P2025.pdf.
+
+The complete fourteen-page original and all eleven figures/six tables are available and inspected. This is a source-data clarification follow-up, not a request to accept unavailable evidence or a corrective defect in the bounded loellingite record.
+
+The reported arsenopyrite/loellingite feed is about 38.8% arsenopyrite and 60.6% loellingite (§2.1). Sections 2.4–2.5 describe a 1-g mixture with pyrite, analysis of floated and tailing fractions by Rietveld QXRD, triplicate tests and calculation of recovery, but the article supplies no explicit phase-recovery equation, fraction mass balance, full diffraction patterns or raw replicate data. Figures 6–8 show loellingite separately; the 92.9% value discussed in §3.3.3 is pyrite flotation, not loellingite recovery. The conditioning flask is 100 mL but the actual liquid charge and normalization of the culture-supernatant dose are not specified.
+
+Several XPS prose trends need component-specific reconciliation. Section 3.4.2.1 groups HO-C=O among increased hydrophilic components in the pyrite-grown-supernatant/PIPX sample, while Table 3 lists 4.4% compared with 6.9% in the other arm. Sections 3.4.2.4 and 4 describe increased elemental sulfur, while Table 6 lists 3.1% compared with 6.1%. These are fitted component percentages with spectral denominators, not mineral mass fractions; Tables 2–6 and raw fits should be checked together. The two compared XPS arms also differ in exposure time, culture product and collector, so even a corrected table/prose account would not isolate an EPS molecule or loellingite-specific reaction.
+
+Acceptance conditions for strengthening the record:
+
+- Obtain deposited/raw QXRD patterns, fraction masses, phase-recovery equation and replicate results, and establish exactly what each Figure 6–8 percentage measures.
+- Clarify the liquid charge, culture/supernatant dose and any compositional normalization; retain unmatched-medium limitations if no appropriate control exists.
+- Reconcile component trends with original XPS fits and their denominators through an authoritative clarification or corrected source. Do not silently rewrite the measured numbers.
+- Keep all results scoped to the characterized mixed feed unless separate loellingite-grain or pure-phase evidence is supplied. No dissolved-metal or isolated-product recovery is implied by flotation alone.
+
+Acquisition state: official institutional original acquired on 2026-10-15, SHA256 e6f6f682c67357b63985c9e90a9a5247f67f4b89c4b65e27d26fccae586165eb. No supplement callout was found in that complete original; it says data are available on request. The publisher landing request returned HTTP 403, which was recorded without retries or access circumvention. No author contact has occurred. This follow-up can be completed through a public deposit or later authorized clarification.
