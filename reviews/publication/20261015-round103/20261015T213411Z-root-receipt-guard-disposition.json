@@ -1,0 +1,55 @@
+{
+  "recorded_at": "2026-10-15T21:34:11.042444+00:00",
+  "reviewer": "codex /root (GPT-6)",
+  "scope": "Independent root control-flow/test review of receipt reservation fixes authored by vanadium and pentagonite. Root did not author these fixes. No real publication execution or repeated isolated test execution is claimed by this assessment.",
+  "issue": 391,
+  "verdict": "pass_with_limitations",
+  "findings_resolved": [
+    "receipt-reservation-before-mutations",
+    "cmmmech:round103-issue-create-reservation"
+  ],
+  "evidence": [
+    {
+      "path": "/private/tmp/cmm-round103-push-pr.py",
+      "sha256": "c7700556d68ae42d7476c8662096e10c2eb82d93094b48547a665561f0ae08e0"
+    },
+    {
+      "path": "/private/tmp/cmm-round103-archive.py",
+      "sha256": "e79c4eb5280dd069e230ead0cf788e60d01f65e2afbcb7e3a0cb8f5c38ff12f2"
+    },
+    {
+      "path": "/private/tmp/cmm-round103-create-issues.py",
+      "sha256": "55a838aead9338efd18e5bc8ad933aaecf4d5503d91579e92a6e1c3748320a99"
+    },
+    {
+      "path": "/private/tmp/cmm-round103-helper-audit/receipt-guard-regression.json",
+      "sha256": "1515c18807880e008c3e916d808c0678291d3a71eaeaa0321afe2f9906c0bcfe"
+    },
+    {
+      "path": "/private/tmp/cmm-round103-helper-audit/test-receipt-guards.py",
+      "sha256": "576fcb9092f8ca5bcadf6beb87be20314914c6b140cae0456d6d16225382dda2"
+    },
+    {
+      "path": "/private/tmp/cmm-round103-ree-review/test-issue-reservation.json",
+      "sha256": "b37936166de9beb44bd5d927ecf2861c1f46d651d8192845268d56003aecbee0"
+    },
+    {
+      "path": "/private/tmp/cmm-round103-ree-review/test-issue-reservation.py",
+      "sha256": "da2e490b7bf9aa2b55992364cd062d80e88c98eed2e5987f4de32ab468460179"
+    },
+    {
+      "path": "/private/tmp/cmm-round103-corrective-issue.json",
+      "sha256": "1ceb0794276e903fc12ed41addfd637ad255840bdba33455009f641e18eff337"
+    },
+    {
+      "path": "/private/tmp/cmm-round103-source-issues.json",
+      "sha256": "ffc84e4e262426139f495b574581e9432ae865ded02f47645e5e2ac169b97564"
+    }
+  ],
+  "assessment": "Exclusive receipt creation precedes external/archive effects; existing regular and symlink entries are preserved; partial failure is recorded in the owned receipt. All 24 isolated cases passed, including reproduced original failures. Root read both implementation diffs and complete regression code/results. Actual source issues #385\u2013390 were created once before the creator correction; their receipt is unchanged. No issue creator rerun is authorized by this receipt.",
+  "limitations": [
+    "Reservation prevents local replay/occupied-path effects, not remote transaction rollback or crash recovery.",
+    "Archive Markdown indentation was subsequently restored without changing receipt guard control flow; final archive summary still awaits actual hosted results.",
+    "Remaining HEAD/tree/PR/preflight placeholders must be bound and independently reviewed before their respective actions."
+  ]
+}

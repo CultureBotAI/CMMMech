@@ -1,0 +1,200 @@
+{
+  "finished_at": "2026-10-15T21:31:42.690588+00:00",
+  "passed": true,
+  "cases": [
+    {
+      "helper": "push-pr",
+      "version": "before",
+      "occupied": "regular",
+      "missing_config": false,
+      "exception": "FileExistsError",
+      "exit_code": null,
+      "stubbed_remote_effects": [
+        "push_branch",
+        "create_pr"
+      ],
+      "isolated_archive_created": false,
+      "passed": true
+    },
+    {
+      "helper": "push-pr",
+      "version": "after",
+      "occupied": "regular",
+      "missing_config": false,
+      "exception": "FileExistsError",
+      "exit_code": null,
+      "stubbed_remote_effects": [],
+      "isolated_archive_created": false,
+      "passed": true
+    },
+    {
+      "helper": "push-pr",
+      "version": "before",
+      "occupied": "symlink",
+      "missing_config": false,
+      "exception": "FileExistsError",
+      "exit_code": null,
+      "stubbed_remote_effects": [
+        "push_branch",
+        "create_pr"
+      ],
+      "isolated_archive_created": false,
+      "passed": true
+    },
+    {
+      "helper": "push-pr",
+      "version": "after",
+      "occupied": "symlink",
+      "missing_config": false,
+      "exception": "FileExistsError",
+      "exit_code": null,
+      "stubbed_remote_effects": [],
+      "isolated_archive_created": false,
+      "passed": true
+    },
+    {
+      "helper": "push-pr",
+      "version": "before",
+      "occupied": "dangling_symlink",
+      "missing_config": false,
+      "exception": "FileExistsError",
+      "exit_code": null,
+      "stubbed_remote_effects": [
+        "push_branch",
+        "create_pr"
+      ],
+      "isolated_archive_created": false,
+      "passed": true
+    },
+    {
+      "helper": "push-pr",
+      "version": "after",
+      "occupied": "dangling_symlink",
+      "missing_config": false,
+      "exception": "FileExistsError",
+      "exit_code": null,
+      "stubbed_remote_effects": [],
+      "isolated_archive_created": false,
+      "passed": true
+    },
+    {
+      "helper": "push-pr",
+      "version": "after",
+      "occupied": null,
+      "missing_config": false,
+      "exception": null,
+      "exit_code": 0,
+      "stubbed_remote_effects": [
+        "push_branch",
+        "create_pr"
+      ],
+      "isolated_archive_created": false,
+      "passed": true
+    },
+    {
+      "helper": "push-pr",
+      "version": "after",
+      "occupied": null,
+      "missing_config": true,
+      "exception": null,
+      "exit_code": 1,
+      "stubbed_remote_effects": [],
+      "isolated_archive_created": false,
+      "passed": true
+    },
+    {
+      "helper": "archive",
+      "version": "before",
+      "occupied": "regular",
+      "missing_config": false,
+      "exception": "FileExistsError",
+      "exit_code": null,
+      "stubbed_remote_effects": [],
+      "isolated_archive_created": true,
+      "passed": true
+    },
+    {
+      "helper": "archive",
+      "version": "after",
+      "occupied": "regular",
+      "missing_config": false,
+      "exception": "FileExistsError",
+      "exit_code": null,
+      "stubbed_remote_effects": [],
+      "isolated_archive_created": false,
+      "passed": true
+    },
+    {
+      "helper": "archive",
+      "version": "before",
+      "occupied": "symlink",
+      "missing_config": false,
+      "exception": "FileExistsError",
+      "exit_code": null,
+      "stubbed_remote_effects": [],
+      "isolated_archive_created": true,
+      "passed": true
+    },
+    {
+      "helper": "archive",
+      "version": "after",
+      "occupied": "symlink",
+      "missing_config": false,
+      "exception": "FileExistsError",
+      "exit_code": null,
+      "stubbed_remote_effects": [],
+      "isolated_archive_created": false,
+      "passed": true
+    },
+    {
+      "helper": "archive",
+      "version": "before",
+      "occupied": "dangling_symlink",
+      "missing_config": false,
+      "exception": "FileExistsError",
+      "exit_code": null,
+      "stubbed_remote_effects": [],
+      "isolated_archive_created": true,
+      "passed": true
+    },
+    {
+      "helper": "archive",
+      "version": "after",
+      "occupied": "dangling_symlink",
+      "missing_config": false,
+      "exception": "FileExistsError",
+      "exit_code": null,
+      "stubbed_remote_effects": [],
+      "isolated_archive_created": false,
+      "passed": true
+    },
+    {
+      "helper": "archive",
+      "version": "after",
+      "occupied": null,
+      "missing_config": false,
+      "exception": null,
+      "exit_code": 0,
+      "stubbed_remote_effects": [],
+      "isolated_archive_created": true,
+      "passed": true
+    },
+    {
+      "helper": "archive",
+      "version": "after",
+      "occupied": null,
+      "missing_config": true,
+      "exception": null,
+      "exit_code": 1,
+      "stubbed_remote_effects": [],
+      "isolated_archive_created": false,
+      "passed": true
+    }
+  ],
+  "count": 16,
+  "isolation": "All original/corrected helper AST copies relocate both /private/tmp and original main to per-case TemporaryDirectory. subprocess.run is stubbed for the entire execution. No real Git/GH subprocess, repository, network or external ref is touched. Occupied regular/valid-symlink/dangling-symlink bytes and identity are preserved. Original-before cases reproduce effects-before-failure; corrected-after cases prevent them. Empty-path success and missing-config failure both retain terminal receipts.",
+  "helper_hashes": {
+    "push-pr": "c7700556d68ae42d7476c8662096e10c2eb82d93094b48547a665561f0ae08e0",
+    "archive": "23d4715d04c7922e08b9c9848d0f3cff9b15fd6432e16ce6c0f2fc2e7de2d7a3"
+  }
+}

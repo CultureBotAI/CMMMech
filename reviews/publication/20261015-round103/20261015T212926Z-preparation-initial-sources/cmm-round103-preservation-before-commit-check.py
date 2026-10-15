@@ -1,0 +1,19 @@
+from pathlib import Path
+from datetime import datetime,timezone
+import json,hashlib,stat,os,subprocess
+p=Path('/private/tmp');q=p/'cmm-round103-preservation-before.json';d=json.loads(q.read_text());r=Path(d['main']['path']);sha=lambda x:hashlib.sha256(x.read_bytes()).hexdigest()
+def write_receipt(output, result):
+    output = Path(output)
+    if output.exists() or output.is_symlink():
+        raise FileExistsError('Refusing occupied receipt: ' + str(output))
+    with output.open('x', encoding='utf-8') as stream:
+        json.dump(result, stream, indent=2)
+        stream.write('\n')
+
+def git(*a):return subprocess.check_output(['git','-C',str(r),*a],text=True).strip()
+assert git('branch','--show-current')=='main' and git('rev-parse','HEAD')=='44d5b468519eb862b32ef54bf7c066bc0f79ba62' and not git('status','--porcelain=v1','--untracked-files=all')
+for name,b in d['main']['files'].items():
+ x=r/name
+ if b['kind']=='symlink':assert x.is_symlink() and os.readlink(x)==b['target'] and stat.S_IMODE(x.lstat().st_mode)==b['mode'],name
+ else:assert x.is_file() and not x.is_symlink() and x.stat().st_size==b['bytes'] and sha(x)==b['sha256'] and stat.S_IMODE(x.stat().st_mode)==b['mode'],name
+out={'recorded_at':datetime.now(timezone.utc).isoformat(),'passed':True,'base':git('rev-parse','HEAD'),'main':str(r),'nontracked_entries_preserved':len(d['main']['files']),'before_receipt':str(q),'before_sha256':sha(q),'scope':'All baseline nontracked entries including hidden/ignored, mode and symlink identity; main HEAD/status unchanged. Unrelated worktrees not mutated.'};o=p/'cmm-round103-preservation-before-commit.json';write_receipt(o,out);print(out)

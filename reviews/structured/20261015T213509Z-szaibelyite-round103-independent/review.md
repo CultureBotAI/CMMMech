@@ -1,0 +1,568 @@
+# Independent scientific review of Szaibélyite
+
+- Review: 20261015T213509Z-szaibelyite-round103-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T21:23:57.694680Z
+- Finished UTC: 2026-10-15T21:35:09.343874Z
+- Reviewer: codex /root/round100_sulfates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Szaibélyite species identity and qualified natural-separate thermal breakdown are supported; purity, atmosphere/rate and pretreatment conflicts, shared data and separate-locality diffraction remain explicit.
+
+## Scope And Provenance
+
+Full frozen maintained owner and canonical CREATE session; dated species authority; claim-bearing original methods, results, figures, tables and accessible supplements; bounded source-conflict and correction checks.
+
+Selection: Parent-assigned independent review after author freeze.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 44d5b468519eb862b32ef54bf7c066bc0f79ba62.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:szaibelyite | data/records/szaibelyite.yaml | maintained | Szaibélyite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent primary-evidence assessment | passed | True | cmmmech:szaibelyite | The exact frozen owner and history were inspected before assessment; authority rows and claim-bearing original evidence were independently checked, retaining source conflicts and access limits. |
+| Independent named record validation | passed | True | cmmmech:szaibelyite | Actual independent reviewer execution checked 2 records; 0 failed. |
+| Completed coordinator batch gate 1 | passed | True | cmmmech:szaibelyite | Verified the actual completed coordinator receipt, retained log hash and unchanged frozen owner/history/dossier bytes. Coordinator executed the corpus gate; this reviewer checked its evidence after completion. |
+| Completed coordinator batch gate 2 | passed | True | cmmmech:szaibelyite | Verified the actual completed coordinator receipt, retained log hash and unchanged frozen owner/history/dossier bytes. Coordinator executed the corpus gate; this reviewer checked its evidence after completion. |
+| Completed coordinator batch gate 3 | passed | True | cmmmech:szaibelyite | Verified the actual completed coordinator receipt, retained log hash and unchanged frozen owner/history/dossier bytes. Coordinator executed the corpus gate; this reviewer checked its evidence after completion. |
+| Completed coordinator batch gate 4 | passed | True | cmmmech:szaibelyite | Verified the actual completed coordinator receipt, retained log hash and unchanged frozen owner/history/dossier bytes. Coordinator executed the corpus gate; this reviewer checked its evidence after completion. |
+
+## Scientific And Domain Assessments
+
+### Hydroxyl-bearing mineral identity and independent structure sample
+
+identity: supported. Targets: cmmmech:szaibelyite.
+
+The identity does not equate model stoichiometry with measured chemistry.
+
+IMA lists MgBO2(OH), G status and 1862 description year; doubled Mg2(OH)[B2O4(OH)] is the same ideal composition, with hydroxyl rather than required molecular water. Grice’s separate Penobsquis P21/a crystal contains H4 and H6 positions. Its 20 microprobe analyses of 7 grains measured Mg, Fe and Mn, while B/H were not quantitatively established; ideal contributions yield 101.18% total. This is not the Romanian thermal feed, a manganese-dominant sussexite record or a universal specimen assay.
+
+### Natural separates and unresolved apparatus protocols
+
+scope: supported. Targets: cmmmech:szaibelyite.
+
+Pretreatment, purity and atmosphere limits are explicit.
+
+Bolfu-Tony, Baia Roșie and Antoniu material was hand-picked, magnetically/heavy-liquid separated, pulverized and washed for one day with cold 0.5 N HCl. Reported purity is at least 90%, with residual serpentine. Static-air TGA/DTG/DTA uses 10 degrees C/min. The nitrogen 30 mL/min DSC/TGA arm has 10 degrees C/min in methods but 20 degrees C/min in Table 7; the earlier overlapping thesis calls it argon at 20 degrees C/min. Methods 1 h at 20 degrees C under 10^-4 torr and thermal results 12 h at 110 degrees C pretreatments are not explicitly reconciled by aliquot. No preferred protocol was invented.
+
+### Thermal water loss and breakdown-product identity
+
+evidence: supported. Targets: cmmmech:szaibelyite.
+
+Observed thermal conversion is separated from elemental recovery.
+
+Figure 4 sample 1672 has DTA 660 degrees C and DTG 640 degrees C; Table 7 five separately identified specimens have air-DTA 655-670 degrees C, not replicate runs of one sample. An early 150-600 degrees C loss precedes a larger near 600-700 degrees C event; main-event, total loss and ideal hydroxyl content are distinct. Article Table 8 plus thesis product diffraction support indexed monoclinic P21/a Mg2B2O5. Appendix A.23 includes 1672 BB heated to 900 degrees C in air according to p. 245. Residual serpentine and protocol ambiguities constrain attribution; evolved fluorine below approximately 0.1 wt.% detection is not zero. No isolated boron mass balance or product-purity yield was measured.
+
+### Data reuse, different-locality arms and contrary reports
+
+evidence: supported. Targets: cmmmech:szaibelyite.
+
+The record preserves cross-source uncertainty without silently transferring experiments.
+
+Thesis Table 30 reuses the article BB specimen rows and is not another replication. The temperature-dependent powder XRD and cooled-product persistence concern specimen 1821 Cacova Ierii, not BB; Table 31 and Figure 46 make that explicit. A.22 label 1402 BB is not assumed to equal Table 32 / article 1406. Unwashed 2142 Mașca-Băișoara low-temperature peaks, discussed as residual boric acid, are not a contradiction from an identically prepared pure feed. The cited 1966 hydroxyl-ascharite original was not independently acquired. Early OH-site assignment and slow structural accommodation remain interpretation; no sharp universal completion threshold or reversible cycle is supported.
+
+### Material, criticality and biological/deployment boundaries
+
+scope: supported. Targets: cmmmech:szaibelyite.
+
+Species and abiotic observations carry no inherited commodity designation.
+
+The maintained object is a mineral species; historical natural specimens, experimental crystal/separates and products are distinguished. Criticality is unrecorded, not declared absent: no authority, jurisdiction, list or edition is inherited from boron/borates. The mechanism explicitly sets microbial:false; organism, strain and biomass state are not applicable. Laboratory diffraction or thermal loss does not establish microbial causation, an isolated elemental product, industrial deployment or processing economics.
+
+### Exact working-tree bytes and current canonical CREATE
+
+provenance: supported. Targets: cmmmech:szaibelyite.
+
+Independent review and current provenance are supported.
+
+Native inspect captured the trusted base and exact owner/history/dossier hashes before assessment. Final frozen bytes match. Inline creation events and canonical CREATE actors/timestamps/targets describe current work without inventing earlier authorship. This reviewer made no owner/history changes. Independent named validation passed; coordinator batch checks were adopted only after actual terminal receipt and log-hash verification.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/szaibelyite.yaml; Complete maintained record; native inspect before assessment and final hash recheck. | supports | Exact frozen identity, experimental scope, uncertainties and provenance independently reviewed. |
+| history | history/records/szaibelyite/2026-10-15T212055Z-codex-d65330.yaml; Complete canonical CREATE session; separate inline curation_history and linked history_refs. | supports | UTC creation metadata, codex actor, GPT-6 model, target and summaries agree with current curation; no invented historic authorship or reviewer edits. |
+| dossier | research/sources/round103-borates/20261015T212242Z-source-investigation.md; Frozen paired JSON/Markdown source investigation and underlying access receipts. | supports | Compared documented access/version limits, source conflicts and material boundaries against the actual originals. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September 2026 list, definitions pp. 1-2; visually inspected exact Szaibélyite row on PDF p. 210. | supports | Official dated PDF bytes reused with verified hash; live official authority homepage checked on review date. Grandfathered status and description year are distinct from an approval number. |
+| search | /private/tmp/cmm-round103-borates-independent/search-results.json; Actual returned web query sets and institutional/authority page responses; dedup paths and issue scope in independent-evidence.json. | context_only | No formal notice affecting these claims surfaced in the bounded returned sets. Current open-issue title/body inventory contains 105 entries and no exact candidate/alias/DOI match. Hidden/ignored-inclusive local search finds these two new maintained owners and contextual references, not another owner of either species. |
+| audit | /private/tmp/cmm-round103-borates-independent/independent-evidence.json; Reviewer primary-file hashes, initial inspect timestamp, named-validation log and expanded de-duplication result hash. | context_only | Retains actual inspection and bounded search provenance; independently parsed official supplemental DOCX and CIF metadata are saved separately. |
+| named | uv run --locked cmmmech validate data/records/inyoite.yaml data/records/szaibelyite.yaml; /private/tmp/cmm-round103-borates-independent/named-validation.log | supports | Independent execution checked 2 records with 0 failures. Structural validation does not prove scientific truth. |
+| batch | /private/tmp/cmm-round103-final-gates.json; Completed coordinator receipt; retained log /private/tmp/cmm-round103-final-gates.log, SHA256 f4f7cd3987bee8509a9d87fce2c0ac9fcdb731dc67a221a8b06b6c0052d1ed1a. | supports | Four actual terminal zero exits, trusted base and unchanged inputs verified after completion; frozen owner/history/dossier bytes independently rehashed. |
+| marincea | https://www.rruff.net/doclib/cm/vol39/CM39_111.pdf; Complete 17-page Marincea 2001 original, DOI 10.2113/gscanmin.39.1.111; analytical procedures pp.112-114, thermal pp.121-122, Tables6-8 and Figures4-5 independently read and visually checked. | supports | Natural acid-washed separates retain serpentine; static-air heating and nitrogen DSC/TGA descriptions differ. Five specimen rows and product diffraction support bounded thermal conversion, not a pure-phase universal threshold. |
+| thesis | https://theses.hal.science/tel-01027512v1/file/19980615-Marincea-S.pdf; Complete acquired 498-page 1998 thesis; only relevant sections independently assessed: PDF 65 / printed 41, PDF 260-270 / printed 236-246, PDF 458-460 / printed 433-435. Figures 43-46, Tables 30-32 and Appendix A.21-A.23 visually inspected. | supports | Same specimen/data rows demonstrate overlap with 2001, not independent replication. Argon at 20 degrees C/min contradicts article nitrogen descriptions. Figure 46 and Table 31 explicitly concern specimen 1821 Cacova Ierii; p. 245 identifies800 degrees C under argon versus900 degrees C in air product groups; A.23 contains 1672 BB, while A.22 says 1402 BB rather than 1406. |
+| grice | https://www.rruff.net/doclib/cm/vol46/CM46_671.pdf; Complete seven-page Grice 2008 original, DOI 10.3749/canmin.46.3.671; chemical/structure methods pp.672-673, Tables1-3 and Figures1-5 independently inspected, including H-site entries and separate structural comparisons. | supports | A separate Penobsquis crystal supports P21/a and two hydrogen positions. Twenty microprobe analyses across seven grains measured Mg/Fe/Mn; B and H quantities were ideal supplied values and analytical total 101.18%. The cited structure-factor deposit was not acquired. |
+
+## Limits And Additional Notes
+
+- Nitrogen versus argon, 10 versus 20 degrees C/min and vacuum versus 110 degrees C pretreatment descriptions are not reconciled by aliquot. Impure natural separates cannot establish a universal pure-mineral thermal threshold.
+- The 1998 thesis and 2001 article share specimens and data; only claim-bearing thesis sections were assessed. Appendix 1402/1406 labels remain unresolved and Cacova Ierii 1821 diffraction cannot be assigned to BB.
+- The 1966 hydroxyl-ascharite comparison original and Grice 2008 deposited structure factors were not independently acquired; the seven-page 2008 main article supports the narrower structural context. B/H quantities in its chemical summary are ideal calculated contributions, not direct assays.
+- No microorganism, biomass state or industrial operation is involved; no isolated boron recovery, product-purity yield or inherited criticality is asserted. Searches do not establish universal absence of corrections or other evidence.
+- No supported corrective owner defect was identified at blocker, major, minor or informational severity. No corrections were applied by this reviewer; source gaps remain limitations rather than fabricated closure.
+- This is independent evidence assessment, not independent experimental replication. Author-acquired originals were independently read; the exact authority PDF reuse and live institutional/authority page checks are stated honestly.
+- Source-follow-up drafts about inyoite pressure-volume metadata and szaibélyite protocol/specimen provenance match inspected originals; they propose evidence acquisition, not automatic source correction or new publication claims. No issue creation or author contact was performed by this reviewer.
+- The actual review start is the initial native-inspect receipt timestamp. Batch checks were executed by the coordinator and their results were independently verified after completion. Run the structured-review corpus checker after saving both immutable pairs.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T213509Z-szaibelyite-round103-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Szaibélyite
+started_at: '2026-10-15T21:23:57.694680Z'
+finished_at: '2026-10-15T21:35:09.343874Z'
+reviewer:
+  identity: codex /root/round100_sulfates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The separate borate curator /root/round100_pentagonite authored
+    this owner. I authored the Ce/La rhabdophane lane, independently inspected these
+    frozen borate bytes and primary sources, and changed neither borate owner nor
+    history.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 44d5b468519eb862b32ef54bf7c066bc0f79ba62
+  state: working_tree
+  inputs:
+  - path: data/records/szaibelyite.yaml
+    sha256: 0f29048c91ab3c2224d4de4193f685921af03b86b1422435a3afb706f3ada2d4
+    role: target
+  - path: history/records/szaibelyite/2026-10-15T212055Z-codex-d65330.yaml
+    sha256: e5858a5477c8cdda76b010d8d6aa17103e44258f10934bb855b72f2008983d6f
+    role: context
+  - path: research/sources/round103-borates/20261015T212242Z-source-investigation.json
+    sha256: f0a6b7b739980bb8b994b2297dc7e335d2db70aa344ee315883343a841b9e0e2
+    role: context
+  - path: research/sources/round103-borates/20261015T212242Z-source-investigation.md
+    sha256: e06285969e3af803b178469b2744433d3d16a53dabdb2968f9bcdfdd052a9ec2
+    role: context
+scope:
+  description: Full frozen maintained owner and canonical CREATE session; dated species
+    authority; claim-bearing original methods, results, figures, tables and accessible
+    supplements; bounded source-conflict and correction checks.
+  selection: Parent-assigned independent review after author freeze.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:szaibelyite
+targets:
+- target_id: cmmmech:szaibelyite
+  path: data/records/szaibelyite.yaml
+  label: Szaibélyite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/szaibelyite.yaml
+    role: maintained scientific record
+checks:
+- check_id: science
+  name: Independent primary-evidence assessment
+  required: true
+  status: passed
+  summary: The exact frozen owner and history were inspected before assessment; authority
+    rows and claim-bearing original evidence were independently checked, retaining
+    source conflicts and access limits.
+  target_ids:
+  - cmmmech:szaibelyite
+  evidence_ids:
+  - owner
+  - ima
+  - search
+- check_id: named
+  name: Independent named record validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/inyoite.yaml data/records/szaibelyite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual independent reviewer execution checked 2 records; 0 failed.
+  target_ids:
+  - cmmmech:szaibelyite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch gate 1
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified the actual completed coordinator receipt, retained log hash and
+    unchanged frozen owner/history/dossier bytes. Coordinator executed the corpus
+    gate; this reviewer checked its evidence after completion.
+  target_ids:
+  - cmmmech:szaibelyite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch gate 2
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified the actual completed coordinator receipt, retained log hash and
+    unchanged frozen owner/history/dossier bytes. Coordinator executed the corpus
+    gate; this reviewer checked its evidence after completion.
+  target_ids:
+  - cmmmech:szaibelyite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch gate 3
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base 44d5b468519eb862b32ef54bf7c066bc0f79ba62
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified the actual completed coordinator receipt, retained log hash and
+    unchanged frozen owner/history/dossier bytes. Coordinator executed the corpus
+    gate; this reviewer checked its evidence after completion.
+  target_ids:
+  - cmmmech:szaibelyite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch gate 4
+  required: true
+  status: passed
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified the actual completed coordinator receipt, retained log hash and
+    unchanged frozen owner/history/dossier bytes. Coordinator executed the corpus
+    gate; this reviewer checked its evidence after completion.
+  target_ids:
+  - cmmmech:szaibelyite
+  evidence_ids:
+  - batch
+summary: Szaibélyite species identity and qualified natural-separate thermal breakdown
+  are supported; purity, atmosphere/rate and pretreatment conflicts, shared data and
+  separate-locality diffraction remain explicit.
+limitations:
+- Nitrogen versus argon, 10 versus 20 degrees C/min and vacuum versus 110 degrees
+  C pretreatment descriptions are not reconciled by aliquot. Impure natural separates
+  cannot establish a universal pure-mineral thermal threshold.
+- The 1998 thesis and 2001 article share specimens and data; only claim-bearing thesis
+  sections were assessed. Appendix 1402/1406 labels remain unresolved and Cacova Ierii
+  1821 diffraction cannot be assigned to BB.
+- The 1966 hydroxyl-ascharite comparison original and Grice 2008 deposited structure
+  factors were not independently acquired; the seven-page 2008 main article supports
+  the narrower structural context. B/H quantities in its chemical summary are ideal
+  calculated contributions, not direct assays.
+- No microorganism, biomass state or industrial operation is involved; no isolated
+  boron recovery, product-purity yield or inherited criticality is asserted. Searches
+  do not establish universal absence of corrections or other evidence.
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/szaibelyite.yaml
+  locator: Complete maintained record; native inspect before assessment and final
+    hash recheck.
+  accessed_at: '2026-10-15T21:35:09.343874Z'
+  support: supports
+  summary: Exact frozen identity, experimental scope, uncertainties and provenance
+    independently reviewed.
+  snapshot_sha256: 0f29048c91ab3c2224d4de4193f685921af03b86b1422435a3afb706f3ada2d4
+- evidence_id: history
+  kind: record_content
+  reference: history/records/szaibelyite/2026-10-15T212055Z-codex-d65330.yaml
+  locator: Complete canonical CREATE session; separate inline curation_history and
+    linked history_refs.
+  accessed_at: '2026-10-15T21:35:09.343874Z'
+  support: supports
+  summary: UTC creation metadata, codex actor, GPT-6 model, target and summaries agree
+    with current curation; no invented historic authorship or reviewer edits.
+  snapshot_sha256: e5858a5477c8cdda76b010d8d6aa17103e44258f10934bb855b72f2008983d6f
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round103-borates/20261015T212242Z-source-investigation.md
+  locator: Frozen paired JSON/Markdown source investigation and underlying access
+    receipts.
+  accessed_at: '2026-10-15T21:35:09.343874Z'
+  support: supports
+  summary: Compared documented access/version limits, source conflicts and material
+    boundaries against the actual originals.
+  snapshot_sha256: e06285969e3af803b178469b2744433d3d16a53dabdb2968f9bcdfdd052a9ec2
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September 2026 list, definitions pp. 1-2; visually inspected exact Szaibélyite
+    row on PDF p. 210.
+  accessed_at: '2026-10-15T21:35:09.343874Z'
+  support: supports
+  summary: Official dated PDF bytes reused with verified hash; live official authority
+    homepage checked on review date. Grandfathered status and description year are
+    distinct from an approval number.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round103-borates-independent/search-results.json
+  locator: Actual returned web query sets and institutional/authority page responses;
+    dedup paths and issue scope in independent-evidence.json.
+  accessed_at: '2026-10-15T21:35:09.343874Z'
+  support: context_only
+  summary: No formal notice affecting these claims surfaced in the bounded returned
+    sets. Current open-issue title/body inventory contains 105 entries and no exact
+    candidate/alias/DOI match. Hidden/ignored-inclusive local search finds these two
+    new maintained owners and contextual references, not another owner of either species.
+  snapshot_sha256: b9c1744677e17d8f0c79bff1762562a6ac73a013b6456c61f4c1809c2c9bddd3
+  search_scope: 'Three exact DOI searches: 10.1007/s00269-021-01173-3 correction erratum;
+    10.2113/gscanmin.39.1.111 correction retraction; 10.3749/canmin.46.3.671 correction.
+    Live opens of Unimi handle 2434/898884, CNMNC homepage and HAL tel-01027512v1
+    (HAL web-tool response failed; author-acquired complete thesis remains inspectable).
+    rg --no-ignore --hidden --follow on species/alias/DOI strings across records,
+    research, reviews, history, local skills, current issue snapshot and bounded round10/12/101/102/103
+    raw roots; 54 matching paths. Issue comments, all closed issues, whole-machine
+    files and exhaustive binary-PDF semantics were not searched. Scientific evidence
+    comes from originals, not secondary search snippets.'
+- evidence_id: audit
+  kind: search
+  reference: /private/tmp/cmm-round103-borates-independent/independent-evidence.json
+  locator: Reviewer primary-file hashes, initial inspect timestamp, named-validation
+    log and expanded de-duplication result hash.
+  accessed_at: '2026-10-15T21:35:09.343874Z'
+  support: context_only
+  summary: Retains actual inspection and bounded search provenance; independently
+    parsed official supplemental DOCX and CIF metadata are saved separately.
+  snapshot_sha256: 8ee1b67077987fa507099d10c1a85770eccafe2cd8b289931cffa0708d14802b
+  search_scope: Local read-only source/identity audit; no Git/GitHub mutation or external
+    author contact.
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/inyoite.yaml data/records/szaibelyite.yaml
+  locator: /private/tmp/cmm-round103-borates-independent/named-validation.log
+  accessed_at: '2026-10-15T21:35:09.343874Z'
+  support: supports
+  summary: Independent execution checked 2 records with 0 failures. Structural validation
+    does not prove scientific truth.
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round103-final-gates.json
+  locator: Completed coordinator receipt; retained log /private/tmp/cmm-round103-final-gates.log,
+    SHA256 f4f7cd3987bee8509a9d87fce2c0ac9fcdb731dc67a221a8b06b6c0052d1ed1a.
+  accessed_at: '2026-10-15T21:35:09.343874Z'
+  support: supports
+  summary: Four actual terminal zero exits, trusted base and unchanged inputs verified
+    after completion; frozen owner/history/dossier bytes independently rehashed.
+  snapshot_sha256: ef3d0446342aee65fbc39d26d23478afef6891e4ef86fc083805c990b0f9f1c3
+- evidence_id: marincea
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/cm/vol39/CM39_111.pdf
+  locator: Complete 17-page Marincea 2001 original, DOI 10.2113/gscanmin.39.1.111;
+    analytical procedures pp.112-114, thermal pp.121-122, Tables6-8 and Figures4-5
+    independently read and visually checked.
+  accessed_at: '2026-10-15T21:35:09.343874Z'
+  support: supports
+  summary: Natural acid-washed separates retain serpentine; static-air heating and
+    nitrogen DSC/TGA descriptions differ. Five specimen rows and product diffraction
+    support bounded thermal conversion, not a pure-phase universal threshold.
+  snapshot_sha256: 689612882f72f0e5f5e1dbf7bb722c0c80c71c5f2a0a6afa5588788a61661b84
+- evidence_id: thesis
+  kind: primary_source
+  reference: https://theses.hal.science/tel-01027512v1/file/19980615-Marincea-S.pdf
+  locator: 'Complete acquired 498-page 1998 thesis; only relevant sections independently
+    assessed: PDF 65 / printed 41, PDF 260-270 / printed 236-246, PDF 458-460 / printed
+    433-435. Figures 43-46, Tables 30-32 and Appendix A.21-A.23 visually inspected.'
+  accessed_at: '2026-10-15T21:35:09.343874Z'
+  support: supports
+  summary: Same specimen/data rows demonstrate overlap with 2001, not independent
+    replication. Argon at 20 degrees C/min contradicts article nitrogen descriptions.
+    Figure 46 and Table 31 explicitly concern specimen 1821 Cacova Ierii; p. 245 identifies800
+    degrees C under argon versus900 degrees C in air product groups; A.23 contains
+    1672 BB, while A.22 says 1402 BB rather than 1406.
+  snapshot_sha256: 0febc081f337c280683451af26743776ddf1099568a024acadcd4826aa0555c8
+- evidence_id: grice
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/cm/vol46/CM46_671.pdf
+  locator: Complete seven-page Grice 2008 original, DOI 10.3749/canmin.46.3.671; chemical/structure
+    methods pp.672-673, Tables1-3 and Figures1-5 independently inspected, including
+    H-site entries and separate structural comparisons.
+  accessed_at: '2026-10-15T21:35:09.343874Z'
+  support: supports
+  summary: A separate Penobsquis crystal supports P21/a and two hydrogen positions.
+    Twenty microprobe analyses across seven grains measured Mg/Fe/Mn; B and H quantities
+    were ideal supplied values and analytical total 101.18%. The cited structure-factor
+    deposit was not acquired.
+  snapshot_sha256: 88ccd8ce66a687e350edd1e08355de92812d49d681f55bbe2e5e9023677efb4c
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Hydroxyl-bearing mineral identity and independent structure sample
+  outcome: supported
+  summary: The identity does not equate model stoichiometry with measured chemistry.
+  details: IMA lists MgBO2(OH), G status and 1862 description year; doubled Mg2(OH)[B2O4(OH)]
+    is the same ideal composition, with hydroxyl rather than required molecular water.
+    Grice’s separate Penobsquis P21/a crystal contains H4 and H6 positions. Its 20
+    microprobe analyses of 7 grains measured Mg, Fe and Mn, while B/H were not quantitatively
+    established; ideal contributions yield 101.18% total. This is not the Romanian
+    thermal feed, a manganese-dominant sussexite record or a universal specimen assay.
+  target_ids:
+  - cmmmech:szaibelyite
+  evidence_ids:
+  - owner
+  - ima
+  - grice
+- assessment_id: protocol
+  area: scope
+  topic: Natural separates and unresolved apparatus protocols
+  outcome: supported
+  summary: Pretreatment, purity and atmosphere limits are explicit.
+  details: Bolfu-Tony, Baia Roșie and Antoniu material was hand-picked, magnetically/heavy-liquid
+    separated, pulverized and washed for one day with cold 0.5 N HCl. Reported purity
+    is at least 90%, with residual serpentine. Static-air TGA/DTG/DTA uses 10 degrees
+    C/min. The nitrogen 30 mL/min DSC/TGA arm has 10 degrees C/min in methods but
+    20 degrees C/min in Table 7; the earlier overlapping thesis calls it argon at
+    20 degrees C/min. Methods 1 h at 20 degrees C under 10^-4 torr and thermal results
+    12 h at 110 degrees C pretreatments are not explicitly reconciled by aliquot.
+    No preferred protocol was invented.
+  target_ids:
+  - cmmmech:szaibelyite
+  evidence_ids:
+  - owner
+  - marincea
+  - thesis
+- assessment_id: outcome
+  area: evidence
+  topic: Thermal water loss and breakdown-product identity
+  outcome: supported
+  summary: Observed thermal conversion is separated from elemental recovery.
+  details: Figure 4 sample 1672 has DTA 660 degrees C and DTG 640 degrees C; Table
+    7 five separately identified specimens have air-DTA 655-670 degrees C, not replicate
+    runs of one sample. An early 150-600 degrees C loss precedes a larger near 600-700
+    degrees C event; main-event, total loss and ideal hydroxyl content are distinct.
+    Article Table 8 plus thesis product diffraction support indexed monoclinic P21/a
+    Mg2B2O5. Appendix A.23 includes 1672 BB heated to 900 degrees C in air according
+    to p. 245. Residual serpentine and protocol ambiguities constrain attribution;
+    evolved fluorine below approximately 0.1 wt.% detection is not zero. No isolated
+    boron mass balance or product-purity yield was measured.
+  target_ids:
+  - cmmmech:szaibelyite
+  evidence_ids:
+  - owner
+  - marincea
+  - thesis
+- assessment_id: cross_source
+  area: evidence
+  topic: Data reuse, different-locality arms and contrary reports
+  outcome: supported
+  summary: The record preserves cross-source uncertainty without silently transferring
+    experiments.
+  details: Thesis Table 30 reuses the article BB specimen rows and is not another
+    replication. The temperature-dependent powder XRD and cooled-product persistence
+    concern specimen 1821 Cacova Ierii, not BB; Table 31 and Figure 46 make that explicit.
+    A.22 label 1402 BB is not assumed to equal Table 32 / article 1406. Unwashed 2142
+    Mașca-Băișoara low-temperature peaks, discussed as residual boric acid, are not
+    a contradiction from an identically prepared pure feed. The cited 1966 hydroxyl-ascharite
+    original was not independently acquired. Early OH-site assignment and slow structural
+    accommodation remain interpretation; no sharp universal completion threshold or
+    reversible cycle is supported.
+  target_ids:
+  - cmmmech:szaibelyite
+  evidence_ids:
+  - owner
+  - marincea
+  - thesis
+  - grice
+- assessment_id: scope
+  area: scope
+  topic: Material, criticality and biological/deployment boundaries
+  outcome: supported
+  summary: Species and abiotic observations carry no inherited commodity designation.
+  details: 'The maintained object is a mineral species; historical natural specimens,
+    experimental crystal/separates and products are distinguished. Criticality is
+    unrecorded, not declared absent: no authority, jurisdiction, list or edition is
+    inherited from boron/borates. The mechanism explicitly sets microbial:false; organism,
+    strain and biomass state are not applicable. Laboratory diffraction or thermal
+    loss does not establish microbial causation, an isolated elemental product, industrial
+    deployment or processing economics.'
+  target_ids:
+  - cmmmech:szaibelyite
+  evidence_ids:
+  - owner
+  - ima
+  dimensions:
+  - name: material_form
+    value: mineral species; experimental feed explicitly distinguished
+    definition: Species identity is not identical to every substituted specimen or
+      experimental product.
+    evidence_ids:
+    - owner
+    - ima
+  - name: criticality
+    value: not asserted
+    definition: No jurisdiction/list/edition designation is attached or inherited.
+    evidence_ids:
+    - owner
+  - name: biomass
+    value: not applicable; microbial:false
+    definition: The recorded experiments are abiotic.
+    evidence_ids:
+    - owner
+- assessment_id: provenance
+  area: provenance
+  topic: Exact working-tree bytes and current canonical CREATE
+  outcome: supported
+  summary: Independent review and current provenance are supported.
+  details: Native inspect captured the trusted base and exact owner/history/dossier
+    hashes before assessment. Final frozen bytes match. Inline creation events and
+    canonical CREATE actors/timestamps/targets describe current work without inventing
+    earlier authorship. This reviewer made no owner/history changes. Independent named
+    validation passed; coordinator batch checks were adopted only after actual terminal
+    receipt and log-hash verification.
+  target_ids:
+  - cmmmech:szaibelyite
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - audit
+  - named
+  - batch
+findings: []
+actions: []
+notes:
+- No supported corrective owner defect was identified at blocker, major, minor or
+  informational severity. No corrections were applied by this reviewer; source gaps
+  remain limitations rather than fabricated closure.
+- This is independent evidence assessment, not independent experimental replication.
+  Author-acquired originals were independently read; the exact authority PDF reuse
+  and live institutional/authority page checks are stated honestly.
+- Source-follow-up drafts about inyoite pressure-volume metadata and szaibélyite protocol/specimen
+  provenance match inspected originals; they propose evidence acquisition, not automatic
+  source correction or new publication claims. No issue creation or author contact
+  was performed by this reviewer.
+- The actual review start is the initial native-inspect receipt timestamp. Batch checks
+  were executed by the coordinator and their results were independently verified after
+  completion. Run the structured-review corpus checker after saving both immutable
+  pairs.
+```
