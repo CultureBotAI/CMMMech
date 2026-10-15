@@ -1,0 +1,691 @@
+# Independent final scientific review and F1 resolution for wulfenite
+
+- Review: 20261015T052439Z-wulfenite-round88-final-resolution
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T05:12:19.901735Z
+- Finished UTC: 2026-10-15T05:24:39.648525Z
+- Reviewer: codex /root/round68_new_frontier (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of natural wulfenite identity and laboratory abiotic sulfidization/Mo mobilization, preserving source and assay limits. Explicitly resolves the erroneous Figure 3 dose-label mismatch after independently checked correction.
+
+## Scope And Provenance
+
+Whole corrected maintained owner, original CREATE, new EDIT, companion source dossier and exact initial F1; full original experimental and identity evidence independently assessed.
+
+Selection: Assigned canonical owner, initially and again after correction captured through native inspect.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 661e752f00ea9ea15e48dfc41f02199dfc16e1fe.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:wulfenite | data/records/wulfenite.yaml | maintained | Wulfenite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent corrected-owner strict validation | passed | True | cmmmech:wulfenite | Actual one record and zero failures; corrected hash checked. |
+| Completed coordinator batch gate 1 | passed | True | cmmmech:wulfenite | Actual terminal coordinator receipt and retained log independently verified; no duplicate full-suite run by this reviewer. |
+| Completed coordinator batch gate 2 | passed | True | cmmmech:wulfenite | Actual terminal coordinator receipt and retained log independently verified; no duplicate full-suite run by this reviewer. |
+| Completed coordinator batch gate 3 | passed | True | cmmmech:wulfenite | Actual terminal coordinator receipt and retained log independently verified; no duplicate full-suite run by this reviewer. |
+| Completed coordinator batch gate 4 | passed | True | cmmmech:wulfenite | Actual terminal coordinator receipt and retained log independently verified; no duplicate full-suite run by this reviewer. |
+
+## Scientific And Domain Assessments
+
+### Mineral identity, natural specimens and concept boundaries
+
+identity: supported. Targets: cmmmech:wulfenite.
+
+The Handbook formula and tetragonal cell, and Gracanin Tables 1–3 single-crystal diffraction, support PbMoO4 wulfenite. It remains distinct from elemental Pb/Mo, stolzite and an unspecified mixed ore. The two natural crystal habits are the same mineral; local inclusions and trace substitutions do not justify an absolute purity claim.
+
+### Natural observations and corrected source figures
+
+evidence: supported. Targets: cmmmech:wulfenite.
+
+Updated Gracanin Figures 1–6 and Tables 1–4 distinguish diffraction/microscopy observations from the proposed environmental growth history. Actual publisher correction is acknowledged; schematic concentration/time axes are arbitrary units, not monitored environmental data. Remaining body-reference inconsistencies do not affect the stated mineral identity.
+
+### Abiotic feed, treatment arms and controls
+
+evidence: supported. Targets: cmmmech:wulfenite.
+
+Cai uses a characterized Xinjiang natural preparation, 38–72 micrometres, 0.755 g/20 mL chemical sodium-sulfide treatment. No organisms or microbial reagent production are asserted. Untreated samples are comparators; characterized solids are from 25 C/30 minutes, not automatically the 90 C leach endpoint. Undisclosed pH, mixing speed, separation cutoff and replication are retained.
+
+### Leaching denominator versus isolated recovery
+
+quantity: supported. Targets: cmmmech:wulfenite.
+
+Figure 1b and text report 59.44% at25 C and94.43% at90 C at ratio1/30 minutes, calculated from aqueous Mo concentration and volume over feed Mo inventory. Figure1a64.15% uses a different1.25 ratio. These are assay fractions, not isolated metal/product yield; no complete Pb/Mo balance or industrial performance is inferred.
+
+### Residual wulfenite, PbS signals and proposed pathway
+
+evidence: supported. Targets: cmmmech:wulfenite.
+
+XRD Figure2, Raman Figure3, XPS Figure4 and microscopy Figure5 support PbS-assigned signals with residual wulfenite. Raman surface attenuation alone is not complete bulk conversion. Figure6 core-shell/transport interpretation is not directly time-resolved reaction fronts or uniquely identified rate control. Source contradictory solubility wording remains qualified.
+
+### Time-series and thermodynamic limits
+
+evidence: supported. Targets: cmmmech:wulfenite.
+
+Both SI pages were inspected. Figure S1 has a lower40-minute point than30 minutes without uncertainty; no monotonic equilibrium claim follows. TableS1 contains calculated thermodynamic quantities, not measured kinetic rates or recovered yield. SI and main share one study lineage.
+
+### Criticality, microbial scope and deployment
+
+scope: supported. Targets: cmmmech:wulfenite.
+
+No jurisdiction/list/edition criticality claim is asserted or inherited. The unavailable2019 biofilm original is retained as a research gap and contributes no mechanism evidence here. Laboratory chemical experiments and natural mineral characterization do not establish microbial causation, ore-scale flotation recovery or industrial deployment.
+
+### F1 dose-label correction and explicit predecessor disposition
+
+consistency: supported. Targets: cmmmech:wulfenite.
+
+Original page5 confirms both labels0.05. Exact parsed comparison proves the false mismatch was the only changed scientific content; companion corrections are explicit, original CREATE and initial native review retained.
+
+### Current exact inputs and completed required checks
+
+provenance: supported. Targets: cmmmech:wulfenite.
+
+Corrected native input hashes, canonical histories and actual named/four-command batch outcomes agree. This acceptance covers these bytes only and does not establish future hosted publication outcomes.
+
+## Findings
+
+### F1: Remove the unsupported Figure 3 intermediate-dose mismatch
+
+minor / resolved / confirmed; issue key: wulfenite-round88-figure3-dose-label-transcription.
+
+The record second evidence explanation says Figure 3 optical and Raman intermediate labels differ (0.5 versus 0.05). Both original labels on page 5 are 0.05. The mechanism context also invokes panel/dose label inconsistency, and the source dossier repeats this specific false mismatch. Remove that unsupported claim; this does not repair or erase the separate, genuinely contradictory PbS solubility wording or the finite time-series uncertainty.
+
+Disposition: Independently verified original Figure3 has0.05 in both panels; final owner removes the false mismatch and explicitly states the matching value. Exact parsed comparison against actual pre-correction snapshot isolates only context/evidence correction plus appended inlineEDIT/historyref. Companion reports explicitly acknowledge the transcription correction. Original CREATE/native F1 remain immutable and actual named/final four-command gates passed. Local resolution does not assert remote issue closure before merge.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/wulfenite.yaml; Whole corrected owner, native inspected before reassessment. Actual local artifact: /private/tmp/CMMMech-expansion-round88-20261015/data/records/wulfenite.yaml | supports | Exact corrected scientific claims and appended inline history reviewed; no reviewer owner edits. |
+| primary | https://doi.org/10.3390/molecules29225404; Complete twelve-page publisher original; Methods3.1–3.3 pp9–10, Results2.1–2.5, all Figures1–6 pp3–7/9 and Table1 p9 independently inspected. Actual local artifact: /private/tmp/cmm-round88-wulfenite-research/cai2024.pdf | supports | Characterized natural preparation, finite chemical treatment and aqueous Mo assay/solid phase observations support the qualified abiotic mechanism. No isolated recovery or industrial deployment is demonstrated. |
+| si | https://mdpi-res.com/d_attachment/molecules/molecules-29-05404/article_deploy/molecules-29-05404-s001.zip; Complete actual two-page supplemental PDF extracted from the official ZIP; both pages visually inspected, FigureS1 and TableS1 on p2. Actual local artifact: /private/tmp/cmm-round88-wulfenite-research/supplement/molecules-3308380-supplementary.pdf | partial | Time-series lacks stated replicate uncertainty; 40-minute point is lower. Thermodynamic calculations are not observed rates. Same-study lineage, not replication. |
+| growth | https://doi.org/10.1038/s41598-024-60043-4; Complete updated twelve-page original; Methods pp2–3, SCXRD Tables1–3 pp4–5, Table4 p6, all corrected Figures1–6 pp3/6/7/9/10 inspected. Actual local artifact: /private/tmp/cmm-round88-wulfenite-research/growth2024.pdf | supports | Observed natural PbMoO4 structure, two habits and host inclusions support mineral identity. Reconstructed growth concentrations are schematic/inferred, not a time-series assay. |
+| correction | https://doi.org/10.1038/s41598-024-60770-8; Complete publisher correction text: all six old and replacement legend passages independently read and compared with current primary graphics. Actual local artifact: /private/tmp/cmm-round88-wulfenite-research/growth-correction.html | supports | Official correction switched figure legends; updated labels support the record. Some body cross-references remain incongruous and are not used to infer experiments. |
+| handbook | https://www.handbookofmineralogy.org/pdfs/wulfenite.pdf; Complete single-page mineral authority, original page pixels and text. Actual local artifact: /private/tmp/cmm-round88-wulfenite-research/handbook-wulfenite.pdf | supports | PbMoO4 formula, tetragonal structure and specimen W-bearing compositions support distinct mineral identity; no external accession or criticality inferred. |
+| render | https://doi.org/10.3390/molecules29225404; Derived 4x rendering of original PDF p5 Figure3; clip Rect(100,65,510,430). Same primary study. Actual local artifact: /private/tmp/cmm-round88-wulfenite-independent/figure3-highres.png | supports | Both intermediate optical and Raman labels visibly read0.05, confirming the correction. |
+| initial | reviews/structured/20261015T051448Z-wulfenite-round88-dose-label-initial/review.yaml; Immutable initial F1 and exact pre-correction source hashes. Actual local artifact: /private/tmp/CMMMech-expansion-round88-20261015/reviews/structured/20261015T051448Z-wulfenite-round88-dose-label-initial/review.yaml | supports | Initial observation remains unchanged and is explicitly resolved, not displaced by a clean review. |
+| before | Actual retained pre-correction owner; Captured05:15:53Z while original bytes still matched native initial SHA; capture provenance in owner-before-correction.json. Actual local artifact: /private/tmp/cmm-round88-wulfenite-independent/owner-before-correction.yaml | supports | Actual pre-correction snapshot, not retrospectively reconstructed. |
+| comparison | Independent exact parsed correction comparison; All parsed old/new fields compared; exactly two scientific prose fields plus appended inline event/history reference differ. Actual local artifact: /private/tmp/cmm-round88-wulfenite-independent/correction-comparison.json | supports | Only unsupported panel mismatch was corrected. Original CREATE and all supported numeric/identity claims are unchanged. |
+| dossier_json | research/sources/round88-wulfenite/20261015T050743Z-source-investigation.json; Whole companion JSON, especially source_assessments Cai limitations. Actual local artifact: /private/tmp/CMMMech-expansion-round88-20261015/research/sources/round88-wulfenite/20261015T050743Z-source-investigation.json | supports | Explicitly acknowledges initial transcription correction and preserved initial F1/EDIT rather than claiming an actual source dose conflict. |
+| dossier_md | research/sources/round88-wulfenite/20261015T050743Z-source-investigation.md; Whole paired report, correction paragraph and retained primary-source limitations. Actual local artifact: /private/tmp/CMMMech-expansion-round88-20261015/research/sources/round88-wulfenite/20261015T050743Z-source-investigation.md | supports | Matches the corrected labels while retaining actual solubility and assay questions. |
+| named | /private/tmp/cmm-round88-wulfenite-independent/named-final.json; Actual corrected-owner named command 2026-10-15T05:19:20.115695+00:00 to 2026-10-15T05:19:22.715621+00:00; retained log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e. Actual local artifact: /private/tmp/cmm-round88-wulfenite-independent/named-final.json | supports | One record and zero failures; actual exit0 verified. |
+| batch | /private/tmp/cmm-round88-final-gates.json; Actual FOUR coordinator commands 2026-10-15T05:18:37.659479+00:00 to 2026-10-15T05:23:39.184991+00:00; exact base/worktree/owner inputs/terminal outcomes and log digest verified. Actual local artifact: /private/tmp/cmm-round88-final-gates.json | supports | Successful just check, strict nonempty validation, canonical history-base validation and pages check; not scientific proof. |
+| batch_log | /private/tmp/cmm-round88-final-gates.log; Actual completed coordinator log, SHA256 independently computed against receipt. Actual local artifact: /private/tmp/cmm-round88-final-gates.log | supports | Retained command outputs substantiate the completed checks; no hosted CI/merge claim follows. |
+| search | Bounded independent source-notice and local identity searches; Exact query strings, result coverage and local hidden/ignored/followed search command/retained output SHA. Actual local artifact: /private/tmp/cmm-round88-wulfenite-independent/evidence-assessment.json | context_only | Official growth correction confirmed. No affecting Cai notice surfaced in bounded result sets; no exhaustive absence claim. Unavailable2019 microbial primary remains excluded. |
+| history0 | history/records/wulfenite/2026-10-15T050904Z-codex-57f7b0.yaml; Exact canonical sidecar actor/target/session/event and linked inline event independently checked. Actual local artifact: /private/tmp/CMMMech-expansion-round88-20261015/history/records/wulfenite/2026-10-15T050904Z-codex-57f7b0.yaml | supports | Actual GPT-6/codex authorship; CREATE retained and EDIT records the supported correction, not reviewer authorship. |
+| history1 | history/records/wulfenite/2026-10-15T051655Z-codex-3facee.yaml; Exact canonical sidecar actor/target/session/event and linked inline event independently checked. Actual local artifact: /private/tmp/CMMMech-expansion-round88-20261015/history/records/wulfenite/2026-10-15T051655Z-codex-3facee.yaml | supports | Actual GPT-6/codex authorship; CREATE retained and EDIT records the supported correction, not reviewer authorship. |
+
+## Limits And Additional Notes
+
+- No laboratory replication, raw diffraction refit, microscopic phase quantification or analytical calibration was performed. Source-assigned purity and mechanism remain qualified.
+- Source PbS solubility wording is internally inconsistent; pH, agitation rate, separation cutoff, replicate count and analytical uncertainty are not reported. The record does not repair those unknowns.
+- Only finite chemical runs and natural specimen observations are accepted. No microbial mechanism, isolated Mo recovery or industrial deployment follows.
+- Complete original PDFs, all claim-bearing graphics/tables and both SI pages were independently read; current notice searches were bounded and not exhaustive.
+- Related2019 biofilm original remains unavailable and contributes no accepted mechanism evidence.
+- The only confirmed local F1 is explicitly resolved. Genuine source uncertainties remain qualified, not manufactured as record defects.
+- No owner, history, source dossier or prior native review was edited by this reviewer.
+- Initial review was honestly partial while batch checks were pending; this successor uses actual completed checks and current exact bytes.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T052439Z-wulfenite-round88-final-resolution
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent final scientific review and F1 resolution for wulfenite
+started_at: '2026-10-15T05:12:19.901735Z'
+finished_at: '2026-10-15T05:24:39.648525Z'
+reviewer:
+  identity: codex /root/round68_new_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored and corrected wulfenite. Reviewer authored the
+    separate chromium-tanned-leather-shavings owner and has made no wulfenite owner/history/dossier
+    edits. Complete shared originals and all claim-bearing graphics/tables were independently
+    assessed; correction was compared with an actual retained initial copy. No laboratory
+    replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of natural wulfenite identity and laboratory abiotic
+  sulfidization/Mo mobilization, preserving source and assay limits. Explicitly resolves
+  the erroneous Figure 3 dose-label mismatch after independently checked correction.
+source:
+  git_revision: 661e752f00ea9ea15e48dfc41f02199dfc16e1fe
+  state: working_tree
+  inputs:
+  - path: data/records/wulfenite.yaml
+    sha256: fd87a4a48ae6ee7ae37a86d2c2f613fde65fd2080b40f44e0ad6830f68df43c7
+    role: target
+  - path: history/records/wulfenite/2026-10-15T050904Z-codex-57f7b0.yaml
+    sha256: 64a167ad16caeb62b41ec29068b6756acbb52b28be923b8f6c7cfc6ce905c4a2
+    role: context
+  - path: history/records/wulfenite/2026-10-15T051655Z-codex-3facee.yaml
+    sha256: ebba8b4bd0d22b4f95e1452bed8cfeba07a30dedd7c18f76a242795cf6caecff
+    role: context
+  - path: research/sources/round88-wulfenite/20261015T050743Z-source-investigation.json
+    sha256: 470ee7d52e90bab604fe2e3300a77692498146af0499a0859b37aa643b811beb
+    role: context
+  - path: research/sources/round88-wulfenite/20261015T050743Z-source-investigation.md
+    sha256: 8537b79262b6f79a586d1edc5c9c101d092633670743ecad6a43cbfdf8ffd577
+    role: context
+  - path: reviews/structured/20261015T051448Z-wulfenite-round88-dose-label-initial/review.yaml
+    sha256: 85d6c1dbb21df4dc3dbadd252ba364f11724514ee3f4d3236b399d347636d5c4
+    role: context
+scope:
+  description: Whole corrected maintained owner, original CREATE, new EDIT, companion
+    source dossier and exact initial F1; full original experimental and identity evidence
+    independently assessed.
+  selection: Assigned canonical owner, initially and again after correction captured
+    through native inspect.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:wulfenite
+targets:
+- target_id: cmmmech:wulfenite
+  path: data/records/wulfenite.yaml
+  label: Wulfenite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/wulfenite.yaml
+    role: maintained scientific record
+checks:
+- check_id: named
+  name: Independent corrected-owner strict validation
+  command: uv run --locked cmmmech validate data/records/wulfenite.yaml --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual one record and zero failures; corrected hash checked.
+  target_ids:
+  - cmmmech:wulfenite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch gate 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal coordinator receipt and retained log independently verified;
+    no duplicate full-suite run by this reviewer.
+  target_ids:
+  - cmmmech:wulfenite
+  evidence_ids:
+  - batch
+  - batch_log
+- check_id: batch2
+  name: Completed coordinator batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal coordinator receipt and retained log independently verified;
+    no duplicate full-suite run by this reviewer.
+  target_ids:
+  - cmmmech:wulfenite
+  evidence_ids:
+  - batch
+  - batch_log
+- check_id: batch3
+  name: Completed coordinator batch gate 3
+  command: uv run --locked cmmmech validate-history --base 661e752f00ea9ea15e48dfc41f02199dfc16e1fe
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal coordinator receipt and retained log independently verified;
+    no duplicate full-suite run by this reviewer.
+  target_ids:
+  - cmmmech:wulfenite
+  evidence_ids:
+  - batch
+  - batch_log
+- check_id: batch4
+  name: Completed coordinator batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal coordinator receipt and retained log independently verified;
+    no duplicate full-suite run by this reviewer.
+  target_ids:
+  - cmmmech:wulfenite
+  evidence_ids:
+  - batch
+  - batch_log
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/wulfenite.yaml
+  locator: 'Whole corrected owner, native inspected before reassessment. Actual local
+    artifact: /private/tmp/CMMMech-expansion-round88-20261015/data/records/wulfenite.yaml'
+  accessed_at: '2026-10-15T05:24:39.648525Z'
+  support: supports
+  summary: Exact corrected scientific claims and appended inline history reviewed;
+    no reviewer owner edits.
+  snapshot_sha256: fd87a4a48ae6ee7ae37a86d2c2f613fde65fd2080b40f44e0ad6830f68df43c7
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/molecules29225404
+  locator: 'Complete twelve-page publisher original; Methods3.1–3.3 pp9–10, Results2.1–2.5,
+    all Figures1–6 pp3–7/9 and Table1 p9 independently inspected. Actual local artifact:
+    /private/tmp/cmm-round88-wulfenite-research/cai2024.pdf'
+  accessed_at: '2026-10-15T05:24:39.648525Z'
+  support: supports
+  summary: Characterized natural preparation, finite chemical treatment and aqueous
+    Mo assay/solid phase observations support the qualified abiotic mechanism. No
+    isolated recovery or industrial deployment is demonstrated.
+  snapshot_sha256: aa95d9d0ed3dc2a3ef3771a91d7014cf65f7c698ac25e02a1d8aa6589ee50896
+- evidence_id: si
+  kind: primary_source
+  reference: https://mdpi-res.com/d_attachment/molecules/molecules-29-05404/article_deploy/molecules-29-05404-s001.zip
+  locator: 'Complete actual two-page supplemental PDF extracted from the official
+    ZIP; both pages visually inspected, FigureS1 and TableS1 on p2. Actual local artifact:
+    /private/tmp/cmm-round88-wulfenite-research/supplement/molecules-3308380-supplementary.pdf'
+  accessed_at: '2026-10-15T05:24:39.648525Z'
+  support: partial
+  summary: Time-series lacks stated replicate uncertainty; 40-minute point is lower.
+    Thermodynamic calculations are not observed rates. Same-study lineage, not replication.
+  snapshot_sha256: 1de5a1810f3ea4c24bbbdbd51bb4679292d2f07c8bb29c8882c515b78e802845
+- evidence_id: growth
+  kind: primary_source
+  reference: https://doi.org/10.1038/s41598-024-60043-4
+  locator: 'Complete updated twelve-page original; Methods pp2–3, SCXRD Tables1–3
+    pp4–5, Table4 p6, all corrected Figures1–6 pp3/6/7/9/10 inspected. Actual local
+    artifact: /private/tmp/cmm-round88-wulfenite-research/growth2024.pdf'
+  accessed_at: '2026-10-15T05:24:39.648525Z'
+  support: supports
+  summary: Observed natural PbMoO4 structure, two habits and host inclusions support
+    mineral identity. Reconstructed growth concentrations are schematic/inferred,
+    not a time-series assay.
+  snapshot_sha256: b8d62b1436bccc8da45db3217ecdecf6355ba97eb94a920dc4fb499cd60c0de9
+- evidence_id: correction
+  kind: primary_source
+  reference: https://doi.org/10.1038/s41598-024-60770-8
+  locator: 'Complete publisher correction text: all six old and replacement legend
+    passages independently read and compared with current primary graphics. Actual
+    local artifact: /private/tmp/cmm-round88-wulfenite-research/growth-correction.html'
+  accessed_at: '2026-10-15T05:24:39.648525Z'
+  support: supports
+  summary: Official correction switched figure legends; updated labels support the
+    record. Some body cross-references remain incongruous and are not used to infer
+    experiments.
+  snapshot_sha256: 71e33a80eb7484e68df6a9465da7f44f7487d8e0a213ad5449735b1cba2572d4
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/wulfenite.pdf
+  locator: 'Complete single-page mineral authority, original page pixels and text.
+    Actual local artifact: /private/tmp/cmm-round88-wulfenite-research/handbook-wulfenite.pdf'
+  accessed_at: '2026-10-15T05:24:39.648525Z'
+  support: supports
+  summary: PbMoO4 formula, tetragonal structure and specimen W-bearing compositions
+    support distinct mineral identity; no external accession or criticality inferred.
+  snapshot_sha256: 3590911dc9d6c79256bac5c0f876295aa733ca43aacb7d801253030b01e21547
+- evidence_id: render
+  kind: primary_source
+  reference: https://doi.org/10.3390/molecules29225404
+  locator: 'Derived 4x rendering of original PDF p5 Figure3; clip Rect(100,65,510,430).
+    Same primary study. Actual local artifact: /private/tmp/cmm-round88-wulfenite-independent/figure3-highres.png'
+  accessed_at: '2026-10-15T05:24:39.648525Z'
+  support: supports
+  summary: Both intermediate optical and Raman labels visibly read0.05, confirming
+    the correction.
+  snapshot_sha256: 737d29d15cac941d8672c750c24ca76e056b0d78c0241ed5e33405957a867f3c
+- evidence_id: initial
+  kind: prior_review
+  reference: reviews/structured/20261015T051448Z-wulfenite-round88-dose-label-initial/review.yaml
+  locator: 'Immutable initial F1 and exact pre-correction source hashes. Actual local
+    artifact: /private/tmp/CMMMech-expansion-round88-20261015/reviews/structured/20261015T051448Z-wulfenite-round88-dose-label-initial/review.yaml'
+  accessed_at: '2026-10-15T05:24:39.648525Z'
+  support: supports
+  summary: Initial observation remains unchanged and is explicitly resolved, not displaced
+    by a clean review.
+  snapshot_sha256: 85d6c1dbb21df4dc3dbadd252ba364f11724514ee3f4d3236b399d347636d5c4
+- evidence_id: before
+  kind: record_content
+  reference: Actual retained pre-correction owner
+  locator: 'Captured05:15:53Z while original bytes still matched native initial SHA;
+    capture provenance in owner-before-correction.json. Actual local artifact: /private/tmp/cmm-round88-wulfenite-independent/owner-before-correction.yaml'
+  accessed_at: '2026-10-15T05:24:39.648525Z'
+  support: supports
+  summary: Actual pre-correction snapshot, not retrospectively reconstructed.
+  snapshot_sha256: 91b7bf7f537e4b8eeef68ca3309f7eb99acc68c1fcd090f2be69449f42ff15ee
+- evidence_id: comparison
+  kind: record_content
+  reference: Independent exact parsed correction comparison
+  locator: 'All parsed old/new fields compared; exactly two scientific prose fields
+    plus appended inline event/history reference differ. Actual local artifact: /private/tmp/cmm-round88-wulfenite-independent/correction-comparison.json'
+  accessed_at: '2026-10-15T05:24:39.648525Z'
+  support: supports
+  summary: Only unsupported panel mismatch was corrected. Original CREATE and all
+    supported numeric/identity claims are unchanged.
+  snapshot_sha256: 4fd7ef04e58b4043ee85e6623717d891d81625d8743b8c4a1a7cf295aca6d984
+- evidence_id: dossier_json
+  kind: record_content
+  reference: research/sources/round88-wulfenite/20261015T050743Z-source-investigation.json
+  locator: 'Whole companion JSON, especially source_assessments Cai limitations. Actual
+    local artifact: /private/tmp/CMMMech-expansion-round88-20261015/research/sources/round88-wulfenite/20261015T050743Z-source-investigation.json'
+  accessed_at: '2026-10-15T05:24:39.648525Z'
+  support: supports
+  summary: Explicitly acknowledges initial transcription correction and preserved
+    initial F1/EDIT rather than claiming an actual source dose conflict.
+  snapshot_sha256: 470ee7d52e90bab604fe2e3300a77692498146af0499a0859b37aa643b811beb
+- evidence_id: dossier_md
+  kind: record_content
+  reference: research/sources/round88-wulfenite/20261015T050743Z-source-investigation.md
+  locator: 'Whole paired report, correction paragraph and retained primary-source
+    limitations. Actual local artifact: /private/tmp/CMMMech-expansion-round88-20261015/research/sources/round88-wulfenite/20261015T050743Z-source-investigation.md'
+  accessed_at: '2026-10-15T05:24:39.648525Z'
+  support: supports
+  summary: Matches the corrected labels while retaining actual solubility and assay
+    questions.
+  snapshot_sha256: 8537b79262b6f79a586d1edc5c9c101d092633670743ecad6a43cbfdf8ffd577
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round88-wulfenite-independent/named-final.json
+  locator: 'Actual corrected-owner named command 2026-10-15T05:19:20.115695+00:00
+    to 2026-10-15T05:19:22.715621+00:00; retained log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e.
+    Actual local artifact: /private/tmp/cmm-round88-wulfenite-independent/named-final.json'
+  accessed_at: '2026-10-15T05:24:39.648525Z'
+  support: supports
+  summary: One record and zero failures; actual exit0 verified.
+  snapshot_sha256: 372cfac3b662c41592c7b896e13cb0fe48c6bdf2ab12656f8d3c445df2931cba
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round88-final-gates.json
+  locator: 'Actual FOUR coordinator commands 2026-10-15T05:18:37.659479+00:00 to 2026-10-15T05:23:39.184991+00:00;
+    exact base/worktree/owner inputs/terminal outcomes and log digest verified. Actual
+    local artifact: /private/tmp/cmm-round88-final-gates.json'
+  accessed_at: '2026-10-15T05:24:39.648525Z'
+  support: supports
+  summary: Successful just check, strict nonempty validation, canonical history-base
+    validation and pages check; not scientific proof.
+  snapshot_sha256: 8367446976122f115ed55531aa45db1ddaf8d7054b84dbca65da399bd1ae70c0
+- evidence_id: batch_log
+  kind: validation
+  reference: /private/tmp/cmm-round88-final-gates.log
+  locator: 'Actual completed coordinator log, SHA256 independently computed against
+    receipt. Actual local artifact: /private/tmp/cmm-round88-final-gates.log'
+  accessed_at: '2026-10-15T05:24:39.648525Z'
+  support: supports
+  summary: Retained command outputs substantiate the completed checks; no hosted CI/merge
+    claim follows.
+  snapshot_sha256: 116283f127d379f64072e586b392f5346d885121a09419c4a8d13083950b7684
+- evidence_id: search
+  kind: search
+  reference: Bounded independent source-notice and local identity searches
+  locator: 'Exact query strings, result coverage and local hidden/ignored/followed
+    search command/retained output SHA. Actual local artifact: /private/tmp/cmm-round88-wulfenite-independent/evidence-assessment.json'
+  accessed_at: '2026-10-15T05:24:39.648525Z'
+  support: context_only
+  summary: Official growth correction confirmed. No affecting Cai notice surfaced
+    in bounded result sets; no exhaustive absence claim. Unavailable2019 microbial
+    primary remains excluded.
+  snapshot_sha256: 76d3d1d430cf4a0d9afe2bed17ef1b7ed2db3bff2988c85fd5a85d1ef165e4d3
+  search_scope: First returned web result sets for the three recorded exact DOI/correction/related-microbial
+    queries; local rg --no-ignore --hidden --follow over data/records,research,reviews,history.
+    No machine-wide or exhaustive literature absence claim.
+- evidence_id: history0
+  kind: record_content
+  reference: history/records/wulfenite/2026-10-15T050904Z-codex-57f7b0.yaml
+  locator: 'Exact canonical sidecar actor/target/session/event and linked inline event
+    independently checked. Actual local artifact: /private/tmp/CMMMech-expansion-round88-20261015/history/records/wulfenite/2026-10-15T050904Z-codex-57f7b0.yaml'
+  accessed_at: '2026-10-15T05:24:39.648525Z'
+  support: supports
+  summary: Actual GPT-6/codex authorship; CREATE retained and EDIT records the supported
+    correction, not reviewer authorship.
+  snapshot_sha256: 64a167ad16caeb62b41ec29068b6756acbb52b28be923b8f6c7cfc6ce905c4a2
+- evidence_id: history1
+  kind: record_content
+  reference: history/records/wulfenite/2026-10-15T051655Z-codex-3facee.yaml
+  locator: 'Exact canonical sidecar actor/target/session/event and linked inline event
+    independently checked. Actual local artifact: /private/tmp/CMMMech-expansion-round88-20261015/history/records/wulfenite/2026-10-15T051655Z-codex-3facee.yaml'
+  accessed_at: '2026-10-15T05:24:39.648525Z'
+  support: supports
+  summary: Actual GPT-6/codex authorship; CREATE retained and EDIT records the supported
+    correction, not reviewer authorship.
+  snapshot_sha256: ebba8b4bd0d22b4f95e1452bed8cfeba07a30dedd7c18f76a242795cf6caecff
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral identity, natural specimens and concept boundaries
+  outcome: supported
+  summary: The Handbook formula and tetragonal cell, and Gracanin Tables 1–3 single-crystal
+    diffraction, support PbMoO4 wulfenite. It remains distinct from elemental Pb/Mo,
+    stolzite and an unspecified mixed ore. The two natural crystal habits are the
+    same mineral; local inclusions and trace substitutions do not justify an absolute
+    purity claim.
+  target_ids:
+  - cmmmech:wulfenite
+  evidence_ids:
+  - owner
+  - growth
+  - handbook
+- assessment_id: natural_growth
+  area: evidence
+  topic: Natural observations and corrected source figures
+  outcome: supported
+  summary: Updated Gracanin Figures 1–6 and Tables 1–4 distinguish diffraction/microscopy
+    observations from the proposed environmental growth history. Actual publisher
+    correction is acknowledged; schematic concentration/time axes are arbitrary units,
+    not monitored environmental data. Remaining body-reference inconsistencies do
+    not affect the stated mineral identity.
+  target_ids:
+  - cmmmech:wulfenite
+  evidence_ids:
+  - growth
+  - correction
+  - owner
+- assessment_id: conditions
+  area: evidence
+  topic: Abiotic feed, treatment arms and controls
+  outcome: supported
+  summary: Cai uses a characterized Xinjiang natural preparation, 38–72 micrometres,
+    0.755 g/20 mL chemical sodium-sulfide treatment. No organisms or microbial reagent
+    production are asserted. Untreated samples are comparators; characterized solids
+    are from 25 C/30 minutes, not automatically the 90 C leach endpoint. Undisclosed
+    pH, mixing speed, separation cutoff and replication are retained.
+  target_ids:
+  - cmmmech:wulfenite
+  evidence_ids:
+  - primary
+  - owner
+- assessment_id: outcome
+  area: quantity
+  topic: Leaching denominator versus isolated recovery
+  outcome: supported
+  summary: Figure 1b and text report 59.44% at25 C and94.43% at90 C at ratio1/30 minutes,
+    calculated from aqueous Mo concentration and volume over feed Mo inventory. Figure1a64.15%
+    uses a different1.25 ratio. These are assay fractions, not isolated metal/product
+    yield; no complete Pb/Mo balance or industrial performance is inferred.
+  target_ids:
+  - cmmmech:wulfenite
+  evidence_ids:
+  - primary
+  - owner
+- assessment_id: phase
+  area: evidence
+  topic: Residual wulfenite, PbS signals and proposed pathway
+  outcome: supported
+  summary: XRD Figure2, Raman Figure3, XPS Figure4 and microscopy Figure5 support
+    PbS-assigned signals with residual wulfenite. Raman surface attenuation alone
+    is not complete bulk conversion. Figure6 core-shell/transport interpretation is
+    not directly time-resolved reaction fronts or uniquely identified rate control.
+    Source contradictory solubility wording remains qualified.
+  target_ids:
+  - cmmmech:wulfenite
+  evidence_ids:
+  - primary
+  - owner
+- assessment_id: supplement
+  area: evidence
+  topic: Time-series and thermodynamic limits
+  outcome: supported
+  summary: Both SI pages were inspected. Figure S1 has a lower40-minute point than30
+    minutes without uncertainty; no monotonic equilibrium claim follows. TableS1 contains
+    calculated thermodynamic quantities, not measured kinetic rates or recovered yield.
+    SI and main share one study lineage.
+  target_ids:
+  - cmmmech:wulfenite
+  evidence_ids:
+  - primary
+  - si
+  - owner
+- assessment_id: scope
+  area: scope
+  topic: Criticality, microbial scope and deployment
+  outcome: supported
+  summary: No jurisdiction/list/edition criticality claim is asserted or inherited.
+    The unavailable2019 biofilm original is retained as a research gap and contributes
+    no mechanism evidence here. Laboratory chemical experiments and natural mineral
+    characterization do not establish microbial causation, ore-scale flotation recovery
+    or industrial deployment.
+  target_ids:
+  - cmmmech:wulfenite
+  evidence_ids:
+  - primary
+  - growth
+  - owner
+  - search
+- assessment_id: correction
+  area: consistency
+  topic: F1 dose-label correction and explicit predecessor disposition
+  outcome: supported
+  summary: Original page5 confirms both labels0.05. Exact parsed comparison proves
+    the false mismatch was the only changed scientific content; companion corrections
+    are explicit, original CREATE and initial native review retained.
+  target_ids:
+  - cmmmech:wulfenite
+  evidence_ids:
+  - owner
+  - primary
+  - render
+  - initial
+  - before
+  - comparison
+  - dossier_json
+  - dossier_md
+  - history0
+  - history1
+- assessment_id: provenance
+  area: provenance
+  topic: Current exact inputs and completed required checks
+  outcome: supported
+  summary: Corrected native input hashes, canonical histories and actual named/four-command
+    batch outcomes agree. This acceptance covers these bytes only and does not establish
+    future hosted publication outcomes.
+  target_ids:
+  - cmmmech:wulfenite
+  evidence_ids:
+  - owner
+  - history0
+  - history1
+  - named
+  - batch
+  - batch_log
+  - comparison
+findings:
+- finding_id: F1
+  issue_key: wulfenite-round88-figure3-dose-label-transcription
+  category: evidence
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Remove the unsupported Figure 3 intermediate-dose mismatch
+  description: The record second evidence explanation says Figure 3 optical and Raman
+    intermediate labels differ (0.5 versus 0.05). Both original labels on page 5 are
+    0.05. The mechanism context also invokes panel/dose label inconsistency, and the
+    source dossier repeats this specific false mismatch. Remove that unsupported claim;
+    this does not repair or erase the separate, genuinely contradictory PbS solubility
+    wording or the finite time-series uncertainty.
+  target_ids:
+  - cmmmech:wulfenite
+  field_paths:
+  - mechanisms[id=abiotic_sulfidization_and_molybdenum_leaching].context
+  - mechanisms[id=abiotic_sulfidization_and_molybdenum_leaching].evidence[1].explanation
+  evidence_ids:
+  - owner
+  - primary
+  - render
+  - initial
+  - before
+  - comparison
+  - dossier_json
+  - dossier_md
+  - history0
+  - history1
+  - named
+  - batch
+  rule_id: primary-graphic-transcription
+  native_severity: minor
+  normalization_reason: Bounded transcription error in a limitation statement; mineral
+    identity and accepted chemical leaching observations remain supported.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/wulfenite.yaml
+    role: maintained scientific record
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261015T051448Z-wulfenite-round88-dose-label-initial
+    finding_id: F1
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/302
+  disposition_reason: Independently verified original Figure3 has0.05 in both panels;
+    final owner removes the false mismatch and explicitly states the matching value.
+    Exact parsed comparison against actual pre-correction snapshot isolates only context/evidence
+    correction plus appended inlineEDIT/historyref. Companion reports explicitly acknowledge
+    the transcription correction. Original CREATE/native F1 remain immutable and actual
+    named/final four-command gates passed. Local resolution does not assert remote
+    issue closure before merge.
+actions: []
+limitations:
+- No laboratory replication, raw diffraction refit, microscopic phase quantification
+  or analytical calibration was performed. Source-assigned purity and mechanism remain
+  qualified.
+- Source PbS solubility wording is internally inconsistent; pH, agitation rate, separation
+  cutoff, replicate count and analytical uncertainty are not reported. The record
+  does not repair those unknowns.
+- Only finite chemical runs and natural specimen observations are accepted. No microbial
+  mechanism, isolated Mo recovery or industrial deployment follows.
+- Complete original PDFs, all claim-bearing graphics/tables and both SI pages were
+  independently read; current notice searches were bounded and not exhaustive.
+- Related2019 biofilm original remains unavailable and contributes no accepted mechanism
+  evidence.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261015T051448Z-wulfenite-round88-dose-label-initial
+  relationship: follow_up
+notes:
+- The only confirmed local F1 is explicitly resolved. Genuine source uncertainties
+  remain qualified, not manufactured as record defects.
+- No owner, history, source dossier or prior native review was edited by this reviewer.
+- Initial review was honestly partial while batch checks were pending; this successor
+  uses actual completed checks and current exact bytes.
+```

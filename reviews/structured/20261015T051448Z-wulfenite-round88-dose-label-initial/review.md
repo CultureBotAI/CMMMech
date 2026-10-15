@@ -1,0 +1,264 @@
+# Independent initial wulfenite Figure 3 dose-label finding
+
+- Review: 20261015T051448Z-wulfenite-round88-dose-label-initial
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T05:12:19.901735Z
+- Finished UTC: 2026-10-15T05:14:48.638879Z
+- Reviewer: codex /root/round68_new_frontier (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+One confirmed minor transcription error creates a nonexistent Figure 3 dose-label contradiction. Both intermediate panels are labelled 0.05. Other scientific assessment is ongoing and completed final batch gates are not yet supplied.
+
+## Scope And Provenance
+
+Scoped initial observation of the asserted intermediate optical/Raman dose mismatch, preserving pre-correction owner/history.
+
+Selection: Assigned canonical owner, captured through native inspection before judgment.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 661e752f00ea9ea15e48dfc41f02199dfc16e1fe.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:wulfenite | data/records/wulfenite.yaml | maintained | Wulfenite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named strict validation | passed | True | cmmmech:wulfenite | Actual one record, zero failures; retained receipt and log verified. |
+| Final batch checks | unavailable | True | cmmmech:wulfenite | No terminal final batch receipt has been supplied for these reviewed bytes. No passing batch result is asserted. |
+
+## Scientific And Domain Assessments
+
+### Intermediate Figure 3 optical and Raman dose labels
+
+consistency: concern. Targets: cmmmech:wulfenite.
+
+The claimed 0.5/0.05 discrepancy is absent from the original high-resolution graphic. Correct the unsupported contradiction while preserving actual solubility/time-series limitations and observed leaching results.
+
+## Findings
+
+### F1: Remove the unsupported Figure 3 intermediate-dose mismatch
+
+minor / open / confirmed; issue key: wulfenite-round88-figure3-dose-label-transcription.
+
+The record second evidence explanation says Figure 3 optical and Raman intermediate labels differ (0.5 versus 0.05). Both original labels on page 5 are 0.05. The mechanism context also invokes panel/dose label inconsistency, and the source dossier repeats this specific false mismatch. Remove that unsupported claim; this does not repair or erase the separate, genuinely contradictory PbS solubility wording or the finite time-series uncertainty.
+
+## Recommended Actions And Acceptance Checks
+
+### A1
+
+Remove the false intermediate-dose contradiction from record and companion dossier. Append canonical EDIT and inline history; retain original CREATE and this immutable observation.
+
+- Reinspect original Figure 3 page 5 and document that both intermediate labels are 0.05.
+- Preserve supported leaching numbers, genuine solubility contradiction and assay/scale limits; compare exact corrected content.
+- Named and final batch checks pass; new native successor explicitly resolves this exact F1 occurrence.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/wulfenite.yaml; Exact native-inspected mechanism context and second evidence explanation. Actual local artifact: /private/tmp/CMMMech-expansion-round88-20261015/data/records/wulfenite.yaml | supports | Owner asserts inconsistent panel/dose labels and specifically 0.5 versus 0.05. |
+| primary | https://doi.org/10.3390/molecules29225404; Original twelve-page publisher PDF, printed/PDF page 5, Figure 3 optical second row and Raman second experimental row. Actual local artifact: /private/tmp/cmm-round88-wulfenite-research/cai2024.pdf | refutes | Both original intermediate labels read [Na2S]/[PbMoO4]=0.05; 0.5 is a transcription error, not a source contradiction. |
+| render | https://doi.org/10.3390/molecules29225404; Derived high-resolution rendering from original page 5 using PyMuPDF at 4x, clip Rect(100,65,510,430). This is the same original, not independent data. Actual local artifact: /private/tmp/cmm-round88-wulfenite-independent/figure3-highres.png | refutes | The two 0.05 labels are legible together; neighboring experimental labels 1, 0.01 and 0 also correspond. |
+| named | /private/tmp/cmm-round88-wulfenite-independent/named-validation.json; Actual independent command receipt with retained log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e. Actual local artifact: /private/tmp/cmm-round88-wulfenite-independent/named-validation.json | supports | Named validation exit0 does not establish scientific accuracy. |
+
+## Limits And Additional Notes
+
+- This is an initial scoped observation; final whole-record acceptance and final batch checks remain pending.
+- No independent experimental replication or reanalysis of raw analytical data.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T051448Z-wulfenite-round88-dose-label-initial
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent initial wulfenite Figure 3 dose-label finding
+started_at: '2026-10-15T05:12:19.901735Z'
+finished_at: '2026-10-15T05:14:48.638879Z'
+reviewer:
+  identity: codex /root/round68_new_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored wulfenite. Reviewer authored chromium-tanned-leather-shavings
+    and has not edited the wulfenite owner, history or dossier. Native inspection
+    captured owner/history before judgment; earlier source reading was preparation.
+skill: .claude/skills/review-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: One confirmed minor transcription error creates a nonexistent Figure 3 dose-label
+  contradiction. Both intermediate panels are labelled 0.05. Other scientific assessment
+  is ongoing and completed final batch gates are not yet supplied.
+source:
+  git_revision: 661e752f00ea9ea15e48dfc41f02199dfc16e1fe
+  state: working_tree
+  inputs:
+  - path: data/records/wulfenite.yaml
+    sha256: 91b7bf7f537e4b8eeef68ca3309f7eb99acc68c1fcd090f2be69449f42ff15ee
+    role: target
+  - path: history/records/wulfenite/2026-10-15T050904Z-codex-57f7b0.yaml
+    sha256: 64a167ad16caeb62b41ec29068b6756acbb52b28be923b8f6c7cfc6ce905c4a2
+    role: context
+scope:
+  description: Scoped initial observation of the asserted intermediate optical/Raman
+    dose mismatch, preserving pre-correction owner/history.
+  selection: Assigned canonical owner, captured through native inspection before judgment.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:wulfenite
+targets:
+- target_id: cmmmech:wulfenite
+  path: data/records/wulfenite.yaml
+  label: Wulfenite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/wulfenite.yaml
+    role: maintained scientific record
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/wulfenite.yaml --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual one record, zero failures; retained receipt and log verified.
+  target_ids:
+  - cmmmech:wulfenite
+  evidence_ids:
+  - named
+- check_id: batch_pending
+  name: Final batch checks
+  required: true
+  status: unavailable
+  summary: No terminal final batch receipt has been supplied for these reviewed bytes.
+    No passing batch result is asserted.
+  target_ids:
+  - cmmmech:wulfenite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/wulfenite.yaml
+  locator: 'Exact native-inspected mechanism context and second evidence explanation.
+    Actual local artifact: /private/tmp/CMMMech-expansion-round88-20261015/data/records/wulfenite.yaml'
+  accessed_at: '2026-10-15T05:14:48.638879Z'
+  support: supports
+  summary: Owner asserts inconsistent panel/dose labels and specifically 0.5 versus
+    0.05.
+  snapshot_sha256: 91b7bf7f537e4b8eeef68ca3309f7eb99acc68c1fcd090f2be69449f42ff15ee
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/molecules29225404
+  locator: 'Original twelve-page publisher PDF, printed/PDF page 5, Figure 3 optical
+    second row and Raman second experimental row. Actual local artifact: /private/tmp/cmm-round88-wulfenite-research/cai2024.pdf'
+  accessed_at: '2026-10-15T05:14:48.638879Z'
+  support: refutes
+  summary: Both original intermediate labels read [Na2S]/[PbMoO4]=0.05; 0.5 is a transcription
+    error, not a source contradiction.
+  snapshot_sha256: aa95d9d0ed3dc2a3ef3771a91d7014cf65f7c698ac25e02a1d8aa6589ee50896
+- evidence_id: render
+  kind: primary_source
+  reference: https://doi.org/10.3390/molecules29225404
+  locator: 'Derived high-resolution rendering from original page 5 using PyMuPDF at
+    4x, clip Rect(100,65,510,430). This is the same original, not independent data.
+    Actual local artifact: /private/tmp/cmm-round88-wulfenite-independent/figure3-highres.png'
+  accessed_at: '2026-10-15T05:14:48.638879Z'
+  support: refutes
+  summary: The two 0.05 labels are legible together; neighboring experimental labels
+    1, 0.01 and 0 also correspond.
+  snapshot_sha256: 737d29d15cac941d8672c750c24ca76e056b0d78c0241ed5e33405957a867f3c
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round88-wulfenite-independent/named-validation.json
+  locator: 'Actual independent command receipt with retained log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e.
+    Actual local artifact: /private/tmp/cmm-round88-wulfenite-independent/named-validation.json'
+  accessed_at: '2026-10-15T05:14:48.638879Z'
+  support: supports
+  summary: Named validation exit0 does not establish scientific accuracy.
+  snapshot_sha256: 29d0fffda77c65cff2e057f96e945fe9298a64823a072bd84f212673d928b06f
+assessments:
+- assessment_id: dose_labels
+  area: consistency
+  topic: Intermediate Figure 3 optical and Raman dose labels
+  outcome: concern
+  summary: The claimed 0.5/0.05 discrepancy is absent from the original high-resolution
+    graphic. Correct the unsupported contradiction while preserving actual solubility/time-series
+    limitations and observed leaching results.
+  target_ids:
+  - cmmmech:wulfenite
+  evidence_ids:
+  - owner
+  - primary
+  - render
+findings:
+- finding_id: F1
+  issue_key: wulfenite-round88-figure3-dose-label-transcription
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Remove the unsupported Figure 3 intermediate-dose mismatch
+  description: The record second evidence explanation says Figure 3 optical and Raman
+    intermediate labels differ (0.5 versus 0.05). Both original labels on page 5 are
+    0.05. The mechanism context also invokes panel/dose label inconsistency, and the
+    source dossier repeats this specific false mismatch. Remove that unsupported claim;
+    this does not repair or erase the separate, genuinely contradictory PbS solubility
+    wording or the finite time-series uncertainty.
+  target_ids:
+  - cmmmech:wulfenite
+  field_paths:
+  - mechanisms[id=abiotic_sulfidization_and_molybdenum_leaching].context
+  - mechanisms[id=abiotic_sulfidization_and_molybdenum_leaching].evidence[1].explanation
+  evidence_ids:
+  - owner
+  - primary
+  - render
+  rule_id: primary-graphic-transcription
+  native_severity: minor
+  normalization_reason: Bounded transcription error in a limitation statement; mineral
+    identity and accepted chemical leaching observations remain supported.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/wulfenite.yaml
+    role: maintained scientific record
+actions:
+- action_id: A1
+  description: Remove the false intermediate-dose contradiction from record and companion
+    dossier. Append canonical EDIT and inline history; retain original CREATE and
+    this immutable observation.
+  finding_ids:
+  - F1
+  target_ids:
+  - cmmmech:wulfenite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/wulfenite.yaml
+    role: maintained scientific record
+  acceptance_checks:
+  - Reinspect original Figure 3 page 5 and document that both intermediate labels
+    are 0.05.
+  - Preserve supported leaching numbers, genuine solubility contradiction and assay/scale
+    limits; compare exact corrected content.
+  - Named and final batch checks pass; new native successor explicitly resolves this
+    exact F1 occurrence.
+limitations:
+- This is an initial scoped observation; final whole-record acceptance and final batch
+  checks remain pending.
+- No independent experimental replication or reanalysis of raw analytical data.
+```

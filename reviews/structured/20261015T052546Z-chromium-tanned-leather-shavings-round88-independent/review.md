@@ -1,0 +1,582 @@
+# Independent scientific review of chromium-tanned leather shavings
+
+- Review: 20261015T052546Z-chromium-tanned-leather-shavings-round88-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T05:14:42.796513Z
+- Finished UTC: 2026-10-15T05:25:46.154625Z
+- Reviewer: codex /root/round68_iron_sulfides (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of laboratory yeast-associated conversion of chromium-tanned leather shavings and operational chromium partitioning. Record preserves conflicting source values, missing mass bases, recipe and strain boundaries without isolated recovery, causal redox, universal safety or deployment claims.
+
+## Scope And Provenance
+
+Whole exact maintained owner, CREATE and source dossier; full accepted original and all supplements assessed.
+
+Selection: Assigned independent canonical target; native inspect before judgment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 661e752f00ea9ea15e48dfc41f02199dfc16e1fe.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:chromium-tanned-leather-shavings | data/records/chromium-tanned-leather-shavings.yaml | maintained | Chromium-tanned leather shavings |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named strict validation | passed | True | cmmmech:chromium-tanned-leather-shavings | Actual one record, zero failures; receipt and log verified. |
+| Completed coordinator gate1 | passed | True | cmmmech:chromium-tanned-leather-shavings | Actual completed coordinator gate verified; not a duplicate reviewer execution. |
+| Completed coordinator gate2 | passed | True | cmmmech:chromium-tanned-leather-shavings | Actual completed coordinator gate verified; not a duplicate reviewer execution. |
+| Completed coordinator gate3 | passed | True | cmmmech:chromium-tanned-leather-shavings | Actual completed coordinator gate verified; not a duplicate reviewer execution. |
+| Completed coordinator gate4 | passed | True | cmmmech:chromium-tanned-leather-shavings | Actual completed coordinator gate verified; not a duplicate reviewer execution. |
+
+## Scientific And Domain Assessments
+
+### Secondary-resource form and organism grounding
+
+identity: supported. Targets: cmmmech:chromium-tanned-leather-shavings.
+
+Wet-blue chromium-tanned leather shavings are a distinct manufacturing residue, not wastewater sludge, purified collagen or elemental chromium. The source-attributed composition is not mislabeled lot-specific. Taxon4952 is species-level; IPS21 and its SI sample mapping remain qualified.
+
+### Culture, substrate, pretreatment and control scope
+
+evidence: supported. Targets: cmmmech:chromium-tanned-leather-shavings.
+
+Living culture,100mLflask/40mLmedium,30C190rpm48h,0.1–4wt%feed,0.4/0.8mLinoculum and autoclave details match the original. Final recipe/OD notation, yeast-extract nutrients and pH-unmatched comparisons are retained. Chromium endpoints concern0.1/1% arms only.
+
+### Conditional matrix conversion and causal limits
+
+evidence: supported. Targets: cmmmech:chromium-tanned-leather-shavings.
+
+Enzyme activities, amino-acid changes and operational total-Cr distribution support associated bioconversion. No matched pH/enzyme-inactivation controls isolate proteolysis as the chromium cause; solid residue combines yeast and feed. No intracellular exclusion or identified hydroxide/oxide phase is claimed.
+
+### Mass bases, conflicting labels and nondetections
+
+quantity: supported. Targets: cmmmech:chromium-tanned-leather-shavings.
+
+Figure4 concentrations are not a mass balance; source10.31g/kg arm conflicts with graphic and is not silently reassigned. Table1 degradation-rate equation is missing and1% values exceed4% despite optimum narrative. SI2 CrVI nondetections remain censored in their stated units. No chromium recovery percentage is entered.
+
+### Product quality, safety and deployment
+
+scope: supported. Targets: cmmmech:chromium-tanned-leather-shavings.
+
+Short diluted-supernatant plant and plate assays do not prove universal detoxification, fertilizer safety, industrial treatment or isolated chromium recovery. Constituent criticality is not inherited.
+
+### Exact bytes, primary access and actual checks
+
+provenance: supported. Targets: cmmmech:chromium-tanned-leather-shavings.
+
+Native inspect preceded judgment; all primary references bind actual nonempty JATS/HTML/originalgraphics/PDFsupplements. Challenge mainPDF excluded. Owner/history/dossier unchanged by reviewer; actual named and four coordinator gates verified.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/chromium-tanned-leather-shavings.yaml; Whole exact target captured by native inspect before judgment. Actual local artifact: /private/tmp/CMMMech-expansion-round88-20261015/data/records/chromium-tanned-leather-shavings.yaml | supports | Frozen owner and canonical CREATE agree; inline event is separate. No reviewer changes to author inputs. |
+| history | history/records/chromium-tanned-leather-shavings/2026-10-15T050839Z-codex-a4deea.yaml; Whole exact target captured by native inspect before judgment. Actual local artifact: /private/tmp/CMMMech-expansion-round88-20261015/history/records/chromium-tanned-leather-shavings/2026-10-15T050839Z-codex-a4deea.yaml | supports | Frozen owner and canonical CREATE agree; inline event is separate. No reviewer changes to author inputs. |
+| main | https://doi.org/10.1128/spectrum.02749-23; Complete original JATS, full Methods/Results/Discussion, Tables1–2 and all original captions. Actual local artifact: /private/tmp/cmm-round88-resources-research/wieczorek2023.xml | supports | Supports conditional yeast-associated matrix conversion with explicit recipe, denominator and causal limitations. Nominal downloaded PDF was challenge HTML and is not evidence. |
+| html | https://pmc.ncbi.nlm.nih.gov/articles/PMC10581069/; Complete original HTML cross-check of same primary article. Actual local artifact: /private/tmp/cmm-round88-resources-research/wieczorek2023.html | context_only | Same study as JATS, not independent replication. |
+| figure1 | https://doi.org/10.1128/spectrum.02749-23; Original Figure1 pixels independently visually inspected. Actual local artifact: /private/tmp/cmm-round88-resources-research/wieczorek-supp/spectrum.02749-23.f001.webp | supports | Original protease activity graph retains units per protein, arm/inoculum and24/48h differences; activity does not isolate the chromium-mobilizing cause. |
+| figure2 | https://doi.org/10.1128/spectrum.02749-23; Original Figure2 pixels independently visually inspected. Actual local artifact: /private/tmp/cmm-round88-resources-research/wieczorek-supp/spectrum.02749-23.f002.webp | supports | Original dehydrogenase graph shows source-defined enzyme activity; no metabolic necessity or viability-count inference is accepted. |
+| figure3 | https://doi.org/10.1128/spectrum.02749-23; Original Figure3 pixels independently visually inspected. Actual local artifact: /private/tmp/cmm-round88-resources-research/wieczorek-supp/spectrum.02749-23.f003.webp | supports | Original pH graph shows acidifying uninoculated feed and alkalinizing yeast arms; controls are not pH-matched. |
+| figure4 | https://doi.org/10.1128/spectrum.02749-23; Original Figure4 pixels independently visually inspected. Actual local artifact: /private/tmp/cmm-round88-resources-research/wieczorek-supp/spectrum.02749-23.f004.webp | supports | Original stacked total-Cr concentrations use g/kg across operational liquid and combined solid fractions. Higher1% yeast liquid and lower residue concentration are visible, but no common mass inventory or recovery fraction follows. Text10.31 arm conflicts with graphic. |
+| figure5 | https://doi.org/10.1128/spectrum.02749-23; Original Figure5 pixels independently visually inspected. Actual local artifact: /private/tmp/cmm-round88-resources-research/wieczorek-supp/spectrum.02749-23.f005.webp | context_only | Original short plant-assay graph is contextual; it cannot establish universal detoxification, fertilizer safety or industrial use. |
+| supp1 | https://doi.org/10.1128/spectrum.02749-23; Complete original official supplemental file1, all pages independently read/viewed. Actual local artifact: /private/tmp/cmm-round88-resources-research/wieczorek-supp/spectrum.02749-23-s0001.pdf | supports | Supplement1, two pages: full amino-acid table with nutrient/yeast controls, concentrations and nondetection cells. Added yeast extract precludes assigning all products to waste. |
+| supp2 | https://doi.org/10.1128/spectrum.02749-23; Complete original official supplemental file2, all pages independently read/viewed. Actual local artifact: /private/tmp/cmm-round88-resources-research/wieczorek-supp/spectrum.02749-23-s0002.pdf | supports | Supplement2, one page:12 liquid/residue samples, CrVI non-detected at stated liquid&lt;=1mg/L and residue&lt;=1mg/kg bounds; not zeros or proof of absent redox reaction. |
+| supp3 | https://doi.org/10.1128/spectrum.02749-23; Complete original official supplemental file3, all pages independently read/viewed. Actual local artifact: /private/tmp/cmm-round88-resources-research/wieczorek-supp/spectrum.02749-23-s0003.pdf | context_only | Supplement3a, four pages including blank final page: sequences labelled1304–1306 and February2022 email dates; not public accessions or explicit IPS21 crosswalk. |
+| supp4 | https://doi.org/10.1128/spectrum.02749-23; Complete original official supplemental file4, all pages independently read/viewed. Actual local artifact: /private/tmp/cmm-round88-resources-research/wieczorek-supp/spectrum.02749-23-s0004.pdf | context_only | Supplement3b, one-page laboratory identification: sampleC/1306 Y.lipolytica, October2021 report. No explicit IPS21-to1306 link; main2022 timing discrepancy retained. |
+| supp5 | https://doi.org/10.1128/spectrum.02749-23; Complete original official supplemental file5, all pages independently read/viewed. Actual local artifact: /private/tmp/cmm-round88-resources-research/wieczorek-supp/spectrum.02749-23-s0005.pdf | context_only | Supplemental toxicity plate photograph, one page:100mg/300mg shavings comparisons do not establish comprehensive safety or recovered-product quality. |
+| taxonomy | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=4952&amp;mode=Info; Official full Taxon4952 entry, scientific name/rank/lineage inspected. Actual local artifact: /private/tmp/cmm-round88-resources-research/ncbi4952.xml | context_only | Yarrowia lipolytica species identity is correct; it does not verify the experimental IPS21 stock. |
+| assessment | /private/tmp/cmm-round88-leather-independent/evidence-assessment.json; Independent exact original/graphic/SI assessment and artifact hashes. Actual local artifact: /private/tmp/cmm-round88-leather-independent/evidence-assessment.json | context_only | No supported current owner defect; source clarification draft independently supported. |
+| notices | /private/tmp/cmm-round88-leather-independent/notice-search.json; Actual two exact-source notice/conflict search queries and returned lead disposition. Actual local artifact: /private/tmp/cmm-round88-leather-independent/notice-search.json | context_only | No relevant correction surfaced; same-group2023 comparison is a deferred contextual lead, not accepted replication. |
+| dedup | /private/tmp/cmm-round88-leather-independent/bounded-dedup.txt; rg --hidden --no-ignore --follow across records,research,reviews,history by leather identity/DOI/IPS21. Actual local artifact: /private/tmp/cmm-round88-leather-independent/bounded-dedup.txt | context_only | Current owner/dossier and related context inspected; resource differs from wastewater sludge and chromium element. |
+| named | /private/tmp/cmm-round88-leather-independent/named-validation.json; Actual independent named check 2026-10-15T05:16:04.371203Z to 2026-10-15T05:16:07.713933Z; log /private/tmp/cmm-round88-leather-independent/named-validation.log, SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e. Actual local artifact: /private/tmp/cmm-round88-leather-independent/named-validation.json | supports | One record checked, zero failures; terminal receipt and log bytes verified. |
+| batch | /private/tmp/cmm-round88-final-gates.json; Actual four coordinator commands 2026-10-15T05:18:37.659479+00:00 to 2026-10-15T05:23:39.184991+00:00; log /private/tmp/cmm-round88-final-gates.log, SHA256 116283f127d379f64072e586b392f5346d885121a09419c4a8d13083950b7684. Actual local artifact: /private/tmp/cmm-round88-final-gates.json | supports | Exact base, worktree, four command exits, log hash and unchanged owner hash verified; no independent batch rerun claimed. |
+
+## Limits And Additional Notes
+
+- No fraction masses, common liquid/solid normalization or closed chromium inventory; concentrations do not establish recovered product yield.
+- Source arm labels, undefined degradation equation and optimum narrative conflict; recipe and inoculum token remain ambiguous.
+- Nutrient and pH confounding plus combined biomass/feed residue prevent unique protease causation or intracellular-exclusion inference.
+- Strain-number crosswalk and dates are unresolved; taxonomic species validity does not certify experimental stock.
+- CrVI nondetections are censored, not zeros or proof that no oxidation occurred.
+- Bounded correction/conflict searches are not global absence proof; related same-group evidence was not imported. No independent laboratory or industrial verification.
+- Initial unsaved draft was rejected because native inspect emitted short repository alias CMMMech in target owner_paths. The original draft and rejection are preserved externally; owner_paths.repository was normalized to canonical CultureBotAI/CMMMech before the first successful save, without changing scientific assessment or captured input hashes.
+- No owner/history/source dossier edits by this reviewer. Source clarification follow-up independently supported as separate evidence work, not a fabricated current owner defect.
+- Complete original main JATS/HTML and original graphics were accepted; nominal local mainPDF is challenge HTML and expressly excluded. All five official supplemental PDFs were inspected.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T052546Z-chromium-tanned-leather-shavings-round88-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of chromium-tanned leather shavings
+started_at: '2026-10-15T05:14:42.796513Z'
+finished_at: '2026-10-15T05:25:46.154625Z'
+reviewer:
+  identity: codex /root/round68_iron_sulfides
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer authored gersdorffite, not this resource owner/history/dossier.
+    Shared acquisition paths are disclosed; complete original text/tables, all main
+    graphics and all official supplement pages were independently assessed after native
+    inspection. No laboratory replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of laboratory yeast-associated conversion of chromium-tanned
+  leather shavings and operational chromium partitioning. Record preserves conflicting
+  source values, missing mass bases, recipe and strain boundaries without isolated
+  recovery, causal redox, universal safety or deployment claims.
+source:
+  git_revision: 661e752f00ea9ea15e48dfc41f02199dfc16e1fe
+  state: working_tree
+  inputs:
+  - path: data/records/chromium-tanned-leather-shavings.yaml
+    sha256: 1c0401c080f369e1c83721177a675018ad70c78145fc0932ce4d2163165e620d
+    role: target
+  - path: history/records/chromium-tanned-leather-shavings/2026-10-15T050839Z-codex-a4deea.yaml
+    sha256: 0ff961e57a4ea12b5366026554b93af4407a37795606d3aa036411a7a4b7fd1c
+    role: context
+  - path: research/sources/round88-resources/20261015T050922Z-source-investigation.json
+    sha256: 2050a5891fb8d77c9db518e33350ae801a874e25613af94610060c61cd790d4b
+    role: context
+  - path: research/sources/round88-resources/20261015T050922Z-source-investigation.md
+    sha256: ac5b378d81961c48e16baa749c3950b68e0a350dda2a9db257e5b6c8b0e2437f
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Whole exact maintained owner, CREATE and source dossier; full accepted
+    original and all supplements assessed.
+  selection: Assigned independent canonical target; native inspect before judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:chromium-tanned-leather-shavings
+targets:
+- target_id: cmmmech:chromium-tanned-leather-shavings
+  path: data/records/chromium-tanned-leather-shavings.yaml
+  label: Chromium-tanned leather shavings
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/chromium-tanned-leather-shavings.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/chromium-tanned-leather-shavings.yaml
+    --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual one record, zero failures; receipt and log verified.
+  target_ids:
+  - cmmmech:chromium-tanned-leather-shavings
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator gate1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed coordinator gate verified; not a duplicate reviewer execution.
+  target_ids:
+  - cmmmech:chromium-tanned-leather-shavings
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator gate2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed coordinator gate verified; not a duplicate reviewer execution.
+  target_ids:
+  - cmmmech:chromium-tanned-leather-shavings
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator gate3
+  command: uv run --locked cmmmech validate-history --base 661e752f00ea9ea15e48dfc41f02199dfc16e1fe
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed coordinator gate verified; not a duplicate reviewer execution.
+  target_ids:
+  - cmmmech:chromium-tanned-leather-shavings
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator gate4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed coordinator gate verified; not a duplicate reviewer execution.
+  target_ids:
+  - cmmmech:chromium-tanned-leather-shavings
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/chromium-tanned-leather-shavings.yaml
+  locator: 'Whole exact target captured by native inspect before judgment. Actual
+    local artifact: /private/tmp/CMMMech-expansion-round88-20261015/data/records/chromium-tanned-leather-shavings.yaml'
+  accessed_at: '2026-10-15T05:25:46.154625Z'
+  support: supports
+  summary: Frozen owner and canonical CREATE agree; inline event is separate. No reviewer
+    changes to author inputs.
+  snapshot_sha256: 1c0401c080f369e1c83721177a675018ad70c78145fc0932ce4d2163165e620d
+- evidence_id: history
+  kind: record_content
+  reference: history/records/chromium-tanned-leather-shavings/2026-10-15T050839Z-codex-a4deea.yaml
+  locator: 'Whole exact target captured by native inspect before judgment. Actual
+    local artifact: /private/tmp/CMMMech-expansion-round88-20261015/history/records/chromium-tanned-leather-shavings/2026-10-15T050839Z-codex-a4deea.yaml'
+  accessed_at: '2026-10-15T05:25:46.154625Z'
+  support: supports
+  summary: Frozen owner and canonical CREATE agree; inline event is separate. No reviewer
+    changes to author inputs.
+  snapshot_sha256: 0ff961e57a4ea12b5366026554b93af4407a37795606d3aa036411a7a4b7fd1c
+- evidence_id: main
+  kind: primary_source
+  reference: https://doi.org/10.1128/spectrum.02749-23
+  locator: 'Complete original JATS, full Methods/Results/Discussion, Tables1–2 and
+    all original captions. Actual local artifact: /private/tmp/cmm-round88-resources-research/wieczorek2023.xml'
+  accessed_at: '2026-10-15T05:25:46.154625Z'
+  support: supports
+  summary: Supports conditional yeast-associated matrix conversion with explicit recipe,
+    denominator and causal limitations. Nominal downloaded PDF was challenge HTML
+    and is not evidence.
+  snapshot_sha256: b2cd5601bafde37765af1a417962e6fc5eff9827271109038dd665d57f1d6885
+- evidence_id: html
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC10581069/
+  locator: 'Complete original HTML cross-check of same primary article. Actual local
+    artifact: /private/tmp/cmm-round88-resources-research/wieczorek2023.html'
+  accessed_at: '2026-10-15T05:25:46.154625Z'
+  support: context_only
+  summary: Same study as JATS, not independent replication.
+  snapshot_sha256: 77caebe19cb1d843d330bacc7d145b228751a52c3fb3855a8f6cb19d44691944
+- evidence_id: figure1
+  kind: primary_source
+  reference: https://doi.org/10.1128/spectrum.02749-23
+  locator: 'Original Figure1 pixels independently visually inspected. Actual local
+    artifact: /private/tmp/cmm-round88-resources-research/wieczorek-supp/spectrum.02749-23.f001.webp'
+  accessed_at: '2026-10-15T05:25:46.154625Z'
+  support: supports
+  summary: Original protease activity graph retains units per protein, arm/inoculum
+    and24/48h differences; activity does not isolate the chromium-mobilizing cause.
+  snapshot_sha256: 01e9ac5e7b21aa01583c3acc8d6423e8555a6fc761ac148a95cfe40724b0a859
+- evidence_id: figure2
+  kind: primary_source
+  reference: https://doi.org/10.1128/spectrum.02749-23
+  locator: 'Original Figure2 pixels independently visually inspected. Actual local
+    artifact: /private/tmp/cmm-round88-resources-research/wieczorek-supp/spectrum.02749-23.f002.webp'
+  accessed_at: '2026-10-15T05:25:46.154625Z'
+  support: supports
+  summary: Original dehydrogenase graph shows source-defined enzyme activity; no metabolic
+    necessity or viability-count inference is accepted.
+  snapshot_sha256: ef4b12ed097bd79dc805011db098acac1a8cd07ef31627c09b0c2c6944c25182
+- evidence_id: figure3
+  kind: primary_source
+  reference: https://doi.org/10.1128/spectrum.02749-23
+  locator: 'Original Figure3 pixels independently visually inspected. Actual local
+    artifact: /private/tmp/cmm-round88-resources-research/wieczorek-supp/spectrum.02749-23.f003.webp'
+  accessed_at: '2026-10-15T05:25:46.154625Z'
+  support: supports
+  summary: Original pH graph shows acidifying uninoculated feed and alkalinizing yeast
+    arms; controls are not pH-matched.
+  snapshot_sha256: d79a01c95b8b886f771f16424123de8fb17a12e3ef2a596af52122d030063f5d
+- evidence_id: figure4
+  kind: primary_source
+  reference: https://doi.org/10.1128/spectrum.02749-23
+  locator: 'Original Figure4 pixels independently visually inspected. Actual local
+    artifact: /private/tmp/cmm-round88-resources-research/wieczorek-supp/spectrum.02749-23.f004.webp'
+  accessed_at: '2026-10-15T05:25:46.154625Z'
+  support: supports
+  summary: Original stacked total-Cr concentrations use g/kg across operational liquid
+    and combined solid fractions. Higher1% yeast liquid and lower residue concentration
+    are visible, but no common mass inventory or recovery fraction follows. Text10.31
+    arm conflicts with graphic.
+  snapshot_sha256: fc2f92e1cdc41229a467506da8ff494f2bf763cf55ca651d6f21a24694bdc222
+- evidence_id: figure5
+  kind: primary_source
+  reference: https://doi.org/10.1128/spectrum.02749-23
+  locator: 'Original Figure5 pixels independently visually inspected. Actual local
+    artifact: /private/tmp/cmm-round88-resources-research/wieczorek-supp/spectrum.02749-23.f005.webp'
+  accessed_at: '2026-10-15T05:25:46.154625Z'
+  support: context_only
+  summary: Original short plant-assay graph is contextual; it cannot establish universal
+    detoxification, fertilizer safety or industrial use.
+  snapshot_sha256: 1bc87b768a2b54b837205133a15dc0cbbfe3525641b503e298a33052c3d8aeca
+- evidence_id: supp1
+  kind: primary_source
+  reference: https://doi.org/10.1128/spectrum.02749-23
+  locator: 'Complete original official supplemental file1, all pages independently
+    read/viewed. Actual local artifact: /private/tmp/cmm-round88-resources-research/wieczorek-supp/spectrum.02749-23-s0001.pdf'
+  accessed_at: '2026-10-15T05:25:46.154625Z'
+  support: supports
+  summary: 'Supplement1, two pages: full amino-acid table with nutrient/yeast controls,
+    concentrations and nondetection cells. Added yeast extract precludes assigning
+    all products to waste.'
+  snapshot_sha256: 9c14e07641eff61a949a5e0f56241d282db69f9f79f59789afa8defa6158ec26
+- evidence_id: supp2
+  kind: primary_source
+  reference: https://doi.org/10.1128/spectrum.02749-23
+  locator: 'Complete original official supplemental file2, all pages independently
+    read/viewed. Actual local artifact: /private/tmp/cmm-round88-resources-research/wieczorek-supp/spectrum.02749-23-s0002.pdf'
+  accessed_at: '2026-10-15T05:25:46.154625Z'
+  support: supports
+  summary: Supplement2, one page:12 liquid/residue samples, CrVI non-detected at stated
+    liquid<=1mg/L and residue<=1mg/kg bounds; not zeros or proof of absent redox reaction.
+  snapshot_sha256: bcfb2b5e0970b58e0cafd4c0fee6e539a7c374498d2b177affa31f5056e60e14
+- evidence_id: supp3
+  kind: primary_source
+  reference: https://doi.org/10.1128/spectrum.02749-23
+  locator: 'Complete original official supplemental file3, all pages independently
+    read/viewed. Actual local artifact: /private/tmp/cmm-round88-resources-research/wieczorek-supp/spectrum.02749-23-s0003.pdf'
+  accessed_at: '2026-10-15T05:25:46.154625Z'
+  support: context_only
+  summary: 'Supplement3a, four pages including blank final page: sequences labelled1304–1306
+    and February2022 email dates; not public accessions or explicit IPS21 crosswalk.'
+  snapshot_sha256: 8ad7569cfacddd894c335d577bf6be5f90a91a8bf611b2448571acc161cef586
+- evidence_id: supp4
+  kind: primary_source
+  reference: https://doi.org/10.1128/spectrum.02749-23
+  locator: 'Complete original official supplemental file4, all pages independently
+    read/viewed. Actual local artifact: /private/tmp/cmm-round88-resources-research/wieczorek-supp/spectrum.02749-23-s0004.pdf'
+  accessed_at: '2026-10-15T05:25:46.154625Z'
+  support: context_only
+  summary: 'Supplement3b, one-page laboratory identification: sampleC/1306 Y.lipolytica,
+    October2021 report. No explicit IPS21-to1306 link; main2022 timing discrepancy
+    retained.'
+  snapshot_sha256: be40da02e0813e42a5ba1a469077c47856be0eff57651608fb2478d71f8b5d1c
+- evidence_id: supp5
+  kind: primary_source
+  reference: https://doi.org/10.1128/spectrum.02749-23
+  locator: 'Complete original official supplemental file5, all pages independently
+    read/viewed. Actual local artifact: /private/tmp/cmm-round88-resources-research/wieczorek-supp/spectrum.02749-23-s0005.pdf'
+  accessed_at: '2026-10-15T05:25:46.154625Z'
+  support: context_only
+  summary: Supplemental toxicity plate photograph, one page:100mg/300mg shavings comparisons
+    do not establish comprehensive safety or recovered-product quality.
+  snapshot_sha256: 2b9433fec1fae190c1be5aab8e9c6676203906c6a035365cd26bd4e5e5648b8a
+- evidence_id: taxonomy
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=4952&mode=Info
+  locator: 'Official full Taxon4952 entry, scientific name/rank/lineage inspected.
+    Actual local artifact: /private/tmp/cmm-round88-resources-research/ncbi4952.xml'
+  accessed_at: '2026-10-15T05:25:46.154625Z'
+  support: context_only
+  summary: Yarrowia lipolytica species identity is correct; it does not verify the
+    experimental IPS21 stock.
+  snapshot_sha256: 42fe78e439be2a50c461306a274e2acee55a55320e16dd410416de88ed06787e
+- evidence_id: assessment
+  kind: search
+  reference: /private/tmp/cmm-round88-leather-independent/evidence-assessment.json
+  locator: 'Independent exact original/graphic/SI assessment and artifact hashes.
+    Actual local artifact: /private/tmp/cmm-round88-leather-independent/evidence-assessment.json'
+  accessed_at: '2026-10-15T05:25:46.154625Z'
+  support: context_only
+  summary: No supported current owner defect; source clarification draft independently
+    supported.
+  snapshot_sha256: 6153892fc684779e3d8ed64f1d2b649290793d4ece9db46ecd7b6af83cacfa92
+  search_scope: Complete original JATS/HTML, both tables, all5main graphics and all9pages
+    of5supplements; taxonomy and bounded searches only, no laboratory replication.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round88-leather-independent/notice-search.json
+  locator: 'Actual two exact-source notice/conflict search queries and returned lead
+    disposition. Actual local artifact: /private/tmp/cmm-round88-leather-independent/notice-search.json'
+  accessed_at: '2026-10-15T05:25:46.154625Z'
+  support: context_only
+  summary: No relevant correction surfaced; same-group2023 comparison is a deferred
+    contextual lead, not accepted replication.
+  snapshot_sha256: bc72cca609a6921ed625b67cb34c207db355bbe41cbdfd88a0150f58d8d3ece7
+  search_scope: Bounded web title/DOI and IPS21 chromium searches; no global absence
+    claim.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round88-leather-independent/bounded-dedup.txt
+  locator: 'rg --hidden --no-ignore --follow across records,research,reviews,history
+    by leather identity/DOI/IPS21. Actual local artifact: /private/tmp/cmm-round88-leather-independent/bounded-dedup.txt'
+  accessed_at: '2026-10-15T05:25:46.154625Z'
+  support: context_only
+  summary: Current owner/dossier and related context inspected; resource differs from
+    wastewater sludge and chromium element.
+  snapshot_sha256: 9c5720a42b543eb83c6bf0d308728eec6878873a6851ec338d4afe69731925ab
+  search_scope: Hidden/ignored files and relevant links included in four maintained
+    roots; no unrestricted filesystem/literature exhaustion claim.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round88-leather-independent/named-validation.json
+  locator: 'Actual independent named check 2026-10-15T05:16:04.371203Z to 2026-10-15T05:16:07.713933Z;
+    log /private/tmp/cmm-round88-leather-independent/named-validation.log, SHA256
+    6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e. Actual local
+    artifact: /private/tmp/cmm-round88-leather-independent/named-validation.json'
+  accessed_at: '2026-10-15T05:25:46.154625Z'
+  support: supports
+  summary: One record checked, zero failures; terminal receipt and log bytes verified.
+  snapshot_sha256: d5bcd8ce254d6c6b8614ea24f4265e27901c14ac29eb504b7ef6f7d32e1c5a6d
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round88-final-gates.json
+  locator: 'Actual four coordinator commands 2026-10-15T05:18:37.659479+00:00 to 2026-10-15T05:23:39.184991+00:00;
+    log /private/tmp/cmm-round88-final-gates.log, SHA256 116283f127d379f64072e586b392f5346d885121a09419c4a8d13083950b7684.
+    Actual local artifact: /private/tmp/cmm-round88-final-gates.json'
+  accessed_at: '2026-10-15T05:25:46.154625Z'
+  support: supports
+  summary: Exact base, worktree, four command exits, log hash and unchanged owner
+    hash verified; no independent batch rerun claimed.
+  snapshot_sha256: 8367446976122f115ed55531aa45db1ddaf8d7054b84dbca65da399bd1ae70c0
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Secondary-resource form and organism grounding
+  outcome: supported
+  summary: Wet-blue chromium-tanned leather shavings are a distinct manufacturing
+    residue, not wastewater sludge, purified collagen or elemental chromium. The source-attributed
+    composition is not mislabeled lot-specific. Taxon4952 is species-level; IPS21
+    and its SI sample mapping remain qualified.
+  target_ids:
+  - cmmmech:chromium-tanned-leather-shavings
+  evidence_ids:
+  - owner
+  - main
+  - taxonomy
+  - supp3
+  - supp4
+- assessment_id: conditions
+  area: evidence
+  topic: Culture, substrate, pretreatment and control scope
+  outcome: supported
+  summary: Living culture,100mLflask/40mLmedium,30C190rpm48h,0.1–4wt%feed,0.4/0.8mLinoculum
+    and autoclave details match the original. Final recipe/OD notation, yeast-extract
+    nutrients and pH-unmatched comparisons are retained. Chromium endpoints concern0.1/1%
+    arms only.
+  target_ids:
+  - cmmmech:chromium-tanned-leather-shavings
+  evidence_ids:
+  - owner
+  - main
+  - figure3
+- assessment_id: mechanism
+  area: evidence
+  topic: Conditional matrix conversion and causal limits
+  outcome: supported
+  summary: Enzyme activities, amino-acid changes and operational total-Cr distribution
+    support associated bioconversion. No matched pH/enzyme-inactivation controls isolate
+    proteolysis as the chromium cause; solid residue combines yeast and feed. No intracellular
+    exclusion or identified hydroxide/oxide phase is claimed.
+  target_ids:
+  - cmmmech:chromium-tanned-leather-shavings
+  evidence_ids:
+  - owner
+  - main
+  - figure1
+  - figure2
+  - figure3
+  - figure4
+  - supp1
+- assessment_id: denominators
+  area: quantity
+  topic: Mass bases, conflicting labels and nondetections
+  outcome: supported
+  summary: Figure4 concentrations are not a mass balance; source10.31g/kg arm conflicts
+    with graphic and is not silently reassigned. Table1 degradation-rate equation
+    is missing and1% values exceed4% despite optimum narrative. SI2 CrVI nondetections
+    remain censored in their stated units. No chromium recovery percentage is entered.
+  target_ids:
+  - cmmmech:chromium-tanned-leather-shavings
+  evidence_ids:
+  - owner
+  - main
+  - figure4
+  - supp2
+- assessment_id: scope
+  area: scope
+  topic: Product quality, safety and deployment
+  outcome: supported
+  summary: Short diluted-supernatant plant and plate assays do not prove universal
+    detoxification, fertilizer safety, industrial treatment or isolated chromium recovery.
+    Constituent criticality is not inherited.
+  target_ids:
+  - cmmmech:chromium-tanned-leather-shavings
+  evidence_ids:
+  - owner
+  - figure5
+  - supp5
+  - main
+- assessment_id: provenance
+  area: provenance
+  topic: Exact bytes, primary access and actual checks
+  outcome: supported
+  summary: Native inspect preceded judgment; all primary references bind actual nonempty
+    JATS/HTML/originalgraphics/PDFsupplements. Challenge mainPDF excluded. Owner/history/dossier
+    unchanged by reviewer; actual named and four coordinator gates verified.
+  target_ids:
+  - cmmmech:chromium-tanned-leather-shavings
+  evidence_ids:
+  - owner
+  - history
+  - assessment
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- No fraction masses, common liquid/solid normalization or closed chromium inventory;
+  concentrations do not establish recovered product yield.
+- Source arm labels, undefined degradation equation and optimum narrative conflict;
+  recipe and inoculum token remain ambiguous.
+- Nutrient and pH confounding plus combined biomass/feed residue prevent unique protease
+  causation or intracellular-exclusion inference.
+- Strain-number crosswalk and dates are unresolved; taxonomic species validity does
+  not certify experimental stock.
+- CrVI nondetections are censored, not zeros or proof that no oxidation occurred.
+- Bounded correction/conflict searches are not global absence proof; related same-group
+  evidence was not imported. No independent laboratory or industrial verification.
+notes:
+- Initial unsaved draft was rejected because native inspect emitted short repository
+  alias CMMMech in target owner_paths. The original draft and rejection are preserved
+  externally; owner_paths.repository was normalized to canonical CultureBotAI/CMMMech
+  before the first successful save, without changing scientific assessment or captured
+  input hashes.
+- No owner/history/source dossier edits by this reviewer. Source clarification follow-up
+  independently supported as separate evidence work, not a fabricated current owner
+  defect.
+- Complete original main JATS/HTML and original graphics were accepted; nominal local
+  mainPDF is challenge HTML and expressly excluded. All five official supplemental
+  PDFs were inspected.
+```

@@ -8,13 +8,18 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 417 material records.
+The catalogue currently contains 422 material records.
 
-The [latest curation report](research/ingests/round87-frontier-20261015.md) links
+The [latest curation report](research/ingests/round88-frontier-20261015.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Anhydrite](data/records/anhydrite.yaml) | Proposed product in disputed microbial gypsum dehydration | Independent negative experiment and unverified structural-water uptake |
+| [Chromium-tanned leather shavings](data/records/chromium-tanned-leather-shavings.yaml) | Yeast-associated matrix conversion and chromium partitioning | Conflicting assay bases and no isolated chromium product |
+| [Gersdorffite](data/records/gersdorffite.yaml) | Crystallographic identity under current mineral nomenclature | Historical mixed-feed leaching does not resolve the modern species |
+| [Gypsum](data/records/gypsum.yaml) | Substrate in disputed microbial dehydration experiments | Shares evidence with anhydrite; no independent replication from two records |
+| [Wulfenite](data/records/wulfenite.yaml) | Natural mineral identity and abiotic sulfidization | Aqueous molybdenum assay is not isolated product recovery |
 | [Alabandite](data/records/alabandite.yaml) | Bacterial biomass flotation of a characterized mixed ore | Mineral fractions are not recovery yields; no demonstrated overall improvement |
 | [Secondary aluminium dross](data/records/secondary-aluminium-dross.yaml) | Abiotic roasting and caustic extraction of real plant residue | Conflicting recipes and a solid-balance estimate; no isolated alumina yield |
 | [Simonkolleite](data/records/simonkolleite.yaml) | Abiotic synthesis from zinc metal and thermal transformation | Purchased feed, conflicting run descriptions and no recovered-zinc yield |

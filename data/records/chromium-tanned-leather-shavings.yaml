@@ -1,0 +1,117 @@
+id: cmmmech:chromium-tanned-leather-shavings
+name: Chromium-tanned leather shavings
+material_kind: secondary_resource
+description: Chromium-bearing collagenous shavings generated during leather manufacture after chrome tanning,
+  represented here by wet-blue tannery waste from Poland. This processing residue is distinct from tannery
+  wastewater-treatment sludge, tanning liquors, elemental chromium and purified collagen. The accepted
+  laboratory evidence concerns yeast-associated matrix bioconversion and chromium partitioning, not an
+  isolated chromium product or industrial deployment. Constituent criticality is not inherited.
+sources:
+- id: wieczorek2023
+  title: Dorota Wieczorek, Dorota Gendaszewska, Katarzyna Miśkiewicz, Anna Słubik and Katarzyna Ławińska
+    (2023). Biotransformation of protein-rich waste by Yarrowia lipolytica IPS21 to high-value products—amino
+    acid supernatants. Microbiology Spectrum 11(5):e02749-23. DOI 10.1128/spectrum.02749-23; PMID 37707427;
+    PMC10581069. Complete original JATS/HTML, Tables 1–2, Figures 1–5 and all five supplemental PDFs inspected;
+    the nominal local main-PDF download was HTML and is not evidence.
+  url: https://doi.org/10.1128/spectrum.02749-23
+  accessed_on: '2026-10-15'
+- id: ncbi4952
+  title: 'NCBI Taxonomy 4952: Yarrowia lipolytica, species. Current official taxonomy XML verifies the
+    species label, not the identity or performance of the experimental IPS21 stock.'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=4952&mode=Info
+  accessed_on: '2026-10-15'
+mechanisms:
+- id: ips21_matrix_bioconversion_and_chromium_partitioning
+  name: Yeast-associated matrix bioconversion and chromium partitioning
+  process: other
+  microbial: true
+  description: Living Yarrowia lipolytica IPS21 cultures were associated with proteolytic activity, increased
+    soluble amino acids, changing pH and altered total-chromium concentrations in operational liquid and
+    combined biomass/residue fractions. These observations support conditional bioconversion of a chromium-bearing
+    waste matrix. They do not establish purified chromium recovery, a closed chromium extraction yield,
+    intracellular chromium exclusion or a demonstrated redox mechanism.
+  context: Wieczorek et al. obtained wet-blue chrome-tanned shavings from a Polish tannery at source-reported
+    51°29′37.8″N, 21°08′43.1″E. Reported moisture was 15% and aqueous-extract pH 3.09; the listed 4.4
+    ± 0.2% chromium(III) oxide, ash and nitrogen values are attributed to earlier literature rather than
+    clearly documented lot-specific characterization. Particle sizes were reported as 1–5 mm. Source-designated
+    IPS21 came from the institute collection, originally isolated from contaminated soil near the former
+    BORUTA dye factory. Laboratory assays used 100 mL flasks with 40 mL sterile modified YPG medium and
+    0.1–4% (wt/wt) shavings, with 0.4 or 0.8 mL inoculum, 30°C, 190 rpm and 48 h. Initial pH was set to
+    7.07 before autoclaving at 121°C for 20 min. Yeast extract supplies nutrients independently of the
+    shavings. The abstract gives 15 g/L yeast extract and 5 g/L NaCl, whereas the stock-medium method
+    gives 2.5 g/L NaCl and agar; the final liquid recipe is not fully reconciled. The printed inoculum
+    OD600 token is 1,000, with no independently verified viable-cell count. Yeast-only, medium-only and
+    uninoculated shavings comparisons appear for the relevant endpoints; comparisons are not pH-matched.
+    Total-Cr experiments concern 0.1% and 1% feeds, not the 4% arm. Reported endpoint summaries use n=3.
+    No industrial treatment trial is established.
+  organisms:
+  - id: NCBITaxon:4952
+    label: Yarrowia lipolytica
+  evidence:
+  - source_ref: wieczorek2023
+    supports: support
+    explanation: Methods Biological material, Waste material, Biotransformation process and Determination
+      of the total chromium; Tables 1–2 and Figures 1–4 support laboratory culture-associated transformation.
+      Protease activity and amino-acid concentrations increased in selected culture/feed arms; uninoculated
+      shavings acidified the medium while corresponding yeast treatments became more alkaline. Figure
+      4 shows a larger supernatant total-Cr concentration and a smaller combined solid-residue contribution
+      for the 1% yeast treatment than for the 1% uninoculated treatment. These operational endpoints support
+      conditional redistribution, not an independently quantified isolated product.
+  - source_ref: wieczorek2023
+    supports: partial
+    explanation: Figure 4 stacks quantities labelled total chromium in g/kg for liquid and solid fractions.
+      Methods digest 0.1 g or 0.1 mL and dilute to 25 mL but do not clearly define a common mass basis,
+      fraction masses, liquid density or complete starting/ending inventory. Stacking these concentrations
+      cannot establish an elemental mass balance or recovery fraction. The Results assign 10.31 g/kg to
+      the 0.1% yeast sample, whereas the plotted value near 10 belongs to the 1% uninoculated supernatant.
+      No exact extraction percentage or corrected numerical assignment is adopted.
+  - source_ref: wieczorek2023
+    supports: partial
+    explanation: The measured solid residue explicitly combines biomass and remaining shavings. The discussion
+      infers little intracellular chromium, but the assay does not separate intracellular uptake from
+      surface sorption, retained feed or abiotic precipitation. Yeast-associated pH shifts also change
+      chromium chemistry; no pH-matched sterile or enzyme-inactivated comparison establishes the contribution
+      of proteases versus alkalinization or other culture products. Proposed chromium hydroxide/oxide
+      chemistry is not direct phase identification.
+  - source_ref: wieczorek2023
+    supports: partial
+    explanation: Supplemental file 2 reports Cr(VI) as not detected in medium, 0.1% and 1% shavings supernatants
+      and corresponding residues, with stated bounds ≤1 mg/L for liquids and ≤1 mg/kg for residues. These
+      censored results are retained as nondetections, not zeros, proof that oxidation never occurred,
+      or a complete chromium-speciation balance. They do not extend to the 4% arm.
+  - source_ref: wieczorek2023
+    supports: partial
+    explanation: Table 1 lists larger 48 h source-labelled degradation rates at 1% shavings than at 4%,
+      contrary to the Results/abstract narrative favoring 4%. Methods say this rate was calculated from
+      biomass concentration but give no explicit equation separating yeast from residual feed; it is not
+      a chromium yield or a demonstrated collagen mass balance. Added yeast extract and the yeast-only
+      amino-acid response prevent attributing all soluble products to the shavings. No universal optimum
+      is accepted.
+  - source_ref: wieczorek2023
+    supports: context_only
+    explanation: Supplemental files 3a and 3b contain sequences for laboratory samples 1304–1306 and a
+      species report assigning sample C/1306 to Yarrowia lipolytica. They do not supply a public IPS21
+      accession or an explicit sample-number-to-IPS21 crosswalk. The identification report is dated October
+      2021, while main text describes sequencing in 2022; February 2022 email printouts accompany the
+      sequences. IPS21 remains the paper-reported strain designation, distinct from an independently verified
+      culture accession.
+  - source_ref: wieczorek2023
+    supports: context_only
+    explanation: Figure 5 and the separate short plant assay evaluate diluted supernatants, while supplemental
+      file 5 depicts plate growth around shavings. Neither establishes comprehensive detoxification, safe
+      fertilizer use, industrial deployment or recovered chromium product quality. Those conclusions are
+      not adopted.
+  - source_ref: ncbi4952
+    supports: context_only
+    explanation: The current official species entry resolves Yarrowia lipolytica and taxon 4952. It does
+      not validate the experimental stock, sequence provenance, matrix-specific mechanism or source-level
+      strain identity.
+curation_history:
+- timestamp: '2026-10-15T05:08:31.055559Z'
+  curator: Codex (GPT-6; codex)
+  action: CREATE
+  summary: Created a distinct leather-shavings secondary-resource record from the complete Wieczorek2023
+    original and supplements, retaining conditional yeast-associated matrix conversion, chromium partitioning,
+    censored Cr(VI), source discrepancies and control limits without a recovery-yield or deployment claim.
+history_refs:
+- history/records/chromium-tanned-leather-shavings/2026-10-15T050839Z-codex-a4deea.yaml

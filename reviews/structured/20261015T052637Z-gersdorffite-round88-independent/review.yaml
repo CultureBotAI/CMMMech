@@ -1,0 +1,348 @@
+schema_version: 1.0.0
+review_id: 20261015T052637Z-gersdorffite-round88-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of gersdorffite
+started_at: '2026-10-15T05:15:47.435138Z'
+finished_at: '2026-10-15T05:26:37.949643Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer authored gypsum and anhydrite, not this gersdorffite
+    owner/history. Curator is codex /root/round68_iron_sulfides. Shared acquired originals
+    were independently read and graphics inspected after native capture; no laboratory
+    replication or owner edit.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of the current P2₁3 NiAsS mineral identity and narrowly
+  contextual historical mixed-feed leaching. Modern polymorph boundaries, source composition
+  and null/causal limits are preserved.
+source:
+  git_revision: 661e752f00ea9ea15e48dfc41f02199dfc16e1fe
+  state: working_tree
+  inputs:
+  - path: data/records/gersdorffite.yaml
+    sha256: 72097c8cd9cced0ac3565e12c7babbc9493f248ee0cecc90c26d72e37c463fa4
+    role: target
+  - path: history/records/gersdorffite/2026-10-15T051112Z-codex-f4666d.yaml
+    sha256: b22117aabfb9b39a900bd4fbfde4e3f2c250644abdec09280db5a586e148e868
+    role: context
+  - path: research/sources/round88-sulfides/20261015T051400Z-source-investigation.json
+    sha256: 08b7d9d485f9919685748630005d957e87e0c72aa65acfa82a869e6af86bab93
+    role: context
+  - path: research/sources/round88-sulfides/20261015T051400Z-source-investigation.md
+    sha256: 7d36d4489abd64072fb3267351925f031e05b510529927aeef51ab8d016505ea
+    role: context
+scope:
+  description: Whole maintained identity-only record, canonical CREATE and source
+    dossier; full accepted mineral primary and relevant historical-thesis assay sections.
+  selection: Assigned exact canonical owner inspected before judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:gersdorffite
+targets:
+- target_id: cmmmech:gersdorffite
+  path: data/records/gersdorffite.yaml
+  label: Gersdorffite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/gersdorffite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/gersdorffite.yaml --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Actual independent command completed: one record, zero failures.'
+  target_ids:
+  - cmmmech:gersdorffite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch command 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt and retained log independently verified; no reviewer
+    rerun claimed.
+  target_ids:
+  - cmmmech:gersdorffite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt and retained log independently verified; no reviewer
+    rerun claimed.
+  target_ids:
+  - cmmmech:gersdorffite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch command 3
+  command: uv run --locked cmmmech validate-history --base 661e752f00ea9ea15e48dfc41f02199dfc16e1fe
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt and retained log independently verified; no reviewer
+    rerun claimed.
+  target_ids:
+  - cmmmech:gersdorffite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt and retained log independently verified; no reviewer
+    rerun claimed.
+  target_ids:
+  - cmmmech:gersdorffite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/gersdorffite.yaml
+  locator: 'Complete exact owner after native inspection. Artifact: /private/tmp/CMMMech-expansion-round88-20261015/data/records/gersdorffite.yaml'
+  accessed_at: '2026-10-15T05:26:37.949643Z'
+  support: supports
+  summary: Identity-only accepted species with explicitly contextual mixed-feed assays;
+    no mechanism or criticality assertion.
+  snapshot_sha256: 72097c8cd9cced0ac3565e12c7babbc9493f248ee0cecc90c26d72e37c463fa4
+- evidence_id: history
+  kind: record_content
+  reference: history/records/gersdorffite/2026-10-15T051112Z-codex-f4666d.yaml
+  locator: 'Canonical CREATE and attached inline/history_ref provenance. Artifact:
+    /private/tmp/CMMMech-expansion-round88-20261015/history/records/gersdorffite/2026-10-15T051112Z-codex-f4666d.yaml'
+  accessed_at: '2026-10-15T05:26:37.949643Z'
+  support: supports
+  summary: Actual GPT-6/codex actor, target and creation scope agree; distinct inline
+    timestamp is later than sidecar creation, not invented earlier activity.
+  snapshot_sha256: b22117aabfb9b39a900bd4fbfde4e3f2c250644abdec09280db5a586e148e868
+- evidence_id: mauro
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-33-717-2021
+  locator: 'Complete ten-page original; Section2, Section3.1.1, all Figures1–6 and
+    Tables1–5 visually checked, especially Table3 and the P2₁3 discussion on printed721.
+    Artifact: /private/tmp/cmm-round88-sulfides-research/mauro2021.pdf'
+  accessed_at: '2026-10-15T05:26:37.949643Z'
+  support: supports
+  summary: Natural zoned crystals, microprobe, single-crystal refinement and reported
+    powder diagnostic reflections establish the current ordered polymorph; geology
+    is interpreted, not laboratory microbial synthesis.
+  snapshot_sha256: 5b79970fc98298215cfb9a4900db99601c263d1c6ba024fff44974d6265060a7
+- evidence_id: cif
+  kind: primary_source
+  reference: https://ejm.copernicus.org/articles/33/717/2021/ejm-33-717-2021-supplement.zip
+  locator: 'Actual official ZIP member, space-group/symmetry loop, unit-cell dimensions,
+    site occupancy, refinement and experimental metadata. Artifact: /private/tmp/cmm-round88-sulfides-research/mauro2021-si/gersdorffite.cif'
+  accessed_at: '2026-10-15T05:26:37.949643Z'
+  support: supports
+  summary: Cubic group198 P2₁3 and a5.6968(7) agree. Temperature296(2) versus table293(2),
+    measured reflections526 versus535 and small refined-coordinate differences are
+    source-reporting limitations; record imports none of those conflicting values.
+  snapshot_sha256: db335f43a0407f3a64b6d7a0829d30b59734269addffc297377df1c302f93fbc
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://ejm.copernicus.org/articles/33/717/2021/ejm-33-717-2021-supplement.zip
+  locator: 'Genuine complete ZIP containing gersdorffite.cif, tetrahedrite-(Fe).cif
+    and title page. Artifact: /private/tmp/cmm-round88-sulfides-research/mauro2021-supplement-attempt.zip'
+  accessed_at: '2026-10-15T05:26:37.949643Z'
+  support: supports
+  summary: Accepted gersdorffite member belongs to the official supplement, despite
+    the original local filename saying attempt.
+  snapshot_sha256: be6588e1c2fe486933b3c9445b434fca30636e13058c82a107fdac22c585a933
+- evidence_id: cnmnc
+  kind: authority
+  reference: https://doi.org/10.5194/ejm-34-463-2022
+  locator: 'Newsletter69 Section3, printed467/PDF5; original page visually inspected
+    and current publisher text cross-checked. Artifact: /private/tmp/cmm-round88-sulfides-research/cnmnc2022.pdf'
+  accessed_at: '2026-10-15T05:26:37.949643Z'
+  support: supports
+  summary: Renaming explicitly distinguishes gersdorffite-P2₁3 from Pa3 paragersdorffite
+    and Pca2₁ orthogersdorffite.
+  snapshot_sha256: fcb93f5aab27b41269040fef7aaf14552c20e164183badbc8820380afed00998
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'September2026 original page82 row plus status definitions; exact row visually
+    inspected. Artifact: /private/tmp/cmm-round88-sulfides-research/ima-2026-09.pdf'
+  accessed_at: '2026-10-15T05:26:37.949643Z'
+  support: supports
+  summary: NiAsS, Rn2022 special-procedure renaming, without an invented approval
+    accession.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: jaatinen
+  kind: primary_source
+  reference: https://trepo.tuni.fi/bitstream/123456789/20695/4/jaatinen.pdf
+  locator: 'Selected complete GFC scope: printed27 Table6.2; Sections6.1.5,6.2.2,6.2.4,6.3,7.6.2,7.7–7.8,8.2/8.4;
+    all Figures7.27–7.31 and GFC Appendix3 row on PDF103 visually checked. Other thesis
+    arms were not curated. Artifact: /private/tmp/cmm-round88-sulfides-research/jaatinen-thesis.pdf'
+  accessed_at: '2026-10-15T05:26:37.949643Z'
+  support: supports
+  summary: Inherited30.6% older-name gersdorffite has no current polymorph test. Mixed
+    concentrate, chemical controls, variable pH and low culture activity justify contextualization
+    only; figure trends do not establish a consistent microbial enhancement or species-specific
+    dissolution.
+  snapshot_sha256: 22c7ace7e454af7cd5a9c3d1282980f7a7ae792b47e1f9dada6c2f4cf34066ef
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round88-sulfides/20261015T051400Z-source-investigation.json
+  locator: 'Complete source assessment and artifact inventory; acquisition limits
+    and deferred Wakeman original. Artifact: /private/tmp/CMMMech-expansion-round88-20261015/research/sources/round88-sulfides/20261015T051400Z-source-investigation.json'
+  accessed_at: '2026-10-15T05:26:37.949643Z'
+  support: supports
+  summary: Current owner sources, original byte paths and explicit scientific limits
+    agree; no unavailable journal methods imported.
+  snapshot_sha256: 08b7d9d485f9919685748630005d957e87e0c72aa65acfa82a869e6af86bab93
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round88-gersdorffite-independent/named-validation.log
+  locator: 'Independent actual named validation terminal exit0. Artifact: /private/tmp/cmm-round88-gersdorffite-independent/named-validation.log'
+  accessed_at: '2026-10-15T05:26:37.949643Z'
+  support: supports
+  summary: Checked one record; zero failures.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round88-final-gates.json
+  locator: 'All FOUR actual coordinator commands; 2026-10-15T05:18:37.659479+00:00
+    to 2026-10-15T05:23:39.184991+00:00; log /private/tmp/cmm-round88-final-gates.log
+    SHA256 116283f127d379f64072e586b392f5346d885121a09419c4a8d13083950b7684. Artifact:
+    /private/tmp/cmm-round88-final-gates.json'
+  accessed_at: '2026-10-15T05:26:37.949643Z'
+  support: supports
+  summary: Receipt/log, exact base/worktree and unchanged target input verified; reviewer
+    did not rerun the coordinator batch.
+  snapshot_sha256: 8367446976122f115ed55531aa45db1ddaf8d7054b84dbca65da399bd1ae70c0
+- evidence_id: notices
+  kind: search
+  reference: Bounded live primary-source and local lineage searches
+  locator: 'Exact query/date/scope and local hidden/ignored-inclusive dedup capture.
+    Artifact: /private/tmp/cmm-round88-gersdorffite-independent/bounded-search.json'
+  accessed_at: '2026-10-15T05:26:37.949643Z'
+  support: context_only
+  summary: Current nomenclature and publisher original checked; absence of an additional
+    correction is bounded to returned results.
+  snapshot_sha256: 38ea95e9546c41eda3073a356613c534a84b65586ee4682ac17002d9e473eeb3
+  search_scope: Three exact DOI/nomenclature/thesis queries, first returned results
+    and primary pages, plus hidden/ignored-inclusive followed-link search across maintained
+    records, research, reviews and history; exact query strings and local artifact
+    are retained. No global absence claim.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Modern mineral species versus older polymorph names
+  outcome: supported
+  summary: The P2₁3 crystal is the current gersdorffite species; Pa3 and Pca2₁ names
+    are separate species. IMA and original2022 nomenclature agree. The ordered natural
+    crystal is supported by the main refinement, reported powder diagnostic reflections
+    and CIF; no bulk ideal-purity assertion.
+  target_ids:
+  - cmmmech:gersdorffite
+  evidence_ids:
+  - owner
+  - mauro
+  - cif
+  - cnmnc
+  - ima
+- assessment_id: composition
+  area: quantity
+  topic: Cell and chemical quantities
+  outcome: supported
+  summary: a5.6968(7) angstrom is a measured/refined cell parameter, not a yield.
+    Table1 and maps establish Ni–Fe/Co substitution and Sb/Bi zoning. Refinement occupancy
+    and total mineral fraction are not equated; table/CIF reporting differences are
+    disclosed and excluded from owner values.
+  target_ids:
+  - cmmmech:gersdorffite
+  evidence_ids:
+  - owner
+  - mauro
+  - cif
+- assessment_id: mechanism
+  area: evidence
+  topic: Identity-only scope and negative/contextual culture assay
+  outcome: supported
+  summary: 'No mechanism block is appropriate: Mauro characterizes natural crystals
+    and hypothesizes geological origins. Jaatinen mixed-feed solution data do not
+    identify which modern polymorph dissolved. Low activity and lack of consistent
+    enhancement are accurately preserved rather than converted to a biological species
+    mechanism.'
+  target_ids:
+  - cmmmech:gersdorffite
+  evidence_ids:
+  - owner
+  - mauro
+  - jaatinen
+- assessment_id: limits
+  area: scope
+  topic: Controls, deployment and criticality
+  outcome: supported
+  summary: Historical GFC experiments used1% mixed concentrate, inoculum, chemical
+    controls and differing pH/supplementation. Multiple metal hosts and source-assigned30.6%
+    phase forbid assigning extracted metals to this mineral. No industrial recovery
+    or criticality inherited from Ni or Co.
+  target_ids:
+  - cmmmech:gersdorffite
+  evidence_ids:
+  - owner
+  - jaatinen
+  - dossier
+- assessment_id: provenance
+  area: provenance
+  topic: Immutable exact owner and actual checks
+  outcome: supported
+  summary: Native inspect preceded judgment; unchanged owner, CREATE and dossier hashes
+    verified. Primary/authority rows bind actual nonempty originals. Independent named
+    check and all four completed batch commands passed. No record or history edit
+    by reviewer.
+  target_ids:
+  - cmmmech:gersdorffite
+  evidence_ids:
+  - owner
+  - history
+  - named
+  - batch
+  - notices
+findings: []
+actions: []
+limitations:
+- Historical mixed-feed mineralogy does not resolve today's gersdorffite polymorph;
+  unavailable Wakeman journal original is not accepted as inspected evidence.
+- Geological low-temperature/multistage origin is interpretive, not an experimentally
+  demonstrated microbial formation pathway.
+- Main/CIF small reporting differences do not alter the accepted space group/cell
+  dimension, but conflicting temperature/reflection values are excluded.
+- Only the cited GFC-related thesis scope was assessed; unrelated gold/NFC process
+  yields are not transferred.
+- Bounded notices/searches and documentary inspection are not a complete literature
+  census or experimental replication.
+notes:
+- No owner/history changes by reviewer.
+- Initial target capture used a URL-form repository and mineral kind; before saving,
+  targets were normalized to the canonical repository and maintained kind and recaptured.
+  Both captures and all unchanged source hashes are retained externally; no overwritten
+  native review. Two unsaved search-evidence format drafts were rejected before persistence
+  and retained externally; the supported search literal and explicit bounded search_scope
+  were supplied; scientific assessment and captured hashes unchanged.

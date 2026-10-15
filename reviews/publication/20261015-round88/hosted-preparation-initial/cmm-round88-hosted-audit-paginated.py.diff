@@ -1,0 +1,11 @@
+--- cmm-round88-hosted-audit-paginated.py
++++ cmm-round88-hosted-audit-paginated.py
+@@ -158,7 +158,7 @@
+             return subprocess.check_output(['git', '-C', commit['worktree'], 'rev-parse', tree + ':' + path], text=True, timeout=55).strip()
+         report['verified_hosted_files'] = validate_paginated_files(data('pr_files'), commit['files'], reviewed_blob)
+         report['file_page_lengths'] = [len(page) for page in data('pr_files')]
+-        report['pagination_correction'] = 'Round87 reuses the round70 pagination correction documented in issue224. Exact complete path set and every hosted blob are bound to the exact reviewed tree, independent of branch retention; no round88 first100-file failure is asserted.'
++        report['pagination_correction'] = 'Round88 reuses the round70 pagination correction documented in issue224. Exact complete path set and every hosted blob are bound to the exact reviewed tree, independent of branch retention; no round88 first100-file failure is asserted.'
+         require(review['id'] == posted['id'] and review['commit_id'] == topic and review['state'] == 'COMMENTED' and review['body'] == posted['body'] and review['body'].rstrip() == review_file.read_text().rstrip(), 'Live comment review differs from exact reviewed text/head')
+         require(isinstance(checks, list), 'Unexpected required-check response shape')
+         if not checks:

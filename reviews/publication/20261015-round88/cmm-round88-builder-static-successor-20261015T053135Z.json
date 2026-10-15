@@ -1,0 +1,46 @@
+{
+  "recorded_at": "2026-10-15T05:31:35.327549+00:00",
+  "reviewer": "codex /root/round68_phosphates",
+  "independence": "Root changed builder; reviewer only reads exact correction and generated report. No scientific curation or tests changed.",
+  "scope": "Final generated report and narrow source correction; no publication mutation executed by reviewer.",
+  "passed": true,
+  "unresolved_corrective_findings": 0,
+  "findings": [
+    {
+      "finding_id": "OP1",
+      "issue_key": "round88-manifest-heading-stale-cohort",
+      "severity": "minor",
+      "status": "resolved",
+      "external_issue": "https://github.com/CultureBotAI/CMMMech/issues/305",
+      "previous_occurrence": {
+        "path": "/private/tmp/cmm-round88-builder-static-initial-20261015T052255Z.json",
+        "sha256": "203c4a597e44b9bc7c826a1b2b8a3344f220a72e6a66584eff3dfa1e1f5b1fe2",
+        "bytes": 981
+      },
+      "correction": "One heading literal changed from Round87/three to Round88/five. Independently compared exact source snapshot and final generated Markdown/JSON cohort. No scientific owner/history change."
+    }
+  ],
+  "initial_builder": {
+    "path": "/private/tmp/cmm-round88-builder-static-initial-20261015T052255Z-build-manifest.py",
+    "sha256": "b8403830767ab047c73e39f0279eebf058fb03bee57d36d03f6648348b74d65b",
+    "bytes": 6719
+  },
+  "current_builder": {
+    "path": "/private/tmp/cmm-round88-build-manifest.py",
+    "sha256": "c44a95ccac9c941af2ab175fa5f40d3e5b5d7cd460b5ae9f3cf12ab2ff28dfd0",
+    "bytes": 6718
+  },
+  "generated_report": [
+    {
+      "path": "/private/tmp/CMMMech-expansion-round88-20261015/research/ingests/round88-frontier-20261015.json",
+      "sha256": "da5320834df5dd2cf18c1911ede11a0f4c17ba018cfc70e05a6e90dcd7e367d7",
+      "bytes": 7174
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round88-20261015/research/ingests/round88-frontier-20261015.md",
+      "sha256": "1d92e7015dfecf06b7a745e2c53e06f1fa3f16a145d31264f0929b51729f6601",
+      "bytes": 5574
+    }
+  ],
+  "diff": "--- /private/tmp/cmm-round88-builder-static-initial-20261015T052255Z-build-manifest.py\n+++ /private/tmp/cmm-round88-build-manifest.py\n@@ -31,7 +31,7 @@\n limits='This is a bounded source investigation, not an exhausted frontier. Laboratory experiments and industrial feedstock origin do not establish deployment. Solution partitioning and phase assignments do not establish isolated product recovery. Unavailable gypsum-study supplements, conflicting source protocols and historical mineral nomenclature remain explicit. A high-resolution independent review corrected a transcribed wulfenite Figure 3 dose label; the initial observation and explicit successor are retained. Raw primary texts and graphics remain outside Git with source hashes. Hosted PR review, committed squash preflight, native queue admission, actual merge, branch cleanup and fresh-main verification are subsequent publication gates, not claimed completed here.'\n m=dict(recorded_at=datetime.now(timezone.utc).isoformat(),worktree=str(w),branch=cfg['branch'],base=cfg['base'],state='working_tree',counts=cfg['counts'],records=rows,source_reports=reports,issues=cfg['issues'],selection=selection,validation=validation,integration=integration,limits=limits)\n p=w/'research/ingests/round88-frontier-20261015.json'; assert not p.exists(); p.write_text(json.dumps(m,indent=2)+'\\n')\n-lines=['# Round87: three reviewed material records','',f\"Actual UTC: {m['recorded_at']}\",'',selection,'','| Record | Independent scientific review | Curation history |','|---|---|---|']\n+lines=['# Round88: five reviewed material records','',f\"Actual UTC: {m['recorded_at']}\",'',selection,'','| Record | Independent scientific review | Curation history |','|---|---|---|']\n for x in rows:\n     lines.append(f'| [{x[\"name\"]}](../../{x[\"path\"]}) | [Markdown](../../{x[\"review\"][\"markdown\"]}) \u00b7 [YAML](../../{x[\"review\"][\"path\"]}) | '+' \u00b7 '.join(f'[session](../../{h})' for h in x['history_refs'])+' |')\n lines+=['',validation,f\"Measured coverage: {cfg['counts']['covered_records']}/{cfg['counts']['record_count']} current records; {cfg['counts']['history_count']} history sessions; {cfg['counts']['structured_review_count']} native reviews; {cfg['counts']['review_base_count']} available review bases. [Receipts and logs](round88-checks-20261015/).\"]\n"
+}
