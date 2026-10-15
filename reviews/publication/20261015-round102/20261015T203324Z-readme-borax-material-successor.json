@@ -1,0 +1,45 @@
+{
+  "review_id": "20261015T203324Z-readme-borax-material-successor",
+  "recorded_at": "2026-10-15T20:33:24.607453+00:00",
+  "reviewer": "codex /root/round100_pentagonite (GPT-6)",
+  "base": "1c2a3bb043c4bd267a3d911d0e77b029c742689e",
+  "scope": "Exact README cell correction and unchanged owner/generated Borax page; presentation disposition, not self scientific acceptance.",
+  "inputs": [
+    {
+      "path": "README.md",
+      "sha256": "4c4c8b6b66d11e44b7b14f6b1179eae39b31f6c6e82638346ce4c906cc45fd80"
+    },
+    {
+      "path": "data/records/borax.yaml",
+      "sha256": "2c369db87f4ddbd873bf31e916d71d2b55dd02259133ee9432077886dd09e761"
+    },
+    {
+      "path": "pages/materials/borax.html",
+      "sha256": "5e78847e4a2c44548be23c2a44258c71d8c9559ce0df061947a2073da58b04a0"
+    }
+  ],
+  "previous_occurrence": {
+    "review_id": "20261015T203020Z-readme-borax-material-initial",
+    "path": "reviews/publication/20261015-round102/20261015T203020Z-readme-borax-material-initial.json",
+    "sha256": "e52e9e8160a233fd7db0157784640cbb6d68cd1d8ab6361c97058fb87ed7c6fd"
+  },
+  "finding": {
+    "issue_key": "CMMMech:publication:borax-readme-material-form",
+    "issue_url": "https://github.com/CultureBotAI/CMMMech/issues/380",
+    "severity": "minor",
+    "status": "resolved",
+    "reason": "Corrected cell explicitly identifies laboratory-recrystallized borax. This matches frozen owner material preparation and2024 Methods; owner/page bytes unchanged."
+  },
+  "checks": [
+    {
+      "name": "Exact corrected-cell and original owner/page hash check",
+      "status": "passed",
+      "command": "Independent Python text assertion and SHA256 comparison against initial audit"
+    }
+  ],
+  "verdict": "pass",
+  "limitations": [
+    "No new record scientific acceptance, DOI acquisition or publication readiness assertion.",
+    "No tests required for this one-cell prose correction; renderer changes are reviewed separately."
+  ]
+}

@@ -50,7 +50,7 @@ PROCESS_LABELS = {
     "biomineralization": "Biomineralization",
     "redox_transformation": "Redox Transformation",
     "biosorption": "Biosorption",
-    "separation": "Bioseparation",
+    "separation": "Separation",
     "recovery": "Recovery",
     "other": "Other Transformations",
 }
@@ -60,7 +60,7 @@ PROCESS_BLURBS = {
     "biomineralization": "Biological precipitation, crystallization, and synthesis of mineral phases or nanoparticles.",
     "redox_transformation": "Oxidation-reduction reactions that alter metal valence states; microbial involvement is specified in each record.",
     "biosorption": "Passive binding and retention of metal ions by microbial cell walls and biomass.",
-    "separation": "Selective partition or affinity purification using microbial biomolecules (e.g. lanmodulin).",
+    "separation": "Selective partitioning by biological or abiotic processes. See each record for microbial involvement, experimental conditions and recovery limits.",
     "recovery": "Integrated microbial processing schemes yielding concentrated or isolated materials.",
     "other": "Complex community transformations, multi-stage processes, or unclassified interactions.",
 }

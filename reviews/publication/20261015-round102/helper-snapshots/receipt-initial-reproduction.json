@@ -1,0 +1,44 @@
+{
+  "recorded_at": "2026-10-15T20:30:43.056654+00:00",
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round102-helper-config.json",
+      "sha256": "ef961e5d6476cf0e9d317dfde9331f5362e5e6a331fefc1566b45eaa19669717"
+    },
+    {
+      "path": "/private/tmp/cmm-round102-final-gates.py",
+      "sha256": "5814f4dd5ec9002847e8f01e0aa759992cc88004dd795ceacfcf18999bbbb238"
+    },
+    {
+      "path": "/private/tmp/cmm-round102-review-check-final.py",
+      "sha256": "4fab8f5bd2df77c5cf09e5b9cb5157d798e4327ca9b776e3ad77333c578bc56d"
+    },
+    {
+      "path": "/private/tmp/cmm-round102-review-bases.py",
+      "sha256": "a3675560fea6b75f942f35d0276f0cd2df1b04d5cf092704c9652c9b19cb65f5"
+    },
+    {
+      "path": "/private/tmp/cmm-round102-isolated-coverage.py",
+      "sha256": "eadfdb3a154e892d147a05618fcbc0b7a51922eb1f8d6f590817fc8ae4ca9e8c"
+    },
+    {
+      "path": "/private/tmp/cmm-round102-isolated-verification.py",
+      "sha256": "94f1fc379602c715e53acc9d9df1e27525540e12e887719a6a3b2da8393994a2"
+    },
+    {
+      "path": "/private/tmp/cmm-round102-preservation-before-commit-check.py",
+      "sha256": "f723e545ffdd0ec62668ea3d404c7b6a1651201bacd9681f52d03adca3a450a6"
+    }
+  ],
+  "reproduction_scope": "Only isolated temporary paths created below cmm-round102-helper-audit; exact pathlib existence-check/write_text sequence from final-gates and preservation-before-commit helpers. No project or live receipt overwritten.",
+  "dangling_symlink": {
+    "assert_not_exists_passed": true,
+    "symlink_retained": true,
+    "unexpected_target_created": true,
+    "target_text": "{\"receipt\":\"test\"}\n"
+  },
+  "racing_creator": {
+    "checked_absent_then_created_before_write": true,
+    "prior_creator_content_overwritten": true
+  }
+}

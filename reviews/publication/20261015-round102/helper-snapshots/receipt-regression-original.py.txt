@@ -1,0 +1,29 @@
+from pathlib import Path
+from datetime import datetime,timezone
+from unittest.mock import patch
+import ast,hashlib,json,tempfile
+T=Path('/private/tmp');rows=[]
+def expect_refusal(call):
+ try:call()
+ except FileExistsError:return
+ raise AssertionError('Expected occupied output refusal')
+for name in ('final-gates','preservation-before-commit-check'):
+ p=T/f'cmm-round102-{name}.py';tree=ast.parse(p.read_text());functions=[n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name=='write_receipt'];assert len(functions)==1
+ namespace={'Path':Path,'json':json};exec(compile(ast.Module(body=functions,type_ignores=[]),str(p),'exec'),namespace);write=namespace['write_receipt']
+ with tempfile.TemporaryDirectory(prefix='cmm-round102-receipt-test-',dir=T) as dirname:
+  d=Path(dirname);value={'verified':'new content'};fresh=d/'fresh.json';write(fresh,value);assert json.loads(fresh.read_text())==value;rows.append({'helper':str(p),'case':'fresh receipt','passed':True})
+  occupied=d/'occupied.json';occupied.write_text('preserve');expect_refusal(lambda:write(occupied,value));assert occupied.read_text()=='preserve';rows.append({'helper':str(p),'case':'existing regular file preserved','passed':True})
+  target=d/'target.txt';target.write_text('target preserved');link=d/'live-link.json';link.symlink_to(target);expect_refusal(lambda:write(link,value));assert link.is_symlink() and target.read_text()=='target preserved';rows.append({'helper':str(p),'case':'existing symlink and target preserved','passed':True})
+  absent=d/'absent.txt';dangling=d/'dangling.json';dangling.symlink_to(absent);expect_refusal(lambda:write(dangling,value));assert dangling.is_symlink() and not absent.exists();rows.append({'helper':str(p),'case':'dangling symlink refused without creating target','passed':True})
+  race=d/'race.json';original=Path.open;injected=[]
+  def competing_open(self,mode='r',*args,**kwargs):
+   if self==race and not injected:
+    injected.append(True)
+    with original(self,'x') as f:f.write('competitor preserved')
+   return original(self,mode,*args,**kwargs)
+  with patch.object(Path,'open',competing_open):expect_refusal(lambda:write(race,value))
+  assert race.read_text()=='competitor preserved';rows.append({'helper':str(p),'case':'competing creator between check and open preserved','passed':True})
+result={'recorded_at':datetime.now(timezone.utc).isoformat(),'passed':all(r['passed'] for r in rows),'cases':rows,'scope':'Actual AST-extracted write_receipt functions from the corrected helpers; only isolated temporary files. Competing creation injected at the file-open boundary. No corpus or live publication receipts touched.','inputs':[{'path':str(T/f'cmm-round102-{n}.py'),'sha256':hashlib.sha256((T/f'cmm-round102-{n}.py').read_bytes()).hexdigest()} for n in ('final-gates','preservation-before-commit-check')]}
+o=T/'cmm-round102-receipt-regression.json'
+with o.open('x') as f:json.dump(result,f,indent=2);f.write('\n')
+print(json.dumps(result,indent=2))

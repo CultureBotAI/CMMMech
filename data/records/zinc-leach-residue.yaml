@@ -1,0 +1,165 @@
+id: cmmmech:zinc-leach-residue
+name: Zinc leach residue
+material_kind: secondary_resource
+description: >-
+  Mixed residual solids from acid leaching in zinc hydrometallurgy, including
+  zinc retained in ferrite, sulfide and other specimen-dependent phases. The
+  accepted studies used separate industrial residues from Hunan and Yunnan,
+  China; their compositions and treatment outcomes are not interchangeable.
+  This processing-generated resource is distinct from elemental zinc, a pure
+  zinc-ferrite phase, zinc calcine before leaching, and zinc-purification waste.
+  Two laboratory abiotic treatments are documented. No criticality designation,
+  microbial mechanism, isolated zinc-product yield or deployment of these
+  particular experimental protocols is inferred.
+sources:
+  - id: zhang2024
+    title: >-
+      Zhang, Wang, Liu, Min, Lin and Ke (2024). Research on Cu-assisted leaching
+      process of zinc leaching residue and zinc calcine. The Chinese Journal
+      of Process Engineering 24(5):558-565. DOI 10.12034/j.issn.1009-606X.223327.
+      Complete eight-page original in Chinese with English abstract; Sections
+      2-4, Figures 1-8 and Table 1. Only the ZLR specimen is this record's feed.
+    url: https://jproeng.ipe.ac.cn/EN/Y2024/V24/I5/558
+    accessed_on: '2026-10-15'
+  - id: wang2026
+    title: >-
+      Wang, Tan, Yu, Fan, Hu and Wang (2026). Assessment of zinc migration
+      behavior and toxicity characteristics in redox smelting of zinc leaching
+      residue. Transactions of Nonferrous Metals Society of China
+      36(6):1921-1933. DOI 10.1016/S1003-6326(26)67069-0. Complete 13-page
+      original, Sections 2-4, Tables 1-2 and Figures 1-12.
+    url: https://doi.org/10.1016/S1003-6326(26)67069-0
+    accessed_on: '2026-10-15'
+mechanisms:
+  - id: copper_assisted_acid_leaching
+    name: Abiotic copper-assisted acid leaching of a Hunan zinc leach residue
+    process: separation
+    microbial: false
+    description: >-
+      Adding metallic copper increased aqueous zinc extraction relative to the
+      same sulfuric-acid treatment without copper. The authors interpret this
+      as reductive dissolution of zinc ferrite; the industrial-feed experiment
+      measures solution concentrations and residual solids, not a purified
+      zinc product or an independently established molecular rate-limiting step.
+    context: >-
+      Sections 2.1-2.3 used a residue from an unnamed Hunan zinc smelter,
+      reported as 17.30 wt.% Zn and 25.20 wt.% Fe, with zinc ferrite and minor
+      lead sulfate assigned by XRD. Its D10/D50/D90 were 4.39/23.77/60.99
+      micrometres; the separate calcine's sieving protocol is not transferred
+      to this feed. Reagent copper powder was 200 mesh and 99.7% purity.
+      Batch tests used 4 mL sulfuric-acid solution in 50 mL centrifuge tubes,
+      perforated film allowing air contact, 240 rpm and 60 min. The matched
+      comparison used 60 degrees C, 100 g/L H2SO4, 20 mL/g liquid-to-residue
+      ratio, and copper addition 21.60% of residue mass or no copper. Products
+      were centrifuged at 5000 rpm for 2 min; solids were washed three times
+      with 10 mL water and freeze-dried for 12 h. Solution metals were assayed
+      by ICP-OES. No organism, biomass or biological reagent was used.
+    evidence:
+      - source_ref: zhang2024
+        supports: support
+        explanation: >-
+          Section 3.2/Figures 1-3 and Conclusions report zinc extraction of
+          92.82% with copper versus 32.82% without it under the matched
+          conditions, calculated from solution zinc relative to initial
+          feed zinc. The corresponding residual-solid rates were 25.20%
+          and 62.34%. Equation 2 subtracts an estimated unreacted copper
+          contribution from weighed solids, so these are source-defined
+          copper-corrected residual rates, not a complete waste or metal
+          balance. Copper changes the aqueous metal inventory as well as
+          zinc dissolution; the source does not isolate a zinc product.
+      - source_ref: zhang2024
+        supports: partial
+        explanation: >-
+          Figure 4 and Table 1 retain a reagent-demand tradeoff: 90.47%
+          zinc extraction is reported at 100 g/L acid and 15 mL/g, versus
+          96.30% at 200 g/L and 30 mL/g, each at 60 degrees C for 60 min
+          with 21.60% copper. Higher extraction is not evidence of less
+          reagent use. Section 2.3 records pH below zero as zero; plotted
+          zero values are censored, not exact pH measurements. Replicate
+          counts and uncertainty are not supplied for these curves. The
+          galvanic/valence explanation in Section 3.1 invokes a separate
+          zinc-ferrite study; no such molecular mechanism is independently
+          established for every phase in this mixed residue. The separate
+          calcine results and proposed industrial implementation are excluded.
+  - id: anthracite_air_smelting
+    name: Abiotic anthracite-assisted redox smelting of a Yunnan zinc leach residue
+    process: redox_transformation
+    microbial: false
+    description: >-
+      Laboratory heating with anthracite in flowing air altered zinc-bearing
+      phases and reduced the zinc inventory remaining in slag. XRD and
+      spatial EPMA observations support changing sulfide, oxide and silicate
+      assemblages. The proposed oxidation, dissolution into molten slag and
+      subsequent reduction/volatilization pathway is an interpretation of
+      these observations; collected zinc vapor or dust was not quantified.
+    context: >-
+      Sections 2.1-2.4/Table 1 used a different Yunnan smelter residue with
+      14.51 wt.% Zn, 21.34 wt.% Fe and 8.70 wt.% S. Figure 1 identifies zinc
+      ferrite, zinc sulfide, calcium sulfate and quartz; reported chemical
+      extraction fractions refer to the allocation of total Zn, not bulk
+      mineral mass fractions. Dried residue was ground below 74 micrometres
+      and mixed with anthracite, whose Table 2 fixed-carbon and ash contents
+      were 59.42 and 30.58 wt.%. The clearly cross-referenced condition is
+      17.5 wt.% anthracite relative to residue, 1623 K and a 90 min hold.
+      A laboratory furnace heated cylindrical crucibles at 10 K/min under
+      dry air at 300 mL/min, followed by cooling to 1273 K within 5 min and
+      water quenching to 298 K. The separate zero-minute series still includes
+      heating to the target temperature. No biological treatment was used.
+    evidence:
+      - source_ref: wang2026
+        supports: support
+        explanation: >-
+          Sections 3.1 and 3.3/Figures 3 and 12 report 99.13% zinc
+          'recovery' and 0.22 wt.% residual slag Zn at 17.5 wt.% anthracite,
+          1623 K and 90 min. Equation 2 actually calculates the fraction
+          of initial-mixture Zn no longer in slag. It is not an isolated
+          product yield: off-gas, condensate purity and a closed zinc balance
+          are not supplied. Figures 4-5 and 8-11 retain heterogeneous
+          residual sulfides and spatially different upper/lower slag
+          assemblages, rather than demonstrating complete conversion to
+          one pure phase.
+      - source_ref: wang2026
+        supports: support
+        explanation: >-
+          Sections 2.3 and 3.1/Figure 3d report Zn extract concentrations
+          of 960.6 mg/L for raw residue and 29.9 mg/L for the stated
+          17.5 wt.% anthracite treatment. The author-described TCLP assay
+          used ground slag below 150 micrometres, acetic acid at pH
+          2.88 +/- 0.05, 20 mL/g, 296 +/- 1 K, 18 h, 30 rpm, 0.22-micrometre
+          filtration and ICP-OES. Lower Zn extractability in this test
+          does not establish zero toxicity, compliance with an independently
+          verified regulatory limit, long-term environmental stability or
+          recovery of other metals. The 15 wt.% anthracite arm still gave
+          338.4 mg/L Zn extract, retaining a less favorable outcome.
+      - source_ref: wang2026
+        supports: partial
+        explanation: >-
+          Section 2.2 lists target temperatures 1473-1623 K, whereas the
+          introduction and Figure 6 use 1523-1673 K. Section 3.2 assigns
+          10.41% Zn inventory loss to 1473 K; Figure 7a instead places
+          10.41% at 1323 K and 25.22% at 1473 K. These discrepancies are
+          not silently reconciled. Equation 1 and its definition of liquid
+          assay Ci as wt.% leave the chemical-phase normalization unclear.
+          Reported arithmetic means and error bars lack an explicit
+          replicate count and uncertainty definition. Detailed phase
+          fractions and the full temperature series therefore remain qualified.
+      - source_ref: wang2026
+        supports: partial
+        explanation: >-
+          Section 3.3 proposes desulfurization followed by 1373 K smelting
+          and claims an iron concentrate, but the inspected methods,
+          figures and tables do not separately document that complete
+          sequence or product characterization. Its cited references
+          concern other feeds. This proposal is not accepted as a second
+          demonstrated recovery route. Suggested gas-phase reactions and
+          oxygen-potential effects lack direct off-gas or oxygen-profile
+          measurements here, and general statements about industrial
+          furnaces do not deploy this particular laboratory protocol.
+
+history_refs:
+  - history/records/zinc-leach-residue/2026-10-15T202455Z-codex-bbd011.yaml
+curation_history:
+  - timestamp: "2026-10-15T20:24:56.474346+00:00"
+    curator: Codex GPT-6
+    action: CREATE
+    summary: "Create zinc leach residue as a secondary resource with two separately scoped laboratory abiotic treatments. Preserve source-specific conditions, contradictory results and recovery limits."

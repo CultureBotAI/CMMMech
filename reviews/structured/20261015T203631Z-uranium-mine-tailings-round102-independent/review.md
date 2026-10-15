@@ -1,0 +1,485 @@
+# Independent scientific review of Uranium mine tailings
+
+- Review: 20261015T203631Z-uranium-mine-tailings-round102-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T20:27:52.462539Z
+- Finished UTC: 2026-10-15T20:36:31.438540Z
+- Reviewer: codex /root/round100_vanadium (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified native-community-associated solubilization of distinct tailings and a separate abiotic resin screen are supported while contradictory uranium, timing and feed-provenance evidence remains explicit.
+
+## Scope And Provenance
+
+Entire frozen owner, canonical CREATE and inline history, full accessible claim-bearing primary evidence, original figures/tables/supplements, identity authorities, source dossier and bounded correction/counterevidence/duplicate searches.
+
+Selection: Parent-assigned independent scientific review after author freeze.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1c2a3bb043c4bd267a3d911d0e77b029c742689e.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:uranium-mine-tailings | data/records/uranium-mine-tailings.yaml | maintained | Uranium mine tailings |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent primary-evidence assessment | passed | True | cmmmech:uranium-mine-tailings | Exact frozen owner and accessible claim-bearing primary methods, results, figures, tables and supplements assessed with source limitations preserved. |
+| Independent named record validation | passed | True | cmmmech:uranium-mine-tailings | Three frozen resource owners checked; zero failed. This owner is one of those targets. |
+| Completed coordinator batch check 1 | passed | True | cmmmech:uranium-mine-tailings | Verified actual terminal receipt, trusted base, matching log hash and unchanged owner; not independently rerun by this reviewer. |
+| Completed coordinator batch check 2 | passed | True | cmmmech:uranium-mine-tailings | Verified actual terminal receipt, trusted base, matching log hash and unchanged owner; not independently rerun by this reviewer. |
+| Completed coordinator batch check 3 | passed | True | cmmmech:uranium-mine-tailings | Verified actual terminal receipt, trusted base, matching log hash and unchanged owner; not independently rerun by this reviewer. |
+| Completed coordinator batch check 4 | passed | True | cmmmech:uranium-mine-tailings | Verified actual terminal receipt, trusted base, matching log hash and unchanged owner; not independently rerun by this reviewer. |
+
+## Scientific And Domain Assessments
+
+### Tailings identity, community and source specimens
+
+identity: supported. Targets: cmmmech:uranium-mine-tailings.
+
+The owner represents mixed secondary solids and an unresolved native community.
+
+DT and RAT came from water-covered tailings management areas at decommissioned Elliot Lake sites. Site abbreviation expansions and exact old processing flowsheets are not inferred. Quartz-rich mixed feeds differ in composition and size. Fresh DT alone supplied the 22-week enrichment of 7 g in 100 mL at 200 rpm; introductory genera are not promoted into isolate identifiers.
+
+### Laboratory stages and controls
+
+scope: supported. Targets: cmmmech:uranium-mine-tailings.
+
+Flasks, stirred reactors and growth-tube assays are kept distinct.
+
+Flasks used 90 g, 200 mL inoculum plus 400 mL medium, pH 2 and 20/30/40 C; methods describing 35 days conflict with eight-week tables. Reactors used 290 g, 250 mL culture in 3 L, 30 C, 900 rpm, pH 2 readjustment and 12.5 L/min air. RAT aeration began after day-2 oxygen depletion; DT received air initially. Duplicate reactors differ from analytical triplicates. MPN counts of at least one million iron oxidizers per gram and pyrite-peak decline support biological compatibility, not species causation or a matched sterile-leaching comparison.
+
+### Source conflicts and solution-based outcomes
+
+quantity: supported. Targets: cmmmech:uranium-mine-tailings.
+
+The qualified values and unresolved endpoints are faithful to the originals.
+
+Table 7 week-4 LREE/HREE values are 5.8%/54% for RAT and 14%/58% for DT, not isolated yields. Main Table 7 DT uranium at 53–89% conflicts with Figure S2c near 50%. Page-12 RAT prose assigning 42% to U and 85% to Th reverses Table 5. The 30-day, week-4 and 35-day descriptions remain separate. Bulk sulfur and mineral estimates are not forced into a closed balance or treated as measured uranium valence.
+
+### Abiotic resin removal and product boundary
+
+quantity: supported. Targets: cmmmech:uranium-mine-tailings.
+
+Contacted-liquid depletion is correctly separated from whole-process recovery.
+
+Twenty resins were screened at 1 g/100 mL, 24 h and 150 rpm, with resin-water and solution-only blanks; six were then tested at 0.5–2.5 g/100 mL. Table 9 values agree: TP272 removes 94% Sc, 99% U and 4% each LREE/HREE; SP112 removes 81% LREE and 65% HREE. Section 2.3 describes a stirred-tank composite but Section 3.3 refers to flask collection. No sequential column, elution, regeneration or purified product was demonstrated. Broad claims of no thorium affinity cannot override the nonzero resin-specific Table 9 values.
+
+### Criticality, mechanism and industrial scale
+
+scope: supported. Targets: cmmmech:uranium-mine-tailings.
+
+Source provenance does not imply industrial recovery or criticality.
+
+No constituent criticality designation is inherited. A biological culture is present, but acidic chemistry, sample differences and missing sterile controls prevent attribution of a quantitative microbial increment. The resin mechanism remains abiotic separation.
+
+### Revision, provenance and review independence
+
+provenance: supported. Targets: cmmmech:uranium-mine-tailings.
+
+Frozen working changes, independent scope and actual executions are explicit.
+
+Native inspect preceded judgment. Owner, history, paired dossier and schema hashes were rechecked at final drafting. No scientific owner edit was made by this reviewer. Named validation was independently run; four whole-repository checks were included only after verifying the coordinator terminal receipt and log hash. No acceptance was assigned to the reviewer own pascoite/navajoite records.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/uranium-mine-tailings.yaml; Entire frozen owner captured by native inspect before judgment; exact SHA rechecked before final drafting. | supports | Identity, measurements, study boundaries and limitations agree with the primary evidence assessed. |
+| history | history/records/uranium-mine-tailings/2026-10-15T202329Z-codex-11a0c2.yaml; Canonical CREATE event, inline history and linked history_refs independently read. | supports | Actual GPT-6 curator, target, timestamp and described additions agree. Canonical and inline events remain distinct. |
+| dossier | research/sources/round102-crust/20261015T202506Z-source-investigation.md; Paired source-investigation JSON/Markdown, acquisition receipts, checksums, prior reuse and access limits. | supports | Curator provenance is explicit and does not constitute independent replication or acceptance. |
+| named | uv run --locked cmmmech validate data/records/zinc-leach-residue.yaml data/records/uranium-mine-tailings.yaml data/records/carbonatite-associated-rare-earth-ore.yaml; /private/tmp/cmm-round102-vanadium-research/independent-reviews/named-validation.log | supports | Independently executed named validation checked all three assigned resources with zero failures. |
+| search | Independent bounded DOI/title correction, retraction and duplicate searches; /private/tmp/cmm-round102-vanadium-research/independent-reviews/search-observations.json; /private/tmp/cmm-round102-vanadium-research/independent-reviews/dedup.json | context_only | No affecting formal notice surfaced in the bounded returned sets. Source conflicts are preserved. Exact queries, primary URLs and raw-output hashes are retained externally. |
+| reynier | https://doi.org/10.3390/min11030302; Complete 21-page publisher original; Sections 2.1-2.3/3.1-3.5, Tables 2-9 and Figures 1-8; all pages text read and visual contact sheets inspected. Tables5/7/9 independently compared to prose. | supports | June 2012 DT/RAT sampling, DT enrichment, flask and duplicate reactor arms, matched-condition gaps and separate resin-screen denominators agree with the record. |
+| si | https://mdpi-res.com/d_attachment/minerals/minerals-11-00302/article_deploy/minerals-11-00302-s001.pdf; Complete two-page supplement, all eight panels of Figures S1/S2 visually inspected at individual-page size. | partial | The DT uranium panel S2c stays near 50% rather than Table 7 increase53–89%. REE time courses and reactor variability support bounded grouped fractions; exact missing data are not reconstructed. |
+| batch | /private/tmp/cmm-round102-final-gates.json; Completed coordinator receipt; /private/tmp/cmm-round102-final-gates.log SHA256 5ee1c9e4474da08bc2b3ea0ff0316ffb5f9f5861ce2efcca816f9f3238a95b85 | supports | Four actual terminal zero exits, exact base, unchanged reviewed owners and log hash verified. The coordinator executed these suites; review persistence follows them. |
+
+## Limits And Additional Notes
+
+- The main/SI uranium contradiction, RATTh/U prose reversal, durations and resin-feed provenance remain unresolved; no corrected uranium yield is invented.
+- Matched sterile acid/medium controls, sequence-resolved community and full phase/element balances are unavailable. Growth tubes are not leach controls.
+- Resin desorption, purity, regeneration and a sequential integrated flowsheet were future work. Solution removal does not establish recovered products.
+- The current publisher PDF update link indicates version 2; no earlier original binary was compared in this review.
+- Source-evidence follow-up: https://github.com/CultureBotAI/CMMMech/issues/378. The draft was independently checked; no owner defect or experimental replication is claimed.
+- Native inspect began at the recorded start; final drafting timestamps and source hashes are actual. No supported corrective owner finding was identified or suppressed.
+- Original PDFs, XML, assets and official identifier responses were acquired by the authors and independently inspected by this reviewer. Current bounded web correction and metadata searches and named validation were independently executed. Acquisition is not experimental replication.
+- The coordinator source-gap issue drafts were independently assessed as evidence priorities rather than defects in deliberately qualified records. Carbonatite calculation-unit clarification was additionally recommended. No author contact or Git/GitHub mutation was performed by this reviewer.
+- This review does not claim native-review checks before persistence, exhaustive literature absence, raw experimental replication or universal industrial performance. Coordinator full-suite executions are attributed explicitly.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T203631Z-uranium-mine-tailings-round102-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Uranium mine tailings
+started_at: '2026-10-15T20:27:52.462539Z'
+finished_at: '2026-10-15T20:36:31.438540Z'
+reviewer:
+  identity: codex /root/round100_vanadium
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: A different resource-curation agent authored this owner. I authored
+    pascoite/navajoite and independently assessed the frozen resource, primary article
+    and supplement without editing them.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified native-community-associated solubilization of distinct tailings
+  and a separate abiotic resin screen are supported while contradictory uranium, timing
+  and feed-provenance evidence remains explicit.
+source:
+  git_revision: 1c2a3bb043c4bd267a3d911d0e77b029c742689e
+  state: working_tree
+  inputs:
+  - path: data/records/uranium-mine-tailings.yaml
+    sha256: a217692da8148f706ce40260f18f1cd83d56b01e60eb3f3e21ba01c52535dfca
+    role: target
+  - path: history/records/uranium-mine-tailings/2026-10-15T202329Z-codex-11a0c2.yaml
+    sha256: bc091f6d5274fa7750c2a75e8742994b5ad350a15f790cf8056d2cdff6b212d1
+    role: context
+  - path: research/sources/round102-crust/20261015T202506Z-source-investigation.json
+    sha256: 0a9c5e9f82bc054387461ea501b5b63ab0f0797d56ac21bc66d812e1c3b4d7a0
+    role: context
+  - path: research/sources/round102-crust/20261015T202506Z-source-investigation.md
+    sha256: 9bbe1ccdb19b648548c93f841687b86a54caf259f3a8d5922f1799f30d6ef886
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire frozen owner, canonical CREATE and inline history, full accessible
+    claim-bearing primary evidence, original figures/tables/supplements, identity
+    authorities, source dossier and bounded correction/counterevidence/duplicate searches.
+  selection: Parent-assigned independent scientific review after author freeze.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:uranium-mine-tailings
+targets:
+- target_id: cmmmech:uranium-mine-tailings
+  path: data/records/uranium-mine-tailings.yaml
+  label: Uranium mine tailings
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/uranium-mine-tailings.yaml
+    role: maintained_record
+checks:
+- check_id: science
+  name: Independent primary-evidence assessment
+  required: true
+  status: passed
+  summary: Exact frozen owner and accessible claim-bearing primary methods, results,
+    figures, tables and supplements assessed with source limitations preserved.
+  target_ids:
+  - cmmmech:uranium-mine-tailings
+  evidence_ids:
+  - owner
+  - history
+  - search
+- check_id: named
+  name: Independent named record validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/zinc-leach-residue.yaml data/records/uranium-mine-tailings.yaml
+    data/records/carbonatite-associated-rare-earth-ore.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Three frozen resource owners checked; zero failed. This owner is one of
+    those targets.
+  target_ids:
+  - cmmmech:uranium-mine-tailings
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch check 1
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual terminal receipt, trusted base, matching log hash and unchanged
+    owner; not independently rerun by this reviewer.
+  target_ids:
+  - cmmmech:uranium-mine-tailings
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch check 2
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual terminal receipt, trusted base, matching log hash and unchanged
+    owner; not independently rerun by this reviewer.
+  target_ids:
+  - cmmmech:uranium-mine-tailings
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch check 3
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base 1c2a3bb043c4bd267a3d911d0e77b029c742689e
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual terminal receipt, trusted base, matching log hash and unchanged
+    owner; not independently rerun by this reviewer.
+  target_ids:
+  - cmmmech:uranium-mine-tailings
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch check 4
+  required: true
+  status: passed
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual terminal receipt, trusted base, matching log hash and unchanged
+    owner; not independently rerun by this reviewer.
+  target_ids:
+  - cmmmech:uranium-mine-tailings
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/uranium-mine-tailings.yaml
+  locator: Entire frozen owner captured by native inspect before judgment; exact SHA
+    rechecked before final drafting.
+  accessed_at: '2026-10-15T20:36:31.438540Z'
+  support: supports
+  summary: Identity, measurements, study boundaries and limitations agree with the
+    primary evidence assessed.
+  snapshot_sha256: a217692da8148f706ce40260f18f1cd83d56b01e60eb3f3e21ba01c52535dfca
+- evidence_id: history
+  kind: record_content
+  reference: history/records/uranium-mine-tailings/2026-10-15T202329Z-codex-11a0c2.yaml
+  locator: Canonical CREATE event, inline history and linked history_refs independently
+    read.
+  accessed_at: '2026-10-15T20:36:31.438540Z'
+  support: supports
+  summary: Actual GPT-6 curator, target, timestamp and described additions agree.
+    Canonical and inline events remain distinct.
+  snapshot_sha256: bc091f6d5274fa7750c2a75e8742994b5ad350a15f790cf8056d2cdff6b212d1
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round102-crust/20261015T202506Z-source-investigation.md
+  locator: Paired source-investigation JSON/Markdown, acquisition receipts, checksums,
+    prior reuse and access limits.
+  accessed_at: '2026-10-15T20:36:31.438540Z'
+  support: supports
+  summary: Curator provenance is explicit and does not constitute independent replication
+    or acceptance.
+  snapshot_sha256: 9bbe1ccdb19b648548c93f841687b86a54caf259f3a8d5922f1799f30d6ef886
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/zinc-leach-residue.yaml
+    data/records/uranium-mine-tailings.yaml data/records/carbonatite-associated-rare-earth-ore.yaml
+  locator: /private/tmp/cmm-round102-vanadium-research/independent-reviews/named-validation.log
+  accessed_at: '2026-10-15T20:36:31.438540Z'
+  support: supports
+  summary: Independently executed named validation checked all three assigned resources
+    with zero failures.
+  snapshot_sha256: 10c82c02ccbb2c9d0b1dd25497ab97be593452ac7d5d9b18fe4b18777cbf7058
+- evidence_id: search
+  kind: search
+  reference: Independent bounded DOI/title correction, retraction and duplicate searches
+  locator: /private/tmp/cmm-round102-vanadium-research/independent-reviews/search-observations.json;
+    /private/tmp/cmm-round102-vanadium-research/independent-reviews/dedup.json
+  accessed_at: '2026-10-15T20:36:31.438540Z'
+  support: context_only
+  summary: No affecting formal notice surfaced in the bounded returned sets. Source
+    conflicts are preserved. Exact queries, primary URLs and raw-output hashes are
+    retained externally.
+  snapshot_sha256: 3cb23f8546bf17a70126eb73d274c115053c0b85b5187a58612a8acd5a940eda
+  search_scope: First returned web result sets, no exhaustive pagination. rg --no-ignore
+    --hidden --follow covered data/research/reviews/history/docs plus the two exact
+    raw-source roots and all261 issue title/body entries in the supplied snapshot.
+    Author transitive historical raw-search receipts were separately inspected, not
+    independently rerun. Issue comments and machine-wide files were outside this absence
+    boundary.
+- evidence_id: reynier
+  kind: primary_source
+  reference: https://doi.org/10.3390/min11030302
+  locator: Complete 21-page publisher original; Sections 2.1-2.3/3.1-3.5, Tables 2-9
+    and Figures 1-8; all pages text read and visual contact sheets inspected. Tables5/7/9
+    independently compared to prose.
+  accessed_at: '2026-10-15T20:36:31.438540Z'
+  support: supports
+  summary: June 2012 DT/RAT sampling, DT enrichment, flask and duplicate reactor arms,
+    matched-condition gaps and separate resin-screen denominators agree with the record.
+  snapshot_sha256: 1e8f6866e947ca8cc3dd2542a78ff91757bee5881e6e9af14c0edcfe5828c0b4
+- evidence_id: si
+  kind: primary_source
+  reference: https://mdpi-res.com/d_attachment/minerals/minerals-11-00302/article_deploy/minerals-11-00302-s001.pdf
+  locator: Complete two-page supplement, all eight panels of Figures S1/S2 visually
+    inspected at individual-page size.
+  accessed_at: '2026-10-15T20:36:31.438540Z'
+  support: partial
+  summary: The DT uranium panel S2c stays near 50% rather than Table 7 increase53–89%.
+    REE time courses and reactor variability support bounded grouped fractions; exact
+    missing data are not reconstructed.
+  snapshot_sha256: 5f2684076ee1b7b163310ae26c4b333f1203690c375d68be76209186f050d653
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round102-final-gates.json
+  locator: Completed coordinator receipt; /private/tmp/cmm-round102-final-gates.log
+    SHA256 5ee1c9e4474da08bc2b3ea0ff0316ffb5f9f5861ce2efcca816f9f3238a95b85
+  accessed_at: '2026-10-15T20:36:31.438540Z'
+  support: supports
+  summary: Four actual terminal zero exits, exact base, unchanged reviewed owners
+    and log hash verified. The coordinator executed these suites; review persistence
+    follows them.
+  snapshot_sha256: 27bacebde96bb1b572897eb3ca5ed83263195f774c2871a4d734f18a2d5d46fe
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Tailings identity, community and source specimens
+  outcome: supported
+  summary: The owner represents mixed secondary solids and an unresolved native community.
+  details: DT and RAT came from water-covered tailings management areas at decommissioned
+    Elliot Lake sites. Site abbreviation expansions and exact old processing flowsheets
+    are not inferred. Quartz-rich mixed feeds differ in composition and size. Fresh
+    DT alone supplied the 22-week enrichment of 7 g in 100 mL at 200 rpm; introductory
+    genera are not promoted into isolate identifiers.
+  target_ids:
+  - cmmmech:uranium-mine-tailings
+  evidence_ids:
+  - owner
+  - reynier
+- assessment_id: conditions
+  area: scope
+  topic: Laboratory stages and controls
+  outcome: supported
+  summary: Flasks, stirred reactors and growth-tube assays are kept distinct.
+  details: Flasks used 90 g, 200 mL inoculum plus 400 mL medium, pH 2 and 20/30/40
+    C; methods describing 35 days conflict with eight-week tables. Reactors used 290
+    g, 250 mL culture in 3 L, 30 C, 900 rpm, pH 2 readjustment and 12.5 L/min air.
+    RAT aeration began after day-2 oxygen depletion; DT received air initially. Duplicate
+    reactors differ from analytical triplicates. MPN counts of at least one million
+    iron oxidizers per gram and pyrite-peak decline support biological compatibility,
+    not species causation or a matched sterile-leaching comparison.
+  target_ids:
+  - cmmmech:uranium-mine-tailings
+  evidence_ids:
+  - owner
+  - reynier
+- assessment_id: conflicts
+  area: quantity
+  topic: Source conflicts and solution-based outcomes
+  outcome: supported
+  summary: The qualified values and unresolved endpoints are faithful to the originals.
+  details: Table 7 week-4 LREE/HREE values are 5.8%/54% for RAT and 14%/58% for DT,
+    not isolated yields. Main Table 7 DT uranium at 53–89% conflicts with Figure S2c
+    near 50%. Page-12 RAT prose assigning 42% to U and 85% to Th reverses Table 5.
+    The 30-day, week-4 and 35-day descriptions remain separate. Bulk sulfur and mineral
+    estimates are not forced into a closed balance or treated as measured uranium
+    valence.
+  target_ids:
+  - cmmmech:uranium-mine-tailings
+  evidence_ids:
+  - owner
+  - reynier
+  - si
+- assessment_id: resin
+  area: quantity
+  topic: Abiotic resin removal and product boundary
+  outcome: supported
+  summary: Contacted-liquid depletion is correctly separated from whole-process recovery.
+  details: 'Twenty resins were screened at 1 g/100 mL, 24 h and 150 rpm, with resin-water
+    and solution-only blanks; six were then tested at 0.5–2.5 g/100 mL. Table 9 values
+    agree: TP272 removes 94% Sc, 99% U and 4% each LREE/HREE; SP112 removes 81% LREE
+    and 65% HREE. Section 2.3 describes a stirred-tank composite but Section 3.3 refers
+    to flask collection. No sequential column, elution, regeneration or purified product
+    was demonstrated. Broad claims of no thorium affinity cannot override the nonzero
+    resin-specific Table 9 values.'
+  target_ids:
+  - cmmmech:uranium-mine-tailings
+  evidence_ids:
+  - owner
+  - reynier
+- assessment_id: scope
+  area: scope
+  topic: Criticality, mechanism and industrial scale
+  outcome: supported
+  summary: Source provenance does not imply industrial recovery or criticality.
+  details: No constituent criticality designation is inherited. A biological culture
+    is present, but acidic chemistry, sample differences and missing sterile controls
+    prevent attribution of a quantitative microbial increment. The resin mechanism
+    remains abiotic separation.
+  target_ids:
+  - cmmmech:uranium-mine-tailings
+  evidence_ids:
+  - owner
+  - reynier
+- assessment_id: provenance
+  area: provenance
+  topic: Revision, provenance and review independence
+  outcome: supported
+  summary: Frozen working changes, independent scope and actual executions are explicit.
+  details: Native inspect preceded judgment. Owner, history, paired dossier and schema
+    hashes were rechecked at final drafting. No scientific owner edit was made by
+    this reviewer. Named validation was independently run; four whole-repository checks
+    were included only after verifying the coordinator terminal receipt and log hash.
+    No acceptance was assigned to the reviewer own pascoite/navajoite records.
+  target_ids:
+  - cmmmech:uranium-mine-tailings
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- The main/SI uranium contradiction, RATTh/U prose reversal, durations and resin-feed
+  provenance remain unresolved; no corrected uranium yield is invented.
+- Matched sterile acid/medium controls, sequence-resolved community and full phase/element
+  balances are unavailable. Growth tubes are not leach controls.
+- Resin desorption, purity, regeneration and a sequential integrated flowsheet were
+  future work. Solution removal does not establish recovered products.
+- The current publisher PDF update link indicates version 2; no earlier original binary
+  was compared in this review.
+- 'Source-evidence follow-up: https://github.com/CultureBotAI/CMMMech/issues/378.
+  The draft was independently checked; no owner defect or experimental replication
+  is claimed.'
+notes:
+- Native inspect began at the recorded start; final drafting timestamps and source
+  hashes are actual. No supported corrective owner finding was identified or suppressed.
+- Original PDFs, XML, assets and official identifier responses were acquired by the
+  authors and independently inspected by this reviewer. Current bounded web correction
+  and metadata searches and named validation were independently executed. Acquisition
+  is not experimental replication.
+- The coordinator source-gap issue drafts were independently assessed as evidence
+  priorities rather than defects in deliberately qualified records. Carbonatite calculation-unit
+  clarification was additionally recommended. No author contact or Git/GitHub mutation
+  was performed by this reviewer.
+- This review does not claim native-review checks before persistence, exhaustive literature
+  absence, raw experimental replication or universal industrial performance. Coordinator
+  full-suite executions are attributed explicitly.
+```
