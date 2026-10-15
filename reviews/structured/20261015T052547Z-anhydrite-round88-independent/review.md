@@ -1,0 +1,517 @@
+# Independent scientific review of anhydrite
+
+- Review: 20261015T052547Z-anhydrite-round88-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T05:13:43.612533Z
+- Finished UTC: 2026-10-15T05:25:47.307548Z
+- Reviewer: codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of distinct mineral identity and a disputed microbial dehydration interpretation with independent negative evidence, corrected coupon dimensions and explicit source/access limits.
+
+## Scope And Provenance
+
+Whole maintained owner, canonical CREATE and evidence supporting disputed transformation/negative comparison.
+
+Selection: Assigned exact canonical record captured through native inspect before assessment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 661e752f00ea9ea15e48dfc41f02199dfc16e1fe.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:anhydrite | data/records/anhydrite.yaml | maintained | Anhydrite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named strict validation | passed | True | cmmmech:anhydrite | Actual two-record validation,zero failures. |
+| Completed batch gate 1 | passed | True | cmmmech:anhydrite | Terminal coordinator receipt/log independently checked. |
+| Completed batch gate 2 | passed | True | cmmmech:anhydrite | Terminal coordinator receipt/log independently checked. |
+| Completed batch gate 3 | passed | True | cmmmech:anhydrite | Terminal coordinator receipt/log independently checked. |
+| Completed batch gate 4 | passed | True | cmmmech:anhydrite | Terminal coordinator receipt/log independently checked. |
+
+## Scientific And Domain Assessments
+
+### Distinct mineral identity
+
+identity: supported. Targets: cmmmech:anhydrite.
+
+Separate calcium-sulfate species and experimental substrate/product roles are preserved. Two owners share evidence, not independent replication. No criticality asserted.
+
+### Culture identity and attribution
+
+grounding: supported. Targets: cmmmech:anhydrite.
+
+Culture exposure is microbial, but a genus mapping does not identify an axenic strain or exclusive causal organism. Taxonomy ranks and mixed-culture provenance are explicit.
+
+### Disputed positive interpretation
+
+evidence: supported. Targets: cmmmech:anhydrite.
+
+Observed spectra and inferred dissolution/precipitation are distinguished. Corrected coupon size, control-symbol ambiguity, unmeasured uptake and lack of phase yield prevent a clean causal or recovery assertion.
+
+### Independent negative result
+
+evidence: supported. Targets: cmmmech:anhydrite.
+
+Main15-day negative result is retained with loading/axis inconsistencies, condition differences and unknown detection limit. Unacquired30-day SI evidence is excluded.
+
+### Deployment and claim boundaries
+
+scope: supported. Targets: cmmmech:anhydrite.
+
+Laboratory exposures do not establish industrial recovery or field water budgets; identity does not certify experimental phase fractions. Unacquired supplements and wider literature remain explicit.
+
+### History and final exact input checks
+
+provenance: supported. Targets: cmmmech:anhydrite.
+
+Actual owner/CREATE/inline actor and timestamps are coherent; independently checked final gates cover unchanged scientific bytes.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| input0 | data/records/anhydrite.yaml; Exact complete maintained input captured by native inspect. Actual local artifact: /private/tmp/CMMMech-expansion-round88-20261015/data/records/anhydrite.yaml | supports | Canonical owner/CREATE identity, actor and separate inline event inspected; reviewer did not curate these owners. |
+| input1 | history/records/anhydrite/2026-10-15T051131Z-codex-543c45.yaml; Exact complete maintained input captured by native inspect. Actual local artifact: /private/tmp/CMMMech-expansion-round88-20261015/history/records/anhydrite/2026-10-15T051131Z-codex-543c45.yaml | supports | Canonical owner/CREATE identity, actor and separate inline event inspected; reviewer did not curate these owners. |
+| huang | https://doi.org/10.1073/pnas.2001613117; Complete main original, culture/analysis Methods and Figures1–4; all four original graphics separately visually inspected. Actual local artifact: /private/tmp/cmm-round88-minerals-research/huang2020-pmc.html | context_only | Supports reported culture-associated diffraction observations, not demonstrated cellular structural-water uptake. Corrected dimensions, one powder sample per condition, unknown phase detection limit and unclear Figure3E lighting arm retained. |
+| huangfig3 | https://doi.org/10.1073/pnas.2001613117; Original Figure3, especially panelE. Actual local artifact: /private/tmp/cmm-round88-minerals-research/huang2020-pnas.2001613117fig03.jpg | context_only | Square in No microbe panel is visible despite prose claiming absence. Record retains annotation ambiguity without declaring a resolved control peak or clean causal contrast. |
+| correction | https://doi.org/10.1073/pnas.2021524117; Complete formal correction paragraph. Actual local artifact: /private/tmp/cmm-round88-minerals-research/huang2020-correction.html | supports | Two erroneous coupon-dimension statements corrected to5×8×0.5mm; original dimensional objection is not carried forward as unresolved. |
+| critique | https://doi.org/10.1073/pnas.2013134117; Complete two-page critique, original Figure1 and Table1 visually inspected. Actual local artifact: /private/tmp/cmm-round88-minerals-research/wierzchos2020.pdf | context_only | Challenges mineral identification, natural mixed phases, acidity, facet specificity and causal attribution. Its categorical rejection is attributed disagreement; corrected coupon objection is distinguished. |
+| reply | https://doi.org/10.1073/pnas.2018184117; Complete reply and original Figures1–2 visually inspected. Actual local artifact: /private/tmp/cmm-round88-minerals-research/huang-reply-pmc.html | context_only | Authors defend diffraction indexing and initial gypsum selection, correct coupon size and propose hydrated biofilm chemistry. Same experiment, not independent replication or direct water flux measurement. |
+| douchi | https://doi.org/10.1093/pcp/pcad139; Original publisher HTML; mineral Results, strain/chip/XRD Methods, Figures1–2 and discussion. Actual local artifact: /private/tmp/cmm-round88-minerals-research/douchi2024-minimal.html | context_only | Independent15-day main comparison reports no detected anhydrite/bassanite.3µg/chip versus200µg/mL×100µL loading and Cu presentation versus Co figure labels remain explicit. Different conditions prevent exact-replication claim. |
+| douchifig1 | https://doi.org/10.1093/pcp/pcad139; Original main Figure1 A–C, all panels visually inspected; Figure2 recovery curves separately inspected. Actual local artifact: /private/tmp/cmm-round88-minerals-research/douchi2024-pcad139f1.jpeg | context_only | Triplicate culture patterns and sterile-medium blank resemble gypsum; no quantitative detection limit supports absolute zero transformation. Regrowth does not prove lattice-water use. |
+| culture | https://doi.org/10.1128/MRA.00206-21; Complete original JATS Announcement and Table1. Actual local artifact: /private/tmp/cmm-round88-minerals-research/murray2021.xml | context_only | Explicit non-purified cultures and G-MTQ-3P2 row support mixed-culture provenance; no axenic stock, exclusive cyanobacterial cause or stock-authentication accession inferred. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; List definitions PDF1 and exact Anhydrite PDF11/Gypsum PDF88 rows visually inspected. Actual local artifact: /private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf | context_only | Separate grandfathered calcium-sulfate species, hydrated versus anhydrous; not elemental criticality or certification of experimental product. |
+| handbook | https://www.handbookofmineralogy.org/pdfs/anhydrite.pdf; Complete single-page original, visually inspected. Actual local artifact: /private/tmp/cmm-round88-minerals-research/anhydrite-handbook.pdf | context_only | Mineral formula/crystallography and natural occurrence support identity, not microbial causation. |
+| tax54298 | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=54298; Fresh authority TaxId, ScientificName and Rank. Actual local artifact: /private/tmp/cmm-round88-minerals-research/taxonomy54298.xml | context_only | Genus Chroococcidiopsis54298 and species-ranked Synechocystis sp.PCC6803/1148 resolve as represented; no unverified strain-level mapping. |
+| tax1148 | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1148; Fresh authority TaxId, ScientificName and Rank. Actual local artifact: /private/tmp/cmm-round88-minerals-research/taxonomy1148.xml | context_only | Genus Chroococcidiopsis54298 and species-ranked Synechocystis sp.PCC6803/1148 resolve as represented; no unverified strain-level mapping. |
+| search | /private/tmp/cmm-round88-calcium-sulfates-review/evidence-assessment.json; Exact queries and bounded source/figure assessment. Actual local artifact: /private/tmp/cmm-round88-calcium-sulfates-review/evidence-assessment.json | context_only | Relevant correction/counterevidence inspected; no exhaustive absence claim. |
+| named | /private/tmp/cmm-round88-calcium-sulfates-review/named-validation.json; Actual independent two-record command; log /private/tmp/cmm-round88-calcium-sulfates-review/named-validation.log SHA256 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042. Actual local artifact: /private/tmp/cmm-round88-calcium-sulfates-review/named-validation.json | supports | Two records,zero failures,actual exit0. |
+| batch | /private/tmp/cmm-round88-final-gates.json; Actual four completed batch commands; log /private/tmp/cmm-round88-final-gates.log SHA256 116283f127d379f64072e586b392f5346d885121a09419c4a8d13083950b7684. Actual local artifact: /private/tmp/cmm-round88-final-gates.json | supports | Coordinator terminal outcomes and unchanged owner bytes verified; no duplicate independent run claimed. |
+
+## Limits And Additional Notes
+
+- Neither structural-water uptake nor a uniquely microbial phase transition is established. No quantified mineral recovery or industrial deployment.
+- Original positive experiment and independent negative experiment differ in feed, sterilization, duration, light and humidity; not an exact replication.
+- Huang and Douchi supplements were not acquired. Supplement-dependent facet/humidity and30-day diffraction claims are excluded; lipid-specific Douchi graphics3–8 are outside this mineral review scope.
+- Source loading, diffraction-axis and control annotation ambiguities remain unresolved; no calibrated detection limit gives a strict zero transformed fraction.
+- Searches are bounded, not proof that no further notices or scientific evidence exist.
+- Source issue https://github.com/CultureBotAI/CMMMech/issues/304 remains open. It is a source clarification task, not an unaddressed defect in this qualified owner.
+- Gypsum and anhydrite are distinct owners representing the same experiments; evidence must not be counted twice as replication.
+- No maintained owner/history or earlier saved review was edited by this reviewer.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T052547Z-anhydrite-round88-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of anhydrite
+started_at: '2026-10-15T05:13:43.612533Z'
+finished_at: '2026-10-15T05:25:47.307548Z'
+reviewer:
+  identity: codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer curated wulfenite, not this mineral owner/history/dossier.
+    Independently inspected original claim-bearing texts, graphics and authority artifacts
+    acquired by a different curator; no laboratory replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of distinct mineral identity and a disputed microbial
+  dehydration interpretation with independent negative evidence, corrected coupon
+  dimensions and explicit source/access limits.
+source:
+  git_revision: 661e752f00ea9ea15e48dfc41f02199dfc16e1fe
+  state: working_tree
+  inputs:
+  - path: data/records/anhydrite.yaml
+    sha256: d5b37f08bac5bbcc572461dd8a47395fa5990dd84c9e4b80a5faca3ca0c06e19
+    role: target
+  - path: history/records/anhydrite/2026-10-15T051131Z-codex-543c45.yaml
+    sha256: d3651968f7ae50fe91a96bf56ee81ac7083f8bd5fcbf798fa3cc57a1a416e698
+    role: context
+scope:
+  description: Whole maintained owner, canonical CREATE and evidence supporting disputed
+    transformation/negative comparison.
+  selection: Assigned exact canonical record captured through native inspect before
+    assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:anhydrite
+targets:
+- target_id: cmmmech:anhydrite
+  path: data/records/anhydrite.yaml
+  label: Anhydrite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/anhydrite.yaml
+    role: maintained record
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate --require-records data/records/gypsum.yaml
+    data/records/anhydrite.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual two-record validation,zero failures.
+  target_ids:
+  - cmmmech:anhydrite
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Completed batch gate 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal coordinator receipt/log independently checked.
+  target_ids:
+  - cmmmech:anhydrite
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Completed batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal coordinator receipt/log independently checked.
+  target_ids:
+  - cmmmech:anhydrite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed batch gate 3
+  command: uv run --locked cmmmech validate-history --base 661e752f00ea9ea15e48dfc41f02199dfc16e1fe
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal coordinator receipt/log independently checked.
+  target_ids:
+  - cmmmech:anhydrite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal coordinator receipt/log independently checked.
+  target_ids:
+  - cmmmech:anhydrite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: input0
+  kind: record_content
+  reference: data/records/anhydrite.yaml
+  locator: 'Exact complete maintained input captured by native inspect. Actual local
+    artifact: /private/tmp/CMMMech-expansion-round88-20261015/data/records/anhydrite.yaml'
+  accessed_at: '2026-10-15T05:25:47.307548Z'
+  support: supports
+  summary: Canonical owner/CREATE identity, actor and separate inline event inspected;
+    reviewer did not curate these owners.
+  snapshot_sha256: d5b37f08bac5bbcc572461dd8a47395fa5990dd84c9e4b80a5faca3ca0c06e19
+- evidence_id: input1
+  kind: record_content
+  reference: history/records/anhydrite/2026-10-15T051131Z-codex-543c45.yaml
+  locator: 'Exact complete maintained input captured by native inspect. Actual local
+    artifact: /private/tmp/CMMMech-expansion-round88-20261015/history/records/anhydrite/2026-10-15T051131Z-codex-543c45.yaml'
+  accessed_at: '2026-10-15T05:25:47.307548Z'
+  support: supports
+  summary: Canonical owner/CREATE identity, actor and separate inline event inspected;
+    reviewer did not curate these owners.
+  snapshot_sha256: d3651968f7ae50fe91a96bf56ee81ac7083f8bd5fcbf798fa3cc57a1a416e698
+- evidence_id: huang
+  kind: primary_source
+  reference: https://doi.org/10.1073/pnas.2001613117
+  locator: 'Complete main original, culture/analysis Methods and Figures1–4; all four
+    original graphics separately visually inspected. Actual local artifact: /private/tmp/cmm-round88-minerals-research/huang2020-pmc.html'
+  accessed_at: '2026-10-15T05:25:47.307548Z'
+  support: context_only
+  summary: Supports reported culture-associated diffraction observations, not demonstrated
+    cellular structural-water uptake. Corrected dimensions, one powder sample per
+    condition, unknown phase detection limit and unclear Figure3E lighting arm retained.
+  snapshot_sha256: f196912cfe9952ca400d30b6c052950d33cafe590a19d6d20dd378cb0ba5a135
+- evidence_id: huangfig3
+  kind: primary_source
+  reference: https://doi.org/10.1073/pnas.2001613117
+  locator: 'Original Figure3, especially panelE. Actual local artifact: /private/tmp/cmm-round88-minerals-research/huang2020-pnas.2001613117fig03.jpg'
+  accessed_at: '2026-10-15T05:25:47.307548Z'
+  support: context_only
+  summary: Square in No microbe panel is visible despite prose claiming absence. Record
+    retains annotation ambiguity without declaring a resolved control peak or clean
+    causal contrast.
+  snapshot_sha256: 8866032eec2457ee2112a0b7fec05eabca4f1c92d2e4e2f8f53845fd8518fc44
+- evidence_id: correction
+  kind: primary_source
+  reference: https://doi.org/10.1073/pnas.2021524117
+  locator: 'Complete formal correction paragraph. Actual local artifact: /private/tmp/cmm-round88-minerals-research/huang2020-correction.html'
+  accessed_at: '2026-10-15T05:25:47.307548Z'
+  support: supports
+  summary: Two erroneous coupon-dimension statements corrected to5×8×0.5mm; original
+    dimensional objection is not carried forward as unresolved.
+  snapshot_sha256: 98f2123e6a94893733b1af43654596b187d03bbcd37a014b2c80b1f7afba24ee
+- evidence_id: critique
+  kind: primary_source
+  reference: https://doi.org/10.1073/pnas.2013134117
+  locator: 'Complete two-page critique, original Figure1 and Table1 visually inspected.
+    Actual local artifact: /private/tmp/cmm-round88-minerals-research/wierzchos2020.pdf'
+  accessed_at: '2026-10-15T05:25:47.307548Z'
+  support: context_only
+  summary: Challenges mineral identification, natural mixed phases, acidity, facet
+    specificity and causal attribution. Its categorical rejection is attributed disagreement;
+    corrected coupon objection is distinguished.
+  snapshot_sha256: d856cd0d511c7a8dda94e24a0831a57fea2d465caa4687d8797b1b88266c1231
+- evidence_id: reply
+  kind: primary_source
+  reference: https://doi.org/10.1073/pnas.2018184117
+  locator: 'Complete reply and original Figures1–2 visually inspected. Actual local
+    artifact: /private/tmp/cmm-round88-minerals-research/huang-reply-pmc.html'
+  accessed_at: '2026-10-15T05:25:47.307548Z'
+  support: context_only
+  summary: Authors defend diffraction indexing and initial gypsum selection, correct
+    coupon size and propose hydrated biofilm chemistry. Same experiment, not independent
+    replication or direct water flux measurement.
+  snapshot_sha256: 37c850cc954b243c99b0d92bc70c92cf40e3bfe32f011dd6e518b84630e286c5
+- evidence_id: douchi
+  kind: primary_source
+  reference: https://doi.org/10.1093/pcp/pcad139
+  locator: 'Original publisher HTML; mineral Results, strain/chip/XRD Methods, Figures1–2
+    and discussion. Actual local artifact: /private/tmp/cmm-round88-minerals-research/douchi2024-minimal.html'
+  accessed_at: '2026-10-15T05:25:47.307548Z'
+  support: context_only
+  summary: Independent15-day main comparison reports no detected anhydrite/bassanite.3µg/chip
+    versus200µg/mL×100µL loading and Cu presentation versus Co figure labels remain
+    explicit. Different conditions prevent exact-replication claim.
+  snapshot_sha256: b6abc740458a25e0544f7924593059eaeb1f1ad4f9cf7e20b56931e66e97d928
+- evidence_id: douchifig1
+  kind: primary_source
+  reference: https://doi.org/10.1093/pcp/pcad139
+  locator: 'Original main Figure1 A–C, all panels visually inspected; Figure2 recovery
+    curves separately inspected. Actual local artifact: /private/tmp/cmm-round88-minerals-research/douchi2024-pcad139f1.jpeg'
+  accessed_at: '2026-10-15T05:25:47.307548Z'
+  support: context_only
+  summary: Triplicate culture patterns and sterile-medium blank resemble gypsum; no
+    quantitative detection limit supports absolute zero transformation. Regrowth does
+    not prove lattice-water use.
+  snapshot_sha256: 6edcd58e77d9532f5bfba8739d909adfdc602c3541d3313d4bb70f2ed6c51fdb
+- evidence_id: culture
+  kind: primary_source
+  reference: https://doi.org/10.1128/MRA.00206-21
+  locator: 'Complete original JATS Announcement and Table1. Actual local artifact:
+    /private/tmp/cmm-round88-minerals-research/murray2021.xml'
+  accessed_at: '2026-10-15T05:25:47.307548Z'
+  support: context_only
+  summary: Explicit non-purified cultures and G-MTQ-3P2 row support mixed-culture
+    provenance; no axenic stock, exclusive cyanobacterial cause or stock-authentication
+    accession inferred.
+  snapshot_sha256: 6106ac967dc9240d55b7486981a1a737bddbbfcea2e141f9a301433da33385d5
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'List definitions PDF1 and exact Anhydrite PDF11/Gypsum PDF88 rows visually
+    inspected. Actual local artifact: /private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf'
+  accessed_at: '2026-10-15T05:25:47.307548Z'
+  support: context_only
+  summary: Separate grandfathered calcium-sulfate species, hydrated versus anhydrous;
+    not elemental criticality or certification of experimental product.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/anhydrite.pdf
+  locator: 'Complete single-page original, visually inspected. Actual local artifact:
+    /private/tmp/cmm-round88-minerals-research/anhydrite-handbook.pdf'
+  accessed_at: '2026-10-15T05:25:47.307548Z'
+  support: context_only
+  summary: Mineral formula/crystallography and natural occurrence support identity,
+    not microbial causation.
+  snapshot_sha256: 2ccb4c8c5f22c781b5419c1cfd0fff20234fed87156ff309cdcb58274244fa63
+- evidence_id: tax54298
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=54298
+  locator: 'Fresh authority TaxId, ScientificName and Rank. Actual local artifact:
+    /private/tmp/cmm-round88-minerals-research/taxonomy54298.xml'
+  accessed_at: '2026-10-15T05:25:47.307548Z'
+  support: context_only
+  summary: Genus Chroococcidiopsis54298 and species-ranked Synechocystis sp.PCC6803/1148
+    resolve as represented; no unverified strain-level mapping.
+  snapshot_sha256: 29f054990c0b57fe4433d04a7a13207019b3ce29e7b9b504ff575b96a1e46591
+- evidence_id: tax1148
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1148
+  locator: 'Fresh authority TaxId, ScientificName and Rank. Actual local artifact:
+    /private/tmp/cmm-round88-minerals-research/taxonomy1148.xml'
+  accessed_at: '2026-10-15T05:25:47.307548Z'
+  support: context_only
+  summary: Genus Chroococcidiopsis54298 and species-ranked Synechocystis sp.PCC6803/1148
+    resolve as represented; no unverified strain-level mapping.
+  snapshot_sha256: f1f855c92858b737340800a8e19b6f90d53639cc9117323829e332f9050362e9
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round88-calcium-sulfates-review/evidence-assessment.json
+  locator: 'Exact queries and bounded source/figure assessment. Actual local artifact:
+    /private/tmp/cmm-round88-calcium-sulfates-review/evidence-assessment.json'
+  accessed_at: '2026-10-15T05:25:47.307548Z'
+  support: context_only
+  summary: Relevant correction/counterevidence inspected; no exhaustive absence claim.
+  snapshot_sha256: 64d28d0da814e2d00a57cd58081f82ec926276203df12043ce2d1bf95c9d2e86
+  search_scope: One returned set for each recorded web query; local rg --no-ignore
+    --hidden --follow across data/records,research,reviews,history. Relevant related
+    materials inspected; not whole-machine search.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round88-calcium-sulfates-review/named-validation.json
+  locator: 'Actual independent two-record command; log /private/tmp/cmm-round88-calcium-sulfates-review/named-validation.log
+    SHA256 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042. Actual
+    local artifact: /private/tmp/cmm-round88-calcium-sulfates-review/named-validation.json'
+  accessed_at: '2026-10-15T05:25:47.307548Z'
+  support: supports
+  summary: Two records,zero failures,actual exit0.
+  snapshot_sha256: a75f37145fb536287d34554396992ae46a67b57ad24da32666215b28b3791adb
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round88-final-gates.json
+  locator: 'Actual four completed batch commands; log /private/tmp/cmm-round88-final-gates.log
+    SHA256 116283f127d379f64072e586b392f5346d885121a09419c4a8d13083950b7684. Actual
+    local artifact: /private/tmp/cmm-round88-final-gates.json'
+  accessed_at: '2026-10-15T05:25:47.307548Z'
+  support: supports
+  summary: Coordinator terminal outcomes and unchanged owner bytes verified; no duplicate
+    independent run claimed.
+  snapshot_sha256: 8367446976122f115ed55531aa45db1ddaf8d7054b84dbca65da399bd1ae70c0
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Distinct mineral identity
+  outcome: supported
+  summary: Separate calcium-sulfate species and experimental substrate/product roles
+    are preserved. Two owners share evidence, not independent replication. No criticality
+    asserted.
+  target_ids:
+  - cmmmech:anhydrite
+  evidence_ids:
+  - input0
+  - ima
+  - handbook
+- assessment_id: biology
+  area: grounding
+  topic: Culture identity and attribution
+  outcome: supported
+  summary: Culture exposure is microbial, but a genus mapping does not identify an
+    axenic strain or exclusive causal organism. Taxonomy ranks and mixed-culture provenance
+    are explicit.
+  target_ids:
+  - cmmmech:anhydrite
+  evidence_ids:
+  - input0
+  - culture
+  - tax54298
+  - tax1148
+- assessment_id: original
+  area: evidence
+  topic: Disputed positive interpretation
+  outcome: supported
+  summary: Observed spectra and inferred dissolution/precipitation are distinguished.
+    Corrected coupon size, control-symbol ambiguity, unmeasured uptake and lack of
+    phase yield prevent a clean causal or recovery assertion.
+  target_ids:
+  - cmmmech:anhydrite
+  evidence_ids:
+  - input0
+  - huang
+  - huangfig3
+  - correction
+  - critique
+  - reply
+- assessment_id: negative
+  area: evidence
+  topic: Independent negative result
+  outcome: supported
+  summary: Main15-day negative result is retained with loading/axis inconsistencies,
+    condition differences and unknown detection limit. Unacquired30-day SI evidence
+    is excluded.
+  target_ids:
+  - cmmmech:anhydrite
+  evidence_ids:
+  - input0
+  - douchi
+  - douchifig1
+- assessment_id: limits
+  area: scope
+  topic: Deployment and claim boundaries
+  outcome: supported
+  summary: Laboratory exposures do not establish industrial recovery or field water
+    budgets; identity does not certify experimental phase fractions. Unacquired supplements
+    and wider literature remain explicit.
+  target_ids:
+  - cmmmech:anhydrite
+  evidence_ids:
+  - input0
+  - huang
+  - douchi
+  - search
+- assessment_id: provenance
+  area: provenance
+  topic: History and final exact input checks
+  outcome: supported
+  summary: Actual owner/CREATE/inline actor and timestamps are coherent; independently
+    checked final gates cover unchanged scientific bytes.
+  target_ids:
+  - cmmmech:anhydrite
+  evidence_ids:
+  - input0
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- Neither structural-water uptake nor a uniquely microbial phase transition is established.
+  No quantified mineral recovery or industrial deployment.
+- Original positive experiment and independent negative experiment differ in feed,
+  sterilization, duration, light and humidity; not an exact replication.
+- Huang and Douchi supplements were not acquired. Supplement-dependent facet/humidity
+  and30-day diffraction claims are excluded; lipid-specific Douchi graphics3–8 are
+  outside this mineral review scope.
+- Source loading, diffraction-axis and control annotation ambiguities remain unresolved;
+  no calibrated detection limit gives a strict zero transformed fraction.
+- Searches are bounded, not proof that no further notices or scientific evidence exist.
+notes:
+- Source issue https://github.com/CultureBotAI/CMMMech/issues/304 remains open. It
+  is a source clarification task, not an unaddressed defect in this qualified owner.
+- Gypsum and anhydrite are distinct owners representing the same experiments; evidence
+  must not be counted twice as replication.
+- No maintained owner/history or earlier saved review was edited by this reviewer.
+```

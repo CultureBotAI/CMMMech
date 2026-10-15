@@ -1,0 +1,169 @@
+{
+  "recorded_at": "2026-10-15T05:21:36.774967+00:00",
+  "passed": true,
+  "case_count": 20,
+  "scope": "Nonmutating fixtures extracted only the two actual pagination functions by AST; no helper top-level, Git, network or publication operation was executed. Rejects missing second page, duplicate paths, incorrect blobs/status, incomplete pages and same-count wrong paths.",
+  "script_sha256": "cef73f84d8e740ebf7f597febdfbf8d514e38174bd26d157050a196a7ef3fe0b",
+  "cases": [
+    {
+      "helper": "cmm-round88-hosted-peer.py",
+      "helper_sha256": "48c6448b444447c120aa2573a6c785192aa505a2e201600c9a17abdba3c908a8",
+      "case": "valid151-two-pages",
+      "expected_accept": true,
+      "actual_accept": true,
+      "passed": true
+    },
+    {
+      "helper": "cmm-round88-hosted-peer.py",
+      "helper_sha256": "48c6448b444447c120aa2573a6c785192aa505a2e201600c9a17abdba3c908a8",
+      "case": "first100-only",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    },
+    {
+      "helper": "cmm-round88-hosted-peer.py",
+      "helper_sha256": "48c6448b444447c120aa2573a6c785192aa505a2e201600c9a17abdba3c908a8",
+      "case": "missing-last-file",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    },
+    {
+      "helper": "cmm-round88-hosted-peer.py",
+      "helper_sha256": "48c6448b444447c120aa2573a6c785192aa505a2e201600c9a17abdba3c908a8",
+      "case": "duplicate-cross-page",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    },
+    {
+      "helper": "cmm-round88-hosted-peer.py",
+      "helper_sha256": "48c6448b444447c120aa2573a6c785192aa505a2e201600c9a17abdba3c908a8",
+      "case": "wrong-hosted-blob",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    },
+    {
+      "helper": "cmm-round88-hosted-peer.py",
+      "helper_sha256": "48c6448b444447c120aa2573a6c785192aa505a2e201600c9a17abdba3c908a8",
+      "case": "unexpected-rename",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    },
+    {
+      "helper": "cmm-round88-hosted-peer.py",
+      "helper_sha256": "48c6448b444447c120aa2573a6c785192aa505a2e201600c9a17abdba3c908a8",
+      "case": "same-count-wrong-path-set",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    },
+    {
+      "helper": "cmm-round88-hosted-peer.py",
+      "helper_sha256": "48c6448b444447c120aa2573a6c785192aa505a2e201600c9a17abdba3c908a8",
+      "case": "empty-pages",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    },
+    {
+      "helper": "cmm-round88-hosted-peer.py",
+      "helper_sha256": "48c6448b444447c120aa2573a6c785192aa505a2e201600c9a17abdba3c908a8",
+      "case": "empty-intermediate-page",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    },
+    {
+      "helper": "cmm-round88-hosted-peer.py",
+      "helper_sha256": "48c6448b444447c120aa2573a6c785192aa505a2e201600c9a17abdba3c908a8",
+      "case": "nonfull-intermediate-page",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    },
+    {
+      "helper": "cmm-round88-hosted-audit-paginated.py",
+      "helper_sha256": "50daf086399a5f6ed6abcf390837d6d0d5bc0526ec1c48ab2e14f4a929e520a7",
+      "case": "valid151-two-pages",
+      "expected_accept": true,
+      "actual_accept": true,
+      "passed": true
+    },
+    {
+      "helper": "cmm-round88-hosted-audit-paginated.py",
+      "helper_sha256": "50daf086399a5f6ed6abcf390837d6d0d5bc0526ec1c48ab2e14f4a929e520a7",
+      "case": "first100-only",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    },
+    {
+      "helper": "cmm-round88-hosted-audit-paginated.py",
+      "helper_sha256": "50daf086399a5f6ed6abcf390837d6d0d5bc0526ec1c48ab2e14f4a929e520a7",
+      "case": "missing-last-file",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    },
+    {
+      "helper": "cmm-round88-hosted-audit-paginated.py",
+      "helper_sha256": "50daf086399a5f6ed6abcf390837d6d0d5bc0526ec1c48ab2e14f4a929e520a7",
+      "case": "duplicate-cross-page",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    },
+    {
+      "helper": "cmm-round88-hosted-audit-paginated.py",
+      "helper_sha256": "50daf086399a5f6ed6abcf390837d6d0d5bc0526ec1c48ab2e14f4a929e520a7",
+      "case": "wrong-hosted-blob",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    },
+    {
+      "helper": "cmm-round88-hosted-audit-paginated.py",
+      "helper_sha256": "50daf086399a5f6ed6abcf390837d6d0d5bc0526ec1c48ab2e14f4a929e520a7",
+      "case": "unexpected-rename",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    },
+    {
+      "helper": "cmm-round88-hosted-audit-paginated.py",
+      "helper_sha256": "50daf086399a5f6ed6abcf390837d6d0d5bc0526ec1c48ab2e14f4a929e520a7",
+      "case": "same-count-wrong-path-set",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    },
+    {
+      "helper": "cmm-round88-hosted-audit-paginated.py",
+      "helper_sha256": "50daf086399a5f6ed6abcf390837d6d0d5bc0526ec1c48ab2e14f4a929e520a7",
+      "case": "empty-pages",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    },
+    {
+      "helper": "cmm-round88-hosted-audit-paginated.py",
+      "helper_sha256": "50daf086399a5f6ed6abcf390837d6d0d5bc0526ec1c48ab2e14f4a929e520a7",
+      "case": "empty-intermediate-page",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    },
+    {
+      "helper": "cmm-round88-hosted-audit-paginated.py",
+      "helper_sha256": "50daf086399a5f6ed6abcf390837d6d0d5bc0526ec1c48ab2e14f4a929e520a7",
+      "case": "nonfull-intermediate-page",
+      "expected_accept": false,
+      "actual_accept": false,
+      "passed": true
+    }
+  ]
+}

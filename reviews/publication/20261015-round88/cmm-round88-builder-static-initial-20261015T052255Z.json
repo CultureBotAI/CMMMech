@@ -1,0 +1,20 @@
+{
+  "recorded_at": "2026-10-15T05:22:55.495922+00:00",
+  "reviewer": "codex /root/round68_phosphates",
+  "scope": "Bounded static source read before manifest execution",
+  "passed": false,
+  "findings": [
+    {
+      "finding_id": "OP1",
+      "issue_key": "round88-manifest-heading-stale-cohort",
+      "severity": "minor",
+      "status": "open",
+      "path": "/private/tmp/cmm-round88-build-manifest.py",
+      "sha256": "b8403830767ab047c73e39f0279eebf058fb03bee57d36d03f6648348b74d65b",
+      "locator": "lines initialization for Markdown manifest",
+      "evidence": "lines=['# Round87: three reviewed material records', ...]",
+      "impact": "The generated current five-record round88 manifest would misleadingly identify itself as round87 and three records. JSON cohort and remaining narrative are current.",
+      "correction": "Change only heading to Round88: five reviewed material records before executing builder; retain initial source and observation."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+--- cmm_round87_peer_checks.py
++++ cmm_round88_peer_checks.py
+@@ -1,8 +1,8 @@
+-"""Round87 publication evidence bindings; no independent re-curation of science."""
++"""Round88 publication evidence bindings; no independent re-curation of science."""
+ from pathlib import Path
+ import json,re,yaml
+-SLUGS={'alabandite','secondary-aluminium-dross','simonkolleite'}
+-AUTHORS={'alabandite':'codex /root/round68_iron_sulfides','secondary-aluminium-dross':'codex /root/round68_new_frontier','simonkolleite':'codex /root/round68_phosphates'}
++SLUGS={'anhydrite','chromium-tanned-leather-shavings','gersdorffite','gypsum','wulfenite'}
++AUTHORS={'anhydrite':'codex /root/round68_phosphates','gypsum':'codex /root/round68_phosphates','chromium-tanned-leather-shavings':'codex /root/round68_new_frontier','gersdorffite':'codex /root/round68_iron_sulfides','wulfenite':'codex /root'}
+ 
+ def verify_native_lineage(w, selected, expected, need, sha):
+     """Bind every current-cohort finding to explicitly selected final dispositions."""
+@@ -54,7 +54,7 @@
+ def review_package(g,report,commit,cfg,expected,audit,a):
+     need,sha,w,base=g['need'],g['sha'],g['WT'],g['BASE']
+     report['checks_module']={'path':__file__,'sha256':sha(__file__)}
+-    need(set(cfg['slugs'])==SLUGS and len(cfg['slugs'])==3,'Current three-owner cohort differs')
++    need(set(cfg['slugs'])==SLUGS and len(cfg['slugs'])==5,'Current five-owner cohort differs')
+     need(a.get('verdict') in ('pass','pass_with_limitations') and a.get('unresolved_corrective_findings')==0,'Publication audit unresolved')
+     need(a.get('state')=='working_tree' and a.get('base')==base and a.get('branch')==g['BRANCH'],'Publication audit scope differs')
+     need(audit==Path(cfg['publication_peer_review']) and audit.is_relative_to(w),'Publication audit path differs')
+@@ -63,9 +63,9 @@
+     excluded={str(audit.relative_to(w)),str(audit.with_suffix('.md').relative_to(w))}
+     need(len(names)==len(set(names)) and set(names)==set(expected)-excluded,'Final audit file set differs')
+     for x in inputs:need(x['sha256']==expected[x['path']]['sha256']==sha(w/x['path']),'Final audit input changed: '+x['path'])
+-    mp=w/'research/ingests/round87-frontier-20261015.json';m=json.loads(mp.read_text())
++    mp=w/'research/ingests/round88-frontier-20261015.json';m=json.loads(mp.read_text())
+     need(all(m[k]==cfg[k] for k in ('base','branch','worktree','counts','issues')) and m['state']=='working_tree','Manifest/config identity differs')
+-    rows=m['records'];need(len(rows)==3 and {r['slug'] for r in rows}==SLUGS,'Manifest selected owners differ')
++    rows=m['records'];need(len(rows)==5 and {r['slug'] for r in rows}==SLUGS,'Manifest selected owners differ')
+     reviewed=[]; native_by_slug={}
+     for row in rows:
+         slug=row['slug'];p=w/row['path'];rec=yaml.safe_load(p.read_text());rp=w/row['review']['path'];rv=yaml.safe_load(rp.read_text());tid='cmmmech:'+slug
+@@ -135,7 +135,7 @@
+     # Do not silently classify free-text comments as non-actionable.
+     digest=g['sha_bytes'](json.dumps(raw,sort_keys=True,separators=(',',':')).encode())
+     if any(raw.values()):
+-        disposition=g['ROOT']/'cmm-round87-conversation-disposition.json'
++        disposition=g['ROOT']/'cmm-round88-conversation-disposition.json'
+         if not disposition.is_file():raise g['Pending']('Fetched conversation requires explicit reviewer disposition before acceptance')
+         d=json.loads(disposition.read_text())
+         need(d.get('pr')==number and d.get('head')==report['head'] and d.get('inventory_sha256')==digest and d.get('unresolved_actionable_findings')==0 and d.get('reviewer') and d.get('assessment'),'Conversation disposition absent, stale or incomplete')
+@@ -145,7 +145,7 @@
+     report['hosted_conversation_scope']='Complete paginated fetched reviews, review comments, issue comments and review threads. General comment text is retained for independent inspection; no inference of approval from silence.'
+ 
+ def verify_preflight(g,report,head,tree,cfg):
+-    need=g['need'];sha=g['sha'];p=g['ROOT']/'cmm-round87-preflight-committed-terminal.json'
++    need=g['need'];sha=g['sha'];p=g['ROOT']/'cmm-round88-preflight-committed-terminal.json'
+     if not p.is_file():raise g['Pending']('Actual committed synthetic-squash preflight is not terminal yet')
+     r=json.loads(p.read_text())
+     need(r['exit_code']==0 and r['mode']=='preflight' and r['trusted_base']==g['BASE'] and r['topic_head']==head and r['expected_tree']==tree,'Committed preflight identity/outcome differs')
