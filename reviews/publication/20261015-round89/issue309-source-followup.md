@@ -1,0 +1,12 @@
+The new struvite-(K) record narrowly accepts abiotic precipitation in Abayie et al. (2025), DOI https://doi.org/10.1016/j.jece.2025.117323. Complete primary and official supporting DOCX were inspected. This is a source-resolution task, not a demonstrated error in the qualified record.
+
+Evidence needing clarification:
+
+- The commercial MgO is 95% in the abstract, but 97% in Methods, Table 3 and Figure 6. The sidestream material is called 71% or 70.9%, while Table 1 gives 70.01 wt% MgO. Reconcile these grades and Table 3 reagent doses with the nominal Mg:K:P ratios and the actual feed concentrations.
+- Equation 3 uses the change in potassium concentration, while different reagent additions change liquid volume. Provide initial/final volumes, aqueous inventories and isolated-solid potassium quantities before interpreting the reported 59.5%/65.1% first-cycle removal as mineral recovery. The second recycled cycle reported no additional potassium concentration change.
+- Sections 3.4–3.5 give fitted crystalline phase percentages without presented refinement residuals, amorphous correction or uncertainty. Supply refinement inputs/outputs and phase-resolved material balance before claiming absolute purity or a phase-specific recovery yield.
+- Section 3.6 says all measured heavy metals fall below the listed limits, but Table 4 lists Model 2 Cd at 2 mg/kg versus its own 1.5 mg/kg inorganic fertilizer column. Reconcile the source table/prose and exact applicable product category before adopting any compliance assertion; this issue makes no current legal claim.
+
+Acceptance: retain a verifiable correction, original supplementary dataset or other primary clarification that reconciles the relevant rows/conditions; amend the record only to the extent actually resolved and append history plus an independent review. Otherwise retain the explicit limitations and keep this issue open.
+
+Source originals: `/private/tmp/cmm-round89-minerals-research/abayie2025.pdf`, SHA256 `d13a6fcc240fb67bdc721a07eaf9cbfe0d332147d0baeb16822e4e1e79d46e6b`; official supplementary DOCX SHA256 `26bf576e2476930df48589979257750e98f9ea565a33bfa4a6422aa9d0741db8`. Dossier: `research/sources/round89-minerals/20261015T061552Z-source-investigation.{json,md}`. Exact-title/DOI and struvite-K checks against the supplied all-state issue inventory returned no matching issue; hidden and ignored maintained files plus relevant prior raw roots were included in discovery deduplication.

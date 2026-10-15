@@ -1,0 +1,473 @@
+# Independent complete troilite review and explicit pH-finding resolution
+
+- Review: 20261015T063059Z-troilite-round89-final-resolution
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T06:25:06.409210Z
+- Finished UTC: 2026-10-15T06:30:59.588130Z
+- Reviewer: codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The corrected owner supports conditional thermophilic-community-associated dissolution of characterized natural troilite-bearing feed. The medium-versus-reactor pH interpretation is now appropriately bounded; F1 is explicitly resolved. Soluble iron, diffraction change and recovered product remain separate. No taxon-specific causal, pure-phase, criticality or industrial claim is inferred.
+
+## Scope And Provenance
+
+Complete current owner, CREATE and EDIT histories, original primary text and all figures/tables, identity references, original scoped finding and correction dossier.
+
+Selection: The explicit new troilite owner in round89.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base b797f1be3d9d7b45444e0e3f54f3845d8aeeb1ae.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:troilite | data/records/troilite.yaml | maintained | Troilite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent complete primary and identity assessment | passed | True | cmmmech:troilite | Full source, methods, outcomes, controls, identity and final pH correction rechecked; original finding and final bytes inspected independently. |
+| Affected corrected-owner strict validation | passed | True | cmmmech:troilite | Author ran uv run --locked cmmmech validate data/records/troilite.yaml --require-records:1record0failed; receipt is in the append-only correction. Root independently validates all426 current owners in the batch. |
+| Terminal batch check 1 | passed | True | cmmmech:troilite | Actual coordinator execution from 2026-10-15T06:24:51.895956+00:00 to 2026-10-15T06:29:31.463184+00:00; terminal receipt and log hash independently verified, not a claimed separate rerun. |
+| Terminal batch check 2 | passed | True | cmmmech:troilite | Actual coordinator execution from 2026-10-15T06:29:31.463211+00:00 to 2026-10-15T06:29:40.836668+00:00; terminal receipt and log hash independently verified, not a claimed separate rerun. |
+| Terminal batch check 3 | passed | True | cmmmech:troilite | Actual coordinator execution from 2026-10-15T06:29:40.836694+00:00 to 2026-10-15T06:29:45.576822+00:00; terminal receipt and log hash independently verified, not a claimed separate rerun. |
+| Terminal batch check 4 | passed | True | cmmmech:troilite | Actual coordinator execution from 2026-10-15T06:29:45.576845+00:00 to 2026-10-15T06:29:50.245220+00:00; terminal receipt and log hash independently verified, not a claimed separate rerun. |
+
+## Scientific And Domain Assessments
+
+### Mineral species, experimental form and criticality
+
+identity: supported. Targets: cmmmech:troilite.
+
+Troilite FeS is maintained separately from other iron sulfides, elements and resources. Natural mixed feed is explicit; no inherited criticality is asserted.
+
+### Community, substrate, conditions and controls
+
+evidence: supported. Targets: cmmmech:troilite.
+
+Living B9/LM enrichments are unresolved communities. Partial FISH signals do not identify causal organisms. Natural mixed feed, steam treatment, size, duplicate duration/temperature/agitation and unspecified inoculum/4% basis are retained. Control is uninoculated, not matched through evolving pH/redox; molecular attribution remains qualified.
+
+### Measurement denominators and deployment
+
+evidence: supported. Targets: cmmmech:troilite.
+
+Source soluble-feed-iron percentages and normalized diffraction-peak loss are distinct reported outcomes; uncertainty undefined, reprecipitation and sterile release retained. No isolated recovery, phase mass balance or industrial deployment claimed.
+
+### Correction of pH interpretation
+
+consistency: supported. Targets: cmmmech:troilite.
+
+Final wording distinguishes preparation medium from reactor state and labels post-addition acid consumption as possible, not demonstrated. The separate redox discrepancy remains explicit. F1 acceptance is met.
+
+### Append-only histories and review lineage
+
+provenance: supported. Targets: cmmmech:troilite.
+
+CREATE retained; EDIT and inline event accurately describe this correction. Prior review and source dossier preserved with a linked addendum. This successor resolves the exact F1 occurrence rather than silently replacing it.
+
+## Findings
+
+### F1: Prepared-medium and reactor pH are now distinguished
+
+minor / resolved / confirmed; issue key: troilite-round89-medium-versus-reactor-ph.
+
+The original minor overstatement is corrected. Both observations are retained without asserting equivalent experimental timing/state, and acid-consuming dissolution is only an untested explanation. The independent redox prose/graphic discrepancy remains qualified.
+
+Disposition: Independent final-source reinspection and exact corrected owner/EDIT inspection satisfy F1. The immutable original occurrence remains and the terminal batch gates below validate the final owner/history.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/troilite.yaml; Complete owner, mechanism evidence and provenance | supports | Read exact final owner and both linked histories; pH preparation/reactor distinction is explicit and all other measurement/control limits remain. |
+| primary | https://doi.org/10.1016/j.hydromet.2010.11.015; Complete CONICET original, eight PDF pages including cover; printed19–25; Methods2.1–2.5, Tables1–2, Figures1–6 | supports | Full original read and Figures3–6 visually inspected. Natural troilite with marcasite; below74 micrometres,4% unspecified basis, duplicate65C150rpm70day flasks. B9/LM unresolved enrichments; no isolate causal test. Day70 soluble-feed-Fe60±12/48±9/32±7 versus15±2%; uncertainty undefined. Single-peak-loss90.5/85.7/81.0/52.4% has a different denominator. Reprecipitation and control dissolution limit biological/recovery attribution. |
+| ph | https://doi.org/10.1016/j.hydromet.2010.11.015; Methods2.2/2.5 printed20–21; Figure4 and prose printed23 | partial | M88 prepared at pH2 precedes mineral addition; early/control reactor values near4.5–5 need not represent the same material state or time. Source discusses proton-consuming dissolution, but no paired observations establish the explanation. Control prose does not name2. Separate prose600mV versus plotted~520mV remains unresolved. |
+| identity | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Page221 Troilite row; page1 status/year definitions | supports | Verified FeS, G and1863; year is original description, not approval identifier. Troilite is distinct from pyrrhotite and mackinawite. Current mineral-list status is not criticality. |
+| handbook | https://www.handbookofmineralogy.org/pdfs/troilite.pdf; One-page entry, formula/crystal system | supports | Verified FeS and hexagonal identity. Cubic habit language/assumed residue morphology in experimental source does not replace crystallographic identity. |
+| prior | reviews/structured/20261015T061619Z-troilite-round89-initial-ph-scope/review.yaml; F1 / troilite-round89-medium-versus-reactor-ph | supports | Original immutable scoped finding and unavailable final gate are retained. |
+| correction | research/sources/round89-sulfides/20261015T062340Z-ph-scope-correction.json; Entire append-only correction and linked EDIT | supports | Original source dossier is retained and exact pH entry superseded. Author sidecar is provenance, not independent resolution; root rechecked changed claim against the original. |
+| search | research/sources/round89-sulfides/20261015T061541Z-source-investigation.json; Bounded source/dedup search; additional root exact-DOI and troilite primary/conflict searches | context_only | Hidden/ignored material searches were included in discovery deduplication. Exact-DOI correction queries returned no relevant notice in inspected results; this is not an exhaustive absence claim. Oilfield2024PMC11319257 and synthetic-chondrite2021 DOI10.1111/maps.13641 are preview-only leads, not accepted evidence; unrelated retracted prebiotic paper is excluded. |
+| batch | /private/tmp/cmm-round89-final-gates.json; All four actual terminal command receipts and corresponding log | supports | Independently verified exit0, four completed commands, unchanged record inputs, trusted base and log SHA256 87a108c71c505302f1ab687ff999aae027f16fd09bde9cef66e98222575d8832. Full just check:317passed3skipped;426records0failed;488histories0errors; rendered pages consistent. |
+
+## Limits And Additional Notes
+
+- Natural mixed feed and undefined4%/uncertainty bases limit pure-phase and quantitative transfer.
+- Community identities, final inoculum/nutrient equivalence and molecular causes are unresolved.
+- No pH/redox-matched or killed-cell comparison and no closed iron/sulfur balance or recovered product.
+- Preparation/reactor pH comparability remains unresolved; the independent redox text/graphic difference is retained.
+- Bounded notice/counterevidence search is not an exhaustive absence guarantee; preview-only leads were not curated.
+- All outcomes describe laboratory flasks, not industrial deployment.
+- First unsaved final draft failed because its search scope was prose-only rather than the required search_scope field; no review artifact was persisted. Added the explicit bounded scope before the sole successful final save.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T063059Z-troilite-round89-final-resolution
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent complete troilite review and explicit pH-finding resolution
+started_at: '2026-10-15T06:25:06.409210Z'
+finished_at: '2026-10-15T06:30:59.588130Z'
+reviewer:
+  identity: codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The round68_iron_sulfides agent authored and corrected the record.
+    Root independently inspected the original and final bytes and primary evidence,
+    raised F1, and has not edited the scientific owner.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The corrected owner supports conditional thermophilic-community-associated
+  dissolution of characterized natural troilite-bearing feed. The medium-versus-reactor
+  pH interpretation is now appropriately bounded; F1 is explicitly resolved. Soluble
+  iron, diffraction change and recovered product remain separate. No taxon-specific
+  causal, pure-phase, criticality or industrial claim is inferred.
+source:
+  git_revision: b797f1be3d9d7b45444e0e3f54f3845d8aeeb1ae
+  state: working_tree
+  inputs:
+  - path: data/records/troilite.yaml
+    sha256: 9ffabe9fd2204c41191ff4167f68071ec02b160fed4b432dffb0b626cfbdb017
+    role: target
+  - path: history/records/troilite/2026-10-15T061210Z-codex-7d933f.yaml
+    sha256: faa988375fd80f5a98f3ef48d7f6b4a0a572723e0245c327474bc70c58435140
+    role: context
+  - path: history/records/troilite/2026-10-15T061828Z-codex-4619a3.yaml
+    sha256: d0c5bf06e77ea16b01529414e716388a6de164077007d921cfa10af736184e87
+    role: context
+  - path: research/sources/round89-sulfides/20261015T062340Z-ph-scope-correction.json
+    sha256: db5db501d0904403abfe67fa2e398ff27d13b4046793b535e4e9d0255c97f566
+    role: context
+targets:
+- target_id: cmmmech:troilite
+  path: data/records/troilite.yaml
+  label: Troilite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/troilite.yaml
+    role: scientific record
+scope:
+  description: Complete current owner, CREATE and EDIT histories, original primary
+    text and all figures/tables, identity references, original scoped finding and
+    correction dossier.
+  selection: The explicit new troilite owner in round89.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:troilite
+checks:
+- check_id: primary
+  name: Independent complete primary and identity assessment
+  required: true
+  status: passed
+  summary: Full source, methods, outcomes, controls, identity and final pH correction
+    rechecked; original finding and final bytes inspected independently.
+  target_ids:
+  - cmmmech:troilite
+  evidence_ids:
+  - primary
+  - ph
+  - identity
+  - handbook
+  - owner
+  - prior
+  - correction
+- check_id: named
+  name: Affected corrected-owner strict validation
+  required: true
+  status: passed
+  summary: Author ran uv run --locked cmmmech validate data/records/troilite.yaml
+    --require-records:1record0failed; receipt is in the append-only correction. Root
+    independently validates all426 current owners in the batch.
+  target_ids:
+  - cmmmech:troilite
+  evidence_ids:
+  - correction
+- check_id: batch_1
+  name: Terminal batch check 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  summary: Actual coordinator execution from 2026-10-15T06:24:51.895956+00:00 to 2026-10-15T06:29:31.463184+00:00;
+    terminal receipt and log hash independently verified, not a claimed separate rerun.
+  target_ids:
+  - cmmmech:troilite
+  evidence_ids:
+  - batch
+- check_id: batch_2
+  name: Terminal batch check 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  summary: Actual coordinator execution from 2026-10-15T06:29:31.463211+00:00 to 2026-10-15T06:29:40.836668+00:00;
+    terminal receipt and log hash independently verified, not a claimed separate rerun.
+  target_ids:
+  - cmmmech:troilite
+  evidence_ids:
+  - batch
+- check_id: batch_3
+  name: Terminal batch check 3
+  command: uv run --locked cmmmech validate-history --base b797f1be3d9d7b45444e0e3f54f3845d8aeeb1ae
+  required: true
+  status: passed
+  exit_code: 0
+  summary: Actual coordinator execution from 2026-10-15T06:29:40.836694+00:00 to 2026-10-15T06:29:45.576822+00:00;
+    terminal receipt and log hash independently verified, not a claimed separate rerun.
+  target_ids:
+  - cmmmech:troilite
+  evidence_ids:
+  - batch
+- check_id: batch_4
+  name: Terminal batch check 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  summary: Actual coordinator execution from 2026-10-15T06:29:45.576845+00:00 to 2026-10-15T06:29:50.245220+00:00;
+    terminal receipt and log hash independently verified, not a claimed separate rerun.
+  target_ids:
+  - cmmmech:troilite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/troilite.yaml
+  locator: Complete owner, mechanism evidence and provenance
+  accessed_at: '2026-10-15T06:27:09.410323Z'
+  support: supports
+  summary: Read exact final owner and both linked histories; pH preparation/reactor
+    distinction is explicit and all other measurement/control limits remain.
+  snapshot_sha256: 9ffabe9fd2204c41191ff4167f68071ec02b160fed4b432dffb0b626cfbdb017
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.hydromet.2010.11.015
+  locator: Complete CONICET original, eight PDF pages including cover; printed19–25;
+    Methods2.1–2.5, Tables1–2, Figures1–6
+  accessed_at: '2026-10-15T06:27:09.410323Z'
+  support: supports
+  summary: Full original read and Figures3–6 visually inspected. Natural troilite
+    with marcasite; below74 micrometres,4% unspecified basis, duplicate65C150rpm70day
+    flasks. B9/LM unresolved enrichments; no isolate causal test. Day70 soluble-feed-Fe60±12/48±9/32±7
+    versus15±2%; uncertainty undefined. Single-peak-loss90.5/85.7/81.0/52.4% has a
+    different denominator. Reprecipitation and control dissolution limit biological/recovery
+    attribution.
+  snapshot_sha256: 44466a4514b75365b4984a80af7dee6d23ecee78e344c5489f00daebb7610648
+- evidence_id: ph
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.hydromet.2010.11.015
+  locator: Methods2.2/2.5 printed20–21; Figure4 and prose printed23
+  accessed_at: '2026-10-15T06:27:09.410323Z'
+  support: partial
+  summary: M88 prepared at pH2 precedes mineral addition; early/control reactor values
+    near4.5–5 need not represent the same material state or time. Source discusses
+    proton-consuming dissolution, but no paired observations establish the explanation.
+    Control prose does not name2. Separate prose600mV versus plotted~520mV remains
+    unresolved.
+- evidence_id: identity
+  kind: primary_source
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Page221 Troilite row; page1 status/year definitions
+  accessed_at: '2026-10-15T06:27:09.410323Z'
+  support: supports
+  summary: Verified FeS, G and1863; year is original description, not approval identifier.
+    Troilite is distinct from pyrrhotite and mackinawite. Current mineral-list status
+    is not criticality.
+- evidence_id: handbook
+  kind: primary_source
+  reference: https://www.handbookofmineralogy.org/pdfs/troilite.pdf
+  locator: One-page entry, formula/crystal system
+  accessed_at: '2026-10-15T06:27:09.410323Z'
+  support: supports
+  summary: Verified FeS and hexagonal identity. Cubic habit language/assumed residue
+    morphology in experimental source does not replace crystallographic identity.
+- evidence_id: prior
+  kind: prior_review
+  reference: reviews/structured/20261015T061619Z-troilite-round89-initial-ph-scope/review.yaml
+  locator: F1 / troilite-round89-medium-versus-reactor-ph
+  accessed_at: '2026-10-15T06:27:09.410323Z'
+  support: supports
+  summary: Original immutable scoped finding and unavailable final gate are retained.
+- evidence_id: correction
+  kind: record_content
+  reference: research/sources/round89-sulfides/20261015T062340Z-ph-scope-correction.json
+  locator: Entire append-only correction and linked EDIT
+  accessed_at: '2026-10-15T06:27:09.410323Z'
+  support: supports
+  summary: Original source dossier is retained and exact pH entry superseded. Author
+    sidecar is provenance, not independent resolution; root rechecked changed claim
+    against the original.
+  snapshot_sha256: db5db501d0904403abfe67fa2e398ff27d13b4046793b535e4e9d0255c97f566
+- evidence_id: search
+  kind: search
+  reference: research/sources/round89-sulfides/20261015T061541Z-source-investigation.json
+  locator: Bounded source/dedup search; additional root exact-DOI and troilite primary/conflict
+    searches
+  accessed_at: '2026-10-15T06:27:09.410323Z'
+  support: context_only
+  summary: Hidden/ignored material searches were included in discovery deduplication.
+    Exact-DOI correction queries returned no relevant notice in inspected results;
+    this is not an exhaustive absence claim. Oilfield2024PMC11319257 and synthetic-chondrite2021
+    DOI10.1111/maps.13641 are preview-only leads, not accepted evidence; unrelated
+    retracted prebiotic paper is excluded.
+  search_scope: Bounded 2026-10-15 author exact-name/DOI queries and root exact Giaveno
+    DOI correction/retraction plus troilite microbial counterevidence web queries;
+    original primary and identity sources opened. Discovery included hidden/ignored
+    local files. Only returned first result sets assessed; blocked full texts and
+    preview-only leads not accepted. No exhaustive literature or whole-machine absence
+    claim.
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round89-final-gates.json
+  locator: All four actual terminal command receipts and corresponding log
+  accessed_at: '2026-10-15T06:30:59.588130Z'
+  support: supports
+  summary: Independently verified exit0, four completed commands, unchanged record
+    inputs, trusted base and log SHA256 87a108c71c505302f1ab687ff999aae027f16fd09bde9cef66e98222575d8832.
+    Full just check:317passed3skipped;426records0failed;488histories0errors; rendered
+    pages consistent.
+  snapshot_sha256: 5a0ab233cf3bfa3eb0b43f40edac9098d6ca547851b612e09b711d304bce9a70
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral species, experimental form and criticality
+  outcome: supported
+  summary: Troilite FeS is maintained separately from other iron sulfides, elements
+    and resources. Natural mixed feed is explicit; no inherited criticality is asserted.
+  target_ids:
+  - cmmmech:troilite
+  evidence_ids:
+  - owner
+  - identity
+  - handbook
+  - primary
+- assessment_id: scope
+  area: evidence
+  topic: Community, substrate, conditions and controls
+  outcome: supported
+  summary: Living B9/LM enrichments are unresolved communities. Partial FISH signals
+    do not identify causal organisms. Natural mixed feed, steam treatment, size, duplicate
+    duration/temperature/agitation and unspecified inoculum/4% basis are retained.
+    Control is uninoculated, not matched through evolving pH/redox; molecular attribution
+    remains qualified.
+  target_ids:
+  - cmmmech:troilite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: outcomes
+  area: evidence
+  topic: Measurement denominators and deployment
+  outcome: supported
+  summary: Source soluble-feed-iron percentages and normalized diffraction-peak loss
+    are distinct reported outcomes; uncertainty undefined, reprecipitation and sterile
+    release retained. No isolated recovery, phase mass balance or industrial deployment
+    claimed.
+  target_ids:
+  - cmmmech:troilite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: ph
+  area: consistency
+  topic: Correction of pH interpretation
+  outcome: supported
+  summary: Final wording distinguishes preparation medium from reactor state and labels
+    post-addition acid consumption as possible, not demonstrated. The separate redox
+    discrepancy remains explicit. F1 acceptance is met.
+  target_ids:
+  - cmmmech:troilite
+  evidence_ids:
+  - owner
+  - ph
+  - prior
+  - correction
+- assessment_id: provenance
+  area: provenance
+  topic: Append-only histories and review lineage
+  outcome: supported
+  summary: CREATE retained; EDIT and inline event accurately describe this correction.
+    Prior review and source dossier preserved with a linked addendum. This successor
+    resolves the exact F1 occurrence rather than silently replacing it.
+  target_ids:
+  - cmmmech:troilite
+  evidence_ids:
+  - owner
+  - prior
+  - correction
+findings:
+- finding_id: F1
+  issue_key: troilite-round89-medium-versus-reactor-ph
+  category: evidence
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Prepared-medium and reactor pH are now distinguished
+  description: The original minor overstatement is corrected. Both observations are
+    retained without asserting equivalent experimental timing/state, and acid-consuming
+    dissolution is only an untested explanation. The independent redox prose/graphic
+    discrepancy remains qualified.
+  target_ids:
+  - cmmmech:troilite
+  field_paths:
+  - mechanisms[0].evidence[2].explanation
+  evidence_ids:
+  - owner
+  - primary
+  - ph
+  - prior
+  - correction
+  - batch
+  rule_id: compare-like-experimental-states
+  native_severity: minor
+  normalization_reason: Bounded overstatement of a limitation; identity and conditional
+    dissolution comparison remain supported.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/troilite.yaml
+    role: scientific record
+  disposition_reason: Independent final-source reinspection and exact corrected owner/EDIT
+    inspection satisfy F1. The immutable original occurrence remains and the terminal
+    batch gates below validate the final owner/history.
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261015T061619Z-troilite-round89-initial-ph-scope
+    finding_id: F1
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/308
+actions: []
+limitations:
+- Natural mixed feed and undefined4%/uncertainty bases limit pure-phase and quantitative
+  transfer.
+- Community identities, final inoculum/nutrient equivalence and molecular causes are
+  unresolved.
+- No pH/redox-matched or killed-cell comparison and no closed iron/sulfur balance
+  or recovered product.
+- Preparation/reactor pH comparability remains unresolved; the independent redox text/graphic
+  difference is retained.
+- Bounded notice/counterevidence search is not an exhaustive absence guarantee; preview-only
+  leads were not curated.
+- All outcomes describe laboratory flasks, not industrial deployment.
+notes:
+- First unsaved final draft failed because its search scope was prose-only rather
+  than the required search_scope field; no review artifact was persisted. Added the
+  explicit bounded scope before the sole successful final save.
+```

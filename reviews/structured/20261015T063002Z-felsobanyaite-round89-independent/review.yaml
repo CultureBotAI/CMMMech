@@ -1,0 +1,321 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/CMMMech
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+review_id: 20261015T063002Z-felsobanyaite-round89-independent
+title: Independent scientific review of Felsőbányaite
+started_at: '2026-10-15T06:16:43.272949Z'
+finished_at: '2026-10-15T06:30:02.434482Z'
+reviewer:
+  identity: codex /root/round68_new_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored the mineral owner/history. Reviewer authored unrelated
+    FGD wastewater, independently inspected this original mineral article and authorities
+    after native target inspection, and made no owner/history edits. Shared acquisition
+    is disclosed.
+source:
+  git_revision: b797f1be3d9d7b45444e0e3f54f3845d8aeeb1ae
+  state: working_tree
+  inputs:
+  - path: data/records/felsobanyaite.yaml
+    sha256: 00c42bd80ce395e4a1e2253c8023a52cf3ad086fbb2f8700b50f13bc861c2ef9
+    role: target
+  - path: history/records/felsobanyaite/2026-10-15T060757Z-codex-e6c013.yaml
+    sha256: d464c3934c3e8469fa906d5765cf787738ebc9a7712fe5779215b2777f668e45
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:felsobanyaite
+  path: data/records/felsobanyaite.yaml
+  label: Felsőbányaite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/felsobanyaite.yaml
+    role: maintained_scientific_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/felsobanyaite/2026-10-15T060757Z-codex-e6c013.yaml
+    role: canonical_history
+scope:
+  description: Complete frozen identity-only mineral owner, primary natural-characterization
+    claims, source boundaries and actual inline/canonical provenance.
+  selection: Assigned exact maintained owner; canonical inspect captured record/schema/CREATE
+    before scientific judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:felsobanyaite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/felsobanyaite.yaml
+  locator: 'Complete final native-inspected owner. Actual local artifact: /private/tmp/CMMMech-expansion-round89-20261015/data/records/felsobanyaite.yaml'
+  accessed_at: '2026-10-15T06:30:02.434482Z'
+  support: supports
+  summary: Frozen mineral identity, primary natural-specimen claims and source limits
+    reassessed.
+  snapshot_sha256: 00c42bd80ce395e4a1e2253c8023a52cf3ad086fbb2f8700b50f13bc861c2ef9
+- evidence_id: history
+  kind: record_content
+  reference: history/records/felsobanyaite/2026-10-15T060757Z-codex-e6c013.yaml
+  locator: 'Complete canonical CREATE and distinct inline event. Actual local artifact:
+    /private/tmp/CMMMech-expansion-round89-20261015/history/records/felsobanyaite/2026-10-15T060757Z-codex-e6c013.yaml'
+  accessed_at: '2026-10-15T06:30:02.434482Z'
+  support: supports
+  summary: Target, actual codex/GPT-6 identity, timestamps and stated creation agree;
+    no reviewer owner/history edits.
+  snapshot_sha256: d464c3934c3e8469fa906d5765cf787738ebc9a7712fe5779215b2777f668e45
+- evidence_id: primary
+  kind: primary_source
+  reference: https://acta.bibl.u-szeged.hu/39416/1/mineralogica_038.pdf
+  locator: 'Complete Farkas and Pertlik1997 article, printedpp5–15 / volumePDFpp6–16;
+    full text, all Tables1–6 and Figures1–3 visually inspected. The rest of the journal
+    volume is outside this assessment. Actual local artifact: /private/tmp/cmm-round89-root-sources/felsobanyaite-structure.pdf'
+  accessed_at: '2026-10-15T06:30:02.434482Z'
+  support: supports
+  summary: Natural type-locality felsobanyaite and Sussex basaluminite were chemically
+    and crystallographically compared. P21/layer structure is supported, while beam
+    dehydration reduced accuracy and H positions were not determined.
+  snapshot_sha256: 2caf3eb1cea685f55bbb8af8f7de02dc76e81739531a2e64699aa471b8e2bf4d
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'Actual September2026 retained original; definitionspage1, Felsőbányaite
+    rowpage68 and separate hydrobasaluminite rowpage97 visually checked. Actual local
+    artifact: /private/tmp/cmm-round89-root-sources/ima-2026-09.pdf'
+  accessed_at: '2026-10-15T06:30:02.434482Z'
+  support: supports
+  summary: Mineral formula Al4(SO4)(OH)10·4H2O, G status and1854 original-description
+    year confirmed. No IMA accession or criticality is inferred from the year.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: boundary
+  kind: primary_source
+  reference: https://research.manchester.ac.uk/en/publications/the-nanocrystalline-structure-of-basaluminite-an-aluminum-hydroxi/
+  locator: Author institutional abstract of Carreroetal2017 DOI10.2138/am-2017-6059
+    independently opened. Web text context only, no local original snapshot or experimental-method/figure
+    acceptance.
+  accessed_at: '2026-10-15T06:30:02.434482Z'
+  support: context_only
+  summary: The abstract supports the record’s caution that structural similarity alone
+    does not settle equivalence of poorly ordered basaluminite to crystalline felsobanyaite.
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round89-felsobanyaite-review/search-notes.json
+  locator: 'Independent exact-DOI/title notice/counterevidence queries and actual
+    route outcomes. Actual local artifact: /private/tmp/cmm-round89-felsobanyaite-review/search-notes.json'
+  accessed_at: '2026-10-15T06:30:02.434482Z'
+  support: context_only
+  summary: No affecting correction identified in inspected returned sets; a newly
+    found Carrero mirror is a follow-up, not imported detailed experimental evidence.
+  search_scope: Three exact queries listed in the retained notes, original/institutional
+    pages opened on2026-10-15. Not exhaustive; no universal absence of notices or
+    sources claimed.
+  snapshot_sha256: 389324069e8a91a30593538b877647acd387c85a92ea28ca0e677d8a33137da9
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round89-felsobanyaite-review/dedup-paths.txt
+  locator: 'Hidden/ignored-inclusive maintained textual lineage search. Actual local
+    artifact: /private/tmp/cmm-round89-felsobanyaite-review/dedup-paths.txt'
+  accessed_at: '2026-10-15T06:30:02.434482Z'
+  support: context_only
+  summary: Four matching paths identify the current owner/history/dossier; no second
+    current species owner was found in the bounded searched paths.
+  search_scope: rg --no-ignore --hidden --follow -l -i fels.b.nyaite|basaluminite|am-2017-6059|Farkas.*Pertlik
+    data/records research reviews history in current worktree. Relevant source raw
+    roots already identified in author dossier; no whole-machine absence claim.
+  snapshot_sha256: 4e19b3354cea395c1c961ce6af7973052e429493c519d537d9c1dc273d24491f
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round89-felsobanyaite-review/named-validation.json
+  locator: 'Actual independent named validation result transcribed after successful
+    tool execution; no separate subprocess log was retained. Actual local artifact:
+    /private/tmp/cmm-round89-felsobanyaite-review/named-validation.json'
+  accessed_at: '2026-10-15T06:30:02.434482Z'
+  support: supports
+  summary: One record checked, zero failed; exact owner hash bound.
+  snapshot_sha256: 4dfd8c715fd51f606c35c3b303518d7d168ce1dc9ead4a8e59f6853533624752
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round89-final-gates.json
+  locator: 'Actual four-command coordinator batch receipt; log /private/tmp/cmm-round89-final-gates.log
+    SHA256 87a108c71c505302f1ab687ff999aae027f16fd09bde9cef66e98222575d8832. Actual
+    local artifact: /private/tmp/cmm-round89-final-gates.json'
+  accessed_at: '2026-10-15T06:30:02.434482Z'
+  support: supports
+  summary: Actual receipt, exact command list, four zero exits, unchanged owner hashes
+    and retained log digest independently verified. No hosted/publication success
+    inferred.
+  snapshot_sha256: 5a0ab233cf3bfa3eb0b43f40edac9098d6ca547851b612e09b711d304bce9a70
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/felsobanyaite.yaml --require-records
+  status: passed
+  required: true
+  summary: Actual independent execution returned one record checked, zero failed.
+    Tool result transcribed with provenance limits in named-validation.json.
+  target_ids:
+  - cmmmech:felsobanyaite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Actual batch gate 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-15T06:24:51.895956Z through 2026-10-15T06:29:31.463184Z;
+    actual terminal result and log hash verified.
+  target_ids:
+  - cmmmech:felsobanyaite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Actual batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-15T06:29:31.463211Z through 2026-10-15T06:29:40.836668Z;
+    actual terminal result and log hash verified.
+  target_ids:
+  - cmmmech:felsobanyaite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Actual batch gate 3
+  command: uv run --locked cmmmech validate-history --base b797f1be3d9d7b45444e0e3f54f3845d8aeeb1ae
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-15T06:29:40.836694Z through 2026-10-15T06:29:45.576822Z;
+    actual terminal result and log hash verified.
+  target_ids:
+  - cmmmech:felsobanyaite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Actual batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-15T06:29:45.576845Z through 2026-10-15T06:29:50.245220Z;
+    actual terminal result and log hash verified.
+  target_ids:
+  - cmmmech:felsobanyaite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+summary: Qualified acceptance of the mineral identity and natural-crystal characterization,
+  without transferred microbial recovery, criticality or industrial claims. No supported
+  corrective defect found.
+limitations:
+- Farkas1997 reports rapid beam-induced dehydration and limited structural accuracy;
+  hydrogen positions were not determined. Its interpretation of a Sussex basaluminite
+  specimen does not establish equivalence for every poorly ordered mine-drainage precipitate.
+- Carrero2017 is context-only counterevidence here. Institutional abstract and newly
+  located mirror text were inspected, but its full graphics and SI were not reviewed
+  or used to import measurements. The author’s earlier access limitation remains honest.
+- No microbial organism, biomass state, mechanism, extraction yield or industrial
+  deployment is established by this identity-only record. Criticality is unassessed
+  and not inherited from aluminium.
+- Bounded notice/duplicate searches do not establish universal absence of other sources
+  or corrections. Structural checks do not prove scientific truth.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral identity versus element, bulk precipitate and neighbouring species
+  outcome: supported
+  summary: IMA dated authority supports the exact hydrated aluminium hydroxysulfate
+    species and formula. Grandfathered1854 denotes original-description year, not
+    a unique modern approval ID. Hydrobasaluminite is separately listed. No criticality
+    jurisdiction/list/edition is asserted.
+  target_ids:
+  - cmmmech:felsobanyaite
+  evidence_ids:
+  - record
+  - ima
+- assessment_id: specimen
+  area: evidence
+  topic: Original natural-specimen characterization and limitations
+  outcome: supported
+  summary: The complete original supports type-locality and Sussex material comparison,
+    monoclinic P21 and aluminium-oxygen layers. Experimental/Table2 chemistry, Table3
+    diffraction, Table4 atomic model, Tables5–6 and Figures1–3 were checked. Beam
+    dehydration and unlocated H atoms are preserved, so the model is not overstated.
+  target_ids:
+  - cmmmech:felsobanyaite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: boundary
+  area: evidence
+  topic: Basaluminite material-equivalence uncertainty
+  outcome: supported
+  summary: The 1997 authors call basaluminite a microcrystalline variety, while the
+    independently inspected2017 abstract questions generalized equivalence for disordered
+    AMD material. The owner accurately attributes the earlier interpretation and preserves
+    later uncertainty without treating it as a new accepted species or transferring
+    experiments.
+  target_ids:
+  - cmmmech:felsobanyaite
+  evidence_ids:
+  - primary
+  - boundary
+  - record
+  - search
+- assessment_id: mechanisms
+  area: evidence
+  topic: Identity-only scope and omitted microbial claims
+  outcome: supported
+  summary: This is mineral-characterization evidence. No organism, biomass, controlled
+    microbial reaction, recovered-product denominator or deployment claim is accepted.
+    Missing mechanisms are appropriate; the inaccessible microbial-source follow-up
+    remains separate.
+  target_ids:
+  - cmmmech:felsobanyaite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Current bytes, history and actual checks
+  outcome: supported
+  summary: Native inspect captured all maintained inputs before judgment. CREATE and
+    distinct inline event match actual curation; the current owner hash remains stable.
+    Named validation and all four actual batch gates passed; canonical review checker
+    will run separately after this native save.
+  target_ids:
+  - cmmmech:felsobanyaite
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - dedup
+findings: []
+actions: []
+notes:
+- No reviewer edits to owner or history. Entire11-page primary article and its three
+  figures/six tables were inspected, not the unrelated remainder of the journal volume.
+- The context-only Carrero institutional page has no local-original snapshot hash;
+  that access limitation is explicit. Accepted primary support is the nonempty hash-bound1997
+  original and dated IMA authority.
+- New mirror route was sent to coordinator as a future acquisition lead; no access-control
+  circumvention or transfer of unreviewed detailed measurements.
+- The first unsaved review draft used ISO +00:00 rather than the governed Z timestamp
+  form and was rejected before persistence. The same instants were normalized; scientific
+  inputs and assessment were unchanged.

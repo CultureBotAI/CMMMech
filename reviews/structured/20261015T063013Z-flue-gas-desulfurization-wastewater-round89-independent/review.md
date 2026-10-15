@@ -1,0 +1,470 @@
+# Independent scientific review of flue-gas-desulfurization wastewater
+
+- Review: 20261015T063013Z-flue-gas-desulfurization-wastewater-round89-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T06:19:04.009031Z
+- Finished UTC: 2026-10-15T06:30:13.246175Z
+- Reviewer: codex /root/round68_phosphates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of the liquid FGD resource and source-specific biological pilot treatment. Corrected selenium assays, failed sustained target, uncertain causal pathway and absence of recovered product are preserved. No corrective finding.
+
+## Scope And Provenance
+
+Whole maintained resource owner, canonical CREATE and paired dossier; complete accepted primary pilot methods/results and claim-bearing graphics/tables, with independent embedded-workbook extraction and selected QC-cell assessment.
+
+Selection: Assigned exact canonical owner inspected before judgment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base b797f1be3d9d7b45444e0e3f54f3845d8aeeb1ae.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:flue-gas-desulfurization-wastewater | data/records/flue-gas-desulfurization-wastewater.yaml | maintained | Flue-gas desulfurization wastewater |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named strict validation | passed | True | cmmmech:flue-gas-desulfurization-wastewater | Actual independent command completed: one record, zero failures. |
+| Completed coordinator batch command 1 | passed | True | cmmmech:flue-gas-desulfurization-wastewater | Actual terminal receipt and retained log independently verified; no reviewer rerun claimed. |
+| Completed coordinator batch command 2 | passed | True | cmmmech:flue-gas-desulfurization-wastewater | Actual terminal receipt and retained log independently verified; no reviewer rerun claimed. |
+| Completed coordinator batch command 3 | passed | True | cmmmech:flue-gas-desulfurization-wastewater | Actual terminal receipt and retained log independently verified; no reviewer rerun claimed. |
+| Completed coordinator batch command 4 | passed | True | cmmmech:flue-gas-desulfurization-wastewater | Actual terminal receipt and retained log independently verified; no reviewer rerun claimed. |
+
+## Scientific And Domain Assessments
+
+### Liquid secondary resource and experiment boundary
+
+identity: supported. Targets: cmmmech:flue-gas-desulfurization-wastewater.
+
+FGD wastewater is distinct from solid FGD gypsum, coal ash and selenium. The particular pretreated/diluted pilot feed does not define invariant composition for every FGD stream. No unsupported elemental or mineral identifier is attached.
+
+### Communities, conditions and causal limits
+
+evidence: supported. Targets: cmmmech:flue-gas-desulfurization-wastewater.
+
+Municipal living biomass and GE-provided unresolved inoculum were used with changing nutrient and operating recipes. Source-supported microbial treatment context is appropriate, but no taxa or strain are invented and no matched sterile train isolates biological reduction from sorption, precipitation and filtration. Supplier imagery does not characterize this pilot solid.
+
+### Concentrations, analytical correction and recovery denominator
+
+quantity: supported. Targets: cmmmech:flue-gas-desulfurization-wastewater.
+
+Reported stage means and corrected assays are accurately transcribed with units. They are not mass-normalized recovery or isolated yield. The unreconciled January28 dissolved-species excess and missing selected January19 TableB-1 row are preserved; original workbook supports the latter correction.
+
+### Failed target, field-pilot scale and historical benchmark
+
+scope: supported. Targets: cmmmech:flue-gas-desulfurization-wastewater.
+
+The real-feed pilot had sustained performance loss, incomplete nitrification, changing simultaneous operating factors and no achieved full-scale contact-time target. Six micrograms per L is a historical source-defined benchmark, not current regulation. Neither industrial success nor a marketable pure selenium product is inferred.
+
+### Exact native owner/history and independent evidence
+
+provenance: supported. Targets: cmmmech:flue-gas-desulfurization-wastewater.
+
+Native inspect preceded judgment. Owner, CREATE and paired dossier hashes remain unchanged. Complete report methods/results and all22 main figures were read/inspected; selected embedded original cells independently parsed. No record/history edits by reviewer and no source-contact or laboratory replication.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/flue-gas-desulfurization-wastewater.yaml; Complete exact maintained owner after native inspection. Artifact: /private/tmp/CMMMech-expansion-round89-20261015/data/records/flue-gas-desulfurization-wastewater.yaml | supports | One liquid secondary-resource identity with qualified treatment-associated selenium separation, no recovered product or criticality claim. |
+| history | history/records/flue-gas-desulfurization-wastewater/2026-10-15T061241Z-codex-fc9da3.yaml; Canonical CREATE plus separately timestamped inline event and exact history_ref. Artifact: /private/tmp/CMMMech-expansion-round89-20261015/history/records/flue-gas-desulfurization-wastewater/2026-10-15T061241Z-codex-fc9da3.yaml | supports | Actual codex/GPT-6 actor, date, target and change agree; sidecar timestamp is not substituted for the earlier inline event. |
+| pilot_design | https://restservice.epri.com/publicdownload/000000003002006089/0/Product; Complete 96-page EPRI report 3002006089, final March 2017. Chapters 1–3, printed 2-1–3-11/PDF23–41; original Figures2-1–2-4 and3-1–3-3 inspected, especially Table3-2/PDF36–37; no external journal DOI invented. Artifact: /private/tmp/cmm-round89-resources-research/epri2017.pdf | supports | Physical/chemical pretreatment and 1:1 Lake Michigan water dilution precede the inoculated MBR and two 1270 L GAC beds. Kenosha mixed liquor and GE inoculum are unresolved communities. Figure2-4 is supplier imagery rather than pilot-product phase evidence. |
+| pilot_outcome | https://restservice.epri.com/publicdownload/000000003002006089/0/Product; Chapters4–5/PDF43–77; all original Figures4-1–4-15 inspected, Tables4-4/PDF57,4-6/PDF60,4-7/PDF61–62,5-1/PDF73; Sections4-12–4-26 and5-1–5-7. Artifact: /private/tmp/cmm-round89-resources-research/epri2017.pdf | supports | Condition2 averages 1071/173/5 micrograms per L are stage concentration summaries. Final means36/21 in Conditions3/4 exceed the historical source target6. Elevated sample preceded same-day flow change; no controlled sole cause or successful commercial endpoint. Nitrification loss and retained denitrification are accurately qualified. |
+| analytical | https://restservice.epri.com/publicdownload/000000003002006089/0/Product; Table4-8/PDF66; AppendixB complete PDF89–92, original TablesB-1/B-2 inspected. AppendixA sampling plan/PDF81–88 text screened; no extra biological control inferred. Artifact: /private/tmp/cmm-round89-resources-research/epri2017.pdf | supports | January18/19/21 initial13/11/8.2 became15/22/31 after peroxide redigestion. January28 Brooks species sum135.4 versus total17/dissolved9.28 remains unreconciled. TableB-1 contains selected rows and omits January19 peroxide22; it is present in the embedded original. Backwash liquid is not a demonstrated pure selenium yield. |
+| embedded | https://restservice.epri.com/publicdownload/000000003002006089/0/Product; Original PDF-embedded Worksheet in 3002006089_test.xlsx; all20 worksheet names enumerated; direct OOXML cached values and preparation notes of S7 selenium qc rows28–46 independently inspected, especially E41=22/N41 peroxide redigestion. Artifact: /private/tmp/cmm-round89-resources-research/epri2017-embedded-raw.xlsx | supports | Independent extraction from the PDF exactly matched these original workbook bytes. Stored assays support the correction lineage; no recalculation, full-workbook visual audit, bulk import or independent replication is asserted. |
+| extraction | /private/tmp/cmm-round89-fgd-independent/independent-workbook-proof.json; Independent fitz embedded-file extraction and direct ZIP/XML parsing; original parent/child hashes,20-sheet enumeration and exact selected cached cells. Artifact: /private/tmp/cmm-round89-fgd-independent/independent-workbook-proof.json | supports | Confirms actual embedded provenance and relevant QC cells without relying solely on the curator-derived workbook JSON. |
+| dossier | research/sources/round89-resources/20261015T061518Z-source-investigation.json; Full source investigation, actual PDF/embedded hashes and declared omitted source routes. Artifact: /private/tmp/CMMMech-expansion-round89-20261015/research/sources/round89-resources/20261015T061518Z-source-investigation.json | supports | Author preserves conflicting recipe schedules, lack of pilot-product characterization, assay failures and study-lineage boundaries. No unassessed future report becomes accepted evidence. |
+| named | /private/tmp/cmm-round89-fgd-independent/named-validation.log; Independent actual named strict validation terminal exit0. Artifact: /private/tmp/cmm-round89-fgd-independent/named-validation.log | supports | Checked one record; zero failed. |
+| notices | Bounded current primary-source and local-lineage searches; Actual query strings/date/scope and hidden/ignored-inclusive followed-link local match capture. Artifact: /private/tmp/cmm-round89-fgd-independent/bounded-search.json | context_only | No matched external correction in the inspected result set; the report itself supplies strong contrary/limiting evidence. Later reports remain follow-up leads. |
+| batch | /private/tmp/cmm-round89-final-gates.json; All FOUR actual coordinator commands; 2026-10-15T06:24:51.895561+00:00 to 2026-10-15T06:29:50.323978+00:00; log /private/tmp/cmm-round89-final-gates.log SHA256 87a108c71c505302f1ab687ff999aae027f16fd09bde9cef66e98222575d8832. Artifact: /private/tmp/cmm-round89-final-gates.json | supports | Actual terminal receipt and log hash, base/worktree, exact command vectors and unchanged target input independently verified. No reviewer rerun claimed. |
+
+## Limits And Additional Notes
+
+- The pilot lacks a matched sterile train, identified taxa and direct characterization of retained selenium. Biological reduction is the source interpretation, not exclusive proof separating sorption, chemical precipitation and filtration.
+- Stage concentrations are not flow-normalized mass recovery; no isolated selenium product, complete balance or successful full-scale performance is established.
+- Internal analytical discrepancies and conflicting nutrient/chemical schedules remain unresolved. January28 total/dissolved/species values cannot be reconciled by this documentary review.
+- The embedded workbook was independently extracted and relevant cached cells inspected, not fully visually audited or recalculated. All20 worksheet names were enumerated; unrelated cells are outside the scientific scope.
+- Historical source-defined targets are not current legal guidance. Bounded search and document review do not establish exhaustive literature coverage or independently replicate the pilot.
+- Later EPRI2020/2024 reports are retained as future-source leads only; their experimental claims were not assessed or imported.
+- No owner/history or dossier changes by reviewer. Initial native capture used a URL-form owner repository; before assessment/save, the canonical CultureBotAI/CMMMech repository was recaptured with unchanged target/context hashes. Both external captures are retained; no immutable native review was replaced.
+- The review start is the recorded creation time of the preserved initial-target preparation file. Actual final checks were verified at completion, after scientific assessment preparation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T063013Z-flue-gas-desulfurization-wastewater-round89-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of flue-gas-desulfurization wastewater
+started_at: '2026-10-15T06:19:04.009031Z'
+finished_at: '2026-10-15T06:30:13.246175Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer authored struvite-k, not this FGD wastewater owner/history.
+    Curator is codex /root/round68_new_frontier. Shared acquired originals were independently
+    read and graphics inspected after native capture; embedded XLSX was independently
+    extracted and selected original cells parsed. No laboratory replication or owner
+    edit.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of the liquid FGD resource and source-specific biological
+  pilot treatment. Corrected selenium assays, failed sustained target, uncertain causal
+  pathway and absence of recovered product are preserved. No corrective finding.
+source:
+  git_revision: b797f1be3d9d7b45444e0e3f54f3845d8aeeb1ae
+  state: working_tree
+  inputs:
+  - path: data/records/flue-gas-desulfurization-wastewater.yaml
+    sha256: 7765854c5dfb2ce86f5fe516bf19b63e59978b21e3b3da822118769b36a5a8e3
+    role: target
+  - path: history/records/flue-gas-desulfurization-wastewater/2026-10-15T061241Z-codex-fc9da3.yaml
+    sha256: 7745dfdb1d299a3140352cfeb1dff282a4e15c43e795faed6134b2c5a1aff215
+    role: context
+  - path: research/sources/round89-resources/20261015T061518Z-source-investigation.json
+    sha256: cf3ed95c0e7de01e16570b0726c96ffaf00f0fc1ad3f9777b9ba1b8eade8ac86
+    role: context
+  - path: research/sources/round89-resources/20261015T061518Z-source-investigation.md
+    sha256: d11bd5d8810378d832c3b1b58590c7cc08b05aa82f7fd3ae12ac259967f42f5d
+    role: context
+scope:
+  description: Whole maintained resource owner, canonical CREATE and paired dossier;
+    complete accepted primary pilot methods/results and claim-bearing graphics/tables,
+    with independent embedded-workbook extraction and selected QC-cell assessment.
+  selection: Assigned exact canonical owner inspected before judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:flue-gas-desulfurization-wastewater
+targets:
+- target_id: cmmmech:flue-gas-desulfurization-wastewater
+  path: data/records/flue-gas-desulfurization-wastewater.yaml
+  label: Flue-gas desulfurization wastewater
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/flue-gas-desulfurization-wastewater.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/flue-gas-desulfurization-wastewater.yaml
+    --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Actual independent command completed: one record, zero failures.'
+  target_ids:
+  - cmmmech:flue-gas-desulfurization-wastewater
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch command 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt and retained log independently verified; no reviewer
+    rerun claimed.
+  target_ids:
+  - cmmmech:flue-gas-desulfurization-wastewater
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt and retained log independently verified; no reviewer
+    rerun claimed.
+  target_ids:
+  - cmmmech:flue-gas-desulfurization-wastewater
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch command 3
+  command: uv run --locked cmmmech validate-history --base b797f1be3d9d7b45444e0e3f54f3845d8aeeb1ae
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt and retained log independently verified; no reviewer
+    rerun claimed.
+  target_ids:
+  - cmmmech:flue-gas-desulfurization-wastewater
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt and retained log independently verified; no reviewer
+    rerun claimed.
+  target_ids:
+  - cmmmech:flue-gas-desulfurization-wastewater
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/flue-gas-desulfurization-wastewater.yaml
+  locator: 'Complete exact maintained owner after native inspection. Artifact: /private/tmp/CMMMech-expansion-round89-20261015/data/records/flue-gas-desulfurization-wastewater.yaml'
+  accessed_at: '2026-10-15T06:28:27.043804Z'
+  support: supports
+  summary: One liquid secondary-resource identity with qualified treatment-associated
+    selenium separation, no recovered product or criticality claim.
+  snapshot_sha256: 7765854c5dfb2ce86f5fe516bf19b63e59978b21e3b3da822118769b36a5a8e3
+- evidence_id: history
+  kind: record_content
+  reference: history/records/flue-gas-desulfurization-wastewater/2026-10-15T061241Z-codex-fc9da3.yaml
+  locator: 'Canonical CREATE plus separately timestamped inline event and exact history_ref.
+    Artifact: /private/tmp/CMMMech-expansion-round89-20261015/history/records/flue-gas-desulfurization-wastewater/2026-10-15T061241Z-codex-fc9da3.yaml'
+  accessed_at: '2026-10-15T06:28:27.043804Z'
+  support: supports
+  summary: Actual codex/GPT-6 actor, date, target and change agree; sidecar timestamp
+    is not substituted for the earlier inline event.
+  snapshot_sha256: 7745dfdb1d299a3140352cfeb1dff282a4e15c43e795faed6134b2c5a1aff215
+- evidence_id: pilot_design
+  kind: primary_source
+  reference: https://restservice.epri.com/publicdownload/000000003002006089/0/Product
+  locator: 'Complete 96-page EPRI report 3002006089, final March 2017. Chapters 1–3,
+    printed 2-1–3-11/PDF23–41; original Figures2-1–2-4 and3-1–3-3 inspected, especially
+    Table3-2/PDF36–37; no external journal DOI invented. Artifact: /private/tmp/cmm-round89-resources-research/epri2017.pdf'
+  accessed_at: '2026-10-15T06:28:27.043804Z'
+  support: supports
+  summary: Physical/chemical pretreatment and 1:1 Lake Michigan water dilution precede
+    the inoculated MBR and two 1270 L GAC beds. Kenosha mixed liquor and GE inoculum
+    are unresolved communities. Figure2-4 is supplier imagery rather than pilot-product
+    phase evidence.
+  snapshot_sha256: 41b6e469551dcbe1ad0cc26926f271fcef55a1587ce4a978228283581cf7893e
+- evidence_id: pilot_outcome
+  kind: primary_source
+  reference: https://restservice.epri.com/publicdownload/000000003002006089/0/Product
+  locator: 'Chapters4–5/PDF43–77; all original Figures4-1–4-15 inspected, Tables4-4/PDF57,4-6/PDF60,4-7/PDF61–62,5-1/PDF73;
+    Sections4-12–4-26 and5-1–5-7. Artifact: /private/tmp/cmm-round89-resources-research/epri2017.pdf'
+  accessed_at: '2026-10-15T06:28:27.043804Z'
+  support: supports
+  summary: Condition2 averages 1071/173/5 micrograms per L are stage concentration
+    summaries. Final means36/21 in Conditions3/4 exceed the historical source target6.
+    Elevated sample preceded same-day flow change; no controlled sole cause or successful
+    commercial endpoint. Nitrification loss and retained denitrification are accurately
+    qualified.
+  snapshot_sha256: 41b6e469551dcbe1ad0cc26926f271fcef55a1587ce4a978228283581cf7893e
+- evidence_id: analytical
+  kind: primary_source
+  reference: https://restservice.epri.com/publicdownload/000000003002006089/0/Product
+  locator: 'Table4-8/PDF66; AppendixB complete PDF89–92, original TablesB-1/B-2 inspected.
+    AppendixA sampling plan/PDF81–88 text screened; no extra biological control inferred.
+    Artifact: /private/tmp/cmm-round89-resources-research/epri2017.pdf'
+  accessed_at: '2026-10-15T06:28:27.043804Z'
+  support: supports
+  summary: January18/19/21 initial13/11/8.2 became15/22/31 after peroxide redigestion.
+    January28 Brooks species sum135.4 versus total17/dissolved9.28 remains unreconciled.
+    TableB-1 contains selected rows and omits January19 peroxide22; it is present
+    in the embedded original. Backwash liquid is not a demonstrated pure selenium
+    yield.
+  snapshot_sha256: 41b6e469551dcbe1ad0cc26926f271fcef55a1587ce4a978228283581cf7893e
+- evidence_id: embedded
+  kind: primary_source
+  reference: https://restservice.epri.com/publicdownload/000000003002006089/0/Product
+  locator: 'Original PDF-embedded Worksheet in 3002006089_test.xlsx; all20 worksheet
+    names enumerated; direct OOXML cached values and preparation notes of S7 selenium
+    qc rows28–46 independently inspected, especially E41=22/N41 peroxide redigestion.
+    Artifact: /private/tmp/cmm-round89-resources-research/epri2017-embedded-raw.xlsx'
+  accessed_at: '2026-10-15T06:28:27.043804Z'
+  support: supports
+  summary: Independent extraction from the PDF exactly matched these original workbook
+    bytes. Stored assays support the correction lineage; no recalculation, full-workbook
+    visual audit, bulk import or independent replication is asserted.
+  snapshot_sha256: 92cb1fb38a9c5cc3d7753b7112f012afc3d7b88b6dfcd4bdf8df8b3fc61f2f78
+- evidence_id: extraction
+  kind: validation
+  reference: /private/tmp/cmm-round89-fgd-independent/independent-workbook-proof.json
+  locator: 'Independent fitz embedded-file extraction and direct ZIP/XML parsing;
+    original parent/child hashes,20-sheet enumeration and exact selected cached cells.
+    Artifact: /private/tmp/cmm-round89-fgd-independent/independent-workbook-proof.json'
+  accessed_at: '2026-10-15T06:28:27.043804Z'
+  support: supports
+  summary: Confirms actual embedded provenance and relevant QC cells without relying
+    solely on the curator-derived workbook JSON.
+  snapshot_sha256: 2734a1509eb0c16d6092e8e7e0dcfa6665a9cf1cfa96f4708a435e871fd3a133
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round89-resources/20261015T061518Z-source-investigation.json
+  locator: 'Full source investigation, actual PDF/embedded hashes and declared omitted
+    source routes. Artifact: /private/tmp/CMMMech-expansion-round89-20261015/research/sources/round89-resources/20261015T061518Z-source-investigation.json'
+  accessed_at: '2026-10-15T06:28:27.043804Z'
+  support: supports
+  summary: Author preserves conflicting recipe schedules, lack of pilot-product characterization,
+    assay failures and study-lineage boundaries. No unassessed future report becomes
+    accepted evidence.
+  snapshot_sha256: cf3ed95c0e7de01e16570b0726c96ffaf00f0fc1ad3f9777b9ba1b8eade8ac86
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round89-fgd-independent/named-validation.log
+  locator: 'Independent actual named strict validation terminal exit0. Artifact: /private/tmp/cmm-round89-fgd-independent/named-validation.log'
+  accessed_at: '2026-10-15T06:28:27.043804Z'
+  support: supports
+  summary: Checked one record; zero failed.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: notices
+  kind: search
+  reference: Bounded current primary-source and local-lineage searches
+  locator: 'Actual query strings/date/scope and hidden/ignored-inclusive followed-link
+    local match capture. Artifact: /private/tmp/cmm-round89-fgd-independent/bounded-search.json'
+  accessed_at: '2026-10-15T06:28:27.043804Z'
+  support: context_only
+  summary: No matched external correction in the inspected result set; the report
+    itself supplies strong contrary/limiting evidence. Later reports remain follow-up
+    leads.
+  snapshot_sha256: 4d388af91f51b1e548c5126328034d87acbbe6655ab135d07da158d6fa6c29c0
+  search_scope: Three exact report/pilot/correction queries and first returned primary-source
+    result sets, plus rg --hidden --no-ignore --follow across maintained record/research/review/history
+    roots; exact scope and URLs are retained. No exhaustive absence claim.
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round89-final-gates.json
+  locator: 'All FOUR actual coordinator commands; 2026-10-15T06:24:51.895561+00:00
+    to 2026-10-15T06:29:50.323978+00:00; log /private/tmp/cmm-round89-final-gates.log
+    SHA256 87a108c71c505302f1ab687ff999aae027f16fd09bde9cef66e98222575d8832. Artifact:
+    /private/tmp/cmm-round89-final-gates.json'
+  accessed_at: '2026-10-15T06:30:13.246175Z'
+  support: supports
+  summary: Actual terminal receipt and log hash, base/worktree, exact command vectors
+    and unchanged target input independently verified. No reviewer rerun claimed.
+  snapshot_sha256: 5a0ab233cf3bfa3eb0b43f40edac9098d6ca547851b612e09b711d304bce9a70
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Liquid secondary resource and experiment boundary
+  outcome: supported
+  summary: FGD wastewater is distinct from solid FGD gypsum, coal ash and selenium.
+    The particular pretreated/diluted pilot feed does not define invariant composition
+    for every FGD stream. No unsupported elemental or mineral identifier is attached.
+  target_ids:
+  - cmmmech:flue-gas-desulfurization-wastewater
+  evidence_ids:
+  - owner
+  - pilot_design
+  - dossier
+- assessment_id: biology
+  area: evidence
+  topic: Communities, conditions and causal limits
+  outcome: supported
+  summary: Municipal living biomass and GE-provided unresolved inoculum were used
+    with changing nutrient and operating recipes. Source-supported microbial treatment
+    context is appropriate, but no taxa or strain are invented and no matched sterile
+    train isolates biological reduction from sorption, precipitation and filtration.
+    Supplier imagery does not characterize this pilot solid.
+  target_ids:
+  - cmmmech:flue-gas-desulfurization-wastewater
+  evidence_ids:
+  - owner
+  - pilot_design
+  - pilot_outcome
+- assessment_id: quantities
+  area: quantity
+  topic: Concentrations, analytical correction and recovery denominator
+  outcome: supported
+  summary: Reported stage means and corrected assays are accurately transcribed with
+    units. They are not mass-normalized recovery or isolated yield. The unreconciled
+    January28 dissolved-species excess and missing selected January19 TableB-1 row
+    are preserved; original workbook supports the latter correction.
+  target_ids:
+  - cmmmech:flue-gas-desulfurization-wastewater
+  evidence_ids:
+  - pilot_outcome
+  - analytical
+  - embedded
+  - extraction
+- assessment_id: counterevidence
+  area: scope
+  topic: Failed target, field-pilot scale and historical benchmark
+  outcome: supported
+  summary: The real-feed pilot had sustained performance loss, incomplete nitrification,
+    changing simultaneous operating factors and no achieved full-scale contact-time
+    target. Six micrograms per L is a historical source-defined benchmark, not current
+    regulation. Neither industrial success nor a marketable pure selenium product
+    is inferred.
+  target_ids:
+  - cmmmech:flue-gas-desulfurization-wastewater
+  evidence_ids:
+  - owner
+  - pilot_outcome
+  - analytical
+- assessment_id: provenance
+  area: provenance
+  topic: Exact native owner/history and independent evidence
+  outcome: supported
+  summary: Native inspect preceded judgment. Owner, CREATE and paired dossier hashes
+    remain unchanged. Complete report methods/results and all22 main figures were
+    read/inspected; selected embedded original cells independently parsed. No record/history
+    edits by reviewer and no source-contact or laboratory replication.
+  target_ids:
+  - cmmmech:flue-gas-desulfurization-wastewater
+  evidence_ids:
+  - owner
+  - history
+  - pilot_design
+  - pilot_outcome
+  - extraction
+  - named
+  - notices
+  - batch
+findings: []
+actions: []
+limitations:
+- The pilot lacks a matched sterile train, identified taxa and direct characterization
+  of retained selenium. Biological reduction is the source interpretation, not exclusive
+  proof separating sorption, chemical precipitation and filtration.
+- Stage concentrations are not flow-normalized mass recovery; no isolated selenium
+  product, complete balance or successful full-scale performance is established.
+- Internal analytical discrepancies and conflicting nutrient/chemical schedules remain
+  unresolved. January28 total/dissolved/species values cannot be reconciled by this
+  documentary review.
+- The embedded workbook was independently extracted and relevant cached cells inspected,
+  not fully visually audited or recalculated. All20 worksheet names were enumerated;
+  unrelated cells are outside the scientific scope.
+- Historical source-defined targets are not current legal guidance. Bounded search
+  and document review do not establish exhaustive literature coverage or independently
+  replicate the pilot.
+- Later EPRI2020/2024 reports are retained as future-source leads only; their experimental
+  claims were not assessed or imported.
+notes:
+- No owner/history or dossier changes by reviewer. Initial native capture used a URL-form
+  owner repository; before assessment/save, the canonical CultureBotAI/CMMMech repository
+  was recaptured with unchanged target/context hashes. Both external captures are
+  retained; no immutable native review was replaced.
+- The review start is the recorded creation time of the preserved initial-target preparation
+  file. Actual final checks were verified at completion, after scientific assessment
+  preparation.
+```

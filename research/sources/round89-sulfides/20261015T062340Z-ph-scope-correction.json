@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-15T06:23:40.313651Z",
+  "type": "append_only_source_correction",
+  "record": "cmmmech:troilite",
+  "issue": {
+    "number": 308,
+    "url": "https://github.com/CultureBotAI/CMMMech/issues/308"
+  },
+  "finding": {
+    "finding_id": "F1",
+    "issue_key": "troilite-round89-medium-versus-reactor-ph",
+    "previous_occurrences": [
+      {
+        "path": "reviews/structured/20261015T061619Z-troilite-round89-initial-ph-scope/review.yaml",
+        "sha256": "55b179a60bb7b5624cf2a20e0cb966c5e97968e77d0c134dec1723f9c3c69890",
+        "bytes": 6167
+      },
+      {
+        "path": "reviews/structured/20261015T061619Z-troilite-round89-initial-ph-scope/review.md",
+        "sha256": "72df645131a45ff5fa011de089d1bfafc87ee9202b237d5d9036c1d175cf8c3d",
+        "bytes": 10544
+      }
+    ]
+  },
+  "author": "codex /root/round68_iron_sulfides; GPT-6; owner author, not independent resolution reviewer",
+  "original_dossier": [
+    {
+      "path": "research/sources/round89-sulfides/20261015T061541Z-source-investigation.json",
+      "sha256": "9a5458a95281d4c02486c52dc2a6743784439939cecf8b60e6577ec709639da2"
+    },
+    {
+      "path": "research/sources/round89-sulfides/20261015T061541Z-source-investigation.md",
+      "sha256": "63de5f2311657fe3610ec6cb4b9aee8dfbbc8e4ea05d78deeefc63625e6affca"
+    }
+  ],
+  "original_owner": {
+    "path": "/private/tmp/cmm-round89-sulfides-research/troilite-original-before-ph-scope.yaml",
+    "sha256": "c19e1e51c77145cdc8f6bdf56aad20237a9a3cd3b75fe0d634505b5604252ed7",
+    "bytes": 7676
+  },
+  "preserved_create": {
+    "path": "history/records/troilite/2026-10-15T061210Z-codex-7d933f.yaml",
+    "sha256": "faa988375fd80f5a98f3ef48d7f6b4a0a572723e0245c327474bc70c58435140"
+  },
+  "corrected_owner": {
+    "path": "data/records/troilite.yaml",
+    "sha256": "9ffabe9fd2204c41191ff4167f68071ec02b160fed4b432dffb0b626cfbdb017",
+    "bytes": 8483
+  },
+  "appended_edit": {
+    "path": "history/records/troilite/2026-10-15T061828Z-codex-4619a3.yaml",
+    "sha256": "d0c5bf06e77ea16b01529414e716388a6de164077007d921cfa10af736184e87",
+    "bytes": 884
+  },
+  "source": {
+    "path": "/private/tmp/cmm-round89-sulfides-research/troilite2011.pdf",
+    "sha256": "44466a4514b75365b4984a80af7dee6d23ecee78e344c5489f00daebb7610648",
+    "bytes": 1040903,
+    "media_type": "application/pdf",
+    "url": "https://ri.conicet.gov.ar/bitstream/handle/11336/144105/CONICET_Digital_Nro.76bf0e5e-ae53-4ac8-b360-65ba66619286_A.pdf?isAllowed=y&sequence=2",
+    "role": "original_primary"
+  },
+  "correction": {
+    "original": {
+      "json_locator": "claim_assessment[5]",
+      "value": {
+        "claim": "Unresolved pH/redox contradictions",
+        "locator": "Methods2.2/2.5 printed20\u201321; Section3 printed23; Figure4A/B printed23",
+        "assessment": "Nominalmedium pH2andtextstablecontrol conflict with Fig4Aearly/control~4.5\u20135. Textupto600mVvsFig4B~520. No correctedtrajectory inferred. ControlsnotpH/redoxmatched; biochemicalcause notisolated."
+      }
+    },
+    "markdown_locator": "line12, Unresolved pH/redox contradictions bullet",
+    "replacement": {
+      "claim": "Prepared-medium versus reactor pH comparability; separate redox discrepancy",
+      "locator": "Methods 2.2/2.5 printed20\u201321; Section3 and Figure4A/B printed23",
+      "assessment": "M88 was prepared at pH2 before mineral addition, whereas Figure4A reports early reactor/control readings near4.5\u20135. The stable-control prose does not identify its initial value as2. Timing and material state are not demonstrated equivalent; a post-addition acid-consuming dissolution explanation is possible but untested. No same-state pH contradiction is established. Separately, the600mV prose versus roughly520mV Figure4B difference remains unresolved. Controls are not pH/redox matched and biochemical cause is not isolated."
+    },
+    "scope": "Only the pH comparability interpretation is narrowed; all other source/record observations remain. Original dossier, CREATE and initial native observation remain immutable."
+  },
+  "validation": {
+    "checked_at": "2026-10-15T06:23:40.313651Z",
+    "command": "uv run --locked cmmmech validate data/records/troilite.yaml --require-records",
+    "exit_code": 0,
+    "records": 1,
+    "failed": 0,
+    "log": {
+      "path": "/private/tmp/cmm-round89-sulfides-research/named-validation-corrected.log",
+      "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e",
+      "bytes": 31
+    }
+  },
+  "status": "Author correction implemented; independent native successor and final batch acceptance are pending."
+}

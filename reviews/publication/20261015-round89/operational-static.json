@@ -1,0 +1,74 @@
+{
+  "started_at": "2026-10-15T06:22:07.730033+00:00",
+  "finished_at": "2026-10-15T06:22:07.742101+00:00",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "scientific_review": false,
+  "reviewer": "codex /root/round68_new_frontier",
+  "independence": "Root adapted these four helpers; reviewer authored unrelated FGD wastewater owner and independently read all four current helper bodies and checked exact predecessor transformations. No runtime helper was invoked by this review.",
+  "scope": "Four round89 test/coverage wrappers only; no commit/enqueue/cleanup/admission assessment. Static checks do not establish future runtime success.",
+  "base": "b797f1be3d9d7b45444e0e3f54f3845d8aeeb1ae",
+  "derivation": {
+    "path": "/private/tmp/cmm-round89-helper-derivation.json",
+    "sha256": "fa79246c782889deeabe8306ce7111b2ed1e258e6f18ad4c9de9a5dd06b8c80b"
+  },
+  "files": [
+    {
+      "path": "/private/tmp/cmm-round89-isolated-verification.py",
+      "sha256": "a70d9c47ff040b53d9d8be277101128a25d6ee2bfc26470dfe2ef133c20f17d8",
+      "source": "/private/tmp/cmm-round88-isolated-verification.py",
+      "source_sha256": "cc200d9ce857e7657e22e00070b2a477db63e4dde134c3bd019f9d9c7df04a14",
+      "exact_literal_substitution_verified": true,
+      "diff": "--- /private/tmp/cmm-round88-isolated-verification.py\n+++ /private/tmp/cmm-round89-isolated-verification.py\n@@ -2,9 +2,9 @@\n import argparse, datetime, hashlib, json, os, re, subprocess, sys, tarfile\n from pathlib import Path\n \n-BASE='661e752f00ea9ea15e48dfc41f02199dfc16e1fe'\n+BASE='b797f1be3d9d7b45444e0e3f54f3845d8aeeb1ae'\n REMOTE='https://github.com/CultureBotAI/CMMMech.git'\n-BRANCH='curate/cmm-expansion-round88-20261015'\n+BRANCH='curate/cmm-expansion-round89-20261015'\n TAG='refs/tags/review-base/cmm-source-survey-20261009'\n TAG_OBJECT='fc4040c3abcd28f0a9cc52467e308100144ad1fd'\n TAG_COMMIT='c0adc2c0763e1515ed07dc712b024974d98fb342'\n@@ -12,7 +12,7 @@\n parser.add_argument('mode',choices=['preflight','postmerge'])\n parser.add_argument('--topic-head',required=True)\n parser.add_argument('--expected-tree',required=True)\n-parser.add_argument('--source',default='/private/tmp/CMMMech-expansion-round88-20261015')\n+parser.add_argument('--source',default='/private/tmp/CMMMech-expansion-round89-20261015')\n parser.add_argument('--merge-commit')\n parser.add_argument('--run-id',help='Unique letters/digits/hyphens suffix; default actual UTC timestamp')\n args=parser.parse_args()\n@@ -23,8 +23,8 @@\n run_id=args.run_id or datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')\n if not re.fullmatch('[A-Za-z0-9-]+',run_id):parser.error('Unsafe run ID.')\n source=Path(args.source).resolve()\n-clone=Path('/private/tmp')/f'CMMMech-round88-{args.mode}-{run_id}'\n-prefix=Path('/private/tmp')/f'cmm-round88-{args.mode}-{run_id}'\n+clone=Path('/private/tmp')/f'CMMMech-round89-{args.mode}-{run_id}'\n+prefix=Path('/private/tmp')/f'cmm-round89-{args.mode}-{run_id}'\n receipt_path=Path(str(prefix)+'-terminal.json')\n coverage_path=Path(str(prefix)+'-coverage.json')\n log_path=Path(str(prefix)+'.log')\n@@ -89,7 +89,7 @@\n    require(all(not m.name.startswith('/') and '..' not in Path(m.name).parts and '.git' not in Path(m.name).parts for m in archive.getmembers()),'Unsafe archive member.')\n    archive.extractall(clone,filter='data')\n   git(clone,'add','--all')\n-  git(clone,'-c','user.name=codex','-c','user.email=codex@localhost','-c','commit.gpgsign=false','commit','-m','Synthetic squash verification for reviewed round88 integration tree')\n+  git(clone,'-c','user.name=codex','-c','user.email=codex@localhost','-c','commit.gpgsign=false','commit','-m','Synthetic squash verification for reviewed round89 integration tree')\n   require(git(clone,'rev-parse','HEAD^')==BASE,'Synthetic commit parent differs from trusted main base.')\n   receipt['synthetic_commit']=git(clone,'rev-parse','HEAD')\n  else:\n@@ -103,7 +103,7 @@\n  run(['uv','run','--locked','cmmmech','validate','--require-records'],cwd=clone)\n  run(['uv','run','--locked','cmmmech','validate-history','--base',BASE],cwd=clone)\n  run(['just','review-check','--base',BASE,'--require-reviews'],cwd=clone)\n- run([str(clone/'.venv/bin/python'),'/private/tmp/cmm-round88-isolated-coverage.py','--clone',str(clone),'--output',str(coverage_path)],cwd=clone)\n+ run([str(clone/'.venv/bin/python'),'/private/tmp/cmm-round89-isolated-coverage.py','--clone',str(clone),'--output',str(coverage_path)],cwd=clone)\n  coverage=json.loads(coverage_path.read_text());require(coverage['passed'],'Exact coverage/count/base audit failed.')\n  receipt['coverage_receipt']=str(coverage_path)\n  receipt['counts']={k:coverage[k] for k in ['record_count','history_count','structured_review_count','review_base_count','covered_records']}\n"
+    },
+    {
+      "path": "/private/tmp/cmm-round89-isolated-coverage.py",
+      "sha256": "f48d131527092acdb21fcdff6b142766d2709ee15e6cc47b6df7f95781b3f099",
+      "source": "/private/tmp/cmm-round88-isolated-coverage.py",
+      "source_sha256": "201b99be02a13fab7a9466507fe7ee49d08e19e12f7e59f1e712b5c9f3cca69e",
+      "exact_literal_substitution_verified": true,
+      "diff": "--- /private/tmp/cmm-round88-isolated-coverage.py\n+++ /private/tmp/cmm-round89-isolated-coverage.py\n@@ -37,7 +37,7 @@\n  p=subprocess.run(['git','-C',str(root),'cat-file','-t',rev],capture_output=True,text=True)\n  base_checks.append({'revision':rev,'available_commit':p.returncode==0 and p.stdout.strip()=='commit'})\n result={'recorded_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'root':str(root),'record_count':len(records),'history_count':len(histories),'structured_review_count':len(reviews),'review_base_count':len(bases),'bases':base_checks,'covered_records':sum(bool(x['matching_scientific_reviews']) for x in coverage),'records':coverage,'scope':'Hidden/ignored-inclusive filesystem enumeration follows relevant symlinks with cycle prevention. Current record ID, target path, reviewed target scope and exact SHA256 must match completed positive scientific reviews; context-only successors cannot substitute. This supplements the canonical review checker.'}\n-expected=json.loads(Path('/private/tmp/cmm-round88-helper-config.json').read_text())['counts']\n+expected=json.loads(Path('/private/tmp/cmm-round89-helper-config.json').read_text())['counts']\n result['passed']=all(result[k]==v for k,v in expected.items()) and all(b['available_commit'] for b in base_checks) and all(x['matching_scientific_reviews'] for x in coverage)\n output=Path(args.output)\n if output.exists():raise SystemExit('Refusing to overwrite coverage receipt: '+str(output))\n"
+    },
+    {
+      "path": "/private/tmp/cmm-round89-final-gates.py",
+      "sha256": "3b46435c36aee8a739517b7d4b2cdd5a5e306b395e19aff5c9c5dc5831b2b1d3",
+      "source": "/private/tmp/cmm-round88-final-gates.py",
+      "source_sha256": "6b895750152e749c20fc77dbf5833c6613fcea838ec15c2cf8e44c26247e55f9",
+      "exact_literal_substitution_verified": true,
+      "diff": "--- /private/tmp/cmm-round88-final-gates.py\n+++ /private/tmp/cmm-round89-final-gates.py\n@@ -2,9 +2,9 @@\n from datetime import datetime, timezone\n import hashlib, json, os, subprocess\n \n-root = Path('/private/tmp/CMMMech-expansion-round88-20261015')\n-base = '661e752f00ea9ea15e48dfc41f02199dfc16e1fe'\n-out = Path('/private/tmp/cmm-round88-final-gates.json')\n+root = Path('/private/tmp/CMMMech-expansion-round89-20261015')\n+base = 'b797f1be3d9d7b45444e0e3f54f3845d8aeeb1ae'\n+out = Path('/private/tmp/cmm-round89-final-gates.json')\n logpath = out.with_suffix('.log')\n assert not out.exists() and not logpath.exists()\n now = lambda: datetime.now(timezone.utc).isoformat()\n@@ -24,7 +24,7 @@\n                 result[str(p.relative_to(root))] = sha(p)\n     return result\n before = inputs()\n-assert len(before) == json.loads(Path('/private/tmp/cmm-round88-helper-config.json').read_text())['counts']['record_count']\n+assert len(before) == json.loads(Path('/private/tmp/cmm-round89-helper-config.json').read_text())['counts']['record_count']\n env = dict(os.environ, UV_OFFLINE='1', UV_CACHE_DIR='/private/tmp/cmmmech-uv-cache', PYTHONDONTWRITEBYTECODE='1')\n receipt = {'base': base, 'worktree': str(root), 'started_at': now(), 'record_inputs': before, 'commands': []}\n commands = [\n"
+    },
+    {
+      "path": "/private/tmp/cmm-round89-review-check-final.py",
+      "sha256": "18271658301d3760f69eaeeafa51baa773dd634fde30f89d2769340af52d322b",
+      "source": "/private/tmp/cmm-round88-review-check-final.py",
+      "source_sha256": "e4ed8e83d36dc83b695e93c01f342578bcb45e577f7665d7b5f710ff43a83008",
+      "exact_literal_substitution_verified": true,
+      "diff": "--- /private/tmp/cmm-round88-review-check-final.py\n+++ /private/tmp/cmm-round89-review-check-final.py\n@@ -1,9 +1,9 @@\n from pathlib import Path\n from datetime import datetime,timezone\n import json,subprocess,os,hashlib\n-p=Path('/private/tmp');root=p/'CMMMech-expansion-round88-20261015';out=p/'cmm-round88-review-check-final.json';log=out.with_suffix('.log');assert not out.exists() and not log.exists()\n+p=Path('/private/tmp');root=p/'CMMMech-expansion-round89-20261015';out=p/'cmm-round89-review-check-final.json';log=out.with_suffix('.log');assert not out.exists() and not log.exists()\n now=lambda:datetime.now(timezone.utc).isoformat()\n-command=['just','review-check','--base','661e752f00ea9ea15e48dfc41f02199dfc16e1fe','--require-reviews']\n+command=['just','review-check','--base','b797f1be3d9d7b45444e0e3f54f3845d8aeeb1ae','--require-reviews']\n r={'started_at':now(),'command':command,'worktree':str(root)}\n x=subprocess.run(command,cwd=root,env=dict(os.environ,UV_OFFLINE='1',UV_CACHE_DIR='/private/tmp/cmmmech-uv-cache',PYTHONDONTWRITEBYTECODE='1'),capture_output=True,text=True)\n log.write_text(x.stdout+x.stderr);r.update(finished_at=now(),exit_code=x.returncode,log=str(log),log_sha256=hashlib.sha256(log.read_bytes()).hexdigest());out.write_text(json.dumps(r,indent=2)+'\\n');print(json.dumps(r,indent=2));print(x.stdout[-1200:]);raise SystemExit(x.returncode)\n"
+    }
+  ],
+  "config_observed": {
+    "path": "/private/tmp/cmm-round89-helper-config.json",
+    "sha256": "25340e5ed5a5d9a9b55cdb83afb4b16321df01c449c637ca53b1e858a8ee7b07",
+    "counts": {
+      "record_count": 426,
+      "history_count": 488,
+      "structured_review_count": 505,
+      "review_base_count": 90,
+      "covered_records": 426
+    },
+    "status": "Prospective counts require actual census/review checker and final rebinding before publication."
+  },
+  "assessments": [
+    "Exact only round88/Round88-to-round89 and trusted-base substitutions verified against predecessor bytes for all four wrappers; no stale round88/base references remain.",
+    "Isolated verification validates supplied full object IDs; source checkout is read only. New clone paths refuse preexisting destinations, clone only remote main without tags, then explicitly fetch immutable retained tags; no topic branch fetch, push, or source switch occurs. Topic commit absence checked before/after gates.",
+    "Preflight source HEAD/tree/clean state and remote main base are checked; synthetic squash is created solely inside unique temporary clone. Postmerge checks local and remote topic absence, exact merged HEAD/tree and sole base parent. Retained annotated tag object/peeled target are verified locally and remotely.",
+    "Coverage follows hidden/ignored filesystem and relevant symlinks with cycle prevention. Exact current owner ID/path/SHA must match a completed positive scientific review; every base must exist. Canonical review checker supplies schema/append-only validation; final package review remains responsible for current finding lineage selection.",
+    "Batch wrapper binds all owner hashes before/after and all four actual command outcomes. Structured-review wrapper records actual command, exit status and log hash. Both refuse existing receipt paths. No wrapper claims success in advance."
+  ],
+  "findings": [],
+  "limitations": [
+    "This is source and syntax inspection, not helper runtime validation. No fixtures were rerun because exact literal adaptation has no behavioral changes.",
+    "Config counts observed as provisional; final review and coverage census, current-head CI, queue and fresh postmerge verification remain separate runtime requirements."
+  ],
+  "timing_note": "Captured start/finish delimit the exact-hash/substitution verification and receipt assembly. Complete source reading occurred immediately beforehand in this same review; its earlier start was not clock-captured and is not backdated."
+}
