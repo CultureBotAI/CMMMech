@@ -1,0 +1,554 @@
+# Independent scientific review of Melanterite
+
+- Review: 20261015T130653Z-melanterite-round95-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T12:50:25.370499Z
+- Finished UTC: 2026-10-15T13:06:53.922987Z
+- Reviewer: codex /root/round68_new_frontier (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of distinct melanterite identity and a provisional minor phase in a mixed culture-associated precipitate. The owner preserves phase-processing/causality limits, abiotic nitrite chemistry and unresolved HJ-2 taxonomy. No corrective finding.
+
+## Scope And Provenance
+
+Whole exact owner/history and full primary source scope, including relevant figures, supplement and identifiers.
+
+Selection: Assigned target captured by native inspect before assessment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 73d4b1c42541ee7ca139effae00b94ddb1c8a631.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:melanterite | data/records/melanterite.yaml | maintained | Melanterite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named strict validation | passed | True | cmmmech:melanterite | Actual independent command checked 2 records; 0 failed. |
+| Completed batch command 1 | passed | True | cmmmech:melanterite | Actual coordinator terminal receipt/log verified; reviewer did not repeat full suite. |
+| Completed batch command 2 | passed | True | cmmmech:melanterite | Actual coordinator terminal receipt/log verified; reviewer did not repeat full suite. |
+| Completed batch command 3 | passed | True | cmmmech:melanterite | Actual coordinator terminal receipt/log verified; reviewer did not repeat full suite. |
+| Completed batch command 4 | passed | True | cmmmech:melanterite | Actual coordinator terminal receipt/log verified; reviewer did not repeat full suite. |
+
+## Scientific And Domain Assessments
+
+### Distinct material identity and source scope
+
+identity: supported. Targets: cmmmech:melanterite.
+
+Current IMA/Handbook ground the distinct mineral. No inheritance of elemental criticality, commodity identity or other mineral mechanism.
+
+### Experimental mechanism and causal limits
+
+evidence: supported. Targets: cmmmech:melanterite.
+
+The culture is present in the accepted preparation, but melanterite-specific biological causation is not established. Residual ferrous sulfate crystallization during unreported processing remains possible; nitrite oxidation includes an abiotic route.
+
+### Organism, biomass state, substrate and controls
+
+scope: supported. Targets: cmmmech:melanterite.
+
+Washed living HJ-2 and no-cell/no-nitrate comparators support the solution context; no comparator solid XRD proves melanterite-specific causation. Species labels disagree across main, S1 and GenBank; strain HJ-2 stays unresolved, with no species identifier.
+
+### Quantitative endpoint and denominator
+
+quantity: supported. Targets: cmmmech:melanterite.
+
+S2 labels 13.35% melanterite, 55.52% goethite, 15.35% lepidocrocite and 15.76% hematite without refinement, uncertainty or absolute phase-mass basis. Fe(II) 3.64→0.84 mmol/L at 144 h is a solution endpoint, not isolated yield or established XRD collection time.
+
+### Exact owner, history and actual checks
+
+provenance: supported. Targets: cmmmech:melanterite.
+
+Independent assessment binds exact working-tree owner and canonical history. Inline and sidecar events agree; no owner/history changes. Source limitations do not become asserted recovery or industrial deployment.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/melanterite.yaml; Complete exact maintained record, captured before assessment. Artifact: /private/tmp/CMMMech-expansion-round95-20261015/data/records/melanterite.yaml | supports | Exact material, mechanism, source boundaries and limitations independently assessed; no reviewer edits. |
+| history | history/records/melanterite/2026-10-15T124511Z-codex-f47746.yaml; Canonical CREATE sidecar; inline CREATE event and history_refs compared. Artifact: /private/tmp/CMMMech-expansion-round95-20261015/history/records/melanterite/2026-10-15T124511Z-codex-f47746.yaml | supports | Actual GPT-6/codex attribution, timestamps, target and described scope agree. Sidecar and inline event are separately retained. |
+| named | Independent named strict record validation; Completed reviewer command on hauerite and melanterite. Artifact: /private/tmp/cmm-round95-minerals-independent/frontier-named-validation.log | supports | Checked 2 records; 0 failed. Structural validity does not establish scientific truth. |
+| batch | /private/tmp/cmm-round95-final-gates.json; Actual four completed coordinator commands; log /private/tmp/cmm-round95-final-gates.log SHA256 8af96132050dff9ff0ef15780e2e987eda035e2ec4aa602dc739a44cbb762e9c. Artifact: /private/tmp/cmm-round95-final-gates.json | supports | Verified actual receipt, log, base, successful exits and stable input hashes; no reviewer suite rerun. |
+| search | Bounded notices and identity/experiment search; Queries, first-result scope and hidden/ignored/followed-link search with bound result files. Artifact: /private/tmp/cmm-round95-minerals-independent/frontier-review-scope.json | context_only | No applicable correction/retraction surfaced in the inspected result windows. Current target hits and authority catalog mentions are not separate experiments. No universal absence claim. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September 2026 edition, PDF page 139 exact row and page 1 definitions visually checked. Artifact: /private/tmp/cmm-round95-sulfates-research/ima-live.pdf | supports | Hauerite MnS2 is G/1846; melanterite Fe(SO4)(H2O)6·H2O is G/1850. G denotes grandfathered, not a newly assigned numeric approval identifier. |
+| handbook | https://handbookofmineralogy.org/pdfs/melanterite.pdf; Complete one-page entry, chemistry, structure and references visually checked. Artifact: /private/tmp/cmm-round95-sulfates-research/melanterite-handbook.pdf | supports | Cubic Pa-3 MnS2 pyrite-group hauerite and monoclinic P21/c ferrous sulfate heptahydrate melanterite are distinct mineral identities. Ideal formula is not experimental sample purity. |
+| primary | https://doi.org/10.1093/lambio/ovac022; Complete actual publisher HTML; all Methods/Results, main Figures 1–5 and citations read. Artifact: /private/tmp/cmm-round95-sulfates-research/peng2023-minimal.html | supports | 100 mL bottles contain washed log-phase HJ-2, 10 mM PIPES, nominal 5% inoculum at 30 °C; liquid volume/cell density unspecified. Two parallels and no-cell comparators. Nitrate-associated Fe(II) decrease is separated from phase-specific formation; nitrite oxidizes Fe(II) with or without cells. Main identification conflicts with SI and current sequence labels. |
+| si | https://doi.org/10.1093/lambio/ovac022; Official original DOCX; native Methodology S1, Tables S1–S8 and captions, all three embedded original graphics inspected; no claim of Word page rendering. Artifact: /private/tmp/cmm-round95-sulfates-research/peng2023-si.docx | supports | S2 assigns a mixed phase assemblage, including provisional melanterite 13.35%, with no quantification method/control-solid pattern/preparation. S1 labels comparator NBRC14951 C. testosteroni. Functional genes are database annotations, not causal enzyme assays. |
+| fig1 | https://doi.org/10.1093/lambio/ovac022; Original publisher main Figure 1, visually inspected alongside complete caption. Artifact: /private/tmp/cmm-round95-sulfates-research/ovac022fig1.jpeg | context_only | Figure 1 morphology/EDS is not phase identity; Figures 2–3 separate nitrate-associated and abiotic nitrite Fe(II) loss; Figures 4–5 are distinct soluble Fe-NTA/nitrobenzene arms and are not transferred to melanterite recovery. |
+| fig2 | https://doi.org/10.1093/lambio/ovac022; Original publisher main Figure 2, visually inspected alongside complete caption. Artifact: /private/tmp/cmm-round95-sulfates-research/ovac022fig2.jpeg | context_only | Figure 1 morphology/EDS is not phase identity; Figures 2–3 separate nitrate-associated and abiotic nitrite Fe(II) loss; Figures 4–5 are distinct soluble Fe-NTA/nitrobenzene arms and are not transferred to melanterite recovery. |
+| fig3 | https://doi.org/10.1093/lambio/ovac022; Original publisher main Figure 3, visually inspected alongside complete caption. Artifact: /private/tmp/cmm-round95-sulfates-research/ovac022fig3.jpeg | context_only | Figure 1 morphology/EDS is not phase identity; Figures 2–3 separate nitrate-associated and abiotic nitrite Fe(II) loss; Figures 4–5 are distinct soluble Fe-NTA/nitrobenzene arms and are not transferred to melanterite recovery. |
+| fig4 | https://doi.org/10.1093/lambio/ovac022; Original publisher main Figure 4, visually inspected alongside complete caption. Artifact: /private/tmp/cmm-round95-sulfates-research/ovac022fig4.jpeg | context_only | Figure 1 morphology/EDS is not phase identity; Figures 2–3 separate nitrate-associated and abiotic nitrite Fe(II) loss; Figures 4–5 are distinct soluble Fe-NTA/nitrobenzene arms and are not transferred to melanterite recovery. |
+| fig5 | https://doi.org/10.1093/lambio/ovac022; Original publisher main Figure 5, visually inspected alongside complete caption. Artifact: /private/tmp/cmm-round95-sulfates-research/ovac022fig5.jpeg | context_only | Figure 1 morphology/EDS is not phase identity; Figures 2–3 separate nitrate-associated and abiotic nitrite Fe(II) loss; Figures 4–5 are distinct soluble Fe-NTA/nitrobenzene arms and are not transferred to melanterite recovery. |
+| si1 | https://doi.org/10.1093/lambio/ovac022; Exact original DOCX embedded Figure S1, visually inspected. Artifact: /private/tmp/cmm-round95-sulfates-research/peng-si-images/image1.jpeg | context_only | S1 preserves conflicting species labels; S2 is the claimed mixed XRD pattern with 13.35% melanterite; S3 is a separate arsenic arm. No phase-pure yield or biological necessity is established. |
+| si2 | https://doi.org/10.1093/lambio/ovac022; Exact original DOCX embedded Figure S2, visually inspected. Artifact: /private/tmp/cmm-round95-sulfates-research/peng-si-images/image2.jpeg | supports | S1 preserves conflicting species labels; S2 is the claimed mixed XRD pattern with 13.35% melanterite; S3 is a separate arsenic arm. No phase-pure yield or biological necessity is established. |
+| si3 | https://doi.org/10.1093/lambio/ovac022; Exact original DOCX embedded Figure S3, visually inspected. Artifact: /private/tmp/cmm-round95-sulfates-research/peng-si-images/image3.png | context_only | S1 preserves conflicting species labels; S2 is the claimed mixed XRD pattern with 13.35% melanterite; S3 is a separate arsenic arm. No phase-pure yield or biological necessity is established. |
+| mz701937 | https://www.ncbi.nlm.nih.gov/nuccore/MZ701937.1; Current original NCBI sequence XML, definition and source/strain/taxon qualifiers independently inspected. Artifact: /private/tmp/cmm-round95-sulfates-research/genbank-MZ701937.xml | supports | MZ701937.1 names HJ-2 C. thiooxydans (363952); AB680720.1 names C. testosteroni NBRC14951. Neither reconciles the main article C. terrigena claim. No species-level organism ID is assigned to the experimental strain. |
+| ab680720 | https://www.ncbi.nlm.nih.gov/nuccore/AB680720.1; Current original NCBI sequence XML, definition and source/strain/taxon qualifiers independently inspected. Artifact: /private/tmp/cmm-round95-sulfates-research/genbank-AB680720.xml | supports | MZ701937.1 names HJ-2 C. thiooxydans (363952); AB680720.1 names C. testosteroni NBRC14951. Neither reconciles the main article C. terrigena claim. No species-level organism ID is assigned to the experimental strain. |
+
+## Limits And Additional Notes
+
+- Phase assignment remains provisional: no independent re-refinement, control-solid XRD, solid preparation, collection time, quantification method or closed Fe balance. No phase-pure production or recovered-iron yield.
+- HJ-2 species identity remains unresolved despite current sequence lookup; the cited CCTCC deposit is not independently resolved. Gene annotations do not prove enzyme expression or causal formation.
+- Main HTML and all five main graphics were read; original DOCX native text/tables and three embedded graphics inspected. No claim that an unavailable publisher PDF or rendered Word pages were inspected.
+- Bounded notice/lineage searches do not prove exhaustive absence of counterliterature; this acceptance covers only exact reviewed bytes.
+- Started_at is the filesystem timestamp of the retained first native inspection receipt, not an invented source-research start. The original source/input capture preceded assessment. Later target kind/repository metadata normalization preserves identical owner/history/dossier hashes and original capture.
+- Named validation and actual four coordinator batch commands are complete. Scientific acceptance does not cover reviewer-authored spent-steel-pickling-liquors.
+- Raw source artifacts remain outside Git with exact nonempty hashes and explicit local Artifact locators; derived transcript is clearly distinguished from original HTML/PDF bytes.
+- Source clarification https://github.com/CultureBotAI/CMMMech/issues/340 remains distinct from an owner defect; the accepted owner already preserves the HJ-2 identity and phase-evidence limits.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T130653Z-melanterite-round95-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Melanterite
+started_at: '2026-10-15T12:50:25.370499Z'
+finished_at: '2026-10-15T13:06:53.922987Z'
+reviewer:
+  identity: codex /root/round68_new_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Authored spent-steel-pickling-liquors in this cohort, not either
+    reviewed mineral. Independently inspected frozen owner/history before judgment
+    and read primary main/SI/graphics/current identifiers; no owner/history edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of distinct melanterite identity and a provisional minor
+  phase in a mixed culture-associated precipitate. The owner preserves phase-processing/causality
+  limits, abiotic nitrite chemistry and unresolved HJ-2 taxonomy. No corrective finding.
+source:
+  git_revision: 73d4b1c42541ee7ca139effae00b94ddb1c8a631
+  state: working_tree
+  inputs:
+  - path: data/records/melanterite.yaml
+    sha256: e4975a5a0c3bb3f10b9cc73e15757840d51e2047dd147aec050ee1274806cd9d
+    role: target
+  - path: history/records/melanterite/2026-10-15T124511Z-codex-f47746.yaml
+    sha256: 2996fe82187d85af5309a5bdb312c46daa80377682dab5a1fcb3604f5b68065f
+    role: context
+  - path: research/sources/round95-sulfates/20261015T124816Z-source-investigation.json
+    sha256: e1e421b7354b4565b2b7bafb3629742575308ad78fb5982e39afac97bfdbf592
+    role: context
+  - path: research/sources/round95-sulfates/20261015T124816Z-source-investigation.md
+    sha256: c7d9e758112bb39f241c5696527dba5e42dffbc7dc5b6c63af4d80dc1487e4fb
+    role: context
+scope:
+  description: Whole exact owner/history and full primary source scope, including
+    relevant figures, supplement and identifiers.
+  selection: Assigned target captured by native inspect before assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:melanterite
+targets:
+- target_id: cmmmech:melanterite
+  path: data/records/melanterite.yaml
+  label: Melanterite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/melanterite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/hauerite.yaml data/records/melanterite.yaml
+    --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual independent command checked 2 records; 0 failed.
+  target_ids:
+  - cmmmech:melanterite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed batch command 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual coordinator terminal receipt/log verified; reviewer did not repeat
+    full suite.
+  target_ids:
+  - cmmmech:melanterite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual coordinator terminal receipt/log verified; reviewer did not repeat
+    full suite.
+  target_ids:
+  - cmmmech:melanterite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed batch command 3
+  command: uv run --locked cmmmech validate-history --base 73d4b1c42541ee7ca139effae00b94ddb1c8a631
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual coordinator terminal receipt/log verified; reviewer did not repeat
+    full suite.
+  target_ids:
+  - cmmmech:melanterite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual coordinator terminal receipt/log verified; reviewer did not repeat
+    full suite.
+  target_ids:
+  - cmmmech:melanterite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/melanterite.yaml
+  locator: 'Complete exact maintained record, captured before assessment. Artifact:
+    /private/tmp/CMMMech-expansion-round95-20261015/data/records/melanterite.yaml'
+  accessed_at: '2026-10-15T13:06:53.922987Z'
+  support: supports
+  snapshot_sha256: e4975a5a0c3bb3f10b9cc73e15757840d51e2047dd147aec050ee1274806cd9d
+  summary: Exact material, mechanism, source boundaries and limitations independently
+    assessed; no reviewer edits.
+- evidence_id: history
+  kind: record_content
+  reference: history/records/melanterite/2026-10-15T124511Z-codex-f47746.yaml
+  locator: 'Canonical CREATE sidecar; inline CREATE event and history_refs compared.
+    Artifact: /private/tmp/CMMMech-expansion-round95-20261015/history/records/melanterite/2026-10-15T124511Z-codex-f47746.yaml'
+  accessed_at: '2026-10-15T13:06:53.922987Z'
+  support: supports
+  snapshot_sha256: 2996fe82187d85af5309a5bdb312c46daa80377682dab5a1fcb3604f5b68065f
+  summary: Actual GPT-6/codex attribution, timestamps, target and described scope
+    agree. Sidecar and inline event are separately retained.
+- evidence_id: named
+  kind: validation
+  reference: Independent named strict record validation
+  locator: 'Completed reviewer command on hauerite and melanterite. Artifact: /private/tmp/cmm-round95-minerals-independent/frontier-named-validation.log'
+  accessed_at: '2026-10-15T13:06:53.922987Z'
+  support: supports
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+  summary: Checked 2 records; 0 failed. Structural validity does not establish scientific
+    truth.
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round95-final-gates.json
+  locator: 'Actual four completed coordinator commands; log /private/tmp/cmm-round95-final-gates.log
+    SHA256 8af96132050dff9ff0ef15780e2e987eda035e2ec4aa602dc739a44cbb762e9c. Artifact:
+    /private/tmp/cmm-round95-final-gates.json'
+  accessed_at: '2026-10-15T13:06:53.922987Z'
+  support: supports
+  snapshot_sha256: d65e106a86d228618023d81978f5b45c360f9f83fb92c2672bec46743c5313df
+  summary: Verified actual receipt, log, base, successful exits and stable input hashes;
+    no reviewer suite rerun.
+- evidence_id: search
+  kind: search
+  reference: Bounded notices and identity/experiment search
+  locator: 'Queries, first-result scope and hidden/ignored/followed-link search with
+    bound result files. Artifact: /private/tmp/cmm-round95-minerals-independent/frontier-review-scope.json'
+  accessed_at: '2026-10-15T13:06:53.922987Z'
+  support: context_only
+  snapshot_sha256: 7bd135a7a945ed70582f7f26de5dfe3685d89270b7a3a59a318b35b1fd28223a
+  summary: No applicable correction/retraction surfaced in the inspected result windows.
+    Current target hits and authority catalog mentions are not separate experiments.
+    No universal absence claim.
+  search_scope: Exact DOI correction/retraction queries; publisher pages and current
+    retrieved authority/sequence metadata; rg --no-ignore --hidden --follow across
+    data/records, research/sources, reviews/structured and history/records. Bounded
+    scope and results in receipt.
+- evidence_id: ima
+  kind: database
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'September 2026 edition, PDF page 139 exact row and page 1 definitions
+    visually checked. Artifact: /private/tmp/cmm-round95-sulfates-research/ima-live.pdf'
+  accessed_at: '2026-10-15T13:06:53.922987Z'
+  support: supports
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  summary: Hauerite MnS2 is G/1846; melanterite Fe(SO4)(H2O)6·H2O is G/1850. G denotes
+    grandfathered, not a newly assigned numeric approval identifier.
+- evidence_id: handbook
+  kind: database
+  reference: https://handbookofmineralogy.org/pdfs/melanterite.pdf
+  locator: 'Complete one-page entry, chemistry, structure and references visually
+    checked. Artifact: /private/tmp/cmm-round95-sulfates-research/melanterite-handbook.pdf'
+  accessed_at: '2026-10-15T13:06:53.922987Z'
+  support: supports
+  snapshot_sha256: c3611abddef4f071176123516f854401304f0e30599110ab436d968c0d6bcf5f
+  summary: Cubic Pa-3 MnS2 pyrite-group hauerite and monoclinic P21/c ferrous sulfate
+    heptahydrate melanterite are distinct mineral identities. Ideal formula is not
+    experimental sample purity.
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1093/lambio/ovac022
+  locator: 'Complete actual publisher HTML; all Methods/Results, main Figures 1–5
+    and citations read. Artifact: /private/tmp/cmm-round95-sulfates-research/peng2023-minimal.html'
+  accessed_at: '2026-10-15T13:06:53.922987Z'
+  support: supports
+  snapshot_sha256: 7731d6e161c1203a3596c70bd8ecf6d6d1d778ada3799f64c61a7f228c54bdea
+  summary: 100 mL bottles contain washed log-phase HJ-2, 10 mM PIPES, nominal 5% inoculum
+    at 30 °C; liquid volume/cell density unspecified. Two parallels and no-cell comparators.
+    Nitrate-associated Fe(II) decrease is separated from phase-specific formation;
+    nitrite oxidizes Fe(II) with or without cells. Main identification conflicts with
+    SI and current sequence labels.
+- evidence_id: si
+  kind: primary_source
+  reference: https://doi.org/10.1093/lambio/ovac022
+  locator: 'Official original DOCX; native Methodology S1, Tables S1–S8 and captions,
+    all three embedded original graphics inspected; no claim of Word page rendering.
+    Artifact: /private/tmp/cmm-round95-sulfates-research/peng2023-si.docx'
+  accessed_at: '2026-10-15T13:06:53.922987Z'
+  support: supports
+  snapshot_sha256: f3bc22caff4a5db9464229205fffbefe509a2b0cb095f0f969e26d6519ebad01
+  summary: S2 assigns a mixed phase assemblage, including provisional melanterite
+    13.35%, with no quantification method/control-solid pattern/preparation. S1 labels
+    comparator NBRC14951 C. testosteroni. Functional genes are database annotations,
+    not causal enzyme assays.
+- evidence_id: fig1
+  kind: primary_source
+  reference: https://doi.org/10.1093/lambio/ovac022
+  locator: 'Original publisher main Figure 1, visually inspected alongside complete
+    caption. Artifact: /private/tmp/cmm-round95-sulfates-research/ovac022fig1.jpeg'
+  accessed_at: '2026-10-15T13:06:53.922987Z'
+  support: context_only
+  snapshot_sha256: ef06d461a6afa42dab53383f296c7ed11b76fe34b8fa3ff7d5f5184c00b84001
+  summary: Figure 1 morphology/EDS is not phase identity; Figures 2–3 separate nitrate-associated
+    and abiotic nitrite Fe(II) loss; Figures 4–5 are distinct soluble Fe-NTA/nitrobenzene
+    arms and are not transferred to melanterite recovery.
+- evidence_id: fig2
+  kind: primary_source
+  reference: https://doi.org/10.1093/lambio/ovac022
+  locator: 'Original publisher main Figure 2, visually inspected alongside complete
+    caption. Artifact: /private/tmp/cmm-round95-sulfates-research/ovac022fig2.jpeg'
+  accessed_at: '2026-10-15T13:06:53.922987Z'
+  support: context_only
+  snapshot_sha256: e4379919931cfdd460f51132a52cb78f915842af5236a10d330991e8a5b52f2e
+  summary: Figure 1 morphology/EDS is not phase identity; Figures 2–3 separate nitrate-associated
+    and abiotic nitrite Fe(II) loss; Figures 4–5 are distinct soluble Fe-NTA/nitrobenzene
+    arms and are not transferred to melanterite recovery.
+- evidence_id: fig3
+  kind: primary_source
+  reference: https://doi.org/10.1093/lambio/ovac022
+  locator: 'Original publisher main Figure 3, visually inspected alongside complete
+    caption. Artifact: /private/tmp/cmm-round95-sulfates-research/ovac022fig3.jpeg'
+  accessed_at: '2026-10-15T13:06:53.922987Z'
+  support: context_only
+  snapshot_sha256: b98e1aee3bf4ad6d920af8338d8077d6452a5f359a5b0b328dde0ced8730ed8f
+  summary: Figure 1 morphology/EDS is not phase identity; Figures 2–3 separate nitrate-associated
+    and abiotic nitrite Fe(II) loss; Figures 4–5 are distinct soluble Fe-NTA/nitrobenzene
+    arms and are not transferred to melanterite recovery.
+- evidence_id: fig4
+  kind: primary_source
+  reference: https://doi.org/10.1093/lambio/ovac022
+  locator: 'Original publisher main Figure 4, visually inspected alongside complete
+    caption. Artifact: /private/tmp/cmm-round95-sulfates-research/ovac022fig4.jpeg'
+  accessed_at: '2026-10-15T13:06:53.922987Z'
+  support: context_only
+  snapshot_sha256: 985a93e08f7838d2cf659e42e6a06f901911a2babc453d601bed98ed98c5946f
+  summary: Figure 1 morphology/EDS is not phase identity; Figures 2–3 separate nitrate-associated
+    and abiotic nitrite Fe(II) loss; Figures 4–5 are distinct soluble Fe-NTA/nitrobenzene
+    arms and are not transferred to melanterite recovery.
+- evidence_id: fig5
+  kind: primary_source
+  reference: https://doi.org/10.1093/lambio/ovac022
+  locator: 'Original publisher main Figure 5, visually inspected alongside complete
+    caption. Artifact: /private/tmp/cmm-round95-sulfates-research/ovac022fig5.jpeg'
+  accessed_at: '2026-10-15T13:06:53.922987Z'
+  support: context_only
+  snapshot_sha256: ca5cd16d826f75b4fa949929d0a0335805c0c157d431f04d035caba49756d0e7
+  summary: Figure 1 morphology/EDS is not phase identity; Figures 2–3 separate nitrate-associated
+    and abiotic nitrite Fe(II) loss; Figures 4–5 are distinct soluble Fe-NTA/nitrobenzene
+    arms and are not transferred to melanterite recovery.
+- evidence_id: si1
+  kind: primary_source
+  reference: https://doi.org/10.1093/lambio/ovac022
+  locator: 'Exact original DOCX embedded Figure S1, visually inspected. Artifact:
+    /private/tmp/cmm-round95-sulfates-research/peng-si-images/image1.jpeg'
+  accessed_at: '2026-10-15T13:06:53.922987Z'
+  support: context_only
+  snapshot_sha256: 57d3f0c29928cfba260958a7ea0e6dd0cbff67cb5fd3046bfb26c4eebdf8b7c6
+  summary: S1 preserves conflicting species labels; S2 is the claimed mixed XRD pattern
+    with 13.35% melanterite; S3 is a separate arsenic arm. No phase-pure yield or
+    biological necessity is established.
+- evidence_id: si2
+  kind: primary_source
+  reference: https://doi.org/10.1093/lambio/ovac022
+  locator: 'Exact original DOCX embedded Figure S2, visually inspected. Artifact:
+    /private/tmp/cmm-round95-sulfates-research/peng-si-images/image2.jpeg'
+  accessed_at: '2026-10-15T13:06:53.922987Z'
+  support: supports
+  snapshot_sha256: b58863584318567f36a316eb128e5e0a5b912a9ee1d12cba98aec701f5f413e6
+  summary: S1 preserves conflicting species labels; S2 is the claimed mixed XRD pattern
+    with 13.35% melanterite; S3 is a separate arsenic arm. No phase-pure yield or
+    biological necessity is established.
+- evidence_id: si3
+  kind: primary_source
+  reference: https://doi.org/10.1093/lambio/ovac022
+  locator: 'Exact original DOCX embedded Figure S3, visually inspected. Artifact:
+    /private/tmp/cmm-round95-sulfates-research/peng-si-images/image3.png'
+  accessed_at: '2026-10-15T13:06:53.922987Z'
+  support: context_only
+  snapshot_sha256: 43195c2551ebd83eb3221ae717871e0dd3b02337f794ce9f642b67f6292105d9
+  summary: S1 preserves conflicting species labels; S2 is the claimed mixed XRD pattern
+    with 13.35% melanterite; S3 is a separate arsenic arm. No phase-pure yield or
+    biological necessity is established.
+- evidence_id: mz701937
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/MZ701937.1
+  locator: 'Current original NCBI sequence XML, definition and source/strain/taxon
+    qualifiers independently inspected. Artifact: /private/tmp/cmm-round95-sulfates-research/genbank-MZ701937.xml'
+  accessed_at: '2026-10-15T13:06:53.922987Z'
+  support: supports
+  snapshot_sha256: 851d0bda7ad853006e475f3d2025e1152c19c99f83f67789d8af50812b15858d
+  summary: MZ701937.1 names HJ-2 C. thiooxydans (363952); AB680720.1 names C. testosteroni
+    NBRC14951. Neither reconciles the main article C. terrigena claim. No species-level
+    organism ID is assigned to the experimental strain.
+- evidence_id: ab680720
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/AB680720.1
+  locator: 'Current original NCBI sequence XML, definition and source/strain/taxon
+    qualifiers independently inspected. Artifact: /private/tmp/cmm-round95-sulfates-research/genbank-AB680720.xml'
+  accessed_at: '2026-10-15T13:06:53.922987Z'
+  support: supports
+  snapshot_sha256: 32b4ca9a9c07cd9fddf733c6e7a86fb2fec308504342d3582f49b237d1a023e9
+  summary: MZ701937.1 names HJ-2 C. thiooxydans (363952); AB680720.1 names C. testosteroni
+    NBRC14951. Neither reconciles the main article C. terrigena claim. No species-level
+    organism ID is assigned to the experimental strain.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Distinct material identity and source scope
+  outcome: supported
+  summary: Current IMA/Handbook ground the distinct mineral. No inheritance of elemental
+    criticality, commodity identity or other mineral mechanism.
+  target_ids:
+  - cmmmech:melanterite
+  evidence_ids:
+  - owner
+  - ima
+  - handbook
+  - search
+- assessment_id: mechanism
+  area: evidence
+  topic: Experimental mechanism and causal limits
+  outcome: supported
+  summary: The culture is present in the accepted preparation, but melanterite-specific
+    biological causation is not established. Residual ferrous sulfate crystallization
+    during unreported processing remains possible; nitrite oxidation includes an abiotic
+    route.
+  target_ids:
+  - cmmmech:melanterite
+  evidence_ids:
+  - owner
+  - primary
+  - si
+  - si2
+- assessment_id: controls
+  area: scope
+  topic: Organism, biomass state, substrate and controls
+  outcome: supported
+  summary: Washed living HJ-2 and no-cell/no-nitrate comparators support the solution
+    context; no comparator solid XRD proves melanterite-specific causation. Species
+    labels disagree across main, S1 and GenBank; strain HJ-2 stays unresolved, with
+    no species identifier.
+  target_ids:
+  - cmmmech:melanterite
+  evidence_ids:
+  - owner
+  - primary
+  - si
+  - mz701937
+  - ab680720
+- assessment_id: quantity
+  area: quantity
+  topic: Quantitative endpoint and denominator
+  outcome: supported
+  summary: S2 labels 13.35% melanterite, 55.52% goethite, 15.35% lepidocrocite and
+    15.76% hematite without refinement, uncertainty or absolute phase-mass basis.
+    Fe(II) 3.64→0.84 mmol/L at 144 h is a solution endpoint, not isolated yield or
+    established XRD collection time.
+  target_ids:
+  - cmmmech:melanterite
+  evidence_ids:
+  - primary
+  - si2
+- assessment_id: provenance
+  area: provenance
+  topic: Exact owner, history and actual checks
+  outcome: supported
+  summary: Independent assessment binds exact working-tree owner and canonical history.
+    Inline and sidecar events agree; no owner/history changes. Source limitations
+    do not become asserted recovery or industrial deployment.
+  target_ids:
+  - cmmmech:melanterite
+  evidence_ids:
+  - owner
+  - history
+  - named
+  - batch
+  - search
+findings: []
+actions: []
+limitations:
+- 'Phase assignment remains provisional: no independent re-refinement, control-solid
+  XRD, solid preparation, collection time, quantification method or closed Fe balance.
+  No phase-pure production or recovered-iron yield.'
+- HJ-2 species identity remains unresolved despite current sequence lookup; the cited
+  CCTCC deposit is not independently resolved. Gene annotations do not prove enzyme
+  expression or causal formation.
+- Main HTML and all five main graphics were read; original DOCX native text/tables
+  and three embedded graphics inspected. No claim that an unavailable publisher PDF
+  or rendered Word pages were inspected.
+- Bounded notice/lineage searches do not prove exhaustive absence of counterliterature;
+  this acceptance covers only exact reviewed bytes.
+notes:
+- Started_at is the filesystem timestamp of the retained first native inspection receipt,
+  not an invented source-research start. The original source/input capture preceded
+  assessment. Later target kind/repository metadata normalization preserves identical
+  owner/history/dossier hashes and original capture.
+- Named validation and actual four coordinator batch commands are complete. Scientific
+  acceptance does not cover reviewer-authored spent-steel-pickling-liquors.
+- Raw source artifacts remain outside Git with exact nonempty hashes and explicit
+  local Artifact locators; derived transcript is clearly distinguished from original
+  HTML/PDF bytes.
+- Source clarification https://github.com/CultureBotAI/CMMMech/issues/340 remains
+  distinct from an owner defect; the accepted owner already preserves the HJ-2 identity
+  and phase-evidence limits.
+```

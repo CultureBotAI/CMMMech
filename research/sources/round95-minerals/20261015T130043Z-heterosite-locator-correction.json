@@ -1,0 +1,77 @@
+{
+  "recorded_at": "2026-10-15T13:00:43.883728+00:00",
+  "kind": "source_investigation_correction",
+  "issue": {
+    "number": 339,
+    "url": "https://github.com/CultureBotAI/CMMMech/issues/339"
+  },
+  "issue_key": "heterosite-round95-methods-section-locator",
+  "initial_review": {
+    "review_id": "20261015T125439Z-heterosite-round95-initial-locator",
+    "finding_id": "F1",
+    "path": "reviews/structured/20261015T125439Z-heterosite-round95-initial-locator/review.yaml",
+    "sha256": "ba7957a16c5ac537b0fe23767a00f33adcda2137388994feb902368ded041861"
+  },
+  "original_dossier": [
+    {
+      "path": "research/sources/round95-minerals/20261015T124811Z-source-investigation.json",
+      "sha256": "6a9ff2663726c0e0328ba5fcbfabeb9b3bf46c65405a8032fca3599b947ab8f6"
+    },
+    {
+      "path": "research/sources/round95-minerals/20261015T124811Z-source-investigation.md",
+      "sha256": "d28aca6c349f10487efa700f65bf05f31603784041ef7153bd993d2547af42aa"
+    }
+  ],
+  "correction": {
+    "checked_at": "2026-10-15T12:59:47.637752Z",
+    "passed": true,
+    "issue": 339,
+    "issue_key": "heterosite-round95-methods-section-locator",
+    "initial_review": "20261015T125439Z-heterosite-round95-initial-locator",
+    "before": {
+      "path": "/private/tmp/cmm-round95-minerals-research/heterosite-before-correction.yaml",
+      "sha256": "ab138bec6a2ec7951640720e6063b42ea253c92409fca4a64cf9b350343c87d4",
+      "provenance": "Actual frozen pre-correction owner copied immediately before authorized change."
+    },
+    "after": {
+      "path": "/private/tmp/CMMMech-expansion-round95-20261015/data/records/heterosite.yaml",
+      "sha256": "916efa4c559606a0ddaf4bf1a85519ba9ef66c8eae0f3c9e51657ee2a07fc95a"
+    },
+    "edit": {
+      "path": "history/records/heterosite/2026-10-15T125918Z-codex-8e2475.yaml",
+      "sha256": "8d7fab3ef98dc1fced31d1caa96c8d7601b0f04bbdd5e9643ae74777788bc818"
+    },
+    "allowed_changes": [
+      "sources[id=reich2024].title exact locator substring",
+      "append curation_history EDIT",
+      "append history_refs EDIT"
+    ],
+    "parsed_comparison": "All other parsed fields identical."
+  },
+  "accepted_primary": {
+    "path": "/private/tmp/cmm-round95-minerals-research/reich2024.pdf",
+    "sha256": "26a6095b8aef3e0e8ea227dcd3a08b7772de169695b423d5a52d36c91b156286",
+    "url": "https://publikationen.bibliothek.kit.edu/1000172429/153604117",
+    "locator": "PDF page 3, section 2 Materials and methods and subsection 2.1 Experimental; section 3 follows without sections 2.2/2.3."
+  },
+  "validation": {
+    "started_at": "2026-10-15T12:59:47.659829+00:00",
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "cmmmech",
+      "validate",
+      "data/records/heterosite.yaml"
+    ],
+    "worktree": "/private/tmp/CMMMech-expansion-round95-20261015",
+    "owner_sha256": "916efa4c559606a0ddaf4bf1a85519ba9ef66c8eae0f3c9e51657ee2a07fc95a",
+    "finished_at": "2026-10-15T12:59:49.573224+00:00",
+    "exit_code": 0,
+    "log": "/private/tmp/cmm-round95-minerals-research/corrected-named-validation.log",
+    "log_sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e"
+  },
+  "scope": "Only source-title locator corrected. Scientific claims, original CREATE, alunite, initial source pair and initial native finding remain unchanged. This author correction is not an independent scientific review or final batch acceptance.",
+  "report_path": "research/sources/round95-minerals/20261015T130043Z-heterosite-locator-correction.md",
+  "report_sha256": "118c1311ac2c56daf5298fb366d1ad3be08e6297d7db19cc2d1b0c40ee87e252"
+}

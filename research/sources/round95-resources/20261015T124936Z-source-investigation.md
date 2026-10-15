@@ -1,0 +1,38 @@
+# Round95 resource source investigation
+
+Saved 2026-10-15T12:49:36.152501+00:00 by codex (GPT-6); authored scope only, pending independent scientific review.
+
+Selected one secondary-resource owner, `spent-steel-pickling-liquors`, with actual steel-plant hydrochloric pickling-bath liquid and culture-associated Fe(II) oxidation. Material identity is process-derived liquid, distinct from electroplating-bath liquid, treatment sludge, mill scale and steelmaking slag. The HCl/9K experiment does not justify splitting acid grades or facilities into owners, nor claiming all pickling liquors behave alike. No constituent criticality is inherited.
+
+## Accepted evidence and inspection
+
+[Qin et al.](https://doi.org/10.1080/19443994.2014.981221) appeared online 6 December2014 and in Desalination and Water Treatment57(2016):1836–1843. Official full original: `/private/tmp/cmm-round95-resources-research/pickling2015.pdf`, SHA256 `c0d647a31eddb2a282d7c0804b7d238a44ac090a211c052065e686959465f91e`, eight pages. The filename is an acquisition label, not a claim of a2015 publication. Full text and all eight page renders were personally inspected: p1837 §§2.1–2.3 feed/culture; p1838 Table1/single-factor design/results; p1839 Figures1–3; p1840 Figures4–5; p1841 Figures6–7; p1842 Figure8/conclusion; p1843 references. No SI is announced in the complete original; bounded notice/metadata searches found no separate supplement or correction, not an exhaustive absence guarantee.
+
+The actual plant liquor was filtered0.22µm and mixed with9K. Inoculated9K comparisons and low-response CK curves are shown, but CK preparation/sterility is undefined. Culture growth uses50mL/250mL flask,30°C,100rpm; waste-assay working volume, inoculum amount and independently specified conditions remain unclear. The single-factor experiments explicitly have three repeats; that does not establish biological replication for all arms. Fe(II) measured by dichromate titration is not isolated recovered iron. Reagent Fe/sulfate/ammonium contribute to the mixed assay.
+
+Figure1 supports delayed oxidation as waste fraction increases; source reports20% approaching completion after45h and60% reaching99.9% on day17, whereas its9K comparison is near complete by day4. Source reports no oxidation for70/80%, without graphs. These nulls are retained. Figure2 has strong low-pH inhibition and residual apparent oxidation, not direct growth measurement. Figures3–4 show lag versus9K despite no-inhibition prose. SEM/EDS/XRD/FTIR establish characterized sediment but not quantitative phase purity or waste-iron mass balance.
+
+## Contradictions and boundaries retained
+
+1. Raw Fe(II)250mg/L and culture recipe0.5g/L FeSO4·7H2O do not reproduce the stated7.13/5.35/3.57g/L Fe(II) mixtures; rawCl310mg/L/pH0 do not establish a consistent acid/ion inventory. No undocumented unit repair.
+2.40% text has after84h growth yet80h endpoint, graph later; Methods20/40/60-to100 sequence differs from reported70/80 nulls. No invented100% result or reconciled rate.
+3.Table1 chloride-ion versus text NaCl/KCl basis and pH1.3 threshold versus actualTable1 grid unresolved. Abstract combined tolerance settings do not turn single-factor experiments into a factorial joint test.
+4.Section3.3.1 names potassium jarosite but writes ammonium formula; no quantitative phase refinement. FTIR C–Cl/adaptation remains proposed, not proven covalent binding or causal tolerance.
+5.Current GenBank KF378735.1 is1440-base partial16S of XJF-8 with coal mine drainage and China:Shanxi qualifiers, unlike the paper's Tianjin factory-outlet culture. Current NCBITaxon920 verifies species nomenclature only; no verified strain equivalence or functional validation is asserted. Exact downloaded XMLs are SHA-bound in the paired JSON.
+6.No isolated product recovery, cadmium fate, acid reuse, viability-independent molecular mechanism or industrial operation is demonstrated.
+
+## Deduplication and source lineage
+
+Searches included hidden/ignored files and followed symlinks across maintained records/research/reviews/history; relevant linked raw roots were round57-anode-slime, round86-resources, round89-resources and round93-resources. Exact DOI/accession searches and broader pickling/jarosite/feed searches were used. Read round57anode-slime, round58pickling-reagent and round93resource deferrals. Current closing search excludes only this new owner; evidence in `/private/tmp/cmm-round95-resources-research/dedup-receipt.json`. No exact accepted Qin experiment or existing liquid owner was found in those bounds. This is not machine-wide or an exhaustive literature claim. The232-entry all-state inventory has broad issue93 and different Kordloo issue178, not the current source ambiguity. This paper's isolate and its waste feed have separate origins; they are not silently merged.
+
+## Acquired context and deferred leads
+
+The complete official López et al.1998 five-page CSIC overview, DOI10.3989/revmetalm.1998.v34.iExtra.788, was textually and visually inspected, including Figures1–5. It discusses biological or peroxide preoxidation followed by160°C hydrolysis or chemical/thermal ferrite production. Its summarized microbial methods do not supply missing Qin controls or a new independent replication. It is dossier context only, absent from accepted owner evidence. Garcia1994 DOI10.1111/j.1574-6976.1994.tb00114.x fullPDF and López1996 DOI10.1007/BF00275350 attempts returned HTML/access barriers; no abstract percentages imported. López1997 DOI10.1016/S0304-386X(96)00066-7 has a discovered CSIC handle10261/38420 but full text was not acquired. Konishi2000 DOI10.4144/RPSJ1986.47.47/J-STAGE route was discovered but not recovered;2004 DOI10.1016/j.hydromet.2004.01.007 is a future primary route, not accepted.
+
+Industrial zinc-refinery jarosite waste remains deferred, not equated with pure jarosite mineral owners. Bedi DOI10.1016/j.jes.2017.09.017 has author-page parsed text but full graphics/PDF unavailable; Deakin20823526 metadata reports a file embargo, and authorPDF attempt returns HTML. Singh DOI10.1080/00084433.2024.2393028 main/SI not acquired. Mäkinen DOI10.4028/www.scientific.net/SSP.262.24 original four-page methods/graphics not acquired; Scientific.Net attempt is non-PDF. VTTT317 is a complete100-page different process report, screened by text, not the Mäkinen bioexperiment. No jarosite-waste owner is forced.
+
+## Provenance, rights and validation
+
+Raw artifacts remain external under `/private/tmp/cmm-round95-resources-research`; copyrighted originals are not copied into Git. QinPDF says all rights reserved; the LópezPDF carries CC BY-NC3.0Spain. Third-party license labels are not substituted. Crossref identity, online/print dates and relation fields checked; relation is empty and no update-to/updated-by was present, a bounded metadata observation. Exact URLs/checksums/formats and query list are in the paired JSON; initial Python acquisition attempts have actual timestamps, later curl headers/file checks do not pretend to retain precise request times.
+
+Root baseline at exactbase73d4b1c42541ee7ca139effae00b94ddb1c8a631 completed before maintained writes; receipt/log SHA verified. Canonical CREATE `history/records/spent-steel-pickling-liquors/2026-10-15T124623Z-codex-d8a138.yaml` and distinct current inline event are attached. Named `uv run --locked cmmmech validate data/records/spent-steel-pickling-liquors.yaml --require-records` returned1record/0failed. No full batch or independent scientific acceptance is claimed here. Source-clarification draft `/private/tmp/cmm-round95-pickling-source-followup.md` remains external for coordinator's live dedup/posting. Owner and history hashes in paired JSON are final frozen bytes.

@@ -1,0 +1,3 @@
+# Expanded OP2 initial observation
+
+2026-10-15T13:04:12.887241+00:00. Same stable key `cmmmech.round95.report-heterosite-material-form` and minor severity as the first observation. README line 469 repeats the incorrect electrode material form in both cells. The exact README snapshot is `/private/tmp/cmm-round95-report-static-expanded-20261015T130412Z.README.md` (SHA256 5b656cb157060c4cb9e875a1502fc262dfee851a8a529a7b1ec8d17439258a60); the original builder snapshot remains byte-identical. Both require the narrowly scoped powder wording recorded in the paired JSON. No correction has been applied at this observation.

@@ -1,0 +1,136 @@
+id: cmmmech:heterosite
+name: Heterosite
+material_kind: mineral
+description: Heterosite is the ferric phosphate mineral with ideal formula Fe3+(PO4), listed as grandfathered
+  by IMA-CNMNC in September 2026 with original-description year 1826. Natural specimens can contain substantial
+  trivalent manganese. It is distinct from lithium-bearing triphylite and Mn3+-dominant purpurite. Eventoff
+  et al. (1972) refined a natural Fletcher Quarry, New Hampshire crystal of approximate composition (Fe0.65Mn0.35)PO4
+  with an effectively vacant lithium site. The 2023 triphylite-group nomenclature retains heterosite while
+  discrediting ferrisicklerite and sicklerite; the historical oxidation experiment already curated under
+  cmmmech:triphylite is not counted here as a new experiment. The separate Reich et al. (2024) study concerns
+  a synthetic heterosite-structure FePO4 sorbent made from commercial carbon-coated LiFePO4, not mined
+  natural heterosite. Its laboratory lithium uptake from pretreated natural geothermal brine and a separate
+  synthetic brine does not establish purified lithium recovery, natural-ore extraction, microbial activity
+  or industrial deployment. No constituent-element criticality is inherited.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Heterosite row, PDF page 93, Fe3+(PO4),
+    G, 1826; status definitions page 1.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-15'
+- id: handbook_heterosite
+  title: Handbook of Mineralogy. Heterosite, complete one-page entry; natural chemistry and orthorhombic
+    Pmnb identity. Secondary authority, older group terminology qualified by Lyalina2023.
+  url: https://handbookofmineralogy.org/pdfs/heterosite.pdf
+  accessed_on: '2026-10-15'
+- id: eventoff1972
+  title: Eventoff W, Martin R, Peacor DR (1972). The crystal structure of heterosite. American Mineralogist
+    57:45-51. Complete seven-page original; experimental section page 46, Tables 2-4 pages 47-48 and Figure
+    1 page 49 inspected. Separate NAPS structure-factor Table 1, document 01668, was not acquired; no
+    independent re-refinement claimed.
+  url: https://www.rruff.net/doclib/am/vol57/AM57_45.pdf
+  accessed_on: '2026-10-15'
+- id: lyalina2023
+  title: Lyalina LM, Selivanova EA, Hatert F (2023). Nomenclature of the triphylite group of minerals.
+    European Journal of Mineralogy 35:427-437. Tables 1-3 and sections 4-6 distinguish present species
+    and historical names; nomenclature reused from round93, not a new oxidation experiment.
+  url: https://doi.org/10.5194/ejm-35-427-2023
+  accessed_on: '2026-10-15'
+- id: reich2024
+  title: 'Reich R, Eiche E, Kolb J (2024). Delithiation and lithiation of LiFePO4: Implications for direct
+    Li extraction from synthetic solutions and geothermal brines. Desalination 586:117883. Complete eighteen-page
+    original, methods section 2 and subsection 2.1 (PDF page 3), Figures 1-12 and Tables 1-3 inspected.'
+  url: https://doi.org/10.1016/j.desal.2024.117883
+  accessed_on: '2026-10-15'
+- id: reich2024_fulltext
+  title: KIT institutional copy of the complete Reich et al. publisher original, CC BY 4.0.
+  url: https://publikationen.bibliothek.kit.edu/1000172429/153604117
+  accessed_on: '2026-10-15'
+- id: reich2024_si
+  title: Official Reich2024 supplementary workbook, fourteen sheets corresponding to Figures 5-12. Native
+    cell values, method labels, censoring, blanks and selected claim-bearing rows inspected; published
+    static values contain no formulas.
+  url: https://ars.els-cdn.com/content/image/1-s2.0-S0011916424005940-mmc1.xlsx
+  accessed_on: '2026-10-15'
+mechanisms:
+- id: abiotic-preparation-and-lithiation-of-synthetic-heterosite
+  name: Abiotic delithiation and lithium uptake by a synthetic heterosite-structure sorbent
+  process: redox_transformation
+  microbial: false
+  description: Persulfate treatment removed lithium from commercial LiFePO4 to form a source-assigned
+    heterosite-structure FePO4 solid. In separate experiments, thiosulfate-assisted lithiation loaded
+    this synthetic solid with lithium from LiCl solutions, iron-depleted Bruchsal geothermal brine, or
+    a synthetic Neustadt-Glewe-like brine. Diffraction and chemical measurements support structural conversion
+    and lithium uptake, but the products contain residual lithium, substitutions and secondary phases.
+    Reductive intercalation is the authors' interpretation; uptake is not evidence of an isolated pure
+    lithium product.
+  context: 'Reich2024 used commercial carbon-coated IBUvolt LFP400. Delithiation screening used approximately
+    1 g in 200 mL at nominal 25 degrees C, with water, NaCl, HCl and oxidant comparisons; reaction times
+    differ among screening arms. Selected kinetics used 0.1 M Na2S2O8. Subsequent lithiation generally
+    used 0.5 M Na2S2O3: pure LiCl experiments had nominal 200 mg/L Li and temperatures 25, 60 or 80 degrees
+    C, while brine experiments used a nominal 60 degrees C setting. Natural Bruchsal feed had been pretreated
+    to remove iron; the second brine was synthetic. Table 2 reports about 155-158 mg/L Li for Bruchsal
+    versus approximately 11 mg/L for the synthetic brine, while figure labels round these to 160 and 10.
+    Kinetic experiments used roughly 5 g sorbent/L over one minute to two weeks; isotherms varied sorbent
+    loading and used three hours for Bruchsal and four hours for synthetic brine. The Bruchsal suspension
+    was stirred, the synthetic one shaken. The workbook separately records nominal treatment temperature
+    and temperatures during pH measurements; these are not asserted to be identical. Blanks and analytical
+    quality controls were included, but independent experimental replication is not clearly established.
+    No organisms were used.'
+  evidence:
+  - source_ref: eventoff1972
+    supports: context_only
+    explanation: The natural-crystal experiment on pages 45-49, Tables 2-4 and Figure 1 grounds heterosite
+      independently of the engineered sorbent. It used Mn:Fe approximately 35:65 and found the lithium
+      site essentially vacant. This is structural identity evidence, not a geothermal lithium-extraction
+      experiment.
+  - source_ref: reich2024
+    supports: support
+    explanation: Table 1 and Figures 1-4, pages 4-8, characterize the commercial precursor and delithiated
+      solid. Lithium decreases from 43 to 1.7 mg/g in the two bulk analyses. The authors assign orthorhombic
+      triphylite and heterosite structures, respectively. Residual Li, nonideal Fe/P chemistry, shifted
+      diffraction peaks and an unidentified reflection near 64.35 degrees 2-theta preclude treating the
+      latter as a demonstrated phase-pure ideal FePO4 endmember.
+  - source_ref: reich2024
+    supports: support
+    explanation: Sections 3.2-3.4 and Figures 5-11 separate preparation, solution and brine arms. Selected
+      0.1 M persulfate kinetics released approximately 42-43 mg Li per gram of precursor within one minute,
+      while water released approximately 1-3 mg/g in the screening arms. For natural Bruchsal brine, the
+      kinetic series approached 23 mg Li/g prepared sorbent after three hours; its separate isotherm gave
+      approximately 24-27 mg/g at 2.5-5 g/L. The synthetic low-Li brine gave approximately 1.0 mg/g in
+      the kinetic arm and 1.3 mg/g at 2 g/L in its separate four-hour isotherm. These are source-reported
+      sorbent-normalized loadings, not percentages of purified lithium recovered.
+  - source_ref: reich2024
+    supports: partial
+    explanation: 'Figure 8 and section 3.3 show a conditional null: seven-day pure-LiCl experiments at
+      nominal 60 and 80 degrees C did not show lithium uptake, unlike the 25-degree arm. Thiosulfate instability
+      and acidification confound a simple temperature-only interpretation. Figures 1-2 and 9-12 show secondary
+      gypsum/sulfur formation, sodium and sulfur accumulation, and increasing Fe/P release during prolonged
+      reaction. Performance in the early brine experiments is therefore not proof of long-term structural
+      stability, universal selectivity or repeated industrial cycling.'
+  - source_ref: reich2024_si
+    supports: partial
+    explanation: The workbook distinguishes fluid-OES and solid-digestion measurements, so a single analytical
+      basis is not imposed on all reported loadings. Sheets Fig. 9a, Fig. 10 and Fig. 9b, Fig. 10 label
+      kinetic lithium as fluid OES; sheets Fig. 10, Fig. 11a+b and Fig. 10, Fig. 11c+d label isotherm
+      lithium as digestion OES. Bruchsal isotherm cells K9/K10 report about 26.76/23.68 mg/g, while synthetic-brine
+      cell M11 reports about 1.317 mg/g. Some high-loading residual-fluid cells are encoded as zero or
+      less than LOQ; they are not accepted as proof of exactly zero residual lithium or a closed recovery
+      balance. Blank rows with zero sorbent mass also carry load-labelled entries whose normalization
+      is not explained. Published static cell values were inspected without inventing missing formulas
+      or silently replacing the source calculations.
+curation_history:
+- timestamp: '2026-10-15T12:44:57.814050+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Added mineral identity and qualified primary abiotic transformation evidence, preserving material
+    provenance, controls, analytical denominators and source limitations; no microbial or inherited criticality
+    claim.
+- timestamp: '2026-10-15T12:59:47.637752Z'
+  curator: codex (GPT-6; codex)
+  action: EDIT
+  summary: Corrected the Reich2024 methods locator to section 2 and subsection 2.1 on PDF page 3,
+    resolving independent F1 and issue 339; scientific statements and the original CREATE remain unchanged.
+history_refs:
+- history/records/heterosite/2026-10-15T124517Z-codex-52e820.yaml
+- history/records/heterosite/2026-10-15T125918Z-codex-8e2475.yaml
