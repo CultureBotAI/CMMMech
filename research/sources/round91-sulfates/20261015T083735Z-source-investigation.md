@@ -1,0 +1,19 @@
+# Round 91: natrojarosite source assessment
+
+Natrojarosite is accepted as a distinct sodium ferric hydroxysulfate mineral. This dossier supports qualified laboratory abiotic synthesis and a separate natural microbial association; it does not claim microbial formation, a recovered product, inherited criticality or industrial deployment.
+
+## Evidence and limits
+
+- **Basciano and Peterson 2008**, [DOI](https://doi.org/10.2138/am.2008.2731), complete original ten pages via [RRUFF](https://www.rruff.net/doclib/am/vol93/AM93_853.pdf). All seven figures and five tables were inspected visually and in text. The 140 °C, 48-hour initial Na–H3O synthesis and 200 °C, three-day ground precursor treatment support their synthetic sodium sample P. Table 1 chemical Na occupation is approximately97.7%; Tables2/4 use idealized100%Na. Chemistry uncertainty and model idealization are distinct from measured product purity.
+- The original has unresolved conflicts: Table1P footnote says chloride medium while methods/results describe a two-step sulfate route; Table3P Naoccupancy0.1 conflicts with Tables2/4; Figure1 is called ammoniojarosite in text but natrojarosite in its caption. The sodium sulfate concentration unit in the second-step recipe is absent. Some series-formula/header tokens also conflict. No reconstructed executable recipe, corrected table cell, exact product yield or universal natural composition is invented.
+- **Gómez et al. 2024**, [DOI](https://doi.org/10.3390/microorganisms12040829), complete18-page official publisher PDF plus EuropePMC full XML and official TableS1 workbook. Sampling occurred May2010. Figure3 shows natrojarosite **and quartz** in the inner crust and gypsum in the outer layer. Figures4–11 establish microbial/pigment association through microscopy, CARD-FISH, immunolabelling and sequence evidence. They do not test biological precipitation or dissolution against abiotic controls. Field deposit pH averaged0.8; the authors explicitly could not measure pH across the thin cyanobacterial layer. No species/strain assignment or sequence-derived causal mechanism is imported.
+- The supplement has3995data rows after its header. Its BLAST-like annotations were inspected for structure and selected entries, not independently reanalysed. Counts are inventory information, not experimentally confirmed taxa/genes. No per-row molecular claim is curated.
+- Current September2026 IMA PDF152 verifies formula/status. The complete Handbook entry supplies secondary natural-composition context. Formula identity does not imply assay purity or critical-list membership.
+
+## Search, review and next candidates
+
+The paired JSON records actual acquisition hashes, bounded queries and deduplication. Hidden/ignored and followed paths were included in maintained data, research, reviews and history searches; referenced round89/90 raw roots were also checked before promotion. The previous potassium jarosite owner expressly excludes natrojarosite. Exact-DOI correction/retraction queries returned originals and authority entries without a notice in the inspected result set; this is a bounded finding.
+
+Wang2013 biosynthesis and Bridge/Johnson2000 reductive dissolution remain full-text-dependent leads. The official2012 Christina M.Smeaton dissertation has now been acquired (240pages); only title/contents/search hits have been inspected. Chapter2 controlled Pb-jarosite work is a priority **plumbojarosite** candidate, pending full primary/graphics review and deduplication. An early local filename says `jones-thesis.pdf`; its content is Smeaton's dissertation, and no Jones attribution is asserted. Source discovery is not exhausted.
+
+The canonical CREATE sidecar is linked in the owner. Named strict validation passed1/0. Independent scientific review and batch validation are separate subsequent gates. Raw source documents and derived images remain external to Git; this report contains original synthesis and source locators.

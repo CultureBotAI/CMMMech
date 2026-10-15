@@ -1,0 +1,480 @@
+# Independent scientific review of Natrojarosite
+
+- Review: 20261015T084631Z-natrojarosite-round91-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T08:40:36.181779Z
+- Finished UTC: 2026-10-15T08:46:31.626878Z
+- Reviewer: codex /root/round68_phosphates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of distinct natrojarosite identity and abiotic near-endmember synthesis, with separately bounded natural mixed-mat association. Recipe/model contradictions, field phase mixture and unmeasured cyanobacterial-layer pH are preserved; no corrective record finding.
+
+## Scope And Provenance
+
+Whole exact maintained owner, canonical CREATE and source dossier; complete accepted primary originals and claim-bearing figures/tables, available relevant supplement inventory, authority/identifier context and bounded current notices/lineage check.
+
+Selection: Assigned canonical owner captured by native inspect before final assessment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1aa4c7528b1293734067918d942dc461581a07e2.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:natrojarosite | data/records/natrojarosite.yaml | maintained | Natrojarosite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named strict validation | passed | True | cmmmech:natrojarosite | Actual independent completed command: two records, zero failures. |
+| Completed coordinator batch command 1 | passed | True | cmmmech:natrojarosite | Actual terminal command and retained log independently verified; not rerun by reviewer. |
+| Completed coordinator batch command 2 | passed | True | cmmmech:natrojarosite | Actual terminal command and retained log independently verified; not rerun by reviewer. |
+| Completed coordinator batch command 3 | passed | True | cmmmech:natrojarosite | Actual terminal command and retained log independently verified; not rerun by reviewer. |
+| Completed coordinator batch command 4 | passed | True | cmmmech:natrojarosite | Actual terminal command and retained log independently verified; not rerun by reviewer. |
+
+## Scientific And Domain Assessments
+
+### Distinct sodium ferric sulfate species
+
+identity: supported. Targets: cmmmech:natrojarosite.
+
+Current IMA and Handbook support species/formula/status; no inherited criticality or universal natural assay.
+
+### Abiotic sampleP synthesis versus field association
+
+evidence: supported. Targets: cmmmech:natrojarosite.
+
+The only encoded mechanism is explicitly nonmicrobial synthesis. Separate field observations support association with mixedmat only, not microbial precipitation/dissolution.
+
+### Siteoccupation, composition and uncontrolled microenvironment
+
+quantity: supported. Targets: cmmmech:natrojarosite.
+
+97.7%chemistry versus100%idealization is not yield or purity. FieldpH0.8 is not measured internal cyanobacterial micro-pH. No gene/strainquantitation is asserted.
+
+### Source protocol and table conflicts
+
+scope: supported. Targets: cmmmech:natrojarosite.
+
+All described original inconsistencies are directly visible and remain unresolved. Natural unit-cell comparison cannot prove universal fullFeoccupancy; recipe is not silently reconstructed.
+
+### Complete primary/authority and actual history
+
+provenance: supported. Targets: cmmmech:natrojarosite.
+
+Both full originals and mainfigures/tables independently inspected; officialSI structure/selectedcells checked without gene reanalysis. Native capture and exact frozen CREATE inputs retained; no author edit by reviewer.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/natrojarosite.yaml; Whole maintained owner after native inspection. Artifact: /private/tmp/CMMMech-expansion-round91-20261015/data/records/natrojarosite.yaml | supports | Canonical material identity, mechanism and source limitations assessed on exact frozen bytes. |
+| history | history/records/natrojarosite/2026-10-15T083615Z-codex-66188a.yaml; Canonical CREATE, actual inline CREATE and owner history_refs. Artifact: /private/tmp/CMMMech-expansion-round91-20261015/history/records/natrojarosite/2026-10-15T083615Z-codex-66188a.yaml | supports | Actor codex/GPT-6, target, separate actual timestamps and described change agree; reviewer made no owner/history edits. |
+| dossier | research/sources/round91-sulfates/20261015T083735Z-source-investigation.json; Paired complete source investigation and accepted source hash/acquisition inventory. Artifact: /private/tmp/CMMMech-expansion-round91-20261015/research/sources/round91-sulfates/20261015T083735Z-source-investigation.json | supports | Failed/deferred routes are distinguished from accepted originals; source-specific evidence is not duplicated into a stronger independent experiment. |
+| named | Independent named strict validation; Actual independent command completed exit0. Artifact: /private/tmp/cmm-round91-independent-named-validation.log | supports | Both assigned records checked;2records,0failures. |
+| notices | Bounded correction/conflict and lineage searches; Exact queries, primary result URLs and hidden/ignored/followed-link local search. Artifact: /private/tmp/cmm-round91-independent-bounded-search.json | context_only | Internal source conflicts are retained; no matched correction notice surfaced in this bounded returned set. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September2026 master list,page152 Natrojarosite row; status definitions. Artifact: /private/tmp/cmm-round91-root-sources/ima-2026-09.pdf | supports | NaFe3+(3)(SO4)2(OH)6 species identity and Rd1987s.p. status agree; separate from K/ammonium/hydronium members. |
+| handbook | https://www.handbookofmineralogy.org/pdfs/natrojarosite.pdf; Complete one-page entry including natural analyses, ideal formula and series. Artifact: /private/tmp/cmm-round91-root-sources/natrojarosite-handbook.pdf | supports | Natural substitutions and jarosite series do not establish identical sample stoichiometry or universal full Fe occupation. |
+| synthesis | https://doi.org/10.2138/am.2008.2731; Complete10-page original; methodspp854–856/PDF2–4; Figure1/Tables1–4. Artifact: /private/tmp/cmm-round91-root-sources/basciano2008.pdf | supports | Initial140degreesC48h synthesis and ground~87%Na precursor treated200degreesC3days in printed acid/sulfate recipe support abiotic sampleP. No organism, product recovery yield or industrial deployment. |
+| chemical_model | https://doi.org/10.2138/am.2008.2731; Table1/PDF3,chemical-analysismethod/PDF4,Tables2–4/PDF3,5,6; Figure1 andFigures2–7 inspected. Artifact: /private/tmp/cmm-round91-root-sources/basciano2008.pdf | supports | P analytical97.7%Na normalized to2S differs from idealized100%Na model. Analytical uncertainty, siteoccupancy and phase purity are distinct; natural samples were not all atomically refined. |
+| source_conflicts | https://doi.org/10.2138/am.2008.2731; Page854 Figure1 callout and recipe; Table1Pfootnote/PDF3; Table3PNa/PDF5; resultsp856. Artifact: /private/tmp/cmm-round91-root-sources/basciano2008.pdf | supports | Ammoniojarosite callout, chloride-medium footnote and Na0.1 conflict with caption/methods/Tables2/4. Missing sodium-sulfate concentration unit and broader series header/reagent mismatch are accurately preserved. |
+| field | https://doi.org/10.3390/microorganisms12040829; Complete18page original; Methods2.1–2.9/PDF2–5,Results/PDF6–12,Discussion/PDF12–15; Figures1–11. Artifact: /private/tmp/cmm-round91-root-sources/rio2024.pdf | supports | May2010 field samples: outergypsum, innernatrojarositeplusquartz byFigure3, mixedmat microscopic/metagenomic association. Mean depositpH0.8 does not establish thin cyanobacterial-layerpH, explicitly unmeasured inDiscussion. No controlled microbial mineral formation or verified strain. |
+| field_si | https://www.mdpi.com/article/10.3390/microorganisms12040829/s1; OfficialTableS1 native workbook,3995data rows afterheader; independently parsed structure and selected entries. Artifact: /private/tmp/cmm-round91-root-sources/rio2024-supplement/Copia de Table_S1_Evalue.xlsx | context_only | Sequence similarity annotations are contextual; no row-level species/gene function or mineral causality imported. No independent sequence reanalysis is claimed. |
+| si_inventory | /private/tmp/cmm-round91-natrojarosite-independent/independent-si-inspection.json; Independent native ZIP/XML row/cell enumeration. Artifact: /private/tmp/cmm-round91-natrojarosite-independent/independent-si-inspection.json | supports | 3996rows includingheader and selected native cells agree with disclosed author inventory; no comprehensive molecular verification claimed. |
+| batch | /private/tmp/cmm-round91-final-gates.json; All FOUR actual coordinator commands from 2026-10-15T08:39:32.840338+00:00 to 2026-10-15T08:45:39.844873+00:00; retained log /private/tmp/cmm-round91-final-gates.log SHA256 ee4ac495f6f203e599ba080ce32bade1ef8a6f16b8753c87244ed8870e3340db. Artifact: /private/tmp/cmm-round91-final-gates.json | supports | Terminal receipt, exact commands, exits0, log hash, trustedbase/worktree and unchanged target owner hash independently verified; no reviewer rerun claimed. |
+
+## Limits And Additional Notes
+
+- Only abiotic laboratory synthesis is encoded as a mechanism. Field microscopy/metagenomics do not demonstrate natrojarosite biogenesis, dissolution or recovery.
+- Near-endmember synthetic siteoccupancy does not give product purity/yield or universal natural composition. Natural atomic positions/occupancies were not all refined.
+- Original sampleP chloride-footnote,Table3Na0.1,Figure1ammoniojarosite callout and concentration-unit/header conflicts remain unresolved. No executable corrected recipe is inferred.
+- The field layer contains quartz as well as natrojarosite and a mixed microbial community. pHwithin the thin cyanobacterial layer was not measured; no species/strain identity is established.
+- OfficialTableS1 native inventory and selected cells were inspected, not every annotation revalidated or metagenomics reanalysed. No row-specific molecular claim is accepted.
+- Current notice/literature and local-lineage searches were bounded; absence outside the inspected scope is not claimed.
+- No maintained owner/history edits by reviewer. Native source captures remain exact, including uncommitted working-tree state.
+- Start time is creation of preserved native target preparation; final completion followed actual independent named validation and all four coordinator commands. No unavailable check or unperformed experimental replication is represented as completed.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T084631Z-natrojarosite-round91-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Natrojarosite
+started_at: '2026-10-15T08:40:36.181779Z'
+finished_at: '2026-10-15T08:46:31.626878Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer authored gorceixite/florencite-Ce, not this natrojarosite
+    owner/history. Curator is codex /root. Both accepted complete originals and claim-bearing
+    figures/tables, mineral authorities and official workbook structure were independently
+    assessed after native capture; no owner edits or laboratory replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of distinct natrojarosite identity and abiotic near-endmember
+  synthesis, with separately bounded natural mixed-mat association. Recipe/model contradictions,
+  field phase mixture and unmeasured cyanobacterial-layer pH are preserved; no corrective
+  record finding.
+source:
+  git_revision: 1aa4c7528b1293734067918d942dc461581a07e2
+  state: working_tree
+  inputs:
+  - path: data/records/natrojarosite.yaml
+    sha256: 259d0aff12cd7d326145e46003171bb3860cef37e5e57429bf8033a6964437dd
+    role: target
+  - path: history/records/natrojarosite/2026-10-15T083615Z-codex-66188a.yaml
+    sha256: 62486bd7a901b09b6ab9f7aa62d34a1d99f9883f2a92bbcc22612f6e65e55d6c
+    role: context
+  - path: research/sources/round91-sulfates/20261015T083735Z-source-investigation.json
+    sha256: ac6564fb4f22ef5003a609ee5ec06be652635333cc75624f9770d8e64a640135
+    role: context
+  - path: research/sources/round91-sulfates/20261015T083735Z-source-investigation.md
+    sha256: 61fac61b672ae16f92a9f8ad1aa3d2f307e82f3a7e5673f2caa62e9c168ed4df
+    role: context
+scope:
+  description: Whole exact maintained owner, canonical CREATE and source dossier;
+    complete accepted primary originals and claim-bearing figures/tables, available
+    relevant supplement inventory, authority/identifier context and bounded current
+    notices/lineage check.
+  selection: Assigned canonical owner captured by native inspect before final assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:natrojarosite
+targets:
+- target_id: cmmmech:natrojarosite
+  path: data/records/natrojarosite.yaml
+  label: Natrojarosite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/natrojarosite.yaml
+    role: maintained record
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/electrical-cable-recycling-residues.yaml
+    data/records/natrojarosite.yaml --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Actual independent completed command: two records, zero failures.'
+  target_ids:
+  - cmmmech:natrojarosite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch command 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal command and retained log independently verified; not rerun
+    by reviewer.
+  target_ids:
+  - cmmmech:natrojarosite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal command and retained log independently verified; not rerun
+    by reviewer.
+  target_ids:
+  - cmmmech:natrojarosite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch command 3
+  command: uv run --locked cmmmech validate-history --base 1aa4c7528b1293734067918d942dc461581a07e2
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal command and retained log independently verified; not rerun
+    by reviewer.
+  target_ids:
+  - cmmmech:natrojarosite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal command and retained log independently verified; not rerun
+    by reviewer.
+  target_ids:
+  - cmmmech:natrojarosite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/natrojarosite.yaml
+  locator: 'Whole maintained owner after native inspection. Artifact: /private/tmp/CMMMech-expansion-round91-20261015/data/records/natrojarosite.yaml'
+  accessed_at: '2026-10-15T08:45:18.167978Z'
+  support: supports
+  snapshot_sha256: 259d0aff12cd7d326145e46003171bb3860cef37e5e57429bf8033a6964437dd
+  summary: Canonical material identity, mechanism and source limitations assessed
+    on exact frozen bytes.
+- evidence_id: history
+  kind: record_content
+  reference: history/records/natrojarosite/2026-10-15T083615Z-codex-66188a.yaml
+  locator: 'Canonical CREATE, actual inline CREATE and owner history_refs. Artifact:
+    /private/tmp/CMMMech-expansion-round91-20261015/history/records/natrojarosite/2026-10-15T083615Z-codex-66188a.yaml'
+  accessed_at: '2026-10-15T08:45:18.167978Z'
+  support: supports
+  snapshot_sha256: 62486bd7a901b09b6ab9f7aa62d34a1d99f9883f2a92bbcc22612f6e65e55d6c
+  summary: Actor codex/GPT-6, target, separate actual timestamps and described change
+    agree; reviewer made no owner/history edits.
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round91-sulfates/20261015T083735Z-source-investigation.json
+  locator: 'Paired complete source investigation and accepted source hash/acquisition
+    inventory. Artifact: /private/tmp/CMMMech-expansion-round91-20261015/research/sources/round91-sulfates/20261015T083735Z-source-investigation.json'
+  accessed_at: '2026-10-15T08:45:18.167978Z'
+  support: supports
+  snapshot_sha256: ac6564fb4f22ef5003a609ee5ec06be652635333cc75624f9770d8e64a640135
+  summary: Failed/deferred routes are distinguished from accepted originals; source-specific
+    evidence is not duplicated into a stronger independent experiment.
+- evidence_id: named
+  kind: validation
+  reference: Independent named strict validation
+  locator: 'Actual independent command completed exit0. Artifact: /private/tmp/cmm-round91-independent-named-validation.log'
+  accessed_at: '2026-10-15T08:45:18.167978Z'
+  support: supports
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+  summary: Both assigned records checked;2records,0failures.
+- evidence_id: notices
+  kind: search
+  reference: Bounded correction/conflict and lineage searches
+  locator: 'Exact queries, primary result URLs and hidden/ignored/followed-link local
+    search. Artifact: /private/tmp/cmm-round91-independent-bounded-search.json'
+  accessed_at: '2026-10-15T08:45:18.167978Z'
+  support: context_only
+  snapshot_sha256: 48741ce1f8f277f6a7bd03b60c121adbf6a1de3a08118e63e38887ed89c81614
+  summary: Internal source conflicts are retained; no matched correction notice surfaced
+    in this bounded returned set.
+  search_scope: Three exact DOI correction/erratum/retraction queries, original/publisher/PubMed
+    results and current maintained-root identity/DOI search including ignored/hidden
+    files and followed links; not an exhaustive literature or filesystem search.
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'September2026 master list,page152 Natrojarosite row; status definitions.
+    Artifact: /private/tmp/cmm-round91-root-sources/ima-2026-09.pdf'
+  accessed_at: '2026-10-15T08:45:18.167978Z'
+  support: supports
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  summary: NaFe3+(3)(SO4)2(OH)6 species identity and Rd1987s.p. status agree; separate
+    from K/ammonium/hydronium members.
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/natrojarosite.pdf
+  locator: 'Complete one-page entry including natural analyses, ideal formula and
+    series. Artifact: /private/tmp/cmm-round91-root-sources/natrojarosite-handbook.pdf'
+  accessed_at: '2026-10-15T08:45:18.167978Z'
+  support: supports
+  snapshot_sha256: f72297f4e57d357bd160ececffe297ed2d152db1cf8edf81fd77a5b8b3770542
+  summary: Natural substitutions and jarosite series do not establish identical sample
+    stoichiometry or universal full Fe occupation.
+- evidence_id: synthesis
+  kind: primary_source
+  reference: https://doi.org/10.2138/am.2008.2731
+  locator: 'Complete10-page original; methodspp854–856/PDF2–4; Figure1/Tables1–4.
+    Artifact: /private/tmp/cmm-round91-root-sources/basciano2008.pdf'
+  accessed_at: '2026-10-15T08:45:18.167978Z'
+  support: supports
+  snapshot_sha256: 88a3f3c51f9b0c95cf1e614be3cabfbb46e3c1960214fe36807b814e0ebdc3fe
+  summary: Initial140degreesC48h synthesis and ground~87%Na precursor treated200degreesC3days
+    in printed acid/sulfate recipe support abiotic sampleP. No organism, product recovery
+    yield or industrial deployment.
+- evidence_id: chemical_model
+  kind: primary_source
+  reference: https://doi.org/10.2138/am.2008.2731
+  locator: 'Table1/PDF3,chemical-analysismethod/PDF4,Tables2–4/PDF3,5,6; Figure1 andFigures2–7
+    inspected. Artifact: /private/tmp/cmm-round91-root-sources/basciano2008.pdf'
+  accessed_at: '2026-10-15T08:45:18.167978Z'
+  support: supports
+  snapshot_sha256: 88a3f3c51f9b0c95cf1e614be3cabfbb46e3c1960214fe36807b814e0ebdc3fe
+  summary: P analytical97.7%Na normalized to2S differs from idealized100%Na model.
+    Analytical uncertainty, siteoccupancy and phase purity are distinct; natural samples
+    were not all atomically refined.
+- evidence_id: source_conflicts
+  kind: primary_source
+  reference: https://doi.org/10.2138/am.2008.2731
+  locator: 'Page854 Figure1 callout and recipe; Table1Pfootnote/PDF3; Table3PNa/PDF5;
+    resultsp856. Artifact: /private/tmp/cmm-round91-root-sources/basciano2008.pdf'
+  accessed_at: '2026-10-15T08:45:18.167978Z'
+  support: supports
+  snapshot_sha256: 88a3f3c51f9b0c95cf1e614be3cabfbb46e3c1960214fe36807b814e0ebdc3fe
+  summary: Ammoniojarosite callout, chloride-medium footnote and Na0.1 conflict with
+    caption/methods/Tables2/4. Missing sodium-sulfate concentration unit and broader
+    series header/reagent mismatch are accurately preserved.
+- evidence_id: field
+  kind: primary_source
+  reference: https://doi.org/10.3390/microorganisms12040829
+  locator: 'Complete18page original; Methods2.1–2.9/PDF2–5,Results/PDF6–12,Discussion/PDF12–15;
+    Figures1–11. Artifact: /private/tmp/cmm-round91-root-sources/rio2024.pdf'
+  accessed_at: '2026-10-15T08:45:18.167978Z'
+  support: supports
+  snapshot_sha256: 87f9dc354f3f843b129eee32a5f64cbb807968a26129301c957d45b604abaf48
+  summary: 'May2010 field samples: outergypsum, innernatrojarositeplusquartz byFigure3,
+    mixedmat microscopic/metagenomic association. Mean depositpH0.8 does not establish
+    thin cyanobacterial-layerpH, explicitly unmeasured inDiscussion. No controlled
+    microbial mineral formation or verified strain.'
+- evidence_id: field_si
+  kind: primary_source
+  reference: https://www.mdpi.com/article/10.3390/microorganisms12040829/s1
+  locator: 'OfficialTableS1 native workbook,3995data rows afterheader; independently
+    parsed structure and selected entries. Artifact: /private/tmp/cmm-round91-root-sources/rio2024-supplement/Copia
+    de Table_S1_Evalue.xlsx'
+  accessed_at: '2026-10-15T08:45:18.167978Z'
+  support: context_only
+  snapshot_sha256: 4ea3ac1177679ed1f4c26633a5c305adcc2934b7c34f655e4dde120302c9bc98
+  summary: Sequence similarity annotations are contextual; no row-level species/gene
+    function or mineral causality imported. No independent sequence reanalysis is
+    claimed.
+- evidence_id: si_inventory
+  kind: validation
+  reference: /private/tmp/cmm-round91-natrojarosite-independent/independent-si-inspection.json
+  locator: 'Independent native ZIP/XML row/cell enumeration. Artifact: /private/tmp/cmm-round91-natrojarosite-independent/independent-si-inspection.json'
+  accessed_at: '2026-10-15T08:45:18.167978Z'
+  support: supports
+  snapshot_sha256: 44f48a7d7271938d6971b895dee1472ba7c586f8df5a1c8b3f89be76d5902435
+  summary: 3996rows includingheader and selected native cells agree with disclosed
+    author inventory; no comprehensive molecular verification claimed.
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round91-final-gates.json
+  locator: 'All FOUR actual coordinator commands from 2026-10-15T08:39:32.840338+00:00
+    to 2026-10-15T08:45:39.844873+00:00; retained log /private/tmp/cmm-round91-final-gates.log
+    SHA256 ee4ac495f6f203e599ba080ce32bade1ef8a6f16b8753c87244ed8870e3340db. Artifact:
+    /private/tmp/cmm-round91-final-gates.json'
+  accessed_at: '2026-10-15T08:46:31.626878Z'
+  support: supports
+  snapshot_sha256: fcc20f9b51cde223327b4ca25181b3d91af1687aff061d93d70fa6ea97d00cf7
+  summary: Terminal receipt, exact commands, exits0, log hash, trustedbase/worktree
+    and unchanged target owner hash independently verified; no reviewer rerun claimed.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Distinct sodium ferric sulfate species
+  outcome: supported
+  summary: Current IMA and Handbook support species/formula/status; no inherited criticality
+    or universal natural assay.
+  target_ids:
+  - cmmmech:natrojarosite
+  evidence_ids:
+  - owner
+  - ima
+  - handbook
+- assessment_id: mechanism
+  area: evidence
+  topic: Abiotic sampleP synthesis versus field association
+  outcome: supported
+  summary: The only encoded mechanism is explicitly nonmicrobial synthesis. Separate
+    field observations support association with mixedmat only, not microbial precipitation/dissolution.
+  target_ids:
+  - cmmmech:natrojarosite
+  evidence_ids:
+  - synthesis
+  - field
+  - field_si
+- assessment_id: quantity
+  area: quantity
+  topic: Siteoccupation, composition and uncontrolled microenvironment
+  outcome: supported
+  summary: 97.7%chemistry versus100%idealization is not yield or purity. FieldpH0.8
+    is not measured internal cyanobacterial micro-pH. No gene/strainquantitation is
+    asserted.
+  target_ids:
+  - cmmmech:natrojarosite
+  evidence_ids:
+  - chemical_model
+  - field
+  - field_si
+- assessment_id: limits
+  area: scope
+  topic: Source protocol and table conflicts
+  outcome: supported
+  summary: All described original inconsistencies are directly visible and remain
+    unresolved. Natural unit-cell comparison cannot prove universal fullFeoccupancy;
+    recipe is not silently reconstructed.
+  target_ids:
+  - cmmmech:natrojarosite
+  evidence_ids:
+  - source_conflicts
+  - chemical_model
+  - handbook
+- assessment_id: provenance
+  area: provenance
+  topic: Complete primary/authority and actual history
+  outcome: supported
+  summary: Both full originals and mainfigures/tables independently inspected; officialSI
+    structure/selectedcells checked without gene reanalysis. Native capture and exact
+    frozen CREATE inputs retained; no author edit by reviewer.
+  target_ids:
+  - cmmmech:natrojarosite
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - named
+  - notices
+  - si_inventory
+  - batch
+findings: []
+actions: []
+limitations:
+- Only abiotic laboratory synthesis is encoded as a mechanism. Field microscopy/metagenomics
+  do not demonstrate natrojarosite biogenesis, dissolution or recovery.
+- Near-endmember synthetic siteoccupancy does not give product purity/yield or universal
+  natural composition. Natural atomic positions/occupancies were not all refined.
+- Original sampleP chloride-footnote,Table3Na0.1,Figure1ammoniojarosite callout and
+  concentration-unit/header conflicts remain unresolved. No executable corrected recipe
+  is inferred.
+- The field layer contains quartz as well as natrojarosite and a mixed microbial community.
+  pHwithin the thin cyanobacterial layer was not measured; no species/strain identity
+  is established.
+- OfficialTableS1 native inventory and selected cells were inspected, not every annotation
+  revalidated or metagenomics reanalysed. No row-specific molecular claim is accepted.
+- Current notice/literature and local-lineage searches were bounded; absence outside
+  the inspected scope is not claimed.
+notes:
+- No maintained owner/history edits by reviewer. Native source captures remain exact,
+  including uncommitted working-tree state.
+- Start time is creation of preserved native target preparation; final completion
+  followed actual independent named validation and all four coordinator commands.
+  No unavailable check or unperformed experimental replication is represented as completed.
+```
