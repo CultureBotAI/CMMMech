@@ -1,0 +1,336 @@
+schema_version: 1.0.0
+review_id: 20261015T115316Z-hydroniumjarosite-round94-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Hydroniumjarosite
+started_at: '2026-10-15T11:39:22.078723Z'
+finished_at: '2026-10-15T11:53:16.411509Z'
+reviewer:
+  identity: codex /root/round68_new_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer authored petroleum-coke, not hydroniumjarosite. Independently
+    inspected the frozen owner/history, complete original text and all claim-bearing
+    graphics, current authorities and culture-name scope where applicable. No owner/history
+    edits or scientific self-acceptance.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of distinct hydroniumjarosite identity, specimen-specific
+  natural occurrence and laboratory abiotic synthesis. Full iron occupancy is separated
+  from hydronium-site deficiency; quartz-bearing natural material, analytical alumina
+  and source formula/site contradictions remain explicit. No supported corrective
+  finding.
+source:
+  git_revision: 1d40007a3309d6c6f8c845363f96ef0e407306d0
+  state: working_tree
+  inputs:
+  - path: data/records/hydroniumjarosite.yaml
+    sha256: 6949680434701222eaf04173b64632df6f675bbd6ccc59f60241087ef594fe3b
+    role: target
+  - path: history/records/hydroniumjarosite/2026-10-15T113847Z-codex-11fe71.yaml
+    sha256: 163b392ea9ed986ac0d95fd1ced5b9a5ffb39d701e35da2e169cb6abdd1ef822
+    role: context
+  - path: research/sources/round94-hydroniumjarosite/20261015T113959Z-source-investigation.json
+    sha256: 7f13fccaccefe0b1e7d14561a270717b4a0b687e82211e9c25fe3f9e816b2e35
+    role: context
+  - path: research/sources/round94-hydroniumjarosite/20261015T113959Z-source-investigation.md
+    sha256: e67b8b1f2dcbf5bcc46a146e5a1190cf26da647c9b98460ceb189f83a2814a56
+    role: context
+scope:
+  description: Whole exact owner and linked history; full original experiment and
+    all claim-bearing graphics, bounded identifiers, counterevidence and source limitations.
+  selection: Assigned target captured using native inspect before formal scientific
+    judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:hydroniumjarosite
+targets:
+- target_id: cmmmech:hydroniumjarosite
+  path: data/records/hydroniumjarosite.yaml
+  label: hydroniumjarosite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/hydroniumjarosite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate --require-records data/records/hydroniumjarosite.yaml
+    data/records/ammoniojarosite.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual reviewer command checked 2 records; 0 failed.
+  target_ids:
+  - cmmmech:hydroniumjarosite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch command 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt and log verified; no reviewer suite rerun.
+  target_ids:
+  - cmmmech:hydroniumjarosite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt and log verified; no reviewer suite rerun.
+  target_ids:
+  - cmmmech:hydroniumjarosite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch command 3
+  command: uv run --locked cmmmech validate-history --base 1d40007a3309d6c6f8c845363f96ef0e407306d0
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt and log verified; no reviewer suite rerun.
+  target_ids:
+  - cmmmech:hydroniumjarosite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt and log verified; no reviewer suite rerun.
+  target_ids:
+  - cmmmech:hydroniumjarosite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/hydroniumjarosite.yaml
+  locator: 'Whole exact native-captured maintained owner. Artifact: /private/tmp/CMMMech-expansion-round94-20261015/data/records/hydroniumjarosite.yaml'
+  accessed_at: '2026-10-15T11:53:16.411509Z'
+  support: supports
+  snapshot_sha256: 6949680434701222eaf04173b64632df6f675bbd6ccc59f60241087ef594fe3b
+  summary: Material identity, evidence scope and explicit limits independently assessed;
+    owner bytes unchanged.
+- evidence_id: history
+  kind: record_content
+  reference: history/records/hydroniumjarosite/2026-10-15T113847Z-codex-11fe71.yaml
+  locator: 'Canonical CREATE sidecar, inline event and history_refs. Artifact: /private/tmp/CMMMech-expansion-round94-20261015/history/records/hydroniumjarosite/2026-10-15T113847Z-codex-11fe71.yaml'
+  accessed_at: '2026-10-15T11:53:16.411509Z'
+  support: supports
+  snapshot_sha256: 163b392ea9ed986ac0d95fd1ced5b9a5ffb39d701e35da2e169cb6abdd1ef822
+  summary: Actual GPT-6/codex actors, timestamps, target and described addition agree.
+    Reviewer authored neither this owner nor its history.
+- evidence_id: named
+  kind: validation
+  reference: Independent named strict validation
+  locator: 'Actual completed uv run --locked cmmmech validate --require-records data/records/hydroniumjarosite.yaml
+    data/records/ammoniojarosite.yaml. Artifact: /private/tmp/cmm-round94-independent/named-validation.log'
+  accessed_at: '2026-10-15T11:53:16.411509Z'
+  support: supports
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+  summary: Independent command checked 2 records; 0 failed. Structural validation
+    does not prove scientific truth.
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round94-final-gates.json
+  locator: 'Actual four coordinator commands from 2026-10-15T11:45:32.799788+00:00
+    to 2026-10-15T11:52:07.350943+00:00; log /private/tmp/cmm-round94-final-gates.log
+    SHA256 57178655021aafe1a276baf782be5a2025cc3ef00ddb9500b4cbb59c94e57f22; every
+    exit 0 and owner hashes stable. Artifact: /private/tmp/cmm-round94-final-gates.json'
+  accessed_at: '2026-10-15T11:53:16.411509Z'
+  support: supports
+  snapshot_sha256: 961d9a55d4d6bba4686236102daaab5ed5bdb62a305c15b573424eec7494adaf
+  summary: Receipt, actual command list, log bytes, exact base and current owner hash
+    independently verified. The reviewer did not rerun the completed suite.
+- evidence_id: search
+  kind: search
+  reference: Bounded notices and current identity search
+  locator: 'Exact DOI notice queries and current authority/name check. Artifact: /private/tmp/cmm-round94-independent/search-scope.json'
+  accessed_at: '2026-10-15T11:53:16.411509Z'
+  support: context_only
+  snapshot_sha256: 133dc7b65dd2346a28469ec627fc0023753ffc93d12114dfdee06707e3c481ed
+  summary: No applicable correction or retraction surfaced in the inspected result
+    windows; Crossref relation/update metadata were also checked. This is bounded
+    coverage, not a universal absence claim.
+  search_scope: Exact DOI/title correction, erratum and retraction queries, first
+    returned windows, plus current NCBI47303 and IMA edition checks. Queries, dates,
+    URLs and limitations are retained in the bound receipt.
+- evidence_id: lineage
+  kind: search
+  reference: Bounded maintained identity and experiment lineage search
+  locator: 'Hidden, ignored and followed-link search across data/records, research,
+    reviews and history. Artifact: /private/tmp/cmm-round94-independent/dedup.json'
+  accessed_at: '2026-10-15T11:53:16.411509Z'
+  support: context_only
+  snapshot_sha256: 54d46a59c11f18f0a5146dcceed876d83c12ddc3f9015e56d463274fba32b837
+  summary: Related jarosite, natrojarosite and industrial context records are different
+    identities or experiments. Current newly authored target hits are expected. No
+    global source-exhaustion claim.
+  search_scope: rg --no-ignore --hidden --follow across the four declared maintained
+    roots; exact candidate names and DOI alternatives, bounded to this checkout. Matched
+    paths and actual command are retained; not a machine-wide search.
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.2138/am.2007.2432
+  locator: 'Complete ten-page original, printed pages 1464–1473; methods 1465–1467,
+    Tables 1–4 and Figures 1–11, all claim-bearing tables and graphics visually checked;
+    natural samples and hydronium-site interpretation 1471–1472. The separate basciano2007.pdf
+    is HTML and was excluded. Artifact: /private/tmp/cmm-round94-root-sources/basciano2007-repository.pdf'
+  accessed_at: '2026-10-15T11:53:16.411509Z'
+  support: supports
+  snapshot_sha256: a0eb3092bc2a946b1bf3c279b6076d6d16f6ca976517656c0f9d080eb1532ffd
+  summary: Sample A uses 40 g ferric sulfate pentahydrate per 100 mL with no added
+    potassium sulfate, initially at 140 °C for 48 hours. Additional 20-day and 3-day
+    homogenization belongs to samples B and H. Products were rinsed, filtered and
+    dried at 120 °C; alumina was added only for synthetic-powder refinement. Natural
+    sample 7-13-2-1 contains quartz and minor K/Na. Refined sample-A A-site occupancy
+    0.92(1) is distinct from full iron occupancy. Table 1 trace-potassium/formula,
+    natural formula/occupancy and reagent sulfate-token conflicts remain unresolved.
+    Figure 3 is solid yield and sulfur-normalized partitioning, not recovered-iron
+    efficiency. Hydrogen positions and charge compensation were not directly determined
+    by diffraction.
+- evidence_id: ima
+  kind: database
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'September 2026 edition; exact Hydroniumjarosite row on PDF page 98 and
+    definitions on page 1 visually inspected. Artifact: /private/tmp/cmm-round94-root-sources/ima2026-09.pdf'
+  accessed_at: '2026-10-15T11:53:16.411509Z'
+  support: supports
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  summary: IMA recognizes hydroniumjarosite with ideal formula (H3O)Fe3(SO4)2(OH)6
+    and ferric iron. Rd, 1987 special procedure is redefinition, not a numeric approval
+    accession. Ideal mineral identity is separate from measured sample composition,
+    other jarosite species and industrial residues.
+- evidence_id: handbook
+  kind: database
+  reference: https://www.handbookofmineralogy.org/pdfs/hydroniumjarosite.pdf
+  locator: 'Complete one-page identity, composition, occurrence and reference entry
+    visually inspected. Artifact: /private/tmp/cmm-round94-root-sources/hydroniumjarosite-handbook.pdf'
+  accessed_at: '2026-10-15T11:53:16.411509Z'
+  support: supports
+  snapshot_sha256: cb32e6772489c128aebbdabc9a2c8ccb09489adbbb30a89f498dc68a201ae58b
+  summary: Secondary mineral identity agrees. Ideal formula and unrelated natural
+    substituted specimens are not treated as quantitative composition or purity measurements
+    for the accepted primary preparation.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Distinct mineral identity and source scope
+  outcome: supported
+  summary: IMA recognizes hydroniumjarosite with ideal formula (H3O)Fe3(SO4)2(OH)6
+    and ferric iron. Rd, 1987 special procedure is redefinition, not a numeric approval
+    accession. Ideal mineral identity is separate from measured sample composition,
+    other jarosite species and industrial residues.
+  target_ids:
+  - cmmmech:hydroniumjarosite
+  evidence_ids:
+  - owner
+  - primary
+  - ima
+  - handbook
+  - lineage
+- assessment_id: mechanism
+  area: evidence
+  topic: Experiment-specific mechanism and causal boundary
+  outcome: supported
+  summary: Laboratory reagent precipitation is explicitly abiotic. Original synthesis,
+    powder diffraction and chemical characterization support a hydronium-rich preparation;
+    no biological mechanism, contaminant durability or isolated-metal recovery is
+    inferred.
+  target_ids:
+  - cmmmech:hydroniumjarosite
+  evidence_ids:
+  - primary
+  - owner
+- assessment_id: controls
+  area: scope
+  topic: Organism, substrate, experimental state and controls
+  outcome: supported
+  summary: This is a synthesis and characterization experiment with a synthetic solid-solution
+    comparison and two natural samples, not a microbial treatment comparison. Natural
+    quartz-bearing material and added analytical alumina have distinct provenance.
+    Longer B/H exchange times do not define the sample-A preparation.
+  target_ids:
+  - cmmmech:hydroniumjarosite
+  evidence_ids:
+  - primary
+- assessment_id: quantity
+  area: quantity
+  topic: Measured quantities, denominators and recovery limits
+  outcome: supported
+  summary: Yield axis is grams of jarosite solid; solution/crystal quantities normalized
+    to sulfur and refined occupancy/structural parameters have their stated basis.
+    No recovered-element percentage or universally exact endmember formula is accepted.
+  target_ids:
+  - cmmmech:hydroniumjarosite
+  evidence_ids:
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Exact owner, canonical history and actual completed checks
+  outcome: supported
+  summary: Canonical target capture, exact working-tree owner/history bytes, full
+    primary artifacts and actual named/batch checks support this qualified acceptance.
+    Curator-authored dossier context was read; the scientific assessment rests on
+    independently inspected originals. No criticality, biological necessity or industrial-scale
+    recovery is inferred.
+  target_ids:
+  - cmmmech:hydroniumjarosite
+  evidence_ids:
+  - owner
+  - history
+  - primary
+  - named
+  - batch
+  - search
+findings: []
+actions: []
+limitations:
+- No independent diffraction re-refinement or new laboratory measurement; hydrogen
+  positions in H3O and charge compensation remain interpretive.
+- Natural quartz-bearing substituted specimen and synthetic site-deficient material
+  are not universally pure endmembers. Printed formula/site/reagent inconsistencies
+  remain disclosed.
+- No separate supplement is announced in the inspected original; no universal supplemental-repository
+  absence claim. Failed HTML masquerading as PDF was excluded.
+- No microbial, criticality, recovered-metal or industrial-scale claim is established.
+- Bounded notice and lineage searches do not establish exhaustive absence of counterliterature.
+  Independent scientific acceptance is restricted to these exact owner bytes.
+notes:
+- Source clarification remains open as https://github.com/CultureBotAI/CMMMech/issues/337.
+  This concerns original-source contradictions retained as limitations, not a corrective
+  finding against the qualified owner.
+- Started_at is the first retained review-session timestamp; earlier source preparation
+  is not assigned an invented time. Frozen canonical target capture preceded formal
+  record judgment; the later capture adds exact dossier context without changing owner/history.
+- All ten pages of primary text were read, and every claim-bearing original figure/table
+  was visually inspected. This is not a claim of independent structural re-refinement,
+  new laboratory measurements or inspection of an unavailable supplement.
+- Raw originals remain outside Git, with nonempty byte hashes and actual local Artifact
+  locators. This scientific acceptance does not cover the reviewer-authored petroleum-coke
+  record.
+- The first unsaved inspection preparation used noncanonical target metadata; it was
+  preserved and recaptured with kind maintained and repository CultureBotAI/CMMMech
+  before judgment. No saved review was overwritten.
+- The first unsaved saver invocation rejected the equivalent +00:00 spelling of started_at
+  because the native contract requires Z. The original draft and preparation disposition
+  were retained; only timestamp spelling and this note changed before first successful
+  persistence.

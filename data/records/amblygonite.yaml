@@ -1,0 +1,96 @@
+id: cmmmech:amblygonite
+name: Amblygonite
+material_kind: mineral
+description: Amblygonite is the fluorine-dominant lithium aluminium phosphate mineral with ideal formula
+  LiAl(PO4)F, distinct from hydroxyl-dominant montebrasite and from lithium as an element. Natural crystals
+  form a substituted F/OH series rather than necessarily pure endmembers. Groat2003 provides primary neutron-diffraction
+  and NMR evidence for this series, including F-rich natural specimens. Triclinic P-1 and the centered
+  C-1 convention describe settings of the same structure. A separate thesis reports heating of a natural
+  specimen labelled amblygonite, but its mixed starting material and conflicting fluorine estimates straddle
+  the species boundary. The thermal observation is retained only for that author-assigned specimen, not
+  as a universal amblygonite decomposition threshold, microbial mechanism or lithium recovery yield.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Amblygonite row, PDF page 9; page 1
+    defines grandfathered status and original-description year 1818, not an approval identifier.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-15'
+- id: handbook_amblygonite
+  title: Handbook of Mineralogy. Amblygonite, complete one-page identity, crystallography, chemistry and
+    occurrence entry.
+  url: https://handbookofmineralogy.org/pdfs/amblygonite.pdf
+  accessed_on: '2026-10-15'
+- id: groat2003
+  title: 'Groat LA, Chakoumakos BC, Brouwer DH, Hoffman CM, Fyfe CA, Morell H, Schultz AJ (2003). The
+    amblygonite (LiAlPO4F)-montebrasite (LiAlPO4OH) solid solution: A combined powder and single-crystal
+    neutron diffraction and solid-state 6Li MAS, CP MAS, and REDOR NMR study. American Mineralogist 88:195-210.
+    Complete sixteen-page original, Tables 1-12 and Figures 1-15.'
+  url: https://doi.org/10.2138/am-2003-0123
+  accessed_on: '2026-10-15'
+- id: shirose_thesis
+  title: 'Shirose Y. Mineralogical study of Li pegmatite from Nagatare, Fukuoka Prefecture, Japan: microtextures
+    formed by exsolution and hydrothermal alteration. Kyushu University doctoral thesis, repository metadata
+    2015, title page March 2016. Complete 104-page repository PDF acquired; accepted scope is analytical
+    methods, printed pages 13-14, and Chapter 5, pages 18-42, Figures 11-23 and Tables 1-5. The later
+    2018 journal version DOI10.2138/am-2018-6049 was not acquired and is not an independent experiment.'
+  url: https://doi.org/10.15017/1654660
+  accessed_on: '2026-10-15'
+mechanisms:
+- id: qualified-natural-sample-thermal-breakdown
+  name: Abiotic thermal breakdown of an author-assigned amblygonite-bearing specimen
+  process: other
+  microbial: false
+  description: In situ powder diffraction of the natural Nagatare specimen XN163 showed changes with heating,
+    which the thesis interprets as partial breakdown at 600 degrees C and complete breakdown with berlinite
+    formation at 700 degrees C. Composition and phase-mixture limitations prevent treating this as a controlled
+    pure-endmember transformation. The companion montebrasite record reuses the same crystal-series and
+    field-texture studies, not an independent thermal replicate.
+  context: Shirose thesis analytical methods (printed pages 13-14, PDF pages 20-21) and Section 5.2.4
+    (printed pages 32-33, PDF pages 39-40) used a RIGAKU Ultima IV diffractometer and measured XN163 in
+    situ from 50 to 700 degrees C. Heating was 10 degrees C/min under vacuum, with a ten-minute hold at
+    each target before measurement. Numerical vacuum pressure, sample mass, independent heating replicates,
+    a matched unheated treatment control and a lithium/fluorine product balance are not reported. Starting
+    material is a natural substituted phosphate with lacroixite, not a synthetic pure LiAlPO4F standard.
+  evidence:
+  - source_ref: shirose_thesis
+    supports: partial
+    explanation: Section 5.2.4 and Figures 17-18 (printed pages 32-33, PDF pages 39-40) support the source-specific
+      qualitative thermal sequence. Figure 17 shows diffraction changes; the text assigns anhydrous phosphates
+      at 600 degrees C and berlinite at 700 degrees C. No quantitative phase-refinement series, isolated
+      berlinite yield, recovered lithium product or closed mass balance is presented. Approaching monoclinic
+      cell geometry does not demonstrate isolation of the hypothetical high-temperature C2/c phase proposed
+      in Section 5.3.
+  - source_ref: shirose_thesis
+    supports: partial
+    explanation: Table 1 (printed page 21, PDF page 28) assigns XN163 bulk-XRD F/(F+OH)=0.54, EPMA mean
+      0.47 with range 0.39-0.50, and 4.8(5) wt% lacroixite. Figure 17 labels F=0.54, whereas the Figure
+      18 legend labels the same specimen F=0.45. These estimates cross the F/OH species boundary and are
+      not silently reconciled. EPMA Li2O and H2O are stoichiometrically calculated in Tables 2-3, not
+      independent lithium and water assays. Thus the source name cannot establish a pure amblygonite feed.
+  - source_ref: groat2003
+    supports: context_only
+    explanation: Methods (pages 197-199), Table 2 (page 198), Table 11 (page 206) and Figures 1-15 establish
+      natural-crystal structure and F/OH-related Li-site models. The AF-46 and Saxony specimens have neutron-derived
+      F fractions 0.55 and 0.77; Table 11 reports differing composition estimates from other techniques.
+      They are separate natural specimens from heated XN163. Split Li-site occupancies and NMR peak intensities
+      are structural measurements or constrained models, not recoverable-lithium fractions. These data
+      also ground cmmmech:montebrasite within the same study lineage.
+  - source_ref: ima_2026_09
+    supports: context_only
+    explanation: The exact Amblygonite row gives LiAl(PO4)F and grandfathered status, original-description
+      year 1818. This verifies the mineral identity independently of the thesis specimen assignment and
+      confers no criticality designation.
+  - source_ref: handbook_amblygonite
+    supports: context_only
+    explanation: The complete entry gives LiAlPO4(F,OH), triclinic centered C-1 crystallography and substituted
+      natural analyses. The ideal F endmember is distinct from an arbitrary commercial lithium-phosphate
+      label or any mixture called amblygonite.
+curation_history:
+- timestamp: '2026-10-15T11:39:13.522857Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Added primary-supported mineral identity and narrowly qualified natural-sample evidence, preserving
+    F/OH species boundaries, shared study lineage and source limitations without inherited criticality
+    or microbial claims.
+history_refs:
+- history/records/amblygonite/2026-10-15T113915Z-codex-f44cae.yaml

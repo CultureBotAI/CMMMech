@@ -8,13 +8,19 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 446 material records.
+The catalogue currently contains 452 material records.
 
-The [latest curation report](research/ingests/round92-frontier-20261015.md) links
+The [latest curation report](research/ingests/round94-frontier-20261015.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Amblygonite](data/records/amblygonite.yaml) | Qualified heating of a characterized F/OH phosphate specimen | Conflicting aliquot composition; no pure-species threshold or lithium recovery |
+| [Ammoniojarosite](data/records/ammoniojarosite.yaml) | Formation during culture-associated iron oxidation | Mixed/null phases, source temperature conflict and unmatched abiotic comparisons |
+| [Argentojarosite](data/records/argentojarosite.yaml) | Silver precipitation after biological ferric-sulfate preparation | Later precipitation is labeled abiotic; no direct bacterial necessity or recovery balance |
+| [Hydroniumjarosite](data/records/hydroniumjarosite.yaml) | Abiotic synthesis and separate natural specimen characterization | Source formula/site conflicts and quartz-bearing natural material |
+| [Montebrasite](data/records/montebrasite.yaml) | Mineral identity and natural microtextures | No microbial extraction or quantitative recovery established |
+| [Petroleum coke](data/records/petroleum-coke.yaml) | Lower residual sulfur concentration after laboratory culture treatments | Unresolved feed provenance, missing numerical control and sulfur mass balance |
 | [Löllingite](data/records/loellingite.yaml) | Culture- and supernatant-associated flotation of a characterized mixed feed | Phase partitioning, null arms and unmatched surface analyses; no isolated metal yield |
 | [Metallic machining burrs](data/records/metallic-machining-burrs.yaml) | Culture-associated acidification and limited metal mobilization from industrial burrs | Unmatched inoculum chemistry and inconsistent recovery calculations |
 | [Plumbojarosite](data/records/plumbojarosite.yaml) | Controlled bacterial reduction of a synthetic mineral analogue | Low lead release, phosphate-buffered microscopy preparation and source-value conflicts |

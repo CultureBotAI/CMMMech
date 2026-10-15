@@ -1,0 +1,7 @@
+Source: WangH,BighamJM,JonesFS,TuovinenOH(2007), Synthesis and properties of ammoniojarosites prepared with iron-oxidizing acidophilic microorganisms at22–65°C, DOI10.1016/j.gca.2006.09.001.
+
+The complete original has inconsistent labels for abiotic sample6.6: Methods§2.1 p157, Tables1 and4 and Figure4's plotted label give65°C; Table3 and Figures4/9 captions give45°C. Figure7's low-temperature abiotic curve says35°C whereas Tables1/4 say36°C. The actual experiment is not a matched biological control even after label clarification: ferric/ferrous starting state, ammonium concentration and aging times differ. Current bounded curation does not claim a microbial advantage.
+
+Obtain an official correction, original run sheet or other primary clarification identifying each comparator's actual temperature/time and the corresponding Figure4/7/9 sample. Keep existing source statements and raw original immutable. Acceptance requires explicit authoritative provenance for any resolved label; agreement with the majority of labels alone is insufficient. No new biological causal claim or phase-purity yield follows from correction.
+
+The current all-state round94 inventory was searched by name and exactDOI with no match; root should perform live dedup before posting. Full original is acquired, so this is a source-data clarification request, not a false missing-paper claim. No source contact has been made.
