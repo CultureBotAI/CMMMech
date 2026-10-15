@@ -1,0 +1,102 @@
+id: cmmmech:titanogypsum
+name: Titanogypsum
+material_kind: secondary_resource
+description: Heterogeneous solid residue described by the source as titanium gypsum or titanogypsum from
+  titanium-dioxide production. The curated feed is a real Taizhou, Jiangsu plant waste, distinct from
+  natural gypsum, titanium dioxide, phosphogypsum from phosphoric-acid manufacture and a purified calcium-sulfate
+  product. Its unusual reported bulk composition and mixed phase assignments are retained rather than
+  imposing pure-gypsum stoichiometry. Laboratory culture-associated redistribution of fluorine does not
+  establish recovery of a fluorine product, a safe agricultural amendment or industrial deployment. No
+  constituent-element criticality is inherited.
+sources:
+- id: chen2021
+  title: Chen, Lu, Zhang, Min and Huo (2021). Red Yeast Improves the Potential Safe Utilization of Solid
+    Waste (Phosphogypsum and Titanogypsum) Through Bioleaching. Frontiers in Bioengineering and Biotechnology
+    9:777957. DOI 10.3389/fbioe.2021.777957; Materials and Methods, Results and Discussion, Table 1 and
+    Figures 1-7, especially the TG arms of Figures 2, 3B, 4B, 5C-D, 6 and 7B,D. Published 31 December
+    2021.
+  url: https://doi.org/10.3389/fbioe.2021.777957
+  accessed_on: '2026-10-15'
+- id: chen2021_supplement
+  title: Supplementary DataSheet1.docx associated with Chen et al. (2021), DOI 10.3389/fbioe.2021.777957;
+    Figures S1-S2. S1 labels the separate deionized-water phosphorus comparison; S2 concerns phosphogypsum,
+    not titanogypsum. This supplement is the same study, not replication.
+  url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8758580/supplementaryFiles
+  accessed_on: '2026-10-15'
+- id: ncbi_rhodotorula
+  title: NCBI Taxonomy 5537, Rhodotorula mucilaginosa, species. Species identity context only; not authentication
+    of experimental CGMCC No.16597.
+  url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5537&retmode=xml
+  accessed_on: '2026-10-15'
+mechanisms:
+- id: yeast_associated_fluoride_partitioning
+  name: Yeast-associated fluoride redistribution in titanogypsum slurries
+  process: biosorption
+  microbial: true
+  organisms:
+  - id: NCBITaxon:5537
+    label: Rhodotorula mucilaginosa
+  description: Living red-yeast cultures were associated with lower filtered aqueous fluoride and fluoride
+    detected in an extracted extracellular-polymer fraction after contact with titanogypsum. Sorption
+    and concurrent mineral partitioning are proposed explanations; the experiment does not isolate a unique
+    binding pathway or demonstrate enhanced dissolved-fluoride extraction from this feed. Broader phosphogypsum
+    responses in the same article are not transferred to titanogypsum.
+  context: Chen et al. report orchard-rhizosphere isolate CGMCC No.16597, activated in potato dextrose
+    broth at 28 degrees C and 180 rpm for 48 h. No sequence accession is supplied to authenticate the
+    experimental culture. Waste was ground, sieved through source-designated 500 mesh (less than 25 micrometres),
+    and dried at 80 degrees C for 24 h. Laboratory assays used 5 or 10 g powder in 150 mL YPD medium in
+    250 mL flasks, plus 2 mL culture after sterilization. The reported medium contained 20 g peptone,
+    10 g glucose and 20 g yeast powder per litre, initially pH 7.0-7.4. Incubation was five days at 36
+    degrees C, in darkness, at 180 rpm, with three replicates. Controls included uninoculated waste-medium
+    arms, medium alone and yeast without waste; no pH-matched sterile or killed-cell comparator was reported.
+    After centrifugation, liquid was filtered at 0.22 micrometres and diluted fivefold for ion chromatography
+    and ICP-OES. A separate 60 mL liquid fraction underwent centrifugation, ethanol precipitation and
+    dialysis before the extracellular-polymer assay.
+  evidence:
+  - source_ref: chen2021
+    supports: support
+    explanation: Figure 2D and the Results subsection on element release show lower aqueous fluoride in
+      both TG-Rho arms than their uninoculated TG comparators. Figure 7D detects fluoride in the ethanol-precipitated,
+      dialyzed polymer-associated fractions from TG5-Rho and TG10-Rho. Figure 5D shows source-interpreted
+      yeast cells at the TG surface. These are culture-associated partitioning observations, not an isolated-fluorine
+      product or a mass-balanced recovery percentage.
+  - source_ref: chen2021
+    supports: partial
+    explanation: Figure 2B reports no significant phosphorus change between TG and matched TG-Rho arms;
+      Figure 2C shows differing final pH. TG images lack the conspicuous extracellular material seen with
+      phosphogypsum. The authors infer inhibition by fluoride, but do not isolate fluoride toxicity from
+      other feed properties. No polymer-free matched reaction, quantitative cell viability assay or causal
+      acid/enzyme intervention resolves how much of the fluoride response is sorption, precipitation or
+      changed dissolution. Soluble Pb, Cd, Zn and Cu were reported below 0.05 mg/L in the tested solutions,
+      not absent from the feed.
+  - source_ref: chen2021
+    supports: partial
+    explanation: Figure 3B contains the TG XRF comparison, although the adjacent prose assigns TG to Figure
+      3A. The reported reduction in solid fluorine proportion is a compositional comparison after preparation
+      involving 600 degrees C pyrolysis, not an overall recovery yield. Table 1 reports unusually low
+      sulfur relative to calcium in this source-labelled titanium gypsum; no pure gypsum composition is
+      inferred. Figure 4B assigns overlapping peaks in mixed solids to calcium salts including fluorophosphate,
+      with phosphate-related signals also marked in uninoculated material. No isolated phase, quantitative
+      phase balance or direct demonstration of exclusive microbial mineral formation is provided. Fluoride
+      in a separated polymer fraction does not itself measure an adsorption capacity per mass of polymer.
+  - source_ref: chen2021
+    supports: partial
+    explanation: The abstract's g/mL loading statements conflict with Methods specifying 5 or 10 g in
+      150 mL. Some comparisons repeat the same sample label on both sides, including TG10-Rho in the polymer-fluoride
+      discussion. Figure-defined arms and the explicit flask recipe are retained; source percentages with
+      unresolved denominators are not adopted. No soil, plant, toxicological or field-deployment experiment
+      establishes the proposed safety or reuse claims.
+  - source_ref: chen2021_supplement
+    supports: context_only
+    explanation: Figure S1 labels phosphorus measurements in deionized water, rather than the YPD culture
+      medium used for the main experiment; its limited protocol does not resolve the culture mechanism
+      or a phosphorus mass balance. Figure S2 images phosphogypsum and cannot establish titanogypsum fragmentation
+      or polymer encapsulation.
+curation_history:
+- timestamp: '2026-10-15T01:20:30.521805+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created a distinct titanium-dioxide-production waste record retaining culture-associated fluoride
+    partitioning, null phosphorus response and unresolved source composition and units.
+history_refs:
+- history/records/titanogypsum/2026-10-15T012037Z-codex-1bad0c.yaml

@@ -1,0 +1,622 @@
+{
+  "schema": "cmmmech-source-assessment-local-v1",
+  "timestamp_utc": "2026-10-15T01:20:45Z",
+  "researcher": "codex (GPT-6; codex) /root/round68_iron_sulfides",
+  "repository": "CMMMech",
+  "worktree": "/private/tmp/CMMMech-expansion-round85-20261015",
+  "branch": "curate/cmm-expansion-round85-20261015",
+  "base": "51adf4be6c544642f6bf54a4e7f514adb84aa34e",
+  "scope": "One distinct hexagonal ZnS mineral owner; thesis-supported mixed-phase laboratory precipitation in unresolved sulfate-reducing cultures",
+  "records": [
+    {
+      "path": "/private/tmp/CMMMech-expansion-round85-20261015/data/records/wurtzite.yaml",
+      "sha256": "3023a9fa6aa8f6f82b2284252f7245ad85ab1ff297f5cddaee53e61f2f4590a3",
+      "bytes": 8542,
+      "record_id": "cmmmech:wurtzite",
+      "history": {
+        "path": "/private/tmp/CMMMech-expansion-round85-20261015/history/records/wurtzite/2026-10-15T011942Z-codex-2cd232.yaml",
+        "sha256": "0134924e4afe1e980457c802a12753e7452f59da7c3279808e16b733eba770ea",
+        "bytes": 899
+      }
+    }
+  ],
+  "named_validation": {
+    "checked_at": "2026-10-15T01:20:45Z",
+    "command": "UV_OFFLINE=1 UV_CACHE_DIR=/private/tmp/cmmmech-uv-cache PYTHONDONTWRITEBYTECODE=1 uv run --locked cmmmech validate --require-records data/records/wurtzite.yaml",
+    "workdir": "/private/tmp/CMMMech-expansion-round85-20261015",
+    "exit_code": 0,
+    "result": "Checked 1 record(s); 0 failed.",
+    "record": {
+      "path": "/private/tmp/CMMMech-expansion-round85-20261015/data/records/wurtzite.yaml",
+      "sha256": "3023a9fa6aa8f6f82b2284252f7245ad85ab1ff297f5cddaee53e61f2f4590a3",
+      "bytes": 8542
+    },
+    "log": {
+      "path": "/private/tmp/cmm-round85-sulfides-research/named-validation.log",
+      "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e",
+      "bytes": 31
+    },
+    "timing_note": "Timestamp records receipt assembly after observed terminal exit0; no invented precise process start time."
+  },
+  "baseline": {
+    "path": "/private/tmp/cmm-round85-baseline.json",
+    "sha256": "9d1d5c2f943e603d73a445abb9a7a2f4e5a709f14b5f92eca97a7c96036e4533",
+    "bytes": 904
+  },
+  "dedup": {
+    "at": "2026-10-15T01:15:31.084621+00:00",
+    "scans": [
+      {
+        "root": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech",
+        "command": [
+          "rg",
+          "-n",
+          "-i",
+          "--hidden",
+          "--no-ignore",
+          "--follow",
+          "wurtzite|wurtzita|10\\.1016/j\\.scitotenv\\.2012\\.02\\.013|nano13050935|10\\.1016/j\\.gca\\.2016\\.02\\.007",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history"
+        ],
+        "exit_code": 0,
+        "output": "/private/tmp/cmm-round85-sulfides-research/dedup-root-0.txt",
+        "sha256": "c56b7e1e6d39f1fc7c8306bf8737490af71005fd980795da8fe00e9fd05ecedc",
+        "lines": 1,
+        "stderr": ""
+      },
+      {
+        "root": "/private/tmp/CMMMech-expansion-round85-20261015",
+        "command": [
+          "rg",
+          "-n",
+          "-i",
+          "--hidden",
+          "--no-ignore",
+          "--follow",
+          "wurtzite|wurtzita|10\\.1016/j\\.scitotenv\\.2012\\.02\\.013|nano13050935|10\\.1016/j\\.gca\\.2016\\.02\\.007",
+          "/private/tmp/CMMMech-expansion-round85-20261015/data/records",
+          "/private/tmp/CMMMech-expansion-round85-20261015/research",
+          "/private/tmp/CMMMech-expansion-round85-20261015/reviews",
+          "/private/tmp/CMMMech-expansion-round85-20261015/history"
+        ],
+        "exit_code": 0,
+        "output": "/private/tmp/cmm-round85-sulfides-research/dedup-root-1.txt",
+        "sha256": "8dbcd10510f57234f7b72a7b50420733d2c0dc96558d0c2cb025f8fc99abb7dc",
+        "lines": 1,
+        "stderr": ""
+      }
+    ],
+    "issues": {
+      "path": "/private/tmp/cmm-round85-initial-issues.json",
+      "sha256": "1993d1caf146060081e03235a4e807b8dfcc147e43e5bac5921432ffd57b86c6",
+      "entries": 285,
+      "matches": []
+    },
+    "bounds": "Both maintained-root trees including hidden/ignored files and followed relevant symlinks; text scan with rg binary-file default. Relevant previously downloaded PDF text and inventories separately checked under round77/82/83 sulfides, not all temp/home trees."
+  },
+  "accepted_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-unia-thesis.pdf",
+      "sha256": "088266e2a2a87aad68c73ceb55620f328c03618b89fe1b48f96f2f8a54be8d20",
+      "bytes": 4547862,
+      "source_url": "https://hdl.handle.net/10334/2563",
+      "role": "primary_source",
+      "scope": "Complete143p original acquired; complete Chapter2 PDF42-63 text and all7figures inspected; other chapters not accepted"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf",
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "bytes": 3129886,
+      "source_url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "role": "authority",
+      "scope": "Reused complete original; page1 definitions and page236 Wurtzite row rechecked, not freshly acquired"
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/wurtzite-handbook.pdf",
+      "sha256": "16d58b02258e3b151b5ddcd8ba0d78154a1e168946bed29d5674d8246a0eb4b6",
+      "bytes": 47687,
+      "source_url": "https://www.handbookofmineralogy.org/pdfs/wurtzite.pdf",
+      "role": "authority",
+      "scope": "Complete1page entry, text and original render inspected"
+    }
+  ],
+  "acquisition": [
+    {
+      "file": "/private/tmp/cmm-round85-sulfides-research/castillo-unia-thesis.pdf",
+      "url": "https://dspace.unia.es/bitstreams/46de3874-04c0-47fb-a0c4-6784d094b9ff/download",
+      "accessed_at": "2026-10-15T01:07:26.218693Z",
+      "status": 200,
+      "content_type": "application/pdf;charset=UTF-8",
+      "final_url": "https://dspace.unia.es/server/api/core/bitstreams/46de3874-04c0-47fb-a0c4-6784d094b9ff/content",
+      "bytes": 4547862,
+      "sha256": "088266e2a2a87aad68c73ceb55620f328c03618b89fe1b48f96f2f8a54be8d20",
+      "is_pdf": true
+    },
+    {
+      "file": "/private/tmp/cmm-round85-sulfides-research/zns2023.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10004825/fullTextXML",
+      "accessed_at": "2026-10-15T01:07:26.220218Z",
+      "status": 200,
+      "content_type": "application/xml",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10004825/fullTextXML",
+      "bytes": 124146,
+      "sha256": "10d784b650296bd9824e74713459afc159fb7569f2fd4501e32bdf09e5513349",
+      "is_pdf": false
+    },
+    {
+      "file": "/private/tmp/cmm-round85-sulfides-research/zns2023.pdf",
+      "url": "https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-13-00935/article_deploy/nanomaterials-13-00935.pdf",
+      "accessed_at": "2026-10-15T01:07:26.221010Z",
+      "status": 200,
+      "content_type": "application/pdf",
+      "final_url": "https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-13-00935/article_deploy/nanomaterials-13-00935.pdf",
+      "bytes": 3263018,
+      "sha256": "731e144c97dadb6580deffa83dcd79efff5170eb78829c9253bf3f0090cf289b",
+      "is_pdf": true
+    },
+    {
+      "file": "/private/tmp/cmm-round85-sulfides-research/wurtzite-handbook.pdf",
+      "url": "https://www.handbookofmineralogy.org/pdfs/wurtzite.pdf",
+      "accessed_at": "2026-10-15T01:07:26.665718Z",
+      "status": 200,
+      "content_type": "application/pdf",
+      "final_url": "https://www.handbookofmineralogy.org/pdfs/wurtzite.pdf",
+      "bytes": 47687,
+      "sha256": "16d58b02258e3b151b5ddcd8ba0d78154a1e168946bed29d5674d8246a0eb4b6",
+      "is_pdf": true
+    },
+    {
+      "file": "/private/tmp/cmm-round85-sulfides-research/crossref-castillo2012.json",
+      "url": "https://api.crossref.org/works/10.1016/j.scitotenv.2012.02.013",
+      "accessed_at": "2026-10-15T01:07:26.877930Z",
+      "status": 200,
+      "content_type": "application/json",
+      "final_url": "https://api.crossref.org/works/10.1016/j.scitotenv.2012.02.013",
+      "bytes": 15714,
+      "sha256": "e7a3244f97bec2e72c70ba1aa9abd2169582df46ff2ef745099a5595a76c9aac",
+      "is_pdf": false
+    },
+    {
+      "file": "/private/tmp/cmm-round85-sulfides-research/crossref-zns2023.json",
+      "url": "https://api.crossref.org/works/10.3390/nano13050935",
+      "accessed_at": "2026-10-15T01:07:27.244224Z",
+      "status": 200,
+      "content_type": "application/json",
+      "final_url": "https://api.crossref.org/works/10.3390/nano13050935",
+      "bytes": 24008,
+      "sha256": "b43c39dd85222ce28364bd1c59905e0d398f21676c077593bb31597f695aaa21",
+      "is_pdf": false
+    }
+  ],
+  "raw_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/acquire.py",
+      "sha256": "3981423793b058cff21ae2360e516c5ad07f766b911df0cd9cb79dd39093b00a",
+      "bytes": 1739
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/acquisition-initial.json",
+      "sha256": "26eed04c56eff8b6f5a072ddb0855fe862b389a3fe564e761eb2bf68f22a13f7",
+      "bytes": 3014
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/bounded-raw-dedup.txt",
+      "sha256": "8c8c4f6f01d3bf425cf3685538a7df95ad7c30f535fee0ad463b45825336e081",
+      "bytes": 60719
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p42.png",
+      "sha256": "cb7f9ec8a44dd4c7ed0f554601580a12aee497c6e2431cdbcccee1c90117af73",
+      "bytes": 1022809
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p43.png",
+      "sha256": "18dc31d150ea755ee3622a9af7f5df42fc8b4c1de01a295785d7fd708c604836",
+      "bytes": 11021
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p44.png",
+      "sha256": "09013dd94f5b825d8ac2f5d88131b0b0bed9a7f03cffef33c92615ecb8997f86",
+      "bytes": 138181
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p45.png",
+      "sha256": "69ff90bf06c89dfb1a14e921e5a09327d1be4bbbdda014dd025a99ce32463a95",
+      "bytes": 10928
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p46.png",
+      "sha256": "987b9c351cdf9ec4d96eac01ab76673ff1e3fee0f2090efc2338e97241f8af9e",
+      "bytes": 125763
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p47.png",
+      "sha256": "c094e8416b3b942bcc8227481a80f1821994056c4899a631cf8445c566971def",
+      "bytes": 192406
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p48.png",
+      "sha256": "293eec1fa30daa950411ea525e8925dd0d4c3a52e1c17e1f440c8adf9b4a69a6",
+      "bytes": 229497
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p49.png",
+      "sha256": "3f7c18c99589d6985f2f82ffdce614ca4f17c25457e8603969433d29fb90d5a1",
+      "bytes": 219566
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p50.png",
+      "sha256": "913af61d3a23d956e9018c2ace17b1d30ca2e7f0f68b9ec9bcafcfc43dc09d95",
+      "bytes": 594140
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p51.png",
+      "sha256": "a82fb139c643ea2d9d18b7fed17f65dbc322f90989901ff7c33a2dab7e4a14c4",
+      "bytes": 225084
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p52.png",
+      "sha256": "ab93d18ed776999f0c4218f173183024049d8911f33adfffbe67a04f91aace51",
+      "bytes": 189751
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p53.png",
+      "sha256": "5133e0fd49c198bcafc7f1c2de91014172a6e303f6da7a612e716e87b0e3ea3e",
+      "bytes": 168902
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p54.png",
+      "sha256": "cfd5ca395635819e176422255ddb4b31ac23c800b67a9680c848d574c2c6a1a4",
+      "bytes": 265804
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p55.png",
+      "sha256": "518fa73c7f752020d760b0bd4748f944a95cd09ec7d81babcb692dabebfe7d7f",
+      "bytes": 656489
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p56.png",
+      "sha256": "1e027360f6196a4e1e59c0a2c643ba5fc39f05caf4d0092d5862d34de286a0ac",
+      "bytes": 443572
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p57.png",
+      "sha256": "ab3c3a94e45aef4853b9b27a2b34ae6542ef7971d3ac601ca32e084924a3e77b",
+      "bytes": 186762
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p58.png",
+      "sha256": "98ab7fa09af43e8e93a0b1f6db523da771ca671ce69e405b6c22af7bf45f36c3",
+      "bytes": 548525
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p59.png",
+      "sha256": "5970536a175e88423c2e1046945f6e0a9dae3b50a99bd258d51fe605324c6236",
+      "bytes": 242329
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p60.png",
+      "sha256": "b95a92bda7be03feaebfa78b4d6c552af2f668f825358eb59adb8959538c23e2",
+      "bytes": 238294
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p61.png",
+      "sha256": "dc49064d61e914569b1cba82e6562baaa49ac15c94d4fe43cbddcf5ae0eecb81",
+      "bytes": 239284
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p62.png",
+      "sha256": "600121e485d0c154f0c392bfc97738fe6ee5d5c563ef2f8b7068d2fc0de237ac",
+      "bytes": 219304
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p63.png",
+      "sha256": "2c416db684522ccab6fde5f1b0e761b127fef0ac0edeb5fd8dd91893d0f94ece",
+      "bytes": 30919
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-unia-thesis.pdf",
+      "sha256": "088266e2a2a87aad68c73ceb55620f328c03618b89fe1b48f96f2f8a54be8d20",
+      "bytes": 4547862
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-unia-thesis.txt",
+      "sha256": "d38b5ee01a83714ce4e901963e7b2d51b6d83f4ea74b799141c57d356998d3c8",
+      "bytes": 292828
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/crossref-castillo2012.json",
+      "sha256": "e7a3244f97bec2e72c70ba1aa9abd2169582df46ff2ef745099a5595a76c9aac",
+      "bytes": 15714
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/crossref-zns2023.json",
+      "sha256": "b43c39dd85222ce28364bd1c59905e0d398f21676c077593bb31597f695aaa21",
+      "bytes": 24008
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/dedup-root-0.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/dedup-root-0.txt",
+      "sha256": "c56b7e1e6d39f1fc7c8306bf8737490af71005fd980795da8fe00e9fd05ecedc",
+      "bytes": 167
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/dedup-root-1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/dedup-root-1.txt",
+      "sha256": "8dbcd10510f57234f7b72a7b50420733d2c0dc96558d0c2cb025f8fc99abb7dc",
+      "bytes": 144
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/dedup-summary.json",
+      "sha256": "fe25fde5d7f350506d880e0101d5b2d3e01c603b0ac10365998d6a64d3266b17",
+      "bytes": 2304
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/final-maintained-dedup.txt",
+      "sha256": "e7f66bf0b9e934464ad7cad49fc0cae39d48ef2d3a87e320d3b18ca3d056aeae",
+      "bytes": 96
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/ima-definitions-p1.png",
+      "sha256": "7d639e0e0a04c146ecd8c00a6ea991c85116267491d046ae3b6a7ad81e63317a",
+      "bytes": 116516
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/ima-wurtzite-p236.png",
+      "sha256": "37401c5ccb474b403f8d211d03beeb7e2d8805a8ed7ae38c417869dd0035f955",
+      "bytes": 288607
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/ima-wurtzite.txt",
+      "sha256": "a5149f2f5593aa4d998b07b39518ffabcb5d1a8250ce007f9f9f1fc4ef670fd9",
+      "bytes": 3849
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/named-validation.json",
+      "sha256": "95e18c8ee0b8bb6260a0b22f320540f78be5a886d7e2bd69ab340e40eb866cf7",
+      "bytes": 875
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/named-validation.log",
+      "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e",
+      "bytes": 31
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/round85-correction.json",
+      "sha256": "fab07ea7afed323fb11fdf25d4aeb3e3e753ff7951f28307725f5389e1d3b86d",
+      "bytes": 32065
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/round85-search1.json",
+      "sha256": "b53494e74866d547bd0ed7ae26c47a5ddd1932980aec89eac82a1afcb8d6f5a9",
+      "bytes": 31442
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/round85-search2.json",
+      "sha256": "e643227cc8ed140eacc7245018735de534361feec5429fefa00ea2950d2e2eb5",
+      "bytes": 32822
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/round85-search3.json",
+      "sha256": "6877840ff3b2b4081acab6e10aa46ab6d39f3d0676829ee3a35a60b3c2d5ebaa",
+      "bytes": 32669
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/round85-search4.json",
+      "sha256": "041073bbac6704d91ad68c2181941821094d918c2212a22882151f847e500194",
+      "bytes": 28456
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/round85-wurtzite-fullweb.json",
+      "sha256": "5e7ea5459569b3ea4709144202d4a9a417b29c8b9d842c537b48432b178a9390",
+      "bytes": 454
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/source-assessment-draft.md",
+      "sha256": "446dc61e7b1a740e7015dcc546aaf7bb30ed7cef1a0cc7d363628048c71b7f76",
+      "bytes": 11717
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/source-issue-draft.md",
+      "sha256": "2412d8f3e547b42f6cc7a229e9b1d0c81368a6d350440ef08931c9e4fb9ed1f9",
+      "bytes": 2714
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/study-doi-dedup.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/wurtzite-draft.yaml",
+      "sha256": "f8550475241a3910695ae3efa60a68666b015acf9a82b232891f8f8b2fbfa19a",
+      "bytes": 8039
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/wurtzite-handbook-p1.png",
+      "sha256": "fa08652ef40b32c8c89378f48bb507b2b4dbd412c9aac3485edf3d70ab3b0b2d",
+      "bytes": 191990
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/wurtzite-handbook.pdf",
+      "sha256": "16d58b02258e3b151b5ddcd8ba0d78154a1e168946bed29d5674d8246a0eb4b6",
+      "bytes": 47687
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/wurtzite-handbook.txt",
+      "sha256": "70b6933f91bfeaf70947ceaad944eb02c70ba4a7f1880b9929241ae385b03185",
+      "bytes": 2996
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/wurtzite-study-dedup.txt",
+      "sha256": "e7f66bf0b9e934464ad7cad49fc0cae39d48ef2d3a87e320d3b18ca3d056aeae",
+      "bytes": 96
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p1.png",
+      "sha256": "7a03ec810f034facf197f976b57d3ed54b47b591ef303cb67b23ed21a7533878",
+      "bytes": 286782
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p10.png",
+      "sha256": "2b70c9b5de11ec780a7104af744d8235250db9c396c9920f653750d8cb763fb7",
+      "bytes": 418052
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p11.png",
+      "sha256": "3404ae430a2e5214f0fd9fd149655dc9de66688a0f260fa5556c81a4dafa28cb",
+      "bytes": 233696
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p12.png",
+      "sha256": "c161382631a0c40c0632b317d6e33e8359b5080bf7050ab7ea422e22e323f667",
+      "bytes": 337102
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p13.png",
+      "sha256": "1014469f4607aed8d507be62cac1964fcf8e9781062282e7bf1665f8bb20f884",
+      "bytes": 379602
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p14.png",
+      "sha256": "a039d16cebb48c4642856bfc23458171227f52137877486cca657cb3d77ba8bf",
+      "bytes": 147392
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p2.png",
+      "sha256": "8078c4afa64a224c04d87b45712b65f06111bf9b0856171b6f4284d084f3f9ec",
+      "bytes": 275266
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p3.png",
+      "sha256": "26bfe7bca093b6ebc1f10260e281d9c42d81bc1da3cbf8e9dd3be91c5167b3e5",
+      "bytes": 275811
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p4.png",
+      "sha256": "55741c3043db4f89f734a735b65b9c683042bc8ea1faf3f09c03eb47f3cfee5d",
+      "bytes": 359594
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p5.png",
+      "sha256": "fc37aa2e42d70ccafb891a31b5648d480781e7e641a83848b3b325d99f3fef45",
+      "bytes": 209712
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p6.png",
+      "sha256": "9ae3a90de07d7442d1d1159be5245962e86be36c6086a527f681da24c82d66ae",
+      "bytes": 277753
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p7.png",
+      "sha256": "b16668cc0e08390dc9442e6eb0e36edc84cd45a9831d14b5b5b00e648b65ddec",
+      "bytes": 227319
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p8.png",
+      "sha256": "826695a0741dcf4bedd1fe459e53c8d8c8e97f3ab1ec14a90166ea53225d3716",
+      "bytes": 245969
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p9.png",
+      "sha256": "2e33b0fe695a2fd1add4131130d983878f05f5b76311c6a56a253176190a4879",
+      "bytes": 207789
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-phase-consistency.json",
+      "sha256": "90918a66f28d642b7fc9b197416d808b47fb8122f1a68505c53b1e8e5b6a1861",
+      "bytes": 920
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023.pdf",
+      "sha256": "731e144c97dadb6580deffa83dcd79efff5170eb78829c9253bf3f0090cf289b",
+      "bytes": 3263018
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023.txt",
+      "sha256": "3fdd9067800241402fa006d12d42858d3e3842ba91c0e19ed296c6df4a911b99",
+      "bytes": 47350
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023.xml",
+      "sha256": "10d784b650296bd9824e74713459afc159fb7569f2fd4501e32bdf09e5513349",
+      "bytes": 124146
+    }
+  ],
+  "source_inspection": {
+    "castillo2013": {
+      "full_artifact_pages": 143,
+      "accepted_chapter_pdf_pages": [
+        42,
+        63
+      ],
+      "chapter_text": "complete",
+      "original_figures_inspected": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7"
+      ],
+      "journal_lineage": "10.1016/j.scitotenv.2012.02.013; same experiment, not replication",
+      "journal_access": "Only first journal page at PDF139; full journal methods/graphics/SI not acquired",
+      "supplements": "No separate supplement reference identified in accepted complete chapter; journal supplement state remains unverified",
+      "copyright": "Institutional attribution/noncommercial/no-derivatives; originals retained outside Git"
+    },
+    "segura2023": {
+      "doi": "10.3390/nano13050935",
+      "state": "complete14-pagePDF and XML acquired; limited phase-focused screen, not accepted mechanism evidence",
+      "inspected": "Pages1-3 and6-7; originalFigure4 phase paragraph/pixels",
+      "defer_reason": "Reported minor-phase hkl/2theta assignments conflict with reported hexagonal cell and wavelength; retained independent consistency calculation does not identify an alternative phase",
+      "supplements": "Zero supplementary-material elements in complete acquired XML"
+    }
+  },
+  "scientific_limits": [
+    "Mixed sphalerite/wurtzite with fitted overlapping peaks, no quantitative phase abundance or pure wurtzite yield",
+    "Three unresolved consortia, no invented organism identifier or causal strain",
+    "No matched uninoculated/killed/chemical precipitation controls in complete Chapter2",
+    "Nominal sulfate/pH, aggregate-unit and figure-caption inconsistencies retained",
+    "Filtered zinc nondetection is not zero or recovered-product mass; sulfide inferred indirectly",
+    "Culture-medium carryover, lyophilization phase history and reactor replication unresolved",
+    "Laboratory synthetic feed, no industrial deployment or inherited criticality"
+  ],
+  "deferred_sources": [
+    {
+      "doi": "10.3390/nano13050935",
+      "action": "Clarify phase indexing before corroboration",
+      "issue_draft": {
+        "path": "/private/tmp/cmm-round85-sulfides-research/source-issue-draft.md",
+        "sha256": "2412d8f3e547b42f6cc7a229e9b1d0c81368a6d350440ef08931c9e4fb9ed1f9",
+        "bytes": 2714
+      }
+    },
+    {
+      "doi": "10.1016/j.gca.2016.02.007",
+      "action": "Acquire full comparative primary and graphics/SI via legitimate institutional routes; metadata only this round"
+    },
+    {
+      "title": "Ultrastructure, aggregation-state, and crystal growth of biogenic nanocrystalline sphalerite and wurtzite",
+      "year": 2004,
+      "action": "Acquire full original before transferring HRTEM/stacking-fault claims"
+    }
+  ],
+  "independent_review": "pending; author does not self-accept",
+  "batch_gates": "pending root execution after all owner freezes",
+  "report": {
+    "path": "/private/tmp/CMMMech-expansion-round85-20261015/research/sources/round85-wurtzite-20261015/report.md",
+    "sha256": "92e45c21ad9a785e12beab94bcc5003f0db12bc29a6c9f1d492f0b5fa7a42e6b",
+    "bytes": 12450
+  }
+}

@@ -1,0 +1,571 @@
+# Independent scientific review of Hydrozincite
+
+- Review: 20261015T013234Z-hydrozincite-round85-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T01:22:30Z
+- Finished UTC: 2026-10-15T01:32:34.435320Z
+- Reviewer: codex /root/round68_iron_sulfides (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Hydrozincite field association and separate sterile organic-modified precipitation are supported with causal, phase and hydrological limits retained.
+
+## Scope And Provenance
+
+Full maintained owner and canonical CREATE; accepted full primary main text, claim-bearing original graphics/tables, relevant supplements, identities, internal contradictions and actual validation.
+
+Selection: Assigned frozen owner; canonical native source/target inspection completed before owner judgment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 51adf4be6c544642f6bf54a4e7f514adb84aa34e.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:hydrozincite | data/records/hydrozincite.yaml | maintained | Hydrozincite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent strict named validation | passed | True | cmmmech:hydrozincite | Actual reviewer run exit0; two checked records, zero failures. |
+| Completed coordinator batch gate 1 | passed | True | cmmmech:hydrozincite | Actual terminal run 2026-10-15T01:22:50.828855+00:00 to 2026-10-15T01:31:26.415505+00:00; unchanged owner hash and log digest verified. |
+| Completed coordinator batch gate 2 | passed | True | cmmmech:hydrozincite | Actual terminal run 2026-10-15T01:31:26.415715+00:00 to 2026-10-15T01:31:45.874908+00:00; unchanged owner hash and log digest verified. |
+| Completed coordinator batch gate 3 | passed | True | cmmmech:hydrozincite | Actual terminal run 2026-10-15T01:31:45.874937+00:00 to 2026-10-15T01:31:56.553967+00:00; unchanged owner hash and log digest verified. |
+| Completed coordinator batch gate 4 | passed | True | cmmmech:hydrozincite | Actual terminal run 2026-10-15T01:31:56.553994+00:00 to 2026-10-15T01:32:08.065969+00:00; unchanged owner hash and log digest verified. |
+
+## Scientific And Domain Assessments
+
+### Mineral species versus material and experiment
+
+identity: supported. Targets: cmmmech:hydrozincite.
+
+Authoritative formula and symmetry support a distinct mineral owner. Synthetic analogues or mixed field samples are explicitly bounded. No inherited zinc criticality, mineral purity, recovered yield or industrial deployment asserted.
+
+### Field phase and organism association
+
+evidence: supported. Targets: cmmmech:hydrozincite.
+
+1997 station4 XRD contains hydrozincite with quartz/calcite. SEM/EDX and revived morphological Scytonema/Chlorella assignments support association; no sequence authentication, isolate precipitation assay or matched sterile field comparison establishes individual organism necessity.
+
+### Conditions, dilution and mixed-sediment denominators
+
+quantity: supported. Targets: cmmmech:hydrozincite.
+
+Table2 station3/4 temperature/pH are field observations; bicarbonate-rich tributaries and dilution confound downstream concentration declines. Table1 bulk chemistry is not lattice substitution or phase-specific recovery. Year-old dry-mat resuscitation in diluted BG11 is not new hydrozincite measurement.
+
+### Independent sterile route and morphology counterevidence
+
+evidence: supported. Targets: cmmmech:hydrozincite.
+
+Ngwenya gas-diffusion recipe and additive-free controls support an abiotic organic-modified route. Asp/Glu aggregate morphology resembles field material; morphology alone is not a biosignature or demonstration of active cellular secretion. Natural2006 sampling and laboratory experiments are not replication of1997.
+
+### Identity and model uncertainty
+
+evidence: supported. Targets: cmmmech:hydrozincite.
+
+XRD is reported data-not-shown for sterile products. Vibrational spectra corroborate assignment but no quantitative phase fraction/yield. Cysteine may remain a separate phase; natural organic bands absent. Figure6 is conceptual/thermodynamic rather than measured survival/transport.
+
+### Independent exact-byte review and actual validation
+
+provenance: supported. Targets: cmmmech:hydrozincite.
+
+Reviewer authored wurtzite, not this owner. Canonical native capture preceded owner judgment; original preparatory capture was preserved and repository identity normalized before any persisted review. Shared acquisitions were independently read and original graphics checked; no owner edits.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/hydrozincite.yaml; Entire frozen owner. Actual local artifact: /private/tmp/CMMMech-expansion-round85-20261015/data/records/hydrozincite.yaml | supports | Independent exact-record assessment; no reviewer edits. |
+| history | history/records/hydrozincite/2026-10-15T011935Z-codex-2a3b67.yaml; Complete canonical CREATE plus inline event. Actual local artifact: /private/tmp/CMMMech-expansion-round85-20261015/history/records/hydrozincite/2026-10-15T011935Z-codex-2a3b67.yaml | supports | Canonical target, actor/model, event and history link agree. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Official retained September 2026 original, definitions page1 and species row PDFpage99. Actual local artifact: /private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf | supports | Species formula/status independently checked visually; G and historical year are not numbered approvals. |
+| handbook | https://www.handbookofmineralogy.org/pdfs/hydrozincite.pdf; Complete one-page original; independently visually checked. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite-handbook.pdf | supports | Species composition, symmetry and geological occurrence support identity rather than constituent criticality. |
+| podda | https://doi.org/10.1128/AEM.66.11.5092-5098.2000; Complete actual PMC original including methods/results/discussion, Tables1–2 and captions; all4 original figures and3 equation images separately visually checked. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2000-pmc.html | supports | Mixed natural phase, field organisms, resuscitation, hydrological confounders and causal limits assessed; failed PDF and tiny failed XML responses excluded. |
+| ngwenya | https://doi.org/10.1098/rsif.2014.0845; Complete actual PMC original, all sections and6 original figures independently read/visually checked. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2014-pmc.html | supports | Natural association and sterile organic-additive precipitation are separate; XRD data are stated but not shown, and survival/nucleation model is not a direct measurement. |
+| poddafig1 | https://doi.org/10.1128/AEM.66.11.5092-5098.2000; Original Figure1 pixels independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2000-am1100677001.jpg | supports | Original map, mixed-phase diffraction or microscopy supports the bounded interpretation. |
+| poddafig2 | https://doi.org/10.1128/AEM.66.11.5092-5098.2000; Original Figure2 pixels independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2000-am1100677002.jpg | supports | Original map, mixed-phase diffraction or microscopy supports the bounded interpretation. |
+| poddafig3 | https://doi.org/10.1128/AEM.66.11.5092-5098.2000; Original Figure3 pixels independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2000-am1100677003.jpg | supports | Original map, mixed-phase diffraction or microscopy supports the bounded interpretation. |
+| poddafig4 | https://doi.org/10.1128/AEM.66.11.5092-5098.2000; Original Figure4 pixels independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2000-am1100677004.jpg | supports | Original map, mixed-phase diffraction or microscopy supports the bounded interpretation. |
+| ngwenyafig1 | https://doi.org/10.1098/rsif.2014.0845; Original Figure1 pixels independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g1.jpg | supports | Natural and sterile morphology, spectra, pH trajectory or explicit conceptual model checked without converting association into necessity. |
+| ngwenyafig2 | https://doi.org/10.1098/rsif.2014.0845; Original Figure2 pixels independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g2.jpg | supports | Natural and sterile morphology, spectra, pH trajectory or explicit conceptual model checked without converting association into necessity. |
+| ngwenyafig3 | https://doi.org/10.1098/rsif.2014.0845; Original Figure3 pixels independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g3.jpg | supports | Natural and sterile morphology, spectra, pH trajectory or explicit conceptual model checked without converting association into necessity. |
+| ngwenyafig4 | https://doi.org/10.1098/rsif.2014.0845; Original Figure4 pixels independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g4.jpg | supports | Natural and sterile morphology, spectra, pH trajectory or explicit conceptual model checked without converting association into necessity. |
+| ngwenyafig5 | https://doi.org/10.1098/rsif.2014.0845; Original Figure5 pixels independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g5.jpg | supports | Natural and sterile morphology, spectra, pH trajectory or explicit conceptual model checked without converting association into necessity. |
+| ngwenyafig6 | https://doi.org/10.1098/rsif.2014.0845; Original Figure6 pixels independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g6.jpg | supports | Natural and sterile morphology, spectra, pH trajectory or explicit conceptual model checked without converting association into necessity. |
+| named | /private/tmp/cmm-round85-zinc-independent/named-validation.log; Independent reviewer strict named run. Actual local artifact: /private/tmp/cmm-round85-zinc-independent/named-validation.log | supports | Actual exit0, two records checked, zero failures. |
+| batch | /private/tmp/cmm-round85-final-gates.json; Actual completed four-command batch receipt. Actual local artifact: /private/tmp/cmm-round85-final-gates.json | supports | Exact base/worktree/input digest, command list and exit codes verified. |
+| batchlog | /private/tmp/cmm-round85-final-gates.log; Actual complete batch output digest independently verified. Actual local artifact: /private/tmp/cmm-round85-final-gates.log | supports | Structural tests, strict corpus, canonical history and generated pages passed. |
+| search | /private/tmp/cmm-round85-zinc-independent/web-notices.json; Four exact-DOI correction/erratum searches; inspected returned results retained. Actual local artifact: /private/tmp/cmm-round85-zinc-independent/web-notices.json | context_only | No applicable correction identified in these bounded results; not an exhaustive absence claim. |
+| dedup | /private/tmp/cmm-round85-zinc-independent/maintained-dedup.txt; Followed hidden/ignored-inclusive current records/research/reviews/history search by species and exact DOI. Actual local artifact: /private/tmp/cmm-round85-zinc-independent/maintained-dedup.txt | context_only | Existing contextual mentions and prior deferral are distinguished from current species owners. Author original-main/cited-raw search inventory was also read; no machine-wide novelty claim. |
+
+## Limits And Additional Notes
+
+- No independent experimental replication, raw-instrument reanalysis, phase-refinement reproduction or authenticated experimental stock is claimed.
+- All accepted quantities retain their original arm, operational denominator and unresolved source conflicts; no recovery or deployment claim added.
+- Bounded notice/dedup searches do not prove exhaustive absence of contrary publications.
+- Shared source acquisition is not independent experimental replication; independent review concerns exact owner bytes and primary evidence.
+- Publication, hosted CI and postmerge gates are separate future operational checks.
+- Field phototroph association cannot separate photosynthesis, EPS and abiotic solution chemistry; sterile morphology mimics limit biosignature claims.
+- Full primary HTML with original graphics is the accepted route; failed PDF and tiny error XML files are not evidence.
+- Actual review start and canonical inspection retained externally. Earlier preparatory repository label was normalized in a fresh inspection before owner-level assessment; no saved scientific review was rewritten.
+- A preliminary validation-help command used a nonexistent scripts/validate_records.py path and exited2 without validation; the subsequent actual cmmmech strict named command is the accepted exit0 check.
+- Every accepted primary and authority entry binds an actual nonempty local artifact with absolute locator and SHA256. Failed downloads are excluded.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T013234Z-hydrozincite-round85-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Hydrozincite
+started_at: '2026-10-15T01:22:30Z'
+finished_at: '2026-10-15T01:32:34.435320Z'
+reviewer:
+  identity: codex /root/round68_iron_sulfides
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Owner/history authored by round68_phosphates; reviewer authored
+    wurtzite only, independently inspected exact target before assessment, read primary
+    originals and figures, and made no owner edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Hydrozincite field association and separate sterile organic-modified precipitation
+  are supported with causal, phase and hydrological limits retained.
+source:
+  git_revision: 51adf4be6c544642f6bf54a4e7f514adb84aa34e
+  state: working_tree
+  inputs:
+  - path: data/records/hydrozincite.yaml
+    sha256: f8844db2bfa5387f935c677474d10cd198a9eb2979cfac99d5bff79c0706443e
+    role: target
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/hydrozincite/2026-10-15T011935Z-codex-2a3b67.yaml
+    sha256: 15455b9a72b34125ac17a2522f2fe7729358d57f8d87eb71a510a5e5a1db93e6
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Full maintained owner and canonical CREATE; accepted full primary main
+    text, claim-bearing original graphics/tables, relevant supplements, identities,
+    internal contradictions and actual validation.
+  selection: Assigned frozen owner; canonical native source/target inspection completed
+    before owner judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:hydrozincite
+targets:
+- target_id: cmmmech:hydrozincite
+  path: data/records/hydrozincite.yaml
+  label: Hydrozincite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/hydrozincite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent strict named validation
+  command: uv run --locked cmmmech validate data/records/hydrozincite.yaml data/records/zincite.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Actual reviewer run exit0; two checked records, zero failures.
+  target_ids:
+  - cmmmech:hydrozincite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Completed coordinator batch gate 1
+  command: just check
+  status: passed
+  required: true
+  summary: Actual terminal run 2026-10-15T01:22:50.828855+00:00 to 2026-10-15T01:31:26.415505+00:00;
+    unchanged owner hash and log digest verified.
+  target_ids:
+  - cmmmech:hydrozincite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batchlog
+- check_id: batch1
+  name: Completed coordinator batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Actual terminal run 2026-10-15T01:31:26.415715+00:00 to 2026-10-15T01:31:45.874908+00:00;
+    unchanged owner hash and log digest verified.
+  target_ids:
+  - cmmmech:hydrozincite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batchlog
+- check_id: batch2
+  name: Completed coordinator batch gate 3
+  command: uv run --locked cmmmech validate-history --base 51adf4be6c544642f6bf54a4e7f514adb84aa34e
+  status: passed
+  required: true
+  summary: Actual terminal run 2026-10-15T01:31:45.874937+00:00 to 2026-10-15T01:31:56.553967+00:00;
+    unchanged owner hash and log digest verified.
+  target_ids:
+  - cmmmech:hydrozincite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batchlog
+- check_id: batch3
+  name: Completed coordinator batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Actual terminal run 2026-10-15T01:31:56.553994+00:00 to 2026-10-15T01:32:08.065969+00:00;
+    unchanged owner hash and log digest verified.
+  target_ids:
+  - cmmmech:hydrozincite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batchlog
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/hydrozincite.yaml
+  locator: 'Entire frozen owner. Actual local artifact: /private/tmp/CMMMech-expansion-round85-20261015/data/records/hydrozincite.yaml'
+  accessed_at: '2026-10-15T01:32:34.435320Z'
+  support: supports
+  summary: Independent exact-record assessment; no reviewer edits.
+  snapshot_sha256: f8844db2bfa5387f935c677474d10cd198a9eb2979cfac99d5bff79c0706443e
+- evidence_id: history
+  kind: record_content
+  reference: history/records/hydrozincite/2026-10-15T011935Z-codex-2a3b67.yaml
+  locator: 'Complete canonical CREATE plus inline event. Actual local artifact: /private/tmp/CMMMech-expansion-round85-20261015/history/records/hydrozincite/2026-10-15T011935Z-codex-2a3b67.yaml'
+  accessed_at: '2026-10-15T01:32:34.435320Z'
+  support: supports
+  summary: Canonical target, actor/model, event and history link agree.
+  snapshot_sha256: 15455b9a72b34125ac17a2522f2fe7729358d57f8d87eb71a510a5e5a1db93e6
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'Official retained September 2026 original, definitions page1 and species
+    row PDFpage99. Actual local artifact: /private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf'
+  accessed_at: '2026-10-15T01:32:34.435320Z'
+  support: supports
+  summary: Species formula/status independently checked visually; G and historical
+    year are not numbered approvals.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/hydrozincite.pdf
+  locator: 'Complete one-page original; independently visually checked. Actual local
+    artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite-handbook.pdf'
+  accessed_at: '2026-10-15T01:32:34.435320Z'
+  support: supports
+  summary: Species composition, symmetry and geological occurrence support identity
+    rather than constituent criticality.
+  snapshot_sha256: 5627deedc4f239c16927f925d8ec621f05b5b3152e7da2da9928885fc25e79fe
+- evidence_id: podda
+  kind: primary_source
+  reference: https://doi.org/10.1128/AEM.66.11.5092-5098.2000
+  locator: 'Complete actual PMC original including methods/results/discussion, Tables1–2
+    and captions; all4 original figures and3 equation images separately visually checked.
+    Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2000-pmc.html'
+  accessed_at: '2026-10-15T01:32:34.435320Z'
+  support: supports
+  summary: Mixed natural phase, field organisms, resuscitation, hydrological confounders
+    and causal limits assessed; failed PDF and tiny failed XML responses excluded.
+  snapshot_sha256: 1ae9718a6a45e9d48b50edf7b9169cc7d839ecbc98493f3620af674535db975f
+- evidence_id: ngwenya
+  kind: primary_source
+  reference: https://doi.org/10.1098/rsif.2014.0845
+  locator: 'Complete actual PMC original, all sections and6 original figures independently
+    read/visually checked. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2014-pmc.html'
+  accessed_at: '2026-10-15T01:32:34.435320Z'
+  support: supports
+  summary: Natural association and sterile organic-additive precipitation are separate;
+    XRD data are stated but not shown, and survival/nucleation model is not a direct
+    measurement.
+  snapshot_sha256: 0df419f18324bc28d0d84ed43da1d27bf465b67f344b76da58bd662b20c4ebe5
+- evidence_id: poddafig1
+  kind: primary_source
+  reference: https://doi.org/10.1128/AEM.66.11.5092-5098.2000
+  locator: 'Original Figure1 pixels independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2000-am1100677001.jpg'
+  accessed_at: '2026-10-15T01:32:34.435320Z'
+  support: supports
+  summary: Original map, mixed-phase diffraction or microscopy supports the bounded
+    interpretation.
+  snapshot_sha256: ab3fff1153abffd2a566717958ce0ca67018f8a905a97ecbb9ce571cb482517f
+- evidence_id: poddafig2
+  kind: primary_source
+  reference: https://doi.org/10.1128/AEM.66.11.5092-5098.2000
+  locator: 'Original Figure2 pixels independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2000-am1100677002.jpg'
+  accessed_at: '2026-10-15T01:32:34.435320Z'
+  support: supports
+  summary: Original map, mixed-phase diffraction or microscopy supports the bounded
+    interpretation.
+  snapshot_sha256: 42360dcc839facb776c748443f9765d2604f72125b916ba63a2aa4ed52a9f019
+- evidence_id: poddafig3
+  kind: primary_source
+  reference: https://doi.org/10.1128/AEM.66.11.5092-5098.2000
+  locator: 'Original Figure3 pixels independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2000-am1100677003.jpg'
+  accessed_at: '2026-10-15T01:32:34.435320Z'
+  support: supports
+  summary: Original map, mixed-phase diffraction or microscopy supports the bounded
+    interpretation.
+  snapshot_sha256: 4a272aa292e2c7d6b79e5bdce689133e097da650161e29541e4a2f5985ac4f5e
+- evidence_id: poddafig4
+  kind: primary_source
+  reference: https://doi.org/10.1128/AEM.66.11.5092-5098.2000
+  locator: 'Original Figure4 pixels independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2000-am1100677004.jpg'
+  accessed_at: '2026-10-15T01:32:34.435320Z'
+  support: supports
+  summary: Original map, mixed-phase diffraction or microscopy supports the bounded
+    interpretation.
+  snapshot_sha256: cc3a2a16fb25d2db88533dc8ec6cd4cc1bb889c05176a76e79eb1e315863d0b7
+- evidence_id: ngwenyafig1
+  kind: primary_source
+  reference: https://doi.org/10.1098/rsif.2014.0845
+  locator: 'Original Figure1 pixels independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g1.jpg'
+  accessed_at: '2026-10-15T01:32:34.435320Z'
+  support: supports
+  summary: Natural and sterile morphology, spectra, pH trajectory or explicit conceptual
+    model checked without converting association into necessity.
+  snapshot_sha256: 48b232d801c20e9de3b5927825a6c3d3856ecc8474d72aa60733bc176deb1df2
+- evidence_id: ngwenyafig2
+  kind: primary_source
+  reference: https://doi.org/10.1098/rsif.2014.0845
+  locator: 'Original Figure2 pixels independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g2.jpg'
+  accessed_at: '2026-10-15T01:32:34.435320Z'
+  support: supports
+  summary: Natural and sterile morphology, spectra, pH trajectory or explicit conceptual
+    model checked without converting association into necessity.
+  snapshot_sha256: bb6c9efc212a0e65c3b9e4da9293d6ceac9a6936bbb6a64fa475f6320ee36c23
+- evidence_id: ngwenyafig3
+  kind: primary_source
+  reference: https://doi.org/10.1098/rsif.2014.0845
+  locator: 'Original Figure3 pixels independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g3.jpg'
+  accessed_at: '2026-10-15T01:32:34.435320Z'
+  support: supports
+  summary: Natural and sterile morphology, spectra, pH trajectory or explicit conceptual
+    model checked without converting association into necessity.
+  snapshot_sha256: 96c6ed7ca1d2da893010c6ddccea2162fd726e9318d909f8c745be7b6b6d0491
+- evidence_id: ngwenyafig4
+  kind: primary_source
+  reference: https://doi.org/10.1098/rsif.2014.0845
+  locator: 'Original Figure4 pixels independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g4.jpg'
+  accessed_at: '2026-10-15T01:32:34.435320Z'
+  support: supports
+  summary: Natural and sterile morphology, spectra, pH trajectory or explicit conceptual
+    model checked without converting association into necessity.
+  snapshot_sha256: e4383c6befe576a0ff421831d9fce36f9dc45914e656d3359212392544f9e608
+- evidence_id: ngwenyafig5
+  kind: primary_source
+  reference: https://doi.org/10.1098/rsif.2014.0845
+  locator: 'Original Figure5 pixels independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g5.jpg'
+  accessed_at: '2026-10-15T01:32:34.435320Z'
+  support: supports
+  summary: Natural and sterile morphology, spectra, pH trajectory or explicit conceptual
+    model checked without converting association into necessity.
+  snapshot_sha256: 061d8b0b76b1d229a7b1c1348cebd835924aaec6f0744dae22d55b3eea55640d
+- evidence_id: ngwenyafig6
+  kind: primary_source
+  reference: https://doi.org/10.1098/rsif.2014.0845
+  locator: 'Original Figure6 pixels independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g6.jpg'
+  accessed_at: '2026-10-15T01:32:34.435320Z'
+  support: supports
+  summary: Natural and sterile morphology, spectra, pH trajectory or explicit conceptual
+    model checked without converting association into necessity.
+  snapshot_sha256: ea883e41da913acf762b4ed8b2ed7db9bc5c782eb9ebc1bf78f14aa9f17ba9a9
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round85-zinc-independent/named-validation.log
+  locator: 'Independent reviewer strict named run. Actual local artifact: /private/tmp/cmm-round85-zinc-independent/named-validation.log'
+  accessed_at: '2026-10-15T01:32:34.435320Z'
+  support: supports
+  summary: Actual exit0, two records checked, zero failures.
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round85-final-gates.json
+  locator: 'Actual completed four-command batch receipt. Actual local artifact: /private/tmp/cmm-round85-final-gates.json'
+  accessed_at: '2026-10-15T01:32:34.435320Z'
+  support: supports
+  summary: Exact base/worktree/input digest, command list and exit codes verified.
+  snapshot_sha256: 265694b8cec9b7c39325508f7811fea2ad2b656d6553c62449c545255123e748
+- evidence_id: batchlog
+  kind: validation
+  reference: /private/tmp/cmm-round85-final-gates.log
+  locator: 'Actual complete batch output digest independently verified. Actual local
+    artifact: /private/tmp/cmm-round85-final-gates.log'
+  accessed_at: '2026-10-15T01:32:34.435320Z'
+  support: supports
+  summary: Structural tests, strict corpus, canonical history and generated pages
+    passed.
+  snapshot_sha256: eaff9b50e0f61675b41fd2ead3e28a22a7673f273f263808e7cd9cc6b851acd9
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round85-zinc-independent/web-notices.json
+  locator: 'Four exact-DOI correction/erratum searches; inspected returned results
+    retained. Actual local artifact: /private/tmp/cmm-round85-zinc-independent/web-notices.json'
+  accessed_at: '2026-10-15T01:32:34.435320Z'
+  support: context_only
+  summary: No applicable correction identified in these bounded results; not an exhaustive
+    absence claim.
+  snapshot_sha256: 53201994c2bb8bec439ffae9923c3ed0eeb3a15b5a01d0276976fcf00949ceaa
+  search_scope: Four exact accepted DOI searches with correction/erratum/retraction
+    terms; source internal conflicts examined directly.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round85-zinc-independent/maintained-dedup.txt
+  locator: 'Followed hidden/ignored-inclusive current records/research/reviews/history
+    search by species and exact DOI. Actual local artifact: /private/tmp/cmm-round85-zinc-independent/maintained-dedup.txt'
+  accessed_at: '2026-10-15T01:32:34.435320Z'
+  support: context_only
+  summary: Existing contextual mentions and prior deferral are distinguished from
+    current species owners. Author original-main/cited-raw search inventory was also
+    read; no machine-wide novelty claim.
+  snapshot_sha256: cbd9325d1b3812ca4e35f1de0b46c394a1e76a935397fd0f61283894b504e1c2
+  search_scope: rg --hidden --no-ignore --follow in data/records research reviews
+    history, hydrozincite/zincite and four accepted DOIs; bounded author original-main
+    and cited raw inventory.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral species versus material and experiment
+  outcome: supported
+  summary: Authoritative formula and symmetry support a distinct mineral owner. Synthetic
+    analogues or mixed field samples are explicitly bounded. No inherited zinc criticality,
+    mineral purity, recovered yield or industrial deployment asserted.
+  target_ids:
+  - cmmmech:hydrozincite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+- assessment_id: field
+  area: evidence
+  topic: Field phase and organism association
+  outcome: supported
+  summary: 1997 station4 XRD contains hydrozincite with quartz/calcite. SEM/EDX and
+    revived morphological Scytonema/Chlorella assignments support association; no
+    sequence authentication, isolate precipitation assay or matched sterile field
+    comparison establishes individual organism necessity.
+  target_ids:
+  - cmmmech:hydrozincite
+  evidence_ids:
+  - record
+  - podda
+  - poddafig2
+  - poddafig3
+  - poddafig4
+- assessment_id: environment
+  area: quantity
+  topic: Conditions, dilution and mixed-sediment denominators
+  outcome: supported
+  summary: Table2 station3/4 temperature/pH are field observations; bicarbonate-rich
+    tributaries and dilution confound downstream concentration declines. Table1 bulk
+    chemistry is not lattice substitution or phase-specific recovery. Year-old dry-mat
+    resuscitation in diluted BG11 is not new hydrozincite measurement.
+  target_ids:
+  - cmmmech:hydrozincite
+  evidence_ids:
+  - record
+  - podda
+- assessment_id: sterile
+  area: evidence
+  topic: Independent sterile route and morphology counterevidence
+  outcome: supported
+  summary: Ngwenya gas-diffusion recipe and additive-free controls support an abiotic
+    organic-modified route. Asp/Glu aggregate morphology resembles field material;
+    morphology alone is not a biosignature or demonstration of active cellular secretion.
+    Natural2006 sampling and laboratory experiments are not replication of1997.
+  target_ids:
+  - cmmmech:hydrozincite
+  evidence_ids:
+  - record
+  - ngwenya
+  - ngwenyafig3
+  - ngwenyafig4
+- assessment_id: limits
+  area: evidence
+  topic: Identity and model uncertainty
+  outcome: supported
+  summary: XRD is reported data-not-shown for sterile products. Vibrational spectra
+    corroborate assignment but no quantitative phase fraction/yield. Cysteine may
+    remain a separate phase; natural organic bands absent. Figure6 is conceptual/thermodynamic
+    rather than measured survival/transport.
+  target_ids:
+  - cmmmech:hydrozincite
+  evidence_ids:
+  - record
+  - ngwenya
+  - ngwenyafig4
+  - ngwenyafig5
+  - ngwenyafig6
+- assessment_id: provenance
+  area: provenance
+  topic: Independent exact-byte review and actual validation
+  outcome: supported
+  summary: Reviewer authored wurtzite, not this owner. Canonical native capture preceded
+    owner judgment; original preparatory capture was preserved and repository identity
+    normalized before any persisted review. Shared acquisitions were independently
+    read and original graphics checked; no owner edits.
+  target_ids:
+  - cmmmech:hydrozincite
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - batchlog
+findings: []
+actions: []
+limitations:
+- No independent experimental replication, raw-instrument reanalysis, phase-refinement
+  reproduction or authenticated experimental stock is claimed.
+- All accepted quantities retain their original arm, operational denominator and unresolved
+  source conflicts; no recovery or deployment claim added.
+- Bounded notice/dedup searches do not prove exhaustive absence of contrary publications.
+- Shared source acquisition is not independent experimental replication; independent
+  review concerns exact owner bytes and primary evidence.
+- Publication, hosted CI and postmerge gates are separate future operational checks.
+- Field phototroph association cannot separate photosynthesis, EPS and abiotic solution
+  chemistry; sterile morphology mimics limit biosignature claims.
+- Full primary HTML with original graphics is the accepted route; failed PDF and tiny
+  error XML files are not evidence.
+notes:
+- Actual review start and canonical inspection retained externally. Earlier preparatory
+  repository label was normalized in a fresh inspection before owner-level assessment;
+  no saved scientific review was rewritten.
+- A preliminary validation-help command used a nonexistent scripts/validate_records.py
+  path and exited2 without validation; the subsequent actual cmmmech strict named
+  command is the accepted exit0 check.
+- Every accepted primary and authority entry binds an actual nonempty local artifact
+  with absolute locator and SHA256. Failed downloads are excluded.
+```
