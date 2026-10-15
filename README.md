@@ -8,13 +8,18 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 430 material records.
+The catalogue currently contains 435 material records.
 
-The [latest curation report](research/ingests/round90-frontier-20261015.md) links
+The [latest curation report](research/ingests/round91-frontier-20261015.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Electrical-cable recycling residues](data/records/electrical-cable-recycling-residues.yaml) | Real-feed laboratory leaching with adapted mixed acidophiles | Limited microbial benefit, synthetic-feed null result and incomplete copper balance |
+| [Florencite-(Ce)](data/records/florencite-ce.yaml) | Ce-specific synthetic analogue and abiotic sequential treatment | Residue composition ratios are not mineral-specific recovery yields |
+| [Gorceixite](data/records/gorceixite.yaml) | Natural-crystal identity and structure | Specimen-dependent symmetry and unresolved occupancy discrepancy |
+| [Natrojarosite](data/records/natrojarosite.yaml) | Abiotic synthesis and separate natural microbial association | Source protocol conflicts; association does not prove microbial precipitation |
+| [Skutterudite](data/records/skutterudite.yaml) | Consortium-associated processing of a characterized mixed concentrate | Bulk cobalt solubilization is not a skutterudite-specific recovery yield |
 | [Coal gasification slag](data/records/coal-gasification-slag.yaml) | Abiotic leaching and preparation of a mixed flocculant | Parallel acid treatments and gravimetric losses; no element-specific recovery yield |
 | [Crandallite](data/records/crandallite.yaml) | Abiotic synthesis and thermal dehydroxylation | Mixed phases; biological assays of a different phosphorite fraction are excluded |
 | [Goyazite](data/records/goyazite.yaml) | Natural-crystal identity and abiotic synthesis and transformation | Nominal starting-gel composition, impurities and method-dependent thermal peaks |

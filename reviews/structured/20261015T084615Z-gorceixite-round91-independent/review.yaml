@@ -1,0 +1,312 @@
+schema_version: 1.0.0
+review_id: 20261015T084615Z-gorceixite-round91-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Gorceixite
+started_at: '2026-10-15T08:36:49.170653Z'
+finished_at: '2026-10-15T08:46:15.227177Z'
+reviewer:
+  identity: codex /root/round68_iron_sulfides
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Phosphate agent authored this owner/history/dossier; reviewer
+    authored separate skutterudite. Shared acquired originals were independently read
+    and their claim-bearing original graphics/authorities inspected after native target
+    capture. No target edits or laboratory replication by reviewer.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of natural-crystal-grounded gorceixite identity with
+  specimen-specific symmetry and occupancy/hydrogen limits; no corrective owner finding.
+source:
+  git_revision: 1aa4c7528b1293734067918d942dc461581a07e2
+  state: working_tree
+  inputs:
+  - path: data/records/gorceixite.yaml
+    sha256: 297b38be3c9dbdd4b70496e7b66df599894bd8cda4bf2e3606ca0f21ec215fb1
+    role: target
+  - path: history/records/gorceixite/2026-10-15T083127Z-codex-0fed6d.yaml
+    sha256: c27a8967d88876147490d8967a4c899dda541adca83bbdeb52497328f52c8e31
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:gorceixite
+  path: data/records/gorceixite.yaml
+  label: Gorceixite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/gorceixite.yaml
+    role: maintained_record
+scope:
+  description: Complete exact maintained owner and canonical CREATE with full primary
+    text, claim-bearing original graphics, relevant official supplement and authority.
+  selection: Assigned independent record; native target/history/schema inspection
+    captured before scientific assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:gorceixite
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/gorceixite.yaml data/records/florencite-ce.yaml
+    --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Two actual frozen owners checked; zero failures.
+  target_ids:
+  - cmmmech:gorceixite
+  evidence_ids:
+  - named
+- check_id: primary
+  name: Independent primary and authority assessment
+  required: true
+  status: passed
+  summary: Original text, claim-bearing graphics/tables and relevant supplement/authority
+    inspected with source boundaries retained.
+  target_ids:
+  - cmmmech:gorceixite
+  evidence_ids:
+  - ima
+  - handbook
+  - primary
+- check_id: batch1
+  name: Completed coordinator gate1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt and log verified, not a new reviewer execution.
+  target_ids:
+  - cmmmech:gorceixite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator gate2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt and log verified, not a new reviewer execution.
+  target_ids:
+  - cmmmech:gorceixite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator gate3
+  command: uv run --locked cmmmech validate-history --base 1aa4c7528b1293734067918d942dc461581a07e2
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt and log verified, not a new reviewer execution.
+  target_ids:
+  - cmmmech:gorceixite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator gate4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt and log verified, not a new reviewer execution.
+  target_ids:
+  - cmmmech:gorceixite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/gorceixite.yaml
+  locator: 'Complete frozen owner, native-inspected before scientific assessment.
+    Actual local artifact: /private/tmp/CMMMech-expansion-round91-20261015/data/records/gorceixite.yaml'
+  accessed_at: '2026-10-15T08:46:15.227177Z'
+  support: supports
+  summary: Target remains at independently inspected hash; reviewer did not curate
+    it.
+  snapshot_sha256: 297b38be3c9dbdd4b70496e7b66df599894bd8cda4bf2e3606ca0f21ec215fb1
+- evidence_id: history
+  kind: record_content
+  reference: history/records/gorceixite/2026-10-15T083127Z-codex-0fed6d.yaml
+  locator: 'Complete canonical CREATE and separate inline event. Actual local artifact:
+    /private/tmp/CMMMech-expansion-round91-20261015/history/records/gorceixite/2026-10-15T083127Z-codex-0fed6d.yaml'
+  accessed_at: '2026-10-15T08:46:15.227177Z'
+  support: supports
+  summary: Actual codex/GPT-6 actor, target, date, summary and reference agree; no
+    history edits.
+  snapshot_sha256: c27a8967d88876147490d8967a4c899dda541adca83bbdeb52497328f52c8e31
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'September2026 exact rows: gorceixite PDFp84, florencite-(Ce)p74; definitionsp1,
+    all visually inspected. Actual local artifact: /private/tmp/cmm-round91-minerals-research/ima-live.pdf'
+  accessed_at: '2026-10-15T08:46:15.227177Z'
+  support: supports
+  summary: Species/formulas are distinct. Gorceixite is G1906, florencite-(Ce) renamed1987
+    special procedure; neither date is an invented approval accession.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/Gorceixite.pdf
+  locator: 'Complete original official entry visually read and live URL independently
+    opened. Actual local artifact: /private/tmp/cmm-round91-minerals-research/gorceixite-handbook.pdf'
+  accessed_at: '2026-10-15T08:46:15.227177Z'
+  support: context_only
+  summary: Natural chemical substitutions and identity support species-specific representation,
+    with no inherited criticality or microorganism.
+  snapshot_sha256: 2b0f0e4afc17200ccb6779aafae4b690fc6e6c299e5f151e682c926b519a1cce
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.2113/gscanmin.44.4.951
+  locator: 'Complete eight-page original pp951–958; Experimentalpp952–953, Tables1–5
+    and Figures1–2 visually inspected, Resultspp954–956 and Discussionpp956–957. Actual
+    local artifact: /private/tmp/cmm-round91-minerals-research/gorceixite2006.pdf'
+  accessed_at: '2026-10-15T08:46:15.227177Z'
+  support: supports
+  summary: CMN51269 Crosscut Creek natural crystal supports specimen-specific R-3m,
+    a7.0538(3), c17.2746(6)Å and253unique reflections. Ba0.882(6) occupancy versus
+    chemical full occupancy and constrained/inferred hydrogen remain unresolved. Deposited
+    structure-factor tables were not acquired.
+  snapshot_sha256: 2201f92009ec7d3d096dec8ecc9bf7ff6188b714d8a62ce323c23da7b96c0942
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round91-phosphate-independent/maintained-dedup-paths.txt
+  locator: 'Independent identity and exact-DOI search across maintained roots. Actual
+    local artifact: /private/tmp/cmm-round91-phosphate-independent/maintained-dedup-paths.txt'
+  accessed_at: '2026-10-15T08:46:15.227177Z'
+  support: context_only
+  summary: Matches are current two owners/history/source dossiers; no additional same-owner
+    or accepted-study duplicate found in this bounded maintained search.
+  snapshot_sha256: 74645b8ab501a4d5e11b9caf6e6876b6b70ca6f0fd6b5fe6020bfbbb4220cc0b
+  search_scope: rg --no-ignore --hidden --follow -l -i gorceixite|florencite-(Ce)|10.2113/gscanmin.44.4.951|10.20517/mmm.2022.05
+    data/records research reviews history. Current author raw roots inspected; no
+    machine-wide absence claim.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round91-phosphate-independent/web-query-results.json
+  locator: 'Four independent exact-DOI notice/conflict queries and live original Handbook/OAE
+    links on2026-10-15. Actual local artifact: /private/tmp/cmm-round91-phosphate-independent/web-query-results.json'
+  accessed_at: '2026-10-15T08:46:15.227177Z'
+  support: context_only
+  summary: No applicable correction/retraction identified in returned results; gorceixite
+    symmetry alternatives are preserved. Adjacent microbial monazite/florencite mixed-feed
+    search hit was not accepted as species-specific evidence.
+  snapshot_sha256: 1e35d53e471579ef07d6f679d8a3e59aa9e5ff2971509893e33498f79ed316ec
+  search_scope: Exact DOI correction/erratum searches for both papers; gorceixite
+    R-3m/Cm and florencite Li2022 ratio queries. Only primary/official sources support
+    accepted claims; no universal absence conclusion.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round91-phosphate-independent/named-validation.json
+  locator: 'Actual independent command 2026-10-15T08:38:28.321899+00:00 to 2026-10-15T08:38:32.139371+00:00;
+    log/private/tmp/cmm-round91-phosphate-independent/named-validation.log, SHA2564022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042.
+    Actual local artifact: /private/tmp/cmm-round91-phosphate-independent/named-validation.json'
+  accessed_at: '2026-10-15T08:46:15.227177Z'
+  support: supports
+  summary: Two exact named records checked with zero failures.
+  snapshot_sha256: 07704d925aaba7fb852ccc52b52e17b95a83be1617a7ff84cba92f3b55bc4b38
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round91-final-gates.json
+  locator: 'Actual coordinator four-command receipt 2026-10-15T08:39:32.840338+00:00
+    to 2026-10-15T08:45:39.844873+00:00; log/private/tmp/cmm-round91-final-gates.log,
+    SHA256ee4ac495f6f203e599ba080ce32bade1ef8a6f16b8753c87244ed8870e3340db. Actual
+    local artifact: /private/tmp/cmm-round91-final-gates.json'
+  accessed_at: '2026-10-15T08:46:15.227177Z'
+  support: supports
+  summary: Actual zero exits, exact base/worktree, log digest and unchanged owner
+    hashes verified; no reviewer batch rerun.
+  snapshot_sha256: fcc20f9b51cde223327b4ca25181b3d91af1687aff061d93d70fa6ea97d00cf7
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Distinct mineral and material boundaries
+  outcome: supported
+  summary: IMA formula/name/status and Handbook agree with species identity, not a
+    generic group, element, mixed natural resource or a criticality designation.
+  target_ids:
+  - cmmmech:gorceixite
+  evidence_ids:
+  - owner
+  - ima
+  - handbook
+- assessment_id: crystal
+  area: evidence
+  topic: Natural crystal identity and specimen-specific symmetry
+  outcome: supported
+  summary: Complete original supports CMN51269, Crosscut Creek, reported cell dimensions
+    and253unique reflections in R-3m. Author explicitly does not universalize this
+    specimen to every gorceixite; prior Cm assignments remain contextual, not disproven
+    for all specimens.
+  target_ids:
+  - cmmmech:gorceixite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: uncertainty
+  area: quantity
+  topic: Occupancy and hydrogen interpretation
+  outcome: supported
+  summary: Ba0.882(6) refined occupancy is not silently substituted for near-full
+    chemical occupancy; absorption/scattering explanations remain unresolved. One
+    constrained H position and inferred O/OH distribution do not locate every hydrogen
+    atom.
+  target_ids:
+  - cmmmech:gorceixite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: scope
+  area: scope
+  topic: Identity-only scientific scope
+  outcome: supported
+  summary: No experimental formation, leaching, microbial causality or industrial
+    process is asserted; natural-crystal measurement is a valid narrow evidence basis.
+  target_ids:
+  - cmmmech:gorceixite
+  evidence_ids:
+  - owner
+  - primary
+  - handbook
+- assessment_id: provenance
+  area: provenance
+  topic: Exact inputs, history and terminal checks
+  outcome: supported
+  summary: Native inspect preceded judgment; all reviewed owner/history hashes are
+    unchanged. Canonical CREATE and inline event describe real authoring, and actual
+    named/batch checks are verified.
+  target_ids:
+  - cmmmech:gorceixite
+  evidence_ids:
+  - owner
+  - history
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- Deposited observed/calculated structure-factor tables were not acquired; no independent
+  crystallographic re-refinement was performed.
+- One Yukon crystal does not settle symmetry for every composition/locality. Ba occupancy
+  and hydrogen/charge distribution remain partly inferred.
+- No microbial mechanism, mineral recovery, criticality or industrial performance
+  is demonstrated.
+- Bounded correction/conflict and hidden/ignored-inclusive searches do not establish
+  universal absence of later evidence or independent laboratory reproducibility.
+notes:
+- No owner, history or author source-dossier edits by reviewer.
+- Author source follow-up concerning florencite protocol/composition uncertainties
+  is independently supported; it is not a current owner defect.
+- Actual batch receipt is reused only after verifying correct current base, commands,
+  log and exact owner hashes.

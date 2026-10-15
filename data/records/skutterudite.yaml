@@ -1,0 +1,177 @@
+id: cmmmech:skutterudite
+name: Skutterudite
+material_kind: mineral
+description: >-
+  Skutterudite is the cobalt arsenide mineral species listed as CoAs3 with
+  grandfathered status G and original-description year 1845 in the September
+  2026 IMA compilation. The year is not an approval identifier. The Handbook
+  describes cubic Im-3 symmetry and natural nickel and iron substitution.
+  This species is distinct from nickelskutterudite, cobaltite, elemental cobalt
+  and engineered skutterudite-type materials. Accepted microbial evidence
+  concerns a phase-characterized, mixed Bou Azzer concentrate dominated by
+  skutterudite; it does not establish a pure-endmember extraction rate or
+  transfer constituent-element criticality to this mineral.
+sources:
+  - id: ima_2026_09
+    title: >-
+      IMA-CNMNC (September 2026). The New IMA List of Minerals. PDF page 201,
+      Skutterudite row; page 1, status and year definitions.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-15'
+  - id: handbook_skutterudite
+    title: >-
+      Handbook of Mineralogy. Skutterudite, CoAs2-3. One-page entry, symmetry,
+      composition, powder pattern and relation to nickelskutterudite.
+    url: https://www.handbookofmineralogy.org/pdfs/skutterudite.pdf
+    accessed_on: '2026-10-15'
+  - id: johnson2020
+    title: >-
+      Johnson DB, Dybowska A, Schofield PF, Herrington RJ, Smith SL and Santos
+      AL (2020). Bioleaching of arsenic-rich cobalt mineral resources, and
+      evidence for concurrent biomineralisation of scorodite during oxidative
+      bio-processing of skutterudite. Hydrometallurgy 195, 105395. Complete
+      version of record, sections 2.2-2.8 and 3.1, 3.3-3.5, Table 1 and
+      Figures 3-9; official supplementary Figures S1-S5.
+    url: https://doi.org/10.1016/j.hydromet.2020.105395
+    accessed_on: '2026-10-15'
+  - id: johnson2020_supplement
+    title: >-
+      Johnson et al. (2020), official Supplementary Data DOCX. Figures S1-S5,
+      original diffraction profiles, SEM-EDX maps and captions. S3-S4 concern
+      Iron Mask ore and are not transferred to the Bou Azzer experiment.
+    url: https://ars.els-cdn.com/content/image/1-s2.0-S0304386X20302851-mmc1.docx
+    accessed_on: '2026-10-15'
+  - id: ncbi_thiooxidans
+    title: >-
+      NCBI Taxonomy, Acidithiobacillus thiooxidans, species taxon 930.
+      Species-level grounding only; no strain equivalence is inferred.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930
+    accessed_on: '2026-10-15'
+  - id: ncbi_thermosulfidooxidans
+    title: >-
+      NCBI Taxonomy, Sulfobacillus thermosulfidooxidans, species taxon 28034.
+      Species-level grounding only; no strain equivalence is inferred.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=28034
+    accessed_on: '2026-10-15'
+mechanisms:
+  - id: acidophile-associated-leaching-of-skutterudite-bearing-concentrate
+    name: Acidophile-associated leaching of mixed skutterudite-bearing concentrate
+    process: bioleaching
+    description: >-
+      A living mixed acidophile culture was used to solubilize cobalt from
+      a skutterudite-dominated natural concentrate in an acidic laboratory
+      reactor. The reported dissolved fraction is relative to bulk concentrate
+      cobalt, not mineral-specific dissolution or recovered cobalt product.
+      A separate pyrite-conditioned flask produced secondary scorodite during
+      processing. These observations support a microbial processing context;
+      absent matched abiotic controls and phase-specific balances, they do not
+      establish microbial necessity, enhancement over abiotic leaching or an
+      exclusive direct-attack mechanism.
+    context: >-
+      Bou Azzer, Morocco concentrate was blended from several ore bodies,
+      supplied in late 2017 and milled through a less-than-100-micrometre mesh.
+      Section 2.5 experiment 4 used a 2-L reactor with 1-L working volume,
+      1% w/v concentrate, 0.5% w/v zero-valent sulfur, 5 mM ferrous sulfate
+      and acidophile basal salts/trace elements. Initial pH 1.8 was allowed
+      to fall to 1.5 and then controlled with 1 M NaOH; operation was at
+      35 degrees C, 180 rpm and approximately 1 L/min sterile air. Inoculum
+      combined the original iron/sulfur-oxidizing consortium with leachate
+      from a preceding 30-degree-C flask screen. Inoculum volume and cell
+      density are unspecified, and the concentrate was not sterilized.
+      The abstract says 13 initial species whereas section 2.6 lists 12 named
+      members; this discrepancy is not silently resolved. The two organisms
+      below were significant culturable endpoint members, not the complete
+      initial community or individually demonstrated causal agents.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:930
+        label: Acidithiobacillus thiooxidans
+      - id: NCBITaxon:28034
+        label: Sulfobacillus thermosulfidooxidans
+    evidence:
+      - source_ref: johnson2020
+        supports: support
+        explanation: >-
+          Sections 2.2-2.3 and 3.1, Table 1 and supplementary Figures S1-S2
+          identify skutterudite as the most abundant concentrate phase by
+          XRD and SEM-EDX, with loellingite, minor silicates, trace cobaltite,
+          bismuth arsenide, calcite and mixed-metal arsenate. Sparse
+          nickelskutterudite grains were also identified. Table 1 reports
+          91.9 g/kg cobalt in the whole concentrate. These phase and elemental
+          measurements support skutterudite-bearing mixed-feed identity, not
+          an absolutely pure mineral or an initial refined phase mass balance.
+      - source_ref: johnson2020
+        supports: support
+        explanation: >-
+          Section 3.3, printed pages 4-5 and Figure 3, reports 49% of the
+          concentrate cobalt solubilized after 16 days in experiment 4.
+          This is a bulk-feed solution fraction; no isolated cobalt product
+          or phase-specific cobalt balance is presented. Section 3.5 and
+          section 2.6 describe culture-based enumeration with colony 16S
+          identification: Acidithiobacillus thiooxidans and Sulfobacillus
+          thermosulfidooxidans were significant viable members after 16 days.
+          This differs from the genus-level sequencing of the separate Iron
+          Mask ore and does not identify every organism or a strain-specific
+          contribution in the Bou Azzer system.
+      - source_ref: johnson2020
+        supports: partial
+        explanation: >-
+          Section 2.5 describes one Bou Azzer bioreactor trial, while Figure
+          3's caption refers ambiguously to replicate bioreactors and shows
+          one series without replicate uncertainty. Biological replication
+          is therefore unresolved; section 2.8's three ICP measurements per
+          sample are analytical repeats. No matched uninoculated, killed-cell
+          or abiotic leach control is described. The nonsterile concentrate
+          and transferred screening leachate also limit attribution to the
+          originally named inoculum. Ferric-mediated oxidation, sulfur-derived
+          acidity and individual microbial roles remain proposed rather than
+          separately isolated mechanisms in this assay.
+      - source_ref: johnson2020_supplement
+        supports: partial
+        explanation: >-
+          Supplementary Figure S1 retains skutterudite peaks in leached Bou
+          Azzer material; S2 and S5 show mixed residual arsenides and new
+          iron-arsenate precipitates. No complete skutterudite disappearance
+          or mineral-specific conversion fraction is demonstrated. The
+          supplementary XRD labels use Bou Azzer experiment 1/2, whereas
+          the main methods number its reactor/flask experiments 4/5; this
+          numbering mismatch limits exact label-level crosswalks and is not
+          treated as proof of an additional independent experiment.
+      - source_ref: johnson2020
+        supports: support
+        explanation: >-
+          Section 2.5 experiment 5 pre-established an active culture with
+          5% w/v sterile pyrite and 5 mM ferrous sulfate for five days before
+          adding 1% w/v nonsterile concentrate. Sections 3.3-3.4 and Figures
+          4-7 identify scorodite in the final flask residue using XRD, FTIR
+          and SEM-EDX; it was not identified in the original concentrate or
+          non-pyrite reactor residue by those analyses. The original trace
+          Co-Ni-Ca-rich arsenate was compositionally distinguished from the
+          new iron arsenate, also illustrated in supplementary Figure S5.
+          This is concurrent secondary precipitation during mixed-feed
+          processing, not a separate replication or a purified product yield.
+      - source_ref: johnson2020
+        supports: partial
+        explanation: >-
+          The pyrite flask and non-pyrite reactor differ in geometry,
+          conditioning and operating conditions, so they do not isolate a
+          pyrite treatment effect. The specific preconditioning recipe does
+          not separately state a zero-valent-sulfur dose. Soluble arsenic and
+          iron decline during the flask experiment, and iron can also derive
+          from added pyrite; the authors therefore cannot calculate total
+          cumulative leaching accurately. Discussion and Figures 8-9 infer
+          arsenic oxidation states from redox chemistry and propose pyrite's
+          catalytic, nucleation and iron-supply roles. Leachate As(III)/As(V)
+          was not directly measured; the separate arsenite/arsenate titration
+          is not a matched leach control. Scorodite stability, detoxification,
+          isolated-metal recovery and industrial deployment were not tested.
+curation_history:
+  - timestamp: '2026-10-15T08:32:54.424781+00:00'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Created IMA-grounded skutterudite with complete Johnson2020 main and
+      official supplement evidence for microbial processing of mixed natural
+      concentrate; preserved phase, control, replication and speciation limits.
+history_refs:
+  - history/records/skutterudite/2026-10-15T083258Z-codex-b2814f.yaml

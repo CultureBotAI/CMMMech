@@ -1,0 +1,73 @@
+{
+  "recorded_at": "2026-10-15T08:53:22.374792Z",
+  "reviewer": "codex /root/round68_phosphates",
+  "scope": "Bounded static operational review of guarded original-main fast-forward and owned-topic cleanup helpers. No top-level helper execution, Git/GitHub mutation or new scientific acceptance.",
+  "scientific_review": false,
+  "authorship": "Reviewer authored round91 gorceixite/florencite-Ce and independently reviewed cable/natrojarosite; those scientific roles are unrelated to these root-authored publication helpers.",
+  "base": "1aa4c7528b1293734067918d942dc461581a07e2",
+  "worktree": "/private/tmp/CMMMech-expansion-round91-20261015",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "findings": [],
+  "unresolved_corrective_findings": 0,
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round91-sync-main.py",
+      "bytes": 3827,
+      "sha256": "2af3b49bb3ce1584fff9346bc61da15c9f1db5cbe0152f0035536c8efcf216bb"
+    },
+    {
+      "path": "/private/tmp/cmm-round91-cleanup.py",
+      "bytes": 2149,
+      "sha256": "2d8f7db8a0e09afeeeb2a47d5706bc5480da460118fb553e7e06d26bf0bddc94"
+    },
+    {
+      "path": "/private/tmp/cmm-round90-cleanup.py",
+      "bytes": 2149,
+      "sha256": "467e4cd46b7ac83a9d7b88d455ed80e904233e74c0ade8da9a89ae42556c4413"
+    },
+    {
+      "path": "/private/tmp/cmm-round91-preservation-before.json",
+      "bytes": 1764531,
+      "sha256": "7e968b3c26ffe9a02c1543f1da7646821dd7d830b1a39f052e8fb532607329b9"
+    },
+    {
+      "path": "/private/tmp/cmm-round91-isolated-verification.py",
+      "bytes": 9655,
+      "sha256": "b2133891627f9a0cb3b05f91dab465a80e92319ce6850a1af49469023b0dead4"
+    }
+  ],
+  "checks": [
+    {
+      "name": "Complete helper source inspection and AST syntax parsing",
+      "status": "passed",
+      "details": "Both complete sources read; AST parsed without evaluating their top-level mutation code."
+    },
+    {
+      "name": "Cleanup derivation",
+      "status": "passed",
+      "details": "Exact text comparison establishes cleanup is the round90 predecessor with literal round90-to-round91 substitution only."
+    },
+    {
+      "name": "Scoped cleanup and exact merge",
+      "status": "passed",
+      "details": "Requires live merged PR exact topic head, clean owned branch/current head, fetched remote main exact merge/tree and sole reviewed-base parent. Remote deletion has an exact old-head force-with-lease. Only after deletion confirmation does it detach and delete the exact owned local branch. It keeps the clean worktree detached at the topic head, not the merge commit; this is explicit in its checks/receipt."
+    },
+    {
+      "name": "Original-main convergence gate",
+      "status": "passed",
+      "details": "Requires terminal postmerge receipt exact merge/topic/tree/base, log hash and allowed exits plus strict record/history/native review commands. Its producer was read to confirm fresh-clone tree/sole-parent, topic-absence and coverage gates precede success. Main must still be clean on main at reviewed base and remote main must equal the supplied merge; exact merge tree/sole parent are independently checked before ff-only/no-autostash."
+    },
+    {
+      "name": "Hidden/ignored original preservation",
+      "status": "passed",
+      "details": "All 7220 baseline nontracked entries are checked before and after by file size/content hash/mode or symlink target/mode. git ls-files --others -z deliberately omits exclude-standard, so current ignored/hidden entries participate in incoming tracked-file ancestor/descendant collision checks. Retained tag object and peeled commit plus durable backup manifest are checked twice."
+    }
+  ],
+  "limitations": [
+    "Static acceptance does not establish any future PR, merge, deletion, postmerge check or main fast-forward has occurred. Runtime receipts and live checks remain necessary.",
+    "The declared preservation scope is baseline nontracked main files and symlink identities/modes. External symlink targets are not followed, empty directories are not inventoried, and this helper does not assert restoration/preservation of the separately disclosed earlier unrelated skill deviation.",
+    "The sync receipt reports original baseline entries preserved; it does not assert equality of the entire later ignored-file inventory. New ignored entries are collision-checked, not deleted.",
+    "External receipt producer integrity and coordinator sequencing are trusted as in the current publication pipeline; no new broad runtime test suite was executed by this reviewer."
+  ]
+}

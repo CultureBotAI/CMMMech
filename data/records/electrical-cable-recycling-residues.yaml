@@ -1,0 +1,106 @@
+id: cmmmech:electrical-cable-recycling-residues
+name: Electrical-cable recycling residues
+material_kind: secondary_resource
+description: Metal- and polymer-bearing residual material generated during physical recycling of electrical
+  cables. The accepted experiment uses the low-density fraction remaining after knife milling and two-step
+  gravity separation of end-of-life vehicle cables, rather than intact cable, a high-grade copper concentrate,
+  printed circuit boards or undifferentiated vehicle shredder residue. This process-defined secondary
+  feed is not a mineral species or elemental copper commodity. One laboratory study compares inoculated
+  and bactericide-treated acidic ferric leaching, with only limited evidence for microbial enhancement;
+  neither isolated copper production nor industrial deployment is demonstrated. Constituent-metal criticality
+  is not inherited.
+sources:
+- id: lambert2015
+  title: Lambert, F., Gaydardzhiev, S., Léonard, G., Lewis, G., Bareel, P.-F. and Bastin, D. (2015). Copper
+    leaching from waste electric cables by biohydrometallurgy. Minerals Engineering 76:38–46. DOI 10.1016/j.mineng.2014.12.029.
+    Complete nine-page ORBi publisher postprint marked Article in Press, Sections 2–4, Tables 1–3 and
+    Figures 1–13 inspected. Its numbered pages 1–9 are used for locators; several captions and conclusion
+    values conflict with the displayed tables/legends.
+  url: https://doi.org/10.1016/j.mineng.2014.12.029
+  accessed_on: '2026-10-15'
+mechanisms:
+- id: consortium_associated_ferric_leaching
+  name: Limited culture-associated contribution during acidic ferric leaching
+  process: bioleaching
+  microbial: true
+  description: An adapted mixed acidophilic culture was tested alongside thymol-treated chemical controls
+    during copper dissolution from real cable-recycling residue. Chemical ferric oxidation dominated the
+    observed kinetics; regeneration of ferric iron by the culture was proposed but too slow to establish
+    a strong general microbial benefit. The source reports somewhat shorter normalized copper-leaching
+    times in selected inoculated arms, while a separate synthetic-feed comparison showed no time advantage.
+    These results do not establish a species-specific causal effect or a feed-to-product copper recovery
+    yield.
+  context: Methods 2.1–2.4 (postprint p.2) describe a below-5-mm low-density vehicle-cable residue containing
+    4.9% Cu and 0.6% Al, predominantly plastic fragments and liberated metal wires. Copper/aluminium composition
+    was measured after analytical ignition and digestion; ignition at 850 degrees C was not the leaching
+    pretreatment. The Sofia University of Mining and Geology culture initially contained source-named
+    Acidithiobacillus ferrooxidans, Leptospirillum ferrooxidans and Acidithiobacillus thiooxidans, with
+    A. ferrooxidans described as prevalent. Strains, final community composition and member-specific activities
+    are unresolved. Adaptation used iron-containing 9K medium with added Cu and Al. Fourteen tests used
+    nominal 9% pulp density, 45–55 g solid and 450–550 mL solution in a stated 0.5-L jacketed reactor
+    at 700 rpm, sulfuric-acid control at pH 1.9 and 21, 35 or 50 degrees C. The stated mass/volume ranges
+    and 9% convention are retained without inferring a unique working charge. All abiotic tests received
+    thymol, whose dose and independent chemical effects are unspecified. Tests 3, 4 and 13 also contained
+    inoculum before bactericide addition; other abiotic arms used ferric sulfate. Tests 13–14 used analytical
+    Cu/Al with silica replacing plastics and are separate synthetic-feed controls. Liquor metals were
+    assayed by atomic absorption/ICP-OES, Fe(II) by dichromate titration and Fe(III) by difference; endpoint
+    residues were also digested. Replicated reactor runs and quantitative uncertainty estimates are not
+    reported.
+  evidence:
+  - source_ref: lambert2015
+    supports: support
+    explanation: Tables 1–2 and Figure 7 (pp.3–5) compare actual-residue tests 4 and 10 at 35 degrees
+      C, initial Fe(III) 1.9 g/L, 10% inoculum and air injection of 3 mL/min; total Fe differs slightly,
+      10.2 versus 10.1 g/L. The source reports time to its 90% normalized copper endpoint of 69 h for
+      thymol-treated test 4 and 50 h for living-culture test 10, with initial rates of 65 and 102 mg/L/h.
+      These are source-reported arm values without replication-based significance, not proof that all
+      differences are microbial. Table 2 defines endpoints at 90%, while Section 3.2 defines the percentage
+      as recovered Cu mass divided by total Cu mass. No isolated copper-metal product is reported.
+  - source_ref: lambert2015
+    supports: partial
+    explanation: Sections 2.2–2.3 specify Cu/Al-containing adaptation liquor and substantial inoculum
+      fractions, including 100% culture liquor in test 11. Section 3.5 gives different Cu/Al concentrations
+      for the separate fermenter-rate assessment. The manuscript does not clearly document subtraction
+      of inoculum-derived copper from each plotted residue-extraction curve or provide a complete initial-liquor/feed/final-liquor/residue
+      balance. The kinetic derivation also assumes zero initial dissolved Cu. Therefore reported normalized
+      extraction is retained as the authors' endpoint, not independently established recovery of that
+      fraction of cable-derived copper. The high-inoculum 23 h versus 36 h comparison is not used as an
+      uncontested biological effect.
+  - source_ref: lambert2015
+    supports: support
+    explanation: Sections 3.4–3.5, Figures 3–10 and Tables 1–2 show substantial chemical dissolution and
+      a limited biological contribution. Iron-free abiotic test 2 reached only about 84% of the source-normalized
+      copper endpoint after seven days; added ferric iron accelerated leaching in both inoculated and
+      chemical arms. In synthetic tests 13 and 14, Table 2 reports the same 32 h to 90% for both arms;
+      Section 3.5 explicitly states no microbial improvement there. Their initial ferric concentrations
+      differ, 0.7 versus 1.2 g/L in Table 1, so this is not an exact matched-dose test or direct evidence
+      for the actual polymer-bearing residue. Ferric accumulation after copper dissolution in Figure 8
+      supports possible regeneration but not a species-resolved rate mechanism.
+  - source_ref: lambert2015
+    supports: partial
+    explanation: Section 3.6 and Figure 13 (p.7) show faster dissolution at higher temperature even in
+      nominally biotic test 12 at 50 degrees C, where the text reports no detected bacteria and no biological
+      mechanism. That arm is not assigned a microbial recovery result. Figure 11's caption, displayed
+      legend and the text's test-number assignments disagree, preventing confident reassignment of individual
+      cell-count curves. Culture persistence, oxygen sufficiency and inhibition by plastics are discussed
+      as alternatives, but the paper does not isolate the cause of the low ferric-regeneration performance.
+  - source_ref: lambert2015
+    supports: partial
+    explanation: 'Table 2 and Section 3.7 report lower measured acid consumption for actual-residue test
+      10 than test 4, 1.21 versus 1.49 mol sulfuric acid per mol dissolved Cu at the 90% endpoint; the
+      explanation remains unresolved. These ratios inherit the copper-denominator limitation. Several
+      source labels conflict: Figure 9''s legend and Section 3.5 identify tests 5 and 11, whereas its
+      caption says tests 6 and 13; Figure 8''s caption lists a different test set from its legend. Table
+      2 and Section 3.7 give test 11 acid consumption 0.79, whereas the conclusion gives 0.93. These discrepancies
+      are not silently reconciled, and the repository postprint is not assumed identical to an uninspected
+      final typeset version. No activation-energy fit or caption-only assignment is imported as a uniquely
+      demonstrated microbial mechanism.'
+curation_history:
+- timestamp: '2026-10-15T08:30:47.539962+00:00'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Created distinct cable-recycling residue identity with qualified mixed-culture and chemical
+    comparison, explicit synthetic-arm exclusion, weak/null effects, source-label conflicts and inoculum-dependent
+    denominator limits.
+history_refs:
+- history/records/electrical-cable-recycling-residues/2026-10-15T083053Z-codex-3478d0.yaml
