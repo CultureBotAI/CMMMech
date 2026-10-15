@@ -8,13 +8,18 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 435 material records.
+The catalogue currently contains 440 material records.
 
-The [latest curation report](research/ingests/round91-frontier-20261015.md) links
+The [latest curation report](research/ingests/round92-frontier-20261015.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Löllingite](data/records/loellingite.yaml) | Culture- and supernatant-associated flotation of a characterized mixed feed | Phase partitioning, null arms and unmatched surface analyses; no isolated metal yield |
+| [Metallic machining burrs](data/records/metallic-machining-burrs.yaml) | Culture-associated acidification and limited metal mobilization from industrial burrs | Unmatched inoculum chemistry and inconsistent recovery calculations |
+| [Plumbojarosite](data/records/plumbojarosite.yaml) | Controlled bacterial reduction of a synthetic mineral analogue | Low lead release, phosphate-buffered microscopy preparation and source-value conflicts |
+| [Svanbergite](data/records/svanbergite.yaml) | Natural-crystal structure and geological alteration context | Specimen-specific composition and field inference; no microbial mechanism |
+| [Woodhouseite](data/records/woodhouseite.yaml) | Original mineral description and geological alteration context | Substituted natural grains and modeled stability; no recovery experiment |
 | [Electrical-cable recycling residues](data/records/electrical-cable-recycling-residues.yaml) | Real-feed laboratory leaching with adapted mixed acidophiles | Limited microbial benefit, synthetic-feed null result and incomplete copper balance |
 | [Florencite-(Ce)](data/records/florencite-ce.yaml) | Ce-specific synthetic analogue and abiotic sequential treatment | Residue composition ratios are not mineral-specific recovery yields |
 | [Gorceixite](data/records/gorceixite.yaml) | Natural-crystal identity and structure | Specimen-dependent symmetry and unresolved occupancy discrepancy |

@@ -1,0 +1,113 @@
+id: cmmmech:plumbojarosite
+name: Plumbojarosite
+material_kind: mineral
+description: Plumbojarosite is a lead ferric hydroxysulfate mineral with ideal formula Pb0.5Fe3(SO4)2(OH)6,
+  equivalently PbFe6(SO4)4(OH)12, with ferric iron. The September 2026 IMA list marks the species redefined
+  (1987 s.p.). It is distinct from potassium jarosite, natrojarosite and mixed industrial jarosite residues.
+  The curated experiment used an X-ray-diffraction-characterized synthetic analogue, not a natural ore
+  or industrial waste. No constituent-element criticality or industrial deployment is inferred.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 174, Plumbojarosite row; page
+    1 status definitions. Previously acquired official list rechecked.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-15'
+- id: handbook_plumbojarosite
+  title: Handbook of Mineralogy. Plumbojarosite, complete one-page entry, version 1 (2001-2005). Secondary
+    identity source; website posting date is not the mineral description date.
+  url: https://www.handbookofmineralogy.org/pdfs/plumbojarosite.pdf
+  accessed_on: '2026-10-15'
+- id: smeaton2009
+  title: Smeaton CM, Fryer BJ and Weisener CG (2009). Intracellular Precipitation of Pb by Shewanella
+    putrefaciens CN32 during the Reductive Dissolution of Pb-Jarosite. Environmental Science & Technology
+    43:8086-8091. DOI and bibliographic identity verified; full study assessed through the author dissertation
+    chapter and original publisher supplement, not an acquired final journal PDF.
+  url: https://doi.org/10.1021/es901629c
+  accessed_on: '2026-10-15'
+- id: smeaton2012_chapter2
+  title: 'Smeaton CM (2012). Investigating the Susceptibility of Jarosite Minerals to Reductive Dissolution
+    by a Dissimilatory Metal Reducing Bacterium (Shewanella putrefaciens CN32). University of Windsor
+    PhD dissertation. Chapter 2, printed pages 25-60 (PDF 50-85): main text, Figures 2.1-2.3 and supporting
+    information S2.1-S2.6, Tables S2.1-S2.5 and Figures S2.1-S2.6. Reproduces the 2009 experiment; not
+    independent replication.'
+  url: https://www.collectionscanada.gc.ca/obj/thesescanada/vol2/002/NR78584.PDF
+  accessed_on: '2026-10-15'
+- id: smeaton2009_si
+  title: Original ACS supporting information for DOI 10.1021/es901629c, 16-page deposited PDF including
+    visible revision markup; sections S1-S6, Tables S1-S5 and Figures S1-S6. Retrieved from DOI-matched
+    ACS Figshare article 2817442.
+  url: https://doi.org/10.1021/es901629c.s001
+  accessed_on: '2026-10-15'
+- id: ncbi_cn32
+  title: NCBI Taxonomy 319224, Shewanella putrefaciens CN-32. Current authority label checked through
+    the Taxonomy XML endpoint; CN32 in the experiment is mapped to this strain entry.
+  url: https://www.ncbi.nlm.nih.gov/datasets/taxonomy/319224/
+  accessed_on: '2026-10-15'
+mechanisms:
+- id: cn32_reductive_dissolution
+  name: CN32-associated reductive dissolution of synthetic Pb-jarosite
+  process: redox_transformation
+  microbial: true
+  organisms:
+  - id: NCBITaxon:319224
+    label: Shewanella putrefaciens CN-32
+  description: Washed living CN32 cells were associated with increased filtered ferrous iron during anaerobic
+    exposure to synthetic Pb-jarosite relative to sterile mineral controls. Lead in the filtrate rose
+    transiently and subsequently became very low; electron-dense Pb-enriched particles were observed with
+    cells. These observations support a laboratory reduction and redistribution process. They do not establish
+    complete mineral dissolution, a named pure lead-phosphate product, isolated lead recovery or a demonstrated
+    gene mechanism.
+  context: Synthetic Pb-jarosite was prepared in chloride/sulfate solution at about 98 degrees C for 72
+    hours, washed with hot sodium chloride and water, dried at 110 degrees C and checked by powder diffraction
+    (SI S1/Figure S1). The reduction assay used 0.0500 +/- 0.0013 g mineral with 16 mL modified M1 medium
+    in 20 mL tubes, approximately 0.016 g wet cells per inoculated tube, 24 mM sodium lactate and 20 mM
+    PIPES, initially adjusted to pH 7.3 without added phosphate. Tubes were rotated in a 96% nitrogen/4%
+    hydrogen chamber. Mineral arms were sampled destructively in triplicate through nominal 768 hours;
+    inoculated and sterile medium-only controls were sampled in duplicate. Cultures had been grown aerobically
+    at 32 degrees C; a separate dissolution-incubation temperature is not specified in the inspected methods,
+    so 32 degrees C is not assigned to that assay. Filtrate passed a 0.20 micrometre nylon filter; ICP-OES
+    and ferrozine assays have different fractions and do not measure a recovered product.
+  evidence:
+  - source_ref: smeaton2012_chapter2
+    supports: support
+    explanation: Chapter 2 sections 2.2-2.3 and Figure 2.1 show ferrous iron increasing in inoculated
+      mineral tubes, while sterile mineral controls remain near baseline. The text reports about 197 micromolar
+      Fe(II) at the nominal 768-hour endpoint. Filtered lead peaks early and later falls below the stated
+      0.09 micromolar instrumental detection limit; this is not zero lead or an extraction percentage.
+      Figure 2.1 error bars are standard errors for three mineral tubes. All tubes share the same inoculum
+      preparation, not three independently prepared cultures.
+  - source_ref: smeaton2009_si
+    supports: partial
+    explanation: SI S2-S3 and Tables S1-S4 constrain interpretation. PIPES masks sulfur release, so sulfate
+      was not an independent dissolution measure. Acidified filtrate may include iron-bearing colloids;
+      saturation indices predict possible secondary phases but do not identify precipitates. Final Table
+      S3 Fe(III) is 1.90 micromolar whereas the chapter text gives 12.4 at a differently labeled endpoint.
+      Methods use 192/408/768 hours while prose also uses 198/400/776; these conflicts are not silently
+      harmonized. Table S3 zero lead is a modeling input in a below-detection context, not a measured
+      absence.
+  - source_ref: smeaton2012_chapter2
+    supports: partial
+    explanation: Figures 2.2-2.3, sections 2.3.2-2.3.3 and supporting microscopy show cell-associated
+      electron-dense material and Pb-enriched granules within prepared cell cross sections. Intracellular
+      phosphate precipitation and ATPase-mediated detoxification are author interpretations; no gene-expression
+      or perturbation experiment establishes them. Viability is an ATP-luminescence proxy, not a direct
+      viable-cell count, and the prose time/value assignments conflict with the plotted series. Neither
+      these images nor aqueous depletion provide a complete solid/liquid lead balance.
+  - source_ref: smeaton2009_si
+    supports: partial
+    explanation: SI S5 explicitly uses 0.1 M phosphate-buffered glutaraldehyde and osmium fixation before
+      TEM. Thus phosphorus in prepared granules alone cannot establish its intracellular metabolic origin
+      or rule out preparation effects; no phosphate-free fixation comparator is reported. Near-immediate
+      SEM supports cell-associated particles before TEM processing, but does not settle their intracellular
+      chemistry. Table S5 spot compositions are local EDS measurements, with non-normalized totals in
+      some cellular spots; they are not bulk mineral stoichiometry. Figures S2-S3 show secondary precipitates
+      in both sterile and inoculated arms; modeled magnetite/green-rust phases and hypothetical ATPase
+      roles remain unconfirmed. This is a qualified laboratory observation, not industrial deployment.
+curation_history:
+- timestamp: '2026-10-15T09:30:48.984608+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Added a distinct plumbojarosite mineral record with controlled synthetic-feed bacterial reduction
+    evidence; retained source version, assay, microscopy preparation and mass-balance limitations.
+history_refs:
+- history/records/plumbojarosite/2026-10-15T093059Z-codex-21e4bf.yaml

@@ -1,0 +1,18 @@
+The new `data/records/plumbojarosite.yaml` preserves qualified evidence from Smeaton, Fryer and Weisener (2009), DOI [10.1021/es901629c](https://doi.org/10.1021/es901629c). The author’s [2012 dissertation](https://www.collectionscanada.gc.ca/obj/thesescanada/vol2/002/NR78584.PDF), Chapter 2 (printed pages 25–60), and the DOI-matched [original ACS supplement](https://doi.org/10.1021/es901629c.s001) were inspected, including all three main figures, five supporting tables and six supporting figures. The final journal PDF returned HTTP 403; a clean final-version comparison remains needed. This is a source clarification, not an unqualified claim that the study or curated record is wrong.
+
+Supported boundaries needing clarification:
+
+- SI section S5 uses 0.1 M phosphate buffer for TEM fixation and postfixation. Images and local EDS support Pb-enriched granules within processed cell sections, but phosphorus in these sections alone cannot establish metabolic phosphate origin. The near-immediate SEM observations support cell-associated particles before TEM processing; they do not by themselves establish intracellular phosphate chemistry. No phosphate-free fixation comparator is reported in the inspected material.
+- Methods specify 192/408/768-hour samples, while prose also uses 198/400/776 hours. The final Fe(III) value differs between the text and Table S3; the luminescence narrative does not consistently match Figure S5. Table S5 includes local cellular EDS columns whose totals are not normalized to 100%, so these must not become bulk product formulas.
+- The 32 °C temperature belongs to culture growth; a separate dissolution incubation temperature was not found in the inspected methods. A complete lead mass balance and isolated product yield are not supplied. Geochemical saturation indices and proposed ATPase roles do not establish identified secondary phases or gene causation.
+- The officially deposited 16-page SI still contains revision markup, a drafting note and a duplicated deleted table. Its cover says 15 pages. The dissertation frontmatter misstates the journal pagination; ACS, Crossref and PubMed agree on 8086–8091. These version defects should not be silently repaired in evidence accounting.
+
+Acceptance criteria:
+
+1. Acquire an authoritative final article/SI version or archived original data, recording version, URL and hashes. Compare explicitly against the inspected thesis and deposited SI; do not treat them as independent experiments.
+2. Resolve sample times, final iron values, luminescence assignments and EDS normalization from authoritative evidence. Keep unresolved alternatives explicit.
+3. Establish the dissolution incubation temperature and sample-level solid/liquid lead inventory before stronger quantitative claims.
+4. Require a suitable preparation control or independent characterization before assigning metabolic phosphate origin, a named Pb-phosphate product or an intracellular mechanism beyond the qualified observations. A confirmed preparation artifact is not assumed in advance.
+5. If new evidence changes accepted claims, update the maintained record with append-only history and a new independent exact-byte scientific review. Otherwise retain its stated limitations and keep this source question open.
+
+The bounded hidden/ignored-inclusive followed-link search of records, research, reviews and history found only the deferred round91 lead. The 215-entry all-state issue inventory from 2026-10-15 contained no exact `plumbojarosite` or `es901629c` match. The raw search receipt and acquisition hashes are documented in `research/sources/round92-sulfates/20261015T093131Z-source-investigation.{md,json}`. This is not an exhaustive literature-absence claim.
