@@ -1,0 +1,3 @@
+Corrected the Table 9 locator to printed page 40 (PDF page 50), separately from sections 3.3–3.5 on printed pages 45–51. Only that locator and actual appended EDIT provenance changed; original CREATE and initial observation remain immutable.
+
+Independent successor `reviews/structured/20261015T115332Z-argentojarosite-round94-resolution/review.yaml` explicitly resolves `20261015T114339Z-argentojarosite-round94-initial-locator/F1` with the same issue key. Original thesis graphics, parsed correction comparison, named validation and the actual final full-suite/strict/history/pages checks passed. The source-data questions remain separate in #336.

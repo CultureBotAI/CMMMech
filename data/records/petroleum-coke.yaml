@@ -1,0 +1,116 @@
+id: cmmmech:petroleum-coke
+name: Petroleum coke
+material_kind: secondary_resource
+description: >-
+  Carbon-rich solid produced from heavy petroleum-processing residues, treated
+  here as a residual material resource rather than coal-derived coke, coking
+  coal, the carbon element, graphite, combustion ash or oil-sands tailings.
+  The accepted experiment uses material described by its authors as petroleum
+  coke from Navanagar Metcoke Limited, Jamnagar, Gujarat. The paper also calls
+  the sample metcoke; its precise manufacturing route and green, calcined or
+  needle-coke grade are not established. This record retains that source-assigned
+  feed identity without creating a grade-specific owner. Laboratory sulfur-content
+  reduction does not establish recovered sulfur, metal recovery, retained fuel
+  quality or industrial deployment.
+sources:
+  - id: tripathi2010
+    title: >-
+      Tripathi, Singh and Gupta (2010), Desulphurization of petroleum coke.
+      Bharatiya Vaigyanik evam Audyogik Anusandhan Patrika 18(1):81-85,
+      June 2010. Complete official five-page Hindi article with English abstract;
+      Materials and Methods pp. 82-83, Tables 1-5 pp. 82-83 and Discussion
+      pp. 83-85. Repository handle 123456789/10142.
+    url: https://nopr.niscpr.res.in/handle/123456789/10142
+    accessed_on: '2026-10-15'
+  - id: ncbi930
+    title: >-
+      NCBI Taxonomy 930, Acidithiobacillus thiooxidans, species; retrieved
+      taxonomy XML lists Thiobacillus thiooxidans as a synonym. This resolves
+      the source-assigned species name, not the experimental strain identity.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930
+    accessed_on: '2026-10-15'
+mechanisms:
+  - id: sequential_culture_associated_desulfurization
+    name: Sequential culture treatment associated with lower residual sulfur content
+    process: bioleaching
+    description: >-
+      Two sequential one-week treatments with a culture assigned by the authors
+      to Thiobacillus thiooxidans were followed by lower total sulfur concentration
+      in retained petroleum-coke solids. Bioleaching denotes the source's
+      culture-treatment operation; the measured endpoint is residual solid sulfur,
+      not a quantified dissolved-sulfur flux or isolated product. The paper's
+      general iron/pyrite and sulfur-oxidation discussion does not demonstrate
+      the operative pathway or the removed sulfur species in this feed.
+    context: >-
+      Materials and Methods pp. 82-83 report a culture collected from a Rajgir
+      hot-water spring, without a strain accession, sequencing result or documented
+      identification method. The medium is called 9K and is described at pH 2.5
+      and 35 degrees C for culture growth; the source culture is separately
+      reported at pH 3.54. Table 2 lists reagent masses but no preparation volume,
+      so concentrations are not inferred. An Erlenmeyer flask received petroleum
+      coke, medium and 5 mL culture. Batch solid loading, liquid volume, particle
+      fraction, exposure temperature, agitation and aeration are not separately
+      resolved. A petroleum-coke-plus-medium comparison without added culture
+      is described, but its numerical outcome is not reported and sterility is
+      not demonstrated. After one week, material was filtered using Whatman
+      No. 4 paper and approximately 1 g retained residue was assayed by the
+      source-named Eschka method. Previously treated solids then received fresh
+      culture for a second week and were reassayed. The roughly 1 g table weights
+      are analytical portions, not established treatment batch sizes. Three
+      determinations and LSD entries are printed without defining independent
+      biological replication or the uncertainty calculation.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:930
+        label: Acidithiobacillus thiooxidans
+    evidence:
+      - source_ref: tripathi2010
+        supports: support
+        explanation: >-
+          Tables 3-5 on p. 83 give residual total sulfur concentrations of
+          6.31-6.34% before treatment, 5.42-5.52% after the first week and
+          0.40-0.47% after retreating those solids for a further week. The
+          source reports an initial mean of 6.32%, a first-stage value of 5.46%
+          and about 13.5% reduction. These observations support a sequential
+          culture-associated change in solid composition under the reported
+          conditions, without establishing the incremental effect of inoculation.
+      - source_ref: tripathi2010
+        supports: partial
+        explanation: >-
+          Table 5 reports 92.56-93.67% sulfur removal alongside final solid
+          concentrations of 0.40-0.47%. These percentages are consistent in
+          scale with concentration reductions relative to the initial feed,
+          not an additional 93% recovery from the first-stage residue. Some
+          individual table percentages do not exactly reproduce a common
+          initial 6.32% denominator. No remaining-solid mass, liquid sulfur
+          inventory, sulfur-species balance, recovered sulfur product or
+          carbon yield is given; concentration changes cannot be treated as
+          whole-feed recovery yields.
+      - source_ref: tripathi2010
+        supports: partial
+        explanation: >-
+          The described uninoculated comparison has no separately reported
+          numerical result, preventing a microbial effect-size calculation and
+          leaving acid-medium chemistry and other causes unresolved. Pyrite,
+          sulfate and organic sulfur are discussed generically on pp. 83-85
+          without source-specific phase/speciation measurements. The discussion
+          refers to Figure 1, but no Figure 1 graphic appears in the inspected
+          complete five-page original. Reagent-volume, culture-identity and
+          replication gaps further limit mechanistic attribution. Facility
+          production capacity is not the scale of this flask experiment, and
+          the claimed economic and fuel-use benefits are not directly tested.
+      - source_ref: ncbi930
+        supports: context_only
+        explanation: >-
+          Current taxonomy maps the historical name Thiobacillus thiooxidans
+          to Acidithiobacillus thiooxidans. This nomenclatural mapping does not
+          validate the Rajgir culture assignment, establish purity or identify
+          it with any type strain listed by NCBI.
+curation_history:
+  - timestamp: '2026-10-15T11:37:18Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Created a petroleum-coke residual-resource record with qualified sequential culture-associated sulfur-content evidence.
+history_refs:
+  - history/records/petroleum-coke/2026-10-15T113717Z-codex-f008c5.yaml
